@@ -7397,6 +7397,972 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0400",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "face-superficial",
+   "examPhase": "tagging-1",
+   "stem": "얼굴 가쪽면 실사 사진이다. 번호핀 1–2가 가리키는 구조의 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 관자근막 (temporal fascia) 2. 깨물근 (masseter m.)",
+   "explanation": "관자근막 = 관자근을 덮는 치밀근막, 광대활 위모서리에 붙음. 깨물근 = 광대활에서 일어나 아래턱뼈가지 가쪽면에 닿음, V3 지배. 둘 다 씹기근육 구획의 표층 지표.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 2,
+     "section": "P002 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Superficial layer of face · 씹기근육 (40:41)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0401",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "face-superficial",
+   "examPhase": "tagging-1",
+   "stem": "관자부위 실사 사진이다. 번호핀 1이 가리키는 구조의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 관자근 얕은층 (superficial layer of temporalis m.)",
+   "explanation": "관자근 = 관자우묵 전체에서 일어나 근육돌기에 닿음. 얕은층·깊은층으로 나뉘어 보이는 판. 턱 닫기 + 뒤당김, V3(깊은관자신경) 지배.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 3,
+     "section": "P003 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Superficial layer of face · 씹기근육 (41:35)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0402",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "external-nose",
+   "examPhase": "tagging-1",
+   "stem": "바깥코 연골을 벌려 보인 실사 사진이다. 번호핀 1이 가리키는 연골의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 작은콧방울연골 (lesser alar cartilage)",
+   "explanation": "콧방울 가쪽벽 뒤쪽의 작은 연골판 여러 개 = 작은콧방울연골. 큰콧방울연골(안쪽·가쪽다리)과 위가쪽연골 사이 틈을 메움.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 8,
+     "section": "P008 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Superficial layer of face · 바깥코 (46:18)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0403",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "temporal-region",
+   "examPhase": "tagging-1",
+   "stem": "머리뼈 가쪽면 골표본이다. 번호핀 1–8이 가리키는 구조의 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 아래관자선 (inferior temporal line) 2. 관자뼈 광대돌기 (zygomatic process of temporal bone) 3. 광대활 (zygomatic arch) 4. 광대뼈 관자돌기 (temporal process of zygomatic bone) 5. 아래턱뼈 관절돌기 (condylar process of mandible) 6. 턱뼈패임 (mandibular notch) 7. 아래턱뼈 근육돌기 (coronoid process of mandible) 8. 턱뼈각 (angle of mandible)",
+   "explanation": "광대활 = 관자뼈 광대돌기(뒤) + 광대뼈 관자돌기(앞)의 합. 아래관자선 = 관자근 이는곳 위경계 지표. 관절돌기(뒤)와 근육돌기(앞) 사이 = 턱뼈패임 — 깨물근신경·혈관 통과. 근육돌기 = 관자근 닿는곳, 관절돌기 = 턱관절.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 10,
+     "section": "P010 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 관자부위 (00:15)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0404",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "temporal-region",
+   "examPhase": "tagging-1",
+   "stem": "관자부위(광대활 제거 후) 실사 사진이다. 번호핀 1은 원으로 표시된 구조, 2는 화살표가 가리키는 혈관이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 귓바퀴관자신경 몸쪽부분 (auriculotemporal n., proximal part) 2. 가로얼굴동맥 (transverse facial a.)",
+   "explanation": "귓바퀴관자신경 = V3 뒤갈래, 중간뇌막동맥을 두 뿌리로 감싸고 관자턱관절 뒤로 올라감. 가로얼굴동맥 = 얕은관자동맥 가지, 광대활 아래·귀밑샘관 위를 가로로 주행.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 15,
+     "section": "P015 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 관자근 (04:59)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0405",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1이 가리키는, 관자근 깊은면으로 들어가는 신경의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 깊은관자신경 (deep temporal nn.)",
+   "explanation": "깊은관자신경 = V3 앞갈래의 운동가지, 관자아래능선을 넘어 관자근 깊은면으로 상행. 앞갈래는 대부분 운동성(예외: 볼신경=감각).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 18,
+     "section": "P018 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 가쪽날개근과 안쪽날개근 (10:30)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0406",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1이 가리키는, 핀셋이 들어 올린 가는 신경의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 턱목뿔근신경 (nerve to mylohyoid m.)",
+   "explanation": "턱목뿔근신경 = 아래이틀신경이 턱뼈구멍으로 들어가기 직전에 낸 운동가지. 턱목뿔근 + 두힘살근 앞힘살 지배. V3 영역에서 몇 안 되는 운동가지 — 단골 태깅 포인트.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 20,
+     "section": "P020 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 가쪽날개근과 안쪽날개근 (12:29)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0407",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1이 가리키는, 핀셋이 잡은 혈관의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 아래이틀동맥 (inferior alveolar a.)",
+   "explanation": "아래이틀동맥 = 위턱동맥 1부(아래턱부분) 가지. 아래이틀신경과 함께 턱뼈구멍으로 들어감. 1부 가지는 전부 뼈구멍행(깊은귀동맥·앞고실동맥·중간뇌막동맥·덧뇌막동맥·아래이틀동맥).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 27,
+     "section": "P027 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 위턱동맥 (16:47)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0408",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1은 신경, 2는 혈관이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 볼신경 (buccal n.) 2. 볼동맥 (buccal a.)",
+   "explanation": "볼신경 = V3 앞갈래의 유일한 감각가지 — 가쪽날개근 두 갈래 사이로 나옴. 볼동맥 = 위턱동맥 2부 가지, 볼신경과 나란히 볼근 표면으로. 얼굴신경 볼가지(운동)와 혼동 금지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 33,
+     "section": "P033 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 위턱동맥 (19:25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0409",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1이 가리키는, 날개입천장우묵으로 들어가는 동맥의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 나비입천장동맥 (sphenopalatine a.)",
+   "explanation": "나비입천장동맥 = 위턱동맥 3부의 종말가지 — 나비입천장구멍으로 코안에 들어감. 코피(Kiesselbach 얼기)의 주 공급원. 3부 가지 = 뒤위이틀·눈확아래·내림입천장·나비입천장.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 36,
+     "section": "P036 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 위턱동맥 (20:38)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0410",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "tmj",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 실사 사진이다. 번호핀 1 자리에 쓰여 있던(지운) 구조 — 반짝이는 섬유막 — 의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 턱관절의 관절주머니 (articular capsule of TMJ)",
+   "explanation": "턱관절 관절주머니 = 관절결절~턱뼈목을 감싸는 섬유막. 안에 관절원반이 있어 위·아래 관절공간으로 나뉨. 가쪽은 가쪽인대(temporomandibular lig.)로 보강.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 37,
+     "section": "P037 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 위턱동맥/턱관절 (21:50)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0411",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래우묵 실사에 필기 라벨을 단 노트 페이지다. 번호핀 1–8이 가리키는 구조의 이름을 순서대로 답하시오. (1·2는 신경 줄기·가지, 8은 잘린 동맥이다.)",
+   "choices": null,
+   "answer": "1. 볼신경 (buccal n.) 2. 아래턱신경 (mandibular n., V3) 3. 중간뇌막동맥 (middle meningeal a.) 4. 귓바퀴관자신경 (auriculotemporal n.) 5. 고실끈신경 (chorda tympani n.) 6. 혀신경 (lingual n.) 7. 아래이틀신경 (inferior alveolar n.) 8. 위턱동맥 (maxillary a., 자른 단면)",
+   "explanation": "V3 태깅의 축 — **혀신경이 아래이틀신경보다 앞·안쪽**. 고실끈신경(VII) = 뒤에서 혀신경에 합류(미각+분비). 귓바퀴관자신경 = 중간뇌막동맥을 감싸는 두 뿌리. 볼신경 = 앞갈래 유일 감각가지. 중간뇌막동맥 = 가시구멍행.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 39,
+     "section": "P039 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Head — Deep layer of face · 관자아래부위 종합 (필기 노트)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0412",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "thoracic-wall",
+   "examPhase": "tagging-1",
+   "stem": "가슴 앞벽을 뒤(안쪽)에서 본 실사 노트 페이지다. 번호핀 1–4가 가리키는 구조의 이름을 순서대로 답하시오. (2·3은 1의 두 종말가지, 4는 근육이다.)",
+   "choices": null,
+   "answer": "1. 속가슴동맥 (internal thoracic a.) 2. 근육가로막동맥 (musculophrenic a.) 3. 위배벽동맥 (superior epigastric a.) 4. 가슴가로근 (transversus thoracis m.)",
+   "explanation": "속가슴동맥 = 빗장밑동맥 1부 가지, 복장뼈 가쪽 약 1 cm를 내려와 6번째 갈비사이에서 **근육가로막동맥 + 위배벽동맥**으로 종말. 가슴가로근 = 복장뼈 뒤면~2–6갈비연골, 속가슴동맥이 그 표면을 지남. 원본에 빨간 별표(출제 예고 표지) 있던 페이지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 42,
+     "section": "P042 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — 가슴 앞벽 안쪽면 (필기 노트)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0413",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는 구조의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 가슴샘 (thymus)",
+   "explanation": "가슴샘 = 위세로칸 가장 앞층(앞→뒤 '샘–정–동–기–식–관'의 샘). 성인에서 지방으로 퇴화한 잔유물. 뒤에 왼팔머리정맥이 바로 붙음.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 46,
+     "section": "P046 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 가슴샘 (01:25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0414",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는 막의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 세로칸가슴막 (mediastinal pleura)",
+   "explanation": "세로칸가슴막 = 벽쪽가슴막의 세로칸부분. 신경지배 = 가로막신경 → 자극 시 어깨 연관통. 허파뿌리에서 내장쪽가슴막으로 꺾여 넘어감.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 47,
+     "section": "P047 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 가슴샘 (02:31)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0415",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는, 세로칸가슴막 아래로 비쳐 내려가는 신경의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 가로막신경 (phrenic n.)",
+   "explanation": "가로막신경 = C3·4·5. 허파뿌리 **앞**을 지나 심장막가슴막 사이로 하행(미주신경은 뒤 — 태깅 결정 기준). 가로막 운동 + 심장막·세로칸가슴막·가로막가슴막 감각.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 48,
+     "section": "P048 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 가슴샘 (02:52)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0416",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는, 활처럼 굽어 위대정맥으로 들어가는 정맥의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 홀정맥 (azygos v.)",
+   "explanation": "홀정맥 = 오른허파뿌리 **위**를 활 모양으로 넘어 T4 높이에서 위대정맥 뒤면에 유입. 갈비사이정맥·반홀정맥 혈액의 최종 통로. 아래대정맥 폐쇄 시 곁순환로.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 51,
+     "section": "P051 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 위대정맥과 허파정맥 (06:51)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0417",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는, 심장막에 싸인 채 만져지는 대혈관의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 허파동맥 (pulmonary trunk)",
+   "explanation": "허파동맥줄기 = 오른심실에서 나와 대동맥 왼쪽·앞에서 상행, T4/T5에서 좌우 허파동맥으로 갈라짐. 대동맥과 함께 장액심장막에 한 집으로 싸임(가로굴 앞벽).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 52,
+     "section": "P052 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 위대정맥과 허파정맥 (07:04)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0418",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "대동맥활 부위 실사 사진이다. 번호핀 1이 가리키는, 대동맥활 표면을 내려가는 가는 신경가지의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 왼미주신경의 아래목심장가지 (inferior cervical cardiac branches of left vagus n.)",
+   "explanation": "미주신경 심장가지(위목·아래목·가슴) 중 아래목가지 — 대동맥활 앞면을 지나 심장신경얼기로 합류. 교감 심장신경과 함께 심장얼기 구성.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 58,
+     "section": "P058 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 대동맥 (10:18)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0419",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "대동맥활 아래 실사 사진이다. 번호핀 1이 가리키는, 신경가지들이 얽힌 그물의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 심장신경얼기 (cardiac plexus)",
+   "explanation": "심장신경얼기 = 대동맥활 아래·기관갈림 앞(얕은부분: 활 아래 / 깊은부분: 갈림 앞). 미주 심장가지(부교감) + 교감 심장신경의 합류점 → 굴심방결절로.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 59,
+     "section": "P059 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 대동맥 (10:24)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0420",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 실사 사진이다. 번호핀 1이 가리키는 부위의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 왼허파뿌리 (root of left lung)",
+   "explanation": "허파뿌리 = 기관지·허파동맥·허파정맥 묶음. 왼쪽 위→아래 = 동맥·기관지·정맥(오른쪽은 기관지가 최상). 앞 = 가로막신경, 뒤 = 미주신경.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 60,
+     "section": "P060 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 대동맥 (10:38)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0421",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "superior-mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸 오른쪽 실사 사진이다. 번호핀 1이 가리키는, 기관 가쪽을 내려가는 신경의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 오른미주신경 (right vagus n.)",
+   "explanation": "오른미주신경 = 오른빗장밑동맥 **앞**을 지나며 오른되돌이후두신경을 내고(동맥 아래로 U턴), 기관 가쪽 → 오른허파뿌리 **뒤**로 하행. 원본에 빨간 별표(출제 예고 표지).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 62,
+     "section": "P062 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Superior mediastinum · 대동맥활의 가지 (11:25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0422",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "pericardium",
+   "examPhase": "tagging-1",
+   "stem": "심장 적출 장면 실사 사진이다. 번호핀 1이 가리키는, 가로막을 뚫고 올라오는 대혈관의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 아래대정맥 (inferior vena cava)",
+   "explanation": "아래대정맥 = T8에서 가로막 대정맥구멍 통과(가로막신경 오른가지 동반) → 곧바로 오른심방 아래면 유입. 심장막안에서 보이는 길이가 매우 짧음.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 68,
+     "section": "P068 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 심장의 적출 (06:41)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0423",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-surface",
+   "examPhase": "tagging-1",
+   "stem": "심장 뒤아래면(가로막면) 실사 사진이다. 번호핀 1이 가리키는 고랑의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 뒤심실사이고랑 (posterior interventricular sulcus)",
+   "explanation": "뒤심실사이고랑 = 가로막면에서 좌·우심실 경계. 뒤심실사이가지(대개 오른심장동맥 — right dominance 70%) + 중간심장정맥이 지나감.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 71,
+     "section": "P071 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 심장 표면 (09:26)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0424",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-surface",
+   "examPhase": "tagging-1",
+   "stem": "심장 뒤면(바닥) 실사 사진이다. 번호핀 1은 잘린 혈관 구멍들, 2는 그 구멍들이 열리는 방이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 허파정맥 (pulmonary vv., 4개) 2. 왼심방 (left atrium)",
+   "explanation": "심장바닥(base) = **왼심방**이 대부분 — 허파정맥 4개(좌·우 위아래)가 유입. 바닥은 뒤를 향하고 식도와 마주봄(빗굴 사이).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 72,
+     "section": "P072 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 심장 표면 (10:32)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0425",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1이 가리키는, 방실고랑(심장동맥고랑)을 달리는 동맥의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 오른심장동맥 (right coronary a.)",
+   "explanation": "오른심장동맥 = 오른대동맥굴 기원 → 오른심방귀와 허파동맥줄기 사이로 나와 **심장동맥고랑**을 오른쪽으로 주행. 가지 = 굴심방결절가지(60%)·오른모서리가지·뒤심실사이가지(70%).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 74,
+     "section": "P074 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심장동맥 (14:25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0426",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1–3이 가리키는 동맥 가지의 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 오른모서리가지 (right marginal branch) 2. 왼대각동맥 (left diagonal a.) 3. 앞심실사이가지 (anterior interventricular branch)",
+   "explanation": "오른모서리가지 = 오른심장동맥이 예리모서리를 따라 낸 가지. 앞심실사이가지(LAD) = 왼심장동맥 종말가지, 앞심실사이고랑 주행. 왼대각동맥 = LAD의 크고 뚜렷한 대각가지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 76,
+     "section": "P076 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심장동맥 (16:36)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0427",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 왼쪽면 실사 사진이다. 번호핀 1은 심장동맥고랑으로 도는 가지, 2는 원으로 표시된 고랑의 동맥이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 휘돌이가지 (circumflex branch) 2. 앞심실사이가지 (anterior interventricular branch)",
+   "explanation": "왼심장동맥(짧은 줄기) → **앞심실사이가지 + 휘돌이가지**로 갈라짐. 휘돌이가지 = 심장동맥고랑을 왼쪽으로 돌아 왼모서리가지를 냄. 원본에 빨간 별표 3개(출제 예고 표지).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 79,
+     "section": "P079 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심장동맥 (18:17)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0428",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1이 가리키는, 앞심실사이고랑을 내려가는 동맥의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 앞심실사이가지 (anterior interventricular branch, LAD)",
+   "explanation": "앞심실사이가지 = 임상명 LAD. 앞심실사이고랑을 심장끝까지 하행, 심실사이막 앞 2/3에 심실사이막가지 공급. 경색 최호발 동맥.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 80,
+     "section": "P080 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심장동맥 (18:25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0429",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1은 큰 대각가지, 2는 핀셋이 잡은 가는 가지다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 왼대각동맥 (left diagonal a.) 2. 심실사이막가지 (interventricular septal branches)",
+   "explanation": "왼대각동맥 = 앞심실사이가지의 대각가지 중 특히 크고 뚜렷한 것. 심실사이막가지 = 앞심실사이가지에서 수직으로 심실사이막 근육 속으로 들어감.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 82,
+     "section": "P082 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심장동맥 (19:28)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0430",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1이 가리키는, 핀셋으로 벌려 보인 가지의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 심실사이막가지 (interventricular septal branches)",
+   "explanation": "심실사이막가지 = 앞심실사이가지에서 수직으로 나와 심실사이막 속으로 파고듦. 방실다발갈래 혈류 공급 — LAD 폐쇄 시 각차단 나오는 이유.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 83,
+     "section": "P083 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심장동맥 (19:35)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0431",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 왼쪽·뒤면 실사 사진이다. 번호핀 1은 심장동맥고랑의 동맥, 2는 둔한모서리의 가지, 3은 원으로 표시된 지점이다. 이름(3은 무엇이 일어나는 지점인지)을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 왼심장동맥 휘돌이가지 (circumflex branch) 2. 왼모서리가지 (left marginal branch) 3. 휘돌이가지와 오른심장동맥이 만나는(문합) 지점",
+   "explanation": "휘돌이가지 = 심장동맥고랑을 돌아 뒤면에서 오른심장동맥과 문합. 왼모서리가지 = 휘돌이가지가 둔한모서리를 따라 낸 가지. 문합 지점 = 원본 필기 '오른심장동맥과 만남' 실측.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 84,
+     "section": "P084 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심장동맥 (20:33)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0432",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "coronary",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면 실사 사진이다. 번호핀 1이 가리키는, 앞심실사이고랑을 올라가는 정맥의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 큰심장정맥 (great cardiac v.)",
+   "explanation": "큰심장정맥 = 앞심실사이고랑에서 LAD와 동행 상행 → 심장동맥고랑을 왼쪽으로 돌아 **심장정맥굴**로 들어감(원본 필기 실측). 심장정맥굴 = 오른심방 유입.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 86,
+     "section": "P086 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 심장정맥 (21:32)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0433",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심방을 연 실사 사진이다. 번호핀 1이 가리키는, 매끈한 부분과 빗살 부분의 경계 능선의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 분계능선 (crista terminalis)",
+   "explanation": "분계능선 = 정맥굴 유래 매끈부(sinus venarum)와 빗살근육부의 경계 — 바깥의 분계고랑과 대응. 위끝에 굴심방결절 위치. 태깅 단골.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 90,
+     "section": "P090 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심방 (27:43)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0434",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심방을 연 실사 사진이다. 번호핀 1은 초승달 모양 판막, 2는 그 판막이 지키는 구멍이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 아래대정맥판막 (valve of inferior vena cava) 2. 아래대정맥구멍 (opening of inferior vena cava)",
+   "explanation": "아래대정맥판막(Eustachian valve) = 태아기 혈류를 타원구멍으로 유도하던 판의 잔유물. 심장정맥굴판막(Thebesian)과 혼동 금지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 92,
+     "section": "P092 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심방 (29:12)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0435",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심방을 연 실사 사진이다. 번호핀 1은 판막, 2는 구멍이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 오른방실판막 = 삼첨판막 (right atrioventricular valve / tricuspid valve) 2. 오른방실구멍 (right atrioventricular orifice)",
+   "explanation": "오른방실판막 = 앞·뒤·중격첨판 3장. 첨판 가장자리 — 힘줄끈 — 꼭지근으로 이어져 심실수축기 뒤집힘 방지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 95,
+     "section": "P095 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심방 (30:11)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0436",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심실을 연 실사 사진이다. 번호핀 1이 가리키는, 심실이 이어지는 출구 혈관의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 허파동맥 (pulmonary artery)",
+   "explanation": "오른심실 유출로 = 매끈한 동맥원뿔(conus arteriosus) → 허파동맥판막 → 허파동맥줄기. 유입부(빗살 거친 벽)와 유출부(매끈)의 경계 = 심실위능선.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 99,
+     "section": "P099 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심실 (32:36)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0437",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심실을 연 실사 사진이다. 번호핀 1이 가리키는 근육 능선의 이름을 답하시오.",
+   "choices": null,
+   "answer": "1. 심실위능선 (supraventricular crest)",
+   "explanation": "심실위능선 = 오른방실구멍(유입)과 동맥원뿔(유출) 사이 근육 능선. 이것 기준으로 거친 유입부 / 매끈한 유출부가 갈림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 101,
+     "section": "P101 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심실 (32:59)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0438",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "오른심실을 연 실사 사진이다. 번호핀 1은 근육기둥, 2는 핀셋이 걸어 올린 끈이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 꼭지근 — 앞꼭지근 (anterior papillary m.) 2. 힘줄끈 (chordae tendineae)",
+   "explanation": "앞꼭지근 = 오른심실에서 가장 큼, 중격모서리기둥(moderator band)이 닿음. 힘줄끈 = 첨판 가장자리와 꼭지근 연결 — 수축기 판막 뒤집힘 방지.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 103,
+     "section": "P103 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심실 (33:29)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0439",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "허파동맥판막을 위에서 연 실사 사진이다. 번호핀 1은 판막 전체, 2–4는 각 첨판이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 허파동맥판막 (pulmonary valve) 2. 오른반달첨판 (right semilunar cusp) 3. 왼반달첨판 (left semilunar cusp) 4. 앞반달첨판 (anterior semilunar cusp)",
+   "explanation": "허파동맥판막 = 앞·오른·왼 반달첨판 3장(대동맥판막은 뒤·오른·왼 — '허파는 앞, 대동맥은 뒤'로 구분). 반달첨판 = 힘줄끈 없음, 소결절·반달판 구조.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 104,
+     "section": "P104 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 오른심실 (34:20)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0440",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "왼심실을 연 실사 사진이다. 번호핀 1은 구멍, 2는 판막이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 왼방실구멍 (left atrioventricular orifice) 2. 왼방실판막 = 승모판막 (left atrioventricular valve / mitral valve)",
+   "explanation": "왼방실판막 = 앞·뒤첨판 **2장**(=이첨판·승모판). 앞첨판이 대동맥판막과 섬유 연속. 꼭지근 2개(앞·뒤)가 두 첨판 모두에 힘줄끈을 보냄.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 107,
+     "section": "P107 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심실 (38:18)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0441",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart-interior",
+   "examPhase": "tagging-1",
+   "stem": "대동맥뿌리를 연 실사 사진이다. 번호핀 1은 구멍, 2는 그 위의 첨판이다. 이름을 순서대로 답하시오.",
+   "choices": null,
+   "answer": "1. 오른심장동맥구멍 (opening of right coronary a.) 2. 대동맥판막 오른반달첨판 (right semilunar cusp of aortic valve)",
+   "explanation": "심장동맥구멍 = 대동맥굴(오른굴→오른심장동맥, 왼굴→왼심장동맥) 안에 열림. 확장기에 판막이 닫히며 굴로 혈류가 밀려 심장동맥 관류 — '심장은 확장기에 먹는다'.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
+     "page": 111,
+     "section": "P111 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심실 (40:21)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -8046,7 +9012,7 @@ window.MEDKOS_ANATOMY = {
    "id": "anatomy-2026-0150",
    "session": 5,
    "title": "5회차 서브노트 — 심장 · 관자아래우묵",
-   "subtitle": "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 8문항 합본",
+   "subtitle": "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 50문항 합본",
    "sections": [
     "1. 가슴막과 가슴막안",
     "2. 세로칸",
@@ -8121,7 +9087,7 @@ window.MEDKOS_ANATOMY = {
      "note": "굴심방결절가지도 약 60%가 오른쪽 기원"
     }
    ],
-   "scanCount": 8
+   "scanCount": 50
   },
   {
    "id": "anatomy-2026-0067",

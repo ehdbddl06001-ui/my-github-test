@@ -5,14 +5,14 @@ kind: study_guide
 topic: Anatomy
 subtopic: "5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위"
 pdf_title: "5회차 서브노트 — 심장 · 관자아래우묵"
-pdf_subtitle: "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 8문항 합본"
+pdf_subtitle: "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 50문항 합본"
 kicker: "MedKOS · 임상해부학술기 3Q · 5회차(2026-08-31)"
 layout: split
 quiz_per_page: 2
 answers_per_page: 3
 cover_lines:
   - "범위  가슴벽 안쪽면 / 가슴안·가슴막·가슴막오목 / 위세로칸 / 심장막·심장막굴 / 심장·심장동맥·자극전도계 / 관자부위 / 관자아래우묵"
-  - "구성  ① 가슴막 ② 세로칸 ③ 심장막 ④ 심장 ⑤ 계보 트리 3장 ⑥ 관자·관자아래부위 ⑦ 실사 태깅 8문항"
+  - "구성  ① 가슴막 ② 세로칸 ③ 심장막 ④ 심장 ⑤ 계보 트리 3장 ⑥ 관자·관자아래부위 ⑦ 실사 태깅 50문항 (2026-08-30 전수 스캔 42문항 추가)"
   - "근거  2026-08-18 업로드 스캔 3종(관자아래부위·가슴막·세로칸·심장막·심장·심장속구조) — 회차 배정은 부위 기준"
   - "축    복장뼈각이 모든 높이의 기준 · 가로막신경은 앞, 미주신경은 뒤 · 가쪽날개근만 턱을 연다"
 date: 2026-08-18
@@ -31,6 +31,7 @@ source_refs:
 # 계보 트리 퀴즈판(문항 0166–0168)은 27~37핀이라 이 지면 썸네일에서 번호핀이 안 읽힌다
 # → 웹 '회차별 학습'에서 전체 크기로 푼다. 여기 싣는 것은 업로드 스캔 실사 8문항.
 scan_questions:
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0169.md", quiz_image: ".private/anatomy/render/uploads-s05/A019_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/A019_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0170.md", quiz_image: ".private/anatomy/render/uploads-s05/A044_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/A044_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0171.md", quiz_image: ".private/anatomy/render/uploads-s05/B011_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B011_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0172.md", quiz_image: ".private/anatomy/render/uploads-s05/B015_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B015_clean.png"}
@@ -38,7 +39,48 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0174.md", quiz_image: ".private/anatomy/render/uploads-s05/B026_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B026_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0175.md", quiz_image: ".private/anatomy/render/uploads-s05/B039_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B039_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0176.md", quiz_image: ".private/anatomy/render/uploads-s05/C007_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/C007_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0169.md", quiz_image: ".private/anatomy/render/uploads-s05/A019_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/A019_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0400.md", quiz_image: ".private/anatomy/render/uploads-s05x/P002_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P002_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0401.md", quiz_image: ".private/anatomy/render/uploads-s05x/P003_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P003_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0402.md", quiz_image: ".private/anatomy/render/uploads-s05x/P008_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P008_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0403.md", quiz_image: ".private/anatomy/render/uploads-s05x/P010_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P010_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0404.md", quiz_image: ".private/anatomy/render/uploads-s05x/P015_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P015_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0405.md", quiz_image: ".private/anatomy/render/uploads-s05x/P018_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P018_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0406.md", quiz_image: ".private/anatomy/render/uploads-s05x/P020_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P020_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0407.md", quiz_image: ".private/anatomy/render/uploads-s05x/P027_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P027_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0408.md", quiz_image: ".private/anatomy/render/uploads-s05x/P033_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P033_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0409.md", quiz_image: ".private/anatomy/render/uploads-s05x/P036_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P036_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0410.md", quiz_image: ".private/anatomy/render/uploads-s05x/P037_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P037_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0411.md", quiz_image: ".private/anatomy/render/uploads-s05x/P039_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P039_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0412.md", quiz_image: ".private/anatomy/render/uploads-s05x/P042_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P042_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0413.md", quiz_image: ".private/anatomy/render/uploads-s05x/P046_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P046_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0414.md", quiz_image: ".private/anatomy/render/uploads-s05x/P047_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P047_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0415.md", quiz_image: ".private/anatomy/render/uploads-s05x/P048_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P048_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0416.md", quiz_image: ".private/anatomy/render/uploads-s05x/P051_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P051_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0417.md", quiz_image: ".private/anatomy/render/uploads-s05x/P052_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P052_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0418.md", quiz_image: ".private/anatomy/render/uploads-s05x/P058_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P058_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0419.md", quiz_image: ".private/anatomy/render/uploads-s05x/P059_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P059_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0420.md", quiz_image: ".private/anatomy/render/uploads-s05x/P060_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P060_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0421.md", quiz_image: ".private/anatomy/render/uploads-s05x/P062_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P062_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0422.md", quiz_image: ".private/anatomy/render/uploads-s05x/P068_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P068_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0423.md", quiz_image: ".private/anatomy/render/uploads-s05x/P071_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P071_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0424.md", quiz_image: ".private/anatomy/render/uploads-s05x/P072_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P072_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0425.md", quiz_image: ".private/anatomy/render/uploads-s05x/P074_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P074_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0426.md", quiz_image: ".private/anatomy/render/uploads-s05x/P076_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P076_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0427.md", quiz_image: ".private/anatomy/render/uploads-s05x/P079_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P079_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0428.md", quiz_image: ".private/anatomy/render/uploads-s05x/P080_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P080_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0429.md", quiz_image: ".private/anatomy/render/uploads-s05x/P082_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P082_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0430.md", quiz_image: ".private/anatomy/render/uploads-s05x/P083_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P083_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0431.md", quiz_image: ".private/anatomy/render/uploads-s05x/P084_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P084_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0432.md", quiz_image: ".private/anatomy/render/uploads-s05x/P086_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P086_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0433.md", quiz_image: ".private/anatomy/render/uploads-s05x/P090_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P090_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0434.md", quiz_image: ".private/anatomy/render/uploads-s05x/P092_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P092_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0435.md", quiz_image: ".private/anatomy/render/uploads-s05x/P095_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P095_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0436.md", quiz_image: ".private/anatomy/render/uploads-s05x/P099_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P099_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0437.md", quiz_image: ".private/anatomy/render/uploads-s05x/P101_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P101_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0438.md", quiz_image: ".private/anatomy/render/uploads-s05x/P103_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P103_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0439.md", quiz_image: ".private/anatomy/render/uploads-s05x/P104_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P104_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0440.md", quiz_image: ".private/anatomy/render/uploads-s05x/P107_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P107_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0441.md", quiz_image: ".private/anatomy/render/uploads-s05x/P111_quiz.png", clean_image: ".private/anatomy/render/uploads-s05x/P111_clean.png"}
 mnemonics:
   - {key: "C3,4,5 keeps the diaphragm alive", full: "가로막신경 = C3·C4·C5", note: "그래서 가로막·심장막 자극이 어깨(C3–C5 피부분절)로 간다"}
   - {key: "앞은 가로막 뒤는 미주", full: "허파뿌리 앞=가로막신경 / 뒤=미주신경", note: "세로칸에서 두 신경을 가르는 유일한 기준 — 태깅 단골"}

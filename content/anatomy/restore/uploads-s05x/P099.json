@@ -1,0 +1,77 @@
+{
+ "page": "P099",
+ "render_dir": "uploads-s05x",
+ "render_width": 1650,
+ "session": null,
+ "source": {
+  "hint": "uploads-s05x 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ],
+  "title_box": [
+   37,
+   150,
+   545,
+   275
+  ],
+  "colors": {
+   "red": true
+  },
+  "stroke_drop": 26,
+  "stroke_pad": 3,
+  "stroke_boxes": [
+   [
+    632,
+    546,
+    760,
+    627
+   ]
+  ],
+  "black_boxes": [
+   [
+    41,
+    162,
+    216,
+    261
+   ],
+   [
+    1107,
+    519,
+    1162,
+    660
+   ],
+   [
+    0,
+    901,
+    1650,
+    967
+   ]
+  ],
+  "label_boxes": [
+   [
+    587,
+    519,
+    1107,
+    660
+   ]
+  ],
+  "pins": [
+   {
+    "x": 620,
+    "y": 460,
+    "to": [
+     848,
+     540
+    ],
+    "n": 1
+   }
+  ]
+ }
+}
