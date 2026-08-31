@@ -1,37 +1,37 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-30",
+ "generated": "2026-08-31",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1979,
+  "total": 1993,
   "byType": {
+   "anatomy": 567,
    "kmle": 779,
-   "anatomy": 560,
-   "paper": 509,
+   "paper": 516,
    "usmle": 114,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 560,
-   "Cardiology": 158,
-   "Nephrology": 133,
-   "Infectious Disease": 110,
+   "Anatomy": 567,
+   "Cardiology": 159,
+   "Nephrology": 134,
+   "Infectious Disease": 111,
    "Pediatrics": 89,
-   "Hematology-Oncology": 78,
-   "Pathology": 71,
+   "Hematology-Oncology": 79,
+   "Pathology": 72,
    "Obstetrics & Gynecology": 60,
    "Neurology": 58,
    "Psychiatry": 58,
-   "Surgery": 54,
+   "Surgery": 55,
    "Endocrinology": 50,
    "Gastroenterology": 49,
+   "Laboratory Medicine": 49,
    "Pulmonology": 49,
    "Dermatology": 48,
    "General Surgery": 48,
-   "Laboratory Medicine": 48,
    "Ophthalmology": 48,
    "Orthopedics": 48,
    "Rheumatology": 48,
@@ -53,13 +53,163 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1239,
-   "medium": 691,
+   "high": 1246,
+   "medium": 698,
    "low": 49
   },
-  "tagCount": 2689
+  "tagCount": 2695
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-01",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-01",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/daily/2026-09-01.md",
+   "snippet": "오늘의 학습 (2026 09 01 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 9일 · Tagging 2까지 48일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-01 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 01 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 9일 · Tagging 2까지 48일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0451",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넓적다리 앞칸 vs 안쪽칸 — 칸별 신경과 큰모음근의 이중 지배",
+   "tags": [
+    "distinction",
+    "6회차",
+    "넓적다리",
+    "폐쇄신경",
+    "큰모음근",
+    "넙다리신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §4 넓적다리 앞칸·안쪽칸 표와 큰모음근 이중지배 주의 콜아웃 — 2026 확정본 6회차 실습주제(넓적다리 앞/안쪽칸)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0451.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넓적다리 앞칸 vs 안쪽칸 — 칸별 신경과 큰모음근의 이중 지배 6회차 · 다리 distinction 6회차 넓적다리 폐쇄신경 큰모음근 넙다리신경 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §4 넓적다리 앞칸·안쪽칸 표와 큰모음근 이중지배 주의 콜아웃 — 2026 확정본 6회차 실습주제(넓적다리 앞/안쪽칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0450",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "발등의 관계 — 폄근지지띠·폄근널힘줄·발등동맥의 자리 잡기",
+   "tags": [
+    "relation",
+    "6회차",
+    "발등",
+    "폄근지지띠",
+    "폄근널힘줄",
+    "발등동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §5 발등표와 임상 콜아웃(발등동맥 촉지) — 2026 확정본 6회차 실습주제(발등)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0450.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 발등의 관계 — 폄근지지띠·폄근널힘줄·발등동맥의 자리 잡기 6회차 · 다리 relation 6회차 발등 폄근지지띠 폄근널힘줄 발등동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §5 발등표와 임상 콜아웃(발등동맥 촉지) — 2026 확정본 6회차 실습주제(발등) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0449",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "깊은종아리신경 vs 얕은종아리신경 — 지배 칸·피부영역 감별과 발처짐",
+   "tags": [
+    "distinction",
+    "6회차",
+    "깊은종아리신경",
+    "얕은종아리신경",
+    "발처짐",
+    "발등동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §5 종아리 앞칸·발등 표와 기출 콜아웃 — 2026 확정본 6회차 실습주제(종아리 앞·발등)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0449.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 깊은종아리신경 vs 얕은종아리신경 — 지배 칸·피부영역 감별과 발처짐 6회차 · 다리 distinction 6회차 깊은종아리신경 얕은종아리신경 발처짐 발등동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §5 종아리 앞칸·발등 표와 기출 콜아웃 — 2026 확정본 6회차 실습주제(종아리 앞·발등) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0448",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "근육삼각과 목의 내장 — 목뿔아래근육 층을 젖히면 나오는 것들과 그 지배신경",
+   "tags": [
+    "layer-order",
+    "6회차",
+    "근육삼각",
+    "목뿔아래근육",
+    "방패샘",
+    "목신경고리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각(근육삼각) · §2-2 목신경얼기(목신경고리) — 2026 확정본 6회차 실습주제(목의 내장)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0448.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 근육삼각과 목의 내장 — 목뿔아래근육 층을 젖히면 나오는 것들과 그 지배신경 6회차 · 목 layer-order 6회차 근육삼각 목뿔아래근육 방패샘 목신경고리 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각(근육삼각) · §2-2 목신경얼기(목신경고리) — 2026 확정본 6회차 실습주제(목의 내장) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0447",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "목신경얼기 계보 — 신경점에서 나오는 피부가지 4개와 목신경고리의 두 뿌리",
+   "tags": [
+    "branch-tree",
+    "6회차",
+    "목신경얼기",
+    "신경점",
+    "목신경고리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §2-2 목신경얼기 표·신경점 암기 콜아웃 — 2026 확정본 6회차 실습주제(목의 삼각·목의 내장)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0447.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 목신경얼기 계보 — 신경점에서 나오는 피부가지 4개와 목신경고리의 두 뿌리 6회차 · 목 branch-tree 6회차 목신경얼기 신경점 목신경고리 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §2-2 목신경얼기 표·신경점 암기 콜아웃 — 2026 확정본 6회차 실습주제(목의 삼각·목의 내장) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0446",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "뒤목삼각의 두 소삼각 — 어깨목뿔근 아래힘살로 갈리는 위·아래와 각각의 내용물",
+   "tags": [
+    "relation",
+    "6회차",
+    "뒤목삼각",
+    "더부신경",
+    "빗장밑동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-1 큰 경계 · §1-3 뒤목삼각의 두 소삼각 — 2026 확정본 6회차 실습주제(목의 삼각)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0446.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 뒤목삼각의 두 소삼각 — 어깨목뿔근 아래힘살로 갈리는 위·아래와 각각의 내용물 6회차 · 목 relation 6회차 뒤목삼각 더부신경 빗장밑동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-1 큰 경계 · §1-3 뒤목삼각의 두 소삼각 — 2026 확정본 6회차 실습주제(목의 삼각) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "kmle-2026-0809",
    "type": "kmle",
@@ -681,6 +831,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-31.md",
    "snippet": "오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-31 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0516",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of orthopaedic and trauma surgery",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0516_locking_plate_fixation_for_proximal_humerus_fractures_are_fo.md",
+   "snippet": "Title Locking plate fixation for proximal humerus fractures: are four proximal screws adequate? A clinical and radiological analysis of 105 consecutive cases Authors Michelitsch Christian, Stillhard Philipp Florian, Zindel Christoph, Sommer",
+   "text": "Surgery scraped pubmed PubMed / Archives of orthopaedic and trauma surgery Title Locking plate fixation for proximal humerus fractures: are four proximal screws adequate? A clinical and radiological analysis of 105 consecutive cases Authors Michelitsch Christian, Stillhard Philipp Florian, Zindel Christoph, Sommer Christoph, Acklin Yves Pascal Journal / DOI Archives of orthopaedic and trauma surgery · DOI: 10.1007/s00402 026 06417 x · PMID: 42669103 https://pubmed.ncbi.nlm.nih.gov/42669103/ Abstract INTRODUCTION: Proximal humerus fractures are common injuries, and achieving stable fixation is essential to prevent complications such as varus collapse and screw perforation. While optimal screw positioning has been emphasized biomechanically, clinical evidence regarding the required number of screws in the humeral head, particularly when minimally invasive aiming devices limit placement to four screws, remains limited. This study evaluated whether fixation with four cranial screws provides adequate clinical and radiological stability. MATERIALS AND METHODS: A retrospective cohort study was conducted including 105 patients with displaced proximal humerus fractures treated with plate osteosynthesis. Patients were grouped according to the number of proximal screws used: four screws (n = 58) or more than four screws (n = 47). The primary outcome was the Constant Murley Score. Secondary outcomes included secondary screw perforation, head shaft angle maintenance, restoration of medial cortical support, and avascular necrosis. Mean follow up was 18 ± 6 months. RESULTS: Functional outcomes were comparable between groups, with Constant Murley Scores of 78 ± 7 in the four screw group and 73 ± 13 in the multi screw group (p = 0.23). Rates of screw perforation (8.6% vs. 10.6%; p = 0.72) and postoperative head shaft angles were likewise similar, and no significant alignment change occurred during follow up. Medial cortical support was restored more frequently in the multi screw group (82% vs. 63%; p = 0.001), but this did not translate into superior clinical or radiographic outcomes. Avascular necrosis occurred in 3 and 13% of patients, respectively. CONCLUSION: When fracture reduction/alignment is adequately restored, the use of four cranial screws appears sufficient to maintain alignment and prevent mechanical complications in minimally invasive plate osteosynthesis of proximal humerus fractures. Further prospective studies with longer follow up are required to validate these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0515",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of medical sciences",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0515_diagnostic_value_of_platelet_lymphocyte_ratio_for_pediatric_.md",
+   "snippet": "Title Diagnostic value of platelet lymphocyte ratio for pediatric sepsis: A systematic review and meta analysis Authors Chen Li, Yang Qiuping Journal / DOI Pakistan journal of medical sciences · DOI: 10.12669/pjms.42.8.19637 · PMID: 4266894",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Pakistan journal of medical sciences Title Diagnostic value of platelet lymphocyte ratio for pediatric sepsis: A systematic review and meta analysis Authors Chen Li, Yang Qiuping Journal / DOI Pakistan journal of medical sciences · DOI: 10.12669/pjms.42.8.19637 · PMID: 42668943 https://pubmed.ncbi.nlm.nih.gov/42668943/ Abstract OBJECTIVES: Early diagnosis of pediatric sepsis remains challenging due to limitations of conventional biomarkers. The platelet to lymphocyte ratio (PLR), derived from routine blood tests, has emerged as a potential diagnostic marker. This study aimed to evaluate the diagnostic accuracy of PLR for pediatric sepsis. METHODOLOGY: A systematic search of PubMed, Embase, Web of Science, and Scopus was conducted from inception to March 15, 2026. Studies assessing the diagnostic performance of PLR in pediatric sepsis and reporting sufficient data to construct 2×2 contingency tables were included. Pooled sensitivity and specificity were calculated using a random effects model. Summary receiver operating characteristic (SROC) analysis and Deeks' funnel plot were performed. RESULTS: Fifteen studies with 1,980 patients were included. The pooled sensitivity and specificity of PLR for diagnosing pediatric sepsis were 0.81 (95% CI: 0.73 0.87) and 0.72 (95% CI: 0.60 0.82), respectively. The SROC curve demonstrated an area under the curve of 0.79, indicating moderate diagnostic accuracy. Significant heterogeneity was observed. Subgroup analysis showed better performance in larger studies (≥150 patients) and studies using higher PLR cut offs ( 50). Deeks' funnel plot showed no evidence of publication bias (p = 0.536). CONCLUSIONS: Evidence from studies with high risk of bias indicates that PLR may have moderate diagnostic accuracy for pediatric sepsis and may serve as a simple, cost effective adjunctive biomarker. Since, most studies were on neonatal population, evidence may not be generalized to older pediatric populations. Further large scale prospective studies are needed to establish standardized cut off values and validate its clinical utility.Registration No: PROSPERO (No. CRD420261338676). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0514",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0514_hyper_intense_tumor_peripheral_accumulation_of_antibody_conj.md",
+   "snippet": "Title Hyper Intense Tumor Peripheral Accumulation of Antibody Conjugated Iron Oxide Nanoparticles can Enable Breast Cancer Detection by Magnetic Particle Imaging Authors Korangath Preethi, Carlton Hayden, Wong Theresa, Healy Sean, Sanders T",
+   "text": "Pathology scraped pubmed PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany) Title Hyper Intense Tumor Peripheral Accumulation of Antibody Conjugated Iron Oxide Nanoparticles can Enable Breast Cancer Detection by Magnetic Particle Imaging Authors Korangath Preethi, Carlton Hayden, Wong Theresa, Healy Sean, Sanders Toby, Song Mason, Goodwill Patrick W, Grüttner Cordula, et al. Journal / DOI Advanced science (Weinheim, Baden Wurttemberg, Germany) · DOI: 10.1002/advs.77425 · PMID: 42669153 https://pubmed.ncbi.nlm.nih.gov/42669153/ Abstract Targeting nanoparticles to cancer cells in vivo remains a challenge for cancer imaging. We assessed nanoparticle distribution after injecting iron oxide nanoparticles conjugated with either a monoclonal anti HER2 (human epidermal growth factor 2), or a non specific IgG antibody into a human HER2 overexpressing murine breast cancer model. We used Magnetic Particle Imaging (MPI) and histopathology to assess particle localization at 72 h after injection. MPI detects magnetic moments produced by magnetic particles, and histology enables spatial quantification of nanoparticles. Intratumor iron content measured by MPI correlated with inductively coupled plasma mass spectrometry (ρ = 0.868, p < 0.0001). We detected nanoparticle accumulation in tumors, and organs and tissues associated with inflammation. MPI showed higher uptake of nanoparticles in tumors, regardless of their performance in vitro. Spatial analysis showed that 43 ± 7% of nanoparticles that reached the tumor accumulated in the peripheral quartile of the tumor, with decreasing amounts toward the center. Immunohistochemical analysis showed the nanoparticles were strongly associated with inflammatory immune and stromal cells in the tumor microenvironment. This hyperintense peripheral accumulation, or ring pattern, observed with MPI enabled us to distinguish tumors from general inflammation. Iron oxide nanoparticle mediated MPI has the potential to detect tumors, providing another powerful diagnostic tool. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0513",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Molecular carcinogenesis",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0513_the_foxq1_ssbp2_regulatory_axis_drives_malignant_progression.md",
+   "snippet": "Title The FOXQ1/SSBP2 Regulatory Axis Drives Malignant Progression of Melanoma Authors Zhang Xiaoyu, Hou Yu, Liu Jiahui, Han Yuehua, Feng Jiangang Journal / DOI Molecular carcinogenesis · DOI: 10.1002/mc.70126 · PMID: 42669187 https://pubme",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Molecular carcinogenesis Title The FOXQ1/SSBP2 Regulatory Axis Drives Malignant Progression of Melanoma Authors Zhang Xiaoyu, Hou Yu, Liu Jiahui, Han Yuehua, Feng Jiangang Journal / DOI Molecular carcinogenesis · DOI: 10.1002/mc.70126 · PMID: 42669187 https://pubmed.ncbi.nlm.nih.gov/42669187/ Abstract Melanoma is a highly aggressive skin cancer with poor prognosis, often linked to excessive UV exposure. Despite advancements in immunotherapy and targeted treatments, melanoma's invasiveness and metastatic potential remain significant challenges. This study aimed to identify novel molecular targets associated with melanoma progression. Consensus clustering analysis revealed three melanoma subtypes, with the C3 subtype exhibiting the worst prognosis. Weighted gene co expression network analysis (WGCNA) identified FOXQ1 as a key driver in this subtype. FOXQ1 expression was elevated in clinical melanoma tissues and cell lines, and silencing FOXQ1 in vitro reduced melanoma cell proliferation, migration, and induced apoptosis. To explore its downstream targets, FOXQ1 was found to repress the expression of SSBP2, a gene inversely correlated with FOXQ1. Functional assays demonstrated that silencing SSBP2 promoted melanoma malignancy. Rescue experiments showed that knockdown of SSBP2 reversed the tumor suppressive effects of FOXQ1 silencing. These results suggest that the FOXQ1/SSBP2 regulatory axis plays a critical role in melanoma progression and may serve as a potential therapeutic target to improve melanoma treatment outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0512",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of molecular histology",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0512_anti_lcn2_antibody_treatment_is_associated_with_attenuated_h.md",
+   "snippet": "Title Anti LCN2 antibody treatment is associated with attenuated hearing loss and blood labyrinth barrier disruption in a mouse model of chronic kidney disease Authors Ding Ye, Jiang Xin, Ye Xiangming Journal / DOI Journal of molecular hist",
+   "text": "Nephrology scraped pubmed PubMed / Journal of molecular histology Title Anti LCN2 antibody treatment is associated with attenuated hearing loss and blood labyrinth barrier disruption in a mouse model of chronic kidney disease Authors Ding Ye, Jiang Xin, Ye Xiangming Journal / DOI Journal of molecular histology · DOI: 10.1007/s10735 026 10963 4 · PMID: 42669095 https://pubmed.ncbi.nlm.nih.gov/42669095/ Abstract Chronic kidney disease (CKD) is associated with sensorineural hearing loss, but the mechanisms linking renal injury to cochlear dysfunction remain incompletely defined. Because lipocalin 2 (LCN2/NGAL) is markedly increased in CKD and has been implicated in endothelial dysfunction and barrier injury, we investigated whether LCN2 contributes to cochlear damage in a mouse model of CKD. Male C57BL/6J mice underwent 5/6 nephrectomy, and CKD mice received either an anti LCN2 monoclonal antibody or an isotype control three times weekly for seven weeks beginning one week after completion of surgery. Auditory function, cochlear morphology, blood labyrinth barrier integrity, cochlear perfusion, and LCN2 associated signaling were assessed using auditory brainstem responses, distortion product otoacoustic emissions, whole mount immunofluorescence, FITC dextran extravasation, Western blotting, quantitative PCR, and laser Doppler flowmetry. CKD mice developed elevated auditory brainstem response thresholds, reduced distortion product otoacoustic emission amplitude at a single primary tone pair with f2 = 8.0 kHz, outer hair cell loss, and a reduction in the number of CtBP2 positive presynaptic ribbon puncta per inner hair cell. These changes were accompanied by increased serum and cochlear LCN2, upregulation of 24p3R/SLC22A17 and NLRP3, increased blood labyrinth barrier permeability, reduced claudin 5 and ZO 1 expression, impaired cochlear blood flow, stria vascularis atrophy, and decreased expression of strial ion transport genes. Anti LCN2 antibody treatment improved auditory thresholds and otoacoustic emission responses, attenuated outer hair cell and synaptic injury, reduced vascular leakage, partially restored tight junction and ion transport gene expression, and improved cochlear perfusion, without measurably lowering serum blood urea nitrogen or creatinine. These findings support a possible contribution of LCN2 to CKD associated cochlear vascular dysfunction and hearing loss. Targeting LCN2 may represent a therapeutic strategy for preserving hearing in CKD, although validation in additional CKD models, both sexes, and human tissues is required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0511",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS applied materials & interfaces",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0511_programmable_antimicrobial_nanostructured_surfaces_opportuni.md",
+   "snippet": "Title Programmable Antimicrobial Nanostructured Surfaces: Opportunities and Hurdles for Clinical Translation Authors Nguyen Thuy P T, McGiffin David, Peleg Anton Y, Elnathan Roey, Voelcker Nicolas H, Qu Yue Journal / DOI ACS applied materia",
+   "text": "Infectious Disease scraped pubmed PubMed / ACS applied materials & interfaces Title Programmable Antimicrobial Nanostructured Surfaces: Opportunities and Hurdles for Clinical Translation Authors Nguyen Thuy P T, McGiffin David, Peleg Anton Y, Elnathan Roey, Voelcker Nicolas H, Qu Yue Journal / DOI ACS applied materials & interfaces · DOI: 10.1021/acsami.6c12074 · PMID: 42669205 https://pubmed.ncbi.nlm.nih.gov/42669205/ Abstract Surfaces with programmable nanostructures represent a promising antimicrobial strategy that eradicates bacterial pathogens through physical membrane disruption and/or mechanically induced oxidative stress, independently of conventional antimicrobial resistance mechanisms. Despite their demonstrated and often potent in vitro efficacy, the successful clinical translation of this nanotechnology remains limited. Here, we synthesize the current understanding of how nanoscale geometry, bacterial biomechanics, and host associated environmental factors collectively govern the antimicrobial performance of programmable nanostructured surfaces. We identify the key bottlenecks hindering clinical translation, including fabrication complexity, limited scalability, the mechanical instability of programmable nanostructured surfaces, biofouling, and reduced efficacy under physiological conditions. Emerging solutions, including flexible polymeric materials and multifunctional nanostructured surfaces, are highlighted as promising strategies to overcome these challenges and facilitate clinical translation. Ultimately, translating programmable nanostructured surfaces from laboratory proof of concept systems to clinically relevant applications will require coordinated advances in nanofabrication, materials engineering, mechanobiological understanding, and scalable manufacturing. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0510",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0510_characteristics_of_atrial_tachycardia_recurrence_after_pulse.md",
+   "snippet": "Title Characteristics of Atrial Tachycardia Recurrence After Pulsed Field Ablation: Insights From Repeat Ablation Procedures Authors Ukita Kohei, Mamaev Roman, Hatahet Sascha, Wenzel Jan Per, Eitel Charlotte, Kuck Karl Heinz, Tilz Roland Ri",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Characteristics of Atrial Tachycardia Recurrence After Pulsed Field Ablation: Insights From Repeat Ablation Procedures Authors Ukita Kohei, Mamaev Roman, Hatahet Sascha, Wenzel Jan Per, Eitel Charlotte, Kuck Karl Heinz, Tilz Roland Richard Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70487 · PMID: 42669175 https://pubmed.ncbi.nlm.nih.gov/42669175/ Abstract BACKGROUND: Pulmonary vein isolation (PVI) using pulsed field ablation (PFA) for atrial fibrillation (AF) is becoming increasingly widespread. However, characteristics of atrial tachycardia (AT) recurrence after PFA remain unclear. We aimed to investigate characteristics of AT recurrence in comparison with AF recurrence after PFA based PVI. METHODS: We analyzed 60 consecutive patients who underwent repeat ablation for recurrent atrial tachyarrhythmia after initial PVI alone performed with a pentaspline PFA system. Patients were classified into an AT group (at least one AT episode before repeat ablation) and an AF group (AF recurrence only). Baseline characteristics, pulmonary vein (PV) reconnections, and recurrence free rate after repeat ablation procedure were assessed. RESULTS: The AT group consisted of 34 patients (57%). In the multivariate analysis, absence of PV reconnections was independently associated with AT recurrence (p = 0.037). All mappable ATs were macro reentrant circuits and none were directly related to PVs. Recurrence free rate after repeat ablation did not differ between AT and AF groups (p = 0.277). However, patients presenting in AT at the beginning of the repeat procedure had the most favorable outcomes, whereas those in AF had the poorest (p = 0.042). CONCLUSIONS: After PFA based PVI, AT recurrence was characterized by lower PV reconnection rates and macro reentrant circuits remote from the PVs, whereas AF recurrence was more frequently associated with PV reconnections. While overall outcomes after repeat ablation were comparable, baseline rhythm at the repeat procedure was associated with prognosis, underscoring the importance of tailored mapping and ablation strategies after PFA. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-08-30",

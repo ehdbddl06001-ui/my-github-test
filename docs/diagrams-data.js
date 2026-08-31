@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
- "generated": "2026-08-31",
+ "generated": "2026-09-01",
  "count": 78,
  "groups": 40,
  "items": [
