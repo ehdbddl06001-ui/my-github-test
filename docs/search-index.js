@@ -1,47 +1,47 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-30",
+ "generated": "2026-08-31",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1979,
+  "total": 1992,
   "byType": {
+   "usmle": 120,
    "kmle": 779,
    "anatomy": 560,
-   "paper": 509,
-   "usmle": 114,
+   "paper": 516,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 560,
-   "Cardiology": 158,
-   "Nephrology": 133,
-   "Infectious Disease": 110,
-   "Pediatrics": 89,
-   "Hematology-Oncology": 78,
-   "Pathology": 71,
+   "Cardiology": 159,
+   "Nephrology": 134,
+   "Infectious Disease": 111,
+   "Pediatrics": 90,
+   "Hematology-Oncology": 79,
+   "Pathology": 72,
    "Obstetrics & Gynecology": 60,
-   "Neurology": 58,
+   "Neurology": 59,
    "Psychiatry": 58,
-   "Surgery": 54,
+   "Surgery": 55,
    "Endocrinology": 50,
    "Gastroenterology": 49,
+   "Laboratory Medicine": 49,
    "Pulmonology": 49,
    "Dermatology": 48,
    "General Surgery": 48,
-   "Laboratory Medicine": 48,
    "Ophthalmology": 48,
    "Orthopedics": 48,
    "Rheumatology": 48,
    "Hematology": 47,
-   "Physiology": 14,
+   "Physiology": 15,
    "Pharmacology": 9,
+   "Biochemistry": 8,
    "Microbiology": 8,
-   "Biochemistry": 7,
-   "Immunology": 5,
-   "Internal Medicine": 5,
+   "Immunology": 6,
+   "Internal Medicine": 6,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,141 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1239,
-   "medium": 691,
+   "high": 1245,
+   "medium": 698,
    "low": 49
   },
-  "tagCount": 2689
+  "tagCount": 2702
  },
  "docs": [
+  {
+   "id": "usmle-2026-0133",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Benzodiazepine-Refractory Status Epilepticus — Moving to a Second-Line Antiseizure Medication",
+   "tags": [
+    "status-epilepticus",
+    "lorazepam",
+    "levetiracetam",
+    "ESETT",
+    "seizure",
+    "emergency-neurology"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · status epilepticus algorithm, ESETT)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0133.md",
+   "snippet": "A 24 year old woman with epilepsy is brought to the emergency department with generalized tonic clonic seizure activity that began 18 minutes ago. Her roommate reports she ran out of her antiseizure medication last week. En route, paramedic",
+   "text": "Neurology Benzodiazepine-Refractory Status Epilepticus — Moving to a Second-Line Antiseizure Medication status-epilepticus lorazepam levetiracetam ESETT seizure emergency-neurology USMLE-style / MedKOS (neurology · status epilepticus algorithm, ESETT) A 24 year old woman with epilepsy is brought to the emergency department with generalized tonic clonic seizure activity that began 18 minutes ago. Her roommate reports she ran out of her antiseizure medication last week. En route, paramedics secured intravenous access and administered lorazepam 4 mg. On arrival, convulsive activity continues, and a second dose of lorazepam 4 mg is given; 5 minutes later she is still seizing. Airway positioning and supplemental oxygen are in place, and bedside studies are shown. Which of the following is the most appropriate next step in management? A. Intravenous levetiracetam loading B. Third dose of intravenous lorazepam C. Endotracheal intubation and intravenous propofol infusion D. Intramuscular midazolam administration E. Emergent electroencephalography before further medication 5분 이상 지속 = 경련성 뇌전증지속상태. 적정 용량 벤조디아제핀 2회(로라제팜 4 mg ×2)에도 경련이 지속되면 '벤조 불응성'으로 정의되고, 다음 단계는 2차 항경련제 부하 — ESETT 시험에서 levetiracetam·fosphenytoin·valproate는 동등(각 ~47% 성공)했으므로 그중 하나를 즉시 정맥 부하한다. 벤조 3차 투여는 추가 종료 효과 없이 호흡억제만 쌓고, 마취(propofol)는 2차 약물까지 실패한 불응성 단계의 치료이며, EEG를 기다리느라 투약을 늦추면 신경 손상과 약물 저항성이 시간에 비례해 커진다."
+  },
+  {
+   "id": "usmle-2026-0132",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Five Days of Fever with Mucocutaneous Signs — IVIG and Aspirin Before the Coronary Arteries Pay",
+   "tags": [
+    "kawasaki-disease",
+    "IVIG",
+    "aspirin",
+    "coronary-aneurysm",
+    "fever",
+    "vasculitis"
+   ],
+   "source": "USMLE-style / MedKOS (pediatrics · Kawasaki disease management)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0132.md",
+   "snippet": "A 3 year old boy is brought to the emergency department because of 5 days of fever up to 39.8°C that has not responded to acetaminophen. Since yesterday his parents have noticed red eyes and a rash. Examination shows bilateral nonexudative ",
+   "text": "Pediatrics Five Days of Fever with Mucocutaneous Signs — IVIG and Aspirin Before the Coronary Arteries Pay kawasaki-disease IVIG aspirin coronary-aneurysm fever vasculitis USMLE-style / MedKOS (pediatrics · Kawasaki disease management) A 3 year old boy is brought to the emergency department because of 5 days of fever up to 39.8°C that has not responded to acetaminophen. Since yesterday his parents have noticed red eyes and a rash. Examination shows bilateral nonexudative conjunctival injection, red cracked lips with a diffusely erythematous tongue, a polymorphous truncal rash, edema of the dorsa of the hands and feet, and a single 1.7 cm right anterior cervical lymph node. Laboratory studies are shown. Which of the following is the most appropriate management at this time? A. Intravenous ceftriaxone after obtaining blood cultures B. Oral prednisolone taper C. Supportive care with antipyretics and follow up in 48 hours D. Oral low dose aspirin alone E. Intravenous immune globulin with aspirin 발열 ≥5일 + 주요 기준 5개 전부(양측 비삼출성 결막충혈, 입술·혀 변화, 다형 발진, 사지 말단 부종, 경부 림프절 ≥1.5cm) = 가와사키병. 무균성 농뇨·혈소판증가·CRP/ESR 상승이 부합한다. 치료는 발병 10일 이내 IVIG 2 g/kg 단회 + 아스피린 — IVIG가 관상동맥류 발생을 약 25%에서 4–5%로 줄이므로, 진단 즉시(가능하면 10일 이내) 투여가 관상동맥 합병증 예방의 핵심이다. 항생제는 무효하고, 지지요법으로 기다리면 치료 시기를 놓친다."
+  },
+  {
+   "id": "usmle-2026-0131",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Syncope with Complete Heart Block — Transcutaneous Pacing Before Drugs in the Unstable Patient",
+   "tags": [
+    "complete-heart-block",
+    "AV-block",
+    "bradycardia",
+    "transcutaneous-pacing",
+    "syncope",
+    "ECG",
+    "ACLS"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · bradyarrhythmia management, ACLS)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0131.md",
+   "snippet": "A 78 year old woman is brought to the emergency department after losing consciousness for about 30 seconds while washing dishes. Over the past week she has had three episodes of lightheadedness. Her only medication is losartan for hypertens",
+   "text": "Internal Medicine Syncope with Complete Heart Block — Transcutaneous Pacing Before Drugs in the Unstable Patient complete-heart-block AV-block bradycardia transcutaneous-pacing syncope ECG ACLS USMLE-style / MedKOS (cardiology · bradyarrhythmia management, ACLS) A 78 year old woman is brought to the emergency department after losing consciousness for about 30 seconds while washing dishes. Over the past week she has had three episodes of lightheadedness. Her only medication is losartan for hypertension. On arrival she is drowsy but arousable, with cool extremities. Cardiac examination shows a slow regular rhythm; the lungs are clear. An electrocardiogram shows the rhythm in the figure, with a QRS duration of 140 msec. Intravenous access is established. Which of the following is the most appropriate next step in management? A. Intravenous atropine administration B. Transcutaneous cardiac pacing C. Intravenous dopamine infusion D. Urgent permanent pacemaker implantation E. Intravenous amiodarone administration P파와 QRS가 완전히 해리되고 심실 이탈리듬이 넓은 QRS(140 msec)로 32회/분 = 결절 이하(infranodal) 3도 방실차단. 실신 + 저혈압·의식저하로 불안정하므로 즉시 심박수를 확보해야 하는데, 결절 이하 차단은 미주신경 지배를 받지 않아 아트로핀에 반응하지 않고 오히려 방실전도비를 악화시킬 수 있다 → 경피 조율(transcutaneous pacing)을 즉시 시작하고 경정맥 조율로 이행한다. 영구 심박동기는 가역 원인 배제 후의 확정 치료이지 '지금'의 처치가 아니다."
+  },
+  {
+   "id": "usmle-2026-0130",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "SIADH from Small Cell Lung Cancer — Aquaporin-2 Insertion as the Transport Mechanism of Hyponatremia",
+   "tags": [
+    "SIADH",
+    "ADH",
+    "aquaporin-2",
+    "collecting-duct",
+    "hyponatremia",
+    "small-cell-lung-cancer"
+   ],
+   "source": "USMLE-style / MedKOS (renal water handling · ADH physiology)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0130.md",
+   "snippet": "A 66 year old man with a 45 pack year smoking history is evaluated for 2 weeks of nausea, headache, and difficulty concentrating. Chest imaging 1 month ago showed a central lung mass, and biopsy demonstrated a high grade neuroendocrine carc",
+   "text": "Physiology SIADH from Small Cell Lung Cancer — Aquaporin-2 Insertion as the Transport Mechanism of Hyponatremia SIADH ADH aquaporin-2 collecting-duct hyponatremia small-cell-lung-cancer USMLE-style / MedKOS (renal water handling · ADH physiology) A 66 year old man with a 45 pack year smoking history is evaluated for 2 weeks of nausea, headache, and difficulty concentrating. Chest imaging 1 month ago showed a central lung mass, and biopsy demonstrated a high grade neuroendocrine carcinoma. He takes no diuretics. Examination shows moist mucous membranes, no jugular venous distention, and no peripheral edema. Laboratory studies are shown. Increased activity of which of the following transport processes best explains this patient's serum sodium concentration? A. Na+ K+ 2Cl− cotransport in the thick ascending limb B. Na+ Cl− cotransport in the distal convoluted tubule C. Epithelial Na+ channel–mediated sodium reabsorption in the collecting duct D. Aquaporin 2–mediated water reabsorption in the collecting duct E. Na+ H+ exchange in the proximal convoluted tubule 소세포폐암 + 정용적성(euvolemic) 저나트륨혈증 + 혈청 삼투압 낮은데 소변 삼투압이 부적절하게 높음( 100) + 소변 Na 40 + 저요산혈증 = SIADH. 종양이 분비한 ADH가 집합관 주세포의 V2 수용체 → Gs–cAMP–PKA 경로로 aquaporin 2 물통로를 내강막에 삽입시켜, 나트륨과 무관하게 '물만' 재흡수된다. 저나트륨혈증은 나트륨 소실이 아니라 수분 희석이 기전이므로, 정답은 물 수송(AQP2) 증가다."
+  },
+  {
+   "id": "usmle-2026-0129",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Vitamin B12 Deficiency — Methylmalonyl-CoA Mutase Block Behind the Neurologic Damage",
+   "tags": [
+    "vitamin-B12",
+    "cobalamin",
+    "methylmalonic-acid",
+    "subacute-combined-degeneration",
+    "homocysteine",
+    "pernicious-anemia"
+   ],
+   "source": "USMLE-style / MedKOS (cobalamin biochemistry · subacute combined degeneration)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0129.md",
+   "snippet": "A 68 year old man comes to the clinic because of 4 months of progressive numbness and tingling of both feet and unsteadiness when walking in the dark. He has followed a strict vegan diet for 12 years and takes no supplements. Examination sh",
+   "text": "Biochemistry Vitamin B12 Deficiency — Methylmalonyl-CoA Mutase Block Behind the Neurologic Damage vitamin-B12 cobalamin methylmalonic-acid subacute-combined-degeneration homocysteine pernicious-anemia USMLE-style / MedKOS (cobalamin biochemistry · subacute combined degeneration) A 68 year old man comes to the clinic because of 4 months of progressive numbness and tingling of both feet and unsteadiness when walking in the dark. He has followed a strict vegan diet for 12 years and takes no supplements. Examination shows decreased vibration and position sense in both lower extremities, a positive Romberg sign, and brisk knee reflexes with extensor plantar responses. Laboratory studies are shown. Decreased activity of which of the following enzymes best explains this patient's neurologic findings? A. Methylmalonyl CoA mutase B. Methionine synthase C. Dihydrofolate reductase D. Cystathionine β synthase E. Propionyl CoA carboxylase 12년 비건 식이 + 거대적혈구빈혈 + 후주·피질척수로 증상(진동·위치감각 소실, 바뱅스키 양성) = 비타민 B12 결핍의 아급성 연합변성. B12는 두 효소의 조효소인데, 신경 손상은 adenosylcobalamin을 쓰는 methylmalonyl CoA mutase 차단으로 메틸말론산·비정상 지방산이 축적되어 수초 합성이 망가지는 기전이 핵심이다(MMA 상승이 그 증거). Methionine synthase 차단은 folate trap으로 거대적혈구빈혈·호모시스테인 상승을 설명하지만, folate 결핍(같은 효소 경로)에서는 신경 증상이 없다는 사실이 신경 손상의 주범이 mutase 쪽임을 가리킨다."
+  },
+  {
+   "id": "usmle-2026-0128",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50",
+   "tags": [
+    "complement",
+    "membrane-attack-complex",
+    "C5",
+    "Neisseria",
+    "meningitis",
+    "CH50",
+    "AH50"
+   ],
+   "source": "USMLE-style / MedKOS (complement system · terminal pathway deficiency)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0128.md",
+   "snippet": "A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. H",
+   "text": "Immunology Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50 complement membrane-attack-complex C5 Neisseria meningitis CH50 AH50 USMLE-style / MedKOS (complement system · terminal pathway deficiency) A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. He has otherwise been healthy, without sinopulmonary infections, skin abscesses, or episodes of facial swelling. He received all routine childhood vaccinations. Examination shows nuchal rigidity without a petechial rash. Cerebrospinal fluid analysis and complement studies are shown. A deficiency of which of the following proteins is most likely in this patient? A. C1 esterase inhibitor B. C3 C. C5 D. C4 E. Properdin 재발성 수막알균(Neisseria) 수막염 + CH50·AH50 모두 검출 안 됨 + C3·C4 정상 = 두 경로가 합류한 뒤의 종말 보체(C5–C9, 막공격복합체) 결핍. Neisseria는 세포막이 얇아 MAC에 의한 직접 용해가 주 방어이므로, 종말 성분이 없으면 유독 이 균의 침습 감염이 반복된다. CH50(고전)·AH50(대체)이 동시에 0이면 결함은 공통 종말경로에 있고, 어느 한쪽만 낮으면 그 경로 고유 성분(C4→고전, properdin→대체)이다."
+  },
   {
    "id": "kmle-2026-0809",
    "type": "kmle",
@@ -681,6 +809,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-31.md",
    "snippet": "오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-31 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0516",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of orthopaedic and trauma surgery",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0516_locking_plate_fixation_for_proximal_humerus_fractures_are_fo.md",
+   "snippet": "Title Locking plate fixation for proximal humerus fractures: are four proximal screws adequate? A clinical and radiological analysis of 105 consecutive cases Authors Michelitsch Christian, Stillhard Philipp Florian, Zindel Christoph, Sommer",
+   "text": "Surgery scraped pubmed PubMed / Archives of orthopaedic and trauma surgery Title Locking plate fixation for proximal humerus fractures: are four proximal screws adequate? A clinical and radiological analysis of 105 consecutive cases Authors Michelitsch Christian, Stillhard Philipp Florian, Zindel Christoph, Sommer Christoph, Acklin Yves Pascal Journal / DOI Archives of orthopaedic and trauma surgery · DOI: 10.1007/s00402 026 06417 x · PMID: 42669103 https://pubmed.ncbi.nlm.nih.gov/42669103/ Abstract INTRODUCTION: Proximal humerus fractures are common injuries, and achieving stable fixation is essential to prevent complications such as varus collapse and screw perforation. While optimal screw positioning has been emphasized biomechanically, clinical evidence regarding the required number of screws in the humeral head, particularly when minimally invasive aiming devices limit placement to four screws, remains limited. This study evaluated whether fixation with four cranial screws provides adequate clinical and radiological stability. MATERIALS AND METHODS: A retrospective cohort study was conducted including 105 patients with displaced proximal humerus fractures treated with plate osteosynthesis. Patients were grouped according to the number of proximal screws used: four screws (n = 58) or more than four screws (n = 47). The primary outcome was the Constant Murley Score. Secondary outcomes included secondary screw perforation, head shaft angle maintenance, restoration of medial cortical support, and avascular necrosis. Mean follow up was 18 ± 6 months. RESULTS: Functional outcomes were comparable between groups, with Constant Murley Scores of 78 ± 7 in the four screw group and 73 ± 13 in the multi screw group (p = 0.23). Rates of screw perforation (8.6% vs. 10.6%; p = 0.72) and postoperative head shaft angles were likewise similar, and no significant alignment change occurred during follow up. Medial cortical support was restored more frequently in the multi screw group (82% vs. 63%; p = 0.001), but this did not translate into superior clinical or radiographic outcomes. Avascular necrosis occurred in 3 and 13% of patients, respectively. CONCLUSION: When fracture reduction/alignment is adequately restored, the use of four cranial screws appears sufficient to maintain alignment and prevent mechanical complications in minimally invasive plate osteosynthesis of proximal humerus fractures. Further prospective studies with longer follow up are required to validate these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0515",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of medical sciences",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0515_diagnostic_value_of_platelet_lymphocyte_ratio_for_pediatric_.md",
+   "snippet": "Title Diagnostic value of platelet lymphocyte ratio for pediatric sepsis: A systematic review and meta analysis Authors Chen Li, Yang Qiuping Journal / DOI Pakistan journal of medical sciences · DOI: 10.12669/pjms.42.8.19637 · PMID: 4266894",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Pakistan journal of medical sciences Title Diagnostic value of platelet lymphocyte ratio for pediatric sepsis: A systematic review and meta analysis Authors Chen Li, Yang Qiuping Journal / DOI Pakistan journal of medical sciences · DOI: 10.12669/pjms.42.8.19637 · PMID: 42668943 https://pubmed.ncbi.nlm.nih.gov/42668943/ Abstract OBJECTIVES: Early diagnosis of pediatric sepsis remains challenging due to limitations of conventional biomarkers. The platelet to lymphocyte ratio (PLR), derived from routine blood tests, has emerged as a potential diagnostic marker. This study aimed to evaluate the diagnostic accuracy of PLR for pediatric sepsis. METHODOLOGY: A systematic search of PubMed, Embase, Web of Science, and Scopus was conducted from inception to March 15, 2026. Studies assessing the diagnostic performance of PLR in pediatric sepsis and reporting sufficient data to construct 2×2 contingency tables were included. Pooled sensitivity and specificity were calculated using a random effects model. Summary receiver operating characteristic (SROC) analysis and Deeks' funnel plot were performed. RESULTS: Fifteen studies with 1,980 patients were included. The pooled sensitivity and specificity of PLR for diagnosing pediatric sepsis were 0.81 (95% CI: 0.73 0.87) and 0.72 (95% CI: 0.60 0.82), respectively. The SROC curve demonstrated an area under the curve of 0.79, indicating moderate diagnostic accuracy. Significant heterogeneity was observed. Subgroup analysis showed better performance in larger studies (≥150 patients) and studies using higher PLR cut offs ( 50). Deeks' funnel plot showed no evidence of publication bias (p = 0.536). CONCLUSIONS: Evidence from studies with high risk of bias indicates that PLR may have moderate diagnostic accuracy for pediatric sepsis and may serve as a simple, cost effective adjunctive biomarker. Since, most studies were on neonatal population, evidence may not be generalized to older pediatric populations. Further large scale prospective studies are needed to establish standardized cut off values and validate its clinical utility.Registration No: PROSPERO (No. CRD420261338676). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0514",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0514_hyper_intense_tumor_peripheral_accumulation_of_antibody_conj.md",
+   "snippet": "Title Hyper Intense Tumor Peripheral Accumulation of Antibody Conjugated Iron Oxide Nanoparticles can Enable Breast Cancer Detection by Magnetic Particle Imaging Authors Korangath Preethi, Carlton Hayden, Wong Theresa, Healy Sean, Sanders T",
+   "text": "Pathology scraped pubmed PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany) Title Hyper Intense Tumor Peripheral Accumulation of Antibody Conjugated Iron Oxide Nanoparticles can Enable Breast Cancer Detection by Magnetic Particle Imaging Authors Korangath Preethi, Carlton Hayden, Wong Theresa, Healy Sean, Sanders Toby, Song Mason, Goodwill Patrick W, Grüttner Cordula, et al. Journal / DOI Advanced science (Weinheim, Baden Wurttemberg, Germany) · DOI: 10.1002/advs.77425 · PMID: 42669153 https://pubmed.ncbi.nlm.nih.gov/42669153/ Abstract Targeting nanoparticles to cancer cells in vivo remains a challenge for cancer imaging. We assessed nanoparticle distribution after injecting iron oxide nanoparticles conjugated with either a monoclonal anti HER2 (human epidermal growth factor 2), or a non specific IgG antibody into a human HER2 overexpressing murine breast cancer model. We used Magnetic Particle Imaging (MPI) and histopathology to assess particle localization at 72 h after injection. MPI detects magnetic moments produced by magnetic particles, and histology enables spatial quantification of nanoparticles. Intratumor iron content measured by MPI correlated with inductively coupled plasma mass spectrometry (ρ = 0.868, p < 0.0001). We detected nanoparticle accumulation in tumors, and organs and tissues associated with inflammation. MPI showed higher uptake of nanoparticles in tumors, regardless of their performance in vitro. Spatial analysis showed that 43 ± 7% of nanoparticles that reached the tumor accumulated in the peripheral quartile of the tumor, with decreasing amounts toward the center. Immunohistochemical analysis showed the nanoparticles were strongly associated with inflammatory immune and stromal cells in the tumor microenvironment. This hyperintense peripheral accumulation, or ring pattern, observed with MPI enabled us to distinguish tumors from general inflammation. Iron oxide nanoparticle mediated MPI has the potential to detect tumors, providing another powerful diagnostic tool. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0513",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Molecular carcinogenesis",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0513_the_foxq1_ssbp2_regulatory_axis_drives_malignant_progression.md",
+   "snippet": "Title The FOXQ1/SSBP2 Regulatory Axis Drives Malignant Progression of Melanoma Authors Zhang Xiaoyu, Hou Yu, Liu Jiahui, Han Yuehua, Feng Jiangang Journal / DOI Molecular carcinogenesis · DOI: 10.1002/mc.70126 · PMID: 42669187 https://pubme",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Molecular carcinogenesis Title The FOXQ1/SSBP2 Regulatory Axis Drives Malignant Progression of Melanoma Authors Zhang Xiaoyu, Hou Yu, Liu Jiahui, Han Yuehua, Feng Jiangang Journal / DOI Molecular carcinogenesis · DOI: 10.1002/mc.70126 · PMID: 42669187 https://pubmed.ncbi.nlm.nih.gov/42669187/ Abstract Melanoma is a highly aggressive skin cancer with poor prognosis, often linked to excessive UV exposure. Despite advancements in immunotherapy and targeted treatments, melanoma's invasiveness and metastatic potential remain significant challenges. This study aimed to identify novel molecular targets associated with melanoma progression. Consensus clustering analysis revealed three melanoma subtypes, with the C3 subtype exhibiting the worst prognosis. Weighted gene co expression network analysis (WGCNA) identified FOXQ1 as a key driver in this subtype. FOXQ1 expression was elevated in clinical melanoma tissues and cell lines, and silencing FOXQ1 in vitro reduced melanoma cell proliferation, migration, and induced apoptosis. To explore its downstream targets, FOXQ1 was found to repress the expression of SSBP2, a gene inversely correlated with FOXQ1. Functional assays demonstrated that silencing SSBP2 promoted melanoma malignancy. Rescue experiments showed that knockdown of SSBP2 reversed the tumor suppressive effects of FOXQ1 silencing. These results suggest that the FOXQ1/SSBP2 regulatory axis plays a critical role in melanoma progression and may serve as a potential therapeutic target to improve melanoma treatment outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0512",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of molecular histology",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0512_anti_lcn2_antibody_treatment_is_associated_with_attenuated_h.md",
+   "snippet": "Title Anti LCN2 antibody treatment is associated with attenuated hearing loss and blood labyrinth barrier disruption in a mouse model of chronic kidney disease Authors Ding Ye, Jiang Xin, Ye Xiangming Journal / DOI Journal of molecular hist",
+   "text": "Nephrology scraped pubmed PubMed / Journal of molecular histology Title Anti LCN2 antibody treatment is associated with attenuated hearing loss and blood labyrinth barrier disruption in a mouse model of chronic kidney disease Authors Ding Ye, Jiang Xin, Ye Xiangming Journal / DOI Journal of molecular histology · DOI: 10.1007/s10735 026 10963 4 · PMID: 42669095 https://pubmed.ncbi.nlm.nih.gov/42669095/ Abstract Chronic kidney disease (CKD) is associated with sensorineural hearing loss, but the mechanisms linking renal injury to cochlear dysfunction remain incompletely defined. Because lipocalin 2 (LCN2/NGAL) is markedly increased in CKD and has been implicated in endothelial dysfunction and barrier injury, we investigated whether LCN2 contributes to cochlear damage in a mouse model of CKD. Male C57BL/6J mice underwent 5/6 nephrectomy, and CKD mice received either an anti LCN2 monoclonal antibody or an isotype control three times weekly for seven weeks beginning one week after completion of surgery. Auditory function, cochlear morphology, blood labyrinth barrier integrity, cochlear perfusion, and LCN2 associated signaling were assessed using auditory brainstem responses, distortion product otoacoustic emissions, whole mount immunofluorescence, FITC dextran extravasation, Western blotting, quantitative PCR, and laser Doppler flowmetry. CKD mice developed elevated auditory brainstem response thresholds, reduced distortion product otoacoustic emission amplitude at a single primary tone pair with f2 = 8.0 kHz, outer hair cell loss, and a reduction in the number of CtBP2 positive presynaptic ribbon puncta per inner hair cell. These changes were accompanied by increased serum and cochlear LCN2, upregulation of 24p3R/SLC22A17 and NLRP3, increased blood labyrinth barrier permeability, reduced claudin 5 and ZO 1 expression, impaired cochlear blood flow, stria vascularis atrophy, and decreased expression of strial ion transport genes. Anti LCN2 antibody treatment improved auditory thresholds and otoacoustic emission responses, attenuated outer hair cell and synaptic injury, reduced vascular leakage, partially restored tight junction and ion transport gene expression, and improved cochlear perfusion, without measurably lowering serum blood urea nitrogen or creatinine. These findings support a possible contribution of LCN2 to CKD associated cochlear vascular dysfunction and hearing loss. Targeting LCN2 may represent a therapeutic strategy for preserving hearing in CKD, although validation in additional CKD models, both sexes, and human tissues is required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0511",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS applied materials & interfaces",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0511_programmable_antimicrobial_nanostructured_surfaces_opportuni.md",
+   "snippet": "Title Programmable Antimicrobial Nanostructured Surfaces: Opportunities and Hurdles for Clinical Translation Authors Nguyen Thuy P T, McGiffin David, Peleg Anton Y, Elnathan Roey, Voelcker Nicolas H, Qu Yue Journal / DOI ACS applied materia",
+   "text": "Infectious Disease scraped pubmed PubMed / ACS applied materials & interfaces Title Programmable Antimicrobial Nanostructured Surfaces: Opportunities and Hurdles for Clinical Translation Authors Nguyen Thuy P T, McGiffin David, Peleg Anton Y, Elnathan Roey, Voelcker Nicolas H, Qu Yue Journal / DOI ACS applied materials & interfaces · DOI: 10.1021/acsami.6c12074 · PMID: 42669205 https://pubmed.ncbi.nlm.nih.gov/42669205/ Abstract Surfaces with programmable nanostructures represent a promising antimicrobial strategy that eradicates bacterial pathogens through physical membrane disruption and/or mechanically induced oxidative stress, independently of conventional antimicrobial resistance mechanisms. Despite their demonstrated and often potent in vitro efficacy, the successful clinical translation of this nanotechnology remains limited. Here, we synthesize the current understanding of how nanoscale geometry, bacterial biomechanics, and host associated environmental factors collectively govern the antimicrobial performance of programmable nanostructured surfaces. We identify the key bottlenecks hindering clinical translation, including fabrication complexity, limited scalability, the mechanical instability of programmable nanostructured surfaces, biofouling, and reduced efficacy under physiological conditions. Emerging solutions, including flexible polymeric materials and multifunctional nanostructured surfaces, are highlighted as promising strategies to overcome these challenges and facilitate clinical translation. Ultimately, translating programmable nanostructured surfaces from laboratory proof of concept systems to clinically relevant applications will require coordinated advances in nanofabrication, materials engineering, mechanobiological understanding, and scalable manufacturing. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0510",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-08-30",
+   "path": "content/papers/2026/2026-08-30_paper-2026-0510_characteristics_of_atrial_tachycardia_recurrence_after_pulse.md",
+   "snippet": "Title Characteristics of Atrial Tachycardia Recurrence After Pulsed Field Ablation: Insights From Repeat Ablation Procedures Authors Ukita Kohei, Mamaev Roman, Hatahet Sascha, Wenzel Jan Per, Eitel Charlotte, Kuck Karl Heinz, Tilz Roland Ri",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Characteristics of Atrial Tachycardia Recurrence After Pulsed Field Ablation: Insights From Repeat Ablation Procedures Authors Ukita Kohei, Mamaev Roman, Hatahet Sascha, Wenzel Jan Per, Eitel Charlotte, Kuck Karl Heinz, Tilz Roland Richard Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70487 · PMID: 42669175 https://pubmed.ncbi.nlm.nih.gov/42669175/ Abstract BACKGROUND: Pulmonary vein isolation (PVI) using pulsed field ablation (PFA) for atrial fibrillation (AF) is becoming increasingly widespread. However, characteristics of atrial tachycardia (AT) recurrence after PFA remain unclear. We aimed to investigate characteristics of AT recurrence in comparison with AF recurrence after PFA based PVI. METHODS: We analyzed 60 consecutive patients who underwent repeat ablation for recurrent atrial tachyarrhythmia after initial PVI alone performed with a pentaspline PFA system. Patients were classified into an AT group (at least one AT episode before repeat ablation) and an AF group (AF recurrence only). Baseline characteristics, pulmonary vein (PV) reconnections, and recurrence free rate after repeat ablation procedure were assessed. RESULTS: The AT group consisted of 34 patients (57%). In the multivariate analysis, absence of PV reconnections was independently associated with AT recurrence (p = 0.037). All mappable ATs were macro reentrant circuits and none were directly related to PVs. Recurrence free rate after repeat ablation did not differ between AT and AF groups (p = 0.277). However, patients presenting in AT at the beginning of the repeat procedure had the most favorable outcomes, whereas those in AF had the poorest (p = 0.042). CONCLUSIONS: After PFA based PVI, AT recurrence was characterized by lower PV reconnection rates and macro reentrant circuits remote from the PVs, whereas AF recurrence was more frequently associated with PV reconnections. While overall outcomes after repeat ablation were comparable, baseline rhythm at the repeat procedure was associated with prognosis, underscoring the importance of tailored mapping and ablation strategies after PFA. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-08-30",
