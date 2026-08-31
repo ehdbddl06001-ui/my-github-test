@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1993,
+  "total": 1999,
   "byType": {
+   "usmle": 120,
    "anatomy": 567,
    "kmle": 779,
    "paper": 516,
-   "usmle": 114,
    "ailab": 14,
    "basic": 3
   },
@@ -19,11 +19,11 @@ window.MEDKOS_INDEX = {
    "Cardiology": 159,
    "Nephrology": 134,
    "Infectious Disease": 111,
-   "Pediatrics": 89,
+   "Pediatrics": 90,
    "Hematology-Oncology": 79,
    "Pathology": 72,
    "Obstetrics & Gynecology": 60,
-   "Neurology": 58,
+   "Neurology": 59,
    "Psychiatry": 58,
    "Surgery": 55,
    "Endocrinology": 50,
@@ -36,12 +36,12 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 48,
    "Rheumatology": 48,
    "Hematology": 47,
-   "Physiology": 14,
+   "Physiology": 15,
    "Pharmacology": 9,
+   "Biochemistry": 8,
    "Microbiology": 8,
-   "Biochemistry": 7,
-   "Immunology": 5,
-   "Internal Medicine": 5,
+   "Immunology": 6,
+   "Internal Medicine": 6,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,141 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1246,
+   "high": 1252,
    "medium": 698,
    "low": 49
   },
-  "tagCount": 2695
+  "tagCount": 2708
  },
  "docs": [
+  {
+   "id": "usmle-2026-0133",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Benzodiazepine-Refractory Status Epilepticus — Moving to a Second-Line Antiseizure Medication",
+   "tags": [
+    "status-epilepticus",
+    "lorazepam",
+    "levetiracetam",
+    "ESETT",
+    "seizure",
+    "emergency-neurology"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · status epilepticus algorithm, ESETT)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0133.md",
+   "snippet": "A 24 year old woman with epilepsy is brought to the emergency department with generalized tonic clonic seizure activity that began 18 minutes ago. Her roommate reports she ran out of her antiseizure medication last week. En route, paramedic",
+   "text": "Neurology Benzodiazepine-Refractory Status Epilepticus — Moving to a Second-Line Antiseizure Medication status-epilepticus lorazepam levetiracetam ESETT seizure emergency-neurology USMLE-style / MedKOS (neurology · status epilepticus algorithm, ESETT) A 24 year old woman with epilepsy is brought to the emergency department with generalized tonic clonic seizure activity that began 18 minutes ago. Her roommate reports she ran out of her antiseizure medication last week. En route, paramedics secured intravenous access and administered lorazepam 4 mg. On arrival, convulsive activity continues, and a second dose of lorazepam 4 mg is given; 5 minutes later she is still seizing. Airway positioning and supplemental oxygen are in place, and bedside studies are shown. Which of the following is the most appropriate next step in management? A. Intravenous levetiracetam loading B. Third dose of intravenous lorazepam C. Endotracheal intubation and intravenous propofol infusion D. Intramuscular midazolam administration E. Emergent electroencephalography before further medication 5분 이상 지속 = 경련성 뇌전증지속상태. 적정 용량 벤조디아제핀 2회(로라제팜 4 mg ×2)에도 경련이 지속되면 '벤조 불응성'으로 정의되고, 다음 단계는 2차 항경련제 부하 — ESETT 시험에서 levetiracetam·fosphenytoin·valproate는 동등(각 ~47% 성공)했으므로 그중 하나를 즉시 정맥 부하한다. 벤조 3차 투여는 추가 종료 효과 없이 호흡억제만 쌓고, 마취(propofol)는 2차 약물까지 실패한 불응성 단계의 치료이며, EEG를 기다리느라 투약을 늦추면 신경 손상과 약물 저항성이 시간에 비례해 커진다."
+  },
+  {
+   "id": "usmle-2026-0132",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Five Days of Fever with Mucocutaneous Signs — IVIG and Aspirin Before the Coronary Arteries Pay",
+   "tags": [
+    "kawasaki-disease",
+    "IVIG",
+    "aspirin",
+    "coronary-aneurysm",
+    "fever",
+    "vasculitis"
+   ],
+   "source": "USMLE-style / MedKOS (pediatrics · Kawasaki disease management)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0132.md",
+   "snippet": "A 3 year old boy is brought to the emergency department because of 5 days of fever up to 39.8°C that has not responded to acetaminophen. Since yesterday his parents have noticed red eyes and a rash. Examination shows bilateral nonexudative ",
+   "text": "Pediatrics Five Days of Fever with Mucocutaneous Signs — IVIG and Aspirin Before the Coronary Arteries Pay kawasaki-disease IVIG aspirin coronary-aneurysm fever vasculitis USMLE-style / MedKOS (pediatrics · Kawasaki disease management) A 3 year old boy is brought to the emergency department because of 5 days of fever up to 39.8°C that has not responded to acetaminophen. Since yesterday his parents have noticed red eyes and a rash. Examination shows bilateral nonexudative conjunctival injection, red cracked lips with a diffusely erythematous tongue, a polymorphous truncal rash, edema of the dorsa of the hands and feet, and a single 1.7 cm right anterior cervical lymph node. Laboratory studies are shown. Which of the following is the most appropriate management at this time? A. Intravenous ceftriaxone after obtaining blood cultures B. Oral prednisolone taper C. Supportive care with antipyretics and follow up in 48 hours D. Oral low dose aspirin alone E. Intravenous immune globulin with aspirin 발열 ≥5일 + 주요 기준 5개 전부(양측 비삼출성 결막충혈, 입술·혀 변화, 다형 발진, 사지 말단 부종, 경부 림프절 ≥1.5cm) = 가와사키병. 무균성 농뇨·혈소판증가·CRP/ESR 상승이 부합한다. 치료는 발병 10일 이내 IVIG 2 g/kg 단회 + 아스피린 — IVIG가 관상동맥류 발생을 약 25%에서 4–5%로 줄이므로, 진단 즉시(가능하면 10일 이내) 투여가 관상동맥 합병증 예방의 핵심이다. 항생제는 무효하고, 지지요법으로 기다리면 치료 시기를 놓친다."
+  },
+  {
+   "id": "usmle-2026-0131",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Syncope with Complete Heart Block — Transcutaneous Pacing Before Drugs in the Unstable Patient",
+   "tags": [
+    "complete-heart-block",
+    "AV-block",
+    "bradycardia",
+    "transcutaneous-pacing",
+    "syncope",
+    "ECG",
+    "ACLS"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · bradyarrhythmia management, ACLS)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0131.md",
+   "snippet": "A 78 year old woman is brought to the emergency department after losing consciousness for about 30 seconds while washing dishes. Over the past week she has had three episodes of lightheadedness. Her only medication is losartan for hypertens",
+   "text": "Internal Medicine Syncope with Complete Heart Block — Transcutaneous Pacing Before Drugs in the Unstable Patient complete-heart-block AV-block bradycardia transcutaneous-pacing syncope ECG ACLS USMLE-style / MedKOS (cardiology · bradyarrhythmia management, ACLS) A 78 year old woman is brought to the emergency department after losing consciousness for about 30 seconds while washing dishes. Over the past week she has had three episodes of lightheadedness. Her only medication is losartan for hypertension. On arrival she is drowsy but arousable, with cool extremities. Cardiac examination shows a slow regular rhythm; the lungs are clear. An electrocardiogram shows the rhythm in the figure, with a QRS duration of 140 msec. Intravenous access is established. Which of the following is the most appropriate next step in management? A. Intravenous atropine administration B. Transcutaneous cardiac pacing C. Intravenous dopamine infusion D. Urgent permanent pacemaker implantation E. Intravenous amiodarone administration P파와 QRS가 완전히 해리되고 심실 이탈리듬이 넓은 QRS(140 msec)로 32회/분 = 결절 이하(infranodal) 3도 방실차단. 실신 + 저혈압·의식저하로 불안정하므로 즉시 심박수를 확보해야 하는데, 결절 이하 차단은 미주신경 지배를 받지 않아 아트로핀에 반응하지 않고 오히려 방실전도비를 악화시킬 수 있다 → 경피 조율(transcutaneous pacing)을 즉시 시작하고 경정맥 조율로 이행한다. 영구 심박동기는 가역 원인 배제 후의 확정 치료이지 '지금'의 처치가 아니다."
+  },
+  {
+   "id": "usmle-2026-0130",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "SIADH from Small Cell Lung Cancer — Aquaporin-2 Insertion as the Transport Mechanism of Hyponatremia",
+   "tags": [
+    "SIADH",
+    "ADH",
+    "aquaporin-2",
+    "collecting-duct",
+    "hyponatremia",
+    "small-cell-lung-cancer"
+   ],
+   "source": "USMLE-style / MedKOS (renal water handling · ADH physiology)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0130.md",
+   "snippet": "A 66 year old man with a 45 pack year smoking history is evaluated for 2 weeks of nausea, headache, and difficulty concentrating. Chest imaging 1 month ago showed a central lung mass, and biopsy demonstrated a high grade neuroendocrine carc",
+   "text": "Physiology SIADH from Small Cell Lung Cancer — Aquaporin-2 Insertion as the Transport Mechanism of Hyponatremia SIADH ADH aquaporin-2 collecting-duct hyponatremia small-cell-lung-cancer USMLE-style / MedKOS (renal water handling · ADH physiology) A 66 year old man with a 45 pack year smoking history is evaluated for 2 weeks of nausea, headache, and difficulty concentrating. Chest imaging 1 month ago showed a central lung mass, and biopsy demonstrated a high grade neuroendocrine carcinoma. He takes no diuretics. Examination shows moist mucous membranes, no jugular venous distention, and no peripheral edema. Laboratory studies are shown. Increased activity of which of the following transport processes best explains this patient's serum sodium concentration? A. Na+ K+ 2Cl− cotransport in the thick ascending limb B. Na+ Cl− cotransport in the distal convoluted tubule C. Epithelial Na+ channel–mediated sodium reabsorption in the collecting duct D. Aquaporin 2–mediated water reabsorption in the collecting duct E. Na+ H+ exchange in the proximal convoluted tubule 소세포폐암 + 정용적성(euvolemic) 저나트륨혈증 + 혈청 삼투압 낮은데 소변 삼투압이 부적절하게 높음( 100) + 소변 Na 40 + 저요산혈증 = SIADH. 종양이 분비한 ADH가 집합관 주세포의 V2 수용체 → Gs–cAMP–PKA 경로로 aquaporin 2 물통로를 내강막에 삽입시켜, 나트륨과 무관하게 '물만' 재흡수된다. 저나트륨혈증은 나트륨 소실이 아니라 수분 희석이 기전이므로, 정답은 물 수송(AQP2) 증가다."
+  },
+  {
+   "id": "usmle-2026-0129",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Vitamin B12 Deficiency — Methylmalonyl-CoA Mutase Block Behind the Neurologic Damage",
+   "tags": [
+    "vitamin-B12",
+    "cobalamin",
+    "methylmalonic-acid",
+    "subacute-combined-degeneration",
+    "homocysteine",
+    "pernicious-anemia"
+   ],
+   "source": "USMLE-style / MedKOS (cobalamin biochemistry · subacute combined degeneration)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0129.md",
+   "snippet": "A 68 year old man comes to the clinic because of 4 months of progressive numbness and tingling of both feet and unsteadiness when walking in the dark. He has followed a strict vegan diet for 12 years and takes no supplements. Examination sh",
+   "text": "Biochemistry Vitamin B12 Deficiency — Methylmalonyl-CoA Mutase Block Behind the Neurologic Damage vitamin-B12 cobalamin methylmalonic-acid subacute-combined-degeneration homocysteine pernicious-anemia USMLE-style / MedKOS (cobalamin biochemistry · subacute combined degeneration) A 68 year old man comes to the clinic because of 4 months of progressive numbness and tingling of both feet and unsteadiness when walking in the dark. He has followed a strict vegan diet for 12 years and takes no supplements. Examination shows decreased vibration and position sense in both lower extremities, a positive Romberg sign, and brisk knee reflexes with extensor plantar responses. Laboratory studies are shown. Decreased activity of which of the following enzymes best explains this patient's neurologic findings? A. Methylmalonyl CoA mutase B. Methionine synthase C. Dihydrofolate reductase D. Cystathionine β synthase E. Propionyl CoA carboxylase 12년 비건 식이 + 거대적혈구빈혈 + 후주·피질척수로 증상(진동·위치감각 소실, 바뱅스키 양성) = 비타민 B12 결핍의 아급성 연합변성. B12는 두 효소의 조효소인데, 신경 손상은 adenosylcobalamin을 쓰는 methylmalonyl CoA mutase 차단으로 메틸말론산·비정상 지방산이 축적되어 수초 합성이 망가지는 기전이 핵심이다(MMA 상승이 그 증거). Methionine synthase 차단은 folate trap으로 거대적혈구빈혈·호모시스테인 상승을 설명하지만, folate 결핍(같은 효소 경로)에서는 신경 증상이 없다는 사실이 신경 손상의 주범이 mutase 쪽임을 가리킨다."
+  },
+  {
+   "id": "usmle-2026-0128",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50",
+   "tags": [
+    "complement",
+    "membrane-attack-complex",
+    "C5",
+    "Neisseria",
+    "meningitis",
+    "CH50",
+    "AH50"
+   ],
+   "source": "USMLE-style / MedKOS (complement system · terminal pathway deficiency)",
+   "confidence": "high",
+   "date": "2026-09-01",
+   "path": "content/usmle/usmle-2026-0128.md",
+   "snippet": "A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. H",
+   "text": "Immunology Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50 complement membrane-attack-complex C5 Neisseria meningitis CH50 AH50 USMLE-style / MedKOS (complement system · terminal pathway deficiency) A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. He has otherwise been healthy, without sinopulmonary infections, skin abscesses, or episodes of facial swelling. He received all routine childhood vaccinations. Examination shows nuchal rigidity without a petechial rash. Cerebrospinal fluid analysis and complement studies are shown. A deficiency of which of the following proteins is most likely in this patient? A. C1 esterase inhibitor B. C3 C. C5 D. C4 E. Properdin 재발성 수막알균(Neisseria) 수막염 + CH50·AH50 모두 검출 안 됨 + C3·C4 정상 = 두 경로가 합류한 뒤의 종말 보체(C5–C9, 막공격복합체) 결핍. Neisseria는 세포막이 얇아 MAC에 의한 직접 용해가 주 방어이므로, 종말 성분이 없으면 유독 이 균의 침습 감염이 반복된다. CH50(고전)·AH50(대체)이 동시에 0이면 결함은 공통 종말경로에 있고, 어느 한쪽만 낮으면 그 경로 고유 성분(C4→고전, properdin→대체)이다."
+  },
   {
    "id": "anatomy-daily-2026-09-01",
    "type": "anatomy",
