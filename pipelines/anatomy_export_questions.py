@@ -20,7 +20,11 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import date
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import anatomy_schedule as sched  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 QDIR = ROOT / "content/anatomy/questions"
@@ -45,11 +49,39 @@ def _fm(path: Path) -> dict:
     return out
 
 
+def _dates(fm: dict) -> set[str]:
+    """`scheduled_dates: [2026-09-03]` 를 날짜 문자열 집합으로. 얕은 파서라 문자열이다."""
+    raw = str(fm.get("scheduled_dates", "") or "")
+    return {t for t in (x.strip().strip("[]\"'") for x in raw.split(",")) if t}
+
+
+def belongs(fm: dict, session: int) -> bool:
+    """이 문항이 그 회차 것인가 — `session_no` **또는** 수업일(`scheduled_dates`) 로 본다.
+
+    왜 둘 다 보나(2026-09-02 실측): 실사 복원 문항(`restore_scan` 계열)은 `scheduled_dates`
+    만 달고 `session_no` 가 없다. `session_no` 만 보던 옛 필터는 6회차에서 **26문항 중
+    11문항만** 뽑았다 — 스캔 spotter 15개가 통째로 빠져 사용자가 Drive 에 보관하는
+    텍스트본이 반쪽이 됐다. 서브노트(`anatomy_subnote.written_questions`)는 처음부터
+    둘 다 보고 있었으므로, 여기서도 같은 기준을 쓰는 게 맞다(두 산출물이 어긋나면 안 된다).
+    회귀: `test_export_matches_by_scheduled_date`.
+    """
+    if str(fm.get("session_no", "")).strip() == str(session):
+        return True
+    for d in _dates(fm):
+        try:
+            y, m, dd = (int(x) for x in d.split("-"))
+        except ValueError:
+            continue
+        if sched.session_no_for_date(date(y, m, dd)) == session:
+            return True
+    return False
+
+
 def collect(session: int) -> list[dict]:
     rows = []
     for p in sorted(QDIR.rglob("*.md")):
         fm = _fm(p)
-        if str(fm.get("session_no", "")).strip() != str(session):
+        if not belongs(fm, session):
             continue
         if not fm.get("stem"):
             continue
