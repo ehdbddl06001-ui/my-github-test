@@ -393,6 +393,37 @@ def test_every_question_has_a_session() -> None:
     assert not bad, f"scheduled_dates 없는 문항: {bad[:8]} (총 {len(bad)}건)"
 
 
+def test_export_matches_by_scheduled_date() -> None:
+    """문항 텍스트본은 `session_no` 가 없는 실사 문항도 회차로 잡아야 한다(2026-09-02 실측).
+
+    실사 복원 문항은 `scheduled_dates` 만 달고 나온다. 옛 필터는 `session_no` 만 봐서
+    6회차 텍스트본이 26문항 중 11문항만 담았다 — 스캔 spotter 15개가 통째로 빠졌는데
+    파일은 정상으로 보여 조용히 반쪽이 됐다. 서브노트는 처음부터 둘 다 봤으므로
+    두 산출물의 기준을 여기서 묶어 둔다.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    import anatomy_export_questions as ex
+
+    scan_only = {"scheduled_dates": "[2026-09-03]"}          # session_no 없음 — 실사 문항
+    assert ex.belongs(scan_only, 6), "수업일로도 회차를 못 잡는다 — 실사 문항이 샌다"
+    assert not ex.belongs(scan_only, 5), "다른 회차까지 끌어온다"
+    assert ex.belongs({"session_no": "6"}, 6), "session_no 경로가 깨졌다"
+    assert not ex.belongs({}, 6), "근거 없는 카드를 회차에 넣는다"
+
+    root = Path(__file__).resolve().parents[1]
+    if (root / "content/anatomy/questions").is_dir():
+        got = {r.get("id") for r in ex.collect(6)}
+        by_date = set()
+        for q in (root / "content/anatomy/questions").rglob("*.md"):
+            raw = q.read_text(encoding="utf-8")
+            if "2026-09-03" in raw and re.search(r"^stem:", raw, re.M):
+                m = re.search(r"^id:\s*(\S+)", raw, re.M)
+                if m:
+                    by_date.add(m.group(1))
+        missing = by_date - got
+        assert not missing, f"6회차 수업일 문항인데 텍스트본에서 빠졌다: {sorted(missing)[:8]}"
+
+
 def test_backfill_uses_region_not_professor() -> None:
     """회차 백필도 교수명·과거 학기 날짜가 아니라 부위로 정한다."""
     import subprocess
