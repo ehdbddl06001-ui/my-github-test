@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2038,
+  "total": 2039,
   "byType": {
    "kmle": 811,
+   "anatomy": 568,
    "usmle": 120,
-   "anatomy": 567,
    "paper": 523,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 567,
+   "Anatomy": 568,
    "Cardiology": 162,
    "Nephrology": 137,
    "Infectious Disease": 114,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1284,
+   "high": 1285,
    "medium": 705,
    "low": 49
   },
@@ -668,6 +668,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0810.md",
    "snippet": "68세 남자가 갑자기 시작된 두근거림과 어지럼으로 실려 왔다. 3년 전 심근경색을 앓았다. 실려 오는 동안 점점 처지며 식은땀을 흘린다. 심전도는 자료와 같이 넓은 QRS의 규칙적인 빠른맥이며, 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 아데노신 정맥 주사 B. 아미오다론 정맥 점적 C. 동기화 심율동전환 D. 목동맥굴 마사지 E. 경과 관찰 후 재평가 허혈성 심근병 병력 환자의 넓은 QRS 규칙 빠",
    "text": "Cardiology Sustained Monomorphic Ventricular Tachycardia ventricular-tachycardia wide-complex-tachycardia synchronized-cardioversion unstable KMLE 2026 / Claude Routine 68세 남자가 갑자기 시작된 두근거림과 어지럼으로 실려 왔다. 3년 전 심근경색을 앓았다. 실려 오는 동안 점점 처지며 식은땀을 흘린다. 심전도는 자료와 같이 넓은 QRS의 규칙적인 빠른맥이며, 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 아데노신 정맥 주사 B. 아미오다론 정맥 점적 C. 동기화 심율동전환 D. 목동맥굴 마사지 E. 경과 관찰 후 재평가 허혈성 심근병 병력 환자의 넓은 QRS 규칙 빠른맥은 심실빈맥이며, 저혈압·의식저하로 혈역학이 불안정하다. 불안정 빈맥의 일차 처치는 즉각적인 동기화 심율동전환이다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-02",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-02",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-02",
+   "path": "content/anatomy/daily/2026-09-02.md",
+   "snippet": "오늘의 학습 (2026 09 02 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 8일 · Tagging 2까지 47일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-02 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 02 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 8일 · Tagging 2까지 47일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0133",
