@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-31",
+ "generated": "2026-09-01",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1999,
+  "total": 2007,
   "byType": {
+   "anatomy": 568,
    "usmle": 120,
-   "anatomy": 567,
+   "paper": 523,
    "kmle": 779,
-   "paper": 516,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 567,
-   "Cardiology": 159,
-   "Nephrology": 134,
-   "Infectious Disease": 111,
-   "Pediatrics": 90,
-   "Hematology-Oncology": 79,
-   "Pathology": 72,
+   "Anatomy": 568,
+   "Cardiology": 160,
+   "Nephrology": 135,
+   "Infectious Disease": 112,
+   "Pediatrics": 91,
+   "Hematology-Oncology": 80,
+   "Pathology": 73,
    "Obstetrics & Gynecology": 60,
    "Neurology": 59,
    "Psychiatry": 58,
-   "Surgery": 55,
+   "Surgery": 56,
    "Endocrinology": 50,
    "Gastroenterology": 49,
    "Laboratory Medicine": 49,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1252,
-   "medium": 698,
+   "high": 1253,
+   "medium": 705,
    "low": 49
   },
   "tagCount": 2708
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-02",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-02",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-02",
+   "path": "content/anatomy/daily/2026-09-02.md",
+   "snippet": "오늘의 학습 (2026 09 02 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 8일 · Tagging 2까지 47일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-02 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 02 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 8일 · Tagging 2까지 47일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0133",
    "type": "usmle",
@@ -337,6 +351,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0446.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
    "text": "Anatomy 뒤목삼각의 두 소삼각 — 어깨목뿔근 아래힘살로 갈리는 위·아래와 각각의 내용물 6회차 · 목 relation 6회차 뒤목삼각 더부신경 빗장밑동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-1 큰 경계 · §1-3 뒤목삼각의 두 소삼각 — 2026 확정본 6회차 실습주제(목의 삼각) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "paper-2026-0523",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of surgical oncology",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0523_effects_of_auricular_acupressure_combined_with_heat_sensitiv.md",
+   "snippet": "Title Effects of Auricular Acupressure Combined With Heat Sensitive Moxibustion on Gastrointestinal Hormone Levels and Recovery of Gastrointestinal Function After Laparoscopic Colorectal Cancer Surgery Authors Lin Xin, Zheng Yun Journal / D",
+   "text": "Surgery scraped pubmed PubMed / Journal of surgical oncology Title Effects of Auricular Acupressure Combined With Heat Sensitive Moxibustion on Gastrointestinal Hormone Levels and Recovery of Gastrointestinal Function After Laparoscopic Colorectal Cancer Surgery Authors Lin Xin, Zheng Yun Journal / DOI Journal of surgical oncology · DOI: 10.1002/jso.70386 · PMID: 42673555 https://pubmed.ncbi.nlm.nih.gov/42673555/ Abstract OBJECTIVE: This single center retrospective cohort study aimed to evaluate the efficacy of auricular acupressure combined with heat sensitive moxibustion in promoting gastrointestinal functional recovery and regulating gastrointestinal hormone levels in patients who underwent laparoscopic colorectal cancer surgery. METHODS: A total of 68 patients with colorectal cancer who underwent laparoscopic radical resection at Ningde Municipal Hospital affiliated to Ningde Normal University from January to December 2022 were retrospectively enrolled. According to the postoperative intervention measures received, the patients were divided into an intervention group (n = 34, standard postoperative care plus auricular acupressure combined with heat sensitive moxibustion) and a control group (n = 34, only standard postoperative care). The primary outcome indicators included the time to first flatus, time to recovery of bowel sounds, and time to first defecation after surgery. The secondary outcome indicators included the incidence and severity of postoperative abdominal distension, abdominal distension scores and bowel sound scores at 12, 24, 48 and 72 h after surgery, and the levels of gastrointestinal hormones (gastrin [GAS], motilin [MTL], gastric inhibitory polypeptide [GIP]) detected by radioimmunoassay before surgery and 5 days after surgery. The clinical data of the two groups were collected and statistically analyzed to compare the differences in each outcome indicator. RESULTS: There were no statistically significant differences in baseline demographic data, clinical characteristics and operative variables between the two groups (p 0.05), with good comparability. The time to first flatus, time to recovery of bowel sounds and time to first defecation in the intervention group were significantly shorter than those in the control group (all p < 0.05). At 72 h after surgery, the incidence of abdominal distension in the intervention group (67.65%) was significantly lower than that in the control group (88.24%), and the severity of abdominal distension in the intervention group was milder than that in the control group (p < 0.05). The abdominal distension scores and bowel sound scores of the intervention group at 12, 24, 48 and 72 h after surgery were significantly lower than those of the control group (all p < 0.05). There were no significant differences in the levels of GAS, MTL and GIP between the two groups before surgery (p 0.05). At 5 days after surgery, the levels of the three gastrointestinal hormones in both groups were changed compared with those before surgery, and the levels of GAS, MTL and GIP in the intervention group were significantly higher than those in the control group (all p < 0.05). CONCLUSION: Auricular acupressure combined with heat sensitive moxibustion can effectively shorten the recovery time of gastrointestinal function, reduce the incidence and severity of postoperative abdominal distension, and effectively regulate the levels of gastrointestinal hormones in patients after laparoscopic colorectal cancer surgery. It is a safe and effective non pharmacological adjuvant therapy for postoperative clinical management, and is worthy of clinical promotion and application. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0522",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of language & communication disorders",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0522_investigating_the_effects_of_adding_explicit_teaching_and_or.md",
+   "snippet": "Title Investigating the Effects of Adding Explicit Teaching and/or Signing to Story Based Vocabulary Intervention for School Aged Children With (Developmental) Language Disorder Authors Hughes Lucy, Larralde Cécile, Nicoll Hilary, Marić Nat",
+   "text": "Pediatrics scraped pubmed PubMed / International journal of language & communication disorders Title Investigating the Effects of Adding Explicit Teaching and/or Signing to Story Based Vocabulary Intervention for School Aged Children With (Developmental) Language Disorder Authors Hughes Lucy, Larralde Cécile, Nicoll Hilary, Marić Nataša, Burke Caroline, Ebbels Susan Journal / DOI International journal of language & communication disorders · DOI: 10.1111/1460 6984.70317 · PMID: 42671898 https://pubmed.ncbi.nlm.nih.gov/42671898/ Abstract BACKGROUND: Children with language disorders, including developmental language disorder (DLD), experience challenges with word learning. Common components of vocabulary interventions include presenting target words in a story, providing explicit teaching and using sign/gesture alongside speech. However, previous studies have not investigated the relative contribution of these components, in isolation or combination. AIM: To measure the effects of adding explicit teaching and/or augmentative signing to a story based vocabulary intervention. METHODS: Eighteen participants, aged 7;09 15;02 years, took part in our within participant design study. All had a language disorder; 14 with DLD, and four with an associated biomedical condition. They were taught 48 real verbs and adjectives, randomly assigned to one of four conditions, over an 8 week intervention period. In the reference condition, participants watched videos of a speech and language therapist (SLT) reading a story where target words were presented incidentally, four at a time. In the first experimental condition, the delivering SLT added explicit teaching to the reference intervention. This included: providing definitions, modelling words in sentences, requesting retrieval and employing a cueing hierarchy. The second experimental condition added augmentative signing to the reference intervention, whereby the SLT in the video signed the target words as they appeared in the story. The final experimental condition added both explicit teaching and signing. In all conditions, frequency of word presentations was controlled. Word sets were counterbalanced to minimise confounds. Outcome measures assessed vocabulary knowledge and use with: (1) a word definition task and (2) sentence generation. RESULTS: Participants showed stronger progress in all experimental conditions, compared to the reference condition. Bayesian models showed that adding both explicit teaching and augmentative signing in combination to the reference intervention did not lead to greater progress than adding just one of these components. Neither participants' age nor language ability were associated with intervention progress. DISCUSSION: Our results indicate that adding either explicit teaching or augmentative signing to story based vocabulary intervention is similarly advantageous. Adding both does not confer additional advantage. Larger scale studies are needed to explore differences between participants and experimental conditions. CONCLUSIONS/IMPLICATIONS: Our study highlights the importance of evaluating systematically the contribution of potential active ingredients within interventions. In particular, analysing how they work together and separately is important, as adding more ingredients does not necessarily improve effectiveness. Our results inform vocabulary teaching, indicating that staff should incorporate either augmentative signing or explicit teaching whenever possible to support the vocabulary learning of those with language disorders. WHAT THIS PAPER ADDS: What is already known on this subject Children with (developmental) language disorders experience difficulties with word learning, which can affect their education and social participation. Previous research indicates that story based intervention, explicit teaching and, in some cases, augmentative signing can support vocabulary learning. However, many interventions combine multiple components, making it difficult to determine which specific components are active ingredients, responsible for progress. What this paper adds to existing knowledge This study systematically compared the effects of adding explicit teaching and/or augmentative signing to a story based (implicit) vocabulary intervention for school aged children with (D)LD. Our results indicate that adding explicit teaching and/or augmentative signing can lead to greater improvements in learning new verbs and adjectives than the implicit intervention alone. Combining explicit teaching and signing does not appear to lead to additional benefit. What are the potential or actual clinical implications of this work? SLTs and school staff working with children with (D)LD should prioritise incorporating either augmentative signing or explicit teaching strategies whenever feasible to support vocabulary development. Signing may be quicker to implement as this can be delivered alongside speech. Intervention choices could be tailored to children and staff's individual preferences and skills. Larger studies are required to explore differences between participants and experimental conditions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0521",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Radiologic technology",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0521_ai_assisted_sonography_for_the_diagnosis_of_thyroid_nodules.md",
+   "snippet": "Title AI Assisted Sonography for the Diagnosis of Thyroid Nodules Authors Khan Javeria Journal / DOI Radiologic technology · PMID: 42671965 https://pubmed.ncbi.nlm.nih.gov/42671965/ Abstract PURPOSE: To evaluate the diagnostic accuracy, cli",
+   "text": "Pathology scraped pubmed PubMed / Radiologic technology Title AI Assisted Sonography for the Diagnosis of Thyroid Nodules Authors Khan Javeria Journal / DOI Radiologic technology · PMID: 42671965 https://pubmed.ncbi.nlm.nih.gov/42671965/ Abstract PURPOSE: To evaluate the diagnostic accuracy, clinical utility, and workflow integration of artificial intelligence (AI) assisted sonography for the assessment of thyroid nodules and to assess the tool's potential for improving diagnostic consistency, reducing the number of unnecessary biopsies, and assisting with clinical decision making. METHODS: Database searches were conducted to identify studies published from January 2018 to June 2025. Eligible studies compared AI based models for thyroid sonography using histopathology or fine needle aspiration (FNA) as reference standards. Data extraction was conducted according to the Preferred Reporting Items for Systematic Reviews and Meta Analyses 2020 criteria. Variables included AI architecture, sonography mode or technique, study design, clinical impact measures (ie, FNA reduction, time savings), and diagnostic metrics (ie, sensitivity, specificity, and area under curve). RESULTS: A total of 30 studies were included. Convolutional neural networks were the most common architecture. Area under curve values ranged from 0.78 to 0.97, specificity from 70.4% to 90.7% and sensitivity from 75.6% to 94.0%. Clinical advantages included a 10% to 45% reduction in the number of FNAs performed, with some studies reporting between 2.5 to 3.1 minutes of interpretation time saved per case. Risk of bias assessment determined 53.3% of the studies to be low risk, 33.3% to be moderate risk, and 13.3% to be high risk, primarily because of the retrospective design or small sample size. DISCUSSION: Thyroid nodules are prevalent; however, interpretation of sonograms is prone to interobserver variability. Results from this systematic review indicate that AI aided sonography exhibits high levels of diagnostic efficacy and quantifiable clinical advantages, especially when combined with the American College of Radiology Thyroid Imaging and Reporting Data System and externally validated. CONCLUSION: This review maps the evolution of experimental models to clinically implementable systems and calls for prospective multicenter trials, standardized reporting, and explainable AI to facilitate safe and reproducible usage in routine thyroid imaging. These findings support Sustainable Development Goal (SDG) 3 (good health and well being) by promoting higher quality diagnostic care and SDG 9 (industry, innovation, and infrastructure) by advancing AI in medical imaging. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0520",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Current opinion in hematology",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0520_proteomics_in_the_discovery_of_biomarkers_of_major_complicat.md",
+   "snippet": "Title Proteomics in the discovery of biomarkers of major complications after allogeneic hematopoietic cell transplantation Authors Michelis Fotios V, Pasic Ivan, Diamandis Eleftherios P Journal / DOI Current opinion in hematology · DOI: 10.",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Current opinion in hematology Title Proteomics in the discovery of biomarkers of major complications after allogeneic hematopoietic cell transplantation Authors Michelis Fotios V, Pasic Ivan, Diamandis Eleftherios P Journal / DOI Current opinion in hematology · DOI: 10.1097/MOH.0000000000000951 · PMID: 42673525 https://pubmed.ncbi.nlm.nih.gov/42673525/ Abstract PURPOSE OF REVIEW: Allogeneic hematopoietic cell transplantation (allo HCT) is complicated by life threatening conditions whose prompt diagnosis is essential yet frequently delayed. This review examines proteomic approaches to biomarker discovery for the most common posttransplant complications, emphasizing methodological reliability and translational status. RECENT FINDINGS: Proximity extension assay (PEA) and aptamer based platforms now permit simultaneous quantification of thousands of proteins from microliter plasma volumes. For acute graft versus host disease (GVHD), validated plasma panels incorporating ST2 and REG3α have been established as prognostic tools, and a PEA discovery study in patients with acute myeloid leukemia identified a four marker panel (SLAMF7, IL 1ra, BTN3A2, and DAB2) with an area under the curve of 0.90. For sinusoidal obstruction syndrome/veno occlusive disease (SOS/VOD), a PEA study of very severe cases identified multiple candidate proteins at diagnosis and four proteins whose serum levels declined during defibrotide treatment. Proteomic evidence for other complications remains sparse and early in development. SUMMARY: Most proteomic biomarker studies in allo HCT derive from small single center discovery cohorts. Multicenter validation, harmonized biobanking, and integration with clinical risk models are required before these biomarkers can enter transplant practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0519",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of psychiatry in medicine",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0519_sleep_quality_daytime_sleepiness_and_circadian_rhythm_charac.md",
+   "snippet": "Title Sleep Quality, Daytime Sleepiness, and Circadian Rhythm Characteristics in Chronic Kidney Disease: A Cross Sectional Study Across Disease Stages Authors Yetkin Harun, Uzanulu Mehmet Fatih, Yiğit Onur Selçuk, Yetkin Zeynep Dilara, Diki",
+   "text": "Nephrology scraped pubmed PubMed / International journal of psychiatry in medicine Title Sleep Quality, Daytime Sleepiness, and Circadian Rhythm Characteristics in Chronic Kidney Disease: A Cross Sectional Study Across Disease Stages Authors Yetkin Harun, Uzanulu Mehmet Fatih, Yiğit Onur Selçuk, Yetkin Zeynep Dilara, Dikilitaş İrem, Çitil Hacı Mehmet, Berktaş Hacı Bayram, Karaaslan Mehtap Journal / DOI International journal of psychiatry in medicine · DOI: 10.1177/00912174261485675 · PMID: 42673517 https://pubmed.ncbi.nlm.nih.gov/42673517/ Abstract ObjectiveTo compare sleep quality, daytime sleepiness, and circadian rhythm characteristics across clinically defined chronic kidney disease (CKD) groups and to examine their relative contribution to global subjective sleep quality.MethodThis two center, cross sectional study enrolled 344 adults with CKD (response rate: 96.6%) from nephrology settings in Turkey. Participants were classified into three groups: mild to moderate CKD (KDIGO stages 2 3; n = 133), advanced CKD without dialysis (stages 4 5; n = 37), and dialysis dependent CKD (stage 5D; n = 174). Sleep quality, daytime sleepiness, and circadian rhythm parameters were assessed using the Pittsburgh Sleep Quality Index (PSQI), Epworth Sleepiness Scale (ESS), and Munich Chronotype Questionnaire (MCTQ). Hierarchical regression identified predictors of PSQI global scores.ResultsESS total scores were significantly higher in the dialysis dependent group compared with both other groups (ε2 = 0.182, the only large effect size), whereas PSQI global scores were paradoxically lower in this group (adjusted P = 0.021). Biological chronotype (MSFsc) did not differ across groups. In hierarchical regression, ESS (β = 0.525) and dialysis dependent status (β = 0.318) were the only significant predictors of PSQI global scores, with sleep wake variables adding 24.3% explained variance beyond demographic and clinical factors.ConclusionsCKD related sleep wake burden is more prominently reflected in daytime sleepiness and social circadian disorganization than in global subjective sleep quality. Assessment of daytime sleepiness may improve recognition of sleep wake dysregulation in nephrology settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0518",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Chemistry & biodiversity",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0518_antibacterial_and_antibiofilm_activity_of_a_chemically_chara.md",
+   "snippet": "Title Antibacterial and Antibiofilm Activity of a Chemically Characterized Cinnamomum verum Bark Methanolic Extract Against Multidrug Resistant Bacteria: Preliminary Antibiotic Interaction Screening and Exploratory Molecular Docking Authors",
+   "text": "Infectious Disease scraped pubmed PubMed / Chemistry & biodiversity Title Antibacterial and Antibiofilm Activity of a Chemically Characterized Cinnamomum verum Bark Methanolic Extract Against Multidrug Resistant Bacteria: Preliminary Antibiotic Interaction Screening and Exploratory Molecular Docking Authors Edziri Hayet, Elmsehli Sarra, Kenich Assia, Horchani Mabrouk, Najjaa Hanen, Najah Naima, Aljohi Hasan, Alkhrayef Mohammad Nasser, et al. Journal / DOI Chemistry & biodiversity · DOI: 10.1002/cbdv.71634 · PMID: 42673111 https://pubmed.ncbi.nlm.nih.gov/42673111/ Abstract This study characterized the phytochemical composition of a methanolic bark extract of Cinnamomum verum and evaluated its antibacterial, bactericidal, biofilm biomass reducing, and preliminary antibiotic potentiating effects against reference and multidrug resistant bacterial strains. The extract was characterized by HPLC MS; MIC and MBC values were determined by broth microdilution; biofilm biomass was assessed using the crystal violet assay; and antibiotic extract interactions were screened by disk diffusion. Molecular docking was used as a hypothesis generating approach to investigate interactions between identified phytochemicals and GyrB, LasA, and PBP1a. Seventeen compounds were identified, with trans cinnamaldehyde as the predominant quantified constituent, followed by quinic acid, rutin, and protocatechuic acid. The extract inhibited all tested bacteria, with MIC and MBC values of 0.625 5 and 2.5 20 mg/mL, respectively, and MBC/MIC ratios consistent with bactericidal activity. Imipenem resistant Acinetobacter baumannii isolates were the most susceptible. The extract also reduced biofilm biomass in a concentration dependent and strain dependent manner. Disk diffusion screening identified antibiotic and isolate dependent increases in inhibition zones, particularly for cefoxitin and fosfomycin against MRSA and for selected combinations against A. baumannii; however, some combinations were unchanged or produced smaller zones, and pharmacological synergy was not established. Docking prioritized quercetin, 1,3 di O caffeoylquinic acid, and quercetin 3 O rhamnoside as candidates for subsequent target based validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0517",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of cardiovascular nursing",
+   "confidence": "medium",
+   "date": "2026-08-31",
+   "path": "content/papers/2026/2026-08-31_paper-2026-0517_machine_learning_driven_risk_clusters_for_adverse_outcomes_i.md",
+   "snippet": "Title Machine Learning Driven Risk Clusters for Adverse Outcomes in Patients Hospitalized with Acute Heart Failure: Using a Retrospective Cohort Data Authors Moon Seung Mi, Lee Jeong Eun, Hwang Seon Young Journal / DOI European journal of c",
+   "text": "Cardiology scraped pubmed PubMed / European journal of cardiovascular nursing Title Machine Learning Driven Risk Clusters for Adverse Outcomes in Patients Hospitalized with Acute Heart Failure: Using a Retrospective Cohort Data Authors Moon Seung Mi, Lee Jeong Eun, Hwang Seon Young Journal / DOI European journal of cardiovascular nursing · DOI: 10.1093/eurjcn/zvag200 · PMID: 42673526 https://pubmed.ncbi.nlm.nih.gov/42673526/ Abstract AIM: Heart failure (HF) poses a growing public health burden, yet conventional risk stratification models fail to capture the multidimensional complexity of acute HF by overlooking nutritional and lifestyle related factors critical to prognosis. This study aimed to classify patients hospitalized with acute HF into clinically distinct risk subgroups using machine learning and to evaluate their prognostic significance for individualized nursing care. METHODS AND RESULTS: We retrospectively analyzed records of 1,104 patients admitted to the cardiac intensive care unit of a tertiary hospital in Seoul, Korea (2013 2023). Adverse outcome was defined as all cause mortality or readmission. Random forest identified key predictors, and clustering using Gower distance and Partitioning Around Medoids defined patient groups. Survival was assessed using Kaplan Meier and Cox proportional hazards models. Patients had a mean age of 66.4±14.6 years, and 31.3% experienced adverse outcomes (25.6% died, 8.4% were readmitted). Key predictors included nutritional risk index, hemoglobin, creatinine, left ventricular ejection fraction, and age. Three clinically distinct clusters were identified: Cluster 1, Middle aged unhealthy lifestyle; Cluster 2, Older multimorbidity; and Cluster 3, Malnutrition renal dysfunction (log rank p < .001). Compared with Cluster 1, Cluster 3 showed a significantly higher risk of adverse outcomes (HR=1.82, 95% CI 1.33 2.50, p < .001). CONCLUSION: Machine learning driven clustering identified three HF phenotypes with divergent prognoses, with the malnutrition renal dysfunction phenotype conferring nearly twofold higher mortality risk. These findings support cluster specific nursing strategies, including early nutritional risk screening and renal monitoring, to guide individualized care in acute HF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0809",
