@@ -2,6 +2,72 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0525",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Complication Profiles Following Right-Sided Segmental Colectomy: A Comparative Retrospective Analysis of Crohn's Disease and Colon Cancer",
+  "authors": [
+   "Alabbad Jasim",
+   "Alfadhli Noor",
+   "Almuhana Nourah",
+   "Alnaqi Fawaz"
+  ],
+  "journal": "Medical principles and practice : international journal of the Kuwait University, Health Science Centre",
+  "doi": "10.1159/mpp/adpag010",
+  "pmid": "42678889",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42678889/",
+  "pubdate": "2026-09-01",
+  "date": "2026-09-01",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVES:** Concerns regarding the higher incidence of postoperative complications in Crohn's disease patients may delay surgical resection. Calibrating postoperative risks specific to Crohn's disease, with the more common indication of colon cancer, is valuable for making informed surgical decisions. The primary objective of this study was to report a disease-specific postoperative complication profile. The secondary objective was to identify factors associated with significant complications (Clavien-Dindo classification grade ≥ 2).\n\n**SUBJECTS AND METHODS:** This retrospective study was conducted at a tertiary center from January 2010 to December 2025 on adult patients who underwent right-sided segmental colectomy for Crohn's disease or colon cancer. The data analyzed included demographics, comorbidities, laboratory findings, and perioperative clinical variables, and 30-day postoperative complications.\n\n**RESULTS:** A total of 230 patients met the inclusion criteria (86 with Crohn's disease and 144 with colon cancer). Patients with Crohn's disease were significantly younger and had fewer associated comorbidities. No differences were observed in the overall postoperative complications. However, among patients who developed complications, the rate of infectious complications was higher in patients with Crohn's disease compared to patients with colon cancer (72.4% vs. 46.4%, p = 0.022 ). Respiratory complications occurred only in patients with colon cancer. Chronic kidney disease and conversion to open surgery were found to be independently associated with significant complications on multivariate regression analysis.\n\n**CONCLUSION:** Overall postoperative complications rates were comparable between Crohn's disease and colon cancer patients undergoing right-sided segmental colectomy. However, a disease-specific complication profile was noted, with a higher rate of infectious complications in Crohn's disease.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0524",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Bilateral Oophorectomy and Heart Failure Risk: Mechanisms, Evidence, and Clinical Implications",
+  "authors": [
+   "Jafri Danya Z",
+   "Bhattarai Sandesh",
+   "Hassan Mariah",
+   "Sharma Vibha",
+   "Frishman William H",
+   "Aronow Wilbert S"
+  ],
+  "journal": "Cardiology in review",
+  "doi": "10.1097/CRD.0000000000001457",
+  "pmid": "42679310",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42679310/",
+  "pubdate": "2026-09-01",
+  "date": "2026-09-01",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Heart failure (HF), particularly heart failure with preserved ejection fraction (HFpEF), disproportionately affects women, yet female-specific and iatrogenic contributors to HF risk remain deeply underrecognized. Bilateral oophorectomy (BO) results in abrupt estrogen deprivation and has increasingly been associated with adverse cardiovascular outcomes, particularly when performed before natural menopause. This review examines the mechanistic and epidemiologic evidence linking BO to cardiovascular disease and HF, with particular attention to age at oophorectomy, estrogen deprivation, and the potential modifying role of estrogen replacement therapy (ERT). Growing evidence associates BO with increased cardiovascular morbidity, mortality, and HF risk, with the greatest risk observed among women undergoing premenopausal BO. Abrupt estrogen loss may contribute through endothelial dysfunction, increased vascular stiffness, adverse metabolic and inflammatory changes, neurohormonal activation, and myocardial remodeling-mechanisms that substantially overlap with HFpEF pathophysiology. ERT may mitigate some cardiovascular consequences of premature surgical menopause, although its effects appear dependent on age, timing of initiation, and route of administration. Recognition of BO as a female-specific cardiovascular risk factor may serve as a critical opportunity for earlier risk identification, targeted prevention, and individualized multidisciplinary care to reduce long-term cardiovascular and HF risk in women worldwide.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0523",
   "topic": "Surgery",
   "subtopic": "",
