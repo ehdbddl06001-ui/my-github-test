@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-01",
+ "generated": "2026-09-02",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2039,
+  "total": 2047,
   "byType": {
+   "usmle": 126,
    "kmle": 811,
    "anatomy": 568,
-   "usmle": 120,
-   "paper": 523,
+   "paper": 525,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 568,
-   "Cardiology": 162,
-   "Nephrology": 137,
+   "Cardiology": 163,
+   "Nephrology": 138,
    "Infectious Disease": 114,
    "Pediatrics": 93,
    "Hematology-Oncology": 80,
-   "Pathology": 73,
-   "Obstetrics & Gynecology": 62,
+   "Pathology": 74,
+   "Obstetrics & Gynecology": 63,
    "Neurology": 61,
-   "Psychiatry": 60,
-   "Surgery": 56,
+   "Psychiatry": 61,
+   "Surgery": 57,
    "Endocrinology": 52,
    "Gastroenterology": 51,
    "Pulmonology": 51,
@@ -37,9 +37,9 @@ window.MEDKOS_INDEX = {
    "Hematology": 49,
    "Laboratory Medicine": 49,
    "Physiology": 15,
-   "Pharmacology": 9,
+   "Pharmacology": 10,
+   "Microbiology": 9,
    "Biochemistry": 8,
-   "Microbiology": 8,
    "Immunology": 6,
    "Internal Medicine": 6,
    "Medical AI Lab": 4,
@@ -53,13 +53,137 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1285,
-   "medium": 705,
+   "high": 1291,
+   "medium": 707,
    "low": 49
   },
-  "tagCount": 2747
+  "tagCount": 2753
  },
  "docs": [
+  {
+   "id": "usmle-2026-0139",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Uterine Atony After Delivery in Severe Preeclampsia — Choosing the Second Uterotonic the Blood Pressure Allows",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "carboprost",
+    "methylergonovine",
+    "preeclampsia",
+    "uterotonics"
+   ],
+   "source": "USMLE-style / MedKOS (ACOG Practice Bulletin 183 — Postpartum Hemorrhage; Williams Obstetrics 26e)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0139.md",
+   "snippet": "A 33 year old woman, gravida 2, para 2, delivers a 3,900 g boy vaginally at 38 weeks' gestation after labor was induced for preeclampsia with severe features; she is receiving an intravenous magnesium sulfate infusion. Ten minutes after del",
+   "text": "Obstetrics & Gynecology Uterine Atony After Delivery in Severe Preeclampsia — Choosing the Second Uterotonic the Blood Pressure Allows postpartum-hemorrhage uterine-atony carboprost methylergonovine preeclampsia uterotonics USMLE-style / MedKOS (ACOG Practice Bulletin 183 — Postpartum Hemorrhage; Williams Obstetrics 26e) A 33 year old woman, gravida 2, para 2, delivers a 3,900 g boy vaginally at 38 weeks' gestation after labor was induced for preeclampsia with severe features; she is receiving an intravenous magnesium sulfate infusion. Ten minutes after delivery of an intact placenta, heavy vaginal bleeding continues. Examination shows a soft, boggy uterine fundus above the umbilicus. Bimanual uterine massage is performed, the bladder is emptied by catheterization, and an oxytocin infusion is increased, but brisk bleeding persists and the fundus remains poorly contracted. Her medical history is otherwise unremarkable, with no asthma. Which of the following is the most appropriate next step in management? A. Intramuscular methylergonovine administration B. Intrauterine balloon tamponade placement C. Emergency peripartum hysterectomy D. Intramuscular carboprost administration E. Uterine artery embolization 분만 후 출혈의 최다 원인인 자궁이완증에서 1차(마사지·방광 비우기·옥시토신 증량)가 실패하면 2차 자궁수축제를 추가한다. 이 환자는 중증 전자간증으로 혈압 168/106 — 맥각알칼로이드인 methylergonovine은 혈관수축으로 고혈압 위기를 부르므로 금기다. 천식이 없음을 확인했으므로 PGF2α 유도체 carboprost가 적절한 다음 약제다(천식이면 기관지수축으로 금기 → 그때는 misoprostol 등 대안). 풍선 탐폰·색전술·자궁절제술은 약물 단계(2차 수축제까지)를 소진한 뒤의 단계다. 마그네슘 주입은 자궁이완을 악화시킬 수 있어 수축제 필요성이 더 크다."
+  },
+  {
+   "id": "usmle-2026-0138",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Adhesive Small Bowel Obstruction Turning Febrile — When the Trial of Conservative Management Is Over",
+   "tags": [
+    "small-bowel-obstruction",
+    "strangulation",
+    "adhesions",
+    "laparotomy",
+    "acute-abdomen"
+   ],
+   "source": "USMLE-style / MedKOS (Sabiston 21e — intestinal obstruction; Bologna guidelines for adhesive SBO)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0138.md",
+   "snippet": "A 68 year old man is brought to the emergency department because of 2 days of colicky abdominal pain, bilious vomiting, and progressive distention, with no passage of stool or flatus for 24 hours. He underwent open sigmoid colectomy for div",
+   "text": "Surgery Adhesive Small Bowel Obstruction Turning Febrile — When the Trial of Conservative Management Is Over small-bowel-obstruction strangulation adhesions laparotomy acute-abdomen USMLE-style / MedKOS (Sabiston 21e — intestinal obstruction; Bologna guidelines for adhesive SBO) A 68 year old man is brought to the emergency department because of 2 days of colicky abdominal pain, bilious vomiting, and progressive distention, with no passage of stool or flatus for 24 hours. He underwent open sigmoid colectomy for diverticulitis 6 years ago. Over the past 6 hours the pain has become constant and localized to the right lower abdomen. Examination shows a distended abdomen with high pitched bowel sounds, and focal right lower quadrant tenderness with guarding. Supine and upright radiographs show dilated small bowel loops with multiple air fluid levels and a paucity of colonic gas. Intravenous fluid resuscitation and a nasogastric tube are initiated. Laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Emergency surgical exploration of the abdomen B. Nasogastric decompression with serial abdominal examinations C. Water soluble contrast challenge through the nasogastric tube D. Colonoscopic decompression of the dilated bowel loops E. Broad spectrum antibiotics with reassessment in 24 hours 수술력 있는 유착성 소장폐색은 원칙적으로 비수술적 치료(비위관 감압·수액)를 먼저 시도하지만, 그것은 교액(strangulation) 징후가 없을 때만이다. 이 환자는 산통이 지속통으로 바뀌고 국소 압통·근성방어, 발열 38.4, 빈맥, 백혈구 16,900, 젖산 4.1로 교액성 폐색(장허혈)을 시사한다 — 이때는 감압을 유지한 채 즉시 수술 탐색으로 가야 하며, 지연될수록 괴사·천공·패혈증으로 진행한다. 헤모글로빈 15.8은 혈액농축(제3강 소실), 저칼륨·저나트륨은 구토 소실을 반영한다."
+  },
+  {
+   "id": "usmle-2026-0137",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Anorexia Nervosa on Day 3 of Nutritional Rehabilitation — The Electrolyte That Crashes When Feeding Restarts",
+   "tags": [
+    "anorexia-nervosa",
+    "refeeding-syndrome",
+    "hypophosphatemia",
+    "insulin",
+    "nutritional-rehabilitation"
+   ],
+   "source": "USMLE-style / MedKOS (APA Practice Guideline — Eating Disorders; NICE refeeding syndrome guidance)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0137.md",
+   "snippet": "A 17 year old girl is admitted to the hospital for nutritional rehabilitation because of a 2 year history of severe dietary restriction and a body mass index of 13.6 kg/m². Admission laboratory studies, shown, are near normal, and nasogastr",
+   "text": "Psychiatry Anorexia Nervosa on Day 3 of Nutritional Rehabilitation — The Electrolyte That Crashes When Feeding Restarts anorexia-nervosa refeeding-syndrome hypophosphatemia insulin nutritional-rehabilitation USMLE-style / MedKOS (APA Practice Guideline — Eating Disorders; NICE refeeding syndrome guidance) A 17 year old girl is admitted to the hospital for nutritional rehabilitation because of a 2 year history of severe dietary restriction and a body mass index of 13.6 kg/m². Admission laboratory studies, shown, are near normal, and nasogastric feeding at full caloric goal is started on the day of admission. On hospital day 3 she develops generalized muscle weakness, new bilateral ankle edema, palpitations, and confusion. The electrocardiogram monitor shows frequent premature ventricular complexes. A decrease in the serum concentration of which of the following is the most likely cause of her current condition? A. Sodium B. Ionized calcium C. Magnesium D. Potassium E. Phosphate 장기 기아 상태에서는 세포내 인이 고갈되어 있어도 혈청 인은 정상으로 보인다. 급식(특히 탄수화물)이 시작되면 인슐린이 분비되어 포도당과 함께 인·칼륨·마그네슘을 세포 안으로 밀어 넣고, ATP·2,3 BPG 합성에 인이 대량 소모된다 → 급성 저인산혈증(재급식증후군의 핵심). 근력저하·부종·심부정맥·섬망·호흡부전이 재급식 2–5일째 나타난다. 예방은 저열량 시작(10–20 kcal/kg/day) 후 점진 증량과 급식 전·중 인 보충 및 전해질 감시다. K·Mg도 함께 떨어지지만 재급식증후군을 정의하고 사망을 이끄는 축은 인이다."
+  },
+  {
+   "id": "usmle-2026-0136",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Tricyclic Overdose with a Widening QRS — The Channel Behind the Wide-Complex Tachycardia",
+   "tags": [
+    "TCA-overdose",
+    "amitriptyline",
+    "sodium-channel",
+    "wide-QRS",
+    "sodium-bicarbonate",
+    "toxicology"
+   ],
+   "source": "USMLE-style / MedKOS (Katzung 15e — tricyclic antidepressant toxicity; Goldfrank's Toxicologic Emergencies)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0136.md",
+   "snippet": "A 22 year old woman is brought to the emergency department 90 minutes after her roommate found her unresponsive next to an empty bottle of amitriptyline prescribed for a family member. On arrival she is drowsy and mumbling. Her pupils are 7",
+   "text": "Pharmacology Tricyclic Overdose with a Widening QRS — The Channel Behind the Wide-Complex Tachycardia TCA-overdose amitriptyline sodium-channel wide-QRS sodium-bicarbonate toxicology USMLE-style / MedKOS (Katzung 15e — tricyclic antidepressant toxicity; Goldfrank's Toxicologic Emergencies) A 22 year old woman is brought to the emergency department 90 minutes after her roommate found her unresponsive next to an empty bottle of amitriptyline prescribed for a family member. On arrival she is drowsy and mumbling. Her pupils are 7 mm and sluggishly reactive, her skin is warm and dry, and bowel sounds are absent. Shortly after arrival she has a brief generalized seizure. An electrocardiogram shows a regular wide complex tachycardia; the tracing is shown. Which of the following mechanisms best explains this electrocardiographic finding? A. Antagonism of muscarinic acetylcholine receptors in cardiac tissue B. Blockade of rapid delayed rectifier potassium efflux channels C. Antagonism of alpha 1 adrenergic receptors in vascular smooth muscle D. Blockade of fast inward sodium channels in the His Purkinje system E. Inhibition of presynaptic norepinephrine reuptake transporters 아미트리프틸린 과량은 항콜린 증상(산동·건조한 피부·장음 소실)·경련·저혈압을 일으키지만, ECG의 QRS 확장과 넓은 QRS 빈맥의 원인은 심근·His Purkinje의 0상 빠른 Na+ 채널 차단(quinidine like, class IA 유사)이다. 탈분극 전도가 느려져 QRS가 넓어지고( 100 ms에서 경련, 160 ms에서 심실부정맥 위험), aVR의 R파 상승이 동반된다. 치료는 고장성 중탄산나트륨 — Na+ 부하와 알칼리화로 채널 차단을 극복·감소시킨다. K+ 채널 차단(QT 연장)·α1 차단(저혈압)·항무스카린(빈맥)도 TCA의 작용이지만 QRS 확장의 기전은 아니다."
+  },
+  {
+   "id": "usmle-2026-0135",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Pseudomembranous Pharyngitis with Myocarditis — A Toxin That Freezes the Ribosome's Elongation Step",
+   "tags": [
+    "diphtheria",
+    "exotoxin",
+    "EF-2",
+    "ADP-ribosylation",
+    "myocarditis",
+    "pseudomembrane"
+   ],
+   "source": "USMLE-style / MedKOS (Murray Medical Microbiology 9e — Corynebacterium; CDC diphtheria)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0135.md",
+   "snippet": "A 6 year old boy who recently immigrated from a region with limited healthcare access is brought to the emergency department because of 4 days of sore throat, low grade fever, and malaise, and 1 day of shortness of breath. He has received n",
+   "text": "Microbiology Pseudomembranous Pharyngitis with Myocarditis — A Toxin That Freezes the Ribosome's Elongation Step diphtheria exotoxin EF-2 ADP-ribosylation myocarditis pseudomembrane USMLE-style / MedKOS (Murray Medical Microbiology 9e — Corynebacterium; CDC diphtheria) A 6 year old boy who recently immigrated from a region with limited healthcare access is brought to the emergency department because of 4 days of sore throat, low grade fever, and malaise, and 1 day of shortness of breath. He has received no childhood vaccinations. Examination shows a firmly adherent gray membrane covering the tonsils and posterior pharynx that bleeds when removal is attempted, along with marked cervical lymphadenopathy and neck swelling. Cardiac examination shows an irregular rhythm and an S3 gallop. Laboratory studies are shown. Which of the following mechanisms is most likely responsible for this patient's cardiac findings? A. Removal of an adenine residue from the 28S ribosomal RNA of the 60S subunit B. ADP ribosylation of elongation factor 2, halting host protein synthesis C. Permanent activation of Gs alpha subunits, raising intracellular cyclic AMP D. Cleavage of SNARE proteins, preventing presynaptic neurotransmitter release E. ADP ribosylation of Gi alpha subunits, disinhibiting adenylate cyclase 미접종 이주 아동 + 단단히 붙어 떼면 출혈하는 회색 인두막 + 경부 림프절종대(bull neck) + 트로포닌 상승·부정맥·S3 = 디프테리아와 그 독성 심근염이다. Corynebacterium diphtheriae 외독소(A B 독소)는 EF 2(elongation factor 2)의 diphthamide 잔기를 ADP ribosylation 하여 번역 신장을 정지시키고, 단백합성 의존도가 높은 심근·신경 세포가 괴사한다. 심근염은 디프테리아 사망의 주원인이며 발병 1–2주에 나타난다. 같은 EF 2 기전을 Pseudomonas exotoxin A가 공유한다."
+  },
+  {
+   "id": "usmle-2026-0134",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Hemolysis with Hepatic Vein Thrombosis — Losing the GPI Anchor That Shields Red Cells from Complement",
+   "tags": [
+    "PNH",
+    "hemolytic-anemia",
+    "GPI-anchor",
+    "CD55-CD59",
+    "complement",
+    "thrombosis"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran 10e — red cell disorders; UpToDate PNH)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/usmle/usmle-2026-0134.md",
+   "snippet": "A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She t",
+   "text": "Pathology Hemolysis with Hepatic Vein Thrombosis — Losing the GPI Anchor That Shields Red Cells from Complement PNH hemolytic-anemia GPI-anchor CD55-CD59 complement thrombosis USMLE-style / MedKOS (Robbins & Cotran 10e — red cell disorders; UpToDate PNH) A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She takes no medications. Examination shows scleral icterus, pallor, tender hepatomegaly, and shifting dullness. Abdominal Doppler ultrasonography shows absent flow in the hepatic veins. A peripheral blood smear shows no spherocytes or schistocytes. Laboratory studies are shown. Which of the following best explains this patient's findings? A. Autoantibody mediated clearance of platelet glycoprotein IIb/IIIa complexes B. Deficient protease cleavage of ultra large von Willebrand factor multimers C. Absence of glycosylphosphatidylinositol anchored complement regulatory proteins D. Warm reactive immunoglobulin G bound to red cell membrane antigens E. Disrupted vertical interaction between spectrin and the red cell membrane 아침 첫 소변의 혈색소뇨 + DAT 음성 혈관내 용혈(LDH↑·합토글로빈↓) + 범혈구감소 + 간정맥혈전(Budd Chiari)의 조합은 발작성 야간 혈색소뇨증(PNH)이다. PIGA 체세포 돌연변이로 GPI 앵커 합성이 안 되어 CD55(DAF)·CD59(MIRL)가 적혈구 표면에 실리지 못하고, 보체 공격을 막지 못해 혈관내 용혈과 유리 혈색소에 의한 NO 소모·혈전(특히 간정맥·뇌정맥 등 비전형 부위)이 생긴다. 확진은 유세포분석에서 CD55/CD59 소실. DAT 음성이 자가면역용혈을, 도말에서 구상적혈구·분절적혈구 부재가 HS·TTP를 배제한다."
+  },
   {
    "id": "kmle-2026-0841",
    "type": "kmle",
@@ -810,6 +934,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0128.md",
    "snippet": "A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. H",
    "text": "Immunology Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50 complement membrane-attack-complex C5 Neisseria meningitis CH50 AH50 USMLE-style / MedKOS (complement system · terminal pathway deficiency) A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. He has otherwise been healthy, without sinopulmonary infections, skin abscesses, or episodes of facial swelling. He received all routine childhood vaccinations. Examination shows nuchal rigidity without a petechial rash. Cerebrospinal fluid analysis and complement studies are shown. A deficiency of which of the following proteins is most likely in this patient? A. C1 esterase inhibitor B. C3 C. C5 D. C4 E. Properdin 재발성 수막알균(Neisseria) 수막염 + CH50·AH50 모두 검출 안 됨 + C3·C4 정상 = 두 경로가 합류한 뒤의 종말 보체(C5–C9, 막공격복합체) 결핍. Neisseria는 세포막이 얇아 MAC에 의한 직접 용해가 주 방어이므로, 종말 성분이 없으면 유독 이 균의 침습 감염이 반복된다. CH50(고전)·AH50(대체)이 동시에 0이면 결함은 공통 종말경로에 있고, 어느 한쪽만 낮으면 그 경로 고유 성분(C4→고전, properdin→대체)이다."
+  },
+  {
+   "id": "paper-2026-0525",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical principles and practice : international journal of the Kuwait University, Health Science Centre",
+   "confidence": "medium",
+   "date": "2026-09-01",
+   "path": "content/papers/2026/2026-09-01_paper-2026-0525_complication_profiles_following_right_sided_segmental_colect.md",
+   "snippet": "Title Complication Profiles Following Right Sided Segmental Colectomy: A Comparative Retrospective Analysis of Crohn's Disease and Colon Cancer Authors Alabbad Jasim, Alfadhli Noor, Almuhana Nourah, Alnaqi Fawaz Journal / DOI Medical princi",
+   "text": "Nephrology scraped pubmed PubMed / Medical principles and practice : international journal of the Kuwait University, Health Science Centre Title Complication Profiles Following Right Sided Segmental Colectomy: A Comparative Retrospective Analysis of Crohn's Disease and Colon Cancer Authors Alabbad Jasim, Alfadhli Noor, Almuhana Nourah, Alnaqi Fawaz Journal / DOI Medical principles and practice : international journal of the Kuwait University, Health Science Centre · DOI: 10.1159/mpp/adpag010 · PMID: 42678889 https://pubmed.ncbi.nlm.nih.gov/42678889/ Abstract OBJECTIVES: Concerns regarding the higher incidence of postoperative complications in Crohn's disease patients may delay surgical resection. Calibrating postoperative risks specific to Crohn's disease, with the more common indication of colon cancer, is valuable for making informed surgical decisions. The primary objective of this study was to report a disease specific postoperative complication profile. The secondary objective was to identify factors associated with significant complications (Clavien Dindo classification grade ≥ 2). SUBJECTS AND METHODS: This retrospective study was conducted at a tertiary center from January 2010 to December 2025 on adult patients who underwent right sided segmental colectomy for Crohn's disease or colon cancer. The data analyzed included demographics, comorbidities, laboratory findings, and perioperative clinical variables, and 30 day postoperative complications. RESULTS: A total of 230 patients met the inclusion criteria (86 with Crohn's disease and 144 with colon cancer). Patients with Crohn's disease were significantly younger and had fewer associated comorbidities. No differences were observed in the overall postoperative complications. However, among patients who developed complications, the rate of infectious complications was higher in patients with Crohn's disease compared to patients with colon cancer (72.4% vs. 46.4%, p = 0.022 ). Respiratory complications occurred only in patients with colon cancer. Chronic kidney disease and conversion to open surgery were found to be independently associated with significant complications on multivariate regression analysis. CONCLUSION: Overall postoperative complications rates were comparable between Crohn's disease and colon cancer patients undergoing right sided segmental colectomy. However, a disease specific complication profile was noted, with a higher rate of infectious complications in Crohn's disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0524",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-09-01",
+   "path": "content/papers/2026/2026-09-01_paper-2026-0524_bilateral_oophorectomy_and_heart_failure_risk_mechanisms_evi.md",
+   "snippet": "Title Bilateral Oophorectomy and Heart Failure Risk: Mechanisms, Evidence, and Clinical Implications Authors Jafri Danya Z, Bhattarai Sandesh, Hassan Mariah, Sharma Vibha, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in rev",
+   "text": "Cardiology scraped pubmed PubMed / Cardiology in review Title Bilateral Oophorectomy and Heart Failure Risk: Mechanisms, Evidence, and Clinical Implications Authors Jafri Danya Z, Bhattarai Sandesh, Hassan Mariah, Sharma Vibha, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001457 · PMID: 42679310 https://pubmed.ncbi.nlm.nih.gov/42679310/ Abstract Heart failure (HF), particularly heart failure with preserved ejection fraction (HFpEF), disproportionately affects women, yet female specific and iatrogenic contributors to HF risk remain deeply underrecognized. Bilateral oophorectomy (BO) results in abrupt estrogen deprivation and has increasingly been associated with adverse cardiovascular outcomes, particularly when performed before natural menopause. This review examines the mechanistic and epidemiologic evidence linking BO to cardiovascular disease and HF, with particular attention to age at oophorectomy, estrogen deprivation, and the potential modifying role of estrogen replacement therapy (ERT). Growing evidence associates BO with increased cardiovascular morbidity, mortality, and HF risk, with the greatest risk observed among women undergoing premenopausal BO. Abrupt estrogen loss may contribute through endothelial dysfunction, increased vascular stiffness, adverse metabolic and inflammatory changes, neurohormonal activation, and myocardial remodeling mechanisms that substantially overlap with HFpEF pathophysiology. ERT may mitigate some cardiovascular consequences of premature surgical menopause, although its effects appear dependent on age, timing of initiation, and route of administration. Recognition of BO as a female specific cardiovascular risk factor may serve as a critical opportunity for earlier risk identification, targeted prevention, and individualized multidisciplinary care to reduce long term cardiovascular and HF risk in women worldwide. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-01",
