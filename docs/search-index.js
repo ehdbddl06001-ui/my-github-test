@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2047,
+  "total": 2048,
   "byType": {
    "usmle": 126,
+   "anatomy": 569,
    "kmle": 811,
-   "anatomy": 568,
    "paper": 525,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 568,
+   "Anatomy": 569,
    "Cardiology": 163,
    "Nephrology": 138,
    "Infectious Disease": 114,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1291,
+   "high": 1292,
    "medium": 707,
    "low": 49
   },
@@ -183,6 +183,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0134.md",
    "snippet": "A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She t",
    "text": "Pathology Hemolysis with Hepatic Vein Thrombosis — Losing the GPI Anchor That Shields Red Cells from Complement PNH hemolytic-anemia GPI-anchor CD55-CD59 complement thrombosis USMLE-style / MedKOS (Robbins & Cotran 10e — red cell disorders; UpToDate PNH) A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She takes no medications. Examination shows scleral icterus, pallor, tender hepatomegaly, and shifting dullness. Abdominal Doppler ultrasonography shows absent flow in the hepatic veins. A peripheral blood smear shows no spherocytes or schistocytes. Laboratory studies are shown. Which of the following best explains this patient's findings? A. Autoantibody mediated clearance of platelet glycoprotein IIb/IIIa complexes B. Deficient protease cleavage of ultra large von Willebrand factor multimers C. Absence of glycosylphosphatidylinositol anchored complement regulatory proteins D. Warm reactive immunoglobulin G bound to red cell membrane antigens E. Disrupted vertical interaction between spectrin and the red cell membrane 아침 첫 소변의 혈색소뇨 + DAT 음성 혈관내 용혈(LDH↑·합토글로빈↓) + 범혈구감소 + 간정맥혈전(Budd Chiari)의 조합은 발작성 야간 혈색소뇨증(PNH)이다. PIGA 체세포 돌연변이로 GPI 앵커 합성이 안 되어 CD55(DAF)·CD59(MIRL)가 적혈구 표면에 실리지 못하고, 보체 공격을 막지 못해 혈관내 용혈과 유리 혈색소에 의한 NO 소모·혈전(특히 간정맥·뇌정맥 등 비전형 부위)이 생긴다. 확진은 유세포분석에서 CD55/CD59 소실. DAT 음성이 자가면역용혈을, 도말에서 구상적혈구·분절적혈구 부재가 HS·TTP를 배제한다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-03",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-03",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/anatomy/daily/2026-09-03.md",
+   "snippet": "오늘의 학습 (2026 09 03 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 7일 · Tagging 2까지 46일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-03 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 03 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 7일 · Tagging 2까지 46일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "kmle-2026-0841",
