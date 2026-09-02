@@ -2,7 +2,7 @@
 // 원본: content/ailab/**/*.md + pipelines/datasets.py
 //   →  `python pipelines/export_ailab_web.py`로 재생성
 window.AILAB = {
- "generated": "2026-09-03",
+ "generated": "2026-09-02",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "weekly": {

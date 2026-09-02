@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-09-03",
+ "generated": "2026-09-02",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -811,71 +811,6 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "body": "## 주행\n\n도해: `docs/assets/anatomy/diag-saphenous-veins-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0042`)\n\n| | 큰두렁정맥 great saphenous v. | 작은두렁정맥 small saphenous v. |\n|---|---|---|\n| 시작 | 발등정맥활 **안쪽** 끝 | 발등정맥활 **가쪽** 끝 |\n| 복사 | 안쪽복사 **앞** | 가쪽복사 **뒤** |\n| 경로 | 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 | 아킬레스힘줄 옆 → 종아리 뒤 정중선 |\n| 끝 | 두렁정맥구멍(넓은근막) → **넙다리정맥** | 종아리근막을 뚫고 → **오금정맥** |\n| 동반 신경 | 두렁신경 saphenous n. (무릎 아래부터) | 장딴지신경 sural n. |\n\n암기: **큰-안-앞 / 작-가-뒤**\n\n## 두렁정맥구멍 직전 지류\n\n얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. ·\n바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.)\n\n## 흐름과 판막\n\n```\n얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이)\n```\n\n판막이 이 **한 방향**만 허용하고, 장딴지근이 펌프가 된다.\n판막부전 → 역류 → **정맥류 varicose veins**(큰두렁계에 흔하다).\n\n## 동반 신경의 감각 영역\n\n| 신경 | 감각 영역 | 유래 |\n|---|---|---|\n| 두렁신경 | 종아리 안쪽 · 발 안쪽 | 넙다리신경의 감각가지 |\n| 장딴지신경 | 종아리 뒤가쪽 · 발 가쪽 | 정강신경 + 온종아리신경 교통가지 |\n\n## 임상\n\n- 안쪽복사 앞 큰두렁정맥 = 응급 **정맥절개(cut-down)** 자리.\n- 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 **이식편**.\n- 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경.\n- 장딴지신경은 **신경생검**에 자주 쓴다.\n\n## 실습 주의\n\n두 정맥과 짝 신경 모두 **얕은근막 안**에 있다. 피부만 벗기면 그대로 남는다."
-  },
-  {
-   "id": "anatomy-2026-0446",
-   "title": "넓적다리 앞·안쪽 위치 약도 — 근육과 넙다리삼각·모음근굴",
-   "region": "lower-limb",
-   "subregion": "anterior-thigh",
-   "layer": "multi",
-   "conceptStyle": "course-map",
-   "relations": [
-    "branches",
-    "passes-through",
-    "covers"
-   ],
-   "structureClasses": [
-    "muscle",
-    "artery",
-    "vein",
-    "nerve"
-   ],
-   "examPhase": "tagging-1",
-   "confidence": "high",
-   "classificationConfidence": null,
-   "tree": null,
-   "image": "assets/anatomy/diag-anterior-thigh-labeled.svg",
-   "imageOrigin": "claude-drawn-svg",
-   "refs": [
-    {
-     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
-     "page": null,
-     "section": "6회차 실습주제 — 목삼각 / 넓적다리 앞·안쪽 / 종아리 앞 / 발등"
-    }
-   ],
-   "body": "## 약도가 보여주는 것\n\n도해: `docs/assets/anatomy/diag-anterior-thigh-labeled.svg` (패널 A 근육 / 패널 B 신경혈관)\n\n| 축 | 내용 |\n|---|---|\n| 넙다리삼각 | 경계 = ==샅고랑인대·넙다리빗근·긴모음근== · 안에서 가쪽→안쪽 ==N·A·V·(E)·L== |\n| 넙다리동맥 | 얕은가지 3 → ==깊은넙다리동맥==(안·가쪽 휘돌이 + 관통동맥 1–3) → 모음근굴 |\n| 모음근굴 | 지붕 = 넙다리빗근 · 내용 = 동·정맥 + ==두렁신경== · 출구 = ==모음근구멍==(큰모음근) → 오금 |\n| 지배 | 앞칸 = ==넙다리신경== / 안쪽칸 = ==폐쇄신경== / 이중 = ==두덩근·큰모음근== |\n\n- 두렁신경 = 굴은 지나지만 ==모음근구멍은 통과하지 않는다== — 무릎 안쪽에서 얕게 나옴.\n- ==안쪽넙다리휘돌이동맥== = 넙다리뼈머리 주 혈행 — 목 골절에서 무혈성괴사 축.\n- 임상: 넙다리동맥 = ==샅고랑인대 중간점== 아래 촉지·채혈·더듬자 삽입(6회차 응용과제).\n- 거위발 = 빗근 + 두덩정강근 + 반힘줄근."
-  },
-  {
-   "id": "anatomy-2026-0447",
-   "title": "종아리 앞·가쪽칸·발등 위치 약도 — 근육과 온종아리신경·앞정강동맥",
-   "region": "lower-limb",
-   "subregion": "anterior-leg",
-   "layer": "multi",
-   "conceptStyle": "course-map",
-   "relations": [
-    "branches",
-    "passes-through",
-    "accompanies"
-   ],
-   "structureClasses": [
-    "muscle",
-    "artery",
-    "nerve"
-   ],
-   "examPhase": "tagging-1",
-   "confidence": "high",
-   "classificationConfidence": null,
-   "tree": null,
-   "image": "assets/anatomy/diag-anterior-leg-foot-labeled.svg",
-   "imageOrigin": "claude-drawn-svg",
-   "refs": [
-    {
-     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
-     "page": null,
-     "section": "6회차 실습주제 — 목삼각 / 넓적다리 앞·안쪽 / 종아리 앞 / 발등"
-    }
-   ],
-   "body": "## 약도가 보여주는 것\n\n도해: `docs/assets/anatomy/diag-anterior-leg-foot-labeled.svg` (패널 A 근육 / 패널 B 신경혈관)\n\n| 축 | 내용 |\n|---|---|\n| 갈림 지점 | 온종아리신경이 ==종아리뼈목==을 감아돌며 얕은·깊은종아리신경으로 — 압박마비 최호발 |\n| 앞칸 4근육 | 앞정강근·긴발가락폄근·긴엄지폄근·셋째종아리근 = ==깊은종아리신경== |\n| 가쪽칸 2근육 | 긴·짧은종아리근(가쪽복사 뒤로) = ==얕은종아리신경== · 작용 = 가쪽번짐 |\n| 앞정강동맥 | 오금동맥 가지 → ==뼈사이막 위 구멍== 통과 → 앞칸 하행(신경이 가쪽 동행) |\n| 발등 | ==발등동맥==(긴엄지폄근힘줄 가쪽 촉지) → 활꼴동맥 + ==깊은발바닥가지==(발바닥활 완성) |\n\n- ==첫째 발가락사이 감각 = 깊은종아리신경의 유일한 피부영역== — 태깅·임상 단골.\n- 발처짐 foot drop = 온종아리신경 손상(종아리뼈목 골절·압박).\n- 폄근지지띠(위·아래) 밑을 동맥·신경·힘줄이 함께 통과."
   },
   {
    "id": "anatomy-2026-0001",
@@ -8533,6 +8468,144 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0446",
+   "style": "relation",
+   "session": 6,
+   "region": "neck",
+   "subregion": "posterior-triangle",
+   "examPhase": "tagging-1",
+   "stem": "뒤목삼각의 세 경계를 말하고, 이 삼각을 위·아래 둘로 가르는 근육이 무엇인지 답하시오. 이어서 그렇게 갈린 두 소삼각의 이름과 각각에서 만나는 주요 구조물을 위·아래로 나누어 배열하고, 두 소삼각에서 각각 유명한 의인성 손상 한 가지씩을 말하시오.",
+   "choices": null,
+   "answer": "경계 — 앞: 목빗근 뒤모서리 (posterior border of sternocleidomastoid m.) / 뒤: 등세모근 앞모서리 (anterior border of trapezius m.) / 아래: 빗장뼈 중간 1/3 (middle third of clavicle). 가르는 근육 — 어깨목뿔근 아래힘살 (inferior belly of omohyoid m.). 위쪽 = 뒤통수삼각 (occipital triangle) — 더부신경 (accessory n., XI), 목신경얼기의 피부가지 4개. 아래쪽 = 빗장위삼각 (supraclavicular triangle) — 빗장밑동맥 3부 (third part of subclavian a.), 팔신경얼기의 줄기 (trunks of brachial plexus), 가슴막꼭대기 (cervical pleura). 손상 — 뒤통수삼각: 림프절 생검 중 더부신경 손상으로 등세모근 위축과 어깨처짐 / 빗장위삼각: 빗장위 중심정맥삽입 중 가슴막꼭대기 천자로 기흉.",
+   "explanation": "앞·뒤목삼각을 가르는 것은 ==목빗근== 하나지만, 각 삼각을 소삼각으로 쪼개는 것은 목뿔뼈에 붙는 두 근육 — 두힘살근(앞을 위쪽에서)과 ==어깨목뿔근==이다. 어깨목뿔근은 위힘살이 앞목삼각을 목동맥삼각·근육삼각으로 가르고, **아래힘살**이 뒤목삼각을 위아래로 가른다. 그래서 뒤목삼각에서 회차 문제가 나오면 기준선은 언제나 어깨목뿔근 아래힘살이다. 위쪽 뒤통수삼각은 얕은 신경의 자리라 ==더부신경==이 목빗근 뒤모서리에서 나와 근막 바로 밑을 비스듬히 건너 등세모근으로 들어간다 — 덮개가 얇아 림프절 생검에서 가장 흔히 잘리는 신경이며, 다치면 어깨를 못 으쓱하고 날개어깨뼈가 생긴다. 아래쪽 빗장위삼각은 반대로 깊고 굵은 것들의 자리다: ==빗장밑동맥 3부==가 앞목갈비근 가쪽에서 첫째갈비뼈를 타고 넘어가며, 그 위뒤로 팔신경얼기 줄기가 함께 지나고, 바닥에는 허파꼭대기를 덮은 가슴막꼭대기가 빗장뼈보다 위로 올라와 있다. 빗장위 접근 중심정맥삽입의 기흉 위험이 여기서 나온다. 목빗근 뒤모서리 중간의 ==신경점(Erb's point)==은 뒤통수삼각의 표지로, 목신경얼기 피부가지 4개가 한 점처럼 모여 나오므로 목 국소마취의 표적이 된다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 목의 삼각·목의 내장"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0447",
+   "style": "branch-tree",
+   "session": 6,
+   "region": "neck",
+   "subregion": "cervical-plexus",
+   "examPhase": "tagging-1",
+   "stem": "목신경얼기가 어느 척수신경 앞가지들로 이루어지는지 말하고, 그 가지를 피부가지와 근육가지로 나누어 계보로 정리하시오. 피부가지는 네 개를 모두 들고 각각의 담당 영역을, 근육가지는 목뿔아래근육을 지배하는 고리 구조의 이름과 그 두 뿌리의 신경뿌리 값을 답하시오. 또한 네 피부가지가 한 점처럼 모여 나오는 표면 지점의 이름과 위치도 함께 말하시오.",
+   "choices": null,
+   "answer": "구성 — C1–C4 앞가지 (ventral rami of C1–C4). 피부가지 4개 — 작은뒤통수신경 (lesser occipital n.): 귓바퀴 뒤 머리덮개 / 큰귓바퀴신경 (great auricular n.): 귓바퀴와 턱뼈각 부위 피부 / 가로목신경 (transverse cervical n.): 앞목삼각 피부 / 빗장위신경 (supraclavicular n.): 목뿌리와 가슴 윗부분 피부. 근육가지 — 목신경고리 (ansa cervicalis), 위뿌리 C1 + 아래뿌리 C2–C3, 목뿔아래근육 (infrahyoid mm.) 지배. 나오는 지점 — 신경점 (Erb's point, punctum nervosum), 목빗근 뒤모서리의 중간.",
+   "explanation": "목신경얼기는 ==C1–C4 앞가지==가 목빗근 깊은면에서 엮인 얼기로, 태깅에서는 계보를 통째로 물어보기 좋은 구조다. 계보는 두 갈래로 갈라 외운다. **피부가지 4개**는 전부 ==신경점==(목빗근 뒤모서리 중간)에서 한 점처럼 나와 사방으로 흩어진다 — 위로 작은뒤통수신경, 앞위로 큰귓바퀴신경, 앞으로 가로목신경, 아래로 빗장위신경. 방향이 시계처럼 돌아가므로 위에서부터 순서로 외우면 빠지지 않는다. 목의 국소마취(얕은목신경얼기 차단)를 바로 이 한 점에 놓는 이유가 여기 있다. **근육가지**의 대표는 ==목신경고리==다. 위뿌리는 C1 섬유가 혀밑신경(XII)에 얹혀 따라오다 갈라져 내려온 것이고(그래서 혀밑신경을 따라가면 만난다), 아래뿌리는 C2–C3에서 직접 내려온다. 둘이 속목정맥 앞에서 고리를 이루어 목뿔아래근육을 지배한다 — 다만 방패목뿔근만은 위뿌리의 C1 섬유가 따로 간다. 여기서 갈라 외울 것 하나: 같은 앞목삼각을 지나도 ==운동이면 얼굴신경(VII) 목가지(넓은목근)==, ==감각이면 가로목신경==이다. 또 목신경얼기의 근육가지에는 가로막신경(C3–C5)도 포함되어 앞목갈비근 앞면을 타고 내려간다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 목의 삼각·목의 내장"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0448",
+   "style": "layer-order",
+   "session": 6,
+   "region": "neck",
+   "subregion": "muscular-triangle",
+   "examPhase": "tagging-1",
+   "stem": "앞목삼각의 네 소삼각 가운데 목의 내장이 드러나는 것은 어느 것인지 말하고 그 세 경계를 답하시오. 이어서 그 삼각에서 피부밑조직을 벗긴 뒤 정중선 가까이를 얕은층에서 깊은층으로 파고들 때 만나는 근육층과 내장을 순서대로 나열하고, 그 근육층 전체를 지배하는 신경 구조를 답하시오.",
+   "choices": null,
+   "answer": "삼각 — 근육삼각 (muscular triangle). 경계 — 위가쪽: 어깨목뿔근 위힘살 (superior belly of omohyoid m.) / 아래가쪽: 목빗근 앞모서리 (anterior border of sternocleidomastoid m.) / 안쪽: 목의 정중선 (median line of the neck). 얕은층에서 깊은층 순서 — ① 넓은목근 (platysma) ② 얕은층 목뿔아래근육: 복장목뿔근 (sternohyoid m.)과 어깨목뿔근 (omohyoid m.) ③ 깊은층 목뿔아래근육: 복장방패근 (sternothyroid m.)과 방패목뿔근 (thyrohyoid m.) ④ 방패샘 (thyroid gland) ⑤ 후두와 기관 (larynx and trachea), 그 뒤로 인두와 식도 (pharynx and esophagus). 지배 — 목신경고리 (ansa cervicalis, C1–C3); 다만 방패목뿔근은 위뿌리를 따라온 C1 섬유가 따로 지배한다.",
+   "explanation": "목의 내장(방패샘·후두·기관)은 ==근육삼각==에서 열린다. 경계 셋 중 둘은 앞목삼각을 쪼개는 근육(어깨목뿔근 위힘살·목빗근 앞모서리)이고 나머지 하나가 정중선이므로, 삼각 자체가 이미 정중선 쪽 창문이라는 뜻이다. 층은 ==넓은목근 → 얕은 목뿔아래근육 → 깊은 목뿔아래근육 → 내장== 순으로 규칙적이다. 목뿔아래근육 넷은 두 층으로 나뉘는데 얕은층이 복장목뿔근·어깨목뿔근, 깊은층이 복장방패근·방패목뿔근이며, 이름이 곧 이는곳-닿는곳이라 층을 외울 필요 없이 읽으면 된다(복장→목뿔 / 복장→방패 / 방패→목뿔). 이들은 목뿔뼈를 아래로 당겨 삼킴과 발성에서 후두의 위치를 잡아 준다. 지배는 ==목신경고리==가 통째로 맡되 **방패목뿔근만 예외**로 위뿌리를 따라온 C1 섬유가 직접 간다 — 이 예외가 시험 포인트다. 깊은층 근육을 젖히면 방패샘의 두 엽과 잘록이가 둘째~넷째 기관연골 앞을 덮고 있고, 그 위로 방패연골, 아래로 기관이 이어진다. 임상으로는 되돌이후두신경이 기관식도고랑을 타고 올라가 방패샘 아래동맥과 얽히므로 갑상샘 수술에서 손상되면 쉰목소리가 나고, 응급 기도확보의 반지방패막 절개는 반지연골과 방패연골 사이의 ==정중선==에서 이루어진다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 목의 삼각·목의 내장"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0449",
+   "style": "distinction",
+   "session": 6,
+   "region": "lower-limb",
+   "subregion": "anterior-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리에서 이름이 닮아 혼동되는 두 신경을 감별하시오. (1) 각각이 어느 칸의 근육을 지배하며 어느 피부 영역을 담당하는가? (2) 둘의 공통 어미가 되는 신경은 무엇이며, 그 신경이 눌리기 쉬운 해부학적 지점과 그때 생기는 보행 이상의 이름은? (3) 앞칸 근육에 피를 대는 동맥과, 그 동맥이 발등에서 이름을 바꾼 뒤 촉지되는 지점은?",
+   "choices": null,
+   "answer": "(1) 깊은종아리신경 (deep fibular n.) — 종아리 앞칸 근육 전부(앞정강근, 긴엄지폄근, 긴발가락폄근, 셋째종아리근)와 발등의 짧은엄지폄근·짧은발가락폄근을 지배하고, 피부는 첫째 발샅(엄지와 둘째발가락 사이 물갈퀴공간)만 담당한다. 얕은종아리신경 (superficial fibular n.) — 가쪽칸 근육(긴종아리근, 짧은종아리근)을 지배하고, 피부는 종아리 아래가쪽과 발등의 대부분을 담당한다. (2) 공통 어미는 온종아리신경 (common fibular n.); 종아리뼈목 (neck of the fibula)에서 뼈에 바로 눌려 손상되며, 발등굽힘이 안 되어 발처짐 (foot drop)과 이를 보상하는 발쳐든걸음 (steppage gait)이 나타난다. (3) 앞정강동맥 (anterior tibial a.); 아래폄근지지띠를 지나며 발등동맥 (dorsalis pedis a.)이 되고, 긴엄지폄근 힘줄의 바로 가쪽, 첫째와 둘째 발허리뼈 사이에서 만져진다.",
+   "explanation": "이름이 같은 어미에서 갈렸으니 ==칸으로 갈라 외우는 것==이 가장 빠르다. 온종아리신경은 종아리뼈목을 돌면서 둘로 갈라지는데, **깊은** 쪽은 앞칸으로 들어가 앞정강동맥과 나란히 내려가며 앞칸 근육 전부를 먹이고, **얕은** 쪽은 가쪽칸에 머물러 긴·짧은종아리근만 지배한 뒤 종아리 아래에서 근막을 뚫고 피부로 나온다. 그래서 피부 담당이 정반대로 뒤집힌다 — 근육을 많이 맡은 깊은종아리신경이 피부는 ==첫째 발샅== 한 조각뿐이고, 근육을 둘만 맡은 얕은종아리신경이 ==발등 피부 대부분==을 덮는다. 이 비대칭이 감별의 핵심이고 태깅에서 그대로 나온다. 기능도 갈린다: 깊은 쪽이 다치면 발등굽힘과 발가락 폄이 죽어 발처짐, 얕은 쪽이 다치면 가쪽번짐이 약해지고 발등 감각이 둔해진다. 둘의 어미인 ==온종아리신경==은 종아리뼈목에서 피부 바로 밑을 뼈에 붙어 돌기 때문에 다리 깁스·쪼그려앉기·수술대 자세로 쉽게 눌린다 — 하지에서 가장 흔한 압박신경병증이다. 혈류는 신경과 짝을 이룬다: 앞칸은 ==앞정강동맥==이 뼈사이막 위모서리를 뚫고 앞으로 넘어와 신경과 나란히 내려가고, 발목을 넘으면 ==발등동맥==으로 이름이 바뀌어 긴엄지폄근 힘줄 가쪽에서 만져진다(정상인의 약 10%에서는 만져지지 않으므로 한쪽만 보고 병으로 단정하지 않는다).",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0450",
+   "style": "relation",
+   "session": 6,
+   "region": "lower-limb",
+   "subregion": "dorsum-of-foot",
+   "examPhase": "tagging-1",
+   "stem": "발등에서 다음 세 가지 관계를 답하시오. (1) 발목 앞을 건너는 폄근힘줄들이 활시위처럼 들뜨지 않는 이유가 되는 구조의 이름과 그것이 몇 개인지. (2) 발등에 있는 두 개의 짧은 폄근 이름과 그 지배신경, 그리고 그 힘줄이 합류하는 등쪽 널힘줄 구조에 함께 합류하는 손발 내재근 두 무리와 그 덕분에 가능해지는 관절 움직임. (3) 발등에서 맥을 잡는 동맥의 이름과, 어느 힘줄을 기준으로 어느 쪽에서 만지는지.",
+   "choices": null,
+   "answer": "(1) 폄근지지띠 (extensor retinaculum) — 위폄근지지띠와 아래폄근지지띠 두 개. (2) 짧은엄지폄근 (extensor hallucis brevis m.)과 짧은발가락폄근 (extensor digitorum brevis m.), 둘 다 깊은종아리신경 (deep fibular n.) 지배; 폄근널힘줄 (extensor expansion, dorsal digital expansion)에는 벌레근 (lumbrical mm.)과 뼈사이근 (interosseous mm.)이 함께 합류하며, 그 덕분에 발허리발가락관절과 뼈사이관절을 함께 펼 수 있다. (3) 발등동맥 (dorsalis pedis a.); 긴엄지폄근 힘줄 (tendon of extensor hallucis longus m.)의 바로 가쪽, 첫째와 둘째 발허리뼈 사이에서 만진다.",
+   "explanation": "발등은 좁은 지면에 힘줄·신경·동맥이 층으로 겹쳐 있어 ==무엇을 기준으로 무엇의 어느 쪽인가==를 묻기 좋은 부위다. 세 가지 기준선을 잡아 두면 된다. ① **폄근지지띠**는 위·아래 두 개의 근막 띠로, 발목 앞을 건너는 힘줄을 뼈 쪽으로 눌러 준다. 이것이 없으면 발등굽힘 때 힘줄이 활시위(bowstringing)처럼 들떠 힘이 새고, 아래폄근지지띠는 Y자로 갈려 힘줄집을 나누어 잡는다. 앞정강동맥이 아래폄근지지띠를 지나면서 ==발등동맥==으로 이름이 바뀐다. ② **폄근널힘줄**은 긴 폄근 힘줄이 발가락 등쪽에서 펴져 만든 삼각 널힘줄인데, 여기에 ==벌레근과 뼈사이근==이 옆에서 끼어든다. 이 내재근들은 발허리발가락관절 축의 바닥쪽을 지나 굽히고, 널힘줄을 통해 뼈사이관절은 펴므로, 둘이 합쳐 발가락을 곧게 세운 채 관절을 함께 다룰 수 있다(손에서 벌레근·뼈사이근이 하는 일과 원리가 같다 — 그래서 손과 짝지어 외운다). ③ **발등동맥 촉지**는 실기에서 반복해 나온다. 긴엄지폄근 힘줄을 먼저 찾고(엄지를 위로 들라고 하면 튀어나온다) 그 ==바로 가쪽==, 첫째·둘째 발허리뼈 사이 오목에 손가락을 얹는다. 안쪽에서 잡으려 하면 힘줄만 만져진다. 말초동맥질환 평가의 기본 지점이지만 정상인의 약 10%에서 만져지지 않으므로 반대쪽과 비교한다. 피부 감각은 첫째 발샅만 깊은종아리신경, 나머지 발등은 대부분 얕은종아리신경이 덮는다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0451",
+   "style": "distinction",
+   "session": 6,
+   "region": "lower-limb",
+   "subregion": "medial-thigh",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 앞칸과 안쪽칸을 지배신경과 주된 작용으로 갈라 말하고, 각 칸에 속하는 근육을 나열하시오. 이어서 안쪽칸 근육 가운데 유일하게 두 신경의 지배를 받는 근육을 지목하고, 그 근육의 어느 부분을 어느 신경이 맡는지와 그렇게 갈리는 발생학적 이유를 답하시오. 또 앞칸 근육 중 엉덩관절 굽힘까지 함께 하는 넙다리네갈래근의 갈래는 무엇인지도 말하시오.",
+   "choices": null,
+   "answer": "앞칸 — 넙다리신경 (femoral n.) 지배, 주된 작용은 무릎 폄과 엉덩관절 굽힘; 근육은 넙다리빗근 (sartorius m.), 넙다리네갈래근 4갈래 (quadriceps femoris m.), 엉덩허리근 (iliopsoas m.; 엉덩근은 넙다리신경, 큰허리근은 L1–L3 앞가지 직접 지배). 안쪽칸 — 폐쇄신경 (obturator n.) 지배, 주된 작용은 모음; 근육은 긴모음근 (adductor longus m.), 짧은모음근 (adductor brevis m.), 큰모음근 (adductor magnus m.), 두덩근 (pectineus m.), 두덩정강근 (gracilis m.), 바깥폐쇄근 (obturator externus m.). 두 신경 지배 근육 — 큰모음근; 모음부분(두덩뼈아래가지와 궁둥뼈가지에서 이는 부분)은 폐쇄신경, 궁둥뼈결절에서 이는 정강부분(hamstring part)은 정강신경 (tibial n., 궁둥신경의 정강갈래). 이유 — 발생학적으로 모음근무리와 뒤칸 넙다리뒤근육무리가 한 근육에 합쳐진 복합근이기 때문이다. 엉덩관절 굽힘까지 하는 갈래 — 넙다리곧은근 (rectus femoris m.).",
+   "explanation": "넓적다리는 ==칸 = 신경 = 작용==이 일대일로 맞아떨어지는 부위라 감별의 뼈대가 단순하다. 앞칸은 넙다리신경이 무릎을 펴고, 안쪽칸은 폐쇄신경이 다리를 모으며, 뒤칸은 정강신경이 무릎을 굽힌다. 그래서 예외만 따로 외우면 끝난다. **예외 셋**을 순서대로 보면 ① ==큰모음근==은 두 신경을 받는다 — 모음부분은 폐쇄신경, ==궁둥뼈결절에서 이는 정강부분은 정강신경==이다. 한 근육이 모음근무리와 넙다리뒤근육무리의 합체이기 때문이며, 그래서 모음근구멍(hiatus)이라는 구멍까지 이 근육에 생겨 넙다리동맥이 오금으로 넘어간다. ② ==두덩근==은 대개 넙다리신경 지배이고 폐쇄신경 가지를 함께 받기도 해, 앞칸과 안쪽칸의 경계에 걸친 근육으로 다룬다. ③ ==넙다리곧은근==만 두 관절을 지나 골반(아래앞엉덩뼈가시)에서 이는 탓에 무릎 폄뿐 아니라 엉덩관절 굽힘도 한다 — 나머지 세 넓은근은 넙다리뼈에서 일어나 무릎만 편다. 여기에 엉덩허리근의 지배 분리(엉덩근=넙다리신경, 큰허리근=L1–L3 앞가지 직접)를 얹으면 앞·안쪽칸의 신경 지도가 완성된다. 임상으로는 폐쇄신경이 골반 수술이나 분만 중 눌리면 다리를 모으지 못하고 넓적다리 안쪽 피부 감각이 떨어지며, 폐쇄구멍의 탈장에서 통증이 무릎 안쪽으로 퍼지는 하우십-롬베르크 징후가 같은 신경 경로로 설명된다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -9384,6 +9457,394 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-03",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "neck",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0030"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0037"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0032"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0044",
+    "anatomy-2026-0048",
+    "anatomy-2026-0355",
+    "anatomy-2026-0043",
+    "anatomy-2026-0017",
+    "anatomy-2026-0447",
+    "anatomy-2026-0356",
+    "anatomy-2026-0045",
+    "anatomy-2026-0050",
+    "anatomy-2026-0359"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-09-02",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "neck",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0030"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0037"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0032"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0044",
+    "anatomy-2026-0048",
+    "anatomy-2026-0355",
+    "anatomy-2026-0043",
+    "anatomy-2026-0017",
+    "anatomy-2026-0447",
+    "anatomy-2026-0356",
+    "anatomy-2026-0045",
+    "anatomy-2026-0050",
+    "anatomy-2026-0359"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-09-01",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "neck",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0030"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0037"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0032"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0044",
+    "anatomy-2026-0048",
+    "anatomy-2026-0355",
+    "anatomy-2026-0043",
+    "anatomy-2026-0017",
+    "anatomy-2026-0447",
+    "anatomy-2026-0356",
+    "anatomy-2026-0045",
+    "anatomy-2026-0050",
+    "anatomy-2026-0359"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0380",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0044",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-08-31",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0442"
+    ],
+    "branch": [
+     "anatomy-2026-0443"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0030"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0157",
+    "anatomy-2026-0162",
+    "anatomy-2026-0385",
+    "anatomy-2026-0154",
+    "anatomy-2026-0159",
+    "anatomy-2026-0043",
+    "anatomy-2026-0038",
+    "anatomy-2026-0161",
+    "anatomy-2026-0378",
+    "anatomy-2026-0398",
+    "anatomy-2026-0156",
+    "anatomy-2026-0377"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0004",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-30",
    "phase": "t1-prep",
