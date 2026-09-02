@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-09-02",
+ "generated": "2026-09-03",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -811,6 +811,71 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "body": "## 주행\n\n도해: `docs/assets/anatomy/diag-saphenous-veins-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0042`)\n\n| | 큰두렁정맥 great saphenous v. | 작은두렁정맥 small saphenous v. |\n|---|---|---|\n| 시작 | 발등정맥활 **안쪽** 끝 | 발등정맥활 **가쪽** 끝 |\n| 복사 | 안쪽복사 **앞** | 가쪽복사 **뒤** |\n| 경로 | 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 | 아킬레스힘줄 옆 → 종아리 뒤 정중선 |\n| 끝 | 두렁정맥구멍(넓은근막) → **넙다리정맥** | 종아리근막을 뚫고 → **오금정맥** |\n| 동반 신경 | 두렁신경 saphenous n. (무릎 아래부터) | 장딴지신경 sural n. |\n\n암기: **큰-안-앞 / 작-가-뒤**\n\n## 두렁정맥구멍 직전 지류\n\n얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. ·\n바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.)\n\n## 흐름과 판막\n\n```\n얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이)\n```\n\n판막이 이 **한 방향**만 허용하고, 장딴지근이 펌프가 된다.\n판막부전 → 역류 → **정맥류 varicose veins**(큰두렁계에 흔하다).\n\n## 동반 신경의 감각 영역\n\n| 신경 | 감각 영역 | 유래 |\n|---|---|---|\n| 두렁신경 | 종아리 안쪽 · 발 안쪽 | 넙다리신경의 감각가지 |\n| 장딴지신경 | 종아리 뒤가쪽 · 발 가쪽 | 정강신경 + 온종아리신경 교통가지 |\n\n## 임상\n\n- 안쪽복사 앞 큰두렁정맥 = 응급 **정맥절개(cut-down)** 자리.\n- 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 **이식편**.\n- 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경.\n- 장딴지신경은 **신경생검**에 자주 쓴다.\n\n## 실습 주의\n\n두 정맥과 짝 신경 모두 **얕은근막 안**에 있다. 피부만 벗기면 그대로 남는다."
+  },
+  {
+   "id": "anatomy-2026-0446",
+   "title": "넓적다리 앞·안쪽 위치 약도 — 근육과 넙다리삼각·모음근굴",
+   "region": "lower-limb",
+   "subregion": "anterior-thigh",
+   "layer": "multi",
+   "conceptStyle": "course-map",
+   "relations": [
+    "branches",
+    "passes-through",
+    "covers"
+   ],
+   "structureClasses": [
+    "muscle",
+    "artery",
+    "vein",
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-anterior-thigh-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차 실습주제 — 목삼각 / 넓적다리 앞·안쪽 / 종아리 앞 / 발등"
+    }
+   ],
+   "body": "## 약도가 보여주는 것\n\n도해: `docs/assets/anatomy/diag-anterior-thigh-labeled.svg` (패널 A 근육 / 패널 B 신경혈관)\n\n| 축 | 내용 |\n|---|---|\n| 넙다리삼각 | 경계 = ==샅고랑인대·넙다리빗근·긴모음근== · 안에서 가쪽→안쪽 ==N·A·V·(E)·L== |\n| 넙다리동맥 | 얕은가지 3 → ==깊은넙다리동맥==(안·가쪽 휘돌이 + 관통동맥 1–3) → 모음근굴 |\n| 모음근굴 | 지붕 = 넙다리빗근 · 내용 = 동·정맥 + ==두렁신경== · 출구 = ==모음근구멍==(큰모음근) → 오금 |\n| 지배 | 앞칸 = ==넙다리신경== / 안쪽칸 = ==폐쇄신경== / 이중 = ==두덩근·큰모음근== |\n\n- 두렁신경 = 굴은 지나지만 ==모음근구멍은 통과하지 않는다== — 무릎 안쪽에서 얕게 나옴.\n- ==안쪽넙다리휘돌이동맥== = 넙다리뼈머리 주 혈행 — 목 골절에서 무혈성괴사 축.\n- 임상: 넙다리동맥 = ==샅고랑인대 중간점== 아래 촉지·채혈·더듬자 삽입(6회차 응용과제).\n- 거위발 = 빗근 + 두덩정강근 + 반힘줄근."
+  },
+  {
+   "id": "anatomy-2026-0447",
+   "title": "종아리 앞·가쪽칸·발등 위치 약도 — 근육과 온종아리신경·앞정강동맥",
+   "region": "lower-limb",
+   "subregion": "anterior-leg",
+   "layer": "multi",
+   "conceptStyle": "course-map",
+   "relations": [
+    "branches",
+    "passes-through",
+    "accompanies"
+   ],
+   "structureClasses": [
+    "muscle",
+    "artery",
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-anterior-leg-foot-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차 실습주제 — 목삼각 / 넓적다리 앞·안쪽 / 종아리 앞 / 발등"
+    }
+   ],
+   "body": "## 약도가 보여주는 것\n\n도해: `docs/assets/anatomy/diag-anterior-leg-foot-labeled.svg` (패널 A 근육 / 패널 B 신경혈관)\n\n| 축 | 내용 |\n|---|---|\n| 갈림 지점 | 온종아리신경이 ==종아리뼈목==을 감아돌며 얕은·깊은종아리신경으로 — 압박마비 최호발 |\n| 앞칸 4근육 | 앞정강근·긴발가락폄근·긴엄지폄근·셋째종아리근 = ==깊은종아리신경== |\n| 가쪽칸 2근육 | 긴·짧은종아리근(가쪽복사 뒤로) = ==얕은종아리신경== · 작용 = 가쪽번짐 |\n| 앞정강동맥 | 오금동맥 가지 → ==뼈사이막 위 구멍== 통과 → 앞칸 하행(신경이 가쪽 동행) |\n| 발등 | ==발등동맥==(긴엄지폄근힘줄 가쪽 촉지) → 활꼴동맥 + ==깊은발바닥가지==(발바닥활 완성) |\n\n- ==첫째 발가락사이 감각 = 깊은종아리신경의 유일한 피부영역== — 태깅·임상 단골.\n- 발처짐 foot drop = 온종아리신경 손상(종아리뼈목 골절·압박).\n- 폄근지지띠(위·아래) 밑을 동맥·신경·힘줄이 함께 통과."
   },
   {
    "id": "anatomy-2026-0001",

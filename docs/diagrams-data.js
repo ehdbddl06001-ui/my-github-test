@@ -2,9 +2,33 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-09-03",
- "count": 78,
- "groups": 40,
+ "count": 80,
+ "groups": 42,
  "items": [
+  {
+   "file": "diag-anterior-thigh-labeled.svg",
+   "base": "diag-anterior-thigh",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "넓적다리 앞·안쪽 약도",
+   "date": "2026-09-03",
+   "bytes": 17446
+  },
+  {
+   "file": "diag-anterior-leg-foot-labeled.svg",
+   "base": "diag-anterior-leg-foot",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "종아리 앞·가쪽칸과 발등 약도",
+   "date": "2026-09-03",
+   "bytes": 15178
+  },
   {
    "file": "diag-infratemporal-nerve-labeled.svg",
    "base": "diag-infratemporal-nerve",
@@ -27,7 +51,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "5회차 · 가슴·머리",
    "title": "관자아래부위 신경 약도 퀴즈판",
    "date": "2026-08-30",
-   "bytes": 13699
+   "bytes": 13873
   },
   {
    "file": "diag-infratemporal-artery-labeled.svg",
@@ -51,7 +75,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "5회차 · 가슴·머리",
    "title": "관자아래부위 동맥 약도 퀴즈판",
    "date": "2026-08-30",
-   "bytes": 16383
+   "bytes": 16600
   },
   {
    "file": "diag-intercostal-layers-labeled.svg",
@@ -63,7 +87,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "4회차 · 가슴·머리",
    "title": "갈비사이공간의 세 근육층과 신경혈관다발",
    "date": "2026-08-25",
-   "bytes": 14713
+   "bytes": 14886
   },
   {
    "file": "diag-intercostal-layers-quiz.svg",
@@ -75,7 +99,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "4회차 · 가슴·머리",
    "title": "갈비사이공간 도해의 퀴즈판",
    "date": "2026-08-25",
-   "bytes": 11238
+   "bytes": 11402
   },
   {
    "file": "diag-leg-posterior-layers-labeled.svg",
@@ -87,7 +111,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "3회차 · 등·다리",
    "title": "종아리 뒤칸",
    "date": "2026-08-24",
-   "bytes": 17546
+   "bytes": 17757
   },
   {
    "file": "diag-leg-posterior-layers-quiz.svg",
@@ -99,295 +123,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "3회차 · 등·다리",
    "title": "종아리 뒤칸 퀴즈판",
    "date": "2026-08-24",
-   "bytes": 12281
-  },
-  {
-   "file": "tree-s01-vessel-labeled.svg",
-   "base": "tree-s01-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "다리의 얕은정맥과 깊은정맥",
-   "date": "2026-08-19",
-   "bytes": 5243
-  },
-  {
-   "file": "tree-s01-vessel-quiz.svg",
-   "base": "tree-s01-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "다리의 얕은정맥과 깊은정맥",
-   "date": "2026-08-19",
-   "bytes": 5022
-  },
-  {
-   "file": "tree-s01-nerve-labeled.svg",
-   "base": "tree-s01-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "척수신경에서 피부신경까지",
-   "date": "2026-08-19",
-   "bytes": 9686
-  },
-  {
-   "file": "tree-s01-nerve-quiz.svg",
-   "base": "tree-s01-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "척수신경에서 피부신경까지",
-   "date": "2026-08-19",
-   "bytes": 9051
-  },
-  {
-   "file": "tree-s01-bundle-labeled.svg",
-   "base": "tree-s01-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 5262
-  },
-  {
-   "file": "tree-s01-bundle-quiz.svg",
-   "base": "tree-s01-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 5529
-  },
-  {
-   "file": "diag-skin-fascia-layers-labeled.svg",
-   "base": "diag-skin-fascia-layers",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "피부벗기기 절개선과 피부·근막 층 구조",
-   "date": "2026-08-19",
-   "bytes": 14101
-  },
-  {
-   "file": "diag-skin-fascia-layers-quiz.svg",
-   "base": "diag-skin-fascia-layers",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "피부벗기기 절개선·층 구조 태깅 연습판",
-   "date": "2026-08-19",
-   "bytes": 10086
-  },
-  {
-   "file": "diag-saphenous-veins-labeled.svg",
-   "base": "diag-saphenous-veins",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "다리 얕은정맥(큰두렁정맥·작은두렁정맥)과 동반 피부신경",
-   "date": "2026-08-19",
-   "bytes": 13782
-  },
-  {
-   "file": "diag-saphenous-veins-quiz.svg",
-   "base": "diag-saphenous-veins",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "다리 얕은정맥 태깅 연습판",
-   "date": "2026-08-19",
-   "bytes": 9836
-  },
-  {
-   "file": "diag-posterior-cutaneous-nerves-labeled.svg",
-   "base": "diag-posterior-cutaneous-nerves",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "볼기와 다리 뒤쪽의 피부신경",
-   "date": "2026-08-19",
-   "bytes": 12826
-  },
-  {
-   "file": "diag-posterior-cutaneous-nerves-quiz.svg",
-   "base": "diag-posterior-cutaneous-nerves",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "볼기·다리 뒤쪽 피부신경 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 8518
-  },
-  {
-   "file": "diag-lumbar-puncture-labeled.svg",
-   "base": "diag-lumbar-puncture",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "허리천자와 꼬리마취",
-   "date": "2026-08-19",
-   "bytes": 12157
-  },
-  {
-   "file": "diag-dorsal-rami-labeled.svg",
-   "base": "diag-dorsal-rami",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "척수신경 앞가지·뒤가지 분기와 등·볼기 피부신경",
-   "date": "2026-08-19",
-   "bytes": 14075
-  },
-  {
-   "file": "diag-dorsal-rami-quiz.svg",
-   "base": "diag-dorsal-rami",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "척수신경 앞가지·뒤가지 분기와 피부신경 태깅 연습판",
-   "date": "2026-08-19",
-   "bytes": 10616
-  },
-  {
-   "file": "diag-back-layers-rami-labeled.svg",
-   "base": "diag-back-layers-rami",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "등의 층 구조와 척수신경 앞가지·뒤가지",
-   "date": "2026-08-19",
-   "bytes": 12373
-  },
-  {
-   "file": "diag-back-layers-rami-quiz.svg",
-   "base": "diag-back-layers-rami",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 1,
-   "unit": "1회차 · 등·다리",
-   "title": "등의 층과 척수신경 두 가지 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 8562
-  },
-  {
-   "file": "tree-s02-vessel-labeled.svg",
-   "base": "tree-s02-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등·볼기의 혈관 계보",
-   "date": "2026-08-19",
-   "bytes": 6596
-  },
-  {
-   "file": "tree-s02-vessel-quiz.svg",
-   "base": "tree-s02-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등·볼기의 혈관 계보",
-   "date": "2026-08-19",
-   "bytes": 6312
-  },
-  {
-   "file": "tree-s02-nerve-labeled.svg",
-   "base": "tree-s02-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등·볼기의 신경 계보",
-   "date": "2026-08-19",
-   "bytes": 10888
-  },
-  {
-   "file": "tree-s02-nerve-quiz.svg",
-   "base": "tree-s02-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등·볼기의 신경 계보",
-   "date": "2026-08-19",
-   "bytes": 10614
-  },
-  {
-   "file": "tree-s02-bundle-labeled.svg",
-   "base": "tree-s02-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 7977
-  },
-  {
-   "file": "tree-s02-bundle-quiz.svg",
-   "base": "tree-s02-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 7515
-  },
-  {
-   "file": "diag-suboccipital-labeled.svg",
-   "base": "diag-suboccipital",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "뒤통수밑삼각",
-   "date": "2026-08-19",
-   "bytes": 11200
+   "bytes": 12443
   },
   {
    "file": "diag-suboccipital-quiz.svg",
@@ -399,7 +135,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "2회차 · 등·다리",
    "title": "뒤통수밑삼각",
    "date": "2026-08-19",
-   "bytes": 9116
+   "bytes": 9207
   },
   {
    "file": "diag-popliteal-labeled.svg",
@@ -411,7 +147,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "2회차 · 등·다리",
    "title": "다리오금",
    "date": "2026-08-19",
-   "bytes": 14609
+   "bytes": 14746
   },
   {
    "file": "diag-popliteal-quiz.svg",
@@ -423,247 +159,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "2회차 · 등·다리",
    "title": "다리오금",
    "date": "2026-08-19",
-   "bytes": 11436
-  },
-  {
-   "file": "diag-gluteal-foramina-labeled.svg",
-   "base": "diag-gluteal-foramina",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "큰궁둥구멍 통과 구조물",
-   "date": "2026-08-19",
-   "bytes": 11592
-  },
-  {
-   "file": "diag-gluteal-foramina-quiz.svg",
-   "base": "diag-gluteal-foramina",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "큰궁둥구멍 통과 구조물 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 7549
-  },
-  {
-   "file": "diag-back-layers-labeled.svg",
-   "base": "diag-back-layers",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등 근육 3층과 신경지배",
-   "date": "2026-08-19",
-   "bytes": 11504
-  },
-  {
-   "file": "diag-back-layers-quiz.svg",
-   "base": "diag-back-layers",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "등 근육 3층 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 9380
-  },
-  {
-   "file": "tree-s03-vessel-labeled.svg",
-   "base": "tree-s03-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "빗장밑동맥과 오금동맥",
-   "date": "2026-08-19",
-   "bytes": 11497
-  },
-  {
-   "file": "tree-s03-vessel-quiz.svg",
-   "base": "tree-s03-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "빗장밑동맥과 오금동맥",
-   "date": "2026-08-19",
-   "bytes": 10398
-  },
-  {
-   "file": "tree-s03-nerve-labeled.svg",
-   "base": "tree-s03-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "궁둥신경에서 발까지",
-   "date": "2026-08-19",
-   "bytes": 6728
-  },
-  {
-   "file": "tree-s03-nerve-quiz.svg",
-   "base": "tree-s03-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "궁둥신경에서 발까지",
-   "date": "2026-08-19",
-   "bytes": 6575
-  },
-  {
-   "file": "tree-s03-bundle-labeled.svg",
-   "base": "tree-s03-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 6457
-  },
-  {
-   "file": "tree-s03-bundle-quiz.svg",
-   "base": "tree-s03-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 5997
-  },
-  {
-   "file": "diag-scapular-spaces-labeled.svg",
-   "base": "diag-scapular-spaces",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "어깨뼈부위 3공간",
-   "date": "2026-08-19",
-   "bytes": 13399
-  },
-  {
-   "file": "diag-scapular-spaces-quiz.svg",
-   "base": "diag-scapular-spaces",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "어깨뼈부위 3공간 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 7196
-  },
-  {
-   "file": "diag-popliteal-fossa-labeled.svg",
-   "base": "diag-popliteal-fossa",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "다리오금",
-   "date": "2026-08-19",
-   "bytes": 13756
-  },
-  {
-   "file": "diag-popliteal-fossa-quiz.svg",
-   "base": "diag-popliteal-fossa",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "다리오금 태깅 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 8075
-  },
-  {
-   "file": "tree-s04-vessel-labeled.svg",
-   "base": "tree-s04-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "얼굴·가슴벽의 동맥과 정맥",
-   "date": "2026-08-19",
-   "bytes": 14417
-  },
-  {
-   "file": "tree-s04-vessel-quiz.svg",
-   "base": "tree-s04-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "얼굴·가슴벽의 동맥과 정맥",
-   "date": "2026-08-19",
-   "bytes": 13219
-  },
-  {
-   "file": "tree-s04-nerve-labeled.svg",
-   "base": "tree-s04-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "얼굴의 두 신경",
-   "date": "2026-08-19",
-   "bytes": 11461
-  },
-  {
-   "file": "tree-s04-nerve-quiz.svg",
-   "base": "tree-s04-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "얼굴의 두 신경",
-   "date": "2026-08-19",
-   "bytes": 9549
-  },
-  {
-   "file": "tree-s04-bundle-labeled.svg",
-   "base": "tree-s04-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 9053
-  },
-  {
-   "file": "tree-s04-bundle-quiz.svg",
-   "base": "tree-s04-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 4,
-   "unit": "4회차 · 가슴·머리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 8024
+   "bytes": 11551
   },
   {
    "file": "tree-s05-vessel-labeled.svg",
@@ -674,8 +170,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "대동맥활·심장동맥과 위턱동맥",
-   "date": "2026-08-19",
-   "bytes": 18467
+   "date": "2026-08-18",
+   "bytes": 18657
   },
   {
    "file": "tree-s05-vessel-quiz.svg",
@@ -686,8 +182,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "대동맥활·심장동맥과 위턱동맥",
-   "date": "2026-08-19",
-   "bytes": 16477
+   "date": "2026-08-18",
+   "bytes": 16636
   },
   {
    "file": "tree-s05-nerve-labeled.svg",
@@ -698,8 +194,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "가슴안과 관자아래우묵의 신경",
-   "date": "2026-08-19",
-   "bytes": 15276
+   "date": "2026-08-18",
+   "bytes": 15428
   },
   {
    "file": "tree-s05-nerve-quiz.svg",
@@ -710,8 +206,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "가슴안과 관자아래우묵의 신경",
-   "date": "2026-08-19",
-   "bytes": 12503
+   "date": "2026-08-18",
+   "bytes": 12622
   },
   {
    "file": "tree-s05-bundle-labeled.svg",
@@ -722,8 +218,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 13974
+   "date": "2026-08-18",
+   "bytes": 14112
   },
   {
    "file": "tree-s05-bundle-quiz.svg",
@@ -734,92 +230,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 5,
    "unit": "5회차 · 가슴·머리",
    "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 11235
-  },
-  {
-   "file": "tree-s06-vessel-labeled.svg",
-   "base": "tree-s06-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "바깥목동맥과 넙다리동맥",
-   "date": "2026-08-19",
-   "bytes": 14293
-  },
-  {
-   "file": "tree-s06-vessel-quiz.svg",
-   "base": "tree-s06-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "바깥목동맥과 넙다리동맥",
-   "date": "2026-08-19",
-   "bytes": 13907
-  },
-  {
-   "file": "tree-s06-nerve-labeled.svg",
-   "base": "tree-s06-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "목·다리 앞의 신경 계보",
-   "date": "2026-08-19",
-   "bytes": 11867
-  },
-  {
-   "file": "tree-s06-nerve-quiz.svg",
-   "base": "tree-s06-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "목·다리 앞의 신경 계보",
-   "date": "2026-08-19",
-   "bytes": 11178
-  },
-  {
-   "file": "tree-s06-bundle-labeled.svg",
-   "base": "tree-s06-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 8900
-  },
-  {
-   "file": "tree-s06-bundle-quiz.svg",
-   "base": "tree-s06-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 7977
-  },
-  {
-   "file": "diag-neck-triangles-labeled.svg",
-   "base": "diag-neck-triangles",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 6,
-   "unit": "6회차 · 목·다리",
-   "title": "목의 삼각",
-   "date": "2026-08-19",
-   "bytes": 11813
+   "date": "2026-08-18",
+   "bytes": 11342
   },
   {
    "file": "tree-s07-vessel-labeled.svg",
@@ -830,8 +242,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "목뿌리·종아리의 동맥과 정맥",
-   "date": "2026-08-19",
-   "bytes": 9003
+   "date": "2026-08-17",
+   "bytes": 9091
   },
   {
    "file": "tree-s07-vessel-quiz.svg",
@@ -842,8 +254,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "목뿌리·종아리의 동맥과 정맥",
-   "date": "2026-08-19",
-   "bytes": 7992
+   "date": "2026-08-17",
+   "bytes": 8067
   },
   {
    "file": "tree-s07-nerve-labeled.svg",
@@ -854,8 +266,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "목뿌리·발목의 신경",
-   "date": "2026-08-19",
-   "bytes": 9647
+   "date": "2026-08-17",
+   "bytes": 9742
   },
   {
    "file": "tree-s07-nerve-quiz.svg",
@@ -866,8 +278,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "목뿌리·발목의 신경",
-   "date": "2026-08-19",
-   "bytes": 7881
+   "date": "2026-08-17",
+   "bytes": 7956
   },
   {
    "file": "tree-s07-bundle-labeled.svg",
@@ -878,8 +290,452 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 8672
+   "date": "2026-08-17",
+   "bytes": 8756
+  },
+  {
+   "file": "tree-s01-vessel-labeled.svg",
+   "base": "tree-s01-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "다리의 얕은정맥과 깊은정맥",
+   "date": "2026-08-16",
+   "bytes": 5295
+  },
+  {
+   "file": "tree-s01-vessel-quiz.svg",
+   "base": "tree-s01-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "다리의 얕은정맥과 깊은정맥",
+   "date": "2026-08-16",
+   "bytes": 5069
+  },
+  {
+   "file": "tree-s01-nerve-labeled.svg",
+   "base": "tree-s01-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "척수신경에서 피부신경까지",
+   "date": "2026-08-16",
+   "bytes": 9788
+  },
+  {
+   "file": "tree-s01-nerve-quiz.svg",
+   "base": "tree-s01-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "척수신경에서 피부신경까지",
+   "date": "2026-08-16",
+   "bytes": 9138
+  },
+  {
+   "file": "tree-s01-bundle-labeled.svg",
+   "base": "tree-s01-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 5313
+  },
+  {
+   "file": "tree-s01-bundle-quiz.svg",
+   "base": "tree-s01-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 5580
+  },
+  {
+   "file": "diag-skin-fascia-layers-labeled.svg",
+   "base": "diag-skin-fascia-layers",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "피부벗기기 절개선과 피부·근막 층 구조",
+   "date": "2026-08-16",
+   "bytes": 14275
+  },
+  {
+   "file": "diag-skin-fascia-layers-quiz.svg",
+   "base": "diag-skin-fascia-layers",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "피부벗기기 절개선·층 구조 태깅 연습판",
+   "date": "2026-08-16",
+   "bytes": 10216
+  },
+  {
+   "file": "diag-saphenous-veins-labeled.svg",
+   "base": "diag-saphenous-veins",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "다리 얕은정맥(큰두렁정맥·작은두렁정맥)과 동반 피부신경",
+   "date": "2026-08-16",
+   "bytes": 13965
+  },
+  {
+   "file": "diag-saphenous-veins-quiz.svg",
+   "base": "diag-saphenous-veins",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "다리 얕은정맥 태깅 연습판",
+   "date": "2026-08-16",
+   "bytes": 9988
+  },
+  {
+   "file": "diag-dorsal-rami-labeled.svg",
+   "base": "diag-dorsal-rami",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "척수신경 앞가지·뒤가지 분기와 등·볼기 피부신경",
+   "date": "2026-08-16",
+   "bytes": 14271
+  },
+  {
+   "file": "diag-dorsal-rami-quiz.svg",
+   "base": "diag-dorsal-rami",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "척수신경 앞가지·뒤가지 분기와 피부신경 태깅 연습판",
+   "date": "2026-08-16",
+   "bytes": 10773
+  },
+  {
+   "file": "tree-s02-vessel-labeled.svg",
+   "base": "tree-s02-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등·볼기의 혈관 계보",
+   "date": "2026-08-16",
+   "bytes": 6662
+  },
+  {
+   "file": "tree-s02-vessel-quiz.svg",
+   "base": "tree-s02-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등·볼기의 혈관 계보",
+   "date": "2026-08-16",
+   "bytes": 6371
+  },
+  {
+   "file": "tree-s02-nerve-labeled.svg",
+   "base": "tree-s02-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등·볼기의 신경 계보",
+   "date": "2026-08-16",
+   "bytes": 11002
+  },
+  {
+   "file": "tree-s02-nerve-quiz.svg",
+   "base": "tree-s02-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등·볼기의 신경 계보",
+   "date": "2026-08-16",
+   "bytes": 10717
+  },
+  {
+   "file": "tree-s02-bundle-labeled.svg",
+   "base": "tree-s02-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 8057
+  },
+  {
+   "file": "tree-s02-bundle-quiz.svg",
+   "base": "tree-s02-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 7586
+  },
+  {
+   "file": "tree-s03-vessel-labeled.svg",
+   "base": "tree-s03-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "빗장밑동맥과 오금동맥",
+   "date": "2026-08-16",
+   "bytes": 11616
+  },
+  {
+   "file": "tree-s03-vessel-quiz.svg",
+   "base": "tree-s03-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "빗장밑동맥과 오금동맥",
+   "date": "2026-08-16",
+   "bytes": 10497
+  },
+  {
+   "file": "tree-s03-nerve-labeled.svg",
+   "base": "tree-s03-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "궁둥신경에서 발까지",
+   "date": "2026-08-16",
+   "bytes": 6797
+  },
+  {
+   "file": "tree-s03-nerve-quiz.svg",
+   "base": "tree-s03-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "궁둥신경에서 발까지",
+   "date": "2026-08-16",
+   "bytes": 6638
+  },
+  {
+   "file": "tree-s03-bundle-labeled.svg",
+   "base": "tree-s03-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 6520
+  },
+  {
+   "file": "tree-s03-bundle-quiz.svg",
+   "base": "tree-s03-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 6052
+  },
+  {
+   "file": "tree-s04-vessel-labeled.svg",
+   "base": "tree-s04-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "얼굴·가슴벽의 동맥과 정맥",
+   "date": "2026-08-16",
+   "bytes": 14565
+  },
+  {
+   "file": "tree-s04-vessel-quiz.svg",
+   "base": "tree-s04-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "얼굴·가슴벽의 동맥과 정맥",
+   "date": "2026-08-16",
+   "bytes": 13346
+  },
+  {
+   "file": "tree-s04-nerve-labeled.svg",
+   "base": "tree-s04-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "얼굴의 두 신경",
+   "date": "2026-08-16",
+   "bytes": 11575
+  },
+  {
+   "file": "tree-s04-nerve-quiz.svg",
+   "base": "tree-s04-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "얼굴의 두 신경",
+   "date": "2026-08-16",
+   "bytes": 9640
+  },
+  {
+   "file": "tree-s04-bundle-labeled.svg",
+   "base": "tree-s04-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 9144
+  },
+  {
+   "file": "tree-s04-bundle-quiz.svg",
+   "base": "tree-s04-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 4,
+   "unit": "4회차 · 가슴·머리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 8099
+  },
+  {
+   "file": "tree-s06-vessel-labeled.svg",
+   "base": "tree-s06-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "바깥목동맥과 넙다리동맥",
+   "date": "2026-08-16",
+   "bytes": 14440
+  },
+  {
+   "file": "tree-s06-vessel-quiz.svg",
+   "base": "tree-s06-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "바깥목동맥과 넙다리동맥",
+   "date": "2026-08-16",
+   "bytes": 14042
+  },
+  {
+   "file": "tree-s06-nerve-labeled.svg",
+   "base": "tree-s06-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "목·다리 앞의 신경 계보",
+   "date": "2026-08-16",
+   "bytes": 11989
+  },
+  {
+   "file": "tree-s06-nerve-quiz.svg",
+   "base": "tree-s06-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "목·다리 앞의 신경 계보",
+   "date": "2026-08-16",
+   "bytes": 11285
+  },
+  {
+   "file": "tree-s06-bundle-labeled.svg",
+   "base": "tree-s06-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 8989
+  },
+  {
+   "file": "tree-s06-bundle-quiz.svg",
+   "base": "tree-s06-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 8052
+  },
+  {
+   "file": "diag-neck-triangles-labeled.svg",
+   "base": "diag-neck-triangles",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "목의 삼각",
+   "date": "2026-08-16",
+   "bytes": 11951
   },
   {
    "file": "tree-s07-bundle-quiz.svg",
@@ -890,8 +746,176 @@ window.MEDKOS_DIAGRAMS = {
    "session": 7,
    "unit": "7회차 · 목·다리",
    "title": "함께 지나는 것",
-   "date": "2026-08-19",
-   "bytes": 7542
+   "date": "2026-08-16",
+   "bytes": 7613
+  },
+  {
+   "file": "diag-posterior-cutaneous-nerves-labeled.svg",
+   "base": "diag-posterior-cutaneous-nerves",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "볼기와 다리 뒤쪽의 피부신경",
+   "date": "2026-08-14",
+   "bytes": 12979
+  },
+  {
+   "file": "diag-posterior-cutaneous-nerves-quiz.svg",
+   "base": "diag-posterior-cutaneous-nerves",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "볼기·다리 뒤쪽 피부신경 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 8624
+  },
+  {
+   "file": "diag-lumbar-puncture-labeled.svg",
+   "base": "diag-lumbar-puncture",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "허리천자와 꼬리마취",
+   "date": "2026-08-14",
+   "bytes": 12313
+  },
+  {
+   "file": "diag-back-layers-rami-labeled.svg",
+   "base": "diag-back-layers-rami",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "등의 층 구조와 척수신경 앞가지·뒤가지",
+   "date": "2026-08-14",
+   "bytes": 12527
+  },
+  {
+   "file": "diag-back-layers-rami-quiz.svg",
+   "base": "diag-back-layers-rami",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 1,
+   "unit": "1회차 · 등·다리",
+   "title": "등의 층과 척수신경 두 가지 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 8673
+  },
+  {
+   "file": "diag-suboccipital-labeled.svg",
+   "base": "diag-suboccipital",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "뒤통수밑삼각",
+   "date": "2026-08-14",
+   "bytes": 11309
+  },
+  {
+   "file": "diag-gluteal-foramina-labeled.svg",
+   "base": "diag-gluteal-foramina",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "큰궁둥구멍 통과 구조물",
+   "date": "2026-08-14",
+   "bytes": 11738
+  },
+  {
+   "file": "diag-gluteal-foramina-quiz.svg",
+   "base": "diag-gluteal-foramina",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "큰궁둥구멍 통과 구조물 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 7614
+  },
+  {
+   "file": "diag-back-layers-labeled.svg",
+   "base": "diag-back-layers",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등 근육 3층과 신경지배",
+   "date": "2026-08-14",
+   "bytes": 11662
+  },
+  {
+   "file": "diag-back-layers-quiz.svg",
+   "base": "diag-back-layers",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "등 근육 3층 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 9485
+  },
+  {
+   "file": "diag-scapular-spaces-labeled.svg",
+   "base": "diag-scapular-spaces",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "어깨뼈부위 3공간",
+   "date": "2026-08-14",
+   "bytes": 13573
+  },
+  {
+   "file": "diag-scapular-spaces-quiz.svg",
+   "base": "diag-scapular-spaces",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "어깨뼈부위 3공간 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 7264
+  },
+  {
+   "file": "diag-popliteal-fossa-labeled.svg",
+   "base": "diag-popliteal-fossa",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "다리오금",
+   "date": "2026-08-14",
+   "bytes": 13927
+  },
+  {
+   "file": "diag-popliteal-fossa-quiz.svg",
+   "base": "diag-popliteal-fossa",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "다리오금 태깅 퀴즈판",
+   "date": "2026-08-14",
+   "bytes": 8172
   },
   {
    "file": "diag-pelvic-diaphragm-labeled.svg",
@@ -902,8 +926,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "골반가로막",
-   "date": "2026-08-19",
-   "bytes": 10221
+   "date": "2026-08-12",
+   "bytes": 10338
   },
   {
    "file": "diag-pelvic-diaphragm-quiz.svg",
@@ -914,8 +938,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "골반가로막 spotter 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 8201
+   "date": "2026-08-12",
+   "bytes": 8297
   },
   {
    "file": "diag-internal-iliac-labeled.svg",
@@ -926,8 +950,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "속엉덩동맥 분지",
-   "date": "2026-08-19",
-   "bytes": 14315
+   "date": "2026-08-12",
+   "bytes": 14483
   },
   {
    "file": "diag-internal-iliac-quiz.svg",
@@ -938,8 +962,8 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "속엉덩동맥 분지 spotter 퀴즈판",
-   "date": "2026-08-19",
-   "bytes": 10683
+   "date": "2026-08-12",
+   "bytes": 10808
   }
  ]
 };
