@@ -1,10 +1,34 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
- "generated": "2026-08-30",
- "count": 78,
- "groups": 40,
+ "generated": "2026-09-03",
+ "count": 80,
+ "groups": 42,
  "items": [
+  {
+   "file": "diag-anterior-thigh-labeled.svg",
+   "base": "diag-anterior-thigh",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "넓적다리 앞·안쪽 약도",
+   "date": "2026-09-03",
+   "bytes": 17446
+  },
+  {
+   "file": "diag-anterior-leg-foot-labeled.svg",
+   "base": "diag-anterior-leg-foot",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 6,
+   "unit": "6회차 · 목·다리",
+   "title": "종아리 앞·가쪽칸과 발등 약도",
+   "date": "2026-09-03",
+   "bytes": 15178
+  },
   {
    "file": "diag-infratemporal-nerve-labeled.svg",
    "base": "diag-infratemporal-nerve",

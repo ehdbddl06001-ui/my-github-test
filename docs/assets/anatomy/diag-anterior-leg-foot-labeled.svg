@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 720" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="종아리 앞·가쪽칸과 발등 약도 — 근육 패널과 온종아리신경·앞정강동맥 주행 패널. 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn, Lane A). 오른쪽 종아리·발등 앞면, 두 패널(근육 / 신경혈관).
+       근거: 6회차 실습영상 §Leg(13:20-29:38)·§Foot(0:00-5:42) + 인정 교재 표준. 카데바 트레이싱 아님.
+       핵심 ① 온종아리신경이 종아리뼈목을 감아돌아 얕은·깊은종아리신경으로 갈라짐(★)
+             ② 앞정강동맥 = 뼈사이막 위 구멍 통과 → 앞칸 하행 → 발등동맥(박동 촉진 ★)
+             ③ 앞칸 4근육 = 깊은종아리신경 / 가쪽칸 2근육 = 얕은종아리신경
+             ④ 첫째 발가락사이 감각 = 깊은종아리신경(태깅·임상 ★) -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="720" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">종아리 앞·가쪽칸과 발등 약도 — 근육과 신경혈관 주행
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">anterior/lateral leg &amp; dorsum of foot</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 오른쪽 종아리·발등 앞면 · 근거: 6회차 실습영상 §Leg·§Foot</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">동맥 <tspan fill="#e0645f">빨강</tspan> · 신경 <tspan fill="#9cc3ff">파랑</tspan> · 지배: <tspan fill="#9cc3ff">■ 깊은종아리신경(앞칸)</tspan> / <tspan fill="#f0b56b">■ 얕은종아리신경(가쪽칸)</tspan> · ★ = 태깅·임상 빈출</text>
+  <text x="20" y="86" fill="#5d6f83" font-size="10">← 가쪽 lateral   |   안쪽 medial →</text>
+
+  <!-- ================================ 패널 A: 근육 ================================ -->
+  <rect x="24" y="100" width="400" height="588" fill="none" stroke="#26374c" stroke-width="1.5"/>
+  <text x="36" y="118" fill="#e6edf3" font-size="12" class="kr">A. 근육 — 앞칸 4 + 가쪽칸 2 + 발등</text>
+
+  <!-- 정강뼈(안쪽) · 종아리뼈(가쪽) -->
+  <path d="M 236,140 L 286,140 L 278,470 L 244,470 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="262" y="200" fill="#7b8ea3" font-size="9.5" text-anchor="middle" class="kr">정강뼈</text>
+  <text x="262" y="212" fill="#7b8ea3" font-size="8.5" text-anchor="middle">tibia</text>
+  <ellipse cx="128" cy="158" rx="15" ry="12" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 120,172 L 138,172 L 136,470 L 124,470 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="86" y="150" fill="#eab308" font-size="9.5" class="kr">종아리뼈머리·목 ★</text>
+  <line x1="112" y1="152" x2="122" y2="158" stroke="#eab308" stroke-width="1"/>
+  <text x="60" y="196" fill="#7b8ea3" font-size="8.5">종아리뼈 fibula</text>
+  <line x1="98" y1="192" x2="124" y2="200" stroke="#7b8ea3" stroke-width="1"/>
+
+  <!-- 가쪽칸: 긴·짧은종아리근 -->
+  <path d="M 106,180 L 122,178 L 116,400 L 100,396 Z" fill="#4a5a45" stroke="#5d7355" stroke-width="1.5"/>
+  <path d="M 100,300 L 114,302 L 112,452 L 96,448 Z" fill="#3d4c3a" stroke="#5d7355" stroke-width="1.5"/>
+  <!-- 앞칸: TA(정강뼈 가쪽), EDL(가쪽), EHL(둘 사이 깊이 → 아래에서 표층) -->
+  <path d="M 196,166 L 232,164 L 226,440 L 206,452 Z" fill="#3f5872" stroke="#4a6076" stroke-width="1.5"/>
+  <path d="M 148,170 L 184,168 L 178,430 L 158,436 Z" fill="#33465e" stroke="#4a6076" stroke-width="1.5"/>
+  <path d="M 168,300 L 196,300 L 192,452 L 174,452 Z" fill="#2c3d54" stroke="#41576f" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <!-- 셋째종아리근 (EDL 아래 연속) -->
+  <path d="M 158,436 L 176,432 L 160,486 L 148,480 Z" fill="#2c3d54" stroke="#41576f" stroke-width="1.2"/>
+
+  <!-- 폄근지지띠 2 -->
+  <path d="M 108,472 L 292,458 L 292,474 L 108,488 Z" fill="#4a4030" stroke="#6b5c44" stroke-width="1.5"/>
+  <path d="M 116,510 L 200,506 L 286,530 L 284,546 L 200,522 L 118,526 Z" fill="#4a4030" stroke="#6b5c44" stroke-width="1.5"/>
+
+  <!-- 발 윤곽 + 발등 근육 -->
+  <path d="M 112,530 C 96,570 92,606 108,632 L 320,668 C 344,668 352,648 336,632 L 300,600 C 280,560 268,540 262,522"
+        fill="none" stroke="#31445c" stroke-width="2"/>
+  <path d="M 150,560 L 186,556 L 262,620 L 240,636 Z" fill="#33465e" stroke="#4a6076" stroke-width="1.2"/>
+  <!-- 발가락으로 가는 힘줄 -->
+  <path d="M 168,470 L 190,540 L 268,624 M 222,452 L 250,540 L 306,622 M 108,480 L 128,540 L 150,600"
+        fill="none" stroke="#4a6076" stroke-width="1.8"/>
+
+  <!-- 근육 라벨 (오른쪽 열) -->
+  <text x="318" y="252" fill="#c3d2e2" font-size="10" class="kr">앞정강근 ★</text>
+  <text x="318" y="264" fill="#8fa5bd" font-size="8.5">tibialis anterior</text>
+  <circle cx="312" cy="248" r="3.5" fill="#9cc3ff"/>
+  <line x1="316" y1="256" x2="230" y2="270" stroke="#6f8299" stroke-width="1"/>
+  <text x="318" y="278" fill="#93a4b7" font-size="8">→ 안쪽쐐기뼈·첫째발허리뼈</text>
+
+  <text x="318" y="330" fill="#c3d2e2" font-size="10" class="kr">긴엄지폄근</text>
+  <text x="318" y="342" fill="#8fa5bd" font-size="8.5">extensor hallucis longus</text>
+  <circle cx="312" cy="326" r="3.5" fill="#9cc3ff"/>
+  <text x="318" y="355" fill="#93a4b7" font-size="8">두 근육 사이 깊은층 → 아래서 표층</text>
+  <line x1="316" y1="334" x2="198" y2="340" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="36" y="238" fill="#c3d2e2" font-size="10" class="kr">긴발가락폄근</text>
+  <text x="36" y="250" fill="#8fa5bd" font-size="8.5">extensor digitorum longus</text>
+  <circle cx="30" cy="234" r="3.5" fill="#9cc3ff"/>
+  <line x1="104" y1="234" x2="152" y2="244" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="36" y="288" fill="#c3d2e2" font-size="10" class="kr">긴종아리근</text>
+  <text x="36" y="300" fill="#8fa5bd" font-size="8.5">fibularis longus</text>
+  <circle cx="30" cy="284" r="3.5" fill="#f0b56b"/>
+  <line x1="90" y1="286" x2="108" y2="270" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="36" y="368" fill="#c3d2e2" font-size="10" class="kr">짧은종아리근</text>
+  <text x="36" y="380" fill="#8fa5bd" font-size="8.5">fibularis brevis</text>
+  <circle cx="30" cy="364" r="3.5" fill="#f0b56b"/>
+  <line x1="96" y1="366" x2="104" y2="360" stroke="#6f8299" stroke-width="1"/>
+  <text x="36" y="394" fill="#93a4b7" font-size="8">둘 다 가쪽복사 뒤로 돈다</text>
+
+  <text x="36" y="446" fill="#c3d2e2" font-size="9.5" class="kr">셋째종아리근</text>
+  <text x="36" y="458" fill="#8fa5bd" font-size="8.5">fibularis tertius</text>
+  <circle cx="30" cy="442" r="3.5" fill="#9cc3ff"/>
+  <text x="36" y="470" fill="#93a4b7" font-size="8">긴발가락폄근의 일부 — 앞칸!</text>
+  <line x1="98" y1="446" x2="152" y2="460" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="308" y="470" fill="#c3d2e2" font-size="9.5" class="kr">위·아래폄근지지띠</text>
+  <text x="308" y="482" fill="#8fa5bd" font-size="8.5">sup./inf. extensor retinaculum</text>
+  <line x1="304" y1="468" x2="288" y2="466" stroke="#6b5c44" stroke-width="1"/>
+  <line x1="304" y1="478" x2="284" y2="536" stroke="#6b5c44" stroke-width="1"/>
+
+  <text x="308" y="586" fill="#c3d2e2" font-size="9.5" class="kr">짧은발가락폄근·짧은엄지폄근</text>
+  <text x="308" y="598" fill="#8fa5bd" font-size="8.5">ext. digitorum/hallucis brevis</text>
+  <circle cx="302" cy="582" r="3.5" fill="#9cc3ff"/>
+  <line x1="306" y1="590" x2="230" y2="596" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="36" y="648" fill="#93a4b7" font-size="9">앞칸 4근육 = <tspan fill="#9cc3ff">깊은종아리신경</tspan> · 가쪽칸 2근육 = <tspan fill="#f0b56b">얕은종아리신경</tspan></text>
+  <text x="36" y="664" fill="#93a4b7" font-size="9">가쪽칸 작용 = 가쪽번짐(eversion) + 발바닥쪽굽힘 보조 · 앞칸 = 발등굽힘</text>
+
+  <!-- ================================ 패널 B: 신경혈관 ================================ -->
+  <rect x="448" y="100" width="408" height="588" fill="none" stroke="#26374c" stroke-width="1.5"/>
+  <text x="460" y="115" fill="#e6edf3" font-size="12" class="kr">B. 신경혈관 — 온종아리신경 갈림 · 앞정강동맥 → 발등동맥</text>
+
+  <!-- 뼈 참조(흐리게) -->
+  <path d="M 656,140 L 706,140 L 698,470 L 664,470 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="548" cy="158" rx="15" ry="12" fill="#22344a" stroke="#eab308" stroke-width="2.2"/>
+  <path d="M 540,172 L 558,172 L 556,470 L 544,470 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="1.5" opacity="0.7"/>
+  <path d="M 528,530 C 512,570 508,606 524,632 L 736,668 C 760,668 768,648 752,632 L 716,600 C 696,560 684,540 678,522"
+        fill="none" stroke="#31445c" stroke-width="2"/>
+
+  <!-- 온종아리신경: 뒤에서 와서 종아리뼈목을 감아돎 -->
+  <path d="M 580,120 C 566,132 552,142 542,152" fill="none" stroke="#9cc3ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 542,152 C 534,160 532,170 538,178" fill="none" stroke="#9cc3ff" stroke-width="4" stroke-linecap="round"/>
+  <!-- 얕은종아리신경(가쪽칸 하행 → 발등 감각) -->
+  <path d="M 538,178 C 534,240 532,310 536,380 C 538,420 544,450 552,478 C 560,510 574,540 596,566" fill="none" stroke="#f0b56b" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 596,566 L 620,596 M 596,566 L 584,600" fill="none" stroke="#f0b56b" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- 깊은종아리신경(앞칸으로 관통 → 동맥과 동행) -->
+  <path d="M 540,180 C 556,196 576,208 596,216" fill="none" stroke="#9cc3ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 앞정강동맥: 뼈사이막 위 구멍 통과 -->
+  <ellipse cx="612" cy="196" rx="10" ry="6" fill="none" stroke="#e0645f" stroke-width="2.2" stroke-dasharray="4 3"/>
+  <path d="M 616,202 C 618,260 616,330 614,390 C 613,430 612,456 612,478" fill="none" stroke="#e0645f" stroke-width="5" stroke-linecap="round"/>
+  <!-- 신경이 동맥 가쪽에서 동행 -->
+  <path d="M 596,216 C 602,270 602,340 601,400 C 600,436 600,458 601,478" fill="none" stroke="#9cc3ff" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- 지지띠(참조) -->
+  <path d="M 528,472 L 712,458 L 712,472 L 528,486 Z" fill="#4a4030" stroke="#6b5c44" stroke-width="1.2" opacity="0.8"/>
+  <!-- 발등동맥 → 활꼴동맥·깊은발바닥가지 -->
+  <path d="M 612,478 C 616,510 628,540 648,566" fill="none" stroke="#e0645f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 648,566 C 668,580 690,590 712,596" fill="none" stroke="#e0645f" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 648,566 L 646,606" fill="none" stroke="#e0645f" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+  <path d="M 712,596 L 726,626 M 692,590 L 700,624 M 672,580 L 676,618" fill="none" stroke="#e0645f" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- 깊은종아리신경 종말: 첫째 발가락사이 -->
+  <path d="M 601,478 C 606,516 616,548 630,580 L 642,614" fill="none" stroke="#9cc3ff" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 첫째 발가락사이 감각영역 -->
+  <ellipse cx="648" cy="636" rx="16" ry="11" fill="#9cc3ff" fill-opacity="0.25" stroke="#9cc3ff" stroke-width="1.5"/>
+
+  <!-- ===== 패널 B 라벨 ===== -->
+  <text x="470" y="200" fill="#9cc3ff" font-size="10.5" class="kr">온종아리신경 ★★</text>
+  <text x="470" y="212" fill="#93a4b7" font-size="8.5">common fibular n.</text>
+  <text x="470" y="224" fill="#eab308" font-size="8.5">종아리뼈목을 감아돈다</text>
+  <text x="470" y="236" fill="#93a4b7" font-size="8">— 압박마비 최호발(발처짐)</text>
+  <line x1="540" y1="196" x2="542" y2="168" stroke="#9cc3ff" stroke-width="1"/>
+
+  <text x="470" y="272" fill="#f0b56b" font-size="10" class="kr">얕은종아리신경</text>
+  <text x="470" y="284" fill="#93a4b7" font-size="8.5">superficial fibular n.</text>
+  <text x="470" y="296" fill="#93a4b7" font-size="8">가쪽칸 근육 + 발등 감각 대부분</text>
+  <line x1="528" y1="270" x2="535" y2="288" stroke="#f0b56b" stroke-width="1"/>
+
+  <text x="740" y="150" fill="#9cc3ff" font-size="10" class="kr">깊은종아리신경 ★</text>
+  <text x="740" y="162" fill="#93a4b7" font-size="8.5">deep fibular n. — 앞칸으로</text>
+  <line x1="736" y1="148" x2="600" y2="212" stroke="#9cc3ff" stroke-width="1"/>
+
+  <text x="740" y="200" fill="#e0645f" font-size="10" class="kr">앞정강동맥 ★</text>
+  <text x="740" y="212" fill="#93a4b7" font-size="8.5">anterior tibial a.</text>
+  <text x="740" y="224" fill="#eab308" font-size="8.5">뼈사이막 위 구멍으로</text>
+  <text x="740" y="236" fill="#93a4b7" font-size="8">앞칸 진입(오금동맥 가지)</text>
+  <line x1="736" y1="198" x2="624" y2="198" stroke="#e0645f" stroke-width="1"/>
+
+  <text x="740" y="330" fill="#e6edf3" font-size="9.5">동맥·신경·힘줄이</text>
+  <text x="740" y="342" fill="#e6edf3" font-size="9.5">지지띠 밑을 함께 통과</text>
+  <text x="740" y="354" fill="#93a4b7" font-size="8">신경은 동맥 가쪽에 동행</text>
+  <line x1="736" y1="334" x2="618" y2="380" stroke="#6f8299" stroke-width="1"/>
+
+  <text x="470" y="330" fill="#f0b56b" font-size="9">가쪽칸 하행 · 종아리 아래 1/3</text>
+  <text x="470" y="342" fill="#f0b56b" font-size="9">에서 얕게 나와 발등으로</text>
+  <line x1="470" y1="352" x2="540" y2="360" stroke="#f0b56b" stroke-width="1"/>
+
+  <text x="740" y="470" fill="#e0645f" font-size="10.5" class="kr">발등동맥 ★★</text>
+  <text x="740" y="482" fill="#93a4b7" font-size="8.5">dorsalis pedis a.</text>
+  <text x="740" y="494" fill="#eab308" font-size="8.5">긴엄지폄근힘줄 가쪽에서</text>
+  <text x="740" y="506" fill="#eab308" font-size="8.5">박동 촉지</text>
+  <line x1="736" y1="472" x2="622" y2="500" stroke="#e0645f" stroke-width="1"/>
+
+  <text x="740" y="560" fill="#e0645f" font-size="9.5">활꼴동맥 arcuate a.</text>
+  <text x="740" y="572" fill="#93a4b7" font-size="8">→ 발허리동맥들</text>
+  <line x1="736" y1="558" x2="700" y2="590" stroke="#e0645f" stroke-width="1"/>
+
+  <text x="490" y="560" fill="#e0645f" font-size="9.5">깊은발바닥가지</text>
+  <text x="490" y="572" fill="#93a4b7" font-size="8">deep plantar a. → 발바닥활 완성</text>
+  <line x1="586" y1="562" x2="642" y2="592" stroke="#e0645f" stroke-width="1"/>
+
+  <text x="490" y="626" fill="#9cc3ff" font-size="9.5" class="kr">첫째 발가락사이 감각 ★</text>
+  <text x="490" y="638" fill="#93a4b7" font-size="8">= 깊은종아리신경의 유일한 피부영역</text>
+  <line x1="586" y1="630" x2="632" y2="634" stroke="#9cc3ff" stroke-width="1"/>
+
+  <text x="470" y="672" fill="#eab308" font-size="9.5">★ 발처짐 foot drop = 온종아리신경 손상 — 종아리뼈목 골절·압박에서</text>
+</svg>
