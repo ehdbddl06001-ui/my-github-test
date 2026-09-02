@@ -1,23 +1,23 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-01",
+ "generated": "2026-09-02",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2039,
+  "total": 2042,
   "byType": {
+   "anatomy": 569,
    "kmle": 811,
-   "anatomy": 568,
    "usmle": 120,
-   "paper": 523,
+   "paper": 525,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 568,
-   "Cardiology": 162,
-   "Nephrology": 137,
+   "Anatomy": 569,
+   "Cardiology": 163,
+   "Nephrology": 138,
    "Infectious Disease": 114,
    "Pediatrics": 93,
    "Hematology-Oncology": 80,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1285,
-   "medium": 705,
+   "high": 1286,
+   "medium": 707,
    "low": 49
   },
   "tagCount": 2747
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-03",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-03",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-03",
+   "path": "content/anatomy/daily/2026-09-03.md",
+   "snippet": "오늘의 학습 (2026 09 03 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 7일 · Tagging 2까지 46일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-03 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 03 · t1 prep) 다음 수업/시험: 2026 09 03 목의 삼각·목의 내장, 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등 Tagging 1까지 7일 · Tagging 2까지 46일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-0841",
    "type": "kmle",
@@ -810,6 +824,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0128.md",
    "snippet": "A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. H",
    "text": "Immunology Recurrent Neisserial Meningitis — Terminal Complement Deficiency Localized by CH50 and AH50 complement membrane-attack-complex C5 Neisseria meningitis CH50 AH50 USMLE-style / MedKOS (complement system · terminal pathway deficiency) A 19 year old college student is admitted because of 12 hours of fever, headache, and neck stiffness. Two years ago he was hospitalized at another college for a similar illness, which was treated successfully with intravenous antibiotics. He has otherwise been healthy, without sinopulmonary infections, skin abscesses, or episodes of facial swelling. He received all routine childhood vaccinations. Examination shows nuchal rigidity without a petechial rash. Cerebrospinal fluid analysis and complement studies are shown. A deficiency of which of the following proteins is most likely in this patient? A. C1 esterase inhibitor B. C3 C. C5 D. C4 E. Properdin 재발성 수막알균(Neisseria) 수막염 + CH50·AH50 모두 검출 안 됨 + C3·C4 정상 = 두 경로가 합류한 뒤의 종말 보체(C5–C9, 막공격복합체) 결핍. Neisseria는 세포막이 얇아 MAC에 의한 직접 용해가 주 방어이므로, 종말 성분이 없으면 유독 이 균의 침습 감염이 반복된다. CH50(고전)·AH50(대체)이 동시에 0이면 결함은 공통 종말경로에 있고, 어느 한쪽만 낮으면 그 경로 고유 성분(C4→고전, properdin→대체)이다."
+  },
+  {
+   "id": "paper-2026-0525",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical principles and practice : international journal of the Kuwait University, Health Science Centre",
+   "confidence": "medium",
+   "date": "2026-09-01",
+   "path": "content/papers/2026/2026-09-01_paper-2026-0525_complication_profiles_following_right_sided_segmental_colect.md",
+   "snippet": "Title Complication Profiles Following Right Sided Segmental Colectomy: A Comparative Retrospective Analysis of Crohn's Disease and Colon Cancer Authors Alabbad Jasim, Alfadhli Noor, Almuhana Nourah, Alnaqi Fawaz Journal / DOI Medical princi",
+   "text": "Nephrology scraped pubmed PubMed / Medical principles and practice : international journal of the Kuwait University, Health Science Centre Title Complication Profiles Following Right Sided Segmental Colectomy: A Comparative Retrospective Analysis of Crohn's Disease and Colon Cancer Authors Alabbad Jasim, Alfadhli Noor, Almuhana Nourah, Alnaqi Fawaz Journal / DOI Medical principles and practice : international journal of the Kuwait University, Health Science Centre · DOI: 10.1159/mpp/adpag010 · PMID: 42678889 https://pubmed.ncbi.nlm.nih.gov/42678889/ Abstract OBJECTIVES: Concerns regarding the higher incidence of postoperative complications in Crohn's disease patients may delay surgical resection. Calibrating postoperative risks specific to Crohn's disease, with the more common indication of colon cancer, is valuable for making informed surgical decisions. The primary objective of this study was to report a disease specific postoperative complication profile. The secondary objective was to identify factors associated with significant complications (Clavien Dindo classification grade ≥ 2). SUBJECTS AND METHODS: This retrospective study was conducted at a tertiary center from January 2010 to December 2025 on adult patients who underwent right sided segmental colectomy for Crohn's disease or colon cancer. The data analyzed included demographics, comorbidities, laboratory findings, and perioperative clinical variables, and 30 day postoperative complications. RESULTS: A total of 230 patients met the inclusion criteria (86 with Crohn's disease and 144 with colon cancer). Patients with Crohn's disease were significantly younger and had fewer associated comorbidities. No differences were observed in the overall postoperative complications. However, among patients who developed complications, the rate of infectious complications was higher in patients with Crohn's disease compared to patients with colon cancer (72.4% vs. 46.4%, p = 0.022 ). Respiratory complications occurred only in patients with colon cancer. Chronic kidney disease and conversion to open surgery were found to be independently associated with significant complications on multivariate regression analysis. CONCLUSION: Overall postoperative complications rates were comparable between Crohn's disease and colon cancer patients undergoing right sided segmental colectomy. However, a disease specific complication profile was noted, with a higher rate of infectious complications in Crohn's disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0524",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-09-01",
+   "path": "content/papers/2026/2026-09-01_paper-2026-0524_bilateral_oophorectomy_and_heart_failure_risk_mechanisms_evi.md",
+   "snippet": "Title Bilateral Oophorectomy and Heart Failure Risk: Mechanisms, Evidence, and Clinical Implications Authors Jafri Danya Z, Bhattarai Sandesh, Hassan Mariah, Sharma Vibha, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in rev",
+   "text": "Cardiology scraped pubmed PubMed / Cardiology in review Title Bilateral Oophorectomy and Heart Failure Risk: Mechanisms, Evidence, and Clinical Implications Authors Jafri Danya Z, Bhattarai Sandesh, Hassan Mariah, Sharma Vibha, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001457 · PMID: 42679310 https://pubmed.ncbi.nlm.nih.gov/42679310/ Abstract Heart failure (HF), particularly heart failure with preserved ejection fraction (HFpEF), disproportionately affects women, yet female specific and iatrogenic contributors to HF risk remain deeply underrecognized. Bilateral oophorectomy (BO) results in abrupt estrogen deprivation and has increasingly been associated with adverse cardiovascular outcomes, particularly when performed before natural menopause. This review examines the mechanistic and epidemiologic evidence linking BO to cardiovascular disease and HF, with particular attention to age at oophorectomy, estrogen deprivation, and the potential modifying role of estrogen replacement therapy (ERT). Growing evidence associates BO with increased cardiovascular morbidity, mortality, and HF risk, with the greatest risk observed among women undergoing premenopausal BO. Abrupt estrogen loss may contribute through endothelial dysfunction, increased vascular stiffness, adverse metabolic and inflammatory changes, neurohormonal activation, and myocardial remodeling mechanisms that substantially overlap with HFpEF pathophysiology. ERT may mitigate some cardiovascular consequences of premature surgical menopause, although its effects appear dependent on age, timing of initiation, and route of administration. Recognition of BO as a female specific cardiovascular risk factor may serve as a critical opportunity for earlier risk identification, targeted prevention, and individualized multidisciplinary care to reduce long term cardiovascular and HF risk in women worldwide. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-01",
