@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2090,
+  "total": 2098,
   "byType": {
    "kmle": 843,
+   "anatomy": 579,
    "usmle": 126,
-   "anatomy": 571,
    "paper": 533,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 571,
+   "Anatomy": 579,
    "Cardiology": 166,
    "Nephrology": 141,
    "Infectious Disease": 117,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1326,
+   "high": 1334,
    "medium": 715,
    "low": 49
   },
-  "tagCount": 2822
+  "tagCount": 2834
  },
  "docs": [
   {
@@ -662,6 +662,176 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0842.md",
    "snippet": "68세 남자가 직장 건강검진에서 심전도 이상을 지적받고 왔다. 가슴 통증이나 두근거림은 없다. 심전도는 자료와 같으며 QRS 지속시간이 0.14초로 넓고, V1–V2에서 rSR′ 모양, 제1유도와 V6에서 넓고 뭉툭한 S파가 보인다. 활력징후는 자료와 같다. 심전도 진단으로 가장 적절한 것은? A. 완전오른갈래차단 B. 완전왼갈래차단 C. 왼앞섬유다발차단 D. 심실조기흥분(WPW) E. 오른심실비대 넓은 QRS(≥0.12초)에",
    "text": "Cardiology Complete Right Bundle Branch Block rbbb conduction-delay rSR-prime ecg KMLE 2026 / Claude Routine 68세 남자가 직장 건강검진에서 심전도 이상을 지적받고 왔다. 가슴 통증이나 두근거림은 없다. 심전도는 자료와 같으며 QRS 지속시간이 0.14초로 넓고, V1–V2에서 rSR′ 모양, 제1유도와 V6에서 넓고 뭉툭한 S파가 보인다. 활력징후는 자료와 같다. 심전도 진단으로 가장 적절한 것은? A. 완전오른갈래차단 B. 완전왼갈래차단 C. 왼앞섬유다발차단 D. 심실조기흥분(WPW) E. 오른심실비대 넓은 QRS(≥0.12초)에 V1–V2의 rSR′(토끼귀), 제1유도·V6의 넓은 S파는 완전오른갈래차단의 전형이다. 자체로는 대개 무증상·양성이나 새로 생기면 기저심질환·전도계 질환을 평가한다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-04",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-04",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/daily/2026-09-04.md",
+   "snippet": "오늘의 학습 (2026 09 04 · t1 prep) 다음 수업/시험: 2026 09 07 목의 뿌리·인두, 종아리 가쪽·발목 안쪽면·발바닥 Tagging 1까지 6일 · Tagging 2까지 45일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-04 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 04 · t1 prep) 다음 수업/시험: 2026 09 07 목의 뿌리·인두, 종아리 가쪽·발목 안쪽면·발바닥 Tagging 1까지 6일 · Tagging 2까지 45일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0459",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "발바닥 네 층의 순서 — 발바닥네모근이 2층에 있는 이유",
+   "tags": [
+    "layer-order",
+    "7회차",
+    "발바닥",
+    "발바닥네모근",
+    "벌레근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §5 발바닥 층 구성표·암기 콜아웃 — 2026 확정본 7회차 실습주제(발바닥)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0459.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 발바닥 네 층의 순서 — 발바닥네모근이 2층에 있는 이유 7회차 · 다리 layer-order 7회차 발바닥 발바닥네모근 벌레근 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §5 발바닥 층 구성표·암기 콜아웃 — 2026 확정본 7회차 실습주제(발바닥) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0458",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "안쪽·가쪽발바닥신경 — 손의 정중신경·자신경 관계를 발에 옮긴 배분",
+   "tags": [
+    "relation",
+    "7회차",
+    "발바닥신경",
+    "정강신경",
+    "정중신경",
+    "자신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §5 발바닥 신경표 — 2026 확정본 7회차 실습주제(발바닥)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0458.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 안쪽·가쪽발바닥신경 — 손의 정중신경·자신경 관계를 발에 옮긴 배분 7회차 · 다리 relation 7회차 발바닥신경 정강신경 정중신경 자신경 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §5 발바닥 신경표 — 2026 확정본 7회차 실습주제(발바닥) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0457",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "긴종아리근 힘줄의 주행 추적 — 가쪽복사 뒤에서 발바닥을 가로질러 반대편까지",
+   "tags": [
+    "course-tracing",
+    "7회차",
+    "긴종아리근",
+    "가로발바닥활",
+    "입방뼈",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §3 가쪽칸 · §5 발바닥 4층 — 2026 확정본 7회차 실습주제(종아리 가쪽·발바닥)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0457.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 긴종아리근 힘줄의 주행 추적 — 가쪽복사 뒤에서 발바닥을 가로질러 반대편까지 7회차 · 다리 course-tracing 7회차 긴종아리근 가로발바닥활 입방뼈 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §3 가쪽칸 · §5 발바닥 4층 — 2026 확정본 7회차 실습주제(종아리 가쪽·발바닥) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0456",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "종아리 가쪽칸에는 자기 동맥이 없다 — 구성·신경·혈액공급의 예외",
+   "tags": [
+    "distinction",
+    "7회차",
+    "종아리가쪽칸",
+    "얕은종아리신경",
+    "종아리동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §3 종아리 가쪽칸 표 — 2026 확정본 7회차 실습주제(종아리 가쪽)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0456.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 종아리 가쪽칸에는 자기 동맥이 없다 — 구성·신경·혈액공급의 예외 7회차 · 다리 distinction 7회차 종아리가쪽칸 얕은종아리신경 종아리동맥 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §3 종아리 가쪽칸 표 — 2026 확정본 7회차 실습주제(종아리 가쪽) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0455",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "조롱박오목 — 생선가시가 걸리는 자리와 그 밑을 지나는 신경, 그리고 흡인",
+   "tags": [
+    "clinical-application",
+    "7회차",
+    "인두",
+    "조롱박오목",
+    "위후두신경",
+    "흡인",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §2 인두 구분표·임상 콜아웃 — 2026 확정본 7회차 실습주제(인두)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0455.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 조롱박오목 — 생선가시가 걸리는 자리와 그 밑을 지나는 신경, 그리고 흡인 7회차 · 목 clinical-application 7회차 인두 조롱박오목 위후두신경 흡인 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §2 인두 구분표·임상 콜아웃 — 2026 확정본 7회차 실습주제(인두) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0454",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "되돌이후두신경의 좌우 비대칭 — 무엇을 감아 도는가와 왼쪽이 잘 다치는 이유",
+   "tags": [
+    "distinction",
+    "7회차",
+    "되돌이후두신경",
+    "대동맥활",
+    "쉰목소리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §1-2 기출 콜아웃 — 2026 확정본 7회차 실습주제(목의 뿌리)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0454.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 되돌이후두신경의 좌우 비대칭 — 무엇을 감아 도는가와 왼쪽이 잘 다치는 이유 7회차 · 목 distinction 7회차 되돌이후두신경 대동맥활 쉰목소리 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1-2 기출 콜아웃 — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0453",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "앞목갈비근이 빗장밑동맥을 3부로 나눈다 — 1부 가지 세 개와 겨드랑동맥으로의 이름 교체",
+   "tags": [
+    "branch-tree",
+    "7회차",
+    "빗장밑동맥",
+    "앞목갈비근",
+    "겨드랑동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §1-2 빗장밑동맥의 가지 — 2026 확정본 7회차 실습주제(목의 뿌리)",
+   "confidence": "high",
+   "date": "2026-09-04",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0453.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 앞목갈비근이 빗장밑동맥을 3부로 나눈다 — 1부 가지 세 개와 겨드랑동맥으로의 이름 교체 7회차 · 목 branch-tree 7회차 빗장밑동맥 앞목갈비근 겨드랑동맥 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1-2 빗장밑동맥의 가지 — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "usmle-2026-0139",
