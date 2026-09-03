@@ -2,6 +2,80 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0535",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Remote Ischemic Preconditioning and Survival in Noncardiac Surgery: An Updated Meta-analysis of Randomized Trials",
+  "authors": [
+   "Labanca Rosa",
+   "Oliva Federico Mattia",
+   "Fresilli Stefano",
+   "Carravetta Maurizio",
+   "Vietri Simone",
+   "Lombardi Gaetano",
+   "Marmiere Marilena",
+   "Beretta Luigi",
+   "et al."
+  ],
+  "journal": "Anesthesia and analgesia",
+  "doi": "10.1213/ANE.0000000000008291",
+  "pmid": "42691252",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42691252/",
+  "pubdate": "2026-09-03",
+  "date": "2026-09-03",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Remote ischemic preconditioning (RIPC) demonstrated potential benefits in terms of organ protection in preclinical and several clinical settings. This systematic review of randomized controlled trials (RCTs) evaluates the association of RIPC with mortality and other relevant clinical outcomes in patients undergoing noncardiac surgery.\n\n**METHODS:** We conducted a systematic review and meta-analysis of RCTs assessing the effects of RIPC in adult patients undergoing noncardiac surgery. A comprehensive search was performed in PubMed, Embase, the Cochrane Central Register of Controlled Trials, ClinicalTrials.gov, and in proceedings from major congresses up to June 2025. Eligible studies compared RIPC with either standard care or a sham intervention. The primary outcome was all-cause mortality, assessed at the longest follow-up available. Exploratory outcomes included stroke, length of hospital stay, kidney and cardiac function. The risk of bias for each included RCT was assessed using the Cochrane risk-of-bias tool for randomized trials version 2. Rare binary outcomes were analyzed using odds ratios (ORs) with 95% confidence intervals (CIs) estimated via random-effects generalized linear mixed models (GLMMs). Non-rare binary outcomes were analyzed using risk ratios (RRs) with 95% CIs via Mantel-Haenszel random-effects models.\n\n**RESULTS:** We included 79 RCTs involving 9340 patients, predominantly single-center in design, with abdominal surgery (25 studies) being the most prevalent clinical setting. RIPC was primarily obtained by inflating a blood pressure cuff on upper limbs. RIPC was not associated with a statistically significant reduction in mortality compared to control in the overall population (OR = 0.79; 95% CI, 0.51-1.24; P = .30), but was associated with a significant reduction in mortality in the subgroup of patients receiving it before anesthesia induction (OR = 0.37; 95% CI, 0.17-0.81; P = .013). Exploratory findings suggested a reduction in stroke rate (OR = 0.41; 95% CI, 0.22-0.78; P = .006), length of hospital stay (mean difference = -0.84 days; P < .001), and peak postoperative serum neutrophil gelatinase-associated lipocalin (NGAL; mean difference = -10.27; P = .008) in RIPC patients. The strength of the data reported in the included studies may have been partially limited by the presence of different clinical conditions that could have either diminished or enhanced the effects of RIPC.\n\n**CONCLUSIONS:** RIPC was not associated with a significant reduction in mortality in the noncardiac surgical population, except for the subgroup of patients who received RIPC before anesthesia induction. However, RIPC showed beneficial effects on biomarkers of renal damage, stroke rate, and length of hospital stay. Our results support further investigation of RIPC specifically when applied before the induction of anesthesia.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0534",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Patient-Centered Summarization Framework for AI Clinical Summarization: Mixed Methods Study",
+  "authors": [
+   "Lizarazo Jimenez Maria",
+   "Claros Ana Gabriela",
+   "Green Kieran",
+   "Toro-Tobon David",
+   "Larios Felipe",
+   "Asthana Sheena",
+   "Wenczenovicz Camila",
+   "Guevara Maldonado Kerly",
+   "et al."
+  ],
+  "journal": "Journal of medical Internet research",
+  "doi": "10.2196/87061",
+  "pmid": "42691463",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42691463/",
+  "pubdate": "2026-09-03",
+  "date": "2026-09-03",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Large language models (LLMs) are increasingly demonstrating the potential to reach human-level performance in generating clinical summaries from patient-clinician conversations. LLMs are usually evaluated against clinical summaries that focus mainly on patients' biology and not on their biography (eg, preferences, values, wishes, and concerns). To achieve patient-centered care, artificial intelligence clinical summarization must incorporate patient-centered domains, implemented through patient-centered summaries (PCSs).\n\n**OBJECTIVE:** This study aimed to develop a framework to generate PCS that capture patients' values, preferences, and wishes while ensuring clinical utility for clinicians, and assess if current open-source LLMs can achieve human-level performance in generating PCS.\n\n**METHODS:** We developed a 4-step mixed methods process to define and evaluate PCS. First, 2 patient and public involvement and engagement groups were convened in the United Kingdom (10 patients and 8 clinicians), who participated in semistructured interviews exploring what personal and contextual information should be included in clinical summaries and how it should be structured for clinical use. Second, findings were translated into an annotation guideline, which was used by 8 clinician annotators to generate gold standard PCS from 88 transcribed patient-clinician consultations about the management of atrial fibrillation. Third, 16 consultations were used to iteratively develop and refine a prompt aligned with the annotation guideline. Finally, 5 LLMs (Llama-3.2-3B [Meta AI], Llama-3.1-8B [Meta AI], Mistral-8B [Mistral AI], Gemma-3-4B [Google DeepMind], and Qwen3-8B [Alibaba]) generated summaries from 72 consultations using zero-shot and few-shot prompting, which were evaluated against gold standard PCS using ROUGE-L (Recall-Oriented Understudy for Gisting Evaluation-Longest Common Subsequence) and BERTScore (Bidirectional Encoder Representations from Transformers Score) and assessed for correctness, completeness, conciseness, patient-centeredness, and fluency.\n\n**RESULTS:** Patients emphasized that summaries should include (1) lifestyle routines and daily functioning as indicators of independence or disruption; (2) the presence and role of social support systems, especially during crises; (3) recent life events or stressors, such as trauma, loss, or caregiving demands; and (4) care preferences, values, and communication styles that provide meaning or reflect autonomy. Clinicians sought summaries that included a concise functional baseline, psychosocial context, and emotional cues, preferably in a structured, clinically digestible format. In the 72 consultations (mean age 70, SD 11 y; 32/72, 44.4% female), the best zero-shot performance was observed with Mistral-8B (ROUGE-L 0.189) and Llama-3.1-8B (BERTScore 0.673). The best few-shot prompting was found with 3 examples using Llama-3.1-8B (ROUGE-L 0.206 and BERTScore 0.683).\n\n**CONCLUSIONS:** The open-source LLMs we evaluated did not achieve human-level performance in generating PCSs. Without task-specific fine-tuning, current open-source LLMs cannot reach human-level performance in this task. Our framework serves as an innovative guideline for developing gold standard PCS for artificial intelligence clinical tasks.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0533",
   "topic": "Surgery",
   "subtopic": "",
