@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-09-03",
+ "generated": "2026-09-04",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -8832,6 +8832,121 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0460",
+   "style": "relation",
+   "session": 7,
+   "region": "neck",
+   "subregion": "root-of-neck",
+   "examPhase": "tagging-1",
+   "stem": "가슴관은 목의 뿌리에서 어느 정맥으로 흘러드는가. 배액 영역을 오른림프관과 대비해 답하고, 왼쪽 목뿌리 수술·중심정맥삽입에서 이 구조가 다칠 때 생기는 문제를 설명하시오.",
+   "choices": null,
+   "answer": "종착점 — 왼정맥각 (left venous angle, 왼속목정맥 internal jugular v.과 왼빗장밑정맥 subclavian v.이 만나는 자리) / 가슴관 배액 영역 — 가로막 아래 온몸 + 왼쪽 위반신(왼머리·왼목·왼팔·왼가슴) / 오른림프관 (right lymphatic duct) — 오른쪽 위반신만, 오른정맥각으로 / 손상 결과 — 유미가슴 (chylothorax) 또는 목의 유미루 (chyle leak, 유미 fistula)",
+   "explanation": "가슴관은 온몸 림프의 ==약 3/4==(가로막 아래 전부 + 왼쪽 위반신)을 모아 가슴안을 타고 올라와 목의 뿌리에서 왼쪽으로 활처럼 꺾여 ==왼정맥각==으로 들어간다. 나머지 ==오른쪽 위반신==만 오른림프관이 맡아 오른정맥각으로 간다 — 그래서 좌우가 비대칭이다. 목의 뿌리에서 가슴관은 **왼빗장밑동맥·왼온목동맥 뒤, 가로막신경·앞목갈비근 앞**을 지나 정맥각에 닿으므로, 왼쪽 목 아래(빗장위) 수술이나 ==왼쪽 중심정맥삽입==에서 바로 칼끝·바늘 앞에 놓인다. 다치면 지방을 실은 뿌연 림프(유미)가 새어 목에 **유미루**가 생기거나, 가슴안 쪽에서 터지면 **유미가슴**이 된다 — 지방을 잃으므로 영양·면역 소실까지 이어져 단순 배액으로 끝나지 않는다. 태깅에서는 왼쪽 목뿌리를 열어 정맥각으로 들어가는 얇고 투명한 관을 짚어 묻거나, '오른쪽에서는 왜 같은 구조가 안 보이는가'로 좌우를 구분시킨다. 임상 곁가지로 위암·식도암이 가슴관을 타고 ==왼빗장위림프절(피르호 결절)==로 전이하는 길이 바로 이 경로다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "목의 뿌리 (e-Anatomy Neck — Root of neck 0:00–17:08)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0461",
+   "style": "clinical-application",
+   "session": 7,
+   "region": "neck",
+   "subregion": "root-of-neck",
+   "examPhase": "tagging-1",
+   "stem": "목의 뿌리에서 아래목신경절과 첫째가슴신경절이 합쳐져 만드는 신경절의 이름과 그 위치를 답하고, 이 부위가 눌리거나 잘렸을 때 나타나는 증후군의 세 증상을 쓰시오.",
+   "choices": null,
+   "answer": "신경절 — 별신경절 (stellate ganglion, 목가슴신경절 cervicothoracic ganglion) / 위치 — 첫째 갈비뼈목 앞·C7 가로돌기 아래, ==척추동맥 (vertebral a.) 이는곳 뒤== / 증후군 — 호르너증후군 (Horner syndrome): ① 눈꺼풀처짐 (ptosis) ② 동공수축 (miosis) ③ 같은 쪽 얼굴 무한증 (anhidrosis)",
+   "explanation": "목 교감신경줄기는 척주앞근막 뒤, ==온목동맥집 뒤쪽==을 따라 내려오며 위·중간·아래 목신경절을 만드는데, 아래목신경절은 흔히 첫째가슴신경절과 융합해 별 모양의 ==별신경절==이 된다. 자리가 중요하다 — **첫째 갈비뼈목 앞, 척추동맥이 빗장밑동맥에서 갈라져 올라가기 시작하는 바로 뒤**라, 폐꼭대기(허파꼭대기)와 빗장밑동맥에 삼면이 둘러싸여 있다. 그래서 이 자리를 침범하는 것들이 모두 같은 증상을 만든다: **판코스트종양**(폐꼭대기암), 목갈비뼈, 빗장밑동맥류, 목 곁곁 절제·별신경절차단. 교감신경이 끊기면 눈꺼풀올림근의 민무늬근(뮐러근)이 죽어 ==눈꺼풀처짐==, 동공확대근이 죽어 ==동공수축==, 얼굴 땀샘이 죽어 ==무한증==이 온다(세 증상 모두 **같은 쪽**). 시험에서 헷갈리는 지점은 '눈 증상인데 왜 목 아래를 보는가'인데, 눈으로 가는 교감신경은 가슴 위쪽(T1–T2)에서 나와 **목을 타고 올라가** 속목동맥을 따라가므로 경로 어디가 끊겨도 같은 그림이 된다. 태깅에서는 척추앞 층을 열어 온목동맥집 뒤에 붙은 줄기와 첫째 갈비뼈목 앞의 신경절을 짚어 묻고, 가로막신경(앞목갈비근 **앞면**)과 혼동하지 않는지를 함께 본다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "목의 뿌리 (e-Anatomy Neck — Root of neck 0:00–17:08)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0462",
+   "style": "course-tracing",
+   "session": 7,
+   "region": "neck",
+   "subregion": "pharynx",
+   "examPhase": "tagging-1",
+   "stem": "인두 벽의 위·중간·아래인두수축근 사이(및 위·아래)로 생기는 네 틈새를 위에서부터 들고 각각을 지나는 주요 구조를 답하시오. 아래인두수축근의 두 부분 사이 약한 자리의 이름과 그곳에서 생기는 병도 함께 쓰시오.",
+   "choices": null,
+   "answer": "① 위인두수축근 **위** — 귀인두관 (auditory tube) · 입천장올림근 (levator veli palatini m.) / ② 위·중간인두수축근 **사이** — 붓인두근 (stylopharyngeus m.) + 혀인두신경 (glossopharyngeal n., IX) / ③ 중간·아래인두수축근 **사이** — 위후두신경 속가지 (internal br. of superior laryngeal n.) + 위후두동맥 (superior laryngeal a.) / ④ 아래인두수축근 **아래** — 되돌이후두신경 (recurrent laryngeal n.) + 아래후두동맥 (inferior laryngeal a.) / 약한 자리 — 킬리안삼각 (Killian dehiscence, 빗인두근 thyropharyngeus와 반지인두근 cricopharyngeus 사이) → 젠커곁주머니 (Zenker diverticulum)",
+   "explanation": "인두 벽은 수축근 셋이 기와처럼 겹쳐 있고, 겹치지 않는 **틈새마다 정해진 구조가 드나든다** — 이 네 줄이 인두 문항의 뼈대다. 위에서부터 ==귀인두관·입천장올림근== → ==붓인두근 + IX== → ==위후두신경 속가지 + 위후두동맥== → ==되돌이후두신경 + 아래후두동맥== 순이고, 아래 둘이 후두 안쪽을 감각(성대문 위)과 운동(성대문 아래·성대근)으로 나눠 맡는 그 신경들이다. 세 번째 틈새를 뚫고 들어간 위후두신경 속가지가 곧 조롱박오목 점막 밑을 지나는 그 가지라, 두 문항이 한 줄기로 이어진다. 아래인두수축근은 비스듬한 ==빗인두근==과 가로로 도는 ==반지인두근==(위식도조임근) 두 부분인데, 그 사이 뒤벽이 얇은 삼각을 **킬리안삼각**이라 한다. 삼키는 동안 반지인두근이 제때 못 풀리면 그 위쪽 압력이 올라가 점막이 삼각을 밀고 나가 **젠커곁주머니**(점막만 나가는 거짓곁주머니)가 되고, 음식이 고여 있다 되올라오는 역류·구취·흡인으로 나타난다. 태깅에서는 인두 뒤벽을 노출한 표본에서 삼각 자체나 그 틈새로 들어가는 신경 줄기를 짚어 묻는다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "인두 (e-Anatomy Neck — Pharynx 0:00–07:37)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0463",
+   "style": "distinction",
+   "session": 7,
+   "region": "lower-limb",
+   "subregion": "medial-ankle",
+   "examPhase": "tagging-1",
+   "stem": "발목 안쪽면을 지지하는 세모인대와 스프링인대를 부착 부위로 구분해 답하고, 발목 염좌가 안쪽보다 가쪽에 훨씬 많은 이유를 설명하시오. 이 두 인대와 함께 안쪽세로활을 떠받치는 힘줄도 쓰시오.",
+   "choices": null,
+   "answer": "세모인대 (deltoid lig., medial collateral lig.) — 안쪽복사 (medial malleolus)에서 부챗살처럼 퍼져 ==목말뼈 · 발꿈치뼈 · 배뼈== 세 뼈에 붙는다(정강배부분 · 정강발꿈치부분 · 앞·뒤정강목말부분) / 스프링인대 (spring lig., 발바닥쪽 발꿈치배인대 plantar calcaneonavicular lig.) — 발꿈치뼈 받침돌기 (sustentaculum tali)에서 ==배뼈==로, 목말뼈머리를 아래에서 받친다 / 가쪽 염좌가 많은 이유 — 세모인대가 가쪽 세 인대보다 두껍고 강하며, 발목은 ==안쪽번짐(inversion)== 가동범위가 커서 가쪽 인대(특히 앞목말종아리인대)에 힘이 몰린다 / 활을 떠받치는 힘줄 — 뒤정강근 힘줄 (tibialis posterior m. tendon)",
+   "explanation": "안쪽은 **하나의 두꺼운 부채**, 가쪽은 **가느다란 셋**이다 — 이 비대칭이 문항의 축이다. ==세모인대==는 안쪽복사에서 퍼져 목말뼈·발꿈치뼈·배뼈에 걸치므로 한 인대가 세 뼈를 한꺼번에 잡는다. 반면 가쪽은 앞목말종아리·발꿈치종아리·뒤목말종아리인대 셋으로 나뉘어 얇고, 발목은 구조상 ==안쪽번짐==이 더 크게 되므로 발을 접질리면 힘이 가쪽으로 몰려 **앞목말종아리인대**가 먼저 찢어진다(전체 발목염좌의 대부분). 안쪽이 다칠 정도의 힘이면 인대가 끊기기 전에 ==안쪽복사가 뜯겨 골절==되는 쪽이 흔하다는 것도 같은 이유다. ==스프링인대==는 인대이면서 사실상 **관절면 노릇**을 한다 — 받침돌기에서 배뼈로 건너가 목말뼈머리를 아래에서 떠받치므로, 늘어나면 목말뼈머리가 아래·안쪽으로 주저앉아 편평발이 된다. 그 위를 **뒤정강근 힘줄**이 지나며 배뼈거친면과 쐐기뼈들에 붙어 활을 위로 당겨 주므로(발목굴을 지나는 다섯 중 ==맨 앞 'Tom'==), 뒤정강근힘줄기능부전이 생기면 스프링인대까지 늘어나 **성인후천편평발**로 진행한다 — 인대와 힘줄이 한 짝으로 활을 지킨다는 점이 태깅·구술의 핵심이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "발목 안쪽면 (e-Anatomy Lower limb — Foot 05:43–17:17)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0464",
+   "style": "branch-tree",
+   "session": 7,
+   "region": "lower-limb",
+   "subregion": "sole-of-foot",
+   "examPhase": "tagging-1",
+   "stem": "발바닥의 깊은발바닥동맥활은 어떤 두 동맥이 만나 이루어지며 몇 층에 놓이는가. 이 활에서 나오는 가지와, 활을 만드는 두 동맥이 각각 어느 큰 동맥에서 내려온 것인지 계보로 답하시오.",
+   "choices": null,
+   "answer": "구성 — ① 가쪽발바닥동맥 (lateral plantar a., 뒤정강동맥 posterior tibial a.의 종말가지) + ② 발등동맥의 깊은발바닥동맥 (deep plantar a. of dorsalis pedis a., 앞정강동맥 anterior tibial a.의 이음) — 첫째 발허리뼈사이공간에서 관통해 내려와 합류 / 층 — 발바닥 ==4층==(뼈사이근과 함께, 가장 깊다) / 가지 — 바닥쪽발허리동맥 (plantar metatarsal aa.) → 온·고유바닥쪽발가락동맥 (plantar digital aa.) + 관통가지 (perforating branches, 발등 아치와 이음) / 계보 — 오금동맥 → 앞정강동맥(뼈사이막 관통) → 발등동맥 · 오금동맥 → 뒤정강동맥(안쪽복사 뒤) → 안쪽·가쪽발바닥동맥",
+   "explanation": "발바닥동맥활은 **오금동맥이 갈라 보낸 두 갈래가 발에서 다시 만나는 닫힌 고리**다 — 앞으로 간 것(앞정강 → 발등동맥)과 뒤로 돈 것(뒤정강 → 가쪽발바닥동맥)이 첫째 발허리뼈사이공간에서 합류한다. 손의 깊은손바닥동맥활(자동맥 깊은가지 + 노동맥 종말가지)과 정확히 같은 꼴이라 짝으로 외운다. 자리는 ==4층==, 즉 뼈사이근·긴종아리근/뒤정강근 힘줄과 같은 가장 깊은 면이고, 이 활을 **가쪽발바닥신경 깊은가지**가 나란히 따라가므로 태깅에서 '활과 함께 가는 신경'을 자주 묻는다(1–2층 사이를 지나는 것은 두 발바닥신경의 **줄기**이고, 4층을 도는 것은 그 깊은가지다 — 층을 섞지 말 것). 가지는 바닥쪽발허리동맥 → 발가락동맥으로 이어지고, 위로 관통가지를 보내 발등의 동맥과도 이어져 **이중 공급**이 된다. 임상 축은 두 가지다: 촉지에서 ==발등동맥은 긴엄지폄근힘줄 가쪽==, ==뒤정강동맥은 안쪽복사와 아킬레스힘줄 사이==에서 잡아 두 갈래를 각각 확인한다는 것과, 고리가 닫혀 있어 한쪽이 막혀도 발이 곧장 괴사하지 않지만 **당뇨발처럼 활 자체와 관통가지가 함께 망가지면 이 여유가 사라진다**는 것이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "발바닥·발등 (e-Anatomy Lower limb — Foot 05:43–17:17)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -9683,6 +9798,103 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-05",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "neck",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0030"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0037"
+    ],
+    "relation": [
+     "anatomy-2026-0446",
+     "anatomy-2026-0447"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0044",
+    "anatomy-2026-0048",
+    "anatomy-2026-0355",
+    "anatomy-2026-0043",
+    "anatomy-2026-0017",
+    "anatomy-2026-0447",
+    "anatomy-2026-0356",
+    "anatomy-2026-0045",
+    "anatomy-2026-0050",
+    "anatomy-2026-0359"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-3": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-7": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-04",
    "phase": "t1-prep",

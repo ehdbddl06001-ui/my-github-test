@@ -1,22 +1,22 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-03",
+ "generated": "2026-09-04",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2098,
+  "total": 2106,
   "byType": {
+   "anatomy": 585,
    "kmle": 843,
-   "anatomy": 579,
    "usmle": 126,
-   "paper": 533,
+   "paper": 535,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 579,
-   "Cardiology": 166,
+   "Anatomy": 585,
+   "Cardiology": 167,
    "Nephrology": 141,
    "Infectious Disease": 117,
    "Pediatrics": 96,
@@ -25,7 +25,7 @@ window.MEDKOS_INDEX = {
    "Obstetrics & Gynecology": 65,
    "Neurology": 63,
    "Psychiatry": 63,
-   "Surgery": 58,
+   "Surgery": 59,
    "Endocrinology": 54,
    "Gastroenterology": 53,
    "Pulmonology": 53,
@@ -53,13 +53,143 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1334,
-   "medium": 715,
+   "high": 1340,
+   "medium": 717,
    "low": 49
   },
-  "tagCount": 2834
+  "tagCount": 2848
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-05",
+   "type": "anatomy",
+   "unit": "목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-05",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/daily/2026-09-05.md",
+   "snippet": "오늘의 학습 (2026 09 05 · t1 prep) 다음 수업/시험: 2026 09 07 목의 뿌리·인두, 종아리 가쪽·발목 안쪽면·발바닥 Tagging 1까지 5일 · Tagging 2까지 44일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-05 목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 05 · t1 prep) 다음 수업/시험: 2026 09 07 목의 뿌리·인두, 종아리 가쪽·발목 안쪽면·발바닥 Tagging 1까지 5일 · Tagging 2까지 44일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0464",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "깊은발바닥동맥활 — 발등동맥과 가쪽발바닥동맥이 발바닥에서 만나는 고리",
+   "tags": [
+    "branch-tree",
+    "7회차",
+    "발바닥",
+    "발바닥동맥활",
+    "발등동맥",
+    "문합",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §5 발바닥(층 구성표·신경 담당표)·§4 촉지점 — 2026 확정본 7회차 실습주제(발바닥)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0464.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 깊은발바닥동맥활 — 발등동맥과 가쪽발바닥동맥이 발바닥에서 만나는 고리 7회차 · 다리 branch-tree 7회차 발바닥 발바닥동맥활 발등동맥 문합 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §5 발바닥(층 구성표·신경 담당표)·§4 촉지점 — 2026 확정본 7회차 실습주제(발바닥) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0463",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "발목 안쪽면의 두 인대 — 세모인대와 스프링인대, 그리고 뒤정강근 힘줄",
+   "tags": [
+    "distinction",
+    "7회차",
+    "발목안쪽면",
+    "세모인대",
+    "스프링인대",
+    "뒤정강근",
+    "편평발",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §4 발목 안쪽면과 발목굴(굽힘근지지띠 통과 순서·촉지점) — 2026 확정본 7회차 실습주제(발목 안쪽면)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0463.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 발목 안쪽면의 두 인대 — 세모인대와 스프링인대, 그리고 뒤정강근 힘줄 7회차 · 다리 distinction 7회차 발목안쪽면 세모인대 스프링인대 뒤정강근 편평발 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §4 발목 안쪽면과 발목굴(굽힘근지지띠 통과 순서·촉지점) — 2026 확정본 7회차 실습주제(발목 안쪽면) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0462",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "인두수축근 사이 네 틈새 — 무엇이 어디로 드나드는가와 킬리안삼각",
+   "tags": [
+    "course-tracing",
+    "7회차",
+    "인두",
+    "인두수축근",
+    "킬리안삼각",
+    "젠커곁주머니",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §2 인두(부분 경계표·근육 지배표) — 2026 확정본 7회차 실습주제(인두)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0462.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 인두수축근 사이 네 틈새 — 무엇이 어디로 드나드는가와 킬리안삼각 7회차 · 목 course-tracing 7회차 인두 인두수축근 킬리안삼각 젠커곁주머니 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §2 인두(부분 경계표·근육 지배표) — 2026 확정본 7회차 실습주제(인두) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0461",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "목의 뿌리 교감신경줄기와 별신경절 — 호르너증후군이 나오는 자리",
+   "tags": [
+    "clinical-application",
+    "7회차",
+    "목의뿌리",
+    "별신경절",
+    "교감신경줄기",
+    "호르너증후군",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §1 목의 뿌리(위가슴문·앞목갈비근 기준 배치) — 2026 확정본 7회차 실습주제(목의 뿌리)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0461.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 목의 뿌리 교감신경줄기와 별신경절 — 호르너증후군이 나오는 자리 7회차 · 목 clinical-application 7회차 목의뿌리 별신경절 교감신경줄기 호르너증후군 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1 목의 뿌리(위가슴문·앞목갈비근 기준 배치) — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0460",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "가슴관이 목의 뿌리에서 끝나는 자리 — 왼정맥각과 오른림프관의 대비",
+   "tags": [
+    "relation",
+    "7회차",
+    "목의뿌리",
+    "가슴관",
+    "정맥각",
+    "유미가슴",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §1 목의 뿌리(위가슴문을 지나는 구조) — 2026 확정본 7회차 실습주제(목의 뿌리)",
+   "confidence": "high",
+   "date": "2026-09-05",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0460.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴관이 목의 뿌리에서 끝나는 자리 — 왼정맥각과 오른림프관의 대비 7회차 · 목 relation 7회차 목의뿌리 가슴관 정맥각 유미가슴 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1 목의 뿌리(위가슴문을 지나는 구조) — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "kmle-2026-0873",
    "type": "kmle",
@@ -956,6 +1086,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0134.md",
    "snippet": "A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She t",
    "text": "Pathology Hemolysis with Hepatic Vein Thrombosis — Losing the GPI Anchor That Shields Red Cells from Complement PNH hemolytic-anemia GPI-anchor CD55-CD59 complement thrombosis USMLE-style / MedKOS (Robbins & Cotran 10e — red cell disorders; UpToDate PNH) A 28 year old woman comes to the physician because of 2 months of fatigue and several episodes of dark colored urine on awakening that clears later in the day. For 3 days she has had right upper quadrant pain and abdominal distention. She takes no medications. Examination shows scleral icterus, pallor, tender hepatomegaly, and shifting dullness. Abdominal Doppler ultrasonography shows absent flow in the hepatic veins. A peripheral blood smear shows no spherocytes or schistocytes. Laboratory studies are shown. Which of the following best explains this patient's findings? A. Autoantibody mediated clearance of platelet glycoprotein IIb/IIIa complexes B. Deficient protease cleavage of ultra large von Willebrand factor multimers C. Absence of glycosylphosphatidylinositol anchored complement regulatory proteins D. Warm reactive immunoglobulin G bound to red cell membrane antigens E. Disrupted vertical interaction between spectrin and the red cell membrane 아침 첫 소변의 혈색소뇨 + DAT 음성 혈관내 용혈(LDH↑·합토글로빈↓) + 범혈구감소 + 간정맥혈전(Budd Chiari)의 조합은 발작성 야간 혈색소뇨증(PNH)이다. PIGA 체세포 돌연변이로 GPI 앵커 합성이 안 되어 CD55(DAF)·CD59(MIRL)가 적혈구 표면에 실리지 못하고, 보체 공격을 막지 못해 혈관내 용혈과 유리 혈색소에 의한 NO 소모·혈전(특히 간정맥·뇌정맥 등 비전형 부위)이 생긴다. 확진은 유세포분석에서 CD55/CD59 소실. DAT 음성이 자가면역용혈을, 도말에서 구상적혈구·분절적혈구 부재가 HS·TTP를 배제한다."
+  },
+  {
+   "id": "paper-2026-0535",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Anesthesia and analgesia",
+   "confidence": "medium",
+   "date": "2026-09-03",
+   "path": "content/papers/2026/2026-09-03_paper-2026-0535_remote_ischemic_preconditioning_and_survival_in_noncardiac_s.md",
+   "snippet": "Title Remote Ischemic Preconditioning and Survival in Noncardiac Surgery: An Updated Meta analysis of Randomized Trials Authors Labanca Rosa, Oliva Federico Mattia, Fresilli Stefano, Carravetta Maurizio, Vietri Simone, Lombardi Gaetano, Mar",
+   "text": "Surgery scraped pubmed PubMed / Anesthesia and analgesia Title Remote Ischemic Preconditioning and Survival in Noncardiac Surgery: An Updated Meta analysis of Randomized Trials Authors Labanca Rosa, Oliva Federico Mattia, Fresilli Stefano, Carravetta Maurizio, Vietri Simone, Lombardi Gaetano, Marmiere Marilena, Beretta Luigi, et al. Journal / DOI Anesthesia and analgesia · DOI: 10.1213/ANE.0000000000008291 · PMID: 42691252 https://pubmed.ncbi.nlm.nih.gov/42691252/ Abstract BACKGROUND: Remote ischemic preconditioning (RIPC) demonstrated potential benefits in terms of organ protection in preclinical and several clinical settings. This systematic review of randomized controlled trials (RCTs) evaluates the association of RIPC with mortality and other relevant clinical outcomes in patients undergoing noncardiac surgery. METHODS: We conducted a systematic review and meta analysis of RCTs assessing the effects of RIPC in adult patients undergoing noncardiac surgery. A comprehensive search was performed in PubMed, Embase, the Cochrane Central Register of Controlled Trials, ClinicalTrials.gov, and in proceedings from major congresses up to June 2025. Eligible studies compared RIPC with either standard care or a sham intervention. The primary outcome was all cause mortality, assessed at the longest follow up available. Exploratory outcomes included stroke, length of hospital stay, kidney and cardiac function. The risk of bias for each included RCT was assessed using the Cochrane risk of bias tool for randomized trials version 2. Rare binary outcomes were analyzed using odds ratios (ORs) with 95% confidence intervals (CIs) estimated via random effects generalized linear mixed models (GLMMs). Non rare binary outcomes were analyzed using risk ratios (RRs) with 95% CIs via Mantel Haenszel random effects models. RESULTS: We included 79 RCTs involving 9340 patients, predominantly single center in design, with abdominal surgery (25 studies) being the most prevalent clinical setting. RIPC was primarily obtained by inflating a blood pressure cuff on upper limbs. RIPC was not associated with a statistically significant reduction in mortality compared to control in the overall population (OR = 0.79; 95% CI, 0.51 1.24; P = .30), but was associated with a significant reduction in mortality in the subgroup of patients receiving it before anesthesia induction (OR = 0.37; 95% CI, 0.17 0.81; P = .013). Exploratory findings suggested a reduction in stroke rate (OR = 0.41; 95% CI, 0.22 0.78; P = .006), length of hospital stay (mean difference = 0.84 days; P < .001), and peak postoperative serum neutrophil gelatinase associated lipocalin (NGAL; mean difference = 10.27; P = .008) in RIPC patients. The strength of the data reported in the included studies may have been partially limited by the presence of different clinical conditions that could have either diminished or enhanced the effects of RIPC. CONCLUSIONS: RIPC was not associated with a significant reduction in mortality in the noncardiac surgical population, except for the subgroup of patients who received RIPC before anesthesia induction. However, RIPC showed beneficial effects on biomarkers of renal damage, stroke rate, and length of hospital stay. Our results support further investigation of RIPC specifically when applied before the induction of anesthesia. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0534",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medical Internet research",
+   "confidence": "medium",
+   "date": "2026-09-03",
+   "path": "content/papers/2026/2026-09-03_paper-2026-0534_patient_centered_summarization_framework_for_ai_clinical_sum.md",
+   "snippet": "Title Patient Centered Summarization Framework for AI Clinical Summarization: Mixed Methods Study Authors Lizarazo Jimenez Maria, Claros Ana Gabriela, Green Kieran, Toro Tobon David, Larios Felipe, Asthana Sheena, Wenczenovicz Camila, Gueva",
+   "text": "Cardiology scraped pubmed PubMed / Journal of medical Internet research Title Patient Centered Summarization Framework for AI Clinical Summarization: Mixed Methods Study Authors Lizarazo Jimenez Maria, Claros Ana Gabriela, Green Kieran, Toro Tobon David, Larios Felipe, Asthana Sheena, Wenczenovicz Camila, Guevara Maldonado Kerly, et al. Journal / DOI Journal of medical Internet research · DOI: 10.2196/87061 · PMID: 42691463 https://pubmed.ncbi.nlm.nih.gov/42691463/ Abstract BACKGROUND: Large language models (LLMs) are increasingly demonstrating the potential to reach human level performance in generating clinical summaries from patient clinician conversations. LLMs are usually evaluated against clinical summaries that focus mainly on patients' biology and not on their biography (eg, preferences, values, wishes, and concerns). To achieve patient centered care, artificial intelligence clinical summarization must incorporate patient centered domains, implemented through patient centered summaries (PCSs). OBJECTIVE: This study aimed to develop a framework to generate PCS that capture patients' values, preferences, and wishes while ensuring clinical utility for clinicians, and assess if current open source LLMs can achieve human level performance in generating PCS. METHODS: We developed a 4 step mixed methods process to define and evaluate PCS. First, 2 patient and public involvement and engagement groups were convened in the United Kingdom (10 patients and 8 clinicians), who participated in semistructured interviews exploring what personal and contextual information should be included in clinical summaries and how it should be structured for clinical use. Second, findings were translated into an annotation guideline, which was used by 8 clinician annotators to generate gold standard PCS from 88 transcribed patient clinician consultations about the management of atrial fibrillation. Third, 16 consultations were used to iteratively develop and refine a prompt aligned with the annotation guideline. Finally, 5 LLMs (Llama 3.2 3B [Meta AI], Llama 3.1 8B [Meta AI], Mistral 8B [Mistral AI], Gemma 3 4B [Google DeepMind], and Qwen3 8B [Alibaba]) generated summaries from 72 consultations using zero shot and few shot prompting, which were evaluated against gold standard PCS using ROUGE L (Recall Oriented Understudy for Gisting Evaluation Longest Common Subsequence) and BERTScore (Bidirectional Encoder Representations from Transformers Score) and assessed for correctness, completeness, conciseness, patient centeredness, and fluency. RESULTS: Patients emphasized that summaries should include (1) lifestyle routines and daily functioning as indicators of independence or disruption; (2) the presence and role of social support systems, especially during crises; (3) recent life events or stressors, such as trauma, loss, or caregiving demands; and (4) care preferences, values, and communication styles that provide meaning or reflect autonomy. Clinicians sought summaries that included a concise functional baseline, psychosocial context, and emotional cues, preferably in a structured, clinically digestible format. In the 72 consultations (mean age 70, SD 11 y; 32/72, 44.4% female), the best zero shot performance was observed with Mistral 8B (ROUGE L 0.189) and Llama 3.1 8B (BERTScore 0.673). The best few shot prompting was found with 3 examples using Llama 3.1 8B (ROUGE L 0.206 and BERTScore 0.683). CONCLUSIONS: The open source LLMs we evaluated did not achieve human level performance in generating PCSs. Without task specific fine tuning, current open source LLMs cannot reach human level performance in this task. Our framework serves as an innovative guideline for developing gold standard PCS for artificial intelligence clinical tasks. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-03",
