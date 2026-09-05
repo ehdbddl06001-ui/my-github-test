@@ -2,6 +2,72 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0545",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "Left-Sided Pseudomonas Infective Endocarditis Presenting with Septic Shock and Ischemic Stroke in a Non-Injection Drug User Receiving PD-L1 Inhibitor Therapy",
+  "authors": [
+   "Maloul Gilgamish",
+   "Singla Arnav K",
+   "Ardeshna Nelish",
+   "Swearingen Sean"
+  ],
+  "journal": "Cureus",
+  "doi": "10.7759/cureus.113961",
+  "pmid": "42698402",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42698402/",
+  "pubdate": "2026-08",
+  "date": "2026-09-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Infective endocarditis from Pseudomonas aeruginosa is a rare but serious infection with high morbidity and mortality. We report the case of a 66-year-old female with small cell lung cancer and no history of injection drug use or structural heart disease who developed left-sided infective endocarditis from Pseudomonas aeruginosa. Her risk factors for this severe infection included healthcare exposure, a central venous catheter, malignancy, and recent PD-L1 inhibitor therapy with durvalumab. She was ultimately deemed not a surgical candidate and, given her poor prognosis, her family elected for discharge to home hospice with palliative therapy. This case highlights the high morbidity of Pseudomonas endocarditis despite combination antipseudomonal antibiotics and the shifting epidemiology of Pseudomonas endocarditis to left-sided infection in non-injection drug users with complex comorbidities, affecting surgical candidacy. We also discuss whether immunotherapy may represent an additional, hypothesis-generating risk factor for serious infections such as Pseudomonas endocarditis.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0544",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Comprehensive Risk Factor Control Attenuates Excess Cardiovascular Risk in Rheumatoid Arthritis: A Prospective Cohort Study",
+  "authors": [
+   "Fan Hongxuan",
+   "Zi Xiaoyu",
+   "Li Tianjiao",
+   "Zhou Boda",
+   "Wang Caihong",
+   "Liu Lei"
+  ],
+  "journal": "European journal of preventive cardiology",
+  "doi": "10.1093/eurjpc/zwag467",
+  "pmid": "42698343",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42698343/",
+  "pubdate": "2026-09-05",
+  "date": "2026-09-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVE:** Rheumatoid arthritis (RA) confers substantially elevated cardiovascular disease (CVD) risk. We quantified the association between joint risk factor control and incident CVD among RA patients and examined modification by genetic susceptibility.\n\n**METHODS:** In this prospective UK Biobank cohort, 4,426 RA patients and 17,704 matched non-RA controls were followed for CVD, coronary heart disease (CHD), stroke, and heart failure. A nine-component risk factor control score (0-9) was constructed, incorporating healthy diet, smoking, physical activity, blood pressure, glycated hemoglobin, low-density lipoprotein cholesterol, high-sensitivity C-reactive protein, body mass index, and estimated glomerular filtration rate. Cox models, sensitivity analyses, and restricted mean survival time (RMST) were applied. Least absolute shrinkage and selection operator (LASSO) regression identified CVD-predictive metabolomic features; mediation analysis quantified the metabolomic risk score (MRS) contribution. Polygenic risk score (PRS) joint analyses assessed genetic effect modification.\n\n**RESULTS:** Better control was associated with graded CVD risk reduction (moderate: HR 0.77, 95% CI 0.64-0.93; high: HR 0.46, 95% CI 0.33-0.64 vs. low). High control yielded CVD and CHD risks comparable to non-RA controls and lower stroke risk (HR 0.34, 95% CI 0.13-0.91). RMST showed +3.58 CVD-free years (95% CI 2.49-4.68; P < 0.001). Mediation indicated partial MRS mediation (indirect proportion 34.1%; 20.8% adjusted). No significant interaction with MRS; high control attenuated risk even in high genetic risk.\n\n**CONCLUSION:** Comprehensive control attenuates and may offset RA-excess CVD risk, even with high genetic susceptibility. The effect is partially metabolically mediated yet independent of metabolic status, supporting dual-pathway prevention.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0543",
   "topic": "Surgery",
   "subtopic": "",
