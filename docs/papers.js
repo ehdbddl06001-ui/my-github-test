@@ -2,6 +2,80 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0547",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Association Between Serum Ferritin and Hemoglobin Levels in Pregnant Women: Implications for Early Iron Deficiency Screening",
+  "authors": [
+   "Ahmed Doaa",
+   "Amin Rawaal",
+   "Raman Vidya",
+   "Hashmi Madina",
+   "Hulo Mohammad Ghaith",
+   "Albousen Baraa",
+   "Hameed Aleena",
+   "Mani Tripathi Kaushalendra",
+   "et al."
+  ],
+  "journal": "Cureus",
+  "doi": "10.7759/cureus.114043",
+  "pmid": "42701825",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42701825/",
+  "pubdate": "2026-08",
+  "date": "2026-09-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Iron deficiency is the leading cause of anemia during pregnancy, and serum ferritin is the most widely used biochemical marker of body iron stores. However, population-specific evidence describing the relationship between serum ferritin concentrations and hemoglobin levels remains limited.\n\n**PURPOSE:** This study aimed to assess the relationship between serum ferritin and hemoglobin levels among pregnant women attending antenatal care.\n\n**METHODS:** A cross-sectional, laboratory-based study was conducted among 522 pregnant women in their second and third trimesters. Serum ferritin concentrations were measured using the hospital's standardized laboratory procedures. Iron deficiency was defined as a serum ferritin concentration <30 µg/L, and anemia was defined as a hemoglobin concentration <11 g/dL. Statistical analyses included descriptive statistics, independent-samples Student's t-tests, chi-square tests, binary logistic regression, and receiver operating characteristic (ROC) curve analysis.\n\n**FINDINGS:** Iron deficiency was identified in 209 participants (40.0%), and anemia was present in 235 participants (45.0%). Serum ferritin concentrations and mean corpuscular volume (MCV) were significantly lower in women with anemia than in those without anemia (p < 0.001). Serum ferritin was independently associated with anemia (OR = 0.95, p < 0.001). Notably, 35 women without anemia (12.2%) had low serum ferritin concentrations, indicating subclinical iron deficiency. ROC curve analysis demonstrated good discriminative performance, with serum ferritin showing greater diagnostic accuracy than MCV. The optimal serum ferritin cutoff was 17.0 µg/L, with a sensitivity of 81% and a specificity of 83%.\n\n**CONCLUSION:** Pregnant women with anemia had significantly lower serum ferritin concentrations than those without anemia, and a substantial proportion of women with normal hemoglobin levels had depleted iron stores. These findings support the potential value of serum ferritin as an adjunctive marker for assessing iron status during pregnancy. However, prospective studies are needed to further evaluate its clinical utility.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0546",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Prospective Evaluation of Quality-of-Life Improvement After Dapagliflozin Initiation in a Greek Population With HFrEF: The EVOLUTION-HF 12-Month Results",
+  "authors": [
+   "Potoupni Victoria",
+   "Boulmpou Aristi",
+   "Maragkoudakis Spyridon",
+   "Briasoulis Alexandros",
+   "Foukarakis Emmanouil",
+   "Stavrati Alexia",
+   "Papadopoulos Konstantinos",
+   "Naka Katerina K",
+   "et al."
+  ],
+  "journal": "Clinical cardiology",
+  "doi": "10.1002/clc.70466",
+  "pmid": "42701883",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42701883/",
+  "pubdate": "2026-09",
+  "date": "2026-09-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**INTRODUCTION:** Heart failure with reduced ejection fraction (HFrEF), defined by a left ventricular ejection fraction ≤ 40%, remains a major global health challenge, associated with substantial morbidity, mortality, and impaired quality of life (QoL), particularly in patients with higher NYHA class. Sodium-glucose cotransporter-2 (SGLT2) inhibitors have emerged as a cornerstone therapy for HFrEF, significantly reducing hospitalizations and mortality regardless of glycemic status, sex, race, or comorbidities.\n\n**METHODS:** EVOLUTION-HF was an observational, multi-center, longitudinal cohort study involving 257 consecutive patients diagnosed with HFrEF who initiated dapagliflozin in a routine clinical setting in Greece. The primary objectives were to characterize baseline demographic and clinical features of patients newly initiated on dapagliflozin for HFrEF and to evaluate dapagliflozin treatment patterns, including discontinuation timing, reasons for discontinuation, and concomitant heart failure and glucose-lowering therapies over time. The secondary objectives are to describe patient-reported outcomes using the KCCQ-23 and to assess adherence to dapagliflozin among patients with HFrEF.\n\n**RESULTS:** A total of 257 patients were enrolled and the follow-up period lasted for 12 months. Significant improvements among all KCCQ-23 scores were observed from baseline to 12-months post dapagliflozin initiation, revealing that the initiation and optimization of guideline-directed medical therapy in routine clinical practice provides improvement to quality of life over time.\n\n**CONCLUSIONS:** Dapagliflozin was safe and well-tolerated throughout the observation period. Although benefits are observed in most patients, individuals aged > 65 years, with prior myocardial infarction, or recent hospitalizations show a diminished response, underscoring the need for tailored management and closer follow-up in these higher-risk groups.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0545",
   "topic": "Hematology-Oncology",
   "subtopic": "",
