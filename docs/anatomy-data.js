@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-09-05",
+ "generated": "2026-09-06",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -9795,9 +9795,185 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0465",
+   "session": 7,
+   "title": "Tagging 1 종합 복습 — 1–7회차",
+   "subtitle": "통로·공간·다발 총정리 + 헷갈리는 짝 대조 + 암기 3종",
+   "sections": [
+    "1. 1–2회차",
+    "2. 3회차",
+    "3. 4회차",
+    "4. 5회차",
+    "5. 6회차",
+    "6. 7회차",
+    "7. 통로·공간 총정리 — 태깅 최빈출",
+    "8. 헷갈리는 짝 — 나란히 보기",
+    "9. 신경 손상 지도 — \"이거 다치면?\"",
+    "10. 동맥 문합 — 닫힌 고리로 외운다"
+   ],
+   "figs": [
+    "diag-anterior-leg-foot-labeled.svg",
+    "diag-anterior-thigh-labeled.svg",
+    "diag-back-layers-rami-labeled.svg",
+    "diag-gluteal-foramina-labeled.svg",
+    "diag-infratemporal-nerve-labeled.svg",
+    "diag-intercostal-layers-labeled.svg",
+    "diag-neck-triangles-labeled.svg",
+    "diag-popliteal-fossa-labeled.svg",
+    "diag-scapular-spaces-labeled.svg",
+    "diag-suboccipital-labeled.svg",
+    "tree-s07-bundle-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "긴갈래 하나가 어깨뼈부위를 가른다",
+     "full": "가쪽=네모공간(겨드랑신경) · 안쪽=세모공간(어깨휘돌이동맥) · 큰원근 아래=세모간격(노신경)",
+     "note": "세 공간을 따로 외우지 말고 위팔세갈래근 긴갈래 기준 하나로"
+    },
+    {
+     "key": "앞은 정맥, 뒤는 동맥·얼기",
+     "full": "빗장밑정맥=앞목갈비근 앞 / 빗장밑동맥·팔신경얼기=목갈비근틈새(뒤)",
+     "note": "가로막신경만 예외로 앞목갈비근 앞면을 탄다"
+    },
+    {
+     "key": "Tom, Dick, And Very Nervous Harry",
+     "full": "뒤정강근 · 긴발가락굽힘근 · 뒤정강동맥 · 정강신경 · 긴엄지굽힘근",
+     "note": "발목굴을 안쪽복사 쪽에서 뒤로 지나는 순서"
+    },
+    {
+     "key": "NAVEL",
+     "full": "넙다리삼각 가쪽→안쪽: 신경 Nerve · 동맥 Artery · 정맥 Vein · 빈공간 Empty · 림프 Lymph",
+     "note": "동맥이 정맥 가쪽 — 대퇴동맥 천자는 맥 짚고 그 자리, 정맥은 안쪽"
+    },
+    {
+     "key": "VAN은 갈비뼈 아래를 탄다",
+     "full": "갈비사이고랑 위→아래: 정맥 Vein · 동맥 Artery · 신경 Nerve",
+     "note": "그래서 흉관은 갈비뼈 위모서리를 타고 넣는다"
+    },
+    {
+     "key": "얕은·중간층은 앞가지, 깊은층만 뒤가지",
+     "full": "등세모근(XI 부신경)만 또 예외 — 뇌신경이 등 근육을 지배",
+     "note": "등 근육 신경지배 문제의 절반이 이 두 문장"
+    },
+    {
+     "key": "오른쪽은 빗장밑, 왼쪽은 대동맥활",
+     "full": "되돌이후두신경이 감아 도는 구조가 좌우 다르다",
+     "note": "왼쪽이 길어 종격동 병변·심장수술에서 잘 다친다"
+    },
+    {
+     "key": "구멍은 근육이 만든다",
+     "full": "궁둥구멍근=큰궁둥구멍을 위·아래로 · 앞목갈비근=빗장밑동맥을 3부로 · 작은가슴근=겨드랑동맥을 3부로",
+     "note": "태깅에서 '이 구조가 어디를 지나나'는 늘 근육 기준"
+    },
+    {
+     "key": "칸마다 동맥이 있는 건 아니다",
+     "full": "종아리 가쪽칸 = 얕은종아리신경만 자기 것, 혈액은 종아리동맥 곁가지",
+     "note": "통념의 예외 — 자주 나온다"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-07",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "neck",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0030"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0037"
+    ],
+    "relation": [
+     "anatomy-2026-0446",
+     "anatomy-2026-0447"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0044",
+    "anatomy-2026-0048",
+    "anatomy-2026-0355",
+    "anatomy-2026-0043",
+    "anatomy-2026-0017",
+    "anatomy-2026-0447",
+    "anatomy-2026-0356",
+    "anatomy-2026-0045",
+    "anatomy-2026-0050",
+    "anatomy-2026-0359"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-3": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-7": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-06",
    "phase": "t1-prep",
