@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2155,
+  "total": 2161,
   "byType": {
+   "usmle": 132,
    "anatomy": 590,
    "kmle": 875,
    "paper": 547,
-   "usmle": 126,
    "ailab": 14,
    "basic": 3
   },
@@ -19,11 +19,11 @@ window.MEDKOS_INDEX = {
    "Cardiology": 172,
    "Nephrology": 144,
    "Infectious Disease": 120,
-   "Pediatrics": 99,
+   "Pediatrics": 100,
    "Hematology-Oncology": 83,
    "Pathology": 76,
    "Obstetrics & Gynecology": 67,
-   "Neurology": 65,
+   "Neurology": 66,
    "Psychiatry": 65,
    "Surgery": 60,
    "Endocrinology": 56,
@@ -36,12 +36,12 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 54,
    "Hematology": 53,
    "Laboratory Medicine": 52,
-   "Physiology": 15,
+   "Physiology": 16,
    "Pharmacology": 10,
+   "Biochemistry": 9,
    "Microbiology": 9,
-   "Biochemistry": 8,
-   "Immunology": 6,
-   "Internal Medicine": 6,
+   "Immunology": 7,
+   "Internal Medicine": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,142 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1377,
+   "high": 1383,
    "medium": 729,
    "low": 49
   },
-  "tagCount": 2960
+  "tagCount": 2975
  },
  "docs": [
+  {
+   "id": "usmle-2026-0145",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Intermittent Colicky Pain in an Infant with a Target Sign — Reduction Without a Knife When There Is No Peritonitis",
+   "tags": [
+    "intussusception",
+    "air-enema",
+    "target-sign",
+    "currant-jelly-stool",
+    "pediatric-abdomen",
+    "ultrasound"
+   ],
+   "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Ileus, Adhesions, Intussusception; Ashcraft's Pediatric Surgery 7e — Intussusception)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0145.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of 10 hours of episodes of inconsolable crying during which he draws his knees toward his chest; each episode lasts several minutes and is followed by a period during which he",
+   "text": "Pediatrics Intermittent Colicky Pain in an Infant with a Target Sign — Reduction Without a Knife When There Is No Peritonitis intussusception air-enema target-sign currant-jelly-stool pediatric-abdomen ultrasound USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Ileus, Adhesions, Intussusception; Ashcraft's Pediatric Surgery 7e — Intussusception) A 9 month old boy is brought to the emergency department because of 10 hours of episodes of inconsolable crying during which he draws his knees toward his chest; each episode lasts several minutes and is followed by a period during which he is quiet and appears drowsy. He has vomited three times, most recently bile stained fluid, and 1 hour ago passed a stool mixed with mucus and dark red blood. He had an upper respiratory tract infection 1 week ago. He was born at term and has been growing normally. Examination between episodes shows a lethargic but arousable infant with a soft, nondistended abdomen; a sausage shaped mass is palpable in the right upper quadrant, and the right lower quadrant feels empty. There is no rebound tenderness or guarding. Bowel sounds are present. A supine and left lateral decubitus abdominal radiograph shows a paucity of gas in the right lower quadrant without free intraperitoneal air. Abdominal ultrasonography shows a 3.5 cm transverse mass with concentric alternating hyperechoic and hypoechoic rings and preserved color Doppler flow. An intravenous fluid bolus is given and a nasogastric tube is placed. Laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Diagnostic laparoscopy B. Intravenous antibiotics and serial examinations C. Air enema under fluoroscopic guidance D. Upper gastrointestinal series with small bowel follow through E. Contrast enhanced computed tomography of the abdomen 6–36개월 영아의 간헐적 산통성 복통(무릎 당김) + 발작 사이 기면 + 담즙성 구토 + 점액·혈성 변 + 우상복부 소시지형 종괴 + 우하복부 비어 있음 + 초음파의 동심원(표적) 소견 = 장중첩증(회결장형). 복막염 징후·복부팽만·자유공기가 없고 활력징후가 수액에 반응하므로 비수술적 정복(투시하 공기 정복, 성공률 80–95%)이 1차 치료다. 초음파에서 도플러 혈류가 보존된 것은 장허탈이 아직 없다는 뜻이라 정복 시도 안전성을 뒷받침한다. 정복 전 반드시 수액 소생·비위관 감압·수술팀 대기(천공 시 즉시 수술)를 갖춘다. 개복/복강경은 천공·복막염·쇼크·정복 실패·병적 선도점이 있을 때의 선택이다."
+  },
+  {
+   "id": "usmle-2026-0144",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Ascending Paralysis with a Falling Vital Capacity — Securing the Airway Before the Blood Gas Turns Abnormal",
+   "tags": [
+    "Guillain-Barre-syndrome",
+    "neuromuscular-respiratory-failure",
+    "forced-vital-capacity",
+    "intubation",
+    "20-30-40-rule",
+    "IVIG"
+   ],
+   "source": "USMLE-style / MedKOS (Bradley and Daroff's Neurology in Clinical Practice 8e — Guillain-Barré Syndrome; Leonhard SE et al. Nat Rev Neurol 2019 — Diagnosis and management of GBS in ten steps)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0144.md",
+   "snippet": "A 34 year old woman (weight 70 kg) is admitted to the hospital because of 5 days of progressive weakness that began in her feet and has ascended to involve her thighs and hands. Two weeks ago she had 3 days of watery diarrhea. Over the past",
+   "text": "Neurology Ascending Paralysis with a Falling Vital Capacity — Securing the Airway Before the Blood Gas Turns Abnormal Guillain-Barre-syndrome neuromuscular-respiratory-failure forced-vital-capacity intubation 20-30-40-rule IVIG USMLE-style / MedKOS (Bradley and Daroff's Neurology in Clinical Practice 8e — Guillain-Barré Syndrome; Leonhard SE et al. Nat Rev Neurol 2019 — Diagnosis and management of GBS in ten steps) A 34 year old woman (weight 70 kg) is admitted to the hospital because of 5 days of progressive weakness that began in her feet and has ascended to involve her thighs and hands. Two weeks ago she had 3 days of watery diarrhea. Over the past 12 hours she has developed difficulty swallowing liquids and a weak, nasal sounding voice, and she now needs to pause between sentences. Examination shows symmetric flaccid weakness that is 2/5 in the lower extremities and 3/5 in the upper extremities, absent deep tendon reflexes in all four limbs, bilateral facial weakness, and a weak cough with pooling of secretions in the oropharynx. Sensation is mildly reduced to vibration in the toes. Bedside spirometry has been repeated every 6 hours since admission; the latest results, together with other studies, are shown. Which of the following is the most appropriate next step in management? A. Initiation of plasma exchange B. Noninvasive positive pressure ventilation C. Intravenous methylprednisolone D. Elective endotracheal intubation E. Supplemental oxygen and repeat spirometry in 6 hours 설사 후 상행성 대칭 이완성 마비 + 반사 소실 + 뇌척수액 단백 세포 해리 = 길랭 바레증후군. 문제는 진단이 아니라 '호흡근·연수 마비의 다음 단계'다. FVC 1.1 L 는 체중 70 kg 기준 약 16 mL/kg 로 20 mL/kg 미만이고 12시간 만에 절반으로 급감, NIF −20 cmH2O 는 −30 보다 약해 20/30/40 규칙을 모두 만족한다. 여기에 연하곤란·약한 기침·분비물 저류·양측 안면마비(연수 침범)와 자율신경 불안정(빈맥·고혈압)까지 겹치므로 흡인·급성 호흡정지 위험이 높다. 신경근 호흡부전은 SpO2·PaCO2 가 정상인 채로 갑자기 무너지므로 가스분석이 나빠질 때까지 기다리면 늦다 → 지금 통제된 환경에서 선택적 기관삽관. IVIG/혈장교환은 삽관 뒤 곧 시작하고, 스테로이드는 GBS 에 효과가 없으며, 비침습환기는 연수마비·분비물 저류 환자에서 흡인 위험 때문에 부적절하다."
+  },
+  {
+   "id": "usmle-2026-0143",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Cardiac Arrest Persisting After the Second Shock — Which Drug Comes First Along the Refractory Ventricular Fibrillation Algorithm",
+   "tags": [
+    "cardiac-arrest",
+    "ventricular-fibrillation",
+    "ACLS",
+    "epinephrine",
+    "amiodarone",
+    "defibrillation",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (AHA 2020 Guidelines for CPR and ECC — Adult Advanced Cardiovascular Life Support; 2023 AHA Focused Update on Adult ACLS)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0143.md",
+   "snippet": "A 66 year old man is brought to the emergency department 40 minutes after the onset of crushing substernal chest pain and diaphoresis. His vital signs and initial laboratory studies at arrival are shown, and an initial electrocardiogram sho",
+   "text": "Internal Medicine Cardiac Arrest Persisting After the Second Shock — Which Drug Comes First Along the Refractory Ventricular Fibrillation Algorithm cardiac-arrest ventricular-fibrillation ACLS epinephrine amiodarone defibrillation ECG USMLE-style / MedKOS (AHA 2020 Guidelines for CPR and ECC — Adult Advanced Cardiovascular Life Support; 2023 AHA Focused Update on Adult ACLS) A 66 year old man is brought to the emergency department 40 minutes after the onset of crushing substernal chest pain and diaphoresis. His vital signs and initial laboratory studies at arrival are shown, and an initial electrocardiogram shows ST segment elevation in leads V2 through V5. While the catheterization laboratory is being activated, he suddenly becomes unresponsive. The cardiac monitor shows the rhythm below, and no carotid pulse is palpable. Chest compressions are started, a biphasic 200 J shock is delivered, and compressions are resumed. At the rhythm check after 2 minutes the monitor shows the same rhythm; a second 200 J shock is delivered and chest compressions are resumed immediately. Intravenous access is in place. Which of the following is the most appropriate next step in pharmacologic management? A. Intravenous amiodarone 300 mg bolus B. Intravenous epinephrine 1 mg C. Intravenous atropine 1 mg D. Intravenous magnesium sulfate 2 g E. Intravenous sodium bicarbonate 50 mEq STEMI 환자가 갑자기 무반응·무맥이 되고 모니터에 P파·QRS·T파 구분이 없는 불규칙한 무질서 파형 = 심실세동(ventricular fibrillation). 충격 가능 리듬이므로 제세동 → 2분 CPR → 리듬 확인 → 재충격이 뼈대다. AHA ACLS 심정지 알고리즘에서 약물은 2번째 충격 후 CPR 중 epinephrine 1 mg IV(이후 3–5분마다) 가 먼저이고, amiodarone(300 mg → 150 mg) 또는 lidocaine 은 3번째 충격에도 지속되는 '불응성' VF/pVT 에서 고려한다. 이 시점(2번째 충격 직후)의 다음 약제는 epinephrine 이다. 칼륨·마그네슘이 정상이고 QT 연장 근거가 없으므로 magnesium 은 근거 없고, atropine 은 서맥·무수축(2010 이후 무수축·PEA 에서도 제외)용, bicarbonate 는 고칼륨·TCA 중독 등 특수 상황용이다."
+  },
+  {
+   "id": "usmle-2026-0142",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Postoperative Hypoxemia That Barely Responds to 100% Oxygen — Distinguishing Shunt from Mismatch and Hypoventilation",
+   "tags": [
+    "hypoxemia",
+    "shunt",
+    "V/Q-mismatch",
+    "atelectasis",
+    "A-a-gradient",
+    "100%-oxygen-test",
+    "postoperative"
+   ],
+   "source": "USMLE-style / MedKOS (West's Respiratory Physiology 11e — Ventilation-Perfusion Relationships; Guyton & Hall 14e — Pulmonary Gas Exchange)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0142.md",
+   "snippet": "A 58 year old woman is evaluated on the second postoperative day after an open right hemicolectomy for colon cancer because of shortness of breath. She has been reluctant to take deep breaths or cough because of incisional pain and has not ",
+   "text": "Physiology Postoperative Hypoxemia That Barely Responds to 100% Oxygen — Distinguishing Shunt from Mismatch and Hypoventilation hypoxemia shunt V/Q-mismatch atelectasis A-a-gradient 100%-oxygen-test postoperative USMLE-style / MedKOS (West's Respiratory Physiology 11e — Ventilation-Perfusion Relationships; Guyton & Hall 14e — Pulmonary Gas Exchange) A 58 year old woman is evaluated on the second postoperative day after an open right hemicolectomy for colon cancer because of shortness of breath. She has been reluctant to take deep breaths or cough because of incisional pain and has not used her incentive spirometer. She has no history of lung disease and has never smoked. Examination shows shallow respirations. Breath sounds are absent and percussion is dull over the left lung base, and the trachea is deviated slightly to the left. There is no calf tenderness or leg swelling. A chest radiograph shows homogeneous opacification of the left lower lobe with elevation of the left hemidiaphragm and shift of the mediastinum toward the opacity. Arterial blood gas analysis is performed on room air and repeated after 20 minutes of breathing 100% oxygen through a nonrebreather mask. Results are shown. Which of the following best explains the arterial oxygen tension in this patient? A. Perfusion of alveolar units that receive no ventilation B. Ventilation of alveolar units that receive no perfusion C. Thickening of the alveolar capillary diffusion barrier D. Reduction of total alveolar ventilation E. Reduction of mixed venous oxygen content 상복부 수술 후 통증으로 얕은 호흡 → 좌하엽 무기폐(허탈): 호흡음 소실·타진 탁음·기관과 종격동이 병변 쪽으로 당김·횡격막 상승. 허탈된 폐포는 환기가 0인데 관류는 계속되므로 정맥혈이 산소화 없이 좌심으로 섞이는 진성 션트(V/Q = 0) 가 생긴다. 션트의 특징은 ① PaCO2 가 정상~낮다(남은 폐포가 과환기로 CO2 를 보상 — 저환기 배제), ② A–a 차가 크다, ③ 100% 산소로 PaO2 가 거의 오르지 않는다 (션트 혈류는 산소를 만나지 못하고, 산소화된 혈액은 이미 포화돼 헤모글로빈이 더 실을 수 없음). V/Q 불균형(V/Q 낮지만 0 은 아님)이나 확산장애는 100% 산소로 PaO2 가 크게 교정된다."
+  },
+  {
+   "id": "usmle-2026-0141",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Recurrent Abscesses with Granulomatous Colitis — What the Offending Organisms Have in Common When the Oxidative Burst Fails",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "catalase-positive",
+    "dihydrorhodamine",
+    "phagocyte-defect",
+    "Serratia",
+    "Aspergillus"
+   ],
+   "source": "USMLE-style / MedKOS (Abbas Cellular and Molecular Immunology 10e — Phagocyte Defects; Nelson Textbook of Pediatrics 22e — Chronic Granulomatous Disease)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0141.md",
+   "snippet": "A 2 year old boy is brought to the emergency department because of 3 days of fever and a painful, enlarging swelling on the left side of his neck. Over the past 18 months he has had a liver abscess that grew Serratia marcescens, two episode",
+   "text": "Immunology Recurrent Abscesses with Granulomatous Colitis — What the Offending Organisms Have in Common When the Oxidative Burst Fails chronic-granulomatous-disease NADPH-oxidase catalase-positive dihydrorhodamine phagocyte-defect Serratia Aspergillus USMLE-style / MedKOS (Abbas Cellular and Molecular Immunology 10e — Phagocyte Defects; Nelson Textbook of Pediatrics 22e — Chronic Granulomatous Disease) A 2 year old boy is brought to the emergency department because of 3 days of fever and a painful, enlarging swelling on the left side of his neck. Over the past 18 months he has had a liver abscess that grew Serratia marcescens, two episodes of pneumonia, one of which yielded Aspergillus fumigatus from bronchoalveolar lavage fluid, and a suppurative cervical lymphadenitis that required incision and drainage. He also has chronic bloody diarrhea, and colonoscopy 2 months ago showed patchy colitis with noncaseating granulomas on biopsy. His weight is below the 3rd percentile. Vaccinations are up to date. Examination shows a fluctuant, tender 4 cm mass in the left anterior cervical region, mild hepatosplenomegaly, and perianal skin tags with a draining fistula. Laboratory studies are shown. Organisms responsible for the infections in this patient most likely share which of the following characteristics? A. Antiphagocytic polysaccharide capsule B. Secretion of an IgA cleaving protease C. Obligate replication inside macrophages D. Endotoxin triggered complement consumption E. Enzymatic breakdown of hydrogen peroxide 재발성 화농성 림프절염·간농양(Serratia)·아스페르길루스 폐렴·육아종성 대장염·성장부진 + 면역글로불린·T세포·보체 정상 + DHR 123 유세포검사에서 PMA 자극 후 형광 증가 없음 = 만성육아종병(chronic granulomatous disease, CGD). NADPH oxidase 결함으로 식세포가 초과산화물(O2⁻)·H2O2를 못 만든다. 그런데 catalase 음성균(연쇄상구균·폐렴구균 등)은 스스로 만든 H2O2를 분해하지 못해 식세포가 그 H2O2를 '빌려' myeloperoxidase로 차아염소산을 만들어 죽일 수 있다. catalase 양성균(S. aureus, Serratia, Burkholderia, Nocardia, Aspergillus)은 자기 H2O2를 분해해 버려 이 우회로마저 막으므로, CGD 감염은 거의 전부 catalase 양성 미생물이다. 정답은 '과산화수소를 효소로 분해한다'."
+  },
+  {
+   "id": "usmle-2026-0140",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis",
+   "tags": [
+    "urea-cycle",
+    "OTC-deficiency",
+    "hyperammonemia",
+    "orotic-aciduria",
+    "carbamoyl-phosphate",
+    "X-linked"
+   ],
+   "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0140.md",
+   "snippet": "A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of ",
+   "text": "Biochemistry Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis urea-cycle OTC-deficiency hyperammonemia orotic-aciduria carbamoyl-phosphate X-linked USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders) A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of life. He has no fever and there has been no diarrhea. A maternal uncle died in the neonatal period of an undiagnosed illness. Physical examination shows a lethargic, hypotonic infant with rapid, deep respirations; the anterior fontanelle is full. There is no hepatomegaly, rash, or dysmorphic features. Blood cultures are obtained. Laboratory studies are shown. Accumulation of which of the following intermediates most directly accounts for the abnormal urinary finding in this patient? A. Citrulline B. N Acetylglutamate C. Carbamoyl phosphate D. Argininosuccinate E. Ornithine 생후 3일 남아의 고암모니아혈증 + 호흡성 알칼리증(암모니아의 호흡중추 자극) + 정상 음이온차·정상 젖산·케톤 음성(유기산혈증 배제) + 낮은 BUN·낮은 시트룰린 + 오로트산뇨 = ornithine transcarbamylase(OTC) 결핍. X연관이라 남아·외삼촌 병력이 맞아 든다. OTC가 막히면 미토콘드리아에서 CPS I가 만든 carbamoyl phosphate가 시트룰린으로 넘어가지 못해 쌓이고, 세포질로 새어 나와 피리미딘 합성 경로(aspartate transcarbamoylase → dihydroorotate → orotate)로 흘러 오로트산이 과잉 생성·배설된다. 그래서 오로트산뇨는 '미토콘드리아 carbamoyl phosphate 축적'의 직접 산물이며, CPS I 결핍(오로트산 정상·낮음)과 OTC 결핍을 가르는 핵심 표지다."
+  },
   {
    "id": "anatomy-daily-2026-09-08",
    "type": "anatomy",
