@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-09-06",
+ "generated": "2026-09-07",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -9874,9 +9874,119 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0466",
+   "session": 7,
+   "title": "Tagging 1 모의고사 — 30문항",
+   "subtitle": "1–7회차 전 범위 · 서술형 30문항 · 45분 · 정답·해설 합본",
+   "sections": [
+    "1. 시험 정보와 이 세트의 형식",
+    "2. 구성표 — 6개 자리 × 5문항",
+    "3. 채점 규정 — 내용과 표기를 따로 본다",
+    "4. 채점 뒤 — 구멍을 회차로 환산한다",
+    "5. 마지막 이틀 체크리스트"
+   ],
+   "figs": [],
+   "mnemonics": [],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-08",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0035",
+     "anatomy-2026-0036"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0040",
+    "anatomy-2026-0046",
+    "anatomy-2026-0044",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039",
+    "anatomy-2026-0043",
+    "anatomy-2026-0015",
+    "anatomy-2026-0157",
+    "anatomy-2026-0047",
+    "anatomy-2026-0045",
+    "anatomy-2026-0048",
+    "anatomy-2026-0052"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-3": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-7": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ],
+    "d-14": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0380",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0044",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-07",
    "phase": "t1-prep",

@@ -1,22 +1,22 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-06",
+ "generated": "2026-09-07",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2151,
+  "total": 2155,
   "byType": {
+   "anatomy": 590,
    "kmle": 875,
-   "anatomy": 588,
-   "paper": 545,
+   "paper": 547,
    "usmle": 126,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 588,
-   "Cardiology": 171,
+   "Anatomy": 590,
+   "Cardiology": 172,
    "Nephrology": 144,
    "Infectious Disease": 120,
    "Pediatrics": 99,
@@ -35,7 +35,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 54,
    "Rheumatology": 54,
    "Hematology": 53,
-   "Laboratory Medicine": 51,
+   "Laboratory Medicine": 52,
    "Physiology": 15,
    "Pharmacology": 10,
    "Microbiology": 9,
@@ -53,13 +53,53 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1375,
-   "medium": 727,
+   "high": 1377,
+   "medium": 729,
    "low": 49
   },
-  "tagCount": 2957
+  "tagCount": 2960
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-08",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-08",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/anatomy/daily/2026-09-08.md",
+   "snippet": "오늘의 학습 (2026 09 08 · t1 prep) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 2일 · Tagging 2까지 41일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-08 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 08 · t1 prep) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 2일 · Tagging 2까지 41일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0466",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "Tagging 1 모의고사 — 30문항 실전 세트 (D-2)",
+   "tags": [
+    "태깅1",
+    "모의고사",
+    "실전",
+    "30문항",
+    "1회차",
+    "2회차",
+    "3회차",
+    "4회차",
+    "5회차",
+    "6회차",
+    "7회차"
+   ],
+   "source": "기존 문항 은행 content/anatomy/questions/tagging-1/ 334문항에서 30개 선별(결정론적 구성표) — 새 사실 생성 없음",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/anatomy/notes/anatomy-2026-0466-t1-mock.md",
+   "snippet": "0. 왜 오늘 모의고사인가 Tagging 1 까지 ==이틀== 남았다. 어제(D 3)까지 회차 서브노트 7장과 종합 복습 카드 ( anatomy 2026 0465 )로 읽는 공부 는 닫혔다. 남은 이틀에 새 내용을 넣는 것은 손해다 — 지금 필요한 것은 꺼내 쓰는 연습 이다. 그래서 오늘 산출물은 새 정리가 아니라 ==기존 문항 은행에서 뽑은 실전 30문항==이다. [!TIP] 남은 이틀 배분 :: D 2(오늘) 모의고사 45",
+   "text": "Anatomy Tagging 1 모의고사 — 30문항 실전 세트 (D-2) 7회차 · 목·다리 태깅1 모의고사 실전 30문항 1회차 2회차 3회차 4회차 5회차 6회차 7회차 기존 문항 은행 content/anatomy/questions/tagging-1/ 334문항에서 30개 선별(결정론적 구성표) — 새 사실 생성 없음 0. 왜 오늘 모의고사인가 Tagging 1 까지 ==이틀== 남았다. 어제(D 3)까지 회차 서브노트 7장과 종합 복습 카드 ( anatomy 2026 0465 )로 읽는 공부 는 닫혔다. 남은 이틀에 새 내용을 넣는 것은 손해다 — 지금 필요한 것은 꺼내 쓰는 연습 이다. 그래서 오늘 산출물은 새 정리가 아니라 ==기존 문항 은행에서 뽑은 실전 30문항==이다. [!TIP] 남은 이틀 배분 :: D 2(오늘) 모의고사 45분 → 채점 → 구멍 표시. D 1(내일) 표시된 구멍만 서브노트로 되돌아가 확인, 그리고 0465 §7 통로·공간 소리 내어 읽기. ==근육 이는곳·닿는곳 암기를 지금 새로 시작하지 않는다== — 태깅 핀은 거의 통로 안에 꽂힌다. 1. 시험 정보와 이 세트의 형식 시험 2026 09 10 Tagging 1. 범위 1–7회차 전부. 형식 (3Q 개요) ==30문항 · 카데바 5구==. 이 모의고사도 ==30문항==으로 맞췄고, 전부 서술형 이다. 은행에 있는 객관식 4문항 (0041·0046·0048·0157)은 일부러 뺐다 — 태깅은 보기를 주지 않는다. 권장 시간 45분 (문항당 90초). 실제 태깅은 한 자리에서 오래 생각할 수 없으므로 ==시간을 재지 않고 푸는 모의고사는 의미가 없다==. 도해 퀴즈판·실사 복원 문항은 이 세트에서 뺐다. 그림 문항은 회차 서브노트에 이미 실려 있고, 오늘은 말로 꺼내는 연습 이 목표다. 2. 구성표 — 6개 자리 × 5문항 실제 1차는 카데바 5구지만, 범위를 빠짐없이 훑기 위해 ==부위 6곳==으로 나눴다. 문제 1–5가 1구, 6–10이 2구 … 다섯씩 끊긴다. 자리 부위 회차 문항 id (문제 번호 순) 1구 등·척주·엉치인대 1–2 0343 · 0347 · 0349 · 0351 · 0365 2구 볼기·넓적다리 뒤·얕은정맥 1–2 0044 · 0045 · 0354 · 0355 · 0358 3구 뒤통수밑삼각·어깨뼈부위·다리오금 2–3 0368 · 0369 · 0370 · 0372 · 0375 4구 얼굴·귀밑샘·관자아래우묵 4–5 0382 · 0383 · 0384 · 0385 · 0397 5구 가슴벽·가슴안·심장 4–5 0378 · 0154 · 0156 · 0158 · 0159 6구 목·넓적다리 앞·발 6–7 0388 · 0389 · 0392 · 0394 · 0447 (id 는 전부 anatomy 2026 접두사가 붙는다. 지문·정답·해설은 각 문항 카드에 있고 이 카드는 복제하지 않는다.) 회차 배분 확인 회차 1 2 3 4 5 6 7 문항 수 2 8 5 5 5 3 2 1회차(피부벗기기·얕은정맥)와 7회차(목의 뿌리·발)는 태깅 출제 밀도가 낮아 둘씩, 2회차(등·볼기)는 구조물이 가장 많아 여덟이다. ==한 회차도 0 이 되지 않게== 맞췄다. 3. 채점 규정 — 내용과 표기를 따로 본다 공인 한글용어 또는 원어 중 하나 로 쓴다(둘 다 쓰면 더 안전하다). 근육은 == ○○근 또는 ○○ muscle · ○○ m. ==. 허용 약자 ==a. v. n. m. lig. sup. inf. ant. post. med. lat.== — 마침표 필수 . a 만 쓰면 동맥으로 인정되지 않을 수 있다. 순서를 묻는 문항(0368 깊이 순서, 0389 발목굴 앞→뒤, 0159 허파뿌리 배열)은 ==순서가 틀리면 이름을 다 맞혀도 오답==이다. 채점할 때 순서를 따로 본다. [!주의] 자주 깎이는 자리 :: 좌우를 묻는 문항(0154 가로막신경·미주신경, 0159 허파뿌리 좌우 차이, 0388 앞목갈비근 앞뒤)은 ==방향어(ant. post. med. lat.)를 빼면 답이 안 된다==. \"지나간다\"가 아니라 \" 앞으로 지나간다\"까지 써야 한다. 4. 채점 뒤 — 구멍을 회차로 환산한다 1. 틀린 문항의 회차 번호 를 세어 본다(구성표의 회차 열). 2. 한 회차에 ==셋 이상== 몰렸으면 → 그 회차 서브노트를 다시 편다. 1회차 anatomy 2026 0060 · 2회차 0033 · 3회차 0077 · 4회차 0111 5회차 0150 · 6회차 0067 · 7회차 0112 3. 회차와 무관하게 흩어져 있으면 → 개별 지식이 아니라 관계 가 안 잡힌 것이다. 종합 복습 카드 anatomy 2026 0465 의 ==§7 통로·공간==과 ==§8 헷갈리는 짝==만 다시 본다. 4. \"알 것 같은데 말이 안 나온\" 문항은 틀린 문항과 똑같이 취급 한다. 태깅은 손으로 쓰는 시험이라 ==인출되지 않는 지식은 없는 지식==이다. 5. 마지막 이틀 체크리스트 [ ] 오늘: 45분 타이머, 30문항 완주(막힌 것은 비워 두고 끝까지) [ ] 오늘: 채점 후 회차별 오답 수 세기 [ ] 오늘: 순서 문항(0368·0389·0159) 순서까지 맞았는지 따로 확인 [ ] 내일: 오답 몰린 회차 서브노트 1장만 정독 [ ] 내일: 0465 §7 통로·공간을 ==보지 않고 말로== 재생 [ ] 내일: 답안 표기 규정(약자 마침표·근육 접미사) 한 번 더 훑기 [ ] 시험 당일: 새 내용 금지, 0465 §8 대조표만"
+  },
   {
    "id": "kmle-2026-0905",
    "type": "kmle",
@@ -710,6 +750,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0465-t1-review.md",
    "snippet": "0. Tagging 1 — 무엇을 어떻게 묻나 일시 2026 09 10 (오늘 D 3). 범위 1–7회차 전부(2026 08 18 – 2026 09 07). 형식 (3Q 개요) 1차 ==30문항 · 카데바 5구==. 카데바당 좌우 3개씩, 큼직하고 중요한 구조물 위주. 옵세한 구조물·이름 없는 정맥은 대개 패싱 → 위치·생김새가 아니라 '해부학적 관계' 를 물을 수 있는 구조가 나온다. 답안은 공인 한글용어 또는 원어 중 하나",
    "text": "Anatomy Tagging 1 종합 복습 — 1–7회차 전 범위 압축 정리 7회차 · 목·다리 태깅1 종합복습 서브노트 1회차 2회차 3회차 4회차 5회차 6회차 7회차 통로 공간 다발 대조표 회차 서브노트 1–7 종합(repo content) + 2026학년도 2학기 실습계획표 0. Tagging 1 — 무엇을 어떻게 묻나 일시 2026 09 10 (오늘 D 3). 범위 1–7회차 전부(2026 08 18 – 2026 09 07). 형식 (3Q 개요) 1차 ==30문항 · 카데바 5구==. 카데바당 좌우 3개씩, 큼직하고 중요한 구조물 위주. 옵세한 구조물·이름 없는 정맥은 대개 패싱 → 위치·생김새가 아니라 '해부학적 관계' 를 물을 수 있는 구조가 나온다. 답안은 공인 한글용어 또는 원어 중 하나. 근육은 =='○○근' 또는 '○○ muscle(m.)'==, 허용 약자는 a. v. n. m. lig. sup. inf. ant. post. med. lat. — 마침표 필수 . [!TIP] 3일 남았을 때의 우선순위 :: ① 통로·공간(§7)을 먼저 닫는다 — 태깅 핀은 거의 통로 안에 꽂힌다. ② 다음이 §8 헷갈리는 짝. ③ 근육 이는곳·닿는곳 암기는 마지막. 시간이 없으면 §7·§8만 봐도 절반은 건진다. 1. 1–2회차 등·볼기·넓적다리 뒤 !fig docs/assets/anatomy/diag back layers rami labeled.svg 등 근육의 층과 신경지배 규칙 — 얕은·중간층은 앞가지, 깊은층만 뒤가지 층 대표 근육 신경 얕은층 등세모근 · 넓은등근 · 어깨올림근 · 마름근 ==부신경 XI==(등세모근) / 나머지 척수신경 앞가지 중간층 위·아래뒤톱니근 갈비사이신경( 앞가지 ) 깊은층(고유등근육) 척주세움근 · 가로돌기가시근육 ==척수신경 뒤가지== [!기출] 왜 얕은층이 앞가지인가 :: 등에 붙어 있어도 발생학적으로 팔에서 온 근육 (이동근)이라 원래 신경을 끌고 왔다. 뒤가지가 지배하는 건 처음부터 등에 있던 고유등근육뿐 이다. !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 궁둥구멍근이 큰궁둥구멍을 위·아래로 가른다 통로 통과 구조 궁둥구멍근 위 위볼기신경 · 위볼기동·정맥 궁둥구멍근 아래 ==궁둥신경== · 아래볼기신경 · 아래볼기동맥 · 속음부동맥 · 음부신경 · 뒤넙다리피부신경 작은궁둥구멍 속음부동·정맥 · 음부신경 · 속폐쇄근 힘줄 (음부신경이 되돌아 들어온다 ) = 음부신경·속음부동맥은 큰궁둥구멍으로 나갔다가 작은궁둥구멍으로 다시 들어온다 — 태깅에서 \"이 신경은 왜 두 번 보이나\"로 묻는다. 넓적다리 뒤칸 이는곳 신경 넙다리두갈래근 긴갈래·반힘줄근·반막근 궁둥뼈결절 ==정강신경 부분== (궁둥신경) 넙다리두갈래근 짧은갈래 넙다리뼈 거친선 ==온종아리신경 부분== — 유일한 예외 2. 3회차 뒤통수밑삼각 · 어깨뼈부위 · 오금 !fig docs/assets/anatomy/diag scapular spaces labeled.svg 긴갈래 하나로 세 공간을 가른다 공간 경계 기준 내용물 네모공간 긴갈래 ==가쪽== · 위팔뼈 외과목 ==겨드랑신경== + 뒤위팔휘돌이동맥 세모공간 긴갈래 ==안쪽== 어깨휘돌이동맥 세모간격 큰원근 ==아래== ==노신경== + 깊은위팔동맥 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다 — 매년 헷갈리는 자리. !fig docs/assets/anatomy/diag suboccipital labeled.svg 뒤통수밑삼각 — 세 근육이 만드는 삼각과 그 바닥의 척추동맥 뒤통수밑삼각 내용 경계 큰뒤머리곧은근(안쪽위) · 위머리빗근(가쪽위) · 아래머리빗근(아래) 바닥 뒤통수뼈 고리뼈 뒤막 · 고리뼈 뒤활 내용물 ==척추동맥 3부== · ==뒤통수밑신경(C1 뒤가지)== 지붕 위 큰뒤통수신경(C2 뒤가지) — 삼각 밖 을 지나 두피로 !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 오금 — 얕은 곳부터 신경, 깊은 곳에 동맥 오금 내용 위 경계 넙다리두갈래근(가쪽) · 반힘줄근·반막근(안쪽) 아래 경계 장딴지근 두 갈래 깊이 순서 ==얕은 쪽부터 정강신경 → 오금정맥 → 오금동맥==(가장 깊다) [!임상] 오금동맥이 가장 깊다 :: 그래서 무릎 뒤 관통상·무릎관절 탈구에서 맥이 먼저 사라진다 . 촉지는 무릎을 굽혀 근육을 풀고 깊이 눌러야 잡힌다. 3. 4회차 얼굴 · 씹기근육 · 가슴벽 구분 신경 기억법 표정근육 ==얼굴신경 VII== 제2 인두굽이 유래 씹기근육 ==삼차신경 V3== 제1 인두굽이 유래 얼굴 피부감각 삼차신경 V1·V2·V3 운동과 감각의 주인이 다르다 [!기출] 귀밑샘을 지나는 것 :: 얕은 쪽부터 ==얼굴신경 가지 → 뒤턱정맥 → 바깥목동맥==. 신경이 가장 얕아 귀밑샘 수술에서 제일 먼저 다친다. 귀밑샘 자체의 분비신경은 ==혀인두신경 IX==(귀신경절 경유)로 얼굴신경이 아니다 . !fig docs/assets/anatomy/diag intercostal layers labeled.svg 갈비사이 세 층과 갈비사이고랑의 VAN 갈비사이 층 방향·의미 바깥갈비사이근 뒤위→앞아래(\"주머니에 손 넣는\" 방향) · 들숨 속갈비사이근 직각 방향 · 날숨 맨속갈비사이근 신경혈관다발이 ==속·맨속 사이==를 지난다 [!임상] 흉관·가슴천자 :: 다발은 갈비뼈 아래모서리 고랑 에 숨어 있고 위에서부터 ==정맥 동맥 신경(VAN)== 순이다 → 바늘·관은 아래 갈비뼈의 위모서리 를 타고 넣는다. 4. 5회차 가슴안 · 심장 · 관자아래 구조 핵심 가슴막안 허파는 아래모서리가 ==6 8 10 갈비뼈==(빗장중간·중간겨드랑·척주옆), 가슴막은 ==8 10 12== — 두 칸 차이 가 갈비가로막오목 위세로칸 앞→뒤: 가슴샘 · 큰정맥 · 대동맥활 · 기관 · 식도 심장막 섬유심장막은 ==가로막에 붙어 있다== · 심장막가로굴(대동맥·허파동맥 뒤 ) · 심장막빗굴(왼심방 뒤) 심장동맥 오른심장동맥→뒤심실사이가지(우세형 85%) · 왼심장동맥→앞심실사이(LAD)+휘돌이 [!임상] 심장눌림증 :: 섬유심장막은 늘어나지 않는다 → 적은 양의 삼출로도 채움이 막힌다(Beck 3징: 저혈압·목정맥팽대·심음감소). 심장막가로굴은 심장수술에서 대혈관을 묶는 손가락 통로 로 쓴다. !fig docs/assets/anatomy/diag infratemporal nerve labeled.svg 관자아래우묵 — V3의 가지들과 날개근 관자아래우묵 내용 근육 가쪽·안쪽날개근 (+ 관자근 힘줄) 신경 ==V3 가지==: 혀신경 · 아래이틀신경 · 볼신경 · 귀관자신경 혈관 ==위턱동맥==(바깥목동맥의 두 종말가지 중 하나) · 날개근정맥얼기 [!주의] 날개근의 작용이 반대다 :: 가쪽날개근만 입을 벌린다 (내림·앞으로). 나머지 씹기근육 셋은 다문다. \"가쪽만 벌린다\"로 외운다. 5. 6회차 목의 삼각 · 넓적다리 앞·안쪽 · 종아리 앞 !fig docs/assets/anatomy/diag neck triangles labeled.svg 목빗근이 목을 앞·뒤 삼각으로 가른다 삼각 경계 핵심 내용물 뒤삼각 목빗근 뒤 · 등세모근 앞 · 빗장뼈 ==부신경 XI==(가장 얕다) · 목신경얼기 피부가지 · 팔신경얼기 목동맥삼각 목빗근 · 어깨목뿔근 위힘살 · 두힘살근 뒤힘살 ==온목동맥 갈림(C4, 방패연골 위모서리)== · 속목정맥 · 미주신경 두힘살근삼각 두힘살근 두 힘살 · 아래턱뼈 턱밑샘 · 혀밑신경 근육삼각 정중선 · 어깨목뿔근 위힘살 · 목빗근 앞 방패샘 · 후두 · 기관 [!임상] 뒤삼각의 부신경 :: 근막 바로 밑을 지나 가장 얕다 → 목 뒤삼각 림프절 생검에서 잘리면 등세모근이 마비돼 어깨처짐·팔 벌림 장애. 태깅에서 \"뒤삼각에서 가장 얕은 신경\"으로 나온다. !fig docs/assets/anatomy/diag anterior thigh labeled.svg 넙다리삼각과 모음근굴 — NAVEL 순서 넙다리삼각 내용 경계 위 ==고샅인대== · 가쪽 넙다리빗근 · 안쪽 긴모음근 바닥 엉덩허리근(가쪽) · 두덩근(안쪽) 내용물 가쪽→안쪽 ==NAVEL==: 넙다리신경 · 넙다리동맥 · 넙다리정맥 · 넙다리관(림프) 이어지는 곳 꼭짓점 → ==모음근굴(Hunter)== → 모음근구멍 → 오금 넓적다리 칸 신경 앞칸(넙다리네갈래근·넙다리빗근) ==넙다리신경== 안쪽칸(모음근들·두덩정강근) ==폐쇄신경== 예외 큰모음근 은 두 신경(모음부=폐쇄, 폄부=정강) · 두덩근 은 넙다리신경(±폐쇄) !fig docs/assets/anatomy/diag anterior leg foot labeled.svg 종아리 앞칸과 발등 — 깊은종아리신경이 함께 간다 종아리 앞칸 내용 근육 앞정강근 · 긴엄지폄근 · 긴발가락폄근 · 셋째종아리근 신경 ==깊은종아리신경== (첫·둘째 발가락 사이 물갈퀴 감각) 동맥 ==앞정강동맥==(뼈사이막을 뚫고 앞으로) → 발등동맥 6. 7회차 목의 뿌리 · 인두 · 발목 · 발바닥 !fig docs/assets/anatomy/tree s07 bundle labeled.svg 목갈비근틈새와 발목굴 — 두 통로의 순서 앞목갈비근 기준 구조 앞 ==빗장밑정맥== · 가로막신경(근육 앞면을 탄다) 목갈비근틈새(앞·중간 사이) ==빗장밑동맥 2부== · ==팔신경얼기== 발목굴(앞→뒤) 구조 ①② 뒤정강근 · 긴발가락굽힘근 힘줄 ③④ ==뒤정강동맥== · ==정강신경== ⑤ 긴엄지굽힘근 힘줄 발바닥 신경 담당 안쪽발바닥신경 엄지벌림근·짧은발가락굽힘근·첫째벌레근·짧은엄지굽힘근 + 안쪽 3½ 피부 (손의 ==정중신경==) 가쪽발바닥신경 나머지 대부분 + 가쪽 1½ 피부 (손의 ==자신경==) [!주의] 인두의 예외 하나 :: 인두 근육은 전부 미주신경(X)인데 ==붓인두근만 혀인두신경 IX==다. 7. 통로·공간 총정리 — 태깅 최빈출 통로 가르는 것 지나는 것(대표) 궁둥구멍근 위/아래 ==궁둥구멍근== 위볼기 / 궁둥신경·아래볼기·음부 작은궁둥구멍 엉치가시인대·엉치결절인대 음부신경·속음부동맥이 되돌아 네모/세모공간·세모간격 ==위팔세갈래근 긴갈래== 겨드랑신경 / 어깨휘돌이동맥 / 노신경 뒤통수밑삼각 세 뒤통수밑근 ==척추동맥 3부== · C1 뒤가지 갈비사이고랑 갈비뼈 아래모서리 ==VAN==(위→아래) 목갈비근틈새 ==앞·중간목갈비근== 빗장밑동맥 2부 · 팔신경얼기 넙다리삼각 고샅인대·넙다리빗근·긴모음근 ==NAVEL==(가쪽→안쪽) 모음근굴 큰모음근·넓은안쪽근 넙다리동·정맥 · 두렁신경 오금 네 근육 경계 ==얕은→깊은: 신경·정맥·동맥== 발목굴 ==굽힘근지지띠== Tom·Dick·And·Very Nervous·Harry 8. 헷갈리는 짝 — 나란히 보기 짝 구분 기준 등 얕은·중간층 ↔ 깊은층 ==앞가지 ↔ 뒤가지== (등세모근만 부신경 XI) 네모공간 ↔ 세모공간 긴갈래 ==가쪽(신경) ↔ 안쪽(동맥)== 앞정강동맥 ↔ 뒤정강동맥 ==뼈사이막을 뚫는다 ↔ 발목 안쪽면으로 돌아간다== 발등동맥 ↔ 뒤정강동맥 촉지 ==긴엄지폄근힘줄 가쪽 ↔ 안쪽복사 아킬레스 사이== 얕은종아리신경 ↔ 깊은종아리신경 ==가쪽칸(가쪽번짐) ↔ 앞칸(발등굽힘)==, 감각은 발등 대부분 ↔ 첫·둘째 물갈퀴 표정근육 ↔ 씹기근육 ==VII ↔ V3== (제2 ↔ 제1 인두굽이) 귀밑샘 통과 3구조 얕은→깊은 ==얼굴신경 → 뒤턱정맥 → 바깥목동맥== 좌우 되돌이후두신경 ==오른쪽 빗장밑동맥 ↔ 왼쪽 대동맥활== 안쪽 ↔ 가쪽발바닥신경 손의 ==정중 ↔ 자신경== 그대로 큰모음근 두 부분 ==모음부 폐쇄신경 ↔ 폄부 정강신경== 9. 신경 손상 지도 — \"이거 다치면?\" 신경 잘 다치는 자리 결과 부신경 XI ==목 뒤삼각==(가장 얕다) 등세모근 마비 · 어깨처짐 겨드랑신경 ==위팔뼈 외과목==(네모공간) 어깨세모근 마비 · 어깨 가쪽 감각소실 노신경 위팔뼈 몸통(노신경고랑) ==손목처짐== 위볼기신경 볼기 수술·주사 ==트렌델렌부르크 징후== 온종아리신경 ==종아리뼈목== 발처짐 · 가쪽번짐 소실 · 닭걸음 정강신경(발목굴) 굽힘근지지띠 밑 발바닥 저림(발목굴증후군) · 발꿈치 감각은 대개 보존 가로막신경 목 뿌리·세로칸 반쪽 가로막 마비 · ==C3 4 5== 되돌이후두신경 왼쪽=대동맥활 부위 쉰 목소리 10. 동맥 문합 — 닫힌 고리로 외운다 문합 잇는 두 축 임상 의미 어깨동맥그물 빗장밑(어깨위·등쪽어깨) ↔ 겨드랑(어깨휘돌이) 겨드랑동맥 3부 이전 막혀도 팔이 산다 십자문합 아래볼기 ↔ 안쪽·가쪽넙다리휘돌이 ↔ 첫째관통동맥 넙다리동맥 폐색의 우회 무릎관절그물 넙다리(내림무릎) ↔ 오금가지 ↔ 앞정강되돌이 무릎 굽힘 시 오금동맥 눌려도 관류 유지 발바닥동맥활 가쪽발바닥동맥 ↔ 발등동맥 깊은발바닥가지 발등·뒤정강 두 축이 발에서 만난다 [!TIP] 문합 문제는 '고리의 양 끝'을 묻는다 :: 그물 이름을 외우기보다 어느 두 큰 동맥을 잇는가 를 말할 수 있으면 된다."
+  },
+  {
+   "id": "paper-2026-0547",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-09-06",
+   "path": "content/papers/2026/2026-09-06_paper-2026-0547_association_between_serum_ferritin_and_hemoglobin_levels_in_.md",
+   "snippet": "Title Association Between Serum Ferritin and Hemoglobin Levels in Pregnant Women: Implications for Early Iron Deficiency Screening Authors Ahmed Doaa, Amin Rawaal, Raman Vidya, Hashmi Madina, Hulo Mohammad Ghaith, Albousen Baraa, Hameed Ale",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Cureus Title Association Between Serum Ferritin and Hemoglobin Levels in Pregnant Women: Implications for Early Iron Deficiency Screening Authors Ahmed Doaa, Amin Rawaal, Raman Vidya, Hashmi Madina, Hulo Mohammad Ghaith, Albousen Baraa, Hameed Aleena, Mani Tripathi Kaushalendra, et al. Journal / DOI Cureus · DOI: 10.7759/cureus.114043 · PMID: 42701825 https://pubmed.ncbi.nlm.nih.gov/42701825/ Abstract BACKGROUND: Iron deficiency is the leading cause of anemia during pregnancy, and serum ferritin is the most widely used biochemical marker of body iron stores. However, population specific evidence describing the relationship between serum ferritin concentrations and hemoglobin levels remains limited. PURPOSE: This study aimed to assess the relationship between serum ferritin and hemoglobin levels among pregnant women attending antenatal care. METHODS: A cross sectional, laboratory based study was conducted among 522 pregnant women in their second and third trimesters. Serum ferritin concentrations were measured using the hospital's standardized laboratory procedures. Iron deficiency was defined as a serum ferritin concentration <30 µg/L, and anemia was defined as a hemoglobin concentration <11 g/dL. Statistical analyses included descriptive statistics, independent samples Student's t tests, chi square tests, binary logistic regression, and receiver operating characteristic (ROC) curve analysis. FINDINGS: Iron deficiency was identified in 209 participants (40.0%), and anemia was present in 235 participants (45.0%). Serum ferritin concentrations and mean corpuscular volume (MCV) were significantly lower in women with anemia than in those without anemia (p < 0.001). Serum ferritin was independently associated with anemia (OR = 0.95, p < 0.001). Notably, 35 women without anemia (12.2%) had low serum ferritin concentrations, indicating subclinical iron deficiency. ROC curve analysis demonstrated good discriminative performance, with serum ferritin showing greater diagnostic accuracy than MCV. The optimal serum ferritin cutoff was 17.0 µg/L, with a sensitivity of 81% and a specificity of 83%. CONCLUSION: Pregnant women with anemia had significantly lower serum ferritin concentrations than those without anemia, and a substantial proportion of women with normal hemoglobin levels had depleted iron stores. These findings support the potential value of serum ferritin as an adjunctive marker for assessing iron status during pregnancy. However, prospective studies are needed to further evaluate its clinical utility. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0546",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cardiology",
+   "confidence": "medium",
+   "date": "2026-09-06",
+   "path": "content/papers/2026/2026-09-06_paper-2026-0546_prospective_evaluation_of_quality_of_life_improvement_after_.md",
+   "snippet": "Title Prospective Evaluation of Quality of Life Improvement After Dapagliflozin Initiation in a Greek Population With HFrEF: The EVOLUTION HF 12 Month Results Authors Potoupni Victoria, Boulmpou Aristi, Maragkoudakis Spyridon, Briasoulis Al",
+   "text": "Cardiology scraped pubmed PubMed / Clinical cardiology Title Prospective Evaluation of Quality of Life Improvement After Dapagliflozin Initiation in a Greek Population With HFrEF: The EVOLUTION HF 12 Month Results Authors Potoupni Victoria, Boulmpou Aristi, Maragkoudakis Spyridon, Briasoulis Alexandros, Foukarakis Emmanouil, Stavrati Alexia, Papadopoulos Konstantinos, Naka Katerina K, et al. Journal / DOI Clinical cardiology · DOI: 10.1002/clc.70466 · PMID: 42701883 https://pubmed.ncbi.nlm.nih.gov/42701883/ Abstract INTRODUCTION: Heart failure with reduced ejection fraction (HFrEF), defined by a left ventricular ejection fraction ≤ 40%, remains a major global health challenge, associated with substantial morbidity, mortality, and impaired quality of life (QoL), particularly in patients with higher NYHA class. Sodium glucose cotransporter 2 (SGLT2) inhibitors have emerged as a cornerstone therapy for HFrEF, significantly reducing hospitalizations and mortality regardless of glycemic status, sex, race, or comorbidities. METHODS: EVOLUTION HF was an observational, multi center, longitudinal cohort study involving 257 consecutive patients diagnosed with HFrEF who initiated dapagliflozin in a routine clinical setting in Greece. The primary objectives were to characterize baseline demographic and clinical features of patients newly initiated on dapagliflozin for HFrEF and to evaluate dapagliflozin treatment patterns, including discontinuation timing, reasons for discontinuation, and concomitant heart failure and glucose lowering therapies over time. The secondary objectives are to describe patient reported outcomes using the KCCQ 23 and to assess adherence to dapagliflozin among patients with HFrEF. RESULTS: A total of 257 patients were enrolled and the follow up period lasted for 12 months. Significant improvements among all KCCQ 23 scores were observed from baseline to 12 months post dapagliflozin initiation, revealing that the initiation and optimization of guideline directed medical therapy in routine clinical practice provides improvement to quality of life over time. CONCLUSIONS: Dapagliflozin was safe and well tolerated throughout the observation period. Although benefits are observed in most patients, individuals aged 65 years, with prior myocardial infarction, or recent hospitalizations show a diminished response, underscoring the need for tailored management and closer follow up in these higher risk groups. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-06",
