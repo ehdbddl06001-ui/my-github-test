@@ -1,29 +1,29 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-06",
+ "generated": "2026-09-07",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2151,
+  "total": 2159,
   "byType": {
+   "usmle": 132,
    "kmle": 875,
    "anatomy": 588,
-   "paper": 545,
-   "usmle": 126,
+   "paper": 547,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 588,
-   "Cardiology": 171,
+   "Cardiology": 172,
    "Nephrology": 144,
    "Infectious Disease": 120,
-   "Pediatrics": 99,
+   "Pediatrics": 100,
    "Hematology-Oncology": 83,
    "Pathology": 76,
    "Obstetrics & Gynecology": 67,
-   "Neurology": 65,
+   "Neurology": 66,
    "Psychiatry": 65,
    "Surgery": 60,
    "Endocrinology": 56,
@@ -35,13 +35,13 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 54,
    "Rheumatology": 54,
    "Hematology": 53,
-   "Laboratory Medicine": 51,
-   "Physiology": 15,
+   "Laboratory Medicine": 52,
+   "Physiology": 16,
    "Pharmacology": 10,
+   "Biochemistry": 9,
    "Microbiology": 9,
-   "Biochemistry": 8,
-   "Immunology": 6,
-   "Internal Medicine": 6,
+   "Immunology": 7,
+   "Internal Medicine": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,142 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1375,
-   "medium": 727,
+   "high": 1381,
+   "medium": 729,
    "low": 49
   },
-  "tagCount": 2957
+  "tagCount": 2972
  },
  "docs": [
+  {
+   "id": "usmle-2026-0145",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Intermittent Colicky Pain in an Infant with a Target Sign — Reduction Without a Knife When There Is No Peritonitis",
+   "tags": [
+    "intussusception",
+    "air-enema",
+    "target-sign",
+    "currant-jelly-stool",
+    "pediatric-abdomen",
+    "ultrasound"
+   ],
+   "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Ileus, Adhesions, Intussusception; Ashcraft's Pediatric Surgery 7e — Intussusception)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0145.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of 10 hours of episodes of inconsolable crying during which he draws his knees toward his chest; each episode lasts several minutes and is followed by a period during which he",
+   "text": "Pediatrics Intermittent Colicky Pain in an Infant with a Target Sign — Reduction Without a Knife When There Is No Peritonitis intussusception air-enema target-sign currant-jelly-stool pediatric-abdomen ultrasound USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Ileus, Adhesions, Intussusception; Ashcraft's Pediatric Surgery 7e — Intussusception) A 9 month old boy is brought to the emergency department because of 10 hours of episodes of inconsolable crying during which he draws his knees toward his chest; each episode lasts several minutes and is followed by a period during which he is quiet and appears drowsy. He has vomited three times, most recently bile stained fluid, and 1 hour ago passed a stool mixed with mucus and dark red blood. He had an upper respiratory tract infection 1 week ago. He was born at term and has been growing normally. Examination between episodes shows a lethargic but arousable infant with a soft, nondistended abdomen; a sausage shaped mass is palpable in the right upper quadrant, and the right lower quadrant feels empty. There is no rebound tenderness or guarding. Bowel sounds are present. A supine and left lateral decubitus abdominal radiograph shows a paucity of gas in the right lower quadrant without free intraperitoneal air. Abdominal ultrasonography shows a 3.5 cm transverse mass with concentric alternating hyperechoic and hypoechoic rings and preserved color Doppler flow. An intravenous fluid bolus is given and a nasogastric tube is placed. Laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Diagnostic laparoscopy B. Intravenous antibiotics and serial examinations C. Air enema under fluoroscopic guidance D. Upper gastrointestinal series with small bowel follow through E. Contrast enhanced computed tomography of the abdomen 6–36개월 영아의 간헐적 산통성 복통(무릎 당김) + 발작 사이 기면 + 담즙성 구토 + 점액·혈성 변 + 우상복부 소시지형 종괴 + 우하복부 비어 있음 + 초음파의 동심원(표적) 소견 = 장중첩증(회결장형). 복막염 징후·복부팽만·자유공기가 없고 활력징후가 수액에 반응하므로 비수술적 정복(투시하 공기 정복, 성공률 80–95%)이 1차 치료다. 초음파에서 도플러 혈류가 보존된 것은 장허탈이 아직 없다는 뜻이라 정복 시도 안전성을 뒷받침한다. 정복 전 반드시 수액 소생·비위관 감압·수술팀 대기(천공 시 즉시 수술)를 갖춘다. 개복/복강경은 천공·복막염·쇼크·정복 실패·병적 선도점이 있을 때의 선택이다."
+  },
+  {
+   "id": "usmle-2026-0144",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Ascending Paralysis with a Falling Vital Capacity — Securing the Airway Before the Blood Gas Turns Abnormal",
+   "tags": [
+    "Guillain-Barre-syndrome",
+    "neuromuscular-respiratory-failure",
+    "forced-vital-capacity",
+    "intubation",
+    "20-30-40-rule",
+    "IVIG"
+   ],
+   "source": "USMLE-style / MedKOS (Bradley and Daroff's Neurology in Clinical Practice 8e — Guillain-Barré Syndrome; Leonhard SE et al. Nat Rev Neurol 2019 — Diagnosis and management of GBS in ten steps)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0144.md",
+   "snippet": "A 34 year old woman (weight 70 kg) is admitted to the hospital because of 5 days of progressive weakness that began in her feet and has ascended to involve her thighs and hands. Two weeks ago she had 3 days of watery diarrhea. Over the past",
+   "text": "Neurology Ascending Paralysis with a Falling Vital Capacity — Securing the Airway Before the Blood Gas Turns Abnormal Guillain-Barre-syndrome neuromuscular-respiratory-failure forced-vital-capacity intubation 20-30-40-rule IVIG USMLE-style / MedKOS (Bradley and Daroff's Neurology in Clinical Practice 8e — Guillain-Barré Syndrome; Leonhard SE et al. Nat Rev Neurol 2019 — Diagnosis and management of GBS in ten steps) A 34 year old woman (weight 70 kg) is admitted to the hospital because of 5 days of progressive weakness that began in her feet and has ascended to involve her thighs and hands. Two weeks ago she had 3 days of watery diarrhea. Over the past 12 hours she has developed difficulty swallowing liquids and a weak, nasal sounding voice, and she now needs to pause between sentences. Examination shows symmetric flaccid weakness that is 2/5 in the lower extremities and 3/5 in the upper extremities, absent deep tendon reflexes in all four limbs, bilateral facial weakness, and a weak cough with pooling of secretions in the oropharynx. Sensation is mildly reduced to vibration in the toes. Bedside spirometry has been repeated every 6 hours since admission; the latest results, together with other studies, are shown. Which of the following is the most appropriate next step in management? A. Initiation of plasma exchange B. Noninvasive positive pressure ventilation C. Intravenous methylprednisolone D. Elective endotracheal intubation E. Supplemental oxygen and repeat spirometry in 6 hours 설사 후 상행성 대칭 이완성 마비 + 반사 소실 + 뇌척수액 단백 세포 해리 = 길랭 바레증후군. 문제는 진단이 아니라 '호흡근·연수 마비의 다음 단계'다. FVC 1.1 L 는 체중 70 kg 기준 약 16 mL/kg 로 20 mL/kg 미만이고 12시간 만에 절반으로 급감, NIF −20 cmH2O 는 −30 보다 약해 20/30/40 규칙을 모두 만족한다. 여기에 연하곤란·약한 기침·분비물 저류·양측 안면마비(연수 침범)와 자율신경 불안정(빈맥·고혈압)까지 겹치므로 흡인·급성 호흡정지 위험이 높다. 신경근 호흡부전은 SpO2·PaCO2 가 정상인 채로 갑자기 무너지므로 가스분석이 나빠질 때까지 기다리면 늦다 → 지금 통제된 환경에서 선택적 기관삽관. IVIG/혈장교환은 삽관 뒤 곧 시작하고, 스테로이드는 GBS 에 효과가 없으며, 비침습환기는 연수마비·분비물 저류 환자에서 흡인 위험 때문에 부적절하다."
+  },
+  {
+   "id": "usmle-2026-0143",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Cardiac Arrest Persisting After the Second Shock — Which Drug Comes First Along the Refractory Ventricular Fibrillation Algorithm",
+   "tags": [
+    "cardiac-arrest",
+    "ventricular-fibrillation",
+    "ACLS",
+    "epinephrine",
+    "amiodarone",
+    "defibrillation",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (AHA 2020 Guidelines for CPR and ECC — Adult Advanced Cardiovascular Life Support; 2023 AHA Focused Update on Adult ACLS)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0143.md",
+   "snippet": "A 66 year old man is brought to the emergency department 40 minutes after the onset of crushing substernal chest pain and diaphoresis. His vital signs and initial laboratory studies at arrival are shown, and an initial electrocardiogram sho",
+   "text": "Internal Medicine Cardiac Arrest Persisting After the Second Shock — Which Drug Comes First Along the Refractory Ventricular Fibrillation Algorithm cardiac-arrest ventricular-fibrillation ACLS epinephrine amiodarone defibrillation ECG USMLE-style / MedKOS (AHA 2020 Guidelines for CPR and ECC — Adult Advanced Cardiovascular Life Support; 2023 AHA Focused Update on Adult ACLS) A 66 year old man is brought to the emergency department 40 minutes after the onset of crushing substernal chest pain and diaphoresis. His vital signs and initial laboratory studies at arrival are shown, and an initial electrocardiogram shows ST segment elevation in leads V2 through V5. While the catheterization laboratory is being activated, he suddenly becomes unresponsive. The cardiac monitor shows the rhythm below, and no carotid pulse is palpable. Chest compressions are started, a biphasic 200 J shock is delivered, and compressions are resumed. At the rhythm check after 2 minutes the monitor shows the same rhythm; a second 200 J shock is delivered and chest compressions are resumed immediately. Intravenous access is in place. Which of the following is the most appropriate next step in pharmacologic management? A. Intravenous amiodarone 300 mg bolus B. Intravenous epinephrine 1 mg C. Intravenous atropine 1 mg D. Intravenous magnesium sulfate 2 g E. Intravenous sodium bicarbonate 50 mEq STEMI 환자가 갑자기 무반응·무맥이 되고 모니터에 P파·QRS·T파 구분이 없는 불규칙한 무질서 파형 = 심실세동(ventricular fibrillation). 충격 가능 리듬이므로 제세동 → 2분 CPR → 리듬 확인 → 재충격이 뼈대다. AHA ACLS 심정지 알고리즘에서 약물은 2번째 충격 후 CPR 중 epinephrine 1 mg IV(이후 3–5분마다) 가 먼저이고, amiodarone(300 mg → 150 mg) 또는 lidocaine 은 3번째 충격에도 지속되는 '불응성' VF/pVT 에서 고려한다. 이 시점(2번째 충격 직후)의 다음 약제는 epinephrine 이다. 칼륨·마그네슘이 정상이고 QT 연장 근거가 없으므로 magnesium 은 근거 없고, atropine 은 서맥·무수축(2010 이후 무수축·PEA 에서도 제외)용, bicarbonate 는 고칼륨·TCA 중독 등 특수 상황용이다."
+  },
+  {
+   "id": "usmle-2026-0142",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Postoperative Hypoxemia That Barely Responds to 100% Oxygen — Distinguishing Shunt from Mismatch and Hypoventilation",
+   "tags": [
+    "hypoxemia",
+    "shunt",
+    "V/Q-mismatch",
+    "atelectasis",
+    "A-a-gradient",
+    "100%-oxygen-test",
+    "postoperative"
+   ],
+   "source": "USMLE-style / MedKOS (West's Respiratory Physiology 11e — Ventilation-Perfusion Relationships; Guyton & Hall 14e — Pulmonary Gas Exchange)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0142.md",
+   "snippet": "A 58 year old woman is evaluated on the second postoperative day after an open right hemicolectomy for colon cancer because of shortness of breath. She has been reluctant to take deep breaths or cough because of incisional pain and has not ",
+   "text": "Physiology Postoperative Hypoxemia That Barely Responds to 100% Oxygen — Distinguishing Shunt from Mismatch and Hypoventilation hypoxemia shunt V/Q-mismatch atelectasis A-a-gradient 100%-oxygen-test postoperative USMLE-style / MedKOS (West's Respiratory Physiology 11e — Ventilation-Perfusion Relationships; Guyton & Hall 14e — Pulmonary Gas Exchange) A 58 year old woman is evaluated on the second postoperative day after an open right hemicolectomy for colon cancer because of shortness of breath. She has been reluctant to take deep breaths or cough because of incisional pain and has not used her incentive spirometer. She has no history of lung disease and has never smoked. Examination shows shallow respirations. Breath sounds are absent and percussion is dull over the left lung base, and the trachea is deviated slightly to the left. There is no calf tenderness or leg swelling. A chest radiograph shows homogeneous opacification of the left lower lobe with elevation of the left hemidiaphragm and shift of the mediastinum toward the opacity. Arterial blood gas analysis is performed on room air and repeated after 20 minutes of breathing 100% oxygen through a nonrebreather mask. Results are shown. Which of the following best explains the arterial oxygen tension in this patient? A. Perfusion of alveolar units that receive no ventilation B. Ventilation of alveolar units that receive no perfusion C. Thickening of the alveolar capillary diffusion barrier D. Reduction of total alveolar ventilation E. Reduction of mixed venous oxygen content 상복부 수술 후 통증으로 얕은 호흡 → 좌하엽 무기폐(허탈): 호흡음 소실·타진 탁음·기관과 종격동이 병변 쪽으로 당김·횡격막 상승. 허탈된 폐포는 환기가 0인데 관류는 계속되므로 정맥혈이 산소화 없이 좌심으로 섞이는 진성 션트(V/Q = 0) 가 생긴다. 션트의 특징은 ① PaCO2 가 정상~낮다(남은 폐포가 과환기로 CO2 를 보상 — 저환기 배제), ② A–a 차가 크다, ③ 100% 산소로 PaO2 가 거의 오르지 않는다 (션트 혈류는 산소를 만나지 못하고, 산소화된 혈액은 이미 포화돼 헤모글로빈이 더 실을 수 없음). V/Q 불균형(V/Q 낮지만 0 은 아님)이나 확산장애는 100% 산소로 PaO2 가 크게 교정된다."
+  },
+  {
+   "id": "usmle-2026-0141",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Recurrent Abscesses with Granulomatous Colitis — What the Offending Organisms Have in Common When the Oxidative Burst Fails",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "catalase-positive",
+    "dihydrorhodamine",
+    "phagocyte-defect",
+    "Serratia",
+    "Aspergillus"
+   ],
+   "source": "USMLE-style / MedKOS (Abbas Cellular and Molecular Immunology 10e — Phagocyte Defects; Nelson Textbook of Pediatrics 22e — Chronic Granulomatous Disease)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0141.md",
+   "snippet": "A 2 year old boy is brought to the emergency department because of 3 days of fever and a painful, enlarging swelling on the left side of his neck. Over the past 18 months he has had a liver abscess that grew Serratia marcescens, two episode",
+   "text": "Immunology Recurrent Abscesses with Granulomatous Colitis — What the Offending Organisms Have in Common When the Oxidative Burst Fails chronic-granulomatous-disease NADPH-oxidase catalase-positive dihydrorhodamine phagocyte-defect Serratia Aspergillus USMLE-style / MedKOS (Abbas Cellular and Molecular Immunology 10e — Phagocyte Defects; Nelson Textbook of Pediatrics 22e — Chronic Granulomatous Disease) A 2 year old boy is brought to the emergency department because of 3 days of fever and a painful, enlarging swelling on the left side of his neck. Over the past 18 months he has had a liver abscess that grew Serratia marcescens, two episodes of pneumonia, one of which yielded Aspergillus fumigatus from bronchoalveolar lavage fluid, and a suppurative cervical lymphadenitis that required incision and drainage. He also has chronic bloody diarrhea, and colonoscopy 2 months ago showed patchy colitis with noncaseating granulomas on biopsy. His weight is below the 3rd percentile. Vaccinations are up to date. Examination shows a fluctuant, tender 4 cm mass in the left anterior cervical region, mild hepatosplenomegaly, and perianal skin tags with a draining fistula. Laboratory studies are shown. Organisms responsible for the infections in this patient most likely share which of the following characteristics? A. Antiphagocytic polysaccharide capsule B. Secretion of an IgA cleaving protease C. Obligate replication inside macrophages D. Endotoxin triggered complement consumption E. Enzymatic breakdown of hydrogen peroxide 재발성 화농성 림프절염·간농양(Serratia)·아스페르길루스 폐렴·육아종성 대장염·성장부진 + 면역글로불린·T세포·보체 정상 + DHR 123 유세포검사에서 PMA 자극 후 형광 증가 없음 = 만성육아종병(chronic granulomatous disease, CGD). NADPH oxidase 결함으로 식세포가 초과산화물(O2⁻)·H2O2를 못 만든다. 그런데 catalase 음성균(연쇄상구균·폐렴구균 등)은 스스로 만든 H2O2를 분해하지 못해 식세포가 그 H2O2를 '빌려' myeloperoxidase로 차아염소산을 만들어 죽일 수 있다. catalase 양성균(S. aureus, Serratia, Burkholderia, Nocardia, Aspergillus)은 자기 H2O2를 분해해 버려 이 우회로마저 막으므로, CGD 감염은 거의 전부 catalase 양성 미생물이다. 정답은 '과산화수소를 효소로 분해한다'."
+  },
+  {
+   "id": "usmle-2026-0140",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis",
+   "tags": [
+    "urea-cycle",
+    "OTC-deficiency",
+    "hyperammonemia",
+    "orotic-aciduria",
+    "carbamoyl-phosphate",
+    "X-linked"
+   ],
+   "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders)",
+   "confidence": "high",
+   "date": "2026-09-08",
+   "path": "content/usmle/usmle-2026-0140.md",
+   "snippet": "A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of ",
+   "text": "Biochemistry Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis urea-cycle OTC-deficiency hyperammonemia orotic-aciduria carbamoyl-phosphate X-linked USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders) A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of life. He has no fever and there has been no diarrhea. A maternal uncle died in the neonatal period of an undiagnosed illness. Physical examination shows a lethargic, hypotonic infant with rapid, deep respirations; the anterior fontanelle is full. There is no hepatomegaly, rash, or dysmorphic features. Blood cultures are obtained. Laboratory studies are shown. Accumulation of which of the following intermediates most directly accounts for the abnormal urinary finding in this patient? A. Citrulline B. N Acetylglutamate C. Carbamoyl phosphate D. Argininosuccinate E. Ornithine 생후 3일 남아의 고암모니아혈증 + 호흡성 알칼리증(암모니아의 호흡중추 자극) + 정상 음이온차·정상 젖산·케톤 음성(유기산혈증 배제) + 낮은 BUN·낮은 시트룰린 + 오로트산뇨 = ornithine transcarbamylase(OTC) 결핍. X연관이라 남아·외삼촌 병력이 맞아 든다. OTC가 막히면 미토콘드리아에서 CPS I가 만든 carbamoyl phosphate가 시트룰린으로 넘어가지 못해 쌓이고, 세포질로 새어 나와 피리미딘 합성 경로(aspartate transcarbamoylase → dihydroorotate → orotate)로 흘러 오로트산이 과잉 생성·배설된다. 그래서 오로트산뇨는 '미토콘드리아 carbamoyl phosphate 축적'의 직접 산물이며, CPS I 결핍(오로트산 정상·낮음)과 OTC 결핍을 가르는 핵심 표지다."
+  },
   {
    "id": "kmle-2026-0905",
    "type": "kmle",
@@ -710,6 +839,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0465-t1-review.md",
    "snippet": "0. Tagging 1 — 무엇을 어떻게 묻나 일시 2026 09 10 (오늘 D 3). 범위 1–7회차 전부(2026 08 18 – 2026 09 07). 형식 (3Q 개요) 1차 ==30문항 · 카데바 5구==. 카데바당 좌우 3개씩, 큼직하고 중요한 구조물 위주. 옵세한 구조물·이름 없는 정맥은 대개 패싱 → 위치·생김새가 아니라 '해부학적 관계' 를 물을 수 있는 구조가 나온다. 답안은 공인 한글용어 또는 원어 중 하나",
    "text": "Anatomy Tagging 1 종합 복습 — 1–7회차 전 범위 압축 정리 7회차 · 목·다리 태깅1 종합복습 서브노트 1회차 2회차 3회차 4회차 5회차 6회차 7회차 통로 공간 다발 대조표 회차 서브노트 1–7 종합(repo content) + 2026학년도 2학기 실습계획표 0. Tagging 1 — 무엇을 어떻게 묻나 일시 2026 09 10 (오늘 D 3). 범위 1–7회차 전부(2026 08 18 – 2026 09 07). 형식 (3Q 개요) 1차 ==30문항 · 카데바 5구==. 카데바당 좌우 3개씩, 큼직하고 중요한 구조물 위주. 옵세한 구조물·이름 없는 정맥은 대개 패싱 → 위치·생김새가 아니라 '해부학적 관계' 를 물을 수 있는 구조가 나온다. 답안은 공인 한글용어 또는 원어 중 하나. 근육은 =='○○근' 또는 '○○ muscle(m.)'==, 허용 약자는 a. v. n. m. lig. sup. inf. ant. post. med. lat. — 마침표 필수 . [!TIP] 3일 남았을 때의 우선순위 :: ① 통로·공간(§7)을 먼저 닫는다 — 태깅 핀은 거의 통로 안에 꽂힌다. ② 다음이 §8 헷갈리는 짝. ③ 근육 이는곳·닿는곳 암기는 마지막. 시간이 없으면 §7·§8만 봐도 절반은 건진다. 1. 1–2회차 등·볼기·넓적다리 뒤 !fig docs/assets/anatomy/diag back layers rami labeled.svg 등 근육의 층과 신경지배 규칙 — 얕은·중간층은 앞가지, 깊은층만 뒤가지 층 대표 근육 신경 얕은층 등세모근 · 넓은등근 · 어깨올림근 · 마름근 ==부신경 XI==(등세모근) / 나머지 척수신경 앞가지 중간층 위·아래뒤톱니근 갈비사이신경( 앞가지 ) 깊은층(고유등근육) 척주세움근 · 가로돌기가시근육 ==척수신경 뒤가지== [!기출] 왜 얕은층이 앞가지인가 :: 등에 붙어 있어도 발생학적으로 팔에서 온 근육 (이동근)이라 원래 신경을 끌고 왔다. 뒤가지가 지배하는 건 처음부터 등에 있던 고유등근육뿐 이다. !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 궁둥구멍근이 큰궁둥구멍을 위·아래로 가른다 통로 통과 구조 궁둥구멍근 위 위볼기신경 · 위볼기동·정맥 궁둥구멍근 아래 ==궁둥신경== · 아래볼기신경 · 아래볼기동맥 · 속음부동맥 · 음부신경 · 뒤넙다리피부신경 작은궁둥구멍 속음부동·정맥 · 음부신경 · 속폐쇄근 힘줄 (음부신경이 되돌아 들어온다 ) = 음부신경·속음부동맥은 큰궁둥구멍으로 나갔다가 작은궁둥구멍으로 다시 들어온다 — 태깅에서 \"이 신경은 왜 두 번 보이나\"로 묻는다. 넓적다리 뒤칸 이는곳 신경 넙다리두갈래근 긴갈래·반힘줄근·반막근 궁둥뼈결절 ==정강신경 부분== (궁둥신경) 넙다리두갈래근 짧은갈래 넙다리뼈 거친선 ==온종아리신경 부분== — 유일한 예외 2. 3회차 뒤통수밑삼각 · 어깨뼈부위 · 오금 !fig docs/assets/anatomy/diag scapular spaces labeled.svg 긴갈래 하나로 세 공간을 가른다 공간 경계 기준 내용물 네모공간 긴갈래 ==가쪽== · 위팔뼈 외과목 ==겨드랑신경== + 뒤위팔휘돌이동맥 세모공간 긴갈래 ==안쪽== 어깨휘돌이동맥 세모간격 큰원근 ==아래== ==노신경== + 깊은위팔동맥 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다 — 매년 헷갈리는 자리. !fig docs/assets/anatomy/diag suboccipital labeled.svg 뒤통수밑삼각 — 세 근육이 만드는 삼각과 그 바닥의 척추동맥 뒤통수밑삼각 내용 경계 큰뒤머리곧은근(안쪽위) · 위머리빗근(가쪽위) · 아래머리빗근(아래) 바닥 뒤통수뼈 고리뼈 뒤막 · 고리뼈 뒤활 내용물 ==척추동맥 3부== · ==뒤통수밑신경(C1 뒤가지)== 지붕 위 큰뒤통수신경(C2 뒤가지) — 삼각 밖 을 지나 두피로 !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 오금 — 얕은 곳부터 신경, 깊은 곳에 동맥 오금 내용 위 경계 넙다리두갈래근(가쪽) · 반힘줄근·반막근(안쪽) 아래 경계 장딴지근 두 갈래 깊이 순서 ==얕은 쪽부터 정강신경 → 오금정맥 → 오금동맥==(가장 깊다) [!임상] 오금동맥이 가장 깊다 :: 그래서 무릎 뒤 관통상·무릎관절 탈구에서 맥이 먼저 사라진다 . 촉지는 무릎을 굽혀 근육을 풀고 깊이 눌러야 잡힌다. 3. 4회차 얼굴 · 씹기근육 · 가슴벽 구분 신경 기억법 표정근육 ==얼굴신경 VII== 제2 인두굽이 유래 씹기근육 ==삼차신경 V3== 제1 인두굽이 유래 얼굴 피부감각 삼차신경 V1·V2·V3 운동과 감각의 주인이 다르다 [!기출] 귀밑샘을 지나는 것 :: 얕은 쪽부터 ==얼굴신경 가지 → 뒤턱정맥 → 바깥목동맥==. 신경이 가장 얕아 귀밑샘 수술에서 제일 먼저 다친다. 귀밑샘 자체의 분비신경은 ==혀인두신경 IX==(귀신경절 경유)로 얼굴신경이 아니다 . !fig docs/assets/anatomy/diag intercostal layers labeled.svg 갈비사이 세 층과 갈비사이고랑의 VAN 갈비사이 층 방향·의미 바깥갈비사이근 뒤위→앞아래(\"주머니에 손 넣는\" 방향) · 들숨 속갈비사이근 직각 방향 · 날숨 맨속갈비사이근 신경혈관다발이 ==속·맨속 사이==를 지난다 [!임상] 흉관·가슴천자 :: 다발은 갈비뼈 아래모서리 고랑 에 숨어 있고 위에서부터 ==정맥 동맥 신경(VAN)== 순이다 → 바늘·관은 아래 갈비뼈의 위모서리 를 타고 넣는다. 4. 5회차 가슴안 · 심장 · 관자아래 구조 핵심 가슴막안 허파는 아래모서리가 ==6 8 10 갈비뼈==(빗장중간·중간겨드랑·척주옆), 가슴막은 ==8 10 12== — 두 칸 차이 가 갈비가로막오목 위세로칸 앞→뒤: 가슴샘 · 큰정맥 · 대동맥활 · 기관 · 식도 심장막 섬유심장막은 ==가로막에 붙어 있다== · 심장막가로굴(대동맥·허파동맥 뒤 ) · 심장막빗굴(왼심방 뒤) 심장동맥 오른심장동맥→뒤심실사이가지(우세형 85%) · 왼심장동맥→앞심실사이(LAD)+휘돌이 [!임상] 심장눌림증 :: 섬유심장막은 늘어나지 않는다 → 적은 양의 삼출로도 채움이 막힌다(Beck 3징: 저혈압·목정맥팽대·심음감소). 심장막가로굴은 심장수술에서 대혈관을 묶는 손가락 통로 로 쓴다. !fig docs/assets/anatomy/diag infratemporal nerve labeled.svg 관자아래우묵 — V3의 가지들과 날개근 관자아래우묵 내용 근육 가쪽·안쪽날개근 (+ 관자근 힘줄) 신경 ==V3 가지==: 혀신경 · 아래이틀신경 · 볼신경 · 귀관자신경 혈관 ==위턱동맥==(바깥목동맥의 두 종말가지 중 하나) · 날개근정맥얼기 [!주의] 날개근의 작용이 반대다 :: 가쪽날개근만 입을 벌린다 (내림·앞으로). 나머지 씹기근육 셋은 다문다. \"가쪽만 벌린다\"로 외운다. 5. 6회차 목의 삼각 · 넓적다리 앞·안쪽 · 종아리 앞 !fig docs/assets/anatomy/diag neck triangles labeled.svg 목빗근이 목을 앞·뒤 삼각으로 가른다 삼각 경계 핵심 내용물 뒤삼각 목빗근 뒤 · 등세모근 앞 · 빗장뼈 ==부신경 XI==(가장 얕다) · 목신경얼기 피부가지 · 팔신경얼기 목동맥삼각 목빗근 · 어깨목뿔근 위힘살 · 두힘살근 뒤힘살 ==온목동맥 갈림(C4, 방패연골 위모서리)== · 속목정맥 · 미주신경 두힘살근삼각 두힘살근 두 힘살 · 아래턱뼈 턱밑샘 · 혀밑신경 근육삼각 정중선 · 어깨목뿔근 위힘살 · 목빗근 앞 방패샘 · 후두 · 기관 [!임상] 뒤삼각의 부신경 :: 근막 바로 밑을 지나 가장 얕다 → 목 뒤삼각 림프절 생검에서 잘리면 등세모근이 마비돼 어깨처짐·팔 벌림 장애. 태깅에서 \"뒤삼각에서 가장 얕은 신경\"으로 나온다. !fig docs/assets/anatomy/diag anterior thigh labeled.svg 넙다리삼각과 모음근굴 — NAVEL 순서 넙다리삼각 내용 경계 위 ==고샅인대== · 가쪽 넙다리빗근 · 안쪽 긴모음근 바닥 엉덩허리근(가쪽) · 두덩근(안쪽) 내용물 가쪽→안쪽 ==NAVEL==: 넙다리신경 · 넙다리동맥 · 넙다리정맥 · 넙다리관(림프) 이어지는 곳 꼭짓점 → ==모음근굴(Hunter)== → 모음근구멍 → 오금 넓적다리 칸 신경 앞칸(넙다리네갈래근·넙다리빗근) ==넙다리신경== 안쪽칸(모음근들·두덩정강근) ==폐쇄신경== 예외 큰모음근 은 두 신경(모음부=폐쇄, 폄부=정강) · 두덩근 은 넙다리신경(±폐쇄) !fig docs/assets/anatomy/diag anterior leg foot labeled.svg 종아리 앞칸과 발등 — 깊은종아리신경이 함께 간다 종아리 앞칸 내용 근육 앞정강근 · 긴엄지폄근 · 긴발가락폄근 · 셋째종아리근 신경 ==깊은종아리신경== (첫·둘째 발가락 사이 물갈퀴 감각) 동맥 ==앞정강동맥==(뼈사이막을 뚫고 앞으로) → 발등동맥 6. 7회차 목의 뿌리 · 인두 · 발목 · 발바닥 !fig docs/assets/anatomy/tree s07 bundle labeled.svg 목갈비근틈새와 발목굴 — 두 통로의 순서 앞목갈비근 기준 구조 앞 ==빗장밑정맥== · 가로막신경(근육 앞면을 탄다) 목갈비근틈새(앞·중간 사이) ==빗장밑동맥 2부== · ==팔신경얼기== 발목굴(앞→뒤) 구조 ①② 뒤정강근 · 긴발가락굽힘근 힘줄 ③④ ==뒤정강동맥== · ==정강신경== ⑤ 긴엄지굽힘근 힘줄 발바닥 신경 담당 안쪽발바닥신경 엄지벌림근·짧은발가락굽힘근·첫째벌레근·짧은엄지굽힘근 + 안쪽 3½ 피부 (손의 ==정중신경==) 가쪽발바닥신경 나머지 대부분 + 가쪽 1½ 피부 (손의 ==자신경==) [!주의] 인두의 예외 하나 :: 인두 근육은 전부 미주신경(X)인데 ==붓인두근만 혀인두신경 IX==다. 7. 통로·공간 총정리 — 태깅 최빈출 통로 가르는 것 지나는 것(대표) 궁둥구멍근 위/아래 ==궁둥구멍근== 위볼기 / 궁둥신경·아래볼기·음부 작은궁둥구멍 엉치가시인대·엉치결절인대 음부신경·속음부동맥이 되돌아 네모/세모공간·세모간격 ==위팔세갈래근 긴갈래== 겨드랑신경 / 어깨휘돌이동맥 / 노신경 뒤통수밑삼각 세 뒤통수밑근 ==척추동맥 3부== · C1 뒤가지 갈비사이고랑 갈비뼈 아래모서리 ==VAN==(위→아래) 목갈비근틈새 ==앞·중간목갈비근== 빗장밑동맥 2부 · 팔신경얼기 넙다리삼각 고샅인대·넙다리빗근·긴모음근 ==NAVEL==(가쪽→안쪽) 모음근굴 큰모음근·넓은안쪽근 넙다리동·정맥 · 두렁신경 오금 네 근육 경계 ==얕은→깊은: 신경·정맥·동맥== 발목굴 ==굽힘근지지띠== Tom·Dick·And·Very Nervous·Harry 8. 헷갈리는 짝 — 나란히 보기 짝 구분 기준 등 얕은·중간층 ↔ 깊은층 ==앞가지 ↔ 뒤가지== (등세모근만 부신경 XI) 네모공간 ↔ 세모공간 긴갈래 ==가쪽(신경) ↔ 안쪽(동맥)== 앞정강동맥 ↔ 뒤정강동맥 ==뼈사이막을 뚫는다 ↔ 발목 안쪽면으로 돌아간다== 발등동맥 ↔ 뒤정강동맥 촉지 ==긴엄지폄근힘줄 가쪽 ↔ 안쪽복사 아킬레스 사이== 얕은종아리신경 ↔ 깊은종아리신경 ==가쪽칸(가쪽번짐) ↔ 앞칸(발등굽힘)==, 감각은 발등 대부분 ↔ 첫·둘째 물갈퀴 표정근육 ↔ 씹기근육 ==VII ↔ V3== (제2 ↔ 제1 인두굽이) 귀밑샘 통과 3구조 얕은→깊은 ==얼굴신경 → 뒤턱정맥 → 바깥목동맥== 좌우 되돌이후두신경 ==오른쪽 빗장밑동맥 ↔ 왼쪽 대동맥활== 안쪽 ↔ 가쪽발바닥신경 손의 ==정중 ↔ 자신경== 그대로 큰모음근 두 부분 ==모음부 폐쇄신경 ↔ 폄부 정강신경== 9. 신경 손상 지도 — \"이거 다치면?\" 신경 잘 다치는 자리 결과 부신경 XI ==목 뒤삼각==(가장 얕다) 등세모근 마비 · 어깨처짐 겨드랑신경 ==위팔뼈 외과목==(네모공간) 어깨세모근 마비 · 어깨 가쪽 감각소실 노신경 위팔뼈 몸통(노신경고랑) ==손목처짐== 위볼기신경 볼기 수술·주사 ==트렌델렌부르크 징후== 온종아리신경 ==종아리뼈목== 발처짐 · 가쪽번짐 소실 · 닭걸음 정강신경(발목굴) 굽힘근지지띠 밑 발바닥 저림(발목굴증후군) · 발꿈치 감각은 대개 보존 가로막신경 목 뿌리·세로칸 반쪽 가로막 마비 · ==C3 4 5== 되돌이후두신경 왼쪽=대동맥활 부위 쉰 목소리 10. 동맥 문합 — 닫힌 고리로 외운다 문합 잇는 두 축 임상 의미 어깨동맥그물 빗장밑(어깨위·등쪽어깨) ↔ 겨드랑(어깨휘돌이) 겨드랑동맥 3부 이전 막혀도 팔이 산다 십자문합 아래볼기 ↔ 안쪽·가쪽넙다리휘돌이 ↔ 첫째관통동맥 넙다리동맥 폐색의 우회 무릎관절그물 넙다리(내림무릎) ↔ 오금가지 ↔ 앞정강되돌이 무릎 굽힘 시 오금동맥 눌려도 관류 유지 발바닥동맥활 가쪽발바닥동맥 ↔ 발등동맥 깊은발바닥가지 발등·뒤정강 두 축이 발에서 만난다 [!TIP] 문합 문제는 '고리의 양 끝'을 묻는다 :: 그물 이름을 외우기보다 어느 두 큰 동맥을 잇는가 를 말할 수 있으면 된다."
+  },
+  {
+   "id": "paper-2026-0547",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-09-06",
+   "path": "content/papers/2026/2026-09-06_paper-2026-0547_association_between_serum_ferritin_and_hemoglobin_levels_in_.md",
+   "snippet": "Title Association Between Serum Ferritin and Hemoglobin Levels in Pregnant Women: Implications for Early Iron Deficiency Screening Authors Ahmed Doaa, Amin Rawaal, Raman Vidya, Hashmi Madina, Hulo Mohammad Ghaith, Albousen Baraa, Hameed Ale",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Cureus Title Association Between Serum Ferritin and Hemoglobin Levels in Pregnant Women: Implications for Early Iron Deficiency Screening Authors Ahmed Doaa, Amin Rawaal, Raman Vidya, Hashmi Madina, Hulo Mohammad Ghaith, Albousen Baraa, Hameed Aleena, Mani Tripathi Kaushalendra, et al. Journal / DOI Cureus · DOI: 10.7759/cureus.114043 · PMID: 42701825 https://pubmed.ncbi.nlm.nih.gov/42701825/ Abstract BACKGROUND: Iron deficiency is the leading cause of anemia during pregnancy, and serum ferritin is the most widely used biochemical marker of body iron stores. However, population specific evidence describing the relationship between serum ferritin concentrations and hemoglobin levels remains limited. PURPOSE: This study aimed to assess the relationship between serum ferritin and hemoglobin levels among pregnant women attending antenatal care. METHODS: A cross sectional, laboratory based study was conducted among 522 pregnant women in their second and third trimesters. Serum ferritin concentrations were measured using the hospital's standardized laboratory procedures. Iron deficiency was defined as a serum ferritin concentration <30 µg/L, and anemia was defined as a hemoglobin concentration <11 g/dL. Statistical analyses included descriptive statistics, independent samples Student's t tests, chi square tests, binary logistic regression, and receiver operating characteristic (ROC) curve analysis. FINDINGS: Iron deficiency was identified in 209 participants (40.0%), and anemia was present in 235 participants (45.0%). Serum ferritin concentrations and mean corpuscular volume (MCV) were significantly lower in women with anemia than in those without anemia (p < 0.001). Serum ferritin was independently associated with anemia (OR = 0.95, p < 0.001). Notably, 35 women without anemia (12.2%) had low serum ferritin concentrations, indicating subclinical iron deficiency. ROC curve analysis demonstrated good discriminative performance, with serum ferritin showing greater diagnostic accuracy than MCV. The optimal serum ferritin cutoff was 17.0 µg/L, with a sensitivity of 81% and a specificity of 83%. CONCLUSION: Pregnant women with anemia had significantly lower serum ferritin concentrations than those without anemia, and a substantial proportion of women with normal hemoglobin levels had depleted iron stores. These findings support the potential value of serum ferritin as an adjunctive marker for assessing iron status during pregnancy. However, prospective studies are needed to further evaluate its clinical utility. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0546",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cardiology",
+   "confidence": "medium",
+   "date": "2026-09-06",
+   "path": "content/papers/2026/2026-09-06_paper-2026-0546_prospective_evaluation_of_quality_of_life_improvement_after_.md",
+   "snippet": "Title Prospective Evaluation of Quality of Life Improvement After Dapagliflozin Initiation in a Greek Population With HFrEF: The EVOLUTION HF 12 Month Results Authors Potoupni Victoria, Boulmpou Aristi, Maragkoudakis Spyridon, Briasoulis Al",
+   "text": "Cardiology scraped pubmed PubMed / Clinical cardiology Title Prospective Evaluation of Quality of Life Improvement After Dapagliflozin Initiation in a Greek Population With HFrEF: The EVOLUTION HF 12 Month Results Authors Potoupni Victoria, Boulmpou Aristi, Maragkoudakis Spyridon, Briasoulis Alexandros, Foukarakis Emmanouil, Stavrati Alexia, Papadopoulos Konstantinos, Naka Katerina K, et al. Journal / DOI Clinical cardiology · DOI: 10.1002/clc.70466 · PMID: 42701883 https://pubmed.ncbi.nlm.nih.gov/42701883/ Abstract INTRODUCTION: Heart failure with reduced ejection fraction (HFrEF), defined by a left ventricular ejection fraction ≤ 40%, remains a major global health challenge, associated with substantial morbidity, mortality, and impaired quality of life (QoL), particularly in patients with higher NYHA class. Sodium glucose cotransporter 2 (SGLT2) inhibitors have emerged as a cornerstone therapy for HFrEF, significantly reducing hospitalizations and mortality regardless of glycemic status, sex, race, or comorbidities. METHODS: EVOLUTION HF was an observational, multi center, longitudinal cohort study involving 257 consecutive patients diagnosed with HFrEF who initiated dapagliflozin in a routine clinical setting in Greece. The primary objectives were to characterize baseline demographic and clinical features of patients newly initiated on dapagliflozin for HFrEF and to evaluate dapagliflozin treatment patterns, including discontinuation timing, reasons for discontinuation, and concomitant heart failure and glucose lowering therapies over time. The secondary objectives are to describe patient reported outcomes using the KCCQ 23 and to assess adherence to dapagliflozin among patients with HFrEF. RESULTS: A total of 257 patients were enrolled and the follow up period lasted for 12 months. Significant improvements among all KCCQ 23 scores were observed from baseline to 12 months post dapagliflozin initiation, revealing that the initiation and optimization of guideline directed medical therapy in routine clinical practice provides improvement to quality of life over time. CONCLUSIONS: Dapagliflozin was safe and well tolerated throughout the observation period. Although benefits are observed in most patients, individuals aged 65 years, with prior myocardial infarction, or recent hospitalizations show a diminished response, underscoring the need for tailored management and closer follow up in these higher risk groups. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-06",
