@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-07",
+ "generated": "2026-09-08",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2161,
+  "total": 2170,
   "byType": {
+   "anatomy": 592,
    "usmle": 132,
-   "anatomy": 590,
+   "paper": 554,
    "kmle": 875,
-   "paper": 547,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 590,
-   "Cardiology": 172,
-   "Nephrology": 144,
-   "Infectious Disease": 120,
+   "Anatomy": 592,
+   "Cardiology": 173,
+   "Nephrology": 145,
+   "Infectious Disease": 121,
    "Pediatrics": 100,
-   "Hematology-Oncology": 83,
-   "Pathology": 76,
+   "Hematology-Oncology": 84,
+   "Pathology": 77,
    "Obstetrics & Gynecology": 67,
    "Neurology": 66,
    "Psychiatry": 65,
-   "Surgery": 60,
+   "Surgery": 61,
    "Endocrinology": 56,
    "Gastroenterology": 55,
    "Pulmonology": 55,
@@ -35,7 +35,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 54,
    "Rheumatology": 54,
    "Hematology": 53,
-   "Laboratory Medicine": 52,
+   "Laboratory Medicine": 53,
    "Physiology": 16,
    "Pharmacology": 10,
    "Biochemistry": 9,
@@ -53,13 +53,57 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1383,
-   "medium": 729,
+   "high": 1385,
+   "medium": 736,
    "low": 49
   },
-  "tagCount": 2975
+  "tagCount": 2982
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-09",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-09",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-09",
+   "path": "content/anatomy/daily/2026-09-09.md",
+   "snippet": "오늘의 학습 (2026 09 09 · t1 prep) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 1일 · Tagging 2까지 40일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-09 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 09 · t1 prep) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 1일 · Tagging 2까지 40일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0467",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "Tagging 1 전날(D-1) 최종 점검 — 인출 드릴 · 답안 표기 · 시험장 운영",
+   "tags": [
+    "태깅1",
+    "D-1",
+    "최종점검",
+    "인출드릴",
+    "답안표기",
+    "시험운영",
+    "순서문항",
+    "좌우",
+    "1회차",
+    "2회차",
+    "3회차",
+    "4회차",
+    "5회차",
+    "6회차",
+    "7회차"
+   ],
+   "source": "회차 서브노트 1–7 · 종합 복습(0465) · 모의고사 구성표(0466) · 문항 은행 content/anatomy/questions/tagging-1/ — 새 사실 생성 없음, 인출 형태로 재배열만",
+   "confidence": "high",
+   "date": "2026-09-09",
+   "path": "content/anatomy/notes/anatomy-2026-0467-t1-eve.md",
+   "snippet": "0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 1 이 ==내일(2026 09 10)== 이다. 읽는 공부는 D 3 종합 복습( anatomy 2026 0465 ) 에서 닫혔고, 어제 D 2 모의고사( anatomy 2026 0466 )로 구멍이 어디인지 이미 드러났다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . 형태만 바꿨다 — 읽는 ",
+   "text": "Anatomy Tagging 1 전날(D-1) 최종 점검 — 인출 드릴 · 답안 표기 · 시험장 운영 7회차 · 목·다리 태깅1 D-1 최종점검 인출드릴 답안표기 시험운영 순서문항 좌우 1회차 2회차 3회차 4회차 5회차 6회차 7회차 회차 서브노트 1–7 · 종합 복습(0465) · 모의고사 구성표(0466) · 문항 은행 content/anatomy/questions/tagging-1/ — 새 사실 생성 없음, 인출 형태로 재배열만 0. 오늘은 넣는 날이 아니라 꺼내는 날이다 Tagging 1 이 ==내일(2026 09 10)== 이다. 읽는 공부는 D 3 종합 복습( anatomy 2026 0465 ) 에서 닫혔고, 어제 D 2 모의고사( anatomy 2026 0466 )로 구멍이 어디인지 이미 드러났다. 오늘 새 구조 이름을 처음 외우기 시작하면 ==이미 잡아 둔 관계까지 흔들린다==. 그래서 이 카드에는 새 내용이 없다 . 형태만 바꿨다 — 읽는 표가 아니라 ==보지 않고 말하는 드릴==, 그리고 아는 것을 답안에서 잃지 않기 위한 표기 교정이다. [!TIP] 오늘의 판단 기준 :: 한 항목을 ==10초 안에 소리 내어== 말하지 못하면 그건 '아는 것'이 아니라 '읽은 것'이다. 말이 나오면 넘어가고, 막히면 그 회차 서브노트의 해당 표만 30초 보고 다시 말한다. ==다시 읽기로 시간을 쓰지 않는다.== 1. 답안 표기 — 아는 것을 잃지 않는 법 ANSWER RULES (학습평가 시트 확정본). 내용을 맞히고 표기에서 깎이는 것이 ==가장 아까운 실점==이고, 오늘 30분으로 완전히 막을 수 있는 유일한 실점이다. 약자는 마침표까지가 한 단어 허용 약자는 ==a. v. n. m. lig. sup. inf. ant. post. med. lat.== 이 전부고 ==마침표가 필수==다. 목록에 없는 줄임말은 쓰지 않는다. 이렇게 쓰면 위험 이렇게 쓴다 post tibial a == 뒤정강동맥 또는 posterior tibial a. == art. femoralis == 넙다리동맥 또는 femoral a. == tibial nerve, n == 정강신경 또는 tibial n. == sup gluteal n == 위볼기신경 또는 superior gluteal n. == 방향어를 빼면 절반만 쓴 답이다 관계를 묻는 문항은 구조 이름이 아니라 ==자리==가 정답이다. \"가로막신경은 허파뿌리를 지나간다\"는 답이 아니고, \"가로막신경은 허파뿌리 ==앞(ant.)== 을 지난다\"가 답이다. 근육은 접미사까지 한글은 == ○○근 ==, 원어는 == ○○ muscle 또는 ○○ m. ==. 뒤정강 , tibialis posterior 처럼 접미사를 떨어뜨리면 근육인지 힘줄인지 동맥인지가 답안에서 사라진다. 둘 다 쓰면(한글 + 원어) ==더 안전하다==. 2. 인출 드릴 A — 궁둥구멍근이 가르는 것 !fig docs/assets/anatomy/diag gluteal foramina quiz.svg 번호핀만 남긴 퀴즈판 — 보고 말한 뒤 오른쪽 답과 맞춘다 핀을 보고 소리 내어 말한 다음 아래를 확인한다. 묻는 것 답 큰궁둥구멍을 위·아래로 가르는 근육 ==궁둥구멍근 (piriformis m.)== 궁둥구멍근 위 로 나오는 것 ==위볼기신경·위볼기동정맥 (superior gluteal n./a./v.) — 이것뿐== 궁둥구멍근 아래 로 나오는 것 ==궁둥신경 · 아래볼기신경·동정맥 · 음부신경·속음부동맥 · 뒤넙다리피부신경== 음부신경·속음부동맥이 다시 들어가는 문 ==작은궁둥구멍 (lesser sciatic foramen) — 되돌아 들어간다== 그 되돌아가는 길을 만드는 두 인대 ==엉치가시인대 · 엉치결절인대 (sacrospinous · sacrotuberous lig.)== 3. 인출 드릴 B — 긴갈래가 가르는 세 공간 !fig docs/assets/anatomy/diag scapular spaces quiz.svg 위팔세갈래근 긴갈래 하나가 어깨뼈부위를 셋으로 가른다 공간 경계에서의 자리 지나는 것 네모공간 긴갈래 ==가쪽== ==겨드랑신경 (axillary n.) · 뒤위팔휘돌이동맥== 세모공간 긴갈래 ==안쪽== ==어깨휘돌이동맥 (circumflex scapular a.)== 세모간격 ==큰원근 아래== ==노신경 (radial n.) · 깊은위팔동맥== [!주의] 한 문장으로 :: ==가쪽은 신경, 안쪽은 동맥, 아래는 노신경.== 셋을 따로 외우면 시험장에서 섞인다 — 기준은 언제나 ==긴갈래 하나==다. 4. 인출 드릴 C — 오금과 갈비사이, 방향이 뒤집힌 짝 !fig docs/assets/anatomy/diag popliteal fossa quiz.svg 오금 — 얕은 곳에서 깊은 곳으로 세는 순서 두 자리 모두 신경·정맥·동맥 셋이지만 ==세는 방향이 반대==다. 이 둘을 붙여서 외워 두면 순서 문항에서 방향을 헷갈리지 않는다. 자리 세는 방향 순서 오금 (popliteal fossa) ==얕은 → 깊은== ==정강신경 → 오금정맥 → 오금동맥== 갈비사이고랑 ==위 → 아래== ==정맥 → 동맥 → 신경 (VAN)== 갈비사이고랑이 갈비뼈 ==아래모서리==에 있으므로, 흉관은 ==갈비뼈 위모서리==를 타고 넣는다 — 이유까지 한 문장으로 붙여 말한다. 5. 인출 드릴 D — 뒤통수밑삼각 !fig docs/assets/anatomy/diag suboccipital quiz.svg 세 근육이 만드는 삼각과 그 바닥을 지나는 것 묻는 것 답 삼각을 만드는 세 근육 ==큰뒤머리곧은근 · 위머리빗근 · 아래머리빗근== 삼각 안을 지나는 동맥 ==척추동맥 3부 (vertebral a., 3rd part)== 삼각을 지배하는 신경 ==C1 뒤가지 = 뒤통수밑신경 (suboccipital n.)== 등 근육 신경지배의 큰 규칙 ==얕은·중간층은 앞가지, 깊은층만 뒤가지== 그 규칙의 예외 ==등세모근 — 부신경 (accessory n., XI)== 6. 인출 드릴 E — 목갈비근틈새와 발목굴 !fig docs/assets/anatomy/tree s07 bundle quiz.svg 두 통로의 순서 — 위가슴문과 발목 안쪽면 묻는 것 답 앞목갈비근 앞 ==빗장밑정맥 (subclavian v.) — 틈새 밖== 목갈비근틈새 안 ==빗장밑동맥 2부 · 팔신경얼기== 앞목갈비근 앞면을 타는 신경 ==가로막신경 (phrenic n.) — 유일한 예외== 발목굴을 덮는 것 ==굽힘근지지띠 (flexor retinaculum)== 발목굴 앞(안쪽복사 쪽)→뒤 ==뒤정강근 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근== 목갈비근증후군에서 정맥 증상이 대개 없는 이유는 ==빗장밑정맥이 틈새 밖(앞목갈비근 앞) 을 지나 눌리지 않기 때문==이다 — 관계를 묻는 문항은 늘 이 '왜'까지 요구한다. 7. 순서 문항 셋 — 이름을 다 맞혀도 순서가 틀리면 오답 모의고사 채점 규정(0466 §3)대로, 아래 셋은 ==순서를 따로 채점==한다. 쓰기 전에 ==어느 방향으로 세는지를 먼저 정하고== 시작한다. 문항 묻는 방향 답 0368 오금 얕은 → 깊은 ==정강신경 → 오금정맥 → 오금동맥== 0389 발목굴 앞(안쪽복사) → 뒤 ==뒤정강근 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근== 0159 허파뿌리 앞 → 뒤 (좌우 공통) ==허파정맥 → 허파동맥 → 기관지 (VAB)== 0159 허파뿌리 위 → 아래 (좌우 다름) 오른쪽 ==기관지 → 동맥 → 정맥== / 왼쪽 ==동맥 → 기관지 → 정맥== 왼쪽이 다른 이유는 ==왼허파동맥이 대동맥활을 넘어가야 해서 가장 위로 올라가기 때문==이다. 오른쪽 위엽기관지가 동맥보다 위에 있는 것을 ==eparterial== 이라 부른다. 8. 좌우가 답을 가르는 자리 방향어를 빼면 답이 되지 않는 자리들이다. 각각 ==한 문장==으로 말해 본다. 구조 좌우 / 앞뒤 차이 되돌이후두신경 ==오른쪽은 빗장밑동맥, 왼쪽은 대동맥활==을 감아 돈다 가로막신경 · 미주신경 ==가로막신경은 허파뿌리 앞(중간세로칸), 미주신경은 뒤(뒤세로칸)== 허파뿌리 위→아래 ==오른쪽 기관지가 맨 위, 왼쪽은 동맥이 맨 위== 앞목갈비근 ==정맥은 앞, 동맥·얼기는 뒤(틈새 안)== 넙다리삼각 NAVEL 가쪽→안쪽 ==신경 · 동맥 · 정맥 · 빈공간 · 림프== — 동맥이 정맥 가쪽 9. 시험장 운영 — 카데바 5구를 도는 법 3Q 개요 기준 1차는 ==30문항 · 카데바 5구==다. 한 자리에 오래 서 있을 수 없는 시험이므로, 지식보다 ==운영에서 점수가 갈린다==. 한 핀에 90초를 넘기지 않는다 30문항이면 문항당 평균 ==90초==다. 막힌 핀에서 3분을 쓰면 뒤의 두 문항을 통째로 잃는다. ==막히면 표시하고 넘어간 뒤 한 바퀴 돌고 돌아온다.== 핀을 보기 전에 부위를 먼저 확정한다 핀 끝의 구조를 바로 맞히려 하지 말고, ==어느 부위·어느 층인지를 먼저 말한다==. 부위가 정해지면 후보가 몇 개로 줄고, 그 몇 개 중 ==자리로== 고르면 된다. 태깅은 생김새가 아니라 ==무엇이 무엇 사이를 지나는가==를 묻는 시험이다. 방향어와 접미사를 쓰는 순간에 붙인다 나중에 고쳐 쓸 시간이 없다. 답을 적을 때 ==한글용어 + 원어== 를 같이, 방향을 묻는 문항이면 ==방향어까지 한 번에== 적는다. 10. 막혔을 때 — 부분점수를 얻는 답안 빈칸은 확실한 0점이다. 이름이 끝내 안 나오면 아래 순서로 ==한 단계씩 올라간다==. 1. 정확한 이름 → 2. ==상위 계보==( 넙다리신경의 가지 , V3 의 가지 , 바깥목동맥의 가지 ) → 3. ==기능·지배 영역==( 발등굽힘을 시키는 신경 ) → 4. ==자리==( 굽힘근지지띠 밑을 지나는 힘줄 ). [!임상] 왜 이 순서인가 :: 채점자는 ==구조를 특정할 수 있는가==를 본다. '넙다리신경의 가지'까지 쓰면 후보가 좁혀지지만, 빈칸은 아무것도 특정하지 못한다. ==아는 만큼 쓰고 나온다.== 11. 오늘 밤 30분 · 내일 아침 15분 오늘 밤 30분 [ ] §1 표기 규정 — ==약자 마침표·근육 접미사== 소리 내어 한 번 [ ] §2–§6 퀴즈판 5장 — 도해를 보고 ==답을 가린 채== 말하기, 막힌 것만 표시 [ ] §7 순서 문항 셋 — ==방향을 먼저 정하고== 순서까지 말하기 [ ] 어제 모의고사에서 오답이 ==셋 이상 몰린 회차==가 있으면 그 서브노트 1장만 정독 [ ] 표시한 항목만 다시 한 번 — ==새 자료를 열지 않는다== 내일 아침 15분 [ ] §8 좌우 표 — ==좌우·앞뒤만== 훑기 [ ] 0465 §8 헷갈리는 짝 대조표 한 번 [ ] §9 운영 3원칙 — ==90초 · 부위 먼저 · 쓰는 순간에 방향어== [ ] ==새 내용 금지.== 아침에 처음 보는 구조는 시험장에서 기억을 밀어낸다"
+  },
   {
    "id": "usmle-2026-0145",
    "type": "usmle",
@@ -228,6 +272,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0466-t1-mock.md",
    "snippet": "0. 왜 오늘 모의고사인가 Tagging 1 까지 ==이틀== 남았다. 어제(D 3)까지 회차 서브노트 7장과 종합 복습 카드 ( anatomy 2026 0465 )로 읽는 공부 는 닫혔다. 남은 이틀에 새 내용을 넣는 것은 손해다 — 지금 필요한 것은 꺼내 쓰는 연습 이다. 그래서 오늘 산출물은 새 정리가 아니라 ==기존 문항 은행에서 뽑은 실전 30문항==이다. [!TIP] 남은 이틀 배분 :: D 2(오늘) 모의고사 45",
    "text": "Anatomy Tagging 1 모의고사 — 30문항 실전 세트 (D-2) 7회차 · 목·다리 태깅1 모의고사 실전 30문항 1회차 2회차 3회차 4회차 5회차 6회차 7회차 기존 문항 은행 content/anatomy/questions/tagging-1/ 334문항에서 30개 선별(결정론적 구성표) — 새 사실 생성 없음 0. 왜 오늘 모의고사인가 Tagging 1 까지 ==이틀== 남았다. 어제(D 3)까지 회차 서브노트 7장과 종합 복습 카드 ( anatomy 2026 0465 )로 읽는 공부 는 닫혔다. 남은 이틀에 새 내용을 넣는 것은 손해다 — 지금 필요한 것은 꺼내 쓰는 연습 이다. 그래서 오늘 산출물은 새 정리가 아니라 ==기존 문항 은행에서 뽑은 실전 30문항==이다. [!TIP] 남은 이틀 배분 :: D 2(오늘) 모의고사 45분 → 채점 → 구멍 표시. D 1(내일) 표시된 구멍만 서브노트로 되돌아가 확인, 그리고 0465 §7 통로·공간 소리 내어 읽기. ==근육 이는곳·닿는곳 암기를 지금 새로 시작하지 않는다== — 태깅 핀은 거의 통로 안에 꽂힌다. 1. 시험 정보와 이 세트의 형식 시험 2026 09 10 Tagging 1. 범위 1–7회차 전부. 형식 (3Q 개요) ==30문항 · 카데바 5구==. 이 모의고사도 ==30문항==으로 맞췄고, 전부 서술형 이다. 은행에 있는 객관식 4문항 (0041·0046·0048·0157)은 일부러 뺐다 — 태깅은 보기를 주지 않는다. 권장 시간 45분 (문항당 90초). 실제 태깅은 한 자리에서 오래 생각할 수 없으므로 ==시간을 재지 않고 푸는 모의고사는 의미가 없다==. 도해 퀴즈판·실사 복원 문항은 이 세트에서 뺐다. 그림 문항은 회차 서브노트에 이미 실려 있고, 오늘은 말로 꺼내는 연습 이 목표다. 2. 구성표 — 6개 자리 × 5문항 실제 1차는 카데바 5구지만, 범위를 빠짐없이 훑기 위해 ==부위 6곳==으로 나눴다. 문제 1–5가 1구, 6–10이 2구 … 다섯씩 끊긴다. 자리 부위 회차 문항 id (문제 번호 순) 1구 등·척주·엉치인대 1–2 0343 · 0347 · 0349 · 0351 · 0365 2구 볼기·넓적다리 뒤·얕은정맥 1–2 0044 · 0045 · 0354 · 0355 · 0358 3구 뒤통수밑삼각·어깨뼈부위·다리오금 2–3 0368 · 0369 · 0370 · 0372 · 0375 4구 얼굴·귀밑샘·관자아래우묵 4–5 0382 · 0383 · 0384 · 0385 · 0397 5구 가슴벽·가슴안·심장 4–5 0378 · 0154 · 0156 · 0158 · 0159 6구 목·넓적다리 앞·발 6–7 0388 · 0389 · 0392 · 0394 · 0447 (id 는 전부 anatomy 2026 접두사가 붙는다. 지문·정답·해설은 각 문항 카드에 있고 이 카드는 복제하지 않는다.) 회차 배분 확인 회차 1 2 3 4 5 6 7 문항 수 2 8 5 5 5 3 2 1회차(피부벗기기·얕은정맥)와 7회차(목의 뿌리·발)는 태깅 출제 밀도가 낮아 둘씩, 2회차(등·볼기)는 구조물이 가장 많아 여덟이다. ==한 회차도 0 이 되지 않게== 맞췄다. 3. 채점 규정 — 내용과 표기를 따로 본다 공인 한글용어 또는 원어 중 하나 로 쓴다(둘 다 쓰면 더 안전하다). 근육은 == ○○근 또는 ○○ muscle · ○○ m. ==. 허용 약자 ==a. v. n. m. lig. sup. inf. ant. post. med. lat.== — 마침표 필수 . a 만 쓰면 동맥으로 인정되지 않을 수 있다. 순서를 묻는 문항(0368 깊이 순서, 0389 발목굴 앞→뒤, 0159 허파뿌리 배열)은 ==순서가 틀리면 이름을 다 맞혀도 오답==이다. 채점할 때 순서를 따로 본다. [!주의] 자주 깎이는 자리 :: 좌우를 묻는 문항(0154 가로막신경·미주신경, 0159 허파뿌리 좌우 차이, 0388 앞목갈비근 앞뒤)은 ==방향어(ant. post. med. lat.)를 빼면 답이 안 된다==. \"지나간다\"가 아니라 \" 앞으로 지나간다\"까지 써야 한다. 4. 채점 뒤 — 구멍을 회차로 환산한다 1. 틀린 문항의 회차 번호 를 세어 본다(구성표의 회차 열). 2. 한 회차에 ==셋 이상== 몰렸으면 → 그 회차 서브노트를 다시 편다. 1회차 anatomy 2026 0060 · 2회차 0033 · 3회차 0077 · 4회차 0111 5회차 0150 · 6회차 0067 · 7회차 0112 3. 회차와 무관하게 흩어져 있으면 → 개별 지식이 아니라 관계 가 안 잡힌 것이다. 종합 복습 카드 anatomy 2026 0465 의 ==§7 통로·공간==과 ==§8 헷갈리는 짝==만 다시 본다. 4. \"알 것 같은데 말이 안 나온\" 문항은 틀린 문항과 똑같이 취급 한다. 태깅은 손으로 쓰는 시험이라 ==인출되지 않는 지식은 없는 지식==이다. 5. 마지막 이틀 체크리스트 [ ] 오늘: 45분 타이머, 30문항 완주(막힌 것은 비워 두고 끝까지) [ ] 오늘: 채점 후 회차별 오답 수 세기 [ ] 오늘: 순서 문항(0368·0389·0159) 순서까지 맞았는지 따로 확인 [ ] 내일: 오답 몰린 회차 서브노트 1장만 정독 [ ] 내일: 0465 §7 통로·공간을 ==보지 않고 말로== 재생 [ ] 내일: 답안 표기 규정(약자 마침표·근육 접미사) 한 번 더 훑기 [ ] 시험 당일: 새 내용 금지, 0465 §8 대조표만"
+  },
+  {
+   "id": "paper-2026-0554",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Spine",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0554_allogenic_red_blood_cell_transfusion_increases_risk_of_overa.md",
+   "snippet": "Title Allogenic Red Blood Cell Transfusion Increases Risk of Overall Infection After Surgery for Spinal Metastasis: A Retrospective Multi Institutional Cohort Study of 796 Patients Authors de Reus D C, Amelink J J G J, Saha P, Coan J, Groot",
+   "text": "Surgery scraped pubmed PubMed / Spine Title Allogenic Red Blood Cell Transfusion Increases Risk of Overall Infection After Surgery for Spinal Metastasis: A Retrospective Multi Institutional Cohort Study of 796 Patients Authors de Reus D C, Amelink J J G J, Saha P, Coan J, Groot O Q, Lui, Verlaan J J, Tobert D G Journal / DOI Spine · DOI: 10.1097/BRS.0000000000005837 · PMID: 42704890 https://pubmed.ncbi.nlm.nih.gov/42704890/ Abstract STUDY DESIGN: Multi institutional retrospective cohort study in the United States and United Kingdom. OBJECTIVE: To (1) report the incidence of overall infection after surgery, (2) assess if allogenic red blood cell (RBC) transfusion and other clinical factors increase infection risk, and (3) explore if a safe transfusion dose exists. SUMMARY OF BACKGROUND DATA: Open spinal metastasis surgery can involve significant blood loss and subsequent transfusion use. Although transfusion has been linked with increased infection rates in other settings, evidence within spinal metastasis surgery is limited. METHODS: Adults with spinal metastasis undergoing open decompressive or stabilization surgery between 2017 and 2022 were included. The primary outcome was overall infection occurring within 30 days postoperatively. Multivariable logistic regression assessed transfusion and other risk factors for infection. Additional confounders (anemia, operative time, hospital stay, blood loss) were included in a sensitivity analysis. RESULTS: Among 796 patients (mean age 62±12 y, 41% female), 127 (16%) developed infections. Transfusion was given in 329 (41%) of patients and was independently associated with increased risk of overall infection postoperatively (OR 2.28, P<0.001), which persisted in sensitivity analysis (P<0.012). A dose dependent association was observed (250 mL increase: OR 1.10, P=0.014) without safe threshold (1 unit: OR 2.11, P=0.030). Higher BMI, COPD, elevated white blood cell count, fast growing primary tumor, ≥3 spinal metastases, ≥4 levels operated, low serum albumin, and preoperative chemo , immuno or targeted therapy were also associated with infection (P<0.05). CONCLUSION: Open spinal metastasis surgery carries high risk of both RBC transfusion and infection. Transfusion increased risk of infection in a dose dependent manner. No safe volume threshold was identified in this cohort. Although often unavoidable, surgeons should strive for restrictive transfusion strategies and optimize perioperative protocols to reduce transfusion requirements. Higher comorbidity , tumor , and surgical burden further increased infection risk. These factors may aid in risk stratification and balancing the need for transfusion accordingly. Additionally, surgeons might optimize infection risk by favoring less invasive procedures over extensive (blood loss prone) surgery and considering nutritional optimization (BMI, albumin levels). LEVEL OF EVIDENCE: III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0553",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of veterinary internal medicine",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0553_discriminatory_performance_of_total_calcium_for_ionized_hypo.md",
+   "snippet": "Title Discriminatory performance of total calcium for ionized hypocalcemia and factors affecting ionized calcium in Assaf ewes during the pre and post lambing periods Authors Tümer Kenan Ç, Buczinski Sébastien, Bozaci Serkan, Deniz Ömer, Şa",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of veterinary internal medicine Title Discriminatory performance of total calcium for ionized hypocalcemia and factors affecting ionized calcium in Assaf ewes during the pre and post lambing periods Authors Tümer Kenan Ç, Buczinski Sébastien, Bozaci Serkan, Deniz Ömer, Şafak Tarik, Deniz Berrak I, Şimşek Abdullah, Wittek Thomas Journal / DOI Journal of veterinary internal medicine · DOI: 10.1093/jvimsj/aalag202 · PMID: 42704874 https://pubmed.ncbi.nlm.nih.gov/42704874/ Abstract BACKGROUND: Total calcium concentration (tCa) poorly reflects ionized hypocalcemia across species, and multiple factors influence ionized calcium concentration (iCa2+). These relationships have not been evaluated in Assaf ewes. HYPOTHESIS/OBJECTIVES: Assess the diagnostic accuracy of tCa for detecting hypocalcemia and identify factors associated with iCa2+ during pre and post lambing periods. ANIMALS: A total of 105 clinically healthy multiparous Assaf ewes from a commercial flock. METHODS: Prospective observational study. Venous blood samples were collected during pre and post lambing periods. Blood gas electrolytes (pH, pCO₂, pO₂, HCO₃ , TCO₂, Na+, K+, iCa2+) and biochemical analyses (total protein, albumin, tCa, magnesium, phosphorus, β hydroxybutyrate [BHB], glucose, alkaline phosphatase) were performed. Discriminatory performance of tCa was evaluated using area under the receiver operating characteristic curve (AUC) analysis. Variables associated with iCa2+ were assessed using multiple linear regression. RESULTS: During the pre lambing period, tCa showed moderate diagnostic performance (AUC, 0.73; 95% CI, 0.57 0.87; sensitivity, 67%; specificity, 80%) at a cutoff of ≤ 2.42 mmol/L, whereas performance was poor for the post lambing period (AUC, 0.59; 95% CI, 0.47 0.70; sensitivity, 97%; specificity, 31%) at ≤ 2.77 mmol/L. In multiple regression, tCa, BHB, pCO₂, and pO₂ were associated with iCa2+ during pre lambing (adjusted R2 = 0.27, P < .001), whereas tCa, BHB, phosphorus, albumin, and Na+ were associated with the post lambing period (adjusted R2 = 0.25, P < .001). CONCLUSIONS AND CLINICAL IMPORTANCE: iCa2+ varied by production stage and was influenced by several physiologic variables. Direct measurement of iCa2+ should be prioritized to improve the accuracy of hypocalcemia assessment in Assaf ewes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0552",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical rheumatology",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0552_idiopathic_granulomatous_mastitis_in_the_united_arab_emirate.md",
+   "snippet": "Title Idiopathic granulomatous mastitis in the United Arab Emirates: a retrospective case series of clinical features, management, and outcomes Authors Alhusami Minat Allah, Dsouza Skylar, Himeidi Maya, Jatan Noora, Ginawi Amel Journal / DO",
+   "text": "Pathology scraped pubmed PubMed / Clinical rheumatology Title Idiopathic granulomatous mastitis in the United Arab Emirates: a retrospective case series of clinical features, management, and outcomes Authors Alhusami Minat Allah, Dsouza Skylar, Himeidi Maya, Jatan Noora, Ginawi Amel Journal / DOI Clinical rheumatology · DOI: 10.1007/s10067 026 08276 8 · PMID: 42704583 https://pubmed.ncbi.nlm.nih.gov/42704583/ Abstract BACKGROUND: Idiopathic granulomatous mastitis (IGM) is a rare, chronic inflammatory breast disease that mimics infection and malignancy, with no standardized treatment approach. METHODS: We conducted a single center retrospective case series of 25 women with histopathologically confirmed IGM managed at a tertiary center in Dubai, UAE (June 2022 June 2025). Demographic, clinical, imaging, histopathological, treatment, and outcome data were analyzed. Remission was defined as complete clinical and radiological resolution sustained for at least 6 months after cessation of therapy. The median follow up duration was 20 months. RESULTS: The median age was 38 years; all patients were pre or perimenopausal, and 92% (n = 23) had a history of breastfeeding. The most common presenting features were tenderness (92%, n = 23) and a palpable mass (88%, n = 22). Ultrasound frequently identified abscesses (60%, n = 15) and axillary lymphadenopathy (56%, n = 14), whereas mammography showed ductal dilatation (48%, n = 12) and solid masses (32%, n = 8). Histopathology demonstrated lobulocentric non caseating granulomas in 72% (n = 18) and cystic neutrophilic granulomatous mastitis in 28% (n = 7) (n = 7), with overlapping abscess formation in 40% (n = 10). Medical therapy alone was used in 52% (n = 13) of patients and combined medical surgical management in 48% (n = 12). Remission occurred in 69% (n = 9) of medically managed patients compared to 25% (n = 3) in the combined group. CONCLUSION: IGM predominantly affected young, parous women and showed a heterogeneous clinical course. Medical management with corticosteroids, with or without disease modifying anti rheumatic drugs, appears to be associated with higher observed remission rates than combined surgical approaches. Early diagnosis and timely immunosuppressive therapy may reduce recurrence and avoid unnecessary surgery. Limitations include the small sample size, retrospective single center design, and heterogeneity of treatment regimens. Key Points • Idiopathic granulomatous mastitis predominantly affected young, parous, premenopausal women with recent breastfeeding history. • Medical management with corticosteroids, with or without DMARDs, demonstrated higher observed remission rates than combined surgical approaches. • Surgical intervention was associated with greater complication burden, increased flares, and more chronic disease. • Early diagnosis and timely immunosuppressive therapy may improve outcomes while reducing unnecessary surgery. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0551",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0551_pediatric_myocarditis_contemporary_insights_into_viral_and_i.md",
+   "snippet": "Title Pediatric Myocarditis: Contemporary Insights Into Viral and Immune Mediated Pathobiology, Precision Diagnostics, Advanced Multimodality Imaging, Risk Stratification, and Evolving Therapeutic Strategies Authors Fatima Haram, Rana Masha",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Cardiology in review Title Pediatric Myocarditis: Contemporary Insights Into Viral and Immune Mediated Pathobiology, Precision Diagnostics, Advanced Multimodality Imaging, Risk Stratification, and Evolving Therapeutic Strategies Authors Fatima Haram, Rana Mashal Aziz, Asghar Tehreem, Akram Muhammad Bilal, Fatima Areena, Murtaza Mashaaal, Khan Rimsha, Ashraf Sidra Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001451 · PMID: 42704815 https://pubmed.ncbi.nlm.nih.gov/42704815/ Abstract Pediatric myocarditis is an important cause of acute and chronic myocardial dysfunction, accounting for a substantial proportion of dilated cardiomyopathy, heart failure, malignant arrhythmias, and sudden cardiac death in children. Although historically considered a predominantly viral disease, contemporary evidence indicates that pediatric myocarditis represents a heterogeneous spectrum of disorders characterized by complex interactions between infectious triggers, innate and adaptive immune responses, host genetic susceptibility, and myocardial repair mechanisms. The emergence of multisystem inflammatory syndrome in children and vaccine associated myocarditis has further expanded the clinical spectrum while emphasizing the importance of accurate etiologic classification. Diagnosis remains challenging because clinical manifestations range from mild chest discomfort to fulminant cardiogenic shock. Advances in high sensitivity cardiac troponin assays, cardiac magnetic resonance imaging with multiparametric tissue characterization, molecular pathogen detection, and selective endomyocardial biopsy have substantially improved diagnostic accuracy. Risk stratification increasingly integrates clinical presentation, ventricular function, biomarker profiles, arrhythmic burden, and imaging findings to identify patients at risk for adverse outcomes and guide therapeutic intensity. Contemporary management combines evidence based heart failure therapy with individualized immunomodulatory treatment, mechanical circulatory support for refractory cardiogenic shock, and multidisciplinary long term surveillance. Although survival has improved significantly with advances in pediatric intensive care and ventricular assist devices, important uncertainties remain regarding optimal immunotherapy, biomarker guided management, and precision medicine approaches. This narrative review summarizes current understanding of viral and immune mediated pathobiology, discusses evolving diagnostic strategies and multimodality imaging, reviews contemporary risk stratification models, and highlights emerging therapeutic approaches aimed at improving outcomes in children with myocarditis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0550",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0550_uric_acid_and_cardiovascular_disease.md",
+   "snippet": "Title Uric Acid and Cardiovascular Disease Authors Manolis Antonis A, Manolis Theodora A, Vouliotis Apostolos, Manolis Antonis S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001460 · PMID: 42704813 https://pubmed.ncbi.nlm",
+   "text": "Nephrology scraped pubmed PubMed / Cardiology in review Title Uric Acid and Cardiovascular Disease Authors Manolis Antonis A, Manolis Theodora A, Vouliotis Apostolos, Manolis Antonis S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001460 · PMID: 42704813 https://pubmed.ncbi.nlm.nih.gov/42704813/ Abstract Hyperuricemia, a major metabolic abnormality following hyperglycemia, hypertension, and hyperlipidemia, represents a significant global public health issue. Complex pathological mechanisms can lead to hyperuricemia, which not only directly triggers gout but it is also closely involved with various chronic diseases, such as cardiovascular disease (CVD), diabetes, and chronic kidney disease, presenting a systemic risk to individual general and CV health. This metabolic disorder arises mainly from excessive uric acid (UA) production or compromised excretion that results in abnormal elevation of UA in extracellular fluids and tissues, leading to the emergence of gout, kidney diseases, and CV disorders. It may reflect residual risk in CVD patients, conferring a poor prognosis in these patients even when they attain control of the low density lipoprotein cholesterol levels by receiving statins. Thus, hyperuricemia is not a benign biochemical finding and should be recognized as a relevant CV and renal risk factor. Serum urate measurement can improve risk stratification in selected high risk populations. Although routine treatment of asymptomatic hyperuricemia is not advised, targeted urate lowering strategies may be needed in patients with high CV risk, symptomatic disease, or very high serum UA levels. Importantly, nutrient intake and diet quality need significant improvement in individuals with hyperuricemia, as it has been shown to lack behind in terms of balanced macronutrient intake, quality and sources of macronutrients, and healthy eating. Data from future randomized trials are needed to determine whether urate lowering treatment can improve hard CV and renal outcomes in these patient groups. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0549",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Folia neuropathologica",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0549_relationship_of_early_onset_sepsis_and_neonatal_encephalopat.md",
+   "snippet": "Title Relationship of early onset sepsis and neonatal encephalopathy: early onset sepsis can increase short term adverse outcomes of neonatal encephalopathy Authors Yang Li, Zhu Shirui, Xue Mei, Zhang Jianping, Li Ling, Wang Beibei, Zhang J",
+   "text": "Infectious Disease scraped pubmed PubMed / Folia neuropathologica Title Relationship of early onset sepsis and neonatal encephalopathy: early onset sepsis can increase short term adverse outcomes of neonatal encephalopathy Authors Yang Li, Zhu Shirui, Xue Mei, Zhang Jianping, Li Ling, Wang Beibei, Zhang Jun Journal / DOI Folia neuropathologica · DOI: 10.5114/fn.2026.159243 · PMID: 42704864 https://pubmed.ncbi.nlm.nih.gov/42704864/ Abstract INTRODUCTION: It has been reported that neonatal encephalopathy (NE) with early onset sepsis (EOS) may have worse outcomes in comparison to non septic NE. The aim of this study was to evaluate the association of EOS and short term adverse outcomes of NE. MATERIAL AND METHODS: This retrospective observational study evaluated the short term outcomes of NE patients with and without EOS at the The Affiliated Hospital of Yangzhou University Medical College Hospital between July 2021 and July 2024. Eighty seven patients with mild NE were included in the study, 21 of whom also had EOS (EOSNE group) and 66 of whom did not have EOS (NE group), and these two groups were used to compare the short term outcomes. RESULTS: Abnormal neurological examinations were found in 42.9% of the EOSNE group vs. 19.7% of the NE group, which was significantly higher in the EOSNE group (p = 0.03). The seizure rate until discharge day in the EOSNE group was 38.1% vs. 15.2% in the NE group, which was significantly higher in the EOSNE group (p = 0.02). Abnormal electroencephalogram (EEG) findings were observed in 47.6% of the EOSNE group vs. 15.2% of the NE group (p = 0.004). Also, 47.6% of the EOSNE group vs. 15.2% in the NE group used antiplatelet medications until discharge day, which was significantly higher in the EOSNE group (p = 0.004). The proportion of patients receiving blood products was significantly higher in the EOSNE group (57.1% vs. 15.2% p = 0.001). CONCLUSIONS: The rate of hospitalization in EOSNE patients was higher than in NE patients. Abnormal neurological examinations, abnormal EEG, seizures, receipt of blood products, and use of antiepileptic drugs were more common in these patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0548",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+   "confidence": "medium",
+   "date": "2026-09-07",
+   "path": "content/papers/2026/2026-09-07_paper-2026-0548_infectious_adverse_events_in_pediatric_paracorporeal_ventric.md",
+   "snippet": "Title Infectious Adverse Events in Pediatric Paracorporeal Ventricular Assist Devices: An Analysis of the Advanced Cardiac Therapies Improving Outcomes Network (ACTION) Registry Authors Bansal Neha, Danziger Isakov Lara, Townsend Madeleine,",
+   "text": "Cardiology scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Infectious Adverse Events in Pediatric Paracorporeal Ventricular Assist Devices: An Analysis of the Advanced Cardiac Therapies Improving Outcomes Network (ACTION) Registry Authors Bansal Neha, Danziger Isakov Lara, Townsend Madeleine, Naorem Rashmita, Shezad Muhammad Farrukh, Wright Lydia K, Bergstrom Charles, Hall E Kevin, et al. Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002836 · PMID: 42704891 https://pubmed.ncbi.nlm.nih.gov/42704891/ Abstract Infectious adverse events (IAEs) are common in children supported with paracorporeal ventricular assist devices (VADs). This study aimed to identify risk factors for IAEs from the Advanced Cardiac Therapy Improving Outcomes Network (ACTION) registry. We conducted a retrospective study including pediatric patients supported with paracorporeal VADs. Patients were stratified by device type (paracorporeal pulsatile [PP], paracorporeal continuous [PC], or overlapping). Kaplan Meier analysis, the log rank test, and Cox proportional hazards models evaluated factors associated with survival and time to first IAE. Among 812 patients on paracorporeal VADs, 270 (33.2%) experienced IAEs (479 events). Localized non device IAEs were most common (40.9%). Patients with IAEs were younger, had lower body surface area (BSA), were more likely to require mechanical ventilation pre implant, and had longer VAD support duration. Freedom from IAEs was lower in patients with PC devices or overlapping support (p = 0.0081). Survival was worse after IAEs (p = 0.0096). Overlapping device support was independently associated with an increased risk of IAE (hazard ratio [HR]: 1.387; p = 0.0354), while larger BSA was protective (HR: 0.542; p = 0.0264). IAEs remain common in children on VAD support and are associated with mortality, with device overlaps and smaller patient size as independent risk factors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0905",
