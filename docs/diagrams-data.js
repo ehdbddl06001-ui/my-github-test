@@ -414,18 +414,6 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 11200
   },
   {
-   "file": "diag-suboccipital-quiz.svg",
-   "base": "diag-suboccipital",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "뒤통수밑삼각",
-   "date": "2026-08-21",
-   "bytes": 9116
-  },
-  {
    "file": "diag-popliteal-labeled.svg",
    "base": "diag-popliteal",
    "variant": "labeled",
@@ -460,18 +448,6 @@ window.MEDKOS_DIAGRAMS = {
    "title": "큰궁둥구멍 통과 구조물",
    "date": "2026-08-21",
    "bytes": 11592
-  },
-  {
-   "file": "diag-gluteal-foramina-quiz.svg",
-   "base": "diag-gluteal-foramina",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 2,
-   "unit": "2회차 · 등·다리",
-   "title": "큰궁둥구멍 통과 구조물 태깅 퀴즈판",
-   "date": "2026-08-21",
-   "bytes": 7549
   },
   {
    "file": "diag-back-layers-labeled.svg",
@@ -582,18 +558,6 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 13399
   },
   {
-   "file": "diag-scapular-spaces-quiz.svg",
-   "base": "diag-scapular-spaces",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "어깨뼈부위 3공간 태깅 퀴즈판",
-   "date": "2026-08-21",
-   "bytes": 7196
-  },
-  {
    "file": "diag-popliteal-fossa-labeled.svg",
    "base": "diag-popliteal-fossa",
    "variant": "labeled",
@@ -604,18 +568,6 @@ window.MEDKOS_DIAGRAMS = {
    "title": "다리오금",
    "date": "2026-08-21",
    "bytes": 13756
-  },
-  {
-   "file": "diag-popliteal-fossa-quiz.svg",
-   "base": "diag-popliteal-fossa",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "다리오금 태깅 퀴즈판",
-   "date": "2026-08-21",
-   "bytes": 8075
   },
   {
    "file": "tree-s04-vessel-labeled.svg",
@@ -916,6 +868,54 @@ window.MEDKOS_DIAGRAMS = {
    "title": "함께 지나는 것",
    "date": "2026-08-21",
    "bytes": 7542
+  },
+  {
+   "file": "diag-suboccipital-quiz.svg",
+   "base": "diag-suboccipital",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 7,
+   "unit": "7회차 · 목·다리",
+   "title": "뒤통수밑삼각",
+   "date": "2026-08-21",
+   "bytes": 9116
+  },
+  {
+   "file": "diag-scapular-spaces-quiz.svg",
+   "base": "diag-scapular-spaces",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 7,
+   "unit": "7회차 · 목·다리",
+   "title": "어깨뼈부위 3공간 태깅 퀴즈판",
+   "date": "2026-08-21",
+   "bytes": 7196
+  },
+  {
+   "file": "diag-popliteal-fossa-quiz.svg",
+   "base": "diag-popliteal-fossa",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 7,
+   "unit": "7회차 · 목·다리",
+   "title": "다리오금 태깅 퀴즈판",
+   "date": "2026-08-21",
+   "bytes": 8075
+  },
+  {
+   "file": "diag-gluteal-foramina-quiz.svg",
+   "base": "diag-gluteal-foramina",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 7,
+   "unit": "7회차 · 목·다리",
+   "title": "큰궁둥구멍 통과 구조물 태깅 퀴즈판",
+   "date": "2026-08-21",
+   "bytes": 7549
   },
   {
    "file": "diag-pelvic-diaphragm-labeled.svg",
