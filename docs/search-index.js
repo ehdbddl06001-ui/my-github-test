@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2215,
+  "total": 2216,
   "byType": {
    "usmle": 138,
+   "anatomy": 593,
    "kmle": 907,
-   "anatomy": 592,
    "paper": 561,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 592,
+   "Anatomy": 593,
    "Cardiology": 176,
    "Nephrology": 147,
    "Infectious Disease": 124,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1423,
+   "high": 1424,
    "medium": 743,
    "low": 49
   },
@@ -193,6 +193,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0146.md",
    "snippet": "A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood tran",
    "text": "Pathology Bronze Skin, Arthropathy and Diabetes in a Middle-Aged Man — The Missing Hepatic Hormone That Lets Iron Pour In hemochromatosis hepcidin ferroportin HFE iron-overload transferrin-saturation cirrhosis USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Liver; AASLD 2011 Practice Guideline on Hemochromatosis; Ganz T. Hepcidin and iron regulation, Physiol Rev 2013) A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood transfusion. His father died of hepatocellular carcinoma at the age of 60 years. Examination shows diffuse bronze gray darkening of the skin, a firm liver edge palpable 4 cm below the right costal margin, and small, soft testes. His vital signs and laboratory studies are shown. Which of the following is the most likely underlying mechanism of this patient's iron accumulation? A. Ineffective erythropoiesis with increased duodenal iron uptake B. Deficient hepatocyte hepcidin secretion with persistent ferroportin activity C. Repeated red cell transfusion with macrophage iron loading D. Cytokine driven hepcidin excess with macrophage iron sequestration E. Ethanol induced upregulation of enterocyte divalent metal transporter 중년 남성의 피로·성욕 감소·2·3번째 중수지관절 관절병증 + 청동색 피부 + 간비대 + 당뇨 + 고환 위축 + 간암 가족력 — 실질 장기(간·췌장·관절·뇌하부·피부)에 철이 쌓이는 유전성 혈색소증(hereditary hemochromatosis)이다. 트랜스페린 포화도 78%·페리틴 1,850 이 이를 뒷받침한다. 기전은 HFE 변이(C282Y 동형접합)로 간세포가 hepcidin 을 충분히 만들지 못해, 십이지장 장세포·대식세포의 철 배출 통로 ferroportin 이 분해되지 않고 계속 열려 있어 식이 철 흡수와 대식세포 철 방출이 억제되지 않는 것이다. 혈색소·MCV·망상적혈구가 정상이므로 무효조혈(A)이 아니고 수혈력도 없다(C). 만성염증의 hepcidin 과잉(D)은 반대로 철을 대식세포에 가두어 트랜스페린 포화도를 낮춘다. 주말 맥주 2잔은 알코올성 철과부하(E)를 설명하기에 턱없이 적다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-10",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-10",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/anatomy/daily/2026-09-10.md",
+   "snippet": "오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-10 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "kmle-2026-0937",
