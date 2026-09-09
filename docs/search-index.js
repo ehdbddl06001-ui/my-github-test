@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-08",
+ "generated": "2026-09-09",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2202,
+  "total": 2210,
   "byType": {
+   "anatomy": 593,
    "kmle": 907,
-   "anatomy": 592,
    "usmle": 132,
-   "paper": 554,
+   "paper": 561,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 592,
-   "Cardiology": 175,
+   "Anatomy": 593,
+   "Cardiology": 176,
    "Nephrology": 147,
-   "Infectious Disease": 123,
-   "Pediatrics": 102,
-   "Hematology-Oncology": 84,
-   "Pathology": 77,
+   "Infectious Disease": 124,
+   "Pediatrics": 103,
+   "Hematology-Oncology": 85,
+   "Pathology": 78,
    "Obstetrics & Gynecology": 69,
    "Neurology": 68,
    "Psychiatry": 67,
-   "Surgery": 61,
+   "Surgery": 62,
    "Endocrinology": 58,
    "Gastroenterology": 57,
    "Pulmonology": 57,
@@ -35,7 +35,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 56,
    "Rheumatology": 56,
    "Hematology": 55,
-   "Laboratory Medicine": 53,
+   "Laboratory Medicine": 54,
    "Physiology": 16,
    "Pharmacology": 10,
    "Biochemistry": 9,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1417,
-   "medium": 736,
+   "high": 1418,
+   "medium": 743,
    "low": 49
   },
   "tagCount": 3083
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-10",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-10",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/anatomy/daily/2026-09-10.md",
+   "snippet": "오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-10 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-0937",
    "type": "kmle",
@@ -846,6 +860,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0140.md",
    "snippet": "A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of ",
    "text": "Biochemistry Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis urea-cycle OTC-deficiency hyperammonemia orotic-aciduria carbamoyl-phosphate X-linked USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders) A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of life. He has no fever and there has been no diarrhea. A maternal uncle died in the neonatal period of an undiagnosed illness. Physical examination shows a lethargic, hypotonic infant with rapid, deep respirations; the anterior fontanelle is full. There is no hepatomegaly, rash, or dysmorphic features. Blood cultures are obtained. Laboratory studies are shown. Accumulation of which of the following intermediates most directly accounts for the abnormal urinary finding in this patient? A. Citrulline B. N Acetylglutamate C. Carbamoyl phosphate D. Argininosuccinate E. Ornithine 생후 3일 남아의 고암모니아혈증 + 호흡성 알칼리증(암모니아의 호흡중추 자극) + 정상 음이온차·정상 젖산·케톤 음성(유기산혈증 배제) + 낮은 BUN·낮은 시트룰린 + 오로트산뇨 = ornithine transcarbamylase(OTC) 결핍. X연관이라 남아·외삼촌 병력이 맞아 든다. OTC가 막히면 미토콘드리아에서 CPS I가 만든 carbamoyl phosphate가 시트룰린으로 넘어가지 못해 쌓이고, 세포질로 새어 나와 피리미딘 합성 경로(aspartate transcarbamoylase → dihydroorotate → orotate)로 흘러 오로트산이 과잉 생성·배설된다. 그래서 오로트산뇨는 '미토콘드리아 carbamoyl phosphate 축적'의 직접 산물이며, CPS I 결핍(오로트산 정상·낮음)과 OTC 결핍을 가르는 핵심 표지다."
+  },
+  {
+   "id": "paper-2026-0561",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JBI evidence implementation",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0561_implementation_of_an_evidence_based_diabetic_foot_risk_strat.md",
+   "snippet": "Title Implementation of an evidence based diabetic foot risk stratification pathway in a surgical outpatient setting: a best practice implementation project Authors Lu Ya Wen, Hsu Hui Ching, Tsai Hsin Chung Journal / DOI JBI evidence implem",
+   "text": "Surgery scraped pubmed PubMed / JBI evidence implementation Title Implementation of an evidence based diabetic foot risk stratification pathway in a surgical outpatient setting: a best practice implementation project Authors Lu Ya Wen, Hsu Hui Ching, Tsai Hsin Chung Journal / DOI JBI evidence implementation · DOI: 10.1097/XEB.0000000000000650 · PMID: 42710023 https://pubmed.ncbi.nlm.nih.gov/42710023/ Abstract BACKGROUND: Diabetic foot ulcers are a severe complication of diabetes. Despite international guidelines, preventive risk assessment remains inconsistent in outpatient settings. OBJECTIVES: The project aimed to improve early identification and risk stratification of diabetic foot in a plastic surgery outpatient department in Taiwan through the implementation of evidence based practices. METHODS: This best practice implementation project utilized the JBI Evidence Implementation Framework. A baseline audit of 30 patient records was conducted to evaluate current practice against best practice recommendations. Barriers were identified using JBI's GRiP (Getting Research into Practice) tool. Improvement strategies included developing a standard operating procedure, embedding risk assessment forms in the electronic health record, and staff training. A follow up audit of 38 records evaluated post implementation compliance. RESULTS: Baseline compliance was 0% for standardized risk classification and staff training. Following the implementation of targeted strategies over 5 months, compliance improved to 100% across all six audit criteria. However, short term clinical outcomes revealed persistent adverse events, including one death, four hospitalizations, and two amputations, highlighting a gap between process compliance and immediate outcome improvement. CONCLUSIONS: The project successfully established a high reliability preventive process for diabetic foot care in an outpatient setting. However, the persistence of adverse outcomes suggests that process improvement must be coupled with longitudinal follow up and robust post assessment care pathways to effectively reduce amputation rates. SPANISH ABSTRACT: https://links.lww.com/IJEBH/A696. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0560",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Oral health & preventive dentistry",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0560_effect_of_various_types_of_remineralizing_agents_on_the_remi.md",
+   "snippet": "Title Effect of Various Types of Remineralizing Agents on the Remineralization of Mild and Moderate Defects Caused by Molar Incisor Hypomineralization in Mexican Schoolchildren: A 12 month Follow up Randomized Clinical Trial Authors García ",
+   "text": "Pediatrics scraped pubmed PubMed / Oral health & preventive dentistry Title Effect of Various Types of Remineralizing Agents on the Remineralization of Mild and Moderate Defects Caused by Molar Incisor Hypomineralization in Mexican Schoolchildren: A 12 month Follow up Randomized Clinical Trial Authors García Pérez Alvaro, Muñiz Alquisiras Danely Minelli, Rodríguez Chávez Jacqueline Adelina, Flores Ruíz Hugo Marcelo, Mora Navarrete Karen Angelina Journal / DOI Oral health & preventive dentistry · DOI: 10.3290/j.ohpd.c 2796 · PMID: 42709059 https://pubmed.ncbi.nlm.nih.gov/42709059/ Abstract PURPOSE: Using Laser Induced Fluorescence (LIF), this study aimed to evaluate the effect of three remineralizing agents on permanent molars and incisors with both mild and moderate Molar Incisor Hypomineralization (MIH) in 8 to 12 year old Mexican schoolchildren. MATERIALS AND METHODS: In this randomized clinical trial, 104 children were selected to participate and then divided randomly into four groups: Group I: control, Oral B kids (toothpaste); Group II: Fluor Protector (varnish); Group III: Clinpro White Varnish; and Group IV: MI Paste (CCP ACP). Both varnishes were applied once every four weeks for twelve months for each group. Remineralization was evaluated by LIF at intervals of 1, 3, 6, 9, and 12 months. Paired sample t tests and repeated measures ANOVA were performed, while the Greenhouse Geisser correction was used to evaluate sphericity. RESULTS: The three test agents used increased the level of remineralization observed at the site of mild and moderate MIH defects over the course of twelve months (p0.001). A similar decrease in average LIF values was observed across the three treatment groups. CONCLUSIONS: The use of both fluoride varnishes and the CPP ACP toothpaste was observed to promote the remineralization of both mild and moderate MIH defects. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0559",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical and translational gastroenterology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0559_greener_choices_in_biliary_imaging_a_prospective_carbon_foot.md",
+   "snippet": "Title Greener Choices in Biliary Imaging: A Prospective Carbon Footprint Comparison of EUS versus MRCP for Intermediate Likelihood Choledocholithiasis Authors Rughwani Hardik, Jagtap Nitin, M de Jong David, Tyagi Abhishek, Putta Tharani, Pa",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Clinical and translational gastroenterology Title Greener Choices in Biliary Imaging: A Prospective Carbon Footprint Comparison of EUS versus MRCP for Intermediate Likelihood Choledocholithiasis Authors Rughwani Hardik, Jagtap Nitin, M de Jong David, Tyagi Abhishek, Putta Tharani, Pasumarthy Ashirwad, Khair Khan Abul, Kalapala Rakesh, et al. Journal / DOI Clinical and translational gastroenterology · DOI: 10.14309/ctg.0000000000001098 · PMID: 42709924 https://pubmed.ncbi.nlm.nih.gov/42709924/ Abstract INTRODUCTION: Healthcare accounts for nearly 5% of global greenhouse gas (GHG) emissions, and medical imaging is among its most energy intensive activities. For intermediate likelihood common bile duct (CBD) stones, endoscopic ultrasound (EUS) and magnetic resonance cholangiopancreatography (MRCP) are both guideline endorsed with comparable diagnostic accuracy, yet their environmental costs have never been directly compared. METHODS: In this prospective study, we measured the per procedure carbon footprint of EUS and MRCP using the Greenhouse Gas Protocol and India's grid emission factor. We recorded EUS procedure times individually; MRCP emissions were derived from a validated power model that captures the continuous cryocooler load maintaining magnet superconductivity around the clock, with shared infrastructure allocated by real case volume. We performed sensitivity analyses across scanner utilization, energy allocation method, scan duration, and grid carbon intensity. The study followed the ESGE E SPARE reporting standard. RESULTS: EUS generated 4.53 kg CO2e per procedure and MRCP 18.90 kg CO2e per procedure, making MRCP 4.2 times more carbon intensive. The continuously running cryocooler was the single largest fixed contributor to MRCP emissions (23.4% in standby alone), a 24/7 load absent in EUS. Choosing EUS for 108 patients saved 1,552 kg CO2e, equivalent to the annual carbon uptake of 74 mature trees. EUS remained the lower carbon option across sensitivity analyses, though the advantage narrowed and could reverse on low carbon grids. DISCUSSION: For bile duct stone evaluation, EUS offers the same diagnostic answer at substantially lower carbon cost where grid electricity is carbon intensive, adding environmental impact to accuracy, safety, and cost in the decision. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0558",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS computational biology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0558_spatially_guided_translation_from_histology_images_to_transc.md",
+   "snippet": "Title Spatially guided translation from histology images to transcriptomic profiles using foundation model driven contrastive learning Authors Huang Zi Huai, Xu Ziyang, Hu Pingzhao Journal / DOI PLoS computational biology · DOI: 10.1371/jou",
+   "text": "Pathology scraped pubmed PubMed / PLoS computational biology Title Spatially guided translation from histology images to transcriptomic profiles using foundation model driven contrastive learning Authors Huang Zi Huai, Xu Ziyang, Hu Pingzhao Journal / DOI PLoS computational biology · DOI: 10.1371/journal.pcbi.1014762 · PMID: 42709893 https://pubmed.ncbi.nlm.nih.gov/42709893/ Abstract Spatial transcriptomics (ST) enhances single cell RNA sequencing by revealing transcript distribution, offering critical insights into heterogeneous diseases such as breast cancer. However, the high cost and lengthy processes of generating high quality ST data limit clinical application. Recent deep learning methods predict ST from histology images, but often fail to capture both morphological features and spatial context. We introduce FOCST, a foundation model driven framework for ST imputation that leverages spatial guided contrastive learning. FOCST begins with UNI, a large histopathology foundation model, to extract visual features from tissue images. These are integrated with expression data in a unified embedding space via contrastive learning, enabling cross modal prediction and imputation. To further enhance spatial awareness, a graph neural network incorporates positional information, improving regional detection and interpretability.Benchmarking demonstrates FOCST's superior performance over state of the art methods and alternative vision encoders (paired Wilcoxon signed rank tests, FDR adjusted p < 0.05, N = 6 images). Predicted profiles enable clinically relevant downstream analyses, including patient stratification by treatment response (ROC AUC (Receiver Operating Characteristic Area Under the Curve) = 0.79). Our results highlight the promise of combining foundation models and spatially guided learning to efficiently generate ST insights, advancing cancer research and precision medicine. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0557",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Proceedings of the National Academy of Sciences of the United States of America",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0557_size_tailored_nanoparticle_antibody_conjugates_overcome_hepa.md",
+   "snippet": "Title Size tailored nanoparticle antibody conjugates overcome hepatic sequestration in Alzheimer's disease treatment Authors Du Xuewei, Liu Ni, Zhang Taoping, Yang Changwen, Luo Haiming Journal / DOI Proceedings of the National Academy of S",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Proceedings of the National Academy of Sciences of the United States of America Title Size tailored nanoparticle antibody conjugates overcome hepatic sequestration in Alzheimer's disease treatment Authors Du Xuewei, Liu Ni, Zhang Taoping, Yang Changwen, Luo Haiming Journal / DOI Proceedings of the National Academy of Sciences of the United States of America · DOI: 10.1073/pnas.2603034123 · PMID: 42709795 https://pubmed.ncbi.nlm.nih.gov/42709795/ Abstract Antibody based immunotherapy targeting amyloid β (Aβ) is a promising approach for Alzheimer's disease (AD). However, its efficacy is limited by rapid hepatic sequestration, complement activation, and liver dysfunction. In this study, we synthesized low immunogenic 450 nm functionalized mesoporous silica nanoparticles (PEG MSN 1F12) by conjugating the anti Aβ42 monoclonal antibody 1F12 to polyethylene glycol modified mesoporous silica nanoparticles to address these challenges. In APP/PS1 mice, intravenous PEG MSN 1F12 administration markedly enhanced peripheral Aβ clearance, promoted intestinal excretion, reshaped gut microbiota, and alleviated intestinal inflammation, thus reducing AD associated hepatic burden. Peripheral Aβ removal further led to decreased brain Aβ deposition, attenuated microglial activation, and improved cognition. These findings highlight that the use of particle size engineered antibody nanoparticle conjugates is a safe and effective strategy to overcome hepatic sequestration, augment Aβ clearance, and improve AD outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0556",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular medicine (Hagerstown, Md.)",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0556_speckle_tracking_staging_of_extra_valvular_cardiac_damage_in.md",
+   "snippet": "Title Speckle tracking staging of extra valvular cardiac damage in degenerative mitral regurgitation: prognostic implications Authors Pasquini Annalisa, Pica Andrea, Pastore Maria Concetta, Mazzenga Gabriele, Iuliano Maria Alma, Filice Moni",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of cardiovascular medicine (Hagerstown, Md.) Title Speckle tracking staging of extra valvular cardiac damage in degenerative mitral regurgitation: prognostic implications Authors Pasquini Annalisa, Pica Andrea, Pastore Maria Concetta, Mazzenga Gabriele, Iuliano Maria Alma, Filice Monica, Focardi Marta, Bruno Piergiorgio, et al. Journal / DOI Journal of cardiovascular medicine (Hagerstown, Md.) · DOI: 10.2459/JCM.0000000000001927 · PMID: 42710014 https://pubmed.ncbi.nlm.nih.gov/42710014/ Abstract AIMS: In asymptomatic patients with severe primary mitral regurgitation, surgical referral is based on 2D echocardiographic indices that often identify advanced myocardial injury. Speckle tracking echocardiography (STE) may detect earlier, reversible dysfunction.This study evaluated whether a novel multichamber STE based staging system of extra valvular cardiac damage improves risk stratification in patients with severe degenerative mitral regurgitation undergoing surgery. METHODS AND RESULTS: A retrospective multicenter cohort study of patients with degenerative mitral regurgitation undergoing surgery: derivation cohort (n = 208; mean age 64 ± 13 years; 59.7% men) and validation cohort (n = 92; mean age 63 ± 12 years; 53.3% men). Receiver operating characteristic curve analysis identified optimal strain cut offs associated with adverse outcomes: left ventricular global longitudinal strain (LVGLS) less than 20%, peak atrial longitudinal strain (PALS) less than 25%, and right ventricular free wall longitudinal strain (RVFWLS) less than 17%. Patients were classified into four stages: Stage 0, no damage; Stage 1, left atrial damage (PALS < 25%); Stage 2, left ventricular damage (LVGLS < 20%); Stage 3, right ventricular damage (RVFWLS < 17%).The STE based staging system was independently associated with the composite of periprocedural adverse events (mortality, stroke, myocardial infarction, acute kidney injury, life threatening bleeding or sepsis/wound infection requiring reintervention, complete atrioventricular block requiring pacemaker implantation): odds ratio 1.68 per stage increase (confidence interval 1.24 2.32; P = 0.001). Predictive accuracy was higher compared with clinical and echocardiographic data, with consistent results in the validation cohort. CONCLUSIONS: The multichamber STE staging system provides incremental prognostic information beyond conventional parameters, improving perioperative risk stratification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0555",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular pharmacology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0555_efficacy_of_cardioprotective_drugs_in_cancer_patients_receiv.md",
+   "snippet": "Title Efficacy of Cardioprotective Drugs in Cancer Patients Receiving Anthracyclines: A Pairwise Meta Analysis and Network Meta Analysis Authors Maliha Maisha, Satish Vikyath, Kumar Sriram Sunil, Nandy Sneha, Kharawala Amrin, Gonzales Uribe",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular pharmacology Title Efficacy of Cardioprotective Drugs in Cancer Patients Receiving Anthracyclines: A Pairwise Meta Analysis and Network Meta Analysis Authors Maliha Maisha, Satish Vikyath, Kumar Sriram Sunil, Nandy Sneha, Kharawala Amrin, Gonzales Uribe Antony, Li Wing Fai, Kaushik Sharanya, et al. Journal / DOI Journal of cardiovascular pharmacology · DOI: 10.1097/FJC.0000000000001878 · PMID: 42710020 https://pubmed.ncbi.nlm.nih.gov/42710020/ Abstract Anthracyclines are cornerstone chemotherapeutic agents for several cancers but carry a substantial risk of cardiotoxicity. Multiple cardioprotective drugs have been investigated to prevent cardiac dysfunction in patients receiving anthracycline based chemotherapy. This study evaluated and ranked the cardioprotective effects of these agents using network meta analysis. A comprehensive search of PubMed, Cochrane, Scopus, and Web of Science from inception to September 22, 2024 identified randomized clinical trials and cohort studies assessing cardioprotective agents in cancer patients treated with anthracyclines. Interventions included angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers, beta blockers, mineralocorticoid receptor antagonists, statins, sodium glucose cotransporter 2 (SGLT2) inhibitors, and metformin. The primary outcome was change in left ventricular ejection fraction (LVEF). Secondary outcomes were left ventricular end diastolic diameter (LVEDD), chemotherapy related cardiac dysfunction (CTRCD), heart failure (HF), HF hospitalization, and all cause mortality. Thirty five studies were included, comprising 31 randomized controlled trials and 4 retrospective studies. Overall, cardioprotective therapy significantly improved LVEF, reduced CTRCD, all cause mortality, HF incidence, and LVEDD, but had no significant effect on HF hospitalization. Subgroup and network meta analyses showed that ACEIs plus beta blockers, beta blockers alone, statins, and ACEIs significantly improved LVEF versus controls, with ACEIs ranking highest. For CTRCD prevention, statins and beta blockers significantly reduced risk, whereas ACEIs plus beta blockers had the most favorable ranking. For mortality, the available retrospective SGLT2 inhibitor studies suggested an association with lower risk; however, because no randomized anthracycline specific SGLT2 inhibitor trials were available and follow up duration differed from the RCT evidence for other agents, this finding should be considered hypothesis generating rather than definitive comparative evidence. ACEIs, beta blockers, and statins appear effective for preserving cardiac function during anthracycline therapy. Treatment rankings, particularly for outcomes supported by sparse or observational evidence, should be interpreted cautiously, and further randomized trials are needed, particularly to evaluate SGLT2 inhibitors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-08",
