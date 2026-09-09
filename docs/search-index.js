@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-08",
+ "generated": "2026-09-09",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2202,
+  "total": 2215,
   "byType": {
+   "usmle": 138,
    "kmle": 907,
    "anatomy": 592,
-   "usmle": 132,
-   "paper": 554,
+   "paper": 561,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 592,
-   "Cardiology": 175,
+   "Cardiology": 176,
    "Nephrology": 147,
-   "Infectious Disease": 123,
-   "Pediatrics": 102,
-   "Hematology-Oncology": 84,
-   "Pathology": 77,
-   "Obstetrics & Gynecology": 69,
+   "Infectious Disease": 124,
+   "Pediatrics": 103,
+   "Hematology-Oncology": 85,
+   "Pathology": 79,
+   "Obstetrics & Gynecology": 70,
    "Neurology": 68,
-   "Psychiatry": 67,
-   "Surgery": 61,
+   "Psychiatry": 68,
+   "Surgery": 63,
    "Endocrinology": 58,
    "Gastroenterology": 57,
    "Pulmonology": 57,
@@ -35,11 +35,11 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 56,
    "Rheumatology": 56,
    "Hematology": 55,
-   "Laboratory Medicine": 53,
+   "Laboratory Medicine": 54,
    "Physiology": 16,
-   "Pharmacology": 10,
+   "Pharmacology": 11,
+   "Microbiology": 10,
    "Biochemistry": 9,
-   "Microbiology": 9,
    "Immunology": 7,
    "Internal Medicine": 7,
    "Medical AI Lab": 4,
@@ -53,13 +53,147 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1417,
-   "medium": 736,
+   "high": 1423,
+   "medium": 743,
    "low": 49
   },
-  "tagCount": 3083
+  "tagCount": 3102
  },
  "docs": [
+  {
+   "id": "usmle-2026-0151",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Gush of Clear Fluid at 32 Weeks Without Contractions — Buying Latency With Antibiotics, Not Tocolytics",
+   "tags": [
+    "PPROM",
+    "preterm-prelabor-rupture-of-membranes",
+    "latency-antibiotics",
+    "ampicillin",
+    "azithromycin",
+    "betamethasone",
+    "expectant-management",
+    "chorioamnionitis"
+   ],
+   "source": "USMLE-style / MedKOS (ACOG Practice Bulletin No. 217: Prelabor Rupture of Membranes, 2020; Williams Obstetrics 26e — Preterm Birth; ACOG Committee Opinion 455/Practice Bulletin 171: Magnesium Sulfate Before Anticipated Preterm Birth for Neuroprotection)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0151.md",
+   "snippet": "A 29 year old woman, gravida 2, para 1, at 32 weeks 4 days of gestation comes to the labor and delivery unit 1 hour after a sudden gush of clear fluid from the vagina. She has had no contractions, vaginal bleeding, or fever. Her first pregn",
+   "text": "Obstetrics & Gynecology Gush of Clear Fluid at 32 Weeks Without Contractions — Buying Latency With Antibiotics, Not Tocolytics PPROM preterm-prelabor-rupture-of-membranes latency-antibiotics ampicillin azithromycin betamethasone expectant-management chorioamnionitis USMLE-style / MedKOS (ACOG Practice Bulletin No. 217: Prelabor Rupture of Membranes, 2020; Williams Obstetrics 26e — Preterm Birth; ACOG Committee Opinion 455/Practice Bulletin 171: Magnesium Sulfate Before Anticipated Preterm Birth for Neuroprotection) A 29 year old woman, gravida 2, para 1, at 32 weeks 4 days of gestation comes to the labor and delivery unit 1 hour after a sudden gush of clear fluid from the vagina. She has had no contractions, vaginal bleeding, or fever. Her first pregnancy ended in an uncomplicated term vaginal delivery, and the current pregnancy has been uncomplicated. Her vital signs and laboratory studies are shown. Sterile speculum examination shows a pool of clear fluid in the posterior fornix; the fluid turns nitrazine paper blue and dries in an arborized pattern on a slide. The cervix appears closed. Tocodynamometry shows no uterine contractions, and the fetal heart rate tracing shows moderate variability with accelerations and no decelerations. Ultrasonography shows a cephalic fetus with normal anatomy. A first dose of intramuscular betamethasone is administered. Which of the following is the most appropriate additional management? A. Oxytocin induction of labor B. Intravenous ampicillin therapy C. Nifedipine tocolysis D. Magnesium sulfate neuroprotection E. Digital cervical examination 32주 4일에 맑은 양수의 갑작스런 유출 + 후원개 고임·나이트라진 청변·양치상 결정 = 만삭 전 조기 양막파수(PPROM). 진통·감염 징후(발열·자궁 압통·백혈구·CRP 상승·태아 빈맥) 없고 태아 상태가 안심되며 34주 미만이므로, 관리 원칙은 '기다리며 폐성숙을 확보하고 감염을 막는 것'이다: 스테로이드(이미 투여) + 잠복기 연장 항생제(ampicillin IV 48시간 → amoxicillin 경구 5일 + azithromycin 1 g 1회, 총 7일)로 잠복기를 늘리고 융모양막염·신생아 패혈증을 줄인다. 34주 0일에 분만한다. 진통 없는 PPROM 에서 자궁수축억제제(C)는 권고되지 않고, 신경보호 magnesium(D)은 32주 0일 미만이 대상이며, 손가락 내진(E)은 감염 위험을 올려 금지, 즉시 유도분만(A)은 감염·태아곤란·34주 이상일 때의 선택이다. B군 사슬알균 미검사 상태에서 진통이 시작되면 분만 중 예방도 겸한다."
+  },
+  {
+   "id": "usmle-2026-0150",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Hypotension with a Deviated Trachea After a Motorcycle Crash — Decompress the Chest Before the Radiograph or the Ventilator",
+   "tags": [
+    "tension-pneumothorax",
+    "blunt-chest-trauma",
+    "needle-decompression",
+    "ATLS",
+    "obstructive-shock",
+    "tube-thoracostomy"
+   ],
+   "source": "USMLE-style / MedKOS (ATLS Advanced Trauma Life Support 10th ed — Thoracic Trauma; Sabiston Textbook of Surgery 21e — Management of Acute Trauma; Schwartz's Principles of Surgery 11e)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0150.md",
+   "snippet": "A 31 year old man is brought to the emergency department 20 minutes after a motorcycle collision in which he was thrown against a guardrail. He is restless and dyspneic and answers questions in single words. His vital signs and laboratory s",
+   "text": "Surgery Hypotension with a Deviated Trachea After a Motorcycle Crash — Decompress the Chest Before the Radiograph or the Ventilator tension-pneumothorax blunt-chest-trauma needle-decompression ATLS obstructive-shock tube-thoracostomy USMLE-style / MedKOS (ATLS Advanced Trauma Life Support 10th ed — Thoracic Trauma; Sabiston Textbook of Surgery 21e — Management of Acute Trauma; Schwartz's Principles of Surgery 11e) A 31 year old man is brought to the emergency department 20 minutes after a motorcycle collision in which he was thrown against a guardrail. He is restless and dyspneic and answers questions in single words. His vital signs and laboratory studies are shown. Examination shows bruising over the right chest wall with crepitus over the right fourth and fifth ribs. The trachea is displaced to the left, the neck veins are distended, and the right hemithorax is hyperresonant to percussion with absent breath sounds. Heart sounds are audible but rapid. The abdomen is soft and nontender, and the pelvis is stable to compression. Two large bore intravenous catheters are placed. Which of the following is the most appropriate next step in management? A. Portable chest radiography B. Endotracheal intubation C. Emergency pericardiocentesis D. Focused abdominal sonography E. Right sided needle thoracostomy 둔상 후 호흡곤란·저혈압·빈맥 + 기관 편위·경정맥 팽대 + 한쪽 가슴의 과공명·호흡음 소실 + 갈비뼈 골절 = 긴장성 기흉(tension pneumothorax)의 폐쇄성 쇼크. 흉막강 압력 상승이 종격동을 밀어 정맥 환류를 막고 있으므로, 진단은 임상 소견으로 끝내고 즉시 감압한다 — ATLS 10판 기준 성인은 5번째 늑간 전액와선(또는 2번째 늑간 쇄골중앙선)에 대구경 바늘로 감압하고, 곧바로 흉관을 넣는다. 흉부 X선(A)은 감압을 늦추는 행위이고, 양압환기(B)는 흉막강으로 공기를 더 밀어 넣어 심정지를 부를 수 있다. 심장눌림증(C)은 경정맥 팽대·저혈압은 겹치지만 기관 편위·과공명·호흡음 소실은 만들지 않으며, FAST(D)는 복부가 부드럽고 혈색소가 정상인 지금 우선순위가 아니다."
+  },
+  {
+   "id": "usmle-2026-0149",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Twisted Neck and Upturned Eyes 36 Hours After the First Antipsychotic Dose — The Anticholinergic Rescue Before Anyone Reaches for Dantrolene",
+   "tags": [
+    "acute-dystonia",
+    "haloperidol",
+    "extrapyramidal",
+    "benztropine",
+    "anticholinergic",
+    "first-episode-psychosis",
+    "neuroleptic-malignant-syndrome"
+   ],
+   "source": "USMLE-style / MedKOS (Kaplan & Sadock's Synopsis of Psychiatry 12e — Medication-Induced Movement Disorders; APA Practice Guideline for the Treatment of Patients with Schizophrenia, 3rd ed 2020; Stahl's Essential Psychopharmacology 5e)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0149.md",
+   "snippet": "A 23 year old man is brought to the emergency department by his mother 36 hours after he received his first intramuscular dose of haloperidol for a first episode of psychosis, followed by oral doses every 12 hours. Over the past 2 hours his",
+   "text": "Psychiatry Twisted Neck and Upturned Eyes 36 Hours After the First Antipsychotic Dose — The Anticholinergic Rescue Before Anyone Reaches for Dantrolene acute-dystonia haloperidol extrapyramidal benztropine anticholinergic first-episode-psychosis neuroleptic-malignant-syndrome USMLE-style / MedKOS (Kaplan & Sadock's Synopsis of Psychiatry 12e — Medication-Induced Movement Disorders; APA Practice Guideline for the Treatment of Patients with Schizophrenia, 3rd ed 2020; Stahl's Essential Psychopharmacology 5e) A 23 year old man is brought to the emergency department by his mother 36 hours after he received his first intramuscular dose of haloperidol for a first episode of psychosis, followed by oral doses every 12 hours. Over the past 2 hours his head has twisted to the left and his eyes have rolled upward; he has difficulty swallowing and speaks with a thick voice. He is alert and oriented and reports that the twisting is painful and frightening. Examination shows sustained contraction of the left sternocleidomastoid muscle, upward deviation of both eyes, and protrusion of the tongue. Muscle tone in the limbs is normal, there is no tremor, and the skin is dry. His vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in pharmacotherapy? A. Intramuscular benztropine B. Oral propranolol C. Intravenous dantrolene D. Oral bromocriptine E. Oral tetrabenazine 고역가 1세대 항정신병약(haloperidol) 시작 후 수 시간~수 일 안에 생기는 지속적 근수축(사경·안구운동발작·혀 돌출·연하곤란) = 급성 근긴장이상(acute dystonia). 젊은 남성·고역가 약·비경구 투여가 위험인자다. 기전은 흑질선조체 경로의 D2 차단으로 도파민 아세틸콜린 균형이 콜린성 우세로 기울어지는 것이므로, 치료는 항콜린제(benztropine 1–2 mg IM/IV 또는 diphenhydramine 50 mg IM/IV)로 수 분 내에 풀린다. 체온·혈압·맥박 정상, 사지 근긴장도 정상, CK 정상, 발한 없음이므로 신경이완제악성증후군이 아니어서 dantrolene(C)·bromocriptine(D)은 방향이 틀리다. propranolol(B)은 좌불안석증(akathisia), tetrabenazine(E)은 지연성 운동이상증(tardive dyskinesia)의 약이다."
+  },
+  {
+   "id": "usmle-2026-0148",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Chest Pain and Sinus Tachycardia After a Party — The Standard Anti-Ischemic Drug That Leaves the Alpha Receptor Unopposed",
+   "tags": [
+    "cocaine",
+    "sympathomimetic",
+    "beta-blocker",
+    "unopposed-alpha",
+    "coronary-vasospasm",
+    "benzodiazepine",
+    "sinus-tachycardia",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (Katzung Basic & Clinical Pharmacology 15e — Adrenoceptor Agonists and Antagonists; AHA Scientific Statement on Management of Cocaine-Associated Chest Pain and Myocardial Infarction, Circulation 2008; 2021 AHA/ACC Chest Pain Guideline)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0148.md",
+   "snippet": "A 29 year old man is brought to the emergency department 1 hour after the onset of substernal chest pressure and palpitations that began at a party. He is agitated and diaphoretic and repeatedly asks whether he is having a heart attack. His",
+   "text": "Pharmacology Chest Pain and Sinus Tachycardia After a Party — The Standard Anti-Ischemic Drug That Leaves the Alpha Receptor Unopposed cocaine sympathomimetic beta-blocker unopposed-alpha coronary-vasospasm benzodiazepine sinus-tachycardia ECG USMLE-style / MedKOS (Katzung Basic & Clinical Pharmacology 15e — Adrenoceptor Agonists and Antagonists; AHA Scientific Statement on Management of Cocaine-Associated Chest Pain and Myocardial Infarction, Circulation 2008; 2021 AHA/ACC Chest Pain Guideline) A 29 year old man is brought to the emergency department 1 hour after the onset of substernal chest pressure and palpitations that began at a party. He is agitated and diaphoretic and repeatedly asks whether he is having a heart attack. His pupils are 7 mm and reactive. His vital signs and laboratory studies are shown; the cardiac monitor strip is shown below, and a 12 lead electrocardiogram shows 1 mm horizontal ST segment depression in leads V4 through V6 without ST elevation. Aspirin 325 mg is given. Which of the following additional drugs is most likely to worsen this patient's condition? A. Sublingual nitroglycerin B. Intravenous lorazepam C. Intravenous phentolamine D. Intravenous metoprolol E. Intravenous diltiazem 파티 뒤 흉통·심계항진·초조·발한·산동·고혈압·빈맥·미열 + 소변 벤조일엑고닌 양성 = 코카인 중독의 교감신경 항진과 코카인 연관 흉통. 코카인은 시냅스전 노르에피네프린·도파민 재흡수를 막아 α·β 수용체가 함께 과자극된다. 여기에 β 차단제(metoprolol)를 주면 β2 매개 혈관확장이 사라지고 β1 매개 빈맥만 줄어, 넘쳐나는 노르에피네프린이 α1 수용체를 '대항 없이' 자극한다 → 관상동맥 연축 악화·전신 혈압 상승·심근 산소 수요 증가로 허혈이 오히려 나빠진다(unopposed α adrenergic stimulation). 1차 치료는 벤조디아제핀(중추 교감신경 출력 감소)과 nitroglycerin(관상동맥·전신 혈관확장)이고, 고혈압이 남으면 phentolamine(α 차단), 빈맥·연축에는 CCB(diltiazem)가 β 차단제보다 안전하다. 트로포닌 정상·ST 상승 없음이므로 재관류 대상은 아니며, 심전도 모니터의 규칙적 좁은 QRS 빈맥(126/분)은 동성빈맥이다."
+  },
+  {
+   "id": "usmle-2026-0147",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Profuse Painless Watery Diarrhea After Flood Relief Work — The G Protein Locked in the On Position",
+   "tags": [
+    "cholera",
+    "Vibrio-cholerae",
+    "cholera-toxin",
+    "Gs-alpha",
+    "cAMP",
+    "CFTR",
+    "secretory-diarrhea",
+    "oral-rehydration"
+   ],
+   "source": "USMLE-style / MedKOS (Murray Medical Microbiology 9e — Vibrio; Harrison's Principles of Internal Medicine 21e — Cholera; WHO Cholera Guidelines)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0147.md",
+   "snippet": "A 34 year old relief worker comes to the emergency department 12 hours after the onset of profuse watery diarrhea. He returned 2 days ago from 3 weeks of flood relief work in a coastal region of Bangladesh, where he drank untreated well wat",
+   "text": "Microbiology Profuse Painless Watery Diarrhea After Flood Relief Work — The G Protein Locked in the On Position cholera Vibrio-cholerae cholera-toxin Gs-alpha cAMP CFTR secretory-diarrhea oral-rehydration USMLE-style / MedKOS (Murray Medical Microbiology 9e — Vibrio; Harrison's Principles of Internal Medicine 21e — Cholera; WHO Cholera Guidelines) A 34 year old relief worker comes to the emergency department 12 hours after the onset of profuse watery diarrhea. He returned 2 days ago from 3 weeks of flood relief work in a coastal region of Bangladesh, where he drank untreated well water. He has had more than 15 stools that look like cloudy water with flecks of mucus, along with several episodes of vomiting. He has no abdominal pain, fever, or tenesmus. He appears lethargic, with sunken eyes, dry mucous membranes, and skin that stays tented after pinching. His vital signs and laboratory studies are shown. Dark field microscopy of a stool sample shows curved rods with rapid darting motility. Which of the following best describes the mechanism by which the causative organism produces this patient's fluid loss? A. ADP ribosylation of Gi α subunit with disinhibition of adenylyl cyclase B. Cleavage of 28S ribosomal RNA with arrest of enterocyte protein synthesis C. ADP ribosylation of Gs α subunit with sustained activation of adenylyl cyclase D. Activation of membrane guanylyl cyclase with accumulation of intracellular cGMP E. Invasion of M cells with neutrophilic inflammation of the colonic mucosa 홍수 지역 오염수 음용 후 통증·발열·혈변 없이 하루 15회 이상의 '쌀뜨물' 같은 대량 수양성 설사 + 대변 백혈구 없음 + 암시야 현미경에서 화살처럼 튀는 굽은 막대균 = Vibrio cholerae 콜레라. 콜레라독소의 A 소단위는 장세포 Gs α 를 ADP ribosylation 해 GTPase 활성을 없애고, 아데닐산 고리화효소(adenylyl cyclase)가 계속 켜져 cAMP 가 쌓인다 → PKA 가 CFTR 을 열어 Cl⁻ 가 내강으로 쏟아지고 Na⁺·물이 따라 나간다(NaCl 흡수도 억제). 그 결과 등장성 체액 소실·저칼륨·중탄산염 소실(정상 음이온차 대사성 산증)이 온다. Gi ADP ribosylation 은 백일해독소(A), 28S rRNA 절단은 시가독소(B), 구아닐산 고리화효소 활성화는 ETEC 열안정독소(D), M 세포 침습·염증성 설사는 Shigella(E)의 기전이다. 치료의 핵심은 포도당 기반 경구수액(SGLT1 은 독소에 영향받지 않는다) ± 단회 doxycycline."
+  },
+  {
+   "id": "usmle-2026-0146",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Bronze Skin, Arthropathy and Diabetes in a Middle-Aged Man — The Missing Hepatic Hormone That Lets Iron Pour In",
+   "tags": [
+    "hemochromatosis",
+    "hepcidin",
+    "ferroportin",
+    "HFE",
+    "iron-overload",
+    "transferrin-saturation",
+    "cirrhosis"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Liver; AASLD 2011 Practice Guideline on Hemochromatosis; Ganz T. Hepcidin and iron regulation, Physiol Rev 2013)",
+   "confidence": "high",
+   "date": "2026-09-10",
+   "path": "content/usmle/usmle-2026-0146.md",
+   "snippet": "A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood tran",
+   "text": "Pathology Bronze Skin, Arthropathy and Diabetes in a Middle-Aged Man — The Missing Hepatic Hormone That Lets Iron Pour In hemochromatosis hepcidin ferroportin HFE iron-overload transferrin-saturation cirrhosis USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Liver; AASLD 2011 Practice Guideline on Hemochromatosis; Ganz T. Hepcidin and iron regulation, Physiol Rev 2013) A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood transfusion. His father died of hepatocellular carcinoma at the age of 60 years. Examination shows diffuse bronze gray darkening of the skin, a firm liver edge palpable 4 cm below the right costal margin, and small, soft testes. His vital signs and laboratory studies are shown. Which of the following is the most likely underlying mechanism of this patient's iron accumulation? A. Ineffective erythropoiesis with increased duodenal iron uptake B. Deficient hepatocyte hepcidin secretion with persistent ferroportin activity C. Repeated red cell transfusion with macrophage iron loading D. Cytokine driven hepcidin excess with macrophage iron sequestration E. Ethanol induced upregulation of enterocyte divalent metal transporter 중년 남성의 피로·성욕 감소·2·3번째 중수지관절 관절병증 + 청동색 피부 + 간비대 + 당뇨 + 고환 위축 + 간암 가족력 — 실질 장기(간·췌장·관절·뇌하부·피부)에 철이 쌓이는 유전성 혈색소증(hereditary hemochromatosis)이다. 트랜스페린 포화도 78%·페리틴 1,850 이 이를 뒷받침한다. 기전은 HFE 변이(C282Y 동형접합)로 간세포가 hepcidin 을 충분히 만들지 못해, 십이지장 장세포·대식세포의 철 배출 통로 ferroportin 이 분해되지 않고 계속 열려 있어 식이 철 흡수와 대식세포 철 방출이 억제되지 않는 것이다. 혈색소·MCV·망상적혈구가 정상이므로 무효조혈(A)이 아니고 수혈력도 없다(C). 만성염증의 hepcidin 과잉(D)은 반대로 철을 대식세포에 가두어 트랜스페린 포화도를 낮춘다. 주말 맥주 2잔은 알코올성 철과부하(E)를 설명하기에 턱없이 적다."
+  },
   {
    "id": "kmle-2026-0937",
    "type": "kmle",
@@ -846,6 +980,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0140.md",
    "snippet": "A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of ",
    "text": "Biochemistry Neonatal Hyperammonemia Without Acidosis — The Mitochondrial Intermediate That Spills Into Pyrimidine Synthesis urea-cycle OTC-deficiency hyperammonemia orotic-aciduria carbamoyl-phosphate X-linked USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Urea Cycle; Nelson Textbook of Pediatrics 22e — Urea Cycle Disorders) A 3 day old boy born at term after an uncomplicated pregnancy is brought to the emergency department because of poor feeding, repeated vomiting, and progressive lethargy over the past 12 hours. He was breastfeeding well on the first day of life. He has no fever and there has been no diarrhea. A maternal uncle died in the neonatal period of an undiagnosed illness. Physical examination shows a lethargic, hypotonic infant with rapid, deep respirations; the anterior fontanelle is full. There is no hepatomegaly, rash, or dysmorphic features. Blood cultures are obtained. Laboratory studies are shown. Accumulation of which of the following intermediates most directly accounts for the abnormal urinary finding in this patient? A. Citrulline B. N Acetylglutamate C. Carbamoyl phosphate D. Argininosuccinate E. Ornithine 생후 3일 남아의 고암모니아혈증 + 호흡성 알칼리증(암모니아의 호흡중추 자극) + 정상 음이온차·정상 젖산·케톤 음성(유기산혈증 배제) + 낮은 BUN·낮은 시트룰린 + 오로트산뇨 = ornithine transcarbamylase(OTC) 결핍. X연관이라 남아·외삼촌 병력이 맞아 든다. OTC가 막히면 미토콘드리아에서 CPS I가 만든 carbamoyl phosphate가 시트룰린으로 넘어가지 못해 쌓이고, 세포질로 새어 나와 피리미딘 합성 경로(aspartate transcarbamoylase → dihydroorotate → orotate)로 흘러 오로트산이 과잉 생성·배설된다. 그래서 오로트산뇨는 '미토콘드리아 carbamoyl phosphate 축적'의 직접 산물이며, CPS I 결핍(오로트산 정상·낮음)과 OTC 결핍을 가르는 핵심 표지다."
+  },
+  {
+   "id": "paper-2026-0561",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JBI evidence implementation",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0561_implementation_of_an_evidence_based_diabetic_foot_risk_strat.md",
+   "snippet": "Title Implementation of an evidence based diabetic foot risk stratification pathway in a surgical outpatient setting: a best practice implementation project Authors Lu Ya Wen, Hsu Hui Ching, Tsai Hsin Chung Journal / DOI JBI evidence implem",
+   "text": "Surgery scraped pubmed PubMed / JBI evidence implementation Title Implementation of an evidence based diabetic foot risk stratification pathway in a surgical outpatient setting: a best practice implementation project Authors Lu Ya Wen, Hsu Hui Ching, Tsai Hsin Chung Journal / DOI JBI evidence implementation · DOI: 10.1097/XEB.0000000000000650 · PMID: 42710023 https://pubmed.ncbi.nlm.nih.gov/42710023/ Abstract BACKGROUND: Diabetic foot ulcers are a severe complication of diabetes. Despite international guidelines, preventive risk assessment remains inconsistent in outpatient settings. OBJECTIVES: The project aimed to improve early identification and risk stratification of diabetic foot in a plastic surgery outpatient department in Taiwan through the implementation of evidence based practices. METHODS: This best practice implementation project utilized the JBI Evidence Implementation Framework. A baseline audit of 30 patient records was conducted to evaluate current practice against best practice recommendations. Barriers were identified using JBI's GRiP (Getting Research into Practice) tool. Improvement strategies included developing a standard operating procedure, embedding risk assessment forms in the electronic health record, and staff training. A follow up audit of 38 records evaluated post implementation compliance. RESULTS: Baseline compliance was 0% for standardized risk classification and staff training. Following the implementation of targeted strategies over 5 months, compliance improved to 100% across all six audit criteria. However, short term clinical outcomes revealed persistent adverse events, including one death, four hospitalizations, and two amputations, highlighting a gap between process compliance and immediate outcome improvement. CONCLUSIONS: The project successfully established a high reliability preventive process for diabetic foot care in an outpatient setting. However, the persistence of adverse outcomes suggests that process improvement must be coupled with longitudinal follow up and robust post assessment care pathways to effectively reduce amputation rates. SPANISH ABSTRACT: https://links.lww.com/IJEBH/A696. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0560",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Oral health & preventive dentistry",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0560_effect_of_various_types_of_remineralizing_agents_on_the_remi.md",
+   "snippet": "Title Effect of Various Types of Remineralizing Agents on the Remineralization of Mild and Moderate Defects Caused by Molar Incisor Hypomineralization in Mexican Schoolchildren: A 12 month Follow up Randomized Clinical Trial Authors García ",
+   "text": "Pediatrics scraped pubmed PubMed / Oral health & preventive dentistry Title Effect of Various Types of Remineralizing Agents on the Remineralization of Mild and Moderate Defects Caused by Molar Incisor Hypomineralization in Mexican Schoolchildren: A 12 month Follow up Randomized Clinical Trial Authors García Pérez Alvaro, Muñiz Alquisiras Danely Minelli, Rodríguez Chávez Jacqueline Adelina, Flores Ruíz Hugo Marcelo, Mora Navarrete Karen Angelina Journal / DOI Oral health & preventive dentistry · DOI: 10.3290/j.ohpd.c 2796 · PMID: 42709059 https://pubmed.ncbi.nlm.nih.gov/42709059/ Abstract PURPOSE: Using Laser Induced Fluorescence (LIF), this study aimed to evaluate the effect of three remineralizing agents on permanent molars and incisors with both mild and moderate Molar Incisor Hypomineralization (MIH) in 8 to 12 year old Mexican schoolchildren. MATERIALS AND METHODS: In this randomized clinical trial, 104 children were selected to participate and then divided randomly into four groups: Group I: control, Oral B kids (toothpaste); Group II: Fluor Protector (varnish); Group III: Clinpro White Varnish; and Group IV: MI Paste (CCP ACP). Both varnishes were applied once every four weeks for twelve months for each group. Remineralization was evaluated by LIF at intervals of 1, 3, 6, 9, and 12 months. Paired sample t tests and repeated measures ANOVA were performed, while the Greenhouse Geisser correction was used to evaluate sphericity. RESULTS: The three test agents used increased the level of remineralization observed at the site of mild and moderate MIH defects over the course of twelve months (p0.001). A similar decrease in average LIF values was observed across the three treatment groups. CONCLUSIONS: The use of both fluoride varnishes and the CPP ACP toothpaste was observed to promote the remineralization of both mild and moderate MIH defects. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0559",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical and translational gastroenterology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0559_greener_choices_in_biliary_imaging_a_prospective_carbon_foot.md",
+   "snippet": "Title Greener Choices in Biliary Imaging: A Prospective Carbon Footprint Comparison of EUS versus MRCP for Intermediate Likelihood Choledocholithiasis Authors Rughwani Hardik, Jagtap Nitin, M de Jong David, Tyagi Abhishek, Putta Tharani, Pa",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Clinical and translational gastroenterology Title Greener Choices in Biliary Imaging: A Prospective Carbon Footprint Comparison of EUS versus MRCP for Intermediate Likelihood Choledocholithiasis Authors Rughwani Hardik, Jagtap Nitin, M de Jong David, Tyagi Abhishek, Putta Tharani, Pasumarthy Ashirwad, Khair Khan Abul, Kalapala Rakesh, et al. Journal / DOI Clinical and translational gastroenterology · DOI: 10.14309/ctg.0000000000001098 · PMID: 42709924 https://pubmed.ncbi.nlm.nih.gov/42709924/ Abstract INTRODUCTION: Healthcare accounts for nearly 5% of global greenhouse gas (GHG) emissions, and medical imaging is among its most energy intensive activities. For intermediate likelihood common bile duct (CBD) stones, endoscopic ultrasound (EUS) and magnetic resonance cholangiopancreatography (MRCP) are both guideline endorsed with comparable diagnostic accuracy, yet their environmental costs have never been directly compared. METHODS: In this prospective study, we measured the per procedure carbon footprint of EUS and MRCP using the Greenhouse Gas Protocol and India's grid emission factor. We recorded EUS procedure times individually; MRCP emissions were derived from a validated power model that captures the continuous cryocooler load maintaining magnet superconductivity around the clock, with shared infrastructure allocated by real case volume. We performed sensitivity analyses across scanner utilization, energy allocation method, scan duration, and grid carbon intensity. The study followed the ESGE E SPARE reporting standard. RESULTS: EUS generated 4.53 kg CO2e per procedure and MRCP 18.90 kg CO2e per procedure, making MRCP 4.2 times more carbon intensive. The continuously running cryocooler was the single largest fixed contributor to MRCP emissions (23.4% in standby alone), a 24/7 load absent in EUS. Choosing EUS for 108 patients saved 1,552 kg CO2e, equivalent to the annual carbon uptake of 74 mature trees. EUS remained the lower carbon option across sensitivity analyses, though the advantage narrowed and could reverse on low carbon grids. DISCUSSION: For bile duct stone evaluation, EUS offers the same diagnostic answer at substantially lower carbon cost where grid electricity is carbon intensive, adding environmental impact to accuracy, safety, and cost in the decision. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0558",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS computational biology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0558_spatially_guided_translation_from_histology_images_to_transc.md",
+   "snippet": "Title Spatially guided translation from histology images to transcriptomic profiles using foundation model driven contrastive learning Authors Huang Zi Huai, Xu Ziyang, Hu Pingzhao Journal / DOI PLoS computational biology · DOI: 10.1371/jou",
+   "text": "Pathology scraped pubmed PubMed / PLoS computational biology Title Spatially guided translation from histology images to transcriptomic profiles using foundation model driven contrastive learning Authors Huang Zi Huai, Xu Ziyang, Hu Pingzhao Journal / DOI PLoS computational biology · DOI: 10.1371/journal.pcbi.1014762 · PMID: 42709893 https://pubmed.ncbi.nlm.nih.gov/42709893/ Abstract Spatial transcriptomics (ST) enhances single cell RNA sequencing by revealing transcript distribution, offering critical insights into heterogeneous diseases such as breast cancer. However, the high cost and lengthy processes of generating high quality ST data limit clinical application. Recent deep learning methods predict ST from histology images, but often fail to capture both morphological features and spatial context. We introduce FOCST, a foundation model driven framework for ST imputation that leverages spatial guided contrastive learning. FOCST begins with UNI, a large histopathology foundation model, to extract visual features from tissue images. These are integrated with expression data in a unified embedding space via contrastive learning, enabling cross modal prediction and imputation. To further enhance spatial awareness, a graph neural network incorporates positional information, improving regional detection and interpretability.Benchmarking demonstrates FOCST's superior performance over state of the art methods and alternative vision encoders (paired Wilcoxon signed rank tests, FDR adjusted p < 0.05, N = 6 images). Predicted profiles enable clinically relevant downstream analyses, including patient stratification by treatment response (ROC AUC (Receiver Operating Characteristic Area Under the Curve) = 0.79). Our results highlight the promise of combining foundation models and spatially guided learning to efficiently generate ST insights, advancing cancer research and precision medicine. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0557",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Proceedings of the National Academy of Sciences of the United States of America",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0557_size_tailored_nanoparticle_antibody_conjugates_overcome_hepa.md",
+   "snippet": "Title Size tailored nanoparticle antibody conjugates overcome hepatic sequestration in Alzheimer's disease treatment Authors Du Xuewei, Liu Ni, Zhang Taoping, Yang Changwen, Luo Haiming Journal / DOI Proceedings of the National Academy of S",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Proceedings of the National Academy of Sciences of the United States of America Title Size tailored nanoparticle antibody conjugates overcome hepatic sequestration in Alzheimer's disease treatment Authors Du Xuewei, Liu Ni, Zhang Taoping, Yang Changwen, Luo Haiming Journal / DOI Proceedings of the National Academy of Sciences of the United States of America · DOI: 10.1073/pnas.2603034123 · PMID: 42709795 https://pubmed.ncbi.nlm.nih.gov/42709795/ Abstract Antibody based immunotherapy targeting amyloid β (Aβ) is a promising approach for Alzheimer's disease (AD). However, its efficacy is limited by rapid hepatic sequestration, complement activation, and liver dysfunction. In this study, we synthesized low immunogenic 450 nm functionalized mesoporous silica nanoparticles (PEG MSN 1F12) by conjugating the anti Aβ42 monoclonal antibody 1F12 to polyethylene glycol modified mesoporous silica nanoparticles to address these challenges. In APP/PS1 mice, intravenous PEG MSN 1F12 administration markedly enhanced peripheral Aβ clearance, promoted intestinal excretion, reshaped gut microbiota, and alleviated intestinal inflammation, thus reducing AD associated hepatic burden. Peripheral Aβ removal further led to decreased brain Aβ deposition, attenuated microglial activation, and improved cognition. These findings highlight that the use of particle size engineered antibody nanoparticle conjugates is a safe and effective strategy to overcome hepatic sequestration, augment Aβ clearance, and improve AD outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0556",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular medicine (Hagerstown, Md.)",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0556_speckle_tracking_staging_of_extra_valvular_cardiac_damage_in.md",
+   "snippet": "Title Speckle tracking staging of extra valvular cardiac damage in degenerative mitral regurgitation: prognostic implications Authors Pasquini Annalisa, Pica Andrea, Pastore Maria Concetta, Mazzenga Gabriele, Iuliano Maria Alma, Filice Moni",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of cardiovascular medicine (Hagerstown, Md.) Title Speckle tracking staging of extra valvular cardiac damage in degenerative mitral regurgitation: prognostic implications Authors Pasquini Annalisa, Pica Andrea, Pastore Maria Concetta, Mazzenga Gabriele, Iuliano Maria Alma, Filice Monica, Focardi Marta, Bruno Piergiorgio, et al. Journal / DOI Journal of cardiovascular medicine (Hagerstown, Md.) · DOI: 10.2459/JCM.0000000000001927 · PMID: 42710014 https://pubmed.ncbi.nlm.nih.gov/42710014/ Abstract AIMS: In asymptomatic patients with severe primary mitral regurgitation, surgical referral is based on 2D echocardiographic indices that often identify advanced myocardial injury. Speckle tracking echocardiography (STE) may detect earlier, reversible dysfunction.This study evaluated whether a novel multichamber STE based staging system of extra valvular cardiac damage improves risk stratification in patients with severe degenerative mitral regurgitation undergoing surgery. METHODS AND RESULTS: A retrospective multicenter cohort study of patients with degenerative mitral regurgitation undergoing surgery: derivation cohort (n = 208; mean age 64 ± 13 years; 59.7% men) and validation cohort (n = 92; mean age 63 ± 12 years; 53.3% men). Receiver operating characteristic curve analysis identified optimal strain cut offs associated with adverse outcomes: left ventricular global longitudinal strain (LVGLS) less than 20%, peak atrial longitudinal strain (PALS) less than 25%, and right ventricular free wall longitudinal strain (RVFWLS) less than 17%. Patients were classified into four stages: Stage 0, no damage; Stage 1, left atrial damage (PALS < 25%); Stage 2, left ventricular damage (LVGLS < 20%); Stage 3, right ventricular damage (RVFWLS < 17%).The STE based staging system was independently associated with the composite of periprocedural adverse events (mortality, stroke, myocardial infarction, acute kidney injury, life threatening bleeding or sepsis/wound infection requiring reintervention, complete atrioventricular block requiring pacemaker implantation): odds ratio 1.68 per stage increase (confidence interval 1.24 2.32; P = 0.001). Predictive accuracy was higher compared with clinical and echocardiographic data, with consistent results in the validation cohort. CONCLUSIONS: The multichamber STE staging system provides incremental prognostic information beyond conventional parameters, improving perioperative risk stratification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0555",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular pharmacology",
+   "confidence": "medium",
+   "date": "2026-09-08",
+   "path": "content/papers/2026/2026-09-08_paper-2026-0555_efficacy_of_cardioprotective_drugs_in_cancer_patients_receiv.md",
+   "snippet": "Title Efficacy of Cardioprotective Drugs in Cancer Patients Receiving Anthracyclines: A Pairwise Meta Analysis and Network Meta Analysis Authors Maliha Maisha, Satish Vikyath, Kumar Sriram Sunil, Nandy Sneha, Kharawala Amrin, Gonzales Uribe",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular pharmacology Title Efficacy of Cardioprotective Drugs in Cancer Patients Receiving Anthracyclines: A Pairwise Meta Analysis and Network Meta Analysis Authors Maliha Maisha, Satish Vikyath, Kumar Sriram Sunil, Nandy Sneha, Kharawala Amrin, Gonzales Uribe Antony, Li Wing Fai, Kaushik Sharanya, et al. Journal / DOI Journal of cardiovascular pharmacology · DOI: 10.1097/FJC.0000000000001878 · PMID: 42710020 https://pubmed.ncbi.nlm.nih.gov/42710020/ Abstract Anthracyclines are cornerstone chemotherapeutic agents for several cancers but carry a substantial risk of cardiotoxicity. Multiple cardioprotective drugs have been investigated to prevent cardiac dysfunction in patients receiving anthracycline based chemotherapy. This study evaluated and ranked the cardioprotective effects of these agents using network meta analysis. A comprehensive search of PubMed, Cochrane, Scopus, and Web of Science from inception to September 22, 2024 identified randomized clinical trials and cohort studies assessing cardioprotective agents in cancer patients treated with anthracyclines. Interventions included angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers, beta blockers, mineralocorticoid receptor antagonists, statins, sodium glucose cotransporter 2 (SGLT2) inhibitors, and metformin. The primary outcome was change in left ventricular ejection fraction (LVEF). Secondary outcomes were left ventricular end diastolic diameter (LVEDD), chemotherapy related cardiac dysfunction (CTRCD), heart failure (HF), HF hospitalization, and all cause mortality. Thirty five studies were included, comprising 31 randomized controlled trials and 4 retrospective studies. Overall, cardioprotective therapy significantly improved LVEF, reduced CTRCD, all cause mortality, HF incidence, and LVEDD, but had no significant effect on HF hospitalization. Subgroup and network meta analyses showed that ACEIs plus beta blockers, beta blockers alone, statins, and ACEIs significantly improved LVEF versus controls, with ACEIs ranking highest. For CTRCD prevention, statins and beta blockers significantly reduced risk, whereas ACEIs plus beta blockers had the most favorable ranking. For mortality, the available retrospective SGLT2 inhibitor studies suggested an association with lower risk; however, because no randomized anthracycline specific SGLT2 inhibitor trials were available and follow up duration differed from the RCT evidence for other agents, this finding should be considered hypothesis generating rather than definitive comparative evidence. ACEIs, beta blockers, and statins appear effective for preserving cardiac function during anthracycline therapy. Treatment rankings, particularly for outcomes supported by sparse or observational evidence, should be interpreted cautiously, and further randomized trials are needed, particularly to evaluate SGLT2 inhibitors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-08",
