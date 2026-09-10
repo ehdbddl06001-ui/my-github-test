@@ -2,6 +2,76 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0571",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Profiling tumor immune microenvironment of epithelial ovarian carcinoma",
+  "authors": [
+   "Dehghani-Ghobadi Zeinab",
+   "Dionellis Vasilis S",
+   "Traber Clara",
+   "Moore Jonathan S",
+   "Samartzis Nicolas",
+   "Ryser Stephan",
+   "Kalaitzopoulos Dimitrios R",
+   "Liaudet Nicolas",
+   "et al."
+  ],
+  "journal": "Oncoimmunology",
+  "doi": "10.1080/2162402X.2026.2722470",
+  "pmid": "42721374",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42721374/",
+  "pubdate": "2026-12-31",
+  "date": "2026-09-10",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Epithelial ovarian carcinoma (EOC) comprises five main histological subtypes: high-grade serous (HGSOC), low-grade serous (LGSOC), clear cell (CCOC), mucinous (MOC), and endometrioid (ENOC). Each histotype harbors specific genomic alterations and clinical outcome. Few studies systematically compared the tumor immune microenvironment across the five subtypes.\n\n**METHODS:** We performed 7-plex (CD45, CD8, CD68, CD163, FoxP3, CD20, and cytokeratin) sequential immunohistochemistry on a clinically annotated tissue microarray including 139 EOC representing the five subtypes and 26 borderline tumors (serous and mucinous). Digital pathology was used to quantify immune cell abundance, their spatial distribution (stroma vs tumor core), and correlation with survival.\n\n**RESULTS:** Immune cells were dominated by macrophages and more abundant in the stroma than tumor core across the five subtypes, consistent with immune excluded pattern. Compared to HGSOC, CCOC displayed the highest infiltration by CD45+ leukocytes and CD68+ macrophages, particularly M2-like CD163+ cells, suggesting a macrophage-rich, immunosuppressive phenotype. LGSOC exhibited the highest infiltration by intraepithelial FoxP3+ regulatory T cells. Comparison of borderline tumors with invasive carcinoma (LGOSC and MOC) revealed that malignant progression is accompanied by loss of CD8+ T cells, enrichment in regulatory T cells and increase of CD163+/CD68+ ratio, consistent with immune evasion during tumorigenesis. There was a trend toward better survival in HGSOC highly infiltrated by lymphocytes, either intraepithelial (CD8+ and FoxP3+) or stromal (FoxP3+ and CD20+).\n\n**CONCLUSIONS:** EOC is characterized by histotype-specific immune milieux defined by macrophage dominance, epithelial immune exclusion and dynamic immune remodeling during progression from borderline tumors to invasive carcinomas.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0570",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "A Case Report of Laminated Left Ventricular Thrombus in Acute Decompensated Heart Failure: Pharmacotherapeutic Considerations for Anticoagulation",
+  "authors": [
+   "Acosta Anthony",
+   "Yamanaka Travis",
+   "Tan Felicia",
+   "Elshazali Akrum",
+   "Elfessi Zane"
+  ],
+  "journal": "Journal of pharmacy practice",
+  "doi": "10.1177/08971900261483511",
+  "pmid": "42721434",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42721434/",
+  "pubdate": "2026-09-10",
+  "date": "2026-09-10",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Left ventricular (LV) thrombus is a known complication of severe systolic dysfunction and is associated with an increased risk of systemic embolization. Optimal pharmacotherapeutic management remains an area of clinical uncertainty, particularly when thrombus morphology suggests lower embolic potential. A 56-year-old man with multiple cardiovascular risk factors presented with progressive dyspnea, anasarca, and hypoxic respiratory failure. Cardiac imaging demonstrated severe biventricular dysfunction (ejection fraction <20%) and a large, laminated, nonmobile apical LV thrombus. Concurrent findings included congestive hepatopathy with ascites and a small pulmonary embolism. Based on thrombus morphology and clinical stability, systemic anticoagulation was initiated without invasive intervention. The patient improved with aggressive diuresis, guideline-directed medical therapy for heart failure, and therapeutic anticoagulation. This case highlights pharmacotherapeutic considerations in the management of laminated LV thrombus, including the role of thrombus morphology in risk stratification, anticoagulant selection, and timing of therapy initiation. Early recognition and coordinated interdisciplinary management can support safe, noninvasive treatment strategies in complex heart failure presentations. In addition, this case highlights the importance of collaborative practice and pharmacist-guided anticoagulation strategies.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0569",
   "topic": "Surgery",
   "subtopic": "",
