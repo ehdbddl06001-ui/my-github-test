@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-09",
+ "generated": "2026-09-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2216,
+  "total": 2234,
   "byType": {
+   "anatomy": 603,
    "usmle": 138,
-   "anatomy": 593,
+   "paper": 569,
    "kmle": 907,
-   "paper": 561,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 593,
-   "Cardiology": 176,
-   "Nephrology": 147,
-   "Infectious Disease": 124,
-   "Pediatrics": 103,
-   "Hematology-Oncology": 85,
-   "Pathology": 79,
+   "Anatomy": 603,
+   "Cardiology": 177,
+   "Nephrology": 148,
+   "Infectious Disease": 125,
+   "Pediatrics": 104,
+   "Hematology-Oncology": 86,
+   "Pathology": 80,
    "Obstetrics & Gynecology": 70,
    "Neurology": 68,
    "Psychiatry": 68,
-   "Surgery": 63,
+   "Surgery": 64,
    "Endocrinology": 58,
    "Gastroenterology": 57,
    "Pulmonology": 57,
@@ -35,7 +35,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 56,
    "Rheumatology": 56,
    "Hematology": 55,
-   "Laboratory Medicine": 54,
+   "Laboratory Medicine": 55,
    "Physiology": 16,
    "Pharmacology": 11,
    "Microbiology": 10,
@@ -53,13 +53,226 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1424,
-   "medium": 743,
+   "high": 1434,
+   "medium": 751,
    "low": 49
   },
-  "tagCount": 3102
+  "tagCount": 3121
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-11",
+   "type": "anatomy",
+   "unit": "팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-11",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/daily/2026-09-11.md",
+   "snippet": "오늘의 학습 (2026 09 11 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 1일 · Tagging 2까지 38일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-11 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 11 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 1일 · Tagging 2까지 38일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0476",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔 얕은근막 — 두 피부정맥의 주행과 피부신경의 모신경",
+   "tags": [
+    "course-tracing",
+    "9회차",
+    "얕은근막",
+    "노쪽피부정맥",
+    "자쪽피부정맥",
+    "피부신경",
+    "예습시험"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §얕은정맥·피부신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0476.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔 얕은근막 — 두 피부정맥의 주행과 피부신경의 모신경 9회차 · 팔 course-tracing 9회차 얕은근막 노쪽피부정맥 자쪽피부정맥 피부신경 예습시험 9차시(0911) 김홍태pf.pdf §얕은정맥·피부신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0475",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴교감신경줄기 — 백색·회색교통가지와 내장신경의 갈림",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "교감신경줄기",
+    "내장신경",
+    "교통가지",
+    "별신경절",
+    "예습시험"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §교감신경줄기 (sympathetic trunk)·갈비사이신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0475.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴교감신경줄기 — 백색·회색교통가지와 내장신경의 갈림 9회차 · 가슴 branch-tree 9회차 교감신경줄기 내장신경 교통가지 별신경절 예습시험 9차시(0911) 김홍태pf.pdf §교감신경줄기 (sympathetic trunk)·갈비사이신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0474",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "뒤세로칸의 내용물과 홀정맥계통의 주행",
+   "tags": [
+    "course-tracing",
+    "9회차",
+    "뒤세로칸",
+    "홀정맥",
+    "가슴림프관",
+    "정맥각",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §홀정맥계통·식도·내림대동맥·가슴림프관 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0474.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 뒤세로칸의 내용물과 홀정맥계통의 주행 9회차 · 가슴 course-tracing 9회차 뒤세로칸 홀정맥 가슴림프관 정맥각 예습시험 태깅 9차시(0911) 김홍태pf.pdf §홀정맥계통·식도·내림대동맥·가슴림프관 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0473",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "기관지허파구역 — 기관지나무 단계와 구역동맥·구역사이정맥",
+   "tags": [
+    "relation",
+    "9회차",
+    "기관지허파구역",
+    "구역기관지",
+    "구역사이정맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §허파해부 (Drive 해부2, a2-s09) + 9회차 응용과제 '기관지허파구역'",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0473.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 기관지허파구역 — 기관지나무 단계와 구역동맥·구역사이정맥 9회차 · 가슴 relation 9회차 기관지허파구역 구역기관지 구역사이정맥 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파해부 (Drive 해부2, a2-s09) + 9회차 응용과제 '기관지허파구역' 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0472",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "좌우 주기관지의 차이와 이물질 흡인 — 기관용골이 기준",
+   "tags": [
+    "distinction",
+    "9회차",
+    "기관용골",
+    "주기관지",
+    "흡인",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §기관·기관지 (Drive 해부2, a2-s09) + 9회차 응용과제 '주기관지 구조 차이와 이물질'",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0472.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 좌우 주기관지의 차이와 이물질 흡인 — 기관용골이 기준 9회차 · 가슴 distinction 9회차 기관용골 주기관지 흡인 예습시험 태깅 9차시(0911) 김홍태pf.pdf §기관·기관지 (Drive 해부2, a2-s09) + 9회차 응용과제 '주기관지 구조 차이와 이물질' 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0471",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기 부위별 손상 — 위줄기·아래줄기·긴가슴신경",
+   "tags": [
+    "clinical-application",
+    "9회차",
+    "팔신경얼기",
+    "Erb",
+    "Klumpke",
+    "날개어깨",
+    "예습시험"
+   ],
+   "source": "2026학년도 2학기 수업계획서(실습계획표) 9회차 응용과제 '팔신경얼기 부위별 손상' + 9차시(0911) 김홍태pf.pdf §팔신경얼기",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0471.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔신경얼기 부위별 손상 — 위줄기·아래줄기·긴가슴신경 9회차 · 팔 clinical-application 9회차 팔신경얼기 Erb Klumpke 날개어깨 예습시험 2026학년도 2학기 수업계획서(실습계획표) 9회차 응용과제 '팔신경얼기 부위별 손상' + 9차시(0911) 김홍태pf.pdf §팔신경얼기 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0470",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기 5단계 — 뿌리·줄기·갈래·다발·가지와 겨드랑동맥 기준 명명",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "팔신경얼기",
+    "다발",
+    "긴가슴신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §팔신경얼기 (brachial plexus) (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0470.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔신경얼기 5단계 — 뿌리·줄기·갈래·다발·가지와 겨드랑동맥 기준 명명 9회차 · 팔 branch-tree 9회차 팔신경얼기 다발 긴가슴신경 예습시험 태깅 9차시(0911) 김홍태pf.pdf §팔신경얼기 (brachial plexus) (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0469",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥 세 부분과 각 부분의 가지 — 작은가슴근이 기준",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "겨드랑동맥",
+    "작은가슴근",
+    "뒤위팔휘돌이동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑동맥 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0469.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑동맥 세 부분과 각 부분의 가지 — 작은가슴근이 기준 9회차 · 팔 branch-tree 9회차 겨드랑동맥 작은가슴근 뒤위팔휘돌이동맥 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑동맥 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0468",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑의 네 벽·꼭대기·바닥 — 무엇이 어느 벽을 이루는가",
+   "tags": [
+    "relation",
+    "9회차",
+    "겨드랑",
+    "목겨드랑관",
+    "앞톱니근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑의 경계 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막·겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0468.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑의 네 벽·꼭대기·바닥 — 무엇이 어느 벽을 이루는가 9회차 · 팔 relation 9회차 겨드랑 목겨드랑관 앞톱니근 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑의 경계 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막·겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "usmle-2026-0151",
    "type": "usmle",
@@ -207,6 +420,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-10.md",
    "snippet": "오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-10 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 10 · t1 day) 다음 수업/시험: 2026 09 10 Tagging 1 Tagging 1까지 0일 · Tagging 2까지 39일 예상 소요: 약 20분 문항 6개 · 개념 0개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0569",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0569_driveline_relocation_with_omentoplasty_for_severe_ventricula.md",
+   "snippet": "Title Driveline Relocation With Omentoplasty for Severe Ventricular Assist Device Specific Infection Authors Stegmann Anna, Lanmüller Pia, Arlt Georg, Schoenrath Felix, Potapov Evgenij V, Schöning Wenzel, Mulzer Johanna Journal / DOI ASAIO ",
+   "text": "Surgery scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Driveline Relocation With Omentoplasty for Severe Ventricular Assist Device Specific Infection Authors Stegmann Anna, Lanmüller Pia, Arlt Georg, Schoenrath Felix, Potapov Evgenij V, Schöning Wenzel, Mulzer Johanna Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002853 · PMID: 42715555 https://pubmed.ncbi.nlm.nih.gov/42715555/ Abstract Percutaneous driveline infections (DLI) are a serious complication in patients with a durable ventricular assist device, affecting approximately 50% within 5 years. When conservative treatment fails, driveline relocation combined with omentum major wrapping (OMW), leveraging its anti inflammatory properties, may serve as a bailout approach. In this retrospective single center analysis, 72 patients who underwent driveline relocation with OMW for severe DLI between October 2015 and September 2024 were included. The 1 year reinfection incidence was 53.0% overall, and 62.3% among patients with complete 12 months of follow up. Median time to reinfection was 3 months, with 84.2% involving the same pathogen as preoperatively. Most DLIs (88.5%) were polymicrobial. Common pathogens included coagulase negative Staphylococci (59.0%), Staphylococcus aureus (54.1%), Corynebacterium spp (54.1%), Pseudomonas spp (23.0%), and Escherichia coli (21.3%). Preoperative bloodstream infections were present in 39.3%. Frequent reinfection recurrence was noted for all commonly isolated pathogens, except coagulase negative Staphylococci. Complications occurred in 59.0%, mainly relaparotomy (41.7%), bleeding (33.3%), and impaired wound healing (35.0%). Postoperative 1 year survival was 78.3%. Freedom from 1 year reinfection showed a nonsignificant reduced hazard of death (hazard ratio [HR]: 0.57). Driveline relocation with OMW reduces the infection burden in a subset of patients. Given the procedure's substantial complication rate, it should be reserved as a last resort therapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0568",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR cancer",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0568_a_multimethod_evaluation_to_assess_feasibility_acceptability.md",
+   "snippet": "Title A Multimethod Evaluation to Assess Feasibility, Acceptability, and Preliminary Efficacy of HPVVaxFacts, a Tailored Mobile Web App, for Parents With Unvaccinated Children: Pilot 2 Arm Randomized Controlled Trial Authors Cunningham Erve",
+   "text": "Pediatrics scraped pubmed PubMed / JMIR cancer Title A Multimethod Evaluation to Assess Feasibility, Acceptability, and Preliminary Efficacy of HPVVaxFacts, a Tailored Mobile Web App, for Parents With Unvaccinated Children: Pilot 2 Arm Randomized Controlled Trial Authors Cunningham Erves Jennifer, Hull Pamela C, Dempsey Amanda F, Koyama Tatsuki, Sun Lili, Chalise Mariya, Stewart Elizabeth C, Jones Jessica L, et al. Journal / DOI JMIR cancer · DOI: 10.2196/78910 · PMID: 42715554 https://pubmed.ncbi.nlm.nih.gov/42715554/ Abstract BACKGROUND: Mobile health (mHealth) interventions may improve provider parent communication on human papillomavirus (HPV) vaccination to reduce concerns, and increase intention and uptake. HPVVaxFacts (233 Analytics) is a novel, mobile web app delivering tailored education based on the Health Belief Model and Theory of Reasoned Action, addressing parental concerns preclinic visit. OBJECTIVE: This study aimed to assess the feasibility, acceptability, and preliminary efficacy of HPVVaxFacts among parents of adolescents aged 9 17 years. METHODS: We conducted a pilot, randomized controlled trial in 2 urban Tennessee clinics from June to September 2023 comparing 2 groups: tailored education via HPVVaxFacts mobile web app (intervention, n=27), and nutrition education (attention control, n=30). Eligible parents had or were caregivers to a child aged 9 to 17 years unvaccinated against HPV, had a mobile phone, had an upcoming clinic visit, and spoke English. The recruitment strategy was patient intake software Phreesia (Phreesia, Inc) and eClinicalWorks (eClinicalWorks). Although unblinded, parents could deduce their study arm assignment. Providers were blinded. Feasibility, acceptability, and preliminary efficacy (HPV vaccine knowledge, concerns, intentions, and vaccination rates) were assessed using multimethod evaluation. Parents were assessed at baseline and immediately post intervention via surveys. Vaccination rates were assessed at 12 months post intervention via electronic health records. Nineteen parent interviews were conducted up to 9 months post intervention. A clinic staff consultation (n=6) was 1 month post intervention. RESULTS: Of 57 enrolled parents, most were female (52/57, 91%), non Hispanic White (44/57, 77%), had ≤US $80,000 household income (32/57, 56%), and had some college or less (27/57, 47%). In total, 81% (29/36) of parents viewed HPVVaxFacts. Post intervention, HPV vaccine initiation was higher in the intervention group compared to the attention control group (48% vs 17%; difference 0.24; 95% CI 0.03 0.46; P=.01). Parents in the HPVVaxFacts arm demonstrated a greater reduction in knowledge (ie, knowledge increase; mean change: 0.6 vs 0.1) and concern scores (mean change: 3.4 vs 1.4) than those in the nutrition education arm. However, between arm differences were not statistically significant (P=.13 and P=.14, respectively). The majority found the study protocol and HPVVaxFacts acceptable. Benefits of HPVVaxFacts include confirming their decision to vaccinate, supporting parent child discussion on the vaccine, and answering questions preclinic visit or offering questions for the provider. Study protocol delivery and mobile web app instructions were suggested areas for improvement. Barriers for HPVVaxFacts use include content in English only and digital format. CONCLUSIONS: Our study suggests HPVVaxFacts was feasible and acceptable among parents to provide previsit, tailored information on HPV vaccination. Outcomes offer a positive trajectory but need more exploration. Next steps include a well powered efficacy trial to determine the impact of HPVVaxFacts on initiation vaccine rates and parental hesitancy factors, as well as to explore an interaction, effect modification, and mediation among different variables. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0567",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0567_environmental_pfoa_exposure_and_the_risk_of_metabolic_dysfun.md",
+   "snippet": "Title Environmental PFOA exposure and the risk of metabolic dysfunction associated steatotic liver disease: An integrated computational toxicology and multi omics study Authors Zhang Tianyu, Yuan Yu, Lin Chunli, Song Chao, Liao Tianrong, Su",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PloS one Title Environmental PFOA exposure and the risk of metabolic dysfunction associated steatotic liver disease: An integrated computational toxicology and multi omics study Authors Zhang Tianyu, Yuan Yu, Lin Chunli, Song Chao, Liao Tianrong, Sun Yuewen, Tang Hongzhen Journal / DOI PloS one · DOI: 10.1371/journal.pone.0357970 · PMID: 42715255 https://pubmed.ncbi.nlm.nih.gov/42715255/ Abstract BACKGROUND: Perfluorooctanoic acid (PFOA), a pervasive environmental pollutant, has been implicated in hepatic injury and metabolic dysfunction. However, its role as an environmental risk factor in the pathogenesis of Metabolic Dysfunction Associated Steatotic Liver Disease (MASLD) remains incompletely understood, particularly from a systems biology perspective. METHODS: This study employed an integrative approach combining computational toxicology, multi omics data analysis, and machine learning. Public databases were utilized to identify PFOA related targets and MASLD associated genes. A comprehensive machine learning framework comprising 113 model combinations was applied to transcriptomic datasets (GSE66676, GSE89632, GSE164760) to identify hub genes. Single cell RNA sequencing (scRNA seq) analysis delineated cell type specific expression patterns. Molecular docking and dynamics simulations assessed the binding stability between PFOA and core targets, which was further validated in vitro using an FFA induced MASLD HepG2 cell model. RESULTS: We identified 17 shared targets between PFOA and NAFLD. Machine learning pinpointed six hub genes (NR4A2, BCL6, CASP1, SHBG, FABP4, IL10) with high diagnostic accuracy (AUC up to 0.996). scRNA seq revealed distinct expression patterns of these genes across liver cell subtypes in MASLD. Molecular docking and dynamics simulations demonstrated stable binding of PFOA to SHBG and FABP4. In vitro experiments confirmed that PFOA exposure significantly altered the mRNA and protein expression levels of these core genes in the MASLD model. CONCLUSION: Our findings suggest a potential mechanistic association between PFOA exposure and MASLD pathogenesis, characterized by disruption of lipid metabolism, inflammatory responses, and immune homeostasis. While these results identify biologically plausible pathways, they do not establish epidemiological causation, and further prospective studies with quantified PFOA exposure are required to confirm causality in humans. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0566",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0566_cervical_leukoplakia_in_ghana_unveiling_diagnostic_challenge.md",
+   "snippet": "Title Cervical leukoplakia in Ghana: Unveiling diagnostic challenges and informing low resource screening strategies Authors Effah Kofi, Tekpor Ethel, Afetor Maxwell, Amuah Joseph Emmanuel, Wormenor Comfort Mawusi, Dugbazah Annita Edinam, D",
+   "text": "Pathology scraped pubmed PubMed / PloS one Title Cervical leukoplakia in Ghana: Unveiling diagnostic challenges and informing low resource screening strategies Authors Effah Kofi, Tekpor Ethel, Afetor Maxwell, Amuah Joseph Emmanuel, Wormenor Comfort Mawusi, Dugbazah Annita Edinam, Danyo Stephen, Kemawor Seyram, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0345847 · PMID: 42715241 https://pubmed.ncbi.nlm.nih.gov/42715241/ Abstract BACKGROUND: Visual Inspection with Acetic acid (VIA) is widely used for detecting cervical (pre)cancer in resource limited settings due to its simplicity and cost effectiveness. However, the finding of cervical leukoplakia, poses diagnostic challenges. METHODS: This retrospective observational study evaluated the prevalence, associated risk factors, and referral outcomes of cervical leukoplakia among 13,861 women previously screened for cervical cancer in Ghana between June 2016 and May 2024. Screening approaches included VIA alone, mobile colposcopy alone, or VIA/mobile colposcopy combined with other tests (HPV DNA testing and/or cytology). RESULTS: Among 120 women (0.9%) with leukoplakia, 112 (93.3%) did not have acetowhitening on VIA/mobile colposcopy, and 21 (17.5%) received LEEP. The histopathology results ranged from no Cervical Intraepithelial Neoplasia (CIN) (15) to CIN I (2), CIN II (1), and CIN III (3). High risk HPV positivity (aOR: 30.27; 95% CI: 3.56 257.37) and HIV infection (aOR: 8.27; 95% CI: 1.18 57.69) were associated with higher odds of leukoplakia in VIA screened women. CONCLUSION: Leukoplakia can be clinically important without coexistence with acetowhitening. The association of leukoplakia with hrHPV and HIV, coupled with a high referral default and logistical barriers to biopsy and histopathology, calls for simplified management protocols and point of care triage tools for cervical screening in low resource settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0565",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0565_treatment_decisions_in_multiple_myeloma.md",
+   "snippet": "Title Treatment Decisions in Multiple Myeloma Authors Mouhieddine Tarek H, Anderson Kenneth C Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2605253 · PMID: 42715563 https://pubmed.ncbi.nlm.nih.gov/42715563/ Abstract",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The New England journal of medicine Title Treatment Decisions in Multiple Myeloma Authors Mouhieddine Tarek H, Anderson Kenneth C Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2605253 · PMID: 42715563 https://pubmed.ncbi.nlm.nih.gov/42715563/ Abstract Revolutions in transplantation and targeted and immune therapies have transformed multiple myeloma from a disease with an associated survival of a few years into one for which functional cure is an emerging goal. This abundance of effective therapies has created clinical complexity. Here we provide a practical framework, anchored in trial evidence and informed by emerging biologic discoveries, for the navigation of treatment decisions across the disease spectrum. We outline how cytogenetic and genomic risk stratification, functional fitness, and measurable residual disease status individualize therapy in newly diagnosed disease, in which quadruplet induction therapy is now standard and the role of autologous transplantation is being reevaluated. Regarding relapse, we address the sequencing of B cell maturation antigen directed chimeric antigen receptor (CAR) T cells, bispecific antibodies, and antibody drug conjugates, emphasizing T cell fitness and multiantigen targeting to counter exhaustion and antigen escape. We also consider early interception in high risk smoldering myeloma. Throughout, we underscore that enrollment of patients in clinical trials should be considered in order to ensure continued progress. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0564",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0564_albuminuria_in_heart_failure_a_cardiorenal_integration_bioma.md",
+   "snippet": "Title Albuminuria in Heart Failure: A Cardiorenal Integration Biomarker Beyond Chronic Kidney Disease Authors Wagle Abhishesh, Bharati Bishal, Dimadi Ioanna Yglesias I, Varma Nidhi Journal / DOI Cardiology in review · DOI: 10.1097/CRD.00000",
+   "text": "Nephrology scraped pubmed PubMed / Cardiology in review Title Albuminuria in Heart Failure: A Cardiorenal Integration Biomarker Beyond Chronic Kidney Disease Authors Wagle Abhishesh, Bharati Bishal, Dimadi Ioanna Yglesias I, Varma Nidhi Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001430 · PMID: 42715341 https://pubmed.ncbi.nlm.nih.gov/42715341/ Abstract While traditionally albuminuria has been considered a marker of glomerular injury and chronic kidney disease, recent evidence establishes it as a cardiorenal integration biomarker; a signal of systemic congestion, endothelial activation, and inadequate therapeutic control that may help identify patients who could benefit from intensive cardiorenal protective therapy, pending prospective validation. Initial management usually targets the achievement of euvolemia to address the albumin leakage caused by the increase in intraglomerular pressure due to increased central and renal venous pressures. Further management focuses on renin angiotensin aldosterone system inhibition and sodium glucose cotransporter 2 inhibitors for the restoration of tubuloglomerular feedback and reduction of intraglomerular pressure. Urinary albumin is a readily accessible biomarker that enhances risk stratification and may guide the optimization of cardiorenal protective therapies in heart failure patients. Integration of routine urinary albumin to creatinine ratio monitoring into heart failure management is a promising frontier that requires validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0563",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Revista paulista de pediatria : orgao oficial da Sociedade de Pediatria de Sao Paulo",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0563_epidemiological_profile_of_urinary_tract_infections_in_child.md",
+   "snippet": "Title Epidemiological profile of urinary tract infections in children before and during the COVID 19 pandemic: an observational study Authors Thesolim Bruna Luiza, Lima Bárbara Martins, Valete Cristina Ortiz Sobrinho Journal / DOI Revista p",
+   "text": "Infectious Disease scraped pubmed PubMed / Revista paulista de pediatria : orgao oficial da Sociedade de Pediatria de Sao Paulo Title Epidemiological profile of urinary tract infections in children before and during the COVID 19 pandemic: an observational study Authors Thesolim Bruna Luiza, Lima Bárbara Martins, Valete Cristina Ortiz Sobrinho Journal / DOI Revista paulista de pediatria : orgao oficial da Sociedade de Pediatria de Sao Paulo · DOI: 10.1590/1984 0462/2026/44/2025365 · PMID: 42715473 https://pubmed.ncbi.nlm.nih.gov/42715473/ Abstract OBJECTIVE: The aim of this study was to evaluate whether the COVID 19 pandemic influenced the epidemiological, microbiological, and antimicrobial resistance profiles of urinary tract infections (UTI) in children admitted to a pediatric service. METHODS: This retrospective ecological study included patients under 12 years of age admitted to a Brazilian university hospital with a diagnosis of UTI based on clinical and laboratory criteria. Two periods were analyzed: 2018 2019 (pre pandemic) and 2022 2023 (pandemic period). RESULTS: A total of 8007 urine cultures were analyzed, of which 203 met criteria for UTI (128 in the first and 75 in the second period). A higher proportion of neonates was observed in the second period. Escherichia coli remained the predominant pathogen. Klebsiella pneumoniae showed an increase in frequency (p=0.02) and resistance (p<0.001), while Pseudomonas aeruginosa also increased in frequency (p=0.02) and resistance (p=0.01). The susceptibility profile of other pathogens remained stable, with persistently high sensitivity to amikacin, meropenem, and third generation cephalosporins. CONCLUSIONS: The COVID 19 pandemic period was associated with changes in the epidemiological and microbiological profile of pediatric UTIs. The increased frequency of healthcare associated pathogens highlights the importance of continuous microbiological surveillance and rational antimicrobial use in pediatric practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0562",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-09-09",
+   "path": "content/papers/2026/2026-09-09_paper-2026-0562_prompted_text_based_vital_sign_recording_versus_unprompted_e.md",
+   "snippet": "Title Prompted Text Based Vital Sign Recording Versus Unprompted Electronic Medical Record Entries in Patients With Advanced Heart Failure: Observational Study Authors Wu Jenny, Chen Julia, Min Lillian, Paul Brandy, Keedy Jenna M, Ellimoott",
+   "text": "Cardiology scraped pubmed PubMed / JMIR formative research Title Prompted Text Based Vital Sign Recording Versus Unprompted Electronic Medical Record Entries in Patients With Advanced Heart Failure: Observational Study Authors Wu Jenny, Chen Julia, Min Lillian, Paul Brandy, Keedy Jenna M, Ellimoottil Chandy Journal / DOI JMIR formative research · DOI: 10.2196/71641 · PMID: 42715411 https://pubmed.ncbi.nlm.nih.gov/42715411/ Abstract BACKGROUND: Long term remote patient monitoring of weight, pulse, and blood pressure has been shown to significantly reduce mortality and hospitalization rates among patients with heart failure. Despite its proven effectiveness, maintaining patient engagement in remote monitoring programs remains challenging. OBJECTIVE: This study aimed to evaluate the impact of 2 way text based communication on prompting patients to record key vital signs and to compare it with unprompted patient reporting through electronic medical records in terms of engagement and clinical outcomes. METHODS: We analyzed data from patients participating in the University of Michigan Advanced Heart Failure Program who reported daily weight, blood pressure, and pulse using either the MiChart Patient Outreach Texting Application (MPOTA) or patient enrolled flowsheets (PEFs). The study's primary metric was the consistency of patient reported vital signs, with secondary descriptive metrics including variations in hospitalization and emergency room visits pre enrollment and postenrollment in the programs. RESULTS: A total of 890 patients were included, with 301 enrolled in the MPOTA group and 589 in the PEF group. The engagement rate for the PEF group had a median of 2.29% (IQR 0% 23.93%). In contrast, the MPOTA group showed a significantly higher median engagement rate of 66.67% (IQR 30.67% 88.24%). There were no significant differences in hospitalization or emergency room visit rates across engagement categories (none, low, medium, and high) or between programs. Mean hospitalizations declined by 21% in the MPOTA group (from mean 0.53, SD 0.90 to mean 0.42, SD 0.88; P=.06) and 18% in the PEF group (from mean 0.50, SD 0.86 to mean 0.41, SD 0.80; P=.03) after the initiation of each program. This reduction was small and statistically significant only for the PEF group. Mean emergency room visits did not significantly change in either group. Regression analyses showed no significant association between engagement level and hospitalization or emergency room utilization, although medium engagement was associated with a nonsignificant trend toward fewer events. Despite improved engagement with MPOTA, this did not translate into significant reductions in hospitalizations or emergency room visits. All analyses of clinical outcomes were exploratory and underpowered, and no significant associations were found between engagement level and utilization. CONCLUSIONS: Although MPOTA was associated with substantially higher patient engagement levels compared to unprompted patient reporting, neither demonstrated significant differences in hospitalization or emergency room visits across engagement levels or between programs. Small reductions in hospitalizations were observed, but these were significant only in PEF, not in MPOTA. Observed changes in utilization were exploratory, small in magnitude, and underpowered to detect clinically meaningful effects. These findings suggest that mobile text based communication may be a useful tool for improving engagement in remote monitoring programs for patients with advanced heart failure; however, further research is needed to assess its impact on clinical outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0937",
