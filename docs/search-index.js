@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2256,
+  "total": 2266,
   "byType": {
    "kmle": 939,
+   "anatomy": 603,
    "usmle": 138,
-   "anatomy": 593,
    "paper": 569,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 593,
+   "Anatomy": 603,
    "Cardiology": 179,
    "Nephrology": 150,
    "Infectious Disease": 127,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1456,
+   "high": 1466,
    "medium": 751,
    "low": 49
   },
-  "tagCount": 3128
+  "tagCount": 3147
  },
  "docs": [
   {
@@ -673,6 +673,219 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0938.md",
    "snippet": "64세 남자가 3일 전부터 가슴이 계속 두근거리고 계단을 오르면 숨이 찬다며 왔다. 고혈압으로 암로디핀을 복용 중이며 흉통·실신은 없었다. 의식은 명료하고 피부는 따뜻하며 폐음은 깨끗하다. 심전도는 자료와 같고, 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 아데노신 정주 B. 동기화 심율동전환 C. 딜티아젬 정주 D. 아미오다론 정주 E. 리도카인 정주 규칙적 좁은 QRS 빈맥 150회/분에 톱니 모양 심방",
    "text": "Cardiology Typical Atrial Flutter with 2:1 Conduction — Stable Rate Control atrial-flutter svt rate-control diltiazem ecg KMLE 2026 / Claude Routine 64세 남자가 3일 전부터 가슴이 계속 두근거리고 계단을 오르면 숨이 찬다며 왔다. 고혈압으로 암로디핀을 복용 중이며 흉통·실신은 없었다. 의식은 명료하고 피부는 따뜻하며 폐음은 깨끗하다. 심전도는 자료와 같고, 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 아데노신 정주 B. 동기화 심율동전환 C. 딜티아젬 정주 D. 아미오다론 정주 E. 리도카인 정주 규칙적 좁은 QRS 빈맥 150회/분에 톱니 모양 심방 파형이 보이면 2:1 전도의 심방조동이다. 혈역학적으로 안정하고 발생 48시간이 지났으므로 항응고 없이 심율동전환을 하면 색전 위험이 있어, 먼저 방실결절 차단제(딜티아젬)로 심실박동수를 조절하고 항응고 후 전환·절제를 계획한다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-11",
+   "type": "anatomy",
+   "unit": "팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-11",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/daily/2026-09-11.md",
+   "snippet": "오늘의 학습 (2026 09 11 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 1일 · Tagging 2까지 38일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-11 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 11 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 1일 · Tagging 2까지 38일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0476",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔 얕은근막 — 두 피부정맥의 주행과 피부신경의 모신경",
+   "tags": [
+    "course-tracing",
+    "9회차",
+    "얕은근막",
+    "노쪽피부정맥",
+    "자쪽피부정맥",
+    "피부신경",
+    "예습시험"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §얕은정맥·피부신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0476.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔 얕은근막 — 두 피부정맥의 주행과 피부신경의 모신경 9회차 · 팔 course-tracing 9회차 얕은근막 노쪽피부정맥 자쪽피부정맥 피부신경 예습시험 9차시(0911) 김홍태pf.pdf §얕은정맥·피부신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0475",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴교감신경줄기 — 백색·회색교통가지와 내장신경의 갈림",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "교감신경줄기",
+    "내장신경",
+    "교통가지",
+    "별신경절",
+    "예습시험"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §교감신경줄기 (sympathetic trunk)·갈비사이신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0475.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴교감신경줄기 — 백색·회색교통가지와 내장신경의 갈림 9회차 · 가슴 branch-tree 9회차 교감신경줄기 내장신경 교통가지 별신경절 예습시험 9차시(0911) 김홍태pf.pdf §교감신경줄기 (sympathetic trunk)·갈비사이신경 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0474",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "뒤세로칸의 내용물과 홀정맥계통의 주행",
+   "tags": [
+    "course-tracing",
+    "9회차",
+    "뒤세로칸",
+    "홀정맥",
+    "가슴림프관",
+    "정맥각",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §홀정맥계통·식도·내림대동맥·가슴림프관 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0474.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 뒤세로칸의 내용물과 홀정맥계통의 주행 9회차 · 가슴 course-tracing 9회차 뒤세로칸 홀정맥 가슴림프관 정맥각 예습시험 태깅 9차시(0911) 김홍태pf.pdf §홀정맥계통·식도·내림대동맥·가슴림프관 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(뒤세로칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0473",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "기관지허파구역 — 기관지나무 단계와 구역동맥·구역사이정맥",
+   "tags": [
+    "relation",
+    "9회차",
+    "기관지허파구역",
+    "구역기관지",
+    "구역사이정맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §허파해부 (Drive 해부2, a2-s09) + 9회차 응용과제 '기관지허파구역'",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0473.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 기관지허파구역 — 기관지나무 단계와 구역동맥·구역사이정맥 9회차 · 가슴 relation 9회차 기관지허파구역 구역기관지 구역사이정맥 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파해부 (Drive 해부2, a2-s09) + 9회차 응용과제 '기관지허파구역' 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0472",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "좌우 주기관지의 차이와 이물질 흡인 — 기관용골이 기준",
+   "tags": [
+    "distinction",
+    "9회차",
+    "기관용골",
+    "주기관지",
+    "흡인",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §기관·기관지 (Drive 해부2, a2-s09) + 9회차 응용과제 '주기관지 구조 차이와 이물질'",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0472.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 좌우 주기관지의 차이와 이물질 흡인 — 기관용골이 기준 9회차 · 가슴 distinction 9회차 기관용골 주기관지 흡인 예습시험 태깅 9차시(0911) 김홍태pf.pdf §기관·기관지 (Drive 해부2, a2-s09) + 9회차 응용과제 '주기관지 구조 차이와 이물질' 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0471",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기 부위별 손상 — 위줄기·아래줄기·긴가슴신경",
+   "tags": [
+    "clinical-application",
+    "9회차",
+    "팔신경얼기",
+    "Erb",
+    "Klumpke",
+    "날개어깨",
+    "예습시험"
+   ],
+   "source": "2026학년도 2학기 수업계획서(실습계획표) 9회차 응용과제 '팔신경얼기 부위별 손상' + 9차시(0911) 김홍태pf.pdf §팔신경얼기",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0471.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔신경얼기 부위별 손상 — 위줄기·아래줄기·긴가슴신경 9회차 · 팔 clinical-application 9회차 팔신경얼기 Erb Klumpke 날개어깨 예습시험 2026학년도 2학기 수업계획서(실습계획표) 9회차 응용과제 '팔신경얼기 부위별 손상' + 9차시(0911) 김홍태pf.pdf §팔신경얼기 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0470",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기 5단계 — 뿌리·줄기·갈래·다발·가지와 겨드랑동맥 기준 명명",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "팔신경얼기",
+    "다발",
+    "긴가슴신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §팔신경얼기 (brachial plexus) (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0470.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔신경얼기 5단계 — 뿌리·줄기·갈래·다발·가지와 겨드랑동맥 기준 명명 9회차 · 팔 branch-tree 9회차 팔신경얼기 다발 긴가슴신경 예습시험 태깅 9차시(0911) 김홍태pf.pdf §팔신경얼기 (brachial plexus) (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0469",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥 세 부분과 각 부분의 가지 — 작은가슴근이 기준",
+   "tags": [
+    "branch-tree",
+    "9회차",
+    "겨드랑동맥",
+    "작은가슴근",
+    "뒤위팔휘돌이동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑동맥 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0469.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑동맥 세 부분과 각 부분의 가지 — 작은가슴근이 기준 9회차 · 팔 branch-tree 9회차 겨드랑동맥 작은가슴근 뒤위팔휘돌이동맥 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑동맥 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0468",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑의 네 벽·꼭대기·바닥 — 무엇이 어느 벽을 이루는가",
+   "tags": [
+    "relation",
+    "9회차",
+    "겨드랑",
+    "목겨드랑관",
+    "앞톱니근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑의 경계 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막·겨드랑)",
+   "confidence": "high",
+   "date": "2026-09-11",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0468.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑의 네 벽·꼭대기·바닥 — 무엇이 어느 벽을 이루는가 9회차 · 팔 relation 9회차 겨드랑 목겨드랑관 앞톱니근 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑의 경계 (Drive 해부2, a2-s09) — 2026 확정본 9회차 실습주제(팔 얕은근막·겨드랑) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "usmle-2026-0151",
