@@ -894,4 +894,223 @@ SPECS: dict[str, dict] = {
                star=True, terminal=True)]),
     ]),
 },
+
+# ── 9회차 (2026-09-14) 팔 얕은근막·겨드랑 / 기관·기관지·허파·뒤세로칸 ──────
+"s09-nerve": {
+    "title": "팔신경얼기와 가슴의 신경", "en": "brachial plexus & nerves of the thorax",
+    "subtitle": "9회차 · 다섯 단계(뿌리–줄기–갈래–다발–가지)와 뒤세로칸의 자율신경",
+    "kind": "nerve",
+    "source": "9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33",
+    "footer": [
+        "다발 이름은 겨드랑동맥 **2부**를 기준으로 붙는다 — 가쪽·안쪽·뒤.",
+        "뿌리에서 바로 나오는 가지(긴가슴·등쪽어깨)는 다발을 거치지 않는다 — 그래서 따로 다친다.",
+    ],
+    "root": _n("9회차의 신경", children=[
+        _n("팔신경얼기", "brachial plexus", "C5–T1 앞가지 · 목갈비근틈새 → 겨드랑",
+           star=True, children=[
+            _n("뿌리", "roots, C5–T1", "곧바로 나오는 가지 2개", star=True, children=[
+                _n("등쪽어깨신경", "dorsal scapular n.", "C5 · 마름근·어깨올림근",
+                   star=True, terminal=True),
+                _n("긴가슴신경", "long thoracic n.", "C5–C7 · **앞톱니근** · 다치면 날개어깨",
+                   star=True, terminal=True)]),
+            _n("줄기", "trunks", "위 C5+C6 · 중간 C7 · 아래 C8+T1", star=True, children=[
+                _n("빗장밑근신경", "n. to subclavius", "위줄기", terminal=True),
+                _n("어깨위신경", "suprascapular n.", "위줄기 · 가시위근·가시아래근 · "
+                   "어깨뼈패임을 지난다", star=True, terminal=True)]),
+            _n("갈래", "divisions", "앞갈래=굽힘근 / 뒤갈래=폄근 · 첫째갈비뼈 뒤에서",
+               star=True, terminal=True),
+            _n("가쪽다발", "lateral cord", "앞갈래(위+중간)", star=True, children=[
+                _n("가쪽가슴근신경", "lateral pectoral n.", "큰가슴근", terminal=True),
+                _n("근육피부신경", "musculocutaneous n.", "위팔 앞칸 3근 → "
+                   "가쪽아래팔피부신경", star=True, terminal=True),
+                _n("정중신경 가쪽뿌리", "lateral root of median n.", "감각 위주",
+                   star=True, terminal=True)]),
+            _n("안쪽다발", "medial cord", "아래줄기 앞갈래(C8–T1)", star=True, children=[
+                _n("안쪽가슴근신경", "medial pectoral n.", "작은가슴근+큰가슴근",
+                   terminal=True),
+                _n("안쪽위팔피부신경", "medial brachial cut. n.", terminal=True),
+                _n("안쪽아래팔피부신경", "medial antebrachial cut. n.", terminal=True),
+                _n("자신경", "ulnar n.", "손 내재근의 주인 · C8–T1", star=True,
+                   terminal=True),
+                _n("정중신경 안쪽뿌리", "medial root of median n.",
+                   "두 뿌리가 겨드랑동맥 앞에서 **M자**를 만든다", star=True,
+                   terminal=True)]),
+            _n("뒤다발", "posterior cord", "세 줄기의 뒤갈래가 모두 모인다",
+               star=True, children=[
+                _n("위·아래 어깨밑신경", "upper & lower subscapular nn.",
+                   "어깨밑근 · 큰원근", terminal=True),
+                _n("가슴등신경", "thoracodorsal n.", "**넓은등근** · 겨드랑 뒤벽 수술 주의",
+                   star=True, terminal=True),
+                _n("겨드랑신경", "axillary n.", "위팔뼈 **외과목**을 감는다 · 어깨세모근 · "
+                   "어깨탈구·외과목골절에 취약", star=True, terminal=True),
+                _n("노신경", "radial n.", "위팔뼈 **노신경고랑** · 모든 폄근",
+                   star=True, terminal=True)]),
+        ]),
+        _n("뒤세로칸의 신경", "nerves of the posterior mediastinum", star=True, children=[
+            _n("미주신경", "vagus n. (X)", "허파뿌리 **뒤**를 지나 식도로", star=True,
+               children=[
+                _n("식도신경얼기", "esophageal plexus", "앞·뒤미주줄기로 다시 모인다 · "
+                   "앞=왼미주, 뒤=오른미주", star=True, terminal=True),
+                _n("왼되돌이후두신경", "left recurrent laryngeal n.",
+                   "**대동맥활**(동맥관인대)을 감아 올라간다", star=True, terminal=True),
+                _n("오른되돌이후두신경", "right recurrent laryngeal n.",
+                   "오른**빗장밑동맥**을 감는다 — 가슴으로 내려오지 않는다", star=True,
+                   terminal=True)]),
+            _n("교감신경줄기", "sympathetic trunk", "갈비뼈머리 앞 · 척추뼈몸통 가쪽",
+               star=True, children=[
+                _n("백색교통가지", "white ramus communicans", "T1–L2만 · 절전(말이집)",
+                   star=True, terminal=True),
+                _n("회색교통가지", "grey ramus communicans", "모든 높이 · 절후(민말이집)",
+                   star=True, terminal=True),
+                _n("큰내장신경", "greater splanchnic n.", "T5–T9 → **복강신경절**",
+                   star=True, terminal=True),
+                _n("작은내장신경", "lesser splanchnic n.", "T10–T11 → 대동맥콩팥신경절",
+                   terminal=True),
+                _n("가장작은내장신경", "least splanchnic n.", "T12 → 콩팥신경얼기",
+                   terminal=True),
+                _n("별신경절", "stellate ganglion", "아래목신경절+첫째가슴신경절 · "
+                   "손상 시 호르너증후군", star=True, terminal=True)]),
+        ]),
+    ]),
+},
+
+"s09-vessel": {
+    "title": "겨드랑동맥과 홀정맥계통", "en": "axillary artery & azygos system",
+    "subtitle": "9회차 · 근육이 동맥을 셋으로 나누고, 홀정맥이 가슴의 피를 되받는다",
+    "kind": "mixed", "legend_kinds": ["artery", "vein"],
+    "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum",
+    "footer": [
+        "겨드랑동맥의 부(part) 번호 = 작은가슴근 기준 **안쪽 1 · 뒤 2 · 가쪽 3** 이고 "
+        "가지 수도 1–2–3개다.",
+        "홀정맥은 위대정맥으로, 가슴림프관은 **왼정맥각**으로 — 액체 둘의 종착이 다르다.",
+    ],
+    "root": _n("9회차의 혈관", children=[
+        _n("겨드랑동맥", "axillary a.", "첫째갈비뼈 가쪽모서리 ~ 큰원근 아래모서리",
+           kind="artery", star=True, children=[
+            _n("1부 (가지 1)", "medial to pec. minor", kind="artery", star=True, children=[
+                _n("위가슴동맥", "superior thoracic a.", "1–2번 갈비사이", kind="artery",
+                   terminal=True)]),
+            _n("2부 (가지 2)", "posterior to pec. minor", kind="artery", star=True,
+               children=[
+                _n("가슴봉우리동맥", "thoracoacromial a.", "네 가지: 봉우리·빗장·"
+                   "어깨세모·가슴 — **ABCD**", kind="artery", star=True, terminal=True),
+                _n("가쪽가슴동맥", "lateral thoracic a.", "앞톱니근·유방 가쪽",
+                   kind="artery", star=True, terminal=True)]),
+            _n("3부 (가지 3)", "lateral to pec. minor", kind="artery", star=True, children=[
+                _n("어깨밑동맥", "subscapular a.", "겨드랑동맥의 **가장 굵은** 가지",
+                   kind="artery", star=True, children=[
+                    _n("가슴등동맥", "thoracodorsal a.", "넓은등근", kind="artery",
+                       terminal=True),
+                    _n("어깨휘돌이동맥", "circumflex scapular a.",
+                       "세모공간을 지나 어깨뼈 뒤 문합에 낀다", kind="artery", star=True,
+                       terminal=True)]),
+                _n("뒤위팔휘돌이동맥", "post. circumflex humeral a.",
+                   "겨드랑신경과 함께 **네모공간**을 지난다", kind="artery", star=True,
+                   terminal=True),
+                _n("앞위팔휘돌이동맥", "ant. circumflex humeral a.",
+                   "위팔뼈 외과목 앞 · 위팔두갈래근 긴갈래에 가지", kind="artery",
+                   terminal=True)]),
+            _n("→ 위팔동맥", "brachial a.", "큰원근 아래모서리에서 이름이 바뀐다",
+               kind="artery", star=True, terminal=True)]),
+        _n("허파순환·기관지동맥", "pulmonary & bronchial vessels", star=True, children=[
+            _n("허파동맥줄기", "pulmonary trunk", "**정맥혈**을 허파로", kind="artery",
+               star=True, terminal=True),
+            _n("허파정맥 4개", "pulmonary vv.", "**동맥혈**을 왼심방으로 · 구역 사이를 달린다",
+               kind="vein", star=True, terminal=True),
+            _n("기관지동맥", "bronchial aa.", "오른 1개(대개 3번 뒤갈비사이동맥에서) · "
+               "왼 2개(가슴대동맥에서) — 허파조직 자체를 먹인다", kind="artery", star=True,
+               terminal=True),
+            _n("기관지정맥", "bronchial vv.", "오른→홀정맥 · 왼→반홀정맥", kind="vein",
+               terminal=True)]),
+        _n("홀정맥계통", "azygos system", "가슴벽의 피를 위대정맥으로 되돌린다",
+           kind="vein", star=True, children=[
+            _n("홀정맥", "azygos v.", "오른허리올림정맥 + 오른갈비밑정맥 → 오른쪽을 올라 "
+               "**T4에서 활을 그려** 위대정맥으로", kind="vein", star=True, terminal=True),
+            _n("반홀정맥", "hemiazygos v.", "왼쪽 아래(T9–T11) → **T9에서 건너가** 홀정맥으로",
+               kind="vein", star=True, terminal=True),
+            _n("덧반홀정맥", "accessory hemiazygos v.", "왼쪽 위(T5–T8) → T8에서 건너간다",
+               kind="vein", star=True, terminal=True),
+            _n("대정맥 우회로", "cavocaval anastomosis", "아래대정맥이 막히면 이 길이 커진다",
+               kind="vein", star=True, terminal=True)]),
+        _n("가슴림프관", "thoracic duct", "가슴우리 오른쪽에서 시작해 T5에서 **왼쪽으로** 건넌다",
+           kind="vein", star=True, children=[
+            _n("왼정맥각", "left venous angle", "왼속목정맥 + 왼빗장밑정맥이 만나는 자리 — "
+               "종착", kind="vein", star=True, terminal=True),
+            _n("오른림프관", "right lymphatic duct", "오른쪽 위반신만 · 오른정맥각으로",
+               kind="vein", terminal=True)]),
+    ]),
+},
+
+"s09-bundle": {
+    "title": "함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸",
+    "en": "neurovascular bundles of the axilla & mediastinum",
+    "subtitle": "9회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리",
+    "kind": "mixed", "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸",
+    "footer": [
+        "겨드랑에서 **정맥이 가장 안쪽·앞**이다 — 중심정맥길이 여기로 난다.",
+        "허파뿌리 앞→뒤는 좌우 공통 **정–동–기**, 위→아래만 좌우가 다르다.",
+    ],
+    "root": _n("세 개의 자리", children=[
+        _n("겨드랑", "axilla", "네 벽 · 꼭대기 · 바닥으로 둘러싸인 피라미드", star=True,
+           children=[
+            _n("네 벽", "walls", star=True, children=[
+                _n("앞벽", "ant. — 큰가슴근·작은가슴근", star=True, terminal=True),
+                _n("뒤벽", "post. — 어깨밑근·넓은등근·큰원근", star=True, terminal=True),
+                _n("안쪽벽", "medial — 가슴우리 1–4번 + 앞톱니근", star=True,
+                   terminal=True),
+                _n("가쪽벽", "lateral — 위팔뼈 결절사이고랑", terminal=True)]),
+            _n("꼭대기 = 목겨드랑관", "cervicoaxillary canal",
+               "첫째갈비뼈 · 빗장뼈 · 어깨뼈위모서리", star=True, terminal=True),
+            _n("내용물 안쪽→가쪽", "contents", star=True, children=[
+                _n("① 겨드랑정맥", "axillary v.", "가장 **안쪽·앞** · 중심정맥삽입",
+                   kind="vein", star=True, terminal=True),
+                _n("② 겨드랑동맥", "axillary a.", "정맥의 가쪽 · 겨드랑집 안", kind="artery",
+                   star=True, terminal=True),
+                _n("③ 팔신경얼기 다발", "cords", "동맥 **2부**를 둘러싼다 — 그래서 이름이 "
+                   "가쪽·안쪽·뒤", kind="nerve", star=True, terminal=True),
+                _n("④ 겨드랑림프절 5군", "axillary lymph nodes",
+                   "가슴근·어깨밑·위팔·중심·꼭대기 — 유방암 병기의 자리", kind="vein",
+                   star=True, terminal=True)]),
+            _n("겨드랑집", "axillary sheath", "목의 척추앞근막이 늘어난 것 — "
+               "동맥과 얼기를 함께 싼다(정맥은 대개 밖)", star=True, terminal=True)]),
+        _n("허파뿌리", "root of the lung", "가슴막이 감싸 허파인대로 늘어진다", star=True,
+           children=[
+            _n("앞→뒤 (좌우 공통)", "ant. → post.", star=True, children=[
+                _n("① 허파정맥", "pulmonary vv.", "가장 앞·아래", kind="vein", star=True,
+                   terminal=True),
+                _n("② 허파동맥", "pulmonary a.", kind="artery", terminal=True),
+                _n("③ 기관지", "main bronchus", "가장 뒤", star=True, terminal=True)]),
+            _n("위→아래 오른쪽", "right", "**기관지가 가장 위**(eparterial bronchus)",
+               star=True, terminal=True),
+            _n("위→아래 왼쪽", "left", "**동맥이 가장 위** — 대동맥활을 넘어야 하므로",
+               star=True, terminal=True),
+            _n("가로막신경", "phrenic n.", "뿌리 **앞**", kind="nerve", star=True,
+               terminal=True),
+            _n("미주신경", "vagus n.", "뿌리 **뒤**", kind="nerve", star=True,
+               terminal=True)]),
+        _n("뒤세로칸", "posterior mediastinum", "위 T4/T5 · 아래 가로막 · 앞 심장막 · "
+           "뒤 T5–T12", star=True, children=[
+            _n("앞→뒤 층 순서", "ant. → post.", star=True, children=[
+                _n("① 식도 + 식도신경얼기", "esophagus", "심장막 바로 뒤", kind="nerve",
+                   star=True, terminal=True),
+                _n("② 가슴대동맥", "descending thoracic aorta", "식도의 왼쪽 → 아래로 "
+                   "가면서 **뒤**로", kind="artery", star=True, terminal=True),
+                _n("③ 가슴림프관", "thoracic duct", "식도와 대동맥 **사이·뒤**",
+                   kind="vein", star=True, terminal=True),
+                _n("④ 홀정맥", "azygos v.", "척추 오른쪽", kind="vein", star=True,
+                   terminal=True),
+                _n("⑤ 교감신경줄기", "sympathetic trunk", "가장 가쪽 · 갈비뼈머리 앞",
+                   kind="nerve", star=True, terminal=True)]),
+            _n("가로막 구멍 3개", "diaphragmatic apertures", star=True, children=[
+                _n("대정맥구멍 T8", "caval opening", "아래대정맥 + 오른가로막신경",
+                   kind="vein", star=True, terminal=True),
+                _n("식도구멍 T10", "esophageal hiatus", "식도 + **앞·뒤미주줄기**",
+                   kind="nerve", star=True, terminal=True),
+                _n("대동맥구멍 T12", "aortic hiatus", "대동맥 + 가슴림프관 + 홀정맥 — "
+                   "근육이 아니라 **인대 뒤**라 눌리지 않는다", kind="artery", star=True,
+                   terminal=True)]),
+        ]),
+    ]),
+},
 }

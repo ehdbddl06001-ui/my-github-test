@@ -1,27 +1,27 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-10",
+ "generated": "2026-09-11",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2266,
+  "total": 2289,
   "byType": {
+   "anatomy": 624,
    "kmle": 939,
-   "anatomy": 603,
    "usmle": 138,
-   "paper": 569,
+   "paper": 571,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 603,
-   "Cardiology": 179,
+   "Anatomy": 624,
+   "Cardiology": 180,
    "Nephrology": 150,
    "Infectious Disease": 127,
    "Pediatrics": 106,
    "Hematology-Oncology": 86,
-   "Pathology": 80,
+   "Pathology": 81,
    "Obstetrics & Gynecology": 72,
    "Neurology": 70,
    "Psychiatry": 70,
@@ -53,13 +53,212 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1466,
-   "medium": 751,
+   "high": 1487,
+   "medium": 753,
    "low": 49
   },
-  "tagCount": 3147
+  "tagCount": 3164
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-12",
+   "type": "anatomy",
+   "unit": "팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-12",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/daily/2026-09-12.md",
+   "snippet": "오늘의 학습 (2026 09 12 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 2일 · Tagging 2까지 37일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-12 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 12 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 2일 · Tagging 2까지 37일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0484",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "9회차 서브노트 — 팔 얕은근막·겨드랑 / 기관·기관지·허파·뒤세로칸",
+   "tags": [
+    "서브노트",
+    "9회차",
+    "겨드랑",
+    "팔신경얼기",
+    "허파",
+    "뒤세로칸",
+    "표",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/notes/anatomy-2026-0484-s09-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 겨드랑은 작은가슴근이 좌표계를 준다 — 동맥의 부, 림프절의 level, 다발의 이름이 전부 이 근육 기준이다. 2. 가슴의 기준선은 T4/T5 복장각 평면과 기관갈림 이다 — 위세로칸과 뒤세로칸이 여기서 갈린다. 3. 좌우 비대칭은 대부분 두 구조 탓 이다 — 왼쪽의 대동맥활 과 오른쪽의 간 (높은 가로막). 1. 겨드랑 Axilla !fig docs/assets/anatomy/tree ",
+   "text": "Anatomy 9회차 서브노트 — 팔 얕은근막·겨드랑 / 기관·기관지·허파·뒤세로칸 9회차 · 팔·가슴 서브노트 9회차 겨드랑 팔신경얼기 허파 뒤세로칸 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 겨드랑은 작은가슴근이 좌표계를 준다 — 동맥의 부, 림프절의 level, 다발의 이름이 전부 이 근육 기준이다. 2. 가슴의 기준선은 T4/T5 복장각 평면과 기관갈림 이다 — 위세로칸과 뒤세로칸이 여기서 갈린다. 3. 좌우 비대칭은 대부분 두 구조 탓 이다 — 왼쪽의 대동맥활 과 오른쪽의 간 (높은 가로막). 1. 겨드랑 Axilla !fig docs/assets/anatomy/tree s09 bundle labeled.svg 겨드랑·허파뿌리·뒤세로칸 — 배열 순서가 그대로 태깅 문제다 1) 네 벽과 두 입구 부분 이루는 것 앞벽 ==큰가슴근 · 작은가슴근== (+ 빗장가슴근막) 뒤벽 ==어깨밑근== · 넓은등근 · 큰원근 안쪽벽 가슴우리 1–4번 갈비뼈 가쪽면 + ==앞톱니근== 가쪽벽 위팔뼈 결절사이고랑 (가장 좁다) 꼭대기 ==목겨드랑관== (cervicoaxillary canal) — 첫째갈비뼈 · 빗장뼈 · 어깨뼈위모서리 바닥 겨드랑근막 + 피부 (겨드랑오목) 2) 내용물 — 안쪽에서 가쪽으로 순서 구조 메모 ① ==겨드랑정맥== axillary v. 가장 안쪽·앞 — 중심정맥삽입이 여기로 ② 겨드랑동맥 axillary a. 정맥의 가쪽 · 겨드랑집 안 ③ 팔신경얼기 다발 동맥 ==2부==를 감싼다 → 이름이 가쪽·안쪽·뒤 ④ ==겨드랑림프절 5군== 가슴근 · 어깨밑 · 위팔 · 중심 · 꼭대기 ⑤ 갈비사이위팔신경 (T2) 겨드랑을 가로지른다 — 수술 후 위팔 안쪽 저림 = 겨드랑집(axillary sheath)은 목의 척추앞근막 이 늘어난 것 → 동맥과 얼기를 함께 싼다(정맥은 대개 밖). [!임상] 겨드랑림프절 level :: 임상은 작은가슴근 기준으로 부른다 — level I(근육 가쪽) · II(근육 뒤) · III(근육 안쪽). 겨드랑동맥의 3부·2부·1부와 같은 칸 나누기 이고 번호 방향만 반대다. 유방 림프의 약 ==75%가 가슴근(앞)림프절==로 먼저 간다. [!주의] 겨드랑 박리에서 살려야 할 신경 :: 안쪽벽 표면의 ==긴가슴신경==(다치면 날개어깨 )과 뒤벽의 ==가슴등신경==(넓은등근 피판을 못 쓰게 된다). 벽을 긁으면 그 벽의 신경이 다친다. 2. 겨드랑동맥 Axillary artery !fig docs/assets/anatomy/tree s09 vessel labeled.svg 근육이 동맥을 셋으로 나누고, 홀정맥이 가슴의 피를 되받는다 범위: 첫째갈비뼈 가쪽모서리 ~ ==큰원근 아래모서리==(여기서 위팔동맥이 된다). 부 작은가슴근 기준 가지 태깅 포인트 1부 안쪽 ==위가슴동맥== 가지 1개 2부 뒤 ==가슴봉우리동맥==(ABCD) · ==가쪽가슴동맥== 가지 2개 · 가쪽가슴동맥은 앞톱니근·유방 3부 가쪽 ==어깨밑동맥==(가장 굵다) · 뒤위팔휘돌이 · 앞위팔휘돌이 가지 3개 = 어깨밑동맥 → 가슴등동맥(넓은등근) + ==어깨휘돌이동맥==(세모공간을 지나 어깨뼈 뒤 문합으로). [!기출] 두 공간을 지나는 것 :: ==네모공간==(quadrangular space) — 겨드랑신경 + 뒤위팔휘돌이동맥 . ==세모공간==(triangular space) — 어깨휘돌이동맥. 어깨탈구·위팔뼈 외과목 골절에서 이 다발이 함께 다쳐 어깨세모근 마비 + 어깨 가쪽 감각소실이 온다. 3. 팔신경얼기 Brachial plexus !fig docs/assets/anatomy/tree s09 nerve labeled.svg 다섯 단계와 뒤세로칸의 자율신경 1) 다섯 단계 = ==뿌리(C5–T1)== → 줄기 → 갈래 → 다발 → 가지 단계 구성 여기서 나오는 가지 뿌리 C5 C6 C7 C8 T1 앞가지 ==긴가슴신경==(C5–C7, 앞톱니근) · 등쪽어깨신경(C5) 줄기 위 ==C5+C6== · 중간 ==C7== · 아래 ==C8+T1== ==어깨위신경==(위줄기) · 빗장밑근신경 갈래 앞갈래=굽힘근 / 뒤갈래=폄근 첫째갈비뼈 뒤 — 실습에서 잘 안 보인다 다발 가쪽 · 안쪽 · 뒤 이름은 ==겨드랑동맥 2부에 대한 위치== 가지 종말가지 5개 아래 표 2) 다발별 종말가지 다발 종말가지 뿌리 죽으면 가쪽 ==근육피부신경== C5–C7 위팔 앞칸 마비 · 아래팔 가쪽 감각소실 가쪽+안쪽 ==정중신경==(두 뿌리가 동맥 앞에서 M자 ) C6–T1 원숭이손 · 엄지 맞섬 소실 안쪽 ==자신경== C8–T1 갈퀴손 · 손 내재근 위축 뒤 ==노신경== C5–T1 ==손목처짐(wrist drop)== 뒤 ==겨드랑신경== C5–C6 어깨세모근 마비 · 어깨 가쪽 감각소실 [!기출] 얼기 손상 3형 :: ==위줄기(C5–C6) = Erb–Duchenne==, 어깨가 벌어지는 힘 → 팔이 모음·안쪽돌림·폄·엎침된 웨이터 팁 자세 . ==아래줄기(C8–T1) = Klumpke==, 팔을 위로 잡아당기는 힘 → 손 내재근 마비로 갈퀴손 , T1이 섞여 호르너증후군 동반. ==긴가슴신경 단독 = 날개어깨==. 4. 팔 얕은근막 Superficial fascia of the upper limb 구조 주행 · 종착 ==노쪽피부정맥== cephalic v. 손등정맥그물 가쪽 → 팔 가쪽 → ==어깨세모가슴근고랑== → 빗장가슴근막을 뚫고 겨드랑정맥 ==자쪽피부정맥== basilic v. 손등정맥그물 안쪽 → 팔 안쪽 → 위팔 중간에서 ==깊은근막을 뚫고== 위팔정맥과 합쳐 겨드랑정맥 ==팔오금중간정맥== median cubital v. 둘을 팔오금에서 잇는다 — 정맥천자 1순위 피부신경 어디서 나오나 가쪽아래팔피부신경 ==근육피부신경==의 연속 안쪽위팔·안쪽아래팔피부신경 ==안쪽다발== 뒤위팔·뒤아래팔피부신경 ==노신경== 위팔 가쪽 위쪽 ==겨드랑신경== 갈비사이위팔신경 ==T2 갈비사이신경== — 겨드랑을 가로지른다 [!TIP] 왜 팔오금중간정맥인가 :: 굵고, 피부밑에서 잘 잡히며, 밑에 두갈래근널힘줄 이 깔려 있어 그 아래의 위팔동맥·정중신경을 막아 준다. 널힘줄 안쪽으로 더 깊이 찌르면 그 둘이 바로 나온다. 5. 기관과 기관지 Trachea & bronchi 항목 내용 갈림 지점 ==기관갈림==(tracheal bifurcation), 복장각 T4/T5 높이 안쪽 능선 ==기관용골==(carina) — 기침반사가 가장 예민 오른주기관지 ==짧고 굵고 수직에 가깝다(약 25°)== → 이물질이 이쪽으로 왼주기관지 길고 가늘고 눕는다(약 45°) — 대동맥활 아래를 지나야 해서 = 기관 → ==일차(주)기관지==(허파 1개) → ==이차(엽)기관지==(엽 1개) → ==삼차(구역)기관지==(구역 1개) 구역 수 배치 오른허파 ==10개== 위 3 · 중간 2 · 아래 5 왼허파 ==8–10개==(보통 8–9) 첨·뒤구역이 합쳐지고 혀구역이 중간엽을 대신 [!임상] 구역이 왜 단위인가 :: 구역기관지와 구역동맥은 ==구역 한가운데==를, 허파정맥은 ==구역과 구역 사이==를 달린다. 그래서 구역절제술에서 기관지·동맥은 중심에서 결찰하고 구역사이정맥을 절제 경계의 표지 로 삼는다. 누운 자세의 흡인은 오른아래엽 위구역 에 고인다. 6. 허파와 허파뿌리 Lung & its root 1) 좌우를 가르는 것 단서 오른쪽 왼쪽 엽 ==3엽== ==2엽== 틈새 빗틈새 + ==가로틈새== 빗틈새만 모양 — ==심장패임 · 왼허파혀== 크기 더 짧다 (간 때문에) · 더 넓다 더 길다 세로칸면 고랑 ==위대정맥 · 홀정맥== ==대동맥활 · 내림대동맥== 2) 허파뿌리 배열 방향 순서 앞→뒤(좌우 공통) ==허파정맥 → 허파동맥 → 기관지== 위→아래 오른쪽 ==기관지==(동맥위기관지) → 동맥 → 정맥 위→아래 왼쪽 ==동맥== → 기관지 → 정맥 뿌리 앞 ==가로막신경== 뿌리 뒤 ==미주신경== = 뿌리 아래로 늘어진 가슴막 주름 = ==허파인대==(pulmonary ligament) — 뿌리가 움직일 여유를 준다. [!암기] 위아래 차이의 원인은 하나 :: 대동맥활 이다. 왼허파동맥은 활을 넘어야 해서 가장 위로 올라가고, 오른쪽은 넘을 것이 없는 데다 오른위엽기관지가 유난히 일찍 갈라져 동맥보다 위에 놓인다. 7. 가슴막 Pleura 구분 신경 통증 벽쪽가슴막 ==갈비사이신경 · 가로막신경== 날카롭고 자리를 정확히 짚는다 · 가로막 부분은 ==어깨 연관통==(C3–C5) 내장쪽가슴막 내장구심(자율)섬유만 ==통증이 없다== — 폐암이 늦게 발견되는 이유 선 허파 아래경계 가슴막 아래경계 빗장중간선 ==6== ==8== 중간겨드랑선 ==8== ==10== 척주옆선 ==10== ==12== = 두 갈비뼈의 차이 = ==갈비가로막오목== → 선 자세에서 삼출액이 가장 먼저 고이는 자리 = 천자 자리 . [!주의] 가슴막꼭대기 :: 첫째갈비뼈보다 ==3–4 cm 위==로 솟아 목의 뿌리까지 올라간다. 빗장위 중심정맥삽입·목 외상에서 기흉이 나는 이유다. 좌우 가슴막안은 완전히 분리 돼 있어 한쪽 기흉이 반대쪽으로 번지지 않는다. 8. 뒤세로칸 Posterior mediastinum 경계: 위 ==T4/T5 복장각 평면== · 아래 가로막 · 앞 심장막 뒤면 · 뒤 T5–T12 척추뼈몸통. 1) 앞에서 뒤로 순서 구조 메모 ① ==식도== + 식도신경얼기 심장막 바로 뒤 ② ==가슴대동맥== 식도의 왼쪽 → 아래로 가며 뒤로 ③ ==가슴림프관== 식도와 대동맥 사이·뒤 ④ ==홀정맥== 척추 오른쪽 ⑤ ==교감신경줄기== 가장 가쪽 · 갈비뼈머리 앞 2) 홀정맥계통 정맥 주행 ==홀정맥== 오른쪽을 올라가 T4에서 활을 그려 위대정맥으로 ==반홀정맥== 왼쪽 아래(T9–T11) → T9에서 건너가 홀정맥으로 ==덧반홀정맥== 왼쪽 위(T5–T8) → T8에서 건너간다 = 가슴림프관은 T5에서 ==왼쪽으로 건너== 올라가 왼정맥각 (왼속목정맥 + 왼빗장밑정맥)으로 들어간다. 3) 식도와 가로막 협착부(위→아래) 누르는 것 인두식도이음부 (C6) ==반지인두근== — 가장 좁다 T4 대동맥활 T5–T6 ==왼주기관지== T10 ==가로막 식도구멍== 구멍 높이 지나는 것 대정맥구멍 ==T8== 아래대정맥 + 오른가로막신경 식도구멍 ==T10== 식도 + ==앞·뒤미주줄기== · 가로막 근육 에 뚫려 괄약근 역할 대동맥구멍 ==T12== 대동맥 + 가슴림프관 + 홀정맥 · 인대 뒤 라 눌리지 않는다 [!기출] 앞뒤가 뒤바뀐 미주신경 :: 발생 중 위가 돌아가면서 ==왼미주신경이 앞미주줄기==, ==오른미주신경이 뒤미주줄기==가 된다. 되돌이후두신경도 좌우가 갈린다 — 오른쪽은 ==빗장밑동맥==, 왼쪽은 ==대동맥활==(동맥관인대)을 감아 올라가므로 왼쪽만 가슴으로 내려온다. 4) 교감신경줄기와 내장신경 구조 내용 ==백색교통가지== T1–L2만 · 절전(말이집) 섬유를 신경절로 ==회색교통가지== 모든 높이 · 절후(민말이집) 섬유를 척수신경으로 ==큰내장신경== T5–T9 → 복강신경절 작은내장신경 T10–T11 → 대동맥콩팥신경절 가장작은내장신경 T12 → 콩팥신경얼기 ==별신경절== 아래목신경절 + 첫째가슴신경절 · 다치면 호르너증후군 5) 갈비사이공간 = 갈비사이고랑 안, 위에서 아래로 ==정맥 → 동맥 → 신경(VAN)== 동맥 기원 뒤갈비사이 1·2번 ==최상갈비사이동맥==(빗장밑동맥 → 갈비목동맥) 뒤갈비사이 3–11 + 갈비밑 ==가슴대동맥에서 직접== 앞갈비사이 1–6 ==속가슴동맥== 앞갈비사이 7–9 근육가로막동맥 [!임상] 바늘은 아래 갈비뼈의 위모서리로 :: 다발이 위쪽 갈비뼈 아래모서리 에 매달려 있고 신경이 맨 아래라 가장 노출된다. 그래서 신경차단은 아래모서리를, 천자·흉관은 ==아래 갈비뼈 위모서리==를 노린다. 대동맥축착에서 뒤갈비사이동맥이 굵어지면 X선의 ==갈비뼈 침식(rib notching)==이 된다. 9. 근육표 — 겨드랑의 벽 근육 이는곳 닿는곳 신경 작용 앞톱니근 1–8(9)번 갈비뼈 가쪽면 어깨뼈 안쪽모서리 앞면 ==긴가슴신경 C5–C7== 어깨뼈 ==내밀기 + 위쪽돌림== · 가슴우리에 밀착 작은가슴근 3–5번 갈비뼈 어깨뼈 ==부리돌기== 안쪽가슴근신경 C8–T1 어깨뼈 내림·앞기울임 큰가슴근 빗장뼈 안쪽 · 복장뼈 · 갈비연골 위팔뼈 큰결절능선 가쪽·안쪽가슴근신경 위팔 모음·안쪽돌림·굽힘 어깨밑근 ==어깨뼈밑오목== 위팔뼈 ==작은결절== 위·아래어깨밑신경 C5–C6 위팔 ==안쪽돌림== · 돌림근띠 중 유일한 앞쪽 큰원근 어깨뼈 아래각 위팔뼈 작은결절능선 아래어깨밑신경 위팔 모음·안쪽돌림·폄 넓은등근 T7 이하 가시돌기 · 등허리널힘줄 · 엉덩뼈능선 위팔뼈 ==결절사이고랑 바닥== ==가슴등신경 C6–C8== 위팔 폄·모음·안쪽돌림(목발·수영) 빗장밑근 첫째갈비뼈 빗장뼈 아래면 빗장밑근신경 빗장뼈를 내리고 고정 [!임상] 왜 90도에서 걸리나 :: 벌림 30도까지 가시위근, 30–90도는 어깨세모근이 만들지만 ==90도를 넘기려면 어깨뼈가 위쪽돌림== 을 해야 한다(어깨위팔리듬 2:1). 그 짝힘을 앞톱니근 아래섬유 + 등세모근 위·아래섬유 가 만든다. 긴가슴신경이 죽으면 한 축이 사라져 팔이 90도에서 멈추고 날개어깨가 생긴다. 10. 자가 점검 10문항 1. 겨드랑의 네 벽을 이루는 구조를 각각 말하라. 꼭대기의 이름과 그 경계 뼈 셋은? 2. 겨드랑동맥을 세 부분으로 나누는 근육과, 각 부의 가지를 순서대로. 3. 팔신경얼기의 다섯 단계와, 세 다발의 이름이 무엇을 기준으로 붙었는지. 4. 뿌리에서 곧바로 나와 앞톱니근으로 가는 신경과, 그것이 죽었을 때의 징후는? 5. 노쪽피부정맥과 자쪽피부정맥의 종착이 어떻게 다른가? 팔오금중간정맥이 안전한 이유는? 6. 오른주기관지와 왼주기관지를 길이·굵기·기울기로 비교하고, 흡인이 어디로 가는지. 7. 허파뿌리의 앞→뒤 순서와, 위→아래 순서가 좌우로 갈리는 이유. 8. 허파와 가슴막의 아래경계를 세 선에서 각각. 그 차이로 생기는 공간의 이름은? 9. 뒤세로칸 구조를 앞에서 뒤로. 홀정맥·반홀정맥·덧반홀정맥이 어디서 합쳐지는가? 10. 가로막의 세 구멍과 높이, 각각을 지나는 구조. 대동맥구멍만 눌리지 않는 이유는?"
+  },
+  {
+   "id": "anatomy-2026-0483",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴막과 가슴막안 — 경계·오목·기흉",
+   "tags": [
+    "distinction",
+    "9회차",
+    "가슴막",
+    "갈비가로막오목",
+    "기흉",
+    "연관통",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §허파관찰·식도 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0483.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴막과 가슴막안 — 경계·오목·기흉 9회차 · 가슴 distinction 9회차 가슴막 갈비가로막오목 기흉 연관통 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파관찰·식도 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0482",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑 벽을 이루는 근육 — 이는곳·닿는곳·신경·작용",
+   "tags": [
+    "relation",
+    "9회차",
+    "앞톱니근",
+    "작은가슴근",
+    "어깨밑근",
+    "날개어깨",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑근육·겨드랑의 경계 (Drive 해부2, a2-s09) + e-Anatomy Upper limb — Axilla 00:00~30:33",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0482.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑 벽을 이루는 근육 — 이는곳·닿는곳·신경·작용 9회차 · 팔 relation 9회차 앞톱니근 작은가슴근 어깨밑근 날개어깨 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑근육·겨드랑의 경계 (Drive 해부2, a2-s09) + e-Anatomy Upper limb — Axilla 00:00~30:33 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0481",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "갈비사이공간 — VAN 배열과 뒤갈비사이동맥의 기원",
+   "tags": [
+    "layer-order",
+    "9회차",
+    "갈비사이",
+    "VAN",
+    "가슴막천자",
+    "갈비뼈침식",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §갈비사이신경·내림대동맥 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Posterior mediastinum 00:00~14:36",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0481.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 갈비사이공간 — VAN 배열과 뒤갈비사이동맥의 기원 9회차 · 가슴 layer-order 9회차 갈비사이 VAN 가슴막천자 갈비뼈침식 예습시험 태깅 9차시(0911) 김홍태pf.pdf §갈비사이신경·내림대동맥 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Posterior mediastinum 00:00~14:36 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0480",
+   "type": "anatomy",
+   "unit": "9회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑림프절 5군과 유방 림프배출",
+   "tags": [
+    "clinical-application",
+    "9회차",
+    "겨드랑림프절",
+    "유방암",
+    "긴가슴신경",
+    "날개어깨",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §겨드랑의 경계·겨드랑근육 (Drive 해부2, a2-s09) + e-Anatomy Upper limb — Axilla 00:00~30:33",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0480.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 겨드랑림프절 5군과 유방 림프배출 9회차 · 팔 clinical-application 9회차 겨드랑림프절 유방암 긴가슴신경 날개어깨 예습시험 태깅 9차시(0911) 김홍태pf.pdf §겨드랑의 경계·겨드랑근육 (Drive 해부2, a2-s09) + e-Anatomy Upper limb — Axilla 00:00~30:33 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0479",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "식도 — 협착부·가로막 통과·미주신경줄기",
+   "tags": [
+    "course-tracing",
+    "9회차",
+    "식도",
+    "식도구멍",
+    "미주신경줄기",
+    "열공탈장",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §식도 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Posterior mediastinum 00:00~14:36",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0479.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 식도 — 협착부·가로막 통과·미주신경줄기 9회차 · 가슴 course-tracing 9회차 식도 식도구멍 미주신경줄기 열공탈장 예습시험 태깅 9차시(0911) 김홍태pf.pdf §식도 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Posterior mediastinum 00:00~14:36 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0478",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "허파뿌리 — 앞뒤·상하 배열과 좌우 차이",
+   "tags": [
+    "relation",
+    "9회차",
+    "허파뿌리",
+    "동맥위기관지",
+    "가로막신경",
+    "미주신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §허파관찰·허파해부 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0478.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허파뿌리 — 앞뒤·상하 배열과 좌우 차이 9회차 · 가슴 relation 9회차 허파뿌리 동맥위기관지 가로막신경 미주신경 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파관찰·허파해부 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0477",
+   "type": "anatomy",
+   "unit": "9회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "허파 관찰 — 좌우 허파의 엽·틈새와 세로칸면 자국",
+   "tags": [
+    "distinction",
+    "9회차",
+    "허파",
+    "왼허파혀",
+    "세로칸면",
+    "허파인대",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9차시(0911) 김홍태pf.pdf §허파관찰 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14",
+   "confidence": "high",
+   "date": "2026-09-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0477.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허파 관찰 — 좌우 허파의 엽·틈새와 세로칸면 자국 9회차 · 가슴 distinction 9회차 허파 왼허파혀 세로칸면 허파인대 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파관찰 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "kmle-2026-0969",
    "type": "kmle",
@@ -1020,6 +1219,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0146.md",
    "snippet": "A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood tran",
    "text": "Pathology Bronze Skin, Arthropathy and Diabetes in a Middle-Aged Man — The Missing Hepatic Hormone That Lets Iron Pour In hemochromatosis hepcidin ferroportin HFE iron-overload transferrin-saturation cirrhosis USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Liver; AASLD 2011 Practice Guideline on Hemochromatosis; Ganz T. Hepcidin and iron regulation, Physiol Rev 2013) A 48 year old man comes to the physician because of 8 months of fatigue, decreased libido, and aching pain in the second and third metacarpophalangeal joints of both hands. He drinks two beers on weekends and has never received a blood transfusion. His father died of hepatocellular carcinoma at the age of 60 years. Examination shows diffuse bronze gray darkening of the skin, a firm liver edge palpable 4 cm below the right costal margin, and small, soft testes. His vital signs and laboratory studies are shown. Which of the following is the most likely underlying mechanism of this patient's iron accumulation? A. Ineffective erythropoiesis with increased duodenal iron uptake B. Deficient hepatocyte hepcidin secretion with persistent ferroportin activity C. Repeated red cell transfusion with macrophage iron loading D. Cytokine driven hepcidin excess with macrophage iron sequestration E. Ethanol induced upregulation of enterocyte divalent metal transporter 중년 남성의 피로·성욕 감소·2·3번째 중수지관절 관절병증 + 청동색 피부 + 간비대 + 당뇨 + 고환 위축 + 간암 가족력 — 실질 장기(간·췌장·관절·뇌하부·피부)에 철이 쌓이는 유전성 혈색소증(hereditary hemochromatosis)이다. 트랜스페린 포화도 78%·페리틴 1,850 이 이를 뒷받침한다. 기전은 HFE 변이(C282Y 동형접합)로 간세포가 hepcidin 을 충분히 만들지 못해, 십이지장 장세포·대식세포의 철 배출 통로 ferroportin 이 분해되지 않고 계속 열려 있어 식이 철 흡수와 대식세포 철 방출이 억제되지 않는 것이다. 혈색소·MCV·망상적혈구가 정상이므로 무효조혈(A)이 아니고 수혈력도 없다(C). 만성염증의 hepcidin 과잉(D)은 반대로 철을 대식세포에 가두어 트랜스페린 포화도를 낮춘다. 주말 맥주 2잔은 알코올성 철과부하(E)를 설명하기에 턱없이 적다."
+  },
+  {
+   "id": "paper-2026-0571",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Oncoimmunology",
+   "confidence": "medium",
+   "date": "2026-09-10",
+   "path": "content/papers/2026/2026-09-10_paper-2026-0571_profiling_tumor_immune_microenvironment_of_epithelial_ovaria.md",
+   "snippet": "Title Profiling tumor immune microenvironment of epithelial ovarian carcinoma Authors Dehghani Ghobadi Zeinab, Dionellis Vasilis S, Traber Clara, Moore Jonathan S, Samartzis Nicolas, Ryser Stephan, Kalaitzopoulos Dimitrios R, Liaudet Nicola",
+   "text": "Pathology scraped pubmed PubMed / Oncoimmunology Title Profiling tumor immune microenvironment of epithelial ovarian carcinoma Authors Dehghani Ghobadi Zeinab, Dionellis Vasilis S, Traber Clara, Moore Jonathan S, Samartzis Nicolas, Ryser Stephan, Kalaitzopoulos Dimitrios R, Liaudet Nicolas, et al. Journal / DOI Oncoimmunology · DOI: 10.1080/2162402X.2026.2722470 · PMID: 42721374 https://pubmed.ncbi.nlm.nih.gov/42721374/ Abstract BACKGROUND: Epithelial ovarian carcinoma (EOC) comprises five main histological subtypes: high grade serous (HGSOC), low grade serous (LGSOC), clear cell (CCOC), mucinous (MOC), and endometrioid (ENOC). Each histotype harbors specific genomic alterations and clinical outcome. Few studies systematically compared the tumor immune microenvironment across the five subtypes. METHODS: We performed 7 plex (CD45, CD8, CD68, CD163, FoxP3, CD20, and cytokeratin) sequential immunohistochemistry on a clinically annotated tissue microarray including 139 EOC representing the five subtypes and 26 borderline tumors (serous and mucinous). Digital pathology was used to quantify immune cell abundance, their spatial distribution (stroma vs tumor core), and correlation with survival. RESULTS: Immune cells were dominated by macrophages and more abundant in the stroma than tumor core across the five subtypes, consistent with immune excluded pattern. Compared to HGSOC, CCOC displayed the highest infiltration by CD45+ leukocytes and CD68+ macrophages, particularly M2 like CD163+ cells, suggesting a macrophage rich, immunosuppressive phenotype. LGSOC exhibited the highest infiltration by intraepithelial FoxP3+ regulatory T cells. Comparison of borderline tumors with invasive carcinoma (LGOSC and MOC) revealed that malignant progression is accompanied by loss of CD8+ T cells, enrichment in regulatory T cells and increase of CD163+/CD68+ ratio, consistent with immune evasion during tumorigenesis. There was a trend toward better survival in HGSOC highly infiltrated by lymphocytes, either intraepithelial (CD8+ and FoxP3+) or stromal (FoxP3+ and CD20+). CONCLUSIONS: EOC is characterized by histotype specific immune milieux defined by macrophage dominance, epithelial immune exclusion and dynamic immune remodeling during progression from borderline tumors to invasive carcinomas. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0570",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pharmacy practice",
+   "confidence": "medium",
+   "date": "2026-09-10",
+   "path": "content/papers/2026/2026-09-10_paper-2026-0570_a_case_report_of_laminated_left_ventricular_thrombus_in_acut.md",
+   "snippet": "Title A Case Report of Laminated Left Ventricular Thrombus in Acute Decompensated Heart Failure: Pharmacotherapeutic Considerations for Anticoagulation Authors Acosta Anthony, Yamanaka Travis, Tan Felicia, Elshazali Akrum, Elfessi Zane Jour",
+   "text": "Cardiology scraped pubmed PubMed / Journal of pharmacy practice Title A Case Report of Laminated Left Ventricular Thrombus in Acute Decompensated Heart Failure: Pharmacotherapeutic Considerations for Anticoagulation Authors Acosta Anthony, Yamanaka Travis, Tan Felicia, Elshazali Akrum, Elfessi Zane Journal / DOI Journal of pharmacy practice · DOI: 10.1177/08971900261483511 · PMID: 42721434 https://pubmed.ncbi.nlm.nih.gov/42721434/ Abstract Left ventricular (LV) thrombus is a known complication of severe systolic dysfunction and is associated with an increased risk of systemic embolization. Optimal pharmacotherapeutic management remains an area of clinical uncertainty, particularly when thrombus morphology suggests lower embolic potential. A 56 year old man with multiple cardiovascular risk factors presented with progressive dyspnea, anasarca, and hypoxic respiratory failure. Cardiac imaging demonstrated severe biventricular dysfunction (ejection fraction <20%) and a large, laminated, nonmobile apical LV thrombus. Concurrent findings included congestive hepatopathy with ascites and a small pulmonary embolism. Based on thrombus morphology and clinical stability, systemic anticoagulation was initiated without invasive intervention. The patient improved with aggressive diuresis, guideline directed medical therapy for heart failure, and therapeutic anticoagulation. This case highlights pharmacotherapeutic considerations in the management of laminated LV thrombus, including the role of thrombus morphology in risk stratification, anticoagulant selection, and timing of therapy initiation. Early recognition and coordinated interdisciplinary management can support safe, noninvasive treatment strategies in complex heart failure presentations. In addition, this case highlights the importance of collaborative practice and pharmacist guided anticoagulation strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-09-10",
@@ -18811,6 +19044,258 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0508",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 가슴림프관)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0508.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로.",
+   "text": "Anatomy 겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 가슴림프관) 9회차 · 팔·가슴 계보 도해 9회차 혈관 계보(동맥+정맥) 예습시험 태깅 9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0507",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 홀정맥계통)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0507.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로.",
+   "text": "Anatomy 겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 홀정맥계통) 9회차 · 팔·가슴 계보 도해 9회차 혈관 계보(동맥+정맥) 예습시험 태깅 9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0506",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 허파순환·기관지동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0506.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로.",
+   "text": "Anatomy 겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 허파순환·기관지동맥) 9회차 · 팔·가슴 계보 도해 9회차 혈관 계보(동맥+정맥) 예습시험 태깅 9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0505",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 겨드랑동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0505.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로.",
+   "text": "Anatomy 겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 겨드랑동맥) 9회차 · 팔·가슴 계보 도해 9회차 혈관 계보(동맥+정맥) 예습시험 태깅 9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0504",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0504.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로.",
+   "text": "Anatomy 겨드랑동맥과 홀정맥계통 — 계보 퀴즈판 (9회차 혈관 계보(동맥+정맥) · 종합) 9회차 · 팔·가슴 계보 도해 9회차 혈관 계보(동맥+정맥) 예습시험 태깅 9회차 실습주제 + e-Anatomy Upper limb — Axilla · Thorax — Posterior mediastinum — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0503",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 뒤세로칸의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0503.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로.",
+   "text": "Anatomy 팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 뒤세로칸의 신경) 9회차 · 팔·가슴 계보 도해 9회차 신경 계보 예습시험 태깅 9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0502",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 팔신경얼기)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0502.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로.",
+   "text": "Anatomy 팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 팔신경얼기) 9회차 · 팔·가슴 계보 도해 9회차 신경 계보 예습시험 태깅 9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0501",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0501.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로.",
+   "text": "Anatomy 팔신경얼기와 가슴의 신경 — 계보 퀴즈판 (9회차 신경 계보 · 종합) 9회차 · 팔·가슴 계보 도해 9회차 신경 계보 예습시험 태깅 9회차 실습주제(팔 얕은근막·겨드랑 / 뒤세로칸) + e-Anatomy Upper limb — Axilla 0:00~30:33 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0500",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 뒤세로칸)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0500.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 뒤세로칸) 9회차 · 팔·가슴 계보 도해 9회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0499",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 허파뿌리)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0499.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 허파뿌리) 9회차 · 팔·가슴 계보 도해 9회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0498",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 겨드랑)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0498.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 겨드랑) 9회차 · 팔·가슴 계보 도해 9회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0497",
+   "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "9회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0497.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 겨드랑·허파뿌리·뒤세로칸 — 계보 퀴즈판 (9회차 함께 지나는 것(신경혈관다발) · 종합) 9회차 · 팔·가슴 계보 도해 9회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 9회차 §겨드랑 내용물 · 허파뿌리 · 뒤세로칸 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s09 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s09 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0320",
