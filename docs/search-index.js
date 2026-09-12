@@ -1,31 +1,31 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-11",
+ "generated": "2026-09-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2289,
+  "total": 2298,
   "byType": {
-   "anatomy": 624,
+   "anatomy": 625,
+   "paper": 579,
    "kmle": 939,
    "usmle": 138,
-   "paper": 571,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 624,
-   "Cardiology": 180,
-   "Nephrology": 150,
-   "Infectious Disease": 127,
-   "Pediatrics": 106,
-   "Hematology-Oncology": 86,
-   "Pathology": 81,
+   "Anatomy": 625,
+   "Cardiology": 181,
+   "Nephrology": 151,
+   "Infectious Disease": 128,
+   "Pediatrics": 107,
+   "Hematology-Oncology": 87,
+   "Pathology": 82,
    "Obstetrics & Gynecology": 72,
    "Neurology": 70,
    "Psychiatry": 70,
-   "Surgery": 64,
+   "Surgery": 65,
    "Endocrinology": 60,
    "Gastroenterology": 59,
    "Pulmonology": 59,
@@ -35,7 +35,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 58,
    "Rheumatology": 58,
    "Hematology": 57,
-   "Laboratory Medicine": 55,
+   "Laboratory Medicine": 56,
    "Physiology": 16,
    "Pharmacology": 11,
    "Microbiology": 10,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1487,
-   "medium": 753,
+   "high": 1488,
+   "medium": 761,
    "low": 49
   },
   "tagCount": 3164
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-13",
+   "type": "anatomy",
+   "unit": "팔·가슴",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-13",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/anatomy/daily/2026-09-13.md",
+   "snippet": "오늘의 학습 (2026 09 13 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 3일 · Tagging 2까지 36일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-13 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 13 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 3일 · Tagging 2까지 36일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "anatomy-daily-2026-09-12",
    "type": "anatomy",
@@ -258,6 +272,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0477.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
    "text": "Anatomy 허파 관찰 — 좌우 허파의 엽·틈새와 세로칸면 자국 9회차 · 가슴 distinction 9회차 허파 왼허파혀 세로칸면 허파인대 예습시험 태깅 9차시(0911) 김홍태pf.pdf §허파관찰 (Drive 해부2, a2-s09) + e-Anatomy Thorax — Trachea, Bronchus, Lung 00:00~11:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "paper-2026-0579",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0579_characteristics_of_patients_with_bibrachial_amyotrophy_due_t.md",
+   "snippet": "Title Characteristics of Patients With Bibrachial Amyotrophy Due to Spontaneous Spinal CSF Leaks Authors Schievink Wouter I, Maya Marcel, Tay Angelique Sao Mai S, Tache Rachelle B, Chu Ray, Moser Franklin G, Prasad Ravi Shankar, Nuno Miriam",
+   "text": "Surgery scraped pubmed PubMed / Neurology Title Characteristics of Patients With Bibrachial Amyotrophy Due to Spontaneous Spinal CSF Leaks Authors Schievink Wouter I, Maya Marcel, Tay Angelique Sao Mai S, Tache Rachelle B, Chu Ray, Moser Franklin G, Prasad Ravi Shankar, Nuno Miriam A, et al. Journal / DOI Neurology · DOI: 10.1212/WNL.0000000000218492 · PMID: 42727040 https://pubmed.ncbi.nlm.nih.gov/42727040/ Abstract BACKGROUND AND OBJECTIVES: Spontaneous spinal CSF leaks cause intracranial hypotension (SIH) and may be complicated by bibrachial amyotrophy (BBA), but the clinical and radiographic features of this complication are not well characterized. The objective of this study was to identify the unique characteristics and outcomes of treatment in patients with SIH and BBA. METHODS: In this case control study of patients with SIH complicated by BBA, 2 matched controls were selected per patient based on type of underlying leak (ventral vs lateral) and year of encounter. The patients were evaluated at a quaternary referral center between January 1, 2001, and June 30, 2024. RESULTS: The study population consisted of 25 consecutive patients with SIH who had been suffering from BBA for a mean of 51 months. Compared with controls, men were overrepresented (80 vs 18%; p < 0.0001), while age at presentation was similar (p = 0.69). A history of orthostatic headache typical of SIH was reported by 16 of the 25 patients with BBA. Age at onset of SIH was earlier in those with BBA (25.9 years) compared with controls (40 years) (p = 0.0522). The mean interval between the onset of SIH and the onset of BBA was 13.2 years (range, 1 to 45 years). Muscle groups affected included the C5 to T1 myotomes. The anterior CSF collection was more than twice as thick in patients with BBA compared with controls (mean, 6.3 vs 2.9 mm) (p < 0.0001). Twenty two patients underwent surgical closure of the CSF leak. BBA symptoms improved postoperatively in 13 of 18 patients who underwent surgical repair <10 years of BBA onset vs none of the 4 patients who underwent surgical repair 10 years of BBA onset or the 2 patients who did not undergo surgical repair (p = 0.007). DISCUSSION: BBA due to SIH is rare, typically affects men, occurs years after SIH symptom onset, and is associated with a thick anterior extradural CSF collection on MRI. Our data suggest that surgical repair is low risk, durable, and should arrest or reverse motor impairment if performed within 10 years of BBA symptom onset, but more rigorous study designs are needed to address outcomes in these patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0578",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC pediatrics",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0578_effects_of_rtms_intervention_on_resting_state_functional_bra.md",
+   "snippet": "Title Effects of rTMS intervention on resting state functional brain activityin children with autism spectrum disorders: a resting state fMRI study Authors Li Zhang, Lv Jing, Lu Fen, Yang Yan, He Yikang, Zhu Min Journal / DOI BMC pediatrics",
+   "text": "Pediatrics scraped pubmed PubMed / BMC pediatrics Title Effects of rTMS intervention on resting state functional brain activityin children with autism spectrum disorders: a resting state fMRI study Authors Li Zhang, Lv Jing, Lu Fen, Yang Yan, He Yikang, Zhu Min Journal / DOI BMC pediatrics · DOI: 10.1186/s12887 026 07512 z · PMID: 42723030 https://pubmed.ncbi.nlm.nih.gov/42723030/ Abstract BACKGROUND: Autism spectrum disorder (ASD) is a heterogeneous neurodevelopmental condition with widespread neurobiological alterations. Repetitive transcranial magnetic stimulation (rTMS) is a potential neuromodulation intervention, but its neural mechanisms remain unclear in preschool aged children with ASD. This study aimed to use resting state fMRI (rs fMRI) metrics ALFF and ReHo and behavioral assessments to investigate neural mechanisms underlying clinical response to low frequency (1 Hz) rTMS over the left dorsolateral prefrontal cortex (DLPFC) in this population. METHODS: Thirty four preschool aged children with ASD (aged 2 6 years) were recruited and randomly assigned to rTMS group (n = 17) or control group (n = 17). After dropout exclusions, 32 children completed the study (16 per group). The rTMS group received 12 weeks of low frequency (1 Hz) rTMS over the left DLPFC in addition to conventional rehabilitation, while the control group received sham stimulation. Behavioral assessments (ABC, CARS, RBS R, ATEC) and rs fMRI scans for ReHo/ALFF were conducted at baseline and post treatment. RESULTS: The rTMS group showed significantly greater improvements in CARS (t = 2.111, P = 0.043), RBS R (Z = 2.175, P = 0.030), and ATEC (t = 2.093, P = 0.044) scores compared with the control group. Post treatment rs fMRI analysis revealed increased ReHo in the right caudate nucleus, right angular gyrus, and left anterior cingulate gyrus, and decreased ReHo in the left cerebellar Crus II, left inferior occipital gyrus, and left middle temporal gyrus. Increased ALFF was observed in the right inferior orbital frontal gyrus, right angular gyrus, and right dorsolateral superior frontal gyrus. After controlling for age, sex, and mean frame wise displacement, the right angular gyrus ALFF remained significantly correlated with ATEC (rₚ = 0.710, P = 0.002), ABC (rₚ = 0.578, P = 0.019), and CARS (rₚ = 0.625, P = 0.009); the right caudate nucleus ReHo remained significantly correlated with ATEC (rₚ = 0.572, P = 0.020). CONCLUSIONS: Low frequency rTMS targeting the left DLPFC is safe and effective in improving core symptoms in preschool aged children with ASD, possibly by enhancing spontaneous neuronal activity in cognitive/executive function related regions. The right angular gyrus and right caudate nucleus may serve as potential neuroimaging biomarkers for treatment response. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0577",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0577_cross_sensor_domain_adaptation_multi_point_monitoring_networ.md",
+   "snippet": "Title Cross sensor domain adaptation multi point monitoring network for mechanical fault diagnosis Authors Zhou Zhijie, Lu Jiao, Ren Yu, Li Songbin Journal / DOI PloS one · DOI: 10.1371/journal.pone.0358240 · PMID: 42726803 https://pubmed.n",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PloS one Title Cross sensor domain adaptation multi point monitoring network for mechanical fault diagnosis Authors Zhou Zhijie, Lu Jiao, Ren Yu, Li Songbin Journal / DOI PloS one · DOI: 10.1371/journal.pone.0358240 · PMID: 42726803 https://pubmed.ncbi.nlm.nih.gov/42726803/ Abstract In recent years, mechanical fault diagnosis systems based on multi point sensor data fusion have achieved remarkable advancements. However, they still face several critical challenges: substantial data distribution discrepancies across monitoring points, scarcity of labeled fault samples at newly deployed points, and prohibitive costs of training independent models for each sensor. We propose UCTL, an end to end unsupervised cross sensor transfer learning network that enables the transfer and reuse of fault features from labeled source monitoring points to unlabeled target monitoring points with disparate data distributions, thereby achieving cross sensor domain adaptation in multi point monitoring systems. UCTL mainly consists of two major components. First, a one dimensional (1D) Swin Transformer backbone is developed by modifying the original Swin Transformer. It directly accepts 1D vibration inputs without time frequency map conversion and efficiently extracts multi scale and temporally correlated features via shifted window self attention. Second, we propose a joint distribution alignment method that extends both Maximum Mean Square Discrepancy (MMSD) and Variance Discrepancy Representation (VDR) to their joint forms (Joint MMSD and Joint VDR). A weighted formulation independently controls the alignment strength of the mean squared and variance based distribution discrepancies, improving adaptability across diverse cross sensor scenarios while mitigating class mismatch risk. Experiments on six cross sensor transfer tasks across the CWRU bearing dataset and XJTU Spurgear dataset demonstrate that the proposed method achieves an average diagnostic accuracy exceeding 99%. In addition, initialized with pre trained parameters from a certain monitoring point, UCTL can significantly reduce the number of training epochs and improve the deployment efficiency of the model. Ablation studies further confirm the superiority of the 1D Swin Transformer backbone and the synergistic effect of the hybrid loss, validating the effectiveness of the proposed approach as a robust cross sensor domain adaptation approach. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0576",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advances in mind-body medicine",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0576_infantile_maculopapular_cutaneous_mastocytosis_a_case_report.md",
+   "snippet": "Title Infantile Maculopapular Cutaneous Mastocytosis: A Case Report with an Integrative Unani Medicine Perspective Authors Khanum Saba, Ilyas Juwairiya, Eram Faseeha Journal / DOI Advances in mind body medicine · PMID: 42726612 https://pubm",
+   "text": "Pathology scraped pubmed PubMed / Advances in mind-body medicine Title Infantile Maculopapular Cutaneous Mastocytosis: A Case Report with an Integrative Unani Medicine Perspective Authors Khanum Saba, Ilyas Juwairiya, Eram Faseeha Journal / DOI Advances in mind body medicine · PMID: 42726612 https://pubmed.ncbi.nlm.nih.gov/42726612/ Abstract INTRODUCTION: Mastocytosis is a rare disorder characterized by abnormal mast cell proliferation, with clinical manifestations ranging from isolated cutaneous disease to systemic involvement. In children, it most often presents as cutaneous mastocytosis (CM), which is a usually benign and self limiting condition. However, accurate recognition is essential to exclude systemic mastocytosis. CASE PRESENTATION: We report a 9 month old male infant with multiple hyperpigmented macules on the trunk and extremities, accompanied by a positive Darier's sign. A diagnostic work up, including clinical examination, serum tryptase measurement, histopathology, and immunohistochemistry, confirmed maculopapular cutaneous mastocytosis (MPCM, aka urticaria pigmentosa). RESULTS: The child had no systemic symptoms, and serum tryptase was mildly elevated, supporting a favorable prognosis. MANAGEMENT AND OUTCOME: Management was conservative and focused on symptomatic relief with antihistamines, parental education, and trigger avoidance. Unani preparations (Sharbat Unnab and Roghan Gul) were prescribed as adjuncts for symptomatic relief. Parents were reassured of the benign, self limiting nature of pediatric CM. However, the patient was lost to follow up. CONCLUSION: Pediatric MPCM is rare, often under recognized, and may mimic other dermatoses. This case highlights the importance of a structured diagnostic approach, exclusion of systemic disease, and comprehensive parental counseling. Early recognition and tailored management are critical to improving outcomes and reducing unnecessary anxiety. KEYWORDS: Pediatric dermatology, Cutaneous Mastocytosis, Urticaria pigmentosa, Darier's sign, Serum tryptase, Histopathology, Unani medicine, Case report. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0575",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JCO global oncology",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0575_latin_american_consensus_for_the_diagnosis_staging_and_treat.md",
+   "snippet": "Title Latin American Consensus for the Diagnosis, Staging, and Treatment of Peripheral T Cell Lymphoma Not Otherwise Specified Authors Quintero Henry Idrobo, Garcia Robledo Juan Esteban, Ospina Juan Alejandro, Martínez Cordero Humberto, Mar",
+   "text": "Hematology-Oncology scraped pubmed PubMed / JCO global oncology Title Latin American Consensus for the Diagnosis, Staging, and Treatment of Peripheral T Cell Lymphoma Not Otherwise Specified Authors Quintero Henry Idrobo, Garcia Robledo Juan Esteban, Ospina Juan Alejandro, Martínez Cordero Humberto, Martinez Correa Lina María, Torres Viera Maria Alejandra, Beltran Brady Ernesto, Villela Luis, et al. Journal / DOI JCO global oncology · DOI: 10.1200/GO 26 00265 · PMID: 42727046 https://pubmed.ncbi.nlm.nih.gov/42727046/ Abstract PURPOSE: Peripheral T cell lymphoma not otherwise specified (PTCL NOS) is an aggressive, heterogeneous subtype of non Hodgkin lymphoma with poor prognosis and limited therapeutic options. In Latin America (LATAM), management is challenged by restricted access to advanced diagnostics, higher prevalence of oncogenic viruses (Epstein Barr virus, HTLV 1), and variable health care resources. This international consensus provides evidence based, regionally adapted recommendations for diagnosis, staging, risk stratification, treatment, and follow up of adult patients with PTCL NOS. METHODS: A multidisciplinary panel of hematologists and oncologists from multiple LATAM countries, who are members of the Grupo de Estudio Latinoamericano de Linfoproliferativos, used a modified Delphi process (February July 2025). An initial questionnaire of 11 items addressed diagnostic evaluation, staging, risk stratification, first line therapy, response assessment, consolidation with stem cell transplantation, salvage therapy, and supportive care. Consensus was defined as ≥80% agreement on a five point Likert scale using the RAND/UCLA appropriateness method. Two rounds of anonymous voting and discussion incorporated cost effectiveness and local resource constraints. RESULTS: Key recommendations include (1) positron emission tomography (PET)/computed tomography (CT) as preferred staging modality (with total metabolic tumor volume for prognostication) plus mandatory bone marrow biopsy; (2) Prognostic Index for PTCL U as primary risk stratification tool; (3) cyclophosphamide, doxorubicin, vincristine, etoposide, prednisone for fit patients ≤60 years with planned autologous stem cell transplantation (ASCT), versus cyclophosphamide, doxorubicin, vincristine, and prednisone 21 otherwise; (4) brentuximab vedotin + cyclophosphamide, doxorubicin, prednisone for CD30+ cases (≥10% expression); (5) interim and end of treatment PET/CT for response assessment; (6) ASCT in first complete remission; (7) early allogeneic transplantation referral for relapsed/refractory disease; and (8) standardized immunohistochemistry/flow cytometry panels. Resource limited adaptations prioritize accessible strategies and encourage clinical trial participation. CONCLUSION: This LATAM specific consensus integrates global evidence with regional realities to optimize outcomes for PTCL NOS. Implementation should standardize care, reduce diagnostic delays, and improve equitable access to effective therapies across LATAM. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0574",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0574_determinants_of_biochemical_factors_and_microalbuminuria_amo.md",
+   "snippet": "Title Determinants of biochemical factors and microalbuminuria among type 2 diabetes mellitus patients Authors Hassan Ruqaya M, Modher Mawj N, Hussain Shahad M, Rasool Baneen S, Raheem Yousif Sh, Hasan Ahmed Flayyih Journal / DOI Polski mer",
+   "text": "Nephrology scraped pubmed PubMed / Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego Title Determinants of biochemical factors and microalbuminuria among type 2 diabetes mellitus patients Authors Hassan Ruqaya M, Modher Mawj N, Hussain Shahad M, Rasool Baneen S, Raheem Yousif Sh, Hasan Ahmed Flayyih Journal / DOI Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego · DOI: 10.36740/Merkur202604101 · PMID: 42726819 https://pubmed.ncbi.nlm.nih.gov/42726819/ Abstract OBJECTIVE: Aim: Progression of type 2 diabetes produces capillary and macrovascular problems, including microalbuminuria, an early renal impairment marker. This study examines biochemical factors associated to microalbuminuria in T2DM patients of varying durations. PATIENTS AND METHODS: Materials and Methods: The study included 90 healthy controls, patients with type 2 diabetes mellitus (T2DM) for less than five years, and those with the illness for more than five years. Fasting blood glucose, HbA1c, lipid profile (HDL, LDL, vLDL, TC), serum albumin, globulins, creatinine, and urine microalbumin were tested. To compare groups, ANOVA and independent t tests were utilized. RESULTS: Results: Patients with long term illness showed higher fasting glucose (210.17±5.98 mg/dL), HbA1c (8.94±0.51%), serum creatinine (122.01±0.28 μmol/L), and reduced albumin (33.42±3.61 g/L Diabetics often had greater LDL, vLDL, and TC levels than controls (p<0.001). Microalbuminuria is connected to renal and metabolic dysfunction. CONCLUSION: Conclusions: These findings suggest biochemical markers and microalbuminuria may predict T2DM. Early detection of these indications may help doctors prevent chronic kidney disease and cardiovascular issues. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0573",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0573_in_vitro_antimicrobial_potential_and_phytochemical_analysis_.md",
+   "snippet": "Title In vitro antimicrobial potential and phytochemical analysis of root extracts of Rumex abyssinicus from southern Ethiopia Authors Ameya Gemechu, Manilal Aseer, Abdulkadir Mujib, Gelana Tegenu, Sabu Kuzhunellil Raghavanpillai Journal / ",
+   "text": "Infectious Disease scraped pubmed PubMed / PloS one Title In vitro antimicrobial potential and phytochemical analysis of root extracts of Rumex abyssinicus from southern Ethiopia Authors Ameya Gemechu, Manilal Aseer, Abdulkadir Mujib, Gelana Tegenu, Sabu Kuzhunellil Raghavanpillai Journal / DOI PloS one · DOI: 10.1371/journal.pone.0358267 · PMID: 42726891 https://pubmed.ncbi.nlm.nih.gov/42726891/ Abstract The escalating challenge of antimicrobial resistance require a continuous search for novel compounds with therapeutic potential. The approach of linking traditional practices and knowledge with evidence based preclinical studies can help minimize the resource intensive process of drug screening. Rumex abyssinicus is an important plant species used in Ethiopian traditional medicine, and this study aims to conduct a phytochemical analysis of root extracts of R. abyssinicus and determine its antimicrobial activity. R. abyssinicus roots were extracted in six solvents of different polarities. Agar well diffusion assays of the extracts were performed against type culture bacterial strains, clinically bacterial isolates, and fungi, while the tube dilution method was used to determine the minimum inhibitory concentration of the extracts. The ground root powder was refluxed with acetonitrile (1:10 w/v) and analyzed using reverse phase high performance liquid chromatography combined with mass spectrometry. A one way analysis of variance followed by post hoc multiple comparisons was performed, and differences were considered statistically significant at p < 0.05. The root extract of R. abyssinicus showed antimicrobial activity against type culture bacteria and clinical isolates, and fungi. Extraction with different solvents yielded extracts with varying antimicrobial activities. The extracts showed a varied range of antimicrobial activities against the test organisms, with inhibition zones of 11 25 mm for bacteria and 9 24 mm for fungi. The MIC range fell between 12.5 and 100 mg/mL. The phytochemical analysis revealed the presence of major compounds such as emodin (30%), chrysophanol (18%), physcion (16%), helminthosporin (12%), citreorosein (11%) and emodic acid (8%) which are envisaged to have functional roles in chemical defense against the tested organisms. The susceptibilities of the tested bacteria and fungi varied depending on the type of solvent used for extraction and extract concentration. Enhanced antimicrobial activities were observed against the entire panel of bacteria compared to those against the test fungi. The results support the traditional use of R. abyssinicus for treating infectious diseases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0572",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+   "confidence": "medium",
+   "date": "2026-09-11",
+   "path": "content/papers/2026/2026-09-11_paper-2026-0572_does_earlier_right_ventricular_assist_device_implant_confer_.md",
+   "snippet": "Title Does Earlier Right Ventricular Assist Device Implant Confer a Survival Advantage? Authors Oliver Shannon, Bleiweis Mark, O'Connor Matthew, Kindel Steve, Dykes John C, Law Sabrina, May Lindsay, Jeewa Aamir, et al. Journal / DOI ASAIO j",
+   "text": "Cardiology scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Does Earlier Right Ventricular Assist Device Implant Confer a Survival Advantage? Authors Oliver Shannon, Bleiweis Mark, O'Connor Matthew, Kindel Steve, Dykes John C, Law Sabrina, May Lindsay, Jeewa Aamir, et al. Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002838 · PMID: 42727048 https://pubmed.ncbi.nlm.nih.gov/42727048/ Abstract Biventricular assist device (BiVAD) use has decreased in the pediatric population, partly driven by concerns that survival may be inferior compared with that achieved with isolated left ventricular assist devices (LVAD). We aimed to address whether the timing of right ventricular assist device (RVAD) impacts these outcomes. A retrospective analysis of prospectively collected data of patients who underwent BiVAD implantation between April 2018 and December 2022 and were enrolled in the Advanced Cardiac Therapies Improving Outcomes Network Registry was performed. Baseline clinical and demographic characteristics were compared between the primary (RVAD implanted at the same surgery as LVAD) and delayed (RVAD implanted within 60 days of LVAD) RVAD cohorts, and survival analysis was performed. There were 223 included patients, with 186 (83.4%) having a primary RVAD. Median age at implant was 5.48 years (interquartile range: 1.10, 12.52), 45.7% were female, and 23.3% had congenital heart disease. Primary RVAD patients were more likely to be on dialysis at the time of implantation (p = 0.028) and to have previous sternotomies (p = 0.004). Primary RVAD patients had better 1 year survival (p = 0.023). This suggests that mortality is impacted by RVAD timing in patients requiring BiVAD support. There should be a low threshold for implanting an RVAD during the same surgery as the LVAD in patients displaying signs of right heart failure. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0969",
