@@ -9,13 +9,20 @@
    - USMLE는 Step 1(기초의학)/Step 2(임상) 필터, 영상은 국시형/USMLE형 필터를 지원 */
 "use strict";
 
-// KMLE 덱 = content/kmle(MedKOS SoT) + 레거시 quiz.py 번들. 둘 다 있으면 합친다.
+// 각 문항에 출처 덱(src)을 박아 둔다 — '최신 세트'는 출처별 최신 날짜를 합쳐서 만든다.
+function tagSrc(list, src) { list.forEach((q) => { if (!q.src) q.src = src; }); return list; }
+const IMAGING = tagSrc(Array.isArray(window.IMAGING_QUESTIONS) ? window.IMAGING_QUESTIONS : [], "imaging");
+// KMLE 덱 = content/kmle(MedKOS SoT) + 레거시 quiz.py 번들 + 영상 세트의 국시형 문항(그날 만든 문항을 한 자리에서).
 const KMLE = [].concat(
-  Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [],
-  Array.isArray(window.KMLE_QUESTIONS) ? window.KMLE_QUESTIONS : []
+  tagSrc(Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [], "kmle"),
+  tagSrc(Array.isArray(window.KMLE_QUESTIONS) ? window.KMLE_QUESTIONS : [], "kmle"),
+  IMAGING.filter((q) => q.style === "kmle_style")
 );
-const USMLE = Array.isArray(window.USMLE_QUESTIONS) ? window.USMLE_QUESTIONS : [];
-const IMAGING = Array.isArray(window.IMAGING_QUESTIONS) ? window.IMAGING_QUESTIONS : [];
+// USMLE 덱 = content/usmle + 영상 세트의 USMLE형 문항(step="Step 2" 로 임상 필터 통과).
+const USMLE = [].concat(
+  tagSrc(Array.isArray(window.USMLE_QUESTIONS) ? window.USMLE_QUESTIONS : [], "usmle"),
+  IMAGING.filter((q) => q.style === "usmle_style")
+);
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
 const EXAM_NAME = { kmle: "KMLE", usmle: "USMLE", imaging: "영상" };
@@ -38,6 +45,8 @@ function labelsFor(q) {
 function label(i, q) { return labelsFor(q || deck[pos])[i] || String(i + 1); }
 function storeKey(e) { return "wrong_" + (e || exam()); }
 function removedKey(e) { return "wrong_removed_" + (e || exam()); }
+// 영상 세트 문항은 어느 덱에서 풀었든 오답을 wrong_imaging 에 모은다(같은 문항이 두 곳에 갈라지지 않게).
+function wrongExamOf(q) { return q && q.exam === "imaging" ? "imaging" : exam(); }
 
 /* 선택된 Step(USMLE)·형식(영상)으로 필터한 기준 문항 목록 */
 function baseList() {
@@ -49,6 +58,8 @@ function baseList() {
   if (isImaging()) {
     const st = $("style").value;
     if (st && st !== "__ALL__") list = list.filter((q) => q.style === st);
+    // 기본은 영상이 붙은 문항만. 세트의 텍스트 문항은 KMLE/USMLE 덱(그날 세트)에서 함께 풀린다.
+    if ($("imgOnly") && $("imgOnly").checked) list = list.filter((q) => q.figureImg && q.figureImg.src);
   }
   return list;
 }
@@ -70,10 +81,11 @@ function todayStr() { return new Date(Date.now() + 9 * 3600 * 1000).toISOString(
 function nowIso() { return new Date().toISOString(); }
 
 function recordWrong(q, chosenIdx) {
-  const map = loadWrong();
+  const we = wrongExamOf(q);
+  const map = loadWrong(we);
   const prev = map[q.id] || {};
   map[q.id] = {
-    id: q.id, exam: exam(), subject: q.subject, step: q.step || "", type: q.type,
+    id: q.id, exam: we, subject: q.subject, step: q.step || "", type: q.type,
     style: q.style || "", modality: q.modality || "",
     question: q.question,
     chosen: chosenIdx, chosenText: q.options[chosenIdx],
@@ -83,9 +95,9 @@ function recordWrong(q, chosenIdx) {
     source: q.source || "", date: todayStr(), device: SYNC.device,
     note: prev.note || "",
   };
-  saveWrong(map);
-  const rm = loadRemoved();
-  if (rm[q.id]) { delete rm[q.id]; saveRemoved(rm); }   // 다시 틀렸으면 묘비 철회
+  saveWrong(map, we);
+  const rm = loadRemoved(we);
+  if (rm[q.id]) { delete rm[q.id]; saveRemoved(rm, we); }   // 다시 틀렸으면 묘비 철회
   scheduleSync();
 }
 function removeWrong(id) {
@@ -101,7 +113,12 @@ function setWrongNote(id, note) {
   saveWrong(m);
   scheduleSync();
 }
-function wrongIds() { return new Set(Object.keys(loadWrong())); }
+// 이 덱의 오답 id 집합 — 덱 자체의 오답 + (영상 문항이 섞인 덱이면) 영상 오답까지.
+function wrongIds() {
+  const ids = new Set(Object.keys(loadWrong()));
+  if (!isImaging()) Object.keys(loadWrong("imaging")).forEach((id) => ids.add(id));
+  return ids;
+}
 
 /* ---------- 오답 동기화(/api/wrong) ---------- */
 const SYNC = {
@@ -140,7 +157,15 @@ function setSyncStatus(text, cls) {
 function scheduleSync() {
   if (SYNC.available === false || location.protocol === "file:") return;
   clearTimeout(SYNC.timer);
-  SYNC.timer = setTimeout(() => syncNow(exam(), true), 2500);
+  SYNC.timer = setTimeout(() => syncAll(true), 2500);
+}
+// 현재 덱과 영상 오답을 함께 동기화한다(영상 문항은 어느 덱에서 풀어도 wrong_imaging 에 쌓이므로).
+async function syncAll(quiet) {
+  const list = isImaging() ? ["imaging"] : [exam(), "imaging"];
+  for (const e of list) {
+    await syncNow(e, quiet || e !== exam());
+    if (SYNC.available === false) break;
+  }
 }
 async function syncNow(e, quiet) {
   if (location.protocol === "file:") { setSyncStatus("로컬 파일로 열림 — 동기화 없음"); return; }
@@ -198,6 +223,17 @@ function minCreated(list) {
 // '최신 세트' 대상 날짜 = 가장 최근 생성일. 날짜(오늘) 판단을 하지 않으므로, 새 세트가
 // 나오기 전까지(예: 다음 생성까지 며칠간) 최근 세트가 계속 노출된다.
 function latestSetDate(list) { return latestCreated(list); }
+// 최신 세트 = 출처(src)별 최신 날짜의 합집합. KMLE 세트가 어제, 영상 세트가 오늘이면 둘 다 뜬다
+// (영상 세트만 새로 나왔다고 어제 KMLE 세트가 사라지지 않게).
+function latestSet(list) {
+  const by = {};
+  list.forEach((q) => { const s = q.src || "x"; if (q.created && (!by[s] || q.created > by[s])) by[s] = q.created; });
+  return list.filter((q) => q.created && q.created === by[q.src || "x"]);
+}
+function latestLabelOf(list) {
+  const dates = [...new Set(latestSet(list).map((q) => q.created))].sort();
+  return dates.length > 1 ? `${dates[0]}~${dates[dates.length - 1]}` : (dates[0] || "");
+}
 
 // 기간(range) 모드 입력값 — 없으면 전체 범위(min~max)로 폴백.
 function rangeBounds(base) {
@@ -218,8 +254,7 @@ function buildDeck() {
   let list;
   if (mode === "latest") {
     const subj = $("subject").value;
-    const fd = latestSetDate(base);
-    list = base.filter((q) => q.created === fd);
+    list = latestSet(base);
     if (subj && subj !== "__ALL__") list = list.filter((q) => q.subject === subj);
   } else if (mode === "range") {
     const subj = $("subject").value;
@@ -278,8 +313,8 @@ function renderQuestion() {
   const q = deck[pos];
   $("progress").textContent = `${pos + 1} / ${deck.length}`;
   let tag;
-  if (isImaging()) {
-    tag = [q.styleLabel || "", q.modality || q.type || "", q.difficultyLabel ? "난이도 " + q.difficultyLabel : ""].filter(Boolean).join(" · ");
+  if (q.exam === "imaging") {
+    tag = ["🩻 영상 세트", q.styleLabel || "", q.modality || q.type || "", q.difficultyLabel ? "난이도 " + q.difficultyLabel : ""].filter(Boolean).join(" · ");
   } else {
     tag = q.step ? `${q.step} · ${q.type || ""}` : (q.type || "");
   }
@@ -736,9 +771,9 @@ function onModeChange() {
   $("subjectRow").style.display = mode === "review" ? "none" : "";
   $("rangeRow").style.display = mode === "range" ? "" : "none";
 
-  const fd = latestSetDate(base);
+  const fd = latestLabelOf(base);
   if (mode === "latest") {
-    populateSubjects(base.filter((q) => q.created === fd));
+    populateSubjects(latestSet(base));
   } else if (mode === "range") {
     setRangeDefaults(base, false);
     const { lo, hi } = rangeBounds(base);
@@ -749,7 +784,8 @@ function onModeChange() {
 
   const wrongN = Object.keys(loadWrong()).length;
   const stepTxt = isUsmle() && $("step").value !== "__ALL__" ? ` [${$("step").value}]` : "";
-  const latestN = base.filter((q) => q.created === fd).length;
+  const latestN = latestSet(base).length;
+  const latestImg = latestSet(base).filter((q) => q.exam === "imaging").length;
   let rangeHint = "날짜 범위를 고르세요.";
   if (mode === "range") {
     const { lo, hi } = rangeBounds(base);
@@ -757,8 +793,9 @@ function onModeChange() {
     rangeHint = `${lo} ~ ${hi} 사이에 만든 ${n}개를 풉니다.`;
   }
   const latestLabel = isImaging() ? `오늘의 영상 세트(${fd})` : `최신 세트(${fd})`;
+  const imgNote = !isImaging() && latestImg ? ` 이 중 ${latestImg}개는 그날 영상 세트에서 온 문항입니다.` : "";
   const hint = {
-    latest: `${latestLabel} ${latestN}개를 풉니다. 새 세트가 나오면 자동으로 그 세트로 바뀝니다.`,
+    latest: `${latestLabel} ${latestN}개를 풉니다.${imgNote} 새 세트가 나오면 자동으로 그 세트로 바뀝니다.`,
     range: rangeHint,
     all: `${examName()}${stepTxt} 누적 ${base.length}개 전체(또는 선택 과목)를 풉니다.`,
     review: `${examName()} 오답노트에 쌓인 ${wrongN}개만 다시 풉니다.`,
@@ -774,7 +811,7 @@ function onExamChange() {
   setRangeDefaults(baseList(), true);
   onModeChange();
   updateWrongCount();
-  if (SYNC.available !== false) syncNow(exam(), true);
+  if (SYNC.available !== false) syncAll(true);
 }
 
 // 홈 화면 바로가기(manifest shortcuts)·링크의 ?exam=imaging&mode=latest 를 초기 상태에 반영.
@@ -802,6 +839,7 @@ function init() {
   $("exam").onchange = onExamChange;
   $("step").onchange = onModeChange;
   $("style").onchange = onModeChange;
+  if ($("imgOnly")) $("imgOnly").onchange = onModeChange;
   $("mode").onchange = onModeChange;
   if ($("rangeFrom")) $("rangeFrom").onchange = onModeChange;
   if ($("rangeTo")) $("rangeTo").onchange = onModeChange;
@@ -828,7 +866,7 @@ function init() {
       renderWrongbook(); updateWrongCount(); scheduleSync();
     }
   };
-  if ($("syncBtn")) $("syncBtn").onclick = () => syncNow(exam(), false);
+  if ($("syncBtn")) $("syncBtn").onclick = () => syncAll(false);
   if ($("syncKey")) {
     $("syncKey").value = syncKey();
     $("syncKey").onchange = () => {
@@ -838,7 +876,7 @@ function init() {
     };
   }
   updateWrongCount();
-  window.addEventListener("online", () => { if (SYNC.available !== false) syncNow(exam(), true); });
+  window.addEventListener("online", () => { if (SYNC.available !== false) syncAll(true); });
   if (autoStart) startQuiz();
 }
 
