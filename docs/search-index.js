@@ -41,14 +41,16 @@ window.MEDKOS_INDEX = {
    "Pharmacology": 11,
    "Microbiology": 10,
    "Biochemistry": 9,
-   "통합(생식의학·응급·마취)": 9,
    "Immunology": 7,
    "Internal Medicine": 7,
+   "산부인과": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
+   "병리·조직학": 2,
+   "순환기": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -66,7 +68,7 @@ window.MEDKOS_INDEX = {
    "id": "imaging-2026-0009",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "산부인과",
    "subtopic": "부인과 — 자궁외임신·기능성 무월경",
    "tags": [
     "opendata",
@@ -77,13 +79,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0009.md",
    "snippet": "A 22 year old woman who is a collegiate long distance runner comes to the physician because she has not had a menstrual period for 8 months. Her BMI is 17.5 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the",
-   "text": "통합(생식의학·응급·마취) 부인과 — 자궁외임신·기능성 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 22 year old woman who is a collegiate long distance runner comes to the physician because she has not had a menstrual period for 8 months. Her BMI is 17.5 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges. She has no withdrawal bleeding after a 10 day course of oral medroxyprogesterone. Serum FSH and LH concentrations are low normal. This patient is at greatest risk for which of the following? A. Decreased bone mineral density B. Endometrial hyperplasia C. Hirsutism D. Galactorrhea E. Venous thromboembolism"
+   "text": "산부인과 부인과 — 자궁외임신·기능성 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 22 year old woman who is a collegiate long distance runner comes to the physician because she has not had a menstrual period for 8 months. Her BMI is 17.5 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges. She has no withdrawal bleeding after a 10 day course of oral medroxyprogesterone. Serum FSH and LH concentrations are low normal. This patient is at greatest risk for which of the following? A. Decreased bone mineral density B. Endometrial hyperplasia C. Hirsutism D. Galactorrhea E. Venous thromboembolism"
   },
   {
    "id": "imaging-2026-0008",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "산부인과",
    "subtopic": "부인과 — 자궁외임신·기능성 무월경",
    "tags": [
     "opendata",
@@ -94,13 +96,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0008.md",
    "snippet": "A 29 year old woman has vaginal spotting 7 weeks after her last menstrual period. She is hemodynamically stable. Transvaginal ultrasonography shows no intrauterine pregnancy and a 2.5 cm left adnexal mass without cardiac activity. Serum β h",
-   "text": "통합(생식의학·응급·마취) 부인과 — 자궁외임신·기능성 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 29 year old woman has vaginal spotting 7 weeks after her last menstrual period. She is hemodynamically stable. Transvaginal ultrasonography shows no intrauterine pregnancy and a 2.5 cm left adnexal mass without cardiac activity. Serum β hCG concentration is 2800 mIU/mL. Methotrexate therapy is being considered. Which of the following additional findings is an absolute contraindication to this treatment? A. She desires future pregnancy B. She is breastfeeding her 8 month old son C. Her blood type is Rh negative D. She had a previous ectopic pregnancy treated with salpingostomy E. Her serum β hCG concentration rose 20% over 48 hours"
+   "text": "산부인과 부인과 — 자궁외임신·기능성 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 29 year old woman has vaginal spotting 7 weeks after her last menstrual period. She is hemodynamically stable. Transvaginal ultrasonography shows no intrauterine pregnancy and a 2.5 cm left adnexal mass without cardiac activity. Serum β hCG concentration is 2800 mIU/mL. Methotrexate therapy is being considered. Which of the following additional findings is an absolute contraindication to this treatment? A. She desires future pregnancy B. She is breastfeeding her 8 month old son C. Her blood type is Rh negative D. She had a previous ectopic pregnancy treated with salpingostomy E. Her serum β hCG concentration rose 20% over 48 hours"
   },
   {
    "id": "imaging-2026-0007",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "산부인과",
    "subtopic": "산과 — 분만 중 태아감시·산과 마취",
    "tags": [
     "opendata",
@@ -111,13 +113,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0007.md",
    "snippet": "39주 초산부가 제왕절개술을 위해 척추마취를 받았다. 마취 5분 뒤 혈압이 80/45 mmHg(마취 전 120/75 mmHg), 맥박이 분당 112회로 오르고 오심을 호소한다. 자궁을 왼쪽으로 밀고 수액을 주면서 투여할 승압제로 가장 적절한 것은? A. 에페드린 B. 도파민 C. 바소프레신 D. 에피네프린 E. 페닐에프린",
-   "text": "통합(생식의학·응급·마취) 산과 — 분만 중 태아감시·산과 마취 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 39주 초산부가 제왕절개술을 위해 척추마취를 받았다. 마취 5분 뒤 혈압이 80/45 mmHg(마취 전 120/75 mmHg), 맥박이 분당 112회로 오르고 오심을 호소한다. 자궁을 왼쪽으로 밀고 수액을 주면서 투여할 승압제로 가장 적절한 것은? A. 에페드린 B. 도파민 C. 바소프레신 D. 에피네프린 E. 페닐에프린"
+   "text": "산부인과 산과 — 분만 중 태아감시·산과 마취 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 39주 초산부가 제왕절개술을 위해 척추마취를 받았다. 마취 5분 뒤 혈압이 80/45 mmHg(마취 전 120/75 mmHg), 맥박이 분당 112회로 오르고 오심을 호소한다. 자궁을 왼쪽으로 밀고 수액을 주면서 투여할 승압제로 가장 적절한 것은? A. 에페드린 B. 도파민 C. 바소프레신 D. 에피네프린 E. 페닐에프린"
   },
   {
    "id": "imaging-2026-0006",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "산부인과",
    "subtopic": "산과 — 분만 중 태아감시·산과 마취",
    "tags": [
     "opendata",
@@ -129,13 +131,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0006.md",
    "snippet": "A 37 year old woman, para 1, at 41 weeks' gestation is in labor with continuous electronic fetal monitoring. The tracing from minutes 40 to 50 of monitoring is shown. Which of the following best describes the change in fetal heart rate betw",
-   "text": "통합(생식의학·응급·마취) 산과 — 분만 중 태아감시·산과 마취 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 37 year old woman, para 1, at 41 weeks' gestation is in labor with continuous electronic fetal monitoring. The tracing from minutes 40 to 50 of monitoring is shown. Which of the following best describes the change in fetal heart rate between minutes 42 and 44? A. Sinusoidal pattern B. Prolonged deceleration C. Variable deceleration D. Late deceleration E. Early deceleration"
+   "text": "산부인과 산과 — 분만 중 태아감시·산과 마취 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A 37 year old woman, para 1, at 41 weeks' gestation is in labor with continuous electronic fetal monitoring. The tracing from minutes 40 to 50 of monitoring is shown. Which of the following best describes the change in fetal heart rate between minutes 42 and 44? A. Sinusoidal pattern B. Prolonged deceleration C. Variable deceleration D. Late deceleration E. Early deceleration"
   },
   {
    "id": "imaging-2026-0005",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "산부인과",
    "subtopic": "생식샘 조직학과 성분화·무월경",
    "tags": [
     "opendata",
@@ -146,13 +148,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0005.md",
    "snippet": "17세 여자가 월경을 한 번도 하지 않아 왔다. 키 170 cm, 유방 발달은 성숙 단계이나 음모와 겨드랑이털이 거의 없다. 외부생식기는 여성형이고 질은 짧은 맹낭으로 끝나며 골반 초음파에서 자궁이 보이지 않는다. 혈청 테스토스테론은 성인 남성 정상 범위다. 진단은? A. 터너증후군 B. 5α 환원효소 결핍증 C. 칼만증후군 D. 완전 안드로겐무감응증후군 E. 뮐러관무형성(MRKH 증후군)",
-   "text": "통합(생식의학·응급·마취) 생식샘 조직학과 성분화·무월경 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 17세 여자가 월경을 한 번도 하지 않아 왔다. 키 170 cm, 유방 발달은 성숙 단계이나 음모와 겨드랑이털이 거의 없다. 외부생식기는 여성형이고 질은 짧은 맹낭으로 끝나며 골반 초음파에서 자궁이 보이지 않는다. 혈청 테스토스테론은 성인 남성 정상 범위다. 진단은? A. 터너증후군 B. 5α 환원효소 결핍증 C. 칼만증후군 D. 완전 안드로겐무감응증후군 E. 뮐러관무형성(MRKH 증후군)"
+   "text": "산부인과 생식샘 조직학과 성분화·무월경 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 17세 여자가 월경을 한 번도 하지 않아 왔다. 키 170 cm, 유방 발달은 성숙 단계이나 음모와 겨드랑이털이 거의 없다. 외부생식기는 여성형이고 질은 짧은 맹낭으로 끝나며 골반 초음파에서 자궁이 보이지 않는다. 혈청 테스토스테론은 성인 남성 정상 범위다. 진단은? A. 터너증후군 B. 5α 환원효소 결핍증 C. 칼만증후군 D. 완전 안드로겐무감응증후군 E. 뮐러관무형성(MRKH 증후군)"
   },
   {
    "id": "imaging-2026-0004",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "병리·조직학",
    "subtopic": "생식샘 조직학과 성분화·무월경",
    "tags": [
     "opendata",
@@ -164,13 +166,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0004.md",
    "snippet": "A tissue section obtained from an 84 year old man is stained by immunohistochemistry for a peptide hormone. The strongly brown stained cells are the principal target of which of the following hormones? A. Anti Müllerian hormone B. Prolactin",
-   "text": "통합(생식의학·응급·마취) 생식샘 조직학과 성분화·무월경 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A tissue section obtained from an 84 year old man is stained by immunohistochemistry for a peptide hormone. The strongly brown stained cells are the principal target of which of the following hormones? A. Anti Müllerian hormone B. Prolactin C. Luteinizing hormone D. Follicle stimulating hormone E. Inhibin B"
+   "text": "병리·조직학 생식샘 조직학과 성분화·무월경 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c A tissue section obtained from an 84 year old man is stained by immunohistochemistry for a peptide hormone. The strongly brown stained cells are the principal target of which of the following hormones? A. Anti Müllerian hormone B. Prolactin C. Luteinizing hormone D. Follicle stimulating hormone E. Inhibin B"
   },
   {
    "id": "imaging-2026-0003",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "병리·조직학",
    "subtopic": "생식샘 조직학과 성분화·무월경",
    "tags": [
     "opendata",
@@ -182,13 +184,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0003.md",
    "snippet": "65세 남자에게서 얻은 장기 조직 절편에 어떤 전사인자에 대한 면역조직화학염색을 하였다. 짙은 갈색 핵으로 강하게 염색된 세포가 태아기에 분비하는 물질의 작용으로 옳은 것은? A. 외부생식기의 남성화 B. 고환 하강의 경복부 단계 유도 C. 태반의 hCG 분비 촉진 D. 중신옆관(뮐러관)의 퇴화 유도 E. 중신관(볼프관)의 분화 유지",
-   "text": "통합(생식의학·응급·마취) 생식샘 조직학과 성분화·무월경 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 65세 남자에게서 얻은 장기 조직 절편에 어떤 전사인자에 대한 면역조직화학염색을 하였다. 짙은 갈색 핵으로 강하게 염색된 세포가 태아기에 분비하는 물질의 작용으로 옳은 것은? A. 외부생식기의 남성화 B. 고환 하강의 경복부 단계 유도 C. 태반의 hCG 분비 촉진 D. 중신옆관(뮐러관)의 퇴화 유도 E. 중신관(볼프관)의 분화 유지"
+   "text": "병리·조직학 생식샘 조직학과 성분화·무월경 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 65세 남자에게서 얻은 장기 조직 절편에 어떤 전사인자에 대한 면역조직화학염색을 하였다. 짙은 갈색 핵으로 강하게 염색된 세포가 태아기에 분비하는 물질의 작용으로 옳은 것은? A. 외부생식기의 남성화 B. 고환 하강의 경복부 단계 유도 C. 태반의 hCG 분비 촉진 D. 중신옆관(뮐러관)의 퇴화 유도 E. 중신관(볼프관)의 분화 유지"
   },
   {
    "id": "imaging-2026-0002",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "순환기",
    "subtopic": "심전도 판독 — 응급·마취 전 평가",
    "tags": [
     "opendata",
@@ -200,13 +202,13 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0002.md",
    "snippet": "79세 여자가 1시간 전 갑자기 시작된 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통·호흡곤란은 없다. 혈압 128/80 mmHg 이다. 심전도는 그림과 같다. 가장 먼저 할 처치는? A. 변형 발살바 수기(미주신경자극) B. 아데노신 6 mg 급속 정맥주사 C. 동기화 심장율동전환 D. 아미오다론 정맥주사 E. 경구 디곡신",
-   "text": "통합(생식의학·응급·마취) 심전도 판독 — 응급·마취 전 평가 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 79세 여자가 1시간 전 갑자기 시작된 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통·호흡곤란은 없다. 혈압 128/80 mmHg 이다. 심전도는 그림과 같다. 가장 먼저 할 처치는? A. 변형 발살바 수기(미주신경자극) B. 아데노신 6 mg 급속 정맥주사 C. 동기화 심장율동전환 D. 아미오다론 정맥주사 E. 경구 디곡신"
+   "text": "순환기 심전도 판독 — 응급·마취 전 평가 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 79세 여자가 1시간 전 갑자기 시작된 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통·호흡곤란은 없다. 혈압 128/80 mmHg 이다. 심전도는 그림과 같다. 가장 먼저 할 처치는? A. 변형 발살바 수기(미주신경자극) B. 아데노신 6 mg 급속 정맥주사 C. 동기화 심장율동전환 D. 아미오다론 정맥주사 E. 경구 디곡신"
   },
   {
    "id": "imaging-2026-0001",
    "type": "imaging",
    "unit": "",
-   "topic": "통합(생식의학·응급·마취)",
+   "topic": "순환기",
    "subtopic": "심전도 판독 — 응급·마취 전 평가",
    "tags": [
     "opendata",
@@ -218,7 +220,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-09-13",
    "path": "content\\imaging\\2026\\imaging-2026-0001.md",
    "snippet": "79세 남자가 예정 수술 전 검사로 심전도를 찍었다. 증상은 없고 맥박은 분당 55회로 규칙적이다. 심전도는 그림과 같다. 심전도 소견과 수술 후 오심·구토 예방 계획을 옳게 짝지은 것은? A. 좌심실비대 — 예방약 선택에 제한이 없다 B. 고칼륨혈증(뾰족한 T파) — 칼슘을 투여한 뒤 수술을 진행한다 C. QT 간격 연장 — 온단세트론 투여를 피한다 D. QT 간격 연장 — 드로페리돌을 우선 투여한다 E. 완전방실차단 — 수",
-   "text": "통합(생식의학·응급·마취) 심전도 판독 — 응급·마취 전 평가 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 79세 남자가 예정 수술 전 검사로 심전도를 찍었다. 증상은 없고 맥박은 분당 55회로 규칙적이다. 심전도는 그림과 같다. 심전도 소견과 수술 후 오심·구토 예방 계획을 옳게 짝지은 것은? A. 좌심실비대 — 예방약 선택에 제한이 없다 B. 고칼륨혈증(뾰족한 T파) — 칼슘을 투여한 뒤 수술을 진행한다 C. QT 간격 연장 — 온단세트론 투여를 피한다 D. QT 간격 연장 — 드로페리돌을 우선 투여한다 E. 완전방실차단 — 수술 전 임시 심박조율기를 삽입한다"
+   "text": "순환기 심전도 판독 — 응급·마취 전 평가 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c 79세 남자가 예정 수술 전 검사로 심전도를 찍었다. 증상은 없고 맥박은 분당 55회로 규칙적이다. 심전도는 그림과 같다. 심전도 소견과 수술 후 오심·구토 예방 계획을 옳게 짝지은 것은? A. 좌심실비대 — 예방약 선택에 제한이 없다 B. 고칼륨혈증(뾰족한 T파) — 칼슘을 투여한 뒤 수술을 진행한다 C. QT 간격 연장 — 온단세트론 투여를 피한다 D. QT 간격 연장 — 드로페리돌을 우선 투여한다 E. 완전방실차단 — 수술 전 임시 심박조율기를 삽입한다"
   },
   {
    "id": "anatomy-daily-2026-09-13",

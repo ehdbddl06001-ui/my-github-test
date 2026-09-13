@@ -2,201 +2,17 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
-  "id": "imaging-2026-0009",
-  "exam": "imaging",
-  "style": "usmle_style",
-  "styleLabel": "USMLE형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
-  "subtopic": "부인과 — 자궁외임신·기능성 무월경",
-  "type": "부인과 — 자궁외임신·기능성 무월경",
-  "modality": "",
-  "difficulty": 5,
-  "difficultyLabel": "최상",
-  "created": "2026-09-13",
-  "vignette": "A 22-year-old woman who is a collegiate long-distance runner comes to the physician because she has not had a menstrual period for 8 months. Her BMI is 17.5 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges. She has no withdrawal bleeding after a 10-day course of oral medroxyprogesterone. Serum FSH and LH concentrations are low-normal.",
-  "question": "This patient is at greatest risk for which of the following?",
-  "options": [
-   "Decreased bone mineral density",
-   "Endometrial hyperplasia",
-   "Hirsutism",
-   "Galactorrhea",
-   "Venous thromboembolism"
-  ],
-  "answer": 1,
-  "explanationText": "- 정답 핵심: No withdrawal bleeding means the endometrium was not estrogen-primed; low-normal gonadotropins place the defect in the hypothalamus (energy deficit suppresses GnRH pulsatility). The resulting hypoestrogenism causes bone loss — the female athlete triad.\n- 오답 이유:\n  - (B) Endometrial hyperplasia follows unopposed estrogen in anovulation with adequate estrogen (e.g., PCOS), which would give withdrawal bleeding\n  - (C) Hirsutism reflects hyperandrogenism (PCOS, CAH), not hypothalamic suppression\n  - (D) Galactorrhea implies hyperprolactinemia; prolactin is normal\n  - (E) Thromboembolic risk rises with estrogen excess or exogenous estrogen, not deficiency\n- 함정: 무월경이면 무조건 「자궁내막증식 위험」이 아니다 — 소퇴 출혈 여부로 에스트로겐이 있는지를 먼저 가른다.\n- 학습목표: 프로게스틴 소퇴 출혈 음성 + 낮은 성선자극호르몬 → 저에스트로겐 → 골밀도 저하\n- 근거·출처: Endocrine Society Clinical Practice Guideline: Functional Hypothalamic Amenorrhea (J Clin Endocrinol Metab 2017)",
-  "explanationItems": [
-   {
-    "k": "정답 핵심",
-    "v": "No withdrawal bleeding means the endometrium was not estrogen-primed; low-normal gonadotropins place the defect in the hypothalamus (energy deficit suppresses GnRH pulsatility). The resulting hypoestrogenism causes bone loss — the female athlete triad."
-   },
-   {
-    "k": "오답 이유",
-    "v": "(B) Endometrial hyperplasia follows unopposed estrogen in anovulation with adequate estrogen (e.g., PCOS), which would give withdrawal bleeding\n(C) Hirsutism reflects hyperandrogenism (PCOS, CAH), not hypothalamic suppression\n(D) Galactorrhea implies hyperprolactinemia; prolactin is normal\n(E) Thromboembolic risk rises with estrogen excess or exogenous estrogen, not deficiency"
-   },
-   {
-    "k": "함정",
-    "v": "무월경이면 무조건 「자궁내막증식 위험」이 아니다 — 소퇴 출혈 여부로 에스트로겐이 있는지를 먼저 가른다."
-   },
-   {
-    "k": "학습목표",
-    "v": "프로게스틴 소퇴 출혈 음성 + 낮은 성선자극호르몬 → 저에스트로겐 → 골밀도 저하"
-   },
-   {
-    "k": "근거·출처",
-    "v": "Endocrine Society Clinical Practice Guideline: Functional Hypothalamic Amenorrhea (J Clin Endocrinol Metab 2017)"
-   }
-  ],
-  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "vitals": [],
-  "labs": [],
-  "appendix": null,
-  "figureImg": null,
-  "attribution": {
-   "dataset": "",
-   "license": "",
-   "license_url": "",
-   "url": "",
-   "asset_id": "",
-   "text": ""
-  },
-  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "qid": "Q0009"
- },
- {
-  "id": "imaging-2026-0008",
-  "exam": "imaging",
-  "style": "usmle_style",
-  "styleLabel": "USMLE형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
-  "subtopic": "부인과 — 자궁외임신·기능성 무월경",
-  "type": "부인과 — 자궁외임신·기능성 무월경",
-  "modality": "",
-  "difficulty": 4,
-  "difficultyLabel": "상",
-  "created": "2026-09-13",
-  "vignette": "A 29-year-old woman has vaginal spotting 7 weeks after her last menstrual period. She is hemodynamically stable. Transvaginal ultrasonography shows no intrauterine pregnancy and a 2.5-cm left adnexal mass without cardiac activity. Serum β-hCG concentration is 2800 mIU/mL. Methotrexate therapy is being considered.",
-  "question": "Which of the following additional findings is an absolute contraindication to this treatment?",
-  "options": [
-   "She desires future pregnancy",
-   "She is breastfeeding her 8-month-old son",
-   "Her blood type is Rh-negative",
-   "She had a previous ectopic pregnancy treated with salpingostomy",
-   "Her serum β-hCG concentration rose 20% over 48 hours"
-  ],
-  "answer": 2,
-  "explanationText": "- 정답 핵심: Methotrexate is excreted in breast milk and is toxic to the infant; breastfeeding is an absolute contraindication (with immunodeficiency, liver/renal/pulmonary disease, blood dyscrasias, peptic ulcer, intrauterine pregnancy, and rupture/instability).\n- 오답 이유:\n  - (A) Desire for fertility favors medical or tube-sparing management\n  - (C) Rh-negative status only requires anti-D immune globulin\n  - (D) A prior ectopic pregnancy does not preclude medical management\n  - (E) A suboptimal hCG rise is what defines an abnormal (e.g., ectopic) pregnancy; it is not a contraindication\n- 함정: 「절대 금기」와 「실패 위험 요인(hCG 고값·태아심박·큰 종괴)」을 섞지 않는다.\n- 학습목표: 자궁외임신 메토트렉세이트의 절대 금기 구분\n- 근거·출처: ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018)",
-  "explanationItems": [
-   {
-    "k": "정답 핵심",
-    "v": "Methotrexate is excreted in breast milk and is toxic to the infant; breastfeeding is an absolute contraindication (with immunodeficiency, liver/renal/pulmonary disease, blood dyscrasias, peptic ulcer, intrauterine pregnancy, and rupture/instability)."
-   },
-   {
-    "k": "오답 이유",
-    "v": "(A) Desire for fertility favors medical or tube-sparing management\n(C) Rh-negative status only requires anti-D immune globulin\n(D) A prior ectopic pregnancy does not preclude medical management\n(E) A suboptimal hCG rise is what defines an abnormal (e.g., ectopic) pregnancy; it is not a contraindication"
-   },
-   {
-    "k": "함정",
-    "v": "「절대 금기」와 「실패 위험 요인(hCG 고값·태아심박·큰 종괴)」을 섞지 않는다."
-   },
-   {
-    "k": "학습목표",
-    "v": "자궁외임신 메토트렉세이트의 절대 금기 구분"
-   },
-   {
-    "k": "근거·출처",
-    "v": "ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018)"
-   }
-  ],
-  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "vitals": [],
-  "labs": [],
-  "appendix": null,
-  "figureImg": null,
-  "attribution": {
-   "dataset": "",
-   "license": "",
-   "license_url": "",
-   "url": "",
-   "asset_id": "",
-   "text": ""
-  },
-  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "qid": "Q0008"
- },
- {
-  "id": "imaging-2026-0007",
-  "exam": "imaging",
-  "style": "kmle_style",
-  "styleLabel": "국시형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
-  "subtopic": "산과 — 분만 중 태아감시·산과 마취",
-  "type": "산과 — 분만 중 태아감시·산과 마취",
-  "modality": "",
-  "difficulty": 3,
-  "difficultyLabel": "중",
-  "created": "2026-09-13",
-  "vignette": "39주 초산부가 제왕절개술을 위해 척추마취를 받았다. 마취 5분 뒤 혈압이 80/45 mmHg(마취 전 120/75 mmHg), 맥박이 분당 112회로 오르고 오심을 호소한다.",
-  "question": "자궁을 왼쪽으로 밀고 수액을 주면서 투여할 승압제로 가장 적절한 것은?",
-  "options": [
-   "에페드린",
-   "도파민",
-   "바소프레신",
-   "에피네프린",
-   "페닐에프린"
-  ],
-  "answer": 5,
-  "explanationText": "- 정답 핵심: 척추마취의 교감신경 차단으로 혈관이 확장된 저혈압이다. 순수 α1 작용제인 페닐에프린이 1차 선택이다 — 태아 산증이 에페드린보다 적고, 반사 서맥으로 이미 빠른 모체 맥박을 오히려 낮춘다.\n- 오답 이유:\n  - ① 에페드린은 태반을 넘어 태아 대사를 높여 제대혈 산증을 늘리고, 빈맥을 더 악화시킨다 — 서맥을 동반한 저혈압에서만 고려\n  - ② 도파민은 산과 척추마취 저혈압의 표준 승압제가 아니다\n  - ③ 바소프레신은 난치성 혈관확장성 쇼크의 보조약\n  - ④ 에피네프린은 심정지·아나필락시스용이며 자궁혈류를 줄일 수 있다\n- 함정: 에페드린이 「자궁혈류 보존」으로 배웠던 옛 선택이지만, 현재 권고는 페닐에프린 — 특히 모체 빈맥이면 에페드린은 오답.\n- 학습목표: 제왕절개 척추마취 후 저혈압의 승압제 선택\n- 근거·출처: International consensus statement on the management of hypotension with vasopressors during caesarean section under spinal anaesthesia (Anaesthesia 2018)",
-  "explanationItems": [
-   {
-    "k": "정답 핵심",
-    "v": "척추마취의 교감신경 차단으로 혈관이 확장된 저혈압이다. 순수 α1 작용제인 페닐에프린이 1차 선택이다 — 태아 산증이 에페드린보다 적고, 반사 서맥으로 이미 빠른 모체 맥박을 오히려 낮춘다."
-   },
-   {
-    "k": "오답 이유",
-    "v": "① 에페드린은 태반을 넘어 태아 대사를 높여 제대혈 산증을 늘리고, 빈맥을 더 악화시킨다 — 서맥을 동반한 저혈압에서만 고려\n② 도파민은 산과 척추마취 저혈압의 표준 승압제가 아니다\n③ 바소프레신은 난치성 혈관확장성 쇼크의 보조약\n④ 에피네프린은 심정지·아나필락시스용이며 자궁혈류를 줄일 수 있다"
-   },
-   {
-    "k": "함정",
-    "v": "에페드린이 「자궁혈류 보존」으로 배웠던 옛 선택이지만, 현재 권고는 페닐에프린 — 특히 모체 빈맥이면 에페드린은 오답."
-   },
-   {
-    "k": "학습목표",
-    "v": "제왕절개 척추마취 후 저혈압의 승압제 선택"
-   },
-   {
-    "k": "근거·출처",
-    "v": "International consensus statement on the management of hypotension with vasopressors during caesarean section under spinal anaesthesia (Anaesthesia 2018)"
-   }
-  ],
-  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "vitals": [],
-  "labs": [],
-  "appendix": null,
-  "figureImg": null,
-  "attribution": {
-   "dataset": "",
-   "license": "",
-   "license_url": "",
-   "url": "",
-   "asset_id": "",
-   "text": ""
-  },
-  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "qid": "Q0007"
- },
- {
   "id": "imaging-2026-0006",
   "exam": "imaging",
   "style": "usmle_style",
   "styleLabel": "USMLE형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·응급·마취)",
   "subtopic": "산과 — 분만 중 태아감시·산과 마취",
   "type": "산과 — 분만 중 태아감시·산과 마취",
   "modality": "CTG",
+  "step": "Step 2",
   "difficulty": 4,
   "difficultyLabel": "상",
   "created": "2026-09-13",
@@ -254,77 +70,17 @@ window.IMAGING_QUESTIONS = [
   "qid": "Q0006"
  },
  {
-  "id": "imaging-2026-0005",
-  "exam": "imaging",
-  "style": "kmle_style",
-  "styleLabel": "국시형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
-  "subtopic": "생식샘 조직학과 성분화·무월경",
-  "type": "생식샘 조직학과 성분화·무월경",
-  "modality": "",
-  "difficulty": 4,
-  "difficultyLabel": "상",
-  "created": "2026-09-13",
-  "vignette": "17세 여자가 월경을 한 번도 하지 않아 왔다. 키 170 cm, 유방 발달은 성숙 단계이나 음모와 겨드랑이털이 거의 없다. 외부생식기는 여성형이고 질은 짧은 맹낭으로 끝나며 골반 초음파에서 자궁이 보이지 않는다. 혈청 테스토스테론은 성인 남성 정상 범위다.",
-  "question": "진단은?",
-  "options": [
-   "터너증후군",
-   "5α-환원효소 결핍증",
-   "칼만증후군",
-   "완전 안드로겐무감응증후군",
-   "뮐러관무형성(MRKH 증후군)"
-  ],
-  "answer": 4,
-  "explanationText": "- 정답 핵심: 46,XY 에서 고환의 세르톨리세포가 AMH 를 내어 자궁·질 상부가 없고, 안드로겐 수용체가 작동하지 않아 음모·액모가 없으며, 테스토스테론이 방향화된 에스트라디올로 유방은 발달한다.\n- 오답 이유:\n  - ① 터너증후군은 난소부전으로 유방 발달이 없고 키가 작으며 자궁은 있다\n  - ② 5α-환원효소 결핍은 사춘기에 남성화(음경 성장)가 일어나고 유방 발달이 두드러지지 않는다\n  - ③ 칼만증후군은 성선자극호르몬 결핍으로 유방 발달이 없고 자궁은 정상이다\n  - ⑤ MRKH 도 자궁이 없지만 46,XX 로 음모·액모가 정상이고 테스토스테론은 여성 범위다\n- 함정: 「자궁 없음」만 보고 MRKH 로 가지 않는다 — 음모 유무와 테스토스테론 수치가 두 질환을 가른다.\n- 학습목표: 원발무월경에서 음모 결여 + 남성 수준 테스토스테론으로 완전 안드로겐무감응 감별\n- 근거·출처: 표준 부인과 내분비 지식 — 원발무월경 감별(Speroff 9판 11장)",
-  "explanationItems": [
-   {
-    "k": "정답 핵심",
-    "v": "46,XY 에서 고환의 세르톨리세포가 AMH 를 내어 자궁·질 상부가 없고, 안드로겐 수용체가 작동하지 않아 음모·액모가 없으며, 테스토스테론이 방향화된 에스트라디올로 유방은 발달한다."
-   },
-   {
-    "k": "오답 이유",
-    "v": "① 터너증후군은 난소부전으로 유방 발달이 없고 키가 작으며 자궁은 있다\n② 5α-환원효소 결핍은 사춘기에 남성화(음경 성장)가 일어나고 유방 발달이 두드러지지 않는다\n③ 칼만증후군은 성선자극호르몬 결핍으로 유방 발달이 없고 자궁은 정상이다\n⑤ MRKH 도 자궁이 없지만 46,XX 로 음모·액모가 정상이고 테스토스테론은 여성 범위다"
-   },
-   {
-    "k": "함정",
-    "v": "「자궁 없음」만 보고 MRKH 로 가지 않는다 — 음모 유무와 테스토스테론 수치가 두 질환을 가른다."
-   },
-   {
-    "k": "학습목표",
-    "v": "원발무월경에서 음모 결여 + 남성 수준 테스토스테론으로 완전 안드로겐무감응 감별"
-   },
-   {
-    "k": "근거·출처",
-    "v": "표준 부인과 내분비 지식 — 원발무월경 감별(Speroff 9판 11장)"
-   }
-  ],
-  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "vitals": [],
-  "labs": [],
-  "appendix": null,
-  "figureImg": null,
-  "attribution": {
-   "dataset": "",
-   "license": "",
-   "license_url": "",
-   "url": "",
-   "asset_id": "",
-   "text": ""
-  },
-  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
-  "qid": "Q0005"
- },
- {
   "id": "imaging-2026-0004",
   "exam": "imaging",
   "style": "usmle_style",
   "styleLabel": "USMLE형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(생식의학·응급·마취)",
   "subtopic": "생식샘 조직학과 성분화·무월경",
   "type": "생식샘 조직학과 성분화·무월경",
   "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
   "difficulty": 3,
   "difficultyLabel": "중",
   "created": "2026-09-13",
@@ -386,11 +142,13 @@ window.IMAGING_QUESTIONS = [
   "exam": "imaging",
   "style": "kmle_style",
   "styleLabel": "국시형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(생식의학·응급·마취)",
   "subtopic": "생식샘 조직학과 성분화·무월경",
   "type": "생식샘 조직학과 성분화·무월경",
   "modality": "HISTOLOGY_IHC",
+  "step": "",
   "difficulty": 4,
   "difficultyLabel": "상",
   "created": "2026-09-13",
@@ -452,11 +210,13 @@ window.IMAGING_QUESTIONS = [
   "exam": "imaging",
   "style": "kmle_style",
   "styleLabel": "국시형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·응급·마취)",
   "subtopic": "심전도 판독 — 응급·마취 전 평가",
   "type": "심전도 판독 — 응급·마취 전 평가",
   "modality": "ECG",
+  "step": "",
   "difficulty": 3,
   "difficultyLabel": "중",
   "created": "2026-09-13",
@@ -518,11 +278,13 @@ window.IMAGING_QUESTIONS = [
   "exam": "imaging",
   "style": "kmle_style",
   "styleLabel": "국시형",
-  "subject": "통합(생식의학·응급·마취)",
-  "subject_file": "통합(생식의학·응급·마취)",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·응급·마취)",
   "subtopic": "심전도 판독 — 응급·마취 전 평가",
   "type": "심전도 판독 — 응급·마취 전 평가",
   "modality": "ECG",
+  "step": "",
   "difficulty": 4,
   "difficultyLabel": "상",
   "created": "2026-09-13",
@@ -578,5 +340,261 @@ window.IMAGING_QUESTIONS = [
   },
   "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
   "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0009",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·응급·마취)",
+  "subtopic": "부인과 — 자궁외임신·기능성 무월경",
+  "type": "부인과 — 자궁외임신·기능성 무월경",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-13",
+  "vignette": "A 22-year-old woman who is a collegiate long-distance runner comes to the physician because she has not had a menstrual period for 8 months. Her BMI is 17.5 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges. She has no withdrawal bleeding after a 10-day course of oral medroxyprogesterone. Serum FSH and LH concentrations are low-normal.",
+  "question": "This patient is at greatest risk for which of the following?",
+  "options": [
+   "Decreased bone mineral density",
+   "Endometrial hyperplasia",
+   "Hirsutism",
+   "Galactorrhea",
+   "Venous thromboembolism"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: No withdrawal bleeding means the endometrium was not estrogen-primed; low-normal gonadotropins place the defect in the hypothalamus (energy deficit suppresses GnRH pulsatility). The resulting hypoestrogenism causes bone loss — the female athlete triad.\n- 오답 이유:\n  - (B) Endometrial hyperplasia follows unopposed estrogen in anovulation with adequate estrogen (e.g., PCOS), which would give withdrawal bleeding\n  - (C) Hirsutism reflects hyperandrogenism (PCOS, CAH), not hypothalamic suppression\n  - (D) Galactorrhea implies hyperprolactinemia; prolactin is normal\n  - (E) Thromboembolic risk rises with estrogen excess or exogenous estrogen, not deficiency\n- 함정: 무월경이면 무조건 「자궁내막증식 위험」이 아니다 — 소퇴 출혈 여부로 에스트로겐이 있는지를 먼저 가른다.\n- 학습목표: 프로게스틴 소퇴 출혈 음성 + 낮은 성선자극호르몬 → 저에스트로겐 → 골밀도 저하\n- 근거·출처: Endocrine Society Clinical Practice Guideline: Functional Hypothalamic Amenorrhea (J Clin Endocrinol Metab 2017)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "No withdrawal bleeding means the endometrium was not estrogen-primed; low-normal gonadotropins place the defect in the hypothalamus (energy deficit suppresses GnRH pulsatility). The resulting hypoestrogenism causes bone loss — the female athlete triad."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Endometrial hyperplasia follows unopposed estrogen in anovulation with adequate estrogen (e.g., PCOS), which would give withdrawal bleeding\n(C) Hirsutism reflects hyperandrogenism (PCOS, CAH), not hypothalamic suppression\n(D) Galactorrhea implies hyperprolactinemia; prolactin is normal\n(E) Thromboembolic risk rises with estrogen excess or exogenous estrogen, not deficiency"
+   },
+   {
+    "k": "함정",
+    "v": "무월경이면 무조건 「자궁내막증식 위험」이 아니다 — 소퇴 출혈 여부로 에스트로겐이 있는지를 먼저 가른다."
+   },
+   {
+    "k": "학습목표",
+    "v": "프로게스틴 소퇴 출혈 음성 + 낮은 성선자극호르몬 → 저에스트로겐 → 골밀도 저하"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Endocrine Society Clinical Practice Guideline: Functional Hypothalamic Amenorrhea (J Clin Endocrinol Metab 2017)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0008",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·응급·마취)",
+  "subtopic": "부인과 — 자궁외임신·기능성 무월경",
+  "type": "부인과 — 자궁외임신·기능성 무월경",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "A 29-year-old woman has vaginal spotting 7 weeks after her last menstrual period. She is hemodynamically stable. Transvaginal ultrasonography shows no intrauterine pregnancy and a 2.5-cm left adnexal mass without cardiac activity. Serum β-hCG concentration is 2800 mIU/mL. Methotrexate therapy is being considered.",
+  "question": "Which of the following additional findings is an absolute contraindication to this treatment?",
+  "options": [
+   "She desires future pregnancy",
+   "She is breastfeeding her 8-month-old son",
+   "Her blood type is Rh-negative",
+   "She had a previous ectopic pregnancy treated with salpingostomy",
+   "Her serum β-hCG concentration rose 20% over 48 hours"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Methotrexate is excreted in breast milk and is toxic to the infant; breastfeeding is an absolute contraindication (with immunodeficiency, liver/renal/pulmonary disease, blood dyscrasias, peptic ulcer, intrauterine pregnancy, and rupture/instability).\n- 오답 이유:\n  - (A) Desire for fertility favors medical or tube-sparing management\n  - (C) Rh-negative status only requires anti-D immune globulin\n  - (D) A prior ectopic pregnancy does not preclude medical management\n  - (E) A suboptimal hCG rise is what defines an abnormal (e.g., ectopic) pregnancy; it is not a contraindication\n- 함정: 「절대 금기」와 「실패 위험 요인(hCG 고값·태아심박·큰 종괴)」을 섞지 않는다.\n- 학습목표: 자궁외임신 메토트렉세이트의 절대 금기 구분\n- 근거·출처: ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Methotrexate is excreted in breast milk and is toxic to the infant; breastfeeding is an absolute contraindication (with immunodeficiency, liver/renal/pulmonary disease, blood dyscrasias, peptic ulcer, intrauterine pregnancy, and rupture/instability)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Desire for fertility favors medical or tube-sparing management\n(C) Rh-negative status only requires anti-D immune globulin\n(D) A prior ectopic pregnancy does not preclude medical management\n(E) A suboptimal hCG rise is what defines an abnormal (e.g., ectopic) pregnancy; it is not a contraindication"
+   },
+   {
+    "k": "함정",
+    "v": "「절대 금기」와 「실패 위험 요인(hCG 고값·태아심박·큰 종괴)」을 섞지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁외임신 메토트렉세이트의 절대 금기 구분"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0007",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·응급·마취)",
+  "subtopic": "산과 — 분만 중 태아감시·산과 마취",
+  "type": "산과 — 분만 중 태아감시·산과 마취",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-13",
+  "vignette": "39주 초산부가 제왕절개술을 위해 척추마취를 받았다. 마취 5분 뒤 혈압이 80/45 mmHg(마취 전 120/75 mmHg), 맥박이 분당 112회로 오르고 오심을 호소한다.",
+  "question": "자궁을 왼쪽으로 밀고 수액을 주면서 투여할 승압제로 가장 적절한 것은?",
+  "options": [
+   "에페드린",
+   "도파민",
+   "바소프레신",
+   "에피네프린",
+   "페닐에프린"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 척추마취의 교감신경 차단으로 혈관이 확장된 저혈압이다. 순수 α1 작용제인 페닐에프린이 1차 선택이다 — 태아 산증이 에페드린보다 적고, 반사 서맥으로 이미 빠른 모체 맥박을 오히려 낮춘다.\n- 오답 이유:\n  - ① 에페드린은 태반을 넘어 태아 대사를 높여 제대혈 산증을 늘리고, 빈맥을 더 악화시킨다 — 서맥을 동반한 저혈압에서만 고려\n  - ② 도파민은 산과 척추마취 저혈압의 표준 승압제가 아니다\n  - ③ 바소프레신은 난치성 혈관확장성 쇼크의 보조약\n  - ④ 에피네프린은 심정지·아나필락시스용이며 자궁혈류를 줄일 수 있다\n- 함정: 에페드린이 「자궁혈류 보존」으로 배웠던 옛 선택이지만, 현재 권고는 페닐에프린 — 특히 모체 빈맥이면 에페드린은 오답.\n- 학습목표: 제왕절개 척추마취 후 저혈압의 승압제 선택\n- 근거·출처: International consensus statement on the management of hypotension with vasopressors during caesarean section under spinal anaesthesia (Anaesthesia 2018)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "척추마취의 교감신경 차단으로 혈관이 확장된 저혈압이다. 순수 α1 작용제인 페닐에프린이 1차 선택이다 — 태아 산증이 에페드린보다 적고, 반사 서맥으로 이미 빠른 모체 맥박을 오히려 낮춘다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 에페드린은 태반을 넘어 태아 대사를 높여 제대혈 산증을 늘리고, 빈맥을 더 악화시킨다 — 서맥을 동반한 저혈압에서만 고려\n② 도파민은 산과 척추마취 저혈압의 표준 승압제가 아니다\n③ 바소프레신은 난치성 혈관확장성 쇼크의 보조약\n④ 에피네프린은 심정지·아나필락시스용이며 자궁혈류를 줄일 수 있다"
+   },
+   {
+    "k": "함정",
+    "v": "에페드린이 「자궁혈류 보존」으로 배웠던 옛 선택이지만, 현재 권고는 페닐에프린 — 특히 모체 빈맥이면 에페드린은 오답."
+   },
+   {
+    "k": "학습목표",
+    "v": "제왕절개 척추마취 후 저혈압의 승압제 선택"
+   },
+   {
+    "k": "근거·출처",
+    "v": "International consensus statement on the management of hypotension with vasopressors during caesarean section under spinal anaesthesia (Anaesthesia 2018)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0005",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·응급·마취)",
+  "subtopic": "생식샘 조직학과 성분화·무월경",
+  "type": "생식샘 조직학과 성분화·무월경",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "17세 여자가 월경을 한 번도 하지 않아 왔다. 키 170 cm, 유방 발달은 성숙 단계이나 음모와 겨드랑이털이 거의 없다. 외부생식기는 여성형이고 질은 짧은 맹낭으로 끝나며 골반 초음파에서 자궁이 보이지 않는다. 혈청 테스토스테론은 성인 남성 정상 범위다.",
+  "question": "진단은?",
+  "options": [
+   "터너증후군",
+   "5α-환원효소 결핍증",
+   "칼만증후군",
+   "완전 안드로겐무감응증후군",
+   "뮐러관무형성(MRKH 증후군)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 46,XY 에서 고환의 세르톨리세포가 AMH 를 내어 자궁·질 상부가 없고, 안드로겐 수용체가 작동하지 않아 음모·액모가 없으며, 테스토스테론이 방향화된 에스트라디올로 유방은 발달한다.\n- 오답 이유:\n  - ① 터너증후군은 난소부전으로 유방 발달이 없고 키가 작으며 자궁은 있다\n  - ② 5α-환원효소 결핍은 사춘기에 남성화(음경 성장)가 일어나고 유방 발달이 두드러지지 않는다\n  - ③ 칼만증후군은 성선자극호르몬 결핍으로 유방 발달이 없고 자궁은 정상이다\n  - ⑤ MRKH 도 자궁이 없지만 46,XX 로 음모·액모가 정상이고 테스토스테론은 여성 범위다\n- 함정: 「자궁 없음」만 보고 MRKH 로 가지 않는다 — 음모 유무와 테스토스테론 수치가 두 질환을 가른다.\n- 학습목표: 원발무월경에서 음모 결여 + 남성 수준 테스토스테론으로 완전 안드로겐무감응 감별\n- 근거·출처: 표준 부인과 내분비 지식 — 원발무월경 감별(Speroff 9판 11장)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "46,XY 에서 고환의 세르톨리세포가 AMH 를 내어 자궁·질 상부가 없고, 안드로겐 수용체가 작동하지 않아 음모·액모가 없으며, 테스토스테론이 방향화된 에스트라디올로 유방은 발달한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 터너증후군은 난소부전으로 유방 발달이 없고 키가 작으며 자궁은 있다\n② 5α-환원효소 결핍은 사춘기에 남성화(음경 성장)가 일어나고 유방 발달이 두드러지지 않는다\n③ 칼만증후군은 성선자극호르몬 결핍으로 유방 발달이 없고 자궁은 정상이다\n⑤ MRKH 도 자궁이 없지만 46,XX 로 음모·액모가 정상이고 테스토스테론은 여성 범위다"
+   },
+   {
+    "k": "함정",
+    "v": "「자궁 없음」만 보고 MRKH 로 가지 않는다 — 음모 유무와 테스토스테론 수치가 두 질환을 가른다."
+   },
+   {
+    "k": "학습목표",
+    "v": "원발무월경에서 음모 결여 + 남성 수준 테스토스테론으로 완전 안드로겐무감응 감별"
+   },
+   {
+    "k": "근거·출처",
+    "v": "표준 부인과 내분비 지식 — 원발무월경 감별(Speroff 9판 11장)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+  "qid": "Q0005"
  }
 ];

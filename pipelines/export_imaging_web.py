@@ -73,11 +73,14 @@ def build_record(path: Path) -> dict | None:
         "exam": "imaging",
         "style": style,
         "styleLabel": STYLE_LABEL.get(style, style),
-        "subject": m.get("topic", ""),
+        "subject": m.get("topic", ""),                 # 과목(파트) — KMLE/USMLE 덱과 같은 과목 필터 축
         "subject_file": m.get("topic", ""),
+        "setSubject": m.get("set_subject", ""),        # 세트가 속한 통합 과목(참고 표시)
         "subtopic": m.get("subtopic", ""),
         "type": m.get("subtopic", ""),
         "modality": m.get("modality", ""),
+        # USMLE 덱에 섞일 때 Step 필터를 통과하도록 임상 Step 2 로 둔다(영상 문항은 전부 임상형)
+        "step": "Step 2" if style == "usmle_style" else "",
         "difficulty": m.get("difficulty"),
         "difficultyLabel": m.get("difficulty_label", ""),
         "created": str(m.get("date", "") or ""),
@@ -113,7 +116,8 @@ def load_records(base: Path = IMAGING_DIR) -> list[dict]:
         rec = build_record(p)
         if rec:
             records.append(rec)
-    records.sort(key=lambda r: (r["created"], r["id"]), reverse=True)
+    # 최신 날짜 → 영상 있는 문항 먼저 → id 역순 (영상 덱 첫 화면에 영상이 보이게)
+    records.sort(key=lambda r: (r["created"], 1 if r["figureImg"] else 0, r["id"]), reverse=True)
     return records
 
 
