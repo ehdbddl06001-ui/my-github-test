@@ -92,8 +92,8 @@ window.IMAGING_QUESTIONS = [
   "difficulty": 3,
   "difficultyLabel": "중",
   "created": "2026-09-13",
-  "vignette": "A tissue section obtained from an 84-year-old man is stained by immunohistochemistry for a peptide hormone.",
-  "question": "The strongly brown-stained cells are the principal target of which of the following hormones?",
+  "vignette": "An 84-year-old man undergoes bilateral orchiectomy as androgen-deprivation therapy for metastatic prostate cancer. A section of the resected testis is stained by immunohistochemistry for a peptide hormone that is produced by only one cell population in this organ; the photomicrograph is shown (brown = positive, blue = hematoxylin counterstain).",
+  "question": "The strongly stained cells are the principal target of which of the following hormones?",
   "options": [
    "Anti-Müllerian hormone",
    "Prolactin",
@@ -168,7 +168,7 @@ window.IMAGING_QUESTIONS = [
   "difficulty": 4,
   "difficultyLabel": "상",
   "created": "2026-09-13",
-  "vignette": "65세 남자에게서 얻은 장기 조직 절편에 어떤 전사인자에 대한 면역조직화학염색을 하였다.",
+  "vignette": "65세 남자가 전이 전립선암의 호르몬 치료로 양측 고환절제술을 받았다. 절제한 고환 조직 절편에 어떤 전사인자에 대한 면역조직화학염색(갈색 = 양성, 청색 = 대조염색)을 하였더니 그림과 같았다.",
   "question": "짙은 갈색 핵으로 강하게 염색된 세포가 태아기에 분비하는 물질의 작용으로 옳은 것은?",
   "options": [
    "외부생식기의 남성화",
