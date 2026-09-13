@@ -427,11 +427,36 @@ function fmtExplValue(v) {
   return s;
 }
 
-// 구조화 해설: `- **키**: 값` 항목들을 각각 간격을 둔 박스로 렌더한다.
+// 깊이 해설(정리본 해설지 규칙): 원리·비교는 HTML(<b>·<br>·<table>)을 허용하되 화이트리스트로 정화해 그린다.
+const DEEP_KEYS = { "원리": ["prin", "왜 그런가 — 원리"], "비교": ["cmpx", "경계는 어디인가 — 비교"] };
+const SAFE_TAGS = new Set(["B", "STRONG", "I", "EM", "U", "BR", "TABLE", "THEAD", "TBODY", "TR", "TH", "TD", "UL", "OL", "LI", "P", "SPAN", "SUB", "SUP"]);
+function sanitizeHtml(html) {
+  let doc;
+  try { doc = new DOMParser().parseFromString("<div>" + String(html || "") + "</div>", "text/html"); }
+  catch (e) { return escapeHtml(html); }
+  const walk = (node) => {
+    let out = "";
+    node.childNodes.forEach((n) => {
+      if (n.nodeType === 3) { out += escapeHtml(n.nodeValue); return; }
+      if (n.nodeType !== 1) return;
+      const tag = n.tagName;
+      if (!SAFE_TAGS.has(tag)) { out += walk(n); return; }   // 허용 밖 태그는 벗기고 내용만
+      const t = tag.toLowerCase();
+      out += t === "br" ? "<br>" : `<${t}>${walk(n)}</${t}>`;
+    });
+    return out;
+  };
+  return walk(doc.body.firstChild || doc.body);
+}
+
+// 구조화 해설: `- **키**: 값` 항목들을 각각 간격을 둔 박스로 렌더한다. 원리·비교는 정리본 해설지와 같은 제목의 박스.
 function renderExplItems(items) {
-  return items.map((it) =>
-    `<div class="expl-item"><span class="k">${escapeHtml(it.k)}</span>${fmtExplValue(it.v)}</div>`
-  ).join("");
+  return items.map((it) => {
+    const deep = DEEP_KEYS[it.k];
+    if (deep) return `<div class="expl-item deep ${deep[0]}"><div class="k">${deep[1]}</div><div class="deep-body">${sanitizeHtml(it.v)}</div></div>`;
+    const key = it.k === "오답 이유" ? "선지별로 틀린 이유 — 정답이 되려면 무엇이 달라져야 하는가" : it.k;
+    return `<div class="expl-item"><span class="k">${escapeHtml(key)}</span>${fmtExplValue(it.v)}</div>`;
+  }).join("");
 }
 
 // 구조화 임상 자료(활력징후·검사소견)를 문제 상단 박스로 렌더한다.
