@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2314,
+  "total": 2323,
   "byType": {
    "anatomy": 626,
-   "imaging": 9,
+   "imaging": 18,
    "paper": 585,
    "kmle": 939,
    "usmle": 138,
@@ -40,28 +40,29 @@ window.MEDKOS_INDEX = {
    "Physiology": 16,
    "Pharmacology": 11,
    "Microbiology": 10,
+   "산부인과": 10,
    "Biochemistry": 9,
    "Immunology": 7,
    "Internal Medicine": 7,
-   "산부인과": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "순환기": 4,
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "병리·조직학": 2,
-   "순환기": 2,
+   "호흡기": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1498,
+   "high": 1507,
    "medium": 767,
    "low": 49
   },
-  "tagCount": 3169
+  "tagCount": 3170
  },
  "docs": [
   {
@@ -77,6 +78,164 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-14.md",
    "snippet": "오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-14 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0018",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0018.md",
+   "snippet": "A 26 year old woman, gravida 1, comes to the emergency department because of mild left lower abdominal pain for 1 day. Her last menstrual period was 6 weeks ago and a home pregnancy test was positive. She has no vaginal bleeding. Her pulse ",
+   "text": "산부인과 부인과 — 골반통·부인과 해부·자궁외임신 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf A 26 year old woman, gravida 1, comes to the emergency department because of mild left lower abdominal pain for 1 day. Her last menstrual period was 6 weeks ago and a home pregnancy test was positive. She has no vaginal bleeding. Her pulse is 78/min and blood pressure is 116/74 mm Hg. The abdomen is soft without rebound or guarding. Transvaginal ultrasonography shows no intrauterine gestational sac, no adnexal mass, and no free fluid. Serum β hCG concentration is 900 mIU/mL and hemoglobin is 12.8 g/dL. Which of the following is the most appropriate next step in management? A. Diagnostic laparoscopy B. Uterine aspiration with histologic examination C. Oral misoprostol D. Repeat serum β hCG measurement in 48 hours E. Single dose intramuscular methotrexate"
+  },
+  {
+   "id": "imaging-2026-0017",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0017.md",
+   "snippet": "45세 여자가 자궁근종으로 복식 전자궁절제술을 받았다. 수술 3일째부터 왼쪽 옆구리 통증과 38.2 ℃ 발열이 생겼다. 조영증강 CT에서 왼쪽 수신증이 있고 자궁목이 있던 자리의 왼쪽 옆에서 조영제가 새어 나온다. 손상된 구조물이 이 부위에서 바로 아래로 지나가는 혈관은? A. 속엉덩동맥 B. 폐쇄동맥 C. 아래방광동맥 D. 자궁동맥 E. 난소동맥",
+   "text": "산부인과 부인과 — 골반통·부인과 해부·자궁외임신 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf 45세 여자가 자궁근종으로 복식 전자궁절제술을 받았다. 수술 3일째부터 왼쪽 옆구리 통증과 38.2 ℃ 발열이 생겼다. 조영증강 CT에서 왼쪽 수신증이 있고 자궁목이 있던 자리의 왼쪽 옆에서 조영제가 새어 나온다. 손상된 구조물이 이 부위에서 바로 아래로 지나가는 혈관은? A. 속엉덩동맥 B. 폐쇄동맥 C. 아래방광동맥 D. 자궁동맥 E. 난소동맥"
+  },
+  {
+   "id": "imaging-2026-0016",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0016.md",
+   "snippet": "17세 여자가 6개월 전부터 월경 첫 1~2일에 아랫배가 쥐어짜듯 아파 왔다. 통증은 허리와 허벅지로 뻗치고 메스꺼움이 함께 있다. 초경은 13세였고 월경주기는 28일로 규칙적이며 성경험은 없다. 진찰과 골반 초음파에서 이상이 없다. 가장 적절한 치료는? A. 진단 복강경검사 B. 경험적 항생제 투여 C. 비스테로이드소염제를 월경 시작과 함께 복용 D. 복합 경구피임약을 주기적으로 복용 E. GnRH 작용제를 3개월 투여",
+   "text": "산부인과 부인과 — 골반통·부인과 해부·자궁외임신 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf 17세 여자가 6개월 전부터 월경 첫 1~2일에 아랫배가 쥐어짜듯 아파 왔다. 통증은 허리와 허벅지로 뻗치고 메스꺼움이 함께 있다. 초경은 13세였고 월경주기는 28일로 규칙적이며 성경험은 없다. 진찰과 골반 초음파에서 이상이 없다. 가장 적절한 치료는? A. 진단 복강경검사 B. 경험적 항생제 투여 C. 비스테로이드소염제를 월경 시작과 함께 복용 D. 복합 경구피임약을 주기적으로 복용 E. GnRH 작용제를 3개월 투여"
+  },
+  {
+   "id": "imaging-2026-0015",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·산과 마취",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0015.md",
+   "snippet": "A 32 year old woman, gravida 2, para 1, at 38 weeks' gestation is brought to the operating room for emergency cesarean delivery under general anesthesia because of umbilical cord prolapse. She ate a full meal 2 hours ago. Rapid sequence ind",
+   "text": "산부인과 산과 — 분만 중 태아감시·산과 마취 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf A 32 year old woman, gravida 2, para 1, at 38 weeks' gestation is brought to the operating room for emergency cesarean delivery under general anesthesia because of umbilical cord prolapse. She ate a full meal 2 hours ago. Rapid sequence induction with cricoid pressure is planned. Which of the following medications is most appropriate to administer immediately before induction to reduce the severity of pneumonitis if aspiration occurs? A. Intravenous dexamethasone B. Oral sodium citrate C. Intravenous ondansetron D. Intravenous midazolam E. Intravenous glycopyrrolate"
+  },
+  {
+   "id": "imaging-2026-0014",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·산과 마취",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0014.md",
+   "snippet": "A 29 year old primigravid woman at 39 weeks' gestation is in the active phase of labor with continuous electronic fetal monitoring. Her pregnancy has been uncomplicated and membranes are intact. The tracing from minutes 30 to 40 of monitori",
+   "text": "산부인과 산과 — 분만 중 태아감시·산과 마취 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf A 29 year old primigravid woman at 39 weeks' gestation is in the active phase of labor with continuous electronic fetal monitoring. Her pregnancy has been uncomplicated and membranes are intact. The tracing from minutes 30 to 40 of monitoring is shown. According to the NICHD three tier system, which of the following best describes this tracing? A. Category II with fetal tachycardia B. Category III with absent variability and recurrent late decelerations C. Category I (normal tracing) D. Category II with minimal baseline variability E. Category II with recurrent variable decelerations"
+  },
+  {
+   "id": "imaging-2026-0013",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "흉부 CT 정상 해부 — 세로칸·가로막",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0013.md",
+   "snippet": "A 67 year old woman undergoes CT of the chest as part of a health screening program. She has no cough, fever, dyspnea, or weight loss, and she has never smoked. An axial image of the chest at the level of the lung bases (lung window) is sho",
+   "text": "호흡기 흉부 CT 정상 해부 — 세로칸·가로막 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf A 67 year old woman undergoes CT of the chest as part of a health screening program. She has no cough, fever, dyspnea, or weight loss, and she has never smoked. An axial image of the chest at the level of the lung bases (lung window) is shown. Which of the following best explains the large, smooth, homogeneous soft tissue density that occupies the anterior part of the right lower hemithorax? A. Dome of the right hemidiaphragm with the liver beneath it B. Consolidation of the right lower lobe C. Loculated right pleural effusion D. Mass arising in the right middle lobe E. Atelectasis of the right lower lobe"
+  },
+  {
+   "id": "imaging-2026-0012",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "흉부 CT 정상 해부 — 세로칸·가로막",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0012.md",
+   "snippet": "67세 여자가 건강검진으로 흉부 CT를 찍었다. 특별한 증상은 없고 흡연력도 없다. 심실 높이의 흉부 CT 축상면(폐창)은 그림과 같다. 척추체의 왼쪽 앞에 접하여 둥근 단면으로 보이는 관 구조물이 가로막을 통과하는 척추 높이는? A. 제8등뼈(T8) B. 제10등뼈(T10) C. 제1허리뼈(L1) D. 제3허리뼈(L3) E. 제12등뼈(T12)",
+   "text": "호흡기 흉부 CT 정상 해부 — 세로칸·가로막 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf 67세 여자가 건강검진으로 흉부 CT를 찍었다. 특별한 증상은 없고 흡연력도 없다. 심실 높이의 흉부 CT 축상면(폐창)은 그림과 같다. 척추체의 왼쪽 앞에 접하여 둥근 단면으로 보이는 관 구조물이 가로막을 통과하는 척추 높이는? A. 제8등뼈(T8) B. 제10등뼈(T10) C. 제1허리뼈(L1) D. 제3허리뼈(L3) E. 제12등뼈(T12)"
+  },
+  {
+   "id": "imaging-2026-0011",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 허혈·전기축",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0011.md",
+   "snippet": "A 25 year old man comes to the clinic for a pre participation sports examination. He has no symptoms and no history of syncope or chest pain. He is tall and thin. Blood pressure is 118/72 mm Hg and pulse is 72/min and regular. A 12 lead ele",
+   "text": "순환기 심전도 판독 — 허혈·전기축 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf A 25 year old man comes to the clinic for a pre participation sports examination. He has no symptoms and no history of syncope or chest pain. He is tall and thin. Blood pressure is 118/72 mm Hg and pulse is 72/min and regular. A 12 lead electrocardiogram is shown. Which of the following best describes the mean QRS axis in the frontal plane? A. Right axis deviation (+90° to +180°) B. Normal axis (−30° to +90°) C. Left axis deviation (−30° to −90°) D. Extreme (northwest) axis (−90° to −180°) E. Indeterminate axis (isoelectric in all limb leads)"
+  },
+  {
+   "id": "imaging-2026-0010",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 허혈·전기축",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+   "confidence": "high",
+   "date": "2026-09-13",
+   "path": "content/imaging/2026/imaging-2026-0010.md",
+   "snippet": "63세 남자가 2주 전부터 계단을 오를 때 가슴이 조이는 느낌이 생겨 왔다. 쉬면 5분 안에 사라지고 지금은 통증이 없다. 고혈압으로 약을 먹고 있다. 혈압 138/86 mmHg, 맥박 분당 66회로 규칙적이다. 안정 시 12유도 심전도는 그림과 같다. 심전도 소견은? A. 불규칙한 RR 간격과 P파 소실 B. II·III·aVF·V6 유도의 ST 분절 하강과 III·aVF 유도의 T파 역위 C. II·III·aVF 유도의 S",
+   "text": "순환기 심전도 판독 — 허혈·전기축 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf 63세 남자가 2주 전부터 계단을 오를 때 가슴이 조이는 느낌이 생겨 왔다. 쉬면 5분 안에 사라지고 지금은 통증이 없다. 고혈압으로 약을 먹고 있다. 혈압 138/86 mmHg, 맥박 분당 66회로 규칙적이다. 안정 시 12유도 심전도는 그림과 같다. 심전도 소견은? A. 불규칙한 RR 간격과 P파 소실 B. II·III·aVF·V6 유도의 ST 분절 하강과 III·aVF 유도의 T파 역위 C. II·III·aVF 유도의 ST 분절 상승과 aVL 유도의 상반성 하강 D. V1–V3 유도의 ST 분절 상승과 병적 Q파 E. QRS 폭 0.12초 이상의 우각차단"
   },
   {
    "id": "imaging-2026-0009",
