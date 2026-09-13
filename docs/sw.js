@@ -7,7 +7,7 @@
    경로는 전부 상대경로라 GitHub Pages(/my-github-test/)와 Cloudflare Pages(/) 어디서든 같다. */
 "use strict";
 
-const VERSION = "medkos-v1";
+const VERSION = "medkos-v2";
 const SHELL = [
   "./", "./index.html", "./style.css", "./app.js", "./pwa.js", "./manifest.webmanifest",
   "./papers.html", "./papers-app.js", "./ailab.html", "./ailab-app.js",

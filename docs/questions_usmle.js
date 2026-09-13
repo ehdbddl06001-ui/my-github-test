@@ -131,7 +131,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "정답근거(기전)",
-    "v": "Salicylate는 ① 연수 호흡중추를 직접 자극 → 호흡성 알칼리증, ② 산화적 인산화 탈공역 + Krebs 회로 억제 → 젖산·케톤 축적으로 고AG 대사성 산증. 두 원발 장애가 동시에 나타난다."
+    "v": "Salicylate는 ① 연수 호흡중추를 직접 자극 → 호흡성 알칼리증,\n② 산화적 인산화 탈공역 + Krebs 회로 억제 → 젖산·케톤 축적으로 고AG 대사성 산증. 두 원발 장애가 동시에 나타난다."
    },
    {
     "k": "오답감별",
@@ -233,7 +233,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "정답근거(관리 4원칙)",
-    "v": "① 모든 heparin 중단(LMWH도 교차반응 → E 오답). ② 비-heparin 항응고제 시작: argatroban·bivalirudin(직접 트롬빈 억제제) 또는 fondaparinux. ③ warfarin은 혈소판 회복(대개 >150k)까지 보류 — 급성기 단독 warfarin은 protein C 급감으로 정맥사지괴저·피부괴사 유발. ④ 혈소판 수혈 금지 — 혈전 악화(D 오답)."
+    "v": "① 모든 heparin 중단(LMWH도 교차반응 → E 오답).\n② 비-heparin 항응고제 시작: argatroban·bivalirudin(직접 트롬빈 억제제) 또는 fondaparinux. ③ warfarin은 혈소판 회복(대개 >150k)까지 보류 — 급성기 단독 warfarin은 protein C 급감으로 정맥사지괴저·피부괴사 유발. ④ 혈소판 수혈 금지 — 혈전 악화(D 오답)."
    },
    {
     "k": "오답감별",
@@ -1570,7 +1570,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "임상핵심",
-    "v": "NSR 정의 = 모든 QRS 앞 정상 P파 · 규칙적 · 60–100회/분. 판독은 ①리듬 규칙성 ②P파 유무·관계 ③QRS 폭 순으로 본다."
+    "v": "NSR 정의 = 모든 QRS 앞 정상 P파 · 규칙적 · 60–100회/분. 판독은\n①리듬 규칙성 ②P파 유무·관계 ③QRS 폭 순으로 본다."
    },
    {
     "k": "자료 관련",

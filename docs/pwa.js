@@ -66,9 +66,24 @@
     reloading = true;
   });
 
+  // iPad/iPhone: beforeinstallprompt 가 없다. Safari 공유 → 홈 화면에 추가 로만 설치되므로 한 번 안내한다.
+  function iosHint() {
+    var ua = navigator.userAgent || "";
+    var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var standalone = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+    if (!isIOS || standalone) return;
+    try { if (localStorage.getItem("medkos_ios_hint") === "1") return; } catch (e) { /* ignore */ }
+    var isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua);
+    toast(isSafari
+      ? "아이패드: 하단(또는 상단) 공유 버튼 ▸ 「홈 화면에 추가」를 누르면 앱처럼 설치됩니다."
+      : "아이패드: Safari 로 이 주소를 열고 공유 ▸ 「홈 화면에 추가」를 누르면 앱처럼 설치됩니다.",
+      "알겠어요", function () { try { localStorage.setItem("medkos_ios_hint", "1"); } catch (e) { /* ignore */ } });
+  }
+
   window.addEventListener("load", function () {
     navigator.serviceWorker.register("./sw.js").catch(function (err) {
       console.warn("[pwa] service worker 등록 실패:", err);
     });
+    setTimeout(iosHint, 1200);
   });
 })();
