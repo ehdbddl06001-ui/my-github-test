@@ -34,14 +34,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # 콘텐츠 레인 — 결정론 파이프라인이 만들고 테스트가 지키는 산출물만.
-CONTENT_PREFIXES = ("content/", "docs/", "notebooks/")
+CONTENT_PREFIXES = ("content/", "docs/", "notebooks/", "state/wrong_sync/")
 CONTENT_FILES = ("state/ailab_progress.json",)
 
 # 번들 재생성 순서(색인 → 각 뷰). 하나라도 빠지면 홈페이지가 낡는다.
 BUNDLES = [
     "indexer.py", "export_anatomy_web.py", "export_search_web.py",
     "export_diagrams_web.py", "export_kmle_web.py", "export_usmle_web.py",
-    "export_papers_web.py", "export_ailab_web.py",
+    "export_papers_web.py", "export_ailab_web.py", "export_imaging_web.py",
 ]
 
 

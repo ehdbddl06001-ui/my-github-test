@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MedKOS 대화형 퀴즈 (KMLE · USMLE)</title>
+<title>MedKOS 대화형 퀴즈 (KMLE · USMLE · 영상)</title>
 <link rel="stylesheet" href="style.css" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#0f1620" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
 </head>
 <body>
 <nav class="nav">
@@ -17,7 +24,7 @@
 </nav>
 <header>
   <h1>MedKOS 대화형 퀴즈</h1>
-  <p class="sub">KMLE·USMLE 문항을 풀고 보기를 클릭하면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로 나눠 풀 수 있습니다. 오답은 시험별로 브라우저에 자동 저장되고, 언제든 오답노트(.md)로 내보낼 수 있습니다.</p>
+  <p class="sub">KMLE·USMLE·오픈데이터 영상 문항을 풀고 보기를 누르면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로, 영상은 국시형·USMLE형으로 나눠 풀 수 있습니다. 오답은 시험별로 저장되고, 동기화 서버가 있으면 기기 간에 합쳐집니다.</p>
 </header>
 
 <!-- 설정 화면 -->
@@ -27,6 +34,7 @@
     <select id="exam">
       <option value="kmle" selected>KMLE (국시)</option>
       <option value="usmle">USMLE</option>
+      <option value="imaging">🩻 영상 (오늘의 오픈데이터 영상 문항)</option>
     </select>
   </div>
   <div class="row" id="stepRow" style="display:none">
@@ -35,6 +43,14 @@
       <option value="__ALL__" selected>전체 (Step 1 + Step 2)</option>
       <option value="Step 1">Step 1 (기초의학)</option>
       <option value="Step 2">Step 2 (임상)</option>
+    </select>
+  </div>
+  <div class="row" id="styleRow" style="display:none">
+    <label for="style">형식</label>
+    <select id="style">
+      <option value="__ALL__" selected>전체 (국시형 + USMLE형)</option>
+      <option value="kmle_style">국시형 (①~⑤)</option>
+      <option value="usmle_style">USMLE형 (A~E)</option>
     </select>
   </div>
   <div class="row">
@@ -66,6 +82,15 @@
   </div>
   <p id="modeHint" class="muted"></p>
   <p id="wrongCount" class="muted"></p>
+  <div class="row syncrow">
+    <p id="syncStatus" class="muted sync">☁ 오답 동기화 확인 중…</p>
+    <button id="syncBtn" class="small">지금 동기화</button>
+  </div>
+  <details class="syncopts">
+    <summary class="muted">동기화 설정</summary>
+    <label class="muted" for="syncKey">동기화 키(서버에 SYNC_KEY 를 설정했을 때만 입력)</label>
+    <input type="password" id="syncKey" autocomplete="off" placeholder="비워두면 키 없이 요청" />
+  </details>
 </section>
 
 <!-- 퀴즈 화면 -->
@@ -112,14 +137,18 @@
 
 <footer>
   <p class="muted">
-    브라우저 저장(localStorage)에 오답이 기록됩니다. 이 기기·브라우저에만 남습니다.<br />
-    repo의 <code>오답노트/*.md</code>에 파일로 남기려면 내보낸 파일을 커밋하거나 Codespaces에서 <code>python3 quiz.py</code>를 사용하세요.
+    오답은 이 기기의 브라우저 저장소에 먼저 기록됩니다. Cloudflare Pages 에 배포된 주소에서는 <code>/api/wrong</code> 이
+    오답을 GitHub 저장소(<code>state/wrong_sync/</code>)와 합쳐 핸드폰·PC 가 같은 오답노트를 보고,
+    <code>kmle/오답노트/웹동기화*.md</code> 가 자동으로 만들어집니다. GitHub Pages 주소에서는 이 기기에만 남습니다.<br />
+    Android Chrome 메뉴 ▸ <b>홈 화면에 추가</b>(또는 화면의 「📲 앱으로 설치」)로 앱처럼 쓸 수 있고, 한 번 연 문항은 오프라인에서도 열립니다.
   </p>
 </footer>
 
 <script src="questions.js"></script>
 <script src="questions_kmle_content.js"></script>
 <script src="questions_usmle.js"></script>
+<script src="questions_imaging.js"></script>
 <script src="app.js"></script>
+<script src="pwa.js"></script>
 </body>
 </html>

@@ -74,7 +74,8 @@ def explanation_items(body: str) -> list[dict]:
             cur = {"k": m.group(1).strip(), "v": m.group(2).strip()}
         elif cur is not None and st:     # 이어지는 줄 병합
             # 보기별 반박 하위 불릿(`- A: …`, `(A) …`)은 '\n'으로 보존해 웹이 줄로 렌더.
-            is_sub = re.match(r"^[-*•]?\s*\(?[A-E]\)?\s*[:.)]", st)
+            # 국시형 하위 불릿(`- ① …`)도 같은 규칙으로 줄을 나눈다(imaging 카드).
+            is_sub = re.match(r"^[-*•]?\s*(?:\(?[A-E]\)?\s*[:.)]|[①②③④⑤])", st)
             piece = re.sub(r"^[-*•]\s*", "", st)   # 하위 불릿의 글머리 '- ' 제거
             sep = "\n" if (is_sub and cur["v"]) else (" " if cur["v"] else "")
             cur["v"] = cur["v"] + sep + piece
@@ -108,6 +109,17 @@ def render_figure(fig: dict | None, fname: str = "") -> str:
                 return svg_from_asset(path, lead=fig.get("lead"),
                                       seconds=fig.get("seconds"),
                                       label=fig.get("label"))
+        if kind == "image":                       # 오픈데이터 실제 영상(PNG/JPG, docs/ 기준 상대경로)
+            src = str(fig.get("src", "")).strip()
+            if src:
+                cap = str(fig.get("caption", "") or "")
+                alt = str(fig.get("alt", "") or "임상 영상")
+
+                def esc(t: str) -> str:
+                    return (t.replace("&", "&amp;").replace("<", "&lt;")
+                            .replace(">", "&gt;").replace('"', "&quot;"))
+                return (f'<figure class="imgfig"><img src="{esc(src)}" alt="{esc(alt)}" loading="lazy" data-zoom="1">'
+                        + (f"<figcaption>{esc(cap)}</figcaption>" if cap else "") + "</figure>")
         if kind == "ecg12":                       # 12유도 실데이터(PTB-XL 등)
             from render_signal_svg import svg12_from_asset
             src = fig.get("source")

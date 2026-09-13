@@ -9,7 +9,7 @@ MedKOS의 모든 `.md` 파일은 최상단에 `---` 로 감싼 YAML frontmatter�
 | 필드 | 예시 | 설명 |
 |------|------|------|
 | `id` | `kmle-2026-0142` | 전역 고유. `state.py`의 `next_id()`로 발급 |
-| `type` | `kmle` | `kmle`/`usmle`/`basic`/`paper`/`disease`/`drug` 중 하나 |
+| `type` | `kmle` | `kmle`/`usmle`/`basic`/`paper`/`disease`/`drug`/`ailab`/`anatomy`/`imaging` 중 하나 |
 | `topic` | `Cardiology` | 대주제(검색·연결의 기준) |
 | `date` | `2026-07-02` | 생성일(ISO 8601) |
 | `confidence` | `high` | `high`/`medium`/`low` — 출처 신뢰도 |
@@ -219,6 +219,28 @@ stem·보기에 누설하지 않는다. 객관식 보기는 같은 부위·같�
 - 문항 품질(에포님 떠먹임 금지·활력징후 4종·동질적 보기·오답감별 letter 커버리지)은
   `pipelines/lint_questions.py`가 KMLE·USMLE 공통으로 기계 검증한다(커밋 전 ERROR 0).
 
+## 오픈데이터 영상 문항(`imaging`) 계약
+
+의대_시험지_제작(`medical_exam_builder_v6`) 아침 루틴이 만든 **실제 영상(ECG·CT·피부·병리·CTG)
+문항**을 `opendata medkos-export` 가 옮겨 놓는 카드. 저장 위치 `content/imaging/{연도}/imaging-YYYY-NNNN.md`,
+영상은 `docs/assets/imaging/<id>.<ext>`. 문제형 공통 필수(`stem/choices/answer/answer_separated`)에
+아래가 얹힌다. 웹은 `pipelines/export_imaging_web.py` → `docs/questions_imaging.js` → 「🩻 영상」 덱.
+
+| 필드 | 예시 | 설명 |
+|------|------|------|
+| `style` | `kmle_style` | **필수.** `kmle_style`(①~⑤) / `usmle_style`(A~E) — 웹 글머리·형식 필터 |
+| `modality` | `ECG` | 영상 종류(ECG·CT·DERMOSCOPY·HISTOLOGY_IHC·CTG …) |
+| `figure` | `{type: image, src: assets/imaging/…png, caption, alt}` | 실제 영상. `src` 는 docs/ 기준 상대경로. 캡션에는 데이터셋·라이선스·작도 규약만(진단·기록번호 금지) |
+| `attribution` | `{dataset, license, license_url, url, asset_id, text}` | 출처·라이선스 — 채점 후 해설 아래에만 표시 |
+| `run_id` / `qid` | `20260913T…_7072fb0c` / `Q0001` | 원 세트와 문항 — 내보내기 멱등 키, 폐기 대장 대조 키 |
+| `difficulty_label` | `상` | 빌더 난이도 원문(중/상/최상). `difficulty` 정수는 3/4/5 로 매핑 |
+| `authoring_key` | `D13-LQT` | 빌더 은행 키 |
+
+카드는 **파생물**이다 — 원본은 빌더 run 의 `audit/questions.json`. 문항을 고치려면 빌더에서 폐기
+(`opendata discard-question`)하고 다시 만든다. 폐기된 문항의 카드는 다음 `medkos-export` 가 지운다.
+`## 정답 및 해설` 은 `- **정답 핵심**` `- **오답 이유**`(보기별 하위 불릿 `- ① …`) `- **함정**`
+`- **학습목표**` `- **근거·출처**` 불릿으로 쓰며, 파서(`export_usmle_web.explanation_items`)가 그대로 읽는다.
+
 ## 구조화 임상 자료 & 해설 부록 (문제형 선택)
 
 실제 시험처럼 **차트형 자료(활력징후·검사소견)**를 주고, 해설엔 **일반화 결정표**를
@@ -231,7 +253,7 @@ stem·보기에 누설하지 않는다. 객관식 보기는 같은 부위·같�
 | `vitals` | 리스트 of `{name, value}` | 활력징후. 문제 상단 칩 박스로 렌더 |
 | `labs` | 리스트 of `{name, value, ref}` | 검사 소견 표(항목/값/참고치). **정상 미끼값**을 일부러 섞어 신호·잡음 변별을 강제 |
 | `appendix` | 맵 | 해설 부록. `가이드라인`(여러 줄 → 결정표 박스), `최신지견`(문자열), `참고문헌`(리스트) |
-| `figure` | 맵 | 도형(파형). export가 **결정론적 SVG로 생성**해 문제 상단에 렌더. 현재 `type: ecg` 지원 |
+| `figure` | 맵 | 도형(파형·영상). export가 **결정론적 SVG로 생성**해 문제 상단에 렌더(`type: ecg`·`ecg_signal`·`ecg12`), 또는 `type: image`(docs/ 기준 `src` 의 실제 영상 파일) |
 
 ```yaml
 vitals:
