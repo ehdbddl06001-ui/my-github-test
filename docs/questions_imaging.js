@@ -2,6 +2,386 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0014",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "산과 — 분만 중 태아감시·산과 마취",
+  "type": "산과 — 분만 중 태아감시·산과 마취",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "A 29-year-old primigravid woman at 39 weeks' gestation is in the active phase of labor with continuous electronic fetal monitoring. Her pregnancy has been uncomplicated and membranes are intact. The tracing from minutes 30 to 40 of monitoring is shown.",
+  "question": "According to the NICHD three-tier system, which of the following best describes this tracing?",
+  "options": [
+   "Category II with fetal tachycardia",
+   "Category III with absent variability and recurrent late decelerations",
+   "Category I (normal tracing)",
+   "Category II with minimal baseline variability",
+   "Category II with recurrent variable decelerations"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The baseline fetal heart rate is about 140–145/min (normal range 110–160). Peak-to-trough fluctuation within 1-minute windows is about 7–10/min, i.e. moderate variability (6–25/min). There are no decelerations of any type; two brief rises toward 155–160/min are accelerations or short signal artefacts, and a brief gap around minute 36 is signal loss, not a deceleration. Normal baseline, moderate variability and no late or variable decelerations define Category I.\n- 원리: The three-tier NICHD system is built on <b>four elements read in order: baseline, variability, accelerations, decelerations</b>.<br> <b>Baseline</b> is the mean rate rounded to 5/min over a 10-minute window, excluding accelerations, decelerations and segments of marked variability; it must be present for at least 2 minutes. Here the trace sits at 140–145/min, inside 110–160/min.<br> <b>Variability</b> is the peak-to-trough amplitude of the irregular fluctuations in a 1-minute window: absent (undetectable), minimal (≤5), <b>moderate (6–25)</b>, marked (>25). Moderate variability reflects an <b>intact, oxygenated autonomic system</b> — the sympathetic and parasympathetic inputs continuously tugging the sinus node — and is the single most reassuring feature; its presence makes significant metabolic acidemia unlikely at that moment.<br> <b>Category I</b> requires <b>all</b> of: normal baseline, moderate variability, no late or variable decelerations (early decelerations and accelerations may be present or absent). <b>Category III</b> is absent variability plus recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern. <b>Everything else is Category II</b> — an indeterminate group that calls for evaluation and continued surveillance, not immediate delivery.<br> <b>Why decelerations are classified by timing and shape</b> — early (gradual, nadir with contraction peak: head compression), late (gradual, nadir after the peak: uteroplacental insufficiency), variable (abrupt, ≥15/min for ≥15 s and <2 min: cord compression). None of these is present in this window; the short gaps are electrode signal loss.\n- 비교: <table><thead><tr><th style=\"width:28%\">Category</th><th style=\"width:40%\">Defining features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Category I (answer)</b></td><td><b>baseline 110–160, moderate variability (6–25), no late/variable decelerations</b></td><td>baseline ≈140–145, variability ≈7–10, no decelerations</td></tr> <tr><td>Category II, minimal variability</td><td>amplitude ≤5/min in a 1-min window, other features normal</td><td>fluctuations are 7–10/min, i.e. above 5</td></tr> <tr><td>Category II, recurrent variable decelerations</td><td>abrupt drops ≥15/min lasting ≥15 s with ≥50 % of contractions</td><td>no drop below baseline; contractions are weak and infrequent</td></tr> <tr><td>Category II, tachycardia</td><td>baseline >160/min</td><td>baseline well under 160</td></tr> <tr><td>Category III</td><td>absent variability + recurrent late/variable decelerations or bradycardia; or sinusoidal</td><td>none of these</td></tr> </tbody></table> The <b>closest wrong answer is Category II with minimal variability</b>: a smoothed or compressed strip can make 7–10/min look flat. The 5/min cut-off is applied to the raw 1-minute peak-to-trough amplitude, and at 3 cm/min the small-square height (5/min) is the ruler.\n- 오답 이유:\n  - (A) Fetal tachycardia is a baseline above 160/min for at least 10 minutes. The baseline here is about 140–145/min. This option would be correct only if the trace ran above 160/min throughout the window.\n  - (B) Category III needs absent variability together with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern. This trace has moderate variability and no decelerations. This option would be correct only if the line were flat and dipping after each contraction.\n  - (D) Minimal variability means peak-to-trough amplitude of 5/min or less within a 1-minute window. Measured against the 5/min grid this trace fluctuates 7–10/min. This option would be correct only if the line were nearly flat within each minute.\n  - (E) Variable decelerations are abrupt drops of at least 15/min lasting at least 15 seconds, and 'recurrent' means with at least half of the contractions. No drop below baseline occurs in this window and contractions are weak. This option would be correct only if abrupt V-shaped dips accompanied most contractions.\n- 함정: Short gaps in the trace are signal loss, not decelerations — a deceleration is a continuous line that leaves the baseline and returns; a gap has no line at all.\n- 학습목표: 분만 중 태아심박동 기록의 기저선·변이도·감속을 읽어 NICHD 3단계 분류를 적용한다\n- 근거·출처: CTU-UHB raw data (4 Hz) — author measurement (2026-09-14): baseline ≈140–145/min, 1-min peak-to-trough ≈7–10/min, no decelerations, brief signal loss 35.8–36.6 min · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) · ACOG Practice Bulletin No. 106\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1339 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The baseline fetal heart rate is about 140–145/min (normal range 110–160). Peak-to-trough fluctuation within 1-minute windows is about 7–10/min, i.e. moderate variability (6–25/min). There are no decelerations of any type; two brief rises toward 155–160/min are accelerations or short signal artefacts, and a brief gap around minute 36 is signal loss, not a deceleration. Normal baseline, moderate variability and no late or variable decelerations define Category I."
+   },
+   {
+    "k": "원리",
+    "v": "The three-tier NICHD system is built on <b>four elements read in order: baseline, variability, accelerations, decelerations</b>.<br> <b>Baseline</b> is the mean rate rounded to 5/min over a 10-minute window, excluding accelerations, decelerations and segments of marked variability; it must be present for at least 2 minutes. Here the trace sits at 140–145/min, inside 110–160/min.<br> <b>Variability</b> is the peak-to-trough amplitude of the irregular fluctuations in a 1-minute window: absent (undetectable), minimal (≤5), <b>moderate (6–25)</b>, marked (>25). Moderate variability reflects an <b>intact, oxygenated autonomic system</b> — the sympathetic and parasympathetic inputs continuously tugging the sinus node — and is the single most reassuring feature; its presence makes significant metabolic acidemia unlikely at that moment.<br> <b>Category I</b> requires <b>all</b> of: normal baseline, moderate variability, no late or variable decelerations (early decelerations and accelerations may be present or absent). <b>Category III</b> is absent variability plus recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern. <b>Everything else is Category II</b> — an indeterminate group that calls for evaluation and continued surveillance, not immediate delivery.<br> <b>Why decelerations are classified by timing and shape</b> — early (gradual, nadir with contraction peak: head compression), late (gradual, nadir after the peak: uteroplacental insufficiency), variable (abrupt, ≥15/min for ≥15 s and <2 min: cord compression). None of these is present in this window; the short gaps are electrode signal loss."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Category</th><th style=\"width:40%\">Defining features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Category I (answer)</b></td><td><b>baseline 110–160, moderate variability (6–25), no late/variable decelerations</b></td><td>baseline ≈140–145, variability ≈7–10, no decelerations</td></tr> <tr><td>Category II, minimal variability</td><td>amplitude ≤5/min in a 1-min window, other features normal</td><td>fluctuations are 7–10/min, i.e. above 5</td></tr> <tr><td>Category II, recurrent variable decelerations</td><td>abrupt drops ≥15/min lasting ≥15 s with ≥50 % of contractions</td><td>no drop below baseline; contractions are weak and infrequent</td></tr> <tr><td>Category II, tachycardia</td><td>baseline >160/min</td><td>baseline well under 160</td></tr> <tr><td>Category III</td><td>absent variability + recurrent late/variable decelerations or bradycardia; or sinusoidal</td><td>none of these</td></tr> </tbody></table> The <b>closest wrong answer is Category II with minimal variability</b>: a smoothed or compressed strip can make 7–10/min look flat. The 5/min cut-off is applied to the raw 1-minute peak-to-trough amplitude, and at 3 cm/min the small-square height (5/min) is the ruler."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fetal tachycardia is a baseline above 160/min for at least 10 minutes. The baseline here is about 140–145/min. This option would be correct only if the trace ran above 160/min throughout the window.\n(B) Category III needs absent variability together with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern. This trace has moderate variability and no decelerations. This option would be correct only if the line were flat and dipping after each contraction.\n(D) Minimal variability means peak-to-trough amplitude of 5/min or less within a 1-minute window. Measured against the 5/min grid this trace fluctuates 7–10/min. This option would be correct only if the line were nearly flat within each minute.\n(E) Variable decelerations are abrupt drops of at least 15/min lasting at least 15 seconds, and 'recurrent' means with at least half of the contractions. No drop below baseline occurs in this window and contractions are weak. This option would be correct only if abrupt V-shaped dips accompanied most contractions."
+   },
+   {
+    "k": "함정",
+    "v": "Short gaps in the trace are signal loss, not decelerations — a deceleration is a continuous line that leaves the baseline and returns; a gap has no line at all."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록의 기저선·변이도·감속을 읽어 NICHD 3단계 분류를 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB raw data (4 Hz) — author measurement (2026-09-14): baseline ≈140–145/min, 1-min peak-to-trough ≈7–10/min, no decelerations, brief signal loss 35.8–36.6 min · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) · ACOG Practice Bulletin No. 106 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1339 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0014.png",
+   "caption": "Intrapartum fetal heart rate (upper) and uterine activity (lower), minutes 30–40 of monitoring; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1339_30m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1339"
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0013",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "흉부 CT 정상 해부 — 세로칸·가로막",
+  "type": "흉부 CT 정상 해부 — 세로칸·가로막",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "A 67-year-old woman undergoes CT of the chest as part of a health screening program. She has no cough, fever, dyspnea, or weight loss, and she has never smoked. An axial image of the chest at the level of the lung bases (lung window) is shown.",
+  "question": "Which of the following best explains the large, smooth, homogeneous soft-tissue density that occupies the anterior part of the right lower hemithorax?",
+  "options": [
+   "Dome of the right hemidiaphragm with the liver beneath it",
+   "Consolidation of the right lower lobe",
+   "Loculated right pleural effusion",
+   "Mass arising in the right middle lobe",
+   "Atelectasis of the right lower lobe"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The density has a smooth, convex, sharply defined margin, is perfectly homogeneous, and the aerated lung wraps around it posteriorly and laterally without any air bronchograms, volume loss, or septal thickening. At the level of the lung bases the right hemidiaphragm rises higher than the left because of the liver; an axial slice cuts the top of the dome and displays the liver as a round soft-tissue 'mass' surrounded by lung. The normal left lung base and the heart at the same level confirm the level.\n- 원리: An axial CT slice is a <b>3 mm-thick slab</b> through a body whose organs are curved. The right hemidiaphragm is a <b>dome that rises to about the 4th–5th intercostal space</b> in expiration, higher than the left because the liver sits beneath it. A transverse slice through the upper part of that dome therefore contains <b>lung all around and diaphragm-plus-liver in the middle</b>: on the image the liver appears as a round, homogeneous soft-tissue 'mass' surrounded by aerated lung. This is a <b>partial-volume / geometric effect of the dome, not a lesion</b>.<br> <b>How to recognize it</b> — (1) the margin is <b>smooth and convex toward the lung</b> in every direction, because it is a curved surface; (2) the interior is <b>perfectly homogeneous</b> with no air bronchograms, no vessels running into it and no cavity; (3) the lung around it is <b>normal</b>, with no volume loss (fissures, hilum and mediastinum are not displaced) and no septal thickening; (4) on the slice above it becomes smaller and on the slice below it becomes larger, until it merges with the whole liver.<br> <b>Why the alternatives look different</b> — consolidation keeps the shape of the lobe and contains air bronchograms; atelectasis shrinks the lobe and pulls the fissure and hilum toward it; an effusion layers dependently (posteriorly in a supine patient) with a meniscus and would not sit anteriorly; a mass has an irregular or lobulated edge, feeding vessels and no 'grows-into-the-liver' behaviour on adjacent slices.\n- 비교: <table><thead><tr><th style=\"width:30%\">Finding</th><th style=\"width:36%\">Shape and interior</th><th>What the surrounding lung does</th></tr></thead><tbody> <tr><td><b>Diaphragm dome + liver (answer)</b></td><td><b>smooth convex margin, homogeneous, anterior right base</b></td><td>normal lung wraps around, no volume loss, merges with liver on lower slices</td></tr> <tr><td>Lobar consolidation</td><td>lobe-shaped, <b>air bronchograms</b>, heterogeneous</td><td>lobe keeps its volume; fissure is a straight boundary</td></tr> <tr><td>Atelectasis</td><td>wedge/triangular, crowded vessels</td><td><b>volume loss</b>: fissure, hilum, mediastinum pulled toward it</td></tr> <tr><td>Pleural effusion</td><td>crescent along the chest wall, <b>dependent (posterior)</b> in a supine patient</td><td>lung compressed anteriorly, meniscus</td></tr> </tbody></table> The <b>closest wrong answer is right lower lobe consolidation</b>: both are soft-tissue density at the base. The discriminator is the <b>absence of air bronchograms and the perfectly smooth convex edge</b>; pneumonia also does not occur in a patient with no symptoms.\n- 오답 이유:\n  - (B) Consolidation fills alveoli with fluid or pus but leaves the bronchi open, producing air bronchograms inside a lobe-shaped opacity, usually with cough and fever. This option would be correct only if branching air lucencies were visible inside the density and the patient had symptoms.\n  - (C) A pleural effusion collects in the dependent (posterior) pleural space of a supine patient as a crescent with a meniscus against the chest wall; it does not form a round anterior density surrounded by lung. This option would be correct only if the fluid lay posteriorly along the ribs.\n  - (D) A lung mass has an irregular, lobulated or spiculated margin, is rarely this large without symptoms, and does not enlarge smoothly into the liver on adjacent slices. This option would be correct only if the edge were irregular and the density persisted as a separate structure below the diaphragm.\n  - (E) Atelectasis produces volume loss: the fissure, hilum and mediastinum shift toward the collapsed lobe and the remaining lung over-expands. Here the fissures and mediastinum are in normal position. This option would be correct only if the right hilum and heart were pulled toward the density.\n- 함정: At the lung bases the right dome is always cut first — a round 'mass' appearing at the anterior right base on a single slice is the liver until proven otherwise. Scroll up and down before naming a lesion.\n- 학습목표: 폐 바닥 축상 CT 에서 가로막돔의 부분용적 효과로 생기는 균질 음영을 병변과 구분한다\n- 근거·출처: TCIA LIDC-IDRI series (CC BY 3.0) — author reading (2026-09-14): lung-base slice, right hemidiaphragm dome (liver) occupying the anterior right base, both lower lobes normal, no nodule · Webb WR, Higgins CB. Thoracic Imaging — diaphragm and partial-volume artefacts at the lung bases\n\n## 출처\n- LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The density has a smooth, convex, sharply defined margin, is perfectly homogeneous, and the aerated lung wraps around it posteriorly and laterally without any air bronchograms, volume loss, or septal thickening. At the level of the lung bases the right hemidiaphragm rises higher than the left because of the liver; an axial slice cuts the top of the dome and displays the liver as a round soft-tissue 'mass' surrounded by lung. The normal left lung base and the heart at the same level confirm the level."
+   },
+   {
+    "k": "원리",
+    "v": "An axial CT slice is a <b>3 mm-thick slab</b> through a body whose organs are curved. The right hemidiaphragm is a <b>dome that rises to about the 4th–5th intercostal space</b> in expiration, higher than the left because the liver sits beneath it. A transverse slice through the upper part of that dome therefore contains <b>lung all around and diaphragm-plus-liver in the middle</b>: on the image the liver appears as a round, homogeneous soft-tissue 'mass' surrounded by aerated lung. This is a <b>partial-volume / geometric effect of the dome, not a lesion</b>.<br> <b>How to recognize it</b> — (1) the margin is <b>smooth and convex toward the lung</b> in every direction, because it is a curved surface; (2) the interior is <b>perfectly homogeneous</b> with no air bronchograms, no vessels running into it and no cavity; (3) the lung around it is <b>normal</b>, with no volume loss (fissures, hilum and mediastinum are not displaced) and no septal thickening; (4) on the slice above it becomes smaller and on the slice below it becomes larger, until it merges with the whole liver.<br> <b>Why the alternatives look different</b> — consolidation keeps the shape of the lobe and contains air bronchograms; atelectasis shrinks the lobe and pulls the fissure and hilum toward it; an effusion layers dependently (posteriorly in a supine patient) with a meniscus and would not sit anteriorly; a mass has an irregular or lobulated edge, feeding vessels and no 'grows-into-the-liver' behaviour on adjacent slices."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Finding</th><th style=\"width:36%\">Shape and interior</th><th>What the surrounding lung does</th></tr></thead><tbody> <tr><td><b>Diaphragm dome + liver (answer)</b></td><td><b>smooth convex margin, homogeneous, anterior right base</b></td><td>normal lung wraps around, no volume loss, merges with liver on lower slices</td></tr> <tr><td>Lobar consolidation</td><td>lobe-shaped, <b>air bronchograms</b>, heterogeneous</td><td>lobe keeps its volume; fissure is a straight boundary</td></tr> <tr><td>Atelectasis</td><td>wedge/triangular, crowded vessels</td><td><b>volume loss</b>: fissure, hilum, mediastinum pulled toward it</td></tr> <tr><td>Pleural effusion</td><td>crescent along the chest wall, <b>dependent (posterior)</b> in a supine patient</td><td>lung compressed anteriorly, meniscus</td></tr> </tbody></table> The <b>closest wrong answer is right lower lobe consolidation</b>: both are soft-tissue density at the base. The discriminator is the <b>absence of air bronchograms and the perfectly smooth convex edge</b>; pneumonia also does not occur in a patient with no symptoms."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Consolidation fills alveoli with fluid or pus but leaves the bronchi open, producing air bronchograms inside a lobe-shaped opacity, usually with cough and fever. This option would be correct only if branching air lucencies were visible inside the density and the patient had symptoms.\n(C) A pleural effusion collects in the dependent (posterior) pleural space of a supine patient as a crescent with a meniscus against the chest wall; it does not form a round anterior density surrounded by lung. This option would be correct only if the fluid lay posteriorly along the ribs.\n(D) A lung mass has an irregular, lobulated or spiculated margin, is rarely this large without symptoms, and does not enlarge smoothly into the liver on adjacent slices. This option would be correct only if the edge were irregular and the density persisted as a separate structure below the diaphragm.\n(E) Atelectasis produces volume loss: the fissure, hilum and mediastinum shift toward the collapsed lobe and the remaining lung over-expands. Here the fissures and mediastinum are in normal position. This option would be correct only if the right hilum and heart were pulled toward the density."
+   },
+   {
+    "k": "함정",
+    "v": "At the lung bases the right dome is always cut first — a round 'mass' appearing at the anterior right base on a single slice is the liver until proven otherwise. Scroll up and down before naming a lesion."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐 바닥 축상 CT 에서 가로막돔의 부분용적 효과로 생기는 균질 음영을 병변과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA LIDC-IDRI series (CC BY 3.0) — author reading (2026-09-14): lung-base slice, right hemidiaphragm dome (liver) occupying the anterior right base, both lower lobes normal, no nodule · Webb WR, Higgins CB. Thoracic Imaging — diaphragm and partial-volume artefacts at the lung bases ## 출처 LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0013.png",
+   "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM with windowing only)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA LIDC-IDRI (Lung Image Database Consortium)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6279.6001.140642535005388188316143069436",
+   "asset_id": "TCIA-LIDC_IDRI-55416288289725",
+   "text": "LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436"
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0012",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "흉부 CT 정상 해부 — 세로칸·가로막",
+  "type": "흉부 CT 정상 해부 — 세로칸·가로막",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "67세 여자가 건강검진으로 흉부 CT를 찍었다. 특별한 증상은 없고 흡연력도 없다. 심실 높이의 흉부 CT 축상면(폐창)은 그림과 같다.",
+  "question": "척추체의 왼쪽 앞에 접하여 둥근 단면으로 보이는 관 구조물이 가로막을 통과하는 척추 높이는?",
+  "options": [
+   "제8등뼈(T8)",
+   "제10등뼈(T10)",
+   "제1허리뼈(L1)",
+   "제3허리뼈(L3)",
+   "제12등뼈(T12)"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 심실 높이에서 척추체의 왼쪽 앞에 붙어 있는 지름 2~3 cm 의 둥근 관 구조는 하행 흉부대동맥이다(뒤세로칸). 대동맥은 가로막의 두 다리(crura)와 정중활꼴인대 뒤로 지나는 대동맥구멍을 통해 배로 내려가며 그 높이는 제12등뼈다. 식도구멍은 T10, 대정맥구멍은 T8 이다.\n- 원리: 가로막에는 큰 구멍이 셋 있고 각각의 높이가 다르다. <b>대정맥구멍(T8)</b> 은 가로막의 <b>중심널힘줄 안</b>에 있어 숨을 들이쉴 때 오히려 벌어져 정맥 환류를 돕는다. <b>식도구멍(T10)</b> 은 <b>오른쪽 다리(right crus)의 근육섬유가 감싸는</b> 구멍이라 수축할 때 조여 역류를 막는 「생리적 조임근」 역할을 한다. <b>대동맥구멍(T12)</b> 은 엄밀히는 가로막을 「뚫는」 것이 아니라 <b>두 다리와 정중활꼴인대 뒤, 척추체 앞</b>을 지나므로 가로막이 수축해도 대동맥이 눌리지 않는다 — 함께 가슴림프관과 홀정맥이 지난다.<br> <b>왜 T8·T10·T12 인가</b> — 외우는 요령은 「글자 수」다: vena <b>cava</b>(4자·T8 은 8=4×2), <b>oesophagus</b>(10자→T10), <b>aortic hiatus</b>(12자→T12).<br> <b>영상에서 대동맥을 어떻게 알아보나</b> — 축상면에서 하행대동맥은 <b>척추체의 왼쪽 앞</b>에 붙어 위아래 모든 단면에서 같은 자리에 나타나는 <b>둥근 단면</b>이다. 식도는 그보다 <b>오른쪽 앞·정중 가까이</b> 있고 안에 공기가 있을 수 있으며 둥글지 않다. 홀정맥은 <b>척추체 오른쪽 앞</b>의 작은 구조다. 그래서 「왼쪽 앞 · 둥글고 · 크다」 세 가지로 하행대동맥이 확정된다 — 폐창에서는 세로칸이 모두 희게 뭉쳐 보이므로 위치 관계로 읽는다.\n- 비교: <table><thead><tr><th style=\"width:28%\">구조</th><th style=\"width:30%\">축상 CT 에서의 자리</th><th style=\"width:16%\">가로막 통과 높이</th><th>함께 지나는 것</th></tr></thead><tbody> <tr><td><b>하행대동맥(정답 구조)</b></td><td><b>척추체 왼쪽 앞, 둥근 단면, 지름 2~3 cm</b></td><td><b>T12(대동맥구멍)</b></td><td>가슴림프관, 홀정맥</td></tr> <tr><td>식도</td><td>정중~약간 왼쪽, 대동맥의 오른쪽 앞, 납작·공기 가능</td><td>T10(식도구멍)</td><td>앞·뒤 미주신경줄기</td></tr> <tr><td>아래대정맥</td><td>이 높이에는 없음(간 위 짧은 구간만 흉강)</td><td>T8(대정맥구멍)</td><td>오른가로막신경 가지</td></tr> <tr><td>홀정맥</td><td>척추체 오른쪽 앞, 작은 점</td><td>T12(대동맥구멍 또는 오른다리)</td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 T10</b> — 영상에서 「척추체 앞의 둥근 것」을 식도로 잘못 읽으면 T10 을 고른다. 식도는 대동맥의 오른쪽 앞에 있고 둥글게 꽉 찬 단면이 아니라는 점, 그리고 이 구조가 <b>왼쪽</b>에 붙어 있다는 점이 갈림길이다.\n- 오답 이유:\n  - ① T8 은 아래대정맥이 중심널힘줄을 지나는 높이다. 아래대정맥은 척추체 오른쪽 앞에 있고 심실 높이의 흉부 단면에는 나타나지 않는다. 이 선지가 정답이 되려면 그림의 구조가 척추 오른쪽 앞의 정맥이어야 한다.\n  - ② T10 은 식도가 오른쪽 다리 섬유 사이로 지나는 높이다. 식도는 대동맥의 오른쪽 앞, 정중 가까이에 있고 둥근 단면이 아니다. 이 선지가 정답이 되려면 그림의 구조가 척추 왼쪽이 아니라 정중 앞의 납작한 관이어야 한다.\n  - ③ L1 은 위창자간막동맥이 대동맥에서 갈라지는 높이이지 대동맥이 가로막을 지나는 높이가 아니다. 이 선지가 정답이 되려면 「가로막 통과」가 아니라 「첫 가지의 기시 높이」를 물어야 한다.\n  - ④ L3 은 아래창자간막동맥의 기시 높이이고 L4 에서 대동맥이 두 온엉덩동맥으로 갈라진다. 이 선지가 정답이 되려면 「대동맥이 갈라지기 직전의 가지」를 물어야 한다.\n- 함정: 폐창에서는 세로칸 구조가 모두 희게 뭉쳐 보인다 — 「척추체 왼쪽 앞의 둥근 단면」이라는 위치 관계 하나로 하행대동맥을 확정한 뒤 높이를 붙인다.\n- 학습목표: 심실 높이 흉부 CT 에서 하행대동맥을 위치로 식별하고 가로막의 대동맥구멍 높이(T12)에 연결한다\n- 근거·출처: TCIA LIDC-IDRI 시리즈(CC BY 3.0) — 작성자 판독(2026-09-14): 심실 높이, 척추체 왼쪽 앞 둥근 하행대동맥, 폐 실질 정상·결절 없음 · Moore Clinically Oriented Anatomy — 가로막 구멍: 대정맥구멍 T8 · 식도구멍 T10 · 대동맥구멍 T12\n\n## 출처\n- LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심실 높이에서 척추체의 왼쪽 앞에 붙어 있는 지름 2~3 cm 의 둥근 관 구조는 하행 흉부대동맥이다(뒤세로칸). 대동맥은 가로막의 두 다리(crura)와 정중활꼴인대 뒤로 지나는 대동맥구멍을 통해 배로 내려가며 그 높이는 제12등뼈다. 식도구멍은 T10, 대정맥구멍은 T8 이다."
+   },
+   {
+    "k": "원리",
+    "v": "가로막에는 큰 구멍이 셋 있고 각각의 높이가 다르다. <b>대정맥구멍(T8)</b> 은 가로막의 <b>중심널힘줄 안</b>에 있어 숨을 들이쉴 때 오히려 벌어져 정맥 환류를 돕는다. <b>식도구멍(T10)</b> 은 <b>오른쪽 다리(right crus)의 근육섬유가 감싸는</b> 구멍이라 수축할 때 조여 역류를 막는 「생리적 조임근」 역할을 한다. <b>대동맥구멍(T12)</b> 은 엄밀히는 가로막을 「뚫는」 것이 아니라 <b>두 다리와 정중활꼴인대 뒤, 척추체 앞</b>을 지나므로 가로막이 수축해도 대동맥이 눌리지 않는다 — 함께 가슴림프관과 홀정맥이 지난다.<br> <b>왜 T8·T10·T12 인가</b> — 외우는 요령은 「글자 수」다: vena <b>cava</b>(4자·T8 은 8=4×2), <b>oesophagus</b>(10자→T10), <b>aortic hiatus</b>(12자→T12).<br> <b>영상에서 대동맥을 어떻게 알아보나</b> — 축상면에서 하행대동맥은 <b>척추체의 왼쪽 앞</b>에 붙어 위아래 모든 단면에서 같은 자리에 나타나는 <b>둥근 단면</b>이다. 식도는 그보다 <b>오른쪽 앞·정중 가까이</b> 있고 안에 공기가 있을 수 있으며 둥글지 않다. 홀정맥은 <b>척추체 오른쪽 앞</b>의 작은 구조다. 그래서 「왼쪽 앞 · 둥글고 · 크다」 세 가지로 하행대동맥이 확정된다 — 폐창에서는 세로칸이 모두 희게 뭉쳐 보이므로 위치 관계로 읽는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">구조</th><th style=\"width:30%\">축상 CT 에서의 자리</th><th style=\"width:16%\">가로막 통과 높이</th><th>함께 지나는 것</th></tr></thead><tbody> <tr><td><b>하행대동맥(정답 구조)</b></td><td><b>척추체 왼쪽 앞, 둥근 단면, 지름 2~3 cm</b></td><td><b>T12(대동맥구멍)</b></td><td>가슴림프관, 홀정맥</td></tr> <tr><td>식도</td><td>정중~약간 왼쪽, 대동맥의 오른쪽 앞, 납작·공기 가능</td><td>T10(식도구멍)</td><td>앞·뒤 미주신경줄기</td></tr> <tr><td>아래대정맥</td><td>이 높이에는 없음(간 위 짧은 구간만 흉강)</td><td>T8(대정맥구멍)</td><td>오른가로막신경 가지</td></tr> <tr><td>홀정맥</td><td>척추체 오른쪽 앞, 작은 점</td><td>T12(대동맥구멍 또는 오른다리)</td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 T10</b> — 영상에서 「척추체 앞의 둥근 것」을 식도로 잘못 읽으면 T10 을 고른다. 식도는 대동맥의 오른쪽 앞에 있고 둥글게 꽉 찬 단면이 아니라는 점, 그리고 이 구조가 <b>왼쪽</b>에 붙어 있다는 점이 갈림길이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① T8 은 아래대정맥이 중심널힘줄을 지나는 높이다. 아래대정맥은 척추체 오른쪽 앞에 있고 심실 높이의 흉부 단면에는 나타나지 않는다. 이 선지가 정답이 되려면 그림의 구조가 척추 오른쪽 앞의 정맥이어야 한다.\n② T10 은 식도가 오른쪽 다리 섬유 사이로 지나는 높이다. 식도는 대동맥의 오른쪽 앞, 정중 가까이에 있고 둥근 단면이 아니다. 이 선지가 정답이 되려면 그림의 구조가 척추 왼쪽이 아니라 정중 앞의 납작한 관이어야 한다.\n③ L1 은 위창자간막동맥이 대동맥에서 갈라지는 높이이지 대동맥이 가로막을 지나는 높이가 아니다. 이 선지가 정답이 되려면 「가로막 통과」가 아니라 「첫 가지의 기시 높이」를 물어야 한다.\n④ L3 은 아래창자간막동맥의 기시 높이이고 L4 에서 대동맥이 두 온엉덩동맥으로 갈라진다. 이 선지가 정답이 되려면 「대동맥이 갈라지기 직전의 가지」를 물어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "폐창에서는 세로칸 구조가 모두 희게 뭉쳐 보인다 — 「척추체 왼쪽 앞의 둥근 단면」이라는 위치 관계 하나로 하행대동맥을 확정한 뒤 높이를 붙인다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심실 높이 흉부 CT 에서 하행대동맥을 위치로 식별하고 가로막의 대동맥구멍 높이(T12)에 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA LIDC-IDRI 시리즈(CC BY 3.0) — 작성자 판독(2026-09-14): 심실 높이, 척추체 왼쪽 앞 둥근 하행대동맥, 폐 실질 정상·결절 없음 · Moore Clinically Oriented Anatomy — 가로막 구멍: 대정맥구멍 T8 · 식도구멍 T10 · 대동맥구멍 T12 ## 출처 LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0012.png",
+   "caption": "흉부 CT 축상면, 폐창(lung window) — 표준 표시 방향(환자의 오른쪽이 그림의 왼쪽) (The Cancer Imaging Archive, CC BY 3.0 — DICOM 원본을 창 설정 외 가공 없이 변환)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA LIDC-IDRI (Lung Image Database Consortium)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6279.6001.140642535005388188316143069436",
+   "asset_id": "TCIA-LIDC_IDRI-80831100765610",
+   "text": "LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …43069436"
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0011",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "심전도 판독 — 허혈·전기축",
+  "type": "심전도 판독 — 허혈·전기축",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-13",
+  "vignette": "A 25-year-old man comes to the clinic for a pre-participation sports examination. He has no symptoms and no history of syncope or chest pain. He is tall and thin. Blood pressure is 118/72 mm Hg and pulse is 72/min and regular. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following best describes the mean QRS axis in the frontal plane?",
+  "options": [
+   "Right axis deviation (+90° to +180°)",
+   "Normal axis (−30° to +90°)",
+   "Left axis deviation (−30° to −90°)",
+   "Extreme (northwest) axis (−90° to −180°)",
+   "Indeterminate axis (isoelectric in all limb leads)"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: In lead I the QRS is predominantly negative (small r, deep S); in lead aVF and lead III it is predominantly positive (qR). A negative lead I with a positive aVF places the mean QRS vector between +90° and +180° — right axis deviation. The QRS is narrow and the rhythm is sinus, so this is an isolated axis finding.\n- 원리: The frontal-plane axis is the <b>direction of the mean QRS vector</b>, and each limb lead is a <b>projection of that vector onto the lead's own axis</b>: lead I looks from the left (0°), lead aVF from the feet (+90°). A vector pointing toward a lead writes a positive deflection; a vector pointing away writes a negative one.<br> <b>Why two leads are enough</b> — leads I and aVF are perpendicular. Positive in both → the vector lies in the lower-left quadrant (0° to +90°, normal). <b>Negative in I but positive in aVF</b> → the vector points down and to the right, i.e. <b>+90° to +180°: right axis deviation</b>. Positive in I, negative in aVF → left axis (0° to −90°, abnormal beyond −30°). Negative in both → extreme axis.<br> <b>Why it happens</b> — the vector swings toward the mass that depolarizes last or most. Right axis deviation appears with a vertically positioned heart in a tall thin young adult, with right ventricular hypertrophy (pulmonary hypertension, congenital shunts), with lateral wall infarction, and with <b>left posterior fascicular block</b> (the posteroinferior fascicle fails, so the inferior wall depolarizes late and the vector tips inferiorly and rightward — a diagnosis made only after the other causes are excluded).<br> <b>Reading order</b> — decide the polarity of I, then of aVF, then refine with the most isoelectric limb lead (the axis is perpendicular to it).\n- 비교: <table><thead><tr><th style=\"width:30%\">Axis</th><th style=\"width:22%\">Lead I</th><th style=\"width:22%\">Lead aVF</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Right axis deviation (answer)</b></td><td><b>negative (rS)</b></td><td><b>positive (qR)</b></td><td>I is net negative, III/aVF strongly positive → ≈ +120°</td></tr> <tr><td>Normal axis</td><td>positive</td><td>positive (or aVF negative with II positive, −30° to 0°)</td><td>would need a dominant R in lead I</td></tr> <tr><td>Left axis deviation</td><td>positive</td><td>negative, and lead II negative</td><td>opposite of this tracing</td></tr> <tr><td>Extreme axis</td><td>negative</td><td>negative</td><td>aVF here is clearly positive</td></tr> </tbody></table> The <b>closest wrong answer is the normal axis</b>: in a tall thin 25-year-old a vertical axis near +90° is common, and only the <b>negative net area of lead I</b> pushes this tracing past +90°. Measure the r and S of lead I with a ruler instead of eyeballing.\n- 오답 이유:\n  - (B) A normal axis requires a net positive QRS in lead I. Here lead I is a small r followed by a deep S, so the net area is negative. This option would be correct only if the R wave in lead I exceeded its S wave.\n  - (C) Left axis deviation needs a positive lead I with negative leads II and aVF, the mirror image of this tracing. This option would be correct only if aVF and II were predominantly negative.\n  - (D) An extreme (northwest) axis needs negative deflections in both lead I and lead aVF. Lead aVF here is strongly positive. This option would be correct only if aVF were also net negative.\n  - (E) An indeterminate axis means every limb lead is nearly isoelectric (equal positive and negative area). Leads III and aVF here are clearly positive and lead I clearly negative. This option would be correct only if no limb lead had a dominant deflection.\n- 함정: Do not decide the axis from lead II alone — lead II is positive in both the normal range and in right axis deviation. The discriminating lead is lead I.\n- 학습목표: 사지유도 I·aVF 의 QRS 극성으로 평균 QRS 전기축을 결정한다\n- 근거·출처: PTB-XL record label LPFB (two-cardiologist validated) — implies right axis deviation with narrow QRS · 작성자 판독(2026-09-14): I rS(음성), III·aVF qR(양성), QRS ≈0.09 s → 축 ≈ +120° · AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG, Part III: Intraventricular Conduction Disturbances (2009)\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In lead I the QRS is predominantly negative (small r, deep S); in lead aVF and lead III it is predominantly positive (qR). A negative lead I with a positive aVF places the mean QRS vector between +90° and +180° — right axis deviation. The QRS is narrow and the rhythm is sinus, so this is an isolated axis finding."
+   },
+   {
+    "k": "원리",
+    "v": "The frontal-plane axis is the <b>direction of the mean QRS vector</b>, and each limb lead is a <b>projection of that vector onto the lead's own axis</b>: lead I looks from the left (0°), lead aVF from the feet (+90°). A vector pointing toward a lead writes a positive deflection; a vector pointing away writes a negative one.<br> <b>Why two leads are enough</b> — leads I and aVF are perpendicular. Positive in both → the vector lies in the lower-left quadrant (0° to +90°, normal). <b>Negative in I but positive in aVF</b> → the vector points down and to the right, i.e. <b>+90° to +180°: right axis deviation</b>. Positive in I, negative in aVF → left axis (0° to −90°, abnormal beyond −30°). Negative in both → extreme axis.<br> <b>Why it happens</b> — the vector swings toward the mass that depolarizes last or most. Right axis deviation appears with a vertically positioned heart in a tall thin young adult, with right ventricular hypertrophy (pulmonary hypertension, congenital shunts), with lateral wall infarction, and with <b>left posterior fascicular block</b> (the posteroinferior fascicle fails, so the inferior wall depolarizes late and the vector tips inferiorly and rightward — a diagnosis made only after the other causes are excluded).<br> <b>Reading order</b> — decide the polarity of I, then of aVF, then refine with the most isoelectric limb lead (the axis is perpendicular to it)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Axis</th><th style=\"width:22%\">Lead I</th><th style=\"width:22%\">Lead aVF</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Right axis deviation (answer)</b></td><td><b>negative (rS)</b></td><td><b>positive (qR)</b></td><td>I is net negative, III/aVF strongly positive → ≈ +120°</td></tr> <tr><td>Normal axis</td><td>positive</td><td>positive (or aVF negative with II positive, −30° to 0°)</td><td>would need a dominant R in lead I</td></tr> <tr><td>Left axis deviation</td><td>positive</td><td>negative, and lead II negative</td><td>opposite of this tracing</td></tr> <tr><td>Extreme axis</td><td>negative</td><td>negative</td><td>aVF here is clearly positive</td></tr> </tbody></table> The <b>closest wrong answer is the normal axis</b>: in a tall thin 25-year-old a vertical axis near +90° is common, and only the <b>negative net area of lead I</b> pushes this tracing past +90°. Measure the r and S of lead I with a ruler instead of eyeballing."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A normal axis requires a net positive QRS in lead I. Here lead I is a small r followed by a deep S, so the net area is negative. This option would be correct only if the R wave in lead I exceeded its S wave.\n(C) Left axis deviation needs a positive lead I with negative leads II and aVF, the mirror image of this tracing. This option would be correct only if aVF and II were predominantly negative.\n(D) An extreme (northwest) axis needs negative deflections in both lead I and lead aVF. Lead aVF here is strongly positive. This option would be correct only if aVF were also net negative.\n(E) An indeterminate axis means every limb lead is nearly isoelectric (equal positive and negative area). Leads III and aVF here are clearly positive and lead I clearly negative. This option would be correct only if no limb lead had a dominant deflection."
+   },
+   {
+    "k": "함정",
+    "v": "Do not decide the axis from lead II alone — lead II is positive in both the normal range and in right axis deviation. The discriminating lead is lead I."
+   },
+   {
+    "k": "학습목표",
+    "v": "사지유도 I·aVF 의 QRS 극성으로 평균 QRS 전기축을 결정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label LPFB (two-cardiologist validated) — implies right axis deviation with narrow QRS · 작성자 판독(2026-09-14): I rS(음성), III·aVF qR(양성), QRS ≈0.09 s → 축 ≈ +120° · AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG, Part III: Intraventricular Conduction Disturbances (2009) ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0011.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16116",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116"
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0010",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "심전도 판독 — 허혈·전기축",
+  "type": "심전도 판독 — 허혈·전기축",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-13",
+  "vignette": "63세 남자가 2주 전부터 계단을 오를 때 가슴이 조이는 느낌이 생겨 왔다. 쉬면 5분 안에 사라지고 지금은 통증이 없다. 고혈압으로 약을 먹고 있다. 혈압 138/86 mmHg, 맥박 분당 66회로 규칙적이다. 안정 시 12유도 심전도는 그림과 같다.",
+  "question": "심전도 소견은?",
+  "options": [
+   "불규칙한 RR 간격과 P파 소실",
+   "II·III·aVF·V6 유도의 ST 분절 하강과 III·aVF 유도의 T파 역위",
+   "II·III·aVF 유도의 ST 분절 상승과 aVL 유도의 상반성 하강",
+   "V1–V3 유도의 ST 분절 상승과 병적 Q파",
+   "QRS 폭 0.12초 이상의 우각차단"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 P파가 일정한 PR 간격으로 있고 RR 이 규칙적인 동율동(약 66회/분)이다. 하벽 유도(II·III·aVF)와 V6 에서 ST 분절이 기준선 아래로 내려가 있고, III·aVF 의 T파는 뒤집혀 있다. ST 상승·병적 Q파·넓은 QRS 는 없다. 노작성 흉통 병력과 함께 하벽·측벽의 심근허혈이 의심되는 소견이다.\n- 원리: ST 분절은 <b>심실 탈분극이 끝나고 재분극이 시작되기 전의 등전위 구간</b>이다. 심내막하층이 허혈에 빠지면 그 부위 세포의 안정막전위와 활동전위 지속시간이 바뀌어 <b>손상전류(injury current)</b> 가 생기고, 심내막하 허혈에서는 이 전류가 <b>심외막 쪽 전극에서 멀어지는 방향</b>이므로 그 유도에서 <b>ST 분절이 내려간다</b>. 반대로 벽 전층이 허혈이면 손상전류 방향이 전극을 향해 <b>ST 가 올라간다</b> — 그래서 ST 하강은 「심내막하 허혈」, ST 상승은 「전층 손상(STEMI)」로 읽는다.<br> <b>왜 하벽·측벽으로 묶는가</b> — II·III·aVF 는 심장의 아래쪽(가로막면)을, V5·V6 는 왼쪽 옆면을 본다. 이 기록은 II·III·aVF 와 V6 에서 함께 ST 가 내려가고 III·aVF 의 T파가 뒤집혀 있어 <b>하측벽 심내막하 허혈</b>에 합당하다. 다만 <b>ST 하강은 ST 상승만큼 혈관을 정확히 가리키지 못한다</b>(전벽 STEMI 의 상반성 하강, 좌심실비대의 부하 양상과도 겹친다) — 그래서 「소견」을 먼저 정확히 읽고, 진단은 병력(노작 시 흉통, 안정 시 소실)과 함께 붙인다.<br> <b>판독 순서</b> — 율동(P–QRS 관계·RR 규칙성) → 축 → 간격(PR·QRS·QT) → ST·T. 이 기록은 율동·간격이 정상이라 「ST·T 이상」만 남는다.\n- 비교: <table><thead><tr><th style=\"width:28%\">소견</th><th style=\"width:36%\">이 기록에서 확인할 자리</th><th>의미</th></tr></thead><tbody> <tr><td><b>II·III·aVF·V6 ST 하강 + III·aVF T 역위(정답)</b></td><td>하벽 유도 세 개와 V6 의 ST 가 기준선(PR 분절) 아래, III·aVF 의 T 가 아래로</td><td>하측벽 심내막하 허혈 의심 — 안정협심증 병력과 맞음</td></tr> <tr><td>II·III·aVF ST 상승 + aVL 상반성 하강</td><td>ST 가 <b>올라가야</b> 하고 aVL 만 내려가야 함 — 여기선 하벽 ST 가 내려감</td><td>하벽 STEMI(우관상동맥) — 응급 재관류</td></tr> <tr><td>V1–V3 ST 상승 + Q파</td><td>V1–V3 는 깊은 S 뒤 T 가 크게 서 있을 뿐 ST 는 기준선</td><td>전중격 STEMI</td></tr> <tr><td>우각차단</td><td>QRS 폭 ≈0.09 s, V1 rSR′ 없음</td><td>전도장애</td></tr> </tbody></table> <b>가장 가까운 오답은 ②</b> — 같은 하벽 유도를 가리키지만 ST 의 <b>방향</b>이 반대다. 「하강」이면 심내막하 허혈·비STEMI 쪽, 「상승」이면 STEMI 로 처치 자체가 갈리므로 기준선(PR 분절)과 J점을 대고 방향부터 정한다.\n- 오답 이유:\n  - ① 심방세동은 RR 간격이 완전히 불규칙하고 P파 대신 세동파가 보인다. 이 기록은 RR 이 일정하고 모든 QRS 앞에 P파가 있다. 이 선지가 정답이 되려면 리듬 스트립에서 RR 이 제각각이고 P파가 없어야 한다.\n  - ③ 하벽 STEMI 는 II·III·aVF 의 ST 가 기준선 위로 올라가고 aVL 이 거울처럼 내려간다. 이 기록은 하벽 ST 가 아래로 내려가 있어 방향이 반대다. 이 선지가 정답이 되려면 J점이 기준선 위 ≥1 mm 에 있어야 한다.\n  - ④ V1–V3 에는 깊은 S파 뒤에 T파가 크게 서 있을 뿐 ST 상승도 병적 Q파(폭 ≥0.04 s·깊이 R의 1/4)도 없다. 이 선지가 정답이 되려면 V1–V3 의 J점 상승과 Q파가 실제로 보여야 한다.\n  - ⑤ 우각차단은 QRS 폭이 0.12 s 이상이고 V1 에 rSR′, V6 에 넓은 S 가 있어야 한다. 이 기록의 QRS 는 작은 칸 2~2.5칸(≈0.09 s)으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다.\n- 함정: V1–V3 의 크고 뾰족한 T파와 깊은 S 에 눈이 가면 「전벽」으로 착각한다 — ST 는 기준선에 있다. 하벽 유도 셋을 한꺼번에 보고 PR 분절과 J점을 대야 하강이 보인다.\n- 학습목표: 노작성 흉통 환자의 안정 시 심전도에서 하벽·측벽 유도의 ST 분절 하강과 T파 역위를 읽는다\n- 근거·출처: PTB-XL 기록 라벨 ISCIN(2인 심장내과 검증) · 판독문: ST depressed II·III·aVF·V6, T inverted III·aVF · 작성자 판독(2026-09-14): 동율동 ≈66/분, QRS ≈0.09 s, 하벽·V6 ST 하강, III·aVF T 역위 · Fourth Universal Definition of Myocardial Infarction (2018) — ST 하강·T 역위의 허혈 판정 기준\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1175 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 P파가 일정한 PR 간격으로 있고 RR 이 규칙적인 동율동(약 66회/분)이다. 하벽 유도(II·III·aVF)와 V6 에서 ST 분절이 기준선 아래로 내려가 있고, III·aVF 의 T파는 뒤집혀 있다. ST 상승·병적 Q파·넓은 QRS 는 없다. 노작성 흉통 병력과 함께 하벽·측벽의 심근허혈이 의심되는 소견이다."
+   },
+   {
+    "k": "원리",
+    "v": "ST 분절은 <b>심실 탈분극이 끝나고 재분극이 시작되기 전의 등전위 구간</b>이다. 심내막하층이 허혈에 빠지면 그 부위 세포의 안정막전위와 활동전위 지속시간이 바뀌어 <b>손상전류(injury current)</b> 가 생기고, 심내막하 허혈에서는 이 전류가 <b>심외막 쪽 전극에서 멀어지는 방향</b>이므로 그 유도에서 <b>ST 분절이 내려간다</b>. 반대로 벽 전층이 허혈이면 손상전류 방향이 전극을 향해 <b>ST 가 올라간다</b> — 그래서 ST 하강은 「심내막하 허혈」, ST 상승은 「전층 손상(STEMI)」로 읽는다.<br> <b>왜 하벽·측벽으로 묶는가</b> — II·III·aVF 는 심장의 아래쪽(가로막면)을, V5·V6 는 왼쪽 옆면을 본다. 이 기록은 II·III·aVF 와 V6 에서 함께 ST 가 내려가고 III·aVF 의 T파가 뒤집혀 있어 <b>하측벽 심내막하 허혈</b>에 합당하다. 다만 <b>ST 하강은 ST 상승만큼 혈관을 정확히 가리키지 못한다</b>(전벽 STEMI 의 상반성 하강, 좌심실비대의 부하 양상과도 겹친다) — 그래서 「소견」을 먼저 정확히 읽고, 진단은 병력(노작 시 흉통, 안정 시 소실)과 함께 붙인다.<br> <b>판독 순서</b> — 율동(P–QRS 관계·RR 규칙성) → 축 → 간격(PR·QRS·QT) → ST·T. 이 기록은 율동·간격이 정상이라 「ST·T 이상」만 남는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">소견</th><th style=\"width:36%\">이 기록에서 확인할 자리</th><th>의미</th></tr></thead><tbody> <tr><td><b>II·III·aVF·V6 ST 하강 + III·aVF T 역위(정답)</b></td><td>하벽 유도 세 개와 V6 의 ST 가 기준선(PR 분절) 아래, III·aVF 의 T 가 아래로</td><td>하측벽 심내막하 허혈 의심 — 안정협심증 병력과 맞음</td></tr> <tr><td>II·III·aVF ST 상승 + aVL 상반성 하강</td><td>ST 가 <b>올라가야</b> 하고 aVL 만 내려가야 함 — 여기선 하벽 ST 가 내려감</td><td>하벽 STEMI(우관상동맥) — 응급 재관류</td></tr> <tr><td>V1–V3 ST 상승 + Q파</td><td>V1–V3 는 깊은 S 뒤 T 가 크게 서 있을 뿐 ST 는 기준선</td><td>전중격 STEMI</td></tr> <tr><td>우각차단</td><td>QRS 폭 ≈0.09 s, V1 rSR′ 없음</td><td>전도장애</td></tr> </tbody></table> <b>가장 가까운 오답은 ②</b> — 같은 하벽 유도를 가리키지만 ST 의 <b>방향</b>이 반대다. 「하강」이면 심내막하 허혈·비STEMI 쪽, 「상승」이면 STEMI 로 처치 자체가 갈리므로 기준선(PR 분절)과 J점을 대고 방향부터 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심방세동은 RR 간격이 완전히 불규칙하고 P파 대신 세동파가 보인다. 이 기록은 RR 이 일정하고 모든 QRS 앞에 P파가 있다. 이 선지가 정답이 되려면 리듬 스트립에서 RR 이 제각각이고 P파가 없어야 한다.\n③ 하벽 STEMI 는 II·III·aVF 의 ST 가 기준선 위로 올라가고 aVL 이 거울처럼 내려간다. 이 기록은 하벽 ST 가 아래로 내려가 있어 방향이 반대다. 이 선지가 정답이 되려면 J점이 기준선 위 ≥1 mm 에 있어야 한다.\n④ V1–V3 에는 깊은 S파 뒤에 T파가 크게 서 있을 뿐 ST 상승도 병적 Q파(폭 ≥0.04 s·깊이 R의 1/4)도 없다. 이 선지가 정답이 되려면 V1–V3 의 J점 상승과 Q파가 실제로 보여야 한다.\n⑤ 우각차단은 QRS 폭이 0.12 s 이상이고 V1 에 rSR′, V6 에 넓은 S 가 있어야 한다. 이 기록의 QRS 는 작은 칸 2~2.5칸(≈0.09 s)으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "V1–V3 의 크고 뾰족한 T파와 깊은 S 에 눈이 가면 「전벽」으로 착각한다 — ST 는 기준선에 있다. 하벽 유도 셋을 한꺼번에 보고 PR 분절과 J점을 대야 하강이 보인다."
+   },
+   {
+    "k": "학습목표",
+    "v": "노작성 흉통 환자의 안정 시 심전도에서 하벽·측벽 유도의 ST 분절 하강과 T파 역위를 읽는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL 기록 라벨 ISCIN(2인 심장내과 검증) · 판독문: ST depressed II·III·aVF·V6, T inverted III·aVF · 작성자 판독(2026-09-14): 동율동 ≈66/분, QRS ≈0.09 s, 하벽·V6 ST 하강, III·aVF T 역위 · Fourth Universal Definition of Myocardial Infarction (2018) — ST 하강·T 역위의 허혈 판정 기준 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1175 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0010.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01175",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1175"
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0006",
   "exam": "imaging",
   "style": "usmle_style",
@@ -380,6 +760,294 @@ window.IMAGING_QUESTIONS = [
   },
   "run_id": "20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
   "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0018",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "type": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-13",
+  "vignette": "A 26-year-old woman, gravida 1, comes to the emergency department because of mild left lower abdominal pain for 1 day. Her last menstrual period was 6 weeks ago and a home pregnancy test was positive. She has no vaginal bleeding. Her pulse is 78/min and blood pressure is 116/74 mm Hg. The abdomen is soft without rebound or guarding. Transvaginal ultrasonography shows no intrauterine gestational sac, no adnexal mass, and no free fluid. Serum β-hCG concentration is 900 mIU/mL and hemoglobin is 12.8 g/dL.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Diagnostic laparoscopy",
+   "Uterine aspiration with histologic examination",
+   "Oral misoprostol",
+   "Repeat serum β-hCG measurement in 48 hours",
+   "Single-dose intramuscular methotrexate"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: This is a pregnancy of unknown location: a positive pregnancy test with neither an intrauterine nor an ectopic pregnancy seen. At a β-hCG of 900 mIU/mL — below the discriminatory level (about 1500–3500 mIU/mL) — a normal early intrauterine pregnancy can still be invisible, so the diagnosis cannot be made from one measurement. Because she is hemodynamically stable with no peritoneal signs, no mass and no free fluid, the correct step is to follow the trend with a repeat β-hCG in 48 hours (and repeat ultrasonography once the level reaches the discriminatory zone).\n- 원리: The <b>discriminatory level</b> is the β-hCG concentration above which a viable intrauterine pregnancy should be seen on transvaginal ultrasonography — about <b>1500–2000 mIU/mL</b>, and conservatively as high as <b>3500 mIU/mL</b> to avoid misdiagnosing a wanted pregnancy. <b>Below</b> that level an empty uterus proves nothing: the pregnancy may simply be too small to see. That is why a single value of 900 mIU/mL cannot separate (a) an early normal intrauterine pregnancy, (b) a failing intrauterine pregnancy, and (c) an ectopic pregnancy.<br> <b>Why the 48-hour rise separates them</b> — a viable intrauterine pregnancy at this level rises by at least <b>about 49 % in 48 hours</b> (the minimum rise is lower at higher starting levels); a fall of at least 21 % suggests a failing pregnancy; a slower rise or a plateau suggests ectopic or non-viable pregnancy. Interpreting the trend then guides the next test: repeat ultrasonography once the level crosses the discriminatory zone, or uterine aspiration to prove or exclude chorionic villi when the pregnancy is non-viable.<br> <b>Why nothing is treated yet</b> — methotrexate given to a woman with an unrecognized early intrauterine pregnancy is teratogenic and abortifacient; laparoscopy without a mass or free fluid has a low yield and its own risks; aspiration or misoprostol interrupt a possibly normal pregnancy. Expectant surveillance is safe only because she is <b>stable</b>: normal pulse and blood pressure, soft abdomen, no free fluid, normal hemoglobin — the moment any of these changes, the pathway becomes surgical.\n- 비교: <table><thead><tr><th style=\"width:32%\">Scenario</th><th style=\"width:34%\">Key numbers / findings</th><th>Correct step</th></tr></thead><tbody> <tr><td><b>PUL, stable, β-hCG below discriminatory level (this patient)</b></td><td><b>900 mIU/mL, no mass, no free fluid, normal vitals</b></td><td><b>repeat β-hCG in 48 h</b>, ultrasound again when ≥ discriminatory level</td></tr> <tr><td>PUL, stable, β-hCG above discriminatory level</td><td>e.g. ≥3500 mIU/mL and empty uterus, or abnormal rise</td><td>non-viable: uterine aspiration to look for villi; if none, treat as ectopic (methotrexate)</td></tr> <tr><td>Ectopic confirmed, stable, unruptured</td><td>adnexal mass with yolk sac/embryo, hCG <5000, no cardiac activity, no contraindication</td><td>methotrexate</td></tr> <tr><td>Any ectopic, unstable or ruptured</td><td>hypotension, peritoneal signs, free fluid, falling hemoglobin</td><td>immediate laparoscopy/laparotomy</td></tr> </tbody></table> The <b>closest wrong answer is methotrexate</b>: the reflex 'no intrauterine pregnancy → ectopic' ignores the discriminatory level. Methotrexate is justified only once an intrauterine pregnancy has been excluded — by a level above the discriminatory zone with an empty uterus, an abnormal trend, or aspiration showing no villi.\n- 오답 이유:\n  - (A) Diagnostic laparoscopy is the step for a hemodynamically unstable patient or one with peritoneal signs or free fluid suggesting rupture. This patient is stable with a soft abdomen and no fluid. This option would be correct only if she had hypotension, rebound tenderness, or hemoperitoneum on ultrasonography.\n  - (B) Uterine aspiration to look for chorionic villi is used once the pregnancy is known to be non-viable (abnormal β-hCG trend or empty uterus above the discriminatory level) to distinguish failed intrauterine from ectopic pregnancy. This option would be correct only after a non-viable trend had been documented.\n  - (C) Misoprostol is a treatment for a confirmed failed intrauterine pregnancy (early pregnancy loss). Nothing here proves the pregnancy is intrauterine or non-viable. This option would be correct only if ultrasonography had shown an intrauterine sac with an embryo without cardiac activity.\n  - (E) Methotrexate is given only after an intrauterine pregnancy has been excluded, because it is teratogenic and abortifacient. At 900 mIU/mL an early normal intrauterine pregnancy can still be invisible. This option would be correct only if an adnexal ectopic mass were seen or the β-hCG trend were abnormal with an empty uterus above the discriminatory level.\n- 함정: 'No intrauterine pregnancy' on ultrasound is only meaningful above the discriminatory β-hCG level. Below it, the empty uterus is uninformative and the trend is the test.\n- 학습목표: 식별기준치 아래의 위치미상 임신에서 혈역학적 안정 시 48시간 β-hCG 추적을 고른다\n- 근거·출처: ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018) — pregnancy of unknown location, discriminatory level, serial β-hCG · Barnhart KT et al. Symptomatic patients with an early viable intrauterine pregnancy: hCG curves redefined (Obstet Gynecol 2004) — minimum 48-h rise",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "This is a pregnancy of unknown location: a positive pregnancy test with neither an intrauterine nor an ectopic pregnancy seen. At a β-hCG of 900 mIU/mL — below the discriminatory level (about 1500–3500 mIU/mL) — a normal early intrauterine pregnancy can still be invisible, so the diagnosis cannot be made from one measurement. Because she is hemodynamically stable with no peritoneal signs, no mass and no free fluid, the correct step is to follow the trend with a repeat β-hCG in 48 hours (and repeat ultrasonography once the level reaches the discriminatory zone)."
+   },
+   {
+    "k": "원리",
+    "v": "The <b>discriminatory level</b> is the β-hCG concentration above which a viable intrauterine pregnancy should be seen on transvaginal ultrasonography — about <b>1500–2000 mIU/mL</b>, and conservatively as high as <b>3500 mIU/mL</b> to avoid misdiagnosing a wanted pregnancy. <b>Below</b> that level an empty uterus proves nothing: the pregnancy may simply be too small to see. That is why a single value of 900 mIU/mL cannot separate (a) an early normal intrauterine pregnancy, (b) a failing intrauterine pregnancy, and (c) an ectopic pregnancy.<br> <b>Why the 48-hour rise separates them</b> — a viable intrauterine pregnancy at this level rises by at least <b>about 49 % in 48 hours</b> (the minimum rise is lower at higher starting levels); a fall of at least 21 % suggests a failing pregnancy; a slower rise or a plateau suggests ectopic or non-viable pregnancy. Interpreting the trend then guides the next test: repeat ultrasonography once the level crosses the discriminatory zone, or uterine aspiration to prove or exclude chorionic villi when the pregnancy is non-viable.<br> <b>Why nothing is treated yet</b> — methotrexate given to a woman with an unrecognized early intrauterine pregnancy is teratogenic and abortifacient; laparoscopy without a mass or free fluid has a low yield and its own risks; aspiration or misoprostol interrupt a possibly normal pregnancy. Expectant surveillance is safe only because she is <b>stable</b>: normal pulse and blood pressure, soft abdomen, no free fluid, normal hemoglobin — the moment any of these changes, the pathway becomes surgical."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Scenario</th><th style=\"width:34%\">Key numbers / findings</th><th>Correct step</th></tr></thead><tbody> <tr><td><b>PUL, stable, β-hCG below discriminatory level (this patient)</b></td><td><b>900 mIU/mL, no mass, no free fluid, normal vitals</b></td><td><b>repeat β-hCG in 48 h</b>, ultrasound again when ≥ discriminatory level</td></tr> <tr><td>PUL, stable, β-hCG above discriminatory level</td><td>e.g. ≥3500 mIU/mL and empty uterus, or abnormal rise</td><td>non-viable: uterine aspiration to look for villi; if none, treat as ectopic (methotrexate)</td></tr> <tr><td>Ectopic confirmed, stable, unruptured</td><td>adnexal mass with yolk sac/embryo, hCG <5000, no cardiac activity, no contraindication</td><td>methotrexate</td></tr> <tr><td>Any ectopic, unstable or ruptured</td><td>hypotension, peritoneal signs, free fluid, falling hemoglobin</td><td>immediate laparoscopy/laparotomy</td></tr> </tbody></table> The <b>closest wrong answer is methotrexate</b>: the reflex 'no intrauterine pregnancy → ectopic' ignores the discriminatory level. Methotrexate is justified only once an intrauterine pregnancy has been excluded — by a level above the discriminatory zone with an empty uterus, an abnormal trend, or aspiration showing no villi."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Diagnostic laparoscopy is the step for a hemodynamically unstable patient or one with peritoneal signs or free fluid suggesting rupture. This patient is stable with a soft abdomen and no fluid. This option would be correct only if she had hypotension, rebound tenderness, or hemoperitoneum on ultrasonography.\n(B) Uterine aspiration to look for chorionic villi is used once the pregnancy is known to be non-viable (abnormal β-hCG trend or empty uterus above the discriminatory level) to distinguish failed intrauterine from ectopic pregnancy. This option would be correct only after a non-viable trend had been documented.\n(C) Misoprostol is a treatment for a confirmed failed intrauterine pregnancy (early pregnancy loss). Nothing here proves the pregnancy is intrauterine or non-viable. This option would be correct only if ultrasonography had shown an intrauterine sac with an embryo without cardiac activity.\n(E) Methotrexate is given only after an intrauterine pregnancy has been excluded, because it is teratogenic and abortifacient. At 900 mIU/mL an early normal intrauterine pregnancy can still be invisible. This option would be correct only if an adnexal ectopic mass were seen or the β-hCG trend were abnormal with an empty uterus above the discriminatory level."
+   },
+   {
+    "k": "함정",
+    "v": "'No intrauterine pregnancy' on ultrasound is only meaningful above the discriminatory β-hCG level. Below it, the empty uterus is uninformative and the trend is the test."
+   },
+   {
+    "k": "학습목표",
+    "v": "식별기준치 아래의 위치미상 임신에서 혈역학적 안정 시 48시간 β-hCG 추적을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy (2018) — pregnancy of unknown location, discriminatory level, serial β-hCG · Barnhart KT et al. Symptomatic patients with an early viable intrauterine pregnancy: hCG curves redefined (Obstet Gynecol 2004) — minimum 48-h rise"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0017",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "type": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-13",
+  "vignette": "45세 여자가 자궁근종으로 복식 전자궁절제술을 받았다. 수술 3일째부터 왼쪽 옆구리 통증과 38.2 ℃ 발열이 생겼다. 조영증강 CT에서 왼쪽 수신증이 있고 자궁목이 있던 자리의 왼쪽 옆에서 조영제가 새어 나온다.",
+  "question": "손상된 구조물이 이 부위에서 바로 아래로 지나가는 혈관은?",
+  "options": [
+   "속엉덩동맥",
+   "폐쇄동맥",
+   "아래방광동맥",
+   "자궁동맥",
+   "난소동맥"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 자궁목 옆의 조영제 누출과 같은 쪽 수신증은 요관 손상이다. 요관은 골반에서 넓은인대 바닥의 자궁목 외측 약 1.5~2 cm 지점에서 자궁동맥 바로 아래를 지나 방광으로 들어가며(「다리 아래 물」), 자궁동맥을 결찰·절단하는 이 단계가 요관 손상이 가장 잦은 지점이다.\n- 원리: 요관은 콩팥에서 방광까지 <b>복막 뒤</b>를 내려오며 골반에서 세 번 다른 구조와 만난다. ① <b>골반 가장자리</b>에서 온엉덩동맥 갈림 앞을 지나며 <b>난소걸이인대(난소혈관)</b> 와 나란히 가까이 놓인다. ② 골반 옆벽을 따라 내려와 <b>넓은인대 바닥(자궁목 외측 약 1.5~2 cm, 질천장 높이)</b>에서 <b>속엉덩동맥에서 온 자궁동맥이 요관 위를 앞으로 가로지른다</b> — 「다리(자궁동맥) 아래로 물(요관)이 흐른다」. ③ 마지막으로 방광 뒤벽을 비스듬히 뚫고 들어간다.<br> <b>왜 자궁절제술의 요관 손상은 ②에서 가장 많은가</b> — 자궁동맥을 결찰하려면 자궁목 옆의 조직을 겸자로 잡는데, 이때 요관이 자궁동맥에서 <b>1~2 cm 아래·뒤</b>에 있어 근종으로 자궁이 커지거나 출혈로 시야가 나쁘면 함께 잡히거나 잘리며, 결찰 시 열이 닿아 <b>지연 괴사 → 누출·요종(urinoma)</b> 이 된다. 그래서 수술 직후가 아니라 <b>수일 뒤 옆구리 통증·발열· 수신증</b>으로 나타난다.<br> <b>①과 ②를 어떻게 가르나</b> — 난소걸이인대를 자를 때(양쪽 난소·난관 절제)는 골반 가장자리(①)가 위험하고, 자궁동맥을 자를 때는 자궁목 옆(②)이 위험하다. 발문의 「자궁목이 있던 자리의 옆」이 ②를 가리키고, 그 자리에서 요관 <b>위</b>를 지나는 혈관은 자궁동맥뿐이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">교차 부위</th><th style=\"width:30%\">요관 위를 지나는 구조</th><th>손상되는 수술 단계 · 표지</th></tr></thead><tbody> <tr><td><b>넓은인대 바닥, 자궁목 외측 1.5~2 cm(정답 자리)</b></td><td><b>자궁동맥</b>(요관 위를 앞으로 가로지름)</td><td><b>자궁동맥 결찰</b> — 자궁목 옆 누출·수신증</td></tr> <tr><td>골반 가장자리</td><td>난소걸이인대 속 <b>난소동·정맥</b>(요관과 나란히)</td><td>난소걸이인대 결찰(난소 절제) — 더 위쪽 누출</td></tr> <tr><td>방광 진입부</td><td>—(방광벽 안 터널)</td><td>방광 박리·질천장 봉합 — 요관질누공</td></tr> </tbody></table> <b>가장 가까운 오답은 난소동맥</b> — 역시 요관과 만나는 혈관이지만 자리가 <b>골반 가장자리(위)</b>이고 요관 위를 가로지르지 않고 나란히 간다. 발문의 「자궁목 옆」이라는 위치가 자궁동맥을 고르게 한다.\n- 오답 이유:\n  - ① 속엉덩동맥은 골반 옆벽에서 요관의 뒤·바깥쪽을 내려가며 요관 위를 가로지르지 않는다. 자궁동맥은 그 앞가지일 뿐이다. 이 선지가 정답이 되려면 「요관 위를 가로지르는 혈관」이 아니라 「그 혈관의 기원」을 물어야 한다.\n  - ② 폐쇄동맥은 골반 옆벽을 따라 폐쇄구멍으로 나가며 요관보다 바깥·아래에 있어 자궁절제술의 요관 손상과 무관하다. 이 선지가 정답이 되려면 림프절 절제 중 폐쇄오목의 손상을 물어야 한다.\n  - ③ 아래방광동맥은 방광 바닥과 요관 아래 끝에 가지를 주지만 요관 위를 가로질러 자궁목 옆을 지나지 않는다. 이 선지가 정답이 되려면 방광 진입부 근처의 혈액 공급을 물어야 한다.\n  - ⑤ 난소동맥은 난소걸이인대 속에서 골반 가장자리의 요관과 나란히 지나므로 난소·난관을 함께 뗄 때 위험한 자리다. 이 선지가 정답이 되려면 누출 부위가 자궁목 옆이 아니라 골반 가장자리 높이여야 한다.\n- 함정: 「요관 손상 = 난소혈관」으로 외우면 틀린다. 어느 인대를 자르는 단계인지(난소걸이인대 vs 자궁동맥)로 부위가 갈린다.\n- 학습목표: 자궁절제술 중 요관 손상 호발 부위와 자궁동맥의 교차 관계\n- 근거·출처: Moore Clinically Oriented Anatomy — 골반 요관의 주행과 자궁동맥 교차(water under the bridge) · Te Linde's Operative Gynecology — 자궁절제술 중 요관 손상 호발 부위(자궁동맥 결찰부·난소걸이인대·질천장)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "자궁목 옆의 조영제 누출과 같은 쪽 수신증은 요관 손상이다. 요관은 골반에서 넓은인대 바닥의 자궁목 외측 약 1.5~2 cm 지점에서 자궁동맥 바로 아래를 지나 방광으로 들어가며(「다리 아래 물」), 자궁동맥을 결찰·절단하는 이 단계가 요관 손상이 가장 잦은 지점이다."
+   },
+   {
+    "k": "원리",
+    "v": "요관은 콩팥에서 방광까지 <b>복막 뒤</b>를 내려오며 골반에서 세 번 다른 구조와 만난다. ① <b>골반 가장자리</b>에서 온엉덩동맥 갈림 앞을 지나며 <b>난소걸이인대(난소혈관)</b> 와 나란히 가까이 놓인다. ② 골반 옆벽을 따라 내려와 <b>넓은인대 바닥(자궁목 외측 약 1.5~2 cm, 질천장 높이)</b>에서 <b>속엉덩동맥에서 온 자궁동맥이 요관 위를 앞으로 가로지른다</b> — 「다리(자궁동맥) 아래로 물(요관)이 흐른다」. ③ 마지막으로 방광 뒤벽을 비스듬히 뚫고 들어간다.<br> <b>왜 자궁절제술의 요관 손상은 ②에서 가장 많은가</b> — 자궁동맥을 결찰하려면 자궁목 옆의 조직을 겸자로 잡는데, 이때 요관이 자궁동맥에서 <b>1~2 cm 아래·뒤</b>에 있어 근종으로 자궁이 커지거나 출혈로 시야가 나쁘면 함께 잡히거나 잘리며, 결찰 시 열이 닿아 <b>지연 괴사 → 누출·요종(urinoma)</b> 이 된다. 그래서 수술 직후가 아니라 <b>수일 뒤 옆구리 통증·발열· 수신증</b>으로 나타난다.<br> <b>①과 ②를 어떻게 가르나</b> — 난소걸이인대를 자를 때(양쪽 난소·난관 절제)는 골반 가장자리(①)가 위험하고, 자궁동맥을 자를 때는 자궁목 옆(②)이 위험하다. 발문의 「자궁목이 있던 자리의 옆」이 ②를 가리키고, 그 자리에서 요관 <b>위</b>를 지나는 혈관은 자궁동맥뿐이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">교차 부위</th><th style=\"width:30%\">요관 위를 지나는 구조</th><th>손상되는 수술 단계 · 표지</th></tr></thead><tbody> <tr><td><b>넓은인대 바닥, 자궁목 외측 1.5~2 cm(정답 자리)</b></td><td><b>자궁동맥</b>(요관 위를 앞으로 가로지름)</td><td><b>자궁동맥 결찰</b> — 자궁목 옆 누출·수신증</td></tr> <tr><td>골반 가장자리</td><td>난소걸이인대 속 <b>난소동·정맥</b>(요관과 나란히)</td><td>난소걸이인대 결찰(난소 절제) — 더 위쪽 누출</td></tr> <tr><td>방광 진입부</td><td>—(방광벽 안 터널)</td><td>방광 박리·질천장 봉합 — 요관질누공</td></tr> </tbody></table> <b>가장 가까운 오답은 난소동맥</b> — 역시 요관과 만나는 혈관이지만 자리가 <b>골반 가장자리(위)</b>이고 요관 위를 가로지르지 않고 나란히 간다. 발문의 「자궁목 옆」이라는 위치가 자궁동맥을 고르게 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 속엉덩동맥은 골반 옆벽에서 요관의 뒤·바깥쪽을 내려가며 요관 위를 가로지르지 않는다. 자궁동맥은 그 앞가지일 뿐이다. 이 선지가 정답이 되려면 「요관 위를 가로지르는 혈관」이 아니라 「그 혈관의 기원」을 물어야 한다.\n② 폐쇄동맥은 골반 옆벽을 따라 폐쇄구멍으로 나가며 요관보다 바깥·아래에 있어 자궁절제술의 요관 손상과 무관하다. 이 선지가 정답이 되려면 림프절 절제 중 폐쇄오목의 손상을 물어야 한다.\n③ 아래방광동맥은 방광 바닥과 요관 아래 끝에 가지를 주지만 요관 위를 가로질러 자궁목 옆을 지나지 않는다. 이 선지가 정답이 되려면 방광 진입부 근처의 혈액 공급을 물어야 한다.\n⑤ 난소동맥은 난소걸이인대 속에서 골반 가장자리의 요관과 나란히 지나므로 난소·난관을 함께 뗄 때 위험한 자리다. 이 선지가 정답이 되려면 누출 부위가 자궁목 옆이 아니라 골반 가장자리 높이여야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「요관 손상 = 난소혈관」으로 외우면 틀린다. 어느 인대를 자르는 단계인지(난소걸이인대 vs 자궁동맥)로 부위가 갈린다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁절제술 중 요관 손상 호발 부위와 자궁동맥의 교차 관계"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Moore Clinically Oriented Anatomy — 골반 요관의 주행과 자궁동맥 교차(water under the bridge) · Te Linde's Operative Gynecology — 자궁절제술 중 요관 손상 호발 부위(자궁동맥 결찰부·난소걸이인대·질천장)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0016",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "type": "부인과 — 골반통·부인과 해부·자궁외임신",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-13",
+  "vignette": "17세 여자가 6개월 전부터 월경 첫 1~2일에 아랫배가 쥐어짜듯 아파 왔다. 통증은 허리와 허벅지로 뻗치고 메스꺼움이 함께 있다. 초경은 13세였고 월경주기는 28일로 규칙적이며 성경험은 없다. 진찰과 골반 초음파에서 이상이 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "진단 복강경검사",
+   "경험적 항생제 투여",
+   "비스테로이드소염제를 월경 시작과 함께 복용",
+   "복합 경구피임약을 주기적으로 복용",
+   "GnRH 작용제를 3개월 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 초경 후 배란주기가 확립된 뒤 시작되어 월경 시작과 함께 나타나고 1~2일 안에 잦아드는 쥐어짜는 아랫배 통증, 허리·허벅지 방사통과 위장 증상, 정상 골반 소견은 일차 월경곤란증의 전형이다. 원인은 자궁내막에서 만들어지는 프로스타글란딘 F2α 의 과다이므로 프로스타글란딘 합성을 막는 NSAID 가 첫 치료다.\n- 원리: 일차 월경곤란증의 통증은 <b>자궁내막이 떨어져 나갈 때 만들어지는 프로스타글란딘(PGF2α · PGE2)</b> 이 자궁근을 <b>세게, 자주, 기저긴장이 높은 상태로 수축</b>시키고 자궁 혈류를 줄여 <b>허혈성 통증</b>을 만드는 것이다. 배란 후 황체가 만든 프로게스테론이 떨어지면 내막 세포막의 인지질에서 <b>아라키돈산이 풀려 나오고, COX-2 가 이를 프로스타글란딘으로 바꾼다</b> — 그래서 통증은 <b>배란주기가 확립된 초경 1~2년 뒤</b>에 시작되고, <b>월경 시작 직전~첫 1~2일</b>(내막 붕괴·PG 농도 최고)에 가장 심하며, PG 가 장으로 들어가 <b>메스꺼움·설사</b>를 만든다.<br> <b>왜 NSAID 인가</b> — NSAID 는 COX 를 막아 <b>프로스타글란딘 생성 자체를 줄인다</b>. 그래서 통증을 덮는 것이 아니라 원인을 줄이며, 효과를 보려면 <b>월경 시작(또는 통증 시작)과 동시에</b> 먹기 시작해 2~3일 규칙적으로 복용해야 한다 — PG 가 이미 많이 만들어진 뒤에 먹으면 효과가 떨어진다.<br> <b>왜 피임약이 두 번째인가</b> — 복합 경구피임약은 <b>배란을 막고 내막을 얇게 만들어</b> PG 원료 자체를 줄이므로 역시 효과적이지만, 피임이 필요 없고 NSAID 를 아직 써 보지 않은 청소년에서는 <b>NSAID 가 먼저</b>다. 두 약을 <b>충분히 3~6개월</b> 써도 반응이 없을 때 비로소 <b>이차 월경곤란증(자궁내막증 등)</b> 을 의심해 복강경을 고려한다.\n- 비교: <table><thead><tr><th style=\"width:28%\">치료</th><th style=\"width:34%\">기전</th><th>이 환자에서의 자리</th></tr></thead><tbody> <tr><td><b>NSAID(정답)</b></td><td><b>COX 억제 → 프로스타글란딘 생성 감소</b></td><td><b>1차</b> — 월경 시작과 함께 2~3일 규칙 복용</td></tr> <tr><td>복합 경구피임약</td><td>배란 억제·내막 위축 → PG 원료 감소</td><td>피임을 원하거나 NSAID 무효·금기일 때</td></tr> <tr><td>GnRH 작용제</td><td>저에스트로겐 상태로 내막·병변 억제</td><td>확진된 자궁내막증의 2차 치료 — 골밀도 손실로 청소년 1차 아님</td></tr> <tr><td>복강경</td><td>이차 원인(자궁내막증) 확인</td><td>1차·2차 약물에 3~6개월 반응 없을 때</td></tr> </tbody></table> <b>가장 가까운 오답은 복합 경구피임약</b> — 둘 다 1차 약으로 인정되지만 「성경험 없음 · 피임 필요 없음 · 약물 미시도」라는 조건이 NSAID 를 앞세운다. 발문에 「피임을 원한다」 또는 「NSAID 로 조절되지 않는다」가 있으면 피임약이 정답이 된다.\n- 오답 이유:\n  - ① 진단 복강경은 NSAID 와 호르몬 치료에 3~6개월 반응하지 않아 이차 월경곤란증(자궁내막증)이 의심될 때의 단계다. 이 선지가 정답이 되려면 약물치료 실패나 비정상 골반 소견이 발문에 있어야 한다.\n  - ② 항생제는 골반염증질환처럼 감염이 통증의 원인일 때 쓴다. 이 환자는 성경험이 없고 발열·분비물·자궁목 압통이 없다. 이 선지가 정답이 되려면 성경험과 함께 발열·자궁목 움직임 압통이 있어야 한다.\n  - ④ 복합 경구피임약도 일차 월경곤란증에 효과적이지만 피임이 필요 없고 NSAID 를 써 보지 않은 청소년에서는 두 번째다. 이 선지가 정답이 되려면 환자가 피임을 원하거나 NSAID 로 3개월 이상 조절되지 않았어야 한다.\n  - ⑤ GnRH 작용제는 확진된 자궁내막증의 2차 치료이며 저에스트로겐으로 골밀도를 떨어뜨려 청소년의 1차 치료로 쓰지 않는다. 이 선지가 정답이 되려면 복강경으로 자궁내막증이 확진되고 1차 약이 실패했어야 한다.\n- 함정: 「초음파 정상 → 검사 더 하기」로 가지 않는다. 일차 월경곤란증은 진찰이 정상인 것이 진단이고, 치료 반응이 곧 확인이다.\n- 학습목표: 골반 이상이 없는 청소년의 일차 월경곤란증에서 첫 치료로 프로스타글란딘 합성 억제(NSAID)를 고른다\n- 근거·출처: ACOG Committee Opinion No. 760: Dysmenorrhea and Endometriosis in the Adolescent (2018) · 표준 부인과 지식 — 일차 월경곤란증의 프로스타글란딘 기전(Berek & Novak's Gynecology)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초경 후 배란주기가 확립된 뒤 시작되어 월경 시작과 함께 나타나고 1~2일 안에 잦아드는 쥐어짜는 아랫배 통증, 허리·허벅지 방사통과 위장 증상, 정상 골반 소견은 일차 월경곤란증의 전형이다. 원인은 자궁내막에서 만들어지는 프로스타글란딘 F2α 의 과다이므로 프로스타글란딘 합성을 막는 NSAID 가 첫 치료다."
+   },
+   {
+    "k": "원리",
+    "v": "일차 월경곤란증의 통증은 <b>자궁내막이 떨어져 나갈 때 만들어지는 프로스타글란딘(PGF2α · PGE2)</b> 이 자궁근을 <b>세게, 자주, 기저긴장이 높은 상태로 수축</b>시키고 자궁 혈류를 줄여 <b>허혈성 통증</b>을 만드는 것이다. 배란 후 황체가 만든 프로게스테론이 떨어지면 내막 세포막의 인지질에서 <b>아라키돈산이 풀려 나오고, COX-2 가 이를 프로스타글란딘으로 바꾼다</b> — 그래서 통증은 <b>배란주기가 확립된 초경 1~2년 뒤</b>에 시작되고, <b>월경 시작 직전~첫 1~2일</b>(내막 붕괴·PG 농도 최고)에 가장 심하며, PG 가 장으로 들어가 <b>메스꺼움·설사</b>를 만든다.<br> <b>왜 NSAID 인가</b> — NSAID 는 COX 를 막아 <b>프로스타글란딘 생성 자체를 줄인다</b>. 그래서 통증을 덮는 것이 아니라 원인을 줄이며, 효과를 보려면 <b>월경 시작(또는 통증 시작)과 동시에</b> 먹기 시작해 2~3일 규칙적으로 복용해야 한다 — PG 가 이미 많이 만들어진 뒤에 먹으면 효과가 떨어진다.<br> <b>왜 피임약이 두 번째인가</b> — 복합 경구피임약은 <b>배란을 막고 내막을 얇게 만들어</b> PG 원료 자체를 줄이므로 역시 효과적이지만, 피임이 필요 없고 NSAID 를 아직 써 보지 않은 청소년에서는 <b>NSAID 가 먼저</b>다. 두 약을 <b>충분히 3~6개월</b> 써도 반응이 없을 때 비로소 <b>이차 월경곤란증(자궁내막증 등)</b> 을 의심해 복강경을 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">치료</th><th style=\"width:34%\">기전</th><th>이 환자에서의 자리</th></tr></thead><tbody> <tr><td><b>NSAID(정답)</b></td><td><b>COX 억제 → 프로스타글란딘 생성 감소</b></td><td><b>1차</b> — 월경 시작과 함께 2~3일 규칙 복용</td></tr> <tr><td>복합 경구피임약</td><td>배란 억제·내막 위축 → PG 원료 감소</td><td>피임을 원하거나 NSAID 무효·금기일 때</td></tr> <tr><td>GnRH 작용제</td><td>저에스트로겐 상태로 내막·병변 억제</td><td>확진된 자궁내막증의 2차 치료 — 골밀도 손실로 청소년 1차 아님</td></tr> <tr><td>복강경</td><td>이차 원인(자궁내막증) 확인</td><td>1차·2차 약물에 3~6개월 반응 없을 때</td></tr> </tbody></table> <b>가장 가까운 오답은 복합 경구피임약</b> — 둘 다 1차 약으로 인정되지만 「성경험 없음 · 피임 필요 없음 · 약물 미시도」라는 조건이 NSAID 를 앞세운다. 발문에 「피임을 원한다」 또는 「NSAID 로 조절되지 않는다」가 있으면 피임약이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 진단 복강경은 NSAID 와 호르몬 치료에 3~6개월 반응하지 않아 이차 월경곤란증(자궁내막증)이 의심될 때의 단계다. 이 선지가 정답이 되려면 약물치료 실패나 비정상 골반 소견이 발문에 있어야 한다.\n② 항생제는 골반염증질환처럼 감염이 통증의 원인일 때 쓴다. 이 환자는 성경험이 없고 발열·분비물·자궁목 압통이 없다. 이 선지가 정답이 되려면 성경험과 함께 발열·자궁목 움직임 압통이 있어야 한다.\n④ 복합 경구피임약도 일차 월경곤란증에 효과적이지만 피임이 필요 없고 NSAID 를 써 보지 않은 청소년에서는 두 번째다. 이 선지가 정답이 되려면 환자가 피임을 원하거나 NSAID 로 3개월 이상 조절되지 않았어야 한다.\n⑤ GnRH 작용제는 확진된 자궁내막증의 2차 치료이며 저에스트로겐으로 골밀도를 떨어뜨려 청소년의 1차 치료로 쓰지 않는다. 이 선지가 정답이 되려면 복강경으로 자궁내막증이 확진되고 1차 약이 실패했어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「초음파 정상 → 검사 더 하기」로 가지 않는다. 일차 월경곤란증은 진찰이 정상인 것이 진단이고, 치료 반응이 곧 확인이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "골반 이상이 없는 청소년의 일차 월경곤란증에서 첫 치료로 프로스타글란딘 합성 억제(NSAID)를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Committee Opinion No. 760: Dysmenorrhea and Endometriosis in the Adolescent (2018) · 표준 부인과 지식 — 일차 월경곤란증의 프로스타글란딘 기전(Berek & Novak's Gynecology)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0015",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "산과 — 분만 중 태아감시·산과 마취",
+  "type": "산과 — 분만 중 태아감시·산과 마취",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-13",
+  "vignette": "A 32-year-old woman, gravida 2, para 1, at 38 weeks' gestation is brought to the operating room for emergency cesarean delivery under general anesthesia because of umbilical cord prolapse. She ate a full meal 2 hours ago. Rapid-sequence induction with cricoid pressure is planned.",
+  "question": "Which of the following medications is most appropriate to administer immediately before induction to reduce the severity of pneumonitis if aspiration occurs?",
+  "options": [
+   "Intravenous dexamethasone",
+   "Oral sodium citrate",
+   "Intravenous ondansetron",
+   "Intravenous midazolam",
+   "Intravenous glycopyrrolate"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Pregnant women at term are treated as having a full stomach (progesterone-mediated slowing of gastric emptying, raised intragastric pressure, reduced lower esophageal sphincter tone), and this patient has also eaten recently. Aspiration pneumonitis severity depends on gastric pH below about 2.5 and volume above about 25 mL. A non-particulate antacid such as 0.3 M sodium citrate raises gastric pH within minutes and is the one agent that works in the time available before an emergency induction; H2 blockers and metoclopramide are useful adjuncts when there is more time.\n- 원리: Aspiration pneumonitis (Mendelson syndrome) is a <b>chemical burn of the airway by acid</b>, and its severity rises steeply when the aspirated fluid has <b>pH below about 2.5</b> and a volume above about 25 mL (0.4 mL/kg). Pregnancy makes aspiration more likely for anatomical and hormonal reasons: <b>progesterone lowers the tone of the lower esophageal sphincter</b>, the enlarging uterus <b>raises intragastric pressure</b>, and labor, pain and opioids <b>delay gastric emptying</b>. Every laboring woman undergoing general anesthesia is therefore treated as a full-stomach patient — rapid-sequence induction, cricoid pressure, and <b>pharmacologic prophylaxis</b>.<br> <b>Why sodium citrate</b> — a non-particulate (clear) antacid neutralizes the acid already in the stomach, raising pH above 2.5 <b>within minutes</b> and for about 30–60 minutes; it is the only agent whose onset fits an emergency. It must be non-particulate because particulate antacids (aluminium hydroxide, magnesium trisilicate) themselves cause a granulomatous pneumonitis if aspirated.<br> <b>Why the others are second-line here</b> — H2-receptor antagonists (famotidine, ranitidine) and proton-pump inhibitors reduce <b>secretion of new acid</b> and need 30–60 minutes or more; metoclopramide increases gastric emptying and LES tone but also takes time. In an elective case these are given the night before and the morning of surgery, often together with citrate. Antiemetics, sedatives, anticholinergics and steroids <b>do not change the pH or volume of gastric contents</b>.\n- 비교: <table><thead><tr><th style=\"width:28%\">Agent</th><th style=\"width:36%\">Mechanism</th><th>Time to effect · role before an emergency induction</th></tr></thead><tbody> <tr><td><b>Sodium citrate 0.3 M (answer)</b></td><td><b>neutralizes acid already present</b> (non-particulate)</td><td><b>minutes</b> — the only one that works in this window</td></tr> <tr><td>Famotidine / ranitidine IV</td><td>blocks H2 receptors, less new acid</td><td>30–60 min — adjunct if time allows</td></tr> <tr><td>Metoclopramide IV</td><td>faster emptying, higher LES tone</td><td>15–30 min — adjunct</td></tr> <tr><td>Ondansetron / glycopyrrolate / dexamethasone</td><td>antiemetic / antisialagogue / anti-inflammatory</td><td>no effect on gastric pH or volume</td></tr> </tbody></table> The <b>closest wrong answer is glycopyrrolate</b>: it dries secretions and is sometimes given before airway management, but it does not raise gastric pH and may even lower LES tone. The question asks what reduces the <b>severity</b> of pneumonitis — that is a pH question, and pH is changed only by the antacid.\n- 오답 이유:\n  - (A) Dexamethasone reduces postoperative nausea and airway edema but has no effect on gastric acidity or volume before induction. This option would be correct only as part of multimodal nausea prophylaxis, not for aspiration.\n  - (C) Ondansetron prevents nausea and vomiting after surgery but does not alter gastric pH or volume, so it does not reduce the injury if aspiration occurs. This option would be correct only if the question asked about prophylaxis of postoperative nausea and vomiting.\n  - (D) Midazolam causes sedation and amnesia, crosses the placenta, depresses the neonate and blunts airway reflexes, which increases rather than reduces aspiration risk. This option would be correct only for anxiolysis in a non-pregnant patient with no aspiration risk.\n  - (E) Glycopyrrolate reduces airway secretions and vagal bradycardia but does not neutralize gastric acid and may reduce lower esophageal sphincter tone. This option would be correct only if the goal were to dry secretions before ketamine or awake intubation.\n- 함정: Cricoid pressure and rapid-sequence induction address the volume that reaches the airway; the antacid addresses what that volume does when it gets there. Both are given — the drug that changes severity is the antacid.\n- 학습목표: 응급 제왕절개 전신마취 전 흡인성 폐렴 예방을 위한 비입자성 제산제 투여\n- 근거·출처: ASA Practice Guidelines for Obstetric Anesthesia (Anesthesiology 2016) — timely administration of non-particulate antacids, H2 antagonists and/or metoclopramide before cesarean delivery · Mendelson CL. Am J Obstet Gynecol 1946 — aspiration of stomach contents into the lungs during obstetric anesthesia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Pregnant women at term are treated as having a full stomach (progesterone-mediated slowing of gastric emptying, raised intragastric pressure, reduced lower esophageal sphincter tone), and this patient has also eaten recently. Aspiration pneumonitis severity depends on gastric pH below about 2.5 and volume above about 25 mL. A non-particulate antacid such as 0.3 M sodium citrate raises gastric pH within minutes and is the one agent that works in the time available before an emergency induction; H2 blockers and metoclopramide are useful adjuncts when there is more time."
+   },
+   {
+    "k": "원리",
+    "v": "Aspiration pneumonitis (Mendelson syndrome) is a <b>chemical burn of the airway by acid</b>, and its severity rises steeply when the aspirated fluid has <b>pH below about 2.5</b> and a volume above about 25 mL (0.4 mL/kg). Pregnancy makes aspiration more likely for anatomical and hormonal reasons: <b>progesterone lowers the tone of the lower esophageal sphincter</b>, the enlarging uterus <b>raises intragastric pressure</b>, and labor, pain and opioids <b>delay gastric emptying</b>. Every laboring woman undergoing general anesthesia is therefore treated as a full-stomach patient — rapid-sequence induction, cricoid pressure, and <b>pharmacologic prophylaxis</b>.<br> <b>Why sodium citrate</b> — a non-particulate (clear) antacid neutralizes the acid already in the stomach, raising pH above 2.5 <b>within minutes</b> and for about 30–60 minutes; it is the only agent whose onset fits an emergency. It must be non-particulate because particulate antacids (aluminium hydroxide, magnesium trisilicate) themselves cause a granulomatous pneumonitis if aspirated.<br> <b>Why the others are second-line here</b> — H2-receptor antagonists (famotidine, ranitidine) and proton-pump inhibitors reduce <b>secretion of new acid</b> and need 30–60 minutes or more; metoclopramide increases gastric emptying and LES tone but also takes time. In an elective case these are given the night before and the morning of surgery, often together with citrate. Antiemetics, sedatives, anticholinergics and steroids <b>do not change the pH or volume of gastric contents</b>."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Agent</th><th style=\"width:36%\">Mechanism</th><th>Time to effect · role before an emergency induction</th></tr></thead><tbody> <tr><td><b>Sodium citrate 0.3 M (answer)</b></td><td><b>neutralizes acid already present</b> (non-particulate)</td><td><b>minutes</b> — the only one that works in this window</td></tr> <tr><td>Famotidine / ranitidine IV</td><td>blocks H2 receptors, less new acid</td><td>30–60 min — adjunct if time allows</td></tr> <tr><td>Metoclopramide IV</td><td>faster emptying, higher LES tone</td><td>15–30 min — adjunct</td></tr> <tr><td>Ondansetron / glycopyrrolate / dexamethasone</td><td>antiemetic / antisialagogue / anti-inflammatory</td><td>no effect on gastric pH or volume</td></tr> </tbody></table> The <b>closest wrong answer is glycopyrrolate</b>: it dries secretions and is sometimes given before airway management, but it does not raise gastric pH and may even lower LES tone. The question asks what reduces the <b>severity</b> of pneumonitis — that is a pH question, and pH is changed only by the antacid."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dexamethasone reduces postoperative nausea and airway edema but has no effect on gastric acidity or volume before induction. This option would be correct only as part of multimodal nausea prophylaxis, not for aspiration.\n(C) Ondansetron prevents nausea and vomiting after surgery but does not alter gastric pH or volume, so it does not reduce the injury if aspiration occurs. This option would be correct only if the question asked about prophylaxis of postoperative nausea and vomiting.\n(D) Midazolam causes sedation and amnesia, crosses the placenta, depresses the neonate and blunts airway reflexes, which increases rather than reduces aspiration risk. This option would be correct only for anxiolysis in a non-pregnant patient with no aspiration risk.\n(E) Glycopyrrolate reduces airway secretions and vagal bradycardia but does not neutralize gastric acid and may reduce lower esophageal sphincter tone. This option would be correct only if the goal were to dry secretions before ketamine or awake intubation."
+   },
+   {
+    "k": "함정",
+    "v": "Cricoid pressure and rapid-sequence induction address the volume that reaches the airway; the antacid addresses what that volume does when it gets there. Both are given — the drug that changes severity is the antacid."
+   },
+   {
+    "k": "학습목표",
+    "v": "응급 제왕절개 전신마취 전 흡인성 폐렴 예방을 위한 비입자성 제산제 투여"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ASA Practice Guidelines for Obstetric Anesthesia (Anesthesiology 2016) — timely administration of non-particulate antacids, H2 antagonists and/or metoclopramide before cesarean delivery · Mendelson CL. Am J Obstet Gynecol 1946 — aspiration of stomach contents into the lungs during obstetric anesthesia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260913T201606Z_일일영상_2026-09-14_9units_9q_85b9cadf",
+  "qid": "Q0006"
  },
  {
   "id": "imaging-2026-0009",
