@@ -15,7 +15,7 @@
   var TYPE_LABEL = {
     kmle: "KMLE", usmle: "USMLE", paper: "논문",
     basic: "기초의학", disease: "질환", drug: "약물",
-    ailab: "AI랩", anatomy: "해부학"
+    ailab: "AI랩", anatomy: "해부학", imaging: "영상"
   };
 
   function esc(s) {

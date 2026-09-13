@@ -279,3 +279,48 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 .co-pdfonly > summary { cursor: pointer; font-size: .88em; opacity: .78; padding: 6px 0; }
 .co-pdfonly[open] > summary { opacity: 1; }
 @media (max-width: 720px) { .co-q { grid-template-columns: 1fr; } }
+
+/* ── 오픈데이터 실제 영상 문항(imaging) ─────────────────────────────── */
+.imgfig{margin:12px 0; background:#0b1420; border:1px solid var(--line); border-radius:10px; padding:8px; text-align:center}
+.imgfig img{display:block; max-width:100%; max-height:70vh; margin:0 auto; border-radius:6px; cursor:zoom-in; background:#fff}
+.imgfig figcaption{color:var(--muted); font-size:.82rem; margin-top:6px; text-align:left}
+.imgfig .zoomhint{color:#8fb3ff}
+.explanation .src a{color:#8fb3ff}
+.w .wnote{color:#f0d68a; font-size:.9rem; margin:4px 0}
+/* 확대 보기(핀치·드래그) */
+.zoom{position:fixed; inset:0; z-index:1000; background:rgba(4,8,14,.96); display:flex; align-items:center; justify-content:center; touch-action:none; overscroll-behavior:contain}
+.zoom img{max-width:100vw; max-height:100vh; transform-origin:center center; will-change:transform; user-select:none; -webkit-user-drag:none; background:#fff}
+.zoom .zclose{position:fixed; top:10px; right:10px; z-index:1001; font-size:1.2rem; padding:8px 12px; background:rgba(24,37,52,.9)}
+.zoom .zhint{position:fixed; bottom:12px; left:0; right:0; text-align:center; color:var(--muted); font-size:.82rem; pointer-events:none}
+body.noscroll{overflow:hidden}
+/* 동기화 표시 */
+.syncrow{justify-content:space-between}
+.sync{margin:0}
+.sync.ok{color:var(--ok)}
+.sync.bad{color:#ffb4b4}
+button.small{padding:6px 10px; font-size:.85rem}
+.syncopts{margin-top:4px}
+.syncopts summary{cursor:pointer; font-size:.85rem}
+.syncopts input{width:100%; margin-top:6px; background:#0e1826; color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:.95rem}
+/* PWA 설치 버튼·토스트 */
+.pwa-install{position:fixed; right:14px; bottom:14px; z-index:900; background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.pwa-toast{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:950; display:flex; gap:10px; align-items:center;
+  background:#182534; border:1px solid var(--accent); border-radius:12px; padding:10px 14px; font-size:.92rem; box-shadow:0 6px 20px rgba(0,0,0,.4); max-width:92vw}
+.pwa-toast button{padding:6px 10px; font-size:.85rem}
+.pwa-toast .x{background:none; border:none; color:var(--muted); font-size:1rem; padding:2px 6px}
+/* 좁은 화면(핸드폰) */
+@media (max-width: 600px){
+  .nav{overflow-x:auto; white-space:nowrap; flex-wrap:nowrap; padding:12px 12px 0; gap:6px; scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{padding:7px 11px; font-size:.88rem; flex:none}
+  header{padding:18px 14px 6px}
+  h1{font-size:1.25rem}
+  .card{margin:12px 10px; padding:14px; border-radius:12px}
+  select{min-width:0; width:100%}
+  .row label{min-width:64px}
+  .quiz-nav{flex-wrap:wrap}
+  .quiz-nav button{flex:1 1 auto}
+  .opt{padding:12px; font-size:.95rem}
+  .imgfig img{max-height:60vh}
+  .subj{margin-left:0; width:100%}
+}

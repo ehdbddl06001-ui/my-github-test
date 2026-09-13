@@ -27,6 +27,10 @@
 - 기초의학 → `content/basic/`      논문 → `content/papers/{연도}/`
 - 질환 카드 → `content/diseases/`  약물 카드 → `content/drugs/`
 - AI·코딩 학습(ailab) → `content/ailab/`  (실습 노트북은 `notebooks/`, Colab+Drive 연동)
+- 오픈데이터 영상 문항(imaging) → `content/imaging/{연도}/` + 영상 `docs/assets/imaging/`.
+  · **여기서 직접 만들지 않는다** — 의대_시험지_제작 빌더의 `opendata medkos-export` 가 세트를 옮긴다
+    (`schemas/frontmatter.md` imaging 계약). 원본은 빌더 run, 카드는 파생물. 문항 수정은 빌더에서
+    폐기 후 재생성. 웹 번들은 `pipelines/export_imaging_web.py`(publish.py 가 자동 실행).
 - 해부학(3Q) → `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`
   · 원본 PDF·페이지 이미지·마스크는 **`.private/anatomy/`(git 무시)** — 공개 repo 커밋 금지.
   · 일정 단일 기준은 `pipelines/anatomy_schedule.py`(2026 시간표). Drive 계획서 날짜 사용 금지.
@@ -105,6 +109,15 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
 주의: 드라이버는 **로컬 git 병합**에만 작동한다 → GitHub 서버 병합은 위 1단계(로컬
 `git merge origin/main` 후 push)로 해소. 회귀 테스트: `python pipelines/merge_state.py --selftest`,
 `python pipelines/test_state.py`.
+
+## 홈페이지 = PWA(핸드폰 앱) · 오답 동기화
+- `docs/` 는 GitHub Pages 와 Cloudflare Pages 둘 다에서 뜨도록 **전부 상대경로**다(manifest·sw.js 포함).
+  절대경로(`/x`)를 쓰지 않는다. `docs/sw.js` 가 껍데기·번들·영상을 캐시하고, `docs/pwa.js` 가
+  설치 버튼·새 자료 토스트를 띄운다. 새 페이지를 추가하면 `sw.js` 의 SHELL 목록에도 넣는다.
+- 오답 동기화는 Cloudflare Pages Function `functions/api/wrong.js` → `state/wrong_sync/<exam>.json`
+  커밋 → `.github/workflows/wrong-sync.yml` 이 `pipelines/import_wrong_sync.py` 로 오답노트 .md 를
+  다시 쓴다. `state/wrong_sync/` 는 **사용자 데이터**라 커밋한다(파생 상태가 아님). 시크릿
+  (`GITHUB_TOKEN`·`SYNC_KEY`)은 Cloudflare 대시보드에만 두고 repo 에 절대 넣지 않는다.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

@@ -27,11 +27,11 @@
 
   var TYPE_LABEL = {
     anatomy: "해부학", kmle: "KMLE", usmle: "USMLE", paper: "논문",
-    ailab: "AI랩", basic: "기초의학", disease: "질환", drug: "약물", diagram: "도해"
+    ailab: "AI랩", basic: "기초의학", disease: "질환", drug: "약물", diagram: "도해", imaging: "영상"
   };
   var TYPE_HREF = {
     anatomy: "anatomy.html", kmle: "index.html", usmle: "index.html",
-    paper: "papers.html", ailab: "ailab.html", diagram: "anatomy.html#diagrams"
+    paper: "papers.html", ailab: "ailab.html", diagram: "anatomy.html#diagrams", imaging: "index.html"
   };
   var REPO = DATA.repo || "";
   var BRANCH = DATA.branch || "main";

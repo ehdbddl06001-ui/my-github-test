@@ -23,9 +23,14 @@ except ImportError:  # pragma: no cover
 REQUIRED_COMMON = ["id", "type", "topic", "date", "confidence"]
 # 문제형(kmle/usmle) 문서에 추가로 필수인 필드
 REQUIRED_QUESTION = ["stem", "choices", "answer"]
-VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "anatomy"}
+VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "anatomy", "imaging"}
 VALID_CONFIDENCE = {"high", "medium", "low"}
-QUESTION_TYPES = {"kmle", "usmle"}
+# imaging = 오픈데이터 실제 영상(ECG·CT·피부·병리·CTG) 문항. 의대_시험지_제작 아침 루틴이
+# 만든 세트를 medkos_export 가 카드로 옮긴다. 문제형 계약(stem/choices/answer)을 그대로 따른다.
+QUESTION_TYPES = {"kmle", "usmle", "imaging"}
+# imaging 은 국시형/USMLE형 중 어느 형식으로 냈는지(style)와 영상 출처(figure)를 요구한다.
+REQUIRED_IMAGING = ["style"]
+VALID_IMAGING_STYLE = {"kmle_style", "usmle_style"}
 # USMLE는 웹/CLI 퀴즈에서 Step·과목으로 분류되므로 아래 두 필드를 추가로 요구한다.
 REQUIRED_USMLE = ["step", "exam_subject"]
 VALID_STEP = {"Step 1", "Step 2"}
@@ -184,6 +189,19 @@ def validate(meta: dict[str, Any]) -> list[str]:
         s = meta.get("step")
         if s and s not in VALID_STEP:
             errors.append(f"step 값 오류: {s} (허용: 'Step 1' / 'Step 2')")
+
+    if t == "imaging":
+        for k in REQUIRED_IMAGING:
+            if k not in meta or meta[k] in (None, ""):
+                errors.append(f"imaging 필수 필드 누락: {k} (kmle_style/usmle_style)")
+        st = meta.get("style")
+        if st and st not in VALID_IMAGING_STYLE:
+            errors.append(f"imaging style 값 오류: {st} (허용: kmle_style/usmle_style)")
+        fig = meta.get("figure")
+        if fig is not None and not isinstance(fig, dict):
+            errors.append("imaging figure 는 맵이어야 함({type: image, src, caption})")
+        if isinstance(fig, dict) and fig.get("type") == "image" and not fig.get("src"):
+            errors.append("imaging figure.src 누락(docs/ 기준 상대경로)")
 
     if t == "anatomy":
         _validate_anatomy(meta, errors)
