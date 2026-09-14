@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2368,
+  "total": 2377,
   "byType": {
    "usmle": 144,
    "kmle": 971,
+   "imaging": 27,
    "anatomy": 626,
    "paper": 592,
-   "imaging": 18,
    "ailab": 14,
    "basic": 3
   },
@@ -38,27 +38,27 @@ window.MEDKOS_INDEX = {
    "Hematology": 59,
    "Laboratory Medicine": 58,
    "Physiology": 17,
+   "산부인과": 15,
    "Pharmacology": 11,
    "Biochemistry": 10,
    "Microbiology": 10,
-   "산부인과": 10,
    "Immunology": 8,
    "Internal Medicine": 8,
+   "순환기": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "순환기": 4,
    "Oncology": 3,
+   "호흡기": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "병리·조직학": 2,
-   "호흡기": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1544,
+   "high": 1553,
    "medium": 775,
    "low": 49
   },
@@ -844,6 +844,164 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0970.md",
    "snippet": "66세 남자가 급성 심근경색으로 관상동맥중재술을 받고 심장내과 병동에 입원한 지 2일째 새벽, 간호사가 보는 앞에서 갑자기 의식을 잃고 쓰러졌다. 즉시 심폐소생술을 시작하고 백마스크 환기와 정맥로 확보를 마쳤다. 가슴압박 2분 후 리듬을 확인하니 모니터는 자료와 같았고, 활력징후와 검사 소견은 자료와 같다. 다음으로 가장 적절한 처치는? A. 비동기 제세동 200 J B. 에피네프린 1 mg 정주 C. 아미오다론 300 mg ",
    "text": "Cardiology Cardiac Arrest with Asystole — Non-shockable Rhythm Management cardiac-arrest asystole acls epinephrine ecg KMLE 2026 / Claude Routine 66세 남자가 급성 심근경색으로 관상동맥중재술을 받고 심장내과 병동에 입원한 지 2일째 새벽, 간호사가 보는 앞에서 갑자기 의식을 잃고 쓰러졌다. 즉시 심폐소생술을 시작하고 백마스크 환기와 정맥로 확보를 마쳤다. 가슴압박 2분 후 리듬을 확인하니 모니터는 자료와 같았고, 활력징후와 검사 소견은 자료와 같다. 다음으로 가장 적절한 처치는? A. 비동기 제세동 200 J B. 에피네프린 1 mg 정주 C. 아미오다론 300 mg 정주 D. 아트로핀 1 mg 정주 E. 경피 심박조율 심정지 중 리듬 확인에서 여러 유도와 최대 감도에서도 전기 활동이 전혀 없으면 무수축이며, 무맥성 전기활동과 함께 비제세동 리듬이다. 비제세동 리듬은 고품질 가슴압박을 이어가면서 가능한 한 빨리 에피네프린 1 mg을 정주하고 3–5분마다 반복하며, 제세동·항부정맥제·아트로핀·조율은 권고되지 않는다."
+  },
+  {
+   "id": "imaging-2026-0027",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0027.md",
+   "snippet": "A 29 year old woman comes to the clinic to discuss contraception. She was diagnosed with pulmonary tuberculosis 2 weeks ago and has started a 6 month regimen that includes rifampin. She has taken a combined oral contraceptive containing 30 ",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 29 year old woman comes to the clinic to discuss contraception. She was diagnosed with pulmonary tuberculosis 2 weeks ago and has started a 6 month regimen that includes rifampin. She has taken a combined oral contraceptive containing 30 µg ethinyl estradiol for 4 years without problems and does not want to become pregnant during treatment. She is a nonsmoker and has no other medical conditions. Which of the following is the most appropriate contraceptive recommendation for the duration of her tuberculosis therapy? A. Depot medroxyprogesterone acetate injections every 12 weeks B. Continue the current combined oral contraceptive with strict daily adherence C. Switch to a combined pill containing 50 µg ethinyl estradiol D. Switch to an etonogestrel subdermal implant E. Switch to a progestin only pill containing norethindrone"
+  },
+  {
+   "id": "imaging-2026-0026",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0026.md",
+   "snippet": "28세 남자가 2개월 전부터 만져지는 오른쪽 음낭의 단단한 덩이로 왔다. 통증은 없고 외상이나 발열은 없었다. 진찰에서 오른쪽 고환에 지름 3 cm 의 딱딱하고 불규칙한 종괴가 있고 투광검사에서 빛이 통과하지 않는다. 음낭 초음파에서 고환 실질 안의 저에코 고형 종괴가 보인다. 혈청 알파태아단백 480 ng/mL, β hCG 210 mIU/mL, 젖산탈수소효소는 정상이다. 가장 적절한 처치는? A. 경피적 세침흡인 세포검사 B",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 28세 남자가 2개월 전부터 만져지는 오른쪽 음낭의 단단한 덩이로 왔다. 통증은 없고 외상이나 발열은 없었다. 진찰에서 오른쪽 고환에 지름 3 cm 의 딱딱하고 불규칙한 종괴가 있고 투광검사에서 빛이 통과하지 않는다. 음낭 초음파에서 고환 실질 안의 저에코 고형 종괴가 보인다. 혈청 알파태아단백 480 ng/mL, β hCG 210 mIU/mL, 젖산탈수소효소는 정상이다. 가장 적절한 처치는? A. 경피적 세침흡인 세포검사 B. 서혜부 절개를 통한 근치 고환절제술 C. 음낭을 통한 절개 생검 D. 시스플라틴 기반 항암화학요법 우선 시행 E. 6주 뒤 초음파 재검"
+  },
+  {
+   "id": "imaging-2026-0025",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0025.md",
+   "snippet": "32세 여자가 건강검진으로 받은 자궁경부세포검사에서 비정형 편평세포(ASC US)로 나와 산부인과에 왔다. 함께 시행한 고위험 인유두종바이러스 검사에서 16형 양성이었다. 월경은 규칙적이고 성교 후 출혈이나 냉은 없으며 이전 세포검사는 3년 전 정상이었다. 진찰에서 자궁경부에 육안적 병변은 없다. 가장 적절한 다음 검사는? A. 질확대경검사와 조준 생검 B. 12개월 뒤 세포검사와 HPV 검사 반복 C. 자궁경부 원추절제술 D",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 32세 여자가 건강검진으로 받은 자궁경부세포검사에서 비정형 편평세포(ASC US)로 나와 산부인과에 왔다. 함께 시행한 고위험 인유두종바이러스 검사에서 16형 양성이었다. 월경은 규칙적이고 성교 후 출혈이나 냉은 없으며 이전 세포검사는 3년 전 정상이었다. 진찰에서 자궁경부에 육안적 병변은 없다. 가장 적절한 다음 검사는? A. 질확대경검사와 조준 생검 B. 12개월 뒤 세포검사와 HPV 검사 반복 C. 자궁경부 원추절제술 D. 자궁내막 생검 E. 6개월 뒤 세포검사 반복"
+  },
+  {
+   "id": "imaging-2026-0024",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0024.md",
+   "snippet": "A 24 year old woman, gravida 1, comes to the emergency department because of vaginal bleeding and severe nausea for 3 days. Her last menstrual period was 11 weeks ago. Blood pressure is 142/92 mm Hg. The uterus is enlarged to the size of a ",
+   "text": "산부인과 산과 — 분만 중 태아감시·융모성 질환 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 24 year old woman, gravida 1, comes to the emergency department because of vaginal bleeding and severe nausea for 3 days. Her last menstrual period was 11 weeks ago. Blood pressure is 142/92 mm Hg. The uterus is enlarged to the size of a 16 week gestation. Serum β hCG concentration is 480,000 mIU/mL. Transvaginal ultrasonography shows a uterine cavity filled with a heterogeneous echogenic mass containing numerous small cystic spaces and no fetal parts; both ovaries contain multiple large cysts. Which of the following is the most appropriate next step in management? A. Expectant management with repeat ultrasonography in 2 weeks B. Suction curettage followed by serial β hCG measurements C. Single agent methotrexate chemotherapy D. Hysterectomy with bilateral salpingo oophorectomy E. Medical evacuation with misoprostol"
+  },
+  {
+   "id": "imaging-2026-0023",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0023.md",
+   "snippet": "33세 초산부가 임신 40주에 자연진통으로 입원하여 활동기 진통 중이며 지속 전자태아감시를 하고 있다. 임신 경과에 특이사항은 없었다. 감시 40~50분 구간의 태아심박동과 자궁수축 기록은 그림과 같다. 43분경 자궁수축과 함께 나타난 태아심박동 변화는? A. 후기감속(late deceleration) B. 지연감속(prolonged deceleration) C. 정현파형(sinusoidal pattern) D. 가변감속(va",
+   "text": "산부인과 산과 — 분만 중 태아감시·융모성 질환 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 33세 초산부가 임신 40주에 자연진통으로 입원하여 활동기 진통 중이며 지속 전자태아감시를 하고 있다. 임신 경과에 특이사항은 없었다. 감시 40~50분 구간의 태아심박동과 자궁수축 기록은 그림과 같다. 43분경 자궁수축과 함께 나타난 태아심박동 변화는? A. 후기감속(late deceleration) B. 지연감속(prolonged deceleration) C. 정현파형(sinusoidal pattern) D. 가변감속(variable deceleration) E. 조기감속(early deceleration)"
+  },
+  {
+   "id": "imaging-2026-0022",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "흉부 CT 정상 해부 — 대동맥활 높이",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0022.md",
+   "snippet": "A 60 year old woman undergoes low dose CT of the chest as part of a lung cancer screening program. She has no cough, hemoptysis, or weight loss. An axial image of the chest at the level of the upper mediastinum (lung window) is shown; the t",
+   "text": "호흡기 흉부 CT 정상 해부 — 대동맥활 높이 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 60 year old woman undergoes low dose CT of the chest as part of a lung cancer screening program. She has no cough, hemoptysis, or weight loss. An axial image of the chest at the level of the upper mediastinum (lung window) is shown; the trachea is seen as the round air filled structure in the midline. Which of the following best identifies the broad soft tissue structure that lies anterior to the trachea and sweeps to the left of it toward the left side of the vertebral body? A. Left brachiocephalic vein B. Pulmonary trunk C. Arch of the azygos vein D. Arch of the aorta E. Superior vena cava"
+  },
+  {
+   "id": "imaging-2026-0021",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0021.md",
+   "snippet": "A 78 year old woman is evaluated before elective surgery for symptomatic pelvic organ prolapse. Two years ago she had an episode of chest pressure lasting several hours for which she did not seek care; she has had no chest pain or dyspnea s",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 78 year old woman is evaluated before elective surgery for symptomatic pelvic organ prolapse. Two years ago she had an episode of chest pressure lasting several hours for which she did not seek care; she has had no chest pain or dyspnea since and walks 30 minutes daily. Blood pressure is 134/80 mm Hg and pulse is 70/min. A 12 lead electrocardiogram is shown. Which of the following best describes the findings on this tracing? A. ST segment elevation in leads II, III and aVF indicating an acute inferior infarction B. Poor R wave progression in leads V1–V4 indicating a prior anterior infarction C. Complete left bundle branch block D. First degree atrioventricular block E. Pathologic Q waves in leads III and aVF consistent with a prior inferior infarction"
+  },
+  {
+   "id": "imaging-2026-0020",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0020.md",
+   "snippet": "A 44 year old woman comes to the preoperative clinic before an elective laparoscopic myomectomy. She reports occasional brief episodes of rapid palpitations since her twenties that stop on their own; she has never had syncope. Blood pressur",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 44 year old woman comes to the preoperative clinic before an elective laparoscopic myomectomy. She reports occasional brief episodes of rapid palpitations since her twenties that stop on their own; she has never had syncope. Blood pressure is 122/78 mm Hg and pulse is 60/min and regular. A 12 lead electrocardiogram obtained for the preoperative evaluation is shown. Which of the following is the most likely explanation for the abnormality on this tracing? A. Prior transmural infarction of the inferior wall B. An ectopic atrial pacemaker located near the atrioventricular junction C. An accessory pathway conducting atrial impulses directly to ventricular myocardium D. Delayed conduction through the right bundle branch E. Slowed conduction through the atrioventricular node"
+  },
+  {
+   "id": "imaging-2026-0019",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0019.md",
+   "snippet": "63세 여자가 2시간 전부터 갑자기 시작된 두근거림으로 응급실에 왔다. 흉통이나 실신은 없었고 심장질환을 진단받은 적은 없다. 혈압 118/76 mmHg, 맥박 분당 약 165회로 규칙적이며 호흡곤란은 없다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 진단은? A. 동성빈맥 B. 심실빈맥 C. 심방조동(2:1 방실전도) D. 방실결절 회귀성 빈맥 E. 심방세동",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 63세 여자가 2시간 전부터 갑자기 시작된 두근거림으로 응급실에 왔다. 흉통이나 실신은 없었고 심장질환을 진단받은 적은 없다. 혈압 118/76 mmHg, 맥박 분당 약 165회로 규칙적이며 호흡곤란은 없다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 진단은? A. 동성빈맥 B. 심실빈맥 C. 심방조동(2:1 방실전도) D. 방실결절 회귀성 빈맥 E. 심방세동"
   },
   {
    "id": "anatomy-daily-2026-09-14",

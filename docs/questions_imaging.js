@@ -2,6 +2,674 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0023",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+  "type": "산과 — 분만 중 태아감시·융모성 질환",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-14",
+  "vignette": "33세 초산부가 임신 40주에 자연진통으로 입원하여 활동기 진통 중이며 지속 전자태아감시를 하고 있다. 임신 경과에 특이사항은 없었다. 감시 40~50분 구간의 태아심박동과 자궁수축 기록은 그림과 같다.",
+  "question": "43분경 자궁수축과 함께 나타난 태아심박동 변화는?",
+  "options": [
+   "후기감속(late deceleration)",
+   "지연감속(prolonged deceleration)",
+   "정현파형(sinusoidal pattern)",
+   "가변감속(variable deceleration)",
+   "조기감속(early deceleration)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 약 135~140/분이고 변이도는 중등도다. 43분의 자궁수축 중 심박동이 150 까지 잠깐 올랐다가(어깨, shoulder) 약 15초 만에 115~119/분까지 급격히 떨어지고 약 40초 뒤 기저선으로 돌아온다. 하강이 급격하고(시작~최저 30초 미만), 깊이 15/분 이상, 지속 15초 이상 2분 미만이며 어깨가 앞서는 V 자형이므로 가변감속이다. 이후 두 번의 수축에는 감속이 없어 반복성은 아니다.\n- 원리: NICHD 정의에서 감속은 <b>하강의 속도</b>와 <b>수축과의 시간 관계</b> 두 축으로 나눈다. 시작에서 최저까지 <b>30초 미만이면 「급격(abrupt)」</b>, 30초 이상이면 「점진(gradual)」이다. <b>가변감속</b>은 급격한 하강이 ≥15/분, ≥15초, &lt;2분 지속되는 것으로 수축과의 시간 관계는 <b>일정하지 않아도</b> 된다. <b>조기감속</b>과 <b>후기감속</b>은 모두 점진적 하강이며, 최저점이 수축의 최고점과 일치하면 조기, 최고점보다 늦으면 후기다. <b>지연감속</b>은 하강 방식과 무관하게 <b>2분 이상 10분 미만</b> 지속되는 것이다.<br> <b>왜 모양이 다른가 — 기전</b> — 가변감속은 <b>제대 압박</b>이다. 제대정맥이 먼저 눌리면 정맥환류가 줄어 반사성 빈맥(앞 어깨)이 생기고, 이어 제대동맥이 눌리면 태아 혈압이 갑자기 올라 <b>압력수용체 → 미주신경</b> 반사로 심박이 급격히 떨어진다. 신경 반사라서 <b>빠르고(V 자)</b>, 압박이 풀리면 곧 회복되며 다시 어깨가 나타난다. 조기감속은 <b>태아 머리 압박</b>에 의한 미주 반사로 수축의 거울상처럼 완만하다. 후기감속은 <b>자궁태반 관류 저하 → 태아 저산소 → 화학수용체</b> 반사이므로 수축이 최고점을 지난 뒤에야 나타나고 완만하게 회복된다 — 그래서 후기감속만이 「산소 부족」의 직접 신호다.<br> <b>이 기록의 판정</b> — 43.2분의 짧은 상승(어깨) → 43.35분부터 급강하 → 43.6~43.9분 최저(기저 대비 ≈20~25/분) → 44.0분 회복. 급격·15초 이상·2분 미만 = 가변감속. 한 번뿐이고 변이도가 유지되므로 Category II 의 「간헐적 가변감속」에 해당하며, 체위 변경과 관찰로 충분하다.\n- 비교: <table><thead><tr><th style=\"width:22%\">감속</th><th style=\"width:20%\">하강 속도</th><th style=\"width:26%\">수축과의 관계</th><th>기전 · 이 기록</th></tr></thead><tbody> <tr><td><b>가변감속(정답)</b></td><td><b>급격(&lt;30초), V 자, 어깨 동반</b></td><td>일정하지 않음</td><td>제대 압박 · <b>43.35분 15초 만에 최저</b></td></tr> <tr><td>조기감속</td><td>점진(≥30초), 완만한 U 자</td><td>최저 = 수축 최고점, 거울상</td><td>머리 압박 · 이 기록은 하강이 너무 빠름</td></tr> <tr><td>후기감속</td><td>점진(≥30초)</td><td>시작·최저·회복이 모두 수축보다 늦음</td><td>자궁태반 관류 저하 · 여기선 급격 하강이라 제외</td></tr> <tr><td>지연감속</td><td>무관</td><td>≥2분 ~ &lt;10분 지속</td><td>이 기록은 ≈40초</td></tr> <tr><td>정현파형</td><td>감속 아님</td><td>3~5회/분의 매끈한 사인파, 변이도 없음</td><td>여기선 변이도 정상</td></tr> </tbody></table> <b>가장 가까운 오답은 후기감속</b> — 이 감속의 최저점이 수축 최고점(43.3~43.6분)보다 약간 늦어 「늦게 온다」고만 보면 후기로 읽는다. 갈림길은 <b>하강 속도</b>다: 후기감속은 완만하게 내려가지만 이 기록은 15초 만에 20/분 이상 떨어진다. 시간 관계보다 <b>모양(급격 vs 점진)</b>을 먼저 본다.\n- 오답 이유:\n  - ① 후기감속은 완만하게 내려가 최저점이 수축 최고점보다 늦고 회복도 느리며 대개 수축마다 반복된다. 이 기록은 하강이 급격하고 이후 두 수축에는 감속이 없다. 이 선지가 정답이 되려면 하강이 30초 이상 걸리고 매 수축 뒤에 되풀이돼야 한다.\n  - ② 지연감속은 하강 방식과 무관하게 2분 이상 10분 미만 지속되는 감속이다. 이 감속은 약 40초 만에 기저선으로 돌아왔다. 이 선지가 정답이 되려면 심박동이 2분 넘게 기저선 아래에 머물러야 한다.\n  - ③ 정현파형은 분당 3~5회의 매끈한 사인파가 변이도 없이 지속되는 것으로 태아 빈혈·저산소의 징후다. 이 기록은 변이도가 유지되고 단발 감속만 있다. 이 선지가 정답이 되려면 기저선 자체가 규칙적인 파도 모양이어야 한다.\n  - ⑤ 조기감속은 30초 이상에 걸쳐 완만하게 내려가 수축의 최고점과 최저점이 일치하는 거울상이다. 이 기록은 15초 만에 20/분 이상 급격히 떨어지고 어깨가 앞선다. 이 선지가 정답이 되려면 하강이 수축 곡선을 뒤집은 듯 완만해야 한다.\n- 함정: 「수축보다 늦게 나타났으니 후기감속」이라고 시간 관계만 보면 틀린다. 후기·조기는 「점진적」이 전제이고, 급격히 떨어지면 시점과 무관하게 가변감속이다.\n- 학습목표: 분만 중 태아심박동 기록에서 급격한 하강과 회복을 읽어 가변감속을 다른 감속과 구분한다\n- 근거·출처: CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-15): 기저 ≈135~140, 43.2분 어깨 ≈150, 43.35분 급강하(≈15초) 최저 ≈115~119, 44.0분 회복, 지속 ≈40초, 이후 수축에 감속 없음 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — 감속의 정의(급격 vs 점진, 30초 기준) · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009)\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1245 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 약 135~140/분이고 변이도는 중등도다. 43분의 자궁수축 중 심박동이 150 까지 잠깐 올랐다가(어깨, shoulder) 약 15초 만에 115~119/분까지 급격히 떨어지고 약 40초 뒤 기저선으로 돌아온다. 하강이 급격하고(시작~최저 30초 미만), 깊이 15/분 이상, 지속 15초 이상 2분 미만이며 어깨가 앞서는 V 자형이므로 가변감속이다. 이후 두 번의 수축에는 감속이 없어 반복성은 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "NICHD 정의에서 감속은 <b>하강의 속도</b>와 <b>수축과의 시간 관계</b> 두 축으로 나눈다. 시작에서 최저까지 <b>30초 미만이면 「급격(abrupt)」</b>, 30초 이상이면 「점진(gradual)」이다. <b>가변감속</b>은 급격한 하강이 ≥15/분, ≥15초, &lt;2분 지속되는 것으로 수축과의 시간 관계는 <b>일정하지 않아도</b> 된다. <b>조기감속</b>과 <b>후기감속</b>은 모두 점진적 하강이며, 최저점이 수축의 최고점과 일치하면 조기, 최고점보다 늦으면 후기다. <b>지연감속</b>은 하강 방식과 무관하게 <b>2분 이상 10분 미만</b> 지속되는 것이다.<br> <b>왜 모양이 다른가 — 기전</b> — 가변감속은 <b>제대 압박</b>이다. 제대정맥이 먼저 눌리면 정맥환류가 줄어 반사성 빈맥(앞 어깨)이 생기고, 이어 제대동맥이 눌리면 태아 혈압이 갑자기 올라 <b>압력수용체 → 미주신경</b> 반사로 심박이 급격히 떨어진다. 신경 반사라서 <b>빠르고(V 자)</b>, 압박이 풀리면 곧 회복되며 다시 어깨가 나타난다. 조기감속은 <b>태아 머리 압박</b>에 의한 미주 반사로 수축의 거울상처럼 완만하다. 후기감속은 <b>자궁태반 관류 저하 → 태아 저산소 → 화학수용체</b> 반사이므로 수축이 최고점을 지난 뒤에야 나타나고 완만하게 회복된다 — 그래서 후기감속만이 「산소 부족」의 직접 신호다.<br> <b>이 기록의 판정</b> — 43.2분의 짧은 상승(어깨) → 43.35분부터 급강하 → 43.6~43.9분 최저(기저 대비 ≈20~25/분) → 44.0분 회복. 급격·15초 이상·2분 미만 = 가변감속. 한 번뿐이고 변이도가 유지되므로 Category II 의 「간헐적 가변감속」에 해당하며, 체위 변경과 관찰로 충분하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">감속</th><th style=\"width:20%\">하강 속도</th><th style=\"width:26%\">수축과의 관계</th><th>기전 · 이 기록</th></tr></thead><tbody> <tr><td><b>가변감속(정답)</b></td><td><b>급격(&lt;30초), V 자, 어깨 동반</b></td><td>일정하지 않음</td><td>제대 압박 · <b>43.35분 15초 만에 최저</b></td></tr> <tr><td>조기감속</td><td>점진(≥30초), 완만한 U 자</td><td>최저 = 수축 최고점, 거울상</td><td>머리 압박 · 이 기록은 하강이 너무 빠름</td></tr> <tr><td>후기감속</td><td>점진(≥30초)</td><td>시작·최저·회복이 모두 수축보다 늦음</td><td>자궁태반 관류 저하 · 여기선 급격 하강이라 제외</td></tr> <tr><td>지연감속</td><td>무관</td><td>≥2분 ~ &lt;10분 지속</td><td>이 기록은 ≈40초</td></tr> <tr><td>정현파형</td><td>감속 아님</td><td>3~5회/분의 매끈한 사인파, 변이도 없음</td><td>여기선 변이도 정상</td></tr> </tbody></table> <b>가장 가까운 오답은 후기감속</b> — 이 감속의 최저점이 수축 최고점(43.3~43.6분)보다 약간 늦어 「늦게 온다」고만 보면 후기로 읽는다. 갈림길은 <b>하강 속도</b>다: 후기감속은 완만하게 내려가지만 이 기록은 15초 만에 20/분 이상 떨어진다. 시간 관계보다 <b>모양(급격 vs 점진)</b>을 먼저 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 후기감속은 완만하게 내려가 최저점이 수축 최고점보다 늦고 회복도 느리며 대개 수축마다 반복된다. 이 기록은 하강이 급격하고 이후 두 수축에는 감속이 없다. 이 선지가 정답이 되려면 하강이 30초 이상 걸리고 매 수축 뒤에 되풀이돼야 한다.\n② 지연감속은 하강 방식과 무관하게 2분 이상 10분 미만 지속되는 감속이다. 이 감속은 약 40초 만에 기저선으로 돌아왔다. 이 선지가 정답이 되려면 심박동이 2분 넘게 기저선 아래에 머물러야 한다.\n③ 정현파형은 분당 3~5회의 매끈한 사인파가 변이도 없이 지속되는 것으로 태아 빈혈·저산소의 징후다. 이 기록은 변이도가 유지되고 단발 감속만 있다. 이 선지가 정답이 되려면 기저선 자체가 규칙적인 파도 모양이어야 한다.\n⑤ 조기감속은 30초 이상에 걸쳐 완만하게 내려가 수축의 최고점과 최저점이 일치하는 거울상이다. 이 기록은 15초 만에 20/분 이상 급격히 떨어지고 어깨가 앞선다. 이 선지가 정답이 되려면 하강이 수축 곡선을 뒤집은 듯 완만해야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「수축보다 늦게 나타났으니 후기감속」이라고 시간 관계만 보면 틀린다. 후기·조기는 「점진적」이 전제이고, 급격히 떨어지면 시점과 무관하게 가변감속이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록에서 급격한 하강과 회복을 읽어 가변감속을 다른 감속과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-15): 기저 ≈135~140, 43.2분 어깨 ≈150, 43.35분 급강하(≈15초) 최저 ≈115~119, 44.0분 회복, 지속 ≈40초, 이후 수축에 감속 없음 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — 감속의 정의(급격 vs 점진, 30초 기준) · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009) ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1245 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0023.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래), 감시 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1245_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1245"
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0022",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "흉부 CT 정상 해부 — 대동맥활 높이",
+  "type": "흉부 CT 정상 해부 — 대동맥활 높이",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-14",
+  "vignette": "A 60-year-old woman undergoes low-dose CT of the chest as part of a lung-cancer screening program. She has no cough, hemoptysis, or weight loss. An axial image of the chest at the level of the upper mediastinum (lung window) is shown; the trachea is seen as the round air-filled structure in the midline.",
+  "question": "Which of the following best identifies the broad soft-tissue structure that lies anterior to the trachea and sweeps to the left of it toward the left side of the vertebral body?",
+  "options": [
+   "Left brachiocephalic vein",
+   "Pulmonary trunk",
+   "Arch of the azygos vein",
+   "Arch of the aorta",
+   "Superior vena cava"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: At this level the trachea is still a single round lumen (above the carina) and the mediastinum to its right is narrow, whereas a wide band of soft tissue starts in front of the trachea, passes along its left side and reaches the left anterolateral surface of the vertebral body. Only the arch of the aorta has this course: it rises from the heart anteriorly, arches backward over the left main bronchus and becomes the descending aorta on the left of the spine. The superior vena cava and azygos arch lie to the right of the trachea, the left brachiocephalic vein crosses only anteriorly and higher, and the pulmonary trunk lies below the arch.\n- 원리: The <b>arch of the aorta</b> begins behind the manubrium at the level of the <b>second right sternocostal joint</b>, runs <b>backward and to the left</b> in front of the trachea, passes over the left main bronchus, and ends at the <b>left side of the body of T4</b>, where it becomes the descending thoracic aorta. On an axial CT slice through the top of the arch this three-dimensional curve is caught as a <b>single broad band</b>: anterior to the trachea, then along its left side, then against the left anterolateral vertebral body.<br> <b>Why nothing else has this shape</b> — the great veins are on the <b>right</b>: the superior vena cava is a round structure right and anterior to the trachea, and the azygos vein arches forward over the right main bronchus to enter it (the azygos arch is the right-sided mirror of the aortic arch but is much smaller and sits at the level of the carina). The left brachiocephalic vein crosses <b>anterior</b> to the arch's branches, higher, from left to right, and never reaches the vertebral body. The pulmonary trunk is <b>inferior</b> to the arch, at the level of the carina and below, connected to the arch only by the ligamentum arteriosum.<br> <b>Why this matters clinically</b> — the left recurrent laryngeal nerve hooks under the arch at the ligamentum arteriosum (hoarseness in arch aneurysm or left hilar tumor), and the arch is what produces the 'aortic knob' on the frontal chest radiograph; on CT it is the landmark that separates the superior mediastinum from the middle mediastinum.\n- 비교: <table><thead><tr><th style=\"width:28%\">Structure</th><th style=\"width:38%\">Position relative to the trachea on axial CT</th><th>Level</th></tr></thead><tbody> <tr><td><b>Arch of the aorta (answer)</b></td><td><b>anterior → left of trachea → left anterolateral vertebral body, one continuous band</b></td><td>T3–T4 (upper edge of arch)</td></tr> <tr><td>Superior vena cava</td><td>round, <b>right</b> and anterior to the trachea</td><td>T2–T4, enters right atrium at T5</td></tr> <tr><td>Azygos arch</td><td>small, from posterior-right of trachea forward over the right main bronchus into the SVC</td><td>T4–T5 (carina)</td></tr> <tr><td>Left brachiocephalic vein</td><td>oblique band <b>anterior</b> to the arch vessels, crossing left → right</td><td>T2–T3, above the arch</td></tr> <tr><td>Pulmonary trunk</td><td>anterior-left, <b>below</b> the arch, bifurcates under the carina</td><td>T5–T6</td></tr> </tbody></table> The <b>closest wrong answer is the superior vena cava</b> — also a large mediastinal vessel next to the trachea. The discriminator is <b>side</b>: SVC is right, aortic arch is left. On any axial chest image, 'large vessel hugging the left of the trachea and spine' is the aorta; 'right of the trachea' is the caval–azygos system.\n- 오답 이유:\n  - (A) The left brachiocephalic vein crosses the superior mediastinum from left to right in front of the arch's three branches, above the level of the arch itself, and does not extend back to the spine. This option would be correct only for an oblique anterior band on a slice above the arch.\n  - (B) The pulmonary trunk lies below the aortic arch at the level of the carina and bifurcates into right and left pulmonary arteries; on a slice where the trachea is still a single lumen it is not yet in view. This option would be correct only on a lower slice showing the main bronchi.\n  - (C) The arch of the azygos vein is a small vessel that curves forward over the right main bronchus to enter the superior vena cava, on the patient's right. This option would be correct only if the structure were a thin right-sided band at the level of the carina.\n  - (E) The superior vena cava is a round structure to the right of and in front of the trachea, formed by the two brachiocephalic veins; it never reaches the left side of the vertebral body. This option would be correct only if the structure in question lay on the patient's right.\n- 함정: In a lung window every mediastinal structure is the same shade of white, so identification is by position and shape, not density. Fix the side first: left of the trachea belongs to the aorta.\n- 학습목표: 대동맥활 높이의 축상 흉부 CT 에서 기관과 대동맥활의 위치 관계를 읽는다\n- 근거·출처: TCIA LIDC-IDRI series (CC BY 3.0) — author reading (2026-09-15): arch-level slice, trachea above carina, broad band anterior→left of trachea to left anterolateral vertebral body = aortic arch; both lungs normal on this slice · Moore Clinically Oriented Anatomy — superior mediastinum: arch of the aorta, its relations to the trachea and left recurrent laryngeal nerve\n\n## 출처\n- LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "At this level the trachea is still a single round lumen (above the carina) and the mediastinum to its right is narrow, whereas a wide band of soft tissue starts in front of the trachea, passes along its left side and reaches the left anterolateral surface of the vertebral body. Only the arch of the aorta has this course: it rises from the heart anteriorly, arches backward over the left main bronchus and becomes the descending aorta on the left of the spine. The superior vena cava and azygos arch lie to the right of the trachea, the left brachiocephalic vein crosses only anteriorly and higher, and the pulmonary trunk lies below the arch."
+   },
+   {
+    "k": "원리",
+    "v": "The <b>arch of the aorta</b> begins behind the manubrium at the level of the <b>second right sternocostal joint</b>, runs <b>backward and to the left</b> in front of the trachea, passes over the left main bronchus, and ends at the <b>left side of the body of T4</b>, where it becomes the descending thoracic aorta. On an axial CT slice through the top of the arch this three-dimensional curve is caught as a <b>single broad band</b>: anterior to the trachea, then along its left side, then against the left anterolateral vertebral body.<br> <b>Why nothing else has this shape</b> — the great veins are on the <b>right</b>: the superior vena cava is a round structure right and anterior to the trachea, and the azygos vein arches forward over the right main bronchus to enter it (the azygos arch is the right-sided mirror of the aortic arch but is much smaller and sits at the level of the carina). The left brachiocephalic vein crosses <b>anterior</b> to the arch's branches, higher, from left to right, and never reaches the vertebral body. The pulmonary trunk is <b>inferior</b> to the arch, at the level of the carina and below, connected to the arch only by the ligamentum arteriosum.<br> <b>Why this matters clinically</b> — the left recurrent laryngeal nerve hooks under the arch at the ligamentum arteriosum (hoarseness in arch aneurysm or left hilar tumor), and the arch is what produces the 'aortic knob' on the frontal chest radiograph; on CT it is the landmark that separates the superior mediastinum from the middle mediastinum."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Structure</th><th style=\"width:38%\">Position relative to the trachea on axial CT</th><th>Level</th></tr></thead><tbody> <tr><td><b>Arch of the aorta (answer)</b></td><td><b>anterior → left of trachea → left anterolateral vertebral body, one continuous band</b></td><td>T3–T4 (upper edge of arch)</td></tr> <tr><td>Superior vena cava</td><td>round, <b>right</b> and anterior to the trachea</td><td>T2–T4, enters right atrium at T5</td></tr> <tr><td>Azygos arch</td><td>small, from posterior-right of trachea forward over the right main bronchus into the SVC</td><td>T4–T5 (carina)</td></tr> <tr><td>Left brachiocephalic vein</td><td>oblique band <b>anterior</b> to the arch vessels, crossing left → right</td><td>T2–T3, above the arch</td></tr> <tr><td>Pulmonary trunk</td><td>anterior-left, <b>below</b> the arch, bifurcates under the carina</td><td>T5–T6</td></tr> </tbody></table> The <b>closest wrong answer is the superior vena cava</b> — also a large mediastinal vessel next to the trachea. The discriminator is <b>side</b>: SVC is right, aortic arch is left. On any axial chest image, 'large vessel hugging the left of the trachea and spine' is the aorta; 'right of the trachea' is the caval–azygos system."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The left brachiocephalic vein crosses the superior mediastinum from left to right in front of the arch's three branches, above the level of the arch itself, and does not extend back to the spine. This option would be correct only for an oblique anterior band on a slice above the arch.\n(B) The pulmonary trunk lies below the aortic arch at the level of the carina and bifurcates into right and left pulmonary arteries; on a slice where the trachea is still a single lumen it is not yet in view. This option would be correct only on a lower slice showing the main bronchi.\n(C) The arch of the azygos vein is a small vessel that curves forward over the right main bronchus to enter the superior vena cava, on the patient's right. This option would be correct only if the structure were a thin right-sided band at the level of the carina.\n(E) The superior vena cava is a round structure to the right of and in front of the trachea, formed by the two brachiocephalic veins; it never reaches the left side of the vertebral body. This option would be correct only if the structure in question lay on the patient's right."
+   },
+   {
+    "k": "함정",
+    "v": "In a lung window every mediastinal structure is the same shade of white, so identification is by position and shape, not density. Fix the side first: left of the trachea belongs to the aorta."
+   },
+   {
+    "k": "학습목표",
+    "v": "대동맥활 높이의 축상 흉부 CT 에서 기관과 대동맥활의 위치 관계를 읽는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA LIDC-IDRI series (CC BY 3.0) — author reading (2026-09-15): arch-level slice, trachea above carina, broad band anterior→left of trachea to left anterolateral vertebral body = aortic arch; both lungs normal on this slice · Moore Clinically Oriented Anatomy — superior mediastinum: arch of the aorta, its relations to the trachea and left recurrent laryngeal nerve ## 출처 LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0022.png",
+   "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM with windowing only)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA LIDC-IDRI (Lung Image Database Consortium)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6279.6001.130794651720796841292503408531",
+   "asset_id": "TCIA-LIDC_IDRI-74478959625039",
+   "text": "LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531"
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0021",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "type": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-14",
+  "vignette": "A 78-year-old woman is evaluated before elective surgery for symptomatic pelvic organ prolapse. Two years ago she had an episode of chest pressure lasting several hours for which she did not seek care; she has had no chest pain or dyspnea since and walks 30 minutes daily. Blood pressure is 134/80 mm Hg and pulse is 70/min. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following best describes the findings on this tracing?",
+  "options": [
+   "ST-segment elevation in leads II, III and aVF indicating an acute inferior infarction",
+   "Poor R-wave progression in leads V1–V4 indicating a prior anterior infarction",
+   "Complete left bundle branch block",
+   "First-degree atrioventricular block",
+   "Pathologic Q waves in leads III and aVF consistent with a prior inferior infarction"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Lead III shows a QS complex and lead aVF a q wave with a small r, both with inverted T waves; lead II has a low-amplitude r. The QRS is narrow, the ST segments are on the baseline, and R waves in V1–V4 grow normally. Q waves confined to the inferior leads without ST elevation, in a patient whose chest pain was two years ago, indicate an old (completed) inferior infarction — a fixed finding that changes the perioperative risk assessment but is not an acute event.\n- 원리: A <b>pathologic Q wave</b> is the electrical hole left by dead muscle: infarcted myocardium generates no depolarizing current, so the electrode facing it 'sees through' to the opposite wall depolarizing <b>away</b> from it, and the QRS begins with a negative deflection. By convention a Q wave is pathologic when it is <b>≥ 0.04 s wide or deeper than one quarter of the R wave</b>, in two contiguous leads (lead III alone can be a normal positional Q, so aVF and II must agree).<br> <b>Why the inferior leads</b> — II, III and aVF look at the diaphragmatic wall, which is usually supplied by the right coronary artery; scarring there writes Q waves in these leads.<br> <b>Old versus acute</b> — the timeline of infarction on the ECG is: hyperacute T → ST elevation (hours) → Q waves appear (hours to a day) → ST returns to baseline and T inverts (days) → <b>only the Q waves and T inversion persist</b> (weeks to permanent). A Q wave with an isoelectric ST segment is therefore a <b>completed infarction</b>, and the patient's two-year-old untreated chest episode is the clinical counterpart.<br> <b>Why it matters before anesthesia</b> — a prior infarction is one point of the Revised Cardiac Risk Index; it prompts a functional-capacity assessment (she walks 30 minutes, ≥4 METs) and continuation of secondary prevention rather than cancellation of surgery.\n- 비교: <table><thead><tr><th style=\"width:32%\">Finding</th><th style=\"width:34%\">Where to look</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Old inferior infarction (answer)</b></td><td><b>Q in III and aVF (± II), ST on baseline, T inverted</b></td><td>QS in III, q in aVF, no ST elevation</td></tr> <tr><td>Acute inferior STEMI</td><td>ST elevation ≥ 1 mm in II, III, aVF with reciprocal depression in aVL</td><td>ST segments are flat; aVL shows no reciprocal depression</td></tr> <tr><td>Prior anterior infarction</td><td>Q or absent r in V1–V4, R wave fails to grow</td><td>R wave increases normally from V1 to V4</td></tr> <tr><td>Left bundle branch block</td><td>QRS ≥ 0.12 s, broad notched R in V6, QS in V1</td><td>QRS is narrow</td></tr> <tr><td>First-degree AV block</td><td>PR &gt; 0.20 s</td><td>PR within normal limits where measurable</td></tr> </tbody></table> The <b>closest wrong answer is acute inferior infarction</b>: both involve the same three leads. The discriminator is the <b>ST segment</b> — elevated means acute, isoelectric with a Q wave means old. Check the ST segment against the TP baseline before deciding whether to call the catheterization laboratory.\n- 오답 이유:\n  - (A) An acute inferior infarction shows ST-segment elevation in II, III and aVF with reciprocal ST depression in aVL, usually with ongoing chest pain. Here the ST segments lie on the baseline and the symptoms were two years ago. This option would be correct only if the J points in the inferior leads were elevated at least 1 mm.\n  - (B) A prior anterior infarction produces Q waves or absent r waves in V1–V4 with poor R-wave progression. In this tracing the R wave grows normally across the precordial leads and the Q waves are inferior. This option would be correct only if V1–V3 showed QS complexes.\n  - (C) Left bundle branch block widens the QRS to 0.12 s or more with broad, notched R waves in V5–V6 and a QS in V1. The QRS here is narrow. This option would be correct only if the QRS duration exceeded three small squares in every lead.\n  - (D) First-degree AV block is a PR interval longer than 0.20 s with a normal QRS and no Q waves. The PR here is within normal limits where it can be measured, and the abnormality is in the QRS morphology. This option would be correct only if the PR exceeded one large square.\n- 함정: A QS in lead III alone can be a normal positional finding; the diagnosis rests on aVF agreeing with it. Confirm the second contiguous lead before labelling a patient with an old infarction.\n- 학습목표: 수술 전 심전도에서 하벽 유도의 병적 Q 파를 읽어 오래된 경색과 급성 경색을 구분한다\n- 근거·출처: PTB-XL record label IMI (two-cardiologist validated) · 작성자 판독(2026-09-15): ≈70/min, QS in III, q in aVF, low r in II, T inversion III·aVF, no ST elevation, narrow QRS; baseline noise present — rhythm not asked · Fourth Universal Definition of Myocardial Infarction (2018) — ECG criteria for prior MI (pathologic Q waves)\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10942 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Lead III shows a QS complex and lead aVF a q wave with a small r, both with inverted T waves; lead II has a low-amplitude r. The QRS is narrow, the ST segments are on the baseline, and R waves in V1–V4 grow normally. Q waves confined to the inferior leads without ST elevation, in a patient whose chest pain was two years ago, indicate an old (completed) inferior infarction — a fixed finding that changes the perioperative risk assessment but is not an acute event."
+   },
+   {
+    "k": "원리",
+    "v": "A <b>pathologic Q wave</b> is the electrical hole left by dead muscle: infarcted myocardium generates no depolarizing current, so the electrode facing it 'sees through' to the opposite wall depolarizing <b>away</b> from it, and the QRS begins with a negative deflection. By convention a Q wave is pathologic when it is <b>≥ 0.04 s wide or deeper than one quarter of the R wave</b>, in two contiguous leads (lead III alone can be a normal positional Q, so aVF and II must agree).<br> <b>Why the inferior leads</b> — II, III and aVF look at the diaphragmatic wall, which is usually supplied by the right coronary artery; scarring there writes Q waves in these leads.<br> <b>Old versus acute</b> — the timeline of infarction on the ECG is: hyperacute T → ST elevation (hours) → Q waves appear (hours to a day) → ST returns to baseline and T inverts (days) → <b>only the Q waves and T inversion persist</b> (weeks to permanent). A Q wave with an isoelectric ST segment is therefore a <b>completed infarction</b>, and the patient's two-year-old untreated chest episode is the clinical counterpart.<br> <b>Why it matters before anesthesia</b> — a prior infarction is one point of the Revised Cardiac Risk Index; it prompts a functional-capacity assessment (she walks 30 minutes, ≥4 METs) and continuation of secondary prevention rather than cancellation of surgery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Finding</th><th style=\"width:34%\">Where to look</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Old inferior infarction (answer)</b></td><td><b>Q in III and aVF (± II), ST on baseline, T inverted</b></td><td>QS in III, q in aVF, no ST elevation</td></tr> <tr><td>Acute inferior STEMI</td><td>ST elevation ≥ 1 mm in II, III, aVF with reciprocal depression in aVL</td><td>ST segments are flat; aVL shows no reciprocal depression</td></tr> <tr><td>Prior anterior infarction</td><td>Q or absent r in V1–V4, R wave fails to grow</td><td>R wave increases normally from V1 to V4</td></tr> <tr><td>Left bundle branch block</td><td>QRS ≥ 0.12 s, broad notched R in V6, QS in V1</td><td>QRS is narrow</td></tr> <tr><td>First-degree AV block</td><td>PR &gt; 0.20 s</td><td>PR within normal limits where measurable</td></tr> </tbody></table> The <b>closest wrong answer is acute inferior infarction</b>: both involve the same three leads. The discriminator is the <b>ST segment</b> — elevated means acute, isoelectric with a Q wave means old. Check the ST segment against the TP baseline before deciding whether to call the catheterization laboratory."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) An acute inferior infarction shows ST-segment elevation in II, III and aVF with reciprocal ST depression in aVL, usually with ongoing chest pain. Here the ST segments lie on the baseline and the symptoms were two years ago. This option would be correct only if the J points in the inferior leads were elevated at least 1 mm.\n(B) A prior anterior infarction produces Q waves or absent r waves in V1–V4 with poor R-wave progression. In this tracing the R wave grows normally across the precordial leads and the Q waves are inferior. This option would be correct only if V1–V3 showed QS complexes.\n(C) Left bundle branch block widens the QRS to 0.12 s or more with broad, notched R waves in V5–V6 and a QS in V1. The QRS here is narrow. This option would be correct only if the QRS duration exceeded three small squares in every lead.\n(D) First-degree AV block is a PR interval longer than 0.20 s with a normal QRS and no Q waves. The PR here is within normal limits where it can be measured, and the abnormality is in the QRS morphology. This option would be correct only if the PR exceeded one large square."
+   },
+   {
+    "k": "함정",
+    "v": "A QS in lead III alone can be a normal positional finding; the diagnosis rests on aVF agreeing with it. Confirm the second contiguous lead before labelling a patient with an old infarction."
+   },
+   {
+    "k": "학습목표",
+    "v": "수술 전 심전도에서 하벽 유도의 병적 Q 파를 읽어 오래된 경색과 급성 경색을 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label IMI (two-cardiologist validated) · 작성자 판독(2026-09-15): ≈70/min, QS in III, q in aVF, low r in II, T inversion III·aVF, no ST elevation, narrow QRS; baseline noise present — rhythm not asked · Fourth Universal Definition of Myocardial Infarction (2018) — ECG criteria for prior MI (pathologic Q waves) ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10942 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0021.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/10000/#files-panel",
+   "asset_id": "PTBXL-10942",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10942"
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0020",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "type": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-14",
+  "vignette": "A 44-year-old woman comes to the preoperative clinic before an elective laparoscopic myomectomy. She reports occasional brief episodes of rapid palpitations since her twenties that stop on their own; she has never had syncope. Blood pressure is 122/78 mm Hg and pulse is 60/min and regular. A 12-lead electrocardiogram obtained for the preoperative evaluation is shown.",
+  "question": "Which of the following is the most likely explanation for the abnormality on this tracing?",
+  "options": [
+   "Prior transmural infarction of the inferior wall",
+   "An ectopic atrial pacemaker located near the atrioventricular junction",
+   "An accessory pathway conducting atrial impulses directly to ventricular myocardium",
+   "Delayed conduction through the right bundle branch",
+   "Slowed conduction through the atrioventricular node"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Every QRS is preceded by a sinus P wave, but the PR interval is short (about 0.10 s) and the QRS begins with a slurred, slowly rising initial segment — a delta wave — best seen in leads I, aVL and V2–V6, widening the QRS to about 0.12 s. The negative initial deflections in III and aVF are negative delta waves, not infarct Q waves. A short PR with a delta wave means part of the ventricle is being activated early by an accessory atrioventricular pathway that bypasses the AV node (ventricular pre-excitation).\n- 원리: In the normal heart the <b>fibrous atrioventricular rings insulate the atria from the ventricles</b>; the only electrical connection is the AV node–His bundle, and the AV node <b>deliberately delays</b> the impulse (this delay is the PR interval). An <b>accessory pathway (bundle of Kent)</b> is a strand of working myocardium that crosses the ring somewhere along the mitral or tricuspid annulus and conducts <b>without delay</b>.<br> <b>Why the PR is short</b> — the impulse reaches the ventricle through the pathway before the AV node has released it, so the QRS starts early.<br> <b>Why there is a delta wave</b> — the pre-excited region is activated <b>cell-to-cell through ordinary muscle</b>, not through the fast Purkinje network, so the first part of the QRS rises slowly (the delta wave). Then the normal His–Purkinje wavefront arrives and finishes the ventricle quickly; the QRS is a <b>fusion</b> of both, and its width depends on how much the pathway contributed.<br> <b>Why it matters</b> — the pathway and the AV node form a circuit for orthodromic re-entrant tachycardia (her palpitations), and if atrial fibrillation develops the pathway can conduct at very high rates because it lacks the node's decremental properties; AV-nodal blockers (verapamil, digoxin, adenosine in AF) can then be dangerous. Curative treatment is catheter ablation of the pathway. The pseudo-infarct Q waves in III and aVF are the <b>negative delta wave</b> of a pathway whose early activation moves away from the inferior leads.\n- 비교: <table><thead><tr><th style=\"width:30%\">Mechanism</th><th style=\"width:36%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Accessory pathway (answer)</b></td><td><b>PR &lt; 0.12 s + slurred delta wave + widened QRS, sinus P present</b></td><td>PR ≈ 0.10 s, delta in I/aVL/V2–V6, QRS ≈ 0.12 s</td></tr> <tr><td>Right bundle branch block</td><td>QRS ≥ 0.12 s with rSR′ in V1 and wide S in I/V6, <b>normal PR, terminal (not initial) slurring</b></td><td>V1 is negative, slurring is at the onset</td></tr> <tr><td>Slowed AV-nodal conduction</td><td>PR <b>prolonged</b> &gt; 0.20 s, normal QRS</td><td>PR is short, not long</td></tr> <tr><td>Prior inferior infarction</td><td>Q waves in II, III, aVF with <b>normal PR and a sharp QRS onset</b></td><td>the 'Q' is a slurred negative delta and PR is short</td></tr> <tr><td>Junctional/low atrial rhythm</td><td>inverted P in II with short PR but a <b>normal, narrow QRS</b></td><td>P is upright in II; QRS is widened with delta</td></tr> </tbody></table> The <b>closest wrong answer is prior inferior infarction</b>: negative delta waves in III and aVF imitate infarct Q waves. The discriminator is the <b>PR interval</b> — a Q wave from scar sits after a normal PR with a crisp onset; a negative delta wave starts early and slurs. Measure the PR before naming a Q wave.\n- 오답 이유:\n  - (A) A prior inferior infarction leaves pathologic Q waves in II, III and aVF that follow a normal PR interval and begin sharply. The negative initial deflections here are slurred and start after a short PR — negative delta waves. This option would be correct only if the PR were normal and the QRS onset crisp.\n  - (B) An ectopic atrial focus near the AV junction shortens the PR and inverts the P wave in II, but the ventricle is still activated through the His–Purkinje system, so the QRS stays narrow without a delta wave. This option would be correct only if the P wave were inverted in II and the QRS narrow.\n  - (D) Right bundle branch block widens the QRS at its end (rSR′ in V1, broad terminal S in I and V6) and leaves the PR interval normal. Here the slurring is at the start of the QRS, V1 is negative, and the PR is short. This option would be correct only if the delay were terminal and V1 showed an rSR′ pattern.\n  - (E) Slowed AV-nodal conduction produces a prolonged PR interval (first-degree AV block) with a normal QRS. This tracing has the opposite: a shortened PR. This option would be correct only if the PR exceeded 0.20 s with a sharp, narrow QRS.\n- 함정: Do not read III and aVF in isolation: a 'Q wave' with a short PR is a negative delta wave. The PR interval is the first thing to measure whenever a QRS looks odd.\n- 학습목표: 짧은 PR 간격과 델타파를 읽어 부전도로를 통한 심실 조기흥분의 기전을 설명한다\n- 근거·출처: PTB-XL record label WPW (two-cardiologist validated) · 작성자 판독(2026-09-15): sinus ≈61/min, PR ≈0.10 s, delta wave I·aVL·V2–V6, QRS ≈0.12 s, V1 negative, negative delta III·aVF · 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With SVT — pre-excitation and accessory-pathway tachycardias\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19920 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Every QRS is preceded by a sinus P wave, but the PR interval is short (about 0.10 s) and the QRS begins with a slurred, slowly rising initial segment — a delta wave — best seen in leads I, aVL and V2–V6, widening the QRS to about 0.12 s. The negative initial deflections in III and aVF are negative delta waves, not infarct Q waves. A short PR with a delta wave means part of the ventricle is being activated early by an accessory atrioventricular pathway that bypasses the AV node (ventricular pre-excitation)."
+   },
+   {
+    "k": "원리",
+    "v": "In the normal heart the <b>fibrous atrioventricular rings insulate the atria from the ventricles</b>; the only electrical connection is the AV node–His bundle, and the AV node <b>deliberately delays</b> the impulse (this delay is the PR interval). An <b>accessory pathway (bundle of Kent)</b> is a strand of working myocardium that crosses the ring somewhere along the mitral or tricuspid annulus and conducts <b>without delay</b>.<br> <b>Why the PR is short</b> — the impulse reaches the ventricle through the pathway before the AV node has released it, so the QRS starts early.<br> <b>Why there is a delta wave</b> — the pre-excited region is activated <b>cell-to-cell through ordinary muscle</b>, not through the fast Purkinje network, so the first part of the QRS rises slowly (the delta wave). Then the normal His–Purkinje wavefront arrives and finishes the ventricle quickly; the QRS is a <b>fusion</b> of both, and its width depends on how much the pathway contributed.<br> <b>Why it matters</b> — the pathway and the AV node form a circuit for orthodromic re-entrant tachycardia (her palpitations), and if atrial fibrillation develops the pathway can conduct at very high rates because it lacks the node's decremental properties; AV-nodal blockers (verapamil, digoxin, adenosine in AF) can then be dangerous. Curative treatment is catheter ablation of the pathway. The pseudo-infarct Q waves in III and aVF are the <b>negative delta wave</b> of a pathway whose early activation moves away from the inferior leads."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Mechanism</th><th style=\"width:36%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Accessory pathway (answer)</b></td><td><b>PR &lt; 0.12 s + slurred delta wave + widened QRS, sinus P present</b></td><td>PR ≈ 0.10 s, delta in I/aVL/V2–V6, QRS ≈ 0.12 s</td></tr> <tr><td>Right bundle branch block</td><td>QRS ≥ 0.12 s with rSR′ in V1 and wide S in I/V6, <b>normal PR, terminal (not initial) slurring</b></td><td>V1 is negative, slurring is at the onset</td></tr> <tr><td>Slowed AV-nodal conduction</td><td>PR <b>prolonged</b> &gt; 0.20 s, normal QRS</td><td>PR is short, not long</td></tr> <tr><td>Prior inferior infarction</td><td>Q waves in II, III, aVF with <b>normal PR and a sharp QRS onset</b></td><td>the 'Q' is a slurred negative delta and PR is short</td></tr> <tr><td>Junctional/low atrial rhythm</td><td>inverted P in II with short PR but a <b>normal, narrow QRS</b></td><td>P is upright in II; QRS is widened with delta</td></tr> </tbody></table> The <b>closest wrong answer is prior inferior infarction</b>: negative delta waves in III and aVF imitate infarct Q waves. The discriminator is the <b>PR interval</b> — a Q wave from scar sits after a normal PR with a crisp onset; a negative delta wave starts early and slurs. Measure the PR before naming a Q wave."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A prior inferior infarction leaves pathologic Q waves in II, III and aVF that follow a normal PR interval and begin sharply. The negative initial deflections here are slurred and start after a short PR — negative delta waves. This option would be correct only if the PR were normal and the QRS onset crisp.\n(B) An ectopic atrial focus near the AV junction shortens the PR and inverts the P wave in II, but the ventricle is still activated through the His–Purkinje system, so the QRS stays narrow without a delta wave. This option would be correct only if the P wave were inverted in II and the QRS narrow.\n(D) Right bundle branch block widens the QRS at its end (rSR′ in V1, broad terminal S in I and V6) and leaves the PR interval normal. Here the slurring is at the start of the QRS, V1 is negative, and the PR is short. This option would be correct only if the delay were terminal and V1 showed an rSR′ pattern.\n(E) Slowed AV-nodal conduction produces a prolonged PR interval (first-degree AV block) with a normal QRS. This tracing has the opposite: a shortened PR. This option would be correct only if the PR exceeded 0.20 s with a sharp, narrow QRS."
+   },
+   {
+    "k": "함정",
+    "v": "Do not read III and aVF in isolation: a 'Q wave' with a short PR is a negative delta wave. The PR interval is the first thing to measure whenever a QRS looks odd."
+   },
+   {
+    "k": "학습목표",
+    "v": "짧은 PR 간격과 델타파를 읽어 부전도로를 통한 심실 조기흥분의 기전을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label WPW (two-cardiologist validated) · 작성자 판독(2026-09-15): sinus ≈61/min, PR ≈0.10 s, delta wave I·aVL·V2–V6, QRS ≈0.12 s, V1 negative, negative delta III·aVF · 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With SVT — pre-excitation and accessory-pathway tachycardias ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19920 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0020.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/19000/#files-panel",
+   "asset_id": "PTBXL-19920",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 19920"
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0019",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "type": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-14",
+  "vignette": "63세 여자가 2시간 전부터 갑자기 시작된 두근거림으로 응급실에 왔다. 흉통이나 실신은 없었고 심장질환을 진단받은 적은 없다. 혈압 118/76 mmHg, 맥박 분당 약 165회로 규칙적이며 호흡곤란은 없다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 가능성 있는 진단은?",
+  "options": [
+   "동성빈맥",
+   "심실빈맥",
+   "심방조동(2:1 방실전도)",
+   "방실결절 회귀성 빈맥",
+   "심방세동"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: QRS 는 좁고 RR 간격은 약 0.36초(≈165/분)로 규칙적이다. II·III·aVF 에서 QRS 사이에 등전위 구간 없이 이어지는 톱니 모양의 음성 심방파가 보이고, 리듬 스트립 중간에 RR 이 정확히 두 배(≈0.70초)로 늘어나는 곳이 있어 그 순간 전도비가 4:1 로 바뀐 것을 알 수 있다. 심방 박동수 약 330/분의 심방조동이 2:1 로 전도되는 소견이다.\n- 원리: 심방조동은 <b>우심방 안의 큰 회귀회로(대개 삼첨판 고리 주위, 하대정맥-삼첨판 협부를 지나는 반시계 방향)</b> 가 분당 <b>250~350회</b>로 돌면서 심방을 끊임없이 탈분극시키는 부정맥이다. 회로가 한 바퀴 돌 때마다 심방파가 하나 생기므로 심방파 사이에 <b>쉬는 구간(등전위선)이 없고</b>, 회로의 방향이 아래→위이면 II·III·aVF 에서 <b>음성의 톱니 모양(F파)</b>, V1 에서는 뾰족한 양성 파형이 된다.<br> <b>왜 심실은 150 부근인가</b> — 방실결절은 불응기가 길어 분당 300회를 다 통과시키지 못하고 <b>두 번에 한 번(2:1)</b>만 내려보낸다. 그래서 「규칙적인 좁은 QRS 빈맥이 정확히 150/분 부근(이 기록은 심방 ≈330 이라 ≈165)」이면 먼저 심방조동을 의심하라고 배운다. 방실결절이 순간적으로 더 막히면 4:1 이 되어 RR 이 <b>정확히 두 배</b>로 늘어나는데, 이 기록의 리듬 스트립 중간이 바로 그 자리다 — 회귀빈맥이라면 이렇게 「두 배」로 정확히 떨어지지 않는다.<br> <b>판독 순서</b> — ① QRS 폭(좁다 → 상심실성) ② RR 규칙성(규칙적 → 세동 제외) ③ QRS 사이 기저선(등전위 없이 톱니 → 조동; 편평하거나 역행 P → 회귀빈맥) ④ 박동수(150 부근 → 2:1 조동 의심). 확실치 않으면 아데노신·미주신경 자극으로 방실전도를 잠시 막아 F파를 드러낸다.\n- 비교: <table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:38%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>심방조동 2:1(정답)</b></td><td><b>규칙적 좁은 QRS ≈150, QRS 사이 등전위 없는 톱니 F파(II·III·aVF 음성), 전도비 변화 시 RR 이 정수배</b></td><td>≈165/분, 하벽 유도 톱니, RR 두 배 구간 1회</td></tr> <tr><td>방실결절 회귀성 빈맥</td><td>규칙적 좁은 QRS 150~250, P 파가 QRS 안에 숨거나 QRS 끝에 가성 r′/s 로, <b>QRS 사이 기저선은 편평</b></td><td>기저선이 편평하지 않고 계속 물결침</td></tr> <tr><td>심방세동</td><td>RR <b>완전 불규칙</b>, 세동파는 모양·간격이 제각각</td><td>RR 이 일정</td></tr> <tr><td>동성빈맥</td><td>모든 QRS 앞에 정상 모양 P, 대개 <150, 서서히 오르내림</td><td>정상 P 없음, 갑작스러운 시작</td></tr> <tr><td>심실빈맥</td><td>QRS 폭 ≥0.12 s</td><td>QRS 좁음</td></tr> </tbody></table> <b>가장 가까운 오답은 방실결절 회귀성 빈맥</b> — 같은 「규칙적 좁은 QRS 빈맥」이고 박동수도 겹친다. QRS 사이의 <b>기저선이 계속 움직이는가(톱니)</b> 와 <b>RR 이 정확히 정수배로 변하는 순간이 있는가</b>가 갈림길이다. 둘 다 없으면 회귀빈맥, 둘 중 하나라도 있으면 조동을 먼저 둔다.\n- 오답 이유:\n  - ① 동성빈맥은 모든 QRS 앞에 정상 모양의 P 파가 일정한 PR 로 있고 대개 150/분을 넘지 않으며 서서히 시작된다. 이 기록은 정상 P 대신 등전위 없는 톱니파가 이어지고 갑자기 시작됐다. 이 선지가 정답이 되려면 각 QRS 앞에 둥근 양성 P 파가 II 유도에서 보여야 한다.\n  - ② 심실빈맥은 QRS 폭이 0.12초 이상으로 넓고 대개 방실해리·융합박동이 있다. 이 기록의 QRS 는 작은 칸 2칸 남짓으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다.\n  - ④ 방실결절 회귀성 빈맥은 QRS 사이 기저선이 편평하고 역행 P 파가 QRS 끝에 붙는다. 이 기록은 하벽 유도의 기저선이 톱니처럼 계속 물결치고 RR 이 두 배로 늘어나는 4:1 구간이 있다. 이 선지가 정답이 되려면 톱니 심방파가 없고 QRS 끝에 가성 r′ 이 보여야 한다.\n  - ⑤ 심방세동은 RR 간격이 완전히 불규칙하고 세동파는 모양이 제각각이다. 이 기록의 RR 은 0.33~0.38초로 일정하고 심방파는 일정한 톱니다. 이 선지가 정답이 되려면 리듬 스트립의 RR 이 매 박동 달라야 한다.\n- 함정: 빈맥에서는 T 파와 F 파가 겹쳐 「P 파가 없다」고만 보고 회귀빈맥으로 넘어가기 쉽다. II·III·aVF 의 QRS 사이 기저선을 손가락으로 따라가 보면 평평한 구간이 없다는 것이 보인다.\n- 학습목표: 규칙적인 좁은 QRS 빈맥에서 하벽 유도의 톱니 모양 심방파를 읽어 2:1 전도 심방조동을 진단한다\n- 근거·출처: PTB-XL 기록 라벨 AFLT(2인 심장내과 검증) · 작성자 판독·계측(2026-09-15): RR 0.33~0.38 s(≈167/분), 스트립 중 RR 0.70 s 1회, II·III·aVF 등전위 없는 톱니 심방파, QRS 좁음 · 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia — atrial flutter 의 심전도 진단\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "QRS 는 좁고 RR 간격은 약 0.36초(≈165/분)로 규칙적이다. II·III·aVF 에서 QRS 사이에 등전위 구간 없이 이어지는 톱니 모양의 음성 심방파가 보이고, 리듬 스트립 중간에 RR 이 정확히 두 배(≈0.70초)로 늘어나는 곳이 있어 그 순간 전도비가 4:1 로 바뀐 것을 알 수 있다. 심방 박동수 약 330/분의 심방조동이 2:1 로 전도되는 소견이다."
+   },
+   {
+    "k": "원리",
+    "v": "심방조동은 <b>우심방 안의 큰 회귀회로(대개 삼첨판 고리 주위, 하대정맥-삼첨판 협부를 지나는 반시계 방향)</b> 가 분당 <b>250~350회</b>로 돌면서 심방을 끊임없이 탈분극시키는 부정맥이다. 회로가 한 바퀴 돌 때마다 심방파가 하나 생기므로 심방파 사이에 <b>쉬는 구간(등전위선)이 없고</b>, 회로의 방향이 아래→위이면 II·III·aVF 에서 <b>음성의 톱니 모양(F파)</b>, V1 에서는 뾰족한 양성 파형이 된다.<br> <b>왜 심실은 150 부근인가</b> — 방실결절은 불응기가 길어 분당 300회를 다 통과시키지 못하고 <b>두 번에 한 번(2:1)</b>만 내려보낸다. 그래서 「규칙적인 좁은 QRS 빈맥이 정확히 150/분 부근(이 기록은 심방 ≈330 이라 ≈165)」이면 먼저 심방조동을 의심하라고 배운다. 방실결절이 순간적으로 더 막히면 4:1 이 되어 RR 이 <b>정확히 두 배</b>로 늘어나는데, 이 기록의 리듬 스트립 중간이 바로 그 자리다 — 회귀빈맥이라면 이렇게 「두 배」로 정확히 떨어지지 않는다.<br> <b>판독 순서</b> — ① QRS 폭(좁다 → 상심실성) ② RR 규칙성(규칙적 → 세동 제외) ③ QRS 사이 기저선(등전위 없이 톱니 → 조동; 편평하거나 역행 P → 회귀빈맥) ④ 박동수(150 부근 → 2:1 조동 의심). 확실치 않으면 아데노신·미주신경 자극으로 방실전도를 잠시 막아 F파를 드러낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:38%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>심방조동 2:1(정답)</b></td><td><b>규칙적 좁은 QRS ≈150, QRS 사이 등전위 없는 톱니 F파(II·III·aVF 음성), 전도비 변화 시 RR 이 정수배</b></td><td>≈165/분, 하벽 유도 톱니, RR 두 배 구간 1회</td></tr> <tr><td>방실결절 회귀성 빈맥</td><td>규칙적 좁은 QRS 150~250, P 파가 QRS 안에 숨거나 QRS 끝에 가성 r′/s 로, <b>QRS 사이 기저선은 편평</b></td><td>기저선이 편평하지 않고 계속 물결침</td></tr> <tr><td>심방세동</td><td>RR <b>완전 불규칙</b>, 세동파는 모양·간격이 제각각</td><td>RR 이 일정</td></tr> <tr><td>동성빈맥</td><td>모든 QRS 앞에 정상 모양 P, 대개 <150, 서서히 오르내림</td><td>정상 P 없음, 갑작스러운 시작</td></tr> <tr><td>심실빈맥</td><td>QRS 폭 ≥0.12 s</td><td>QRS 좁음</td></tr> </tbody></table> <b>가장 가까운 오답은 방실결절 회귀성 빈맥</b> — 같은 「규칙적 좁은 QRS 빈맥」이고 박동수도 겹친다. QRS 사이의 <b>기저선이 계속 움직이는가(톱니)</b> 와 <b>RR 이 정확히 정수배로 변하는 순간이 있는가</b>가 갈림길이다. 둘 다 없으면 회귀빈맥, 둘 중 하나라도 있으면 조동을 먼저 둔다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 동성빈맥은 모든 QRS 앞에 정상 모양의 P 파가 일정한 PR 로 있고 대개 150/분을 넘지 않으며 서서히 시작된다. 이 기록은 정상 P 대신 등전위 없는 톱니파가 이어지고 갑자기 시작됐다. 이 선지가 정답이 되려면 각 QRS 앞에 둥근 양성 P 파가 II 유도에서 보여야 한다.\n② 심실빈맥은 QRS 폭이 0.12초 이상으로 넓고 대개 방실해리·융합박동이 있다. 이 기록의 QRS 는 작은 칸 2칸 남짓으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다.\n④ 방실결절 회귀성 빈맥은 QRS 사이 기저선이 편평하고 역행 P 파가 QRS 끝에 붙는다. 이 기록은 하벽 유도의 기저선이 톱니처럼 계속 물결치고 RR 이 두 배로 늘어나는 4:1 구간이 있다. 이 선지가 정답이 되려면 톱니 심방파가 없고 QRS 끝에 가성 r′ 이 보여야 한다.\n⑤ 심방세동은 RR 간격이 완전히 불규칙하고 세동파는 모양이 제각각이다. 이 기록의 RR 은 0.33~0.38초로 일정하고 심방파는 일정한 톱니다. 이 선지가 정답이 되려면 리듬 스트립의 RR 이 매 박동 달라야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "빈맥에서는 T 파와 F 파가 겹쳐 「P 파가 없다」고만 보고 회귀빈맥으로 넘어가기 쉽다. II·III·aVF 의 QRS 사이 기저선을 손가락으로 따라가 보면 평평한 구간이 없다는 것이 보인다."
+   },
+   {
+    "k": "학습목표",
+    "v": "규칙적인 좁은 QRS 빈맥에서 하벽 유도의 톱니 모양 심방파를 읽어 2:1 전도 심방조동을 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL 기록 라벨 AFLT(2인 심장내과 검증) · 작성자 판독·계측(2026-09-15): RR 0.33~0.38 s(≈167/분), 스트립 중 RR 0.70 s 1회, II·III·aVF 등전위 없는 톱니 심방파, QRS 좁음 · 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia — atrial flutter 의 심전도 진단 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0019.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+   "asset_id": "PTBXL-00449",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449"
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0027",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과·비뇨의학·성호르몬 약리",
+  "type": "부인과·비뇨의학·성호르몬 약리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-14",
+  "vignette": "A 29-year-old woman comes to the clinic to discuss contraception. She was diagnosed with pulmonary tuberculosis 2 weeks ago and has started a 6-month regimen that includes rifampin. She has taken a combined oral contraceptive containing 30 µg ethinyl estradiol for 4 years without problems and does not want to become pregnant during treatment. She is a nonsmoker and has no other medical conditions.",
+  "question": "Which of the following is the most appropriate contraceptive recommendation for the duration of her tuberculosis therapy?",
+  "options": [
+   "Depot medroxyprogesterone acetate injections every 12 weeks",
+   "Continue the current combined oral contraceptive with strict daily adherence",
+   "Switch to a combined pill containing 50 µg ethinyl estradiol",
+   "Switch to an etonogestrel subdermal implant",
+   "Switch to a progestin-only pill containing norethindrone"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Rifampin is the most potent clinical inducer of hepatic CYP3A4 and of intestinal P-glycoprotein, and it accelerates the metabolism of ethinyl estradiol and of progestins to a degree that makes combined pills, the patch, the ring, the progestin-only pill and the implant unreliable for the entire course and for about 4 weeks afterwards. Depot medroxyprogesterone acetate is given in a dose so far above the ovulation-inhibiting threshold that enzyme induction does not shorten its window of efficacy; it, the levonorgestrel intrauterine system and the copper intrauterine device are the methods that remain fully effective.\n- 원리: Ethinyl estradiol and most synthetic progestins are cleared by <b>hepatic CYP3A4</b> (and ethinyl estradiol also by sulfation and glucuronidation with enterohepatic recycling). <b>Rifampin binds the pregnane X receptor and up-regulates transcription of CYP3A4</b> within days, doubling or tripling the clearance of the steroids and cutting their plasma levels by roughly half; induction persists for <b>about 4 weeks after the drug is stopped</b> because the excess enzyme must be degraded. The dose of a combined pill is chosen to sit only modestly above the threshold that suppresses the LH surge, so halving the exposure allows <b>escape ovulation</b> and breakthrough bleeding is the visible warning sign.<br> <b>Why depot medroxyprogesterone survives induction</b> — a 150 mg intramuscular depot produces plasma levels many times the threshold needed to block ovulation, and its 12–13-week interval already contains a wide safety margin; even a substantially faster metabolism does not bring levels below the threshold within the dosing interval. Intrauterine methods act locally (levonorgestrel) or without hormones (copper), so hepatic metabolism is irrelevant to them.<br> <b>Why the others fail</b> — the progestin-only pill and the etonogestrel implant deliver low, continuous doses close to their thresholds, exactly the situation in which induction matters; the implant's failures with efavirenz and rifampin are well documented. Raising ethinyl estradiol to 50 µg was an older strategy, but it does not reliably overcome rifampin-level induction and adds thromboembolic risk. The U.S. Medical Eligibility Criteria therefore rate combined methods, the progestin-only pill and the implant as category 3 with rifampin and rifabutin, and depot medroxyprogesterone and intrauterine methods as category 1.\n- 비교: <table><thead><tr><th style=\"width:32%\">Method</th><th style=\"width:30%\">Interaction with rifampin</th><th>US MEC category with rifampin</th></tr></thead><tbody> <tr><td><b>Depot medroxyprogesterone acetate (answer)</b></td><td><b>dose far above threshold — efficacy preserved</b></td><td><b>1</b></td></tr> <tr><td>Levonorgestrel IUS / copper IUD</td><td>local or non-hormonal action, unaffected</td><td>1</td></tr> <tr><td>Combined pill / patch / ring (any dose)</td><td>ethinyl estradiol and progestin levels roughly halved, escape ovulation</td><td>3</td></tr> <tr><td>Progestin-only pill</td><td>low continuous dose near threshold — fails</td><td>3</td></tr> <tr><td>Etonogestrel implant</td><td>documented failures with enzyme inducers</td><td>2* (avoid; use backup) — not first choice</td></tr> </tbody></table> The <b>closest wrong answer is the etonogestrel implant</b>: it is long-acting and progestin-only, so it looks like the safe choice, but it relies on a low steady serum level that induction pushes below the ovulation threshold. The rule is not 'progestin versus estrogen' but <b>'how far above the threshold is the dose'</b> — only the depot injection and the intrauterine methods pass that test.\n- 오답 이유:\n  - (B) Continuing the combined pill, however carefully taken, does not correct a pharmacokinetic failure: rifampin halves ethinyl estradiol and progestin exposure regardless of adherence. This option would be correct only if the interacting drug were a weak inducer such as rifabutin-free regimens or no inducer at all.\n  - (C) A 50 µg ethinyl estradiol pill was once used to offset enzyme induction, but rifampin-level induction still allows escape ovulation and the higher estrogen dose raises thromboembolic risk. This option would be correct only for a mild inducer where a modest dose increase restores exposure, and current guidance does not endorse it even then.\n  - (D) The etonogestrel implant delivers a low, continuous progestin level close to the ovulation-suppressing threshold, and contraceptive failures with rifampin and efavirenz are documented; a backup method is required. This option would be correct only if the woman were not taking an enzyme inducer.\n  - (E) The progestin-only pill has the narrowest margin of all hormonal methods — a single missed dose already matters — and enzyme induction lowers norethindrone below the effective level. This option would be correct only for a woman with an estrogen contraindication who is not on an inducer.\n- 함정: 'Progestin-only' is not the same as 'induction-proof'. Ask how the method delivers its dose: a large depot or a local device survives rifampin; a low daily or continuous systemic dose does not.\n- 학습목표: CYP3A4 유도제 병용 중 호르몬 피임의 실패 기전을 이해하고 영향을 받지 않는 피임법을 고른다\n- 근거·출처: CDC U.S. Medical Eligibility Criteria for Contraceptive Use, 2024 — drug interactions: rifampin/rifabutin with hormonal contraceptives · Goodman & Gilman's The Pharmacological Basis of Therapeutics — rifampin as a PXR-mediated CYP3A4 inducer; contraceptive steroid pharmacokinetics · WHO Medical Eligibility Criteria for Contraceptive Use, 5th ed. — rifampicin and hormonal methods",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rifampin is the most potent clinical inducer of hepatic CYP3A4 and of intestinal P-glycoprotein, and it accelerates the metabolism of ethinyl estradiol and of progestins to a degree that makes combined pills, the patch, the ring, the progestin-only pill and the implant unreliable for the entire course and for about 4 weeks afterwards. Depot medroxyprogesterone acetate is given in a dose so far above the ovulation-inhibiting threshold that enzyme induction does not shorten its window of efficacy; it, the levonorgestrel intrauterine system and the copper intrauterine device are the methods that remain fully effective."
+   },
+   {
+    "k": "원리",
+    "v": "Ethinyl estradiol and most synthetic progestins are cleared by <b>hepatic CYP3A4</b> (and ethinyl estradiol also by sulfation and glucuronidation with enterohepatic recycling). <b>Rifampin binds the pregnane X receptor and up-regulates transcription of CYP3A4</b> within days, doubling or tripling the clearance of the steroids and cutting their plasma levels by roughly half; induction persists for <b>about 4 weeks after the drug is stopped</b> because the excess enzyme must be degraded. The dose of a combined pill is chosen to sit only modestly above the threshold that suppresses the LH surge, so halving the exposure allows <b>escape ovulation</b> and breakthrough bleeding is the visible warning sign.<br> <b>Why depot medroxyprogesterone survives induction</b> — a 150 mg intramuscular depot produces plasma levels many times the threshold needed to block ovulation, and its 12–13-week interval already contains a wide safety margin; even a substantially faster metabolism does not bring levels below the threshold within the dosing interval. Intrauterine methods act locally (levonorgestrel) or without hormones (copper), so hepatic metabolism is irrelevant to them.<br> <b>Why the others fail</b> — the progestin-only pill and the etonogestrel implant deliver low, continuous doses close to their thresholds, exactly the situation in which induction matters; the implant's failures with efavirenz and rifampin are well documented. Raising ethinyl estradiol to 50 µg was an older strategy, but it does not reliably overcome rifampin-level induction and adds thromboembolic risk. The U.S. Medical Eligibility Criteria therefore rate combined methods, the progestin-only pill and the implant as category 3 with rifampin and rifabutin, and depot medroxyprogesterone and intrauterine methods as category 1."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Method</th><th style=\"width:30%\">Interaction with rifampin</th><th>US MEC category with rifampin</th></tr></thead><tbody> <tr><td><b>Depot medroxyprogesterone acetate (answer)</b></td><td><b>dose far above threshold — efficacy preserved</b></td><td><b>1</b></td></tr> <tr><td>Levonorgestrel IUS / copper IUD</td><td>local or non-hormonal action, unaffected</td><td>1</td></tr> <tr><td>Combined pill / patch / ring (any dose)</td><td>ethinyl estradiol and progestin levels roughly halved, escape ovulation</td><td>3</td></tr> <tr><td>Progestin-only pill</td><td>low continuous dose near threshold — fails</td><td>3</td></tr> <tr><td>Etonogestrel implant</td><td>documented failures with enzyme inducers</td><td>2* (avoid; use backup) — not first choice</td></tr> </tbody></table> The <b>closest wrong answer is the etonogestrel implant</b>: it is long-acting and progestin-only, so it looks like the safe choice, but it relies on a low steady serum level that induction pushes below the ovulation threshold. The rule is not 'progestin versus estrogen' but <b>'how far above the threshold is the dose'</b> — only the depot injection and the intrauterine methods pass that test."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Continuing the combined pill, however carefully taken, does not correct a pharmacokinetic failure: rifampin halves ethinyl estradiol and progestin exposure regardless of adherence. This option would be correct only if the interacting drug were a weak inducer such as rifabutin-free regimens or no inducer at all.\n(C) A 50 µg ethinyl estradiol pill was once used to offset enzyme induction, but rifampin-level induction still allows escape ovulation and the higher estrogen dose raises thromboembolic risk. This option would be correct only for a mild inducer where a modest dose increase restores exposure, and current guidance does not endorse it even then.\n(D) The etonogestrel implant delivers a low, continuous progestin level close to the ovulation-suppressing threshold, and contraceptive failures with rifampin and efavirenz are documented; a backup method is required. This option would be correct only if the woman were not taking an enzyme inducer.\n(E) The progestin-only pill has the narrowest margin of all hormonal methods — a single missed dose already matters — and enzyme induction lowers norethindrone below the effective level. This option would be correct only for a woman with an estrogen contraindication who is not on an inducer."
+   },
+   {
+    "k": "함정",
+    "v": "'Progestin-only' is not the same as 'induction-proof'. Ask how the method delivers its dose: a large depot or a local device survives rifampin; a low daily or continuous systemic dose does not."
+   },
+   {
+    "k": "학습목표",
+    "v": "CYP3A4 유도제 병용 중 호르몬 피임의 실패 기전을 이해하고 영향을 받지 않는 피임법을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CDC U.S. Medical Eligibility Criteria for Contraceptive Use, 2024 — drug interactions: rifampin/rifabutin with hormonal contraceptives · Goodman & Gilman's The Pharmacological Basis of Therapeutics — rifampin as a PXR-mediated CYP3A4 inducer; contraceptive steroid pharmacokinetics · WHO Medical Eligibility Criteria for Contraceptive Use, 5th ed. — rifampicin and hormonal methods"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0026",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과·비뇨의학·성호르몬 약리",
+  "type": "부인과·비뇨의학·성호르몬 약리",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-14",
+  "vignette": "28세 남자가 2개월 전부터 만져지는 오른쪽 음낭의 단단한 덩이로 왔다. 통증은 없고 외상이나 발열은 없었다. 진찰에서 오른쪽 고환에 지름 3 cm 의 딱딱하고 불규칙한 종괴가 있고 투광검사에서 빛이 통과하지 않는다. 음낭 초음파에서 고환 실질 안의 저에코 고형 종괴가 보인다. 혈청 알파태아단백 480 ng/mL, β-hCG 210 mIU/mL, 젖산탈수소효소는 정상이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경피적 세침흡인 세포검사",
+   "서혜부 절개를 통한 근치 고환절제술",
+   "음낭을 통한 절개 생검",
+   "시스플라틴 기반 항암화학요법 우선 시행",
+   "6주 뒤 초음파 재검"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 젊은 남자의 무통성 단단한 고환 내 고형 종괴에 AFP·hCG 상승이 더해지면 비정상피종성 생식세포종양으로 보아도 된다. 진단과 일차 치료를 겸하는 절차는 서혜부 절개로 정삭을 먼저 결찰한 뒤 고환을 통째로 꺼내는 근치 고환절제술이다. 음낭을 통한 생검·흡인은 림프 배액로가 다른 음낭 피부·서혜 림프절로 종양을 퍼뜨릴 수 있어 금기이며, 항암치료는 조직 확진과 병기 설정 뒤에 정한다.\n- 원리: 고환은 배 안에서 생겨 <b>고샅관을 지나 음낭으로 내려온</b> 장기다. 그래서 고환의 <b>림프는 정삭을 따라 다시 위로 올라가 콩팥혈관 높이의 대동맥 옆 림프절</b>로 가고, 음낭 피부의 림프는 <b>얕은 서혜 림프절</b>로 간다 — 두 배액로는 서로 통하지 않는다. 종양이 고환 안에 있는 동안은 전이 경로가 후복막 하나뿐인데, <b>음낭 피부를 절개하거나 바늘로 찌르면</b> 새 경로(서혜 림프절·음낭 피부 재발)가 열려 병기와 치료 범위가 바뀐다. 근치 고환절제술을 <b>서혜부</b>로 하는 이유, 그리고 정삭을 <b>내고리 높이에서 먼저 결찰</b>한 뒤 고환을 조작하는 이유가 여기에 있다.<br> <b>왜 종양표지자를 먼저 재는가</b> — AFP 는 <b>난황낭 종양·배아암</b>에서, β-hCG 는 <b>융모막암·배아암(일부 정상피종)</b>에서 만든다. <b>AFP 가 오르면 순수 정상피종이 아니다</b> (정상피종은 AFP 를 만들지 않는다) — 이는 조직검사 결과와 무관하게 비정상피종성으로 치료한다는 뜻이다. 표지자는 절제 <b>전</b>에 재야 반감기(AFP 5~7일, hCG 1~3일)로 절제 후 감소 속도를 해석해 잔존 병변을 판단할 수 있다. 절제 후 병기(흉·복부 CT, 표지자 정상화 여부)에 따라 감시, 후복막 림프절 절제 또는 BEP 항암화학요법을 정한다.<br> <b>왜 기다리지 않는가</b> — 고형 고환 내 종괴는 다른 진단(수종·부고환염·정계정맥류)과 초음파로 이미 구분되었고, 젊은 남자의 고환 종괴는 95 % 이상이 악성이다. 지연은 병기를 올린다.\n- 비교: <table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:36%\">문제점 또는 자리</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>서혜부 근치 고환절제술(정답)</b></td><td><b>진단·일차치료·병기 결정을 한 번에, 림프 배액로를 지킴</b></td><td><b>표지자 확인 후 즉시</b></td></tr> <tr><td>음낭 절개 생검</td><td>음낭 피부·서혜 림프절로 <b>새 전이 경로</b>를 열고 국소 재발 증가</td><td>금기</td></tr> <tr><td>세침흡인</td><td>같은 이유로 금기, 조직 소량으로 아형 판정도 불충분</td><td>금기</td></tr> <tr><td>항암화학요법 우선</td><td>조직 확진·병기 없이 시작하지 않음; 예외는 표지자 매우 높은 광범위 전이의 응급</td><td>전이 소견 없음</td></tr> <tr><td>추적 관찰</td><td>낭성·염증성 병변에서만; 고형 종괴는 아님</td><td>고형·표지자 상승</td></tr> </tbody></table> <b>가장 가까운 오답은 음낭 절개 생검</b> — 「조직검사로 확진 후 수술」이라는 일반 원칙을 그대로 적용하면 고른다. 고환은 그 원칙의 <b>예외</b>다: 절제가 곧 생검이고, 음낭을 건드리는 순간 림프 해부가 병기를 바꾼다.\n- 오답 이유:\n  - ① 경피적 세침흡인은 음낭 생검과 같은 이유로 종양을 퍼뜨릴 수 있고, 얻는 세포가 적어 정상피종과 비정상피종의 구분도 불충분하다. 이 선지가 정답이 되려면 고환이 아니라 림프절 등 다른 장기의 병변을 확인하는 상황이어야 한다.\n  - ③ 음낭을 통한 절개 생검은 음낭 피부와 얕은 서혜 림프절로 종양세포를 심어 후복막뿐이던 전이 경로를 하나 더 만들고 국소 재발을 늘린다. 이 선지가 정답이 되려면 고환 종괴가 아니라 음낭 피부 자체의 병변이어야 한다.\n  - ④ 시스플라틴 기반 항암화학요법은 절제 후 조직형과 병기·표지자 감소 속도를 보고 정하는 치료이며, 절제 전 시작은 표지자가 극도로 높고 전이로 생명이 위태로운 예외에서만 한다. 이 선지가 정답이 되려면 폐·후복막의 광범위 전이와 호흡부전 같은 응급 상황이 있어야 한다.\n  - ⑤ 6주 뒤 초음파 재검은 부고환염이나 단순 낭종처럼 염증·낭성 병변이 의심될 때의 선택이다. 고환 실질 안의 고형 종괴에 종양표지자 상승이 더해진 상황에서 기다리면 병기만 올라간다. 이 선지가 정답이 되려면 종괴가 낭성이고 표지자가 정상이어야 한다.\n- 함정: 「수술 전에 조직검사」라는 습관이 함정이다. 고환 종괴는 바늘이나 칼이 음낭에 닿으면 안 되고, 절제 자체가 조직검사다.\n- 학습목표: 무통 고환 종괴에서 종양표지자 확인 후 서혜부 근치 고환절제술을 첫 처치로 고른다\n- 근거·출처: NCCN Clinical Practice Guidelines in Oncology: Testicular Cancer — initial evaluation and radical inguinal orchiectomy · Campbell-Walsh-Wein Urology — 고환 생식세포종양: 림프 배액, 종양표지자, 음낭 위반(scrotal violation)의 결과 · Moore Clinically Oriented Anatomy — 고환·음낭의 림프 배액 차이(대동맥옆 vs 얕은 서혜 림프절)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "젊은 남자의 무통성 단단한 고환 내 고형 종괴에 AFP·hCG 상승이 더해지면 비정상피종성 생식세포종양으로 보아도 된다. 진단과 일차 치료를 겸하는 절차는 서혜부 절개로 정삭을 먼저 결찰한 뒤 고환을 통째로 꺼내는 근치 고환절제술이다. 음낭을 통한 생검·흡인은 림프 배액로가 다른 음낭 피부·서혜 림프절로 종양을 퍼뜨릴 수 있어 금기이며, 항암치료는 조직 확진과 병기 설정 뒤에 정한다."
+   },
+   {
+    "k": "원리",
+    "v": "고환은 배 안에서 생겨 <b>고샅관을 지나 음낭으로 내려온</b> 장기다. 그래서 고환의 <b>림프는 정삭을 따라 다시 위로 올라가 콩팥혈관 높이의 대동맥 옆 림프절</b>로 가고, 음낭 피부의 림프는 <b>얕은 서혜 림프절</b>로 간다 — 두 배액로는 서로 통하지 않는다. 종양이 고환 안에 있는 동안은 전이 경로가 후복막 하나뿐인데, <b>음낭 피부를 절개하거나 바늘로 찌르면</b> 새 경로(서혜 림프절·음낭 피부 재발)가 열려 병기와 치료 범위가 바뀐다. 근치 고환절제술을 <b>서혜부</b>로 하는 이유, 그리고 정삭을 <b>내고리 높이에서 먼저 결찰</b>한 뒤 고환을 조작하는 이유가 여기에 있다.<br> <b>왜 종양표지자를 먼저 재는가</b> — AFP 는 <b>난황낭 종양·배아암</b>에서, β-hCG 는 <b>융모막암·배아암(일부 정상피종)</b>에서 만든다. <b>AFP 가 오르면 순수 정상피종이 아니다</b> (정상피종은 AFP 를 만들지 않는다) — 이는 조직검사 결과와 무관하게 비정상피종성으로 치료한다는 뜻이다. 표지자는 절제 <b>전</b>에 재야 반감기(AFP 5~7일, hCG 1~3일)로 절제 후 감소 속도를 해석해 잔존 병변을 판단할 수 있다. 절제 후 병기(흉·복부 CT, 표지자 정상화 여부)에 따라 감시, 후복막 림프절 절제 또는 BEP 항암화학요법을 정한다.<br> <b>왜 기다리지 않는가</b> — 고형 고환 내 종괴는 다른 진단(수종·부고환염·정계정맥류)과 초음파로 이미 구분되었고, 젊은 남자의 고환 종괴는 95 % 이상이 악성이다. 지연은 병기를 올린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:36%\">문제점 또는 자리</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>서혜부 근치 고환절제술(정답)</b></td><td><b>진단·일차치료·병기 결정을 한 번에, 림프 배액로를 지킴</b></td><td><b>표지자 확인 후 즉시</b></td></tr> <tr><td>음낭 절개 생검</td><td>음낭 피부·서혜 림프절로 <b>새 전이 경로</b>를 열고 국소 재발 증가</td><td>금기</td></tr> <tr><td>세침흡인</td><td>같은 이유로 금기, 조직 소량으로 아형 판정도 불충분</td><td>금기</td></tr> <tr><td>항암화학요법 우선</td><td>조직 확진·병기 없이 시작하지 않음; 예외는 표지자 매우 높은 광범위 전이의 응급</td><td>전이 소견 없음</td></tr> <tr><td>추적 관찰</td><td>낭성·염증성 병변에서만; 고형 종괴는 아님</td><td>고형·표지자 상승</td></tr> </tbody></table> <b>가장 가까운 오답은 음낭 절개 생검</b> — 「조직검사로 확진 후 수술」이라는 일반 원칙을 그대로 적용하면 고른다. 고환은 그 원칙의 <b>예외</b>다: 절제가 곧 생검이고, 음낭을 건드리는 순간 림프 해부가 병기를 바꾼다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경피적 세침흡인은 음낭 생검과 같은 이유로 종양을 퍼뜨릴 수 있고, 얻는 세포가 적어 정상피종과 비정상피종의 구분도 불충분하다. 이 선지가 정답이 되려면 고환이 아니라 림프절 등 다른 장기의 병변을 확인하는 상황이어야 한다.\n③ 음낭을 통한 절개 생검은 음낭 피부와 얕은 서혜 림프절로 종양세포를 심어 후복막뿐이던 전이 경로를 하나 더 만들고 국소 재발을 늘린다. 이 선지가 정답이 되려면 고환 종괴가 아니라 음낭 피부 자체의 병변이어야 한다.\n④ 시스플라틴 기반 항암화학요법은 절제 후 조직형과 병기·표지자 감소 속도를 보고 정하는 치료이며, 절제 전 시작은 표지자가 극도로 높고 전이로 생명이 위태로운 예외에서만 한다. 이 선지가 정답이 되려면 폐·후복막의 광범위 전이와 호흡부전 같은 응급 상황이 있어야 한다.\n⑤ 6주 뒤 초음파 재검은 부고환염이나 단순 낭종처럼 염증·낭성 병변이 의심될 때의 선택이다. 고환 실질 안의 고형 종괴에 종양표지자 상승이 더해진 상황에서 기다리면 병기만 올라간다. 이 선지가 정답이 되려면 종괴가 낭성이고 표지자가 정상이어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「수술 전에 조직검사」라는 습관이 함정이다. 고환 종괴는 바늘이나 칼이 음낭에 닿으면 안 되고, 절제 자체가 조직검사다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무통 고환 종괴에서 종양표지자 확인 후 서혜부 근치 고환절제술을 첫 처치로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "NCCN Clinical Practice Guidelines in Oncology: Testicular Cancer — initial evaluation and radical inguinal orchiectomy · Campbell-Walsh-Wein Urology — 고환 생식세포종양: 림프 배액, 종양표지자, 음낭 위반(scrotal violation)의 결과 · Moore Clinically Oriented Anatomy — 고환·음낭의 림프 배액 차이(대동맥옆 vs 얕은 서혜 림프절)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0025",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "부인과·비뇨의학·성호르몬 약리",
+  "type": "부인과·비뇨의학·성호르몬 약리",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-14",
+  "vignette": "32세 여자가 건강검진으로 받은 자궁경부세포검사에서 비정형 편평세포(ASC-US)로 나와 산부인과에 왔다. 함께 시행한 고위험 인유두종바이러스 검사에서 16형 양성이었다. 월경은 규칙적이고 성교 후 출혈이나 냉은 없으며 이전 세포검사는 3년 전 정상이었다. 진찰에서 자궁경부에 육안적 병변은 없다.",
+  "question": "가장 적절한 다음 검사는?",
+  "options": [
+   "질확대경검사와 조준 생검",
+   "12개월 뒤 세포검사와 HPV 검사 반복",
+   "자궁경부 원추절제술",
+   "자궁내막 생검",
+   "6개월 뒤 세포검사 반복"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: ASC-US 는 그 자체로는 의미가 약한 소견이지만 고위험 HPV, 특히 16형 양성이 동반되면 CIN 3 이상이 숨어 있을 위험이 충분히 높아 곧바로 질확대경검사로 병변을 찾아 조준 생검을 한다. 원추절제는 조직학적 확진 뒤의 치료이고, 추적 관찰은 HPV 음성 ASC-US 에 해당한다.\n- 원리: 자궁경부 세포검사의 판독은 병변의 <b>확률</b>을 말할 뿐 진단이 아니다. ASC-US(atypical squamous cells of undetermined significance) 는 「반응성 변화일 수도, 저등급 이형성일 수도 있다」는 뜻이며, 이 상태에서 CIN 3 이상이 있을 확률은 <b>HPV 결과</b>가 좌우한다. 고위험 HPV 음성이면 그 위험은 정상 세포검사와 다르지 않아 3년 뒤 정기검사로 돌아가지만, <b>HPV 16 양성</b>이면 즉시 CIN 3+ 위험이 <b>수 % 를 넘어</b> 질확대경검사 기준을 넘는다. 2019 ASCCP 지침은 세포검사 결과보다 <b>「현재 CIN 3+ 위험이 4 % 이상이면 질확대경검사」</b>라는 위험 기반 원칙으로 바뀌었고, HPV 16/18 은 다른 고위험형보다 발암성이 높아 세포검사가 정상이어도 질확대경검사를 권한다.<br> <b>왜 HPV 가 열쇠인가</b> — 고위험 HPV 의 E6·E7 단백은 각각 <b>p53 과 Rb 를 분해·불활성화</b>해 이형성을 만들고, 16형은 그 결합력이 가장 강해 CIN 3 과 편평세포암의 절반 이상을 차지한다. 감염이 지속되는가(persistence)가 진행의 조건이므로 「HPV 양성 + 세포 이상」은 지속 감염이 이미 조직 변화를 일으키고 있다는 신호다.<br> <b>질확대경검사가 하는 일</b> — 3~5 % 아세트산을 바른 뒤 확대경으로 <b>변형대(transformation zone)</b>의 초산백색 상피·점상·모자이크 혈관을 찾아 그 자리를 조준 생검한다. 진단은 조직으로 확정하고, 치료(원추절제·LEEP)는 CIN 2/3 가 조직으로 확인된 뒤에 한다 — 검사와 치료를 건너뛰어 원추절제로 가면 불필요한 자궁경부 손상(조산 위험)을 만든다.\n- 비교: <table><thead><tr><th style=\"width:30%\">세포검사 + HPV</th><th style=\"width:34%\">CIN 3+ 즉시 위험</th><th>다음 조치</th></tr></thead><tbody> <tr><td><b>ASC-US + HPV 16 양성(정답 상황)</b></td><td><b>질확대경검사 기준(4 %) 초과</b></td><td><b>질확대경검사 + 조준 생검</b></td></tr> <tr><td>ASC-US + 고위험 HPV(16/18 외) 양성</td><td>기준 근처 — 이전 검사 이력에 따라 갈림</td><td>대개 질확대경검사, 이전 음성 이력이면 1년 추적 가능</td></tr> <tr><td>ASC-US + HPV 음성</td><td>정상과 비슷</td><td>3년 뒤 정기검사</td></tr> <tr><td>ASC-US, HPV 미검사(25세 이상)</td><td>불명</td><td>HPV 검사 추가 또는 1년 뒤 세포검사</td></tr> <tr><td>CIN 2/3 조직 확진</td><td>—</td><td>원추절제·LEEP</td></tr> </tbody></table> <b>가장 가까운 오답은 「12개월 뒤 반복」</b> — HPV 가 음성이거나 16/18 이 아닌 고위험형에서 이전 검사가 음성이었을 때 허용되는 선택이다. 16형이라는 조건이 이 환자를 즉시 검사 쪽으로 밀어낸다. 반대로 발문에 「HPV 음성」이 있으면 정기검사 복귀가 정답이 된다.\n- 오답 이유:\n  - ② 12개월 뒤 세포검사·HPV 공동검사 반복은 ASC-US 에 HPV 음성이거나, 16/18 이 아닌 고위험형에서 이전 검사 이력이 음성일 때의 선택이다. HPV 16 양성은 즉시 질확대경검사 기준을 넘는다. 이 선지가 정답이 되려면 HPV 결과가 음성이거나 비-16/18 형이어야 한다.\n  - ③ 자궁경부 원추절제술은 조직검사로 CIN 2/3 가 확진되거나 미세침윤암이 의심될 때의 치료다. 세포검사만으로 절제하면 진단 없이 자궁경부를 손상시켜 조산 위험을 높인다. 이 선지가 정답이 되려면 질확대경 조준 생검에서 고등급 병변이 확인돼 있어야 한다.\n  - ④ 자궁내막 생검은 비정형 선세포(AGC)가 나오거나 폐경 전후 비정상 자궁출혈이 있을 때 자궁내막 병변을 찾는 검사다. 이 환자는 편평세포 이상이고 출혈이 없다. 이 선지가 정답이 되려면 세포검사가 AGC 이거나 35세 이상에서 비정상 출혈이 있어야 한다.\n  - ⑤ 6개월 뒤 세포검사 반복은 과거 지침의 ASC-US 관리법이며 현재는 HPV 결과로 갈라 관리한다. HPV 16 양성에서는 지연 없이 질확대경검사를 한다. 이 선지가 정답이 되려면 HPV 검사를 할 수 없고 세포검사만 가능한 상황이어야 한다.\n- 함정: 「ASC-US 는 가벼운 소견」이라는 인상 때문에 추적으로 넘기기 쉽다. 세포검사 등급이 아니라 「HPV 16/18 양성인가」가 다음 조치를 정한다.\n- 학습목표: 자궁경부세포검사 ASC-US 에 HPV 16 양성이 동반될 때 다음 검사로 질확대경검사를 고른다\n- 근거·출처: 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests (J Low Genit Tract Dis 2020) · Berek & Novak's Gynecology — 자궁경부 상피내병변의 선별·질확대경검사 적응증",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "ASC-US 는 그 자체로는 의미가 약한 소견이지만 고위험 HPV, 특히 16형 양성이 동반되면 CIN 3 이상이 숨어 있을 위험이 충분히 높아 곧바로 질확대경검사로 병변을 찾아 조준 생검을 한다. 원추절제는 조직학적 확진 뒤의 치료이고, 추적 관찰은 HPV 음성 ASC-US 에 해당한다."
+   },
+   {
+    "k": "원리",
+    "v": "자궁경부 세포검사의 판독은 병변의 <b>확률</b>을 말할 뿐 진단이 아니다. ASC-US(atypical squamous cells of undetermined significance) 는 「반응성 변화일 수도, 저등급 이형성일 수도 있다」는 뜻이며, 이 상태에서 CIN 3 이상이 있을 확률은 <b>HPV 결과</b>가 좌우한다. 고위험 HPV 음성이면 그 위험은 정상 세포검사와 다르지 않아 3년 뒤 정기검사로 돌아가지만, <b>HPV 16 양성</b>이면 즉시 CIN 3+ 위험이 <b>수 % 를 넘어</b> 질확대경검사 기준을 넘는다. 2019 ASCCP 지침은 세포검사 결과보다 <b>「현재 CIN 3+ 위험이 4 % 이상이면 질확대경검사」</b>라는 위험 기반 원칙으로 바뀌었고, HPV 16/18 은 다른 고위험형보다 발암성이 높아 세포검사가 정상이어도 질확대경검사를 권한다.<br> <b>왜 HPV 가 열쇠인가</b> — 고위험 HPV 의 E6·E7 단백은 각각 <b>p53 과 Rb 를 분해·불활성화</b>해 이형성을 만들고, 16형은 그 결합력이 가장 강해 CIN 3 과 편평세포암의 절반 이상을 차지한다. 감염이 지속되는가(persistence)가 진행의 조건이므로 「HPV 양성 + 세포 이상」은 지속 감염이 이미 조직 변화를 일으키고 있다는 신호다.<br> <b>질확대경검사가 하는 일</b> — 3~5 % 아세트산을 바른 뒤 확대경으로 <b>변형대(transformation zone)</b>의 초산백색 상피·점상·모자이크 혈관을 찾아 그 자리를 조준 생검한다. 진단은 조직으로 확정하고, 치료(원추절제·LEEP)는 CIN 2/3 가 조직으로 확인된 뒤에 한다 — 검사와 치료를 건너뛰어 원추절제로 가면 불필요한 자궁경부 손상(조산 위험)을 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">세포검사 + HPV</th><th style=\"width:34%\">CIN 3+ 즉시 위험</th><th>다음 조치</th></tr></thead><tbody> <tr><td><b>ASC-US + HPV 16 양성(정답 상황)</b></td><td><b>질확대경검사 기준(4 %) 초과</b></td><td><b>질확대경검사 + 조준 생검</b></td></tr> <tr><td>ASC-US + 고위험 HPV(16/18 외) 양성</td><td>기준 근처 — 이전 검사 이력에 따라 갈림</td><td>대개 질확대경검사, 이전 음성 이력이면 1년 추적 가능</td></tr> <tr><td>ASC-US + HPV 음성</td><td>정상과 비슷</td><td>3년 뒤 정기검사</td></tr> <tr><td>ASC-US, HPV 미검사(25세 이상)</td><td>불명</td><td>HPV 검사 추가 또는 1년 뒤 세포검사</td></tr> <tr><td>CIN 2/3 조직 확진</td><td>—</td><td>원추절제·LEEP</td></tr> </tbody></table> <b>가장 가까운 오답은 「12개월 뒤 반복」</b> — HPV 가 음성이거나 16/18 이 아닌 고위험형에서 이전 검사가 음성이었을 때 허용되는 선택이다. 16형이라는 조건이 이 환자를 즉시 검사 쪽으로 밀어낸다. 반대로 발문에 「HPV 음성」이 있으면 정기검사 복귀가 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 12개월 뒤 세포검사·HPV 공동검사 반복은 ASC-US 에 HPV 음성이거나, 16/18 이 아닌 고위험형에서 이전 검사 이력이 음성일 때의 선택이다. HPV 16 양성은 즉시 질확대경검사 기준을 넘는다. 이 선지가 정답이 되려면 HPV 결과가 음성이거나 비-16/18 형이어야 한다.\n③ 자궁경부 원추절제술은 조직검사로 CIN 2/3 가 확진되거나 미세침윤암이 의심될 때의 치료다. 세포검사만으로 절제하면 진단 없이 자궁경부를 손상시켜 조산 위험을 높인다. 이 선지가 정답이 되려면 질확대경 조준 생검에서 고등급 병변이 확인돼 있어야 한다.\n④ 자궁내막 생검은 비정형 선세포(AGC)가 나오거나 폐경 전후 비정상 자궁출혈이 있을 때 자궁내막 병변을 찾는 검사다. 이 환자는 편평세포 이상이고 출혈이 없다. 이 선지가 정답이 되려면 세포검사가 AGC 이거나 35세 이상에서 비정상 출혈이 있어야 한다.\n⑤ 6개월 뒤 세포검사 반복은 과거 지침의 ASC-US 관리법이며 현재는 HPV 결과로 갈라 관리한다. HPV 16 양성에서는 지연 없이 질확대경검사를 한다. 이 선지가 정답이 되려면 HPV 검사를 할 수 없고 세포검사만 가능한 상황이어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「ASC-US 는 가벼운 소견」이라는 인상 때문에 추적으로 넘기기 쉽다. 세포검사 등급이 아니라 「HPV 16/18 양성인가」가 다음 조치를 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부세포검사 ASC-US 에 HPV 16 양성이 동반될 때 다음 검사로 질확대경검사를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests (J Low Genit Tract Dis 2020) · Berek & Novak's Gynecology — 자궁경부 상피내병변의 선별·질확대경검사 적응증"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0024",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과 마취·흉부 해부)",
+  "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+  "type": "산과 — 분만 중 태아감시·융모성 질환",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-14",
+  "vignette": "A 24-year-old woman, gravida 1, comes to the emergency department because of vaginal bleeding and severe nausea for 3 days. Her last menstrual period was 11 weeks ago. Blood pressure is 142/92 mm Hg. The uterus is enlarged to the size of a 16-week gestation. Serum β-hCG concentration is 480,000 mIU/mL. Transvaginal ultrasonography shows a uterine cavity filled with a heterogeneous echogenic mass containing numerous small cystic spaces and no fetal parts; both ovaries contain multiple large cysts.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Expectant management with repeat ultrasonography in 2 weeks",
+   "Suction curettage followed by serial β-hCG measurements",
+   "Single-agent methotrexate chemotherapy",
+   "Hysterectomy with bilateral salpingo-oophorectomy",
+   "Medical evacuation with misoprostol"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Bleeding in the first trimester, a uterus larger than dates, hyperemesis, early-onset hypertension, a markedly elevated β-hCG (far above the level of a normal pregnancy), a 'snowstorm' of small cystic spaces without a fetus, and theca lutein cysts together identify a complete hydatidiform mole. Molar tissue is removed by suction curettage — the safest and most complete method — and because 15–20 % of complete moles progress to gestational trophoblastic neoplasia, β-hCG is then followed weekly until undetectable and monthly thereafter, with reliable contraception during follow-up.\n- 원리: A <b>complete hydatidiform mole</b> arises when an <b>empty ovum is fertilized by one sperm that duplicates (or by two sperm)</b>, giving a <b>46,XX (rarely 46,XY) karyotype of purely paternal origin</b>. Without maternal genes no embryo forms; the trophoblast proliferates wildly, and the chorionic villi swell into grape-like vesicles — the 'snowstorm' on ultrasound.<br> <b>Why the clinical picture follows from the biology</b> — trophoblast makes hCG, so hCG is <b>far higher than in any normal pregnancy</b>; hCG shares its α-subunit with LH and TSH, which explains the <b>theca lutein cysts</b> (LH-like stimulation of both ovaries), the <b>hyperemesis</b>, and sometimes clinical hyperthyroidism. The rapidly growing tissue makes the uterus <b>larger than dates</b>, and trophoblastic vasoactive products cause <b>pre-eclampsia before 20 weeks</b>, which in any other pregnancy would be impossible.<br> <b>Why suction curettage</b> — it empties the uterus quickly under direct control with the least blood loss and lowest risk of leaving tissue or perforating the soft, enlarged uterus. Prostaglandins and oxytocin before evacuation are avoided because forceful contractions may embolize trophoblast into the venous circulation. Hysterectomy is reserved for women who have completed childbearing and want to reduce the risk of neoplasia; it does not remove the need for hCG follow-up.<br> <b>Why follow hCG</b> — the risk after evacuation is <b>persistent gestational trophoblastic neoplasia</b> (invasive mole or choriocarcinoma): a plateau over 4 values or a rise over 3 values of hCG, or hCG still detectable at 6 months, defines it and triggers staging and chemotherapy (methotrexate for low-risk disease). Chemotherapy is therefore a <b>post-evacuation</b> decision, never the first step.\n- 비교: <table><thead><tr><th style=\"width:32%\">Option</th><th style=\"width:34%\">When it is correct</th><th>Why not now</th></tr></thead><tbody> <tr><td><b>Suction curettage + serial hCG (answer)</b></td><td><b>every molar pregnancy at diagnosis</b></td><td>—</td></tr> <tr><td>Methotrexate</td><td>post-evacuation hCG plateau/rise (GTN), low-risk score; or ectopic pregnancy</td><td>no evacuation has been done, no GTN yet</td></tr> <tr><td>Hysterectomy</td><td>childbearing completed, wishes to lower GTN risk</td><td>24-year-old gravida 1</td></tr> <tr><td>Misoprostol</td><td>early pregnancy loss with a non-viable intrauterine pregnancy</td><td>uterotonics risk trophoblastic embolization and incomplete removal</td></tr> <tr><td>Expectant management</td><td>never for a mole</td><td>bleeding, hypertension and neoplasia risk demand evacuation</td></tr> </tbody></table> The <b>closest wrong answer is methotrexate</b>: it is the drug of gestational trophoblastic <b>neoplasia</b>, and students jump to it because 'trophoblastic disease' sounds oncologic. The sequence is evacuate first, then follow hCG; chemotherapy only if the curve fails to fall.\n- 오답 이유:\n  - (A) Expectant management is never appropriate for a molar pregnancy: bleeding, early pre-eclampsia and the 15–20 % risk of neoplasia all rise while the tissue remains. This option would be correct only for a stable pregnancy of unknown location below the discriminatory hCG level.\n  - (C) Methotrexate treats gestational trophoblastic neoplasia diagnosed after evacuation by a rising or plateauing hCG, or an ectopic pregnancy. This patient has an intrauterine mole that has not yet been removed. This option would be correct only if post-evacuation hCG values had plateaued or risen.\n  - (D) Hysterectomy removes the mole and lowers the risk of neoplasia, but it is offered only to women who have completed childbearing, and hCG surveillance is still required afterwards. This option would be correct only if the patient were older and did not wish to preserve fertility.\n  - (E) Misoprostol is used for early pregnancy loss of a non-viable intrauterine pregnancy. In a mole, uterotonic-induced contractions can embolize trophoblast and often leave tissue behind. This option would be correct only for a failed intrauterine pregnancy without trophoblastic proliferation.\n- 함정: Hypertension before 20 weeks is impossible in a normal pregnancy — when it appears with a uterus larger than dates, think mole before any other diagnosis.\n- 학습목표: 임신 초기 출혈과 과도한 hCG·눈보라 초음파에서 완전 포상기태를 진단하고 흡인소파와 hCG 추적을 선택한다\n- 근거·출처: ACOG Practice Bulletin No. 53: Diagnosis and Treatment of Gestational Trophoblastic Disease · FIGO 2000 criteria for post-molar gestational trophoblastic neoplasia (hCG plateau ×4, rise ×3, persistence ≥6 months) · Berek & Novak's Gynecology — hydatidiform mole: pathogenesis, evacuation and follow-up",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Bleeding in the first trimester, a uterus larger than dates, hyperemesis, early-onset hypertension, a markedly elevated β-hCG (far above the level of a normal pregnancy), a 'snowstorm' of small cystic spaces without a fetus, and theca lutein cysts together identify a complete hydatidiform mole. Molar tissue is removed by suction curettage — the safest and most complete method — and because 15–20 % of complete moles progress to gestational trophoblastic neoplasia, β-hCG is then followed weekly until undetectable and monthly thereafter, with reliable contraception during follow-up."
+   },
+   {
+    "k": "원리",
+    "v": "A <b>complete hydatidiform mole</b> arises when an <b>empty ovum is fertilized by one sperm that duplicates (or by two sperm)</b>, giving a <b>46,XX (rarely 46,XY) karyotype of purely paternal origin</b>. Without maternal genes no embryo forms; the trophoblast proliferates wildly, and the chorionic villi swell into grape-like vesicles — the 'snowstorm' on ultrasound.<br> <b>Why the clinical picture follows from the biology</b> — trophoblast makes hCG, so hCG is <b>far higher than in any normal pregnancy</b>; hCG shares its α-subunit with LH and TSH, which explains the <b>theca lutein cysts</b> (LH-like stimulation of both ovaries), the <b>hyperemesis</b>, and sometimes clinical hyperthyroidism. The rapidly growing tissue makes the uterus <b>larger than dates</b>, and trophoblastic vasoactive products cause <b>pre-eclampsia before 20 weeks</b>, which in any other pregnancy would be impossible.<br> <b>Why suction curettage</b> — it empties the uterus quickly under direct control with the least blood loss and lowest risk of leaving tissue or perforating the soft, enlarged uterus. Prostaglandins and oxytocin before evacuation are avoided because forceful contractions may embolize trophoblast into the venous circulation. Hysterectomy is reserved for women who have completed childbearing and want to reduce the risk of neoplasia; it does not remove the need for hCG follow-up.<br> <b>Why follow hCG</b> — the risk after evacuation is <b>persistent gestational trophoblastic neoplasia</b> (invasive mole or choriocarcinoma): a plateau over 4 values or a rise over 3 values of hCG, or hCG still detectable at 6 months, defines it and triggers staging and chemotherapy (methotrexate for low-risk disease). Chemotherapy is therefore a <b>post-evacuation</b> decision, never the first step."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Option</th><th style=\"width:34%\">When it is correct</th><th>Why not now</th></tr></thead><tbody> <tr><td><b>Suction curettage + serial hCG (answer)</b></td><td><b>every molar pregnancy at diagnosis</b></td><td>—</td></tr> <tr><td>Methotrexate</td><td>post-evacuation hCG plateau/rise (GTN), low-risk score; or ectopic pregnancy</td><td>no evacuation has been done, no GTN yet</td></tr> <tr><td>Hysterectomy</td><td>childbearing completed, wishes to lower GTN risk</td><td>24-year-old gravida 1</td></tr> <tr><td>Misoprostol</td><td>early pregnancy loss with a non-viable intrauterine pregnancy</td><td>uterotonics risk trophoblastic embolization and incomplete removal</td></tr> <tr><td>Expectant management</td><td>never for a mole</td><td>bleeding, hypertension and neoplasia risk demand evacuation</td></tr> </tbody></table> The <b>closest wrong answer is methotrexate</b>: it is the drug of gestational trophoblastic <b>neoplasia</b>, and students jump to it because 'trophoblastic disease' sounds oncologic. The sequence is evacuate first, then follow hCG; chemotherapy only if the curve fails to fall."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Expectant management is never appropriate for a molar pregnancy: bleeding, early pre-eclampsia and the 15–20 % risk of neoplasia all rise while the tissue remains. This option would be correct only for a stable pregnancy of unknown location below the discriminatory hCG level.\n(C) Methotrexate treats gestational trophoblastic neoplasia diagnosed after evacuation by a rising or plateauing hCG, or an ectopic pregnancy. This patient has an intrauterine mole that has not yet been removed. This option would be correct only if post-evacuation hCG values had plateaued or risen.\n(D) Hysterectomy removes the mole and lowers the risk of neoplasia, but it is offered only to women who have completed childbearing, and hCG surveillance is still required afterwards. This option would be correct only if the patient were older and did not wish to preserve fertility.\n(E) Misoprostol is used for early pregnancy loss of a non-viable intrauterine pregnancy. In a mole, uterotonic-induced contractions can embolize trophoblast and often leave tissue behind. This option would be correct only for a failed intrauterine pregnancy without trophoblastic proliferation."
+   },
+   {
+    "k": "함정",
+    "v": "Hypertension before 20 weeks is impossible in a normal pregnancy — when it appears with a uterus larger than dates, think mole before any other diagnosis."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 초기 출혈과 과도한 hCG·눈보라 초음파에서 완전 포상기태를 진단하고 흡인소파와 hCG 추적을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 53: Diagnosis and Treatment of Gestational Trophoblastic Disease · FIGO 2000 criteria for post-molar gestational trophoblastic neoplasia (hCG plateau ×4, rise ×3, persistence ≥6 months) · Berek & Novak's Gynecology — hydatidiform mole: pathogenesis, evacuation and follow-up"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+  "qid": "Q0006"
+ },
+ {
   "id": "imaging-2026-0014",
   "exam": "imaging",
   "style": "usmle_style",
