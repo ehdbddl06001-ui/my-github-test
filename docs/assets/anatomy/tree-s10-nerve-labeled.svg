@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1851" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="위팔에서 손까지의 신경과 배벽의 신경 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1851" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">위팔에서 손까지의 신경과 배벽의 신경<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> nerves of the arm, forearm, hand &amp; abdominal wall</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">10회차 · 세 신경이 칸을 나눠 갖고, 배벽은 갈비사이신경이 이어진다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10">★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,574 H 615 V 538 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,574 H 615 V 619 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 125 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 200 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 280 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 366 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 452 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 574 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,955 H 615 V 919 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,955 H 615 V 1000 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 694 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 769 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 844 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 955 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1074 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1144 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1221 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1299 H 419 V 1304 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,1406 H 615 V 1378 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,1406 H 615 V 1442 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1406 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1506 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1570 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1646 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1726 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 346 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 824 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1143 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1299 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1564 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <rect x="26" y="940" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
+  <text x="36" y="960" fill="#9cc3ff" font-size="12" class="kr">10회차의 신경</text>
+  <rect x="232" y="313" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="333" fill="#9cc3ff" font-size="12" class="kr">정중신경 ★</text>
+  <text x="242" y="348" fill="#7f9cc4" font-size="9">median nerve</text>
+  <text x="242" y="359" fill="#6f8299" font-size="9">C6–T1 · 가쪽뿌리+안쪽뿌리 ·</text>
+  <text x="242" y="370" fill="#6f8299" font-size="9">위팔에서 <tspan fill="#e6edf3" font-weight="700">가지를 안 낸다</tspan></text>
+  <rect x="232" y="790" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="810" fill="#9cc3ff" font-size="12" class="kr">자신경 ★</text>
+  <text x="242" y="826" fill="#7f9cc4" font-size="9">ulnar nerve</text>
+  <text x="242" y="836" fill="#6f8299" font-size="9">C8–T1 · 안쪽다발 · <tspan fill="#e6edf3" font-weight="700">위팔에서</tspan></text>
+  <text x="242" y="848" fill="#6f8299" font-size="9">가지를 안 낸다</text>
+  <rect x="232" y="1110" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="1130" fill="#9cc3ff" font-size="12" class="kr">노신경 ★</text>
+  <text x="242" y="1145" fill="#7f9cc4" font-size="9">radial nerve</text>
+  <text x="242" y="1156" fill="#6f8299" font-size="9">C5–T1 · 뒤칸의 신경 — 이</text>
+  <text x="242" y="1167" fill="#6f8299" font-size="9">회차에서는 뒤칸·팔오금 가쪽</text>
+  <rect x="232" y="1266" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="1286" fill="#9cc3ff" font-size="12" class="kr">근육피부신경 ★</text>
+  <text x="242" y="1301" fill="#7f9cc4" font-size="9">musculocutaneous nerve</text>
+  <text x="242" y="1312" fill="#6f8299" font-size="9">C5–C7 · 부리위팔근을 <tspan fill="#e6edf3" font-weight="700">뚫고</tspan></text>
+  <text x="242" y="1323" fill="#6f8299" font-size="9">위팔두갈래근·위팔근 사이로</text>
+  <rect x="232" y="1523" width="174" height="81" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="1543" fill="#9cc3ff" font-size="12" class="kr">배벽의 신경 —</text>
+  <text x="242" y="1558" fill="#9cc3ff" font-size="12" class="kr">갈비사이신경의 연속 ★</text>
+  <text x="242" y="1573" fill="#7f9cc4" font-size="9">nerves of the abdominal wall</text>
+  <text x="242" y="1584" fill="#6f8299" font-size="9">T7–T11 갈비사이신경 +</text>
+  <text x="242" y="1595" fill="#6f8299" font-size="9">갈비밑신경(T12) + L1</text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#9cc3ff" font-size="12" class="kr">위팔 구간 ★</text>
+  <text x="442" y="127" fill="#7f9cc4" font-size="9">in the arm</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9">위팔동맥과 동반 ·</text>
+  <text x="442" y="149" fill="#6f8299" font-size="9">가쪽→앞→안쪽으로 건너간다</text>
+  <rect x="432" y="167" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="187" fill="#9cc3ff" font-size="12" class="kr">팔오금 통과 ★</text>
+  <text x="442" y="202" fill="#7f9cc4" font-size="9">at the cubital fossa</text>
+  <text x="442" y="213" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">위팔두갈래근널힘줄 깊이</tspan> ·</text>
+  <text x="442" y="224" fill="#6f8299" font-size="9">원엎침근 두 갈래 사이로 들어간다</text>
+  <rect x="432" y="242" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="262" fill="#9cc3ff" font-size="12" class="kr">아래팔 앞칸 얕은층 ★</text>
+  <text x="442" y="277" fill="#7f9cc4" font-size="9">superficial flexors</text>
+  <text x="442" y="288" fill="#6f8299" font-size="9">원엎침근·노쪽손목굽힘근·긴손바닥</text>
+  <text x="442" y="299" fill="#6f8299" font-size="9">근·얕은손가락굽힘근 —</text>
+  <text x="442" y="310" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">자쪽손목굽힘근만 빼고</tspan> 다 맡는다</text>
+  <rect x="432" y="328" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="348" fill="#9cc3ff" font-size="12" class="kr">앞뼈사이신경 ★</text>
+  <text x="442" y="363" fill="#7f9cc4" font-size="9">anterior interosseous n.</text>
+  <text x="442" y="374" fill="#6f8299" font-size="9">깊은층 — 긴엄지굽힘근 ·</text>
+  <text x="442" y="385" fill="#6f8299" font-size="9">깊은손가락굽힘근 <tspan fill="#e6edf3" font-weight="700">가쪽 절반</tspan> ·</text>
+  <text x="442" y="396" fill="#6f8299" font-size="9">네모엎침근 · <tspan fill="#e6edf3" font-weight="700">순수 운동</tspan></text>
+  <rect x="432" y="414" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="434" fill="#9cc3ff" font-size="12" class="kr">손바닥피부가지 ★</text>
+  <text x="442" y="449" fill="#7f9cc4" font-size="9">palmar cutaneous branch</text>
+  <text x="442" y="460" fill="#6f8299" font-size="9">손목굴 <tspan fill="#e6edf3" font-weight="700">위로</tspan> 지난다 →</text>
+  <text x="442" y="471" fill="#6f8299" font-size="9">손목굴증후군에서 손바닥 감각은</text>
+  <text x="442" y="482" fill="#6f8299" font-size="9">남는다</text>
+  <rect x="432" y="541" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="561" fill="#9cc3ff" font-size="12" class="kr">손목굴 통과 ★</text>
+  <text x="442" y="576" fill="#7f9cc4" font-size="9">through the carpal tunnel</text>
+  <text x="442" y="587" fill="#6f8299" font-size="9">굽힘근지지띠 <tspan fill="#e6edf3" font-weight="700">깊이</tspan> · 굽힘근힘줄</text>
+  <text x="442" y="598" fill="#6f8299" font-size="9">9개와 함께</text>
+  <rect x="432" y="661" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="681" fill="#9cc3ff" font-size="12" class="kr">안쪽위관절융기 뒤 ★</text>
+  <text x="442" y="696" fill="#7f9cc4" font-size="9">behind the medial epicondyle</text>
+  <text x="442" y="707" fill="#6f8299" font-size="9">자신경고랑 — 피부 바로 밑이라</text>
+  <text x="442" y="718" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가장 잘 다치는 자리</tspan></text>
+  <rect x="432" y="736" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="756" fill="#9cc3ff" font-size="12" class="kr">아래팔 앞칸 ★</text>
+  <text x="442" y="771" fill="#7f9cc4" font-size="9">in the forearm</text>
+  <text x="442" y="782" fill="#6f8299" font-size="9">자쪽손목굽힘근 + 깊은손가락굽힘근</text>
+  <text x="442" y="793" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">안쪽 절반</tspan>(4·5지)</text>
+  <rect x="432" y="811" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="831" fill="#9cc3ff" font-size="12" class="kr">손등가지 ★</text>
+  <text x="442" y="846" fill="#7f9cc4" font-size="9">dorsal branch</text>
+  <text x="442" y="857" fill="#6f8299" font-size="9">아래팔 먼쪽 1/3에서</text>
+  <text x="442" y="868" fill="#6f8299" font-size="9">자쪽손목굽힘근 <tspan fill="#e6edf3" font-weight="700">깊이로 빠져나간다</tspan></text>
+  <rect x="432" y="922" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="942" fill="#9cc3ff" font-size="12" class="kr">자신경굴(Guyon) ★</text>
+  <text x="442" y="957" fill="#7f9cc4" font-size="9">ulnar canal</text>
+  <text x="442" y="968" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">콩알뼈와 갈고리뼈갈고리 사이</tspan> ·</text>
+  <text x="442" y="979" fill="#6f8299" font-size="9">굽힘근지지띠 <tspan fill="#e6edf3" font-weight="700">위</tspan>를 지난다</text>
+  <rect x="432" y="1047" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1067" fill="#9cc3ff" font-size="12" class="kr">깊은가지 → 뒤뼈사이신경 ★</text>
+  <text x="442" y="1082" fill="#7f9cc4" font-size="9">posterior interosseous n.</text>
+  <text x="442" y="1093" fill="#6f8299" font-size="9">손뒤침근을 뚫고 뒤칸 깊은층으로</text>
+  <rect x="432" y="1111" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1131" fill="#9cc3ff" font-size="12" class="kr">얕은가지 ★</text>
+  <text x="442" y="1146" fill="#7f9cc4" font-size="9">superficial br.</text>
+  <text x="442" y="1157" fill="#6f8299" font-size="9">위팔노근 <tspan fill="#e6edf3" font-weight="700">깊이</tspan> · 손등 가쪽</text>
+  <text x="442" y="1168" fill="#6f8299" font-size="9">3.5손가락 감각</text>
+  <rect x="432" y="1186" width="170" height="70" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1206" fill="#9cc3ff" font-size="12" class="kr">위팔노근·긴/짧은노쪽손목</text>
+  <text x="442" y="1221" fill="#9cc3ff" font-size="12" class="kr">폄근</text>
+  <text x="442" y="1236" fill="#7f9cc4" font-size="9">brachioradialis, ECRL/ECRB</text>
+  <text x="442" y="1247" fill="#6f8299" font-size="9">갈림 <tspan fill="#e6edf3" font-weight="700">전에</tspan> 나오는 가지</text>
+  <rect x="432" y="1265" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1285" fill="#9cc3ff" font-size="12" class="kr">가쪽아래팔피부신경 ★</text>
+  <text x="442" y="1300" fill="#7f9cc4" font-size="9">lateral antebrachial cutaneous</text>
+  <text x="442" y="1311" fill="#7f9cc4" font-size="9">n.</text>
+  <text x="442" y="1322" fill="#6f8299" font-size="9">위팔두갈래근 힘줄 <tspan fill="#e6edf3" font-weight="700">가쪽</tspan>에서 나온다</text>
+  <text x="442" y="1333" fill="#6f8299" font-size="9">— 팔오금 얕은층의 끝가지</text>
+  <rect x="432" y="1373" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="1393" fill="#9cc3ff" font-size="12" class="kr">가슴배신경 ★</text>
+  <text x="442" y="1408" fill="#7f9cc4" font-size="9">thoracoabdominal nn.</text>
+  <text x="442" y="1419" fill="#6f8299" font-size="9">T7–T11 · <tspan fill="#e6edf3" font-weight="700">배속빗근과 배가로근</tspan></text>
+  <text x="442" y="1430" fill="#6f8299" font-size="9">사이<tspan fill="#e6edf3" font-weight="700">로 달린다 — 이 면이 신경면</tspan></text>
+  <rect x="432" y="1479" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1499" fill="#9cc3ff" font-size="12" class="kr">갈비밑신경 ★</text>
+  <text x="442" y="1514" fill="#7f9cc4" font-size="9">subcostal n.</text>
+  <text x="442" y="1525" fill="#6f8299" font-size="9">T12 · 열두째갈비뼈 아래</text>
+  <rect x="432" y="1543" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1563" fill="#9cc3ff" font-size="12" class="kr">엉덩아랫배신경 ★</text>
+  <text x="442" y="1578" fill="#7f9cc4" font-size="9">iliohypogastric n.</text>
+  <text x="442" y="1589" fill="#6f8299" font-size="9">L1 · 두덩부위 위 피부</text>
+  <rect x="432" y="1607" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1627" fill="#9cc3ff" font-size="12" class="kr">엉덩고샅신경 ★</text>
+  <text x="442" y="1642" fill="#7f9cc4" font-size="9">ilioinguinal n.</text>
+  <text x="442" y="1653" fill="#6f8299" font-size="9">L1 · <tspan fill="#e6edf3" font-weight="700">고샅관 속을 지나</tspan></text>
+  <text x="442" y="1664" fill="#6f8299" font-size="9">얕은고샅구멍으로 나온다<tspan fill="#e6edf3" font-weight="700"> ·</tspan></text>
+  <text x="442" y="1675" fill="#6f8299" font-size="9">음낭/큰음순 앞쪽</text>
+  <rect x="432" y="1693" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1713" fill="#9cc3ff" font-size="12" class="kr">음부넙다리신경 생식가지 ★</text>
+  <text x="442" y="1728" fill="#7f9cc4" font-size="9">genital br. of genitofemoral n.</text>
+  <text x="442" y="1739" fill="#6f8299" font-size="9">L1–L2 · <tspan fill="#e6edf3" font-weight="700">고환올림근</tspan> ·</text>
+  <text x="442" y="1750" fill="#6f8299" font-size="9">고환올림근반사의 운동다리</text>
+  <rect x="628" y="500" width="160" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="520" fill="#9cc3ff" font-size="12" class="kr">되돌이가지 ★</text>
+  <text x="638" y="535" fill="#7f9cc4" font-size="9">recurrent branch</text>
+  <text x="638" y="546" fill="#6f8299" font-size="9">엄지두덩</text>
+  <text x="638" y="557" fill="#6f8299" font-size="9">3근(짧은엄지벌림·짧은엄지굽힘</text>
+  <text x="638" y="568" fill="#6f8299" font-size="9">얕은갈래·엄지맞섬)</text>
+  <rect x="628" y="586" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="606" fill="#9cc3ff" font-size="12" class="kr">온바닥쪽손가락신경 ★</text>
+  <text x="638" y="621" fill="#7f9cc4" font-size="9">common palmar digital nn.</text>
+  <text x="638" y="632" fill="#6f8299" font-size="9">가쪽 3.5손가락 감각 + <tspan fill="#e6edf3" font-weight="700">벌레근</tspan></text>
+  <text x="638" y="643" fill="#6f8299" font-size="9">1·2</text>
+  <rect x="628" y="886" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="906" fill="#9cc3ff" font-size="12" class="kr">얕은가지 ★</text>
+  <text x="638" y="921" fill="#7f9cc4" font-size="9">superficial br.</text>
+  <text x="638" y="932" fill="#6f8299" font-size="9">짧은손바닥근 + 안쪽 1.5손가락</text>
+  <text x="638" y="943" fill="#6f8299" font-size="9">감각</text>
+  <rect x="628" y="961" width="160" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="981" fill="#9cc3ff" font-size="12" class="kr">깊은가지 ★</text>
+  <text x="638" y="996" fill="#7f9cc4" font-size="9">deep br.</text>
+  <text x="638" y="1007" fill="#6f8299" font-size="9">새끼두덩 3근 · <tspan fill="#e6edf3" font-weight="700">뼈사이근 전부</tspan> ·</text>
+  <text x="638" y="1018" fill="#6f8299" font-size="9">벌레근 3·4 · <tspan fill="#e6edf3" font-weight="700">엄지모음근</tspan> ·</text>
+  <text x="638" y="1029" fill="#6f8299" font-size="9">짧은엄지굽힘근 깊은갈래</text>
+  <rect x="628" y="1351" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="1371" fill="#9cc3ff" font-size="12" class="kr">가쪽배피부가지 ★</text>
+  <text x="638" y="1386" fill="#7f9cc4" font-size="9">lateral cutaneous br.</text>
+  <text x="638" y="1397" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">중간겨드랑선</tspan>에서 뚫고 나온다</text>
+  <rect x="628" y="1415" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="1435" fill="#9cc3ff" font-size="12" class="kr">앞배피부가지 ★</text>
+  <text x="638" y="1450" fill="#7f9cc4" font-size="9">anterior cutaneous br.</text>
+  <text x="638" y="1461" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">배곧은근집</tspan>을 뚫고 나온다</text>
+  <line x1="26" y1="1769" x2="814" y2="1769" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1781" fill="#93a4b7" font-size="10.5">칸이 신경을 정한다 — 앞칸은 <tspan fill="#e6edf3" font-weight="700">정중·자</tspan>, 뒤칸은 <tspan fill="#e6edf3" font-weight="700">노</tspan>(뒤뼈사이)가 맡는다.</text>
+  <text x="26" y="1799" fill="#93a4b7" font-size="10.5">손의 근육은 <tspan fill="#e6edf3" font-weight="700">자신경 깊은가지</tspan>가 거의 다 맡고, 정중신경은 엄지두덩 3근 + 벌레근 1·2뿐이다.</text>
+  <text x="26" y="1817" fill="#93a4b7" font-size="10.5">배벽 신경은 새로 생기지 않는다 — 갈비사이신경(T7–T11)이 그대로 내려와 이름만 바뀐다.</text>
+</svg>

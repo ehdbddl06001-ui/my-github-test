@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 2423" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="2423" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">함께 지나는 것 — 팔오금 · 손목굴 · 고샅관<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> neurovascular bundles: cubital fossa, carpal tunnel, inguinal canal</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">10회차 · 배열 순서와 벽의 구성이 그대로 태깅 문제가 되는 세 자리</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,224 H 615 V 114 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,224 H 615 V 167 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,224 H 615 V 220 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,224 H 615 V 273 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,224 H 615 V 342 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,480 H 615 V 418 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,480 H 615 V 482 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,480 H 615 V 551 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 620 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 690 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,443 H 419 V 224 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,443 H 419 V 480 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,443 H 419 V 651 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,840 H 615 V 754 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,840 H 615 V 807 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,840 H 615 V 868 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,840 H 615 V 936 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1074 H 615 V 996 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1074 H 615 V 1049 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1074 H 615 V 1102 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1074 H 615 V 1160 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1038 H 419 V 840 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1038 H 419 V 1074 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1038 H 419 V 1236 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1408 H 615 V 1310 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1408 H 615 V 1380 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1408 H 615 V 1450 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1408 H 615 V 1514 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1624 H 615 V 1588 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1624 H 615 V 1669 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1766 H 615 V 1738 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1766 H 615 V 1802 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1926 H 615 V 1866 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1926 H 615 V 1930 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,1926 H 615 V 1994 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,2144 H 615 V 2058 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 602,2144 H 615 V 2122 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,2144 H 615 V 2181 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2144 H 615 V 2240 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 1408 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 1624 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 1766 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 1926 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 2144 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1853 H 419 V 2304 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,1103 H 219 V 443 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,1103 H 219 V 1038 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,1103 H 219 V 1853 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="1084" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="1104" fill="#7fd4a8" font-size="12" class="kr">세 개의 자리</text>
+  <rect x="232" y="415" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="435" fill="#7fd4a8" font-size="12" class="kr">팔오금 ★</text>
+  <text x="242" y="450" fill="#5fae87" font-size="9">cubital fossa</text>
+  <text x="242" y="461" fill="#6f8299" font-size="9">아래로 뒤집힌 삼각형</text>
+  <rect x="232" y="1004" width="174" height="66" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1024" fill="#7fd4a8" font-size="12" class="kr">손목굴 ★</text>
+  <text x="242" y="1040" fill="#5fae87" font-size="9">carpal tunnel</text>
+  <text x="242" y="1050" fill="#6f8299" font-size="9">뼈 고랑 + 굽힘근지지띠가 만든</text>
+  <text x="242" y="1062" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">닫힌 굴</tspan></text>
+  <rect x="232" y="1820" width="174" height="66" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1840" fill="#7fd4a8" font-size="12" class="kr">고샅관 ★</text>
+  <text x="242" y="1855" fill="#5fae87" font-size="9">inguinal canal</text>
+  <text x="242" y="1866" fill="#6f8299" font-size="9">고샅인대와 나란한 4cm 통로 ·</text>
+  <text x="242" y="1877" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">깊은고샅구멍 → 얕은고샅구멍</tspan></text>
+  <rect x="432" y="202" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="222" fill="#7fd4a8" font-size="12" class="kr">경계 ★</text>
+  <text x="442" y="237" fill="#5fae87" font-size="9">boundaries</text>
+  <rect x="432" y="458" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="478" fill="#7fd4a8" font-size="12" class="kr">내용물 가쪽→안쪽 (TAN) ★</text>
+  <text x="442" y="493" fill="#5fae87" font-size="9">contents</text>
+  <rect x="432" y="629" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="649" fill="#7fd4a8" font-size="12" class="kr">얕은층 ★</text>
+  <text x="442" y="664" fill="#5fae87" font-size="9">superficial</text>
+  <rect x="432" y="818" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="838" fill="#7fd4a8" font-size="12" class="kr">네 기둥 ★</text>
+  <text x="442" y="853" fill="#5fae87" font-size="9">four pillars</text>
+  <rect x="432" y="1046" width="170" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="1066" fill="#7fd4a8" font-size="12" class="kr">지나는 것 = 10개 ★</text>
+  <text x="442" y="1081" fill="#5fae87" font-size="9">contents</text>
+  <text x="442" y="1092" fill="#6f8299" font-size="9">힘줄 9 + 신경 1</text>
+  <rect x="432" y="1197" width="170" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1217" fill="#7fd4a8" font-size="12" class="kr">지나지 않는 것 ★</text>
+  <text x="442" y="1232" fill="#5fae87" font-size="9">NOT in the tunnel</text>
+  <text x="442" y="1243" fill="#6f8299" font-size="9">자신경·자동맥(<tspan fill="#e6edf3" font-weight="700">자신경굴</tspan>) ·</text>
+  <text x="442" y="1254" fill="#6f8299" font-size="9">노동맥(코담배갑) · 정중신경</text>
+  <text x="442" y="1265" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">손바닥피부가지</tspan> · 긴손바닥근 힘줄</text>
+  <rect x="432" y="1386" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="1406" fill="#7fd4a8" font-size="12" class="kr">네 벽 ★</text>
+  <text x="442" y="1420" fill="#5fae87" font-size="9">walls</text>
+  <rect x="432" y="1602" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="1622" fill="#7fd4a8" font-size="12" class="kr">두 구멍 ★</text>
+  <text x="442" y="1637" fill="#5fae87" font-size="9">two rings</text>
+  <rect x="432" y="1744" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="1764" fill="#7fd4a8" font-size="12" class="kr">탈장 감별 ★</text>
+  <text x="442" y="1779" fill="#5fae87" font-size="9">hernia</text>
+  <rect x="432" y="1904" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="1924" fill="#7fd4a8" font-size="12" class="kr">정삭 — 세 막 세 근육 ★</text>
+  <text x="442" y="1939" fill="#5fae87" font-size="9">spermatic cord coverings</text>
+  <rect x="432" y="2122" width="170" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="2142" fill="#7fd4a8" font-size="12" class="kr">정삭 내용물 ★</text>
+  <text x="442" y="2158" fill="#5fae87" font-size="9">cord contents</text>
+  <rect x="432" y="2276" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="2296" fill="#7fd4a8" font-size="12" class="kr">여성 ★</text>
+  <text x="442" y="2311" fill="#5fae87" font-size="9">in the female</text>
+  <text x="442" y="2322" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">자궁원인대</tspan> + 엉덩고샅신경</text>
+  <rect x="628" y="92" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="112" fill="#7fd4a8" font-size="12" class="kr">위변 ★</text>
+  <text x="638" y="127" fill="#5fae87" font-size="9">sup. — 위관절융기 사이 가상선</text>
+  <rect x="628" y="145" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="165" fill="#7fd4a8" font-size="12" class="kr">가쪽변 ★</text>
+  <text x="638" y="180" fill="#5fae87" font-size="9">lat. — 위팔노근</text>
+  <rect x="628" y="198" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="218" fill="#7fd4a8" font-size="12" class="kr">안쪽변 ★</text>
+  <text x="638" y="233" fill="#5fae87" font-size="9">med. — 원엎침근</text>
+  <rect x="628" y="251" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="271" fill="#7fd4a8" font-size="12" class="kr">바닥</text>
+  <text x="638" y="286" fill="#5fae87" font-size="9">floor — 위팔근 + 손뒤침근</text>
+  <rect x="628" y="304" width="160" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="324" fill="#7fd4a8" font-size="12" class="kr">지붕 ★</text>
+  <text x="638" y="339" fill="#5fae87" font-size="9">roof — 깊은근막 +</text>
+  <text x="638" y="350" fill="#5fae87" font-size="9"><tspan fill="#e6edf3" font-weight="700">위팔두갈래근널힘줄</tspan></text>
+  <text x="638" y="361" fill="#6f8299" font-size="9">널힘줄이 동맥·신경을 <tspan fill="#e6edf3" font-weight="700">덮어</tspan></text>
+  <text x="638" y="372" fill="#6f8299" font-size="9">보호<tspan fill="#e6edf3" font-weight="700">한다</tspan></text>
+  <rect x="628" y="390" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="410" fill="#7fd4a8" font-size="12" class="kr">① 위팔두갈래근 힘줄 ★</text>
+  <text x="638" y="425" fill="#5fae87" font-size="9">biceps tendon</text>
+  <text x="638" y="436" fill="#6f8299" font-size="9">→ 노뼈거친면</text>
+  <rect x="628" y="454" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="474" fill="#e0645f" font-size="12" class="kr">② 위팔동맥 ★</text>
+  <text x="638" y="489" fill="#c98a86" font-size="9">brachial a.</text>
+  <text x="638" y="500" fill="#6f8299" font-size="9">힘줄 <tspan fill="#e6edf3" font-weight="700">안쪽</tspan> · 혈압 측정 자리</text>
+  <rect x="628" y="518" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="538" fill="#9cc3ff" font-size="12" class="kr">③ 정중신경 ★</text>
+  <text x="638" y="553" fill="#7f9cc4" font-size="9">median n.</text>
+  <text x="638" y="564" fill="#6f8299" font-size="9">가장 <tspan fill="#e6edf3" font-weight="700">안쪽</tspan> · 원엎침근 두 갈래</text>
+  <text x="638" y="575" fill="#6f8299" font-size="9">사이로</text>
+  <rect x="628" y="593" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="613" fill="#b49ae0" font-size="12" class="kr">팔오금중간정맥 ★</text>
+  <text x="638" y="628" fill="#8f79b8" font-size="9">median cubital v.</text>
+  <text x="638" y="639" fill="#6f8299" font-size="9">정맥천자 — <tspan fill="#e6edf3" font-weight="700">널힘줄 위</tspan></text>
+  <rect x="628" y="657" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="677" fill="#9cc3ff" font-size="12" class="kr">가쪽아래팔피부신경 ★</text>
+  <text x="638" y="692" fill="#7f9cc4" font-size="9">lat. antebrachial cutaneous</text>
+  <text x="638" y="703" fill="#7f9cc4" font-size="9">n.</text>
+  <text x="638" y="714" fill="#6f8299" font-size="9">천자 시 다칠 수 있다</text>
+  <rect x="628" y="732" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="752" fill="#7fd4a8" font-size="12" class="kr">몸쪽 가쪽 — 손배뼈결절 ★</text>
+  <text x="638" y="767" fill="#5fae87" font-size="9">scaphoid tubercle</text>
+  <rect x="628" y="785" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="805" fill="#7fd4a8" font-size="12" class="kr">몸쪽 안쪽 — 콩알뼈 ★</text>
+  <text x="638" y="820" fill="#5fae87" font-size="9">pisiform</text>
+  <rect x="628" y="838" width="160" height="59" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="858" fill="#7fd4a8" font-size="12" class="kr">먼쪽 가쪽 —</text>
+  <text x="638" y="873" fill="#7fd4a8" font-size="12" class="kr">큰마름뼈결절 ★</text>
+  <text x="638" y="888" fill="#5fae87" font-size="9">tubercle of trapezium</text>
+  <rect x="628" y="906" width="160" height="59" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="926" fill="#7fd4a8" font-size="12" class="kr">먼쪽 안쪽 —</text>
+  <text x="638" y="941" fill="#7fd4a8" font-size="12" class="kr">갈고리뼈갈고리 ★</text>
+  <text x="638" y="956" fill="#5fae87" font-size="9">hook of hamate</text>
+  <rect x="628" y="974" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="994" fill="#7fd4a8" font-size="12" class="kr">얕은손가락굽힘근 힘줄 4 ★</text>
+  <text x="638" y="1009" fill="#5fae87" font-size="9">FDS ×4</text>
+  <rect x="628" y="1027" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1047" fill="#7fd4a8" font-size="12" class="kr">깊은손가락굽힘근 힘줄 4 ★</text>
+  <text x="638" y="1062" fill="#5fae87" font-size="9">FDP ×4</text>
+  <rect x="628" y="1080" width="160" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1100" fill="#7fd4a8" font-size="12" class="kr">긴엄지굽힘근 힘줄 1 ★</text>
+  <text x="638" y="1115" fill="#5fae87" font-size="9">FPL ×1</text>
+  <rect x="628" y="1133" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="1153" fill="#9cc3ff" font-size="12" class="kr">정중신경 ★</text>
+  <text x="638" y="1168" fill="#7f9cc4" font-size="9">median n.</text>
+  <text x="638" y="1179" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가장 얕고 노쪽</tspan> — 그래서 눌린다</text>
+  <rect x="628" y="1283" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1303" fill="#7fd4a8" font-size="12" class="kr">앞벽 ★</text>
+  <text x="638" y="1318" fill="#5fae87" font-size="9">ant. — 배바깥빗근 널힘줄</text>
+  <text x="638" y="1329" fill="#5fae87" font-size="9">(+가쪽 1/3 배속빗근)</text>
+  <rect x="628" y="1347" width="160" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1367" fill="#7fd4a8" font-size="12" class="kr">뒤벽 ★</text>
+  <text x="638" y="1382" fill="#5fae87" font-size="9">post. — <tspan fill="#e6edf3" font-weight="700">배가로근막</tspan> (+안쪽 1/3</text>
+  <text x="638" y="1393" fill="#5fae87" font-size="9">고샅낫힘줄)</text>
+  <text x="638" y="1404" fill="#6f8299" font-size="9">여기가 약하면 <tspan fill="#e6edf3" font-weight="700">직접고샅탈장</tspan></text>
+  <rect x="628" y="1422" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1442" fill="#7fd4a8" font-size="12" class="kr">지붕 ★</text>
+  <text x="638" y="1457" fill="#5fae87" font-size="9">roof — 배속빗근·배가로근의</text>
+  <text x="638" y="1468" fill="#5fae87" font-size="9">활꼴 아래모서리</text>
+  <rect x="628" y="1486" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1506" fill="#7fd4a8" font-size="12" class="kr">바닥 ★</text>
+  <text x="638" y="1521" fill="#5fae87" font-size="9">floor — 고샅인대의 도랑 (+안쪽</text>
+  <text x="638" y="1532" fill="#5fae87" font-size="9">오목인대)</text>
+  <rect x="628" y="1550" width="160" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1570" fill="#7fd4a8" font-size="12" class="kr">깊은고샅구멍 ★</text>
+  <text x="638" y="1585" fill="#5fae87" font-size="9">deep inguinal ring</text>
+  <text x="638" y="1596" fill="#6f8299" font-size="9">배가로근막의 구멍 ·</text>
+  <text x="638" y="1607" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">아래배벽동맥 가쪽</tspan> =</text>
+  <text x="638" y="1618" fill="#6f8299" font-size="9">가쪽고샅오목</text>
+  <rect x="628" y="1636" width="160" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1656" fill="#7fd4a8" font-size="12" class="kr">얕은고샅구멍 ★</text>
+  <text x="638" y="1671" fill="#5fae87" font-size="9">superficial inguinal ring</text>
+  <text x="638" y="1682" fill="#6f8299" font-size="9">배바깥빗근 널힘줄의 틈 ·</text>
+  <text x="638" y="1693" fill="#6f8299" font-size="9">안쪽다리·가쪽다리·다리사이섬유</text>
+  <rect x="628" y="1711" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1731" fill="#7fd4a8" font-size="12" class="kr">속고샅탈장 ★</text>
+  <text x="638" y="1746" fill="#5fae87" font-size="9">indirect — 깊은구멍으로 · <tspan fill="#e6edf3" font-weight="700">동맥</tspan></text>
+  <text x="638" y="1757" fill="#5fae87" font-size="9">가쪽<tspan fill="#e6edf3" font-weight="700"> · 정삭 속</tspan></text>
+  <rect x="628" y="1775" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1795" fill="#7fd4a8" font-size="12" class="kr">직접고샅탈장 ★</text>
+  <text x="638" y="1810" fill="#5fae87" font-size="9">direct — 뒤벽(Hesselbach)으로</text>
+  <text x="638" y="1821" fill="#5fae87" font-size="9">· <tspan fill="#e6edf3" font-weight="700">동맥 안쪽</tspan></text>
+  <rect x="628" y="1839" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1859" fill="#7fd4a8" font-size="12" class="kr">바깥정삭근막 ★</text>
+  <text x="638" y="1874" fill="#5fae87" font-size="9">external spermatic fascia</text>
+  <text x="638" y="1885" fill="#6f8299" font-size="9">← <tspan fill="#e6edf3" font-weight="700">배바깥빗근</tspan> 널힘줄</text>
+  <rect x="628" y="1903" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1923" fill="#7fd4a8" font-size="12" class="kr">고환올림근·근막 ★</text>
+  <text x="638" y="1938" fill="#5fae87" font-size="9">cremaster m. &amp; fascia</text>
+  <text x="638" y="1949" fill="#6f8299" font-size="9">← <tspan fill="#e6edf3" font-weight="700">배속빗근</tspan></text>
+  <rect x="628" y="1967" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="1987" fill="#7fd4a8" font-size="12" class="kr">속정삭근막 ★</text>
+  <text x="638" y="2002" fill="#5fae87" font-size="9">internal spermatic fascia</text>
+  <text x="638" y="2013" fill="#6f8299" font-size="9">← <tspan fill="#e6edf3" font-weight="700">배가로근막</tspan></text>
+  <rect x="628" y="2031" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="2051" fill="#7fd4a8" font-size="12" class="kr">정관 ★</text>
+  <text x="638" y="2066" fill="#5fae87" font-size="9">ductus deferens</text>
+  <text x="638" y="2077" fill="#6f8299" font-size="9">만지면 <tspan fill="#e6edf3" font-weight="700">질긴 실 같은</tspan> 느낌</text>
+  <rect x="628" y="2095" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="2115" fill="#e0645f" font-size="12" class="kr">고환동맥 ★</text>
+  <text x="638" y="2130" fill="#c98a86" font-size="9">testicular a.</text>
+  <text x="638" y="2141" fill="#6f8299" font-size="9">배대동맥에서 직접</text>
+  <rect x="628" y="2159" width="160" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="2179" fill="#b49ae0" font-size="12" class="kr">덩굴정맥얼기 ★</text>
+  <text x="638" y="2194" fill="#8f79b8" font-size="9">pampiniform plexus</text>
+  <rect x="628" y="2212" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="2232" fill="#9cc3ff" font-size="12" class="kr">음부넙다리신경 생식가지 ★</text>
+  <text x="638" y="2247" fill="#7f9cc4" font-size="9">genital br.</text>
+  <text x="638" y="2258" fill="#6f8299" font-size="9">고환올림근</text>
+  <line x1="26" y1="2341" x2="814" y2="2341" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="2353" fill="#93a4b7" font-size="10.5">팔오금은 가쪽→안쪽 <tspan fill="#e6edf3" font-weight="700">힘줄–동맥–신경(TAN)</tspan>, 위를 널힘줄이 덮는다.</text>
+  <text x="26" y="2371" fill="#93a4b7" font-size="10.5">손목굴을 지나는 것은 <tspan fill="#e6edf3" font-weight="700">힘줄 9개 + 정중신경 1개</tspan>뿐 — 동맥도 자신경도 안 지난다.</text>
+  <text x="26" y="2389" fill="#93a4b7" font-size="10.5">고샅관의 세 층은 배벽 세 근육에서 <tspan fill="#e6edf3" font-weight="700">순서대로</tspan> 받아 온다.</text>
+</svg>

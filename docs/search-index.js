@@ -1,32 +1,32 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-13",
+ "generated": "2026-09-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2355,
+  "total": 2391,
   "byType": {
+   "anatomy": 655,
    "kmle": 971,
-   "anatomy": 626,
+   "paper": 592,
    "imaging": 18,
-   "paper": 585,
    "usmle": 138,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 626,
-   "Cardiology": 184,
-   "Nephrology": 154,
-   "Infectious Disease": 131,
+   "Anatomy": 655,
+   "Cardiology": 185,
+   "Nephrology": 155,
+   "Infectious Disease": 132,
    "Pediatrics": 109,
-   "Hematology-Oncology": 87,
-   "Pathology": 83,
+   "Hematology-Oncology": 88,
+   "Pathology": 84,
    "Obstetrics & Gynecology": 74,
    "Neurology": 72,
    "Psychiatry": 72,
-   "Surgery": 66,
+   "Surgery": 67,
    "Endocrinology": 62,
    "Gastroenterology": 61,
    "Pulmonology": 61,
@@ -36,7 +36,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 60,
    "Rheumatology": 60,
    "Hematology": 59,
-   "Laboratory Medicine": 57,
+   "Laboratory Medicine": 58,
    "Physiology": 16,
    "Pharmacology": 11,
    "Microbiology": 10,
@@ -58,13 +58,316 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1538,
-   "medium": 768,
+   "high": 1567,
+   "medium": 775,
    "low": 49
   },
-  "tagCount": 3284
+  "tagCount": 3317
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-15",
+   "type": "anatomy",
+   "unit": "팔·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-15",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/daily/2026-09-15.md",
+   "snippet": "오늘의 학습 (2026 09 15 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 5일 · Tagging 2까지 34일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-15 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 15 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 5일 · Tagging 2까지 34일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0521",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "배벽 얕은층 — 두 근막층과 정맥 우회로",
+   "tags": [
+    "clinical-application",
+    "10회차",
+    "얕은근막",
+    "Scarpa",
+    "caput medusae",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0521.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 배벽 얕은층 — 두 근막층과 정맥 우회로 10회차 · 배 clinical-application 10회차 얕은근막 Scarpa caput medusae 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0520",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "앞배벽 속면 — 다섯 주름과 세 오목",
+   "tags": [
+    "relation",
+    "10회차",
+    "배꼽주름",
+    "고샅오목",
+    "탈장",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0520.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 앞배벽 속면 — 다섯 주름과 세 오목 10회차 · 배 relation 10회차 배꼽주름 고샅오목 탈장 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0519",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "정삭 — 세 막의 유래와 내용물",
+   "tags": [
+    "layer-order",
+    "10회차",
+    "정삭",
+    "고환올림근",
+    "덩굴정맥얼기",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0519.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 정삭 — 세 막의 유래와 내용물 10회차 · 배 layer-order 10회차 정삭 고환올림근 덩굴정맥얼기 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0518",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "고샅관 — 네 벽·두 구멍과 탈장의 감별",
+   "tags": [
+    "relation",
+    "10회차",
+    "고샅관",
+    "고샅탈장",
+    "Hesselbach",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0518.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 고샅관 — 네 벽·두 구멍과 탈장의 감별 10회차 · 배 relation 10회차 고샅관 고샅탈장 Hesselbach 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0517",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "배근육 네 개와 섬유 방향 — 배곧은근집의 구성",
+   "tags": [
+    "layer-order",
+    "10회차",
+    "배벽",
+    "배곧은근집",
+    "활꼴선",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0517.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 배근육 네 개와 섬유 방향 — 배곧은근집의 구성 10회차 · 배 layer-order 10회차 배벽 배곧은근집 활꼴선 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0516",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "위팔동맥 — 주행·가지와 팔꿈치 문합",
+   "tags": [
+    "course-tracing",
+    "10회차",
+    "위팔동맥",
+    "팔꿈치문합",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0516.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위팔동맥 — 주행·가지와 팔꿈치 문합 10회차 · 팔 course-tracing 10회차 위팔동맥 팔꿈치문합 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0515",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "위팔 앞칸 — 세 근육과 근육피부신경",
+   "tags": [
+    "layer-order",
+    "10회차",
+    "위팔앞칸",
+    "근육피부신경",
+    "위팔두갈래근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0515.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위팔 앞칸 — 세 근육과 근육피부신경 10회차 · 팔 layer-order 10회차 위팔앞칸 근육피부신경 위팔두갈래근 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0514",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "아래팔 앞칸 — 정중신경이 맡지 않는 두 예외",
+   "tags": [
+    "distinction",
+    "10회차",
+    "아래팔앞칸",
+    "앞뼈사이신경",
+    "자신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0514.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 아래팔 앞칸 — 정중신경이 맡지 않는 두 예외 10회차 · 팔 distinction 10회차 아래팔앞칸 앞뼈사이신경 자신경 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0513",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "손바닥동맥활 — 두 활의 주인과 Allen 검사",
+   "tags": [
+    "branch-tree",
+    "10회차",
+    "손바닥동맥활",
+    "Allen검사",
+    "노동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0513.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 손바닥동맥활 — 두 활의 주인과 Allen 검사 10회차 · 팔 branch-tree 10회차 손바닥동맥활 Allen검사 노동맥 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0512",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "손의 내재근 — 정중신경과 자신경의 분담",
+   "tags": [
+    "distinction",
+    "10회차",
+    "손내재근",
+    "LOAF",
+    "자신경",
+    "갈퀴손",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0512.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 손의 내재근 — 정중신경과 자신경의 분담 10회차 · 팔 distinction 10회차 손내재근 LOAF 자신경 갈퀴손 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0511",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "손목굴 — 네 기둥과 지나는 것 10개",
+   "tags": [
+    "relation",
+    "10회차",
+    "손목굴",
+    "정중신경",
+    "자신경굴",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0511.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 손목굴 — 네 기둥과 지나는 것 10개 10회차 · 팔 relation 10회차 손목굴 정중신경 자신경굴 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0510",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "팔오금 — 경계와 내용물의 가쪽→안쪽 배열",
+   "tags": [
+    "relation",
+    "10회차",
+    "팔오금",
+    "TAN",
+    "정맥천자",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0510.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 팔오금 — 경계와 내용물의 가쪽→안쪽 배열 10회차 · 팔 relation 10회차 팔오금 TAN 정맥천자 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm/Forearm/Hand · Abdomen — Abdominal wall 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0509",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "10회차 서브노트 — 위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관·정삭·고환",
+   "tags": [
+    "서브노트",
+    "10회차",
+    "팔오금",
+    "손목굴",
+    "고샅관",
+    "정삭",
+    "배곧은근집",
+    "표",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/anatomy/notes/anatomy-2026-0509-s10-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 통로가 내용물을 정한다 — 팔오금·손목굴·고샅관, 세 개의 문을 지나는 것만 외우면 이 회차의 절반이 끝난다. 2. 칸이 신경을 정한다 — 아래팔 앞칸은 정중·자신경, 뒤칸은 노신경(뒤뼈사이). 예외는 딱 둘(자쪽손목굽힘근, 깊은손가락굽힘근 안쪽 절반)이고 그 예외가 문제로 나온다. 3. 배벽은 층이 곧 이야기다 — 세 근육의 널힘줄이 배곧은근집을 만들고, 그 층이 그대로 내려가 정삭의 세",
+   "text": "Anatomy 10회차 서브노트 — 위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관·정삭·고환 10회차 · 팔·배 서브노트 10회차 팔오금 손목굴 고샅관 정삭 배곧은근집 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 통로가 내용물을 정한다 — 팔오금·손목굴·고샅관, 세 개의 문을 지나는 것만 외우면 이 회차의 절반이 끝난다. 2. 칸이 신경을 정한다 — 아래팔 앞칸은 정중·자신경, 뒤칸은 노신경(뒤뼈사이). 예외는 딱 둘(자쪽손목굽힘근, 깊은손가락굽힘근 안쪽 절반)이고 그 예외가 문제로 나온다. 3. 배벽은 층이 곧 이야기다 — 세 근육의 널힘줄이 배곧은근집을 만들고, 그 층이 그대로 내려가 정삭의 세 막이 된다. 1. 위팔 앞칸 Anterior compartment of the arm !fig docs/assets/anatomy/tree s10 nerve labeled.svg 위팔에서 손까지의 신경 — 칸이 신경을 정한다 1) 근육 세 개 — 전부 근육피부신경 근육 이는곳 닿는곳 작용 위팔두갈래근 biceps brachii 긴갈래 ==접시위결절== · 짧은갈래 부리돌기 ==노뼈거친면== (radial tuberosity) + ==위팔두갈래근널힘줄== 팔꿈치 굽힘 + 강력한 뒤침 부리위팔근 coracobrachialis 부리돌기 위팔뼈 몸통 안쪽 어깨 굽힘·모음 위팔근 brachialis 위팔뼈 앞면 아래쪽 자뼈거친면 팔꿈치 굽힘의 주동근 긴갈래 힘줄은 ==결절사이고랑== (intertubercular groove)을 지나 관절주머니 안으로 들어간다 — 관절 안 에 있으면서 윤활막 밖 에 있는 드문 힘줄. ==근육피부신경은 부리위팔근을 뚫고== 지나간다. 이 관통이 신경 확인의 표지다. 위팔근은 근육피부신경 + ==노신경 가지==를 이중으로 받는다(변이가 아니라 정상). 2) 위팔의 신경 — 지나가기만 한다 신경 위팔에서의 경로 이 회차의 포인트 정중신경 median n. 위팔동맥과 나란히, 가쪽→앞→안쪽으로 건너간다 ==위팔에서 가지를 내지 않는다== 자신경 ulnar n. 중간에서 안쪽근육사이막을 뚫고 뒤칸으로 ==안쪽위관절융기 뒤==에서 피부 바로 밑 노신경 radial n. 노신경고랑을 돌아 가쪽근육사이막을 뚫는다 팔오금 가쪽 에서 다시 만난다 [!주의] 위팔에서는 가지를 안 낸다 :: 정중신경과 자신경은 위팔에서 근육가지를 내지 않는다. \"위팔 앞칸 3근은 전부 근육피부신경\"이 성립하는 이유다. 3) 위팔동맥 Brachial artery 큰원근 아래모서리에서 겨드랑동맥이 이름을 바꾼다. ==안쪽두갈래근고랑== (medial bicipital groove)에서 만져진다. 가지: ==깊은위팔동맥== (노신경과 함께 노신경고랑으로) · ==위·아래자쪽곁동맥== · 영양동맥. ==동반정맥== (venae comitantes)이 동맥을 좌우로 끼고 달린다. [!임상] 혈압 측정의 자리 :: 혈압 측정의 청진 자리가 바로 팔오금의 위팔동맥이다. 커프가 동맥을 누르고, 청진기는 ==위팔두갈래근널힘줄 안쪽==에 댄다. 2. 팔오금 Cubital fossa !fig docs/assets/anatomy/tree s10 bundle labeled.svg 팔오금 · 손목굴 · 고샅관 — 배열 순서가 그대로 태깅 문제다 1) 경계 부분 이루는 것 위변 두 위관절융기를 잇는 가상선 가쪽변 ==위팔노근== brachioradialis 안쪽변 ==원엎침근== pronator teres 바닥 위팔근 + 손뒤침근 지붕 깊은근막 + ==위팔두갈래근널힘줄== (bicipital aponeurosis) 2) 내용물 — 가쪽에서 안쪽으로 순서 구조 메모 ① ==위팔두갈래근 힘줄== biceps tendon 가장 가쪽 · 노뼈거친면으로 ② ==위팔동맥== brachial a. 힘줄 안쪽 · 여기서 노동맥·자동맥으로 갈린다 ③ ==정중신경== median n. 가장 안쪽 · 원엎침근 두 갈래 사이로 빠진다 얕은층(널힘줄 위 )에는 ==팔오금중간정맥== 과 가쪽아래팔피부신경이 있다. ==널힘줄이 동맥·신경을 덮어 보호==하기 때문에 정맥천자가 비교적 안전하다. 널힘줄을 \"구원자 널힘줄(grace à Dieu fascia)\"이라 부르는 이유. [!TIP] 노신경은 내용물이 아니다 :: 노신경은 팔오금 삼각 밖 가쪽 (위팔노근과 위팔근 사이)에 있다. 내용물 셋에 끼워 넣지 말 것. 3. 아래팔 앞칸 Anterior compartment of the forearm 1) 얕은층 — 공통굽힘근힘줄(안쪽위관절융기)에서 근육 신경 메모 원엎침근 pronator teres 정중신경 위팔자갈래 + 노갈래, 그 사이로 ==정중신경 통과== 노쪽손목굽힘근 flexor carpi radialis 정중신경 손목에서 ==노동맥의 안쪽 표지== 긴손바닥근 palmaris longus 정중신경 ==약 15%에서 없다== · 힘줄이식의 공여 자쪽손목굽힘근 flexor carpi ulnaris ==자신경== 앞칸의 예외 1 · ==콩알뼈==에 닿는다 얕은손가락굽힘근 flexor digitorum superficialis 정중신경 중간층 · 2~5지 중간마디뼈 2) 깊은층 — 전부 앞뼈사이신경(예외 하나) 근육 신경 메모 깊은손가락굽힘근 flexor digitorum profundus ==가쪽 절반 앞뼈사이신경 / 안쪽 절반 자신경== 앞칸의 예외 2 · 2~5지 끝마디뼈 긴엄지굽힘근 flexor pollicis longus 앞뼈사이신경 엄지 끝마디뼈 네모엎침근 pronator quadratus 앞뼈사이신경 엎침의 주동근 · 가장 깊다 [!암기] 중간마디와 끝마디 :: 얕은손가락굽힘근은 중간마디 , 깊은손가락굽힘근은 끝마디 . 얕은 것이 갈라져 깊은 것을 통과시킨다(perforated/perforating tendon). 3) 노동맥과 자동맥 노동맥 radial a. 자동맥 ulnar a. 위치 얕고 가쪽 깊고 안쪽 표지 ==위팔노근 힘줄 안쪽== 먼쪽 절반에서 자쪽손목굽힘근 가쪽 동반신경 노신경 얕은가지(가쪽) ==자신경(안쪽)== 되돌이가지 노쪽되돌이동맥 자쪽되돌이동맥 큰 가지 — ==온뼈사이동맥== → 앞·뒤뼈사이동맥 손에서 ==깊은손바닥동맥활== ==얕은손바닥동맥활== [!임상] 응용과제 — 왜 노동맥에서 채혈·맥박을 보는가 :: ① 손목 먼쪽에서 ==깊은근막 바로 아래, 노뼈 위==에 놓여 눌러 지혈하기 좋다. ② 위팔노근 힘줄이라는 확실한 표지가 있다. ③ ==두 개의 손바닥동맥활이 문합==하므로 노동맥이 막혀도 자동맥이 손을 먹인다. 그래서 동맥관 삽입 전에 ==Allen 검사==로 자동맥 쪽 활의 개통을 확인한다. 4. 손목굴 Carpal tunnel 내용 바닥 손목뼈가 만든 고랑(오목) 지붕 ==굽힘근지지띠== (flexor retinaculum) 네 기둥 몸쪽 ==손배뼈결절·콩알뼈== / 먼쪽 ==큰마름뼈결절·갈고리뼈갈고리== 지나는 것 얕은손가락굽힘근 힘줄 4 + 깊은손가락굽힘근 힘줄 4 + 긴엄지굽힘근 힘줄 1 + ==정중신경== = 10 안 지나는 것 자신경·자동맥(==자신경굴==) · 노동맥(코담배갑) · 정중신경 ==손바닥피부가지== · 긴손바닥근 힘줄 힘줄들은 ==손가락굽힘근온힘줄집== (common flexor sheath, 척주윤활집)에 싸여 있고, 긴엄지굽힘근은 따로 싼다. ==자신경굴(Guyon canal)== 은 콩알뼈와 갈고리뼈갈고리 사이, 굽힘근지지띠 위 (바닥쪽손목인대 아래)를 지난다 — 손목굴과 다른 방 이다. [!임상] 손바닥 감각이 남는 이유 :: 손목굴증후군에서 엄지두덩 위축 + 가쪽 3.5손가락 감각저하 가 오지만 ==손바닥 중앙 감각은 남는다==. 손바닥피부가지가 지지띠 위로 지나기 때문이다. 이 한 가지가 손목굴증후군과 더 몸쪽 정중신경병증을 가른다. 5. 손바닥 Palm !fig docs/assets/anatomy/tree s10 vessel labeled.svg 위팔에서 손까지의 혈관 — 갈라졌다가 두 개의 활로 다시 만난다 1) 층 1. 피부 → ==손바닥널힘줄== (palmar aponeurosis, 긴손바닥근 힘줄의 연속) → ==짧은손바닥근== (자신경 얕은가지). 2. 널힘줄 밑에 ==얕은손바닥동맥활== 과 온바닥쪽손가락신경·동맥. 3. 더 깊이 굽힘근힘줄 + ==벌레근==, 가장 깊이 ==깊은손바닥동맥활== 과 뼈사이근·엄지모음근. 2) 두 개의 동맥활 얕은활 깊은활 주인 ==자동맥== ==노동맥== 닫는 가지 노동맥 얕은손바닥가지 자동맥 깊은가지 위치 더 ==먼쪽== (엄지 편 손의 자쪽 선) 더 ==몸쪽== 가지 온바닥쪽손가락동맥 → 고유바닥쪽손가락동맥 손바닥쪽허리뼈사이동맥 3) 손의 근육 — 자신경이 거의 다 맡는다 무리 근육 신경 엄지두덩 짧은엄지벌림근 · 짧은엄지굽힘근(얕은갈래) · 엄지맞섬근 ==정중신경 되돌이가지== 엄지모음근 · 짧은엄지굽힘근 깊은갈래 ==자신경 깊은가지== 새끼두덩 새끼벌림근 · 짧은새끼굽힘근 · 새끼맞섬근 자신경 깊은가지 벌레근 1·2 (노쪽) ==정중신경== 3·4 (자쪽) ==자신경 깊은가지== 뼈사이근 등쪽 4(벌림 DAB) · 바닥쪽 3(모음 PAD) 자신경 깊은가지 벌레근은 ==깊은손가락굽힘근 힘줄에서 일어나 폄근널힘줄에 닿는다== — 뼈에서 일어나지 않는 드문 근육. 그래서 MP 굽힘 + IP 폄 을 만든다. 힘줄은 ==손가락섬유집== (고리부분·십자부분) 안에서 달리고, ==힘줄끈== (vincula tendinum)이 혈액을 공급한다. [!주의] 자신경은 손 전체의 신경이다 :: \"자신경 손상 = 새끼만 저리다\"가 아니다. ==손의 내재근 대부분이 자신경==이라 갈퀴손(claw hand)·엄지모음 약화(Froment 징후)가 본체다. 6. 배벽 — 구획과 얕은층 Abdominal wall 1) 사분역과 아홉 부위 기준선 정의 ==갈비밑면== subcostal plane 양쪽 열째갈비연골 아랫면 ==결절사이면== intertubercular plane 양쪽 엉덩뼈결절 ==빗장중간선== midclavicular line 빗장뼈 중간 아홉 부위: 오른갈비밑 · ==명치부위== · 왼갈비밑 / 오른옆구리 · ==배꼽부위== · 왼옆구리 / 오른고샅 · ==두덩부위== · 왼고샅. 2) 얕은근막 — 두 층(배꼽 아래) 층 성질 이어지는 곳 ==Camper 근막== 지방층 넓적다리·음낭의 ==음낭근육층== (dartos) ==Scarpa 근막== 막층 고샅인대 아래에서 ==넙다리근막에 붙는다== · 음경에서 얕은음경근막 [!임상] 소변이 퍼지는 범위 :: Scarpa 근막이 넙다리근막에 붙기 때문에 요도 파열의 소변이 ==넓적다리로는 안 내려가고 배벽·음낭·회음으로 퍼진다==. 3) 얕은 정맥과 피부신경 ==가슴배벽정맥== (thoracoepigastric v.)이 위·아래대정맥을 잇는다 — 아래대정맥 폐쇄에서 굵어진다. ==배꼽옆정맥== 은 간문맥과 연결 → 문맥고혈압에서 ==caput medusae==. ==가슴배신경== (T7–T11) + 갈비밑신경(T12): 가쪽배피부가지는 ==중간겨드랑선==에서, 앞배피부가지는 ==배곧은근집==을 뚫고 나온다. 피부분절 표지: ==T10 = 배꼽==, T7 = 칼돌기, L1 = 고샅부위. 7. 배근육과 배곧은근집 Abdominal muscles & rectus sheath 근육 섬유 방향 신경 메모 배바깥빗근 external oblique 아래·안쪽(주머니에 손 넣는 방향) T7–T11, 갈비밑 아래모서리가 ==고샅인대== · 널힘줄에 ==얕은고샅구멍== 배속빗근 internal oblique 위·안쪽(직각) T7–T12, L1 아래섬유가 ==고환올림근== 배가로근 transversus abdominis 수평 T7–T12, L1 배속빗근과 합쳐 ==고샅낫힘줄(결합힘줄)== 배곧은근 rectus abdominis 세로 T7–T12 ==나눔힘줄== 3~4개 · ==반달선==이 가쪽 경계 배세모근 pyramidalis 세로(작다) T12 ==백색선을 당긴다== · 없는 사람도 있다 배곧은근집 — 활꼴선이 가른다 활꼴선 위 활꼴선 아래 ────────────────────── ────────────────────── 앞엽 = 바깥빗근 널힘줄 앞엽 = 세 널힘줄 전부 + 속빗근 앞판 배곧은근 배곧은근 뒤엽 = 속빗근 뒤판 뒤엽 = 없음 + 가로근 널힘줄 → 배가로근막이 직접 닿는다 ==활꼴선== (arcuate line)은 배꼽과 두덩결합의 중간쯤. 그 아래로 ==아래배벽동맥==이 배곧은근집에 들어온다. 집 안에서 ==위배벽동맥(속가슴동맥)==과 ==아래배벽동맥(바깥엉덩동맥)==이 ==배꼽 부근에서 문합==한다 — 대동맥↔엉덩동맥 샛길. 세 널힘줄이 정중선에서 만나 ==백색선== (linea alba). 8. 고샅관 Inguinal canal 1) 네 벽 — \"앞·뒤·위·아래\" 벽 이루는 것 앞벽 ==배바깥빗근 널힘줄== (가쪽 1/3은 배속빗근 추가) 뒤벽 ==배가로근막== (안쪽 1/3은 고샅낫힘줄 추가) 지붕 배속빗근·배가로근의 활꼴 아래모서리 바닥 ==고샅인대==의 도랑 (안쪽 끝은 오목인대) 2) 두 구멍 ==깊은고샅구멍== — 배가로근막의 구멍, ==아래배벽동맥 가쪽==(= 가쪽고샅오목). ==얕은고샅구멍== — 배바깥빗근 널힘줄의 삼각 틈. 안쪽다리·가쪽다리 + ==다리사이섬유==. 3) 앞배벽 속면의 다섯 주름·세 오목 주름 속에 있는 것 가쪽의 오목 ==정중배꼽주름== (1개) 요막관 흔적 — ==안쪽배꼽주름== (2개) 닫힌 배꼽동맥 방광위오목 ==가쪽배꼽주름== (2개) ==아래배벽동맥== 안쪽고샅오목 / 가쪽고샅오목 [!임상] 응용과제 — 고샅탈장이 생기는 구조적 이유 :: ① 고환이 배안에서 음낭으로 내려가며 ==배벽을 뚫고 지나간 길==이 그대로 남는다. ② 그 자리는 근육이 아니라 ==널힘줄과 근막==뿐이라 약하다. ③ 두 발생 경로가 두 탈장을 만든다 — ==속(간접)고샅탈장==은 깊은고샅구멍으로 들어가 ==아래배벽동맥 가쪽==, 정삭 속 을 따라 음낭까지; ==직접고샅탈장==은 뒤벽(Hesselbach 삼각)을 밀고 나와 ==동맥 안쪽==, 정삭 밖 . 배속빗근·배가로근이 기침·복압에 고샅관을 조이는 ==셔터 작용==이 정상 방어인데, 이것이 약해지면 탈장이 생긴다. Hesselbach 삼각 = 가쪽 ==아래배벽동맥== · 안쪽 ==배곧은근 가쪽모서리== · 아래 ==고샅인대==. 9. 정삭·음낭·고환 Spermatic cord, scrotum, testis 1) 세 막 — 배벽 세 층에서 그대로 막 유래 ==바깥정삭근막== 배바깥빗근 널힘줄 ==고환올림근 + 고환올림근막== 배속빗근 ==속정삭근막== 배가로근막 2) 내용물 — \"3동 3신 3기타\" 구분 구조 동맥 3 ==고환동맥==(배대동맥) · 정관동맥 · 고환올림근동맥 신경 3 ==음부넙다리신경 생식가지==(고환올림근) · 교감신경섬유 · (관 속을 함께 지나는 ==엉덩고샅신경==은 정삭 밖 ) 기타 3 ==정관== · ==덩굴정맥얼기== · 림프관 + 초상돌기 흔적 3) 고환 ==고환집막== (tunica vaginalis) — 초상돌기의 남은 것, 벽쪽·내장쪽 두 층 + ==고환집막공간==. 그 속에 ==백색막== (tunica albuginea) → 사이막 → ==정세관== → 곧은세관 → 고환그물 → ==고환날세관== → 부고환. 음낭은 ==음낭사이막==으로 좌우가 나뉘고, 피부 밑은 ==음낭근육층== (dartos, 민무늬근). [!주의] 고환과 음낭의 림프가 다르다 :: ==림프는 고환과 음낭이 다르다.== 고환은 발생 위치를 따라 ==허리(대동맥옆) 림프절==로, 음낭 피부는 ==얕은샅고랑 림프절==로 간다. 고환암과 음낭 피부병변의 전이 경로가 갈리는 지점이다. [!임상] 고환올림근반사 :: ==고환올림근반사== — 넓적다리 안쪽 피부(감각: 엉덩고샅신경, L1) → 고환올림근 수축(운동: 음부넙다리신경 생식가지, L1–L2). 고환꼬임에서 소실된다. 10. 예습시험 체크리스트 10 1. 팔오금의 경계 다섯과 내용물 셋을 가쪽에서 안쪽 순으로 말할 수 있는가? 2. 위팔에서 정중신경·자신경이 가지를 내지 않는다는 점과 그 결과를 설명할 수 있는가? 3. 아래팔 앞칸에서 정중신경이 맡지 않는 두 예외를 댈 수 있는가? 4. 손목굴을 지나는 10개와 지나지 않는 다섯을 구분할 수 있는가? 5. 손목굴증후군에서 손바닥 중앙 감각이 남는 이유를 말할 수 있는가? 6. 얕은·깊은 손바닥동맥활의 주인과 몸쪽/먼쪽 관계를 그릴 수 있는가? 7. LOAF를 대고 나머지 손 내재근의 신경을 말할 수 있는가? 8. 배곧은근집의 구성이 활꼴선 위아래에서 어떻게 달라지는가? 9. 고샅관 네 벽과 두 구멍, 속/직접 탈장의 감별 기준을 말할 수 있는가? 10. 정삭 세 막이 배벽의 어느 층에서 왔는지 순서대로 말할 수 있는가?"
+  },
   {
    "id": "kmle-2026-1001",
    "type": "kmle",
@@ -718,6 +1021,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-14.md",
    "snippet": "오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-14 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0592",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0592_tympanic_membrane_adhesion_model_by_transcanal_endoscopic_ea.md",
+   "snippet": "Title Tympanic Membrane Adhesion Model by Transcanal Endoscopic Ear Surgery in Rat Authors Yamamoto Kazuhisa, Morino Tsunetaro, Takizawa Yuki, Kikuchi Shun, Yamato Masayuki, Kojima Hiromi Journal / DOI The journal of international advanced ",
+   "text": "Surgery scraped pubmed PubMed / The journal of international advanced otology Title Tympanic Membrane Adhesion Model by Transcanal Endoscopic Ear Surgery in Rat Authors Yamamoto Kazuhisa, Morino Tsunetaro, Takizawa Yuki, Kikuchi Shun, Yamato Masayuki, Kojima Hiromi Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.252317 · PMID: 42732645 https://pubmed.ncbi.nlm.nih.gov/42732645/ Abstract BACKGROUND: Tympanic membrane adhesion is a clinically significant and challenging complication of otologic surgery. However, a simple and reproducible animal model suitable for studying the pathogenesis of this disease and evaluating treatment strategies has not yet been established. This study aimed to develop a reproducible rat model of tympanic membrane adhesion using transcanal endoscopic ear surgery (TEES). METHODS: Twenty eight Sprague Dawley rats underwent TEES. In each rat, 1 ear underwent a complete adhesion inducing procedure involving tympanic membrane perforation and removal of the middle ear mucosa (model group), whereas the contralateral ear underwent tympanic membrane perforation only (sham group). Adhesion formation and bone hyperplasia were evaluated using micro computed tomography, macroscopic observation, and histological analysis up to 56 days postoperatively. RESULTS: Tympanic membrane adhesion occurred in 81.8% of ears 14 days after the procedure. No adhesions were observed in the sham group. All adhesion positive ears showed middle ear bone hyperplasia at the mucosa ablated sites, and histological analysis confirmed fusion between the tympanic membrane epithelium and the newly formed bone. In cases where adhesion was not achieved after the initial procedure, reoperation led to successful adhesion in all ears. No tympanic membrane retraction or middle ear effusion was observed during the postoperative period. CONCLUSION: A simple and highly reproducible rat tympanic membrane adhesion model was established using TEES. This model consistently reproduces postoperative tympanic membrane adhesion accompanied by middle ear bone hyperplasia and provides a useful platform for elucidating the mechanisms of adhesion and evaluating regenerative or antiadhesion therapies in the middle ear. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0591",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0591_carotid_endarterectomy_under_regional_anesthesia_intraoperat.md",
+   "snippet": "Title [Carotid endarterectomy under regional anesthesia: intraoperative criteria for placing a temporary intraluminal shunt (meta analysis)] Authors Gavrilenko A V, Zaitsev A Yu, Al Yousef N N, Korshunov A V, Dubrovin K V, Popov S O Journal",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery Title [Carotid endarterectomy under regional anesthesia: intraoperative criteria for placing a temporary intraluminal shunt (meta analysis)] Authors Gavrilenko A V, Zaitsev A Yu, Al Yousef N N, Korshunov A V, Dubrovin K V, Popov S O Journal / DOI Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery · DOI: 10.33029/1027 6661 2026 32 2 136 145 · PMID: 42732612 https://pubmed.ncbi.nlm.nih.gov/42732612/ Abstract OBJECTIVE: Conducting a meta analysis to assess consistency between the indices of cerebral oxygenation (near infrared spectrometry, NIRS), clinical data, pressure in the stump, findings of transcranial Doppler ultrasonography, and neurosensory status of patients, as well as to determine optimal comprehensive criteria for making a decision on a temporary intravascular shunt during carotid endarterectomy under regional anesthesia. MATERIAL AND METHODS: A systematic search was carried out in databases PubMed, Medline and Cochrane Library over the period from January 2015 to October 2025. INCLUSION CRITERIA: prospective observational studies or randomized controlled studies with participation of patients subjected to carotid endarterectomy under regional anesthesia, assessing consistency of instrumental methods of monitoring and clinical picture. The statistical analysis was performed in the R program (version 4.2.1). RESULTS: The final analysis included 13 studies (1894 patients). The overall frequency of selective shunting amounted to 11.51% (95% confidence interval 10.11 13.03%). An optimal criterion for placement of a temporary shunt was a decrease of δrSO2 ≥9 10% in combination with the appearance of neurological deficit (sensitivity 90 100% and specificity 70 83%). Multimodal methods of monitoring demonstrated the average AUC 0.90 vs 0.87 for double combinations. The perioperative stroke rate amounted to 1.48% (95% confidence interval 1.11 2.25%), thus corresponding to the modern international quality standards. CONCLUSION: A combined approach with the use of NIRS monitoring (threshold of δrSO2 ≥9 10%) jointly with clinical assessment of the neurological status is an optimal criterion for selective shunting in carotid endarterectomy under regional anesthesia. Multimodality monitoring increases the diagnostic accuracy, making it possible to minimize the risk of ischemic complications. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0590",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0590_synchronous_low_grade_appendiceal_mucinous_neoplasm_and_neur.md",
+   "snippet": "Title Synchronous Low Grade Appendiceal Mucinous Neoplasm and Neuroendocrine Tumor Presenting as Pseudomyxoma Peritonei: A Case Report Authors Stevens Tyler, Fleury Luther, Collera Jessica, Jagodzinski Kelcie, Fan Ji Journal / DOI Cureus · ",
+   "text": "Pathology scraped pubmed PubMed / Cureus Title Synchronous Low Grade Appendiceal Mucinous Neoplasm and Neuroendocrine Tumor Presenting as Pseudomyxoma Peritonei: A Case Report Authors Stevens Tyler, Fleury Luther, Collera Jessica, Jagodzinski Kelcie, Fan Ji Journal / DOI Cureus · DOI: 10.7759/cureus.114456 · PMID: 42732355 https://pubmed.ncbi.nlm.nih.gov/42732355/ Abstract Synchronous primary neoplasms of the appendix are exceptionally rare. We report a low grade appendiceal mucinous neoplasm (LAMN) and a well differentiated neuroendocrine tumor (NET) arising within the same appendix and presenting as pseudomyxoma peritonei (PMP). A 44 year old man undergoing staging for a solitary plasmacytoma of the left acetabulum was incidentally found on computed tomography (CT) to have extensive peritoneal mucinosis. Diagnostic laparoscopy confirmed diffuse PMP, and appendectomy revealed two synchronous appendiceal primaries: a perforated LAMN (pT4a pNX) and a 6 mm, grade 1 NET with lymphovascular invasion (pT3 pNX). After multidisciplinary review, the patient completed radiation therapy for the plasmacytoma and subsequently underwent cytoreductive surgery with hyperthermic intraperitoneal chemotherapy (CRS/HIPEC), achieving complete cytoreduction with 33 lymph nodes negative for malignancy. This case highlights the importance of intraoperative suspicion for an appendiceal origin of PMP, the definitive role of histopathology in identifying synchronous pathologies, and the value of coordinated multidisciplinary care when multiple malignancies coexist. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0589",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0589_longitudinal_plasma_neurofilament_light_chain_and_patient_re.md",
+   "snippet": "Title Longitudinal plasma neurofilament light chain and patient reported outcomes as complementary markers of vincristine associated peripheral neuropathy in adults with lymphoma: a cohort study Authors McNally Gretchen A, Shin Grace Ji Eun",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of neurology Title Longitudinal plasma neurofilament light chain and patient reported outcomes as complementary markers of vincristine associated peripheral neuropathy in adults with lymphoma: a cohort study Authors McNally Gretchen A, Shin Grace Ji Eun, Worthen Chaudhari Lise, Schnell Patrick M, Flora Laura, Krishna Surith Sanjay, Voorhees Tim, Baiocchi Robert, et al. Journal / DOI Journal of neurology · DOI: 10.1007/s00415 026 14096 2 · PMID: 42732528 https://pubmed.ncbi.nlm.nih.gov/42732528/ Abstract Chemotherapy induced peripheral neuropathy (CIPN) is a common neurotoxicity of cancer treatment with limited diagnostic, monitoring, and treatment options. Neurofilament light chain (NfL) is an axonal cytoskeletal protein released during neuroaxonal injury and a promising biomarker of CIPN, but prospective evidence for NfL as a marker of CIPN from vincristine containing lymphoma chemotherapy treatment remains limited. To fill this gap, we conducted a pragmatic single center prospective observational cohort study of adults with non Hodgkin lymphoma (NHL) receiving first line vincristine containing chemotherapy to evaluate NfL dynamics across multiple pre cycle visits and assess relationships with patient reported and clinician graded neuropathy measures. We followed 25 participants during 4 6 months of chemotherapy, and a small subset of those participants (n=6) for 24 42 months post chemotherapy. Serial plasma NfL was measured and CIPN symptoms were assessed using patient and clinician reported measures. Longitudinal changes were analyzed using mixed effects models. Plasma NfL increased relative to pre cycle1 at all timepoints (all p<0.001), increasing approximately fourfold by pre cycle4. Patient reported CIPN scores and clinician graded neuropathy also increased during treatment. Exploratory pooled visit level analyses showed a modest NfL CIPN association (repeated measures correlation=0.439, p=0.020), while timepoint specific, lagged, and post hoc sensitivity analyses suggested potential to predict persistent CIPN symptoms from early NfL concentrations. To our knowledge, these findings extend prospective evidence supporting NfL as a biomarker of vincristine exposure in adults with NHL receiving vincristine containing therapy and may complement patient reported symptom assessment, clinician grading, and dose modification context in future CIPN monitoring studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0588",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0588_audiological_profile_of_adult_patients_awaiting_kidney_and_l.md",
+   "snippet": "Title Audiological Profile of Adult Patients Awaiting Kidney and Liver Transplantation Authors Iribarren Javier, Heider Claudia, Oyarzún Javier, Calderara Gabriela, Leung Jai Sen, Novoa Ivan, Waissbluth Sofia Journal / DOI The journal of in",
+   "text": "Nephrology scraped pubmed PubMed / The journal of international advanced otology Title Audiological Profile of Adult Patients Awaiting Kidney and Liver Transplantation Authors Iribarren Javier, Heider Claudia, Oyarzún Javier, Calderara Gabriela, Leung Jai Sen, Novoa Ivan, Waissbluth Sofia Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262414 · PMID: 42732618 https://pubmed.ncbi.nlm.nih.gov/42732618/ Abstract OBJECTIVE: Hearing loss is an underrecognized comorbidity in patients with chronic kidney disease (CKD) and chronic liver disease (CLD), particularly among those awaiting solid organ transplantation. Early identification of auditory dysfunction is essential to optimize communication, treatment adherence, and post transplant care. To describe the prevalence, severity, and audiometric patterns of hearing loss in adult candidates for kidney or liver transplantation. METHODS: A cross sectional study was conducted in 36 adult patients with advanced CKD or CLD evaluated for kidney or liver transplantation at a tertiary academic center. All participants underwent otomicroscopy, tympanometry, pure tone audiometry, distortion product otoacoustic emissions (DPOAEs), and tinnitus assessment using the Tinnitus Handicap Inventory. Hearing loss was defined as a pure tone average 20 dB HL across 0.5 4 kHz in either ear. RESULTS: Hearing loss was identified in 30.6% of patients (CLD: 31.6%; CKD: 29.4%), predominantly mild to moderate, with symmetrical high frequency sensorineural patterns. Distortion product otoacoustic emissions abnormalities were observed in 56.9% of ears, suggesting subclinical cochlear dysfunction. Tinnitus was reported in 38.2% of participants, with no significant differences between groups. All cases of tinnitus were classified as slight or mild handicap. Use of acetylsalicylic acid was significantly associated with hearing loss among CKD patients (P=.003). CONCLUSIONS: Hearing loss and tinnitus are common in patients with advanced CKD or CLD awaiting transplantation. Comprehensive audiological assessment, including DPOAEs, may improve pre transplant evaluation by identifying patients at risk for auditory impairment and informing ototoxic medication decisions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0587",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0587_repeated_reconstructive_surgery_in_a_patient_with_an_infecti.md",
+   "snippet": "Title [Repeated reconstructive surgery in a patient with an infection of the abdominal aortic endograft and a synthetic cross graft in conditions of sepsis (clinical case)] Authors Khamitov F F, Parfenov I P, Matochkin E A, Gadzhimuradov R ",
+   "text": "Infectious Disease scraped pubmed PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery Title [Repeated reconstructive surgery in a patient with an infection of the abdominal aortic endograft and a synthetic cross graft in conditions of sepsis (clinical case)] Authors Khamitov F F, Parfenov I P, Matochkin E A, Gadzhimuradov R U, Brovko S V, Pavlova I A Journal / DOI Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery · DOI: 10.33029/1027 6661 2026 32 2 130 135 · PMID: 42732611 https://pubmed.ncbi.nlm.nih.gov/42732611/ Abstract Infection of the abdominal aortic endograft and synthetic shunt are life threatening complications. Despite the development of modern methods of surgical treatment and antimicrobial therapy, the problem of infectious complications after aortic reconstructions using synthetic prostheses remains relevant. The search for optimal surgical approaches continues, including the use of biological materials such as homographs to replace infected structures. The article presents a clinical case of successful surgical treatment of a patient with infected abdominal aortic endograft and a femoral femoral synthetic bypass graft in a patient with advanced sepsis. The patient, who was admitted in a state of sepsis with an infected abdominal aortic endograft and a synthetic femoral femoral bypass graft, underwent abdominal aortic reprosthetics using a homograph. It has been shown that a biological prosthesis can be implanted in the area of an infected synthetic prosthesis with a good postoperative result, even in conditions of sepsis. However, this approach requires highly qualified surgeons and careful planning. Additional research is needed to assess the long term safety and effectiveness of using homographs. If it is impossible to use autovens to replace an infected synthetic abdominal aortic prosthesis, it is possible to successfully use a homograph with mandatory dynamic monitoring in the near and long term postoperative periods for early diagnosis of reinfection and aneurysmal transformation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0586",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0586_association_between_atrial_fibrillation_and_hearing_loss_a_c.md",
+   "snippet": "Title Association Between Atrial Fibrillation and Hearing Loss: A Cross Sectional Study Authors Shim Ye Ji Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262430 · PMID: 42732625 https://pubmed.ncbi.nlm.",
+   "text": "Cardiology scraped pubmed PubMed / The journal of international advanced otology Title Association Between Atrial Fibrillation and Hearing Loss: A Cross Sectional Study Authors Shim Ye Ji Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262430 · PMID: 42732625 https://pubmed.ncbi.nlm.nih.gov/42732625/ Abstract BACKGROUND: Atrial fibrillation (AF) is associated with various end organ complications through mechanisms including thromboembolism and microvascular dysfunction. The cochlea, with its high metabolic demands and limited collateral circulation, is particularly vulnerable to circulatory disturbances. However, the association between AF and hearing loss remains poorly understood, with limited and conflicting evidence from prior studies. Therefore, this study aimed to investigate the association between AF and hearing thresholds. METHODS: A single center, cross sectional study was conducted on 129 adults who underwent pure tone audiometry, 12 lead electrocardiography, and 24 hour Holter monitoring. Subjects were categorized into an AF group (n=42) and a control group (n=87). The primary outcome was the better ear average hearing threshold across 0.5, 1, 2, and 4 kHz. Generalized additive models were used to assess the association between AF and hearing thresholds, adjusting for age, sex, body mass index, and other cardiometabolic risk factors. Frequency specific analyses were also conducted. RESULTS: After adjusting for covariates, AF was independently associated with a 4.28 dB HL elevation in hearing thresholds (95% CI: 3.47 5.10, P=.017). Frequency specific analyses revealed that the association was most pronounced at 4 kHz, with a 7.40 dB HL elevation at this frequency (95% CI: 2.27 10.05, P=.004). CONCLUSION: This study provides preliminary evidence of an association between AF and hearing loss, suggesting that AF could be considered in investigations aimed at identifying modifiable risk factors for hearing loss. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0018",
@@ -20271,6 +20693,321 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0551",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 덩굴정맥얼기)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0551.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 덩굴정맥얼기) 10회차 · 팔·배 계보 도해 10회차 혈관 계보(동맥+정맥) 예습시험 태깅 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0550",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 배벽의 얕은정맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0550.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 배벽의 얕은정맥) 10회차 · 팔·배 계보 도해 10회차 혈관 계보(동맥+정맥) 예습시험 태깅 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0549",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 배벽의 동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0549.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 배벽의 동맥) 10회차 · 팔·배 계보 도해 10회차 혈관 계보(동맥+정맥) 예습시험 태깅 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0548",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 위팔동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0548.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 위팔동맥) 10회차 · 팔·배 계보 도해 10회차 혈관 계보(동맥+정맥) 예습시험 태깅 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0547",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0547.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 혈관과 배벽의 혈관 — 계보 퀴즈판 (10회차 혈관 계보(동맥+정맥) · 종합) 10회차 · 팔·배 계보 도해 10회차 혈관 계보(동맥+정맥) 예습시험 태깅 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0546",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 근육피부신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0546.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 근육피부신경) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0545",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 배벽의 신경 — 갈비사이신경의 연속)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0545.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 배벽의 신경 — 갈비사이신경의 연속) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0544",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 노신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0544.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 노신경) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0543",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 자신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0543.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 자신경) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0542",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 정중신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0542.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 정중신경) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0541",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0541.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로.",
+   "text": "Anatomy 위팔에서 손까지의 신경과 배벽의 신경 — 계보 퀴즈판 (10회차 신경 계보 · 종합) 10회차 · 팔·배 계보 도해 10회차 신경 계보 예습시험 태깅 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0540",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 고샅관)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0540.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 고샅관) 10회차 · 팔·배 계보 도해 10회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0539",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 손목굴)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0539.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 손목굴) 10회차 · 팔·배 계보 도해 10회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0538",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 팔오금)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0538.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 팔오금) 10회차 · 팔·배 계보 도해 10회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0537",
+   "type": "anatomy",
+   "unit": "10회차 · 팔·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "10회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0537.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 팔오금 · 손목굴 · 고샅관 — 계보 퀴즈판 (10회차 함께 지나는 것(신경혈관다발) · 종합) 10회차 · 팔·배 계보 도해 10회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 10회차 §팔오금 구조물 · 손목굴 · 고샅관 · 정삭 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s10 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s10 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0508",

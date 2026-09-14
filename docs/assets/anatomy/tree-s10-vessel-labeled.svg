@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026 1512" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="위팔에서 손까지의 혈관과 배벽의 혈관 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 10회차 §위팔동맥 · 노동맥 · 자동맥 · 손바닥동맥활 · 얕은근막 · 배곧은근집 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="1026" height="1512" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">위팔에서 손까지의 혈관과 배벽의 혈관<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> arteries &amp; veins of the arm, forearm, hand and abdominal wall</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">10회차 · 위팔동맥이 팔오금에서 둘로 갈리고, 손에서 두 개의 활로 다시 만난다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,398 H 615 V 322 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,398 H 615 V 398 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,398 H 615 V 484 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,706 H 801 V 681 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,706 H 801 V 740 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,631 H 615 V 558 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,631 H 615 V 622 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,631 H 615 V 706 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,382 H 419 V 125 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,382 H 419 V 194 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,382 H 419 V 258 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,382 H 419 V 398 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,382 H 419 V 631 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,914 H 419 V 809 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,914 H 419 V 884 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,914 H 419 V 954 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,914 H 419 V 1028 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1198 H 419 V 1104 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,1198 H 419 V 1162 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,1198 H 419 V 1226 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,1198 H 419 V 1301 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,901 H 219 V 382 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,901 H 219 V 914 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,901 H 219 V 1198 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,901 H 219 V 1382 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <rect x="26" y="882" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="902" fill="#7fd4a8" font-size="12" class="kr">10회차의 혈관</text>
+  <rect x="232" y="350" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="370" fill="#e0645f" font-size="12" class="kr">위팔동맥 ★</text>
+  <text x="242" y="384" fill="#c98a86" font-size="9">brachial a.</text>
+  <text x="242" y="396" fill="#6f8299" font-size="9">큰원근 아래모서리에서 겨드랑동맥이</text>
+  <text x="242" y="406" fill="#6f8299" font-size="9">이름을 바꾼다 · <tspan fill="#e6edf3" font-weight="700">안쪽두갈래근고랑</tspan></text>
+  <rect x="232" y="881" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="901" fill="#e0645f" font-size="12" class="kr">배벽의 동맥 ★</text>
+  <text x="242" y="916" fill="#c98a86" font-size="9">arteries of the abdominal wall</text>
+  <text x="242" y="927" fill="#6f8299" font-size="9">위·아래 두 방향에서 들어와</text>
+  <text x="242" y="938" fill="#6f8299" font-size="9">배꼽에서 만난다</text>
+  <rect x="232" y="1159" width="174" height="77" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="1179" fill="#b49ae0" font-size="12" class="kr">배벽의 얕은정맥 ★</text>
+  <text x="242" y="1194" fill="#8f79b8" font-size="9">superficial veins of the</text>
+  <text x="242" y="1205" fill="#8f79b8" font-size="9">abdominal wall</text>
+  <text x="242" y="1216" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가슴배벽정맥</tspan>이 위·아래대정맥을</text>
+  <text x="242" y="1227" fill="#6f8299" font-size="9">잇는다</text>
+  <rect x="232" y="1343" width="174" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="242" y="1363" fill="#b49ae0" font-size="12" class="kr">덩굴정맥얼기 ★</text>
+  <text x="242" y="1378" fill="#8f79b8" font-size="9">pampiniform plexus</text>
+  <text x="242" y="1389" fill="#6f8299" font-size="9">정삭 안 · 고환동맥을 감싸 <tspan fill="#e6edf3" font-weight="700">열교환</tspan></text>
+  <text x="242" y="1400" fill="#6f8299" font-size="9">· 왼쪽은 왼콩팥정맥으로 직각 유입</text>
+  <text x="242" y="1411" fill="#6f8299" font-size="9">→ <tspan fill="#e6edf3" font-weight="700">정계정맥류가 왼쪽에 많다</tspan></text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#e0645f" font-size="12" class="kr">깊은위팔동맥 ★</text>
+  <text x="442" y="127" fill="#c98a86" font-size="9">deep brachial a. (profunda</text>
+  <text x="442" y="138" fill="#c98a86" font-size="9">brachii)</text>
+  <text x="442" y="149" fill="#6f8299" font-size="9">노신경과 함께 <tspan fill="#e6edf3" font-weight="700">노신경고랑</tspan>으로</text>
+  <rect x="432" y="167" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="187" fill="#e0645f" font-size="12" class="kr">자쪽곁동맥(위·아래) ★</text>
+  <text x="442" y="202" fill="#c98a86" font-size="9">sup./inf. ulnar collateral a.</text>
+  <text x="442" y="213" fill="#6f8299" font-size="9">팔꿈치 문합에 참여</text>
+  <rect x="432" y="231" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="251" fill="#b49ae0" font-size="12" class="kr">동반정맥</text>
+  <text x="442" y="266" fill="#8f79b8" font-size="9">venae comitantes</text>
+  <text x="442" y="277" fill="#6f8299" font-size="9">동맥을 좌우로 끼고 달린다</text>
+  <rect x="432" y="366" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="386" fill="#e0645f" font-size="12" class="kr">노동맥 ★</text>
+  <text x="442" y="400" fill="#c98a86" font-size="9">radial a.</text>
+  <text x="442" y="412" fill="#6f8299" font-size="9">팔오금에서 <tspan fill="#e6edf3" font-weight="700">가쪽</tspan> · 위팔노근 힘줄</text>
+  <text x="442" y="422" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">안쪽</tspan>에서 만져진다(채혈·맥박)</text>
+  <rect x="432" y="598" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="618" fill="#e0645f" font-size="12" class="kr">자동맥 ★</text>
+  <text x="442" y="633" fill="#c98a86" font-size="9">ulnar a.</text>
+  <text x="442" y="644" fill="#6f8299" font-size="9">팔오금에서 <tspan fill="#e6edf3" font-weight="700">안쪽·깊은곳</tspan> · 먼쪽</text>
+  <text x="442" y="655" fill="#6f8299" font-size="9">절반은 자쪽손목굽힘근 가쪽</text>
+  <rect x="432" y="776" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="796" fill="#e0645f" font-size="12" class="kr">위배벽동맥 ★</text>
+  <text x="442" y="811" fill="#c98a86" font-size="9">superior epigastric a.</text>
+  <text x="442" y="822" fill="#6f8299" font-size="9">속가슴동맥의 끝가지 — <tspan fill="#e6edf3" font-weight="700">위에서</tspan></text>
+  <text x="442" y="833" fill="#6f8299" font-size="9">내려온다</text>
+  <rect x="432" y="851" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="871" fill="#e0645f" font-size="12" class="kr">아래배벽동맥 ★</text>
+  <text x="442" y="886" fill="#c98a86" font-size="9">inferior epigastric a.</text>
+  <text x="442" y="897" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">바깥엉덩동맥</tspan>에서 · 깊은고샅구멍</text>
+  <text x="442" y="908" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">안쪽</tspan> · 가쪽배꼽주름을 만든다</text>
+  <rect x="432" y="926" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="946" fill="#e0645f" font-size="12" class="kr">깊은엉덩휘돌이동맥 ★</text>
+  <text x="442" y="961" fill="#c98a86" font-size="9">deep circumflex iliac a.</text>
+  <text x="442" y="972" fill="#6f8299" font-size="9">바깥엉덩동맥 · 엉덩뼈능선을 따라</text>
+  <rect x="432" y="990" width="170" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1010" fill="#e0645f" font-size="12" class="kr">배꼽 문합 ★</text>
+  <text x="442" y="1025" fill="#c98a86" font-size="9">periumbilical anastomosis</text>
+  <text x="442" y="1036" fill="#6f8299" font-size="9">위+아래배벽동맥이 <tspan fill="#e6edf3" font-weight="700">배곧은근집</tspan></text>
+  <text x="442" y="1047" fill="#6f8299" font-size="9">안에서<tspan fill="#e6edf3" font-weight="700"> 만난다 — 대동맥↔엉덩동맥</tspan></text>
+  <text x="442" y="1058" fill="#6f8299" font-size="9">샛길</text>
+  <rect x="432" y="1076" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="1096" fill="#b49ae0" font-size="12" class="kr">얕은배벽정맥 ★</text>
+  <text x="442" y="1111" fill="#8f79b8" font-size="9">superficial epigastric v.</text>
+  <text x="442" y="1122" fill="#6f8299" font-size="9">큰두렁정맥 → 넙다리정맥</text>
+  <rect x="432" y="1140" width="170" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="1160" fill="#b49ae0" font-size="12" class="kr">얕은엉덩휘돌이정맥 ★</text>
+  <text x="442" y="1175" fill="#8f79b8" font-size="9">superficial circumflex iliac v.</text>
+  <rect x="432" y="1193" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="1213" fill="#b49ae0" font-size="12" class="kr">가슴배벽정맥 ★</text>
+  <text x="442" y="1228" fill="#8f79b8" font-size="9">thoracoepigastric v.</text>
+  <text x="442" y="1239" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">아래대정맥 막히면 굵어진다</tspan>(caput</text>
+  <text x="442" y="1250" fill="#6f8299" font-size="9">medusae와 구별)</text>
+  <rect x="432" y="1268" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="1288" fill="#b49ae0" font-size="12" class="kr">배꼽옆정맥 ★</text>
+  <text x="442" y="1303" fill="#8f79b8" font-size="9">paraumbilical vv.</text>
+  <text x="442" y="1314" fill="#6f8299" font-size="9">간문맥과 연결 — <tspan fill="#e6edf3" font-weight="700">문맥고혈압에서</tspan></text>
+  <text x="442" y="1325" fill="#6f8299" font-size="9">caput medusae</text>
+  <rect x="628" y="295" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="315" fill="#e0645f" font-size="12" class="kr">노쪽되돌이동맥 ★</text>
+  <text x="638" y="330" fill="#c98a86" font-size="9">radial recurrent a.</text>
+  <text x="638" y="341" fill="#6f8299" font-size="9">팔꿈치 문합</text>
+  <rect x="628" y="359" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="379" fill="#e0645f" font-size="12" class="kr">해부코담배갑 통과 ★</text>
+  <text x="638" y="394" fill="#c98a86" font-size="9">through the anatomical</text>
+  <text x="638" y="405" fill="#c98a86" font-size="9">snuffbox</text>
+  <text x="638" y="416" fill="#6f8299" font-size="9">손등으로 넘어가</text>
+  <text x="638" y="427" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">첫째등쪽뼈사이근</tspan>을 뚫는다</text>
+  <rect x="628" y="445" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="465" fill="#e0645f" font-size="12" class="kr">깊은손바닥동맥활 ★</text>
+  <text x="638" y="480" fill="#c98a86" font-size="9">deep palmar arch</text>
+  <text x="638" y="491" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">노동맥이 주인</tspan> · 자동맥</text>
+  <text x="638" y="502" fill="#6f8299" font-size="9">깊은가지가 닫는다 · 얕은활보다</text>
+  <text x="638" y="513" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">몸쪽</tspan></text>
+  <rect x="628" y="531" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="551" fill="#e0645f" font-size="12" class="kr">자쪽되돌이동맥 ★</text>
+  <text x="638" y="566" fill="#c98a86" font-size="9">ulnar recurrent a.</text>
+  <text x="638" y="577" fill="#6f8299" font-size="9">팔꿈치 문합</text>
+  <rect x="628" y="595" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="615" fill="#e0645f" font-size="12" class="kr">온뼈사이동맥 ★</text>
+  <text x="638" y="630" fill="#c98a86" font-size="9">common interosseous a.</text>
+  <text x="638" y="641" fill="#6f8299" font-size="9">곧 <tspan fill="#e6edf3" font-weight="700">앞·뒤뼈사이동맥</tspan>으로 갈린다</text>
+  <rect x="628" y="667" width="160" height="77" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="638" y="687" fill="#e0645f" font-size="12" class="kr">얕은손바닥동맥활 ★</text>
+  <text x="638" y="702" fill="#c98a86" font-size="9">superficial palmar arch</text>
+  <text x="638" y="713" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">자동맥이 주인</tspan> · 노동맥</text>
+  <text x="638" y="724" fill="#6f8299" font-size="9">손바닥가지가 닫는다 ·</text>
+  <text x="638" y="735" fill="#6f8299" font-size="9">깊은활보다 <tspan fill="#e6edf3" font-weight="700">먼쪽</tspan></text>
+  <rect x="814" y="659" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="679" fill="#e0645f" font-size="12" class="kr">온바닥쪽손가락동맥 ★</text>
+  <text x="824" y="694" fill="#c98a86" font-size="9">common palmar digital aa.</text>
+  <rect x="814" y="712" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="732" fill="#e0645f" font-size="12" class="kr">고유바닥쪽손가락동맥 ★</text>
+  <text x="824" y="747" fill="#c98a86" font-size="9">proper palmar digital aa.</text>
+  <text x="824" y="758" fill="#6f8299" font-size="9">손가락 양쪽 가장자리</text>
+  <line x1="26" y1="1430" x2="1000" y2="1430" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1442" fill="#93a4b7" font-size="10.5">팔의 동맥은 <tspan fill="#e6edf3" font-weight="700">갈라졌다가 다시 만난다</tspan> — 얕은/깊은 손바닥동맥활이 닫힌 고리다.</text>
+  <text x="26" y="1460" fill="#93a4b7" font-size="10.5">얕은활은 <tspan fill="#e6edf3" font-weight="700">자동맥</tspan>이, 깊은활은 <tspan fill="#e6edf3" font-weight="700">노동맥</tspan>이 주인이다(Allen 검사의 근거).</text>
+  <text x="26" y="1478" fill="#93a4b7" font-size="10.5">배벽은 <tspan fill="#e6edf3" font-weight="700">위·아래배벽동맥이 배꼽에서 문합</tspan>한다 — 대동맥과 엉덩동맥을 잇는 샛길.</text>
+</svg>

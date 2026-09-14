@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1851" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="위팔에서 손까지의 신경과 배벽의 신경 — 분지 계보 구조도 퀴즈판">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 10회차 실습주제(위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관) + e-Anatomy Upper limb — Arm·Forearm·Hand / Abdomen — Abdominal wall -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1851" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">위팔에서 손까지의 신경과 배벽의 신경 — 분지 퀴즈판<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> nerves of the arm, forearm, hand &amp; abdominal wall</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">10회차 · 세 신경이 칸을 나눠 갖고, 배벽은 갈비사이신경이 이어진다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10">번호를 보고 이름을 답하시오 · 정답은 대응 문항 카드 frontmatter</text>
+  <path d="M 602,574 H 615 V 538 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,574 H 615 V 619 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 125 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 200 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 280 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 366 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 452 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,346 H 419 V 574 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,955 H 615 V 919 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,955 H 615 V 1000 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 694 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 769 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 844 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,824 H 419 V 955 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1074 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1144 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1143 H 419 V 1221 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1299 H 419 V 1304 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,1406 H 615 V 1378 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,1406 H 615 V 1442 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1406 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1506 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1570 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1646 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1564 H 419 V 1726 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 346 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 824 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1143 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1299 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,959 H 219 V 1564 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <rect x="26" y="940" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
+  <circle cx="116" cy="959" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="116" y="964" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">1</text>
+  <rect x="232" y="313" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="346" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="351" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">2</text>
+  <rect x="232" y="790" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="824" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="828" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">3</text>
+  <rect x="232" y="1110" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="1143" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1148" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">4</text>
+  <rect x="232" y="1266" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="1299" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1304" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">5</text>
+  <rect x="232" y="1523" width="174" height="81" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="1564" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1569" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">6</text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="125" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="130" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">7</text>
+  <rect x="432" y="167" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="200" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="205" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">8</text>
+  <rect x="432" y="242" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="280" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="286" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">9</text>
+  <rect x="432" y="328" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="366" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="372" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">10</text>
+  <rect x="432" y="414" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="452" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="458" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">11</text>
+  <rect x="432" y="541" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="574" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="579" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">12</text>
+  <rect x="432" y="661" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="694" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="699" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">13</text>
+  <rect x="432" y="736" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="769" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="774" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">14</text>
+  <rect x="432" y="811" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="844" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="849" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">15</text>
+  <rect x="432" y="922" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="955" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="960" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">16</text>
+  <rect x="432" y="1047" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1074" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1080" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">17</text>
+  <rect x="432" y="1111" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1144" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1149" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">18</text>
+  <rect x="432" y="1186" width="170" height="70" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1221" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1226" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">19</text>
+  <rect x="432" y="1265" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1304" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1308" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">20</text>
+  <rect x="432" y="1373" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="1406" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1411" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">21</text>
+  <rect x="432" y="1479" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1506" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1512" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">22</text>
+  <rect x="432" y="1543" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1570" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1576" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">23</text>
+  <rect x="432" y="1607" width="170" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1646" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1650" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">24</text>
+  <rect x="432" y="1693" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="1726" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1731" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">25</text>
+  <rect x="628" y="500" width="160" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="538" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="544" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">26</text>
+  <rect x="628" y="586" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="619" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="624" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">27</text>
+  <rect x="628" y="886" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="919" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="924" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">28</text>
+  <rect x="628" y="961" width="160" height="77" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="1000" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1004" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">29</text>
+  <rect x="628" y="1351" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="1378" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1384" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">30</text>
+  <rect x="628" y="1415" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="1442" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1448" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">31</text>
+  <line x1="26" y1="1769" x2="814" y2="1769" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1781" fill="#93a4b7" font-size="10.5">칸이 신경을 정한다 — 앞칸은 <tspan fill="#e6edf3" font-weight="700">정중·자</tspan>, 뒤칸은 <tspan fill="#e6edf3" font-weight="700">노</tspan>(뒤뼈사이)가 맡는다.</text>
+  <text x="26" y="1799" fill="#93a4b7" font-size="10.5">손의 근육은 <tspan fill="#e6edf3" font-weight="700">자신경 깊은가지</tspan>가 거의 다 맡고, 정중신경은 엄지두덩 3근 + 벌레근 1·2뿐이다.</text>
+  <text x="26" y="1817" fill="#93a4b7" font-size="10.5">배벽 신경은 새로 생기지 않는다 — 갈비사이신경(T7–T11)이 그대로 내려와 이름만 바뀐다.</text>
+</svg>
