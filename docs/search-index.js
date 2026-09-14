@@ -1,32 +1,32 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-13",
+ "generated": "2026-09-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2355,
+  "total": 2368,
   "byType": {
+   "usmle": 144,
    "kmle": 971,
    "anatomy": 626,
+   "paper": 592,
    "imaging": 18,
-   "paper": 585,
-   "usmle": 138,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 626,
-   "Cardiology": 184,
-   "Nephrology": 154,
-   "Infectious Disease": 131,
-   "Pediatrics": 109,
-   "Hematology-Oncology": 87,
-   "Pathology": 83,
+   "Cardiology": 185,
+   "Nephrology": 155,
+   "Infectious Disease": 132,
+   "Pediatrics": 110,
+   "Hematology-Oncology": 88,
+   "Pathology": 84,
    "Obstetrics & Gynecology": 74,
-   "Neurology": 72,
+   "Neurology": 73,
    "Psychiatry": 72,
-   "Surgery": 66,
+   "Surgery": 67,
    "Endocrinology": 62,
    "Gastroenterology": 61,
    "Pulmonology": 61,
@@ -36,14 +36,14 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 60,
    "Rheumatology": 60,
    "Hematology": 59,
-   "Laboratory Medicine": 57,
-   "Physiology": 16,
+   "Laboratory Medicine": 58,
+   "Physiology": 17,
    "Pharmacology": 11,
+   "Biochemistry": 10,
    "Microbiology": 10,
    "산부인과": 10,
-   "Biochemistry": 9,
-   "Immunology": 7,
-   "Internal Medicine": 7,
+   "Immunology": 8,
+   "Internal Medicine": 8,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "순환기": 4,
@@ -58,13 +58,153 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1538,
-   "medium": 768,
+   "high": 1544,
+   "medium": 775,
    "low": 49
   },
-  "tagCount": 3284
+  "tagCount": 3307
  },
  "docs": [
+  {
+   "id": "usmle-2026-0157",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Pallor and Falling Urine Output Five Days After Bloody Diarrhea in a Preschooler — Supporting the Kidney Without Feeding the Toxin",
+   "tags": [
+    "hemolytic-uremic-syndrome",
+    "STEC",
+    "Shiga-toxin",
+    "E-coli-O157",
+    "thrombotic-microangiopathy",
+    "schistocytes",
+    "acute-kidney-injury",
+    "supportive-care",
+    "antibiotics-contraindicated"
+   ],
+   "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Hemolytic-Uremic Syndrome; Freedman SB et al. Shiga toxin-producing E. coli infection, antibiotics, and risk of HUS: meta-analysis. Clin Infect Dis 2016; Ake JA et al. Early volume expansion in STEC O157:H7 infection. Pediatrics 2005)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0157.md",
+   "snippet": "A 4 year old girl is brought to the emergency department because of pallor, decreased activity, and only one small void in the past 18 hours. Nine days ago she ate an undercooked hamburger at a picnic; 5 days ago she developed crampy abdomi",
+   "text": "Pediatrics Pallor and Falling Urine Output Five Days After Bloody Diarrhea in a Preschooler — Supporting the Kidney Without Feeding the Toxin hemolytic-uremic-syndrome STEC Shiga-toxin E-coli-O157 thrombotic-microangiopathy schistocytes acute-kidney-injury supportive-care antibiotics-contraindicated USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Hemolytic-Uremic Syndrome; Freedman SB et al. Shiga toxin-producing E. coli infection, antibiotics, and risk of HUS: meta-analysis. Clin Infect Dis 2016; Ake JA et al. Early volume expansion in STEC O157:H7 infection. Pediatrics 2005) A 4 year old girl is brought to the emergency department because of pallor, decreased activity, and only one small void in the past 18 hours. Nine days ago she ate an undercooked hamburger at a picnic; 5 days ago she developed crampy abdominal pain and watery diarrhea that became bloody 2 days later and has now nearly resolved. She has received no medications. Her vital signs and laboratory studies are shown. She is pale and irritable, with mild periorbital edema, scattered petechiae on the shins, and no hepatosplenomegaly; there are no focal neurologic deficits. Which of the following is the most appropriate next step in management? A. Intravenous isotonic fluids B. Intravenous ciprofloxacin C. Platelet transfusion D. Therapeutic plasma exchange E. Oral loperamide 덜 익힌 햄버거 섭취 후 혈성 설사 → 5–10일 뒤 미세혈관병성 용혈빈혈(분열적혈구·LDH ↑·합토글로빈 ↓·DAT 음성) + 혈소판감소 + 급성 신손상(핍뇨·크레아티닌 2.4·고칼륨) + 대변 Shiga 독소(stx2) 양성 + 정상 응고·ADAMTS13 = 전형적(STEC) 용혈요독증후군. 특이 치료는 없고, 결과를 바꾸는 것은 지지 요법이다: 조기 등장성 수액으로 혈관 내 용적을 유지하면 핍뇨성 신부전·투석 필요가 줄고, 전해질·혈압·수분 균형을 자주 재평가하며 무뇨·중증 고칼륨·용적 과부하·요독증이면 투석한다. 항생제(B)는 세균 용해·독소 발현 증가로 HUS 위험을 높여 STEC 장염에서 금기이고, 혈소판 수혈(C)은 미세혈전을 늘릴 우려로 활동성 출혈·시술 전이 아니면 피하며, 혈장교환(D)은 ADAMTS13 결핍 TTP 나 보체매개 비전형 HUS 의 치료(전형 HUS 에서 근거 없음), 지사제(E)는 독소 체류를 늘려 HUS 위험을 올린다."
+  },
+  {
+   "id": "usmle-2026-0156",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Daily Headache, Pulsatile Tinnitus and Swollen Discs in a Young Woman With Normal Imaging — The Drug That Lowers the Pressure After the Needle Confirms It",
+   "tags": [
+    "idiopathic-intracranial-hypertension",
+    "pseudotumor-cerebri",
+    "papilledema",
+    "acetazolamide",
+    "carbonic-anhydrase-inhibitor",
+    "lumbar-puncture-opening-pressure",
+    "obesity",
+    "sixth-nerve-palsy"
+   ],
+   "source": "USMLE-style / MedKOS (Adams and Victor's Principles of Neurology 12e — Intracranial Hypertension; Mollan SP et al. Idiopathic intracranial hypertension consensus guidelines. J Neurol Neurosurg Psychiatry 2018; NORDIC IIHTT trial, JAMA 2014)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0156.md",
+   "snippet": "A 27 year old woman comes to the clinic because of 6 weeks of daily holocranial headache that is worse in the morning and on bending forward, brief episodes of visual dimming lasting a few seconds when she stands up, and a whooshing sound i",
+   "text": "Neurology Daily Headache, Pulsatile Tinnitus and Swollen Discs in a Young Woman With Normal Imaging — The Drug That Lowers the Pressure After the Needle Confirms It idiopathic-intracranial-hypertension pseudotumor-cerebri papilledema acetazolamide carbonic-anhydrase-inhibitor lumbar-puncture-opening-pressure obesity sixth-nerve-palsy USMLE-style / MedKOS (Adams and Victor's Principles of Neurology 12e — Intracranial Hypertension; Mollan SP et al. Idiopathic intracranial hypertension consensus guidelines. J Neurol Neurosurg Psychiatry 2018; NORDIC IIHTT trial, JAMA 2014) A 27 year old woman comes to the clinic because of 6 weeks of daily holocranial headache that is worse in the morning and on bending forward, brief episodes of visual dimming lasting a few seconds when she stands up, and a whooshing sound in both ears synchronous with her pulse. She has gained 12 kg over the past year. Her only medication is a combined oral contraceptive. Her vital signs and laboratory studies are shown. Funduscopic examination shows bilateral elevation of the optic discs with blurred margins and obscuration of the vessels at the disc edge; pupillary responses are normal and eye movements are full. The remainder of the neurologic examination is normal. Magnetic resonance imaging and venography of the brain are obtained, followed by lumbar puncture. In addition to a supervised weight loss program, which of the following is the most appropriate pharmacotherapy? A. Propranolol B. Acetazolamide C. Sumatriptan D. Methylprednisolone E. Amitriptyline 젊은 비만 여성 + 아침·전굴 시 악화 두통 + 일과성 시력흐림(transient visual obscurations) + 박동성 이명 + 양측 유두부종 + 신경학적 국소징후 없음 + MRI/MRV 에서 종괴·수두증·정맥동 혈전 없음(빈 안장·시신경집 확장은 지지 소견) + 개방압 34 cmH₂O 에 정상 뇌척수액 = 특발성 두개내압항진(IIH, 수정 Dandy 기준 충족). 1차 약물치료는 탄산탈수효소 억제제 아세타졸아마이드(맥락총의 뇌척수액 생성 억제, 시작 1–2 g/일 → 최대 4 g/일)이며, IIHTT 무작위시험에서 체중감량 단독 대비 시야·유두부종·삶의 질을 개선했다. 병행할 것은 체중 5–10% 감량, 시야검사 정기 추적, 시력 저하가 급속하면 시신경집 감압·뇌척수액 단락술로 넘어간다. 프로프라놀롤(A)·아미트립틸린(E)은 각각 편두통 예방·긴장형두통 관리이고, 수마트립탄(C)은 편두통 급성기 약으로 유두부종을 설명하지 못하며, 고용량 스테로이드(D)는 뇌종양 부종·시신경염의 치료로 IIH 에서는 중단 시 반동 상승과 체중 증가 때문에 권고되지 않는다."
+  },
+  {
+   "id": "usmle-2026-0155",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Bradycardia and Hypotension Two Hours After a Propranolol Overdose That Atropine Cannot Touch — The Hormone That Enters the Cardiomyocyte Through a Different Door",
+   "tags": [
+    "beta-blocker-overdose",
+    "propranolol",
+    "glucagon",
+    "sinus-bradycardia",
+    "cardiogenic-shock",
+    "atropine-refractory",
+    "high-dose-insulin",
+    "toxicology",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (Goldfrank's Toxicologic Emergencies 11e — β-Adrenergic Antagonists; 2023 AHA Focused Update on Management of Patients With Cardiac Arrest or Life-Threatening Toxicity Due to Poisoning; Tintinalli's Emergency Medicine 9e — Beta-Blocker Toxicity)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0155.md",
+   "snippet": "A 26 year old woman is brought to the emergency department 2 hours after ingesting an unknown number of her mother's propranolol tablets during an argument. She is drowsy but responds to voice and reports nausea. Her vital signs, laboratory",
+   "text": "Internal Medicine Bradycardia and Hypotension Two Hours After a Propranolol Overdose That Atropine Cannot Touch — The Hormone That Enters the Cardiomyocyte Through a Different Door beta-blocker-overdose propranolol glucagon sinus-bradycardia cardiogenic-shock atropine-refractory high-dose-insulin toxicology ECG USMLE-style / MedKOS (Goldfrank's Toxicologic Emergencies 11e — β-Adrenergic Antagonists; 2023 AHA Focused Update on Management of Patients With Cardiac Arrest or Life-Threatening Toxicity Due to Poisoning; Tintinalli's Emergency Medicine 9e — Beta-Blocker Toxicity) A 26 year old woman is brought to the emergency department 2 hours after ingesting an unknown number of her mother's propranolol tablets during an argument. She is drowsy but responds to voice and reports nausea. Her vital signs, laboratory studies, and rhythm strip are shown. Physical examination shows cool extremities and delayed capillary refill; the lungs are clear. Two liters of intravenous crystalloid and two doses of atropine (1 mg each) are administered without improvement in heart rate or blood pressure. Which of the following is the most appropriate next step in pharmacotherapy? A. Intravenous sodium bicarbonate B. Intravenous calcium gluconate C. Intravenous naloxone D. Intravenous glucagon E. Intravenous physostigmine 프로프라놀롤 과량 섭취 2시간 후 동성서맥(38/분)·저혈압·말초 관류 저하·경도 젖산산증·경도 저혈당 = β 차단제 중독의 심인성 쇼크. 수액·아트로핀에 반응하지 않는 서맥성 쇼크에서 다음 약은 고용량 글루카곤(3–10 mg IV 볼루스 → 3–5 mg/h 주입)이다. 글루카곤은 β 수용체가 아닌 자체 G단백연결 수용체를 통해 아데닐산고리화효소를 켜 cAMP 를 올려, 차단된 β 수용체를 우회해 심박수·수축력을 회복시킨다(그래서 β 차단제에 특이적 '해독제'로 불림). 그 다음 단계는 고용량 인슐린 포도당(1 U/kg 볼루스 → 1–10 U/kg/h), 카테콜아민 승압제, 지질 유제, 필요 시 경정맥 조율·기계적 순환보조다. 탄산수소나트륨(A)은 프로프라놀롤의 나트륨통로 차단으로 QRS 가 넓어졌을 때( 120 ms)·발작 시의 보조 치료이지 서맥성 쇼크의 1차 약이 아니고, 칼슘(B)은 칼슘통로차단제 중독의 1차 약으로 β 차단제에는 보조적이며, 날록손(C)·피조스티그민(E)은 각각 아편·항콜린 중독의 해독제다."
+  },
+  {
+   "id": "usmle-2026-0154",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Creatinine That Jumps a Week After Starting an ACE Inhibitor in Resistant Hypertension — The Arteriole Whose Tone the Drug Took Away",
+   "tags": [
+    "bilateral-renal-artery-stenosis",
+    "ACE-inhibitor",
+    "efferent-arteriole",
+    "angiotensin-II",
+    "GFR-autoregulation",
+    "renovascular-hypertension",
+    "acute-kidney-injury",
+    "filtration-fraction"
+   ],
+   "source": "USMLE-style / MedKOS (Hall JE. Guyton and Hall Textbook of Medical Physiology 14e — Glomerular Filtration and Its Control; Boron & Boulpaep Medical Physiology 3e — Glomerular Filtration and Renal Blood Flow; KDIGO 2021 Blood Pressure in CKD guideline)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0154.md",
+   "snippet": "A 67 year old man with a 30 year history of cigarette smoking and peripheral arterial disease has hypertension that has remained poorly controlled despite amlodipine, chlorthalidone, and metoprolol. Lisinopril is added. Eight days later he ",
+   "text": "Physiology Creatinine That Jumps a Week After Starting an ACE Inhibitor in Resistant Hypertension — The Arteriole Whose Tone the Drug Took Away bilateral-renal-artery-stenosis ACE-inhibitor efferent-arteriole angiotensin-II GFR-autoregulation renovascular-hypertension acute-kidney-injury filtration-fraction USMLE-style / MedKOS (Hall JE. Guyton and Hall Textbook of Medical Physiology 14e — Glomerular Filtration and Its Control; Boron & Boulpaep Medical Physiology 3e — Glomerular Filtration and Renal Blood Flow; KDIGO 2021 Blood Pressure in CKD guideline) A 67 year old man with a 30 year history of cigarette smoking and peripheral arterial disease has hypertension that has remained poorly controlled despite amlodipine, chlorthalidone, and metoprolol. Lisinopril is added. Eight days later he returns for follow up feeling well, with no dysuria, flank pain, rash, or new medications. His vital signs and laboratory studies are shown. Physical examination shows a soft bruit in both flanks and diminished pedal pulses. The rise in his serum creatinine is best explained by which of the following changes in renal hemodynamics? A. Decreased efferent arteriolar resistance B. Increased afferent arteriolar resistance C. Decreased plasma oncotic pressure in the glomerular capillaries D. Increased hydrostatic pressure in Bowman space E. Tubuloglomerular feedback mediated afferent vasoconstriction 저항성 고혈압 + 양측 옆구리 잡음 + 도플러에서 양측 신동맥 유속 300 cm/s + 작은 신장 = 죽상경화성 양측 신동맥협착. 협착 신장은 사구체 관류압이 낮아, 레닌 안지오텐신계가 만드는 안지오텐신 II 가 수출세동맥을 선택적으로 조여 사구체 모세혈관 정수압(P GC)을 유지함으로써 GFR 을 지탱하고 있다. ACE 억제제가 안지오텐신 II 생성을 끊으면 수출세동맥이 이완돼(저항 감소) 사구체 정수압이 떨어지고 GFR 이 급감 → 크레아티닌 급상승(투약 후 1주 내, 정상 침사·무단백뇨), 알도스테론 감소로 고칼륨혈증이 동반된다. 이는 '신장 자체가 손상된 것'이 아니라 혈역학적 GFR 감소라서 약을 끊으면 회복된다. 수입세동맥 수축(B)은 NSAID(프로스타글란딘 차단)·조영제·칼시뉴린 억제제의 기전이고, 사구체 교질삼투압 감소(C)는 오히려 GFR 을 올리며, 보우만공간 정수압 상승(D)은 폐쇄성 신병증, 세뇨관사구체 되먹임 수입세동맥 수축(E)은 원위세뇨관 NaCl 증가에 대한 반응으로 이 약의 작용점이 아니다."
+  },
+  {
+   "id": "usmle-2026-0153",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Anaphylaxis Minutes Into a Red Cell Transfusion in a Patient With Lifelong Sinopulmonary Infections — The Product Preparation That Would Have Removed the Trigger",
+   "tags": [
+    "selective-IgA-deficiency",
+    "anaphylactic-transfusion-reaction",
+    "anti-IgA-antibodies",
+    "washed-red-cells",
+    "type-I-hypersensitivity",
+    "leukoreduction",
+    "irradiation",
+    "TA-GVHD"
+   ],
+   "source": "USMLE-style / MedKOS (Abbas AK. Cellular and Molecular Immunology 10e — Congenital Immunodeficiencies; AABB Technical Manual 21e — Noninfectious Complications of Blood Transfusion; Yel L. Selective IgA deficiency. J Clin Immunol 2010)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0153.md",
+   "snippet": "A 34 year old woman with menorrhagia from uterine leiomyomas is receiving her first transfusion of packed red blood cells for symptomatic anemia. Since childhood she has had recurrent sinusitis, otitis media, and two episodes of Giardia dia",
+   "text": "Immunology Anaphylaxis Minutes Into a Red Cell Transfusion in a Patient With Lifelong Sinopulmonary Infections — The Product Preparation That Would Have Removed the Trigger selective-IgA-deficiency anaphylactic-transfusion-reaction anti-IgA-antibodies washed-red-cells type-I-hypersensitivity leukoreduction irradiation TA-GVHD USMLE-style / MedKOS (Abbas AK. Cellular and Molecular Immunology 10e — Congenital Immunodeficiencies; AABB Technical Manual 21e — Noninfectious Complications of Blood Transfusion; Yel L. Selective IgA deficiency. J Clin Immunol 2010) A 34 year old woman with menorrhagia from uterine leiomyomas is receiving her first transfusion of packed red blood cells for symptomatic anemia. Since childhood she has had recurrent sinusitis, otitis media, and two episodes of Giardia diarrhea; she has never been transfused. About 5 minutes after the transfusion begins, she develops diffuse urticaria, wheezing, and lip and tongue swelling, and she becomes hypotensive. The transfusion is stopped, and intramuscular epinephrine restores her blood pressure. Her vital signs at the time of the reaction and subsequent laboratory studies are shown. A clerical check confirms the unit was correctly issued to her. Which of the following measures would most likely have prevented this reaction? A. Leukoreduction of the red cell unit B. Gamma irradiation of the red cell unit C. Premedication with acetaminophen and diphenhydramine D. Transfusion of group O, Rh negative red cells E. Transfusion of washed red cells 평생 반복된 부비동염·중이염·지아르디아증 병력에 혈청 IgA < 7 mg/dL(IgG·IgM 정상) = 선택적 IgA 결핍. 이런 환자는 외부 IgA를 '이물'로 인식해 항 IgA IgE(또는 IgG) 항체를 만들 수 있고, 첫 수혈이라도(임신·감작 없이도 형성 가능) 제제 속 소량의 공여자 혈장 IgA에 노출되면 수 분 내 두드러기·기관지경련·혈관부종·저혈압, 즉 아나필락시스 수혈반응이 온다. 열이 없고, DAT 음성·유리 혈색소 정상·ABO 일치로 용혈반응이 배제되며, 트립타제 상승이 비만세포 탈과립을 뒷받침한다. 예방은 항원인 혈장 IgA 자체를 제거하는 것 — 생리식염수로 여러 번 세척한 적혈구(washed RBC)나 IgA 결핍 공여자 제제를 쓴다. 백혈구제거(A)는 발열성 비용혈반응·CMV·HLA 감작 예방, 감마조사(B)는 수혈 관련 이식편대숙주병 예방, 전처치(C)는 경증 알레르기·발열 반응을 줄일 뿐 아나필락시스를 막지 못하고, O Rh음성(D)은 ABO 부적합이 아닌 이 상황과 무관하다."
+  },
+  {
+   "id": "usmle-2026-0152",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned",
+   "tags": [
+    "MCAD-deficiency",
+    "beta-oxidation",
+    "hypoketotic-hypoglycemia",
+    "acylcarnitine",
+    "fasting-avoidance",
+    "medium-chain-triglycerides",
+    "newborn-screening",
+    "ACADM"
+   ],
+   "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0152.md",
+   "snippet": "An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago",
+   "text": "Biochemistry Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned MCAD-deficiency beta-oxidation hypoketotic-hypoglycemia acylcarnitine fasting-avoidance medium-chain-triglycerides newborn-screening ACADM USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance) An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago. He was born at term in a country without expanded newborn metabolic screening and has grown normally. On arrival he is drowsy but arousable, with mild hepatomegaly and no focal neurologic deficits. His vital signs and laboratory studies are shown. Intravenous dextrose is given, and within 30 minutes he is alert and playful. After recovery, plasma acylcarnitine profiling and urine organic acid analysis establish the diagnosis, and the parents ask how to prevent another episode. Which of the following is the most appropriate long term dietary recommendation? A. Ketogenic high fat diet B. Medium chain triglyceride oil supplementation C. Frequent carbohydrate containing meals with avoidance of fasting D. Strict dietary protein restriction E. Elimination of fructose and sucrose 16시간 금식 후 저혈당인데 케톤이 거의 없고(hypoketotic hypoglycemia), 암모니아·AST가 오르고, 아실카르니틴에서 C8(octanoylcarnitine)이 우세하게 오르며 소변에 hexanoylglycine·suberylglycine이 나오는 것은 중쇄 아실 CoA 탈수소효소(MCAD) 결핍의 고전적 소견이다. 중쇄 지방산의 β 산화가 막혀 케톤을 만들지 못하므로, 공복 시 뇌·근육이 의존할 대체 연료가 없고 간의 포도당신생합성도 아세틸 CoA 부족으로 약해져 저혈당이 온다. 따라서 장기 관리의 핵심은 '금식을 피하는 것'이다 — 나이에 맞는 최대 금식 시간(유아 8–12시간)을 넘기지 않게 자주 탄수화물 식사를 주고, 병 중에는 조기 포도당 공급(경구 해결 안 되면 IV dextrose)을 한다. 고지방 케톤식(A)은 산화 못 하는 지방을 더 주는 것이고, MCT 오일(B)은 기질 자체(C8–C10)를 직접 공급해 급성 대사 위기를 유발하는 금기이며(장쇄 지방산 산화장애의 치료와 혼동하기 쉬운 함정), 단백질 제한(D)은 요소회로 장애·유기산혈증의 관리, 과당·자당 배제(E)는 유전성 과당불내성의 관리다."
+  },
   {
    "id": "kmle-2026-1001",
    "type": "kmle",
@@ -718,6 +858,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-14.md",
    "snippet": "오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-14 팔·가슴 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 14 · t2 new) 다음 수업/시험: 2026 09 14 피드백, 팔 얕은근막·겨드랑, 기관·기관지·허파·뒤세로칸 Tagging 1까지 4일 · Tagging 2까지 35일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0592",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0592_tympanic_membrane_adhesion_model_by_transcanal_endoscopic_ea.md",
+   "snippet": "Title Tympanic Membrane Adhesion Model by Transcanal Endoscopic Ear Surgery in Rat Authors Yamamoto Kazuhisa, Morino Tsunetaro, Takizawa Yuki, Kikuchi Shun, Yamato Masayuki, Kojima Hiromi Journal / DOI The journal of international advanced ",
+   "text": "Surgery scraped pubmed PubMed / The journal of international advanced otology Title Tympanic Membrane Adhesion Model by Transcanal Endoscopic Ear Surgery in Rat Authors Yamamoto Kazuhisa, Morino Tsunetaro, Takizawa Yuki, Kikuchi Shun, Yamato Masayuki, Kojima Hiromi Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.252317 · PMID: 42732645 https://pubmed.ncbi.nlm.nih.gov/42732645/ Abstract BACKGROUND: Tympanic membrane adhesion is a clinically significant and challenging complication of otologic surgery. However, a simple and reproducible animal model suitable for studying the pathogenesis of this disease and evaluating treatment strategies has not yet been established. This study aimed to develop a reproducible rat model of tympanic membrane adhesion using transcanal endoscopic ear surgery (TEES). METHODS: Twenty eight Sprague Dawley rats underwent TEES. In each rat, 1 ear underwent a complete adhesion inducing procedure involving tympanic membrane perforation and removal of the middle ear mucosa (model group), whereas the contralateral ear underwent tympanic membrane perforation only (sham group). Adhesion formation and bone hyperplasia were evaluated using micro computed tomography, macroscopic observation, and histological analysis up to 56 days postoperatively. RESULTS: Tympanic membrane adhesion occurred in 81.8% of ears 14 days after the procedure. No adhesions were observed in the sham group. All adhesion positive ears showed middle ear bone hyperplasia at the mucosa ablated sites, and histological analysis confirmed fusion between the tympanic membrane epithelium and the newly formed bone. In cases where adhesion was not achieved after the initial procedure, reoperation led to successful adhesion in all ears. No tympanic membrane retraction or middle ear effusion was observed during the postoperative period. CONCLUSION: A simple and highly reproducible rat tympanic membrane adhesion model was established using TEES. This model consistently reproduces postoperative tympanic membrane adhesion accompanied by middle ear bone hyperplasia and provides a useful platform for elucidating the mechanisms of adhesion and evaluating regenerative or antiadhesion therapies in the middle ear. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0591",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0591_carotid_endarterectomy_under_regional_anesthesia_intraoperat.md",
+   "snippet": "Title [Carotid endarterectomy under regional anesthesia: intraoperative criteria for placing a temporary intraluminal shunt (meta analysis)] Authors Gavrilenko A V, Zaitsev A Yu, Al Yousef N N, Korshunov A V, Dubrovin K V, Popov S O Journal",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery Title [Carotid endarterectomy under regional anesthesia: intraoperative criteria for placing a temporary intraluminal shunt (meta analysis)] Authors Gavrilenko A V, Zaitsev A Yu, Al Yousef N N, Korshunov A V, Dubrovin K V, Popov S O Journal / DOI Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery · DOI: 10.33029/1027 6661 2026 32 2 136 145 · PMID: 42732612 https://pubmed.ncbi.nlm.nih.gov/42732612/ Abstract OBJECTIVE: Conducting a meta analysis to assess consistency between the indices of cerebral oxygenation (near infrared spectrometry, NIRS), clinical data, pressure in the stump, findings of transcranial Doppler ultrasonography, and neurosensory status of patients, as well as to determine optimal comprehensive criteria for making a decision on a temporary intravascular shunt during carotid endarterectomy under regional anesthesia. MATERIAL AND METHODS: A systematic search was carried out in databases PubMed, Medline and Cochrane Library over the period from January 2015 to October 2025. INCLUSION CRITERIA: prospective observational studies or randomized controlled studies with participation of patients subjected to carotid endarterectomy under regional anesthesia, assessing consistency of instrumental methods of monitoring and clinical picture. The statistical analysis was performed in the R program (version 4.2.1). RESULTS: The final analysis included 13 studies (1894 patients). The overall frequency of selective shunting amounted to 11.51% (95% confidence interval 10.11 13.03%). An optimal criterion for placement of a temporary shunt was a decrease of δrSO2 ≥9 10% in combination with the appearance of neurological deficit (sensitivity 90 100% and specificity 70 83%). Multimodal methods of monitoring demonstrated the average AUC 0.90 vs 0.87 for double combinations. The perioperative stroke rate amounted to 1.48% (95% confidence interval 1.11 2.25%), thus corresponding to the modern international quality standards. CONCLUSION: A combined approach with the use of NIRS monitoring (threshold of δrSO2 ≥9 10%) jointly with clinical assessment of the neurological status is an optimal criterion for selective shunting in carotid endarterectomy under regional anesthesia. Multimodality monitoring increases the diagnostic accuracy, making it possible to minimize the risk of ischemic complications. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0590",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0590_synchronous_low_grade_appendiceal_mucinous_neoplasm_and_neur.md",
+   "snippet": "Title Synchronous Low Grade Appendiceal Mucinous Neoplasm and Neuroendocrine Tumor Presenting as Pseudomyxoma Peritonei: A Case Report Authors Stevens Tyler, Fleury Luther, Collera Jessica, Jagodzinski Kelcie, Fan Ji Journal / DOI Cureus · ",
+   "text": "Pathology scraped pubmed PubMed / Cureus Title Synchronous Low Grade Appendiceal Mucinous Neoplasm and Neuroendocrine Tumor Presenting as Pseudomyxoma Peritonei: A Case Report Authors Stevens Tyler, Fleury Luther, Collera Jessica, Jagodzinski Kelcie, Fan Ji Journal / DOI Cureus · DOI: 10.7759/cureus.114456 · PMID: 42732355 https://pubmed.ncbi.nlm.nih.gov/42732355/ Abstract Synchronous primary neoplasms of the appendix are exceptionally rare. We report a low grade appendiceal mucinous neoplasm (LAMN) and a well differentiated neuroendocrine tumor (NET) arising within the same appendix and presenting as pseudomyxoma peritonei (PMP). A 44 year old man undergoing staging for a solitary plasmacytoma of the left acetabulum was incidentally found on computed tomography (CT) to have extensive peritoneal mucinosis. Diagnostic laparoscopy confirmed diffuse PMP, and appendectomy revealed two synchronous appendiceal primaries: a perforated LAMN (pT4a pNX) and a 6 mm, grade 1 NET with lymphovascular invasion (pT3 pNX). After multidisciplinary review, the patient completed radiation therapy for the plasmacytoma and subsequently underwent cytoreductive surgery with hyperthermic intraperitoneal chemotherapy (CRS/HIPEC), achieving complete cytoreduction with 33 lymph nodes negative for malignancy. This case highlights the importance of intraoperative suspicion for an appendiceal origin of PMP, the definitive role of histopathology in identifying synchronous pathologies, and the value of coordinated multidisciplinary care when multiple malignancies coexist. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0589",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0589_longitudinal_plasma_neurofilament_light_chain_and_patient_re.md",
+   "snippet": "Title Longitudinal plasma neurofilament light chain and patient reported outcomes as complementary markers of vincristine associated peripheral neuropathy in adults with lymphoma: a cohort study Authors McNally Gretchen A, Shin Grace Ji Eun",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of neurology Title Longitudinal plasma neurofilament light chain and patient reported outcomes as complementary markers of vincristine associated peripheral neuropathy in adults with lymphoma: a cohort study Authors McNally Gretchen A, Shin Grace Ji Eun, Worthen Chaudhari Lise, Schnell Patrick M, Flora Laura, Krishna Surith Sanjay, Voorhees Tim, Baiocchi Robert, et al. Journal / DOI Journal of neurology · DOI: 10.1007/s00415 026 14096 2 · PMID: 42732528 https://pubmed.ncbi.nlm.nih.gov/42732528/ Abstract Chemotherapy induced peripheral neuropathy (CIPN) is a common neurotoxicity of cancer treatment with limited diagnostic, monitoring, and treatment options. Neurofilament light chain (NfL) is an axonal cytoskeletal protein released during neuroaxonal injury and a promising biomarker of CIPN, but prospective evidence for NfL as a marker of CIPN from vincristine containing lymphoma chemotherapy treatment remains limited. To fill this gap, we conducted a pragmatic single center prospective observational cohort study of adults with non Hodgkin lymphoma (NHL) receiving first line vincristine containing chemotherapy to evaluate NfL dynamics across multiple pre cycle visits and assess relationships with patient reported and clinician graded neuropathy measures. We followed 25 participants during 4 6 months of chemotherapy, and a small subset of those participants (n=6) for 24 42 months post chemotherapy. Serial plasma NfL was measured and CIPN symptoms were assessed using patient and clinician reported measures. Longitudinal changes were analyzed using mixed effects models. Plasma NfL increased relative to pre cycle1 at all timepoints (all p<0.001), increasing approximately fourfold by pre cycle4. Patient reported CIPN scores and clinician graded neuropathy also increased during treatment. Exploratory pooled visit level analyses showed a modest NfL CIPN association (repeated measures correlation=0.439, p=0.020), while timepoint specific, lagged, and post hoc sensitivity analyses suggested potential to predict persistent CIPN symptoms from early NfL concentrations. To our knowledge, these findings extend prospective evidence supporting NfL as a biomarker of vincristine exposure in adults with NHL receiving vincristine containing therapy and may complement patient reported symptom assessment, clinician grading, and dose modification context in future CIPN monitoring studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0588",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0588_audiological_profile_of_adult_patients_awaiting_kidney_and_l.md",
+   "snippet": "Title Audiological Profile of Adult Patients Awaiting Kidney and Liver Transplantation Authors Iribarren Javier, Heider Claudia, Oyarzún Javier, Calderara Gabriela, Leung Jai Sen, Novoa Ivan, Waissbluth Sofia Journal / DOI The journal of in",
+   "text": "Nephrology scraped pubmed PubMed / The journal of international advanced otology Title Audiological Profile of Adult Patients Awaiting Kidney and Liver Transplantation Authors Iribarren Javier, Heider Claudia, Oyarzún Javier, Calderara Gabriela, Leung Jai Sen, Novoa Ivan, Waissbluth Sofia Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262414 · PMID: 42732618 https://pubmed.ncbi.nlm.nih.gov/42732618/ Abstract OBJECTIVE: Hearing loss is an underrecognized comorbidity in patients with chronic kidney disease (CKD) and chronic liver disease (CLD), particularly among those awaiting solid organ transplantation. Early identification of auditory dysfunction is essential to optimize communication, treatment adherence, and post transplant care. To describe the prevalence, severity, and audiometric patterns of hearing loss in adult candidates for kidney or liver transplantation. METHODS: A cross sectional study was conducted in 36 adult patients with advanced CKD or CLD evaluated for kidney or liver transplantation at a tertiary academic center. All participants underwent otomicroscopy, tympanometry, pure tone audiometry, distortion product otoacoustic emissions (DPOAEs), and tinnitus assessment using the Tinnitus Handicap Inventory. Hearing loss was defined as a pure tone average 20 dB HL across 0.5 4 kHz in either ear. RESULTS: Hearing loss was identified in 30.6% of patients (CLD: 31.6%; CKD: 29.4%), predominantly mild to moderate, with symmetrical high frequency sensorineural patterns. Distortion product otoacoustic emissions abnormalities were observed in 56.9% of ears, suggesting subclinical cochlear dysfunction. Tinnitus was reported in 38.2% of participants, with no significant differences between groups. All cases of tinnitus were classified as slight or mild handicap. Use of acetylsalicylic acid was significantly associated with hearing loss among CKD patients (P=.003). CONCLUSIONS: Hearing loss and tinnitus are common in patients with advanced CKD or CLD awaiting transplantation. Comprehensive audiological assessment, including DPOAEs, may improve pre transplant evaluation by identifying patients at risk for auditory impairment and informing ototoxic medication decisions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0587",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0587_repeated_reconstructive_surgery_in_a_patient_with_an_infecti.md",
+   "snippet": "Title [Repeated reconstructive surgery in a patient with an infection of the abdominal aortic endograft and a synthetic cross graft in conditions of sepsis (clinical case)] Authors Khamitov F F, Parfenov I P, Matochkin E A, Gadzhimuradov R ",
+   "text": "Infectious Disease scraped pubmed PubMed / Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery Title [Repeated reconstructive surgery in a patient with an infection of the abdominal aortic endograft and a synthetic cross graft in conditions of sepsis (clinical case)] Authors Khamitov F F, Parfenov I P, Matochkin E A, Gadzhimuradov R U, Brovko S V, Pavlova I A Journal / DOI Angiologiia i sosudistaia khirurgiia = Angiology and vascular surgery · DOI: 10.33029/1027 6661 2026 32 2 130 135 · PMID: 42732611 https://pubmed.ncbi.nlm.nih.gov/42732611/ Abstract Infection of the abdominal aortic endograft and synthetic shunt are life threatening complications. Despite the development of modern methods of surgical treatment and antimicrobial therapy, the problem of infectious complications after aortic reconstructions using synthetic prostheses remains relevant. The search for optimal surgical approaches continues, including the use of biological materials such as homographs to replace infected structures. The article presents a clinical case of successful surgical treatment of a patient with infected abdominal aortic endograft and a femoral femoral synthetic bypass graft in a patient with advanced sepsis. The patient, who was admitted in a state of sepsis with an infected abdominal aortic endograft and a synthetic femoral femoral bypass graft, underwent abdominal aortic reprosthetics using a homograph. It has been shown that a biological prosthesis can be implanted in the area of an infected synthetic prosthesis with a good postoperative result, even in conditions of sepsis. However, this approach requires highly qualified surgeons and careful planning. Additional research is needed to assess the long term safety and effectiveness of using homographs. If it is impossible to use autovens to replace an infected synthetic abdominal aortic prosthesis, it is possible to successfully use a homograph with mandatory dynamic monitoring in the near and long term postoperative periods for early diagnosis of reinfection and aneurysmal transformation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0586",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of international advanced otology",
+   "confidence": "medium",
+   "date": "2026-09-13",
+   "path": "content/papers/2026/2026-09-13_paper-2026-0586_association_between_atrial_fibrillation_and_hearing_loss_a_c.md",
+   "snippet": "Title Association Between Atrial Fibrillation and Hearing Loss: A Cross Sectional Study Authors Shim Ye Ji Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262430 · PMID: 42732625 https://pubmed.ncbi.nlm.",
+   "text": "Cardiology scraped pubmed PubMed / The journal of international advanced otology Title Association Between Atrial Fibrillation and Hearing Loss: A Cross Sectional Study Authors Shim Ye Ji Journal / DOI The journal of international advanced otology · DOI: 10.65717/iao.2026.262430 · PMID: 42732625 https://pubmed.ncbi.nlm.nih.gov/42732625/ Abstract BACKGROUND: Atrial fibrillation (AF) is associated with various end organ complications through mechanisms including thromboembolism and microvascular dysfunction. The cochlea, with its high metabolic demands and limited collateral circulation, is particularly vulnerable to circulatory disturbances. However, the association between AF and hearing loss remains poorly understood, with limited and conflicting evidence from prior studies. Therefore, this study aimed to investigate the association between AF and hearing thresholds. METHODS: A single center, cross sectional study was conducted on 129 adults who underwent pure tone audiometry, 12 lead electrocardiography, and 24 hour Holter monitoring. Subjects were categorized into an AF group (n=42) and a control group (n=87). The primary outcome was the better ear average hearing threshold across 0.5, 1, 2, and 4 kHz. Generalized additive models were used to assess the association between AF and hearing thresholds, adjusting for age, sex, body mass index, and other cardiometabolic risk factors. Frequency specific analyses were also conducted. RESULTS: After adjusting for covariates, AF was independently associated with a 4.28 dB HL elevation in hearing thresholds (95% CI: 3.47 5.10, P=.017). Frequency specific analyses revealed that the association was most pronounced at 4 kHz, with a 7.40 dB HL elevation at this frequency (95% CI: 2.27 10.05, P=.004). CONCLUSION: This study provides preliminary evidence of an association between AF and hearing loss, suggesting that AF could be considered in investigations aimed at identifying modifiable risk factors for hearing loss. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0018",
