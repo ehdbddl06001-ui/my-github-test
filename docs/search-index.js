@@ -5,28 +5,28 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2406,
+  "total": 2414,
   "byType": {
    "usmle": 144,
    "anatomy": 655,
+   "paper": 600,
    "kmle": 971,
    "imaging": 27,
-   "paper": 592,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 655,
-   "Cardiology": 185,
-   "Nephrology": 155,
-   "Infectious Disease": 132,
-   "Pediatrics": 110,
-   "Hematology-Oncology": 88,
-   "Pathology": 84,
+   "Cardiology": 186,
+   "Nephrology": 156,
+   "Infectious Disease": 133,
+   "Pediatrics": 111,
+   "Hematology-Oncology": 89,
+   "Pathology": 85,
    "Obstetrics & Gynecology": 74,
    "Neurology": 73,
    "Psychiatry": 72,
-   "Surgery": 67,
+   "Surgery": 68,
    "Endocrinology": 62,
    "Gastroenterology": 61,
    "Pulmonology": 61,
@@ -36,7 +36,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 60,
    "Rheumatology": 60,
    "Hematology": 59,
-   "Laboratory Medicine": 58,
+   "Laboratory Medicine": 59,
    "Physiology": 17,
    "산부인과": 15,
    "Pharmacology": 11,
@@ -59,7 +59,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 1582,
-   "medium": 775,
+   "medium": 783,
    "low": 49
   },
   "tagCount": 3340
@@ -507,6 +507,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0509-s10-subnote.md",
    "snippet": "0. 이 회차의 축 — 세 문장 1. 통로가 내용물을 정한다 — 팔오금·손목굴·고샅관, 세 개의 문을 지나는 것만 외우면 이 회차의 절반이 끝난다. 2. 칸이 신경을 정한다 — 아래팔 앞칸은 정중·자신경, 뒤칸은 노신경(뒤뼈사이). 예외는 딱 둘(자쪽손목굽힘근, 깊은손가락굽힘근 안쪽 절반)이고 그 예외가 문제로 나온다. 3. 배벽은 층이 곧 이야기다 — 세 근육의 널힘줄이 배곧은근집을 만들고, 그 층이 그대로 내려가 정삭의 세",
    "text": "Anatomy 10회차 서브노트 — 위팔 앞칸·팔오금·아래팔 앞칸·손바닥 / 배벽·고샅관·정삭·고환 10회차 · 팔·배 서브노트 10회차 팔오금 손목굴 고샅관 정삭 배곧은근집 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 통로가 내용물을 정한다 — 팔오금·손목굴·고샅관, 세 개의 문을 지나는 것만 외우면 이 회차의 절반이 끝난다. 2. 칸이 신경을 정한다 — 아래팔 앞칸은 정중·자신경, 뒤칸은 노신경(뒤뼈사이). 예외는 딱 둘(자쪽손목굽힘근, 깊은손가락굽힘근 안쪽 절반)이고 그 예외가 문제로 나온다. 3. 배벽은 층이 곧 이야기다 — 세 근육의 널힘줄이 배곧은근집을 만들고, 그 층이 그대로 내려가 정삭의 세 막이 된다. 1. 위팔 앞칸 Anterior compartment of the arm !fig docs/assets/anatomy/tree s10 nerve labeled.svg 위팔에서 손까지의 신경 — 칸이 신경을 정한다 1) 근육 세 개 — 전부 근육피부신경 근육 이는곳 닿는곳 작용 위팔두갈래근 biceps brachii 긴갈래 ==접시위결절== · 짧은갈래 부리돌기 ==노뼈거친면== (radial tuberosity) + ==위팔두갈래근널힘줄== 팔꿈치 굽힘 + 강력한 뒤침 부리위팔근 coracobrachialis 부리돌기 위팔뼈 몸통 안쪽 어깨 굽힘·모음 위팔근 brachialis 위팔뼈 앞면 아래쪽 자뼈거친면 팔꿈치 굽힘의 주동근 긴갈래 힘줄은 ==결절사이고랑== (intertubercular groove)을 지나 관절주머니 안으로 들어간다 — 관절 안 에 있으면서 윤활막 밖 에 있는 드문 힘줄. ==근육피부신경은 부리위팔근을 뚫고== 지나간다. 이 관통이 신경 확인의 표지다. 위팔근은 근육피부신경 + ==노신경 가지==를 이중으로 받는다(변이가 아니라 정상). 2) 위팔의 신경 — 지나가기만 한다 신경 위팔에서의 경로 이 회차의 포인트 정중신경 median n. 위팔동맥과 나란히, 가쪽→앞→안쪽으로 건너간다 ==위팔에서 가지를 내지 않는다== 자신경 ulnar n. 중간에서 안쪽근육사이막을 뚫고 뒤칸으로 ==안쪽위관절융기 뒤==에서 피부 바로 밑 노신경 radial n. 노신경고랑을 돌아 가쪽근육사이막을 뚫는다 팔오금 가쪽 에서 다시 만난다 [!주의] 위팔에서는 가지를 안 낸다 :: 정중신경과 자신경은 위팔에서 근육가지를 내지 않는다. \"위팔 앞칸 3근은 전부 근육피부신경\"이 성립하는 이유다. 3) 위팔동맥 Brachial artery 큰원근 아래모서리에서 겨드랑동맥이 이름을 바꾼다. ==안쪽두갈래근고랑== (medial bicipital groove)에서 만져진다. 가지: ==깊은위팔동맥== (노신경과 함께 노신경고랑으로) · ==위·아래자쪽곁동맥== · 영양동맥. ==동반정맥== (venae comitantes)이 동맥을 좌우로 끼고 달린다. [!임상] 혈압 측정의 자리 :: 혈압 측정의 청진 자리가 바로 팔오금의 위팔동맥이다. 커프가 동맥을 누르고, 청진기는 ==위팔두갈래근널힘줄 안쪽==에 댄다. 2. 팔오금 Cubital fossa !fig docs/assets/anatomy/tree s10 bundle labeled.svg 팔오금 · 손목굴 · 고샅관 — 배열 순서가 그대로 태깅 문제다 1) 경계 부분 이루는 것 위변 두 위관절융기를 잇는 가상선 가쪽변 ==위팔노근== brachioradialis 안쪽변 ==원엎침근== pronator teres 바닥 위팔근 + 손뒤침근 지붕 깊은근막 + ==위팔두갈래근널힘줄== (bicipital aponeurosis) 2) 내용물 — 가쪽에서 안쪽으로 순서 구조 메모 ① ==위팔두갈래근 힘줄== biceps tendon 가장 가쪽 · 노뼈거친면으로 ② ==위팔동맥== brachial a. 힘줄 안쪽 · 여기서 노동맥·자동맥으로 갈린다 ③ ==정중신경== median n. 가장 안쪽 · 원엎침근 두 갈래 사이로 빠진다 얕은층(널힘줄 위 )에는 ==팔오금중간정맥== 과 가쪽아래팔피부신경이 있다. ==널힘줄이 동맥·신경을 덮어 보호==하기 때문에 정맥천자가 비교적 안전하다. 널힘줄을 \"구원자 널힘줄(grace à Dieu fascia)\"이라 부르는 이유. [!TIP] 노신경은 내용물이 아니다 :: 노신경은 팔오금 삼각 밖 가쪽 (위팔노근과 위팔근 사이)에 있다. 내용물 셋에 끼워 넣지 말 것. 3. 아래팔 앞칸 Anterior compartment of the forearm 1) 얕은층 — 공통굽힘근힘줄(안쪽위관절융기)에서 근육 신경 메모 원엎침근 pronator teres 정중신경 위팔자갈래 + 노갈래, 그 사이로 ==정중신경 통과== 노쪽손목굽힘근 flexor carpi radialis 정중신경 손목에서 ==노동맥의 안쪽 표지== 긴손바닥근 palmaris longus 정중신경 ==약 15%에서 없다== · 힘줄이식의 공여 자쪽손목굽힘근 flexor carpi ulnaris ==자신경== 앞칸의 예외 1 · ==콩알뼈==에 닿는다 얕은손가락굽힘근 flexor digitorum superficialis 정중신경 중간층 · 2~5지 중간마디뼈 2) 깊은층 — 전부 앞뼈사이신경(예외 하나) 근육 신경 메모 깊은손가락굽힘근 flexor digitorum profundus ==가쪽 절반 앞뼈사이신경 / 안쪽 절반 자신경== 앞칸의 예외 2 · 2~5지 끝마디뼈 긴엄지굽힘근 flexor pollicis longus 앞뼈사이신경 엄지 끝마디뼈 네모엎침근 pronator quadratus 앞뼈사이신경 엎침의 주동근 · 가장 깊다 [!암기] 중간마디와 끝마디 :: 얕은손가락굽힘근은 중간마디 , 깊은손가락굽힘근은 끝마디 . 얕은 것이 갈라져 깊은 것을 통과시킨다(perforated/perforating tendon). 3) 노동맥과 자동맥 노동맥 radial a. 자동맥 ulnar a. 위치 얕고 가쪽 깊고 안쪽 표지 ==위팔노근 힘줄 안쪽== 먼쪽 절반에서 자쪽손목굽힘근 가쪽 동반신경 노신경 얕은가지(가쪽) ==자신경(안쪽)== 되돌이가지 노쪽되돌이동맥 자쪽되돌이동맥 큰 가지 — ==온뼈사이동맥== → 앞·뒤뼈사이동맥 손에서 ==깊은손바닥동맥활== ==얕은손바닥동맥활== [!임상] 응용과제 — 왜 노동맥에서 채혈·맥박을 보는가 :: ① 손목 먼쪽에서 ==깊은근막 바로 아래, 노뼈 위==에 놓여 눌러 지혈하기 좋다. ② 위팔노근 힘줄이라는 확실한 표지가 있다. ③ ==두 개의 손바닥동맥활이 문합==하므로 노동맥이 막혀도 자동맥이 손을 먹인다. 그래서 동맥관 삽입 전에 ==Allen 검사==로 자동맥 쪽 활의 개통을 확인한다. 4. 손목굴 Carpal tunnel 내용 바닥 손목뼈가 만든 고랑(오목) 지붕 ==굽힘근지지띠== (flexor retinaculum) 네 기둥 몸쪽 ==손배뼈결절·콩알뼈== / 먼쪽 ==큰마름뼈결절·갈고리뼈갈고리== 지나는 것 얕은손가락굽힘근 힘줄 4 + 깊은손가락굽힘근 힘줄 4 + 긴엄지굽힘근 힘줄 1 + ==정중신경== = 10 안 지나는 것 자신경·자동맥(==자신경굴==) · 노동맥(코담배갑) · 정중신경 ==손바닥피부가지== · 긴손바닥근 힘줄 힘줄들은 ==손가락굽힘근온힘줄집== (common flexor sheath, 척주윤활집)에 싸여 있고, 긴엄지굽힘근은 따로 싼다. ==자신경굴(Guyon canal)== 은 콩알뼈와 갈고리뼈갈고리 사이, 굽힘근지지띠 위 (바닥쪽손목인대 아래)를 지난다 — 손목굴과 다른 방 이다. [!임상] 손바닥 감각이 남는 이유 :: 손목굴증후군에서 엄지두덩 위축 + 가쪽 3.5손가락 감각저하 가 오지만 ==손바닥 중앙 감각은 남는다==. 손바닥피부가지가 지지띠 위로 지나기 때문이다. 이 한 가지가 손목굴증후군과 더 몸쪽 정중신경병증을 가른다. 5. 손바닥 Palm !fig docs/assets/anatomy/tree s10 vessel labeled.svg 위팔에서 손까지의 혈관 — 갈라졌다가 두 개의 활로 다시 만난다 1) 층 1. 피부 → ==손바닥널힘줄== (palmar aponeurosis, 긴손바닥근 힘줄의 연속) → ==짧은손바닥근== (자신경 얕은가지). 2. 널힘줄 밑에 ==얕은손바닥동맥활== 과 온바닥쪽손가락신경·동맥. 3. 더 깊이 굽힘근힘줄 + ==벌레근==, 가장 깊이 ==깊은손바닥동맥활== 과 뼈사이근·엄지모음근. 2) 두 개의 동맥활 얕은활 깊은활 주인 ==자동맥== ==노동맥== 닫는 가지 노동맥 얕은손바닥가지 자동맥 깊은가지 위치 더 ==먼쪽== (엄지 편 손의 자쪽 선) 더 ==몸쪽== 가지 온바닥쪽손가락동맥 → 고유바닥쪽손가락동맥 손바닥쪽허리뼈사이동맥 3) 손의 근육 — 자신경이 거의 다 맡는다 무리 근육 신경 엄지두덩 짧은엄지벌림근 · 짧은엄지굽힘근(얕은갈래) · 엄지맞섬근 ==정중신경 되돌이가지== 엄지모음근 · 짧은엄지굽힘근 깊은갈래 ==자신경 깊은가지== 새끼두덩 새끼벌림근 · 짧은새끼굽힘근 · 새끼맞섬근 자신경 깊은가지 벌레근 1·2 (노쪽) ==정중신경== 3·4 (자쪽) ==자신경 깊은가지== 뼈사이근 등쪽 4(벌림 DAB) · 바닥쪽 3(모음 PAD) 자신경 깊은가지 벌레근은 ==깊은손가락굽힘근 힘줄에서 일어나 폄근널힘줄에 닿는다== — 뼈에서 일어나지 않는 드문 근육. 그래서 MP 굽힘 + IP 폄 을 만든다. 힘줄은 ==손가락섬유집== (고리부분·십자부분) 안에서 달리고, ==힘줄끈== (vincula tendinum)이 혈액을 공급한다. [!주의] 자신경은 손 전체의 신경이다 :: \"자신경 손상 = 새끼만 저리다\"가 아니다. ==손의 내재근 대부분이 자신경==이라 갈퀴손(claw hand)·엄지모음 약화(Froment 징후)가 본체다. 6. 배벽 — 구획과 얕은층 Abdominal wall 1) 사분역과 아홉 부위 기준선 정의 ==갈비밑면== subcostal plane 양쪽 열째갈비연골 아랫면 ==결절사이면== intertubercular plane 양쪽 엉덩뼈결절 ==빗장중간선== midclavicular line 빗장뼈 중간 아홉 부위: 오른갈비밑 · ==명치부위== · 왼갈비밑 / 오른옆구리 · ==배꼽부위== · 왼옆구리 / 오른고샅 · ==두덩부위== · 왼고샅. 2) 얕은근막 — 두 층(배꼽 아래) 층 성질 이어지는 곳 ==Camper 근막== 지방층 넓적다리·음낭의 ==음낭근육층== (dartos) ==Scarpa 근막== 막층 고샅인대 아래에서 ==넙다리근막에 붙는다== · 음경에서 얕은음경근막 [!임상] 소변이 퍼지는 범위 :: Scarpa 근막이 넙다리근막에 붙기 때문에 요도 파열의 소변이 ==넓적다리로는 안 내려가고 배벽·음낭·회음으로 퍼진다==. 3) 얕은 정맥과 피부신경 ==가슴배벽정맥== (thoracoepigastric v.)이 위·아래대정맥을 잇는다 — 아래대정맥 폐쇄에서 굵어진다. ==배꼽옆정맥== 은 간문맥과 연결 → 문맥고혈압에서 ==caput medusae==. ==가슴배신경== (T7–T11) + 갈비밑신경(T12): 가쪽배피부가지는 ==중간겨드랑선==에서, 앞배피부가지는 ==배곧은근집==을 뚫고 나온다. 피부분절 표지: ==T10 = 배꼽==, T7 = 칼돌기, L1 = 고샅부위. 7. 배근육과 배곧은근집 Abdominal muscles & rectus sheath 근육 섬유 방향 신경 메모 배바깥빗근 external oblique 아래·안쪽(주머니에 손 넣는 방향) T7–T11, 갈비밑 아래모서리가 ==고샅인대== · 널힘줄에 ==얕은고샅구멍== 배속빗근 internal oblique 위·안쪽(직각) T7–T12, L1 아래섬유가 ==고환올림근== 배가로근 transversus abdominis 수평 T7–T12, L1 배속빗근과 합쳐 ==고샅낫힘줄(결합힘줄)== 배곧은근 rectus abdominis 세로 T7–T12 ==나눔힘줄== 3~4개 · ==반달선==이 가쪽 경계 배세모근 pyramidalis 세로(작다) T12 ==백색선을 당긴다== · 없는 사람도 있다 배곧은근집 — 활꼴선이 가른다 활꼴선 위 활꼴선 아래 ────────────────────── ────────────────────── 앞엽 = 바깥빗근 널힘줄 앞엽 = 세 널힘줄 전부 + 속빗근 앞판 배곧은근 배곧은근 뒤엽 = 속빗근 뒤판 뒤엽 = 없음 + 가로근 널힘줄 → 배가로근막이 직접 닿는다 ==활꼴선== (arcuate line)은 배꼽과 두덩결합의 중간쯤. 그 아래로 ==아래배벽동맥==이 배곧은근집에 들어온다. 집 안에서 ==위배벽동맥(속가슴동맥)==과 ==아래배벽동맥(바깥엉덩동맥)==이 ==배꼽 부근에서 문합==한다 — 대동맥↔엉덩동맥 샛길. 세 널힘줄이 정중선에서 만나 ==백색선== (linea alba). 8. 고샅관 Inguinal canal 1) 네 벽 — \"앞·뒤·위·아래\" 벽 이루는 것 앞벽 ==배바깥빗근 널힘줄== (가쪽 1/3은 배속빗근 추가) 뒤벽 ==배가로근막== (안쪽 1/3은 고샅낫힘줄 추가) 지붕 배속빗근·배가로근의 활꼴 아래모서리 바닥 ==고샅인대==의 도랑 (안쪽 끝은 오목인대) 2) 두 구멍 ==깊은고샅구멍== — 배가로근막의 구멍, ==아래배벽동맥 가쪽==(= 가쪽고샅오목). ==얕은고샅구멍== — 배바깥빗근 널힘줄의 삼각 틈. 안쪽다리·가쪽다리 + ==다리사이섬유==. 3) 앞배벽 속면의 다섯 주름·세 오목 주름 속에 있는 것 가쪽의 오목 ==정중배꼽주름== (1개) 요막관 흔적 — ==안쪽배꼽주름== (2개) 닫힌 배꼽동맥 방광위오목 ==가쪽배꼽주름== (2개) ==아래배벽동맥== 안쪽고샅오목 / 가쪽고샅오목 [!임상] 응용과제 — 고샅탈장이 생기는 구조적 이유 :: ① 고환이 배안에서 음낭으로 내려가며 ==배벽을 뚫고 지나간 길==이 그대로 남는다. ② 그 자리는 근육이 아니라 ==널힘줄과 근막==뿐이라 약하다. ③ 두 발생 경로가 두 탈장을 만든다 — ==속(간접)고샅탈장==은 깊은고샅구멍으로 들어가 ==아래배벽동맥 가쪽==, 정삭 속 을 따라 음낭까지; ==직접고샅탈장==은 뒤벽(Hesselbach 삼각)을 밀고 나와 ==동맥 안쪽==, 정삭 밖 . 배속빗근·배가로근이 기침·복압에 고샅관을 조이는 ==셔터 작용==이 정상 방어인데, 이것이 약해지면 탈장이 생긴다. Hesselbach 삼각 = 가쪽 ==아래배벽동맥== · 안쪽 ==배곧은근 가쪽모서리== · 아래 ==고샅인대==. 9. 정삭·음낭·고환 Spermatic cord, scrotum, testis 1) 세 막 — 배벽 세 층에서 그대로 막 유래 ==바깥정삭근막== 배바깥빗근 널힘줄 ==고환올림근 + 고환올림근막== 배속빗근 ==속정삭근막== 배가로근막 2) 내용물 — \"3동 3신 3기타\" 구분 구조 동맥 3 ==고환동맥==(배대동맥) · 정관동맥 · 고환올림근동맥 신경 3 ==음부넙다리신경 생식가지==(고환올림근) · 교감신경섬유 · (관 속을 함께 지나는 ==엉덩고샅신경==은 정삭 밖 ) 기타 3 ==정관== · ==덩굴정맥얼기== · 림프관 + 초상돌기 흔적 3) 고환 ==고환집막== (tunica vaginalis) — 초상돌기의 남은 것, 벽쪽·내장쪽 두 층 + ==고환집막공간==. 그 속에 ==백색막== (tunica albuginea) → 사이막 → ==정세관== → 곧은세관 → 고환그물 → ==고환날세관== → 부고환. 음낭은 ==음낭사이막==으로 좌우가 나뉘고, 피부 밑은 ==음낭근육층== (dartos, 민무늬근). [!주의] 고환과 음낭의 림프가 다르다 :: ==림프는 고환과 음낭이 다르다.== 고환은 발생 위치를 따라 ==허리(대동맥옆) 림프절==로, 음낭 피부는 ==얕은샅고랑 림프절==로 간다. 고환암과 음낭 피부병변의 전이 경로가 갈리는 지점이다. [!임상] 고환올림근반사 :: ==고환올림근반사== — 넓적다리 안쪽 피부(감각: 엉덩고샅신경, L1) → 고환올림근 수축(운동: 음부넙다리신경 생식가지, L1–L2). 고환꼬임에서 소실된다. 10. 예습시험 체크리스트 10 1. 팔오금의 경계 다섯과 내용물 셋을 가쪽에서 안쪽 순으로 말할 수 있는가? 2. 위팔에서 정중신경·자신경이 가지를 내지 않는다는 점과 그 결과를 설명할 수 있는가? 3. 아래팔 앞칸에서 정중신경이 맡지 않는 두 예외를 댈 수 있는가? 4. 손목굴을 지나는 10개와 지나지 않는 다섯을 구분할 수 있는가? 5. 손목굴증후군에서 손바닥 중앙 감각이 남는 이유를 말할 수 있는가? 6. 얕은·깊은 손바닥동맥활의 주인과 몸쪽/먼쪽 관계를 그릴 수 있는가? 7. LOAF를 대고 나머지 손 내재근의 신경을 말할 수 있는가? 8. 배곧은근집의 구성이 활꼴선 위아래에서 어떻게 달라지는가? 9. 고샅관 네 벽과 두 구멍, 속/직접 탈장의 감별 기준을 말할 수 있는가? 10. 정삭 세 막이 배벽의 어느 층에서 왔는지 순서대로 말할 수 있는가?"
+  },
+  {
+   "id": "paper-2026-0600",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of bone and joint surgery. American volume",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0600_immediate_self_rehabilitation_with_versus_without_sling_immo.md",
+   "snippet": "Title Immediate Self Rehabilitation With Versus Without Sling Immobilization After Open Latarjet Procedures for Recurrent Anterior Shoulder Instability: A Randomized Controlled Trial Authors Goetti Patrick, Bothorel Hugo, Martinho Tiago, Se",
+   "text": "Surgery scraped pubmed PubMed / The Journal of bone and joint surgery. American volume Title Immediate Self Rehabilitation With Versus Without Sling Immobilization After Open Latarjet Procedures for Recurrent Anterior Shoulder Instability: A Randomized Controlled Trial Authors Goetti Patrick, Bothorel Hugo, Martinho Tiago, Seurot Antoine, Zbinden Jeanni, Collin Philippe, Lädermann Alexandre Journal / DOI The Journal of bone and joint surgery. American volume · DOI: 10.2106/JBJS.25.00560 · PMID: 42735230 https://pubmed.ncbi.nlm.nih.gov/42735230/ Abstract BACKGROUND: Recent research has highlighted the adverse effects of immobilization in shoulder rehabilitation. The present study aimed to compare the efficacy of immediate self rehabilitation with and without sling immobilization following an open Latarjet procedure for recurrent anterior shoulder instability. METHODS: This monocentric randomized controlled trial included 86 patients (median age, 26; 92% male) divided into 2 groups: sling immobilization for 3 weeks postoperatively and no sling immobilization. Patients were evaluated with use of patient reported outcome measures (PROMs), motion capture analysis, and computed tomography scans before and 6 months after surgery. An additional questionnaire was administered at 2 years postoperatively to update PROMs. The primary outcome was the Rowe score. Secondary outcomes included visual analogue pain scale scores, single assessment numeric evaluation (SANE) scores for instability, patient satisfaction, range of motion, return to work and sport activities, graft union, and osteolysis. Patient acceptable symptom states were calculated and utilized to interpret PROMs. Multivariable linear and modified Poisson regressions were utilized to evaluate the effect of sling immobilization on different outcomes, independent of age, sex, preoperative PROMs, and range of motion. RESULTS: Both groups had comparable PROMs, range of motion, and radiographic outcomes at 6 months postoperatively, with no statistically significant differences observed between groups. At 2 years postoperatively, the no sling group reported greater Rowe and SANE instability scores by 12.5 points (p = 0.005) and 7.9 points (p = 0.001), respectively. The no sling treatment was more likely to achieve very high patient satisfaction (relative risk [RR], 1.53; p = 0.015), Rowe patient acceptable symptom state (RR, 1.47; p = 0.012), and SANE instability scores (RR, 1.55; p = 0.001). Two recurrent shoulder dislocations occurred in the sling group (5%). CONCLUSIONS: Immediate self rehabilitation without sling immobilization yielded superior functional scores at 2 years after a Latarjet procedure. Both approaches resulted in excellent early functional outcomes and a high return to sport rate, suggesting that sling avoidance did not negatively impact patient recovery. As a result, the practice of sling immobilization following open Latarjet procedures may be reconsidered. Further investigation into optimal postoperative rehabilitation strategies is warranted. LEVEL OF EVIDENCE: Therapeutic Level I. See Instructions for Authors for a complete description of levels of evidence. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0599",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Behavioural and cognitive psychotherapy",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0599_modularised_cbt_for_children_with_anxiety_disorders_client_f.md",
+   "snippet": "Title Modularised CBT for children with anxiety disorders: client feedback and therapeutic alliance as predictors of treatment outcome Authors de Paauw Telman Liesbeth G E, Maric Marija, Bögels Susan M, van Steensel Francisca J A Journal / ",
+   "text": "Pediatrics scraped pubmed PubMed / Behavioural and cognitive psychotherapy Title Modularised CBT for children with anxiety disorders: client feedback and therapeutic alliance as predictors of treatment outcome Authors de Paauw Telman Liesbeth G E, Maric Marija, Bögels Susan M, van Steensel Francisca J A Journal / DOI Behavioural and cognitive psychotherapy · DOI: 10.1017/S1352465826101416 · PMID: 42734134 https://pubmed.ncbi.nlm.nih.gov/42734134/ Abstract BACKGROUND: Modularised CBT is a promising intervention for childhood anxiety disorders (ADs). AIMS: The purpose of this study was to examine whether client feedback informed treatment (FIT) predicts treatment outcome of children with ADs. In addition, the predictive role of therapeutic alliance on treatment outcome was investigated. METHOD: Participants were children aged 7 17 years who all received individual modular CBT for their ADs and who were randomly allocated to either feedback informed treatment (FI mCBT) (n=38) or modular treatment without feedback (mCBT) (n=58). Therapists in FI mCBT received feedback regarding the child's anxiety symptoms and treatment satisfaction after each session. Anxiety symptoms were measured with the SCARED 71 at pre treatment, after five sessions (mid evaluation), post treatment, and at 10 weeks follow up. Alliance was measured with the Working Alliance Inventory and reported by child, therapist and observer. RESULTS: No differences were found in decreases of anxiety symptoms between FI mCBT and mCBT over time. Overall, therapeutic alliance did not predict decreases of anxiety symptoms over time. However, child reported therapeutic alliance was positively associated with anxiety symptoms in general. No effects were found for therapist and observer reported alliance. CONCLUSIONS: Our results suggest that providing therapists with feedback does not seem to improve treatment outcome for modular CBT in children with ADs. Therapeutic alliance did not predict treatment outcome in the context of modular CBT. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0598",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JCO oncology practice",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0598_multicancer_detection_tests_for_population_wide_screening_of.md",
+   "snippet": "Title Multicancer Detection Tests for Population Wide Screening of Asymptomatic Individuals: A Systematic Review Authors Hughes Suzanne, Chan Priscilla, Carle Harrison Chelsea, Yuill Susan, Barron Katherine, Luo Qingwei, Saya Sibel, Martine",
+   "text": "Laboratory Medicine scraped pubmed PubMed / JCO oncology practice Title Multicancer Detection Tests for Population Wide Screening of Asymptomatic Individuals: A Systematic Review Authors Hughes Suzanne, Chan Priscilla, Carle Harrison Chelsea, Yuill Susan, Barron Katherine, Luo Qingwei, Saya Sibel, Martinez Gutierrez Javiera, et al. Journal / DOI JCO oncology practice · DOI: 10.1200/OP 26 00570 · PMID: 42735373 https://pubmed.ncbi.nlm.nih.gov/42735373/ Abstract PURPOSE: Multicancer detection (MCD) tests aim to detect different cancer types using a single test. However, evidence on their potential for screening asymptomatic populations remains limited. We consolidated evidence from prospective cohort studies evaluating blood based MCD tests in primarily asymptomatic adults to contextualize upcoming randomized controlled trial results. MATERIALS AND METHODS: We updated and extended a prior review (to September 2023), conducting comprehensive Medline/Embase searches to February 1, 2026. Key outcomes included cancers detected and not detected by MCD tests, false positive MCD tests, and diagnostic investigation pathways. Risk of bias (RoB) was assessed using a modified Quality Assessment of Diagnostic Accuracy Studies 2 tool. RESULTS: From 2,723 screened records (244 previously shortlisted to 2023, 2,479 records for 2023 2026), we included 18 articles (12 studies, nine MCD tests); of these, 11 articles had not appeared in prior reviews. Cancer detection rates varied widely between studies, for example, new MCD test detected invasive cancers diagnosed ≤12 months post test ranging from 18.8 (95% CI, 11.0 to 30.1) to 43.8 (95% CI, 29.4 to 62.8) per 10,000 tested, with MCD test detected invasive stage I to II cancers ranging from 9.0 (95% CI, 4.2 to 17.2) to 21.0 (95% CI, 11.6 to 35.5) per 10,000 tested. False positives exceeded MCD test detected cancers (eg, approximately 1.6 fold in PATHFINDER, 1.5 fold K DETEK, 4.2 fold DETECT A, 8.1 fold SeekInCare studies). Diagnostic investigation pathways were prespecified/suggested in four of eight interventional studies. Where reported, the median time to diagnostic resolution varied from <0.1 months to 4 months for MCD test detected cancers, with substantially higher 75th percentiles (3.1 7 months), and similar patterns were observed for false positive MCD tests. No study was judged to have overall low RoB. CONCLUSION: Substantial heterogeneity in cancer yield metrics likely reflects differences in MCD technologies, diagnostic pathways, follow up duration, and background standard of care screening. Long term follow up, randomized trials, fully paired test comparisons, and implementation research are essential to determine the potential of MCD tests for population screening. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0597",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of urology : official journal of the Japanese Urological Association",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0597_pre_procedural_gamma_glutamyltransferase_to_lymphocyte_ratio.md",
+   "snippet": "Title Pre Procedural Gamma Glutamyltransferase To Lymphocyte Ratio as an Adjunctive Biomarker for Differentiating Hunner Type Interstitial Cystitis From Bladder Pain Syndrome Authors Kakita Shota, Matsuo Tomohiro, Yamada Shota, Otsubo Asato",
+   "text": "Pathology scraped pubmed PubMed / International journal of urology : official journal of the Japanese Urological Association Title Pre Procedural Gamma Glutamyltransferase To Lymphocyte Ratio as an Adjunctive Biomarker for Differentiating Hunner Type Interstitial Cystitis From Bladder Pain Syndrome Authors Kakita Shota, Matsuo Tomohiro, Yamada Shota, Otsubo Asato, Araki Kyohei, Mitsunari Kensuke, Ohba Kojiro, Hayashi Hiroko, et al. Journal / DOI International journal of urology : official journal of the Japanese Urological Association · DOI: 10.1111/iju.70638 · PMID: 42735265 https://pubmed.ncbi.nlm.nih.gov/42735265/ Abstract OBJECTIVES: To evaluate the potential role of the pre procedural gamma glutamyltransferase to lymphocyte ratio (GLR) as an adjunctive biomarker for differentiating Hunner type interstitial cystitis (HIC) from bladder pain syndrome (BPS). METHODS: Consecutive patients who underwent cystoscopic evaluation with hydrodistension for suspected interstitial cystitis/bladder pain syndrome between April 2016 and September 2025 were retrospectively analyzed. HIC and BPS were diagnosed by expert adjudication based on cystoscopic, clinical, and histopathological findings. GLR was calculated as serum gamma glutamyltransferase divided by peripheral lymphocyte count. Diagnostic performance was assessed using receiver operating characteristic analysis, and associations with HIC were evaluated using logistic regression. RESULTS: Among 106 patients, 62 had HIC and 44 had BPS. GLR was significantly higher in HIC than BPS (21.4 ± 14.7 vs. 14.2 ± 15.2, p = 0.016) and correlated with total histological activity score (ρ = 0.606, p < 0.001). GLR showed an AUC of 0.759, while GGT showed similar discrimination (AUC 0.776; p = 0.592 vs. GLR). Adding GLR to a clinical model did not improve discrimination (AUC 0.948 vs. 0.949; p = 0.879). In the covariate adjusted multivariable analysis, GLR remained associated with HIC (odds ratio 1.04, 95% confidence interval 1.01 1.10, p = 0.032). CONCLUSIONS: Pre procedural GLR may serve as a practical blood based adjunct reflecting bladder inflammatory histopathology and supporting early phenotyping across the IC/BPS spectrum, although prospective external validation is required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0596",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Hellenic journal of nuclear medicine",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0596_18f_fdg_pet_ct_in_multiple_myeloma_a_brief_review.md",
+   "snippet": "Title 18F FDG PET/CT in multiple myeloma: A brief review Authors Tsangaridi Agni, Gakidi Afroditi, Iakovou Ioannis, Dimitrakopoulou Strauss Antonia, Sachpekidis Christos Journal / DOI Hellenic journal of nuclear medicine · PMID: 42735366 ht",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Hellenic journal of nuclear medicine Title 18F FDG PET/CT in multiple myeloma: A brief review Authors Tsangaridi Agni, Gakidi Afroditi, Iakovou Ioannis, Dimitrakopoulou Strauss Antonia, Sachpekidis Christos Journal / DOI Hellenic journal of nuclear medicine · PMID: 42735366 https://pubmed.ncbi.nlm.nih.gov/42735366/ Abstract 18F FDG PET/CT plays an important role in multiple myeloma (MM) by providing functional information that complements anatomical assessment. Its clinical applications extend from disease detection and baseline prognostic evaluation to treatment response and minimal residual disease (MRD) assessment. 18F FDG PET/CT findings such as focal lesion burden, intensity of 18F FDG uptake, paramedullary (PMD) and extramedullary disease (EMD) have been associated with adverse outcomes, while metabolic response during or following treatment provides robust prognostic information. 18F FDG PET/CT also complements bone marrow based MRD assessment by detecting residual disease outside the biopsy site. However, false positive and false negative findings, together with incomplete standardisation of quantitative parameters, can complicate interpretation. Novel PET radiotracers and artificial intelligence (AI) based quantitative approaches are currently under investigation. This review summarises the current role of 18F FDG PET/CT in MM, with emphasis on initial diagnosis and disease extent evaluation, prognostic value, treatment response and MRD assessment, limitations and future perspectives. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0595",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0595_sglt2_inhibitor_empagliflozin_reduces_circulating_monocyte_p.md",
+   "snippet": "Title SGLT2 Inhibitor Empagliflozin Reduces Circulating Monocyte Platelet Aggregates: A Pilot Study Authors Safa B Ilkin, Oakes Jared M, Simmons Joshua D, Nian Hui, Kirk Leslie A, Cassidy Anna C, Olson Eric C, Hatem Zaid, et al. Journal / D",
+   "text": "Nephrology scraped pubmed PubMed / Circulation Title SGLT2 Inhibitor Empagliflozin Reduces Circulating Monocyte Platelet Aggregates: A Pilot Study Authors Safa B Ilkin, Oakes Jared M, Simmons Joshua D, Nian Hui, Kirk Leslie A, Cassidy Anna C, Olson Eric C, Hatem Zaid, et al. Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.125.077432 · PMID: 42735222 https://pubmed.ncbi.nlm.nih.gov/42735222/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0594",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medecine sciences : M/S",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0594_the_environment_s_contribution_to_the_spread_of_antibiotic_r.md",
+   "snippet": "Title [The environment's contribution to the spread of antibiotic resistance] Authors Gonzalez Flores Yolanda Elisabet, Hocquet Didier, Dagot Christophe Journal / DOI Medecine sciences : M/S · DOI: 10.1051/medsci/2026126 · PMID: 42735347 ht",
+   "text": "Infectious Disease scraped pubmed PubMed / Medecine sciences : M/S Title [The environment's contribution to the spread of antibiotic resistance] Authors Gonzalez Flores Yolanda Elisabet, Hocquet Didier, Dagot Christophe Journal / DOI Medecine sciences : M/S · DOI: 10.1051/medsci/2026126 · PMID: 42735347 https://pubmed.ncbi.nlm.nih.gov/42735347/ Abstract Antibiotic resistance in bacteria, which stems from mechanisms present in bacteria for millions of years, is a phenomenon that is now intensifying due to human activities and poses a major public health problem. The environment plays a key role as a reservoir, amplifier, and vector of resistance genes, a phenomenon facilitated by the presence of antibiotics, heavy metals, and biocides in soils and water. However, environmental surveillance remains limited, with an insufficient number of dedicated organizations and policies. Globally available data remain limited and heterogeneous, highlighting the need to harmonize surveillance approaches (i.e., sampling and methodology) to enable reliable comparisons between countries. It is therefore essential to implement coordinated actions at the international level, within the framework of an integrated \"One Health\" approach, to control the spread of antimicrobial resistance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0593",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Hellenic journal of nuclear medicine",
+   "confidence": "medium",
+   "date": "2026-09-14",
+   "path": "content/papers/2026/2026-09-14_paper-2026-0593_molecular_imaging_of_ttr_amyloidosis_new_data.md",
+   "snippet": "Title Molecular imaging of TTR amyloidosis: New data Authors Exadaktylou Paraskevi, Papadopoulou Kyriaki, Kamperidis Vasileios, Iakovou Ioannis, Papanastasiou Emmanouil, Doumas Argiris Journal / DOI Hellenic journal of nuclear medicine · PM",
+   "text": "Cardiology scraped pubmed PubMed / Hellenic journal of nuclear medicine Title Molecular imaging of TTR amyloidosis: New data Authors Exadaktylou Paraskevi, Papadopoulou Kyriaki, Kamperidis Vasileios, Iakovou Ioannis, Papanastasiou Emmanouil, Doumas Argiris Journal / DOI Hellenic journal of nuclear medicine · PMID: 42735364 https://pubmed.ncbi.nlm.nih.gov/42735364/ Abstract Transthyretin cardiac amyloidosis (ATTR CM) is a recognized cause of heart failure that results from age related or hereditary transthyretin misfolding and systemic amyloid deposition. It is characterized by clinical heterogeneity and may affect the heart among peripheral and autonomous nervous system, gastrointestinal tract, kidneys and eyes. Technetium 99m bone avid scintigraphy with standardized planar and SPECT/CT protocols, interpreted using Perugini grading and heart to contralateral lung ratios after exclusion of light chain amyloidosis, enables highly sensitive, non invasive diagnosis of ATTR CM and early detection in at risk individuals. This narrative review synthesizes recent data on molecular imaging, emphasizing the central role of nuclear medicine physicians in applying multimodality diagnostic algorithms, recognizing typical and equivocal scan patterns. It further explores emerging roles for quantitative SPECT/CT and amyloid PET tracers in monitoring response to disease modifying therapies, including tetramer stabilizers (tafamidis, acoramidis), RNA interference silencers (vutrisiran, patisiran), and investigational fibril targeting antibodies and gene editing strategies, underscoring a shift from purely diagnostic imaging toward dynamic treatment monitoring in ATTR CM. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1001",
