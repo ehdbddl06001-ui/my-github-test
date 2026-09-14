@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2391,
+  "total": 2406,
   "byType": {
+   "usmle": 144,
    "anatomy": 655,
    "kmle": 971,
+   "imaging": 27,
    "paper": 592,
-   "imaging": 18,
-   "usmle": 138,
    "ailab": 14,
    "basic": 3
   },
@@ -20,11 +20,11 @@ window.MEDKOS_INDEX = {
    "Cardiology": 185,
    "Nephrology": 155,
    "Infectious Disease": 132,
-   "Pediatrics": 109,
+   "Pediatrics": 110,
    "Hematology-Oncology": 88,
    "Pathology": 84,
    "Obstetrics & Gynecology": 74,
-   "Neurology": 72,
+   "Neurology": 73,
    "Psychiatry": 72,
    "Surgery": 67,
    "Endocrinology": 62,
@@ -37,34 +37,174 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 60,
    "Hematology": 59,
    "Laboratory Medicine": 58,
-   "Physiology": 16,
+   "Physiology": 17,
+   "산부인과": 15,
    "Pharmacology": 11,
+   "Biochemistry": 10,
    "Microbiology": 10,
-   "산부인과": 10,
-   "Biochemistry": 9,
-   "Immunology": 7,
-   "Internal Medicine": 7,
+   "Immunology": 8,
+   "Internal Medicine": 8,
+   "순환기": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "순환기": 4,
    "Oncology": 3,
+   "호흡기": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "병리·조직학": 2,
-   "호흡기": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1567,
+   "high": 1582,
    "medium": 775,
    "low": 49
   },
-  "tagCount": 3317
+  "tagCount": 3340
  },
  "docs": [
+  {
+   "id": "usmle-2026-0157",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Pallor and Falling Urine Output Five Days After Bloody Diarrhea in a Preschooler — Supporting the Kidney Without Feeding the Toxin",
+   "tags": [
+    "hemolytic-uremic-syndrome",
+    "STEC",
+    "Shiga-toxin",
+    "E-coli-O157",
+    "thrombotic-microangiopathy",
+    "schistocytes",
+    "acute-kidney-injury",
+    "supportive-care",
+    "antibiotics-contraindicated"
+   ],
+   "source": "USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Hemolytic-Uremic Syndrome; Freedman SB et al. Shiga toxin-producing E. coli infection, antibiotics, and risk of HUS: meta-analysis. Clin Infect Dis 2016; Ake JA et al. Early volume expansion in STEC O157:H7 infection. Pediatrics 2005)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0157.md",
+   "snippet": "A 4 year old girl is brought to the emergency department because of pallor, decreased activity, and only one small void in the past 18 hours. Nine days ago she ate an undercooked hamburger at a picnic; 5 days ago she developed crampy abdomi",
+   "text": "Pediatrics Pallor and Falling Urine Output Five Days After Bloody Diarrhea in a Preschooler — Supporting the Kidney Without Feeding the Toxin hemolytic-uremic-syndrome STEC Shiga-toxin E-coli-O157 thrombotic-microangiopathy schistocytes acute-kidney-injury supportive-care antibiotics-contraindicated USMLE-style / MedKOS (Nelson Textbook of Pediatrics 22e — Hemolytic-Uremic Syndrome; Freedman SB et al. Shiga toxin-producing E. coli infection, antibiotics, and risk of HUS: meta-analysis. Clin Infect Dis 2016; Ake JA et al. Early volume expansion in STEC O157:H7 infection. Pediatrics 2005) A 4 year old girl is brought to the emergency department because of pallor, decreased activity, and only one small void in the past 18 hours. Nine days ago she ate an undercooked hamburger at a picnic; 5 days ago she developed crampy abdominal pain and watery diarrhea that became bloody 2 days later and has now nearly resolved. She has received no medications. Her vital signs and laboratory studies are shown. She is pale and irritable, with mild periorbital edema, scattered petechiae on the shins, and no hepatosplenomegaly; there are no focal neurologic deficits. Which of the following is the most appropriate next step in management? A. Intravenous isotonic fluids B. Intravenous ciprofloxacin C. Platelet transfusion D. Therapeutic plasma exchange E. Oral loperamide 덜 익힌 햄버거 섭취 후 혈성 설사 → 5–10일 뒤 미세혈관병성 용혈빈혈(분열적혈구·LDH ↑·합토글로빈 ↓·DAT 음성) + 혈소판감소 + 급성 신손상(핍뇨·크레아티닌 2.4·고칼륨) + 대변 Shiga 독소(stx2) 양성 + 정상 응고·ADAMTS13 = 전형적(STEC) 용혈요독증후군. 특이 치료는 없고, 결과를 바꾸는 것은 지지 요법이다: 조기 등장성 수액으로 혈관 내 용적을 유지하면 핍뇨성 신부전·투석 필요가 줄고, 전해질·혈압·수분 균형을 자주 재평가하며 무뇨·중증 고칼륨·용적 과부하·요독증이면 투석한다. 항생제(B)는 세균 용해·독소 발현 증가로 HUS 위험을 높여 STEC 장염에서 금기이고, 혈소판 수혈(C)은 미세혈전을 늘릴 우려로 활동성 출혈·시술 전이 아니면 피하며, 혈장교환(D)은 ADAMTS13 결핍 TTP 나 보체매개 비전형 HUS 의 치료(전형 HUS 에서 근거 없음), 지사제(E)는 독소 체류를 늘려 HUS 위험을 올린다."
+  },
+  {
+   "id": "usmle-2026-0156",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Daily Headache, Pulsatile Tinnitus and Swollen Discs in a Young Woman With Normal Imaging — The Drug That Lowers the Pressure After the Needle Confirms It",
+   "tags": [
+    "idiopathic-intracranial-hypertension",
+    "pseudotumor-cerebri",
+    "papilledema",
+    "acetazolamide",
+    "carbonic-anhydrase-inhibitor",
+    "lumbar-puncture-opening-pressure",
+    "obesity",
+    "sixth-nerve-palsy"
+   ],
+   "source": "USMLE-style / MedKOS (Adams and Victor's Principles of Neurology 12e — Intracranial Hypertension; Mollan SP et al. Idiopathic intracranial hypertension consensus guidelines. J Neurol Neurosurg Psychiatry 2018; NORDIC IIHTT trial, JAMA 2014)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0156.md",
+   "snippet": "A 27 year old woman comes to the clinic because of 6 weeks of daily holocranial headache that is worse in the morning and on bending forward, brief episodes of visual dimming lasting a few seconds when she stands up, and a whooshing sound i",
+   "text": "Neurology Daily Headache, Pulsatile Tinnitus and Swollen Discs in a Young Woman With Normal Imaging — The Drug That Lowers the Pressure After the Needle Confirms It idiopathic-intracranial-hypertension pseudotumor-cerebri papilledema acetazolamide carbonic-anhydrase-inhibitor lumbar-puncture-opening-pressure obesity sixth-nerve-palsy USMLE-style / MedKOS (Adams and Victor's Principles of Neurology 12e — Intracranial Hypertension; Mollan SP et al. Idiopathic intracranial hypertension consensus guidelines. J Neurol Neurosurg Psychiatry 2018; NORDIC IIHTT trial, JAMA 2014) A 27 year old woman comes to the clinic because of 6 weeks of daily holocranial headache that is worse in the morning and on bending forward, brief episodes of visual dimming lasting a few seconds when she stands up, and a whooshing sound in both ears synchronous with her pulse. She has gained 12 kg over the past year. Her only medication is a combined oral contraceptive. Her vital signs and laboratory studies are shown. Funduscopic examination shows bilateral elevation of the optic discs with blurred margins and obscuration of the vessels at the disc edge; pupillary responses are normal and eye movements are full. The remainder of the neurologic examination is normal. Magnetic resonance imaging and venography of the brain are obtained, followed by lumbar puncture. In addition to a supervised weight loss program, which of the following is the most appropriate pharmacotherapy? A. Propranolol B. Acetazolamide C. Sumatriptan D. Methylprednisolone E. Amitriptyline 젊은 비만 여성 + 아침·전굴 시 악화 두통 + 일과성 시력흐림(transient visual obscurations) + 박동성 이명 + 양측 유두부종 + 신경학적 국소징후 없음 + MRI/MRV 에서 종괴·수두증·정맥동 혈전 없음(빈 안장·시신경집 확장은 지지 소견) + 개방압 34 cmH₂O 에 정상 뇌척수액 = 특발성 두개내압항진(IIH, 수정 Dandy 기준 충족). 1차 약물치료는 탄산탈수효소 억제제 아세타졸아마이드(맥락총의 뇌척수액 생성 억제, 시작 1–2 g/일 → 최대 4 g/일)이며, IIHTT 무작위시험에서 체중감량 단독 대비 시야·유두부종·삶의 질을 개선했다. 병행할 것은 체중 5–10% 감량, 시야검사 정기 추적, 시력 저하가 급속하면 시신경집 감압·뇌척수액 단락술로 넘어간다. 프로프라놀롤(A)·아미트립틸린(E)은 각각 편두통 예방·긴장형두통 관리이고, 수마트립탄(C)은 편두통 급성기 약으로 유두부종을 설명하지 못하며, 고용량 스테로이드(D)는 뇌종양 부종·시신경염의 치료로 IIH 에서는 중단 시 반동 상승과 체중 증가 때문에 권고되지 않는다."
+  },
+  {
+   "id": "usmle-2026-0155",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Bradycardia and Hypotension Two Hours After a Propranolol Overdose That Atropine Cannot Touch — The Hormone That Enters the Cardiomyocyte Through a Different Door",
+   "tags": [
+    "beta-blocker-overdose",
+    "propranolol",
+    "glucagon",
+    "sinus-bradycardia",
+    "cardiogenic-shock",
+    "atropine-refractory",
+    "high-dose-insulin",
+    "toxicology",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (Goldfrank's Toxicologic Emergencies 11e — β-Adrenergic Antagonists; 2023 AHA Focused Update on Management of Patients With Cardiac Arrest or Life-Threatening Toxicity Due to Poisoning; Tintinalli's Emergency Medicine 9e — Beta-Blocker Toxicity)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0155.md",
+   "snippet": "A 26 year old woman is brought to the emergency department 2 hours after ingesting an unknown number of her mother's propranolol tablets during an argument. She is drowsy but responds to voice and reports nausea. Her vital signs, laboratory",
+   "text": "Internal Medicine Bradycardia and Hypotension Two Hours After a Propranolol Overdose That Atropine Cannot Touch — The Hormone That Enters the Cardiomyocyte Through a Different Door beta-blocker-overdose propranolol glucagon sinus-bradycardia cardiogenic-shock atropine-refractory high-dose-insulin toxicology ECG USMLE-style / MedKOS (Goldfrank's Toxicologic Emergencies 11e — β-Adrenergic Antagonists; 2023 AHA Focused Update on Management of Patients With Cardiac Arrest or Life-Threatening Toxicity Due to Poisoning; Tintinalli's Emergency Medicine 9e — Beta-Blocker Toxicity) A 26 year old woman is brought to the emergency department 2 hours after ingesting an unknown number of her mother's propranolol tablets during an argument. She is drowsy but responds to voice and reports nausea. Her vital signs, laboratory studies, and rhythm strip are shown. Physical examination shows cool extremities and delayed capillary refill; the lungs are clear. Two liters of intravenous crystalloid and two doses of atropine (1 mg each) are administered without improvement in heart rate or blood pressure. Which of the following is the most appropriate next step in pharmacotherapy? A. Intravenous sodium bicarbonate B. Intravenous calcium gluconate C. Intravenous naloxone D. Intravenous glucagon E. Intravenous physostigmine 프로프라놀롤 과량 섭취 2시간 후 동성서맥(38/분)·저혈압·말초 관류 저하·경도 젖산산증·경도 저혈당 = β 차단제 중독의 심인성 쇼크. 수액·아트로핀에 반응하지 않는 서맥성 쇼크에서 다음 약은 고용량 글루카곤(3–10 mg IV 볼루스 → 3–5 mg/h 주입)이다. 글루카곤은 β 수용체가 아닌 자체 G단백연결 수용체를 통해 아데닐산고리화효소를 켜 cAMP 를 올려, 차단된 β 수용체를 우회해 심박수·수축력을 회복시킨다(그래서 β 차단제에 특이적 '해독제'로 불림). 그 다음 단계는 고용량 인슐린 포도당(1 U/kg 볼루스 → 1–10 U/kg/h), 카테콜아민 승압제, 지질 유제, 필요 시 경정맥 조율·기계적 순환보조다. 탄산수소나트륨(A)은 프로프라놀롤의 나트륨통로 차단으로 QRS 가 넓어졌을 때( 120 ms)·발작 시의 보조 치료이지 서맥성 쇼크의 1차 약이 아니고, 칼슘(B)은 칼슘통로차단제 중독의 1차 약으로 β 차단제에는 보조적이며, 날록손(C)·피조스티그민(E)은 각각 아편·항콜린 중독의 해독제다."
+  },
+  {
+   "id": "usmle-2026-0154",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Creatinine That Jumps a Week After Starting an ACE Inhibitor in Resistant Hypertension — The Arteriole Whose Tone the Drug Took Away",
+   "tags": [
+    "bilateral-renal-artery-stenosis",
+    "ACE-inhibitor",
+    "efferent-arteriole",
+    "angiotensin-II",
+    "GFR-autoregulation",
+    "renovascular-hypertension",
+    "acute-kidney-injury",
+    "filtration-fraction"
+   ],
+   "source": "USMLE-style / MedKOS (Hall JE. Guyton and Hall Textbook of Medical Physiology 14e — Glomerular Filtration and Its Control; Boron & Boulpaep Medical Physiology 3e — Glomerular Filtration and Renal Blood Flow; KDIGO 2021 Blood Pressure in CKD guideline)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0154.md",
+   "snippet": "A 67 year old man with a 30 year history of cigarette smoking and peripheral arterial disease has hypertension that has remained poorly controlled despite amlodipine, chlorthalidone, and metoprolol. Lisinopril is added. Eight days later he ",
+   "text": "Physiology Creatinine That Jumps a Week After Starting an ACE Inhibitor in Resistant Hypertension — The Arteriole Whose Tone the Drug Took Away bilateral-renal-artery-stenosis ACE-inhibitor efferent-arteriole angiotensin-II GFR-autoregulation renovascular-hypertension acute-kidney-injury filtration-fraction USMLE-style / MedKOS (Hall JE. Guyton and Hall Textbook of Medical Physiology 14e — Glomerular Filtration and Its Control; Boron & Boulpaep Medical Physiology 3e — Glomerular Filtration and Renal Blood Flow; KDIGO 2021 Blood Pressure in CKD guideline) A 67 year old man with a 30 year history of cigarette smoking and peripheral arterial disease has hypertension that has remained poorly controlled despite amlodipine, chlorthalidone, and metoprolol. Lisinopril is added. Eight days later he returns for follow up feeling well, with no dysuria, flank pain, rash, or new medications. His vital signs and laboratory studies are shown. Physical examination shows a soft bruit in both flanks and diminished pedal pulses. The rise in his serum creatinine is best explained by which of the following changes in renal hemodynamics? A. Decreased efferent arteriolar resistance B. Increased afferent arteriolar resistance C. Decreased plasma oncotic pressure in the glomerular capillaries D. Increased hydrostatic pressure in Bowman space E. Tubuloglomerular feedback mediated afferent vasoconstriction 저항성 고혈압 + 양측 옆구리 잡음 + 도플러에서 양측 신동맥 유속 300 cm/s + 작은 신장 = 죽상경화성 양측 신동맥협착. 협착 신장은 사구체 관류압이 낮아, 레닌 안지오텐신계가 만드는 안지오텐신 II 가 수출세동맥을 선택적으로 조여 사구체 모세혈관 정수압(P GC)을 유지함으로써 GFR 을 지탱하고 있다. ACE 억제제가 안지오텐신 II 생성을 끊으면 수출세동맥이 이완돼(저항 감소) 사구체 정수압이 떨어지고 GFR 이 급감 → 크레아티닌 급상승(투약 후 1주 내, 정상 침사·무단백뇨), 알도스테론 감소로 고칼륨혈증이 동반된다. 이는 '신장 자체가 손상된 것'이 아니라 혈역학적 GFR 감소라서 약을 끊으면 회복된다. 수입세동맥 수축(B)은 NSAID(프로스타글란딘 차단)·조영제·칼시뉴린 억제제의 기전이고, 사구체 교질삼투압 감소(C)는 오히려 GFR 을 올리며, 보우만공간 정수압 상승(D)은 폐쇄성 신병증, 세뇨관사구체 되먹임 수입세동맥 수축(E)은 원위세뇨관 NaCl 증가에 대한 반응으로 이 약의 작용점이 아니다."
+  },
+  {
+   "id": "usmle-2026-0153",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Anaphylaxis Minutes Into a Red Cell Transfusion in a Patient With Lifelong Sinopulmonary Infections — The Product Preparation That Would Have Removed the Trigger",
+   "tags": [
+    "selective-IgA-deficiency",
+    "anaphylactic-transfusion-reaction",
+    "anti-IgA-antibodies",
+    "washed-red-cells",
+    "type-I-hypersensitivity",
+    "leukoreduction",
+    "irradiation",
+    "TA-GVHD"
+   ],
+   "source": "USMLE-style / MedKOS (Abbas AK. Cellular and Molecular Immunology 10e — Congenital Immunodeficiencies; AABB Technical Manual 21e — Noninfectious Complications of Blood Transfusion; Yel L. Selective IgA deficiency. J Clin Immunol 2010)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0153.md",
+   "snippet": "A 34 year old woman with menorrhagia from uterine leiomyomas is receiving her first transfusion of packed red blood cells for symptomatic anemia. Since childhood she has had recurrent sinusitis, otitis media, and two episodes of Giardia dia",
+   "text": "Immunology Anaphylaxis Minutes Into a Red Cell Transfusion in a Patient With Lifelong Sinopulmonary Infections — The Product Preparation That Would Have Removed the Trigger selective-IgA-deficiency anaphylactic-transfusion-reaction anti-IgA-antibodies washed-red-cells type-I-hypersensitivity leukoreduction irradiation TA-GVHD USMLE-style / MedKOS (Abbas AK. Cellular and Molecular Immunology 10e — Congenital Immunodeficiencies; AABB Technical Manual 21e — Noninfectious Complications of Blood Transfusion; Yel L. Selective IgA deficiency. J Clin Immunol 2010) A 34 year old woman with menorrhagia from uterine leiomyomas is receiving her first transfusion of packed red blood cells for symptomatic anemia. Since childhood she has had recurrent sinusitis, otitis media, and two episodes of Giardia diarrhea; she has never been transfused. About 5 minutes after the transfusion begins, she develops diffuse urticaria, wheezing, and lip and tongue swelling, and she becomes hypotensive. The transfusion is stopped, and intramuscular epinephrine restores her blood pressure. Her vital signs at the time of the reaction and subsequent laboratory studies are shown. A clerical check confirms the unit was correctly issued to her. Which of the following measures would most likely have prevented this reaction? A. Leukoreduction of the red cell unit B. Gamma irradiation of the red cell unit C. Premedication with acetaminophen and diphenhydramine D. Transfusion of group O, Rh negative red cells E. Transfusion of washed red cells 평생 반복된 부비동염·중이염·지아르디아증 병력에 혈청 IgA < 7 mg/dL(IgG·IgM 정상) = 선택적 IgA 결핍. 이런 환자는 외부 IgA를 '이물'로 인식해 항 IgA IgE(또는 IgG) 항체를 만들 수 있고, 첫 수혈이라도(임신·감작 없이도 형성 가능) 제제 속 소량의 공여자 혈장 IgA에 노출되면 수 분 내 두드러기·기관지경련·혈관부종·저혈압, 즉 아나필락시스 수혈반응이 온다. 열이 없고, DAT 음성·유리 혈색소 정상·ABO 일치로 용혈반응이 배제되며, 트립타제 상승이 비만세포 탈과립을 뒷받침한다. 예방은 항원인 혈장 IgA 자체를 제거하는 것 — 생리식염수로 여러 번 세척한 적혈구(washed RBC)나 IgA 결핍 공여자 제제를 쓴다. 백혈구제거(A)는 발열성 비용혈반응·CMV·HLA 감작 예방, 감마조사(B)는 수혈 관련 이식편대숙주병 예방, 전처치(C)는 경증 알레르기·발열 반응을 줄일 뿐 아나필락시스를 막지 못하고, O Rh음성(D)은 ABO 부적합이 아닌 이 상황과 무관하다."
+  },
+  {
+   "id": "usmle-2026-0152",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned",
+   "tags": [
+    "MCAD-deficiency",
+    "beta-oxidation",
+    "hypoketotic-hypoglycemia",
+    "acylcarnitine",
+    "fasting-avoidance",
+    "medium-chain-triglycerides",
+    "newborn-screening",
+    "ACADM"
+   ],
+   "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance)",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/usmle/usmle-2026-0152.md",
+   "snippet": "An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago",
+   "text": "Biochemistry Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned MCAD-deficiency beta-oxidation hypoketotic-hypoglycemia acylcarnitine fasting-avoidance medium-chain-triglycerides newborn-screening ACADM USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance) An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago. He was born at term in a country without expanded newborn metabolic screening and has grown normally. On arrival he is drowsy but arousable, with mild hepatomegaly and no focal neurologic deficits. His vital signs and laboratory studies are shown. Intravenous dextrose is given, and within 30 minutes he is alert and playful. After recovery, plasma acylcarnitine profiling and urine organic acid analysis establish the diagnosis, and the parents ask how to prevent another episode. Which of the following is the most appropriate long term dietary recommendation? A. Ketogenic high fat diet B. Medium chain triglyceride oil supplementation C. Frequent carbohydrate containing meals with avoidance of fasting D. Strict dietary protein restriction E. Elimination of fructose and sucrose 16시간 금식 후 저혈당인데 케톤이 거의 없고(hypoketotic hypoglycemia), 암모니아·AST가 오르고, 아실카르니틴에서 C8(octanoylcarnitine)이 우세하게 오르며 소변에 hexanoylglycine·suberylglycine이 나오는 것은 중쇄 아실 CoA 탈수소효소(MCAD) 결핍의 고전적 소견이다. 중쇄 지방산의 β 산화가 막혀 케톤을 만들지 못하므로, 공복 시 뇌·근육이 의존할 대체 연료가 없고 간의 포도당신생합성도 아세틸 CoA 부족으로 약해져 저혈당이 온다. 따라서 장기 관리의 핵심은 '금식을 피하는 것'이다 — 나이에 맞는 최대 금식 시간(유아 8–12시간)을 넘기지 않게 자주 탄수화물 식사를 주고, 병 중에는 조기 포도당 공급(경구 해결 안 되면 IV dextrose)을 한다. 고지방 케톤식(A)은 산화 못 하는 지방을 더 주는 것이고, MCT 오일(B)은 기질 자체(C8–C10)를 직접 공급해 급성 대사 위기를 유발하는 금기이며(장쇄 지방산 산화장애의 치료와 혼동하기 쉬운 함정), 단백질 제한(D)은 요소회로 장애·유기산혈증의 관리, 과당·자당 배제(E)는 유전성 과당불내성의 관리다."
+  },
   {
    "id": "anatomy-daily-2026-09-15",
    "type": "anatomy",
@@ -1007,6 +1147,164 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0970.md",
    "snippet": "66세 남자가 급성 심근경색으로 관상동맥중재술을 받고 심장내과 병동에 입원한 지 2일째 새벽, 간호사가 보는 앞에서 갑자기 의식을 잃고 쓰러졌다. 즉시 심폐소생술을 시작하고 백마스크 환기와 정맥로 확보를 마쳤다. 가슴압박 2분 후 리듬을 확인하니 모니터는 자료와 같았고, 활력징후와 검사 소견은 자료와 같다. 다음으로 가장 적절한 처치는? A. 비동기 제세동 200 J B. 에피네프린 1 mg 정주 C. 아미오다론 300 mg ",
    "text": "Cardiology Cardiac Arrest with Asystole — Non-shockable Rhythm Management cardiac-arrest asystole acls epinephrine ecg KMLE 2026 / Claude Routine 66세 남자가 급성 심근경색으로 관상동맥중재술을 받고 심장내과 병동에 입원한 지 2일째 새벽, 간호사가 보는 앞에서 갑자기 의식을 잃고 쓰러졌다. 즉시 심폐소생술을 시작하고 백마스크 환기와 정맥로 확보를 마쳤다. 가슴압박 2분 후 리듬을 확인하니 모니터는 자료와 같았고, 활력징후와 검사 소견은 자료와 같다. 다음으로 가장 적절한 처치는? A. 비동기 제세동 200 J B. 에피네프린 1 mg 정주 C. 아미오다론 300 mg 정주 D. 아트로핀 1 mg 정주 E. 경피 심박조율 심정지 중 리듬 확인에서 여러 유도와 최대 감도에서도 전기 활동이 전혀 없으면 무수축이며, 무맥성 전기활동과 함께 비제세동 리듬이다. 비제세동 리듬은 고품질 가슴압박을 이어가면서 가능한 한 빨리 에피네프린 1 mg을 정주하고 3–5분마다 반복하며, 제세동·항부정맥제·아트로핀·조율은 권고되지 않는다."
+  },
+  {
+   "id": "imaging-2026-0027",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0027.md",
+   "snippet": "A 29 year old woman comes to the clinic to discuss contraception. She was diagnosed with pulmonary tuberculosis 2 weeks ago and has started a 6 month regimen that includes rifampin. She has taken a combined oral contraceptive containing 30 ",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 29 year old woman comes to the clinic to discuss contraception. She was diagnosed with pulmonary tuberculosis 2 weeks ago and has started a 6 month regimen that includes rifampin. She has taken a combined oral contraceptive containing 30 µg ethinyl estradiol for 4 years without problems and does not want to become pregnant during treatment. She is a nonsmoker and has no other medical conditions. Which of the following is the most appropriate contraceptive recommendation for the duration of her tuberculosis therapy? A. Depot medroxyprogesterone acetate injections every 12 weeks B. Continue the current combined oral contraceptive with strict daily adherence C. Switch to a combined pill containing 50 µg ethinyl estradiol D. Switch to an etonogestrel subdermal implant E. Switch to a progestin only pill containing norethindrone"
+  },
+  {
+   "id": "imaging-2026-0026",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0026.md",
+   "snippet": "28세 남자가 2개월 전부터 만져지는 오른쪽 음낭의 단단한 덩이로 왔다. 통증은 없고 외상이나 발열은 없었다. 진찰에서 오른쪽 고환에 지름 3 cm 의 딱딱하고 불규칙한 종괴가 있고 투광검사에서 빛이 통과하지 않는다. 음낭 초음파에서 고환 실질 안의 저에코 고형 종괴가 보인다. 혈청 알파태아단백 480 ng/mL, β hCG 210 mIU/mL, 젖산탈수소효소는 정상이다. 가장 적절한 처치는? A. 경피적 세침흡인 세포검사 B",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 28세 남자가 2개월 전부터 만져지는 오른쪽 음낭의 단단한 덩이로 왔다. 통증은 없고 외상이나 발열은 없었다. 진찰에서 오른쪽 고환에 지름 3 cm 의 딱딱하고 불규칙한 종괴가 있고 투광검사에서 빛이 통과하지 않는다. 음낭 초음파에서 고환 실질 안의 저에코 고형 종괴가 보인다. 혈청 알파태아단백 480 ng/mL, β hCG 210 mIU/mL, 젖산탈수소효소는 정상이다. 가장 적절한 처치는? A. 경피적 세침흡인 세포검사 B. 서혜부 절개를 통한 근치 고환절제술 C. 음낭을 통한 절개 생검 D. 시스플라틴 기반 항암화학요법 우선 시행 E. 6주 뒤 초음파 재검"
+  },
+  {
+   "id": "imaging-2026-0025",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과·비뇨의학·성호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0025.md",
+   "snippet": "32세 여자가 건강검진으로 받은 자궁경부세포검사에서 비정형 편평세포(ASC US)로 나와 산부인과에 왔다. 함께 시행한 고위험 인유두종바이러스 검사에서 16형 양성이었다. 월경은 규칙적이고 성교 후 출혈이나 냉은 없으며 이전 세포검사는 3년 전 정상이었다. 진찰에서 자궁경부에 육안적 병변은 없다. 가장 적절한 다음 검사는? A. 질확대경검사와 조준 생검 B. 12개월 뒤 세포검사와 HPV 검사 반복 C. 자궁경부 원추절제술 D",
+   "text": "산부인과 부인과·비뇨의학·성호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 32세 여자가 건강검진으로 받은 자궁경부세포검사에서 비정형 편평세포(ASC US)로 나와 산부인과에 왔다. 함께 시행한 고위험 인유두종바이러스 검사에서 16형 양성이었다. 월경은 규칙적이고 성교 후 출혈이나 냉은 없으며 이전 세포검사는 3년 전 정상이었다. 진찰에서 자궁경부에 육안적 병변은 없다. 가장 적절한 다음 검사는? A. 질확대경검사와 조준 생검 B. 12개월 뒤 세포검사와 HPV 검사 반복 C. 자궁경부 원추절제술 D. 자궁내막 생검 E. 6개월 뒤 세포검사 반복"
+  },
+  {
+   "id": "imaging-2026-0024",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0024.md",
+   "snippet": "A 24 year old woman, gravida 1, comes to the emergency department because of vaginal bleeding and severe nausea for 3 days. Her last menstrual period was 11 weeks ago. Blood pressure is 142/92 mm Hg. The uterus is enlarged to the size of a ",
+   "text": "산부인과 산과 — 분만 중 태아감시·융모성 질환 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 24 year old woman, gravida 1, comes to the emergency department because of vaginal bleeding and severe nausea for 3 days. Her last menstrual period was 11 weeks ago. Blood pressure is 142/92 mm Hg. The uterus is enlarged to the size of a 16 week gestation. Serum β hCG concentration is 480,000 mIU/mL. Transvaginal ultrasonography shows a uterine cavity filled with a heterogeneous echogenic mass containing numerous small cystic spaces and no fetal parts; both ovaries contain multiple large cysts. Which of the following is the most appropriate next step in management? A. Expectant management with repeat ultrasonography in 2 weeks B. Suction curettage followed by serial β hCG measurements C. Single agent methotrexate chemotherapy D. Hysterectomy with bilateral salpingo oophorectomy E. Medical evacuation with misoprostol"
+  },
+  {
+   "id": "imaging-2026-0023",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시·융모성 질환",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0023.md",
+   "snippet": "33세 초산부가 임신 40주에 자연진통으로 입원하여 활동기 진통 중이며 지속 전자태아감시를 하고 있다. 임신 경과에 특이사항은 없었다. 감시 40~50분 구간의 태아심박동과 자궁수축 기록은 그림과 같다. 43분경 자궁수축과 함께 나타난 태아심박동 변화는? A. 후기감속(late deceleration) B. 지연감속(prolonged deceleration) C. 정현파형(sinusoidal pattern) D. 가변감속(va",
+   "text": "산부인과 산과 — 분만 중 태아감시·융모성 질환 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 33세 초산부가 임신 40주에 자연진통으로 입원하여 활동기 진통 중이며 지속 전자태아감시를 하고 있다. 임신 경과에 특이사항은 없었다. 감시 40~50분 구간의 태아심박동과 자궁수축 기록은 그림과 같다. 43분경 자궁수축과 함께 나타난 태아심박동 변화는? A. 후기감속(late deceleration) B. 지연감속(prolonged deceleration) C. 정현파형(sinusoidal pattern) D. 가변감속(variable deceleration) E. 조기감속(early deceleration)"
+  },
+  {
+   "id": "imaging-2026-0022",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "흉부 CT 정상 해부 — 대동맥활 높이",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0022.md",
+   "snippet": "A 60 year old woman undergoes low dose CT of the chest as part of a lung cancer screening program. She has no cough, hemoptysis, or weight loss. An axial image of the chest at the level of the upper mediastinum (lung window) is shown; the t",
+   "text": "호흡기 흉부 CT 정상 해부 — 대동맥활 높이 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 60 year old woman undergoes low dose CT of the chest as part of a lung cancer screening program. She has no cough, hemoptysis, or weight loss. An axial image of the chest at the level of the upper mediastinum (lung window) is shown; the trachea is seen as the round air filled structure in the midline. Which of the following best identifies the broad soft tissue structure that lies anterior to the trachea and sweeps to the left of it toward the left side of the vertebral body? A. Left brachiocephalic vein B. Pulmonary trunk C. Arch of the azygos vein D. Arch of the aorta E. Superior vena cava"
+  },
+  {
+   "id": "imaging-2026-0021",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0021.md",
+   "snippet": "A 78 year old woman is evaluated before elective surgery for symptomatic pelvic organ prolapse. Two years ago she had an episode of chest pressure lasting several hours for which she did not seek care; she has had no chest pain or dyspnea s",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 78 year old woman is evaluated before elective surgery for symptomatic pelvic organ prolapse. Two years ago she had an episode of chest pressure lasting several hours for which she did not seek care; she has had no chest pain or dyspnea since and walks 30 minutes daily. Blood pressure is 134/80 mm Hg and pulse is 70/min. A 12 lead electrocardiogram is shown. Which of the following best describes the findings on this tracing? A. ST segment elevation in leads II, III and aVF indicating an acute inferior infarction B. Poor R wave progression in leads V1–V4 indicating a prior anterior infarction C. Complete left bundle branch block D. First degree atrioventricular block E. Pathologic Q waves in leads III and aVF consistent with a prior inferior infarction"
+  },
+  {
+   "id": "imaging-2026-0020",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0020.md",
+   "snippet": "A 44 year old woman comes to the preoperative clinic before an elective laparoscopic myomectomy. She reports occasional brief episodes of rapid palpitations since her twenties that stop on their own; she has never had syncope. Blood pressur",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced A 44 year old woman comes to the preoperative clinic before an elective laparoscopic myomectomy. She reports occasional brief episodes of rapid palpitations since her twenties that stop on their own; she has never had syncope. Blood pressure is 122/78 mm Hg and pulse is 60/min and regular. A 12 lead electrocardiogram obtained for the preoperative evaluation is shown. Which of the following is the most likely explanation for the abnormality on this tracing? A. Prior transmural infarction of the inferior wall B. An ectopic atrial pacemaker located near the atrioventricular junction C. An accessory pathway conducting atrial impulses directly to ventricular myocardium D. Delayed conduction through the right bundle branch E. Slowed conduction through the atrioventricular node"
+  },
+  {
+   "id": "imaging-2026-0019",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 빈맥·조기흥분·오래된 경색",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced",
+   "confidence": "high",
+   "date": "2026-09-14",
+   "path": "content/imaging/2026/imaging-2026-0019.md",
+   "snippet": "63세 여자가 2시간 전부터 갑자기 시작된 두근거림으로 응급실에 왔다. 흉통이나 실신은 없었고 심장질환을 진단받은 적은 없다. 혈압 118/76 mmHg, 맥박 분당 약 165회로 규칙적이며 호흡곤란은 없다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 진단은? A. 동성빈맥 B. 심실빈맥 C. 심방조동(2:1 방실전도) D. 방실결절 회귀성 빈맥 E. 심방세동",
+   "text": "순환기 심전도 판독 — 빈맥·조기흥분·오래된 경색 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260914T202555Z_일일영상_2026-09-15_9units_9q_80f2eced 63세 여자가 2시간 전부터 갑자기 시작된 두근거림으로 응급실에 왔다. 흉통이나 실신은 없었고 심장질환을 진단받은 적은 없다. 혈압 118/76 mmHg, 맥박 분당 약 165회로 규칙적이며 호흡곤란은 없다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 진단은? A. 동성빈맥 B. 심실빈맥 C. 심방조동(2:1 방실전도) D. 방실결절 회귀성 빈맥 E. 심방세동"
   },
   {
    "id": "anatomy-daily-2026-09-14",
