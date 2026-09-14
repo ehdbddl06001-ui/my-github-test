@@ -61,9 +61,13 @@
       toast("새 문항 자료가 도착했습니다.", "새로고침", function () { location.reload(); });
     }
   });
+  // 새 서비스워커가 이 페이지를 넘겨받으면(sw.js 배포) 한 번만 새로고침해 새 캐시 전략으로 번들을 다시 받는다.
+  // 첫 설치(이전 컨트롤러가 없던 경우)는 새로고침하지 않는다 — 이미 네트워크에서 받은 최신 페이지다.
+  var hadController = !!navigator.serviceWorker.controller;
   navigator.serviceWorker.addEventListener("controllerchange", function () {
-    if (reloading) return;
+    if (reloading || !hadController) { hadController = true; return; }
     reloading = true;
+    location.reload();
   });
 
   // iPad/iPhone: beforeinstallprompt 가 없다. Safari 공유 → 홈 화면에 추가 로만 설치되므로 한 번 안내한다.
