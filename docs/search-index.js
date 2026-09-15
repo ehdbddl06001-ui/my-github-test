@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2421,
+  "total": 2430,
   "byType": {
    "anatomy": 662,
    "usmle": 144,
+   "imaging": 36,
    "paper": 600,
    "kmle": 971,
-   "imaging": 27,
    "ailab": 14,
    "basic": 3
   },
@@ -37,14 +37,14 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 60,
    "Hematology": 59,
    "Laboratory Medicine": 59,
+   "산부인과": 19,
    "Physiology": 17,
-   "산부인과": 15,
    "Pharmacology": 11,
+   "순환기": 11,
    "Biochemistry": 10,
    "Microbiology": 10,
    "Immunology": 8,
    "Internal Medicine": 8,
-   "순환기": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -55,10 +55,11 @@ window.MEDKOS_INDEX = {
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
-   "Medical AI Curriculum": 1
+   "Medical AI Curriculum": 1,
+   "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1589,
+   "high": 1598,
    "medium": 783,
    "low": 49
   },
@@ -356,6 +357,164 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0152.md",
    "snippet": "An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago",
    "text": "Biochemistry Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned MCAD-deficiency beta-oxidation hypoketotic-hypoglycemia acylcarnitine fasting-avoidance medium-chain-triglycerides newborn-screening ACADM USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance) An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago. He was born at term in a country without expanded newborn metabolic screening and has grown normally. On arrival he is drowsy but arousable, with mild hepatomegaly and no focal neurologic deficits. His vital signs and laboratory studies are shown. Intravenous dextrose is given, and within 30 minutes he is alert and playful. After recovery, plasma acylcarnitine profiling and urine organic acid analysis establish the diagnosis, and the parents ask how to prevent another episode. Which of the following is the most appropriate long term dietary recommendation? A. Ketogenic high fat diet B. Medium chain triglyceride oil supplementation C. Frequent carbohydrate containing meals with avoidance of fasting D. Strict dietary protein restriction E. Elimination of fructose and sucrose 16시간 금식 후 저혈당인데 케톤이 거의 없고(hypoketotic hypoglycemia), 암모니아·AST가 오르고, 아실카르니틴에서 C8(octanoylcarnitine)이 우세하게 오르며 소변에 hexanoylglycine·suberylglycine이 나오는 것은 중쇄 아실 CoA 탈수소효소(MCAD) 결핍의 고전적 소견이다. 중쇄 지방산의 β 산화가 막혀 케톤을 만들지 못하므로, 공복 시 뇌·근육이 의존할 대체 연료가 없고 간의 포도당신생합성도 아세틸 CoA 부족으로 약해져 저혈당이 온다. 따라서 장기 관리의 핵심은 '금식을 피하는 것'이다 — 나이에 맞는 최대 금식 시간(유아 8–12시간)을 넘기지 않게 자주 탄수화물 식사를 주고, 병 중에는 조기 포도당 공급(경구 해결 안 되면 IV dextrose)을 한다. 고지방 케톤식(A)은 산화 못 하는 지방을 더 주는 것이고, MCT 오일(B)은 기질 자체(C8–C10)를 직접 공급해 급성 대사 위기를 유발하는 금기이며(장쇄 지방산 산화장애의 치료와 혼동하기 쉬운 함정), 단백질 제한(D)은 요소회로 장애·유기산혈증의 관리, 과당·자당 배제(E)는 유전성 과당불내성의 관리다."
+  },
+  {
+   "id": "imaging-2026-0036",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "비뇨의학 — 급성 음낭",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0036.md",
+   "snippet": "15세 남자가 3시간 전 갑자기 시작된 왼쪽 음낭의 심한 통증과 구역으로 응급실에 왔다. 외상이나 배뇨 증상은 없었고 열은 없다. 진찰에서 왼쪽 고환이 오른쪽보다 높이 올라가 가로로 놓여 있고 심하게 아프며, 왼쪽 고환올림근반사가 사라졌다. 음낭을 들어 올려도 통증이 줄지 않는다. 요검사는 정상이다. 가장 적절한 처치는? A. 즉시 음낭 절개 탐색술과 양측 고환고정술 B. 음낭 도플러 초음파 결과를 기다린 뒤 결정 C. 경험적",
+   "text": "신장·비뇨기 비뇨의학 — 급성 음낭 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 15세 남자가 3시간 전 갑자기 시작된 왼쪽 음낭의 심한 통증과 구역으로 응급실에 왔다. 외상이나 배뇨 증상은 없었고 열은 없다. 진찰에서 왼쪽 고환이 오른쪽보다 높이 올라가 가로로 놓여 있고 심하게 아프며, 왼쪽 고환올림근반사가 사라졌다. 음낭을 들어 올려도 통증이 줄지 않는다. 요검사는 정상이다. 가장 적절한 처치는? A. 즉시 음낭 절개 탐색술과 양측 고환고정술 B. 음낭 도플러 초음파 결과를 기다린 뒤 결정 C. 경험적 항생제 투여와 외래 추적 D. 진통제 투여와 음낭 거상 후 24시간 관찰 E. 요도 분비물 배양 후 세프트리악손 투여"
+  },
+  {
+   "id": "imaging-2026-0035",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·내분비·약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0035.md",
+   "snippet": "A 34 year old woman, gravida 0, comes to the physician because of 8 months of heavy, irregular menstrual bleeding. She has polycystic ovary syndrome and a body mass index of 37 kg/m². She and her husband wish to have children within the nex",
+   "text": "산부인과 부인과 — 종양·내분비·약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 A 34 year old woman, gravida 0, comes to the physician because of 8 months of heavy, irregular menstrual bleeding. She has polycystic ovary syndrome and a body mass index of 37 kg/m². She and her husband wish to have children within the next 2 years. Transvaginal ultrasonography shows an endometrial thickness of 19 mm. Endometrial biopsy shows atypical hyperplasia (endometrioid intraepithelial neoplasia); pelvic MRI shows no myometrial invasion and normal ovaries. Which of the following is the most appropriate management? A. Cyclic medroxyprogesterone acetate for 10 days each month B. A combined estrogen–progestin oral contraceptive pill C. Immediate ovulation induction with letrozole to achieve pregnancy D. Levonorgestrel releasing intrauterine system with endometrial biopsy every 3 to 6 months E. Total hysterectomy with bilateral salpingo oophorectomy"
+  },
+  {
+   "id": "imaging-2026-0034",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·내분비·약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0034.md",
+   "snippet": "A 28 year old woman comes to the clinic because she has been unable to conceive for 18 months. Her menstrual periods occur every 45 to 90 days. She has hirsutism and a body mass index of 31 kg/m². Serum prolactin and TSH concentrations are ",
+   "text": "산부인과 부인과 — 종양·내분비·약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 A 28 year old woman comes to the clinic because she has been unable to conceive for 18 months. Her menstrual periods occur every 45 to 90 days. She has hirsutism and a body mass index of 31 kg/m². Serum prolactin and TSH concentrations are normal; pelvic ultrasonography shows multiple small peripheral follicles in both ovaries, and her partner's semen analysis is normal. Her physician prescribes a 5 day course of clomiphene citrate beginning on day 3 of a progestin induced withdrawal bleed. Which of the following is the most likely mechanism by which this drug induces ovulation? A. Competitive blockade of estrogen receptors in the hypothalamus, removing negative feedback on GnRH release B. Inhibition of aromatase in ovarian granulosa cells, lowering circulating estradiol C. Direct stimulation of FSH receptors on granulosa cells D. Agonism at dopamine D2 receptors in the anterior pituitary, lowering prolactin E. Improvement of insulin sensitivity with a fall in ovarian androgen production"
+  },
+  {
+   "id": "imaging-2026-0033",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·내분비·약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0033.md",
+   "snippet": "45세 여자가 3개월 전부터 성교 후 출혈이 있어 왔다. 자궁경부세포검사는 10년 넘게 받지 않았다. 질경검사에서 자궁경부에 지름 약 4 cm 의 궤양성 종괴가 있고 조직검사에서 편평세포암으로 확인되었다. 직장질 진찰에서 종괴가 양쪽 자궁옆조직으로 뻗어 있으나 골반벽에는 이르지 않고, 질 상부 1/3 까지 침범하였다. 골반 MRI 도 같은 소견이며 수신증은 없고 흉부·복부 CT 에서 림프절 종대나 원격전이는 없다. 가장 적절한",
+   "text": "산부인과 부인과 — 종양·내분비·약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 45세 여자가 3개월 전부터 성교 후 출혈이 있어 왔다. 자궁경부세포검사는 10년 넘게 받지 않았다. 질경검사에서 자궁경부에 지름 약 4 cm 의 궤양성 종괴가 있고 조직검사에서 편평세포암으로 확인되었다. 직장질 진찰에서 종괴가 양쪽 자궁옆조직으로 뻗어 있으나 골반벽에는 이르지 않고, 질 상부 1/3 까지 침범하였다. 골반 MRI 도 같은 소견이며 수신증은 없고 흉부·복부 CT 에서 림프절 종대나 원격전이는 없다. 가장 적절한 치료는? A. 자궁경부 원추절제술 후 추적 관찰 B. 신보강 항암화학요법 뒤 근치 자궁절제술 C. 시스플라틴 동시 항암화학방사선요법(외부방사선과 근접치료) D. 근치 자궁절제술과 골반림프절 절제술 E. 단순 자궁절제술"
+  },
+  {
+   "id": "imaging-2026-0032",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0032.md",
+   "snippet": "A 20 year old primigravida at 41 weeks' gestation is in the active phase of labor with continuous external electronic fetal monitoring. Her pregnancy was uncomplicated. Cervical dilation is 6 cm and membranes are intact. A 10 minute segment",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 A 20 year old primigravida at 41 weeks' gestation is in the active phase of labor with continuous external electronic fetal monitoring. Her pregnancy was uncomplicated. Cervical dilation is 6 cm and membranes are intact. A 10 minute segment of the fetal heart rate and uterine activity tracing is shown. According to the NICHD three tier system, which of the following best describes this tracing? A. Category I: normal baseline rate with moderate variability and accelerations B. Category III: absent variability with recurrent late decelerations C. Category III: sinusoidal pattern D. Category II: minimal variability with recurrent variable decelerations E. Category II: fetal tachycardia with moderate variability and no decelerations"
+  },
+  {
+   "id": "imaging-2026-0031",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0031.md",
+   "snippet": "A 64 year old woman comes to the emergency department because of 45 minutes of pressure like chest discomfort that began at rest and is accompanied by nausea and sweating. She has hypertension and hyperlipidemia and stopped smoking 5 years ",
+   "text": "순환기 심전도 판독 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 A 64 year old woman comes to the emergency department because of 45 minutes of pressure like chest discomfort that began at rest and is accompanied by nausea and sweating. She has hypertension and hyperlipidemia and stopped smoking 5 years ago. Blood pressure is 152/90 mm Hg and pulse is 78/min and regular; lungs are clear. A 12 lead electrocardiogram obtained on arrival is shown. Which of the following is the most appropriate next step in management? A. Intravenous furosemide and nitroglycerin for acute left ventricular strain B. Aspirin, an anticoagulant, and serial troponin measurement with planning for early coronary angiography C. Intravenous fibrinolytic therapy within 30 minutes of arrival D. Immediate activation of the catheterization laboratory for primary percutaneous coronary intervention as an ST elevation infarction E. Discharge with an outpatient exercise stress test within 72 hours"
+  },
+  {
+   "id": "imaging-2026-0030",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0030.md",
+   "snippet": "A 36 year old woman at 22 weeks' gestation comes to the physician because of a 2 week history of a 'skipped' or 'thumping' sensation in her chest that is most noticeable when she lies down at night. She has not had syncope, chest pain, or d",
+   "text": "순환기 심전도 판독 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 A 36 year old woman at 22 weeks' gestation comes to the physician because of a 2 week history of a 'skipped' or 'thumping' sensation in her chest that is most noticeable when she lies down at night. She has not had syncope, chest pain, or dyspnea. Her pregnancy has been uncomplicated. Pulse is irregular. Blood pressure is 108/66 mm Hg. A 12 lead electrocardiogram is shown. Which of the following best describes the rhythm on this tracing? A. Second degree atrioventricular block with 2:1 conduction B. Sinus rhythm with a premature ventricular complex after every sinus beat (ventricular bigeminy) C. Sinus rhythm with second degree atrioventricular block, Mobitz type I, with 3:2 conduction D. Atrial fibrillation with a slow ventricular response E. Sinus rhythm with premature atrial complexes conducted with a narrow QRS (atrial bigeminy)"
+  },
+  {
+   "id": "imaging-2026-0029",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0029.md",
+   "snippet": "24세 여자가 3주 전부터 긴장할 때 가슴이 두근거려 왔다. 증상은 몇 초에서 1분 안에 저절로 사라지고 실신·흉통·호흡곤란은 없다. 커피를 하루 3잔 마신다. 혈압 112/70 mmHg, 맥박 분당 76회로 규칙적이며 심잡음은 없다. 갑상샘기능검사와 혈색소는 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 1도 방실차단 B. 심실 조기흥분(WPW) C. 정상 동율동, 정상 축, 정상 간격 ",
+   "text": "순환기 심전도 판독 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 24세 여자가 3주 전부터 긴장할 때 가슴이 두근거려 왔다. 증상은 몇 초에서 1분 안에 저절로 사라지고 실신·흉통·호흡곤란은 없다. 커피를 하루 3잔 마신다. 혈압 112/70 mmHg, 맥박 분당 76회로 규칙적이며 심잡음은 없다. 갑상샘기능검사와 혈색소는 정상이다. 12유도 심전도는 그림과 같다. 심전도 판독으로 가장 적절한 것은? A. 1도 방실차단 B. 심실 조기흥분(WPW) C. 정상 동율동, 정상 축, 정상 간격 D. 좌심실비대 E. 우각차단"
+  },
+  {
+   "id": "imaging-2026-0028",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+   "confidence": "high",
+   "date": "2026-09-15",
+   "path": "content/imaging/2026/imaging-2026-0028.md",
+   "snippet": "64세 여자가 자궁내막암으로 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 15년 전부터 고혈압으로 약을 먹었으나 최근 2년은 불규칙하게 복용했다. 흉통이나 호흡곤란은 없다. 혈압 168/98 mmHg, 맥박 분당 64회로 규칙적이다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 심전도 진단은? A. 완전 좌각차단 B. 오래된 전벽 심근경색 C. 정상 심전도 D. 좌심실비대 E. 우심실비대",
+   "text": "순환기 심전도 판독 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2 64세 여자가 자궁내막암으로 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 15년 전부터 고혈압으로 약을 먹었으나 최근 2년은 불규칙하게 복용했다. 흉통이나 호흡곤란은 없다. 혈압 168/98 mmHg, 맥박 분당 64회로 규칙적이다. 12유도 심전도는 그림과 같다. 가장 가능성 있는 심전도 진단은? A. 완전 좌각차단 B. 오래된 전벽 심근경색 C. 정상 심전도 D. 좌심실비대 E. 우심실비대"
   },
   {
    "id": "anatomy-daily-2026-09-15",

@@ -2,6 +2,674 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0032",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "산과 — 분만 중 태아감시",
+  "type": "산과 — 분만 중 태아감시",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-15",
+  "vignette": "A 20-year-old primigravida at 41 weeks' gestation is in the active phase of labor with continuous external electronic fetal monitoring. Her pregnancy was uncomplicated. Cervical dilation is 6 cm and membranes are intact. A 10-minute segment of the fetal heart rate and uterine activity tracing is shown.",
+  "question": "According to the NICHD three-tier system, which of the following best describes this tracing?",
+  "options": [
+   "Category I: normal baseline rate with moderate variability and accelerations",
+   "Category III: absent variability with recurrent late decelerations",
+   "Category III: sinusoidal pattern",
+   "Category II: minimal variability with recurrent variable decelerations",
+   "Category II: fetal tachycardia with moderate variability and no decelerations"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The baseline sits just above the 160/min line for the whole 10 minutes — about 160–165/min — which by definition (baseline > 160/min for ≥ 10 minutes) is fetal tachycardia. Variability is moderate (amplitude about 6–10/min), there is at least one acceleration (a rise of about 15/min lasting about 25 seconds near minute 11), and none of the three small contractions is followed by a deceleration; the brief dip near minute 18 lasts less than 15 seconds and is not a deceleration. Tachycardia with preserved variability and no decelerations does not meet Category I (which requires a baseline of 110–160/min) and has no Category III feature, so it is Category II.\n- 원리: The NICHD system classifies a tracing by four elements read in order: <b>baseline rate, baseline variability, accelerations, decelerations</b>. <b>Category I</b> requires <b>all</b> of: baseline 110–160/min, moderate variability (6–25/min), no late or variable decelerations (early decelerations and accelerations may be present or absent). <b>Category III</b> is either <b>absent variability with recurrent late or variable decelerations or bradycardia</b>, or a <b>sinusoidal pattern</b>. Everything else is <b>Category II</b> — an indeterminate group that includes tachycardia, minimal variability, and isolated decelerations.<br> <b>Why the baseline is read over 10 minutes</b> — baseline is the mean rate rounded to 5/min in a 10-minute window, excluding accelerations, decelerations and periods of marked variability, and must be stable for at least 2 minutes within that window. A rate above 160/min in that sense is tachycardia; here the trace runs 160–165/min throughout.<br> <b>Why tachycardia matters and why it is not Category III</b> — fetal tachycardia is most often a response to <b>maternal fever or intra-amniotic infection</b>, and also to maternal dehydration, beta-agonist tocolytics, hyperthyroidism, fetal anemia or a fetal tachyarrhythmia (usually &gt; 200/min). By itself, with <b>moderate variability</b> and accelerations, it indicates an intact, non-acidemic fetal autonomic nervous system; the prognostic weight lies in variability, not in rate. The response is to look for and treat the cause (temperature, hydration, drugs), continue monitoring, and escalate only if variability falls or decelerations appear.<br> <b>Why accelerations here</b> — at ≥ 32 weeks an acceleration is a rise of ≥ 15/min lasting ≥ 15 s; the rise at 11.0–11.4 min qualifies. Its presence essentially excludes metabolic acidemia at that moment.\n- 비교: <table><thead><tr><th style=\"width:26%\">Category</th><th style=\"width:40%\">Defining features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>II — tachycardia, moderate variability (answer)</b></td><td><b>baseline &gt; 160/min, variability 6–25/min, no late/variable decelerations</b></td><td>≈160–165/min, variability ≈6–10, no decelerations</td></tr> <tr><td>I — normal</td><td>baseline <b>110–160</b>, moderate variability, no late/variable decelerations</td><td>fails on baseline (above 160)</td></tr> <tr><td>III — absent variability + recurrent late decelerations</td><td>flat baseline (0–5/min) and a deceleration after most contractions</td><td>variability preserved, no decelerations</td></tr> <tr><td>III — sinusoidal</td><td>smooth sine wave 3–5 cycles/min, amplitude 5–15, <b>no variability</b>, persisting ≥ 20 min</td><td>irregular moderate variability with accelerations</td></tr> <tr><td>II — minimal variability + recurrent variable decelerations</td><td>variability ≤ 5/min, abrupt decelerations with ≥ 50 % of contractions</td><td>variability &gt; 5, no decelerations</td></tr> </tbody></table> The <b>closest wrong answer is Category I</b>: variability, accelerations and absence of decelerations all look reassuring. The discriminator is the <b>baseline number</b> — read it against the 150 and 180 gridlines; the trace lies above 160 for the whole window, and a single element outside the Category I limits moves the tracing to Category II.\n- 오답 이유:\n  - (A) Category I requires a baseline of 110–160/min in addition to moderate variability and absence of late or variable decelerations. This baseline runs above the 160/min line for the full 10 minutes. This option would be correct only if the baseline sat at or below 160/min.\n  - (B) Category III with absent variability and recurrent late decelerations needs a flat baseline (amplitude undetectable) and gradual decelerations after most contractions. This tracing has visible moderate variability and no decelerations. This option would be correct only if the baseline were a flat line with a dip following each contraction.\n  - (C) A sinusoidal pattern is a smooth, regular sine-wave undulation of 3–5 cycles per minute with no beat-to-beat variability, typical of fetal anemia. This tracing has irregular moderate variability and discrete accelerations. This option would be correct only if the baseline itself formed regular smooth waves.\n  - (D) Minimal variability with recurrent variable decelerations means amplitude of 5/min or less with abrupt decelerations accompanying at least half of the contractions. Here variability exceeds 5/min and the contractions are not followed by decelerations. This option would be correct only if the trace were nearly flat and dropped abruptly with each contraction.\n- 함정: Reassuring variability and accelerations do not by themselves make a tracing Category I. Check the baseline against the printed gridlines first — anything above 160 is tachycardia and the tracing is at least Category II.\n- 학습목표: 분만 중 태아심박동 기록에서 기저선(>160/분)·변이도·가속·감속을 읽어 NICHD 3단계 범주를 정한다\n- 근거·출처: CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-16, 화소 기반): baseline median ≈163/min (158–168) over minutes 10–20, variability amplitude ≈6–10/min, acceleration ≈+15–18/min × 25 s at 11.0–11.4 min, contractions at 11.2/13.6/17.8 min without decelerations · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — definitions of baseline, variability, tachycardia, three-tier categories · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009) — Category II management\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1392 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The baseline sits just above the 160/min line for the whole 10 minutes — about 160–165/min — which by definition (baseline > 160/min for ≥ 10 minutes) is fetal tachycardia. Variability is moderate (amplitude about 6–10/min), there is at least one acceleration (a rise of about 15/min lasting about 25 seconds near minute 11), and none of the three small contractions is followed by a deceleration; the brief dip near minute 18 lasts less than 15 seconds and is not a deceleration. Tachycardia with preserved variability and no decelerations does not meet Category I (which requires a baseline of 110–160/min) and has no Category III feature, so it is Category II."
+   },
+   {
+    "k": "원리",
+    "v": "The NICHD system classifies a tracing by four elements read in order: <b>baseline rate, baseline variability, accelerations, decelerations</b>. <b>Category I</b> requires <b>all</b> of: baseline 110–160/min, moderate variability (6–25/min), no late or variable decelerations (early decelerations and accelerations may be present or absent). <b>Category III</b> is either <b>absent variability with recurrent late or variable decelerations or bradycardia</b>, or a <b>sinusoidal pattern</b>. Everything else is <b>Category II</b> — an indeterminate group that includes tachycardia, minimal variability, and isolated decelerations.<br> <b>Why the baseline is read over 10 minutes</b> — baseline is the mean rate rounded to 5/min in a 10-minute window, excluding accelerations, decelerations and periods of marked variability, and must be stable for at least 2 minutes within that window. A rate above 160/min in that sense is tachycardia; here the trace runs 160–165/min throughout.<br> <b>Why tachycardia matters and why it is not Category III</b> — fetal tachycardia is most often a response to <b>maternal fever or intra-amniotic infection</b>, and also to maternal dehydration, beta-agonist tocolytics, hyperthyroidism, fetal anemia or a fetal tachyarrhythmia (usually &gt; 200/min). By itself, with <b>moderate variability</b> and accelerations, it indicates an intact, non-acidemic fetal autonomic nervous system; the prognostic weight lies in variability, not in rate. The response is to look for and treat the cause (temperature, hydration, drugs), continue monitoring, and escalate only if variability falls or decelerations appear.<br> <b>Why accelerations here</b> — at ≥ 32 weeks an acceleration is a rise of ≥ 15/min lasting ≥ 15 s; the rise at 11.0–11.4 min qualifies. Its presence essentially excludes metabolic acidemia at that moment."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Category</th><th style=\"width:40%\">Defining features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>II — tachycardia, moderate variability (answer)</b></td><td><b>baseline &gt; 160/min, variability 6–25/min, no late/variable decelerations</b></td><td>≈160–165/min, variability ≈6–10, no decelerations</td></tr> <tr><td>I — normal</td><td>baseline <b>110–160</b>, moderate variability, no late/variable decelerations</td><td>fails on baseline (above 160)</td></tr> <tr><td>III — absent variability + recurrent late decelerations</td><td>flat baseline (0–5/min) and a deceleration after most contractions</td><td>variability preserved, no decelerations</td></tr> <tr><td>III — sinusoidal</td><td>smooth sine wave 3–5 cycles/min, amplitude 5–15, <b>no variability</b>, persisting ≥ 20 min</td><td>irregular moderate variability with accelerations</td></tr> <tr><td>II — minimal variability + recurrent variable decelerations</td><td>variability ≤ 5/min, abrupt decelerations with ≥ 50 % of contractions</td><td>variability &gt; 5, no decelerations</td></tr> </tbody></table> The <b>closest wrong answer is Category I</b>: variability, accelerations and absence of decelerations all look reassuring. The discriminator is the <b>baseline number</b> — read it against the 150 and 180 gridlines; the trace lies above 160 for the whole window, and a single element outside the Category I limits moves the tracing to Category II."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Category I requires a baseline of 110–160/min in addition to moderate variability and absence of late or variable decelerations. This baseline runs above the 160/min line for the full 10 minutes. This option would be correct only if the baseline sat at or below 160/min.\n(B) Category III with absent variability and recurrent late decelerations needs a flat baseline (amplitude undetectable) and gradual decelerations after most contractions. This tracing has visible moderate variability and no decelerations. This option would be correct only if the baseline were a flat line with a dip following each contraction.\n(C) A sinusoidal pattern is a smooth, regular sine-wave undulation of 3–5 cycles per minute with no beat-to-beat variability, typical of fetal anemia. This tracing has irregular moderate variability and discrete accelerations. This option would be correct only if the baseline itself formed regular smooth waves.\n(D) Minimal variability with recurrent variable decelerations means amplitude of 5/min or less with abrupt decelerations accompanying at least half of the contractions. Here variability exceeds 5/min and the contractions are not followed by decelerations. This option would be correct only if the trace were nearly flat and dropped abruptly with each contraction."
+   },
+   {
+    "k": "함정",
+    "v": "Reassuring variability and accelerations do not by themselves make a tracing Category I. Check the baseline against the printed gridlines first — anything above 160 is tachycardia and the tracing is at least Category II."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록에서 기저선(>160/분)·변이도·가속·감속을 읽어 NICHD 3단계 범주를 정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-16, 화소 기반): baseline median ≈163/min (158–168) over minutes 10–20, variability amplitude ≈6–10/min, acceleration ≈+15–18/min × 25 s at 11.0–11.4 min, contractions at 11.2/13.6/17.8 min without decelerations · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — definitions of baseline, variability, tachycardia, three-tier categories · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009) — Category II management ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1392 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0032.png",
+   "caption": "Intrapartum fetal heart rate (top) and uterine activity (bottom), minutes 10–20 of the recording; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; raw 4 Hz data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1392_10m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1392"
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0031",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-15",
+  "vignette": "A 64-year-old woman comes to the emergency department because of 45 minutes of pressure-like chest discomfort that began at rest and is accompanied by nausea and sweating. She has hypertension and hyperlipidemia and stopped smoking 5 years ago. Blood pressure is 152/90 mm Hg and pulse is 78/min and regular; lungs are clear. A 12-lead electrocardiogram obtained on arrival is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous furosemide and nitroglycerin for acute left ventricular strain",
+   "Aspirin, an anticoagulant, and serial troponin measurement with planning for early coronary angiography",
+   "Intravenous fibrinolytic therapy within 30 minutes of arrival",
+   "Immediate activation of the catheterization laboratory for primary percutaneous coronary intervention as an ST-elevation infarction",
+   "Discharge with an outpatient exercise stress test within 72 hours"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The tracing shows sinus rhythm at about 77/min with horizontal-to-downsloping ST-segment depression of 1–2 mm in leads I, II, aVL, aVF and V4–V6 and slight ST elevation in aVR; there is no ST elevation in two contiguous leads and no new bundle-branch block. Ongoing rest pain with widespread ST depression is a non-ST-elevation acute coronary syndrome. Treatment is antithrombotic — aspirin plus a P2Y12 inhibitor and parenteral anticoagulation — with troponin measurement to distinguish infarction from unstable angina and an early invasive strategy given the extensive ST depression. Fibrinolysis is indicated only for ST elevation and harms patients with ST depression.\n- 원리: The ST segment separates two kinds of acute coronary syndrome because it reports <b>which layer of the wall is ischemic</b>. Complete occlusion of an epicardial artery makes <b>transmural</b> ischemia; the injury current points toward the overlying electrode and produces <b>ST elevation</b>. Subtotal occlusion or supply–demand mismatch makes <b>subendocardial</b> ischemia; the injury current points away from the surface and produces <b>ST depression</b>, often in many leads with a reciprocal rise in aVR.<br> <b>Why the treatment differs</b> — fibrinolysis dissolves a fresh occlusive thrombus and was shown to save lives only when the ECG shows ST elevation or new LBBB; in ST depression the thrombus is platelet-rich and non-occlusive, and the trials showed <b>no benefit and more bleeding</b>. For NSTE-ACS the pillars are <b>antiplatelet therapy (aspirin + P2Y12 inhibitor), anticoagulation (heparin/enoxaparin/fondaparinux), anti-ischemic drugs (beta-blocker, nitrates), and risk-based timing of angiography</b>: within 24 h for high risk (troponin rise, dynamic ST changes, GRACE &gt; 140), immediately if pain is refractory or the patient is unstable.<br> <b>Why troponin is measured but not waited for</b> — the ECG plus symptoms already define ACS and start treatment; troponin at 0 and 1–3 h decides NSTEMI versus unstable angina and sharpens risk. A normal first troponin does not exclude infarction 45 minutes after onset.<br> <b>Confounder: LV hypertrophy with strain</b> — long-standing hypertension can produce lateral ST depression at baseline. Strain depression is downsloping with an asymmetric inverted T in V5–V6 and is usually stable over time; new, symptomatic depression with upright T waves and aVR elevation, as here, is treated as ischemia. When in doubt, compare with an old tracing and repeat the ECG at 15–30 minutes — dynamic change confirms ischemia.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:36%\">When it is correct</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Aspirin + anticoagulant + troponin, early invasive (answer)</b></td><td><b>ACS with ST depression / T inversion / positive troponin</b></td><td>—</td></tr> <tr><td>Fibrinolysis</td><td>STEMI when PCI cannot be done within 120 min</td><td>no ST elevation — no benefit, bleeding risk</td></tr> <tr><td>Cath lab as STEMI</td><td>ST elevation ≥ 1 mm in two contiguous leads or new LBBB; or NSTE-ACS with refractory pain/instability</td><td>no elevation, hemodynamically stable — urgent but not 'STEMI' pathway</td></tr> <tr><td>Outpatient stress test</td><td>low-risk chest pain with normal ECG and negative serial troponins</td><td>ongoing pain with ischemic ECG</td></tr> <tr><td>Furosemide + nitroglycerin for strain</td><td>acute pulmonary edema</td><td>lungs clear; 'strain' is not the diagnosis of new rest pain</td></tr> </tbody></table> The <b>closest wrong answer is fibrinolysis</b>: the patient has an acute coronary syndrome and 'clot-busting' feels urgent. The discriminator is the <b>ST segment</b> — up means occlusion and lysis or PCI now; down means subendocardial ischemia and antithrombotic therapy with catheterization on a risk-based clock.\n- 오답 이유:\n  - (A) Diuretics and nitrates for 'strain' treat acute heart failure, not acute coronary syndrome, and would leave the thrombus untreated. Her lungs are clear. This option would be correct only if she presented with pulmonary edema and the ST changes were an old, stable strain pattern.\n  - (C) Fibrinolytic therapy is reserved for ST-elevation infarction (or new LBBB) when primary PCI is unavailable within 120 minutes. Trials in patients with ST depression showed no mortality benefit and more bleeding. This option would be correct only if two contiguous leads showed ST elevation of at least 1 mm and PCI were not reachable in time.\n  - (D) Immediate catheterization as a STEMI requires ST elevation or new LBBB, or an NSTE-ACS with refractory pain, hemodynamic or electrical instability. This patient is stable and has ST depression, so angiography is planned early (within 24 hours) rather than as an emergency STEMI activation. This option would be correct only if the ST segments were elevated or she were in shock or with unrelieved pain.\n  - (E) An outpatient stress test is for low-risk chest pain after a normal or non-ischemic ECG and negative serial troponins. Exercise testing during ongoing ischemia is contraindicated. This option would be correct only if the ECG were normal and two troponin values were negative.\n- 함정: Widespread ST depression is a marker of extensive subendocardial ischemia, and aVR elevation raises concern for left-main or multivessel disease — but that makes the case for early angiography, not for fibrinolysis. Never lyse a depression.\n- 학습목표: ST 분절 하강만 있는 급성 흉통에서 비ST상승 급성관상동맥증후군을 인식하고 섬유소용해가 아닌 항혈전·조기 침습 전략을 고른다\n- 근거·출처: PTB-XL record label ISCAL (ischemic changes in anterolateral leads; two-cardiologist validated) — teacher-only report notes ST depression I, II, aVL, aVF, V4–V6 · 작성자 판독(2026-09-16): sinus ≈77/min (RR 0.78 s), ST depression ≈1–2 mm in I, II, aVL, aVF, V4–V6, slight aVR elevation, no ST elevation; S V1 15 + R V5 17 = 32 mm · 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes — NSTE-ACS antithrombotic therapy and invasive-strategy timing; fibrinolysis limited to STEMI · Fibrinolytic Therapy Trialists' Collaborative Group. Lancet 1994 — no benefit of fibrinolysis in patients presenting with ST depression\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2101 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tracing shows sinus rhythm at about 77/min with horizontal-to-downsloping ST-segment depression of 1–2 mm in leads I, II, aVL, aVF and V4–V6 and slight ST elevation in aVR; there is no ST elevation in two contiguous leads and no new bundle-branch block. Ongoing rest pain with widespread ST depression is a non-ST-elevation acute coronary syndrome. Treatment is antithrombotic — aspirin plus a P2Y12 inhibitor and parenteral anticoagulation — with troponin measurement to distinguish infarction from unstable angina and an early invasive strategy given the extensive ST depression. Fibrinolysis is indicated only for ST elevation and harms patients with ST depression."
+   },
+   {
+    "k": "원리",
+    "v": "The ST segment separates two kinds of acute coronary syndrome because it reports <b>which layer of the wall is ischemic</b>. Complete occlusion of an epicardial artery makes <b>transmural</b> ischemia; the injury current points toward the overlying electrode and produces <b>ST elevation</b>. Subtotal occlusion or supply–demand mismatch makes <b>subendocardial</b> ischemia; the injury current points away from the surface and produces <b>ST depression</b>, often in many leads with a reciprocal rise in aVR.<br> <b>Why the treatment differs</b> — fibrinolysis dissolves a fresh occlusive thrombus and was shown to save lives only when the ECG shows ST elevation or new LBBB; in ST depression the thrombus is platelet-rich and non-occlusive, and the trials showed <b>no benefit and more bleeding</b>. For NSTE-ACS the pillars are <b>antiplatelet therapy (aspirin + P2Y12 inhibitor), anticoagulation (heparin/enoxaparin/fondaparinux), anti-ischemic drugs (beta-blocker, nitrates), and risk-based timing of angiography</b>: within 24 h for high risk (troponin rise, dynamic ST changes, GRACE &gt; 140), immediately if pain is refractory or the patient is unstable.<br> <b>Why troponin is measured but not waited for</b> — the ECG plus symptoms already define ACS and start treatment; troponin at 0 and 1–3 h decides NSTEMI versus unstable angina and sharpens risk. A normal first troponin does not exclude infarction 45 minutes after onset.<br> <b>Confounder: LV hypertrophy with strain</b> — long-standing hypertension can produce lateral ST depression at baseline. Strain depression is downsloping with an asymmetric inverted T in V5–V6 and is usually stable over time; new, symptomatic depression with upright T waves and aVR elevation, as here, is treated as ischemia. When in doubt, compare with an old tracing and repeat the ECG at 15–30 minutes — dynamic change confirms ischemia."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:36%\">When it is correct</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Aspirin + anticoagulant + troponin, early invasive (answer)</b></td><td><b>ACS with ST depression / T inversion / positive troponin</b></td><td>—</td></tr> <tr><td>Fibrinolysis</td><td>STEMI when PCI cannot be done within 120 min</td><td>no ST elevation — no benefit, bleeding risk</td></tr> <tr><td>Cath lab as STEMI</td><td>ST elevation ≥ 1 mm in two contiguous leads or new LBBB; or NSTE-ACS with refractory pain/instability</td><td>no elevation, hemodynamically stable — urgent but not 'STEMI' pathway</td></tr> <tr><td>Outpatient stress test</td><td>low-risk chest pain with normal ECG and negative serial troponins</td><td>ongoing pain with ischemic ECG</td></tr> <tr><td>Furosemide + nitroglycerin for strain</td><td>acute pulmonary edema</td><td>lungs clear; 'strain' is not the diagnosis of new rest pain</td></tr> </tbody></table> The <b>closest wrong answer is fibrinolysis</b>: the patient has an acute coronary syndrome and 'clot-busting' feels urgent. The discriminator is the <b>ST segment</b> — up means occlusion and lysis or PCI now; down means subendocardial ischemia and antithrombotic therapy with catheterization on a risk-based clock."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Diuretics and nitrates for 'strain' treat acute heart failure, not acute coronary syndrome, and would leave the thrombus untreated. Her lungs are clear. This option would be correct only if she presented with pulmonary edema and the ST changes were an old, stable strain pattern.\n(C) Fibrinolytic therapy is reserved for ST-elevation infarction (or new LBBB) when primary PCI is unavailable within 120 minutes. Trials in patients with ST depression showed no mortality benefit and more bleeding. This option would be correct only if two contiguous leads showed ST elevation of at least 1 mm and PCI were not reachable in time.\n(D) Immediate catheterization as a STEMI requires ST elevation or new LBBB, or an NSTE-ACS with refractory pain, hemodynamic or electrical instability. This patient is stable and has ST depression, so angiography is planned early (within 24 hours) rather than as an emergency STEMI activation. This option would be correct only if the ST segments were elevated or she were in shock or with unrelieved pain.\n(E) An outpatient stress test is for low-risk chest pain after a normal or non-ischemic ECG and negative serial troponins. Exercise testing during ongoing ischemia is contraindicated. This option would be correct only if the ECG were normal and two troponin values were negative."
+   },
+   {
+    "k": "함정",
+    "v": "Widespread ST depression is a marker of extensive subendocardial ischemia, and aVR elevation raises concern for left-main or multivessel disease — but that makes the case for early angiography, not for fibrinolysis. Never lyse a depression."
+   },
+   {
+    "k": "학습목표",
+    "v": "ST 분절 하강만 있는 급성 흉통에서 비ST상승 급성관상동맥증후군을 인식하고 섬유소용해가 아닌 항혈전·조기 침습 전략을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label ISCAL (ischemic changes in anterolateral leads; two-cardiologist validated) — teacher-only report notes ST depression I, II, aVL, aVF, V4–V6 · 작성자 판독(2026-09-16): sinus ≈77/min (RR 0.78 s), ST depression ≈1–2 mm in I, II, aVL, aVF, V4–V6, slight aVR elevation, no ST elevation; S V1 15 + R V5 17 = 32 mm · 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes — NSTE-ACS antithrombotic therapy and invasive-strategy timing; fibrinolysis limited to STEMI · Fibrinolytic Therapy Trialists' Collaborative Group. Lancet 1994 — no benefit of fibrinolysis in patients presenting with ST depression ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2101 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0031.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02101",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2101"
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0030",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-15",
+  "vignette": "A 36-year-old woman at 22 weeks' gestation comes to the physician because of a 2-week history of a 'skipped' or 'thumping' sensation in her chest that is most noticeable when she lies down at night. She has not had syncope, chest pain, or dyspnea. Her pregnancy has been uncomplicated. Pulse is irregular. Blood pressure is 108/66 mm Hg. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following best describes the rhythm on this tracing?",
+  "options": [
+   "Second-degree atrioventricular block with 2:1 conduction",
+   "Sinus rhythm with a premature ventricular complex after every sinus beat (ventricular bigeminy)",
+   "Sinus rhythm with second-degree atrioventricular block, Mobitz type I, with 3:2 conduction",
+   "Atrial fibrillation with a slow ventricular response",
+   "Sinus rhythm with premature atrial complexes conducted with a narrow QRS (atrial bigeminy)"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The tracing shows pairs of beats separated by a pause. In every pair the first beat has a preceding P wave and a narrow QRS (a sinus beat); the second comes early, has a wide, bizarre QRS of about 0.14–0.16 s with a T wave pointing the opposite way, and is followed by a compensatory pause. A premature wide complex that follows every sinus beat with a fixed coupling interval is ventricular bigeminy. Grouped beating from Wenckebach block would show narrow, identical QRS complexes with progressively lengthening PR intervals, and atrial fibrillation would have no P waves and an irregularly irregular rhythm.\n- 원리: A <b>premature ventricular complex (PVC)</b> arises from a focus in ventricular muscle or the distal Purkinje network. Because it does not travel down the His–Purkinje system, activation spreads <b>cell to cell</b>, so the QRS is <b>wide (≥ 0.12 s) and bizarre</b>, and repolarization follows the same abnormal path, giving a <b>T wave opposite in direction to the QRS</b> (discordant). It is not preceded by a premature P wave. The sinus node usually keeps beating undisturbed, so the next sinus P wave falls into the refractory ventricle and is blocked, producing a <b>full compensatory pause</b>: the interval from the sinus beat before the PVC to the sinus beat after it equals two sinus cycles.<br> <b>Why 'bigeminy'</b> — when a PVC follows every sinus beat with the same coupling interval the rhythm is grouped in pairs: sinus–PVC–pause, sinus–PVC–pause. The patient feels the pause and the forceful post-pause beat as a 'skip' or 'thump'. Palpated pulse rate may be half the electrical rate because the early beat ejects little blood.<br> <b>Why pregnancy</b> — plasma volume, heart rate and sympathetic tone rise, and PVCs become more frequent or first noticed. In a structurally normal heart they are benign; management is reassurance, removing caffeine and stimulants, and a beta-blocker only for intolerable symptoms. Echocardiography is reasonable when PVCs are very frequent (&gt; 10 % of beats) to exclude structural disease.<br> <b>Ventricular versus aberrant supraventricular origin</b> — a premature atrial complex conducted with bundle-branch aberrancy can also be wide, but it is preceded by a premature P wave (often hidden in the previous T), usually shows a right-bundle pattern, and the pause after it is non-compensatory. Neither feature is present here, so a ventricular origin is the best reading; the clinical management is the same either way.\n- 비교: <table><thead><tr><th style=\"width:32%\">Rhythm</th><th style=\"width:38%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Ventricular bigeminy (answer)</b></td><td><b>sinus beat → early wide bizarre QRS with discordant T, fixed coupling, compensatory pause</b></td><td>every second beat wide (≈0.15 s), pause after it</td></tr> <tr><td>Mobitz I with 3:2 conduction</td><td>grouped beats, but <b>all QRS narrow and identical</b>, PR lengthens, a P wave is dropped</td><td>second beat is wide and different</td></tr> <tr><td>Atrial fibrillation</td><td>no P waves, irregularly irregular RR, QRS all alike</td><td>P waves before sinus beats, regular pairs</td></tr> <tr><td>Atrial bigeminy (normally conducted)</td><td>premature P wave, <b>narrow QRS</b> identical to sinus, non-compensatory pause</td><td>premature beat is wide</td></tr> <tr><td>2:1 AV block</td><td>slow regular rhythm, two P waves per QRS, no premature beats</td><td>beats come in pairs with early second beat</td></tr> </tbody></table> The <b>closest wrong answer is 3:2 Wenckebach</b>: both produce grouped beating in pairs with a pause. The discriminator is the <b>morphology of the second beat</b> — in Wenckebach every QRS is conducted from above and looks the same; in bigeminy the second beat is early and wide. Look at the QRS shapes before counting P waves.\n- 오답 이유:\n  - (A) Second-degree AV block with 2:1 conduction gives a slow, regular rhythm with two P waves for each QRS and no premature beats. This tracing has an early wide beat after each sinus beat, not a dropped beat. This option would be correct only if the rhythm were regular and slow with a non-conducted P wave between beats.\n  - (C) Mobitz type I block with 3:2 conduction also gives pairs of beats and a pause, but every QRS is conducted through the AV node and is narrow and identical, and the PR interval lengthens before the dropped beat. Here the second beat of each pair is wide and bizarre. This option would be correct only if all QRS complexes were narrow and a P wave without a QRS were seen at each pause.\n  - (D) Atrial fibrillation has no organized P waves and an irregularly irregular ventricular response with uniform QRS morphology. This tracing shows P waves before the narrow beats and a repeating pair pattern. This option would be correct only if the baseline showed fibrillatory waves and no two RR intervals were alike.\n  - (E) Atrial bigeminy conducted normally produces a premature narrow QRS identical to the sinus QRS, preceded by an early, often abnormal P wave, with a non-compensatory pause. The premature beats here are wide with discordant T waves and no premature P. This option would be correct only if the early beats were narrow.\n- 함정: Grouped beating has two common causes: a premature beat after every sinus beat, or Wenckebach block. Decide by the shape of the second beat, not by the pause — a wide, early, different-looking QRS means an ectopic beat.\n- 학습목표: 동성 박동마다 조기·넓은 QRS 가 따라오는 이단맥을 읽고 군집 박동의 다른 원인(Wenckebach)과 구분한다\n- 근거·출처: PTB-XL record label BIGU (bigeminal pattern; two-cardiologist validated) · 작성자 판독(2026-09-16): sinus beat with P → premature wide QRS ≈0.14–0.16 s, discordant T, fixed coupling ≈0.5 s, compensatory pause; effective rate ≈83/min · 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias — premature ventricular complexes in structurally normal hearts · Surawicz B, Knilans TK. Chou's Electrocardiography in Clinical Practice — ventricular premature beats, bigeminy, compensatory pause\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16361 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tracing shows pairs of beats separated by a pause. In every pair the first beat has a preceding P wave and a narrow QRS (a sinus beat); the second comes early, has a wide, bizarre QRS of about 0.14–0.16 s with a T wave pointing the opposite way, and is followed by a compensatory pause. A premature wide complex that follows every sinus beat with a fixed coupling interval is ventricular bigeminy. Grouped beating from Wenckebach block would show narrow, identical QRS complexes with progressively lengthening PR intervals, and atrial fibrillation would have no P waves and an irregularly irregular rhythm."
+   },
+   {
+    "k": "원리",
+    "v": "A <b>premature ventricular complex (PVC)</b> arises from a focus in ventricular muscle or the distal Purkinje network. Because it does not travel down the His–Purkinje system, activation spreads <b>cell to cell</b>, so the QRS is <b>wide (≥ 0.12 s) and bizarre</b>, and repolarization follows the same abnormal path, giving a <b>T wave opposite in direction to the QRS</b> (discordant). It is not preceded by a premature P wave. The sinus node usually keeps beating undisturbed, so the next sinus P wave falls into the refractory ventricle and is blocked, producing a <b>full compensatory pause</b>: the interval from the sinus beat before the PVC to the sinus beat after it equals two sinus cycles.<br> <b>Why 'bigeminy'</b> — when a PVC follows every sinus beat with the same coupling interval the rhythm is grouped in pairs: sinus–PVC–pause, sinus–PVC–pause. The patient feels the pause and the forceful post-pause beat as a 'skip' or 'thump'. Palpated pulse rate may be half the electrical rate because the early beat ejects little blood.<br> <b>Why pregnancy</b> — plasma volume, heart rate and sympathetic tone rise, and PVCs become more frequent or first noticed. In a structurally normal heart they are benign; management is reassurance, removing caffeine and stimulants, and a beta-blocker only for intolerable symptoms. Echocardiography is reasonable when PVCs are very frequent (&gt; 10 % of beats) to exclude structural disease.<br> <b>Ventricular versus aberrant supraventricular origin</b> — a premature atrial complex conducted with bundle-branch aberrancy can also be wide, but it is preceded by a premature P wave (often hidden in the previous T), usually shows a right-bundle pattern, and the pause after it is non-compensatory. Neither feature is present here, so a ventricular origin is the best reading; the clinical management is the same either way."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Rhythm</th><th style=\"width:38%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Ventricular bigeminy (answer)</b></td><td><b>sinus beat → early wide bizarre QRS with discordant T, fixed coupling, compensatory pause</b></td><td>every second beat wide (≈0.15 s), pause after it</td></tr> <tr><td>Mobitz I with 3:2 conduction</td><td>grouped beats, but <b>all QRS narrow and identical</b>, PR lengthens, a P wave is dropped</td><td>second beat is wide and different</td></tr> <tr><td>Atrial fibrillation</td><td>no P waves, irregularly irregular RR, QRS all alike</td><td>P waves before sinus beats, regular pairs</td></tr> <tr><td>Atrial bigeminy (normally conducted)</td><td>premature P wave, <b>narrow QRS</b> identical to sinus, non-compensatory pause</td><td>premature beat is wide</td></tr> <tr><td>2:1 AV block</td><td>slow regular rhythm, two P waves per QRS, no premature beats</td><td>beats come in pairs with early second beat</td></tr> </tbody></table> The <b>closest wrong answer is 3:2 Wenckebach</b>: both produce grouped beating in pairs with a pause. The discriminator is the <b>morphology of the second beat</b> — in Wenckebach every QRS is conducted from above and looks the same; in bigeminy the second beat is early and wide. Look at the QRS shapes before counting P waves."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Second-degree AV block with 2:1 conduction gives a slow, regular rhythm with two P waves for each QRS and no premature beats. This tracing has an early wide beat after each sinus beat, not a dropped beat. This option would be correct only if the rhythm were regular and slow with a non-conducted P wave between beats.\n(C) Mobitz type I block with 3:2 conduction also gives pairs of beats and a pause, but every QRS is conducted through the AV node and is narrow and identical, and the PR interval lengthens before the dropped beat. Here the second beat of each pair is wide and bizarre. This option would be correct only if all QRS complexes were narrow and a P wave without a QRS were seen at each pause.\n(D) Atrial fibrillation has no organized P waves and an irregularly irregular ventricular response with uniform QRS morphology. This tracing shows P waves before the narrow beats and a repeating pair pattern. This option would be correct only if the baseline showed fibrillatory waves and no two RR intervals were alike.\n(E) Atrial bigeminy conducted normally produces a premature narrow QRS identical to the sinus QRS, preceded by an early, often abnormal P wave, with a non-compensatory pause. The premature beats here are wide with discordant T waves and no premature P. This option would be correct only if the early beats were narrow."
+   },
+   {
+    "k": "함정",
+    "v": "Grouped beating has two common causes: a premature beat after every sinus beat, or Wenckebach block. Decide by the shape of the second beat, not by the pause — a wide, early, different-looking QRS means an ectopic beat."
+   },
+   {
+    "k": "학습목표",
+    "v": "동성 박동마다 조기·넓은 QRS 가 따라오는 이단맥을 읽고 군집 박동의 다른 원인(Wenckebach)과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label BIGU (bigeminal pattern; two-cardiologist validated) · 작성자 판독(2026-09-16): sinus beat with P → premature wide QRS ≈0.14–0.16 s, discordant T, fixed coupling ≈0.5 s, compensatory pause; effective rate ≈83/min · 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias — premature ventricular complexes in structurally normal hearts · Surawicz B, Knilans TK. Chou's Electrocardiography in Clinical Practice — ventricular premature beats, bigeminy, compensatory pause ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16361 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0030.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+   "asset_id": "PTBXL-16361",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16361"
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0029",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-15",
+  "vignette": "24세 여자가 3주 전부터 긴장할 때 가슴이 두근거려 왔다. 증상은 몇 초에서 1분 안에 저절로 사라지고 실신·흉통·호흡곤란은 없다. 커피를 하루 3잔 마신다. 혈압 112/70 mmHg, 맥박 분당 76회로 규칙적이며 심잡음은 없다. 갑상샘기능검사와 혈색소는 정상이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 판독으로 가장 적절한 것은?",
+  "options": [
+   "1도 방실차단",
+   "심실 조기흥분(WPW)",
+   "정상 동율동, 정상 축, 정상 간격",
+   "좌심실비대",
+   "우각차단"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 모든 QRS 앞에 정상 모양의 P 파가 일정한 PR(약 0.14~0.16초)로 있고 심박수 약 75/분, QRS 는 좁으며 I·II·aVF 모두 양성이라 축은 정상(약 +70°)이다. V4·V5 의 R 이 17~18 mm 로 커 보이지만 S V1 + R V5 는 약 23 mm(< 35 mm), R aVL + S V3 는 약 13 mm(< 20 mm) 로 어느 전압 기준도 넘지 않는다. 델타파·넓은 QRS·PR 연장이 없다. 젊고 마른 사람에게 흔한 정상 심전도다.\n- 원리: 심전도 판독은 <b>리듬 → 심박수 → 축 → 간격(PR·QRS·QT) → 전압 → ST-T</b> 의 순서로 한다. 정상이라고 결론을 내리려면 각 단계에서 이상이 없음을 <b>적극적으로</b> 확인해야 한다 — 「눈에 띄는 것이 없다」와 「정상」은 다르다.<br> <b>왜 젊은 여자의 V4·V5 R 파가 커 보이는가</b> — 가슴벽이 얇고 심장이 전극에 가까우면 가슴유도 전압이 크게 잡힌다. 그래서 전압 기준은 <b>합(S V1 + R V5/V6 ≥ 35 mm)</b> 으로 정하고, 35세 미만에서는 특이도가 낮아 전압만으로 비대를 말하지 않는다. Cornell 기준은 성별 차이를 두어 여자는 <b>R aVL + S V3 &gt; 20 mm</b>다. 이 기록은 둘 다 미달이다.<br> <b>정상 축의 근거</b> — I 과 aVF 가 모두 양성이면 축은 0~+90° 안에 있다. II 가 가장 크고 III 도 양성이므로 +60~+80° 부근의 <b>수직 축</b>이며 젊고 마른 사람에게 흔하다.<br> <b>간격</b> — PR 0.12~0.20 s, QRS &lt; 0.12 s, QTc &lt; 0.46 s(여자)를 확인한다. 이 기록은 모두 정상 범위다. 델타파(QRS 시작부의 완만한 상승)가 없고 PR 이 짧지 않으므로 조기흥분도 아니다.<br> <b>임상적 의미</b> — 두근거림의 원인 검색에서 정상 안정 심전도와 정상 진찰·갑상샘기능·혈색소는 구조적 심장질환과 전도 이상의 가능성을 크게 낮춘다. 증상이 짧고 자연 소실되며 실신이 없으면 카페인 감량과 안심으로 시작하고, 증상이 잦거나 지속되면 활동 심전도로 증상-리듬 대응을 확인한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">판독</th><th style=\"width:40%\">필요한 소견</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>정상(정답)</b></td><td><b>동율동, 정상 축, PR·QRS·QT 정상, 전압 기준 미달, ST-T 정상</b></td><td>모두 충족</td></tr> <tr><td>좌심실비대</td><td>S V1 + R V5/V6 ≥ 35 mm 또는 R aVL ≥ 11 mm 또는 Cornell(여 &gt; 20 mm)</td><td>23 mm · 1.6 mm · 13 mm — 모두 미달</td></tr> <tr><td>우각차단</td><td>QRS ≥ 0.12 s, V1 rSR′, I·V6 넓은 S</td><td>QRS 좁음, V1 rS</td></tr> <tr><td>1도 방실차단</td><td>PR &gt; 0.20 s(큰 칸 1칸 초과)</td><td>PR 약 0.15 s</td></tr> <tr><td>심실 조기흥분</td><td>PR &lt; 0.12 s + 델타파 + QRS 넓어짐</td><td>PR 정상, QRS 시작이 날카로움</td></tr> </tbody></table> <b>가장 가까운 오답은 좌심실비대</b> — V4·V5 의 R 이 크게 보인다. 갈림길은 <b>기준을 실제로 더해 보았는가</b>다. 35 mm 와 20 mm 라는 숫자를 대면 정상이고, 반대로 R aVL 이 11 mm 를 넘거나 합이 35 mm 를 넘는 기록이 나오면 비대로 읽는다.\n- 오답 이유:\n  - ① 1도 방실차단은 PR 간격이 0.20초(큰 칸 1칸)를 넘는다. 이 기록의 PR 은 약 0.15초로 정상이다. 이 선지가 정답이 되려면 P 파 시작에서 QRS 시작까지가 큰 칸 1칸을 넘어야 한다.\n  - ② 심실 조기흥분은 짧은 PR(< 0.12초)과 QRS 시작부의 완만한 델타파, 넓어진 QRS 가 특징이다. 이 기록은 PR 이 정상이고 QRS 가 날카롭게 시작한다. 이 선지가 정답이 되려면 PR 이 작은 칸 3칸 미만이고 델타파가 보여야 한다.\n  - ④ 좌심실비대는 S V1 + R V5/V6 ≥ 35 mm, R aVL ≥ 11 mm, Cornell(여자 > 20 mm) 중 하나를 넘어야 한다. 이 기록은 약 23 mm, 1.6 mm, 13 mm 로 모두 미달이며 젊은 여자의 가슴유도 전압은 원래 크게 잡힌다. 이 선지가 정답이 되려면 합이 35 mm 를 넘거나 좌축편위·strain 이 동반돼야 한다.\n  - ⑤ 우각차단은 QRS 가 0.12초 이상 넓고 V1 에 rSR′, I·V6 에 넓은 S 가 있다. 이 기록의 QRS 는 좁고 V1 은 rS 형이다. 이 선지가 정답이 되려면 V1 에 토끼귀 모양의 두 번째 R′ 이 보여야 한다.\n- 함정: 「R 파가 크니 비대」라고 눈대중으로 판단하면 틀린다. 젊은 여자의 가슴유도 전압은 정상적으로 크며, 반드시 기준값을 더해서 확인한다.\n- 학습목표: 젊은 여자의 정상 심전도를 전압·축·간격 기준으로 판독하여 좌심실비대와 구분한다\n- 근거·출처: PTB-XL 기록 라벨 NORM(2인 심장내과 검증) · 작성자 계측(2026-09-16, 화소 기반): RR ≈0.80 s(≈75/분), S V1 6.1 mm, R V4 18.3 mm, R V5 16.9 mm, R aVL 1.6 mm, S V3 11.5 mm, I·II·aVF 양성 · Hancock EW et al. AHA/ACCF/HRS Recommendations … Part V (2009) — 좌심실비대 전압 기준과 젊은 연령·성별의 영향\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2040 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "모든 QRS 앞에 정상 모양의 P 파가 일정한 PR(약 0.14~0.16초)로 있고 심박수 약 75/분, QRS 는 좁으며 I·II·aVF 모두 양성이라 축은 정상(약 +70°)이다. V4·V5 의 R 이 17~18 mm 로 커 보이지만 S V1 + R V5 는 약 23 mm(< 35 mm), R aVL + S V3 는 약 13 mm(< 20 mm) 로 어느 전압 기준도 넘지 않는다. 델타파·넓은 QRS·PR 연장이 없다. 젊고 마른 사람에게 흔한 정상 심전도다."
+   },
+   {
+    "k": "원리",
+    "v": "심전도 판독은 <b>리듬 → 심박수 → 축 → 간격(PR·QRS·QT) → 전압 → ST-T</b> 의 순서로 한다. 정상이라고 결론을 내리려면 각 단계에서 이상이 없음을 <b>적극적으로</b> 확인해야 한다 — 「눈에 띄는 것이 없다」와 「정상」은 다르다.<br> <b>왜 젊은 여자의 V4·V5 R 파가 커 보이는가</b> — 가슴벽이 얇고 심장이 전극에 가까우면 가슴유도 전압이 크게 잡힌다. 그래서 전압 기준은 <b>합(S V1 + R V5/V6 ≥ 35 mm)</b> 으로 정하고, 35세 미만에서는 특이도가 낮아 전압만으로 비대를 말하지 않는다. Cornell 기준은 성별 차이를 두어 여자는 <b>R aVL + S V3 &gt; 20 mm</b>다. 이 기록은 둘 다 미달이다.<br> <b>정상 축의 근거</b> — I 과 aVF 가 모두 양성이면 축은 0~+90° 안에 있다. II 가 가장 크고 III 도 양성이므로 +60~+80° 부근의 <b>수직 축</b>이며 젊고 마른 사람에게 흔하다.<br> <b>간격</b> — PR 0.12~0.20 s, QRS &lt; 0.12 s, QTc &lt; 0.46 s(여자)를 확인한다. 이 기록은 모두 정상 범위다. 델타파(QRS 시작부의 완만한 상승)가 없고 PR 이 짧지 않으므로 조기흥분도 아니다.<br> <b>임상적 의미</b> — 두근거림의 원인 검색에서 정상 안정 심전도와 정상 진찰·갑상샘기능·혈색소는 구조적 심장질환과 전도 이상의 가능성을 크게 낮춘다. 증상이 짧고 자연 소실되며 실신이 없으면 카페인 감량과 안심으로 시작하고, 증상이 잦거나 지속되면 활동 심전도로 증상-리듬 대응을 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">판독</th><th style=\"width:40%\">필요한 소견</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>정상(정답)</b></td><td><b>동율동, 정상 축, PR·QRS·QT 정상, 전압 기준 미달, ST-T 정상</b></td><td>모두 충족</td></tr> <tr><td>좌심실비대</td><td>S V1 + R V5/V6 ≥ 35 mm 또는 R aVL ≥ 11 mm 또는 Cornell(여 &gt; 20 mm)</td><td>23 mm · 1.6 mm · 13 mm — 모두 미달</td></tr> <tr><td>우각차단</td><td>QRS ≥ 0.12 s, V1 rSR′, I·V6 넓은 S</td><td>QRS 좁음, V1 rS</td></tr> <tr><td>1도 방실차단</td><td>PR &gt; 0.20 s(큰 칸 1칸 초과)</td><td>PR 약 0.15 s</td></tr> <tr><td>심실 조기흥분</td><td>PR &lt; 0.12 s + 델타파 + QRS 넓어짐</td><td>PR 정상, QRS 시작이 날카로움</td></tr> </tbody></table> <b>가장 가까운 오답은 좌심실비대</b> — V4·V5 의 R 이 크게 보인다. 갈림길은 <b>기준을 실제로 더해 보았는가</b>다. 35 mm 와 20 mm 라는 숫자를 대면 정상이고, 반대로 R aVL 이 11 mm 를 넘거나 합이 35 mm 를 넘는 기록이 나오면 비대로 읽는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 1도 방실차단은 PR 간격이 0.20초(큰 칸 1칸)를 넘는다. 이 기록의 PR 은 약 0.15초로 정상이다. 이 선지가 정답이 되려면 P 파 시작에서 QRS 시작까지가 큰 칸 1칸을 넘어야 한다.\n② 심실 조기흥분은 짧은 PR(< 0.12초)과 QRS 시작부의 완만한 델타파, 넓어진 QRS 가 특징이다. 이 기록은 PR 이 정상이고 QRS 가 날카롭게 시작한다. 이 선지가 정답이 되려면 PR 이 작은 칸 3칸 미만이고 델타파가 보여야 한다.\n④ 좌심실비대는 S V1 + R V5/V6 ≥ 35 mm, R aVL ≥ 11 mm, Cornell(여자 > 20 mm) 중 하나를 넘어야 한다. 이 기록은 약 23 mm, 1.6 mm, 13 mm 로 모두 미달이며 젊은 여자의 가슴유도 전압은 원래 크게 잡힌다. 이 선지가 정답이 되려면 합이 35 mm 를 넘거나 좌축편위·strain 이 동반돼야 한다.\n⑤ 우각차단은 QRS 가 0.12초 이상 넓고 V1 에 rSR′, I·V6 에 넓은 S 가 있다. 이 기록의 QRS 는 좁고 V1 은 rS 형이다. 이 선지가 정답이 되려면 V1 에 토끼귀 모양의 두 번째 R′ 이 보여야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「R 파가 크니 비대」라고 눈대중으로 판단하면 틀린다. 젊은 여자의 가슴유도 전압은 정상적으로 크며, 반드시 기준값을 더해서 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 여자의 정상 심전도를 전압·축·간격 기준으로 판독하여 좌심실비대와 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL 기록 라벨 NORM(2인 심장내과 검증) · 작성자 계측(2026-09-16, 화소 기반): RR ≈0.80 s(≈75/분), S V1 6.1 mm, R V4 18.3 mm, R V5 16.9 mm, R aVL 1.6 mm, S V3 11.5 mm, I·II·aVF 양성 · Hancock EW et al. AHA/ACCF/HRS Recommendations … Part V (2009) — 좌심실비대 전압 기준과 젊은 연령·성별의 영향 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2040 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0029.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/02000/#files-panel",
+   "asset_id": "PTBXL-02040",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 2040"
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0028",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-15",
+  "vignette": "64세 여자가 자궁내막암으로 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 15년 전부터 고혈압으로 약을 먹었으나 최근 2년은 불규칙하게 복용했다. 흉통이나 호흡곤란은 없다. 혈압 168/98 mmHg, 맥박 분당 64회로 규칙적이다. 12유도 심전도는 그림과 같다.",
+  "question": "가장 가능성 있는 심전도 진단은?",
+  "options": [
+   "완전 좌각차단",
+   "오래된 전벽 심근경색",
+   "정상 심전도",
+   "좌심실비대",
+   "우심실비대"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 동율동이고 QRS 는 좁다. 사지유도의 R 파가 매우 크다 — I 유도 R 약 18 mm, aVL 유도 R 약 17 mm(기준 ≥ 11 mm), III 유도 S 약 19 mm 로 R I + S III 가 약 37 mm(기준 ≥ 25 mm)다. I 양성·aVF 음성이므로 좌축편위가 동반된다. 가슴유도는 S V1 + R V5 가 약 21 mm 로 Sokolow-Lyon 기준에는 못 미치지만, R aVL + S V3 가 약 28 mm 로 Cornell 기준(여자 > 20 mm)을 충족한다. 오래 조절되지 않은 고혈압 환자에서 사지유도 전압 증가와 좌축편위는 좌심실비대의 소견이다.\n- 원리: 좌심실비대는 <b>압력 부하(고혈압·대동맥판협착)</b>에 대한 심근의 적응으로, 근세포가 굵어져 심실벽이 두꺼워진다. 심근 질량이 늘면 탈분극 전류의 총량이 커져 <b>좌심실을 향하는 유도의 R 파가 커지고, 반대편 유도의 S 파가 깊어진다</b>. 이것이 모든 전압 기준의 원리다.<br> <b>왜 이 환자는 가슴유도가 아니라 사지유도에서 크게 보이는가</b> — 전압 기준은 심장의 <b>전기축이 어디를 향하는가</b>에 따라 잡히는 유도가 달라진다. 축이 왼쪽·위로 돌아가 있으면(좌축편위) 벡터가 aVL·I 를 향해 그 유도의 R 이 커지고 III·aVF 에 깊은 S 를 만든다. 이때 V5·V6 는 벡터와 각도가 커 R 이 작게 잡혀 Sokolow-Lyon(S V1 + R V5/V6 ≥ 35 mm)이 <b>미달</b>일 수 있다. 그래서 여러 기준을 함께 본다 — <b>aVL R ≥ 11 mm</b>, <b>R I + S III ≥ 25 mm</b>, <b>Cornell(R aVL + S V3, 남 &gt; 28 mm·여 &gt; 20 mm)</b>. 하나만 충족해도 전압 기준은 양성이고, 좌축편위·좌심방 확장·ST-T 변형(strain)이 있으면 특이도가 더 오른다.<br> <b>왜 수술 전에 중요한가</b> — 심전도 좌심실비대는 심장초음파로 확인할 대상이며, 이완기 기능장애와 관상동맥 예비능 감소를 시사해 마취 중 저혈압·빈맥에 취약하다. 혈압을 조절한 뒤 수술을 계획하고, 진단이 확실치 않으면 심장초음파로 벽 두께를 잰다. 전압 기준의 <b>민감도는 낮고 특이도는 높다</b> — 기준을 넘으면 비대일 가능성이 높지만, 기준 미달이 비대를 배제하지는 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:40%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>좌심실비대(정답)</b></td><td><b>aVL R ≥ 11 mm, R I + S III ≥ 25 mm, Cornell 충족, 좌축편위, QRS 좁음</b></td><td>aVL 17 mm, R I + S III 37 mm, Cornell 28 mm</td></tr> <tr><td>우심실비대</td><td>우축편위, V1 에 우세 R(R/S &gt; 1), V5·V6 깊은 S</td><td>좌축편위, V1 은 rS</td></tr> <tr><td>완전 좌각차단</td><td>QRS ≥ 0.12 s, V5·V6 넓고 파인 R, V1 QS</td><td>QRS 좁음</td></tr> <tr><td>오래된 전벽 심근경색</td><td>V1~V4 QS 또는 R 파 진행 불량</td><td>V1~V3 r 파가 있고 점차 커짐</td></tr> <tr><td>정상 심전도</td><td>모든 전압 기준 미달, 정상 축</td><td>사지유도 전압 초과, 좌축편위</td></tr> </tbody></table> <b>가장 가까운 오답은 「정상 심전도」</b> — 가슴유도의 R 이 크지 않아 Sokolow-Lyon 만 재면 정상으로 넘긴다. 갈림길은 <b>사지유도(aVL·I·III)를 쟀는가</b>다. 좌축편위가 있으면 전압이 사지유도로 옮겨간다는 것을 알면 반대 방향으로 물어도(「Sokolow 만 미달인 좌축편위 기록」) 대응된다.\n- 오답 이유:\n  - ① 완전 좌각차단은 QRS 폭이 0.12초 이상으로 넓고 V5·V6 에 넓고 파인 R, V1 에 QS 가 있다. 이 기록의 QRS 는 작은 칸 2~3칸으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상이어야 한다.\n  - ② 오래된 전벽 심근경색은 V1~V4 에 QS 나 R 파 진행 불량을 남긴다. 이 기록은 V1 부터 작은 r 이 있고 V4 이후 R 이 커진다. 이 선지가 정답이 되려면 V1~V3 에서 R 파가 사라지고 QS 형이 보여야 한다.\n  - ③ 정상 심전도는 전압 기준을 하나도 넘지 않고 축이 정상이어야 한다. 이 기록은 aVL R 17 mm 와 R I + S III 37 mm 로 사지유도 기준을 넘고 좌축편위가 있다. 이 선지가 정답이 되려면 aVL R 이 11 mm 미만이고 aVF 가 양성이어야 한다.\n  - ⑤ 우심실비대는 우축편위와 V1 의 우세한 R 파, V5·V6 의 깊은 S 파로 나타난다. 이 기록은 좌축편위에 V1 이 rS 형이다. 이 선지가 정답이 되려면 I 유도가 음성이고 V1 의 R 이 S 보다 커야 한다.\n- 함정: 가슴유도만 보고 「전압이 크지 않다」고 넘기기 쉽다. 좌축편위가 있으면 aVL 과 I 를 먼저 재고, R I + S III 를 더해 본다.\n- 학습목표: 사지유도 전압 기준(aVL ≥ 11 mm, R I + S III ≥ 25 mm)과 좌축편위로 좌심실비대를 진단한다\n- 근거·출처: PTB-XL 기록 라벨 LVH(2인 심장내과 검증) · 작성자 계측(2026-09-16, 화소 기반): R I 17.8 mm, R aVL 17.0 mm, S III 18.8 mm, S V1 14.7 mm, R V5 6.6 mm, S V3 11.5 mm, I 양성·aVF 음성 · Hancock EW et al. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG Part V: Electrocardiogram Changes Associated With Cardiac Chamber Hypertrophy (2009) — 전압 기준(Sokolow-Lyon, Cornell, 사지유도)\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18353 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동율동이고 QRS 는 좁다. 사지유도의 R 파가 매우 크다 — I 유도 R 약 18 mm, aVL 유도 R 약 17 mm(기준 ≥ 11 mm), III 유도 S 약 19 mm 로 R I + S III 가 약 37 mm(기준 ≥ 25 mm)다. I 양성·aVF 음성이므로 좌축편위가 동반된다. 가슴유도는 S V1 + R V5 가 약 21 mm 로 Sokolow-Lyon 기준에는 못 미치지만, R aVL + S V3 가 약 28 mm 로 Cornell 기준(여자 > 20 mm)을 충족한다. 오래 조절되지 않은 고혈압 환자에서 사지유도 전압 증가와 좌축편위는 좌심실비대의 소견이다."
+   },
+   {
+    "k": "원리",
+    "v": "좌심실비대는 <b>압력 부하(고혈압·대동맥판협착)</b>에 대한 심근의 적응으로, 근세포가 굵어져 심실벽이 두꺼워진다. 심근 질량이 늘면 탈분극 전류의 총량이 커져 <b>좌심실을 향하는 유도의 R 파가 커지고, 반대편 유도의 S 파가 깊어진다</b>. 이것이 모든 전압 기준의 원리다.<br> <b>왜 이 환자는 가슴유도가 아니라 사지유도에서 크게 보이는가</b> — 전압 기준은 심장의 <b>전기축이 어디를 향하는가</b>에 따라 잡히는 유도가 달라진다. 축이 왼쪽·위로 돌아가 있으면(좌축편위) 벡터가 aVL·I 를 향해 그 유도의 R 이 커지고 III·aVF 에 깊은 S 를 만든다. 이때 V5·V6 는 벡터와 각도가 커 R 이 작게 잡혀 Sokolow-Lyon(S V1 + R V5/V6 ≥ 35 mm)이 <b>미달</b>일 수 있다. 그래서 여러 기준을 함께 본다 — <b>aVL R ≥ 11 mm</b>, <b>R I + S III ≥ 25 mm</b>, <b>Cornell(R aVL + S V3, 남 &gt; 28 mm·여 &gt; 20 mm)</b>. 하나만 충족해도 전압 기준은 양성이고, 좌축편위·좌심방 확장·ST-T 변형(strain)이 있으면 특이도가 더 오른다.<br> <b>왜 수술 전에 중요한가</b> — 심전도 좌심실비대는 심장초음파로 확인할 대상이며, 이완기 기능장애와 관상동맥 예비능 감소를 시사해 마취 중 저혈압·빈맥에 취약하다. 혈압을 조절한 뒤 수술을 계획하고, 진단이 확실치 않으면 심장초음파로 벽 두께를 잰다. 전압 기준의 <b>민감도는 낮고 특이도는 높다</b> — 기준을 넘으면 비대일 가능성이 높지만, 기준 미달이 비대를 배제하지는 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:40%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>좌심실비대(정답)</b></td><td><b>aVL R ≥ 11 mm, R I + S III ≥ 25 mm, Cornell 충족, 좌축편위, QRS 좁음</b></td><td>aVL 17 mm, R I + S III 37 mm, Cornell 28 mm</td></tr> <tr><td>우심실비대</td><td>우축편위, V1 에 우세 R(R/S &gt; 1), V5·V6 깊은 S</td><td>좌축편위, V1 은 rS</td></tr> <tr><td>완전 좌각차단</td><td>QRS ≥ 0.12 s, V5·V6 넓고 파인 R, V1 QS</td><td>QRS 좁음</td></tr> <tr><td>오래된 전벽 심근경색</td><td>V1~V4 QS 또는 R 파 진행 불량</td><td>V1~V3 r 파가 있고 점차 커짐</td></tr> <tr><td>정상 심전도</td><td>모든 전압 기준 미달, 정상 축</td><td>사지유도 전압 초과, 좌축편위</td></tr> </tbody></table> <b>가장 가까운 오답은 「정상 심전도」</b> — 가슴유도의 R 이 크지 않아 Sokolow-Lyon 만 재면 정상으로 넘긴다. 갈림길은 <b>사지유도(aVL·I·III)를 쟀는가</b>다. 좌축편위가 있으면 전압이 사지유도로 옮겨간다는 것을 알면 반대 방향으로 물어도(「Sokolow 만 미달인 좌축편위 기록」) 대응된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 완전 좌각차단은 QRS 폭이 0.12초 이상으로 넓고 V5·V6 에 넓고 파인 R, V1 에 QS 가 있다. 이 기록의 QRS 는 작은 칸 2~3칸으로 좁다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상이어야 한다.\n② 오래된 전벽 심근경색은 V1~V4 에 QS 나 R 파 진행 불량을 남긴다. 이 기록은 V1 부터 작은 r 이 있고 V4 이후 R 이 커진다. 이 선지가 정답이 되려면 V1~V3 에서 R 파가 사라지고 QS 형이 보여야 한다.\n③ 정상 심전도는 전압 기준을 하나도 넘지 않고 축이 정상이어야 한다. 이 기록은 aVL R 17 mm 와 R I + S III 37 mm 로 사지유도 기준을 넘고 좌축편위가 있다. 이 선지가 정답이 되려면 aVL R 이 11 mm 미만이고 aVF 가 양성이어야 한다.\n⑤ 우심실비대는 우축편위와 V1 의 우세한 R 파, V5·V6 의 깊은 S 파로 나타난다. 이 기록은 좌축편위에 V1 이 rS 형이다. 이 선지가 정답이 되려면 I 유도가 음성이고 V1 의 R 이 S 보다 커야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "가슴유도만 보고 「전압이 크지 않다」고 넘기기 쉽다. 좌축편위가 있으면 aVL 과 I 를 먼저 재고, R I + S III 를 더해 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "사지유도 전압 기준(aVL ≥ 11 mm, R I + S III ≥ 25 mm)과 좌축편위로 좌심실비대를 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL 기록 라벨 LVH(2인 심장내과 검증) · 작성자 계측(2026-09-16, 화소 기반): R I 17.8 mm, R aVL 17.0 mm, S III 18.8 mm, S V1 14.7 mm, R V5 6.6 mm, S V3 11.5 mm, I 양성·aVF 음성 · Hancock EW et al. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG Part V: Electrocardiogram Changes Associated With Cardiac Chamber Hypertrophy (2009) — 전압 기준(Sokolow-Lyon, Cornell, 사지유도) ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18353 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0028.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+   "asset_id": "PTBXL-18353",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18353"
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0036",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "비뇨의학 — 급성 음낭",
+  "type": "비뇨의학 — 급성 음낭",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-15",
+  "vignette": "15세 남자가 3시간 전 갑자기 시작된 왼쪽 음낭의 심한 통증과 구역으로 응급실에 왔다. 외상이나 배뇨 증상은 없었고 열은 없다. 진찰에서 왼쪽 고환이 오른쪽보다 높이 올라가 가로로 놓여 있고 심하게 아프며, 왼쪽 고환올림근반사가 사라졌다. 음낭을 들어 올려도 통증이 줄지 않는다. 요검사는 정상이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "즉시 음낭 절개 탐색술과 양측 고환고정술",
+   "음낭 도플러 초음파 결과를 기다린 뒤 결정",
+   "경험적 항생제 투여와 외래 추적",
+   "진통제 투여와 음낭 거상 후 24시간 관찰",
+   "요도 분비물 배양 후 세프트리악손 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 사춘기 남자에서 갑자기 시작된 심한 편측 음낭통, 구역, 높이 올라가 가로로 놓인 고환, 고환올림근반사 소실, 거상 시 통증 완화 없음(Prehn 징후 음성)은 고환꼬임의 전형적 소견이다. 고환 생존은 허혈 시간에 달려 있어(6시간 이내 90 % 이상 구제) 진단이 명백하면 영상검사로 시간을 쓰지 않고 곧바로 수술적 탐색을 하며, 꼬임을 풀고 양쪽 고환을 고정한다.\n- 원리: 고환꼬임은 <b>정삭이 자기 축을 중심으로 비틀려 정맥 환류가 먼저 막히고 이어 동맥이 막히는</b> 외과적 응급이다. 사춘기에 흔한 이유는 <b>고환집막의 이상 부착(종울림추 기형, bell-clapper)</b>으로 고환이 집막 안에 매달려 자유롭게 돌 수 있고, 사춘기에 고환 부피가 급격히 커지기 때문이다. 이 기형은 양측성이 흔해 <b>반대쪽 고환도 함께 고정</b>한다.<br> <b>진찰 소견이 나오는 이유</b> — 정삭이 짧아지며 고환이 <b>높이 올라가고 가로로 놓인다</b>(고환올림근 수축과 비틀림). 고환올림근반사는 넙다리 안쪽을 긁으면 같은 쪽 고환이 올라가는 반사인데, 비틀린 정삭은 더 이상 당겨 올릴 수 없어 <b>반사가 사라진다</b> — 급성 음낭통에서 가장 민감한 소견이다. 부고환염에서는 음낭을 들어 올리면 정삭의 긴장이 풀려 통증이 줄지만(Prehn 양성), 꼬임에서는 그렇지 않다.<br> <b>왜 시간이 전부인가</b> — 비틀림 후 <b>6시간 이내</b> 풀면 고환 구제율이 90 % 이상, 12시간이면 약 50 %, 24시간을 넘으면 10 % 미만이다. 도플러 초음파는 혈류 소실을 보여 주지만 검사 대기와 판독에 시간이 들고, 부분 꼬임이나 간헐 꼬임에서는 혈류가 남아 위음성이 생긴다. 그래서 <b>임상적으로 명백하면 영상 없이 곧바로 수술</b>하고, 초음파는 소견이 애매한 경우에만 쓴다. 수술이 즉시 어려우면 용수 정복(바깥쪽으로 「책을 펴듯」 돌림)을 시도하되 이것이 수술을 대신하지는 않는다.<br> <b>감별의 축</b> — 부고환염은 서서히 시작하고 배뇨 증상·요검사 이상·열이 흔하며 반사가 보존된다. 고환부속기 꼬임은 통증이 덜하고 고환 위극에 「blue dot」이 보이며 반사가 남는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:40%\">갈림길</th><th>처치</th></tr></thead><tbody> <tr><td><b>고환꼬임(정답)</b></td><td><b>급성 발병, 구역, 높은 가로 고환, 고환올림근반사 소실, Prehn 음성, 요검사 정상</b></td><td><b>즉시 탐색술·양측 고정</b></td></tr> <tr><td>급성 부고환염</td><td>수일에 걸친 발병, 배뇨 증상·농뇨·열, 반사 보존, 거상 시 통증 감소</td><td>항생제(성적 활동 유무에 따라 세프트리악손+독시사이클린 또는 플루오로퀴놀론)</td></tr> <tr><td>고환부속기 꼬임</td><td>사춘기 전, 국소 압통·blue dot, 반사 보존</td><td>진통제·관찰</td></tr> <tr><td>감돈 서혜탈장</td><td>서혜부 종괴, 장폐색 증상</td><td>정복 또는 수술</td></tr> <tr><td>고환 외상·혈종</td><td>외상력, 초음파로 백막 파열 확인</td><td>파열 시 수술</td></tr> </tbody></table> <b>가장 가까운 오답은 「초음파 결과를 기다린 뒤 결정」</b> — 검사로 확진하고 수술하는 습관이 작동한다. 갈림길은 <b>임상 소견이 이미 명백한가</b>다. 반사 소실·가로 고환·급성 발병이 갖춰지면 초음파는 시간만 쓰고, 소견이 애매하거나 발병 후 오래 지났을 때만 초음파가 앞선다.\n- 오답 이유:\n  - ② 도플러 초음파는 진찰 소견이 애매할 때 혈류 소실을 확인하는 검사이지만, 검사 대기 시간 동안 허혈이 진행되고 부분·간헐 꼬임에서는 혈류가 남아 위음성이 난다. 이 환자는 전형적 소견이 모두 있다. 이 선지가 정답이 되려면 반사가 보존되고 통증이 경미해 진단이 불확실해야 한다.\n  - ③ 경험적 항생제는 급성 부고환염의 치료다. 부고환염은 수일에 걸쳐 시작하고 배뇨 증상·농뇨·열이 흔하며 고환올림근반사가 남는다. 이 환자는 급성 발병에 요검사가 정상이고 반사가 소실됐다. 이 선지가 정답이 되려면 요검사에서 농뇨가 있고 증상이 며칠에 걸쳐 진행했어야 한다.\n  - ④ 진통제와 음낭 거상 후 관찰은 고환부속기 꼬임처럼 자연 회복되는 병변의 처치다. 고환꼬임에서 24시간을 기다리면 고환 구제율이 10 % 미만으로 떨어진다. 이 선지가 정답이 되려면 통증이 고환 위극에 국한되고 blue dot 이 보이며 반사가 보존돼야 한다.\n  - ⑤ 요도 분비물 배양과 세프트리악손은 성매개 감염에 의한 요도염·부고환염의 처치다. 이 환자는 요도 분비물이나 배뇨 증상이 없고 요검사가 정상이다. 이 선지가 정답이 되려면 요도 분비물과 농뇨가 있고 발병이 아급성이어야 한다.\n- 함정: 「수술 전에 영상으로 확진」이 원칙인 질환이 많지만 고환꼬임은 예외다. 반사 소실과 가로로 올라간 고환이 보이면 초음파를 기다리지 말고 수술실로 보낸다.\n- 학습목표: 급성 음낭통에서 고환꼬임의 진찰 소견을 읽고 영상검사보다 즉각적인 음낭 탐색술을 선택한다\n- 근거·출처: Campbell-Walsh-Wein Urology — 급성 음낭: 고환꼬임의 진찰 소견, 허혈 시간과 구제율, 양측 고환고정술 · AUA/European Association of Urology Guidelines on Paediatric Urology — acute scrotum: testicular torsion is a surgical emergency; imaging should not delay exploration · Nelson Textbook of Pediatrics — testicular torsion vs epididymitis vs torsion of the appendix testis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "사춘기 남자에서 갑자기 시작된 심한 편측 음낭통, 구역, 높이 올라가 가로로 놓인 고환, 고환올림근반사 소실, 거상 시 통증 완화 없음(Prehn 징후 음성)은 고환꼬임의 전형적 소견이다. 고환 생존은 허혈 시간에 달려 있어(6시간 이내 90 % 이상 구제) 진단이 명백하면 영상검사로 시간을 쓰지 않고 곧바로 수술적 탐색을 하며, 꼬임을 풀고 양쪽 고환을 고정한다."
+   },
+   {
+    "k": "원리",
+    "v": "고환꼬임은 <b>정삭이 자기 축을 중심으로 비틀려 정맥 환류가 먼저 막히고 이어 동맥이 막히는</b> 외과적 응급이다. 사춘기에 흔한 이유는 <b>고환집막의 이상 부착(종울림추 기형, bell-clapper)</b>으로 고환이 집막 안에 매달려 자유롭게 돌 수 있고, 사춘기에 고환 부피가 급격히 커지기 때문이다. 이 기형은 양측성이 흔해 <b>반대쪽 고환도 함께 고정</b>한다.<br> <b>진찰 소견이 나오는 이유</b> — 정삭이 짧아지며 고환이 <b>높이 올라가고 가로로 놓인다</b>(고환올림근 수축과 비틀림). 고환올림근반사는 넙다리 안쪽을 긁으면 같은 쪽 고환이 올라가는 반사인데, 비틀린 정삭은 더 이상 당겨 올릴 수 없어 <b>반사가 사라진다</b> — 급성 음낭통에서 가장 민감한 소견이다. 부고환염에서는 음낭을 들어 올리면 정삭의 긴장이 풀려 통증이 줄지만(Prehn 양성), 꼬임에서는 그렇지 않다.<br> <b>왜 시간이 전부인가</b> — 비틀림 후 <b>6시간 이내</b> 풀면 고환 구제율이 90 % 이상, 12시간이면 약 50 %, 24시간을 넘으면 10 % 미만이다. 도플러 초음파는 혈류 소실을 보여 주지만 검사 대기와 판독에 시간이 들고, 부분 꼬임이나 간헐 꼬임에서는 혈류가 남아 위음성이 생긴다. 그래서 <b>임상적으로 명백하면 영상 없이 곧바로 수술</b>하고, 초음파는 소견이 애매한 경우에만 쓴다. 수술이 즉시 어려우면 용수 정복(바깥쪽으로 「책을 펴듯」 돌림)을 시도하되 이것이 수술을 대신하지는 않는다.<br> <b>감별의 축</b> — 부고환염은 서서히 시작하고 배뇨 증상·요검사 이상·열이 흔하며 반사가 보존된다. 고환부속기 꼬임은 통증이 덜하고 고환 위극에 「blue dot」이 보이며 반사가 남는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:40%\">갈림길</th><th>처치</th></tr></thead><tbody> <tr><td><b>고환꼬임(정답)</b></td><td><b>급성 발병, 구역, 높은 가로 고환, 고환올림근반사 소실, Prehn 음성, 요검사 정상</b></td><td><b>즉시 탐색술·양측 고정</b></td></tr> <tr><td>급성 부고환염</td><td>수일에 걸친 발병, 배뇨 증상·농뇨·열, 반사 보존, 거상 시 통증 감소</td><td>항생제(성적 활동 유무에 따라 세프트리악손+독시사이클린 또는 플루오로퀴놀론)</td></tr> <tr><td>고환부속기 꼬임</td><td>사춘기 전, 국소 압통·blue dot, 반사 보존</td><td>진통제·관찰</td></tr> <tr><td>감돈 서혜탈장</td><td>서혜부 종괴, 장폐색 증상</td><td>정복 또는 수술</td></tr> <tr><td>고환 외상·혈종</td><td>외상력, 초음파로 백막 파열 확인</td><td>파열 시 수술</td></tr> </tbody></table> <b>가장 가까운 오답은 「초음파 결과를 기다린 뒤 결정」</b> — 검사로 확진하고 수술하는 습관이 작동한다. 갈림길은 <b>임상 소견이 이미 명백한가</b>다. 반사 소실·가로 고환·급성 발병이 갖춰지면 초음파는 시간만 쓰고, 소견이 애매하거나 발병 후 오래 지났을 때만 초음파가 앞선다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 도플러 초음파는 진찰 소견이 애매할 때 혈류 소실을 확인하는 검사이지만, 검사 대기 시간 동안 허혈이 진행되고 부분·간헐 꼬임에서는 혈류가 남아 위음성이 난다. 이 환자는 전형적 소견이 모두 있다. 이 선지가 정답이 되려면 반사가 보존되고 통증이 경미해 진단이 불확실해야 한다.\n③ 경험적 항생제는 급성 부고환염의 치료다. 부고환염은 수일에 걸쳐 시작하고 배뇨 증상·농뇨·열이 흔하며 고환올림근반사가 남는다. 이 환자는 급성 발병에 요검사가 정상이고 반사가 소실됐다. 이 선지가 정답이 되려면 요검사에서 농뇨가 있고 증상이 며칠에 걸쳐 진행했어야 한다.\n④ 진통제와 음낭 거상 후 관찰은 고환부속기 꼬임처럼 자연 회복되는 병변의 처치다. 고환꼬임에서 24시간을 기다리면 고환 구제율이 10 % 미만으로 떨어진다. 이 선지가 정답이 되려면 통증이 고환 위극에 국한되고 blue dot 이 보이며 반사가 보존돼야 한다.\n⑤ 요도 분비물 배양과 세프트리악손은 성매개 감염에 의한 요도염·부고환염의 처치다. 이 환자는 요도 분비물이나 배뇨 증상이 없고 요검사가 정상이다. 이 선지가 정답이 되려면 요도 분비물과 농뇨가 있고 발병이 아급성이어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「수술 전에 영상으로 확진」이 원칙인 질환이 많지만 고환꼬임은 예외다. 반사 소실과 가로로 올라간 고환이 보이면 초음파를 기다리지 말고 수술실로 보낸다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 음낭통에서 고환꼬임의 진찰 소견을 읽고 영상검사보다 즉각적인 음낭 탐색술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Campbell-Walsh-Wein Urology — 급성 음낭: 고환꼬임의 진찰 소견, 허혈 시간과 구제율, 양측 고환고정술 · AUA/European Association of Urology Guidelines on Paediatric Urology — acute scrotum: testicular torsion is a surgical emergency; imaging should not delay exploration · Nelson Textbook of Pediatrics — testicular torsion vs epididymitis vs torsion of the appendix testis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0035",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "부인과 — 종양·내분비·약리",
+  "type": "부인과 — 종양·내분비·약리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-15",
+  "vignette": "A 34-year-old woman, gravida 0, comes to the physician because of 8 months of heavy, irregular menstrual bleeding. She has polycystic ovary syndrome and a body mass index of 37 kg/m². She and her husband wish to have children within the next 2 years. Transvaginal ultrasonography shows an endometrial thickness of 19 mm. Endometrial biopsy shows atypical hyperplasia (endometrioid intraepithelial neoplasia); pelvic MRI shows no myometrial invasion and normal ovaries.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Cyclic medroxyprogesterone acetate for 10 days each month",
+   "A combined estrogen–progestin oral contraceptive pill",
+   "Immediate ovulation induction with letrozole to achieve pregnancy",
+   "Levonorgestrel-releasing intrauterine system with endometrial biopsy every 3 to 6 months",
+   "Total hysterectomy with bilateral salpingo-oophorectomy"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Atypical hyperplasia carries a high risk of concurrent (up to about 40 %) or subsequent endometrial carcinoma, so the standard treatment is hysterectomy — but in a young woman who wants children and whose imaging shows no invasion, fertility-sparing treatment with continuous high-dose progestin is appropriate. The levonorgestrel-releasing intrauterine system delivers the highest local progestin exposure, achieves regression more often than oral progestins, and is combined with endometrial sampling every 3–6 months until two consecutive negative biopsies, after which pregnancy is attempted promptly and hysterectomy is offered once childbearing is complete.\n- 원리: The endometrium is driven to proliferate by <b>estrogen unopposed by progesterone</b>. In this patient two sources of unopposed estrogen combine: <b>anovulation</b> (no corpus luteum, so no progesterone) and <b>adipose aromatization</b> of androgens to estrone. Years of this produce hyperplasia; when the glands acquire <b>cytologic atypia</b> they have usually acquired PTEN loss and other clonal mutations — the lesion is now <b>endometrioid intraepithelial neoplasia</b>, a direct precursor of endometrioid carcinoma, with roughly a 30–40 % chance that carcinoma already coexists in the uterus and a 25–30 % risk of progression if untreated.<br> <b>Why progestin can reverse it</b> — progesterone receptors are preserved in most EIN; progestin induces stromal decidualization, glandular atrophy and apoptosis of the neoplastic epithelium. <b>Dose and continuity matter</b>: intermittent cyclic progestin (10 days a month) only sheds the lining and is not adequate for atypia. The levonorgestrel IUS produces intrauterine levonorgestrel concentrations hundreds of times higher than oral therapy achieves with negligible systemic exposure, and pooled data show regression in about 90 % of atypical hyperplasia versus 65–70 % with oral megestrol or medroxyprogesterone.<br> <b>Why surveillance biopsies</b> — the initial biopsy sampled only part of the cavity; regression must be documented histologically at 3–6-month intervals, and progression to carcinoma or persistence after 12 months removes the fertility-sparing option. Once two consecutive biopsies are negative the patient should attempt pregnancy without delay (often with ovulation induction, since PCOS caused the problem), and hysterectomy is recommended after childbearing because recurrence is common.<br> <b>Why not hysterectomy now</b> — it is the definitive and standard treatment for atypical hyperplasia in women who have completed childbearing or cannot be followed; here it would end fertility while conservative therapy has a high success rate with no invasion on MRI. Weight loss and metabolic treatment address the cause and lower recurrence.\n- 비교: <table><thead><tr><th style=\"width:32%\">Option</th><th style=\"width:34%\">When it is correct</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Levonorgestrel IUS + biopsy every 3–6 mo (answer)</b></td><td><b>atypical hyperplasia, fertility desired, no invasion, reliable follow-up</b></td><td>—</td></tr> <tr><td>Total hysterectomy ± BSO</td><td>childbearing complete, persistence/progression on therapy, or follow-up impossible</td><td>34-year-old who wants children</td></tr> <tr><td>Cyclic MPA 10 days/month</td><td>hyperplasia <b>without</b> atypia, to regulate bleeding</td><td>intermittent low dose does not reverse atypia</td></tr> <tr><td>Combined oral contraceptive</td><td>prevention of hyperplasia in anovulation; not a treatment of established EIN</td><td>adds estrogen, no regression data for atypia</td></tr> <tr><td>Ovulation induction now</td><td>after two negative surveillance biopsies</td><td>would leave a premalignant lesion untreated during pregnancy attempts</td></tr> </tbody></table> The <b>closest wrong answer is hysterectomy</b>: it is what textbooks list first for atypical hyperplasia. The discriminator is the pair <b>'desires fertility' + 'no myometrial invasion on imaging'</b>; with both present, continuous progestin (preferably the levonorgestrel IUS) with mandatory biopsy surveillance is the accepted route, and hysterectomy is deferred until childbearing is complete or the lesion fails to regress.\n- 오답 이유:\n  - (A) Cyclic medroxyprogesterone for 10 days a month is used for hyperplasia without atypia or simply to induce regular withdrawal bleeding; the intermittent, low progestin exposure does not reliably reverse cytologic atypia. This option would be correct only if the biopsy had shown hyperplasia without atypia.\n  - (B) A combined oral contraceptive reduces the risk of developing hyperplasia in chronic anovulation and controls bleeding, but it contains estrogen and has no established regression rate for atypical hyperplasia. This option would be correct only as prevention in an anovulatory woman with a normal endometrium.\n  - (C) Ovulation induction is the right step once the lesion has regressed on two consecutive biopsies; attempting pregnancy now leaves a premalignant, possibly already malignant, endometrium untreated and unmonitored. This option would be correct only after documented histologic regression.\n  - (E) Total hysterectomy with salpingo-oophorectomy is the definitive treatment for atypical hyperplasia in women who have completed childbearing, who progress or persist on progestin, or who cannot be followed. It permanently ends fertility. This option would be correct only if the patient no longer wished to conceive or if surveillance biopsies showed persistence after 12 months or carcinoma.\n- 함정: 'Atypical hyperplasia = hysterectomy' is true for the average patient but not for the young woman who wants a child and has no invasion — for her, the answer is high-dose continuous progestin with a biopsy schedule, and hysterectomy comes later.\n- 학습목표: 임신 능력 보존을 원하는 젊은 여자의 비정형 자궁내막증식증(EIN)에서 레보노르게스트렐 자궁내장치와 정기 조직검사를 선택한다\n- 근거·출처: ACOG Committee Opinion No. 631 / SGO: Endometrial Intraepithelial Neoplasia (2015) — fertility-sparing management with progestin and surveillance · RCOG/BSGE Green-top Guideline No. 67: Management of Endometrial Hyperplasia (2016) — LNG-IUS first-line for atypical hyperplasia when fertility is desired; biopsy every 3 months · Gallos ID et al. Oral progestogens vs levonorgestrel-releasing intrauterine system for endometrial hyperplasia: a systematic review and metaanalysis (Am J Obstet Gynecol 2010) · Trimble CL et al. Concurrent endometrial carcinoma in women with a biopsy diagnosis of atypical endometrial hyperplasia (Cancer 2006)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Atypical hyperplasia carries a high risk of concurrent (up to about 40 %) or subsequent endometrial carcinoma, so the standard treatment is hysterectomy — but in a young woman who wants children and whose imaging shows no invasion, fertility-sparing treatment with continuous high-dose progestin is appropriate. The levonorgestrel-releasing intrauterine system delivers the highest local progestin exposure, achieves regression more often than oral progestins, and is combined with endometrial sampling every 3–6 months until two consecutive negative biopsies, after which pregnancy is attempted promptly and hysterectomy is offered once childbearing is complete."
+   },
+   {
+    "k": "원리",
+    "v": "The endometrium is driven to proliferate by <b>estrogen unopposed by progesterone</b>. In this patient two sources of unopposed estrogen combine: <b>anovulation</b> (no corpus luteum, so no progesterone) and <b>adipose aromatization</b> of androgens to estrone. Years of this produce hyperplasia; when the glands acquire <b>cytologic atypia</b> they have usually acquired PTEN loss and other clonal mutations — the lesion is now <b>endometrioid intraepithelial neoplasia</b>, a direct precursor of endometrioid carcinoma, with roughly a 30–40 % chance that carcinoma already coexists in the uterus and a 25–30 % risk of progression if untreated.<br> <b>Why progestin can reverse it</b> — progesterone receptors are preserved in most EIN; progestin induces stromal decidualization, glandular atrophy and apoptosis of the neoplastic epithelium. <b>Dose and continuity matter</b>: intermittent cyclic progestin (10 days a month) only sheds the lining and is not adequate for atypia. The levonorgestrel IUS produces intrauterine levonorgestrel concentrations hundreds of times higher than oral therapy achieves with negligible systemic exposure, and pooled data show regression in about 90 % of atypical hyperplasia versus 65–70 % with oral megestrol or medroxyprogesterone.<br> <b>Why surveillance biopsies</b> — the initial biopsy sampled only part of the cavity; regression must be documented histologically at 3–6-month intervals, and progression to carcinoma or persistence after 12 months removes the fertility-sparing option. Once two consecutive biopsies are negative the patient should attempt pregnancy without delay (often with ovulation induction, since PCOS caused the problem), and hysterectomy is recommended after childbearing because recurrence is common.<br> <b>Why not hysterectomy now</b> — it is the definitive and standard treatment for atypical hyperplasia in women who have completed childbearing or cannot be followed; here it would end fertility while conservative therapy has a high success rate with no invasion on MRI. Weight loss and metabolic treatment address the cause and lower recurrence."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Option</th><th style=\"width:34%\">When it is correct</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Levonorgestrel IUS + biopsy every 3–6 mo (answer)</b></td><td><b>atypical hyperplasia, fertility desired, no invasion, reliable follow-up</b></td><td>—</td></tr> <tr><td>Total hysterectomy ± BSO</td><td>childbearing complete, persistence/progression on therapy, or follow-up impossible</td><td>34-year-old who wants children</td></tr> <tr><td>Cyclic MPA 10 days/month</td><td>hyperplasia <b>without</b> atypia, to regulate bleeding</td><td>intermittent low dose does not reverse atypia</td></tr> <tr><td>Combined oral contraceptive</td><td>prevention of hyperplasia in anovulation; not a treatment of established EIN</td><td>adds estrogen, no regression data for atypia</td></tr> <tr><td>Ovulation induction now</td><td>after two negative surveillance biopsies</td><td>would leave a premalignant lesion untreated during pregnancy attempts</td></tr> </tbody></table> The <b>closest wrong answer is hysterectomy</b>: it is what textbooks list first for atypical hyperplasia. The discriminator is the pair <b>'desires fertility' + 'no myometrial invasion on imaging'</b>; with both present, continuous progestin (preferably the levonorgestrel IUS) with mandatory biopsy surveillance is the accepted route, and hysterectomy is deferred until childbearing is complete or the lesion fails to regress."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Cyclic medroxyprogesterone for 10 days a month is used for hyperplasia without atypia or simply to induce regular withdrawal bleeding; the intermittent, low progestin exposure does not reliably reverse cytologic atypia. This option would be correct only if the biopsy had shown hyperplasia without atypia.\n(B) A combined oral contraceptive reduces the risk of developing hyperplasia in chronic anovulation and controls bleeding, but it contains estrogen and has no established regression rate for atypical hyperplasia. This option would be correct only as prevention in an anovulatory woman with a normal endometrium.\n(C) Ovulation induction is the right step once the lesion has regressed on two consecutive biopsies; attempting pregnancy now leaves a premalignant, possibly already malignant, endometrium untreated and unmonitored. This option would be correct only after documented histologic regression.\n(E) Total hysterectomy with salpingo-oophorectomy is the definitive treatment for atypical hyperplasia in women who have completed childbearing, who progress or persist on progestin, or who cannot be followed. It permanently ends fertility. This option would be correct only if the patient no longer wished to conceive or if surveillance biopsies showed persistence after 12 months or carcinoma."
+   },
+   {
+    "k": "함정",
+    "v": "'Atypical hyperplasia = hysterectomy' is true for the average patient but not for the young woman who wants a child and has no invasion — for her, the answer is high-dose continuous progestin with a biopsy schedule, and hysterectomy comes later."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 능력 보존을 원하는 젊은 여자의 비정형 자궁내막증식증(EIN)에서 레보노르게스트렐 자궁내장치와 정기 조직검사를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Committee Opinion No. 631 / SGO: Endometrial Intraepithelial Neoplasia (2015) — fertility-sparing management with progestin and surveillance · RCOG/BSGE Green-top Guideline No. 67: Management of Endometrial Hyperplasia (2016) — LNG-IUS first-line for atypical hyperplasia when fertility is desired; biopsy every 3 months · Gallos ID et al. Oral progestogens vs levonorgestrel-releasing intrauterine system for endometrial hyperplasia: a systematic review and metaanalysis (Am J Obstet Gynecol 2010) · Trimble CL et al. Concurrent endometrial carcinoma in women with a biopsy diagnosis of atypical endometrial hyperplasia (Cancer 2006)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0034",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "부인과 — 종양·내분비·약리",
+  "type": "부인과 — 종양·내분비·약리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-15",
+  "vignette": "A 28-year-old woman comes to the clinic because she has been unable to conceive for 18 months. Her menstrual periods occur every 45 to 90 days. She has hirsutism and a body mass index of 31 kg/m². Serum prolactin and TSH concentrations are normal; pelvic ultrasonography shows multiple small peripheral follicles in both ovaries, and her partner's semen analysis is normal. Her physician prescribes a 5-day course of clomiphene citrate beginning on day 3 of a progestin-induced withdrawal bleed.",
+  "question": "Which of the following is the most likely mechanism by which this drug induces ovulation?",
+  "options": [
+   "Competitive blockade of estrogen receptors in the hypothalamus, removing negative feedback on GnRH release",
+   "Inhibition of aromatase in ovarian granulosa cells, lowering circulating estradiol",
+   "Direct stimulation of FSH receptors on granulosa cells",
+   "Agonism at dopamine D2 receptors in the anterior pituitary, lowering prolactin",
+   "Improvement of insulin sensitivity with a fall in ovarian androgen production"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Clomiphene is a selective estrogen receptor modulator whose long-lived isomer occupies hypothalamic estrogen receptors for weeks. The hypothalamus then 'sees' low estrogen, the negative feedback that restrains GnRH is removed, GnRH pulse frequency rises, and pituitary FSH and LH secretion increase; the higher FSH recruits and matures a follicle in a woman with anovulation but intact hypothalamic–pituitary–ovarian axis (WHO group II, such as polycystic ovary syndrome).\n- 원리: Ovulation in a normal cycle depends on <b>negative feedback</b>: rising estradiol from the growing follicle suppresses GnRH and FSH, so that only the dominant follicle survives. In polycystic ovary syndrome the axis is intact but tonically disordered (high LH, relative FSH deficiency, hyperandrogenism), and the follicles arrest at the small antral stage. <b>Clomiphene citrate</b> is a triphenylethylene <b>selective estrogen receptor modulator (SERM)</b>: its zu-isomer (zuclomiphene) binds estrogen receptors in the <b>hypothalamus</b> and behaves as an <b>antagonist</b> there, so the hypothalamus perceives estrogen deficiency and increases the frequency of GnRH pulses. The pituitary responds with <b>more FSH (and LH)</b>, and the extra FSH, given for 5 days early in the follicular phase, lifts one or more follicles above the selection threshold. When the follicle then produces enough estradiol, the normal <b>positive feedback</b> LH surge occurs (or is triggered with hCG) and ovulation follows about 7 days after the last tablet.<br> <b>Why the axis must be intact</b> — the drug only <i>disinhibits</i>; it supplies no gonadotropin. In hypothalamic amenorrhea (WHO I) or ovarian failure (WHO III) there is nothing to disinhibit, and clomiphene fails. Pre-treatment normal prolactin and TSH exclude other causes of anovulation.<br> <b>Why the side-effects follow the mechanism</b> — antiestrogenic action at the endometrium (thin lining) and cervix (thick mucus) can lower conception despite ovulation, hot flushes reflect the hypothalamic 'low estrogen' state, and the twin rate (~8 %) reflects supraphysiologic FSH recruiting more than one follicle. Letrozole, an aromatase inhibitor, achieves a similar FSH rise by genuinely lowering estradiol for a few days and avoids the endometrial antiestrogen effect, which is why it is now first-line in PCOS.\n- 비교: <table><thead><tr><th style=\"width:30%\">Drug</th><th style=\"width:38%\">Mechanism</th><th>Where it fits</th></tr></thead><tbody> <tr><td><b>Clomiphene (answer)</b></td><td><b>hypothalamic ER antagonist → ↑GnRH pulses → ↑FSH/LH</b></td><td>WHO II anovulation (PCOS), intact axis</td></tr> <tr><td>Letrozole</td><td>aromatase inhibition → ↓estradiol for days → ↑FSH; no ER blockade at endometrium</td><td>first-line for PCOS ovulation induction</td></tr> <tr><td>Recombinant FSH</td><td>direct FSH-receptor agonism on granulosa cells</td><td>WHO I (with LH) or clomiphene/letrozole failure; monitoring required</td></tr> <tr><td>Cabergoline / bromocriptine</td><td>D2 agonist → ↓prolactin → restores GnRH pulsatility</td><td>hyperprolactinemic anovulation only</td></tr> <tr><td>Metformin</td><td>↑insulin sensitivity → ↓ovarian androgen; modest ovulation effect</td><td>adjunct in PCOS with insulin resistance</td></tr> </tbody></table> The <b>closest wrong answer is aromatase inhibition</b> — letrozole and clomiphene both end in a higher FSH and are used for the same patients. The discriminator is <b>how the low-estrogen signal is created</b>: clomiphene fakes it by blocking the receptor while estradiol is actually normal or high; letrozole lowers estradiol itself. Ask 'is the receptor blocked or the hormone lowered?' and the two never confuse.\n- 오답 이유:\n  - (B) Aromatase inhibition is the mechanism of letrozole: estradiol synthesis falls for several days, the hypothalamus senses the true drop and FSH rises. Clomiphene does not lower estradiol — it blocks the receptor while estradiol stays normal. This option would be correct only if the drug prescribed were letrozole or anastrozole.\n  - (C) Direct FSH-receptor stimulation is how exogenous gonadotropins (recombinant FSH, hMG) work; they bypass the hypothalamus and pituitary and require ultrasound monitoring for hyperstimulation. Clomiphene contains no gonadotropin. This option would be correct only for injectable gonadotropin therapy.\n  - (D) Dopamine D2 agonism lowers prolactin and restores GnRH pulsatility in hyperprolactinemic anovulation, as with cabergoline or bromocriptine. This patient's prolactin is normal and clomiphene has no dopaminergic action. This option would be correct only if prolactin were elevated and a dopamine agonist had been prescribed.\n  - (E) Improving insulin sensitivity reduces ovarian androgen output and may restore ovulation in PCOS, which is how metformin acts as an adjunct. Clomiphene has no effect on insulin signaling. This option would be correct only if the drug were metformin or another insulin sensitizer.\n- 함정: Clomiphene is an 'anti-estrogen' that raises estradiol — the paradox resolves once you place its action at the hypothalamic receptor rather than at the ovary.\n- 학습목표: 클로미펜의 작용기전(시상하부 에스트로겐 수용체 길항 → 음성되먹임 해제 → FSH 상승)을 설명한다\n- 근거·출처: Goodman & Gilman's The Pharmacological Basis of Therapeutics — estrogens and SERMs: clomiphene pharmacology · Speroff's Clinical Gynecologic Endocrinology and Infertility — induction of ovulation: clomiphene citrate mechanism and use · Legro RS et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome (N Engl J Med 2014)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Clomiphene is a selective estrogen receptor modulator whose long-lived isomer occupies hypothalamic estrogen receptors for weeks. The hypothalamus then 'sees' low estrogen, the negative feedback that restrains GnRH is removed, GnRH pulse frequency rises, and pituitary FSH and LH secretion increase; the higher FSH recruits and matures a follicle in a woman with anovulation but intact hypothalamic–pituitary–ovarian axis (WHO group II, such as polycystic ovary syndrome)."
+   },
+   {
+    "k": "원리",
+    "v": "Ovulation in a normal cycle depends on <b>negative feedback</b>: rising estradiol from the growing follicle suppresses GnRH and FSH, so that only the dominant follicle survives. In polycystic ovary syndrome the axis is intact but tonically disordered (high LH, relative FSH deficiency, hyperandrogenism), and the follicles arrest at the small antral stage. <b>Clomiphene citrate</b> is a triphenylethylene <b>selective estrogen receptor modulator (SERM)</b>: its zu-isomer (zuclomiphene) binds estrogen receptors in the <b>hypothalamus</b> and behaves as an <b>antagonist</b> there, so the hypothalamus perceives estrogen deficiency and increases the frequency of GnRH pulses. The pituitary responds with <b>more FSH (and LH)</b>, and the extra FSH, given for 5 days early in the follicular phase, lifts one or more follicles above the selection threshold. When the follicle then produces enough estradiol, the normal <b>positive feedback</b> LH surge occurs (or is triggered with hCG) and ovulation follows about 7 days after the last tablet.<br> <b>Why the axis must be intact</b> — the drug only <i>disinhibits</i>; it supplies no gonadotropin. In hypothalamic amenorrhea (WHO I) or ovarian failure (WHO III) there is nothing to disinhibit, and clomiphene fails. Pre-treatment normal prolactin and TSH exclude other causes of anovulation.<br> <b>Why the side-effects follow the mechanism</b> — antiestrogenic action at the endometrium (thin lining) and cervix (thick mucus) can lower conception despite ovulation, hot flushes reflect the hypothalamic 'low estrogen' state, and the twin rate (~8 %) reflects supraphysiologic FSH recruiting more than one follicle. Letrozole, an aromatase inhibitor, achieves a similar FSH rise by genuinely lowering estradiol for a few days and avoids the endometrial antiestrogen effect, which is why it is now first-line in PCOS."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Drug</th><th style=\"width:38%\">Mechanism</th><th>Where it fits</th></tr></thead><tbody> <tr><td><b>Clomiphene (answer)</b></td><td><b>hypothalamic ER antagonist → ↑GnRH pulses → ↑FSH/LH</b></td><td>WHO II anovulation (PCOS), intact axis</td></tr> <tr><td>Letrozole</td><td>aromatase inhibition → ↓estradiol for days → ↑FSH; no ER blockade at endometrium</td><td>first-line for PCOS ovulation induction</td></tr> <tr><td>Recombinant FSH</td><td>direct FSH-receptor agonism on granulosa cells</td><td>WHO I (with LH) or clomiphene/letrozole failure; monitoring required</td></tr> <tr><td>Cabergoline / bromocriptine</td><td>D2 agonist → ↓prolactin → restores GnRH pulsatility</td><td>hyperprolactinemic anovulation only</td></tr> <tr><td>Metformin</td><td>↑insulin sensitivity → ↓ovarian androgen; modest ovulation effect</td><td>adjunct in PCOS with insulin resistance</td></tr> </tbody></table> The <b>closest wrong answer is aromatase inhibition</b> — letrozole and clomiphene both end in a higher FSH and are used for the same patients. The discriminator is <b>how the low-estrogen signal is created</b>: clomiphene fakes it by blocking the receptor while estradiol is actually normal or high; letrozole lowers estradiol itself. Ask 'is the receptor blocked or the hormone lowered?' and the two never confuse."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Aromatase inhibition is the mechanism of letrozole: estradiol synthesis falls for several days, the hypothalamus senses the true drop and FSH rises. Clomiphene does not lower estradiol — it blocks the receptor while estradiol stays normal. This option would be correct only if the drug prescribed were letrozole or anastrozole.\n(C) Direct FSH-receptor stimulation is how exogenous gonadotropins (recombinant FSH, hMG) work; they bypass the hypothalamus and pituitary and require ultrasound monitoring for hyperstimulation. Clomiphene contains no gonadotropin. This option would be correct only for injectable gonadotropin therapy.\n(D) Dopamine D2 agonism lowers prolactin and restores GnRH pulsatility in hyperprolactinemic anovulation, as with cabergoline or bromocriptine. This patient's prolactin is normal and clomiphene has no dopaminergic action. This option would be correct only if prolactin were elevated and a dopamine agonist had been prescribed.\n(E) Improving insulin sensitivity reduces ovarian androgen output and may restore ovulation in PCOS, which is how metformin acts as an adjunct. Clomiphene has no effect on insulin signaling. This option would be correct only if the drug were metformin or another insulin sensitizer."
+   },
+   {
+    "k": "함정",
+    "v": "Clomiphene is an 'anti-estrogen' that raises estradiol — the paradox resolves once you place its action at the hypothalamic receptor rather than at the ovary."
+   },
+   {
+    "k": "학습목표",
+    "v": "클로미펜의 작용기전(시상하부 에스트로겐 수용체 길항 → 음성되먹임 해제 → FSH 상승)을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goodman & Gilman's The Pharmacological Basis of Therapeutics — estrogens and SERMs: clomiphene pharmacology · Speroff's Clinical Gynecologic Endocrinology and Infertility — induction of ovulation: clomiphene citrate mechanism and use · Legro RS et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome (N Engl J Med 2014)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0033",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·비뇨의학·산과·심전도)",
+  "subtopic": "부인과 — 종양·내분비·약리",
+  "type": "부인과 — 종양·내분비·약리",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-15",
+  "vignette": "45세 여자가 3개월 전부터 성교 후 출혈이 있어 왔다. 자궁경부세포검사는 10년 넘게 받지 않았다. 질경검사에서 자궁경부에 지름 약 4 cm 의 궤양성 종괴가 있고 조직검사에서 편평세포암으로 확인되었다. 직장질 진찰에서 종괴가 양쪽 자궁옆조직으로 뻗어 있으나 골반벽에는 이르지 않고, 질 상부 1/3 까지 침범하였다. 골반 MRI 도 같은 소견이며 수신증은 없고 흉부·복부 CT 에서 림프절 종대나 원격전이는 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "자궁경부 원추절제술 후 추적 관찰",
+   "신보강 항암화학요법 뒤 근치 자궁절제술",
+   "시스플라틴 동시 항암화학방사선요법(외부방사선과 근접치료)",
+   "근치 자궁절제술과 골반림프절 절제술",
+   "단순 자궁절제술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 자궁옆조직 침윤이 있으나 골반벽까지는 이르지 않았고 질 상부 2/3 이내이며 원격전이가 없으므로 FIGO IIB 다. IIB 이상의 국소진행 자궁경부암은 수술로 완전 절제가 어렵고 절제 뒤에도 보조 방사선이 필요해 두 치료의 부작용이 겹치므로, 표준 치료는 시스플라틴 주 1회를 병행하는 외부방사선치료와 근접치료(동시항암화학방사선요법)다.\n- 원리: 자궁경부암의 치료는 <b>병기가 정한다</b>. 종양이 자궁경부와 자궁옆조직 일부(IB·IIA)까지면 근치 자궁절제술로 종양 주위를 여유 있게 절제할 수 있지만, <b>자궁옆조직으로 뻗은 순간(IIB)</b>부터는 절제연이 종양과 닿거나 요관·혈관 손상 없이 여유를 확보할 수 없다. 그래서 IIB~IVA 는 <b>방사선치료가 근치 목적의 주 치료</b>이고, 1999년 이후 여러 무작위 시험이 <b>시스플라틴 병행이 방사선 단독보다 생존을 30~50 % 개선</b>함을 보여 동시항암화학방사선요법이 표준이 되었다.<br> <b>시스플라틴이 왜 방사선을 돕는가</b> — 시스플라틴은 DNA 가닥 사이 교차결합을 만들어 방사선이 만든 DNA 손상의 복구를 방해하고(방사선 감작), 저산소 종양세포에도 작용한다. 주 1회 40 mg/m² 를 방사선 기간 중 5~6회 준다.<br> <b>근접치료(brachytherapy)를 빼놓지 않는 이유</b> — 외부방사선 45~50 Gy 만으로는 자궁경부 종양 중심의 선량이 부족하다. 자궁강·질에 선원을 넣어 종양에 80~90 Gy 를 주면서 방광·직장 선량을 줄이는 근접치료가 국소 제어의 핵심이며, 전체 치료를 <b>8주 이내</b>에 끝내야 성적이 유지된다.<br> <b>병기의 갈림길 — 직장질 진찰</b> — 자궁옆조직 침윤의 유무(IIA vs IIB)와 골반벽 도달 여부(IIB vs IIIB)는 직장질 진찰로 판단하고, 2018 FIGO 개정부터 영상·병리 소견을 병기에 반영할 수 있다. 수신증이 있으면 IIIB, 방광·직장 점막 침윤은 IVA, 대동맥옆 림프절 전이는 IIIC2 다.\n- 비교: <table><thead><tr><th style=\"width:24%\">병기</th><th style=\"width:38%\">정의</th><th>표준 치료</th></tr></thead><tbody> <tr><td>IB1~IB2</td><td>자궁경부에 국한, 최대 지름 ≤ 4 cm</td><td>근치 자궁절제술 + 골반림프절 절제(또는 방사선)</td></tr> <tr><td>IIA1</td><td>질 상부 2/3 침범, 자궁옆조직 없음, ≤ 4 cm</td><td>근치 자궁절제술 또는 동시항암화학방사선</td></tr> <tr><td><b>IIB(정답 상황)</b></td><td><b>자궁옆조직 침윤, 골반벽 미도달</b></td><td><b>시스플라틴 동시항암화학방사선 + 근접치료</b></td></tr> <tr><td>IIIB</td><td>골반벽 도달 또는 수신증·무기능 콩팥</td><td>동시항암화학방사선 + 근접치료</td></tr> <tr><td>IVB</td><td>원격전이</td><td>전신 항암(파클리탁셀·시스플라틴 ± 베바시주맙 ± 펨브롤리주맙), 완화 방사선</td></tr> </tbody></table> <b>가장 가까운 오답은 근치 자궁절제술</b> — 「4 cm 종괴, 전이 없음」만 보면 수술 가능해 보인다. 갈림길은 <b>자궁옆조직 침윤</b>이다. 침윤이 없었다면(IIA1·IB2) 근치 자궁절제술이 정답이 되고, 반대로 침윤이 골반벽에 닿으면 IIIB 로 치료는 같은 동시항암화학방사선이다.\n- 오답 이유:\n  - ① 원추절제술은 자궁경부 상피내병변이나 IA1 미세침윤암에서 진단 겸 치료로 쓰인다. 육안적 4 cm 종괴에는 진단 이상의 역할이 없다. 이 선지가 정답이 되려면 조직검사가 CIN 3 또는 IA1 이고 임신 능력 보존을 원해야 한다.\n  - ② 신보강 항암화학요법 뒤 근치수술은 일부 지역에서 IB3·IIA2 큰 종양에 시도되지만 무작위 시험에서 동시항암화학방사선보다 우월하지 않았고 IIB 이상에는 표준이 아니다. 이 선지가 정답이 되려면 자궁옆조직 침윤이 없는 큰 종양(IB3)에서 방사선치료를 할 수 없는 상황이어야 한다.\n  - ④ 근치 자궁절제술과 골반림프절 절제술은 IA2~IB2·IIA1 처럼 자궁옆조직 침윤이 없는 종양에서 절제연을 확보할 수 있을 때의 치료다. 자궁옆조직으로 뻗은 IIB 는 완전 절제가 어렵고 수술 후 방사선까지 더해져 합병증이 겹친다. 이 선지가 정답이 되려면 직장질 진찰과 MRI 에서 자궁옆조직 침윤이 없어야 한다.\n  - ⑤ 단순 자궁절제술은 자궁옆조직·질 상부를 함께 떼지 않아 IA1(림프혈관 침윤 없음)까지만 적절하다. 4 cm 침윤암에서는 종양을 자르고 지나가는 수술이 된다. 이 선지가 정답이 되려면 현미경적 침윤 깊이 3 mm 이하의 IA1 이어야 한다.\n- 함정: 「전이가 없고 4 cm 면 수술」이라는 단순화가 함정이다. 자궁경부암에서 수술과 방사선을 가르는 것은 크기가 아니라 자궁옆조직 침윤(IIB)이다.\n- 학습목표: 자궁옆조직 침윤(FIGO IIB)이 있는 자궁경부암에서 근치수술이 아닌 시스플라틴 동시항암화학방사선요법을 선택한다\n- 근거·출처: Bhatla N et al. Revised FIGO staging for carcinoma of the cervix uteri (Int J Gynaecol Obstet 2019) — IIB 정의 · NCCN Clinical Practice Guidelines in Oncology: Cervical Cancer — stage IIB–IVA: definitive chemoradiation with brachytherapy · Chemoradiotherapy for Cervical Cancer Meta-Analysis Collaboration. J Clin Oncol 2008 — 시스플라틴 병행의 생존 이득 · Berek & Novak's Gynecology — 자궁경부암 병기별 치료",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "자궁옆조직 침윤이 있으나 골반벽까지는 이르지 않았고 질 상부 2/3 이내이며 원격전이가 없으므로 FIGO IIB 다. IIB 이상의 국소진행 자궁경부암은 수술로 완전 절제가 어렵고 절제 뒤에도 보조 방사선이 필요해 두 치료의 부작용이 겹치므로, 표준 치료는 시스플라틴 주 1회를 병행하는 외부방사선치료와 근접치료(동시항암화학방사선요법)다."
+   },
+   {
+    "k": "원리",
+    "v": "자궁경부암의 치료는 <b>병기가 정한다</b>. 종양이 자궁경부와 자궁옆조직 일부(IB·IIA)까지면 근치 자궁절제술로 종양 주위를 여유 있게 절제할 수 있지만, <b>자궁옆조직으로 뻗은 순간(IIB)</b>부터는 절제연이 종양과 닿거나 요관·혈관 손상 없이 여유를 확보할 수 없다. 그래서 IIB~IVA 는 <b>방사선치료가 근치 목적의 주 치료</b>이고, 1999년 이후 여러 무작위 시험이 <b>시스플라틴 병행이 방사선 단독보다 생존을 30~50 % 개선</b>함을 보여 동시항암화학방사선요법이 표준이 되었다.<br> <b>시스플라틴이 왜 방사선을 돕는가</b> — 시스플라틴은 DNA 가닥 사이 교차결합을 만들어 방사선이 만든 DNA 손상의 복구를 방해하고(방사선 감작), 저산소 종양세포에도 작용한다. 주 1회 40 mg/m² 를 방사선 기간 중 5~6회 준다.<br> <b>근접치료(brachytherapy)를 빼놓지 않는 이유</b> — 외부방사선 45~50 Gy 만으로는 자궁경부 종양 중심의 선량이 부족하다. 자궁강·질에 선원을 넣어 종양에 80~90 Gy 를 주면서 방광·직장 선량을 줄이는 근접치료가 국소 제어의 핵심이며, 전체 치료를 <b>8주 이내</b>에 끝내야 성적이 유지된다.<br> <b>병기의 갈림길 — 직장질 진찰</b> — 자궁옆조직 침윤의 유무(IIA vs IIB)와 골반벽 도달 여부(IIB vs IIIB)는 직장질 진찰로 판단하고, 2018 FIGO 개정부터 영상·병리 소견을 병기에 반영할 수 있다. 수신증이 있으면 IIIB, 방광·직장 점막 침윤은 IVA, 대동맥옆 림프절 전이는 IIIC2 다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">병기</th><th style=\"width:38%\">정의</th><th>표준 치료</th></tr></thead><tbody> <tr><td>IB1~IB2</td><td>자궁경부에 국한, 최대 지름 ≤ 4 cm</td><td>근치 자궁절제술 + 골반림프절 절제(또는 방사선)</td></tr> <tr><td>IIA1</td><td>질 상부 2/3 침범, 자궁옆조직 없음, ≤ 4 cm</td><td>근치 자궁절제술 또는 동시항암화학방사선</td></tr> <tr><td><b>IIB(정답 상황)</b></td><td><b>자궁옆조직 침윤, 골반벽 미도달</b></td><td><b>시스플라틴 동시항암화학방사선 + 근접치료</b></td></tr> <tr><td>IIIB</td><td>골반벽 도달 또는 수신증·무기능 콩팥</td><td>동시항암화학방사선 + 근접치료</td></tr> <tr><td>IVB</td><td>원격전이</td><td>전신 항암(파클리탁셀·시스플라틴 ± 베바시주맙 ± 펨브롤리주맙), 완화 방사선</td></tr> </tbody></table> <b>가장 가까운 오답은 근치 자궁절제술</b> — 「4 cm 종괴, 전이 없음」만 보면 수술 가능해 보인다. 갈림길은 <b>자궁옆조직 침윤</b>이다. 침윤이 없었다면(IIA1·IB2) 근치 자궁절제술이 정답이 되고, 반대로 침윤이 골반벽에 닿으면 IIIB 로 치료는 같은 동시항암화학방사선이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 원추절제술은 자궁경부 상피내병변이나 IA1 미세침윤암에서 진단 겸 치료로 쓰인다. 육안적 4 cm 종괴에는 진단 이상의 역할이 없다. 이 선지가 정답이 되려면 조직검사가 CIN 3 또는 IA1 이고 임신 능력 보존을 원해야 한다.\n② 신보강 항암화학요법 뒤 근치수술은 일부 지역에서 IB3·IIA2 큰 종양에 시도되지만 무작위 시험에서 동시항암화학방사선보다 우월하지 않았고 IIB 이상에는 표준이 아니다. 이 선지가 정답이 되려면 자궁옆조직 침윤이 없는 큰 종양(IB3)에서 방사선치료를 할 수 없는 상황이어야 한다.\n④ 근치 자궁절제술과 골반림프절 절제술은 IA2~IB2·IIA1 처럼 자궁옆조직 침윤이 없는 종양에서 절제연을 확보할 수 있을 때의 치료다. 자궁옆조직으로 뻗은 IIB 는 완전 절제가 어렵고 수술 후 방사선까지 더해져 합병증이 겹친다. 이 선지가 정답이 되려면 직장질 진찰과 MRI 에서 자궁옆조직 침윤이 없어야 한다.\n⑤ 단순 자궁절제술은 자궁옆조직·질 상부를 함께 떼지 않아 IA1(림프혈관 침윤 없음)까지만 적절하다. 4 cm 침윤암에서는 종양을 자르고 지나가는 수술이 된다. 이 선지가 정답이 되려면 현미경적 침윤 깊이 3 mm 이하의 IA1 이어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「전이가 없고 4 cm 면 수술」이라는 단순화가 함정이다. 자궁경부암에서 수술과 방사선을 가르는 것은 크기가 아니라 자궁옆조직 침윤(IIB)이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁옆조직 침윤(FIGO IIB)이 있는 자궁경부암에서 근치수술이 아닌 시스플라틴 동시항암화학방사선요법을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bhatla N et al. Revised FIGO staging for carcinoma of the cervix uteri (Int J Gynaecol Obstet 2019) — IIB 정의 · NCCN Clinical Practice Guidelines in Oncology: Cervical Cancer — stage IIB–IVA: definitive chemoradiation with brachytherapy · Chemoradiotherapy for Cervical Cancer Meta-Analysis Collaboration. J Clin Oncol 2008 — 시스플라틴 병행의 생존 이득 · Berek & Novak's Gynecology — 자궁경부암 병기별 치료"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260915T202205Z_일일영상_2026-09-16_9units_9q_4afbd4c2",
+  "qid": "Q0006"
+ },
+ {
   "id": "imaging-2026-0023",
   "exam": "imaging",
   "style": "kmle_style",
