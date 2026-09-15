@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-14",
+ "generated": "2026-09-15",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2414,
+  "total": 2421,
   "byType": {
+   "anatomy": 662,
    "usmle": 144,
-   "anatomy": 655,
    "paper": 600,
    "kmle": 971,
    "imaging": 27,
@@ -16,7 +16,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 655,
+   "Anatomy": 662,
    "Cardiology": 186,
    "Nephrology": 156,
    "Infectious Disease": 133,
@@ -58,13 +58,165 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1582,
+   "high": 1589,
    "medium": 783,
    "low": 49
   },
-  "tagCount": 3340
+  "tagCount": 3356
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-16",
+   "type": "anatomy",
+   "unit": "팔·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-16",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/daily/2026-09-16.md",
+   "snippet": "오늘의 학습 (2026 09 16 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 6일 · Tagging 2까지 33일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-16 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 16 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 6일 · Tagging 2까지 33일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0557",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "고환 — 하강·피막·혈관과 림프 배출의 구분",
+   "tags": [
+    "distinction",
+    "10회차",
+    "고환",
+    "정계정맥류",
+    "림프배출",
+    "고환집막",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Abdomen — Abdominal wall 0:00–44:47",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0557.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 고환 — 하강·피막·혈관과 림프 배출의 구분 10회차 · 배 distinction 10회차 고환 정계정맥류 림프배출 고환집막 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Abdomen — Abdominal wall 0:00–44:47 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0556",
+   "type": "anatomy",
+   "unit": "10회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "배벽의 동맥 — 깊은층 공급과 위·아래배벽동맥 문합",
+   "tags": [
+    "branch-tree",
+    "10회차",
+    "아래배벽동맥",
+    "위배벽동맥",
+    "corona-mortis",
+    "활꼴선",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Abdomen — Abdominal wall 0:00–44:47",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0556.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 배벽의 동맥 — 깊은층 공급과 위·아래배벽동맥 문합 10회차 · 배 branch-tree 10회차 아래배벽동맥 위배벽동맥 corona-mortis 활꼴선 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Abdomen — Abdominal wall 0:00–44:47 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0555",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "노동맥·자동맥 — 아래팔에서 손까지의 주행과 가지",
+   "tags": [
+    "course-tracing",
+    "10회차",
+    "노동맥",
+    "자동맥",
+    "해부코담배갑",
+    "손배뼈골절",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Forearm 0:00–35:20 · Hand 1:30–26:20",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0555.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 노동맥·자동맥 — 아래팔에서 손까지의 주행과 가지 10회차 · 팔 course-tracing 10회차 노동맥 자동맥 해부코담배갑 손배뼈골절 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Forearm 0:00–35:20 · Hand 1:30–26:20 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0554",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "손바닥 — 층·손바닥널힘줄·힘줄집과 벌레근",
+   "tags": [
+    "layer-order",
+    "10회차",
+    "손바닥널힘줄",
+    "윤활집",
+    "벌레근",
+    "Dupuytren",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Hand 1:30–26:20",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0554.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 손바닥 — 층·손바닥널힘줄·힘줄집과 벌레근 10회차 · 팔 layer-order 10회차 손바닥널힘줄 윤활집 벌레근 Dupuytren 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Hand 1:30–26:20 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0553",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "자신경 — 주행·자신경굴과 자신경 역설",
+   "tags": [
+    "course-tracing",
+    "10회차",
+    "자신경",
+    "자신경굴",
+    "갈퀴손",
+    "Froment",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm 0:00–15:20 · Forearm 0:00–35:20 · Hand 1:30–26:20",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0553.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 자신경 — 주행·자신경굴과 자신경 역설 10회차 · 팔 course-tracing 10회차 자신경 자신경굴 갈퀴손 Froment 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm 0:00–15:20 · Forearm 0:00–35:20 · Hand 1:30–26:20 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0552",
+   "type": "anatomy",
+   "unit": "10회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "정중신경 — 겨드랑에서 손바닥까지의 주행과 높이별 손상",
+   "tags": [
+    "course-tracing",
+    "10회차",
+    "정중신경",
+    "앞뼈사이신경",
+    "손목굴증후군",
+    "축복의손",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm 0:00–15:20 · Forearm 0:00–35:20 · Hand 1:30–26:20",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0552.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 정중신경 — 겨드랑에서 손바닥까지의 주행과 높이별 손상 10회차 · 팔 course-tracing 10회차 정중신경 앞뼈사이신경 손목굴증후군 축복의손 예습시험 태깅 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s10) + e-Anatomy Upper limb — Arm 0:00–15:20 · Forearm 0:00–35:20 · Hand 1:30–26:20 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "usmle-2026-0157",
    "type": "usmle",
