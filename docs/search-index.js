@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2476,
+  "total": 2485,
   "byType": {
    "usmle": 150,
    "anatomy": 663,
    "kmle": 1003,
+   "imaging": 45,
    "paper": 607,
-   "imaging": 36,
    "ailab": 14,
    "basic": 3
   },
@@ -37,21 +37,21 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 62,
    "Hematology": 61,
    "Laboratory Medicine": 60,
-   "산부인과": 19,
+   "산부인과": 24,
    "Physiology": 17,
+   "순환기": 13,
    "Pharmacology": 12,
    "Microbiology": 11,
-   "순환기": 11,
    "Biochemistry": 10,
    "Immunology": 8,
    "Internal Medicine": 8,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "호흡기": 4,
    "Oncology": 3,
-   "호흡기": 3,
+   "병리·조직학": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
-   "병리·조직학": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -59,11 +59,11 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1635,
+   "high": 1644,
    "medium": 792,
    "low": 49
   },
-  "tagCount": 3516
+  "tagCount": 3517
  },
  "docs": [
   {
@@ -868,6 +868,164 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1002.md",
    "snippet": "56세 남자가 1시간 30분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 도서 지역 병원 응급실에 왔다. 통증은 왼쪽 턱으로 뻗치고 안정을 취해도 그대로다. 고혈압으로 암로디핀을 복용 중이고 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 심잡음은 없다. 이 병원에는 심장혈관 조영술 시설이 없다. 활력징후·검사 소견과 심전도는 자료와 같다. 가장 적절한 처치는? A. 헤파린 정주 후 다음 날 아침 이송 B. 시술 가능",
    "text": "Cardiology ST-Elevation Myocardial Infarction at a Non-PCI-capable Hospital — Reperfusion Strategy STEMI reperfusion fibrinolysis door-to-balloon transfer-PCI KMLE 2026 / Claude Routine / PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) ecg_id 8191 56세 남자가 1시간 30분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 도서 지역 병원 응급실에 왔다. 통증은 왼쪽 턱으로 뻗치고 안정을 취해도 그대로다. 고혈압으로 암로디핀을 복용 중이고 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 심잡음은 없다. 이 병원에는 심장혈관 조영술 시설이 없다. 활력징후·검사 소견과 심전도는 자료와 같다. 가장 적절한 처치는? A. 헤파린 정주 후 다음 날 아침 이송 B. 시술 가능 병원으로 즉시 이송 C. 고용량 스타틴과 항혈소판제만 투여 D. 섬유소용해제 즉시 투여 E. 트로포닌 재검 후 결정 지속되는 허혈성 흉통과 ST분절 상승 심전도로 STEMI이며, 초기 트로포닌이 정상이라도 진단·재관류 결정은 심전도로 한다. 가장 가까운 시술 병원까지 이송에 150분이 걸려 첫 접촉부터 풍선 확장까지 120분을 지킬 수 없고, 증상 발생 12시간 이내이며 출혈 금기가 없으므로 도착 30분 안에 섬유소용해제를 투여한 뒤 시술 병원으로 이송하는 약물 침습 전략이 맞다."
+  },
+  {
+   "id": "imaging-2026-0045",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "응급 — 흉부 영상",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0045.md",
+   "snippet": "A 73 year old woman is brought to the emergency department because of 6 days of fever, dry cough, and progressively worsening shortness of breath. She has hypertension treated with amlodipine. Her temperature is 38.6°C, pulse is 104/min, re",
+   "text": "호흡기 응급 — 흉부 영상 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 A 73 year old woman is brought to the emergency department because of 6 days of fever, dry cough, and progressively worsening shortness of breath. She has hypertension treated with amlodipine. Her temperature is 38.6°C, pulse is 104/min, respirations are 28/min, blood pressure is 138/82 mm Hg, and oxygen saturation is 88% while breathing room air. Fine crackles are heard over both lung fields. A nasopharyngeal swab is positive for SARS CoV 2 RNA. An upright anteroposterior chest radiograph is shown. Which of the following best describes the findings on this radiograph? A. Thick walled cavitary lesion in the left upper lobe with an air fluid level B. Bilateral multifocal hazy opacities, more extensive on the right, without lobar consolidation, effusion, or cavitation C. Dense lobar consolidation of the right upper lobe with an air bronchogram and a sharp minor fissure margin D. Large right pleural effusion with a meniscus and contralateral mediastinal shift E. Bilateral hilar and right paratracheal lymphadenopathy with clear lung fields"
+  },
+  {
+   "id": "imaging-2026-0044",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "남성생식 — 조직학·불임",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0044.md",
+   "snippet": "26세 남자가 결혼 2년이 지나도록 아이가 생기지 않아 병원에 왔다. 정액검사를 2회 하였더니 정액량 0.8 mL, pH 6.4 이고 정자는 보이지 않았다. 진찰에서 양쪽 고환 크기는 정상(20 mL)이고 양쪽 정관이 만져지지 않는다. 혈청 난포자극호르몬 4.2 IU/L, 테스토스테론은 정상이다. 고환 조직검사 절편에 생식세포 표지자로 면역조직화학염색을 하였더니 그림과 같다. 고환 조직 소견으로 가장 적절한 것은? A. 정세관",
+   "text": "병리·조직학 남성생식 — 조직학·불임 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 26세 남자가 결혼 2년이 지나도록 아이가 생기지 않아 병원에 왔다. 정액검사를 2회 하였더니 정액량 0.8 mL, pH 6.4 이고 정자는 보이지 않았다. 진찰에서 양쪽 고환 크기는 정상(20 mL)이고 양쪽 정관이 만져지지 않는다. 혈청 난포자극호르몬 4.2 IU/L, 테스토스테론은 정상이다. 고환 조직검사 절편에 생식세포 표지자로 면역조직화학염색을 하였더니 그림과 같다. 고환 조직 소견으로 가장 적절한 것은? A. 정세관 유리질화와 위축 B. 라이디히세포 과다형성 C. 정자형성 보존(폐쇄성 무정자증에 합당) D. 세르톨리세포단독증후군 E. 성숙정지(정모세포 단계)"
+  },
+  {
+   "id": "imaging-2026-0043",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·감염·호르몬 약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0043.md",
+   "snippet": "A 54 year old woman comes to the physician because of 2 months of intermittent vaginal bleeding. Her last menstrual period was 3 years ago. She has type 2 diabetes mellitus and hypertension, and her BMI is 36 kg/m². She has never been pregn",
+   "text": "산부인과 부인과 — 종양·감염·호르몬 약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 A 54 year old woman comes to the physician because of 2 months of intermittent vaginal bleeding. Her last menstrual period was 3 years ago. She has type 2 diabetes mellitus and hypertension, and her BMI is 36 kg/m². She has never been pregnant. Pelvic examination shows a normal sized uterus and no adnexal mass. Transvaginal ultrasonography shows an endometrial thickness of 16 mm. Endometrial biopsy shows crowded, back to back glands lined by cells with enlarged, rounded nuclei, prominent nucleoli, and loss of polarity; there is no stromal invasion. Which of the following is the most appropriate next step in management? A. Levonorgestrel releasing intrauterine device with repeat biopsy in 6 months B. Oral megestrol acetate with repeat biopsy in 3 months C. Repeat endometrial biopsy in 6 months without treatment D. Cyclic combined oral contraceptive pills E. Total hysterectomy with bilateral salpingo oophorectomy"
+  },
+  {
+   "id": "imaging-2026-0042",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·감염·호르몬 약리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0042.md",
+   "snippet": "A 36 year old woman comes to the physician to discuss contraception. She has two children and does not want another pregnancy for at least 3 years. She smokes 20 cigarettes daily and has had migraine without aura for 5 years. She has no his",
+   "text": "산부인과 부인과 — 종양·감염·호르몬 약리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 A 36 year old woman comes to the physician to discuss contraception. She has two children and does not want another pregnancy for at least 3 years. She smokes 20 cigarettes daily and has had migraine without aura for 5 years. She has no history of venous thromboembolism. Blood pressure is 124/78 mm Hg, and pelvic examination is normal. She would prefer a method she does not have to remember every day and is reluctant to have injections. Which of the following is the most appropriate contraceptive method for this patient? A. Combined estrogen progestin vaginal ring B. Low dose combined oral contraceptive pill C. Depot medroxyprogesterone acetate injection every 3 months D. Levonorgestrel releasing intrauterine device E. Combined estrogen progestin transdermal patch"
+  },
+  {
+   "id": "imaging-2026-0041",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·감염·호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0041.md",
+   "snippet": "23세 여자가 3일 전부터 아랫배 통증과 누런 질 분비물이 있어 병원에 왔다. 마지막 월경은 10일 전이었고 성 파트너가 여럿이며 콘돔을 쓰지 않는다. 체온 37.8 ℃, 혈압 118/72 mmHg, 맥박 분당 92회다. 진찰에서 자궁경부 움직임 압통과 양쪽 자궁부속기 압통이 있고 반동압통은 없으며 구역·구토 없이 경구 섭취가 가능하다. 소변 임신반응 음성, 백혈구 12,800/μL, 골반 초음파에서 부속기 종괴는 없다. 가장",
+   "text": "산부인과 부인과 — 종양·감염·호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 23세 여자가 3일 전부터 아랫배 통증과 누런 질 분비물이 있어 병원에 왔다. 마지막 월경은 10일 전이었고 성 파트너가 여럿이며 콘돔을 쓰지 않는다. 체온 37.8 ℃, 혈압 118/72 mmHg, 맥박 분당 92회다. 진찰에서 자궁경부 움직임 압통과 양쪽 자궁부속기 압통이 있고 반동압통은 없으며 구역·구토 없이 경구 섭취가 가능하다. 소변 임신반응 음성, 백혈구 12,800/μL, 골반 초음파에서 부속기 종괴는 없다. 가장 적절한 치료는? A. 세프트리악손 근육주사 1회와 독시사이클린·메트로니다졸 경구 14일 B. 아지트로마이신 1 g 단회 경구 투여 C. 메트로니다졸 단독 경구 7일 D. 입원하여 정맥 항생제 투여와 진단 복강경검사 E. 니트로푸란토인 경구 5일"
+  },
+  {
+   "id": "imaging-2026-0040",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 종양·감염·호르몬 약리",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0040.md",
+   "snippet": "24세 여자가 완전 포상기태로 흡입소파술을 받은 뒤 혈청 사람융모생식샘자극호르몬(hCG)을 매주 추적하고 있다. 수술 직후 hCG 는 210,000 IU/L 였고 3주째 9,800, 4주째 9,500, 5주째 9,900, 6주째 10,400 IU/L 로 3주 넘게 정체한 뒤 올랐다. 질출혈은 없고 골반 초음파에서 자궁은 정상 크기이며 부속기 종괴가 없다. 흉부 X선과 간·콩팥 기능은 정상이다. 가장 적절한 치료는? A. 메토트",
+   "text": "산부인과 부인과 — 종양·감염·호르몬 약리 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 24세 여자가 완전 포상기태로 흡입소파술을 받은 뒤 혈청 사람융모생식샘자극호르몬(hCG)을 매주 추적하고 있다. 수술 직후 hCG 는 210,000 IU/L 였고 3주째 9,800, 4주째 9,500, 5주째 9,900, 6주째 10,400 IU/L 로 3주 넘게 정체한 뒤 올랐다. 질출혈은 없고 골반 초음파에서 자궁은 정상 크기이며 부속기 종괴가 없다. 흉부 X선과 간·콩팥 기능은 정상이다. 가장 적절한 치료는? A. 메토트렉세이트 단일제 항암화학요법 B. EMA CO 복합 항암화학요법 C. 자궁절제술 D. 재흡입소파술 E. hCG 주간 추적관찰 지속"
+  },
+  {
+   "id": "imaging-2026-0039",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0039.md",
+   "snippet": "28세 여자(1회 출산)가 임신 39주에 진통이 있어 분만실에 입원하였다. 자궁경부는 5 cm 열려 있고 양막은 파열되어 맑은 양수가 보였다. 임신 경과는 정상이었고 산모의 체온과 혈압은 정상이다. 외부 전자태아감시로 얻은 태아심박동(위)과 자궁수축(아래) 기록 10분 구간은 그림과 같다. 기록에서 보이는 감속의 유형은? A. 감속이 아닌 정상 변이도 B. 가변감속 C. 조기감속 D. 후기감속 E. 지속감속",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 28세 여자(1회 출산)가 임신 39주에 진통이 있어 분만실에 입원하였다. 자궁경부는 5 cm 열려 있고 양막은 파열되어 맑은 양수가 보였다. 임신 경과는 정상이었고 산모의 체온과 혈압은 정상이다. 외부 전자태아감시로 얻은 태아심박동(위)과 자궁수축(아래) 기록 10분 구간은 그림과 같다. 기록에서 보이는 감속의 유형은? A. 감속이 아닌 정상 변이도 B. 가변감속 C. 조기감속 D. 후기감속 E. 지속감속"
+  },
+  {
+   "id": "imaging-2026-0038",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0038.md",
+   "snippet": "A 71 year old woman comes to the physician because of a 6 month history of progressive exertional dyspnea and two recent episodes of waking at night short of breath. She had rheumatic fever at age 12. Pulse is 70/min and regular, and blood ",
+   "text": "순환기 심전도 판독 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 A 71 year old woman comes to the physician because of a 6 month history of progressive exertional dyspnea and two recent episodes of waking at night short of breath. She had rheumatic fever at age 12. Pulse is 70/min and regular, and blood pressure is 118/74 mm Hg. Cardiac auscultation shows a loud first heart sound, an opening snap after the second heart sound, and a low pitched diastolic rumble at the apex. A 12 lead electrocardiogram is shown. Which of the following is the most likely finding on this electrocardiogram? A. First degree atrioventricular block B. Right ventricular hypertrophy C. Left atrial enlargement D. Right atrial enlargement E. Atrial flutter with 4:1 atrioventricular conduction"
+  },
+  {
+   "id": "imaging-2026-0037",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+   "confidence": "high",
+   "date": "2026-09-16",
+   "path": "content/imaging/2026/imaging-2026-0037.md",
+   "snippet": "65세 여자가 자궁탈출증으로 질식 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 10년 전부터 고혈압 약을 먹고 있으며 흉통·실신·호흡곤란은 없다. 혈압 148/88 mmHg, 맥박 분당 80회로 규칙적이다. 12유도 심전도는 그림과 같다. 심전도 소견으로 가장 적절한 것은? A. 완전 좌각차단 B. 완전 우각차단 C. 오래된 하벽 심근경색 D. 좌전섬유속차단 E. 좌후섬유속차단",
+   "text": "순환기 심전도 판독 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655 65세 여자가 자궁탈출증으로 질식 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 10년 전부터 고혈압 약을 먹고 있으며 흉통·실신·호흡곤란은 없다. 혈압 148/88 mmHg, 맥박 분당 80회로 규칙적이다. 12유도 심전도는 그림과 같다. 심전도 소견으로 가장 적절한 것은? A. 완전 좌각차단 B. 완전 우각차단 C. 오래된 하벽 심근경색 D. 좌전섬유속차단 E. 좌후섬유속차단"
   },
   {
    "id": "anatomy-daily-2026-09-16",

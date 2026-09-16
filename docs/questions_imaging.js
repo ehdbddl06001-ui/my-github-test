@@ -2,6 +2,674 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0045",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "응급 — 흉부 영상",
+  "type": "응급 — 흉부 영상",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-16",
+  "vignette": "A 73-year-old woman is brought to the emergency department because of 6 days of fever, dry cough, and progressively worsening shortness of breath. She has hypertension treated with amlodipine. Her temperature is 38.6°C, pulse is 104/min, respirations are 28/min, blood pressure is 138/82 mm Hg, and oxygen saturation is 88% while breathing room air. Fine crackles are heard over both lung fields. A nasopharyngeal swab is positive for SARS-CoV-2 RNA. An upright anteroposterior chest radiograph is shown.",
+  "question": "Which of the following best describes the findings on this radiograph?",
+  "options": [
+   "Thick-walled cavitary lesion in the left upper lobe with an air-fluid level",
+   "Bilateral multifocal hazy opacities, more extensive on the right, without lobar consolidation, effusion, or cavitation",
+   "Dense lobar consolidation of the right upper lobe with an air bronchogram and a sharp minor-fissure margin",
+   "Large right pleural effusion with a meniscus and contralateral mediastinal shift",
+   "Bilateral hilar and right paratracheal lymphadenopathy with clear lung fields"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Both lungs show patchy, ill-defined hazy (ground-glass to consolidative) opacities distributed through the perihilar, middle and lower zones; the right lung is more extensively involved than the left. The opacities do not respect a lobar boundary, there is no air bronchogram within a dense homogeneous consolidation, the costophrenic angles are not blunted by a meniscus, the hila are not enlarged, and no cavity with a wall or air-fluid level is present. Bilateral multifocal hazy opacities in a febrile hypoxemic patient with a positive PCR are the typical radiographic pattern of viral (COVID-19) pneumonia.\n- 원리: A radiograph shows <b>where and how</b> the alveoli have lost their air, and the pattern points to the disease. <b>Viral pneumonia</b> (including COVID-19) injures the alveolar epithelium and capillary endothelium <b>diffusely and multifocally</b>, through the blood and the airways at once, so the alveoli fill partially with fluid, protein and cells. Partial filling attenuates the beam only slightly and leaves the vessels visible: the result is <b>hazy, ground-glass-like opacity</b>, bilateral, patchy, often peripheral and basal, that ignores lobar boundaries. As filling becomes complete the opacity turns into consolidation, but still in a multifocal, non-lobar distribution.<br> <b>Why the other patterns look different</b> — <b>lobar pneumonia</b> (typically <i>Streptococcus pneumoniae</i>) spreads through the pores of Kohn within one lobe and stops at the fissure, producing a dense homogeneous opacity with a <b>sharp fissural margin</b> and <b>air bronchograms</b> (air-filled bronchi silhouetted by consolidated alveoli). A <b>pleural effusion</b> is fluid outside the lung: it layers dependently, blunts the costophrenic angle and forms a <b>meniscus</b>; a large one pushes the mediastinum away. <b>Lymphadenopathy</b> enlarges the hilar and paratracheal shadows while the lungs stay clear (sarcoidosis, lymphoma). A <b>cavity</b> is necrosis that has drained into a bronchus — a lucency with a wall, sometimes with an air-fluid level (tuberculosis, abscess, squamous carcinoma).<br> <b>Why the description matters clinically</b> — for COVID-19 the radiograph is not the diagnostic test (the PCR is) but it grades <b>extent</b>: bilateral involvement of most zones with saturation of 88 % places this patient in the severe category, which is what justifies supplemental oxygen and <b>dexamethasone</b> (RECOVERY trial: mortality benefit only in patients needing oxygen), with remdesivir considered early and thromboprophylaxis. A normal radiograph would not exclude COVID-19 but would argue against steroids. The radiograph also screens for the alternatives that change management — a lobar consolidation would prompt antibiotics for bacterial co-infection, an effusion would raise heart failure or empyema, a cavity would raise tuberculosis or abscess.\n- 비교: <table><thead><tr><th style=\"width:30%\">Pattern</th><th style=\"width:40%\">Radiographic hallmark</th><th>On this film</th></tr></thead><tbody> <tr><td><b>Bilateral multifocal hazy opacities (answer)</b></td><td><b>patchy, ill-defined, both lungs, non-lobar, vessels partly visible through the haze</b></td><td>present, right &gt; left, mid–lower zones</td></tr> <tr><td>Lobar consolidation (RUL)</td><td>dense homogeneous opacity bounded by the minor fissure, air bronchogram</td><td>no fissural margin, no single-lobe density</td></tr> <tr><td>Large pleural effusion</td><td>dependent homogeneous density, meniscus, blunted costophrenic angle, mediastinal shift</td><td>angles visible, no meniscus, mediastinum midline</td></tr> <tr><td>Hilar/paratracheal lymphadenopathy</td><td>lobulated enlarged hila and widened right paratracheal stripe with clear lungs</td><td>hila not lobulated; lungs are not clear</td></tr> <tr><td>Cavitary lesion</td><td>rounded lucency with a definable wall ± air-fluid level</td><td>no lucent cavity, no wall</td></tr> </tbody></table> The <b>closest wrong answer is lobar consolidation</b>: the right lung is denser and a beginner may 'see' a lobe. The discriminator is the <b>margin</b> — consolidation from viral pneumonia is patchy and fades into normal lung across lobes, whereas a lobar process is homogeneous and stops sharply at a fissure. The <b>second confounder is pulmonary edema</b>, which also gives bilateral perihilar haze; it is separated by cardiomegaly, upper-lobe vascular redistribution, Kerley lines and effusions, none of which are present, and by the fever and PCR.\n- 오답 이유:\n  - (A) A thick-walled cavity is a rounded lucency with a definable wall, often with an air-fluid level, as in tuberculosis or lung abscess. No lucent cavity is present on this film. This option would be correct only if a ring-shaped opacity with a central lucency were visible in the left upper zone.\n  - (C) Lobar consolidation is a dense, homogeneous opacity confined to one lobe with a sharp fissural edge and air bronchograms, typical of pneumococcal pneumonia. This film shows patchy haze in both lungs crossing lobar boundaries without a sharp margin. This option would be correct only if a single homogeneous density stopped abruptly at the minor fissure.\n  - (D) A large pleural effusion produces a homogeneous dependent density with a concave upper meniscus, obliterates the costophrenic angle and, when large, shifts the mediastinum to the opposite side. Here both costophrenic regions are visible without a meniscus and the mediastinum is midline. This option would be correct only if the right lower hemithorax were uniformly white with a curved upper border.\n  - (E) Bilateral hilar and paratracheal lymphadenopathy shows lobulated, enlarged hilar shadows and a widened right paratracheal stripe with otherwise clear lungs, as in sarcoidosis. Here the lungs are diffusely abnormal and the hila are not lobulated. This option would be correct only if the lung fields were clear and the hila were enlarged and lumpy.\n- 함정: Do not name the disease from the film — describe it. Patchy bilateral haze without a fissural margin, meniscus, cavity or enlarged hila is a multifocal alveolar process; the PCR, not the radiograph, makes it COVID-19.\n- 학습목표: 바이러스 폐렴의 흉부 X선에서 양쪽 다발성 반점상·흐린 음영을 엽성 경화·흉수·공동·림프절병증과 구분해 기술한다\n- 근거·출처: TCIA COVID-19-AR (Desai S et al., UAMS; CC BY 4.0) — patient-level label: RT-PCR-confirmed COVID-19 with bilateral opacities; Grade B, this film read by the author · 작성자 판독(2026-09-17): upright AP, bilateral multifocal hazy/patchy opacities (perihilar, mid and lower zones, right > left), no lobar consolidation, no meniscus/effusion, no cavity, hila not enlarged; burned-in text limited to 'Upright', 'L' and a technologist marker · Wong HYF et al. Frequency and distribution of chest radiographic findings in patients positive for COVID-19 (Radiology 2020) — bilateral, peripheral, lower-zone predominant consolidation/ground-glass opacities; effusion and cavitation rare · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19 (N Engl J Med 2021) — benefit confined to patients requiring oxygen · Felson's Principles of Chest Roentgenology — patterns: alveolar (consolidation) vs interstitial, silhouette sign, effusion, cavity\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08718626 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Both lungs show patchy, ill-defined hazy (ground-glass to consolidative) opacities distributed through the perihilar, middle and lower zones; the right lung is more extensively involved than the left. The opacities do not respect a lobar boundary, there is no air bronchogram within a dense homogeneous consolidation, the costophrenic angles are not blunted by a meniscus, the hila are not enlarged, and no cavity with a wall or air-fluid level is present. Bilateral multifocal hazy opacities in a febrile hypoxemic patient with a positive PCR are the typical radiographic pattern of viral (COVID-19) pneumonia."
+   },
+   {
+    "k": "원리",
+    "v": "A radiograph shows <b>where and how</b> the alveoli have lost their air, and the pattern points to the disease. <b>Viral pneumonia</b> (including COVID-19) injures the alveolar epithelium and capillary endothelium <b>diffusely and multifocally</b>, through the blood and the airways at once, so the alveoli fill partially with fluid, protein and cells. Partial filling attenuates the beam only slightly and leaves the vessels visible: the result is <b>hazy, ground-glass-like opacity</b>, bilateral, patchy, often peripheral and basal, that ignores lobar boundaries. As filling becomes complete the opacity turns into consolidation, but still in a multifocal, non-lobar distribution.<br> <b>Why the other patterns look different</b> — <b>lobar pneumonia</b> (typically <i>Streptococcus pneumoniae</i>) spreads through the pores of Kohn within one lobe and stops at the fissure, producing a dense homogeneous opacity with a <b>sharp fissural margin</b> and <b>air bronchograms</b> (air-filled bronchi silhouetted by consolidated alveoli). A <b>pleural effusion</b> is fluid outside the lung: it layers dependently, blunts the costophrenic angle and forms a <b>meniscus</b>; a large one pushes the mediastinum away. <b>Lymphadenopathy</b> enlarges the hilar and paratracheal shadows while the lungs stay clear (sarcoidosis, lymphoma). A <b>cavity</b> is necrosis that has drained into a bronchus — a lucency with a wall, sometimes with an air-fluid level (tuberculosis, abscess, squamous carcinoma).<br> <b>Why the description matters clinically</b> — for COVID-19 the radiograph is not the diagnostic test (the PCR is) but it grades <b>extent</b>: bilateral involvement of most zones with saturation of 88 % places this patient in the severe category, which is what justifies supplemental oxygen and <b>dexamethasone</b> (RECOVERY trial: mortality benefit only in patients needing oxygen), with remdesivir considered early and thromboprophylaxis. A normal radiograph would not exclude COVID-19 but would argue against steroids. The radiograph also screens for the alternatives that change management — a lobar consolidation would prompt antibiotics for bacterial co-infection, an effusion would raise heart failure or empyema, a cavity would raise tuberculosis or abscess."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Pattern</th><th style=\"width:40%\">Radiographic hallmark</th><th>On this film</th></tr></thead><tbody> <tr><td><b>Bilateral multifocal hazy opacities (answer)</b></td><td><b>patchy, ill-defined, both lungs, non-lobar, vessels partly visible through the haze</b></td><td>present, right &gt; left, mid–lower zones</td></tr> <tr><td>Lobar consolidation (RUL)</td><td>dense homogeneous opacity bounded by the minor fissure, air bronchogram</td><td>no fissural margin, no single-lobe density</td></tr> <tr><td>Large pleural effusion</td><td>dependent homogeneous density, meniscus, blunted costophrenic angle, mediastinal shift</td><td>angles visible, no meniscus, mediastinum midline</td></tr> <tr><td>Hilar/paratracheal lymphadenopathy</td><td>lobulated enlarged hila and widened right paratracheal stripe with clear lungs</td><td>hila not lobulated; lungs are not clear</td></tr> <tr><td>Cavitary lesion</td><td>rounded lucency with a definable wall ± air-fluid level</td><td>no lucent cavity, no wall</td></tr> </tbody></table> The <b>closest wrong answer is lobar consolidation</b>: the right lung is denser and a beginner may 'see' a lobe. The discriminator is the <b>margin</b> — consolidation from viral pneumonia is patchy and fades into normal lung across lobes, whereas a lobar process is homogeneous and stops sharply at a fissure. The <b>second confounder is pulmonary edema</b>, which also gives bilateral perihilar haze; it is separated by cardiomegaly, upper-lobe vascular redistribution, Kerley lines and effusions, none of which are present, and by the fever and PCR."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A thick-walled cavity is a rounded lucency with a definable wall, often with an air-fluid level, as in tuberculosis or lung abscess. No lucent cavity is present on this film. This option would be correct only if a ring-shaped opacity with a central lucency were visible in the left upper zone.\n(C) Lobar consolidation is a dense, homogeneous opacity confined to one lobe with a sharp fissural edge and air bronchograms, typical of pneumococcal pneumonia. This film shows patchy haze in both lungs crossing lobar boundaries without a sharp margin. This option would be correct only if a single homogeneous density stopped abruptly at the minor fissure.\n(D) A large pleural effusion produces a homogeneous dependent density with a concave upper meniscus, obliterates the costophrenic angle and, when large, shifts the mediastinum to the opposite side. Here both costophrenic regions are visible without a meniscus and the mediastinum is midline. This option would be correct only if the right lower hemithorax were uniformly white with a curved upper border.\n(E) Bilateral hilar and paratracheal lymphadenopathy shows lobulated, enlarged hilar shadows and a widened right paratracheal stripe with otherwise clear lungs, as in sarcoidosis. Here the lungs are diffusely abnormal and the hila are not lobulated. This option would be correct only if the lung fields were clear and the hila were enlarged and lumpy."
+   },
+   {
+    "k": "함정",
+    "v": "Do not name the disease from the film — describe it. Patchy bilateral haze without a fissural margin, meniscus, cavity or enlarged hila is a multifocal alveolar process; the PCR, not the radiograph, makes it COVID-19."
+   },
+   {
+    "k": "학습목표",
+    "v": "바이러스 폐렴의 흉부 X선에서 양쪽 다발성 반점상·흐린 음영을 엽성 경화·흉수·공동·림프절병증과 구분해 기술한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (Desai S et al., UAMS; CC BY 4.0) — patient-level label: RT-PCR-confirmed COVID-19 with bilateral opacities; Grade B, this film read by the author · 작성자 판독(2026-09-17): upright AP, bilateral multifocal hazy/patchy opacities (perihilar, mid and lower zones, right > left), no lobar consolidation, no meniscus/effusion, no cavity, hila not enlarged; burned-in text limited to 'Upright', 'L' and a technologist marker · Wong HYF et al. Frequency and distribution of chest radiographic findings in patients positive for COVID-19 (Radiology 2020) — bilateral, peripheral, lower-zone predominant consolidation/ground-glass opacities; effusion and cavitation rare · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19 (N Engl J Med 2021) — benefit confined to patients requiring oxygen · Felson's Principles of Chest Roentgenology — patterns: alveolar (consolidation) vs interstitial, silhouette sign, effusion, cavity ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08718626 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0045.png",
+   "caption": "Upright anteroposterior chest radiograph (The Cancer Imaging Archive, CC BY 4.0; original pixel data, no windowing or cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1104571715584742950245708718626",
+   "asset_id": "TCIA-COVID19_AR-11537738698080",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …08718626"
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0044",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "남성생식 — 조직학·불임",
+  "type": "남성생식 — 조직학·불임",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-16",
+  "vignette": "26세 남자가 결혼 2년이 지나도록 아이가 생기지 않아 병원에 왔다. 정액검사를 2회 하였더니 정액량 0.8 mL, pH 6.4 이고 정자는 보이지 않았다. 진찰에서 양쪽 고환 크기는 정상(20 mL)이고 양쪽 정관이 만져지지 않는다. 혈청 난포자극호르몬 4.2 IU/L, 테스토스테론은 정상이다. 고환 조직검사 절편에 생식세포 표지자로 면역조직화학염색을 하였더니 그림과 같다.",
+  "question": "고환 조직 소견으로 가장 적절한 것은?",
+  "options": [
+   "정세관 유리질화와 위축",
+   "라이디히세포 과다형성",
+   "정자형성 보존(폐쇄성 무정자증에 합당)",
+   "세르톨리세포단독증후군",
+   "성숙정지(정모세포 단계)"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 그림의 모든 정세관 단면에서 기저막 쪽부터 내강 쪽까지 여러 층의 세포가 갈색으로 강하게 염색된다. 생식세포 표지자가 정원세포·정모세포·정자세포에 이르는 다층의 생식세포를 표시하고 있으며, 세르톨리세포와 간질의 라이디히세포·주위세관세포는 청색(음성)이다. 정세관 지름과 간질 구성도 정상이다. 즉 정자형성이 보존된 정상 고환이다. 정관이 만져지지 않고 정액량이 적으며 산성이고(정낭 결손) FSH 가 정상인 임상 소견과 합치면 선천 양측 정관 무형성(CBAVD)에 의한 폐쇄성 무정자증이다.\n- 원리: 무정자증은 두 갈래로 나뉜다. <b>비폐쇄성(NOA)</b>은 고환이 정자를 못 만드는 것이고, <b>폐쇄성(OA)</b>은 만들지만 길이 막힌 것이다. 이를 가르는 것이 <b>고환 크기·FSH·정액량/pH</b> 세 가지다. 정자형성이 없으면 세르톨리세포의 인히빈 B 분비가 줄어 <b>FSH 가 오르고</b> 정세관 부피가 줄어 <b>고환이 작아진다</b>. 정관 무형성이나 사정관 폐쇄에서는 정낭도 함께 결손·폐쇄되므로 정낭액(알칼리성, 프룩토스, 정액의 60~70 %)이 빠져 <b>정액량 &lt; 1 mL, pH &lt; 7.2, 프룩토스 음성</b>이 된다. 이 환자는 셋 다 폐쇄를 가리킨다.<br> <b>조직이 결론을 확정하는 방식</b> — 생식세포 특이 표지자(VASA/DDX4 계열 — 정원세포에서 정자세포까지 발현, 세르톨리·라이디히세포 음성)로 염색하면 정세관 안에 <b>몇 층의 생식세포가 있는가</b>가 한눈에 보인다. 정상이면 기저막의 정원세포 → 1차·2차 정모세포 → 원형·긴 정자세포가 <b>여러 층</b>을 이룬다. 세르톨리세포단독 증후군이면 정세관 안에 <b>염색되는 세포가 없고</b> 세르톨리세포만 남아 관이 작아진다. 성숙정지면 염색되는 세포가 <b>1~2층(정원세포·정모세포)</b>에서 멈추고 내강 쪽에 정자세포가 없다. 유리질화(클라인펠터 등)는 정세관 벽이 두꺼워지고 내강이 사라지며 간질에 라이디히세포가 상대적으로 뭉친다.<br> <b>왜 CBAVD 인가</b> — 정관은 볼프관(중신관) 유래이고 정낭·사정관도 같은 관에서 나온다. <b>CFTR</b> 변이가 있으면 태생기 중신관이 폐쇄·퇴화하여 정관·정낭이 없어지고, 남자 낭성섬유증 환자의 98 % 가 이 이유로 불임이다. 폐 증상 없이 CBAVD 만 있는 환자의 70~80 % 에서 CFTR 변이(흔히 ΔF508 + 5T)가 발견되므로 <b>본인과 배우자의 CFTR 검사</b>가 다음 단계이고, CFTR 음성이면 편측 콩팥 무형성이 동반될 수 있어 콩팥 초음파를 본다.<br> <b>치료의 함의</b> — 정자형성이 보존돼 있으므로 <b>부고환·고환에서 정자를 채취(PESA/MESA/TESE)해 세포질내 정자주입(ICSI)</b>을 하면 자녀를 가질 수 있다. 정관이 없으므로 정관 복원은 불가능하다. 조직 소견이 세르톨리세포단독이었다면 답은 공여 정자로 바뀐다 — 그래서 이 사진 한 장이 치료 경로를 정한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">조직 소견</th><th style=\"width:40%\">생식세포 표지자 염색 양상</th><th>임상 짝</th></tr></thead><tbody> <tr><td><b>정자형성 보존(정답)</b></td><td><b>모든 정세관에 기저막~내강 다층 양성 세포, 정세관 지름 정상</b></td><td>고환 정상 크기, FSH 정상, 정액량·pH 낮음 → 폐쇄성</td></tr> <tr><td>세르톨리세포단독증후군</td><td>정세관 안에 양성 세포 <b>전무</b>, 세르톨리세포만, 관 지름 감소</td><td>고환 작음, FSH ↑, 정액량 정상</td></tr> <tr><td>성숙정지</td><td>양성 세포가 기저부 1~2층(정원·정모세포)에서 멈춤, 정자세포 없음</td><td>고환 정상~약간 작음, FSH 정상~↑</td></tr> <tr><td>정세관 유리질화</td><td>관 벽 두껍고 내강 소실, 양성 세포 거의 없음, 간질 라이디히세포 뭉침</td><td>작고 단단한 고환, FSH·LH ↑, 클라인펠터</td></tr> <tr><td>라이디히세포 과다형성</td><td>간질 세포 증가(표지자 음성), 정세관은 정상 또는 위축</td><td>고환 종괴·호르몬 증상; 폐쇄를 설명하지 못함</td></tr> </tbody></table> <b>가장 가까운 오답은 성숙정지</b> — 얼핏 「염색된 세포가 있으니 만들긴 한다」로 보인다. 갈림길은 <b>양성 세포가 내강 쪽까지 여러 층인가, 기저부 한두 층에서 멈추는가</b>다. 이 사진은 관 안쪽까지 빽빽하다. 반대로 기저부에만 얇게 염색된 사진이 나오면 성숙정지로 읽고, 그때는 정자 채취 성공률이 낮다는 상담으로 넘어간다.\n- 오답 이유:\n  - ① 정세관 유리질화와 위축은 클라인펠터증후군처럼 관 벽이 두꺼워지고 내강이 사라지며 생식세포가 거의 없고 간질에 라이디히세포가 뭉친 소견이다. 이 사진의 정세관은 지름·벽·내강이 정상이다. 이 선지가 정답이 되려면 고환이 작고 단단하며 FSH·LH 가 높고 관이 섬유화돼야 한다.\n  - ② 라이디히세포 과다형성은 정세관 사이 간질 세포가 늘어나는 것으로, 생식세포 표지자 염색에서는 간질이 음성이라 정세관 소견과 무관하며 정관 결손·저용량 산성 정액을 설명하지 못한다. 이 선지가 정답이 되려면 간질이 넓어져 세포 덩어리를 이루고 호르몬 이상이나 종괴가 있어야 한다.\n  - ④ 세르톨리세포단독증후군은 정세관 안에 생식세포가 전혀 없어 생식세포 표지자 염색이 관 안에서 완전히 음성이고, 세르톨리세포만 남아 관 지름이 줄며 FSH 가 오르고 고환이 작다. 이 사진은 모든 관이 양성 세포로 차 있다. 이 선지가 정답이 되려면 정세관 안이 청색(음성)이고 고환이 작으며 FSH 가 높아야 한다.\n  - ⑤ 성숙정지는 정원세포·정모세포까지만 있고 정자세포로 넘어가지 못해 양성 세포가 기저막 쪽 1~2층에서 멈춘다. 이 사진은 양성 세포가 내강 쪽까지 여러 층이다. 이 선지가 정답이 되려면 관 안쪽(내강 쪽)에 염색된 세포가 없고 기저부만 얇게 염색돼야 한다.\n- 함정: 정액에 정자가 없다고 고환도 못 만든다고 단정하면 틀린다. 정액량·pH·정관 촉지·FSH 로 폐쇄를 의심하고, 조직에서 다층 생식세포를 확인하면 정자 채취 + ICSI 로 갈 수 있다.\n- 학습목표: 무정자증 환자의 고환 조직에서 생식세포 표지자 면역조직화학으로 정자형성 보존 여부를 읽어 폐쇄성과 비폐쇄성 무정자증을 구분한다\n- 근거·출처: Human Protein Atlas 조직 IHC — 고환 코어(26세 남) 병리의 세포 주석: spermatogonia·spermatocytes·spermatids high, Sertoli cells·peritubular cells not detected, Leydig cells low · 작성자 판독(2026-09-17): 정세관 단면 10여 개 전부에 기저막~내강 다층의 갈색 양성 생식세포, 세르톨리세포·간질 음성, 정세관 지름·간질 정상 · AUA/ASRM Guideline: Diagnosis and Treatment of Infertility in Men (2020/2021) — azoospermia evaluation: semen volume/pH, vasal palpation, FSH, testis size; CBAVD and CFTR testing; sperm retrieval with ICSI · Campbell-Walsh-Wein Urology — male infertility: obstructive vs non-obstructive azoospermia, testicular histology patterns (normal spermatogenesis, hypospermatogenesis, maturation arrest, Sertoli cell-only)\n\n## 출처\n- Human Protein Atlas, DDX4 / Testis (CC BY 4.0), https://images.proteinatlas.org/26170/57049_A_5_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림의 모든 정세관 단면에서 기저막 쪽부터 내강 쪽까지 여러 층의 세포가 갈색으로 강하게 염색된다. 생식세포 표지자가 정원세포·정모세포·정자세포에 이르는 다층의 생식세포를 표시하고 있으며, 세르톨리세포와 간질의 라이디히세포·주위세관세포는 청색(음성)이다. 정세관 지름과 간질 구성도 정상이다. 즉 정자형성이 보존된 정상 고환이다. 정관이 만져지지 않고 정액량이 적으며 산성이고(정낭 결손) FSH 가 정상인 임상 소견과 합치면 선천 양측 정관 무형성(CBAVD)에 의한 폐쇄성 무정자증이다."
+   },
+   {
+    "k": "원리",
+    "v": "무정자증은 두 갈래로 나뉜다. <b>비폐쇄성(NOA)</b>은 고환이 정자를 못 만드는 것이고, <b>폐쇄성(OA)</b>은 만들지만 길이 막힌 것이다. 이를 가르는 것이 <b>고환 크기·FSH·정액량/pH</b> 세 가지다. 정자형성이 없으면 세르톨리세포의 인히빈 B 분비가 줄어 <b>FSH 가 오르고</b> 정세관 부피가 줄어 <b>고환이 작아진다</b>. 정관 무형성이나 사정관 폐쇄에서는 정낭도 함께 결손·폐쇄되므로 정낭액(알칼리성, 프룩토스, 정액의 60~70 %)이 빠져 <b>정액량 &lt; 1 mL, pH &lt; 7.2, 프룩토스 음성</b>이 된다. 이 환자는 셋 다 폐쇄를 가리킨다.<br> <b>조직이 결론을 확정하는 방식</b> — 생식세포 특이 표지자(VASA/DDX4 계열 — 정원세포에서 정자세포까지 발현, 세르톨리·라이디히세포 음성)로 염색하면 정세관 안에 <b>몇 층의 생식세포가 있는가</b>가 한눈에 보인다. 정상이면 기저막의 정원세포 → 1차·2차 정모세포 → 원형·긴 정자세포가 <b>여러 층</b>을 이룬다. 세르톨리세포단독 증후군이면 정세관 안에 <b>염색되는 세포가 없고</b> 세르톨리세포만 남아 관이 작아진다. 성숙정지면 염색되는 세포가 <b>1~2층(정원세포·정모세포)</b>에서 멈추고 내강 쪽에 정자세포가 없다. 유리질화(클라인펠터 등)는 정세관 벽이 두꺼워지고 내강이 사라지며 간질에 라이디히세포가 상대적으로 뭉친다.<br> <b>왜 CBAVD 인가</b> — 정관은 볼프관(중신관) 유래이고 정낭·사정관도 같은 관에서 나온다. <b>CFTR</b> 변이가 있으면 태생기 중신관이 폐쇄·퇴화하여 정관·정낭이 없어지고, 남자 낭성섬유증 환자의 98 % 가 이 이유로 불임이다. 폐 증상 없이 CBAVD 만 있는 환자의 70~80 % 에서 CFTR 변이(흔히 ΔF508 + 5T)가 발견되므로 <b>본인과 배우자의 CFTR 검사</b>가 다음 단계이고, CFTR 음성이면 편측 콩팥 무형성이 동반될 수 있어 콩팥 초음파를 본다.<br> <b>치료의 함의</b> — 정자형성이 보존돼 있으므로 <b>부고환·고환에서 정자를 채취(PESA/MESA/TESE)해 세포질내 정자주입(ICSI)</b>을 하면 자녀를 가질 수 있다. 정관이 없으므로 정관 복원은 불가능하다. 조직 소견이 세르톨리세포단독이었다면 답은 공여 정자로 바뀐다 — 그래서 이 사진 한 장이 치료 경로를 정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">조직 소견</th><th style=\"width:40%\">생식세포 표지자 염색 양상</th><th>임상 짝</th></tr></thead><tbody> <tr><td><b>정자형성 보존(정답)</b></td><td><b>모든 정세관에 기저막~내강 다층 양성 세포, 정세관 지름 정상</b></td><td>고환 정상 크기, FSH 정상, 정액량·pH 낮음 → 폐쇄성</td></tr> <tr><td>세르톨리세포단독증후군</td><td>정세관 안에 양성 세포 <b>전무</b>, 세르톨리세포만, 관 지름 감소</td><td>고환 작음, FSH ↑, 정액량 정상</td></tr> <tr><td>성숙정지</td><td>양성 세포가 기저부 1~2층(정원·정모세포)에서 멈춤, 정자세포 없음</td><td>고환 정상~약간 작음, FSH 정상~↑</td></tr> <tr><td>정세관 유리질화</td><td>관 벽 두껍고 내강 소실, 양성 세포 거의 없음, 간질 라이디히세포 뭉침</td><td>작고 단단한 고환, FSH·LH ↑, 클라인펠터</td></tr> <tr><td>라이디히세포 과다형성</td><td>간질 세포 증가(표지자 음성), 정세관은 정상 또는 위축</td><td>고환 종괴·호르몬 증상; 폐쇄를 설명하지 못함</td></tr> </tbody></table> <b>가장 가까운 오답은 성숙정지</b> — 얼핏 「염색된 세포가 있으니 만들긴 한다」로 보인다. 갈림길은 <b>양성 세포가 내강 쪽까지 여러 층인가, 기저부 한두 층에서 멈추는가</b>다. 이 사진은 관 안쪽까지 빽빽하다. 반대로 기저부에만 얇게 염색된 사진이 나오면 성숙정지로 읽고, 그때는 정자 채취 성공률이 낮다는 상담으로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정세관 유리질화와 위축은 클라인펠터증후군처럼 관 벽이 두꺼워지고 내강이 사라지며 생식세포가 거의 없고 간질에 라이디히세포가 뭉친 소견이다. 이 사진의 정세관은 지름·벽·내강이 정상이다. 이 선지가 정답이 되려면 고환이 작고 단단하며 FSH·LH 가 높고 관이 섬유화돼야 한다.\n② 라이디히세포 과다형성은 정세관 사이 간질 세포가 늘어나는 것으로, 생식세포 표지자 염색에서는 간질이 음성이라 정세관 소견과 무관하며 정관 결손·저용량 산성 정액을 설명하지 못한다. 이 선지가 정답이 되려면 간질이 넓어져 세포 덩어리를 이루고 호르몬 이상이나 종괴가 있어야 한다.\n④ 세르톨리세포단독증후군은 정세관 안에 생식세포가 전혀 없어 생식세포 표지자 염색이 관 안에서 완전히 음성이고, 세르톨리세포만 남아 관 지름이 줄며 FSH 가 오르고 고환이 작다. 이 사진은 모든 관이 양성 세포로 차 있다. 이 선지가 정답이 되려면 정세관 안이 청색(음성)이고 고환이 작으며 FSH 가 높아야 한다.\n⑤ 성숙정지는 정원세포·정모세포까지만 있고 정자세포로 넘어가지 못해 양성 세포가 기저막 쪽 1~2층에서 멈춘다. 이 사진은 양성 세포가 내강 쪽까지 여러 층이다. 이 선지가 정답이 되려면 관 안쪽(내강 쪽)에 염색된 세포가 없고 기저부만 얇게 염색돼야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "정액에 정자가 없다고 고환도 못 만든다고 단정하면 틀린다. 정액량·pH·정관 촉지·FSH 로 폐쇄를 의심하고, 조직에서 다층 생식세포를 확인하면 정자 채취 + ICSI 로 갈 수 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무정자증 환자의 고환 조직에서 생식세포 표지자 면역조직화학으로 정자형성 보존 여부를 읽어 폐쇄성과 비폐쇄성 무정자증을 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas 조직 IHC — 고환 코어(26세 남) 병리의 세포 주석: spermatogonia·spermatocytes·spermatids high, Sertoli cells·peritubular cells not detected, Leydig cells low · 작성자 판독(2026-09-17): 정세관 단면 10여 개 전부에 기저막~내강 다층의 갈색 양성 생식세포, 세르톨리세포·간질 음성, 정세관 지름·간질 정상 · AUA/ASRM Guideline: Diagnosis and Treatment of Infertility in Men (2020/2021) — azoospermia evaluation: semen volume/pH, vasal palpation, FSH, testis size; CBAVD and CFTR testing; sperm retrieval with ICSI · Campbell-Walsh-Wein Urology — male infertility: obstructive vs non-obstructive azoospermia, testicular histology patterns (normal spermatogenesis, hypospermatogenesis, maturation arrest, Sertoli cell-only) ## 출처 Human Protein Atlas, DDX4 / Testis (CC BY 4.0), https://images.proteinatlas.org/26170/57049_A_5_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0044.jpg",
+   "caption": "면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색) 조직 마이크로어레이 코어, 원본 배율 그대로 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000152670-DDX4/tissue/Testis",
+   "asset_id": "HPA-DDX4_57049_A_5_6",
+   "text": "Human Protein Atlas, DDX4 / Testis (CC BY 4.0), https://images.proteinatlas.org/26170/57049_A_5_6.jpg"
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0039",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "산과 — 분만 중 태아감시",
+  "type": "산과 — 분만 중 태아감시",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-16",
+  "vignette": "28세 여자(1회 출산)가 임신 39주에 진통이 있어 분만실에 입원하였다. 자궁경부는 5 cm 열려 있고 양막은 파열되어 맑은 양수가 보였다. 임신 경과는 정상이었고 산모의 체온과 혈압은 정상이다. 외부 전자태아감시로 얻은 태아심박동(위)과 자궁수축(아래) 기록 10분 구간은 그림과 같다.",
+  "question": "기록에서 보이는 감속의 유형은?",
+  "options": [
+   "감속이 아닌 정상 변이도",
+   "가변감속",
+   "조기감속",
+   "후기감속",
+   "지속감속"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 약 125~135/분이고 변이도는 중등도(6~10/분)다. 44.8~45.3분에 자궁수축의 정점 무렵 심박동이 약 135에서 105/분으로 30초 안에 급격히 떨어졌다가 급격히 회복하며, 하강은 25~30/분, 지속은 약 35초다. 시작과 회복이 급격하고(onset to nadir < 30초) 15/분 이상 15초 이상 2분 미만 지속하며 모양이 톱니 같은 어깨를 가지므로 가변감속이다. 조기·후기감속은 완만하게(≥ 30초) 내려가며 수축 곡선을 거울처럼 따라가고, 지속감속은 2분 이상 이어진다.\n- 원리: NICHD(2008) 정의에서 감속은 <b>하강 속도</b>와 <b>자궁수축과의 시간관계</b> 두 축으로 나눈다. <b>급격(abrupt)</b> = 시작에서 최저점까지 <b>30초 미만</b>, <b>완만(gradual)</b> = 30초 이상.<br> <b>가변감속</b>은 급격히 내려가고 급격히 올라오며 하강 ≥ 15/분, 지속 ≥ 15초 &lt; 2분이다. 수축과의 관계가 「가변」이라 이름이 그렇다. 기전은 <b>제대 압박</b>이다 — 제대정맥이 먼저 눌리면 정맥 환류가 줄어 짧은 <b>가속(어깨, shoulder)</b>이 오고, 제대동맥까지 눌리면 태아 혈압이 급상승해 <b>압수용체 반사로 미주신경이 즉시</b> 심박수를 떨어뜨린다. 그래서 하강이 칼처럼 급하다. 압박이 풀리면 반사가 사라져 즉시 회복한다. 양막 파열 뒤·양수과소·제대 탈출·목에 감긴 제대에서 흔하다.<br> <b>조기감속</b>은 완만하게 내려가 최저점이 수축 정점과 <b>일치</b>한다(거울상). 기전은 <b>태아 머리 압박</b> → 두개내압 상승 → 미주신경 반응이고 양성 소견이다. <b>후기감속</b>은 완만하게 내려가되 시작·최저점·회복이 수축보다 <b>모두 늦다</b>. 기전은 <b>자궁태반 관류부전</b> — 수축으로 융모간강 혈류가 끊기면 태아 PO₂ 가 화학수용체 역치 아래로 떨어지는 데 시간이 걸리므로 늦게 나타난다. <b>지속감속</b>은 15/분 이상 하강이 <b>2분 이상 10분 미만</b> 이어지는 것이다(10분을 넘으면 기저선 변화).<br> <b>왜 유형이 중요한가</b> — 유형이 곧 기전이고 기전이 곧 처치다. 가변감속은 제대 압박이므로 <b>체위 변경, 양막 파열 뒤라면 양수주입(amnioinfusion)</b>이 대응이고, 후기감속은 관류 개선(좌측위·수액·산소·옥시토신 중단)이며, 조기감속은 처치가 필요 없다. 단발 가변감속에 변이도가 중등도로 남아 있으면 태아 산증 가능성은 낮고 (이 기록의 아기도 정상 출생), 재발하고 깊어지며 변이도가 사라질 때가 위험 신호다.\n- 비교: <table><thead><tr><th style=\"width:22%\">감속 유형</th><th style=\"width:26%\">하강 속도</th><th style=\"width:30%\">수축과의 관계</th><th>기전</th></tr></thead><tbody> <tr><td><b>가변감속(정답)</b></td><td><b>급격(&lt; 30초)</b>, 급격 회복</td><td><b>일정하지 않음</b>, 어깨(가속) 동반</td><td>제대 압박 → 압수용체·미주신경</td></tr> <tr><td>조기감속</td><td>완만(≥ 30초)</td><td>최저점 = 수축 정점(거울상)</td><td>태아 머리 압박</td></tr> <tr><td>후기감속</td><td>완만(≥ 30초)</td><td>최저점이 수축 정점보다 늦음</td><td>자궁태반 관류부전 → 화학수용체</td></tr> <tr><td>지속감속</td><td>급격 또는 완만</td><td>2~10분 지속</td><td>제대 탈출·자궁 과수축·산모 저혈압 등</td></tr> <tr><td>정상 변이도</td><td>진폭 6~25/분의 잔물결</td><td>수축과 무관</td><td>정상 자율신경 상호작용</td></tr> </tbody></table> <b>가장 가까운 오답은 조기감속</b> — 최저점이 수축 정점 부근에 있어 시간관계로는 헷갈린다. 갈림길은 <b>하강의 모양</b>이다. 30초 안에 25~30/분을 뚝 떨어뜨리고 톱니 어깨가 있으면 가변, 수축 곡선을 부드럽게 뒤집어 놓은 듯하면 조기다. 반대로 「완만하게 내려가 수축 뒤에 회복」하는 기록이 나오면 후기감속으로 읽고 관류 개선 처치로 넘어간다.\n- 오답 이유:\n  - ① 정상 변이도는 기저선 주위의 6~25/분 진폭 잔물결로 수축과 무관하게 계속된다. 이 기록의 44.8~45.3분 하강은 25~30/분으로 변이도 폭을 훨씬 넘고 수축 정점과 함께 나타난 뚜렷한 사건이다. 이 선지가 정답이 되려면 기저선에서 15/분 이상 벗어나는 구간이 없어야 한다.\n  - ③ 조기감속은 30초 이상 걸려 완만하게 내려가고 최저점이 수축 정점과 정확히 겹치는 대칭적인 거울상이다. 이 기록의 감속은 30초 안에 뚝 떨어지고 톱니 모양 어깨가 있다. 이 선지가 정답이 되려면 하강이 수축 곡선을 부드럽게 뒤집은 모양이어야 한다.\n  - ④ 후기감속은 완만하게 내려가되 시작·최저점·회복이 모두 수축보다 늦고 반복되는 관류부전의 신호다. 이 기록의 감속은 급격하고 수축 정점과 거의 같은 시각에 시작한다. 이 선지가 정답이 되려면 수축이 끝난 뒤에 최저점이 오고 매 수축마다 되풀이돼야 한다.\n  - ⑤ 지속감속은 15/분 이상의 하강이 2분 이상 10분 미만 이어지는 것이다. 이 기록의 감속은 약 35초 만에 기저선으로 돌아왔다. 이 선지가 정답이 되려면 하강이 세로선(1분) 두 칸 이상 이어져야 한다.\n- 함정: 최저점이 수축 정점 근처라고 조기감속으로 읽기 쉽다. 시간관계보다 먼저 하강 속도(30초 기준)와 어깨 모양을 본다 — 급격하면 무조건 가변감속이다.\n- 학습목표: 태아심박동 기록에서 급격한(30초 미만) 하강·회복과 자궁수축과의 시간관계로 가변감속을 조기·후기·지속감속과 구분한다\n- 근거·출처: CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-17, 화소 기반): baseline ≈125~135/min, variability ≈6~10/min, deceleration 44.8~45.3 min: 135→105/min in < 30 s, duration ≈35 s, shoulders present; contractions 41.5/45.0/46.8/48.3 min (UA saturating at 100); teacher-only outcome pH 7.33, Apgar 9/9 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — definitions of abrupt vs gradual, early/late/variable/prolonged decelerations · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009) — physiology of variable decelerations and amnioinfusion · Williams Obstetrics — intrapartum assessment: cord compression and baroreceptor-mediated variable decelerations\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1189 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 약 125~135/분이고 변이도는 중등도(6~10/분)다. 44.8~45.3분에 자궁수축의 정점 무렵 심박동이 약 135에서 105/분으로 30초 안에 급격히 떨어졌다가 급격히 회복하며, 하강은 25~30/분, 지속은 약 35초다. 시작과 회복이 급격하고(onset to nadir < 30초) 15/분 이상 15초 이상 2분 미만 지속하며 모양이 톱니 같은 어깨를 가지므로 가변감속이다. 조기·후기감속은 완만하게(≥ 30초) 내려가며 수축 곡선을 거울처럼 따라가고, 지속감속은 2분 이상 이어진다."
+   },
+   {
+    "k": "원리",
+    "v": "NICHD(2008) 정의에서 감속은 <b>하강 속도</b>와 <b>자궁수축과의 시간관계</b> 두 축으로 나눈다. <b>급격(abrupt)</b> = 시작에서 최저점까지 <b>30초 미만</b>, <b>완만(gradual)</b> = 30초 이상.<br> <b>가변감속</b>은 급격히 내려가고 급격히 올라오며 하강 ≥ 15/분, 지속 ≥ 15초 &lt; 2분이다. 수축과의 관계가 「가변」이라 이름이 그렇다. 기전은 <b>제대 압박</b>이다 — 제대정맥이 먼저 눌리면 정맥 환류가 줄어 짧은 <b>가속(어깨, shoulder)</b>이 오고, 제대동맥까지 눌리면 태아 혈압이 급상승해 <b>압수용체 반사로 미주신경이 즉시</b> 심박수를 떨어뜨린다. 그래서 하강이 칼처럼 급하다. 압박이 풀리면 반사가 사라져 즉시 회복한다. 양막 파열 뒤·양수과소·제대 탈출·목에 감긴 제대에서 흔하다.<br> <b>조기감속</b>은 완만하게 내려가 최저점이 수축 정점과 <b>일치</b>한다(거울상). 기전은 <b>태아 머리 압박</b> → 두개내압 상승 → 미주신경 반응이고 양성 소견이다. <b>후기감속</b>은 완만하게 내려가되 시작·최저점·회복이 수축보다 <b>모두 늦다</b>. 기전은 <b>자궁태반 관류부전</b> — 수축으로 융모간강 혈류가 끊기면 태아 PO₂ 가 화학수용체 역치 아래로 떨어지는 데 시간이 걸리므로 늦게 나타난다. <b>지속감속</b>은 15/분 이상 하강이 <b>2분 이상 10분 미만</b> 이어지는 것이다(10분을 넘으면 기저선 변화).<br> <b>왜 유형이 중요한가</b> — 유형이 곧 기전이고 기전이 곧 처치다. 가변감속은 제대 압박이므로 <b>체위 변경, 양막 파열 뒤라면 양수주입(amnioinfusion)</b>이 대응이고, 후기감속은 관류 개선(좌측위·수액·산소·옥시토신 중단)이며, 조기감속은 처치가 필요 없다. 단발 가변감속에 변이도가 중등도로 남아 있으면 태아 산증 가능성은 낮고 (이 기록의 아기도 정상 출생), 재발하고 깊어지며 변이도가 사라질 때가 위험 신호다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">감속 유형</th><th style=\"width:26%\">하강 속도</th><th style=\"width:30%\">수축과의 관계</th><th>기전</th></tr></thead><tbody> <tr><td><b>가변감속(정답)</b></td><td><b>급격(&lt; 30초)</b>, 급격 회복</td><td><b>일정하지 않음</b>, 어깨(가속) 동반</td><td>제대 압박 → 압수용체·미주신경</td></tr> <tr><td>조기감속</td><td>완만(≥ 30초)</td><td>최저점 = 수축 정점(거울상)</td><td>태아 머리 압박</td></tr> <tr><td>후기감속</td><td>완만(≥ 30초)</td><td>최저점이 수축 정점보다 늦음</td><td>자궁태반 관류부전 → 화학수용체</td></tr> <tr><td>지속감속</td><td>급격 또는 완만</td><td>2~10분 지속</td><td>제대 탈출·자궁 과수축·산모 저혈압 등</td></tr> <tr><td>정상 변이도</td><td>진폭 6~25/분의 잔물결</td><td>수축과 무관</td><td>정상 자율신경 상호작용</td></tr> </tbody></table> <b>가장 가까운 오답은 조기감속</b> — 최저점이 수축 정점 부근에 있어 시간관계로는 헷갈린다. 갈림길은 <b>하강의 모양</b>이다. 30초 안에 25~30/분을 뚝 떨어뜨리고 톱니 어깨가 있으면 가변, 수축 곡선을 부드럽게 뒤집어 놓은 듯하면 조기다. 반대로 「완만하게 내려가 수축 뒤에 회복」하는 기록이 나오면 후기감속으로 읽고 관류 개선 처치로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정상 변이도는 기저선 주위의 6~25/분 진폭 잔물결로 수축과 무관하게 계속된다. 이 기록의 44.8~45.3분 하강은 25~30/분으로 변이도 폭을 훨씬 넘고 수축 정점과 함께 나타난 뚜렷한 사건이다. 이 선지가 정답이 되려면 기저선에서 15/분 이상 벗어나는 구간이 없어야 한다.\n③ 조기감속은 30초 이상 걸려 완만하게 내려가고 최저점이 수축 정점과 정확히 겹치는 대칭적인 거울상이다. 이 기록의 감속은 30초 안에 뚝 떨어지고 톱니 모양 어깨가 있다. 이 선지가 정답이 되려면 하강이 수축 곡선을 부드럽게 뒤집은 모양이어야 한다.\n④ 후기감속은 완만하게 내려가되 시작·최저점·회복이 모두 수축보다 늦고 반복되는 관류부전의 신호다. 이 기록의 감속은 급격하고 수축 정점과 거의 같은 시각에 시작한다. 이 선지가 정답이 되려면 수축이 끝난 뒤에 최저점이 오고 매 수축마다 되풀이돼야 한다.\n⑤ 지속감속은 15/분 이상의 하강이 2분 이상 10분 미만 이어지는 것이다. 이 기록의 감속은 약 35초 만에 기저선으로 돌아왔다. 이 선지가 정답이 되려면 하강이 세로선(1분) 두 칸 이상 이어져야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "최저점이 수축 정점 근처라고 조기감속으로 읽기 쉽다. 시간관계보다 먼저 하강 속도(30초 기준)와 어깨 모양을 본다 — 급격하면 무조건 가변감속이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "태아심박동 기록에서 급격한(30초 미만) 하강·회복과 자궁수축과의 시간관계로 가변감속을 조기·후기·지속감속과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB 원자료(4 Hz) — 작성자 계측(2026-09-17, 화소 기반): baseline ≈125~135/min, variability ≈6~10/min, deceleration 44.8~45.3 min: 135→105/min in < 30 s, duration ≈35 s, shoulders present; contractions 41.5/45.0/46.8/48.3 min (UA saturating at 100); teacher-only outcome pH 7.33, Apgar 9/9 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — definitions of abrupt vs gradual, early/late/variable/prolonged decelerations · ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring (2009) — physiology of variable decelerations and amnioinfusion · Williams Obstetrics — intrapartum assessment: cord compression and baroreceptor-mediated variable decelerations ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1189 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0039.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1189_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1189"
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0038",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-16",
+  "vignette": "A 71-year-old woman comes to the physician because of a 6-month history of progressive exertional dyspnea and two recent episodes of waking at night short of breath. She had rheumatic fever at age 12. Pulse is 70/min and regular, and blood pressure is 118/74 mm Hg. Cardiac auscultation shows a loud first heart sound, an opening snap after the second heart sound, and a low-pitched diastolic rumble at the apex. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following is the most likely finding on this electrocardiogram?",
+  "options": [
+   "First-degree atrioventricular block",
+   "Right ventricular hypertrophy",
+   "Left atrial enlargement",
+   "Right atrial enlargement",
+   "Atrial flutter with 4:1 atrioventricular conduction"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The rhythm is sinus at about 70/min: each QRS is preceded by a P wave with a constant PR interval of about 0.16 s. The P wave in lead II is broad (about 0.12 s, three small squares) and notched, and in V1 the P wave is biphasic with a wide, deep terminal negative component (about 1 mm deep and 1 small square wide) — a positive P terminal force. Both are criteria for left atrial enlargement. The clinical picture of rheumatic mitral stenosis (opening snap, apical diastolic rumble) explains it: the stenotic valve raises left atrial pressure and dilates the chamber. The QRS is narrow with a normal axis and V1 shows an rS pattern, so there is no right ventricular hypertrophy.\n- 원리: The P wave is the sum of right atrial depolarization (first ~40 ms) and left atrial depolarization (last ~40 ms). The right atrium is closer to lead V1 and its vector points anteriorly, giving the <b>initial positive</b> part of the P in V1; the left atrium lies posteriorly, so its vector points <b>away</b> from V1 and produces the <b>terminal negative</b> part. In lead II both atria depolarize toward the electrode, producing a single upright P of ≤ 0.11 s.<br> <b>Why enlargement changes the P</b> — a dilated, thick-walled left atrium takes <b>longer</b> to depolarize, so the left atrial component is delayed and widened: the P in lead II becomes <b>≥ 0.12 s and notched</b> (the two humps are the right and left atrial peaks separated by ≥ 0.04 s — 'P mitrale'), and the terminal negative deflection in V1 becomes <b>deeper and longer</b> (P terminal force ≥ 0.04 mm·s, i.e., ≥ 1 mm deep for ≥ 0.04 s). Right atrial enlargement, by contrast, increases the <b>amplitude</b> of the early part (peaked P ≥ 2.5 mm in II, tall initial positive P in V1) without prolonging it.<br> <b>Why mitral stenosis</b> — rheumatic carditis fuses the commissures and thickens the leaflets; when the orifice falls below ~1.5 cm² the left atrium must generate a diastolic gradient to fill the ventricle, so left atrial pressure and volume rise chronically. The ECG consequence is left atrial enlargement, and the natural history is atrial fibrillation, left atrial thrombus, pulmonary hypertension and eventually right ventricular hypertrophy. The loud S1 and opening snap indicate the leaflets are still pliable; the diastolic rumble is the turbulent flow across the narrowed orifice.<br> <b>What the ECG does not show yet</b> — pulmonary hypertension would add right axis deviation, a dominant R in V1 and a right ventricular strain pattern. Here the axis is normal and V1 is rS, so the disease has not yet produced right ventricular hypertrophy — which makes left atrial enlargement, not RVH, the single best answer.\n- 비교: <table><thead><tr><th style=\"width:30%\">Finding</th><th style=\"width:40%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Left atrial enlargement (answer)</b></td><td><b>P ≥ 0.12 s and notched in II; terminal negative P in V1 ≥ 1 mm × 0.04 s</b></td><td>II P ≈0.12 s notched; V1 terminal negativity ≈1 mm × 1 box</td></tr> <tr><td>Right atrial enlargement</td><td>P <b>tall</b> (≥ 2.5 mm) and peaked in II/III/aVF, tall initial P in V1, duration normal</td><td>P in II is low and broad, not tall</td></tr> <tr><td>Atrial flutter 4:1</td><td>continuous sawtooth F waves ~300/min with no isoelectric baseline; ventricular rate ~75/min</td><td>discrete P waves with flat baseline between them</td></tr> <tr><td>First-degree AV block</td><td>PR &gt; 0.20 s (more than one large square)</td><td>PR ≈0.16 s</td></tr> <tr><td>Right ventricular hypertrophy</td><td>right axis deviation, R/S &gt; 1 in V1, deep S in V5–V6, right strain T inversion</td><td>normal axis, V1 rS</td></tr> </tbody></table> The <b>closest wrong answer is right ventricular hypertrophy</b> because mitral stenosis eventually causes it. The discriminator is <b>V1</b>: an rS complex with a normal axis excludes RVH, whereas the P wave in the same lead carries the diagnosis. The <b>second trap is atrial flutter</b> — a broad notched P at 70/min is not a sawtooth; flutter has no flat baseline at all. If the tracing showed a tall peaked P instead of a broad notched one, the answer would flip to right atrial enlargement.\n- 오답 이유:\n  - (A) First-degree atrioventricular block requires a PR interval longer than 0.20 s, more than one large square. Here the PR is about 0.16 s and constant. This option would be correct only if the distance from P onset to QRS onset exceeded five small squares.\n  - (B) Right ventricular hypertrophy shows right axis deviation, a dominant R wave in V1 (R/S greater than 1), deep S waves in V5–V6 and often T inversion in V1–V3. This tracing has a normal axis and an rS complex in V1. This option would be correct only if V1 showed a tall R exceeding the S and the axis were rightward.\n  - (D) Right atrial enlargement produces tall, peaked P waves of 2.5 mm or more in the inferior leads with normal duration and a tall initial positive P in V1. The P waves here are broad and notched but low in amplitude, with a deep terminal negative component in V1. This option would be correct only if the P in lead II exceeded 2.5 mm and the V1 P were predominantly positive.\n  - (E) Atrial flutter with 4:1 conduction shows a continuous sawtooth of flutter waves at about 300/min with no isoelectric segment, and a regular ventricular rate near 75/min. This tracing has discrete P waves separated by a flat baseline. This option would be correct only if the baseline between QRS complexes were an uninterrupted sawtooth.\n- 함정: With a murmur of mitral stenosis the temptation is to look for right heart strain. Read the P wave first: its width and the V1 terminal negativity are the left atrial signature, and the narrow rS in V1 rules out right ventricular hypertrophy.\n- 학습목표: 류마티스 승모판협착증 환자의 심전도에서 P mitrale(II 유도 폭 ≥ 0.12 s·이봉)과 V1 종말 음성 P 로 좌심방 확장을 읽는다\n- 근거·출처: PTB-XL record label LAO/LAE (left atrial overload/enlargement; two-cardiologist validated) · 작성자 판독(2026-09-17): sinus ≈69/min (RR ≈0.87 s), PR ≈0.16 s, P in II ≈0.12 s and notched, V1 P terminal negative ≈1 mm × ≈0.04 s, normal axis, V1 rS, S V2/V3 ≈20 mm · Hancock EW et al. AHA/ACCF/HRS Recommendations … Part V: ECG Changes Associated With Cardiac Chamber Hypertrophy (2009) — left atrial abnormality criteria (P duration ≥ 120 ms, P terminal force in V1) · 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease — rheumatic mitral stenosis: pathophysiology and natural history\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10988 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The rhythm is sinus at about 70/min: each QRS is preceded by a P wave with a constant PR interval of about 0.16 s. The P wave in lead II is broad (about 0.12 s, three small squares) and notched, and in V1 the P wave is biphasic with a wide, deep terminal negative component (about 1 mm deep and 1 small square wide) — a positive P terminal force. Both are criteria for left atrial enlargement. The clinical picture of rheumatic mitral stenosis (opening snap, apical diastolic rumble) explains it: the stenotic valve raises left atrial pressure and dilates the chamber. The QRS is narrow with a normal axis and V1 shows an rS pattern, so there is no right ventricular hypertrophy."
+   },
+   {
+    "k": "원리",
+    "v": "The P wave is the sum of right atrial depolarization (first ~40 ms) and left atrial depolarization (last ~40 ms). The right atrium is closer to lead V1 and its vector points anteriorly, giving the <b>initial positive</b> part of the P in V1; the left atrium lies posteriorly, so its vector points <b>away</b> from V1 and produces the <b>terminal negative</b> part. In lead II both atria depolarize toward the electrode, producing a single upright P of ≤ 0.11 s.<br> <b>Why enlargement changes the P</b> — a dilated, thick-walled left atrium takes <b>longer</b> to depolarize, so the left atrial component is delayed and widened: the P in lead II becomes <b>≥ 0.12 s and notched</b> (the two humps are the right and left atrial peaks separated by ≥ 0.04 s — 'P mitrale'), and the terminal negative deflection in V1 becomes <b>deeper and longer</b> (P terminal force ≥ 0.04 mm·s, i.e., ≥ 1 mm deep for ≥ 0.04 s). Right atrial enlargement, by contrast, increases the <b>amplitude</b> of the early part (peaked P ≥ 2.5 mm in II, tall initial positive P in V1) without prolonging it.<br> <b>Why mitral stenosis</b> — rheumatic carditis fuses the commissures and thickens the leaflets; when the orifice falls below ~1.5 cm² the left atrium must generate a diastolic gradient to fill the ventricle, so left atrial pressure and volume rise chronically. The ECG consequence is left atrial enlargement, and the natural history is atrial fibrillation, left atrial thrombus, pulmonary hypertension and eventually right ventricular hypertrophy. The loud S1 and opening snap indicate the leaflets are still pliable; the diastolic rumble is the turbulent flow across the narrowed orifice.<br> <b>What the ECG does not show yet</b> — pulmonary hypertension would add right axis deviation, a dominant R in V1 and a right ventricular strain pattern. Here the axis is normal and V1 is rS, so the disease has not yet produced right ventricular hypertrophy — which makes left atrial enlargement, not RVH, the single best answer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Finding</th><th style=\"width:40%\">ECG signature</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Left atrial enlargement (answer)</b></td><td><b>P ≥ 0.12 s and notched in II; terminal negative P in V1 ≥ 1 mm × 0.04 s</b></td><td>II P ≈0.12 s notched; V1 terminal negativity ≈1 mm × 1 box</td></tr> <tr><td>Right atrial enlargement</td><td>P <b>tall</b> (≥ 2.5 mm) and peaked in II/III/aVF, tall initial P in V1, duration normal</td><td>P in II is low and broad, not tall</td></tr> <tr><td>Atrial flutter 4:1</td><td>continuous sawtooth F waves ~300/min with no isoelectric baseline; ventricular rate ~75/min</td><td>discrete P waves with flat baseline between them</td></tr> <tr><td>First-degree AV block</td><td>PR &gt; 0.20 s (more than one large square)</td><td>PR ≈0.16 s</td></tr> <tr><td>Right ventricular hypertrophy</td><td>right axis deviation, R/S &gt; 1 in V1, deep S in V5–V6, right strain T inversion</td><td>normal axis, V1 rS</td></tr> </tbody></table> The <b>closest wrong answer is right ventricular hypertrophy</b> because mitral stenosis eventually causes it. The discriminator is <b>V1</b>: an rS complex with a normal axis excludes RVH, whereas the P wave in the same lead carries the diagnosis. The <b>second trap is atrial flutter</b> — a broad notched P at 70/min is not a sawtooth; flutter has no flat baseline at all. If the tracing showed a tall peaked P instead of a broad notched one, the answer would flip to right atrial enlargement."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) First-degree atrioventricular block requires a PR interval longer than 0.20 s, more than one large square. Here the PR is about 0.16 s and constant. This option would be correct only if the distance from P onset to QRS onset exceeded five small squares.\n(B) Right ventricular hypertrophy shows right axis deviation, a dominant R wave in V1 (R/S greater than 1), deep S waves in V5–V6 and often T inversion in V1–V3. This tracing has a normal axis and an rS complex in V1. This option would be correct only if V1 showed a tall R exceeding the S and the axis were rightward.\n(D) Right atrial enlargement produces tall, peaked P waves of 2.5 mm or more in the inferior leads with normal duration and a tall initial positive P in V1. The P waves here are broad and notched but low in amplitude, with a deep terminal negative component in V1. This option would be correct only if the P in lead II exceeded 2.5 mm and the V1 P were predominantly positive.\n(E) Atrial flutter with 4:1 conduction shows a continuous sawtooth of flutter waves at about 300/min with no isoelectric segment, and a regular ventricular rate near 75/min. This tracing has discrete P waves separated by a flat baseline. This option would be correct only if the baseline between QRS complexes were an uninterrupted sawtooth."
+   },
+   {
+    "k": "함정",
+    "v": "With a murmur of mitral stenosis the temptation is to look for right heart strain. Read the P wave first: its width and the V1 terminal negativity are the left atrial signature, and the narrow rS in V1 rules out right ventricular hypertrophy."
+   },
+   {
+    "k": "학습목표",
+    "v": "류마티스 승모판협착증 환자의 심전도에서 P mitrale(II 유도 폭 ≥ 0.12 s·이봉)과 V1 종말 음성 P 로 좌심방 확장을 읽는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label LAO/LAE (left atrial overload/enlargement; two-cardiologist validated) · 작성자 판독(2026-09-17): sinus ≈69/min (RR ≈0.87 s), PR ≈0.16 s, P in II ≈0.12 s and notched, V1 P terminal negative ≈1 mm × ≈0.04 s, normal axis, V1 rS, S V2/V3 ≈20 mm · Hancock EW et al. AHA/ACCF/HRS Recommendations … Part V: ECG Changes Associated With Cardiac Chamber Hypertrophy (2009) — left atrial abnormality criteria (P duration ≥ 120 ms, P terminal force in V1) · 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease — rheumatic mitral stenosis: pathophysiology and natural history ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10988 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0038.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/10000/#files-panel",
+   "asset_id": "PTBXL-10988",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10988"
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0037",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "심전도 판독",
+  "type": "심전도 판독",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-16",
+  "vignette": "65세 여자가 자궁탈출증으로 질식 자궁절제술을 받기 위해 수술 전 평가를 받고 있다. 10년 전부터 고혈압 약을 먹고 있으며 흉통·실신·호흡곤란은 없다. 혈압 148/88 mmHg, 맥박 분당 80회로 규칙적이다. 12유도 심전도는 그림과 같다.",
+  "question": "심전도 소견으로 가장 적절한 것은?",
+  "options": [
+   "완전 좌각차단",
+   "완전 우각차단",
+   "오래된 하벽 심근경색",
+   "좌전섬유속차단",
+   "좌후섬유속차단"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 동율동 약 80/분이다. I 과 aVL 은 qR 형으로 양성이고 II·III·aVF 는 작은 r 뒤에 깊은 S 가 오는 rS 형으로 음성이므로 축은 약 -60° 의 좌축편위다. QRS 폭은 작은 칸 2~2.5칸(약 0.09초)으로 좁다. 좌축편위가 -45° 를 넘고 I·aVL qR, 하벽유도 rS, QRS 가 좁으며 다른 원인(하벽 경색·조기흥분·심실 리듬)이 없으면 좌전섬유속차단이다. 하벽유도에 Q 파가 아니라 작은 r 파가 남아 있으므로 오래된 하벽 경색이 아니다.\n- 원리: 좌각(left bundle)은 <b>앞섬유속(anterior fascicle)</b>과 <b>뒤섬유속(posterior fascicle)</b>으로 갈라진다. 앞섬유속은 좌심실의 <b>앞·위</b>쪽(전측벽)을, 뒤섬유속은 <b>뒤·아래</b>쪽(하벽)을 먼저 탈분극시킨다. 앞섬유속이 끊기면 좌심실은 뒤섬유속을 통해 <b>아래에서 위로, 오른쪽에서 왼쪽·위로</b> 탈분극된다.<br> <b>왜 좌축편위가 생기는가</b> — 탈분극의 첫 벡터는 아래(하벽)를 향하므로 II·III·aVF 에 <b>작은 r</b>, I·aVL 에 <b>작은 q</b> 가 생기고, 이어 주된 벡터가 위·왼쪽으로 돌아 I·aVL 에 <b>큰 R</b>, II·III·aVF 에 <b>깊은 S</b> 를 만든다. 그래서 축은 <b>-45° ~ -90°</b> 로 크게 왼쪽으로 돈다. 심실 근육 자체를 지나는 것이 아니라 정상 Purkinje 망을 타고 가므로 <b>QRS 는 넓어지지 않는다</b>(0.12초 미만, 보통 0.10초 이내). 좌각 전체가 막힌 좌각차단과 갈리는 지점이 바로 이 QRS 폭이다.<br> <b>진단 기준(AHA/ACCF/HRS 2009)</b> — ① 축 -45° ~ -90°, ② aVL qR, ③ aVL 의 R 정점 시간 ≥ 45 ms, ④ QRS &lt; 120 ms. 이 기록은 I·aVL qR, 하벽유도 rS, QRS 약 0.09초로 기준을 모두 채운다. 좌전섬유속차단은 고혈압·허혈·노화에 따른 전도계 섬유화에서 흔하고 단독으로는 예후에 큰 의미가 없어 <b>수술을 미룰 이유가 되지 않는다</b>. 다만 우각차단이 함께 있으면(이섬유속차단) 완전 방실차단 진행 가능성을 염두에 둔다.<br> <b>함께 보이는 소견의 해석</b> — 좌전섬유속차단에서는 벡터가 aVL 을 향해 aVL·I 의 R 이 커지므로 <b>사지유도 전압 기준으로 좌심실비대를 판단하면 과진단</b>이 된다. 이 기록도 aVL R 이 크고 측벽 ST 가 약간 처져 있어 고혈압성 좌심실비대가 동반됐을 수 있으나, 그것은 심장초음파로 확인할 문제이고 전도 소견의 답은 바뀌지 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:44%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>좌전섬유속차단(정답)</b></td><td><b>축 -45° 이하, I·aVL qR, II·III·aVF rS, QRS &lt; 0.12 s</b></td><td>축 ≈-60°, qR/rS, QRS ≈0.09 s</td></tr> <tr><td>좌후섬유속차단</td><td>축 +90° ~ +180°(우축편위), I·aVL rS, II·III·aVF qR, 우심실비대·폐질환 배제</td><td>축이 왼쪽</td></tr> <tr><td>완전 좌각차단</td><td>QRS ≥ 0.12 s, V5·V6·I·aVL 넓고 파인 R, q 없음</td><td>QRS 좁음, aVL 에 q 있음</td></tr> <tr><td>완전 우각차단</td><td>QRS ≥ 0.12 s, V1 rSR′, I·V6 넓은 S</td><td>QRS 좁음, V1 rS</td></tr> <tr><td>오래된 하벽 심근경색</td><td>II·III·aVF 에 <b>Q 파</b>(≥ 0.04 s 또는 R 의 1/4) 로 시작, 축은 흔히 좌축</td><td>하벽유도가 작은 <b>r</b> 로 시작(rS)</td></tr> </tbody></table> <b>가장 가까운 오답은 「오래된 하벽 심근경색」</b> — 둘 다 좌축편위를 만들고 하벽유도가 음성이다. 갈림길은 <b>하벽유도 QRS 의 첫 번째 파가 r 인가 Q 인가</b>다. 작은 r 이 남아 있으면 섬유속차단, r 이 사라지고 Q 로 시작하면 경색이다. 반대로 「하벽 Q 파 + 좌축편위」 기록이 나오면 경색을 먼저 읽고, 그때는 섬유속차단을 진단하지 않는다(기준의 배제 조건).\n- 오답 이유:\n  - ① 완전 좌각차단은 QRS 폭이 0.12초 이상이고 I·aVL·V5·V6 에 넓고 파인 R 파가 있으며 측벽에 q 파가 없다. 이 기록은 QRS 가 작은 칸 2~2.5칸으로 좁고 aVL 에 q 파가 있다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다.\n  - ② 완전 우각차단은 QRS 폭 0.12초 이상에 V1 rSR′(토끼귀), I·V6 의 넓고 뭉툭한 S 가 있다. 이 기록의 V1 은 rS 형이고 QRS 가 좁다. 이 선지가 정답이 되려면 V1 에 두 번째 R′ 이 보이고 QRS 가 넓어야 한다.\n  - ③ 오래된 하벽 심근경색은 II·III·aVF 에 병적 Q 파(폭 ≥ 0.04초 또는 R 의 1/4 이상 깊이)로 QRS 가 시작한다. 이 기록의 하벽유도는 작은 r 파로 시작하는 rS 형이며 Q 파가 없다. 이 선지가 정답이 되려면 하벽유도의 첫 파가 위로 향한 r 이 아니라 아래로 향한 Q 이어야 한다.\n  - ⑤ 좌후섬유속차단은 축이 +90° 를 넘는 우축편위와 I·aVL rS, II·III·aVF qR 이 특징이며 우심실비대·만성 폐질환·수직 심장을 배제해야 진단한다. 이 기록은 I·aVL 이 양성인 좌축편위다. 이 선지가 정답이 되려면 I 유도가 음성이고 III 유도가 qR 이어야 한다.\n- 함정: 좌축편위를 보고 「하벽 경색」이나 「좌심실비대」로 넘어가기 쉽다. 먼저 QRS 폭(좁음)과 하벽유도의 첫 파(r 인가 Q 인가), aVL 의 qR 을 확인한다.\n- 학습목표: 좌축편위(-45° 이상)와 I·aVL qR, II·III·aVF rS, 좁은 QRS 로 좌전섬유속차단을 진단하고 다른 전도장애·경색과 구분한다\n- 근거·출처: PTB-XL 기록 라벨 LAFB(2인 심장내과 검증) — 교사용 원 판독문: sinus rhythm, left axis deviation, high limb-lead voltages, ST depression I·aVL·V5·V6 · 작성자 계측(2026-09-17, 화소 기반): RR ≈0.75 s(≈80/분), I qR(R ≈8 mm), aVL qR(R ≈13 mm), II·III·aVF rS(S ≈10~13 mm), QRS ≈0.09 s, V1 rS · Surawicz B et al. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG Part III: Intraventricular Conduction Disturbances (2009) — 좌전섬유속차단 기준(축 -45~-90°, aVL qR, QRS < 120 ms) · Goldberger's Clinical Electrocardiography — fascicular blocks, differential of left axis deviation\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1576 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "동율동 약 80/분이다. I 과 aVL 은 qR 형으로 양성이고 II·III·aVF 는 작은 r 뒤에 깊은 S 가 오는 rS 형으로 음성이므로 축은 약 -60° 의 좌축편위다. QRS 폭은 작은 칸 2~2.5칸(약 0.09초)으로 좁다. 좌축편위가 -45° 를 넘고 I·aVL qR, 하벽유도 rS, QRS 가 좁으며 다른 원인(하벽 경색·조기흥분·심실 리듬)이 없으면 좌전섬유속차단이다. 하벽유도에 Q 파가 아니라 작은 r 파가 남아 있으므로 오래된 하벽 경색이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "좌각(left bundle)은 <b>앞섬유속(anterior fascicle)</b>과 <b>뒤섬유속(posterior fascicle)</b>으로 갈라진다. 앞섬유속은 좌심실의 <b>앞·위</b>쪽(전측벽)을, 뒤섬유속은 <b>뒤·아래</b>쪽(하벽)을 먼저 탈분극시킨다. 앞섬유속이 끊기면 좌심실은 뒤섬유속을 통해 <b>아래에서 위로, 오른쪽에서 왼쪽·위로</b> 탈분극된다.<br> <b>왜 좌축편위가 생기는가</b> — 탈분극의 첫 벡터는 아래(하벽)를 향하므로 II·III·aVF 에 <b>작은 r</b>, I·aVL 에 <b>작은 q</b> 가 생기고, 이어 주된 벡터가 위·왼쪽으로 돌아 I·aVL 에 <b>큰 R</b>, II·III·aVF 에 <b>깊은 S</b> 를 만든다. 그래서 축은 <b>-45° ~ -90°</b> 로 크게 왼쪽으로 돈다. 심실 근육 자체를 지나는 것이 아니라 정상 Purkinje 망을 타고 가므로 <b>QRS 는 넓어지지 않는다</b>(0.12초 미만, 보통 0.10초 이내). 좌각 전체가 막힌 좌각차단과 갈리는 지점이 바로 이 QRS 폭이다.<br> <b>진단 기준(AHA/ACCF/HRS 2009)</b> — ① 축 -45° ~ -90°, ② aVL qR, ③ aVL 의 R 정점 시간 ≥ 45 ms, ④ QRS &lt; 120 ms. 이 기록은 I·aVL qR, 하벽유도 rS, QRS 약 0.09초로 기준을 모두 채운다. 좌전섬유속차단은 고혈압·허혈·노화에 따른 전도계 섬유화에서 흔하고 단독으로는 예후에 큰 의미가 없어 <b>수술을 미룰 이유가 되지 않는다</b>. 다만 우각차단이 함께 있으면(이섬유속차단) 완전 방실차단 진행 가능성을 염두에 둔다.<br> <b>함께 보이는 소견의 해석</b> — 좌전섬유속차단에서는 벡터가 aVL 을 향해 aVL·I 의 R 이 커지므로 <b>사지유도 전압 기준으로 좌심실비대를 판단하면 과진단</b>이 된다. 이 기록도 aVL R 이 크고 측벽 ST 가 약간 처져 있어 고혈압성 좌심실비대가 동반됐을 수 있으나, 그것은 심장초음파로 확인할 문제이고 전도 소견의 답은 바뀌지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:44%\">심전도의 갈림길</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>좌전섬유속차단(정답)</b></td><td><b>축 -45° 이하, I·aVL qR, II·III·aVF rS, QRS &lt; 0.12 s</b></td><td>축 ≈-60°, qR/rS, QRS ≈0.09 s</td></tr> <tr><td>좌후섬유속차단</td><td>축 +90° ~ +180°(우축편위), I·aVL rS, II·III·aVF qR, 우심실비대·폐질환 배제</td><td>축이 왼쪽</td></tr> <tr><td>완전 좌각차단</td><td>QRS ≥ 0.12 s, V5·V6·I·aVL 넓고 파인 R, q 없음</td><td>QRS 좁음, aVL 에 q 있음</td></tr> <tr><td>완전 우각차단</td><td>QRS ≥ 0.12 s, V1 rSR′, I·V6 넓은 S</td><td>QRS 좁음, V1 rS</td></tr> <tr><td>오래된 하벽 심근경색</td><td>II·III·aVF 에 <b>Q 파</b>(≥ 0.04 s 또는 R 의 1/4) 로 시작, 축은 흔히 좌축</td><td>하벽유도가 작은 <b>r</b> 로 시작(rS)</td></tr> </tbody></table> <b>가장 가까운 오답은 「오래된 하벽 심근경색」</b> — 둘 다 좌축편위를 만들고 하벽유도가 음성이다. 갈림길은 <b>하벽유도 QRS 의 첫 번째 파가 r 인가 Q 인가</b>다. 작은 r 이 남아 있으면 섬유속차단, r 이 사라지고 Q 로 시작하면 경색이다. 반대로 「하벽 Q 파 + 좌축편위」 기록이 나오면 경색을 먼저 읽고, 그때는 섬유속차단을 진단하지 않는다(기준의 배제 조건)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 완전 좌각차단은 QRS 폭이 0.12초 이상이고 I·aVL·V5·V6 에 넓고 파인 R 파가 있으며 측벽에 q 파가 없다. 이 기록은 QRS 가 작은 칸 2~2.5칸으로 좁고 aVL 에 q 파가 있다. 이 선지가 정답이 되려면 QRS 가 큰 칸 3칸 이상으로 넓어야 한다.\n② 완전 우각차단은 QRS 폭 0.12초 이상에 V1 rSR′(토끼귀), I·V6 의 넓고 뭉툭한 S 가 있다. 이 기록의 V1 은 rS 형이고 QRS 가 좁다. 이 선지가 정답이 되려면 V1 에 두 번째 R′ 이 보이고 QRS 가 넓어야 한다.\n③ 오래된 하벽 심근경색은 II·III·aVF 에 병적 Q 파(폭 ≥ 0.04초 또는 R 의 1/4 이상 깊이)로 QRS 가 시작한다. 이 기록의 하벽유도는 작은 r 파로 시작하는 rS 형이며 Q 파가 없다. 이 선지가 정답이 되려면 하벽유도의 첫 파가 위로 향한 r 이 아니라 아래로 향한 Q 이어야 한다.\n⑤ 좌후섬유속차단은 축이 +90° 를 넘는 우축편위와 I·aVL rS, II·III·aVF qR 이 특징이며 우심실비대·만성 폐질환·수직 심장을 배제해야 진단한다. 이 기록은 I·aVL 이 양성인 좌축편위다. 이 선지가 정답이 되려면 I 유도가 음성이고 III 유도가 qR 이어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "좌축편위를 보고 「하벽 경색」이나 「좌심실비대」로 넘어가기 쉽다. 먼저 QRS 폭(좁음)과 하벽유도의 첫 파(r 인가 Q 인가), aVL 의 qR 을 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "좌축편위(-45° 이상)와 I·aVL qR, II·III·aVF rS, 좁은 QRS 로 좌전섬유속차단을 진단하고 다른 전도장애·경색과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL 기록 라벨 LAFB(2인 심장내과 검증) — 교사용 원 판독문: sinus rhythm, left axis deviation, high limb-lead voltages, ST depression I·aVL·V5·V6 · 작성자 계측(2026-09-17, 화소 기반): RR ≈0.75 s(≈80/분), I qR(R ≈8 mm), aVL qR(R ≈13 mm), II·III·aVF rS(S ≈10~13 mm), QRS ≈0.09 s, V1 rS · Surawicz B et al. AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the ECG Part III: Intraventricular Conduction Disturbances (2009) — 좌전섬유속차단 기준(축 -45~-90°, aVL qR, QRS < 120 ms) · Goldberger's Clinical Electrocardiography — fascicular blocks, differential of left axis deviation ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1576 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0037.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/01000/#files-panel",
+   "asset_id": "PTBXL-01576",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 1576"
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0043",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "부인과 — 종양·감염·호르몬 약리",
+  "type": "부인과 — 종양·감염·호르몬 약리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-16",
+  "vignette": "A 54-year-old woman comes to the physician because of 2 months of intermittent vaginal bleeding. Her last menstrual period was 3 years ago. She has type 2 diabetes mellitus and hypertension, and her BMI is 36 kg/m². She has never been pregnant. Pelvic examination shows a normal-sized uterus and no adnexal mass. Transvaginal ultrasonography shows an endometrial thickness of 16 mm. Endometrial biopsy shows crowded, back-to-back glands lined by cells with enlarged, rounded nuclei, prominent nucleoli, and loss of polarity; there is no stromal invasion.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Levonorgestrel-releasing intrauterine device with repeat biopsy in 6 months",
+   "Oral megestrol acetate with repeat biopsy in 3 months",
+   "Repeat endometrial biopsy in 6 months without treatment",
+   "Cyclic combined oral contraceptive pills",
+   "Total hysterectomy with bilateral salpingo-oophorectomy"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Crowded glands with nuclear atypia (enlargement, rounding, nucleoli, loss of polarity) and no stromal invasion define atypical endometrial hyperplasia / endometrioid intraepithelial neoplasia. Its importance is the company it keeps: about 40 % of hysterectomy specimens after this biopsy diagnosis already contain endometrioid carcinoma, and a further 25–30 % progress if untreated. For a postmenopausal woman who has completed childbearing, the standard of care is total hysterectomy with bilateral salpingo-oophorectomy, which both treats and fully stages the lesion. Progestin therapy is reserved for women who wish to preserve fertility or who cannot undergo surgery.\n- 원리: Endometrial proliferation is driven by <b>estrogen unopposed by progesterone</b>. After menopause the ovaries stop making progesterone, but adipose tissue keeps converting androstenedione to estrone through <b>aromatase</b>; obesity, diabetes (hyperinsulinemia lowers SHBG and raises free estrogen) and nulliparity therefore supply years of unopposed stimulation. The endometrium responds first with <b>hyperplasia without atypia</b> (glandular crowding, normal nuclei — a reversible hormonal effect, &lt; 5 % cancer risk) and then, once <b>PTEN, KRAS or mismatch-repair mutations</b> arise in a clone, with <b>atypical hyperplasia / EIN</b>: a monoclonal precancer whose cells already look neoplastic (enlarged rounded nuclei, nucleoli, loss of polarity) but have not breached the stroma.<br> <b>Why surgery</b> — the office biopsy samples a fraction of the cavity. In the GOG 167 study, 42.6 % of women with a community diagnosis of atypical hyperplasia had carcinoma in the hysterectomy specimen, a third of it myoinvasive. Hysterectomy therefore removes the precancer, detects a coexisting cancer, and allows staging. Bilateral salpingo-oophorectomy is added in postmenopausal women because the ovaries are a possible site of synchronous tumor and are no longer needed for hormone production. Lymphadenectomy is not done for hyperplasia; if invasive cancer is found, staging can be completed intraoperatively (frozen section) or later.<br> <b>Why progestins are second choice here</b> — high-dose progestin (levonorgestrel IUD or oral megestrol/medroxyprogesterone) induces glandular regression by downregulating estrogen receptors and promoting apoptosis, with regression in roughly 70–90 % of atypical hyperplasia, but it cannot exclude a cancer that is already present, requires biopsies every 3–6 months for years, and relapses in about a quarter of responders. It is the right choice only for women who want to preserve fertility or whose comorbidity makes surgery too dangerous; a 54-year-old diabetic with a BMI of 36 can undergo laparoscopic hysterectomy safely.<br> <b>What the ultrasound added</b> — in a postmenopausal woman with bleeding, an endometrial thickness above 4–5 mm mandates tissue sampling; 16 mm made the biopsy obligatory, but the diagnosis and treatment come from histology, not from thickness.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:38%\">When it is the right choice</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Hysterectomy + BSO (answer)</b></td><td><b>atypical hyperplasia / EIN in a woman who has completed childbearing and is fit for surgery</b></td><td>—</td></tr> <tr><td>Levonorgestrel IUD + biopsy in 6 mo</td><td>atypical hyperplasia when <b>fertility is desired</b> or surgery is contraindicated; first-line for hyperplasia <b>without</b> atypia</td><td>postmenopausal, operable, ~40 % chance cancer is already present</td></tr> <tr><td>Oral megestrol + biopsy in 3 mo</td><td>same indications as the IUD, less effective, more thrombotic/weight side-effects</td><td>same objection, and inferior to the IUD</td></tr> <tr><td>Repeat biopsy in 6 months only</td><td>never for atypia; acceptable surveillance only after regression on progestin</td><td>leaves a precancer/possible cancer untreated</td></tr> <tr><td>Cyclic combined pills</td><td>abnormal bleeding in <b>premenopausal</b> women with no or non-atypical hyperplasia</td><td>adds estrogen, low-dose progestin; contraindicated at 54 with hypertension and diabetes</td></tr> </tbody></table> The <b>closest wrong answer is the levonorgestrel IUD</b>, which is the correct first-line treatment for hyperplasia <b>without</b> atypia and for atypical hyperplasia when the uterus must be kept. The discriminator is the pair <b>'atypia present' + 'childbearing completed'</b>: together they make definitive surgery the standard. Remove either element — a 34-year-old who wants a child, or a biopsy without nuclear atypia — and the IUD becomes the answer.\n- 오답 이유:\n  - (A) The levonorgestrel intrauterine device is the first-line treatment for endometrial hyperplasia without atypia and a fertility-sparing option for atypical hyperplasia, but it cannot exclude the endometrial carcinoma present in about 40 % of such uteri and requires years of repeat sampling. This option would be correct only if the patient wished to preserve fertility or were unfit for surgery.\n  - (B) Oral megestrol acetate achieves regression less reliably than the intrauterine device and carries risks of weight gain and thromboembolism, and like all progestin therapy it leaves a coexisting cancer undetected. This option would be correct only for a woman needing fertility preservation who declined or could not retain an intrauterine device.\n  - (C) Repeating the biopsy in 6 months without treatment would leave a lesion with a 25–30 % progression rate and a high probability of concurrent carcinoma untreated. This option would be correct only as surveillance after documented regression on progestin therapy, never as initial management of atypia.\n  - (D) Cyclic combined oral contraceptives regulate anovulatory bleeding in premenopausal women and can treat hyperplasia without atypia, but they add estrogen, provide only low-dose progestin, and are contraindicated at 54 with hypertension and diabetes. This option would be correct only for a young woman with non-atypical hyperplasia and no cardiovascular risk factors.\n- 함정: Progestins 'treat hyperplasia' — but atypia changes the question from 'how do I reverse this?' to 'is there already a cancer?'. In a postmenopausal woman that question is answered by hysterectomy.\n- 학습목표: 폐경 후 비정형 자궁내막증식증(EIN)에서 동반 자궁내막암 위험(약 40 %)을 근거로 자궁절제술·양측 난관난소절제술을 선택한다\n- 근거·출처: ACOG Committee Opinion No. 631 / SGO: Endometrial Intraepithelial Neoplasia (2015, reaffirmed) — EIN: hysterectomy for women not desiring fertility; progestin therapy for fertility preservation · Trimble CL et al. Concurrent endometrial carcinoma in women with a biopsy diagnosis of atypical endometrial hyperplasia: a GOG study (Cancer 2006) — 42.6 % concurrent carcinoma · Kurman RJ et al. The behavior of endometrial hyperplasia: a long-term study of 'untreated' hyperplasia (Cancer 1985) — progression rates by atypia · Williams Gynecology — endometrial hyperplasia: classification (WHO 2014/2020), unopposed estrogen and risk factors, management",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Crowded glands with nuclear atypia (enlargement, rounding, nucleoli, loss of polarity) and no stromal invasion define atypical endometrial hyperplasia / endometrioid intraepithelial neoplasia. Its importance is the company it keeps: about 40 % of hysterectomy specimens after this biopsy diagnosis already contain endometrioid carcinoma, and a further 25–30 % progress if untreated. For a postmenopausal woman who has completed childbearing, the standard of care is total hysterectomy with bilateral salpingo-oophorectomy, which both treats and fully stages the lesion. Progestin therapy is reserved for women who wish to preserve fertility or who cannot undergo surgery."
+   },
+   {
+    "k": "원리",
+    "v": "Endometrial proliferation is driven by <b>estrogen unopposed by progesterone</b>. After menopause the ovaries stop making progesterone, but adipose tissue keeps converting androstenedione to estrone through <b>aromatase</b>; obesity, diabetes (hyperinsulinemia lowers SHBG and raises free estrogen) and nulliparity therefore supply years of unopposed stimulation. The endometrium responds first with <b>hyperplasia without atypia</b> (glandular crowding, normal nuclei — a reversible hormonal effect, &lt; 5 % cancer risk) and then, once <b>PTEN, KRAS or mismatch-repair mutations</b> arise in a clone, with <b>atypical hyperplasia / EIN</b>: a monoclonal precancer whose cells already look neoplastic (enlarged rounded nuclei, nucleoli, loss of polarity) but have not breached the stroma.<br> <b>Why surgery</b> — the office biopsy samples a fraction of the cavity. In the GOG 167 study, 42.6 % of women with a community diagnosis of atypical hyperplasia had carcinoma in the hysterectomy specimen, a third of it myoinvasive. Hysterectomy therefore removes the precancer, detects a coexisting cancer, and allows staging. Bilateral salpingo-oophorectomy is added in postmenopausal women because the ovaries are a possible site of synchronous tumor and are no longer needed for hormone production. Lymphadenectomy is not done for hyperplasia; if invasive cancer is found, staging can be completed intraoperatively (frozen section) or later.<br> <b>Why progestins are second choice here</b> — high-dose progestin (levonorgestrel IUD or oral megestrol/medroxyprogesterone) induces glandular regression by downregulating estrogen receptors and promoting apoptosis, with regression in roughly 70–90 % of atypical hyperplasia, but it cannot exclude a cancer that is already present, requires biopsies every 3–6 months for years, and relapses in about a quarter of responders. It is the right choice only for women who want to preserve fertility or whose comorbidity makes surgery too dangerous; a 54-year-old diabetic with a BMI of 36 can undergo laparoscopic hysterectomy safely.<br> <b>What the ultrasound added</b> — in a postmenopausal woman with bleeding, an endometrial thickness above 4–5 mm mandates tissue sampling; 16 mm made the biopsy obligatory, but the diagnosis and treatment come from histology, not from thickness."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:38%\">When it is the right choice</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Hysterectomy + BSO (answer)</b></td><td><b>atypical hyperplasia / EIN in a woman who has completed childbearing and is fit for surgery</b></td><td>—</td></tr> <tr><td>Levonorgestrel IUD + biopsy in 6 mo</td><td>atypical hyperplasia when <b>fertility is desired</b> or surgery is contraindicated; first-line for hyperplasia <b>without</b> atypia</td><td>postmenopausal, operable, ~40 % chance cancer is already present</td></tr> <tr><td>Oral megestrol + biopsy in 3 mo</td><td>same indications as the IUD, less effective, more thrombotic/weight side-effects</td><td>same objection, and inferior to the IUD</td></tr> <tr><td>Repeat biopsy in 6 months only</td><td>never for atypia; acceptable surveillance only after regression on progestin</td><td>leaves a precancer/possible cancer untreated</td></tr> <tr><td>Cyclic combined pills</td><td>abnormal bleeding in <b>premenopausal</b> women with no or non-atypical hyperplasia</td><td>adds estrogen, low-dose progestin; contraindicated at 54 with hypertension and diabetes</td></tr> </tbody></table> The <b>closest wrong answer is the levonorgestrel IUD</b>, which is the correct first-line treatment for hyperplasia <b>without</b> atypia and for atypical hyperplasia when the uterus must be kept. The discriminator is the pair <b>'atypia present' + 'childbearing completed'</b>: together they make definitive surgery the standard. Remove either element — a 34-year-old who wants a child, or a biopsy without nuclear atypia — and the IUD becomes the answer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The levonorgestrel intrauterine device is the first-line treatment for endometrial hyperplasia without atypia and a fertility-sparing option for atypical hyperplasia, but it cannot exclude the endometrial carcinoma present in about 40 % of such uteri and requires years of repeat sampling. This option would be correct only if the patient wished to preserve fertility or were unfit for surgery.\n(B) Oral megestrol acetate achieves regression less reliably than the intrauterine device and carries risks of weight gain and thromboembolism, and like all progestin therapy it leaves a coexisting cancer undetected. This option would be correct only for a woman needing fertility preservation who declined or could not retain an intrauterine device.\n(C) Repeating the biopsy in 6 months without treatment would leave a lesion with a 25–30 % progression rate and a high probability of concurrent carcinoma untreated. This option would be correct only as surveillance after documented regression on progestin therapy, never as initial management of atypia.\n(D) Cyclic combined oral contraceptives regulate anovulatory bleeding in premenopausal women and can treat hyperplasia without atypia, but they add estrogen, provide only low-dose progestin, and are contraindicated at 54 with hypertension and diabetes. This option would be correct only for a young woman with non-atypical hyperplasia and no cardiovascular risk factors."
+   },
+   {
+    "k": "함정",
+    "v": "Progestins 'treat hyperplasia' — but atypia changes the question from 'how do I reverse this?' to 'is there already a cancer?'. In a postmenopausal woman that question is answered by hysterectomy."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐경 후 비정형 자궁내막증식증(EIN)에서 동반 자궁내막암 위험(약 40 %)을 근거로 자궁절제술·양측 난관난소절제술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Committee Opinion No. 631 / SGO: Endometrial Intraepithelial Neoplasia (2015, reaffirmed) — EIN: hysterectomy for women not desiring fertility; progestin therapy for fertility preservation · Trimble CL et al. Concurrent endometrial carcinoma in women with a biopsy diagnosis of atypical endometrial hyperplasia: a GOG study (Cancer 2006) — 42.6 % concurrent carcinoma · Kurman RJ et al. The behavior of endometrial hyperplasia: a long-term study of 'untreated' hyperplasia (Cancer 1985) — progression rates by atypia · Williams Gynecology — endometrial hyperplasia: classification (WHO 2014/2020), unopposed estrogen and risk factors, management"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0042",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "부인과 — 종양·감염·호르몬 약리",
+  "type": "부인과 — 종양·감염·호르몬 약리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-16",
+  "vignette": "A 36-year-old woman comes to the physician to discuss contraception. She has two children and does not want another pregnancy for at least 3 years. She smokes 20 cigarettes daily and has had migraine without aura for 5 years. She has no history of venous thromboembolism. Blood pressure is 124/78 mm Hg, and pelvic examination is normal. She would prefer a method she does not have to remember every day and is reluctant to have injections.",
+  "question": "Which of the following is the most appropriate contraceptive method for this patient?",
+  "options": [
+   "Combined estrogen-progestin vaginal ring",
+   "Low-dose combined oral contraceptive pill",
+   "Depot medroxyprogesterone acetate injection every 3 months",
+   "Levonorgestrel-releasing intrauterine device",
+   "Combined estrogen-progestin transdermal patch"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A woman aged 35 or older who smokes 15 or more cigarettes a day is in US MEC category 4 for every estrogen-containing method (pill, patch, ring) because estrogen and smoking multiply the risk of myocardial infarction and stroke. Migraine without aura at age 35 or older is an additional category 3 for estrogen. Progestin-only and non-hormonal methods carry no such restriction. She wants a long-acting method and dislikes injections, so the levonorgestrel intrauterine device — category 1 for smokers and migraine, effective for up to 8 years, failure rate under 1 % — is the most appropriate choice.\n- 원리: Contraceptive choice starts from <b>safety</b> (the US Medical Eligibility Criteria, categories 1–4) and only then from efficacy and preference. <b>Category 4</b> means the health risk is unacceptable; <b>category 3</b> means risks usually outweigh benefits.<br> <b>Why estrogen and smoking do not mix</b> — ethinyl estradiol increases hepatic synthesis of clotting factors (II, VII, VIII, X, fibrinogen) and lowers antithrombin and protein S, shifting hemostasis toward thrombosis. Smoking damages the endothelium, raises fibrinogen and platelet reactivity, and promotes atherosclerosis. Together the arterial risk is multiplicative: in women over 35 who smoke ≥ 15 cigarettes a day, combined hormonal contraception raises myocardial infarction and ischemic stroke risk enough that the MEC assigns <b>category 4</b> (category 3 for &lt; 15 cigarettes). The <b>route does not matter</b> — the patch and ring deliver the same ethinyl estradiol systemically (the patch even gives higher total exposure), so they share the pill's category.<br> <b>Why migraine matters</b> — migraine <i>with aura</i> is category 4 for estrogen at any age because aura marks a cortical vascular vulnerability and the stroke risk is roughly doubled again by estrogen. Migraine <i>without</i> aura is category 2 under 35 and <b>category 3 at ≥ 35</b>; here it adds to, but does not by itself decide, the exclusion.<br> <b>Why the levonorgestrel IUD</b> — progestins alone do not raise arterial risk in the MEC (category 1 for smoking and for migraine without aura). The device releases levonorgestrel locally: it thickens cervical mucus, thins the endometrium and partly suppresses ovulation, with typical-use failure ≈ 0.1–0.4 %/year and licensed duration of up to 8 years. It is 'forgettable', reversible on removal, and reduces menstrual blood loss. The copper IUD would be an equally safe alternative but increases menstrual bleeding; the implant is another category-1 option. Depot medroxyprogesterone is safe (category 1 for smoking) but requires injections every 3 months, which she wants to avoid, and causes bone-density loss and delayed return of fertility.\n- 비교: <table><thead><tr><th style=\"width:32%\">Method</th><th style=\"width:34%\">US MEC for this patient</th><th>Fit with her preferences</th></tr></thead><tbody> <tr><td><b>Levonorgestrel IUD (answer)</b></td><td><b>Category 1</b> (smoking, migraine without aura)</td><td>long-acting, no daily action, no injections</td></tr> <tr><td>Combined patch</td><td><b>Category 4</b> — age ≥ 35 + ≥ 15 cigarettes/day</td><td>weekly, but unsafe</td></tr> <tr><td>Combined vaginal ring</td><td><b>Category 4</b> — same estrogen exposure</td><td>monthly, but unsafe</td></tr> <tr><td>Combined oral pill</td><td><b>Category 4</b></td><td>daily — she does not want this</td></tr> <tr><td>DMPA injection</td><td>Category 1 (safe)</td><td>injections every 3 months — she is reluctant; bone loss</td></tr> </tbody></table> The <b>closest wrong answer is depot medroxyprogesterone</b>: it is medically safe here, so the decision comes down to <b>preference and side-effect profile</b> — she rejects injections, and the IUD is more effective and reversible. The patch and ring are the classic traps because they feel 'different' from the pill; the discriminator is that <b>category 4 attaches to the estrogen, not to the route</b>. If she were 30 years old or smoked fewer than 15 cigarettes, the combined methods would drop to category 2–3 and a weekly patch could become a reasonable non-daily option.\n- 오답 이유:\n  - (A) The vaginal ring releases ethinyl estradiol and etonogestrel and shares the arterial and venous risk of all combined hormonal methods; it is category 4 in this smoker over 35. This option would be correct only if she had no estrogen contraindication and preferred a monthly self-inserted method.\n  - (B) A low-dose combined pill is category 4 here because of age plus heavy smoking, and category 3 because of migraine without aura at 35 or older; it also requires daily adherence she wishes to avoid. This option would be correct only for a non-smoking woman without migraine who preferred a daily pill.\n  - (C) Depot medroxyprogesterone acetate is medically safe in smokers (category 1) but requires an injection every 3 months, which she wants to avoid, and causes reversible bone-density loss and a delay of up to a year in return of fertility. This option would be correct only if she accepted injections and an intrauterine device or implant were unsuitable or refused.\n  - (E) The transdermal patch delivers ethinyl estradiol systemically, at exposure equal to or higher than the pill, and carries the same US MEC category 4 for a woman aged 35 or older who smokes 15 or more cigarettes a day. This option would be correct only if she were under 35 or a non-smoker and wanted a weekly method.\n- 함정: Route is not the issue — the patch and ring are 'estrogen by another door'. Age ≥ 35 plus ≥ 15 cigarettes a day rules out all combined hormonal methods, so the choice is among progestin-only and non-hormonal methods.\n- 학습목표: 35세 이상 하루 15개비 이상 흡연(US MEC 4)에서 에스트로겐 함유 피임법을 배제하고 프로게스틴 단독 장기 가역 피임을 선택한다\n- 근거·출처: Curtis KM et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024 (CDC, MMWR Recomm Rep 2024) — combined hormonal contraception: age ≥ 35 and smoking ≥ 15 cigarettes/day = category 4; migraine without aura ≥ 35 = category 3; LNG-IUD category 1 · ACOG Practice Bulletin No. 186: Long-Acting Reversible Contraception: Implants and Intrauterine Devices (2017, reaffirmed) — efficacy and duration of the LNG-IUD · Williams Gynecology — contraception: estrogen, thrombosis and arterial risk; progestin-only methods",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A woman aged 35 or older who smokes 15 or more cigarettes a day is in US MEC category 4 for every estrogen-containing method (pill, patch, ring) because estrogen and smoking multiply the risk of myocardial infarction and stroke. Migraine without aura at age 35 or older is an additional category 3 for estrogen. Progestin-only and non-hormonal methods carry no such restriction. She wants a long-acting method and dislikes injections, so the levonorgestrel intrauterine device — category 1 for smokers and migraine, effective for up to 8 years, failure rate under 1 % — is the most appropriate choice."
+   },
+   {
+    "k": "원리",
+    "v": "Contraceptive choice starts from <b>safety</b> (the US Medical Eligibility Criteria, categories 1–4) and only then from efficacy and preference. <b>Category 4</b> means the health risk is unacceptable; <b>category 3</b> means risks usually outweigh benefits.<br> <b>Why estrogen and smoking do not mix</b> — ethinyl estradiol increases hepatic synthesis of clotting factors (II, VII, VIII, X, fibrinogen) and lowers antithrombin and protein S, shifting hemostasis toward thrombosis. Smoking damages the endothelium, raises fibrinogen and platelet reactivity, and promotes atherosclerosis. Together the arterial risk is multiplicative: in women over 35 who smoke ≥ 15 cigarettes a day, combined hormonal contraception raises myocardial infarction and ischemic stroke risk enough that the MEC assigns <b>category 4</b> (category 3 for &lt; 15 cigarettes). The <b>route does not matter</b> — the patch and ring deliver the same ethinyl estradiol systemically (the patch even gives higher total exposure), so they share the pill's category.<br> <b>Why migraine matters</b> — migraine <i>with aura</i> is category 4 for estrogen at any age because aura marks a cortical vascular vulnerability and the stroke risk is roughly doubled again by estrogen. Migraine <i>without</i> aura is category 2 under 35 and <b>category 3 at ≥ 35</b>; here it adds to, but does not by itself decide, the exclusion.<br> <b>Why the levonorgestrel IUD</b> — progestins alone do not raise arterial risk in the MEC (category 1 for smoking and for migraine without aura). The device releases levonorgestrel locally: it thickens cervical mucus, thins the endometrium and partly suppresses ovulation, with typical-use failure ≈ 0.1–0.4 %/year and licensed duration of up to 8 years. It is 'forgettable', reversible on removal, and reduces menstrual blood loss. The copper IUD would be an equally safe alternative but increases menstrual bleeding; the implant is another category-1 option. Depot medroxyprogesterone is safe (category 1 for smoking) but requires injections every 3 months, which she wants to avoid, and causes bone-density loss and delayed return of fertility."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Method</th><th style=\"width:34%\">US MEC for this patient</th><th>Fit with her preferences</th></tr></thead><tbody> <tr><td><b>Levonorgestrel IUD (answer)</b></td><td><b>Category 1</b> (smoking, migraine without aura)</td><td>long-acting, no daily action, no injections</td></tr> <tr><td>Combined patch</td><td><b>Category 4</b> — age ≥ 35 + ≥ 15 cigarettes/day</td><td>weekly, but unsafe</td></tr> <tr><td>Combined vaginal ring</td><td><b>Category 4</b> — same estrogen exposure</td><td>monthly, but unsafe</td></tr> <tr><td>Combined oral pill</td><td><b>Category 4</b></td><td>daily — she does not want this</td></tr> <tr><td>DMPA injection</td><td>Category 1 (safe)</td><td>injections every 3 months — she is reluctant; bone loss</td></tr> </tbody></table> The <b>closest wrong answer is depot medroxyprogesterone</b>: it is medically safe here, so the decision comes down to <b>preference and side-effect profile</b> — she rejects injections, and the IUD is more effective and reversible. The patch and ring are the classic traps because they feel 'different' from the pill; the discriminator is that <b>category 4 attaches to the estrogen, not to the route</b>. If she were 30 years old or smoked fewer than 15 cigarettes, the combined methods would drop to category 2–3 and a weekly patch could become a reasonable non-daily option."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The vaginal ring releases ethinyl estradiol and etonogestrel and shares the arterial and venous risk of all combined hormonal methods; it is category 4 in this smoker over 35. This option would be correct only if she had no estrogen contraindication and preferred a monthly self-inserted method.\n(B) A low-dose combined pill is category 4 here because of age plus heavy smoking, and category 3 because of migraine without aura at 35 or older; it also requires daily adherence she wishes to avoid. This option would be correct only for a non-smoking woman without migraine who preferred a daily pill.\n(C) Depot medroxyprogesterone acetate is medically safe in smokers (category 1) but requires an injection every 3 months, which she wants to avoid, and causes reversible bone-density loss and a delay of up to a year in return of fertility. This option would be correct only if she accepted injections and an intrauterine device or implant were unsuitable or refused.\n(E) The transdermal patch delivers ethinyl estradiol systemically, at exposure equal to or higher than the pill, and carries the same US MEC category 4 for a woman aged 35 or older who smokes 15 or more cigarettes a day. This option would be correct only if she were under 35 or a non-smoker and wanted a weekly method."
+   },
+   {
+    "k": "함정",
+    "v": "Route is not the issue — the patch and ring are 'estrogen by another door'. Age ≥ 35 plus ≥ 15 cigarettes a day rules out all combined hormonal methods, so the choice is among progestin-only and non-hormonal methods."
+   },
+   {
+    "k": "학습목표",
+    "v": "35세 이상 하루 15개비 이상 흡연(US MEC 4)에서 에스트로겐 함유 피임법을 배제하고 프로게스틴 단독 장기 가역 피임을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Curtis KM et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024 (CDC, MMWR Recomm Rep 2024) — combined hormonal contraception: age ≥ 35 and smoking ≥ 15 cigarettes/day = category 4; migraine without aura ≥ 35 = category 3; LNG-IUD category 1 · ACOG Practice Bulletin No. 186: Long-Acting Reversible Contraception: Implants and Intrauterine Devices (2017, reaffirmed) — efficacy and duration of the LNG-IUD · Williams Gynecology — contraception: estrogen, thrombosis and arterial risk; progestin-only methods"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0041",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "부인과 — 종양·감염·호르몬 약리",
+  "type": "부인과 — 종양·감염·호르몬 약리",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-16",
+  "vignette": "23세 여자가 3일 전부터 아랫배 통증과 누런 질 분비물이 있어 병원에 왔다. 마지막 월경은 10일 전이었고 성 파트너가 여럿이며 콘돔을 쓰지 않는다. 체온 37.8 ℃, 혈압 118/72 mmHg, 맥박 분당 92회다. 진찰에서 자궁경부 움직임 압통과 양쪽 자궁부속기 압통이 있고 반동압통은 없으며 구역·구토 없이 경구 섭취가 가능하다. 소변 임신반응 음성, 백혈구 12,800/μL, 골반 초음파에서 부속기 종괴는 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "세프트리악손 근육주사 1회와 독시사이클린·메트로니다졸 경구 14일",
+   "아지트로마이신 1 g 단회 경구 투여",
+   "메트로니다졸 단독 경구 7일",
+   "입원하여 정맥 항생제 투여와 진단 복강경검사",
+   "니트로푸란토인 경구 5일"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 성적으로 활발한 젊은 여자의 하복부 통증에 자궁경부 움직임 압통 또는 자궁·부속기 압통이 있으면 다른 원인이 없는 한 골반염으로 보고 즉시 경험적 치료를 시작한다(최소 기준). 체온 상승, 점액농성 분비물, 백혈구 증가가 이를 뒷받침한다. 임신이 아니고 구토 없이 경구 복용이 가능하며 난관난소농양이 없고 전신 상태가 좋으므로 외래 치료 대상이다. CDC 2021 권고 외래 요법은 세프트리악손 500 mg 근육주사 1회 + 독시사이클린 100 mg 하루 2회 14일 + 메트로니다졸 500 mg 하루 2회 14일이다.\n- 원리: 골반염은 <b>자궁경부의 임균·클라미디아 감염이 상행</b>해 자궁내막·난관·복막으로 번진 <b>다균성 감염</b>이다. 상행 과정에서 질의 혐기균·<i>Mycoplasma genitalium</i>·장내세균이 합류하므로 원인균을 확인하기 전에 <b>세 군을 동시에 덮는</b> 경험적 조합이 필요하다: <b>세프트리악손</b>(3세대 세팔로스포린 — 임균, 페니실린 내성 포함) + <b>독시사이클린</b>(테트라사이클린 — 클라미디아·마이코플라스마) + <b>메트로니다졸</b>(니트로이미다졸 — 혐기균, 동반 세균질증). 2021년 CDC 개정에서 메트로니다졸이 선택이 아니라 <b>기본 포함</b>으로 바뀐 이유는 혐기균 배제 시 치료 실패와 난관 손상이 더 많다는 근거 때문이다.<br> <b>왜 진단 문턱이 낮은가</b> — 골반염의 진짜 위해는 급성기가 아니라 <b>난관 상피 파괴 후유증</b>(불임 12~15 %/회, 자궁외임신 6~10배, 만성 골반통)이다. 증상이 가벼워도 난관 손상은 진행되므로, 치료를 미루는 비용이 과잉치료 비용보다 크다. 그래서 「자궁경부 움직임 압통·자궁 압통·부속기 압통 중 하나」만으로 치료를 시작하고, 발열 &gt; 38.3 ℃, 점액농성 분비물, 백혈구 증가, ESR/CRP 상승, 임균·클라미디아 양성은 <b>특이도를 높이는 추가 기준</b>일 뿐 필수 조건이 아니다.<br> <b>입원 기준</b>(하나라도 있으면) — 임신, 수술적 응급(충수염) 배제 불가, 난관난소농양, 고열·구토로 경구 치료 불가, 외래 치료 72시간 무반응. 이 환자는 어느 것도 없다.<br> <b>치료 뒤</b> — 72시간 안에 재평가해 호전이 없으면 입원하고, 최근 60일 안의 파트너를 함께 치료하며(재감염 방지), 임균·클라미디아 양성이면 3개월 뒤 재검사한다. 독시사이클린은 임신부에게 금기이므로 임신이면 입원해 세포탁심/세프트리악손 + 아지트로마이신 계열로 바꾼다.\n- 비교: <table><thead><tr><th style=\"width:30%\">요법</th><th style=\"width:38%\">덮는 병원체 / 맞는 상황</th><th>이 환자에게</th></tr></thead><tbody> <tr><td><b>세프트리악손 + 독시사이클린 + 메트로니다졸(정답)</b></td><td><b>임균 + 클라미디아 + 혐기균 — 외래 골반염 표준</b></td><td>외래 기준 충족</td></tr> <tr><td>아지트로마이신 1 g 단회</td><td>합병증 없는 <b>자궁경부 클라미디아</b>(독시사이클린 대안)</td><td>상행 감염에는 기간·범위 모두 부족</td></tr> <tr><td>메트로니다졸 단독 7일</td><td><b>세균질증·트리코모나스</b></td><td>임균·클라미디아를 못 덮음</td></tr> <tr><td>입원 정맥 항생제 + 복강경</td><td>난관난소농양, 임신, 구토, 고열, 외래 실패, 진단 불확실</td><td>해당 없음 — 복강경은 진단 확정용이지 1차가 아님</td></tr> <tr><td>니트로푸란토인 5일</td><td>합병증 없는 <b>방광염</b></td><td>골반 진찰 소견을 설명하지 못함</td></tr> </tbody></table> <b>가장 가까운 오답은 「입원·정맥 항생제」</b> — 열과 백혈구 증가를 보면 입원이 안전해 보인다. 갈림길은 <b>입원 기준</b>이다: 농양·임신·구토·고열·외래 실패가 없으면 외래에서 시작하고 72시간 뒤 재평가한다. 반대로 초음파에 부속기 종괴(농양)가 있거나 임신반응이 양성이면 답은 입원 정맥 요법(세프트리악손 + 독시사이클린 + 메트로니다졸 정맥 또는 세포테탄 + 독시사이클린)으로 바뀐다.\n- 오답 이유:\n  - ② 아지트로마이신 1 g 단회는 합병증 없는 자궁경부 클라미디아 감염의 대안 요법이다. 상행해 자궁·난관까지 침범한 골반염에는 임균과 혐기균을 덮지 못하고 14일의 치료 기간도 채우지 못한다. 이 선지가 정답이 되려면 골반 압통 없이 자궁경부 클라미디아만 확인된 상황이어야 한다.\n  - ③ 메트로니다졸 단독은 세균질증이나 트리코모나스 질염의 치료다. 골반염의 주 원인인 임균·클라미디아에 활성이 없어 단독으로 쓰면 난관 손상이 진행한다. 이 선지가 정답이 되려면 골반 압통 없이 생선 냄새 분비물과 clue cell 만 있는 세균질증이어야 한다.\n  - ④ 입원해 정맥 항생제를 주고 진단 복강경을 하는 것은 난관난소농양, 임신, 구토로 경구 복용 불가, 고열, 외래 치료 72시간 무반응 또는 충수염 배제가 안 될 때다. 이 환자는 어느 기준도 없고 복강경은 1차 진단 도구가 아니다. 이 선지가 정답이 되려면 초음파에서 부속기 종괴가 보이거나 구토로 약을 못 먹어야 한다.\n  - ⑤ 니트로푸란토인 5일은 합병증 없는 급성 방광염의 1차 치료다. 배뇨통·빈뇨 없이 자궁경부 움직임 압통과 부속기 압통이 있는 하복부 통증은 방광염으로 설명되지 않는다. 이 선지가 정답이 되려면 골반 진찰이 정상이고 소변검사에서 농뇨·세균뇨가 있어야 한다.\n- 함정: 「확진 검사 결과를 기다린 뒤 치료」가 함정이다. 골반염은 후유증(불임·자궁외임신)이 큰 병이라 진찰 소견만으로 바로 경험적 3제 요법을 시작한다.\n- 학습목표: 자궁경부 움직임 압통과 부속기 압통으로 골반염을 진단하고 외래 경험적 항생제(세프트리악손 + 독시사이클린 + 메트로니다졸)를 고른다\n- 근거·출처: Workowski KA et al. Sexually Transmitted Infections Treatment Guidelines, 2021 (CDC, MMWR Recomm Rep 2021) — PID: diagnostic criteria, outpatient regimen (ceftriaxone 500 mg IM + doxycycline 100 mg bid × 14 d + metronidazole 500 mg bid × 14 d), hospitalization criteria · Williams Gynecology — pelvic inflammatory disease: pathogenesis, sequelae, treatment · 대한산부인과학회 부인과학 — 골반염증질환 진단 기준과 치료",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "성적으로 활발한 젊은 여자의 하복부 통증에 자궁경부 움직임 압통 또는 자궁·부속기 압통이 있으면 다른 원인이 없는 한 골반염으로 보고 즉시 경험적 치료를 시작한다(최소 기준). 체온 상승, 점액농성 분비물, 백혈구 증가가 이를 뒷받침한다. 임신이 아니고 구토 없이 경구 복용이 가능하며 난관난소농양이 없고 전신 상태가 좋으므로 외래 치료 대상이다. CDC 2021 권고 외래 요법은 세프트리악손 500 mg 근육주사 1회 + 독시사이클린 100 mg 하루 2회 14일 + 메트로니다졸 500 mg 하루 2회 14일이다."
+   },
+   {
+    "k": "원리",
+    "v": "골반염은 <b>자궁경부의 임균·클라미디아 감염이 상행</b>해 자궁내막·난관·복막으로 번진 <b>다균성 감염</b>이다. 상행 과정에서 질의 혐기균·<i>Mycoplasma genitalium</i>·장내세균이 합류하므로 원인균을 확인하기 전에 <b>세 군을 동시에 덮는</b> 경험적 조합이 필요하다: <b>세프트리악손</b>(3세대 세팔로스포린 — 임균, 페니실린 내성 포함) + <b>독시사이클린</b>(테트라사이클린 — 클라미디아·마이코플라스마) + <b>메트로니다졸</b>(니트로이미다졸 — 혐기균, 동반 세균질증). 2021년 CDC 개정에서 메트로니다졸이 선택이 아니라 <b>기본 포함</b>으로 바뀐 이유는 혐기균 배제 시 치료 실패와 난관 손상이 더 많다는 근거 때문이다.<br> <b>왜 진단 문턱이 낮은가</b> — 골반염의 진짜 위해는 급성기가 아니라 <b>난관 상피 파괴 후유증</b>(불임 12~15 %/회, 자궁외임신 6~10배, 만성 골반통)이다. 증상이 가벼워도 난관 손상은 진행되므로, 치료를 미루는 비용이 과잉치료 비용보다 크다. 그래서 「자궁경부 움직임 압통·자궁 압통·부속기 압통 중 하나」만으로 치료를 시작하고, 발열 &gt; 38.3 ℃, 점액농성 분비물, 백혈구 증가, ESR/CRP 상승, 임균·클라미디아 양성은 <b>특이도를 높이는 추가 기준</b>일 뿐 필수 조건이 아니다.<br> <b>입원 기준</b>(하나라도 있으면) — 임신, 수술적 응급(충수염) 배제 불가, 난관난소농양, 고열·구토로 경구 치료 불가, 외래 치료 72시간 무반응. 이 환자는 어느 것도 없다.<br> <b>치료 뒤</b> — 72시간 안에 재평가해 호전이 없으면 입원하고, 최근 60일 안의 파트너를 함께 치료하며(재감염 방지), 임균·클라미디아 양성이면 3개월 뒤 재검사한다. 독시사이클린은 임신부에게 금기이므로 임신이면 입원해 세포탁심/세프트리악손 + 아지트로마이신 계열로 바꾼다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">요법</th><th style=\"width:38%\">덮는 병원체 / 맞는 상황</th><th>이 환자에게</th></tr></thead><tbody> <tr><td><b>세프트리악손 + 독시사이클린 + 메트로니다졸(정답)</b></td><td><b>임균 + 클라미디아 + 혐기균 — 외래 골반염 표준</b></td><td>외래 기준 충족</td></tr> <tr><td>아지트로마이신 1 g 단회</td><td>합병증 없는 <b>자궁경부 클라미디아</b>(독시사이클린 대안)</td><td>상행 감염에는 기간·범위 모두 부족</td></tr> <tr><td>메트로니다졸 단독 7일</td><td><b>세균질증·트리코모나스</b></td><td>임균·클라미디아를 못 덮음</td></tr> <tr><td>입원 정맥 항생제 + 복강경</td><td>난관난소농양, 임신, 구토, 고열, 외래 실패, 진단 불확실</td><td>해당 없음 — 복강경은 진단 확정용이지 1차가 아님</td></tr> <tr><td>니트로푸란토인 5일</td><td>합병증 없는 <b>방광염</b></td><td>골반 진찰 소견을 설명하지 못함</td></tr> </tbody></table> <b>가장 가까운 오답은 「입원·정맥 항생제」</b> — 열과 백혈구 증가를 보면 입원이 안전해 보인다. 갈림길은 <b>입원 기준</b>이다: 농양·임신·구토·고열·외래 실패가 없으면 외래에서 시작하고 72시간 뒤 재평가한다. 반대로 초음파에 부속기 종괴(농양)가 있거나 임신반응이 양성이면 답은 입원 정맥 요법(세프트리악손 + 독시사이클린 + 메트로니다졸 정맥 또는 세포테탄 + 독시사이클린)으로 바뀐다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 아지트로마이신 1 g 단회는 합병증 없는 자궁경부 클라미디아 감염의 대안 요법이다. 상행해 자궁·난관까지 침범한 골반염에는 임균과 혐기균을 덮지 못하고 14일의 치료 기간도 채우지 못한다. 이 선지가 정답이 되려면 골반 압통 없이 자궁경부 클라미디아만 확인된 상황이어야 한다.\n③ 메트로니다졸 단독은 세균질증이나 트리코모나스 질염의 치료다. 골반염의 주 원인인 임균·클라미디아에 활성이 없어 단독으로 쓰면 난관 손상이 진행한다. 이 선지가 정답이 되려면 골반 압통 없이 생선 냄새 분비물과 clue cell 만 있는 세균질증이어야 한다.\n④ 입원해 정맥 항생제를 주고 진단 복강경을 하는 것은 난관난소농양, 임신, 구토로 경구 복용 불가, 고열, 외래 치료 72시간 무반응 또는 충수염 배제가 안 될 때다. 이 환자는 어느 기준도 없고 복강경은 1차 진단 도구가 아니다. 이 선지가 정답이 되려면 초음파에서 부속기 종괴가 보이거나 구토로 약을 못 먹어야 한다.\n⑤ 니트로푸란토인 5일은 합병증 없는 급성 방광염의 1차 치료다. 배뇨통·빈뇨 없이 자궁경부 움직임 압통과 부속기 압통이 있는 하복부 통증은 방광염으로 설명되지 않는다. 이 선지가 정답이 되려면 골반 진찰이 정상이고 소변검사에서 농뇨·세균뇨가 있어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「확진 검사 결과를 기다린 뒤 치료」가 함정이다. 골반염은 후유증(불임·자궁외임신)이 큰 병이라 진찰 소견만으로 바로 경험적 3제 요법을 시작한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부 움직임 압통과 부속기 압통으로 골반염을 진단하고 외래 경험적 항생제(세프트리악손 + 독시사이클린 + 메트로니다졸)를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA et al. Sexually Transmitted Infections Treatment Guidelines, 2021 (CDC, MMWR Recomm Rep 2021) — PID: diagnostic criteria, outpatient regimen (ceftriaxone 500 mg IM + doxycycline 100 mg bid × 14 d + metronidazole 500 mg bid × 14 d), hospitalization criteria · Williams Gynecology — pelvic inflammatory disease: pathogenesis, sequelae, treatment · 대한산부인과학회 부인과학 — 골반염증질환 진단 기준과 치료"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0040",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·비뇨의학·심전도·응급)",
+  "subtopic": "부인과 — 종양·감염·호르몬 약리",
+  "type": "부인과 — 종양·감염·호르몬 약리",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-16",
+  "vignette": "24세 여자가 완전 포상기태로 흡입소파술을 받은 뒤 혈청 사람융모생식샘자극호르몬(hCG)을 매주 추적하고 있다. 수술 직후 hCG 는 210,000 IU/L 였고 3주째 9,800, 4주째 9,500, 5주째 9,900, 6주째 10,400 IU/L 로 3주 넘게 정체한 뒤 올랐다. 질출혈은 없고 골반 초음파에서 자궁은 정상 크기이며 부속기 종괴가 없다. 흉부 X선과 간·콩팥 기능은 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "메토트렉세이트 단일제 항암화학요법",
+   "EMA-CO 복합 항암화학요법",
+   "자궁절제술",
+   "재흡입소파술",
+   "hCG 주간 추적관찰 지속"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 포상기태 후 hCG 가 3주(4회 측정) 이상 정체(±10 % 이내)하거나 2주(3회) 이상 상승하면 FIGO 기준으로 임신성 융모성 종양(GTN)이다. 병기는 자궁에 국한된 I기이고, WHO 예후점수는 나이 < 40세 0점, 선행 임신 포상기태 0점, 간격 < 4개월 0점, 치료 전 hCG 10,400 IU/L(10⁴~10⁵) 4점, 종양 크기·전이 없음 0점, 이전 항암 없음 0점으로 합 4점(≤ 6점, 저위험)이다. 저위험 GTN 의 표준 치료는 메토트렉세이트 또는 액티노마이신 D 단일제 항암요법이며 완치율이 거의 100 % 다.\n- 원리: 임신성 융모성 종양은 <b>영양막세포가 hCG 를 만든다</b>는 성질 때문에 조직검사 없이 <b>혈청 hCG 곡선만으로 진단</b>하는 유일한 악성 질환이다. 포상기태를 비우면 남은 영양막은 보통 8~12주 안에 사라져 hCG 가 정상화된다. 곡선이 <b>정체(3주 이상, 4회 값이 ±10 % 안)</b>하거나 <b>상승(2주 이상, 3회 값이 10 % 넘게 증가)</b>하면 영양막이 자율적으로 증식한다는 뜻이고, 그것이 침윤성 기태든 융모막암이든 치료 결정은 같다 — 병기와 점수가 정한다.<br> <b>왜 WHO 점수인가</b> — 예후 인자 8개(나이, 선행 임신, 간격, 치료 전 hCG, 최대 종양 크기, 전이 부위, 전이 수, 이전 항암 실패)를 0·1·2·4점으로 매겨 합이 <b>≤ 6점이면 저위험</b>, ≥ 7점이면 고위험이다. 점수는 <b>단일제 항암에 내성을 보일 확률</b>을 예측하는 도구라서, 저위험은 독성이 적은 <b>메토트렉세이트(엽산 길항제) 또는 액티노마이신 D 단일제</b>로 시작하고, 고위험은 처음부터 <b>EMA-CO</b>(에토포시드·메토트렉세이트·액티노마이신 D / 사이클로포스파미드·빈크리스틴)를 쓴다. 이 환자는 hCG 10⁴~10⁵ 구간이 4점을 주지만 나머지가 모두 0점이라 저위험이다.<br> <b>메토트렉세이트가 잘 듣는 이유</b> — 영양막은 분열이 빠르고 엽산 의존 DNA 합성에 크게 기대며, 융모막암은 항암제 감수성이 가장 높은 고형암 중 하나다. 주 1회 또는 8일 요법(메토트렉세이트 + 류코보린 구제)을 hCG 가 정상화된 뒤에도 <b>2~3주기 더(consolidation)</b> 유지해 재발을 막는다. hCG 가 정체·상승하면 액티노마이신 D 로 바꾸고, 그래도 안 되면 복합요법으로 올린다.<br> <b>치료 뒤</b> — 12개월간 hCG 를 추적하고 그동안 <b>피임</b>한다(새 임신의 hCG 가 재발과 구별되지 않기 때문). 저위험군의 완치율은 거의 100 % 이며 이후 임신 결과도 정상 인구와 같다.\n- 비교: <table><thead><tr><th style=\"width:26%\">선택</th><th style=\"width:40%\">그 선택이 맞는 상황</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>메토트렉세이트 단일제(정답)</b></td><td><b>GTN 진단 + WHO 점수 ≤ 6(저위험), 자궁 국한 또는 폐·골반 전이만</b></td><td>점수 4, I기</td></tr> <tr><td>EMA-CO 복합요법</td><td>WHO 점수 ≥ 7(고위험), 간·뇌 전이, 단일제 실패</td><td>점수 4 — 과잉치료</td></tr> <tr><td>자궁절제술</td><td>출산을 끝낸 환자에서 항암과 병행해 항암 주기를 줄이거나, 자궁 국한 항암 내성·조절 안 되는 출혈</td><td>24세, 항암만으로 완치 가능</td></tr> <tr><td>재흡입소파술</td><td>불완전 배출로 자궁강에 기태 조직이 남아 출혈할 때(선별적, 논쟁적)</td><td>초음파에서 잔류 조직·출혈 없음</td></tr> <tr><td>추적관찰 지속</td><td>hCG 가 매주 꾸준히 떨어지는 정상 회복 곡선</td><td>정체 후 상승 — 이미 GTN 기준 충족</td></tr> </tbody></table> <b>가장 가까운 오답은 「추적관찰 지속」</b> — 출혈도 종괴도 없고 값이 만 단위에서 「크게 변하지 않는 것처럼」 보인다. 갈림길은 <b>정체가 곧 진단 기준</b>이라는 점이다. 3주 이상 ±10 % 안에 머무르면 더 기다리지 않는다. 반대로 hCG 가 ≥ 10⁵ 이거나 간·뇌 전이가 있어 점수가 7점을 넘으면 답은 EMA-CO 로 바뀐다.\n- 오답 이유:\n  - ② EMA-CO 복합 항암화학요법은 WHO 예후점수 7점 이상의 고위험 GTN 이나 단일제 내성에 쓴다. 이 환자는 점수 4점의 저위험군이라 독성이 큰 복합요법이 필요 없다. 이 선지가 정답이 되려면 hCG 가 100,000 IU/L 를 넘거나 간·뇌 전이가 있거나 단일제 치료가 실패했어야 한다.\n  - ③ 자궁절제술은 출산을 마친 환자에서 항암 주기를 줄이거나, 자궁에 국한된 항암 내성 병변·조절되지 않는 출혈에 선택한다. 24세 미출산 환자의 저위험 GTN 은 항암만으로 거의 100 % 완치되고 가임력을 지킨다. 이 선지가 정답이 되려면 출산을 끝냈고 항암에 내성인 자궁 국한 병변이어야 한다.\n  - ④ 재흡입소파술은 불완전 배출로 잔류 기태 조직이 있어 출혈할 때 제한적으로 고려하며 GTN 자체의 치료가 아니다. 이 환자는 출혈이 없고 초음파에서 자궁이 정상이다. 이 선지가 정답이 되려면 초음파에서 자궁강 내 잔류 조직과 활동성 출혈이 보여야 한다.\n  - ⑤ 추적관찰 지속은 hCG 가 매주 순조롭게 떨어질 때의 처치다. 3주 넘게 정체한 뒤 상승한 곡선은 이미 FIGO 진단 기준을 채운 GTN 이고, 기다릴수록 전이 위험이 커진다. 이 선지가 정답이 되려면 4회 연속 값이 10 % 이상씩 계속 감소했어야 한다.\n- 함정: 「전이가 없으니 지켜본다」가 함정이다. GTN 은 조직검사가 아니라 hCG 곡선으로 진단하며, 정체 3주·상승 2주라는 숫자를 채우면 바로 치료한다. 치료 강도는 WHO 점수가 정한다.\n- 학습목표: 포상기태 후 hCG 정체·상승으로 임신성 융모성 종양을 진단하고 FIGO/WHO 예후점수로 저위험군 단일제 항암치료를 선택한다\n- 근거·출처: Ngan HYS et al. FIGO Cancer Report 2021: Diagnosis and management of gestational trophoblastic disease (Int J Gynaecol Obstet 2021) — GTN 진단 기준(정체·상승), FIGO 병기와 WHO 예후점수, 저위험 단일제·고위험 EMA-CO · NCCN Clinical Practice Guidelines: Gestational Trophoblastic Neoplasia — low-risk GTN: methotrexate or dactinomycin single-agent; consolidation cycles; 12-month hCG surveillance · Berek & Novak's Gynecology — gestational trophoblastic disease · Williams Obstetrics — hydatidiform mole follow-up and postmolar GTN",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "포상기태 후 hCG 가 3주(4회 측정) 이상 정체(±10 % 이내)하거나 2주(3회) 이상 상승하면 FIGO 기준으로 임신성 융모성 종양(GTN)이다. 병기는 자궁에 국한된 I기이고, WHO 예후점수는 나이 < 40세 0점, 선행 임신 포상기태 0점, 간격 < 4개월 0점, 치료 전 hCG 10,400 IU/L(10⁴~10⁵) 4점, 종양 크기·전이 없음 0점, 이전 항암 없음 0점으로 합 4점(≤ 6점, 저위험)이다. 저위험 GTN 의 표준 치료는 메토트렉세이트 또는 액티노마이신 D 단일제 항암요법이며 완치율이 거의 100 % 다."
+   },
+   {
+    "k": "원리",
+    "v": "임신성 융모성 종양은 <b>영양막세포가 hCG 를 만든다</b>는 성질 때문에 조직검사 없이 <b>혈청 hCG 곡선만으로 진단</b>하는 유일한 악성 질환이다. 포상기태를 비우면 남은 영양막은 보통 8~12주 안에 사라져 hCG 가 정상화된다. 곡선이 <b>정체(3주 이상, 4회 값이 ±10 % 안)</b>하거나 <b>상승(2주 이상, 3회 값이 10 % 넘게 증가)</b>하면 영양막이 자율적으로 증식한다는 뜻이고, 그것이 침윤성 기태든 융모막암이든 치료 결정은 같다 — 병기와 점수가 정한다.<br> <b>왜 WHO 점수인가</b> — 예후 인자 8개(나이, 선행 임신, 간격, 치료 전 hCG, 최대 종양 크기, 전이 부위, 전이 수, 이전 항암 실패)를 0·1·2·4점으로 매겨 합이 <b>≤ 6점이면 저위험</b>, ≥ 7점이면 고위험이다. 점수는 <b>단일제 항암에 내성을 보일 확률</b>을 예측하는 도구라서, 저위험은 독성이 적은 <b>메토트렉세이트(엽산 길항제) 또는 액티노마이신 D 단일제</b>로 시작하고, 고위험은 처음부터 <b>EMA-CO</b>(에토포시드·메토트렉세이트·액티노마이신 D / 사이클로포스파미드·빈크리스틴)를 쓴다. 이 환자는 hCG 10⁴~10⁵ 구간이 4점을 주지만 나머지가 모두 0점이라 저위험이다.<br> <b>메토트렉세이트가 잘 듣는 이유</b> — 영양막은 분열이 빠르고 엽산 의존 DNA 합성에 크게 기대며, 융모막암은 항암제 감수성이 가장 높은 고형암 중 하나다. 주 1회 또는 8일 요법(메토트렉세이트 + 류코보린 구제)을 hCG 가 정상화된 뒤에도 <b>2~3주기 더(consolidation)</b> 유지해 재발을 막는다. hCG 가 정체·상승하면 액티노마이신 D 로 바꾸고, 그래도 안 되면 복합요법으로 올린다.<br> <b>치료 뒤</b> — 12개월간 hCG 를 추적하고 그동안 <b>피임</b>한다(새 임신의 hCG 가 재발과 구별되지 않기 때문). 저위험군의 완치율은 거의 100 % 이며 이후 임신 결과도 정상 인구와 같다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">선택</th><th style=\"width:40%\">그 선택이 맞는 상황</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>메토트렉세이트 단일제(정답)</b></td><td><b>GTN 진단 + WHO 점수 ≤ 6(저위험), 자궁 국한 또는 폐·골반 전이만</b></td><td>점수 4, I기</td></tr> <tr><td>EMA-CO 복합요법</td><td>WHO 점수 ≥ 7(고위험), 간·뇌 전이, 단일제 실패</td><td>점수 4 — 과잉치료</td></tr> <tr><td>자궁절제술</td><td>출산을 끝낸 환자에서 항암과 병행해 항암 주기를 줄이거나, 자궁 국한 항암 내성·조절 안 되는 출혈</td><td>24세, 항암만으로 완치 가능</td></tr> <tr><td>재흡입소파술</td><td>불완전 배출로 자궁강에 기태 조직이 남아 출혈할 때(선별적, 논쟁적)</td><td>초음파에서 잔류 조직·출혈 없음</td></tr> <tr><td>추적관찰 지속</td><td>hCG 가 매주 꾸준히 떨어지는 정상 회복 곡선</td><td>정체 후 상승 — 이미 GTN 기준 충족</td></tr> </tbody></table> <b>가장 가까운 오답은 「추적관찰 지속」</b> — 출혈도 종괴도 없고 값이 만 단위에서 「크게 변하지 않는 것처럼」 보인다. 갈림길은 <b>정체가 곧 진단 기준</b>이라는 점이다. 3주 이상 ±10 % 안에 머무르면 더 기다리지 않는다. 반대로 hCG 가 ≥ 10⁵ 이거나 간·뇌 전이가 있어 점수가 7점을 넘으면 답은 EMA-CO 로 바뀐다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② EMA-CO 복합 항암화학요법은 WHO 예후점수 7점 이상의 고위험 GTN 이나 단일제 내성에 쓴다. 이 환자는 점수 4점의 저위험군이라 독성이 큰 복합요법이 필요 없다. 이 선지가 정답이 되려면 hCG 가 100,000 IU/L 를 넘거나 간·뇌 전이가 있거나 단일제 치료가 실패했어야 한다.\n③ 자궁절제술은 출산을 마친 환자에서 항암 주기를 줄이거나, 자궁에 국한된 항암 내성 병변·조절되지 않는 출혈에 선택한다. 24세 미출산 환자의 저위험 GTN 은 항암만으로 거의 100 % 완치되고 가임력을 지킨다. 이 선지가 정답이 되려면 출산을 끝냈고 항암에 내성인 자궁 국한 병변이어야 한다.\n④ 재흡입소파술은 불완전 배출로 잔류 기태 조직이 있어 출혈할 때 제한적으로 고려하며 GTN 자체의 치료가 아니다. 이 환자는 출혈이 없고 초음파에서 자궁이 정상이다. 이 선지가 정답이 되려면 초음파에서 자궁강 내 잔류 조직과 활동성 출혈이 보여야 한다.\n⑤ 추적관찰 지속은 hCG 가 매주 순조롭게 떨어질 때의 처치다. 3주 넘게 정체한 뒤 상승한 곡선은 이미 FIGO 진단 기준을 채운 GTN 이고, 기다릴수록 전이 위험이 커진다. 이 선지가 정답이 되려면 4회 연속 값이 10 % 이상씩 계속 감소했어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「전이가 없으니 지켜본다」가 함정이다. GTN 은 조직검사가 아니라 hCG 곡선으로 진단하며, 정체 3주·상승 2주라는 숫자를 채우면 바로 치료한다. 치료 강도는 WHO 점수가 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "포상기태 후 hCG 정체·상승으로 임신성 융모성 종양을 진단하고 FIGO/WHO 예후점수로 저위험군 단일제 항암치료를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ngan HYS et al. FIGO Cancer Report 2021: Diagnosis and management of gestational trophoblastic disease (Int J Gynaecol Obstet 2021) — GTN 진단 기준(정체·상승), FIGO 병기와 WHO 예후점수, 저위험 단일제·고위험 EMA-CO · NCCN Clinical Practice Guidelines: Gestational Trophoblastic Neoplasia — low-risk GTN: methotrexate or dactinomycin single-agent; consolidation cycles; 12-month hCG surveillance · Berek & Novak's Gynecology — gestational trophoblastic disease · Williams Obstetrics — hydatidiform mole follow-up and postmolar GTN"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260916T202115Z_일일영상_2026-09-17_9units_9q_d18bb655",
+  "qid": "Q0004"
+ },
+ {
   "id": "imaging-2026-0032",
   "exam": "imaging",
   "style": "usmle_style",
