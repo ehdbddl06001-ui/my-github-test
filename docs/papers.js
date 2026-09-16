@@ -2,6 +2,69 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0609",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Retraction: Targeted Immunomodulation in Post-Transplant Sepsis: Mechanistic and Clinical Insights from a Phase-Based Approach Integrating IgM-Enriched IVIG and Hemoadsorption",
+  "authors": [
+   "Silić Vanja",
+   "Romić Ivan",
+   "Pavlek Goran",
+   "Bašić-Jukić Nikolina",
+   "Feltracco Paolo"
+  ],
+  "journal": "Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society",
+  "doi": "10.1097/LVT.0000000000000954",
+  "pmid": "42748418",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42748418/",
+  "pubdate": "2026-10-01",
+  "date": "2026-09-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0608",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation. Reply",
+  "authors": [
+   "Doshi Shephal K",
+   "Kar Saibal"
+  ],
+  "journal": "The New England journal of medicine",
+  "doi": "10.1056/NEJMc2609235",
+  "pmid": "42748443",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42748443/",
+  "pubdate": "2026-09-17",
+  "date": "2026-09-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0607",
   "topic": "Surgery",
   "subtopic": "",
