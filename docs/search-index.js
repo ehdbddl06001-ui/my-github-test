@@ -1,32 +1,32 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-15",
+ "generated": "2026-09-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2462,
+  "total": 2475,
   "byType": {
+   "usmle": 150,
    "kmle": 1003,
    "anatomy": 662,
-   "usmle": 144,
+   "paper": 607,
    "imaging": 36,
-   "paper": 600,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 662,
-   "Cardiology": 188,
+   "Cardiology": 189,
    "Nephrology": 158,
-   "Infectious Disease": 135,
-   "Pediatrics": 113,
-   "Hematology-Oncology": 89,
-   "Pathology": 85,
-   "Obstetrics & Gynecology": 76,
+   "Infectious Disease": 136,
+   "Pediatrics": 114,
+   "Hematology-Oncology": 90,
+   "Pathology": 87,
+   "Obstetrics & Gynecology": 77,
    "Neurology": 75,
-   "Psychiatry": 74,
-   "Surgery": 68,
+   "Psychiatry": 75,
+   "Surgery": 70,
    "Endocrinology": 64,
    "Gastroenterology": 63,
    "Pulmonology": 63,
@@ -36,13 +36,13 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 62,
    "Rheumatology": 62,
    "Hematology": 61,
-   "Laboratory Medicine": 59,
+   "Laboratory Medicine": 60,
    "산부인과": 19,
    "Physiology": 17,
-   "Pharmacology": 11,
+   "Pharmacology": 12,
+   "Microbiology": 11,
    "순환기": 11,
    "Biochemistry": 10,
-   "Microbiology": 10,
    "Immunology": 8,
    "Internal Medicine": 8,
    "Medical AI Lab": 4,
@@ -59,13 +59,162 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1628,
-   "medium": 785,
+   "high": 1634,
+   "medium": 792,
    "low": 49
   },
-  "tagCount": 3481
+  "tagCount": 3516
  },
  "docs": [
+  {
+   "id": "usmle-2026-0163",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "A Uterus Too Large for Dates, Suppressed TSH and a Snowstorm on Ultrasound — Emptying the Uterus Without Contracting It",
+   "tags": [
+    "hydatidiform-mole",
+    "complete-mole",
+    "gestational-trophoblastic-disease",
+    "hCG",
+    "suction-curettage",
+    "theca-lutein-cysts",
+    "hyperthyroidism",
+    "early-preeclampsia",
+    "misoprostol-contraindicated",
+    "methotrexate"
+   ],
+   "source": "USMLE-style / MedKOS (Williams Obstetrics 26e — Gestational Trophoblastic Disease; ACOG Practice Bulletin No. 53 Diagnosis and Treatment of Gestational Trophoblastic Disease; Ngan HYS et al. FIGO Cancer Report 2021: Update on GTD)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0163.md",
+   "snippet": "A 24 year old woman, gravida 1, para 0, at 16 weeks' gestation by last menstrual period comes to the emergency department because of vaginal bleeding for 2 days and vomiting that has persisted since 7 weeks despite antiemetics. She has not ",
+   "text": "Obstetrics & Gynecology A Uterus Too Large for Dates, Suppressed TSH and a Snowstorm on Ultrasound — Emptying the Uterus Without Contracting It hydatidiform-mole complete-mole gestational-trophoblastic-disease hCG suction-curettage theca-lutein-cysts hyperthyroidism early-preeclampsia misoprostol-contraindicated methotrexate USMLE-style / MedKOS (Williams Obstetrics 26e — Gestational Trophoblastic Disease; ACOG Practice Bulletin No. 53 Diagnosis and Treatment of Gestational Trophoblastic Disease; Ngan HYS et al. FIGO Cancer Report 2021: Update on GTD) A 24 year old woman, gravida 1, para 0, at 16 weeks' gestation by last menstrual period comes to the emergency department because of vaginal bleeding for 2 days and vomiting that has persisted since 7 weeks despite antiemetics. She has not received prenatal care. She has no chronic medical conditions and takes no medications. Her vital signs and laboratory studies are shown. She is tremulous. The uterus is soft and its fundus is palpable midway between the umbilicus and the xiphoid; fetal heart tones cannot be detected with Doppler. Speculum examination shows dark blood in the vagina and a closed cervix. Transvaginal ultrasonography shows a heterogeneous, echogenic intrauterine mass with numerous small anechoic cystic spaces, no fetal pole or gestational sac, and bilateral multiloculated ovarian cysts measuring 7 cm and 6 cm. She wishes to have children in the future. Which of the following is the most appropriate next step in management? A. Suction curettage of the uterus B. Intramuscular methotrexate C. Vaginal misoprostol D. Total abdominal hysterectomy E. Bilateral ovarian cystectomy 16주에 날짜보다 큰 자궁(20주 이상 크기), 태아 심음 없음, 1삼분기 이후에도 지속되는 극심한 입덧, 20주 이전 고혈압·단백뇨, hCG 486,000(주수 참고치의 2배 이상), hCG 교차 자극에 의한 생화학적 갑상샘항진(TSH 억제·유리 T₄ ↑, 떨림·빈맥), 초음파의 눈보라(snowstorm)형 낭성 종괴 + 양측 난포막황체낭 = 완전 포상기태. 치료의 원칙은 자궁을 비우되 자궁수축을 유발하지 않는 것이다. 흡인 소파술(suction D&C)은 조직 진단·hCG 정상화·향후 임신 보존을 모두 만족하는 표준이며, 시술 전 갑상샘항진 조절(β 차단제)·혈액형 확인·수혈 준비, 시술 중 흡인이 끝난 뒤 옥시토신을 쓴다. 이후 hCG 를 정상화까지 주 1회, 정상화 뒤 6개월 추적하고 그동안 피임한다. methotrexate(B)는 기태 자체가 아니라 소파 후 hCG 가 고원·상승할 때(임신영양막종양)의 치료다. misoprostol(C)·옥시토신 유도(D 가 아닌 약물 유도)는 자궁 수축으로 영양막 조직이 정맥으로 밀려 들어가 영양막 색전·출혈·전이 위험을 높여 금기다. 자궁절제(D)는 출산을 마친 고령 여성의 대안이지 24세 미산부에게는 부적절하고, 자궁을 떼어도 hCG 추적은 필요하다. 난포막황체낭(E)은 hCG 반응성 양성 낭으로 기태 제거 후 수개월에 걸쳐 저절로 사라지므로 염전·파열이 없는 한 손대지 않는다."
+  },
+  {
+   "id": "usmle-2026-0162",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Chest Pain and Crackling Skin After Forceful Vomiting — The Contrast You May Swallow and the One You Must Not",
+   "tags": [
+    "Boerhaave-syndrome",
+    "esophageal-perforation",
+    "mediastinitis",
+    "subcutaneous-emphysema",
+    "water-soluble-contrast",
+    "esophagography",
+    "barium-contraindicated",
+    "pleural-effusion",
+    "surgical-emergency"
+   ],
+   "source": "USMLE-style / MedKOS (Sabiston Textbook of Surgery 21e — Esophageal Perforation; Schwartz's Principles of Surgery 11e — Esophagus; Brinster CJ et al. Evolving options in the management of esophageal perforation. Ann Thorac Surg 2004)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0162.md",
+   "snippet": "A 54 year old man is brought to the emergency department because of severe lower chest and epigastric pain that began 3 hours ago immediately after an episode of forceful vomiting following heavy drinking at a wedding. The pain radiates to ",
+   "text": "Surgery Chest Pain and Crackling Skin After Forceful Vomiting — The Contrast You May Swallow and the One You Must Not Boerhaave-syndrome esophageal-perforation mediastinitis subcutaneous-emphysema water-soluble-contrast esophagography barium-contraindicated pleural-effusion surgical-emergency USMLE-style / MedKOS (Sabiston Textbook of Surgery 21e — Esophageal Perforation; Schwartz's Principles of Surgery 11e — Esophagus; Brinster CJ et al. Evolving options in the management of esophageal perforation. Ann Thorac Surg 2004) A 54 year old man is brought to the emergency department because of severe lower chest and epigastric pain that began 3 hours ago immediately after an episode of forceful vomiting following heavy drinking at a wedding. The pain radiates to his back and left shoulder and worsens with swallowing. He has hypertension treated with lisinopril and has no history of ulcer disease. His vital signs and laboratory studies are shown. He is diaphoretic and prefers to sit upright. Palpation of the left supraclavicular fossa and lower neck produces a crackling sensation, and breath sounds are decreased at the left base. The abdomen is soft with mild epigastric tenderness and no rigidity. Intravenous fluids, broad spectrum antibiotics, and analgesics are started. Which of the following is the most appropriate next step in diagnosis? A. Barium esophagography B. Upper gastrointestinal endoscopy C. Transthoracic echocardiography D. Water soluble contrast esophagography E. Ventilation–perfusion lung scintigraphy 과음 후 심한 구토 직후 갑작스러운 하부 흉통·심와부통, 삼킬 때 악화, 좌측 목·쇄골상부의 피하기종(염발음), 좌측 흉수·종격동 공기·경부 연조직 공기(흉부 X선), 발열·백혈구 증가·빈맥 = 자발성 식도 파열(Boerhaave 증후군). 트로포닌·리파아제 정상, 복부 강직 없음으로 심근경색·췌장염·궤양 천공을 밀어냈다. 확진과 수술 계획(파열 위치·크기·조영제 누출 방향·구획 여부)은 식도조영술로 하되, 조영제는 수용성(gastrografin 등)을 먼저 쓴다 — 종격동으로 새어도 흡수되고 염증을 거의 일으키지 않는다. 바륨(A)은 진단 민감도는 더 높지만 새어나가면 종격동·흉막에 영구 잔류해 육아종성 종격동염·유착을 만들어 '먼저' 쓰지 않으며, 수용성 조영술이 음성인데 의심이 강할 때 2차로만 쓴다. 상부 내시경(B)은 공기 주입으로 파열을 넓히고 종격동 오염을 키울 수 있어 초기 진단 도구로 부적절하다. 심초음파(C)·환기 관류 스캔(E)은 흉통 감별의 다른 축(심낭·폐색전)으로, 구토 후 피하기종·종격동 공기라는 결정적 단서를 설명하지 못한다."
+  },
+  {
+   "id": "usmle-2026-0161",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "A Widower Convinced His Organs Have Rotted Who Has Stopped Eating and Drinking — When the Fastest Treatment Beats the Usual Two-Drug Regimen",
+   "tags": [
+    "major-depressive-disorder",
+    "psychotic-features",
+    "nihilistic-delusion",
+    "electroconvulsive-therapy",
+    "ECT",
+    "food-refusal",
+    "dehydration",
+    "geriatric-depression",
+    "suicide-risk",
+    "antidepressant-antipsychotic"
+   ],
+   "source": "USMLE-style / MedKOS (Kaplan & Sadock's Synopsis of Psychiatry 12e — Major Depressive Disorder with Psychotic Features; APA Practice Guideline for the Treatment of Patients With Major Depressive Disorder 2010; Kellner CH et al. ECT in Treatment-Resistant Depression. Am J Psychiatry 2012)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0161.md",
+   "snippet": "A 74 year old man is brought to the emergency department by his daughter because he has eaten almost nothing and has taken only sips of water for the past 6 days. His wife died 4 months ago. Over the past 2 months he has stopped attending c",
+   "text": "Psychiatry A Widower Convinced His Organs Have Rotted Who Has Stopped Eating and Drinking — When the Fastest Treatment Beats the Usual Two-Drug Regimen major-depressive-disorder psychotic-features nihilistic-delusion electroconvulsive-therapy ECT food-refusal dehydration geriatric-depression suicide-risk antidepressant-antipsychotic USMLE-style / MedKOS (Kaplan & Sadock's Synopsis of Psychiatry 12e — Major Depressive Disorder with Psychotic Features; APA Practice Guideline for the Treatment of Patients With Major Depressive Disorder 2010; Kellner CH et al. ECT in Treatment-Resistant Depression. Am J Psychiatry 2012) A 74 year old man is brought to the emergency department by his daughter because he has eaten almost nothing and has taken only sips of water for the past 6 days. His wife died 4 months ago. Over the past 2 months he has stopped attending church, sleeps 3 hours a night, has lost 8 kg, and repeatedly states that he deserves to die because he 'let her die.' For the past week he has insisted that his stomach and intestines have rotted away and that food therefore 'has nowhere to go.' He has no history of psychiatric illness or substance use, and he takes only amlodipine. His vital signs and laboratory studies are shown. He is gaunt, with dry mucous membranes, speaks slowly with long latencies, and is fully oriented. He denies a plan to harm himself but says he 'would not mind not waking up.' Which of the following is the most appropriate treatment for this patient? A. Sertraline monotherapy B. Sertraline with olanzapine C. Sertraline with lithium D. Cognitive behavioral therapy E. Electroconvulsive therapy 2개월 이상의 우울 삽화(무쾌감·불면·8 kg 체중 감소·정신운동지연·죄책감·소극적 죽음 소망) + 기분과 일치하는 허무 망상(장기가 썩어 없어졌다) = 정신병적 양상을 동반한 주요우울장애. 갑상샘·B₁₂·CT·약물검사가 정상이라 2차 원인은 배제된다. 정신병적 우울증의 일반적 약물 치료는 항우울제 + 항정신병약 병용이지만, 이 환자는 6일간 음식·수분 거부로 이미 기립성 저혈압·고나트륨혈증·신전성 급성 신손상이 진행해 생명이 위협받는 상황이다. 항우울제·항정신병약은 효과까지 2–6주가 걸려 그 사이 탈수·영양실조·자살 위험이 계속된다. 전기경련요법(ECT)은 정신병적 우울증에서 관해율이 가장 높고(80–90%) 반응이 가장 빠르며(1–2주), 음식·수분 거부·긴장증·급박한 자살 위험·고령·약물 부작용 취약이 모두 ECT 1차 선택 적응이다. sertraline 단독(A)은 정신병적 양상에 불충분하고, sertraline+olanzapine(B)은 표준 병용이나 속도가 느려 위기 상황에 부적절하며, lithium 증강(C)은 치료 저항성 우울증의 2단계 전략이고 탈수·신손상에서 독성 위험이 크다. 인지행동치료(D)는 망상·심한 정신운동지연·섭식 거부 상태에서는 시행 자체가 어렵고 급성 치료가 아니다."
+  },
+  {
+   "id": "usmle-2026-0160",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Drooling, Pinpoint Pupils and Fasciculations in a Farmworker Beside a Spilled Insecticide — The Drug That Pries the Phosphate Off the Enzyme Before It Ages",
+   "tags": [
+    "organophosphate",
+    "acetylcholinesterase",
+    "pralidoxime",
+    "oxime",
+    "aging",
+    "cholinergic-crisis",
+    "muscarinic",
+    "nicotinic",
+    "atropine",
+    "bradycardia",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (Katzung Basic & Clinical Pharmacology 15e — Cholinoceptor-Blocking Drugs, Cholinesterase Regenerators; Goldfrank's Toxicologic Emergencies 11e — Organic Phosphorus Compounds; Eddleston M et al. Management of acute organophosphorus pesticide poisoning. Lancet 2008)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0160.md",
+   "snippet": "A 46 year old farmworker is brought to the emergency department 40 minutes after coworkers found him collapsed next to an overturned container of insecticide in a storage shed. He is drooling, tearful, and incontinent of urine and stool, an",
+   "text": "Pharmacology Drooling, Pinpoint Pupils and Fasciculations in a Farmworker Beside a Spilled Insecticide — The Drug That Pries the Phosphate Off the Enzyme Before It Ages organophosphate acetylcholinesterase pralidoxime oxime aging cholinergic-crisis muscarinic nicotinic atropine bradycardia ECG USMLE-style / MedKOS (Katzung Basic & Clinical Pharmacology 15e — Cholinoceptor-Blocking Drugs, Cholinesterase Regenerators; Goldfrank's Toxicologic Emergencies 11e — Organic Phosphorus Compounds; Eddleston M et al. Management of acute organophosphorus pesticide poisoning. Lancet 2008) A 46 year old farmworker is brought to the emergency department 40 minutes after coworkers found him collapsed next to an overturned container of insecticide in a storage shed. He is drooling, tearful, and incontinent of urine and stool, and he has vomited twice. His vital signs and laboratory studies are shown; his rhythm strip is also shown. Pupils are 1 mm bilaterally. Diffuse wheezes and crackles are heard over both lungs. There are fasciculations of the tongue and thigh muscles, and he cannot lift his head from the bed. His clothing is removed and his skin is washed. He is intubated, and repeated doses of intravenous atropine are given until the secretions and wheezing resolve; however, the fasciculations and profound weakness persist. Which of the following is the mechanism of action of the drug most likely to restore this patient's neuromuscular function? A. Competitive antagonism of acetylcholine at muscarinic receptors B. Nucleophilic removal of the phosphoryl group from the active site serine of acetylcholinesterase C. Reversible carbamylation of the active site serine of acetylcholinesterase D. Noncompetitive blockade of nicotinic receptors at the neuromuscular junction E. Potentiation of chloride conductance through GABA A receptors in the central nervous system 살충제 노출 + 무스카린 과잉(침·눈물·요실금·설사·구토, 축동 1 mm, 기관지 분비·천명, 서맥 42) + 니코틴 과잉(속상수축, 근력 저하 → 호흡부전) + 혈청 콜린에스터라아제 12% = 유기인계 살충제 중독(아세틸콜린에스터라아제의 비가역적 인산화). 아트로핀은 무스카린 수용체 경쟁 길항제라 분비·서맥·기관지연축은 잡지만 니코틴 수용체(신경근접합부)에는 작용하지 않아 속상수축·근력 저하는 그대로다. 니코틴 증상은 효소 자체를 되살려야 풀린다: pralidoxime(2 PAM) 의 옥심(=N–OH) 기가 인산화된 세린의 인 원자를 친핵성 공격해 인산기를 떼어 내고 효소를 재생한다. 단, 시간이 지나면 인산기의 알킬 사슬 하나가 떨어져 나가는 '노화(aging)' 가 일어나 옥심이 더는 작용하지 못하므로 조기에 준다. 카르바밀화(C)는 오히려 효소를 억제하는 neostigmine·physostigmine 의 기전이고, 신경근접합부 니코틴 차단(D)은 근이완제로 약화를 악화시키며, GABA A 강화(E)는 경련 치료용 benzodiazepine 이지 신경근 기능 회복과 무관하다."
+  },
+  {
+   "id": "usmle-2026-0159",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Fever, Diffuse Sunburn-Like Rash and Shock in a Menstruating Woman With Sterile Blood Cultures — The Toxin That Bypasses the Antigen Groove",
+   "tags": [
+    "toxic-shock-syndrome",
+    "Staphylococcus-aureus",
+    "TSST-1",
+    "superantigen",
+    "MHC-II",
+    "TCR-Vbeta",
+    "cytokine-storm",
+    "tampon",
+    "desquamation",
+    "exotoxin"
+   ],
+   "source": "USMLE-style / MedKOS (Murray Medical Microbiology 9e — Staphylococcus; Robbins 10e — Infectious Diseases; CDC Toxic Shock Syndrome (Other Than Streptococcal) 2011 Case Definition)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0159.md",
+   "snippet": "A 22 year old woman is brought to the emergency department because of fever, vomiting, watery diarrhea, and lightheadedness for 1 day. Her menstrual period began 4 days ago, and she has been using superabsorbent tampons, the last of which w",
+   "text": "Microbiology Fever, Diffuse Sunburn-Like Rash and Shock in a Menstruating Woman With Sterile Blood Cultures — The Toxin That Bypasses the Antigen Groove toxic-shock-syndrome Staphylococcus-aureus TSST-1 superantigen MHC-II TCR-Vbeta cytokine-storm tampon desquamation exotoxin USMLE-style / MedKOS (Murray Medical Microbiology 9e — Staphylococcus; Robbins 10e — Infectious Diseases; CDC Toxic Shock Syndrome (Other Than Streptococcal) 2011 Case Definition) A 22 year old woman is brought to the emergency department because of fever, vomiting, watery diarrhea, and lightheadedness for 1 day. Her menstrual period began 4 days ago, and she has been using superabsorbent tampons, the last of which was inserted 18 hours ago. She has no chronic illnesses and takes no medications. Her vital signs and laboratory studies are shown. She is confused. There is a diffuse macular erythema over the trunk and extremities that blanches with pressure, hyperemia of the conjunctivae and oropharynx, and a bright red tongue; there are no vesicles, bullae, or skin tenderness. After fluid resuscitation and removal of the tampon, empiric antibiotics are started. Which of the following best describes the mechanism by which the responsible toxin produces this patient's condition? A. ADP ribosylation of elongation factor 2, halting host protein synthesis B. Cleavage of desmoglein 1 within the granular layer of the epidermis C. Cross linking of MHC class II to T cell receptor β chains outside the antigen groove D. Assembly of bicomponent pores in neutrophil and macrophage membranes E. Depurination of 28S ribosomal RNA within the 60S ribosomal subunit 월경 중 고흡수성 탐폰 장기 사용 + 고열 + 저혈압 + 미만성 홍반(일광화상 모양) + 점막 충혈·딸기혀 + 3개 이상 장기 침범(구토·설사, 크레아티닌 ↑, 간효소 ↑, CK ↑, 혈소판 ↓, 의식 혼탁) + 혈액배양 무균 + 질에서 응고효소 양성 알균 = 포도알균 독성쇼크증후군(TSST 1). TSST 1 은 초항원(superantigen)이다: 항원제시세포의 MHC class II 바깥 면과 T 세포 수용체 β 사슬의 가변부(Vβ)를 펩타이드 홈 바깥에서 동시에 결합해, 특정 Vβ 계열의 T 세포를 항원 특이성과 무관하게 전체 T 세포의 최대 20% 까지 대량 활성화한다. IL 1·IL 2·TNF α·IFN γ 의 폭발적 방출이 모세혈관 누출·저혈압·다장기 부전·발진을 만든다. 균이 질 안에 국소 집락만 이룬 채 독소가 흡수되므로 혈액배양은 흔히 음성이다. EF 2 ADP 리보실화(A)는 디프테리아·녹농균 외독소 A, desmoglein 1 절단(B)은 포도알균 탈락독소(SSSS — 표피 박리·니콜스키 양성이며 저혈압·다장기 부전은 드묾), 이성분 공극 형성(D)은 Panton Valentine 백혈구용해소(괴사성 폐렴·피부 농양), 28S rRNA 탈퓨린(E)은 Shiga 독소(용혈요독증후군)의 기전이다."
+  },
+  {
+   "id": "usmle-2026-0158",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Moon Facies and a Unilateral Adrenal Mass With Suppressed ACTH — What Happens to the Cortex on the Other Side",
+   "tags": [
+    "Cushing-syndrome",
+    "adrenal-adenoma",
+    "ACTH-independent",
+    "zona-fasciculata",
+    "zona-reticularis",
+    "adrenal-atrophy",
+    "trophic-hormone",
+    "contralateral-atrophy",
+    "hypercortisolism"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Adrenal Cortex, Hypercortisolism; Nieman LK et al. Treatment of Cushing's Syndrome: Endocrine Society Guideline. J Clin Endocrinol Metab 2015)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/usmle/usmle-2026-0158.md",
+   "snippet": "A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen,",
+   "text": "Pathology Moon Facies and a Unilateral Adrenal Mass With Suppressed ACTH — What Happens to the Cortex on the Other Side Cushing-syndrome adrenal-adenoma ACTH-independent zona-fasciculata zona-reticularis adrenal-atrophy trophic-hormone contralateral-atrophy hypercortisolism USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Adrenal Cortex, Hypercortisolism; Nieman LK et al. Treatment of Cushing's Syndrome: Endocrine Society Guideline. J Clin Endocrinol Metab 2015) A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen, and proximal muscle weakness. Her vital signs and laboratory studies are shown. Adrenal CT shows a 3.2 cm well circumscribed, homogeneous mass in the left adrenal gland. Which of the following is the most likely finding in the right adrenal gland of this patient? A. Atrophy of the zona fasciculata and zona reticularis B. Diffuse hyperplasia of all three cortical zones C. Atrophy of the entire cortex including the zona glomerulosa D. Micronodular hyperplasia with lipofuscin rich pigmented nodules E. Hemorrhagic infarction of the cortex and medulla 고코르티솔혈증(소변 유리 코르티솔 ↑, 1 mg 덱사메타손 억제 실패) + ACTH 억제(< 5) + 편측 부신 종괴 = ACTH 비의존성 쿠싱증후군(부신 선종). 선종이 자율적으로 분비하는 코르티솔이 시상하부·뇌하수체를 음성 되먹임으로 눌러 ACTH 가 소실되고, ACTH 를 영양호르몬으로 삼는 속상대(zona fasciculata)·망상대(zona reticularis)는 종괴가 없는 반대쪽 부신(및 종괴 주변 정상 조직)에서 위축된다. 사구대(zona glomerulosa)는 레닌–안지오텐신 II·칼륨이 조절하므로 보존된다(알도스테론·레닌 정상). 양측 미만성 과형성(B)은 ACTH 의존성(뇌하수체·이소성) 때, 색소성 미세결절 과형성(D)은 원발성 색소성 결절성 부신피질질환(Carney 복합체)이며 편측 3 cm 종괴·ACTH 억제와 맞지 않는다. 전 피질 위축(C)은 사구대가 ACTH 비의존적이므로 틀리고, 출혈성 경색(E)은 Waterhouse Friderichsen·항응고 합병증에서 보이는 부신 파괴 소견이다."
+  },
   {
    "id": "kmle-2026-1033",
    "type": "kmle",
@@ -997,6 +1146,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0152.md",
    "snippet": "An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago",
    "text": "Biochemistry Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned MCAD-deficiency beta-oxidation hypoketotic-hypoglycemia acylcarnitine fasting-avoidance medium-chain-triglycerides newborn-screening ACADM USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance) An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago. He was born at term in a country without expanded newborn metabolic screening and has grown normally. On arrival he is drowsy but arousable, with mild hepatomegaly and no focal neurologic deficits. His vital signs and laboratory studies are shown. Intravenous dextrose is given, and within 30 minutes he is alert and playful. After recovery, plasma acylcarnitine profiling and urine organic acid analysis establish the diagnosis, and the parents ask how to prevent another episode. Which of the following is the most appropriate long term dietary recommendation? A. Ketogenic high fat diet B. Medium chain triglyceride oil supplementation C. Frequent carbohydrate containing meals with avoidance of fasting D. Strict dietary protein restriction E. Elimination of fructose and sucrose 16시간 금식 후 저혈당인데 케톤이 거의 없고(hypoketotic hypoglycemia), 암모니아·AST가 오르고, 아실카르니틴에서 C8(octanoylcarnitine)이 우세하게 오르며 소변에 hexanoylglycine·suberylglycine이 나오는 것은 중쇄 아실 CoA 탈수소효소(MCAD) 결핍의 고전적 소견이다. 중쇄 지방산의 β 산화가 막혀 케톤을 만들지 못하므로, 공복 시 뇌·근육이 의존할 대체 연료가 없고 간의 포도당신생합성도 아세틸 CoA 부족으로 약해져 저혈당이 온다. 따라서 장기 관리의 핵심은 '금식을 피하는 것'이다 — 나이에 맞는 최대 금식 시간(유아 8–12시간)을 넘기지 않게 자주 탄수화물 식사를 주고, 병 중에는 조기 포도당 공급(경구 해결 안 되면 IV dextrose)을 한다. 고지방 케톤식(A)은 산화 못 하는 지방을 더 주는 것이고, MCT 오일(B)은 기질 자체(C8–C10)를 직접 공급해 급성 대사 위기를 유발하는 금기이며(장쇄 지방산 산화장애의 치료와 혼동하기 쉬운 함정), 단백질 제한(D)은 요소회로 장애·유기산혈증의 관리, 과당·자당 배제(E)는 유전성 과당불내성의 관리다."
+  },
+  {
+   "id": "paper-2026-0607",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of craniofacial surgery",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0607_early_versus_late_cranioplasty_following_decompressive_crani.md",
+   "snippet": "Title Early Versus Late Cranioplasty Following Decompressive Craniectomy: A Propensity Matched Postoperative Outcome Analysis Authors Hong Jinpyo, Bhanja Debarati, Lin Liushung, Hallan David, Bailey David, Park Haejoe, Rizk Elias Journal / ",
+   "text": "Surgery scraped pubmed PubMed / The Journal of craniofacial surgery Title Early Versus Late Cranioplasty Following Decompressive Craniectomy: A Propensity Matched Postoperative Outcome Analysis Authors Hong Jinpyo, Bhanja Debarati, Lin Liushung, Hallan David, Bailey David, Park Haejoe, Rizk Elias Journal / DOI The Journal of craniofacial surgery · DOI: 10.1097/SCS.0000000000013385 · PMID: 42743547 https://pubmed.ncbi.nlm.nih.gov/42743547/ Abstract OBJECTIVE: Postoperative complications following cranioplasty occur in nearly 30% of patients requiring decompressive craniectomy (DC). Controversy exists regarding the procedure's timing, particularly whether performing cranioplasty closer to or further from the craniectomy reduces morbidity. Both strategies offer distinct benefits and associated risks; however, the literature remains inconclusive regarding postoperative complication rates. METHODS: We performed a retrospective cohort study using the TriNetX database. Patients were identified as undergoing early (0 90 d) or late (91 d 1 y) cranioplasty following craniectomy. Propensity score adjustment was used to match cohorts on demographics, significant preoperative comorbidities, and anticoagulant use. Postoperative outcomes, such as seizures, intracerebral hemorrhage, hydrocephalus, and infection, were measured within 6 months following cranioplasty. Complication rates were compared between groups using unadjusted odds ratios (OR) and 95% confidence intervals (CI). Kaplan Meier survival analysis and log rank tests were used to compare mortality. RESULTS: A total of 2761 patients were included in this analysis (1140 early; 1621 late). Mean ages at cranioplasty were 42.5 and 43 years for early and late cohorts, respectively. Sixty six percent and 69% were male, respectively. After matching, 994 patients remained in each cohort. Patients undergoing early cranioplasty had significantly higher rates of intracerebral hemorrhage (OR, 2.06; CI, 1.05 4.05) and hydrocephalus (OR, 1.76; CI, 1.05 2.96). Rates of seizure (16.39% versus 12.59%; OR, 1.36; CI, 0.97 1.91), wound infection (7.64% versus 6.13%; OR, 1.27; CI, 0.89 1.80), and intracranial infection (2.33% versus 1.12%; OR, 2.11; CI, 0.99 4.50) were all higher in the early cohort. Six month mortality was significantly higher in the early cohort compared with the late cohort (OR, 2.11; CI, 1.32 3.37; P = 0.0007). CONCLUSIONS: These findings suggest that late cranioplasty may reduce postoperative morbidity. The timing of cranioplasty appears to be implicated in outcomes, and prospective studies that involve patient goals and perspectives are needed to validate these results. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0606",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of extra-corporeal technology",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0606_sbuf_smuf_on_the_path_to_the_optimum_hemofiltration_techniqu.md",
+   "snippet": "Title SBUF SMUF: On the path to the optimum hemofiltration technique in pediatric cardiopulmonary bypass: A randomized clinical trial Authors Shadmehr Mehrtash, Ali Babar, Abdollahzadeh Rosa, Zarrabi Khalil, Gerami Hamid, Butt Salman Parvai",
+   "text": "Pediatrics scraped pubmed PubMed / The journal of extra-corporeal technology Title SBUF SMUF: On the path to the optimum hemofiltration technique in pediatric cardiopulmonary bypass: A randomized clinical trial Authors Shadmehr Mehrtash, Ali Babar, Abdollahzadeh Rosa, Zarrabi Khalil, Gerami Hamid, Butt Salman Parvaiz Journal / DOI The journal of extra corporeal technology · DOI: 10.1051/ject/2026020 · PMID: 42743423 https://pubmed.ncbi.nlm.nih.gov/42743423/ Abstract BACKGROUND: Hemofiltration during pediatric cardiopulmonary bypass (CPB) is essential to mitigate hemodilution, inflammatory responses, and postoperative complications. Conventional ultrafiltration (CUF) is widely practiced, but novel methods such as subzero balanced ultrafiltration combined with simple modified ultrafiltration (SBUF SMUF) may offer superior outcomes. OBJECTIVE: To compare the clinical efficacy and safety of CUF versus SBUF SMUF in pediatric patients undergoing open heart surgery. METHODS: In this prospective randomized, outcome assessor blinded clinical trial, 80 pediatric patients with congenital heart disease were allocated to either CUF (n = 40) or SBUF SMUF (n = 40) during CPB. Baseline demographics, intraoperative characteristics, fluid balance, blood product utilization, and postoperative outcomes were assessed. Statistical analysis was conducted using independent t tests, Chi square tests, and Fisher's exact tests. Statistical significance was defined as a two tailed p Value of less than 0.05. RESULTS: Demographic and preoperative variables were comparable between groups. Mean fluid balance was significantly positive in the CUF group (+192.1 ± 178.8 mL) but negative in the SBUF SMUF group ( 105.0 ± 78.9 mL, p < 0.001). The SBUF SMUF group required significantly less intraoperative PRBC (141.7 ± 70.2 vs. 261.0 ± 68.8 mL, p < 0.001) and postoperative FFP transfusion (2% vs. 10%, p = 0.020). Post bypass hematocrit levels were higher (31.2% vs. 27.3%, p = 0.001) and extubation occurred earlier in the SBUF SMUF group (1.05 ± 1.03 vs. 2.27 ± 2.37 days, p = 0.006). No significant differences were observed in potassium levels or incidence of acute kidney injury. CONCLUSION: The SBUF SMUF technique is safe, effective, and superior to CUF in optimizing fluid balance, reducing blood product utilization, and facilitating earlier extubation in pediatric cardiac surgery. No additional risk of oliguria or electrolyte imbalance was observed compared to CUF. Its simplicity and reproducibility support its consideration as a standard approach in pediatric CPB. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0605",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS neglected tropical diseases",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0605_evaluation_of_six_different_tests_for_schistosoma_haematobiu.md",
+   "snippet": "Title Evaluation of six different tests for Schistosoma haematobium diagnosis in a near elimination setting: A prospective observational diagnostic accuracy study Authors Ndum Naomi C, Ali Said M, Ali Mohammed N, Bergelin John, Hattendorf J",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PLoS neglected tropical diseases Title Evaluation of six different tests for Schistosoma haematobium diagnosis in a near elimination setting: A prospective observational diagnostic accuracy study Authors Ndum Naomi C, Ali Said M, Ali Mohammed N, Bergelin John, Hattendorf Jan, Hoekstra Pytsje T, van Lieshout Lisette, Pennance Tom, et al. Journal / DOI PLoS neglected tropical diseases · DOI: 10.1371/journal.pntd.0014066 · PMID: 42743322 https://pubmed.ncbi.nlm.nih.gov/42743322/ Abstract BACKGROUND: Accurate diagnostic tools are needed in schistosomiasis elimination settings to determine prevalence thresholds for assigning or stopping interventions, guide pre and post elimination surveillance, and verify whether elimination has been reached. We assessed the accuracy of six different diagnostic tests in Pemba, Tanzania, a setting approaching Schistosoma haematobium elimination. METHODOLOGY: A prospective diagnostic accuracy study was conducted from February to April 2025. From an initial cross sectional single day urine filtration (UF) microscopy screening of 784 students, 69 S. haematobium positive and 212 negative students were randomly selected for longitudinal follow up. Four additional urine samples collected over four different days, were available from 262/281 participants and subjected to UF microscopy. One sample per participant was analysed in parallel with five additional diagnostics: microscopy based artificial intelligence (AI) scanner, Schistosoma ITS 2 qPCR, S. haematobium Dra 1 recombinase polymerase amplification (RPA), Hemastix reagent strips, and up converting particle lateral flow circulating anodic antigen assay (UCP LF CAA). We assessed the sensitivity and specificity of the different diagnostics, using 5 day UF microscopy as reference test. PRINCIPAL FINDINGS: A total of 85/262 participants were S. haematobium positive using 5 day UF microscopy. Directly compared with the reference test, the sensitivity for single sample examination was: AI scanner: 76.7% (95% confidence interval (CI): 71.0 82.5%), qPCR: 76.0% (95% CI: 70.1 81.4%), UF microscopy: 61.2% (95% CI: 55.3 67.1%), RPA: 56.1% (95% CI: 50.0 62.2%), Hemastix: 44.6% (95% CI: 38.5 50.7%), and UCP LF CAA: 30.6% (95% CI: 24.9 36.3%). Sensitivity increased with increasing infection intensity. The specificity of all investigated diagnostics was 92%, except for qPCR and RPA. CONCLUSIONS/SIGNIFICANCE: In near elimination settings, multiple day urine examination with standard UF microscopy substantially improves case detection but is operationally challenging. For single sample testing, among the six diagnostics investigated, the AI scanner proved to be the most accurate. Hence, the AI scanner might offer a promising alternative for research, clinical and programme use, but requires further validation in other settings and cost effectiveness analyses. Trial registration: clinicaltrials.gov, NCT06808750. Registered 08 January 2025, https://clinicaltrials.gov/study/NCT06808750. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0604",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR cancer",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0604_ai_agents_for_multimodal_oncology_diagnosis_toward_transpare.md",
+   "snippet": "Title AI Agents for Multimodal Oncology Diagnosis: Toward Transparent and Traceable Clinical Decision Support Authors Yang Liuyang, Shan Liyu, Yao Xiangmei, Zhao Renbin, Li Zengzheng, Feng Shuai, Wang Yajie Journal / DOI JMIR cancer · DOI: ",
+   "text": "Pathology scraped pubmed PubMed / JMIR cancer Title AI Agents for Multimodal Oncology Diagnosis: Toward Transparent and Traceable Clinical Decision Support Authors Yang Liuyang, Shan Liyu, Yao Xiangmei, Zhao Renbin, Li Zengzheng, Feng Shuai, Wang Yajie Journal / DOI JMIR cancer · DOI: 10.2196/103545 · PMID: 42743545 https://pubmed.ncbi.nlm.nih.gov/42743545/ Abstract Cancer diagnosis depends on data from radiology, digital pathology, molecular profiling, laboratory testing, and longitudinal clinical records. AI performs well in selected tasks, but most systems remain narrow and disconnected from the iterative reasoning required in oncology. This Viewpoint defines an AI agent as a feedback driven system that maintains task state, selects among governed tools, observes results, and revises its plan under explicit safety constraints. This definition separates agents from multimodal foundation models, retrieval augmented generation, and fixed workflow automation. We organize the discussion across multimodal data collection, preprocessing, fusion and representation learning, and diagnostic decision support. We distinguished agent level evidence, component or infrastructure level evidence, and prospective propositions throughout. Clinical translation will require resilient failure handling, guideline version control, prospective evaluation, computational and workflow feasibility, and clinician authority over final decisions. The near term opportunity is therefore transparent and traceable clinical decision support rather than autonomous cancer diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0603",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0603_bacterial_rna_downregulates_mhc_i_in_tumor_cell_lines_promot.md",
+   "snippet": "Title Bacterial RNA downregulates MHC I in tumor cell lines, promoting NK response and delaying tumor growth Authors Serafino Agustina, Vermeulen Mónica, Bertinat Yasmín A, Birnberg Weiss Federico, Castro Joselyn E, Bordignon María Belén, P",
+   "text": "Hematology-Oncology scraped pubmed PubMed / PloS one Title Bacterial RNA downregulates MHC I in tumor cell lines, promoting NK response and delaying tumor growth Authors Serafino Agustina, Vermeulen Mónica, Bertinat Yasmín A, Birnberg Weiss Federico, Castro Joselyn E, Bordignon María Belén, Pesce Viglietti Ayelén I, Bueno Jorgelina, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0357999 · PMID: 42743356 https://pubmed.ncbi.nlm.nih.gov/42743356/ Abstract Immunotherapy has introduced a new era in cancer treatment. The clinical goal of cancer immunotherapy is to prime the host immune system to provide passive or active immunity against malignant tumors. We have previously demonstrated that Brucella abortus (Ba) RNA downregulates IFN γ induced MHC I surface expression in human monocytes/macrophages via a TLR8 dependent mechanism. Other bacterial RNAs can mimic this phenomenon. The presence and activity of NK cells in tumors have been correlated with better patient survival, supporting the evidence that these cells are essential in the immune response against tumors. So, we postulated that bacterial RNA (bacRNA) can be used to modulate MHC I expression in tumors to enhance the NK cell response. Hence, the aim of this study was to investigate the immunomodulatory role of bacRNA in solid tumors. We first stimulated human glioblastomas U251 and LN 229, colorectal adenocarcinoma HT 29, breast cancer MCF 7, and murine melanoma B16 OVA cells with bacRNA in the presence of IFN γ. Our experiments demonstrated that bacRNA diminished IFN γ induced MHC I surface expression in all tumor cell lines. Moreover, the hTLR8 agonist ORN06/LyoVec mimicked the effect of bacRNA, indicating that MHC I reduction would be mediated by TLR8. In addition, the decrease in MHC I mediated by bacRNA correlated with increased NK cytotoxicity. Finally, treatment with either bacRNA or the ORN06 agonist resulted in greater immune cell infiltration and activation within the tumor compared to untreated mice. Furthermore, bacRNA delayed tumor growth in the B16 melanoma model. Overall, our established model of MHC I downregulation (either by bacRNA or synthetic hTLR8 agonists) could be used as a therapeutic strategy to promote anti tumor responses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0602",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Shock (Augusta, Ga.)",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0602_hsf1_protects_against_sepsis_by_transcriptionally_upregulati.md",
+   "snippet": "Title HSF1 Protects Against Sepsis by Transcriptionally Upregulating Neutrophil C5aR1 to Enhance Antimicrobial Defense Authors Song Kaiyuan, Tan Sichuang, Wang Nian, Song Ruoyu, Hu Qikang, Chen Huan, Wu Yongbin, Xiao Xianzhong, et al. Journ",
+   "text": "Infectious Disease scraped pubmed PubMed / Shock (Augusta, Ga.) Title HSF1 Protects Against Sepsis by Transcriptionally Upregulating Neutrophil C5aR1 to Enhance Antimicrobial Defense Authors Song Kaiyuan, Tan Sichuang, Wang Nian, Song Ruoyu, Hu Qikang, Chen Huan, Wu Yongbin, Xiao Xianzhong, et al. Journal / DOI Shock (Augusta, Ga.) · DOI: 10.1097/SHK.0000000000002941 · PMID: 42743325 https://pubmed.ncbi.nlm.nih.gov/42743325/ Abstract Sepsis is a life threatening organ dysfunction caused by a dysregulated host response to infection. The resulting septic shock and multiple organ dysfunction syndrome (MODS) are the primary drivers of mortality. Heat shock factor 1 (HSF1), a master transcription factor regulating cellular stress responses, has been shown to exert protective effects during sepsis. Here, our RNA seq analysis revealed a significant downregulation of complement C5a receptor 1 (C5aR1) in both HSF1 deficient and septic mice; however, the precise role of C5aR1 in sepsis progression remains poorly understood. In this study, we demonstrated that both C5aR1 expression on peripheral blood neutrophils and plasma soluble C5aR1 levels are significantly reduced in patients with sepsis. Neutrophil C5aR1 was also markedly decreased in septic mice and inversely correlated with disease severity. Functionally, overexpression of C5aR1 alleviated tissue injury and reduced organ bacterial burden in septic mice. Mechanistically, EMSA and dual luciferase reporter assays confirmed that HSF1 directly binds to the heat shock element (HSE) within the C5aR1 promoter to positively regulate its transcription. Collectively, our study systematically characterizes the alterations of C5aR1 at the membrane, soluble, and transcriptional levels in sepsis and elucidates a novel molecular mechanism by which HSF1 modulates neutrophil C5aR1 to enhance antimicrobial defense and mitigate multi organ injury, providing fresh insights into potential diagnostic and therapeutic strategies for sepsis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0601",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of extra-corporeal technology",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0601_optimizing_cardiac_surgery_outcomes_in_morbid_obesity_surgic.md",
+   "snippet": "Title Optimizing cardiac surgery outcomes in morbid obesity: Surgical, anesthetic, perfusion, and critical care considerations, a narrative review Authors Butt Salman Pervaiz, Abdulaziz Salman, Razzaq Nabeel, Anand Rhea, Srivatav Nilesh, Sa",
+   "text": "Cardiology scraped pubmed PubMed / The journal of extra-corporeal technology Title Optimizing cardiac surgery outcomes in morbid obesity: Surgical, anesthetic, perfusion, and critical care considerations, a narrative review Authors Butt Salman Pervaiz, Abdulaziz Salman, Razzaq Nabeel, Anand Rhea, Srivatav Nilesh, Saleem Yasir, Lender Olga, Griffin Mairead, et al. Journal / DOI The journal of extra corporeal technology · DOI: 10.1051/ject/2026021 · PMID: 42743430 https://pubmed.ncbi.nlm.nih.gov/42743430/ Abstract INTRODUCTION: The global prevalence of morbid obesity is increasing, presenting challenges in cardiac surgery. Morbid obesity (body mass index ≥40 kg/m2) is associated with a high burden of cardiometabolic comorbidities and obesity specific physiological alterations that increase perioperative risk and complicate surgical, anesthetic, and cardiopulmonary bypass management. As the number of obese patients presenting for cardiac surgery rises, a synthesis of current evidence and perioperative strategies is needed to optimize outcomes in this high risk population. METHODS: This narrative review identified relevant literature through targeted searches of PubMed and Google Scholar, supplemented by screening the reference lists of key articles. Search terms included combinations of \"cardiac surgery,\" \"morbid obesity,\" \"obesity,\" \"cardiopulmonary bypass,\" \"anesthesia,\" \"perfusion,\" \"postoperative complications,\" and \"critical care.\" Studies were mapped to perioperative domains, including anesthesia and respiratory management, surgical and wound related considerations, perfusion and cardiopulmonary bypass strategy, intensive care unit (ICU) outcomes, renal complications, atrial fibrillation, bleeding, thromboembolism, and mortality. The evidence base was predominantly observational and review based, with limited randomized evidence. DISCUSSION: Obesity poses multifactorial challenges in cardiovascular surgery by altering cardiac morphology, hemodynamics, and perioperative outcomes. Associated comorbidities such as diabetes, obstructive sleep apnea, and pulmonary hypertension increase operative risk and complicate anesthetic and perfusion management. Obese patients demonstrate altered pharmacokinetics, reduced pulmonary compliance, and heightened inflammation, requiring individualized strategies. Available evidence suggests that lean body mass informed perfusion, selected off pump CABG, and early extubation may reduce complications, although high quality randomized evidence remains limited. CONCLUSION: Cardiac surgery in morbidly obese patients requires a coordinated, physiology driven perioperative strategy to address obesity specific anatomical and functional challenges. Tailored anesthetic, perfusion, and surgical approaches, supported by close multidisciplinary collaboration, are central to optimizing outcomes. Further research is needed to refine perioperative protocols, improve risk stratification beyond BMI, and clarify long term cardiovascular outcomes following surgery in this population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0036",
