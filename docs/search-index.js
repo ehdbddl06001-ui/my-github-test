@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2475,
+  "total": 2476,
   "byType": {
    "usmle": 150,
+   "anatomy": 663,
    "kmle": 1003,
-   "anatomy": 662,
    "paper": 607,
    "imaging": 36,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 662,
+   "Anatomy": 663,
    "Cardiology": 189,
    "Nephrology": 158,
    "Infectious Disease": 136,
@@ -59,7 +59,7 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1634,
+   "high": 1635,
    "medium": 792,
    "low": 49
   },
@@ -214,6 +214,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0158.md",
    "snippet": "A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen,",
    "text": "Pathology Moon Facies and a Unilateral Adrenal Mass With Suppressed ACTH — What Happens to the Cortex on the Other Side Cushing-syndrome adrenal-adenoma ACTH-independent zona-fasciculata zona-reticularis adrenal-atrophy trophic-hormone contralateral-atrophy hypercortisolism USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Adrenal Cortex, Hypercortisolism; Nieman LK et al. Treatment of Cushing's Syndrome: Endocrine Society Guideline. J Clin Endocrinol Metab 2015) A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen, and proximal muscle weakness. Her vital signs and laboratory studies are shown. Adrenal CT shows a 3.2 cm well circumscribed, homogeneous mass in the left adrenal gland. Which of the following is the most likely finding in the right adrenal gland of this patient? A. Atrophy of the zona fasciculata and zona reticularis B. Diffuse hyperplasia of all three cortical zones C. Atrophy of the entire cortex including the zona glomerulosa D. Micronodular hyperplasia with lipofuscin rich pigmented nodules E. Hemorrhagic infarction of the cortex and medulla 고코르티솔혈증(소변 유리 코르티솔 ↑, 1 mg 덱사메타손 억제 실패) + ACTH 억제(< 5) + 편측 부신 종괴 = ACTH 비의존성 쿠싱증후군(부신 선종). 선종이 자율적으로 분비하는 코르티솔이 시상하부·뇌하수체를 음성 되먹임으로 눌러 ACTH 가 소실되고, ACTH 를 영양호르몬으로 삼는 속상대(zona fasciculata)·망상대(zona reticularis)는 종괴가 없는 반대쪽 부신(및 종괴 주변 정상 조직)에서 위축된다. 사구대(zona glomerulosa)는 레닌–안지오텐신 II·칼륨이 조절하므로 보존된다(알도스테론·레닌 정상). 양측 미만성 과형성(B)은 ACTH 의존성(뇌하수체·이소성) 때, 색소성 미세결절 과형성(D)은 원발성 색소성 결절성 부신피질질환(Carney 복합체)이며 편측 3 cm 종괴·ACTH 억제와 맞지 않는다. 전 피질 위축(C)은 사구대가 ACTH 비의존적이므로 틀리고, 출혈성 경색(E)은 Waterhouse Friderichsen·항응고 합병증에서 보이는 부신 파괴 소견이다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-17",
+   "type": "anatomy",
+   "unit": "팔·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-17",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/anatomy/daily/2026-09-17.md",
+   "snippet": "오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-17 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "kmle-2026-1033",
