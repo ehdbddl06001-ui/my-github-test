@@ -1,32 +1,32 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-15",
+ "generated": "2026-09-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2462,
+  "total": 2470,
   "byType": {
+   "anatomy": 663,
    "kmle": 1003,
-   "anatomy": 662,
    "usmle": 144,
+   "paper": 607,
    "imaging": 36,
-   "paper": 600,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 662,
-   "Cardiology": 188,
+   "Anatomy": 663,
+   "Cardiology": 189,
    "Nephrology": 158,
-   "Infectious Disease": 135,
-   "Pediatrics": 113,
-   "Hematology-Oncology": 89,
-   "Pathology": 85,
+   "Infectious Disease": 136,
+   "Pediatrics": 114,
+   "Hematology-Oncology": 90,
+   "Pathology": 86,
    "Obstetrics & Gynecology": 76,
    "Neurology": 75,
    "Psychiatry": 74,
-   "Surgery": 68,
+   "Surgery": 69,
    "Endocrinology": 64,
    "Gastroenterology": 63,
    "Pulmonology": 63,
@@ -36,7 +36,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 62,
    "Rheumatology": 62,
    "Hematology": 61,
-   "Laboratory Medicine": 59,
+   "Laboratory Medicine": 60,
    "산부인과": 19,
    "Physiology": 17,
    "Pharmacology": 11,
@@ -59,13 +59,27 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1628,
-   "medium": 785,
+   "high": 1629,
+   "medium": 792,
    "low": 49
   },
   "tagCount": 3481
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-17",
+   "type": "anatomy",
+   "unit": "팔·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-17",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/anatomy/daily/2026-09-17.md",
+   "snippet": "오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-17 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-1033",
    "type": "kmle",
@@ -997,6 +1011,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0152.md",
    "snippet": "An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago",
    "text": "Biochemistry Lethargy and Hypoketotic Hypoglycemia After a Night of Vomiting — The Dietary Rule That Follows When Medium-Chain Fatty Acids Cannot Be Burned MCAD-deficiency beta-oxidation hypoketotic-hypoglycemia acylcarnitine fasting-avoidance medium-chain-triglycerides newborn-screening ACADM USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fatty Acid Oxidation; Nelson Textbook of Pediatrics 22e — Defects in Metabolism of Lipids; Genetics in Medicine 2021 ACMG/Newborn screening MCADD management guidance) An 18 month old boy is brought to the emergency department because of lethargy that began this morning. For the past 2 days he has had a viral gastroenteritis with vomiting and has taken little by mouth; his last meal was about 16 hours ago. He was born at term in a country without expanded newborn metabolic screening and has grown normally. On arrival he is drowsy but arousable, with mild hepatomegaly and no focal neurologic deficits. His vital signs and laboratory studies are shown. Intravenous dextrose is given, and within 30 minutes he is alert and playful. After recovery, plasma acylcarnitine profiling and urine organic acid analysis establish the diagnosis, and the parents ask how to prevent another episode. Which of the following is the most appropriate long term dietary recommendation? A. Ketogenic high fat diet B. Medium chain triglyceride oil supplementation C. Frequent carbohydrate containing meals with avoidance of fasting D. Strict dietary protein restriction E. Elimination of fructose and sucrose 16시간 금식 후 저혈당인데 케톤이 거의 없고(hypoketotic hypoglycemia), 암모니아·AST가 오르고, 아실카르니틴에서 C8(octanoylcarnitine)이 우세하게 오르며 소변에 hexanoylglycine·suberylglycine이 나오는 것은 중쇄 아실 CoA 탈수소효소(MCAD) 결핍의 고전적 소견이다. 중쇄 지방산의 β 산화가 막혀 케톤을 만들지 못하므로, 공복 시 뇌·근육이 의존할 대체 연료가 없고 간의 포도당신생합성도 아세틸 CoA 부족으로 약해져 저혈당이 온다. 따라서 장기 관리의 핵심은 '금식을 피하는 것'이다 — 나이에 맞는 최대 금식 시간(유아 8–12시간)을 넘기지 않게 자주 탄수화물 식사를 주고, 병 중에는 조기 포도당 공급(경구 해결 안 되면 IV dextrose)을 한다. 고지방 케톤식(A)은 산화 못 하는 지방을 더 주는 것이고, MCT 오일(B)은 기질 자체(C8–C10)를 직접 공급해 급성 대사 위기를 유발하는 금기이며(장쇄 지방산 산화장애의 치료와 혼동하기 쉬운 함정), 단백질 제한(D)은 요소회로 장애·유기산혈증의 관리, 과당·자당 배제(E)는 유전성 과당불내성의 관리다."
+  },
+  {
+   "id": "paper-2026-0607",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of craniofacial surgery",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0607_early_versus_late_cranioplasty_following_decompressive_crani.md",
+   "snippet": "Title Early Versus Late Cranioplasty Following Decompressive Craniectomy: A Propensity Matched Postoperative Outcome Analysis Authors Hong Jinpyo, Bhanja Debarati, Lin Liushung, Hallan David, Bailey David, Park Haejoe, Rizk Elias Journal / ",
+   "text": "Surgery scraped pubmed PubMed / The Journal of craniofacial surgery Title Early Versus Late Cranioplasty Following Decompressive Craniectomy: A Propensity Matched Postoperative Outcome Analysis Authors Hong Jinpyo, Bhanja Debarati, Lin Liushung, Hallan David, Bailey David, Park Haejoe, Rizk Elias Journal / DOI The Journal of craniofacial surgery · DOI: 10.1097/SCS.0000000000013385 · PMID: 42743547 https://pubmed.ncbi.nlm.nih.gov/42743547/ Abstract OBJECTIVE: Postoperative complications following cranioplasty occur in nearly 30% of patients requiring decompressive craniectomy (DC). Controversy exists regarding the procedure's timing, particularly whether performing cranioplasty closer to or further from the craniectomy reduces morbidity. Both strategies offer distinct benefits and associated risks; however, the literature remains inconclusive regarding postoperative complication rates. METHODS: We performed a retrospective cohort study using the TriNetX database. Patients were identified as undergoing early (0 90 d) or late (91 d 1 y) cranioplasty following craniectomy. Propensity score adjustment was used to match cohorts on demographics, significant preoperative comorbidities, and anticoagulant use. Postoperative outcomes, such as seizures, intracerebral hemorrhage, hydrocephalus, and infection, were measured within 6 months following cranioplasty. Complication rates were compared between groups using unadjusted odds ratios (OR) and 95% confidence intervals (CI). Kaplan Meier survival analysis and log rank tests were used to compare mortality. RESULTS: A total of 2761 patients were included in this analysis (1140 early; 1621 late). Mean ages at cranioplasty were 42.5 and 43 years for early and late cohorts, respectively. Sixty six percent and 69% were male, respectively. After matching, 994 patients remained in each cohort. Patients undergoing early cranioplasty had significantly higher rates of intracerebral hemorrhage (OR, 2.06; CI, 1.05 4.05) and hydrocephalus (OR, 1.76; CI, 1.05 2.96). Rates of seizure (16.39% versus 12.59%; OR, 1.36; CI, 0.97 1.91), wound infection (7.64% versus 6.13%; OR, 1.27; CI, 0.89 1.80), and intracranial infection (2.33% versus 1.12%; OR, 2.11; CI, 0.99 4.50) were all higher in the early cohort. Six month mortality was significantly higher in the early cohort compared with the late cohort (OR, 2.11; CI, 1.32 3.37; P = 0.0007). CONCLUSIONS: These findings suggest that late cranioplasty may reduce postoperative morbidity. The timing of cranioplasty appears to be implicated in outcomes, and prospective studies that involve patient goals and perspectives are needed to validate these results. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0606",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of extra-corporeal technology",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0606_sbuf_smuf_on_the_path_to_the_optimum_hemofiltration_techniqu.md",
+   "snippet": "Title SBUF SMUF: On the path to the optimum hemofiltration technique in pediatric cardiopulmonary bypass: A randomized clinical trial Authors Shadmehr Mehrtash, Ali Babar, Abdollahzadeh Rosa, Zarrabi Khalil, Gerami Hamid, Butt Salman Parvai",
+   "text": "Pediatrics scraped pubmed PubMed / The journal of extra-corporeal technology Title SBUF SMUF: On the path to the optimum hemofiltration technique in pediatric cardiopulmonary bypass: A randomized clinical trial Authors Shadmehr Mehrtash, Ali Babar, Abdollahzadeh Rosa, Zarrabi Khalil, Gerami Hamid, Butt Salman Parvaiz Journal / DOI The journal of extra corporeal technology · DOI: 10.1051/ject/2026020 · PMID: 42743423 https://pubmed.ncbi.nlm.nih.gov/42743423/ Abstract BACKGROUND: Hemofiltration during pediatric cardiopulmonary bypass (CPB) is essential to mitigate hemodilution, inflammatory responses, and postoperative complications. Conventional ultrafiltration (CUF) is widely practiced, but novel methods such as subzero balanced ultrafiltration combined with simple modified ultrafiltration (SBUF SMUF) may offer superior outcomes. OBJECTIVE: To compare the clinical efficacy and safety of CUF versus SBUF SMUF in pediatric patients undergoing open heart surgery. METHODS: In this prospective randomized, outcome assessor blinded clinical trial, 80 pediatric patients with congenital heart disease were allocated to either CUF (n = 40) or SBUF SMUF (n = 40) during CPB. Baseline demographics, intraoperative characteristics, fluid balance, blood product utilization, and postoperative outcomes were assessed. Statistical analysis was conducted using independent t tests, Chi square tests, and Fisher's exact tests. Statistical significance was defined as a two tailed p Value of less than 0.05. RESULTS: Demographic and preoperative variables were comparable between groups. Mean fluid balance was significantly positive in the CUF group (+192.1 ± 178.8 mL) but negative in the SBUF SMUF group ( 105.0 ± 78.9 mL, p < 0.001). The SBUF SMUF group required significantly less intraoperative PRBC (141.7 ± 70.2 vs. 261.0 ± 68.8 mL, p < 0.001) and postoperative FFP transfusion (2% vs. 10%, p = 0.020). Post bypass hematocrit levels were higher (31.2% vs. 27.3%, p = 0.001) and extubation occurred earlier in the SBUF SMUF group (1.05 ± 1.03 vs. 2.27 ± 2.37 days, p = 0.006). No significant differences were observed in potassium levels or incidence of acute kidney injury. CONCLUSION: The SBUF SMUF technique is safe, effective, and superior to CUF in optimizing fluid balance, reducing blood product utilization, and facilitating earlier extubation in pediatric cardiac surgery. No additional risk of oliguria or electrolyte imbalance was observed compared to CUF. Its simplicity and reproducibility support its consideration as a standard approach in pediatric CPB. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0605",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS neglected tropical diseases",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0605_evaluation_of_six_different_tests_for_schistosoma_haematobiu.md",
+   "snippet": "Title Evaluation of six different tests for Schistosoma haematobium diagnosis in a near elimination setting: A prospective observational diagnostic accuracy study Authors Ndum Naomi C, Ali Said M, Ali Mohammed N, Bergelin John, Hattendorf J",
+   "text": "Laboratory Medicine scraped pubmed PubMed / PLoS neglected tropical diseases Title Evaluation of six different tests for Schistosoma haematobium diagnosis in a near elimination setting: A prospective observational diagnostic accuracy study Authors Ndum Naomi C, Ali Said M, Ali Mohammed N, Bergelin John, Hattendorf Jan, Hoekstra Pytsje T, van Lieshout Lisette, Pennance Tom, et al. Journal / DOI PLoS neglected tropical diseases · DOI: 10.1371/journal.pntd.0014066 · PMID: 42743322 https://pubmed.ncbi.nlm.nih.gov/42743322/ Abstract BACKGROUND: Accurate diagnostic tools are needed in schistosomiasis elimination settings to determine prevalence thresholds for assigning or stopping interventions, guide pre and post elimination surveillance, and verify whether elimination has been reached. We assessed the accuracy of six different diagnostic tests in Pemba, Tanzania, a setting approaching Schistosoma haematobium elimination. METHODOLOGY: A prospective diagnostic accuracy study was conducted from February to April 2025. From an initial cross sectional single day urine filtration (UF) microscopy screening of 784 students, 69 S. haematobium positive and 212 negative students were randomly selected for longitudinal follow up. Four additional urine samples collected over four different days, were available from 262/281 participants and subjected to UF microscopy. One sample per participant was analysed in parallel with five additional diagnostics: microscopy based artificial intelligence (AI) scanner, Schistosoma ITS 2 qPCR, S. haematobium Dra 1 recombinase polymerase amplification (RPA), Hemastix reagent strips, and up converting particle lateral flow circulating anodic antigen assay (UCP LF CAA). We assessed the sensitivity and specificity of the different diagnostics, using 5 day UF microscopy as reference test. PRINCIPAL FINDINGS: A total of 85/262 participants were S. haematobium positive using 5 day UF microscopy. Directly compared with the reference test, the sensitivity for single sample examination was: AI scanner: 76.7% (95% confidence interval (CI): 71.0 82.5%), qPCR: 76.0% (95% CI: 70.1 81.4%), UF microscopy: 61.2% (95% CI: 55.3 67.1%), RPA: 56.1% (95% CI: 50.0 62.2%), Hemastix: 44.6% (95% CI: 38.5 50.7%), and UCP LF CAA: 30.6% (95% CI: 24.9 36.3%). Sensitivity increased with increasing infection intensity. The specificity of all investigated diagnostics was 92%, except for qPCR and RPA. CONCLUSIONS/SIGNIFICANCE: In near elimination settings, multiple day urine examination with standard UF microscopy substantially improves case detection but is operationally challenging. For single sample testing, among the six diagnostics investigated, the AI scanner proved to be the most accurate. Hence, the AI scanner might offer a promising alternative for research, clinical and programme use, but requires further validation in other settings and cost effectiveness analyses. Trial registration: clinicaltrials.gov, NCT06808750. Registered 08 January 2025, https://clinicaltrials.gov/study/NCT06808750. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0604",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR cancer",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0604_ai_agents_for_multimodal_oncology_diagnosis_toward_transpare.md",
+   "snippet": "Title AI Agents for Multimodal Oncology Diagnosis: Toward Transparent and Traceable Clinical Decision Support Authors Yang Liuyang, Shan Liyu, Yao Xiangmei, Zhao Renbin, Li Zengzheng, Feng Shuai, Wang Yajie Journal / DOI JMIR cancer · DOI: ",
+   "text": "Pathology scraped pubmed PubMed / JMIR cancer Title AI Agents for Multimodal Oncology Diagnosis: Toward Transparent and Traceable Clinical Decision Support Authors Yang Liuyang, Shan Liyu, Yao Xiangmei, Zhao Renbin, Li Zengzheng, Feng Shuai, Wang Yajie Journal / DOI JMIR cancer · DOI: 10.2196/103545 · PMID: 42743545 https://pubmed.ncbi.nlm.nih.gov/42743545/ Abstract Cancer diagnosis depends on data from radiology, digital pathology, molecular profiling, laboratory testing, and longitudinal clinical records. AI performs well in selected tasks, but most systems remain narrow and disconnected from the iterative reasoning required in oncology. This Viewpoint defines an AI agent as a feedback driven system that maintains task state, selects among governed tools, observes results, and revises its plan under explicit safety constraints. This definition separates agents from multimodal foundation models, retrieval augmented generation, and fixed workflow automation. We organize the discussion across multimodal data collection, preprocessing, fusion and representation learning, and diagnostic decision support. We distinguished agent level evidence, component or infrastructure level evidence, and prospective propositions throughout. Clinical translation will require resilient failure handling, guideline version control, prospective evaluation, computational and workflow feasibility, and clinician authority over final decisions. The near term opportunity is therefore transparent and traceable clinical decision support rather than autonomous cancer diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0603",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0603_bacterial_rna_downregulates_mhc_i_in_tumor_cell_lines_promot.md",
+   "snippet": "Title Bacterial RNA downregulates MHC I in tumor cell lines, promoting NK response and delaying tumor growth Authors Serafino Agustina, Vermeulen Mónica, Bertinat Yasmín A, Birnberg Weiss Federico, Castro Joselyn E, Bordignon María Belén, P",
+   "text": "Hematology-Oncology scraped pubmed PubMed / PloS one Title Bacterial RNA downregulates MHC I in tumor cell lines, promoting NK response and delaying tumor growth Authors Serafino Agustina, Vermeulen Mónica, Bertinat Yasmín A, Birnberg Weiss Federico, Castro Joselyn E, Bordignon María Belén, Pesce Viglietti Ayelén I, Bueno Jorgelina, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0357999 · PMID: 42743356 https://pubmed.ncbi.nlm.nih.gov/42743356/ Abstract Immunotherapy has introduced a new era in cancer treatment. The clinical goal of cancer immunotherapy is to prime the host immune system to provide passive or active immunity against malignant tumors. We have previously demonstrated that Brucella abortus (Ba) RNA downregulates IFN γ induced MHC I surface expression in human monocytes/macrophages via a TLR8 dependent mechanism. Other bacterial RNAs can mimic this phenomenon. The presence and activity of NK cells in tumors have been correlated with better patient survival, supporting the evidence that these cells are essential in the immune response against tumors. So, we postulated that bacterial RNA (bacRNA) can be used to modulate MHC I expression in tumors to enhance the NK cell response. Hence, the aim of this study was to investigate the immunomodulatory role of bacRNA in solid tumors. We first stimulated human glioblastomas U251 and LN 229, colorectal adenocarcinoma HT 29, breast cancer MCF 7, and murine melanoma B16 OVA cells with bacRNA in the presence of IFN γ. Our experiments demonstrated that bacRNA diminished IFN γ induced MHC I surface expression in all tumor cell lines. Moreover, the hTLR8 agonist ORN06/LyoVec mimicked the effect of bacRNA, indicating that MHC I reduction would be mediated by TLR8. In addition, the decrease in MHC I mediated by bacRNA correlated with increased NK cytotoxicity. Finally, treatment with either bacRNA or the ORN06 agonist resulted in greater immune cell infiltration and activation within the tumor compared to untreated mice. Furthermore, bacRNA delayed tumor growth in the B16 melanoma model. Overall, our established model of MHC I downregulation (either by bacRNA or synthetic hTLR8 agonists) could be used as a therapeutic strategy to promote anti tumor responses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0602",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Shock (Augusta, Ga.)",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0602_hsf1_protects_against_sepsis_by_transcriptionally_upregulati.md",
+   "snippet": "Title HSF1 Protects Against Sepsis by Transcriptionally Upregulating Neutrophil C5aR1 to Enhance Antimicrobial Defense Authors Song Kaiyuan, Tan Sichuang, Wang Nian, Song Ruoyu, Hu Qikang, Chen Huan, Wu Yongbin, Xiao Xianzhong, et al. Journ",
+   "text": "Infectious Disease scraped pubmed PubMed / Shock (Augusta, Ga.) Title HSF1 Protects Against Sepsis by Transcriptionally Upregulating Neutrophil C5aR1 to Enhance Antimicrobial Defense Authors Song Kaiyuan, Tan Sichuang, Wang Nian, Song Ruoyu, Hu Qikang, Chen Huan, Wu Yongbin, Xiao Xianzhong, et al. Journal / DOI Shock (Augusta, Ga.) · DOI: 10.1097/SHK.0000000000002941 · PMID: 42743325 https://pubmed.ncbi.nlm.nih.gov/42743325/ Abstract Sepsis is a life threatening organ dysfunction caused by a dysregulated host response to infection. The resulting septic shock and multiple organ dysfunction syndrome (MODS) are the primary drivers of mortality. Heat shock factor 1 (HSF1), a master transcription factor regulating cellular stress responses, has been shown to exert protective effects during sepsis. Here, our RNA seq analysis revealed a significant downregulation of complement C5a receptor 1 (C5aR1) in both HSF1 deficient and septic mice; however, the precise role of C5aR1 in sepsis progression remains poorly understood. In this study, we demonstrated that both C5aR1 expression on peripheral blood neutrophils and plasma soluble C5aR1 levels are significantly reduced in patients with sepsis. Neutrophil C5aR1 was also markedly decreased in septic mice and inversely correlated with disease severity. Functionally, overexpression of C5aR1 alleviated tissue injury and reduced organ bacterial burden in septic mice. Mechanistically, EMSA and dual luciferase reporter assays confirmed that HSF1 directly binds to the heat shock element (HSE) within the C5aR1 promoter to positively regulate its transcription. Collectively, our study systematically characterizes the alterations of C5aR1 at the membrane, soluble, and transcriptional levels in sepsis and elucidates a novel molecular mechanism by which HSF1 modulates neutrophil C5aR1 to enhance antimicrobial defense and mitigate multi organ injury, providing fresh insights into potential diagnostic and therapeutic strategies for sepsis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0601",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The journal of extra-corporeal technology",
+   "confidence": "medium",
+   "date": "2026-09-15",
+   "path": "content/papers/2026/2026-09-15_paper-2026-0601_optimizing_cardiac_surgery_outcomes_in_morbid_obesity_surgic.md",
+   "snippet": "Title Optimizing cardiac surgery outcomes in morbid obesity: Surgical, anesthetic, perfusion, and critical care considerations, a narrative review Authors Butt Salman Pervaiz, Abdulaziz Salman, Razzaq Nabeel, Anand Rhea, Srivatav Nilesh, Sa",
+   "text": "Cardiology scraped pubmed PubMed / The journal of extra-corporeal technology Title Optimizing cardiac surgery outcomes in morbid obesity: Surgical, anesthetic, perfusion, and critical care considerations, a narrative review Authors Butt Salman Pervaiz, Abdulaziz Salman, Razzaq Nabeel, Anand Rhea, Srivatav Nilesh, Saleem Yasir, Lender Olga, Griffin Mairead, et al. Journal / DOI The journal of extra corporeal technology · DOI: 10.1051/ject/2026021 · PMID: 42743430 https://pubmed.ncbi.nlm.nih.gov/42743430/ Abstract INTRODUCTION: The global prevalence of morbid obesity is increasing, presenting challenges in cardiac surgery. Morbid obesity (body mass index ≥40 kg/m2) is associated with a high burden of cardiometabolic comorbidities and obesity specific physiological alterations that increase perioperative risk and complicate surgical, anesthetic, and cardiopulmonary bypass management. As the number of obese patients presenting for cardiac surgery rises, a synthesis of current evidence and perioperative strategies is needed to optimize outcomes in this high risk population. METHODS: This narrative review identified relevant literature through targeted searches of PubMed and Google Scholar, supplemented by screening the reference lists of key articles. Search terms included combinations of \"cardiac surgery,\" \"morbid obesity,\" \"obesity,\" \"cardiopulmonary bypass,\" \"anesthesia,\" \"perfusion,\" \"postoperative complications,\" and \"critical care.\" Studies were mapped to perioperative domains, including anesthesia and respiratory management, surgical and wound related considerations, perfusion and cardiopulmonary bypass strategy, intensive care unit (ICU) outcomes, renal complications, atrial fibrillation, bleeding, thromboembolism, and mortality. The evidence base was predominantly observational and review based, with limited randomized evidence. DISCUSSION: Obesity poses multifactorial challenges in cardiovascular surgery by altering cardiac morphology, hemodynamics, and perioperative outcomes. Associated comorbidities such as diabetes, obstructive sleep apnea, and pulmonary hypertension increase operative risk and complicate anesthetic and perfusion management. Obese patients demonstrate altered pharmacokinetics, reduced pulmonary compliance, and heightened inflammation, requiring individualized strategies. Available evidence suggests that lean body mass informed perfusion, selected off pump CABG, and early extubation may reduce complications, although high quality randomized evidence remains limited. CONCLUSION: Cardiac surgery in morbidly obese patients requires a coordinated, physiology driven perioperative strategy to address obesity specific anatomical and functional challenges. Tailored anesthetic, perfusion, and surgical approaches, supported by close multidisciplinary collaboration, are central to optimizing outcomes. Further research is needed to refine perioperative protocols, improve risk stratification beyond BMI, and clarify long term cardiovascular outcomes following surgery in this population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0036",
