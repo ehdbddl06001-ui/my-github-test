@@ -1,41 +1,41 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-16",
+ "generated": "2026-09-17",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2485,
+  "total": 2519,
   "byType": {
+   "kmle": 1035,
    "usmle": 150,
    "anatomy": 663,
-   "kmle": 1003,
+   "paper": 609,
    "imaging": 45,
-   "paper": 607,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 663,
-   "Cardiology": 189,
-   "Nephrology": 158,
-   "Infectious Disease": 136,
-   "Pediatrics": 114,
+   "Cardiology": 192,
+   "Nephrology": 160,
+   "Infectious Disease": 139,
+   "Pediatrics": 116,
    "Hematology-Oncology": 90,
    "Pathology": 87,
-   "Obstetrics & Gynecology": 77,
-   "Neurology": 75,
-   "Psychiatry": 75,
+   "Obstetrics & Gynecology": 79,
+   "Neurology": 77,
+   "Psychiatry": 77,
    "Surgery": 70,
-   "Endocrinology": 64,
-   "Gastroenterology": 63,
-   "Pulmonology": 63,
-   "Dermatology": 62,
-   "General Surgery": 62,
-   "Ophthalmology": 62,
-   "Orthopedics": 62,
-   "Rheumatology": 62,
-   "Hematology": 61,
+   "Endocrinology": 66,
+   "Gastroenterology": 65,
+   "Pulmonology": 65,
+   "Dermatology": 64,
+   "General Surgery": 64,
+   "Ophthalmology": 64,
+   "Orthopedics": 64,
+   "Rheumatology": 64,
+   "Hematology": 63,
    "Laboratory Medicine": 60,
    "산부인과": 24,
    "Physiology": 17,
@@ -59,13 +59,653 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1644,
-   "medium": 792,
+   "high": 1676,
+   "medium": 794,
    "low": 49
   },
-  "tagCount": 3517
+  "tagCount": 3636
  },
  "docs": [
+  {
+   "id": "kmle-2026-1065",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Intracerebral Hemorrhage on Dabigatran — Specific Reversal Agent",
+   "tags": [
+    "dabigatran",
+    "idarucizumab",
+    "anticoagulant-reversal",
+    "intracerebral-hemorrhage",
+    "DOAC"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1065.md",
+   "snippet": "76세 남자가 화장실에서 넘어진 뒤 심한 두통과 구토가 있고 왼팔·다리에 힘이 빠져 응급실에 왔다. 심방세동으로 항응고제를 복용 중이며 마지막으로 4시간 전에 먹었다. 진찰에서 왼쪽 상·하지 근력이 3등급이고 구음장애가 있다. 활력징후와 검사 소견은 자료와 같다. 출혈을 멈추기 위해 가장 먼저 투여할 것은? A. 안덱사넷 알파 B. 이다루시주맙 C. 프로타민 황산염 D. 비타민 K 정맥 주사 E. 신선동결혈장 다비가트란 복용 ",
+   "text": "Hematology Intracerebral Hemorrhage on Dabigatran — Specific Reversal Agent dabigatran idarucizumab anticoagulant-reversal intracerebral-hemorrhage DOAC KMLE 2026 / Claude Routine 76세 남자가 화장실에서 넘어진 뒤 심한 두통과 구토가 있고 왼팔·다리에 힘이 빠져 응급실에 왔다. 심방세동으로 항응고제를 복용 중이며 마지막으로 4시간 전에 먹었다. 진찰에서 왼쪽 상·하지 근력이 3등급이고 구음장애가 있다. 활력징후와 검사 소견은 자료와 같다. 출혈을 멈추기 위해 가장 먼저 투여할 것은? A. 안덱사넷 알파 B. 이다루시주맙 C. 프로타민 황산염 D. 비타민 K 정맥 주사 E. 신선동결혈장 다비가트란 복용 중 생긴 뇌내출혈이며, 트롬빈시간이 크게 연장돼 약물이 아직 작용하고 있다. 다비가트란의 특이 역전제는 인간화 항체 절편 이다루시주맙 5 g 정맥 투여로 수분 내 항응고 효과를 완전히 없앤다. 안덱사넷은 Xa 억제제용, 프로타민은 헤파린용, 비타민 K·신선동결혈장은 와파린용이며 다비가트란에는 효과가 없다. 혈압을 140 mmHg 근처로 낮추고 신경외과와 협진한다."
+  },
+  {
+   "id": "kmle-2026-1064",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Acquired Methemoglobinemia after Topical Benzocaine — Antidote Selection",
+   "tags": [
+    "methemoglobinemia",
+    "methylene-blue",
+    "benzocaine",
+    "saturation-gap",
+    "G6PD"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1064.md",
+   "snippet": "29세 남자가 건강검진 위내시경을 위해 목에 국소마취 스프레이를 여러 번 뿌린 지 30분 만에 입술과 손톱이 파랗게 변하고 머리가 아프며 숨이 차다고 해 응급실로 옮겨졌다. 평소 건강하고 심장·폐 질환은 없으며 다른 약은 먹지 않는다. 진찰에서 청색증이 뚜렷하지만 폐음은 깨끗하고 의식은 명료하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고압산소치료 시행 B. 교환수혈 시행 C. 아스코르브산 경구 투여 ",
+   "text": "Hematology Acquired Methemoglobinemia after Topical Benzocaine — Antidote Selection methemoglobinemia methylene-blue benzocaine saturation-gap G6PD KMLE 2026 / Claude Routine 29세 남자가 건강검진 위내시경을 위해 목에 국소마취 스프레이를 여러 번 뿌린 지 30분 만에 입술과 손톱이 파랗게 변하고 머리가 아프며 숨이 차다고 해 응급실로 옮겨졌다. 평소 건강하고 심장·폐 질환은 없으며 다른 약은 먹지 않는다. 진찰에서 청색증이 뚜렷하지만 폐음은 깨끗하고 의식은 명료하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고압산소치료 시행 B. 교환수혈 시행 C. 아스코르브산 경구 투여 D. 메틸렌블루 정맥 투여 E. 하이드록소코발라민 정맥 투여 국소마취제 노출 직후 산소를 줘도 85 % 근처에서 꼼짝 않는 맥박산소포화도, 정상 PaO₂와의 포화도 차이, 초콜릿색 혈액, CO oximeter 메트헤모글로빈 38 %는 후천성 메트헤모글로빈혈증이다. 메트헤모글로빈이 20–30 %를 넘거나 증상이 있으면 메틸렌블루 1–2 mg/kg 정맥 투여가 1차 치료로, NADPH 의존 환원효소를 통해 철을 2가로 되돌린다. G6PD 결핍이 아니어서 금기가 없으며, 고압산소·하이드록소코발라민·교환수혈·아스코르브산은 각각 다른 중독이나 대안 상황의 치료다."
+  },
+  {
+   "id": "kmle-2026-1063",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Hypopigmented Scaly Macules on the Trunk after Summer — Treatment of Pityriasis Versicolor",
+   "tags": [
+    "pityriasis-versicolor",
+    "Malassezia",
+    "topical-antifungal",
+    "ketoconazole",
+    "KOH-preparation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1063.md",
+   "snippet": "24세 남자가 여름 이후 가슴과 등 위쪽에 얼룩덜룩하게 색이 빠진 반점이 생겨 병원에 왔다. 땀을 많이 흘리는 편이고 헬스장에 매일 다닌다. 가렵지는 않지만 햇볕에 타도 그 부위만 하얗게 남아 보기 싫다고 한다. 다른 병력은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 국소 케토코나졸 도포 B. 국소 스테로이드 도포 C. 경구 그리세오풀빈 D. 국소 타크로리무스 도포 E. 경구 이버멕틴 땀 많은 젊은",
+   "text": "Dermatology Hypopigmented Scaly Macules on the Trunk after Summer — Treatment of Pityriasis Versicolor pityriasis-versicolor Malassezia topical-antifungal ketoconazole KOH-preparation KMLE 2026 / Claude Routine 24세 남자가 여름 이후 가슴과 등 위쪽에 얼룩덜룩하게 색이 빠진 반점이 생겨 병원에 왔다. 땀을 많이 흘리는 편이고 헬스장에 매일 다닌다. 가렵지는 않지만 햇볕에 타도 그 부위만 하얗게 남아 보기 싫다고 한다. 다른 병력은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 국소 케토코나졸 도포 B. 국소 스테로이드 도포 C. 경구 그리세오풀빈 D. 국소 타크로리무스 도포 E. 경구 이버멕틴 땀 많은 젊은 남성의 몸통 위쪽에 생긴 비늘 있는 탈색·연갈색 반점에서 KOH 검경의 짧은 균사와 포자 무리, 우드등 황금색 형광은 어루러기(전풍)다. 원인균 말라세지아는 지질을 요구해 일반 배지에서 자라지 않는다. 국소 항진균제(케토코나졸 크림·샴푸, 셀레늄 설파이드, 아졸)가 1차이고, 넓거나 재발이 잦으면 경구 이트라코나졸·플루코나졸을 쓴다. 그리세오풀빈·테르비나핀 경구는 이 균에 듣지 않고, 스테로이드는 악화시키며, 타크로리무스는 백반증 약이다."
+  },
+  {
+   "id": "kmle-2026-1062",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Localized Nonbullous Impetigo in a Child — Choice of Antibiotic Route",
+   "tags": [
+    "impetigo",
+    "mupirocin",
+    "Staphylococcus-aureus",
+    "Streptococcus-pyogenes",
+    "topical-antibiotic"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1062.md",
+   "snippet": "5세 남아가 3일 전 코 주위 벌레 물린 자리를 긁은 뒤 진물이 나고 누런 딱지가 앉은 부위가 볼까지 번져 병원에 왔다. 가렵다고 하지만 열·통증·기운 없음은 없고 잘 논다. 이전에 같은 병을 앓은 적은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 세팔렉신 7일 B. 경구 아지트로마이신 3일 C. 무피로신 연고 국소 도포 D. 국소 스테로이드 연고 E. 경구 아시클로버 5일 소아의 얼굴에 생긴 ",
+   "text": "Dermatology Localized Nonbullous Impetigo in a Child — Choice of Antibiotic Route impetigo mupirocin Staphylococcus-aureus Streptococcus-pyogenes topical-antibiotic KMLE 2026 / Claude Routine 5세 남아가 3일 전 코 주위 벌레 물린 자리를 긁은 뒤 진물이 나고 누런 딱지가 앉은 부위가 볼까지 번져 병원에 왔다. 가렵다고 하지만 열·통증·기운 없음은 없고 잘 논다. 이전에 같은 병을 앓은 적은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 세팔렉신 7일 B. 경구 아지트로마이신 3일 C. 무피로신 연고 국소 도포 D. 국소 스테로이드 연고 E. 경구 아시클로버 5일 소아의 얼굴에 생긴 꿀색 가피의 미란은 황색포도알균·화농사슬알균에 의한 비수포성 농가진이다. 병변이 몇 개 안 되고 국소적이며 전신 증상·봉와직염이 없으면 무피로신(또는 푸시딘산·레타파물린) 국소 도포 5일이 경구 항생제와 동등하게 효과적이고 내성·부작용이 적어 1차다. 경구 항생제는 병변이 많거나 수포성·유행·국소 실패 시에 쓴다."
+  },
+  {
+   "id": "kmle-2026-1061",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Multiple Rib Fractures in an Elderly Patient with Splinting — Analgesia Strategy to Prevent Pneumonia",
+   "tags": [
+    "rib-fractures",
+    "thoracic-epidural-analgesia",
+    "elderly-trauma",
+    "pneumonia-prevention",
+    "incentive-spirometry"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1061.md",
+   "snippet": "74세 여자가 집 계단에서 넘어져 왼쪽 가슴을 부딪힌 뒤 숨 쉴 때마다 아파 응급실에 왔다. 의식은 명료하고 고혈압 외 병력은 없다. 통증 때문에 깊게 숨을 못 쉬고 기침을 참으며 얕게 호흡하고 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 정맥 마약성 진통제 단독 B. 흉곽 압박 붕대 고정 C. 즉시 기관삽관과 양압환기 D. 갈비뼈 고정 수술 E. 흉부 경막외 진통 65세 이상에서 갈비뼈 골절이 3개",
+   "text": "General Surgery Multiple Rib Fractures in an Elderly Patient with Splinting — Analgesia Strategy to Prevent Pneumonia rib-fractures thoracic-epidural-analgesia elderly-trauma pneumonia-prevention incentive-spirometry KMLE 2026 / Claude Routine 74세 여자가 집 계단에서 넘어져 왼쪽 가슴을 부딪힌 뒤 숨 쉴 때마다 아파 응급실에 왔다. 의식은 명료하고 고혈압 외 병력은 없다. 통증 때문에 깊게 숨을 못 쉬고 기침을 참으며 얕게 호흡하고 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 정맥 마약성 진통제 단독 B. 흉곽 압박 붕대 고정 C. 즉시 기관삽관과 양압환기 D. 갈비뼈 고정 수술 E. 흉부 경막외 진통 65세 이상에서 갈비뼈 골절이 3개 이상이면 통증에 의한 얕은 호흡 → 무기폐 → 폐렴·호흡부전으로 사망률이 크게 오른다. 정맥 진통제만으로 통증이 조절되지 않고 흡기량이 크게 줄어 있으면 흉부 경막외(또는 척추옆·전거근 차단) 국소 진통이 표준이며, 폐 물리요법·흡기 폐활량계를 병행한다. 압박 고정은 호흡을 더 제한하고, 삽관은 아직 가스 교환이 유지되므로 적응이 아니며, 고정 수술은 동요가슴이나 환기 실패 때 고려한다."
+  },
+  {
+   "id": "kmle-2026-1060",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Hemodynamically Stable Grade III Blunt Liver Injury — Nonoperative Management",
+   "tags": [
+    "blunt-hepatic-injury",
+    "nonoperative-management",
+    "trauma",
+    "angioembolization",
+    "AAST-grade"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1060.md",
+   "snippet": "27세 남자가 오토바이를 타다 넘어져 오른쪽 옆구리를 부딪힌 뒤 배가 아파 응급실에 왔다. 의식은 명료하고 헬멧을 착용했으며 다른 부위 통증은 없다. 도착 당시 맥박이 빠르고 혈압이 약간 낮았으나 정질액 투여 후 안정됐다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 개복 간 봉합술 B. 중환자실 감시하며 비수술적 치료 C. 혈관조영 간동맥 색전술 D. 진단적 복강경 검사 E. 진단적 복막 세척술 둔상",
+   "text": "General Surgery Hemodynamically Stable Grade III Blunt Liver Injury — Nonoperative Management blunt-hepatic-injury nonoperative-management trauma angioembolization AAST-grade KMLE 2026 / Claude Routine 27세 남자가 오토바이를 타다 넘어져 오른쪽 옆구리를 부딪힌 뒤 배가 아파 응급실에 왔다. 의식은 명료하고 헬멧을 착용했으며 다른 부위 통증은 없다. 도착 당시 맥박이 빠르고 혈압이 약간 낮았으나 정질액 투여 후 안정됐다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 개복 간 봉합술 B. 중환자실 감시하며 비수술적 치료 C. 혈관조영 간동맥 색전술 D. 진단적 복강경 검사 E. 진단적 복막 세척술 둔상에 의한 간 손상은 등급과 무관하게 혈역학적으로 안정되고 복막염 징후가 없으면 비수술적 치료가 표준이며 성공률이 85 % 이상이다. CT에서 조영제 유출·가성동맥류가 없으므로 색전술 적응도 아니고, 중환자실에서 연속 혈색소·진찰·활력징후를 감시하며 침상 안정한다. 불안정해지거나 복막염·지속 수혈 요구가 생기면 그때 개복하고, 복막 세척은 CT가 가능한 안정 환자에서 더 이상 쓰지 않는다."
+  },
+  {
+   "id": "kmle-2026-1059",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Restless Legs Syndrome with Low Ferritin — First Therapeutic Step",
+   "tags": [
+    "restless-legs-syndrome",
+    "iron-deficiency",
+    "ferritin",
+    "dopamine-agonist-augmentation",
+    "gabapentinoid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1059.md",
+   "snippet": "45세 여자가 6개월 전부터 저녁에 앉아 있거나 잠자리에 들면 종아리 속이 벌레가 기어가듯 불쾌해 다리를 움직이지 않고는 견딜 수 없고, 걸으면 좋아지지만 누우면 다시 시작돼 잠들기 어렵다며 병원에 왔다. 낮에는 거의 없고 아침이면 사라진다. 커피는 마시지 않고 우울감은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 치료는? A. 프라미펙솔 경구 B. 클로나제팜 취침 전 C. 가바펜틴 경구 D. 경구 철분 보충",
+   "text": "Neurology Restless Legs Syndrome with Low Ferritin — First Therapeutic Step restless-legs-syndrome iron-deficiency ferritin dopamine-agonist-augmentation gabapentinoid KMLE 2026 / Claude Routine 45세 여자가 6개월 전부터 저녁에 앉아 있거나 잠자리에 들면 종아리 속이 벌레가 기어가듯 불쾌해 다리를 움직이지 않고는 견딜 수 없고, 걸으면 좋아지지만 누우면 다시 시작돼 잠들기 어렵다며 병원에 왔다. 낮에는 거의 없고 아침이면 사라진다. 커피는 마시지 않고 우울감은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 치료는? A. 프라미펙솔 경구 B. 클로나제팜 취침 전 C. 가바펜틴 경구 D. 경구 철분 보충 E. 레보도파 취침 전 저녁·안정 시 악화되고 움직이면 완화되는 다리의 불쾌한 움직임 충동은 하지불안증후군이며, 과다월경에 의한 철결핍(페리틴 18·포화도 12 %)이 뇌 도파민 합성에 필요한 철을 고갈시켜 증상을 일으키거나 악화시킨다. 페리틴이 75 ng/mL 미만이면 어떤 약보다 먼저 철분을 보충하고, 그래도 지속되면 가바펜티노이드를 1차 약으로 쓴다. 도파민 작용제는 장기간 증상 악화(증강)를 일으켜 더 이상 1차가 아니고 레보도파는 증강이 가장 심하며, 클로나제팜은 근거가 없다."
+  },
+  {
+   "id": "kmle-2026-1058",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Juvenile Myoclonic Epilepsy in an Adolescent Girl — Antiseizure Drug Selection",
+   "tags": [
+    "juvenile-myoclonic-epilepsy",
+    "levetiracetam",
+    "valproate-teratogenicity",
+    "generalized-epilepsy",
+    "sodium-channel-blocker-aggravation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1058.md",
+   "snippet": "16세 여자가 1주 전 아침에 잠에서 깬 직후 온몸이 뻣뻣해지며 떨리는 발작을 일으켜 병원에 왔다. 전날 밤을 거의 새웠다고 한다. 6개월 전부터 아침마다 양팔이 갑자기 움찔거려 칫솔이나 컵을 떨어뜨리는 일이 자주 있었지만 의식은 또렷했다. 열·두부 외상·약물 복용은 없다. 신경학적 진찰은 정상이다. 활력징후와 검사 소견은 자료와 같다. 장기 치료로 가장 적절한 약물은? A. 레베티라세탐 B. 카바마제핀 C. 페니토인 D. 발",
+   "text": "Neurology Juvenile Myoclonic Epilepsy in an Adolescent Girl — Antiseizure Drug Selection juvenile-myoclonic-epilepsy levetiracetam valproate-teratogenicity generalized-epilepsy sodium-channel-blocker-aggravation KMLE 2026 / Claude Routine 16세 여자가 1주 전 아침에 잠에서 깬 직후 온몸이 뻣뻣해지며 떨리는 발작을 일으켜 병원에 왔다. 전날 밤을 거의 새웠다고 한다. 6개월 전부터 아침마다 양팔이 갑자기 움찔거려 칫솔이나 컵을 떨어뜨리는 일이 자주 있었지만 의식은 또렷했다. 열·두부 외상·약물 복용은 없다. 신경학적 진찰은 정상이다. 활력징후와 검사 소견은 자료와 같다. 장기 치료로 가장 적절한 약물은? A. 레베티라세탐 B. 카바마제핀 C. 페니토인 D. 발프로산 E. 에토숙시미드 청소년기 아침 근간대 발작에 수면 박탈 후 전신 강직간대 발작이 더해지고 뇌파에 전반성 다극파 서파와 광과민 반응이 있으면 청소년 근간대 간질이다. 발프로산이 가장 효과적이지만 가임기 여성에서는 기형·신경발달 장애 위험 때문에 1차로 쓰지 않으며, 레베티라세탐(또는 라모트리진)이 대안이다. 카바마제핀·페니토인 같은 나트륨 통로 차단제는 근간대·소발작을 악화시키고, 에토숙시미드는 소발작에만 듣는다."
+  },
+  {
+   "id": "kmle-2026-1057",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Bilateral Painless Visual Loss with Dyschromatopsia during Four-drug Tuberculosis Therapy — Management",
+   "tags": [
+    "ethambutol",
+    "toxic-optic-neuropathy",
+    "tuberculosis",
+    "dyschromatopsia",
+    "central-scotoma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1057.md",
+   "snippet": "54세 남자가 2주 전부터 양쪽 눈이 서서히 흐려지고 색이 바래 보여 병원에 왔다. 2개월 전 폐결핵을 진단받고 표준 4제 요법을 시작했으며 그 외 병력은 없고 술·담배는 하지 않는다. 눈 통증·안구 운동 시 통증·두통은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 조치는? A. 피리독신 증량 B. 고용량 스테로이드 정맥 주사 C. 에탐부톨 중단 D. 이소니아지드 중단 E. 치료 유지하며 1개월 후 재평가 결핵약 ",
+   "text": "Ophthalmology Bilateral Painless Visual Loss with Dyschromatopsia during Four-drug Tuberculosis Therapy — Management ethambutol toxic-optic-neuropathy tuberculosis dyschromatopsia central-scotoma KMLE 2026 / Claude Routine 54세 남자가 2주 전부터 양쪽 눈이 서서히 흐려지고 색이 바래 보여 병원에 왔다. 2개월 전 폐결핵을 진단받고 표준 4제 요법을 시작했으며 그 외 병력은 없고 술·담배는 하지 않는다. 눈 통증·안구 운동 시 통증·두통은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 조치는? A. 피리독신 증량 B. 고용량 스테로이드 정맥 주사 C. 에탐부톨 중단 D. 이소니아지드 중단 E. 치료 유지하며 1개월 후 재평가 결핵약 복용 중 통증 없이 서서히 진행하는 양측 대칭 시력 저하, 적록 색각 이상, 중심암점, 정상 안저·MRI는 독성 시신경병증이며 원인 약물은 에탐부톨이다. 하루 20 mg/kg으로 2개월 이상 쓰면 1–2 %에서 생기고, 즉시 중단하면 수개월에 걸쳐 대부분 회복되지만 계속 쓰면 영구 손실이 된다. 이소니아지드는 시신경병증이 드물고 피리독신은 말초신경병증 예방이며, 스테로이드는 시신경염에 쓰는 치료로 독성 병증에는 무효다."
+  },
+  {
+   "id": "kmle-2026-1056",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Hyperacute Purulent Neonatal Conjunctivitis on Day 3 — Systemic Treatment",
+   "tags": [
+    "ophthalmia-neonatorum",
+    "gonococcal-conjunctivitis",
+    "ceftriaxone",
+    "corneal-perforation",
+    "neonate"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1056.md",
+   "snippet": "생후 3일 여아가 어제부터 양쪽 눈꺼풀이 심하게 붓고 누런 고름이 계속 흘러나와 병원에 왔다. 잘 먹고 활동은 정상이며 발열·경련은 없다. 출생 직후 예방 안연고를 넣었는지는 기록이 불분명하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 에리트로마이신 안연고 단독 B. 생리식염수 세척 후 경과관찰 C. 아지트로마이신 경구 3일 D. 스테로이드 점안액 E. 세프트리악손 정맥 주사 1회 생후 2–5일에 시작된",
+   "text": "Ophthalmology Hyperacute Purulent Neonatal Conjunctivitis on Day 3 — Systemic Treatment ophthalmia-neonatorum gonococcal-conjunctivitis ceftriaxone corneal-perforation neonate KMLE 2026 / Claude Routine 생후 3일 여아가 어제부터 양쪽 눈꺼풀이 심하게 붓고 누런 고름이 계속 흘러나와 병원에 왔다. 잘 먹고 활동은 정상이며 발열·경련은 없다. 출생 직후 예방 안연고를 넣었는지는 기록이 불분명하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 에리트로마이신 안연고 단독 B. 생리식염수 세척 후 경과관찰 C. 아지트로마이신 경구 3일 D. 스테로이드 점안액 E. 세프트리악손 정맥 주사 1회 생후 2–5일에 시작된 다량의 화농성 결막염과 심한 눈꺼풀 부종, 백혈구 내 그람음성 쌍알균, 어머니의 임균 양성은 임균 신생아 결막염이다. 임균은 손상되지 않은 각막도 수 시간 만에 뚫을 수 있어 국소 치료로는 부족하고 세프트리악손 25–50 mg/kg(최대 125 mg) 정맥 또는 근육 주사 1회로 전신 치료하며, 잦은 식염수 세척과 파종 감염 평가, 어머니·파트너 치료를 병행한다. 클라미디아 결막염(5–14일)이라면 경구 마크로라이드가 답이 된다."
+  },
+  {
+   "id": "kmle-2026-1055",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Progressive Adolescent Idiopathic Scoliosis with Growth Remaining — Bracing Indication",
+   "tags": [
+    "adolescent-idiopathic-scoliosis",
+    "bracing",
+    "Cobb-angle",
+    "Risser-sign",
+    "BrAIST"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1055.md",
+   "snippet": "13세 여자가 학교 검진에서 어깨 높이가 다르다는 말을 듣고 병원에 왔다. 통증·다리 저림·배뇨 이상은 없고 최근 6개월 사이 키가 많이 자랐다. 가족 중 척추 수술을 받은 사람은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 6개월마다 방사선 추적 관찰 B. 흉요추 보조기 착용 C. 후방 척추 유합술 D. 맞춤 운동치료 단독 E. 경피 전기 자극 치료 통증·신경학적 이상 없이 성장기 여아의 흉추 만곡",
+   "text": "Orthopedics Progressive Adolescent Idiopathic Scoliosis with Growth Remaining — Bracing Indication adolescent-idiopathic-scoliosis bracing Cobb-angle Risser-sign BrAIST KMLE 2026 / Claude Routine 13세 여자가 학교 검진에서 어깨 높이가 다르다는 말을 듣고 병원에 왔다. 통증·다리 저림·배뇨 이상은 없고 최근 6개월 사이 키가 많이 자랐다. 가족 중 척추 수술을 받은 사람은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 6개월마다 방사선 추적 관찰 B. 흉요추 보조기 착용 C. 후방 척추 유합술 D. 맞춤 운동치료 단독 E. 경피 전기 자극 치료 통증·신경학적 이상 없이 성장기 여아의 흉추 만곡이 6개월 만에 8° 진행해 Cobb 각 25–40° 범위에 들어왔고, Risser 1·초경 직후로 성장이 많이 남아 있으면 보조기 적응이다. 무작위연구에서 하루 13시간 이상 보조기 착용이 50° 이상 진행을 절반 이하로 줄였다. 25° 미만은 관찰, 45–50° 이상이나 보조기 실패는 유합술이며, 운동·전기 자극은 보조기를 대체하지 못한다."
+  },
+  {
+   "id": "kmle-2026-1054",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Complete Anterior Cruciate Ligament Tear with Recurrent Instability in a Young Athlete — Treatment",
+   "tags": [
+    "anterior-cruciate-ligament",
+    "knee-instability",
+    "ACL-reconstruction",
+    "sports-injury",
+    "MRI"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1054.md",
+   "snippet": "22세 남자가 2개월 전 축구 경기 중 방향을 바꾸다가 무릎에서 '뚝' 소리가 나며 넘어져 곧바로 무릎이 부어올랐고, 이후 계단을 내려오거나 급히 방향을 틀 때 무릎이 빠지는 듯 힘이 풀리는 일이 세 번 있어 병원에 왔다. 통증은 심하지 않지만 운동을 계속하고 싶어 한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 6주 장하지 석고 고정 B. 스테로이드 관절 내 주사 C. 관절경 반월판 절제술 D. 전방십",
+   "text": "Orthopedics Complete Anterior Cruciate Ligament Tear with Recurrent Instability in a Young Athlete — Treatment anterior-cruciate-ligament knee-instability ACL-reconstruction sports-injury MRI KMLE 2026 / Claude Routine 22세 남자가 2개월 전 축구 경기 중 방향을 바꾸다가 무릎에서 '뚝' 소리가 나며 넘어져 곧바로 무릎이 부어올랐고, 이후 계단을 내려오거나 급히 방향을 틀 때 무릎이 빠지는 듯 힘이 풀리는 일이 세 번 있어 병원에 왔다. 통증은 심하지 않지만 운동을 계속하고 싶어 한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 6주 장하지 석고 고정 B. 스테로이드 관절 내 주사 C. 관절경 반월판 절제술 D. 전방십자인대 재건술 E. 대퇴사두근 강화 운동 단독 방향 전환 손상, 즉각적 혈관절증, 이후 반복되는 무릎 빠짐과 앞당김·회전 불안정 검사 양성, MRI의 완전 파열은 전방십자인대 파열이다. 젊고 회전 운동을 계속하려는 환자에서 불안정이 반복되면 재건술이 표준이며, 방치하면 반월판·연골 이차 손상과 조기 퇴행성 관절염이 온다. 석고 고정은 강직만 남기고, 반월판은 정상이며, 운동 단독은 저활동·고령에서의 선택이다."
+  },
+  {
+   "id": "kmle-2026-1053",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Borderline Personality Disorder with Recurrent Self-harm — First-line Treatment",
+   "tags": [
+    "borderline-personality-disorder",
+    "dialectical-behavior-therapy",
+    "non-suicidal-self-injury",
+    "psychotherapy",
+    "emotion-dysregulation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1053.md",
+   "snippet": "23세 여자가 남자친구와 다툰 뒤 손목을 그어 응급 처치를 받고 정신건강의학과에 왔다. 2년 전부터 감정이 몇 시간 단위로 격하게 요동치고, 가까운 사람에게 버림받을까 봐 매달리다가도 갑자기 상대를 깎아내리며 관계가 반복해서 깨진다. 스트레스를 받으면 폭식·충동적 지출을 하고, 늘 마음이 텅 빈 것 같으며, 화가 나면 '죽을 것도 아닌데' 팔을 긋고 나면 마음이 가라앉는다고 한다. 활력징후와 검사 소견은 자료와 같다. 가장 적",
+   "text": "Psychiatry Borderline Personality Disorder with Recurrent Self-harm — First-line Treatment borderline-personality-disorder dialectical-behavior-therapy non-suicidal-self-injury psychotherapy emotion-dysregulation KMLE 2026 / Claude Routine 23세 여자가 남자친구와 다툰 뒤 손목을 그어 응급 처치를 받고 정신건강의학과에 왔다. 2년 전부터 감정이 몇 시간 단위로 격하게 요동치고, 가까운 사람에게 버림받을까 봐 매달리다가도 갑자기 상대를 깎아내리며 관계가 반복해서 깨진다. 스트레스를 받으면 폭식·충동적 지출을 하고, 늘 마음이 텅 빈 것 같으며, 화가 나면 '죽을 것도 아닌데' 팔을 긋고 나면 마음이 가라앉는다고 한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 1차 치료는? A. 변증법적 행동치료 B. 리튬 유지 요법 C. 클로자핀 저용량 D. 장기 벤조디아제핀 처방 E. 전기경련치료 불안정한 정동·대인관계·자기상, 버림받음에 대한 두려움, 충동성, 만성 공허감, 반복되는 비자살적 자해가 2년 이상 지속되면 경계성 성격장애다. 근거가 확립된 1차 치료는 구조화된 정신치료이며 특히 변증법적 행동치료가 자해·자살 시도·입원을 줄인다. 약물은 특정 증상에 보조적으로만 쓰고, 리튬·클로자핀·전기경련치료는 각각 양극성장애·치료저항 조현병·중증 우울증의 치료이며 벤조디아제핀은 탈억제와 의존을 부른다."
+  },
+  {
+   "id": "kmle-2026-1052",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Generalized Anxiety Disorder — First-line Pharmacotherapy",
+   "tags": [
+    "generalized-anxiety-disorder",
+    "SSRI",
+    "escitalopram",
+    "benzodiazepine-dependence",
+    "cognitive-behavioral-therapy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1052.md",
+   "snippet": "38세 여자가 8개월 전부터 직장 일·자녀 건강·집안 재정 등 여러 가지가 늘 걱정돼 마음을 놓을 수 없다며 병원에 왔다. 걱정을 멈추려 해도 잘 안 되고, 목·어깨가 늘 뻐근하며 잠들기 어렵고 쉽게 지치고 집중이 안 된다. 특정 상황에서 갑자기 숨이 막히는 발작이나 우울한 기분·흥미 상실은 없다. 약물은 복용하지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 1차 약물은? A. 알프라졸람 정규 복용 B. 쿠에티아",
+   "text": "Psychiatry Generalized Anxiety Disorder — First-line Pharmacotherapy generalized-anxiety-disorder SSRI escitalopram benzodiazepine-dependence cognitive-behavioral-therapy KMLE 2026 / Claude Routine 38세 여자가 8개월 전부터 직장 일·자녀 건강·집안 재정 등 여러 가지가 늘 걱정돼 마음을 놓을 수 없다며 병원에 왔다. 걱정을 멈추려 해도 잘 안 되고, 목·어깨가 늘 뻐근하며 잠들기 어렵고 쉽게 지치고 집중이 안 된다. 특정 상황에서 갑자기 숨이 막히는 발작이나 우울한 기분·흥미 상실은 없다. 약물은 복용하지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 1차 약물은? A. 알프라졸람 정규 복용 B. 쿠에티아핀 저용량 C. 에스시탈로프람 D. 프로프라놀롤 E. 발프로산 6개월 이상 여러 영역에 걸친 조절되지 않는 과도한 걱정과 근긴장·수면장애·피로·집중 곤란은 범불안장애이며, 갑상샘·물질 원인은 배제됐다. 1차 약물은 SSRI(에스시탈로프람·설트랄린·파록세틴) 또는 SNRI(벤라팍신·둘록세틴)이고 인지행동치료를 병행한다. 벤조디아제핀은 빠르지만 의존·내성 때문에 단기 가교로만 쓰고, 항정신병제·항경련제·베타차단제는 1차가 아니다."
+  },
+  {
+   "id": "kmle-2026-1051",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Anti-Ro/SSA-positive Lupus Pregnancy — Fetal Surveillance for Congenital Heart Block",
+   "tags": [
+    "systemic-lupus-erythematosus",
+    "anti-Ro-SSA",
+    "congenital-heart-block",
+    "fetal-echocardiography",
+    "hydroxychloroquine"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1051.md",
+   "snippet": "28세 여자(초임부)가 임신 10주 첫 산전 진찰을 받으러 병원에 왔다. 4년 전 전신홍반루푸스를 진단받았고 지난 2년간 피부·관절 증상과 신장 침범 없이 안정된 상태로 약을 유지하고 있다. 혈압은 정상이고 부종은 없다. 활력징후와 검사 소견은 자료와 같다. 이 임신에서 태아를 위해 추가로 시행할 감시로 가장 적절한 것은? A. 12주 목덜미투명대 측정만 B. 양수천자로 핵형 검사 C. 매달 태아 두개내 초음파 D. 32주부터",
+   "text": "Rheumatology Anti-Ro/SSA-positive Lupus Pregnancy — Fetal Surveillance for Congenital Heart Block systemic-lupus-erythematosus anti-Ro-SSA congenital-heart-block fetal-echocardiography hydroxychloroquine KMLE 2026 / Claude Routine 28세 여자(초임부)가 임신 10주 첫 산전 진찰을 받으러 병원에 왔다. 4년 전 전신홍반루푸스를 진단받았고 지난 2년간 피부·관절 증상과 신장 침범 없이 안정된 상태로 약을 유지하고 있다. 혈압은 정상이고 부종은 없다. 활력징후와 검사 소견은 자료와 같다. 이 임신에서 태아를 위해 추가로 시행할 감시로 가장 적절한 것은? A. 12주 목덜미투명대 측정만 B. 양수천자로 핵형 검사 C. 매달 태아 두개내 초음파 D. 32주부터 비수축검사 E. 16주부터 주기적 태아 심초음파 항Ro/SSA 항체는 임신 16–26주에 태반을 건너 태아 방실결절을 손상시켜 선천 완전 방실차단(약 2 %, 이전 이환아 있으면 15–20 %)을 일으킨다. 따라서 항Ro 양성 산모는 16주부터 26주까지 1–2주마다, 이후 32주까지는 2주마다 태아 심초음파로 기계적 PR 간격을 재어 1·2도 차단을 조기에 잡는다. 하이드록시클로로퀸은 이 위험을 줄이므로 유지하고, 다른 보기는 항Ro와 무관한 감시다."
+  },
+  {
+   "id": "kmle-2026-1050",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Rheumatoid Arthritis in Remission on Methotrexate — Preconception Drug Management",
+   "tags": [
+    "rheumatoid-arthritis",
+    "methotrexate",
+    "pregnancy-planning",
+    "hydroxychloroquine",
+    "teratogenicity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1050.md",
+   "snippet": "30세 여자가 류마티스관절염으로 3년째 치료받던 중 임신을 계획하고 싶다며 병원에 왔다. 지난 1년간 관절 통증·부종·조조강직이 없었고 일상생활에 지장이 없다. 다른 병력은 없고 술·담배는 하지 않는다. 진찰에서 활막염 소견은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 조치는? A. 두 약 모두 유지하며 임신 시도 B. 메토트렉세이트 중단 3개월 후 임신 시도 C. 하이드록시클로로퀸 중단 후 임신 시도 D. 레플",
+   "text": "Rheumatology Rheumatoid Arthritis in Remission on Methotrexate — Preconception Drug Management rheumatoid-arthritis methotrexate pregnancy-planning hydroxychloroquine teratogenicity KMLE 2026 / Claude Routine 30세 여자가 류마티스관절염으로 3년째 치료받던 중 임신을 계획하고 싶다며 병원에 왔다. 지난 1년간 관절 통증·부종·조조강직이 없었고 일상생활에 지장이 없다. 다른 병력은 없고 술·담배는 하지 않는다. 진찰에서 활막염 소견은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 조치는? A. 두 약 모두 유지하며 임신 시도 B. 메토트렉세이트 중단 3개월 후 임신 시도 C. 하이드록시클로로퀸 중단 후 임신 시도 D. 레플루노마이드로 교체 후 임신 시도 E. 임신 확인 즉시 메토트렉세이트 중단 메토트렉세이트는 엽산 길항제로 신경관 결손·두개안면 기형·유산을 일으키는 기형 유발 약물이므로 임신 시도 1–3개월 전에 끊고 엽산을 보충한다. 하이드록시클로로퀸은 임신 중 안전하고 재발을 줄이므로 유지한다. 임신 확인 후 끊으면 이미 기관 형성기에 노출된 뒤이고, 레플루노마이드는 반감기가 길어 임신 전 2년 또는 콜레스티라민 세척이 필요한 더 위험한 약이다."
+  },
+  {
+   "id": "kmle-2026-1049",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Symptomatic Paget Disease of Bone — First-line Pharmacotherapy",
+   "tags": [
+    "Paget-disease-of-bone",
+    "zoledronic-acid",
+    "alkaline-phosphatase",
+    "bisphosphonate",
+    "bone-remodeling"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1049.md",
+   "snippet": "71세 남자가 6개월 전부터 오른쪽 넓적다리와 엉덩이가 밤에도 지속적으로 둔하게 아프고 최근 모자가 작아진 느낌이 들어 병원에 왔다. 귀가 잘 안 들리기 시작했고 넘어지거나 다친 적은 없다. 진찰에서 오른쪽 대퇴부가 약간 휘어 있고 만지면 따뜻하며 국소 압통은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 칼시토닌 피하 주사 B. 테리파라타이드 피하 주사 C. 데노수맙 피하 주사 D. 졸레드론산 정맥 ",
+   "text": "Endocrinology Symptomatic Paget Disease of Bone — First-line Pharmacotherapy Paget-disease-of-bone zoledronic-acid alkaline-phosphatase bisphosphonate bone-remodeling KMLE 2026 / Claude Routine 71세 남자가 6개월 전부터 오른쪽 넓적다리와 엉덩이가 밤에도 지속적으로 둔하게 아프고 최근 모자가 작아진 느낌이 들어 병원에 왔다. 귀가 잘 안 들리기 시작했고 넘어지거나 다친 적은 없다. 진찰에서 오른쪽 대퇴부가 약간 휘어 있고 만지면 따뜻하며 국소 압통은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 칼시토닌 피하 주사 B. 테리파라타이드 피하 주사 C. 데노수맙 피하 주사 D. 졸레드론산 정맥 주사 E. 칼슘·비타민 D 보충만 고령 남성의 국소 골통·두개골 확대·난청·휘어진 대퇴골에 간 효소가 정상인 채 ALP만 크게 오르고 골스캔·X선에서 피질 비후와 거친 골소주가 보이면 뼈 파제트병이다. 증상이 있거나 체중 부하 뼈·관절 인접·두개골 침범이면 치료 적응이며, 1차 약은 졸레드론산 5 mg 단회 정맥 주사로 가장 강력하고 오래 지속되는 관해를 준다. 투여 전 비타민 D를 보충해 저칼슘혈증을 막고, 테리파라타이드는 골육종 위험으로 금기다."
+  },
+  {
+   "id": "kmle-2026-1048",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Persistent Subclinical Hypothyroidism with TSH above 10 in a Woman Planning Pregnancy — Treatment",
+   "tags": [
+    "subclinical-hypothyroidism",
+    "levothyroxine",
+    "anti-TPO",
+    "preconception",
+    "Hashimoto-thyroiditis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1048.md",
+   "snippet": "33세 여자가 6개월 안에 임신을 계획하고 있어 건강 상담을 받으러 병원에 왔다. 최근 쉽게 피곤하고 추위를 조금 타지만 체중 변화·변비·월경 이상은 없다. 어머니가 갑상샘 질환으로 약을 복용 중이다. 진찰에서 갑상샘은 약간 단단하게 만져지고 결절은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 레보티록신 경구 시작 B. 리오티로닌 경구 시작 C. 요오드 보충제 복용 D. 셀레늄 보충 후 6개월 재검 ",
+   "text": "Endocrinology Persistent Subclinical Hypothyroidism with TSH above 10 in a Woman Planning Pregnancy — Treatment subclinical-hypothyroidism levothyroxine anti-TPO preconception Hashimoto-thyroiditis KMLE 2026 / Claude Routine 33세 여자가 6개월 안에 임신을 계획하고 있어 건강 상담을 받으러 병원에 왔다. 최근 쉽게 피곤하고 추위를 조금 타지만 체중 변화·변비·월경 이상은 없다. 어머니가 갑상샘 질환으로 약을 복용 중이다. 진찰에서 갑상샘은 약간 단단하게 만져지고 결절은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 레보티록신 경구 시작 B. 리오티로닌 경구 시작 C. 요오드 보충제 복용 D. 셀레늄 보충 후 6개월 재검 E. 임신 확인 후 치료 결정 유리 T4가 정상이면서 TSH가 10 mIU/L를 넘고 재검에서도 지속되며 항TPO 항체 양성인 상태는 치료가 필요한 무증상 갑상샘저하증이다. TSH 10 초과는 증상과 무관하게 레보티록신 적응이고, 임신을 계획하는 여성은 유산·조산·태아 신경발달 위험을 줄이기 위해 임신 전에 TSH를 2.5 미만으로 맞춰야 한다. 리오티로닌은 반감기가 짧아 유지요법에 부적합하고, 요오드·셀레늄은 치료가 아니며, 임신 후로 미루면 초기 태아 발달 시기를 놓친다."
+  },
+  {
+   "id": "kmle-2026-1047",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Chronic Pancreatitis with Steatorrhea — Treatment of Exocrine Insufficiency",
+   "tags": [
+    "chronic-pancreatitis",
+    "exocrine-pancreatic-insufficiency",
+    "pancreatic-enzyme-replacement",
+    "steatorrhea",
+    "fecal-elastase"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1047.md",
+   "snippet": "52세 남자가 6개월 전부터 기름지고 물에 뜨는 냄새 나는 변을 하루 3–4회 보고 체중이 8 kg 줄어 병원에 왔다. 20년간 매일 소주 1병 이상 마셨고 5년 전부터 상복부 통증이 반복됐다. 최근 당뇨병을 진단받아 메트포르민을 시작했다. 진찰에서 마른 체형이고 복부 종괴·황달은 없다. 활력징후와 검사 소견은 자료와 같다. 지방변과 체중 감소에 대한 가장 적절한 치료는? A. 옥트레오타이드 피하 주사 B. 우르소데옥시콜산 경",
+   "text": "Gastroenterology Chronic Pancreatitis with Steatorrhea — Treatment of Exocrine Insufficiency chronic-pancreatitis exocrine-pancreatic-insufficiency pancreatic-enzyme-replacement steatorrhea fecal-elastase KMLE 2026 / Claude Routine 52세 남자가 6개월 전부터 기름지고 물에 뜨는 냄새 나는 변을 하루 3–4회 보고 체중이 8 kg 줄어 병원에 왔다. 20년간 매일 소주 1병 이상 마셨고 5년 전부터 상복부 통증이 반복됐다. 최근 당뇨병을 진단받아 메트포르민을 시작했다. 진찰에서 마른 체형이고 복부 종괴·황달은 없다. 활력징후와 검사 소견은 자료와 같다. 지방변과 체중 감소에 대한 가장 적절한 치료는? A. 옥트레오타이드 피하 주사 B. 우르소데옥시콜산 경구 C. 췌장효소 경구 보충 D. 인슐린 강화 요법 E. 저지방 식이 단독 장기 음주력, 반복 상복부 통증, 췌장 석회화·위축·췌관 확장에 새로 생긴 당뇨병은 만성 췌장염이며, 대변 엘라스타제 100 μg/g 미만과 대변 지방 7 g/일 초과는 외분비 기능부전에 의한 지방변을 뜻한다. 치료는 식사마다 장용 코팅 췌장효소(리파아제 40,000–50,000 단위)를 복용하는 것이며, 지용성 비타민 보충·금주·금연을 병행한다. 지방을 심하게 제한하면 영양실조가 악화되므로 권하지 않는다."
+  },
+  {
+   "id": "kmle-2026-1046",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Chronic Hepatitis B with High Viral Load in Pregnancy — Antiviral to Prevent Mother-to-child Transmission",
+   "tags": [
+    "hepatitis-B",
+    "pregnancy",
+    "tenofovir",
+    "mother-to-child-transmission",
+    "immunoprophylaxis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1046.md",
+   "snippet": "29세 여자(초임부)가 임신 26주 산전 검사에서 B형간염 표면항원 양성이 확인돼 병원에 왔다. 평소 건강했고 피로·황달·복수는 없으며 간질환 가족력으로 어머니가 B형간염 보유자다. 술은 마시지 않는다. 활력징후와 검사 소견은 자료와 같다. 주산기 감염을 막기 위해 임산부에게 시행할 가장 적절한 조치는? A. 페그인터페론 피하 주사 B. 엔테카비르 경구 C. 라미부딘 경구 D. 분만 시 제왕절개 시행 E. 테노포비르 디소프록실",
+   "text": "Gastroenterology Chronic Hepatitis B with High Viral Load in Pregnancy — Antiviral to Prevent Mother-to-child Transmission hepatitis-B pregnancy tenofovir mother-to-child-transmission immunoprophylaxis KMLE 2026 / Claude Routine 29세 여자(초임부)가 임신 26주 산전 검사에서 B형간염 표면항원 양성이 확인돼 병원에 왔다. 평소 건강했고 피로·황달·복수는 없으며 간질환 가족력으로 어머니가 B형간염 보유자다. 술은 마시지 않는다. 활력징후와 검사 소견은 자료와 같다. 주산기 감염을 막기 위해 임산부에게 시행할 가장 적절한 조치는? A. 페그인터페론 피하 주사 B. 엔테카비르 경구 C. 라미부딘 경구 D. 분만 시 제왕절개 시행 E. 테노포비르 디소프록실 경구 면역관용기(HBeAg 양성, ALT 정상, 매우 높은 바이러스량)의 임산부는 신생아 B형간염 면역글로불린과 백신을 다 해도 5–10 %가 감염되므로, HBV DNA가 200,000 IU/mL를 넘으면 임신 24–28주부터 테노포비르 디소프록실을 투여해 분만 시 바이러스량을 낮춘다. 테노포비르는 임신 안전 자료가 가장 많고 내성이 거의 없다. 엔테카비르는 임신 중 권고되지 않고, 인터페론은 금기이며, 제왕절개는 전파를 줄인다는 근거가 없다."
+  },
+  {
+   "id": "kmle-2026-1045",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Amoebic Liver Abscess after Travel — Medical Therapy without Drainage",
+   "tags": [
+    "amoebic-liver-abscess",
+    "Entamoeba-histolytica",
+    "metronidazole",
+    "paromomycin",
+    "travel-medicine"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1045.md",
+   "snippet": "42세 남자가 10일 전부터 열이 나고 오른쪽 윗배가 아파 병원에 왔다. 3개월 전 인도로 한 달간 배낭여행을 다녀왔고, 여행 중 며칠간 피가 섞인 설사를 했으나 저절로 나았다. 술은 마시지 않으며 당뇨·담석 병력은 없다. 진찰에서 오른쪽 갈비뼈 아래를 두드리면 심하게 아파하고 황달은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경피 배액 후 세프트리악손·메트로니다졸 정주 B. 메트로니다졸 경구 후 ",
+   "text": "Infectious Disease Amoebic Liver Abscess after Travel — Medical Therapy without Drainage amoebic-liver-abscess Entamoeba-histolytica metronidazole paromomycin travel-medicine KMLE 2026 / Claude Routine 42세 남자가 10일 전부터 열이 나고 오른쪽 윗배가 아파 병원에 왔다. 3개월 전 인도로 한 달간 배낭여행을 다녀왔고, 여행 중 며칠간 피가 섞인 설사를 했으나 저절로 나았다. 술은 마시지 않으며 당뇨·담석 병력은 없다. 진찰에서 오른쪽 갈비뼈 아래를 두드리면 심하게 아파하고 황달은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경피 배액 후 세프트리악손·메트로니다졸 정주 B. 메트로니다졸 경구 후 파로모마이신 C. 알벤다졸 경구 4주 D. 개복 배액 후 항생제 정주 E. 프라지콴텔 경구 1일 유행 지역 여행 후 수개월 뒤 발열·우상복부 통증과 우엽 단일 저음영 병변, 혈액배양 음성, 높은 아메바 항체가는 아메바 간농양이다. 합병증 없는 아메바 간농양은 배액 없이 메트로니다졸(750 mg 하루 3회 7–10일)만으로 90 % 이상 낫고, 이어서 장내 낭포를 없애기 위해 파로모마이신 같은 관강 내 약을 반드시 추가한다. 배액은 3–5일 치료에 반응이 없거나 좌엽·10 cm 이상·파열 임박·세균 중복감염 의심일 때 한다."
+  },
+  {
+   "id": "kmle-2026-1044",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Uncomplicated Gonococcal Urethritis in a Man — Antibiotic Selection",
+   "tags": [
+    "gonorrhea",
+    "urethritis",
+    "ceftriaxone",
+    "quinolone-resistance",
+    "sexually-transmitted-infection"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1044.md",
+   "snippet": "26세 남자가 3일 전부터 소변볼 때 화끈거리고 요도에서 누런 분비물이 많이 나와 병원에 왔다. 5일 전 새로운 상대와 콘돔 없이 성관계를 했다. 발열·관절통·피부 발진은 없다. 진찰에서 요도구에 다량의 화농성 분비물이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 시프로플록사신 경구 1회 B. 아지트로마이신 경구 1회 C. 페니실린 G 벤자틴 근주 D. 세프트리악손 근주 1회 E. 독시사이클린 경구",
+   "text": "Infectious Disease Uncomplicated Gonococcal Urethritis in a Man — Antibiotic Selection gonorrhea urethritis ceftriaxone quinolone-resistance sexually-transmitted-infection KMLE 2026 / Claude Routine 26세 남자가 3일 전부터 소변볼 때 화끈거리고 요도에서 누런 분비물이 많이 나와 병원에 왔다. 5일 전 새로운 상대와 콘돔 없이 성관계를 했다. 발열·관절통·피부 발진은 없다. 진찰에서 요도구에 다량의 화농성 분비물이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 시프로플록사신 경구 1회 B. 아지트로마이신 경구 1회 C. 페니실린 G 벤자틴 근주 D. 세프트리악손 근주 1회 E. 독시사이클린 경구 7일 화농성 요도 분비물과 백혈구 내 그람음성 쌍알균, 임균 핵산증폭검사 양성은 합병증 없는 임균 요도염이다. 국내 임균은 퀴놀론·페니실린·테트라사이클린 내성률이 매우 높고 아지트로마이신 내성도 늘어, 세프트리악손 500 mg(체중 150 kg 이상 1 g) 근육 주사 1회가 표준이다. 클라미디아가 음성이면 독시사이클린을 추가하지 않으며, 성 파트너 치료와 7일간 금욕을 지도한다."
+  },
+  {
+   "id": "kmle-2026-1043",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Peritoneal Dialysis-associated Peritonitis — Initial Management",
+   "tags": [
+    "peritoneal-dialysis",
+    "peritonitis",
+    "intraperitoneal-antibiotics",
+    "ISPD-2022",
+    "catheter-removal"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1043.md",
+   "snippet": "58세 여자가 2일 전부터 배가 아프고 투석액이 뿌옇게 나와 병원에 왔다. 3년째 지속적 외래 복막투석을 하고 있으며 최근 교환 시 연결 부위를 만진 뒤 손을 씻지 않은 적이 있다고 한다. 구토·설사는 없다. 진찰에서 복부 전반에 압통이 있으나 반동압통·강직은 뚜렷하지 않다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 복강내 항생제 투여 B. 도관 제거 후 정맥 항생제 C. 진단적 개복술 D. 혈액투석 전",
+   "text": "Nephrology Peritoneal Dialysis-associated Peritonitis — Initial Management peritoneal-dialysis peritonitis intraperitoneal-antibiotics ISPD-2022 catheter-removal KMLE 2026 / Claude Routine 58세 여자가 2일 전부터 배가 아프고 투석액이 뿌옇게 나와 병원에 왔다. 3년째 지속적 외래 복막투석을 하고 있으며 최근 교환 시 연결 부위를 만진 뒤 손을 씻지 않은 적이 있다고 한다. 구토·설사는 없다. 진찰에서 복부 전반에 압통이 있으나 반동압통·강직은 뚜렷하지 않다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 복강내 항생제 투여 B. 도관 제거 후 정맥 항생제 C. 진단적 개복술 D. 혈액투석 전환과 경구 항생제 E. 배양 결과까지 복강 세척 배액 백혈구 100/μL 초과에 다형핵 50 % 초과, 탁한 배액, 복통이면 복막투석 복막염이다. 검체 채취 직후 그람양성균(세파졸린 또는 반코마이신)과 그람음성균(세프타지딤 또는 아미노글리코사이드)을 모두 겨냥한 경험적 항생제를 복강내로 투여하는 것이 표준이며, 도관 제거는 5일 이상 불응·재발·진균·도관 감염 동반 시에 한한다."
+  },
+  {
+   "id": "kmle-2026-1042",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Hyperkalemic Non-anion-gap Acidosis in Diabetic Kidney Disease on an ACE Inhibitor — First Step",
+   "tags": [
+    "type-4-renal-tubular-acidosis",
+    "hyporeninemic-hypoaldosteronism",
+    "hyperkalemia",
+    "ACE-inhibitor",
+    "diabetic-kidney-disease"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1042.md",
+   "snippet": "66세 남자가 정기 검진에서 전해질 이상이 발견돼 병원에 왔다. 2형 당뇨병 15년, 당뇨병 콩팥병과 고혈압으로 약을 복용 중이고 근육 위약·두근거림 같은 증상은 없다. 진찰에서 부종은 없고 체액량은 정상으로 보인다. 진통제나 칼륨 보충제는 먹지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 조치는? A. 구연산칼륨 경구 투여 B. 플루드로코르티손 즉시 시작 C. 아세타졸아마이드 경구 투여 D. 염화칼륨 정맥",
+   "text": "Nephrology Hyperkalemic Non-anion-gap Acidosis in Diabetic Kidney Disease on an ACE Inhibitor — First Step type-4-renal-tubular-acidosis hyporeninemic-hypoaldosteronism hyperkalemia ACE-inhibitor diabetic-kidney-disease KMLE 2026 / Claude Routine 66세 남자가 정기 검진에서 전해질 이상이 발견돼 병원에 왔다. 2형 당뇨병 15년, 당뇨병 콩팥병과 고혈압으로 약을 복용 중이고 근육 위약·두근거림 같은 증상은 없다. 진찰에서 부종은 없고 체액량은 정상으로 보인다. 진통제나 칼륨 보충제는 먹지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행할 조치는? A. 구연산칼륨 경구 투여 B. 플루드로코르티손 즉시 시작 C. 아세타졸아마이드 경구 투여 D. 염화칼륨 정맥 보충 E. 안지오텐신전환효소억제제 중단 고칼륨혈증과 정상 음이온차 대사산증, 산성 소변(pH 5.5 미만), 낮은 레닌·알도스테론은 당뇨병 콩팥병의 저레닌 저알도스테론증(4형 세뇨관산증)이며, 안지오텐신전환효소억제제가 알도스테론 생성을 더 억제해 이를 악화시켰다. 심전도 변화가 없는 경증이므로 첫 조치는 원인 약물 중단과 저칼륨 식이이고, 그래도 지속되면 루프이뇨제·중탄산·플루드로코르티손을 단계적으로 고려한다."
+  },
+  {
+   "id": "kmle-2026-1041",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Primary Ovarian Insufficiency in a 32-year-old — Long-term Management",
+   "tags": [
+    "primary-ovarian-insufficiency",
+    "secondary-amenorrhea",
+    "hormone-replacement",
+    "FSH",
+    "bone-health"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1041.md",
+   "snippet": "32세 여자가 8개월째 월경이 없어 병원에 왔다. 이전에는 28일 주기로 규칙적이었고 최근 안면홍조·식은땀·질 건조감이 생겼다. 체중 변화·과도한 운동·항암치료·수술 병력은 없고 현재 임신을 원하지 않으며 피임은 하지 않는다. 진찰에서 갑상샘 종대·유즙 분비는 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 클로미펜 배란 유도 B. 6개월 뒤 재검하며 경과관찰 C. 에스트로겐·프로게스틴 호르몬치료 D. ",
+   "text": "Obstetrics & Gynecology Primary Ovarian Insufficiency in a 32-year-old — Long-term Management primary-ovarian-insufficiency secondary-amenorrhea hormone-replacement FSH bone-health KMLE 2026 / Claude Routine 32세 여자가 8개월째 월경이 없어 병원에 왔다. 이전에는 28일 주기로 규칙적이었고 최근 안면홍조·식은땀·질 건조감이 생겼다. 체중 변화·과도한 운동·항암치료·수술 병력은 없고 현재 임신을 원하지 않으며 피임은 하지 않는다. 진찰에서 갑상샘 종대·유즙 분비는 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 클로미펜 배란 유도 B. 6개월 뒤 재검하며 경과관찰 C. 에스트로겐·프로게스틴 호르몬치료 D. 브로모크립틴 경구 E. 칼슘·비타민 D 보충만 40세 미만에서 4개월 이상 무월경과 4주 이상 간격으로 두 번 FSH가 25 mIU/mL를 넘으면 일차성 난소부전이다. 에스트로겐 결핍은 골 소실·심혈관 위험·비뇨생식 위축을 일으키므로, 금기가 없는 한 자연 폐경 연령(약 51세)까지 생리적 용량의 에스트로겐과 자궁 보호용 프로게스틴을 투여한다. 배란 유도제는 난포가 고갈된 난소에 효과가 없고, 보충제만으로는 골 소실을 막지 못한다."
+  },
+  {
+   "id": "kmle-2026-1040",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Twin-Twin Transfusion Syndrome Stage II at 20 Weeks — Definitive Treatment",
+   "tags": [
+    "twin-twin-transfusion-syndrome",
+    "monochorionic-twins",
+    "fetoscopic-laser",
+    "Quintero-staging",
+    "amnioreduction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1040.md",
+   "snippet": "31세 초산부가 임신 20주 0일에 지난 2주 사이 배가 갑자기 커지고 숨이 차서 병원에 왔다. 임신 초기 초음파에서 쌍태아로 확인됐고 그 외 산과력·내과 병력은 없다. 자궁 수축과 질 출혈·양수 유출은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 제왕절개 분만 B. 연속 양수감압술 C. 인도메타신 투여 D. 태아경 레이저 응고술 E. 양막 격막 절개술 단일융모막 쌍태아에서 한 태아는 양수과다·",
+   "text": "Obstetrics & Gynecology Twin-Twin Transfusion Syndrome Stage II at 20 Weeks — Definitive Treatment twin-twin-transfusion-syndrome monochorionic-twins fetoscopic-laser Quintero-staging amnioreduction KMLE 2026 / Claude Routine 31세 초산부가 임신 20주 0일에 지난 2주 사이 배가 갑자기 커지고 숨이 차서 병원에 왔다. 임신 초기 초음파에서 쌍태아로 확인됐고 그 외 산과력·내과 병력은 없다. 자궁 수축과 질 출혈·양수 유출은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 제왕절개 분만 B. 연속 양수감압술 C. 인도메타신 투여 D. 태아경 레이저 응고술 E. 양막 격막 절개술 단일융모막 쌍태아에서 한 태아는 양수과다·방광 확장, 다른 태아는 양수과소·방광 미관찰이면 쌍태아 간 수혈증후군이며, 방광이 보이지 않지만 도플러가 정상이므로 Quintero 2단계다. 임신 16–26주의 2단계 이상은 태반 문합 혈관을 태아경 레이저로 응고하는 것이 생존과 신경학적 예후 모두에서 양수감압술보다 우월한 표준 치료다. 20주는 생존 한계 이전이라 분만은 선택지가 아니다."
+  },
+  {
+   "id": "kmle-2026-1039",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Measles Exposure in a 9-month-old Infant — Post-exposure Prophylaxis within 72 Hours",
+   "tags": [
+    "measles",
+    "post-exposure-prophylaxis",
+    "MMR-vaccine",
+    "immunoglobulin",
+    "infant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1039.md",
+   "snippet": "생후 9개월 여아가 이틀 전 소아과 대기실에서 30분 동안 같이 있던 아이가 홍역으로 확진됐다는 연락을 받고 부모와 함께 병원에 왔다. 아이는 현재 발열·발진·기침이 없고 잘 먹으며 건강하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 격리하며 증상 발생만 관찰 B. MMR 백신 즉시 접종 C. 면역글로불린 근육 주사 D. 비타민 A 경구 투여 E. 리바비린 경구 투여 홍역 노출 후 예방은 시간과 대상에 ",
+   "text": "Pediatrics Measles Exposure in a 9-month-old Infant — Post-exposure Prophylaxis within 72 Hours measles post-exposure-prophylaxis MMR-vaccine immunoglobulin infant KMLE 2026 / Claude Routine 생후 9개월 여아가 이틀 전 소아과 대기실에서 30분 동안 같이 있던 아이가 홍역으로 확진됐다는 연락을 받고 부모와 함께 병원에 왔다. 아이는 현재 발열·발진·기침이 없고 잘 먹으며 건강하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 격리하며 증상 발생만 관찰 B. MMR 백신 즉시 접종 C. 면역글로불린 근육 주사 D. 비타민 A 경구 투여 E. 리바비린 경구 투여 홍역 노출 후 예방은 시간과 대상에 따라 갈린다. 생후 6–11개월의 건강한 영아가 노출 72시간 이내이면 MMR 백신을 즉시 접종해 발병을 막거나 경하게 하고, 12개월 미만에 맞은 접종은 정규 2회(12–15개월, 4–6세)에 포함하지 않는다. 면역글로불린은 6개월 미만·임신부·면역저하자이거나 72시간이 지났지만 6일 이내일 때 쓴다. 비타민 A는 발병한 환자의 치료이고 리바비린은 근거가 없다."
+  },
+  {
+   "id": "kmle-2026-1038",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Bilateral Acute Otitis Media in an 18-month-old — Antibiotic Decision",
+   "tags": [
+    "acute-otitis-media",
+    "amoxicillin",
+    "high-dose",
+    "watchful-waiting",
+    "pneumococcus"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1038.md",
+   "snippet": "생후 18개월 남아가 2일 전부터 열이 나고 밤에 자다 깨서 심하게 보채며 양쪽 귀를 자꾸 잡아당겨 병원에 왔다. 1주일 전부터 콧물·기침이 있었고 어린이집에 다닌다. 수유량은 평소의 2/3 정도이고 구토는 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 진통제 투여 후 48시간 경과관찰 B. 아지트로마이신 경구 3일 투여 C. 세프트리악손 근주 1회 투여 D. 고막절개술과 배농 E. 고용량 아목시실린 ",
+   "text": "Pediatrics Bilateral Acute Otitis Media in an 18-month-old — Antibiotic Decision acute-otitis-media amoxicillin high-dose watchful-waiting pneumococcus KMLE 2026 / Claude Routine 생후 18개월 남아가 2일 전부터 열이 나고 밤에 자다 깨서 심하게 보채며 양쪽 귀를 자꾸 잡아당겨 병원에 왔다. 1주일 전부터 콧물·기침이 있었고 어린이집에 다닌다. 수유량은 평소의 2/3 정도이고 구토는 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 진통제 투여 후 48시간 경과관찰 B. 아지트로마이신 경구 3일 투여 C. 세프트리악손 근주 1회 투여 D. 고막절개술과 배농 E. 고용량 아목시실린 경구 10일 양측 고막 팽윤과 이통·발열은 급성 중이염이며, 24개월 미만의 양측 중이염이거나 체온 39 ℃ 이상·48시간 이상의 심한 증상이면 경과관찰 없이 항생제를 시작한다. 1차 약물은 고용량 아목시실린(80–90 mg/kg/일)이며, 최근 항생제 노출·결막염 동반·페니실린 알레르기가 없으므로 그대로 쓴다. 아지트로마이신은 내성 폐렴구균·헤모필루스에 취약하고, 세프트리악손은 구토·경구 실패 시의 대안이다."
+  },
+  {
+   "id": "kmle-2026-1037",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Aspirin-exacerbated Respiratory Disease Uncontrolled on ICS-LABA — Add-on Therapy",
+   "tags": [
+    "aspirin-exacerbated-respiratory-disease",
+    "nasal-polyps",
+    "leukotriene-receptor-antagonist",
+    "montelukast",
+    "asthma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1037.md",
+   "snippet": "34세 여자가 천식이 잘 조절되지 않아 병원에 왔다. 5년 전 천식을 진단받았고 코막힘과 후각 저하로 코용종 수술을 두 번 받았다. 두 달 전 두통으로 이부프로펜을 복용한 지 1시간 만에 심한 천명·콧물·얼굴 화끈거림이 생겨 응급실 치료를 받았다. 현재 중용량 흡입 스테로이드·지속성 베타작용제를 꾸준히 쓰는데도 주 3회 이상 밤에 깨고 구조약을 거의 매일 쓴다. 활력징후와 검사 소견은 자료와 같다. 천식 조절을 위해 추가할 약",
+   "text": "Pulmonology Aspirin-exacerbated Respiratory Disease Uncontrolled on ICS-LABA — Add-on Therapy aspirin-exacerbated-respiratory-disease nasal-polyps leukotriene-receptor-antagonist montelukast asthma KMLE 2026 / Claude Routine 34세 여자가 천식이 잘 조절되지 않아 병원에 왔다. 5년 전 천식을 진단받았고 코막힘과 후각 저하로 코용종 수술을 두 번 받았다. 두 달 전 두통으로 이부프로펜을 복용한 지 1시간 만에 심한 천명·콧물·얼굴 화끈거림이 생겨 응급실 치료를 받았다. 현재 중용량 흡입 스테로이드·지속성 베타작용제를 꾸준히 쓰는데도 주 3회 이상 밤에 깨고 구조약을 거의 매일 쓴다. 활력징후와 검사 소견은 자료와 같다. 천식 조절을 위해 추가할 약물로 가장 적절한 것은? A. 경구 프레드니솔론 장기 유지 B. 서방형 테오필린 C. 저용량 아스피린 매일 복용 D. 몬테루카스트 E. 오말리주맙 천식 + 재발성 코용종 + NSAID 복용 후 급성 호흡기 반응의 세 요소는 아스피린 악화 호흡기질환이다. 이 질환은 아라키돈산 대사가 시스테이닐 류코트리엔 과다 생성 쪽으로 치우쳐 있어, ICS LABA로 조절되지 않을 때 류코트리엔 조절제(몬테루카스트)를 추가하는 것이 특히 효과적이다. 아스피린은 탈감작 없이 복용하면 위험하고, 오말리주맙은 알레르기 감작이 없어 적응이 아니다."
+  },
+  {
+   "id": "kmle-2026-1036",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Limited-stage Small Cell Lung Cancer — Treatment Selection",
+   "tags": [
+    "small-cell-lung-cancer",
+    "limited-stage",
+    "concurrent-chemoradiation",
+    "cisplatin-etoposide",
+    "prophylactic-cranial-irradiation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1036.md",
+   "snippet": "64세 남자가 2개월 전부터 기침과 가래에 피가 섞여 나와 병원에 왔다. 45갑년 흡연자이고 최근 3 kg 체중이 줄었다. 진찰에서 쇄골위 림프절은 만져지지 않고 목소리 변화·안면 부종은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 폐엽절제술 후 보조 항암화학요법 B. 시스플라틴·에토포시드와 동시 흉부 방사선치료 C. 흉부 방사선치료 단독 D. 항암화학요법 후 폐엽절제술 E. 면역관문억제제 단독 유지",
+   "text": "Pulmonology Limited-stage Small Cell Lung Cancer — Treatment Selection small-cell-lung-cancer limited-stage concurrent-chemoradiation cisplatin-etoposide prophylactic-cranial-irradiation KMLE 2026 / Claude Routine 64세 남자가 2개월 전부터 기침과 가래에 피가 섞여 나와 병원에 왔다. 45갑년 흡연자이고 최근 3 kg 체중이 줄었다. 진찰에서 쇄골위 림프절은 만져지지 않고 목소리 변화·안면 부종은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 폐엽절제술 후 보조 항암화학요법 B. 시스플라틴·에토포시드와 동시 흉부 방사선치료 C. 흉부 방사선치료 단독 D. 항암화학요법 후 폐엽절제술 E. 면역관문억제제 단독 유지요법 고도 흡연자의 폐문부 종괴, 신경내분비 표지자 양성의 작은 세포 조직, 동측 종격동 림프절만 침범하고 원격 전이가 없어 한쪽 흉곽·하나의 방사선 조사야에 들어가는 제한병기 소세포폐암이다. 표준 치료는 시스플라틴(또는 카보플라틴)·에토포시드 항암화학요법과 조기 동시 흉부 방사선치료이며, 반응하면 예방적 전뇌 방사선 또는 뇌 MRI 감시를 논의한다. 수술은 T1–2N0에만 예외적으로 고려한다."
+  },
+  {
+   "id": "kmle-2026-1035",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Congenital Long QT Syndrome with Exertional Syncope — First-line Drug",
+   "tags": [
+    "long-QT-syndrome",
+    "beta-blocker",
+    "nadolol",
+    "syncope",
+    "sudden-cardiac-death"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1035.md",
+   "snippet": "16세 여자가 수영 중 갑자기 정신을 잃고 쓰러지는 일이 최근 6개월 사이 두 번 있어 병원에 왔다. 전조 증상 없이 쓰러졌고 수십 초 만에 저절로 깨어났으며 경련·혀 깨묾·실금은 없었다. 평소 두근거림은 없고 약물은 복용하지 않는다. 신경학적 진찰은 정상이다. 활력징후와 검사 소견은 자료와 같다. 재발 예방을 위해 시작할 약물로 가장 적절한 것은? A. 프로프라놀롤 B. 아미오다론 C. 소탈롤 D. 플레카이니드 E. 딜티아젬",
+   "text": "Cardiology Congenital Long QT Syndrome with Exertional Syncope — First-line Drug long-QT-syndrome beta-blocker nadolol syncope sudden-cardiac-death KMLE 2026 / Claude Routine 16세 여자가 수영 중 갑자기 정신을 잃고 쓰러지는 일이 최근 6개월 사이 두 번 있어 병원에 왔다. 전조 증상 없이 쓰러졌고 수십 초 만에 저절로 깨어났으며 경련·혀 깨묾·실금은 없었다. 평소 두근거림은 없고 약물은 복용하지 않는다. 신경학적 진찰은 정상이다. 활력징후와 검사 소견은 자료와 같다. 재발 예방을 위해 시작할 약물로 가장 적절한 것은? A. 프로프라놀롤 B. 아미오다론 C. 소탈롤 D. 플레카이니드 E. 딜티아젬 청소년 여자의 운동(특히 수영) 중 반복 실신, 급사 가족력, 구조적으로 정상인 심장에 QTc 510 ms는 선천 QT연장증후군(LQT1형 양상)이다. 1차 치료는 비선택적 베타차단제(나돌롤·프로프라놀롤)로 교감신경 자극에 의한 토르사드 드 푸앵트를 막는다. 소탈롤·아미오다론은 QT를 더 늘려 금기이고, 플레카이니드는 LQT3의 보조 약물, 딜티아젬은 근거가 없다."
+  },
+  {
+   "id": "kmle-2026-1034",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Acute Anterior STEMI after Recent Sildenafil Use — Contraindicated Drug",
+   "tags": [
+    "STEMI",
+    "sildenafil",
+    "PDE5-inhibitor",
+    "nitrate-contraindication",
+    "primary-PCI"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/kmle/2026/kmle-2026-1034.md",
+   "snippet": "57세 남자가 40분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 고혈압과 이상지질혈증으로 암로디핀과 아토르바스타틴을 복용 중이며, 약 5시간 전 발기부전 치료제(실데나필 100 mg)를 복용했다고 한다. 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 목정맥은 늘어나 있지 않다. 이 병원은 24시간 심장혈관 조영술이 가능하다. 활력징후·검사 소견과",
+   "text": "Cardiology Acute Anterior STEMI after Recent Sildenafil Use — Contraindicated Drug STEMI sildenafil PDE5-inhibitor nitrate-contraindication primary-PCI KMLE 2026 / Claude Routine 57세 남자가 40분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 고혈압과 이상지질혈증으로 암로디핀과 아토르바스타틴을 복용 중이며, 약 5시간 전 발기부전 치료제(실데나필 100 mg)를 복용했다고 한다. 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 목정맥은 늘어나 있지 않다. 이 병원은 24시간 심장혈관 조영술이 가능하다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 환자에게 시행하면 안 되는 처치는? A. 아스피린 300 mg 씹어 복용 B. 티카그렐러 180 mg 부하 투여 C. 니트로글리세린 설하 투여 D. 미분획 헤파린 정맥 투여 E. 일차 관상동맥중재술 시행 심전도의 앞가슴유도 ST분절 상승과 40분 전 시작된 지속 흉통은 급성 전벽 ST상승 심근경색이며, 아스피린·P2Y12 억제제·헤파린과 일차 관상동맥중재술은 모두 표준 처치다. 그러나 이 환자는 5시간 전 실데나필을 복용했으므로 24시간 이내에는 어떤 형태의 질산염도 금기다. 두 약이 함께 cGMP 경로를 증폭해 치명적 저혈압을 일으키기 때문이다."
+  },
   {
    "id": "usmle-2026-0163",
    "type": "usmle",
@@ -228,6 +868,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-17.md",
    "snippet": "오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-17 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0609",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society",
+   "confidence": "medium",
+   "date": "2026-09-16",
+   "path": "content/papers/2026/2026-09-16_paper-2026-0609_retraction_targeted_immunomodulation_in_post_transplant_seps.md",
+   "snippet": "Title Retraction: Targeted Immunomodulation in Post Transplant Sepsis: Mechanistic and Clinical Insights from a Phase Based Approach Integrating IgM Enriched IVIG and Hemoadsorption Authors Silić Vanja, Romić Ivan, Pavlek Goran, Bašić Jukić",
+   "text": "Infectious Disease scraped pubmed PubMed / Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society Title Retraction: Targeted Immunomodulation in Post Transplant Sepsis: Mechanistic and Clinical Insights from a Phase Based Approach Integrating IgM Enriched IVIG and Hemoadsorption Authors Silić Vanja, Romić Ivan, Pavlek Goran, Bašić Jukić Nikolina, Feltracco Paolo Journal / DOI Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society · DOI: 10.1097/LVT.0000000000000954 · PMID: 42748418 https://pubmed.ncbi.nlm.nih.gov/42748418/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0608",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-09-16",
+   "path": "content/papers/2026/2026-09-16_paper-2026-0608_left_atrial_appendage_closure_or_anticoagulation_for_atrial_.md",
+   "snippet": "Title Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation. Reply Authors Doshi Shephal K, Kar Saibal Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2609235 · PMID: 42748443 https://pubmed.ncbi.nlm",
+   "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation. Reply Authors Doshi Shephal K, Kar Saibal Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2609235 · PMID: 42748443 https://pubmed.ncbi.nlm.nih.gov/42748443/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1033",
