@@ -1,25 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-16",
+ "generated": "2026-09-17",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2485,
+  "total": 2495,
   "byType": {
    "usmle": 150,
+   "imaging": 53,
    "anatomy": 663,
+   "paper": 609,
    "kmle": 1003,
-   "imaging": 45,
-   "paper": 607,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 663,
-   "Cardiology": 189,
+   "Cardiology": 190,
    "Nephrology": 158,
-   "Infectious Disease": 136,
+   "Infectious Disease": 137,
    "Pediatrics": 114,
    "Hematology-Oncology": 90,
    "Pathology": 87,
@@ -37,9 +37,9 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 62,
    "Hematology": 61,
    "Laboratory Medicine": 60,
-   "산부인과": 24,
+   "산부인과": 30,
    "Physiology": 17,
-   "순환기": 13,
+   "순환기": 14,
    "Pharmacology": 12,
    "Microbiology": 11,
    "Biochemistry": 10,
@@ -47,9 +47,9 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 8,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "병리·조직학": 4,
    "호흡기": 4,
    "Oncology": 3,
-   "병리·조직학": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -59,8 +59,8 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1644,
-   "medium": 792,
+   "high": 1652,
+   "medium": 794,
    "low": 49
   },
   "tagCount": 3517
@@ -216,6 +216,146 @@ window.MEDKOS_INDEX = {
    "text": "Pathology Moon Facies and a Unilateral Adrenal Mass With Suppressed ACTH — What Happens to the Cortex on the Other Side Cushing-syndrome adrenal-adenoma ACTH-independent zona-fasciculata zona-reticularis adrenal-atrophy trophic-hormone contralateral-atrophy hypercortisolism USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Adrenal Cortex, Hypercortisolism; Nieman LK et al. Treatment of Cushing's Syndrome: Endocrine Society Guideline. J Clin Endocrinol Metab 2015) A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen, and proximal muscle weakness. Her vital signs and laboratory studies are shown. Adrenal CT shows a 3.2 cm well circumscribed, homogeneous mass in the left adrenal gland. Which of the following is the most likely finding in the right adrenal gland of this patient? A. Atrophy of the zona fasciculata and zona reticularis B. Diffuse hyperplasia of all three cortical zones C. Atrophy of the entire cortex including the zona glomerulosa D. Micronodular hyperplasia with lipofuscin rich pigmented nodules E. Hemorrhagic infarction of the cortex and medulla 고코르티솔혈증(소변 유리 코르티솔 ↑, 1 mg 덱사메타손 억제 실패) + ACTH 억제(< 5) + 편측 부신 종괴 = ACTH 비의존성 쿠싱증후군(부신 선종). 선종이 자율적으로 분비하는 코르티솔이 시상하부·뇌하수체를 음성 되먹임으로 눌러 ACTH 가 소실되고, ACTH 를 영양호르몬으로 삼는 속상대(zona fasciculata)·망상대(zona reticularis)는 종괴가 없는 반대쪽 부신(및 종괴 주변 정상 조직)에서 위축된다. 사구대(zona glomerulosa)는 레닌–안지오텐신 II·칼륨이 조절하므로 보존된다(알도스테론·레닌 정상). 양측 미만성 과형성(B)은 ACTH 의존성(뇌하수체·이소성) 때, 색소성 미세결절 과형성(D)은 원발성 색소성 결절성 부신피질질환(Carney 복합체)이며 편측 3 cm 종괴·ACTH 억제와 맞지 않는다. 전 피질 위축(C)은 사구대가 ACTH 비의존적이므로 틀리고, 출혈성 경색(E)은 Waterhouse Friderichsen·항응고 합병증에서 보이는 부신 파괴 소견이다."
   },
   {
+   "id": "imaging-2026-0053",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0053.md",
+   "snippet": "A 57 year old woman comes to the physician because of a 4 month history of pelvic pressure and two episodes of vaginal bleeding. Menopause occurred at age 51 and she has never used hormone therapy. Pelvic examination shows a uterus enlarged",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 57 year old woman comes to the physician because of a 4 month history of pelvic pressure and two episodes of vaginal bleeding. Menopause occurred at age 51 and she has never used hormone therapy. Pelvic examination shows a uterus enlarged to the size of a 16 week gestation. MRI shows a 9 cm heterogeneous intramural mass with ill defined margins and areas of hemorrhage. Endometrial biopsy shows inactive endometrium. She undergoes total hysterectomy with bilateral salpingo oophorectomy. Histologic examination of the mass shows a hypercellular spindle cell tumor with diffuse moderate to severe nuclear atypia and 4 mitotic figures per 10 high power fields. Which of the following additional histologic findings would most strongly support a diagnosis of leiomyosarcoma rather than leiomyoma? A. Prominent thick walled blood vessels B. Epithelioid cell morphology C. Coagulative tumor cell necrosis D. Hyaline necrosis surrounded by a zone of hyalinized collagen E. Diffuse hydropic degeneration"
+  },
+  {
+   "id": "imaging-2026-0052",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0052.md",
+   "snippet": "A 42 year old woman comes to the physician to discuss cancer risk reduction. Genetic testing performed after her sister was diagnosed with ovarian cancer at age 45 showed a pathogenic germline BRCA1 mutation. She has two children and does n",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 42 year old woman comes to the physician to discuss cancer risk reduction. Genetic testing performed after her sister was diagnosed with ovarian cancer at age 45 showed a pathogenic germline BRCA1 mutation. She has two children and does not desire more. Her menses are regular. She has no family history of colorectal or endometrial cancer. Pelvic examination and transvaginal ultrasonography are normal, and serum CA 125 concentration is 9 U/mL. Which of the following is the most appropriate recommendation to reduce her risk of ovarian cancer? A. Combined oral contraceptive pills until menopause B. Total hysterectomy with ovarian preservation C. Bilateral salpingectomy with ovarian preservation D. Risk reducing bilateral salpingo oophorectomy E. Annual transvaginal ultrasonography with serum CA 125"
+  },
+  {
+   "id": "imaging-2026-0051",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0051.md",
+   "snippet": "63세 여자가 3년 전부터 심해지는 외음부 가려움과 최근의 성교통으로 병원에 왔다. 12년 전 폐경하였고 호르몬 치료는 받지 않았다. 진찰에서 소음순이 위축되어 대음순과 유착되고 음핵이 덮여 있으며, 외음부에서 항문 주위까지 8자 모양으로 희고 얇게 주름진 위축성 반과 균열이 있다. 질 점막은 정상이다. 반에서 시행한 펀치 생검에서 표피 위축과 기저층 공포화, 진피 상부의 균질화와 그 아래 띠 모양 림프구 침윤이 보이고 이형성",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 63세 여자가 3년 전부터 심해지는 외음부 가려움과 최근의 성교통으로 병원에 왔다. 12년 전 폐경하였고 호르몬 치료는 받지 않았다. 진찰에서 소음순이 위축되어 대음순과 유착되고 음핵이 덮여 있으며, 외음부에서 항문 주위까지 8자 모양으로 희고 얇게 주름진 위축성 반과 균열이 있다. 질 점막은 정상이다. 반에서 시행한 펀치 생검에서 표피 위축과 기저층 공포화, 진피 상부의 균질화와 그 아래 띠 모양 림프구 침윤이 보이고 이형성은 없다. 가장 적절한 치료는? A. 클로베타솔 프로피오네이트 연고 도포 B. 에스트로겐 질크림 도포 C. 이미퀴모드 크림 도포 D. 단순 외음부절제술 E. 플루코나졸 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0050",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0050.md",
+   "snippet": "28세 여자가 1주일 전부터 냄새나는 질분비물과 외음부 가려움, 성교통으로 병원에 왔다. 성 상대자는 한 명이며 콘돔을 쓰지 않는다. 질경 검사에서 거품이 섞인 황록색 분비물이 많고 자궁경부에 점상 출혈(딸기 모양)이 보인다. 질분비물 pH 는 5.5 이고, 생리식염수 습식도말에서 편모를 움직이는 원충이 다수 관찰되며 KOH 도말에서 균사는 없다. 가장 적절한 치료는? A. 플루코나졸 1회 경구 투여 B. 클린다마이신 질크림 ",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 28세 여자가 1주일 전부터 냄새나는 질분비물과 외음부 가려움, 성교통으로 병원에 왔다. 성 상대자는 한 명이며 콘돔을 쓰지 않는다. 질경 검사에서 거품이 섞인 황록색 분비물이 많고 자궁경부에 점상 출혈(딸기 모양)이 보인다. 질분비물 pH 는 5.5 이고, 생리식염수 습식도말에서 편모를 움직이는 원충이 다수 관찰되며 KOH 도말에서 균사는 없다. 가장 적절한 치료는? A. 플루코나졸 1회 경구 투여 B. 클린다마이신 질크림 도포 C. 세프트리악손 근육주사와 독시사이클린 경구 D. 아시클로버 경구 투여 E. 메트로니다졸 경구 투여와 성 상대자 동시 치료"
+  },
+  {
+   "id": "imaging-2026-0049",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "자궁경부 — 조직학·변형대",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0049.md",
+   "snippet": "A 46 year old woman, gravida 2, para 2, undergoes loop electrosurgical excision of the cervix because a Papanicolaou smear showed atypical glandular cells. Her last menstrual period was 2 weeks ago. Pelvic examination shows no gross lesion;",
+   "text": "병리·조직학 자궁경부 — 조직학·변형대 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 46 year old woman, gravida 2, para 2, undergoes loop electrosurgical excision of the cervix because a Papanicolaou smear showed atypical glandular cells. Her last menstrual period was 2 weeks ago. Pelvic examination shows no gross lesion; colposcopy shows the squamocolumnar junction on the ectocervix. A section of the excised cervical tissue stained by immunohistochemistry for a secreted gel forming mucin is shown. The strongly stained epithelium lines glands within fibromuscular stroma. Which of the following processes normally replaces this epithelium at the transformation zone after puberty? A. Squamous metaplasia B. Squamous dysplasia C. Microglandular hyperplasia D. Cervical endometriosis E. Hyperkeratosis"
+  },
+  {
+   "id": "imaging-2026-0048",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0048.md",
+   "snippet": "27세 경산부(1회 출산)가 임신 42주 0일에 규칙적인 진통으로 내원하였다. 산전 진찰에서 태아 성장과 양수량은 정상이었고 40주와 41주에 시행한 비수축검사는 반응성이었다. 자궁경부는 4 cm 개대되었고 양막은 파열되지 않았다. 지속 전자태아감시의 태아심박동(위)과 자궁수축(아래) 기록은 그림과 같다. 가장 적절한 조치는? A. 산소 투여와 좌측와위 B. 지속 감시하며 진통 경과 관찰 C. 양수주입 D. 응급 제왕절개술 E",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 27세 경산부(1회 출산)가 임신 42주 0일에 규칙적인 진통으로 내원하였다. 산전 진찰에서 태아 성장과 양수량은 정상이었고 40주와 41주에 시행한 비수축검사는 반응성이었다. 자궁경부는 4 cm 개대되었고 양막은 파열되지 않았다. 지속 전자태아감시의 태아심박동(위)과 자궁수축(아래) 기록은 그림과 같다. 가장 적절한 조치는? A. 산소 투여와 좌측와위 B. 지속 감시하며 진통 경과 관찰 C. 양수주입 D. 응급 제왕절개술 E. 태아 두피 혈액 pH 검사"
+  },
+  {
+   "id": "imaging-2026-0047",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0047.md",
+   "snippet": "25세 초산부가 임신 39주에 규칙적인 진통으로 입원하였다. 산전 진찰에서 특이 소견은 없었다. 자궁경부는 5 cm 개대되었고 2시간 전 양막이 파열되었으며 양수는 맑았다. 옥시토신은 투여하지 않고 있다. 지속 전자태아감시에서 자궁수축은 3분마다 있고, 태아심박동 기록은 그림과 같다. 좌측와위로 바꾸고 안면마스크로 산소를 주었으나 30분 동안 같은 소견이 매 수축마다 반복되었다. 가장 적절한 처치는? A. 흡입분만 B. 터부탈",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 25세 초산부가 임신 39주에 규칙적인 진통으로 입원하였다. 산전 진찰에서 특이 소견은 없었다. 자궁경부는 5 cm 개대되었고 2시간 전 양막이 파열되었으며 양수는 맑았다. 옥시토신은 투여하지 않고 있다. 지속 전자태아감시에서 자궁수축은 3분마다 있고, 태아심박동 기록은 그림과 같다. 좌측와위로 바꾸고 안면마스크로 산소를 주었으나 30분 동안 같은 소견이 매 수축마다 반복되었다. 가장 적절한 처치는? A. 흡입분만 B. 터부탈린 피하주사 C. 양수주입 D. 옥시토신 투여 E. 응급 제왕절개술"
+  },
+  {
+   "id": "imaging-2026-0046",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 약물 효과",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0046.md",
+   "snippet": "An 86 year old woman comes to the physician for a routine follow up examination. She has heart failure with reduced ejection fraction and has been taking digoxin 0.125 mg daily, carvedilol, and furosemide for 3 years. She has no chest pain,",
+   "text": "순환기 심전도 판독 — 약물 효과 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 An 86 year old woman comes to the physician for a routine follow up examination. She has heart failure with reduced ejection fraction and has been taking digoxin 0.125 mg daily, carvedilol, and furosemide for 3 years. She has no chest pain, palpitations, nausea, or visual symptoms. Her pulse is 88/min and regular, and blood pressure is 126/72 mm Hg. Cardiac examination shows no new murmur. Serum potassium concentration is 4.3 mEq/L, creatinine is 0.9 mg/dL, and the serum digoxin concentration measured last week was 0.8 ng/mL. A 12 lead electrocardiogram is shown. Which of the following is the most appropriate next step in management? A. Give intravenous potassium chloride B. Continue the current regimen C. Discontinue digoxin D. Administer digoxin specific antibody fragments E. Measure serum troponin and begin heparin"
+  },
+  {
    "id": "anatomy-daily-2026-09-17",
    "type": "anatomy",
    "unit": "팔·배",
@@ -228,6 +368,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-17.md",
    "snippet": "오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-17 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 17 · t2 new) 다음 수업/시험: 2026 09 17 위팔 앞칸·팔오금·아래팔 앞칸·손바닥, 배벽·얕은근막·배근육·고샅관·정삭·음낭·고환 Tagging 1까지 7일 · Tagging 2까지 32일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0609",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society",
+   "confidence": "medium",
+   "date": "2026-09-16",
+   "path": "content/papers/2026/2026-09-16_paper-2026-0609_retraction_targeted_immunomodulation_in_post_transplant_seps.md",
+   "snippet": "Title Retraction: Targeted Immunomodulation in Post Transplant Sepsis: Mechanistic and Clinical Insights from a Phase Based Approach Integrating IgM Enriched IVIG and Hemoadsorption Authors Silić Vanja, Romić Ivan, Pavlek Goran, Bašić Jukić",
+   "text": "Infectious Disease scraped pubmed PubMed / Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society Title Retraction: Targeted Immunomodulation in Post Transplant Sepsis: Mechanistic and Clinical Insights from a Phase Based Approach Integrating IgM Enriched IVIG and Hemoadsorption Authors Silić Vanja, Romić Ivan, Pavlek Goran, Bašić Jukić Nikolina, Feltracco Paolo Journal / DOI Liver transplantation : official publication of the American Association for the Study of Liver Diseases and the International Liver Transplantation Society · DOI: 10.1097/LVT.0000000000000954 · PMID: 42748418 https://pubmed.ncbi.nlm.nih.gov/42748418/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0608",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-09-16",
+   "path": "content/papers/2026/2026-09-16_paper-2026-0608_left_atrial_appendage_closure_or_anticoagulation_for_atrial_.md",
+   "snippet": "Title Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation. Reply Authors Doshi Shephal K, Kar Saibal Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2609235 · PMID: 42748443 https://pubmed.ncbi.nlm",
+   "text": "Cardiology scraped pubmed PubMed / The New England journal of medicine Title Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation. Reply Authors Doshi Shephal K, Kar Saibal Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2609235 · PMID: 42748443 https://pubmed.ncbi.nlm.nih.gov/42748443/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1033",
