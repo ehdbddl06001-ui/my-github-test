@@ -9568,6 +9568,397 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0576",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 번호핀 1~32가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 다섯 자리 / 2. 폄근지지띠 여섯 칸 / 3. 해부코담배갑 / 4. 간세동이 / 5. 그물막구멍 / 6. 쓸개이자관팽대 / 7. 1칸 / 8. 2칸 / 9. 3칸 / 10. 4칸 / 11. 5칸 / 12. 6칸 / 13. 경계 / 14. 내용물·지나는 것 / 15. 간문맥 / 16. 고유간동맥 / 17. 온쓸개관 / 18. 쓸개세모 / 19. Pringle법 / 20. 앞 / 21. 뒤 / 22. 위 / 23. 아래 / 24. 큰샘창자유두 / 25. 작은샘창자유두 / 26. 노쪽(앞)벽 / 27. 자쪽(뒤)벽 / 28. 바닥 / 29. 몸쪽 꼭짓점 / 30. 노동맥 / 31. 노신경 얕은가지 / 32. 노쪽피부정맥 시작",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0577",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 **폄근지지띠 여섯 칸** 계통에 해당하는 번호핀 2, 7, 8, 9, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 폄근지지띠 여섯 칸 / 7. 1칸 / 8. 2칸 / 9. 3칸 / 10. 4칸 / 11. 5칸 / 12. 6칸",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0578",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 **해부코담배갑** 계통에 해당하는 번호핀 3, 13, 14, 26, 27, 28, 29, 30, 31, 32 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 해부코담배갑 / 13. 경계 / 14. 내용물·지나는 것 / 26. 노쪽(앞)벽 / 27. 자쪽(뒤)벽 / 28. 바닥 / 29. 몸쪽 꼭짓점 / 30. 노동맥 / 31. 노신경 얕은가지 / 32. 노쪽피부정맥 시작",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0579",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 **간세동이** 계통에 해당하는 번호핀 4, 15, 16, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 간세동이 / 15. 간문맥 / 16. 고유간동맥 / 17. 온쓸개관 / 18. 쓸개세모 / 19. Pringle법",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0580",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 **그물막구멍** 계통에 해당하는 번호핀 5, 20, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 그물막구멍 / 20. 앞 / 21. 뒤 / 22. 위 / 23. 아래",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0581",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이)에서 **쓸개이자관팽대** 계통에 해당하는 번호핀 6, 24, 25 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 쓸개이자관팽대 / 24. 큰샘창자유두 / 25. 작은샘창자유두",
+   "explanation": "11회차 · 칸과 경계가 그대로 태깅 문제가 되는 다섯 자리 폄근지지띠 밑은 **여섯 칸** — 노쪽 1번부터 자쪽 6번까지 번호가 곧 답이다. 간세동이는 **문맥이 뒤, 앞에 동맥(왼)·쓸개관(오른)** — 세 개의 위치가 문제로 나온다. 그물막구멍은 **앞이 간샘창자인대** — 손가락을 넣어 Pringle법으로 잡는 자리다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0582",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 신경과 배안의 자율신경)에서 번호핀 1~22가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 11회차의 신경 / 2. 노신경 / 3. 자신경 손등가지 / 4. 배안의 자율신경얼기 / 5. 위팔 뒤칸 구간 / 6. 가쪽근육사이막 관통 / 7. 갈림 전 가지 / 8. 깊은가지 / 9. 얕은가지 / 10. 복강신경얼기 / 11. 위창자간막신경얼기 / 12. 아래창자간막신경얼기 / 13. 미주신경 앞·뒤줄기 / 14. 위팔세갈래근 가지 / 15. 팔꿈치근 가지 / 16. 뒤아래팔피부신경 / 17. 뒤뼈사이신경 / 18. 손뒤침근·자쪽손목폄근·손가락폄근·새끼폄근 / 19. 손등가쪽 3.5손가락 / 20. 해부코담배갑 위 피부 / 21. 간얼기 / 22. 위얼기·지라얼기",
+   "explanation": "11회차 · 팔 뒤칸은 노신경 하나가 다 맡고, 배안은 얼기가 동맥을 타고 간다 팔 뒤칸에는 신경이 **하나뿐이다** — 노신경. 앞칸의 정중·자처럼 나눠 갖지 않는다. 노신경은 손뒤침근에서 **둘로 갈린다** — 깊은가지(뒤뼈사이, 운동)와 얕은가지(감각). 배안의 자율신경은 길을 따로 내지 않는다 — **동맥을 감싸고 같은 이름으로** 따라간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-nerve",
+     "page": null,
+     "section": "뒤칸의 신경과 배안의 자율신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0583",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 신경과 배안의 자율신경)에서 **노신경** 계통에 해당하는 번호핀 2, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 20 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 노신경 / 5. 위팔 뒤칸 구간 / 6. 가쪽근육사이막 관통 / 7. 갈림 전 가지 / 8. 깊은가지 / 9. 얕은가지 / 14. 위팔세갈래근 가지 / 15. 팔꿈치근 가지 / 16. 뒤아래팔피부신경 / 17. 뒤뼈사이신경 / 18. 손뒤침근·자쪽손목폄근·손가락폄근·새끼폄근 / 19. 손등가쪽 3.5손가락 / 20. 해부코담배갑 위 피부",
+   "explanation": "11회차 · 팔 뒤칸은 노신경 하나가 다 맡고, 배안은 얼기가 동맥을 타고 간다 팔 뒤칸에는 신경이 **하나뿐이다** — 노신경. 앞칸의 정중·자처럼 나눠 갖지 않는다. 노신경은 손뒤침근에서 **둘로 갈린다** — 깊은가지(뒤뼈사이, 운동)와 얕은가지(감각). 배안의 자율신경은 길을 따로 내지 않는다 — **동맥을 감싸고 같은 이름으로** 따라간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-nerve",
+     "page": null,
+     "section": "뒤칸의 신경과 배안의 자율신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0584",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 신경과 배안의 자율신경)에서 **배안의 자율신경얼기** 계통에 해당하는 번호핀 4, 10, 11, 12, 13, 21, 22 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 배안의 자율신경얼기 / 10. 복강신경얼기 / 11. 위창자간막신경얼기 / 12. 아래창자간막신경얼기 / 13. 미주신경 앞·뒤줄기 / 21. 간얼기 / 22. 위얼기·지라얼기",
+   "explanation": "11회차 · 팔 뒤칸은 노신경 하나가 다 맡고, 배안은 얼기가 동맥을 타고 간다 팔 뒤칸에는 신경이 **하나뿐이다** — 노신경. 앞칸의 정중·자처럼 나눠 갖지 않는다. 노신경은 손뒤침근에서 **둘로 갈린다** — 깊은가지(뒤뼈사이, 운동)와 얕은가지(감각). 배안의 자율신경은 길을 따로 내지 않는다 — **동맥을 감싸고 같은 이름으로** 따라간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-nerve",
+     "page": null,
+     "section": "뒤칸의 신경과 배안의 자율신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0585",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 신경과 배안의 자율신경)에서 **자신경 손등가지** 계통에 해당하는 번호핀 3 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 자신경 손등가지",
+   "explanation": "11회차 · 팔 뒤칸은 노신경 하나가 다 맡고, 배안은 얼기가 동맥을 타고 간다 팔 뒤칸에는 신경이 **하나뿐이다** — 노신경. 앞칸의 정중·자처럼 나눠 갖지 않는다. 노신경은 손뒤침근에서 **둘로 갈린다** — 깊은가지(뒤뼈사이, 운동)와 얕은가지(감각). 배안의 자율신경은 길을 따로 내지 않는다 — **동맥을 감싸고 같은 이름으로** 따라간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-nerve",
+     "page": null,
+     "section": "뒤칸의 신경과 배안의 자율신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0586",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 번호핀 1~47가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 11회차의 혈관 / 2. 깊은위팔동맥 / 3. 온뼈사이동맥 / 4. 노동맥 손등 구간 / 5. 손등정맥그물 / 6. 복강동맥 / 7. 위창자간막동맥 / 8. 아래창자간막동맥 / 9. 간문맥계 / 10. 중간곁동맥·노쪽곁동맥 / 11. 뒤뼈사이동맥 / 12. 앞뼈사이동맥 / 13. 손등동맥그물 / 14. 왼위동맥 / 15. 지라동맥 / 16. 온간동맥 / 17. 아래이자샘창자동맥 / 18. 빈창자·돌창자동맥 / 19. 중간잘록창자동맥 / 20. 오른잘록창자동맥 / 21. 돌잘록창자동맥 / 22. 왼잘록창자동맥 / 23. 구불잘록창자가지 / 24. 위곧창자동맥 / 25. 가장자리동맥 / 26. 간문맥 / 27. 문맥–대정맥 연결 / 28. 짧은위동맥 / 29. 왼위그물막동맥 / 30. 이자가지 / 31. 고유간동맥 / 32. 위샘창자동맥 / 33. 오른위동맥 / 34. 곧은동맥 / 35. 막창자꼬리동맥 / 36. 위창자간막정맥 / 37. 지라정맥 / 38. 아래창자간막정맥 / 39. 간샘창자인대 속 배열 / 40. 식도정맥 / 41. 배꼽옆정맥 / 42. 곧창자정맥 / 43. 복막뒤 정맥 / 44. 오른간동맥 → 쓸개동맥 / 45. 왼간동맥 / 46. 오른위그물막동맥 / 47. 위이자샘창자동맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0587",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **온뼈사이동맥** 계통에 해당하는 번호핀 3, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 온뼈사이동맥 / 11. 뒤뼈사이동맥 / 12. 앞뼈사이동맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0588",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **복강동맥** 계통에 해당하는 번호핀 6, 14, 15, 16, 28, 29, 30, 31, 32, 33, 44, 45, 46, 47 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 복강동맥 / 14. 왼위동맥 / 15. 지라동맥 / 16. 온간동맥 / 28. 짧은위동맥 / 29. 왼위그물막동맥 / 30. 이자가지 / 31. 고유간동맥 / 32. 위샘창자동맥 / 33. 오른위동맥 / 44. 오른간동맥 → 쓸개동맥 / 45. 왼간동맥 / 46. 오른위그물막동맥 / 47. 위이자샘창자동맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0589",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **위창자간막동맥** 계통에 해당하는 번호핀 7, 17, 18, 19, 20, 21, 34, 35 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "7. 위창자간막동맥 / 17. 아래이자샘창자동맥 / 18. 빈창자·돌창자동맥 / 19. 중간잘록창자동맥 / 20. 오른잘록창자동맥 / 21. 돌잘록창자동맥 / 34. 곧은동맥 / 35. 막창자꼬리동맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0590",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **아래창자간막동맥** 계통에 해당하는 번호핀 8, 22, 23, 24, 25 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "8. 아래창자간막동맥 / 22. 왼잘록창자동맥 / 23. 구불잘록창자가지 / 24. 위곧창자동맥 / 25. 가장자리동맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0591",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **간문맥계** 계통에 해당하는 번호핀 9, 26, 27, 36, 37, 38, 39, 40, 41, 42, 43 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "9. 간문맥계 / 26. 간문맥 / 27. 문맥–대정맥 연결 / 36. 위창자간막정맥 / 37. 지라정맥 / 38. 아래창자간막정맥 / 39. 간샘창자인대 속 배열 / 40. 식도정맥 / 41. 배꼽옆정맥 / 42. 곧창자정맥 / 43. 복막뒤 정맥",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0592",
+   "style": "spotter",
+   "session": 11,
+   "region": "multi",
+   "subregion": "s11-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(뒤칸의 혈관과 배안 세 동맥·간문맥계)에서 **깊은위팔동맥 · 노동맥 손등 구간 · 손등정맥그물** 계통에 해당하는 번호핀 2, 4, 5, 10, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 깊은위팔동맥 / 4. 노동맥 손등 구간 / 5. 손등정맥그물 / 10. 중간곁동맥·노쪽곁동맥 / 13. 손등동맥그물",
+   "explanation": "11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다 홀동맥 셋 = **복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)**. 세 동맥은 **가장자리동맥(Drummond)**과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다. 정맥은 동맥을 따라가되 **심장이 아니라 간으로** 모인다 — 그것이 간문맥계다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s11-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s11-vessel",
+     "page": null,
+     "section": "뒤칸의 혈관과 배안 세 동맥·간문맥계"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -9632,7 +10023,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0006",
    "style": "relation",
-   "session": 11,
+   "session": 12,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -11539,9 +11930,203 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0558",
+   "session": 11,
+   "title": "11회차 서브노트 — 뒤칸의 노신경 · 배안의 세 동맥",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 위팔 뒤칸",
+    "2. 아래팔 뒤칸 — 얕은층",
+    "3. 아래팔 뒤칸 — 깊은층",
+    "4. 손등과 해부코담배갑",
+    "5. 복막",
+    "6. 위와 지라",
+    "7. 간과 쓸개",
+    "8. 창자와 세 동맥",
+    "9. 샘창자와 이자",
+    "10. 문맥-대정맥 연결 (응용과제)",
+    "11. 예습시험 체크리스트 10 (수업당 10문제 대비)"
+   ],
+   "figs": [
+    "tree-s11-bundle-labeled.svg",
+    "tree-s11-nerve-labeled.svg",
+    "tree-s11-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "뒤칸은 신경이 하나 — 노신경",
+     "full": "위팔 뒤칸·아래팔 뒤칸·손등 전부 노신경 계열. 앞칸처럼 정중·자가 나눠 갖지 않는다",
+     "note": "그래서 '뒤칸 근육의 신경은?' 문제는 답이 늘 같다 — 함정은 '어느 가지냐'다"
+    },
+    {
+     "key": "노신경은 손뒤침근에서 둘로 — 깊은=운동, 얕은=감각",
+     "full": "깊은가지가 손뒤침근을 뚫으면 뒤뼈사이신경(순수 운동) · 얕은가지는 위팔노근 깊이로 내려가 손등 감각",
+     "note": "뒤뼈사이신경 마비 = 손목은 살고 손가락만 못 편다(손목 폄은 ECRL이 갈림 전 가지라 남는다)"
+    },
+    {
+     "key": "폄근지지띠 6칸 — 1 APL·EPB / 2 ECRL·ECRB / 3 EPL / 4 ED·EI / 5 EDM / 6 ECU",
+     "full": "노쪽 1번에서 자쪽 6번으로. 3칸은 리스터결절을 돌고, 4칸 바닥으로 뒤뼈사이신경이 지난다",
+     "note": "1칸 = de Quervain, 3칸 = 콜레스 골절 뒤 긴엄지폄근 파열"
+    },
+    {
+     "key": "코담배갑은 1칸·3칸이 벽, 바닥은 손배뼈",
+     "full": "앞벽 APL+EPB(1칸) · 뒤벽 EPL(3칸) · 바닥 손배뼈+큰마름뼈 · 노동맥이 바닥 위를 지난다",
+     "note": "눌러서 아프면 손배뼈 골절 — X선 음성이어도 고정한다"
+    },
+    {
+     "key": "복막속 vs 복막뒤 — SAD PUCKER가 뒤",
+     "full": "Suprarenal · Aorta/IVC · Duodenum(2·3부) · Pancreas(꼬리 빼고) · Ureter · Colon(오름·내림) · Kidney · Esophagus · Rectum",
+     "note": "위·지라·간·빈창자·돌창자·가로잘록·구불잘록은 복막속(간막이 있다)"
+    },
+    {
+     "key": "홀동맥 셋이 창자를 나눈다 — 앞·중간·뒤창자",
+     "full": "복강동맥(T12) 앞창자 · 위창자간막동맥(L1) 중간창자 · 아래창자간막동맥(L3) 뒤창자",
+     "note": "중간창자↔뒤창자 경계는 가로잘록창자 2/3 지점 — 여기가 분수령(Griffiths)이라 허혈이 잘 온다"
+    },
+    {
+     "key": "복강동맥 셋 — 왼위 · 지라 · 온간",
+     "full": "left gastric · splenic · common hepatic. 온간동맥이 다시 고유간동맥 + 위샘창자동맥 + 오른위동맥",
+     "note": "위는 큰굽이·작은굽이 양쪽에서 이중으로 받는다 — 그래서 위는 잘 안 죽는다"
+    },
+    {
+     "key": "간세동이 — 문맥이 뒤, 앞은 동맥(왼)·쓸개관(오른)",
+     "full": "간샘창자인대 속. 뒤=간문맥(가장 굵다) · 앞왼=고유간동맥 · 앞오른=온쓸개관",
+     "note": "그물막구멍 앞벽이 바로 이 인대 — 손가락을 넣어 집는 것이 Pringle법"
+    },
+    {
+     "key": "그물막구멍 네 경계 — 앞 인대 · 뒤 대정맥 · 위 꼬리엽 · 아래 샘창자",
+     "full": "ant. 간샘창자인대 · post. 아래대정맥 · sup. 간 꼬리엽 · inf. 샘창자 첫부분",
+     "note": "뒤가 아래대정맥이라 인대를 집을 때 뒤로 뚫지 않는다"
+    },
+    {
+     "key": "빈창자는 활 적고 곧은동맥 길다, 돌창자는 반대",
+     "full": "jejunum — arcade 1~2층·vasa recta 길다·벽 두껍다·창자간막 지방 적다 / ileum — arcade 4~5층·vasa recta 짧다·Peyer판",
+     "note": "적출 표본에서 빈창자·돌창자를 가르는 실전 기준"
+    },
+    {
+     "key": "막창자꼬리는 띠를 따라가면 나온다",
+     "full": "잘록창자띠 3개가 모이는 점이 막창자꼬리 뿌리. 위치는 뒤맹장(retrocecal)이 가장 흔하고 골반형이 다음",
+     "note": "응용과제 — 위치변이가 증상을 바꾼다(뒤맹장형은 압통이 약하고 허리로 간다)"
+    },
+    {
+     "key": "문맥-대정맥 연결 네 자리 — 식도·배꼽·곧창자·복막뒤",
+     "full": "식도정맥류 · caput medusae · 치질 · Retzius정맥",
+     "note": "응용과제 — 문맥고혈압에서 어디가 굵어지는지가 그대로 문제"
+    },
+    {
+     "key": "이자 뒤로 지라정맥, 그 뒤에서 문맥이 태어난다",
+     "full": "이자목 **뒤**에서 지라정맥 + 위창자간막정맥 = 간문맥. 아래창자간막정맥은 지라정맥으로 올라간다",
+     "note": "이자머리암이 온쓸개관을 눌러 무통성 황달을 만드는 것도 이 위치관계 때문"
+    },
+    {
+     "key": "큰샘창자유두는 내림부분 뒤안쪽벽",
+     "full": "온쓸개관 + 이자관 → 쓸개이자관팽대(Vater) → 큰유두 · 덧이자관은 작은유두로 따로",
+     "note": "ERCP가 들어가는 자리"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-18",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "upper-limb",
+    "abdomen"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0032"
+    ],
+    "layer": [
+     "anatomy-2026-0035"
+    ],
+    "branch": [
+     "anatomy-2026-0002"
+    ],
+    "relation": [
+     "anatomy-2026-0001",
+     "anatomy-2026-0003"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0469",
+    "anatomy-2026-0471",
+    "anatomy-2026-0476",
+    "anatomy-2026-0512",
+    "anatomy-2026-0515",
+    "anatomy-2026-0468",
+    "anatomy-2026-0497",
+    "anatomy-2026-0470",
+    "anatomy-2026-0480",
+    "anatomy-2026-0516",
+    "anatomy-2026-0514",
+    "anatomy-2026-0517"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ],
+    "d-3": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ],
+    "d-7": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0474",
+     "anatomy-2026-0472",
+     "anatomy-2026-0159",
+     "anatomy-2026-0468",
+     "anatomy-2026-0031",
+     "anatomy-2026-0470",
+     "anatomy-2026-0378",
+     "anatomy-2026-0476",
+     "anatomy-2026-0154",
+     "anatomy-2026-0377"
+    ],
+    "d-14": [
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0044",
+     "anatomy-2026-0048",
+     "anatomy-2026-0355",
+     "anatomy-2026-0043",
+     "anatomy-2026-0017",
+     "anatomy-2026-0447",
+     "anatomy-2026-0356",
+     "anatomy-2026-0045",
+     "anatomy-2026-0050",
+     "anatomy-2026-0359"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-17",
    "phase": "t2-new",
@@ -14220,87 +14805,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0006",
      "anatomy-2026-0014",
      "anatomy-2026-0007"
-    ],
-    "d-14": []
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-08-19",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "back",
-    "lower-limb"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0029"
-    ],
-    "layer": [
-     "anatomy-2026-0030"
-    ],
-    "branch": [
-     "anatomy-2026-0035"
-    ],
-    "relation": [
-     "anatomy-2026-0036",
-     "anatomy-2026-0037"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0040",
-    "anatomy-2026-0046",
-    "anatomy-2026-0044",
-    "anatomy-2026-0041",
-    "anatomy-2026-0039",
-    "anatomy-2026-0043",
-    "anatomy-2026-0015",
-    "anatomy-2026-0157",
-    "anatomy-2026-0353",
-    "anatomy-2026-0045",
-    "anatomy-2026-0048",
-    "anatomy-2026-0052"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0157",
-     "anatomy-2026-0047",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-3": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0004",
-     "anatomy-2026-0047",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-7": [
-     "anatomy-2026-0004",
-     "anatomy-2026-0012",
-     "anatomy-2026-0010",
-     "anatomy-2026-0009",
-     "anatomy-2026-0008",
-     "anatomy-2026-0011",
-     "anatomy-2026-0007",
-     "anatomy-2026-0005",
-     "anatomy-2026-0006"
     ],
     "d-14": []
    },

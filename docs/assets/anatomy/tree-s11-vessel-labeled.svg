@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026 2401" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="뒤칸의 혈관과 배안 세 동맥·간문맥계 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="1026" height="2401" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">뒤칸의 혈관과 배안 세 동맥·간문맥계<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> vessels of the posterior compartment &amp; the three unpaired abdominal arteries</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 406,130 H 419 V 120 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,244 H 419 V 211 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,244 H 419 V 286 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,366 H 419 V 356 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 592 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 656 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 720 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,816 H 801 V 789 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,816 H 801 V 853 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,953 H 801 V 917 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,953 H 801 V 998 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 816 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 953 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 1078 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 528 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 651 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 942 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1218 H 615 V 1222 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1426 H 615 V 1431 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1148 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1218 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1298 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1362 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1426 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1506 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1570 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1628 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1698 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1768 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1837 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1918 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 2004 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2078 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2142 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2212 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2282 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,2031 H 419 V 1881 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,2031 H 419 V 2176 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 130 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 244 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 366 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 452 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 726 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 1285 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 1598 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 2031 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <rect x="26" y="1054" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="1074" fill="#7fd4a8" font-size="12" class="kr">11회차의 혈관</text>
+  <rect x="232" y="92" width="174" height="77" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="112" fill="#e0645f" font-size="12" class="kr">깊은위팔동맥 ★</text>
+  <text x="242" y="127" fill="#c98a86" font-size="9">deep brachial a. (profunda</text>
+  <text x="242" y="138" fill="#c98a86" font-size="9">brachii)</text>
+  <text x="242" y="149" fill="#6f8299" font-size="9">위팔동맥의 첫 큰 가지 · <tspan fill="#e6edf3" font-weight="700">노신경과</tspan></text>
+  <text x="242" y="160" fill="#6f8299" font-size="9">함께 노신경고랑</text>
+  <rect x="232" y="216" width="174" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="236" fill="#e0645f" font-size="12" class="kr">온뼈사이동맥 ★</text>
+  <text x="242" y="252" fill="#c98a86" font-size="9">common interosseous a.</text>
+  <text x="242" y="262" fill="#6f8299" font-size="9">자동맥에서 나와 곧 둘로 갈린다</text>
+  <rect x="232" y="328" width="174" height="77" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="348" fill="#e0645f" font-size="12" class="kr">노동맥 손등 구간 ★</text>
+  <text x="242" y="363" fill="#c98a86" font-size="9">radial a. in the snuffbox</text>
+  <text x="242" y="374" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">해부코담배갑 바닥</tspan>을 지나</text>
+  <text x="242" y="385" fill="#6f8299" font-size="9">첫째등쪽뼈사이근을 뚫는다 →</text>
+  <text x="242" y="396" fill="#6f8299" font-size="9">깊은손바닥동맥활</text>
+  <rect x="232" y="414" width="174" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="242" y="434" fill="#b49ae0" font-size="12" class="kr">손등정맥그물 ★</text>
+  <text x="242" y="449" fill="#8f79b8" font-size="9">dorsal venous network of the</text>
+  <text x="242" y="460" fill="#8f79b8" font-size="9">hand</text>
+  <text x="242" y="471" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">노쪽 → 노쪽피부정맥 · 자쪽 →</tspan></text>
+  <text x="242" y="482" fill="#6f8299" font-size="9">자쪽피부정맥<tspan fill="#e6edf3" font-weight="700"> — 정맥주사 자리</tspan></text>
+  <rect x="232" y="693" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="713" fill="#e0645f" font-size="12" class="kr">복강동맥 ★</text>
+  <text x="242" y="728" fill="#c98a86" font-size="9">celiac trunk</text>
+  <text x="242" y="739" fill="#6f8299" font-size="9">T12 · <tspan fill="#e6edf3" font-weight="700">가로막대동맥구멍 바로 아래</tspan></text>
+  <text x="242" y="750" fill="#6f8299" font-size="9">· 앞창자 — 세 가지로 갈린다</text>
+  <rect x="232" y="1252" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="1272" fill="#e0645f" font-size="12" class="kr">위창자간막동맥 ★</text>
+  <text x="242" y="1287" fill="#c98a86" font-size="9">superior mesenteric a.</text>
+  <text x="242" y="1298" fill="#6f8299" font-size="9">L1 · <tspan fill="#e6edf3" font-weight="700">이자목 뒤 → 갈고리돌기 앞</tspan> ·</text>
+  <text x="242" y="1309" fill="#6f8299" font-size="9">중간창자</text>
+  <rect x="232" y="1564" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="1584" fill="#e0645f" font-size="12" class="kr">아래창자간막동맥 ★</text>
+  <text x="242" y="1600" fill="#c98a86" font-size="9">inferior mesenteric a.</text>
+  <text x="242" y="1610" fill="#6f8299" font-size="9">L3 · 뒤창자(가로잘록창자 왼쪽</text>
+  <text x="242" y="1622" fill="#6f8299" font-size="9">1/3~곧창자 위)</text>
+  <rect x="232" y="1998" width="174" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="2018" fill="#b49ae0" font-size="12" class="kr">간문맥계 ★</text>
+  <text x="242" y="2033" fill="#8f79b8" font-size="9">hepatic portal system</text>
+  <text x="242" y="2044" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">모세혈관 → 정맥 → 간에서 다시</tspan></text>
+  <text x="242" y="2055" fill="#6f8299" font-size="9">모세혈관<tspan fill="#e6edf3" font-weight="700"> — 두 번 거른다</tspan></text>
+  <rect x="432" y="92" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#e0645f" font-size="12" class="kr">중간곁동맥·노쪽곁동맥 ★</text>
+  <text x="442" y="127" fill="#c98a86" font-size="9">middle &amp; radial collateral aa.</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9">팔꿈치 둘레 문합에 참여</text>
+  <rect x="432" y="178" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="198" fill="#e0645f" font-size="12" class="kr">뒤뼈사이동맥 ★</text>
+  <text x="442" y="213" fill="#c98a86" font-size="9">posterior interosseous a.</text>
+  <text x="442" y="224" fill="#6f8299" font-size="9">뼈사이막 <tspan fill="#e6edf3" font-weight="700">위모서리를 넘어</tspan> 뒤칸으로</text>
+  <text x="442" y="235" fill="#6f8299" font-size="9">— 뒤뼈사이신경과 동행</text>
+  <rect x="432" y="253" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="273" fill="#e0645f" font-size="12" class="kr">앞뼈사이동맥 ★</text>
+  <text x="442" y="288" fill="#c98a86" font-size="9">anterior interosseous a.</text>
+  <text x="442" y="299" fill="#6f8299" font-size="9">뼈사이막 앞면 · 먼쪽에서 <tspan fill="#e6edf3" font-weight="700">뚫고</tspan></text>
+  <text x="442" y="310" fill="#6f8299" font-size="9">넘어와<tspan fill="#e6edf3" font-weight="700"> 뒤칸 먼쪽을 먹인다</tspan></text>
+  <rect x="432" y="328" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="348" fill="#e0645f" font-size="12" class="kr">손등동맥그물 ★</text>
+  <text x="442" y="363" fill="#c98a86" font-size="9">dorsal carpal arch</text>
+  <text x="442" y="374" fill="#6f8299" font-size="9">등쪽손허리동맥 → 등쪽손가락동맥</text>
+  <rect x="432" y="500" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="520" fill="#e0645f" font-size="12" class="kr">왼위동맥 ★</text>
+  <text x="442" y="535" fill="#c98a86" font-size="9">left gastric a.</text>
+  <text x="442" y="546" fill="#6f8299" font-size="9">위작은굽이 · 식도가지를 낸다</text>
+  <rect x="432" y="618" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="638" fill="#e0645f" font-size="12" class="kr">지라동맥 ★</text>
+  <text x="442" y="653" fill="#c98a86" font-size="9">splenic a.</text>
+  <text x="442" y="664" fill="#6f8299" font-size="9">이자 위모서리를 <tspan fill="#e6edf3" font-weight="700">구불구불</tspan> 왼쪽으로</text>
+  <text x="442" y="675" fill="#6f8299" font-size="9">→ 지라문</text>
+  <rect x="432" y="915" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="935" fill="#e0645f" font-size="12" class="kr">온간동맥 ★</text>
+  <text x="442" y="950" fill="#c98a86" font-size="9">common hepatic a.</text>
+  <text x="442" y="961" fill="#6f8299" font-size="9">오른쪽으로</text>
+  <rect x="432" y="1120" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1140" fill="#e0645f" font-size="12" class="kr">아래이자샘창자동맥 ★</text>
+  <text x="442" y="1155" fill="#c98a86" font-size="9">inferior pancreaticoduodenal a.</text>
+  <text x="442" y="1166" fill="#6f8299" font-size="9">첫 가지 · 위쪽 짝과 활을 이룬다</text>
+  <rect x="432" y="1185" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="1205" fill="#e0645f" font-size="12" class="kr">빈창자·돌창자동맥 ★</text>
+  <text x="442" y="1220" fill="#c98a86" font-size="9">jejunal &amp; ileal aa.</text>
+  <text x="442" y="1231" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">왼쪽으로</tspan> 15~18개 · 활(arcade)을</text>
+  <text x="442" y="1242" fill="#6f8299" font-size="9">만들고 <tspan fill="#e6edf3" font-weight="700">곧은동맥</tspan>으로 끝난다</text>
+  <rect x="432" y="1270" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1290" fill="#e0645f" font-size="12" class="kr">중간잘록창자동맥 ★</text>
+  <text x="442" y="1305" fill="#c98a86" font-size="9">middle colic a.</text>
+  <text x="442" y="1316" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">오른쪽으로</tspan> · 가로잘록창자간막 속</text>
+  <rect x="432" y="1334" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1354" fill="#e0645f" font-size="12" class="kr">오른잘록창자동맥 ★</text>
+  <text x="442" y="1369" fill="#c98a86" font-size="9">right colic a.</text>
+  <text x="442" y="1380" fill="#6f8299" font-size="9">오름잘록창자</text>
+  <rect x="432" y="1399" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="1419" fill="#e0645f" font-size="12" class="kr">돌잘록창자동맥 ★</text>
+  <text x="442" y="1434" fill="#c98a86" font-size="9">ileocolic a.</text>
+  <text x="442" y="1445" fill="#6f8299" font-size="9">끝가지</text>
+  <rect x="432" y="1473" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1493" fill="#e0645f" font-size="12" class="kr">왼잘록창자동맥 ★</text>
+  <text x="442" y="1508" fill="#c98a86" font-size="9">left colic a.</text>
+  <text x="442" y="1519" fill="#6f8299" font-size="9">내림잘록창자 · 중간잘록창자동맥과</text>
+  <text x="442" y="1530" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가장자리동맥으로 이어진다</tspan></text>
+  <rect x="432" y="1548" width="170" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1568" fill="#e0645f" font-size="12" class="kr">구불잘록창자가지 ★</text>
+  <text x="442" y="1583" fill="#c98a86" font-size="9">sigmoid brr.</text>
+  <rect x="432" y="1601" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1621" fill="#e0645f" font-size="12" class="kr">위곧창자동맥</text>
+  <text x="442" y="1636" fill="#c98a86" font-size="9">superior rectal a.</text>
+  <text x="442" y="1647" fill="#6f8299" font-size="9">끝가지</text>
+  <rect x="432" y="1665" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="1685" fill="#e0645f" font-size="12" class="kr">가장자리동맥 ★</text>
+  <text x="442" y="1700" fill="#c98a86" font-size="9">marginal a. of Drummond</text>
+  <text x="442" y="1711" fill="#6f8299" font-size="9">잘록창자 안쪽모서리를 따라</text>
+  <text x="442" y="1722" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">위·아래창자간막동맥을 잇는 고리</tspan></text>
+  <rect x="432" y="1848" width="170" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="442" y="1868" fill="#b49ae0" font-size="12" class="kr">간문맥 ★</text>
+  <text x="442" y="1883" fill="#8f79b8" font-size="9">hepatic portal v.</text>
+  <text x="442" y="1894" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">이자목 뒤에서 지라정맥 +</tspan></text>
+  <text x="442" y="1905" fill="#6f8299" font-size="9">위창자간막정맥<tspan fill="#e6edf3" font-weight="700">이 합쳐져 생긴다</tspan></text>
+  <rect x="432" y="2148" width="170" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="442" y="2168" fill="#b49ae0" font-size="12" class="kr">문맥–대정맥 연결 ★</text>
+  <text x="442" y="2183" fill="#8f79b8" font-size="9">portosystemic anastomoses</text>
+  <text x="442" y="2194" fill="#6f8299" font-size="9">막히면 굵어지는 네 자리(응용과제)</text>
+  <rect x="628" y="564" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="584" fill="#e0645f" font-size="12" class="kr">짧은위동맥 ★</text>
+  <text x="638" y="599" fill="#c98a86" font-size="9">short gastric aa.</text>
+  <text x="638" y="610" fill="#6f8299" font-size="9">위지라인대 속 · 위바닥</text>
+  <rect x="628" y="628" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="648" fill="#e0645f" font-size="12" class="kr">왼위그물막동맥 ★</text>
+  <text x="638" y="663" fill="#c98a86" font-size="9">left gastroomental a.</text>
+  <text x="638" y="674" fill="#6f8299" font-size="9">위큰굽이 왼쪽</text>
+  <rect x="628" y="692" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="712" fill="#e0645f" font-size="12" class="kr">이자가지</text>
+  <text x="638" y="727" fill="#c98a86" font-size="9">pancreatic brr.</text>
+  <text x="638" y="738" fill="#6f8299" font-size="9">큰이자동맥 등</text>
+  <rect x="628" y="784" width="160" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="638" y="804" fill="#e0645f" font-size="12" class="kr">고유간동맥 ★</text>
+  <text x="638" y="818" fill="#c98a86" font-size="9">proper hepatic a.</text>
+  <text x="638" y="830" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">간샘창자인대 속을 올라간다</tspan> —</text>
+  <text x="638" y="840" fill="#6f8299" font-size="9">간세동이의 동맥</text>
+  <rect x="628" y="920" width="160" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="638" y="940" fill="#e0645f" font-size="12" class="kr">위샘창자동맥 ★</text>
+  <text x="638" y="955" fill="#c98a86" font-size="9">gastroduodenal a.</text>
+  <text x="638" y="966" fill="#6f8299" font-size="9">샘창자 첫부분 <tspan fill="#e6edf3" font-weight="700">뒤로</tspan> 내려간다 —</text>
+  <text x="638" y="977" fill="#6f8299" font-size="9">뒤벽 궤양이 뚫으면 여기서 출혈</text>
+  <rect x="628" y="1045" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="1065" fill="#e0645f" font-size="12" class="kr">오른위동맥 ★</text>
+  <text x="638" y="1080" fill="#c98a86" font-size="9">right gastric a.</text>
+  <text x="638" y="1091" fill="#6f8299" font-size="9">위작은굽이 오른쪽 → 왼위동맥과</text>
+  <text x="638" y="1102" fill="#6f8299" font-size="9">만난다</text>
+  <rect x="628" y="1184" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="1204" fill="#e0645f" font-size="12" class="kr">곧은동맥 ★</text>
+  <text x="638" y="1219" fill="#c98a86" font-size="9">vasa recta</text>
+  <text x="638" y="1230" fill="#6f8299" font-size="9">빈창자는 <tspan fill="#e6edf3" font-weight="700">활 적고 곧은동맥</tspan></text>
+  <text x="638" y="1241" fill="#6f8299" font-size="9">길다<tspan fill="#e6edf3" font-weight="700">, 돌창자는 반대 — 감별</tspan></text>
+  <text x="638" y="1252" fill="#6f8299" font-size="9">포인트</text>
+  <rect x="628" y="1398" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="1418" fill="#e0645f" font-size="12" class="kr">막창자꼬리동맥 ★</text>
+  <text x="638" y="1433" fill="#c98a86" font-size="9">appendicular a.</text>
+  <text x="638" y="1444" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">막창자꼬리간막 속</tspan> · 끝동맥이라</text>
+  <text x="638" y="1455" fill="#6f8299" font-size="9">막히면 괴사</text>
+  <rect x="628" y="1740" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="1760" fill="#b49ae0" font-size="12" class="kr">위창자간막정맥 ★</text>
+  <text x="638" y="1775" fill="#8f79b8" font-size="9">superior mesenteric v.</text>
+  <text x="638" y="1786" fill="#6f8299" font-size="9">동맥 <tspan fill="#e6edf3" font-weight="700">오른쪽</tspan>에서 나란히</text>
+  <rect x="628" y="1804" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="1824" fill="#b49ae0" font-size="12" class="kr">지라정맥 ★</text>
+  <text x="638" y="1839" fill="#8f79b8" font-size="9">splenic v.</text>
+  <text x="638" y="1850" fill="#6f8299" font-size="9">이자 <tspan fill="#e6edf3" font-weight="700">뒤면</tspan>을 따라 오른쪽으로 ·</text>
+  <text x="638" y="1861" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">아래창자간막정맥을 받는다</tspan></text>
+  <rect x="628" y="1879" width="160" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="1899" fill="#b49ae0" font-size="12" class="kr">아래창자간막정맥 ★</text>
+  <text x="638" y="1914" fill="#8f79b8" font-size="9">inferior mesenteric v.</text>
+  <text x="638" y="1925" fill="#6f8299" font-size="9">동맥과 길이 다르다 —</text>
+  <text x="638" y="1936" fill="#6f8299" font-size="9">지라정맥(또는 합류점)으로</text>
+  <text x="638" y="1947" fill="#6f8299" font-size="9">올라간다</text>
+  <rect x="628" y="1965" width="160" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="1985" fill="#b49ae0" font-size="12" class="kr">간샘창자인대 속 배열 ★</text>
+  <text x="638" y="2000" fill="#8f79b8" font-size="9">in the hepatoduodenal</text>
+  <text x="638" y="2011" fill="#8f79b8" font-size="9">ligament</text>
+  <text x="638" y="2022" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">문맥이 가장 뒤</tspan>, 앞에 왼쪽=동맥</text>
+  <text x="638" y="2033" fill="#6f8299" font-size="9">· 오른쪽=온쓸개관</text>
+  <rect x="628" y="2051" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="2071" fill="#b49ae0" font-size="12" class="kr">식도정맥 ★</text>
+  <text x="638" y="2086" fill="#8f79b8" font-size="9">esophageal — 왼위정맥 ↔ 홀정맥</text>
+  <text x="638" y="2097" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">식도정맥류</tspan></text>
+  <rect x="628" y="2115" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="2135" fill="#b49ae0" font-size="12" class="kr">배꼽옆정맥 ★</text>
+  <text x="638" y="2150" fill="#8f79b8" font-size="9">paraumbilical ↔ 배벽정맥</text>
+  <text x="638" y="2161" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">caput medusae</tspan></text>
+  <rect x="628" y="2179" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="2199" fill="#b49ae0" font-size="12" class="kr">곧창자정맥 ★</text>
+  <text x="638" y="2214" fill="#8f79b8" font-size="9">rectal — 위 ↔</text>
+  <text x="638" y="2225" fill="#8f79b8" font-size="9">중간·아래곧창자정맥</text>
+  <text x="638" y="2236" fill="#6f8299" font-size="9">치질</text>
+  <rect x="628" y="2254" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="2274" fill="#b49ae0" font-size="12" class="kr">복막뒤 정맥</text>
+  <text x="638" y="2289" fill="#8f79b8" font-size="9">retroperitoneal (Retzius)</text>
+  <text x="638" y="2300" fill="#6f8299" font-size="9">잘록창자·샘창자 뒤면</text>
+  <rect x="814" y="756" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="776" fill="#e0645f" font-size="12" class="kr">오른간동맥 → 쓸개동맥 ★</text>
+  <text x="824" y="791" fill="#c98a86" font-size="9">right hepatic a. → cystic a.</text>
+  <text x="824" y="802" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">쓸개세모(Calot)</tspan> 안에서 나온다</text>
+  <text x="824" y="813" fill="#6f8299" font-size="9">— 쓸개절제술의 표지</text>
+  <rect x="814" y="831" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="851" fill="#e0645f" font-size="12" class="kr">왼간동맥</text>
+  <text x="824" y="866" fill="#c98a86" font-size="9">left hepatic a.</text>
+  <rect x="814" y="884" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="904" fill="#e0645f" font-size="12" class="kr">오른위그물막동맥 ★</text>
+  <text x="824" y="919" fill="#c98a86" font-size="9">right gastroomental a.</text>
+  <text x="824" y="930" fill="#6f8299" font-size="9">위큰굽이 오른쪽 →</text>
+  <text x="824" y="941" fill="#6f8299" font-size="9">왼위그물막동맥과 만난다</text>
+  <rect x="814" y="959" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="824" y="979" fill="#e0645f" font-size="12" class="kr">위이자샘창자동맥 ★</text>
+  <text x="824" y="994" fill="#c98a86" font-size="9">superior pancreaticoduodenal</text>
+  <text x="824" y="1005" fill="#c98a86" font-size="9">a.</text>
+  <text x="824" y="1016" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">아래이자샘창자동맥과 활을</tspan></text>
+  <text x="824" y="1027" fill="#6f8299" font-size="9">이룬다<tspan fill="#e6edf3" font-weight="700">(복강↔위창자간막 문합)</tspan></text>
+  <line x1="26" y1="2319" x2="1000" y2="2319" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="2331" fill="#93a4b7" font-size="10.5">홀동맥 셋 = <tspan fill="#e6edf3" font-weight="700">복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)</tspan>.</text>
+  <text x="26" y="2349" fill="#93a4b7" font-size="10.5">세 동맥은 <tspan fill="#e6edf3" font-weight="700">가장자리동맥(Drummond)</tspan>과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다.</text>
+  <text x="26" y="2367" fill="#93a4b7" font-size="10.5">정맥은 동맥을 따라가되 <tspan fill="#e6edf3" font-weight="700">심장이 아니라 간으로</tspan> 모인다 — 그것이 간문맥계다.</text>
+</svg>

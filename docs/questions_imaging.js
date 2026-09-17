@@ -2,6 +2,598 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0049",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "자궁경부 — 조직학·변형대",
+  "type": "자궁경부 — 조직학·변형대",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-17",
+  "vignette": "A 46-year-old woman, gravida 2, para 2, undergoes loop electrosurgical excision of the cervix because a Papanicolaou smear showed atypical glandular cells. Her last menstrual period was 2 weeks ago. Pelvic examination shows no gross lesion; colposcopy shows the squamocolumnar junction on the ectocervix. A section of the excised cervical tissue stained by immunohistochemistry for a secreted gel-forming mucin is shown. The strongly stained epithelium lines glands within fibromuscular stroma.",
+  "question": "Which of the following processes normally replaces this epithelium at the transformation zone after puberty?",
+  "options": [
+   "Squamous metaplasia",
+   "Squamous dysplasia",
+   "Microglandular hyperplasia",
+   "Cervical endometriosis",
+   "Hyperkeratosis"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The brown-stained cells form glands with a single layer of tall columnar cells whose cytoplasm is filled with mucin, with secretion in the lumina and negative surrounding fibromuscular stroma — the mucin-secreting endocervical columnar epithelium. No squamous epithelium is present in this core. At the transformation zone the endocervical columnar epithelium that has been everted onto the acidic vaginal ectocervix is physiologically replaced by squamous epithelium through squamous metaplasia: subcolumnar reserve cells proliferate, mature into immature and then mature squamous cells, and the columnar layer is shed. The metaplastic zone is where HPV infection and cervical intraepithelial neoplasia arise, which is why colposcopy targets it.\n- 원리: The cervix has two native epithelia. The <b>ectocervix</b> is covered by non-keratinizing stratified squamous epithelium continuous with the vagina; the <b>endocervical canal</b> is lined by a <b>single layer of tall mucin-secreting columnar cells</b> that dip into the stroma as crypts ('glands'). The mucin they secrete (MUC5B and MUC5AC are the gel-forming mucins of endocervical cells) fills the cytoplasm and the crypt lumina — exactly the brown staining pattern in this core: columnar cells positive, fibromuscular stroma and vessels negative.<br> <b>Why the junction moves</b> — the original squamocolumnar junction lies at the external os before puberty. Estrogen at puberty and in pregnancy enlarges the cervix and <b>everts</b> the endocervical epithelium onto the ectocervix (ectropion), exposing the columnar cells to the acidic vaginal pH (lactobacilli) and to trauma. The columnar epithelium responds by <b>squamous metaplasia</b>: the <b>subcolumnar reserve cells</b> proliferate (reserve cell hyperplasia), differentiate into immature squamous cells that undermine and lift off the columnar layer, and finally mature into glycogenated squamous epithelium. The new squamocolumnar junction migrates back toward the os with age; the area between the original and the new junction is the <b>transformation zone</b>.<br> <b>Why it matters clinically</b> — immature metaplastic cells are the cells most susceptible to <b>HPV</b> infection and are the origin of almost all cervical intraepithelial neoplasia and squamous carcinoma; the persistence of columnar crypts beneath metaplastic squamous epithelium creates <b>Nabothian cysts</b> when crypt openings are sealed. Metaplasia itself is physiological and reversible-in-principle, distinct from <b>dysplasia</b>, which is a clonal, HPV-driven disturbance of maturation with nuclear atypia and loss of polarity. This is why the patient's atypical glandular cells on cytology require sampling of both the transformation zone and the endocervical canal — the columnar epithelium seen here is the epithelium at risk for adenocarcinoma in situ, whereas the metaplastic zone is at risk for squamous lesions.\n- 비교: <table><thead><tr><th style=\"width:28%\">Process</th><th style=\"width:44%\">What it is</th><th>Relation to the stained epithelium</th></tr></thead><tbody> <tr><td><b>Squamous metaplasia (answer)</b></td><td><b>physiological replacement of everted columnar epithelium by squamous epithelium via reserve-cell proliferation</b></td><td>replaces it at the transformation zone</td></tr> <tr><td>Squamous dysplasia (CIN)</td><td>HPV-driven, clonal maturation disorder of the metaplastic squamous epithelium with nuclear atypia</td><td>arises <i>after</i> metaplasia, in the squamous layer, not a replacement of columnar cells</td></tr> <tr><td>Microglandular hyperplasia</td><td>benign progestin/pregnancy-related crowding of small endocervical glands</td><td>a change <i>of</i> this epithelium, not its replacement</td></tr> <tr><td>Cervical endometriosis</td><td>ectopic endometrial glands and stroma in the cervix after trauma or surgery</td><td>unrelated ectopic tissue</td></tr> <tr><td>Hyperkeratosis</td><td>keratin layer on ectocervical squamous epithelium (prolapse, irritation)</td><td>change of squamous, not columnar, epithelium</td></tr> </tbody></table> The <b>closest wrong answer is squamous dysplasia</b>, because both involve the transformation zone and both change the epithelium. The discriminator is the <b>sequence and the driver</b>: metaplasia comes first, is hormonal-environmental and orderly (maturation preserved); dysplasia comes later, is HPV-driven and disorderly (atypia, loss of polarity, mitoses above the basal third). If the question instead asked which change in the transformation zone is the precursor of invasive carcinoma, the answer would be dysplasia, not metaplasia.\n- 오답 이유:\n  - (B) Squamous dysplasia (CIN) is an HPV-driven clonal disorder of maturation in the metaplastic squamous epithelium, with nuclear enlargement, hyperchromasia and mitoses above the basal layer. It develops in squamous epithelium that already replaced the columnar cells and is pathological, not physiological. This option would be correct only if the question asked for the precursor lesion of squamous carcinoma at the transformation zone.\n  - (C) Microglandular hyperplasia is a benign crowding of small endocervical glands with squamous metaplasia and neutrophils, associated with progestins and pregnancy. It is a proliferative change of the columnar epithelium itself, not a process that replaces it with another epithelium. This option would be correct only if the question asked which benign endocervical change can mimic adenocarcinoma on a smear from a woman taking progestin.\n  - (D) Cervical endometriosis consists of ectopic endometrial glands with endometrial stroma implanted in the cervix, usually after cone biopsy or delivery, and bleeds cyclically. It does not replace endocervical epithelium and is unrelated to the transformation zone. This option would be correct only if the section showed glands surrounded by endometrial-type stroma with hemosiderin.\n  - (E) Hyperkeratosis is a surface keratin layer on the ectocervical squamous epithelium, seen with uterine prolapse or chronic irritation, and appears as leukoplakia. It is a change of squamous epithelium, not a replacement of mucin-secreting columnar epithelium. This option would be correct only if the stained cells were stratified squamous cells with a keratin layer.\n- 함정: First identify the cell from the picture — single-layer tall columnar cells packed with mucin lining crypts — then ask what happens to that cell type when it is everted onto the ectocervix. Metaplasia is physiological and precedes dysplasia; do not confuse the process with its later complication.\n- 학습목표: 자궁경부 조직의 점액 면역조직화학에서 강양성 세포를 자궁목내막 원주상피로 읽고, 변형대에서 이를 대체하는 생리적 과정이 편평상피화생임을 설명한다\n- 근거·출처: Human Protein Atlas, MUC5B / cervix, tissue core 24311_B_9_3 (46-year-old female), CC BY 4.0 — strong cytoplasmic positivity in endocervical glandular cells, stroma negative (HPA annotation and author reading) · 작성자 판독(2026-09-17/18): 섬유근육 기질 안 자궁목내막 샘의 단층 원주 점액상피 세포질 강양성, 내강에 점액, 기질·혈관 음성, 편평상피 없음, 글자·식별 표지 없음 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 The female genital tract — cervix: transformation zone, squamous metaplasia, reserve cells, Nabothian cysts, CIN · Kurman RJ (ed.) Blaustein's Pathology of the Female Genital Tract, 7th ed., ch. 'Benign diseases of the cervix' — squamous metaplasia stages, microglandular hyperplasia, endocervical mucins · Gipson IK et al. Mucin genes expressed by human female reproductive tract epithelia (Biol Reprod 1997) — MUC5B/MUC5AC in endocervical columnar cells\n\n## 출처\n- Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown-stained cells form glands with a single layer of tall columnar cells whose cytoplasm is filled with mucin, with secretion in the lumina and negative surrounding fibromuscular stroma — the mucin-secreting endocervical columnar epithelium. No squamous epithelium is present in this core. At the transformation zone the endocervical columnar epithelium that has been everted onto the acidic vaginal ectocervix is physiologically replaced by squamous epithelium through squamous metaplasia: subcolumnar reserve cells proliferate, mature into immature and then mature squamous cells, and the columnar layer is shed. The metaplastic zone is where HPV infection and cervical intraepithelial neoplasia arise, which is why colposcopy targets it."
+   },
+   {
+    "k": "원리",
+    "v": "The cervix has two native epithelia. The <b>ectocervix</b> is covered by non-keratinizing stratified squamous epithelium continuous with the vagina; the <b>endocervical canal</b> is lined by a <b>single layer of tall mucin-secreting columnar cells</b> that dip into the stroma as crypts ('glands'). The mucin they secrete (MUC5B and MUC5AC are the gel-forming mucins of endocervical cells) fills the cytoplasm and the crypt lumina — exactly the brown staining pattern in this core: columnar cells positive, fibromuscular stroma and vessels negative.<br> <b>Why the junction moves</b> — the original squamocolumnar junction lies at the external os before puberty. Estrogen at puberty and in pregnancy enlarges the cervix and <b>everts</b> the endocervical epithelium onto the ectocervix (ectropion), exposing the columnar cells to the acidic vaginal pH (lactobacilli) and to trauma. The columnar epithelium responds by <b>squamous metaplasia</b>: the <b>subcolumnar reserve cells</b> proliferate (reserve cell hyperplasia), differentiate into immature squamous cells that undermine and lift off the columnar layer, and finally mature into glycogenated squamous epithelium. The new squamocolumnar junction migrates back toward the os with age; the area between the original and the new junction is the <b>transformation zone</b>.<br> <b>Why it matters clinically</b> — immature metaplastic cells are the cells most susceptible to <b>HPV</b> infection and are the origin of almost all cervical intraepithelial neoplasia and squamous carcinoma; the persistence of columnar crypts beneath metaplastic squamous epithelium creates <b>Nabothian cysts</b> when crypt openings are sealed. Metaplasia itself is physiological and reversible-in-principle, distinct from <b>dysplasia</b>, which is a clonal, HPV-driven disturbance of maturation with nuclear atypia and loss of polarity. This is why the patient's atypical glandular cells on cytology require sampling of both the transformation zone and the endocervical canal — the columnar epithelium seen here is the epithelium at risk for adenocarcinoma in situ, whereas the metaplastic zone is at risk for squamous lesions."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Process</th><th style=\"width:44%\">What it is</th><th>Relation to the stained epithelium</th></tr></thead><tbody> <tr><td><b>Squamous metaplasia (answer)</b></td><td><b>physiological replacement of everted columnar epithelium by squamous epithelium via reserve-cell proliferation</b></td><td>replaces it at the transformation zone</td></tr> <tr><td>Squamous dysplasia (CIN)</td><td>HPV-driven, clonal maturation disorder of the metaplastic squamous epithelium with nuclear atypia</td><td>arises <i>after</i> metaplasia, in the squamous layer, not a replacement of columnar cells</td></tr> <tr><td>Microglandular hyperplasia</td><td>benign progestin/pregnancy-related crowding of small endocervical glands</td><td>a change <i>of</i> this epithelium, not its replacement</td></tr> <tr><td>Cervical endometriosis</td><td>ectopic endometrial glands and stroma in the cervix after trauma or surgery</td><td>unrelated ectopic tissue</td></tr> <tr><td>Hyperkeratosis</td><td>keratin layer on ectocervical squamous epithelium (prolapse, irritation)</td><td>change of squamous, not columnar, epithelium</td></tr> </tbody></table> The <b>closest wrong answer is squamous dysplasia</b>, because both involve the transformation zone and both change the epithelium. The discriminator is the <b>sequence and the driver</b>: metaplasia comes first, is hormonal-environmental and orderly (maturation preserved); dysplasia comes later, is HPV-driven and disorderly (atypia, loss of polarity, mitoses above the basal third). If the question instead asked which change in the transformation zone is the precursor of invasive carcinoma, the answer would be dysplasia, not metaplasia."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Squamous dysplasia (CIN) is an HPV-driven clonal disorder of maturation in the metaplastic squamous epithelium, with nuclear enlargement, hyperchromasia and mitoses above the basal layer. It develops in squamous epithelium that already replaced the columnar cells and is pathological, not physiological. This option would be correct only if the question asked for the precursor lesion of squamous carcinoma at the transformation zone.\n(C) Microglandular hyperplasia is a benign crowding of small endocervical glands with squamous metaplasia and neutrophils, associated with progestins and pregnancy. It is a proliferative change of the columnar epithelium itself, not a process that replaces it with another epithelium. This option would be correct only if the question asked which benign endocervical change can mimic adenocarcinoma on a smear from a woman taking progestin.\n(D) Cervical endometriosis consists of ectopic endometrial glands with endometrial stroma implanted in the cervix, usually after cone biopsy or delivery, and bleeds cyclically. It does not replace endocervical epithelium and is unrelated to the transformation zone. This option would be correct only if the section showed glands surrounded by endometrial-type stroma with hemosiderin.\n(E) Hyperkeratosis is a surface keratin layer on the ectocervical squamous epithelium, seen with uterine prolapse or chronic irritation, and appears as leukoplakia. It is a change of squamous epithelium, not a replacement of mucin-secreting columnar epithelium. This option would be correct only if the stained cells were stratified squamous cells with a keratin layer."
+   },
+   {
+    "k": "함정",
+    "v": "First identify the cell from the picture — single-layer tall columnar cells packed with mucin lining crypts — then ask what happens to that cell type when it is everted onto the ectocervix. Metaplasia is physiological and precedes dysplasia; do not confuse the process with its later complication."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부 조직의 점액 면역조직화학에서 강양성 세포를 자궁목내막 원주상피로 읽고, 변형대에서 이를 대체하는 생리적 과정이 편평상피화생임을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas, MUC5B / cervix, tissue core 24311_B_9_3 (46-year-old female), CC BY 4.0 — strong cytoplasmic positivity in endocervical glandular cells, stroma negative (HPA annotation and author reading) · 작성자 판독(2026-09-17/18): 섬유근육 기질 안 자궁목내막 샘의 단층 원주 점액상피 세포질 강양성, 내강에 점액, 기질·혈관 음성, 편평상피 없음, 글자·식별 표지 없음 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 The female genital tract — cervix: transformation zone, squamous metaplasia, reserve cells, Nabothian cysts, CIN · Kurman RJ (ed.) Blaustein's Pathology of the Female Genital Tract, 7th ed., ch. 'Benign diseases of the cervix' — squamous metaplasia stages, microglandular hyperplasia, endocervical mucins · Gipson IK et al. Mucin genes expressed by human female reproductive tract epithelia (Biol Reprod 1997) — MUC5B/MUC5AC in endocervical columnar cells ## 출처 Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0049.jpg",
+   "caption": "Immunohistochemistry (DAB brown, hematoxylin counterstain) of a tissue-microarray core, original magnification (Human Protein Atlas, CC BY 4.0; no cropping or adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix",
+   "asset_id": "HPA-MUC5B_24311_B_9_3",
+   "text": "Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg"
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0048",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "산과 — 분만 중 태아감시",
+  "type": "산과 — 분만 중 태아감시",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-17",
+  "vignette": "27세 경산부(1회 출산)가 임신 42주 0일에 규칙적인 진통으로 내원하였다. 산전 진찰에서 태아 성장과 양수량은 정상이었고 40주와 41주에 시행한 비수축검사는 반응성이었다. 자궁경부는 4 cm 개대되었고 양막은 파열되지 않았다. 지속 전자태아감시의 태아심박동(위)과 자궁수축(아래) 기록은 그림과 같다.",
+  "question": "가장 적절한 조치는?",
+  "options": [
+   "산소 투여와 좌측와위",
+   "지속 감시하며 진통 경과 관찰",
+   "양수주입",
+   "응급 제왕절개술",
+   "태아 두피 혈액 pH 검사"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 140~145/분으로 정상 범위이고, 변이도는 6~15/분의 중등도로 잘 유지된다. 20.5~21.5분에 160/분까지 오르는 가속이 있고, 21.4분과 29.8분의 짧은(15초 미만) 얕은 하강 외에 후기감속이나 반복 가변감속은 없다. 이는 태아의 산-염기 상태가 정상임을 시사하는 안심할 수 있는 기록이다. 42주 지연임신이라도 이미 자발 진통이 시작되었고 태아 상태가 양호하므로 지속 전자태아감시를 하면서 진통을 계속 관찰하는 것이 적절하다.\n- 원리: 분만 중 태아심박동 판독의 핵심은 <b>변이도</b>다. 기저선의 박동 간 변이(6~25/분, 중등도)는 태아 대뇌피질·뇌간·자율신경계가 정상적으로 작동하고 있음을 뜻하며, 저산소증이 진행되어 중추신경이 억제되면 가장 먼저 사라진다. 그래서 <b>중등도 변이도 하나만으로도 그 시점의 태아 대사성 산증(pH &lt; 7.10)을 높은 확률로 배제</b>할 수 있고, 여기에 <b>가속</b>(32주 이후 15/분 이상·15초 이상)이 있으면 배제의 확실성이 더 커진다. 그래서 NICHD 3단계 분류는 범주 I 의 정의를 「기저 110~160, 변이도 중등도, 후기·가변감속 없음」으로 두고 「경과 관찰」을 처방한다.<br> <b>지연임신에서 무엇이 다른가</b> — 42주 이후에는 태반 기능 저하와 양수과소로 제대압박·후기감속·태변 흡인 위험이 올라간다. 그래서 41주부터 산전 감시(비수축검사·양수량)를 하고 41~42주에 유도분만을 권한다. 그러나 이 산모는 감시 결과가 정상이었고 <b>이미 자발 진통이 시작</b>되었으므로 남은 문제는 「진통 중 태아가 잘 견디는가」 하나이고, 그 답은 기록이 준다. 기록이 안심할 수 있으면 지연임신이라는 사실만으로 개입할 이유는 없다.<br> <b>이 기록의 세부</b> — 21.4분과 29.8분의 하강은 15초 안에 끝나는 얕은 것으로, 가변감속의 정의(15/분 이상·15초 이상)에 간신히 닿거나 미치지 못하고 반복적이지 않다. 자궁수축 채널은 외부 토코로 약하게 기록되어 있는데, 외부 토코는 수축의 <b>빈도와 시간</b>만 알려 주고 <b>강도</b>는 반영하지 않으므로 진폭이 낮다고 진통 부진으로 읽지 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">조치</th><th style=\"width:44%\">언제 하는가</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>경과 관찰(정답)</b></td><td><b>기저 110~160, 변이도 중등도, 후기·반복 가변감속 없음 — 산증 시사 없음</b></td><td>기저 140~145, 변이도 중등도, 가속 있음</td></tr> <tr><td>산소·좌측와위</td><td>범주 II 의 첫 대응 — 후기감속, 반복 가변감속, 변이도 감소가 나타날 때</td><td>교정할 이상이 없음</td></tr> <tr><td>양수주입</td><td>양막 파열 뒤 반복 가변감속이 소생술로 호전되지 않을 때</td><td>양막 미파열, 반복 가변감속 없음</td></tr> <tr><td>태아 두피 혈액 pH</td><td>범주 II 가 지속되어 산증 여부를 직접 확인해야 할 때(변이도 감소·감속 지속)</td><td>변이도·가속으로 이미 배제</td></tr> <tr><td>응급 제왕절개술</td><td>범주 III 또는 소생술에 반응 없는 악화</td><td>해당 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「산소 투여와 좌측와위」</b> — 해가 없으니 해 두자는 생각이 들지만, 시험은 「이 기록에 교정할 이상이 있는가」를 묻는다. 갈림길은 <b>변이도·가속의 존재와 반복 감속의 부재</b>다. 반대로 같은 42주 산모에서 기록이 후기감속 반복으로 바뀌면 그때 첫 대응이 체위·산소·수액이고, 변이도까지 사라지면 분만을 서두른다.\n- 오답 이유:\n  - ① 산소 투여와 좌측와위는 후기감속·반복 가변감속·변이도 감소처럼 교정할 이상이 나타났을 때 자궁태반 관류를 개선하려는 첫 대응이다. 이 기록에는 교정할 이상이 없어 시행할 근거가 없다. 이 선지가 정답이 되려면 수축 정점 뒤에 최저점이 오는 완만한 감속이 반복되어야 한다.\n  - ③ 양수주입은 양막이 파열된 뒤 제대압박으로 반복 가변감속이 생기고 체위·산소로 호전되지 않을 때 한다. 이 산모는 양막이 파열되지 않았고 기록에 반복 가변감속이 없다. 이 선지가 정답이 되려면 파열된 양막과 매 수축마다 급격한 하강이 반복되는 기록이 있어야 한다.\n  - ④ 응급 제왕절개술은 변이도가 사라지고 반복 감속·서맥이 동반되는 범주 III 이거나 자궁내 소생술에도 악화될 때 한다. 이 기록은 변이도 중등도에 가속이 있어 태아 산증이 시사되지 않는다. 이 선지가 정답이 되려면 변이도 소실과 반복 후기감속 또는 지속 서맥이 있어야 한다.\n  - ⑤ 태아 두피 혈액 pH 검사는 범주 II 기록이 지속되어 산증 여부를 직접 확인해야 할 때 보조적으로 쓴다(현재는 두피 자극으로 가속을 유도하는 검사가 더 흔하다). 중등도 변이도와 자발 가속이 있으면 산증이 이미 배제되므로 침습 검사가 필요 없다. 이 선지가 정답이 되려면 변이도가 최소로 줄고 감속이 지속되어 가속을 유도할 수 없어야 한다.\n- 함정: 「42주」라는 숫자에 끌려 개입을 고르지 말 것. 진통이 이미 시작된 지연임신에서는 기록이 결정한다 — 기저선 정상·변이도 중등도·가속·반복 감속 없음이면 경과 관찰이다.\n- 학습목표: 지연임신 진통 중 태아심박동 기록에서 정상 기저선·중등도 변이도·가속을 읽어 안심할 수 있는 기록으로 판단하고 진통을 계속 관찰한다\n- 근거·출처: CTU-UHB 기록(교사용 결과): 42주 경산, 질식분만, Apgar 9/10, 제대동맥 pH 7.35 — 정상 · 작성자 판독(2026-09-18): 20~30분 구간 기저 ≈140~145/분, 변이도 중등도, 20.5~21.5분 160 까지 가속, 21.4·29.8분 15초 미만의 얕은 하강 2회, 후기감속 없음, 외부 토코 진폭 30~65 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — Category I 정의와 「routine surveillance」, 변이도의 의미 · ACOG Practice Bulletin No. 146: Management of late-term and postterm pregnancies (2014) — 41~42주 유도분만 권고, 진통 중 지속 감시 · Williams Obstetrics 26th ed., ch. 24 Intrapartum assessment; ch. 43 Postterm pregnancy — 변이도가 산증을 배제하는 근거, 양수과소·제대압박\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1221 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 140~145/분으로 정상 범위이고, 변이도는 6~15/분의 중등도로 잘 유지된다. 20.5~21.5분에 160/분까지 오르는 가속이 있고, 21.4분과 29.8분의 짧은(15초 미만) 얕은 하강 외에 후기감속이나 반복 가변감속은 없다. 이는 태아의 산-염기 상태가 정상임을 시사하는 안심할 수 있는 기록이다. 42주 지연임신이라도 이미 자발 진통이 시작되었고 태아 상태가 양호하므로 지속 전자태아감시를 하면서 진통을 계속 관찰하는 것이 적절하다."
+   },
+   {
+    "k": "원리",
+    "v": "분만 중 태아심박동 판독의 핵심은 <b>변이도</b>다. 기저선의 박동 간 변이(6~25/분, 중등도)는 태아 대뇌피질·뇌간·자율신경계가 정상적으로 작동하고 있음을 뜻하며, 저산소증이 진행되어 중추신경이 억제되면 가장 먼저 사라진다. 그래서 <b>중등도 변이도 하나만으로도 그 시점의 태아 대사성 산증(pH &lt; 7.10)을 높은 확률로 배제</b>할 수 있고, 여기에 <b>가속</b>(32주 이후 15/분 이상·15초 이상)이 있으면 배제의 확실성이 더 커진다. 그래서 NICHD 3단계 분류는 범주 I 의 정의를 「기저 110~160, 변이도 중등도, 후기·가변감속 없음」으로 두고 「경과 관찰」을 처방한다.<br> <b>지연임신에서 무엇이 다른가</b> — 42주 이후에는 태반 기능 저하와 양수과소로 제대압박·후기감속·태변 흡인 위험이 올라간다. 그래서 41주부터 산전 감시(비수축검사·양수량)를 하고 41~42주에 유도분만을 권한다. 그러나 이 산모는 감시 결과가 정상이었고 <b>이미 자발 진통이 시작</b>되었으므로 남은 문제는 「진통 중 태아가 잘 견디는가」 하나이고, 그 답은 기록이 준다. 기록이 안심할 수 있으면 지연임신이라는 사실만으로 개입할 이유는 없다.<br> <b>이 기록의 세부</b> — 21.4분과 29.8분의 하강은 15초 안에 끝나는 얕은 것으로, 가변감속의 정의(15/분 이상·15초 이상)에 간신히 닿거나 미치지 못하고 반복적이지 않다. 자궁수축 채널은 외부 토코로 약하게 기록되어 있는데, 외부 토코는 수축의 <b>빈도와 시간</b>만 알려 주고 <b>강도</b>는 반영하지 않으므로 진폭이 낮다고 진통 부진으로 읽지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">조치</th><th style=\"width:44%\">언제 하는가</th><th>이 기록</th></tr></thead><tbody> <tr><td><b>경과 관찰(정답)</b></td><td><b>기저 110~160, 변이도 중등도, 후기·반복 가변감속 없음 — 산증 시사 없음</b></td><td>기저 140~145, 변이도 중등도, 가속 있음</td></tr> <tr><td>산소·좌측와위</td><td>범주 II 의 첫 대응 — 후기감속, 반복 가변감속, 변이도 감소가 나타날 때</td><td>교정할 이상이 없음</td></tr> <tr><td>양수주입</td><td>양막 파열 뒤 반복 가변감속이 소생술로 호전되지 않을 때</td><td>양막 미파열, 반복 가변감속 없음</td></tr> <tr><td>태아 두피 혈액 pH</td><td>범주 II 가 지속되어 산증 여부를 직접 확인해야 할 때(변이도 감소·감속 지속)</td><td>변이도·가속으로 이미 배제</td></tr> <tr><td>응급 제왕절개술</td><td>범주 III 또는 소생술에 반응 없는 악화</td><td>해당 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「산소 투여와 좌측와위」</b> — 해가 없으니 해 두자는 생각이 들지만, 시험은 「이 기록에 교정할 이상이 있는가」를 묻는다. 갈림길은 <b>변이도·가속의 존재와 반복 감속의 부재</b>다. 반대로 같은 42주 산모에서 기록이 후기감속 반복으로 바뀌면 그때 첫 대응이 체위·산소·수액이고, 변이도까지 사라지면 분만을 서두른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 산소 투여와 좌측와위는 후기감속·반복 가변감속·변이도 감소처럼 교정할 이상이 나타났을 때 자궁태반 관류를 개선하려는 첫 대응이다. 이 기록에는 교정할 이상이 없어 시행할 근거가 없다. 이 선지가 정답이 되려면 수축 정점 뒤에 최저점이 오는 완만한 감속이 반복되어야 한다.\n③ 양수주입은 양막이 파열된 뒤 제대압박으로 반복 가변감속이 생기고 체위·산소로 호전되지 않을 때 한다. 이 산모는 양막이 파열되지 않았고 기록에 반복 가변감속이 없다. 이 선지가 정답이 되려면 파열된 양막과 매 수축마다 급격한 하강이 반복되는 기록이 있어야 한다.\n④ 응급 제왕절개술은 변이도가 사라지고 반복 감속·서맥이 동반되는 범주 III 이거나 자궁내 소생술에도 악화될 때 한다. 이 기록은 변이도 중등도에 가속이 있어 태아 산증이 시사되지 않는다. 이 선지가 정답이 되려면 변이도 소실과 반복 후기감속 또는 지속 서맥이 있어야 한다.\n⑤ 태아 두피 혈액 pH 검사는 범주 II 기록이 지속되어 산증 여부를 직접 확인해야 할 때 보조적으로 쓴다(현재는 두피 자극으로 가속을 유도하는 검사가 더 흔하다). 중등도 변이도와 자발 가속이 있으면 산증이 이미 배제되므로 침습 검사가 필요 없다. 이 선지가 정답이 되려면 변이도가 최소로 줄고 감속이 지속되어 가속을 유도할 수 없어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「42주」라는 숫자에 끌려 개입을 고르지 말 것. 진통이 이미 시작된 지연임신에서는 기록이 결정한다 — 기저선 정상·변이도 중등도·가속·반복 감속 없음이면 경과 관찰이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "지연임신 진통 중 태아심박동 기록에서 정상 기저선·중등도 변이도·가속을 읽어 안심할 수 있는 기록으로 판단하고 진통을 계속 관찰한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB 기록(교사용 결과): 42주 경산, 질식분만, Apgar 9/10, 제대동맥 pH 7.35 — 정상 · 작성자 판독(2026-09-18): 20~30분 구간 기저 ≈140~145/분, 변이도 중등도, 20.5~21.5분 160 까지 가속, 21.4·29.8분 15초 미만의 얕은 하강 2회, 후기감속 없음, 외부 토코 진폭 30~65 · Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring (Obstet Gynecol 2008) — Category I 정의와 「routine surveillance」, 변이도의 의미 · ACOG Practice Bulletin No. 146: Management of late-term and postterm pregnancies (2014) — 41~42주 유도분만 권고, 진통 중 지속 감시 · Williams Obstetrics 26th ed., ch. 24 Intrapartum assessment; ch. 43 Postterm pregnancy — 변이도가 산증을 배제하는 근거, 양수과소·제대압박 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1221 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0048.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1221_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1221"
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0047",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "산과 — 분만 중 태아감시",
+  "type": "산과 — 분만 중 태아감시",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-17",
+  "vignette": "25세 초산부가 임신 39주에 규칙적인 진통으로 입원하였다. 산전 진찰에서 특이 소견은 없었다. 자궁경부는 5 cm 개대되었고 2시간 전 양막이 파열되었으며 양수는 맑았다. 옥시토신은 투여하지 않고 있다. 지속 전자태아감시에서 자궁수축은 3분마다 있고, 태아심박동 기록은 그림과 같다. 좌측와위로 바꾸고 안면마스크로 산소를 주었으나 30분 동안 같은 소견이 매 수축마다 반복되었다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "흡입분만",
+   "터부탈린 피하주사",
+   "양수주입",
+   "옥시토신 투여",
+   "응급 제왕절개술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 130~140/분이고 변이도는 중등도(6~15/분)로 유지된다. 매 수축(21, 24, 27, 30분)마다 심박동이 30초 안에 165 에서 85~92 로 급격히 떨어졌다가 급격히 회복하며, 하강 전후에 짧은 가속(어깨)과 수축 뒤 185 까지의 overshoot 가 따라온다 — 제대압박에 의한 반복 가변감속이다. 변이도가 유지되고 가속이 있으므로 태아 산증은 아직 시사되지 않아(NICHD 범주 II) 즉시 분만할 단계는 아니다. 체위 변경과 산소로 호전되지 않는 반복 가변감속에서 양막이 파열된 상태라면 양수주입으로 제대 주위의 완충 양수를 늘려 압박을 풀어 주는 것이 다음 처치다.\n- 원리: <b>가변감속의 기전</b> — 자궁수축 중 제대가 눌리면 먼저 <b>제대정맥</b>(벽이 얇음)이 막혀 태아로 가는 혈류가 줄고 태아는 압수용체 반사로 심박동을 잠깐 올린다(하강 전 어깨). 이어 <b>제대동맥</b>까지 막히면 태아 전신혈압이 갑자기 올라 압수용체가 강한 미주신경 반사를 일으켜 심박동이 <b>30초 안에 급격히</b> 떨어진다. 압박이 풀리면 반대 순서로 회복되어 하강 뒤 어깨 또는 overshoot 가 생긴다. 하강이 급격하고 모양·깊이·시간관계가 수축마다 다른 것이 후기감속(자궁태반 부전, 완만한 하강·수축 정점 뒤 최저점)과 구분되는 이유다.<br> <b>왜 양수주입인가</b> — 양막 파열 뒤에는 제대를 감싸던 양수의 완충이 사라져 수축 때마다 제대가 눌린다. 자궁강 안으로 등장액(생리식염수 또는 젖산링거)을 자궁내 카테터로 넣어 주면 제대 주위의 액체층이 회복되어 압박이 줄고, 무작위 대조시험 메타분석에서 반복 가변감속의 빈도와 태아곤란을 이유로 한 제왕절개가 의미 있게 감소했다(ACOG Practice Bulletin 116). 시행 조건은 <b>양막 파열</b>·<b>자궁내 카테터 삽입 가능</b>·<b>즉시 분만이 필요하지 않은 범주 II 기록</b>이며, 이 산모는 5 cm 개대에 파열 2시간으로 모두 해당한다.<br> <b>왜 아직 제왕절개가 아닌가</b> — 태아 산증을 예측하는 것은 감속의 존재가 아니라 <b>변이도의 소실</b>과 <b>가속의 소실</b>이다. 이 기록은 변이도 중등도, 가속과 overshoot 가 있으므로 산-염기 상태가 보존되어 있다고 보는 것이 타당하다(실제 교사용 결과: 제대동맥 pH 7.17, Apgar 9/10). 자궁내 소생술(체위·산소·수액·옥시토신 중단)을 이미 했고 그다음 단계가 양수주입이며, 그 뒤에도 변이도가 사라지거나 감속이 60초 이상·60/분 이하로 깊어지면 그때 분만을 앞당긴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:46%\">적응 조건</th><th>이 산모</th></tr></thead><tbody> <tr><td><b>양수주입(정답)</b></td><td><b>반복 가변감속 + 양막 파열 + 체위·산소로 호전 없음 + 변이도 보존(범주 II)</b></td><td>모두 충족</td></tr> <tr><td>응급 제왕절개술</td><td>범주 III(변이도 소실 + 반복 후기·가변감속 또는 서맥, 사인곡선) 또는 소생술에도 악화</td><td>변이도 중등도, 가속 있음</td></tr> <tr><td>옥시토신 투여</td><td>진통 부진(수축 부족)일 때. 수축이 늘면 제대압박도 늘어 감속이 악화</td><td>3분마다 적절한 수축</td></tr> <tr><td>흡입분만</td><td>제2기(완전 개대·아두 하강)에서 분만을 단축해야 할 때</td><td>5 cm 개대 — 제1기</td></tr> <tr><td>터부탈린</td><td>자궁수축과다(10분에 6회 이상)로 감속이 생길 때 수축 억제</td><td>수축 3분 간격, 과다 아님</td></tr> </tbody></table> <b>가장 가까운 오답은 「응급 제왕절개술」</b> — 매 수축마다 90/분 아래로 떨어지는 그림이 위협적으로 보이기 때문이다. 갈림길은 <b>변이도와 가속</b>이다. 변이도가 중등도이고 가속·overshoot 가 있으면 산증이 없다고 보고 양수주입을 먼저 하며, 변이도가 최소·소실로 바뀌거나 감속이 60초 이상 지속되면 그때 제왕절개로 간다. 반대로 「변이도 소실 + 반복 감속」 기록이 나오면 양수주입을 시도하느라 시간을 쓰지 않고 바로 분만한다.\n- 오답 이유:\n  - ① 흡입분만은 제2기, 즉 자궁경부 완전 개대와 아두 하강이 있을 때 분만을 단축하는 수술적 질식분만이다. 5 cm 개대의 제1기에서는 시행할 수 없다. 이 선지가 정답이 되려면 완전 개대에 아두가 +2 이하로 내려와 있고 감속이 지속되어야 한다.\n  - ② 터부탈린 같은 β2 작용제는 자궁수축과다(10분에 6회 이상)로 태아심박동 이상이 생길 때 수축을 늦추기 위해 쓴다. 이 산모의 수축은 3분 간격으로 정상 범위이며 감속의 원인은 수축 횟수가 아니라 제대압박이다. 이 선지가 정답이 되려면 옥시토신 중단 뒤에도 수축이 2분 이하 간격으로 이어지며 감속이 동반되어야 한다.\n  - ④ 옥시토신은 자궁수축이 부족해 진통이 부진할 때 쓴다. 이 산모는 3분마다 충분한 수축이 있고 감속의 원인이 수축 중 제대압박이므로 수축을 늘리면 감속이 더 잦아진다. 이 선지가 정답이 되려면 수축이 10분에 2회 미만으로 드물고 태아심박동은 정상이어야 한다.\n  - ⑤ 응급 제왕절개술은 NICHD 범주 III(변이도 소실에 반복 감속·서맥 동반, 사인곡선) 이거나 자궁내 소생술·양수주입에도 기록이 악화될 때 한다. 이 기록은 변이도 중등도에 가속이 있어 태아 산증이 시사되지 않는다. 이 선지가 정답이 되려면 변이도가 사라지고 감속이 60초 이상 지속되거나 서맥이 회복되지 않아야 한다.\n- 함정: 깊은 감속을 보고 바로 제왕절개로 가지 말 것. 먼저 하강의 속도(급격 → 가변감속), 그다음 변이도·가속(보존 → 범주 II)을 읽고, 양막 파열 상태에서 소생술에 반응 없는 반복 가변감속이면 양수주입이 다음 단계다.\n- 학습목표: 분만 중 매 수축마다 반복되는 가변감속(제대압박)에서 체위 변경·산소로 호전되지 않을 때 양막 파열 상태의 다음 처치로 양수주입을 선택한다\n- 근거·출처: CTU-UHB 기록(교사용 결과): 39주 초산, 질식분만, Apgar 9/10, 제대동맥 pH 7.17·BDecf 4.2 — 경한 산혈증, 분만 시 태아 상태 양호 · 작성자 판독(2026-09-18): 20~30분 구간 기저 ≈130~140/분, 변이도 중등도, 수축 21.1·24.2·26.8·29.6분, 매 수축마다 30초 미만의 급격한 하강(165→92, 165→85, 160→90)과 급회복, 어깨·overshoot 동반 · ACOG Practice Bulletin No. 116 (2010, reaffirmed): Management of intrapartum fetal heart rate tracings — recurrent variable decelerations: intrauterine resuscitation, then amnioinfusion; cesarean when tracing does not improve · Hofmeyr GJ, Lawrie TA. Amnioinfusion for potential or suspected umbilical cord compression in labour (Cochrane Database Syst Rev 2012) — fewer variable decelerations and cesareans for fetal distress · Williams Obstetrics 26th ed., ch. 24 Intrapartum assessment — variable deceleration mechanism (umbilical vein → artery occlusion, baroreceptor reflex), shoulders and overshoot\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1090 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 130~140/분이고 변이도는 중등도(6~15/분)로 유지된다. 매 수축(21, 24, 27, 30분)마다 심박동이 30초 안에 165 에서 85~92 로 급격히 떨어졌다가 급격히 회복하며, 하강 전후에 짧은 가속(어깨)과 수축 뒤 185 까지의 overshoot 가 따라온다 — 제대압박에 의한 반복 가변감속이다. 변이도가 유지되고 가속이 있으므로 태아 산증은 아직 시사되지 않아(NICHD 범주 II) 즉시 분만할 단계는 아니다. 체위 변경과 산소로 호전되지 않는 반복 가변감속에서 양막이 파열된 상태라면 양수주입으로 제대 주위의 완충 양수를 늘려 압박을 풀어 주는 것이 다음 처치다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>가변감속의 기전</b> — 자궁수축 중 제대가 눌리면 먼저 <b>제대정맥</b>(벽이 얇음)이 막혀 태아로 가는 혈류가 줄고 태아는 압수용체 반사로 심박동을 잠깐 올린다(하강 전 어깨). 이어 <b>제대동맥</b>까지 막히면 태아 전신혈압이 갑자기 올라 압수용체가 강한 미주신경 반사를 일으켜 심박동이 <b>30초 안에 급격히</b> 떨어진다. 압박이 풀리면 반대 순서로 회복되어 하강 뒤 어깨 또는 overshoot 가 생긴다. 하강이 급격하고 모양·깊이·시간관계가 수축마다 다른 것이 후기감속(자궁태반 부전, 완만한 하강·수축 정점 뒤 최저점)과 구분되는 이유다.<br> <b>왜 양수주입인가</b> — 양막 파열 뒤에는 제대를 감싸던 양수의 완충이 사라져 수축 때마다 제대가 눌린다. 자궁강 안으로 등장액(생리식염수 또는 젖산링거)을 자궁내 카테터로 넣어 주면 제대 주위의 액체층이 회복되어 압박이 줄고, 무작위 대조시험 메타분석에서 반복 가변감속의 빈도와 태아곤란을 이유로 한 제왕절개가 의미 있게 감소했다(ACOG Practice Bulletin 116). 시행 조건은 <b>양막 파열</b>·<b>자궁내 카테터 삽입 가능</b>·<b>즉시 분만이 필요하지 않은 범주 II 기록</b>이며, 이 산모는 5 cm 개대에 파열 2시간으로 모두 해당한다.<br> <b>왜 아직 제왕절개가 아닌가</b> — 태아 산증을 예측하는 것은 감속의 존재가 아니라 <b>변이도의 소실</b>과 <b>가속의 소실</b>이다. 이 기록은 변이도 중등도, 가속과 overshoot 가 있으므로 산-염기 상태가 보존되어 있다고 보는 것이 타당하다(실제 교사용 결과: 제대동맥 pH 7.17, Apgar 9/10). 자궁내 소생술(체위·산소·수액·옥시토신 중단)을 이미 했고 그다음 단계가 양수주입이며, 그 뒤에도 변이도가 사라지거나 감속이 60초 이상·60/분 이하로 깊어지면 그때 분만을 앞당긴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:46%\">적응 조건</th><th>이 산모</th></tr></thead><tbody> <tr><td><b>양수주입(정답)</b></td><td><b>반복 가변감속 + 양막 파열 + 체위·산소로 호전 없음 + 변이도 보존(범주 II)</b></td><td>모두 충족</td></tr> <tr><td>응급 제왕절개술</td><td>범주 III(변이도 소실 + 반복 후기·가변감속 또는 서맥, 사인곡선) 또는 소생술에도 악화</td><td>변이도 중등도, 가속 있음</td></tr> <tr><td>옥시토신 투여</td><td>진통 부진(수축 부족)일 때. 수축이 늘면 제대압박도 늘어 감속이 악화</td><td>3분마다 적절한 수축</td></tr> <tr><td>흡입분만</td><td>제2기(완전 개대·아두 하강)에서 분만을 단축해야 할 때</td><td>5 cm 개대 — 제1기</td></tr> <tr><td>터부탈린</td><td>자궁수축과다(10분에 6회 이상)로 감속이 생길 때 수축 억제</td><td>수축 3분 간격, 과다 아님</td></tr> </tbody></table> <b>가장 가까운 오답은 「응급 제왕절개술」</b> — 매 수축마다 90/분 아래로 떨어지는 그림이 위협적으로 보이기 때문이다. 갈림길은 <b>변이도와 가속</b>이다. 변이도가 중등도이고 가속·overshoot 가 있으면 산증이 없다고 보고 양수주입을 먼저 하며, 변이도가 최소·소실로 바뀌거나 감속이 60초 이상 지속되면 그때 제왕절개로 간다. 반대로 「변이도 소실 + 반복 감속」 기록이 나오면 양수주입을 시도하느라 시간을 쓰지 않고 바로 분만한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 흡입분만은 제2기, 즉 자궁경부 완전 개대와 아두 하강이 있을 때 분만을 단축하는 수술적 질식분만이다. 5 cm 개대의 제1기에서는 시행할 수 없다. 이 선지가 정답이 되려면 완전 개대에 아두가 +2 이하로 내려와 있고 감속이 지속되어야 한다.\n② 터부탈린 같은 β2 작용제는 자궁수축과다(10분에 6회 이상)로 태아심박동 이상이 생길 때 수축을 늦추기 위해 쓴다. 이 산모의 수축은 3분 간격으로 정상 범위이며 감속의 원인은 수축 횟수가 아니라 제대압박이다. 이 선지가 정답이 되려면 옥시토신 중단 뒤에도 수축이 2분 이하 간격으로 이어지며 감속이 동반되어야 한다.\n④ 옥시토신은 자궁수축이 부족해 진통이 부진할 때 쓴다. 이 산모는 3분마다 충분한 수축이 있고 감속의 원인이 수축 중 제대압박이므로 수축을 늘리면 감속이 더 잦아진다. 이 선지가 정답이 되려면 수축이 10분에 2회 미만으로 드물고 태아심박동은 정상이어야 한다.\n⑤ 응급 제왕절개술은 NICHD 범주 III(변이도 소실에 반복 감속·서맥 동반, 사인곡선) 이거나 자궁내 소생술·양수주입에도 기록이 악화될 때 한다. 이 기록은 변이도 중등도에 가속이 있어 태아 산증이 시사되지 않는다. 이 선지가 정답이 되려면 변이도가 사라지고 감속이 60초 이상 지속되거나 서맥이 회복되지 않아야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "깊은 감속을 보고 바로 제왕절개로 가지 말 것. 먼저 하강의 속도(급격 → 가변감속), 그다음 변이도·가속(보존 → 범주 II)을 읽고, 양막 파열 상태에서 소생술에 반응 없는 반복 가변감속이면 양수주입이 다음 단계다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 매 수축마다 반복되는 가변감속(제대압박)에서 체위 변경·산소로 호전되지 않을 때 양막 파열 상태의 다음 처치로 양수주입을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB 기록(교사용 결과): 39주 초산, 질식분만, Apgar 9/10, 제대동맥 pH 7.17·BDecf 4.2 — 경한 산혈증, 분만 시 태아 상태 양호 · 작성자 판독(2026-09-18): 20~30분 구간 기저 ≈130~140/분, 변이도 중등도, 수축 21.1·24.2·26.8·29.6분, 매 수축마다 30초 미만의 급격한 하강(165→92, 165→85, 160→90)과 급회복, 어깨·overshoot 동반 · ACOG Practice Bulletin No. 116 (2010, reaffirmed): Management of intrapartum fetal heart rate tracings — recurrent variable decelerations: intrauterine resuscitation, then amnioinfusion; cesarean when tracing does not improve · Hofmeyr GJ, Lawrie TA. Amnioinfusion for potential or suspected umbilical cord compression in labour (Cochrane Database Syst Rev 2012) — fewer variable decelerations and cesareans for fetal distress · Williams Obstetrics 26th ed., ch. 24 Intrapartum assessment — variable deceleration mechanism (umbilical vein → artery occlusion, baroreceptor reflex), shoulders and overshoot ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1090 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0047.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1090_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1090"
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0046",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "심전도 판독 — 약물 효과",
+  "type": "심전도 판독 — 약물 효과",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-17",
+  "vignette": "An 86-year-old woman comes to the physician for a routine follow-up examination. She has heart failure with reduced ejection fraction and has been taking digoxin 0.125 mg daily, carvedilol, and furosemide for 3 years. She has no chest pain, palpitations, nausea, or visual symptoms. Her pulse is 88/min and regular, and blood pressure is 126/72 mm Hg. Cardiac examination shows no new murmur. Serum potassium concentration is 4.3 mEq/L, creatinine is 0.9 mg/dL, and the serum digoxin concentration measured last week was 0.8 ng/mL. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Give intravenous potassium chloride",
+   "Continue the current regimen",
+   "Discontinue digoxin",
+   "Administer digoxin-specific antibody fragments",
+   "Measure serum troponin and begin heparin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The tracing shows sinus rhythm at about 88/min with narrow QRS complexes and a normal axis. In leads I, II and V4–V6 the ST segment sags downward immediately after the J point with a concave ('scooped' or reverse-tick) contour of about 1 mm, the T waves are flattened, and the QT interval is short (about 0.34 s). This combination is the digitalis effect — the expected repolarization change of therapeutic digoxin, not a sign of toxicity. She is asymptomatic, potassium and renal function are normal, and her digoxin level is in the therapeutic range (0.5–0.9 ng/mL in heart failure). Nothing needs to change.\n- 원리: Digoxin inhibits the <b>Na⁺/K⁺-ATPase</b> of the myocyte. Intracellular Na⁺ rises, the Na⁺/Ca²⁺ exchanger removes less Ca²⁺, and the extra Ca²⁺ stored in the sarcoplasmic reticulum gives the positive inotropic effect. The same ion shift <b>shortens phase 2 and phase 3 of the action potential</b>: the plateau is abbreviated and repolarization begins earlier and less uniformly across the ventricular wall. On the surface ECG this appears as a <b>shortened QT interval</b>, a <b>sagging ST segment that is depressed with an upward concavity</b> ('scooped', reverse-tick or Salvador-Dali-moustache appearance) most obvious in leads with tall R waves (I, II, V4–V6), and <b>flattened or inverted T waves</b>. Digoxin also increases vagal tone at the AV node, so a mildly prolonged PR interval and a slow sinus rate are common.<br> <b>Why this is 'effect', not 'toxicity'</b> — the ST-T change is present in most patients at therapeutic serum concentrations and correlates with neither the level nor the risk of arrhythmia. Toxicity is a different phenomenon: delayed after-depolarizations from Ca²⁺ overload produce ectopy and automaticity (premature ventricular complexes, bigeminy, atrial tachycardia with block, accelerated junctional rhythm, bidirectional ventricular tachycardia), and excess vagal effect produces sinus bradycardia or AV block. Toxicity is diagnosed by <b>symptoms (nausea, anorexia, confusion, xanthopsia) and arrhythmia</b>, supported by a high level or hypokalemia, hypomagnesemia, hypercalcemia or renal failure, which sensitize the myocardium.<br> <b>Why the level and potassium matter</b> — digoxin and K⁺ compete for the same binding site on the Na⁺/K⁺-ATPase, so hypokalemia increases digoxin binding and precipitates toxicity even at a 'therapeutic' concentration. Here potassium is 4.3 mEq/L, creatinine is normal and the level is 0.8 ng/mL, within the range (0.5–0.9 ng/mL) associated with lower mortality in the DIG trial post-hoc analysis. A scooped ST segment in an asymptomatic patient with these values is a reason to <b>document</b>, not to act.\n- 비교: <table><thead><tr><th style=\"width:30%\">ST-T pattern</th><th style=\"width:40%\">Distinguishing features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Digitalis effect (answer)</b></td><td><b>concave, sagging ST depression; flat T; short QT; normal or slow sinus rhythm; asymptomatic</b></td><td>scooped ST in I, II, V4–V6; QT ≈0.34 s; rate 88/min</td></tr> <tr><td>Digitalis toxicity</td><td>ectopy or automaticity (PVCs, bigeminy, atrial tachycardia with block, bidirectional VT), AV block, symptoms, high level or low K⁺</td><td>no ectopy, no block, level 0.8 ng/mL, K⁺ 4.3</td></tr> <tr><td>Subendocardial ischemia</td><td>horizontal or downsloping ST depression ≥ 1 mm with symmetric T inversion; chest pain; normal QT</td><td>ST is concave-up and sagging, T flat, no pain</td></tr> <tr><td>Hypokalemia</td><td>ST depression, flat T, <b>prominent U wave</b>, <b>prolonged</b> QU interval</td><td>QT short, no U wave, K⁺ 4.3</td></tr> <tr><td>LVH with strain</td><td>tall R (SV1 + RV5 ≥ 35 mm), asymmetric downsloping ST with T inversion in V5–V6</td><td>R in V5 ≈10 mm, voltage criteria not met</td></tr> </tbody></table> The <b>closest wrong answer is 'discontinue digoxin'</b>: the ST change looks alarming, but it is the pharmacological signature of the drug, and stopping a guideline-supported therapy that reduces heart-failure hospitalization because of an expected ECG finding would be an error. The discriminator is the <b>combination of the contour (concave sag, short QT) with a normal level, normal potassium and no arrhythmia</b>. If the same patient had nausea and bigeminy, or a level of 3 ng/mL, the answer would flip to stopping the drug — and to antibody fragments only with life-threatening arrhythmia or hyperkalemia.\n- 오답 이유:\n  - (A) Intravenous potassium is given when hypokalemia potentiates digoxin (ST depression, flat T, prominent U waves, long QU interval) or in digoxin toxicity with low potassium. Her potassium is 4.3 mEq/L and the QT is short with no U wave, so potassium would risk hyperkalemia without benefit. This option would be correct only if potassium were below 3.5 mEq/L with U waves on the tracing.\n  - (C) Discontinuing digoxin is indicated for toxicity — symptoms, arrhythmia (ectopy, atrial tachycardia with block, AV block), a supratherapeutic level, or hypokalemia. None is present: she is asymptomatic, in sinus rhythm without ectopy, with K⁺ 4.3 and a level of 0.8 ng/mL. This option would be correct only if the tracing showed bigeminy or high-grade AV block, or if the level were above 2 ng/mL.\n  - (D) Digoxin-specific antibody fragments (Fab) are reserved for life-threatening toxicity: ventricular tachyarrhythmia, bradyarrhythmia unresponsive to atropine, potassium above 5 mEq/L from acute overdose, or massive ingestion. An asymptomatic patient with a therapeutic level and a benign repolarization pattern has no indication. This option would be correct only if she had bidirectional ventricular tachycardia or hyperkalemia after an overdose.\n  - (E) Troponin and heparin are for an acute coronary syndrome, which requires ischemic symptoms or ischemic ST-T changes — horizontal or downsloping ST depression with symmetric T inversion, or ST elevation. This concave sagging ST with a short QT in a pain-free patient is a drug effect, not ischemia. This option would be correct only if she had chest pain with new horizontal ST depression or T-wave inversion.\n- 함정: A scooped ST segment on digoxin is not toxicity and is not ischemia. Ask three things before acting: symptoms, rhythm (ectopy or block?), and the level with potassium. All normal → continue.\n- 학습목표: 디곡신 복용 환자의 심전도에서 측벽 유도의 오목한(scooped) ST 하강·편평 T·짧은 QT 를 디기탈리스 효과로 읽고 독성·허혈과 구분해 치료를 유지한다\n- 근거·출처: PTB-XL record label DIG (digitalis effect), STTC class, two-cardiologist validated; teacher-only report: sinus rhythm, normal axis, ST & T abnormal, digitalis change · 작성자 계측(2026-09-18, 화소 기반): RR ≈0.68 s(≈88/분), QRS ≈0.08 s, I·II·V4~V6 J점 직후 오목한 ST 하강 ≈1 mm, T 편평, QT ≈0.34 s; V2 기저선 단차·V5 초반 기저선 하강은 원신호 인공물로 판독에 영향 없음 · Goldberger's Clinical Electrocardiography, 9th ed., ch. 'Digitalis effect and toxicity' — scooped ST depression, short QT, flattened T; toxicity = arrhythmias, not ST-T change · Rathore SS et al. Association of serum digoxin concentration and outcomes in patients with heart failure (JAMA 2003) — lowest mortality at 0.5–0.8 ng/mL · Katzung Basic & Clinical Pharmacology, ch. 13 Drugs used in heart failure — Na⁺/K⁺-ATPase inhibition, potassium interaction, indications for Fab\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10512 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tracing shows sinus rhythm at about 88/min with narrow QRS complexes and a normal axis. In leads I, II and V4–V6 the ST segment sags downward immediately after the J point with a concave ('scooped' or reverse-tick) contour of about 1 mm, the T waves are flattened, and the QT interval is short (about 0.34 s). This combination is the digitalis effect — the expected repolarization change of therapeutic digoxin, not a sign of toxicity. She is asymptomatic, potassium and renal function are normal, and her digoxin level is in the therapeutic range (0.5–0.9 ng/mL in heart failure). Nothing needs to change."
+   },
+   {
+    "k": "원리",
+    "v": "Digoxin inhibits the <b>Na⁺/K⁺-ATPase</b> of the myocyte. Intracellular Na⁺ rises, the Na⁺/Ca²⁺ exchanger removes less Ca²⁺, and the extra Ca²⁺ stored in the sarcoplasmic reticulum gives the positive inotropic effect. The same ion shift <b>shortens phase 2 and phase 3 of the action potential</b>: the plateau is abbreviated and repolarization begins earlier and less uniformly across the ventricular wall. On the surface ECG this appears as a <b>shortened QT interval</b>, a <b>sagging ST segment that is depressed with an upward concavity</b> ('scooped', reverse-tick or Salvador-Dali-moustache appearance) most obvious in leads with tall R waves (I, II, V4–V6), and <b>flattened or inverted T waves</b>. Digoxin also increases vagal tone at the AV node, so a mildly prolonged PR interval and a slow sinus rate are common.<br> <b>Why this is 'effect', not 'toxicity'</b> — the ST-T change is present in most patients at therapeutic serum concentrations and correlates with neither the level nor the risk of arrhythmia. Toxicity is a different phenomenon: delayed after-depolarizations from Ca²⁺ overload produce ectopy and automaticity (premature ventricular complexes, bigeminy, atrial tachycardia with block, accelerated junctional rhythm, bidirectional ventricular tachycardia), and excess vagal effect produces sinus bradycardia or AV block. Toxicity is diagnosed by <b>symptoms (nausea, anorexia, confusion, xanthopsia) and arrhythmia</b>, supported by a high level or hypokalemia, hypomagnesemia, hypercalcemia or renal failure, which sensitize the myocardium.<br> <b>Why the level and potassium matter</b> — digoxin and K⁺ compete for the same binding site on the Na⁺/K⁺-ATPase, so hypokalemia increases digoxin binding and precipitates toxicity even at a 'therapeutic' concentration. Here potassium is 4.3 mEq/L, creatinine is normal and the level is 0.8 ng/mL, within the range (0.5–0.9 ng/mL) associated with lower mortality in the DIG trial post-hoc analysis. A scooped ST segment in an asymptomatic patient with these values is a reason to <b>document</b>, not to act."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">ST-T pattern</th><th style=\"width:40%\">Distinguishing features</th><th>This tracing</th></tr></thead><tbody> <tr><td><b>Digitalis effect (answer)</b></td><td><b>concave, sagging ST depression; flat T; short QT; normal or slow sinus rhythm; asymptomatic</b></td><td>scooped ST in I, II, V4–V6; QT ≈0.34 s; rate 88/min</td></tr> <tr><td>Digitalis toxicity</td><td>ectopy or automaticity (PVCs, bigeminy, atrial tachycardia with block, bidirectional VT), AV block, symptoms, high level or low K⁺</td><td>no ectopy, no block, level 0.8 ng/mL, K⁺ 4.3</td></tr> <tr><td>Subendocardial ischemia</td><td>horizontal or downsloping ST depression ≥ 1 mm with symmetric T inversion; chest pain; normal QT</td><td>ST is concave-up and sagging, T flat, no pain</td></tr> <tr><td>Hypokalemia</td><td>ST depression, flat T, <b>prominent U wave</b>, <b>prolonged</b> QU interval</td><td>QT short, no U wave, K⁺ 4.3</td></tr> <tr><td>LVH with strain</td><td>tall R (SV1 + RV5 ≥ 35 mm), asymmetric downsloping ST with T inversion in V5–V6</td><td>R in V5 ≈10 mm, voltage criteria not met</td></tr> </tbody></table> The <b>closest wrong answer is 'discontinue digoxin'</b>: the ST change looks alarming, but it is the pharmacological signature of the drug, and stopping a guideline-supported therapy that reduces heart-failure hospitalization because of an expected ECG finding would be an error. The discriminator is the <b>combination of the contour (concave sag, short QT) with a normal level, normal potassium and no arrhythmia</b>. If the same patient had nausea and bigeminy, or a level of 3 ng/mL, the answer would flip to stopping the drug — and to antibody fragments only with life-threatening arrhythmia or hyperkalemia."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous potassium is given when hypokalemia potentiates digoxin (ST depression, flat T, prominent U waves, long QU interval) or in digoxin toxicity with low potassium. Her potassium is 4.3 mEq/L and the QT is short with no U wave, so potassium would risk hyperkalemia without benefit. This option would be correct only if potassium were below 3.5 mEq/L with U waves on the tracing.\n(C) Discontinuing digoxin is indicated for toxicity — symptoms, arrhythmia (ectopy, atrial tachycardia with block, AV block), a supratherapeutic level, or hypokalemia. None is present: she is asymptomatic, in sinus rhythm without ectopy, with K⁺ 4.3 and a level of 0.8 ng/mL. This option would be correct only if the tracing showed bigeminy or high-grade AV block, or if the level were above 2 ng/mL.\n(D) Digoxin-specific antibody fragments (Fab) are reserved for life-threatening toxicity: ventricular tachyarrhythmia, bradyarrhythmia unresponsive to atropine, potassium above 5 mEq/L from acute overdose, or massive ingestion. An asymptomatic patient with a therapeutic level and a benign repolarization pattern has no indication. This option would be correct only if she had bidirectional ventricular tachycardia or hyperkalemia after an overdose.\n(E) Troponin and heparin are for an acute coronary syndrome, which requires ischemic symptoms or ischemic ST-T changes — horizontal or downsloping ST depression with symmetric T inversion, or ST elevation. This concave sagging ST with a short QT in a pain-free patient is a drug effect, not ischemia. This option would be correct only if she had chest pain with new horizontal ST depression or T-wave inversion."
+   },
+   {
+    "k": "함정",
+    "v": "A scooped ST segment on digoxin is not toxicity and is not ischemia. Ask three things before acting: symptoms, rhythm (ectopy or block?), and the level with potassium. All normal → continue."
+   },
+   {
+    "k": "학습목표",
+    "v": "디곡신 복용 환자의 심전도에서 측벽 유도의 오목한(scooped) ST 하강·편평 T·짧은 QT 를 디기탈리스 효과로 읽고 독성·허혈과 구분해 치료를 유지한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL record label DIG (digitalis effect), STTC class, two-cardiologist validated; teacher-only report: sinus rhythm, normal axis, ST & T abnormal, digitalis change · 작성자 계측(2026-09-18, 화소 기반): RR ≈0.68 s(≈88/분), QRS ≈0.08 s, I·II·V4~V6 J점 직후 오목한 ST 하강 ≈1 mm, T 편평, QT ≈0.34 s; V2 기저선 단차·V5 초반 기저선 하강은 원신호 인공물로 판독에 영향 없음 · Goldberger's Clinical Electrocardiography, 9th ed., ch. 'Digitalis effect and toxicity' — scooped ST depression, short QT, flattened T; toxicity = arrhythmias, not ST-T change · Rathore SS et al. Association of serum digoxin concentration and outcomes in patients with heart failure (JAMA 2003) — lowest mortality at 0.5–0.8 ng/mL · Katzung Basic & Clinical Pharmacology, ch. 13 Drugs used in heart failure — Na⁺/K⁺-ATPase inhibition, potassium interaction, indications for Fab ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10512 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0046.png",
+   "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/10000/#files-panel",
+   "asset_id": "PTBXL-10512",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10512"
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0053",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "type": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-17",
+  "vignette": "A 57-year-old woman comes to the physician because of a 4-month history of pelvic pressure and two episodes of vaginal bleeding. Menopause occurred at age 51 and she has never used hormone therapy. Pelvic examination shows a uterus enlarged to the size of a 16-week gestation. MRI shows a 9-cm heterogeneous intramural mass with ill-defined margins and areas of hemorrhage. Endometrial biopsy shows inactive endometrium. She undergoes total hysterectomy with bilateral salpingo-oophorectomy. Histologic examination of the mass shows a hypercellular spindle cell tumor with diffuse moderate-to-severe nuclear atypia and 4 mitotic figures per 10 high-power fields.",
+  "question": "Which of the following additional histologic findings would most strongly support a diagnosis of leiomyosarcoma rather than leiomyoma?",
+  "options": [
+   "Prominent thick-walled blood vessels",
+   "Epithelioid cell morphology",
+   "Coagulative tumor cell necrosis",
+   "Hyaline necrosis surrounded by a zone of hyalinized collagen",
+   "Diffuse hydropic degeneration"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The Stanford criteria classify uterine smooth muscle tumors by three features: diffuse moderate-to-severe cytologic atypia, mitotic index (≥ 10 per 10 high-power fields), and coagulative tumor cell necrosis. Any two of the three establish leiomyosarcoma. This tumor already has diffuse atypia; its mitotic count of 4 is below the threshold, so the second criterion must come from necrosis. Coagulative tumor cell necrosis — an abrupt transition from viable to necrotic tumor with ghost cells and no intervening granulation or hyalinized tissue — is the necrosis of a rapidly growing malignant clone and, combined with the atypia, makes the diagnosis leiomyosarcoma even with a low mitotic count. Hyaline (infarct-type) necrosis is the necrosis of a benign leiomyoma that has outgrown its blood supply and does not count.\n- 원리: <b>Why three criteria and why necrosis type matters</b> — uterine leiomyosarcoma is not graded like other sarcomas; it is <b>defined</b> by the Stanford (Bell, Kempson, Hendrickson 1994) combination of (1) <b>diffuse moderate-to-severe atypia</b>, (2) <b>mitotic index ≥ 10 per 10 HPF</b>, and (3) <b>coagulative tumor cell necrosis</b>. Two of the three carry a high risk of metastasis; one alone (for example atypia with low mitoses and no tumor necrosis) is an 'atypical leiomyoma' or a smooth muscle tumor of uncertain malignant potential (STUMP), which rarely recurs. The reason mitotic count alone is insufficient is that mitotically active leiomyomas (up to 20 mitoses/10 HPF without atypia or tumor necrosis, often in the secretory phase or with progestins) behave benignly.<br> <b>Two kinds of necrosis</b> — <b>coagulative tumor cell necrosis</b> reflects a tumor outgrowing its perfusion so fast that cells die without a reparative response: an <b>abrupt</b> border between viable and necrotic tumor, preserved 'ghost' outlines of pleomorphic cells, and nuclear debris, with no zone of granulation tissue. <b>Hyaline (infarct-type) necrosis</b> is the slow ischemic death of a benign leiomyoma, often after torsion, pregnancy or GnRH-agonist treatment: necrotic center, then a rim of <b>granulation tissue or hyalinized collagen</b>, then viable bland tumor. The presence of a reparative zone tells the pathologist the necrosis is old and benign. Because this distinction is reproducible and prognostic, the WHO classification retains it as a defining criterion.<br> <b>Why the clinical picture points the same way</b> — a new or enlarging uterine mass <b>after menopause</b> without hormone therapy, bleeding, ill-defined margins and hemorrhage on MRI, and diffuse atypia on histology all argue for sarcoma, but none is diagnostic: leiomyomas can degenerate and bleed, and 'rapid growth' has a low positive predictive value (about 0.2–0.5 % of rapidly growing 'fibroids' are sarcomas). The diagnosis is therefore made on the hysterectomy specimen by the histologic triad, and staging is FIGO 2009 for uterine sarcoma (stage I confined to the uterus, subdivided by size ≤ 5 cm vs &gt; 5 cm).\n- 비교: <table><thead><tr><th style=\"width:32%\">Finding</th><th style=\"width:36%\">What it indicates</th><th>Diagnostic weight (Stanford)</th></tr></thead><tbody> <tr><td><b>Coagulative tumor cell necrosis (answer)</b></td><td><b>abrupt viable-to-necrotic transition, ghost cells, no reparative zone</b></td><td><b>one of the three defining criteria; with diffuse atypia = leiomyosarcoma</b></td></tr> <tr><td>Hyaline (infarct-type) necrosis</td><td>ischemic necrosis with granulation/hyalinized rim — benign degeneration</td><td>none; seen in leiomyoma</td></tr> <tr><td>Diffuse hydropic degeneration</td><td>edema separating smooth muscle bundles — benign leiomyoma change</td><td>none</td></tr> <tr><td>Prominent thick-walled vessels</td><td>feature of cellular leiomyoma and many benign variants</td><td>none</td></tr> <tr><td>Epithelioid morphology</td><td>a variant pattern; malignancy still judged by atypia, mitoses (≥ 4/10 HPF in epithelioid tumors) and necrosis</td><td>modifies thresholds but is not itself a criterion</td></tr> </tbody></table> The <b>closest wrong answer is hyaline necrosis</b>, because both are 'necrosis' and both are common in large uterine masses. The discriminator is the <b>interface</b>: tumor cell necrosis is abrupt and shows dead pleomorphic cells; hyaline necrosis is walled off by granulation tissue or hyalinized collagen and its surrounding tumor is bland. If this tumor had shown only hyaline necrosis with the same atypia and 4 mitoses, the diagnosis would be atypical leiomyoma/STUMP, and the patient would be followed rather than treated as sarcoma.\n- 오답 이유:\n  - (A) Prominent thick-walled vessels are characteristic of cellular leiomyoma and other benign variants and are not a criterion of malignancy. Vascular invasion, not vascular prominence, would matter. This option would be correct only if the question asked for a feature that distinguishes a cellular leiomyoma from endometrial stromal tumor.\n  - (B) Epithelioid morphology is a histologic variant of smooth muscle tumors in which malignancy is still judged by atypia, mitotic count (with a lower threshold of about 4 per 10 HPF) and tumor cell necrosis; the morphology itself does not establish sarcoma. This option would be correct only if the question asked which variant lowers the mitotic threshold used to call leiomyosarcoma.\n  - (D) Hyaline (infarct-type) necrosis is the ischemic degeneration of a benign leiomyoma: a necrotic center rimmed by granulation tissue or hyalinized collagen with bland viable tumor outside. It is specifically excluded from the Stanford criteria and does not support malignancy. This option would be correct only if the question asked which form of necrosis is characteristic of a degenerating leiomyoma after torsion or GnRH-agonist therapy.\n  - (E) Diffuse hydropic degeneration is accumulation of edema fluid between smooth muscle bundles, a benign change of leiomyomas that may produce a cystic or bizarre gross appearance. It has no bearing on the malignant criteria. This option would be correct only if the question asked which degenerative change explains a cystic, watery leiomyoma in a premenopausal woman.\n- 함정: Not all necrosis counts. Ask whether the necrosis is 'tumor cell' (abrupt, ghost cells, no reparative rim) or 'hyaline' (walled off by granulation tissue). Only the former is a Stanford criterion, and with diffuse atypia it makes leiomyosarcoma even when mitoses are below 10.\n- 학습목표: 폐경 후 자궁 평활근 종양의 병리에서 스탠퍼드 기준(이형성·유사분열·응고성 종양세포 괴사)을 적용해 평활근육종과 근종을 구분하고, 괴사 유형의 진단적 무게를 설명한다\n- 근거·출처: Bell SW, Kempson RL, Hendrickson MR. Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases (Am J Surg Pathol 1994) — Stanford criteria: atypia, mitotic index ≥ 10/10 HPF, coagulative tumor cell necrosis · WHO Classification of Tumours: Female Genital Tumours, 5th ed. (2020) — uterine leiomyosarcoma, STUMP, mitotically active and atypical leiomyoma definitions · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 — leiomyosarcoma: tumor cell necrosis, atypia, mitoses; postmenopausal presentation · Parker WH, Fu YS, Berek JS. Uterine sarcoma in patients operated on for presumed leiomyoma and rapidly growing leiomyoma (Obstet Gynecol 1994) — rapid growth has low predictive value · FIGO Committee on Gynecologic Oncology. FIGO staging for uterine sarcomas (Int J Gynaecol Obstet 2009)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The Stanford criteria classify uterine smooth muscle tumors by three features: diffuse moderate-to-severe cytologic atypia, mitotic index (≥ 10 per 10 high-power fields), and coagulative tumor cell necrosis. Any two of the three establish leiomyosarcoma. This tumor already has diffuse atypia; its mitotic count of 4 is below the threshold, so the second criterion must come from necrosis. Coagulative tumor cell necrosis — an abrupt transition from viable to necrotic tumor with ghost cells and no intervening granulation or hyalinized tissue — is the necrosis of a rapidly growing malignant clone and, combined with the atypia, makes the diagnosis leiomyosarcoma even with a low mitotic count. Hyaline (infarct-type) necrosis is the necrosis of a benign leiomyoma that has outgrown its blood supply and does not count."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why three criteria and why necrosis type matters</b> — uterine leiomyosarcoma is not graded like other sarcomas; it is <b>defined</b> by the Stanford (Bell, Kempson, Hendrickson 1994) combination of (1) <b>diffuse moderate-to-severe atypia</b>, (2) <b>mitotic index ≥ 10 per 10 HPF</b>, and (3) <b>coagulative tumor cell necrosis</b>. Two of the three carry a high risk of metastasis; one alone (for example atypia with low mitoses and no tumor necrosis) is an 'atypical leiomyoma' or a smooth muscle tumor of uncertain malignant potential (STUMP), which rarely recurs. The reason mitotic count alone is insufficient is that mitotically active leiomyomas (up to 20 mitoses/10 HPF without atypia or tumor necrosis, often in the secretory phase or with progestins) behave benignly.<br> <b>Two kinds of necrosis</b> — <b>coagulative tumor cell necrosis</b> reflects a tumor outgrowing its perfusion so fast that cells die without a reparative response: an <b>abrupt</b> border between viable and necrotic tumor, preserved 'ghost' outlines of pleomorphic cells, and nuclear debris, with no zone of granulation tissue. <b>Hyaline (infarct-type) necrosis</b> is the slow ischemic death of a benign leiomyoma, often after torsion, pregnancy or GnRH-agonist treatment: necrotic center, then a rim of <b>granulation tissue or hyalinized collagen</b>, then viable bland tumor. The presence of a reparative zone tells the pathologist the necrosis is old and benign. Because this distinction is reproducible and prognostic, the WHO classification retains it as a defining criterion.<br> <b>Why the clinical picture points the same way</b> — a new or enlarging uterine mass <b>after menopause</b> without hormone therapy, bleeding, ill-defined margins and hemorrhage on MRI, and diffuse atypia on histology all argue for sarcoma, but none is diagnostic: leiomyomas can degenerate and bleed, and 'rapid growth' has a low positive predictive value (about 0.2–0.5 % of rapidly growing 'fibroids' are sarcomas). The diagnosis is therefore made on the hysterectomy specimen by the histologic triad, and staging is FIGO 2009 for uterine sarcoma (stage I confined to the uterus, subdivided by size ≤ 5 cm vs &gt; 5 cm)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:32%\">Finding</th><th style=\"width:36%\">What it indicates</th><th>Diagnostic weight (Stanford)</th></tr></thead><tbody> <tr><td><b>Coagulative tumor cell necrosis (answer)</b></td><td><b>abrupt viable-to-necrotic transition, ghost cells, no reparative zone</b></td><td><b>one of the three defining criteria; with diffuse atypia = leiomyosarcoma</b></td></tr> <tr><td>Hyaline (infarct-type) necrosis</td><td>ischemic necrosis with granulation/hyalinized rim — benign degeneration</td><td>none; seen in leiomyoma</td></tr> <tr><td>Diffuse hydropic degeneration</td><td>edema separating smooth muscle bundles — benign leiomyoma change</td><td>none</td></tr> <tr><td>Prominent thick-walled vessels</td><td>feature of cellular leiomyoma and many benign variants</td><td>none</td></tr> <tr><td>Epithelioid morphology</td><td>a variant pattern; malignancy still judged by atypia, mitoses (≥ 4/10 HPF in epithelioid tumors) and necrosis</td><td>modifies thresholds but is not itself a criterion</td></tr> </tbody></table> The <b>closest wrong answer is hyaline necrosis</b>, because both are 'necrosis' and both are common in large uterine masses. The discriminator is the <b>interface</b>: tumor cell necrosis is abrupt and shows dead pleomorphic cells; hyaline necrosis is walled off by granulation tissue or hyalinized collagen and its surrounding tumor is bland. If this tumor had shown only hyaline necrosis with the same atypia and 4 mitoses, the diagnosis would be atypical leiomyoma/STUMP, and the patient would be followed rather than treated as sarcoma."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Prominent thick-walled vessels are characteristic of cellular leiomyoma and other benign variants and are not a criterion of malignancy. Vascular invasion, not vascular prominence, would matter. This option would be correct only if the question asked for a feature that distinguishes a cellular leiomyoma from endometrial stromal tumor.\n(B) Epithelioid morphology is a histologic variant of smooth muscle tumors in which malignancy is still judged by atypia, mitotic count (with a lower threshold of about 4 per 10 HPF) and tumor cell necrosis; the morphology itself does not establish sarcoma. This option would be correct only if the question asked which variant lowers the mitotic threshold used to call leiomyosarcoma.\n(D) Hyaline (infarct-type) necrosis is the ischemic degeneration of a benign leiomyoma: a necrotic center rimmed by granulation tissue or hyalinized collagen with bland viable tumor outside. It is specifically excluded from the Stanford criteria and does not support malignancy. This option would be correct only if the question asked which form of necrosis is characteristic of a degenerating leiomyoma after torsion or GnRH-agonist therapy.\n(E) Diffuse hydropic degeneration is accumulation of edema fluid between smooth muscle bundles, a benign change of leiomyomas that may produce a cystic or bizarre gross appearance. It has no bearing on the malignant criteria. This option would be correct only if the question asked which degenerative change explains a cystic, watery leiomyoma in a premenopausal woman."
+   },
+   {
+    "k": "함정",
+    "v": "Not all necrosis counts. Ask whether the necrosis is 'tumor cell' (abrupt, ghost cells, no reparative rim) or 'hyaline' (walled off by granulation tissue). Only the former is a Stanford criterion, and with diffuse atypia it makes leiomyosarcoma even when mitoses are below 10."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐경 후 자궁 평활근 종양의 병리에서 스탠퍼드 기준(이형성·유사분열·응고성 종양세포 괴사)을 적용해 평활근육종과 근종을 구분하고, 괴사 유형의 진단적 무게를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bell SW, Kempson RL, Hendrickson MR. Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases (Am J Surg Pathol 1994) — Stanford criteria: atypia, mitotic index ≥ 10/10 HPF, coagulative tumor cell necrosis · WHO Classification of Tumours: Female Genital Tumours, 5th ed. (2020) — uterine leiomyosarcoma, STUMP, mitotically active and atypical leiomyoma definitions · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 — leiomyosarcoma: tumor cell necrosis, atypia, mitoses; postmenopausal presentation · Parker WH, Fu YS, Berek JS. Uterine sarcoma in patients operated on for presumed leiomyoma and rapidly growing leiomyoma (Obstet Gynecol 1994) — rapid growth has low predictive value · FIGO Committee on Gynecologic Oncology. FIGO staging for uterine sarcomas (Int J Gynaecol Obstet 2009)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0052",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "type": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-17",
+  "vignette": "A 42-year-old woman comes to the physician to discuss cancer risk reduction. Genetic testing performed after her sister was diagnosed with ovarian cancer at age 45 showed a pathogenic germline BRCA1 mutation. She has two children and does not desire more. Her menses are regular. She has no family history of colorectal or endometrial cancer. Pelvic examination and transvaginal ultrasonography are normal, and serum CA-125 concentration is 9 U/mL.",
+  "question": "Which of the following is the most appropriate recommendation to reduce her risk of ovarian cancer?",
+  "options": [
+   "Combined oral contraceptive pills until menopause",
+   "Total hysterectomy with ovarian preservation",
+   "Bilateral salpingectomy with ovarian preservation",
+   "Risk-reducing bilateral salpingo-oophorectomy",
+   "Annual transvaginal ultrasonography with serum CA-125"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A pathogenic BRCA1 mutation carries a lifetime risk of ovarian, fallopian tube and primary peritoneal carcinoma of roughly 40–45 %, with onset often in the 40s. Screening with ultrasonography and CA-125 has not been shown to reduce mortality, because high-grade serous carcinoma spreads early from the fallopian tube fimbria. For a BRCA1 carrier who has completed childbearing, guidelines recommend risk-reducing bilateral salpingo-oophorectomy between ages 35 and 40; at 42 it is overdue. The operation lowers ovarian and tubal cancer risk by about 80–90 % and, when performed premenopausally, also lowers breast cancer risk.\n- 원리: <b>Where the cancer starts</b> — most 'ovarian' high-grade serous carcinomas in BRCA carriers arise from <b>serous tubal intraepithelial carcinoma (STIC)</b> in the secretory cells of the <b>fimbrial end of the fallopian tube</b>, which sit in the incessant-ovulation environment of follicular fluid and iron-rich blood. Loss of BRCA1 homologous-recombination repair plus early <b>TP53</b> mutation lets these cells accumulate the chromosomal instability of high-grade serous carcinoma. The tumor exfoliates onto the ovary and peritoneum before it forms a mass, which is why <b>screening fails</b>: ultrasonography sees a mass and CA-125 rises only once disease is advanced (the UKCTOCS and PLCO trials showed no mortality benefit, and the UKFOCSS study in high-risk women found most screen-detected cancers were already stage III).<br> <b>Why the whole adnexa and why now</b> — removing both tubes <b>and</b> ovaries removes the fimbrial origin, the ovarian surface and the hormonal driver; residual risk is the peritoneum (about 1–4 %). In BRCA1 carriers the risk climbs steeply after age 35–40 (earlier than in BRCA2, where surgery is advised by 40–45), so NCCN recommends surgery at <b>35–40 once childbearing is complete</b>. Premenopausal oophorectomy also halves the risk of breast cancer in some series, and the specimen is serially sectioned (SEE-FIM protocol) to detect occult STIC. Surgical menopause at 42 is managed with short-term hormone therapy, which does not negate the breast-cancer benefit in women without prior breast cancer.<br> <b>Why the alternatives fall short</b> — salpingectomy alone removes the fimbria but leaves the ovary's surface epithelium and hormonal milieu; it is being studied as an interim step for women who decline oophorectomy, not as the standard. Oral contraceptives reduce ovarian cancer risk by about 50 % after 5 years and are reasonable <b>while</b> awaiting surgery, but they are not risk-reduction therapy for a 42-year-old carrier who has completed childbearing. Hysterectomy is not required for BRCA-related ovarian risk (it may be added for BRCA1 given a possible small serous endometrial cancer risk, or if hormone therapy is planned), and it does nothing for the tubes.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:38%\">Effect on ovarian/tubal cancer</th><th>Role for this patient</th></tr></thead><tbody> <tr><td><b>Risk-reducing BSO (answer)</b></td><td><b>≈80–90 % reduction; removes tubal origin and ovaries; also lowers breast cancer risk premenopausally</b></td><td>indicated at 35–40 for BRCA1 — she is 42 and done with childbearing</td></tr> <tr><td>Bilateral salpingectomy alone</td><td>removes fimbrial origin but leaves ovaries; long-term efficacy unproven, under trial</td><td>only for carriers who decline BSO, as a bridge</td></tr> <tr><td>Annual ultrasound + CA-125</td><td>no mortality benefit; detects advanced disease</td><td>acceptable only as interim surveillance before surgery</td></tr> <tr><td>Combined oral contraceptives</td><td>≈50 % relative reduction with ≥ 5 years' use; not a substitute for surgery</td><td>bridge in younger carriers</td></tr> <tr><td>Hysterectomy with ovarian preservation</td><td>no reduction — ovaries and tubes left in place</td><td>not indicated</td></tr> </tbody></table> The <b>closest wrong answer is bilateral salpingectomy with ovarian preservation</b>: it targets the true site of origin and avoids surgical menopause, and it is offered in trials to women who refuse oophorectomy. The discriminator is <b>proven risk reduction and age</b>: at 42 the ovarian risk in BRCA1 is already rising steeply and only salpingo-oophorectomy has outcome data. If the patient were 30 and wanted a child in five years, the answer would shift to interim measures (oral contraceptives ± salpingectomy) with oophorectomy planned by 40.\n- 오답 이유:\n  - (A) Combined oral contraceptives lower ovarian cancer risk by about half after five years of use and are a reasonable bridge in young carriers, but they do not remove the tubal origin and are not the definitive recommendation for a 42-year-old BRCA1 carrier past childbearing. This option would be correct only if she were in her 20s or early 30s and planning future pregnancy.\n  - (B) Hysterectomy with ovarian preservation removes the uterus but leaves both fallopian tubes and ovaries, the sites where BRCA-associated high-grade serous carcinoma arises, so it does not reduce ovarian cancer risk. This option would be correct only if the question concerned a separate uterine indication such as endometrial cancer risk from planned tamoxifen or hormone therapy.\n  - (C) Bilateral salpingectomy with ovarian preservation removes the fimbrial origin and is being studied as an interim step for carriers who decline oophorectomy, but its long-term efficacy is unproven and the ovaries remain at risk. At 42, when BRCA1 ovarian risk rises steeply, only salpingo-oophorectomy has outcome data. This option would be correct only if she refused oophorectomy and accepted a bridging procedure within a trial.\n  - (E) Annual transvaginal ultrasonography with CA-125 has not reduced ovarian cancer mortality in average-risk (UKCTOCS, PLCO) or high-risk (UKFOCSS) women, because high-grade serous carcinoma spreads from the fimbria before a mass or a CA-125 rise. It is acceptable only as an interim measure before surgery. This option would be correct only if she declined surgery or wanted to defer it for a planned pregnancy.\n- 함정: Screening is not prevention. For a BRCA1 carrier who has finished childbearing, the recommendation is surgical — both tubes and both ovaries — by age 35–40; a normal ultrasound and CA-125 do not change it.\n- 학습목표: BRCA1 변이 보인자에서 출산이 끝난 뒤 난소암·난관암 위험을 낮추는 최선의 권고로 위험감소 양측 난관난소절제술을 선택하고 난관채 기원의 고등급 장액암을 근거로 설명한다\n- 근거·출처: NCCN Clinical Practice Guidelines: Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic (v.2024) — BRCA1: RRSO at 35–40 after childbearing; BRCA2 at 40–45; salpingectomy alone not standard · ACOG Practice Bulletin No. 182: Hereditary breast and ovarian cancer syndrome (2017) — RRSO reduces ovarian cancer 80–90 %, surveillance ineffective · Finch AP et al. Impact of oophorectomy on cancer incidence and mortality in women with a BRCA1 or BRCA2 mutation (J Clin Oncol 2014) — 80 % reduction in ovarian cancer, 77 % reduction in all-cause mortality · Kurman RJ, Shih IeM. The dualistic model of ovarian carcinogenesis (Am J Pathol 2016) — fimbrial STIC as origin of high-grade serous carcinoma · Rosenthal AN et al. Evidence of stage shift in women diagnosed with ovarian cancer during phase II of UKFOCSS (J Clin Oncol 2017) — screening in high-risk women does not replace surgery",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A pathogenic BRCA1 mutation carries a lifetime risk of ovarian, fallopian tube and primary peritoneal carcinoma of roughly 40–45 %, with onset often in the 40s. Screening with ultrasonography and CA-125 has not been shown to reduce mortality, because high-grade serous carcinoma spreads early from the fallopian tube fimbria. For a BRCA1 carrier who has completed childbearing, guidelines recommend risk-reducing bilateral salpingo-oophorectomy between ages 35 and 40; at 42 it is overdue. The operation lowers ovarian and tubal cancer risk by about 80–90 % and, when performed premenopausally, also lowers breast cancer risk."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Where the cancer starts</b> — most 'ovarian' high-grade serous carcinomas in BRCA carriers arise from <b>serous tubal intraepithelial carcinoma (STIC)</b> in the secretory cells of the <b>fimbrial end of the fallopian tube</b>, which sit in the incessant-ovulation environment of follicular fluid and iron-rich blood. Loss of BRCA1 homologous-recombination repair plus early <b>TP53</b> mutation lets these cells accumulate the chromosomal instability of high-grade serous carcinoma. The tumor exfoliates onto the ovary and peritoneum before it forms a mass, which is why <b>screening fails</b>: ultrasonography sees a mass and CA-125 rises only once disease is advanced (the UKCTOCS and PLCO trials showed no mortality benefit, and the UKFOCSS study in high-risk women found most screen-detected cancers were already stage III).<br> <b>Why the whole adnexa and why now</b> — removing both tubes <b>and</b> ovaries removes the fimbrial origin, the ovarian surface and the hormonal driver; residual risk is the peritoneum (about 1–4 %). In BRCA1 carriers the risk climbs steeply after age 35–40 (earlier than in BRCA2, where surgery is advised by 40–45), so NCCN recommends surgery at <b>35–40 once childbearing is complete</b>. Premenopausal oophorectomy also halves the risk of breast cancer in some series, and the specimen is serially sectioned (SEE-FIM protocol) to detect occult STIC. Surgical menopause at 42 is managed with short-term hormone therapy, which does not negate the breast-cancer benefit in women without prior breast cancer.<br> <b>Why the alternatives fall short</b> — salpingectomy alone removes the fimbria but leaves the ovary's surface epithelium and hormonal milieu; it is being studied as an interim step for women who decline oophorectomy, not as the standard. Oral contraceptives reduce ovarian cancer risk by about 50 % after 5 years and are reasonable <b>while</b> awaiting surgery, but they are not risk-reduction therapy for a 42-year-old carrier who has completed childbearing. Hysterectomy is not required for BRCA-related ovarian risk (it may be added for BRCA1 given a possible small serous endometrial cancer risk, or if hormone therapy is planned), and it does nothing for the tubes."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:38%\">Effect on ovarian/tubal cancer</th><th>Role for this patient</th></tr></thead><tbody> <tr><td><b>Risk-reducing BSO (answer)</b></td><td><b>≈80–90 % reduction; removes tubal origin and ovaries; also lowers breast cancer risk premenopausally</b></td><td>indicated at 35–40 for BRCA1 — she is 42 and done with childbearing</td></tr> <tr><td>Bilateral salpingectomy alone</td><td>removes fimbrial origin but leaves ovaries; long-term efficacy unproven, under trial</td><td>only for carriers who decline BSO, as a bridge</td></tr> <tr><td>Annual ultrasound + CA-125</td><td>no mortality benefit; detects advanced disease</td><td>acceptable only as interim surveillance before surgery</td></tr> <tr><td>Combined oral contraceptives</td><td>≈50 % relative reduction with ≥ 5 years' use; not a substitute for surgery</td><td>bridge in younger carriers</td></tr> <tr><td>Hysterectomy with ovarian preservation</td><td>no reduction — ovaries and tubes left in place</td><td>not indicated</td></tr> </tbody></table> The <b>closest wrong answer is bilateral salpingectomy with ovarian preservation</b>: it targets the true site of origin and avoids surgical menopause, and it is offered in trials to women who refuse oophorectomy. The discriminator is <b>proven risk reduction and age</b>: at 42 the ovarian risk in BRCA1 is already rising steeply and only salpingo-oophorectomy has outcome data. If the patient were 30 and wanted a child in five years, the answer would shift to interim measures (oral contraceptives ± salpingectomy) with oophorectomy planned by 40."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Combined oral contraceptives lower ovarian cancer risk by about half after five years of use and are a reasonable bridge in young carriers, but they do not remove the tubal origin and are not the definitive recommendation for a 42-year-old BRCA1 carrier past childbearing. This option would be correct only if she were in her 20s or early 30s and planning future pregnancy.\n(B) Hysterectomy with ovarian preservation removes the uterus but leaves both fallopian tubes and ovaries, the sites where BRCA-associated high-grade serous carcinoma arises, so it does not reduce ovarian cancer risk. This option would be correct only if the question concerned a separate uterine indication such as endometrial cancer risk from planned tamoxifen or hormone therapy.\n(C) Bilateral salpingectomy with ovarian preservation removes the fimbrial origin and is being studied as an interim step for carriers who decline oophorectomy, but its long-term efficacy is unproven and the ovaries remain at risk. At 42, when BRCA1 ovarian risk rises steeply, only salpingo-oophorectomy has outcome data. This option would be correct only if she refused oophorectomy and accepted a bridging procedure within a trial.\n(E) Annual transvaginal ultrasonography with CA-125 has not reduced ovarian cancer mortality in average-risk (UKCTOCS, PLCO) or high-risk (UKFOCSS) women, because high-grade serous carcinoma spreads from the fimbria before a mass or a CA-125 rise. It is acceptable only as an interim measure before surgery. This option would be correct only if she declined surgery or wanted to defer it for a planned pregnancy."
+   },
+   {
+    "k": "함정",
+    "v": "Screening is not prevention. For a BRCA1 carrier who has finished childbearing, the recommendation is surgical — both tubes and both ovaries — by age 35–40; a normal ultrasound and CA-125 do not change it."
+   },
+   {
+    "k": "학습목표",
+    "v": "BRCA1 변이 보인자에서 출산이 끝난 뒤 난소암·난관암 위험을 낮추는 최선의 권고로 위험감소 양측 난관난소절제술을 선택하고 난관채 기원의 고등급 장액암을 근거로 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "NCCN Clinical Practice Guidelines: Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic (v.2024) — BRCA1: RRSO at 35–40 after childbearing; BRCA2 at 40–45; salpingectomy alone not standard · ACOG Practice Bulletin No. 182: Hereditary breast and ovarian cancer syndrome (2017) — RRSO reduces ovarian cancer 80–90 %, surveillance ineffective · Finch AP et al. Impact of oophorectomy on cancer incidence and mortality in women with a BRCA1 or BRCA2 mutation (J Clin Oncol 2014) — 80 % reduction in ovarian cancer, 77 % reduction in all-cause mortality · Kurman RJ, Shih IeM. The dualistic model of ovarian carcinogenesis (Am J Pathol 2016) — fimbrial STIC as origin of high-grade serous carcinoma · Rosenthal AN et al. Evidence of stage shift in women diagnosed with ovarian cancer during phase II of UKFOCSS (J Clin Oncol 2017) — screening in high-risk women does not replace surgery"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0051",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "type": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-17",
+  "vignette": "63세 여자가 3년 전부터 심해지는 외음부 가려움과 최근의 성교통으로 병원에 왔다. 12년 전 폐경하였고 호르몬 치료는 받지 않았다. 진찰에서 소음순이 위축되어 대음순과 유착되고 음핵이 덮여 있으며, 외음부에서 항문 주위까지 8자 모양으로 희고 얇게 주름진 위축성 반과 균열이 있다. 질 점막은 정상이다. 반에서 시행한 펀치 생검에서 표피 위축과 기저층 공포화, 진피 상부의 균질화와 그 아래 띠 모양 림프구 침윤이 보이고 이형성은 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "클로베타솔 프로피오네이트 연고 도포",
+   "에스트로겐 질크림 도포",
+   "이미퀴모드 크림 도포",
+   "단순 외음부절제술",
+   "플루코나졸 경구 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 폐경 후 여성의 만성 외음부 가려움, 소음순 위축·유착과 음핵 매몰, 외음부와 항문 주위를 8자 모양으로 둘러싸는 흰 위축성 반, 그리고 생검의 표피 위축·기저층 공포화·진피 상부 균질화·띠 모양 림프구 침윤은 외음부 경화태선(lichen sclerosus)의 전형이다. 첫 치료는 초고역가 국소 코르티코스테로이드(클로베타솔 프로피오네이트 0.05 %)를 매일 바르다가 유지 요법으로 줄이는 것이며, 증상·구조 변화를 멈추고 편평세포암 위험을 낮춘다.\n- 원리: <b>경화태선</b>은 외음부·항문 주위 피부의 만성 림프구 매개 염증으로, 자가면역(세포외기질단백 ECM-1 에 대한 자가항체, 갑상샘 질환·백반증 동반)과 국소 자극이 함께 관여한다고 본다. 진피 상부의 <b>교원질이 균질화</b>되고 표피가 얇아지며 기저층이 손상되어 색소가 빠져 <b>희고 얇은 종이 같은 반</b>이 생긴다. 염증이 지속되면 소음순이 대음순에 흡수되고 음핵이 덮이며 질 입구가 좁아지는 <b>구조적 흉터</b>가 남는다 — 이것이 성교통과 배뇨 불편의 원인이고, 치료의 목표가 「가려움 완화」를 넘어 「흉터 진행 정지」인 이유다. 질 점막은 침범하지 않는다(위축성 질염과의 차이).<br> <b>왜 초고역가 스테로이드인가</b> — 무작위 대조시험과 장기 추적에서 클로베타솔 0.05 % 는 증상을 70~90 % 에서 없애고 조직학적 염증을 되돌리며, 규칙적 유지 요법을 한 군에서 <b>외음부 편평세포암(평생 위험 약 4~5 %)</b>의 발생이 뚜렷이 낮았다. 외음부 피부는 스테로이드에 비교적 저항성이 있어 중간 역가로는 부족하다. 처방은 하루 1회 1~3개월, 이후 주 2~3회 유지이며, 감염·이형성을 놓치지 않도록 <b>생검으로 진단을 확정</b>하고 정기 추적한다. 반응하지 않으면 타크로리무스 연고가 2차이고, 수술은 흉터로 생긴 유착·협착을 풀거나 암이 생겼을 때만 한다.<br> <b>감별의 축</b> — 가려움 + 흰 반이라는 같은 겉모습 뒤에 세 가지가 있다. ① 경화태선(위축·8자 분포·균질화), ② 편평 과다형성/만성 단순태선(두꺼워진 가죽 같은 판, 표피 비후·과각화), ③ 외음부 상피내종양(VIN, 경계 뚜렷한 융기 반, HPV 또는 경화태선 배경, 이형성). 생검의 <b>이형성 유무</b>가 치료의 갈림길이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">질환</th><th style=\"width:44%\">진찰·조직 소견</th><th>1차 치료</th></tr></thead><tbody> <tr><td><b>경화태선(정답)</b></td><td><b>흰 위축성 8자 반, 소음순 유착·음핵 매몰, 표피 위축 + 진피 상부 균질화 + 띠 모양 림프구</b></td><td><b>클로베타솔 0.05 % 연고</b></td></tr> <tr><td>위축성 질염(폐경 비뇨생식증후군)</td><td>질 점막 창백·건조·점상 출혈, 외음부 흰 반·유착 없음</td><td>국소 에스트로겐</td></tr> <tr><td>외음부 상피내종양(VIN)</td><td>경계 뚜렷한 융기·색소성 반, 생검에 이형성</td><td>절제 또는 이미퀴모드(uVIN)</td></tr> <tr><td>외음부 편평세포암</td><td>궤양성·경결성 종괴, 침윤</td><td>근치 절제 ± 림프절</td></tr> <tr><td>칸디다 외음질염</td><td>발적·부종·치즈 분비물, KOH 균사</td><td>플루코나졸</td></tr> </tbody></table> <b>가장 가까운 오답은 「에스트로겐 질크림」</b> — 폐경 후 여성의 외음부 위축이라는 겉모습이 겹친다. 갈림길은 <b>질 점막의 상태와 생검</b>이다. 질 점막이 정상이고 외음부 피부에만 흰 반·유착이 있으며 진피 균질화가 보이면 에스트로겐 결핍이 아니라 경화태선이고, 반대로 질 점막이 창백·건조하고 외음부 피부 구조가 보존돼 있으면 국소 에스트로겐이다. 두 질환이 함께 있으면 둘 다 치료한다.\n- 오답 이유:\n  - ② 에스트로겐 질크림은 폐경 비뇨생식증후군(위축성 질염)의 치료다. 이 환자는 질 점막이 정상이고 외음부 피부에 국한된 흰 위축성 반과 유착, 생검의 진피 균질화가 있어 에스트로겐 결핍이 아닌 경화태선이다. 이 선지가 정답이 되려면 질 점막이 창백·건조하고 외음부 피부 소견과 생검의 균질화가 없어야 한다.\n  - ③ 이미퀴모드는 HPV 관련 외음부 상피내종양(uVIN)이나 첨규콘딜로마에 쓰는 면역반응 조절제다. 경화태선은 HPV 와 무관하고 이 생검에 이형성이 없으므로 적응이 아니다. 이 선지가 정답이 되려면 생검에서 전층 이형성이 있는 HPV 관련 VIN 이 확인되어야 한다.\n  - ④ 단순 외음부절제술은 경화태선의 치료가 아니며 재발이 흔하고 기능 손상이 크다. 수술은 흉터로 생긴 질 입구 협착·유착을 풀거나 편평세포암이 생겼을 때 한다. 이 선지가 정답이 되려면 생검에서 침윤성 편평세포암이 확인되어야 한다.\n  - ⑤ 플루코나졸은 칸디다 외음질염의 치료다. 칸디다는 발적·부종·치즈 모양 분비물과 KOH 도말의 균사가 특징이고 흰 위축성 반이나 진피 균질화를 만들지 않는다. 이 선지가 정답이 되려면 KOH 도말에서 가성균사가 보이고 생검 소견이 없어야 한다.\n- 함정: 「폐경 후 외음부 위축」이라고 반사적으로 에스트로겐을 고르지 말 것. 질 점막이 정상이고 외음부 피부에 8자 모양 흰 반·유착이 있으며 생검에 진피 상부 균질화가 있으면 경화태선이고, 답은 초고역가 국소 스테로이드다.\n- 학습목표: 폐경 후 여성의 만성 외음부 가려움과 8자 모양 흰 위축성 반, 생검의 진피 상부 균질화로 외음부 경화태선을 진단하고 초고역가 국소 스테로이드를 첫 치료로 선택한다\n- 근거·출처: Lee A, Bradford J, Fischer G. Long-term management of adult vulvar lichen sclerosus: a prospective cohort study of 507 women (JAMA Dermatol 2015) — maintenance topical steroid reduced scarring and squamous carcinoma · ACOG Practice Bulletin No. 224: Diagnosis and management of vulvar skin disorders (2020) — lichen sclerosus: biopsy, clobetasol 0.05 %, tacrolimus second line, surgery only for scarring or cancer · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 — lichen sclerosus: epidermal atrophy, basal vacuolization, dermal homogenization, band-like infiltrate; SCC risk · Williams Gynecology 4th ed., ch. 4 Benign disorders of the lower reproductive tract — vulvar dermatoses, differential from VIN and atrophic vaginitis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "폐경 후 여성의 만성 외음부 가려움, 소음순 위축·유착과 음핵 매몰, 외음부와 항문 주위를 8자 모양으로 둘러싸는 흰 위축성 반, 그리고 생검의 표피 위축·기저층 공포화·진피 상부 균질화·띠 모양 림프구 침윤은 외음부 경화태선(lichen sclerosus)의 전형이다. 첫 치료는 초고역가 국소 코르티코스테로이드(클로베타솔 프로피오네이트 0.05 %)를 매일 바르다가 유지 요법으로 줄이는 것이며, 증상·구조 변화를 멈추고 편평세포암 위험을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>경화태선</b>은 외음부·항문 주위 피부의 만성 림프구 매개 염증으로, 자가면역(세포외기질단백 ECM-1 에 대한 자가항체, 갑상샘 질환·백반증 동반)과 국소 자극이 함께 관여한다고 본다. 진피 상부의 <b>교원질이 균질화</b>되고 표피가 얇아지며 기저층이 손상되어 색소가 빠져 <b>희고 얇은 종이 같은 반</b>이 생긴다. 염증이 지속되면 소음순이 대음순에 흡수되고 음핵이 덮이며 질 입구가 좁아지는 <b>구조적 흉터</b>가 남는다 — 이것이 성교통과 배뇨 불편의 원인이고, 치료의 목표가 「가려움 완화」를 넘어 「흉터 진행 정지」인 이유다. 질 점막은 침범하지 않는다(위축성 질염과의 차이).<br> <b>왜 초고역가 스테로이드인가</b> — 무작위 대조시험과 장기 추적에서 클로베타솔 0.05 % 는 증상을 70~90 % 에서 없애고 조직학적 염증을 되돌리며, 규칙적 유지 요법을 한 군에서 <b>외음부 편평세포암(평생 위험 약 4~5 %)</b>의 발생이 뚜렷이 낮았다. 외음부 피부는 스테로이드에 비교적 저항성이 있어 중간 역가로는 부족하다. 처방은 하루 1회 1~3개월, 이후 주 2~3회 유지이며, 감염·이형성을 놓치지 않도록 <b>생검으로 진단을 확정</b>하고 정기 추적한다. 반응하지 않으면 타크로리무스 연고가 2차이고, 수술은 흉터로 생긴 유착·협착을 풀거나 암이 생겼을 때만 한다.<br> <b>감별의 축</b> — 가려움 + 흰 반이라는 같은 겉모습 뒤에 세 가지가 있다. ① 경화태선(위축·8자 분포·균질화), ② 편평 과다형성/만성 단순태선(두꺼워진 가죽 같은 판, 표피 비후·과각화), ③ 외음부 상피내종양(VIN, 경계 뚜렷한 융기 반, HPV 또는 경화태선 배경, 이형성). 생검의 <b>이형성 유무</b>가 치료의 갈림길이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">질환</th><th style=\"width:44%\">진찰·조직 소견</th><th>1차 치료</th></tr></thead><tbody> <tr><td><b>경화태선(정답)</b></td><td><b>흰 위축성 8자 반, 소음순 유착·음핵 매몰, 표피 위축 + 진피 상부 균질화 + 띠 모양 림프구</b></td><td><b>클로베타솔 0.05 % 연고</b></td></tr> <tr><td>위축성 질염(폐경 비뇨생식증후군)</td><td>질 점막 창백·건조·점상 출혈, 외음부 흰 반·유착 없음</td><td>국소 에스트로겐</td></tr> <tr><td>외음부 상피내종양(VIN)</td><td>경계 뚜렷한 융기·색소성 반, 생검에 이형성</td><td>절제 또는 이미퀴모드(uVIN)</td></tr> <tr><td>외음부 편평세포암</td><td>궤양성·경결성 종괴, 침윤</td><td>근치 절제 ± 림프절</td></tr> <tr><td>칸디다 외음질염</td><td>발적·부종·치즈 분비물, KOH 균사</td><td>플루코나졸</td></tr> </tbody></table> <b>가장 가까운 오답은 「에스트로겐 질크림」</b> — 폐경 후 여성의 외음부 위축이라는 겉모습이 겹친다. 갈림길은 <b>질 점막의 상태와 생검</b>이다. 질 점막이 정상이고 외음부 피부에만 흰 반·유착이 있으며 진피 균질화가 보이면 에스트로겐 결핍이 아니라 경화태선이고, 반대로 질 점막이 창백·건조하고 외음부 피부 구조가 보존돼 있으면 국소 에스트로겐이다. 두 질환이 함께 있으면 둘 다 치료한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 에스트로겐 질크림은 폐경 비뇨생식증후군(위축성 질염)의 치료다. 이 환자는 질 점막이 정상이고 외음부 피부에 국한된 흰 위축성 반과 유착, 생검의 진피 균질화가 있어 에스트로겐 결핍이 아닌 경화태선이다. 이 선지가 정답이 되려면 질 점막이 창백·건조하고 외음부 피부 소견과 생검의 균질화가 없어야 한다.\n③ 이미퀴모드는 HPV 관련 외음부 상피내종양(uVIN)이나 첨규콘딜로마에 쓰는 면역반응 조절제다. 경화태선은 HPV 와 무관하고 이 생검에 이형성이 없으므로 적응이 아니다. 이 선지가 정답이 되려면 생검에서 전층 이형성이 있는 HPV 관련 VIN 이 확인되어야 한다.\n④ 단순 외음부절제술은 경화태선의 치료가 아니며 재발이 흔하고 기능 손상이 크다. 수술은 흉터로 생긴 질 입구 협착·유착을 풀거나 편평세포암이 생겼을 때 한다. 이 선지가 정답이 되려면 생검에서 침윤성 편평세포암이 확인되어야 한다.\n⑤ 플루코나졸은 칸디다 외음질염의 치료다. 칸디다는 발적·부종·치즈 모양 분비물과 KOH 도말의 균사가 특징이고 흰 위축성 반이나 진피 균질화를 만들지 않는다. 이 선지가 정답이 되려면 KOH 도말에서 가성균사가 보이고 생검 소견이 없어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「폐경 후 외음부 위축」이라고 반사적으로 에스트로겐을 고르지 말 것. 질 점막이 정상이고 외음부 피부에 8자 모양 흰 반·유착이 있으며 생검에 진피 상부 균질화가 있으면 경화태선이고, 답은 초고역가 국소 스테로이드다."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐경 후 여성의 만성 외음부 가려움과 8자 모양 흰 위축성 반, 생검의 진피 상부 균질화로 외음부 경화태선을 진단하고 초고역가 국소 스테로이드를 첫 치료로 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lee A, Bradford J, Fischer G. Long-term management of adult vulvar lichen sclerosus: a prospective cohort study of 507 women (JAMA Dermatol 2015) — maintenance topical steroid reduced scarring and squamous carcinoma · ACOG Practice Bulletin No. 224: Diagnosis and management of vulvar skin disorders (2020) — lichen sclerosus: biopsy, clobetasol 0.05 %, tacrolimus second line, surgery only for scarring or cancer · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 22 — lichen sclerosus: epidermal atrophy, basal vacuolization, dermal homogenization, band-like infiltrate; SCC risk · Williams Gynecology 4th ed., ch. 4 Benign disorders of the lower reproductive tract — vulvar dermatoses, differential from VIN and atrophic vaginitis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0050",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(생식의학·산과·부인과 병리·심전도)",
+  "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "type": "부인과 — 감염·외음부·난관·자궁체부 종양",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-17",
+  "vignette": "28세 여자가 1주일 전부터 냄새나는 질분비물과 외음부 가려움, 성교통으로 병원에 왔다. 성 상대자는 한 명이며 콘돔을 쓰지 않는다. 질경 검사에서 거품이 섞인 황록색 분비물이 많고 자궁경부에 점상 출혈(딸기 모양)이 보인다. 질분비물 pH 는 5.5 이고, 생리식염수 습식도말에서 편모를 움직이는 원충이 다수 관찰되며 KOH 도말에서 균사는 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "플루코나졸 1회 경구 투여",
+   "클린다마이신 질크림 도포",
+   "세프트리악손 근육주사와 독시사이클린 경구",
+   "아시클로버 경구 투여",
+   "메트로니다졸 경구 투여와 성 상대자 동시 치료"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 거품 있는 황록색 악취 분비물, 딸기 모양 자궁경부(점상 출혈), 질 pH 상승(> 4.5), 습식도말의 운동성 편모 원충은 Trichomonas vaginalis 질염이다. 치료는 니트로이미다졸 계열(메트로니다졸 500 mg 하루 2회 7일 또는 티니다졸 2 g 1회)이며, 성매개감염이므로 증상이 없어도 성 상대자를 함께 치료하고 완치까지 성교를 피해야 재감염을 막는다.\n- 원리: <b>Trichomonas vaginalis</b> 는 편모를 가진 혐기성 원충으로 질·요도 상피에 붙어 산다. 질 상피의 글리코겐을 쓰는 젖산균이 밀려나면서 <b>질 pH 가 4.5 위로</b> 오르고, 원충이 만드는 단백분해효소와 부착으로 상피가 손상되어 <b>점상 출혈(딸기 자궁경부)</b>과 다량의 염증성 분비물(거품은 원충과 세균의 가스 생성)이 생긴다. 남성은 대개 무증상 요도 보균자이므로 여성만 치료하면 곧 재감염된다 — 그래서 <b>배우자 동시 치료</b>가 처방의 일부다.<br> <b>왜 니트로이미다졸인가</b> — 메트로니다졸·티니다졸은 혐기 환경에서 원충의 ferredoxin 계 전자전달로 니트로기가 환원되어 DNA 를 끊는 활성 대사물이 된다. 호기성 사람 세포에서는 이 환원이 일어나지 않아 선택 독성이 생긴다. 같은 이유로 세균성 질염(혐기균)에도 쓰이지만, <b>칸디다</b>(진균)와 <b>임균·클라미디아</b>에는 작용하지 않는다. 최근 지침(CDC 2021)은 여성에서 2 g 1회보다 <b>500 mg 하루 2회 7일</b> 요법의 완치율이 높아 이를 권하고, 치료 후 3개월 안에 재검사를 권한다. 국소 젤은 요도· 샘 보균을 없애지 못해 완치율이 낮으므로 경구 투여가 원칙이다.<br> <b>감별의 축은 세 가지 검사</b> — 질 pH, 아민 냄새(KOH whiff), 현미경. 트리코모나스는 pH 상승 + 운동성 원충, 세균성 질염은 pH 상승 + clue cell + 양성 whiff, 칸디다는 <b>pH 정상(≤ 4.5)</b> + 균사·가성균사다. 자궁경부의 점상 출혈과 성교통·배뇨통은 트리코모나스에서 두드러진다. 임신 중에도 메트로니다졸을 사용하며 조산과의 연관은 확립되지 않았다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:40%\">분비물·pH·현미경</th><th>치료</th></tr></thead><tbody> <tr><td><b>트리코모나스 질염(정답)</b></td><td><b>거품 황록색·악취, pH &gt; 4.5, 운동성 편모 원충, 딸기 자궁경부</b></td><td><b>메트로니다졸 경구 + 배우자 치료</b></td></tr> <tr><td>세균성 질염</td><td>묽은 회백색·생선 냄새, pH &gt; 4.5, clue cell, whiff 양성, 염증 적음</td><td>메트로니다졸 경구 또는 질젤, 배우자 치료 불필요</td></tr> <tr><td>칸디다 질염</td><td>흰 치즈 모양, pH ≤ 4.5, KOH 에 균사·가성균사, 심한 가려움·발적</td><td>플루코나졸 1회 또는 아졸 질제</td></tr> <tr><td>임균·클라미디아 자궁경부염</td><td>점액농성 자궁경부 분비물, 접촉 출혈, 원충·균사 없음, NAAT 양성</td><td>세프트리악손 + 독시사이클린</td></tr> <tr><td>생식기 헤르페스</td><td>통증성 수포·궤양, 분비물은 이차적</td><td>아시클로버</td></tr> </tbody></table> <b>가장 가까운 오답은 「클린다마이신 질크림」·세균성 질염 계열</b> — pH 상승과 악취가 겹치기 때문이다. 갈림길은 <b>현미경(운동성 원충 vs clue cell)</b>과 <b>염증 소견(점상 출혈, 다수의 백혈구)</b>이다. 트리코모나스는 국소 치료로는 완치율이 낮고 배우자 치료가 필수라는 점이 세균성 질염과의 처방 차이다.\n- 오답 이유:\n  - ① 플루코라졸 1회 경구는 칸디다 외음질염의 치료다. 칸디다는 흰 치즈 모양 분비물에 질 pH 가 4.5 이하이고 KOH 도말에서 균사가 보인다. 이 환자는 pH 5.5 에 균사가 없고 운동성 원충이 보인다. 이 선지가 정답이 되려면 pH 가 정상이고 KOH 도말에서 가성균사가 관찰되어야 한다.\n  - ② 클린다마이신 질크림은 세균성 질염의 대체 치료다. 세균성 질염은 묽은 회백색 분비물과 clue cell, 생선 냄새가 특징이며 원충은 보이지 않고 점상 출혈 같은 염증 소견이 적다. 이 선지가 정답이 되려면 습식도말에서 원충 대신 clue cell 이 보이고 whiff 검사가 양성이어야 한다.\n  - ③ 세프트리악손 근육주사와 독시사이클린은 임균·클라미디아 자궁경부염의 경험적 치료다. 자궁경부염은 점액농성 자궁경부 분비물과 접촉 출혈이 특징이고 습식도말에 원충이 없다. 이 선지가 정답이 되려면 원충이 보이지 않고 임균·클라미디아 핵산증폭검사가 양성이어야 한다.\n  - ④ 아시클로버는 단순헤르페스에 의한 생식기 헤르페스의 치료다. 헤르페스는 통증성 군집 수포와 얕은 궤양, 서혜부 림프절 종대가 특징이며 거품 분비물이나 원충과 무관하다. 이 선지가 정답이 되려면 외음부에 통증성 수포·궤양이 있고 병변 PCR 에서 HSV 가 검출되어야 한다.\n- 함정: 분비물의 색과 냄새는 세균성 질염과 겹친다. pH 다음에 반드시 현미경으로 원충인지 clue cell 인지 확인하고, 원충이면 경구 치료와 배우자 치료를 함께 고른다.\n- 학습목표: 거품 있는 황록색 질분비물·딸기 자궁경부·습식도말의 운동성 원충으로 트리코모나스 질염을 진단하고 경구 메트로니다졸과 배우자 동시 치료를 선택한다\n- 근거·출처: Workowski KA et al. Sexually Transmitted Infections Treatment Guidelines, 2021 (MMWR Recomm Rep 2021;70:1) — trichomoniasis: metronidazole 500 mg BID × 7 d (women), partner treatment, retest at 3 months · Williams Gynecology 4th ed., ch. 3 Gynecologic infection — trichomoniasis: strawberry cervix, pH > 4.5, wet-mount motile trichomonads · Harrison's Principles of Internal Medicine 21st ed., ch. 'Sexually transmitted infections: overview' — vaginitis differential (pH, whiff, microscopy) · Katzung Basic & Clinical Pharmacology, ch. 52 Antiprotozoal drugs — nitroimidazole activation by ferredoxin in anaerobes and protozoa",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "거품 있는 황록색 악취 분비물, 딸기 모양 자궁경부(점상 출혈), 질 pH 상승(> 4.5), 습식도말의 운동성 편모 원충은 Trichomonas vaginalis 질염이다. 치료는 니트로이미다졸 계열(메트로니다졸 500 mg 하루 2회 7일 또는 티니다졸 2 g 1회)이며, 성매개감염이므로 증상이 없어도 성 상대자를 함께 치료하고 완치까지 성교를 피해야 재감염을 막는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Trichomonas vaginalis</b> 는 편모를 가진 혐기성 원충으로 질·요도 상피에 붙어 산다. 질 상피의 글리코겐을 쓰는 젖산균이 밀려나면서 <b>질 pH 가 4.5 위로</b> 오르고, 원충이 만드는 단백분해효소와 부착으로 상피가 손상되어 <b>점상 출혈(딸기 자궁경부)</b>과 다량의 염증성 분비물(거품은 원충과 세균의 가스 생성)이 생긴다. 남성은 대개 무증상 요도 보균자이므로 여성만 치료하면 곧 재감염된다 — 그래서 <b>배우자 동시 치료</b>가 처방의 일부다.<br> <b>왜 니트로이미다졸인가</b> — 메트로니다졸·티니다졸은 혐기 환경에서 원충의 ferredoxin 계 전자전달로 니트로기가 환원되어 DNA 를 끊는 활성 대사물이 된다. 호기성 사람 세포에서는 이 환원이 일어나지 않아 선택 독성이 생긴다. 같은 이유로 세균성 질염(혐기균)에도 쓰이지만, <b>칸디다</b>(진균)와 <b>임균·클라미디아</b>에는 작용하지 않는다. 최근 지침(CDC 2021)은 여성에서 2 g 1회보다 <b>500 mg 하루 2회 7일</b> 요법의 완치율이 높아 이를 권하고, 치료 후 3개월 안에 재검사를 권한다. 국소 젤은 요도· 샘 보균을 없애지 못해 완치율이 낮으므로 경구 투여가 원칙이다.<br> <b>감별의 축은 세 가지 검사</b> — 질 pH, 아민 냄새(KOH whiff), 현미경. 트리코모나스는 pH 상승 + 운동성 원충, 세균성 질염은 pH 상승 + clue cell + 양성 whiff, 칸디다는 <b>pH 정상(≤ 4.5)</b> + 균사·가성균사다. 자궁경부의 점상 출혈과 성교통·배뇨통은 트리코모나스에서 두드러진다. 임신 중에도 메트로니다졸을 사용하며 조산과의 연관은 확립되지 않았다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:40%\">분비물·pH·현미경</th><th>치료</th></tr></thead><tbody> <tr><td><b>트리코모나스 질염(정답)</b></td><td><b>거품 황록색·악취, pH &gt; 4.5, 운동성 편모 원충, 딸기 자궁경부</b></td><td><b>메트로니다졸 경구 + 배우자 치료</b></td></tr> <tr><td>세균성 질염</td><td>묽은 회백색·생선 냄새, pH &gt; 4.5, clue cell, whiff 양성, 염증 적음</td><td>메트로니다졸 경구 또는 질젤, 배우자 치료 불필요</td></tr> <tr><td>칸디다 질염</td><td>흰 치즈 모양, pH ≤ 4.5, KOH 에 균사·가성균사, 심한 가려움·발적</td><td>플루코나졸 1회 또는 아졸 질제</td></tr> <tr><td>임균·클라미디아 자궁경부염</td><td>점액농성 자궁경부 분비물, 접촉 출혈, 원충·균사 없음, NAAT 양성</td><td>세프트리악손 + 독시사이클린</td></tr> <tr><td>생식기 헤르페스</td><td>통증성 수포·궤양, 분비물은 이차적</td><td>아시클로버</td></tr> </tbody></table> <b>가장 가까운 오답은 「클린다마이신 질크림」·세균성 질염 계열</b> — pH 상승과 악취가 겹치기 때문이다. 갈림길은 <b>현미경(운동성 원충 vs clue cell)</b>과 <b>염증 소견(점상 출혈, 다수의 백혈구)</b>이다. 트리코모나스는 국소 치료로는 완치율이 낮고 배우자 치료가 필수라는 점이 세균성 질염과의 처방 차이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 플루코라졸 1회 경구는 칸디다 외음질염의 치료다. 칸디다는 흰 치즈 모양 분비물에 질 pH 가 4.5 이하이고 KOH 도말에서 균사가 보인다. 이 환자는 pH 5.5 에 균사가 없고 운동성 원충이 보인다. 이 선지가 정답이 되려면 pH 가 정상이고 KOH 도말에서 가성균사가 관찰되어야 한다.\n② 클린다마이신 질크림은 세균성 질염의 대체 치료다. 세균성 질염은 묽은 회백색 분비물과 clue cell, 생선 냄새가 특징이며 원충은 보이지 않고 점상 출혈 같은 염증 소견이 적다. 이 선지가 정답이 되려면 습식도말에서 원충 대신 clue cell 이 보이고 whiff 검사가 양성이어야 한다.\n③ 세프트리악손 근육주사와 독시사이클린은 임균·클라미디아 자궁경부염의 경험적 치료다. 자궁경부염은 점액농성 자궁경부 분비물과 접촉 출혈이 특징이고 습식도말에 원충이 없다. 이 선지가 정답이 되려면 원충이 보이지 않고 임균·클라미디아 핵산증폭검사가 양성이어야 한다.\n④ 아시클로버는 단순헤르페스에 의한 생식기 헤르페스의 치료다. 헤르페스는 통증성 군집 수포와 얕은 궤양, 서혜부 림프절 종대가 특징이며 거품 분비물이나 원충과 무관하다. 이 선지가 정답이 되려면 외음부에 통증성 수포·궤양이 있고 병변 PCR 에서 HSV 가 검출되어야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "분비물의 색과 냄새는 세균성 질염과 겹친다. pH 다음에 반드시 현미경으로 원충인지 clue cell 인지 확인하고, 원충이면 경구 치료와 배우자 치료를 함께 고른다."
+   },
+   {
+    "k": "학습목표",
+    "v": "거품 있는 황록색 질분비물·딸기 자궁경부·습식도말의 운동성 원충으로 트리코모나스 질염을 진단하고 경구 메트로니다졸과 배우자 동시 치료를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA et al. Sexually Transmitted Infections Treatment Guidelines, 2021 (MMWR Recomm Rep 2021;70:1) — trichomoniasis: metronidazole 500 mg BID × 7 d (women), partner treatment, retest at 3 months · Williams Gynecology 4th ed., ch. 3 Gynecologic infection — trichomoniasis: strawberry cervix, pH > 4.5, wet-mount motile trichomonads · Harrison's Principles of Internal Medicine 21st ed., ch. 'Sexually transmitted infections: overview' — vaginitis differential (pH, whiff, microscopy) · Katzung Basic & Clinical Pharmacology, ch. 52 Antiprotozoal drugs — nitroimidazole activation by ferredoxin in anaerobes and protozoa"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0045",
   "exam": "imaging",
   "style": "usmle_style",
