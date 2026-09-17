@@ -2,81 +2,9 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-09-18",
- "count": 98,
- "groups": 51,
+ "count": 92,
+ "groups": 48,
  "items": [
-  {
-   "file": "tree-s11-vessel-labeled.svg",
-   "base": "tree-s11-vessel",
-   "variant": "labeled",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "뒤칸의 혈관과 배안 세 동맥·간문맥계",
-   "date": "2026-09-18",
-   "bytes": 28451
-  },
-  {
-   "file": "tree-s11-vessel-quiz.svg",
-   "base": "tree-s11-vessel",
-   "variant": "quiz",
-   "kind": "tree-vessel",
-   "kindLabel": "혈관 계보(동맥+정맥)",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "뒤칸의 혈관과 배안 세 동맥·간문맥계",
-   "date": "2026-09-18",
-   "bytes": 20921
-  },
-  {
-   "file": "tree-s11-nerve-labeled.svg",
-   "base": "tree-s11-nerve",
-   "variant": "labeled",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "뒤칸의 신경과 배안의 자율신경",
-   "date": "2026-09-18",
-   "bytes": 15706
-  },
-  {
-   "file": "tree-s11-nerve-quiz.svg",
-   "base": "tree-s11-nerve",
-   "variant": "quiz",
-   "kind": "tree-nerve",
-   "kindLabel": "신경 계보",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "뒤칸의 신경과 배안의 자율신경",
-   "date": "2026-09-18",
-   "bytes": 10852
-  },
-  {
-   "file": "tree-s11-bundle-labeled.svg",
-   "base": "tree-s11-bundle",
-   "variant": "labeled",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "함께 지나는 것",
-   "date": "2026-09-18",
-   "bytes": 18790
-  },
-  {
-   "file": "tree-s11-bundle-quiz.svg",
-   "base": "tree-s11-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 11,
-   "unit": "11회차 · 팔·배",
-   "title": "함께 지나는 것",
-   "date": "2026-09-18",
-   "bytes": 14858
-  },
   {
    "file": "tree-s10-vessel-labeled.svg",
    "base": "tree-s10-vessel",

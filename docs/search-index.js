@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2506,
+  "total": 2495,
   "byType": {
-   "anatomy": 682,
    "usmle": 150,
+   "imaging": 53,
+   "anatomy": 663,
    "paper": 609,
    "kmle": 1003,
-   "imaging": 45,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 682,
+   "Anatomy": 663,
    "Cardiology": 190,
    "Nephrology": 158,
    "Infectious Disease": 137,
@@ -37,9 +37,9 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 62,
    "Hematology": 61,
    "Laboratory Medicine": 60,
-   "산부인과": 24,
+   "산부인과": 30,
    "Physiology": 17,
-   "순환기": 13,
+   "순환기": 14,
    "Pharmacology": 12,
    "Microbiology": 11,
    "Biochemistry": 10,
@@ -47,9 +47,9 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 8,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "병리·조직학": 4,
    "호흡기": 4,
    "Oncology": 3,
-   "병리·조직학": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -59,54 +59,13 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 1
   },
   "byConfidence": {
-   "high": 1663,
+   "high": 1652,
    "medium": 794,
    "low": 49
   },
-  "tagCount": 3523
+  "tagCount": 3517
  },
  "docs": [
-  {
-   "id": "anatomy-daily-2026-09-18",
-   "type": "anatomy",
-   "unit": "팔·배",
-   "topic": "Anatomy",
-   "subtopic": "daily plan 2026-09-18",
-   "tags": [],
-   "source": "pipelines/anatomy_daily.py (결정론 선택)",
-   "confidence": "high",
-   "date": "2026-09-18",
-   "path": "content/anatomy/daily/2026-09-18.md",
-   "snippet": "오늘의 학습 (2026 09 18 · t2 new) 다음 수업/시험: 2026 09 21 위팔 뒤칸·아래팔 뒤칸·손등, 복막·위·지라·간·작은창자·큰창자·샘창자·이자 Tagging 1까지 8일 · Tagging 2까지 31일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-09-18 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 18 · t2 new) 다음 수업/시험: 2026 09 21 위팔 뒤칸·아래팔 뒤칸·손등, 복막·위·지라·간·작은창자·큰창자·샘창자·이자 Tagging 1까지 8일 · Tagging 2까지 31일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
-  },
-  {
-   "id": "anatomy-2026-0558",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "11회차 서브노트 — 위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·창자·샘창자·이자",
-   "tags": [
-    "서브노트",
-    "11회차",
-    "노신경",
-    "폄근지지띠",
-    "코담배갑",
-    "복막",
-    "간세동이",
-    "복강동맥",
-    "간문맥",
-    "표",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "",
-   "confidence": "high",
-   "date": "2026-09-18",
-   "path": "content/anatomy/notes/anatomy-2026-0558-s11-subnote.md",
-   "snippet": "0. 이 회차의 축 — 세 문장 1. 뒤칸에는 신경이 하나뿐이다 — 노신경. 앞칸이 정중·자로 나뉘던 것과 달리, 위팔 뒤칸부터 손등까지 전부 노신경 계열이다. 그래서 문제는 \"어느 신경\"이 아니라 \"어느 가지\" 를 묻는다. 2. 배안은 동맥 셋이 창자를 나눠 먹는다 — 복강동맥(앞창자)·위창자간막동맥(중간창자)·아래창자간막동맥(뒤창자). 발생학적 경계가 그대로 혈관 경계다. 3. 간막이 있으면 복막속, 없으면 복막뒤다 — 이",
-   "text": "Anatomy 11회차 서브노트 — 위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·창자·샘창자·이자 11회차 · 팔·배 서브노트 11회차 노신경 폄근지지띠 코담배갑 복막 간세동이 복강동맥 간문맥 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 뒤칸에는 신경이 하나뿐이다 — 노신경. 앞칸이 정중·자로 나뉘던 것과 달리, 위팔 뒤칸부터 손등까지 전부 노신경 계열이다. 그래서 문제는 \"어느 신경\"이 아니라 \"어느 가지\" 를 묻는다. 2. 배안은 동맥 셋이 창자를 나눠 먹는다 — 복강동맥(앞창자)·위창자간막동맥(중간창자)·아래창자간막동맥(뒤창자). 발생학적 경계가 그대로 혈관 경계다. 3. 간막이 있으면 복막속, 없으면 복막뒤다 — 이 한 줄이 배안 기관 분류 전체를 정리한다. 1. 위팔 뒤칸 Posterior compartment of the arm !fig docs/assets/anatomy/tree s11 nerve labeled.svg 뒤칸의 신경과 배안의 자율신경 — 노신경 하나가 뒤칸 전체를 맡는다 1) 위팔세갈래근 — 세 갈래의 이는곳이 다르다 갈래 이는곳 포인트 긴갈래 long head ==접시아래결절== (infraglenoid tubercle) 어깨관절을 넘는다 → 어깨 폄·모음에도 관여 가쪽갈래 lateral head 위팔뼈 뒤면, ==노신경고랑 위쪽== 노신경보다 얕다 안쪽갈래 medial head 위팔뼈 뒤면, ==노신경고랑 아래쪽== 노신경보다 깊다 — 신경이 두 갈래 사이에 낀다 셋이 합쳐진 힘줄이 자뼈 ==팔꿈치머리== (olecranon)에 닿는다. 신경은 전부 노신경 . 긴갈래와 안쪽갈래가 만드는 틈새 위쪽에 ==큰원근== (teres major muscle)이 걸린다 — 세모공간·네모공간을 가르는 표지. ==팔꿈치근== (anconeus muscle)은 안쪽갈래의 연장으로 본다. 작용은 폄 보조 + 관절주머니 당기기. 2) 노신경고랑 — 이 회차의 제1 표지 [!기출] 노신경고랑에 무엇이 지나는가 :: ==노신경== + ==깊은위팔동맥== (deep brachial artery) 둘이 함께 지난다. 위팔뼈 몸통 중간 골절에서 둘 다 다친다. [!임상] 노신경 손상 증상 — 높이가 답을 바꾼다 (응용과제) :: 겨드랑(목발 마비) = 팔꿈치 폄까지 소실 + 손목처짐 / 위팔뼈 몸통(노신경고랑) = 세갈래근은 살고 ==손목처짐(wrist drop)== + 손등 가쪽 감각 소실 / 뒤뼈사이신경(손뒤침근) = 감각 정상, 손목 폄은 남고 손가락만 못 편다 . 2. 아래팔 뒤칸 — 얕은층 Superficial extensors !fig docs/assets/anatomy/tree s11 bundle labeled.svg 폄근지지띠 여섯 칸 · 해부코담배갑 · 간세동이 · 그물막구멍 1) 얕은층 일곱 — 가쪽위관절융기에서 공통으로 일어난다 근육 이는곳 닿는곳 작용 신경 위팔노근 brachioradialis 가쪽위관절융기 능선 (위쪽) 노뼈붓돌기 팔꿈치 굽힘(중간위) 노신경 본줄기 긴노쪽손목폄근 ext. carpi radialis longus 가쪽위관절융기 능선 둘째 손허리뼈 바닥 손목 폄·노쪽 치우침 노신경 본줄기 짧은노쪽손목폄근 ext. carpi radialis brevis ==공통폄근힘줄== 셋째 손허리뼈 바닥 손목 폄 깊은가지 손가락폄근 extensor digitorum 공통폄근힘줄 2–5지 ==폄근널힘줄== 손가락 폄 ==뒤뼈사이신경== 새끼폄근 ext. digiti minimi 공통폄근힘줄 5지 폄근널힘줄 새끼 폄 뒤뼈사이신경 자쪽손목폄근 ext. carpi ulnaris 공통폄근힘줄 + 자뼈 뒤모서리 다섯째 손허리뼈 바닥 손목 폄·자쪽 치우침 뒤뼈사이신경 팔꿈치근 anconeus 가쪽위관절융기 뒤면 자뼈 팔꿈치머리 가쪽 폄 보조 노신경(안쪽갈래 가지) [!주의] 위 세 근육만 본줄기·깊은가지가 갈리기 전에 신경을 받는다 :: 위팔노근·긴노쪽손목폄근·(짧은노쪽손목폄근)은 노신경 본줄기에서 직접 받는다. 그래서 뒤뼈사이신경만 마비되면 손목 폄은 남는다 — 손목처짐이 안 생기는 이유. 2) 힘줄 — 손등에서 그물이 된다 ==힘줄사이연결== (intertendinous connection): 2–5지 폄근힘줄을 손등에서 가로로 잇는다. 한 힘줄이 끊겨도 옆에서 끌어줘 폄이 일부 남는다. ==폄근널힘줄== (extensor expansion, 삼각널힘줄): 손가락 등쪽을 덮는 삼각 모자. 벌레근·뼈사이근이 여기에 닿아 MCP는 굽히고 IP는 펴는 움직임을 만든다. 손가락폄근 힘줄 ─┬─ 중간띠 → 중간마디뼈 바닥 └─ 가쪽띠 2개 ─(합쳐짐)→ 끝마디뼈 바닥 벌레근·뼈사이근 ──→ 가쪽띠에 합류 3. 아래팔 뒤칸 — 깊은층 Deep extensors 1) 다섯 근육 — 전부 뒤뼈사이신경 근육 이는곳 닿는곳 포인트 손뒤침근 supinator 가쪽위관절융기 · 자뼈 ==뒤침근능선== (supinator crest) 노뼈 몸쪽 가쪽면 ==노신경깊은가지가 두 층 사이를 뚫는다== 긴엄지벌림근 abductor pollicis longus 노·자뼈 뒤면 + 뼈사이막 첫째 손허리뼈 바닥 코담배갑 앞벽 짧은엄지폄근 ext. pollicis brevis 노뼈 뒤면 + 뼈사이막 엄지 첫마디뼈 바닥 코담배갑 앞벽 긴엄지폄근 ext. pollicis longus 자뼈 뒤면 + 뼈사이막 엄지 끝마디뼈 바닥 ==리스터결절을 도르래처럼 돈다== → 코담배갑 뒤벽 집게폄근 extensor indicis 자뼈 뒤면 먼쪽 + 뼈사이막 2지 폄근널힘줄 (손가락폄근 힘줄 자쪽 ) 집게만 따로 펼 수 있게 한다 [!기출] 손뒤침근을 뚫는 것 :: ==노신경깊은가지== (deep branch of radial nerve)가 손뒤침근 두 층 사이(Frohse 활)를 뚫고 나오면 이름이 ==뒤뼈사이신경== (posterior interosseous nerve)으로 바뀐다. 뚫는 자리가 눌리면 뒤뼈사이신경증후군 . 2) 폄근지지띠 여섯 섬유칸 — 번호가 곧 답이다 칸 지나는 힘줄 임상 1 ==긴엄지벌림근== · ==짧은엄지폄근== (APL, EPB) de Quervain 힘줄윤활막염 (Finkelstein 검사) 2 긴·짧은노쪽손목폄근 (ECRL, ECRB) 교차증후군 3 ==긴엄지폄근== (EPL) ==리스터결절==을 돌아 꺾인다 → 콜레스 골절 뒤 지연 파열 4 손가락폄근 · 집게폄근 (ED, EI) 칸 바닥으로 뒤뼈사이신경 이 지난다 5 새끼폄근 (EDM) 먼쪽노자관절 바로 위 6 자쪽손목폄근 (ECU) 자뼈머리 고랑 — 아탈구 각 힘줄은 ==힘줄윤활집== (synovial tendon sheath)에 싸여 지지띠 밑을 지난다. 마찰이 곧 병이다. 4. 손등과 해부코담배갑 Dorsum of hand & snuffbox !fig docs/assets/anatomy/tree s11 vessel labeled.svg 뒤칸의 혈관과 배안 세 동맥·간문맥계 1) 코담배갑 — 벽·바닥·내용물 자리 구성 왜 묻나 앞(노쪽)벽 1칸 힘줄 — 긴엄지벌림근 + 짧은엄지폄근 경계 문제 단골 뒤(자쪽)벽 3칸 힘줄 — ==긴엄지폄근== 앞·뒤를 바꿔 묻는다 바닥 ==손배뼈== · 큰마름뼈 누르면 아프면 손배뼈 골절 지나는 것 ==노동맥== (바닥 위) · 노신경 얕은가지( 지붕 위 ) · 노쪽피부정맥 시작 신경은 안이 아니라 위 다 [!주의] 노신경 얕은가지는 코담배갑 '내용물'이 아니다 :: 피부밑(지붕)을 지난다. \"코담배갑을 지나는 동맥은?\" → 노동맥. \"코담배갑 위 피부 감각은?\" → 노신경 얕은가지. 2) 손등의 혈관·신경 — 반씩 나눠 갖는다 ==손등정맥그물== (dorsal venous network of hand): 노쪽 → 노쪽피부정맥 , 자쪽 → 자쪽피부정맥 . 정맥주사 자리. 감각: ==노신경== 얕은가지가 가쪽 3.5손가락, ==자신경== 손등가지가 안쪽 1.5손가락. 끝마디 손톱 바닥은 앞쪽(정중·자) 신경이 돌아 올라온다. 노동맥이 첫째등쪽뼈사이근을 뚫고 들어가 ==깊은손바닥동맥활== (deep palmar arch)을 만든다 — 앞칸(10회차)과 이어지는 고리. 5. 복막 Peritoneum 1) 복막속 vs 복막뒤 — 간막이 있으면 복막속 복막속기관 intraperitoneal 복막뒤기관 retroperitoneal 위 · 지라 · 간 · 빈창자 · 돌창자 · 가로잘록창자 · 구불잘록창자 · 막창자꼬리 콩팥·부신 · 배대동맥·아래대정맥 · 샘창자 2·3부 · ==이자(꼬리 제외)== · 요관 · 오름·내림잘록창자 · 곧창자 ==벽복막== (parietal peritoneum)은 몸벽 감각(척수신경) — 아프면 정확히 그 자리가 아프다. ==내장복막== (visceral peritoneum)은 자율신경 — 둔하고 배꼽 근처로 퍼진다. 막창자꼬리염이 배꼽에서 시작해 우하복부로 옮겨가는 이유. 2) 그물막과 인대 — 어디서 어디로 가는지가 이름이다 구조 잇는 곳 ==낫인대== falciform lig. 앞배벽 ↔ 간 · 자유모서리에 ==간원인대== (round lig. of liver, 배꼽정맥 잔재) ==작은그물막== lesser omentum 간 ↔ 위작은굽이·샘창자 — ==간위인대== + ==간샘창자인대== ==큰그물막== greater omentum 위큰굽이에서 앞치마처럼 내려와 가로잘록창자로 — \"배안의 경찰관\" 위지라인대 gastrosplenic 위큰굽이 ↔ 지라문 (짧은위동맥·왼위그물막동맥) 지라콩팥인대 splenorenal 지라문 ↔ 왼콩팥 앞 (==지라동맥·지라정맥·이자꼬리==) 창자간막 mesentery 빈·돌창자 — 뿌리가 왼위 → 오른아래로 비스듬히 15cm 가로잘록창자간막 · 구불잘록창자간막 · 막창자꼬리간막 각 창자 ↔ 뒤배벽 3) 그물막주머니와 그물막구멍 큰복막안 ──(그물막구멍)── 그물막주머니(작은주머니) 앞 : 간샘창자인대 = 간세동이 뒤 : 아래대정맥 위 : 간 꼬리엽 아래: 샘창자 첫부분 [!임상] Pringle법 :: 그물막구멍에 손가락을 넣어 ==간샘창자인대 전체를 집으면== 간동맥·간문맥이 함께 눌려 간 출혈이 일시 멎는다. 그래도 출혈이 계속되면 간정맥·아래대정맥 손상이다. 6. 위와 지라 Stomach & spleen 1) 위의 부분과 혈관 — 양쪽 굽이에서 이중으로 받는다 부분 원어 들문부분 cardial part ==위바닥== fundus of stomach (가로막 아래, 공기가 찬다) 위몸통 body of stomach 날문부분 pyloric part (날문방 + 날문관 + ==날문조임근==) 굽이 동맥 나온 곳 작은굽이 ==왼위동맥== 복강동맥 직접 작은굽이 ==오른위동맥== 온간동맥(또는 고유간동맥) 큰굽이 ==왼위그물막동맥== 지라동맥 큰굽이 ==오른위그물막동맥== 위샘창자동맥 위바닥 ==짧은위동맥== 지라동맥 (위지라인대 속) [!임상] 위샘창자동맥과 뒤벽 궤양 :: ==위샘창자동맥== (gastroduodenal artery)은 샘창자 첫부분 뒤 로 내려간다. 뒤벽 궤양이 뚫으면 이 동맥에서 대량 출혈한다(앞벽 궤양은 천공 → 복막염). 2) 지라 — 인대 둘이 문으로 들어간다 ==지라문== (splenic hilum)으로 ==지라동맥·지라정맥==, 때로 이자꼬리 가 닿는다 → 지라절제술에서 이자 손상 주의. ==가로막면== (diaphragmatic surface)은 매끈, 내장면에 위·콩팥·잘록창자 자국. 9–11번 갈비뼈에 가려 있다 → 왼쪽 아래갈비 골절에서 파열 . 7. 간과 쓸개 Liver & gallbladder 1) 간의 면과 인대 구조 원어 · 포인트 ==가로막면== diaphragmatic surface — 매끈하게 가로막에 닿는다 ==무장막구역== bare area — 복막이 없는 자리. 둘레를 ==관상인대==가 두르고 양 끝이 ==세모인대== ==내장면== visceral surface — H자 고랑: 앞왼=간원인대, 뒤왼===정맥관인대==, 앞오른=쓸개, 뒤오른=아래대정맥 ==네모엽== quadrate lobe — H의 앞 사이. 기능적으로 왼엽 ==꼬리엽== caudate lobe — H의 뒤 사이. 그물막구멍 위 경계 ==간문== porta hepatis — H의 가로선. 간세동이가 드나든다 2) 간세동이와 쓸개길 오른간관 ─┐ ├─ 온간관 ─┬─ 온쓸개관 ─┬─ 쓸개이자관팽대(Vater) ─ 큰샘창자유두 왼간관 ─┘ │ │ 쓸개주머니관 ──┘ 이자관 ──┘ (나선주름) 간세동이 위치 ==간문맥== hepatic portal v. 가장 뒤·가장 굵다 (간 혈류 70–75%) ==고유간동맥== proper hepatic a. 앞쪽 왼쪽 ==온쓸개관== common bile duct 앞쪽 오른쪽 [!기출] 쓸개세모(Calot) :: ==쓸개주머니관 · 온간관 · 간 아래면==이 이루는 삼각. 그 안에 ==쓸개동맥==이 있다(대개 오른간동맥에서). 쓸개절제술에서 반드시 확인하는 자리. 8. 창자와 세 동맥 Intestines & the three arteries 1) 발생학적 구역이 곧 혈관 구역 구역 동맥 범위 자율신경 앞창자 ==복강동맥== (T12) 식도 아래 ~ ==샘창자 큰유두까지== 복강신경얼기 중간창자 ==위창자간막동맥== (L1) 큰유두 이후 ~ ==가로잘록창자 2/3== 위창자간막신경얼기 뒤창자 ==아래창자간막동맥== (L3) 가로잘록창자 왼쪽 1/3 ~ 곧창자 위 아래창자간막신경얼기 2) 위창자간막동맥 가지 — 왼쪽은 작은창자, 오른쪽은 큰창자 위창자간막동맥 ─┬─ 아래이자샘창자동맥 (위쪽 짝과 활 → 복강동맥과 문합) ├─ (왼쪽) 빈창자동맥·돌창자동맥 15~18 ─ 활(arcade) ─ 곧은동맥 ├─ (오른쪽) 중간잘록창자동맥 ─ 가로잘록창자 ├─ (오른쪽) 오른잘록창자동맥 ─ 오름잘록창자 └─ (오른쪽) 돌잘록창자동맥 ─┬─ 막창자가지 └─ 막창자꼬리동맥 (막창자꼬리간막 속) ==곧은동맥== (vasa recta): 빈창자는 활이 적고 곧은동맥이 길다 , 돌창자는 활이 많고 짧다 — 표본 감별의 실전 기준. ==가장자리동맥== (marginal a. of Drummond)이 잘록창자 안쪽모서리를 따라 위·아래창자간막동맥을 잇는다. 3) 큰창자의 겉모습 — 작은창자와 가르는 세 가지 특징 원어 ==잘록창자띠== tenia coli — 세로근육이 세 줄로 뭉친 것. 막창자꼬리 뿌리로 모인다 ==잘록창자팽대== haustra of colon — 띠가 짧아 생기는 주머니 ==복막주렁== omental appendice — 창자간막 붙은 맞은편 벽의 지방덩이 4) 돌막창자이음부 ==돌창자구멍== (ileal orifice)에 ==돌막창자판막== — 위입술(==돌잘록창자입술==)과 아래입술(==돌막창자입술==). 그 아래 ==막창자꼬리구멍== (orifice of vermiform appendix). [!임상] 막창자꼬리 위치변이 (응용과제) :: 뒤맹장형(retrocecal, 가장 흔함) — 압통이 약하고 허리·옆구리로 간다, 허리근징후 / 골반형 — 설사·배뇨통, 폐쇄근징후 / 돌창자앞·뒤형 — 전형적 McBurney 압통. 띠 셋이 모이는 점을 따라가면 위치와 무관하게 찾는다. 9. 샘창자와 이자 Duodenum & pancreas 1) 샘창자 네 부분 부분 포인트 1부(위부분) 첫 2cm만 복막속 (간샘창자인대가 붙는다) · 뒤로 위샘창자동맥 2부(내림부분) ==큰샘창자유두== · ==작은샘창자유두== · 이자머리에 감긴다 3부(수평부분) 위창자간막동·정맥이 앞을 가로지른다 — 위창자간막동맥증후군 4부(오름부분) ==샘빈창자굽이== (duodenojejunal flexure)로 끝난다 ==샘창자걸이근== (suspensory muscle of duodenum, Treitz인대)이 샘빈창자굽이를 가로막 오른다리 에 매단다 → 위·아래 위장관출혈을 가르는 기준선 . 2) 이자 — 앞뒤로 무엇이 지나는가 부분 관계 머리 head 샘창자 C자에 안긴다 · ==온쓸개관==이 뒤면을 지난다 ==갈고리돌기== uncinate process 위창자간막동·정맥 뒤로 갈고리처럼 뻗는다 목 neck 뒤에서 지라정맥 + 위창자간막정맥 = ==간문맥== 이 태어난다 몸통 body 뒤로 ==왼콩팥정맥== · 배대동맥 · 왼콩팥 꼬리 tail 지라콩팥인대 속 → 유일하게 복막속 동맥: 위쪽은 ==위이자샘창자동맥==(복강동맥계), 아래쪽은 ==아래이자샘창자동맥==(위창자간막동맥계) — 둘이 활을 이뤄 두 동맥계를 잇는다 . 몸통·꼬리는 ==지라동맥== 가지. 관: ==이자관==(Wirsung)이 온쓸개관과 합쳐 ==쓸개이자관팽대==(Vater) → ==큰샘창자유두==(2부 뒤안쪽벽, Oddi조임근). ==덧이자관==(Santorini)은 ==작은샘창자유두==로 따로 열린다. 샘창자 속면의 ==돌림주름== (circular fold, Kerckring)은 빈창자에서 가장 높고 돌창자로 갈수록 낮아진다. 10. 문맥 대정맥 연결 (응용과제) 간문맥계 ↔ 대정맥계 막히면 ───────────────────────────────────────────────────────────────────── 왼위정맥(식도가지) ↔ 홀정맥(식도정맥) 식도정맥류 ★ 배꼽옆정맥 ↔ 배벽정맥 caput medusae 위곧창자정맥 ↔ 중간·아래곧창자정맥 치질 잘록창자·샘창자 뒤면(Retzius)↔ 허리정맥·콩팥정맥 복막뒤 정맥류 [!TIP] 방향을 외우는 법 :: 간문맥계는 판막이 없다 . 그래서 간이 막히면 피는 거꾸로 흘러 위 네 자리에서 대정맥계로 새어 나간다. 어느 자리가 굵어지는지가 그대로 증상이다. 11. 예습시험 체크리스트 10 (수업당 10문제 대비) 1. 위팔세갈래근 세 갈래의 이는곳 과 노신경고랑과의 깊이 관계 2. 노신경고랑을 지나는 두 구조물 / 높이별 노신경 손상 증상 3. 노신경이 손뒤침근에서 갈리는 두 가지와 각각의 성격(운동/감각) 4. 뒤뼈사이신경 마비에서 손목처짐이 안 생기는 이유 5. 폄근지지띠 1·3·4칸 의 힘줄과 각 칸의 임상 6. 해부코담배갑의 앞벽·뒤벽·바닥 과 지나는 동맥 7. 복막속/복막뒤 구분 — 특히 샘창자·이자·잘록창자 8. 그물막구멍 네 경계 와 Pringle법 9. 간세동이 세 구조의 앞뒤·좌우 배열 / 쓸개세모의 세 변 10. 세 홀동맥의 높이·담당 구역 과 위창자간막동맥의 오른쪽·왼쪽 가지 구분"
-  },
   {
    "id": "usmle-2026-0163",
    "type": "usmle",
@@ -255,6 +214,146 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0158.md",
    "snippet": "A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen,",
    "text": "Pathology Moon Facies and a Unilateral Adrenal Mass With Suppressed ACTH — What Happens to the Cortex on the Other Side Cushing-syndrome adrenal-adenoma ACTH-independent zona-fasciculata zona-reticularis adrenal-atrophy trophic-hormone contralateral-atrophy hypercortisolism USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Adrenal Cortex, Hypercortisolism; Nieman LK et al. Treatment of Cushing's Syndrome: Endocrine Society Guideline. J Clin Endocrinol Metab 2015) A 38 year old woman comes to the physician because of a 14 month history of weight gain, easy bruising, and irregular menses. She takes no medications. She has a rounded face, supraclavicular fat pads, wide violaceous striae on the abdomen, and proximal muscle weakness. Her vital signs and laboratory studies are shown. Adrenal CT shows a 3.2 cm well circumscribed, homogeneous mass in the left adrenal gland. Which of the following is the most likely finding in the right adrenal gland of this patient? A. Atrophy of the zona fasciculata and zona reticularis B. Diffuse hyperplasia of all three cortical zones C. Atrophy of the entire cortex including the zona glomerulosa D. Micronodular hyperplasia with lipofuscin rich pigmented nodules E. Hemorrhagic infarction of the cortex and medulla 고코르티솔혈증(소변 유리 코르티솔 ↑, 1 mg 덱사메타손 억제 실패) + ACTH 억제(< 5) + 편측 부신 종괴 = ACTH 비의존성 쿠싱증후군(부신 선종). 선종이 자율적으로 분비하는 코르티솔이 시상하부·뇌하수체를 음성 되먹임으로 눌러 ACTH 가 소실되고, ACTH 를 영양호르몬으로 삼는 속상대(zona fasciculata)·망상대(zona reticularis)는 종괴가 없는 반대쪽 부신(및 종괴 주변 정상 조직)에서 위축된다. 사구대(zona glomerulosa)는 레닌–안지오텐신 II·칼륨이 조절하므로 보존된다(알도스테론·레닌 정상). 양측 미만성 과형성(B)은 ACTH 의존성(뇌하수체·이소성) 때, 색소성 미세결절 과형성(D)은 원발성 색소성 결절성 부신피질질환(Carney 복합체)이며 편측 3 cm 종괴·ACTH 억제와 맞지 않는다. 전 피질 위축(C)은 사구대가 ACTH 비의존적이므로 틀리고, 출혈성 경색(E)은 Waterhouse Friderichsen·항응고 합병증에서 보이는 부신 파괴 소견이다."
+  },
+  {
+   "id": "imaging-2026-0053",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0053.md",
+   "snippet": "A 57 year old woman comes to the physician because of a 4 month history of pelvic pressure and two episodes of vaginal bleeding. Menopause occurred at age 51 and she has never used hormone therapy. Pelvic examination shows a uterus enlarged",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 57 year old woman comes to the physician because of a 4 month history of pelvic pressure and two episodes of vaginal bleeding. Menopause occurred at age 51 and she has never used hormone therapy. Pelvic examination shows a uterus enlarged to the size of a 16 week gestation. MRI shows a 9 cm heterogeneous intramural mass with ill defined margins and areas of hemorrhage. Endometrial biopsy shows inactive endometrium. She undergoes total hysterectomy with bilateral salpingo oophorectomy. Histologic examination of the mass shows a hypercellular spindle cell tumor with diffuse moderate to severe nuclear atypia and 4 mitotic figures per 10 high power fields. Which of the following additional histologic findings would most strongly support a diagnosis of leiomyosarcoma rather than leiomyoma? A. Prominent thick walled blood vessels B. Epithelioid cell morphology C. Coagulative tumor cell necrosis D. Hyaline necrosis surrounded by a zone of hyalinized collagen E. Diffuse hydropic degeneration"
+  },
+  {
+   "id": "imaging-2026-0052",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0052.md",
+   "snippet": "A 42 year old woman comes to the physician to discuss cancer risk reduction. Genetic testing performed after her sister was diagnosed with ovarian cancer at age 45 showed a pathogenic germline BRCA1 mutation. She has two children and does n",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 42 year old woman comes to the physician to discuss cancer risk reduction. Genetic testing performed after her sister was diagnosed with ovarian cancer at age 45 showed a pathogenic germline BRCA1 mutation. She has two children and does not desire more. Her menses are regular. She has no family history of colorectal or endometrial cancer. Pelvic examination and transvaginal ultrasonography are normal, and serum CA 125 concentration is 9 U/mL. Which of the following is the most appropriate recommendation to reduce her risk of ovarian cancer? A. Combined oral contraceptive pills until menopause B. Total hysterectomy with ovarian preservation C. Bilateral salpingectomy with ovarian preservation D. Risk reducing bilateral salpingo oophorectomy E. Annual transvaginal ultrasonography with serum CA 125"
+  },
+  {
+   "id": "imaging-2026-0051",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0051.md",
+   "snippet": "63세 여자가 3년 전부터 심해지는 외음부 가려움과 최근의 성교통으로 병원에 왔다. 12년 전 폐경하였고 호르몬 치료는 받지 않았다. 진찰에서 소음순이 위축되어 대음순과 유착되고 음핵이 덮여 있으며, 외음부에서 항문 주위까지 8자 모양으로 희고 얇게 주름진 위축성 반과 균열이 있다. 질 점막은 정상이다. 반에서 시행한 펀치 생검에서 표피 위축과 기저층 공포화, 진피 상부의 균질화와 그 아래 띠 모양 림프구 침윤이 보이고 이형성",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 63세 여자가 3년 전부터 심해지는 외음부 가려움과 최근의 성교통으로 병원에 왔다. 12년 전 폐경하였고 호르몬 치료는 받지 않았다. 진찰에서 소음순이 위축되어 대음순과 유착되고 음핵이 덮여 있으며, 외음부에서 항문 주위까지 8자 모양으로 희고 얇게 주름진 위축성 반과 균열이 있다. 질 점막은 정상이다. 반에서 시행한 펀치 생검에서 표피 위축과 기저층 공포화, 진피 상부의 균질화와 그 아래 띠 모양 림프구 침윤이 보이고 이형성은 없다. 가장 적절한 치료는? A. 클로베타솔 프로피오네이트 연고 도포 B. 에스트로겐 질크림 도포 C. 이미퀴모드 크림 도포 D. 단순 외음부절제술 E. 플루코나졸 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0050",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 감염·외음부·난관·자궁체부 종양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0050.md",
+   "snippet": "28세 여자가 1주일 전부터 냄새나는 질분비물과 외음부 가려움, 성교통으로 병원에 왔다. 성 상대자는 한 명이며 콘돔을 쓰지 않는다. 질경 검사에서 거품이 섞인 황록색 분비물이 많고 자궁경부에 점상 출혈(딸기 모양)이 보인다. 질분비물 pH 는 5.5 이고, 생리식염수 습식도말에서 편모를 움직이는 원충이 다수 관찰되며 KOH 도말에서 균사는 없다. 가장 적절한 치료는? A. 플루코나졸 1회 경구 투여 B. 클린다마이신 질크림 ",
+   "text": "산부인과 부인과 — 감염·외음부·난관·자궁체부 종양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 28세 여자가 1주일 전부터 냄새나는 질분비물과 외음부 가려움, 성교통으로 병원에 왔다. 성 상대자는 한 명이며 콘돔을 쓰지 않는다. 질경 검사에서 거품이 섞인 황록색 분비물이 많고 자궁경부에 점상 출혈(딸기 모양)이 보인다. 질분비물 pH 는 5.5 이고, 생리식염수 습식도말에서 편모를 움직이는 원충이 다수 관찰되며 KOH 도말에서 균사는 없다. 가장 적절한 치료는? A. 플루코나졸 1회 경구 투여 B. 클린다마이신 질크림 도포 C. 세프트리악손 근육주사와 독시사이클린 경구 D. 아시클로버 경구 투여 E. 메트로니다졸 경구 투여와 성 상대자 동시 치료"
+  },
+  {
+   "id": "imaging-2026-0049",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "자궁경부 — 조직학·변형대",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0049.md",
+   "snippet": "A 46 year old woman, gravida 2, para 2, undergoes loop electrosurgical excision of the cervix because a Papanicolaou smear showed atypical glandular cells. Her last menstrual period was 2 weeks ago. Pelvic examination shows no gross lesion;",
+   "text": "병리·조직학 자궁경부 — 조직학·변형대 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 A 46 year old woman, gravida 2, para 2, undergoes loop electrosurgical excision of the cervix because a Papanicolaou smear showed atypical glandular cells. Her last menstrual period was 2 weeks ago. Pelvic examination shows no gross lesion; colposcopy shows the squamocolumnar junction on the ectocervix. A section of the excised cervical tissue stained by immunohistochemistry for a secreted gel forming mucin is shown. The strongly stained epithelium lines glands within fibromuscular stroma. Which of the following processes normally replaces this epithelium at the transformation zone after puberty? A. Squamous metaplasia B. Squamous dysplasia C. Microglandular hyperplasia D. Cervical endometriosis E. Hyperkeratosis"
+  },
+  {
+   "id": "imaging-2026-0048",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0048.md",
+   "snippet": "27세 경산부(1회 출산)가 임신 42주 0일에 규칙적인 진통으로 내원하였다. 산전 진찰에서 태아 성장과 양수량은 정상이었고 40주와 41주에 시행한 비수축검사는 반응성이었다. 자궁경부는 4 cm 개대되었고 양막은 파열되지 않았다. 지속 전자태아감시의 태아심박동(위)과 자궁수축(아래) 기록은 그림과 같다. 가장 적절한 조치는? A. 산소 투여와 좌측와위 B. 지속 감시하며 진통 경과 관찰 C. 양수주입 D. 응급 제왕절개술 E",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 27세 경산부(1회 출산)가 임신 42주 0일에 규칙적인 진통으로 내원하였다. 산전 진찰에서 태아 성장과 양수량은 정상이었고 40주와 41주에 시행한 비수축검사는 반응성이었다. 자궁경부는 4 cm 개대되었고 양막은 파열되지 않았다. 지속 전자태아감시의 태아심박동(위)과 자궁수축(아래) 기록은 그림과 같다. 가장 적절한 조치는? A. 산소 투여와 좌측와위 B. 지속 감시하며 진통 경과 관찰 C. 양수주입 D. 응급 제왕절개술 E. 태아 두피 혈액 pH 검사"
+  },
+  {
+   "id": "imaging-2026-0047",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아감시",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0047.md",
+   "snippet": "25세 초산부가 임신 39주에 규칙적인 진통으로 입원하였다. 산전 진찰에서 특이 소견은 없었다. 자궁경부는 5 cm 개대되었고 2시간 전 양막이 파열되었으며 양수는 맑았다. 옥시토신은 투여하지 않고 있다. 지속 전자태아감시에서 자궁수축은 3분마다 있고, 태아심박동 기록은 그림과 같다. 좌측와위로 바꾸고 안면마스크로 산소를 주었으나 30분 동안 같은 소견이 매 수축마다 반복되었다. 가장 적절한 처치는? A. 흡입분만 B. 터부탈",
+   "text": "산부인과 산과 — 분만 중 태아감시 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 25세 초산부가 임신 39주에 규칙적인 진통으로 입원하였다. 산전 진찰에서 특이 소견은 없었다. 자궁경부는 5 cm 개대되었고 2시간 전 양막이 파열되었으며 양수는 맑았다. 옥시토신은 투여하지 않고 있다. 지속 전자태아감시에서 자궁수축은 3분마다 있고, 태아심박동 기록은 그림과 같다. 좌측와위로 바꾸고 안면마스크로 산소를 주었으나 30분 동안 같은 소견이 매 수축마다 반복되었다. 가장 적절한 처치는? A. 흡입분만 B. 터부탈린 피하주사 C. 양수주입 D. 옥시토신 투여 E. 응급 제왕절개술"
+  },
+  {
+   "id": "imaging-2026-0046",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "심전도 판독 — 약물 효과",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55",
+   "confidence": "high",
+   "date": "2026-09-17",
+   "path": "content/imaging/2026/imaging-2026-0046.md",
+   "snippet": "An 86 year old woman comes to the physician for a routine follow up examination. She has heart failure with reduced ejection fraction and has been taking digoxin 0.125 mg daily, carvedilol, and furosemide for 3 years. She has no chest pain,",
+   "text": "순환기 심전도 판독 — 약물 효과 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260917T201927Z_일일영상_2026-09-18_8units_8q_bf85cb55 An 86 year old woman comes to the physician for a routine follow up examination. She has heart failure with reduced ejection fraction and has been taking digoxin 0.125 mg daily, carvedilol, and furosemide for 3 years. She has no chest pain, palpitations, nausea, or visual symptoms. Her pulse is 88/min and regular, and blood pressure is 126/72 mm Hg. Cardiac examination shows no new murmur. Serum potassium concentration is 4.3 mEq/L, creatinine is 0.9 mg/dL, and the serum digoxin concentration measured last week was 0.8 ng/mL. A 12 lead electrocardiogram is shown. Which of the following is the most appropriate next step in management? A. Give intravenous potassium chloride B. Continue the current regimen C. Discontinue digoxin D. Administer digoxin specific antibody fragments E. Measure serum troponin and begin heparin"
   },
   {
    "id": "anatomy-daily-2026-09-17",
@@ -22595,363 +22694,6 @@ window.MEDKOS_INDEX = {
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
-   "id": "anatomy-2026-0592",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 깊은위팔동맥 · 노동맥 손등 구간 · 손등정맥그물)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0592.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 깊은위팔동맥 · 노동맥 손등 구간 · 손등정맥그물) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0591",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 간문맥계)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0591.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 간문맥계) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0590",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 아래창자간막동맥)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0590.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 아래창자간막동맥) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0589",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 위창자간막동맥)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0589.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 위창자간막동맥) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0588",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 복강동맥)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0588.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 복강동맥) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0587",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 온뼈사이동맥)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0587.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 온뼈사이동맥) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0586",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 종합)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "혈관 계보(동맥+정맥)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0586.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 혈관과 배안 세 동맥·간문맥계 — 계보 퀴즈판 (11회차 혈관 계보(동맥+정맥) · 종합) 11회차 · 팔·배 계보 도해 11회차 혈관 계보(동맥+정맥) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 vessel labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0585",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 자신경 손등가지)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "신경 계보",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0585.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 자신경 손등가지) 11회차 · 팔·배 계보 도해 11회차 신경 계보 예습시험 태깅 11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0584",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 배안의 자율신경얼기)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "신경 계보",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0584.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 배안의 자율신경얼기) 11회차 · 팔·배 계보 도해 11회차 신경 계보 예습시험 태깅 11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0583",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 노신경)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "신경 계보",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0583.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 노신경) 11회차 · 팔·배 계보 도해 11회차 신경 계보 예습시험 태깅 11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0582",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 종합)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "신경 계보",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0582.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로.",
-   "text": "Anatomy 뒤칸의 신경과 배안의 자율신경 — 계보 퀴즈판 (11회차 신경 계보 · 종합) 11회차 · 팔·배 계보 도해 11회차 신경 계보 예습시험 태깅 11회차 실습주제(위팔 뒤칸·아래팔 뒤칸·손등 / 복막·위·지라·간·작은창자·큰창자·샘창자·이자) + 인제스트 섹션 a2-s11 §노신경 · §손뒤침근 · §손등표면 · §주변혈관관찰 · §위창자간막동맥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 nerve labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0581",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 쓸개이자관팽대)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0581.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 쓸개이자관팽대) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0580",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 그물막구멍)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0580.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 그물막구멍) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0579",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 간세동이)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0579.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 간세동이) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0578",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 해부코담배갑)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0578.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 해부코담배갑) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0577",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 폄근지지띠 여섯 칸)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0577.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 폄근지지띠 여섯 칸) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0576",
-   "type": "anatomy",
-   "unit": "11회차 · 팔·배",
-   "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 종합)",
-   "tags": [
-    "계보",
-    "도해",
-    "11회차",
-    "함께 지나는 것(신경혈관다발)",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py)",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0576.md",
-   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 폄근지지띠 · 코담배갑 · 간세동이 — 계보 퀴즈판 (11회차 함께 지나는 것(신경혈관다발) · 종합) 11회차 · 팔·배 계보 도해 11회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 11회차 인제스트 섹션 a2-s11 §폄근지지띠 섬유칸 · §손등표면 · §간의 겉모습 · §간의 적출 · §그물막주머니 · §이자관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s11 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s11 bundle labeled.svg 로."
-  },
-  {
    "id": "anatomy-2026-0551",
    "type": "anatomy",
    "unit": "10회차 · 팔·배",
@@ -32369,7 +32111,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-2026-0006",
    "type": "anatomy",
-   "unit": "12회차 · 골반·회음",
+   "unit": "11회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "여자 골반안의 복막 오목",
    "tags": [
@@ -32382,7 +32124,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0006.md",
    "snippet": "문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다.",
-   "text": "Anatomy 여자 골반안의 복막 오목 12회차 · 골반·회음 곧창자자궁오목 rectouterine pouch 복막 14차시(0930) 문용석pf.pdf 문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다."
+   "text": "Anatomy 여자 골반안의 복막 오목 11회차 · 골반·회음 곧창자자궁오목 rectouterine pouch 복막 14차시(0930) 문용석pf.pdf 문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다."
   },
   {
    "id": "anatomy-2026-0005",
