@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026 2401" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="뒤칸의 혈관과 배안 세 동맥·간문맥계 — 분지 계보 구조도 퀴즈판">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 11회차 인제스트 섹션 a2-s11 §주변혈관관찰 · §위의 혈관분포 · §지라 · §위창자간막동맥 · §아래창자간막동맥 · §이자 · §손등표면 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="1026" height="2401" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">뒤칸의 혈관과 배안 세 동맥·간문맥계 — 분지 퀴즈판<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> vessels of the posterior compartment &amp; the three unpaired abdominal arteries</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">11회차 · 배대동맥의 홀동맥 셋이 앞창자·중간창자·뒤창자를 나눠 먹는다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  · 번호를 보고 이름을 답하시오</text>
+  <path d="M 406,130 H 419 V 120 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,244 H 419 V 211 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,244 H 419 V 286 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,366 H 419 V 356 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 592 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 656 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,651 H 615 V 720 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,816 H 801 V 789 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,816 H 801 V 853 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,953 H 801 V 917 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 788,953 H 801 V 998 H 814" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 816 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 953 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,942 H 615 V 1078 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 528 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 651 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,726 H 419 V 942 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1218 H 615 V 1222 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1426 H 615 V 1431 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1148 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1218 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1298 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1362 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1285 H 419 V 1426 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1506 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1570 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1628 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1598 H 419 V 1698 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1768 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1837 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 1918 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,1881 H 615 V 2004 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2078 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2142 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2212 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,2176 H 615 V 2282 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,2031 H 419 V 1881 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,2031 H 419 V 2176 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 130 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 244 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 366 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 452 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 726 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 1285 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 1598 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,1073 H 219 V 2031 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <rect x="26" y="1054" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <circle cx="116" cy="1073" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="116" y="1078" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">1</text>
+  <rect x="232" y="92" width="174" height="77" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="130" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="136" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">2</text>
+  <rect x="232" y="216" width="174" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="244" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="249" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">3</text>
+  <rect x="232" y="328" width="174" height="77" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="366" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="372" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">4</text>
+  <rect x="232" y="414" width="174" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="319" cy="452" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="458" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">5</text>
+  <rect x="232" y="693" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="726" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="731" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">6</text>
+  <rect x="232" y="1252" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="1285" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1290" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">7</text>
+  <rect x="232" y="1564" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="1598" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1602" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">8</text>
+  <rect x="232" y="1998" width="174" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="319" cy="2031" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="2036" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">9</text>
+  <rect x="432" y="92" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="120" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="124" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">10</text>
+  <rect x="432" y="178" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="211" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="216" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">11</text>
+  <rect x="432" y="253" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="286" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="291" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">12</text>
+  <rect x="432" y="328" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="356" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="360" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">13</text>
+  <rect x="432" y="500" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="528" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="532" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">14</text>
+  <rect x="432" y="618" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="517" cy="651" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="656" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">15</text>
+  <rect x="432" y="915" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="517" cy="942" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="947" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">16</text>
+  <rect x="432" y="1120" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1148" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1152" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">17</text>
+  <rect x="432" y="1185" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="517" cy="1218" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1223" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">18</text>
+  <rect x="432" y="1270" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1298" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1302" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">19</text>
+  <rect x="432" y="1334" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1362" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1366" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">20</text>
+  <rect x="432" y="1399" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="517" cy="1426" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1432" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">21</text>
+  <rect x="432" y="1473" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1506" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1511" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">22</text>
+  <rect x="432" y="1548" width="170" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1570" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1575" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">23</text>
+  <rect x="432" y="1601" width="170" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1628" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1634" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">24</text>
+  <rect x="432" y="1665" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="1698" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1703" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">25</text>
+  <rect x="432" y="1848" width="170" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="517" cy="1881" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1886" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">26</text>
+  <rect x="432" y="2148" width="170" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="517" cy="2176" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="2180" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">27</text>
+  <rect x="628" y="564" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="592" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="596" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">28</text>
+  <rect x="628" y="628" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="656" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="660" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">29</text>
+  <rect x="628" y="692" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="720" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="724" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">30</text>
+  <rect x="628" y="784" width="160" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="708" cy="816" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="822" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">31</text>
+  <rect x="628" y="920" width="160" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="708" cy="953" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="958" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">32</text>
+  <rect x="628" y="1045" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="1078" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1083" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">33</text>
+  <rect x="628" y="1184" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="1222" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1228" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">34</text>
+  <rect x="628" y="1398" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="1431" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1436" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">35</text>
+  <rect x="628" y="1740" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="1768" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1772" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">36</text>
+  <rect x="628" y="1804" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="1837" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1842" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">37</text>
+  <rect x="628" y="1879" width="160" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="1918" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="1922" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">38</text>
+  <rect x="628" y="1965" width="160" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="2004" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="2008" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">39</text>
+  <rect x="628" y="2051" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="2078" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="2084" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">40</text>
+  <rect x="628" y="2115" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="2142" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="2148" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">41</text>
+  <rect x="628" y="2179" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="2212" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="2217" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">42</text>
+  <rect x="628" y="2254" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="2282" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="2286" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">43</text>
+  <rect x="814" y="756" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="894" cy="789" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="894" y="794" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">44</text>
+  <rect x="814" y="831" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="894" cy="853" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="894" y="858" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">45</text>
+  <rect x="814" y="884" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="894" cy="917" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="894" y="922" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">46</text>
+  <rect x="814" y="959" width="160" height="77" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="894" cy="998" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="894" y="1002" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">47</text>
+  <line x1="26" y1="2319" x2="1000" y2="2319" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="2331" fill="#93a4b7" font-size="10.5">홀동맥 셋 = <tspan fill="#e6edf3" font-weight="700">복강동맥(앞창자) · 위창자간막동맥(중간창자) · 아래창자간막동맥(뒤창자)</tspan>.</text>
+  <text x="26" y="2349" fill="#93a4b7" font-size="10.5">세 동맥은 <tspan fill="#e6edf3" font-weight="700">가장자리동맥(Drummond)</tspan>과 이자샘창자활로 서로 이어진다 — 문합이 곧 샛길이다.</text>
+  <text x="26" y="2367" fill="#93a4b7" font-size="10.5">정맥은 동맥을 따라가되 <tspan fill="#e6edf3" font-weight="700">심장이 아니라 간으로</tspan> 모인다 — 그것이 간문맥계다.</text>
+</svg>
