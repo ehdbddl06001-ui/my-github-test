@@ -11,18 +11,6 @@
   "status": "ok",
   "note": "기준 지문 기록"
  },
- "10.1016/j.kint.2019.09.018": {
-  "concepts": [
-   "cn.neph.hyperkalemia.first-step"
-  ],
-  "title": "Potassium homeostasis and management of dyskalemia in kidney diseases",
-  "method": "pubmed",
-  "fingerprint": "[]",
-  "checked_at": "2026-09-18",
-  "baseline": "[]",
-  "status": "ok",
-  "note": "기준 지문 기록"
- },
  "10.1542/peds.2008-0939": {
   "concepts": [
    "cn.peds.febrile-seizure.workup"
@@ -59,11 +47,23 @@
   "status": "ok",
   "note": "기준 지문 기록"
  },
+ "harrison-21": {
+  "concepts": [
+   "cn.neph.hyperkalemia.first-step"
+  ],
+  "title": "Chapter 53 Fluid and Electrolyte Disturbances — Potassium disorders · Hyperkalemia",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-18",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults": {
   "concepts": [
    "cn.neph.hyperkalemia.first-step"
   ],
-  "title": "Treatment of acute hyperkalaemia in adults",
+  "title": "Clinical Practice Guidelines — Treatment of Acute Hyperkalaemia in Adults",
   "method": "pattern",
   "fingerprint": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
   "checked_at": "2026-09-18",

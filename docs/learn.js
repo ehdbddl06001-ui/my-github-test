@@ -263,6 +263,7 @@ const LEARN = (() => {
       + `<div class="dia-box" role="img" aria-label="${escapeHtml(c.diagramTitle || c.title)}"></div>`
       + `<div class="dia-hint muted">탭하면 크게 · 두 손가락으로 확대</div>`
       + (dist && splitNode ? `<div class="learn-row split"><span class="k">◆ ${escapeHtml(label(chosenIdx, q))} 보기와 갈리는 곳</span>${escapeHtml(nodeText(c, splitNode))} — ${escapeHtml(dist.discriminator || "")}</div>` : "")
+      + ((c.diagramNotes || []).length ? `<div class="dia-notes"><div class="cn-sec small">도식에 담기지 않은 조건·예외</div><ul>${c.diagramNotes.map((x) => `<li>${sanitizeHtml(x)}</li>`).join("")}</ul></div>` : "")
       + `<details class="dia-text"><summary>도식을 글로 보기</summary>${stepsHtml(c, q, splitNode, L ? label(chosenIdx, q) : "")}</details></div>`;
     (c.sections || []).forEach((s) => {
       const body = sanitizeHtml(s.html);
@@ -270,6 +271,18 @@ const LEARN = (() => {
         ? `<details class="cn-deep"><summary>${escapeHtml(s.title)} (심화)</summary><div class="cn-body">${body}</div></details>`
         : `<details class="cn-part"><summary>${escapeHtml(s.title)}</summary><div class="cn-body">${body}</div></details>`;
     });
+    (c.tables || []).forEach((tb) => {
+      h += `<details class="cn-part"><summary>${escapeHtml(tb.title)}</summary><div class="cn-body"><table><thead><tr>`
+        + tb.columns.map((x) => `<th>${escapeHtml(x)}</th>`).join("") + `</tr></thead><tbody>`
+        + tb.rows.map((r) => `<tr>${r.map((x) => `<td>${sanitizeHtml(x)}</td>`).join("")}</tr>`).join("")
+        + `</tbody></table>${tb.note ? `<p class="small">${sanitizeHtml(tb.note)}</p>` : ""}</div></details>`;
+    });
+    if ((c.pitfalls || []).length) {
+      h += `<details class="cn-part" open><summary>혼동하기 쉬운 점 (${c.pitfalls.length})</summary><ul class="pit">`
+        + c.pitfalls.map((pf) => `<li><b>${escapeHtml(pf.contrast)}</b> — ${sanitizeHtml(pf.point)}`
+          + (pf.exception ? ` <span class="muted">예외: ${sanitizeHtml(pf.exception)}</span>` : "")
+          + (pf.cites ? ` ${sanitizeHtml(pf.cites)}` : "") + `</li>`).join("") + `</ul></details>`;
+    }
     if (c.criteria && c.criteria.length) {
       h += `<details class="cn-part"><summary>기준·권고 (${c.criteria.length})</summary>` + c.criteria.map((cr) => criterionHtml(c, cr)).join("") + `</details>`;
     }
@@ -418,7 +431,7 @@ const LEARN = (() => {
     return `<details class="cn-part"><summary>출처와 확인일</summary><ul class="refs">` + c.sources.map((s) => {
       const link = /^https:\/\//.test(s.url) ? ` <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : "";
       return `<li>${escapeHtml(s.org)}. ${escapeHtml(s.title)}. ${escapeHtml(s.citation || s.year)}${link}`
-        + `<div class="muted small">확인 ${escapeHtml(s.checkedAt)} — ${escapeHtml(s.checked)}</div></li>`;
+        + `<div class="muted small">${escapeHtml({ text: "본문 대조", abstract: "초록만 대조 †", citation: "서지만 확인 †" }[s.verified] || "서지만 확인 †")} ${escapeHtml(s.checkedAt)} — ${escapeHtml(s.checked)}</div></li>`;
     }).join("") + `</ul></details>`;
   }
   function bindConcept(box, c) {

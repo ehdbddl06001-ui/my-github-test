@@ -5,7 +5,7 @@ topic: Dermatology
 see_also: [Infectious Disease]
 date: 2026-09-18
 updated: 2026-09-18
-version: 1
+version: 2
 confidence: medium
 review_status: unreviewed
 title: "어루러기 — 진단 단서에서 치료 수준(국소 vs 경구 아졸)으로"
@@ -59,6 +59,7 @@ sources:
     url: "https://doi.org/10.3390/jof1010013"
     checked_at: 2026-09-18
     checked: "PubMed 초록과 대조(국소 1차, 경구 이트라코나졸·플루코나졸, 경구 테르비나핀 무효, 경구 케토코나졸 중단)"
+    verified: abstract
   - id: hu-bigby-2010
     org: "Hu SW, Bigby M (체계적 문헌고찰·메타분석)"
     title: "Pityriasis versicolor: a systematic review of interventions"
@@ -70,6 +71,7 @@ sources:
     url: "https://doi.org/10.1001/archdermatol.2010.259"
     checked_at: 2026-09-18
     checked: "PubMed 초록과 대조(대부분 효과적, 시험 질 낮음)"
+    verified: abstract
 diagram:
   title: "어루러기 — 진단 확인에서 치료 수준까지"
   nodes:
@@ -79,9 +81,8 @@ diagram:
     - {id: other, kind: alert, text: "다른 진단 — 백반증(비늘 없음·완전 탈색)·염증 후 저색소·장미색 비강진 등"}
     - {id: extent, kind: decision, text: "국한되고 첫 발병인가? 범위 · 재발 횟수 · 이전 국소 치료 결과"}
     - {id: extask, kind: info, text: "범위와 이전 발병·치료 이력을 확인한다"}
-    - {id: topical, kind: step, text: "국소 항진균제 — 케토코나졸 크림·샴푸 등 아졸, 셀레늄 설파이드, 징크 피리치온"}
-    - {id: oral, kind: step, text: "경구 이트라코나졸 또는 플루코나졸 (경구 테르비나핀·그리세오풀빈 무효, 경구 케토코나졸은 쓰지 않음)"}
-    - {id: after, kind: end, text: "색 회복은 수개월 · 재발이 잦으면 예방적 국소제"}
+    - {id: topical, kind: end, text: "국소 항진균제 — 케토코나졸 크림·샴푸 등 아졸, 셀레늄 설파이드, 징크 피리치온"}
+    - {id: oral, kind: end, text: "경구 이트라코나졸 또는 플루코나졸 (경구 테르비나핀·그리세오풀빈 무효, 경구 케토코나졸은 쓰지 않음)"}
   edges:
     - {from: start, to: koh}
     - {from: koh, to: extent, label: "있음"}
@@ -94,8 +95,10 @@ diagram:
     - {from: extent, to: oral, label: "광범위·재발·국소 실패"}
     - {from: extask, to: topical, label: "국한·첫 발병"}
     - {from: extask, to: oral, label: "광범위·재발"}
-    - {from: topical, to: after}
-    - {from: oral, to: after}
+diagram_notes:
+  - "치료 뒤에도 색 회복은 균이 없어진 뒤 수개월 걸린다 — 흰 반점이 남아도 비늘·KOH 로 활동성을 본다."
+  - "재발이 잦으면(상재균이라 흔함) 예방적 국소제를 고려한다."
+  - "우드등 형광은 일부에서만 보이므로 음성이어도 어루러기를 배제하지 않는다 — KOH 가 기준이다."
 checks:
   - q: "어루러기 치료를 국소제와 경구제로 가르는 기준은?"
     a: "범위(광범위), 재발, 국소 치료 실패. 진단 자체가 아니라 이 세 가지가 치료 수준을 정한다."
@@ -144,4 +147,4 @@ KOH 검경이 핵심이다. 배양은 일상적으로 필요 없고, 일반 배�
 - 국내 교과서의 권고 문구는 대조하지 않았다(검토 항목).
 
 ## (심화) 치료 문항이 진단 문항처럼 보이는 이유
-보기에 경쟁하는 치료(국소 vs 경구 아졸)가 없으면 문항은 사실상 「어루러기인가」만 묻게 된다. 이 정리본의 목표는 진단 다음 단계 — **범위·재발이 치료 수준을 바꾼다** — 이고, 변형 문제가 그 갈래를 확인한다.
+보기에 경쟁하는 치료(국소 vs 경구 아졸)가 없으면 문항은 사실상 「어루러기인가」만 묻게 된다. 이 정리본의 목표는 진단 다음 단계 — **범위·재발이 치료 수준을 바꾼다** — 이다.

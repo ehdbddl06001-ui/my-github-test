@@ -12,12 +12,14 @@ MedKOS 원칙: Markdown 이 원본, 이 번들은 파생물이다. publish.py �
 """
 from __future__ import annotations
 
+import html
 import json
+import re
 import sys
 from pathlib import Path
 
 import decision_diagram as dd
-from concepts import LETTERS, linked_questions, load_concepts, load_questions, safe_url
+from concepts import LETTERS, linked_questions, load_concepts, load_questions, render_cites, safe_url
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "concepts.js"
@@ -26,7 +28,7 @@ OUT = ROOT / "docs" / "concepts.js"
 def _source(s: dict) -> dict:
     url = safe_url(s.get("url")) or (f"https://doi.org/{s['doi']}" if s.get("doi") else "") \
         or (f"https://pubmed.ncbi.nlm.nih.gov/{s['pmid']}/" if s.get("pmid") else "")
-    return {k: str(s.get(k, "") or "") for k in ("id", "org", "title", "kind", "citation", "checked", "doi", "pmid")} | {
+    return {k: str(s.get(k, "") or "") for k in ("id", "org", "title", "kind", "citation", "checked", "doi", "pmid", "verified")} | {
         "year": str(s.get("year", "") or ""), "checkedAt": str(s.get("checked_at", "") or ""), "url": safe_url(url)}
 
 
@@ -37,6 +39,11 @@ def _variant(cid: str, v: dict) -> dict:
     return {"id": f"{cid}#{v.get('id')}", "context": str(v.get("context", "") or ""), "stem": str(v.get("stem", "")),
             "options": clean, "answer": LETTERS.index(ans) + 1 if ans in LETTERS else 1,
             "explanation": str(v.get("explanation", "") or "")}
+
+
+def _web(s, c: dict) -> str:
+    """표 칸·혼동 항목 글 → escape · **굵게** · 근거 번호(<sup>). 앱이 한 번 더 허용 태그만 남긴다."""
+    return render_cites(re.sub(r"\*\*(.+?)\*\*", lambda m: f"<b>{m.group(1)}</b>", html.escape(str(s or ""), quote=False)), c, "web")
 
 
 def build() -> tuple[dict, list[str]]:
@@ -52,7 +59,15 @@ def build() -> tuple[dict, list[str]]:
             "version": c.get("version"), "updated": str(c.get("updated", c.get("date", "")) or ""),
             "reviewStatus": str(c.get("review_status", "unreviewed")), "hash": c["hash"],
             "summary": [str(x) for x in c.get("summary") or []],
-            "sections": c["sections"],
+            "sections": [dict(s, html=render_cites(s["html"], c, "web")) for s in c["sections"]],
+            "tables": [{"title": str(tb.get("title", "")), "columns": [str(x) for x in tb.get("columns") or []],
+                        "rows": [[_web(x, c) for x in r] for r in tb.get("rows") or []], "note": _web(tb.get("note"), c)}
+                       for tb in c.get("tables") or [] if isinstance(tb, dict)],
+            "pitfalls": [{"contrast": str(pf.get("contrast", "")), "point": _web(pf.get("point"), c),
+                          "exception": _web(pf.get("exception"), c),
+                          "cites": " ".join(_web(f"[[{x}]]", c) for x in pf.get("cites") or [])}
+                         for pf in c.get("pitfalls") or [] if isinstance(pf, dict)],
+            "diagramNotes": [_web(x, c) for x in c.get("diagram_notes") or []],
             "criteria": [{k: (str(v) if not isinstance(v, list) else [str(x) for x in v]) for k, v in cr.items()}
                          for cr in c.get("criteria") or [] if isinstance(cr, dict)],
             "sources": [_source(s) for s in c.get("sources") or [] if isinstance(s, dict)],

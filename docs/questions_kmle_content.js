@@ -414,11 +414,6 @@ window.KMLE_CONTENT_QUESTIONS = [
     "node": "topical",
     "state": "path",
     "note": "정답 A — 국소 케토코나졸"
-   },
-   {
-    "node": "after",
-    "state": "path",
-    "note": "색 회복은 수개월"
    }
   ],
   "figureSvg": ""
@@ -83445,9 +83440,9 @@ window.KMLE_CONTENT_QUESTIONS = [
   "distractors": {
    "B": {
     "tempting": "칼륨을 실제로 낮추는 첫 약이라 「치료」처럼 느껴진다.",
-    "answer_first": "텐트형 T파가 있다 — 지금 급한 것은 수치가 아니라 다음 몇 분의 부정맥이다. 칼슘이 심근막을 먼저 안정화한다.",
+    "answer_first": "칼륨 7.3 에 텐트형 T파와 서맥(56회/분)이 함께 있다 — 지금 급한 것은 수치가 아니라 다음 몇 분의 부정맥이다. 칼슘이 심근막을 먼저 안정화한다.",
     "discriminator": "심전도 변화의 유무. 변화가 있으면 안정화가 이동보다 앞선다.",
-    "when_right": "심전도 변화가 없는 중증 고칼륨혈증이라면 인슐린+포도당이 첫 약이 될 수 있다.",
+    "when_right": "심전도 변화가 없는 중증 고칼륨혈증(≥6.5 mmol/L)이라면 인슐린+포도당이 첫 약이 된다(UK KA 2020 Guideline 16.2·16.3.1).",
     "split": "ecg"
    },
    "C": {
@@ -83479,14 +83474,9 @@ window.KMLE_CONTENT_QUESTIONS = [
     "note": "칼륨 7.3 mEq/L, 만성콩팥병(투석 전)"
    },
    {
-    "node": "monitor",
-    "state": "path",
-    "note": "맥박 56회/분, 심전도 시행"
-   },
-   {
     "node": "ecg",
     "state": "abnormal",
-    "note": "좁고 뾰족한(텐트형) T파"
+    "note": "좁고 뾰족한(텐트형) T파 + 맥박 56회/분 서맥 — 고립된 T파 변화만이 아니다(고칼륨혈증성 서맥은 칼슘 적응)"
    },
    {
     "node": "calcium",
@@ -87752,11 +87742,6 @@ window.KMLE_CONTENT_QUESTIONS = [
     "node": "start",
     "state": "path",
     "note": "칼륨 7.2 mmol/L, 투석 중"
-   },
-   {
-    "node": "monitor",
-    "state": "path",
-    "note": "심전도 시행"
    },
    {
     "node": "ecg",

@@ -186,6 +186,10 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 - 정리본의 출처는 **실제로 확인한 것만**(PubMed·기관 쪽) 적고 `checked` 에 무엇을 대조했는지 쓴다. 확인 못 한 세부는
   「본문 대조 전(검토 항목)」으로 적는다. `review_status: unreviewed` 로 두고 사람만 reviewed 로 바꾼다.
 
+- 정리본은 학습서(PDF)의 단원이 된다 — `schemas/frontmatter.md` 의 「깊이」 규칙대로 생리 → 기전 → 소견 → 기준 → 치료 → 재평가를
+  잇고, 수치·권고에는 `[[출처id: 쪽·절]]` 로 원문 위치를 단다. 원문을 읽지 못한 주장은 `[[?출처id]]` 또는 `verified: abstract/citation`.
+  다른 지침의 기준(정의·중증도·치료 기준)은 `criteria` 행을 나눠 쓰고 합치지 않는다.
+
 ### 커밋 전 문항 자가 점검(체크리스트)
 - [ ] `design` 을 **문항보다 먼저** 정했고, 보기가 그 판단을 실제로 가르는가?
 - [ ] 혼동 대안(`rival`)이 실제로 경쟁하고, 구분 소견이 문항 안에 있는가?

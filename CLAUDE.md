@@ -136,6 +136,11 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   검증 통과한 것만) → `drive_books.py`(폴더 ID `pipelines/books_config.yaml`, 같은 파일 ID 갱신, archive/ 사본,
   드라이브 쪽이 바뀌었으면 필기 보호로 덮어쓰지 않음, 아무것도 지우지 않음). 판 기록 `state/books/`.
 - `MedKOS/content` 는 drive-sync 의 `rclone sync` 대상이라 거기엔 아무것도 두지 않는다(지워진다).
+- **학습서 판형 2(2026-09-18, 이전 PDF 요구보다 우선)**: 의학 내용만 싣는다 — 들어온 이유·오답 날짜·문항 번호·열람/복습 상태·
+  스스로 묻기·변형 문제 안내·내부 ID·경로·사용법은 PDF 에서 빼고 앱·원본에 둔다(오답 혼동은 `pitfalls` 로 일반화).
+  A4 가로 2단, 넓은 표·큰 도식만 두 단 전체, 강제 쪽 나눔 없음. `build_books.py` 가 렌더 뒤 빈 단·고립 제목·도식 크기를
+  검사하고, 빈 공간이 생기면 도식·기준표 위치를 바꿔 다시 렌더한다. 판형을 바꾸면 `books_config.yaml template_version` 을 올린다.
+  PDF 에 실리지 않는 학습 기록(메모·열람)만 바뀌면 책을 다시 만들지 않는다.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.
