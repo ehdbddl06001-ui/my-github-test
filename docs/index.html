@@ -81,6 +81,7 @@
     <button id="startBtn" class="primary">퀴즈 시작</button>
     <button id="resumeBtn" class="hidden">이어서 풀기</button>
     <button id="viewWrongBtn">오답노트 보기</button>
+    <button id="reviewOpenBtn">개념 복습</button>
   </div>
   <p id="modeHint" class="muted"></p>
   <p id="wrongCount" class="muted"></p>
@@ -137,6 +138,22 @@
   <div id="wbList"></div>
 </section>
 
+<!-- 개념 복습 화면 — 오답·표시가 모인 학습 목표(복습 필요 · 복습 중 · 재확인 완료) -->
+<section id="review" class="card hidden">
+  <h2>개념 복습</h2>
+  <p class="muted small">틀린 문항은 학습 목표(개념 정리본) 단위로 모입니다. 정리본을 읽거나 해설을 본 것만으로는 완료가 되지 않고,
+    다음 날 이후 같은 목표의 다른 문항·변형 문제를 맞혀야 「재확인 완료」가 됩니다.</p>
+  <div class="row">
+    <button id="rvBackBtn">← 돌아가기</button>
+    <button id="rvExportBtn">학습 기록 내보내기 (.json)</button>
+    <label class="filebtn">학습 기록 가져오기<input type="file" id="rvImportFile" accept="application/json,.json" /></label>
+  </div>
+  <p class="muted small">내보낸 파일을 Google Drive 의 <code>MedKOS/학습기록</code> 폴더에 두면, 매일 도는 학습서 갱신이 가져가 과별 PDF 에 반영합니다.
+    가져오기는 기록을 합치기만 하고 기존 기록을 지우지 않습니다.</p>
+  <div id="rvConcept" class="learn-concept" hidden></div>
+  <div id="rvList"></div>
+</section>
+
 <footer>
   <p class="muted">
     오답은 이 기기의 브라우저 저장소에 먼저 기록됩니다. Cloudflare Pages 에 배포된 주소에서는 <code>/api/wrong</code> 이
@@ -150,6 +167,8 @@
 <script src="questions_kmle_content.js"></script>
 <script src="questions_usmle.js"></script>
 <script src="questions_imaging.js"></script>
+<script src="concepts.js"></script>
+<script src="learn.js"></script>
 <script src="app.js"></script>
 <script src="pwa.js"></script>
 </body>

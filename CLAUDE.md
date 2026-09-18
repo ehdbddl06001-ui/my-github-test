@@ -29,6 +29,8 @@
 - KMLE → `content/kmle/{연도}/`   USMLE → `content/usmle/`
 - 기초의학 → `content/basic/`      논문 → `content/papers/{연도}/`
 - 질환 카드 → `content/diseases/`  약물 카드 → `content/drugs/`
+- 개념 정리본(학습 목표 단위) → `content/concepts/<과>/cn.<과>.<주제>.<목표>.md` — 웹 오답 뒤 학습 흐름과
+  과별 PDF 학습서가 **같은 원본**을 쓴다(`pipelines/concepts.py`). 계약: `schemas/frontmatter.md` concept.
 - AI·코딩 학습(ailab) → `content/ailab/`  (실습 노트북은 `notebooks/`, Colab+Drive 연동)
 - 오픈데이터 영상 문항(imaging) → `content/imaging/{연도}/` + 영상 `docs/assets/imaging/`.
   · **여기서 직접 만들지 않는다** — 의대_시험지_제작 빌더의 `opendata medkos-export` 가 세트를 옮긴다
@@ -121,6 +123,19 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   커밋 → `.github/workflows/wrong-sync.yml` 이 `pipelines/import_wrong_sync.py` 로 오답노트 .md 를
   다시 쓴다. `state/wrong_sync/` 는 **사용자 데이터**라 커밋한다(파생 상태가 아님). 시크릿
   (`GITHUB_TOKEN`·`SYNC_KEY`)은 Cloudflare 대시보드에만 두고 repo 에 절대 넣지 않는다.
+
+## 오답 뒤 학습 흐름 · 과별 PDF 학습서 (2026-09-18)
+- 앱: `docs/learn.js` 가 채점 뒤에만 오답 확인·보기 비교·정리본·판단 도식(createElementNS — innerHTML 없음)·
+  인출 확인·변형 문제·복습 목록을 그린다. 학습 기록은 localStorage `medkos_learning_events` 에 **덧붙이기만** 한다.
+  상태(복습 필요·복습 중·재확인 완료)는 기록에서 계산하고, 규칙은 `pipelines/learning_log.py` 와 **같아야 한다**
+  (`test_learning_books.py` 의 JS/Python 일치 시험). 열람은 학습 증거가 아니다 — 재확인 완료는 다음 날 이후
+  같은 목표의 다른 문항·변형 문제를 맞혔을 때만.
+- 기록 → 저장소: Cloudflare `functions/api/learning.js`(eid 합집합 → `state/learning_sync/events.json`, 사용자 데이터라
+  커밋) 또는 앱의 「학습 기록 내보내기」 파일을 드라이브 `MedKOS/학습기록` 에 두면 books.yml 이 가져와 합친다.
+- 학습서: `.github/workflows/books.yml`(매일 06:30 KST) → `check_sources.py` → `build_books.py`(바뀐 책만, 렌더 후
+  검증 통과한 것만) → `drive_books.py`(폴더 ID `pipelines/books_config.yaml`, 같은 파일 ID 갱신, archive/ 사본,
+  드라이브 쪽이 바뀌었으면 필기 보호로 덮어쓰지 않음, 아무것도 지우지 않음). 판 기록 `state/books/`.
+- `MedKOS/content` 는 drive-sync 의 `rclone sync` 대상이라 거기엔 아무것도 두지 않는다(지워진다).
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

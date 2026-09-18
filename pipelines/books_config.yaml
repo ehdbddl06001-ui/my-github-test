@@ -1,0 +1,56 @@
+# 과별 누적 PDF 학습서 설정 — build_books.py · books.yml 이 읽는다.
+# 비밀값(rclone 토큰)은 여기 두지 않는다 — GitHub 시크릿 RCLONE_CONF_BASE64 / PC 의 %APPDATA%\rclone\rclone.conf.
+
+title: "MedKOS 과별 학습서"
+web_base: "https://ehdbddl06001-ui.github.io/my-github-test/"   # 문항·정리본 교차 링크(?q= · ?concept=)
+out_dir: "build/books"                                            # 로컬 산출물(git 무시)
+template_version: 1                                               # 판형을 바꾸면 올린다 → 모든 책 재생성
+
+# 한 권에 넣을 최대 단원 수. 넘으면 「1권·2권」으로 나눈다(단원 제목순으로 안정적으로 자른다).
+volume_max_units: 40
+
+# 학습서에 넣는 기준. 오답은 항상 넣고, 아래 표시가 있으면 맞힌 문항의 목표도 넣는다.
+include_flags: [guessed, not_understood, confused, want_note]
+include_later: true            # 「나중에 복습 — 저장하고 계속」
+
+# 글꼴(한글 임베드). 앞에서부터 있는 것을 쓴다. PC(윈도우) · GitHub Actions(ubuntu, fonts-nanum) 둘 다.
+fonts:
+  regular: ["C:/Windows/Fonts/NanumGothic.ttf", "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"]
+  bold: ["C:/Windows/Fonts/NanumGothicBold.ttf", "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf"]
+
+# Google Drive — 폴더 ID 로만 가리킨다(같은 이름의 다른 폴더를 건드리지 않게).
+drive:
+  remote: "gdrive"
+  folder_id: "1kf0ISi3zM2WJXxLI4Mu5zQQtoCfxyxp3"   # 내 드라이브 › MedKOS › 학습서 (2026-09-18 생성). 학습서 폴더(최신본은 같은 파일 ID 로 갱신). 비우면 업로드하지 않고 「설정 필요」로 보고한다
+  inbox_folder_id: "1mf5XVnWZ228-qa_7i7RskGM6Z2cT64Ov"   # 내 드라이브 › MedKOS › 학습기록. 앱에서 내보낸 학습 기록(.json)을 두는 폴더 — 읽기만 한다
+  archive: true          # 새 판이 나오면 archive/ 에 날짜·버전 사본을 남긴다(이미 있으면 건너뜀)
+
+# 과목(문항·정리본 frontmatter 의 topic) → 책. 없는 과목은 topic 이름 그대로 책이 된다.
+books:
+  Internal Medicine: 내과 총론
+  Cardiology: 순환기내과
+  Pulmonology: 호흡기내과
+  Gastroenterology: 소화기내과
+  Nephrology: 신장내과
+  Endocrinology: 내분비내과
+  Hematology: 혈액종양내과
+  Hematology-Oncology: 혈액종양내과
+  Infectious Disease: 감염내과
+  Rheumatology: 류마티스내과
+  Allergy: 알레르기내과
+  Neurology: 신경과
+  Psychiatry: 정신건강의학과
+  Pediatrics: 소아청소년과
+  Obstetrics & Gynecology: 산부인과
+  General Surgery: 외과
+  Surgery: 외과
+  Orthopedics: 정형외과
+  Dermatology: 피부과
+  Ophthalmology: 안과
+  Emergency Medicine: 응급의학과
+  Biochemistry: 기초의학
+  Physiology: 기초의학
+  Pathology: 기초의학
+  Pharmacology: 기초의학
+  Microbiology: 기초의학
+  Immunology: 기초의학
