@@ -6,3 +6,5 @@ pymupdf>=1.24
 pillow>=10.0
 numpy>=1.26
 opencv-python-headless>=4.9
+# 정리본 HTML 변환(concepts.py → publish.py 번들 단계). 2026-09-19 실측: 루틴 컨테이너에 없어 publish 가 ModuleNotFoundError 로 죽었다(books.yml 만 따로 설치하고 있었다).
+markdown>=3.5
