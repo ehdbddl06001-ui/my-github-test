@@ -362,9 +362,12 @@ button.small{padding:6px 10px; font-size:.85rem}
 .expl-head{margin:14px 0 4px; font-weight:600; color:var(--muted); font-size:.9rem}
 .learn{border:1px solid #3b4f6b; border-radius:12px; padding:12px 14px; margin:10px 0; background:#101c2b}
 .learn-h{font-weight:700; margin-bottom:6px}
-.learn-ab{display:grid; grid-template-columns:1fr; gap:4px; margin-bottom:6px}
-@media (min-width:600px){.learn-ab{grid-template-columns:1fr 1fr}}
-.learn-ab .k,.learn-row .k,.dc-row .k,.cn-goal .k{display:inline-block; min-width:5.5em; font-weight:600; color:#9cc3ff; margin-right:6px; font-size:.86rem}
+/* 내 답·정답은 위아래로 — 제목 줄 → 보기 글 → 한 줄 띄움(긴 영어 보기가 옆 칸과 뒤엉키지 않게) */
+.learn-ab{display:block; margin-bottom:10px}
+.learn-ab > div{margin-bottom:12px; line-height:1.55}
+.learn-ab > div:last-child{margin-bottom:0}
+.learn-ab .k{display:block; margin:0 0 2px; font-weight:600; color:#9cc3ff; font-size:.86rem}
+.learn-row .k,.dc-row .k,.cn-goal .k{display:inline-block; min-width:5.5em; font-weight:600; color:#9cc3ff; margin-right:6px; font-size:.86rem}
 .learn-ab .mine{color:#ffb4b4}.learn-ab .ans{color:#9be7b3}
 .learn-row{margin:5px 0; font-size:.95rem}
 .learn-row.split{border-left:3px solid #ff8a80; padding-left:8px}
