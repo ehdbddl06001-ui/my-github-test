@@ -32,7 +32,7 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-18",
   "baseline": "[]",
-  "status": "failed",
+  "status": "ok",
   "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
  },
  "10.3390/jof1010013": {
