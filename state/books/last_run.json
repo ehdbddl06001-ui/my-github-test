@@ -1,0 +1,17 @@
+{
+ "started": "2026-09-18T17:40:49+09:00",
+ "built": [],
+ "skipped": [],
+ "failed": {},
+ "retry": [],
+ "previews": [],
+ "validation": {},
+ "concept_errors": [],
+ "result": "skipped",
+ "finished": "2026-09-18T17:40:53+09:00",
+ "upload": {
+  "result": "ok",
+  "items": {},
+  "at": "2026-09-18T17:40:53+09:00"
+ }
+}
