@@ -32,6 +32,12 @@ ID_RE = re.compile(r"^cn\.[a-z0-9-]+\.[a-z0-9-]+\.[a-z0-9-]+$")
 BASIS = {"current": "현행 권고", "past_exam": "기출 근거"}
 EXAMS = ("kmle", "usmle")
 SOURCE_KINDS = ("guideline", "consensus", "review", "textbook", "trial", "other")
+# 출처를 어디까지 대조했는가 — text(권고·서술 본문과 대조) · abstract(초록만) · citation(서지만).
+# text 가 아닌 출처를 근거로 든 곳에는 † 가 붙는다(검증된 현행 권고처럼 보이지 않게).
+VERIFIED = ("text", "abstract", "citation")
+TABLE_ROLES = ("differential", "treatment", "criteria", "severity", "tests", "monitoring", "comparison")
+# 본문·표·혼동 항목 안의 근거 표시: [[출처id]] · [[출처id: 쪽·절·표]] · [[?출처id: …]](? = 이 주장은 원문 미대조)
+CITE_RE = re.compile(r"\[\[(\?)?([a-z0-9][a-z0-9-]*)(?::\s*([^\]]+?))?\s*\]\]")
 LETTERS = "ABCDE"
 MODEL_NAMES = re.compile(r"(claude|gpt|gemini|llama|model|모델|\bai\b)", re.IGNORECASE)
 
@@ -76,9 +82,20 @@ def sanitize(fragment: str) -> str:
     return "".join(s.out)
 
 
+def _normalize_lists(md: str) -> str:
+    """문단 바로 아래에 붙은 목록 줄 앞에 빈 줄을 넣는다(Python-Markdown 은 빈 줄이 없으면 목록으로 읽지 않는다)."""
+    out: list[str] = []
+    item = re.compile(r"^\s*([-*+]|\d+\.)\s+")
+    for ln in md.replace("\r\n", "\n").split("\n"):
+        if item.match(ln) and out and out[-1].strip() and not item.match(out[-1]) and not out[-1].startswith((" ", "\t")):
+            out.append("")
+        out.append(ln)
+    return "\n".join(out)
+
+
 def md_to_html(md: str) -> str:
     import markdown  # 표준 파이썬 markdown — 결과는 반드시 sanitize 를 거친다
-    return sanitize(markdown.markdown(md, extensions=["tables"], output_format="html"))
+    return sanitize(markdown.markdown(_normalize_lists(md), extensions=["tables"], output_format="html"))
 
 
 def sections(body: str) -> list[dict]:
@@ -149,8 +166,11 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
         for k in ("id", "org", "title", "year", "checked_at", "checked"):
             if not str(s.get(k, "") or "").strip():
                 errs.append(f"sources[{i}] 필수 필드 누락: {k}")
-        if not (safe_url(s.get("url")) or s.get("doi") or s.get("pmid")):
-            errs.append(f"sources[{i}] 는 https url·doi·pmid 중 하나로 찾아갈 수 있어야 한다")
+        if not (safe_url(s.get("url")) or s.get("doi") or s.get("pmid")) and not (
+                s.get("kind") == "textbook" and str(s.get("citation", "")).strip()):
+            errs.append(f"sources[{i}] 는 https url·doi·pmid 중 하나로 찾아갈 수 있어야 한다(교과서는 판·장·쪽 citation)")
+        if s.get("verified", "citation") not in VERIFIED:
+            errs.append(f"sources[{i}].verified 는 {'/'.join(VERIFIED)}(무엇까지 대조했나)")
         if s.get("kind") and s["kind"] not in SOURCE_KINDS:
             errs.append(f"sources[{i}].kind 는 {'/'.join(SOURCE_KINDS)}")
         src_ids.add(str(s.get("id")))
@@ -169,6 +189,38 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
             errs.append(f"criteria[{i}].exams 는 kmle/usmle")
     if "diagram" in meta:
         errs += [f"diagram: {e}" for e in dd.validate(meta.get("diagram"))]
+    dn = meta.get("diagram_notes")
+    if dn is not None and (not isinstance(dn, list) or not all(isinstance(x, str) and x.strip() for x in dn)):
+        errs.append("diagram_notes 는 문장 목록(도식만으로 전달되지 않는 조건·예외)")
+    for i, pf in enumerate(meta.get("pitfalls") or [], 1):
+        if not isinstance(pf, dict) or not str(pf.get("contrast", "")).strip() or not str(pf.get("point", "")).strip():
+            errs.append(f"pitfalls[{i}] 는 {{contrast, point, exception?, cites?, covers?}}")
+            continue
+        if re.search(r"(모른다|몰랐|몰라서|이해하지 못|착각했을 것)", str(pf.get("point", "")) + str(pf.get("exception", ""))):
+            errs.append(f"pitfalls[{i}] — 학습자가 왜 골랐는지 추측하거나 「모른다」고 쓰지 않는다(일반화한 구분점만)")
+        for cv in pf.get("covers") or []:
+            if not re.match(r"^[a-z]+-\d{4}-\d{4}:[A-E]$", str(cv)):
+                errs.append(f"pitfalls[{i}].covers '{cv}' 형식은 <문항id>:<보기 letter>")
+    for i, tb in enumerate(meta.get("tables") or [], 1):
+        if not isinstance(tb, dict):
+            errs.append(f"tables[{i}] 는 사전"); continue
+        cols = tb.get("columns") or []
+        if not tb.get("id") or not str(tb.get("title", "")).strip() or not isinstance(cols, list) or len(cols) < 2:
+            errs.append(f"tables[{i}] 는 id·title·columns(2개 이상) 가 필요하다")
+        if tb.get("role") not in TABLE_ROLES:
+            errs.append(f"tables[{i}].role 은 {'/'.join(TABLE_ROLES)}")
+        if tb.get("span", "column") not in ("full", "column"):
+            errs.append(f"tables[{i}].span 은 full(두 단 전체) 또는 column")
+        if tb.get("span", "column") == "column" and len(cols) > 4:
+            errs.append(f"tables[{i}] 는 열이 {len(cols)}개 — 한 단 표는 4열까지(넓으면 span: full, 더 많으면 역할별로 나눈다)")
+        if len(cols) > 6:
+            errs.append(f"tables[{i}] 는 열이 {len(cols)}개 — 6열을 넘으면 역할별로 나눈다(글자를 줄여 욱여넣지 않는다)")
+        for j, row in enumerate(tb.get("rows") or [], 1):
+            if not isinstance(row, list) or len(row) != len(cols):
+                errs.append(f"tables[{i}].rows[{j}] 칸 수가 열 수와 다르다")
+    # 근거 표시가 가리키는 출처가 있는가
+    for sid in sorted(cited_ids(meta) - src_ids):
+        errs.append(f"근거 표시 [[{sid}]] 가 sources 에 없다 — 없는 출처를 인용하지 않는다")
     for i, ck in enumerate(meta.get("checks") or [], 1):
         if not isinstance(ck, dict) or not str(ck.get("q", "")).strip() or not str(ck.get("a", "")).strip():
             errs.append(f"checks[{i}] 는 {{q, a}}")
@@ -187,6 +239,50 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
             errs.append(f"variants id 중복: {v.get('id')}")
         vids.add(v.get("id"))
     return errs
+
+
+def _cite_texts(meta: dict[str, Any]) -> list[str]:
+    out = [str(meta.get("_body", ""))]
+    for tb in meta.get("tables") or []:
+        if isinstance(tb, dict):
+            out.append(str(tb.get("note", "")))
+            out += [str(c) for row in tb.get("rows") or [] if isinstance(row, list) for c in row]
+    for pf in meta.get("pitfalls") or []:
+        if isinstance(pf, dict):
+            out += [str(pf.get("point", "")), str(pf.get("exception", ""))]
+            out += [f"[[{c}]]" for c in pf.get("cites") or []]
+    out += [str(x) for x in meta.get("diagram_notes") or []]
+    return out
+
+
+def cited_ids(meta: dict[str, Any]) -> set[str]:
+    ids = {m.group(2) for s in _cite_texts(meta) for m in CITE_RE.finditer(s)}
+    ids |= {str(c.get("source")) for c in meta.get("criteria") or [] if isinstance(c, dict) and c.get("source")}
+    return ids
+
+
+def source_numbers(meta: dict[str, Any]) -> dict[str, int]:
+    """단원 안에서의 근거 번호 — sources 순서대로 1, 2, …"""
+    return {str(s.get("id")): i for i, s in enumerate(meta.get("sources") or [], 1) if isinstance(s, dict)}
+
+
+def render_cites(text: str, meta: dict[str, Any], mode: str = "web", anchor: str = "") -> str:
+    """[[id: 위치]] 를 번호 근거로 바꾼다. text 는 이미 escape·정화된 글이어야 한다(여기서 만드는 태그만 더해진다).
+    mode=pdf 이면 단원 끝 참고문헌으로 가는 링크, web 이면 <sup>. 원문 본문과 대조하지 않은 근거에는 † 를 붙인다."""
+    nums = source_numbers(meta)
+    ver = {str(s.get("id")): s.get("verified", "citation") for s in meta.get("sources") or [] if isinstance(s, dict)}
+
+    def rep(m: re.Match) -> str:
+        unverified, sid, loc = m.group(1), m.group(2), (m.group(3) or "").strip()
+        n = nums.get(sid)
+        if n is None:
+            return html.escape(m.group(0), quote=False)
+        dagger = "†" if (unverified or ver.get(sid) != "text") else ""
+        label = f"{n}{dagger}" + (f" {loc}" if loc else "")
+        if mode == "pdf":
+            return f'<a class="cite" href="#{anchor}-ref-{n}">[{label}]</a>'
+        return f"<sup>[{label}]</sup>"
+    return CITE_RE.sub(rep, text)
 
 
 def question_learning_errors(meta: dict[str, Any], concept: dict | None) -> list[tuple[str, str]]:
@@ -243,7 +339,7 @@ def load_concepts(root: Path = CONCEPT_DIR) -> tuple[dict[str, dict], list[str]]
     for p in sorted(root.rglob("*.md")) if root.exists() else []:
         d = load(p)
         m = d.meta
-        errs = list(d.errors) + validate_concept(m, p)
+        errs = list(d.errors) + validate_concept({**m, "_body": d.body}, p)
         cid = str(m.get("id", p.stem))
         if cid in out:
             errs.append(f"concept id 중복: {cid}")

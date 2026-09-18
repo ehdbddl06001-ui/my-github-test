@@ -209,8 +209,9 @@ def _tokens(s: str) -> list[str]:
 
 
 # ── 배치 ───────────────────────────────────────────────────────────
-def layout(spec: dict) -> dict:
-    """노드 좌표·선 경로·라벨 위치. 웹과 PDF 가 같은 결과를 쓴다."""
+def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = RANK_GAP, col_gap: int = COL_GAP) -> dict:
+    """노드 좌표·선 경로·라벨 위치. 웹은 기본 폭(좁은 세로 화면), PDF 는 넓은 노드로 높이를 줄여 같은 그래프를 그린다.
+    rank_gap="auto" 이면 층 사이를 그 틈에 실제로 필요한 만큼만 둔다(갈래 가로선 + 엇갈린 라벨 줄 수)."""
     errs = validate(spec)
     if errs:
         raise DiagramError("; ".join(errs))
@@ -244,25 +245,42 @@ def layout(spec: dict) -> dict:
                 ps = [pos[e["from"]] for e in inc[n]]
                 return sum(ps) / len(ps) if ps else pos[n]
             layers[r].sort(key=bary)
-    max_em = (NODE_W - 2 * PAD_X) / FONT
+    max_em = (node_w - 2 * PAD_X) / FONT
     geo_nodes: dict[str, dict] = {}
     for n in ids:
         lines = wrap(nodes[n]["text"], max_em)
         geo_nodes[n] = dict(id=n, kind=nodes[n]["kind"], kindLabel=KINDS[nodes[n]["kind"]], lines=lines,
-                            w=NODE_W, h=8 + TOP_LINE + LINE_H * len(lines) + 6)
+                            w=node_w, h=8 + TOP_LINE + LINE_H * len(lines) + 6)
     widest = max(len(L) for L in layers)
-    inner_w = widest * NODE_W + (widest - 1) * COL_GAP
+    inner_w = widest * node_w + (widest - 1) * col_gap
+
+    def label_h(e: dict, t_w: float) -> int:
+        lab = str(e.get("label", "") or "").strip()
+        return (len(wrap(lab, max(4.0, t_w * 0.92 / LABEL_FONT))[:2]) * 13 + 4) if lab else 0
+    zone: dict[int, int] = {}                     # 층 r 위쪽의 라벨 영역 높이
+    gaps: dict[int, float] = {}
+    for r in range(1, nr):
+        z = 0
+        for n in layers[r]:
+            hs = [label_h(e, node_w) for e in inc[n] if str(e.get("label", "") or "").strip()]
+            if hs:
+                z = max(z, (min(2, len(hs))) * (max(hs) + 3) + 3)
+        zone[r] = z
+        top = max([10 + 6 * (len(out[n]) - 1) for n in layers[r - 1]] or [10])
+        gaps[r] = max(top + 8 + z, 30) if rank_gap == "auto" else float(rank_gap)
     y = MARGIN
-    for L in layers:
+    for r, L in enumerate(layers):
+        if r:
+            y += gaps[r]
         row_h = max(geo_nodes[n]["h"] for n in L)
-        lw = len(L) * NODE_W + (len(L) - 1) * COL_GAP
+        lw = len(L) * node_w + (len(L) - 1) * col_gap
         x = MARGIN + (inner_w - lw) / 2
         for n in L:
             g = geo_nodes[n]
             g["x"], g["y"] = round(x, 1), round(y, 1)
-            x += NODE_W + COL_GAP
-        y += row_h + RANK_GAP
-    height = y - RANK_GAP + MARGIN
+            x += node_w + col_gap
+        y += row_h
+    height = y + MARGIN
     # 선: 나가는 포트는 아래 변에, 들어오는 포트는 위 변에 고르게. 두 층 이상 건너뛰면 오른쪽 통로로.
     lane_x = MARGIN + inner_w + LANE_GAP
     geo_edges = []
@@ -277,7 +295,8 @@ def layout(spec: dict) -> dict:
             ys, yt = s["y"] + s["h"], t["y"]
             y_out = ys + 10 + 6 * k                   # 같은 노드에서 나가는 갈래는 가로선 높이를 달리한다
             if rank[e["to"]] - rank[e["from"]] > 1:
-                pts = [(px, ys), (px, y_out), (lane_x, y_out), (lane_x, yt - 46), (tx, yt - 46), (tx, yt)]
+                y_in = yt - (zone.get(rank[e["to"]], 0) + 6 if rank_gap == "auto" else 46)
+                pts = [(px, ys), (px, y_out), (lane_x, y_out), (lane_x, y_in), (tx, y_in), (tx, yt)]
                 lane_x += LANE_GAP
             else:
                 pts = [(px, ys), (px, y_out), (tx, y_out), (tx, yt)]

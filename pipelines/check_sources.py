@@ -61,6 +61,8 @@ def check_one(s: dict, getter=fetch) -> tuple[str, str]:
     if s.get("pmid"):
         return "pubmed", json.dumps(pubmed_fingerprint(str(s["pmid"]), getter), ensure_ascii=False)
     url = safe_url(s.get("url"))
+    if not url and s.get("kind") == "textbook":
+        return "manual", "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)"
     if not url:
         raise ValueError("확인할 https url·pmid 가 없다")
     text = getter(url)

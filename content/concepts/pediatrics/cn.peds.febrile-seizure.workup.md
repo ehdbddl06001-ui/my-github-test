@@ -68,6 +68,7 @@ sources:
     url: "https://doi.org/10.1542/peds.2010-3318"
     checked_at: 2026-09-18
     checked: "PubMed 초록의 권고 문구와 대조(요추천자 option 조건·일상 검사 비권고)"
+    verified: abstract
   - id: aap-2008
     org: "American Academy of Pediatrics, Steering Committee on Quality Improvement and Management, Subcommittee on Febrile Seizures"
     title: "Febrile seizures: clinical practice guideline for the long-term management of the child with simple febrile seizures"
@@ -79,6 +80,7 @@ sources:
     url: "https://doi.org/10.1542/peds.2008-0939"
     checked_at: 2026-09-18
     checked: "PubMed 초록으로 정의 대조. 항경련제 권고 세부는 본문 대조 전"
+    verified: abstract
 diagram:
   title: "열과 함께 발작한 6~60개월 소아 — 추가 검사가 필요한가"
   nodes:

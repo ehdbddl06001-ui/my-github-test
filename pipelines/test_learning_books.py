@@ -135,6 +135,30 @@ class RealContent(unittest.TestCase):
             "tempting": "학습자가 기준을 모른다", "answer_first": "x", "discriminator": "y"}}}
         self.assertTrue(any("모른다" in msg for _, msg in C.question_learning_errors(m, None)))
 
+    def test_cites_tables_pitfalls_contract(self):
+        concepts, _ = C.load_concepts()
+        c = copy.deepcopy(concepts["cn.neph.hyperkalemia.first-step"])
+        c["_body"] = "본문 [[no-such-src: p.1]]"
+        self.assertTrue(any("no-such-src" in e for e in C.validate_concept(c)))
+        c["_body"] = ""
+        c["tables"] = [{"id": "t", "title": "t", "role": "treatment", "span": "column",
+                        "columns": list("abcde"), "rows": [list("abcde")]}]
+        self.assertTrue(any("4열까지" in e for e in C.validate_concept(c)))
+        c["tables"][0]["span"] = "full"
+        c["tables"][0]["columns"] = list("abcdefg")
+        c["tables"][0]["rows"] = [list("abcdefg")]
+        self.assertTrue(any("역할별로 나눈다" in e for e in C.validate_concept(c)))
+        c["tables"] = []
+        c["pitfalls"] = [{"contrast": "a", "point": "학습자가 기준을 몰라서 골랐다"}]
+        self.assertTrue(any("추측" in e for e in C.validate_concept(c)))
+
+    def test_citation_dagger_marks_unverified(self):
+        meta = {"sources": [{"id": "a", "verified": "text"}, {"id": "b", "verified": "abstract"}]}
+        out = C.render_cites("x [[a: p.3]] y [[b]] z [[?a: 표 2]]", meta, "web")
+        self.assertIn("<sup>[1 p.3]</sup>", out)
+        self.assertIn("<sup>[2†]</sup>", out)
+        self.assertIn("<sup>[1† 표 2]</sup>", out)
+
     def test_model_cannot_mark_reviewed(self):
         concepts, _ = C.load_concepts()
         c = copy.deepcopy(next(iter(concepts.values())))
@@ -247,14 +271,24 @@ class Planning(unittest.TestCase):
         b = self._plan(e)["피부과"]
         self.assertEqual(len(b.units), 1)
         self.assertIsNone(b.units[0].concept)
-        self.assertTrue(b.units[0].title.startswith("정리본 작성 대기"))
-        self.assertEqual([s.key for s, _ in b.pending], ["q:q5"])
+        self.assertNotIn("cn.", b.units[0].title)             # 내부 ID 를 제목으로 쓰지 않는다
+        self.assertEqual([s.key for s, _ in b.pending], ["q:q5"])   # 앱에만 남고 PDF 에는 싣지 않는다
 
-    def test_hash_stable_and_memo_changes_it(self):
+    def test_book_without_concept_units_is_not_built(self):
+        e = [wrong("e2", "q5", None, "2026-09-18T01:00:00Z", "2026-09-18")]
+        self.assertEqual(self._plan(e), {})
+
+    def test_hash_follows_printed_content_not_learning_activity(self):
         e = [wrong("e1", "q1", self.c1["id"], "2026-09-18T01:00:00Z", "2026-09-18")]
-        h = lambda ev_: bb.volume_hash("피부과", self._plan(ev_)["피부과"].units, [], self.cfg)
-        self.assertEqual(h(e), h(list(e)))
-        self.assertNotEqual(h(e), h(e + [ev("m", "memo", "2026-09-18T03:00:00Z", objective=self.c1["id"], text="메모")]))
+        h = lambda ev_: bb.volume_hash("피부과", self._plan(ev_)["피부과"].units, [], self.cfg, self.qs)
+        base = h(e)
+        self.assertEqual(base, h(list(e)))
+        # 메모·열람은 PDF 에 싣지 않으므로 책을 다시 만들 이유가 아니다
+        more = e + [ev("m", "memo", "2026-09-18T03:00:00Z", objective=self.c1["id"], text="메모"),
+                    ev("v", "view", "2026-09-18T03:01:00Z", objective=self.c1["id"], what="note")]
+        self.assertEqual(base, h(more))
+        self.c1["hash"] = "changed"                           # 정리본 내용이 바뀌면 다시 만든다
+        self.assertNotEqual(base, h(e))
 
     def test_volumes_split_by_config(self):
         b = bb.Book("피부과", units=[bb.Unit(f"cn.a.b.u{i}", "피부과", None, ll.State(f"cn.a.b.u{i}", None), [], f"t{i}") for i in range(5)])
@@ -266,15 +300,44 @@ class Planning(unittest.TestCase):
         src = self.c1["sources"][0]
         state = {bb.source_key(src): {"status": "changed", "note": "UpdateIn 추가"}}
         u = bb.plan(self.concepts, self.qs, ll.states(e), self.cfg, state)["피부과"].units[0]
-        self.assertTrue(any("업데이트 확인 필요" in f for f in u.flags))
+        self.assertTrue(any("개정 확인 필요" in f for f in u.flags))
 
-    def test_wide_tables_become_cards(self):
+    def test_wide_body_tables_become_rows(self):
         t = "<table><thead><tr>" + "".join(f"<th>h{i}</th>" for i in range(6)) + "</tr></thead><tbody><tr>" \
             + "".join(f"<td>c{i}</td>" for i in range(6)) + "</tr></tbody></table>"
         out = bb.stack_wide_tables(t)
         self.assertNotIn("<table>", out)
-        self.assertIn("rowcard", out)
+        self.assertIn("<b>h0</b> c0", out)
         self.assertIn("<table>", bb.stack_wide_tables(t.replace("<th>h5</th>", "").replace("<th>h4</th>", "")))
+
+    def test_auto_pitfalls_generalize_without_guessing(self):
+        q = {"topic": "Dermatology", "objective": self.c1["id"], "answer": "A",
+             "choices": ["A. 정답약", "B. 오답약"],
+             "distractors": {"B": {"tempting": "학습자가 끌렸을 이유", "answer_first": "x",
+                                   "discriminator": "가르는 소견", "when_right": "맞는 경우"}}}
+        self.qs["q9"] = q
+        e = [wrong("e1", "q9", self.c1["id"], "2026-09-18T01:00:00Z", "2026-09-18", text="오답약")]
+        u = self._plan(e)["피부과"].units[0]
+        pits = bb.auto_pitfalls(u, self.qs)
+        self.assertEqual(pits[0]["contrast"], "오답약 ↔ 정답약")
+        self.assertEqual(pits[0]["point"], "가르는 소견")
+        self.assertNotIn("끌렸을", json.dumps(pits, ensure_ascii=False))      # tempting 은 쓰지 않는다
+        self.c1["pitfalls"] = [{"contrast": "x", "point": "y", "covers": ["q9:B"]}]
+        self.assertEqual(bb.auto_pitfalls(u, self.qs), [])                     # 정리본이 이미 다룬 혼동은 중복하지 않는다
+
+    def test_table_helpers(self):
+        w = bb.col_widths(["기준", "내용"], [["짧다", "훨씬 더 긴 설명이 들어가는 칸이다" * 3]])
+        self.assertAlmostEqual(sum(w), 100, delta=0.5)
+        self.assertGreater(w[1], w[0])
+        blocks = bb.split_blocks("<p>가</p><ul><li>나<ul><li>다</li></ul></li></ul><table><tr><td>라</td></tr></table>")
+        self.assertEqual(len(blocks), 3)
+
+    def test_real_diagrams_fit_readably(self):
+        concepts, _ = C.load_concepts()
+        for c in concepts.values():
+            fit = bb.fit_diagram(c["diagram"])
+            self.assertTrue(fit["ok"], c["id"])
+            self.assertGreaterEqual(fit["scale"], bb.DIAGRAM_MIN_SCALE)
 
 
 class SourceChecks(unittest.TestCase):
@@ -293,7 +356,9 @@ class SourceChecks(unittest.TestCase):
             def boom(url):
                 raise TimeoutError("network")
             r = cs.run(getter=boom, out=out, today="2026-09-26")
-            self.assertTrue(all(v["status"] == "failed" and "업데이트 확인 필요" in v["note"] for v in r.values()))
+            net = {k: v for k, v in r.items() if v.get("method") != "manual"}      # 교과서는 사람이 확인(네트워크와 무관)
+            self.assertTrue(net and all(v["status"] == "failed" and "업데이트 확인 필요" in v["note"] for v in net.values()))
+            self.assertTrue(all(v["status"] == "ok" for k, v in r.items() if k not in net))
 
 
 class FakeRemote:
@@ -388,13 +453,20 @@ class RenderedBook(unittest.TestCase):
             self.assertEqual(r["built"], ["소아청소년과"], r)
             pdf = out / "MedKOS_학습서_소아청소년과.pdf"
             with pymupdf.open(pdf) as d:
-                hits = [p.number for p in d if p.search_for("열성경련")]
-                self.assertTrue(hits)
-                self.assertTrue(any(t[0] == 2 for t in d.get_toc()))
+                self.assertGreater(d[0].rect.width, d[0].rect.height)            # A4 가로
+                text = " ".join(" ".join(p.get_text().split()) for p in d)
+                self.assertTrue([p.number for p in d if p.search_for("열성경련")])    # 한글 글자 검색
+                self.assertTrue(any(t[0] >= 2 for t in d.get_toc()))               # 책갈피
+                for gone in ("스스로 묻기", "해설 열람", "kmle-2026-0675", "cn.peds", "단원 ID", ".md"):
+                    self.assertNotIn(gone, text)                                   # 학습 활동·내부 ID 없음
+                self.assertIn("혼동하기 쉬운 점", text)                            # 오답 혼동은 일반화해 본문으로
+                links = [ln for p in d for ln in p.get_links() if str(ln.get("nameddest", "")).startswith("u-")]
+                self.assertTrue(any("-ref-" in ln["nameddest"] for ln in links))   # 근거 번호 → 참고문헌 링크
             before = pdf.read_bytes()
             self.assertEqual(bb.build(cfg, events, st, out)["result"], "skipped")
-            events.append(ev("m1", "memo", "2026-09-18T02:00:00Z", objective="cn.peds.febrile-seizure.workup", text="메모"))
-            r = bb.build(cfg, events, st, out, fail_on="소아청소년과")
+            memo = events + [ev("m1", "memo", "2026-09-18T02:00:00Z", objective="cn.peds.febrile-seizure.workup", text="메모")]
+            self.assertEqual(bb.build(cfg, memo, st, out)["result"], "skipped")   # 학습 기록만 바뀌면 다시 만들지 않는다
+            r = bb.build(cfg, events, st, out, force=True, fail_on="소아청소년과")
             self.assertEqual(r["retry"], ["소아청소년과"])
             self.assertEqual(pdf.read_bytes(), before)            # 실패해도 이전 판 그대로
             man = json.loads((st / "manifest.json").read_text(encoding="utf-8"))
