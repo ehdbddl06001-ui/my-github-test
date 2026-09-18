@@ -43,6 +43,7 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    ```
    python pipelines/indexer.py --check              # frontmatter 계약 검증(필수)
    python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만)
+   python pipelines/review_questions.py --date <오늘> --out /tmp/review.md   # 내용 검토지(판정 아님 — 보고에 경로·REVIEW 신호 수를 남긴다)
    python pipelines/indexer.py                       # SQLite 재빌드
    ```
    - `--check` 나 린터 **ERROR** 가 나면 여기서 멈추고 원인 보고 후 문항을 고친다.

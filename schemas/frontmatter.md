@@ -251,7 +251,7 @@ stem·보기에 누설하지 않는다. 객관식 보기는 같은 부위·같�
 | 필드 | 형태 | 설명 |
 |------|------|------|
 | `vitals` | 리스트 of `{name, value}` | 활력징후. 문제 상단 칩 박스로 렌더 |
-| `labs` | 리스트 of `{name, value, ref}` | 검사 소견 표(항목/값/참고치). **정상 미끼값**을 일부러 섞어 신호·잡음 변별을 강제 |
+| `labs` | 리스트 of `{name, value, ref}` | 검사 소견 표(항목/값/참고치). 그 상황에서 실제로 함께 나오는 **정상값도** 준다 — 무엇을 낮추고 무엇은 넘겨도 되는지는 `design.findings` 에 적는다(정상값의 개수는 난이도가 아니다) |
 | `appendix` | 맵 | 해설 부록. `가이드라인`(여러 줄 → 결정표 박스), `최신지견`(문자열), `참고문헌`(리스트) |
 | `figure` | 맵 | 도형(파형·영상). export가 **결정론적 SVG로 생성**해 문제 상단에 렌더(`type: ecg`·`ecg_signal`·`ecg12`), 또는 `type: image`(docs/ 기준 `src` 의 실제 영상 파일) |
 
@@ -260,7 +260,7 @@ vitals:
   - {name: 혈압, value: "170/110 mmHg"}
 labs:
   - {name: 혈소판, value: "90,000 /mm³", ref: "150,000–400,000"}   # 이상(핵심)
-  - {name: AST, value: "35 U/L", ref: "< 40"}                      # 정상(미끼)
+  - {name: AST, value: "35 U/L", ref: "< 40"}                      # 정상 — HELLP 가능성을 낮춘다(design.findings 에 역할 기록)
 appendix:
   가이드라인: |
     (중증도 × 재태주수 × 태아상태 → 처치, 각주로 약물 factoring)
@@ -289,6 +289,45 @@ figure:
   렌더(`twelve_lead_svg`). **브루가다·STEMI·각차단 등 모양·유도별 진단은 이 경로로만**
   다룬다(합성 금지). 재배포 가능한 **오픈 라이선스만**, `source`·`참고문헌`에 출처 표기.
   새 레코드는 `pipelines/ingest_ecg.py`로 오프라인 1회 커밋(S3 미러는 assets/ecg/README).
+
+## 출제 설계 `design` · 검토 상태 `review_status` (문제형 선택 — 2026-09-19 이후 kmle·usmle·imaging 은 `design` 필수)
+
+문항이 **무엇을 평가하고 어떤 정보가 어떤 역할을 하는지**를 남긴다. 웹은 이것으로 채점 후에만
+「정보를 어떻게 선별했는가」 블록을 그린다(`app.js renderTriage` — 핵심 판단 요약은 펼치고 단서별 분류는 접는다).
+형식은 `pipelines/question_design.py`(린터가 호출)가 검사한다. 계약(`frontmatter.py`)은 「있으면 사전」까지만 본다.
+
+| 필드 | 형태 | 설명 |
+|------|------|------|
+| `design.target` | 문자열 | `진단`·`감별`·`검사 선택`·`치료`·`다음 처치`·`기전`·`금기`·`예후` 중 하나 |
+| `design.decision` | 문자열 | 정답을 고르게 하는 핵심 판단 한 문장 |
+| `design.rival` | letter 또는 리스트(1~2) | 학습자가 실제로 혼동할 오답 |
+| `design.discriminator` | 문자열 | 그 대안과 정답을 가르는 소견(`rival` 이 있으면 필수) |
+| `design.steps` | 정수 1~4 | 정답까지 필요한 판단 단계 — difficulty 의 근거 |
+| `design.findings` | 리스트 of `{item, role, why}` | 주요 정보의 역할(≤ 10). `role` ∈ `key`·`rule_out`·`management`·`background`(여러 개 가능, 첫 역할이 주 역할). `item` 은 발문·활력징후·검사에 **있는 표현 그대로**(그림 소견은 `영상:`·`심전도:` 로 시작) |
+| `design.summary` | 문자열 | 핵심 판단 요약 2~3문장 |
+| `design.switch` | `{choice, condition}` | (선택) 어떤 조건이 바뀌면 다른 보기가 더 적절해지는가 |
+| `review_status` | `unreviewed`·`reviewed`·`needs_revision` | 사람의 **의학적 내용 검토** 상태. 없으면 unreviewed |
+| `reviewed_by` · `review_note` | 문자열 | `reviewed` 일 때 필수 — 누가 무엇을 어떤 근거로 확인했는지 |
+
+`confidence` 는 **출처 신뢰도**이고 `review_status` 는 **사람의 내용 검토**다 — 생성 모델의 confidence 로
+검토 완료를 대신하지 않는다. 검토지는 `python pipelines/review_questions.py <파일|--date YYYY-MM-DD>`.
+
+```yaml
+design:
+  target: 다음 처치
+  decision: "12개월 이상·접종 완료·수막 자극 징후 없는 단순 열성경련 → 요추천자 불필요"
+  rival: B
+  discriminator: "요추천자는 수막 자극 징후·12개월 미만·접종 불완전·항생제 선행일 때 고려"
+  steps: 2
+  findings:
+    - {item: "약 2분간 한 뒤 저절로 멈췄다", role: key, why: "15분 미만 전신 경련"}
+    - {item: "목이 뻣뻣하지 않고", role: rule_out, why: "세균수막염 가능성을 낮춘다(배제는 아니다)"}
+    - {item: "Hib·폐렴구균을 포함해 일정대로 모두 맞았고", role: management, why: "요추천자 기준에 해당하지 않음"}
+    - {item: "CRP", role: background, why: "약간 높지만 바이러스 초기에 흔한 범위"}
+  summary: "…2~3문장…"
+  switch: {choice: B, condition: "목이 뻣뻣하거나 의식이 돌아오지 않으면 요추천자가 필요하다."}
+review_status: unreviewed
+```
 
 ## 원칙
 

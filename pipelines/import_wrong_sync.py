@@ -77,6 +77,8 @@ def render(exam: str, data: dict) -> str:
                     f"| 정답 | {label(w.get('answer'), exam, style)} {_cell(w.get('answerText'))} |"]
             if w.get("coreNote"):
                 out.append(f"| 핵심 정리 | {_cell(w['coreNote'])} |")
+            if w.get("decision"):          # 2026-09-19~ design 이 있는 문항: 핵심 판단 요약
+                out.append(f"| 핵심 판단 | {_cell(w['decision'])} |")
             if w.get("note"):
                 out.append(f"| 틀린 이유(내 메모) | {_cell(w['note'])} |")
             if w.get("device"):

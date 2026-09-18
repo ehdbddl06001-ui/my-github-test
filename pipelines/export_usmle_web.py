@@ -19,6 +19,7 @@ from pathlib import Path
 
 from frontmatter import load
 from gen_ecg_svg import ecg_svg
+from question_design import design_record, review_status
 
 ROOT = Path(__file__).resolve().parent.parent
 USMLE_DIR = ROOT / "content" / "usmle"
@@ -162,6 +163,8 @@ def build_record(path: Path) -> dict | None:
         "vitals": m.get("vitals", []) or [],
         "labs": m.get("labs", []) or [],
         "appendix": m.get("appendix") or None,
+        "design": design_record(m),                 # 채점 후 「정보를 어떻게 선별했는가」(없으면 null)
+        "reviewStatus": review_status(m),
         "figureSvg": figure_svg,
     }
 

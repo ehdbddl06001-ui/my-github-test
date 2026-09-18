@@ -168,6 +168,19 @@ def publish(message: str, branch: str, dry: bool, allow_code: bool,
     if r.returncode:
         return 1
 
+    # 1-b) 바뀐 KMLE·USMLE 문항의 형식 린트 — ERROR 면 멈춘다(2026-09-19~ design 누락·문항에 없는 정보 인용 등).
+    #      WARN·REVIEW(내용 검토 신호)는 보고만 한다. 영상 카드는 빌더 조립기가 원천에서 검사하므로 여기서 빼고,
+    #      지운 파일은 린트할 수 없으니 남아 있는 것만 넘긴다.
+    qs = [p for p in question_paths(content) if p.endswith(".md") and (ROOT / p).exists()]
+    if qs:
+        r = _run([sys.executable, "pipelines/lint_questions.py", *qs])
+        tail = [ln for ln in (r.stdout or "").splitlines() if ln.startswith("린트 완료")]
+        print(" ", tail[-1] if tail else (r.stderr or "린트 결과 없음").strip()[:200])
+        if r.returncode:
+            print(r.stdout[-3000:])
+            print("→ 문항 형식 ERROR — 고친 뒤 다시 게시한다(`python pipelines/lint_questions.py <파일>`).")
+            return 1
+
     # 2) 색인 + 번들 재생성
     for b in BUNDLES:
         if not (ROOT / "pipelines" / b).exists():

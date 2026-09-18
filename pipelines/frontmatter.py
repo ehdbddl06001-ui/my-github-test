@@ -181,6 +181,12 @@ def validate(meta: dict[str, Any]) -> list[str]:
         # 정답이 stem 텍스트 안에 섞여 들어가지 않았는지 최소 확인
         if meta.get("answer_separated") is not True:
             errors.append("answer_separated: true 를 명시해야 함(정답 분리 원칙)")
+        # 출제 설계(선택 필드) — 계약은 「있으면 사전」까지만. 내용 형식은 lint_questions.py(question_design.py)가 본다.
+        if "design" in meta and meta["design"] is not None and not isinstance(meta["design"], dict):
+            errors.append("design 은 사전(dict)이어야 함 — schemas/frontmatter.md 문제형 선택 필드 참고")
+        rs = meta.get("review_status")
+        if rs is not None and rs not in ("unreviewed", "reviewed", "needs_revision"):
+            errors.append(f"review_status 값 오류: {rs} (허용: unreviewed/reviewed/needs_revision)")
 
     if t == "usmle":
         for k in REQUIRED_USMLE:

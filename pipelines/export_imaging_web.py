@@ -32,6 +32,7 @@ from export_usmle_web import (
     explanation_text,
     split_stem,
 )
+from question_design import design_record, review_status
 
 ROOT = Path(__file__).resolve().parent.parent
 IMAGING_DIR = ROOT / "content" / "imaging"
@@ -94,6 +95,8 @@ def build_record(path: Path) -> dict | None:
         "vitals": m.get("vitals", []) or [],
         "labs": m.get("labs", []) or [],
         "appendix": m.get("appendix") or None,
+        "design": design_record(m),
+        "reviewStatus": review_status(m),
         "figureImg": figure_record(m.get("figure"), path.name),
         "attribution": {
             "dataset": str(attribution.get("dataset", "") or ""),
