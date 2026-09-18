@@ -25,3 +25,6 @@ projects/
 .private/
 # Drive listing 스냅샷(세션이 MCP로 채우는 임시 입력)
 state/.anatomy_listing.json
+# 과별 PDF 학습서 산출물(드라이브가 최신본 보관) · 드라이브 수신함에서 받아 온 학습 기록 원본
+build/
+state/learning_inbox/

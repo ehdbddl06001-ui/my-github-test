@@ -34,6 +34,7 @@ from typing import Iterable
 
 from frontmatter import load, Doc, QUESTION_TYPES
 from question_design import format_findings, review_flags
+from concepts import load_concepts, question_learning_errors
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
@@ -201,8 +202,23 @@ def lint_doc(d: Doc) -> list[Finding]:
     # 10) 내용 검토 신호 — 실패로 치지 않는다
     for code, msg in review_flags(m):
         findings.append(Finding("REVIEW", code, msg))
+    # 11) 오답 뒤 학습 흐름 필드(objective·distractors·case_path) — 있으면 형식·도식 정합성을 본다
+    if any(k in m for k in ("objective", "distractors", "case_path")):
+        concept = _concepts().get(str(m.get("objective") or ""))
+        for level, msg in question_learning_errors(m, concept):
+            findings.append(Finding(level, "learning", msg))
 
     return findings
+
+
+_CONCEPT_CACHE: dict | None = None
+
+
+def _concepts() -> dict:
+    global _CONCEPT_CACHE
+    if _CONCEPT_CACHE is None:
+        _CONCEPT_CACHE, _ = load_concepts()
+    return _CONCEPT_CACHE
 
 
 def iter_question_docs(paths: Iterable[Path]) -> list[Doc]:

@@ -23,7 +23,8 @@ except ImportError:  # pragma: no cover
 REQUIRED_COMMON = ["id", "type", "topic", "date", "confidence"]
 # 문제형(kmle/usmle) 문서에 추가로 필수인 필드
 REQUIRED_QUESTION = ["stem", "choices", "answer"]
-VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "anatomy", "imaging"}
+VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab", "anatomy", "imaging", "concept"}
+# concept = 학습 목표 단위 개념 정리본(content/concepts/). 세부 계약은 pipelines/concepts.py 가 본다.
 VALID_CONFIDENCE = {"high", "medium", "low"}
 # imaging = 오픈데이터 실제 영상(ECG·CT·피부·병리·CTG) 문항. 의대_시험지_제작 아침 루틴이
 # 만든 세트를 medkos_export 가 카드로 옮긴다. 문제형 계약(stem/choices/answer)을 그대로 따른다.

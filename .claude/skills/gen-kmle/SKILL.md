@@ -176,6 +176,16 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 확인한 문항만 `review_status: reviewed`·`reviewed_by`·`review_note` 를 적는다(린터가 근거 없는 reviewed 를 막는다).
 근거를 확인하지 못한 임상적 주장이 있으면 `needs_revision` 으로 둔다.
 
+### 3) 오답 뒤 학습 흐름 필드(선택 — 가능하면 붙인다)
+- `objective`: 이 문항이 평가하는 **학습 목표**의 정리본 id(`content/concepts/<과>/cn.*.md`). 같은 원리를 묻는 문항은
+  같은 id 로 모은다. 질환명이 같아도 목표(진단/치료/검사 선택)가 다르면 다른 id. 정리본이 없으면 id 만 붙여도 된다 —
+  학습서에 「정리본 작성 대기」로 잡히고, 다음에 정리본(`schemas/frontmatter.md` concept 계약)을 쓴다.
+- `distractors`: 보기별 `tempting`·`answer_first`·`discriminator`(+타당할 때만 `when_right`, 도식 노드 `split`).
+  「학습자가 ~를 모른다」 식으로 쓰지 않는다(린터 ERROR). `case_path` 는 정리본 도식의 노드를 **선을 따라** 적고,
+  문항이 주지 않은 정보는 `state: unknown` 으로 남긴다(음성으로 채우지 않는다).
+- 정리본의 출처는 **실제로 확인한 것만**(PubMed·기관 쪽) 적고 `checked` 에 무엇을 대조했는지 쓴다. 확인 못 한 세부는
+  「본문 대조 전(검토 항목)」으로 적는다. `review_status: unreviewed` 로 두고 사람만 reviewed 로 바꾼다.
+
 ### 커밋 전 문항 자가 점검(체크리스트)
 - [ ] `design` 을 **문항보다 먼저** 정했고, 보기가 그 판단을 실제로 가르는가?
 - [ ] 혼동 대안(`rival`)이 실제로 경쟁하고, 구분 소견이 문항 안에 있는가?

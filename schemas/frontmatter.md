@@ -329,6 +329,40 @@ design:
 review_status: unreviewed
 ```
 
+## 오답 뒤 학습 흐름 — 문항 선택 필드 `objective` · `version` · `distractors` · `case_path` (2026-09-18)
+
+채점 뒤 앱이 「오답 확인 → 선택한 오답과 정답 비교 → 개념 정리본 → 판단 도식 → 인출 확인 → 변형 문제 → 복습 기록」을
+그린다. 없으면 있는 것만 보여 준다(옛 문항은 그대로 동작). 형식은 `pipelines/concepts.py`(린터가 호출)가 본다.
+
+```yaml
+objective: cn.peds.febrile-seizure.workup   # 개념 정리본 id(학습 목표 단위 — 질환명으로 합치지 않는다)
+version: 1                                   # 문항을 고치면 올린다(학습 기록이 어느 판을 풀었는지 남긴다)
+distractors:                                 # 정답이 아닌 보기별 비교. 학습자가 「모른다」고 단정하지 않는다
+  B:
+    tempting: "왜 끌리는가"
+    answer_first: "왜 정답이 먼저인가"
+    discriminator: "가르는 소견(문항 안의 정보)"
+    when_right: "이 보기가 맞는 경우 — 의학적으로 타당할 때만"
+    split: cns                               # 정리본 도식에서 이 보기와 갈리는 노드 id
+case_path:                                   # 이 사례가 도식을 지나는 길(선을 따라 이어져야 한다)
+  visit:
+    - {node: cns, state: normal, note: "목경직 없음 · 대천문 편평"}   # state: path·normal·abnormal·unknown·not_done
+    - {node: risk, state: unknown, note: "항생제 선행 투여는 문항에 정보 없음"}  # 정보 없음을 음성으로 채우지 않는다
+```
+
+## 개념 정리본(`concept`) 계약 — `content/concepts/<과>/<id>.md`
+
+id 는 `cn.<과>.<주제>.<학습목표>`(파일 이름 = id). 같은 질환이라도 평가 목표가 다르면 다른 정리본이다.
+필수: `title` · `objective` · `objective_kind`(design.target 과 같은 목록) · `condition` · `version`(내용을 바꾸면 올림) ·
+`review_status`(reviewed 는 사람의 `reviewed_by`·`review_note` — 모델 이름이면 거부) · `summary`(빠른 요약 목록) ·
+`exams`(kmle/usmle) · `sources`(각 `id·org·title·year·checked_at·checked` + https url/doi/pmid).
+선택: `criteria`(각 `id·name·kind·population·statement·exceptions·source(=sources.id)·basis(current|past_exam)·exams`) ·
+`diagram`(`pipelines/decision_diagram.py` 규격 — 세로·판단 노드 갈래 2개 이상·라벨 필수·「추가 정보 필요」 노드 필수) ·
+`checks`(인출 확인 `{q, a}`) · `variants`(변형 문제 — 일반 덱에 섞이지 않는다) · `see_also`(함께 볼 과) ·
+`sources[].watch.pattern`(출처 쪽의 판·날짜 문자열 — `check_sources.py` 가 개정 신호로 본다).
+본문은 `## 정의` · `## 병태생리` · `## 기전에서 소견으로` · `## 감별` · `## 검사` · `## 치료` · `## 권고와 예외` ·
+`## (심화) …`. 본문 HTML 은 허용 태그만 남긴다(스크립트·속성·링크 제거 — 출처 링크는 `sources` 에서만).
+
 ## 원칙
 
 1. **정답 분리**: `stem`에는 정답을 유추시키는 표현을 넣지 않는다. 정답·해설은

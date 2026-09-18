@@ -363,6 +363,64 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.derm.pityriasis-versicolor.treatment",
+  "distractors": {
+   "B": {
+    "tempting": "비늘 있는 반점을 습진·피부염으로 보면 스테로이드가 떠오른다.",
+    "answer_first": "KOH 에서 짧은 균사와 포자 무리가 보인다 — 곰팡이 감염이고, 스테로이드는 말라세지아 증식을 도와 악화시킨다.",
+    "discriminator": "KOH 양성.",
+    "when_right": "",
+    "split": "koh"
+   },
+   "C": {
+    "tempting": "「경구 항진균제」라서 곰팡이를 확실히 없앨 것 같다.",
+    "answer_first": "그리세오풀빈은 피부사상균 약이라 효모인 말라세지아에 효과가 없다. 이 환자는 국한·첫 발병이라 국소제가 1차다.",
+    "discriminator": "원인균의 종류(효모 vs 피부사상균)와 범위.",
+    "when_right": "피부사상균 감염, 예를 들어 두부백선이라면 그리세오풀빈이 쓰인다.",
+    "split": "extent"
+   },
+   "D": {
+    "tempting": "햇볕에 타도 하얗게 남는 반점이 백반증처럼 보인다.",
+    "answer_first": "비늘이 있고 KOH 가 양성이다 — 백반증(비늘 없음·KOH 음성)이 아니다.",
+    "discriminator": "비늘 유무와 KOH.",
+    "when_right": "비늘 없는 완전 탈색에 KOH 음성인 백반증이라면 국소 타크로리무스가 쓰일 수 있다.",
+    "split": "koh"
+   },
+   "E": {
+    "tempting": "피부의 기생충·진드기 감염을 떠올리면 경구 약이 끌린다.",
+    "answer_first": "가렵지 않고 KOH 에서 균사·포자가 보인다 — 옴의 소견이 없다.",
+    "discriminator": "야간 소양·굴·진드기 대 비늘 반점·KOH 양성.",
+    "when_right": "손가락 사이·손목의 심한 야간 소양과 굴이 있는 옴이라면 이버멕틴이 쓰일 수 있다.",
+    "split": "koh"
+   }
+  },
+  "casePath": [
+   {
+    "node": "start",
+    "state": "path",
+    "note": "가슴·등 위쪽·어깨의 연갈색~탈색 반점, 긁으면 미세한 비늘"
+   },
+   {
+    "node": "koh",
+    "state": "abnormal",
+    "note": "짧고 굵은 균사와 둥근 포자 무리 다수(우드등 황금색 형광은 보조)"
+   },
+   {
+    "node": "extent",
+    "state": "path",
+    "note": "몸통 위쪽·어깨에 국한, 다른 병력 없음. 이전 발병·치료 이력은 문항에 명시 없음"
+   },
+   {
+    "node": "topical",
+    "state": "path",
+    "note": "정답 A — 국소 케토코나졸"
+   },
+   {
+    "node": "after",
+    "state": "path",
+    "note": "색 회복은 수개월"
+   }
+  ],
   "figureSvg": ""
  },
  {
@@ -37579,6 +37637,69 @@ window.KMLE_CONTENT_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.peds.febrile-seizure.workup",
+  "distractors": {
+   "B": {
+    "tempting": "열과 발작이 함께 있으면 수막염을 놓치면 안 된다는 생각이 먼저 든다.",
+    "answer_first": "이 아이는 목경직이 없고 대천문이 편평하며 곧 깨어 논다 — 수막염을 시사하는 징후가 없는 단순형이다.",
+    "discriminator": "수막 자극 징후·의식 회복 지연의 유무. 없다는 확인이 요추천자를 일상 검사에서 빼는 근거다.",
+    "when_right": "목경직·처짐·의식 회복 지연이 있거나, 6~12개월에서 접종 미완료·불명이거나 항생제를 먼저 먹었다면 요추천자를 고려한다(AAP 2011).",
+    "split": "cns"
+   },
+   "C": {
+    "tempting": "발작이니 뇌파로 뇌전증을 확인해야 할 것 같다.",
+    "answer_first": "단순 열성경련에서 뇌파는 재발·뇌전증을 예측하지 못해 일상적으로 하지 않는다.",
+    "discriminator": "단순형 조건(전신·15분 미만·24시간 내 1회)을 채우면 뇌파의 이득이 없다.",
+    "when_right": "복합형이거나 무열성 발작이 반복되면 개별 평가에서 뇌파를 고려할 수 있다.",
+    "split": "simple"
+   },
+   "D": {
+    "tempting": "뇌에 구조적 문제가 있는지 한 번은 봐야 안심될 것 같다.",
+    "answer_first": "국소 신경학적 이상·외상 징후가 없고 의식이 빨리 돌아왔다 — 영상의 적응이 없다.",
+    "discriminator": "국소 결손·의식 회복 지연의 유무.",
+    "when_right": "국소 결손이 남거나 외상 징후·두개내압 상승 소견이 있으면 영상이 필요하다.",
+    "split": "cns"
+   },
+   "E": {
+    "tempting": "재발을 막아 주는 약이 있으면 써야 할 것 같다.",
+    "answer_first": "단순 열성경련에서 예방적 항경련제는 이득보다 부작용이 커 권하지 않는다.",
+    "discriminator": "양성 경과 — 재발해도 뇌 손상을 남기지 않는다.",
+    "when_right": "",
+    "split": "simple"
+   }
+  },
+  "casePath": [
+   {
+    "node": "start",
+    "state": "path",
+    "note": "18개월, 체온 39.6 ℃"
+   },
+   {
+    "node": "abc",
+    "state": "path",
+    "note": "약 2분 만에 저절로 멈춤"
+   },
+   {
+    "node": "cns",
+    "state": "normal",
+    "note": "곧 깨어 보호자를 알아봄 · 목경직 없음 · 국소 이상 없음 · 대천문 편평"
+   },
+   {
+    "node": "simple",
+    "state": "path",
+    "note": "전신·약 2분·내원 시점까지 1회. 24시간 내 재발 여부는 문항에 명시 없음"
+   },
+   {
+    "node": "risk",
+    "state": "unknown",
+    "note": "18개월이라 접종 항목은 6~12개월 조건에 해당하지 않는다. 항생제 선행 투여는 문항에 정보 없음"
+   },
+   {
+    "node": "ask",
+    "state": "path",
+    "note": "문항은 여기서 더 알려 주지 않는다 — 보기 중 확인 행위가 없어 단순형 원칙(A)이 가장 적절"
+   }
+  ],
   "figureSvg": ""
  },
  {
@@ -78349,6 +78470,69 @@ window.KMLE_CONTENT_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.peds.febrile-seizure.workup",
+  "distractors": {
+   "A": {
+    "tempting": "재발을 막아 주는 약이 있으면 써야 할 것 같다.",
+    "answer_first": "단순 열성경련에서 예방적 항경련제는 이득보다 부작용이 커 권하지 않는다.",
+    "discriminator": "양성 경과 — 재발해도 뇌 손상을 남기지 않는다.",
+    "when_right": "",
+    "split": "simple"
+   },
+   "C": {
+    "tempting": "발작이니 뇌파로 뇌전증을 확인해야 할 것 같다.",
+    "answer_first": "단순형에서 뇌파는 진단·예후에 기여하지 않는다.",
+    "discriminator": "단순형 조건을 모두 채우는지.",
+    "when_right": "복합형·무열성 발작 반복이면 개별 평가에서 고려.",
+    "split": "simple"
+   },
+   "D": {
+    "tempting": "뇌 구조를 한 번은 봐야 안심될 것 같다.",
+    "answer_first": "국소 신경학적 이상이 없고 명료하게 회복했다.",
+    "discriminator": "국소 결손·의식 회복 지연의 유무.",
+    "when_right": "국소 결손·외상 징후가 있으면 영상이 필요하다.",
+    "split": "cns"
+   },
+   "E": {
+    "tempting": "열과 발작이면 수막염을 배제해야 할 것 같다.",
+    "answer_first": "목이 뻣뻣하지 않고 명료하게 회복했다 — 수막염 징후가 없다. 「일상적」 요추천자는 권하지 않는다.",
+    "discriminator": "수막 자극 징후의 유무, 그리고 6~12개월 접종·항생제 선행 투여 같은 배경.",
+    "when_right": "수막 징후가 있거나, 6~12개월에서 접종 미완료·불명, 항생제 선행 투여라면 요추천자를 고려한다(AAP 2011).",
+    "split": "cns"
+   }
+  },
+  "casePath": [
+   {
+    "node": "start",
+    "state": "path",
+    "note": "20개월, 체온 39.4 ℃"
+   },
+   {
+    "node": "abc",
+    "state": "path",
+    "note": "2분 뒤 스스로 멈춤"
+   },
+   {
+    "node": "cns",
+    "state": "normal",
+    "note": "또렷하고 잘 논다 · 목경직 없음 · 국소 이상 없음"
+   },
+   {
+    "node": "simple",
+    "state": "path",
+    "note": "전신·2분·처음. 24시간 내 재발 여부는 문항에 명시 없음"
+   },
+   {
+    "node": "risk",
+    "state": "unknown",
+    "note": "20개월 — 접종 항목은 6~12개월 조건 밖. 항생제 선행 투여는 문항에 정보 없음(열의 원인은 상기도감염)"
+   },
+   {
+    "node": "ask",
+    "state": "path",
+    "note": "문항은 확인 정보를 주지 않는다 — 보기 중 단순형 원칙(B)이 가장 적절"
+   }
+  ],
   "figureSvg": ""
  },
  {
@@ -83257,6 +83441,69 @@ window.KMLE_CONTENT_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.neph.hyperkalemia.first-step",
+  "distractors": {
+   "B": {
+    "tempting": "칼륨을 실제로 낮추는 첫 약이라 「치료」처럼 느껴진다.",
+    "answer_first": "텐트형 T파가 있다 — 지금 급한 것은 수치가 아니라 다음 몇 분의 부정맥이다. 칼슘이 심근막을 먼저 안정화한다.",
+    "discriminator": "심전도 변화의 유무. 변화가 있으면 안정화가 이동보다 앞선다.",
+    "when_right": "심전도 변화가 없는 중증 고칼륨혈증이라면 인슐린+포도당이 첫 약이 될 수 있다.",
+    "split": "ecg"
+   },
+   "C": {
+    "tempting": "칼륨을 몸 밖으로 빼는 약이다.",
+    "answer_first": "결합제는 작용이 느려 심전도 변화가 있는 응급의 첫 처치가 될 수 없다.",
+    "discriminator": "작용 시간 — 분 단위 위험에 시간 단위 약.",
+    "when_right": "",
+    "split": "remove"
+   },
+   "D": {
+    "tempting": "빠르게 칼륨을 세포 안으로 넣는다.",
+    "answer_first": "살부타몰은 이동의 보조 수단이지 막 안정화가 아니다.",
+    "discriminator": "안정화와 이동의 구분.",
+    "when_right": "",
+    "split": "ecg"
+   },
+   "E": {
+    "tempting": "곧 투석할 환자라 투석이 근본 해결처럼 보인다.",
+    "answer_first": "투석은 준비·시행에 시간이 걸린다. 그동안 칼슘으로 심장을 먼저 보호한다.",
+    "discriminator": "시간 순서 — 안정화 → 이동 → 제거.",
+    "when_right": "안정화·이동 처치 뒤에도 고칼륨혈증이 지속되거나 말기 신부전이면 투석이 최종 제거 수단이다.",
+    "split": "remove"
+   }
+  },
+  "casePath": [
+   {
+    "node": "start",
+    "state": "path",
+    "note": "칼륨 7.3 mEq/L, 만성콩팥병(투석 전)"
+   },
+   {
+    "node": "monitor",
+    "state": "path",
+    "note": "맥박 56회/분, 심전도 시행"
+   },
+   {
+    "node": "ecg",
+    "state": "abnormal",
+    "note": "좁고 뾰족한(텐트형) T파"
+   },
+   {
+    "node": "calcium",
+    "state": "path",
+    "note": "정답 A — 가장 먼저"
+   },
+   {
+    "node": "shift",
+    "state": "path",
+    "note": "다음 단계(보기 B·D)"
+   },
+   {
+    "node": "remove",
+    "state": "path",
+    "note": "그다음(보기 C·E)"
+   }
+  ],
   "figureSvg": ""
  },
  {
@@ -87469,6 +87716,69 @@ window.KMLE_CONTENT_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.neph.hyperkalemia.first-step",
+  "distractors": {
+   "B": {
+    "tempting": "칼륨을 몸 밖으로 빼는 약이다.",
+    "answer_first": "경구 결합제는 작용이 느리다. 넓어진 QRS 가 있는 응급의 첫 약이 아니다.",
+    "discriminator": "작용 시간 — 분 단위 위험에 시간 단위 약.",
+    "when_right": "",
+    "split": "remove"
+   },
+   "C": {
+    "tempting": "수액으로 칼륨을 희석·배설시킬 수 있을 것 같다.",
+    "answer_first": "투석 중인 환자는 소변으로 칼륨을 뺄 수 없고, 대량 수액은 용적 과부하를 부른다.",
+    "discriminator": "소변이 나오는가(신기능).",
+    "when_right": "",
+    "split": "remove"
+   },
+   "D": {
+    "tempting": "이뇨제로 칼륨 배설을 늘린다.",
+    "answer_first": "투석 의존 환자에서는 효과가 제한적이고, 무엇보다 안정화가 먼저다.",
+    "discriminator": "소변량 유지 여부와 시간 순서.",
+    "when_right": "소변이 나오는 환자에서 제거 단계의 보조 수단이 될 수 있다.",
+    "split": "remove"
+   },
+   "E": {
+    "tempting": "인슐린이 칼륨을 세포 안으로 넣는다.",
+    "answer_first": "인슐린은 포도당과 함께 정맥으로 주는 이동 단계의 약이다. 넓어진 QRS 에서는 칼슘이 먼저다.",
+    "discriminator": "안정화 → 이동 순서, 그리고 인슐린은 포도당과 함께·정맥으로.",
+    "when_right": "",
+    "split": "ecg"
+   }
+  },
+  "casePath": [
+   {
+    "node": "start",
+    "state": "path",
+    "note": "칼륨 7.2 mmol/L, 투석 중"
+   },
+   {
+    "node": "monitor",
+    "state": "path",
+    "note": "심전도 시행"
+   },
+   {
+    "node": "ecg",
+    "state": "abnormal",
+    "note": "넓어진 QRS + 뾰족한 T파"
+   },
+   {
+    "node": "calcium",
+    "state": "path",
+    "note": "정답 A — 가장 먼저"
+   },
+   {
+    "node": "shift",
+    "state": "path",
+    "note": "다음 단계(보기 E 는 이 단계를 잘못된 방법으로)"
+   },
+   {
+    "node": "remove",
+    "state": "path",
+    "note": "투석 환자의 최종 제거는 투석"
+   }
+  ],
   "figureSvg": ""
  },
  {

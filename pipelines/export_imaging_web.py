@@ -33,6 +33,7 @@ from export_usmle_web import (
     split_stem,
 )
 from question_design import design_record, review_status
+from concepts import learning_fields
 
 ROOT = Path(__file__).resolve().parent.parent
 IMAGING_DIR = ROOT / "content" / "imaging"
@@ -97,6 +98,7 @@ def build_record(path: Path) -> dict | None:
         "appendix": m.get("appendix") or None,
         "design": design_record(m),
         "reviewStatus": review_status(m),
+        **learning_fields(m),                 # 오답 뒤 학습 흐름(objective·distractors·casePath)
         "figureImg": figure_record(m.get("figure"), path.name),
         "attribution": {
             "dataset": str(attribution.get("dataset", "") or ""),

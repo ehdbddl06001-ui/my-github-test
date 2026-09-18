@@ -374,6 +374,7 @@ function grade(chosenIdx, btn) {
     recordWrong(q, chosenIdx);
     sessionWrong.push(q);
   }
+  if (typeof LEARN === "object") LEARN.onAnswer(q, chosenIdx, ok);   // 덧붙이기만 하는 학습 기록
   showGraded(chosenIdx);
   updateWrongCount();
   saveProgress();
@@ -410,8 +411,15 @@ function renderExplanation(q, chosenIdx, ok) {
     const src = q.source ? `<div class="src">출처: ${escapeHtml(q.source)}</div>` : "";
     bodyHtml = rows.join("") + src + renderTriage(q) + renderAppendix(q.appendix);
   }
-  el.innerHTML = verdict + bodyHtml + attributionHtml(q);
+  // 오답이면 해설보다 먼저 「오답 확인 → 선택한 오답과 정답 비교 → 정리본」 흐름을, 정답이면 표시(찍었다 등)만 붙인다.
+  let learnHtml = "";
+  try {
+    if (typeof LEARN === "object") learnHtml = ok ? LEARN.flagRowHtml(q) : LEARN.wrongPanelHtml(q, chosenIdx);
+  } catch (e) { learnHtml = ""; }             // 학습 흐름 오류가 해설 표시를 막지 않게
+  el.innerHTML = ok ? verdict + bodyHtml + attributionHtml(q) + learnHtml
+                    : verdict + learnHtml + `<div class="expl-head">해설</div>` + bodyHtml + attributionHtml(q);
   el.classList.remove("hidden");
+  try { if (typeof LEARN === "object") LEARN.bind(el, q, chosenIdx); } catch (e) { /* 무시 — 해설은 이미 보인다 */ }
 }
 
 // 해설의 '오답감별' 값을 보기(A~E·①~⑤)별로 각 줄에 나눠 가독성을 높인다.
@@ -709,6 +717,38 @@ function finish() {
   window.scrollTo(0, 0);
 }
 
+/* ---------- 단일 문항(학습서 링크 ?q=<id> · 복습 목록) ---------- */
+function openSingleQuestion(id) {
+  const pools = [["kmle", KMLE], ["usmle", USMLE], ["imaging", IMAGING]];
+  for (const [e, arr] of pools) {
+    const q = arr.find((x) => x.id === id);
+    if (!q) continue;
+    if (exam() !== e) { $("exam").value = e; onExamChange(); }
+    deck = [q]; pos = 0; correctCnt = 0; sessionWrong = []; answers = [];
+    ["setup", "result", "wrongbook", "review"].forEach((s) => { if ($(s)) hide($(s)); });
+    show($("quiz"));
+    renderQuestion();
+    window.scrollTo(0, 0);
+    return true;
+  }
+  alert(`문항 ${id} 을 찾지 못했습니다.`);
+  return false;
+}
+
+/* ---------- 개념 복습 화면(복습 필요 · 복습 중 · 재확인 완료) ---------- */
+function renderReview(openConcept) {
+  ["setup", "quiz", "result", "wrongbook"].forEach((s) => hide($(s)));
+  show($("review"));
+  if (typeof LEARN !== "object") { $("rvList").textContent = "학습 흐름 스크립트를 불러오지 못했습니다."; return; }
+  LEARN.renderReviewList($("rvList"), "all");
+  if (openConcept) {
+    const box = $("rvConcept");
+    LEARN.renderConcept(box, openConcept, null, null);
+    box.hidden = false;
+  }
+  window.scrollTo(0, 0);
+}
+
 /* ---------- 오답노트 화면 ---------- */
 function renderWrongbook() {
   hide($("setup")); hide($("quiz")); hide($("result"));
@@ -889,7 +929,7 @@ function applyQueryParams() {
   if (e && [...$("exam").options].some((o) => o.value === e)) $("exam").value = e;
   const m = p.get("mode");
   if (m && [...$("mode").options].some((o) => o.value === m)) $("mode").value = m;
-  return p.get("start") === "1";
+  return { start: p.get("start") === "1", q: p.get("q") || "", concept: p.get("concept") || "" };
 }
 
 /* ---------- 초기화 ---------- */
@@ -903,7 +943,7 @@ function init() {
     const o = [...$("exam").options].find((x) => x.value === "imaging");
     if (o) o.textContent = "🩻 영상 (아직 문항 없음)";
   }
-  const autoStart = applyQueryParams();
+  const qp = applyQueryParams();
   $("exam").onchange = onExamChange;
   $("step").onchange = onModeChange;
   $("style").onchange = onModeChange;
@@ -945,7 +985,19 @@ function init() {
   }
   updateWrongCount();
   window.addEventListener("online", () => { if (SYNC.available !== false) syncAll(true); });
-  if (autoStart) startQuiz();
+  if ($("reviewOpenBtn")) $("reviewOpenBtn").onclick = () => renderReview();
+  if ($("rvBackBtn")) $("rvBackBtn").onclick = () => { hide($("review")); show($("setup")); onModeChange(); };
+  if ($("rvExportBtn")) $("rvExportBtn").onclick = () => LEARN.exportJson();
+  if ($("rvImportFile")) $("rvImportFile").onchange = (ev) => {
+    const f = ev.target.files && ev.target.files[0];
+    if (!f) return;
+    LEARN.importJson(f, (n) => { alert(n < 0 ? "읽을 수 없는 파일입니다." : `기록 ${n}건을 합쳤습니다(기존 기록은 그대로).`); renderReview(); });
+    ev.target.value = "";
+  };
+  if (typeof LEARN === "object") LEARN.syncLearning(true);
+  if (qp.q) openSingleQuestion(qp.q);
+  else if (qp.concept) renderReview(qp.concept);
+  else if (qp.start) startQuiz();
 }
 
 document.addEventListener("DOMContentLoaded", init);
