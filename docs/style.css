@@ -430,3 +430,8 @@ button.small{padding:6px 10px; font-size:.85rem}
 .rv-filter{margin:6px 0}
 .filebtn{position:relative; overflow:hidden; display:inline-block; border:1px solid var(--line); border-radius:8px; padding:7px 12px; cursor:pointer; font-size:.92rem}
 .filebtn input{position:absolute; inset:0; opacity:0; cursor:pointer}
+
+/* 제목 라벨(함정·학습목표·근거·출처·결정적 차이 등) 뒤의 설명은 다음 줄에서 시작한다 — 2026-09-19 사용자 요청 */
+.explanation .expl-item > .k,.appendix .item > .k,.triage-sum > .k,
+.learn-row > .k,.dc-row > .k,.cn-goal > .k{display:block; min-width:0; margin:0 0 3px}
+.learn-row,.dc-row{margin:8px 0}
