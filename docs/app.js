@@ -433,7 +433,27 @@ function fmtExplValue(v) {
     s = s.replace(/\s+(?=(?:\([A-E]\)|[A-E]\s+\S|[①②③④⑤]))/g, "\n").replace(/^\n+/, "");
     return `<span class="optlines">${s}</span>`;
   }
-  return s;
+  return splitEnums(s);
+}
+
+// 한 문단 안에 (1)·(2)… 또는 ①·②… 로 나열한 항목이 있으면 항목마다 줄을 바꾼다(2026-09-19 사용자 요청).
+// (1)과 (2)가 함께 있을 때만 — 「127(2):389」 같은 쪽 표기나 「(1C)」 같은 권고 등급은 건드리지 않는다.
+// html 은 이미 escape·정화된 글이어야 한다(여기서는 <br>·<span> 만 더한다).
+const ENUM_RE = /(^|[\s:;,.—])(\((?:[1-9]|1[0-9])\)|[①-⑳])(?=\s)/g;
+function splitEnums(html) {
+  const found = new Set();
+  String(html).replace(ENUM_RE, (m, pre, mk) => { found.add(mk); return m; });
+  if (!((found.has("(1)") && found.has("(2)")) || (found.has("①") && found.has("②")))) return html;
+  return String(html).replace(ENUM_RE, (m, pre, mk, off) => {
+    const keep = pre.trim();                         // 「:」「;」 같은 앞 문장부호는 줄 끝에 남긴다
+    const brk = off === 0 && !keep ? "" : "<br>";
+    return `${keep}${brk}<span class="enum">${mk}</span>`;
+  });
+}
+// 깊이 해설(원리·비교): <br> 로 나뉜 덩어리를 문단으로 띄우고, 문단 안의 나열 항목은 줄을 바꾼다.
+function deepBodyHtml(raw) {
+  return sanitizeHtml(raw).split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean)
+    .map((s) => `<p class="dp">${splitEnums(s)}</p>`).join("");
 }
 
 // 깊이 해설(정리본 해설지 규칙): 원리·비교는 HTML(<b>·<br>·<table>)을 허용하되 화이트리스트로 정화해 그린다.
@@ -462,7 +482,7 @@ function sanitizeHtml(html) {
 function renderExplItems(items) {
   return items.map((it) => {
     const deep = DEEP_KEYS[it.k];
-    if (deep) return `<div class="expl-item deep ${deep[0]}"><div class="k">${deep[1]}</div><div class="deep-body">${sanitizeHtml(it.v)}</div></div>`;
+    if (deep) return `<div class="expl-item deep ${deep[0]}"><div class="k">${deep[1]}</div><div class="deep-body">${deepBodyHtml(it.v)}</div></div>`;
     const key = it.k === "오답 이유" ? "선지별로 틀린 이유 — 정답이 되려면 무엇이 달라져야 하는가" : it.k;
     return `<div class="expl-item"><span class="k">${escapeHtml(key)}</span>${fmtExplValue(it.v)}</div>`;
   }).join("");

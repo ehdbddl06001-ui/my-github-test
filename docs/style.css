@@ -435,3 +435,8 @@ button.small{padding:6px 10px; font-size:.85rem}
 .explanation .expl-item > .k,.appendix .item > .k,.triage-sum > .k,
 .learn-row > .k,.dc-row > .k,.cn-goal > .k{display:block; min-width:0; margin:0 0 3px}
 .learn-row,.dc-row{margin:8px 0}
+
+/* 원리·비교 해설: 문단 사이를 띄우고, (1)·(2)… 나열 항목은 줄마다 — 2026-09-19 */
+.deep-body .dp{margin:0 0 10px}
+.deep-body .dp:last-child{margin-bottom:0}
+.explanation .enum{font-weight:700; color:#8fb3ff; margin-right:2px}
