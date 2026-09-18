@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2573,
+  "total": 2572,
   "byType": {
    "anatomy": 695,
    "kmle": 1035,
-   "imaging": 63,
+   "imaging": 62,
    "concept": 3,
    "usmle": 150,
    "paper": 610,
@@ -53,7 +53,6 @@ window.MEDKOS_INDEX = {
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
-   "응급·중환자": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -65,11 +64,12 @@ window.MEDKOS_INDEX = {
    "신경": 1,
    "신장·비뇨기": 1,
    "예방의학·역학": 1,
+   "응급·중환자": 1,
    "피부과": 1,
    "혈액·종양": 1
   },
   "byConfidence": {
-   "high": 1726,
+   "high": 1725,
    "medium": 798,
    "low": 49
   },
@@ -1147,24 +1147,6 @@ window.MEDKOS_INDEX = {
    "path": "content/imaging/2026/imaging-2026-0056.md",
    "snippet": "6세 남아가 2시간 전 놀이터에서 넘어지며 왼손을 짚은 뒤 왼쪽 손목이 아프다고 하여 부모와 함께 응급실에 왔다. 다른 곳을 다치지는 않았다. 진찰에서 왼쪽 손목 등쪽에 경한 부종과 원위 요골 부위의 압통이 있으나 눈에 띄는 변형은 없고, 손가락의 움직임·감각·모세혈관 재충만은 정상이다. 왼쪽 손목 전후면 단순 X선 사진은 그림과 같다. 가장 적절한 치료는? A. 단상지 석고 붕대로 6주 고정 B. 손목 자기공명영상으로 성장판",
    "text": "소아과 소아청소년 — 손목 외상 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 6세 남아가 2시간 전 놀이터에서 넘어지며 왼손을 짚은 뒤 왼쪽 손목이 아프다고 하여 부모와 함께 응급실에 왔다. 다른 곳을 다치지는 않았다. 진찰에서 왼쪽 손목 등쪽에 경한 부종과 원위 요골 부위의 압통이 있으나 눈에 띄는 변형은 없고, 손가락의 움직임·감각·모세혈관 재충만은 정상이다. 왼쪽 손목 전후면 단순 X선 사진은 그림과 같다. 가장 적절한 치료는? A. 단상지 석고 붕대로 6주 고정 B. 손목 자기공명영상으로 성장판 손상 평가 C. 제거 가능한 손목 부목으로 3주 고정 D. 도수 정복 후 장상지 석고 고정 E. 수술적 정복과 금속핀 고정"
-  },
-  {
-   "id": "imaging-2026-0055",
-   "type": "imaging",
-   "unit": "",
-   "topic": "응급·중환자",
-   "subtopic": "응급·중환자 — 급성 저산소성 호흡부전",
-   "tags": [
-    "opendata",
-    "usmle_style",
-    "dx"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
-   "confidence": "high",
-   "date": "2026-09-18",
-   "path": "content/imaging/2026/imaging-2026-0055.md",
-   "snippet": "A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature i",
-   "text": "응급·중환자 응급·중환자 — 급성 저산소성 호흡부전 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature is 38.6°C, pulse is 118/min, respirations are 34/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 84% on room air and rises to 90% on a nonrebreather mask. Crackles are heard over both lung fields; there is no jugular venous distention or peripheral edema. Serum B type natriuretic peptide concentration is 40 pg/mL, and bedside echocardiography shows normal left ventricular function without pericardial effusion. He is intubated; on a positive end expiratory pressure of 10 cm H2O and an FiO2 of 0.8, arterial PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph obtained before intubation is shown. Which of the following is the most appropriate next step in management? A. Intravenous furosemide with reduction of the positive end expiratory pressure B. Therapeutic anticoagulation with intravenous unfractionated heparin C. Emergent tube thoracostomy of the right hemithorax D. Tidal volume of 6 mL/kg predicted body weight with plateau pressure kept below 30 cm H2O E. Tidal volume of 12 mL/kg predicted body weight to normalize the PaCO2"
   },
   {
    "id": "imaging-2026-0054",
