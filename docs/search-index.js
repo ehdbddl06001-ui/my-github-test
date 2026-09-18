@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2563,
+  "total": 2573,
   "byType": {
    "anatomy": 695,
    "kmle": 1035,
+   "imaging": 63,
    "concept": 3,
    "usmle": 150,
    "paper": 610,
-   "imaging": 53,
    "ailab": 14,
    "basic": 3
   },
@@ -53,18 +53,27 @@ window.MEDKOS_INDEX = {
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
+   "응급·중환자": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "신장·비뇨기": 1
+   "감염": 1,
+   "내분비": 1,
+   "소아과": 1,
+   "소화기": 1,
+   "신경": 1,
+   "신장·비뇨기": 1,
+   "예방의학·역학": 1,
+   "피부과": 1,
+   "혈액·종양": 1
   },
   "byConfidence": {
-   "high": 1716,
+   "high": 1726,
    "medium": 798,
    "low": 49
   },
-  "tagCount": 3678
+  "tagCount": 3681
  },
  "docs": [
   {
@@ -999,6 +1008,181 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1034.md",
    "snippet": "57세 남자가 40분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 고혈압과 이상지질혈증으로 암로디핀과 아토르바스타틴을 복용 중이며, 약 5시간 전 발기부전 치료제(실데나필 100 mg)를 복용했다고 한다. 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 목정맥은 늘어나 있지 않다. 이 병원은 24시간 심장혈관 조영술이 가능하다. 활력징후·검사 소견과",
    "text": "Cardiology Acute Anterior STEMI after Recent Sildenafil Use — Contraindicated Drug STEMI sildenafil PDE5-inhibitor nitrate-contraindication primary-PCI KMLE 2026 / Claude Routine 57세 남자가 40분 전 시작된 짓누르는 앞가슴 통증과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 고혈압과 이상지질혈증으로 암로디핀과 아토르바스타틴을 복용 중이며, 약 5시간 전 발기부전 치료제(실데나필 100 mg)를 복용했다고 한다. 뇌졸중·출혈·수술 병력은 없다. 진찰에서 폐음은 깨끗하고 목정맥은 늘어나 있지 않다. 이 병원은 24시간 심장혈관 조영술이 가능하다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 환자에게 시행하면 안 되는 처치는? A. 아스피린 300 mg 씹어 복용 B. 티카그렐러 180 mg 부하 투여 C. 니트로글리세린 설하 투여 D. 미분획 헤파린 정맥 투여 E. 일차 관상동맥중재술 시행 심전도의 앞가슴유도 ST분절 상승과 40분 전 시작된 지속 흉통은 급성 전벽 ST상승 심근경색이며, 아스피린·P2Y12 억제제·헤파린과 일차 관상동맥중재술은 모두 표준 처치다. 그러나 이 환자는 5시간 전 실데나필을 복용했으므로 24시간 이내에는 어떤 형태의 질산염도 금기다. 두 약이 함께 cGMP 경로를 증폭해 치명적 저혈압을 일으키기 때문이다."
+  },
+  {
+   "id": "imaging-2026-0063",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 급성 저산소성 호흡부전",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0063.md",
+   "snippet": "A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature i",
+   "text": "응급·중환자 응급·중환자 — 급성 저산소성 호흡부전 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature is 38.6°C, pulse is 118/min, respirations are 34/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 84% on room air and rises to 90% on a nonrebreather mask. Crackles are heard over both lung fields; there is no jugular venous distention or peripheral edema. Serum B type natriuretic peptide concentration is 40 pg/mL, and bedside echocardiography shows normal left ventricular function without pericardial effusion. He is intubated; on a positive end expiratory pressure of 10 cm H2O and an FiO2 of 0.8, arterial PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph obtained before intubation is shown. Which of the following is the most appropriate next step in management? A. Intravenous furosemide with reduction of the positive end expiratory pressure B. Therapeutic anticoagulation with intravenous unfractionated heparin C. Emergent tube thoracostomy of the right hemithorax D. Tidal volume of 6 mL/kg predicted body weight with plateau pressure kept below 30 cm H2O E. Tidal volume of 12 mL/kg predicted body weight to normalize the PaCO2"
+  },
+  {
+   "id": "imaging-2026-0062",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 선별검사 양성예측도",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0062.md",
+   "snippet": "45세 남자가 증상 없이 국가건강검진에서 받은 분변잠혈검사에서 양성 판정을 받고 결과의 의미를 묻기 위해 병원에 왔다. 대장암 가족력은 없고 최근 체중 감소나 혈변은 없었다. 이 검사는 대장암에 대해 민감도 80%, 특이도 90% 이고, 이 남자가 속한 45~49세 무증상 남성 집단의 대장암 유병률은 0.5% 이다. 이 남자에게 실제로 대장암이 있을 확률에 가장 가까운 것은? A. 약 4% B. 약 10% C. 약 40% D.",
+   "text": "예방의학·역학 예방의학 — 선별검사 양성예측도 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 45세 남자가 증상 없이 국가건강검진에서 받은 분변잠혈검사에서 양성 판정을 받고 결과의 의미를 묻기 위해 병원에 왔다. 대장암 가족력은 없고 최근 체중 감소나 혈변은 없었다. 이 검사는 대장암에 대해 민감도 80%, 특이도 90% 이고, 이 남자가 속한 45~49세 무증상 남성 집단의 대장암 유병률은 0.5% 이다. 이 남자에게 실제로 대장암이 있을 확률에 가장 가까운 것은? A. 약 4% B. 약 10% C. 약 40% D. 약 80% E. 약 90%"
+  },
+  {
+   "id": "imaging-2026-0061",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 갈색세포종 수술 전 관리",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0061.md",
+   "snippet": "A 42 year old woman comes to the physician because of 6 months of episodic headache, palpitations, and profuse sweating, with each episode lasting 20 to 30 minutes. She has lost 4 kg during this period. Her blood pressure at three previous ",
+   "text": "내분비 내분비·대사 — 갈색세포종 수술 전 관리 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 42 year old woman comes to the physician because of 6 months of episodic headache, palpitations, and profuse sweating, with each episode lasting 20 to 30 minutes. She has lost 4 kg during this period. Her blood pressure at three previous visits was 168/104, 182/110, and 176/106 mm Hg despite treatment with amlodipine. Today her pulse is 96/min and blood pressure is 178/108 mm Hg. Examination shows no thyroid enlargement or tremor. Plasma free metanephrine concentration is 4.2 nmol/L (N < 0.5) and plasma normetanephrine is 6.8 nmol/L (N < 0.9). CT scan of the abdomen shows a 4 cm heterogeneously enhancing mass in the right adrenal gland. Which of the following is the most appropriate next step in management? A. Fine needle aspiration biopsy of the adrenal mass B. Overnight dexamethasone suppression test C. Phenoxybenzamine, with a beta blocker added only after alpha blockade is established D. Propranolol to control the tachycardia and palpitations E. Laparoscopic right adrenalectomy within 24 hours"
+  },
+  {
+   "id": "imaging-2026-0060",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 중증 말라리아",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0060.md",
+   "snippet": "A 34 year old woman comes to the emergency department because of 4 days of fever, chills, and headache. She returned 12 days ago from a 3 week trip to rural Nigeria, where she did not take malaria chemoprophylaxis. She has no other medical ",
+   "text": "감염 감염 — 중증 말라리아 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 34 year old woman comes to the emergency department because of 4 days of fever, chills, and headache. She returned 12 days ago from a 3 week trip to rural Nigeria, where she did not take malaria chemoprophylaxis. She has no other medical history. Her temperature is 39.8°C, pulse is 122/min, respirations are 24/min, and blood pressure is 96/60 mm Hg. She is confused and oriented only to person; there is no neck stiffness. Scleral icterus is present. Laboratory studies show a hemoglobin concentration of 8.1 g/dL, platelet count of 38,000/mm3, serum creatinine of 2.4 mg/dL, glucose of 52 mg/dL, and lactate of 5.1 mmol/L. A thick blood smear shows Plasmodium falciparum with a parasite density of 8%. Which of the following is the most appropriate initial pharmacotherapy? A. Oral artemether lumefantrine B. Oral chloroquine C. Intravenous ceftriaxone and acyclovir D. Oral atovaquone proguanil E. Intravenous artesunate"
+  },
+  {
+   "id": "imaging-2026-0059",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 발열성 호중구감소증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0059.md",
+   "snippet": "58세 남자가 급성골수성백혈병으로 관해유도 항암화학요법을 받은 지 10일째에 38.8℃ 의 발열로 병원에 왔다. 오한 외에 기침·배뇨통·설사는 없다. 혈압 118/74 mmHg, 맥박 102회/분, 호흡 18회/분이다. 구강 점막에 경한 궤양이 있고 중심정맥관 삽입 부위에 발적이나 압통은 없으며 폐·복부 진찰은 정상이다. 혈액검사: 백혈구 400/mm³(절대호중구수 120/mm³), 혈색소 8.9 g/dL, 혈소판 24,000",
+   "text": "혈액·종양 혈액·종양 — 발열성 호중구감소증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 58세 남자가 급성골수성백혈병으로 관해유도 항암화학요법을 받은 지 10일째에 38.8℃ 의 발열로 병원에 왔다. 오한 외에 기침·배뇨통·설사는 없다. 혈압 118/74 mmHg, 맥박 102회/분, 호흡 18회/분이다. 구강 점막에 경한 궤양이 있고 중심정맥관 삽입 부위에 발적이나 압통은 없으며 폐·복부 진찰은 정상이다. 혈액검사: 백혈구 400/mm³(절대호중구수 120/mm³), 혈색소 8.9 g/dL, 혈소판 24,000/mm³, 크레아티닌 0.9 mg/dL. 흉부 X선은 정상이고 혈액배양 2쌍을 채취하였다. 가장 적절한 치료는? A. 시프로플록사신 경구와 아목시실린 클라불란산 경구 B. 과립구집락자극인자 피하주사 C. 플루코나졸 정맥주사 D. 세페핌 정맥주사 E. 반코마이신 정맥주사"
+  },
+  {
+   "id": "imaging-2026-0058",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 급성 담관염",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0058.md",
+   "snippet": "68세 여자가 하루 전부터 시작된 오른쪽 위 배 통증과 오한을 동반한 발열로 응급실에 왔다. 3년 전 담낭 담석을 진단받았으나 증상이 없어 지켜보고 있었다. 혈압 92/58 mmHg, 맥박 118회/분, 체온 39.2℃ 이고, 공막에 황달이 있으며 오른쪽 위 배에 압통이 있으나 반동압통은 없다. 혈액검사: 백혈구 18,500/mm³, 총빌리루빈 5.8 mg/dL, AST 210 U/L, ALT 260 U/L, 알칼리인산분해효소",
+   "text": "소화기 소화기·간담췌 — 급성 담관염 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 68세 여자가 하루 전부터 시작된 오른쪽 위 배 통증과 오한을 동반한 발열로 응급실에 왔다. 3년 전 담낭 담석을 진단받았으나 증상이 없어 지켜보고 있었다. 혈압 92/58 mmHg, 맥박 118회/분, 체온 39.2℃ 이고, 공막에 황달이 있으며 오른쪽 위 배에 압통이 있으나 반동압통은 없다. 혈액검사: 백혈구 18,500/mm³, 총빌리루빈 5.8 mg/dL, AST 210 U/L, ALT 260 U/L, 알칼리인산분해효소 620 U/L, 아밀라아제 90 U/L, 젖산 3.8 mmol/L. 복부 초음파에서 총담관 지름 14 mm 로 늘어나 있고 담낭에 여러 개의 담석이 있으며 담낭벽 비후는 없다. 수액 소생과 광범위 항생제 투여를 시작하였다. 다음 처치로 가장 적절한 것은? A. 항생제만 유지하며 48시간 경과관찰 B. 내시경역행담췌관조영술로 담관 배액 C. 복강경 담낭절제술 D. 경피경간 담낭 배액술 E. 자기공명담췌관조영술 후 재평가"
+  },
+  {
+   "id": "imaging-2026-0057",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 조영증강 뇌 MRI 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0057.md",
+   "snippet": "A 28 year old man is brought to the emergency department 1 hour after a generalized tonic clonic seizure that lasted 2 minutes and was witnessed by his roommate. He has had mild headaches for 3 weeks. He has no history of head trauma, fever",
+   "text": "신경 신경 — 조영증강 뇌 MRI 판독 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 28 year old man is brought to the emergency department 1 hour after a generalized tonic clonic seizure that lasted 2 minutes and was witnessed by his roommate. He has had mild headaches for 3 weeks. He has no history of head trauma, fever, or drug use. His temperature is 37.0°C, pulse is 84/min, and blood pressure is 128/78 mm Hg. He is drowsy but oriented; neurologic examination shows no focal deficits and no neck stiffness. Contrast enhanced T1 weighted MRI of the brain is obtained; an axial section at the level of the high convexity, above the lateral ventricles, is shown. Which of the following best explains the bright linear signal along the midline in this image? A. Dural metastases along the falx cerebri B. Normal enhancement of blood in the superior sagittal sinus and the adjacent dura C. Thrombus within the superior sagittal sinus D. Meningioma arising from the falx cerebri E. Pus in the interhemispheric subdural space"
+  },
+  {
+   "id": "imaging-2026-0056",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 손목 외상 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0056.md",
+   "snippet": "6세 남아가 2시간 전 놀이터에서 넘어지며 왼손을 짚은 뒤 왼쪽 손목이 아프다고 하여 부모와 함께 응급실에 왔다. 다른 곳을 다치지는 않았다. 진찰에서 왼쪽 손목 등쪽에 경한 부종과 원위 요골 부위의 압통이 있으나 눈에 띄는 변형은 없고, 손가락의 움직임·감각·모세혈관 재충만은 정상이다. 왼쪽 손목 전후면 단순 X선 사진은 그림과 같다. 가장 적절한 치료는? A. 단상지 석고 붕대로 6주 고정 B. 손목 자기공명영상으로 성장판",
+   "text": "소아과 소아청소년 — 손목 외상 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 6세 남아가 2시간 전 놀이터에서 넘어지며 왼손을 짚은 뒤 왼쪽 손목이 아프다고 하여 부모와 함께 응급실에 왔다. 다른 곳을 다치지는 않았다. 진찰에서 왼쪽 손목 등쪽에 경한 부종과 원위 요골 부위의 압통이 있으나 눈에 띄는 변형은 없고, 손가락의 움직임·감각·모세혈관 재충만은 정상이다. 왼쪽 손목 전후면 단순 X선 사진은 그림과 같다. 가장 적절한 치료는? A. 단상지 석고 붕대로 6주 고정 B. 손목 자기공명영상으로 성장판 손상 평가 C. 제거 가능한 손목 부목으로 3주 고정 D. 도수 정복 후 장상지 석고 고정 E. 수술적 정복과 금속핀 고정"
+  },
+  {
+   "id": "imaging-2026-0055",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 급성 저산소성 호흡부전",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0055.md",
+   "snippet": "A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature i",
+   "text": "응급·중환자 응급·중환자 — 급성 저산소성 호흡부전 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f A 41 year old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature is 38.6°C, pulse is 118/min, respirations are 34/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 84% on room air and rises to 90% on a nonrebreather mask. Crackles are heard over both lung fields; there is no jugular venous distention or peripheral edema. Serum B type natriuretic peptide concentration is 40 pg/mL, and bedside echocardiography shows normal left ventricular function without pericardial effusion. He is intubated; on a positive end expiratory pressure of 10 cm H2O and an FiO2 of 0.8, arterial PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph obtained before intubation is shown. Which of the following is the most appropriate next step in management? A. Intravenous furosemide with reduction of the positive end expiratory pressure B. Therapeutic anticoagulation with intravenous unfractionated heparin C. Emergent tube thoracostomy of the right hemithorax D. Tidal volume of 6 mL/kg predicted body weight with plateau pressure kept below 30 cm H2O E. Tidal volume of 12 mL/kg predicted body weight to normalize the PaCO2"
+  },
+  {
+   "id": "imaging-2026-0054",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 더모스코피 판독",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+   "confidence": "high",
+   "date": "2026-09-18",
+   "path": "content/imaging/2026/imaging-2026-0054.md",
+   "snippet": "55세 여자가 앞가슴에 3년 전부터 있던 옅은 갈색 반점이 2개월 전부터 분홍색으로 변하면서 가렵다고 병원에 왔다. 병변을 긁거나 약을 바른 적은 없고 피부암의 가족력은 없다. 진찰에서 앞가슴에 직경 8 mm 의 경계가 불분명한 분홍 갈색 편평 반이 하나 있고 만져지는 융기나 궤양은 없다. 병변의 더모스코피 사진은 그림과 같다. 가장 적절한 다음 조치는? A. 피부 생검으로 조직검사 B. 국소 스테로이드 도포 후 경과관찰 C.",
+   "text": "피부과 피부 — 더모스코피 판독 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f 55세 여자가 앞가슴에 3년 전부터 있던 옅은 갈색 반점이 2개월 전부터 분홍색으로 변하면서 가렵다고 병원에 왔다. 병변을 긁거나 약을 바른 적은 없고 피부암의 가족력은 없다. 진찰에서 앞가슴에 직경 8 mm 의 경계가 불분명한 분홍 갈색 편평 반이 하나 있고 만져지는 융기나 궤양은 없다. 병변의 더모스코피 사진은 그림과 같다. 가장 적절한 다음 조치는? A. 피부 생검으로 조직검사 B. 국소 스테로이드 도포 후 경과관찰 C. 액체질소 냉동치료 D. 6개월 뒤 더모스코피 재검 E. 국소 이미퀴모드 도포"
   },
   {
    "id": "cn.peds.febrile-seizure.workup",

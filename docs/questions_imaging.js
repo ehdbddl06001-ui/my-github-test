@@ -2,6 +2,1379 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0063",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "응급·중환자 — 급성 저산소성 호흡부전",
+  "type": "응급·중환자 — 급성 저산소성 호흡부전",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-18",
+  "vignette": "A 41-year-old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature is 38.6°C, pulse is 118/min, respirations are 34/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 84% on room air and rises to 90% on a nonrebreather mask. Crackles are heard over both lung fields; there is no jugular venous distention or peripheral edema. Serum B-type natriuretic peptide concentration is 40 pg/mL, and bedside echocardiography shows normal left ventricular function without pericardial effusion. He is intubated; on a positive end-expiratory pressure of 10 cm H2O and an FiO2 of 0.8, arterial PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph obtained before intubation is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous furosemide with reduction of the positive end-expiratory pressure",
+   "Therapeutic anticoagulation with intravenous unfractionated heparin",
+   "Emergent tube thoracostomy of the right hemithorax",
+   "Tidal volume of 6 mL/kg predicted body weight with plateau pressure kept below 30 cm H2O",
+   "Tidal volume of 12 mL/kg predicted body weight to normalize the PaCO2"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows multifocal patchy and nodular opacities in both lungs, denser in the right mid-to-lower and left lower zones, with no pleural effusion or pneumothorax. Acute onset within a week of a respiratory illness, bilateral opacities, a PaO2/FiO2 ratio of 85 (68/0.8) on PEEP ≥ 5 cm H2O, and a cardiac cause excluded by a normal BNP, no venous distention and a normal echocardiogram meet the Berlin definition of severe acute respiratory distress syndrome. The intervention with the strongest mortality benefit is lung-protective ventilation: tidal volume 6 mL/kg of predicted body weight with plateau pressure below 30 cm H2O.\n- 원리: ARDS is <b>diffuse alveolar damage</b>: an inflammatory insult (here a viral pneumonia) injures the alveolar epithelium and capillary endothelium, so protein-rich fluid floods the alveoli, surfactant is inactivated and dependent lung units collapse. Two consequences drive management. First, <b>hypoxemia is shunt physiology</b> — blood passes flooded, non-ventilated alveoli — so it responds poorly to FiO2 alone and needs PEEP to recruit alveoli. Second, the aerated lung is small (the 'baby lung'): a normal-sized tidal volume delivered into a lung that is one third its usual size over-distends the open alveoli (<b>volutrauma</b>) and repeatedly reopens collapsed ones (<b>atelectrauma</b>), releasing cytokines that worsen the injury and cause distant organ failure (biotrauma).<br> <b>Why 6 mL/kg</b> — the ARDS Network ARMA trial randomized 861 patients to 6 versus 12 mL/kg of <b>predicted</b> body weight (a function of height and sex, because lung size does not grow with obesity) with plateau pressure limited to 30 cm H2O; mortality fell from 39.8 % to 31.0 %. Permissive hypercapnia is accepted as the price of low volumes. The Berlin definition grades severity by the PaO2/FiO2 ratio on PEEP ≥ 5 cm H2O: mild 201–300, moderate 101–200, severe ≤ 100. This patient's ratio of 85 is severe, which additionally justifies higher PEEP, neuromuscular blockade in the first 48 h and prone positioning for ≥ 16 h/day (PROSEVA), and consideration of ECMO if the ratio stays below 80 despite these.<br> <b>Why the cardiac work-up matters</b> — the Berlin definition requires that the edema is <b>not fully explained by cardiac failure or fluid overload</b>. Bilateral opacities with a low BNP, no jugular venous distention and normal ventricular function on echocardiography point away from hydrostatic edema, so diuresis would only deplete intravascular volume without clearing the alveoli.\n- 비교: <table><thead><tr><th style=\"width:28%\">Cause of bilateral opacities with hypoxemia</th><th style=\"width:42%\">Distinguishing features</th><th>Initial management</th></tr></thead><tbody> <tr><td><b>ARDS (answer)</b></td><td><b>onset ≤ 1 week after an insult; PaO2/FiO2 ≤ 300 on PEEP ≥ 5; BNP low, echocardiography normal, no volume overload</b></td><td><b>tidal volume 6 mL/kg PBW, plateau &lt; 30, PEEP; prone if PaO2/FiO2 &lt; 150</b></td></tr> <tr><td>Cardiogenic pulmonary edema (closest wrong answer)</td><td>BNP &gt; 400 pg/mL, jugular venous distention, S3, reduced ejection fraction or severe valve disease, effusions, perihilar 'bat-wing' pattern</td><td>diuretics, nitrates, treat the cardiac cause; PEEP still helps</td></tr> <tr><td>Massive pulmonary embolism</td><td>clear or near-clear lungs despite hypoxemia, right-ventricular strain on echocardiography, hypotension</td><td>anticoagulation; thrombolysis if unstable</td></tr> <tr><td>Diffuse alveolar hemorrhage</td><td>hemoptysis, falling hemoglobin, vasculitis or anticoagulant history, bloody lavage</td><td>immunosuppression, correct coagulopathy</td></tr> <tr><td>Tension pneumothorax</td><td>unilateral absent breath sounds, tracheal deviation, hyperlucent hemithorax, hypotension</td><td>needle decompression and chest tube</td></tr> </tbody></table> The <b>closest wrong answer is a 'normal' tidal volume of 12 mL/kg</b>: it seems to correct the respiratory acidosis of a patient breathing 34/min, but in ARDS the aerated lung is small and large volumes over-distend it. The discriminator is the <b>combination of bilateral opacities, PaO2/FiO2 ≤ 100 on PEEP and an excluded cardiac cause</b>: once ARDS is diagnosed, the goal is protecting the lung, not normalizing the blood gas. If BNP were high with jugular venous distention and a dilated, poorly contracting ventricle, diuresis would move ahead of the ventilator settings.\n- 오답 이유:\n  - (A) Furosemide and lowering PEEP treat hydrostatic (cardiogenic) pulmonary edema. Here the BNP is 40 pg/mL, there is no jugular venous distention or edema, and echocardiography shows normal left ventricular function, so the alveolar fluid is inflammatory, not hydrostatic; diuresis would worsen perfusion, and lowering PEEP would de-recruit alveoli. This option would be correct if BNP were above 400 pg/mL with a dilated, hypokinetic left ventricle.\n  - (B) Therapeutic heparin is the treatment for pulmonary embolism, which causes hypoxemia with clear lungs and right-ventricular strain. This patient has bilateral parenchymal opacities after a febrile respiratory illness and a normal echocardiogram. This option would be correct if the radiograph were clear, the D-dimer high and CT angiography showed a clot.\n  - (C) Tube thoracostomy is for pneumothorax or a large effusion. The radiograph shows lung markings extending to the chest wall on both sides, no visceral pleural line and no meniscus; the opacities are parenchymal. This option would be correct if the right hemithorax were hyperlucent without lung markings and the mediastinum shifted to the left.\n  - (E) A tidal volume of 12 mL/kg normalizes the PaCO2 but over-distends the small aerated lung of ARDS (volutrauma), which in the ARMA trial increased mortality from 31 % to 40 % compared with 6 mL/kg. Permissive hypercapnia is accepted instead. This option would be correct for no ARDS patient; it belongs to the pre-2000 era of ventilation.\n- 함정: Bilateral opacities plus hypoxemia is not automatically 'heart failure' — check BNP, neck veins and the echocardiogram. Once ARDS is recognized, the first decision is how not to injure the lung further (6 mL/kg PBW, plateau < 30), not how to normalize the PaCO2.\n- 학습목표: 양측 폐 음영과 PaO2/FiO2 저하가 심부전으로 설명되지 않을 때 급성호흡곤란증후군으로 판단하고 저일회호흡량 폐보호 환기를 선택한다\n- 근거·출처: TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 41 M · 작성자 판독(2026-09-19): 직립 AP, 양쪽 폐야 다발성 반점상·결절상 음영(오른쪽 중·하부, 왼쪽 하부 우세), 흉수·기흉 없음, 번인 문자 'UPRIGHT'·'L'·'57' 뿐 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin definition. JAMA 2012;307:2526 — timing, bilateral opacities, PaO2/FiO2 on PEEP ≥ 5, not fully explained by cardiac failure · ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes. N Engl J Med 2000;342:1301 (ARMA) — 6 vs 12 mL/kg PBW, mortality 31.0 % vs 39.8 % · Guérin C et al. Prone positioning in severe ARDS. N Engl J Med 2013;368:2159 (PROSEVA); Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute respiratory distress syndrome'\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows multifocal patchy and nodular opacities in both lungs, denser in the right mid-to-lower and left lower zones, with no pleural effusion or pneumothorax. Acute onset within a week of a respiratory illness, bilateral opacities, a PaO2/FiO2 ratio of 85 (68/0.8) on PEEP ≥ 5 cm H2O, and a cardiac cause excluded by a normal BNP, no venous distention and a normal echocardiogram meet the Berlin definition of severe acute respiratory distress syndrome. The intervention with the strongest mortality benefit is lung-protective ventilation: tidal volume 6 mL/kg of predicted body weight with plateau pressure below 30 cm H2O."
+   },
+   {
+    "k": "원리",
+    "v": "ARDS is <b>diffuse alveolar damage</b>: an inflammatory insult (here a viral pneumonia) injures the alveolar epithelium and capillary endothelium, so protein-rich fluid floods the alveoli, surfactant is inactivated and dependent lung units collapse. Two consequences drive management. First, <b>hypoxemia is shunt physiology</b> — blood passes flooded, non-ventilated alveoli — so it responds poorly to FiO2 alone and needs PEEP to recruit alveoli. Second, the aerated lung is small (the 'baby lung'): a normal-sized tidal volume delivered into a lung that is one third its usual size over-distends the open alveoli (<b>volutrauma</b>) and repeatedly reopens collapsed ones (<b>atelectrauma</b>), releasing cytokines that worsen the injury and cause distant organ failure (biotrauma).<br> <b>Why 6 mL/kg</b> — the ARDS Network ARMA trial randomized 861 patients to 6 versus 12 mL/kg of <b>predicted</b> body weight (a function of height and sex, because lung size does not grow with obesity) with plateau pressure limited to 30 cm H2O; mortality fell from 39.8 % to 31.0 %. Permissive hypercapnia is accepted as the price of low volumes. The Berlin definition grades severity by the PaO2/FiO2 ratio on PEEP ≥ 5 cm H2O: mild 201–300, moderate 101–200, severe ≤ 100. This patient's ratio of 85 is severe, which additionally justifies higher PEEP, neuromuscular blockade in the first 48 h and prone positioning for ≥ 16 h/day (PROSEVA), and consideration of ECMO if the ratio stays below 80 despite these.<br> <b>Why the cardiac work-up matters</b> — the Berlin definition requires that the edema is <b>not fully explained by cardiac failure or fluid overload</b>. Bilateral opacities with a low BNP, no jugular venous distention and normal ventricular function on echocardiography point away from hydrostatic edema, so diuresis would only deplete intravascular volume without clearing the alveoli."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Cause of bilateral opacities with hypoxemia</th><th style=\"width:42%\">Distinguishing features</th><th>Initial management</th></tr></thead><tbody> <tr><td><b>ARDS (answer)</b></td><td><b>onset ≤ 1 week after an insult; PaO2/FiO2 ≤ 300 on PEEP ≥ 5; BNP low, echocardiography normal, no volume overload</b></td><td><b>tidal volume 6 mL/kg PBW, plateau &lt; 30, PEEP; prone if PaO2/FiO2 &lt; 150</b></td></tr> <tr><td>Cardiogenic pulmonary edema (closest wrong answer)</td><td>BNP &gt; 400 pg/mL, jugular venous distention, S3, reduced ejection fraction or severe valve disease, effusions, perihilar 'bat-wing' pattern</td><td>diuretics, nitrates, treat the cardiac cause; PEEP still helps</td></tr> <tr><td>Massive pulmonary embolism</td><td>clear or near-clear lungs despite hypoxemia, right-ventricular strain on echocardiography, hypotension</td><td>anticoagulation; thrombolysis if unstable</td></tr> <tr><td>Diffuse alveolar hemorrhage</td><td>hemoptysis, falling hemoglobin, vasculitis or anticoagulant history, bloody lavage</td><td>immunosuppression, correct coagulopathy</td></tr> <tr><td>Tension pneumothorax</td><td>unilateral absent breath sounds, tracheal deviation, hyperlucent hemithorax, hypotension</td><td>needle decompression and chest tube</td></tr> </tbody></table> The <b>closest wrong answer is a 'normal' tidal volume of 12 mL/kg</b>: it seems to correct the respiratory acidosis of a patient breathing 34/min, but in ARDS the aerated lung is small and large volumes over-distend it. The discriminator is the <b>combination of bilateral opacities, PaO2/FiO2 ≤ 100 on PEEP and an excluded cardiac cause</b>: once ARDS is diagnosed, the goal is protecting the lung, not normalizing the blood gas. If BNP were high with jugular venous distention and a dilated, poorly contracting ventricle, diuresis would move ahead of the ventilator settings."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Furosemide and lowering PEEP treat hydrostatic (cardiogenic) pulmonary edema. Here the BNP is 40 pg/mL, there is no jugular venous distention or edema, and echocardiography shows normal left ventricular function, so the alveolar fluid is inflammatory, not hydrostatic; diuresis would worsen perfusion, and lowering PEEP would de-recruit alveoli. This option would be correct if BNP were above 400 pg/mL with a dilated, hypokinetic left ventricle.\n(B) Therapeutic heparin is the treatment for pulmonary embolism, which causes hypoxemia with clear lungs and right-ventricular strain. This patient has bilateral parenchymal opacities after a febrile respiratory illness and a normal echocardiogram. This option would be correct if the radiograph were clear, the D-dimer high and CT angiography showed a clot.\n(C) Tube thoracostomy is for pneumothorax or a large effusion. The radiograph shows lung markings extending to the chest wall on both sides, no visceral pleural line and no meniscus; the opacities are parenchymal. This option would be correct if the right hemithorax were hyperlucent without lung markings and the mediastinum shifted to the left.\n(E) A tidal volume of 12 mL/kg normalizes the PaCO2 but over-distends the small aerated lung of ARDS (volutrauma), which in the ARMA trial increased mortality from 31 % to 40 % compared with 6 mL/kg. Permissive hypercapnia is accepted instead. This option would be correct for no ARDS patient; it belongs to the pre-2000 era of ventilation."
+   },
+   {
+    "k": "함정",
+    "v": "Bilateral opacities plus hypoxemia is not automatically 'heart failure' — check BNP, neck veins and the echocardiogram. Once ARDS is recognized, the first decision is how not to injure the lung further (6 mL/kg PBW, plateau < 30), not how to normalize the PaCO2."
+   },
+   {
+    "k": "학습목표",
+    "v": "양측 폐 음영과 PaO2/FiO2 저하가 심부전으로 설명되지 않을 때 급성호흡곤란증후군으로 판단하고 저일회호흡량 폐보호 환기를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 41 M · 작성자 판독(2026-09-19): 직립 AP, 양쪽 폐야 다발성 반점상·결절상 음영(오른쪽 중·하부, 왼쪽 하부 우세), 흉수·기흉 없음, 번인 문자 'UPRIGHT'·'L'·'57' 뿐 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin definition. JAMA 2012;307:2526 — timing, bilateral opacities, PaO2/FiO2 on PEEP ≥ 5, not fully explained by cardiac failure · ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes. N Engl J Med 2000;342:1301 (ARMA) — 6 vs 12 mL/kg PBW, mortality 31.0 % vs 39.8 % · Guérin C et al. Prone positioning in severe ARDS. N Engl J Med 2013;368:2159 (PROSEVA); Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute respiratory distress syndrome' ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "급성 발병·양측 폐 음영·PEEP 하 PaO2/FiO2 85·심장 원인 배제 → 중증 ARDS 이므로 폐보호 환기(6 mL/kg PBW, 고평부압 < 30)를 먼저 적용한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "PaO2/FiO2 ≤ 100 인 양측 폐 음영에서 아직 통기되는 폐는 작다 — 혈액가스를 정상화하려는 큰 일회호흡량은 그 폐를 과팽창시킨다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: multifocal patchy and nodular opacities in both lungs without effusion or pneumothorax",
+     "why": "Berlin 정의의 「양측 음영」 — 흉수·기흉·결절로 설명되지 않는 폐포 음영",
+     "also": []
+    },
+    {
+     "item": "arterial PaO2 is 68 mm Hg",
+     "why": "FiO2 0.8 로 나누면 PaO2/FiO2 = 85 → 중증 ARDS(≤ 100)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "B-type natriuretic peptide concentration is 40 pg/mL",
+     "why": "심부전(보통 > 400 pg/mL)에 의한 정수압성 부종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "normal left ventricular function without pericardial effusion",
+     "why": "심장 원인이 아니라는 Berlin 정의의 마지막 조건",
+     "also": []
+    },
+    {
+     "item": "no jugular venous distention or peripheral edema",
+     "why": "용적 과부하 가능성을 낮춘다 — 이뇨제 선택에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "positive end-expiratory pressure of 10 cm H2O",
+     "why": "Berlin 정의는 PEEP ≥ 5 에서의 비율을 요구한다; 중증이면 높은 PEEP·복와위도 고려",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "dry cough",
+     "why": "선행 호흡기 감염이 ARDS 의 유발 요인임을 시사하지만 처치를 바꾸지는 않는다",
+     "also": []
+    },
+    {
+     "item": "41-year-old man",
+     "why": "기저 심장병이 드문 연령 — 정수압성 부종의 사전확률을 낮추는 배경",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral opacities, PaO2/FiO2 85 on PEEP 10 and an excluded cardiac cause make this severe ARDS; the first management step is lung-protective ventilation with 6 mL/kg predicted body weight and plateau pressure below 30 cm H2O.",
+   "switch": {
+    "choice": "A",
+    "condition": "BNP 가 400 pg/mL 을 넘고 경정맥 팽대와 심초음파의 확장·저수축 좌심실이 있었다면 이뇨제가 우선한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0063.png",
+   "caption": "Upright anteroposterior chest radiograph obtained before intubation (The Cancer Imaging Archive, CC BY 4.0; original pixel data, no windowing or cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1302476255791547289201485398017",
+   "asset_id": "TCIA-COVID19_AR-19337694287376",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017"
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0057",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "신경 — 조영증강 뇌 MRI 판독",
+  "type": "신경 — 조영증강 뇌 MRI 판독",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-18",
+  "vignette": "A 28-year-old man is brought to the emergency department 1 hour after a generalized tonic-clonic seizure that lasted 2 minutes and was witnessed by his roommate. He has had mild headaches for 3 weeks. He has no history of head trauma, fever, or drug use. His temperature is 37.0°C, pulse is 84/min, and blood pressure is 128/78 mm Hg. He is drowsy but oriented; neurologic examination shows no focal deficits and no neck stiffness. Contrast-enhanced T1-weighted MRI of the brain is obtained; an axial section at the level of the high convexity, above the lateral ventricles, is shown.",
+  "question": "Which of the following best explains the bright linear signal along the midline in this image?",
+  "options": [
+   "Dural metastases along the falx cerebri",
+   "Normal enhancement of blood in the superior sagittal sinus and the adjacent dura",
+   "Thrombus within the superior sagittal sinus",
+   "Meningioma arising from the falx cerebri",
+   "Pus in the interhemispheric subdural space"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The image is a gadolinium-enhanced T1-weighted axial section at the vertex. The falx cerebri and the superior sagittal sinus form a thin, smooth, uniformly bright midline line, and the cortical veins draining into the sinus are also bright; the underlying gyri are symmetric, the sulci are open, and there is no mass, no midline shift and no nodular or thick dural enhancement at this level. Gadolinium shortens the T1 of blood, so slowly flowing venous blood in the dural sinuses and cortical veins is normally bright on post-contrast T1 images, as are the dura, choroid plexus, pituitary and pineal gland, which lack a blood-brain barrier. The bright midline structure is therefore normal enhancing venous blood and dura, not a lesion.\n- 원리: Gadolinium chelates shorten the T1 relaxation time of the water protons around them, so on T1-weighted images everything the contrast agent reaches becomes bright. <b>Two normal compartments enhance</b>: (1) <b>the blood pool</b> — arteries at normal flow often appear dark because of flow-void, but the slow, steady flow in the <b>dural venous sinuses and cortical veins</b> lets the gadolinium-laden blood be imaged, so the superior sagittal sinus, transverse sinuses and the 'straight' cortical veins converging on them are bright; (2) <b>tissues without a blood–brain barrier</b> — dura mater (including the falx and tentorium), choroid plexus, pituitary gland and stalk, pineal gland, area postrema and the nasal mucosa. Brain parenchyma stays dark because tight endothelial junctions keep the contrast in the vessels; parenchymal enhancement always means barrier breakdown (tumor, abscess, infarct, demyelination).<br> <b>Why the pattern is reassuring here</b> — normal dural enhancement is <b>thin (&lt; 2 mm), smooth, linear and discontinuous</b>, and the sinus is uniformly filled. Pathology changes the shape: a thrombosed sinus shows a <b>non-enhancing dark clot surrounded by an enhancing dural wall</b> (the 'empty delta' sign on axial images through the posterior sinus); a meningioma is a broad-based, homogeneously enhancing mass with a 'dural tail' that displaces brain; dural metastases and pachymeningitis give thick, nodular or diffuse dural enhancement; a subdural empyema is a crescent of fluid with a rim of enhancement and mass effect. None of these is present at this level.<br> <b>Why a first seizure still needs the whole study</b> — an adult with a new seizure and weeks of headache is imaged to look for a structural cause, and a lesion may lie on other sections than the one shown. The task here is narrower: recognizing that the bright midline line on this slice is physiologic, so that a normal structure is not misread as venous thrombosis or a tumor.\n- 비교: <table><thead><tr><th style=\"width:26%\">Midline enhancement on post-gadolinium T1</th><th style=\"width:44%\">Appearance</th><th>Meaning</th></tr></thead><tbody> <tr><td><b>Normal superior sagittal sinus and falx (answer)</b></td><td><b>thin, smooth, uniformly bright line; sinus completely filled; cortical veins bright; no mass effect</b></td><td><b>physiologic — gadolinium in venous blood and barrier-free dura</b></td></tr> <tr><td>Superior sagittal sinus thrombosis (closest wrong answer)</td><td>central dark filling defect inside the sinus with an enhancing rim ('empty delta'), dilated collateral veins, venous infarcts or hemorrhage</td><td>needs anticoagulation; confirm with MR venography</td></tr> <tr><td>Falx meningioma</td><td>focal, broad-based, homogeneously enhancing mass with a dural tail, displaces adjacent gyri</td><td>extra-axial tumor; surgery if symptomatic</td></tr> <tr><td>Dural metastases / pachymeningitis</td><td>thick (&gt; 2 mm), nodular or diffuse enhancement along the falx and convexity dura</td><td>systemic cancer, IgG4 disease, tuberculosis</td></tr> <tr><td>Interhemispheric subdural empyema</td><td>crescent of fluid along the falx with rim enhancement, restricted diffusion, mass effect, fever</td><td>neurosurgical emergency</td></tr> </tbody></table> The <b>closest wrong answer is sinus thrombosis</b>, because a first seizure with weeks of headache in a young adult is exactly its presentation. The discriminator is <b>what fills the sinus</b>: a thrombosed sinus is dark inside with only its wall enhancing, whereas this sinus is uniformly bright from edge to edge. If the image showed a central non-enhancing clot with an enhancing rim, the answer would flip to thrombosis and the next step would be MR venography and anticoagulation.\n- 오답 이유:\n  - (A) Dural metastases produce thick, nodular or diffuse enhancement of the falx and convexity dura, usually in a patient with a known cancer. The dural enhancement here is thin, smooth and uniform, the normal pattern. This option would be correct if the enhancement were more than 2 mm thick, nodular, or if there were a known primary tumor with other dural deposits.\n  - (C) A thrombosed superior sagittal sinus appears on post-contrast T1 as a dark, non-enhancing clot inside the sinus surrounded by an enhancing dural wall (the empty delta sign), often with dilated collateral veins or venous infarcts. Here the sinus is uniformly bright with no filling defect. This option would be correct if the center of the sinus were dark with only its rim enhancing on this or an adjacent section.\n  - (D) A falx meningioma is a focal, broad-based, homogeneously enhancing extra-axial mass with a dural tail that indents the adjacent cortex. The midline structure here is a thin, smooth line without a mass or displacement of the gyri. This option would be correct if a rounded enhancing mass were attached to the falx and pushing the medial frontal gyrus aside.\n  - (E) An interhemispheric subdural empyema is a crescent of fluid along the falx with rim enhancement, restricted diffusion, mass effect and, clinically, fever, meningism and rapid deterioration. This afebrile patient has no neck stiffness and the image shows no fluid collection. This option would be correct if he were febrile with a rim-enhancing crescent along the falx.\n- 함정: On contrast-enhanced T1 images, dural venous sinuses, cortical veins, the dura, choroid plexus and pituitary are supposed to be bright. Before calling a bright midline structure a lesion, ask whether it is thin, smooth and completely filled — thrombosis leaves a dark center, tumors make a mass.\n- 학습목표: 조영증강 T1 강조 MRI 에서 대뇌낫·위시상정맥굴의 균일한 조영증강을 정상 소견으로 읽고 정맥굴 혈전·수막종·경막 전이·경막하 농양과 구분한다\n- 근거·출처: TCIA UPENN-GBM series 'AX T1 POST', instance 20 (high-convexity level) — Grade B; teacher-only: the cohort patient has a glioblastoma on other sections, which is why the question asks only about the structure visible on this slice and does not call the study normal · 작성자 판독(2026-09-18): 조영 후 T1 축상면, 반타원중심 위 높이; 대뇌낫·위시상정맥굴 균일 조영증강, 피질정맥 밝음, 이 높이에 종괴·충만결손·중앙선 이동 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Normal enhancement patterns' — dural venous sinuses, cortical veins, dura, choroid plexus, pituitary and pineal enhance physiologically; normal dura is thin, smooth and discontinuous · Virapongse C et al. The empty delta sign: frequency and significance in 76 cases of dural sinus thrombosis. Radiology 1987;162:779 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Seizures and epilepsy' — neuroimaging after a first unprovoked seizure in an adult\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …35053496 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The image is a gadolinium-enhanced T1-weighted axial section at the vertex. The falx cerebri and the superior sagittal sinus form a thin, smooth, uniformly bright midline line, and the cortical veins draining into the sinus are also bright; the underlying gyri are symmetric, the sulci are open, and there is no mass, no midline shift and no nodular or thick dural enhancement at this level. Gadolinium shortens the T1 of blood, so slowly flowing venous blood in the dural sinuses and cortical veins is normally bright on post-contrast T1 images, as are the dura, choroid plexus, pituitary and pineal gland, which lack a blood-brain barrier. The bright midline structure is therefore normal enhancing venous blood and dura, not a lesion."
+   },
+   {
+    "k": "원리",
+    "v": "Gadolinium chelates shorten the T1 relaxation time of the water protons around them, so on T1-weighted images everything the contrast agent reaches becomes bright. <b>Two normal compartments enhance</b>: (1) <b>the blood pool</b> — arteries at normal flow often appear dark because of flow-void, but the slow, steady flow in the <b>dural venous sinuses and cortical veins</b> lets the gadolinium-laden blood be imaged, so the superior sagittal sinus, transverse sinuses and the 'straight' cortical veins converging on them are bright; (2) <b>tissues without a blood–brain barrier</b> — dura mater (including the falx and tentorium), choroid plexus, pituitary gland and stalk, pineal gland, area postrema and the nasal mucosa. Brain parenchyma stays dark because tight endothelial junctions keep the contrast in the vessels; parenchymal enhancement always means barrier breakdown (tumor, abscess, infarct, demyelination).<br> <b>Why the pattern is reassuring here</b> — normal dural enhancement is <b>thin (&lt; 2 mm), smooth, linear and discontinuous</b>, and the sinus is uniformly filled. Pathology changes the shape: a thrombosed sinus shows a <b>non-enhancing dark clot surrounded by an enhancing dural wall</b> (the 'empty delta' sign on axial images through the posterior sinus); a meningioma is a broad-based, homogeneously enhancing mass with a 'dural tail' that displaces brain; dural metastases and pachymeningitis give thick, nodular or diffuse dural enhancement; a subdural empyema is a crescent of fluid with a rim of enhancement and mass effect. None of these is present at this level.<br> <b>Why a first seizure still needs the whole study</b> — an adult with a new seizure and weeks of headache is imaged to look for a structural cause, and a lesion may lie on other sections than the one shown. The task here is narrower: recognizing that the bright midline line on this slice is physiologic, so that a normal structure is not misread as venous thrombosis or a tumor."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Midline enhancement on post-gadolinium T1</th><th style=\"width:44%\">Appearance</th><th>Meaning</th></tr></thead><tbody> <tr><td><b>Normal superior sagittal sinus and falx (answer)</b></td><td><b>thin, smooth, uniformly bright line; sinus completely filled; cortical veins bright; no mass effect</b></td><td><b>physiologic — gadolinium in venous blood and barrier-free dura</b></td></tr> <tr><td>Superior sagittal sinus thrombosis (closest wrong answer)</td><td>central dark filling defect inside the sinus with an enhancing rim ('empty delta'), dilated collateral veins, venous infarcts or hemorrhage</td><td>needs anticoagulation; confirm with MR venography</td></tr> <tr><td>Falx meningioma</td><td>focal, broad-based, homogeneously enhancing mass with a dural tail, displaces adjacent gyri</td><td>extra-axial tumor; surgery if symptomatic</td></tr> <tr><td>Dural metastases / pachymeningitis</td><td>thick (&gt; 2 mm), nodular or diffuse enhancement along the falx and convexity dura</td><td>systemic cancer, IgG4 disease, tuberculosis</td></tr> <tr><td>Interhemispheric subdural empyema</td><td>crescent of fluid along the falx with rim enhancement, restricted diffusion, mass effect, fever</td><td>neurosurgical emergency</td></tr> </tbody></table> The <b>closest wrong answer is sinus thrombosis</b>, because a first seizure with weeks of headache in a young adult is exactly its presentation. The discriminator is <b>what fills the sinus</b>: a thrombosed sinus is dark inside with only its wall enhancing, whereas this sinus is uniformly bright from edge to edge. If the image showed a central non-enhancing clot with an enhancing rim, the answer would flip to thrombosis and the next step would be MR venography and anticoagulation."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dural metastases produce thick, nodular or diffuse enhancement of the falx and convexity dura, usually in a patient with a known cancer. The dural enhancement here is thin, smooth and uniform, the normal pattern. This option would be correct if the enhancement were more than 2 mm thick, nodular, or if there were a known primary tumor with other dural deposits.\n(C) A thrombosed superior sagittal sinus appears on post-contrast T1 as a dark, non-enhancing clot inside the sinus surrounded by an enhancing dural wall (the empty delta sign), often with dilated collateral veins or venous infarcts. Here the sinus is uniformly bright with no filling defect. This option would be correct if the center of the sinus were dark with only its rim enhancing on this or an adjacent section.\n(D) A falx meningioma is a focal, broad-based, homogeneously enhancing extra-axial mass with a dural tail that indents the adjacent cortex. The midline structure here is a thin, smooth line without a mass or displacement of the gyri. This option would be correct if a rounded enhancing mass were attached to the falx and pushing the medial frontal gyrus aside.\n(E) An interhemispheric subdural empyema is a crescent of fluid along the falx with rim enhancement, restricted diffusion, mass effect and, clinically, fever, meningism and rapid deterioration. This afebrile patient has no neck stiffness and the image shows no fluid collection. This option would be correct if he were febrile with a rim-enhancing crescent along the falx."
+   },
+   {
+    "k": "함정",
+    "v": "On contrast-enhanced T1 images, dural venous sinuses, cortical veins, the dura, choroid plexus and pituitary are supposed to be bright. Before calling a bright midline structure a lesion, ask whether it is thin, smooth and completely filled — thrombosis leaves a dark center, tumors make a mass."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영증강 T1 강조 MRI 에서 대뇌낫·위시상정맥굴의 균일한 조영증강을 정상 소견으로 읽고 정맥굴 혈전·수막종·경막 전이·경막하 농양과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA UPENN-GBM series 'AX T1 POST', instance 20 (high-convexity level) — Grade B; teacher-only: the cohort patient has a glioblastoma on other sections, which is why the question asks only about the structure visible on this slice and does not call the study normal · 작성자 판독(2026-09-18): 조영 후 T1 축상면, 반타원중심 위 높이; 대뇌낫·위시상정맥굴 균일 조영증강, 피질정맥 밝음, 이 높이에 종괴·충만결손·중앙선 이동 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Normal enhancement patterns' — dural venous sinuses, cortical veins, dura, choroid plexus, pituitary and pineal enhance physiologically; normal dura is thin, smooth and discontinuous · Virapongse C et al. The empty delta sign: frequency and significance in 76 cases of dural sinus thrombosis. Radiology 1987;162:779 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Seizures and epilepsy' — neuroimaging after a first unprovoked seizure in an adult ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …35053496 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "조영증강 T1 에서 얇고 매끈하며 안까지 균일하게 밝은 위시상정맥굴·대뇌낫은 정상 조영증강이다 — 충만결손·종괴·두꺼운 결절성 경막이 없으면 병변으로 읽지 않는다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "영상에서 정맥굴 내부가 가장자리까지 균일하게 밝다 — 혈전이면 중심이 어둡고 벽만 증강되는 empty delta 가 된다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: thin, smooth, uniformly bright midline line formed by the falx and the completely filled superior sagittal sinus",
+     "why": "가돌리늄이 든 정맥혈과 혈액뇌장벽이 없는 경막의 정상 조영증강 형태",
+     "also": []
+    },
+    {
+     "item": "영상: bright cortical veins converging on the sinus, symmetric gyri, no mass and no midline shift at this level",
+     "why": "종괴·전위가 없어 수막종·농양·전이의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Contrast-enhanced T1-weighted MRI",
+     "why": "시퀀스를 알아야 「밝음 = 조영증강」으로 읽을 수 있다 — 비조영 T1 이면 밝은 정맥굴은 혈전을 뜻할 수 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "fever",
+     "why": "발열이 없어(He has no history of … fever) 경막하 농양의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no neck stiffness",
+     "why": "수막 자극 징후가 없어 농양·수막염의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "generalized tonic-clonic seizure",
+     "why": "영상을 찍는 이유이자 정맥굴 혈전의 사전확률을 올리는 정보 — 그래서 혼동 대안이 그럴듯하다",
+     "also": []
+    },
+    {
+     "item": "mild headaches for 3 weeks",
+     "why": "비특이적이다; 구조적 원인 탐색의 이유일 뿐 이 절편의 판독을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "no focal deficits",
+     "why": "이 절편에 종괴가 없다는 영상 소견과 일치하지만, 다른 절편의 병변을 배제하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "28-year-old man",
+     "why": "경막 전이가 드문 연령 — 사전확률 배경",
+     "also": []
+    }
+   ],
+   "summary": "On gadolinium-enhanced T1 the falx and a completely filled superior sagittal sinus form a thin, smooth, uniformly bright midline line with bright cortical veins and no mass — normal venous and dural enhancement, not thrombosis or tumor.",
+   "switch": {
+    "choice": "C",
+    "condition": "정맥굴 중심이 어둡고 벽만 테두리처럼 증강되는 empty delta 소견이 보였다면 위시상정맥굴 혈전이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0057.png",
+   "caption": "Contrast-enhanced axial T1-weighted MRI of the brain, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.130477720134089679587344462379535053496",
+   "asset_id": "TCIA-UPENN_GBM-15906206878841",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …35053496"
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0056",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "소아청소년 — 손목 외상 X선",
+  "type": "소아청소년 — 손목 외상 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-18",
+  "vignette": "6세 남아가 2시간 전 놀이터에서 넘어지며 왼손을 짚은 뒤 왼쪽 손목이 아프다고 하여 부모와 함께 응급실에 왔다. 다른 곳을 다치지는 않았다. 진찰에서 왼쪽 손목 등쪽에 경한 부종과 원위 요골 부위의 압통이 있으나 눈에 띄는 변형은 없고, 손가락의 움직임·감각·모세혈관 재충만은 정상이다. 왼쪽 손목 전후면 단순 X선 사진은 그림과 같다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "단상지 석고 붕대로 6주 고정",
+   "손목 자기공명영상으로 성장판 손상 평가",
+   "제거 가능한 손목 부목으로 3주 고정",
+   "도수 정복 후 장상지 석고 고정",
+   "수술적 정복과 금속핀 고정"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 전후면 X선에서 원위 요골 골간단의 척측 피질이 국소적으로 불룩하게 융기하고 골간단을 가로지르는 희미한 경화선이 보이며, 피질의 완전한 단절·전위·각형성은 없고 성장판과 골단은 정상이다. 넘어지며 손을 짚은 소아의 이 소견은 원위 요골 융기(torus, buckle) 골절이다. 융기 골절은 압박에 의한 피질의 국소 좌굴로 본질적으로 안정된 불완전 골절이므로 정복이 필요 없고, 통증 조절과 보호를 위해 제거 가능한 부목으로 약 3주 고정하면 충분하다.\n- 원리: 소아의 뼈는 성인보다 <b>물과 콜라겐이 많고 무기질이 적어 탄성이 크며</b>, 두꺼운 골막이 뼈를 감싸고 있다. 그래서 축 방향 압박이 걸리면 뼈가 부러져 갈라지는 대신 <b>피질이 국소적으로 좌굴(buckling)</b>한다. 이것이 <b>융기 골절(torus fracture)</b>이다 — 「torus」는 기둥 밑동의 볼록한 테를 뜻한다. 호발 부위는 피질이 얇고 해면골로 바뀌는 <b>골간단(metaphysis)</b>이고, 넘어지며 손을 짚는 기전(FOOSH)으로 원위 요골에 가장 흔하다. X선에서는 한쪽 피질의 매끈한 융기 또는 각진 꺾임과 골간단을 가로지르는 희미한 경화선이 보이며, 반대쪽 피질은 이어져 있고 골편의 전위가 없다.<br> <b>왜 정복도 석고도 필요 없는가</b> — 피질이 압축되어 서로 맞물린 상태라 <b>불안정해질 수 없고</b>(전위될 골편이 없다), 골막이 온전하며, 성장판에서 떨어져 있어 성장 장애를 남기지 않는다. 소아의 왕성한 골막 골형성으로 3~4주면 유합되고, 남은 미세한 각형성은 성장하면서 재형성된다. 무작위 대조시험(FORCE, Lancet 2022)은 소아 원위 요골 융기 골절에서 <b>탄력 붕대만으로도 단단한 고정과 통증·기능 결과가 같다</b>는 것을 보였고, 현재 표준은 제거 가능한 부목을 3주 정도 착용하고 통증이 사라지면 추적 X선 없이 활동을 재개하는 것이다. 정복·긴 석고·수술은 이 골절의 안정성을 오해한 과잉치료이며, 장상지 석고는 팔꿈치 강직과 피부 문제만 더한다.<br> <b>같은 소아 손목에서 처치가 달라지는 골절</b> — 피질 양쪽이 끊기고 각형성이 있는 완전 골간단 골절, 골절선이 성장판을 지나는 Salter-Harris 골절, 한쪽 피질만 갈라지며 휘는 생나무(greenstick) 골절은 각도와 나이에 따라 정복·석고 고정이 필요하다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소아 원위 요골 손상</th><th style=\"width:44%\">X선 소견</th><th>치료</th></tr></thead><tbody> <tr><td><b>융기(torus/buckle) 골절(정답)</b></td><td><b>한쪽 피질의 국소 융기 + 골간단 경화선, 반대쪽 피질 연속, 전위·각형성 없음, 성장판 정상</b></td><td><b>제거 가능 부목 3주, 정복 불필요, 추적 X선 불필요</b></td></tr> <tr><td>전위된 완전 골간단 골절(가장 가까운 오답)</td><td>양쪽 피질 단절, 골편 전위 또는 각형성(연령별 허용 각도 초과), 변형 촉지</td><td>도수 정복 후 석고 고정, 정복 유지 안 되면 핀 고정</td></tr> <tr><td>생나무(greenstick) 골절</td><td>장력 쪽 피질만 갈라지고 압박 쪽 피질은 휘어짐, 각형성 동반</td><td>각형성 정도에 따라 정복 후 석고 3~6주</td></tr> <tr><td>Salter-Harris II 형 성장판 골절</td><td>골절선이 성장판을 지나 골간단 삼각 조각(Thurston-Holland) 동반, 골단 전위</td><td>정복 후 석고 3~4주, 성장판 손상 추적</td></tr> <tr><td>정상 X선의 손목 염좌</td><td>피질 연속, 경화선·융기 없음</td><td>보호대·통증 조절, 압통 지속 시 재촬영(주상골)</td></tr> </tbody></table> <b>가장 가까운 오답은 「도수 정복 후 장상지 석고」</b>다 — 골절이 보이면 정복·석고를 떠올리기 때문이다. 갈림길은 <b>피질 단절과 전위·각형성이 있는가</b>이다. 융기 골절은 한쪽 피질이 압축되어 맞물린 안정 골절이라 정복할 것이 없고, 어느 쪽 피질도 끊기지 않았다. 반대로 양쪽 피질이 끊기고 배측 각형성이 20° 를 넘으면 정복과 석고가 정답이 된다.\n- 오답 이유:\n  - ① 단상지 석고 6주는 유합 기간 3~4주인 융기 골절에 지나치게 길고, 제거 가능한 부목과 결과가 같다는 무작위 시험이 있어 표준이 아니다. 골편이 있어 정복을 유지해야 하는 완전 골절에서 석고 고정이 정답이 된다.\n  - ② 손목 MRI 는 X선에서 보이지 않는 성장판·인대 손상이 임상적으로 의심될 때 쓴다. 이 X선은 골간단의 융기 골절을 이미 보여 주고 성장판과 골단이 정상이라 추가 영상이 진단이나 치료를 바꾸지 않는다. X선이 정상인데 성장판 부위 압통이 지속되어 Salter-Harris I 형이 의심될 때 이 선지가 정답이 된다.\n  - ④ 도수 정복 후 장상지 석고는 전위·각형성이 있는 완전 골간단 골절이나 생나무 골절의 치료다. 이 X선은 한쪽 피질의 융기와 경화선뿐 전위나 각형성이 없고 반대쪽 피질이 이어져 있어 정복할 변형이 없다. 양쪽 피질이 끊기고 배측 각형성이 연령별 허용 각도를 넘을 때 이 선지가 정답이 된다.\n  - ⑤ 수술적 정복과 핀 고정은 정복이 유지되지 않는 불안정 골절, 개방 골절, 성장판 전위가 큰 골절에 쓴다. 융기 골절은 피질이 맞물린 안정 골절이라 수술 적응이 없다. 정복 후에도 전위가 재발하거나 골절이 개방성일 때 이 선지가 정답이 된다.\n- 함정: 소아 손목 X선에서 「골절이 있다」에서 멈추지 말고 「어떤 골절인가」까지 읽는다. 한쪽 피질의 융기 + 전위·각형성 없음 = 융기 골절 → 정복 없이 부목 3주.\n- 학습목표: 소아 손목 X선에서 원위 요골 골간단의 피질 융기(torus/buckle)를 읽고, 전위·각형성·성장판 침범이 없는 안정 골절이므로 정복 없이 짧은 기간의 부목 고정을 선택한다\n- 근거·출처: GRAZPEDWRI-DX label: fracture, AO/OTA pediatric 23-M/2.1 (distal radius, metaphyseal, incomplete), initial exam, 6.4 M, left AP; expert pediatric radiologist annotation (Sci Data 2022) · 작성자 판독(2026-09-18): 원위 요골 골간단을 가로지르는 경화선과 척측 피질의 작은 굴곡, 전위 없음, 성장판·골단 정상; 전후면 한 장뿐이라 측면 소견은 묻지 않음 · Perry DC et al. Immobilisation of torus fractures of the wrist in children (FORCE): a randomised controlled equivalence trial. Lancet 2022;400:39 — bandage vs rigid immobilization equivalent · Nelson Textbook of Pediatrics 21st ed., ch. 'Common fractures' — torus (buckle) fracture: stable, splint 3–4 weeks, no reduction · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — torus vs complete metaphyseal vs greenstick, acceptable angulation by age\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "전후면 X선에서 원위 요골 골간단의 척측 피질이 국소적으로 불룩하게 융기하고 골간단을 가로지르는 희미한 경화선이 보이며, 피질의 완전한 단절·전위·각형성은 없고 성장판과 골단은 정상이다. 넘어지며 손을 짚은 소아의 이 소견은 원위 요골 융기(torus, buckle) 골절이다. 융기 골절은 압박에 의한 피질의 국소 좌굴로 본질적으로 안정된 불완전 골절이므로 정복이 필요 없고, 통증 조절과 보호를 위해 제거 가능한 부목으로 약 3주 고정하면 충분하다."
+   },
+   {
+    "k": "원리",
+    "v": "소아의 뼈는 성인보다 <b>물과 콜라겐이 많고 무기질이 적어 탄성이 크며</b>, 두꺼운 골막이 뼈를 감싸고 있다. 그래서 축 방향 압박이 걸리면 뼈가 부러져 갈라지는 대신 <b>피질이 국소적으로 좌굴(buckling)</b>한다. 이것이 <b>융기 골절(torus fracture)</b>이다 — 「torus」는 기둥 밑동의 볼록한 테를 뜻한다. 호발 부위는 피질이 얇고 해면골로 바뀌는 <b>골간단(metaphysis)</b>이고, 넘어지며 손을 짚는 기전(FOOSH)으로 원위 요골에 가장 흔하다. X선에서는 한쪽 피질의 매끈한 융기 또는 각진 꺾임과 골간단을 가로지르는 희미한 경화선이 보이며, 반대쪽 피질은 이어져 있고 골편의 전위가 없다.<br> <b>왜 정복도 석고도 필요 없는가</b> — 피질이 압축되어 서로 맞물린 상태라 <b>불안정해질 수 없고</b>(전위될 골편이 없다), 골막이 온전하며, 성장판에서 떨어져 있어 성장 장애를 남기지 않는다. 소아의 왕성한 골막 골형성으로 3~4주면 유합되고, 남은 미세한 각형성은 성장하면서 재형성된다. 무작위 대조시험(FORCE, Lancet 2022)은 소아 원위 요골 융기 골절에서 <b>탄력 붕대만으로도 단단한 고정과 통증·기능 결과가 같다</b>는 것을 보였고, 현재 표준은 제거 가능한 부목을 3주 정도 착용하고 통증이 사라지면 추적 X선 없이 활동을 재개하는 것이다. 정복·긴 석고·수술은 이 골절의 안정성을 오해한 과잉치료이며, 장상지 석고는 팔꿈치 강직과 피부 문제만 더한다.<br> <b>같은 소아 손목에서 처치가 달라지는 골절</b> — 피질 양쪽이 끊기고 각형성이 있는 완전 골간단 골절, 골절선이 성장판을 지나는 Salter-Harris 골절, 한쪽 피질만 갈라지며 휘는 생나무(greenstick) 골절은 각도와 나이에 따라 정복·석고 고정이 필요하다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소아 원위 요골 손상</th><th style=\"width:44%\">X선 소견</th><th>치료</th></tr></thead><tbody> <tr><td><b>융기(torus/buckle) 골절(정답)</b></td><td><b>한쪽 피질의 국소 융기 + 골간단 경화선, 반대쪽 피질 연속, 전위·각형성 없음, 성장판 정상</b></td><td><b>제거 가능 부목 3주, 정복 불필요, 추적 X선 불필요</b></td></tr> <tr><td>전위된 완전 골간단 골절(가장 가까운 오답)</td><td>양쪽 피질 단절, 골편 전위 또는 각형성(연령별 허용 각도 초과), 변형 촉지</td><td>도수 정복 후 석고 고정, 정복 유지 안 되면 핀 고정</td></tr> <tr><td>생나무(greenstick) 골절</td><td>장력 쪽 피질만 갈라지고 압박 쪽 피질은 휘어짐, 각형성 동반</td><td>각형성 정도에 따라 정복 후 석고 3~6주</td></tr> <tr><td>Salter-Harris II 형 성장판 골절</td><td>골절선이 성장판을 지나 골간단 삼각 조각(Thurston-Holland) 동반, 골단 전위</td><td>정복 후 석고 3~4주, 성장판 손상 추적</td></tr> <tr><td>정상 X선의 손목 염좌</td><td>피질 연속, 경화선·융기 없음</td><td>보호대·통증 조절, 압통 지속 시 재촬영(주상골)</td></tr> </tbody></table> <b>가장 가까운 오답은 「도수 정복 후 장상지 석고」</b>다 — 골절이 보이면 정복·석고를 떠올리기 때문이다. 갈림길은 <b>피질 단절과 전위·각형성이 있는가</b>이다. 융기 골절은 한쪽 피질이 압축되어 맞물린 안정 골절이라 정복할 것이 없고, 어느 쪽 피질도 끊기지 않았다. 반대로 양쪽 피질이 끊기고 배측 각형성이 20° 를 넘으면 정복과 석고가 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 단상지 석고 6주는 유합 기간 3~4주인 융기 골절에 지나치게 길고, 제거 가능한 부목과 결과가 같다는 무작위 시험이 있어 표준이 아니다. 골편이 있어 정복을 유지해야 하는 완전 골절에서 석고 고정이 정답이 된다.\n② 손목 MRI 는 X선에서 보이지 않는 성장판·인대 손상이 임상적으로 의심될 때 쓴다. 이 X선은 골간단의 융기 골절을 이미 보여 주고 성장판과 골단이 정상이라 추가 영상이 진단이나 치료를 바꾸지 않는다. X선이 정상인데 성장판 부위 압통이 지속되어 Salter-Harris I 형이 의심될 때 이 선지가 정답이 된다.\n④ 도수 정복 후 장상지 석고는 전위·각형성이 있는 완전 골간단 골절이나 생나무 골절의 치료다. 이 X선은 한쪽 피질의 융기와 경화선뿐 전위나 각형성이 없고 반대쪽 피질이 이어져 있어 정복할 변형이 없다. 양쪽 피질이 끊기고 배측 각형성이 연령별 허용 각도를 넘을 때 이 선지가 정답이 된다.\n⑤ 수술적 정복과 핀 고정은 정복이 유지되지 않는 불안정 골절, 개방 골절, 성장판 전위가 큰 골절에 쓴다. 융기 골절은 피질이 맞물린 안정 골절이라 수술 적응이 없다. 정복 후에도 전위가 재발하거나 골절이 개방성일 때 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "소아 손목 X선에서 「골절이 있다」에서 멈추지 말고 「어떤 골절인가」까지 읽는다. 한쪽 피질의 융기 + 전위·각형성 없음 = 융기 골절 → 정복 없이 부목 3주."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 손목 X선에서 원위 요골 골간단의 피질 융기(torus/buckle)를 읽고, 전위·각형성·성장판 침범이 없는 안정 골절이므로 정복 없이 짧은 기간의 부목 고정을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "GRAZPEDWRI-DX label: fracture, AO/OTA pediatric 23-M/2.1 (distal radius, metaphyseal, incomplete), initial exam, 6.4 M, left AP; expert pediatric radiologist annotation (Sci Data 2022) · 작성자 판독(2026-09-18): 원위 요골 골간단을 가로지르는 경화선과 척측 피질의 작은 굴곡, 전위 없음, 성장판·골단 정상; 전후면 한 장뿐이라 측면 소견은 묻지 않음 · Perry DC et al. Immobilisation of torus fractures of the wrist in children (FORCE): a randomised controlled equivalence trial. Lancet 2022;400:39 — bandage vs rigid immobilization equivalent · Nelson Textbook of Pediatrics 21st ed., ch. 'Common fractures' — torus (buckle) fracture: stable, splint 3–4 weeks, no reduction · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — torus vs complete metaphyseal vs greenstick, acceptable angulation by age ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "한쪽 피질의 융기와 경화선만 있고 전위·각형성·성장판 침범이 없는 원위 요골 융기 골절은 안정 골절이므로 정복 없이 제거 가능한 부목으로 3주 고정한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "영상에서 반대쪽 피질이 이어져 있고 전위·각형성이 없다 — 정복할 변형이 없다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단 척측 피질의 국소 융기와 골간단을 가로지르는 희미한 경화선",
+     "why": "융기(torus) 골절의 정의적 소견 — 압박에 의한 피질 좌굴",
+     "also": []
+    },
+    {
+     "item": "영상: 반대쪽 피질 연속, 전위·각형성 없음, 성장판과 골단 정상",
+     "why": "안정 골절임을 보여 정복·석고·수술의 필요를 없앤다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "눈에 띄는 변형은 없고",
+     "why": "전위된 완전 골절의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "손가락의 움직임·감각·모세혈관 재충만은 정상",
+     "why": "신경혈관 손상이 없어 응급 정복·수술의 필요를 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "6세 남아",
+     "why": "골막 골형성과 재형성이 왕성한 연령 — 짧은 고정으로 충분하고 미세 각형성은 성장하며 교정된다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "넘어지며 왼손을 짚은",
+     "why": "축 방향 압박 기전(FOOSH) — 골간단 융기 골절의 전형적 기전",
+     "also": []
+    }
+   ],
+   "summary": "X선의 한쪽 피질 융기와 경화선, 전위·각형성 없음, 정상 성장판은 원위 요골 융기 골절이다. 안정 골절이므로 정복 없이 제거 가능한 부목으로 3주 고정한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "양쪽 피질이 끊기고 배측 각형성이 연령별 허용 범위를 넘거나 손목에 변형이 만져지면 도수 정복 후 석고 고정이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0056.png",
+   "caption": "왼쪽 손목 전후면 단순 X선, 원본 그대로 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-1469_0597634364_01_WRI-L1_M006",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0055",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "응급·중환자 — 급성 저산소성 호흡부전",
+  "type": "응급·중환자 — 급성 저산소성 호흡부전",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-18",
+  "vignette": "A 41-year-old man is brought to the emergency department because of 2 days of worsening shortness of breath. He has had fever, dry cough, and myalgia for 6 days. He has no history of heart disease and takes no medications. His temperature is 38.6°C, pulse is 118/min, respirations are 34/min, and blood pressure is 118/72 mm Hg. Oxygen saturation is 84% on room air and rises to 90% on a nonrebreather mask. Crackles are heard over both lung fields; there is no jugular venous distention or peripheral edema. Serum B-type natriuretic peptide concentration is 40 pg/mL, and bedside echocardiography shows normal left ventricular function without pericardial effusion. He is intubated; on a positive end-expiratory pressure of 10 cm H2O and an FiO2 of 0.8, arterial PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph obtained before intubation is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous furosemide with reduction of the positive end-expiratory pressure",
+   "Therapeutic anticoagulation with intravenous unfractionated heparin",
+   "Emergent tube thoracostomy of the right hemithorax",
+   "Tidal volume of 6 mL/kg predicted body weight with plateau pressure kept below 30 cm H2O",
+   "Tidal volume of 12 mL/kg predicted body weight to normalize the PaCO2"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows multifocal patchy and nodular opacities in both lungs, denser in the right mid-to-lower and left lower zones, with no pleural effusion or pneumothorax. Acute onset within a week of a respiratory illness, bilateral opacities, a PaO2/FiO2 ratio of 85 (68/0.8) on PEEP ≥ 5 cm H2O, and a cardiac cause excluded by a normal BNP, no venous distention and a normal echocardiogram meet the Berlin definition of severe acute respiratory distress syndrome. The intervention with the strongest mortality benefit is lung-protective ventilation: tidal volume 6 mL/kg of predicted body weight with plateau pressure below 30 cm H2O.\n- 원리: ARDS is <b>diffuse alveolar damage</b>: an inflammatory insult (here a viral pneumonia) injures the alveolar epithelium and capillary endothelium, so protein-rich fluid floods the alveoli, surfactant is inactivated and dependent lung units collapse. Two consequences drive management. First, <b>hypoxemia is shunt physiology</b> — blood passes flooded, non-ventilated alveoli — so it responds poorly to FiO2 alone and needs PEEP to recruit alveoli. Second, the aerated lung is small (the 'baby lung'): a normal-sized tidal volume delivered into a lung that is one third its usual size over-distends the open alveoli (<b>volutrauma</b>) and repeatedly reopens collapsed ones (<b>atelectrauma</b>), releasing cytokines that worsen the injury and cause distant organ failure (biotrauma).<br> <b>Why 6 mL/kg</b> — the ARDS Network ARMA trial randomized 861 patients to 6 versus 12 mL/kg of <b>predicted</b> body weight (a function of height and sex, because lung size does not grow with obesity) with plateau pressure limited to 30 cm H2O; mortality fell from 39.8 % to 31.0 %. Permissive hypercapnia is accepted as the price of low volumes. The Berlin definition grades severity by the PaO2/FiO2 ratio on PEEP ≥ 5 cm H2O: mild 201–300, moderate 101–200, severe ≤ 100. This patient's ratio of 85 is severe, which additionally justifies higher PEEP, neuromuscular blockade in the first 48 h and prone positioning for ≥ 16 h/day (PROSEVA), and consideration of ECMO if the ratio stays below 80 despite these.<br> <b>Why the cardiac work-up matters</b> — the Berlin definition requires that the edema is <b>not fully explained by cardiac failure or fluid overload</b>. Bilateral opacities with a low BNP, no jugular venous distention and normal ventricular function on echocardiography point away from hydrostatic edema, so diuresis would only deplete intravascular volume without clearing the alveoli.\n- 비교: <table><thead><tr><th style=\"width:28%\">Cause of bilateral opacities with hypoxemia</th><th style=\"width:42%\">Distinguishing features</th><th>Initial management</th></tr></thead><tbody> <tr><td><b>ARDS (answer)</b></td><td><b>onset ≤ 1 week after an insult; PaO2/FiO2 ≤ 300 on PEEP ≥ 5; BNP low, echocardiography normal, no volume overload</b></td><td><b>tidal volume 6 mL/kg PBW, plateau &lt; 30, PEEP; prone if PaO2/FiO2 &lt; 150</b></td></tr> <tr><td>Cardiogenic pulmonary edema (closest wrong answer)</td><td>BNP &gt; 400 pg/mL, jugular venous distention, S3, reduced ejection fraction or severe valve disease, effusions, perihilar 'bat-wing' pattern</td><td>diuretics, nitrates, treat the cardiac cause; PEEP still helps</td></tr> <tr><td>Massive pulmonary embolism</td><td>clear or near-clear lungs despite hypoxemia, right-ventricular strain on echocardiography, hypotension</td><td>anticoagulation; thrombolysis if unstable</td></tr> <tr><td>Diffuse alveolar hemorrhage</td><td>hemoptysis, falling hemoglobin, vasculitis or anticoagulant history, bloody lavage</td><td>immunosuppression, correct coagulopathy</td></tr> <tr><td>Tension pneumothorax</td><td>unilateral absent breath sounds, tracheal deviation, hyperlucent hemithorax, hypotension</td><td>needle decompression and chest tube</td></tr> </tbody></table> The <b>closest wrong answer is a 'normal' tidal volume of 12 mL/kg</b>: it seems to correct the respiratory acidosis of a patient breathing 34/min, but in ARDS the aerated lung is small and large volumes over-distend it. The discriminator is the <b>combination of bilateral opacities, PaO2/FiO2 ≤ 100 on PEEP and an excluded cardiac cause</b>: once ARDS is diagnosed, the goal is protecting the lung, not normalizing the blood gas. If BNP were high with jugular venous distention and a dilated, poorly contracting ventricle, diuresis would move ahead of the ventilator settings.\n- 오답 이유:\n  - (A) Furosemide and lowering PEEP treat hydrostatic (cardiogenic) pulmonary edema. Here the BNP is 40 pg/mL, there is no jugular venous distention or edema, and echocardiography shows normal left ventricular function, so the alveolar fluid is inflammatory, not hydrostatic; diuresis would worsen perfusion, and lowering PEEP would de-recruit alveoli. This option would be correct if BNP were above 400 pg/mL with a dilated, hypokinetic left ventricle.\n  - (B) Therapeutic heparin is the treatment for pulmonary embolism, which causes hypoxemia with clear lungs and right-ventricular strain. This patient has bilateral parenchymal opacities after a febrile respiratory illness and a normal echocardiogram. This option would be correct if the radiograph were clear, the D-dimer high and CT angiography showed a clot.\n  - (C) Tube thoracostomy is for pneumothorax or a large effusion. The radiograph shows lung markings extending to the chest wall on both sides, no visceral pleural line and no meniscus; the opacities are parenchymal. This option would be correct if the right hemithorax were hyperlucent without lung markings and the mediastinum shifted to the left.\n  - (E) A tidal volume of 12 mL/kg normalizes the PaCO2 but over-distends the small aerated lung of ARDS (volutrauma), which in the ARMA trial increased mortality from 31 % to 40 % compared with 6 mL/kg. Permissive hypercapnia is accepted instead. This option would be correct for no ARDS patient; it belongs to the pre-2000 era of ventilation.\n- 함정: Bilateral opacities plus hypoxemia is not automatically 'heart failure' — check BNP, neck veins and the echocardiogram. Once ARDS is recognized, the first decision is how not to injure the lung further (6 mL/kg PBW, plateau < 30), not how to normalize the PaCO2.\n- 학습목표: 양측 폐 음영과 PaO2/FiO2 저하가 심부전으로 설명되지 않을 때 급성호흡곤란증후군으로 판단하고 저일회호흡량 폐보호 환기를 선택한다\n- 근거·출처: TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 41 M · 작성자 판독(2026-09-19): 직립 AP, 양쪽 폐야 다발성 반점상·결절상 음영(오른쪽 중·하부, 왼쪽 하부 우세), 흉수·기흉 없음, 번인 문자 'UPRIGHT'·'L'·'57' 뿐 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin definition. JAMA 2012;307:2526 — timing, bilateral opacities, PaO2/FiO2 on PEEP ≥ 5, not fully explained by cardiac failure · ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes. N Engl J Med 2000;342:1301 (ARMA) — 6 vs 12 mL/kg PBW, mortality 31.0 % vs 39.8 % · Guérin C et al. Prone positioning in severe ARDS. N Engl J Med 2013;368:2159 (PROSEVA); Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute respiratory distress syndrome'\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows multifocal patchy and nodular opacities in both lungs, denser in the right mid-to-lower and left lower zones, with no pleural effusion or pneumothorax. Acute onset within a week of a respiratory illness, bilateral opacities, a PaO2/FiO2 ratio of 85 (68/0.8) on PEEP ≥ 5 cm H2O, and a cardiac cause excluded by a normal BNP, no venous distention and a normal echocardiogram meet the Berlin definition of severe acute respiratory distress syndrome. The intervention with the strongest mortality benefit is lung-protective ventilation: tidal volume 6 mL/kg of predicted body weight with plateau pressure below 30 cm H2O."
+   },
+   {
+    "k": "원리",
+    "v": "ARDS is <b>diffuse alveolar damage</b>: an inflammatory insult (here a viral pneumonia) injures the alveolar epithelium and capillary endothelium, so protein-rich fluid floods the alveoli, surfactant is inactivated and dependent lung units collapse. Two consequences drive management. First, <b>hypoxemia is shunt physiology</b> — blood passes flooded, non-ventilated alveoli — so it responds poorly to FiO2 alone and needs PEEP to recruit alveoli. Second, the aerated lung is small (the 'baby lung'): a normal-sized tidal volume delivered into a lung that is one third its usual size over-distends the open alveoli (<b>volutrauma</b>) and repeatedly reopens collapsed ones (<b>atelectrauma</b>), releasing cytokines that worsen the injury and cause distant organ failure (biotrauma).<br> <b>Why 6 mL/kg</b> — the ARDS Network ARMA trial randomized 861 patients to 6 versus 12 mL/kg of <b>predicted</b> body weight (a function of height and sex, because lung size does not grow with obesity) with plateau pressure limited to 30 cm H2O; mortality fell from 39.8 % to 31.0 %. Permissive hypercapnia is accepted as the price of low volumes. The Berlin definition grades severity by the PaO2/FiO2 ratio on PEEP ≥ 5 cm H2O: mild 201–300, moderate 101–200, severe ≤ 100. This patient's ratio of 85 is severe, which additionally justifies higher PEEP, neuromuscular blockade in the first 48 h and prone positioning for ≥ 16 h/day (PROSEVA), and consideration of ECMO if the ratio stays below 80 despite these.<br> <b>Why the cardiac work-up matters</b> — the Berlin definition requires that the edema is <b>not fully explained by cardiac failure or fluid overload</b>. Bilateral opacities with a low BNP, no jugular venous distention and normal ventricular function on echocardiography point away from hydrostatic edema, so diuresis would only deplete intravascular volume without clearing the alveoli."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Cause of bilateral opacities with hypoxemia</th><th style=\"width:42%\">Distinguishing features</th><th>Initial management</th></tr></thead><tbody> <tr><td><b>ARDS (answer)</b></td><td><b>onset ≤ 1 week after an insult; PaO2/FiO2 ≤ 300 on PEEP ≥ 5; BNP low, echocardiography normal, no volume overload</b></td><td><b>tidal volume 6 mL/kg PBW, plateau &lt; 30, PEEP; prone if PaO2/FiO2 &lt; 150</b></td></tr> <tr><td>Cardiogenic pulmonary edema (closest wrong answer)</td><td>BNP &gt; 400 pg/mL, jugular venous distention, S3, reduced ejection fraction or severe valve disease, effusions, perihilar 'bat-wing' pattern</td><td>diuretics, nitrates, treat the cardiac cause; PEEP still helps</td></tr> <tr><td>Massive pulmonary embolism</td><td>clear or near-clear lungs despite hypoxemia, right-ventricular strain on echocardiography, hypotension</td><td>anticoagulation; thrombolysis if unstable</td></tr> <tr><td>Diffuse alveolar hemorrhage</td><td>hemoptysis, falling hemoglobin, vasculitis or anticoagulant history, bloody lavage</td><td>immunosuppression, correct coagulopathy</td></tr> <tr><td>Tension pneumothorax</td><td>unilateral absent breath sounds, tracheal deviation, hyperlucent hemithorax, hypotension</td><td>needle decompression and chest tube</td></tr> </tbody></table> The <b>closest wrong answer is a 'normal' tidal volume of 12 mL/kg</b>: it seems to correct the respiratory acidosis of a patient breathing 34/min, but in ARDS the aerated lung is small and large volumes over-distend it. The discriminator is the <b>combination of bilateral opacities, PaO2/FiO2 ≤ 100 on PEEP and an excluded cardiac cause</b>: once ARDS is diagnosed, the goal is protecting the lung, not normalizing the blood gas. If BNP were high with jugular venous distention and a dilated, poorly contracting ventricle, diuresis would move ahead of the ventilator settings."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Furosemide and lowering PEEP treat hydrostatic (cardiogenic) pulmonary edema. Here the BNP is 40 pg/mL, there is no jugular venous distention or edema, and echocardiography shows normal left ventricular function, so the alveolar fluid is inflammatory, not hydrostatic; diuresis would worsen perfusion, and lowering PEEP would de-recruit alveoli. This option would be correct if BNP were above 400 pg/mL with a dilated, hypokinetic left ventricle.\n(B) Therapeutic heparin is the treatment for pulmonary embolism, which causes hypoxemia with clear lungs and right-ventricular strain. This patient has bilateral parenchymal opacities after a febrile respiratory illness and a normal echocardiogram. This option would be correct if the radiograph were clear, the D-dimer high and CT angiography showed a clot.\n(C) Tube thoracostomy is for pneumothorax or a large effusion. The radiograph shows lung markings extending to the chest wall on both sides, no visceral pleural line and no meniscus; the opacities are parenchymal. This option would be correct if the right hemithorax were hyperlucent without lung markings and the mediastinum shifted to the left.\n(E) A tidal volume of 12 mL/kg normalizes the PaCO2 but over-distends the small aerated lung of ARDS (volutrauma), which in the ARMA trial increased mortality from 31 % to 40 % compared with 6 mL/kg. Permissive hypercapnia is accepted instead. This option would be correct for no ARDS patient; it belongs to the pre-2000 era of ventilation."
+   },
+   {
+    "k": "함정",
+    "v": "Bilateral opacities plus hypoxemia is not automatically 'heart failure' — check BNP, neck veins and the echocardiogram. Once ARDS is recognized, the first decision is how not to injure the lung further (6 mL/kg PBW, plateau < 30), not how to normalize the PaCO2."
+   },
+   {
+    "k": "학습목표",
+    "v": "양측 폐 음영과 PaO2/FiO2 저하가 심부전으로 설명되지 않을 때 급성호흡곤란증후군으로 판단하고 저일회호흡량 폐보호 환기를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 41 M · 작성자 판독(2026-09-19): 직립 AP, 양쪽 폐야 다발성 반점상·결절상 음영(오른쪽 중·하부, 왼쪽 하부 우세), 흉수·기흉 없음, 번인 문자 'UPRIGHT'·'L'·'57' 뿐 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin definition. JAMA 2012;307:2526 — timing, bilateral opacities, PaO2/FiO2 on PEEP ≥ 5, not fully explained by cardiac failure · ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes. N Engl J Med 2000;342:1301 (ARMA) — 6 vs 12 mL/kg PBW, mortality 31.0 % vs 39.8 % · Guérin C et al. Prone positioning in severe ARDS. N Engl J Med 2013;368:2159 (PROSEVA); Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute respiratory distress syndrome' ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "급성 발병·양측 폐 음영·PEEP 하 PaO2/FiO2 85·심장 원인 배제 → 중증 ARDS 이므로 폐보호 환기(6 mL/kg PBW, 고평부압 < 30)를 먼저 적용한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "PaO2/FiO2 ≤ 100 인 양측 폐 음영에서 아직 통기되는 폐는 작다 — 혈액가스를 정상화하려는 큰 일회호흡량은 그 폐를 과팽창시킨다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: multifocal patchy and nodular opacities in both lungs without effusion or pneumothorax",
+     "why": "Berlin 정의의 「양측 음영」 — 흉수·기흉·결절로 설명되지 않는 폐포 음영",
+     "also": []
+    },
+    {
+     "item": "arterial PaO2 is 68 mm Hg",
+     "why": "FiO2 0.8 로 나누면 PaO2/FiO2 = 85 → 중증 ARDS(≤ 100)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "B-type natriuretic peptide concentration is 40 pg/mL",
+     "why": "심부전(보통 > 400 pg/mL)에 의한 정수압성 부종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "normal left ventricular function without pericardial effusion",
+     "why": "심장 원인이 아니라는 Berlin 정의의 마지막 조건",
+     "also": []
+    },
+    {
+     "item": "no jugular venous distention or peripheral edema",
+     "why": "용적 과부하 가능성을 낮춘다 — 이뇨제 선택에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "positive end-expiratory pressure of 10 cm H2O",
+     "why": "Berlin 정의는 PEEP ≥ 5 에서의 비율을 요구한다; 중증이면 높은 PEEP·복와위도 고려",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "dry cough",
+     "why": "선행 호흡기 감염이 ARDS 의 유발 요인임을 시사하지만 처치를 바꾸지는 않는다",
+     "also": []
+    },
+    {
+     "item": "41-year-old man",
+     "why": "기저 심장병이 드문 연령 — 정수압성 부종의 사전확률을 낮추는 배경",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral opacities, PaO2/FiO2 85 on PEEP 10 and an excluded cardiac cause make this severe ARDS; the first management step is lung-protective ventilation with 6 mL/kg predicted body weight and plateau pressure below 30 cm H2O.",
+   "switch": {
+    "choice": "A",
+    "condition": "BNP 가 400 pg/mL 을 넘고 경정맥 팽대와 심초음파의 확장·저수축 좌심실이 있었다면 이뇨제가 우선한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0055.png",
+   "caption": "Upright anteroposterior chest radiograph obtained before intubation (The Cancer Imaging Archive, CC BY 4.0; original pixel data, no windowing or cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1302476255791547289201485398017",
+   "asset_id": "TCIA-COVID19_AR-19337694287376",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …85398017"
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0054",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "피부 — 더모스코피 판독",
+  "type": "피부 — 더모스코피 판독",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-18",
+  "vignette": "55세 여자가 앞가슴에 3년 전부터 있던 옅은 갈색 반점이 2개월 전부터 분홍색으로 변하면서 가렵다고 병원에 왔다. 병변을 긁거나 약을 바른 적은 없고 피부암의 가족력은 없다. 진찰에서 앞가슴에 직경 8 mm 의 경계가 불분명한 분홍-갈색 편평 반이 하나 있고 만져지는 융기나 궤양은 없다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "가장 적절한 다음 조치는?",
+  "options": [
+   "피부 생검으로 조직검사",
+   "국소 스테로이드 도포 후 경과관찰",
+   "액체질소 냉동치료",
+   "6개월 뒤 더모스코피 재검",
+   "국소 이미퀴모드 도포"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 더모스코피에서 분홍 배경 위에 경계가 불분명한 회갈색 과립과 작은 반점이 흩어져 있고(peppering), 중앙에 흰 비늘·흉터 같은 구조와 미세한 혈관이 보이며 색소망·소구·줄무늬 같은 멜라닌세포 병변의 구조는 없다. 오래된 갈색 반이 분홍색으로 변하며 가려워진 병력과 합치면 퇴행 중인 편평태선양 각화증(lichen planus-like keratosis)에 가장 합당하다. 그러나 회갈색 과립과 흉터양 백색 영역은 「퇴행 구조」이고, 이는 퇴행 중인 흑색종에서도 똑같이 나타난다. 더모스코피만으로 둘을 확실히 가를 수 없으므로 조직검사로 확진해야 한다.\n- 원리: <b>편평태선양 각화증(LPLK, lichenoid keratosis)</b>은 독립된 종양이 아니라 <b>기존의 일광흑자·지루각화증이 태선양(lichenoid) 염증으로 퇴행하는 과정</b>이다. T 세포가 표피 기저층을 공격해 각질형성세포가 괴사하고, 기저층의 멜라닌이 진피 상부로 떨어져 <b>멜라닌탐식세포(melanophage)</b>에 담긴다. 더모스코피의 <b>회갈색 과립(peppering)</b>이 바로 이 진피 멜라닌탐식세포이고, 염증이 지나간 자리는 섬유화되어 <b>흉터양 백색 영역</b>이 된다. 그래서 병력이 「오래된 갈색 반이 분홍색으로 변하며 가렵다」이고, 색소망 같은 원래 구조는 사라지며 과립·백색 영역·미세 혈관만 남는다.<br> <b>왜 조직검사인가</b> — 퇴행은 병변의 종류가 아니라 <b>면역 반응의 흔적</b>이다. 흑색종도 퇴행하며, 완전히 퇴행한 흑색종은 더모스코피에서 LPLK 와 똑같이 회갈색 과립과 백색 영역만 보일 수 있다. 더모스코피 문헌은 병변의 <b>50 % 이상을 차지하는 퇴행 구조</b>나 <b>단독 병변의 퇴행 소견</b>은 흑색종을 배제할 수 없으므로 조직검사 대상으로 삼는다. LPLK 를 뒷받침하는 단서(오래된 흑자에서 시작, 몸통·전완, 색소망·비정형 혈관 없음)는 확률을 높일 뿐 확정하지 못한다. 조직검사에서 LPLK 는 띠 모양 림프구 침윤·기저층 액화변성·콜로이드 소체·진피 멜라닌탐식세포를 보이고, 비정형 멜라닌세포의 증식이 없다는 것이 퇴행 흑색종과의 결정적 차이다.<br> <b>왜 다른 처치가 아닌가</b> — 냉동치료·이미퀴모드·스테로이드는 조직을 파괴하거나 염증을 눌러 <b>진단 기회를 없앤다</b>. 흑색종이었다면 치료 지연이 아니라 진단 소실이 된다. 경과관찰도 마찬가지로 퇴행 흑색종의 전이 위험을 안고 가는 선택이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:44%\">더모스코피·병력</th><th>처치</th></tr></thead><tbody> <tr><td><b>편평태선양 각화증(퇴행 중)</b></td><td><b>회갈색 과립(peppering)·흉터양 백색 영역·미세 혈관, 색소망 없음; 오래된 흑자·지루각화증이 분홍색으로 변하며 가려움</b></td><td><b>조직검사로 확진</b></td></tr> <tr><td>퇴행 흑색종(가장 가까운 오답의 근거)</td><td>같은 회갈색 과립·백색 영역 + 남아 있는 비대칭 색소망·비정형 점·다형성 혈관, 청백색 베일; 단독 병변·최근 변화</td><td>절제 생검 — 임상·더모스코피만으로 배제 불가</td></tr> <tr><td>색소성 광선각화증</td><td>모낭 주위 회색 과립이 「딸기 모양」·능형 구조, 얼굴·햇빛 노출부, 거친 비늘</td><td>냉동치료 가능(진단이 확실할 때)</td></tr> <tr><td>지루각화증</td><td>밀리아 유사 낭·면포 유사 개구·뇌 모양 융기, 경계 뚜렷, 「붙여 놓은」 모양</td><td>경과관찰 또는 냉동치료</td></tr> <tr><td>표재성 기저세포암</td><td>짧고 가는 모세혈관확장·나뭇잎 모양 영역·다수의 청회색 소구, 광택 있는 백색·홍색 영역</td><td>이미퀴모드·절제</td></tr> </tbody></table> <b>가장 가까운 오답은 「국소 스테로이드 후 경과관찰」</b>이다 — 가려움과 분홍 염증성 배경이 「염증성 양성 병변」처럼 보이기 때문이다. 갈림길은 <b>퇴행 구조(회갈색 과립·흉터양 백색 영역)가 있는가</b>이다. 있으면 퇴행 흑색종이 같은 그림을 그릴 수 있으므로 조직검사가 먼저이고, 색소망·소구·비대칭이 남아 있으면 더욱 절제 생검 쪽이다. 반대로 밀리아 유사 낭·면포 유사 개구가 뚜렷하고 변화가 없는 지루각화증이라면 경과관찰이 정답이 된다.\n- 오답 이유:\n  - ② 국소 스테로이드 후 경과관찰은 진단이 확실한 염증성 병변(습진·편평태선)에서 정답이 된다. 이 병변은 회갈색 과립과 흉터양 백색 영역이라는 퇴행 구조를 보이며, 이는 퇴행 흑색종에서도 똑같이 나타나므로 조직 확진 없이 염증만 누르면 흑색종을 놓친다. 지루각화증의 밀리아 유사 낭·면포 유사 개구가 뚜렷하고 퇴행 구조가 없을 때 이 선지가 맞다.\n  - ③ 액체질소 냉동치료는 광선각화증·사마귀·지루각화증처럼 진단이 임상적으로 확실한 병변의 치료다. 퇴행 구조를 보이는 색소 병변을 조직검사 없이 파괴하면 흑색종이었을 경우 진단 자체가 사라진다. 얼굴의 거친 비늘과 딸기 모양 모낭 개구를 보이는 전형적 광선각화증이면 이 선지가 정답이 된다.\n  - ④ 6개월 뒤 재검은 변화가 없고 양성 기준을 모두 충족하는 멜라닌세포 모반의 추적 방식이다. 최근 2개월 사이에 색과 증상이 변했고 퇴행 구조가 있는 단독 병변은 추적 대상이 아니라 조직검사 대상이다. 대칭적 색소망만 보이는 안정된 모반에서 이 선지가 정답이 된다.\n  - ⑤ 국소 이미퀴모드는 표재성 기저세포암·광선각화증의 치료다. 이 병변에는 나뭇잎 모양 영역이나 짧은 모세혈관확장 같은 기저세포암 구조가 없고, 무엇보다 조직 확진 없이 면역조절제를 쓰면 퇴행 흑색종의 진단이 늦어진다. 조직검사로 표재성 기저세포암이 확인된 뒤라면 이 선지가 정답이 된다.\n- 함정: 분홍색·가려움 때문에 「염증」으로 읽기 쉽다. 더모스코피에서 회갈색 과립과 흉터양 백색 영역은 퇴행의 흔적이고, 퇴행은 흑색종도 한다 — 퇴행 구조가 주된 병변은 조직검사로 확인한다.\n- 학습목표: 더모스코피에서 회갈색 과립(peppering)·흉터양 백색 영역 같은 퇴행 구조를 읽고, 퇴행 중 편평태선양 각화증과 퇴행 흑색종을 육안으로 가를 수 없어 조직검사가 필요함을 판단한다\n- 근거·출처: ISIC Archive ISIC_0001107 — histopathology-confirmed lichen planus like keratosis (benign epidermal proliferation), 55 F, anterior trunk (teacher-only) · 작성자 판독(2026-09-18): 분홍 배경, 경계 불명확한 회갈색 과립·반점, 중앙 흰 비늘·흉터양 구조, 미세 혈관망; 색소망·청백색 베일·비정형 혈관 없음 · Bolognia JL et al. Dermatology, 4th ed., ch. 'Benign epidermal tumors and proliferations' — lichenoid keratosis: regressing lentigo/seborrheic keratosis, biopsy to exclude melanoma · Marghoob AA, Malvehy J, Braun RP. Atlas of Dermoscopy, 2nd ed. — regression structures (peppering, scar-like depigmentation) and the rule that lesions with predominant regression are excised/biopsied · Zaballos P et al. Dermoscopy of lichenoid regressing keratoses — gray granules and scar-like areas overlap with regressing melanoma; histopathology required (JEADV)\n\n## 출처\n- ISIC Archive ISIC_0001107 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 분홍 배경 위에 경계가 불분명한 회갈색 과립과 작은 반점이 흩어져 있고(peppering), 중앙에 흰 비늘·흉터 같은 구조와 미세한 혈관이 보이며 색소망·소구·줄무늬 같은 멜라닌세포 병변의 구조는 없다. 오래된 갈색 반이 분홍색으로 변하며 가려워진 병력과 합치면 퇴행 중인 편평태선양 각화증(lichen planus-like keratosis)에 가장 합당하다. 그러나 회갈색 과립과 흉터양 백색 영역은 「퇴행 구조」이고, 이는 퇴행 중인 흑색종에서도 똑같이 나타난다. 더모스코피만으로 둘을 확실히 가를 수 없으므로 조직검사로 확진해야 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>편평태선양 각화증(LPLK, lichenoid keratosis)</b>은 독립된 종양이 아니라 <b>기존의 일광흑자·지루각화증이 태선양(lichenoid) 염증으로 퇴행하는 과정</b>이다. T 세포가 표피 기저층을 공격해 각질형성세포가 괴사하고, 기저층의 멜라닌이 진피 상부로 떨어져 <b>멜라닌탐식세포(melanophage)</b>에 담긴다. 더모스코피의 <b>회갈색 과립(peppering)</b>이 바로 이 진피 멜라닌탐식세포이고, 염증이 지나간 자리는 섬유화되어 <b>흉터양 백색 영역</b>이 된다. 그래서 병력이 「오래된 갈색 반이 분홍색으로 변하며 가렵다」이고, 색소망 같은 원래 구조는 사라지며 과립·백색 영역·미세 혈관만 남는다.<br> <b>왜 조직검사인가</b> — 퇴행은 병변의 종류가 아니라 <b>면역 반응의 흔적</b>이다. 흑색종도 퇴행하며, 완전히 퇴행한 흑색종은 더모스코피에서 LPLK 와 똑같이 회갈색 과립과 백색 영역만 보일 수 있다. 더모스코피 문헌은 병변의 <b>50 % 이상을 차지하는 퇴행 구조</b>나 <b>단독 병변의 퇴행 소견</b>은 흑색종을 배제할 수 없으므로 조직검사 대상으로 삼는다. LPLK 를 뒷받침하는 단서(오래된 흑자에서 시작, 몸통·전완, 색소망·비정형 혈관 없음)는 확률을 높일 뿐 확정하지 못한다. 조직검사에서 LPLK 는 띠 모양 림프구 침윤·기저층 액화변성·콜로이드 소체·진피 멜라닌탐식세포를 보이고, 비정형 멜라닌세포의 증식이 없다는 것이 퇴행 흑색종과의 결정적 차이다.<br> <b>왜 다른 처치가 아닌가</b> — 냉동치료·이미퀴모드·스테로이드는 조직을 파괴하거나 염증을 눌러 <b>진단 기회를 없앤다</b>. 흑색종이었다면 치료 지연이 아니라 진단 소실이 된다. 경과관찰도 마찬가지로 퇴행 흑색종의 전이 위험을 안고 가는 선택이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">진단</th><th style=\"width:44%\">더모스코피·병력</th><th>처치</th></tr></thead><tbody> <tr><td><b>편평태선양 각화증(퇴행 중)</b></td><td><b>회갈색 과립(peppering)·흉터양 백색 영역·미세 혈관, 색소망 없음; 오래된 흑자·지루각화증이 분홍색으로 변하며 가려움</b></td><td><b>조직검사로 확진</b></td></tr> <tr><td>퇴행 흑색종(가장 가까운 오답의 근거)</td><td>같은 회갈색 과립·백색 영역 + 남아 있는 비대칭 색소망·비정형 점·다형성 혈관, 청백색 베일; 단독 병변·최근 변화</td><td>절제 생검 — 임상·더모스코피만으로 배제 불가</td></tr> <tr><td>색소성 광선각화증</td><td>모낭 주위 회색 과립이 「딸기 모양」·능형 구조, 얼굴·햇빛 노출부, 거친 비늘</td><td>냉동치료 가능(진단이 확실할 때)</td></tr> <tr><td>지루각화증</td><td>밀리아 유사 낭·면포 유사 개구·뇌 모양 융기, 경계 뚜렷, 「붙여 놓은」 모양</td><td>경과관찰 또는 냉동치료</td></tr> <tr><td>표재성 기저세포암</td><td>짧고 가는 모세혈관확장·나뭇잎 모양 영역·다수의 청회색 소구, 광택 있는 백색·홍색 영역</td><td>이미퀴모드·절제</td></tr> </tbody></table> <b>가장 가까운 오답은 「국소 스테로이드 후 경과관찰」</b>이다 — 가려움과 분홍 염증성 배경이 「염증성 양성 병변」처럼 보이기 때문이다. 갈림길은 <b>퇴행 구조(회갈색 과립·흉터양 백색 영역)가 있는가</b>이다. 있으면 퇴행 흑색종이 같은 그림을 그릴 수 있으므로 조직검사가 먼저이고, 색소망·소구·비대칭이 남아 있으면 더욱 절제 생검 쪽이다. 반대로 밀리아 유사 낭·면포 유사 개구가 뚜렷하고 변화가 없는 지루각화증이라면 경과관찰이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 국소 스테로이드 후 경과관찰은 진단이 확실한 염증성 병변(습진·편평태선)에서 정답이 된다. 이 병변은 회갈색 과립과 흉터양 백색 영역이라는 퇴행 구조를 보이며, 이는 퇴행 흑색종에서도 똑같이 나타나므로 조직 확진 없이 염증만 누르면 흑색종을 놓친다. 지루각화증의 밀리아 유사 낭·면포 유사 개구가 뚜렷하고 퇴행 구조가 없을 때 이 선지가 맞다.\n③ 액체질소 냉동치료는 광선각화증·사마귀·지루각화증처럼 진단이 임상적으로 확실한 병변의 치료다. 퇴행 구조를 보이는 색소 병변을 조직검사 없이 파괴하면 흑색종이었을 경우 진단 자체가 사라진다. 얼굴의 거친 비늘과 딸기 모양 모낭 개구를 보이는 전형적 광선각화증이면 이 선지가 정답이 된다.\n④ 6개월 뒤 재검은 변화가 없고 양성 기준을 모두 충족하는 멜라닌세포 모반의 추적 방식이다. 최근 2개월 사이에 색과 증상이 변했고 퇴행 구조가 있는 단독 병변은 추적 대상이 아니라 조직검사 대상이다. 대칭적 색소망만 보이는 안정된 모반에서 이 선지가 정답이 된다.\n⑤ 국소 이미퀴모드는 표재성 기저세포암·광선각화증의 치료다. 이 병변에는 나뭇잎 모양 영역이나 짧은 모세혈관확장 같은 기저세포암 구조가 없고, 무엇보다 조직 확진 없이 면역조절제를 쓰면 퇴행 흑색종의 진단이 늦어진다. 조직검사로 표재성 기저세포암이 확인된 뒤라면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "분홍색·가려움 때문에 「염증」으로 읽기 쉽다. 더모스코피에서 회갈색 과립과 흉터양 백색 영역은 퇴행의 흔적이고, 퇴행은 흑색종도 한다 — 퇴행 구조가 주된 병변은 조직검사로 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 회갈색 과립(peppering)·흉터양 백색 영역 같은 퇴행 구조를 읽고, 퇴행 중 편평태선양 각화증과 퇴행 흑색종을 육안으로 가를 수 없어 조직검사가 필요함을 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ISIC Archive ISIC_0001107 — histopathology-confirmed lichen planus like keratosis (benign epidermal proliferation), 55 F, anterior trunk (teacher-only) · 작성자 판독(2026-09-18): 분홍 배경, 경계 불명확한 회갈색 과립·반점, 중앙 흰 비늘·흉터양 구조, 미세 혈관망; 색소망·청백색 베일·비정형 혈관 없음 · Bolognia JL et al. Dermatology, 4th ed., ch. 'Benign epidermal tumors and proliferations' — lichenoid keratosis: regressing lentigo/seborrheic keratosis, biopsy to exclude melanoma · Marghoob AA, Malvehy J, Braun RP. Atlas of Dermoscopy, 2nd ed. — regression structures (peppering, scar-like depigmentation) and the rule that lesions with predominant regression are excised/biopsied · Zaballos P et al. Dermoscopy of lichenoid regressing keratoses — gray granules and scar-like areas overlap with regressing melanoma; histopathology required (JEADV) ## 출처 ISIC Archive ISIC_0001107 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "회갈색 과립과 흉터양 백색 영역이라는 퇴행 구조가 주된 색소 병변은 퇴행 흑색종과 더모스코피로 구분되지 않으므로 조직검사가 먼저다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "영상의 퇴행 구조(회갈색 과립·흉터양 백색 영역) — 염증성 양성 병변으로 보이지만 같은 그림을 퇴행 흑색종이 그린다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: 분홍 배경 위 경계 불명확한 회갈색 과립과 반점(peppering)",
+     "why": "진피 멜라닌탐식세포 = 퇴행 구조. 퇴행 흑색종과 겹치는 소견이라 조직 확진이 필요하다",
+     "also": []
+    },
+    {
+     "item": "영상: 중앙의 흰 비늘·흉터양 백색 영역과 미세 혈관",
+     "why": "염증이 지나간 섬유화 흔적 — 역시 퇴행 구조",
+     "also": []
+    },
+    {
+     "item": "3년 전부터 있던 옅은 갈색 반점이 2개월 전부터 분홍색으로 변하면서 가렵다",
+     "why": "기존 흑자가 태선양 염증으로 퇴행하는 LPLK 의 전형적 경과 — 진단 확률을 높이지만 확정하지 못한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 색소망·소구·청백색 베일 없음",
+     "why": "남아 있는 멜라닌세포 구조가 없어 활동성 흑색종의 가능성을 낮추지만, 완전 퇴행 흑색종은 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "만져지는 융기나 궤양은 없다",
+     "why": "결절·궤양이 없어 침윤성 흑색종·기저세포암의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "피부암의 가족력은 없다",
+     "why": "위험도 배경 — 가족력이 없다고 흑색종을 배제하지는 못한다",
+     "also": []
+    },
+    {
+     "item": "55세 여자",
+     "why": "일광흑자·지루각화증이 흔한 연령 — 병변의 출발점을 설명하지만 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "더모스코피의 회갈색 과립·흉터양 백색 영역은 퇴행 구조이고, 병력은 LPLK 에 합당하다. 그러나 퇴행 흑색종이 같은 소견을 보이므로 조직검사로 확진한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "퇴행 구조 없이 대칭적 색소망만 보이고 수년간 변화가 없는 멜라닌세포 모반이라면 더모스코피 추적(재검)이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0054.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001107",
+   "asset_id": "ISIC-ISIC_0001107",
+   "text": "ISIC Archive ISIC_0001107 (CC-0)"
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0062",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "예방의학 — 선별검사 양성예측도",
+  "type": "예방의학 — 선별검사 양성예측도",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-18",
+  "vignette": "45세 남자가 증상 없이 국가건강검진에서 받은 분변잠혈검사에서 양성 판정을 받고 결과의 의미를 묻기 위해 병원에 왔다. 대장암 가족력은 없고 최근 체중 감소나 혈변은 없었다. 이 검사는 대장암에 대해 민감도 80%, 특이도 90% 이고, 이 남자가 속한 45~49세 무증상 남성 집단의 대장암 유병률은 0.5% 이다.",
+  "question": "이 남자에게 실제로 대장암이 있을 확률에 가장 가까운 것은?",
+  "options": [
+   "약 4%",
+   "약 10%",
+   "약 40%",
+   "약 80%",
+   "약 90%"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 묻는 값은 양성예측도(검사 양성인 사람 중 실제 환자의 비율)이고, 이는 민감도·특이도만이 아니라 검사 전 확률인 유병률에 좌우된다. 10,000명을 가정하면 환자는 50명, 비환자는 9,950명이다. 진양성 = 50 × 0.8 = 40, 위양성 = 9,950 × 0.1 = 995 이므로 양성 1,035명 중 실제 환자는 40명, 양성예측도 = 40 / 1,035 ≈ 3.9 %, 약 4 % 다. 즉 양성 25명 중 24명은 위양성이며, 이 남자는 대장내시경으로 확인해야 하지만 「대장암일 확률 80 %」로 이해해서는 안 된다.\n- 원리: <b>민감도와 특이도는 검사의 성질</b>이고, <b>예측도는 검사와 집단이 만나서 나오는 값</b>이다. 민감도 = 환자 중 양성(TP/(TP+FN)), 특이도 = 비환자 중 음성(TN/(TN+FP)) 으로 분모가 「질병 유무」다. 반면 임상에서 손에 쥔 것은 「검사 결과」이므로 알고 싶은 것은 양성예측도 = TP/(TP+FP), 음성예측도 = TN/(TN+FN) 이고, 분모에 비환자가 섞여 들어오는 순간 <b>유병률</b>이 답을 지배한다. 베이즈 정리로 쓰면 PPV = (민감도 × 유병률) / (민감도 × 유병률 + (1 − 특이도) × (1 − 유병률)) 이다.<br> <b>왜 4 % 인가</b> — 2 × 2 표를 10,000명으로 채우면 보인다. 환자 50명(0.5 %) 가운데 40명이 양성(민감도 80 %), 비환자 9,950명 가운데 10 % 인 995명이 위양성(특이도 90 %)이다. 양성 1,035명 중 실제 환자는 40명뿐이다. 특이도 90 % 는 「10 % 가 위양성」이라는 뜻이고, 비환자가 환자의 199배나 되므로 그 10 % 가 환자의 80 % 를 압도한다. 반대로 음성예측도는 8,955 / (8,955 + 10) = 99.9 % 로 매우 높다 — 유병률이 낮은 선별 상황에서는 <b>음성이 안심의 근거가 되고 양성은 확진 검사의 입구</b>일 뿐이다.<br> <b>임상 함의</b> — 그래서 선별검사는 「양성 = 확진」이 아니라 「양성 = 정밀검사(대장내시경) 대상」이고, 위양성으로 인한 불안·침습 검사·비용은 선별 프로그램 평가의 핵심 항목이다. 같은 검사도 혈변·체중감소·가족력이 있어 검사 전 확률이 5 % 인 사람에게 하면 PPV ≈ 30 %, 50 % 인 사람에게 하면 ≈ 89 % 로 뛴다. 우도비로 보면 양성 우도비 = 민감도/(1 − 특이도) = 8 이고, 검사 전 오즈 1/199 × 8 = 8/199 → 확률 8/207 ≈ 3.9 % 로 같은 답이 나온다.\n- 비교: <table><thead><tr><th style=\"width:26%\">지표</th><th style=\"width:40%\">정의(분모)</th><th>이 문제의 값</th></tr></thead><tbody> <tr><td><b>양성예측도(정답)</b></td><td><b>검사 양성인 사람 중 실제 환자 — TP/(TP+FP), 유병률에 따라 변한다</b></td><td><b>40 / 1,035 ≈ 4 %</b></td></tr> <tr><td>민감도(가장 가까운 오답 「80 %」의 정체)</td><td>실제 환자 중 검사 양성 — TP/(TP+FN), 집단과 무관</td><td>80 % — 「환자라면 양성일 확률」이지 「양성이면 환자일 확률」이 아니다</td></tr> <tr><td>특이도(오답 「90 %」)</td><td>실제 비환자 중 검사 음성 — TN/(TN+FP)</td><td>90 %</td></tr> <tr><td>음성예측도</td><td>검사 음성인 사람 중 비환자 — TN/(TN+FN)</td><td>8,955 / 8,965 ≈ 99.9 %</td></tr> <tr><td>유병률 5 % 집단에서의 PPV</td><td>같은 검사, 검사 전 확률만 10배</td><td>(0.8 × 0.05)/(0.04 + 0.095) ≈ 30 %</td></tr> <tr><td>유병률 50 % 집단에서의 PPV</td><td>증상·소견으로 반반인 환자</td><td>(0.4)/(0.4 + 0.05) ≈ 89 %</td></tr> </tbody></table> <b>가장 가까운 오답은 「약 80 %」</b>다 — 민감도를 양성예측도로 착각하는 「조건부 확률의 방향 뒤집기」다. 갈림길은 <b>분모가 무엇인가</b>이다. 민감도의 분모는 환자(50명), 양성예측도의 분모는 양성자(1,035명)이고, 유병률이 낮을수록 양성자의 대부분은 비환자에서 온 위양성이다. 같은 검사를 혈변과 가족력이 있는 검사 전 확률 50 % 의 환자에게 했다면 약 90 % 쪽이 정답이 된다.\n- 오답 이유:\n  - ② 약 10 % 는 위양성률(1 − 특이도)을 그대로 답으로 옮긴 값이거나 계산을 어림한 값이다. 위양성률은 「비환자가 양성으로 나올 확률」이지 「양성인 사람이 환자일 확률」이 아니다. 이 선지가 정답이 되려면 유병률이 약 1.4 % 이어야 한다(0.8p/(0.8p + 0.1(1 − p)) = 0.1).\n  - ③ 약 40 % 는 진양성 40명이라는 숫자에서 오는 착시이거나, 유병률을 5~8 % 정도로 잘못 잡았을 때의 값이다. 무증상 선별 집단의 유병률 0.5 % 에서는 양성 1,035명 중 환자가 40명뿐이다. 이 선지가 정답이 되려면 검사 전 확률이 약 8 % 인 유증상·고위험 집단이어야 한다.\n  - ④ 약 80 % 는 민감도다. 민감도는 「환자라면 양성일 확률」로 분모가 환자이고, 묻는 것은 「양성이라면 환자일 확률」로 분모가 양성자다. 조건부 확률의 방향을 뒤집으면 안 된다. 이 선지가 정답이 되려면 검사 전 확률이 약 33 % 이상인, 즉 혈변·체중감소·가족력이 뚜렷한 환자에게 시행했을 때여야 한다.\n  - ⑤ 약 90 % 는 특이도다. 특이도는 「비환자라면 음성일 확률」로, 양성 결과의 해석과 직접 연결되지 않는다. 이 선지가 정답이 되려면 검사 전 확률이 절반을 넘는, 임상적으로 대장암이 매우 의심되는 환자에게 확진 목적으로 시행했을 때여야 한다.\n- 함정: 「민감도 80 % 인 검사가 양성」을 「80 % 확률로 병이 있다」로 읽지 않는다. 먼저 10,000명 표를 그려 양성자의 분모(진양성 + 위양성)를 채운다 — 유병률이 낮으면 위양성이 압도한다.\n- 학습목표: 민감도·특이도와 검사 전 확률(유병률)로 양성예측도를 계산하고, 유병률이 낮은 무증상 집단에서 양성 결과의 대부분이 위양성임을 설명한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed., ch. 5 'Assessing the validity and reliability of diagnostic and screening tests' — sensitivity, specificity, predictive value and the effect of prevalence · Fletcher RH, Fletcher SW, Fletcher GS. Clinical Epidemiology: The Essentials, 5th ed., ch. 'Diagnosis' — 2 × 2 table, Bayes' theorem, likelihood ratio · 대한예방의학회. 예방의학과 공중보건학, 4판 — 선별검사의 타당도와 예측도, 유병률과 양성예측도의 관계 · USMLE Step 1 content outline — Biostatistics: predictive values change with prevalence; sensitivity and specificity do not",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "묻는 값은 양성예측도(검사 양성인 사람 중 실제 환자의 비율)이고, 이는 민감도·특이도만이 아니라 검사 전 확률인 유병률에 좌우된다. 10,000명을 가정하면 환자는 50명, 비환자는 9,950명이다. 진양성 = 50 × 0.8 = 40, 위양성 = 9,950 × 0.1 = 995 이므로 양성 1,035명 중 실제 환자는 40명, 양성예측도 = 40 / 1,035 ≈ 3.9 %, 약 4 % 다. 즉 양성 25명 중 24명은 위양성이며, 이 남자는 대장내시경으로 확인해야 하지만 「대장암일 확률 80 %」로 이해해서는 안 된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>민감도와 특이도는 검사의 성질</b>이고, <b>예측도는 검사와 집단이 만나서 나오는 값</b>이다. 민감도 = 환자 중 양성(TP/(TP+FN)), 특이도 = 비환자 중 음성(TN/(TN+FP)) 으로 분모가 「질병 유무」다. 반면 임상에서 손에 쥔 것은 「검사 결과」이므로 알고 싶은 것은 양성예측도 = TP/(TP+FP), 음성예측도 = TN/(TN+FN) 이고, 분모에 비환자가 섞여 들어오는 순간 <b>유병률</b>이 답을 지배한다. 베이즈 정리로 쓰면 PPV = (민감도 × 유병률) / (민감도 × 유병률 + (1 − 특이도) × (1 − 유병률)) 이다.<br> <b>왜 4 % 인가</b> — 2 × 2 표를 10,000명으로 채우면 보인다. 환자 50명(0.5 %) 가운데 40명이 양성(민감도 80 %), 비환자 9,950명 가운데 10 % 인 995명이 위양성(특이도 90 %)이다. 양성 1,035명 중 실제 환자는 40명뿐이다. 특이도 90 % 는 「10 % 가 위양성」이라는 뜻이고, 비환자가 환자의 199배나 되므로 그 10 % 가 환자의 80 % 를 압도한다. 반대로 음성예측도는 8,955 / (8,955 + 10) = 99.9 % 로 매우 높다 — 유병률이 낮은 선별 상황에서는 <b>음성이 안심의 근거가 되고 양성은 확진 검사의 입구</b>일 뿐이다.<br> <b>임상 함의</b> — 그래서 선별검사는 「양성 = 확진」이 아니라 「양성 = 정밀검사(대장내시경) 대상」이고, 위양성으로 인한 불안·침습 검사·비용은 선별 프로그램 평가의 핵심 항목이다. 같은 검사도 혈변·체중감소·가족력이 있어 검사 전 확률이 5 % 인 사람에게 하면 PPV ≈ 30 %, 50 % 인 사람에게 하면 ≈ 89 % 로 뛴다. 우도비로 보면 양성 우도비 = 민감도/(1 − 특이도) = 8 이고, 검사 전 오즈 1/199 × 8 = 8/199 → 확률 8/207 ≈ 3.9 % 로 같은 답이 나온다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">지표</th><th style=\"width:40%\">정의(분모)</th><th>이 문제의 값</th></tr></thead><tbody> <tr><td><b>양성예측도(정답)</b></td><td><b>검사 양성인 사람 중 실제 환자 — TP/(TP+FP), 유병률에 따라 변한다</b></td><td><b>40 / 1,035 ≈ 4 %</b></td></tr> <tr><td>민감도(가장 가까운 오답 「80 %」의 정체)</td><td>실제 환자 중 검사 양성 — TP/(TP+FN), 집단과 무관</td><td>80 % — 「환자라면 양성일 확률」이지 「양성이면 환자일 확률」이 아니다</td></tr> <tr><td>특이도(오답 「90 %」)</td><td>실제 비환자 중 검사 음성 — TN/(TN+FP)</td><td>90 %</td></tr> <tr><td>음성예측도</td><td>검사 음성인 사람 중 비환자 — TN/(TN+FN)</td><td>8,955 / 8,965 ≈ 99.9 %</td></tr> <tr><td>유병률 5 % 집단에서의 PPV</td><td>같은 검사, 검사 전 확률만 10배</td><td>(0.8 × 0.05)/(0.04 + 0.095) ≈ 30 %</td></tr> <tr><td>유병률 50 % 집단에서의 PPV</td><td>증상·소견으로 반반인 환자</td><td>(0.4)/(0.4 + 0.05) ≈ 89 %</td></tr> </tbody></table> <b>가장 가까운 오답은 「약 80 %」</b>다 — 민감도를 양성예측도로 착각하는 「조건부 확률의 방향 뒤집기」다. 갈림길은 <b>분모가 무엇인가</b>이다. 민감도의 분모는 환자(50명), 양성예측도의 분모는 양성자(1,035명)이고, 유병률이 낮을수록 양성자의 대부분은 비환자에서 온 위양성이다. 같은 검사를 혈변과 가족력이 있는 검사 전 확률 50 % 의 환자에게 했다면 약 90 % 쪽이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 약 10 % 는 위양성률(1 − 특이도)을 그대로 답으로 옮긴 값이거나 계산을 어림한 값이다. 위양성률은 「비환자가 양성으로 나올 확률」이지 「양성인 사람이 환자일 확률」이 아니다. 이 선지가 정답이 되려면 유병률이 약 1.4 % 이어야 한다(0.8p/(0.8p + 0.1(1 − p)) = 0.1).\n③ 약 40 % 는 진양성 40명이라는 숫자에서 오는 착시이거나, 유병률을 5~8 % 정도로 잘못 잡았을 때의 값이다. 무증상 선별 집단의 유병률 0.5 % 에서는 양성 1,035명 중 환자가 40명뿐이다. 이 선지가 정답이 되려면 검사 전 확률이 약 8 % 인 유증상·고위험 집단이어야 한다.\n④ 약 80 % 는 민감도다. 민감도는 「환자라면 양성일 확률」로 분모가 환자이고, 묻는 것은 「양성이라면 환자일 확률」로 분모가 양성자다. 조건부 확률의 방향을 뒤집으면 안 된다. 이 선지가 정답이 되려면 검사 전 확률이 약 33 % 이상인, 즉 혈변·체중감소·가족력이 뚜렷한 환자에게 시행했을 때여야 한다.\n⑤ 약 90 % 는 특이도다. 특이도는 「비환자라면 음성일 확률」로, 양성 결과의 해석과 직접 연결되지 않는다. 이 선지가 정답이 되려면 검사 전 확률이 절반을 넘는, 임상적으로 대장암이 매우 의심되는 환자에게 확진 목적으로 시행했을 때여야 한다."
+   },
+   {
+    "k": "함정",
+    "v": "「민감도 80 % 인 검사가 양성」을 「80 % 확률로 병이 있다」로 읽지 않는다. 먼저 10,000명 표를 그려 양성자의 분모(진양성 + 위양성)를 채운다 — 유병률이 낮으면 위양성이 압도한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도와 검사 전 확률(유병률)로 양성예측도를 계산하고, 유병률이 낮은 무증상 집단에서 양성 결과의 대부분이 위양성임을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed., ch. 5 'Assessing the validity and reliability of diagnostic and screening tests' — sensitivity, specificity, predictive value and the effect of prevalence · Fletcher RH, Fletcher SW, Fletcher GS. Clinical Epidemiology: The Essentials, 5th ed., ch. 'Diagnosis' — 2 × 2 table, Bayes' theorem, likelihood ratio · 대한예방의학회. 예방의학과 공중보건학, 4판 — 선별검사의 타당도와 예측도, 유병률과 양성예측도의 관계 · USMLE Step 1 content outline — Biostatistics: predictive values change with prevalence; sensitivity and specificity do not"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "양성 결과가 실제 질병일 확률은 양성예측도이며, 민감도·특이도에 유병률 0.5 % 를 결합해 40/(40 + 995) ≈ 4 % 로 계산한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "분모가 「환자」인가 「검사 양성자」인가 — 80 % 는 환자 중 양성(민감도)이고, 물음은 양성 중 환자(예측도)다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "민감도 80%",
+     "why": "환자 50명 중 진양성 40명을 만든다",
+     "also": []
+    },
+    {
+     "item": "특이도 90%",
+     "why": "비환자 9,950명 중 위양성 995명을 만든다 — 양성자의 대부분",
+     "also": []
+    },
+    {
+     "item": "유병률은 0.5%",
+     "why": "검사 전 확률 — 예측도를 지배하는 값; 이것 없이는 계산이 불가능하다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "대장암 가족력은 없고",
+     "why": "검사 전 확률을 유병률보다 올릴 근거가 없다 — 그대로 0.5 % 를 쓴다",
+     "also": []
+    },
+    {
+     "item": "체중 감소나 혈변은 없었다",
+     "why": "증상이 있었다면 검사 전 확률이 올라 PPV 가 커졌을 것 — 없으므로 선별 상황",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "증상 없이",
+     "why": "무증상 선별 집단이므로 검사 전 확률을 집단 유병률 그대로 쓴다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "45세 남자",
+     "why": "유병률 0.5 % 가 적용되는 집단을 규정할 뿐, 계산에는 이미 반영되어 있다",
+     "also": []
+    }
+   ],
+   "summary": "양성예측도 = 진양성/(진양성 + 위양성). 10,000명 중 환자 50명에서 진양성 40명, 비환자 9,950명에서 위양성 995명이므로 40/1,035 ≈ 4 %. 무증상 저유병률 집단에서 양성의 대부분은 위양성이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "혈변·체중감소·가족력으로 검사 전 확률이 50 % 를 넘는 환자에게 같은 검사를 했다면 양성예측도는 약 90 % 가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0061",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "내분비·대사 — 갈색세포종 수술 전 관리",
+  "type": "내분비·대사 — 갈색세포종 수술 전 관리",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-18",
+  "vignette": "A 42-year-old woman comes to the physician because of 6 months of episodic headache, palpitations, and profuse sweating, with each episode lasting 20 to 30 minutes. She has lost 4 kg during this period. Her blood pressure at three previous visits was 168/104, 182/110, and 176/106 mm Hg despite treatment with amlodipine. Today her pulse is 96/min and blood pressure is 178/108 mm Hg. Examination shows no thyroid enlargement or tremor. Plasma free metanephrine concentration is 4.2 nmol/L (N < 0.5) and plasma normetanephrine is 6.8 nmol/L (N < 0.9). CT scan of the abdomen shows a 4-cm heterogeneously enhancing mass in the right adrenal gland.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Fine-needle aspiration biopsy of the adrenal mass",
+   "Overnight dexamethasone suppression test",
+   "Phenoxybenzamine, with a beta blocker added only after alpha blockade is established",
+   "Propranolol to control the tachycardia and palpitations",
+   "Laparoscopic right adrenalectomy within 24 hours"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Paroxysms of headache, palpitations and sweating with resistant hypertension, plasma metanephrines several times the upper limit and a 4-cm heterogeneously enhancing adrenal mass establish pheochromocytoma. Definitive treatment is surgical, but before adrenalectomy the patient must be prepared for 7 to 14 days with an alpha-adrenergic blocker (phenoxybenzamine or doxazosin), liberal salt and fluid to re-expand the contracted plasma volume, and only then a beta blocker if tachycardia persists. Starting a beta blocker first leaves alpha-mediated vasoconstriction unopposed and can precipitate a hypertensive crisis, and operating or biopsying without blockade can trigger a catecholamine surge.\n- 원리: A pheochromocytoma secretes catecholamines in bursts from adrenal medullary chromaffin cells. Norepinephrine acting on <b>α1 receptors constricts arterioles and veins</b>, so the patient is hypertensive with a <b>contracted plasma volume</b>; epinephrine acting on β1 receptors raises heart rate and contractility, and on β2 receptors dilates skeletal-muscle vessels. Metanephrines are the O-methylated metabolites produced continuously inside the tumor by catechol-O-methyltransferase, which is why <b>plasma free or urinary fractionated metanephrines</b> are more sensitive than catecholamines themselves — secretion is episodic but metabolism is constant. A value more than three to four times the upper limit is essentially diagnostic; imaging is done only afterward, and a 4-cm heterogeneous, avidly enhancing adrenal mass fits.<br> <b>Why alpha before beta</b> — the danger of the tumor is vasoconstriction, not tachycardia. If a beta blocker is given first, the β2-mediated vasodilation that partly offsets α1 constriction is removed while the tumor keeps releasing norepinephrine, so <b>unopposed alpha stimulation</b> raises the pressure further, and loss of β1 support can precipitate pulmonary edema in a catecholamine-stressed heart. Phenoxybenzamine, an irreversible non-selective α-blocker (or the selective α1 blocker doxazosin), is started 7–14 days before surgery and titrated until the pressure is below about 130/80 seated with orthostatic hypotension not below 90 systolic; a high-salt diet and fluids restore volume. Once alpha blockade causes reflex tachycardia, a beta blocker is added cautiously. Intraoperatively, tumor handling releases catecholamines (treated with nitroprusside or phentolamine) and clamping the vein causes hypotension (treated with volume and pressors), which is why volume expansion is part of the preparation.<br> <b>What must not be done</b> — <b>needle biopsy</b> of a suspected pheochromocytoma can provoke a hypertensive crisis or hemorrhage and is contraindicated until the tumor has been biochemically excluded; <b>emergency surgery</b> in an unprepared patient carries the same risk. Additional evaluation (genetic testing for SDHB/SDHD, VHL, RET, NF1 in about 40 % of cases) follows, and metastatic disease is defined by chromaffin tissue where it should not be.\n- 비교: <table><thead><tr><th style=\"width:26%\">Drug or step</th><th style=\"width:44%\">Effect in a patient with an active pheochromocytoma</th><th>Place in management</th></tr></thead><tbody> <tr><td><b>Alpha blockade first (answer)</b></td><td><b>relieves α1 vasoconstriction, allows plasma volume to re-expand with salt and fluid; reflex tachycardia then justifies a beta blocker</b></td><td><b>7–14 days before surgery, then beta blocker, then adrenalectomy</b></td></tr> <tr><td>Beta blocker first (closest wrong answer)</td><td>removes β2 vasodilation and β1 cardiac support while norepinephrine keeps acting on α1 — unopposed alpha stimulation, hypertensive crisis, pulmonary edema</td><td>only after alpha blockade is established</td></tr> <tr><td>Immediate adrenalectomy</td><td>tumor manipulation releases catecholamines into an unblocked, volume-contracted circulation</td><td>after 7–14 days of preparation</td></tr> <tr><td>Needle biopsy</td><td>mechanical stimulation triggers catecholamine surge; adds nothing once metanephrines are diagnostic</td><td>contraindicated until pheochromocytoma is excluded</td></tr> <tr><td>Dexamethasone suppression test</td><td>screens an adrenal incidentaloma for cortisol excess</td><td>part of incidentaloma work-up, irrelevant here where the functional diagnosis is made</td></tr> </tbody></table> The <b>closest wrong answer is propranolol</b>: the palpitations and pulse of 96/min make a beta blocker feel logical. The discriminator is <b>which receptor causes the harm</b> — α1 vasoconstriction drives the hypertension, so alpha blockade must come first and the beta blocker follows only to control the reflex tachycardia it causes. If the same patient had already been on phenoxybenzamine for 10 days with a heart rate of 110/min, adding a beta blocker would be the answer.\n- 오답 이유:\n  - (A) Fine-needle aspiration of an adrenal mass is contraindicated when pheochromocytoma has not been excluded, because needle stimulation can precipitate a hypertensive crisis or hemorrhage; it also adds nothing here, since metanephrines several times the upper limit already make the diagnosis. Biopsy would be considered only for a metanephrine-negative mass suspected of being a metastasis in a patient with a known cancer.\n  - (B) An overnight dexamethasone suppression test screens for autonomous cortisol secretion in an adrenal incidentaloma. This mass is not incidental — the paroxysmal symptoms and markedly elevated plasma metanephrines already give it a functional diagnosis, and the test does not change the immediate need for alpha blockade. It would be the correct next step for an asymptomatic patient with a small incidental adrenal nodule and normal metanephrines.\n  - (D) Propranolol given before alpha blockade removes the β2-mediated vasodilation and β1 cardiac support while norepinephrine continues to stimulate α1 receptors, producing unopposed alpha stimulation with a hypertensive crisis or pulmonary edema. A beta blocker has a place only after 7–14 days of established alpha blockade. This option would be correct if she were already on phenoxybenzamine with reflex tachycardia of 110/min.\n  - (E) Adrenalectomy is the definitive treatment, but operating within 24 hours on an unprepared, volume-contracted patient risks an intraoperative catecholamine surge during tumor manipulation and profound hypotension after the adrenal vein is clamped. Surgery follows 7–14 days of alpha blockade and volume expansion. This option would be correct as the step after preoperative preparation is complete.\n- 함정: Palpitations invite a beta blocker, but in pheochromocytoma the enemy is alpha-mediated vasoconstriction. The order is fixed: alpha blockade and volume expansion for 1–2 weeks, then a beta blocker if needed, then surgery. Never biopsy first.\n- 학습목표: 발작성 두통·심계항진·발한과 저항성 고혈압에서 혈장 메타네프린 상승과 부신 종괴로 갈색세포종을 확인하고, 수술 전 α-차단을 먼저 한 뒤 β-차단을 더하는 순서를 안다\n- 근거·출처: Lenders JWM et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915 — plasma free metanephrines, preoperative alpha blockade 7–14 days, beta blocker only after alpha blockade, no biopsy · Harrison's Principles of Internal Medicine 21st ed., ch. 'Pheochromocytoma and paraganglioma' — unopposed alpha stimulation with beta blockers, phenoxybenzamine preparation · Williams Textbook of Endocrinology 14th ed., ch. 'Endocrine hypertension' — catecholamine receptor physiology, volume contraction, intraoperative management · Pacak K. Preoperative management of the pheochromocytoma patient. J Clin Endocrinol Metab 2007;92:4069",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Paroxysms of headache, palpitations and sweating with resistant hypertension, plasma metanephrines several times the upper limit and a 4-cm heterogeneously enhancing adrenal mass establish pheochromocytoma. Definitive treatment is surgical, but before adrenalectomy the patient must be prepared for 7 to 14 days with an alpha-adrenergic blocker (phenoxybenzamine or doxazosin), liberal salt and fluid to re-expand the contracted plasma volume, and only then a beta blocker if tachycardia persists. Starting a beta blocker first leaves alpha-mediated vasoconstriction unopposed and can precipitate a hypertensive crisis, and operating or biopsying without blockade can trigger a catecholamine surge."
+   },
+   {
+    "k": "원리",
+    "v": "A pheochromocytoma secretes catecholamines in bursts from adrenal medullary chromaffin cells. Norepinephrine acting on <b>α1 receptors constricts arterioles and veins</b>, so the patient is hypertensive with a <b>contracted plasma volume</b>; epinephrine acting on β1 receptors raises heart rate and contractility, and on β2 receptors dilates skeletal-muscle vessels. Metanephrines are the O-methylated metabolites produced continuously inside the tumor by catechol-O-methyltransferase, which is why <b>plasma free or urinary fractionated metanephrines</b> are more sensitive than catecholamines themselves — secretion is episodic but metabolism is constant. A value more than three to four times the upper limit is essentially diagnostic; imaging is done only afterward, and a 4-cm heterogeneous, avidly enhancing adrenal mass fits.<br> <b>Why alpha before beta</b> — the danger of the tumor is vasoconstriction, not tachycardia. If a beta blocker is given first, the β2-mediated vasodilation that partly offsets α1 constriction is removed while the tumor keeps releasing norepinephrine, so <b>unopposed alpha stimulation</b> raises the pressure further, and loss of β1 support can precipitate pulmonary edema in a catecholamine-stressed heart. Phenoxybenzamine, an irreversible non-selective α-blocker (or the selective α1 blocker doxazosin), is started 7–14 days before surgery and titrated until the pressure is below about 130/80 seated with orthostatic hypotension not below 90 systolic; a high-salt diet and fluids restore volume. Once alpha blockade causes reflex tachycardia, a beta blocker is added cautiously. Intraoperatively, tumor handling releases catecholamines (treated with nitroprusside or phentolamine) and clamping the vein causes hypotension (treated with volume and pressors), which is why volume expansion is part of the preparation.<br> <b>What must not be done</b> — <b>needle biopsy</b> of a suspected pheochromocytoma can provoke a hypertensive crisis or hemorrhage and is contraindicated until the tumor has been biochemically excluded; <b>emergency surgery</b> in an unprepared patient carries the same risk. Additional evaluation (genetic testing for SDHB/SDHD, VHL, RET, NF1 in about 40 % of cases) follows, and metastatic disease is defined by chromaffin tissue where it should not be."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Drug or step</th><th style=\"width:44%\">Effect in a patient with an active pheochromocytoma</th><th>Place in management</th></tr></thead><tbody> <tr><td><b>Alpha blockade first (answer)</b></td><td><b>relieves α1 vasoconstriction, allows plasma volume to re-expand with salt and fluid; reflex tachycardia then justifies a beta blocker</b></td><td><b>7–14 days before surgery, then beta blocker, then adrenalectomy</b></td></tr> <tr><td>Beta blocker first (closest wrong answer)</td><td>removes β2 vasodilation and β1 cardiac support while norepinephrine keeps acting on α1 — unopposed alpha stimulation, hypertensive crisis, pulmonary edema</td><td>only after alpha blockade is established</td></tr> <tr><td>Immediate adrenalectomy</td><td>tumor manipulation releases catecholamines into an unblocked, volume-contracted circulation</td><td>after 7–14 days of preparation</td></tr> <tr><td>Needle biopsy</td><td>mechanical stimulation triggers catecholamine surge; adds nothing once metanephrines are diagnostic</td><td>contraindicated until pheochromocytoma is excluded</td></tr> <tr><td>Dexamethasone suppression test</td><td>screens an adrenal incidentaloma for cortisol excess</td><td>part of incidentaloma work-up, irrelevant here where the functional diagnosis is made</td></tr> </tbody></table> The <b>closest wrong answer is propranolol</b>: the palpitations and pulse of 96/min make a beta blocker feel logical. The discriminator is <b>which receptor causes the harm</b> — α1 vasoconstriction drives the hypertension, so alpha blockade must come first and the beta blocker follows only to control the reflex tachycardia it causes. If the same patient had already been on phenoxybenzamine for 10 days with a heart rate of 110/min, adding a beta blocker would be the answer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Fine-needle aspiration of an adrenal mass is contraindicated when pheochromocytoma has not been excluded, because needle stimulation can precipitate a hypertensive crisis or hemorrhage; it also adds nothing here, since metanephrines several times the upper limit already make the diagnosis. Biopsy would be considered only for a metanephrine-negative mass suspected of being a metastasis in a patient with a known cancer.\n(B) An overnight dexamethasone suppression test screens for autonomous cortisol secretion in an adrenal incidentaloma. This mass is not incidental — the paroxysmal symptoms and markedly elevated plasma metanephrines already give it a functional diagnosis, and the test does not change the immediate need for alpha blockade. It would be the correct next step for an asymptomatic patient with a small incidental adrenal nodule and normal metanephrines.\n(D) Propranolol given before alpha blockade removes the β2-mediated vasodilation and β1 cardiac support while norepinephrine continues to stimulate α1 receptors, producing unopposed alpha stimulation with a hypertensive crisis or pulmonary edema. A beta blocker has a place only after 7–14 days of established alpha blockade. This option would be correct if she were already on phenoxybenzamine with reflex tachycardia of 110/min.\n(E) Adrenalectomy is the definitive treatment, but operating within 24 hours on an unprepared, volume-contracted patient risks an intraoperative catecholamine surge during tumor manipulation and profound hypotension after the adrenal vein is clamped. Surgery follows 7–14 days of alpha blockade and volume expansion. This option would be correct as the step after preoperative preparation is complete."
+   },
+   {
+    "k": "함정",
+    "v": "Palpitations invite a beta blocker, but in pheochromocytoma the enemy is alpha-mediated vasoconstriction. The order is fixed: alpha blockade and volume expansion for 1–2 weeks, then a beta blocker if needed, then surgery. Never biopsy first."
+   },
+   {
+    "k": "학습목표",
+    "v": "발작성 두통·심계항진·발한과 저항성 고혈압에서 혈장 메타네프린 상승과 부신 종괴로 갈색세포종을 확인하고, 수술 전 α-차단을 먼저 한 뒤 β-차단을 더하는 순서를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lenders JWM et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915 — plasma free metanephrines, preoperative alpha blockade 7–14 days, beta blocker only after alpha blockade, no biopsy · Harrison's Principles of Internal Medicine 21st ed., ch. 'Pheochromocytoma and paraganglioma' — unopposed alpha stimulation with beta blockers, phenoxybenzamine preparation · Williams Textbook of Endocrinology 14th ed., ch. 'Endocrine hypertension' — catecholamine receptor physiology, volume contraction, intraoperative management · Pacak K. Preoperative management of the pheochromocytoma patient. J Clin Endocrinol Metab 2007;92:4069"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "메타네프린 상승과 부신 종괴로 갈색세포종이 확진되었으므로 수술·조직검사 전에 α-차단제(페녹시벤자민)를 먼저 시작하고 β-차단제는 α-차단이 확립된 뒤에만 더한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "고혈압의 원인은 α1 수용체 혈관수축이다 — β-차단제를 먼저 주면 β2 혈관확장이 사라져 α 자극이 대항 없이 남아 고혈압 위기가 온다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "Plasma free metanephrine concentration is 4.2 nmol/L",
+     "why": "상한의 8배 — 갈색세포종의 생화학적 확진; 조직검사가 필요 없는 이유",
+     "also": []
+    },
+    {
+     "item": "4-cm heterogeneously enhancing mass in the right adrenal gland",
+     "why": "종양의 위치 확인 — 수술 대상이지만 준비 없이 수술·생검하면 위험",
+     "also": []
+    },
+    {
+     "item": "episodic headache",
+     "why": "발작성 삼징후(두통·심계항진·발한)의 하나 — 카테콜아민 분비의 간헐성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no thyroid enlargement or tremor",
+     "why": "갑상선기능항진증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "despite treatment with amlodipine",
+     "why": "저항성 고혈압 — 원인 치료(α-차단 후 수술)가 필요함을 뜻한다",
+     "also": []
+    },
+    {
+     "item": "pulse is 96/min",
+     "why": "빈맥이 β-차단제를 떠올리게 하지만, α-차단 확립 전에는 금기 — 혼동 대안의 미끼",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "lost 4 kg",
+     "why": "카테콜아민 과잉의 대사 효과; 갑상선기능항진증과의 감별 배경",
+     "also": []
+    },
+    {
+     "item": "42-year-old woman",
+     "why": "산발성 갈색세포종의 흔한 연령 — 40 % 는 유전성이므로 이후 유전자 검사 대상",
+     "also": []
+    }
+   ],
+   "summary": "Paroxysmal symptoms, resistant hypertension, plasma metanephrines several times the upper limit and a 4-cm enhancing adrenal mass establish pheochromocytoma; the next step is alpha blockade with phenoxybenzamine and volume expansion, adding a beta blocker only afterward, before adrenalectomy.",
+   "switch": {
+    "choice": "D",
+    "condition": "이미 페녹시벤자민을 10일간 복용해 혈압이 조절되고 반사성 빈맥(110/분)이 생긴 상태라면 β-차단제 추가가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0060",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "감염 — 중증 말라리아",
+  "type": "감염 — 중증 말라리아",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-18",
+  "vignette": "A 34-year-old woman comes to the emergency department because of 4 days of fever, chills, and headache. She returned 12 days ago from a 3-week trip to rural Nigeria, where she did not take malaria chemoprophylaxis. She has no other medical history. Her temperature is 39.8°C, pulse is 122/min, respirations are 24/min, and blood pressure is 96/60 mm Hg. She is confused and oriented only to person; there is no neck stiffness. Scleral icterus is present. Laboratory studies show a hemoglobin concentration of 8.1 g/dL, platelet count of 38,000/mm3, serum creatinine of 2.4 mg/dL, glucose of 52 mg/dL, and lactate of 5.1 mmol/L. A thick blood smear shows Plasmodium falciparum with a parasite density of 8%.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Oral artemether-lumefantrine",
+   "Oral chloroquine",
+   "Intravenous ceftriaxone and acyclovir",
+   "Oral atovaquone-proguanil",
+   "Intravenous artesunate"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Fever after travel to sub-Saharan Africa without chemoprophylaxis with Plasmodium falciparum on the smear is falciparum malaria, and impaired consciousness, parasitemia above 5 %, hypoglycemia, acute kidney injury, jaundice, hypotension and a lactate above 5 mmol/L each define severe malaria. Severe malaria is a medical emergency treated with intravenous artesunate (2.4 mg/kg at 0, 12 and 24 h, then daily), which clears parasites faster and reduces mortality by about 35 % compared with quinine; oral regimens are reserved for uncomplicated disease, and chloroquine is useless against falciparum from Africa because of near-universal resistance.\n- 원리: <b>Why falciparum becomes severe</b> — infected erythrocytes express PfEMP1 adhesins that make them <b>sequester</b> in the microvasculature of the brain, kidney, gut and placenta. Sequestration removes mature parasites from the circulation (so the peripheral smear underestimates the true burden), obstructs capillary flow, and drives endothelial activation, lactic acidosis and organ dysfunction. Cerebral malaria is this sequestration in the brain; acute kidney injury combines hemolysis, hypovolemia and microvascular obstruction; hypoglycemia results from parasite glucose consumption, impaired hepatic gluconeogenesis and, later, quinine-induced insulin release. The WHO criteria for severe malaria therefore include impaired consciousness, prostration, convulsions, acidosis (lactate &gt; 5 mmol/L or bicarbonate &lt; 15), hypoglycemia (&lt; 40 mg/dL, or &lt; 60 in the CDC definition), severe anemia, renal impairment (creatinine &gt; 3 mg/dL by WHO; CDC uses any acute kidney injury), jaundice with other dysfunction, pulmonary edema, significant bleeding, shock and hyperparasitemia (&gt; 10 % by WHO in any setting; the CDC treats &gt; 5 % as severe in non-immune travelers). One criterion is enough.<br> <b>Why intravenous artesunate</b> — artemisinins are activated by heme iron inside the parasite to generate radicals that alkylate parasite proteins, and they act on <b>all asexual stages including young ring forms</b>, so they stop further sequestration within hours and reduce the parasite burden about 10,000-fold per cycle. In the AQUAMAT trial (5,425 African children) artesunate lowered mortality from 10.9 % with quinine to 8.5 %; in SEAQUAMAT (adults in Asia) from 22 % to 15 %. Intravenous dosing bypasses the unreliable absorption of a vomiting, confused patient. After at least 24 h of parenteral therapy and once the patient can swallow, a full oral course of an artemisinin combination (artemether-lumefantrine) completes treatment. Delayed hemolysis 1–3 weeks after artesunate is monitored with weekly hemoglobin.<br> <b>Why not the others</b> — oral artemisinin combinations, atovaquone-proguanil and mefloquine are for <b>uncomplicated</b> malaria (no severity criteria, parasitemia &lt; 5 %, able to take oral drugs). Chloroquine is reserved for P. vivax/ovale/malariae and for falciparum only from the few chloroquine-sensitive areas (Central America west of the Panama Canal, Haiti); resistance is essentially universal in Africa. Empiric antibiotics for meningitis are added only when bacterial infection is suspected — in African children with severe malaria concurrent bacteremia is common enough to justify them, but they never replace the antimalarial.\n- 비교: <table><thead><tr><th style=\"width:26%\">Presentation</th><th style=\"width:44%\">Defining features</th><th>Treatment</th></tr></thead><tbody> <tr><td><b>Severe falciparum malaria (answer)</b></td><td><b>any one of: impaired consciousness, parasitemia &gt; 5–10 %, glucose &lt; 60, acute kidney injury, lactate &gt; 5, jaundice with dysfunction, shock, pulmonary edema, severe anemia</b></td><td><b>IV artesunate 2.4 mg/kg at 0, 12, 24 h then daily; then oral ACT</b></td></tr> <tr><td>Uncomplicated falciparum malaria (closest wrong answer)</td><td>fever with parasitemia &lt; 5 %, alert, tolerating oral intake, no organ dysfunction</td><td>oral artemether-lumefantrine (or atovaquone-proguanil)</td></tr> <tr><td>Chloroquine-sensitive malaria</td><td>P. vivax, ovale, malariae; falciparum only from Central America/Hispaniola</td><td>chloroquine (+ primaquine for vivax/ovale hypnozoites)</td></tr> <tr><td>Bacterial meningitis / HSV encephalitis</td><td>neck stiffness, CSF pleocytosis, no parasites on repeated smears, focal temporal signs</td><td>ceftriaxone ± vancomycin, acyclovir</td></tr> <tr><td>Sepsis coexisting with malaria</td><td>shock or pneumonia with positive smear, common in children</td><td>artesunate plus broad-spectrum antibiotics</td></tr> </tbody></table> The <b>closest wrong answer is oral artemether-lumefantrine</b>: it is the right drug class, but severity criteria — confusion, 8 % parasitemia, glucose 52, creatinine 2.4, lactate 5.1, hypotension — demand parenteral therapy in a patient who may not absorb or retain oral drugs. The discriminator is <b>the presence of any severity criterion</b>. Were she alert with 1 % parasitemia and normal labs, the oral combination would be the answer.\n- 오답 이유:\n  - (A) Oral artemether-lumefantrine is the first-line treatment for uncomplicated falciparum malaria. This patient meets several severity criteria (confusion, 8 % parasitemia, hypoglycemia, acute kidney injury, lactate 5.1, hypotension), and a confused, hypotensive patient cannot be relied on to absorb an oral drug. This option would be correct if she were alert with parasitemia below 5 % and no organ dysfunction — or as the oral course that follows 24 h of intravenous artesunate.\n  - (B) Chloroquine has no activity against Plasmodium falciparum acquired in Africa, where resistance is virtually universal, and it is oral. It remains the drug for P. vivax, P. ovale and P. malariae, and for falciparum acquired in the few chloroquine-sensitive regions such as Central America west of the Panama Canal or Haiti. This option would be correct if the smear showed P. vivax in a traveler returning from those regions.\n  - (C) Ceftriaxone and acyclovir treat bacterial meningitis and herpes encephalitis. Her confusion is explained by cerebral malaria with 8 % parasitemia, and she has no neck stiffness. Antibiotics may be added when bacteremia is suspected, especially in children, but they never replace the antimalarial. This option would be correct as the initial therapy if the smears were repeatedly negative and the CSF showed neutrophilic pleocytosis.\n  - (D) Atovaquone-proguanil is an oral regimen for uncomplicated malaria and for chemoprophylaxis, acts slowly, and has no parenteral form. It cannot be used when severity criteria are present or when the patient cannot take oral medication. This option would be correct for an alert traveler with low parasitemia and normal organ function, or for prophylaxis before the trip.\n- 함정: Look for a single severity criterion before choosing the route: altered mental status, parasitemia > 5 %, glucose < 60, creatinine rise, lactate > 5, jaundice, shock. Any one means intravenous artesunate now — the oral combination comes afterward, not instead.\n- 학습목표: 열대열 말라리아에서 의식변화·고기생충혈증·저혈당·신손상·젖산산증 등 중증 기준을 확인하고 정맥 아르테수네이트를 첫 치료로 선택한다\n- 근거·출처: WHO Guidelines for malaria (2023) — definition of severe falciparum malaria; intravenous artesunate for at least 24 h followed by a full ACT course · CDC. Treatment of malaria: guidelines for clinicians (United States), 2023 — severe malaria criteria including parasitemia ≥ 5 %; IV artesunate first-line · Dondorp AM et al. Artesunate versus quinine in the treatment of severe falciparum malaria in African children (AQUAMAT). Lancet 2010;376:1647 — mortality 8.5 % vs 10.9 % · Dondorp A et al. Artesunate versus quinine for treatment of severe falciparum malaria (SEAQUAMAT). Lancet 2005;366:717 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Malaria' — sequestration, severe malaria, artemisinin mechanism, post-artesunate delayed hemolysis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever after travel to sub-Saharan Africa without chemoprophylaxis with Plasmodium falciparum on the smear is falciparum malaria, and impaired consciousness, parasitemia above 5 %, hypoglycemia, acute kidney injury, jaundice, hypotension and a lactate above 5 mmol/L each define severe malaria. Severe malaria is a medical emergency treated with intravenous artesunate (2.4 mg/kg at 0, 12 and 24 h, then daily), which clears parasites faster and reduces mortality by about 35 % compared with quinine; oral regimens are reserved for uncomplicated disease, and chloroquine is useless against falciparum from Africa because of near-universal resistance."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why falciparum becomes severe</b> — infected erythrocytes express PfEMP1 adhesins that make them <b>sequester</b> in the microvasculature of the brain, kidney, gut and placenta. Sequestration removes mature parasites from the circulation (so the peripheral smear underestimates the true burden), obstructs capillary flow, and drives endothelial activation, lactic acidosis and organ dysfunction. Cerebral malaria is this sequestration in the brain; acute kidney injury combines hemolysis, hypovolemia and microvascular obstruction; hypoglycemia results from parasite glucose consumption, impaired hepatic gluconeogenesis and, later, quinine-induced insulin release. The WHO criteria for severe malaria therefore include impaired consciousness, prostration, convulsions, acidosis (lactate &gt; 5 mmol/L or bicarbonate &lt; 15), hypoglycemia (&lt; 40 mg/dL, or &lt; 60 in the CDC definition), severe anemia, renal impairment (creatinine &gt; 3 mg/dL by WHO; CDC uses any acute kidney injury), jaundice with other dysfunction, pulmonary edema, significant bleeding, shock and hyperparasitemia (&gt; 10 % by WHO in any setting; the CDC treats &gt; 5 % as severe in non-immune travelers). One criterion is enough.<br> <b>Why intravenous artesunate</b> — artemisinins are activated by heme iron inside the parasite to generate radicals that alkylate parasite proteins, and they act on <b>all asexual stages including young ring forms</b>, so they stop further sequestration within hours and reduce the parasite burden about 10,000-fold per cycle. In the AQUAMAT trial (5,425 African children) artesunate lowered mortality from 10.9 % with quinine to 8.5 %; in SEAQUAMAT (adults in Asia) from 22 % to 15 %. Intravenous dosing bypasses the unreliable absorption of a vomiting, confused patient. After at least 24 h of parenteral therapy and once the patient can swallow, a full oral course of an artemisinin combination (artemether-lumefantrine) completes treatment. Delayed hemolysis 1–3 weeks after artesunate is monitored with weekly hemoglobin.<br> <b>Why not the others</b> — oral artemisinin combinations, atovaquone-proguanil and mefloquine are for <b>uncomplicated</b> malaria (no severity criteria, parasitemia &lt; 5 %, able to take oral drugs). Chloroquine is reserved for P. vivax/ovale/malariae and for falciparum only from the few chloroquine-sensitive areas (Central America west of the Panama Canal, Haiti); resistance is essentially universal in Africa. Empiric antibiotics for meningitis are added only when bacterial infection is suspected — in African children with severe malaria concurrent bacteremia is common enough to justify them, but they never replace the antimalarial."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Presentation</th><th style=\"width:44%\">Defining features</th><th>Treatment</th></tr></thead><tbody> <tr><td><b>Severe falciparum malaria (answer)</b></td><td><b>any one of: impaired consciousness, parasitemia &gt; 5–10 %, glucose &lt; 60, acute kidney injury, lactate &gt; 5, jaundice with dysfunction, shock, pulmonary edema, severe anemia</b></td><td><b>IV artesunate 2.4 mg/kg at 0, 12, 24 h then daily; then oral ACT</b></td></tr> <tr><td>Uncomplicated falciparum malaria (closest wrong answer)</td><td>fever with parasitemia &lt; 5 %, alert, tolerating oral intake, no organ dysfunction</td><td>oral artemether-lumefantrine (or atovaquone-proguanil)</td></tr> <tr><td>Chloroquine-sensitive malaria</td><td>P. vivax, ovale, malariae; falciparum only from Central America/Hispaniola</td><td>chloroquine (+ primaquine for vivax/ovale hypnozoites)</td></tr> <tr><td>Bacterial meningitis / HSV encephalitis</td><td>neck stiffness, CSF pleocytosis, no parasites on repeated smears, focal temporal signs</td><td>ceftriaxone ± vancomycin, acyclovir</td></tr> <tr><td>Sepsis coexisting with malaria</td><td>shock or pneumonia with positive smear, common in children</td><td>artesunate plus broad-spectrum antibiotics</td></tr> </tbody></table> The <b>closest wrong answer is oral artemether-lumefantrine</b>: it is the right drug class, but severity criteria — confusion, 8 % parasitemia, glucose 52, creatinine 2.4, lactate 5.1, hypotension — demand parenteral therapy in a patient who may not absorb or retain oral drugs. The discriminator is <b>the presence of any severity criterion</b>. Were she alert with 1 % parasitemia and normal labs, the oral combination would be the answer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral artemether-lumefantrine is the first-line treatment for uncomplicated falciparum malaria. This patient meets several severity criteria (confusion, 8 % parasitemia, hypoglycemia, acute kidney injury, lactate 5.1, hypotension), and a confused, hypotensive patient cannot be relied on to absorb an oral drug. This option would be correct if she were alert with parasitemia below 5 % and no organ dysfunction — or as the oral course that follows 24 h of intravenous artesunate.\n(B) Chloroquine has no activity against Plasmodium falciparum acquired in Africa, where resistance is virtually universal, and it is oral. It remains the drug for P. vivax, P. ovale and P. malariae, and for falciparum acquired in the few chloroquine-sensitive regions such as Central America west of the Panama Canal or Haiti. This option would be correct if the smear showed P. vivax in a traveler returning from those regions.\n(C) Ceftriaxone and acyclovir treat bacterial meningitis and herpes encephalitis. Her confusion is explained by cerebral malaria with 8 % parasitemia, and she has no neck stiffness. Antibiotics may be added when bacteremia is suspected, especially in children, but they never replace the antimalarial. This option would be correct as the initial therapy if the smears were repeatedly negative and the CSF showed neutrophilic pleocytosis.\n(D) Atovaquone-proguanil is an oral regimen for uncomplicated malaria and for chemoprophylaxis, acts slowly, and has no parenteral form. It cannot be used when severity criteria are present or when the patient cannot take oral medication. This option would be correct for an alert traveler with low parasitemia and normal organ function, or for prophylaxis before the trip."
+   },
+   {
+    "k": "함정",
+    "v": "Look for a single severity criterion before choosing the route: altered mental status, parasitemia > 5 %, glucose < 60, creatinine rise, lactate > 5, jaundice, shock. Any one means intravenous artesunate now — the oral combination comes afterward, not instead."
+   },
+   {
+    "k": "학습목표",
+    "v": "열대열 말라리아에서 의식변화·고기생충혈증·저혈당·신손상·젖산산증 등 중증 기준을 확인하고 정맥 아르테수네이트를 첫 치료로 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "WHO Guidelines for malaria (2023) — definition of severe falciparum malaria; intravenous artesunate for at least 24 h followed by a full ACT course · CDC. Treatment of malaria: guidelines for clinicians (United States), 2023 — severe malaria criteria including parasitemia ≥ 5 %; IV artesunate first-line · Dondorp AM et al. Artesunate versus quinine in the treatment of severe falciparum malaria in African children (AQUAMAT). Lancet 2010;376:1647 — mortality 8.5 % vs 10.9 % · Dondorp A et al. Artesunate versus quinine for treatment of severe falciparum malaria (SEAQUAMAT). Lancet 2005;366:717 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Malaria' — sequestration, severe malaria, artemisinin mechanism, post-artesunate delayed hemolysis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "열대열 말라리아에 의식변화·기생충혈증 8 %·저혈당·급성 신손상·젖산 5.1 이 있으면 중증 말라리아이므로 경구 제제가 아닌 정맥 아르테수네이트로 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "중증 기준 하나라도 있으면 정맥 투여 — 혼동·저혈압 환자는 경구 약을 흡수·유지할 수 없고 사망 위험이 높다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "Plasmodium falciparum with a parasite density of 8%",
+     "why": "열대열 말라리아 확진; 5 % 초과 기생충혈증은 비면역 여행자에서 중증 기준",
+     "also": []
+    },
+    {
+     "item": "confused and oriented only to person",
+     "why": "의식장애 = 뇌말라리아 — 중증 기준이자 경구 치료 불가의 이유",
+     "also": []
+    },
+    {
+     "item": "glucose of 52 mg/dL",
+     "why": "저혈당 — 중증 기준; 포도당 교정도 함께 필요",
+     "also": []
+    },
+    {
+     "item": "serum creatinine of 2.4 mg/dL",
+     "why": "급성 신손상 — 중증 기준",
+     "also": []
+    },
+    {
+     "item": "lactate of 5.1 mmol/L",
+     "why": "대사성 산증 — 중증 기준, 사망 예측 인자",
+     "also": []
+    },
+    {
+     "item": "Scleral icterus",
+     "why": "황달 — 다른 장기 기능장애와 함께 있으면 중증 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no neck stiffness",
+     "why": "세균성 수막염 가능성을 낮춰 항생제 단독 선택에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "blood pressure is 96/60 mm Hg",
+     "why": "쇼크 경계 — 수액·모니터링과 함께 정맥 경로가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "did not take malaria chemoprophylaxis",
+     "why": "말라리아의 사전확률을 높이지만 중증도 판단은 검사 소견이 한다",
+     "also": []
+    },
+    {
+     "item": "34-year-old woman",
+     "why": "비면역 성인 여행자 — CDC 기준(기생충혈증 ≥ 5 %)이 적용되는 집단",
+     "also": []
+    }
+   ],
+   "summary": "Falciparum malaria with confusion, 8 % parasitemia, hypoglycemia, acute kidney injury and lactate 5.1 is severe malaria; the first treatment is intravenous artesunate, with an oral artemisinin combination only after parenteral therapy.",
+   "switch": {
+    "choice": "A",
+    "condition": "의식이 명료하고 기생충혈증 < 5 % 에 장기 기능장애가 없는 비합병 말라리아였다면 경구 아르테메터-루메판트린이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0059",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "혈액·종양 — 발열성 호중구감소증",
+  "type": "혈액·종양 — 발열성 호중구감소증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-18",
+  "vignette": "58세 남자가 급성골수성백혈병으로 관해유도 항암화학요법을 받은 지 10일째에 38.8℃ 의 발열로 병원에 왔다. 오한 외에 기침·배뇨통·설사는 없다. 혈압 118/74 mmHg, 맥박 102회/분, 호흡 18회/분이다. 구강 점막에 경한 궤양이 있고 중심정맥관 삽입 부위에 발적이나 압통은 없으며 폐·복부 진찰은 정상이다. 혈액검사: 백혈구 400/mm³(절대호중구수 120/mm³), 혈색소 8.9 g/dL, 혈소판 24,000/mm³, 크레아티닌 0.9 mg/dL. 흉부 X선은 정상이고 혈액배양 2쌍을 채취하였다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "시프로플록사신 경구와 아목시실린-클라불란산 경구",
+   "과립구집락자극인자 피하주사",
+   "플루코나졸 정맥주사",
+   "세페핌 정맥주사",
+   "반코마이신 정맥주사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 절대호중구수 500/mm³ 미만에 38.3℃ 이상의 발열이므로 발열성 호중구감소증이다. 급성골수성백혈병 관해유도 요법 뒤라 호중구감소가 7일 이상 길고 깊을 것이 예상되고 점막염도 있어 고위험군이며, 고위험군은 입원해 혈액배양 뒤 1시간 안에 항녹농균 β-락탐(세페핌, 피페라실린-타조박탐, 메로페넴)을 단독으로 정맥 투여한다. 혈역학이 안정되고 카테터 감염·피부연조직 감염·폐렴·MRSA 집락의 근거가 없으므로 반코마이신은 처음부터 추가하지 않는다.\n- 원리: 호중구는 세균·진균에 대한 <b>첫 방어선</b>이고, 감염의 국소 징후(농·침윤·발적)는 호중구가 모여야 생긴다. 절대호중구수가 500/mm³ 아래로 떨어지면 장 점막·구강 점막의 미세 손상으로 들어온 세균이 아무 저항 없이 혈류로 퍼지며, <b>발열이 유일한 단서</b>가 된다. 그래서 발열성 호중구감소증은 원인이 밝혀지기 전에 치료하는 <b>내과적 응급</b>이고, 항생제가 1시간 늦을 때마다 사망률이 오른다. 가장 위험한 병원체는 <b>녹농균을 포함한 그람음성 간균</b>이다 — 빠르게 패혈성 쇼크를 일으키기 때문에 경험적 치료는 항녹농균 활성이 있는 β-락탐(세페핌·피페라실린-타조박탐·메로페넴·이미페넴)이어야 한다.<br> <b>왜 반코마이신을 처음부터 넣지 않는가</b> — 그람양성균(응고효소음성 포도알균·녹색연쇄상구균)이 배양에서 가장 흔히 자라지만 진행이 느리고, 여러 무작위 시험에서 초기 반코마이신 추가가 사망률을 낮추지 못한 채 신독성·내성(VRE)만 늘렸다. 그래서 IDSA·NCCN 은 <b>혈역학 불안정, 카테터 삽입부 감염, 피부·연조직 감염, 폐렴, 그람양성균 혈액배양, MRSA 집락, 심한 점막염에 퀴놀론 예방 중</b>일 때만 추가하고, 48~72시간 뒤 배양이 음성이면 중단하라고 한다.<br> <b>위험도가 입원·경구 여부를 정한다</b> — MASCC 점수 ≥ 21 또는 CISNE 저위험이면서 <b>호중구감소가 7일 이내로 짧을 고형암 환자</b>는 외래에서 경구 시프로플록사신 + 아목시실린-클라불란산으로 치료할 수 있다. 급성백혈병 관해유도, 조혈모세포이식, ANC &lt; 100 이 7일 이상 예상, 점막염·저혈압·간·신부전은 고위험이며 반드시 입원해 정맥 항생제를 쓴다. 발열이 4~7일 지속되면 <b>경험적 항진균제(에키노칸딘·암포테리신)</b>를 추가한다. G-CSF 는 발열이 생긴 뒤 치료로는 사망률을 줄이지 못하고, 고위험 요법의 <b>예방</b>에 쓴다.\n- 비교: <table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:40%\">기준</th><th>경험적 치료</th></tr></thead><tbody> <tr><td><b>고위험 발열성 호중구감소증, 안정(정답)</b></td><td><b>급성백혈병 관해유도·이식, ANC &lt; 100 이 7일 이상 예상, 점막염; 혈역학 안정, 국소 감염 징후 없음</b></td><td><b>입원, 항녹농균 β-락탐 단독 정맥(세페핌 등)</b></td></tr> <tr><td>고위험 + 반코마이신 적응(가장 가까운 오답)</td><td>저혈압·쇼크, 카테터 삽입부 발적·압통, 피부연조직 감염, 폐렴 침윤, 그람양성균 배양, MRSA 집락</td><td>β-락탐 + 반코마이신, 48~72시간 뒤 재평가</td></tr> <tr><td>저위험(외래 가능)</td><td>고형암, MASCC ≥ 21, 호중구감소 7일 이내 예상, 경구 복용 가능, 동반질환 없음</td><td>시프로플록사신 + 아목시실린-클라불란산 경구</td></tr> <tr><td>4~7일 지속 발열</td><td>광범위 항생제에도 발열 지속, 배양 음성</td><td>경험적 항진균제(에키노칸딘·리포솜 암포테리신 B), 흉부 CT</td></tr> <tr><td>예방</td><td>발열성 호중구감소 위험 &gt; 20 % 인 항암요법</td><td>G-CSF 예방 투여(치료 아님)</td></tr> </tbody></table> <b>가장 가까운 오답은 「반코마이신」</b>이다 — 중심정맥관이 있고 점막염이 있어 그람양성균이 걱정되기 때문이다. 갈림길은 <b>반코마이신의 명시적 적응이 있는가</b>다. 삽입부에 발적·압통이 없고 혈압이 정상이며 폐·피부 감염이 없으면 β-락탐 단독으로 시작하고, 배양 결과와 임상 경과로 추가 여부를 정한다. 카테터 삽입부가 붉고 아프거나 혈압이 떨어졌다면 반코마이신을 더하는 것이 정답이 된다.\n- 오답 이유:\n  - ① 경구 시프로플록사신과 아목시실린-클라불란산은 MASCC 점수 21 이상이면서 호중구감소가 7일 이내로 짧을 고형암 환자의 외래 치료다. 급성골수성백혈병 관해유도 뒤 절대호중구수 120 에 점막염이 있는 이 환자는 고위험군이라 입원해 정맥 항생제를 써야 한다. 항암요법 후 호중구감소가 짧고 동반질환이 없는 저위험 고형암 환자라면 이 선지가 정답이 된다.\n  - ② 과립구집락자극인자는 발열이 이미 생긴 뒤 치료로 쓰면 호중구 회복을 하루 정도 앞당길 뿐 사망률을 낮추지 못해 표준 치료가 아니며, 항생제를 대신할 수 없다. 발열성 호중구감소 위험이 20 % 를 넘는 항암요법 주기에 예방 목적으로 투여할 때 이 선지가 정답이 된다.\n  - ③ 플루코나졸은 호중구감소 환자에서 칸디다 예방이나 확인된 칸디다 감염에 쓰지만, 경험적 첫 치료는 세균을 겨냥해야 하며 곰팡이 감염이 늘어나는 것은 광범위 항생제에도 발열이 4~7일 지속될 때다. 그때도 균사류를 덮는 에키노칸딘이나 암포테리신이 우선이다. 항생제에도 5일째 발열이 지속되고 흉부 CT 에 결절이 보이면 경험적 항진균제가 정답이 된다.\n  - ⑤ 반코마이신은 항녹농균 β-락탐을 대신하지 못하고, 초기 추가는 혈역학 불안정·카테터 삽입부 감염·피부연조직 감염·폐렴·그람양성균 배양·MRSA 집락이 있을 때만 한다. 이 환자는 혈압이 정상이고 삽입부에 발적·압통이 없다. 카테터 삽입부가 붉고 아프거나 저혈압이 동반되면 세페핌에 반코마이신을 더하는 것이 정답이 된다.\n- 함정: 발열성 호중구감소증은 「원인을 찾은 뒤」가 아니라 「배양 뒤 1시간 안에」 치료한다. 첫 약은 항녹농균 β-락탐 하나이고, 반코마이신은 적응이 있을 때만, 항진균제는 4~7일 지속 발열에서 더한다.\n- 학습목표: 항암화학요법 후 발열성 호중구감소증에서 고위험군을 판단하고 반코마이신 없이 항녹농균 β-락탐 단독 경험적 정맥 항생제를 즉시 시작한다\n- 근거·출처: Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the IDSA. Clin Infect Dis 2011;52:e56 — high-risk: anti-pseudomonal β-lactam monotherapy; vancomycin only for specific indications · Taplitz RA et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA clinical practice guideline update. J Clin Oncol 2018;36:1443 — MASCC/CISNE, oral regimen for low risk · NCCN Guidelines: Prevention and Treatment of Cancer-Related Infections (v.2024) — empiric therapy algorithm, antifungal at day 4–7 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Infections in patients with cancer' — neutropenic fever pathophysiology and empiric regimens · Klastersky J et al. The MASCC risk index. J Clin Oncol 2000;18:3038",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "절대호중구수 500/mm³ 미만에 38.3℃ 이상의 발열이므로 발열성 호중구감소증이다. 급성골수성백혈병 관해유도 요법 뒤라 호중구감소가 7일 이상 길고 깊을 것이 예상되고 점막염도 있어 고위험군이며, 고위험군은 입원해 혈액배양 뒤 1시간 안에 항녹농균 β-락탐(세페핌, 피페라실린-타조박탐, 메로페넴)을 단독으로 정맥 투여한다. 혈역학이 안정되고 카테터 감염·피부연조직 감염·폐렴·MRSA 집락의 근거가 없으므로 반코마이신은 처음부터 추가하지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "호중구는 세균·진균에 대한 <b>첫 방어선</b>이고, 감염의 국소 징후(농·침윤·발적)는 호중구가 모여야 생긴다. 절대호중구수가 500/mm³ 아래로 떨어지면 장 점막·구강 점막의 미세 손상으로 들어온 세균이 아무 저항 없이 혈류로 퍼지며, <b>발열이 유일한 단서</b>가 된다. 그래서 발열성 호중구감소증은 원인이 밝혀지기 전에 치료하는 <b>내과적 응급</b>이고, 항생제가 1시간 늦을 때마다 사망률이 오른다. 가장 위험한 병원체는 <b>녹농균을 포함한 그람음성 간균</b>이다 — 빠르게 패혈성 쇼크를 일으키기 때문에 경험적 치료는 항녹농균 활성이 있는 β-락탐(세페핌·피페라실린-타조박탐·메로페넴·이미페넴)이어야 한다.<br> <b>왜 반코마이신을 처음부터 넣지 않는가</b> — 그람양성균(응고효소음성 포도알균·녹색연쇄상구균)이 배양에서 가장 흔히 자라지만 진행이 느리고, 여러 무작위 시험에서 초기 반코마이신 추가가 사망률을 낮추지 못한 채 신독성·내성(VRE)만 늘렸다. 그래서 IDSA·NCCN 은 <b>혈역학 불안정, 카테터 삽입부 감염, 피부·연조직 감염, 폐렴, 그람양성균 혈액배양, MRSA 집락, 심한 점막염에 퀴놀론 예방 중</b>일 때만 추가하고, 48~72시간 뒤 배양이 음성이면 중단하라고 한다.<br> <b>위험도가 입원·경구 여부를 정한다</b> — MASCC 점수 ≥ 21 또는 CISNE 저위험이면서 <b>호중구감소가 7일 이내로 짧을 고형암 환자</b>는 외래에서 경구 시프로플록사신 + 아목시실린-클라불란산으로 치료할 수 있다. 급성백혈병 관해유도, 조혈모세포이식, ANC &lt; 100 이 7일 이상 예상, 점막염·저혈압·간·신부전은 고위험이며 반드시 입원해 정맥 항생제를 쓴다. 발열이 4~7일 지속되면 <b>경험적 항진균제(에키노칸딘·암포테리신)</b>를 추가한다. G-CSF 는 발열이 생긴 뒤 치료로는 사망률을 줄이지 못하고, 고위험 요법의 <b>예방</b>에 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:40%\">기준</th><th>경험적 치료</th></tr></thead><tbody> <tr><td><b>고위험 발열성 호중구감소증, 안정(정답)</b></td><td><b>급성백혈병 관해유도·이식, ANC &lt; 100 이 7일 이상 예상, 점막염; 혈역학 안정, 국소 감염 징후 없음</b></td><td><b>입원, 항녹농균 β-락탐 단독 정맥(세페핌 등)</b></td></tr> <tr><td>고위험 + 반코마이신 적응(가장 가까운 오답)</td><td>저혈압·쇼크, 카테터 삽입부 발적·압통, 피부연조직 감염, 폐렴 침윤, 그람양성균 배양, MRSA 집락</td><td>β-락탐 + 반코마이신, 48~72시간 뒤 재평가</td></tr> <tr><td>저위험(외래 가능)</td><td>고형암, MASCC ≥ 21, 호중구감소 7일 이내 예상, 경구 복용 가능, 동반질환 없음</td><td>시프로플록사신 + 아목시실린-클라불란산 경구</td></tr> <tr><td>4~7일 지속 발열</td><td>광범위 항생제에도 발열 지속, 배양 음성</td><td>경험적 항진균제(에키노칸딘·리포솜 암포테리신 B), 흉부 CT</td></tr> <tr><td>예방</td><td>발열성 호중구감소 위험 &gt; 20 % 인 항암요법</td><td>G-CSF 예방 투여(치료 아님)</td></tr> </tbody></table> <b>가장 가까운 오답은 「반코마이신」</b>이다 — 중심정맥관이 있고 점막염이 있어 그람양성균이 걱정되기 때문이다. 갈림길은 <b>반코마이신의 명시적 적응이 있는가</b>다. 삽입부에 발적·압통이 없고 혈압이 정상이며 폐·피부 감염이 없으면 β-락탐 단독으로 시작하고, 배양 결과와 임상 경과로 추가 여부를 정한다. 카테터 삽입부가 붉고 아프거나 혈압이 떨어졌다면 반코마이신을 더하는 것이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 시프로플록사신과 아목시실린-클라불란산은 MASCC 점수 21 이상이면서 호중구감소가 7일 이내로 짧을 고형암 환자의 외래 치료다. 급성골수성백혈병 관해유도 뒤 절대호중구수 120 에 점막염이 있는 이 환자는 고위험군이라 입원해 정맥 항생제를 써야 한다. 항암요법 후 호중구감소가 짧고 동반질환이 없는 저위험 고형암 환자라면 이 선지가 정답이 된다.\n② 과립구집락자극인자는 발열이 이미 생긴 뒤 치료로 쓰면 호중구 회복을 하루 정도 앞당길 뿐 사망률을 낮추지 못해 표준 치료가 아니며, 항생제를 대신할 수 없다. 발열성 호중구감소 위험이 20 % 를 넘는 항암요법 주기에 예방 목적으로 투여할 때 이 선지가 정답이 된다.\n③ 플루코나졸은 호중구감소 환자에서 칸디다 예방이나 확인된 칸디다 감염에 쓰지만, 경험적 첫 치료는 세균을 겨냥해야 하며 곰팡이 감염이 늘어나는 것은 광범위 항생제에도 발열이 4~7일 지속될 때다. 그때도 균사류를 덮는 에키노칸딘이나 암포테리신이 우선이다. 항생제에도 5일째 발열이 지속되고 흉부 CT 에 결절이 보이면 경험적 항진균제가 정답이 된다.\n⑤ 반코마이신은 항녹농균 β-락탐을 대신하지 못하고, 초기 추가는 혈역학 불안정·카테터 삽입부 감염·피부연조직 감염·폐렴·그람양성균 배양·MRSA 집락이 있을 때만 한다. 이 환자는 혈압이 정상이고 삽입부에 발적·압통이 없다. 카테터 삽입부가 붉고 아프거나 저혈압이 동반되면 세페핌에 반코마이신을 더하는 것이 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "발열성 호중구감소증은 「원인을 찾은 뒤」가 아니라 「배양 뒤 1시간 안에」 치료한다. 첫 약은 항녹농균 β-락탐 하나이고, 반코마이신은 적응이 있을 때만, 항진균제는 4~7일 지속 발열에서 더한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항암화학요법 후 발열성 호중구감소증에서 고위험군을 판단하고 반코마이신 없이 항녹농균 β-락탐 단독 경험적 정맥 항생제를 즉시 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Freifeld AG et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by the IDSA. Clin Infect Dis 2011;52:e56 — high-risk: anti-pseudomonal β-lactam monotherapy; vancomycin only for specific indications · Taplitz RA et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA clinical practice guideline update. J Clin Oncol 2018;36:1443 — MASCC/CISNE, oral regimen for low risk · NCCN Guidelines: Prevention and Treatment of Cancer-Related Infections (v.2024) — empiric therapy algorithm, antifungal at day 4–7 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Infections in patients with cancer' — neutropenic fever pathophysiology and empiric regimens · Klastersky J et al. The MASCC risk index. J Clin Oncol 2000;18:3038"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "급성백혈병 관해유도 뒤 ANC 120 의 발열은 고위험 발열성 호중구감소증이므로 즉시 항녹농균 β-락탐 단독 정맥 항생제를 시작하고, 반코마이신은 적응이 있을 때만 더한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "중심정맥관 삽입 부위에 발적이나 압통이 없고 혈압이 정상이다 — 반코마이신 초기 추가의 적응이 없다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "절대호중구수 120/mm³",
+     "why": "500 미만의 심한 호중구감소 — 발열성 호중구감소증의 정의이자 고위험(< 100 에 가까움) 요소",
+     "also": []
+    },
+    {
+     "item": "38.8℃ 의 발열",
+     "why": "단일 체온 ≥ 38.3℃ — 항생제를 1시간 안에 시작해야 하는 신호",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "중심정맥관 삽입 부위에 발적이나 압통은 없으며",
+     "why": "카테터 감염 가능성을 낮춰 반코마이신 초기 추가에서 멀어진다",
+     "also": []
+    },
+    {
+     "item": "혈압 118/74 mmHg",
+     "why": "패혈성 쇼크가 아니다 — 반코마이신·승압제 적응이 없다",
+     "also": []
+    },
+    {
+     "item": "흉부 X선은 정상",
+     "why": "폐렴 침윤이 없어 반코마이신·항진균제 적응에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "관해유도 항암화학요법을 받은 지 10일째",
+     "why": "급성백혈병 관해유도 → 7일 이상 깊은 호중구감소 예상 → 고위험, 입원·정맥 치료",
+     "also": []
+    },
+    {
+     "item": "구강 점막에 경한 궤양",
+     "why": "점막염 — 고위험 요소이자 그람양성·혐기균 침입 경로; 그러나 반코마이신의 단독 적응은 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "신기능 정상 — 세페핌 용량 조정 불필요, 반코마이신 신독성 우려는 판단의 핵심이 아니다",
+     "also": []
+    },
+    {
+     "item": "58세 남자",
+     "why": "연령 자체는 고위험 판정(60세 이상은 MASCC 감점)에 근접하지만 결정 요소가 아니다",
+     "also": []
+    }
+   ],
+   "summary": "급성백혈병 관해유도 뒤 ANC 120 의 발열은 고위험 발열성 호중구감소증이다. 혈역학이 안정되고 카테터·피부·폐 감염 징후가 없으므로 세페핌 같은 항녹농균 β-락탐 단독 정맥 항생제를 즉시 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "중심정맥관 삽입부에 발적·압통이 있거나 혈압이 떨어지거나 혈액배양에서 그람양성구균이 자라면 반코마이신을 추가한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0058",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소아·신경·소화기·혈액종양·감염·내분비·예방의학)",
+  "subtopic": "소화기·간담췌 — 급성 담관염",
+  "type": "소화기·간담췌 — 급성 담관염",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-18",
+  "vignette": "68세 여자가 하루 전부터 시작된 오른쪽 위 배 통증과 오한을 동반한 발열로 응급실에 왔다. 3년 전 담낭 담석을 진단받았으나 증상이 없어 지켜보고 있었다. 혈압 92/58 mmHg, 맥박 118회/분, 체온 39.2℃ 이고, 공막에 황달이 있으며 오른쪽 위 배에 압통이 있으나 반동압통은 없다. 혈액검사: 백혈구 18,500/mm³, 총빌리루빈 5.8 mg/dL, AST 210 U/L, ALT 260 U/L, 알칼리인산분해효소 620 U/L, 아밀라아제 90 U/L, 젖산 3.8 mmol/L. 복부 초음파에서 총담관 지름 14 mm 로 늘어나 있고 담낭에 여러 개의 담석이 있으며 담낭벽 비후는 없다. 수액 소생과 광범위 항생제 투여를 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "항생제만 유지하며 48시간 경과관찰",
+   "내시경역행담췌관조영술로 담관 배액",
+   "복강경 담낭절제술",
+   "경피경간 담낭 배액술",
+   "자기공명담췌관조영술 후 재평가"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 발열·황달·우상복부 통증(Charcot 세 징후)에 담관 확장과 담석이 있으므로 담석에 의한 급성 담관염이다. 저혈압(수축기 < 100 mmHg)과 젖산 상승은 장기 기능장애를 뜻하므로 Tokyo Guidelines 2018 기준 Grade III(중증)이며, 중증 담관염은 항생제와 소생만으로 호전되지 않고 담관 내 압력을 낮춰야 하므로 24시간 안에 긴급 담관 배액을 한다. 담석에 의한 원위 담관 폐쇄에서 첫 번째 배액 방법은 내시경역행담췌관조영술(ERCP)을 통한 괄약근절개·담석 제거 또는 스텐트 삽입이다. 담낭절제술은 담관염이 가라앉은 뒤에 한다.\n- 원리: 급성 담관염은 <b>담관 폐쇄 + 담즙 감염</b>의 조합이다. 담석이 원위 총담관을 막으면 담관 내압이 올라가고, 정상이라면 장으로 씻겨 내려갈 장내세균(대장균· 클렙시엘라·장구균)이 정체된 담즙에서 증식한다. 담관 내압이 <b>20~25 cmH₂O 를 넘으면</b> 담즙과 세균이 담관 상피와 간세포 사이 접합부를 거꾸로 넘어 간정맥동·림프관으로 들어간다(<b>담관정맥 역류</b>). 그래서 담관염은 단순 국소 감염이 아니라 <b>세균혈증과 내독소혈증</b>이고, 저혈압·의식변화·급성 신손상· 혈소판감소·응고장애로 진행한다. 또 담관 내압이 높으면 간세포의 담즙 분비가 멈추어 <b>정맥으로 준 항생제가 담즙으로 나오지 않는다</b> — 항생제만으로 담관염이 낫지 않는 이유가 이것이며, 배액으로 압력을 낮추는 것이 곧 감염원 제거(source control)다.<br> <b>중증도가 처치 시각을 정한다</b> — Tokyo Guidelines 2018 은 장기 기능장애(승압제가 필요한 저혈압, 의식장애, PaO₂/FiO₂ &lt; 300, 크레아티닌 &gt; 2, PT-INR &gt; 1.5, 혈소판 &lt; 10만)가 하나라도 있으면 <b>Grade III</b> 로 두고 <b>긴급(24시간 이내) 담관 배액</b>을 권한다. Grade II(백혈구 &gt; 12,000 또는 &lt; 4,000, 고열 ≥ 39 ℃, 75세 이상, 빌리루빈 ≥ 5, 저알부민)는 조기 배액, Grade I 은 항생제 반응을 보고 결정한다. 이 환자는 저혈압·젖산 3.8·빌리루빈 5.8·39.2 ℃ 로 Grade III 다.<br> <b>왜 ERCP 인가</b> — 원위 담관 담석은 내시경으로 접근해 괄약근절개 후 담석을 꺼내거나, 상태가 나쁘면 스텐트만 넣어 배액하고 담석 제거는 나중에 한다. 경피경간 담관 배액(PTBD)은 내시경 접근이 불가능하거나(위 수술력, 십이지장 폐쇄) 실패했을 때의 대안이고, 수술적 담관 탐색은 최후의 수단이다. 담낭절제술은 담관염의 원인인 담낭 담석을 없애 재발을 막는 <b>예방적 단계</b>라 급성기가 지난 뒤(같은 입원 중 또는 6주 이내) 시행한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">담석 합병증</th><th style=\"width:44%\">임상·검사·영상</th><th>처치</th></tr></thead><tbody> <tr><td><b>급성 담관염, 중증(정답)</b></td><td><b>발열·황달·우상복부 통증 + 담관 확장·담석, 빌리루빈·ALP 상승; 저혈압·젖산 상승·의식변화 등 장기 기능장애</b></td><td><b>수액·항생제 + 24시간 내 ERCP 담관 배액; 담낭절제는 호전 뒤</b></td></tr> <tr><td>급성 담관염, 경증(Grade I)</td><td>같은 세 징후이나 장기 기능장애·고위험 요인 없음</td><td>항생제 24~48시간 반응 보고 배액 시기 결정</td></tr> <tr><td>급성 담낭염(가장 가까운 오답의 근거)</td><td>우상복부 통증·Murphy 징후, 담낭벽 비후·주위 액체, <b>황달·담관 확장 없음</b>, 빌리루빈 정상~경미 상승</td><td>항생제 + 조기 복강경 담낭절제술; 수술 고위험이면 경피 담낭 배액</td></tr> <tr><td>담석 췌장염</td><td>상복부 통증이 등으로 방사, 아밀라아제·리파아제 3배 이상; 담관염 동반 시에만 ERCP</td><td>수액·금식; 담관염 동반이면 ERCP</td></tr> <tr><td>무증상 총담관 담석</td><td>우연히 발견, 발열·통증 없음</td><td>선택적 ERCP 담석 제거 후 담낭절제</td></tr> </tbody></table> <b>가장 가까운 오답은 「복강경 담낭절제술」</b>이다 — 담낭 담석이 원인이므로 수술로 끝내고 싶어지기 때문이다. 갈림길은 <b>폐쇄가 어디에 있는가</b>이다. 담관염의 폐쇄는 총담관이고, 담낭을 떼어도 총담관 담석과 담관 내압은 그대로다. 게다가 패혈증 상태의 수술은 위험하다. 담낭벽 비후·Murphy 징후가 있고 황달과 담관 확장이 없는 급성 담낭염이었다면 조기 담낭절제술이 정답이 된다.\n- 오답 이유:\n  - ① 항생제만 유지하며 관찰하는 것은 장기 기능장애가 없는 경증(Grade I) 담관염에서 24~48시간 반응을 보는 전략이다. 저혈압과 젖산 상승이 있는 중증 담관염은 항생제가 담즙으로 분비되지 못해 배액 없이는 악화된다. 혈압·젖산·의식이 정상이고 고위험 요인이 없는 경증 담관염이라면 이 선지가 정답이 된다.\n  - ③ 복강경 담낭절제술은 급성 담낭염의 치료이고, 담관염에서는 총담관 폐쇄를 풀지 못해 담관 내압과 세균혈증이 그대로 남는다. 패혈증 상태에서 전신마취 수술은 위험도 크다. 담낭벽 비후와 Murphy 징후가 있으면서 황달·담관 확장이 없는 급성 담낭염이거나, 담관염이 배액으로 가라앉은 뒤의 재발 예방 단계라면 이 선지가 정답이 된다.\n  - ④ 경피경간 담낭 배액술은 수술 위험이 큰 급성 담낭염 환자의 담낭을 비우는 시술이다. 이 환자의 폐쇄는 담낭이 아니라 총담관이고 담낭벽 비후도 없어 담낭을 배액해도 담관 압력이 낮아지지 않는다. 담낭벽 비후·담낭 주위 액체가 있는 급성 담낭염에서 심폐 상태가 나빠 수술이 어려울 때 이 선지가 정답이 된다.\n  - ⑤ 자기공명담췌관조영술은 담관 담석 여부가 불확실할 때의 비침습 진단 검사다. 이 환자는 담관 확장·황달·담석 병력으로 담석 담관염이 이미 분명하고 중증이라 검사로 시간을 쓰면 배액이 늦어진다. 담관 확장이 애매하고 생화학 소견이 경미해 담석 담관염의 확률이 중간 정도인 안정된 환자라면 이 선지가 정답이 된다.\n- 함정: Charcot 세 징후를 보면 「담관염」까지는 쉽다. 다음 질문은 「얼마나 급한가」다 — 저혈압·젖산·의식·신기능 중 하나라도 나쁘면 Grade III, 24시간 안에 담관을 배액한다. 담낭절제는 원인 제거이지 응급 처치가 아니다.\n- 학습목표: 발열·황달·우상복부 통증에 저혈압·젖산 상승이 동반된 중증 급성 담관염에서 항생제만으로는 부족하며 긴급 내시경 담관 배액이 필요함을 판단한다\n- 근거·출처: Kiriyama S et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:17 — Grade III organ dysfunction, urgent drainage · Mukai S et al. Tokyo Guidelines 2018: indications and techniques of biliary drainage for acute cholangitis. J Hepatobiliary Pancreat Sci 2017;24:537 — endoscopic transpapillary drainage first · ASGE Standards of Practice Committee. ASGE guideline on the role of endoscopy in the evaluation and management of choledocholithiasis. Gastrointest Endosc 2019;89:1075 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Diseases of the gallbladder and bile ducts' — cholangitis: cholangiovenous reflux, drainage, timing of cholecystectomy · Sabiston Textbook of Surgery 21st ed., ch. 'Biliary system' — acute cholangitis vs cholecystitis, interval cholecystectomy",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "발열·황달·우상복부 통증(Charcot 세 징후)에 담관 확장과 담석이 있으므로 담석에 의한 급성 담관염이다. 저혈압(수축기 < 100 mmHg)과 젖산 상승은 장기 기능장애를 뜻하므로 Tokyo Guidelines 2018 기준 Grade III(중증)이며, 중증 담관염은 항생제와 소생만으로 호전되지 않고 담관 내 압력을 낮춰야 하므로 24시간 안에 긴급 담관 배액을 한다. 담석에 의한 원위 담관 폐쇄에서 첫 번째 배액 방법은 내시경역행담췌관조영술(ERCP)을 통한 괄약근절개·담석 제거 또는 스텐트 삽입이다. 담낭절제술은 담관염이 가라앉은 뒤에 한다."
+   },
+   {
+    "k": "원리",
+    "v": "급성 담관염은 <b>담관 폐쇄 + 담즙 감염</b>의 조합이다. 담석이 원위 총담관을 막으면 담관 내압이 올라가고, 정상이라면 장으로 씻겨 내려갈 장내세균(대장균· 클렙시엘라·장구균)이 정체된 담즙에서 증식한다. 담관 내압이 <b>20~25 cmH₂O 를 넘으면</b> 담즙과 세균이 담관 상피와 간세포 사이 접합부를 거꾸로 넘어 간정맥동·림프관으로 들어간다(<b>담관정맥 역류</b>). 그래서 담관염은 단순 국소 감염이 아니라 <b>세균혈증과 내독소혈증</b>이고, 저혈압·의식변화·급성 신손상· 혈소판감소·응고장애로 진행한다. 또 담관 내압이 높으면 간세포의 담즙 분비가 멈추어 <b>정맥으로 준 항생제가 담즙으로 나오지 않는다</b> — 항생제만으로 담관염이 낫지 않는 이유가 이것이며, 배액으로 압력을 낮추는 것이 곧 감염원 제거(source control)다.<br> <b>중증도가 처치 시각을 정한다</b> — Tokyo Guidelines 2018 은 장기 기능장애(승압제가 필요한 저혈압, 의식장애, PaO₂/FiO₂ &lt; 300, 크레아티닌 &gt; 2, PT-INR &gt; 1.5, 혈소판 &lt; 10만)가 하나라도 있으면 <b>Grade III</b> 로 두고 <b>긴급(24시간 이내) 담관 배액</b>을 권한다. Grade II(백혈구 &gt; 12,000 또는 &lt; 4,000, 고열 ≥ 39 ℃, 75세 이상, 빌리루빈 ≥ 5, 저알부민)는 조기 배액, Grade I 은 항생제 반응을 보고 결정한다. 이 환자는 저혈압·젖산 3.8·빌리루빈 5.8·39.2 ℃ 로 Grade III 다.<br> <b>왜 ERCP 인가</b> — 원위 담관 담석은 내시경으로 접근해 괄약근절개 후 담석을 꺼내거나, 상태가 나쁘면 스텐트만 넣어 배액하고 담석 제거는 나중에 한다. 경피경간 담관 배액(PTBD)은 내시경 접근이 불가능하거나(위 수술력, 십이지장 폐쇄) 실패했을 때의 대안이고, 수술적 담관 탐색은 최후의 수단이다. 담낭절제술은 담관염의 원인인 담낭 담석을 없애 재발을 막는 <b>예방적 단계</b>라 급성기가 지난 뒤(같은 입원 중 또는 6주 이내) 시행한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">담석 합병증</th><th style=\"width:44%\">임상·검사·영상</th><th>처치</th></tr></thead><tbody> <tr><td><b>급성 담관염, 중증(정답)</b></td><td><b>발열·황달·우상복부 통증 + 담관 확장·담석, 빌리루빈·ALP 상승; 저혈압·젖산 상승·의식변화 등 장기 기능장애</b></td><td><b>수액·항생제 + 24시간 내 ERCP 담관 배액; 담낭절제는 호전 뒤</b></td></tr> <tr><td>급성 담관염, 경증(Grade I)</td><td>같은 세 징후이나 장기 기능장애·고위험 요인 없음</td><td>항생제 24~48시간 반응 보고 배액 시기 결정</td></tr> <tr><td>급성 담낭염(가장 가까운 오답의 근거)</td><td>우상복부 통증·Murphy 징후, 담낭벽 비후·주위 액체, <b>황달·담관 확장 없음</b>, 빌리루빈 정상~경미 상승</td><td>항생제 + 조기 복강경 담낭절제술; 수술 고위험이면 경피 담낭 배액</td></tr> <tr><td>담석 췌장염</td><td>상복부 통증이 등으로 방사, 아밀라아제·리파아제 3배 이상; 담관염 동반 시에만 ERCP</td><td>수액·금식; 담관염 동반이면 ERCP</td></tr> <tr><td>무증상 총담관 담석</td><td>우연히 발견, 발열·통증 없음</td><td>선택적 ERCP 담석 제거 후 담낭절제</td></tr> </tbody></table> <b>가장 가까운 오답은 「복강경 담낭절제술」</b>이다 — 담낭 담석이 원인이므로 수술로 끝내고 싶어지기 때문이다. 갈림길은 <b>폐쇄가 어디에 있는가</b>이다. 담관염의 폐쇄는 총담관이고, 담낭을 떼어도 총담관 담석과 담관 내압은 그대로다. 게다가 패혈증 상태의 수술은 위험하다. 담낭벽 비후·Murphy 징후가 있고 황달과 담관 확장이 없는 급성 담낭염이었다면 조기 담낭절제술이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 항생제만 유지하며 관찰하는 것은 장기 기능장애가 없는 경증(Grade I) 담관염에서 24~48시간 반응을 보는 전략이다. 저혈압과 젖산 상승이 있는 중증 담관염은 항생제가 담즙으로 분비되지 못해 배액 없이는 악화된다. 혈압·젖산·의식이 정상이고 고위험 요인이 없는 경증 담관염이라면 이 선지가 정답이 된다.\n③ 복강경 담낭절제술은 급성 담낭염의 치료이고, 담관염에서는 총담관 폐쇄를 풀지 못해 담관 내압과 세균혈증이 그대로 남는다. 패혈증 상태에서 전신마취 수술은 위험도 크다. 담낭벽 비후와 Murphy 징후가 있으면서 황달·담관 확장이 없는 급성 담낭염이거나, 담관염이 배액으로 가라앉은 뒤의 재발 예방 단계라면 이 선지가 정답이 된다.\n④ 경피경간 담낭 배액술은 수술 위험이 큰 급성 담낭염 환자의 담낭을 비우는 시술이다. 이 환자의 폐쇄는 담낭이 아니라 총담관이고 담낭벽 비후도 없어 담낭을 배액해도 담관 압력이 낮아지지 않는다. 담낭벽 비후·담낭 주위 액체가 있는 급성 담낭염에서 심폐 상태가 나빠 수술이 어려울 때 이 선지가 정답이 된다.\n⑤ 자기공명담췌관조영술은 담관 담석 여부가 불확실할 때의 비침습 진단 검사다. 이 환자는 담관 확장·황달·담석 병력으로 담석 담관염이 이미 분명하고 중증이라 검사로 시간을 쓰면 배액이 늦어진다. 담관 확장이 애매하고 생화학 소견이 경미해 담석 담관염의 확률이 중간 정도인 안정된 환자라면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "Charcot 세 징후를 보면 「담관염」까지는 쉽다. 다음 질문은 「얼마나 급한가」다 — 저혈압·젖산·의식·신기능 중 하나라도 나쁘면 Grade III, 24시간 안에 담관을 배액한다. 담낭절제는 원인 제거이지 응급 처치가 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "발열·황달·우상복부 통증에 저혈압·젖산 상승이 동반된 중증 급성 담관염에서 항생제만으로는 부족하며 긴급 내시경 담관 배액이 필요함을 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kiriyama S et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:17 — Grade III organ dysfunction, urgent drainage · Mukai S et al. Tokyo Guidelines 2018: indications and techniques of biliary drainage for acute cholangitis. J Hepatobiliary Pancreat Sci 2017;24:537 — endoscopic transpapillary drainage first · ASGE Standards of Practice Committee. ASGE guideline on the role of endoscopy in the evaluation and management of choledocholithiasis. Gastrointest Endosc 2019;89:1075 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Diseases of the gallbladder and bile ducts' — cholangitis: cholangiovenous reflux, drainage, timing of cholecystectomy · Sabiston Textbook of Surgery 21st ed., ch. 'Biliary system' — acute cholangitis vs cholecystitis, interval cholecystectomy"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "담석 담관염(발열·황달·담관 확장)에 저혈압·젖산 상승이 있으면 Grade III 중증이므로 항생제에 더해 24시간 안에 ERCP 로 담관을 배액한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "폐쇄 부위가 총담관(지름 14 mm 확장·황달)이고 담낭벽 비후가 없다 — 담낭을 떼어도 담관 압력은 내려가지 않는다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "오한을 동반한 발열",
+     "why": "담즙 감염·세균혈증의 징후 — Charcot 세 징후의 하나",
+     "also": []
+    },
+    {
+     "item": "공막에 황달",
+     "why": "담관 폐쇄 — 담낭염과의 갈림길",
+     "also": []
+    },
+    {
+     "item": "총담관 지름 14 mm",
+     "why": "담관 확장은 원위 담관 폐쇄를 뜻하고, 배액의 표적이 총담관임을 정한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "담낭벽 비후는 없다",
+     "why": "급성 담낭염 가능성을 낮춰 담낭절제·담낭 배액 선택에서 멀어진다",
+     "also": []
+    },
+    {
+     "item": "아밀라아제 90 U/L",
+     "why": "담석 췌장염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "반동압통은 없다",
+     "why": "복막염·천공 가능성을 낮춰 응급 개복 수술 쪽에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 92/58 mmHg",
+     "why": "장기 기능장애 → Grade III → 긴급 배액의 근거",
+     "also": []
+    },
+    {
+     "item": "젖산 3.8 mmol/L",
+     "why": "조직 저관류 — 패혈증 진행, 배액을 미룰 수 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "68세 여자",
+     "why": "고령은 Grade II 위험요인(75세 이상)에는 못 미치지만 담석 질환의 흔한 배경",
+     "also": []
+    }
+   ],
+   "summary": "발열·황달·담관 확장으로 담석 담관염이고 저혈압·젖산 상승으로 중증(Grade III)이다. 항생제에 더해 24시간 안에 ERCP 로 담관을 배액하고, 담낭절제는 호전 뒤로 미룬다.",
+   "switch": {
+    "choice": "A",
+    "condition": "혈압·젖산·의식·신기능이 모두 정상이고 고위험 요인이 없는 경증(Grade I) 담관염이라면 항생제 반응을 24~48시간 보고 배액 시기를 정한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260918T202233Z_일일영상_2026-09-19_9units_9q_53e6d20f",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0049",
   "exam": "imaging",
   "style": "usmle_style",
