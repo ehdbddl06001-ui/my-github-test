@@ -61,6 +61,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0049.jpg",
    "caption": "Immunohistochemistry (DAB brown, hematoxylin counterstain) of a tissue-microarray core, original magnification (Human Protein Atlas, CC BY 4.0; no cropping or adjustment)",
@@ -137,6 +139,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0048.png",
    "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
@@ -213,6 +217,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0047.png",
    "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
@@ -289,6 +295,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0046.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -365,6 +373,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -437,6 +447,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -509,6 +521,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -581,6 +595,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -653,6 +669,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0045.png",
    "caption": "Upright anteroposterior chest radiograph (The Cancer Imaging Archive, CC BY 4.0; original pixel data, no windowing or cropping)",
@@ -729,6 +747,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0044.jpg",
    "caption": "면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색) 조직 마이크로어레이 코어, 원본 배율 그대로 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
@@ -805,6 +825,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0039.png",
    "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
@@ -881,6 +903,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0038.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -957,6 +981,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0037.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -1033,6 +1059,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1105,6 +1133,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1177,6 +1207,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1249,6 +1281,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1321,6 +1355,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0032.png",
    "caption": "Intrapartum fetal heart rate (top) and uterine activity (bottom), minutes 10–20 of the recording; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; raw 4 Hz data, no smoothing)",
@@ -1397,6 +1433,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0031.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -1473,6 +1511,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0030.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -1549,6 +1589,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0029.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -1625,6 +1667,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0028.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -1701,6 +1745,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1773,6 +1819,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1845,6 +1893,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1917,6 +1967,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -1989,6 +2041,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0023.png",
    "caption": "분만 중 태아심박동(위)과 자궁수축(아래), 감시 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
@@ -2065,6 +2119,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0022.png",
    "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM with windowing only)",
@@ -2141,6 +2197,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0021.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -2217,6 +2275,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0020.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -2293,6 +2353,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0019.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -2369,6 +2431,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -2441,6 +2505,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -2513,6 +2579,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -2585,6 +2653,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -2657,6 +2727,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0014.png",
    "caption": "Intrapartum fetal heart rate (upper) and uterine activity (lower), minutes 30–40 of monitoring; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
@@ -2733,6 +2805,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0013.png",
    "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM with windowing only)",
@@ -2809,6 +2883,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0012.png",
    "caption": "흉부 CT 축상면, 폐창(lung window) — 표준 표시 방향(환자의 오른쪽이 그림의 왼쪽) (The Cancer Imaging Archive, CC BY 3.0 — DICOM 원본을 창 설정 외 가공 없이 변환)",
@@ -2885,6 +2961,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0011.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -2961,6 +3039,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0010.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -3037,6 +3117,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0006.png",
    "caption": "Intrapartum fetal heart rate (upper) and uterine activity (lower), minutes 40–50 of monitoring; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
@@ -3113,6 +3195,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0004.jpg",
    "caption": "Human tissue section, immunohistochemistry (brown = positive, blue = hematoxylin counterstain) (Human Protein Atlas, CC BY 4.0; original image, resized only)",
@@ -3189,6 +3273,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0003.jpg",
    "caption": "사람 장기 조직 절편, 면역조직화학염색(양성 = 갈색, 핵 대조염색 = 청색) (Human Protein Atlas, CC BY 4.0 — 원본 그대로, 크기 조정만)",
@@ -3265,6 +3351,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0002.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -3341,6 +3429,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0001.png",
    "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
@@ -3417,6 +3507,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3489,6 +3581,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3561,6 +3655,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3633,6 +3729,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3705,6 +3803,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3777,6 +3877,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3849,6 +3951,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -3921,6 +4025,8 @@ window.IMAGING_QUESTIONS = [
   "vitals": [],
   "labs": [],
   "appendix": null,
+  "design": null,
+  "reviewStatus": "unreviewed",
   "figureImg": null,
   "attribution": {
    "dataset": "",

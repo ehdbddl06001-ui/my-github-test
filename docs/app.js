@@ -92,6 +92,7 @@ function recordWrong(q, chosenIdx) {
     answer: q.answer - 1, answerText: q.options[q.answer - 1],
     coreNote: q.explanationText ? "" : (q.explanation && q.explanation["임상핵심"]) || "",
     differ: q.explanationText ? "" : (q.explanation && q.explanation["오답감별"]) || "",
+    decision: (q.design && q.design.summary) || "",
     source: q.source || "", date: todayStr(), device: SYNC.device,
     note: prev.note || "",
   };
@@ -396,10 +397,10 @@ function renderExplanation(q, chosenIdx, ok) {
 
   let bodyHtml;
   if (q.explanationItems && q.explanationItems.length) {
-    // 구조화 해설(항목별 박스) + (있으면) 부록 결정표 박스.
-    bodyHtml = renderExplItems(q.explanationItems) + renderAppendix(q.appendix);
+    // 구조화 해설(항목별 박스) + 정보 선별(있으면) + 부록 결정표 박스.
+    bodyHtml = renderExplItems(q.explanationItems) + renderTriage(q) + renderAppendix(q.appendix);
   } else if (q.explanationText) {
-    bodyHtml = `<pre class="expl-text">${escapeHtml(q.explanationText)}</pre>` + renderAppendix(q.appendix);
+    bodyHtml = `<pre class="expl-text">${escapeHtml(q.explanationText)}</pre>` + renderTriage(q) + renderAppendix(q.appendix);
   } else {
     const ex = q.explanation || {};
     const rows = [];
@@ -407,7 +408,7 @@ function renderExplanation(q, chosenIdx, ok) {
       if (ex[k]) rows.push(`<div class="expl-item"><span class="k">${k}</span>${fmtExplValue(ex[k])}</div>`);
     });
     const src = q.source ? `<div class="src">출처: ${escapeHtml(q.source)}</div>` : "";
-    bodyHtml = rows.join("") + src + renderAppendix(q.appendix);
+    bodyHtml = rows.join("") + src + renderTriage(q) + renderAppendix(q.appendix);
   }
   el.innerHTML = verdict + bodyHtml + attributionHtml(q);
   el.classList.remove("hidden");
@@ -477,6 +478,48 @@ function dataBox(q) {
       + "</tbody></table>";
   }
   return html + "</div>";
+}
+
+// 정보를 어떻게 선별했는가 — 문항 frontmatter 의 design(출제 설계·정보 역할)에서 그린다.
+// 채점(renderExplanation) 뒤에만 불리므로 답을 내기 전에는 보이지 않는다. 핵심 판단 요약만 펼쳐 두고
+// 단서별 분류는 접어 둔다(기본 해설은 빠르게 복습할 분량을 유지). design 이 없는 기존 문항은 아무것도 그리지 않는다.
+function renderTriage(q) {
+  const d = q && q.design;
+  if (!d || typeof d !== "object") return "";
+  const li = (arr) => (Array.isArray(arr) ? arr : [])
+    .filter((x) => x && x.item)
+    .map((x) => `<li><b>${escapeHtml(x.item)}</b>${x.why ? " — " + escapeHtml(x.why) : ""}`
+      + (Array.isArray(x.also) && x.also.length ? ` <span class="tg-also">+ ${x.also.map(escapeHtml).join(" · ")}</span>` : "")
+      + "</li>").join("");
+  const group = (cls, title, arr) => {
+    const items = li(arr);
+    return items ? `<div class="tg ${cls}"><div class="tg-h">${title}</div><ul>${items}</ul></div>` : "";
+  };
+  const optLabel = (letter) => {
+    const i = "ABCDE".indexOf(String(letter || "").toUpperCase());
+    return i >= 0 ? label(i, q) : escapeHtml(letter || "");
+  };
+  const parts = [
+    group("key", "결정적 단서", d.key),
+    group("ruleout", "의미 있는 정상·음성 소견", d.ruleOut),
+    group("mgmt", "중증도·금기·치료 선택에 영향", d.management),
+    group("bg", "비중이 낮은 정보 — 이번 질문에서 결정적이지 않은 이유", d.background),
+  ];
+  if (Array.isArray(d.rival) && d.rival.length && d.discriminator) {
+    parts.push(`<div class="tg rival"><div class="tg-h">가장 헷갈리는 선택지 ${d.rival.map(optLabel).join("·")}</div><p>${escapeHtml(d.discriminator)}</p></div>`);
+  }
+  if (d.switch && d.switch.choice && d.switch.condition) {
+    parts.push(`<div class="tg switch"><div class="tg-h">조건이 바뀌면 — ${optLabel(d.switch.choice)} 가 더 적절해지는 경우</div><p>${escapeHtml(d.switch.condition)}</p></div>`);
+  }
+  const more = parts.filter(Boolean).join("");
+  const target = d.target ? `<span class="tg-target">평가: ${escapeHtml(d.target)}${d.steps ? ` · 판단 ${escapeHtml(String(d.steps))}단계` : ""}</span>` : "";
+  const sum = d.summary ? `<div class="triage-sum"><span class="k">핵심 판단</span>${escapeHtml(d.summary)}</div>` : "";
+  const review = q.reviewStatus === "reviewed"
+    ? '<div class="triage-rev ok">내용 검토 완료</div>'
+    : '<div class="triage-rev">의학적 내용 검토 전 문항 — 생성 후 자동 형식 검사만 통과했습니다</div>';
+  return `<div class="triage"><div class="triage-head">정보를 어떻게 선별했는가 ${target}</div>${sum}`
+    + (more ? `<details class="triage-more"><summary>단서별로 보기</summary>${more}</details>` : "")
+    + review + "</div>";
 }
 
 function renderAppendix(ap) {

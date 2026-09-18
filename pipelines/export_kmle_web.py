@@ -27,6 +27,7 @@ from export_usmle_web import (
     render_figure,
     split_stem,
 )
+from question_design import design_record, review_status
 
 ROOT = Path(__file__).resolve().parent.parent
 KMLE_DIR = ROOT / "content" / "kmle"
@@ -60,6 +61,8 @@ def build_record(path: Path) -> dict | None:
         "vitals": m.get("vitals", []) or [],
         "labs": m.get("labs", []) or [],
         "appendix": m.get("appendix") or None,
+        "design": design_record(m),
+        "reviewStatus": review_status(m),
         "figureSvg": render_figure(m.get("figure"), path.name),
     }
 

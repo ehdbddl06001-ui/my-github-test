@@ -8,13 +8,17 @@ lint_questions.py — KMLE/USMLE 문항의 '시험 감각' 품질을 기계적�
 
 기준의 근거는 실제 '임상의학종합평가' 시험지다:
   - 활력징후 4종(혈압·맥박·호흡·체온)을 **정상이라도 항상** 제시한다.
-  - 검사 소견은 참고치와 함께 **정상 미끼값**을 섞어 신호/잡음을 변별시킨다.
+  - 검사 소견은 참고치와 함께 **정상값도** 준다 — 실제 환자에서 함께 주어지는 자료 가운데 무엇이
+    판단에 쓰이고 무엇은 넘겨도 되는지 가리게 한다(정상값의 개수는 난이도가 아니다).
+  - 2026-09-19 이후 문항은 `design`(출제 설계·정보 역할)을 갖는다 — question_design.py 가 형식을 본다.
   - 소견은 서술하되 그 **해석(에포님·징후명)을 괄호로 떠먹이지 않는다**.
   - 보기 5개는 **동질적·평행**(전부 약물/처치/진단)하고 길이가 고르다.
 
 심각도:
-  ERROR — 시험 문항으로서 결함. 기본 실행에서 exit 1.
-  WARN  — 품질 저하. 기본은 리포트만(exit 0), `--strict` 면 exit 1.
+  ERROR  — 시험 문항으로서 결함(형식). 기본 실행에서 exit 1.
+  WARN   — 품질 저하(형식). 기본은 리포트만(exit 0), `--strict` 면 exit 1.
+  REVIEW — **내용 검토 신호**. 의학적 타당성은 코드로 판정할 수 없으므로 실패로 치지 않고, 사람이 먼저
+           볼 곳만 가리킨다. REVIEW 가 없다고 의학적으로 검증된 것이 아니다(review_questions.py 참고).
 
 사용:
   python pipelines/lint_questions.py                      # content/ 전체 리포트
@@ -29,6 +33,7 @@ from pathlib import Path
 from typing import Iterable
 
 from frontmatter import load, Doc, QUESTION_TYPES
+from question_design import format_findings, review_flags
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
@@ -58,7 +63,7 @@ class Finding:
     __slots__ = ("level", "code", "msg")
 
     def __init__(self, level: str, code: str, msg: str):
-        self.level = level  # "ERROR" | "WARN"
+        self.level = level  # "ERROR" | "WARN" | "REVIEW"
         self.code = code
         self.msg = msg
 
@@ -118,7 +123,7 @@ def lint_doc(d: Doc) -> list[Finding]:
     if labs and not any((l.get("ref") if isinstance(l, dict) else None) for l in labs):
         findings.append(Finding(
             "WARN", "no-lab-ref",
-            "labs에 참고치(ref)가 없다. 정상 미끼값을 섞고 ref를 줘 신호/잡음 변별을 만들어라."))
+            "labs에 참고치(ref)가 없다. 참고치를 줘야 학습자가 정상·이상을 스스로 가린다."))
 
     # 4) 검사 소견을 stem 산문이 그대로 복창 (WARN) — 구조화 자료와 중복.
     for l in labs:
@@ -190,6 +195,13 @@ def lint_doc(d: Doc) -> list[Finding]:
                 "오답감별이 한 줄에 A·B·C…로 뭉쳐 있다. 보기별로 줄을 나눠라 "
                 "(각 줄 `  - (A) …` 형식 — 웹이 줄 단위로 렌더)."))
 
+    # 9) 출제 설계·정보 역할(형식) — 2026-09-19 이후 문항은 필수
+    for level, code, msg in format_findings(m, d.type):
+        findings.append(Finding(level, code, msg))
+    # 10) 내용 검토 신호 — 실패로 치지 않는다
+    for code, msg in review_flags(m):
+        findings.append(Finding("REVIEW", code, msg))
+
     return findings
 
 
@@ -221,7 +233,7 @@ def main(argv: list[str]) -> int:
     files = [a for a in argv if not a.startswith("--")]
     paths = collect_paths(files)
 
-    n_err = n_warn = n_docs = 0
+    n_err = n_warn = n_rev = n_docs = 0
     for d in iter_question_docs(paths):
         fs = lint_doc(d)
         if not fs:
@@ -232,12 +244,16 @@ def main(argv: list[str]) -> int:
         for f in fs:
             if f.level == "ERROR":
                 n_err += 1
-            else:
+            elif f.level == "WARN":
                 n_warn += 1
+            else:
+                n_rev += 1
             print(f"  [{f.level}] {f.code}: {f.msg}")
 
     print(f"\n{'─'*60}")
-    print(f"린트 완료: 문항 {n_docs}건에서 ERROR {n_err} · WARN {n_warn}")
+    print(f"린트 완료: 문항 {n_docs}건에서 ERROR {n_err} · WARN {n_warn} · 내용 검토 신호 {n_rev}")
+    if n_rev:
+        print("  (REVIEW 는 판정이 아니다 — `python pipelines/review_questions.py <파일>` 로 검토지를 만들어 확인한다)")
     if n_err or (strict and n_warn):
         print("→ 수정 필요(품질 기준 미달).")
         return 1

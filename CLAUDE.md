@@ -9,6 +9,9 @@
 - 결정론적 작업(파싱·DB쓰기·동기화·ID발급)은 `pipelines/*.py` 를 호출한다.
   숫자 세기·파일 이동 같은 일을 LLM이 직접 하지 않는다.
 - 문제(kmle/usmle)는 정답·해설을 stem과 분리한다(`answer_separated: true`).
+- 문제는 **출제 설계(`design`)를 먼저 정하고** 쓴다 — 무엇을 평가하는지·핵심 판단·혼동 대안·정보 역할.
+  정상 소견·배경 정보는 의도된 설계라 「길다」는 이유로 빼지 않는다(규칙: `/gen-kmle`).
+  `confidence` 는 출처 신뢰도이고 의학적 검증이 아니다 — 검토 완료는 사람이 `review_status: reviewed` 로만 표시한다.
 - 출처가 충돌하면 임의로 고르지 말고 source/edition/date를 남기고 confidence를 낮춘다.
 
 ## 임시 컨테이너(루틴) 대응 — 매우 중요

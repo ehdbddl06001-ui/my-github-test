@@ -336,3 +336,24 @@ button.small{padding:6px 10px; font-size:.85rem}
 .deep-body th, .deep-body td{border:1px solid var(--line); padding:5px 7px; vertical-align:top; text-align:left}
 .deep-body th{background:#0b1420; color:#9cc3ff; font-weight:600; white-space:nowrap}
 .deep-body tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+
+/* ── 정보를 어떻게 선별했는가(design) — 채점 후에만 그려진다 ── */
+.triage{margin:14px 0 4px; padding:10px 12px; border-radius:8px; background:rgba(234,179,8,.07); border-left:4px solid #eab308; line-height:1.65}
+.triage-head{font-weight:700; margin-bottom:6px}
+.triage-head .tg-target{font-weight:400; font-size:.82rem; color:var(--muted, #9aa4b2); margin-left:6px}
+.triage-sum .k{font-weight:700; margin-right:6px}
+.triage-more{margin-top:8px}
+.triage-more > summary{cursor:pointer; color:#fcd34d; font-size:.9rem}
+.triage .tg{margin:8px 0 2px}
+.triage .tg-h{font-weight:600; font-size:.9rem}
+.triage .tg ul{margin:3px 0 0 1.1em; padding:0}
+.triage .tg li{margin:2px 0}
+.triage .tg p{margin:3px 0 0}
+.triage .tg.key .tg-h{color:#fca5a5}
+.triage .tg.ruleout .tg-h{color:#93c5fd}
+.triage .tg.mgmt .tg-h{color:#fdba74}
+.triage .tg.bg .tg-h{color:#a3a3a3}
+.triage .tg.rival .tg-h, .triage .tg.switch .tg-h{color:#c4b5fd}
+.triage-rev{margin-top:8px; font-size:.78rem; color:var(--muted, #9aa4b2)}
+.triage-rev.ok{color:var(--ok)}
+.triage .tg-also{font-size:.78rem; color:var(--muted, #9aa4b2)}
