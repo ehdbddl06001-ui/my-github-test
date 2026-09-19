@@ -2,6 +2,1262 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0067",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "내분비 — 췌장 베타세포와 혈당강하제",
+  "type": "내분비 — 췌장 베타세포와 혈당강하제",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-19",
+  "vignette": "A 73-year-old woman with type 2 diabetes mellitus undergoes distal pancreatectomy for a mucinous cystic neoplasm of the pancreatic tail. Her diabetes has been treated with metformin for 8 years; hemoglobin A1c is 8.4%. She has no history of pancreatitis and does not drink alcohol. Her body mass index is 31 kg/m2, blood pressure is 134/82 mm Hg, and serum creatinine is 0.9 mg/dL. A photomicrograph of a section of uninvolved pancreas from the specimen, stained by immunohistochemistry for insulin (brown), is shown.",
+  "question": "Which of the following drugs acts directly on the brown-stained cells to lower her blood glucose?",
+  "options": [
+   "Glimepiride",
+   "Metformin",
+   "Empagliflozin",
+   "Pioglitazone",
+   "Acarbose"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The section shows exocrine acinar tissue that is negative (blue counterstain only) and, at the lower right, a compact cluster of cells that stain strongly brown for insulin: an islet of Langerhans, whose insulin-positive cells are beta cells. Sulfonylureas such as glimepiride bind the SUR1 subunit of the ATP-sensitive potassium channel on the beta-cell membrane, close the channel, depolarize the cell, open voltage-gated calcium channels and trigger insulin exocytosis independently of the blood glucose level. Metformin acts mainly on hepatocytes (reduced gluconeogenesis), empagliflozin on the proximal tubule (SGLT2), pioglitazone on adipocyte PPAR-γ, and acarbose on intestinal brush-border α-glucosidase; none of them acts on the beta cell directly.\n- 원리: The pancreas is two glands in one. The <b>exocrine acini</b> (about 98 % of the mass) make digestive enzymes and are negative for insulin, while the <b>islets of Langerhans</b> are scattered endocrine clusters in which beta cells (60–70 % of islet cells, insulin), alpha cells (glucagon), delta cells (somatostatin) and PP cells sit around a rich capillary network. An immunostain for insulin therefore lights up the islet as a brown island in a blue sea of acini — exactly what the section shows. In long-standing type 2 diabetes the islets are still present but their functional beta-cell mass is reduced, which is why glycemia drifts upward on metformin alone.<br> <b>Why glimepiride</b> — beta cells sense glucose through metabolism: glucose enters via GLUT2, is phosphorylated by glucokinase, and the resulting rise in ATP/ADP closes the <b>ATP-sensitive potassium channel (Kir6.2 + SUR1)</b>. The membrane depolarizes, voltage-gated calcium channels open and calcium triggers exocytosis of insulin granules. Sulfonylureas bind the SUR1 subunit and close the same channel <b>pharmacologically, regardless of glucose</b>, so they raise insulin secretion even when glucose is normal — the reason they cause hypoglycemia and weight gain and require residual beta cells to work.<br> <b>Why not the others</b> — metformin lowers hepatic gluconeogenesis (AMPK activation, mitochondrial complex I and glycerophosphate dehydrogenase inhibition) and improves peripheral insulin sensitivity; empagliflozin blocks SGLT2 in the proximal renal tubule so glucose is excreted; pioglitazone activates PPAR-γ in adipocytes and reprograms lipid handling; acarbose inhibits α-glucosidase at the intestinal brush border and slows carbohydrate absorption. Incretin drugs (GLP-1 receptor agonists, DPP-4 inhibitors) do act on beta cells, but through the GLP-1 receptor and cAMP in a <b>glucose-dependent</b> way, and they are not among the options.\n- 비교: <table><thead><tr><th style=\"width:22%\">Drug</th><th style=\"width:26%\">Target cell / site</th><th style=\"width:30%\">Mechanism</th><th>Characteristic effects</th></tr></thead><tbody> <tr><td><b>Glimepiride (answer)</b></td><td><b>pancreatic beta cell</b></td><td><b>closes K-ATP channel (SUR1) → depolarization → Ca2+ influx → insulin release</b></td><td><b>hypoglycemia, weight gain; needs residual beta cells</b></td></tr> <tr><td>Metformin (closest wrong answer)</td><td>hepatocyte (and muscle)</td><td>↓ gluconeogenesis, ↑ insulin sensitivity</td><td>no hypoglycemia, weight neutral, GI upset, lactic acidosis with renal failure</td></tr> <tr><td>Empagliflozin</td><td>proximal tubule</td><td>SGLT2 inhibition → glycosuria</td><td>weight and BP loss, genital infections, euglycemic DKA</td></tr> <tr><td>Pioglitazone</td><td>adipocyte nucleus</td><td>PPAR-γ agonist → insulin sensitization</td><td>edema, weight gain, heart failure, fractures</td></tr> <tr><td>Acarbose</td><td>intestinal brush border</td><td>α-glucosidase inhibition</td><td>flatulence, lowers postprandial glucose only</td></tr> </tbody></table> The <b>closest wrong answer is metformin</b>: it is her current drug and the most familiar one, but it lowers glucose by acting on the liver, not on the islet. The discriminator is the question's wording — <b>'acts directly on the brown-stained cells'</b> — which requires recognizing the brown cluster as insulin-positive beta cells and matching it to the one drug whose receptor (SUR1) sits on that cell. If the question asked which drug acts on the proximal tubule, empagliflozin would be the answer.\n- 오답 이유:\n  - (B) Metformin is the drug she already takes and the usual first-line agent, but it lowers glucose by suppressing hepatic gluconeogenesis and improving insulin sensitivity; it does not stimulate beta cells and does not cause hypoglycemia on its own. This option would be correct if the question asked which drug acts on hepatocytes.\n  - (C) Empagliflozin inhibits SGLT2 in the proximal renal tubule so that filtered glucose is excreted in the urine; it lowers glucose independently of insulin and of the beta cell. This option would be correct if the question asked which drug acts on the kidney or which drug reduces heart-failure hospitalization.\n  - (D) Pioglitazone is a PPAR-γ agonist acting in adipocyte nuclei to redistribute lipid and increase insulin sensitivity in muscle and liver; it has no direct effect on insulin secretion. This option would be correct if the question asked which drug acts on adipose tissue or which causes edema and heart failure.\n  - (E) Acarbose inhibits α-glucosidase at the intestinal brush border, delaying carbohydrate digestion and blunting postprandial glucose peaks; it never reaches the islet. This option would be correct if the question asked which drug acts in the intestinal lumen or which causes flatulence as its main adverse effect.\n- 함정: The brown cluster is not 'pancreas' in general — it is the islet, and insulin-positive means beta cells. Match the cell to the receptor: sulfonylureas bind SUR1 on the beta cell; metformin, SGLT2 inhibitors, glitazones and acarbose all work somewhere else.\n- 학습목표: 췌장 면역조직화학에서 인슐린 양성 세포군을 랑게르한스섬의 베타세포로 알아보고, 베타세포에 직접 작용해 인슐린 분비를 늘리는 약(설폰요소제)을 간·콩팥·지방·장에 작용하는 약과 구분한다\n- 근거·출처: Human Protein Atlas tissue IHC: INS antibody, pancreas — pancreatic endocrine cells 'high', exocrine glandular cells 'not detected' (pathologist annotation, Grade B; tissue identity Grade A); teacher-only: 73 F · 작성자 판독(2026-09-20): 선포 조직 음성(파란 대조염색), 오른쪽 아래 랑게르한스섬 세포군 갈색 강양성, 산발적 갈색 세포, 지방 침윤 · Katzung BG. Basic & Clinical Pharmacology, 16th ed., ch. 41 'Pancreatic hormones and antidiabetic drugs' — sulfonylureas bind SUR1 and close the K-ATP channel of the beta cell; mechanisms of metformin, SGLT2 inhibitors, thiazolidinediones, α-glucosidase inhibitors · Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed., ch. 'Endocrine pancreas and pharmacotherapy of diabetes mellitus' · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed., ch. 'Digestive system III: liver, gallbladder, and pancreas' — islets of Langerhans, beta cells\n\n## 출처\n- Human Protein Atlas, INS / Pancreas (CC BY 4.0), https://images.proteinatlas.org/48/1694_A_2_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The section shows exocrine acinar tissue that is negative (blue counterstain only) and, at the lower right, a compact cluster of cells that stain strongly brown for insulin: an islet of Langerhans, whose insulin-positive cells are beta cells. Sulfonylureas such as glimepiride bind the SUR1 subunit of the ATP-sensitive potassium channel on the beta-cell membrane, close the channel, depolarize the cell, open voltage-gated calcium channels and trigger insulin exocytosis independently of the blood glucose level. Metformin acts mainly on hepatocytes (reduced gluconeogenesis), empagliflozin on the proximal tubule (SGLT2), pioglitazone on adipocyte PPAR-γ, and acarbose on intestinal brush-border α-glucosidase; none of them acts on the beta cell directly."
+   },
+   {
+    "k": "원리",
+    "v": "The pancreas is two glands in one. The <b>exocrine acini</b> (about 98 % of the mass) make digestive enzymes and are negative for insulin, while the <b>islets of Langerhans</b> are scattered endocrine clusters in which beta cells (60–70 % of islet cells, insulin), alpha cells (glucagon), delta cells (somatostatin) and PP cells sit around a rich capillary network. An immunostain for insulin therefore lights up the islet as a brown island in a blue sea of acini — exactly what the section shows. In long-standing type 2 diabetes the islets are still present but their functional beta-cell mass is reduced, which is why glycemia drifts upward on metformin alone.<br> <b>Why glimepiride</b> — beta cells sense glucose through metabolism: glucose enters via GLUT2, is phosphorylated by glucokinase, and the resulting rise in ATP/ADP closes the <b>ATP-sensitive potassium channel (Kir6.2 + SUR1)</b>. The membrane depolarizes, voltage-gated calcium channels open and calcium triggers exocytosis of insulin granules. Sulfonylureas bind the SUR1 subunit and close the same channel <b>pharmacologically, regardless of glucose</b>, so they raise insulin secretion even when glucose is normal — the reason they cause hypoglycemia and weight gain and require residual beta cells to work.<br> <b>Why not the others</b> — metformin lowers hepatic gluconeogenesis (AMPK activation, mitochondrial complex I and glycerophosphate dehydrogenase inhibition) and improves peripheral insulin sensitivity; empagliflozin blocks SGLT2 in the proximal renal tubule so glucose is excreted; pioglitazone activates PPAR-γ in adipocytes and reprograms lipid handling; acarbose inhibits α-glucosidase at the intestinal brush border and slows carbohydrate absorption. Incretin drugs (GLP-1 receptor agonists, DPP-4 inhibitors) do act on beta cells, but through the GLP-1 receptor and cAMP in a <b>glucose-dependent</b> way, and they are not among the options."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Drug</th><th style=\"width:26%\">Target cell / site</th><th style=\"width:30%\">Mechanism</th><th>Characteristic effects</th></tr></thead><tbody> <tr><td><b>Glimepiride (answer)</b></td><td><b>pancreatic beta cell</b></td><td><b>closes K-ATP channel (SUR1) → depolarization → Ca2+ influx → insulin release</b></td><td><b>hypoglycemia, weight gain; needs residual beta cells</b></td></tr> <tr><td>Metformin (closest wrong answer)</td><td>hepatocyte (and muscle)</td><td>↓ gluconeogenesis, ↑ insulin sensitivity</td><td>no hypoglycemia, weight neutral, GI upset, lactic acidosis with renal failure</td></tr> <tr><td>Empagliflozin</td><td>proximal tubule</td><td>SGLT2 inhibition → glycosuria</td><td>weight and BP loss, genital infections, euglycemic DKA</td></tr> <tr><td>Pioglitazone</td><td>adipocyte nucleus</td><td>PPAR-γ agonist → insulin sensitization</td><td>edema, weight gain, heart failure, fractures</td></tr> <tr><td>Acarbose</td><td>intestinal brush border</td><td>α-glucosidase inhibition</td><td>flatulence, lowers postprandial glucose only</td></tr> </tbody></table> The <b>closest wrong answer is metformin</b>: it is her current drug and the most familiar one, but it lowers glucose by acting on the liver, not on the islet. The discriminator is the question's wording — <b>'acts directly on the brown-stained cells'</b> — which requires recognizing the brown cluster as insulin-positive beta cells and matching it to the one drug whose receptor (SUR1) sits on that cell. If the question asked which drug acts on the proximal tubule, empagliflozin would be the answer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Metformin is the drug she already takes and the usual first-line agent, but it lowers glucose by suppressing hepatic gluconeogenesis and improving insulin sensitivity; it does not stimulate beta cells and does not cause hypoglycemia on its own. This option would be correct if the question asked which drug acts on hepatocytes.\n(C) Empagliflozin inhibits SGLT2 in the proximal renal tubule so that filtered glucose is excreted in the urine; it lowers glucose independently of insulin and of the beta cell. This option would be correct if the question asked which drug acts on the kidney or which drug reduces heart-failure hospitalization.\n(D) Pioglitazone is a PPAR-γ agonist acting in adipocyte nuclei to redistribute lipid and increase insulin sensitivity in muscle and liver; it has no direct effect on insulin secretion. This option would be correct if the question asked which drug acts on adipose tissue or which causes edema and heart failure.\n(E) Acarbose inhibits α-glucosidase at the intestinal brush border, delaying carbohydrate digestion and blunting postprandial glucose peaks; it never reaches the islet. This option would be correct if the question asked which drug acts in the intestinal lumen or which causes flatulence as its main adverse effect."
+   },
+   {
+    "k": "함정",
+    "v": "The brown cluster is not 'pancreas' in general — it is the islet, and insulin-positive means beta cells. Match the cell to the receptor: sulfonylureas bind SUR1 on the beta cell; metformin, SGLT2 inhibitors, glitazones and acarbose all work somewhere else."
+   },
+   {
+    "k": "학습목표",
+    "v": "췌장 면역조직화학에서 인슐린 양성 세포군을 랑게르한스섬의 베타세포로 알아보고, 베타세포에 직접 작용해 인슐린 분비를 늘리는 약(설폰요소제)을 간·콩팥·지방·장에 작용하는 약과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas tissue IHC: INS antibody, pancreas — pancreatic endocrine cells 'high', exocrine glandular cells 'not detected' (pathologist annotation, Grade B; tissue identity Grade A); teacher-only: 73 F · 작성자 판독(2026-09-20): 선포 조직 음성(파란 대조염색), 오른쪽 아래 랑게르한스섬 세포군 갈색 강양성, 산발적 갈색 세포, 지방 침윤 · Katzung BG. Basic & Clinical Pharmacology, 16th ed., ch. 41 'Pancreatic hormones and antidiabetic drugs' — sulfonylureas bind SUR1 and close the K-ATP channel of the beta cell; mechanisms of metformin, SGLT2 inhibitors, thiazolidinediones, α-glucosidase inhibitors · Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed., ch. 'Endocrine pancreas and pharmacotherapy of diabetes mellitus' · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed., ch. 'Digestive system III: liver, gallbladder, and pancreas' — islets of Langerhans, beta cells ## 출처 Human Protein Atlas, INS / Pancreas (CC BY 4.0), https://images.proteinatlas.org/48/1694_A_2_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "갈색으로 염색된 세포군은 인슐린 양성 베타세포(랑게르한스섬)이고, 베타세포의 K-ATP 통로(SUR1)에 직접 결합해 인슐린 분비를 늘리는 약은 설폰요소제 글리메피리드다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "「brown-stained cells 에 직접 작용」— 메트포르민은 간세포에서 포도당신생을 줄이지 베타세포에 작용하지 않는다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: exocrine acinar tissue negative (blue counterstain), compact cluster of strongly brown cells at the lower right",
+     "why": "인슐린 양성 세포군 = 랑게르한스섬의 베타세포 — 약이 작용해야 할 표적 세포",
+     "also": []
+    },
+    {
+     "item": "stained by immunohistochemistry for insulin",
+     "why": "갈색 = 인슐린을 만드는 세포라는 뜻 — 알파·델타세포가 아니라 베타세포",
+     "also": []
+    },
+    {
+     "item": "acts directly on the brown-stained cells",
+     "why": "간·콩팥·지방·장에 작용하는 약을 제외하고 베타세포 약만 남긴다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum creatinine is 0.9 mg/dL",
+     "why": "콩팥기능 정상 — 설폰요소제·메트포르민 사용 제한 조건이 아니다",
+     "also": []
+    },
+    {
+     "item": "no history of pancreatitis and does not drink alcohol",
+     "why": "만성 췌장염에 의한 이차 당뇨(베타세포 소실) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "treated with metformin for 8 years; hemoglobin A1c is 8.4%",
+     "why": "메트포르민 단독으로 조절되지 않아 추가 약을 고르는 임상 배경 — 베타세포 기능이 남아 있어야 설폰요소제가 듣는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "body mass index is 31 kg/m2",
+     "why": "인슐린 저항성이 큰 2형 당뇨의 전형 — 이 문항의 약 선택 기준은 작용 세포이므로 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "73-year-old woman",
+     "why": "고령에서 설폰요소제의 저혈당 위험이 커지지만, 묻는 것은 작용 부위다",
+     "also": []
+    }
+   ],
+   "summary": "The brown cluster is an insulin-positive islet, i.e., beta cells. Glimepiride closes the beta-cell K-ATP channel (SUR1) and releases insulin directly; metformin (liver), empagliflozin (kidney), pioglitazone (adipocyte) and acarbose (gut) act elsewhere.",
+   "switch": {
+    "choice": "C",
+    "condition": "문항이 「콩팥 근위세뇨관에 작용해 포도당을 소변으로 배출시키는 약」을 물었다면 엠파글리플로진이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0067.jpg",
+   "caption": "Immunohistochemistry (DAB brown, hematoxylin counterstain) of a tissue-microarray core, original magnification (Human Protein Atlas, CC BY 4.0; no cropping or adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000254647-INS/tissue/Pancreas",
+   "asset_id": "HPA-INS_1694_A_2_3",
+   "text": "Human Protein Atlas, INS / Pancreas (CC BY 4.0), https://images.proteinatlas.org/48/1694_A_2_3.jpg"
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0066",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "소아청소년 — 원위 요골 성장판 골절",
+  "type": "소아청소년 — 원위 요골 성장판 골절",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-19",
+  "vignette": "8세 여아가 3주 전 자전거에서 넘어져 오른손을 짚은 뒤 손목이 아파 다른 병원에서 부목을 대고 지내다가, 손목이 조금 휘어 보인다며 부모와 함께 병원에 왔다. 통증은 처음보다 많이 줄었고 손가락 움직임과 감각은 정상이다. 진찰에서 오른쪽 손목 등쪽이 약간 튀어나와 있고 압통은 경미하며 피부 손상은 없다. 오른쪽 손목 측면 단순 X선 사진은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "골간단 절골술로 각형성을 교정한다",
+   "부목을 제거하고 즉시 관절운동을 시작한다",
+   "부목 고정을 유지하며 재형성을 기다리고 성장을 추적한다",
+   "마취 후 도수 정복하고 장상지 석고 고정을 한다",
+   "관혈적 정복과 금속핀 고정을 한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 측면 X선에서 원위 요골 골간단의 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단 쪽에 붙은 채 원위 골편이 배측으로 각형성되어 있으며, 요골 간부 배측을 따라 골막 신생골이 보이고 고정에 따른 골감소가 있다. 성장판을 지나면서 골간단 조각을 동반한 이 형태는 Salter-Harris II형 원위 요골 골절이고, 골막 신생골은 수상 3주가 지나 이미 치유가 진행 중임을 뜻한다. 성장판 골절은 수상 7~10일이 지나면 골절면이 미끄러지지 않고 붙어 있어 도수 정복을 하려면 힘을 가해야 하고, 그 힘이 성장판 연골을 다시 손상시켜 성장 정지를 일으킬 수 있다. 8세 여아는 성장이 4~5년 이상 남아 있고 각형성이 성장판 가까이의 시상면(손목 운동면)에 있으므로 재형성 능력이 크다. 따라서 정복하지 않고 고정을 유지해 유합을 마친 뒤 성장 정지 여부를 추적하는 것이 적절하다.\n- 원리: <b>Salter-Harris 분류</b>는 골절선이 성장판(physis)과 어떤 관계에 있는가로 나눈다. I형은 성장판만 따라 분리, <b>II형은 성장판을 지나다 골간단 쪽으로 꺾여 삼각형 골간단 조각(Thurston-Holland 조각)이 골단에 붙어 있는 형태</b>, III형은 골단을 지나 관절면까지, IV형은 골간단·성장판·골단을 모두 관통, V형은 성장판 압궤다. 원위 요골은 소아 성장판 골절이 가장 흔한 부위이고 그중 II형이 대부분이며, II형은 증식층·비대층 사이의 약한 층을 지나기 때문에 성장을 담당하는 <b>배아층(reserve zone)과 증식층이 골단 쪽에 온전히 남아</b> 예후가 좋다.<br> <b>왜 3주 뒤의 각형성을 정복하지 않는가</b> — 성장판 골절은 첫 며칠은 부드럽게 정복되지만 <b>7~10일이 지나면 골절면에 가골이 자리 잡아</b> 도수 정복에 큰 힘이 든다. 그 힘은 성장판 연골을 다시 갈라 놓고 배아층을 손상시켜 골교(bony bar)와 성장 정지를 만든다. 그래서 늦게 온 II형 골절의 각형성은 「받아들이고 재형성을 기다리는 것」이 원칙이다. 재형성은 (1) 남은 성장 기간이 길수록, (2) 각형성이 성장판에 가까울수록, (3) 각형성이 그 관절의 운동면(손목은 시상면의 굴곡·신전)에 있을수록 잘 되며, 8세 여아의 원위 요골 시상면 각형성은 세 조건을 모두 만족한다 — 10세 미만에서는 시상면 25~30° 까지도 재형성된다. 사진의 골막 신생골(간부 배측을 따라 얇게 덮인 새 뼈)은 이미 유합이 진행 중이라는 증거이고, 골감소는 3주간의 고정에 따른 폐용성 변화다.<br> <b>언제 수술하는가</b> — 성장이 거의 끝난 청소년의 큰 각형성, 정복되지 않는 III·IV형(관절면 단차), 개방골절이나 신경혈관 손상, 그리고 나중에 성장 정지로 변형이 진행될 때(골교 절제·절골술)다. 그 판단은 유합 뒤 6~12개월의 성장판 추적에서 이루어진다.\n- 비교: <table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:42%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>II형, 수상 3주, 8세, 시상면 각형성(정답)</b></td><td><b>골막 신생골로 치유 진행, 성장 4~5년 이상, 성장판 근처 운동면 각형성 → 재형성 기대; 늦은 정복은 성장판 재손상</b></td><td><b>고정 유지 → 유합 후 성장 추적</b></td></tr> <tr><td>같은 골절, 수상 당일~1주(가장 가까운 오답의 조건)</td><td>가골 형성 전, 골절면이 부드럽게 미끄러짐 — 부드러운 정복이 안전</td><td>마취 후 도수 정복 + 석고</td></tr> <tr><td>III·IV형(관절면 단차 ≥ 2 mm)</td><td>관절면 부조화와 성장판 관통 — 해부학적 정복이 필요</td><td>관혈적 정복 + 핀·나사 고정</td></tr> <tr><td>성장이 거의 끝난 청소년의 큰 각형성</td><td>재형성 능력 없음</td><td>정복·고정(필요 시 수술)</td></tr> <tr><td>유합 후 성장 정지로 변형 진행</td><td>골교 형성, 요골 단축·척골 돌출</td><td>골교 절제 또는 절골술</td></tr> </tbody></table> <b>가장 가까운 오답은 「도수 정복 후 석고」</b>다 — 사진에 각형성이 뚜렷해 바로잡고 싶어진다. 갈림길은 <b>수상 후 시간과 남은 성장</b>이다. 7~10일이 지난 성장판 골절을 힘으로 정복하면 성장판을 다시 다치고, 8세 아이의 원위 요골 시상면 각형성은 스스로 곧아진다. 반대로 수상 당일이거나 성장이 끝난 청소년이었다면 정복이 정답이 된다.\n- 오답 이유:\n  - ① 절골술은 성장이 끝나 재형성이 불가능하거나, 성장 정지로 변형이 진행해 기능 장애를 남길 때 정답이 된다. 8세 여아의 성장판 근처 시상면 각형성은 스스로 교정되므로 지금 절골할 대상이 아니다. 유합 후 추적에서 골교와 진행성 변형이 확인되면 이 선지가 맞다.\n  - ② 부목 제거와 즉시 관절운동은 유합이 완료된 뒤의 재활 단계다. 수상 3주는 골막 신생골이 막 생기는 시기로 원위 요골 II형 골절의 보통 고정 기간(4~6주)에 못 미치고, 골감소가 있는 뼈에 하중을 주면 재골절·재전위 위험이 있다. 6주 뒤 압통이 없고 가골이 성숙했다면 이 선지가 정답이 된다.\n  - ④ 도수 정복은 성장판 골절이 아직 미끄러지는 수상 7~10일 이내에 부드럽게 시행할 때 정답이 된다. 3주가 지나 골막 신생골이 생긴 골절을 힘으로 정복하면 성장판 연골을 다시 손상시켜 골교와 성장 정지를 일으킨다. 같은 골절로 수상 당일 왔다면 이 선지가 맞다.\n  - ⑤ 관혈적 정복과 핀 고정은 관절면 단차가 있는 III·IV형, 정복이 유지되지 않는 불안정 골절, 개방골절·신경혈관 손상에서 정답이 된다. 이 골절은 관절면을 침범하지 않은 II형이고 이미 치유 중이며 재형성이 기대되므로 수술로 성장판 주위를 열 이유가 없다.\n- 함정: X선의 각형성만 보고 「정복」을 고르지 않는다. 골막 신생골 = 이미 치유 중, 수상 3주 = 늦은 정복은 성장판을 다시 다친다, 8세 = 재형성이 남아 있다 — 세 가지가 「기다린다」를 가리킨다.\n- 학습목표: 소아 손목 측면 X선에서 성장판을 지나 골간단 조각이 골단에 붙은 Salter-Harris II형 골절과 골막 신생골(치유 중)을 읽고, 수상 3주가 지난 시상면 각형성은 재형성을 기대하며 고정을 유지하고 성장판 손상 위험이 있는 늦은 도수 정복을 피한다\n- 근거·출처: GRAZPEDWRI-DX (Nagy E et al. Sci Data 2022) expert annotation: fracture, periosteal reaction, AO 23r-E/2.1 (distal radius, epiphyseal, Salter-Harris II) — Grade A; teacher-only: 8.7 F, right wrist, lateral, osteopenia flag · 작성자 판독(2026-09-20): 측면, 원위 요골 골간단 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단에 붙은 채 원위 골편 배측 각형성, 요골 간부 배측 골막 신생골, 고정에 따른 골감소 · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — Salter-Harris II distal radius; avoid manipulation after 7–10 days; remodeling potential in children < 10 with sagittal-plane angulation · Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587 · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Common fractures' — physeal fractures, growth arrest risk of late reduction, remodeling\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "측면 X선에서 원위 요골 골간단의 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단 쪽에 붙은 채 원위 골편이 배측으로 각형성되어 있으며, 요골 간부 배측을 따라 골막 신생골이 보이고 고정에 따른 골감소가 있다. 성장판을 지나면서 골간단 조각을 동반한 이 형태는 Salter-Harris II형 원위 요골 골절이고, 골막 신생골은 수상 3주가 지나 이미 치유가 진행 중임을 뜻한다. 성장판 골절은 수상 7~10일이 지나면 골절면이 미끄러지지 않고 붙어 있어 도수 정복을 하려면 힘을 가해야 하고, 그 힘이 성장판 연골을 다시 손상시켜 성장 정지를 일으킬 수 있다. 8세 여아는 성장이 4~5년 이상 남아 있고 각형성이 성장판 가까이의 시상면(손목 운동면)에 있으므로 재형성 능력이 크다. 따라서 정복하지 않고 고정을 유지해 유합을 마친 뒤 성장 정지 여부를 추적하는 것이 적절하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Salter-Harris 분류</b>는 골절선이 성장판(physis)과 어떤 관계에 있는가로 나눈다. I형은 성장판만 따라 분리, <b>II형은 성장판을 지나다 골간단 쪽으로 꺾여 삼각형 골간단 조각(Thurston-Holland 조각)이 골단에 붙어 있는 형태</b>, III형은 골단을 지나 관절면까지, IV형은 골간단·성장판·골단을 모두 관통, V형은 성장판 압궤다. 원위 요골은 소아 성장판 골절이 가장 흔한 부위이고 그중 II형이 대부분이며, II형은 증식층·비대층 사이의 약한 층을 지나기 때문에 성장을 담당하는 <b>배아층(reserve zone)과 증식층이 골단 쪽에 온전히 남아</b> 예후가 좋다.<br> <b>왜 3주 뒤의 각형성을 정복하지 않는가</b> — 성장판 골절은 첫 며칠은 부드럽게 정복되지만 <b>7~10일이 지나면 골절면에 가골이 자리 잡아</b> 도수 정복에 큰 힘이 든다. 그 힘은 성장판 연골을 다시 갈라 놓고 배아층을 손상시켜 골교(bony bar)와 성장 정지를 만든다. 그래서 늦게 온 II형 골절의 각형성은 「받아들이고 재형성을 기다리는 것」이 원칙이다. 재형성은 (1) 남은 성장 기간이 길수록, (2) 각형성이 성장판에 가까울수록, (3) 각형성이 그 관절의 운동면(손목은 시상면의 굴곡·신전)에 있을수록 잘 되며, 8세 여아의 원위 요골 시상면 각형성은 세 조건을 모두 만족한다 — 10세 미만에서는 시상면 25~30° 까지도 재형성된다. 사진의 골막 신생골(간부 배측을 따라 얇게 덮인 새 뼈)은 이미 유합이 진행 중이라는 증거이고, 골감소는 3주간의 고정에 따른 폐용성 변화다.<br> <b>언제 수술하는가</b> — 성장이 거의 끝난 청소년의 큰 각형성, 정복되지 않는 III·IV형(관절면 단차), 개방골절이나 신경혈관 손상, 그리고 나중에 성장 정지로 변형이 진행될 때(골교 절제·절골술)다. 그 판단은 유합 뒤 6~12개월의 성장판 추적에서 이루어진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:42%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>II형, 수상 3주, 8세, 시상면 각형성(정답)</b></td><td><b>골막 신생골로 치유 진행, 성장 4~5년 이상, 성장판 근처 운동면 각형성 → 재형성 기대; 늦은 정복은 성장판 재손상</b></td><td><b>고정 유지 → 유합 후 성장 추적</b></td></tr> <tr><td>같은 골절, 수상 당일~1주(가장 가까운 오답의 조건)</td><td>가골 형성 전, 골절면이 부드럽게 미끄러짐 — 부드러운 정복이 안전</td><td>마취 후 도수 정복 + 석고</td></tr> <tr><td>III·IV형(관절면 단차 ≥ 2 mm)</td><td>관절면 부조화와 성장판 관통 — 해부학적 정복이 필요</td><td>관혈적 정복 + 핀·나사 고정</td></tr> <tr><td>성장이 거의 끝난 청소년의 큰 각형성</td><td>재형성 능력 없음</td><td>정복·고정(필요 시 수술)</td></tr> <tr><td>유합 후 성장 정지로 변형 진행</td><td>골교 형성, 요골 단축·척골 돌출</td><td>골교 절제 또는 절골술</td></tr> </tbody></table> <b>가장 가까운 오답은 「도수 정복 후 석고」</b>다 — 사진에 각형성이 뚜렷해 바로잡고 싶어진다. 갈림길은 <b>수상 후 시간과 남은 성장</b>이다. 7~10일이 지난 성장판 골절을 힘으로 정복하면 성장판을 다시 다치고, 8세 아이의 원위 요골 시상면 각형성은 스스로 곧아진다. 반대로 수상 당일이거나 성장이 끝난 청소년이었다면 정복이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 절골술은 성장이 끝나 재형성이 불가능하거나, 성장 정지로 변형이 진행해 기능 장애를 남길 때 정답이 된다. 8세 여아의 성장판 근처 시상면 각형성은 스스로 교정되므로 지금 절골할 대상이 아니다. 유합 후 추적에서 골교와 진행성 변형이 확인되면 이 선지가 맞다.\n② 부목 제거와 즉시 관절운동은 유합이 완료된 뒤의 재활 단계다. 수상 3주는 골막 신생골이 막 생기는 시기로 원위 요골 II형 골절의 보통 고정 기간(4~6주)에 못 미치고, 골감소가 있는 뼈에 하중을 주면 재골절·재전위 위험이 있다. 6주 뒤 압통이 없고 가골이 성숙했다면 이 선지가 정답이 된다.\n④ 도수 정복은 성장판 골절이 아직 미끄러지는 수상 7~10일 이내에 부드럽게 시행할 때 정답이 된다. 3주가 지나 골막 신생골이 생긴 골절을 힘으로 정복하면 성장판 연골을 다시 손상시켜 골교와 성장 정지를 일으킨다. 같은 골절로 수상 당일 왔다면 이 선지가 맞다.\n⑤ 관혈적 정복과 핀 고정은 관절면 단차가 있는 III·IV형, 정복이 유지되지 않는 불안정 골절, 개방골절·신경혈관 손상에서 정답이 된다. 이 골절은 관절면을 침범하지 않은 II형이고 이미 치유 중이며 재형성이 기대되므로 수술로 성장판 주위를 열 이유가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "X선의 각형성만 보고 「정복」을 고르지 않는다. 골막 신생골 = 이미 치유 중, 수상 3주 = 늦은 정복은 성장판을 다시 다친다, 8세 = 재형성이 남아 있다 — 세 가지가 「기다린다」를 가리킨다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 손목 측면 X선에서 성장판을 지나 골간단 조각이 골단에 붙은 Salter-Harris II형 골절과 골막 신생골(치유 중)을 읽고, 수상 3주가 지난 시상면 각형성은 재형성을 기대하며 고정을 유지하고 성장판 손상 위험이 있는 늦은 도수 정복을 피한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "GRAZPEDWRI-DX (Nagy E et al. Sci Data 2022) expert annotation: fracture, periosteal reaction, AO 23r-E/2.1 (distal radius, epiphyseal, Salter-Harris II) — Grade A; teacher-only: 8.7 F, right wrist, lateral, osteopenia flag · 작성자 판독(2026-09-20): 측면, 원위 요골 골간단 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단에 붙은 채 원위 골편 배측 각형성, 요골 간부 배측 골막 신생골, 고정에 따른 골감소 · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — Salter-Harris II distal radius; avoid manipulation after 7–10 days; remodeling potential in children < 10 with sagittal-plane angulation · Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587 · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Common fractures' — physeal fractures, growth arrest risk of late reduction, remodeling ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "치유 중인 원위 요골 Salter-Harris II형 골절의 수상 3주 시상면 각형성은 8세에서 재형성되므로 정복하지 않고 고정을 유지하며 성장을 추적한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "영상의 골막 신생골(치유 진행)과 「3주 전」 — 가골이 자리 잡은 성장판 골절을 힘으로 정복하면 성장판을 다시 다친다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단에 붙어 있다",
+     "why": "Salter-Harris II형 — 배아층이 골단 쪽에 남아 예후가 좋은 형태",
+     "also": []
+    },
+    {
+     "item": "영상: 원위 골편의 배측 각형성",
+     "why": "교정할지 판단해야 할 변형 — 시상면(손목 운동면)이라 재형성이 잘 된다",
+     "also": []
+    },
+    {
+     "item": "영상: 요골 간부 배측을 따라 골막 신생골",
+     "why": "이미 유합이 진행 중 — 늦은 정복은 성장판 재손상 위험",
+     "also": []
+    },
+    {
+     "item": "3주 전 자전거에서 넘어져",
+     "why": "성장판 골절의 안전한 정복 시한(7~10일)을 넘겼다",
+     "also": []
+    },
+    {
+     "item": "8세 여아",
+     "why": "성장이 4~5년 이상 남아 재형성 능력이 크다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "손가락 움직임과 감각은 정상",
+     "why": "신경혈관 손상·구획증후군 가능성을 낮춘다 — 응급 수술 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "피부 손상은 없다",
+     "why": "개방골절이 아니다 — 수술적 세척·고정 적응이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "통증은 처음보다 많이 줄었고",
+     "why": "치유 경과와 일치하는 자연스러운 배경 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "성장판을 지나 골간단 조각이 골단에 붙은 Salter-Harris II형 원위 요골 골절이 골막 신생골을 보이며 치유 중이다. 수상 3주가 지난 성장판 골절을 힘으로 정복하면 성장 정지 위험이 있고, 8세의 시상면 각형성은 재형성되므로 고정을 유지하고 성장을 추적한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 골절로 수상 당일이나 1주 이내에 왔다면 마취 후 부드러운 도수 정복과 석고 고정이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0066.png",
+   "caption": "오른쪽 손목 측면 단순 X선, 원본 그대로 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0924_1001942350_03_WRI-R2_F008",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0065",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "신경 — 뇌 MRI 시퀀스 판독",
+  "type": "신경 — 뇌 MRI 시퀀스 판독",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-19",
+  "vignette": "A 28-year-old man comes to the physician because of headaches for 3 weeks. The headaches are worse in the morning and are accompanied by nausea. He has no history of seizures or head trauma and takes no medications. He is alert and oriented; visual fields, cranial nerves, strength, sensation, and gait are normal, and there is no papilledema. MRI of the brain is ordered. An axial image at the level of the lateral ventricles, obtained before administration of contrast material, is shown.",
+  "question": "Which of the following pulse sequences was used to obtain this image?",
+  "options": [
+   "T2-weighted fast spin echo",
+   "Fluid-attenuated inversion recovery (FLAIR)",
+   "Diffusion-weighted imaging (DWI)",
+   "Susceptibility-weighted imaging (SWI)",
+   "T1-weighted spin echo"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: On the image the cerebrospinal fluid in the lateral ventricles and sulci is dark, the white matter is brighter than the gray matter, and the subcutaneous fat of the scalp is bright. Dark CSF excludes a T2-weighted image, in which CSF is the brightest structure. FLAIR also suppresses CSF, but on FLAIR the gray matter is brighter than the white matter (the reverse of what is seen here). DWI has low spatial resolution with faint gray-white contrast, and SWI shows dark veins and no such gray-white differentiation. Bright fat, bright white matter, darker gray matter and black CSF are the signature of a T1-weighted image.\n- 원리: MR contrast comes from two tissue time constants. <b>T1</b> is the time for longitudinal magnetization to recover; a T1-weighted image uses a short repetition time and a short echo time, so tissues that recover quickly (fat, white matter with its myelin lipids, methemoglobin, gadolinium-enhanced tissue) are bright and tissues that recover slowly (free water, CSF, edema) are dark. <b>T2</b> is the time for transverse magnetization to decay; a T2-weighted image uses long repetition and echo times, so free water and CSF stay bright while myelinated white matter is darker than gray matter.<br> <b>Why the gray-white pattern is the key</b> — CSF brightness separates T2 from everything else, but T1, FLAIR and DWI all show dark CSF. What separates them is the direction of gray-white contrast. On T1 the myelin-rich white matter is <b>brighter</b> than the cortex; on FLAIR (a T2-weighted image with an inversion pulse timed to null CSF) and on DWI the cortex is brighter than the white matter because their contrast is still T2-based. SWI exaggerates magnetic susceptibility, so veins, blood products and calcification appear black on a gray background without meaningful gray-white differentiation.<br> <b>Why a precontrast T1 is obtained</b> — it is the baseline for the postcontrast T1: intrinsic T1 shortening (fat, blood, melanin, proteinaceous fluid) must be known before enhancement can be attributed to gadolinium. In a young patient with morning headaches and nausea the study is done to look for a mass; on this slice the ventricles are symmetric and there is no midline shift, but a single precontrast slice never excludes a lesion, so the postcontrast T1, T2/FLAIR and diffusion images are read together.\n- 비교: <table><thead><tr><th style=\"width:24%\">Sequence</th><th style=\"width:22%\">CSF</th><th style=\"width:30%\">Gray vs white matter</th><th>Other clues</th></tr></thead><tbody> <tr><td><b>T1-weighted (answer)</b></td><td><b>dark</b></td><td><b>white matter brighter than gray</b></td><td><b>scalp fat bright; baseline for enhancement</b></td></tr> <tr><td>FLAIR (closest wrong answer)</td><td>dark (nulled)</td><td>gray matter brighter than white</td><td>edema and periventricular lesions bright; fat bright</td></tr> <tr><td>T2-weighted</td><td>bright</td><td>gray matter brighter than white</td><td>flow voids in vessels</td></tr> <tr><td>DWI</td><td>dark</td><td>gray slightly brighter; low resolution, distorted</td><td>acute infarct bright (dark on ADC)</td></tr> <tr><td>SWI</td><td>dark to intermediate</td><td>little gray-white contrast</td><td>veins, hemorrhage and calcification black</td></tr> </tbody></table> The <b>closest wrong answer is FLAIR</b> because its CSF is also dark. The discriminator is the <b>direction of gray-white contrast</b>: here the white matter is the brighter tissue, which happens only on T1-weighted images. If the cortex were brighter than the white matter with dark CSF, FLAIR would be the answer; if the CSF were the brightest structure, T2.\n- 오답 이유:\n  - (A) On a T2-weighted image the CSF in the ventricles and sulci is the brightest structure and the cortex is brighter than the white matter. Here the CSF is black, so the image cannot be T2-weighted. This option would be correct if the ventricles were bright white and vessels showed dark flow voids.\n  - (B) FLAIR nulls the CSF signal, so dark ventricles are compatible with it; but FLAIR contrast remains T2-based, so the cortex is brighter than the white matter and edema is conspicuous. Here the white matter is the brighter tissue. This option would be correct if dark CSF were combined with bright cortex and bright periventricular signal.\n  - (C) Diffusion-weighted images are echo-planar acquisitions with low spatial resolution, geometric distortion near the skull base and only faint gray-white contrast, with acute infarcts standing out as bright. The crisp anatomic detail and bright white matter here are not those of DWI. This option would be correct for a blurry image with a bright wedge of restricted diffusion.\n  - (D) Susceptibility-weighted imaging shows cortical veins, blood products and calcification as black structures on a background with little gray-white differentiation. This image shows clear gray-white contrast and no prominent dark veins. This option would be correct if the image were dominated by black linear veins and dark foci of hemorrhage.\n- 함정: Do not stop at 'CSF is dark'. T1, FLAIR and DWI all have dark CSF; look at which tissue is brighter — white matter brighter than cortex means T1, cortex brighter than white matter means a T2-based sequence (FLAIR, DWI).\n- 학습목표: 뇌 MRI 축상면에서 뇌척수액·회질·백질의 상대 신호로 T1 강조영상을 T2·FLAIR·DWI·SWI 와 구분한다\n- 근거·출처: TCIA UPENN-GBM series description: 'AX T1 PRE' (precontrast T1-weighted axial) — Grade A for sequence identity (acquisition metadata); teacher-only: patient in a glioblastoma cohort, 28 M, this slice at ventricular level without visible mass · 작성자 판독(2026-09-20): 조영 전 T1 축상, 가쪽뇌실 몸통·삼각부 높이, 뇌척수액 검고 백질이 회질보다 밝음, 대칭, 이 단면에 종괴효과·중심선 이동 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Introduction to brain imaging' — T1: CSF dark, white matter bright; T2/FLAIR: gray matter brighter than white; DWI/SWI characteristics · Bitar R et al. MR pulse sequences: what every radiologist wants to know but is afraid to ask. RadioGraphics 2006;26:513 · Blumenfeld H. Neuroanatomy through Clinical Cases, 3rd ed., ch. 4 'Neuroimaging' — recognizing T1 vs T2 vs FLAIR\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …33765516 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On the image the cerebrospinal fluid in the lateral ventricles and sulci is dark, the white matter is brighter than the gray matter, and the subcutaneous fat of the scalp is bright. Dark CSF excludes a T2-weighted image, in which CSF is the brightest structure. FLAIR also suppresses CSF, but on FLAIR the gray matter is brighter than the white matter (the reverse of what is seen here). DWI has low spatial resolution with faint gray-white contrast, and SWI shows dark veins and no such gray-white differentiation. Bright fat, bright white matter, darker gray matter and black CSF are the signature of a T1-weighted image."
+   },
+   {
+    "k": "원리",
+    "v": "MR contrast comes from two tissue time constants. <b>T1</b> is the time for longitudinal magnetization to recover; a T1-weighted image uses a short repetition time and a short echo time, so tissues that recover quickly (fat, white matter with its myelin lipids, methemoglobin, gadolinium-enhanced tissue) are bright and tissues that recover slowly (free water, CSF, edema) are dark. <b>T2</b> is the time for transverse magnetization to decay; a T2-weighted image uses long repetition and echo times, so free water and CSF stay bright while myelinated white matter is darker than gray matter.<br> <b>Why the gray-white pattern is the key</b> — CSF brightness separates T2 from everything else, but T1, FLAIR and DWI all show dark CSF. What separates them is the direction of gray-white contrast. On T1 the myelin-rich white matter is <b>brighter</b> than the cortex; on FLAIR (a T2-weighted image with an inversion pulse timed to null CSF) and on DWI the cortex is brighter than the white matter because their contrast is still T2-based. SWI exaggerates magnetic susceptibility, so veins, blood products and calcification appear black on a gray background without meaningful gray-white differentiation.<br> <b>Why a precontrast T1 is obtained</b> — it is the baseline for the postcontrast T1: intrinsic T1 shortening (fat, blood, melanin, proteinaceous fluid) must be known before enhancement can be attributed to gadolinium. In a young patient with morning headaches and nausea the study is done to look for a mass; on this slice the ventricles are symmetric and there is no midline shift, but a single precontrast slice never excludes a lesion, so the postcontrast T1, T2/FLAIR and diffusion images are read together."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Sequence</th><th style=\"width:22%\">CSF</th><th style=\"width:30%\">Gray vs white matter</th><th>Other clues</th></tr></thead><tbody> <tr><td><b>T1-weighted (answer)</b></td><td><b>dark</b></td><td><b>white matter brighter than gray</b></td><td><b>scalp fat bright; baseline for enhancement</b></td></tr> <tr><td>FLAIR (closest wrong answer)</td><td>dark (nulled)</td><td>gray matter brighter than white</td><td>edema and periventricular lesions bright; fat bright</td></tr> <tr><td>T2-weighted</td><td>bright</td><td>gray matter brighter than white</td><td>flow voids in vessels</td></tr> <tr><td>DWI</td><td>dark</td><td>gray slightly brighter; low resolution, distorted</td><td>acute infarct bright (dark on ADC)</td></tr> <tr><td>SWI</td><td>dark to intermediate</td><td>little gray-white contrast</td><td>veins, hemorrhage and calcification black</td></tr> </tbody></table> The <b>closest wrong answer is FLAIR</b> because its CSF is also dark. The discriminator is the <b>direction of gray-white contrast</b>: here the white matter is the brighter tissue, which happens only on T1-weighted images. If the cortex were brighter than the white matter with dark CSF, FLAIR would be the answer; if the CSF were the brightest structure, T2."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) On a T2-weighted image the CSF in the ventricles and sulci is the brightest structure and the cortex is brighter than the white matter. Here the CSF is black, so the image cannot be T2-weighted. This option would be correct if the ventricles were bright white and vessels showed dark flow voids.\n(B) FLAIR nulls the CSF signal, so dark ventricles are compatible with it; but FLAIR contrast remains T2-based, so the cortex is brighter than the white matter and edema is conspicuous. Here the white matter is the brighter tissue. This option would be correct if dark CSF were combined with bright cortex and bright periventricular signal.\n(C) Diffusion-weighted images are echo-planar acquisitions with low spatial resolution, geometric distortion near the skull base and only faint gray-white contrast, with acute infarcts standing out as bright. The crisp anatomic detail and bright white matter here are not those of DWI. This option would be correct for a blurry image with a bright wedge of restricted diffusion.\n(D) Susceptibility-weighted imaging shows cortical veins, blood products and calcification as black structures on a background with little gray-white differentiation. This image shows clear gray-white contrast and no prominent dark veins. This option would be correct if the image were dominated by black linear veins and dark foci of hemorrhage."
+   },
+   {
+    "k": "함정",
+    "v": "Do not stop at 'CSF is dark'. T1, FLAIR and DWI all have dark CSF; look at which tissue is brighter — white matter brighter than cortex means T1, cortex brighter than white matter means a T2-based sequence (FLAIR, DWI)."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌 MRI 축상면에서 뇌척수액·회질·백질의 상대 신호로 T1 강조영상을 T2·FLAIR·DWI·SWI 와 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA UPENN-GBM series description: 'AX T1 PRE' (precontrast T1-weighted axial) — Grade A for sequence identity (acquisition metadata); teacher-only: patient in a glioblastoma cohort, 28 M, this slice at ventricular level without visible mass · 작성자 판독(2026-09-20): 조영 전 T1 축상, 가쪽뇌실 몸통·삼각부 높이, 뇌척수액 검고 백질이 회질보다 밝음, 대칭, 이 단면에 종괴효과·중심선 이동 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Introduction to brain imaging' — T1: CSF dark, white matter bright; T2/FLAIR: gray matter brighter than white; DWI/SWI characteristics · Bitar R et al. MR pulse sequences: what every radiologist wants to know but is afraid to ask. RadioGraphics 2006;26:513 · Blumenfeld H. Neuroanatomy through Clinical Cases, 3rd ed., ch. 4 'Neuroimaging' — recognizing T1 vs T2 vs FLAIR ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …33765516 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "뇌척수액이 검고 백질이 회질보다 밝으며 두피 지방이 밝은 신호 조합은 T1 강조영상에서만 나타난다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "회질·백질 대비의 방향 — FLAIR 도 뇌척수액이 검지만 회질이 백질보다 밝고, 여기서는 백질이 더 밝다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: cerebrospinal fluid in the lateral ventricles and sulci is dark",
+     "why": "T2 강조영상을 제외한다(T2 에서는 CSF 가 가장 밝다)",
+     "also": []
+    },
+    {
+     "item": "영상: white matter brighter than the gray matter",
+     "why": "T1 강조영상의 결정적 특징 — FLAIR·DWI 는 회질이 더 밝다",
+     "also": []
+    },
+    {
+     "item": "영상: bright subcutaneous fat of the scalp, crisp anatomic detail",
+     "why": "짧은 T1 의 지방이 밝고 해상도가 높다 — 에코평면 DWI 가 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "obtained before administration of contrast material",
+     "why": "조영 후 T1 과 구분되는 조건 — 혈관·경막의 조영증강을 근거로 삼지 않는다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "worse in the morning and are accompanied by nausea",
+     "why": "두개내압 상승을 시사해 MRI 를 찍는 이유가 되지만 시퀀스 판단에는 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "there is no papilledema",
+     "why": "검사 시행 배경 — 이 문항의 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "28-year-old man",
+     "why": "젊은 환자의 두통 정밀검사 — 시퀀스 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "Dark CSF excludes T2; among the dark-CSF sequences, white matter brighter than cortex identifies a T1-weighted image (FLAIR and DWI show the reverse). Scalp fat is bright and detail is crisp, unlike echo-planar DWI.",
+   "switch": {
+    "choice": "B",
+    "condition": "뇌척수액이 검으면서 피질이 백질보다 밝고 뇌실 주위 백질이 밝게 보였다면 FLAIR 가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0065.png",
+   "caption": "Axial MRI of the brain at the level of the lateral ventricles, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.225203594846287546804933763461833765516",
+   "asset_id": "TCIA-UPENN_GBM-42512401545728",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …33765516"
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0064",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "응급·중환자 — 패혈성 쇼크 초기 소생",
+  "type": "응급·중환자 — 패혈성 쇼크 초기 소생",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-19",
+  "vignette": "55세 남자가 5일 전부터 발열과 기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압으로 암로디핀을 복용하며 심장병 병력은 없다. 혈압 82/48 mmHg, 맥박 122회/분, 호흡 32회/분, 체온 39.1℃이고, 비재호흡마스크 15 L/분에서 산소포화도 92% 이다. 양쪽 폐에서 거품소리가 들리고 경정맥 팽대와 다리 부종은 없다. 혈액검사: 백혈구 18,500/μL, 젖산 4.2 mmol/L, 크레아티닌 1.6 mg/dL. 침상 심초음파에서 좌심실 수축은 정상이고 하대정맥은 가늘며 호흡에 따라 잘 허탈된다. 이동식 흉부 X선 사진은 그림과 같다.",
+  "question": "혈액배양 채취와 항생제 투여를 시작하면서 함께 해야 할 처치로 가장 적절한 것은?",
+  "options": [
+   "정질액 30 mL/kg 급속 정주",
+   "노르에피네프린 지속 정주 시작",
+   "하이드로코르티손 200 mg/일 정주",
+   "푸로세미드 40 mg 정주",
+   "5% 알부민 500 mL 정주"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐야에 폐문 주위와 중·하부에 우세한 미만성 흐린 간유리·반점상 음영이 있고 기흉이나 큰 흉수는 없다. 발열·기침 5일에 이어 나타난 양쪽 폐렴이 감염원이고, 저혈압(82/48)·빈맥·빈호흡·젖산 4.2 mmol/L·크레아티닌 상승은 패혈증에 의한 장기 관류 저하, 즉 패혈성 쇼크를 뜻한다. 경정맥 팽대와 부종이 없고 좌심실 수축이 정상이며 하대정맥이 가늘고 잘 허탈되므로 심장성 폐부종·용적 과부하가 아니라 혈관 확장과 모세혈관 누출로 유효 순환 혈액량이 모자란 상태다. 패혈증 초기 소생의 첫 처치는 3시간 안에 정질액 30 mL/kg 를 급속 정주하는 것이며, 그래도 평균동맥압 65 mmHg 에 못 미치면 노르에피네프린을 더한다.\n- 원리: 패혈성 쇼크는 감염에 대한 숙주 반응이 조절을 잃어 <b>혈관이 확장되고 모세혈관 투과성이 커지며 혈관 내 용적이 조직 사이로 새어 나가는</b> 분포성 쇼크다. 심장은 대개 처음에는 정상 이상으로 뛰지만(빈맥·정상 좌심실 수축), 되돌아오는 정맥 환류가 모자라 심박출량과 조직 관류가 떨어진다. 젖산이 2 mmol/L 를 넘고 승압제 없이 평균동맥압 65 mmHg 를 유지하지 못하면 Sepsis-3 정의의 패혈성 쇼크이며, 이 환자는 젖산 4.2 에 수축기 혈압 82 로 그 기준을 넘는다.<br> <b>왜 수액이 먼저인가</b> — 쇼크의 기전이 「용적 부족」이므로 관류를 회복하는 첫 단계는 빈 혈관을 채우는 것이다. Surviving Sepsis Campaign 은 저혈압 또는 젖산 ≥ 4 mmol/L 인 패혈증에서 <b>3시간 안에 정질액 30 mL/kg</b> 를 주고, 그 뒤에는 동적 지표(하대정맥 허탈, 수동 하지 거상 반응, 젖산 추이)로 추가 수액을 결정하라고 권고한다. 심초음파의 가늘고 잘 허탈되는 하대정맥은 수액에 반응할 가능성이 높다는 신호이고, 정상 좌심실 수축과 경정맥 팽대 없음은 수액을 줘도 폐부종으로 악화될 위험이 낮다는 뜻이다. 양쪽 폐 음영은 폐렴(감염원)이지 심장성 부종이 아니므로 이뇨제는 관류를 더 떨어뜨린다.<br> <b>승압제·스테로이드의 자리</b> — 노르에피네프린은 수액을 주는 중에도 평균동맥압이 65 미만이면 <b>병행</b>해서 시작하는 약이지 수액을 대신하지 않는다. 하이드로코르티손은 충분한 수액과 승압제(노르에피네프린 ≥ 0.25 μg/kg/분, 4시간 이상)에도 혈압이 유지되지 않을 때 더한다. 알부민은 정질액을 대량으로 준 뒤에 고려하는 보조 수액이며 초기 소생의 1차 수액이 아니다(SAFE·ALBIOS 에서 사망률 이득 없음).\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:44%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>정질액 30 mL/kg 급속 정주(정답)</b></td><td><b>패혈증 + 저혈압 또는 젖산 ≥ 4 — 소생의 첫 단계(3시간 내)</b></td><td><b>혈압 82/48, 젖산 4.2, 하대정맥 허탈 → 수액 반응 기대</b></td></tr> <tr><td>노르에피네프린(가장 가까운 오답)</td><td>수액 중·후에도 평균동맥압 &lt; 65 — 수액과 병행하되 대체하지 않는다</td><td>아직 수액 전 — 채우지 않고 조이면 관류가 더 나빠진다</td></tr> <tr><td>하이드로코르티손</td><td>수액 + 승압제로도 혈압 불안정(불응성 쇼크)</td><td>순서상 아직</td></tr> <tr><td>푸로세미드</td><td>심장성 폐부종·용적 과부하(경정맥 팽대, BNP 상승, 좌심실 기능 저하)</td><td>좌심실 정상, 경정맥 팽대 없음 — 오히려 금기에 가깝다</td></tr> <tr><td>5% 알부민</td><td>정질액 대량 투여 후 추가 수액이 필요할 때의 보조</td><td>1차 수액이 아니다</td></tr> </tbody></table> <b>가장 가까운 오답은 「노르에피네프린 먼저」</b>다 — 혈압이 매우 낮아 보이면 승압제를 떠올리기 쉽다. 갈림길은 <b>혈관 내 용적이 채워졌는가</b>이다. 가늘고 허탈되는 하대정맥과 정상 좌심실은 「빈 혈관」을 말하므로 수액이 먼저이고, 30 mL/kg 를 주는 중에도 평균동맥압 65 에 못 미치면 그때 노르에피네프린을 병행한다. 반대로 좌심실 수축이 나쁘고 경정맥이 팽대되어 있었다면 수액 대신 승압제·강심제와 이뇨제 쪽으로 방향이 바뀐다.\n- 오답 이유:\n  - ② 노르에피네프린은 정질액 30 mL/kg 를 주는 중에도 평균동맥압이 65 mmHg 에 못 미칠 때 수액과 병행해 시작하는 약이다. 빈 혈관을 채우지 않고 먼저 조이면 조직 관류가 더 나빠진다. 수액 투여 후에도 저혈압이 지속되거나 수액을 줄 수 없는 심부전이 있을 때 이 선지가 정답이 된다.\n  - ③ 하이드로코르티손은 충분한 수액과 노르에피네프린 0.25 μg/kg/분 이상을 4시간 이상 써도 혈압이 유지되지 않는 불응성 패혈성 쇼크에 더하는 약이다. 아직 수액도 승압제도 시작하지 않은 시점에는 순서가 맞지 않는다. 승압제 용량이 계속 올라가는 환자라면 이 선지가 정답이 된다.\n  - ④ 푸로세미드는 심장성 폐부종·용적 과부하에서 정답이 된다. 이 환자는 경정맥 팽대와 부종이 없고 좌심실 수축이 정상이며 하대정맥이 가늘고 허탈되므로 용적이 모자란 상태다. 이뇨제는 혈압과 관류를 더 떨어뜨린다. BNP 가 높고 좌심실 기능이 나쁜 폐부종이라면 이 선지가 맞다.\n  - ⑤ 알부민은 정질액을 대량으로 준 뒤 추가 수액이 필요할 때 고려하는 보조 수액이며 초기 소생의 1차 수액이 아니다(SAFE·ALBIOS 에서 정질액 대비 사망률 이득 없음). 이미 정질액 수 리터를 받고도 수액 반응이 남아 있으면서 부종이 걱정될 때 이 선지가 정답이 된다.\n- 함정: 혈압이 82/48 이라고 승압제부터 떠올리지 않는다. 심초음파의 가늘고 허탈되는 하대정맥과 정상 좌심실이 「빈 혈관」을 말한다 — 채우고(30 mL/kg), 그래도 안 되면 조인다(노르에피네프린).\n- 학습목표: 폐렴에서 비롯한 패혈성 쇼크(저혈압·젖산 4 mmol/L 이상)를 알아보고, 심장성 폐부종을 배제한 뒤 초기 소생의 첫 처치로 정질액 30 mL/kg 급속 정주를 선택한다\n- 근거·출처: TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 55 M · 작성자 판독(2026-09-20): 이동식 AP, 양쪽 폐야 미만성 흐린 간유리·반점상 음영(폐문 주위·중하부 우세), 폐용적 작음, 기흉·큰 흉수 없음, 전극 3개·선 1개, 번인 문자 없음 · Evans L et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Crit Care Med 2021;49:e1063 — 30 mL/kg crystalloid within 3 h for hypotension or lactate ≥ 4; norepinephrine first-line vasopressor; hydrocortisone for ongoing vasopressor requirement · Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA 2016;315:801 — septic shock: vasopressor for MAP ≥ 65 and lactate > 2 despite resuscitation · Harrison's Principles of Internal Medicine 21st ed., ch. 'Sepsis and septic shock'; Tintinalli's Emergency Medicine 9th ed., ch. 'Septic shock'\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …34816003 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐야에 폐문 주위와 중·하부에 우세한 미만성 흐린 간유리·반점상 음영이 있고 기흉이나 큰 흉수는 없다. 발열·기침 5일에 이어 나타난 양쪽 폐렴이 감염원이고, 저혈압(82/48)·빈맥·빈호흡·젖산 4.2 mmol/L·크레아티닌 상승은 패혈증에 의한 장기 관류 저하, 즉 패혈성 쇼크를 뜻한다. 경정맥 팽대와 부종이 없고 좌심실 수축이 정상이며 하대정맥이 가늘고 잘 허탈되므로 심장성 폐부종·용적 과부하가 아니라 혈관 확장과 모세혈관 누출로 유효 순환 혈액량이 모자란 상태다. 패혈증 초기 소생의 첫 처치는 3시간 안에 정질액 30 mL/kg 를 급속 정주하는 것이며, 그래도 평균동맥압 65 mmHg 에 못 미치면 노르에피네프린을 더한다."
+   },
+   {
+    "k": "원리",
+    "v": "패혈성 쇼크는 감염에 대한 숙주 반응이 조절을 잃어 <b>혈관이 확장되고 모세혈관 투과성이 커지며 혈관 내 용적이 조직 사이로 새어 나가는</b> 분포성 쇼크다. 심장은 대개 처음에는 정상 이상으로 뛰지만(빈맥·정상 좌심실 수축), 되돌아오는 정맥 환류가 모자라 심박출량과 조직 관류가 떨어진다. 젖산이 2 mmol/L 를 넘고 승압제 없이 평균동맥압 65 mmHg 를 유지하지 못하면 Sepsis-3 정의의 패혈성 쇼크이며, 이 환자는 젖산 4.2 에 수축기 혈압 82 로 그 기준을 넘는다.<br> <b>왜 수액이 먼저인가</b> — 쇼크의 기전이 「용적 부족」이므로 관류를 회복하는 첫 단계는 빈 혈관을 채우는 것이다. Surviving Sepsis Campaign 은 저혈압 또는 젖산 ≥ 4 mmol/L 인 패혈증에서 <b>3시간 안에 정질액 30 mL/kg</b> 를 주고, 그 뒤에는 동적 지표(하대정맥 허탈, 수동 하지 거상 반응, 젖산 추이)로 추가 수액을 결정하라고 권고한다. 심초음파의 가늘고 잘 허탈되는 하대정맥은 수액에 반응할 가능성이 높다는 신호이고, 정상 좌심실 수축과 경정맥 팽대 없음은 수액을 줘도 폐부종으로 악화될 위험이 낮다는 뜻이다. 양쪽 폐 음영은 폐렴(감염원)이지 심장성 부종이 아니므로 이뇨제는 관류를 더 떨어뜨린다.<br> <b>승압제·스테로이드의 자리</b> — 노르에피네프린은 수액을 주는 중에도 평균동맥압이 65 미만이면 <b>병행</b>해서 시작하는 약이지 수액을 대신하지 않는다. 하이드로코르티손은 충분한 수액과 승압제(노르에피네프린 ≥ 0.25 μg/kg/분, 4시간 이상)에도 혈압이 유지되지 않을 때 더한다. 알부민은 정질액을 대량으로 준 뒤에 고려하는 보조 수액이며 초기 소생의 1차 수액이 아니다(SAFE·ALBIOS 에서 사망률 이득 없음)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:44%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>정질액 30 mL/kg 급속 정주(정답)</b></td><td><b>패혈증 + 저혈압 또는 젖산 ≥ 4 — 소생의 첫 단계(3시간 내)</b></td><td><b>혈압 82/48, 젖산 4.2, 하대정맥 허탈 → 수액 반응 기대</b></td></tr> <tr><td>노르에피네프린(가장 가까운 오답)</td><td>수액 중·후에도 평균동맥압 &lt; 65 — 수액과 병행하되 대체하지 않는다</td><td>아직 수액 전 — 채우지 않고 조이면 관류가 더 나빠진다</td></tr> <tr><td>하이드로코르티손</td><td>수액 + 승압제로도 혈압 불안정(불응성 쇼크)</td><td>순서상 아직</td></tr> <tr><td>푸로세미드</td><td>심장성 폐부종·용적 과부하(경정맥 팽대, BNP 상승, 좌심실 기능 저하)</td><td>좌심실 정상, 경정맥 팽대 없음 — 오히려 금기에 가깝다</td></tr> <tr><td>5% 알부민</td><td>정질액 대량 투여 후 추가 수액이 필요할 때의 보조</td><td>1차 수액이 아니다</td></tr> </tbody></table> <b>가장 가까운 오답은 「노르에피네프린 먼저」</b>다 — 혈압이 매우 낮아 보이면 승압제를 떠올리기 쉽다. 갈림길은 <b>혈관 내 용적이 채워졌는가</b>이다. 가늘고 허탈되는 하대정맥과 정상 좌심실은 「빈 혈관」을 말하므로 수액이 먼저이고, 30 mL/kg 를 주는 중에도 평균동맥압 65 에 못 미치면 그때 노르에피네프린을 병행한다. 반대로 좌심실 수축이 나쁘고 경정맥이 팽대되어 있었다면 수액 대신 승압제·강심제와 이뇨제 쪽으로 방향이 바뀐다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 노르에피네프린은 정질액 30 mL/kg 를 주는 중에도 평균동맥압이 65 mmHg 에 못 미칠 때 수액과 병행해 시작하는 약이다. 빈 혈관을 채우지 않고 먼저 조이면 조직 관류가 더 나빠진다. 수액 투여 후에도 저혈압이 지속되거나 수액을 줄 수 없는 심부전이 있을 때 이 선지가 정답이 된다.\n③ 하이드로코르티손은 충분한 수액과 노르에피네프린 0.25 μg/kg/분 이상을 4시간 이상 써도 혈압이 유지되지 않는 불응성 패혈성 쇼크에 더하는 약이다. 아직 수액도 승압제도 시작하지 않은 시점에는 순서가 맞지 않는다. 승압제 용량이 계속 올라가는 환자라면 이 선지가 정답이 된다.\n④ 푸로세미드는 심장성 폐부종·용적 과부하에서 정답이 된다. 이 환자는 경정맥 팽대와 부종이 없고 좌심실 수축이 정상이며 하대정맥이 가늘고 허탈되므로 용적이 모자란 상태다. 이뇨제는 혈압과 관류를 더 떨어뜨린다. BNP 가 높고 좌심실 기능이 나쁜 폐부종이라면 이 선지가 맞다.\n⑤ 알부민은 정질액을 대량으로 준 뒤 추가 수액이 필요할 때 고려하는 보조 수액이며 초기 소생의 1차 수액이 아니다(SAFE·ALBIOS 에서 정질액 대비 사망률 이득 없음). 이미 정질액 수 리터를 받고도 수액 반응이 남아 있으면서 부종이 걱정될 때 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압이 82/48 이라고 승압제부터 떠올리지 않는다. 심초음파의 가늘고 허탈되는 하대정맥과 정상 좌심실이 「빈 혈관」을 말한다 — 채우고(30 mL/kg), 그래도 안 되면 조인다(노르에피네프린)."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐렴에서 비롯한 패혈성 쇼크(저혈압·젖산 4 mmol/L 이상)를 알아보고, 심장성 폐부종을 배제한 뒤 초기 소생의 첫 처치로 정질액 30 mL/kg 급속 정주를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 55 M · 작성자 판독(2026-09-20): 이동식 AP, 양쪽 폐야 미만성 흐린 간유리·반점상 음영(폐문 주위·중하부 우세), 폐용적 작음, 기흉·큰 흉수 없음, 전극 3개·선 1개, 번인 문자 없음 · Evans L et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Crit Care Med 2021;49:e1063 — 30 mL/kg crystalloid within 3 h for hypotension or lactate ≥ 4; norepinephrine first-line vasopressor; hydrocortisone for ongoing vasopressor requirement · Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA 2016;315:801 — septic shock: vasopressor for MAP ≥ 65 and lactate > 2 despite resuscitation · Harrison's Principles of Internal Medicine 21st ed., ch. 'Sepsis and septic shock'; Tintinalli's Emergency Medicine 9th ed., ch. 'Septic shock' ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …34816003 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "폐렴에서 비롯한 저혈압·젖산 4.2 의 패혈성 쇼크이고 심초음파가 용적 부족을 가리키므로 초기 소생은 정질액 30 mL/kg 급속 정주다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "하대정맥이 가늘고 호흡에 따라 잘 허탈되며 좌심실 수축이 정상 — 혈관이 비어 있으니 승압제보다 수액이 먼저다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: 양쪽 폐야의 미만성 흐린 간유리·반점상 음영, 기흉·큰 흉수 없음",
+     "why": "발열·기침 뒤의 양쪽 폐렴 — 패혈증의 감염원을 확인한다",
+     "also": []
+    },
+    {
+     "item": "혈압 82/48 mmHg",
+     "why": "패혈증에 동반된 저혈압 — 초기 소생(30 mL/kg)의 적응",
+     "also": []
+    },
+    {
+     "item": "젖산 4.2 mmol/L",
+     "why": "조직 관류 저하 — 젖산 ≥ 4 는 저혈압이 없어도 30 mL/kg 의 적응이다",
+     "also": []
+    },
+    {
+     "item": "하대정맥은 가늘며 호흡에 따라 잘 허탈된다",
+     "why": "혈관 내 용적 부족·수액 반응 가능성 — 승압제보다 수액이 먼저라는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 수축은 정상",
+     "why": "심장성 쇼크·심장성 폐부종 가능성을 낮춘다 — 이뇨제·강심제 방향이 아니다",
+     "also": []
+    },
+    {
+     "item": "경정맥 팽대와 다리 부종은 없다",
+     "why": "용적 과부하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 1.6 mg/dL",
+     "why": "저관류에 의한 급성 콩팥손상 — 장기부전 진행을 뜻해 소생을 서둘러야 한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고혈압으로 암로디핀을 복용",
+     "why": "평소 혈압이 높았을 가능성 — 82/48 이 더 큰 낙차임을 시사하지만 처치를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "55세 남자",
+     "why": "특별한 면역 저하나 심장 병력이 없는 성인 — 표준 소생 프로토콜 적용",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 폐렴 + 저혈압 + 젖산 4.2 = 패혈성 쇼크. 심초음파가 용적 부족(허탈되는 하대정맥, 정상 좌심실)을 가리키므로 항생제와 함께 정질액 30 mL/kg 를 먼저 주고, 그래도 평균동맥압 65 에 못 미치면 노르에피네프린을 병행한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "정질액 30 mL/kg 를 주는 중에도 평균동맥압이 65 mmHg 에 못 미친다면 노르에피네프린을 병행 시작하는 것이 다음 처치가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0064.png",
+   "caption": "이동식 전후면 흉부 X선, 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·윈도우 조정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1219697340167195638787834816003",
+   "asset_id": "TCIA-COVID19_AR-23161708115489",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …34816003"
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0072",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "약리 — 리튬 중독과 티아지드 상호작용",
+  "type": "약리 — 리튬 중독과 티아지드 상호작용",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-19",
+  "vignette": "46세 여자가 3일 전부터 손이 심하게 떨리고 걸음이 비틀거리며 오늘은 말이 어눌하고 멍하다고 하여 가족과 함께 응급실에 왔다. 양극성장애로 10년째 리튬을 같은 용량으로 복용해 왔고, 3주 전 고혈압으로 히드로클로로티아지드를 새로 처방받았다. 설사나 구토는 없었고 약을 한꺼번에 많이 먹지는 않았다. 혈압 138/86 mmHg, 맥박 58회/분, 체온 37.0℃이다. 의식은 기면 상태이고 거친 진전, 근간대경련, 사지 반사항진, 실조성 보행이 있다. 혈액검사: 혈청 리튬 3.4 mEq/L(치료 범위 0.6~1.2), 나트륨 146 mEq/L, 칼륨 4.0 mEq/L, 크레아티닌 2.1 mg/dL(3개월 전 0.8). 심전도에서 동서맥 외 이상은 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "폴리스티렌설폰산나트륨 경구 투여",
+   "푸로세미드 정주로 이뇨 촉진",
+   "응급 혈액투석",
+   "0.9% 식염수 정주 후 경과관찰",
+   "활성탄 경구 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 용량 변화 없이 10년간 안정적이던 리튬 농도가 히드로클로로티아지드 시작 3주 뒤 3.4 mEq/L 로 올랐다. 티아지드는 원위세뇨관 나트륨 재흡수를 막아 경한 용적 감소를 만들고, 그 보상으로 근위세뇨관이 나트륨과 함께 리튬을 더 많이 재흡수해 리튬 청소율이 25~40 % 떨어진다. 이렇게 서서히 축적되는 만성 중독은 리튬이 조직에 이미 분포해 있어 같은 혈청 농도에서도 급성 과량복용보다 신경독성이 심하다. 기면·근간대경련·반사항진·실조라는 중등도 이상의 신경독성에 크레아티닌 2.1 의 콩팥기능 저하까지 겹쳤으므로, EXTRIP 권고에 따라 콩팥기능이 저하된 상태의 리튬 농도 2.5 초과 또는 의식 저하가 있으면 체외 제거가 필요하다. 리튬은 단백결합이 없고 분포용적이 작은 작은 이온이라 혈액투석으로 효율적으로 제거된다.\n- 원리: 리튬은 <b>나트륨과 같은 경로로 움직이는 1가 양이온</b>이다. 사구체에서 자유롭게 여과된 뒤 근위세뇨관에서 나트륨과 함께 약 80 % 가 재흡수되고, 원위부 재흡수는 적다. 그래서 <b>몸이 나트륨을 아끼려는 상황 — 탈수, 설사·구토, 저염식, 티아지드·ACE 억제제·ARB·NSAID —</b> 은 모두 근위세뇨관의 나트륨(=리튬) 재흡수를 늘려 리튬 농도를 올린다. 티아지드는 원위세뇨관 Na-Cl 공수송체를 막아 경한 용적 감소를 만들고, 그 보상 반응으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 25~40 % 떨어진다. 반면 루프 이뇨제는 헨레고리 두꺼운 오름다리에 작용하고 원위부 리튬 재흡수에는 영향이 작아 상호작용이 덜하다. 치료 범위가 0.6~1.2 로 좁은 약이므로 이 정도 변화가 곧 중독이 된다.<br> <b>왜 만성 중독이 더 위험한가</b> — 급성 과량복용은 혈청 농도가 높아도 리튬이 아직 뇌에 들어가기 전이라 위장 증상이 주가 되고, 농도가 빨리 떨어지면 회복된다. 반면 만성 축적은 혈청과 뇌 조직이 이미 평형에 있어 <b>같은 농도에서 신경독성이 훨씬 심하고</b>, 투석 후에도 조직에서 리튬이 다시 빠져나와 농도가 되오르며 (반동), 소뇌 손상이 영구적으로 남는 SILENT(syndrome of irreversible lithium-effectuated neurotoxicity)로 갈 수 있다. 신경독성이 진행될수록 후유증이 남으므로 빨리 농도를 떨어뜨리는 것이 목표다.<br> <b>혈액투석의 기준(EXTRIP 2015)</b> — 리튬은 분자량 7, 단백결합 0, 분포용적 0.7~0.9 L/kg 로 투석에 이상적인 물질이다. 권고 적응은 (1) 콩팥기능 저하 + 리튬 &gt; 4.0, 또는 (2) 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 무관, 그리고 제안 적응은 (3) 리튬 &gt; 5.0, (4) 착란, (5) 36시간 안에 1.0 미만으로 떨어지지 않을 것으로 예상될 때다. 이 환자는 기면(의식 저하)과 근간대경련·반사항진의 중등도 이상 신경독성에 크레아티닌 2.1 의 콩팥기능 저하가 겹쳐 권고 적응이다. 수액(식염수)은 모든 환자에게 보조로 주지만 콩팥이 이미 나빠진 상태에서 혼자서는 농도를 빠르게 낮추지 못한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:44%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>만성 중독, 신경독성 + 콩팥기능 저하(정답)</b></td><td><b>리튬 3.4, 기면·근간대경련·반사항진·실조, 크레아티닌 2.1 — EXTRIP 권고 적응(의식 저하, 콩팥 저하)</b></td><td><b>응급 혈액투석(+ 식염수 보조), 6시간 뒤 반동 확인 재검</b></td></tr> <tr><td>만성 중독, 경증(가장 가까운 오답의 조건)</td><td>리튬 1.5~2.5, 미세 진전·오심만, 콩팥기능 정상, 의식 명료</td><td>리튬·티아지드 중단, 0.9% 식염수 정주, 6시간마다 농도 추적</td></tr> <tr><td>급성 과량복용, 복용 1~2시간 이내</td><td>서방정 대량 복용, 아직 흡수 중</td><td>전장관 세척(활성탄은 리튬에 흡착되지 않음), 식염수, 농도 추적</td></tr> <tr><td>급성 과량복용, 리튬 &gt; 5.0 또는 증상</td><td>혈청 농도 매우 높음</td><td>혈액투석</td></tr> <tr><td>리튬성 신성 요붕증</td><td>다뇨·고나트륨혈증, 농도 정상~경도 상승</td><td>수분 보충, 아밀로라이드(집합관 ENaC 차단)</td></tr> </tbody></table> <b>가장 가까운 오답은 「식염수 정주 후 경과관찰」</b>이다 — 식염수는 리튬 중독의 기본 처치이고 나트륨 공급이 근위세뇨관 리튬 재흡수를 줄이기 때문이다. 갈림길은 <b>신경독성의 정도와 콩팥기능</b>이다. 의식이 떨어지고 근간대경련·실조가 있으며 크레아티닌이 2.1 이면 식염수만으로는 36시간 안에 농도를 낮추지 못하고 그 사이 소뇌 손상이 굳어진다. 반대로 미세 진전만 있고 의식이 명료하며 콩팥기능이 정상인 경증이라면 약 중단과 식염수·농도 추적이 정답이 된다.\n- 오답 이유:\n  - ① 폴리스티렌설폰산나트륨은 장에서 칼륨을 교환 흡착하는 수지로, 리튬 결합은 미미하고 저칼륨혈증과 장 괴사 위험이 있어 리튬 중독 치료로 권고되지 않는다. 이 환자의 칼륨은 4.0 으로 정상이다. 고칼륨혈증이 있고 다른 제거 수단을 쓸 수 없을 때에 한해 이 선지가 정답이 된다.\n  - ② 푸로세미드는 헨레고리에 작용해 리튬 배설을 약간 늘릴 수 있지만 용적 감소를 일으켜 근위세뇨관 리튬 재흡수를 오히려 늘리고, 콩팥이 이미 손상된 환자에서 급성 콩팥손상을 악화시킨다. 강제 이뇨는 리튬 중독에서 권고되지 않는다. 용적 과부하가 동반된 심부전 환자의 보조 처치로만 이 선지가 정답이 될 수 있다.\n  - ④ 0.9% 식염수는 리튬 중독의 기본 보조 치료이고 나트륨 공급이 근위세뇨관 리튬 재흡수를 줄이지만, 이미 콩팥기능이 떨어진 환자에서 혼자서는 36시간 안에 농도를 낮추지 못하고 그 사이 신경독성이 영구화된다. 리튬 1.5~2.5 에 미세 진전만 있고 의식이 명료하며 콩팥기능이 정상인 경증 만성 중독에서 이 선지가 정답이 된다.\n  - ⑤ 활성탄은 리튬 같은 작은 금속 이온을 흡착하지 못해 리튬 중독에서는 효과가 없다. 게다가 이 환자는 과량 복용이 아니라 3주에 걸친 만성 축적이라 위장관에 제거할 약이 없다. 리튬과 함께 다른 흡착 가능한 약물을 급성으로 과량 복용한 지 1~2시간 이내일 때만 이 선지가 의미가 있다.\n- 함정: 「식염수가 리튬 중독의 기본」에서 멈추지 않는다. 약 상호작용(티아지드 → 근위세뇨관 리튬 재흡수 ↑)으로 생긴 만성 중독은 같은 농도에서 신경독성이 더 심하다 — 의식 저하 + 콩팥기능 저하면 농도가 4 미만이어도 혈액투석이다.\n- 학습목표: 티아지드가 근위세뇨관 리튬 재흡수를 늘려 만성 리튬 중독을 일으키는 기전을 설명하고, 의식 저하·신경독성·콩팥기능 저하를 동반한 리튬 3.4 mEq/L 에서 EXTRIP 기준에 따라 응급 혈액투석을 선택한다\n- 근거·출처: Decker BS et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875 — dialysis recommended with impaired kidney function and [Li] > 4.0, or decreased consciousness/seizures/dysrhythmia regardless of level; suggested if [Li] > 5.0, confusion, or expected time to < 1.0 exceeds 36 h · Katzung BG. Basic & Clinical Pharmacology, 16th ed., ch. 29 'Antipsychotic agents and lithium' — narrow therapeutic range, proximal tubular reabsorption with sodium, thiazide/NSAID/ACE-inhibitor interactions · Goldfrank's Toxicologic Emergencies, 11th ed., ch. 'Lithium' — acute vs chronic toxicity, SILENT, activated charcoal ineffective, whole-bowel irrigation for sustained-release acute ingestion · Haussmann R et al. Treatment of lithium intoxication: facing the need for evidence. Int J Bipolar Disord 2015;3:23 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Poisoning and drug overdose' — lithium",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "용량 변화 없이 10년간 안정적이던 리튬 농도가 히드로클로로티아지드 시작 3주 뒤 3.4 mEq/L 로 올랐다. 티아지드는 원위세뇨관 나트륨 재흡수를 막아 경한 용적 감소를 만들고, 그 보상으로 근위세뇨관이 나트륨과 함께 리튬을 더 많이 재흡수해 리튬 청소율이 25~40 % 떨어진다. 이렇게 서서히 축적되는 만성 중독은 리튬이 조직에 이미 분포해 있어 같은 혈청 농도에서도 급성 과량복용보다 신경독성이 심하다. 기면·근간대경련·반사항진·실조라는 중등도 이상의 신경독성에 크레아티닌 2.1 의 콩팥기능 저하까지 겹쳤으므로, EXTRIP 권고에 따라 콩팥기능이 저하된 상태의 리튬 농도 2.5 초과 또는 의식 저하가 있으면 체외 제거가 필요하다. 리튬은 단백결합이 없고 분포용적이 작은 작은 이온이라 혈액투석으로 효율적으로 제거된다."
+   },
+   {
+    "k": "원리",
+    "v": "리튬은 <b>나트륨과 같은 경로로 움직이는 1가 양이온</b>이다. 사구체에서 자유롭게 여과된 뒤 근위세뇨관에서 나트륨과 함께 약 80 % 가 재흡수되고, 원위부 재흡수는 적다. 그래서 <b>몸이 나트륨을 아끼려는 상황 — 탈수, 설사·구토, 저염식, 티아지드·ACE 억제제·ARB·NSAID —</b> 은 모두 근위세뇨관의 나트륨(=리튬) 재흡수를 늘려 리튬 농도를 올린다. 티아지드는 원위세뇨관 Na-Cl 공수송체를 막아 경한 용적 감소를 만들고, 그 보상 반응으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 25~40 % 떨어진다. 반면 루프 이뇨제는 헨레고리 두꺼운 오름다리에 작용하고 원위부 리튬 재흡수에는 영향이 작아 상호작용이 덜하다. 치료 범위가 0.6~1.2 로 좁은 약이므로 이 정도 변화가 곧 중독이 된다.<br> <b>왜 만성 중독이 더 위험한가</b> — 급성 과량복용은 혈청 농도가 높아도 리튬이 아직 뇌에 들어가기 전이라 위장 증상이 주가 되고, 농도가 빨리 떨어지면 회복된다. 반면 만성 축적은 혈청과 뇌 조직이 이미 평형에 있어 <b>같은 농도에서 신경독성이 훨씬 심하고</b>, 투석 후에도 조직에서 리튬이 다시 빠져나와 농도가 되오르며 (반동), 소뇌 손상이 영구적으로 남는 SILENT(syndrome of irreversible lithium-effectuated neurotoxicity)로 갈 수 있다. 신경독성이 진행될수록 후유증이 남으므로 빨리 농도를 떨어뜨리는 것이 목표다.<br> <b>혈액투석의 기준(EXTRIP 2015)</b> — 리튬은 분자량 7, 단백결합 0, 분포용적 0.7~0.9 L/kg 로 투석에 이상적인 물질이다. 권고 적응은 (1) 콩팥기능 저하 + 리튬 &gt; 4.0, 또는 (2) 의식 저하·경련·생명을 위협하는 부정맥이 있으면 농도와 무관, 그리고 제안 적응은 (3) 리튬 &gt; 5.0, (4) 착란, (5) 36시간 안에 1.0 미만으로 떨어지지 않을 것으로 예상될 때다. 이 환자는 기면(의식 저하)과 근간대경련·반사항진의 중등도 이상 신경독성에 크레아티닌 2.1 의 콩팥기능 저하가 겹쳐 권고 적응이다. 수액(식염수)은 모든 환자에게 보조로 주지만 콩팥이 이미 나빠진 상태에서 혼자서는 농도를 빠르게 낮추지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:44%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>만성 중독, 신경독성 + 콩팥기능 저하(정답)</b></td><td><b>리튬 3.4, 기면·근간대경련·반사항진·실조, 크레아티닌 2.1 — EXTRIP 권고 적응(의식 저하, 콩팥 저하)</b></td><td><b>응급 혈액투석(+ 식염수 보조), 6시간 뒤 반동 확인 재검</b></td></tr> <tr><td>만성 중독, 경증(가장 가까운 오답의 조건)</td><td>리튬 1.5~2.5, 미세 진전·오심만, 콩팥기능 정상, 의식 명료</td><td>리튬·티아지드 중단, 0.9% 식염수 정주, 6시간마다 농도 추적</td></tr> <tr><td>급성 과량복용, 복용 1~2시간 이내</td><td>서방정 대량 복용, 아직 흡수 중</td><td>전장관 세척(활성탄은 리튬에 흡착되지 않음), 식염수, 농도 추적</td></tr> <tr><td>급성 과량복용, 리튬 &gt; 5.0 또는 증상</td><td>혈청 농도 매우 높음</td><td>혈액투석</td></tr> <tr><td>리튬성 신성 요붕증</td><td>다뇨·고나트륨혈증, 농도 정상~경도 상승</td><td>수분 보충, 아밀로라이드(집합관 ENaC 차단)</td></tr> </tbody></table> <b>가장 가까운 오답은 「식염수 정주 후 경과관찰」</b>이다 — 식염수는 리튬 중독의 기본 처치이고 나트륨 공급이 근위세뇨관 리튬 재흡수를 줄이기 때문이다. 갈림길은 <b>신경독성의 정도와 콩팥기능</b>이다. 의식이 떨어지고 근간대경련·실조가 있으며 크레아티닌이 2.1 이면 식염수만으로는 36시간 안에 농도를 낮추지 못하고 그 사이 소뇌 손상이 굳어진다. 반대로 미세 진전만 있고 의식이 명료하며 콩팥기능이 정상인 경증이라면 약 중단과 식염수·농도 추적이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폴리스티렌설폰산나트륨은 장에서 칼륨을 교환 흡착하는 수지로, 리튬 결합은 미미하고 저칼륨혈증과 장 괴사 위험이 있어 리튬 중독 치료로 권고되지 않는다. 이 환자의 칼륨은 4.0 으로 정상이다. 고칼륨혈증이 있고 다른 제거 수단을 쓸 수 없을 때에 한해 이 선지가 정답이 된다.\n② 푸로세미드는 헨레고리에 작용해 리튬 배설을 약간 늘릴 수 있지만 용적 감소를 일으켜 근위세뇨관 리튬 재흡수를 오히려 늘리고, 콩팥이 이미 손상된 환자에서 급성 콩팥손상을 악화시킨다. 강제 이뇨는 리튬 중독에서 권고되지 않는다. 용적 과부하가 동반된 심부전 환자의 보조 처치로만 이 선지가 정답이 될 수 있다.\n④ 0.9% 식염수는 리튬 중독의 기본 보조 치료이고 나트륨 공급이 근위세뇨관 리튬 재흡수를 줄이지만, 이미 콩팥기능이 떨어진 환자에서 혼자서는 36시간 안에 농도를 낮추지 못하고 그 사이 신경독성이 영구화된다. 리튬 1.5~2.5 에 미세 진전만 있고 의식이 명료하며 콩팥기능이 정상인 경증 만성 중독에서 이 선지가 정답이 된다.\n⑤ 활성탄은 리튬 같은 작은 금속 이온을 흡착하지 못해 리튬 중독에서는 효과가 없다. 게다가 이 환자는 과량 복용이 아니라 3주에 걸친 만성 축적이라 위장관에 제거할 약이 없다. 리튬과 함께 다른 흡착 가능한 약물을 급성으로 과량 복용한 지 1~2시간 이내일 때만 이 선지가 의미가 있다."
+   },
+   {
+    "k": "함정",
+    "v": "「식염수가 리튬 중독의 기본」에서 멈추지 않는다. 약 상호작용(티아지드 → 근위세뇨관 리튬 재흡수 ↑)으로 생긴 만성 중독은 같은 농도에서 신경독성이 더 심하다 — 의식 저하 + 콩팥기능 저하면 농도가 4 미만이어도 혈액투석이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "티아지드가 근위세뇨관 리튬 재흡수를 늘려 만성 리튬 중독을 일으키는 기전을 설명하고, 의식 저하·신경독성·콩팥기능 저하를 동반한 리튬 3.4 mEq/L 에서 EXTRIP 기준에 따라 응급 혈액투석을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875 — dialysis recommended with impaired kidney function and [Li] > 4.0, or decreased consciousness/seizures/dysrhythmia regardless of level; suggested if [Li] > 5.0, confusion, or expected time to < 1.0 exceeds 36 h · Katzung BG. Basic & Clinical Pharmacology, 16th ed., ch. 29 'Antipsychotic agents and lithium' — narrow therapeutic range, proximal tubular reabsorption with sodium, thiazide/NSAID/ACE-inhibitor interactions · Goldfrank's Toxicologic Emergencies, 11th ed., ch. 'Lithium' — acute vs chronic toxicity, SILENT, activated charcoal ineffective, whole-bowel irrigation for sustained-release acute ingestion · Haussmann R et al. Treatment of lithium intoxication: facing the need for evidence. Int J Bipolar Disord 2015;3:23 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Poisoning and drug overdose' — lithium"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "티아지드로 유발된 만성 리튬 중독이 기면·근간대경련·반사항진의 신경독성과 크레아티닌 2.1 의 콩팥기능 저하를 동반하므로 EXTRIP 기준에 따라 응급 혈액투석이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "의식 저하(기면)와 콩팥기능 저하 — 식염수만으로는 36시간 안에 농도를 낮추지 못하고 만성 중독의 신경독성은 영구화된다",
+   "steps": 4,
+   "key": [
+    {
+     "item": "혈청 리튬 3.4 mEq/L(치료 범위 0.6~1.2)",
+     "why": "치료 범위의 3배 — 중독 확인",
+     "also": []
+    },
+    {
+     "item": "3주 전 고혈압으로 히드로클로로티아지드를 새로 처방",
+     "why": "근위세뇨관 리튬 재흡수 증가로 청소율 25~40 % 감소 — 만성 축적의 원인",
+     "also": []
+    },
+    {
+     "item": "의식은 기면 상태",
+     "why": "EXTRIP 권고 적응(의식 저하) — 농도와 무관하게 체외 제거",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.1 mg/dL(3개월 전 0.8)",
+     "why": "콩팥기능 저하 — 식염수만으로는 배설을 기대할 수 없고, 리튬 자체가 콩팥손상을 악화시킨다",
+     "also": []
+    },
+    {
+     "item": "거친 진전, 근간대경련, 사지 반사항진, 실조성 보행",
+     "why": "중등도 이상 신경독성 — 소뇌 후유증(SILENT) 위험",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "약을 한꺼번에 많이 먹지는 않았다",
+     "why": "급성 과량복용이 아닌 만성 축적 — 위장관 제거(전장관 세척) 대상이 아니다",
+     "also": []
+    },
+    {
+     "item": "칼륨 4.0 mEq/L",
+     "why": "고칼륨혈증이 없어 양이온 교환수지가 설 자리가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "심전도에서 동서맥 외 이상은 없다",
+     "why": "생명을 위협하는 부정맥은 없지만 서맥은 리튬 심장독성의 초기 신호 — 감시가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "나트륨 146 mEq/L",
+     "why": "경한 고나트륨혈증은 리튬성 요붕증·탈수 배경을 시사하지만 처치 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "46세 여자",
+     "why": "양극성장애로 장기 리튬 치료 중인 성인 — 표준 기준 적용",
+     "also": []
+    }
+   ],
+   "summary": "티아지드 시작 3주 뒤의 리튬 3.4 는 근위세뇨관 재흡수 증가로 인한 만성 중독이다. 기면·근간대경련·실조의 신경독성에 크레아티닌 2.1 의 콩팥기능 저하가 겹쳐 EXTRIP 권고 적응이므로 식염수를 보조로 주면서 응급 혈액투석을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "리튬 1.8 에 미세 진전만 있고 의식이 명료하며 크레아티닌이 정상이었다면 리튬·티아지드 중단과 0.9% 식염수 정주 후 6시간마다 농도 추적이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0071",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "감염 — 고령 세균성 수막염 경험적 치료",
+  "type": "감염 — 고령 세균성 수막염 경험적 치료",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-19",
+  "vignette": "A 64-year-old man is brought to the emergency department because of fever, headache, and confusion for 12 hours. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin; he has no drug allergies. His temperature is 39.4°C, pulse is 110/min, and blood pressure is 142/88 mm Hg. He is drowsy but arousable and has nuchal rigidity; there is no papilledema, rash, or focal neurologic deficit. Blood cultures are obtained. Lumbar puncture shows an opening pressure of 28 cm H2O, leukocyte count 2,100/mm3 (88% neutrophils), protein 240 mg/dL, and glucose 22 mg/dL (serum glucose 160 mg/dL). Gram stain of the cerebrospinal fluid shows no organisms.",
+  "question": "Which of the following is the most appropriate empiric antimicrobial regimen?",
+  "options": [
+   "Ampicillin and gentamicin",
+   "Vancomycin, ceftriaxone, and ampicillin",
+   "Vancomycin and ceftriaxone",
+   "Ceftriaxone and ampicillin",
+   "Vancomycin, cefepime, and metronidazole"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Fever, headache, altered mental status and nuchal rigidity with a neutrophilic pleocytosis, high protein and a CSF-to-serum glucose ratio of 0.14 are acute bacterial meningitis. A negative Gram stain does not narrow the choice, so treatment is empiric and must cover the likely organisms for his age: Streptococcus pneumoniae (ceftriaxone, plus vancomycin because of penicillin- and cephalosporin-resistant strains), Neisseria meningitidis (ceftriaxone) and, because he is older than 50, Listeria monocytogenes, which is intrinsically resistant to cephalosporins and requires ampicillin. Dexamethasone is given with or just before the first dose to reduce hearing loss and mortality in pneumococcal meningitis.\n- 원리: The organisms that cause community-acquired bacterial meningitis change with age and immune status, and the empiric regimen is built to cover all of them until cultures return. In adults 18–50 the causes are <b>Streptococcus pneumoniae</b> and <b>Neisseria meningitidis</b>: a third-generation cephalosporin (ceftriaxone) covers both, and <b>vancomycin</b> is added because 10–20 % of pneumococci have reduced susceptibility to penicillin and some to cephalosporins, and treatment failure in the CSF is unforgiving. After age 50 — and in pregnancy, alcoholism, diabetes, malignancy, corticosteroid use and other cell-mediated immune defects — <b>Listeria monocytogenes</b> joins the list. Listeria is a facultative intracellular Gram-positive rod that is <b>intrinsically resistant to all cephalosporins</b> (its penicillin-binding protein 3 has low affinity for them), so <b>ampicillin</b> (or penicillin G) must be added; gentamicin is combined with ampicillin for synergy once Listeria is proven.<br> <b>Why the CSF profile matters</b> — a neutrophil-predominant pleocytosis above 1,000/mm3, protein above 100 mg/dL and a CSF/serum glucose ratio below 0.4 (here 22/160 = 0.14) are the pattern of bacterial meningitis; a lymphocytic profile with normal glucose would suggest viral meningitis, and a lymphocytic profile with low glucose would raise tuberculosis, fungi or Listeria itself (which can give a mixed picture). The Gram stain is positive in only 60–90 % of bacterial meningitis and is lower after prior antibiotics, so a negative stain never removes an organism from the empiric list.<br> <b>Adjuncts and timing</b> — antibiotics are given within an hour of arrival, before imaging if a CT is needed (it is not here: no papilledema, focal deficit, seizure, immunocompromise or severe depression of consciousness). Dexamethasone 0.15 mg/kg every 6 h for 4 days, started with or before the first antibiotic dose, reduces mortality and hearing loss in pneumococcal meningitis; it is stopped if another organism is identified. Once Listeria is excluded (cultures, PCR) ampicillin is dropped; once the pneumococcus proves cephalosporin-susceptible, vancomycin is dropped.\n- 비교: <table><thead><tr><th style=\"width:30%\">Patient group</th><th style=\"width:36%\">Likely organisms</th><th>Empiric regimen</th></tr></thead><tbody> <tr><td><b>Adult &gt; 50, diabetes (answer)</b></td><td><b>S. pneumoniae, N. meningitidis, Listeria, aerobic Gram-negative rods</b></td><td><b>vancomycin + ceftriaxone + ampicillin (+ dexamethasone)</b></td></tr> <tr><td>Adult 18–50 (closest wrong answer)</td><td>S. pneumoniae, N. meningitidis</td><td>vancomycin + ceftriaxone (+ dexamethasone)</td></tr> <tr><td>Neonate &lt; 1 month</td><td>Group B streptococcus, E. coli, Listeria</td><td>ampicillin + cefotaxime (or ampicillin + gentamicin)</td></tr> <tr><td>Post-neurosurgery, shunt, penetrating trauma</td><td>Staphylococci, Pseudomonas, Gram-negative rods</td><td>vancomycin + cefepime (or ceftazidime/meropenem)</td></tr> <tr><td>Basilar skull fracture</td><td>S. pneumoniae, H. influenzae, group A streptococcus</td><td>vancomycin + ceftriaxone</td></tr> </tbody></table> The <b>closest wrong answer is vancomycin plus ceftriaxone</b>, the textbook adult regimen. The discriminator is <b>age over 50</b> (reinforced by diabetes): Listeria is not covered by any cephalosporin, so ampicillin must be added. If he were 34 and otherwise healthy, vancomycin plus ceftriaxone alone would be the answer; if he had a ventriculoperitoneal shunt, cefepime would replace ceftriaxone to cover Pseudomonas.\n- 오답 이유:\n  - (A) Ampicillin plus gentamicin is the classic regimen for neonatal meningitis (group B streptococcus, E. coli, Listeria) and the definitive therapy for proven Listeria meningitis. In an adult it leaves resistant pneumococci and meningococci inadequately covered. This option would be correct once cultures confirm Listeria, or in a newborn.\n  - (C) Vancomycin plus ceftriaxone is the standard empiric regimen for immunocompetent adults aged 18–50 and covers resistant pneumococci and meningococci, but it leaves Listeria monocytogenes uncovered because Listeria is intrinsically resistant to cephalosporins. This option would be correct if the patient were under 50 without diabetes or other cell-mediated immune impairment.\n  - (D) Ceftriaxone plus ampicillin covers meningococci and Listeria but omits vancomycin, so a pneumococcus with reduced susceptibility to cephalosporins could fail treatment in the CSF, where drug penetration is limited. This option would be correct only in a region where cephalosporin-resistant pneumococci are known to be absent, which cannot be assumed empirically.\n  - (E) Vancomycin, cefepime and metronidazole is a regimen for nosocomial or post-neurosurgical infection and brain abscess (Pseudomonas, staphylococci, anaerobes). It still does not cover Listeria, and the patient has no surgery, shunt or abscess. This option would be correct for meningitis after neurosurgery or with a ventricular shunt, where cefepime replaces ceftriaxone.\n- 함정: Do not stop at 'adult meningitis = vancomycin + ceftriaxone'. Check the age: over 50 (or pregnant, alcoholic, diabetic, immunosuppressed) means Listeria, and no cephalosporin touches Listeria — add ampicillin. Give dexamethasone with the first dose.\n- 학습목표: 50세 이상 성인의 급성 세균성 수막염에서 Listeria 를 덮기 위해 반코마이신·3세대 세팔로스포린에 암피실린을 더하는 경험적 요법을 선택하고, 연령·면역 상태에 따른 원인균 변화를 설명한다\n- 근거·출처: Tunkel AR et al. Practice guidelines for the management of bacterial meningitis. Clin Infect Dis 2004;39:1267 — empiric therapy by age group; ampicillin for Listeria in adults > 50 · van de Beek D et al. ESCMID guideline: diagnosis and treatment of acute bacterial meningitis. Clin Microbiol Infect 2016;22:S37 · de Gans J, van de Beek D. Dexamethasone in adults with bacterial meningitis. N Engl J Med 2002;347:1549 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute meningitis' — CSF profile, empiric regimens, adjunctive dexamethasone · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed., ch. 'Acute meningitis'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever, headache, altered mental status and nuchal rigidity with a neutrophilic pleocytosis, high protein and a CSF-to-serum glucose ratio of 0.14 are acute bacterial meningitis. A negative Gram stain does not narrow the choice, so treatment is empiric and must cover the likely organisms for his age: Streptococcus pneumoniae (ceftriaxone, plus vancomycin because of penicillin- and cephalosporin-resistant strains), Neisseria meningitidis (ceftriaxone) and, because he is older than 50, Listeria monocytogenes, which is intrinsically resistant to cephalosporins and requires ampicillin. Dexamethasone is given with or just before the first dose to reduce hearing loss and mortality in pneumococcal meningitis."
+   },
+   {
+    "k": "원리",
+    "v": "The organisms that cause community-acquired bacterial meningitis change with age and immune status, and the empiric regimen is built to cover all of them until cultures return. In adults 18–50 the causes are <b>Streptococcus pneumoniae</b> and <b>Neisseria meningitidis</b>: a third-generation cephalosporin (ceftriaxone) covers both, and <b>vancomycin</b> is added because 10–20 % of pneumococci have reduced susceptibility to penicillin and some to cephalosporins, and treatment failure in the CSF is unforgiving. After age 50 — and in pregnancy, alcoholism, diabetes, malignancy, corticosteroid use and other cell-mediated immune defects — <b>Listeria monocytogenes</b> joins the list. Listeria is a facultative intracellular Gram-positive rod that is <b>intrinsically resistant to all cephalosporins</b> (its penicillin-binding protein 3 has low affinity for them), so <b>ampicillin</b> (or penicillin G) must be added; gentamicin is combined with ampicillin for synergy once Listeria is proven.<br> <b>Why the CSF profile matters</b> — a neutrophil-predominant pleocytosis above 1,000/mm3, protein above 100 mg/dL and a CSF/serum glucose ratio below 0.4 (here 22/160 = 0.14) are the pattern of bacterial meningitis; a lymphocytic profile with normal glucose would suggest viral meningitis, and a lymphocytic profile with low glucose would raise tuberculosis, fungi or Listeria itself (which can give a mixed picture). The Gram stain is positive in only 60–90 % of bacterial meningitis and is lower after prior antibiotics, so a negative stain never removes an organism from the empiric list.<br> <b>Adjuncts and timing</b> — antibiotics are given within an hour of arrival, before imaging if a CT is needed (it is not here: no papilledema, focal deficit, seizure, immunocompromise or severe depression of consciousness). Dexamethasone 0.15 mg/kg every 6 h for 4 days, started with or before the first antibiotic dose, reduces mortality and hearing loss in pneumococcal meningitis; it is stopped if another organism is identified. Once Listeria is excluded (cultures, PCR) ampicillin is dropped; once the pneumococcus proves cephalosporin-susceptible, vancomycin is dropped."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Patient group</th><th style=\"width:36%\">Likely organisms</th><th>Empiric regimen</th></tr></thead><tbody> <tr><td><b>Adult &gt; 50, diabetes (answer)</b></td><td><b>S. pneumoniae, N. meningitidis, Listeria, aerobic Gram-negative rods</b></td><td><b>vancomycin + ceftriaxone + ampicillin (+ dexamethasone)</b></td></tr> <tr><td>Adult 18–50 (closest wrong answer)</td><td>S. pneumoniae, N. meningitidis</td><td>vancomycin + ceftriaxone (+ dexamethasone)</td></tr> <tr><td>Neonate &lt; 1 month</td><td>Group B streptococcus, E. coli, Listeria</td><td>ampicillin + cefotaxime (or ampicillin + gentamicin)</td></tr> <tr><td>Post-neurosurgery, shunt, penetrating trauma</td><td>Staphylococci, Pseudomonas, Gram-negative rods</td><td>vancomycin + cefepime (or ceftazidime/meropenem)</td></tr> <tr><td>Basilar skull fracture</td><td>S. pneumoniae, H. influenzae, group A streptococcus</td><td>vancomycin + ceftriaxone</td></tr> </tbody></table> The <b>closest wrong answer is vancomycin plus ceftriaxone</b>, the textbook adult regimen. The discriminator is <b>age over 50</b> (reinforced by diabetes): Listeria is not covered by any cephalosporin, so ampicillin must be added. If he were 34 and otherwise healthy, vancomycin plus ceftriaxone alone would be the answer; if he had a ventriculoperitoneal shunt, cefepime would replace ceftriaxone to cover Pseudomonas."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ampicillin plus gentamicin is the classic regimen for neonatal meningitis (group B streptococcus, E. coli, Listeria) and the definitive therapy for proven Listeria meningitis. In an adult it leaves resistant pneumococci and meningococci inadequately covered. This option would be correct once cultures confirm Listeria, or in a newborn.\n(C) Vancomycin plus ceftriaxone is the standard empiric regimen for immunocompetent adults aged 18–50 and covers resistant pneumococci and meningococci, but it leaves Listeria monocytogenes uncovered because Listeria is intrinsically resistant to cephalosporins. This option would be correct if the patient were under 50 without diabetes or other cell-mediated immune impairment.\n(D) Ceftriaxone plus ampicillin covers meningococci and Listeria but omits vancomycin, so a pneumococcus with reduced susceptibility to cephalosporins could fail treatment in the CSF, where drug penetration is limited. This option would be correct only in a region where cephalosporin-resistant pneumococci are known to be absent, which cannot be assumed empirically.\n(E) Vancomycin, cefepime and metronidazole is a regimen for nosocomial or post-neurosurgical infection and brain abscess (Pseudomonas, staphylococci, anaerobes). It still does not cover Listeria, and the patient has no surgery, shunt or abscess. This option would be correct for meningitis after neurosurgery or with a ventricular shunt, where cefepime replaces ceftriaxone."
+   },
+   {
+    "k": "함정",
+    "v": "Do not stop at 'adult meningitis = vancomycin + ceftriaxone'. Check the age: over 50 (or pregnant, alcoholic, diabetic, immunosuppressed) means Listeria, and no cephalosporin touches Listeria — add ampicillin. Give dexamethasone with the first dose."
+   },
+   {
+    "k": "학습목표",
+    "v": "50세 이상 성인의 급성 세균성 수막염에서 Listeria 를 덮기 위해 반코마이신·3세대 세팔로스포린에 암피실린을 더하는 경험적 요법을 선택하고, 연령·면역 상태에 따른 원인균 변화를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tunkel AR et al. Practice guidelines for the management of bacterial meningitis. Clin Infect Dis 2004;39:1267 — empiric therapy by age group; ampicillin for Listeria in adults > 50 · van de Beek D et al. ESCMID guideline: diagnosis and treatment of acute bacterial meningitis. Clin Microbiol Infect 2016;22:S37 · de Gans J, van de Beek D. Dexamethasone in adults with bacterial meningitis. N Engl J Med 2002;347:1549 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Acute meningitis' — CSF profile, empiric regimens, adjunctive dexamethasone · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed., ch. 'Acute meningitis'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "급성 세균성 수막염(호중구 우세 2,100, 단백 240, 당 비 0.14)이고 64세이므로 폐렴구균·수막구균에 더해 Listeria 를 덮는 반코마이신 + 세프트리악손 + 암피실린이 경험적 요법이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "64세(> 50)와 당뇨 — Listeria 는 어떤 세팔로스포린에도 내성이라 암피실린을 더해야 한다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "leukocyte count 2,100/mm3 (88% neutrophils)",
+     "why": "호중구 우세 다형핵 증가 — 세균성 수막염",
+     "also": []
+    },
+    {
+     "item": "glucose 22 mg/dL (serum glucose 160 mg/dL)",
+     "why": "CSF/혈청 당 비 0.14(< 0.4) — 세균성",
+     "also": []
+    },
+    {
+     "item": "64-year-old man",
+     "why": "50세 초과 — Listeria 를 경험적으로 덮어야 한다",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus",
+     "why": "세포성 면역 저하 요인 — Listeria 위험을 더 높인다",
+     "also": []
+    },
+    {
+     "item": "protein 240 mg/dL",
+     "why": "혈액뇌장벽 손상 — 세균성 수막염의 전형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no papilledema, rash, or focal neurologic deficit",
+     "why": "요추천자 전 CT 가 필요한 조건이 없고, 수막구균 자반이 없어 특정 균으로 좁히지 못한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Gram stain of the cerebrospinal fluid shows no organisms",
+     "why": "음성이라도 어떤 균도 제외하지 못한다 — 경험적 광범위 요법 유지",
+     "also": []
+    },
+    {
+     "item": "he has no drug allergies",
+     "why": "β-락탐 사용에 제한이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "hypertension",
+     "why": "원인균 판단과 무관한 배경",
+     "also": []
+    }
+   ],
+   "summary": "Neutrophilic pleocytosis, high protein and a CSF/serum glucose ratio of 0.14 make this bacterial meningitis; because he is 64 and diabetic, Listeria must be covered, so ampicillin is added to vancomycin and ceftriaxone, with dexamethasone at the first dose.",
+   "switch": {
+    "choice": "C",
+    "condition": "환자가 50세 미만이고 당뇨·면역저하가 없었다면 반코마이신 + 세프트리악손만으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0070",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "혈액·종양 — 혈전성 혈소판감소 자반증",
+  "type": "혈액·종양 — 혈전성 혈소판감소 자반증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-19",
+  "vignette": "34세 여자가 3일 전부터 두통과 말이 어눌해지는 증상이 있고 오늘 아침 잠깐 정신이 혼미해져 응급실에 왔다. 최근 감기약 외에 복용한 약은 없고 설사는 없었다. 혈압 132/84 mmHg, 맥박 104회/분, 체온 38.0℃이다. 팔다리에 점상출혈이 흩어져 있고 결막이 창백하며 경한 황달이 있다. 혈액검사: 혈색소 7.8 g/dL, 혈소판 14,000/μL, 백혈구 9,800/μL, 망상적혈구 6%, 총빌리루빈 3.1 mg/dL(직접 0.4), LDH 1,450 U/L, 크레아티닌 1.4 mg/dL, PT·aPTT 정상, 피브리노겐 320 mg/dL. 말초혈액도말에서 분열적혈구가 고배율 시야당 5~6개 보인다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "신선동결혈장 수혈 후 경과관찰",
+   "혈장교환술",
+   "혈소판 수혈",
+   "고용량 정맥 면역글로불린",
+   "에쿨리주맙 정주"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 빈혈에 망상적혈구 증가·간접 빌리루빈 우세·LDH 상승과 분열적혈구는 미세혈관병성 용혈빈혈이고, 여기에 심한 혈소판감소가 겹치면서 PT·aPTT·피브리노겐이 정상이므로 파종성 혈관내응고가 아니다. 변동하는 신경 증상, 발열, 경한 콩팥손상이 더해진 이 조합은 혈전성 혈소판감소 자반증(TTP)이다. TTP 는 ADAMTS13 결핍으로 초대형 폰빌레브란트 인자 다합체가 미세혈관에 혈소판 혈전을 만드는 병이며 치료하지 않으면 사망률이 90 % 에 이르므로, ADAMTS13 활성도 결과를 기다리지 말고 진단이 의심되는 즉시 혈장교환술을 시작한다. 혈장교환은 자가항체와 초대형 다합체를 제거하고 ADAMTS13 을 보충해 사망률을 10~20 % 로 낮춘다. 혈소판 수혈은 혈전 형성을 부추겨 금기에 가깝다.\n- 원리: <b>ADAMTS13</b> 은 내피세포에서 분비된 초대형 폰빌레브란트 인자(vWF) 다합체를 잘라 정상 크기로 만드는 금속단백분해효소다. 후천성 TTP 에서는 ADAMTS13 에 대한 <b>자가항체</b>가 활성을 10 % 미만으로 떨어뜨리고, 잘리지 않은 초대형 다합체가 미세혈관의 전단력 아래에서 혈소판을 붙잡아 <b>혈소판 혈전</b>을 만든다. 그래서 혈소판이 소모되어 심하게 줄고(대개 3만 미만), 적혈구는 혈전 사이를 지나며 찢겨 <b>분열적혈구</b>가 되고 LDH·간접 빌리루빈이 오르며, 뇌·콩팥·심장의 미세혈관이 막혀 변동하는 신경 증상과 콩팥손상이 생긴다. 응고 연쇄반응은 관여하지 않으므로 <b>PT·aPTT·피브리노겐이 정상</b>인 것이 DIC 와의 결정적 차이다.<br> <b>왜 혈장교환인가</b> — 혈장교환술은 (1) 자가항체와 초대형 다합체를 <b>제거</b>하고 (2) 공여 혈장으로 ADAMTS13 을 <b>보충</b>하는 두 가지를 동시에 한다. 신선동결혈장 수혈만으로는 보충은 되지만 항체 제거가 안 되고 용적 제한 때문에 충분한 양을 주지 못해, 혈장교환이 불가능한 곳에서 이송 전까지의 가교로만 쓴다. 혈장교환은 진단 의심 즉시(4~8시간 안에) 시작하며 혈소판이 정상화되고 LDH 가 떨어질 때까지 매일 시행한다. 여기에 스테로이드를 더하고, 확진되면 리툭시맙(항체 생성 억제)과 카플라시주맙(vWF A1 도메인 차단으로 혈소판 결합 억제)을 추가한다. PLASMIC 점수(혈소판 < 3만, 용혈, 활동성 암 없음, 이식 없음, MCV < 90, INR < 1.5, 크레아티닌 < 2.0)가 6~7점이면 ADAMTS13 결핍 확률이 높아 결과를 기다리지 않는다 — 이 환자는 7점이다.<br> <b>왜 혈소판 수혈이 위험한가</b> — 수혈된 혈소판은 초대형 다합체에 다시 붙잡혀 <b>새 혈전의 재료</b>가 된다. 급격한 신경학적 악화·사망 보고가 있어 생명을 위협하는 출혈이나 침습 시술 직전이 아니면 주지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:46%\">감별 근거</th><th>1차 치료</th></tr></thead><tbody> <tr><td><b>TTP(정답)</b></td><td><b>미세혈관병성 용혈 + 심한 혈소판감소 + 신경 증상·발열, 응고검사 정상, 크레아티닌 경도 상승, ADAMTS13 &lt; 10 %</b></td><td><b>응급 혈장교환 + 스테로이드(± 카플라시주맙·리툭시맙)</b></td></tr> <tr><td>면역 혈소판감소증(가장 가까운 오답 「혈소판 수혈」·IVIG 의 배경)</td><td>혈소판만 감소, 빈혈·분열적혈구·LDH 상승·신경 증상 없음</td><td>스테로이드, IVIG; 출혈 시 혈소판 수혈 가능</td></tr> <tr><td>파종성 혈관내응고</td><td>패혈증·산과 합병증·암 배경, PT·aPTT 연장, 피브리노겐 감소, D-이량체 상승</td><td>원인 치료, 필요 시 혈장·혈소판 보충</td></tr> <tr><td>용혈요독증후군(전형)</td><td>혈성 설사 후 소아, 급성 콩팥손상이 주 소견, 신경 증상 드묾</td><td>지지 치료·투석</td></tr> <tr><td>비전형 용혈요독증후군</td><td>보체 이상, 콩팥손상이 두드러짐(크레아티닌 &gt; 2), ADAMTS13 정상</td><td>에쿨리주맙(보체 C5 억제)</td></tr> </tbody></table> <b>가장 가까운 오답은 「혈소판 수혈」</b>이다 — 혈소판 14,000 에 점상출혈이 있으면 채워 주고 싶어진다. 갈림길은 <b>혈소판이 왜 줄었는가</b>이다. 용혈 소견(분열적혈구·LDH·간접 빌리루빈)과 신경 증상이 있으면 혈소판은 미세혈관 혈전에 소모되는 중이고, 수혈은 혈전을 키운다. 반대로 빈혈·용혈 없이 혈소판만 줄고 출혈이 심한 면역 혈소판감소증이라면 IVIG 와 혈소판 수혈이 정답이 된다.\n- 오답 이유:\n  - ① 신선동결혈장은 ADAMTS13 을 보충하지만 자가항체를 제거하지 못하고 용적 제한으로 충분한 양을 줄 수 없다. 혈장교환을 당장 할 수 없는 병원에서 이송 전 가교 치료로만 쓰이며 「경과관찰」은 사망률 90 % 의 병을 방치하는 것이다. 혈장교환 설비가 없어 이송을 기다리는 몇 시간 동안이라면 이 선지가 정답이 된다.\n  - ③ 혈소판 수혈은 면역 혈소판감소증의 생명을 위협하는 출혈이나 침습 시술 전에 정답이 된다. TTP 에서는 수혈한 혈소판이 초대형 vWF 다합체에 붙잡혀 새 미세혈관 혈전을 만들어 신경학적 악화와 사망이 보고되었으므로, 두개내출혈 같은 치명적 출혈이 아니면 주지 않는다.\n  - ④ 고용량 정맥 면역글로불린은 면역 혈소판감소증(빈혈·분열적혈구·LDH 상승 없이 혈소판만 감소)에서 빠른 혈소판 상승이 필요할 때 정답이 된다. ADAMTS13 자가항체를 제거하거나 효소를 보충하지 못하므로 TTP 의 1차 치료가 아니다. 용혈 소견이 없는 단독 혈소판감소증이었다면 이 선지가 맞다.\n  - ⑤ 에쿨리주맙은 보체 C5 억제제로 비전형 용혈요독증후군(ADAMTS13 정상, 보체 조절 이상, 크레아티닌 2 mg/dL 를 넘는 두드러진 콩팥손상)의 치료다. 신경 증상이 앞서고 콩팥손상이 경미하며 PLASMIC 점수가 높은 이 환자는 TTP 이므로 혈장교환이 먼저다. ADAMTS13 활성이 정상으로 나오고 콩팥손상이 주된 소견이면 이 선지가 정답이 된다.\n- 함정: 혈소판 14,000 과 점상출혈에 「수혈」로 반응하지 않는다. 분열적혈구·LDH·간접 빌리루빈 = 미세혈관병성 용혈, 응고검사 정상 = DIC 아님, 신경 증상 = TTP. ADAMTS13 결과를 기다리지 말고 혈장교환을 시작한다.\n- 학습목표: 미세혈관병성 용혈빈혈(분열적혈구·LDH 상승·간접빌리루빈)과 심한 혈소판감소에 신경 증상·발열·경한 콩팥손상이 동반되고 응고검사가 정상일 때 혈전성 혈소판감소 자반증으로 판단하고 응급 혈장교환술을 선택한다\n- 근거·출처: Zheng XL et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496 — urgent plasma exchange plus corticosteroids; caplacizumab and rituximab; avoid platelet transfusion · Rock GA et al. Comparison of plasma exchange with plasma infusion in the treatment of thrombotic thrombocytopenic purpura. N Engl J Med 1991;325:393 — plasma exchange superior to plasma infusion · Bendapudi PK et al. Derivation and external validation of the PLASMIC score. Lancet Haematol 2017;4:e157 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Disorders of platelets and vessel wall' — TTP vs HUS vs DIC vs ITP · 대한혈액학회. 혈액학 3판 — 혈전성 미세혈관병증",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "빈혈에 망상적혈구 증가·간접 빌리루빈 우세·LDH 상승과 분열적혈구는 미세혈관병성 용혈빈혈이고, 여기에 심한 혈소판감소가 겹치면서 PT·aPTT·피브리노겐이 정상이므로 파종성 혈관내응고가 아니다. 변동하는 신경 증상, 발열, 경한 콩팥손상이 더해진 이 조합은 혈전성 혈소판감소 자반증(TTP)이다. TTP 는 ADAMTS13 결핍으로 초대형 폰빌레브란트 인자 다합체가 미세혈관에 혈소판 혈전을 만드는 병이며 치료하지 않으면 사망률이 90 % 에 이르므로, ADAMTS13 활성도 결과를 기다리지 말고 진단이 의심되는 즉시 혈장교환술을 시작한다. 혈장교환은 자가항체와 초대형 다합체를 제거하고 ADAMTS13 을 보충해 사망률을 10~20 % 로 낮춘다. 혈소판 수혈은 혈전 형성을 부추겨 금기에 가깝다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>ADAMTS13</b> 은 내피세포에서 분비된 초대형 폰빌레브란트 인자(vWF) 다합체를 잘라 정상 크기로 만드는 금속단백분해효소다. 후천성 TTP 에서는 ADAMTS13 에 대한 <b>자가항체</b>가 활성을 10 % 미만으로 떨어뜨리고, 잘리지 않은 초대형 다합체가 미세혈관의 전단력 아래에서 혈소판을 붙잡아 <b>혈소판 혈전</b>을 만든다. 그래서 혈소판이 소모되어 심하게 줄고(대개 3만 미만), 적혈구는 혈전 사이를 지나며 찢겨 <b>분열적혈구</b>가 되고 LDH·간접 빌리루빈이 오르며, 뇌·콩팥·심장의 미세혈관이 막혀 변동하는 신경 증상과 콩팥손상이 생긴다. 응고 연쇄반응은 관여하지 않으므로 <b>PT·aPTT·피브리노겐이 정상</b>인 것이 DIC 와의 결정적 차이다.<br> <b>왜 혈장교환인가</b> — 혈장교환술은 (1) 자가항체와 초대형 다합체를 <b>제거</b>하고 (2) 공여 혈장으로 ADAMTS13 을 <b>보충</b>하는 두 가지를 동시에 한다. 신선동결혈장 수혈만으로는 보충은 되지만 항체 제거가 안 되고 용적 제한 때문에 충분한 양을 주지 못해, 혈장교환이 불가능한 곳에서 이송 전까지의 가교로만 쓴다. 혈장교환은 진단 의심 즉시(4~8시간 안에) 시작하며 혈소판이 정상화되고 LDH 가 떨어질 때까지 매일 시행한다. 여기에 스테로이드를 더하고, 확진되면 리툭시맙(항체 생성 억제)과 카플라시주맙(vWF A1 도메인 차단으로 혈소판 결합 억제)을 추가한다. PLASMIC 점수(혈소판 < 3만, 용혈, 활동성 암 없음, 이식 없음, MCV < 90, INR < 1.5, 크레아티닌 < 2.0)가 6~7점이면 ADAMTS13 결핍 확률이 높아 결과를 기다리지 않는다 — 이 환자는 7점이다.<br> <b>왜 혈소판 수혈이 위험한가</b> — 수혈된 혈소판은 초대형 다합체에 다시 붙잡혀 <b>새 혈전의 재료</b>가 된다. 급격한 신경학적 악화·사망 보고가 있어 생명을 위협하는 출혈이나 침습 시술 직전이 아니면 주지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:46%\">감별 근거</th><th>1차 치료</th></tr></thead><tbody> <tr><td><b>TTP(정답)</b></td><td><b>미세혈관병성 용혈 + 심한 혈소판감소 + 신경 증상·발열, 응고검사 정상, 크레아티닌 경도 상승, ADAMTS13 &lt; 10 %</b></td><td><b>응급 혈장교환 + 스테로이드(± 카플라시주맙·리툭시맙)</b></td></tr> <tr><td>면역 혈소판감소증(가장 가까운 오답 「혈소판 수혈」·IVIG 의 배경)</td><td>혈소판만 감소, 빈혈·분열적혈구·LDH 상승·신경 증상 없음</td><td>스테로이드, IVIG; 출혈 시 혈소판 수혈 가능</td></tr> <tr><td>파종성 혈관내응고</td><td>패혈증·산과 합병증·암 배경, PT·aPTT 연장, 피브리노겐 감소, D-이량체 상승</td><td>원인 치료, 필요 시 혈장·혈소판 보충</td></tr> <tr><td>용혈요독증후군(전형)</td><td>혈성 설사 후 소아, 급성 콩팥손상이 주 소견, 신경 증상 드묾</td><td>지지 치료·투석</td></tr> <tr><td>비전형 용혈요독증후군</td><td>보체 이상, 콩팥손상이 두드러짐(크레아티닌 &gt; 2), ADAMTS13 정상</td><td>에쿨리주맙(보체 C5 억제)</td></tr> </tbody></table> <b>가장 가까운 오답은 「혈소판 수혈」</b>이다 — 혈소판 14,000 에 점상출혈이 있으면 채워 주고 싶어진다. 갈림길은 <b>혈소판이 왜 줄었는가</b>이다. 용혈 소견(분열적혈구·LDH·간접 빌리루빈)과 신경 증상이 있으면 혈소판은 미세혈관 혈전에 소모되는 중이고, 수혈은 혈전을 키운다. 반대로 빈혈·용혈 없이 혈소판만 줄고 출혈이 심한 면역 혈소판감소증이라면 IVIG 와 혈소판 수혈이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 신선동결혈장은 ADAMTS13 을 보충하지만 자가항체를 제거하지 못하고 용적 제한으로 충분한 양을 줄 수 없다. 혈장교환을 당장 할 수 없는 병원에서 이송 전 가교 치료로만 쓰이며 「경과관찰」은 사망률 90 % 의 병을 방치하는 것이다. 혈장교환 설비가 없어 이송을 기다리는 몇 시간 동안이라면 이 선지가 정답이 된다.\n③ 혈소판 수혈은 면역 혈소판감소증의 생명을 위협하는 출혈이나 침습 시술 전에 정답이 된다. TTP 에서는 수혈한 혈소판이 초대형 vWF 다합체에 붙잡혀 새 미세혈관 혈전을 만들어 신경학적 악화와 사망이 보고되었으므로, 두개내출혈 같은 치명적 출혈이 아니면 주지 않는다.\n④ 고용량 정맥 면역글로불린은 면역 혈소판감소증(빈혈·분열적혈구·LDH 상승 없이 혈소판만 감소)에서 빠른 혈소판 상승이 필요할 때 정답이 된다. ADAMTS13 자가항체를 제거하거나 효소를 보충하지 못하므로 TTP 의 1차 치료가 아니다. 용혈 소견이 없는 단독 혈소판감소증이었다면 이 선지가 맞다.\n⑤ 에쿨리주맙은 보체 C5 억제제로 비전형 용혈요독증후군(ADAMTS13 정상, 보체 조절 이상, 크레아티닌 2 mg/dL 를 넘는 두드러진 콩팥손상)의 치료다. 신경 증상이 앞서고 콩팥손상이 경미하며 PLASMIC 점수가 높은 이 환자는 TTP 이므로 혈장교환이 먼저다. ADAMTS13 활성이 정상으로 나오고 콩팥손상이 주된 소견이면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판 14,000 과 점상출혈에 「수혈」로 반응하지 않는다. 분열적혈구·LDH·간접 빌리루빈 = 미세혈관병성 용혈, 응고검사 정상 = DIC 아님, 신경 증상 = TTP. ADAMTS13 결과를 기다리지 말고 혈장교환을 시작한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "미세혈관병성 용혈빈혈(분열적혈구·LDH 상승·간접빌리루빈)과 심한 혈소판감소에 신경 증상·발열·경한 콩팥손상이 동반되고 응고검사가 정상일 때 혈전성 혈소판감소 자반증으로 판단하고 응급 혈장교환술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Zheng XL et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496 — urgent plasma exchange plus corticosteroids; caplacizumab and rituximab; avoid platelet transfusion · Rock GA et al. Comparison of plasma exchange with plasma infusion in the treatment of thrombotic thrombocytopenic purpura. N Engl J Med 1991;325:393 — plasma exchange superior to plasma infusion · Bendapudi PK et al. Derivation and external validation of the PLASMIC score. Lancet Haematol 2017;4:e157 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Disorders of platelets and vessel wall' — TTP vs HUS vs DIC vs ITP · 대한혈액학회. 혈액학 3판 — 혈전성 미세혈관병증"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "미세혈관병성 용혈 + 심한 혈소판감소 + 신경 증상에 응고검사가 정상이면 TTP 이므로 ADAMTS13 결과를 기다리지 않고 응급 혈장교환술을 시작한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "분열적혈구·LDH 1,450·간접 빌리루빈 우세 — 혈소판이 미세혈관 혈전에 소모되는 중이라 수혈하면 혈전이 커진다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "말초혈액도말에서 분열적혈구가 고배율 시야당 5~6개",
+     "why": "미세혈관병성 용혈 — TTP·HUS·DIC 의 공통 소견이자 ITP 배제",
+     "also": []
+    },
+    {
+     "item": "혈소판 14,000/μL",
+     "why": "심한 혈소판감소 — 미세혈관 혈소판 혈전에 소모",
+     "also": []
+    },
+    {
+     "item": "LDH 1,450 U/L",
+     "why": "용혈과 조직 허혈의 표지",
+     "also": []
+    },
+    {
+     "item": "말이 어눌해지는 증상이 있고 오늘 아침 잠깐 정신이 혼미",
+     "why": "변동하는 신경 증상 — HUS 보다 TTP 를 가리킨다",
+     "also": []
+    },
+    {
+     "item": "총빌리루빈 3.1 mg/dL(직접 0.4)",
+     "why": "간접 빌리루빈 우세 — 용혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "PT·aPTT 정상, 피브리노겐 320 mg/dL",
+     "why": "파종성 혈관내응고 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "설사는 없었다",
+     "why": "시가독소 용혈요독증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.4 mg/dL",
+     "why": "경한 콩팥손상 — 콩팥이 주 표적인 HUS 보다 TTP 에 합당(PLASMIC 의 < 2.0)",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "체온 38.0℃",
+     "why": "고전적 5징의 하나이지만 비특이적 — 진단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "34세 여자",
+     "why": "후천성 TTP 의 호발 연령·성별",
+     "also": []
+    }
+   ],
+   "summary": "분열적혈구·LDH·간접 빌리루빈의 미세혈관병성 용혈에 혈소판 14,000 과 신경 증상이 겹치고 응고검사가 정상이면 TTP 다. 혈소판 수혈은 혈전을 키우므로 피하고, 진단 의심 즉시 혈장교환술과 스테로이드를 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "ADAMTS13 활성이 정상이고 크레아티닌이 3 mg/dL 를 넘는 콩팥손상이 주된 소견이라면 비전형 용혈요독증후군으로 보고 에쿨리주맙이 치료가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0069",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "외과계 — 교액성 소장폐색",
+  "type": "외과계 — 교액성 소장폐색",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-19",
+  "vignette": "68세 여자가 2일 전부터 배가 아프고 토해서 응급실에 왔다. 15년 전 자궁절제술을 받았고 그 뒤 비슷한 통증으로 두 번 입원해 금식과 수액으로 좋아진 적이 있다. 처음에는 쥐어짜듯 아프다가 6시간 전부터 오른쪽 아랫배가 계속 아프다고 한다. 혈압 100/60 mmHg, 맥박 118회/분, 체온 38.4℃이다. 배가 팽만되고 오른쪽 아랫배에 반발압통과 근육강직이 있으며 장음은 거의 들리지 않는다. 혈액검사: 백혈구 19,200/μL, 젖산 4.1 mmol/L. 복부 X선에서 소장이 확장되고 여러 개의 공기액체층이 보이며 대장에는 가스가 거의 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "수용성 조영제 투여 후 8시간 뒤 X선 추적",
+   "대장내시경 감압",
+   "광범위 항생제 투여 후 48시간 재평가",
+   "응급 개복술과 장 생존능 평가",
+   "비위관 감압과 수액 투여 후 경과관찰"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 수술 병력이 있는 환자의 산통성 복통·구토·복부 팽만과 소장 확장·공기액체층·대장 가스 소실은 유착성 소장폐색이다. 단순 폐색이라면 금식·비위관 감압·수액으로 대부분 풀리지만, 이 환자는 통증이 산통에서 지속통으로 바뀌었고 발열·빈맥·저혈압, 국소 반발압통과 근육강직, 백혈구 19,200, 젖산 4.1 mmol/L 이 있다. 이는 폐쇄된 장관의 혈류가 막혀 허혈·괴사로 가는 교액성 폐색의 징후다. 교액은 시간이 지날수록 장 괴사·천공·패혈증으로 진행하므로 수액 소생과 항생제를 시작하면서 지체 없이 개복해 장의 생존능을 확인하고 필요하면 절제한다.\n- 원리: 소장폐색의 위험은 「막힘」 자체보다 <b>막힌 장의 혈류가 끊기는 것(교액, strangulation)</b>이다. 유착 띠에 걸린 장 고리는 먼저 정맥 환류가 막혀 부종·출혈성 울혈이 생기고, 벽내 압력이 오르면 동맥 관류까지 끊겨 괴사·천공으로 간다. 이 과정이 임상에서는 <b>산통 → 지속통</b>(허혈로 장이 더 이상 연동하지 못하고 복막이 자극됨), <b>발열·빈맥·저혈압</b>(장벽을 통과한 세균과 사이토카인), <b>국소 반발압통·강직</b>(벽측 복막 자극), <b>백혈구 증가와 젖산 상승</b>(무산소 대사)으로 나타난다. 어느 하나만으로는 예측력이 낮지만 여러 개가 겹치면 교액 확률이 급격히 높아지고, 젖산은 그중 가장 늦게 오르는 지표라 4 mmol/L 를 넘으면 이미 허혈이 상당히 진행된 것이다.<br> <b>왜 보존 치료가 아닌가</b> — 유착성 소장폐색의 보존 치료(금식·비위관·수액, 수용성 조영제 시험)는 <b>교액 징후가 없는 단순 폐색</b>에서 60~80 % 가 48~72시간 안에 풀리기 때문에 정당하다. 교액이 의심되면 기다리는 시간이 곧 괴사 길이와 사망률이 되므로 「수액과 항생제를 주면서 수술방으로」가 원칙이다. 개복(또는 상황에 따라 복강경)에서 유착을 박리하고 장의 색·연동·장간막 박동으로 생존능을 평가해 괴사 부위를 절제한다.<br> <b>영상의 역할</b> — X선의 확장 소장·공기액체층·대장 가스 소실은 폐색의 부위와 완전성을 말해 주지만 교액 여부는 판정하지 못한다. CT 는 폐쇄 고리(closed loop), 장벽 조영증강 감소, 장간막 부종·복수를 보여 교액을 뒷받침하지만, 복막염 소견과 젖산 상승처럼 임상적으로 명백할 때 CT 를 기다리느라 수술을 미루지 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:44%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>교액 의심 유착성 소장폐색(정답)</b></td><td><b>지속통, 발열·빈맥, 반발압통·강직, 백혈구 19,200, 젖산 4.1</b></td><td><b>수액·항생제 후 응급 개복(장 생존능 평가·절제)</b></td></tr> <tr><td>단순 유착성 소장폐색(가장 가까운 오답의 조건)</td><td>산통, 복막자극징후·발열 없음, 백혈구·젖산 정상</td><td>금식·비위관 감압·수액, 수용성 조영제 시험 → 48~72시간 관찰</td></tr> <tr><td>급성 대장 가성폐색(Ogilvie)</td><td>대장 전체 확장, 수술·중증 질환 뒤, 기계적 폐쇄 없음</td><td>보존 치료 → 네오스티그민 → 대장내시경 감압</td></tr> <tr><td>S상결장 염전</td><td>「커피콩」 모양 대장 확장, 노인·변비</td><td>내시경 정복 후 준응급 절제</td></tr> <tr><td>마비성 장폐색</td><td>소장·대장이 함께 확장, 수술 직후·전해질 이상·아편유사제</td><td>원인 교정과 보존 치료</td></tr> </tbody></table> <b>가장 가까운 오답은 「비위관 감압과 수액 후 경과관찰」</b>이다 — 같은 원인으로 두 번이나 보존 치료로 좋아진 병력이 있어 이번에도 그러리라 생각하기 쉽다. 갈림길은 <b>교액 징후가 있는가</b>이다. 산통이 지속통으로 바뀌고 반발압통·강직·발열·백혈구·젖산 상승이 겹치면 기다릴수록 괴사가 길어진다. 반대로 산통만 있고 배가 부드러우며 젖산이 정상이면 비위관·수액·조영제 시험이 정답이 된다.\n- 오답 이유:\n  - ① 수용성 조영제 시험은 단순 유착성 소장폐색에서 보존 치료가 성공할지 예측하고 장운동을 돕는 방법이다. 복막염 소견과 젖산 상승이 있는 교액 의심 환자에게 8시간을 더 기다리는 것은 허혈을 방치하는 일이다. 교액 징후 없이 48시간 보존 치료에도 풀리지 않는 폐색에서 이 선지가 정답이 된다.\n  - ② 대장내시경 감압은 기계적 폐쇄가 없는 급성 대장 가성폐색(Ogilvie 증후군)이나 S상결장 염전의 정복에 쓰인다. 이 환자는 소장이 확장되고 대장 가스가 없는 기계적 소장폐색이며 복막염이 의심되므로 내시경으로 공기를 넣는 것은 천공 위험만 높인다. 대장 전체가 확장된 가성폐색이라면 이 선지가 맞다.\n  - ③ 광범위 항생제는 교액·천공이 의심될 때 수술 전후로 반드시 주지만, 항생제만으로 허혈된 장이 살아나지 않으며 48시간 재평가는 괴사 시간을 늘린다. 항생제는 수술의 보조이지 대체가 아니다. 국소 농양 등 수술 없이 항생제로 조절 가능한 감염성 원인이 확인되었을 때만 이 선지가 정답이 된다.\n  - ⑤ 비위관 감압과 수액 후 경과관찰은 교액 징후가 없는 단순 유착성 소장폐색에서 정답이 된다. 이 환자는 지속통·발열·빈맥·반발압통·근육강직·백혈구 증가·젖산 4.1 로 교액이 의심되므로 기다리면 괴사와 천공으로 진행한다. 배가 부드럽고 젖산·백혈구가 정상인 산통성 폐색이었다면 이 선지가 맞다.\n- 함정: 「전에도 금식·수액으로 좋아졌다」는 병력에 끌려가지 않는다. 산통이 지속통으로 바뀌고 발열·반발압통·백혈구·젖산 상승이 겹치면 교액이다 — 시간을 끌수록 절제할 장이 길어진다.\n- 학습목표: 유착성 소장폐색에서 교액(장 허혈)을 시사하는 소견(지속 통증·발열·빈맥·복막자극징후·백혈구·젖산 상승)을 알아보고 보존 치료가 아닌 응급 수술을 선택한다\n- 근거·출처: Sabiston Textbook of Surgery, 21st ed., ch. 'Small intestine — intestinal obstruction' — signs of strangulation, indications for immediate operation vs nonoperative management with water-soluble contrast · Schwartz's Principles of Surgery, 11th ed., ch. 28 'Small intestine' — adhesive small bowel obstruction, strangulation, lactate · Ten Broek RPG et al. Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update. World J Emerg Surg 2018;13:24 — strangulation/peritonitis mandates emergency surgery · 대한외과학회. 외과학 3판 — 장폐색의 진단과 치료",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "수술 병력이 있는 환자의 산통성 복통·구토·복부 팽만과 소장 확장·공기액체층·대장 가스 소실은 유착성 소장폐색이다. 단순 폐색이라면 금식·비위관 감압·수액으로 대부분 풀리지만, 이 환자는 통증이 산통에서 지속통으로 바뀌었고 발열·빈맥·저혈압, 국소 반발압통과 근육강직, 백혈구 19,200, 젖산 4.1 mmol/L 이 있다. 이는 폐쇄된 장관의 혈류가 막혀 허혈·괴사로 가는 교액성 폐색의 징후다. 교액은 시간이 지날수록 장 괴사·천공·패혈증으로 진행하므로 수액 소생과 항생제를 시작하면서 지체 없이 개복해 장의 생존능을 확인하고 필요하면 절제한다."
+   },
+   {
+    "k": "원리",
+    "v": "소장폐색의 위험은 「막힘」 자체보다 <b>막힌 장의 혈류가 끊기는 것(교액, strangulation)</b>이다. 유착 띠에 걸린 장 고리는 먼저 정맥 환류가 막혀 부종·출혈성 울혈이 생기고, 벽내 압력이 오르면 동맥 관류까지 끊겨 괴사·천공으로 간다. 이 과정이 임상에서는 <b>산통 → 지속통</b>(허혈로 장이 더 이상 연동하지 못하고 복막이 자극됨), <b>발열·빈맥·저혈압</b>(장벽을 통과한 세균과 사이토카인), <b>국소 반발압통·강직</b>(벽측 복막 자극), <b>백혈구 증가와 젖산 상승</b>(무산소 대사)으로 나타난다. 어느 하나만으로는 예측력이 낮지만 여러 개가 겹치면 교액 확률이 급격히 높아지고, 젖산은 그중 가장 늦게 오르는 지표라 4 mmol/L 를 넘으면 이미 허혈이 상당히 진행된 것이다.<br> <b>왜 보존 치료가 아닌가</b> — 유착성 소장폐색의 보존 치료(금식·비위관·수액, 수용성 조영제 시험)는 <b>교액 징후가 없는 단순 폐색</b>에서 60~80 % 가 48~72시간 안에 풀리기 때문에 정당하다. 교액이 의심되면 기다리는 시간이 곧 괴사 길이와 사망률이 되므로 「수액과 항생제를 주면서 수술방으로」가 원칙이다. 개복(또는 상황에 따라 복강경)에서 유착을 박리하고 장의 색·연동·장간막 박동으로 생존능을 평가해 괴사 부위를 절제한다.<br> <b>영상의 역할</b> — X선의 확장 소장·공기액체층·대장 가스 소실은 폐색의 부위와 완전성을 말해 주지만 교액 여부는 판정하지 못한다. CT 는 폐쇄 고리(closed loop), 장벽 조영증강 감소, 장간막 부종·복수를 보여 교액을 뒷받침하지만, 복막염 소견과 젖산 상승처럼 임상적으로 명백할 때 CT 를 기다리느라 수술을 미루지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:44%\">근거</th><th>처치</th></tr></thead><tbody> <tr><td><b>교액 의심 유착성 소장폐색(정답)</b></td><td><b>지속통, 발열·빈맥, 반발압통·강직, 백혈구 19,200, 젖산 4.1</b></td><td><b>수액·항생제 후 응급 개복(장 생존능 평가·절제)</b></td></tr> <tr><td>단순 유착성 소장폐색(가장 가까운 오답의 조건)</td><td>산통, 복막자극징후·발열 없음, 백혈구·젖산 정상</td><td>금식·비위관 감압·수액, 수용성 조영제 시험 → 48~72시간 관찰</td></tr> <tr><td>급성 대장 가성폐색(Ogilvie)</td><td>대장 전체 확장, 수술·중증 질환 뒤, 기계적 폐쇄 없음</td><td>보존 치료 → 네오스티그민 → 대장내시경 감압</td></tr> <tr><td>S상결장 염전</td><td>「커피콩」 모양 대장 확장, 노인·변비</td><td>내시경 정복 후 준응급 절제</td></tr> <tr><td>마비성 장폐색</td><td>소장·대장이 함께 확장, 수술 직후·전해질 이상·아편유사제</td><td>원인 교정과 보존 치료</td></tr> </tbody></table> <b>가장 가까운 오답은 「비위관 감압과 수액 후 경과관찰」</b>이다 — 같은 원인으로 두 번이나 보존 치료로 좋아진 병력이 있어 이번에도 그러리라 생각하기 쉽다. 갈림길은 <b>교액 징후가 있는가</b>이다. 산통이 지속통으로 바뀌고 반발압통·강직·발열·백혈구·젖산 상승이 겹치면 기다릴수록 괴사가 길어진다. 반대로 산통만 있고 배가 부드러우며 젖산이 정상이면 비위관·수액·조영제 시험이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수용성 조영제 시험은 단순 유착성 소장폐색에서 보존 치료가 성공할지 예측하고 장운동을 돕는 방법이다. 복막염 소견과 젖산 상승이 있는 교액 의심 환자에게 8시간을 더 기다리는 것은 허혈을 방치하는 일이다. 교액 징후 없이 48시간 보존 치료에도 풀리지 않는 폐색에서 이 선지가 정답이 된다.\n② 대장내시경 감압은 기계적 폐쇄가 없는 급성 대장 가성폐색(Ogilvie 증후군)이나 S상결장 염전의 정복에 쓰인다. 이 환자는 소장이 확장되고 대장 가스가 없는 기계적 소장폐색이며 복막염이 의심되므로 내시경으로 공기를 넣는 것은 천공 위험만 높인다. 대장 전체가 확장된 가성폐색이라면 이 선지가 맞다.\n③ 광범위 항생제는 교액·천공이 의심될 때 수술 전후로 반드시 주지만, 항생제만으로 허혈된 장이 살아나지 않으며 48시간 재평가는 괴사 시간을 늘린다. 항생제는 수술의 보조이지 대체가 아니다. 국소 농양 등 수술 없이 항생제로 조절 가능한 감염성 원인이 확인되었을 때만 이 선지가 정답이 된다.\n⑤ 비위관 감압과 수액 후 경과관찰은 교액 징후가 없는 단순 유착성 소장폐색에서 정답이 된다. 이 환자는 지속통·발열·빈맥·반발압통·근육강직·백혈구 증가·젖산 4.1 로 교액이 의심되므로 기다리면 괴사와 천공으로 진행한다. 배가 부드럽고 젖산·백혈구가 정상인 산통성 폐색이었다면 이 선지가 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "「전에도 금식·수액으로 좋아졌다」는 병력에 끌려가지 않는다. 산통이 지속통으로 바뀌고 발열·반발압통·백혈구·젖산 상승이 겹치면 교액이다 — 시간을 끌수록 절제할 장이 길어진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "유착성 소장폐색에서 교액(장 허혈)을 시사하는 소견(지속 통증·발열·빈맥·복막자극징후·백혈구·젖산 상승)을 알아보고 보존 치료가 아닌 응급 수술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sabiston Textbook of Surgery, 21st ed., ch. 'Small intestine — intestinal obstruction' — signs of strangulation, indications for immediate operation vs nonoperative management with water-soluble contrast · Schwartz's Principles of Surgery, 11th ed., ch. 28 'Small intestine' — adhesive small bowel obstruction, strangulation, lactate · Ten Broek RPG et al. Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update. World J Emerg Surg 2018;13:24 — strangulation/peritonitis mandates emergency surgery · 대한외과학회. 외과학 3판 — 장폐색의 진단과 치료"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "유착성 소장폐색에 지속통·발열·빈맥·반발압통·강직·백혈구 19,200·젖산 4.1 이 겹쳐 교액이 의심되므로 보존 치료가 아니라 응급 개복이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "산통이 지속통으로 바뀐 것과 반발압통·근육강직·젖산 상승 — 단순 폐색에는 없는 장 허혈·복막 자극의 징후",
+   "steps": 3,
+   "key": [
+    {
+     "item": "6시간 전부터 오른쪽 아랫배가 계속 아프다",
+     "why": "산통 → 지속통은 장 허혈과 복막 자극을 뜻한다",
+     "also": []
+    },
+    {
+     "item": "오른쪽 아랫배에 반발압통과 근육강직",
+     "why": "벽측 복막 자극 — 교액·천공 임박의 신체 징후",
+     "also": []
+    },
+    {
+     "item": "젖산 4.1 mmol/L",
+     "why": "무산소 대사 — 장 허혈이 진행됐다는 늦은 지표",
+     "also": []
+    },
+    {
+     "item": "백혈구 19,200/μL",
+     "why": "교액에 동반되는 전신 염증 반응",
+     "also": []
+    },
+    {
+     "item": "맥박 118회/분, 체온 38.4℃",
+     "why": "장벽 투과에 의한 균혈증·패혈증 초기 징후",
+     "also": []
+    },
+    {
+     "item": "소장이 확장되고 여러 개의 공기액체층이 보이며 대장에는 가스가 거의 없다",
+     "why": "완전 기계적 소장폐색 — 가성폐색·마비성 장폐색이 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "15년 전 자궁절제술",
+     "why": "유착이 원인이라는 배경 — 원인은 설명하지만 교액 여부는 말해 주지 않는다",
+     "also": []
+    },
+    {
+     "item": "비슷한 통증으로 두 번 입원해 금식과 수액으로 좋아진 적",
+     "why": "보존 치료로 끌려가게 하는 병력 — 이번에는 교액 징후가 있어 판단을 바꾸지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "수술 병력의 소장폐색이 산통에서 지속통으로 바뀌고 발열·빈맥·반발압통·강직·백혈구 19,200·젖산 4.1 을 보이면 교액성 폐색이다. 수액·항생제와 함께 응급 개복해 장 생존능을 평가하고 괴사 장을 절제한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "산통만 있고 배가 부드러우며 발열이 없고 백혈구·젖산이 정상인 단순 유착성 폐색이었다면 비위관 감압과 수액 후 경과관찰이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0068",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신경·소아·내분비·소화기·외과·혈액종양·감염·약리)",
+  "subtopic": "소화기·간담췌 — 담석 췌장염 후 담낭절제 시기",
+  "type": "소화기·간담췌 — 담석 췌장염 후 담낭절제 시기",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-19",
+  "vignette": "A 46-year-old woman is admitted because of 12 hours of severe epigastric pain radiating to the back, with nausea and vomiting. She has had two similar but milder episodes after fatty meals during the past year. She does not drink alcohol. Her temperature is 37.6°C, pulse is 96/min, and blood pressure is 128/80 mm Hg. The abdomen is tender in the epigastrium without guarding; there is no jaundice. Serum lipase is 2,400 U/L (N < 60), alanine aminotransferase 210 U/L, total bilirubin 1.9 mg/dL, and white blood cell count 12,800/mm3. Ultrasonography shows multiple gallstones with a common bile duct diameter of 5 mm and no ductal stone. She is treated with intravenous fluids and analgesia; by hospital day 3 she is eating and pain-free, and total bilirubin is 0.8 mg/dL.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Laparoscopic cholecystectomy 6 weeks after discharge",
+   "Magnetic resonance cholangiopancreatography before discharge",
+   "Ursodeoxycholic acid and follow-up in 3 months",
+   "Laparoscopic cholecystectomy during this admission",
+   "Endoscopic retrograde cholangiopancreatography with sphincterotomy"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Epigastric pain radiating to the back with a lipase more than 3 times the upper limit of normal is acute pancreatitis, and gallstones with an elevated alanine aminotransferase point to a biliary cause. The attack is mild (no organ failure, no local complications) and has resolved by day 3; the bilirubin has fallen from 1.9 to 0.8 mg/dL, the duct is not dilated and no ductal stone is seen, so the stone has passed and there is neither cholangitis nor persistent obstruction to justify ERCP. What remains is a gallbladder full of stones that will send another one: without cholecystectomy about 1 in 5 patients has a recurrent biliary event within weeks. The PONCHO trial showed that cholecystectomy during the index admission for mild biliary pancreatitis reduces recurrent gallstone-related complications (5 % versus 17 %) compared with delayed surgery, without increasing operative complications.\n- 원리: A gallstone that migrates through the cystic duct and lodges transiently at the ampulla obstructs the pancreatic duct and, for a moment, the bile duct. Enzyme activation inside the acinar cell (trypsinogen → trypsin) starts the pancreatitis, and the brief cholestasis explains the <b>transient rise of alanine aminotransferase and bilirubin</b>: an ALT above about 150 U/L in acute pancreatitis has a positive predictive value of roughly 95 % for a biliary cause. Most such stones pass spontaneously within 48 hours, which is why the bilirubin normalizes and the duct stays narrow.<br> <b>Why cholecystectomy now</b> — the pancreatitis was caused by the gallbladder's stones, and the gallbladder still contains many. Until it is removed the patient carries a 15–20 % risk of another biliary event (recurrent pancreatitis, cholecystitis, cholangitis) within the first weeks — the same weeks that 'come back in 6 weeks' spans. In the PONCHO randomized trial (Lancet 2015) same-admission cholecystectomy for mild biliary pancreatitis cut those recurrent events from 17 % to 5 %, with no increase in bile-duct injury or conversion, so the guidelines (AGA, IAP/APA, ACG) recommend operating <b>during the index admission once the patient is clinically improving</b>, as she is by day 3. The exception is <b>severe or necrotizing pancreatitis</b>, where surgery is deferred until collections resolve or organize (usually ≥ 6 weeks) because the inflamed retroperitoneum makes dissection hazardous.<br> <b>Why not ERCP or MRCP</b> — ERCP in biliary pancreatitis is indicated for <b>cholangitis</b> or <b>persistent biliary obstruction</b> (rising or persistently high bilirubin, dilated duct, visible stone). It carries its own risk of pancreatitis and does nothing about the gallbladder. MRCP or endoscopic ultrasonography is the tool when the probability of a retained duct stone is intermediate (e.g., bilirubin that stays elevated with a borderline duct); here the bilirubin has normalized and the duct is 5 mm, so the pretest probability is low and an intraoperative cholangiogram at cholecystectomy is sufficient. Ursodeoxycholic acid dissolves only small cholesterol stones over months and does not prevent the next attack.\n- 비교: <table><thead><tr><th style=\"width:30%\">Situation after biliary pancreatitis</th><th style=\"width:38%\">Key findings</th><th>Management</th></tr></thead><tbody> <tr><td><b>Mild attack, resolved, no duct stone (answer)</b></td><td><b>pain-free and eating by day 3, bilirubin normalized, duct 5 mm, no stone</b></td><td><b>laparoscopic cholecystectomy during the index admission</b></td></tr> <tr><td>Delayed cholecystectomy (closest wrong answer)</td><td>severe or necrotizing pancreatitis with peripancreatic collections</td><td>operate after ≥ 6 weeks when collections resolve or wall off</td></tr> <tr><td>Cholangitis or persistent obstruction</td><td>fever with rising bilirubin, dilated duct, stone seen at the ampulla</td><td>urgent ERCP with sphincterotomy (within 24 h for cholangitis), then cholecystectomy</td></tr> <tr><td>Intermediate probability of duct stone</td><td>bilirubin 1.8–4 mg/dL that does not fall, duct 6–9 mm</td><td>MRCP or EUS first, or intraoperative cholangiogram</td></tr> <tr><td>Not a surgical candidate</td><td>prohibitive operative risk</td><td>ERCP sphincterotomy alone reduces recurrent pancreatitis</td></tr> </tbody></table> The <b>closest wrong answer is cholecystectomy 6 weeks after discharge</b>, the traditional 'let the inflammation settle' approach. The discriminator is the <b>severity of the attack</b>: mild pancreatitis that has resolved by day 3 has no inflamed collections to wait for, and waiting only exposes the patient to the 17 % recurrence risk that PONCHO showed same-admission surgery prevents. Had she developed necrosis or organ failure, delayed surgery would move to the top.\n- 오답 이유:\n  - (A) Delaying cholecystectomy for 6 weeks is the traditional approach and is still correct after severe or necrotizing pancreatitis, when peripancreatic collections must resolve or wall off before surgery. In mild pancreatitis that has resolved, the delay exposes the patient to a 15–20 % risk of recurrent biliary events; PONCHO showed same-admission surgery reduces that risk to 5 %.\n  - (B) MRCP before discharge is used when the probability of a retained bile-duct stone is intermediate, for example a bilirubin that stays elevated with a borderline duct diameter. Here the bilirubin has normalized and the duct is not dilated, so the pretest probability is low and an intraoperative cholangiogram suffices. This option would be correct if bilirubin remained 2–4 mg/dL with a 7 mm duct.\n  - (C) Ursodeoxycholic acid dissolves small, radiolucent cholesterol stones over 6–24 months in a functioning gallbladder and has a high recurrence rate; it does not prevent the next migrating stone. This option would be correct only for a patient with small cholesterol stones who cannot undergo surgery, and it would still not address acute pancreatitis risk in the coming weeks.\n  - (E) ERCP with sphincterotomy is indicated in biliary pancreatitis when there is cholangitis or persistent biliary obstruction. Her bilirubin fell from 1.9 to 0.8 mg/dL, the duct is 5 mm and no stone is seen, so the stone has passed; ERCP would add its own risk of pancreatitis and would not remove the gallbladder. This option would be correct if she had fever with a rising bilirubin and a dilated duct.\n- 함정: 'Let the pancreas cool down' applies to severe pancreatitis, not mild. When the attack is mild and resolved and the bilirubin has normalized, the next danger is the next stone — remove the gallbladder before discharge, and reserve ERCP for cholangitis or persistent obstruction.\n- 학습목표: 경증 담석 췌장염이 호전되고 총담관 결석·담관염 근거가 없을 때 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 시행하고, ERCP 와 지연 수술의 적응을 구분한다\n- 근거·출처: da Costa DW et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261 — recurrent gallstone-related complications 5 % vs 17 % · Crockett SD et al. American Gastroenterological Association Institute guideline on initial management of acute pancreatitis. Gastroenterology 2018;154:1096 — cholecystectomy during index admission for mild biliary pancreatitis; ERCP only for cholangitis/obstruction · Working Group IAP/APA. Evidence-based guidelines for the management of acute pancreatitis. Pancreatology 2013;13:e1 · Tenner S et al. American College of Gastroenterology guidelines: management of acute pancreatitis. Am J Gastroenterol 2024;119:419 · Sabiston Textbook of Surgery, 21st ed., ch. 'Acute pancreatitis' — timing of cholecystectomy, role of ERCP and MRCP",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Epigastric pain radiating to the back with a lipase more than 3 times the upper limit of normal is acute pancreatitis, and gallstones with an elevated alanine aminotransferase point to a biliary cause. The attack is mild (no organ failure, no local complications) and has resolved by day 3; the bilirubin has fallen from 1.9 to 0.8 mg/dL, the duct is not dilated and no ductal stone is seen, so the stone has passed and there is neither cholangitis nor persistent obstruction to justify ERCP. What remains is a gallbladder full of stones that will send another one: without cholecystectomy about 1 in 5 patients has a recurrent biliary event within weeks. The PONCHO trial showed that cholecystectomy during the index admission for mild biliary pancreatitis reduces recurrent gallstone-related complications (5 % versus 17 %) compared with delayed surgery, without increasing operative complications."
+   },
+   {
+    "k": "원리",
+    "v": "A gallstone that migrates through the cystic duct and lodges transiently at the ampulla obstructs the pancreatic duct and, for a moment, the bile duct. Enzyme activation inside the acinar cell (trypsinogen → trypsin) starts the pancreatitis, and the brief cholestasis explains the <b>transient rise of alanine aminotransferase and bilirubin</b>: an ALT above about 150 U/L in acute pancreatitis has a positive predictive value of roughly 95 % for a biliary cause. Most such stones pass spontaneously within 48 hours, which is why the bilirubin normalizes and the duct stays narrow.<br> <b>Why cholecystectomy now</b> — the pancreatitis was caused by the gallbladder's stones, and the gallbladder still contains many. Until it is removed the patient carries a 15–20 % risk of another biliary event (recurrent pancreatitis, cholecystitis, cholangitis) within the first weeks — the same weeks that 'come back in 6 weeks' spans. In the PONCHO randomized trial (Lancet 2015) same-admission cholecystectomy for mild biliary pancreatitis cut those recurrent events from 17 % to 5 %, with no increase in bile-duct injury or conversion, so the guidelines (AGA, IAP/APA, ACG) recommend operating <b>during the index admission once the patient is clinically improving</b>, as she is by day 3. The exception is <b>severe or necrotizing pancreatitis</b>, where surgery is deferred until collections resolve or organize (usually ≥ 6 weeks) because the inflamed retroperitoneum makes dissection hazardous.<br> <b>Why not ERCP or MRCP</b> — ERCP in biliary pancreatitis is indicated for <b>cholangitis</b> or <b>persistent biliary obstruction</b> (rising or persistently high bilirubin, dilated duct, visible stone). It carries its own risk of pancreatitis and does nothing about the gallbladder. MRCP or endoscopic ultrasonography is the tool when the probability of a retained duct stone is intermediate (e.g., bilirubin that stays elevated with a borderline duct); here the bilirubin has normalized and the duct is 5 mm, so the pretest probability is low and an intraoperative cholangiogram at cholecystectomy is sufficient. Ursodeoxycholic acid dissolves only small cholesterol stones over months and does not prevent the next attack."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Situation after biliary pancreatitis</th><th style=\"width:38%\">Key findings</th><th>Management</th></tr></thead><tbody> <tr><td><b>Mild attack, resolved, no duct stone (answer)</b></td><td><b>pain-free and eating by day 3, bilirubin normalized, duct 5 mm, no stone</b></td><td><b>laparoscopic cholecystectomy during the index admission</b></td></tr> <tr><td>Delayed cholecystectomy (closest wrong answer)</td><td>severe or necrotizing pancreatitis with peripancreatic collections</td><td>operate after ≥ 6 weeks when collections resolve or wall off</td></tr> <tr><td>Cholangitis or persistent obstruction</td><td>fever with rising bilirubin, dilated duct, stone seen at the ampulla</td><td>urgent ERCP with sphincterotomy (within 24 h for cholangitis), then cholecystectomy</td></tr> <tr><td>Intermediate probability of duct stone</td><td>bilirubin 1.8–4 mg/dL that does not fall, duct 6–9 mm</td><td>MRCP or EUS first, or intraoperative cholangiogram</td></tr> <tr><td>Not a surgical candidate</td><td>prohibitive operative risk</td><td>ERCP sphincterotomy alone reduces recurrent pancreatitis</td></tr> </tbody></table> The <b>closest wrong answer is cholecystectomy 6 weeks after discharge</b>, the traditional 'let the inflammation settle' approach. The discriminator is the <b>severity of the attack</b>: mild pancreatitis that has resolved by day 3 has no inflamed collections to wait for, and waiting only exposes the patient to the 17 % recurrence risk that PONCHO showed same-admission surgery prevents. Had she developed necrosis or organ failure, delayed surgery would move to the top."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Delaying cholecystectomy for 6 weeks is the traditional approach and is still correct after severe or necrotizing pancreatitis, when peripancreatic collections must resolve or wall off before surgery. In mild pancreatitis that has resolved, the delay exposes the patient to a 15–20 % risk of recurrent biliary events; PONCHO showed same-admission surgery reduces that risk to 5 %.\n(B) MRCP before discharge is used when the probability of a retained bile-duct stone is intermediate, for example a bilirubin that stays elevated with a borderline duct diameter. Here the bilirubin has normalized and the duct is not dilated, so the pretest probability is low and an intraoperative cholangiogram suffices. This option would be correct if bilirubin remained 2–4 mg/dL with a 7 mm duct.\n(C) Ursodeoxycholic acid dissolves small, radiolucent cholesterol stones over 6–24 months in a functioning gallbladder and has a high recurrence rate; it does not prevent the next migrating stone. This option would be correct only for a patient with small cholesterol stones who cannot undergo surgery, and it would still not address acute pancreatitis risk in the coming weeks.\n(E) ERCP with sphincterotomy is indicated in biliary pancreatitis when there is cholangitis or persistent biliary obstruction. Her bilirubin fell from 1.9 to 0.8 mg/dL, the duct is 5 mm and no stone is seen, so the stone has passed; ERCP would add its own risk of pancreatitis and would not remove the gallbladder. This option would be correct if she had fever with a rising bilirubin and a dilated duct."
+   },
+   {
+    "k": "함정",
+    "v": "'Let the pancreas cool down' applies to severe pancreatitis, not mild. When the attack is mild and resolved and the bilirubin has normalized, the next danger is the next stone — remove the gallbladder before discharge, and reserve ERCP for cholangitis or persistent obstruction."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 담석 췌장염이 호전되고 총담관 결석·담관염 근거가 없을 때 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 시행하고, ERCP 와 지연 수술의 적응을 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "da Costa DW et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261 — recurrent gallstone-related complications 5 % vs 17 % · Crockett SD et al. American Gastroenterological Association Institute guideline on initial management of acute pancreatitis. Gastroenterology 2018;154:1096 — cholecystectomy during index admission for mild biliary pancreatitis; ERCP only for cholangitis/obstruction · Working Group IAP/APA. Evidence-based guidelines for the management of acute pancreatitis. Pancreatology 2013;13:e1 · Tenner S et al. American College of Gastroenterology guidelines: management of acute pancreatitis. Am J Gastroenterol 2024;119:419 · Sabiston Textbook of Surgery, 21st ed., ch. 'Acute pancreatitis' — timing of cholecystectomy, role of ERCP and MRCP"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "경증 담석 췌장염이 3일째 호전되고 빌리루빈이 정상화되었으며 총담관 결석·확장이 없으므로 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "경증(장기부전·괴사·저류 없음)이고 이미 호전 — 지연 수술은 중증·괴사성 췌장염의 원칙이며, 경증에서 기다리면 재발 위험 17 % 를 떠안는다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "Serum lipase is 2,400 U/L",
+     "why": "정상 상한의 3배 초과 — 급성 췌장염 진단",
+     "also": []
+    },
+    {
+     "item": "multiple gallstones",
+     "why": "원인은 담석 — 담낭을 제거해야 재발을 막는다",
+     "also": []
+    },
+    {
+     "item": "alanine aminotransferase 210 U/L",
+     "why": "ALT > 150 은 담석성 원인의 양성예측도 약 95 %",
+     "also": []
+    },
+    {
+     "item": "by hospital day 3 she is eating and pain-free, and total bilirubin is 0.8 mg/dL",
+     "why": "경증이고 호전됨 + 결석 통과 — 같은 입원 중 수술의 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "common bile duct diameter of 5 mm and no ductal stone",
+     "why": "지속 폐쇄·총담관 결석 가능성을 낮춘다 — ERCP·MRCP 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "there is no jaundice",
+     "why": "담관염·지속 폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She does not drink alcohol",
+     "why": "알코올성 췌장염 가능성을 낮춘다 — 담석이 원인이라는 판단을 뒷받침",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "two similar but milder episodes after fatty meals during the past year",
+     "why": "담도 산통이 반복돼 온 환자 — 재발 위험이 높아 수술을 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "46-year-old woman",
+     "why": "담석의 호발 연령·성별이지만 처치 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "Mild biliary pancreatitis (lipase 40× normal, gallstones, ALT 210) has resolved by day 3 with a normal bilirubin and a non-dilated duct, so no ERCP is needed; the gallbladder that caused it should be removed before discharge (PONCHO: recurrence 5 % vs 17 %).",
+   "switch": {
+    "choice": "E",
+    "condition": "빌리루빈이 계속 오르고 발열·오한이 생기며 총담관이 확장돼 담관염이 의심된다면 24시간 이내 ERCP 와 괄약근절개술이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0063",
   "exam": "imaging",
   "style": "usmle_style",

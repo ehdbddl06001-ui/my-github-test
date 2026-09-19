@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2586,
+  "total": 2595,
   "byType": {
    "anatomy": 701,
+   "imaging": 71,
    "paper": 618,
    "kmle": 1035,
-   "imaging": 62,
    "concept": 3,
    "usmle": 150,
    "ailab": 14,
@@ -53,23 +53,25 @@ window.MEDKOS_INDEX = {
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
+   "감염": 2,
+   "내분비": 2,
+   "소아과": 2,
+   "소화기": 2,
+   "신경": 2,
+   "응급·중환자": 2,
+   "혈액·종양": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "감염": 1,
-   "내분비": 1,
-   "소아과": 1,
-   "소화기": 1,
-   "신경": 1,
    "신장·비뇨기": 1,
+   "약리": 1,
    "예방의학·역학": 1,
-   "응급·중환자": 1,
-   "피부과": 1,
-   "혈액·종양": 1
+   "외과": 1,
+   "피부과": 1
   },
   "byConfidence": {
-   "high": 1731,
+   "high": 1740,
    "medium": 806,
    "low": 49
   },
@@ -211,6 +213,163 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0605.md",
    "snippet": "",
    "text": "Anatomy 아래팔 뒤칸 깊은층과 손뒤침근 — 뒤뼈사이신경이 태어나는 자리 11회차 · 팔 course-tracing 11회차 손뒤침근 뒤뼈사이신경 프로제활 깊은층폄근 예습시험 태깅 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s11) + e-Anatomy Upper limb — Forearm 23:01–41:51"
+  },
+  {
+   "id": "imaging-2026-0072",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 리튬 중독과 티아지드 상호작용",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0072.md",
+   "snippet": "46세 여자가 3일 전부터 손이 심하게 떨리고 걸음이 비틀거리며 오늘은 말이 어눌하고 멍하다고 하여 가족과 함께 응급실에 왔다. 양극성장애로 10년째 리튬을 같은 용량으로 복용해 왔고, 3주 전 고혈압으로 히드로클로로티아지드를 새로 처방받았다. 설사나 구토는 없었고 약을 한꺼번에 많이 먹지는 않았다. 혈압 138/86 mmHg, 맥박 58회/분, 체온 37.0℃이다. 의식은 기면 상태이고 거친 진전, 근간대경련, 사지 반사항진",
+   "text": "약리 약리 — 리튬 중독과 티아지드 상호작용 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c 46세 여자가 3일 전부터 손이 심하게 떨리고 걸음이 비틀거리며 오늘은 말이 어눌하고 멍하다고 하여 가족과 함께 응급실에 왔다. 양극성장애로 10년째 리튬을 같은 용량으로 복용해 왔고, 3주 전 고혈압으로 히드로클로로티아지드를 새로 처방받았다. 설사나 구토는 없었고 약을 한꺼번에 많이 먹지는 않았다. 혈압 138/86 mmHg, 맥박 58회/분, 체온 37.0℃이다. 의식은 기면 상태이고 거친 진전, 근간대경련, 사지 반사항진, 실조성 보행이 있다. 혈액검사: 혈청 리튬 3.4 mEq/L(치료 범위 0.6~1.2), 나트륨 146 mEq/L, 칼륨 4.0 mEq/L, 크레아티닌 2.1 mg/dL(3개월 전 0.8). 심전도에서 동서맥 외 이상은 없다. 가장 적절한 치료는? A. 폴리스티렌설폰산나트륨 경구 투여 B. 푸로세미드 정주로 이뇨 촉진 C. 응급 혈액투석 D. 0.9% 식염수 정주 후 경과관찰 E. 활성탄 경구 투여"
+  },
+  {
+   "id": "imaging-2026-0071",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 고령 세균성 수막염 경험적 치료",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0071.md",
+   "snippet": "A 64 year old man is brought to the emergency department because of fever, headache, and confusion for 12 hours. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin; he has no drug allergies. His temperatu",
+   "text": "감염 감염 — 고령 세균성 수막염 경험적 치료 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c A 64 year old man is brought to the emergency department because of fever, headache, and confusion for 12 hours. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin; he has no drug allergies. His temperature is 39.4°C, pulse is 110/min, and blood pressure is 142/88 mm Hg. He is drowsy but arousable and has nuchal rigidity; there is no papilledema, rash, or focal neurologic deficit. Blood cultures are obtained. Lumbar puncture shows an opening pressure of 28 cm H2O, leukocyte count 2,100/mm3 (88% neutrophils), protein 240 mg/dL, and glucose 22 mg/dL (serum glucose 160 mg/dL). Gram stain of the cerebrospinal fluid shows no organisms. Which of the following is the most appropriate empiric antimicrobial regimen? A. Ampicillin and gentamicin B. Vancomycin, ceftriaxone, and ampicillin C. Vancomycin and ceftriaxone D. Ceftriaxone and ampicillin E. Vancomycin, cefepime, and metronidazole"
+  },
+  {
+   "id": "imaging-2026-0070",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 혈전성 혈소판감소 자반증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0070.md",
+   "snippet": "34세 여자가 3일 전부터 두통과 말이 어눌해지는 증상이 있고 오늘 아침 잠깐 정신이 혼미해져 응급실에 왔다. 최근 감기약 외에 복용한 약은 없고 설사는 없었다. 혈압 132/84 mmHg, 맥박 104회/분, 체온 38.0℃이다. 팔다리에 점상출혈이 흩어져 있고 결막이 창백하며 경한 황달이 있다. 혈액검사: 혈색소 7.8 g/dL, 혈소판 14,000/μL, 백혈구 9,800/μL, 망상적혈구 6%, 총빌리루빈 3.1 mg/",
+   "text": "혈액·종양 혈액·종양 — 혈전성 혈소판감소 자반증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c 34세 여자가 3일 전부터 두통과 말이 어눌해지는 증상이 있고 오늘 아침 잠깐 정신이 혼미해져 응급실에 왔다. 최근 감기약 외에 복용한 약은 없고 설사는 없었다. 혈압 132/84 mmHg, 맥박 104회/분, 체온 38.0℃이다. 팔다리에 점상출혈이 흩어져 있고 결막이 창백하며 경한 황달이 있다. 혈액검사: 혈색소 7.8 g/dL, 혈소판 14,000/μL, 백혈구 9,800/μL, 망상적혈구 6%, 총빌리루빈 3.1 mg/dL(직접 0.4), LDH 1,450 U/L, 크레아티닌 1.4 mg/dL, PT·aPTT 정상, 피브리노겐 320 mg/dL. 말초혈액도말에서 분열적혈구가 고배율 시야당 5~6개 보인다. 가장 적절한 치료는? A. 신선동결혈장 수혈 후 경과관찰 B. 혈장교환술 C. 혈소판 수혈 D. 고용량 정맥 면역글로불린 E. 에쿨리주맙 정주"
+  },
+  {
+   "id": "imaging-2026-0069",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 교액성 소장폐색",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0069.md",
+   "snippet": "68세 여자가 2일 전부터 배가 아프고 토해서 응급실에 왔다. 15년 전 자궁절제술을 받았고 그 뒤 비슷한 통증으로 두 번 입원해 금식과 수액으로 좋아진 적이 있다. 처음에는 쥐어짜듯 아프다가 6시간 전부터 오른쪽 아랫배가 계속 아프다고 한다. 혈압 100/60 mmHg, 맥박 118회/분, 체온 38.4℃이다. 배가 팽만되고 오른쪽 아랫배에 반발압통과 근육강직이 있으며 장음은 거의 들리지 않는다. 혈액검사: 백혈구 19,20",
+   "text": "외과 외과계 — 교액성 소장폐색 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c 68세 여자가 2일 전부터 배가 아프고 토해서 응급실에 왔다. 15년 전 자궁절제술을 받았고 그 뒤 비슷한 통증으로 두 번 입원해 금식과 수액으로 좋아진 적이 있다. 처음에는 쥐어짜듯 아프다가 6시간 전부터 오른쪽 아랫배가 계속 아프다고 한다. 혈압 100/60 mmHg, 맥박 118회/분, 체온 38.4℃이다. 배가 팽만되고 오른쪽 아랫배에 반발압통과 근육강직이 있으며 장음은 거의 들리지 않는다. 혈액검사: 백혈구 19,200/μL, 젖산 4.1 mmol/L. 복부 X선에서 소장이 확장되고 여러 개의 공기액체층이 보이며 대장에는 가스가 거의 없다. 가장 적절한 처치는? A. 수용성 조영제 투여 후 8시간 뒤 X선 추적 B. 대장내시경 감압 C. 광범위 항생제 투여 후 48시간 재평가 D. 응급 개복술과 장 생존능 평가 E. 비위관 감압과 수액 투여 후 경과관찰"
+  },
+  {
+   "id": "imaging-2026-0068",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 담석 췌장염 후 담낭절제 시기",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0068.md",
+   "snippet": "A 46 year old woman is admitted because of 12 hours of severe epigastric pain radiating to the back, with nausea and vomiting. She has had two similar but milder episodes after fatty meals during the past year. She does not drink alcohol. H",
+   "text": "소화기 소화기·간담췌 — 담석 췌장염 후 담낭절제 시기 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c A 46 year old woman is admitted because of 12 hours of severe epigastric pain radiating to the back, with nausea and vomiting. She has had two similar but milder episodes after fatty meals during the past year. She does not drink alcohol. Her temperature is 37.6°C, pulse is 96/min, and blood pressure is 128/80 mm Hg. The abdomen is tender in the epigastrium without guarding; there is no jaundice. Serum lipase is 2,400 U/L (N < 60), alanine aminotransferase 210 U/L, total bilirubin 1.9 mg/dL, and white blood cell count 12,800/mm3. Ultrasonography shows multiple gallstones with a common bile duct diameter of 5 mm and no ductal stone. She is treated with intravenous fluids and analgesia; by hospital day 3 she is eating and pain free, and total bilirubin is 0.8 mg/dL. Which of the following is the most appropriate next step in management? A. Laparoscopic cholecystectomy 6 weeks after discharge B. Magnetic resonance cholangiopancreatography before discharge C. Ursodeoxycholic acid and follow up in 3 months D. Laparoscopic cholecystectomy during this admission E. Endoscopic retrograde cholangiopancreatography with sphincterotomy"
+  },
+  {
+   "id": "imaging-2026-0067",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 췌장 베타세포와 혈당강하제",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0067.md",
+   "snippet": "A 73 year old woman with type 2 diabetes mellitus undergoes distal pancreatectomy for a mucinous cystic neoplasm of the pancreatic tail. Her diabetes has been treated with metformin for 8 years; hemoglobin A1c is 8.4%. She has no history of",
+   "text": "내분비 내분비 — 췌장 베타세포와 혈당강하제 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c A 73 year old woman with type 2 diabetes mellitus undergoes distal pancreatectomy for a mucinous cystic neoplasm of the pancreatic tail. Her diabetes has been treated with metformin for 8 years; hemoglobin A1c is 8.4%. She has no history of pancreatitis and does not drink alcohol. Her body mass index is 31 kg/m2, blood pressure is 134/82 mm Hg, and serum creatinine is 0.9 mg/dL. A photomicrograph of a section of uninvolved pancreas from the specimen, stained by immunohistochemistry for insulin (brown), is shown. Which of the following drugs acts directly on the brown stained cells to lower her blood glucose? A. Glimepiride B. Metformin C. Empagliflozin D. Pioglitazone E. Acarbose"
+  },
+  {
+   "id": "imaging-2026-0066",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 원위 요골 성장판 골절",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0066.md",
+   "snippet": "8세 여아가 3주 전 자전거에서 넘어져 오른손을 짚은 뒤 손목이 아파 다른 병원에서 부목을 대고 지내다가, 손목이 조금 휘어 보인다며 부모와 함께 병원에 왔다. 통증은 처음보다 많이 줄었고 손가락 움직임과 감각은 정상이다. 진찰에서 오른쪽 손목 등쪽이 약간 튀어나와 있고 압통은 경미하며 피부 손상은 없다. 오른쪽 손목 측면 단순 X선 사진은 그림과 같다. 가장 적절한 처치는? A. 골간단 절골술로 각형성을 교정한다 B. 부목을",
+   "text": "소아과 소아청소년 — 원위 요골 성장판 골절 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c 8세 여아가 3주 전 자전거에서 넘어져 오른손을 짚은 뒤 손목이 아파 다른 병원에서 부목을 대고 지내다가, 손목이 조금 휘어 보인다며 부모와 함께 병원에 왔다. 통증은 처음보다 많이 줄었고 손가락 움직임과 감각은 정상이다. 진찰에서 오른쪽 손목 등쪽이 약간 튀어나와 있고 압통은 경미하며 피부 손상은 없다. 오른쪽 손목 측면 단순 X선 사진은 그림과 같다. 가장 적절한 처치는? A. 골간단 절골술로 각형성을 교정한다 B. 부목을 제거하고 즉시 관절운동을 시작한다 C. 부목 고정을 유지하며 재형성을 기다리고 성장을 추적한다 D. 마취 후 도수 정복하고 장상지 석고 고정을 한다 E. 관혈적 정복과 금속핀 고정을 한다"
+  },
+  {
+   "id": "imaging-2026-0065",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 뇌 MRI 시퀀스 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0065.md",
+   "snippet": "A 28 year old man comes to the physician because of headaches for 3 weeks. The headaches are worse in the morning and are accompanied by nausea. He has no history of seizures or head trauma and takes no medications. He is alert and oriented",
+   "text": "신경 신경 — 뇌 MRI 시퀀스 판독 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c A 28 year old man comes to the physician because of headaches for 3 weeks. The headaches are worse in the morning and are accompanied by nausea. He has no history of seizures or head trauma and takes no medications. He is alert and oriented; visual fields, cranial nerves, strength, sensation, and gait are normal, and there is no papilledema. MRI of the brain is ordered. An axial image at the level of the lateral ventricles, obtained before administration of contrast material, is shown. Which of the following pulse sequences was used to obtain this image? A. T2 weighted fast spin echo B. Fluid attenuated inversion recovery (FLAIR) C. Diffusion weighted imaging (DWI) D. Susceptibility weighted imaging (SWI) E. T1 weighted spin echo"
+  },
+  {
+   "id": "imaging-2026-0064",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 패혈성 쇼크 초기 소생",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c",
+   "confidence": "high",
+   "date": "2026-09-19",
+   "path": "content/imaging/2026/imaging-2026-0064.md",
+   "snippet": "55세 남자가 5일 전부터 발열과 기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압으로 암로디핀을 복용하며 심장병 병력은 없다. 혈압 82/48 mmHg, 맥박 122회/분, 호흡 32회/분, 체온 39.1℃이고, 비재호흡마스크 15 L/분에서 산소포화도 92% 이다. 양쪽 폐에서 거품소리가 들리고 경정맥 팽대와 다리 부종은 없다. 혈액검사: 백혈구 18,500/μL, 젖산 4.2 mmol/L, 크레아티닌 1.6 m",
+   "text": "응급·중환자 응급·중환자 — 패혈성 쇼크 초기 소생 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260919T202441Z_일일영상_2026-09-20_9units_9q_a38e089c 55세 남자가 5일 전부터 발열과 기침이 있다가 이틀 전부터 숨이 차서 응급실에 왔다. 고혈압으로 암로디핀을 복용하며 심장병 병력은 없다. 혈압 82/48 mmHg, 맥박 122회/분, 호흡 32회/분, 체온 39.1℃이고, 비재호흡마스크 15 L/분에서 산소포화도 92% 이다. 양쪽 폐에서 거품소리가 들리고 경정맥 팽대와 다리 부종은 없다. 혈액검사: 백혈구 18,500/μL, 젖산 4.2 mmol/L, 크레아티닌 1.6 mg/dL. 침상 심초음파에서 좌심실 수축은 정상이고 하대정맥은 가늘며 호흡에 따라 잘 허탈된다. 이동식 흉부 X선 사진은 그림과 같다. 혈액배양 채취와 항생제 투여를 시작하면서 함께 해야 할 처치로 가장 적절한 것은? A. 정질액 30 mL/kg 급속 정주 B. 노르에피네프린 지속 정주 시작 C. 하이드로코르티손 200 mg/일 정주 D. 푸로세미드 40 mg 정주 E. 5% 알부민 500 mL 정주"
   },
   {
    "id": "anatomy-daily-2026-09-19",
