@@ -177,7 +177,10 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 근거를 확인하지 못한 임상적 주장이 있으면 `needs_revision` 으로 둔다.
 
 ### 3) 오답 뒤 학습 흐름 필드(선택 — 가능하면 붙인다)
-- `objective`: 이 문항이 평가하는 **학습 목표**의 정리본 id(`content/concepts/<과>/cn.*.md`). 같은 원리를 묻는 문항은
+- `objective`: **2026-09-21 이후 새로 만드는 KMLE·USMLE 문항에는 반드시 붙인다.** 이 문항이 평가하는
+  **학습 목표**의 정리본 id(`content/concepts/<과>/cn.*.md`). 기존 목표로 묶을 수 있으면 그 id 를 쓰고, 새 목표면
+  id 만 붙여 둔다 — 정리본은 내가 그 문항을 틀렸을 때 `/gen-concept` 큐가 자동으로 집어 간다(하루 상한 안에서).
+  같은 원리를 묻는 문항은
   같은 id 로 모은다. 질환명이 같아도 목표(진단/치료/검사 선택)가 다르면 다른 id. 정리본이 없으면 id 만 붙여도 된다 —
   학습서에 「정리본 작성 대기」로 잡히고, 다음에 정리본(`schemas/frontmatter.md` concept 계약)을 쓴다.
 - `distractors`: 보기별 `tempting`·`answer_first`·`discriminator`(+타당할 때만 `when_right`, 도식 노드 `split`).

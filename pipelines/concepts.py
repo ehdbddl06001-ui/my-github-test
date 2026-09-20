@@ -39,6 +39,9 @@ TABLE_ROLES = ("differential", "treatment", "criteria", "severity", "tests", "mo
 # 본문·표·혼동 항목 안의 근거 표시: [[출처id]] · [[출처id: 쪽·절·표]] · [[?출처id: …]](? = 이 주장은 원문 미대조)
 CITE_RE = re.compile(r"\[\[(\?)?([a-z0-9][a-z0-9-]*)(?::\s*([^\]]+?))?\s*\]\]")
 LETTERS = "ABCDE"
+# 이 날짜 이후에 만든 KMLE·USMLE 문항은 학습 목표를 붙인다 — 오답이 이론 정리본으로 이어지게(2026-09-20 사용자 지시).
+# 없다고 게시를 막지는 않는다(WARN) — 옛 문항 1,200여 개를 소급해서 막으면 매일 루틴이 멈춘다.
+OBJECTIVE_REQUIRED_FROM = "2026-09-21"
 MODEL_NAMES = re.compile(r"(claude|gpt|gemini|llama|model|모델|\bai\b)", re.IGNORECASE)
 
 
