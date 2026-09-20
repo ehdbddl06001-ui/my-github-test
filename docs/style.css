@@ -440,3 +440,21 @@ button.small{padding:6px 10px; font-size:.85rem}
 .deep-body .dp{margin:0 0 10px}
 .deep-body .dp:last-child{margin-bottom:0}
 .explanation .enum{font-weight:700; color:#8fb3ff; margin-right:2px}
+
+/* 좁은 화면(핸드폰): 검사 소견 표를 줄 단위로 편다 — 3열 고정이면 첫 칸이 글자 단위로 쪼개진다.
+   글씨를 줄이는 대신 폭을 다 쓰게 한다(2026-09-20 사용자 요청). */
+@media (max-width: 600px){
+  .db-labs, .db-labs tbody, .db-labs tr, .db-labs td{display:block; width:auto}
+  .db-labs thead{display:none}
+  .db-labs tr{padding:7px 0; border-bottom:1px solid #16202e}
+  .db-labs tr:last-child{border-bottom:none}
+  .db-labs td{padding:0; border:none; line-height:1.45}
+  .db-labs td:first-child{color:#9cc3ff; font-weight:600; font-size:.84rem}
+  .db-labs td:nth-child(2){font-size:.95rem}
+  .db-labs td.ref{color:var(--muted); font-size:.8rem; white-space:normal}
+  .db-labs td.ref:not(:empty)::before{content:"참고치 "}
+  .db-labs td.ref:empty{display:none}
+  /* 부록 가이드라인: 고정폭 글꼴은 한글이 띄엄띄엄 보인다 — 좁은 화면에서는 본문 글꼴로 */
+  .guide-table{font-family:inherit; font-size:.86rem; line-height:1.5; padding:10px}
+  .databox{padding:10px 12px}
+}
