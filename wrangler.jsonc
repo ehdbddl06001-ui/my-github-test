@@ -1,0 +1,22 @@
+// Cloudflare 배포 설정 — 두 갈래 중 「Workers(Builds)」로 가져올 때 쓴다.
+//
+// 대시보드 두 흐름의 차이(2026-09-20 확인):
+//   Pages   : Workers & Pages → Create application → Pages → Connect to Git.
+//             빌드 명령 비움 · 빌드 출력 디렉터리 `docs`. 이 파일은 쓰이지 않고 `functions/` 가 그대로 함수가 된다.
+//   Workers : 저장소 가져오기 화면에 「배포 명령 npx wrangler deploy」가 있다. 그때 이 파일이 필요하다 —
+//             `docs/` 를 정적 자산으로 서비스하고, 자산에 없는 경로(/api/…)만 `src/worker.js` 가 처리한다.
+//             함수 코드는 `functions/api/*.js` 하나뿐이고 worker 가 그것을 불러 쓴다(두 벌로 늘리지 않는다).
+//
+// 환경 변수(GITHUB_TOKEN·SYNC_KEY 등)는 여기 적지 않는다 — 대시보드의 Settings ▸ Variables and Secrets 에만 둔다.
+{
+  "name": "medkos",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-19",
+  "assets": {
+    "directory": "./docs",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
