@@ -2,9 +2,50 @@
  "generated": "",
  "note": [],
  "link": [],
+ "gap": [
+  {
+   "book": "소아청소년과",
+   "slot": "peds.hemonc",
+   "title": "소아 혈액종양 — 빈혈·백혈병·고형종양",
+   "source": "",
+   "chapters": [],
+   "have": 1
+  },
+  {
+   "book": "순환기내과",
+   "slot": "h256",
+   "title": "Electrical Storm and Incessant Ventricular Tachycardia",
+   "source": "해리슨 21판 256장",
+   "chapters": [
+    256
+   ],
+   "have": 1
+  },
+  {
+   "book": "신장내과",
+   "slot": "h54",
+   "title": "Hypercalcemia and Hypocalcemia",
+   "source": "해리슨 21판 54장",
+   "chapters": [
+    54
+   ],
+   "have": 1
+  },
+  {
+   "book": "피부과",
+   "slot": "h58",
+   "title": "Skin Manifestations of Internal Disease",
+   "source": "해리슨 21판 58장",
+   "chapters": [
+    58
+   ],
+   "have": 1
+  }
+ ],
  "counts": {
   "note": 0,
   "link": 0,
+  "gap": 4,
   "wrong_objectives_with_note": 1
  }
 }

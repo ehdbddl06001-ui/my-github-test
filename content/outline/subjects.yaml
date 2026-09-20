@@ -1,0 +1,368 @@
+# 과별 학습서의 「기본틀」 — 단원이 쌓이는 순서. 2026-09-21 사용자 지시로 만든다.
+#
+# 왜: 오답이 생기는 대로 정리본을 쓰면 심전도 → 심근경색 → 심근병증 → 다시 심전도 처럼 흩어진다.
+# 이 파일이 각 과의 **읽는 순서**를 미리 정해 두면, 나중에 어떤 단원이 추가돼도 책 안에서 제자리에 꽂힌다.
+#
+# 순서의 기준: 해리슨 21판의 서술 순서(부 → 절 → 장). 장 번호·제목·쪽은 `harrison_toc.json` 에 이미 뽑혀 있어
+# **순서를 정할 때 해리슨 PDF 를 다시 열지 않는다.** 정리본을 쓸 때도 그 슬롯의 `chapters` 가 가리키는
+# 장만 읽으면 된다(`python pipelines/harrison_read.py --chapter N`).
+#
+# 항목 형식(순서대로 적은 것이 그대로 책의 순서다):
+#   - chapters: "236-283"        → 그 범위의 **장마다 슬롯 하나**. id 는 h236…, 제목은 해리슨 장 제목.
+#   - id: ob.normal-pregnancy    → 손으로 적는 슬롯 하나. 해리슨에 없는 과(산부인과·소아과·외과…)에 쓴다.
+#     title: "정상 임신과 산전 관리"
+#     chapters: "398"            → (선택) 해리슨에 관련 장이 있으면 적어 둔다. 읽을 곳을 바로 알 수 있다.
+#
+# 규칙
+#   - 해리슨의 한 장은 **한 과에만** 넣는다(같은 장이 두 책에 슬롯으로 생기지 않게). outline.py 가 검사한다.
+#   - 492개 장이 모두 어딘가에 배정돼야 한다. 빠지면 outline.py 가 오류를 낸다.
+#   - 책 이름은 `pipelines/books_config.yaml` 의 books 값과 같아야 한다.
+#   - 정리본은 frontmatter 의 `outline:` 에 슬롯 id 를 적는다. 없으면 책 맨 뒤 「배치 대기」로 간다(린터 WARN).
+
+version: 1
+harrison: content/outline/harrison_toc.json
+
+subjects:
+  - book: 내과 총론
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "1-12"        # PART 1 의료의 본질·예방·의사결정
+      - chapters: "13-17"       # PART 2 SECTION 1 통증
+      - chapters: "67-68"       # PART 3 약리학
+      - chapters: "400"         # 성소수자 건강(PART 12 SECTION 2 에서 이쪽으로)
+      - chapters: "466-471"     # PART 16 유전·환경과 질병
+      - chapters: "472-475"     # PART 17 국제보건
+      - chapters: "476-477"     # PART 18 노화
+      - chapters: "478-480"     # PART 19 자문 의학(수술 전 평가 등)
+      - chapters: "481-492"     # PART 20 프런티어
+
+  - book: 감염내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "18-20"       # 발열·고열·발진을 동반한 발열 — 증상 접근이 먼저다
+      - chapters: "119-235"     # PART 5 감염질환 전체(총론 → 증후군 → 병원체별)
+
+  - book: 순환기내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "21"          # 실신(PART 2 SECTION 3) — 국시에서는 순환기 증상 접근으로 다룬다
+      - chapters: "41-43"       # 부종·심잡음·두근거림
+      - chapters: "236-283"     # PART 6 총론 → 진단 → 부정맥 → 심근·판막·심막 → 관상동맥·혈관
+
+  - book: 호흡기내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "37-40"       # 호흡곤란·기침·객혈·저산소증
+      - chapters: "284-299"     # PART 7 진단 → 질환
+
+  - book: 소화기내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "44-50"       # PART 2 SECTION 6 소화기 증상
+      - chapters: "321-348"     # PART 10 소화관 → 영양 → 간·담도 → 췌장
+
+  - book: 신장내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "51-55"       # PART 2 SECTION 7 배뇨·부종·전해질 증상
+      - chapters: "308-320"     # PART 9 신장·요로
+
+  - book: 내분비내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "376-389"     # PART 12 SECTION 1 내분비(시상하부-뇌하수체 → 갑상샘 → 부신 …)
+      - chapters: "401-408"     # SECTION 3 비만·당뇨병·대사증후군
+      - chapters: "409-412"     # SECTION 4 뼈·무기질 대사
+      - chapters: "413-421"     # SECTION 5 중간대사 이상
+
+  - book: 혈액종양내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "62-66"       # 빈혈·출혈·림프절종대 등 혈액 증상
+      - chapters: "69-118"      # PART 4 종양 → 조혈 → 지혈
+
+  - book: 알레르기내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "349-351"     # 면역계 총론·일차면역결핍
+      - chapters: "352-354"     # 두드러기·혈관부종·알레르기비염 / 아나필락시스 / 비만세포증
+
+  - book: 류마티스내과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "355-369"     # 자가면역 총론 → SLE → RA → 전신경화증 → 혈관염 …
+      - chapters: "370-375"     # 관절 접근 → 골관절염 → 통풍 → 섬유근통 …
+
+  - book: 신경과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "22-31"       # 어지럼·위약·감각이상·보행·섬망·혼수·치매·수면
+      - chapters: "422-450"     # PART 13 진단 → 중추신경 → 신경·근육 → 만성피로
+
+  - book: 정신건강의학과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "451-457"     # 정신질환의 생물학 → 정신질환 → 물질사용장애
+
+  - book: 피부과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "56-61"       # 피부 접근 → 흔한 피부병 → 내과질환의 피부 소견 → 약물반응 → 광과민
+
+  - book: 안과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "32"          # 해리슨이 다루는 유일한 안과 장(눈의 질환)
+      - id: ophth.refraction
+        title: "굴절이상과 시력 검사"
+      - id: ophth.anterior
+        title: "결막·각막·공막 — 충혈된 눈의 감별"
+      - id: ophth.glaucoma
+        title: "녹내장 — 안압과 시야"
+      - id: ophth.lens
+        title: "수정체 — 백내장"
+      - id: ophth.retina
+        title: "망막·시신경 — 당뇨망막병증·황반변성·망막박리"
+      - id: ophth.strabismus
+        title: "사시·약시와 소아 안과"
+      - id: ophth.trauma
+        title: "안외상과 응급"
+
+  - book: 이비인후과
+    exams: [kmle]
+    spine: harrison
+    outline:
+      - chapters: "33-36"       # 후각·미각 / 청각 / 상기도 증상 / 구강 소견
+      - id: ent.ear-infection
+        title: "중이염·외이도염과 합병증"
+      - id: ent.vertigo
+        title: "말초성 어지럼 — 이석증·메니에르·전정신경염"
+      - id: ent.sinus
+        title: "비염·부비동염과 비출혈"
+      - id: ent.tonsil-pharynx
+        title: "편도·인두 감염과 심경부감염"
+      - id: ent.larynx
+        title: "후두 — 음성 변화·기도 확보"
+      - id: ent.head-neck-tumor
+        title: "두경부 종양과 침샘 질환"
+
+  - book: 응급의학과
+    exams: [kmle, usmle]
+    spine: harrison
+    outline:
+      - chapters: "300-307"     # PART 8 중환자 — 접근 → ARDS·기계환기 → 쇼크·패혈증·심정지 → 신경중환자
+      - chapters: "458-461"     # PART 14 중독·약물과량·교상
+      - chapters: "462-465"     # PART 15 고산·잠수·저체온·열손상
+      - id: em.trauma
+        title: "외상 초기 평가(ATLS) — 기도·호흡·순환의 순서"
+      - id: em.trauma-region
+        title: "부위별 외상 — 두부·흉부·복부·골반"
+      - id: em.burn
+        title: "화상과 흡입손상"
+      - id: em.triage
+        title: "중증도 분류와 재난 대응"
+
+  - book: 산부인과
+    exams: [kmle, usmle]
+    spine: mixed
+    outline:
+      - id: ob.anatomy-cycle
+        title: "여성 생식기의 구조와 월경주기"
+        chapters: "392"
+      - id: ob.sex-development
+        title: "성분화와 그 이상"
+        chapters: "390"
+      - id: gyn.menstrual
+        title: "월경 이상과 골반통"
+        chapters: "393"
+      - id: gyn.hirsutism-pcos
+        title: "다모증과 다낭난소증후군"
+        chapters: "394"
+      - id: gyn.infertility
+        title: "불임과 피임"
+        chapters: "396"
+      - id: gyn.menopause
+        title: "폐경과 호르몬 치료"
+        chapters: "395"
+      - id: gyn.sexual-dysfunction
+        title: "성기능 장애"
+        chapters: "397"
+      - id: ob.normal-pregnancy
+        title: "정상 임신 — 생리 변화와 산전 관리"
+      - id: ob.prenatal-dx
+        title: "산전 진단과 태아 안녕 평가"
+      - id: ob.medical-complications
+        title: "임신 중 내과 질환(임신성 고혈압·당뇨·심장병)"
+        chapters: "398"
+      - id: ob.bleeding
+        title: "임신 중 출혈 — 전치태반·태반조기박리·유산"
+      - id: ob.labor
+        title: "정상 분만과 진통의 이상"
+      - id: ob.operative
+        title: "제왕절개·기구분만과 분만 손상"
+      - id: ob.postpartum
+        title: "산후 출혈·산후 감염·수유"
+      - id: gyn.infection
+        title: "생식기 감염과 성매개감염"
+      - id: gyn.benign
+        title: "자궁근종·자궁내막증·난소 낭종"
+      - id: gyn.urogyn
+        title: "골반장기탈출증과 요실금"
+      - id: gyn.oncology
+        title: "부인암 — 자궁경부·자궁내막·난소·융모성 질환"
+
+  - book: 소아청소년과
+    exams: [kmle, usmle]
+    spine: generic
+    outline:
+      - id: peds.growth
+        title: "성장과 발달 — 정상 지표와 평가"
+      - id: peds.nutrition
+        title: "영양과 수유, 비타민 결핍"
+      - id: peds.newborn
+        title: "신생아 — 이행기 적응·황달·호흡곤란"
+      - id: peds.genetic
+        title: "선천 기형과 유전 질환, 대사 이상 선별"
+      - id: peds.vaccine
+        title: "예방접종과 건강 감시"
+      - id: peds.infection
+        title: "소아 감염 — 발진열성 질환·상기도·요로"
+      - id: peds.respiratory
+        title: "소아 호흡기 — 크룹·세기관지염·천식"
+      - id: peds.cardiac
+        title: "선천 심질환과 가와사키병"
+      - id: peds.gi
+        title: "소아 소화기 — 구토·설사·복통"
+      - id: peds.renal
+        title: "소아 신장 — 신증후군·사구체신염·요로감염"
+      - id: peds.neuro
+        title: "소아 신경 — 열성경련·간질·신경발달"
+      - id: peds.hemonc
+        title: "소아 혈액종양 — 빈혈·백혈병·고형종양"
+      - id: peds.endo
+        title: "소아 내분비 — 성장호르몬·사춘기·당뇨"
+      - id: peds.emergency
+        title: "소아 응급과 학대"
+
+  - book: 외과
+    exams: [kmle, usmle]
+    spine: generic
+    outline:
+      - id: surg.perioperative
+        title: "수술 전 평가와 수술 후 관리"
+      - id: surg.fluid-nutrition
+        title: "수술 환자의 수액·전해질·영양"
+      - id: surg.wound-infection
+        title: "상처 치유와 수술 부위 감염"
+      - id: surg.acute-abdomen
+        title: "급성 복증의 접근"
+      - id: surg.upper-gi
+        title: "식도·위 — 역류·위암·천공"
+      - id: surg.hepatobiliary
+        title: "간·담도·췌장 외과"
+      - id: surg.lower-gi
+        title: "소장·대장·항문 — 장폐색·충수염·대장암"
+      - id: surg.hernia
+        title: "탈장"
+      - id: surg.breast-endocrine
+        title: "유방·갑상샘 외과"
+      - id: surg.vascular
+        title: "혈관 외과 — 동맥류·말초동맥질환·정맥"
+      - id: surg.transplant
+        title: "이식과 면역억제"
+
+  - book: 정형외과
+    exams: [kmle]
+    spine: generic
+    outline:
+      - id: ortho.fracture-basics
+        title: "골절 총론 — 치유·고정·합병증"
+      - id: ortho.upper-limb
+        title: "상지 골절과 탈구"
+      - id: ortho.lower-limb
+        title: "하지 골절과 탈구"
+      - id: ortho.spine
+        title: "척추 — 추간판 탈출·협착·척추 골절"
+      - id: ortho.sports
+        title: "인대·연골 손상과 스포츠 손상"
+      - id: ortho.pediatric
+        title: "소아 정형 — 성장판 손상·고관절 이형성"
+      - id: ortho.infection-tumor
+        title: "골수염·화농성 관절염과 골종양"
+
+  - book: 비뇨의학과
+    exams: [kmle]
+    spine: mixed
+    outline:
+      - id: uro.male-repro
+        title: "남성 생식계와 고환 질환"
+        chapters: "391"
+      - id: uro.mens-health
+        title: "남성 건강과 선별검사"
+        chapters: "399"
+      - id: uro.luts
+        title: "하부요로증상과 배뇨장애"
+      - id: uro.infection
+        title: "요로감염과 전립선염"
+      - id: uro.stone
+        title: "요로결석"
+      - id: uro.tumor
+        title: "비뇨기 종양 — 신장·방광·전립선·고환"
+      - id: uro.trauma
+        title: "비뇨기 외상과 응급(고환 염전·요폐)"
+
+  - book: 예방의학
+    exams: [kmle]
+    spine: generic
+    outline:
+      - id: prev.epi-measures
+        title: "역학 지표 — 유병률·발생률·위험도"
+      - id: prev.study-design
+        title: "연구 설계와 비뚤림"
+      - id: prev.test-validity
+        title: "검사의 타당도 — 민감도·특이도·예측도"
+      - id: prev.statistics
+        title: "보건통계와 가설검정"
+      - id: prev.screening
+        title: "선별검사와 국가 건강검진"
+      - id: prev.infection-control
+        title: "감염병 관리와 역학조사"
+      - id: prev.occupational
+        title: "직업환경보건"
+      - id: prev.health-system
+        title: "보건의료체계와 의료법규"
+
+  - book: 기초의학
+    exams: [usmle]
+    spine: generic
+    outline:
+      - id: basic.biochem
+        title: "생화학 — 대사 경로와 효소 결핍"
+      - id: basic.genetics
+        title: "유전 — 유전 양식과 분자유전"
+      - id: basic.cell-physio
+        title: "세포·막 생리와 신호전달"
+      - id: basic.organ-physio
+        title: "계통 생리 — 심혈관·호흡·신장·내분비"
+      - id: basic.pathology
+        title: "병리 총론 — 손상·염증·종양"
+      - id: basic.micro
+        title: "미생물 — 세균·바이러스·진균·기생충"
+      - id: basic.immuno
+        title: "면역 — 선천·획득 면역과 과민반응"
+      - id: basic.pharm
+        title: "약리 — 약동학·약력학과 계통별 약물"

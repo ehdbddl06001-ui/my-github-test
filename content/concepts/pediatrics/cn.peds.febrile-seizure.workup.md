@@ -6,6 +6,7 @@ see_also: [Neurology]
 date: 2026-09-18
 updated: 2026-09-18
 version: 1
+outline: peds.neuro            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
 title: "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우"

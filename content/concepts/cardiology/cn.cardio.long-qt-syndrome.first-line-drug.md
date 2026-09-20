@@ -6,6 +6,7 @@ see_also: [Pediatrics, Emergency Medicine]
 date: 2026-09-21
 updated: 2026-09-21
 version: 1
+outline: h255            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
 title: "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지"
@@ -17,7 +18,7 @@ summary:
   - "QT 간격은 심실 활동전위의 길이다. 재분극은 주로 두 칼륨 전류(IKr·IKs)가 맡고, 이 중 하나가 약해져도 나머지가 메우는 「재분극 예비력」이 있다 — 선천 QT연장증후군은 이 예비력이 유전적으로 깎인 상태다."
   - "재분극이 길어지면 활동전위 고평부에서 칼슘 통로가 다시 열려 조기후탈분극(EAD)이 생기고, 이것이 방아쇠가 되어 다형 심실빈맥(토르사드 드 푸앵트)이 난다. 실신과 급사는 이 부정맥의 결과다."
   - "진단은 12유도 심전도의 QTc(반복 측정 ≥480 ms, 또는 진단 점수 >3)로 하되, 약물·저칼륨·저마그네슘·서맥 같은 후천 원인을 먼저 걸러야 한다 — 후천 원인이 있으면 그 원인을 고치는 것이 치료다."
-  - "1차 치료는 증상 유무와 무관하게 비선택 베타차단제(나돌롤·프로프라놀롤)다. 교감신경 자극이 IKs 의존 재분극 단축을 요구하는데 LQT1 은 그 통로가 없어 운동·수영에서 부정맥이 나기 때문이다. QT 를 늘리는 항부정맥제(소탈롤·아미오다론·IA군)는 금기다."
+  - "1차 치료는 증상 유무와 무관하게 비선택 베타차단제(나돌롤·프로프라놀롤)다. 교감신경 자극이 IKs 의존 재분극 단축을 요구하는데 LQT1 은 그 통로가 없어 운동·수영에서 부정맥이 나기 때문이다. QT 를 늘리는 항부정맥제(소탈롤·아미오다론·IA군)는 금기다. 유전자 양성이지만 QTc 가 정상인 사람에게도 QT 연장 약물 회피는 그대로 적용된다 [[harrison-21: 255장 p.1925]]."
   - "베타차단제로도 실신·토르사드가 재발하거나 심정지 병력이 있으면 ICD·좌심장 교감신경 절제술·(LQT3) 메실레틴을 더한다 — 첫 진단에서 ICD 부터 넣지 않는다."
 pitfalls:
   - contrast: "「심실빈맥 예방 = 아미오다론·소탈롤」 vs QT연장증후군"
@@ -71,6 +72,15 @@ criteria:
     basis: current
     exams: [kmle, usmle]
 sources:
+  - id: harrison-21
+    org: "McGraw Hill"
+    title: "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 255: Polymorphic Ventricular Tachycardia and Ventricular Fibrillation"
+    kind: textbook
+    year: 2022
+    citation: "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 255장 p.1923–1926"
+    checked_at: 2026-09-21
+    checked: "본문 대조(드라이브 PDF, 255장 p.1925) — LQT1/LQT2 에서 비선택 베타차단제(나돌롤·프로프라놀롤)를 선호한다는 서술, LQT1 은 운동(특히 수영)·LQT2 는 소리·감정·LQT3 는 수면 중 발생, 위험 표지(QTc >500 ms·여성·실신/심정지 병력), 베타차단제에도 실신이 반복되면 ICD 고려, 유전자 양성이며 QTc 정상인 사람을 포함해 QT 연장 약물 회피가 필수라는 서술을 확인했다"
+    verified: text
   - id: esc-va-2022
     org: "European Society of Cardiology"
     title: "2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death"
@@ -253,7 +263,7 @@ QT 가 길다고 곧 선천형이 아니다. 약물·전해질·서맥·갑상�
 ## 치료 — 단계별로 무엇을 더하나
 치료의 축은 「교감신경 방아쇠를 끊고, 재분극 예비력을 더 깎지 않는 것」이다(치료 비교표).
 
-- **1차: 비선택 베타차단제(나돌롤·프로프라놀롤)** — QT 연장이 기록된 환자에게 증상 유무와 무관하게 권고된다. 나돌롤은 반감기가 길어 하루 1~2회로 혈중 농도가 고르고, 관찰 자료에서 메토프롤롤보다 돌파 사건이 적었다 [[?esc-va-2022]] [[chockalingam-2012]]. 서맥·피로·천식 악화를 감시하고, 복용 중단이 사건의 흔한 계기임을 교육한다.
+- **1차: 비선택 베타차단제(나돌롤·프로프라놀롤)** — QT 연장이 기록된 환자에게 증상 유무와 무관하게 권고된다. 해리슨도 LQT1·LQT2 에서 비선택 약제를 선호한다고 적는다 [[harrison-21: 255장 p.1925]]. 나돌롤은 반감기가 길어 하루 1~2회로 혈중 농도가 고르고, 관찰 자료에서 메토프롤롤보다 돌파 사건이 적었다 [[?esc-va-2022]] [[chockalingam-2012]]. 서맥·피로·천식 악화를 감시하고, 복용 중단이 사건의 흔한 계기임을 교육한다.
 - **모든 환자: QT 연장 약물 회피, 전해질 유지, 유발 상황 관리** — 새 처방마다 목록(crediblemeds)을 확인하고, 구토·설사 뒤 칼륨을 보충한다. LQT1 은 경쟁 수영을 제한하고, LQT2 는 침실의 알람·전화 소리를 줄인다.
 - **추가: 메실레틴** — LQT3 에서 베타차단제에 더한다. 다른 유전형에는 근거가 없다.
 - **강화: 좌심장 교감신경 절제술(LCSD)** — 베타차단제 불내성·금기, 약물 중 실신 반복, ICD 거부 또는 ICD 다발 쇼크에서 권고된다.

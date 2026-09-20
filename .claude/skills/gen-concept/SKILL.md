@@ -27,6 +27,29 @@ python pipelines/concept_queue.py --limit <오늘 상한>
 - 문항에는 `objective` 와 함께 가능하면 `distractors`(보기별 tempting·answer_first·discriminator·when_right·split)와
   `case_path`(도식 노드 경로, 문항에 없는 정보는 `state: unknown`)를 적는다 — 형식은 린터가 본다.
 
+## 자리 정하기 — 기본틀 슬롯(`outline`)
+
+정리본은 과별 학습서 안에서 **해리슨 21판의 서술 순서**로 꽂힌다. 그 자리를 frontmatter `outline:` 에 적는다.
+
+```
+python pipelines/outline.py --book 순환기내과 --gaps     # 그 과의 빈 자리
+python pipelines/outline.py --find "arrhythmia"          # 슬롯·해리슨 장 제목 검색(PDF 를 열지 않는다)
+```
+- 슬롯 id 는 `h<장번호>`(해리슨이 다루는 주제) 또는 손으로 정한 id(`ob.labor`·`peds.neuro` 처럼 해리슨에 없는 과).
+- 한 슬롯에 정리본이 여러 개 있어도 된다(같은 장 안의 다른 학습 목표). 순서만 정해 줄 뿐이다.
+- 적을 자리가 마땅치 않으면 `content/outline/subjects.yaml` 에 슬롯을 **추가**한다(해리슨 장은 한 과에만).
+- 비워 두면 책 맨 뒤 「배치 대기」로 가고 린터가 WARN 을 낸다.
+
+## 해리슨을 읽어야 할 때 — 그 장만 읽는다
+
+```
+python pipelines/harrison_read.py --slot h255                 # 그 슬롯의 장 전체(기본 12,000자)
+python pipelines/harrison_read.py --chapter 255 --grep "QT"   # 그 장에서 맞는 줄만
+python pipelines/harrison_read.py --chapter 255 --pages 1925  # 인쇄쪽으로 더 좁히기
+```
+4,132쪽 PDF 를 통째로 뒤지지 않는다. 읽은 쪽은 `[[harrison-21: 255장 p.1925]]` 처럼 인용하고
+`sources[].verified: text` 로 올린다(본문을 저장소 파일로 저장하지 않는다 — 교과서 저작권).
+
 ## 내용 — 깊이 규칙(PDF 학습서가 이 순서로 읽힌다)
 
 정상 기능 → 이상이 생기는 기전 → 증상·검사 소견 → 감별·기준 → 치료 선택 → 반응 확인·재평가.

@@ -6,6 +6,7 @@ see_also: [Infectious Disease]
 date: 2026-09-18
 updated: 2026-09-18
 version: 2
+outline: h57            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
 title: "어루러기 — 진단 단서에서 치료 수준(국소 vs 경구 아졸)으로"

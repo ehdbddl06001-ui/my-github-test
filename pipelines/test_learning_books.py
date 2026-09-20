@@ -24,6 +24,9 @@ import concepts as C
 import decision_diagram as dd
 import drive_books as db
 import learning_log as ll
+import outline as ol
+import harrison_toc as ht
+import concept_queue as cq
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -527,6 +530,58 @@ class NewQuestionsNeedObjective(unittest.TestCase):
         d = self._doc(OBJECTIVE_REQUIRED_FROM)
         d.meta["objective"] = "cn.x.y.z"
         self.assertNotIn("objective-missing", codes(d))
+
+
+class OutlineFrame(unittest.TestCase):
+    """과별 기본틀(해리슨 서술 순서) — 2026-09-21 사용자 요청."""
+
+    def test_frame_is_complete_and_unambiguous(self):
+        books, errs = ol.load()
+        self.assertEqual(errs, [])                            # 빠진 장·중복 장·모르는 책 이름이 없다
+        self.assertIn("순환기내과", books)
+        ids = [s.id for slots in books.values() for s in slots]
+        self.assertEqual(len(ids), len(set(ids)))
+
+    def test_harrison_toc_matches_known_anchors(self):
+        self.assertEqual(ht.main(["--check"]), 0)             # PDF 없이 JSON 만으로 검사(Actions 에서도 돈다)
+
+    def test_range_parsing(self):
+        self.assertEqual(ol.parse_range("236-238"), [236, 237, 238])
+        self.assertEqual(ol.parse_range("392"), [392])
+        self.assertEqual(ol.parse_range([21, "41-42"]), [21, 41, 42])
+
+    def test_units_follow_frame_order_and_unplaced_go_last(self):
+        base, _ = C.load_concepts()
+        c_late = copy.deepcopy(base["cn.cardio.long-qt-syndrome.first-line-drug"])      # outline h255
+        c_early = copy.deepcopy(c_late)
+        c_early.update(id="cn.cardio.ecg.basics", title="심전도 기초", outline="h240")   # 해리슨 240장(심전도)
+        c_none = copy.deepcopy(c_late)
+        c_none.update(id="cn.cardio.unplaced.x", title="아직 배치 안 함", outline=None)
+        concepts = {c["id"]: c for c in (c_late, c_early, c_none)}
+        qs = {f"q{i}": {"topic": "Cardiology", "objective": c["id"], "choices": []}
+              for i, c in enumerate(concepts.values())}
+        ev = [wrong(f"e{i}", f"q{i}", c["id"], "2026-09-20T01:00:00Z", "2026-09-20")
+              for i, c in enumerate(concepts.values())]
+        units = bb.plan(concepts, qs, ll.states(ev), bb.load_config(), {})["순환기내과"].units
+        self.assertEqual([u.key for u in units], [c_early["id"], c_late["id"], c_none["id"]])
+        self.assertTrue(units[0].group)                        # 차례의 중간 머리글(해리슨 절 이름)
+
+    def test_unknown_slot_is_an_error_and_missing_slot_is_a_warning(self):
+        base, _ = C.load_concepts()
+        c = copy.deepcopy(base["cn.cardio.long-qt-syndrome.first-line-drug"])
+        c["outline"] = "h9999"
+        self.assertTrue(any("기본틀에 없다" in e for e in C.validate_concept(c)))
+        c.pop("outline")
+        errs = C.validate_concept(c)
+        self.assertTrue(any("[WARN]" in e and "outline" in e for e in errs))
+        self.assertFalse([e for e in errs if "[WARN]" not in e])
+
+    def test_gap_queue_continues_after_the_last_written_slot(self):
+        base, _ = C.load_concepts()
+        c = copy.deepcopy(base["cn.neph.hyperkalemia.first-step"])                      # outline h53
+        gaps = cq._gaps({c["id"]: c}, {}, {})
+        neph = next(g for g in gaps if g["book"] == "신장내과")
+        self.assertEqual(neph["slot"], "h54")                  # 앞(h51)이 아니라 쓴 자리 다음
 
 
 if __name__ == "__main__":
