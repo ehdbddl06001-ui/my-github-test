@@ -357,7 +357,7 @@ class SourceChecks(unittest.TestCase):
             self.assertTrue(any(v["status"] == "changed" for v in r.values()))
 
             def boom(url):
-                raise TimeoutError("network")
+                raise ValueError("지문을 읽지 못했다")                 # 일시 오류가 아닌 진짜 실패
             r = cs.run(getter=boom, out=out, today="2026-09-26")
             net = {k: v for k, v in r.items() if v.get("method") != "manual"}      # 교과서는 사람이 확인(네트워크와 무관)
             self.assertTrue(net and all(v["status"] == "failed" and "업데이트 확인 필요" in v["note"] for v in net.values()))
@@ -530,6 +530,39 @@ class NewQuestionsNeedObjective(unittest.TestCase):
         d = self._doc(OBJECTIVE_REQUIRED_FROM)
         d.meta["objective"] = "cn.x.y.z"
         self.assertNotIn("objective-missing", codes(d))
+
+
+class TransientSourceErrors(unittest.TestCase):
+    """요청 제한(429)은 「출처 개정」이 아니다 — 학습서에 경고를 찍지 않는다(2026-09-21)."""
+
+    def test_rate_limit_keeps_status_and_does_not_flag_the_book(self):
+        from urllib.error import HTTPError
+        self.assertTrue(cs.transient(HTTPError("u", 429, "Too Many Requests", {}, None)))
+        self.assertTrue(cs.transient(TimeoutError()))
+        self.assertFalse(cs.transient(HTTPError("u", 404, "Not Found", {}, None)))
+        self.assertFalse(cs.transient(ValueError("지문을 읽지 못했다")))
+
+    def test_rate_limited_run_keeps_the_previous_verdict(self):
+        from urllib.error import HTTPError
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "sc.json"
+            xml = "<PubmedArticleSet><PubmedArticle></PubmedArticle></PubmedArticleSet>"
+            ok = lambda url: xml if "eutils" in url else "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf"
+            first = cs.run(getter=ok, out=out, today="2026-09-20")
+            self.assertTrue(all(v["status"] == "ok" for v in first.values()))
+
+            def limited(url):
+                raise HTTPError(url, 429, "Too Many Requests", {}, None)
+            r = cs.run(getter=limited, out=out, today="2026-09-21")
+            net = {k: v for k, v in r.items() if v.get("method") != "manual"}
+            self.assertTrue(net)
+            for v in net.values():
+                self.assertEqual(v["status"], "ok")                   # 배너를 찍지 않는다
+                self.assertIn("일시 오류", v["note"])
+                self.assertNotIn("업데이트 확인 필요", v["note"])
+
+            r = cs.run(getter=ok, out=out, today="2026-09-22")        # 다음 실행에서 정상 확인
+            self.assertTrue(all("일시 오류" not in v["note"] for v in r.values()))
 
 
 class OutlineFrame(unittest.TestCase):
