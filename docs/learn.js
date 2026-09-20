@@ -100,7 +100,8 @@ const LEARN = (() => {
       checksOk: 0, checksMiss: 0, memo: "", lastT: "", active: false,
     });
     ev.forEach((e) => {
-      const key = e.objective || (e.qid ? "q:" + e.qid : null);
+      // 기록의 objective 는 푼 순간의 값이다 — 정리본이 나중에 생긴 문항은 지금의 목표로 모은다(learning_log.py 와 같은 규칙)
+      const key = e.objective || (e.qid ? ((qById(e.qid) || {}).objective || "q:" + e.qid) : null);
       if (!key) return;
       const s = get(key);
       s.lastT = e.t > s.lastT ? e.t : s.lastT;

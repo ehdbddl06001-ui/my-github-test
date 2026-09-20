@@ -756,7 +756,7 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                            "retry": [], "previews": [], "validation": {}, "notes": {}}
     concepts, cerrs = load_concepts()
     questions = load_questions()
-    S = ll.states(events)
+    S = ll.states(events, {q: m.get("objective") for q, m in questions.items() if m.get("objective")})
     source_state = json.loads(SOURCE_CHECKS.read_text(encoding="utf-8")) if SOURCE_CHECKS.exists() else {}
     books = plan(concepts, questions, S, cfg, source_state)
     run["concept_errors"] = cerrs

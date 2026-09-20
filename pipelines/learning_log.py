@@ -120,10 +120,13 @@ class State:
                 "이해 표시": self.understood, "이후 적용 성공": self.applied}
 
 
-def states(events: list[dict]) -> dict[str, State]:
+def states(events: list[dict], objective_of: dict[str, str] | None = None) -> dict[str, State]:
+    """objective_of: {문항id: 학습 목표} — 기록이 남은 뒤에 목표가 붙은 문항을 그 목표로 모은다.
+    기록의 objective 는 푼 순간의 값이라, 정리본을 나중에 쓰면 옛 오답이 문항 단위로 떨어져 남는다(2026-09-21)."""
     S: dict[str, State] = {}
     for e in sorted(events, key=lambda e: (str(e.get("t", "")), e.get("eid", ""))):
-        key = e.get("objective") or (f"q:{e['qid']}" if e.get("qid") else None)
+        qid = e.get("qid")
+        key = e.get("objective") or (objective_of or {}).get(qid) or (f"q:{qid}" if qid else None)
         if not key:
             continue
         s = S.setdefault(key, State(key=key, objective=None if key.startswith("q:") else key))

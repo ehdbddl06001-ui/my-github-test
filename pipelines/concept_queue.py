@@ -32,7 +32,7 @@ OUT = ROOT / "state" / "concept_queue.json"
 def build(events: list[dict]) -> dict:
     concepts, _ = load_concepts()
     questions = load_questions()
-    S = ll.states(events)
+    S = ll.states(events, {q: m.get("objective") for q, m in questions.items() if m.get("objective")})
     notes: list[dict] = []
     links: dict[tuple[str, str], dict] = {}
     for key, s in S.items():
