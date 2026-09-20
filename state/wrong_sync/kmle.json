@@ -1,0 +1,28 @@
+{
+ "exam": "kmle",
+ "items": {
+  "kmle-2026-1035": {
+   "id": "kmle-2026-1035",
+   "exam": "kmle",
+   "subject": "Cardiology",
+   "step": "",
+   "type": "Congenital Long QT Syndrome with Exertional Syncope — First-line Drug",
+   "style": "",
+   "modality": "",
+   "question": "재발 예방을 위해 시작할 약물로 가장 적절한 것은?",
+   "chosen": 4,
+   "chosenText": "딜티아젬",
+   "answer": 0,
+   "answerText": "프로프라놀롤",
+   "coreNote": "",
+   "differ": "",
+   "decision": "",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-20",
+   "device": "android-9buhos",
+   "note": ""
+  }
+ },
+ "removed": {},
+ "updated": "2026-09-20T04:31:11.904Z"
+}
