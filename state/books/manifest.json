@@ -1,30 +1,33 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "ebb2b20c4003272c98a7",
-   "version": 1,
+   "hash": "8dabd99adc091ca08caa",
+   "version": 2,
    "date": "2026-09-21",
    "file": "MedKOS_학습서_순환기내과.pdf",
    "pages": 6,
-   "template_version": 5,
+   "template_version": 6,
    "units": {
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지",
      "page": 1,
-     "concept_hash": "8e780d18e62a85ac",
+     "concept_hash": "0c107970eff312e8",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "20a9ca65e8046706a13c40de7510875c",
-    "version": 1,
-    "uploaded": "2026-09-21T07:42:52+09:00"
+    "md5": "81f0a5cc38086729ef5092debbb8d81a",
+    "version": 2,
+    "uploaded": "2026-09-21T08:07:49+09:00"
    },
    "archive": [
-    "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf"
+    "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
+    "MedKOS_학습서_순환기내과_v2_2026-09-21.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 수정: 선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지"
+   ]
   }
  },
  "index": {
@@ -32,9 +35,9 @@
   "date": "2026-09-21",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "7a6953aaac592869ee43020965814408",
+   "md5": "76e1bbd20fe1474e0677f3106c88c382",
    "version": null,
-   "uploaded": "2026-09-21T07:42:52+09:00"
+   "uploaded": "2026-09-21T08:07:49+09:00"
   }
  },
  "updated": "2026-09-21"

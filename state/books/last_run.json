@@ -1,5 +1,5 @@
 {
- "started": "2026-09-21T07:42:43+09:00",
+ "started": "2026-09-21T08:07:40+09:00",
  "built": [
   "순환기내과"
  ],
@@ -16,15 +16,15 @@
  "concept_errors": [],
  "layout_trials": {
   "순환기내과": {
-   "tried": 3,
+   "tried": 2,
    "diagram_after_section": {
-    "u-cn-cardio-long-qt-syndrome-first-line-drug": 29,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug": 27,
     "u-cn-cardio-long-qt-syndrome-first-line-drug#crit_end": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-09-21T07:42:52+09:00",
+ "finished": "2026-09-21T08:07:49+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -32,18 +32,18 @@
     "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "kept_id": false,
-    "md5": "20a9ca65e8046706a13c40de7510875c",
-    "archive": "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf"
+    "kept_id": true,
+    "md5": "81f0a5cc38086729ef5092debbb8d81a",
+    "archive": "MedKOS_학습서_순환기내과_v2_2026-09-21.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-    "kept_id": false,
-    "md5": "7a6953aaac592869ee43020965814408"
+    "kept_id": true,
+    "md5": "76e1bbd20fe1474e0677f3106c88c382"
    }
   },
-  "at": "2026-09-21T07:42:52+09:00"
+  "at": "2026-09-21T08:07:49+09:00"
  }
 }
