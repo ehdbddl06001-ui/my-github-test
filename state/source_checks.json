@@ -40,9 +40,9 @@
    "cn.cardio.long-qt-syndrome.first-line-drug"
   ],
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
-  "status": "ok",
+  "status": "failed",
   "checked_at": "2026-09-21",
-  "note": "기준 지문 기록",
+  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]"
@@ -52,9 +52,9 @@
    "cn.cardio.long-qt-syndrome.first-line-drug"
   ],
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
-  "status": "ok",
+  "status": "failed",
   "checked_at": "2026-09-21",
-  "note": "기준 지문 기록",
+  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
   "baseline": "[\"ErratumIn:30354425\"]"
@@ -80,7 +80,7 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-21",
   "baseline": "[]",
-  "status": "ok",
+  "status": "failed",
   "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
  },
  "10.3390/jof1010013": {
@@ -92,7 +92,7 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-21",
   "baseline": "[]",
-  "status": "ok",
+  "status": "failed",
   "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
  },
  "harrison-21": {
