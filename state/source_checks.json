@@ -42,10 +42,11 @@
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "기준 지문과 같음",
+  "note": "기준 지문과 같음 · 2026-09-21 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[]",
-  "baseline": "[]"
+  "baseline": "[]",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1161/CIR.0000000000000549": {
   "concepts": [
@@ -54,10 +55,11 @@
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
   "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "기준 지문과 같음",
+  "note": "기준 지문과 같음 · 2026-09-21 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
-  "baseline": "[\"ErratumIn:30354425\"]"
+  "baseline": "[\"ErratumIn:30354425\"]",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2008-0939": {
   "concepts": [
@@ -69,7 +71,8 @@
   "checked_at": "2026-09-21",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음"
+  "note": "기준 지문과 같음 · 2026-09-21 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
   "concepts": [
