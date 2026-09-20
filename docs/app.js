@@ -161,16 +161,25 @@ function scheduleSync() {
   SYNC.timer = setTimeout(() => syncAll(true), 2500);
 }
 // 현재 덱과 영상 오답을 함께 동기화한다(영상 문항은 어느 덱에서 풀어도 wrong_imaging 에 쌓이므로).
+// 상태 줄은 마지막 덱이 아니라 **덱별 개수를 모아** 한 줄로 적는다 — 예전에는 늘 뒤에 도는 영상 결과만 남아
+// 「영상 오답 0개」로 보여, KMLE 오답이 안 올라간 것처럼 읽혔다(2026-09-20).
 async function syncAll(quiet) {
   const list = isImaging() ? ["imaging"] : [exam(), "imaging"];
+  if (!quiet) setSyncStatus("☁ 동기화 중…");
+  const parts = [];
   for (const e of list) {
-    await syncNow(e, quiet || e !== exam());
-    if (SYNC.available === false) break;
+    const n = await syncNow(e, true);
+    if (SYNC.available === false) return;
+    if (n === null) return;                       // 실패 — 그 메시지를 그대로 둔다
+    parts.push(`${examName(e)} ${n}개`);
   }
+  const t = new Date().toTimeString().slice(0, 5);
+  setSyncStatus(`☁ 오답 ${parts.join(" · ")} 동기화됨 · ${t}`, "ok");
 }
+// 반환: 동기화된 오답 수(실패·서버 없음이면 null)
 async function syncNow(e, quiet) {
-  if (location.protocol === "file:") { setSyncStatus("로컬 파일로 열림 — 동기화 없음"); return; }
-  if (SYNC.busy) return;
+  if (location.protocol === "file:") { setSyncStatus("로컬 파일로 열림 — 동기화 없음"); return null; }
+  if (SYNC.busy) return null;
   SYNC.busy = true;
   if (!quiet) setSyncStatus("☁ 동기화 중…");
   try {
@@ -181,26 +190,26 @@ async function syncNow(e, quiet) {
     if (res.status === 404 || res.status === 405 || res.status === 501) {   // 정적 호스트(GitHub Pages·http.server)
       SYNC.available = false;
       setSyncStatus("이 주소에는 동기화 서버가 없습니다 — 오답은 이 기기에만 저장됩니다.");
-      return;
+      return null;
     }
     const data = await res.json().catch(() => ({}));
     if (!res.ok) {
       SYNC.available = res.status !== 503;
       SYNC.lastError = data.error || ("HTTP " + res.status);
       setSyncStatus("동기화 실패: " + SYNC.lastError, "bad");
-      return;
+      return null;
     }
     SYNC.available = true;
     saveWrong(data.items || {}, e);
     saveRemoved(data.removed || {}, e);
     const n = Object.keys(data.items || {}).length;
-    const t = new Date().toTimeString().slice(0, 5);
-    setSyncStatus(`☁ ${examName(e)} 오답 ${n}개 동기화됨 · ${t}` + (data.committed ? " (저장소에 커밋)" : ""), "ok");
     updateWrongCount();
     if (!$("wrongbook").classList.contains("hidden")) renderWrongbook();
+    return n;
   } catch (err) {
     SYNC.lastError = String((err && err.message) || err);
     setSyncStatus("동기화 연결 실패(오프라인?) — 나중에 다시 시도합니다.", "bad");
+    return null;
   } finally {
     SYNC.busy = false;
   }

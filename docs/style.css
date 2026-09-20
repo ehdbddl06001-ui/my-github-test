@@ -304,8 +304,13 @@ button.small{padding:6px 10px; font-size:.85rem}
 .syncopts input{width:100%; margin-top:6px; background:#0e1826; color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:.95rem}
 /* PWA 설치 버튼·토스트 */
 .pwa-install{position:fixed; right:14px; bottom:14px; z-index:900; background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; box-shadow:0 6px 20px rgba(0,0,0,.35)}
-.pwa-toast{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:950; display:flex; gap:10px; align-items:center;
-  background:#182534; border:1px solid var(--accent); border-radius:12px; padding:10px 14px; font-size:.92rem; box-shadow:0 6px 20px rgba(0,0,0,.4); max-width:92vw}
+.pwa-toast{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:950; display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+  background:#182534; border:1px solid var(--accent); border-radius:12px; padding:10px 14px; font-size:.92rem; box-shadow:0 6px 20px rgba(0,0,0,.4);
+  width:max-content; max-width:min(92vw, 34rem)}
+/* 안내 문장이 버튼에 밀려 한 글자씩 세로로 쪼개지지 않게 — 글은 늘어나고 버튼은 줄바꿈으로 내려간다 */
+.pwa-toast>span{flex:1 1 14rem; min-width:0}
+/* 안내 토스트와 「앱으로 설치」 버튼이 겹치지 않게 — 버튼이 있을 때만 토스트를 위로 올린다(토스트가 뒤에 붙는다) */
+#pwaInstall ~ .pwa-toast{bottom:64px}
 .pwa-toast button{padding:6px 10px; font-size:.85rem}
 .pwa-toast .x{background:none; border:none; color:var(--muted); font-size:1rem; padding:2px 6px}
 /* 좁은 화면(핸드폰) */
