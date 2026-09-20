@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2636,
+  "total": 2646,
   "byType": {
    "kmle": 1067,
    "concept": 4,
-   "anatomy": 701,
+   "anatomy": 702,
+   "imaging": 80,
    "paper": 626,
-   "imaging": 71,
    "usmle": 150,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 701,
+   "Anatomy": 702,
    "Cardiology": 198,
    "Nephrology": 165,
    "Infectious Disease": 143,
@@ -51,27 +51,29 @@ window.MEDKOS_INDEX = {
    "병리·조직학": 4,
    "호흡기": 4,
    "Oncology": 3,
+   "내분비": 3,
+   "소아과": 3,
+   "소화기": 3,
+   "응급·중환자": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "감염": 2,
-   "내분비": 2,
-   "소아과": 2,
-   "소화기": 2,
    "신경": 2,
-   "응급·중환자": 2,
+   "예방의학·역학": 2,
+   "외과": 2,
+   "피부과": 2,
    "혈액·종양": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
+   "근골격·류마티스": 1,
    "신장·비뇨기": 1,
    "약리": 1,
-   "예방의학·역학": 1,
-   "외과": 1,
-   "피부과": 1
+   "정신과": 1
   },
   "byConfidence": {
-   "high": 1772,
+   "high": 1782,
    "medium": 815,
    "low": 49
   },
@@ -757,6 +759,177 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/cardiology/cn.cardio.long-qt-syndrome.first-line-drug.md",
    "snippet": "정의 QT 간격은 심실 탈분극 시작(Q)부터 재분극 끝(T파 끝)까지로, 심실 활동전위 지속 시간의 표면 지표다. 심박이 빠르면 짧아지므로 RR 간격으로 보정한 QTc 를 쓴다(Bazett: QT/√RR). 성인 참고 상한은 남 450 ms·여 460 ms 근처이며, 500 ms 를 넘으면 부정맥 위험이 뚜렷이 오른다 [[?esc va 2022]]. Bazett 공식은 빈맥에서 과보정하므로 심박이 100 을 넘으면 다른 공식이",
    "text": "Cardiology 정의 QT 간격은 심실 탈분극 시작(Q)부터 재분극 끝(T파 끝)까지로, 심실 활동전위 지속 시간의 표면 지표다. 심박이 빠르면 짧아지므로 RR 간격으로 보정한 QTc 를 쓴다(Bazett: QT/√RR). 성인 참고 상한은 남 450 ms·여 460 ms 근처이며, 500 ms 를 넘으면 부정맥 위험이 뚜렷이 오른다 [[?esc va 2022]]. Bazett 공식은 빈맥에서 과보정하므로 심박이 100 을 넘으면 다른 공식이나 안정 후 재측정이 필요하다. 선천 QT연장증후군(LQTS) 은 심실 재분극에 관여하는 이온 통로 유전자 변이로 QT 가 길어지고 다형 심실빈맥(토르사드 드 푸앵트)에 의한 실신·급사 위험이 커진 질환이다. 진단은 2차 원인이 없을 때 반복 측정한 QTc ≥480 ms 또는 진단 점수 3 으로 하며, QTc 460–479 ms 에 원인 불명의 부정맥성 실신이 있으면 진단을 고려한다(기준 비교표) [[?esc va 2022]]. 병태생리 — 재분극 예비력이 깎이는 세 가지 길 심실 활동전위의 고평부(2기)는 안으로 들어오는 L형 칼슘 전류와 밖으로 나가는 지연 정류 칼륨 전류(IKr·IKs)의 균형이다. 3기 재분극은 이 칼륨 전류가 이긴 결과이며, IKr 과 IKs 는 서로를 보완한다 — 하나가 약해져도 다른 하나가 재분극을 끝내는 재분극 예비력(repolarization reserve) 이 있다. LQT1 (KCNQ1, IKs 소실) : IKs 는 교감신경 자극(β 수용체 → cAMP → PKA)에 의해 커져, 심박이 빨라질 때 활동전위를 짧게 만드는 전류다. 이 통로가 없으면 운동·감정으로 심박이 오를 때 QT 가 충분히 짧아지지 못하고 재분극 이질성이 커진다. 그래서 운동, 특히 얼굴이 찬물에 닿으며 교감·부교감이 동시에 자극되는 수영이 대표 유발 상황이고, 베타차단제가 가장 잘 듣는다 [[?esc va 2022]] [[?schwartz 2013]]. LQT2 (KCNH2, IKr 소실) : IKr 은 대부분의 QT 연장 약물이 막는 통로다. 저칼륨혈증이 IKr 을 더 줄이므로 칼륨 유지가 치료의 일부이며, 갑작스러운 소리·감정·산후가 유발 상황이다. LQT3 (SCN5A, late Na⁺ 전류 획득) : 탈분극이 끝난 뒤에도 나트륨이 계속 새어 들어와 고평부가 길어진다. 심박이 느릴수록 활동전위가 더 길어져 수면·안정 중에 사건이 난다. late Na⁺ 전류를 막는 메실레틴이 기전적으로 맞는 추가 약물이다 [[?esc va 2022]]. 기전에서 소견으로 재분극이 길어지면 고평부 동안 L형 칼슘 통로가 불응기에서 회복해 다시 열릴 시간이 생기고, 이 안으로 흐르는 전류가 조기후탈분극(EAD) 을 만든다. 심근 층(내막·중간·외막)마다 활동전위 길이가 달라 재분극 이질성이 커진 상태에서 EAD 가 조기 박동을 일으키면, 흥분이 회전하며 QRS 축이 꼬이듯 바뀌는 다형 심실빈맥 — 토르사드 드 푸앵트 — 이 된다. 대부분 수 초 만에 저절로 멈추므로 임상 표현은 「전조 없이 갑자기 쓰러졌다가 곧 깨어남」(부정맥성 실신)이고, 멈추지 않으면 심실세동으로 넘어가 급사한다. 실신에 경련·실금이 동반될 수 있어 간질로 오인되지만, 뇌파는 정상이고 심전도의 QT 가 답을 준다. T파 모양은 유전형을 암시한다(유전형 비교표): 기저가 넓은 T파(LQT1), 낮고 갈라진 T파(LQT2), 긴 등전위 ST 뒤 늦게 나타나는 T파(LQT3) [[?schwartz 2013]]. 감별 — 후천 원인을 먼저 걸러야 하는 이유 QT 가 길다고 곧 선천형이 아니다. 약물·전해질·서맥·갑상샘저하·심근 질환은 같은 통로를 억눌러 QT 를 늘리며(후천 원인 표), 그때의 치료는 원인 제거 (약물 중단, 칼륨·마그네슘 보충, 심박 올리기)다. 급성 토르사드 발작에는 정맥 마그네슘과 임시 조율·이소프로테레놀로 심박을 올려 재분극을 짧게 만든다 — 이것은 선천형의 만성 예방 치료(베타차단제)와 정반대 방향의 개입이므로 문맥을 나눠 외운다 [[?esc va 2022]]. 후천 원인이 있어도 선천형이 숨어 있을 수 있다. 특히 LQT2 는 재분극 예비력이 낮아 흔한 약물 한 가지로 토르사드가 드러난다. 원인을 고친 뒤에도 QTc 가 길게 남으면 선천형 평가로 넘어간다. 실신의 감별에서는 상황 이 단서다: 운동·감정·소리·수면 중이면 부정맥성, 오래 서 있다가 어지럼·창백을 거쳐 쓰러지면 신경심장성, 전조 오라·혀 깨묾·긴 혼돈기가 있으면 간질 쪽 가능성이 높아진다. 구조 심질환(비후심근병증·부정맥유발성 심근병증)은 심초음파로 낮춘다. 검사 — QTc 를 어떻게 재고 어디까지 믿나 1. 12유도 심전도(반복) : QT 는 II·V5 에서 재고 T파 끝은 접선법으로 정한다. U파를 포함하지 않는다. 한 번의 정상값이 선천형을 지우지는 못하며(변이 보인자의 일부는 QTc 가 정상 범위), 반복 측정과 가족 심전도가 필요하다 [[?esc va 2022]]. 2. 진단 점수(Schwartz) : 심전도·병력·가족력을 합산해 3.5 이상이면 높은 확률(점수표). 점수는 진단 확률 도구이지 위험도 도구가 아니다 [[?schwartz 2013]]. 3. 운동 부하 검사 : 회복기 4분 QTc ≥480 ms 는 점수 항목이고, LQT1 의 QT 부적응(운동 중 단축 부전)을 드러낸다. 4. 24시간 심전도·심초음파 : 토르사드 기록, 구조 심질환 배제. 정상이어도 진단을 낮추지 않는다. 5. 유전자 검사(KCNQ1·KCNH2·SCN5A) : 진단 확정·유전형별 치료·가족 선별에 쓴다. 음성이어도 임상 진단을 지우지 않는다 [[?esc va 2022]]. 6. 전해질·TSH·복용력 : 후천 원인 배제이며 「정상」이 선천형 진단의 전제다. 치료 — 단계별로 무엇을 더하나 치료의 축은 「교감신경 방아쇠를 끊고, 재분극 예비력을 더 깎지 않는 것」이다(치료 비교표). 1차: 비선택 베타차단제(나돌롤·프로프라놀롤) — QT 연장이 기록된 환자에게 증상 유무와 무관하게 권고된다. 나돌롤은 반감기가 길어 하루 1~2회로 혈중 농도가 고르고, 관찰 자료에서 메토프롤롤보다 돌파 사건이 적었다 [[?esc va 2022]] [[?chockalingam 2012]]. 서맥·피로·천식 악화를 감시하고, 복용 중단이 사건의 흔한 계기임을 교육한다. 모든 환자: QT 연장 약물 회피, 전해질 유지, 유발 상황 관리 — 새 처방마다 목록(crediblemeds)을 확인하고, 구토·설사 뒤 칼륨을 보충한다. LQT1 은 경쟁 수영을 제한하고, LQT2 는 침실의 알람·전화 소리를 줄인다. 추가: 메실레틴 — LQT3 에서 베타차단제에 더한다. 다른 유전형에는 근거가 없다. 강화: 좌심장 교감신경 절제술(LCSD) — 베타차단제 불내성·금기, 약물 중 실신 반복, ICD 거부 또는 ICD 다발 쇼크에서 권고된다. ICD(+베타차단제) — 심정지 생존자에게 권고되고, 최적 약물에도 실신·토르사드가 재발하면 고려한다. 첫 진단·무증상 환자에게 ICD 부터 넣지 않는다 — 젊은 환자에서 부적절 쇼크와 장기 합병증 부담이 크다 [[?esc va 2022]] [[?aha va 2017]]. 금기 약물 : 소탈롤·아미오다론·IA군(퀴니딘·프로카인아마이드·디소피라미드)은 IKr 을 막아 QT 를 늘린다. 플레카이니드는 LQT3 외에는 자리가 없고, 칼슘통로차단제는 기전과 무관하다. 권고와 예외 베타차단제 권고 등급은 QT 연장이 기록된 환자에서 Class I 이고, 유전자 양성이지만 QTc 가 정상이면 한 단계 낮은 「고려」다 [[?esc va 2022]]. 위험 인자(QTc 500 ms, 실신·심정지 병력, 사춘기 이후 여성, LQT2·LQT3, 산후)가 겹칠수록 치료 강도를 올린다. 2022 ESC 는 유전형·QTc·성별을 합친 위험 계산기 사용을 제안한다 [[?esc va 2022]]. 임신·산후(특히 LQT2)는 베타차단제를 유지한다 — 중단이 사건을 부른다. 재평가: 베타차단제 시작 뒤 심박 감소와 순응도, QTc, 실신 재발 여부를 정기 추적하고, 재발이 있으면 「약물 실패」로 보고 LCSD·ICD 단계로 넘어간다. 한국 약제 급여 기준(나돌롤 공급 상황 포함)은 대조하지 않았다. (심화) 유전형별 특성과 스포츠 유전형은 유발 상황·추가 약물·위험도를 정한다(유전형 비교표). LQT1 은 사건의 대부분이 운동 중이고 베타차단제 반응이 가장 좋다. LQT2 는 소리·감정·산후, LQT3 는 수면·서맥이며 베타차단제 효과가 상대적으로 낮아 메실레틴을 더한다. 경쟁 스포츠는 과거 일괄 금지였으나, 최근 지침은 적절한 베타차단제·감시 아래 개별 판단으로 바뀌었다. 자동제세동기 접근과 동반자, 수영 제한(LQT1)은 유지된다 [[?esc va 2022]]. 청각 장애를 동반한 상염색체 열성형(Jervell–Lange Nielsen)은 KCNQ1 양측 변이로 표현형이 심해 조기 강화 치료가 필요하다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-21",
+   "type": "anatomy",
+   "unit": "팔·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-21",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/anatomy/daily/2026-09-21.md",
+   "snippet": "오늘의 학습 (2026 09 21 · t2 new) 다음 수업/시험: 2026 09 21 위팔 뒤칸·아래팔 뒤칸·손등, 복막·위·지라·간·작은창자·큰창자·샘창자·이자 Tagging 1까지 11일 · Tagging 2까지 28일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-21 팔·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 21 · t2 new) 다음 수업/시험: 2026 09 21 위팔 뒤칸·아래팔 뒤칸·손등, 복막·위·지라·간·작은창자·큰창자·샘창자·이자 Tagging 1까지 11일 · Tagging 2까지 28일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0081",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 검진 무작위시험의 치료필요수",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0081.md",
+   "snippet": "60세 남자가 국가암검진에서 대장암 검진 안내를 받고 이 검진이 실제로 도움이 되는지 묻기 위해 병원에 왔다. 대장암 가족력과 흡연력은 없고 증상도 없다. 의사가 참고한 무작위배정 임상시험에서는 60세 성인 80,000명을 무작위로 나누어 40,000명에게는 검진을 초대하고 40,000명은 초대하지 않았다. 초대군 중 실제로 검진을 받은 사람은 70% 였다. 10년 추적에서 대장암 사망은 초대군 320명, 비초대군 400명이었",
+   "text": "예방의학·역학 예방의학 — 검진 무작위시험의 치료필요수 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 60세 남자가 국가암검진에서 대장암 검진 안내를 받고 이 검진이 실제로 도움이 되는지 묻기 위해 병원에 왔다. 대장암 가족력과 흡연력은 없고 증상도 없다. 의사가 참고한 무작위배정 임상시험에서는 60세 성인 80,000명을 무작위로 나누어 40,000명에게는 검진을 초대하고 40,000명은 초대하지 않았다. 초대군 중 실제로 검진을 받은 사람은 70% 였다. 10년 추적에서 대장암 사망은 초대군 320명, 비초대군 400명이었으며, 분석은 초대 여부에 따라(intention to screen) 하였다. 이 검진 프로그램으로 10년 동안 대장암 사망 1건을 막기 위해 검진에 초대해야 하는 사람 수는? A. 1,250명 B. 500명 C. 5명 D. 125명 E. 350명"
+  },
+  {
+   "id": "imaging-2026-0080",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 세로토닌 증후군과 신경이완제 악성증후군의 감별",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0080.md",
+   "snippet": "A 24 year old woman is brought to the emergency department by her roommate because of agitation, sweating, and shaking for 6 hours. She has major depressive disorder treated with sertraline for 2 years and takes quetiapine at bedtime for in",
+   "text": "정신과 정신 — 세로토닌 증후군과 신경이완제 악성증후군의 감별 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 A 24 year old woman is brought to the emergency department by her roommate because of agitation, sweating, and shaking for 6 hours. She has major depressive disorder treated with sertraline for 2 years and takes quetiapine at bedtime for insomnia. Two days ago she was started on linezolid for a methicillin resistant Staphylococcus aureus skin infection of the leg. She has had three loose stools today. Her temperature is 38.9°C, pulse is 128/min, respirations are 24/min, and blood pressure is 158/96 mm Hg. She is restless and anxious but oriented. Pupils are 7 mm and reactive. There is a fine tremor of the hands, and the skin is flushed and diaphoretic. Muscle tone is increased in the lower extremities more than the upper extremities, deep tendon reflexes are 4+ at the knees and ankles with sustained ankle clonus, and slow horizontal ocular oscillations are noted. Laboratory studies show a leukocyte count of 12,800/mm3, creatine kinase of 620 U/L, serum creatinine of 0.9 mg/dL, and normal electrolytes. Which of the following is the most likely diagnosis? A. Serotonin syndrome B. Neuroleptic malignant syndrome C. Anticholinergic toxicity D. Malignant hyperthermia E. Thyroid storm"
+  },
+  {
+   "id": "imaging-2026-0079",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비 — 갑상샘 여포와 콜로이드의 단백질",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0079.md",
+   "snippet": "34세 남자가 건강검진 초음파에서 발견된 갑상샘 오른엽의 2.5 cm 결절로 병원에 왔다. 목의 압박감이나 갑상샘기능 이상 증상은 없고, 갑상샘자극호르몬 1.8 μU/mL 로 정상이다. 세침흡인검사에서 여포성 종양이 의심되어 오른쪽 갑상샘엽절제술을 받았다. 절제한 갑상샘의 결절 밖 정상 부위 조직 절편에 한 가지 단백질에 대한 면역조직화학염색을 시행한 사진은 그림과 같다. 갈색으로 염색된 단백질의 기능으로 가장 적절한 것은? ",
+   "text": "내분비 내분비 — 갑상샘 여포와 콜로이드의 단백질 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 34세 남자가 건강검진 초음파에서 발견된 갑상샘 오른엽의 2.5 cm 결절로 병원에 왔다. 목의 압박감이나 갑상샘기능 이상 증상은 없고, 갑상샘자극호르몬 1.8 μU/mL 로 정상이다. 세침흡인검사에서 여포성 종양이 의심되어 오른쪽 갑상샘엽절제술을 받았다. 절제한 갑상샘의 결절 밖 정상 부위 조직 절편에 한 가지 단백질에 대한 면역조직화학염색을 시행한 사진은 그림과 같다. 갈색으로 염색된 단백질의 기능으로 가장 적절한 것은? A. 타이로신 잔기가 요오드화되어 갑상샘호르몬 합성의 골격이 된다 B. 여포세포 정단막에서 요오드를 산화하고 타이로신에 결합시킨다 C. 여포세포 기저측막에서 나트륨과 함께 요오드를 세포 안으로 들여온다 D. 여포곁세포에서 분비되어 혈중 칼슘 농도를 낮춘다 E. 혈액에서 티록신과 결합하여 운반한다"
+  },
+  {
+   "id": "imaging-2026-0078",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 성장판 압통과 정상 손목 X선",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0078.md",
+   "snippet": "A 12 year old boy is brought to the emergency department 2 hours after falling from a skateboard onto his outstretched left hand. He has pain in the left wrist and does not want to move it. He has no other injuries and no history of fractur",
+   "text": "소아과 소아청소년 — 성장판 압통과 정상 손목 X선 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 A 12 year old boy is brought to the emergency department 2 hours after falling from a skateboard onto his outstretched left hand. He has pain in the left wrist and does not want to move it. He has no other injuries and no history of fractures. Examination shows mild soft tissue swelling over the dorsal aspect of the left wrist without deformity or ecchymosis. There is marked point tenderness over the distal radius about 1 cm proximal to the wrist joint line; the anatomic snuffbox is nontender. Finger motion, sensation, and capillary refill are normal, and the radial pulse is present. An anteroposterior radiograph of the left wrist is shown. Which of the following is the most appropriate next step in management? A. MRI of the left wrist B. Closed reduction and long arm casting C. Thumb spica cast for a suspected scaphoid fracture D. Immobilization in a short arm cast and re evaluation in 2 to 3 weeks E. Reassurance, ice, and return to activity as tolerated"
+  },
+  {
+   "id": "imaging-2026-0077",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 충수 주위 농양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0077.md",
+   "snippet": "42세 여자가 6일 전부터 시작된 오른쪽 아랫배 통증으로 병원에 왔다. 처음에는 배꼽 주위가 아프다가 오른쪽 아랫배로 옮겨 갔고, 이틀 전부터 열이 나며 통증이 한 곳에 머물러 있다. 마지막 월경은 2주 전이고 설사나 혈변은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 체온 38.4℃이다. 오른쪽 아랫배에 압통과 함께 지름 약 6 cm 의 경계가 불분명한 덩이가 만져지고 반동압통은 그 부위에 국한되며 배 전체의 강직은",
+   "text": "외과 외과계 — 충수 주위 농양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 42세 여자가 6일 전부터 시작된 오른쪽 아랫배 통증으로 병원에 왔다. 처음에는 배꼽 주위가 아프다가 오른쪽 아랫배로 옮겨 갔고, 이틀 전부터 열이 나며 통증이 한 곳에 머물러 있다. 마지막 월경은 2주 전이고 설사나 혈변은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 체온 38.4℃이다. 오른쪽 아랫배에 압통과 함께 지름 약 6 cm 의 경계가 불분명한 덩이가 만져지고 반동압통은 그 부위에 국한되며 배 전체의 강직은 없다. 혈액검사: 백혈구 15,800/μL, C반응단백 14 mg/dL, 소변 임신반응 음성. 조영증강 복부 CT 에서 충수가 두꺼워져 있고 그 주위에 벽으로 둘러싸인 5 cm 의 액체 저류가 있으며, 유리 공기나 배 전체의 액체는 없다. 가장 적절한 처치는? A. 경구 항생제와 외래 추적 B. 진단적 복강경과 복강 세척 C. 항생제 정주와 경피적 배액 D. 즉시 복강경 충수절제술 E. 즉시 회맹장절제술"
+  },
+  {
+   "id": "imaging-2026-0076",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 류마티스 다발근육통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0076.md",
+   "snippet": "A 68 year old woman comes to the physician because of pain and stiffness in both shoulders and hips for 6 weeks. The stiffness is worst in the morning, lasts about 2 hours, and makes it difficult to rise from a chair, comb her hair, and put",
+   "text": "근골격·류마티스 류마티스·근골격 — 류마티스 다발근육통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 A 68 year old woman comes to the physician because of pain and stiffness in both shoulders and hips for 6 weeks. The stiffness is worst in the morning, lasts about 2 hours, and makes it difficult to rise from a chair, comb her hair, and put on a coat. She has no headache, scalp tenderness, jaw pain with chewing, or visual disturbance, and no fever, weight loss, or rash. She has hypertension treated with losartan. Her temperature is 37.2°C, pulse is 78/min, and blood pressure is 136/82 mm Hg. Active abduction of both shoulders is limited by pain, but passive range of motion is full; there is no synovitis of the hands or feet, and muscle strength is 5/5 in all extremities. Temporal arteries are nontender with normal pulses. Laboratory studies show a hemoglobin of 11.2 g/dL, erythrocyte sedimentation rate of 78 mm/h, C reactive protein of 5.2 mg/dL (N < 0.5), creatine kinase of 90 U/L (N < 170), thyroid stimulating hormone of 2.1 μU/mL, and negative rheumatoid factor and anti cyclic citrullinated peptide antibody. Which of the following is the most appropriate initial pharmacotherapy? A. Methotrexate 15 mg weekly B. Naproxen 500 mg twice daily C. Duloxetine 60 mg daily D. Prednisone 15 mg daily E. Prednisone 60 mg daily"
+  },
+  {
+   "id": "imaging-2026-0075",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 정맥류 출혈의 초기 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0075.md",
+   "snippet": "52세 남자가 2시간 전부터 피를 두 차례 토하고 어지러워 응급실에 왔다. 알코올 간경변으로 진료받고 있으며 3년 전 복수로 입원한 적이 있고, 소염진통제는 먹지 않는다. 혈압 90/60 mmHg, 맥박 115회/분, 체온 36.8℃이다. 결막이 창백하고 가슴에 거미혈관종이 여럿 있으며 배가 불러 있고 이동성 탁음이 있다. 직장수지검사에서 흑색변이 묻어난다. 혈액검사: 혈색소 7.5 g/dL, 혈소판 68,000/μL, 프로트",
+   "text": "소화기 소화기·간담췌 — 간경변 정맥류 출혈의 초기 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 52세 남자가 2시간 전부터 피를 두 차례 토하고 어지러워 응급실에 왔다. 알코올 간경변으로 진료받고 있으며 3년 전 복수로 입원한 적이 있고, 소염진통제는 먹지 않는다. 혈압 90/60 mmHg, 맥박 115회/분, 체온 36.8℃이다. 결막이 창백하고 가슴에 거미혈관종이 여럿 있으며 배가 불러 있고 이동성 탁음이 있다. 직장수지검사에서 흑색변이 묻어난다. 혈액검사: 혈색소 7.5 g/dL, 혈소판 68,000/μL, 프로트롬빈시간 INR 1.9, 크레아티닌 1.1 mg/dL. 정맥로를 확보하고 수액과 농축적혈구 수혈을 시작하였다. 다음 처치로 가장 적절한 것은? A. 고용량 판토프라졸을 정주하고 상부위장관 내시경을 한다 B. 식도 풍선 탐폰(Sengstaken Blakemore 관)을 삽입한다 C. 경경정맥 간내 문맥전신 단락술(TIPS)을 즉시 시행한다 D. 혈색소 10 g/dL 이상을 목표로 수혈하며 경과를 관찰한다 E. 옥트레오타이드와 세프트리악손을 정주하고 내시경 정맥류 결찰을 한다"
+  },
+  {
+   "id": "imaging-2026-0074",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 중증 지역사회획득 폐렴의 치료 장소와 항생제",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0074.md",
+   "snippet": "A 59 year old man is brought to the emergency department by his wife because of fever, productive cough, and progressive shortness of breath for 4 days and confusion since this morning. He has hypertension treated with amlodipine, has never",
+   "text": "응급·중환자 응급·중환자 — 중증 지역사회획득 폐렴의 치료 장소와 항생제 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 A 59 year old man is brought to the emergency department by his wife because of fever, productive cough, and progressive shortness of breath for 4 days and confusion since this morning. He has hypertension treated with amlodipine, has never smoked, and has not been hospitalized or received antibiotics in the past year. His temperature is 39.0°C, pulse is 118/min, respirations are 32/min, and blood pressure is 88/54 mm Hg; after a 2 L bolus of crystalloid, blood pressure is 104/66 mm Hg. Oxygen saturation is 90% on 6 L/min of oxygen by nasal cannula. He is disoriented to time and place. Crackles are heard over both lung fields. Laboratory studies show a leukocyte count of 21,000/mm3, platelet count of 180,000/mm3, blood urea nitrogen of 32 mg/dL, serum creatinine of 1.4 mg/dL, and lactate of 2.4 mmol/L. Arterial blood gas analysis on 6 L/min of oxygen shows a PaO2/FiO2 ratio of 230. A portable chest radiograph is shown. Which of the following is the most appropriate management? A. Discharge home with oral amoxicillin clavulanate plus azithromycin B. Admission to the intensive care unit and intravenous ceftriaxone plus azithromycin C. Admission to the medical ward and intravenous ceftriaxone plus azithromycin D. Admission to the medical ward and oral levofloxacin E. Admission to the intensive care unit and intravenous vancomycin plus piperacillin tazobactam"
+  },
+  {
+   "id": "imaging-2026-0073",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 노인 색소 반의 더모스코피",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+   "confidence": "high",
+   "date": "2026-09-20",
+   "path": "content/imaging/2026/imaging-2026-0073.md",
+   "snippet": "75세 남자가 3년 전부터 왼쪽 아래팔 손등 쪽에 있던 갈색 반점이 최근 조금 커진 것 같다며 병원에 왔다. 평생 야외에서 농사를 지었고, 가려움이나 출혈은 없으며 흑색종 가족력은 없다. 진찰에서 지름 9 mm 의 편평한 옅은 갈색 반이 있고 만져지는 부분이나 궤양은 없다. 이 병변의 더모스코피 사진은 그림과 같다. 가장 적절한 진단은? A. 접합모반 B. 표재확산흑색종 C. 일광흑자 D. 악성흑자 E. 지루각화증",
+   "text": "피부과 피부 — 노인 색소 반의 더모스코피 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4 75세 남자가 3년 전부터 왼쪽 아래팔 손등 쪽에 있던 갈색 반점이 최근 조금 커진 것 같다며 병원에 왔다. 평생 야외에서 농사를 지었고, 가려움이나 출혈은 없으며 흑색종 가족력은 없다. 진찰에서 지름 9 mm 의 편평한 옅은 갈색 반이 있고 만져지는 부분이나 궤양은 없다. 이 병변의 더모스코피 사진은 그림과 같다. 가장 적절한 진단은? A. 접합모반 B. 표재확산흑색종 C. 일광흑자 D. 악성흑자 E. 지루각화증"
   },
   {
    "id": "anatomy-daily-2026-09-20",

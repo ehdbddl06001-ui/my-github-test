@@ -2,6 +2,1269 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0079",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "내분비 — 갑상샘 여포와 콜로이드의 단백질",
+  "type": "내분비 — 갑상샘 여포와 콜로이드의 단백질",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-20",
+  "vignette": "34세 남자가 건강검진 초음파에서 발견된 갑상샘 오른엽의 2.5 cm 결절로 병원에 왔다. 목의 압박감이나 갑상샘기능 이상 증상은 없고, 갑상샘자극호르몬 1.8 μU/mL 로 정상이다. 세침흡인검사에서 여포성 종양이 의심되어 오른쪽 갑상샘엽절제술을 받았다. 절제한 갑상샘의 결절 밖 정상 부위 조직 절편에 한 가지 단백질에 대한 면역조직화학염색을 시행한 사진은 그림과 같다.",
+  "question": "갈색으로 염색된 단백질의 기능으로 가장 적절한 것은?",
+  "options": [
+   "타이로신 잔기가 요오드화되어 갑상샘호르몬 합성의 골격이 된다",
+   "여포세포 정단막에서 요오드를 산화하고 타이로신에 결합시킨다",
+   "여포세포 기저측막에서 나트륨과 함께 요오드를 세포 안으로 들여온다",
+   "여포곁세포에서 분비되어 혈중 칼슘 농도를 낮춘다",
+   "혈액에서 티록신과 결합하여 운반한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 사진에서 여포 내강을 채운 콜로이드가 균질하게 강한 갈색으로 염색되어 있고 여포상피도 갈색이며, 사이질과 혈관은 옅고 핵만 파랗다. 여포 내강, 즉 세포 밖 공간에 대량으로 저장되는 단백질은 타이로글로불린뿐이다. 타이로글로불린은 여포세포에서 합성돼 정단막을 통해 내강으로 분비되고, 그 타이로신 잔기가 갑상샘과산화효소에 의해 요오드화·짝지음을 거쳐 T3·T4 를 품은 채 콜로이드로 저장되었다가 다시 세포로 흡수되어 단백분해로 호르몬을 내놓는다. 갑상샘과산화효소는 정단막에, 나트륨-요오드 공동수송체는 기저측막에 위치해 세포 경계를 따라 선상으로 염색되고, 칼시토닌은 여포 사이에 흩어진 소수의 여포곁세포에만 염색되며, 티록신결합글로불린은 간에서 만들어지는 혈장 단백질이라 갑상샘 조직에는 염색되지 않는다.\n- 원리: <b>갑상샘호르몬 합성의 지도</b> — 여포세포는 극성이 있다. <b>기저측막</b>(혈관 쪽)에는 나트륨-요오드 공동수송체(NIS)가 있어 Na⁺ 농도기울기를 이용해 요오드를 세포 안으로 끌어들이고, <b>정단막</b>(내강 쪽)에는 펜드린이 요오드를 내강으로 내보내며 <b>갑상샘과산화효소(TPO)</b>가 H₂O₂ 를 써서 요오드를 산화해 타이로글로불린의 타이로신에 붙인다(유기화). 그 타이로글로불린은 여포세포의 조면소포체·골지에서 합성돼 정단막으로 분비된 <b>660 kDa 의 당단백</b>이며, 요오드화된 MIT·DIT 잔기가 짝지어져 T4·T3 가 된 상태로 <b>내강의 콜로이드로 저장</b>된다. 필요할 때 TSH 자극으로 콜로이드가 세포 안으로 다시 흡수되고 리소좀에서 단백분해되어 T4·T3 가 혈액으로 나간다.<br> <b>왜 염색 양상이 단백질을 가르는가</b> — 면역조직화학은 단백질이 「어디에 있는가」를 보여 준다. 콜로이드 전체가 균질하게 강양성이면 <b>세포 밖 내강에 저장되는 단백질</b>이고, 이는 타이로글로불린뿐이다. TPO 와 NIS 는 막단백질이라 각각 정단막·기저측막을 따라 세포 경계에 얇은 선으로 염색되고 내강은 비어 보인다. 칼시토닌은 여포 사이 또는 여포벽에 드문드문 박힌 여포곁세포(C 세포)의 세포질에만 양성이라 점상 분포를 보인다. 티록신결합글로불린(TBG)은 간세포가 만들어 혈장에 있는 운반단백이라 갑상샘 조직에서 세포 안 염색이 없다.<br> <b>임상 연결</b> — 콜로이드에 저장된 타이로글로불린은 분화 갑상샘암의 전절제·방사성요오드 치료 뒤 <b>재발 표지자</b>로 쓰이고(정상 갑상샘 조직이 없으면 혈중 농도가 검출되지 않아야 한다), 갑상샘염에서 여포가 깨지면 혈중으로 새어 나온다. TPO 는 하시모토 갑상샘염 자가항체의 표적이고, NIS 는 방사성요오드가 갑상샘과 그 암세포에 모이는 이유다.\n- 비교: <table><thead><tr><th style=\"width:24%\">단백질</th><th style=\"width:30%\">면역조직화학 염색 위치</th><th>기능</th></tr></thead><tbody> <tr><td><b>타이로글로불린(정답)</b></td><td><b>여포 내강 콜로이드 전체가 균질 강양성 + 여포세포질</b></td><td><b>타이로신 잔기가 요오드화·짝지음되어 T4·T3 의 골격, 콜로이드에 저장</b></td></tr> <tr><td>갑상샘과산화효소(가장 가까운 오답)</td><td>여포세포 정단막을 따라 얇은 선상, 내강은 음성</td><td>요오드 산화·유기화·짝지음</td></tr> <tr><td>나트륨-요오드 공동수송체</td><td>기저측막을 따라 선상</td><td>요오드 능동 흡수</td></tr> <tr><td>칼시토닌</td><td>여포 사이 소수 여포곁세포의 세포질에 점상</td><td>혈중 칼슘 저하</td></tr> <tr><td>티록신결합글로불린</td><td>갑상샘 조직에 염색 없음(간 합성 혈장 단백)</td><td>T4·T3 혈중 운반</td></tr> </tbody></table> <b>가장 가까운 오답은 「갑상샘과산화효소」</b>다 — 타이로글로불린과 같은 정단막·내강 쪽에서 일하고 갑상샘호르몬 합성의 핵심 효소이기 때문이다. 갈림길은 <b>염색이 내강을 채우는가, 세포 경계에 선으로 남는가</b>이다. 콜로이드가 균질하게 갈색이면 저장 단백인 타이로글로불린이고, 내강은 비어 있고 정단막만 선처럼 갈색이면 TPO 다. 반대로 사진에서 콜로이드가 음성이고 여포 사이에 점점이 갈색 세포만 보였다면 칼시토닌(여포곁세포)이 정답이 된다.\n- 오답 이유:\n  - ② 갑상샘과산화효소는 요오드를 산화하고 타이로글로불린의 타이로신에 결합시키며 MIT·DIT 를 짝짓는 핵심 효소이지만, 정단막에 박힌 막단백질이라 면역조직화학에서 여포세포의 내강 쪽 경계를 따라 얇은 선으로만 염색되고 콜로이드는 비어 보인다. 사진처럼 내강 전체가 균질하게 강양성이면 저장 단백이다. 내강이 음성이고 정단막만 선상으로 염색되었다면 이 선지가 정답이 된다.\n  - ③ 나트륨-요오드 공동수송체는 여포세포 기저측막에서 Na⁺ 농도기울기를 이용해 요오드를 세포 안으로 들여오는 막단백질이며, 염색은 혈관 쪽 세포 경계를 따라 선상으로 나타나고 콜로이드는 음성이다. 방사성요오드가 갑상샘에 모이는 근거이지만 이 사진의 내강 충만 염색과는 맞지 않는다. 기저측막만 갈색으로 보였다면 이 선지가 정답이 된다.\n  - ④ 칼시토닌은 여포 사이 또는 여포벽에 드물게 박힌 여포곁세포(C 세포)에서 분비되어 파골세포를 억제하고 혈중 칼슘을 낮추며, 면역조직화학에서는 그 소수 세포의 세포질에만 점상으로 양성이고 콜로이드는 음성이다. 사진은 내강 전체가 염색되어 있다. 콜로이드가 음성이고 여포 사이에 점점이 갈색 세포만 있었다면(수질암 표지) 이 선지가 정답이 된다.\n  - ⑤ 티록신결합글로불린은 간세포가 합성해 혈장에서 T4·T3 를 운반하는 단백질로, 갑상샘 조직에서는 합성되지도 저장되지도 않아 여포세포나 콜로이드에 염색되지 않는다. 사진의 강한 콜로이드 염색을 설명하지 못한다. 간 조직 절편에서 간세포 세포질이 염색되었다면 이 선지가 맞는 방향이 된다.\n- 함정: 「갑상샘호르몬 합성」에서 TPO 로 바로 가지 않는다. 면역조직화학은 위치를 보여 준다 — 콜로이드(세포 밖 내강)를 균질하게 채우면 저장 단백인 타이로글로불린, 세포 경계의 선이면 막효소·수송체다.\n- 학습목표: 갑상샘 조직의 면역조직화학에서 여포 내강 콜로이드가 균질하게 강양성인 염색 양상을 읽고, 세포 밖 내강에 저장되는 단백질인 타이로글로불린으로 판단해 그 기능(타이로신 잔기의 요오드화로 갑상샘호르몬의 골격이 됨)을 고른다\n- 근거·출처: Human Protein Atlas, TG (thyroglobulin) / thyroid gland, image 306_B_1_5 (CC BY 4.0) — tissue identity from sample metadata (fact), staining annotation 'glandular cells: high' (HPA pathologist, Grade B); teacher-only: 34 M · 작성자 판독(2026-09-21): TMA 코어, 여포 내강 콜로이드 균질 강양성(갈색), 여포상피 양성, 사이질·혈관 옅음, 핵 파랑, 식별 표지 없음 · Guyton and Hall Textbook of Medical Physiology, 14th ed., ch. 77 'Thyroid metabolic hormones' — thyroglobulin synthesis, NIS, pendrin, TPO, colloid storage and hormone release · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed., ch. 'Endocrine organs' — thyroid follicle, colloid, parafollicular cells · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The endocrine system' — thyroid; thyroglobulin as tumor marker · Williams Textbook of Endocrinology, 14th ed., ch. 'Thyroid physiology and diagnostic evaluation'\n\n## 출처\n- Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "사진에서 여포 내강을 채운 콜로이드가 균질하게 강한 갈색으로 염색되어 있고 여포상피도 갈색이며, 사이질과 혈관은 옅고 핵만 파랗다. 여포 내강, 즉 세포 밖 공간에 대량으로 저장되는 단백질은 타이로글로불린뿐이다. 타이로글로불린은 여포세포에서 합성돼 정단막을 통해 내강으로 분비되고, 그 타이로신 잔기가 갑상샘과산화효소에 의해 요오드화·짝지음을 거쳐 T3·T4 를 품은 채 콜로이드로 저장되었다가 다시 세포로 흡수되어 단백분해로 호르몬을 내놓는다. 갑상샘과산화효소는 정단막에, 나트륨-요오드 공동수송체는 기저측막에 위치해 세포 경계를 따라 선상으로 염색되고, 칼시토닌은 여포 사이에 흩어진 소수의 여포곁세포에만 염색되며, 티록신결합글로불린은 간에서 만들어지는 혈장 단백질이라 갑상샘 조직에는 염색되지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>갑상샘호르몬 합성의 지도</b> — 여포세포는 극성이 있다. <b>기저측막</b>(혈관 쪽)에는 나트륨-요오드 공동수송체(NIS)가 있어 Na⁺ 농도기울기를 이용해 요오드를 세포 안으로 끌어들이고, <b>정단막</b>(내강 쪽)에는 펜드린이 요오드를 내강으로 내보내며 <b>갑상샘과산화효소(TPO)</b>가 H₂O₂ 를 써서 요오드를 산화해 타이로글로불린의 타이로신에 붙인다(유기화). 그 타이로글로불린은 여포세포의 조면소포체·골지에서 합성돼 정단막으로 분비된 <b>660 kDa 의 당단백</b>이며, 요오드화된 MIT·DIT 잔기가 짝지어져 T4·T3 가 된 상태로 <b>내강의 콜로이드로 저장</b>된다. 필요할 때 TSH 자극으로 콜로이드가 세포 안으로 다시 흡수되고 리소좀에서 단백분해되어 T4·T3 가 혈액으로 나간다.<br> <b>왜 염색 양상이 단백질을 가르는가</b> — 면역조직화학은 단백질이 「어디에 있는가」를 보여 준다. 콜로이드 전체가 균질하게 강양성이면 <b>세포 밖 내강에 저장되는 단백질</b>이고, 이는 타이로글로불린뿐이다. TPO 와 NIS 는 막단백질이라 각각 정단막·기저측막을 따라 세포 경계에 얇은 선으로 염색되고 내강은 비어 보인다. 칼시토닌은 여포 사이 또는 여포벽에 드문드문 박힌 여포곁세포(C 세포)의 세포질에만 양성이라 점상 분포를 보인다. 티록신결합글로불린(TBG)은 간세포가 만들어 혈장에 있는 운반단백이라 갑상샘 조직에서 세포 안 염색이 없다.<br> <b>임상 연결</b> — 콜로이드에 저장된 타이로글로불린은 분화 갑상샘암의 전절제·방사성요오드 치료 뒤 <b>재발 표지자</b>로 쓰이고(정상 갑상샘 조직이 없으면 혈중 농도가 검출되지 않아야 한다), 갑상샘염에서 여포가 깨지면 혈중으로 새어 나온다. TPO 는 하시모토 갑상샘염 자가항체의 표적이고, NIS 는 방사성요오드가 갑상샘과 그 암세포에 모이는 이유다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">단백질</th><th style=\"width:30%\">면역조직화학 염색 위치</th><th>기능</th></tr></thead><tbody> <tr><td><b>타이로글로불린(정답)</b></td><td><b>여포 내강 콜로이드 전체가 균질 강양성 + 여포세포질</b></td><td><b>타이로신 잔기가 요오드화·짝지음되어 T4·T3 의 골격, 콜로이드에 저장</b></td></tr> <tr><td>갑상샘과산화효소(가장 가까운 오답)</td><td>여포세포 정단막을 따라 얇은 선상, 내강은 음성</td><td>요오드 산화·유기화·짝지음</td></tr> <tr><td>나트륨-요오드 공동수송체</td><td>기저측막을 따라 선상</td><td>요오드 능동 흡수</td></tr> <tr><td>칼시토닌</td><td>여포 사이 소수 여포곁세포의 세포질에 점상</td><td>혈중 칼슘 저하</td></tr> <tr><td>티록신결합글로불린</td><td>갑상샘 조직에 염색 없음(간 합성 혈장 단백)</td><td>T4·T3 혈중 운반</td></tr> </tbody></table> <b>가장 가까운 오답은 「갑상샘과산화효소」</b>다 — 타이로글로불린과 같은 정단막·내강 쪽에서 일하고 갑상샘호르몬 합성의 핵심 효소이기 때문이다. 갈림길은 <b>염색이 내강을 채우는가, 세포 경계에 선으로 남는가</b>이다. 콜로이드가 균질하게 갈색이면 저장 단백인 타이로글로불린이고, 내강은 비어 있고 정단막만 선처럼 갈색이면 TPO 다. 반대로 사진에서 콜로이드가 음성이고 여포 사이에 점점이 갈색 세포만 보였다면 칼시토닌(여포곁세포)이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 갑상샘과산화효소는 요오드를 산화하고 타이로글로불린의 타이로신에 결합시키며 MIT·DIT 를 짝짓는 핵심 효소이지만, 정단막에 박힌 막단백질이라 면역조직화학에서 여포세포의 내강 쪽 경계를 따라 얇은 선으로만 염색되고 콜로이드는 비어 보인다. 사진처럼 내강 전체가 균질하게 강양성이면 저장 단백이다. 내강이 음성이고 정단막만 선상으로 염색되었다면 이 선지가 정답이 된다.\n③ 나트륨-요오드 공동수송체는 여포세포 기저측막에서 Na⁺ 농도기울기를 이용해 요오드를 세포 안으로 들여오는 막단백질이며, 염색은 혈관 쪽 세포 경계를 따라 선상으로 나타나고 콜로이드는 음성이다. 방사성요오드가 갑상샘에 모이는 근거이지만 이 사진의 내강 충만 염색과는 맞지 않는다. 기저측막만 갈색으로 보였다면 이 선지가 정답이 된다.\n④ 칼시토닌은 여포 사이 또는 여포벽에 드물게 박힌 여포곁세포(C 세포)에서 분비되어 파골세포를 억제하고 혈중 칼슘을 낮추며, 면역조직화학에서는 그 소수 세포의 세포질에만 점상으로 양성이고 콜로이드는 음성이다. 사진은 내강 전체가 염색되어 있다. 콜로이드가 음성이고 여포 사이에 점점이 갈색 세포만 있었다면(수질암 표지) 이 선지가 정답이 된다.\n⑤ 티록신결합글로불린은 간세포가 합성해 혈장에서 T4·T3 를 운반하는 단백질로, 갑상샘 조직에서는 합성되지도 저장되지도 않아 여포세포나 콜로이드에 염색되지 않는다. 사진의 강한 콜로이드 염색을 설명하지 못한다. 간 조직 절편에서 간세포 세포질이 염색되었다면 이 선지가 맞는 방향이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「갑상샘호르몬 합성」에서 TPO 로 바로 가지 않는다. 면역조직화학은 위치를 보여 준다 — 콜로이드(세포 밖 내강)를 균질하게 채우면 저장 단백인 타이로글로불린, 세포 경계의 선이면 막효소·수송체다."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑상샘 조직의 면역조직화학에서 여포 내강 콜로이드가 균질하게 강양성인 염색 양상을 읽고, 세포 밖 내강에 저장되는 단백질인 타이로글로불린으로 판단해 그 기능(타이로신 잔기의 요오드화로 갑상샘호르몬의 골격이 됨)을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas, TG (thyroglobulin) / thyroid gland, image 306_B_1_5 (CC BY 4.0) — tissue identity from sample metadata (fact), staining annotation 'glandular cells: high' (HPA pathologist, Grade B); teacher-only: 34 M · 작성자 판독(2026-09-21): TMA 코어, 여포 내강 콜로이드 균질 강양성(갈색), 여포상피 양성, 사이질·혈관 옅음, 핵 파랑, 식별 표지 없음 · Guyton and Hall Textbook of Medical Physiology, 14th ed., ch. 77 'Thyroid metabolic hormones' — thyroglobulin synthesis, NIS, pendrin, TPO, colloid storage and hormone release · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed., ch. 'Endocrine organs' — thyroid follicle, colloid, parafollicular cells · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The endocrine system' — thyroid; thyroglobulin as tumor marker · Williams Textbook of Endocrinology, 14th ed., ch. 'Thyroid physiology and diagnostic evaluation' ## 출처 Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "여포 내강의 콜로이드를 균질하게 채우는 강양성 염색은 세포 밖 내강에 저장되는 타이로글로불린이며, 그 기능은 타이로신 잔기가 요오드화되어 갑상샘호르몬의 골격이 되는 것이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "염색의 위치 — 콜로이드 전체가 균질하게 갈색이다. 갑상샘과산화효소라면 정단막을 따라 얇은 선으로만 염색되고 내강은 비어 보인다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: 여포 내강의 콜로이드가 균질하게 강한 갈색으로 염색됨",
+     "why": "세포 밖 내강에 대량 저장되는 단백질 — 타이로글로불린의 결정적 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 여포상피도 갈색, 사이질·혈관은 옅고 핵은 파랑",
+     "why": "여포세포가 합성·분비하는 단백질이며 사이질 단백이 아니다",
+     "also": []
+    },
+    {
+     "item": "결절 밖 정상 부위 조직 절편",
+     "why": "정상 갑상샘 여포 구조 — 종양이 아닌 정상 생리의 단백질 분포를 읽는 문항",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 세포 경계(정단막·기저측막)에 국한된 선상 염색 양상이 아님",
+     "why": "막단백질인 갑상샘과산화효소·나트륨-요오드 공동수송체 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "영상: 여포 사이에 점상으로 흩어진 양성 세포만 있는 양상이 아님",
+     "why": "여포곁세포의 칼시토닌 염색 양상이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "갑상샘자극호르몬 1.8 μU/mL 로 정상",
+     "why": "갑상샘기능이 정상이라 여포 구조와 콜로이드가 정상적으로 유지됨 — 염색 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "세침흡인검사에서 여포성 종양이 의심되어",
+     "why": "엽절제의 이유 — 문항의 판단(정상 부위 염색)과 직접 관련 없다",
+     "also": []
+    },
+    {
+     "item": "34세 남자",
+     "why": "젊은 남성의 갑상샘 결절은 악성 위험이 상대적으로 높아 수술 적응이 되지만 염색 판독과 무관",
+     "also": []
+    }
+   ],
+   "summary": "면역조직화학에서 콜로이드가 균질하게 강양성이면 세포 밖 내강에 저장되는 타이로글로불린이다. 그 타이로신 잔기가 TPO 에 의해 요오드화·짝지음되어 T4·T3 의 골격이 된다. 막효소·수송체는 세포 경계의 선으로, 칼시토닌은 여포곁세포에 점상으로 염색되고, TBG 는 갑상샘 조직에 없다.",
+   "switch": {
+    "choice": "D",
+    "condition": "콜로이드가 음성이고 여포 사이에 점점이 흩어진 세포만 갈색으로 염색되었다면 여포곁세포의 칼시토닌이며, 혈중 칼슘을 낮추는 기능이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0079.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland",
+   "asset_id": "HPA-TG_306_B_1_5",
+   "text": "Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg"
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0078",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "소아청소년 — 성장판 압통과 정상 손목 X선",
+  "type": "소아청소년 — 성장판 압통과 정상 손목 X선",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-20",
+  "vignette": "A 12-year-old boy is brought to the emergency department 2 hours after falling from a skateboard onto his outstretched left hand. He has pain in the left wrist and does not want to move it. He has no other injuries and no history of fractures. Examination shows mild soft-tissue swelling over the dorsal aspect of the left wrist without deformity or ecchymosis. There is marked point tenderness over the distal radius about 1 cm proximal to the wrist joint line; the anatomic snuffbox is nontender. Finger motion, sensation, and capillary refill are normal, and the radial pulse is present. An anteroposterior radiograph of the left wrist is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "MRI of the left wrist",
+   "Closed reduction and long-arm casting",
+   "Thumb spica cast for a suspected scaphoid fracture",
+   "Immobilization in a short-arm cast and re-evaluation in 2 to 3 weeks",
+   "Reassurance, ice, and return to activity as tolerated"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The radiograph shows a skeletally immature wrist: the distal radial and ulnar physes are open, the carpal bones are normally aligned, and there is no cortical break, buckle, widening of the physis, or periosteal reaction. In a child, however, the physis is the weakest part of the bone, and a fall on the outstretched hand with marked point tenderness directly over the distal radial growth plate is treated as a Salter-Harris type I fracture even when the radiograph is normal, because a nondisplaced separation through the physeal cartilage is radiolucent. The correct management is immobilization in a short-arm cast (or splint) for about 3 weeks with re-evaluation, when periosteal new bone or physeal widening on repeat films confirms the diagnosis. Reassurance risks displacement of an unrecognized physeal fracture; MRI is not needed for a clinically evident, nondisplaced injury; there is no deformity to reduce; and the nontender snuffbox argues against a scaphoid fracture.\n- 원리: <b>Why the physis matters</b> — in a growing child the ligaments are stronger than the cartilaginous growth plate, so the same fall that would sprain an adult's wrist tends to <b>separate the physis</b>. The Salter-Harris classification describes the path of the fracture line: <b>type I runs only through the physis</b> (through the hypertrophic zone, sparing the germinal reserve zone on the epiphyseal side), type II exits through the metaphysis leaving a triangular Thurston-Holland fragment, type III exits through the epiphysis into the joint, type IV crosses metaphysis, physis and epiphysis, and type V is a crush injury. Type I is the injury of the youngest and, when nondisplaced, is <b>invisible on radiographs</b> because cartilage is radiolucent and nothing has moved; only subtle physeal widening or soft-tissue swelling may be seen.<br> <b>Why point tenderness over the physis is treated as a fracture</b> — the diagnosis of a nondisplaced Salter-Harris I fracture is clinical. Reading the film as 'normal' and reassuring the family leaves an unrecognized fracture unprotected; it may displace with further use and, rarely, injure the growth plate. Immobilization for about 3 weeks costs little, and repeat radiographs at 2–3 weeks show periosteal new bone along the metaphysis or subchondral sclerosis if the physis was indeed fractured, which also documents the injury for follow-up of growth. Prognosis for type I injuries of the distal radius is excellent; growth arrest is rare because the reserve zone stays with the epiphysis.<br> <b>Why not the other options</b> — the snuffbox is nontender and the tenderness is proximal to the joint line over the radius, so scaphoid immobilization (thumb spica) addresses the wrong bone; there is no deformity or displacement to reduce, so closed reduction and a long-arm cast are unnecessary; MRI can show physeal edema but does not change management for a nondisplaced injury and is reserved for persistent symptoms or diagnostic uncertainty.\n- 비교: <table><thead><tr><th style=\"width:30%\">Management</th><th style=\"width:40%\">When it is correct</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Short-arm cast, re-evaluate in 2–3 weeks (answer)</b></td><td><b>Point tenderness over the distal radial physis with a normal radiograph — presumed Salter-Harris I</b></td><td><b>Tenderness 1 cm proximal to the joint over the radius; open physes, no fracture line</b></td></tr> <tr><td>Reassurance and return to activity (closest wrong answer)</td><td>Diffuse mild tenderness without physeal point tenderness, normal film — wrist sprain (uncommon in children)</td><td>Marked point tenderness over the physis argues against a sprain</td></tr> <tr><td>MRI of the wrist</td><td>Persistent pain after 2–3 weeks of immobilization with normal repeat films, or suspected occult scaphoid/ligament injury</td><td>Not needed initially — clinical diagnosis, nondisplaced</td></tr> <tr><td>Closed reduction, long-arm cast</td><td>Displaced or angulated distal radius/physeal fracture</td><td>No deformity, normal alignment</td></tr> <tr><td>Thumb spica for scaphoid</td><td>Anatomic snuffbox tenderness after a fall on the outstretched hand</td><td>Snuffbox is nontender; tenderness is over the radius</td></tr> </tbody></table> The <b>closest wrong answer is reassurance</b>, because the radiograph is genuinely normal. The discriminator is the <b>location of tenderness</b>: focal tenderness over the growth plate in a child with open physes means a Salter-Harris I fracture until proven otherwise, and the film cannot exclude it. Had the tenderness been in the anatomic snuffbox instead, a thumb spica cast with repeat imaging for an occult scaphoid fracture would have been the answer.\n- 오답 이유:\n  - (A) MRI can demonstrate physeal edema, but it does not change the management of a nondisplaced physeal injury, which is immobilization either way. It is reserved for persistent pain after 2–3 weeks with normal repeat radiographs or for suspected occult scaphoid or ligamentous injury. This option would be correct if pain persisted after the period of casting with negative repeat films.\n  - (B) Closed reduction is needed only when a fracture is displaced or angulated beyond what remodeling will correct, and a long-arm cast is used to control forearm rotation after reduction. This wrist has no deformity and the radiograph shows normal alignment, so there is nothing to reduce. This option would be correct for a dorsally displaced Salter-Harris II fracture with visible angulation.\n  - (C) A thumb spica cast is the treatment for a suspected scaphoid fracture, which presents with anatomic snuffbox tenderness after a fall on the outstretched hand and is also often radiographically occult at first. Here the snuffbox is nontender and the tenderness is over the distal radius proximal to the joint line. This option would be correct if the snuffbox had been tender.\n  - (E) Reassurance is appropriate for a wrist sprain, but ligamentous sprains are uncommon in children because the physis fails before the ligaments do. Marked point tenderness directly over the distal radial growth plate with a normal radiograph is a nondisplaced Salter-Harris I fracture until proven otherwise, and leaving it unprotected risks displacement. This option would be correct if the tenderness were diffuse and mild, away from the physis.\n- 함정: A normal radiograph does not exclude a fracture in a child with open growth plates. Where the tenderness is decides: over the physis → treat as Salter-Harris I and immobilize; in the anatomic snuffbox → treat as an occult scaphoid fracture.\n- 학습목표: 소아 손목 외상에서 원위 요골 성장판 위의 점 압통과 정상 X선을 조합해 방사선학적으로 보이지 않는 Salter-Harris I형 골절로 판단하고, 안심시키기 대신 고정과 2~3주 뒤 재평가를 선택한다\n- 근거·출처: GRAZPEDWRI-DX (Nagy E et al. Sci Data 2022) — pediatric radiologists' annotation: wrist radiograph without fracture, 12.9-year-old male, left, AP — Grade A; teacher-only · 작성자 판독(2026-09-21): 왼쪽 손목 전후면, 원위 요골·척골 성장판 열려 있음, 피질 단절·융기·성장판 벌어짐·골막반응 없음, 수근골 정렬 정상, 'L' 표지 외 문자 없음 · Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587 · Nelson Textbook of Pediatrics, 21st ed., ch. 'Common fractures' — Salter-Harris type I fractures are often radiographically occult; treat clinically suspected injuries with immobilization · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — nondisplaced physeal fractures: cast 3 weeks, repeat radiographs\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows a skeletally immature wrist: the distal radial and ulnar physes are open, the carpal bones are normally aligned, and there is no cortical break, buckle, widening of the physis, or periosteal reaction. In a child, however, the physis is the weakest part of the bone, and a fall on the outstretched hand with marked point tenderness directly over the distal radial growth plate is treated as a Salter-Harris type I fracture even when the radiograph is normal, because a nondisplaced separation through the physeal cartilage is radiolucent. The correct management is immobilization in a short-arm cast (or splint) for about 3 weeks with re-evaluation, when periosteal new bone or physeal widening on repeat films confirms the diagnosis. Reassurance risks displacement of an unrecognized physeal fracture; MRI is not needed for a clinically evident, nondisplaced injury; there is no deformity to reduce; and the nontender snuffbox argues against a scaphoid fracture."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the physis matters</b> — in a growing child the ligaments are stronger than the cartilaginous growth plate, so the same fall that would sprain an adult's wrist tends to <b>separate the physis</b>. The Salter-Harris classification describes the path of the fracture line: <b>type I runs only through the physis</b> (through the hypertrophic zone, sparing the germinal reserve zone on the epiphyseal side), type II exits through the metaphysis leaving a triangular Thurston-Holland fragment, type III exits through the epiphysis into the joint, type IV crosses metaphysis, physis and epiphysis, and type V is a crush injury. Type I is the injury of the youngest and, when nondisplaced, is <b>invisible on radiographs</b> because cartilage is radiolucent and nothing has moved; only subtle physeal widening or soft-tissue swelling may be seen.<br> <b>Why point tenderness over the physis is treated as a fracture</b> — the diagnosis of a nondisplaced Salter-Harris I fracture is clinical. Reading the film as 'normal' and reassuring the family leaves an unrecognized fracture unprotected; it may displace with further use and, rarely, injure the growth plate. Immobilization for about 3 weeks costs little, and repeat radiographs at 2–3 weeks show periosteal new bone along the metaphysis or subchondral sclerosis if the physis was indeed fractured, which also documents the injury for follow-up of growth. Prognosis for type I injuries of the distal radius is excellent; growth arrest is rare because the reserve zone stays with the epiphysis.<br> <b>Why not the other options</b> — the snuffbox is nontender and the tenderness is proximal to the joint line over the radius, so scaphoid immobilization (thumb spica) addresses the wrong bone; there is no deformity or displacement to reduce, so closed reduction and a long-arm cast are unnecessary; MRI can show physeal edema but does not change management for a nondisplaced injury and is reserved for persistent symptoms or diagnostic uncertainty."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Management</th><th style=\"width:40%\">When it is correct</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Short-arm cast, re-evaluate in 2–3 weeks (answer)</b></td><td><b>Point tenderness over the distal radial physis with a normal radiograph — presumed Salter-Harris I</b></td><td><b>Tenderness 1 cm proximal to the joint over the radius; open physes, no fracture line</b></td></tr> <tr><td>Reassurance and return to activity (closest wrong answer)</td><td>Diffuse mild tenderness without physeal point tenderness, normal film — wrist sprain (uncommon in children)</td><td>Marked point tenderness over the physis argues against a sprain</td></tr> <tr><td>MRI of the wrist</td><td>Persistent pain after 2–3 weeks of immobilization with normal repeat films, or suspected occult scaphoid/ligament injury</td><td>Not needed initially — clinical diagnosis, nondisplaced</td></tr> <tr><td>Closed reduction, long-arm cast</td><td>Displaced or angulated distal radius/physeal fracture</td><td>No deformity, normal alignment</td></tr> <tr><td>Thumb spica for scaphoid</td><td>Anatomic snuffbox tenderness after a fall on the outstretched hand</td><td>Snuffbox is nontender; tenderness is over the radius</td></tr> </tbody></table> The <b>closest wrong answer is reassurance</b>, because the radiograph is genuinely normal. The discriminator is the <b>location of tenderness</b>: focal tenderness over the growth plate in a child with open physes means a Salter-Harris I fracture until proven otherwise, and the film cannot exclude it. Had the tenderness been in the anatomic snuffbox instead, a thumb spica cast with repeat imaging for an occult scaphoid fracture would have been the answer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) MRI can demonstrate physeal edema, but it does not change the management of a nondisplaced physeal injury, which is immobilization either way. It is reserved for persistent pain after 2–3 weeks with normal repeat radiographs or for suspected occult scaphoid or ligamentous injury. This option would be correct if pain persisted after the period of casting with negative repeat films.\n(B) Closed reduction is needed only when a fracture is displaced or angulated beyond what remodeling will correct, and a long-arm cast is used to control forearm rotation after reduction. This wrist has no deformity and the radiograph shows normal alignment, so there is nothing to reduce. This option would be correct for a dorsally displaced Salter-Harris II fracture with visible angulation.\n(C) A thumb spica cast is the treatment for a suspected scaphoid fracture, which presents with anatomic snuffbox tenderness after a fall on the outstretched hand and is also often radiographically occult at first. Here the snuffbox is nontender and the tenderness is over the distal radius proximal to the joint line. This option would be correct if the snuffbox had been tender.\n(E) Reassurance is appropriate for a wrist sprain, but ligamentous sprains are uncommon in children because the physis fails before the ligaments do. Marked point tenderness directly over the distal radial growth plate with a normal radiograph is a nondisplaced Salter-Harris I fracture until proven otherwise, and leaving it unprotected risks displacement. This option would be correct if the tenderness were diffuse and mild, away from the physis."
+   },
+   {
+    "k": "함정",
+    "v": "A normal radiograph does not exclude a fracture in a child with open growth plates. Where the tenderness is decides: over the physis → treat as Salter-Harris I and immobilize; in the anatomic snuffbox → treat as an occult scaphoid fracture."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 손목 외상에서 원위 요골 성장판 위의 점 압통과 정상 X선을 조합해 방사선학적으로 보이지 않는 Salter-Harris I형 골절로 판단하고, 안심시키기 대신 고정과 2~3주 뒤 재평가를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "GRAZPEDWRI-DX (Nagy E et al. Sci Data 2022) — pediatric radiologists' annotation: wrist radiograph without fracture, 12.9-year-old male, left, AP — Grade A; teacher-only · 작성자 판독(2026-09-21): 왼쪽 손목 전후면, 원위 요골·척골 성장판 열려 있음, 피질 단절·융기·성장판 벌어짐·골막반응 없음, 수근골 정렬 정상, 'L' 표지 외 문자 없음 · Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587 · Nelson Textbook of Pediatrics, 21st ed., ch. 'Common fractures' — Salter-Harris type I fractures are often radiographically occult; treat clinically suspected injuries with immobilization · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — nondisplaced physeal fractures: cast 3 weeks, repeat radiographs ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "성장판이 열린 소아에서 원위 요골 성장판 위의 뚜렷한 점 압통은 X선이 정상이어도 Salter-Harris I형 골절로 보고 단상지 석고 고정 후 2~3주 뒤 재평가한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "압통의 위치 — 손목 관절선 1 cm 근위의 요골 성장판 위에 국한된 뚜렷한 점 압통은 염좌가 아니라 방사선학적으로 보이지 않는 성장판 골절을 뜻한다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: open distal radial and ulnar physes, normal carpal alignment, no cortical break, buckle, physeal widening, or periosteal reaction",
+     "why": "골격 미성숙(성장판 열림)이면서 보이는 골절이 없다 — 비전위 성장판 손상은 이 사진으로 배제되지 않는다는 판단의 출발점",
+     "also": []
+    },
+    {
+     "item": "marked point tenderness over the distal radius about 1 cm proximal to the wrist joint line",
+     "why": "성장판 바로 위의 국소 압통 — Salter-Harris I 의 임상 진단 근거",
+     "also": []
+    },
+    {
+     "item": "falling from a skateboard onto his outstretched left hand",
+     "why": "FOOSH 손상 기전 — 소아에서는 인대보다 성장판이 먼저 손상된다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the anatomic snuffbox is nontender",
+     "why": "주상골 골절 가능성을 낮춘다 — 무지 스피카 방향이 아니다",
+     "also": []
+    },
+    {
+     "item": "without deformity or ecchymosis",
+     "why": "전위·각형성이 없어 도수 정복이 필요하지 않다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Finger motion, sensation, and capillary refill are normal, and the radial pulse is present",
+     "why": "신경혈관 손상이 없어 응급 수술·정복 없이 고정만으로 충분하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "no history of fractures",
+     "why": "병적 골절·골형성부전 배경이 없다 — 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "12-year-old boy",
+     "why": "성장판이 아직 열린 나이 — 사진의 열린 성장판과 일치한다",
+     "also": []
+    }
+   ],
+   "summary": "Open physes with a normal film plus marked point tenderness over the distal radial physis after a fall on the outstretched hand = presumed nondisplaced Salter-Harris I fracture. Immobilize in a short-arm cast and re-evaluate with repeat radiographs in 2–3 weeks; do not reassure, reduce, or image further at this stage.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the tenderness had been in the anatomic snuffbox rather than over the distal radius, a thumb spica cast with repeat imaging in 10–14 days for an occult scaphoid fracture would be the next step"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0078.png",
+   "caption": "Anteroposterior radiograph of the left wrist, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-1389_1165377394_01_WRI-L1_M012",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0074",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "응급·중환자 — 중증 지역사회획득 폐렴의 치료 장소와 항생제",
+  "type": "응급·중환자 — 중증 지역사회획득 폐렴의 치료 장소와 항생제",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-20",
+  "vignette": "A 59-year-old man is brought to the emergency department by his wife because of fever, productive cough, and progressive shortness of breath for 4 days and confusion since this morning. He has hypertension treated with amlodipine, has never smoked, and has not been hospitalized or received antibiotics in the past year. His temperature is 39.0°C, pulse is 118/min, respirations are 32/min, and blood pressure is 88/54 mm Hg; after a 2-L bolus of crystalloid, blood pressure is 104/66 mm Hg. Oxygen saturation is 90% on 6 L/min of oxygen by nasal cannula. He is disoriented to time and place. Crackles are heard over both lung fields. Laboratory studies show a leukocyte count of 21,000/mm3, platelet count of 180,000/mm3, blood urea nitrogen of 32 mg/dL, serum creatinine of 1.4 mg/dL, and lactate of 2.4 mmol/L. Arterial blood gas analysis on 6 L/min of oxygen shows a PaO2/FiO2 ratio of 230. A portable chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Discharge home with oral amoxicillin-clavulanate plus azithromycin",
+   "Admission to the intensive care unit and intravenous ceftriaxone plus azithromycin",
+   "Admission to the medical ward and intravenous ceftriaxone plus azithromycin",
+   "Admission to the medical ward and oral levofloxacin",
+   "Admission to the intensive care unit and intravenous vancomycin plus piperacillin-tazobactam"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The portable radiograph shows patchy opacities in the right mid and lower lung zones and around the left hilum, that is, multilobar bilateral infiltrates without a large effusion or pneumothorax. Together with the vignette the patient meets at least six IDSA/ATS minor criteria for severe community-acquired pneumonia: confusion, respiratory rate ≥ 30/min, BUN ≥ 20 mg/dL, multilobar infiltrates, PaO2/FiO2 ≤ 250, and hypotension requiring aggressive fluid resuscitation. Three or more minor criteria (or one major criterion) define severe pneumonia that should be admitted to the intensive care unit, because delayed ICU transfer in such patients increases mortality. He has no risk factors for MRSA or Pseudomonas (no prior hospitalization, antibiotics, or known colonization), so the recommended regimen is an intravenous β-lactam plus a macrolide (or plus a respiratory fluoroquinolone), not vancomycin plus an antipseudomonal agent.\n- 원리: <b>Site of care is the first decision in pneumonia</b>, because it determines monitoring, the route and breadth of antibiotics, and outcome. Two tools are used in sequence. Scores such as CURB-65 (confusion, urea > 20 mg/dL, respiratory rate ≥ 30, blood pressure < 90/60, age ≥ 65) or the PSI decide <b>outpatient versus inpatient</b>; this patient already has confusion, uremia, tachypnea and hypotension (CURB-65 = 4), so discharge is not an option. The <b>IDSA/ATS 2007 severe-CAP criteria</b> then decide <b>ward versus ICU</b>: one major criterion (mechanical ventilation, or septic shock requiring vasopressors) or three or more minor criteria — respiratory rate ≥ 30, PaO2/FiO2 ≤ 250, multilobar infiltrates, confusion, BUN ≥ 20 mg/dL, leukopenia &lt; 4,000, thrombocytopenia &lt; 100,000, hypothermia &lt; 36°C, and hypotension requiring aggressive fluids. He has six, so he belongs in the ICU even though he does not yet need a ventilator or a vasopressor; patients who meet these criteria but are admitted to the ward and later transferred have higher mortality.<br> <b>Why a β-lactam plus a macrolide</b> — severe CAP is most often caused by Streptococcus pneumoniae, Legionella, Haemophilus, Staphylococcus aureus and gram-negative bacilli; the β-lactam covers the pneumococcus and Haemophilus while the macrolide adds atypical coverage (Legionella, Mycoplasma) and an immunomodulatory effect that has been associated with lower mortality in severe disease. A respiratory fluoroquinolone may replace the macrolide, but fluoroquinolone <b>monotherapy</b> is not recommended in the ICU. Coverage for MRSA (vancomycin, linezolid) or Pseudomonas (piperacillin-tazobactam, cefepime) is added only when locally validated risk factors are present — prior respiratory isolation of the organism, or recent hospitalization with intravenous antibiotics — none of which this patient has.<br> <b>The radiograph's role</b> — it supplies one of the minor criteria (multilobar infiltrates) and excludes alternatives that would change management, such as a large parapneumonic effusion needing drainage or a pneumothorax.\n- 비교: <table><thead><tr><th style=\"width:30%\">Management</th><th style=\"width:40%\">When it is correct</th><th>This patient</th></tr></thead><tbody> <tr><td><b>ICU + IV ceftriaxone + azithromycin (answer)</b></td><td><b>≥ 3 minor or 1 major IDSA/ATS criterion; no MRSA/Pseudomonas risk factors</b></td><td><b>6 minor criteria; no risk factors</b></td></tr> <tr><td>Ward + IV ceftriaxone + azithromycin (closest wrong answer)</td><td>Needs admission (CURB-65 ≥ 2) but fewer than 3 minor criteria</td><td>Undertriage — confusion, RR 32, BUN 32, multilobar, P/F 230, fluid-requiring hypotension</td></tr> <tr><td>Ward + oral levofloxacin</td><td>Non-severe inpatient who can take oral drugs</td><td>Confused, hypoxemic, hypotensive — not oral, not ward</td></tr> <tr><td>ICU + vancomycin + piperacillin-tazobactam</td><td>Severe CAP with prior MRSA/Pseudomonas isolation or recent hospitalization with IV antibiotics</td><td>No such risk factors — unnecessary breadth</td></tr> <tr><td>Discharge with oral amoxicillin-clavulanate + azithromycin</td><td>CURB-65 0–1, normal oxygenation, able to take oral medication</td><td>CURB-65 = 4</td></tr> </tbody></table> The <b>closest wrong answer is ward admission with the same antibiotics</b>, because the regimen is right and the patient is not intubated or on a vasopressor. The discriminator is the <b>count of minor criteria</b>: three or more means ICU regardless of whether a major criterion is present. Had he been alert with a respiratory rate of 24, a BUN of 15 and a single lobar infiltrate, the ward would have been appropriate; had he needed norepinephrine despite fluids, a major criterion would have made the ICU decision immediate.\n- 오답 이유:\n  - (A) Outpatient therapy is appropriate only for CURB-65 0–1 with adequate oxygenation and reliable oral intake. This patient has confusion, uremia, tachypnea and hypotension (CURB-65 = 4) and needs supplemental oxygen. This option would be correct for a young, alert patient with normal vital signs and oxygen saturation.\n  - (C) The antibiotic choice is correct, but this patient meets six IDSA/ATS minor criteria for severe pneumonia (confusion, respiratory rate 32, BUN 32, multilobar infiltrates, PaO2/FiO2 230, hypotension requiring fluids), and three are enough for ICU admission. This option would be correct for a patient needing admission with fewer than three minor criteria.\n  - (D) Oral fluoroquinolone monotherapy on the ward is reasonable for non-severe inpatients who can take oral medication, but a confused, hypoxemic, recently hypotensive patient cannot be relied on to absorb oral drugs and needs intravenous combination therapy in a monitored setting. This option would be correct for an alert, normotensive patient with a single lobar infiltrate.\n  - (E) Vancomycin plus piperacillin-tazobactam adds coverage for MRSA and Pseudomonas, which is indicated only with prior isolation of those organisms from the respiratory tract or recent hospitalization with intravenous antibiotics. He has none of these, so the broader regimen adds toxicity without benefit. This option would be correct if he had been hospitalized with IV antibiotics in the past 90 days.\n- 함정: Do not equate 'no ventilator, no vasopressor' with 'no ICU'. Count the minor criteria — confusion, RR ≥ 30, BUN ≥ 20, multilobar infiltrates, P/F ≤ 250, fluid-requiring hypotension — three or more is severe pneumonia and belongs in the ICU.\n- 학습목표: 지역사회획득 폐렴에서 다엽 침윤·착란·빈호흡·요소질소 상승·수액이 필요한 저혈압·PaO2/FiO2 저하 같은 IDSA/ATS 중증 기준을 세어 중환자실 입원을 결정하고, 위험인자가 없으면 β-락탐과 마크로라이드 병합을 선택한다\n- 근거·출처: TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 59 M · 작성자 판독(2026-09-21): 이동식 반좌위 AP, 오른쪽 중·하부 폐야와 왼쪽 폐문 주위의 다발성 반점상 음영(다엽), 큰 흉수·기흉 없음, 감시 전극·선 다수, 번인 문자 'SEMI-UPRIGHT'·'PORTABLE'·'L' 뿐 · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia: ATS/IDSA clinical practice guideline. Am J Respir Crit Care Med 2019;200:e45 — severe CAP criteria (1 major or ≥ 3 minor), β-lactam + macrolide for severe CAP, MRSA/Pseudomonas coverage only with risk factors · Mandell LA et al. IDSA/ATS consensus guidelines on the management of community-acquired pneumonia in adults. Clin Infect Dis 2007;44:S27 — minor criteria list · Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: CURB-65. Thorax 2003;58:377 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Pneumonia'; Tintinalli's Emergency Medicine 9th ed., ch. 'Community-acquired pneumonia'\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …45135712 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The portable radiograph shows patchy opacities in the right mid and lower lung zones and around the left hilum, that is, multilobar bilateral infiltrates without a large effusion or pneumothorax. Together with the vignette the patient meets at least six IDSA/ATS minor criteria for severe community-acquired pneumonia: confusion, respiratory rate ≥ 30/min, BUN ≥ 20 mg/dL, multilobar infiltrates, PaO2/FiO2 ≤ 250, and hypotension requiring aggressive fluid resuscitation. Three or more minor criteria (or one major criterion) define severe pneumonia that should be admitted to the intensive care unit, because delayed ICU transfer in such patients increases mortality. He has no risk factors for MRSA or Pseudomonas (no prior hospitalization, antibiotics, or known colonization), so the recommended regimen is an intravenous β-lactam plus a macrolide (or plus a respiratory fluoroquinolone), not vancomycin plus an antipseudomonal agent."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Site of care is the first decision in pneumonia</b>, because it determines monitoring, the route and breadth of antibiotics, and outcome. Two tools are used in sequence. Scores such as CURB-65 (confusion, urea > 20 mg/dL, respiratory rate ≥ 30, blood pressure < 90/60, age ≥ 65) or the PSI decide <b>outpatient versus inpatient</b>; this patient already has confusion, uremia, tachypnea and hypotension (CURB-65 = 4), so discharge is not an option. The <b>IDSA/ATS 2007 severe-CAP criteria</b> then decide <b>ward versus ICU</b>: one major criterion (mechanical ventilation, or septic shock requiring vasopressors) or three or more minor criteria — respiratory rate ≥ 30, PaO2/FiO2 ≤ 250, multilobar infiltrates, confusion, BUN ≥ 20 mg/dL, leukopenia &lt; 4,000, thrombocytopenia &lt; 100,000, hypothermia &lt; 36°C, and hypotension requiring aggressive fluids. He has six, so he belongs in the ICU even though he does not yet need a ventilator or a vasopressor; patients who meet these criteria but are admitted to the ward and later transferred have higher mortality.<br> <b>Why a β-lactam plus a macrolide</b> — severe CAP is most often caused by Streptococcus pneumoniae, Legionella, Haemophilus, Staphylococcus aureus and gram-negative bacilli; the β-lactam covers the pneumococcus and Haemophilus while the macrolide adds atypical coverage (Legionella, Mycoplasma) and an immunomodulatory effect that has been associated with lower mortality in severe disease. A respiratory fluoroquinolone may replace the macrolide, but fluoroquinolone <b>monotherapy</b> is not recommended in the ICU. Coverage for MRSA (vancomycin, linezolid) or Pseudomonas (piperacillin-tazobactam, cefepime) is added only when locally validated risk factors are present — prior respiratory isolation of the organism, or recent hospitalization with intravenous antibiotics — none of which this patient has.<br> <b>The radiograph's role</b> — it supplies one of the minor criteria (multilobar infiltrates) and excludes alternatives that would change management, such as a large parapneumonic effusion needing drainage or a pneumothorax."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Management</th><th style=\"width:40%\">When it is correct</th><th>This patient</th></tr></thead><tbody> <tr><td><b>ICU + IV ceftriaxone + azithromycin (answer)</b></td><td><b>≥ 3 minor or 1 major IDSA/ATS criterion; no MRSA/Pseudomonas risk factors</b></td><td><b>6 minor criteria; no risk factors</b></td></tr> <tr><td>Ward + IV ceftriaxone + azithromycin (closest wrong answer)</td><td>Needs admission (CURB-65 ≥ 2) but fewer than 3 minor criteria</td><td>Undertriage — confusion, RR 32, BUN 32, multilobar, P/F 230, fluid-requiring hypotension</td></tr> <tr><td>Ward + oral levofloxacin</td><td>Non-severe inpatient who can take oral drugs</td><td>Confused, hypoxemic, hypotensive — not oral, not ward</td></tr> <tr><td>ICU + vancomycin + piperacillin-tazobactam</td><td>Severe CAP with prior MRSA/Pseudomonas isolation or recent hospitalization with IV antibiotics</td><td>No such risk factors — unnecessary breadth</td></tr> <tr><td>Discharge with oral amoxicillin-clavulanate + azithromycin</td><td>CURB-65 0–1, normal oxygenation, able to take oral medication</td><td>CURB-65 = 4</td></tr> </tbody></table> The <b>closest wrong answer is ward admission with the same antibiotics</b>, because the regimen is right and the patient is not intubated or on a vasopressor. The discriminator is the <b>count of minor criteria</b>: three or more means ICU regardless of whether a major criterion is present. Had he been alert with a respiratory rate of 24, a BUN of 15 and a single lobar infiltrate, the ward would have been appropriate; had he needed norepinephrine despite fluids, a major criterion would have made the ICU decision immediate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Outpatient therapy is appropriate only for CURB-65 0–1 with adequate oxygenation and reliable oral intake. This patient has confusion, uremia, tachypnea and hypotension (CURB-65 = 4) and needs supplemental oxygen. This option would be correct for a young, alert patient with normal vital signs and oxygen saturation.\n(C) The antibiotic choice is correct, but this patient meets six IDSA/ATS minor criteria for severe pneumonia (confusion, respiratory rate 32, BUN 32, multilobar infiltrates, PaO2/FiO2 230, hypotension requiring fluids), and three are enough for ICU admission. This option would be correct for a patient needing admission with fewer than three minor criteria.\n(D) Oral fluoroquinolone monotherapy on the ward is reasonable for non-severe inpatients who can take oral medication, but a confused, hypoxemic, recently hypotensive patient cannot be relied on to absorb oral drugs and needs intravenous combination therapy in a monitored setting. This option would be correct for an alert, normotensive patient with a single lobar infiltrate.\n(E) Vancomycin plus piperacillin-tazobactam adds coverage for MRSA and Pseudomonas, which is indicated only with prior isolation of those organisms from the respiratory tract or recent hospitalization with intravenous antibiotics. He has none of these, so the broader regimen adds toxicity without benefit. This option would be correct if he had been hospitalized with IV antibiotics in the past 90 days."
+   },
+   {
+    "k": "함정",
+    "v": "Do not equate 'no ventilator, no vasopressor' with 'no ICU'. Count the minor criteria — confusion, RR ≥ 30, BUN ≥ 20, multilobar infiltrates, P/F ≤ 250, fluid-requiring hypotension — three or more is severe pneumonia and belongs in the ICU."
+   },
+   {
+    "k": "학습목표",
+    "v": "지역사회획득 폐렴에서 다엽 침윤·착란·빈호흡·요소질소 상승·수액이 필요한 저혈압·PaO2/FiO2 저하 같은 IDSA/ATS 중증 기준을 세어 중환자실 입원을 결정하고, 위험인자가 없으면 β-락탐과 마크로라이드 병합을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (UAMS) series label: chest radiograph with bilateral opacities — Grade B; teacher-only: patient in a confirmed COVID-19 cohort, 59 M · 작성자 판독(2026-09-21): 이동식 반좌위 AP, 오른쪽 중·하부 폐야와 왼쪽 폐문 주위의 다발성 반점상 음영(다엽), 큰 흉수·기흉 없음, 감시 전극·선 다수, 번인 문자 'SEMI-UPRIGHT'·'PORTABLE'·'L' 뿐 · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia: ATS/IDSA clinical practice guideline. Am J Respir Crit Care Med 2019;200:e45 — severe CAP criteria (1 major or ≥ 3 minor), β-lactam + macrolide for severe CAP, MRSA/Pseudomonas coverage only with risk factors · Mandell LA et al. IDSA/ATS consensus guidelines on the management of community-acquired pneumonia in adults. Clin Infect Dis 2007;44:S27 — minor criteria list · Lim WS et al. Defining community acquired pneumonia severity on presentation to hospital: CURB-65. Thorax 2003;58:377 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Pneumonia'; Tintinalli's Emergency Medicine 9th ed., ch. 'Community-acquired pneumonia' ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …45135712 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "다엽 침윤·착란·빈호흡·BUN 상승·P/F 230·수액이 필요한 저혈압으로 IDSA/ATS 소기준 3개 이상을 충족하는 중증 폐렴이므로 중환자실 입원과 정맥 β-락탐 + 마크로라이드다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "소기준을 세면 6개다 — 인공호흡기·승압제가 필요하지 않아도 소기준 3개 이상이면 병동이 아니라 중환자실이다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: patchy multilobar opacities in the right mid and lower zones and the left perihilar region, no large effusion or pneumothorax",
+     "why": "다엽 침윤 — 중증 폐렴 소기준의 하나이고 배액이 필요한 흉수·기흉을 배제한다",
+     "also": []
+    },
+    {
+     "item": "respirations are 32/min",
+     "why": "호흡수 ≥ 30 — 소기준",
+     "also": []
+    },
+    {
+     "item": "He is disoriented to time and place",
+     "why": "착란 — 소기준",
+     "also": []
+    },
+    {
+     "item": "blood urea nitrogen of 32 mg/dL",
+     "why": "BUN ≥ 20 — 소기준",
+     "also": []
+    },
+    {
+     "item": "PaO2/FiO2 ratio of 230",
+     "why": "≤ 250 — 소기준",
+     "also": []
+    },
+    {
+     "item": "after a 2-L bolus of crystalloid, blood pressure is 104/66 mm Hg",
+     "why": "적극적 수액이 필요한 저혈압 — 소기준. 승압제가 필요하지 않아 대기준은 아니지만 이미 소기준이 3개를 넘는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "has not been hospitalized or received antibiotics in the past year",
+     "why": "MRSA·녹농균 위험인자가 없어 반코마이신·항녹농균 β-락탐 병합 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "platelet count of 180,000/mm3",
+     "why": "혈소판감소(소기준) 는 없다 — 그래도 소기준은 6개다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "has never smoked",
+     "why": "COPD 배경이 없다 — 기저 폐질환에 따른 항생제 변경이 필요 없다",
+     "also": []
+    },
+    {
+     "item": "59-year-old man",
+     "why": "65세 미만 — CURB-65 의 나이 점수는 0이지만 나머지 4항목으로 이미 입원 대상",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral multilobar infiltrates plus confusion, RR 32, BUN 32, P/F 230 and fluid-requiring hypotension satisfy ≥ 3 IDSA/ATS minor criteria: severe CAP → ICU admission with IV ceftriaxone plus azithromycin; no MRSA/Pseudomonas risk factors, so no vancomycin or piperacillin-tazobactam.",
+   "switch": {
+    "choice": "E",
+    "condition": "If he had been hospitalized and treated with intravenous antibiotics in the past 90 days or had MRSA or Pseudomonas previously isolated from his sputum, empiric coverage for those organisms would be added"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0074.png",
+   "caption": "Portable anteroposterior chest radiograph obtained in the semi-upright position, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1228131507590496780089745135712",
+   "asset_id": "TCIA-COVID19_AR-53182461470871",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …45135712"
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0073",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "피부 — 노인 색소 반의 더모스코피",
+  "type": "피부 — 노인 색소 반의 더모스코피",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-20",
+  "vignette": "75세 남자가 3년 전부터 왼쪽 아래팔 손등 쪽에 있던 갈색 반점이 최근 조금 커진 것 같다며 병원에 왔다. 평생 야외에서 농사를 지었고, 가려움이나 출혈은 없으며 흑색종 가족력은 없다. 진찰에서 지름 9 mm 의 편평한 옅은 갈색 반이 있고 만져지는 부분이나 궤양은 없다. 이 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "가장 적절한 진단은?",
+  "options": [
+   "접합모반",
+   "표재확산흑색종",
+   "일광흑자",
+   "악성흑자",
+   "지루각화증"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 더모스코피에서 옅은 갈색 색소가 균질하게 깔려 있고 그 위에 미세하고 규칙적인 그물·지문 모양 무늬가 보이며, 털과 모낭 개구부는 정상이다. 모낭 개구부 주위의 비대칭 색소, 마름모 구조, 회색 점·과립, 청백색 베일, 비정형 색소망, 면포양 개구부나 뇌회 모양은 없다. 고령의 햇빛 노출부(아래팔)에 생긴 편평하고 균질한 갈색 반은 일광흑자이며, 최근 조금 커진 것처럼 느끼는 것은 일광흑자에서도 흔하다. 악성흑자를 시사하는 모낭 주위 구조가 없고, 지루각화증의 각질 구조와 접합모반·흑색종의 색소망 이상도 없다.\n- 원리: <b>일광흑자(solar lentigo)</b>는 만성 자외선 노출로 표피 기저층의 멜라닌이 늘고 표피능(rete ridge)이 길어진 병변이다. 멜라닌세포 수는 정상이거나 약간 늘 뿐 <b>둥지를 만들지 않고 비정형도 없다</b>. 그래서 더모스코피에서는 색소가 표피 전체에 고르게 퍼진 <b>균질한 옅은 갈색</b>으로 보이고, 길어진 표피능이 모낭 개구부 사이를 채우면서 <b>미세하고 규칙적인 그물 무늬(위색소망)나 지문 모양의 평행선</b>이 나타난다. 가장자리는 벌레 먹은 듯 (moth-eaten) 불규칙할 수 있지만 색은 한 가지다.<br> <b>왜 악성흑자와 갈리는가</b> — 악성흑자(lentigo maligna)는 햇빛으로 손상된 피부의 기저층을 따라 <b>비정형 멜라닌세포가 모낭 상피까지 내려가며</b> 퍼지는 제자리 흑색종이다. 그래서 모낭 개구부 주위에 색소가 <b>비대칭으로 고리처럼</b> 쌓이고(비대칭 색소 모낭 개구부), 모낭 사이가 색소로 이어져 <b>마름모(rhomboidal) 구조</b>를 만들며, 진피로 떨어진 멜라닌을 큰포식세포가 삼켜 <b>회색 점·과립(annular-granular)</b>이 보이고, 진행하면 모낭이 막혀 균질한 검은 반이 된다. 이 사진에는 그런 모낭 중심 구조가 없다.<br> <b>다른 감별</b> — 지루각화증은 표피 증식으로 면포양 개구부·좁쌀종양 낭·뇌회 모양·경계 명확한 「붙여 놓은」 모양을 보인다. 접합모반은 규칙적 색소망을 갖지만 젊은 나이에 생기고 크기가 작다. 표재확산흑색종은 비대칭·다색·비정형 색소망·청백색 베일·퇴행 구조가 있다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:46%\">더모스코피의 결정적 구조</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>일광흑자(정답)</b></td><td><b>균질한 옅은 갈색, 미세·규칙적 그물 또는 지문 무늬, 모낭 개구부 정상</b></td><td><b>모두 있음</b></td></tr> <tr><td>악성흑자(가장 가까운 오답)</td><td>모낭 개구부 주위 비대칭 색소, 마름모 구조, 회색 점·과립, 모낭 폐쇄</td><td>모낭 주위 구조 없음</td></tr> <tr><td>지루각화증</td><td>면포양 개구부, 좁쌀종양 낭, 뇌회 모양, 명확한 경계</td><td>각질 구조 없음, 편평</td></tr> <tr><td>접합모반</td><td>규칙적 색소망, 젊은 나이, 작은 크기</td><td>75세 햇빛 노출부의 9 mm 반</td></tr> <tr><td>표재확산흑색종</td><td>비대칭, 여러 색, 비정형 색소망, 청백색 베일, 퇴행</td><td>단색·균질</td></tr> </tbody></table> <b>가장 가까운 오답은 「악성흑자」</b>다 — 고령·햇빛 노출부·「커진다」는 병력이 그쪽을 떠올리게 한다. 갈림길은 <b>모낭 개구부 주위의 색소 분포</b>다. 모낭 주위에 비대칭 고리·마름모·회색 과립이 있으면 악성흑자를 의심해 생검하고, 색소가 균질하고 모낭이 정상이면 일광흑자다. 편평 병변이라도 이 구조가 하나라도 보이면 나이와 크기에 관계없이 조직검사가 필요하다.\n- 오답 이유:\n  - ① 접합모반은 표피·진피 경계의 멜라닌세포 둥지로 규칙적 색소망을 보이지만 대개 젊은 나이에 생기고 크기가 작으며 새로 생기거나 커지는 일이 드물다. 75세 햇빛 노출부의 9 mm 반에는 맞지 않는다. 젊은 환자의 작은 반에서 규칙적 색소망이 뚜렷했다면 이 선지가 맞다.\n  - ② 표재확산흑색종은 비대칭·여러 색·비정형 색소망·청백색 베일·퇴행 구조 같은 흑색종 특이 구조를 보인다. 이 사진은 한 가지 옅은 갈색으로 균질하고 그런 구조가 없다. 병변이 비대칭이고 색이 여럿이며 비정형 색소망이나 청백색 구조가 있었다면 이 선지가 정답이 된다.\n  - ④ 악성흑자는 고령의 햇빛 노출부에 생기는 제자리 흑색종으로 이 증례와 배경이 같지만, 더모스코피에서 모낭 개구부 주위 비대칭 색소·마름모 구조·회색 점과 과립이 있어야 한다. 이 사진은 색소가 균질하고 모낭이 정상이다. 모낭 주위에 그런 구조가 보였다면 이 선지가 정답이 되고 생검이 필요하다.\n  - ⑤ 지루각화증은 표피가 두꺼워진 각화성 병변으로 면포양 개구부·좁쌀종양 낭·뇌회 모양과 「붙여 놓은 듯한」 경계를 보이며 만져진다. 이 병변은 편평하고 그런 각질 구조가 없다. 표면이 오톨도톨하고 면포양 개구부가 여럿 보였다면 이 선지가 정답이 된다.\n- 함정: 「고령 + 햇빛 노출부 + 커진다」에서 멈추고 악성흑자로 가지 않는다. 판단은 모낭 개구부 주위의 색소 분포로 한다 — 균질하고 모낭이 정상이면 일광흑자, 비대칭 고리·마름모·회색 과립이면 악성흑자.\n- 학습목표: 노인의 햇빛 노출부 편평 갈색 반의 더모스코피에서 균질한 옅은 갈색 색소와 규칙적인 미세 그물 무늬를 읽고, 악성흑자의 모낭 주위 비대칭 색소·마름모 구조·회색 과립이 없음을 근거로 일광흑자를 진단한다\n- 근거·출처: ISIC Archive ISIC_0010045 — diagnosis: Lentigo NOS (histopathology-confirmed), 75 M, upper extremity — Grade A; teacher-only · 작성자 판독(2026-09-21): 균질한 옅은 갈색 색소, 미세·규칙적 그물·지문 무늬, 모낭 개구부 정상, 비대칭 모낭 주위 색소·마름모·회색 과립·청백색 구조 없음, 털 외 식별 표지 없음 · Marghoob AA, Malvehy J, Braun RP (eds). Atlas of Dermoscopy, 2nd ed. — solar lentigo (homogeneous light brown, fingerprint pattern, moth-eaten border) vs lentigo maligna (asymmetric pigmented follicular openings, rhomboidal structures, annular-granular pattern) · Schiffner R et al. Improvement of early recognition of lentigo maligna using dermatoscopy. J Am Acad Dermatol 2000;42:25 · Bolognia JL et al. Dermatology, 5th ed., ch. 'Benign melanocytic neoplasms' and 'Melanoma' — lentigo, lentigo maligna\n\n## 출처\n- ISIC Archive ISIC_0010045 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 옅은 갈색 색소가 균질하게 깔려 있고 그 위에 미세하고 규칙적인 그물·지문 모양 무늬가 보이며, 털과 모낭 개구부는 정상이다. 모낭 개구부 주위의 비대칭 색소, 마름모 구조, 회색 점·과립, 청백색 베일, 비정형 색소망, 면포양 개구부나 뇌회 모양은 없다. 고령의 햇빛 노출부(아래팔)에 생긴 편평하고 균질한 갈색 반은 일광흑자이며, 최근 조금 커진 것처럼 느끼는 것은 일광흑자에서도 흔하다. 악성흑자를 시사하는 모낭 주위 구조가 없고, 지루각화증의 각질 구조와 접합모반·흑색종의 색소망 이상도 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>일광흑자(solar lentigo)</b>는 만성 자외선 노출로 표피 기저층의 멜라닌이 늘고 표피능(rete ridge)이 길어진 병변이다. 멜라닌세포 수는 정상이거나 약간 늘 뿐 <b>둥지를 만들지 않고 비정형도 없다</b>. 그래서 더모스코피에서는 색소가 표피 전체에 고르게 퍼진 <b>균질한 옅은 갈색</b>으로 보이고, 길어진 표피능이 모낭 개구부 사이를 채우면서 <b>미세하고 규칙적인 그물 무늬(위색소망)나 지문 모양의 평행선</b>이 나타난다. 가장자리는 벌레 먹은 듯 (moth-eaten) 불규칙할 수 있지만 색은 한 가지다.<br> <b>왜 악성흑자와 갈리는가</b> — 악성흑자(lentigo maligna)는 햇빛으로 손상된 피부의 기저층을 따라 <b>비정형 멜라닌세포가 모낭 상피까지 내려가며</b> 퍼지는 제자리 흑색종이다. 그래서 모낭 개구부 주위에 색소가 <b>비대칭으로 고리처럼</b> 쌓이고(비대칭 색소 모낭 개구부), 모낭 사이가 색소로 이어져 <b>마름모(rhomboidal) 구조</b>를 만들며, 진피로 떨어진 멜라닌을 큰포식세포가 삼켜 <b>회색 점·과립(annular-granular)</b>이 보이고, 진행하면 모낭이 막혀 균질한 검은 반이 된다. 이 사진에는 그런 모낭 중심 구조가 없다.<br> <b>다른 감별</b> — 지루각화증은 표피 증식으로 면포양 개구부·좁쌀종양 낭·뇌회 모양·경계 명확한 「붙여 놓은」 모양을 보인다. 접합모반은 규칙적 색소망을 갖지만 젊은 나이에 생기고 크기가 작다. 표재확산흑색종은 비대칭·다색·비정형 색소망·청백색 베일·퇴행 구조가 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:46%\">더모스코피의 결정적 구조</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>일광흑자(정답)</b></td><td><b>균질한 옅은 갈색, 미세·규칙적 그물 또는 지문 무늬, 모낭 개구부 정상</b></td><td><b>모두 있음</b></td></tr> <tr><td>악성흑자(가장 가까운 오답)</td><td>모낭 개구부 주위 비대칭 색소, 마름모 구조, 회색 점·과립, 모낭 폐쇄</td><td>모낭 주위 구조 없음</td></tr> <tr><td>지루각화증</td><td>면포양 개구부, 좁쌀종양 낭, 뇌회 모양, 명확한 경계</td><td>각질 구조 없음, 편평</td></tr> <tr><td>접합모반</td><td>규칙적 색소망, 젊은 나이, 작은 크기</td><td>75세 햇빛 노출부의 9 mm 반</td></tr> <tr><td>표재확산흑색종</td><td>비대칭, 여러 색, 비정형 색소망, 청백색 베일, 퇴행</td><td>단색·균질</td></tr> </tbody></table> <b>가장 가까운 오답은 「악성흑자」</b>다 — 고령·햇빛 노출부·「커진다」는 병력이 그쪽을 떠올리게 한다. 갈림길은 <b>모낭 개구부 주위의 색소 분포</b>다. 모낭 주위에 비대칭 고리·마름모·회색 과립이 있으면 악성흑자를 의심해 생검하고, 색소가 균질하고 모낭이 정상이면 일광흑자다. 편평 병변이라도 이 구조가 하나라도 보이면 나이와 크기에 관계없이 조직검사가 필요하다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 접합모반은 표피·진피 경계의 멜라닌세포 둥지로 규칙적 색소망을 보이지만 대개 젊은 나이에 생기고 크기가 작으며 새로 생기거나 커지는 일이 드물다. 75세 햇빛 노출부의 9 mm 반에는 맞지 않는다. 젊은 환자의 작은 반에서 규칙적 색소망이 뚜렷했다면 이 선지가 맞다.\n② 표재확산흑색종은 비대칭·여러 색·비정형 색소망·청백색 베일·퇴행 구조 같은 흑색종 특이 구조를 보인다. 이 사진은 한 가지 옅은 갈색으로 균질하고 그런 구조가 없다. 병변이 비대칭이고 색이 여럿이며 비정형 색소망이나 청백색 구조가 있었다면 이 선지가 정답이 된다.\n④ 악성흑자는 고령의 햇빛 노출부에 생기는 제자리 흑색종으로 이 증례와 배경이 같지만, 더모스코피에서 모낭 개구부 주위 비대칭 색소·마름모 구조·회색 점과 과립이 있어야 한다. 이 사진은 색소가 균질하고 모낭이 정상이다. 모낭 주위에 그런 구조가 보였다면 이 선지가 정답이 되고 생검이 필요하다.\n⑤ 지루각화증은 표피가 두꺼워진 각화성 병변으로 면포양 개구부·좁쌀종양 낭·뇌회 모양과 「붙여 놓은 듯한」 경계를 보이며 만져진다. 이 병변은 편평하고 그런 각질 구조가 없다. 표면이 오톨도톨하고 면포양 개구부가 여럿 보였다면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「고령 + 햇빛 노출부 + 커진다」에서 멈추고 악성흑자로 가지 않는다. 판단은 모낭 개구부 주위의 색소 분포로 한다 — 균질하고 모낭이 정상이면 일광흑자, 비대칭 고리·마름모·회색 과립이면 악성흑자."
+   },
+   {
+    "k": "학습목표",
+    "v": "노인의 햇빛 노출부 편평 갈색 반의 더모스코피에서 균질한 옅은 갈색 색소와 규칙적인 미세 그물 무늬를 읽고, 악성흑자의 모낭 주위 비대칭 색소·마름모 구조·회색 과립이 없음을 근거로 일광흑자를 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ISIC Archive ISIC_0010045 — diagnosis: Lentigo NOS (histopathology-confirmed), 75 M, upper extremity — Grade A; teacher-only · 작성자 판독(2026-09-21): 균질한 옅은 갈색 색소, 미세·규칙적 그물·지문 무늬, 모낭 개구부 정상, 비대칭 모낭 주위 색소·마름모·회색 과립·청백색 구조 없음, 털 외 식별 표지 없음 · Marghoob AA, Malvehy J, Braun RP (eds). Atlas of Dermoscopy, 2nd ed. — solar lentigo (homogeneous light brown, fingerprint pattern, moth-eaten border) vs lentigo maligna (asymmetric pigmented follicular openings, rhomboidal structures, annular-granular pattern) · Schiffner R et al. Improvement of early recognition of lentigo maligna using dermatoscopy. J Am Acad Dermatol 2000;42:25 · Bolognia JL et al. Dermatology, 5th ed., ch. 'Benign melanocytic neoplasms' and 'Melanoma' — lentigo, lentigo maligna ## 출처 ISIC Archive ISIC_0010045 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "고령의 햇빛 노출부 편평 갈색 반이 더모스코피에서 균질한 옅은 갈색과 규칙적 미세 그물 무늬만 보이고 모낭 주위 구조가 없으면 일광흑자다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "모낭 개구부 주위의 비대칭 색소·마름모 구조·회색 과립이 없다 — 악성흑자는 모낭을 중심으로 색소가 비대칭으로 쌓인다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: 균질한 옅은 갈색 색소침착, 미세하고 규칙적인 그물·지문 모양 무늬",
+     "why": "표피 기저층 멜라닌 증가와 길어진 표피능 — 일광흑자의 전형",
+     "also": []
+    },
+    {
+     "item": "평생 야외에서 농사",
+     "why": "만성 자외선 노출 — 일광흑자와 악성흑자 둘 다의 배경이라 영상으로 갈라야 한다",
+     "also": []
+    },
+    {
+     "item": "편평한 옅은 갈색 반이 있고 만져지는 부분이나 궤양은 없다",
+     "why": "표피 증식(지루각화증)이나 침윤(흑색종)이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 모낭 개구부 주위 비대칭 색소·마름모 구조·회색 점과 과립 없음",
+     "why": "악성흑자를 시사하는 모낭 중심 구조가 없어 그 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "영상: 면포양 개구부·뇌회 모양·청백색 베일 없음",
+     "why": "지루각화증과 흑색종의 특이 구조가 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "최근 조금 커진 것 같다",
+     "why": "일광흑자도 서서히 커지므로 그 자체로 악성을 뜻하지 않는다 — 구조가 판단을 결정한다",
+     "also": []
+    },
+    {
+     "item": "흑색종 가족력은 없다",
+     "why": "위험도를 낮추지만 진단을 결정하지는 않는다",
+     "also": []
+    },
+    {
+     "item": "75세 남자",
+     "why": "일광흑자·악성흑자 모두 흔한 나이 — 나이로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "햇빛 노출부의 편평 갈색 반이 더모스코피에서 균질한 옅은 갈색과 규칙적 미세 그물 무늬만 보이고, 악성흑자의 모낭 주위 비대칭 색소·마름모·회색 과립이 없으므로 일광흑자다.",
+   "switch": {
+    "choice": "D",
+    "condition": "모낭 개구부 주위에 비대칭 고리 모양 색소와 마름모 구조, 회색 과립이 보였다면 악성흑자를 의심해 조직검사를 해야 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0073.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC-0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0010045",
+   "asset_id": "ISIC-ISIC_0010045",
+   "text": "ISIC Archive ISIC_0010045 (CC-0)"
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0081",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "예방의학 — 검진 무작위시험의 치료필요수",
+  "type": "예방의학 — 검진 무작위시험의 치료필요수",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-20",
+  "vignette": "60세 남자가 국가암검진에서 대장암 검진 안내를 받고 이 검진이 실제로 도움이 되는지 묻기 위해 병원에 왔다. 대장암 가족력과 흡연력은 없고 증상도 없다. 의사가 참고한 무작위배정 임상시험에서는 60세 성인 80,000명을 무작위로 나누어 40,000명에게는 검진을 초대하고 40,000명은 초대하지 않았다. 초대군 중 실제로 검진을 받은 사람은 70% 였다. 10년 추적에서 대장암 사망은 초대군 320명, 비초대군 400명이었으며, 분석은 초대 여부에 따라(intention-to-screen) 하였다.",
+  "question": "이 검진 프로그램으로 10년 동안 대장암 사망 1건을 막기 위해 검진에 초대해야 하는 사람 수는?",
+  "options": [
+   "1,250명",
+   "500명",
+   "5명",
+   "125명",
+   "350명"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 초대군의 10년 대장암 사망 위험은 320/40,000 = 0.8%, 비초대군은 400/40,000 = 1.0% 다. 절대위험감소(ARR)는 1.0% − 0.8% = 0.2% = 0.002 이고, 치료필요수(NNT)는 1/ARR = 1/0.002 = 500 이다. 이 시험은 초대 여부로 분석했으므로 이 수는 「초대해야 하는 사람 수(number needed to invite)」이며, 참여율 70% 로 나누어 350 으로 보정하는 것은 실제로 검진을 받은 사람 기준의 다른 지표가 된다. 상대위험감소(RRR)는 0.2/1.0 = 20% 이지만 그 역수 5는 NNT 가 아니다. 125 는 초대군 위험의 역수, 1,250 은 계산 오류다.\n- 원리: <b>치료필요수(NNT)는 절대위험감소의 역수</b>다. 두 군의 사건 위험(누적발생률)을 각각 구해 그 차이(ARR = 대조군 위험 − 중재군 위험)를 내고 1을 나눈다. 이 시험에서는 대조군 1.0%, 초대군 0.8% 이므로 ARR 0.2%, NNT 500 이다. 반면 <b>상대위험감소(RRR = ARR / 대조군 위험)</b>는 20% 로, 기저 위험이 낮은 검진 집단에서는 「20% 감소」가 인상적으로 들리지만 절대 이득은 1,000명당 2명이라는 사실을 NNT 가 드러낸다. 같은 RRR 이라도 기저 위험이 10배 높은 고위험군에서는 NNT 가 50 으로 줄어드는 것이 NNT 의 핵심 성질이다 — <b>NNT 는 기저 위험과 추적 기간에 묶인 수</b>이므로 「10년 동안」이라는 기간을 늘 붙인다.<br> <b>왜 초대 기준으로 분석하는가</b> — 무작위배정은 초대 시점에 이루어지므로 초대군과 비초대군만이 비교 가능한 집단이다. 실제로 검진을 받은 70% 만 골라 비교하면 건강에 관심이 많고 위험이 낮은 사람이 참여하는 <b>자기선택(건강한 참여자 효과)</b>이 섞여 무작위배정의 이점이 사라진다. 그래서 검진 시험의 1차 결과는 초대 여부(intention-to-screen)로 보고하고, 그 NNT 는 「사망 1건을 막기 위해 <b>초대</b>해야 하는 수(NNI)」다. 참여자 기준 효과를 알고 싶으면 비참여자의 사망률을 이용한 보정 분석(per-protocol 보정)을 따로 하며, 그때 ARR 이 약 0.2/0.7 ≈ 0.29% 로 커져 NNS 약 350 이 된다 — 그러나 이는 <b>검진을 받는 사람</b> 기준이지 프로그램이 초대해야 하는 수가 아니다.<br> <b>정책으로의 번역</b> — NNI 500 은 「10년간 500명을 초대하면 대장암 사망 1명을 막는다」는 뜻이며, 검진의 위해(위양성, 대장내시경 합병증, 과진단)와 비용을 같은 분모로 놓고 비교하는 출발점이 된다. 전체 사망률이 아니라 대장암 특이 사망률에 대한 NNT 라는 점도 해석에 붙는다.\n- 비교: <table><thead><tr><th style=\"width:18%\">수</th><th style=\"width:42%\">무엇을 계산한 것인가</th><th>왜 정답이 아닌가 / 언제 맞는가</th></tr></thead><tbody> <tr><td><b>500명(정답)</b></td><td><b>1 / ARR = 1 / (0.010 − 0.008) — 초대 기준</b></td><td><b>10년간 사망 1건 예방에 초대해야 하는 수</b></td></tr> <tr><td>350명(가장 가까운 오답)</td><td>ARR 을 참여율 0.7 로 나눈 보정(0.2/0.7 ≈ 0.29%) 의 역수</td><td>「실제로 검진을 받는 사람」 기준의 NNS — 문항은 초대 수를 묻는다</td></tr> <tr><td>5명</td><td>1 / RRR = 1 / 0.20</td><td>상대위험감소의 역수는 NNT 가 아니다</td></tr> <tr><td>125명</td><td>1 / 초대군 위험(0.008)</td><td>한 군의 위험 역수 — 두 군의 차이가 아니다</td></tr> <tr><td>1,250명</td><td>1 / (ARR × 0.4) 등 계산 오류</td><td>자료로 도출되지 않는 수</td></tr> </tbody></table> <b>가장 가까운 오답은 350명</b>이다 — 참여율 70% 가 제시되어 있어 보정하고 싶어지기 때문이다. 갈림길은 <b>문항이 묻는 분모</b>다. 「초대해야 하는 사람 수」는 무작위배정이 이루어진 초대 기준 분석의 ARR 로 계산하고, 참여율은 그 결과를 「검진을 받은 사람」 기준으로 환산할 때만 쓴다. 반대로 「검진을 실제로 받은 사람 중 사망 1건을 막기 위한 수」를 물었다면 350 이 정답이 된다.\n- 오답 이유:\n  - ① 1,250명은 자료로 도출되지 않는 수로, 절대위험감소 0.2% 를 다시 잘못 나누거나 사망 수 차이(80)를 분모에 잘못 넣을 때 나온다. 절대위험감소가 0.08% 였다면 1,250 이 되지만 이 시험의 두 군 위험 차이는 0.2% 다.\n  - ③ 5명은 상대위험감소(20%)의 역수다. 상대위험감소는 기저 위험이 얼마이든 같은 비율로 표현되어 절대 이득을 과장하며, 치료필요수는 절대위험감소로만 계산한다. 대조군 위험이 100% 에 가까운 극단적 상황에서만 상대위험감소의 역수가 치료필요수와 비슷해진다.\n  - ④ 125명은 초대군의 10년 사망 위험(0.8%)의 역수, 즉 초대군에서 사망 1건이 생기는 데 필요한 사람 수다. 치료필요수는 한 군의 위험이 아니라 두 군 위험의 차이로 계산한다. 「초대군에서 10년간 대장암 사망 1건이 발생하는 평균 인원」을 물었다면 이 수가 맞다.\n  - ⑤ 350명은 절대위험감소를 참여율 70% 로 나누어 「실제로 검진을 받은 사람」 기준으로 환산한 검진필요수다. 이 시험은 초대 여부로 분석했고 문항도 초대해야 하는 수를 물으므로 보정하지 않는다. 「검진을 실제로 받은 사람 중 사망 1건을 막기 위한 수」를 물었다면 이 선지가 정답이 된다.\n- 함정: 상대위험감소(20%)나 참여율(70%)에 끌리지 않는다. NNT = 1/ARR 이고, 검진 시험의 1차 분석은 초대 기준이므로 「초대해야 하는 수」는 두 군의 10년 위험 차이 0.2% 의 역수 500 이다.\n- 학습목표: 검진 무작위배정시험의 사망률 자료에서 절대위험감소를 구해 초대 기준(intention-to-screen)의 치료필요수를 계산하고, 상대위험감소나 참여율로 보정한 수와 혼동하지 않는다\n- 근거·출처: Cook RJ, Sackett DL. The number needed to treat: a clinically useful measure of treatment effect. BMJ 1995;310:452 · Bretthauer M et al. Effect of colonoscopy screening on risks of colorectal cancer and related death (NordICC). N Engl J Med 2022;387:1547 — intention-to-screen vs per-protocol adjusted analyses, number needed to invite · Gordis L. Epidemiology, 6th ed., ch. 'Assessing the efficacy of preventive and therapeutic measures: randomized trials' — ARR, RRR, NNT; ch. 'Screening' — intention-to-screen, volunteer bias · Rothman KJ. Epidemiology: An Introduction, 2nd ed., ch. 'Measuring disease occurrence and causal effects' · 대한예방의학회. 예방의학과 공중보건학, 4판 — 임상시험의 분석(ITT), 절대위험감소와 치료필요수",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초대군의 10년 대장암 사망 위험은 320/40,000 = 0.8%, 비초대군은 400/40,000 = 1.0% 다. 절대위험감소(ARR)는 1.0% − 0.8% = 0.2% = 0.002 이고, 치료필요수(NNT)는 1/ARR = 1/0.002 = 500 이다. 이 시험은 초대 여부로 분석했으므로 이 수는 「초대해야 하는 사람 수(number needed to invite)」이며, 참여율 70% 로 나누어 350 으로 보정하는 것은 실제로 검진을 받은 사람 기준의 다른 지표가 된다. 상대위험감소(RRR)는 0.2/1.0 = 20% 이지만 그 역수 5는 NNT 가 아니다. 125 는 초대군 위험의 역수, 1,250 은 계산 오류다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>치료필요수(NNT)는 절대위험감소의 역수</b>다. 두 군의 사건 위험(누적발생률)을 각각 구해 그 차이(ARR = 대조군 위험 − 중재군 위험)를 내고 1을 나눈다. 이 시험에서는 대조군 1.0%, 초대군 0.8% 이므로 ARR 0.2%, NNT 500 이다. 반면 <b>상대위험감소(RRR = ARR / 대조군 위험)</b>는 20% 로, 기저 위험이 낮은 검진 집단에서는 「20% 감소」가 인상적으로 들리지만 절대 이득은 1,000명당 2명이라는 사실을 NNT 가 드러낸다. 같은 RRR 이라도 기저 위험이 10배 높은 고위험군에서는 NNT 가 50 으로 줄어드는 것이 NNT 의 핵심 성질이다 — <b>NNT 는 기저 위험과 추적 기간에 묶인 수</b>이므로 「10년 동안」이라는 기간을 늘 붙인다.<br> <b>왜 초대 기준으로 분석하는가</b> — 무작위배정은 초대 시점에 이루어지므로 초대군과 비초대군만이 비교 가능한 집단이다. 실제로 검진을 받은 70% 만 골라 비교하면 건강에 관심이 많고 위험이 낮은 사람이 참여하는 <b>자기선택(건강한 참여자 효과)</b>이 섞여 무작위배정의 이점이 사라진다. 그래서 검진 시험의 1차 결과는 초대 여부(intention-to-screen)로 보고하고, 그 NNT 는 「사망 1건을 막기 위해 <b>초대</b>해야 하는 수(NNI)」다. 참여자 기준 효과를 알고 싶으면 비참여자의 사망률을 이용한 보정 분석(per-protocol 보정)을 따로 하며, 그때 ARR 이 약 0.2/0.7 ≈ 0.29% 로 커져 NNS 약 350 이 된다 — 그러나 이는 <b>검진을 받는 사람</b> 기준이지 프로그램이 초대해야 하는 수가 아니다.<br> <b>정책으로의 번역</b> — NNI 500 은 「10년간 500명을 초대하면 대장암 사망 1명을 막는다」는 뜻이며, 검진의 위해(위양성, 대장내시경 합병증, 과진단)와 비용을 같은 분모로 놓고 비교하는 출발점이 된다. 전체 사망률이 아니라 대장암 특이 사망률에 대한 NNT 라는 점도 해석에 붙는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:18%\">수</th><th style=\"width:42%\">무엇을 계산한 것인가</th><th>왜 정답이 아닌가 / 언제 맞는가</th></tr></thead><tbody> <tr><td><b>500명(정답)</b></td><td><b>1 / ARR = 1 / (0.010 − 0.008) — 초대 기준</b></td><td><b>10년간 사망 1건 예방에 초대해야 하는 수</b></td></tr> <tr><td>350명(가장 가까운 오답)</td><td>ARR 을 참여율 0.7 로 나눈 보정(0.2/0.7 ≈ 0.29%) 의 역수</td><td>「실제로 검진을 받는 사람」 기준의 NNS — 문항은 초대 수를 묻는다</td></tr> <tr><td>5명</td><td>1 / RRR = 1 / 0.20</td><td>상대위험감소의 역수는 NNT 가 아니다</td></tr> <tr><td>125명</td><td>1 / 초대군 위험(0.008)</td><td>한 군의 위험 역수 — 두 군의 차이가 아니다</td></tr> <tr><td>1,250명</td><td>1 / (ARR × 0.4) 등 계산 오류</td><td>자료로 도출되지 않는 수</td></tr> </tbody></table> <b>가장 가까운 오답은 350명</b>이다 — 참여율 70% 가 제시되어 있어 보정하고 싶어지기 때문이다. 갈림길은 <b>문항이 묻는 분모</b>다. 「초대해야 하는 사람 수」는 무작위배정이 이루어진 초대 기준 분석의 ARR 로 계산하고, 참여율은 그 결과를 「검진을 받은 사람」 기준으로 환산할 때만 쓴다. 반대로 「검진을 실제로 받은 사람 중 사망 1건을 막기 위한 수」를 물었다면 350 이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 1,250명은 자료로 도출되지 않는 수로, 절대위험감소 0.2% 를 다시 잘못 나누거나 사망 수 차이(80)를 분모에 잘못 넣을 때 나온다. 절대위험감소가 0.08% 였다면 1,250 이 되지만 이 시험의 두 군 위험 차이는 0.2% 다.\n③ 5명은 상대위험감소(20%)의 역수다. 상대위험감소는 기저 위험이 얼마이든 같은 비율로 표현되어 절대 이득을 과장하며, 치료필요수는 절대위험감소로만 계산한다. 대조군 위험이 100% 에 가까운 극단적 상황에서만 상대위험감소의 역수가 치료필요수와 비슷해진다.\n④ 125명은 초대군의 10년 사망 위험(0.8%)의 역수, 즉 초대군에서 사망 1건이 생기는 데 필요한 사람 수다. 치료필요수는 한 군의 위험이 아니라 두 군 위험의 차이로 계산한다. 「초대군에서 10년간 대장암 사망 1건이 발생하는 평균 인원」을 물었다면 이 수가 맞다.\n⑤ 350명은 절대위험감소를 참여율 70% 로 나누어 「실제로 검진을 받은 사람」 기준으로 환산한 검진필요수다. 이 시험은 초대 여부로 분석했고 문항도 초대해야 하는 수를 물으므로 보정하지 않는다. 「검진을 실제로 받은 사람 중 사망 1건을 막기 위한 수」를 물었다면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "상대위험감소(20%)나 참여율(70%)에 끌리지 않는다. NNT = 1/ARR 이고, 검진 시험의 1차 분석은 초대 기준이므로 「초대해야 하는 수」는 두 군의 10년 위험 차이 0.2% 의 역수 500 이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "검진 무작위배정시험의 사망률 자료에서 절대위험감소를 구해 초대 기준(intention-to-screen)의 치료필요수를 계산하고, 상대위험감소나 참여율로 보정한 수와 혼동하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cook RJ, Sackett DL. The number needed to treat: a clinically useful measure of treatment effect. BMJ 1995;310:452 · Bretthauer M et al. Effect of colonoscopy screening on risks of colorectal cancer and related death (NordICC). N Engl J Med 2022;387:1547 — intention-to-screen vs per-protocol adjusted analyses, number needed to invite · Gordis L. Epidemiology, 6th ed., ch. 'Assessing the efficacy of preventive and therapeutic measures: randomized trials' — ARR, RRR, NNT; ch. 'Screening' — intention-to-screen, volunteer bias · Rothman KJ. Epidemiology: An Introduction, 2nd ed., ch. 'Measuring disease occurrence and causal effects' · 대한예방의학회. 예방의학과 공중보건학, 4판 — 임상시험의 분석(ITT), 절대위험감소와 치료필요수"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "예후",
+   "decision": "초대 기준 분석에서 두 군의 10년 대장암 사망 위험 차이(1.0% − 0.8% = 0.2%)의 역수 500 이 사망 1건을 막기 위해 초대해야 하는 수다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "문항이 묻는 분모 — 「초대해야 하는 사람 수」는 무작위배정된 초대군 전체를 분모로 하므로 참여율 70% 로 보정하지 않는다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "대장암 사망은 초대군 320명, 비초대군 400명",
+     "why": "두 군의 10년 위험 0.8% 와 1.0% — 절대위험감소 0.2% 의 재료",
+     "also": []
+    },
+    {
+     "item": "40,000명에게는 검진을 초대하고 40,000명은 초대하지 않았다",
+     "why": "분모 — 각 군 40,000명으로 위험을 계산한다",
+     "also": []
+    },
+    {
+     "item": "분석은 초대 여부에 따라(intention-to-screen) 하였다",
+     "why": "무작위배정이 유지되는 분석 — 이 NNT 는 「초대」 기준이라는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "초대군 중 실제로 검진을 받은 사람은 70% 였다",
+     "why": "참여자 기준으로 환산하고 싶게 하는 정보이지만 초대 수를 물으므로 쓰지 않는다 — 350 을 고르게 하는 함정",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "10년 추적",
+     "why": "NNT 는 기간에 묶인 수 — 「10년 동안」이라는 단서로 해석한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "대장암 가족력과 흡연력은 없고 증상도 없다",
+     "why": "평균 위험의 무증상 성인 — 시험 대상 집단과 같아 결과를 적용할 수 있다",
+     "also": []
+    },
+    {
+     "item": "60세 남자",
+     "why": "시험의 대상 연령과 일치 — 계산에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "초대군 0.8%, 비초대군 1.0% 의 10년 대장암 사망 위험에서 절대위험감소는 0.2% 이고 NNT(초대 기준) = 1/0.002 = 500 이다. 상대위험감소 20% 의 역수(5)나 참여율로 보정한 350 은 다른 지표다.",
+   "switch": {
+    "choice": "E",
+    "condition": "「실제로 검진을 받은 사람 중 대장암 사망 1건을 막기 위해 검진해야 하는 수」를 물었다면 절대위험감소를 참여율 0.7 로 보정한 약 350명이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0080",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "정신 — 세로토닌 증후군과 신경이완제 악성증후군의 감별",
+  "type": "정신 — 세로토닌 증후군과 신경이완제 악성증후군의 감별",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-20",
+  "vignette": "A 24-year-old woman is brought to the emergency department by her roommate because of agitation, sweating, and shaking for 6 hours. She has major depressive disorder treated with sertraline for 2 years and takes quetiapine at bedtime for insomnia. Two days ago she was started on linezolid for a methicillin-resistant Staphylococcus aureus skin infection of the leg. She has had three loose stools today. Her temperature is 38.9°C, pulse is 128/min, respirations are 24/min, and blood pressure is 158/96 mm Hg. She is restless and anxious but oriented. Pupils are 7 mm and reactive. There is a fine tremor of the hands, and the skin is flushed and diaphoretic. Muscle tone is increased in the lower extremities more than the upper extremities, deep tendon reflexes are 4+ at the knees and ankles with sustained ankle clonus, and slow horizontal ocular oscillations are noted. Laboratory studies show a leukocyte count of 12,800/mm3, creatine kinase of 620 U/L, serum creatinine of 0.9 mg/dL, and normal electrolytes.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Serotonin syndrome",
+   "Neuroleptic malignant syndrome",
+   "Anticholinergic toxicity",
+   "Malignant hyperthermia",
+   "Thyroid storm"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Within 48 hours of adding linezolid, a reversible monoamine oxidase inhibitor, to sertraline, a selective serotonin reuptake inhibitor, this patient developed the triad of serotonin syndrome: mental status change (agitation, anxiety), autonomic hyperactivity (fever, tachycardia, hypertension, diaphoresis, mydriasis, diarrhea) and neuromuscular hyperactivity (tremor, hyperreflexia, sustained clonus and ocular clonus, hypertonia greater in the legs). Hyperreflexia with inducible or sustained clonus in a patient taking a serotonergic drug satisfies the Hunter criteria. Neuroleptic malignant syndrome is the main alternative because she also takes quetiapine, but it develops over days to weeks, produces lead-pipe rigidity with hyporeflexia and bradykinesia rather than clonus and hyperreflexia, and usually a much higher creatine kinase. Anticholinergic toxicity causes dry skin, absent bowel sounds and normal reflexes; malignant hyperthermia follows volatile anesthetics or succinylcholine; thyroid storm does not produce clonus or ocular oscillations.\n- 원리: <b>Serotonin syndrome</b> is a dose-related toxidrome from excess serotonergic activity at 5-HT2A (and 5-HT1A) receptors in the brainstem and spinal cord. It follows a therapeutic combination or overdose of drugs that increase synaptic serotonin: reuptake inhibitors (SSRIs, SNRIs, tramadol, meperidine, dextromethorphan), release promoters (amphetamines, MDMA), precursors (tryptophan), and above all <b>monoamine oxidase inhibitors — including linezolid</b>, a reversible non-selective MAOI whose combination with an SSRI is the classic iatrogenic trigger. Onset is <b>rapid, within 24 hours (usually 6 hours) of the change</b>, and the picture is a <b>triad</b>: altered mental status (anxiety, agitation, delirium), autonomic instability (hyperthermia, tachycardia, hypertension, diaphoresis, mydriasis, hyperactive bowel sounds, diarrhea) and neuromuscular excitation. The neuromuscular signs are the key: <b>tremor, hyperreflexia, inducible or spontaneous clonus, ocular clonus</b>, and hypertonia that is <b>greater in the lower than the upper extremities</b>. The Hunter criteria (a serotonergic drug plus spontaneous clonus, or inducible/ocular clonus with agitation or diaphoresis, or tremor with hyperreflexia, or hypertonia with fever &gt; 38°C and clonus) are 84 % sensitive and 97 % specific. Treatment is stopping the offending drugs, supportive care, benzodiazepines, and cyproheptadine (a 5-HT2A antagonist) in moderate to severe cases; most patients recover within 24 hours.<br> <b>Why neuroleptic malignant syndrome is the real competitor</b> — NMS is a hypodopaminergic state from dopamine D2 antagonists (antipsychotics, including quetiapine, and metoclopramide) or abrupt withdrawal of dopaminergic drugs. It shares fever, autonomic instability, altered mentation and elevated creatine kinase, so a patient on both an antipsychotic and an SSRI can be mislabeled. The differences are in <b>time course and neuromuscular examination</b>: NMS evolves over <b>days to weeks</b> with a stable antipsychotic dose or after a dose increase, produces <b>'lead-pipe' rigidity in all four limbs with bradykinesia, hyporeflexia and no clonus</b>, and creatine kinase is usually in the thousands. Pupils are normal. Treatment is discontinuation of the antipsychotic, cooling, and dantrolene or bromocriptine in severe cases.\n- 비교: <table><thead><tr><th style=\"width:22%\">Diagnosis</th><th style=\"width:26%\">Trigger and onset</th><th style=\"width:30%\">Neuromuscular findings</th><th>Other clues</th></tr></thead><tbody> <tr><td><b>Serotonin syndrome (answer)</b></td><td><b>Serotonergic drug added (linezolid + sertraline); hours</b></td><td><b>Hyperreflexia, clonus (sustained, ocular), tremor, hypertonia legs &gt; arms</b></td><td><b>Mydriasis, diarrhea, diaphoresis; CK mildly up</b></td></tr> <tr><td>Neuroleptic malignant syndrome (closest wrong answer)</td><td>Dopamine antagonist (quetiapine); days to weeks</td><td>Lead-pipe rigidity all limbs, hyporeflexia, bradykinesia, no clonus</td><td>Normal pupils, CK often &gt; 1,000, leukocytosis</td></tr> <tr><td>Anticholinergic toxicity</td><td>Antimuscarinic drug; hours</td><td>Normal tone and reflexes</td><td>Dry flushed skin, absent bowel sounds, urinary retention, mydriasis</td></tr> <tr><td>Malignant hyperthermia</td><td>Volatile anesthetic or succinylcholine; minutes</td><td>Generalized rigidity, masseter spasm</td><td>Rising end-tidal CO2, acidosis, hyperkalemia</td></tr> <tr><td>Thyroid storm</td><td>Untreated hyperthyroidism plus stressor</td><td>Fine tremor, brisk reflexes but no clonus</td><td>Goiter, atrial fibrillation, low TSH</td></tr> </tbody></table> The <b>closest wrong answer is neuroleptic malignant syndrome</b> because she takes quetiapine and has fever, autonomic instability and an elevated CK. The discriminator is the <b>neuromuscular examination together with the time course</b>: hyperreflexia with sustained ankle clonus and ocular clonus appearing within 48 hours of adding linezolid is serotonin syndrome; lead-pipe rigidity with hyporeflexia developing over days after an antipsychotic change would be NMS. Diarrhea and mydriasis point the same way, since NMS spares the pupils and does not cause hyperactive bowels.\n- 오답 이유:\n  - (B) Neuroleptic malignant syndrome is plausible because she takes quetiapine and has fever, tachycardia, altered mental status and an elevated creatine kinase, but NMS develops over days to weeks and produces lead-pipe rigidity with hyporeflexia and bradykinesia, normal pupils and a creatine kinase usually above 1,000 U/L. Hyperreflexia with sustained and ocular clonus within 48 hours of a serotonergic drug change is the opposite pattern. This option would be correct if her quetiapine dose had recently been increased and she had diffuse rigidity without clonus.\n  - (C) Anticholinergic toxicity shares agitation, mydriasis, tachycardia and hyperthermia, but the skin is dry rather than diaphoretic, bowel sounds are absent with urinary retention rather than diarrhea, and reflexes and tone are normal. This patient is sweating, has diarrhea and marked hyperreflexia with clonus. This option would be correct after an overdose of diphenhydramine or a tricyclic with dry skin and absent bowel sounds.\n  - (D) Malignant hyperthermia is a pharmacogenetic reaction to volatile anesthetics or succinylcholine that begins within minutes in the operating room with rising end-tidal CO2, generalized rigidity, acidosis and hyperkalemia. She has had no anesthesia and has hyperreflexia with clonus rather than generalized rigidity. This option would be correct if the symptoms had started during general anesthesia with a rising end-tidal CO2.\n  - (E) Thyroid storm causes fever, tachycardia, agitation, diarrhea and fine tremor and can mimic this picture, but it arises from untreated hyperthyroidism with a goiter or ophthalmopathy and does not produce sustained clonus, ocular clonus or lower-extremity hypertonia. There is no history of thyroid disease and the onset followed a drug change. This option would be correct in a patient with known Graves disease, a goiter and a suppressed TSH after a precipitating illness.\n- 함정: Fever + autonomic instability + high CK in a patient on an antipsychotic does not automatically mean NMS. Examine the reflexes: clonus and hyperreflexia within hours of a serotonergic drug change (linezolid is an MAOI) is serotonin syndrome; lead-pipe rigidity with hyporeflexia over days is NMS.\n- 학습목표: 세로토닌성 약물 병용 뒤 수시간 안에 생긴 초조·발열·빈맥·과반사·유발성 간대성 경련·동공 확대를 세로토닌 증후군으로 진단하고, 항정신병약을 함께 쓰는 환자에서 납관형 강직·반사저하·수일에 걸친 발병이 특징인 신경이완제 악성증후군과 구분한다\n- 근거·출처: Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 — triad, Hunter criteria, linezolid as MAOI, differentiation from NMS · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96:635 · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870 — lead-pipe rigidity, hyporeflexia, onset over days · Kaplan & Sadock's Synopsis of Psychiatry, 12th ed., ch. 'Psychopharmacology' — serotonin syndrome and NMS · Goldfrank's Toxicologic Emergencies, 11th ed., ch. 'Serotonin reuptake inhibitors and atypical antidepressants'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Within 48 hours of adding linezolid, a reversible monoamine oxidase inhibitor, to sertraline, a selective serotonin reuptake inhibitor, this patient developed the triad of serotonin syndrome: mental status change (agitation, anxiety), autonomic hyperactivity (fever, tachycardia, hypertension, diaphoresis, mydriasis, diarrhea) and neuromuscular hyperactivity (tremor, hyperreflexia, sustained clonus and ocular clonus, hypertonia greater in the legs). Hyperreflexia with inducible or sustained clonus in a patient taking a serotonergic drug satisfies the Hunter criteria. Neuroleptic malignant syndrome is the main alternative because she also takes quetiapine, but it develops over days to weeks, produces lead-pipe rigidity with hyporeflexia and bradykinesia rather than clonus and hyperreflexia, and usually a much higher creatine kinase. Anticholinergic toxicity causes dry skin, absent bowel sounds and normal reflexes; malignant hyperthermia follows volatile anesthetics or succinylcholine; thyroid storm does not produce clonus or ocular oscillations."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Serotonin syndrome</b> is a dose-related toxidrome from excess serotonergic activity at 5-HT2A (and 5-HT1A) receptors in the brainstem and spinal cord. It follows a therapeutic combination or overdose of drugs that increase synaptic serotonin: reuptake inhibitors (SSRIs, SNRIs, tramadol, meperidine, dextromethorphan), release promoters (amphetamines, MDMA), precursors (tryptophan), and above all <b>monoamine oxidase inhibitors — including linezolid</b>, a reversible non-selective MAOI whose combination with an SSRI is the classic iatrogenic trigger. Onset is <b>rapid, within 24 hours (usually 6 hours) of the change</b>, and the picture is a <b>triad</b>: altered mental status (anxiety, agitation, delirium), autonomic instability (hyperthermia, tachycardia, hypertension, diaphoresis, mydriasis, hyperactive bowel sounds, diarrhea) and neuromuscular excitation. The neuromuscular signs are the key: <b>tremor, hyperreflexia, inducible or spontaneous clonus, ocular clonus</b>, and hypertonia that is <b>greater in the lower than the upper extremities</b>. The Hunter criteria (a serotonergic drug plus spontaneous clonus, or inducible/ocular clonus with agitation or diaphoresis, or tremor with hyperreflexia, or hypertonia with fever &gt; 38°C and clonus) are 84 % sensitive and 97 % specific. Treatment is stopping the offending drugs, supportive care, benzodiazepines, and cyproheptadine (a 5-HT2A antagonist) in moderate to severe cases; most patients recover within 24 hours.<br> <b>Why neuroleptic malignant syndrome is the real competitor</b> — NMS is a hypodopaminergic state from dopamine D2 antagonists (antipsychotics, including quetiapine, and metoclopramide) or abrupt withdrawal of dopaminergic drugs. It shares fever, autonomic instability, altered mentation and elevated creatine kinase, so a patient on both an antipsychotic and an SSRI can be mislabeled. The differences are in <b>time course and neuromuscular examination</b>: NMS evolves over <b>days to weeks</b> with a stable antipsychotic dose or after a dose increase, produces <b>'lead-pipe' rigidity in all four limbs with bradykinesia, hyporeflexia and no clonus</b>, and creatine kinase is usually in the thousands. Pupils are normal. Treatment is discontinuation of the antipsychotic, cooling, and dantrolene or bromocriptine in severe cases."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Diagnosis</th><th style=\"width:26%\">Trigger and onset</th><th style=\"width:30%\">Neuromuscular findings</th><th>Other clues</th></tr></thead><tbody> <tr><td><b>Serotonin syndrome (answer)</b></td><td><b>Serotonergic drug added (linezolid + sertraline); hours</b></td><td><b>Hyperreflexia, clonus (sustained, ocular), tremor, hypertonia legs &gt; arms</b></td><td><b>Mydriasis, diarrhea, diaphoresis; CK mildly up</b></td></tr> <tr><td>Neuroleptic malignant syndrome (closest wrong answer)</td><td>Dopamine antagonist (quetiapine); days to weeks</td><td>Lead-pipe rigidity all limbs, hyporeflexia, bradykinesia, no clonus</td><td>Normal pupils, CK often &gt; 1,000, leukocytosis</td></tr> <tr><td>Anticholinergic toxicity</td><td>Antimuscarinic drug; hours</td><td>Normal tone and reflexes</td><td>Dry flushed skin, absent bowel sounds, urinary retention, mydriasis</td></tr> <tr><td>Malignant hyperthermia</td><td>Volatile anesthetic or succinylcholine; minutes</td><td>Generalized rigidity, masseter spasm</td><td>Rising end-tidal CO2, acidosis, hyperkalemia</td></tr> <tr><td>Thyroid storm</td><td>Untreated hyperthyroidism plus stressor</td><td>Fine tremor, brisk reflexes but no clonus</td><td>Goiter, atrial fibrillation, low TSH</td></tr> </tbody></table> The <b>closest wrong answer is neuroleptic malignant syndrome</b> because she takes quetiapine and has fever, autonomic instability and an elevated CK. The discriminator is the <b>neuromuscular examination together with the time course</b>: hyperreflexia with sustained ankle clonus and ocular clonus appearing within 48 hours of adding linezolid is serotonin syndrome; lead-pipe rigidity with hyporeflexia developing over days after an antipsychotic change would be NMS. Diarrhea and mydriasis point the same way, since NMS spares the pupils and does not cause hyperactive bowels."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Neuroleptic malignant syndrome is plausible because she takes quetiapine and has fever, tachycardia, altered mental status and an elevated creatine kinase, but NMS develops over days to weeks and produces lead-pipe rigidity with hyporeflexia and bradykinesia, normal pupils and a creatine kinase usually above 1,000 U/L. Hyperreflexia with sustained and ocular clonus within 48 hours of a serotonergic drug change is the opposite pattern. This option would be correct if her quetiapine dose had recently been increased and she had diffuse rigidity without clonus.\n(C) Anticholinergic toxicity shares agitation, mydriasis, tachycardia and hyperthermia, but the skin is dry rather than diaphoretic, bowel sounds are absent with urinary retention rather than diarrhea, and reflexes and tone are normal. This patient is sweating, has diarrhea and marked hyperreflexia with clonus. This option would be correct after an overdose of diphenhydramine or a tricyclic with dry skin and absent bowel sounds.\n(D) Malignant hyperthermia is a pharmacogenetic reaction to volatile anesthetics or succinylcholine that begins within minutes in the operating room with rising end-tidal CO2, generalized rigidity, acidosis and hyperkalemia. She has had no anesthesia and has hyperreflexia with clonus rather than generalized rigidity. This option would be correct if the symptoms had started during general anesthesia with a rising end-tidal CO2.\n(E) Thyroid storm causes fever, tachycardia, agitation, diarrhea and fine tremor and can mimic this picture, but it arises from untreated hyperthyroidism with a goiter or ophthalmopathy and does not produce sustained clonus, ocular clonus or lower-extremity hypertonia. There is no history of thyroid disease and the onset followed a drug change. This option would be correct in a patient with known Graves disease, a goiter and a suppressed TSH after a precipitating illness."
+   },
+   {
+    "k": "함정",
+    "v": "Fever + autonomic instability + high CK in a patient on an antipsychotic does not automatically mean NMS. Examine the reflexes: clonus and hyperreflexia within hours of a serotonergic drug change (linezolid is an MAOI) is serotonin syndrome; lead-pipe rigidity with hyporeflexia over days is NMS."
+   },
+   {
+    "k": "학습목표",
+    "v": "세로토닌성 약물 병용 뒤 수시간 안에 생긴 초조·발열·빈맥·과반사·유발성 간대성 경련·동공 확대를 세로토닌 증후군으로 진단하고, 항정신병약을 함께 쓰는 환자에서 납관형 강직·반사저하·수일에 걸친 발병이 특징인 신경이완제 악성증후군과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 — triad, Hunter criteria, linezolid as MAOI, differentiation from NMS · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96:635 · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870 — lead-pipe rigidity, hyporeflexia, onset over days · Kaplan & Sadock's Synopsis of Psychiatry, 12th ed., ch. 'Psychopharmacology' — serotonin syndrome and NMS · Goldfrank's Toxicologic Emergencies, 11th ed., ch. 'Serotonin reuptake inhibitors and atypical antidepressants'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "SSRI 에 MAO 억제 작용이 있는 리네졸리드를 더한 뒤 수시간 안에 나타난 초조·자율신경 항진·과반사·간대성 경련의 삼징은 세로토닌 증후군이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "신경근 소견과 시간 경과 — 과반사·지속성 발목 간대성 경련·안구 간대성 경련이 약물 추가 48시간 안에 생겼다. 신경이완제 악성증후군은 수일에 걸쳐 납관형 강직·반사저하로 나타나고 동공은 정상이다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "Two days ago she was started on linezolid",
+     "why": "리네졸리드는 가역적 비선택적 MAO 억제제 — SSRI 와의 병용이 세로토닌 증후군의 고전적 유발 조합",
+     "also": []
+    },
+    {
+     "item": "deep tendon reflexes are 4+ at the knees and ankles with sustained ankle clonus",
+     "why": "지속성 간대성 경련 + 세로토닌성 약물 = Hunter 기준 충족",
+     "also": []
+    },
+    {
+     "item": "slow horizontal ocular oscillations",
+     "why": "안구 간대성 경련 — 세로토닌 증후군에 특이적인 신경근 소견",
+     "also": []
+    },
+    {
+     "item": "Muscle tone is increased in the lower extremities more than the upper extremities",
+     "why": "하지 우세 근긴장 항진 — 세로토닌 증후군의 전형(NMS 는 사지 전체 납관형 강직)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Pupils are 7 mm and reactive",
+     "why": "동공 확대는 세로토닌 증후군·항콜린 중독의 소견이고 NMS 에서는 정상 — NMS 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has had three loose stools today",
+     "why": "장운동 항진은 세로토닌 증후군의 소견 — 장운동이 없는 항콜린 중독을 배제하는 방향",
+     "also": []
+    },
+    {
+     "item": "the skin is flushed and diaphoretic",
+     "why": "발한은 항콜린 중독(건조한 피부)과 반대 소견",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "takes quetiapine at bedtime for insomnia",
+     "why": "도파민 길항제 복용 — NMS 를 감별 목록에 올리게 하는 정보이며, 진단 확정 뒤 두 약 모두 중단 대상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "creatine kinase of 620 U/L",
+     "why": "경도 상승은 근육 활동 항진으로 설명되며 NMS 의 수천 단위 상승과 다르다 — 단독으로는 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "24-year-old woman",
+     "why": "젊은 성인의 약물 병용 — 나이는 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "Sertraline plus newly started linezolid (an MAOI) followed within 48 hours by agitation, fever, tachycardia, mydriasis, diarrhea, tremor, hyperreflexia, sustained and ocular clonus with legs-greater-than-arms hypertonia is serotonin syndrome by the Hunter criteria. Quetiapine raises the possibility of NMS, but NMS gives lead-pipe rigidity with hyporeflexia over days, not clonus within hours.",
+   "switch": {
+    "choice": "B",
+    "condition": "If her quetiapine dose had been increased a week earlier and she had lead-pipe rigidity in all four limbs with hyporeflexia, normal pupils and a creatine kinase of several thousand, neuroleptic malignant syndrome would be the diagnosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0077",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "외과계 — 충수 주위 농양",
+  "type": "외과계 — 충수 주위 농양",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-20",
+  "vignette": "42세 여자가 6일 전부터 시작된 오른쪽 아랫배 통증으로 병원에 왔다. 처음에는 배꼽 주위가 아프다가 오른쪽 아랫배로 옮겨 갔고, 이틀 전부터 열이 나며 통증이 한 곳에 머물러 있다. 마지막 월경은 2주 전이고 설사나 혈변은 없다. 혈압 118/74 mmHg, 맥박 96회/분, 체온 38.4℃이다. 오른쪽 아랫배에 압통과 함께 지름 약 6 cm 의 경계가 불분명한 덩이가 만져지고 반동압통은 그 부위에 국한되며 배 전체의 강직은 없다. 혈액검사: 백혈구 15,800/μL, C반응단백 14 mg/dL, 소변 임신반응 음성. 조영증강 복부 CT 에서 충수가 두꺼워져 있고 그 주위에 벽으로 둘러싸인 5 cm 의 액체 저류가 있으며, 유리 공기나 배 전체의 액체는 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경구 항생제와 외래 추적",
+   "진단적 복강경과 복강 세척",
+   "항생제 정주와 경피적 배액",
+   "즉시 복강경 충수절제술",
+   "즉시 회맹장절제술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 증상 6일째의 충수염에서 CT 로 벽이 있는 5 cm 액체 저류가 보이면 충수 주위 농양이다. 염증이 오래되어 주변 조직이 단단히 유착되고 부어 있어 이 시기의 즉시 충수절제술은 장 손상·누공·회맹장절제로의 확대·창상 감염 등 합병증이 많다. 배 전체의 강직·유리 공기·미만성 액체가 없어 미만성 복막염이 아니고 혈역학적으로 안정하므로 응급 수술의 적응이 아니다. 표준 처치는 광범위 항생제 정주와 영상유도 경피적 배액이며, 대부분 수일 안에 호전된다. 회복 뒤 6~12주에 지연 충수절제를 고려하고, 40세 이상에서는 충수 종양이 숨어 있을 수 있어 대장내시경으로 확인한다.\n- 원리: <b>왜 오래된 충수염은 다르게 다루는가</b> — 충수염은 시간에 따라 병리가 바뀐다. 24~48시간 안의 단순·화농성 충수염은 즉시 절제가 답이지만, 3~5일이 지나 천공되면 그물막과 인접 소장·맹장이 천공부를 감싸 <b>염증 덩이(phlegmon)</b> 또는 벽이 형성된 <b>충수 주위 농양</b>이 된다. 이 시기의 조직은 부서지기 쉽고 서로 유착돼 있어 수술 시 장 손상·회맹장절제·장피부 누공·복강내 농양의 위험이 높고, 무작위시험과 메타분석에서 즉시 수술군의 합병증이 보존치료군보다 2~3배 많았다. 그래서 <b>경계 지어진 농양 + 미만성 복막염 없음 + 혈역학 안정</b>이면 항생제와 배액으로 먼저 식힌다.<br> <b>배액의 기준</b> — 3 cm 이상의 농양은 항생제만으로 잘 낫지 않으므로 초음파·CT 유도 경피적 배액을 더한다. 3 cm 미만의 작은 농양이나 농양 없는 염증 덩이는 항생제만으로 치료한다. 배액관은 배액량이 하루 10~20 mL 아래로 줄고 영상에서 공동이 없어지면 뺀다.<br> <b>그 뒤</b> — 보존치료 후 재발률은 10~20 % 이고, 지연(interval) 충수절제를 일률적으로 할지는 논쟁이 있다. 그러나 <b>40세 이상</b>에서는 충수 종양(점액성 종양, 샘암, 신경내분비종양)이 「농양으로 위장한」 경우가 10 % 안팎으로 보고되므로, 회복 후 대장내시경으로 맹장·충수 입구를 확인하고 지연 절제를 고려한다. <b>즉시 수술이 필요한 경우</b> — 배 전체 강직·미만성 복막염, 유리 공기, 패혈성 쇼크, 배액이 불가능하거나 보존치료 48~72시간에 악화될 때다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:44%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>항생제 정주 + 경피적 배액(정답)</b></td><td><b>증상 3~5일 이상, CT 상 벽이 있는 ≥ 3 cm 농양, 미만성 복막염 없음, 혈역학 안정</b></td><td><b>6일째, 5 cm 벽 있는 액체 저류, 국소 반동압통, 안정</b></td></tr> <tr><td>즉시 복강경 충수절제(가장 가까운 오답)</td><td>발병 48시간 안의 단순·화농성 충수염; 또는 보존치료 중 악화·미만성 복막염</td><td>오래된 농양 — 유착·장 손상·회맹장절제 위험</td></tr> <tr><td>즉시 회맹장절제</td><td>수술 중 맹장 괴사·종양 의심으로 충수절제만으로 부족할 때</td><td>영상으로 계획된 첫 처치가 아니다</td></tr> <tr><td>경구 항생제 + 외래 추적</td><td>농양 없는 경미한 염증 덩이(&lt; 3 cm), 열·백혈구 증가 경미</td><td>5 cm 농양, 38.4℃, 백혈구 15,800 — 배액이 필요</td></tr> <tr><td>진단적 복강경 + 세척</td><td>진단이 불확실한 급성 복통(부인과 질환 감별)</td><td>CT 로 진단이 명확 — 농양 시기의 복강경은 합병증만 늘린다</td></tr> </tbody></table> <b>가장 가까운 오답은 「즉시 충수절제」</b>다 — 충수염이면 떼는 것이 원칙이기 때문이다. 갈림길은 <b>병의 시간과 CT 소견</b>이다. 발병 48시간 안의 단순 충수염이면 즉시 절제, 5일 이상 지나 벽이 있는 농양이면 항생제 + 배액 후 지연 절제. 반대로 배 전체가 판자처럼 굳고 유리 공기가 보였다면 시간과 무관하게 즉시 수술이 정답이 된다.\n- 오답 이유:\n  - ① 경구 항생제와 외래 추적은 농양이 없는 3 cm 미만의 작은 염증 덩이로 열과 백혈구 증가가 경미할 때 가능하다. 이 환자는 5 cm 의 벽이 있는 농양에 38.4℃ 의 발열과 백혈구 15,800 으로 배액 없이는 낫기 어렵다. CT 에서 농양 없이 경미한 염증 덩이만 있고 전신 상태가 좋았다면 이 선지가 정답이 된다.\n  - ② 진단적 복강경은 CT 로도 진단이 불확실한 급성 복통, 특히 젊은 여성의 부인과 질환 감별에 쓴다. 이 환자는 CT 로 충수 주위 농양이 명확하고, 농양 시기의 복강경 조작은 유착된 장을 다치게 하며 세척만으로 농양이 해결되지 않는다. CT 가 비진단적이고 난소 낭종 파열·꼬임이 의심되었다면 이 선지가 정답이 된다.\n  - ④ 즉시 충수절제술은 발병 48시간 이내의 단순·화농성 충수염에서 정답이다. 6일이 지나 벽이 있는 농양이 형성된 시기에는 유착과 부종 때문에 장 손상·누공·회맹장절제 확대·복강내 농양 등 합병증이 보존치료보다 2~3배 많다. 보존치료 중 48~72시간 안에 악화되거나 미만성 복막염이 생기면 이 선지가 정답이 된다.\n  - ⑤ 회맹장절제술은 수술 중 맹장 벽의 괴사나 종양이 의심되어 충수절제만으로 병변을 제거할 수 없을 때 하는 확대 술식이다. 영상만으로 계획한 첫 처치로는 과도하며, 오히려 농양 시기의 즉시 수술이 이 술식으로 확대되는 것을 피하려고 보존치료를 택하는 것이다. 대장내시경에서 맹장 종양이 확인된 뒤라면 이 선지가 정답이 될 수 있다.\n- 함정: 「충수염 = 즉시 절제」에서 멈추지 않는다. 증상 5일 이상 + CT 에서 벽이 있는 농양 + 미만성 복막염 없음이면 항생제와 경피적 배액이 먼저이고, 40세 이상은 회복 후 대장내시경으로 숨은 종양을 확인한다.\n- 학습목표: 증상 5일 이상 지난 충수염에서 CT 로 경계 지어진 충수 주위 농양을 확인하면 즉시 충수절제 대신 항생제와 경피적 배액을 선택하고, 지연 충수절제와 40세 이상의 대장내시경을 계획한다\n- 근거·출처: Di Saverio S et al. Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines. World J Emerg Surg 2020;15:27 — appendiceal abscess: antibiotics ± percutaneous drainage; interval appendectomy and colonoscopy in patients > 40 years · Simillis C et al. A meta-analysis comparing conservative treatment versus acute appendectomy for complicated appendicitis (abscess or phlegmon). Surgery 2010;147:818 — conservative treatment: fewer complications · Andersson RE, Petzold MG. Nonsurgical treatment of appendiceal abscess or phlegmon: a systematic review and meta-analysis. Ann Surg 2007;246:741 · Sabiston Textbook of Surgery, 21st ed., ch. 'The appendix' — perforated appendicitis with abscess: percutaneous drainage, interval appendectomy · Schwartz's Principles of Surgery, 11th ed., ch. 'The appendix'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "증상 6일째의 충수염에서 CT 로 벽이 있는 5 cm 액체 저류가 보이면 충수 주위 농양이다. 염증이 오래되어 주변 조직이 단단히 유착되고 부어 있어 이 시기의 즉시 충수절제술은 장 손상·누공·회맹장절제로의 확대·창상 감염 등 합병증이 많다. 배 전체의 강직·유리 공기·미만성 액체가 없어 미만성 복막염이 아니고 혈역학적으로 안정하므로 응급 수술의 적응이 아니다. 표준 처치는 광범위 항생제 정주와 영상유도 경피적 배액이며, 대부분 수일 안에 호전된다. 회복 뒤 6~12주에 지연 충수절제를 고려하고, 40세 이상에서는 충수 종양이 숨어 있을 수 있어 대장내시경으로 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 오래된 충수염은 다르게 다루는가</b> — 충수염은 시간에 따라 병리가 바뀐다. 24~48시간 안의 단순·화농성 충수염은 즉시 절제가 답이지만, 3~5일이 지나 천공되면 그물막과 인접 소장·맹장이 천공부를 감싸 <b>염증 덩이(phlegmon)</b> 또는 벽이 형성된 <b>충수 주위 농양</b>이 된다. 이 시기의 조직은 부서지기 쉽고 서로 유착돼 있어 수술 시 장 손상·회맹장절제·장피부 누공·복강내 농양의 위험이 높고, 무작위시험과 메타분석에서 즉시 수술군의 합병증이 보존치료군보다 2~3배 많았다. 그래서 <b>경계 지어진 농양 + 미만성 복막염 없음 + 혈역학 안정</b>이면 항생제와 배액으로 먼저 식힌다.<br> <b>배액의 기준</b> — 3 cm 이상의 농양은 항생제만으로 잘 낫지 않으므로 초음파·CT 유도 경피적 배액을 더한다. 3 cm 미만의 작은 농양이나 농양 없는 염증 덩이는 항생제만으로 치료한다. 배액관은 배액량이 하루 10~20 mL 아래로 줄고 영상에서 공동이 없어지면 뺀다.<br> <b>그 뒤</b> — 보존치료 후 재발률은 10~20 % 이고, 지연(interval) 충수절제를 일률적으로 할지는 논쟁이 있다. 그러나 <b>40세 이상</b>에서는 충수 종양(점액성 종양, 샘암, 신경내분비종양)이 「농양으로 위장한」 경우가 10 % 안팎으로 보고되므로, 회복 후 대장내시경으로 맹장·충수 입구를 확인하고 지연 절제를 고려한다. <b>즉시 수술이 필요한 경우</b> — 배 전체 강직·미만성 복막염, 유리 공기, 패혈성 쇼크, 배액이 불가능하거나 보존치료 48~72시간에 악화될 때다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:44%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>항생제 정주 + 경피적 배액(정답)</b></td><td><b>증상 3~5일 이상, CT 상 벽이 있는 ≥ 3 cm 농양, 미만성 복막염 없음, 혈역학 안정</b></td><td><b>6일째, 5 cm 벽 있는 액체 저류, 국소 반동압통, 안정</b></td></tr> <tr><td>즉시 복강경 충수절제(가장 가까운 오답)</td><td>발병 48시간 안의 단순·화농성 충수염; 또는 보존치료 중 악화·미만성 복막염</td><td>오래된 농양 — 유착·장 손상·회맹장절제 위험</td></tr> <tr><td>즉시 회맹장절제</td><td>수술 중 맹장 괴사·종양 의심으로 충수절제만으로 부족할 때</td><td>영상으로 계획된 첫 처치가 아니다</td></tr> <tr><td>경구 항생제 + 외래 추적</td><td>농양 없는 경미한 염증 덩이(&lt; 3 cm), 열·백혈구 증가 경미</td><td>5 cm 농양, 38.4℃, 백혈구 15,800 — 배액이 필요</td></tr> <tr><td>진단적 복강경 + 세척</td><td>진단이 불확실한 급성 복통(부인과 질환 감별)</td><td>CT 로 진단이 명확 — 농양 시기의 복강경은 합병증만 늘린다</td></tr> </tbody></table> <b>가장 가까운 오답은 「즉시 충수절제」</b>다 — 충수염이면 떼는 것이 원칙이기 때문이다. 갈림길은 <b>병의 시간과 CT 소견</b>이다. 발병 48시간 안의 단순 충수염이면 즉시 절제, 5일 이상 지나 벽이 있는 농양이면 항생제 + 배액 후 지연 절제. 반대로 배 전체가 판자처럼 굳고 유리 공기가 보였다면 시간과 무관하게 즉시 수술이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 항생제와 외래 추적은 농양이 없는 3 cm 미만의 작은 염증 덩이로 열과 백혈구 증가가 경미할 때 가능하다. 이 환자는 5 cm 의 벽이 있는 농양에 38.4℃ 의 발열과 백혈구 15,800 으로 배액 없이는 낫기 어렵다. CT 에서 농양 없이 경미한 염증 덩이만 있고 전신 상태가 좋았다면 이 선지가 정답이 된다.\n② 진단적 복강경은 CT 로도 진단이 불확실한 급성 복통, 특히 젊은 여성의 부인과 질환 감별에 쓴다. 이 환자는 CT 로 충수 주위 농양이 명확하고, 농양 시기의 복강경 조작은 유착된 장을 다치게 하며 세척만으로 농양이 해결되지 않는다. CT 가 비진단적이고 난소 낭종 파열·꼬임이 의심되었다면 이 선지가 정답이 된다.\n④ 즉시 충수절제술은 발병 48시간 이내의 단순·화농성 충수염에서 정답이다. 6일이 지나 벽이 있는 농양이 형성된 시기에는 유착과 부종 때문에 장 손상·누공·회맹장절제 확대·복강내 농양 등 합병증이 보존치료보다 2~3배 많다. 보존치료 중 48~72시간 안에 악화되거나 미만성 복막염이 생기면 이 선지가 정답이 된다.\n⑤ 회맹장절제술은 수술 중 맹장 벽의 괴사나 종양이 의심되어 충수절제만으로 병변을 제거할 수 없을 때 하는 확대 술식이다. 영상만으로 계획한 첫 처치로는 과도하며, 오히려 농양 시기의 즉시 수술이 이 술식으로 확대되는 것을 피하려고 보존치료를 택하는 것이다. 대장내시경에서 맹장 종양이 확인된 뒤라면 이 선지가 정답이 될 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "「충수염 = 즉시 절제」에서 멈추지 않는다. 증상 5일 이상 + CT 에서 벽이 있는 농양 + 미만성 복막염 없음이면 항생제와 경피적 배액이 먼저이고, 40세 이상은 회복 후 대장내시경으로 숨은 종양을 확인한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상 5일 이상 지난 충수염에서 CT 로 경계 지어진 충수 주위 농양을 확인하면 즉시 충수절제 대신 항생제와 경피적 배액을 선택하고, 지연 충수절제와 40세 이상의 대장내시경을 계획한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Di Saverio S et al. Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines. World J Emerg Surg 2020;15:27 — appendiceal abscess: antibiotics ± percutaneous drainage; interval appendectomy and colonoscopy in patients > 40 years · Simillis C et al. A meta-analysis comparing conservative treatment versus acute appendectomy for complicated appendicitis (abscess or phlegmon). Surgery 2010;147:818 — conservative treatment: fewer complications · Andersson RE, Petzold MG. Nonsurgical treatment of appendiceal abscess or phlegmon: a systematic review and meta-analysis. Ann Surg 2007;246:741 · Sabiston Textbook of Surgery, 21st ed., ch. 'The appendix' — perforated appendicitis with abscess: percutaneous drainage, interval appendectomy · Schwartz's Principles of Surgery, 11th ed., ch. 'The appendix'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "증상 6일째의 충수염에서 CT 로 벽이 있는 5 cm 충수 주위 농양이 확인되고 미만성 복막염이 없으므로 즉시 수술 대신 항생제 정주와 경피적 배액이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "6일 지난 벽 있는 농양 — 이 시기의 즉시 절제는 유착된 장 손상·회맹장절제 확대·누공이 많고, 국소 반동압통·유리 공기 없음·안정된 혈역학은 응급 수술 적응이 아니다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "6일 전부터 시작된 오른쪽 아랫배 통증",
+     "why": "발병 5일 이상 — 단순 충수염이 아니라 농양·염증 덩이 시기",
+     "also": []
+    },
+    {
+     "item": "충수가 두꺼워져 있고 그 주위에 벽으로 둘러싸인 5 cm 의 액체 저류",
+     "why": "충수 주위 농양의 CT 진단 — 3 cm 이상이므로 배액 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "반동압통은 그 부위에 국한되며 배 전체의 강직은 없다",
+     "why": "미만성 복막염 가능성을 낮춘다 — 즉시 개복의 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "유리 공기나 배 전체의 액체는 없다",
+     "why": "자유 천공·미만성 복막염을 배제하는 영상 소견",
+     "also": []
+    },
+    {
+     "item": "마지막 월경은 2주 전이고",
+     "why": "난소 낭종·자궁외임신 같은 부인과 원인 가능성을 낮춘다(임신반응 음성과 함께)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 118/74 mmHg, 맥박 96회/분",
+     "why": "혈역학적으로 안정 — 보존치료를 시도할 수 있는 조건",
+     "also": []
+    },
+    {
+     "item": "체온 38.4℃",
+     "why": "전신 염증이 있어 경구 항생제·외래 추적으로는 부족하다",
+     "also": []
+    },
+    {
+     "item": "42세 여자",
+     "why": "40세 이상 — 회복 후 대장내시경으로 충수 종양을 확인해야 하는 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "지름 약 6 cm 의 경계가 불분명한 덩이",
+     "why": "염증 덩이의 촉진 소견 — 진단을 뒷받침하지만 처치는 CT 소견이 결정한다",
+     "also": []
+    }
+   ],
+   "summary": "증상 6일째, CT 에서 벽이 있는 5 cm 충수 주위 농양이며 미만성 복막염·유리 공기가 없고 혈역학이 안정하므로 즉시 충수절제 대신 항생제 정주와 경피적 배액을 한다. 회복 뒤 지연 충수절제를 고려하고 40세 이상이므로 대장내시경을 계획한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "배 전체가 판자처럼 굳고 CT 에서 유리 공기와 미만성 액체가 보였거나, 보존치료 48~72시간에 발열·통증이 악화되었다면 즉시 충수절제술(필요 시 회맹장절제)이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0076",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "류마티스·근골격 — 류마티스 다발근육통",
+  "type": "류마티스·근골격 — 류마티스 다발근육통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-20",
+  "vignette": "A 68-year-old woman comes to the physician because of pain and stiffness in both shoulders and hips for 6 weeks. The stiffness is worst in the morning, lasts about 2 hours, and makes it difficult to rise from a chair, comb her hair, and put on a coat. She has no headache, scalp tenderness, jaw pain with chewing, or visual disturbance, and no fever, weight loss, or rash. She has hypertension treated with losartan. Her temperature is 37.2°C, pulse is 78/min, and blood pressure is 136/82 mm Hg. Active abduction of both shoulders is limited by pain, but passive range of motion is full; there is no synovitis of the hands or feet, and muscle strength is 5/5 in all extremities. Temporal arteries are nontender with normal pulses. Laboratory studies show a hemoglobin of 11.2 g/dL, erythrocyte sedimentation rate of 78 mm/h, C-reactive protein of 5.2 mg/dL (N < 0.5), creatine kinase of 90 U/L (N < 170), thyroid-stimulating hormone of 2.1 μU/mL, and negative rheumatoid factor and anti-cyclic citrullinated peptide antibody.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Methotrexate 15 mg weekly",
+   "Naproxen 500 mg twice daily",
+   "Duloxetine 60 mg daily",
+   "Prednisone 15 mg daily",
+   "Prednisone 60 mg daily"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Bilateral shoulder and hip girdle pain with prolonged morning stiffness of more than 45 minutes in a woman over 50 years of age, with a markedly elevated ESR and CRP, normal creatine kinase, preserved muscle strength, no peripheral synovitis, and negative rheumatoid factor and anti-CCP is polymyalgia rheumatica. Pain-limited active but full passive shoulder motion reflects subacromial-subdeltoid bursitis and glenohumeral synovitis rather than muscle disease. The treatment of choice is low-dose glucocorticoid, prednisone 12.5–25 mg daily, which produces a dramatic response within days and is then tapered slowly over 1–2 years. High-dose prednisone (40–60 mg) is reserved for giant cell arteritis, which is excluded clinically here by the absence of headache, scalp tenderness, jaw claudication, visual symptoms and temporal artery abnormalities. Methotrexate is a steroid-sparing adjunct for relapsing disease, NSAIDs are ineffective and harmful in the elderly, and duloxetine treats fibromyalgia, which does not raise inflammatory markers.\n- 원리: <b>Polymyalgia rheumatica (PMR)</b> is an inflammatory disorder of people over 50 in which the synovial structures around the shoulder and hip girdles — subacromial-subdeltoid bursae, glenohumeral and hip joints, and trochanteric bursae — are inflamed, presumably driven by IL-6. That is why the pain is <b>proximal and symmetric</b>, why stiffness is worst after inactivity (gelling of inflamed bursae), why <b>active</b> motion is painful while <b>passive</b> motion is preserved, and why <b>muscle strength and creatine kinase are normal</b>: the muscles themselves are not the target. ESR and CRP are markedly elevated and a normocytic anemia is common. There is no specific test; the 2012 EULAR/ACR classification criteria require age ≥ 50, bilateral shoulder aching and abnormal CRP or ESR, and then score morning stiffness &gt; 45 minutes, hip pain, absence of rheumatoid factor and anti-CCP, and absence of peripheral joint involvement.<br> <b>Why low-dose prednisone</b> — PMR responds to 12.5–25 mg of prednisone daily within 2–7 days, so dramatically that failure to respond should prompt reconsideration of the diagnosis (seronegative rheumatoid arthritis, myositis, malignancy, infection). Higher doses do not improve outcome and add fracture, diabetes and infection risk in the elderly. The dose is held for 2–4 weeks and then tapered slowly (about 1 mg per month below 10 mg) over 1–2 years; relapses are common during taper and are managed by returning to the last effective dose.<br> <b>Why giant cell arteritis must be excluded</b> — 15–20 % of patients with PMR have or develop giant cell arteritis (GCA), a large-vessel vasculitis of the same age group that threatens vision. GCA is treated with 40–60 mg of prednisone (or intravenous pulse therapy with visual symptoms) started immediately, and requires temporal artery biopsy or vascular ultrasound. New headache, scalp tenderness, jaw claudication, visual loss or diplopia, and temporal artery tenderness or absent pulses must therefore be asked about and examined at every visit; their absence here is what makes the low dose appropriate.\n- 비교: <table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:44%\">When it is the right initial choice</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Prednisone 15 mg daily (answer)</b></td><td><b>Polymyalgia rheumatica without features of giant cell arteritis</b></td><td><b>Girdle pain, stiffness 2 h, ESR 78, CRP 5.2, CK normal, strength 5/5; no cranial symptoms</b></td></tr> <tr><td>Prednisone 60 mg daily (closest wrong answer)</td><td>Giant cell arteritis — headache, scalp tenderness, jaw claudication, visual symptoms, abnormal temporal arteries</td><td>None present; temporal arteries normal</td></tr> <tr><td>Methotrexate weekly</td><td>Steroid-sparing adjunct in relapsing PMR or high risk of glucocorticoid toxicity; rheumatoid arthritis</td><td>Not initial therapy; RF and anti-CCP negative, no synovitis</td></tr> <tr><td>Naproxen</td><td>Osteoarthritis or mechanical shoulder pain without systemic inflammation</td><td>Ineffective for PMR; renal and GI risk at 68 on losartan</td></tr> <tr><td>Duloxetine</td><td>Fibromyalgia — widespread pain, normal ESR/CRP, tender points</td><td>ESR 78 excludes fibromyalgia as the explanation</td></tr> </tbody></table> The <b>closest wrong answer is high-dose prednisone</b>, because PMR and giant cell arteritis are two ends of one spectrum and both respond to glucocorticoids. The discriminator is the <b>presence or absence of cranial ischemic symptoms</b>: without headache, scalp tenderness, jaw claudication, visual change or temporal artery abnormality, 12.5–25 mg is enough and 60 mg only adds toxicity. Had she reported new temporal headache with jaw claudication, prednisone 60 mg would be started at once and a temporal artery biopsy arranged.\n- 오답 이유:\n  - (A) Methotrexate is used in polymyalgia rheumatica only as a steroid-sparing agent for patients who relapse repeatedly during taper or who are at high risk of glucocorticoid toxicity, and as first-line therapy for rheumatoid arthritis. It works too slowly to be initial therapy for PMR. This option would be correct as an adjunct after two relapses on prednisone or if seropositive rheumatoid arthritis with hand synovitis had been diagnosed.\n  - (B) NSAIDs are ineffective for polymyalgia rheumatica and carry gastrointestinal, renal and cardiovascular risks in a 68-year-old on losartan. A failure to respond to NSAIDs while responding dramatically to low-dose prednisone is characteristic of PMR. This option would be reasonable for mechanical shoulder pain or osteoarthritis with normal inflammatory markers.\n  - (C) Duloxetine treats fibromyalgia, which causes widespread pain and stiffness but with normal ESR and CRP and without limitation of shoulder abduction. An ESR of 78 mm/h and CRP of 5.2 mg/dL indicate systemic inflammation, not a central pain syndrome. This option would be correct for chronic widespread pain with tender points and normal inflammatory markers.\n  - (E) Prednisone 40–60 mg daily is the dose for giant cell arteritis, which coexists with polymyalgia rheumatica in 15–20 % of patients. This woman has no headache, scalp tenderness, jaw claudication, visual symptoms or temporal artery abnormality, so the high dose adds fracture, infection and diabetes risk without benefit. This option would be correct if she had reported new temporal headache with jaw claudication.\n- 함정: Do not reflexively choose the highest steroid dose because the ESR is 78. In PMR the dose is decided by the presence or absence of giant cell arteritis features, not by the magnitude of the ESR — no cranial symptoms means 12.5–25 mg.\n- 학습목표: 고령 여성의 어깨·엉덩이 근육띠 통증과 아침 강직, 염증표지자 상승, 정상 CK 로 류마티스 다발근육통을 진단하고, 거대세포동맥염 증상이 없으면 저용량 글루코코르티코이드를 선택한다\n- 근거·출처: Dejaco C et al. 2015 recommendations for the management of polymyalgia rheumatica: a EULAR/ACR collaborative initiative. Ann Rheum Dis 2015;74:1799 — prednisone 12.5–25 mg/day initial dose, slow taper, methotrexate as steroid-sparing agent · Dasgupta B et al. 2012 provisional classification criteria for polymyalgia rheumatica: a EULAR/ACR collaborative initiative. Ann Rheum Dis 2012;71:484 · Hellmich B et al. 2018 update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19 — GCA: 40–60 mg prednisone · Harrison's Principles of Internal Medicine 21st ed., ch. 'The vasculitis syndromes' — polymyalgia rheumatica and giant cell arteritis · Kelley & Firestein's Textbook of Rheumatology, 11th ed., ch. 'Polymyalgia rheumatica and giant cell arteritis'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Bilateral shoulder and hip girdle pain with prolonged morning stiffness of more than 45 minutes in a woman over 50 years of age, with a markedly elevated ESR and CRP, normal creatine kinase, preserved muscle strength, no peripheral synovitis, and negative rheumatoid factor and anti-CCP is polymyalgia rheumatica. Pain-limited active but full passive shoulder motion reflects subacromial-subdeltoid bursitis and glenohumeral synovitis rather than muscle disease. The treatment of choice is low-dose glucocorticoid, prednisone 12.5–25 mg daily, which produces a dramatic response within days and is then tapered slowly over 1–2 years. High-dose prednisone (40–60 mg) is reserved for giant cell arteritis, which is excluded clinically here by the absence of headache, scalp tenderness, jaw claudication, visual symptoms and temporal artery abnormalities. Methotrexate is a steroid-sparing adjunct for relapsing disease, NSAIDs are ineffective and harmful in the elderly, and duloxetine treats fibromyalgia, which does not raise inflammatory markers."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Polymyalgia rheumatica (PMR)</b> is an inflammatory disorder of people over 50 in which the synovial structures around the shoulder and hip girdles — subacromial-subdeltoid bursae, glenohumeral and hip joints, and trochanteric bursae — are inflamed, presumably driven by IL-6. That is why the pain is <b>proximal and symmetric</b>, why stiffness is worst after inactivity (gelling of inflamed bursae), why <b>active</b> motion is painful while <b>passive</b> motion is preserved, and why <b>muscle strength and creatine kinase are normal</b>: the muscles themselves are not the target. ESR and CRP are markedly elevated and a normocytic anemia is common. There is no specific test; the 2012 EULAR/ACR classification criteria require age ≥ 50, bilateral shoulder aching and abnormal CRP or ESR, and then score morning stiffness &gt; 45 minutes, hip pain, absence of rheumatoid factor and anti-CCP, and absence of peripheral joint involvement.<br> <b>Why low-dose prednisone</b> — PMR responds to 12.5–25 mg of prednisone daily within 2–7 days, so dramatically that failure to respond should prompt reconsideration of the diagnosis (seronegative rheumatoid arthritis, myositis, malignancy, infection). Higher doses do not improve outcome and add fracture, diabetes and infection risk in the elderly. The dose is held for 2–4 weeks and then tapered slowly (about 1 mg per month below 10 mg) over 1–2 years; relapses are common during taper and are managed by returning to the last effective dose.<br> <b>Why giant cell arteritis must be excluded</b> — 15–20 % of patients with PMR have or develop giant cell arteritis (GCA), a large-vessel vasculitis of the same age group that threatens vision. GCA is treated with 40–60 mg of prednisone (or intravenous pulse therapy with visual symptoms) started immediately, and requires temporal artery biopsy or vascular ultrasound. New headache, scalp tenderness, jaw claudication, visual loss or diplopia, and temporal artery tenderness or absent pulses must therefore be asked about and examined at every visit; their absence here is what makes the low dose appropriate."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:44%\">When it is the right initial choice</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Prednisone 15 mg daily (answer)</b></td><td><b>Polymyalgia rheumatica without features of giant cell arteritis</b></td><td><b>Girdle pain, stiffness 2 h, ESR 78, CRP 5.2, CK normal, strength 5/5; no cranial symptoms</b></td></tr> <tr><td>Prednisone 60 mg daily (closest wrong answer)</td><td>Giant cell arteritis — headache, scalp tenderness, jaw claudication, visual symptoms, abnormal temporal arteries</td><td>None present; temporal arteries normal</td></tr> <tr><td>Methotrexate weekly</td><td>Steroid-sparing adjunct in relapsing PMR or high risk of glucocorticoid toxicity; rheumatoid arthritis</td><td>Not initial therapy; RF and anti-CCP negative, no synovitis</td></tr> <tr><td>Naproxen</td><td>Osteoarthritis or mechanical shoulder pain without systemic inflammation</td><td>Ineffective for PMR; renal and GI risk at 68 on losartan</td></tr> <tr><td>Duloxetine</td><td>Fibromyalgia — widespread pain, normal ESR/CRP, tender points</td><td>ESR 78 excludes fibromyalgia as the explanation</td></tr> </tbody></table> The <b>closest wrong answer is high-dose prednisone</b>, because PMR and giant cell arteritis are two ends of one spectrum and both respond to glucocorticoids. The discriminator is the <b>presence or absence of cranial ischemic symptoms</b>: without headache, scalp tenderness, jaw claudication, visual change or temporal artery abnormality, 12.5–25 mg is enough and 60 mg only adds toxicity. Had she reported new temporal headache with jaw claudication, prednisone 60 mg would be started at once and a temporal artery biopsy arranged."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Methotrexate is used in polymyalgia rheumatica only as a steroid-sparing agent for patients who relapse repeatedly during taper or who are at high risk of glucocorticoid toxicity, and as first-line therapy for rheumatoid arthritis. It works too slowly to be initial therapy for PMR. This option would be correct as an adjunct after two relapses on prednisone or if seropositive rheumatoid arthritis with hand synovitis had been diagnosed.\n(B) NSAIDs are ineffective for polymyalgia rheumatica and carry gastrointestinal, renal and cardiovascular risks in a 68-year-old on losartan. A failure to respond to NSAIDs while responding dramatically to low-dose prednisone is characteristic of PMR. This option would be reasonable for mechanical shoulder pain or osteoarthritis with normal inflammatory markers.\n(C) Duloxetine treats fibromyalgia, which causes widespread pain and stiffness but with normal ESR and CRP and without limitation of shoulder abduction. An ESR of 78 mm/h and CRP of 5.2 mg/dL indicate systemic inflammation, not a central pain syndrome. This option would be correct for chronic widespread pain with tender points and normal inflammatory markers.\n(E) Prednisone 40–60 mg daily is the dose for giant cell arteritis, which coexists with polymyalgia rheumatica in 15–20 % of patients. This woman has no headache, scalp tenderness, jaw claudication, visual symptoms or temporal artery abnormality, so the high dose adds fracture, infection and diabetes risk without benefit. This option would be correct if she had reported new temporal headache with jaw claudication."
+   },
+   {
+    "k": "함정",
+    "v": "Do not reflexively choose the highest steroid dose because the ESR is 78. In PMR the dose is decided by the presence or absence of giant cell arteritis features, not by the magnitude of the ESR — no cranial symptoms means 12.5–25 mg."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령 여성의 어깨·엉덩이 근육띠 통증과 아침 강직, 염증표지자 상승, 정상 CK 로 류마티스 다발근육통을 진단하고, 거대세포동맥염 증상이 없으면 저용량 글루코코르티코이드를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Dejaco C et al. 2015 recommendations for the management of polymyalgia rheumatica: a EULAR/ACR collaborative initiative. Ann Rheum Dis 2015;74:1799 — prednisone 12.5–25 mg/day initial dose, slow taper, methotrexate as steroid-sparing agent · Dasgupta B et al. 2012 provisional classification criteria for polymyalgia rheumatica: a EULAR/ACR collaborative initiative. Ann Rheum Dis 2012;71:484 · Hellmich B et al. 2018 update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19 — GCA: 40–60 mg prednisone · Harrison's Principles of Internal Medicine 21st ed., ch. 'The vasculitis syndromes' — polymyalgia rheumatica and giant cell arteritis · Kelley & Firestein's Textbook of Rheumatology, 11th ed., ch. 'Polymyalgia rheumatica and giant cell arteritis'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "50세 이상 여성의 양측 어깨·엉덩이 근육띠 통증과 45분 이상의 아침 강직, ESR·CRP 상승, 정상 CK·근력으로 류마티스 다발근육통이며 거대세포동맥염 증상이 없어 저용량 프레드니손이 정답이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "두통·두피 압통·턱 파행·시각 증상이 없고 측두동맥이 정상 — 거대세포동맥염이 없으므로 40~60 mg 이 아니라 12.5~25 mg 이다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "pain and stiffness in both shoulders and hips for 6 weeks",
+     "why": "양측 근육띠 통증 — PMR 의 핵심 분포",
+     "also": []
+    },
+    {
+     "item": "The stiffness is worst in the morning, lasts about 2 hours",
+     "why": "45분 이상의 아침 강직 — 염증성 통증이며 분류 기준 항목",
+     "also": []
+    },
+    {
+     "item": "erythrocyte sedimentation rate of 78 mm/h",
+     "why": "현저한 염증표지자 상승 — 기계적 통증·섬유근육통을 배제한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "creatine kinase of 90 U/L",
+     "why": "근육 자체의 염증(다발근염)이 아니라는 근거 — 근육띠 통증이지만 근효소는 정상",
+     "also": []
+    },
+    {
+     "item": "muscle strength is 5/5 in all extremities",
+     "why": "근염·신경병증 가능성을 낮춘다 — PMR 은 통증에 의한 제한이지 근력 저하가 아니다",
+     "also": []
+    },
+    {
+     "item": "negative rheumatoid factor and anti-cyclic citrullinated peptide antibody",
+     "why": "고령 발병 류마티스관절염 가능성을 낮춘다 — 메토트렉세이트 방향이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has no headache, scalp tenderness, jaw pain with chewing, or visual disturbance",
+     "why": "거대세포동맥염 증상이 없다 — 고용량이 아니라 저용량 스테로이드를 고르게 하는 결정 정보",
+     "also": []
+    },
+    {
+     "item": "Temporal arteries are nontender with normal pulses",
+     "why": "측두동맥 이상이 없어 GCA 검사·고용량 치료의 적응이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "thyroid-stimulating hormone of 2.1 μU/mL",
+     "why": "갑상샘저하증에 의한 근육통·CK 상승을 배제하는 검사 — 정상이라 판단에 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "68-year-old woman",
+     "why": "PMR 의 전형적 나이·성별 — 그러나 나이만으로 진단하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral girdle pain with 2 h of morning stiffness, ESR 78 and CRP 5.2, normal CK and strength, no synovitis and negative RF/anti-CCP is polymyalgia rheumatica. With no cranial features of giant cell arteritis the initial treatment is low-dose prednisone (12.5–25 mg daily), not 60 mg.",
+   "switch": {
+    "choice": "E",
+    "condition": "If she had reported a new temporal headache, scalp tenderness or jaw claudication, or had a tender pulseless temporal artery, prednisone 60 mg daily would be started immediately for giant cell arteritis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0075",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·응급·소화기·류마티스근골격·외과·소아·내분비·정신·예방의학)",
+  "subtopic": "소화기·간담췌 — 간경변 정맥류 출혈의 초기 처치",
+  "type": "소화기·간담췌 — 간경변 정맥류 출혈의 초기 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-20",
+  "vignette": "52세 남자가 2시간 전부터 피를 두 차례 토하고 어지러워 응급실에 왔다. 알코올 간경변으로 진료받고 있으며 3년 전 복수로 입원한 적이 있고, 소염진통제는 먹지 않는다. 혈압 90/60 mmHg, 맥박 115회/분, 체온 36.8℃이다. 결막이 창백하고 가슴에 거미혈관종이 여럿 있으며 배가 불러 있고 이동성 탁음이 있다. 직장수지검사에서 흑색변이 묻어난다. 혈액검사: 혈색소 7.5 g/dL, 혈소판 68,000/μL, 프로트롬빈시간 INR 1.9, 크레아티닌 1.1 mg/dL. 정맥로를 확보하고 수액과 농축적혈구 수혈을 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "고용량 판토프라졸을 정주하고 상부위장관 내시경을 한다",
+   "식도 풍선 탐폰(Sengstaken-Blakemore 관)을 삽입한다",
+   "경경정맥 간내 문맥전신 단락술(TIPS)을 즉시 시행한다",
+   "혈색소 10 g/dL 이상을 목표로 수혈하며 경과를 관찰한다",
+   "옥트레오타이드와 세프트리악손을 정주하고 내시경 정맥류 결찰을 한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 알코올 간경변(거미혈관종·복수·혈소판감소·INR 상승)이 있는 환자의 토혈과 흑색변은 다른 원인이 증명될 때까지 식도·위 정맥류 출혈로 다룬다. 정맥류 출혈의 초기 처치는 (1) 제한적 수혈(혈색소 7 g/dL 미만에서 시작해 7~9 g/dL 유지 — 과다 수혈은 문맥압을 올려 재출혈을 늘린다), (2) 내시경 전부터 혈관수축제(옥트레오타이드 또는 테를리프레신)로 내장 혈류와 문맥압을 낮추고, (3) 예방적 항생제(세프트리악손 1 g/일, 7일)로 감염·재출혈·사망을 줄이며, (4) 소생 후 12시간 안에 상부위장관 내시경으로 정맥류를 확인하고 결찰하는 것이다. 양성자펌프억제제 단독은 소화성 궤양 출혈의 접근이고, 풍선 탐폰과 TIPS 는 약물·내시경 치료에 실패한 뒤의 구조 치료다.\n- 원리: <b>왜 정맥류 출혈은 다른 상부위장관출혈과 다르게 다루는가</b> — 출혈의 동력이 <b>문맥압</b>이기 때문이다. 간경변에서 간내 저항이 높아지고 내장 혈관이 확장돼 문맥압이 오르면, 문맥-전신 측부순환인 식도·위 정맥류가 늘어나고 간정맥압력차(HVPG)가 12 mmHg 를 넘으면 터진다. 따라서 지혈의 첫 단추는 문맥압을 낮추는 것이다. <b>옥트레오타이드</b>(소마토스타틴 유사체)는 글루카곤 등 혈관확장 펩타이드 분비를 억제해 내장 혈류와 문맥압을 떨어뜨리고, 테를리프레신 (바소프레신 유사체)은 내장 소동맥을 직접 수축시킨다. 이 약은 내시경 전에 시작해 2~5일 유지하며, 내시경 시야를 좋게 하고 재출혈을 줄인다.<br> <b>왜 항생제인가</b> — 간경변 출혈 환자의 약 20 %가 입원 중 세균 감염(자발성 세균성 복막염·균혈증)을 일으키고, 감염은 재출혈과 사망의 독립 위험인자다. 세프트리악손 1 g/일 7일 예방투여는 감염·재출혈·사망률을 모두 낮추는 것이 무작위시험과 메타분석으로 확인돼 <b>모든 간경변 급성 소화관출혈에서 필수</b>다.<br> <b>왜 제한적 수혈인가</b> — 문맥압은 혈관 내 용적에 비례한다. 혈색소 9 g/dL 를 넘겨 수혈하면 문맥압이 다시 올라 재출혈이 늘고 사망률이 높아진다는 것이 Villanueva 의 무작위시험(NEJM 2013)에서 확인됐다. 목표는 7~9 g/dL 다. 혈소판·INR 이상은 간경변의 재균형 상태를 반영하므로 신선동결혈장으로 교정하려 들면 용적 과부하만 만든다.<br> <b>내시경과 구조 치료</b> — 소생 뒤 12시간 안에 내시경으로 진단과 정맥류 결찰(EVL)을 한다. 그래도 지혈되지 않거나 재출혈하면 풍선 탐폰(최대 24시간, 다리 역할)과 TIPS 로 넘어간다. Child-Pugh C(10~13점) 또는 B 이면서 내시경에서 활동성 출혈인 고위험군은 72시간 안의 「선제적(pre-emptive) TIPS」가 생존을 늘린다는 근거가 있지만, 이는 약물·내시경 치료를 한 뒤의 결정이지 첫 처치가 아니다.\n- 비교: <table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:40%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>옥트레오타이드 + 세프트리악손 → 내시경 결찰(정답)</b></td><td><b>간경변 환자의 급성 상부위장관출혈 — 정맥류로 간주하고 소생과 동시에</b></td><td><b>거미혈관종·복수·혈소판 68,000·INR 1.9 의 간경변, 토혈·흑색변</b></td></tr> <tr><td>고용량 PPI → 내시경(가장 가까운 오답)</td><td>소화성 궤양 출혈이 의심될 때(NSAID·H. pylori, 간경변 없음)</td><td>간경변 없이 궤양 병력이 있었다면 — 여기서는 문맥압을 낮추는 약과 항생제가 먼저</td></tr> <tr><td>풍선 탐폰</td><td>약물 + 내시경으로 지혈 실패, TIPS 까지의 다리(≤ 24시간)</td><td>아직 내시경 전 — 순서가 아니다</td></tr> <tr><td>TIPS 즉시</td><td>내시경 치료 실패·재출혈, 또는 고위험군(Child C, Child B + 활동성 출혈)의 선제적 TIPS(72시간 내)</td><td>내시경도 하기 전 — 첫 처치가 아니다</td></tr> <tr><td>혈색소 10 이상 목표 수혈</td><td>정맥류 출혈에서는 어떤 경우에도 아니다(급성 관상동맥증후군 동반 시 8~9 까지)</td><td>7~9 g/dL 제한 수혈이 재출혈·사망을 줄인다</td></tr> </tbody></table> <b>가장 가까운 오답은 「고용량 PPI 정주 후 내시경」</b>이다 — 상부위장관출혈의 일반 처치로 익숙하기 때문이다. 갈림길은 <b>간경변의 유무</b>다. 거미혈관종·복수·혈소판감소·INR 상승이 있으면 내시경으로 확인하기 전이라도 정맥류로 보고 혈관수축제와 항생제를 먼저 준다(PPI 를 함께 줄 수는 있지만 정답의 핵심이 아니다). 반대로 간경변 소견 없이 NSAID 복용과 상복부 통증 병력이 있었다면 PPI 정주 후 내시경이 정답이 된다.\n- 오답 이유:\n  - ① 고용량 양성자펌프억제제 정주는 소화성 궤양 출혈의 표준 초기 처치다. 이 환자는 거미혈관종·복수·혈소판감소·INR 상승의 간경변이 있어 정맥류 출혈로 다뤄야 하며, 문맥압을 낮추는 혈관수축제와 예방적 항생제가 결정적이다. 간경변 소견 없이 소염진통제 복용과 궤양 병력이 있었다면 이 선지가 정답이 된다.\n  - ② 식도 풍선 탐폰은 약물과 내시경 치료로도 지혈되지 않는 대량 출혈에서 TIPS 까지 시간을 버는 임시 조치이며, 24시간을 넘기면 식도 괴사·흡인의 위험이 크다. 아직 내시경조차 하지 않은 시점의 첫 처치가 아니다. 내시경 결찰 후에도 출혈이 계속되어 기도 확보 뒤 TIPS 를 기다릴 때 이 선지가 정답이 된다.\n  - ③ TIPS 는 내시경 치료 실패나 재출혈, 또는 Child-Pugh C 나 활동성 출혈을 동반한 Child B 고위험군에서 72시간 안에 선제적으로 시행할 때 생존을 늘린다. 그러나 이는 혈관수축제·항생제·내시경 결찰을 한 뒤의 결정이다. 결찰 후 5일 안에 재출혈했거나 고위험군으로 판정된 뒤라면 이 선지가 정답이 된다.\n  - ④ 정맥류 출혈에서 혈색소 9 g/dL 를 넘겨 수혈하면 문맥압이 다시 올라 재출혈과 사망이 늘어난다는 것이 무작위시험으로 확인됐고, 목표는 7~9 g/dL 다. 또한 지혈 처치 없이 경과만 보는 것은 대량 출혈에서 허용되지 않는다. 급성 심근허혈이 동반된 예외적 상황에서도 목표는 8~9 g/dL 이지 10 이상이 아니다.\n- 함정: 「상부위장관출혈 = PPI 정주 후 내시경」에서 멈추지 않는다. 간경변 소견(거미혈관종·복수·혈소판감소·INR 상승)이 있으면 내시경 전이라도 정맥류로 보고 옥트레오타이드 + 세프트리악손을 먼저, 수혈은 7~9 g/dL 로 제한한다.\n- 학습목표: 간경변 환자의 급성 상부위장관출혈에서 정맥류 출혈을 우선 의심하고, 내시경 전에 혈관수축제(옥트레오타이드)와 예방적 항생제(세프트리악손)를 시작한 뒤 12시간 안에 내시경 정맥류 결찰을 하며 제한적 수혈을 적용한다\n- 근거·출처: Garcia-Tsao G et al. Portal hypertensive bleeding in cirrhosis: risk stratification, diagnosis, and management — 2016 practice guidance by the AASLD. Hepatology 2017;65:310 — vasoactive drugs before endoscopy, antibiotic prophylaxis, EVL within 12 h, restrictive transfusion · de Franchis R et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol 2022;76:959 — pre-emptive TIPS criteria, transfusion target 7–8 g/dL · Villanueva C et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med 2013;368:11 — restrictive (Hb < 7) vs liberal (Hb < 9): improved survival, less rebleeding in cirrhosis · Chavez-Tapia NC et al. Antibiotic prophylaxis for cirrhotic patients with upper gastrointestinal bleeding. Cochrane Database Syst Rev 2010;CD002907 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Cirrhosis and its complications' — variceal hemorrhage",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "알코올 간경변(거미혈관종·복수·혈소판감소·INR 상승)이 있는 환자의 토혈과 흑색변은 다른 원인이 증명될 때까지 식도·위 정맥류 출혈로 다룬다. 정맥류 출혈의 초기 처치는 (1) 제한적 수혈(혈색소 7 g/dL 미만에서 시작해 7~9 g/dL 유지 — 과다 수혈은 문맥압을 올려 재출혈을 늘린다), (2) 내시경 전부터 혈관수축제(옥트레오타이드 또는 테를리프레신)로 내장 혈류와 문맥압을 낮추고, (3) 예방적 항생제(세프트리악손 1 g/일, 7일)로 감염·재출혈·사망을 줄이며, (4) 소생 후 12시간 안에 상부위장관 내시경으로 정맥류를 확인하고 결찰하는 것이다. 양성자펌프억제제 단독은 소화성 궤양 출혈의 접근이고, 풍선 탐폰과 TIPS 는 약물·내시경 치료에 실패한 뒤의 구조 치료다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 정맥류 출혈은 다른 상부위장관출혈과 다르게 다루는가</b> — 출혈의 동력이 <b>문맥압</b>이기 때문이다. 간경변에서 간내 저항이 높아지고 내장 혈관이 확장돼 문맥압이 오르면, 문맥-전신 측부순환인 식도·위 정맥류가 늘어나고 간정맥압력차(HVPG)가 12 mmHg 를 넘으면 터진다. 따라서 지혈의 첫 단추는 문맥압을 낮추는 것이다. <b>옥트레오타이드</b>(소마토스타틴 유사체)는 글루카곤 등 혈관확장 펩타이드 분비를 억제해 내장 혈류와 문맥압을 떨어뜨리고, 테를리프레신 (바소프레신 유사체)은 내장 소동맥을 직접 수축시킨다. 이 약은 내시경 전에 시작해 2~5일 유지하며, 내시경 시야를 좋게 하고 재출혈을 줄인다.<br> <b>왜 항생제인가</b> — 간경변 출혈 환자의 약 20 %가 입원 중 세균 감염(자발성 세균성 복막염·균혈증)을 일으키고, 감염은 재출혈과 사망의 독립 위험인자다. 세프트리악손 1 g/일 7일 예방투여는 감염·재출혈·사망률을 모두 낮추는 것이 무작위시험과 메타분석으로 확인돼 <b>모든 간경변 급성 소화관출혈에서 필수</b>다.<br> <b>왜 제한적 수혈인가</b> — 문맥압은 혈관 내 용적에 비례한다. 혈색소 9 g/dL 를 넘겨 수혈하면 문맥압이 다시 올라 재출혈이 늘고 사망률이 높아진다는 것이 Villanueva 의 무작위시험(NEJM 2013)에서 확인됐다. 목표는 7~9 g/dL 다. 혈소판·INR 이상은 간경변의 재균형 상태를 반영하므로 신선동결혈장으로 교정하려 들면 용적 과부하만 만든다.<br> <b>내시경과 구조 치료</b> — 소생 뒤 12시간 안에 내시경으로 진단과 정맥류 결찰(EVL)을 한다. 그래도 지혈되지 않거나 재출혈하면 풍선 탐폰(최대 24시간, 다리 역할)과 TIPS 로 넘어간다. Child-Pugh C(10~13점) 또는 B 이면서 내시경에서 활동성 출혈인 고위험군은 72시간 안의 「선제적(pre-emptive) TIPS」가 생존을 늘린다는 근거가 있지만, 이는 약물·내시경 치료를 한 뒤의 결정이지 첫 처치가 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:40%\">언제 정답이 되는가</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>옥트레오타이드 + 세프트리악손 → 내시경 결찰(정답)</b></td><td><b>간경변 환자의 급성 상부위장관출혈 — 정맥류로 간주하고 소생과 동시에</b></td><td><b>거미혈관종·복수·혈소판 68,000·INR 1.9 의 간경변, 토혈·흑색변</b></td></tr> <tr><td>고용량 PPI → 내시경(가장 가까운 오답)</td><td>소화성 궤양 출혈이 의심될 때(NSAID·H. pylori, 간경변 없음)</td><td>간경변 없이 궤양 병력이 있었다면 — 여기서는 문맥압을 낮추는 약과 항생제가 먼저</td></tr> <tr><td>풍선 탐폰</td><td>약물 + 내시경으로 지혈 실패, TIPS 까지의 다리(≤ 24시간)</td><td>아직 내시경 전 — 순서가 아니다</td></tr> <tr><td>TIPS 즉시</td><td>내시경 치료 실패·재출혈, 또는 고위험군(Child C, Child B + 활동성 출혈)의 선제적 TIPS(72시간 내)</td><td>내시경도 하기 전 — 첫 처치가 아니다</td></tr> <tr><td>혈색소 10 이상 목표 수혈</td><td>정맥류 출혈에서는 어떤 경우에도 아니다(급성 관상동맥증후군 동반 시 8~9 까지)</td><td>7~9 g/dL 제한 수혈이 재출혈·사망을 줄인다</td></tr> </tbody></table> <b>가장 가까운 오답은 「고용량 PPI 정주 후 내시경」</b>이다 — 상부위장관출혈의 일반 처치로 익숙하기 때문이다. 갈림길은 <b>간경변의 유무</b>다. 거미혈관종·복수·혈소판감소·INR 상승이 있으면 내시경으로 확인하기 전이라도 정맥류로 보고 혈관수축제와 항생제를 먼저 준다(PPI 를 함께 줄 수는 있지만 정답의 핵심이 아니다). 반대로 간경변 소견 없이 NSAID 복용과 상복부 통증 병력이 있었다면 PPI 정주 후 내시경이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 고용량 양성자펌프억제제 정주는 소화성 궤양 출혈의 표준 초기 처치다. 이 환자는 거미혈관종·복수·혈소판감소·INR 상승의 간경변이 있어 정맥류 출혈로 다뤄야 하며, 문맥압을 낮추는 혈관수축제와 예방적 항생제가 결정적이다. 간경변 소견 없이 소염진통제 복용과 궤양 병력이 있었다면 이 선지가 정답이 된다.\n② 식도 풍선 탐폰은 약물과 내시경 치료로도 지혈되지 않는 대량 출혈에서 TIPS 까지 시간을 버는 임시 조치이며, 24시간을 넘기면 식도 괴사·흡인의 위험이 크다. 아직 내시경조차 하지 않은 시점의 첫 처치가 아니다. 내시경 결찰 후에도 출혈이 계속되어 기도 확보 뒤 TIPS 를 기다릴 때 이 선지가 정답이 된다.\n③ TIPS 는 내시경 치료 실패나 재출혈, 또는 Child-Pugh C 나 활동성 출혈을 동반한 Child B 고위험군에서 72시간 안에 선제적으로 시행할 때 생존을 늘린다. 그러나 이는 혈관수축제·항생제·내시경 결찰을 한 뒤의 결정이다. 결찰 후 5일 안에 재출혈했거나 고위험군으로 판정된 뒤라면 이 선지가 정답이 된다.\n④ 정맥류 출혈에서 혈색소 9 g/dL 를 넘겨 수혈하면 문맥압이 다시 올라 재출혈과 사망이 늘어난다는 것이 무작위시험으로 확인됐고, 목표는 7~9 g/dL 다. 또한 지혈 처치 없이 경과만 보는 것은 대량 출혈에서 허용되지 않는다. 급성 심근허혈이 동반된 예외적 상황에서도 목표는 8~9 g/dL 이지 10 이상이 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "「상부위장관출혈 = PPI 정주 후 내시경」에서 멈추지 않는다. 간경변 소견(거미혈관종·복수·혈소판감소·INR 상승)이 있으면 내시경 전이라도 정맥류로 보고 옥트레오타이드 + 세프트리악손을 먼저, 수혈은 7~9 g/dL 로 제한한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 급성 상부위장관출혈에서 정맥류 출혈을 우선 의심하고, 내시경 전에 혈관수축제(옥트레오타이드)와 예방적 항생제(세프트리악손)를 시작한 뒤 12시간 안에 내시경 정맥류 결찰을 하며 제한적 수혈을 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Garcia-Tsao G et al. Portal hypertensive bleeding in cirrhosis: risk stratification, diagnosis, and management — 2016 practice guidance by the AASLD. Hepatology 2017;65:310 — vasoactive drugs before endoscopy, antibiotic prophylaxis, EVL within 12 h, restrictive transfusion · de Franchis R et al. Baveno VII — renewing consensus in portal hypertension. J Hepatol 2022;76:959 — pre-emptive TIPS criteria, transfusion target 7–8 g/dL · Villanueva C et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med 2013;368:11 — restrictive (Hb < 7) vs liberal (Hb < 9): improved survival, less rebleeding in cirrhosis · Chavez-Tapia NC et al. Antibiotic prophylaxis for cirrhotic patients with upper gastrointestinal bleeding. Cochrane Database Syst Rev 2010;CD002907 · Harrison's Principles of Internal Medicine 21st ed., ch. 'Cirrhosis and its complications' — variceal hemorrhage"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "간경변 환자의 토혈은 정맥류 출혈로 간주해 소생과 동시에 옥트레오타이드와 세프트리악손을 시작하고 12시간 안에 내시경 결찰을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "거미혈관종·복수·혈소판 68,000·INR 1.9 의 간경변 — 출혈의 동력이 문맥압이므로 위산 억제보다 혈관수축제와 항생제가 먼저다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "알코올 간경변",
+     "why": "문맥압항진 — 상부위장관출혈을 정맥류로 간주하게 하는 결정적 병력",
+     "also": []
+    },
+    {
+     "item": "거미혈관종",
+     "why": "만성 간질환의 신체 징후 — 간경변 진단을 뒷받침한다",
+     "also": []
+    },
+    {
+     "item": "이동성 탁음",
+     "why": "복수 — 문맥압항진의 비대상성 징후",
+     "also": []
+    },
+    {
+     "item": "혈소판 68,000/μL",
+     "why": "비장 격리에 의한 혈소판감소 — 문맥압항진의 검사 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소염진통제는 먹지 않는다",
+     "why": "NSAID 궤양 출혈 가능성을 낮춘다 — PPI 중심 접근에서 멀어진다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈색소 7.5 g/dL",
+     "why": "7 g/dL 미만이 아니어도 활동성 대량 출혈에서는 수혈을 시작하되 목표는 7~9 — 10 이상 목표는 재출혈을 늘린다",
+     "also": []
+    },
+    {
+     "item": "혈압 90/60 mmHg, 맥박 115회/분",
+     "why": "출혈성 쇼크 초기 — 소생을 서두르되 과다 수액은 문맥압을 올린다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "프로트롬빈시간 INR 1.9",
+     "why": "간경변의 재균형 응고 상태 — 신선동결혈장 교정의 근거가 아니며 처치를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "52세 남자",
+     "why": "알코올 간경변의 흔한 연령 — 처치 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "간경변(거미혈관종·복수·혈소판감소·INR 상승) 환자의 토혈·흑색변은 정맥류 출혈로 다룬다. 제한적 수혈(7~9 g/dL)과 함께 옥트레오타이드와 세프트리악손을 먼저 주고 12시간 안에 내시경 정맥류 결찰을 한다. 풍선 탐폰·TIPS 는 그 뒤의 구조 치료다.",
+   "switch": {
+    "choice": "C",
+    "condition": "내시경 결찰 후에도 출혈이 멈추지 않거나 Child-Pugh C 등급으로 활동성 출혈이 확인되었다면 72시간 안의 선제적 TIPS 가 다음 처치가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260920T202312Z_일일영상_2026-09-21_9units_9q_5a5387a4",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0067",
   "exam": "imaging",
   "style": "usmle_style",
