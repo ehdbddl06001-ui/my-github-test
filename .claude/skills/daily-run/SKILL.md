@@ -30,6 +30,15 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    - 질환/약물 카드 → `/gen-card` 규칙
    각 항목마다 `state.next_id(<type>)` 로 id를 발급받는다.
 
+2-b. **내 오답의 이론 정리본** — 내가 틀린 문항 가운데 정리본이 없는 주제를 그날 채운다(2026-09-20 사용자 지시).
+   ```
+   python pipelines/concept_queue.py --limit 3
+   ```
+   - `[note]` 는 정리본을 쓰고, `[link]` 는 그 문항들에 `objective` 를 붙인 뒤 정리본이 없으면 이어서 쓴다.
+     규칙은 `/gen-concept`(깊이·근거·도식·검증). **하루 상한: 정리본 3개 · 목표 연결 10문항** — 넘으면 큐에 남겨 둔다.
+   - 큐가 비어 있으면 이 단계는 건너뛴다(학습 기록이 아직 저장소에 안 왔을 때가 대부분이다 — 정상).
+   - 보고에 「정리본 N개 · 목표 연결 M문항 · 큐 잔여 K건」을 남긴다.
+
 3. **저장** — `schemas/frontmatter.md` 규격의 `.md` 로 올바른 `content/` 폴더에 저장.
    - `date` 는 **한국시간(KST) 기준 오늘**로 적는다: `TZ=Asia/Seoul date +%F` 로 확인.
      (루틴 컨테이너는 UTC이고 스케줄이 20:00 UTC=05:00 KST라, UTC 날짜로 찍으면
@@ -42,6 +51,7 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 5. **검증 + 색인**
    ```
    python pipelines/indexer.py --check              # frontmatter 계약 검증(필수)
+   python pipelines/concepts.py                    # 정리본·문항 학습 목표 계약(정리본을 건드린 날 필수)
    python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만)
    python pipelines/review_questions.py --date <오늘> --out /tmp/review.md   # 내용 검토지(판정 아님 — 보고에 경로·REVIEW 신호 수를 남긴다)
    python pipelines/indexer.py                       # SQLite 재빌드
@@ -55,6 +65,8 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    - **KMLE를 생성했다면(content/kmle SoT): `python pipelines/export_kmle_web.py`**
      → `docs/questions_kmle_content.js` (인터랙티브 퀴즈에 오늘 문항이 뜨게 함). 웹은
      이 번들을 레거시 `docs/questions.js`(quiz.py 트랙)와 합쳐서 KMLE 덱을 만든다.
+   - 정리본을 만들었거나 문항에 `objective` 를 붙였다면: `python pipelines/export_concepts_web.py`
+     → `docs/concepts.js` (앱의 오답 뒤 학습 흐름이 그 정리본을 연다)
    - **어떤 타입이든**(basic·paper·disease·drug 포함): `python pipelines/export_search_web.py`
      → `docs/search-index.js` (통합검색·대시보드 갱신). 매 실행 항상 재생성한다.
    생성된 번들을 **같은 커밋에 포함**한다.

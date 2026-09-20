@@ -34,7 +34,7 @@ from typing import Iterable
 
 from frontmatter import load, Doc, QUESTION_TYPES
 from question_design import format_findings, review_flags
-from concepts import load_concepts, question_learning_errors
+from concepts import OBJECTIVE_REQUIRED_FROM, load_concepts, question_learning_errors
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
@@ -203,6 +203,10 @@ def lint_doc(d: Doc) -> list[Finding]:
     for code, msg in review_flags(m):
         findings.append(Finding("REVIEW", code, msg))
     # 11) 오답 뒤 학습 흐름 필드(objective·distractors·case_path) — 있으면 형식·도식 정합성을 본다
+    if d.type in ("kmle", "usmle") and not m.get("objective")             and str(m.get("date", "") or "") >= OBJECTIVE_REQUIRED_FROM:
+        findings.append(Finding("WARN", "objective-missing",
+                                "학습 목표(objective)가 없다 — 이 문항을 틀려도 이론 정리본으로 이어지지 않는다. "
+                                "기존 정리본 id 를 붙이거나 새 목표 id 를 정한다(/gen-concept)."))
     if any(k in m for k in ("objective", "distractors", "case_path")):
         concept = _concepts().get(str(m.get("objective") or ""))
         for level, msg in question_learning_errors(m, concept):

@@ -475,5 +475,59 @@ class RenderedBook(unittest.TestCase):
             self.assertIn("소아청소년과", last["failed"])
 
 
+class ConceptQueueTest(unittest.TestCase):
+    """내 오답 → 이론 정리본 큐(매일 루틴이 읽는다)."""
+
+    def setUp(self):
+        import concept_queue as cq
+        self.cq = cq
+        self._orig = (cq.load_concepts, cq.load_questions)
+        self.concepts = {"cn.derm.a.b": {"id": "cn.derm.a.b"}}
+        self.qs = {"q1": {"topic": "Dermatology", "subtopic": "어루러기", "objective": "cn.derm.a.b"},
+                   "q2": {"topic": "Dermatology", "subtopic": "백선", "objective": "cn.derm.c.d"},
+                   "q3": {"topic": "Cardiology", "subtopic": "심부전"},
+                   "q4": {"topic": "Cardiology", "subtopic": "심부전"}}
+        cq.load_concepts = lambda: (self.concepts, [])
+        cq.load_questions = lambda: self.qs
+
+    def tearDown(self):
+        self.cq.load_concepts, self.cq.load_questions = self._orig
+
+    def test_queue_splits_note_and_link_and_skips_existing_notes(self):
+        e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20"),     # 정리본 있음 → 큐에 없음
+             wrong("e2", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20"),     # 목표만 있음 → note
+             wrong("e3", "q3", None, "2026-09-20T01:00:00Z", "2026-09-20"),              # 목표 없음 → link
+             wrong("e4", "q4", None, "2026-09-20T01:00:00Z", "2026-09-20"),              # 같은 주제 → 한 줄로
+             wrong("e5", "q9", None, "2026-09-20T01:00:00Z", "2026-09-20")]              # 없는 문항 → 무시
+        q = self.cq.build(e)
+        self.assertEqual([n["objective"] for n in q["note"]], ["cn.derm.c.d"])
+        self.assertEqual([(l["topic"], l["subtopic"], sorted(l["questions"])) for l in q["link"]],
+                         [("Cardiology", "심부전", ["q3", "q4"])])
+        self.assertEqual(q["counts"]["wrong_objectives_with_note"], 1)
+
+    def test_correct_answers_do_not_queue(self):
+        e = [right("e1", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20")]
+        q = self.cq.build(e)
+        self.assertEqual((q["note"], q["link"]), ([], []))
+
+
+class NewQuestionsNeedObjective(unittest.TestCase):
+    def _doc(self, date):
+        from frontmatter import Doc
+        return Doc(path=Path("x.md"), body="", meta={"type": "kmle", "date": date, "id": "kmle-2026-9999",
+                                                     "topic": "t", "confidence": "high", "answer_separated": True,
+                                                     "stem": "x", "choices": ["A. a", "B. b"], "answer": "A"})
+
+    def test_warn_only_after_cutoff(self):
+        import lint_questions as L
+        from concepts import OBJECTIVE_REQUIRED_FROM
+        codes = lambda d: [f.code for f in L.lint_doc(d)]
+        self.assertIn("objective-missing", codes(self._doc(OBJECTIVE_REQUIRED_FROM)))
+        self.assertNotIn("objective-missing", codes(self._doc("2026-09-18")))   # 옛 문항은 막지 않는다
+        d = self._doc(OBJECTIVE_REQUIRED_FROM)
+        d.meta["objective"] = "cn.x.y.z"
+        self.assertNotIn("objective-missing", codes(d))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)
