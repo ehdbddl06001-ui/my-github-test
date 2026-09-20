@@ -1,20 +1,10 @@
 {
  "generated": "",
  "note": [],
- "link": [
-  {
-   "topic": "Cardiology",
-   "subtopic": "Heart Failure",
-   "questions": [
-    "kmle-2026-0001"
-   ],
-   "wrongs": 1,
-   "priority": 2
-  }
- ],
+ "link": [],
  "counts": {
   "note": 0,
-  "link": 1,
-  "wrong_objectives_with_note": 3
+  "link": 0,
+  "wrong_objectives_with_note": 1
  }
 }
