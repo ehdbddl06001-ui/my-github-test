@@ -9,7 +9,7 @@
   "checked_at": "2026-09-21",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1016/j.jacc.2012.07.046": {
   "concepts": [
@@ -18,7 +18,7 @@
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]"
@@ -33,16 +33,16 @@
   "checked_at": "2026-09-21",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1093/eurheartj/eht089": {
   "concepts": [
    "cn.cardio.long-qt-syndrome.first-line-drug"
   ],
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]"
@@ -52,9 +52,9 @@
    "cn.cardio.long-qt-syndrome.first-line-drug"
   ],
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
   "baseline": "[\"ErratumIn:30354425\"]"
@@ -68,8 +68,8 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-21",
   "baseline": "[]",
-  "status": "failed",
-  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
+  "status": "ok",
+  "note": "기준 지문과 같음"
  },
  "10.1542/peds.2010-3318": {
   "concepts": [
@@ -80,8 +80,8 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-21",
   "baseline": "[]",
-  "status": "failed",
-  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
+  "status": "ok",
+  "note": "기준 지문과 같음"
  },
  "10.3390/jof1010013": {
   "concepts": [
@@ -92,8 +92,8 @@
   "fingerprint": "[]",
   "checked_at": "2026-09-21",
   "baseline": "[]",
-  "status": "failed",
-  "note": "확인 실패(HTTPError: HTTP Error 429: Too Many Requests) — 업데이트 확인 필요"
+  "status": "ok",
+  "note": "기준 지문과 같음"
  },
  "harrison-21": {
   "concepts": [
@@ -106,7 +106,7 @@
   "checked_at": "2026-09-21",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults": {
   "concepts": [
@@ -118,6 +118,6 @@
   "checked_at": "2026-09-21",
   "baseline": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  }
 }
