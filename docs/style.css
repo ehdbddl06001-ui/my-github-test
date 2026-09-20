@@ -439,7 +439,7 @@ button.small{padding:6px 10px; font-size:.85rem}
 /* 원리·비교 해설: 문단 사이를 띄우고, (1)·(2)… 나열 항목은 줄마다 — 2026-09-19 */
 .deep-body .dp{margin:0 0 10px}
 .deep-body .dp:last-child{margin-bottom:0}
-.explanation .enum{font-weight:700; color:#8fb3ff; margin-right:2px}
+.explanation .enum{font-weight:700; color:#8fb3ff; margin-right:2px; display:inline-block; margin-top:.35em}
 
 /* 좁은 화면(핸드폰): 검사 소견 표를 줄 단위로 편다 — 3열 고정이면 첫 칸이 글자 단위로 쪼개진다.
    글씨를 줄이는 대신 폭을 다 쓰게 한다(2026-09-20 사용자 요청). */
@@ -457,4 +457,20 @@ button.small{padding:6px 10px; font-size:.85rem}
   /* 부록 가이드라인: 고정폭 글꼴은 한글이 띄엄띄엄 보인다 — 좁은 화면에서는 본문 글꼴로 */
   .guide-table{font-family:inherit; font-size:.86rem; line-height:1.5; padding:10px}
   .databox{padding:10px 12px}
+}
+
+/* 한글은 낱말 단위로 줄을 바꾼다 — 「시간 단/위」처럼 낱말 중간에서 잘리지 않게(2026-09-20 사용자 요청).
+   긴 영문·URL 은 그대로 두면 넘치므로 필요할 때만 끊는다. */
+body{word-break:keep-all; overflow-wrap:break-word}
+.vignette,.question,.opt,.explanation,.learn,.concept,.cn-body{text-wrap:pretty}
+
+/* 좁은 화면: 여백을 줄여 한 줄에 들어가는 글자를 늘리고, 줄 간격을 넓혀 읽기 쉽게 */
+@media (max-width: 600px){
+  .card{margin:10px 8px; padding:12px}
+  .vignette{padding:12px; line-height:1.62}
+  .question{font-size:1.02rem; line-height:1.52; margin:14px 0 10px}
+  .opt{padding:11px 12px}
+  .explanation{padding:12px}
+  .explanation .expl-item{margin:12px 0; line-height:1.62}
+  .deep-body .dp{margin-bottom:12px}
 }
