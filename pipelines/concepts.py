@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import html
 import re
+from functools import lru_cache
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -128,6 +129,26 @@ def safe_url(u: Any) -> str:
 
 
 # ── 계약 검사 ───────────────────────────────────────────────────────
+@lru_cache(maxsize=1)
+def _outline_index() -> dict:
+    """기본틀 슬롯 {id: Slot}. 파일이 없거나 깨져도 정리본 검사를 멈추지 않는다."""
+    try:
+        import outline as _ol
+        return _ol.index(_ol.load()[0])
+    except Exception:
+        return {}
+
+
+@lru_cache(maxsize=1)
+def _book_map() -> dict:
+    try:
+        import yaml
+        cfg = yaml.safe_load((ROOT / "pipelines" / "books_config.yaml").read_text(encoding="utf-8")) or {}
+        return dict(cfg.get("books") or {})
+    except Exception:
+        return {}
+
+
 def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str]:
     errs: list[str] = []
     cid = str(meta.get("id", ""))
@@ -143,6 +164,21 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
     v = meta.get("version")
     if not isinstance(v, int) or v < 1:
         errs.append("version 은 1 이상의 정수(내용을 바꾸면 올린다)")
+    slot = meta.get("outline")
+    if slot is not None and not isinstance(slot, str):
+        errs.append("outline 은 기본틀 슬롯 id(문자열)")
+    elif not slot:
+        errs.append("[WARN] outline(기본틀 슬롯)이 없다 — 책 맨 뒤 「배치 대기」로 간다. "
+                    "`python pipelines/outline.py --book <과> --gaps` 로 자리를 고른다")
+    else:
+        idx = _outline_index()
+        sl = idx.get(slot)
+        if idx and not sl:
+            errs.append(f"outline '{slot}' 가 기본틀에 없다 — `python pipelines/outline.py --find <말>` 로 찾는다")
+        elif sl:
+            want = _book_map().get(str(meta.get("topic") or ""))
+            if want and sl.book != want:
+                errs.append(f"[WARN] outline '{slot}' 는 {sl.book} 의 자리인데 이 정리본의 과는 {want} 다")
     rs = meta.get("review_status")
     if rs not in ("unreviewed", "reviewed", "needs_revision"):
         errs.append("review_status 는 unreviewed/reviewed/needs_revision")

@@ -41,6 +41,7 @@ import yaml
 
 import decision_diagram as dd
 import learning_log as ll
+import outline as ol
 from concepts import BASIS, linked_questions, load_concepts, load_questions, render_cites, safe_url, source_numbers
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +86,8 @@ class Unit:
     questions: list[str]
     title: str = ""
     flags: list[str] = field(default_factory=list)   # 출처 개정 확인 필요 등
+    slot: str = ""                # 기본틀(content/outline/subjects.yaml)의 슬롯 id — 책 안의 자리
+    group: str = ""               # 그 슬롯이 속한 묶음(해리슨 절 이름 등) — 차례의 중간 머리글
 
     @property
     def anchor(self) -> str:
@@ -130,7 +133,8 @@ def plan(concepts: dict, questions: dict, S: dict[str, ll.State], cfg: dict, sou
             else:
                 name = book_of(q0.get("topic"), cfg)
                 title = str(q0.get("subtopic") or q0.get("topic") or "정리본 준비 중")
-            u = Unit(key=s.objective, book=name, concept=c, state=s, questions=links.get(s.objective, list(s.qids)), title=title)
+            u = Unit(key=s.objective, book=name, concept=c, state=s, questions=links.get(s.objective, list(s.qids)), title=title,
+                     slot=str((c or {}).get("outline") or ""))
             if c:
                 for src in c.get("sources") or []:
                     st = source_state.get(source_key(src)) or {}
@@ -140,8 +144,12 @@ def plan(concepts: dict, questions: dict, S: dict[str, ll.State], cfg: dict, sou
         else:
             q = questions.get(key[2:], {})
             books.setdefault(book_of(q.get("topic"), cfg), Book(book_of(q.get("topic"), cfg))).pending.append((s, q))
+    # 단원 순서 = 기본틀(해리슨 서술 순서). 배치되지 않은 단원은 맨 뒤에 제목순으로 남는다.
+    slots = ol.index(ol.load()[0])
     for b in books.values():
-        b.units.sort(key=lambda u: (u.title, u.key))
+        for u in b.units:
+            u.group = (slots.get(u.slot).part if slots.get(u.slot) else "") or ""
+        b.units.sort(key=lambda u: (*ol.order_key(u.slot, slots), u.title, u.key))
     return {k: b for k, b in books.items() if b.units}      # 정리본 단원이 없는 책은 만들지 않는다
 
 
@@ -239,6 +247,7 @@ a{color:#0b57d0; text-decoration:none}
 .toc li{display:flex; gap:2mm; break-inside:avoid; border-bottom:0.3pt dotted #c8d0dc; padding:0.5mm 0}
 .toc a{flex:1}
 .toc .pg{flex:0 0 9mm; text-align:right}
+.toc li.grp{display:block; border:0; margin:1.2mm 0 0.3mm; font-size:8.8pt; color:#4a5768; font-weight:700}
 .legend{font-size:8.6pt; color:#4a5566; margin:0 0 3mm}
 .uh{border-top:1.4pt solid #1b2430; margin-top:4mm; padding-top:1.5mm; margin-bottom:1.5mm; break-after:avoid}
 .uh h2{font-size:14.5pt; line-height:1.28; margin:0}
@@ -521,7 +530,12 @@ def book_html(title: str, units: list[Unit], cfg: dict, questions: dict, meta: d
                              bool((dia_pos or {}).get(u.anchor + "#crit_end")))
         bodies.append(uh); infos[u.anchor] = info
     pg = lambda k: str(pagemap.get(k, "")) if pagemap else "…"
-    toc = "".join(f'<li><a href="#{u.anchor}">{esc(u.title)}</a><span class="pg">{pg(u.anchor)}</span></li>' for u in units)
+    toc, grp = "", ""
+    for u in units:
+        if u.group and u.group != grp:                       # 해리슨 절 이름을 차례의 중간 머리글로
+            grp = u.group
+            toc += f'<li class="grp">{esc(grp)}</li>'
+        toc += f'<li><a href="#{u.anchor}">{esc(u.title)}</a><span class="pg">{pg(u.anchor)}</span></li>'
     h = [f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{esc(title)} — {esc(cfg["title"])} 판 {meta["version"]}</title>'
          f"<style>{css(fonts)}</style></head><body><main class=\"cols\">",
          f'<div class="span"><div class="bookhead"><h1>{esc(title)}</h1><span class="bm">{esc(cfg["title"])} · 판 {meta["version"]} · {esc(meta["date"])}</span></div>'

@@ -141,6 +141,13 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   A4 가로 2단, 넓은 표·큰 도식만 두 단 전체, 강제 쪽 나눔 없음. `build_books.py` 가 렌더 뒤 빈 단·고립 제목·도식 크기를
   검사하고, 빈 공간이 생기면 도식·기준표 위치를 바꿔 다시 렌더한다. 판형을 바꾸면 `books_config.yaml template_version` 을 올린다.
   PDF 에 실리지 않는 학습 기록(메모·열람)만 바뀌면 책을 다시 만들지 않는다.
+- **단원 순서 = 기본틀(2026-09-21)**: `content/outline/subjects.yaml` 이 과마다 「어떤 순서로 쌓일지」를 정한다.
+  순서의 뼈대는 해리슨 21판 목차 `content/outline/harrison_toc.json`(`harrison_toc.py` 가 PDF 에서 한 번 뽑았다 —
+  **순서를 정하려고 교과서를 다시 열지 않는다**). 정리본은 frontmatter `outline: <슬롯 id>` 로 자리를 밝히고,
+  `build_books.py` 가 그 순서로 정렬하며 차례에 해리슨 절 이름을 머리글로 넣는다. 비우면 맨 뒤 「배치 대기」(WARN).
+  해리슨의 한 장은 **한 과에만** 넣는다(`outline.py` 가 빠진 장·중복을 검사). 해리슨에 없는 과(산부인과·소아과·외과·
+  정형외과·비뇨·예방의학·기초의학)는 손으로 적은 슬롯을 쓴다. 근거를 확인할 때는 `harrison_read.py --slot <id>` 로
+  **그 장만** 읽고 인쇄쪽을 인용한다(본문은 저장소에 저장하지 않는다).
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

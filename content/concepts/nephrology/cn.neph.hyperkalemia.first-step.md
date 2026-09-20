@@ -6,6 +6,7 @@ see_also: [Cardiology, Emergency Medicine]
 date: 2026-09-18
 updated: 2026-09-18
 version: 2
+outline: h53            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
 title: "고칼륨혈증 — 생리에서 첫 처치·재평가까지"
