@@ -40,6 +40,22 @@ python pipelines/outline.py --find "arrhythmia"          # 슬롯·해리슨 장
 - 적을 자리가 마땅치 않으면 `content/outline/subjects.yaml` 에 슬롯을 **추가**한다(해리슨 장은 한 과에만).
 - 비워 두면 책 맨 뒤 「배치 대기」로 가고 린터가 WARN 을 낸다.
 
+## 대조 — 해리슨이 기본이다(2026-09-22)
+
+정리본을 다 쓴 뒤 **그 슬롯의 해리슨 장을 읽고** 핵심 서술(기전·기준·치료 선택·금기)을 하나씩 대조한다.
+```
+python pipelines/outline.py --harrison <슬롯>     # 대조할 장 · 인쇄쪽 · 드라이브 문서 ID
+```
+- **클라우드 루틴**: 출력에 드라이브 문서 ID 가 있으면 Google Drive 커넥터 `read_file_content(fileId)` 로 **그 문서만** 읽는다
+  (`===== [H21 p.N] =====` 뒤가 인쇄쪽 N). 원본 PDF(434 MB)는 읽지 않는다.
+- **PC**: `python pipelines/harrison_read.py --slot <슬롯> --grep <말>` 로 원본에서 그 장만.
+- 해리슨과 맞는 서술에 `[[harrison-21: <장>장 p.<쪽>]]`, 출처에 `harrison-21`(kind textbook · `verified: text` ·
+  `checked` 에 무엇을 몇 쪽에서 확인했는지)을 단다. 해리슨과 **다르면** 고치거나 차이를 본문에 밝힌다(합치지 않는다).
+- 해리슨에 없는 서술(지침 세부 수치·최신 약제 등)은 다른 출처로 남기고, 원문을 못 봤으면 `[[?출처]]` 그대로 둔다.
+- 드라이브 문서가 없으면 대조하지 않은 채로 둔다 — 린터가 「해리슨 대조 없음」 WARN 을 남기고,
+  다음 PC 세션에서 `python pipelines/harrison_split.py --needed` 로 그 장을 올린 뒤 대조한다.
+- 해리슨이 다루지 않는 슬롯(산부인과·소아과 손 슬롯 등)은 대조 대상이 아니다(`--harrison` 이 알려 준다).
+
 ## 해리슨을 읽어야 할 때 — 그 장만 읽는다
 
 ```

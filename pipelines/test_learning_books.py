@@ -609,6 +609,15 @@ class OutlineFrame(unittest.TestCase):
         self.assertTrue(any("[WARN]" in e and "outline" in e for e in errs))
         self.assertFalse([e for e in errs if "[WARN]" not in e])
 
+    def test_harrison_check_is_the_default(self):
+        base, _ = C.load_concepts()
+        c = copy.deepcopy(base["cn.derm.pityriasis-versicolor.treatment"])            # 슬롯 h57(해리슨 57장)
+        self.assertFalse([e for e in C.validate_concept(c) if "해리슨 대조 없음" in e])
+        c["sources"] = [x for x in c["sources"] if not str(x.get("id", "")).startswith("harrison")]
+        self.assertTrue([e for e in C.validate_concept(c) if "[WARN]" in e and "해리슨 대조 없음" in e])
+        peds = copy.deepcopy(base["cn.peds.febrile-seizure.workup"])                  # 손 슬롯 — 해리슨 대상 아님
+        self.assertFalse([e for e in C.validate_concept(peds) if "해리슨 대조 없음" in e])
+
     def test_gap_queue_continues_after_the_last_written_slot(self):
         base, _ = C.load_concepts()
         c = copy.deepcopy(base["cn.neph.hyperkalemia.first-step"])                      # outline h53

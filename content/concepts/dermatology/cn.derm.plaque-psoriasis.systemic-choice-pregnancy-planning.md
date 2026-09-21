@@ -70,7 +70,7 @@ criteria:
     name: 전신 스테로이드
     kind: 금기
     population: "판상건선"
-    statement: "중단 시 반동·농포성/홍피성 악화 위험 때문에 판상건선의 치료로 쓰지 않는다"
+    statement: "중단 시 반동·농포성/홍피성 악화 위험 때문에 판상건선의 치료로 쓰지 않는다 [[harrison-21: 57장 p.378]]"
     exceptions: "다른 적응(예: 동반 질환)으로 불가피하게 쓰면 서서히 줄인다"
     source: fitzpatrick-9e
     basis: current
@@ -85,6 +85,15 @@ criteria:
     basis: current
     exams: [kmle, usmle]
 sources:
+  - id: harrison-21
+    org: "McGraw Hill"
+    title: "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 57: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders"
+    kind: textbook
+    year: 2022
+    citation: "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 57장 p.377–379 (Psoriasis · Table 57-3 · Table 57-4)"
+    checked_at: 2026-09-22
+    checked: "본문 대조(PC, 드라이브 원본 PDF 57장 p.378·Table 57-3) — 경구 글루코코르티코이드는 중단 시 생명을 위협하는 농포성 건선 위험으로 쓰지 않는다 · 메토트렉세이트·아시트레틴의 기형 유발(아시트레틴은 이 때문에 사용이 제한) · 사이클로스포린의 신기능 저하·고혈압 · 사이클로스포린 투여 중 UV 치료 금기 · 임신·전신 스테로이드 중단이 농포성 건선을 유발할 수 있고 경구 레티노이드는 비임신 환자에서만 1차 · 면역억제제는 결핵·HIV·B/C형 간염 등 중증 감염이 있으면 시작하지 않고 결핵 선별 · TNF 억제제는 심부전 악화 주의. 좁은파장 UVB 의 임신 중 안전성·엽산, 세르톨리주맙의 태반 이행은 해리슨에 서술이 없다(지침 본문 대조 필요)"
+    verified: text
   - id: elmets-2019
     org: "American Academy of Dermatology · National Psoriasis Foundation (공동 지침)"
     title: "Joint American Academy of Dermatology–National Psoriasis Foundation guidelines of care for the management and treatment of psoriasis with phototherapy"
@@ -95,7 +104,7 @@ sources:
     pmid: "31351884"
     url: "https://doi.org/10.1016/j.jaad.2019.04.042"
     checked_at: 2026-09-22
-    checked: "서지만 확인(루틴 컨테이너의 네트워크가 PubMed·doi.org 를 차단해 초록·본문 대조 못 함 — 검토 항목). 좁은파장 UVB 임신 안전·엽산 권고 문구는 문항 kmle-2026-1098 해설과 일치 여부만 대조"
+    checked: "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)"
     verified: citation
   - id: menter-2020
     org: "American Academy of Dermatology · National Psoriasis Foundation (공동 지침)"
@@ -107,7 +116,7 @@ sources:
     pmid: "32119894"
     url: "https://doi.org/10.1016/j.jaad.2020.02.044"
     checked_at: 2026-09-22
-    checked: "서지만 확인(네트워크 차단으로 초록·본문 대조 못 함 — 검토 항목). 메토트렉세이트·아시트레틴·사이클로스포린 금기 문구는 본문 대조 전"
+    checked: "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)"
     verified: citation
   - id: menter-2019-bio
     org: "American Academy of Dermatology · National Psoriasis Foundation (공동 지침)"
@@ -119,7 +128,7 @@ sources:
     pmid: "30772098"
     url: "https://doi.org/10.1016/j.jaad.2018.11.057"
     checked_at: 2026-09-22
-    checked: "서지만 확인(네트워크 차단으로 초록·본문 대조 못 함 — 검토 항목). 세르톨리주맙 태반 이행·결핵/B형간염 선별 문구는 본문 대조 전"
+    checked: "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)"
     verified: citation
   - id: fitzpatrick-9e
     org: "Kang S 외 (편). Fitzpatrick's Dermatology"
@@ -138,12 +147,12 @@ tables:
     columns: ["치료", "장점", "지우는 조건", "감시·주의"]
     rows:
       - ["좁은파장 UVB(311 nm)", "임신·수유·소아·간·신 질환에도 안전, 전신 부작용 없음 [[?elmets-2019]]", "광민감 약물, 피부암·광선 질환 병력, 주 2–3회 통원 불가", "홍반·광노화, 엽산 저하(보충 고려)"]
-      - ["메토트렉세이트", "값싸고 건선관절염에도 효과", "임신·임신 계획·수유, 간질환·과음, 신부전, 골수억제 [[?menter-2020]]", "간기능·혈구, 엽산 병용, 중단 후 피임"]
-      - ["아시트레틴", "농포성·손발 건선, 면역억제 없음", "가임기 여성(중단 후 2–3년 피임), 음주, 고지질혈증 [[?menter-2020]]", "지질·간기능, 점막 건조"]
-      - ["사이클로스포린", "가장 빠른 효과, 임신 중 사용 가능", "조절 안 되는 고혈압, 신기능 저하, 악성종양 병력 [[?menter-2020]]", "혈압·크레아티닌, 단기(≤ 1년) 원칙"]
+      - ["메토트렉세이트", "값싸고 건선관절염에도 효과", "임신·임신 계획·수유, 간질환·과음, 신부전, 골수억제 [[harrison-21: 표 57-3]] [[?menter-2020]]", "간기능·혈구, 엽산 병용, 중단 후 피임"]
+      - ["아시트레틴", "농포성·손발 건선, 면역억제 없음", "가임기 여성(중단 후 2–3년 피임), 음주, 고지질혈증 [[harrison-21: 57장 p.378·표 57-3]] [[?menter-2020]]", "지질·간기능, 점막 건조"]
+      - ["사이클로스포린", "가장 빠른 효과, 임신 중 사용 가능", "조절 안 되는 고혈압, 신기능 저하, 악성종양 병력 [[harrison-21: 표 57-3]] [[?menter-2020]]", "혈압·크레아티닌, 단기(≤ 1년) 원칙"]
       - ["아프레밀라스트(PDE4)", "감시 검사 부담 적음", "효과 중등, 임신 자료 부족", "설사·체중 감소·우울"]
-      - ["생물학제(TNF·IL-17·IL-23)", "가장 높은 관해율, 관절염 동반 시 유리", "결핵·B형간염 미선별, 활동성 감염; 임신 계획 시 세르톨리주맙 외에는 자료 제한 [[?menter-2019-bio]]", "감염 감시, 결핵 선별"]
-      - ["전신 스테로이드", "—", "판상건선 자체가 지우는 조건(반동·농포성 악화) [[?fitzpatrick-9e]]", "쓰지 않는다"]
+      - ["생물학제(TNF·IL-17·IL-23)", "가장 높은 관해율, 관절염 동반 시 유리", "결핵·B형간염 미선별, 활동성 감염; 임신 계획 시 세르톨리주맙 외에는 자료 제한 [[?menter-2019-bio]] [[harrison-21: 57장 p.378]]", "감염 감시, 결핵 선별"]
+      - ["전신 스테로이드", "—", "판상건선 자체가 지우는 조건(반동·농포성 악화) [[harrison-21: 57장 p.378]] [[?fitzpatrick-9e]]", "쓰지 않는다"]
     note: "치료를 고르는 순서 = ① 전신치료 대상인가 → ② 환자 조건이 지우는 약을 빼고 → ③ 남은 것 가운데 관절염·속도·접근성으로 고른다."
 pitfalls:
   - contrast: "메토트렉세이트 vs 광선치료 — 「전신치료가 필요하니 경구제」"

@@ -179,6 +179,11 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
             want = _book_map().get(str(meta.get("topic") or ""))
             if want and sl.book != want:
                 errs.append(f"[WARN] outline '{slot}' 는 {sl.book} 의 자리인데 이 정리본의 과는 {want} 다")
+            # 해리슨 대조가 기본이다(2026-09-22 사용자 지시) — 그 장을 읽고 확인한 흔적이 없으면 알린다
+            if sl.chapters and not any(str(x.get("id", "")).startswith("harrison") and x.get("verified") == "text"
+                                       for x in meta.get("sources") or [] if isinstance(x, dict)):
+                errs.append(f"[WARN] 해리슨 대조 없음 — 슬롯 {slot} = 해리슨 {', '.join(map(str, sl.chapters))}장. "
+                            f"그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다")
     rs = meta.get("review_status")
     if rs not in ("unreviewed", "reviewed", "needs_revision"):
         errs.append("review_status 는 unreviewed/reviewed/needs_revision")

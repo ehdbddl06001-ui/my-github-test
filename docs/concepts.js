@@ -1155,7 +1155,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-18",
   "reviewStatus": "unreviewed",
-  "hash": "b99edb3befeaafba",
+  "hash": "6ab89e1274efe0d0",
   "summary": [
    "진단 단서: 몸통 위쪽의 비늘 있는 저·과색소 반점 + KOH 에서 짧은 균사와 둥근 포자 무리(말라세지아).",
    "치료는 「진단」이 아니라 「범위·재발」로 갈린다: 국한·첫 발병 → 국소 항진균제, 광범위·재발·국소 실패 → 경구 이트라코나졸·플루코나졸.",
@@ -1218,7 +1218,7 @@ window.MEDKOS_CONCEPTS = {
     "name": "1차 치료",
     "kind": "치료 권고",
     "population": "국한된 어루러기",
-    "statement": "국소 항진균제(케토코나졸 등 아졸, 징크 피리치온, 테르비나핀 국소제)가 1차",
+    "statement": "국소 항진균제(케토코나졸 등 아졸, 징크 피리치온, 테르비나핀 국소제)가 1차 — 해리슨도 셀레늄 설파이드·아졸 국소제를 1–2주 매일, 이후 주 1회로 제시한다 [[harrison-21: 57장 p.381]]",
     "exceptions": "광범위·재발·국소 치료 실패는 경구 아졸 고려",
     "source": "gupta-2015",
     "basis": "current",
@@ -1232,7 +1232,7 @@ window.MEDKOS_CONCEPTS = {
     "name": "경구 치료",
     "kind": "치료 권고",
     "population": "중증·난치 어루러기",
-    "statement": "경구 이트라코나졸 또는 플루코나졸. 경구 테르비나핀은 효과가 없고 경구 케토코나졸은 더 이상 처방하지 않는다",
+    "statement": "경구 이트라코나졸 또는 플루코나졸. 경구 테르비나핀은 효과가 없고 경구 케토코나졸은 간독성으로 더 이상 1차로 쓰지 않는다 [[harrison-21: 57장 p.380–381]]. 해리슨은 경구제가 효과는 있으나 오래가지 않는다고 적는다 [[harrison-21: 57장 p.381]]",
     "exceptions": "용량·기간은 이 정리본에서 대조하지 않았다(검토 항목)",
     "source": "gupta-2015",
     "basis": "current",
@@ -1257,6 +1257,20 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 57: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 57장 p.380–381 (Table 57-5 · Tinea (Pityriasis) Versicolor)",
+    "checked": "본문 대조(PC, 드라이브 원본 PDF 57장 p.380–381) — 원인 Malassezia furfur(피부 상재균, 고온다습에서 발현) · 가슴·어깨·등의 인설 반, 피부색에 따라 저·과색소 · KOH 에서 짧은 균사+둥근 포자(spaghetti and meatballs) · 치료는 국소 셀레늄 설파이드·아졸(유황·살리실산·셀레늄 설파이드 로션/샴푸 1–2주 매일 뒤 주 1회), 10분 넘게 두면 자극 · 경구 항진균제도 효과는 있으나 효과가 오래가지 않고 FDA 적응증이 아니다 · 경구 케토코나졸은 간독성으로 FDA 가 1차 사용을 제한. 색소 회복 기간·경구 이트라코나졸/플루코나졸 용량은 해리슨에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-22",
+    "url": ""
+   },
    {
     "id": "gupta-2015",
     "org": "Gupta AK, Foley KA (체계적 문헌고찰)",
@@ -1955,7 +1969,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-22",
   "reviewStatus": "unreviewed",
-  "hash": "300a71da9819613d",
+  "hash": "17667642ed4f2801",
   "summary": [
    "전신치료 대상: 체표면적 > 10 %(또는 PASI > 10), 손·발·얼굴·음부·손톱 침범, 국소치료 실패, 삶의 질 저하.",
    "치료 후보는 네 층 — 좁은파장 UVB 광선치료 · 경구 전신제(메토트렉세이트·아시트레틴·사이클로스포린·아프레밀라스트) · 생물학제 · (전신 스테로이드는 판상건선에 쓰지 않음).",
@@ -1977,12 +1991,12 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "소견·중증도 판정",
     "deep": false,
-    "html": "<ul>\n<li>체표면적: 환자 손바닥 하나 ≈ 1 %. <strong>&gt; 10 %</strong> 는 중증 <sup>[2†]</sup>. 3–10 % 는 중등증으로 두는 지침이 많으나 경계는 지침마다 다르다.</li>\n<li>특수 부위(손·발·얼굴·음부·손톱)와 삶의 질 저하는 면적이 작아도 전신치료 대상으로 올린다.</li>\n<li>건선관절염 선별: 관절통·손가락 전체 부종·손톱 점상 함몰·발뒤꿈치 통증. 있으면 치료 층이 바뀐다.</li>\n<li>전신치료 전 검사: 혈구·간·신기능, B형·C형간염, (생물학제) 결핵 선별, 가임기 여성은 임신반응 — 이 검사들이 「어떤 약을 지울지」를 정한다.</li>\n</ul>"
+    "html": "<ul>\n<li>체표면적: 환자 손바닥 하나 ≈ 1 %. <strong>&gt; 10 %</strong> 는 중증 <sup>[3†]</sup>. 3–10 % 는 중등증으로 두는 지침이 많으나 경계는 지침마다 다르다.</li>\n<li>특수 부위(손·발·얼굴·음부·손톱)와 삶의 질 저하는 면적이 작아도 전신치료 대상으로 올린다.</li>\n<li>건선관절염 선별: 관절통·손가락 전체 부종·손톱 점상 함몰·발뒤꿈치 통증. 있으면 치료 층이 바뀐다.</li>\n<li>전신치료 전 검사: 혈구·간·신기능, B형·C형간염, (생물학제) 결핵 선별, 가임기 여성은 임신반응 — 이 검사들이 「어떤 약을 지울지」를 정한다.</li>\n</ul>"
    },
    {
     "title": "치료 선택 — 후보에서 지워 나가기",
     "deep": false,
-    "html": "<ol>\n<li><strong>전신치료 대상인가</strong>(체표면적 &gt; 10 %, 특수 부위, 국소 실패, 삶의 질).</li>\n<li><strong>환자 조건이 지우는 약을 뺀다</strong></li>\n<li>임신·임신 계획·수유 → 메토트렉세이트(기형·유산, 중단 후 피임) <sup>[2†]</sup> · 아시트레틴(2–3년 피임) <sup>[2†]</sup> 제외.</li>\n<li>조절되지 않는 고혈압·신기능 저하 → 사이클로스포린 제외 <sup>[2†]</sup>.</li>\n<li>간질환·과음 → 메토트렉세이트 제외; 결핵·B형간염 미선별 → 생물학제 보류 <sup>[3†]</sup>.</li>\n<li>전신 스테로이드는 조건과 무관하게 처음부터 후보가 아니다(반동·농포성 악화) <sup>[4†]</sup>.</li>\n<li><strong>남은 것 가운데 고른다</strong>: 임신 계획이면 좁은파장 UVB 가 첫 선택(엽산 보충) <sup>[1†]</sup>; 광선치료가 불가능하면 단기 사이클로스포린(혈압 정상일 때) 또는 세르톨리주맙; 관절염이 있으면 관절 보호 약(메토트렉세이트·TNF/IL-17 억제제)을 먼저.</li>\n</ol>"
+    "html": "<ol>\n<li><strong>전신치료 대상인가</strong>(체표면적 &gt; 10 %, 특수 부위, 국소 실패, 삶의 질).</li>\n<li><strong>환자 조건이 지우는 약을 뺀다</strong></li>\n<li>임신·임신 계획·수유 → 메토트렉세이트(기형·유산, 중단 후 피임) <sup>[3†]</sup> · 아시트레틴(2–3년 피임) <sup>[3†]</sup> 제외.</li>\n<li>조절되지 않는 고혈압·신기능 저하 → 사이클로스포린 제외 <sup>[3†]</sup>.</li>\n<li>간질환·과음 → 메토트렉세이트 제외; 결핵·B형간염 미선별 → 생물학제 보류 <sup>[4†]</sup>.</li>\n<li>전신 스테로이드는 조건과 무관하게 처음부터 후보가 아니다(반동·농포성 악화) <sup>[5†]</sup>.</li>\n<li><strong>남은 것 가운데 고른다</strong>: 임신 계획이면 좁은파장 UVB 가 첫 선택(엽산 보충) <sup>[2†]</sup>; 광선치료가 불가능하면 단기 사이클로스포린(혈압 정상일 때) 또는 세르톨리주맙; 관절염이 있으면 관절 보호 약(메토트렉세이트·TNF/IL-17 억제제)을 먼저.</li>\n</ol>"
    },
    {
     "title": "반응 확인·재평가",
@@ -1997,7 +2011,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "왜 생물학제를 바로 쓰지 않나",
     "deep": true,
-    "html": "<p>생물학제가 관해율은 가장 높지만, 이 사례처럼 관절염이 없고 광선치료가 가능한 환자에서는 감염 위험·결핵/B형간염 선별·비용을 감수할 이유가 적다. 임신 계획 여성에서 생물학제를 써야 한다면 Fc 부위가 없어 태반을 거의 넘지 않는 세르톨리주맙이 선호되고, IL-17·IL-23 억제제는 임신 자료가 제한적이다 <sup>[3†]</sup>.</p>"
+    "html": "<p>생물학제가 관해율은 가장 높지만, 이 사례처럼 관절염이 없고 광선치료가 가능한 환자에서는 감염 위험·결핵/B형간염 선별·비용을 감수할 이유가 적다. 임신 계획 여성에서 생물학제를 써야 한다면 Fc 부위가 없어 태반을 거의 넘지 않는 세르톨리주맙이 선호되고, IL-17·IL-23 억제제는 임신 자료가 제한적이다 <sup>[4†]</sup>.</p>"
    }
   ],
   "tables": [
@@ -2012,26 +2026,26 @@ window.MEDKOS_CONCEPTS = {
     "rows": [
      [
       "좁은파장 UVB(311 nm)",
-      "임신·수유·소아·간·신 질환에도 안전, 전신 부작용 없음 <sup>[1†]</sup>",
+      "임신·수유·소아·간·신 질환에도 안전, 전신 부작용 없음 <sup>[2†]</sup>",
       "광민감 약물, 피부암·광선 질환 병력, 주 2–3회 통원 불가",
       "홍반·광노화, 엽산 저하(보충 고려)"
      ],
      [
       "메토트렉세이트",
       "값싸고 건선관절염에도 효과",
-      "임신·임신 계획·수유, 간질환·과음, 신부전, 골수억제 <sup>[2†]</sup>",
+      "임신·임신 계획·수유, 간질환·과음, 신부전, 골수억제 <sup>[1 표 57-3]</sup> <sup>[3†]</sup>",
       "간기능·혈구, 엽산 병용, 중단 후 피임"
      ],
      [
       "아시트레틴",
       "농포성·손발 건선, 면역억제 없음",
-      "가임기 여성(중단 후 2–3년 피임), 음주, 고지질혈증 <sup>[2†]</sup>",
+      "가임기 여성(중단 후 2–3년 피임), 음주, 고지질혈증 <sup>[1 57장 p.378·표 57-3]</sup> <sup>[3†]</sup>",
       "지질·간기능, 점막 건조"
      ],
      [
       "사이클로스포린",
       "가장 빠른 효과, 임신 중 사용 가능",
-      "조절 안 되는 고혈압, 신기능 저하, 악성종양 병력 <sup>[2†]</sup>",
+      "조절 안 되는 고혈압, 신기능 저하, 악성종양 병력 <sup>[1 표 57-3]</sup> <sup>[3†]</sup>",
       "혈압·크레아티닌, 단기(≤ 1년) 원칙"
      ],
      [
@@ -2043,13 +2057,13 @@ window.MEDKOS_CONCEPTS = {
      [
       "생물학제(TNF·IL-17·IL-23)",
       "가장 높은 관해율, 관절염 동반 시 유리",
-      "결핵·B형간염 미선별, 활동성 감염; 임신 계획 시 세르톨리주맙 외에는 자료 제한 <sup>[3†]</sup>",
+      "결핵·B형간염 미선별, 활동성 감염; 임신 계획 시 세르톨리주맙 외에는 자료 제한 <sup>[4†]</sup> <sup>[1 57장 p.378]</sup>",
       "감염 감시, 결핵 선별"
      ],
      [
       "전신 스테로이드",
       "—",
-      "판상건선 자체가 지우는 조건(반동·농포성 악화) <sup>[4†]</sup>",
+      "판상건선 자체가 지우는 조건(반동·농포성 악화) <sup>[1 57장 p.378]</sup> <sup>[5†]</sup>",
       "쓰지 않는다"
      ]
     ],
@@ -2059,25 +2073,25 @@ window.MEDKOS_CONCEPTS = {
   "pitfalls": [
    {
     "contrast": "메토트렉세이트 vs 광선치료 — 「전신치료가 필요하니 경구제」",
-    "point": "전신치료의 첫 층은 경구제가 아니라 광선치료다. 임신을 계획하는 여성에게 메토트렉세이트는 기형·유산 위험으로 제외되고, 임신 여부와 무관하게도 좁은파장 UVB 가 경구제보다 먼저 올 수 있다 <sup>[2†]</sup>.",
+    "point": "전신치료의 첫 층은 경구제가 아니라 광선치료다. 임신을 계획하는 여성에게 메토트렉세이트는 기형·유산 위험으로 제외되고, 임신 여부와 무관하게도 좁은파장 UVB 가 경구제보다 먼저 올 수 있다 <sup>[3†]</sup>.",
     "exception": "건선관절염이 동반되면 관절 손상을 막기 위해 메토트렉세이트·생물학제가 광선치료보다 앞선다.",
     "cites": ""
    },
    {
     "contrast": "사이클로스포린 vs 광선치료 — 「임신 중 쓸 수 있는 경구제」",
-    "point": "사이클로스포린은 임신 중 사용이 가능한 경구제이지만 고혈압을 악화시키고 신독성이 있어, 항고혈압제를 먹는데도 조절되지 않는 고혈압 환자에서는 첫 선택이 아니다 <sup>[2†]</sup>.",
+    "point": "사이클로스포린은 임신 중 사용이 가능한 경구제이지만 고혈압을 악화시키고 신독성이 있어, 항고혈압제를 먹는데도 조절되지 않는 고혈압 환자에서는 첫 선택이 아니다 <sup>[3†]</sup>.",
     "exception": "혈압이 정상이고 광선치료를 받을 수 없거나 급속한 조절이 필요하면 임신 계획 중에도 단기 사이클로스포린을 고려한다.",
     "cites": ""
    },
    {
     "contrast": "아시트레틴 — 「면역억제가 없어 안전한 경구제」",
-    "point": "면역억제는 없지만 레티노이드라 기형 유발 위험이 크고 중단 뒤 2–3년 피임이 필요해 가임기 여성에게는 사실상 금기다 <sup>[2†]</sup>.",
+    "point": "면역억제는 없지만 레티노이드라 기형 유발 위험이 크고 중단 뒤 2–3년 피임이 필요해 가임기 여성에게는 사실상 금기다 <sup>[3†]</sup>.",
     "exception": "",
     "cites": ""
    },
    {
     "contrast": "전신 스테로이드 — 「염증성 피부질환이니 프레드니솔론」",
-    "point": "판상건선에 전신 스테로이드를 쓰면 중단 시 반동·농포성/홍피성 악화가 생길 수 있어 치료로 쓰지 않는다 <sup>[4†]</sup>.",
+    "point": "판상건선에 전신 스테로이드를 쓰면 중단 시 반동·농포성/홍피성 악화가 생길 수 있어 치료로 쓰지 않는다 <sup>[5†]</sup>.",
     "exception": "",
     "cites": ""
    }
@@ -2163,7 +2177,7 @@ window.MEDKOS_CONCEPTS = {
     "name": "전신 스테로이드",
     "kind": "금기",
     "population": "판상건선",
-    "statement": "중단 시 반동·농포성/홍피성 악화 위험 때문에 판상건선의 치료로 쓰지 않는다",
+    "statement": "중단 시 반동·농포성/홍피성 악화 위험 때문에 판상건선의 치료로 쓰지 않는다 [[harrison-21: 57장 p.378]]",
     "exceptions": "다른 적응(예: 동반 질환)으로 불가피하게 쓰면 서서히 줄인다",
     "source": "fitzpatrick-9e",
     "basis": "current",
@@ -2189,12 +2203,26 @@ window.MEDKOS_CONCEPTS = {
   ],
   "sources": [
    {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 57: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 57장 p.377–379 (Psoriasis · Table 57-3 · Table 57-4)",
+    "checked": "본문 대조(PC, 드라이브 원본 PDF 57장 p.378·Table 57-3) — 경구 글루코코르티코이드는 중단 시 생명을 위협하는 농포성 건선 위험으로 쓰지 않는다 · 메토트렉세이트·아시트레틴의 기형 유발(아시트레틴은 이 때문에 사용이 제한) · 사이클로스포린의 신기능 저하·고혈압 · 사이클로스포린 투여 중 UV 치료 금기 · 임신·전신 스테로이드 중단이 농포성 건선을 유발할 수 있고 경구 레티노이드는 비임신 환자에서만 1차 · 면역억제제는 결핵·HIV·B/C형 간염 등 중증 감염이 있으면 시작하지 않고 결핵 선별 · TNF 억제제는 심부전 악화 주의. 좁은파장 UVB 의 임신 중 안전성·엽산, 세르톨리주맙의 태반 이행은 해리슨에 서술이 없다(지침 본문 대조 필요)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-22",
+    "url": ""
+   },
+   {
     "id": "elmets-2019",
     "org": "American Academy of Dermatology · National Psoriasis Foundation (공동 지침)",
     "title": "Joint American Academy of Dermatology–National Psoriasis Foundation guidelines of care for the management and treatment of psoriasis with phototherapy",
     "kind": "guideline",
     "citation": "J Am Acad Dermatol 2019;81(3):775-804",
-    "checked": "서지만 확인(루틴 컨테이너의 네트워크가 PubMed·doi.org 를 차단해 초록·본문 대조 못 함 — 검토 항목). 좁은파장 UVB 임신 안전·엽산 권고 문구는 문항 kmle-2026-1098 해설과 일치 여부만 대조",
+    "checked": "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)",
     "doi": "10.1016/j.jaad.2019.04.042",
     "pmid": "31351884",
     "verified": "citation",
@@ -2208,7 +2236,7 @@ window.MEDKOS_CONCEPTS = {
     "title": "Joint AAD–NPF guidelines of care for the management of psoriasis with systemic nonbiologic therapies",
     "kind": "guideline",
     "citation": "J Am Acad Dermatol 2020;82(6):1445-1486",
-    "checked": "서지만 확인(네트워크 차단으로 초록·본문 대조 못 함 — 검토 항목). 메토트렉세이트·아시트레틴·사이클로스포린 금기 문구는 본문 대조 전",
+    "checked": "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)",
     "doi": "10.1016/j.jaad.2020.02.044",
     "pmid": "32119894",
     "verified": "citation",
@@ -2222,7 +2250,7 @@ window.MEDKOS_CONCEPTS = {
     "title": "Joint AAD–NPF guidelines of care for the management and treatment of psoriasis with biologics",
     "kind": "guideline",
     "citation": "J Am Acad Dermatol 2019;80(4):1029-1072",
-    "checked": "서지만 확인(네트워크 차단으로 초록·본문 대조 못 함 — 검토 항목). 세르톨리주맙 태반 이행·결핵/B형간염 선별 문구는 본문 대조 전",
+    "checked": "PubMed 서지 일치 확인(2026-09-22 PC 세션 — 제목·권·쪽·PMID). 초록은 지침 개요뿐이라 이 정리본의 세부 권고는 대조하지 못했다(본문 대조 필요)",
     "doi": "10.1016/j.jaad.2018.11.057",
     "pmid": "30772098",
     "verified": "citation",
