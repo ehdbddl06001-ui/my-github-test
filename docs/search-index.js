@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2676,
+  "total": 2686,
   "byType": {
    "usmle": 156,
    "concept": 5,
    "anatomy": 719,
    "kmle": 1067,
+   "imaging": 90,
    "paper": 632,
-   "imaging": 80,
    "ailab": 14,
    "basic": 3
   },
@@ -46,34 +46,36 @@ window.MEDKOS_INDEX = {
    "Microbiology": 11,
    "Immunology": 9,
    "Internal Medicine": 9,
+   "병리·조직학": 5,
+   "호흡기": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "병리·조직학": 4,
-   "호흡기": 4,
+   "소아과": 4,
+   "소화기": 4,
    "Oncology": 3,
+   "감염": 3,
    "내분비": 3,
-   "소아과": 3,
-   "소화기": 3,
+   "신경": 3,
    "응급·중환자": 3,
+   "혈액·종양": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
-   "감염": 2,
-   "신경": 2,
+   "신장·비뇨기": 2,
    "예방의학·역학": 2,
    "외과": 2,
    "피부과": 2,
-   "혈액·종양": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
    "근골격·류마티스": 1,
-   "신장·비뇨기": 1,
    "약리": 1,
+   "영상의학": 1,
+   "이비인후과": 1,
    "정신과": 1
   },
   "byConfidence": {
-   "high": 1805,
+   "high": 1815,
    "medium": 822,
    "low": 49
   },
@@ -950,6 +952,180 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1067.md",
    "snippet": "26세 여자가 1시간 전 갑자기 시작된 두근거림과 가벼운 어지럼으로 응급실에 왔다. 흉통·실신·호흡곤란은 없고, 이전에도 두세 차례 비슷한 증상이 몇 분 만에 저절로 멎은 적이 있다. 천식이나 만성폐질환은 없고 복용 중인 약은 없다. 의식은 명료하고 폐음은 깨끗하며 목정맥은 늘어나 있지 않다. 응급실에서 변형 발살바 수기를 두 차례 시행했으나 빈맥이 지속된다. 활력징후·검사 소견과 심전도는 자료와 같다. 다음으로 시행할 처치는",
    "text": "Cardiology Stable Regular Narrow-complex Tachycardia after Failed Vagal Maneuver — Next Drug PSVT AVNRT adenosine narrow-complex-tachycardia vagal-maneuver ecg KMLE 2026 / Claude Routine 26세 여자가 1시간 전 갑자기 시작된 두근거림과 가벼운 어지럼으로 응급실에 왔다. 흉통·실신·호흡곤란은 없고, 이전에도 두세 차례 비슷한 증상이 몇 분 만에 저절로 멎은 적이 있다. 천식이나 만성폐질환은 없고 복용 중인 약은 없다. 의식은 명료하고 폐음은 깨끗하며 목정맥은 늘어나 있지 않다. 응급실에서 변형 발살바 수기를 두 차례 시행했으나 빈맥이 지속된다. 활력징후·검사 소견과 심전도는 자료와 같다. 다음으로 시행할 처치는? A. 아데노신 급속 정맥 투여 B. 베라파밀 정맥 투여 C. 동기화 심장율동전환 시행 D. 아미오다론 정맥 투여 E. 프로프라놀롤 경구 투여 젊은 환자의 발작성·규칙적 좁은 QRS 빈맥(180회/분)은 방실결절을 회로에 포함하는 발작성 상심실빈맥이 가장 흔하다. 혈압 112/70·의식 명료·흉통 없음으로 혈역학이 안정돼 전기 율동전환의 적응이 아니며, 미주신경 자극이 실패했으므로 다음 단계는 아데노신 6 mg 급속 정맥 투여(실패 시 12 mg)다. 아데노신은 수초 내 방실결절 전도를 차단해 회로를 끊고 반감기가 10초 미만이라 저혈압이 오래가지 않는다. 베라파밀·딜티아젬은 아데노신이 실패하거나 천식 등으로 금기일 때의 대안이다."
+  },
+  {
+   "id": "imaging-2026-0091",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 사구체 여과장벽 단백질의 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0091.md",
+   "snippet": "A 16 year old boy undergoes left nephrectomy after a motor vehicle collision in which the kidney was shattered; he has no history of kidney disease, and his preoperative urinalysis showed no protein or blood. A section of uninjured renal co",
+   "text": "병리·조직학 병리·조직 — 사구체 여과장벽 단백질의 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 A 16 year old boy undergoes left nephrectomy after a motor vehicle collision in which the kidney was shattered; he has no history of kidney disease, and his preoperative urinalysis showed no protein or blood. A section of uninjured renal cortex from the specimen is stained by immunohistochemistry for a transmembrane protein of the immunoglobulin superfamily that is expressed in the kidney only by podocytes; the photomicrograph is shown. A newborn with homozygous loss of function mutations in the gene encoding this protein would most likely present with which of the following? A. Hyperchloremic metabolic acidosis with a urine pH above 5.5 B. Hypokalemic metabolic alkalosis with normal blood pressure C. Massive proteinuria, edema, and hypoalbuminemia within the first months of life D. Gross hematuria with sensorineural hearing loss and lens abnormalities E. Polyuria and hypernatremia unresponsive to desmopressin"
+  },
+  {
+   "id": "imaging-2026-0090",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 가와사키병의 불완전형 진단",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0090.md",
+   "snippet": "8개월 남아가 6일 전부터 39℃ 이상의 열이 계속되어 병원에 왔다. 3일 전부터 양쪽 눈이 충혈되었으나 눈곱은 없고, 입술이 붉고 갈라져 있다. 발진·손발 부종·목 림프절 종대는 없고 BCG 접종 부위가 붉게 부어 있다. 심음은 정상이다. 혈액검사에서 백혈구 17,800/mm³(호중구 72%), 혈색소 9.2 g/dL, 혈소판 512,000/mm³, C반응단백 9.6 mg/dL, 적혈구침강속도 68 mm/h, 알부민 2.7 ",
+   "text": "소아과 소아청소년 — 가와사키병의 불완전형 진단 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 8개월 남아가 6일 전부터 39℃ 이상의 열이 계속되어 병원에 왔다. 3일 전부터 양쪽 눈이 충혈되었으나 눈곱은 없고, 입술이 붉고 갈라져 있다. 발진·손발 부종·목 림프절 종대는 없고 BCG 접종 부위가 붉게 부어 있다. 심음은 정상이다. 혈액검사에서 백혈구 17,800/mm³(호중구 72%), 혈색소 9.2 g/dL, 혈소판 512,000/mm³, C반응단백 9.6 mg/dL, 적혈구침강속도 68 mm/h, 알부민 2.7 g/dL, 알라닌아미노전이효소 84 U/L 이며, 소변검사에서 백혈구 15/HPF 에 세균 배양은 음성이다. 혈액배양은 음성이고 호흡기 바이러스 검사도 음성이다. 심초음파는 다음 날 예정되어 있다. 가장 적절한 처치는? A. 정맥 면역글로불린과 아스피린 즉시 투여 B. 심초음파 결과 확인 후 치료 결정 C. 정맥 세프트리악손 투여 D. 경구 프레드니솔론 투여 E. 해열제 투여하며 경과 관찰"
+  },
+  {
+   "id": "imaging-2026-0089",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 횡문근융해증의 급성 콩팥손상",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0089.md",
+   "snippet": "A 22 year old man is brought to the emergency department 12 hours after collapsing during a military training exercise on a hot day. He has diffuse muscle pain and weakness and has passed only a small amount of dark brown urine since the ex",
+   "text": "신장·비뇨기 신장·비뇨 — 횡문근융해증의 급성 콩팥손상 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 A 22 year old man is brought to the emergency department 12 hours after collapsing during a military training exercise on a hot day. He has diffuse muscle pain and weakness and has passed only a small amount of dark brown urine since the exercise. He takes no medications and does not use drugs. His temperature is 37.9°C, pulse is 112/min, blood pressure is 102/64 mm Hg, and mucous membranes are dry. Examination shows tenderness and swelling of the thigh and calf muscles bilaterally; distal pulses are intact. Laboratory studies show serum creatinine of 2.1 mg/dL, potassium of 5.9 mEq/L, calcium of 7.6 mg/dL, phosphorus of 6.8 mg/dL, and creatine kinase of 68,000 U/L. Urinalysis shows dark brown urine, 3+ blood on dipstick, and no red blood cells on microscopy. An electrocardiogram shows peaked T waves without QRS widening. Which of the following is the most appropriate initial step in management? A. Aggressive intravenous isotonic saline B. Intravenous furosemide C. Emergency hemodialysis D. Intravenous calcium gluconate followed by fasciotomy of the thighs E. Oral sodium bicarbonate and allopurinol"
+  },
+  {
+   "id": "imaging-2026-0088",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 종괴효과가 있는 뇌 병변의 다음 검사",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0088.md",
+   "snippet": "73세 남자가 6주 전부터 점점 심해지는 두통과 2주 전부터 왼쪽 팔다리에 힘이 빠져 병원에 왔다. 두통은 아침에 심하고 구역을 동반하며, 최근 가족이 보기에 성격이 무뎌지고 말수가 줄었다. 고혈압으로 암로디핀을 복용하고 있으며 발열·경련·머리 외상은 없었다. 혈압 152/88 mmHg, 맥박 64회/분, 체온 36.7℃ 이고 의식은 명료하나 반응이 느리다. 왼쪽 팔다리 근력이 4/5 이고 왼쪽 바빈스키징후가 양성이며 목 경직",
+   "text": "영상의학 진단검사·영상의학 판독 — 종괴효과가 있는 뇌 병변의 다음 검사 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 73세 남자가 6주 전부터 점점 심해지는 두통과 2주 전부터 왼쪽 팔다리에 힘이 빠져 병원에 왔다. 두통은 아침에 심하고 구역을 동반하며, 최근 가족이 보기에 성격이 무뎌지고 말수가 줄었다. 고혈압으로 암로디핀을 복용하고 있으며 발열·경련·머리 외상은 없었다. 혈압 152/88 mmHg, 맥박 64회/분, 체온 36.7℃ 이고 의식은 명료하나 반응이 느리다. 왼쪽 팔다리 근력이 4/5 이고 왼쪽 바빈스키징후가 양성이며 목 경직은 없다. 혈액검사에서 백혈구 7,400/mm³, C반응단백 0.3 mg/dL 이다. 조영제를 주지 않고 찍은 뇌 MRI 축상면 T1 강조영상은 그림과 같다. 가장 적절한 다음 검사는? A. 경동맥 초음파 B. 뇌 CT 혈관조영 C. 가돌리늄 조영증강 뇌 MRI D. 요추천자와 뇌척수액 검사 E. 뇌파검사"
+  },
+  {
+   "id": "imaging-2026-0087",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 인공판막 심내막염의 항생제",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0087.md",
+   "snippet": "A 64 year old man comes to the emergency department because of 5 days of fever, chills, and fatigue. He underwent mechanical aortic valve replacement 7 months ago and takes warfarin. He has no drug allergies. His temperature is 38.9°C, puls",
+   "text": "감염 감염 — 인공판막 심내막염의 항생제 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 A 64 year old man comes to the emergency department because of 5 days of fever, chills, and fatigue. He underwent mechanical aortic valve replacement 7 months ago and takes warfarin. He has no drug allergies. His temperature is 38.9°C, pulse is 104/min, and blood pressure is 118/72 mm Hg. Examination shows a new grade 3/6 diastolic decrescendo murmur at the left sternal border, nontender erythematous macules on both palms, and a splinter hemorrhage under one fingernail. There is no neck stiffness or focal weakness. Laboratory studies show a leukocyte count of 15,200/mm3, erythrocyte sedimentation rate of 78 mm/h, and INR of 2.6. Three sets of blood cultures obtained 1 hour apart grow gram positive cocci in clusters in all bottles; species identification and susceptibility are pending. Transesophageal echocardiography shows a 9 mm vegetation on the prosthetic valve with a small perivalvular abscess. Which of the following is the most appropriate initial antibiotic regimen? A. Ceftriaxone and gentamicin B. Ampicillin and gentamicin C. Vancomycin alone D. Vancomycin, gentamicin, and rifampin E. Nafcillin and gentamicin"
+  },
+  {
+   "id": "imaging-2026-0086",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 급성 전골수구백혈병의 초기 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0086.md",
+   "snippet": "27세 여자가 3일 전부터 잇몸에서 피가 나고 다리에 멍이 늘어 병원에 왔다. 2주 전부터 피로하고 어지러웠으며 발열은 없다. 약물 복용력과 가족력은 없다. 혈압 112/70 mmHg, 맥박 96회/분, 체온 37.2℃ 이고 결막이 창백하며 정강이에 점상출혈과 반상출혈이 있고 간·비장은 만져지지 않는다. 혈액검사에서 혈색소 7.9 g/dL, 백혈구 2,100/mm³, 혈소판 18,000/mm³, 프로트롬빈시간 INR 1.7, ",
+   "text": "혈액·종양 혈액·종양 — 급성 전골수구백혈병의 초기 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 27세 여자가 3일 전부터 잇몸에서 피가 나고 다리에 멍이 늘어 병원에 왔다. 2주 전부터 피로하고 어지러웠으며 발열은 없다. 약물 복용력과 가족력은 없다. 혈압 112/70 mmHg, 맥박 96회/분, 체온 37.2℃ 이고 결막이 창백하며 정강이에 점상출혈과 반상출혈이 있고 간·비장은 만져지지 않는다. 혈액검사에서 혈색소 7.9 g/dL, 백혈구 2,100/mm³, 혈소판 18,000/mm³, 프로트롬빈시간 INR 1.7, 활성화부분트롬보플라스틴시간 48초, 피브리노겐 95 mg/dL, D 이합체 8.4 μg/mL 이다. 말초혈액도말에서 과립이 많고 두 엽으로 접힌 핵을 가진 비정상 전골수구가 보이며 일부 세포에는 아우어소체가 다발로 들어 있다. 골수검사와 유전자검사 결과는 아직 나오지 않았다. 가장 적절한 처치는? A. 시타라빈과 다우노루비신 7+3 관해유도 B. 동종조혈모세포이식 공여자 검색 C. 헤파린 지속 정주 D. all trans retinoic acid 즉시 투여 E. 유전자검사 결과 확인 후 치료 시작"
+  },
+  {
+   "id": "imaging-2026-0085",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 뇌 MRI 조영증강의 의미",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0085.md",
+   "snippet": "A 56 year old woman comes to the physician because of 3 weeks of progressively worsening headaches that are most severe in the morning and 1 week of clumsiness of her left hand. She has no history of cancer, seizures, or head trauma and tak",
+   "text": "신경 신경 — 뇌 MRI 조영증강의 의미 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 A 56 year old woman comes to the physician because of 3 weeks of progressively worsening headaches that are most severe in the morning and 1 week of clumsiness of her left hand. She has no history of cancer, seizures, or head trauma and takes no medications. She does not smoke. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 134/82 mm Hg. Neurologic examination shows mild weakness of the left hand with slowed rapid alternating movements; the remainder of the examination, including funduscopy, is unremarkable. An axial T1 weighted MRI of the brain obtained after intravenous gadolinium is shown. The bright signal within the lesions on this image most directly reflects which of the following? A. Presence of methemoglobin from subacute hemorrhage B. Dystrophic calcification within the lesion C. Restricted diffusion of water in densely packed cells D. Increased free water content from vasogenic edema E. Disruption of the blood brain barrier with leakage of contrast into the interstitium"
+  },
+  {
+   "id": "imaging-2026-0084",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 자발성 세균성 복막염의 진단",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0084.md",
+   "snippet": "58세 남자가 2일 전부터 배가 아프고 열이 나며 오늘 아침부터 말이 어눌해져 병원에 왔다. 알코올 간경변으로 3년 전부터 복수가 있어 스피로놀락톤과 푸로세미드를 복용하고 있으며 3개월 전에도 복수천자를 받았다. 혈압 96/60 mmHg, 맥박 108회/분, 체온 38.4℃ 이고 배가 팽만되어 있으며 전반적인 압통이 있으나 반동압통과 근육 강직은 없다. 손 떨림(퍼덕떨림)이 있다. 혈액검사에서 백혈구 13,800/mm³, 혈소",
+   "text": "소화기 소화기·간담췌 — 자발성 세균성 복막염의 진단 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 58세 남자가 2일 전부터 배가 아프고 열이 나며 오늘 아침부터 말이 어눌해져 병원에 왔다. 알코올 간경변으로 3년 전부터 복수가 있어 스피로놀락톤과 푸로세미드를 복용하고 있으며 3개월 전에도 복수천자를 받았다. 혈압 96/60 mmHg, 맥박 108회/분, 체온 38.4℃ 이고 배가 팽만되어 있으며 전반적인 압통이 있으나 반동압통과 근육 강직은 없다. 손 떨림(퍼덕떨림)이 있다. 혈액검사에서 백혈구 13,800/mm³, 혈소판 76,000/mm³, 알부민 2.4 g/dL, 총빌리루빈 4.2 mg/dL, 크레아티닌 1.4 mg/dL, 프로트롬빈시간 INR 2.1 이다. 복수검사에서 다형핵 백혈구 620/mm³, 총단백 0.9 g/dL, 복수 포도당 78 mg/dL 이며 그람염색에서 세균은 보이지 않는다. 가장 적절한 처치는? A. 이뇨제 증량과 락툴로오스 투여 B. 정맥 세포탁심 투여 C. 복수 배양 결과 확인 후 항생제 결정 D. 응급 개복술 E. 복부 CT 로 천공 확인 후 항생제 결정"
+  },
+  {
+   "id": "imaging-2026-0083",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 급성 중이염 합병증(꼭지돌기염)",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0083.md",
+   "snippet": "A 4 year old boy is brought to the emergency department by his mother because of 2 days of swelling and pain behind his right ear. Ten days ago he was diagnosed with acute otitis media of the right ear and was treated with oral amoxicillin,",
+   "text": "이비인후과 이비인후과 — 급성 중이염 합병증(꼭지돌기염) opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 A 4 year old boy is brought to the emergency department by his mother because of 2 days of swelling and pain behind his right ear. Ten days ago he was diagnosed with acute otitis media of the right ear and was treated with oral amoxicillin, which his mother stopped after 4 days when the fever resolved. He has no history of ear surgery and his immunizations are up to date. His temperature is 39.1°C, pulse is 128/min, and respirations are 24/min. Examination shows tenderness, erythema, and fluctuant swelling over the right mastoid process; the right auricle is displaced anteriorly and inferiorly. Otoscopy shows a bulging, erythematous right tympanic membrane with sagging of the posterosuperior canal wall. There is no neck stiffness, and the facial muscles move symmetrically. Laboratory studies show a leukocyte count of 19,500/mm3 with 80% neutrophils. Which of the following is the most appropriate next step in management? A. Oral amoxicillin clavulanate and follow up in 48 hours B. Incision and drainage of the postauricular swelling in the emergency department C. Lumbar puncture followed by intravenous antibiotics D. Magnetic resonance venography of the head E. Computed tomography of the temporal bone and intravenous antibiotics"
+  },
+  {
+   "id": "imaging-2026-0082",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 젊은 성인의 양측 미만성 폐렴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+   "confidence": "high",
+   "date": "2026-09-21",
+   "path": "content/imaging/2026/imaging-2026-0082.md",
+   "snippet": "36세 남자가 5일 전부터 열이 나고 마른기침과 근육통이 있다가 어제부터 숨이 차서 병원에 왔다. 1주 전 같이 사는 아내가 열과 기침을 앓았다. 흡연·음주는 하지 않고 만성 질환은 없으며 수술력이나 약물 복용력도 없다. 혈압 118/74 mmHg, 맥박 104회/분, 호흡 24회/분, 체온 38.6℃, 실내 공기에서 산소포화도 92% 이다. 양쪽 폐 아래쪽에서 거친 수포음이 들리고 심잡음과 경정맥 확장은 없다. 혈액검사에서 ",
+   "text": "호흡기 호흡기 — 젊은 성인의 양측 미만성 폐렴 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00 36세 남자가 5일 전부터 열이 나고 마른기침과 근육통이 있다가 어제부터 숨이 차서 병원에 왔다. 1주 전 같이 사는 아내가 열과 기침을 앓았다. 흡연·음주는 하지 않고 만성 질환은 없으며 수술력이나 약물 복용력도 없다. 혈압 118/74 mmHg, 맥박 104회/분, 호흡 24회/분, 체온 38.6℃, 실내 공기에서 산소포화도 92% 이다. 양쪽 폐 아래쪽에서 거친 수포음이 들리고 심잡음과 경정맥 확장은 없다. 혈액검사에서 백혈구 5,200/mm³(림프구 11%), 혈소판 165,000/mm³, C반응단백 6.8 mg/dL, 젖산탈수소효소 420 U/L, 프로칼시토닌 0.08 ng/mL 이다. 흉부 X선은 그림과 같다. 가장 가능성이 높은 진단은? A. 급성 과민폐렴 B. 바이러스 폐렴 C. 폐렴사슬알균 대엽폐렴 D. 폐포자충 폐렴 E. 심인성 폐부종"
   },
   {
    "id": "cn.cardio.long-qt-syndrome.first-line-drug",
