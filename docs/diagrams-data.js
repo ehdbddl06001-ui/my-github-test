@@ -2,9 +2,81 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-09-22",
- "count": 98,
- "groups": 51,
+ "count": 104,
+ "groups": 54,
  "items": [
+  {
+   "file": "tree-s12-vessel-labeled.svg",
+   "base": "tree-s12-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "척주관의 정맥얼기와 샅의 동맥",
+   "date": "2026-09-22",
+   "bytes": 13733
+  },
+  {
+   "file": "tree-s12-vessel-quiz.svg",
+   "base": "tree-s12-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "척주관의 정맥얼기와 샅의 동맥",
+   "date": "2026-09-22",
+   "bytes": 9589
+  },
+  {
+   "file": "tree-s12-nerve-labeled.svg",
+   "base": "tree-s12-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "척수신경의 시작과 샅의 신경",
+   "date": "2026-09-22",
+   "bytes": 17156
+  },
+  {
+   "file": "tree-s12-nerve-quiz.svg",
+   "base": "tree-s12-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "척수신경의 시작과 샅의 신경",
+   "date": "2026-09-22",
+   "bytes": 12862
+  },
+  {
+   "file": "tree-s12-bundle-labeled.svg",
+   "base": "tree-s12-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "함께 지나는 것",
+   "date": "2026-09-22",
+   "bytes": 22741
+  },
+  {
+   "file": "tree-s12-bundle-quiz.svg",
+   "base": "tree-s12-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 12,
+   "unit": "12회차 · 등·골반·회음",
+   "title": "함께 지나는 것",
+   "date": "2026-09-22",
+   "bytes": 16278
+  },
   {
    "file": "tree-s01-vessel-labeled.svg",
    "base": "tree-s01-vessel",

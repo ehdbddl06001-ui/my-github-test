@@ -9959,6 +9959,351 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0628",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 번호핀 1~35가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 세 자리 / 2. 척주관의 층과 공간 / 3. 음부신경관 / 4. 궁둥항문오목 / 5. 샅의 두 주머니 / 6. 샅중심체 / 7. 가시끝인대 / 8. 가시사이인대 / 9. 황색인대 / 10. 경막바깥공간 / 11. 척수경막·거미막 / 12. 거미막밑공간 / 13. 척수연막 / 14. 찌르는 높이 / 15. 음부신경 / 16. 속음부동맥 / 17. 속음부정맥 / 18. 들어오는 자리 / 19. 안쪽벽 / 20. 가쪽벽 / 21. 뒤 / 22. 내용물 / 23. 얕은샅공간 / 24. 깊은샅공간 / 25. 모이는 근육 / 26. episiotomy (응용과제) / 27. 얕은샅가로근 / 28. 궁둥해면체근 / 29. 망울해면체근 / 30. 발기조직 뿌리 / 31. 바깥요도조임근 / 32. 깊은샅가로근 / 33. 남자요도 막부분 / 34. 망울요도샘 / 35. 음경등신경·속음부동맥",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0629",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 **척주관의 층과 공간** 계통에 해당하는 번호핀 2, 7, 8, 9, 10, 11, 12, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 척주관의 층과 공간 / 7. 가시끝인대 / 8. 가시사이인대 / 9. 황색인대 / 10. 경막바깥공간 / 11. 척수경막·거미막 / 12. 거미막밑공간 / 13. 척수연막 / 14. 찌르는 높이",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0630",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 **음부신경관** 계통에 해당하는 번호핀 3, 15, 16, 17, 18 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 음부신경관 / 15. 음부신경 / 16. 속음부동맥 / 17. 속음부정맥 / 18. 들어오는 자리",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0631",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 **궁둥항문오목** 계통에 해당하는 번호핀 4, 19, 20, 21, 22 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 궁둥항문오목 / 19. 안쪽벽 / 20. 가쪽벽 / 21. 뒤 / 22. 내용물",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0632",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 **샅의 두 주머니** 계통에 해당하는 번호핀 5, 23, 24, 27, 28, 29, 30, 31, 32, 33, 34, 35 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 샅의 두 주머니 / 23. 얕은샅공간 / 24. 깊은샅공간 / 27. 얕은샅가로근 / 28. 궁둥해면체근 / 29. 망울해면체근 / 30. 발기조직 뿌리 / 31. 바깥요도조임근 / 32. 깊은샅가로근 / 33. 남자요도 막부분 / 34. 망울요도샘 / 35. 음경등신경·속음부동맥",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0633",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니)에서 **샅중심체** 계통에 해당하는 번호핀 6, 25, 26 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 샅중심체 / 25. 모이는 근육 / 26. episiotomy (응용과제)",
+   "explanation": "12회차 · 막과 근막이 만든 '공간'의 경계가 그대로 태깅 문제다 허리천자 바늘이 뚫는 순서는 **인대 셋 → 경막바깥공간 → 경막·거미막 → 거미막밑공간**이다. 샅주머니를 가르는 것은 **샅막 한 장** — 위가 깊은주머니, 아래가 얕은주머니다. 샅중심체는 **여러 근육이 모이는 매듭** — 여기가 찢어지면 골반바닥이 함께 무너진다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 척주관의 세 공간 · 음부신경관 · 두 샅주머니"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0634",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척수신경의 시작과 샅의 신경 — 음부신경)에서 번호핀 1~27가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 12회차의 신경 / 2. 척수신경의 시작 / 3. 음부신경 / 4. 샅을 함께 맡는 곁들 / 5. 앞뿌리 / 6. 뒤뿌리 / 7. 척수신경줄기 / 8. 말총 / 9. 종말끈 / 10. 치아인대 / 11. 골반을 나가는 길 / 12. 아래곧창자신경 / 13. 샅신경 / 14. 음경등신경 / 음핵등신경 / 15. 엉덩샅굴신경 / 16. 넓적다리뒤피부신경 샅가지 / 17. 항문꼬리신경 / 18. 척수신경절 / 19. 앞가지 / 20. 뒤가지 / 21. 엉치가시인대 뒤 / 22. 음부신경관 / 23. 바깥항문조임근 / 24. 항문 주위 피부 / 25. 깊은(근육)가지 / 26. 뒤음낭신경 / 뒤음순신경 / 27. 음경·음핵 귀두 감각",
+   "explanation": "12회차 · 척주관에서 신경이 태어나고, 샅에서는 음부신경 하나가 거의 전부를 맡는다 척수는 **L1–L2에서 끝나지만 척주관은 계속 간다** — 그 길이차가 허리천자를 가능하게 한다. 샅은 **음부신경(S2–S4) 하나**가 거의 전부 — 가지 셋의 이름이 그대로 답이다. 음부신경은 **골반을 한 번 나갔다 다시 들어온다** — 궁둥구멍 두 개를 연달아 쓴다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-nerve",
+     "page": null,
+     "section": "척수신경의 시작과 샅의 신경 — 음부신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0635",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척수신경의 시작과 샅의 신경 — 음부신경)에서 **척수신경의 시작** 계통에 해당하는 번호핀 2, 5, 6, 7, 8, 9, 10, 18, 19, 20 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 척수신경의 시작 / 5. 앞뿌리 / 6. 뒤뿌리 / 7. 척수신경줄기 / 8. 말총 / 9. 종말끈 / 10. 치아인대 / 18. 척수신경절 / 19. 앞가지 / 20. 뒤가지",
+   "explanation": "12회차 · 척주관에서 신경이 태어나고, 샅에서는 음부신경 하나가 거의 전부를 맡는다 척수는 **L1–L2에서 끝나지만 척주관은 계속 간다** — 그 길이차가 허리천자를 가능하게 한다. 샅은 **음부신경(S2–S4) 하나**가 거의 전부 — 가지 셋의 이름이 그대로 답이다. 음부신경은 **골반을 한 번 나갔다 다시 들어온다** — 궁둥구멍 두 개를 연달아 쓴다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-nerve",
+     "page": null,
+     "section": "척수신경의 시작과 샅의 신경 — 음부신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0636",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척수신경의 시작과 샅의 신경 — 음부신경)에서 **음부신경** 계통에 해당하는 번호핀 3, 11, 12, 13, 14, 21, 22, 23, 24, 25, 26, 27 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 음부신경 / 11. 골반을 나가는 길 / 12. 아래곧창자신경 / 13. 샅신경 / 14. 음경등신경 / 음핵등신경 / 21. 엉치가시인대 뒤 / 22. 음부신경관 / 23. 바깥항문조임근 / 24. 항문 주위 피부 / 25. 깊은(근육)가지 / 26. 뒤음낭신경 / 뒤음순신경 / 27. 음경·음핵 귀두 감각",
+   "explanation": "12회차 · 척주관에서 신경이 태어나고, 샅에서는 음부신경 하나가 거의 전부를 맡는다 척수는 **L1–L2에서 끝나지만 척주관은 계속 간다** — 그 길이차가 허리천자를 가능하게 한다. 샅은 **음부신경(S2–S4) 하나**가 거의 전부 — 가지 셋의 이름이 그대로 답이다. 음부신경은 **골반을 한 번 나갔다 다시 들어온다** — 궁둥구멍 두 개를 연달아 쓴다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-nerve",
+     "page": null,
+     "section": "척수신경의 시작과 샅의 신경 — 음부신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0637",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척수신경의 시작과 샅의 신경 — 음부신경)에서 **샅을 함께 맡는 곁들** 계통에 해당하는 번호핀 4, 15, 16, 17 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 샅을 함께 맡는 곁들 / 15. 엉덩샅굴신경 / 16. 넓적다리뒤피부신경 샅가지 / 17. 항문꼬리신경",
+   "explanation": "12회차 · 척주관에서 신경이 태어나고, 샅에서는 음부신경 하나가 거의 전부를 맡는다 척수는 **L1–L2에서 끝나지만 척주관은 계속 간다** — 그 길이차가 허리천자를 가능하게 한다. 샅은 **음부신경(S2–S4) 하나**가 거의 전부 — 가지 셋의 이름이 그대로 답이다. 음부신경은 **골반을 한 번 나갔다 다시 들어온다** — 궁둥구멍 두 개를 연달아 쓴다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-nerve",
+     "page": null,
+     "section": "척수신경의 시작과 샅의 신경 — 음부신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0638",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척주관의 정맥얼기와 샅의 동맥 — 속음부동맥)에서 번호핀 1~19가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 12회차의 혈관 / 2. 척주정맥얼기 / 3. 속엉덩동맥 앞가지 / 4. 바깥음부동맥 / 5. 음경의 정맥 — 둘의 행선지가 다르다 / 6. 속척주정맥얼기 / 7. 바깥척주정맥얼기 / 8. 전이 경로 / 9. 속음부동맥 / 10. 아래방광동맥 / 질동맥 / 11. 얕은음경등정맥 / 12. 깊은음경등정맥 / 13. 앞얼기 / 14. 뒤얼기 / 15. 아래곧창자동맥 / 16. 샅동맥 / 17. 음경망울동맥 / 질어귀망울동맥 / 18. 깊은음경동맥 / 깊은음핵동맥 / 19. 음경등동맥 / 음핵등동맥",
+   "explanation": "12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다 속척주정맥얼기는 **판막이 없다** — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다. 샅의 동맥은 **속음부동맥 하나**가 음부신경과 같은 관을 타고 들어와 나눠 준다. 음경등정맥은 **깊은 것과 얕은 것의 행선지가 다르다** — 깊은쪽이 전립샘정맥얼기로 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-vessel",
+     "page": null,
+     "section": "척주관의 정맥얼기와 샅의 동맥 — 속음부동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0639",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척주관의 정맥얼기와 샅의 동맥 — 속음부동맥)에서 **척주정맥얼기** 계통에 해당하는 번호핀 2, 6, 7, 8, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 척주정맥얼기 / 6. 속척주정맥얼기 / 7. 바깥척주정맥얼기 / 8. 전이 경로 / 13. 앞얼기 / 14. 뒤얼기",
+   "explanation": "12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다 속척주정맥얼기는 **판막이 없다** — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다. 샅의 동맥은 **속음부동맥 하나**가 음부신경과 같은 관을 타고 들어와 나눠 준다. 음경등정맥은 **깊은 것과 얕은 것의 행선지가 다르다** — 깊은쪽이 전립샘정맥얼기로 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-vessel",
+     "page": null,
+     "section": "척주관의 정맥얼기와 샅의 동맥 — 속음부동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0640",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척주관의 정맥얼기와 샅의 동맥 — 속음부동맥)에서 **속엉덩동맥 앞가지** 계통에 해당하는 번호핀 3, 9, 10, 15, 16, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 속엉덩동맥 앞가지 / 9. 속음부동맥 / 10. 아래방광동맥 / 질동맥 / 15. 아래곧창자동맥 / 16. 샅동맥 / 17. 음경망울동맥 / 질어귀망울동맥 / 18. 깊은음경동맥 / 깊은음핵동맥 / 19. 음경등동맥 / 음핵등동맥",
+   "explanation": "12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다 속척주정맥얼기는 **판막이 없다** — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다. 샅의 동맥은 **속음부동맥 하나**가 음부신경과 같은 관을 타고 들어와 나눠 준다. 음경등정맥은 **깊은 것과 얕은 것의 행선지가 다르다** — 깊은쪽이 전립샘정맥얼기로 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-vessel",
+     "page": null,
+     "section": "척주관의 정맥얼기와 샅의 동맥 — 속음부동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0641",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척주관의 정맥얼기와 샅의 동맥 — 속음부동맥)에서 **음경의 정맥 — 둘의 행선지가 다르다** 계통에 해당하는 번호핀 5, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 음경의 정맥 — 둘의 행선지가 다르다 / 11. 얕은음경등정맥 / 12. 깊은음경등정맥",
+   "explanation": "12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다 속척주정맥얼기는 **판막이 없다** — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다. 샅의 동맥은 **속음부동맥 하나**가 음부신경과 같은 관을 타고 들어와 나눠 준다. 음경등정맥은 **깊은 것과 얕은 것의 행선지가 다르다** — 깊은쪽이 전립샘정맥얼기로 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-vessel",
+     "page": null,
+     "section": "척주관의 정맥얼기와 샅의 동맥 — 속음부동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0642",
+   "style": "spotter",
+   "session": 12,
+   "region": "multi",
+   "subregion": "s12-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(척주관의 정맥얼기와 샅의 동맥 — 속음부동맥)에서 **바깥음부동맥** 계통에 해당하는 번호핀 4 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 바깥음부동맥",
+   "explanation": "12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다 속척주정맥얼기는 **판막이 없다** — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다. 샅의 동맥은 **속음부동맥 하나**가 음부신경과 같은 관을 타고 들어와 나눠 준다. 음경등정맥은 **깊은 것과 얕은 것의 행선지가 다르다** — 깊은쪽이 전립샘정맥얼기로 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s12-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s12-vessel",
+     "page": null,
+     "section": "척주관의 정맥얼기와 샅의 동맥 — 속음부동맥"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -12418,9 +12763,186 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0610",
+   "session": 12,
+   "title": "12회차 서브노트 — 막이 만든 공간 · 음부신경 하나",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 척주관 열기",
+    "2. 척수막 세 겹과 세 공간",
+    "3. 척수와 척수신경뿌리",
+    "4. 샅의 경계와 두 삼각",
+    "5. 항문삼각 — 궁둥항문오목",
+    "6. 음부신경관과 샅의 신경혈관",
+    "7. 얕은샅공간",
+    "8. 깊은샅공간",
+    "9. 남자 바깥생식기관",
+    "10. 여자 바깥생식기관",
+    "11. 근육표 종합 (12회차)",
+    "12. 예습시험 체크리스트 10 (수업당 10문제 대비)"
+   ],
+   "figs": [
+    "diag-lumbar-puncture-labeled.svg",
+    "diag-pelvic-diaphragm-labeled.svg",
+    "tree-s12-bundle-labeled.svg",
+    "tree-s12-nerve-labeled.svg",
+    "tree-s12-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "척수는 L1–L2에서 끝나고, 거미막밑공간은 S2까지 간다",
+     "full": "그 사이(L2–S2)에는 말총뿐이라 바늘을 넣어도 척수가 안 다친다 — 허리천자를 L3–L4·L4–L5에서 하는 이유",
+     "note": "야코비선(엉덩뼈능선 최고점을 잇는 선) = 대략 L4 가시돌기"
+    },
+    {
+     "key": "바늘이 뚫는 순서 — 가시끝 · 가시사이 · 황색 · 경막바깥 · 경막거미막 · 거미막밑",
+     "full": "인대 셋 → 지방·정맥얼기(경막바깥공간) → 막 둘(맞붙어 있다) → 뇌척수액",
+     "note": "==황색인대==를 뚫는 순간 저항이 툭 사라진다 — 그 다음이 경막바깥공간"
+    },
+    {
+     "key": "샅은 두 삼각 — 앞은 비뇨생식, 뒤는 항문",
+     "full": "두 궁둥뼈결절을 잇는 가로선이 경계. 앞 꼭짓점=두덩결합, 뒤 꼭짓점=꼬리뼈",
+     "note": "앞삼각만 ==샅막==을 가진다 — 뒤삼각(항문)에는 샅막이 없다"
+    },
+    {
+     "key": "샅막 한 장이 주머니를 가른다 — 위가 깊은, 아래가 얕은",
+     "full": "얕은주머니=발기조직 뿌리 + 세 근육 / 깊은주머니=바깥요도조임근 + 깊은샅가로근 + 막요도 + 망울요도샘",
+     "note": "망울요도샘만 예외 — **몸은 깊은주머니, 관은 얕은주머니로** 열린다"
+    },
+    {
+     "key": "음부신경 가지 셋 — 아래곧창자 · 샅 · 등신경",
+     "full": "뒤에서 앞으로 순서대로. 아래곧창자=항문, 샅=얕은주머니+음낭/음순 피부, 등신경=귀두",
+     "note": "S2–S4 — '**S2,3,4 keeps the floor off the floor**'"
+    },
+    {
+     "key": "음부신경은 구멍을 두 번 쓴다 — 큰궁둥구멍으로 나가고 작은궁둥구멍으로 들어온다",
+     "full": "궁둥뼈가시와 엉치가시인대 **뒤**를 돌아 되들어온다",
+     "note": "그래서 음부신경 차단의 표지가 ==궁둥뼈가시==다"
+    },
+    {
+     "key": "궁둥항문오목은 쐐기 — 안쪽은 올림근, 가쪽은 폐쇄근, 속은 지방",
+     "full": "안쪽벽=골반가로막+바깥항문조임근 / 가쪽벽=궁둥뼈+속폐쇄근막(음부신경관) / 뒤=엉치결절인대+큰볼기근",
+     "note": "지방은 채우는 게 아니라 **배변 때 항문이 벌어질 자리를 비워 두는 것**"
+    },
+    {
+     "key": "음경등정맥 둘 — 얕은 건 바깥음부로, 깊은 건 전립샘정맥얼기로",
+     "full": "얕은음경등정맥=얕은근막 속, **여러 줄** / 깊은음경등정맥=깊은근막 밑, **한 줄**, 두 동맥 사이",
+     "note": "깊은쪽이 아래두덩인대와 샅막 사이 틈으로 골반 안에 들어간다"
+    },
+    {
+     "key": "샅중심체는 매듭 — 여섯 근육이 모인다",
+     "full": "바깥항문조임근 · 얕은샅가로근 · 깊은샅가로근 · 망울해면체근 · 항문올림근 · 바깥요도조임근 일부",
+     "note": "응용과제 — 여기가 찢어지면 골반바닥 전체가 내려앉는다(탈출증)"
+    },
+    {
+     "key": "속척주정맥얼기에는 판막이 없다",
+     "full": "배·골반 압력이 오르면 피가 척주로 역류한다 — 전립샘암이 허파를 안 거치고 허리뼈로 간다(Batson)",
+     "note": "고리판절제술에서 출혈하는 자리도 여기(경막바깥공간)"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-22",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "back",
+    "pelvis-perineum"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0001"
+    ],
+    "layer": [
+     "anatomy-2026-0003"
+    ],
+    "branch": [
+     "anatomy-2026-0029"
+    ],
+    "relation": [
+     "anatomy-2026-0035",
+     "anatomy-2026-0036"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0046",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0040",
+    "anatomy-2026-0047",
+    "anatomy-2026-0362",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ],
+    "d-3": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ],
+    "d-7": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-21",
    "phase": "t2-new",
@@ -15120,90 +15642,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0043",
      "anatomy-2026-0015",
      "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-3": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0157",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-7": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0004",
-     "anatomy-2026-0047",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-14": []
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-08-23",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "back",
-    "lower-limb"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0029"
-    ],
-    "layer": [
-     "anatomy-2026-0030"
-    ],
-    "branch": [
-     "anatomy-2026-0035"
-    ],
-    "relation": [
-     "anatomy-2026-0036",
-     "anatomy-2026-0037"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0040",
-    "anatomy-2026-0046",
-    "anatomy-2026-0044",
-    "anatomy-2026-0041",
-    "anatomy-2026-0039",
-    "anatomy-2026-0043",
-    "anatomy-2026-0015",
-    "anatomy-2026-0372",
-    "anatomy-2026-0353",
-    "anatomy-2026-0045",
-    "anatomy-2026-0048",
-    "anatomy-2026-0052"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0157",
      "anatomy-2026-0353",
      "anatomy-2026-0045",
      "anatomy-2026-0048",
