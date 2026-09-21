@@ -13213,5 +13213,1148 @@ window.USMLE_QUESTIONS = [
   "design": null,
   "reviewStatus": "unreviewed",
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0164",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Vomiting, Lethargy and a Big Liver Weeks After Fruit Was Added to the Diet — The Trapped Sugar Phosphate That Starves Glycogenolysis of Phosphate",
+  "type": "Vomiting, Lethargy and a Big Liver Weeks After Fruit Was Added to the Diet — The Trapped Sugar Phosphate That Starves Glycogenolysis of Phosphate",
+  "difficulty": 4,
+  "created": "2026-09-22",
+  "vignette": "A 7-month-old boy is brought to the physician because of vomiting, irritability and poor feeding for 3 weeks. The symptoms began shortly after his parents started giving him pureed fruit and diluted juice in addition to breast milk; he had been thriving on breast milk alone. Yesterday he became unusually drowsy about an hour after a meal. He was born at term, and his newborn screen, which included galactosemia and medium-chain acyl-CoA dehydrogenase deficiency, was reported as normal. His vital signs and laboratory studies are shown. He is pale, sweaty and lethargic. The liver edge is palpable 4 cm below the right costal margin. There is no dysmorphism.",
+  "question": "Which of the following best explains the hypoglycemia in this infant?",
+  "options": [
+   "Impaired transfer of long-chain fatty acids into mitochondria",
+   "Accumulation of galactose-1-phosphate in hepatocytes",
+   "Sequestration of inorganic phosphate as fructose-1-phosphate",
+   "Deficient glucose-6-phosphatase activity in the endoplasmic reticulum",
+   "Absent hepatic fructokinase activity"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 2단계 추론. ① 진단 — 모유만 먹을 때는 건강하다가 과일·희석 주스를 시작한 뒤 구토·보챔·간비대가 생겼고, 식후 1시간에 기면이 왔으며, 소변 환원당 양성 + glucose oxidase 스틱 음성(포도당이 아닌 환원당), 인 2.1 로 낮고 젖산 4.8·요산 9.2 상승, 케톤은 나온다 = 유전성 과당불내증(알돌라아제 B 결핍). ② 기전 — 과당은 과당인산화효소로 fructose-1-phosphate(F1P)가 되지만 알돌라아제 B 가 없어 그 자리에서 멈춘다. 쌓인 F1P 가 무기인산과 ATP 를 붙잡아 두어 인산이 필요한 글리코겐 가인산분해효소가 멈추고, 알돌라아제 B 는 포도당신생합성의 알돌라아제 단계이기도 해서 두 포도당 공급 경로가 동시에 막힌다 → 식후 저혈당. ATP 고갈은 AMP 탈아미노효소를 켜 요산을 올리고, 저인산혈증은 기전의 직접 증거다. 치료는 과당·자당·소르비톨 제거이고 확진은 ALDOB 유전자 검사로 한다(과당 부하검사는 위험).\n- 오답감별:\n  - (A) 카르니틴 왕복 장애(CPT II 등) 같은 지방산 산화 장애는 공복·질병 때 케톤 없는 저혈당을 만든다. 이 아이는 소변 케톤이 중등도로 나오고, 증상이 공복이 아니라 식후에 오며, 과일 도입과 맞물려 있다.\n  - (B) 갈락토오스-1-인산 축적(갈락토오스혈증)은 젖당이 들어오는 생후 첫 주에 황달·백내장·대장균 패혈증으로 시작해야 한다. 이 아이는 모유로 잘 자랐고 신생아 선별검사가 정상이라 가능성이 낮다 — 환원당 양성·스틱 음성이라는 소변 소견만 보고 고르기 쉬운 함정이다.\n  - (D) 포도당-6-인산분해효소 결핍(von Gierke)도 젖산·요산이 오르고 간이 커지지만, 저혈당이 공복(밤새 금식)에 오고 생후 3–4개월부터 음식 종류와 무관하게 나타난다. 「과일을 시작한 뒤」「식후 1시간」이라는 시간 관계가 이 보기를 낮춘다.\n  - (E) 과당인산화효소 결핍(본태성 과당뇨)은 과당이 F1P 로 인산화되지 못해 그냥 소변으로 빠져나가는 양성 질환이다. 인산이 붙잡히지 않으므로 저혈당·간비대·젖산산증이 생기지 않는다.\n- 임상핵심: 이유식·주스 시작 뒤 식후 저혈당 + 환원당(+)/포도당 스틱(−) + 인↓·젖산↑·요산↑ = 알돌라아제 B 결핍 → F1P 가 인산·ATP 를 붙잡아 글리코겐 분해·포도당신생합성 정지.\n- 출처: Lippincott Biochemistry 8e Ch 12; Nelson 21e Ch 105; GeneReviews Hereditary Fructose Intolerance. 기전·진단 원칙에 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 진단 — 모유만 먹을 때는 건강하다가 과일·희석 주스를 시작한 뒤 구토·보챔·간비대가 생겼고, 식후 1시간에 기면이 왔으며, 소변 환원당 양성 + glucose oxidase 스틱 음성(포도당이 아닌 환원당), 인 2.1 로 낮고 젖산 4.8·요산 9.2 상승, 케톤은 나온다 = 유전성 과당불내증(알돌라아제 B 결핍). ② 기전 — 과당은 과당인산화효소로 fructose-1-phosphate(F1P)가 되지만 알돌라아제 B 가 없어 그 자리에서 멈춘다. 쌓인 F1P 가 무기인산과 ATP 를 붙잡아 두어 인산이 필요한 글리코겐 가인산분해효소가 멈추고, 알돌라아제 B 는 포도당신생합성의 알돌라아제 단계이기도 해서 두 포도당 공급 경로가 동시에 막힌다 → 식후 저혈당. ATP 고갈은 AMP 탈아미노효소를 켜 요산을 올리고, 저인산혈증은 기전의 직접 증거다. 치료는 과당·자당·소르비톨 제거이고 확진은 ALDOB 유전자 검사로 한다(과당 부하검사는 위험)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 카르니틴 왕복 장애(CPT II 등) 같은 지방산 산화 장애는 공복·질병 때 케톤 없는 저혈당을 만든다. 이 아이는 소변 케톤이 중등도로 나오고, 증상이 공복이 아니라 식후에 오며, 과일 도입과 맞물려 있다.\n(B) 갈락토오스-1-인산 축적(갈락토오스혈증)은 젖당이 들어오는 생후 첫 주에 황달·백내장·대장균 패혈증으로 시작해야 한다. 이 아이는 모유로 잘 자랐고 신생아 선별검사가 정상이라 가능성이 낮다 — 환원당 양성·스틱 음성이라는 소변 소견만 보고 고르기 쉬운 함정이다.\n(D) 포도당-6-인산분해효소 결핍(von Gierke)도 젖산·요산이 오르고 간이 커지지만, 저혈당이 공복(밤새 금식)에 오고 생후 3–4개월부터 음식 종류와 무관하게 나타난다. 「과일을 시작한 뒤」「식후 1시간」이라는 시간 관계가 이 보기를 낮춘다.\n(E) 과당인산화효소 결핍(본태성 과당뇨)은 과당이 F1P 로 인산화되지 못해 그냥 소변으로 빠져나가는 양성 질환이다. 인산이 붙잡히지 않으므로 저혈당·간비대·젖산산증이 생기지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "이유식·주스 시작 뒤 식후 저혈당 + 환원당(+)/포도당 스틱(−) + 인↓·젖산↑·요산↑ = 알돌라아제 B 결핍 → F1P 가 인산·ATP 를 붙잡아 글리코겐 분해·포도당신생합성 정지."
+   },
+   {
+    "k": "출처",
+    "v": "Lippincott Biochemistry 8e Ch 12; Nelson 21e Ch 105; GeneReviews Hereditary Fructose Intolerance. 기전·진단 원칙에 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fructose Metabolism; Nelson Textbook of Pediatrics 21e Ch 105 Defects in Metabolism of Carbohydrates; Baker P et al. Hereditary Fructose Intolerance, GeneReviews 2015/2021)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "84/50 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "148 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "34 /min"
+   },
+   {
+    "name": "체온",
+    "value": "37.0 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈당",
+    "value": "38 mg/dL",
+    "ref": "60–100"
+   },
+   {
+    "name": "젖산",
+    "value": "4.8 mmol/L",
+    "ref": "0.5–2.2"
+   },
+   {
+    "name": "요산",
+    "value": "9.2 mg/dL",
+    "ref": "2.0–5.5"
+   },
+   {
+    "name": "인",
+    "value": "2.1 mg/dL",
+    "ref": "4.5–6.5 (영아)"
+   },
+   {
+    "name": "중탄산염",
+    "value": "16 mEq/L",
+    "ref": "20–26"
+   },
+   {
+    "name": "암모니아",
+    "value": "42 µmol/L",
+    "ref": "< 50"
+   },
+   {
+    "name": "AST / ALT",
+    "value": "168 / 142 U/L",
+    "ref": "< 40 / < 40"
+   },
+   {
+    "name": "소변 케톤",
+    "value": "중등도(++)",
+    "ref": "음성"
+   },
+   {
+    "name": "소변 환원당",
+    "value": "양성",
+    "ref": "음성"
+   },
+   {
+    "name": "소변 포도당(glucose oxidase 스틱)",
+    "value": "음성",
+    "ref": "음성"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "식이로 촉발되는 영아 저혈당 — 촉발 음식 × 소변 당 × 케톤 → 진단\n─────────────────────────────────────────────\n과일·주스·자당 시작 후 · 환원당(+) 포도당 스틱(−) · 케톤(+) · 젖산↑ 요산↑ 인↓ → **유전성 과당불내증(알돌라아제 B)** → 과당·자당·소르비톨 제거, ALDOB 유전자 검사\n모유·분유 첫 주 · 환원당(+) 포도당 스틱(−) · 황달·백내장·대장균 패혈증 → 갈락토오스혈증(GALT) → 젖당 제거\n공복(밤새) · 생후 3–4개월 · 젖산↑ 요산↑ 고지혈증 · 인형 얼굴·간비대 · 글루카곤에 반응 없음 → 포도당-6-인산분해효소 결핍(von Gierke) → 잦은 식사·옥수수전분\n공복·질병 후 · **케톤(−)** 저혈당 · 아실카르니틴 이상 → 지방산 산화 장애(MCAD 등) → 공복 회피\n과당 섭취 후 소변 환원당(+)뿐, 증상 없음 → 본태성 과당뇨(과당인산화효소) → 치료 불필요\n─────────────────────────────────────────────\n각주1: 과당 대사 — 과당 → (과당인산화효소) F1P → (알돌라아제 B) DHAP + 글리세르알데히드. 알돌라아제 B 는 포도당신생합성의 알돌라아제 단계도 맡아 두 경로가 동시에 막힌다.\n각주2: 확진에 과당 정맥 부하검사는 저혈당·간부전을 유발할 수 있어 쓰지 않는다 — 유전자 검사(ALDOB) 우선.\n각주3: 미국 표준 신생아 선별(RUSP)에 유전성 과당불내증은 포함되지 않는다 — 선별 정상이 배제가 아니다.\n",
+   "최신지견": "유전성 과당불내증은 이유식·주스 도입 시기에 처음 드러나는 경우가 가장 흔하며, 진단 전 반복 노출은 간부전·근위세뇨관 기능장애(판코니형)를 남길 수 있다. 진단은 위험한 과당 부하검사 대신 ALDOB 표적 유전자 패널로 옮겨 갔고, 약물 부형제(자당·소르비톨)·정맥 과당/소르비톨 수액이 치명적 저혈당을 일으킨 보고가 있어 입원 시 수액 성분 확인이 강조된다.",
+   "참고문헌": [
+    "Abali EE, Cline SD, Franklin DS, Viselli SM. Lippincott Illustrated Reviews: Biochemistry. 8th ed. Ch 12 Metabolism of Monosaccharides and Disaccharides",
+    "Kliegman RM et al. Nelson Textbook of Pediatrics. 21st ed. Ch 105 Defects in Metabolism of Carbohydrates",
+    "Baker P, Ayres L, Gaughan S, Weisfeld-Adams J. Hereditary Fructose Intolerance. GeneReviews [Internet]. 2015, updated 2021"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "과일·주스를 시작한 뒤에 나타난 식후 저혈당 + 환원당 양성·포도당 음성 소변 + 젖산·요산 상승·저인산혈증 = 유전성 과당불내증이며, 저혈당의 기전은 fructose-1-phosphate 가 무기인산·ATP 를 붙잡아 글리코겐 분해와 포도당신생합성을 막는 것이다.",
+   "rival": [
+    "D",
+    "B"
+   ],
+   "discriminator": "포도당-6-인산분해효소 결핍(D)도 젖산·요산이 오르지만 저혈당이 공복에 오고 생후 3–4개월부터 음식과 무관하게 나타나며, 여기서는 「과일을 시작한 뒤」「식후 1시간」에 온다. 갈락토오스혈증(B)은 모유(젖당)만 먹을 때 신생아기에 시작되어야 하는데 이 아이는 모유로 잘 자랐고 신생아 선별검사도 정상이다.",
+   "steps": 2,
+   "key": [
+    {
+     "item": "began shortly after his parents started giving him pureed fruit and diluted juice",
+     "why": "과당·자당 노출 시점과 발병이 일치 — 과당 대사 이상을 가리킨다",
+     "also": []
+    },
+    {
+     "item": "he had been thriving on breast milk alone",
+     "why": "젖당(포도당+갈락토오스)에는 문제가 없었다 → 갈락토오스혈증 가능성을 낮춘다",
+     "also": [
+      "의미 있는 정상·음성 소견"
+     ]
+    },
+    {
+     "item": "unusually drowsy about an hour after a meal",
+     "why": "공복이 아니라 식후 저혈당 — 섭취한 당이 원인임을 시사, 포도당-6-인산분해효소 결핍(공복 저혈당)과 대비",
+     "also": []
+    },
+    {
+     "item": "소변 환원당",
+     "why": "양성 — 소변에 환원당이 나온다",
+     "also": []
+    },
+    {
+     "item": "소변 포도당(glucose oxidase 스틱)",
+     "why": "음성 — 환원당이 포도당이 아니다(과당 또는 갈락토오스), 두 검사의 조합이 결정적",
+     "also": []
+    },
+    {
+     "item": "인",
+     "why": "저인산혈증 — F1P 가 무기인산을 붙잡아 두는 기전의 직접 증거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 케톤",
+     "why": "케톤 생성이 유지된다 → 지방산 산화 장애(hypoketotic)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "암모니아",
+     "why": "정상 — 요소회로 이상·라이 증후군 유사 상황의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "newborn screen, which included galactosemia and medium-chain acyl-CoA dehydrogenase deficiency, was reported as normal",
+     "why": "갈락토오스혈증·MCAD 결핍 가능성을 낮춘다(배제는 아니다) — 유전성 과당불내증은 미국 표준 선별에 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "요산",
+     "why": "상승 — ATP 고갈 → AMP 탈아미노효소 활성화. 포도당-6-인산분해효소 결핍에서도 오르므로 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "모유로 잘 자라던 영아가 과일·주스를 시작한 뒤 식후 저혈당·구토·간비대를 보이고, 소변에 포도당이 아닌 환원당이 나오며 인이 낮고 젖산·요산이 높다면 유전성 과당불내증이다. 저혈당은 알돌라아제 B 결핍으로 쌓인 fructose-1-phosphate 가 무기인산과 ATP 를 붙잡아 글리코겐 가인산분해효소와 포도당신생합성을 막기 때문에 생긴다. 케톤이 나오고 암모니아가 정상이며 신생아 선별검사가 정상이라는 점이 지방산 산화 장애·갈락토오스혈증의 가능성을 낮춘다.",
+   "switch": {
+    "choice": "B",
+    "condition": "증상이 생후 첫 주에 모유·조제분유 수유와 함께 시작되고 백내장·대장균 패혈증이 동반되면 갈락토오스-1-인산 축적(갈락토오스혈증)이 더 적절하다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.hereditary-fructose-intolerance.hypoglycemia-mechanism",
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0165",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "Pneumocystis Pneumonia in a Toddler With Normal B Cells, Low IgG and High IgM — The T-Cell Signal Without Which B Cells Never Switch Class",
+  "type": "Pneumocystis Pneumonia in a Toddler With Normal B Cells, Low IgG and High IgM — The T-Cell Signal Without Which B Cells Never Switch Class",
+  "difficulty": 4,
+  "created": "2026-09-22",
+  "vignette": "A 14-month-old boy is brought to the emergency department because of 5 days of cough and fever and 2 days of progressively rapid breathing. Since 6 months of age he has had two episodes of otitis media and one of lobar pneumonia, each of which resolved with oral antibiotics, and for the past month he has had watery diarrhea without blood. He was born at term; the umbilical cord separated at 8 days. There is no eczema. His maternal uncle died of pneumonia at 2 years of age. His vital signs are shown. Examination shows an ill-appearing infant with intercostal retractions and diffuse fine crackles over both lungs. There is no lymphadenopathy or hepatosplenomegaly. Chest radiograph shows bilateral diffuse interstitial infiltrates. Laboratory studies, including bronchoalveolar lavage, are shown.",
+  "question": "A defect in which of the following is the most likely cause of this patient's condition?",
+  "options": [
+   "Bruton tyrosine kinase in pre-B cells",
+   "Common gamma chain of the interleukin-2 receptor",
+   "Wiskott-Aldrich syndrome protein in hematopoietic cells",
+   "CD40 ligand on activated T lymphocytes",
+   "Adenosine deaminase in lymphocytes"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 2단계 추론. ① 패턴 — 생후 6개월(모체 IgG 소실) 이후 반복되는 세균성 중이염·폐렴에 기회감염(미만성 간질 침윤 + 세척액의 5–8 µm 낭 = Pneumocystis jirovecii 폐렴, 한 달째 물설사)이 겹치고 외삼촌이 2세에 폐렴으로 사망한 X 연관 가족력이 있다. 면역표현형은 B 세포 980·T 세포 3,400 으로 둘 다 정상인데 IgG 110·IgA < 7 로 낮고 IgM 380 으로 높다 = 클래스 전환 실패. ② 기전 — 클래스 전환에는 활성화 CD4⁺ T 세포의 CD40 ligand(CD154) 가 B 세포 CD40 에 결합해 AID 를 켜는 신호가 필요하다. CD40L 이 없으면 B 세포는 IgM 만 만들고 배중심·친화도 성숙이 안 되며, 같은 CD40 신호가 대식세포 IL-12 분비에도 필요해 Pneumocystis·Cryptosporidium 같은 세포내 병원체 방어까지 무너진다(호중구 16 % 도 이 질환에 흔한 호중구감소). 치료는 IgG 보충 + TMP-SMX 예방 + 조혈모세포이식.\n- 오답감별:\n  - (A) BTK 결핍(XLA)은 pre-B 세포 단계에서 발달이 멈춰 CD19⁺ B 세포가 거의 없고 IgM 까지 모두 낮다. 반복 세균 감염과 X 연관 가족력은 같아서 끌리지만, B 세포 수 정상·IgM 상승·Pneumocystis 감염이 맞지 않는다.\n  - (B) 공통 γ 사슬(IL-2Rγ) 결핍은 X 연관 SCID 로 T 세포와 NK 세포가 없고 생후 첫 달부터 성장부전·구강 칸디다·Pneumocystis 로 온다. CD3⁺ T 세포 3,400 으로 정상이고 6개월까지 건강했던 점이 맞지 않는다.\n  - (C) WASP 결핍은 습진·작은 혈소판의 혈소판감소증·감염 3징이며 IgM 이 낮고 IgA·IgE 가 높다. 습진이 없고 혈소판이 312,000 에 크기 정상이라 가능성이 낮다.\n  - (E) ADA 결핍은 상염색체 열성 SCID 로 독성 대사물(dATP)이 T·B·NK 세포를 모두 죽인다. 림프구가 70 % 로 풍부하고 T·B 세포 수가 정상이라 맞지 않고, 외삼촌 가족력도 X 연관 쪽을 가리킨다.\n- 임상핵심: B 세포 정상 + IgG·IgA ↓ + IgM ↑ + 기회감염(Pneumocystis·Cryptosporidium) + 호중구감소 = CD40L 결핍(X 연관 hyper-IgM) — 클래스 전환의 T 세포 신호가 없다.\n- 출처: Abbas 10e Ch 21; Nelson 21e Ch 150; IUIS 2022 분류. 기전·분류에 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 패턴 — 생후 6개월(모체 IgG 소실) 이후 반복되는 세균성 중이염·폐렴에 기회감염(미만성 간질 침윤 + 세척액의 5–8 µm 낭 = Pneumocystis jirovecii 폐렴, 한 달째 물설사)이 겹치고 외삼촌이 2세에 폐렴으로 사망한 X 연관 가족력이 있다. 면역표현형은 B 세포 980·T 세포 3,400 으로 둘 다 정상인데 IgG 110·IgA < 7 로 낮고 IgM 380 으로 높다 = 클래스 전환 실패. ② 기전 — 클래스 전환에는 활성화 CD4⁺ T 세포의 CD40 ligand(CD154) 가 B 세포 CD40 에 결합해 AID 를 켜는 신호가 필요하다. CD40L 이 없으면 B 세포는 IgM 만 만들고 배중심·친화도 성숙이 안 되며, 같은 CD40 신호가 대식세포 IL-12 분비에도 필요해 Pneumocystis·Cryptosporidium 같은 세포내 병원체 방어까지 무너진다(호중구 16 % 도 이 질환에 흔한 호중구감소). 치료는 IgG 보충 + TMP-SMX 예방 + 조혈모세포이식."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) BTK 결핍(XLA)은 pre-B 세포 단계에서 발달이 멈춰 CD19⁺ B 세포가 거의 없고 IgM 까지 모두 낮다. 반복 세균 감염과 X 연관 가족력은 같아서 끌리지만, B 세포 수 정상·IgM 상승·Pneumocystis 감염이 맞지 않는다.\n(B) 공통 γ 사슬(IL-2Rγ) 결핍은 X 연관 SCID 로 T 세포와 NK 세포가 없고 생후 첫 달부터 성장부전·구강 칸디다·Pneumocystis 로 온다. CD3⁺ T 세포 3,400 으로 정상이고 6개월까지 건강했던 점이 맞지 않는다.\n(C) WASP 결핍은 습진·작은 혈소판의 혈소판감소증·감염 3징이며 IgM 이 낮고 IgA·IgE 가 높다. 습진이 없고 혈소판이 312,000 에 크기 정상이라 가능성이 낮다.\n(E) ADA 결핍은 상염색체 열성 SCID 로 독성 대사물(dATP)이 T·B·NK 세포를 모두 죽인다. 림프구가 70 % 로 풍부하고 T·B 세포 수가 정상이라 맞지 않고, 외삼촌 가족력도 X 연관 쪽을 가리킨다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "B 세포 정상 + IgG·IgA ↓ + IgM ↑ + 기회감염(Pneumocystis·Cryptosporidium) + 호중구감소 = CD40L 결핍(X 연관 hyper-IgM) — 클래스 전환의 T 세포 신호가 없다."
+   },
+   {
+    "k": "출처",
+    "v": "Abbas 10e Ch 21; Nelson 21e Ch 150; IUIS 2022 분류. 기전·분류에 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology 10e — Congenital Immunodeficiencies; Nelson Textbook of Pediatrics 21e Ch 150 Primary Defects of Antibody Production; Tangye SG et al. Human Inborn Errors of Immunity: 2022 IUIS Update, J Clin Immunol 2022)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "92/58 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "152 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "58 /min"
+   },
+   {
+    "name": "체온",
+    "value": "38.9 °C"
+   },
+   {
+    "name": "산소포화도(대기)",
+    "value": "88 %"
+   }
+  ],
+  "labs": [
+   {
+    "name": "백혈구",
+    "value": "6,800 /mm³ (호중구 16 %, 림프구 70 %)",
+    "ref": "6,000–17,000"
+   },
+   {
+    "name": "혈색소",
+    "value": "10.9 g/dL",
+    "ref": "10.5–13.5"
+   },
+   {
+    "name": "혈소판",
+    "value": "312,000 /mm³ (크기 정상)",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "CD3⁺ T 세포",
+    "value": "3,400 /µL",
+    "ref": "2,100–6,200"
+   },
+   {
+    "name": "CD19⁺ B 세포",
+    "value": "980 /µL",
+    "ref": "700–1,300"
+   },
+   {
+    "name": "IgG",
+    "value": "110 mg/dL",
+    "ref": "400–1,000"
+   },
+   {
+    "name": "IgA",
+    "value": "< 7 mg/dL",
+    "ref": "15–100"
+   },
+   {
+    "name": "IgM",
+    "value": "380 mg/dL",
+    "ref": "40–150"
+   },
+   {
+    "name": "HIV-1 RNA PCR",
+    "value": "검출 안 됨",
+    "ref": "검출 안 됨"
+   },
+   {
+    "name": "기관지폐포세척액 메테나민은 염색",
+    "value": "5–8 µm 낭(cyst) 다수",
+    "ref": "음성"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "영아 반복 감염 — 감염 유형 × 림프구 수 × 면역글로불린 패턴 → 결함 부위\n─────────────────────────────────────────────\n세균성 부비동·폐 감염만, 생후 6개월 이후 · B 세포 거의 없음 · IgG·IgA·IgM 모두 ↓ · 편도 없음 → XLA(BTK)\n세균 감염 + **기회감염(Pneumocystis·Cryptosporidium·CMV)** · B·T 세포 수 정상 · IgG·IgA ↓ **IgM 정상~↑** · 호중구감소 → **X 연관 hyper-IgM(CD40L)**; 상염색체형은 CD40·AID·UNG(AID/UNG 은 기회감염 없음)\n생후 첫 달부터 성장부전·구강 칸디다·Pneumocystis · T 세포 없음(B 세포 ± ) · 모든 Ig ↓ → SCID(γc·JAK3·ADA·IL-7Rα 등) → 응급 조혈모세포이식\n습진 + 작은 혈소판의 혈소판감소증 + 감염 · IgM ↓ IgA·IgE ↑ → Wiskott-Aldrich(WASP)\n탯줄 분리 지연(> 30일) · 고름 없는 감염 · 백혈구 매우 ↑ → 백혈구 부착 결핍(CD18)\n─────────────────────────────────────────────\n각주1: CD40L 은 활성화 CD4⁺ T 세포에 발현되어 B 세포 CD40 에 결합 → AID 발현 → 클래스 전환·체세포 과돌연변이·배중심. 같은 신호가 대식세포·수지상세포의 IL-12 분비를 유도하므로 결핍 시 세포내 병원체에도 약하다.\n각주2: 치료 — IgG 보충(IgM 은 대신하지 못함), Pneumocystis 예방(TMP-SMX), 끓인 물(Cryptosporidium), G-CSF(호중구감소), 조혈모세포이식이 근치. 담관암·간질환 위험 감시.\n",
+   "최신지견": "IUIS 2022 분류는 CD40L 결핍을 「항체 결핍」이 아니라 「세포·체액 복합 면역결핍」으로 두어 기회감염 감수성을 강조한다. 조기 조혈모세포이식 성적이 만성 간·담도 질환(Cryptosporidium 관련)이 생기기 전에 시행할수록 좋다는 국제 코호트 자료가 있으며, 유전자 치료가 임상 연구 중이다.",
+   "참고문헌": [
+    "Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology. 10th ed. Ch 21 Congenital and Acquired Immunodeficiencies",
+    "Kliegman RM et al. Nelson Textbook of Pediatrics. 21st ed. Ch 150 Primary Defects of Antibody Production",
+    "Tangye SG et al. Human Inborn Errors of Immunity: 2022 Update on the Classification from the IUIS Expert Committee. J Clin Immunol 2022;42:1473"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "B 세포 수는 정상인데 IgG·IgA 가 낮고 IgM 만 높으며(클래스 전환 실패), Pneumocystis 폐렴·만성 설사 같은 기회감염(T 세포 도움 결함)이 겹치면 X 연관 hyper-IgM 증후군 = 활성화 T 세포의 CD40 ligand 결핍이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "XLA(A)는 CD19⁺ B 세포가 거의 없고 IgM 까지 함께 낮으며 Pneumocystis 감염이 특징이 아닌데, 이 아이는 B 세포 980 /µL 로 정상이고 IgM 이 380 으로 높다. SCID(B)는 CD3⁺ T 세포가 없거나 매우 낮고 생후 첫 달부터 성장부전으로 오는데, 이 아이는 T 세포 3,400 으로 정상이고 6개월까지 건강했다.",
+   "steps": 2,
+   "key": [
+    {
+     "item": "CD19⁺ B 세포",
+     "why": "정상 — B 세포가 있는데 항체 클래스만 잘못됐다 → XLA(B 세포 부재)의 가능성을 낮추고 클래스 전환 결함을 가리킨다",
+     "also": []
+    },
+    {
+     "item": "IgM",
+     "why": "380 으로 상승 — 클래스 전환이 안 되어 IgM 만 쌓인다(hyper-IgM 의 이름)",
+     "also": []
+    },
+    {
+     "item": "IgG",
+     "why": "110 으로 매우 낮음 — IgA 와 함께 전환된 동형이 없다 → 반복 세균 감염의 원인",
+     "also": []
+    },
+    {
+     "item": "기관지폐포세척액 메테나민은 염색",
+     "why": "5–8 µm 낭 = Pneumocystis jirovecii — 항체 결핍만으로는 설명되지 않는 기회감염 → T 세포 도움(CD40L–대식세포 축) 결함",
+     "also": []
+    },
+    {
+     "item": "His maternal uncle died of pneumonia at 2 years of age",
+     "why": "X 연관 유전 양상 — CD40L·BTK·γc 모두 X 연관이라 단독으로는 가르지 못하지만 유전성 면역결핍을 가리킨다",
+     "also": [
+      "비중이 낮은 정보"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "CD3⁺ T 세포",
+     "why": "정상 수 — 중증복합면역결핍(공통 γ 사슬·ADA 결핍)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "HIV-1 RNA PCR",
+     "why": "검출 안 됨 — 영아 Pneumocystis 폐렴의 가장 흔한 후천적 원인을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈소판",
+     "why": "수·크기 정상 + 습진 없음 → Wiskott-Aldrich 증후군의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "watery diarrhea without blood",
+     "why": "Cryptosporidium 등에 의한 만성 설사는 CD40L 결핍의 특징적 동반 소견이지만 원인균이 확인되지 않아 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "백혈구",
+     "why": "호중구 16 % — 호중구감소는 CD40L 결핍에 흔하지만 감염 중 변동이 커 단독 근거로 쓰지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "생후 6개월 뒤 반복 세균 감염에 Pneumocystis 폐렴·만성 설사 같은 기회감염이 겹치고, B 세포와 T 세포 수는 정상인데 IgG·IgA 가 낮고 IgM 만 높다. 이것은 클래스 전환 실패 + T 세포 도움 결함의 조합이며, 활성화 T 세포의 CD40 ligand 가 B 세포 CD40 과 대식세포를 자극하지 못하는 X 연관 hyper-IgM 증후군이다. B 세포 부재(XLA)·T 세포 부재(SCID)·작은 혈소판(WAS)이 아니라는 검사값이 경쟁 진단을 낮춘다.",
+   "switch": {
+    "choice": "A",
+    "condition": "CD19⁺ B 세포가 거의 없고(< 1 %) IgM 을 포함한 모든 동형이 함께 낮으며 편도가 보이지 않으면 BTK 결핍(X 연관 무감마글로불린혈증)이 더 적절하다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.immuno.hyper-igm-syndrome.cd40l-defect",
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0166",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "A Pulse That Fades With Every Breath in a Woman With Metastatic Cancer and a Large Effusion — Why Inspiration Steals Left Ventricular Filling When the Pericardium Cannot Stretch",
+  "type": "A Pulse That Fades With Every Breath in a Woman With Metastatic Cancer and a Large Effusion — Why Inspiration Steals Left Ventricular Filling When the Pericardium Cannot Stretch",
+  "difficulty": 4,
+  "created": "2026-09-22",
+  "vignette": "A 61-year-old woman with breast cancer metastatic to the lungs and mediastinal lymph nodes comes to the emergency department because of 3 days of progressive exertional dyspnea and lightheadedness on standing. She has no chest pain. Her vital signs are shown. She appears anxious and prefers to sit forward. The jugular veins are distended to the angle of the jaw while she is sitting upright. The heart sounds are distant, the lungs are clear, and there is no peripheral edema. While the blood pressure cuff is slowly deflated, the Korotkoff sounds are at first heard only during expiration, and they are heard throughout the respiratory cycle only after the cuff pressure has fallen a further 24 mm Hg. Laboratory studies and an electrocardiogram are shown. Bedside echocardiography shows a large circumferential pericardial effusion with collapse of the right atrium and the right ventricular free wall during diastole.",
+  "question": "Which of the following best explains the inspiratory fall in this patient's systolic blood pressure?",
+  "options": [
+   "Decreased venous return to the right ventricle during inspiration",
+   "Leftward shift of the interventricular septum during inspiration",
+   "Impaired left ventricular relaxation from subendocardial ischemia",
+   "Vagally mediated slowing of the sinus rate during inspiration",
+   "Reduced left ventricular contractility from coronary compression"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 2단계 추론. ① 진단 — 전이암 환자의 목정맥 확장·먼 심음, 맥박 118 의 빈맥, 심전도의 저전압 + 전기적 교대맥, 초음파의 큰 심낭삼출 + 우심방·우심실 이완기 허탈 = 심장눌림증. Korotkoff 음이 호기에만 들리다가 24 mmHg 더 내려가야 호흡 주기 내내 들리는 것은 흡기 수축기 혈압 하강 > 10 mmHg, 곧 기이맥이다. ② 기전 — 정상에서도 흡기에는 흉강내압이 내려가 우심실 정맥환류가 늘고 폐혈관에 피가 잠시 머물러 좌심실 충만이 조금 줄어 수축기 혈압이 10 mmHg 미만으로 떨어진다. 심낭에 액체가 차 심장 전체 부피가 고정되면 흡기에 커진 우심실이 바깥으로 팽창할 수 없어 심실중격을 왼쪽으로 밀고, 그만큼 좌심실 충만·박출량이 줄어 혈압이 크게 떨어진다(심실 상호의존). 치료는 긴급 심낭천자다.\n- 오답감별:\n  - (A) 방향이 반대다. 흡기에는 흉강내압이 내려가 정맥환류가 늘어난다 — 그래서 우심실이 커지고 중격이 밀리는 것이다. 「흡기에 혈압이 떨어지니 피가 덜 들어오나 보다」는 직관이 만드는 함정이며, 목정맥이 턱까지 확장된 것도 환류가 부족해서가 아니라 심낭이 막아서다.\n  - (C) 심내막하 허혈에 의한 이완 장애는 호흡 주기에 따라 켜졌다 꺼지지 않는다. 흉통이 없고 트로포닌 < 0.01 이라 허혈 자체의 가능성도 낮다.\n  - (D) 미주신경성 동성 부정맥은 흡기에 오히려 맥이 빨라지고 호기에 느려지며, 정상인의 미세한 변동이다. 맥박 118 의 동성빈맥에서 24 mmHg 의 혈압 변동을 만들지 못한다.\n  - (E) 심낭액이 관상동맥을 눌러 수축력이 떨어진다는 근거는 없다. 눌림증에서 박출량이 줄어드는 것은 수축력이 아니라 충만(이완기) 이 막히기 때문이며, 트로포닌 정상이 심근 손상을 낮춘다.\n- 임상핵심: 목정맥 확장 + 먼 심음 + 기이맥 + 전기적 교대맥 = 눌림증 → 흡기 우심실 팽창이 고정된 심낭 안에서 중격을 왼쪽으로 밀어 좌심실 충만을 빼앗는다(심실 상호의존) → 심낭천자.\n- 출처: Guyton & Hall 14e Ch 20; Harrison 21e Ch 270; ESC 2015 심낭질환 지침. 기전 설명에 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 진단 — 전이암 환자의 목정맥 확장·먼 심음, 맥박 118 의 빈맥, 심전도의 저전압 + 전기적 교대맥, 초음파의 큰 심낭삼출 + 우심방·우심실 이완기 허탈 = 심장눌림증. Korotkoff 음이 호기에만 들리다가 24 mmHg 더 내려가야 호흡 주기 내내 들리는 것은 흡기 수축기 혈압 하강 > 10 mmHg, 곧 기이맥이다. ② 기전 — 정상에서도 흡기에는 흉강내압이 내려가 우심실 정맥환류가 늘고 폐혈관에 피가 잠시 머물러 좌심실 충만이 조금 줄어 수축기 혈압이 10 mmHg 미만으로 떨어진다. 심낭에 액체가 차 심장 전체 부피가 고정되면 흡기에 커진 우심실이 바깥으로 팽창할 수 없어 심실중격을 왼쪽으로 밀고, 그만큼 좌심실 충만·박출량이 줄어 혈압이 크게 떨어진다(심실 상호의존). 치료는 긴급 심낭천자다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 방향이 반대다. 흡기에는 흉강내압이 내려가 정맥환류가 늘어난다 — 그래서 우심실이 커지고 중격이 밀리는 것이다. 「흡기에 혈압이 떨어지니 피가 덜 들어오나 보다」는 직관이 만드는 함정이며, 목정맥이 턱까지 확장된 것도 환류가 부족해서가 아니라 심낭이 막아서다.\n(C) 심내막하 허혈에 의한 이완 장애는 호흡 주기에 따라 켜졌다 꺼지지 않는다. 흉통이 없고 트로포닌 < 0.01 이라 허혈 자체의 가능성도 낮다.\n(D) 미주신경성 동성 부정맥은 흡기에 오히려 맥이 빨라지고 호기에 느려지며, 정상인의 미세한 변동이다. 맥박 118 의 동성빈맥에서 24 mmHg 의 혈압 변동을 만들지 못한다.\n(E) 심낭액이 관상동맥을 눌러 수축력이 떨어진다는 근거는 없다. 눌림증에서 박출량이 줄어드는 것은 수축력이 아니라 충만(이완기) 이 막히기 때문이며, 트로포닌 정상이 심근 손상을 낮춘다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "목정맥 확장 + 먼 심음 + 기이맥 + 전기적 교대맥 = 눌림증 → 흡기 우심실 팽창이 고정된 심낭 안에서 중격을 왼쪽으로 밀어 좌심실 충만을 빼앗는다(심실 상호의존) → 심낭천자."
+   },
+   {
+    "k": "출처",
+    "v": "Guyton & Hall 14e Ch 20; Harrison 21e Ch 270; ESC 2015 심낭질환 지침. 기전 설명에 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology 14e — Cardiac Output, Venous Return; Harrison's Principles of Internal Medicine 21e Ch 270 Pericardial Disease; Adler Y et al. 2015 ESC Guidelines for the Diagnosis and Management of Pericardial Diseases, Eur Heart J 2015)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "108/76 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "118 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "24 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.9 °C"
+   },
+   {
+    "name": "산소포화도(대기)",
+    "value": "96 %"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈색소",
+    "value": "10.8 g/dL",
+    "ref": "12–16"
+   },
+   {
+    "name": "백혈구",
+    "value": "7,600 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "혈소판",
+    "value": "214,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "크레아티닌",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.2"
+   },
+   {
+    "name": "젖산",
+    "value": "1.6 mmol/L",
+    "ref": "0.5–2.2"
+   },
+   {
+    "name": "트로포닌 I",
+    "value": "< 0.01 ng/mL",
+    "ref": "< 0.04"
+   },
+   {
+    "name": "심전도",
+    "value": "동성빈맥, 전 유도 저전압, QRS 진폭이 박동마다 교대로 커졌다 작아짐",
+    "ref": "—"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "기이맥(흡기 수축기 혈압 하강 > 10 mmHg) — 생리 → 원인 → 감별\n─────────────────────────────────────────────\n정상 흡기: 흉강내압 ↓ → 우심실 정맥환류 ↑, 폐혈관 용량 ↑ → 좌심실 충만 약간 ↓ → 수축기 혈압 < 10 mmHg 하강\n**심장눌림증**: 심낭 부피 고정 → 늘어난 우심실이 **중격을 왼쪽으로** → 좌심실 충만·박출량 ↓ → 하강 > 10 mmHg(심실 상호의존)\n같이 보이는 것: 목정맥 확장·먼 심음·저혈압·빈맥·저전압·전기적 교대맥·우심방/우심실 이완기 허탈\n기이맥이 있는 다른 상황: 중증 천식·COPD 악화(흉강내압 변동 큼), 대량 폐색전, 긴장기흉, 수축성 심낭염 일부\n눌림증인데 기이맥이 없는 경우: 심한 대동맥판 역류, 심방중격결손, 좌심실 비대·기능장애, 국소 삼출\n치료: 긴급 **심낭천자**(초음파 유도) — 이뇨제·양압환기는 충만을 더 줄여 악화시킨다; 정맥 수액은 저혈량일 때만 일시적\n─────────────────────────────────────────────\n각주1: 수축성 심낭염은 흡기에 목정맥압이 오르는 Kussmaul 징후가 특징이고 눌림증에서는 보통 없다 — 두 질환의 감별점.\n각주2: 좌심실 충만이 줄어드는 데는 흡기 때 폐혈관에 피가 머무는 것과 흉강내압 하강이 좌심실 후부하를 상대적으로 올리는 것도 기여하지만, 눌림증에서 하강 폭을 키우는 핵심은 중격 이동이다.\n",
+   "최신지견": "2015 ESC 심낭질환 지침은 눌림증 진단을 임상 소견 + 심초음파(우심방 수축기 허탈·우심실 이완기 허탈·승모판 유입 속도의 흡기 변동 > 25 %·하대정맥 확장)로 하고, 혈역학이 불안정하면 영상 확인 후 지체 없이 심낭천자를 권한다. 악성 삼출은 재발이 흔해 배액관 유지·심낭 경화술·심낭창을 고려한다.",
+   "참고문헌": [
+    "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. Ch 20 Cardiac Output, Venous Return, and Their Regulation",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. Ch 270 Pericardial Disease",
+    "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "큰 심낭삼출 + 우심방·우심실 이완기 허탈 + 목정맥 확장·먼 심음·전기적 교대맥 = 심장눌림증이며, 기이맥(흡기 수축기 혈압 24 mmHg 하강)은 흡기에 늘어난 우심실 충만이 고정된 심낭 부피 안에서 심실중격을 왼쪽으로 밀어 좌심실 충만을 빼앗기 때문이다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "흡기에는 흉강내압이 내려가 우심실로의 정맥환류가 줄지 않고 **늘어난다** — 늘어난 우심실이 중격을 밀어 좌심실을 좁히는 것이 핵심이다(A 는 방향이 반대). 트로포닌 < 0.01 이고 흉통이 없으며 젖산이 정상이라 심근 허혈·수축력 저하(E·C)의 가능성이 낮다.",
+   "steps": 2,
+   "key": [
+    {
+     "item": "Korotkoff sounds are at first heard only during expiration, and they are heard throughout the respiratory cycle only after the cuff pressure has fallen a further 24 mm Hg",
+     "why": "흡기 수축기 혈압 하강 24 mmHg(> 10) = 기이맥 — 문항이 묻는 현상",
+     "also": []
+    },
+    {
+     "item": "collapse of the right atrium and the right ventricular free wall during diastole",
+     "why": "심낭내압이 우측 충만압을 넘어섰다 = 눌림증 생리(고정된 심낭 부피)",
+     "also": []
+    },
+    {
+     "item": "The jugular veins are distended to the angle of the jaw",
+     "why": "정맥환류가 막혀 우심방압 상승 — 흡기 정맥환류 감소(A)가 아니라 심낭 압박이 문제임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "심전도",
+     "why": "저전압 + 박동마다 QRS 진폭이 교대 = 심낭액 속에서 심장이 흔들리는 전기적 교대맥 — 큰 삼출의 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "트로포닌 I",
+     "why": "< 0.01 — 심근 허혈·심근염에 의한 이완 장애·수축력 저하(C·E)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has no chest pain",
+     "why": "허혈성 기전(C·E)의 가능성을 더 낮춘다",
+     "also": []
+    },
+    {
+     "item": "the lungs are clear, and there is no peripheral edema",
+     "why": "좌심부전·폐색전 등 다른 호흡곤란 원인의 가능성을 낮추고, 정맥 울혈이 심낭 압박에 의한 것임을 지지한다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "맥박",
+     "why": "118 회 동성빈맥 — 박출량 감소를 보상하는 반응. 미주신경 서맥(D)과는 방향이 반대다",
+     "also": []
+    },
+    {
+     "item": "젖산",
+     "why": "정상 — 아직 조직 관류는 유지되는 초기 눌림증; 기전 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "전이암 환자의 목정맥 확장·먼 심음·전기적 교대맥과 우심방·우심실 이완기 허탈은 심장눌림증이다. 흡기에는 정맥환류가 늘어나 우심실이 커지는데, 심낭에 액체가 차 전체 부피가 고정되면 커진 우심실이 심실중격을 왼쪽으로 밀어 좌심실 충만과 박출량을 빼앗는다. 이것이 흡기 수축기 혈압 24 mmHg 하강(기이맥)의 기전이며, 정상 트로포닌·흉통 없음이 허혈성 대안을 낮춘다.",
+   "switch": {
+    "choice": "A",
+    "condition": "심낭 압박 없이 심한 저혈량(출혈)으로 흡기 때 우심실 충만이 과도하게 변동한다면 정맥환류 자체의 변화가 혈압 변동을 설명하지만, 그때는 목정맥이 확장되지 않고 허탈된다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.cardiac-tamponade.pulsus-paradoxus-mechanism",
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0167",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "Near-Syncope and Complete Heart Block Five Weeks After a Ring-Shaped Rash in Connecticut — Treating the Cause Before Anyone Implants a Pacemaker",
+  "type": "Near-Syncope and Complete Heart Block Five Weeks After a Ring-Shaped Rash in Connecticut — Treating the Cause Before Anyone Implants a Pacemaker",
+  "difficulty": 4,
+  "created": "2026-09-22",
+  "vignette": "A 34-year-old man is brought to the emergency department in Connecticut in July because of two episodes of near-syncope while climbing stairs earlier today and 3 days of fatigue and lightheadedness. Five weeks ago, after a camping trip, he had an expanding ring-shaped rash on his thigh with a mild fever; the rash faded over 2 weeks without treatment. He has no chronic medical conditions and takes no medications. His vital signs, rhythm strip and laboratory studies are shown. He is alert and no longer lightheaded while lying down. The lungs are clear, there are no murmurs, and there is no rash or joint swelling. Transcutaneous pacing pads are applied and continuous telemetry is begun.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Implantation of a permanent dual-chamber pacemaker",
+   "Oral doxycycline for 14 days as an outpatient",
+   "Intravenous methylprednisolone",
+   "Placement of a temporary transvenous pacemaker",
+   "Intravenous ceftriaxone with inpatient monitoring"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 판독 — 리듬 스트립에서 P 파와 QRS 가 각각 규칙적이지만 서로 무관하게 진행하고 심실이 40 회 = 완전(3도) 방실차단. ② 원인 — 코네티컷·7월·야영 뒤 치료하지 않은 확장성 고리 모양 발진(이동홍반) 5주 전 + 2단계 혈청검사 양성(EIA·IgG 면역블롯) + 젊고 약물·기저 심장질환 없음 = 라임 심염. 칼륨·마그네슘·갑상샘 정상이 다른 서맥 원인을 낮춘다. ③ 처치 — 라임 방실차단은 대개 방실결절 수준이고 항생제로 1~6주 안에 거의 모두 회복되는 가역적 차단이다. 증상성 고도 차단이므로 IDSA 2020 기준대로 입원 + 원격 감시 + 정맥 ceftriaxone 으로 시작하고, 전도가 호전되면 경구 doxycycline 으로 바꿔 총 14~21일을 채운다. 지금은 누워서 증상이 없고 혈압 122/74 로 안정적이며 경피 패드가 붙어 있으므로 심박동기는 대기 상태로 둔다.\n- 오답감별:\n  - (A) 완전 방실차단 = 영구 심박동기라는 반사가 만드는 함정이다. 라임 방실차단은 가역적 원인이라 2018 ACC/AHA/HRS 지침·IDSA 2020 지침 모두 영구 심박동기를 권하지 않는다. 항생제 후 수 주가 지나도 고도 차단이 남는 드문 경우에만 재평가한다.\n  - (B) 경구 doxycycline 은 무증상 1도 차단(PR < 300 ms)의 경한 심염이나, 입원 치료 뒤 호전된 환자의 전환 치료에 맞다. 실신 전 증상이 있는 완전 차단을 외래로 보내면 감시 없이 실신·심정지 위험을 안게 된다.\n  - (C) 스테로이드는 라임 심염에 근거가 없다. 원인이 스피로헤타 감염이므로 항생제가 치료이고, 심근염을 떠올려 면역억제로 뛰어넘는 오류다.\n  - (D) 임시 경정맥 심박동기는 저혈압·반복 실신·경피 심박동 포착 실패 같은 혈역학 불안정일 때 넣는다(라임 환자의 약 1/3). 지금은 혈압이 유지되고 누워서 증상이 없으며 패드가 준비돼 있어, 침습적 시술보다 원인 치료 시작이 먼저다.\n- 임상핵심: 유행지 + 최근 이동홍반 + 젊은 환자의 방실차단 = 라임 심염 → 정맥 ceftriaxone + 감시(불안정 시 임시 심박동), 영구 심박동기는 적응 아님(가역적).\n- 출처: IDSA/AAN/ACR 2020 라임병 지침; 2018 ACC/AHA/HRS 서맥 지침; Harrison 21e Ch 186. 표준 관리, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 판독 — 리듬 스트립에서 P 파와 QRS 가 각각 규칙적이지만 서로 무관하게 진행하고 심실이 40 회 = 완전(3도) 방실차단. ② 원인 — 코네티컷·7월·야영 뒤 치료하지 않은 확장성 고리 모양 발진(이동홍반) 5주 전 + 2단계 혈청검사 양성(EIA·IgG 면역블롯) + 젊고 약물·기저 심장질환 없음 = 라임 심염. 칼륨·마그네슘·갑상샘 정상이 다른 서맥 원인을 낮춘다. ③ 처치 — 라임 방실차단은 대개 방실결절 수준이고 항생제로 1~6주 안에 거의 모두 회복되는 가역적 차단이다. 증상성 고도 차단이므로 IDSA 2020 기준대로 입원 + 원격 감시 + 정맥 ceftriaxone 으로 시작하고, 전도가 호전되면 경구 doxycycline 으로 바꿔 총 14~21일을 채운다. 지금은 누워서 증상이 없고 혈압 122/74 로 안정적이며 경피 패드가 붙어 있으므로 심박동기는 대기 상태로 둔다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 완전 방실차단 = 영구 심박동기라는 반사가 만드는 함정이다. 라임 방실차단은 가역적 원인이라 2018 ACC/AHA/HRS 지침·IDSA 2020 지침 모두 영구 심박동기를 권하지 않는다. 항생제 후 수 주가 지나도 고도 차단이 남는 드문 경우에만 재평가한다.\n(B) 경구 doxycycline 은 무증상 1도 차단(PR < 300 ms)의 경한 심염이나, 입원 치료 뒤 호전된 환자의 전환 치료에 맞다. 실신 전 증상이 있는 완전 차단을 외래로 보내면 감시 없이 실신·심정지 위험을 안게 된다.\n(C) 스테로이드는 라임 심염에 근거가 없다. 원인이 스피로헤타 감염이므로 항생제가 치료이고, 심근염을 떠올려 면역억제로 뛰어넘는 오류다.\n(D) 임시 경정맥 심박동기는 저혈압·반복 실신·경피 심박동 포착 실패 같은 혈역학 불안정일 때 넣는다(라임 환자의 약 1/3). 지금은 혈압이 유지되고 누워서 증상이 없으며 패드가 준비돼 있어, 침습적 시술보다 원인 치료 시작이 먼저다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "유행지 + 최근 이동홍반 + 젊은 환자의 방실차단 = 라임 심염 → 정맥 ceftriaxone + 감시(불안정 시 임시 심박동), 영구 심박동기는 적응 아님(가역적)."
+   },
+   {
+    "k": "출처",
+    "v": "IDSA/AAN/ACR 2020 라임병 지침; 2018 ACC/AHA/HRS 서맥 지침; Harrison 21e Ch 186. 표준 관리, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Lantos PM et al. IDSA/AAN/ACR 2020 Guidelines for the Prevention, Diagnosis and Treatment of Lyme Disease, Clin Infect Dis 2021; Kusumoto FM et al. 2018 ACC/AHA/HRS Guideline on Bradycardia and Cardiac Conduction Delay; Harrison's Principles of Internal Medicine 21e Ch 186 Lyme Borreliosis)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "122/74 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "40 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "16 /min"
+   },
+   {
+    "name": "체온",
+    "value": "37.3 °C"
+   },
+   {
+    "name": "산소포화도(대기)",
+    "value": "98 %"
+   }
+  ],
+  "labs": [
+   {
+    "name": "백혈구",
+    "value": "7,900 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "혈색소",
+    "value": "14.6 g/dL",
+    "ref": "13–17"
+   },
+   {
+    "name": "칼륨",
+    "value": "4.1 mEq/L",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "마그네슘",
+    "value": "2.0 mg/dL",
+    "ref": "1.7–2.4"
+   },
+   {
+    "name": "크레아티닌",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.2"
+   },
+   {
+    "name": "트로포닌 I",
+    "value": "0.03 ng/mL",
+    "ref": "< 0.04"
+   },
+   {
+    "name": "갑상샘자극호르몬",
+    "value": "2.1 µIU/mL",
+    "ref": "0.4–4.0"
+   },
+   {
+    "name": "적혈구침강속도",
+    "value": "32 mm/h",
+    "ref": "< 15"
+   },
+   {
+    "name": "라임병 항체 선별(EIA)",
+    "value": "양성",
+    "ref": "음성"
+   },
+   {
+    "name": "IgG 면역블롯",
+    "value": "양성(10 밴드 중 7개)",
+    "ref": "음성"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "라임 심염 — 차단 정도 × 증상 × 혈역학 → 치료 장소·경로·심박동\n─────────────────────────────────────────────\n무증상 1도 차단(PR < 300 ms) → 외래 **경구 doxycycline**(또는 amoxicillin·cefuroxime) 14–21일\nPR ≥ 300 ms · 2도 · 3도 · 증상(실신·실신 전·호흡곤란·흉통) → **입원 + 원격 감시 + 정맥 ceftriaxone** → 전도 호전 시 경구로 전환해 총 14–21일\n혈역학 불안정·실신 반복·경피 심박동 포착 실패 → **임시 경정맥 심박동기**(라임 환자의 약 1/3)\n**영구 심박동기**: 원칙적으로 **적응 아님**(가역적 원인) — 항생제 후에도 수 주 이상 고도 차단이 지속되는 드문 경우에만 고려\n스테로이드: 근거 없음\n─────────────────────────────────────────────\n각주1: 라임 방실차단은 대부분 방실결절 수준이라 심실 이탈 박동이 좁고, 정도가 분 단위로 오르내린다 — 1도라도 PR 이 매우 길면 완전 차단으로 급변할 수 있어 입원 감시 기준에 PR ≥ 300 ms 가 들어간다.\n각주2: 2단계 혈청검사(EIA → 면역블롯 또는 EIA → EIA). 이동홍반 단계에서는 항체가 아직 음성일 수 있지만 심염은 파종기(수 주 후)라 IgG 양성이 흔하다.\n각주3: 미국 라임병은 Borrelia burgdorferi; 심염은 초기 파종 감염의 1–5 %, 여름–초가을 젊은 남성에 흔하다.\n",
+   "최신지견": "IDSA/AAN/ACR 2020 지침은 라임 심염에서 영구 심박동기를 「권하지 않는다」고 명시하고, 입원 환자는 정맥 ceftriaxone 으로 시작해 호전 시 경구 전환하는 단계적 치료를 권한다. 2018 ACC/AHA/HRS 서맥 지침도 가역적 원인의 방실차단(라임·약물·전해질)은 원인 교정 후 재평가하도록 하며, 미국 소아·성인 등록자료에서 라임 방실차단의 대다수가 1주 안에 호전되고 영구 심박동기 이식은 드물다.",
+   "참고문헌": [
+    "Lantos PM et al. Clinical Practice Guidelines by the IDSA, AAN, and ACR: 2020 Guidelines for the Prevention, Diagnosis and Treatment of Lyme Disease. Clin Infect Dis 2021;72:e1",
+    "Kusumoto FM et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation 2019;140:e382",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. Ch 186 Lyme Borreliosis"
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "라임병 유행지에서 5주 전 이동홍반이 있던 젊은 남성의 완전 방실차단은 라임 심염이며, 가역적 원인이므로 영구 심박동기가 아니라 정맥 ceftriaxone 으로 입원 치료하고 혈역학이 불안정해질 때만 임시 심박동기를 쓴다.",
+   "rival": [
+    "A",
+    "D"
+   ],
+   "discriminator": "라임 방실차단은 항생제로 수 주 안에 회복되는 **가역적** 차단이라 영구 심박동기(A)의 적응이 아니고, 지금은 누워서 증상이 없고 혈압 122/74 로 안정적이며 경피 패드가 준비돼 있어 임시 경정맥 심박동기(D)를 지금 넣을 이유가 없다 — 실신·저혈압이 생기면 그때 넣는다.",
+   "steps": 3,
+   "key": [
+    {
+     "item": "심전도: P 파와 QRS 가 규칙적이지만 서로 무관하게 진행하고 심실 40 회 — 완전(3도) 방실차단",
+     "why": "판독 자체가 첫 단계 — 고도 방실차단이 입원·정맥 항생제의 기준",
+     "also": []
+    },
+    {
+     "item": "an expanding ring-shaped rash on his thigh with a mild fever; the rash faded over 2 weeks without treatment",
+     "why": "치료하지 않은 이동홍반 → 파종성 라임병(심염)의 전형적 선행 병력",
+     "also": []
+    },
+    {
+     "item": "in Connecticut in July",
+     "why": "유행지·유행 계절 — 사전 확률을 올린다",
+     "also": []
+    },
+    {
+     "item": "라임병 항체 선별(EIA) / IgG 면역블롯",
+     "why": "2단계 혈청검사 양성 — 파종기(5주)라 IgG 로 확인된다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼륨 / 마그네슘 / 갑상샘자극호르몬",
+     "why": "정상 — 전해질·갑상샘 원인의 서맥 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "takes no medications",
+     "why": "β-차단제·칼슘통로차단제·디곡신 같은 약물성 방실차단의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He is alert and no longer lightheaded while lying down",
+     "why": "현재 혈역학 안정 → 임시 경정맥 심박동기를 지금 넣지 않고 패드·감시로 대기",
+     "also": []
+    },
+    {
+     "item": "혈압",
+     "why": "122/74 — 저혈압·쇼크가 없다 → 항생제 시작이 우선, 불안정 시 임시 심박동",
+     "also": []
+    },
+    {
+     "item": "two episodes of near-syncope",
+     "why": "증상성 고도 차단 → 외래 경구 치료가 아니라 입원 정맥 항생제 대상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "트로포닌 I / 적혈구침강속도",
+     "why": "트로포닌 정상·ESR 경도 상승 — 광범위 심근염보다 전도계 국소 침범을 시사하지만 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "유행지에서 5주 전 치료하지 않은 이동홍반을 앓은 젊은 남성의 완전 방실차단은 라임 심염이다. 이 차단은 항생제로 수 주 안에 회복되는 가역적 원인이므로 영구 심박동기가 아니라 입원 감시 아래 정맥 ceftriaxone 을 시작한다. 지금은 혈역학이 안정적이고 경피 패드가 준비돼 있어 임시 경정맥 심박동기는 저혈압·실신이 생길 때 넣는다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 떨어지거나 실신·의식 변화가 생기고 경피 심박동으로 포착이 안 되면 임시 경정맥 심박동기를 즉시 넣는다(항생제는 그대로 병행)."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.lyme-carditis.heart-block-management",
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG cavb · 40 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,90.0 0.6,90.0 1.2,90.0 1.8,90.0 2.4,90.0 3.0,90.0 3.6,90.0 4.2,90.0 4.8,90.0 5.4,90.0 6.0,90.0 6.6,90.0 7.2,90.0 7.8,90.0 8.4,90.0 9.0,90.0 9.6,90.0 10.2,90.0 10.8,90.0 11.4,90.0 12.0,90.0 12.6,90.0 13.2,90.0 13.8,90.0 14.4,90.0 15.0,90.0 15.6,90.0 16.2,90.0 16.8,90.0 17.4,90.0 18.0,90.0 18.6,90.0 19.2,90.0 19.8,90.0 20.4,90.0 21.0,90.0 21.6,90.0 22.2,90.0 22.8,90.0 23.4,90.0 24.0,90.0 24.6,89.9 25.2,89.9 25.8,89.9 26.4,89.8 27.0,89.7 27.6,89.6 28.2,89.4 28.8,89.2 29.4,88.9 30.0,88.5 30.6,88.1 31.2,87.7 31.8,87.1 32.4,86.6 33.0,85.9 33.6,85.3 34.2,84.7 34.8,84.1 35.4,83.6 36.0,83.2 36.6,83.0 37.2,82.8 37.8,82.8 38.4,83.0 39.0,83.2 39.6,83.6 40.2,84.1 40.8,84.7 41.4,85.3 42.0,85.9 42.6,86.6 43.2,87.1 43.8,87.7 44.4,88.1 45.0,88.5 45.6,88.9 46.2,89.2 46.8,89.4 47.4,89.6 48.0,89.7 48.6,89.8 49.2,89.9 49.8,89.9 50.4,89.9 51.0,90.0 51.6,90.0 52.2,90.0 52.8,90.0 53.4,90.0 54.0,90.0 54.6,90.0 55.2,90.0 55.8,90.0 56.4,90.0 57.0,90.0 57.6,90.0 58.2,90.0 58.8,90.0 59.4,90.0 60.0,89.9 60.6,89.9 61.2,89.9 61.8,89.8 62.4,89.8 63.0,89.7 63.6,89.6 64.2,89.4 64.8,89.2 65.4,89.0 66.0,88.6 66.6,88.2 67.2,87.7 67.8,87.0 68.4,86.2 69.0,85.2 69.6,84.1 70.2,82.7 70.8,81.0 71.4,79.2 72.0,77.0 72.6,74.6 73.2,72.0 73.8,69.0 74.4,65.9 75.0,62.5 75.6,59.0 76.2,55.5 76.8,51.8 77.4,48.2 78.0,44.8 78.6,41.5 79.2,38.5 79.8,35.9 80.4,33.7 81.0,32.0 81.6,30.8 82.2,30.3 82.8,30.3 83.4,30.9 84.0,32.1 84.6,33.9 85.2,36.2 85.8,38.9 86.4,42.0 87.0,45.4 87.6,49.0 88.2,52.7 88.8,56.5 89.4,60.3 90.0,63.9 90.6,67.5 91.2,70.9 91.8,74.1 92.4,77.0 93.0,79.7 93.6,82.2 94.2,84.5 94.8,86.5 95.4,88.4 96.0,90.0 96.6,91.6 97.2,92.9 97.8,94.2 98.4,95.4 99.0,96.5 99.6,97.5 100.2,98.6 100.8,99.6 101.4,100.5 102.0,101.5 102.6,102.5 103.2,103.4 103.8,104.4 104.4,105.4 105.0,106.3 105.6,107.3 106.2,108.2 106.8,109.1 107.4,110.0 108.0,110.9 108.6,111.8 109.2,112.5 109.8,113.3 110.4,114.0 111.0,114.6 111.6,115.2 112.2,115.7 112.8,116.1 113.4,116.5 114.0,116.7 114.6,116.9 115.2,117.0 115.8,117.0 116.4,116.9 117.0,116.7 117.6,116.5 118.2,116.1 118.8,115.7 119.4,115.2 120.0,114.6 120.6,114.0 121.2,113.3 121.8,112.5 122.4,111.7 123.0,110.9 123.6,110.0 124.2,109.1 124.8,108.2 125.4,107.2 126.0,106.2 126.6,105.2 127.2,104.2 127.8,103.1 128.4,102.0 129.0,100.9 129.6,99.7 130.2,98.5 130.8,97.3 131.4,96.1 132.0,94.8 132.6,93.5 133.2,92.3 133.8,91.0 134.4,89.9 135.0,88.8 135.6,87.8 136.2,87.0 136.8,86.3 137.4,85.9 138.0,85.6 138.6,85.4 139.2,85.5 139.8,85.7 140.4,85.9 141.0,86.3 141.6,86.8 142.2,87.2 142.8,87.7 143.4,88.1 144.0,88.5 144.6,88.9 145.2,89.2 145.8,89.4 146.4,89.6 147.0,89.7 147.6,89.9 148.2,89.9 148.8,90.0 149.4,90.0 150.0,90.0 150.6,89.9 151.2,90.0 151.8,90.0 152.4,90.0 153.0,90.0 153.6,90.0 154.2,90.0 154.8,90.0 155.4,90.0 156.0,90.0 156.6,90.0 157.2,90.0 157.8,90.0 158.4,90.0 159.0,90.0 159.6,90.0 160.2,90.0 160.8,90.0 161.4,90.0 162.0,90.0 162.6,90.0 163.2,90.0 163.8,90.0 164.4,90.0 165.0,90.0 165.6,90.0 166.2,90.0 166.8,90.0 167.4,90.0 168.0,90.0 168.6,90.0 169.2,90.0 169.8,90.0 170.4,90.0 171.0,90.0 171.6,90.0 172.2,90.0 172.8,90.0 173.4,90.0 174.0,90.0 174.6,90.0 175.2,90.0 175.8,90.0 176.4,90.0 177.0,90.0 177.6,90.0 178.2,90.0 178.8,90.0 179.4,90.0 180.0,90.0 180.6,90.0 181.2,90.0 181.8,90.0 182.4,90.0 183.0,90.0 183.6,90.0 184.2,90.0 184.8,90.0 185.4,90.0 186.0,90.0 186.6,90.0 187.2,90.0 187.8,90.0 188.4,90.0 189.0,90.0 189.6,90.0 190.2,90.0 190.8,90.0 191.4,90.0 192.0,90.0 192.6,90.0 193.2,90.0 193.8,90.0 194.4,90.0 195.0,90.0 195.6,90.0 196.2,90.0 196.8,90.0 197.4,90.0 198.0,90.0 198.6,90.0 199.2,90.0 199.8,90.0 200.4,90.0 201.0,90.0 201.6,90.0 202.2,90.0 202.8,90.0 203.4,90.0 204.0,90.0 204.6,90.0 205.2,90.0 205.8,90.0 206.4,90.0 207.0,90.0 207.6,90.0 208.2,90.0 208.8,90.0 209.4,90.0 210.0,90.0 210.6,90.0 211.2,90.0 211.8,90.0 212.4,90.0 213.0,90.0 213.6,90.0 214.2,90.0 214.8,90.0 215.4,90.0 216.0,90.0 216.6,90.0 217.2,90.0 217.8,90.0 218.4,90.0 219.0,90.0 219.6,90.0 220.2,90.0 220.8,90.0 221.4,90.0 222.0,90.0 222.6,90.0 223.2,90.0 223.8,90.0 224.4,89.9 225.0,89.9 225.6,89.9 226.2,89.8 226.8,89.7 227.4,89.6 228.0,89.4 228.6,89.2 229.2,89.0 229.8,88.7 230.4,88.3 231.0,87.8 231.6,87.3 232.2,86.8 232.8,86.2 233.4,85.5 234.0,84.9 234.6,84.3 235.2,83.8 235.8,83.4 236.4,83.0 237.0,82.9 237.6,82.8 238.2,82.9 238.8,83.1 239.4,83.5 240.0,84.0 240.6,84.5 241.2,85.1 241.8,85.7 242.4,86.4 243.0,86.9 243.6,87.5 244.2,88.0 244.8,88.4 245.4,88.8 246.0,89.1 246.6,89.3 247.2,89.5 247.8,89.6 248.4,89.8 249.0,89.8 249.6,89.9 250.2,89.9 250.8,90.0 251.4,90.0 252.0,90.0 252.6,90.0 253.2,90.0 253.8,90.0 254.4,90.0 255.0,90.0 255.6,90.0 256.2,90.0 256.8,90.0 257.4,90.0 258.0,90.0 258.6,90.0 259.2,90.0 259.8,90.0 260.4,90.0 261.0,90.0 261.6,90.0 262.2,90.0 262.8,90.0 263.4,90.0 264.0,90.0 264.6,90.0 265.2,90.0 265.8,90.0 266.4,90.0 267.0,90.0 267.6,90.0 268.2,90.0 268.8,90.0 269.4,90.0 270.0,90.0 270.6,90.0 271.2,90.0 271.8,90.0 272.4,90.0 273.0,90.0 273.6,90.0 274.2,90.0 274.8,90.0 275.4,90.0 276.0,90.0 276.6,90.0 277.2,90.0 277.8,90.0 278.4,90.0 279.0,90.0 279.6,90.0 280.2,90.0 280.8,90.0 281.4,90.0 282.0,90.0 282.6,90.0 283.2,90.0 283.8,90.0 284.4,90.0 285.0,89.9 285.6,89.9 286.2,89.9 286.8,89.8 287.4,89.8 288.0,89.7 288.6,89.6 289.2,89.4 289.8,89.2 290.4,89.0 291.0,88.6 291.6,88.2 292.2,87.7 292.8,87.0 293.4,86.2 294.0,85.2 294.6,84.1 295.2,82.7 295.8,81.0 296.4,79.2 297.0,77.0 297.6,74.6 298.2,72.0 298.8,69.0 299.4,65.9 300.0,62.5 300.6,59.0 301.2,55.5 301.8,51.8 302.4,48.2 303.0,44.8 303.6,41.5 304.2,38.5 304.8,35.9 305.4,33.7 306.0,32.0 306.6,30.8 307.2,30.3 307.8,30.3 308.4,30.9 309.0,32.1 309.6,33.9 310.2,36.2 310.8,38.9 311.4,42.0 312.0,45.4 312.6,49.0 313.2,52.7 313.8,56.5 314.4,60.3 315.0,63.9 315.6,67.5 316.2,70.9 316.8,74.1 317.4,77.0 318.0,79.7 318.6,82.2 319.2,84.5 319.8,86.5 320.4,88.4 321.0,90.0 321.6,91.5 322.2,92.9 322.8,94.2 323.4,95.4 324.0,96.4 324.6,97.5 325.2,98.5 325.8,99.4 326.4,100.3 327.0,101.2 327.6,102.0 328.2,102.8 328.8,103.6 329.4,104.2 330.0,104.9 330.6,105.4 331.2,105.9 331.8,106.3 332.4,106.6 333.0,106.9 333.6,107.1 334.2,107.3 334.8,107.4 335.4,107.6 336.0,107.9 336.6,108.2 337.2,108.5 337.8,108.9 338.4,109.4 339.0,110.0 339.6,110.5 340.2,111.1 340.8,111.7 341.4,112.2 342.0,112.7 342.6,113.0 343.2,113.3 343.8,113.4 344.4,113.3 345.0,113.2 345.6,112.9 346.2,112.5 346.8,111.9 347.4,111.3 348.0,110.6 348.6,109.8 349.2,109.0 349.8,108.1 350.4,107.2 351.0,106.3 351.6,105.4 352.2,104.5 352.8,103.6 353.4,102.7 354.0,101.8 354.6,101.0 355.2,100.1 355.8,99.3 356.4,98.6 357.0,97.9 357.6,97.2 358.2,96.5 358.8,95.9 359.4,95.3 360.0,94.8 360.6,94.3 361.2,93.9 361.8,93.4 362.4,93.1 363.0,92.7 363.6,92.4 364.2,92.1 364.8,91.9 365.4,91.6 366.0,91.4 366.6,91.2 367.2,91.1 367.8,90.9 368.4,90.8 369.0,90.7 369.6,90.6 370.2,90.5 370.8,90.4 371.4,90.4 372.0,90.3 372.6,90.3 373.2,90.2 373.8,90.2 374.4,90.1 375.0,90.0 375.6,90.0 376.2,90.0 376.8,90.0 377.4,90.0 378.0,90.0 378.6,90.0 379.2,90.0 379.8,90.0 380.4,90.0 381.0,90.0 381.6,90.0 382.2,90.0 382.8,90.0 383.4,90.0 384.0,90.0 384.6,90.0 385.2,90.0 385.8,90.0 386.4,90.0 387.0,90.0 387.6,90.0 388.2,90.0 388.8,90.0 389.4,90.0 390.0,90.0 390.6,90.0 391.2,90.0 391.8,90.0 392.4,90.0 393.0,90.0 393.6,90.0 394.2,90.0 394.8,90.0 395.4,90.0 396.0,90.0 396.6,90.0 397.2,90.0 397.8,90.0 398.4,90.0 399.0,90.0 399.6,90.0 400.2,90.0 400.8,90.0 401.4,90.0 402.0,90.0 402.6,90.0 403.2,90.0 403.8,90.0 404.4,90.0 405.0,90.0 405.6,90.0 406.2,90.0 406.8,90.0 407.4,90.0 408.0,90.0 408.6,90.0 409.2,90.0 409.8,90.0 410.4,90.0 411.0,90.0 411.6,90.0 412.2,90.0 412.8,90.0 413.4,90.0 414.0,90.0 414.6,90.0 415.2,90.0 415.8,90.0 416.4,90.0 417.0,90.0 417.6,90.0 418.2,90.0 418.8,90.0 419.4,90.0 420.0,90.0 420.6,90.0 421.2,90.0 421.8,90.0 422.4,90.0 423.0,90.0 423.6,90.0 424.2,90.0 424.8,89.9 425.4,89.9 426.0,89.8 426.6,89.8 427.2,89.6 427.8,89.5 428.4,89.3 429.0,89.1 429.6,88.8 430.2,88.4 430.8,88.0 431.4,87.5 432.0,86.9 432.6,86.4 433.2,85.7 433.8,85.1 434.4,84.5 435.0,84.0 435.6,83.5 436.2,83.1 436.8,82.9 437.4,82.8 438.0,82.9 438.6,83.0 439.2,83.4 439.8,83.8 440.4,84.3 441.0,84.9 441.6,85.5 442.2,86.2 442.8,86.8 443.4,87.3 444.0,87.8 444.6,88.3 445.2,88.7 445.8,89.0 446.4,89.2 447.0,89.4 447.6,89.6 448.2,89.7 448.8,89.8 449.4,89.9 450.0,89.9 450.6,89.9 451.2,90.0 451.8,90.0 452.4,90.0 453.0,90.0 453.6,90.0 454.2,90.0 454.8,90.0 455.4,90.0 456.0,90.0 456.6,90.0 457.2,90.0 457.8,90.0 458.4,90.0 459.0,90.0 459.6,90.0 460.2,90.0 460.8,90.0 461.4,90.0 462.0,90.0 462.6,90.0 463.2,90.0 463.8,90.0 464.4,90.0 465.0,90.0 465.6,90.0 466.2,90.0 466.8,90.0 467.4,90.0 468.0,90.0 468.6,90.0 469.2,90.0 469.8,90.0 470.4,90.0 471.0,90.0 471.6,90.0 472.2,90.0 472.8,90.0 473.4,90.0 474.0,90.0 474.6,90.0 475.2,90.0 475.8,90.0 476.4,90.0 477.0,90.0 477.6,90.0 478.2,90.0 478.8,90.0 479.4,90.0 480.0,90.0 480.6,90.0 481.2,90.0 481.8,90.0 482.4,90.0 483.0,90.0 483.6,90.0 484.2,90.0 484.8,90.0 485.4,90.0 486.0,90.0 486.6,90.0 487.2,90.0 487.8,90.0 488.4,90.0 489.0,90.0 489.6,90.0 490.2,90.0 490.8,90.0 491.4,90.0 492.0,90.0 492.6,90.0 493.2,90.0 493.8,90.0 494.4,90.0 495.0,90.0 495.6,90.0 496.2,90.0 496.8,90.0 497.4,90.0 498.0,90.0 498.6,90.0 499.2,90.0 499.8,90.0 500.4,90.0 501.0,90.0 501.6,90.0 502.2,90.0 502.8,90.0 503.4,90.0 504.0,90.0 504.6,90.0 505.2,90.0 505.8,90.0 506.4,90.0 507.0,90.0 507.6,90.0 508.2,90.0 508.8,90.0 509.4,90.0 510.0,89.9 510.6,89.9 511.2,89.9 511.8,89.8 512.4,89.8 513.0,89.7 513.6,89.6 514.2,89.4 514.8,89.2 515.4,89.0 516.0,88.6 516.6,88.2 517.2,87.7 517.8,87.0 518.4,86.2 519.0,85.2 519.6,84.1 520.2,82.7 520.8,81.0 521.4,79.2 522.0,77.0 522.6,74.6 523.2,71.9 523.8,69.0 524.4,65.8 525.0,62.5 525.6,58.9 526.2,55.3 526.8,51.5 527.4,47.8 528.0,44.2 528.6,40.7 529.2,37.5 529.8,34.5 530.4,31.9 531.0,29.8 531.6,28.1 532.2,27.0 532.8,26.4 533.4,26.5 534.0,27.1 534.6,28.2 535.2,30.0 535.8,32.3 536.4,35.0 537.0,38.2 537.6,41.8 538.2,45.6 538.8,49.6 539.4,53.8 540.0,57.9 540.6,62.0 541.2,66.0 541.8,69.8 542.4,73.4 543.0,76.7 543.6,79.7 544.2,82.5 544.8,84.9 545.4,87.1 546.0,89.1 546.6,90.9 547.2,92.4 547.8,93.8 548.4,95.1 549.0,96.3 549.6,97.4 550.2,98.5 550.8,99.5 551.4,100.5 552.0,101.5 552.6,102.5 553.2,103.4 553.8,104.4 554.4,105.4 555.0,106.3 555.6,107.3 556.2,108.2 556.8,109.1 557.4,110.0 558.0,110.9 558.6,111.8 559.2,112.5 559.8,113.3 560.4,114.0 561.0,114.6 561.6,115.2 562.2,115.7 562.8,116.1 563.4,116.5 564.0,116.7 564.6,116.9 565.2,117.0 565.8,117.0 566.4,116.9 567.0,116.7 567.6,116.5 568.2,116.1 568.8,115.7 569.4,115.2 570.0,114.6 570.6,114.0 571.2,113.3 571.8,112.6 572.4,111.8 573.0,110.9 573.6,110.1 574.2,109.2 574.8,108.2 575.4,107.3 576.0,106.4 576.6,105.4 577.2,104.5 577.8,103.6 578.4,102.7 579.0,101.8 579.6,101.0 580.2,100.1 580.8,99.3 581.4,98.6 582.0,97.9 582.6,97.2 583.2,96.5 583.8,95.9 584.4,95.3 585.0,94.8 585.6,94.3 586.2,93.9 586.8,93.4 587.4,93.1 588.0,92.7 588.6,92.4 589.2,92.1 589.8,91.9 590.4,91.6 591.0,91.4 591.6,91.2 592.2,91.1 592.8,90.9 593.4,90.8 594.0,90.7 594.6,90.6 595.2,90.5 595.8,90.4 596.4,90.4 597.0,90.3 597.6,90.3 598.2,90.2 598.8,90.2 599.4,90.1 600.0,90.0 600.6,90.0 601.2,90.0 601.8,90.0 602.4,90.0 603.0,90.0 603.6,90.0 604.2,90.0 604.8,90.0 605.4,90.0 606.0,90.0 606.6,90.0 607.2,90.0 607.8,90.0 608.4,90.0 609.0,90.0 609.6,90.0 610.2,90.0 610.8,90.0 611.4,90.0 612.0,90.0 612.6,90.0 613.2,90.0 613.8,90.0 614.4,90.0 615.0,90.0 615.6,90.0 616.2,90.0 616.8,90.0 617.4,90.0 618.0,90.0 618.6,90.0 619.2,90.0 619.8,90.0 620.4,90.0 621.0,90.0 621.6,90.0 622.2,90.0 622.8,90.0 623.4,90.0 624.0,90.0 624.6,89.9 625.2,89.9 625.8,89.9 626.4,89.8 627.0,89.7 627.6,89.6 628.2,89.4 628.8,89.2 629.4,88.9 630.0,88.5 630.6,88.1 631.2,87.7 631.8,87.1 632.4,86.6 633.0,85.9 633.6,85.3 634.2,84.7 634.8,84.1 635.4,83.6 636.0,83.2 636.6,83.0 637.2,82.8 637.8,82.8 638.4,83.0 639.0,83.2 639.6,83.6 640.2,84.1 640.8,84.7 641.4,85.3 642.0,85.9 642.6,86.6 643.2,87.1 643.8,87.7 644.4,88.1 645.0,88.5 645.6,88.9 646.2,89.2 646.8,89.4 647.4,89.6 648.0,89.7 648.6,89.8 649.2,89.9 649.8,89.9 650.4,89.9 651.0,90.0 651.6,90.0 652.2,90.0 652.8,90.0 653.4,90.0 654.0,90.0 654.6,90.0 655.2,90.0 655.8,90.0 656.4,90.0 657.0,90.0 657.6,90.0 658.2,90.0 658.8,90.0 659.4,90.0 660.0,90.0 660.6,90.0 661.2,90.0 661.8,90.0 662.4,90.0 663.0,90.0 663.6,90.0 664.2,90.0 664.8,90.0 665.4,90.0 666.0,90.0 666.6,90.0 667.2,90.0 667.8,90.0 668.4,90.0 669.0,90.0 669.6,90.0 670.2,90.0 670.8,90.0 671.4,90.0 672.0,90.0 672.6,90.0 673.2,90.0 673.8,90.0 674.4,90.0 675.0,90.0 675.6,90.0 676.2,90.0 676.8,90.0 677.4,90.0 678.0,90.0 678.6,90.0 679.2,90.0 679.8,90.0 680.4,90.0 681.0,90.0 681.6,90.0 682.2,90.0 682.8,90.0 683.4,90.0 684.0,90.0 684.6,90.0 685.2,90.0 685.8,90.0 686.4,90.0 687.0,90.0 687.6,90.0 688.2,90.0 688.8,90.0 689.4,90.0 690.0,90.0 690.6,90.0 691.2,90.0 691.8,90.0 692.4,90.0 693.0,90.0 693.6,90.0 694.2,90.0 694.8,90.0 695.4,90.0 696.0,90.0 696.6,90.0 697.2,90.0 697.8,90.0 698.4,90.0 699.0,90.0 699.6,90.0 700.2,90.0 700.8,90.0 701.4,90.0 702.0,90.0 702.6,90.0 703.2,90.0 703.8,90.0 704.4,90.0 705.0,90.0 705.6,90.0 706.2,90.0 706.8,90.0 707.4,90.0 708.0,90.0 708.6,90.0 709.2,90.0 709.8,90.0 710.4,90.0 711.0,90.0 711.6,90.0 712.2,90.0 712.8,90.0 713.4,90.0 714.0,90.0 714.6,90.0 715.2,90.0 715.8,90.0 716.4,90.0 717.0,90.0 717.6,90.0 718.2,90.0 718.8,90.0 719.4,90.0 720.0,90.0 720.6,90.0 721.2,90.0 721.8,90.0 722.4,90.0 723.0,90.0 723.6,90.0 724.2,90.0 724.8,89.9 725.4,89.9 726.0,89.8 726.6,89.8 727.2,89.6 727.8,89.5 728.4,89.3 729.0,89.1 729.6,88.8 730.2,88.4 730.8,88.0 731.4,87.5 732.0,86.9 732.6,86.3 733.2,85.7 733.8,85.1 734.4,84.5 735.0,83.9 735.6,83.4 736.2,83.0 736.8,82.7 737.4,82.6 738.0,82.5 738.6,82.6 739.2,82.8 739.8,83.0 740.4,83.3 741.0,83.5 741.6,83.7 742.2,83.8 742.8,83.8 743.4,83.5 744.0,83.1 744.6,82.3 745.2,81.3 745.8,80.0 746.4,78.4 747.0,76.5 747.6,74.2 748.2,71.7 748.8,68.8 749.4,65.8 750.0,62.5 750.6,59.0 751.2,55.4 751.8,51.8 752.4,48.2 753.0,44.7 753.6,41.5 754.2,38.5 754.8,35.9 755.4,33.7 756.0,32.0 756.6,30.8 757.2,30.3 757.8,30.3 758.4,30.9 759.0,32.1 759.6,33.9 760.2,36.2 760.8,38.9 761.4,42.0 762.0,45.4 762.6,49.0 763.2,52.7 763.8,56.5 764.4,60.3 765.0,63.9 765.6,67.5 766.2,70.9 766.8,74.1 767.4,77.0 768.0,79.7 768.6,82.2 769.2,84.5 769.8,86.5 770.4,88.4 771.0,90.0 771.6,91.6 772.2,92.9 772.8,94.2 773.4,95.4 774.0,96.5 774.6,97.5 775.2,98.6 775.8,99.6 776.4,100.5 777.0,101.5 777.6,102.5 778.2,103.4 778.8,104.4 779.4,105.4 780.0,106.3 780.6,107.3 781.2,108.2 781.8,109.1 782.4,110.0 783.0,110.9 783.6,111.8 784.2,112.5 784.8,113.3 785.4,114.0 786.0,114.6 786.6,115.2 787.2,115.7 787.8,116.1 788.4,116.5 789.0,116.7 789.6,116.9 790.2,117.0 790.8,117.0 791.4,116.9 792.0,116.7 792.6,116.5 793.2,116.1 793.8,115.7 794.4,115.2 795.0,114.6 795.6,114.0 796.2,113.3 796.8,112.6 797.4,111.8 798.0,110.9 798.6,110.1 799.2,109.2 799.8,108.2 800.4,107.3 801.0,106.4 801.6,105.4 802.2,104.5 802.8,103.6 803.4,102.7 804.0,101.8 804.6,101.0 805.2,100.1 805.8,99.3 806.4,98.6 807.0,97.9 807.6,97.2 808.2,96.5 808.8,95.9 809.4,95.3 810.0,94.8 810.6,94.3 811.2,93.9 811.8,93.4 812.4,93.1 813.0,92.7 813.6,92.4 814.2,92.1 814.8,91.9 815.4,91.6 816.0,91.4 816.6,91.2 817.2,91.1 817.8,90.9 818.4,90.8 819.0,90.7 819.6,90.6 820.2,90.5 820.8,90.4 821.4,90.4 822.0,90.3 822.6,90.2 823.2,90.2 823.8,90.1 824.4,90.1 825.0,89.9 825.6,89.9 826.2,89.8 826.8,89.7 827.4,89.6 828.0,89.4 828.6,89.2 829.2,89.0 829.8,88.7 830.4,88.3 831.0,87.8 831.6,87.3 832.2,86.8 832.8,86.2 833.4,85.5 834.0,84.9 834.6,84.3 835.2,83.8 835.8,83.4 836.4,83.0 837.0,82.9 837.6,82.8 838.2,82.9 838.8,83.1 839.4,83.5 840.0,84.0 840.6,84.5 841.2,85.1 841.8,85.7 842.4,86.4 843.0,86.9 843.6,87.5 844.2,88.0 844.8,88.4 845.4,88.8 846.0,89.1 846.6,89.3 847.2,89.5 847.8,89.6 848.4,89.8 849.0,89.8 849.6,89.9 850.2,89.9 850.8,90.0 851.4,90.0 852.0,90.0 852.6,90.0 853.2,90.0 853.8,90.0 854.4,90.0 855.0,90.0 855.6,90.0 856.2,90.0 856.8,90.0 857.4,90.0 858.0,90.0 858.6,90.0 859.2,90.0 859.8,90.0 860.4,90.0 861.0,90.0 861.6,90.0 862.2,90.0 862.8,90.0 863.4,90.0 864.0,90.0 864.6,90.0 865.2,90.0 865.8,90.0 866.4,90.0 867.0,90.0 867.6,90.0 868.2,90.0 868.8,90.0 869.4,90.0 870.0,90.0 870.6,90.0 871.2,90.0 871.8,90.0 872.4,90.0 873.0,90.0 873.6,90.0 874.2,90.0 874.8,90.0 875.4,90.0 876.0,90.0 876.6,90.0 877.2,90.0 877.8,90.0 878.4,90.0 879.0,90.0 879.6,90.0 880.2,90.0 880.8,90.0 881.4,90.0 882.0,90.0 882.6,90.0 883.2,90.0 883.8,90.0 884.4,90.0 885.0,90.0 885.6,90.0 886.2,90.0 886.8,90.0 887.4,90.0 888.0,90.0 888.6,90.0 889.2,90.0 889.8,90.0 890.4,90.0 891.0,90.0 891.6,90.0 892.2,90.0 892.8,90.0 893.4,90.0 894.0,90.0 894.6,90.0 895.2,90.0 895.8,90.0 896.4,90.0 897.0,90.0 897.6,90.0 898.2,90.0 898.8,90.0 899.4,90.0 900.0,90.0\"/><text class=\"cap\" x=\"4\" y=\"193\">cavb · 40 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0168",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "The Worst Headache of Her Life Fourteen Hours Ago and a Clean CT — The Test That Finds the Blood the Scanner Can No Longer See",
+  "type": "The Worst Headache of Her Life Fourteen Hours Ago and a Clean CT — The Test That Finds the Blood the Scanner Can No Longer See",
+  "difficulty": 3,
+  "created": "2026-09-22",
+  "vignette": "A 47-year-old woman comes to the emergency department 14 hours after the abrupt onset of the most severe headache of her life while lifting weights. The pain reached its maximum within a minute, and she vomited twice. She has a 10-year history of migraine with visual aura treated with sumatriptan but says this headache felt completely different and did not respond to sumatriptan. She smokes one pack of cigarettes daily and has no history of trauma. Her vital signs are shown. She is alert and oriented, is photophobic, and has mild neck stiffness. Funduscopic examination shows sharp disc margins, and there are no focal neurologic deficits. Noncontrast CT of the head, interpreted by a neuroradiologist, shows no abnormalities. Laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Lumbar puncture",
+   "CT angiography of the head",
+   "MRI of the brain with gadolinium",
+   "Electroencephalography",
+   "Transcranial Doppler ultrasonography"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 2단계 추론. ① 의심 — 운동 중 1분 안에 최고조에 이른 생애 최악의 두통 + 구토·광선공포증·목 경직 + 평소 편두통과 「완전히 다르고」 sumatriptan 에 반응 없음 + 흡연·혈압 162/94 = 동맥류성 거미막밑출혈을 먼저 의심한다. ② 검사 — 비조영 CT 는 발병 6시간 안에 찍고 전문의가 판독하면 민감도가 거의 100 % 지만, 6시간이 지나면 혈액이 뇌척수액으로 씻기고 등밀도로 변해 놓칠 수 있다. 이 환자는 14시간이 지났으므로 정상 CT 로 배제하지 못한다 → 요추천자로 튜브 1→4 에서 줄지 않는 적혈구와 잔토크로미아(빌리루빈, 12시간 이후 신뢰)를 확인한다. 유두부종·국소 결손·의식 저하가 없어 요추천자는 안전하고, INR 정상이다. 양성이면 CT 혈관조영술로 동맥류를 찾아 조기 치료한다.\n- 오답감별:\n  - (B) CT 혈관조영술은 「출혈이 있었는가」가 아니라 「동맥류가 있는가」를 본다. 성인의 2~3 % 가 무증상 동맥류를 갖고 있어 먼저 찍으면 출혈 없는 동맥류를 원인으로 오인하거나, 비동맥류성·미세 동맥류 출혈을 놓친다. 요추천자를 피하려는 대안으로 지침이 인정하지만, 정상 CT 뒤 기본 다음 단계는 요추천자다.\n  - (C) MRI 는 급성기(첫 24시간) 거미막밑 혈액 검출에서 CT 보다 낫지 않고 시간이 오래 걸린다. 요추천자까지 음성일 때 다른 원인(뇌정맥혈전·박리·뇌하수체졸중)을 찾는 단계의 검사다.\n  - (D) 뇌파는 경련·뇌증 평가 도구다. 의식이 명료하고 경련이 없는 벼락두통에서 출혈을 진단하지 못한다.\n  - (E) 경두개 도플러는 거미막밑출혈이 확진된 뒤 3~14일 사이 혈관연축을 감시하는 도구이지 진단 검사가 아니다.\n- 임상핵심: 벼락두통 → 비조영 CT; 6시간 이내 정상이면 사실상 배제, 6시간 이후 정상이면 요추천자(잔토크로미아) → 양성이면 혈관 영상.\n- 출처: AHA/ASA 2023 aSAH 지침; Perry BMJ 2011; Harrison 21e Ch 427. CTA 우선 전략은 대안으로 존재하나 정상 CT 뒤 요추천자가 표준.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 의심 — 운동 중 1분 안에 최고조에 이른 생애 최악의 두통 + 구토·광선공포증·목 경직 + 평소 편두통과 「완전히 다르고」 sumatriptan 에 반응 없음 + 흡연·혈압 162/94 = 동맥류성 거미막밑출혈을 먼저 의심한다. ② 검사 — 비조영 CT 는 발병 6시간 안에 찍고 전문의가 판독하면 민감도가 거의 100 % 지만, 6시간이 지나면 혈액이 뇌척수액으로 씻기고 등밀도로 변해 놓칠 수 있다. 이 환자는 14시간이 지났으므로 정상 CT 로 배제하지 못한다 → 요추천자로 튜브 1→4 에서 줄지 않는 적혈구와 잔토크로미아(빌리루빈, 12시간 이후 신뢰)를 확인한다. 유두부종·국소 결손·의식 저하가 없어 요추천자는 안전하고, INR 정상이다. 양성이면 CT 혈관조영술로 동맥류를 찾아 조기 치료한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) CT 혈관조영술은 「출혈이 있었는가」가 아니라 「동맥류가 있는가」를 본다. 성인의 2~3 % 가 무증상 동맥류를 갖고 있어 먼저 찍으면 출혈 없는 동맥류를 원인으로 오인하거나, 비동맥류성·미세 동맥류 출혈을 놓친다. 요추천자를 피하려는 대안으로 지침이 인정하지만, 정상 CT 뒤 기본 다음 단계는 요추천자다.\n(C) MRI 는 급성기(첫 24시간) 거미막밑 혈액 검출에서 CT 보다 낫지 않고 시간이 오래 걸린다. 요추천자까지 음성일 때 다른 원인(뇌정맥혈전·박리·뇌하수체졸중)을 찾는 단계의 검사다.\n(D) 뇌파는 경련·뇌증 평가 도구다. 의식이 명료하고 경련이 없는 벼락두통에서 출혈을 진단하지 못한다.\n(E) 경두개 도플러는 거미막밑출혈이 확진된 뒤 3~14일 사이 혈관연축을 감시하는 도구이지 진단 검사가 아니다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "벼락두통 → 비조영 CT; 6시간 이내 정상이면 사실상 배제, 6시간 이후 정상이면 요추천자(잔토크로미아) → 양성이면 혈관 영상."
+   },
+   {
+    "k": "출처",
+    "v": "AHA/ASA 2023 aSAH 지침; Perry BMJ 2011; Harrison 21e Ch 427. CTA 우선 전략은 대안으로 존재하나 정상 CT 뒤 요추천자가 표준."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Hoh BL et al. 2023 AHA/ASA Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage, Stroke 2023; Perry JJ et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage, BMJ 2011; Harrison's Principles of Internal Medicine 21e Ch 427 Subarachnoid Hemorrhage)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "162/94 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "88 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "16 /min"
+   },
+   {
+    "name": "체온",
+    "value": "37.1 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "백혈구",
+    "value": "9,400 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "혈색소",
+    "value": "13.6 g/dL",
+    "ref": "12–16"
+   },
+   {
+    "name": "혈소판",
+    "value": "248,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "PT(INR)",
+    "value": "1.0",
+    "ref": "0.9–1.1"
+   },
+   {
+    "name": "나트륨",
+    "value": "138 mEq/L",
+    "ref": "136–145"
+   },
+   {
+    "name": "혈당",
+    "value": "104 mg/dL",
+    "ref": "70–100"
+   },
+   {
+    "name": "소변 임신반응",
+    "value": "음성",
+    "ref": "음성"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "벼락두통 — 발병 후 시간 × CT 결과 → 다음 검사\n─────────────────────────────────────────────\n벼락두통(1분 안에 최고조) → 즉시 **비조영 CT**(3세대 이상 장비, 전문의 판독)\nCT 양성 → 거미막밑출혈 확진 → **CT 혈관조영술/카테터 혈관조영술**로 동맥류 → 조기 코일·클립, 니모디핀\nCT 음성 · **발병 6시간 이내** 촬영 → 민감도 ≈ 100 %(Perry 2011) → 대부분 추가 검사 없이 종료 가능\nCT 음성 · **6시간 이후** 촬영 → **요추천자**: 적혈구가 튜브 1→4 에서 줄지 않음 + **잔토크로미아**(12시간 이후 신뢰, 분광광도법) → 양성이면 혈관 영상\n요추천자 음성(잔토크로미아 없음·적혈구 없음) → 거미막밑출혈 사실상 배제 → 다른 원인(가역성 뇌혈관수축증후군·경막하혈종·뇌정맥혈전·뇌하수체졸중·경부동맥박리)에 따라 MRI/MRA·MRV\n─────────────────────────────────────────────\n각주1: CTA 우선 전략은 요추천자를 피할 수 있지만 무증상 동맥류(성인 2–3 %)를 출혈 원인으로 오인할 위험과 비동맥류성 출혈을 놓칠 위험이 있어 지침은 정상 CT 뒤 요추천자를 기본으로 두고 CTA 를 대안으로 둔다.\n각주2: 요추천자 전 유두부종·국소 결손·의식 저하가 있으면 종괴 효과를 먼저 영상으로 확인한다 — 이 환자는 셋 다 없다.\n각주3: 편두통 병력이 있어도 「평소와 다른」 두통·벼락두통은 편두통으로 진단하지 않는다(경고 두통은 큰 출혈에 며칠–수 주 앞선다).\n",
+   "최신지견": "2023 AHA/ASA 동맥류성 거미막밑출혈 지침은 벼락두통에서 비조영 CT 를 첫 검사로, 6시간 이후 정상 CT 에는 요추천자를 권하고, CTA 를 요추천자 대신 쓸 수 있는 대안으로 두되 무증상 동맥류 오인 가능성을 경고한다. Ottawa SAH rule(40세 이상·목 통증/경직·의식 소실·운동 중 발병·벼락 양상·목 굴곡 제한)은 검사 대상을 고르는 데 쓰이며, 이 환자는 여러 항목에 해당한다.",
+   "참고문헌": [
+    "Hoh BL et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage: A Guideline From the AHA/ASA. Stroke 2023;54:e314",
+    "Perry JJ et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage: prospective cohort study. BMJ 2011;343:d4277",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. Ch 427 Subarachnoid Hemorrhage"
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "벼락두통 뒤 14시간이 지나 비조영 CT 가 정상이면 거미막밑출혈을 배제할 수 없으므로 요추천자로 혈액·잔토크로미아를 확인한다; 혈관 영상은 출혈이 확인된 뒤에 한다.",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "CT 혈관조영술은 「동맥류가 있는가」를 보고 요추천자는 「출혈이 있었는가」를 본다. 성인의 2~3 % 가 무증상 동맥류를 갖고 있어 CTA 를 먼저 찍으면 출혈 없는 동맥류를 원인으로 오인하거나 비동맥류성 출혈을 놓친다 — 6시간이 지난 정상 CT 다음은 요추천자다.",
+   "steps": 2,
+   "key": [
+    {
+     "item": "14 hours after the abrupt onset of the most severe headache of her life",
+     "why": "벼락두통 + 6시간 경과 → CT 정상이어도 배제 못 함 → 요추천자 필요; 12시간이 지나 잔토크로미아도 신뢰할 수 있다",
+     "also": []
+    },
+    {
+     "item": "The pain reached its maximum within a minute",
+     "why": "벼락두통의 정의 — 편두통은 수십 분에 걸쳐 커진다",
+     "also": []
+    },
+    {
+     "item": "mild neck stiffness",
+     "why": "수막 자극 — 거미막밑 혈액을 시사",
+     "also": []
+    },
+    {
+     "item": "Noncontrast CT of the head, interpreted by a neuroradiologist, shows no abnormalities",
+     "why": "정상 CT 이지만 6시간 이후라 민감도가 떨어진다 → 다음 검사를 정하는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "says this headache felt completely different and did not respond to sumatriptan",
+     "why": "편두통 병력이 있어도 「평소와 다른」 두통은 편두통으로 돌리지 않는다 — 편두통 발작의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Funduscopic examination shows sharp disc margins, and there are no focal neurologic deficits",
+     "why": "유두부종·국소 결손이 없어 종괴 효과의 가능성이 낮고 요추천자가 안전하다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "체온",
+     "why": "37.1 — 열이 없어 세균수막염의 가능성을 낮춘다(배제는 아니며 요추천자가 그것도 확인한다)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "PT(INR)",
+     "why": "정상 — 요추천자 전 응고 상태 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She smokes one pack of cigarettes daily",
+     "why": "흡연·고혈압은 동맥류 파열의 위험인자라 사전 확률을 올리지만 검사 선택 자체를 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "운동 중 1분 안에 최고조에 이른 생애 최악의 두통과 목 경직은 거미막밑출혈을 먼저 의심하게 한다. 비조영 CT 는 6시간 안에는 거의 완벽하지만 14시간이 지난 정상 CT 로는 배제할 수 없으므로 요추천자로 혈액·잔토크로미아를 확인한다. 동맥류를 찾는 CT 혈관조영술은 출혈이 확인된 뒤의 단계다.",
+   "switch": {
+    "choice": "B",
+    "condition": "요추천자에서 잔토크로미아 또는 세 번째 튜브까지 줄지 않는 적혈구가 확인되면 다음 단계는 CT 혈관조영술로 동맥류를 찾는 것이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.subarachnoid-hemorrhage.workup-after-negative-ct",
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0169",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Bruises and Petechiae in a Playful 4-Year-Old Three Weeks After a Cold — When a Platelet Count of 14,000 Calls for Watching, Not Treating",
+  "type": "Bruises and Petechiae in a Playful 4-Year-Old Three Weeks After a Cold — When a Platelet Count of 14,000 Calls for Watching, Not Treating",
+  "difficulty": 3,
+  "created": "2026-09-22",
+  "vignette": "A 4-year-old girl is brought to the physician because of bruises on her legs and a rash on her trunk for 2 days. Three weeks ago she had a febrile upper respiratory infection that resolved without treatment. She has had no nosebleeds, gum bleeding, blood in the urine or stool, or headache. She takes no medications, and her immunizations are up to date. Her vital signs are shown. She is playful and interactive. Examination shows scattered petechiae on the trunk and several ecchymoses up to 3 cm in diameter on the shins; there is no bleeding from the oral mucosa. There is no lymphadenopathy, hepatosplenomegaly or bone tenderness. Laboratory studies are shown. A peripheral blood smear shows markedly decreased platelets, some of which are large, with normal red and white blood cell morphology.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous immune globulin",
+   "Observation with repeat blood counts",
+   "Oral prednisone",
+   "Platelet transfusion",
+   "Bone marrow aspiration"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 2단계 추론. ① 진단 — 바이러스 상기도감염 3주 뒤, 잘 놀고 열이 없는 4세 아이에게 피부 출혈만(점상·반상출혈) 있고, 혈색소 12.4·백혈구 7,200(감별계산 정상)·망상적혈구·INR·aPTT 가 모두 정상인데 혈소판만 14,000 으로 낮으며 크기가 크다(젊은 혈소판 = 파괴 증가). 림프절·간비장 비대·뼈 통증이 없고 도말에서 모세포·분열적혈구가 없다 = 급성 면역혈소판감소증(ITP), 골수검사 없이 임상 진단. ② 처치 — 소아 ITP 의 치료 결정 기준은 혈소판 수가 아니라 출혈 정도다. 코피·잇몸·혈뇨·혈변·구강 점막 출혈이 없는 피부 국한 출혈이므로 ASH 2019 권고대로 관찰(보호자 교육, 접촉 운동·NSAID 회피, 추적 혈구검사)이 우선이다. 대부분 수 주~수 개월 안에 저절로 회복되고 두개내출혈은 0.5 % 미만이라 치료가 경과를 바꾸지 못한다.\n- 오답감별:\n  - (A) IVIG 는 혈소판을 1~2일 안에 빠르게 올리므로 점막 출혈·중등도 이상 출혈이나 활동 제한 문제가 있을 때 쓴다. 14,000 이라는 숫자에 끌리기 쉽지만, 피부 출혈만 있는 아이에게는 두통·무균수막염 같은 부작용만 더한다.\n  - (C) 단기 프레드니손도 적응은 같다(점막·중등도 출혈). 게다가 백혈병이 아직 완전히 배제되지 않은 상태에서 스테로이드를 먼저 주면 진단을 가릴 수 있다는 것이 골수검사 논쟁의 배경이며, 이 아이는 그런 치료 자체가 필요 없다.\n  - (D) 혈소판 수혈은 항혈소판 항체가 몇 시간 안에 파괴해 단독으로는 무효이고, 두개내출혈 같은 생명 위협 출혈에서 IVIG·스테로이드와 함께만 쓴다. 두통·의식 변화가 없는 아이에게는 적응이 없다.\n  - (E) 골수검사는 다른 혈구 계열 이상·모세포·간비장/림프절 비대·뼈 통증·전신 증상이 있거나 1차 치료에 반응이 없을 때 한다. 이 아이는 고립 혈소판감소증에 도말 정상이라 전형적 ITP 이며, 지침은 이런 경우 골수검사를 권하지 않는다.\n- 임상핵심: 소아 ITP = 건강한 아이 + 바이러스 감염 후 고립 혈소판감소증 → 치료는 숫자가 아니라 출혈 정도로: 피부만 → 관찰, 점막 출혈 → IVIG/단기 스테로이드, 생명 위협 → 수혈 + IVIG + 스테로이드.\n- 출처: ASH 2019 ITP 지침; 국제 합의 2019; Nelson 21e Ch 511. 관찰 우선 권고에 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 진단 — 바이러스 상기도감염 3주 뒤, 잘 놀고 열이 없는 4세 아이에게 피부 출혈만(점상·반상출혈) 있고, 혈색소 12.4·백혈구 7,200(감별계산 정상)·망상적혈구·INR·aPTT 가 모두 정상인데 혈소판만 14,000 으로 낮으며 크기가 크다(젊은 혈소판 = 파괴 증가). 림프절·간비장 비대·뼈 통증이 없고 도말에서 모세포·분열적혈구가 없다 = 급성 면역혈소판감소증(ITP), 골수검사 없이 임상 진단. ② 처치 — 소아 ITP 의 치료 결정 기준은 혈소판 수가 아니라 출혈 정도다. 코피·잇몸·혈뇨·혈변·구강 점막 출혈이 없는 피부 국한 출혈이므로 ASH 2019 권고대로 관찰(보호자 교육, 접촉 운동·NSAID 회피, 추적 혈구검사)이 우선이다. 대부분 수 주~수 개월 안에 저절로 회복되고 두개내출혈은 0.5 % 미만이라 치료가 경과를 바꾸지 못한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) IVIG 는 혈소판을 1~2일 안에 빠르게 올리므로 점막 출혈·중등도 이상 출혈이나 활동 제한 문제가 있을 때 쓴다. 14,000 이라는 숫자에 끌리기 쉽지만, 피부 출혈만 있는 아이에게는 두통·무균수막염 같은 부작용만 더한다.\n(C) 단기 프레드니손도 적응은 같다(점막·중등도 출혈). 게다가 백혈병이 아직 완전히 배제되지 않은 상태에서 스테로이드를 먼저 주면 진단을 가릴 수 있다는 것이 골수검사 논쟁의 배경이며, 이 아이는 그런 치료 자체가 필요 없다.\n(D) 혈소판 수혈은 항혈소판 항체가 몇 시간 안에 파괴해 단독으로는 무효이고, 두개내출혈 같은 생명 위협 출혈에서 IVIG·스테로이드와 함께만 쓴다. 두통·의식 변화가 없는 아이에게는 적응이 없다.\n(E) 골수검사는 다른 혈구 계열 이상·모세포·간비장/림프절 비대·뼈 통증·전신 증상이 있거나 1차 치료에 반응이 없을 때 한다. 이 아이는 고립 혈소판감소증에 도말 정상이라 전형적 ITP 이며, 지침은 이런 경우 골수검사를 권하지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "소아 ITP = 건강한 아이 + 바이러스 감염 후 고립 혈소판감소증 → 치료는 숫자가 아니라 출혈 정도로: 피부만 → 관찰, 점막 출혈 → IVIG/단기 스테로이드, 생명 위협 → 수혈 + IVIG + 스테로이드."
+   },
+   {
+    "k": "출처",
+    "v": "ASH 2019 ITP 지침; 국제 합의 2019; Nelson 21e Ch 511. 관찰 우선 권고에 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Neunert C et al. American Society of Hematology 2019 Guidelines for Immune Thrombocytopenia, Blood Adv 2019; Nelson Textbook of Pediatrics 21e Ch 511 Platelet and Blood Vessel Disorders; Provan D et al. Updated International Consensus Report on ITP, Blood Adv 2019)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "96/60 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "102 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "22 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈색소",
+    "value": "12.4 g/dL",
+    "ref": "11.5–13.5"
+   },
+   {
+    "name": "백혈구",
+    "value": "7,200 /mm³ (감별계산 정상)",
+    "ref": "5,000–15,000"
+   },
+   {
+    "name": "혈소판",
+    "value": "14,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "평균 혈소판 용적",
+    "value": "12.5 fL",
+    "ref": "7–10"
+   },
+   {
+    "name": "망상적혈구",
+    "value": "1.0 %",
+    "ref": "0.5–1.5"
+   },
+   {
+    "name": "PT(INR) / aPTT",
+    "value": "1.0 / 30초",
+    "ref": "0.9–1.1 / 25–35"
+   },
+   {
+    "name": "크레아티닌",
+    "value": "0.4 mg/dL",
+    "ref": "0.3–0.6"
+   },
+   {
+    "name": "젖산탈수소효소",
+    "value": "220 U/L",
+    "ref": "140–280"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "소아 급성 ITP — 진단 조건 × 출혈 정도 → 처치(ASH 2019 · 국제 합의 2019)\n─────────────────────────────────────────────\n진단: 고립 혈소판감소증 + 다른 혈구·도말 정상 + 간비장·림프절 비대 없음 + 전신 상태 양호 → **임상 진단, 골수검사 불필요**\n골수검사가 필요한 경우: 다른 혈구 이상·모세포·간비장/림프절 비대·뼈 통증·전신 증상, 1차 치료에 반응 없음\n**출혈 없음 / 피부 국한(점상·반상출혈)** → **관찰**: 보호자 교육, 접촉 운동·NSAID 회피, 추적 혈구검사 — 혈소판 수와 무관(< 20,000 이어도)\n점막 출혈(코피·잇몸·혈뇨·혈변) 또는 삶의 질·활동 제한 문제 → IVIG 0.8–1 g/kg 1회 **또는** 단기 코르티코스테로이드(프레드니손 2–4 mg/kg/일 ≤ 7일); Rh(+)·비장 있음이면 항D 도 선택지\n두개내출혈·생명 위협 출혈 → IVIG + 고용량 스테로이드 + **혈소판 수혈**(함께) ± 응급 비장절제\n3개월 이상 지속·1년 이상 만성 → 혈액학 재평가(TPO 수용체 작용제·리툭시맙 등)\n─────────────────────────────────────────────\n각주1: 소아 ITP 의 약 75–80 % 는 6개월 안에 저절로 회복하고 두개내출혈은 0.5 % 미만이라, 치료가 자연 경과를 바꾸지 못하며 약물 부작용(IVIG 두통·무균수막염, 스테로이드 체중·행동 변화)만 더할 수 있다.\n각주2: 혈소판 수혈 단독은 항혈소판 항체 때문에 몇 시간 안에 파괴돼 무효 — 생명 위협 출혈에서 IVIG·스테로이드와 같이 쓴다.\n각주3: 성인 ITP 는 출혈이 없어도 혈소판 < 30,000 이면 치료(스테로이드)를 권한다 — 소아와 기준이 다르다.\n",
+   "최신지견": "ASH 2019 지침은 소아 신규 ITP 에서 출혈이 없거나 경미하면 혈소판 수와 무관하게 관찰을 강하게 권하고, 치료가 필요하면 스테로이드는 7일 이내 단기(프레드니손 2–4 mg/kg/일)로, 빠른 상승이 필요하면 IVIG 단회를 권한다. 국제 합의 2019 는 삶의 질·활동 제한을 치료 결정 요인으로 추가했고, 만성 소아 ITP 에는 엘트롬보팍·로미플로스팀이 비장절제 전 단계로 자리 잡았다.",
+   "참고문헌": [
+    "Neunert C et al. American Society of Hematology 2019 guidelines for immune thrombocytopenia. Blood Adv 2019;3:3829",
+    "Provan D et al. Updated international consensus report on the investigation and management of primary immune thrombocytopenia. Blood Adv 2019;3:3780",
+    "Kliegman RM et al. Nelson Textbook of Pediatrics. 21st ed. Ch 511 Platelet and Blood Vessel Disorders"
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "건강해 보이는 아이의 바이러스 감염 후 고립 혈소판감소증(다른 혈구·말초혈액 도말 정상, 간비장·림프절 비대 없음)은 급성 ITP 이며, 피부 출혈만 있는 경한 출혈이면 혈소판 수와 무관하게 관찰이 우선이다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "치료 여부를 가르는 것은 혈소판 14,000 이라는 숫자가 아니라 출혈 정도다 — 코피·잇몸·혈뇨·혈변이 없고 구강 점막 출혈이 없는 피부 국한 출혈이라 IVIG(A)·스테로이드(C)의 적응(점막·중등도 이상 출혈)이 아니다.",
+   "steps": 2,
+   "key": [
+    {
+     "item": "혈소판",
+     "why": "14,000 — 고립 혈소판감소증. 숫자만 보고 치료로 뛰지 않는다",
+     "also": []
+    },
+    {
+     "item": "She has had no nosebleeds, gum bleeding, blood in the urine or stool, or headache",
+     "why": "점막·내부 출혈 없음 = 경한(피부) 출혈 → 관찰 대상",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "Three weeks ago she had a febrile upper respiratory infection",
+     "why": "선행 바이러스 감염 — 급성 ITP 의 전형적 병력",
+     "also": []
+    },
+    {
+     "item": "평균 혈소판 용적",
+     "why": "크기가 크다 = 젊은 혈소판이 많다 → 파괴 증가(생성은 정상)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈색소 / 백혈구 / 망상적혈구",
+     "why": "다른 혈구 계열 정상 — 백혈병·재생불량빈혈·용혈 동반 질환의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no lymphadenopathy, hepatosplenomegaly or bone tenderness",
+     "why": "백혈병·림프종의 가능성을 낮춰 골수검사 없이 ITP 로 진단할 수 있다",
+     "also": []
+    },
+    {
+     "item": "normal red and white blood cell morphology",
+     "why": "모세포·분열적혈구 없음 — 백혈병·미세혈관병성 용혈의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "PT(INR) / aPTT",
+     "why": "정상 — 응고인자 결핍·파종혈관내응고의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She is playful and interactive",
+     "why": "전신 상태 양호 — 두통·의식 변화가 없어 두개내출혈 의심 소견이 없다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "management": [
+    {
+     "item": "there is no bleeding from the oral mucosa",
+     "why": "구강 습성 출혈(wet purpura)이 없다 — 있으면 치료 쪽으로 기운다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "바이러스 감염 3주 뒤 건강해 보이는 아이의 고립 혈소판감소증(다른 혈구·도말·응고 정상, 간비장·림프절 비대 없음)은 급성 ITP 이며 골수검사가 필요 없다. 소아 ITP 는 혈소판 수가 아니라 출혈 정도로 치료를 정하므로, 점막 출혈 없이 피부에 국한된 경한 출혈이면 혈소판 14,000 이어도 관찰과 추적이 우선이다. IVIG·스테로이드는 점막·중등도 이상 출혈에, 혈소판 수혈은 생명을 위협하는 출혈에만 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "코피가 멎지 않거나 잇몸·구강 점막의 습성 출혈, 혈뇨·혈변 같은 점막 출혈이 나타나면 IVIG(또는 단기 스테로이드)로 혈소판을 빠르게 올린다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.peds.itp.observation-vs-treatment",
+  "figureSvg": ""
  }
 ];
