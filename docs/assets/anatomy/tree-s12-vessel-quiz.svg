@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1202" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="척주관의 정맥얼기와 샅의 동맥 — 속음부동맥 — 분지 계보 구조도 퀴즈판">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 12회차 인제스트 섹션 a2-s13 §척주관열기 · §궁둥항문오목의 혈관과 신경 · §깊은샅공간 · §음경 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1202" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">척주관의 정맥얼기와 샅의 동맥 — 속음부동맥 — 분지 퀴즈판<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> vertebral venous plexuses &amp; the internal pudendal artery</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">12회차 · 경막바깥공간은 정맥얼기로 차 있고, 샅의 피는 속엉덩동맥 앞가지에서 온다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  · 번호를 보고 이름을 답하시오</text>
+  <path d="M 602,158 H 615 V 125 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,158 H 615 V 200 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,252 H 419 V 158 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,252 H 419 V 275 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,252 H 419 V 350 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,591 H 615 V 425 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,591 H 615 V 500 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,591 H 615 V 588 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,591 H 615 V 684 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,591 H 615 V 766 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,714 H 419 V 591 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,714 H 419 V 841 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,1027 H 419 V 991 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,1027 H 419 V 1072 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,631 H 219 V 252 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,631 H 219 V 714 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,631 H 219 V 916 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,631 H 219 V 1027 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <rect x="26" y="612" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <circle cx="116" cy="631" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="116" y="636" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">1</text>
+  <rect x="232" y="213" width="174" height="77" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="319" cy="252" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="257" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">2</text>
+  <rect x="232" y="681" width="174" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="319" cy="714" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="719" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">3</text>
+  <rect x="232" y="883" width="174" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="319" cy="916" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="921" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">4</text>
+  <rect x="232" y="997" width="174" height="59" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="319" cy="1027" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="1032" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">5</text>
+  <rect x="432" y="125" width="170" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <circle cx="517" cy="158" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="163" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">6</text>
+  <rect x="432" y="242" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="517" cy="275" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="280" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">7</text>
+  <rect x="432" y="317" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="517" cy="350" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="355" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">8</text>
+  <rect x="432" y="547" width="170" height="88" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <circle cx="517" cy="591" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="596" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">9</text>
+  <rect x="432" y="808" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="517" cy="841" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="846" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">10</text>
+  <rect x="432" y="958" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="517" cy="991" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="996" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">11</text>
+  <rect x="432" y="1033" width="170" height="77" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="517" cy="1072" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="1076" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">12</text>
+  <rect x="628" y="92" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="125" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="130" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">13</text>
+  <rect x="628" y="167" width="160" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <circle cx="708" cy="200" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="205" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">14</text>
+  <rect x="628" y="392" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="425" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="430" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">15</text>
+  <rect x="628" y="467" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="500" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="505" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">16</text>
+  <rect x="628" y="542" width="160" height="92" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="588" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="593" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">17</text>
+  <rect x="628" y="643" width="160" height="81" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="684" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="688" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">18</text>
+  <rect x="628" y="733" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <circle cx="708" cy="766" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="771" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">19</text>
+  <line x1="26" y1="1120" x2="814" y2="1120" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1132" fill="#93a4b7" font-size="10.5">속척주정맥얼기는 <tspan fill="#e6edf3" font-weight="700">판막이 없다</tspan> — 그래서 배·골반의 암이 척주·머리뼈로 곧장 퍼진다.</text>
+  <text x="26" y="1150" fill="#93a4b7" font-size="10.5">샅의 동맥은 <tspan fill="#e6edf3" font-weight="700">속음부동맥 하나</tspan>가 음부신경과 같은 관을 타고 들어와 나눠 준다.</text>
+  <text x="26" y="1168" fill="#93a4b7" font-size="10.5">음경등정맥은 <tspan fill="#e6edf3" font-weight="700">깊은 것과 얕은 것의 행선지가 다르다</tspan> — 깊은쪽이 전립샘정맥얼기로 간다.</text>
+</svg>
