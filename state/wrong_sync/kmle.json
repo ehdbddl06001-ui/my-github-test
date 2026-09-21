@@ -21,8 +21,29 @@
    "date": "2026-09-20",
    "device": "android-9buhos",
    "note": ""
+  },
+  "kmle-2026-1098": {
+   "id": "kmle-2026-1098",
+   "exam": "kmle",
+   "subject": "Dermatology",
+   "step": "",
+   "type": "Moderate-to-severe Plaque Psoriasis Failing Topicals in a Woman Planning Pregnancy with Hypertension — Choice of Systemic Therapy",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 2,
+   "chosenText": "메토트렉세이트 경구 투여",
+   "answer": 1,
+   "answerText": "좁은파장 자외선B 광선치료",
+   "coreNote": "",
+   "differ": "",
+   "decision": "체표면적 15 %의 판상건선이 6개월 국소치료에 실패했으므로 전신치료 대상이다. 그러나 1년 안의 임신 계획이 메토트렉세이트와 아시트레틴을 배제하고, 조절되지 않는 고혈압이 사이클로스포린을 밀어내며, 전신 스테로이드는 반동 위험으로 건선에 쓰지 않으므로 임신에도 안전한 좁은파장 자외선B 광선치료가 가장 적절하다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-21",
+   "device": "android-9buhos",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-20T04:31:11.904Z"
+ "updated": "2026-09-21T13:22:50.048Z"
 }
