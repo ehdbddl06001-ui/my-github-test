@@ -5,29 +5,29 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2686,
+  "total": 2694,
   "byType": {
    "usmle": 156,
    "concept": 5,
    "anatomy": 719,
+   "paper": 640,
    "kmle": 1067,
    "imaging": 90,
-   "paper": 632,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 719,
-   "Cardiology": 199,
-   "Nephrology": 166,
-   "Infectious Disease": 144,
-   "Pediatrics": 123,
-   "Hematology-Oncology": 92,
-   "Pathology": 90,
+   "Cardiology": 200,
+   "Nephrology": 167,
+   "Infectious Disease": 145,
+   "Pediatrics": 124,
+   "Hematology-Oncology": 93,
+   "Pathology": 91,
    "Obstetrics & Gynecology": 81,
    "Neurology": 80,
    "Psychiatry": 79,
-   "Surgery": 72,
+   "Surgery": 73,
    "Dermatology": 68,
    "Endocrinology": 68,
    "Gastroenterology": 67,
@@ -37,7 +37,7 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 66,
    "Rheumatology": 66,
    "Hematology": 65,
-   "Laboratory Medicine": 63,
+   "Laboratory Medicine": 64,
    "산부인과": 30,
    "Physiology": 18,
    "순환기": 14,
@@ -76,7 +76,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 1815,
-   "medium": 822,
+   "medium": 830,
    "low": 49
   },
   "tagCount": 3830
@@ -286,6 +286,142 @@ window.MEDKOS_INDEX = {
    "path": "content\\anatomy\\notes\\anatomy-2026-0610-s12-subnote.md",
    "snippet": "0. 이 회차의 축 — 세 문장 1. 이 회차의 주인공은 근육이 아니라 「공간」이다. 척주관의 세 공간(경막바깥·경막밑·거미막밑)과 샅의 두 주머니(얕은·깊은), 그리고 궁둥항문오목 — 태깅은 그 경계 를 묻는다. 2. 척수는 L1–L2에서 끝나지만 척주관과 거미막밑공간은 더 내려간다. 그 길이차 하나가 허리천자를 가능하게 하고, 그 아래를 채운 것이 말총이다. 3. 샅의 신경은 음부신경 하나다. 가지가 셋(아래곧창자·샅·등신",
    "text": "Anatomy 12회차 서브노트 — 척주·척수막 / 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 12회차 · 등·골반·회음 서브노트 12회차 척수막 허리천자 말총 샅 궁둥항문오목 음부신경 샅막 얕은샅공간 깊은샅공간 샅중심체 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 이 회차의 주인공은 근육이 아니라 「공간」이다. 척주관의 세 공간(경막바깥·경막밑·거미막밑)과 샅의 두 주머니(얕은·깊은), 그리고 궁둥항문오목 — 태깅은 그 경계 를 묻는다. 2. 척수는 L1–L2에서 끝나지만 척주관과 거미막밑공간은 더 내려간다. 그 길이차 하나가 허리천자를 가능하게 하고, 그 아래를 채운 것이 말총이다. 3. 샅의 신경은 음부신경 하나다. 가지가 셋(아래곧창자·샅·등신경)뿐이라 \"이 구조의 신경은?\"이라는 물음은 거의 언제나 같은 답으로 수렴한다 — 함정은 어느 가지냐 다. 1. 척주관 열기 Opening the vertebral canal !fig docs/assets/anatomy/tree s12 bundle labeled.svg 막과 근막이 만든 공간 — 척주관의 층 · 음부신경관 · 두 샅주머니 1) 고리판절제술 — 실습의 첫 손 ==척추뼈고리판== (lamina of vertebral arch)을 가쪽에서 자르고 가시돌기와 함께 들어낸다 → ==고리판절제술== (laminectomy). 들어낼 때 함께 끊기는 것: ==가시사이인대== (interspinous ligament) · ==가시끝인대== (supraspinous ligament) · ==황색인대== (ligamenta flava). 뚜껑이 열리면 바로 보이는 것은 척수가 아니라 ==경막바깥공간== (epidural space)의 지방과 정맥얼기 다. 인대 원어 자리 성질 가시끝인대 supraspinous lig. 가시돌기 끝 을 세로로 잇는다 가장 얕다 — 바늘이 처음 만난다 가시사이인대 interspinous lig. 이웃한 가시돌기 사이 얇고 성기다 황색인대 ligamenta flava 위·아래 ==고리판 사이== ==탄력섬유라 노랗다== · 뚫는 순간 저항이 사라진다 뒤세로인대 post. longitudinal lig. 척추뼈몸통 뒤면 (척주관 앞벽) 디스크가 뒤로 밀릴 때 막아 준다 — 그래서 뒤가쪽 으로 터진다 2) 속척주정맥얼기 — 열자마자 피가 나는 이유 [!주의] 경막바깥공간은 비어 있지 않다 :: ==속척주정맥얼기== (internal vertebral venous plexus)가 지방과 함께 이 공간을 채운다. 고리판절제술·경막바깥마취에서 출혈하는 자리다. [!임상] Batson 얼기 — 판막이 없다 :: 배·골반 압력이 오르면(기침·복압) 피가 이 얼기로 역류 한다. 전립샘암·유방암이 허파를 거치지 않고 척주·골반뼈로 전이하는 통로. 2. 척수막 세 겹과 세 공간 Spinal meninges !fig docs/assets/anatomy/tree s12 nerve labeled.svg 척수신경의 시작과 샅의 신경 — 뿌리에서 음부신경까지 1) 겉에서 속으로 막 원어 포인트 척수경막 spinal dura mater 질기다 · 위로 뇌경막과 이어지나 머리와 달리 뼈막층이 없다 → 그 자리가 경막바깥공간 거미막 arachnoid mater 경막에 맞붙어 있다 · 무혈관 · 반투명 척수연막 spinal pia mater 척수 표면에 밀착 · 여기서 ==치아인대==와 ==종말끈==이 나온다 공간 원어 내용물 임상 ==경막바깥공간== epidural space 지방 + 속척주정맥얼기 경막바깥마취 · 무통분만 ==경막밑공간== subdural space 잠재공간 (정상에서는 없다) 외상성 출혈로만 생긴다 ==거미막밑공간== subarachnoid space ==뇌척수액== · 말총 · 치아인대 허리천자 — 아래로 S2 까지 [!기출] \"척수막 세 겹과 사이 공간을 겉에서 순서대로\" :: 경막 → (경막밑, 잠재) → 거미막 → 거미막밑공간(CSF) → 연막. 경막 바깥 공간은 경막 겉 이라 순서에서 맨 앞이다. 2) 치아인대 — 척수를 가운데 매단다 ==치아인대== (denticulate ligament): 연막이 앞뿌리와 뒤뿌리 사이 에서 톱니처럼 가쪽으로 뻗어 거미막을 뚫고 경막에 붙는다. 좌우 각 21쌍 . 실전 의미: 수술·해부에서 앞뿌리와 뒤뿌리를 가르는 표지 다. 치아인대보다 앞이면 앞뿌리, 뒤면 뒤뿌리. 3. 척수와 척수신경뿌리 Spinal cord & roots 1) 끝나는 자리와 그 아래 구조 원어 위치·포인트 ==척수원뿔== conus medullaris 성인 ==L1–L2== 에서 원뿔처럼 끝난다 (신생아는 L3) ==말총== cauda equina 원뿔 아래 거미막밑공간을 채운 허리·엉치신경뿌리 다발 ==종말끈== filum terminale 연막이 이어진 실 · 속 (경막 안, L2–S2) + 겉 (경막이 싸서 꼬리뼈에 붙음) 척수팽대 cervical / lumbosacral enlargement 팔·다리 얼기가 나오는 자리라 굵다 2) 뿌리에서 가지까지 — 척추사이구멍에서 일이 일어난다 척수 ─┬─ 앞뿌리(운동) ─┐ │ ├─ 척수신경줄기 ─┬─ 앞가지 (굵다 · 얼기) └─ 뒤뿌리(감각) ─┘ (척추사이구멍) └─ 뒤가지 (가늘다 · 등) │ 척수신경절 (거짓홑극신경세포 · 척추사이구멍 안) ==척수신경절== (spinal ganglion)은 ==척추사이구멍== 안에서 뒤뿌리가 부푼 것. 운동 신경세포체는 여기 없다 (척수 앞뿔에 있다). ==척추사이구멍==의 경계: 위·아래 = 척추뼈 아래·위 패임, 앞 = ==척추사이원반==과 척추뼈몸통, 뒤 = 돌기사이관절. 디스크 탈출이 여기서 뿌리를 누른다. [!임상] 허리천자 (응용과제) :: 척수는 L1–L2에서 끝나고 거미막밑공간은 S2 까지 내려간다. 그 사이에는 말총만 있어 바늘이 뿌리를 밀어낼 뿐 자르지 않는다. 찌르는 높이 ==L3–L4 또는 L4–L5== — 표지는 ==야코비선==(양쪽 엉덩뼈능선 최고점을 잇는 선 ≈ L4 가시돌기). !fig docs/assets/anatomy/diag lumbar puncture labeled.svg 허리천자 — 바늘이 지나는 층과 척수·거미막밑공간의 길이차 4. 샅의 경계와 두 삼각 Perineum 1) 마름모 하나를 가로선으로 자른다 꼭짓점·경계 구조 앞 ==두덩결합== (pubic symphysis) · ==아래두덩인대== 앞가쪽 ==궁둥두덩가지== (ischiopubic ramus) 가쪽 ==궁둥뼈결절== (ischial tuberosity) 뒤가쪽 ==엉치결절인대== (sacrotuberous ligament) 뒤 ==꼬리뼈== (coccyx) 지붕(위) ==골반가로막== (pelvic diaphragm) — 항문올림근 + 꼬리근 두 ==궁둥뼈결절==을 잇는 가로선이 마름모를 둘로 자른다. 앞 = ==비뇨생식삼각== (urogenital triangle) — 샅막이 있다 뒤 = ==항문삼각== (anal triangle) — 샅막이 없다 두 삼각의 꼭짓점이 만나는 가로선 한가운데가 ==샅중심체== (perineal body). !fig docs/assets/anatomy/diag pelvic diaphragm labeled.svg 골반가로막 — 샅의 지붕이자 궁둥항문오목의 안쪽벽 2) 피부와 얕은근막 — 남녀에서 이름만 바뀐다 남자 여자 음낭 (scrotum) · ==육양막== (dartos) ==대음순== (labium majus) · ==소음순== (labium minus) Colles근막 = 얕은샅근막 깊은층 같은 층이 대음순으로 이어진다 [!TIP] 요도 파열이 퍼지는 길 :: Colles근막은 뒤로 샅막 뒤모서리에, 가쪽으로 궁둥두덩가지에 붙지만 앞·위로는 배벽의 Scarpa근막과 이어진다 . 그래서 막요도가 찢어지면 소변이 음낭·음경·앞배벽으로는 퍼지고 넓적다리·항문삼각으로는 안 간다 . 5. 항문삼각 — 궁둥항문오목 Anal triangle 1) 쐐기 모양 지방 공간 벽 구성 안쪽벽 ==골반가로막==(항문올림근) + ==바깥항문조임근== — 비스듬히 내려온다 가쪽벽 궁둥뼈 + ==속폐쇄근·속폐쇄근막== — 그 속에 ==음부신경관== 뒤 ==엉치결절인대== + ==큰볼기근== 앞 샅막 뒤모서리 (앞오목이 비뇨생식삼각 밑으로 파고든다) 내용물 ==궁둥항문오목지방덩이== (fat body) · ==아래곧창자 혈관·신경== 지방은 채우는 게 아니라 배변 때 항문관이 벌어질 자리를 비워 두는 것 이다. [!임상] 항문주위농양과 말굽고름집 :: 지방은 혈류가 나빠 감염이 잘 고인다. 항문 뒤쪽으로 좌우 오목이 통해 있어 한쪽 고름이 반대쪽으로 번진다(horseshoe abscess). 터지면 ==치루==(anal fistula). 2) 바깥항문조임근과 샅중심체 ==바깥항문조임근== (external anal sphincter m.): 피부밑부분 · 얕은부분 · 깊은부분 세 층. 맘대로근 이고 신경은 ==아래곧창자신경==(음부신경 가지). 속항문조임근은 민무늬근(자율신경) — 이름은 짝이지만 성질이 반대 다. 앞쪽 섬유가 ==샅중심체== (perineal body)로 모여 얕은·깊은샅가로근, 망울해면체근, 항문올림근과 한 매듭이 된다. [!임상] episiotomy (응용과제) :: 안쪽곁 절개 (median)는 아물기 좋고 통증이 적지만 ==샅중심체를 지나 바깥항문조임근·곧창자까지 찢어질== 위험이 있다. 중간가쪽 절개 (mediolateral)는 매듭을 비켜 가 그 위험을 낮추는 대신 아물기가 더디다. 6. 음부신경관과 샅의 신경혈관 Pudendal canal !fig docs/assets/anatomy/tree s12 vessel labeled.svg 척주관의 정맥얼기와 샅의 동맥 — 속음부동맥 계보 1) 구멍을 두 번 쓰는 길 S2–S4 앞가지 ─ 음부신경 │ └─ 큰궁둥구멍 (궁둥구멍근 아래) ─── 골반 밖 │ 궁둥뼈가시·엉치가시인대 뒤를 돈다 ← 음부신경 차단 표지 │ 작은궁둥구멍 ─── 다시 골반(샅)으로 │ 음부신경관 (Alcock) — 속폐쇄근막 속 ├─ 아래곧창자신경 → 바깥항문조임근 · 항문 주위 피부 ├─ 샅신경 → 얕은주머니 근육 · 뒤음낭/뒤음순 피부 └─ 음경등신경/음핵등신경 → 깊은주머니를 지나 귀두 관 속에는 신경 혼자가 아니다 — ==속음부동맥·정맥==이 함께 지난다(신경혈관다발). ==속음부동맥== (internal pudendal a.)은 ==속엉덩동맥 앞가지==에서 나와 신경과 같은 길을 간다. 음부신경 가지 맡는 것 ==아래곧창자신경== 바깥항문조임근(운동) · 항문 주위 피부(감각) ==샅신경== 깊은가지 얕은샅가로근 · 궁둥해면체근 · 망울해면체근 · 바깥요도조임근 ==샅신경== 얕은가지 ==뒤음낭신경== / ==뒤음순신경== (피부) ==음경등신경 / 음핵등신경== 귀두 감각 — 성감각의 주 경로 속음부동맥 가지 짝이 되는 신경 ==아래곧창자동맥== 아래곧창자신경 ==샅동맥== → 뒤음낭·뒤음순동맥 샅신경 얕은가지 ==음경망울동맥== / 질어귀망울동맥 — (깊은주머니) ==깊은음경동맥== (나선동맥) — 발기의 주 동맥 ==음경등동맥== 음경등신경과 나란히 [!주의] 음낭·대음순 피부는 두 계통 이 나눠 갖는다 :: 앞쪽 = ==엉덩샅굴신경==(L1) + ==바깥음부동맥==(넓적다리동맥) / 뒤쪽 = ==음부신경==의 뒤음낭·뒤음순신경 + 속음부동맥. 앞뒤를 바꿔 묻는 문제가 단골이다. 7. 얕은샅공간 Superficial perineal pouch 1) 지붕과 바닥 지붕(위) = ==샅막== (perineal membrane) · 바닥(아래) = ==Colles근막==(얕은샅근막 깊은층). 비뇨생식삼각에만 있다 — 항문삼각에는 샅막이 없으므로 주머니도 없다. 2) 세 근육 + 발기조직의 뿌리 근육 원어 덮는 것 작용 ==얕은샅가로근== superficial transverse perineal m. — 샅중심체를 가로로 고정 ==궁둥해면체근== ischiocavernosus m. ==음경다리==(crus) / 음핵다리 정맥 유출을 막아 발기 유지 ==망울해면체근== bulbospongiosus m. ==음경망울==(bulb) / ==질어귀망울== 남: 요도를 비운다 · 여: 질구멍을 좁힌다 셋 다 신경은 ==샅신경 깊은가지==(음부신경). 발기조직 뿌리: ==음경해면체== (corpus cavernosum, 좌우 다리) · ==요도해면체== (corpus spongiosum, 가운데 망울) / 여자는 ==음핵다리== + ==질어귀망울==. [!기출] 어느 주머니에 있는가 :: 얕은주머니 = 발기조직 뿌리 + 세 근육 + 샅신경 얕은가지 . 깊은주머니 = 바깥요도조임근 + 깊은샅가로근 + 막요도 + 망울요도샘 . 헷갈리면 \" 뿌리는 얕고, 조임근은 깊다 \". 8. 깊은샅공간 Deep perineal pouch 구조 원어 포인트 ==바깥요도조임근== ext. urethral sphincter m. 맘대로근 — 요자제의 주역. 음부신경 ==깊은샅가로근== deep transverse perineal m. ==샅가로인대==와 함께 샅막을 보강 ==남자요도 막부분== membranous urethra 요도에서 가장 짧고 가장 잘 찢어진다 ==망울요도샘== bulbourethral gland (Cowper) 남자만 · 몸은 깊은주머니, ==관은 얕은주머니의 요도해면체로== 열린다 ==질어귀망울== · 큰질어귀샘 bulb of vestibule · greater vestibular gland 여자에서는 이 자리가 얕은주머니 쪽으로 배치된다 지나는 것 음경등신경 · 속음부동맥 샅막을 뚫고 등쪽으로 나간다 [!임상] 골반골절과 막요도 파열 :: 두덩가지 골절로 샅막이 찢어지면 막요도 가 끊긴다. 소변이 깊은주머니 → 골반 복막바깥공간 으로 새어 들어간다(얕은주머니 파열과 퍼지는 방향이 다르다). 9. 남자 바깥생식기관 Male external genitalia 1) 음경 — 뿌리와 몸통 부분 구성 ==음경뿌리== 좌우 ==음경다리==(궁둥해면체근) + 가운데 ==음경망울==(망울해면체근) — 얕은주머니 안 ==음경몸통== 음경해면체 2 + 요도해면체 1 ==음경귀두== 요도해면체가 부푼 것 · ==바깥요도구멍== ==음경꺼풀== prepuce · ==음경꺼풀주름띠== (frenulum) 인대·근막 원어 · 붙는 곳 ==음경걸이인대== suspensory lig. — 두덩결합 에서 깊은근막으로 ==음경고리인대== fundiform lig. — 백색선·Scarpa근막 에서 내려와 고리처럼 감싼다 (더 얕다) 2) 음경등쪽의 배열 — 가운데부터 세어 나간다 (등쪽 정중선) 깊은음경등정맥 (한 줄) │ 음경등동맥 ─ 양옆 ─ 음경등동맥 │ │ 음경등신경 가장 가쪽 음경등신경 └── 그 위 얕은근막 속: 얕은음경등정맥 [!기출] 음경등쪽 구조의 순서 :: 정중선에서 가쪽으로 ==깊은정맥 1 → 동맥 2 → 신경 2==. 정맥이 가운데 하나 라는 점이 답을 가른다. 얕은음경등정맥은 이 배열 바깥(얕은근막) 이다. 10. 여자 바깥생식기관 Female external genitalia 구조 원어 ==불두덩== mons pubis ==대음순== labium majus — 뒤에서 ==뒤음순연결==(posterior commissure), 사이가 ==대음순틈새== ==소음순== labium minus — 앞에서 갈라져 ==음핵꺼풀==과 ==음핵주름띠== ==음핵== clitoris — ==음핵다리== + ==음핵몸통== + ==음핵귀두== (요도해면체에 해당하는 것이 없다) ==질어귀== vestibule — ==바깥요도구멍== · ==질구멍== · ==처녀막== ==질어귀망울== bulb of vestibule — 질구멍 양옆, 망울해면체근이 덮는다 ==큰질어귀샘관== duct of greater vestibular gland — 질구멍 뒤가쪽 으로 열린다 감각: 앞쪽 = 엉덩샅굴신경(앞음순신경) / 뒤쪽 = ==뒤음순신경==(샅신경) / 귀두 = ==음핵등신경==. [!TIP] 남녀 대응을 한 줄로 :: 음경해면체=음핵다리 · 요도해면체/음경망울= 질어귀망울 · 음낭=대음순 · 망울요도샘= 큰질어귀샘 . 대응을 알면 한쪽만 외워도 반대쪽이 따라온다. 11. 근육표 종합 (12회차) 근육 원어 이는곳 닿는곳 작용 신경 바깥항문조임근 ext. anal sphincter 꼬리뼈·항문꼬리인대 ==샅중심체== 항문 맘대로 닫기 ==아래곧창자신경== 얕은샅가로근 superficial transverse perineal 궁둥뼈결절 샅중심체 샅중심체 고정 샅신경 깊은가지 깊은샅가로근 deep transverse perineal 궁둥두덩가지 속면 정중섬유판·샅중심체 샅막 보강 샅신경 깊은가지 궁둥해면체근 ischiocavernosus 궁둥뼈결절·궁둥두덩가지 음경다리/음핵다리 발기 유지 샅신경 깊은가지 망울해면체근 bulbospongiosus 샅중심체·정중솔기 음경망울·깊은근막 / 질어귀망울 요도 비우기 / 질구멍 좁히기 샅신경 깊은가지 바깥요도조임근 ext. urethral sphincter 궁둥두덩가지 정중선에서 맞물림 요자제 샅신경 깊은가지 (지붕) 항문올림근 levator ani 두덩뼈·힘줄활·궁둥뼈가시 항문꼬리인대·꼬리뼈 골반바닥 받치기 S3–S4 곧은가지 + 음부신경 [!암기] 샅 근육의 신경은 전부 하나다 :: 위 표의 신경 칸을 세로로 읽으면 음부신경 계열뿐 이다. 그래서 시험은 \"무슨 신경?\"이 아니라 \" 무슨 가지? \"를 묻는다. 12. 예습시험 체크리스트 10 (수업당 10문제 대비) 1. 고리판절제술에서 끊는 인대 셋 과 각 인대의 깊이 순서 2. 척수막 세 겹 과 사이 세 공간 — 무엇이 잠재공간인가 3. 경막바깥공간의 내용물 둘 과 Batson 얼기의 임상 의미 4. ==척수원뿔==·==말총==·==종말끈==의 높이 와 허리천자를 L3–L4에서 하는 이유 5. ==치아인대==가 무엇과 무엇 사이 에서 나오는가 (앞뿌리/뒤뿌리 감별) 6. 샅 마름모의 여섯 경계 와 두 삼각을 가르는 선 7. 궁둥항문오목의 안쪽벽·가쪽벽·뒤벽 과 내용물 8. 음부신경이 두 구멍을 쓰는 경로 와 가지 셋의 담당 9. 얕은주머니 vs 깊은주머니 — 어느 구조가 어디에 있는가(망울요도샘 예외 포함) 10. 음경등쪽 구조의 정중선에서 가쪽 순서 와 얕은/깊은 음경등정맥의 행선지"
+  },
+  {
+   "id": "paper-2026-0640",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The American journal of sports medicine",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0640_periacetabular_osteotomy_and_combined_open_femoral_head_neck.md",
+   "snippet": "Title Periacetabular Osteotomy and Combined Open Femoral Head Neck Junction Osteochondroplasty: A Concise Follow up of a Previous Report at a Mean 10 Year Follow up Authors Shah Vivek P, O'Connor Kyle P, Harris Michael, Nepple Jeffrey J, Pa",
+   "text": "Surgery scraped pubmed PubMed / The American journal of sports medicine Title Periacetabular Osteotomy and Combined Open Femoral Head Neck Junction Osteochondroplasty: A Concise Follow up of a Previous Report at a Mean 10 Year Follow up Authors Shah Vivek P, O'Connor Kyle P, Harris Michael, Nepple Jeffrey J, Pascual Garrido Cecilia, Clohisy John C Journal / DOI The American journal of sports medicine · DOI: 10.1177/03635465261476760 · PMID: 42766781 https://pubmed.ncbi.nlm.nih.gov/42766781/ Abstract BACKGROUND: Hip dysplasia is a well established cause of hip dysfunction and secondary osteoarthritis in young adults. Periacetabular osteotomy (PAO) is a common surgical treatment for symptomatic acetabular dysplasia. Recent awareness of concomitant impingement in dysplastic hips has led to inclusion of osteochondroplasty (OCP) for femoral head neck abnormalities in select cases to improve survivorship and clinical outcomes. PURPOSE: To compare outcomes, reoperation rates, radiography, survivorship, and complications at a mean of 10 years after PAO with and without femoral head neck OCP. STUDY DESIGN: Cohort study; Level of evidence, 3. METHODS: The authors conducted a retrospective review of the data of 38 patients (38 hips) who underwent PAO with OCP compared to a matched control group of 42 patients (42 hips) who underwent PAO only between 2000 and 2007. Outcomes included the modified Harris Hip Score (mHHS) and Western Ontario and McMaster Universities Osteoarthritis Index score. Failure was defined as clinical failure (failure to meet mHHS minimal clinically important difference [MCID] or Patient Acceptable Symptom State [PASS]), conversion to total hip arthroplasty (THA), reoperation, and composite failure (either clinical failure or reoperation). RESULTS: The mean follow up was 10.6 years (range, 6.9 16.3 years) for the PAO+OCP cohort and 11.8 years (range, 7.2 17.2 years) for the PAO only cohort. Both groups showed similar improvements in outcomes, MCID, PASS, and rates of clinical failure (P .05). The PAO only group had a higher reoperation rate (33%) compared to the PAO+OCP group (8%) (P = .005), with 4 reoperations in the PAO only group due to secondary femoroacetabular impingement and included OCP and labral repair. THA conversion rates were 14% in the PAO only group and 3% in the PAO+OCP group (P = .07). The Kaplan Meier (KM) 10 year survivorship estimations from clinical failure were 93.8% and 89.2% for the PAO+OCP and PAO only groups, respectively. The KM 10 year survivorship estimations from reoperation were 97.4% and 72.9%, respectively. The KM 10 year survivorship estimations from composite failure were 93.8% and 89.7%, respectively. CONCLUSION: At a mean follow up of 10 years, PAO+OCP and PAO only procedures demonstrated similar outcome improvements. However, the PAO only group had a higher reoperation rate, primarily due to residual impingement. These findings suggest that concurrent OCP may reduce the need for secondary procedures without compromising clinical outcomes. Further long term studies are needed to investigate the effect of residual impingement on joint health after PAO. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0639",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of tropical pediatrics",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0639_comparison_of_topical_5_permethrin_and_oral_ivermectin_for_t.md",
+   "snippet": "Title Comparison of topical 5% permethrin and oral ivermectin for treatment of childhood scabies: a randomized controlled trial Authors Khatun Nazima, Pan Sayani, Islam Kamirul, Paul Sudipto, Ghosh Taraknath Journal / DOI Journal of tropica",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of tropical pediatrics Title Comparison of topical 5% permethrin and oral ivermectin for treatment of childhood scabies: a randomized controlled trial Authors Khatun Nazima, Pan Sayani, Islam Kamirul, Paul Sudipto, Ghosh Taraknath Journal / DOI Journal of tropical pediatrics · DOI: 10.1093/tropej/fmag063 · PMID: 42766782 https://pubmed.ncbi.nlm.nih.gov/42766782/ Abstract Topical permethrin (5%), though considered the treatment of choice for scabies, has few drawbacks (expensive, poor compliance). This study aimed to compare the efficacy, safety, and cost effectiveness of topical permethrin (5%) and oral ivermectin for treating childhood scabies. This randomized controlled trial was conducted in the dermatology and pediatric outpatient clinic of a tertiary care center between August 2023 and December 2024. Children in the study and control groups received oral ivermectin (200 µg/kg) and 5% permethrin, respectively, at an interval of 7 days. The cure rate at the 4th week was the primary outcome. Secondary outcomes were cure rate (1st and 2nd week), lesion count per patient (1st, 2nd, and 4th weeks), microscopic clearance (1st, 2nd, and 4th weeks), treatment failure (4th week), adverse events, reinfestation at the 6 month follow up period, and cost to successfully treat one case. Three hundred and fifty five children were included in either group. Though a significantly higher proportion of children in the control group were cured at the 1st week (41.8% vs 62.9%, p value <.001), the cure rate was similar between the groups at the 2nd and 4th weeks (P value .05). Treatment failure was also similar in both groups (5.1% vs 3.9%, P value = .47). The cost to treat one case successfully in the study and control groups was ₹44.2 ($0.46) and ₹140.4 ($1.47), respectively. Reinfestation during the follow up period was similar in the two groups (P value .05). Oral ivermectin may be a cost effective alternative treatment of childhood scabies. The trial was registered in the Clinical Trial Registry of India (Registration no.: CTRI/2023/07/055910, dated 31 July 2023). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0638",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR AI",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0638_diagnostic_performance_of_a_locally_deployed_vision_language.md",
+   "snippet": "Title Diagnostic Performance of a Locally Deployed Vision Language Model for Bone Tumor Diagnosis Using Smartphone Captured Images: Exploratory Retrospective Study Authors Shi Yin, Tong Zhi Chao Journal / DOI JMIR AI · DOI: 10.2196/99757 · ",
+   "text": "Laboratory Medicine scraped pubmed PubMed / JMIR AI Title Diagnostic Performance of a Locally Deployed Vision Language Model for Bone Tumor Diagnosis Using Smartphone Captured Images: Exploratory Retrospective Study Authors Shi Yin, Tong Zhi Chao Journal / DOI JMIR AI · DOI: 10.2196/99757 · PMID: 42766848 https://pubmed.ncbi.nlm.nih.gov/42766848/ Abstract BACKGROUND: Vision language models (VLMs) show promise in medical imaging, yet their performance on high noise smartphone captured images common in primary care referrals remains untested. Furthermore, it remains controversial whether retrieval augmented generation (RAG) using external expert guidelines actually improves diagnostic accuracy for rare bone tumors. OBJECTIVE: This study aims to evaluate the diagnostic efficacy of a locally deployed, open source VLM (Qwen3 VL) on high noise bone tumor images. Specifically, we investigated how clinical persona prompts and RAG integration were associated with diagnostic performance and observed error patterns during multimodal reasoning. METHODS: This retrospective study included 42 patients with biopsy proven primary bone tumors and tumor like lesions. To simulate real world conditions, we captured the original DICOM (Digital Imaging and Communications in Medicine) images from a monitor using a handheld smartphone without stabilization, organically capturing ambient glare and Moiré patterns typical of real world teleconsultations. Using a 2×2 factorial design, we compared the diagnostic performance of the base model versus the RAG integrated model under 2 distinct system personas: \"radiologist\" and \"orthopedic oncologist.\" Primary outcomes were top 1 and top 3 diagnostic accuracy. We used the McNemar test for paired comparisons of diagnostic correctness before and after RAG integration, and conducted an exploratory analysis of AI hallucinations using model generated reasoning traces. RESULTS: Without RAG, the top 3 accuracy showed no significant difference between the radiologist and orthopedic oncologist personas (15/42, 36% vs 14/42, 33%; P=.76). After RAG integration, top 1 accuracy in the radiologist persona decreased from 12 (29%, 95% CI 16% 45%) to 6 (14%, 95% CI 5% 29%; P=.03). In the orthopedic oncologist persona, no significant change was observed in top 1 or top 3 accuracy (P=.65 and P .99, respectively). Exploratory review of model generated reasoning traces identified several text associated diagnostic error patterns, including demographic anchoring, trauma related masking, and shifts toward rare diagnoses following RAG retrieval. CONCLUSIONS: In this exploratory study, adding the evaluated RAG configuration did not improve diagnostic accuracy and was associated with text related diagnostic errors under smartphone captured degraded imaging conditions. The findings suggest that persona design may influence the robustness of VLM responses to retrieved information, but this observation requires validation in larger, multimodel studies. Future studies should evaluate whether targeted visual fine tuning on representative real world degraded medical images can improve robustness under such conditions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0637",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of endocrinology",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0637_multimodal_imaging_for_adrenal_tumor_characterization_clinic.md",
+   "snippet": "Title Multimodal Imaging for Adrenal Tumor Characterization: Clinical Impact of the 2023 European Guidelines A Single Center Retrospective Study Authors Lutz Esther, Zaragori Timothée, Nominé Criqui Claire, Marie Pierre Yves, Klein Marc, Sc",
+   "text": "Pathology scraped pubmed PubMed / European journal of endocrinology Title Multimodal Imaging for Adrenal Tumor Characterization: Clinical Impact of the 2023 European Guidelines A Single Center Retrospective Study Authors Lutz Esther, Zaragori Timothée, Nominé Criqui Claire, Marie Pierre Yves, Klein Marc, Scheyer Nicolas Journal / DOI European journal of endocrinology · DOI: 10.1093/ejendo/lvag179 · PMID: 42766813 https://pubmed.ncbi.nlm.nih.gov/42766813/ Abstract BACKGROUND: Adrenal lesions are becoming increasingly common with the advent of abdominal imaging. Although mostly benign and nonfunctional, some cases may be malignant or secretory and justify adrenalectomy. The 2023 European guidelines propose a more conservative approach (focused on simple radiological criteria) to limit unnecessary surgery. However, the impact of this strategy on the management of malignant lesions remains to be assessed. METHODS: We conducted a single center retrospective study including all patients who underwent adrenalectomy between 2017 and 2024. The aim was to investigate the potential impact of the new iconographic criteria of the 2023 European recommendations. Patients aged over 18 years with at least one preoperative imaging examination and a histopathology report were included. RESULTS: Among 259 patients, 75% had benign lesions, and 25% had malignant lesions. Based on the 2016 guidelines, 71% of the patients would have undergone surgery, whereas 31% would have undergone surgery according to the 2023 criteria. With respect to malignant lesions, 98% of the patients would have received surgery according to the 2016 criteria, whereas 60% would have received surgery according to the 2023 criteria. The inclusion of hypersecretion increased this rate to 93%, and the addition of complementary imaging ensured the detection of all malignant cases. CONCLUSION: The 2023 guidelines may substantially reduce unnecessary adrenalectomies for benign lesions. The risk of missing malignant tumors remains low when hormonal evaluation and multimodal imaging (such as MRI and FDG PET) are used, particularly in indeterminate cases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0636",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer immunology research",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0636_subtype_agnostic_biomarkers_of_immunotherapy_response_in_lun.md",
+   "snippet": "Title Subtype Agnostic Biomarkers of Immunotherapy Response in Lung Cancer Authors Gobbini Elisa, Chakraborty Subhamoy, Vathiotis Ioannis, Borea Roberto, Syrigos Konstantinos N, Girard Nicolas, Alahmadi Asrar, Rolfo Christian, et al. Journa",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Cancer immunology research Title Subtype Agnostic Biomarkers of Immunotherapy Response in Lung Cancer Authors Gobbini Elisa, Chakraborty Subhamoy, Vathiotis Ioannis, Borea Roberto, Syrigos Konstantinos N, Girard Nicolas, Alahmadi Asrar, Rolfo Christian, et al. Journal / DOI Cancer immunology research · DOI: 10.1158/2326 6066.CIR 26 0295 · PMID: 42766734 https://pubmed.ncbi.nlm.nih.gov/42766734/ Abstract Immunotherapy has transformed the lung cancer treatment landscape, establishing a role in nearly all histologic subtypes, including non small cell and small cell lung cancers. However, only a few biomarkers, including PD L1 tumor proportion score, tumor mutational burden, and microsatellite instability, are currently available, and their predictive value remains inconsistent across different histologies. The biological heterogeneity of lung tumors and the dynamic interplay between systemic therapies and the tumor microenvironment (TME) further complicate biomarker development. At the same time, novel immunotherapeutic strategies, including bispecific antibodies and antibody drug conjugates, are expanding the spectrum of immune targets beyond conventional checkpoint inhibition, highlighting the need for biomarkers that better reflect the functional state of the TME. In this review, we address the limitations of currently used biomarkers across lung cancer histologies and describe emerging immune related biomarkers encompassing innate immune infiltration, antigen presentation capacity, cytotoxic T cell activation, and inflammatory signaling; these have shown promise as histology independent predictors of response. Robust prospective studies are essential to validate integrated signatures capable of capturing profiles of patients who are most likely to respond to immune checkpoint inhibitors and next generation treatments. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0635",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medical Internet research",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0635_facilitators_and_barriers_to_digital_health_technologies_for.md",
+   "snippet": "Title Facilitators and Barriers to Digital Health Technologies for Self Management in Patients With Chronic Kidney Disease: Systematic Review Based on the Updated CFIR 2.0 Framework Authors Su Feiyue, Yao Yao, Lin Xiaoqi, Su Qingwen, Hu Yic",
+   "text": "Nephrology scraped pubmed PubMed / Journal of medical Internet research Title Facilitators and Barriers to Digital Health Technologies for Self Management in Patients With Chronic Kidney Disease: Systematic Review Based on the Updated CFIR 2.0 Framework Authors Su Feiyue, Yao Yao, Lin Xiaoqi, Su Qingwen, Hu Yichao, Pei Hualian, Xu Qinhong Journal / DOI Journal of medical Internet research · DOI: 10.2196/103560 · PMID: 42766847 https://pubmed.ncbi.nlm.nih.gov/42766847/ Abstract BACKGROUND: The integration of digital health technology (DHT) into chronic kidney disease (CKD) care holds transformative potential for enhancing patient self management and slowing disease progression. Despite the growing availability of DHT, there remains limited understanding of the factors that facilitate or hinder their adoption and use among patients with CKD. OBJECTIVE: This study aims to identify the facilitators and barriers to the use of digital health interventions for self management in patients with CKD, and to provide evidence to inform the development of implementation strategies. METHODS: A systematic search was performed across 11 databases (CNKI, WanFang Data, VIP Database, Chinese Medical Journals Database, PubMed, CINAHL, Embase, Cochrane Library, Scopus, PsycINFO, and Web of Science Core Collection) from database inception to May 12, 2026, with reports restricted to those published in English or Chinese. Eligible studies were required to enroll adult patients with CKD (aged ≥18 years); report facilitators, barriers, or influencing factors related to DHT use for self management; and use qualitative, quantitative, or mixed methods designs. Nonempirical articles, conference abstracts, and studies without accessible full text were excluded. Two researchers (Feiyue Su and Yao Yao) independently assessed the quality of the included studies using the Mixed Methods Appraisal Tool (MMAT). Extracted data were coded deductively to the Consolidated Framework for Implementation Research 2.0 (CFIR 2.0) constructs using open and axial coding; recurring themes were then synthesized into a narrative summary organized by the 5 CFIR domains. RESULTS: Thirteen studies (8 mixed methods, 3 quantitative, and 2 qualitative) were included, encompassing 3002 patients with CKD across 8 countries. Of these, 9 met all applicable MMAT criteria, while the remaining 4 had methodological limitations. In total, 19 facilitators and 15 barriers were identified and mapped to the 5 CFIR 2.0 domains. The most frequently reported facilitators were a simple and easy to use user interface (9 studies, high confidence), care and support from family members and peers (8 studies, high confidence), convenient anytime access to health information, high perceived usefulness, personalized educational content, and continuous content updates (each reported in 5 studies, high confidence). The most frequently reported barriers were low health literacy (6 studies, high confidence), poor economic status of patients (6 studies, moderate confidence), and advanced age (5 studies, high confidence). CONCLUSIONS: The use of digital health interventions for CKD self management is influenced by multilevel factors. However, the evidence base is limited by the predominance of mixed methods designs, the lack of longitudinal studies, and the concentration of studies in high income countries, which may limit the generalizability of the findings. Targeted, multilevel strategies that address the identified facilitators and barriers are essential for enhancing effective and equitable implementation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0634",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0634_development_and_validation_of_an_interpretable_machine_learn.md",
+   "snippet": "Title Development and Validation of an Interpretable Machine Learning Model to Predict Mortality in Patients With Sepsis Induced Coagulopathy: Multicenter Cohort Study Authors Sun Jiaxuan, Wang Jingyuan, Dong Yuxin, Liu Jieyu, Ding Yiyun, F",
+   "text": "Infectious Disease scraped pubmed PubMed / JMIR medical informatics Title Development and Validation of an Interpretable Machine Learning Model to Predict Mortality in Patients With Sepsis Induced Coagulopathy: Multicenter Cohort Study Authors Sun Jiaxuan, Wang Jingyuan, Dong Yuxin, Liu Jieyu, Ding Yiyun, Fan Shilin, Chen Dongyue, Shou Songtao Journal / DOI JMIR medical informatics · DOI: 10.2196/90285 · PMID: 42766803 https://pubmed.ncbi.nlm.nih.gov/42766803/ Abstract BACKGROUND: Sepsis induced coagulopathy (SIC) is a common and severe complication in patients with sepsis, characterized by microvascular thrombosis, systemic endothelial damage, and markedly increased short term mortality. Existing traditional clinical risk scoring systems demonstrate limited accuracy and fail to capture complex, nonlinear physiological interactions, underscoring the urgent need for advanced prognostic tools. OBJECTIVE: The objective of this study was to develop and validate an interpretable machine learning (ML) model using large scale, multicenter databases to predict early mortality in intensive care unit (ICU) patients with SIC and to evaluate its predictive performance and clinical utility compared with traditional clinical risk scores. METHODS: The study retrospectively analyzed clinical data of patients with SIC from the Medical Information Mart for Intensive Care IV (MIMIC IV), the eICU Collaborative Research Database (eICU CRD), and Tianjin Medical University General Hospital. Feature selection was performed using LASSO (least absolute shrinkage and selection operator) regression, the Boruta algorithm, and recursive feature elimination with cross validation, combined with multivariable logistic regression. Twelve ML algorithms were trained and compared with 4 traditional clinical scoring systems (Sequential Organ Failure Assessment, Acute Physiology and Chronic Health Evaluation II, Simplified Acute Physiology Score II, and Oxford Acute Severity of Illness Score) to predict 28 day mortality after ICU admission. Model discrimination, calibration, and clinical utility were assessed using the area under the curve (AUC), calibration curves, and decision curve analysis. Furthermore, Shapley additive explanations (SHAP) values were used to ensure model interpretability and to identify individual pathophysiological drivers. RESULTS: A total of 7980 (66.3%) patients with SIC from the MIMIC IV database, 3815 (31.7%) from the eICU CRD database, and 235 (2.0%) from Tianjin Medical University General Hospital were included in the study. Ten independent predictors were identified to construct the model. The XGBoost (extreme gradient boosting) model performed the best, with an AUC of 0.899 (95% CI 0.889 0.909) in the internal validation set and 0.882 and 0.904 in the 2 external validation sets, significantly outperforming traditional scoring systems and demonstrating higher clinical net benefit. SHAP analysis identified that the top 5 critical features were anion gap, red blood cell distribution width, lactate, total bilirubin, and age. Furthermore, an easy to use online tool, SIC Predict Streamlit, was developed based on this model to enable clinicians to quickly assess patient risk. CONCLUSIONS: The ML model developed in this study demonstrated superior accuracy, robustness, and generalizability in predicting early mortality in patients with SIC. The model outperformed traditional clinical scoring tools, and the findings provide valuable insights for prognostic assessment and the individualized management of patients with SIC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0633",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-09-21",
+   "path": "content\\papers\\2026\\2026-09-21_paper-2026-0633_response_by_oldgren_and_wallentin_to_letter_regarding_articl.md",
+   "snippet": "Title Response by Oldgren and Wallentin to Letter Regarding Article, \"Biomarker Based ABC AF Risk Scores for Personalized Treatment to Reduce Stroke or Death in Atrial Fibrillation: A Registry Based, Multicenter, Randomized, Controlled Stud",
+   "text": "Cardiology scraped pubmed PubMed / Circulation Title Response by Oldgren and Wallentin to Letter Regarding Article, \"Biomarker Based ABC AF Risk Scores for Personalized Treatment to Reduce Stroke or Death in Atrial Fibrillation: A Registry Based, Multicenter, Randomized, Controlled Study\" Authors Oldgren Jonas, Wallentin Lars, ABC AF Steering Committee Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.126.080165 · PMID: 42766685 https://pubmed.ncbi.nlm.nih.gov/42766685/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1098",
