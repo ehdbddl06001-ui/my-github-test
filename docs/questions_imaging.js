@@ -2,6 +2,1405 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0091",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "병리·조직 — 사구체 여과장벽 단백질의 면역조직화학",
+  "type": "병리·조직 — 사구체 여과장벽 단백질의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-21",
+  "vignette": "A 16-year-old boy undergoes left nephrectomy after a motor-vehicle collision in which the kidney was shattered; he has no history of kidney disease, and his preoperative urinalysis showed no protein or blood. A section of uninjured renal cortex from the specimen is stained by immunohistochemistry for a transmembrane protein of the immunoglobulin superfamily that is expressed in the kidney only by podocytes; the photomicrograph is shown.",
+  "question": "A newborn with homozygous loss-of-function mutations in the gene encoding this protein would most likely present with which of the following?",
+  "options": [
+   "Hyperchloremic metabolic acidosis with a urine pH above 5.5",
+   "Hypokalemic metabolic alkalosis with normal blood pressure",
+   "Massive proteinuria, edema, and hypoalbuminemia within the first months of life",
+   "Gross hematuria with sensorineural hearing loss and lens abnormalities",
+   "Polyuria and hypernatremia unresponsive to desmopressin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The stain is confined to the glomeruli — each glomerular tuft is strongly brown along the capillary loops while the surrounding proximal and distal tubules and interstitium are unstained. A podocyte-restricted immunoglobulin-superfamily transmembrane protein with this distribution is nephrin, the principal component of the slit diaphragm between foot processes, encoded by NPHS1. Loss of nephrin abolishes the size-selective barrier of the slit, so complete deficiency produces congenital nephrotic syndrome of the Finnish type: massive proteinuria in utero and at birth, edema, hypoalbuminemia, and a large placenta. Alport syndrome (hematuria, hearing loss) is a glomerular basement membrane collagen defect, and the tubular options (nephrogenic diabetes insipidus, distal renal tubular acidosis, Bartter syndrome) involve proteins of the collecting duct, intercalated cell, and thick ascending limb, which are unstained here.\n- 원리: <b>The glomerular filtration barrier has three layers</b>: fenestrated endothelium, glomerular basement membrane, and the interdigitating foot processes of podocytes bridged by the <b>slit diaphragm</b>. The slit diaphragm is a modified adherens junction whose backbone is <b>nephrin</b> (NPHS1), a ~180-kDa transmembrane immunoglobulin-superfamily protein that forms a zipper-like meshwork with itself and with NEPH1 across the 30–40 nm slit; podocin (NPHS2), CD2AP, and TRPC6 anchor it to the actin cytoskeleton. Nephrin is expressed in the kidney only by podocytes, which is why an immunohistochemical stain for it lights up <b>every glomerular tuft along the capillary loops and nothing in the tubules or interstitium</b> — the pattern in this core. The slit diaphragm is the final and finest size barrier: albumin that crosses the basement membrane is held back here, so <b>loss of nephrin means unrestricted passage of plasma proteins</b>.<br> <b>Why the phenotype is nephrotic and congenital</b> — with homozygous NPHS1 loss-of-function (the Fin-major and Fin-minor founder mutations), the slit never forms; proteinuria begins in utero (elevated amniotic α-fetoprotein), the placenta is enlarged, and the infant has edema, hypoalbuminemia, and hyperlipidemia within days to weeks — <b>congenital nephrotic syndrome of the Finnish type</b>. Steroids are useless because the defect is structural, and treatment is albumin infusion, nutrition, and eventual bilateral nephrectomy with transplantation. The same logic explains the other podocyte genes: podocin mutations cause steroid-resistant nephrotic syndrome in early childhood, and WT1 mutations cause diffuse mesangial sclerosis with nephrotic syndrome (Denys-Drash).<br> <b>Why the image separates glomerular from tubular disease</b> — every distractor except Alport syndrome is a transport defect of a tubular segment (aquaporin-2 or the V2 receptor in the collecting duct, the H<sup>+</sup>-ATPase or anion exchanger of intercalated cells, the NKCC2 cotransporter of the thick ascending limb). Their proteins would stain the tubules and leave the glomeruli pale — the opposite of what is shown. Alport syndrome is glomerular, but it is a <b>basement membrane collagen IV</b> defect whose hallmark is hematuria, not the massive proteinuria of a slit-diaphragm defect.\n- 비교: <table><thead><tr><th style=\"width:30%\">Presentation</th><th style=\"width:38%\">Protein and location</th><th>Expected stain pattern</th></tr></thead><tbody> <tr><td><b>Congenital nephrotic syndrome (answer)</b></td><td><b>Nephrin — podocyte slit diaphragm</b></td><td><b>Glomeruli only, along capillary loops; tubules negative — as shown</b></td></tr> <tr><td>Hematuria + hearing loss (closest distractor)</td><td>Type IV collagen α3/α4/α5 — glomerular basement membrane (also cochlea, lens)</td><td>Glomerular, but a basement-membrane protein, not a podocyte transmembrane protein; defect leaks red cells rather than massive protein</td></tr> <tr><td>Nephrogenic diabetes insipidus</td><td>Aquaporin-2 or V2 receptor — collecting duct principal cells</td><td>Tubules stained, glomeruli negative</td></tr> <tr><td>Distal renal tubular acidosis</td><td>H<sup>+</sup>-ATPase or AE1 — intercalated cells of the collecting duct</td><td>Tubules stained, glomeruli negative</td></tr> <tr><td>Bartter syndrome</td><td>NKCC2, ROMK, ClC-Kb — thick ascending limb</td><td>Tubules stained, glomeruli negative</td></tr> </tbody></table> The <b>closest distractor is Alport syndrome</b>, because it is the other glomerular option and would also show glomerular-restricted staining at this magnification. The dividing line is <b>the identity given in the stem</b> — a transmembrane immunoglobulin-superfamily protein made only by podocytes is a slit-diaphragm component, whereas collagen IV is a secreted basement-membrane protein made by podocytes and endothelium alike — and the <b>consequence</b>: a slit defect leaks protein massively, a basement-membrane collagen defect leaks red cells and splits the lamina densa.\n- 오답 이유:\n  - (A) Hyperchloremic metabolic acidosis with a urine pH above 5.5 is distal renal tubular acidosis from defects of the H+-ATPase or the anion exchanger AE1 in intercalated cells of the collecting duct. These are tubular transport proteins, and the glomerular-restricted stain shown here excludes them. If the stained cells had been scattered intercalated cells of the collecting duct, this option would be the answer.\n  - (B) Hypokalemic metabolic alkalosis with normal blood pressure is Bartter syndrome, caused by loss of the NKCC2 cotransporter, ROMK, or ClC-Kb in the thick ascending limb. The image shows no tubular staining, so a thick-ascending-limb transporter is excluded. If the stain had outlined the thick ascending limbs in the medullary rays while the glomeruli remained unstained, Bartter syndrome would be correct.\n  - (D) Gross hematuria with sensorineural hearing loss and lens abnormalities is Alport syndrome, a defect of type IV collagen α5 (or α3/α4) in the glomerular basement membrane, cochlea, and lens. It is glomerular and would also stain glomeruli, which makes it the closest competitor, but collagen IV is a secreted basement-membrane protein rather than a podocyte-specific immunoglobulin-superfamily transmembrane protein, and its loss produces hematuria and a split lamina densa rather than congenital massive proteinuria. If the stem had described a basement-membrane collagen, this option would be correct.\n  - (E) Polyuria and hypernatremia unresponsive to desmopressin is nephrogenic diabetes insipidus from loss of aquaporin-2 or the vasopressin V2 receptor in collecting-duct principal cells. Those proteins would stain the tubules, leaving the glomeruli pale — the opposite of this image. If the photomicrograph had shown brown collecting ducts with unstained glomeruli and the protein were a water channel, this option would be correct.\n- 함정: Read the distribution before the name: staining confined to the glomerular tufts with negative tubules places the protein in the filtration barrier, and a podocyte-only transmembrane protein there is the slit diaphragm — its absence leaks protein, not red cells, and not salt or water.\n- 학습목표: 콩팥 피질 면역조직화학에서 사구체에만 강하게 염색되고 세관은 음성인 분포를 읽고, 그 단백질이 사구체 여과장벽(족세포 틈새막)의 구성 성분이며 그 결손이 선천 신증후군을 일으킨다는 것을 세관 질환과 구분해 추론한다\n- 근거·출처: Human Protein Atlas, NPHS1 / kidney (CC BY 4.0), image 67641_A_8_5 — 16 M, normal kidney TMA core; author reading 2026-09-22 — Grade A tissue identity; teacher-only · 작성자 판독(2026-09-22): 사구체 5~6개가 모세혈관 고리를 따라 강한 갈색으로 염색되고 근위·원위 세관과 사이질은 거의 음성; 식별 표지 없음 · Kestilä M et al. Positionally cloned gene for a novel glomerular protein — nephrin — is mutated in congenital nephrotic syndrome. Mol Cell 1998;1:575 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The kidney' — glomerular filtration barrier, slit diaphragm, congenital nephrotic syndrome, Alport syndrome · Brenner and Rector's The Kidney, 11th ed., ch. 'Inherited disorders of the glomerulus' and 'Inherited disorders of renal tubular transport'\n\n## 출처\n- Human Protein Atlas, NPHS1 / Kidney (CC BY 4.0), https://images.proteinatlas.org/35555/67641_A_8_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The stain is confined to the glomeruli — each glomerular tuft is strongly brown along the capillary loops while the surrounding proximal and distal tubules and interstitium are unstained. A podocyte-restricted immunoglobulin-superfamily transmembrane protein with this distribution is nephrin, the principal component of the slit diaphragm between foot processes, encoded by NPHS1. Loss of nephrin abolishes the size-selective barrier of the slit, so complete deficiency produces congenital nephrotic syndrome of the Finnish type: massive proteinuria in utero and at birth, edema, hypoalbuminemia, and a large placenta. Alport syndrome (hematuria, hearing loss) is a glomerular basement membrane collagen defect, and the tubular options (nephrogenic diabetes insipidus, distal renal tubular acidosis, Bartter syndrome) involve proteins of the collecting duct, intercalated cell, and thick ascending limb, which are unstained here."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The glomerular filtration barrier has three layers</b>: fenestrated endothelium, glomerular basement membrane, and the interdigitating foot processes of podocytes bridged by the <b>slit diaphragm</b>. The slit diaphragm is a modified adherens junction whose backbone is <b>nephrin</b> (NPHS1), a ~180-kDa transmembrane immunoglobulin-superfamily protein that forms a zipper-like meshwork with itself and with NEPH1 across the 30–40 nm slit; podocin (NPHS2), CD2AP, and TRPC6 anchor it to the actin cytoskeleton. Nephrin is expressed in the kidney only by podocytes, which is why an immunohistochemical stain for it lights up <b>every glomerular tuft along the capillary loops and nothing in the tubules or interstitium</b> — the pattern in this core. The slit diaphragm is the final and finest size barrier: albumin that crosses the basement membrane is held back here, so <b>loss of nephrin means unrestricted passage of plasma proteins</b>.<br> <b>Why the phenotype is nephrotic and congenital</b> — with homozygous NPHS1 loss-of-function (the Fin-major and Fin-minor founder mutations), the slit never forms; proteinuria begins in utero (elevated amniotic α-fetoprotein), the placenta is enlarged, and the infant has edema, hypoalbuminemia, and hyperlipidemia within days to weeks — <b>congenital nephrotic syndrome of the Finnish type</b>. Steroids are useless because the defect is structural, and treatment is albumin infusion, nutrition, and eventual bilateral nephrectomy with transplantation. The same logic explains the other podocyte genes: podocin mutations cause steroid-resistant nephrotic syndrome in early childhood, and WT1 mutations cause diffuse mesangial sclerosis with nephrotic syndrome (Denys-Drash).<br> <b>Why the image separates glomerular from tubular disease</b> — every distractor except Alport syndrome is a transport defect of a tubular segment (aquaporin-2 or the V2 receptor in the collecting duct, the H<sup>+</sup>-ATPase or anion exchanger of intercalated cells, the NKCC2 cotransporter of the thick ascending limb). Their proteins would stain the tubules and leave the glomeruli pale — the opposite of what is shown. Alport syndrome is glomerular, but it is a <b>basement membrane collagen IV</b> defect whose hallmark is hematuria, not the massive proteinuria of a slit-diaphragm defect."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Presentation</th><th style=\"width:38%\">Protein and location</th><th>Expected stain pattern</th></tr></thead><tbody> <tr><td><b>Congenital nephrotic syndrome (answer)</b></td><td><b>Nephrin — podocyte slit diaphragm</b></td><td><b>Glomeruli only, along capillary loops; tubules negative — as shown</b></td></tr> <tr><td>Hematuria + hearing loss (closest distractor)</td><td>Type IV collagen α3/α4/α5 — glomerular basement membrane (also cochlea, lens)</td><td>Glomerular, but a basement-membrane protein, not a podocyte transmembrane protein; defect leaks red cells rather than massive protein</td></tr> <tr><td>Nephrogenic diabetes insipidus</td><td>Aquaporin-2 or V2 receptor — collecting duct principal cells</td><td>Tubules stained, glomeruli negative</td></tr> <tr><td>Distal renal tubular acidosis</td><td>H<sup>+</sup>-ATPase or AE1 — intercalated cells of the collecting duct</td><td>Tubules stained, glomeruli negative</td></tr> <tr><td>Bartter syndrome</td><td>NKCC2, ROMK, ClC-Kb — thick ascending limb</td><td>Tubules stained, glomeruli negative</td></tr> </tbody></table> The <b>closest distractor is Alport syndrome</b>, because it is the other glomerular option and would also show glomerular-restricted staining at this magnification. The dividing line is <b>the identity given in the stem</b> — a transmembrane immunoglobulin-superfamily protein made only by podocytes is a slit-diaphragm component, whereas collagen IV is a secreted basement-membrane protein made by podocytes and endothelium alike — and the <b>consequence</b>: a slit defect leaks protein massively, a basement-membrane collagen defect leaks red cells and splits the lamina densa."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hyperchloremic metabolic acidosis with a urine pH above 5.5 is distal renal tubular acidosis from defects of the H+-ATPase or the anion exchanger AE1 in intercalated cells of the collecting duct. These are tubular transport proteins, and the glomerular-restricted stain shown here excludes them. If the stained cells had been scattered intercalated cells of the collecting duct, this option would be the answer.\n(B) Hypokalemic metabolic alkalosis with normal blood pressure is Bartter syndrome, caused by loss of the NKCC2 cotransporter, ROMK, or ClC-Kb in the thick ascending limb. The image shows no tubular staining, so a thick-ascending-limb transporter is excluded. If the stain had outlined the thick ascending limbs in the medullary rays while the glomeruli remained unstained, Bartter syndrome would be correct.\n(D) Gross hematuria with sensorineural hearing loss and lens abnormalities is Alport syndrome, a defect of type IV collagen α5 (or α3/α4) in the glomerular basement membrane, cochlea, and lens. It is glomerular and would also stain glomeruli, which makes it the closest competitor, but collagen IV is a secreted basement-membrane protein rather than a podocyte-specific immunoglobulin-superfamily transmembrane protein, and its loss produces hematuria and a split lamina densa rather than congenital massive proteinuria. If the stem had described a basement-membrane collagen, this option would be correct.\n(E) Polyuria and hypernatremia unresponsive to desmopressin is nephrogenic diabetes insipidus from loss of aquaporin-2 or the vasopressin V2 receptor in collecting-duct principal cells. Those proteins would stain the tubules, leaving the glomeruli pale — the opposite of this image. If the photomicrograph had shown brown collecting ducts with unstained glomeruli and the protein were a water channel, this option would be correct."
+   },
+   {
+    "k": "함정",
+    "v": "Read the distribution before the name: staining confined to the glomerular tufts with negative tubules places the protein in the filtration barrier, and a podocyte-only transmembrane protein there is the slit diaphragm — its absence leaks protein, not red cells, and not salt or water."
+   },
+   {
+    "k": "학습목표",
+    "v": "콩팥 피질 면역조직화학에서 사구체에만 강하게 염색되고 세관은 음성인 분포를 읽고, 그 단백질이 사구체 여과장벽(족세포 틈새막)의 구성 성분이며 그 결손이 선천 신증후군을 일으킨다는 것을 세관 질환과 구분해 추론한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas, NPHS1 / kidney (CC BY 4.0), image 67641_A_8_5 — 16 M, normal kidney TMA core; author reading 2026-09-22 — Grade A tissue identity; teacher-only · 작성자 판독(2026-09-22): 사구체 5~6개가 모세혈관 고리를 따라 강한 갈색으로 염색되고 근위·원위 세관과 사이질은 거의 음성; 식별 표지 없음 · Kestilä M et al. Positionally cloned gene for a novel glomerular protein — nephrin — is mutated in congenital nephrotic syndrome. Mol Cell 1998;1:575 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The kidney' — glomerular filtration barrier, slit diaphragm, congenital nephrotic syndrome, Alport syndrome · Brenner and Rector's The Kidney, 11th ed., ch. 'Inherited disorders of the glomerulus' and 'Inherited disorders of renal tubular transport' ## 출처 Human Protein Atlas, NPHS1 / Kidney (CC BY 4.0), https://images.proteinatlas.org/35555/67641_A_8_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "A podocyte-only immunoglobulin-superfamily transmembrane protein whose stain is confined to the glomerular tufts is nephrin of the slit diaphragm, and its complete loss causes congenital nephrotic syndrome",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "The stem identifies a podocyte transmembrane protein of the immunoglobulin superfamily, not a secreted basement-membrane collagen — a slit-diaphragm defect leaks protein massively, whereas the collagen IV defect of Alport syndrome leaks red cells",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: strong brown staining of every glomerular tuft along the capillary loops",
+     "why": "Protein of the glomerular filtration barrier — podocyte foot processes",
+     "also": []
+    },
+    {
+     "item": "a transmembrane protein of the immunoglobulin superfamily that is expressed in the kidney only by podocytes",
+     "why": "Defines nephrin of the slit diaphragm and separates it from basement-membrane collagen",
+     "also": []
+    },
+    {
+     "item": "homozygous loss-of-function mutations",
+     "why": "Complete absence of the slit diaphragm — the congenital, steroid-resistant phenotype",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: proximal and distal tubules and interstitium unstained",
+     "why": "Excludes the tubular transport proteins behind diabetes insipidus, renal tubular acidosis, and Bartter syndrome",
+     "also": []
+    },
+    {
+     "item": "his preoperative urinalysis showed no protein or blood",
+     "why": "Confirms the specimen is normal kidney — the stain shows normal distribution, not disease",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "he has no history of kidney disease",
+     "why": "The nephrectomy is for trauma; the tissue serves only as a normal reference",
+     "also": []
+    },
+    {
+     "item": "16-year-old boy",
+     "why": "Age of the donor of the normal tissue — irrelevant to the newborn phenotype asked",
+     "also": []
+    }
+   ],
+   "summary": "The immunohistochemical stain outlines the glomerular tufts and spares the tubules, and the stem identifies a podocyte-restricted immunoglobulin-superfamily transmembrane protein: nephrin of the slit diaphragm. Homozygous NPHS1 loss abolishes the slit and presents as congenital nephrotic syndrome with massive proteinuria, edema, and hypoalbuminemia in the first months of life.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the stained protein had been described as the α5 chain of type IV collagen of the glomerular basement membrane, the expected presentation would be hematuria with sensorineural hearing loss and lens abnormalities"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0091.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000161270-NPHS1/tissue/Kidney",
+   "asset_id": "HPA-NPHS1_67641_A_8_5",
+   "text": "Human Protein Atlas, NPHS1 / Kidney (CC BY 4.0), https://images.proteinatlas.org/35555/67641_A_8_5.jpg"
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0088",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "진단검사·영상의학 판독 — 종괴효과가 있는 뇌 병변의 다음 검사",
+  "type": "진단검사·영상의학 판독 — 종괴효과가 있는 뇌 병변의 다음 검사",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-21",
+  "vignette": "73세 남자가 6주 전부터 점점 심해지는 두통과 2주 전부터 왼쪽 팔다리에 힘이 빠져 병원에 왔다. 두통은 아침에 심하고 구역을 동반하며, 최근 가족이 보기에 성격이 무뎌지고 말수가 줄었다. 고혈압으로 암로디핀을 복용하고 있으며 발열·경련·머리 외상은 없었다. 혈압 152/88 mmHg, 맥박 64회/분, 체온 36.7℃ 이고 의식은 명료하나 반응이 느리다. 왼쪽 팔다리 근력이 4/5 이고 왼쪽 바빈스키징후가 양성이며 목 경직은 없다. 혈액검사에서 백혈구 7,400/mm³, C반응단백 0.3 mg/dL 이다. 조영제를 주지 않고 찍은 뇌 MRI 축상면 T1 강조영상은 그림과 같다.",
+  "question": "가장 적절한 다음 검사는?",
+  "options": [
+   "경동맥 초음파",
+   "뇌 CT 혈관조영",
+   "가돌리늄 조영증강 뇌 MRI",
+   "요추천자와 뇌척수액 검사",
+   "뇌파검사"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 조영 전 T1 강조영상에서 환자 오른쪽 이마엽-섬엽에 경계가 불분명한 저신호 병변이 넓게 퍼져 회백질 경계와 고랑이 지워졌고, 같은 쪽 측뇌실 앞뿔이 눌려 좁아지며 중격이 반대쪽으로 밀려 있다 — 종괴효과를 가진 침윤성 병변이다. 6주에 걸친 진행성 두통(아침 악화·구역), 성격 변화, 반대쪽 편측 근력 약화와 바빈스키징후는 서서히 자라는 두개내 종괴에 합당하다. 종괴의 성격(종양·농양·전이)을 가르고 범위를 정하는 다음 검사는 가돌리늄 조영증강 MRI 이며, 종괴효과가 있는 상태에서 요추천자는 뇌탈출을 일으킬 수 있어 금기다. 경련이 없어 뇌파는 진단에 기여하지 않고, 경과가 급성 혈관 사건이 아니어서 경동맥 초음파·CT 혈관조영은 우선순위가 아니다.\n- 원리: <b>종괴효과(mass effect)는 두개골이라는 닫힌 공간에서 부피가 늘어난 결과</b>다. 병변 자체와 그 주위 혈관성 부종이 인접 구조를 밀어내면 영상에서 <b>고랑 소실, 같은 쪽 측뇌실 압박, 중앙선 구조(투명중격·제3뇌실)의 반대쪽 편위</b>로 나타난다. 조영 전 T1 강조영상에서 종양과 부종은 정상 백질보다 <b>저신호</b>이고, 경계가 불분명하게 회백질 경계를 지우는 모양은 침윤성 병변을 시사한다. 임상 경과가 <b>수주에 걸쳐 진행</b>하고 아침 두통·구역(두개내압 상승)·성격 변화(이마엽)· 반대쪽 추체로 징후가 겹치면 서서히 자라는 종괴다.<br> <b>왜 조영증강 MRI 가 다음인가</b> — 조영 전 영상은 「무엇이 어디를 밀고 있는가」만 보여 준다. 가돌리늄은 혈액뇌장벽이 깨진 곳에만 새어 들어가므로 조영증강 양상(고리형·균질·결절형·비증강)과 괴사 여부가 <b>고등급 교종·전이·림프종·농양·저등급 교종</b>을 가르는 첫 번째 단서가 되고, 병변의 실제 경계와 수술·생검 표적을 정한다. 그 뒤 필요하면 확산강조·관류·분광 영상과 조직검사로 이어진다.<br> <b>왜 요추천자는 안 되는가</b> — 한쪽 반구의 종괴가 측뇌실을 누르고 중앙선을 밀고 있는 상태에서 척수강 압력을 낮추면 천막 위아래의 압력 차가 커져 <b>구상회 탈출이나 소뇌편도 탈출</b>이 생길 수 있다. 수막염이 의심되더라도 종괴효과가 있으면 영상으로 먼저 확인하고, 이 증례는 발열·목 경직·염증 지표가 없어 수막염 자체가 의심되지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">검사</th><th style=\"width:42%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>가돌리늄 조영증강 MRI(정답)</b></td><td><b>종괴효과가 있는 두개내 병변의 성격·범위 규명</b></td><td><b>침윤성 저신호 병변 + 뇌실 압박·중앙선 편위</b></td></tr> <tr><td>요추천자(가장 가까운 오답)</td><td>종괴효과가 없는 수막염·지주막하출혈·림프종성 수막염 의심</td><td>종괴효과가 있어 뇌탈출 위험 — 금기. 발열·목 경직·CRP 상승도 없다</td></tr> <tr><td>뇌파검사</td><td>경련이나 비경련성 뇌전증지속상태 의심</td><td>경련이 없고 국소 징후는 영상으로 이미 설명된다</td></tr> <tr><td>경동맥 초음파</td><td>급성 허혈뇌졸중·일과성허혈발작의 원인 평가</td><td>6주에 걸친 진행 경과 — 급성 혈관 사건이 아니다</td></tr> <tr><td>뇌 CT 혈관조영</td><td>동맥류·혈관기형·급성 대혈관 폐색 의심</td><td>영상이 혈관 병변이 아닌 실질 종괴를 보여 준다</td></tr> </tbody></table> <b>가장 가까운 오답은 「요추천자」</b>다 — 두통·성격 변화·반응 저하가 수막염이나 뇌염을 떠올리게 하기 때문이다. 갈림길은 <b>영상의 종괴효과</b>다. 측뇌실 압박과 중앙선 편위가 있으면 어떤 임상 상황에서도 요추천자보다 조영증강 영상이 먼저이고, 종괴효과 없는 수막 증상이라면 요추천자가 진단 검사가 된다.\n- 오답 이유:\n  - ① 경동맥 초음파는 급성 허혈뇌졸중이나 일과성허혈발작에서 색전 원인을 찾는 검사다. 이 증례는 6주에 걸쳐 진행한 두통과 2주간 서서히 악화된 근력 약화로, 갑자기 생기는 혈관 사건의 경과가 아니며 영상도 동맥 영역에 국한된 경색이 아니라 침윤성 종괴다. 갑작스러운 편측 마비가 생겨 확산강조영상에서 경색이 확인되었다면 경동맥 평가가 맞다.\n  - ② 뇌 CT 혈관조영은 동맥류·혈관기형·급성 대혈관 폐색이 의심될 때 쓴다. 이 영상은 혈관 병변이 아니라 실질 안의 침윤성 병변과 종괴효과를 보여 주고, 벼락두통이나 지주막하출혈의 단서도 없다. 갑작스러운 벼락두통과 지주막하출혈이 있었다면 혈관조영이 다음 검사가 된다.\n  - ④ 요추천자는 두통·성격 변화·반응 저하가 수막염이나 뇌염을 떠올리게 해 고려할 수 있지만, 이 영상은 한쪽 반구의 종괴가 측뇌실을 누르고 중앙선을 밀고 있어 척수강 압력을 낮추면 뇌탈출이 생길 수 있다. 발열·목 경직·CRP 상승도 없다. 영상에 종괴효과가 없고 발열과 목 경직이 있었다면 요추천자가 정답이 된다.\n  - ⑤ 뇌파검사는 경련이 있거나 비경련성 뇌전증지속상태로 의식 변화를 설명해야 할 때 필요하다. 이 환자는 경련이 없고 반응 저하와 편측 근력 약화는 영상의 종괴로 설명되므로 뇌파는 병변의 성격을 가르는 데 기여하지 못한다. 반복되는 국소 경련 뒤 의식이 돌아오지 않았다면 뇌파가 다음 검사가 된다.\n- 함정: 「두통 + 성격 변화 + 느린 반응」에서 뇌척수액 검사로 가기 전에 영상의 종괴효과를 읽는다. 측뇌실 압박·중앙선 편위가 있으면 요추천자는 금기이고 조영증강 MRI 가 다음이다.\n- 학습목표: 아급성 진행성 두통과 편측 근력 약화에서 조영 전 T1 강조 뇌 MRI 의 경계 불분명한 저신호 병변과 측뇌실 압박·중앙선 편위(종괴효과)를 읽고, 요추천자가 금기임을 알고 가돌리늄 조영증강 MRI 를 다음 검사로 고른다\n- 근거·출처: TCIA UPENN-GBM (CC BY 4.0) — 73 M, axial pre-contrast T1-weighted MRI, instance 16; 작성자 판독 2026-09-18 PASS — Grade B, teacher-only · 작성자 판독: 환자 우측 이마-섬엽의 경계 불분명한 저신호 병변, 회백질 경계·고랑 소실, 같은 쪽 측뇌실 앞뿔 압박과 중격의 반대쪽 편위(종괴효과); 조영 전이라 증강 양상은 알 수 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Primary and metastatic tumors of the nervous system' — presentation of intracranial mass, contrast-enhanced MRI as the study of choice · Ropper AH et al. Adams and Victor's Principles of Neurology, 12th ed., ch. 'Intracranial neoplasms' and 'Lumbar puncture' — contraindication with mass effect and herniation risk · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Herniation syndromes' — subfalcine and uncal herniation, midline shift\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …98465845 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "조영 전 T1 강조영상에서 환자 오른쪽 이마엽-섬엽에 경계가 불분명한 저신호 병변이 넓게 퍼져 회백질 경계와 고랑이 지워졌고, 같은 쪽 측뇌실 앞뿔이 눌려 좁아지며 중격이 반대쪽으로 밀려 있다 — 종괴효과를 가진 침윤성 병변이다. 6주에 걸친 진행성 두통(아침 악화·구역), 성격 변화, 반대쪽 편측 근력 약화와 바빈스키징후는 서서히 자라는 두개내 종괴에 합당하다. 종괴의 성격(종양·농양·전이)을 가르고 범위를 정하는 다음 검사는 가돌리늄 조영증강 MRI 이며, 종괴효과가 있는 상태에서 요추천자는 뇌탈출을 일으킬 수 있어 금기다. 경련이 없어 뇌파는 진단에 기여하지 않고, 경과가 급성 혈관 사건이 아니어서 경동맥 초음파·CT 혈관조영은 우선순위가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>종괴효과(mass effect)는 두개골이라는 닫힌 공간에서 부피가 늘어난 결과</b>다. 병변 자체와 그 주위 혈관성 부종이 인접 구조를 밀어내면 영상에서 <b>고랑 소실, 같은 쪽 측뇌실 압박, 중앙선 구조(투명중격·제3뇌실)의 반대쪽 편위</b>로 나타난다. 조영 전 T1 강조영상에서 종양과 부종은 정상 백질보다 <b>저신호</b>이고, 경계가 불분명하게 회백질 경계를 지우는 모양은 침윤성 병변을 시사한다. 임상 경과가 <b>수주에 걸쳐 진행</b>하고 아침 두통·구역(두개내압 상승)·성격 변화(이마엽)· 반대쪽 추체로 징후가 겹치면 서서히 자라는 종괴다.<br> <b>왜 조영증강 MRI 가 다음인가</b> — 조영 전 영상은 「무엇이 어디를 밀고 있는가」만 보여 준다. 가돌리늄은 혈액뇌장벽이 깨진 곳에만 새어 들어가므로 조영증강 양상(고리형·균질·결절형·비증강)과 괴사 여부가 <b>고등급 교종·전이·림프종·농양·저등급 교종</b>을 가르는 첫 번째 단서가 되고, 병변의 실제 경계와 수술·생검 표적을 정한다. 그 뒤 필요하면 확산강조·관류·분광 영상과 조직검사로 이어진다.<br> <b>왜 요추천자는 안 되는가</b> — 한쪽 반구의 종괴가 측뇌실을 누르고 중앙선을 밀고 있는 상태에서 척수강 압력을 낮추면 천막 위아래의 압력 차가 커져 <b>구상회 탈출이나 소뇌편도 탈출</b>이 생길 수 있다. 수막염이 의심되더라도 종괴효과가 있으면 영상으로 먼저 확인하고, 이 증례는 발열·목 경직·염증 지표가 없어 수막염 자체가 의심되지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">검사</th><th style=\"width:42%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>가돌리늄 조영증강 MRI(정답)</b></td><td><b>종괴효과가 있는 두개내 병변의 성격·범위 규명</b></td><td><b>침윤성 저신호 병변 + 뇌실 압박·중앙선 편위</b></td></tr> <tr><td>요추천자(가장 가까운 오답)</td><td>종괴효과가 없는 수막염·지주막하출혈·림프종성 수막염 의심</td><td>종괴효과가 있어 뇌탈출 위험 — 금기. 발열·목 경직·CRP 상승도 없다</td></tr> <tr><td>뇌파검사</td><td>경련이나 비경련성 뇌전증지속상태 의심</td><td>경련이 없고 국소 징후는 영상으로 이미 설명된다</td></tr> <tr><td>경동맥 초음파</td><td>급성 허혈뇌졸중·일과성허혈발작의 원인 평가</td><td>6주에 걸친 진행 경과 — 급성 혈관 사건이 아니다</td></tr> <tr><td>뇌 CT 혈관조영</td><td>동맥류·혈관기형·급성 대혈관 폐색 의심</td><td>영상이 혈관 병변이 아닌 실질 종괴를 보여 준다</td></tr> </tbody></table> <b>가장 가까운 오답은 「요추천자」</b>다 — 두통·성격 변화·반응 저하가 수막염이나 뇌염을 떠올리게 하기 때문이다. 갈림길은 <b>영상의 종괴효과</b>다. 측뇌실 압박과 중앙선 편위가 있으면 어떤 임상 상황에서도 요추천자보다 조영증강 영상이 먼저이고, 종괴효과 없는 수막 증상이라면 요추천자가 진단 검사가 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경동맥 초음파는 급성 허혈뇌졸중이나 일과성허혈발작에서 색전 원인을 찾는 검사다. 이 증례는 6주에 걸쳐 진행한 두통과 2주간 서서히 악화된 근력 약화로, 갑자기 생기는 혈관 사건의 경과가 아니며 영상도 동맥 영역에 국한된 경색이 아니라 침윤성 종괴다. 갑작스러운 편측 마비가 생겨 확산강조영상에서 경색이 확인되었다면 경동맥 평가가 맞다.\n② 뇌 CT 혈관조영은 동맥류·혈관기형·급성 대혈관 폐색이 의심될 때 쓴다. 이 영상은 혈관 병변이 아니라 실질 안의 침윤성 병변과 종괴효과를 보여 주고, 벼락두통이나 지주막하출혈의 단서도 없다. 갑작스러운 벼락두통과 지주막하출혈이 있었다면 혈관조영이 다음 검사가 된다.\n④ 요추천자는 두통·성격 변화·반응 저하가 수막염이나 뇌염을 떠올리게 해 고려할 수 있지만, 이 영상은 한쪽 반구의 종괴가 측뇌실을 누르고 중앙선을 밀고 있어 척수강 압력을 낮추면 뇌탈출이 생길 수 있다. 발열·목 경직·CRP 상승도 없다. 영상에 종괴효과가 없고 발열과 목 경직이 있었다면 요추천자가 정답이 된다.\n⑤ 뇌파검사는 경련이 있거나 비경련성 뇌전증지속상태로 의식 변화를 설명해야 할 때 필요하다. 이 환자는 경련이 없고 반응 저하와 편측 근력 약화는 영상의 종괴로 설명되므로 뇌파는 병변의 성격을 가르는 데 기여하지 못한다. 반복되는 국소 경련 뒤 의식이 돌아오지 않았다면 뇌파가 다음 검사가 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「두통 + 성격 변화 + 느린 반응」에서 뇌척수액 검사로 가기 전에 영상의 종괴효과를 읽는다. 측뇌실 압박·중앙선 편위가 있으면 요추천자는 금기이고 조영증강 MRI 가 다음이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "아급성 진행성 두통과 편측 근력 약화에서 조영 전 T1 강조 뇌 MRI 의 경계 불분명한 저신호 병변과 측뇌실 압박·중앙선 편위(종괴효과)를 읽고, 요추천자가 금기임을 알고 가돌리늄 조영증강 MRI 를 다음 검사로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA UPENN-GBM (CC BY 4.0) — 73 M, axial pre-contrast T1-weighted MRI, instance 16; 작성자 판독 2026-09-18 PASS — Grade B, teacher-only · 작성자 판독: 환자 우측 이마-섬엽의 경계 불분명한 저신호 병변, 회백질 경계·고랑 소실, 같은 쪽 측뇌실 앞뿔 압박과 중격의 반대쪽 편위(종괴효과); 조영 전이라 증강 양상은 알 수 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Primary and metastatic tumors of the nervous system' — presentation of intracranial mass, contrast-enhanced MRI as the study of choice · Ropper AH et al. Adams and Victor's Principles of Neurology, 12th ed., ch. 'Intracranial neoplasms' and 'Lumbar puncture' — contraindication with mass effect and herniation risk · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Herniation syndromes' — subfalcine and uncal herniation, midline shift ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …98465845 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "아급성 진행성 두통과 반대쪽 편측 근력 약화에서 조영 전 MRI 가 종괴효과를 동반한 침윤성 병변을 보이면 다음 검사는 가돌리늄 조영증강 MRI 이며 요추천자는 금기다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "영상의 종괴효과(측뇌실 앞뿔 압박·중격 편위) — 뇌탈출 위험 때문에 요추천자를 배제하고, 발열·목 경직·CRP 상승이 없어 수막염 자체도 의심되지 않는다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: 오른쪽 이마엽-섬엽의 경계가 불분명한 저신호 병변, 회백질 경계와 고랑 소실",
+     "why": "침윤성 실질 병변 — 종양·부종의 T1 저신호",
+     "also": []
+    },
+    {
+     "item": "영상: 같은 쪽 측뇌실 앞뿔 압박과 중격의 반대쪽 편위",
+     "why": "종괴효과 — 요추천자를 금기로 만드는 결정적 소견",
+     "also": []
+    },
+    {
+     "item": "6주 전부터 점점 심해지는 두통",
+     "why": "수주의 아급성 진행 — 서서히 자라는 종괴의 경과, 급성 혈관 사건이 아님",
+     "also": []
+    },
+    {
+     "item": "두통은 아침에 심하고 구역을 동반하며",
+     "why": "두개내압 상승의 양상",
+     "also": []
+    },
+    {
+     "item": "왼쪽 팔다리 근력이 4/5 이고 왼쪽 바빈스키징후가 양성",
+     "why": "오른쪽 반구 병변에 맞는 반대쪽 추체로 징후 — 영상과 일치",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목 경직은 없다",
+     "why": "수막 자극 징후가 없어 수막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "백혈구 7,400/mm³, C반응단백 0.3 mg/dL",
+     "why": "염증 지표 정상 — 세균성 수막염·농양 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "발열·경련·머리 외상은 없었다",
+     "why": "감염·뇌전증·외상성 출혈의 단서가 없어 뇌파와 응급 출혈 평가의 우선순위를 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압으로 암로디핀을 복용",
+     "why": "혈관 위험 인자이지만 경과와 영상이 혈관 사건과 맞지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "조영 전 T1 영상의 침윤성 저신호 병변과 측뇌실 압박·중앙선 편위는 종괴효과를 가진 두개내 종괴이며, 6주의 진행성 두통과 반대쪽 추체로 징후가 이를 뒷받침한다. 다음 검사는 병변의 성격과 범위를 가르는 가돌리늄 조영증강 MRI 이고, 종괴효과 때문에 요추천자는 금기다.",
+   "switch": {
+    "choice": "D",
+    "condition": "영상에 종괴효과나 국소 병변이 없고 발열·목 경직과 CRP 상승이 있었다면 요추천자와 뇌척수액 검사가 다음 검사가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0088.png",
+   "caption": "뇌 MRI 축상면 T1 강조영상(조영 전), 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조정 없음)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.149661151351296133163682154226898465845",
+   "asset_id": "TCIA-UPENN_GBM-05886673502903",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …98465845"
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0085",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "신경 — 뇌 MRI 조영증강의 의미",
+  "type": "신경 — 뇌 MRI 조영증강의 의미",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-21",
+  "vignette": "A 56-year-old woman comes to the physician because of 3 weeks of progressively worsening headaches that are most severe in the morning and 1 week of clumsiness of her left hand. She has no history of cancer, seizures, or head trauma and takes no medications. She does not smoke. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 134/82 mm Hg. Neurologic examination shows mild weakness of the left hand with slowed rapid alternating movements; the remainder of the examination, including funduscopy, is unremarkable. An axial T1-weighted MRI of the brain obtained after intravenous gadolinium is shown.",
+  "question": "The bright signal within the lesions on this image most directly reflects which of the following?",
+  "options": [
+   "Presence of methemoglobin from subacute hemorrhage",
+   "Dystrophic calcification within the lesion",
+   "Restricted diffusion of water in densely packed cells",
+   "Increased free-water content from vasogenic edema",
+   "Disruption of the blood-brain barrier with leakage of contrast into the interstitium"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: On a T1-weighted image acquired after intravenous gadolinium, tissue becomes bright only where the paramagnetic contrast agent reaches the extravascular space. Normal brain capillaries have tight junctions that keep gadolinium intravascular, so parenchyma stays gray; the lesions in the right frontal white matter and periventricular regions (and the small one near the left atrium) enhance because their neovessels lack a competent blood-brain barrier and contrast leaks into the interstitium, shortening T1. Methemoglobin also shortens T1 but would be bright before contrast as well; calcification is usually dark on T1; restricted diffusion is a diffusion-weighted finding; vasogenic edema is dark on T1 and bright on T2/FLAIR, not on contrast-enhanced T1.\n- 원리: <b>Gadolinium is a paramagnetic agent that shortens the T1 relaxation time of nearby water protons</b>; on a T1-weighted image, anything with short T1 is bright. Because gadolinium chelates are hydrophilic and are confined to the intravascular compartment by the tight junctions of normal cerebral capillaries, the parenchyma of a healthy brain does not enhance; only structures that lie outside the blood-brain barrier (pituitary, choroid plexus, dura, venous sinuses) become bright. A parenchymal lesion enhances when its capillaries are <b>abnormal — leaky neovessels of a tumor, inflamed vessels of an abscess capsule or demyelinating plaque, or reperfused vessels of a subacute infarct</b> — so contrast enters the interstitium and shortens T1 there. Enhancement is therefore a map of <b>blood-brain barrier disruption</b>, not of the tumor itself; it explains why the same drug-permeability defect lets corticosteroids reduce edema and why enhancing volume, not total lesion volume, is what is followed after treatment.<br> <b>Why the other signals are different</b> — <b>methemoglobin</b> (subacute blood, days 3–14) also shortens T1 and is bright on T1, but that brightness is present on the pre-contrast image too, which is why a pre-contrast T1 is always compared with the post-contrast one. <b>Calcification</b> has few mobile protons and is usually dark on T1 and T2 and is best seen on CT. <b>Restricted diffusion</b> is a property measured by diffusion-weighted imaging (bright on DWI, dark on the ADC map), typical of acute infarct, abscess pus, or hypercellular tumor — it says nothing about T1 signal. <b>Vasogenic edema</b> is an increase in free water, which lengthens T1 and T2: it appears <b>dark</b> on T1 and bright on T2/FLAIR, and it does not enhance because its capillaries in the surrounding white matter are intact.\n- 비교: <table><thead><tr><th style=\"width:30%\">Signal mechanism</th><th style=\"width:40%\">What the image would look like</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Blood-brain barrier disruption (answer)</b></td><td><b>Bright on post-contrast T1 only; gray on pre-contrast T1</b></td><td><b>Ring- and nodule-shaped enhancement in the lesions after gadolinium</b></td></tr> <tr><td>Methemoglobin (closest distractor)</td><td>Bright on T1 <i>before</i> contrast; blooming on gradient-echo/SWI</td><td>The stem states the image was obtained after gadolinium; no trauma or sudden ictus; T1 shortening by blood must be shown on the pre-contrast scan</td></tr> <tr><td>Dystrophic calcification</td><td>Usually dark on T1 and T2, dense on CT</td><td>The lesions are bright, not dark</td></tr> <tr><td>Restricted diffusion</td><td>Bright on DWI with low ADC</td><td>This is a T1-weighted, not a diffusion-weighted, image</td></tr> <tr><td>Vasogenic edema (free water)</td><td>Dark on T1, bright on T2/FLAIR, no enhancement</td><td>Free water lengthens T1 — it cannot make a T1 image bright</td></tr> </tbody></table> The <b>closest distractor is methemoglobin</b>, because it is the one other common cause of intrinsic T1 brightness in the brain. The dividing line is <b>the pre-contrast image</b>: brightness that is present before gadolinium is blood, fat, protein, or melanin; brightness that appears only after gadolinium is barrier breakdown. That is why every enhanced study is read against its unenhanced T1.\n- 오답 이유:\n  - (A) Methemoglobin from a subacute hemorrhage does shorten T1 and appears bright, so it is the most plausible competitor. But that brightness exists before any contrast is given and is accompanied by susceptibility blooming on gradient-echo sequences; the stem specifies a post-gadolinium image in a woman with no trauma or sudden onset. If the same lesions had been bright on the pre-contrast T1 image and dark on gradient-echo, subacute hemorrhage would be the answer.\n  - (B) Dystrophic calcification contains few mobile protons and is typically dark on T1- and T2-weighted images; it is best shown as dense material on CT. The lesions here are bright after contrast, the opposite of calcification. If the abnormality had been a dark focus on all MRI sequences that was hyperdense on a CT scan, calcification would be the correct choice.\n  - (C) Restricted diffusion describes decreased water mobility in tightly packed cells or viscous pus and is detected only on diffusion-weighted imaging as high DWI signal with low ADC. It is not a T1 phenomenon, so it cannot explain brightness on a T1-weighted image. If a DWI sequence had shown the lesions as bright with a dark ADC map, restricted diffusion would be the correct mechanism.\n  - (D) Vasogenic edema is extra free water in the white matter around a lesion; free water lengthens T1 and T2, making edema dark on T1 and bright on T2 and FLAIR, and it does not enhance because the surrounding capillaries are intact. Brightness on post-contrast T1 therefore cannot be edema. If the question had asked about the finger-like bright signal around the lesions on a FLAIR image, vasogenic edema would be the answer.\n- 함정: Do not read every bright T1 signal as blood. Ask first whether the image was acquired after gadolinium: brightness that appears only after contrast means the blood-brain barrier is leaking, and it is compared with the unenhanced T1 to exclude intrinsic T1 shortening.\n- 학습목표: 가돌리늄 조영 후 T1 강조 MRI 에서 병변이 밝아지는 조영증강을 읽고, 그 신호가 혈액뇌장벽 파괴로 조영제가 혈관 밖 간질로 새어 나온 것임을 출혈·석회화·확산제한·세포충실도와 구분한다\n- 근거·출처: TCIA UPENN-GBM (CC BY 4.0) — 56 F, axial post-contrast T1-weighted MRI (13 ml gadobenate), instance 13; author reading 2026-09-22 — Grade B, teacher-only · 작성자 판독(2026-09-22): 우측 이마엽 깊은 백질의 약 2 cm 균질~고리형 조영증강 종괴, 우측 뇌실 주위의 작은 조영증강 결절, 좌측 뇌실 삼각부 옆의 작은 고리형 조영증강 병변; 두피·안면 없음, 문자 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Neoplasms and tumorlike lesions' and 'Approach to imaging' — mechanisms of contrast enhancement, blood-brain barrier · Bradley WG. MR appearance of hemorrhage in the brain. Radiology 1993;189:15 — methemoglobin T1 shortening · Kandel ER et al. Principles of Neural Science, 6th ed., ch. 'The blood-brain barrier' — tight junctions and permeability\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …89998978 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On a T1-weighted image acquired after intravenous gadolinium, tissue becomes bright only where the paramagnetic contrast agent reaches the extravascular space. Normal brain capillaries have tight junctions that keep gadolinium intravascular, so parenchyma stays gray; the lesions in the right frontal white matter and periventricular regions (and the small one near the left atrium) enhance because their neovessels lack a competent blood-brain barrier and contrast leaks into the interstitium, shortening T1. Methemoglobin also shortens T1 but would be bright before contrast as well; calcification is usually dark on T1; restricted diffusion is a diffusion-weighted finding; vasogenic edema is dark on T1 and bright on T2/FLAIR, not on contrast-enhanced T1."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Gadolinium is a paramagnetic agent that shortens the T1 relaxation time of nearby water protons</b>; on a T1-weighted image, anything with short T1 is bright. Because gadolinium chelates are hydrophilic and are confined to the intravascular compartment by the tight junctions of normal cerebral capillaries, the parenchyma of a healthy brain does not enhance; only structures that lie outside the blood-brain barrier (pituitary, choroid plexus, dura, venous sinuses) become bright. A parenchymal lesion enhances when its capillaries are <b>abnormal — leaky neovessels of a tumor, inflamed vessels of an abscess capsule or demyelinating plaque, or reperfused vessels of a subacute infarct</b> — so contrast enters the interstitium and shortens T1 there. Enhancement is therefore a map of <b>blood-brain barrier disruption</b>, not of the tumor itself; it explains why the same drug-permeability defect lets corticosteroids reduce edema and why enhancing volume, not total lesion volume, is what is followed after treatment.<br> <b>Why the other signals are different</b> — <b>methemoglobin</b> (subacute blood, days 3–14) also shortens T1 and is bright on T1, but that brightness is present on the pre-contrast image too, which is why a pre-contrast T1 is always compared with the post-contrast one. <b>Calcification</b> has few mobile protons and is usually dark on T1 and T2 and is best seen on CT. <b>Restricted diffusion</b> is a property measured by diffusion-weighted imaging (bright on DWI, dark on the ADC map), typical of acute infarct, abscess pus, or hypercellular tumor — it says nothing about T1 signal. <b>Vasogenic edema</b> is an increase in free water, which lengthens T1 and T2: it appears <b>dark</b> on T1 and bright on T2/FLAIR, and it does not enhance because its capillaries in the surrounding white matter are intact."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Signal mechanism</th><th style=\"width:40%\">What the image would look like</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Blood-brain barrier disruption (answer)</b></td><td><b>Bright on post-contrast T1 only; gray on pre-contrast T1</b></td><td><b>Ring- and nodule-shaped enhancement in the lesions after gadolinium</b></td></tr> <tr><td>Methemoglobin (closest distractor)</td><td>Bright on T1 <i>before</i> contrast; blooming on gradient-echo/SWI</td><td>The stem states the image was obtained after gadolinium; no trauma or sudden ictus; T1 shortening by blood must be shown on the pre-contrast scan</td></tr> <tr><td>Dystrophic calcification</td><td>Usually dark on T1 and T2, dense on CT</td><td>The lesions are bright, not dark</td></tr> <tr><td>Restricted diffusion</td><td>Bright on DWI with low ADC</td><td>This is a T1-weighted, not a diffusion-weighted, image</td></tr> <tr><td>Vasogenic edema (free water)</td><td>Dark on T1, bright on T2/FLAIR, no enhancement</td><td>Free water lengthens T1 — it cannot make a T1 image bright</td></tr> </tbody></table> The <b>closest distractor is methemoglobin</b>, because it is the one other common cause of intrinsic T1 brightness in the brain. The dividing line is <b>the pre-contrast image</b>: brightness that is present before gadolinium is blood, fat, protein, or melanin; brightness that appears only after gadolinium is barrier breakdown. That is why every enhanced study is read against its unenhanced T1."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Methemoglobin from a subacute hemorrhage does shorten T1 and appears bright, so it is the most plausible competitor. But that brightness exists before any contrast is given and is accompanied by susceptibility blooming on gradient-echo sequences; the stem specifies a post-gadolinium image in a woman with no trauma or sudden onset. If the same lesions had been bright on the pre-contrast T1 image and dark on gradient-echo, subacute hemorrhage would be the answer.\n(B) Dystrophic calcification contains few mobile protons and is typically dark on T1- and T2-weighted images; it is best shown as dense material on CT. The lesions here are bright after contrast, the opposite of calcification. If the abnormality had been a dark focus on all MRI sequences that was hyperdense on a CT scan, calcification would be the correct choice.\n(C) Restricted diffusion describes decreased water mobility in tightly packed cells or viscous pus and is detected only on diffusion-weighted imaging as high DWI signal with low ADC. It is not a T1 phenomenon, so it cannot explain brightness on a T1-weighted image. If a DWI sequence had shown the lesions as bright with a dark ADC map, restricted diffusion would be the correct mechanism.\n(D) Vasogenic edema is extra free water in the white matter around a lesion; free water lengthens T1 and T2, making edema dark on T1 and bright on T2 and FLAIR, and it does not enhance because the surrounding capillaries are intact. Brightness on post-contrast T1 therefore cannot be edema. If the question had asked about the finger-like bright signal around the lesions on a FLAIR image, vasogenic edema would be the answer."
+   },
+   {
+    "k": "함정",
+    "v": "Do not read every bright T1 signal as blood. Ask first whether the image was acquired after gadolinium: brightness that appears only after contrast means the blood-brain barrier is leaking, and it is compared with the unenhanced T1 to exclude intrinsic T1 shortening."
+   },
+   {
+    "k": "학습목표",
+    "v": "가돌리늄 조영 후 T1 강조 MRI 에서 병변이 밝아지는 조영증강을 읽고, 그 신호가 혈액뇌장벽 파괴로 조영제가 혈관 밖 간질로 새어 나온 것임을 출혈·석회화·확산제한·세포충실도와 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA UPENN-GBM (CC BY 4.0) — 56 F, axial post-contrast T1-weighted MRI (13 ml gadobenate), instance 13; author reading 2026-09-22 — Grade B, teacher-only · 작성자 판독(2026-09-22): 우측 이마엽 깊은 백질의 약 2 cm 균질~고리형 조영증강 종괴, 우측 뇌실 주위의 작은 조영증강 결절, 좌측 뇌실 삼각부 옆의 작은 고리형 조영증강 병변; 두피·안면 없음, 문자 없음 · Osborn AG. Osborn's Brain, 2nd ed., ch. 'Neoplasms and tumorlike lesions' and 'Approach to imaging' — mechanisms of contrast enhancement, blood-brain barrier · Bradley WG. MR appearance of hemorrhage in the brain. Radiology 1993;189:15 — methemoglobin T1 shortening · Kandel ER et al. Principles of Neural Science, 6th ed., ch. 'The blood-brain barrier' — tight junctions and permeability ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …89998978 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "Brightness within a lesion on a T1-weighted image obtained after gadolinium means contrast has leaked out of vessels that lack a competent blood-brain barrier",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "The image is specified as post-gadolinium — methemoglobin would be bright on the pre-contrast T1 as well, whereas barrier breakdown produces brightness only after contrast",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: ring- and nodule-shaped bright signal within lesions in the right frontal deep white matter, right periventricular region, and near the left ventricular atrium",
+     "why": "Enhancement pattern of lesions with leaky neovessels",
+     "also": []
+    },
+    {
+     "item": "영상: surrounding brain parenchyma remains gray after contrast; only vessels and dura are bright",
+     "why": "Intact blood-brain barrier elsewhere keeps gadolinium intravascular — the contrast that makes the lesion's brightness meaningful",
+     "also": []
+    },
+    {
+     "item": "obtained after intravenous gadolinium",
+     "why": "Defines the sequence — the brightness must be interpreted as contrast uptake, not intrinsic T1 signal",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no history of cancer, seizures, or head trauma",
+     "why": "No trauma lowers the likelihood of a hemorrhagic (methemoglobin) explanation",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "3 weeks of progressively worsening headaches that are most severe in the morning",
+     "why": "Suggests raised intracranial pressure from a mass; it explains why the MRI was done but not the signal mechanism",
+     "also": []
+    },
+    {
+     "item": "1 week of clumsiness of her left hand",
+     "why": "Localizes to the right hemisphere, consistent with the largest lesion; not a signal mechanism",
+     "also": []
+    },
+    {
+     "item": "funduscopy, is unremarkable",
+     "why": "No papilledema yet — does not change the physics of the image",
+     "also": []
+    },
+    {
+     "item": "56-year-old woman",
+     "why": "Age at which both primary and secondary brain tumors are common; the question deliberately does not ask the histology",
+     "also": []
+    }
+   ],
+   "summary": "On a post-gadolinium T1-weighted image the lesions are bright while normal parenchyma stays gray, so the signal reflects contrast leaking through a disrupted blood-brain barrier. Methemoglobin is excluded because that brightness would already be present before contrast.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the same lesions had been bright on the pre-contrast T1-weighted image and had shown blooming on a gradient-echo sequence after a sudden-onset headache, methemoglobin from subacute hemorrhage would be the correct mechanism"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0085.png",
+   "caption": "Axial T1-weighted MRI of the brain obtained after intravenous gadolinium, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.169053588456739982343525409574589998978",
+   "asset_id": "TCIA-UPENN_GBM-74926384197407",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …89998978"
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0082",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "호흡기 — 젊은 성인의 양측 미만성 폐렴",
+  "type": "호흡기 — 젊은 성인의 양측 미만성 폐렴",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-21",
+  "vignette": "36세 남자가 5일 전부터 열이 나고 마른기침과 근육통이 있다가 어제부터 숨이 차서 병원에 왔다. 1주 전 같이 사는 아내가 열과 기침을 앓았다. 흡연·음주는 하지 않고 만성 질환은 없으며 수술력이나 약물 복용력도 없다. 혈압 118/74 mmHg, 맥박 104회/분, 호흡 24회/분, 체온 38.6℃, 실내 공기에서 산소포화도 92% 이다. 양쪽 폐 아래쪽에서 거친 수포음이 들리고 심잡음과 경정맥 확장은 없다. 혈액검사에서 백혈구 5,200/mm³(림프구 11%), 혈소판 165,000/mm³, C반응단백 6.8 mg/dL, 젖산탈수소효소 420 U/L, 프로칼시토닌 0.08 ng/mL 이다. 흉부 X선은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "급성 과민폐렴",
+   "바이러스 폐렴",
+   "폐렴사슬알균 대엽폐렴",
+   "폐포자충 폐렴",
+   "심인성 폐부종"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐야 전반, 특히 중·하부와 폐문 주위에 미만성 반점상·그물결절 음영이 거의 대칭으로 퍼져 있고, 한 엽에 국한된 경화·공동·큰 흉수는 없으며 심장 크기는 정상이다. 발열·마른기침·근육통으로 시작해 닷새째 호흡곤란으로 진행한 경과, 가족 내 선행 환자, 백혈구 정상에 림프구 감소, 젖산탈수소효소 상승, 낮은 프로칼시토닌은 세균성보다 바이러스성 폐렴을 가리킨다. 면역저하 배경이 없어 폐포자충 폐렴은 뒤로 밀리고, 심잡음·경정맥 확장이 없고 심장이 크지 않아 심인성 폐부종도 아니다.\n- 원리: <b>바이러스 폐렴은 기관지·폐포 상피를 광범위하게 침범</b>하므로 병변이 한 엽의 폐포강을 삼출물로 채우는 대엽폐렴과 달리 <b>양쪽 폐에 미만성·다발성</b>으로 퍼진다. 영상에서는 간질 비후를 반영하는 그물 음영과 폐포 침윤을 반영하는 반점상·간유리 음영이 섞여 나타나고, 병변은 폐문 주위와 중·하부에서 두드러지며 공기기관지조영이 뚜렷한 균질한 대엽 경화는 드물다. <b>검사실 소견</b>도 방향을 준다 — 바이러스 감염에서는 백혈구가 정상이거나 낮고 <b>림프구 감소</b>가 흔하며 (림프구의 폐 조직 이동과 세포자멸사), 광범위한 폐포 상피 손상으로 <b>젖산탈수소효소</b>가 오르고, 세균 독소·사이토카인 반응으로 유도되는 <b>프로칼시토닌은 낮게</b> 머문다(0.25 ng/mL 미만이면 세균성 가능성이 낮다).<br> <b>왜 감별이 중요한가</b> — 세균성 대엽폐렴이면 경험적 항생제가 핵심이고, 바이러스 폐렴이면 원인 바이러스에 따른 항바이러스제와 저산소증 정도에 따른 산소·스테로이드가 치료의 축이 된다. 폐포자충 폐렴은 같은 양측 간질 양상을 보이지만 <b>HIV·이식·장기 스테로이드 같은 면역저하 배경</b>이 전제이고 아급성으로 진행하며, 심인성 폐부종은 심장 비대·상엽 혈관 재분포·Kerley B선·흉수 같은 심부전의 흔적을 같이 보인다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:44%\">영상·검사의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>바이러스 폐렴(정답)</b></td><td><b>양측 미만성 반점상·그물결절 음영, 림프구 감소, 낮은 프로칼시토닌, 가족 내 유행</b></td><td><b>모두 있음</b></td></tr> <tr><td>폐렴사슬알균 대엽폐렴(가장 가까운 오답)</td><td>한 엽의 균질한 경화와 공기기관지조영, 백혈구 증가·호중구 좌방이동, 프로칼시토닌 상승, 고름가래·오한</td><td>양측 미만성, 백혈구 정상, 프로칼시토닌 0.08</td></tr> <tr><td>폐포자충 폐렴</td><td>면역저하 배경(HIV·이식·스테로이드), 수주에 걸친 아급성 진행, 양측 간유리 음영</td><td>면역저하 요인 없음, 닷새의 급성 경과</td></tr> <tr><td>심인성 폐부종</td><td>심장 비대, 상엽 혈관 재분포, Kerley B선, 양측 흉수, 경정맥 확장·심잡음</td><td>심장 크기 정상, 흉수·경정맥 확장 없음</td></tr> <tr><td>급성 과민폐렴</td><td>항원 노출 4~8시간 뒤 증상, 노출 회피로 호전, 반복 노출력</td><td>노출력 없음, 발열·근육통의 감염 경과</td></tr> </tbody></table> <b>가장 가까운 오답은 「폐렴사슬알균 대엽폐렴」</b>이다 — 발열·기침·수포음·CRP 상승이 겹치기 때문이다. 갈림길은 <b>분포와 염증 지표</b>다. 병변이 한 엽에 국한된 균질한 경화이고 백혈구·프로칼시토닌이 오르면 세균성, 양쪽에 미만성으로 퍼지고 림프구 감소·낮은 프로칼시토닌이면 바이러스성으로 본다. 두 가지가 겹치는 세균 중복감염도 있으므로 프로칼시토닌이 다시 오르면 항생제를 더한다.\n- 오답 이유:\n  - ① 급성 과민폐렴은 곰팡이·새 항원 등에 노출된 지 4~8시간 뒤 발열·기침·호흡곤란과 양측 결절 음영이 생기고 노출을 피하면 좋아진다. 이 증례는 그런 노출력이 없고 가족 내 감염 전파 경과다. 새를 기르거나 습한 작업장에 다녀온 뒤 반복해서 같은 증상이 생겼다면 이 선지가 맞다.\n  - ③ 폐렴사슬알균 대엽폐렴은 발열·기침·수포음·CRP 상승이 이 증례와 겹쳐 떠올릴 수 있지만, 한 엽의 균질한 경화와 공기기관지조영, 백혈구 증가와 프로칼시토닌 상승이 특징이다. 이 증례는 양측 미만성 음영에 백혈구 정상, 프로칼시토닌 0.08 ng/mL 다. 오른쪽 아래엽에 국한된 경화와 백혈구 18,000, 프로칼시토닌 2.0 이었다면 이 선지가 정답이다.\n  - ④ 폐포자충 폐렴은 양측 간질·간유리 음영과 젖산탈수소효소 상승이 겹치지만, HIV·장기이식·장기 스테로이드 같은 면역저하 배경이 전제이고 수주에 걸쳐 서서히 진행한다. 이 증례는 만성 질환·약물력이 없고 닷새의 급성 경과다. HIV 감염이 확인되고 CD4 세포가 200/mm³ 미만이며 수주간 진행했다면 이 선지가 맞다.\n  - ⑤ 심인성 폐부종은 양측 폐문 주위 음영이 겹치지만 심장 비대, 상엽 혈관 재분포, Kerley B선, 흉수와 함께 경정맥 확장·심잡음·기좌호흡이 있어야 한다. 이 증례는 심장 크기가 정상이고 경정맥 확장·심잡음이 없으며 발열·근육통이 앞선다. 심근경색 뒤 급성 호흡곤란에 심장 비대와 흉수가 있었다면 이 선지가 정답이 된다.\n- 함정: 「발열 + 기침 + CRP 상승」에서 세균성 폐렴으로 바로 가지 않는다. 판단은 영상의 분포(양측 미만성 vs 한 엽 경화)와 염증 지표(림프구 감소·낮은 프로칼시토닌 vs 백혈구·프로칼시토닌 상승)로 한다.\n- 학습목표: 젊은 성인의 발열·마른기침·호흡곤란에서 흉부 X선의 양측 미만성 반점상·그물결절 음영을 읽고, 림프구 감소·낮은 프로칼시토닌·가족 내 유행과 함께 바이러스 폐렴을 대엽폐렴·폐포자충폐렴·심인성 폐부종과 감별한다\n- 근거·출처: TCIA COVID-19-AR (CC BY 4.0) — 36 M, chest radiograph, human-confirmed bilateral opacities — Grade B; teacher-only · 작성자 판독(2026-09-22): 양측 폐야 전반, 특히 중·하부와 폐문 주위의 미만성 반점상·그물결절 음영, 대엽성 경화·공동·큰 흉수·기흉 없음, 심장 크기 정상, 번인 문자 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Pneumonia' — viral vs bacterial pneumonia, radiographic patterns, procalcitonin · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia. ATS/IDSA guideline. Am J Respir Crit Care Med 2019;200:e45 · Schuetz P et al. Procalcitonin to initiate or discontinue antibiotics in acute respiratory tract infections. Cochrane Database Syst Rev 2017;10:CD007498\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38073466 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐야 전반, 특히 중·하부와 폐문 주위에 미만성 반점상·그물결절 음영이 거의 대칭으로 퍼져 있고, 한 엽에 국한된 경화·공동·큰 흉수는 없으며 심장 크기는 정상이다. 발열·마른기침·근육통으로 시작해 닷새째 호흡곤란으로 진행한 경과, 가족 내 선행 환자, 백혈구 정상에 림프구 감소, 젖산탈수소효소 상승, 낮은 프로칼시토닌은 세균성보다 바이러스성 폐렴을 가리킨다. 면역저하 배경이 없어 폐포자충 폐렴은 뒤로 밀리고, 심잡음·경정맥 확장이 없고 심장이 크지 않아 심인성 폐부종도 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>바이러스 폐렴은 기관지·폐포 상피를 광범위하게 침범</b>하므로 병변이 한 엽의 폐포강을 삼출물로 채우는 대엽폐렴과 달리 <b>양쪽 폐에 미만성·다발성</b>으로 퍼진다. 영상에서는 간질 비후를 반영하는 그물 음영과 폐포 침윤을 반영하는 반점상·간유리 음영이 섞여 나타나고, 병변은 폐문 주위와 중·하부에서 두드러지며 공기기관지조영이 뚜렷한 균질한 대엽 경화는 드물다. <b>검사실 소견</b>도 방향을 준다 — 바이러스 감염에서는 백혈구가 정상이거나 낮고 <b>림프구 감소</b>가 흔하며 (림프구의 폐 조직 이동과 세포자멸사), 광범위한 폐포 상피 손상으로 <b>젖산탈수소효소</b>가 오르고, 세균 독소·사이토카인 반응으로 유도되는 <b>프로칼시토닌은 낮게</b> 머문다(0.25 ng/mL 미만이면 세균성 가능성이 낮다).<br> <b>왜 감별이 중요한가</b> — 세균성 대엽폐렴이면 경험적 항생제가 핵심이고, 바이러스 폐렴이면 원인 바이러스에 따른 항바이러스제와 저산소증 정도에 따른 산소·스테로이드가 치료의 축이 된다. 폐포자충 폐렴은 같은 양측 간질 양상을 보이지만 <b>HIV·이식·장기 스테로이드 같은 면역저하 배경</b>이 전제이고 아급성으로 진행하며, 심인성 폐부종은 심장 비대·상엽 혈관 재분포·Kerley B선·흉수 같은 심부전의 흔적을 같이 보인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:44%\">영상·검사의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>바이러스 폐렴(정답)</b></td><td><b>양측 미만성 반점상·그물결절 음영, 림프구 감소, 낮은 프로칼시토닌, 가족 내 유행</b></td><td><b>모두 있음</b></td></tr> <tr><td>폐렴사슬알균 대엽폐렴(가장 가까운 오답)</td><td>한 엽의 균질한 경화와 공기기관지조영, 백혈구 증가·호중구 좌방이동, 프로칼시토닌 상승, 고름가래·오한</td><td>양측 미만성, 백혈구 정상, 프로칼시토닌 0.08</td></tr> <tr><td>폐포자충 폐렴</td><td>면역저하 배경(HIV·이식·스테로이드), 수주에 걸친 아급성 진행, 양측 간유리 음영</td><td>면역저하 요인 없음, 닷새의 급성 경과</td></tr> <tr><td>심인성 폐부종</td><td>심장 비대, 상엽 혈관 재분포, Kerley B선, 양측 흉수, 경정맥 확장·심잡음</td><td>심장 크기 정상, 흉수·경정맥 확장 없음</td></tr> <tr><td>급성 과민폐렴</td><td>항원 노출 4~8시간 뒤 증상, 노출 회피로 호전, 반복 노출력</td><td>노출력 없음, 발열·근육통의 감염 경과</td></tr> </tbody></table> <b>가장 가까운 오답은 「폐렴사슬알균 대엽폐렴」</b>이다 — 발열·기침·수포음·CRP 상승이 겹치기 때문이다. 갈림길은 <b>분포와 염증 지표</b>다. 병변이 한 엽에 국한된 균질한 경화이고 백혈구·프로칼시토닌이 오르면 세균성, 양쪽에 미만성으로 퍼지고 림프구 감소·낮은 프로칼시토닌이면 바이러스성으로 본다. 두 가지가 겹치는 세균 중복감염도 있으므로 프로칼시토닌이 다시 오르면 항생제를 더한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 급성 과민폐렴은 곰팡이·새 항원 등에 노출된 지 4~8시간 뒤 발열·기침·호흡곤란과 양측 결절 음영이 생기고 노출을 피하면 좋아진다. 이 증례는 그런 노출력이 없고 가족 내 감염 전파 경과다. 새를 기르거나 습한 작업장에 다녀온 뒤 반복해서 같은 증상이 생겼다면 이 선지가 맞다.\n③ 폐렴사슬알균 대엽폐렴은 발열·기침·수포음·CRP 상승이 이 증례와 겹쳐 떠올릴 수 있지만, 한 엽의 균질한 경화와 공기기관지조영, 백혈구 증가와 프로칼시토닌 상승이 특징이다. 이 증례는 양측 미만성 음영에 백혈구 정상, 프로칼시토닌 0.08 ng/mL 다. 오른쪽 아래엽에 국한된 경화와 백혈구 18,000, 프로칼시토닌 2.0 이었다면 이 선지가 정답이다.\n④ 폐포자충 폐렴은 양측 간질·간유리 음영과 젖산탈수소효소 상승이 겹치지만, HIV·장기이식·장기 스테로이드 같은 면역저하 배경이 전제이고 수주에 걸쳐 서서히 진행한다. 이 증례는 만성 질환·약물력이 없고 닷새의 급성 경과다. HIV 감염이 확인되고 CD4 세포가 200/mm³ 미만이며 수주간 진행했다면 이 선지가 맞다.\n⑤ 심인성 폐부종은 양측 폐문 주위 음영이 겹치지만 심장 비대, 상엽 혈관 재분포, Kerley B선, 흉수와 함께 경정맥 확장·심잡음·기좌호흡이 있어야 한다. 이 증례는 심장 크기가 정상이고 경정맥 확장·심잡음이 없으며 발열·근육통이 앞선다. 심근경색 뒤 급성 호흡곤란에 심장 비대와 흉수가 있었다면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「발열 + 기침 + CRP 상승」에서 세균성 폐렴으로 바로 가지 않는다. 판단은 영상의 분포(양측 미만성 vs 한 엽 경화)와 염증 지표(림프구 감소·낮은 프로칼시토닌 vs 백혈구·프로칼시토닌 상승)로 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 성인의 발열·마른기침·호흡곤란에서 흉부 X선의 양측 미만성 반점상·그물결절 음영을 읽고, 림프구 감소·낮은 프로칼시토닌·가족 내 유행과 함께 바이러스 폐렴을 대엽폐렴·폐포자충폐렴·심인성 폐부종과 감별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (CC BY 4.0) — 36 M, chest radiograph, human-confirmed bilateral opacities — Grade B; teacher-only · 작성자 판독(2026-09-22): 양측 폐야 전반, 특히 중·하부와 폐문 주위의 미만성 반점상·그물결절 음영, 대엽성 경화·공동·큰 흉수·기흉 없음, 심장 크기 정상, 번인 문자 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Pneumonia' — viral vs bacterial pneumonia, radiographic patterns, procalcitonin · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia. ATS/IDSA guideline. Am J Respir Crit Care Med 2019;200:e45 · Schuetz P et al. Procalcitonin to initiate or discontinue antibiotics in acute respiratory tract infections. Cochrane Database Syst Rev 2017;10:CD007498 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38073466 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "젊은 성인의 급성 발열·마른기침 뒤 호흡곤란에서 흉부 X선이 양측 미만성 반점상·그물결절 음영이고 림프구 감소·낮은 프로칼시토닌·가족 내 유행이 있으면 바이러스 폐렴이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "병변의 분포와 염증 지표 — 한 엽의 균질한 경화와 백혈구·프로칼시토닌 상승이 아니라 양측 미만성 음영에 백혈구 정상·림프구 감소·프로칼시토닌 0.08 이다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: 양쪽 폐야 전반, 특히 중·하부와 폐문 주위의 미만성 반점상·그물결절 음영",
+     "why": "기관지·폐포 상피를 광범위하게 침범하는 바이러스 폐렴의 분포",
+     "also": []
+    },
+    {
+     "item": "백혈구 5,200/mm³(림프구 11%)",
+     "why": "백혈구 정상에 림프구 감소 — 바이러스 감염의 전형적 혈액 소견",
+     "also": []
+    },
+    {
+     "item": "프로칼시토닌 0.08 ng/mL",
+     "why": "0.25 미만 — 세균성 폐렴 가능성을 낮추는 지표",
+     "also": []
+    },
+    {
+     "item": "1주 전 같이 사는 아내가 열과 기침을 앓았다",
+     "why": "가족 내 전파 — 호흡기 바이러스 유행의 단서",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 한 엽에 국한된 균질한 경화·공기기관지조영 없음, 심장 크기 정상, 흉수 없음",
+     "why": "대엽폐렴과 심인성 폐부종의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심잡음과 경정맥 확장은 없다",
+     "why": "심부전의 흔적이 없어 심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "만성 질환은 없으며 수술력이나 약물 복용력도 없다",
+     "why": "면역저하 배경이 없어 폐포자충 폐렴 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "실내 공기에서 산소포화도 92%",
+     "why": "저산소혈증 — 입원과 산소 치료가 필요한 중증도 판단에 쓰인다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "젖산탈수소효소 420 U/L",
+     "why": "광범위 폐포 손상을 반영하나 바이러스·폐포자충 모두에서 오르므로 단독으로 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "양측 미만성 반점상·그물결절 음영, 림프구 감소, 낮은 프로칼시토닌, 가족 내 선행 환자가 합쳐져 바이러스 폐렴이다. 한 엽 경화·백혈구 증가가 없어 대엽폐렴이 아니고, 면역저하·심부전 배경이 없다.",
+   "switch": {
+    "choice": "C",
+    "condition": "영상이 오른쪽 아래엽에 국한된 균질한 경화였고 백혈구 18,000/mm³ 에 프로칼시토닌이 2.0 ng/mL 였다면 폐렴사슬알균 대엽폐렴이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0082.png",
+   "caption": "정면 흉부 X선, 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1366955345279221160064538073466",
+   "asset_id": "TCIA-COVID19_AR-04780640604588",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38073466"
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0090",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "소아청소년 — 가와사키병의 불완전형 진단",
+  "type": "소아청소년 — 가와사키병의 불완전형 진단",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-21",
+  "vignette": "8개월 남아가 6일 전부터 39℃ 이상의 열이 계속되어 병원에 왔다. 3일 전부터 양쪽 눈이 충혈되었으나 눈곱은 없고, 입술이 붉고 갈라져 있다. 발진·손발 부종·목 림프절 종대는 없고 BCG 접종 부위가 붉게 부어 있다. 심음은 정상이다. 혈액검사에서 백혈구 17,800/mm³(호중구 72%), 혈색소 9.2 g/dL, 혈소판 512,000/mm³, C반응단백 9.6 mg/dL, 적혈구침강속도 68 mm/h, 알부민 2.7 g/dL, 알라닌아미노전이효소 84 U/L 이며, 소변검사에서 백혈구 15/HPF 에 세균 배양은 음성이다. 혈액배양은 음성이고 호흡기 바이러스 검사도 음성이다. 심초음파는 다음 날 예정되어 있다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "정맥 면역글로불린과 아스피린 즉시 투여",
+   "심초음파 결과 확인 후 치료 결정",
+   "정맥 세프트리악손 투여",
+   "경구 프레드니솔론 투여",
+   "해열제 투여하며 경과 관찰"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 6일 이상 지속되는 발열에 양측 비삼출성 결막충혈과 구순 변화 두 가지 주요 기준만 있어 완전형 기준(5개 중 4개)은 만족하지 않지만, CRP 3 mg/dL 이상·ESR 40 mm/h 이상이면서 보조 검사 기준(빈혈, 혈소판 45만 이상, 알부민 3 g/dL 이하, ALT 상승, 백혈구 15,000 이상, 무균농뇨) 6개 중 3개 이상을 만족하므로 불완전 가와사키병으로 진단할 수 있다. BCG 접종 부위 발적은 영아에서 특징적인 소견이다. 1세 미만 영아는 불완전형이 흔하고 관상동맥류 위험이 가장 높으므로 심초음파를 기다리지 않고 발열 10일 이내에 정맥 면역글로불린 2 g/kg 과 아스피린을 시작한다. 배양 음성·바이러스 검사 음성에 항생제나 단순 경과 관찰은 관상동맥 합병증 위험을 키우고, 스테로이드는 고위험군의 병용 요법이지 단독 1차 치료가 아니다.\n- 원리: <b>가와사키병은 중간 크기 동맥, 특히 관상동맥의 전신 혈관염</b>이다. 발열 10일 안에 정맥 면역글로불린(IVIG)을 주면 관상동맥류 발생을 약 25 %에서 5 % 미만으로 줄이므로, 진단의 목적은 「이름 붙이기」가 아니라 <b>치료 시기를 놓치지 않는 것</b>이다. 완전형 기준(5일 이상 발열 + 주요 기준 5개 중 4개: 결막충혈, 구강 변화, 사지 말단 변화, 다형 발진, 경부 림프절 종대)은 특이도를 위해 만들어졌고, <b>1세 미만 영아는 주요 기준이 적게 나타나면서 관상동맥류 위험은 가장 높다</b>. 그래서 AHA 알고리듬은 발열 5일 이상에 주요 기준 2~3개면 CRP ≥ 3 mg/dL 또는 ESR ≥ 40 mm/h 를 확인하고, 보조 검사 기준 <b>6개(빈혈, 혈소판 ≥ 450,000 — 발병 7일 이후, 알부민 ≤ 3 g/dL, ALT 상승, 백혈구 ≥ 15,000, 소변 백혈구 ≥ 10/HPF) 중 3개 이상</b>이거나 심초음파에 이상이 있으면 불완전형으로 치료한다. 이 증례는 빈혈·혈소판 증가·저알부민혈증·ALT 상승·백혈구 증가·무균농뇨 6개를 모두 만족한다. 6개월 미만이거나 영아에서 7일 이상 원인 없는 발열만 있어도 같은 검사를 한다. <b>BCG 접종 부위의 발적·경결</b>은 BCG 를 접종하는 나라에서 영아 가와사키병의 특징적 소견으로, 접종 항원과 열충격단백질의 교차반응으로 설명한다.<br> <b>왜 심초음파를 기다리지 않는가</b> — 심초음파는 관상동맥 확장을 확인해 진단을 뒷받침하지만, 정상이라도 진단을 배제하지 못하고 동맥류는 대개 발병 2~4주에 생긴다. 검사 기준을 이미 만족한 영아에서 하루를 미루는 것은 IVIG 의 효과가 가장 큰 창을 좁힌다. 무균농뇨는 요도염에 의한 것이라 세균 배양이 음성이며, 이를 요로감염으로 오인해 항생제만 주는 것이 영아 가와사키병 진단 지연의 흔한 경로다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>IVIG + 아스피린 즉시(정답)</b></td><td><b>완전형, 또는 불완전형 알고리듬(염증 지표 + 보조 기준 ≥ 3)을 만족한 5일 이상 발열</b></td><td><b>주요 기준 2 + CRP·ESR 상승 + 보조 기준 6/6</b></td></tr> <tr><td>심초음파 확인 후 결정(가장 가까운 오답)</td><td>보조 검사 기준이 3개 미만이라 진단이 불확실할 때</td><td>이미 검사 기준을 만족 — 정상 심초음파도 진단을 배제하지 못하고 치료 창만 좁아진다</td></tr> <tr><td>정맥 세프트리악손</td><td>세균 감염(요로감염·패혈증) 증거가 있을 때</td><td>혈액·소변 배양 음성, 무균농뇨는 혈관염의 요도염</td></tr> <tr><td>경구 프레드니솔론</td><td>고위험군(관상동맥류 이미 존재, 영아, IVIG 불응)에서 IVIG 에 더하는 병용 치료</td><td>단독 1차 치료가 아니다</td></tr> <tr><td>해열제와 경과 관찰</td><td>진단 기준을 만족하지 못하고 염증 지표가 낮은 원인 불명 발열</td><td>관상동맥류 위험이 가장 높은 영아를 방치하는 선택</td></tr> </tbody></table> <b>가장 가까운 오답은 「심초음파 확인 후 결정」</b>이다 — 주요 기준이 2개뿐이라 확신이 서지 않기 때문이다. 갈림길은 <b>보조 검사 기준의 수</b>다. CRP·ESR 상승에 보조 기준 3개 이상이면 심초음파 결과와 무관하게 치료하고, 보조 기준이 3개 미만일 때만 심초음파가 진단을 결정한다.\n- 오답 이유:\n  - ② 심초음파를 기다리는 것은 주요 기준이 2개뿐이라 진단이 불확실해 보이기 때문이다. 그러나 불완전형 알고리듬에서 CRP·ESR 상승에 보조 검사 기준 3개 이상이면 심초음파 결과와 무관하게 치료하며, 정상 심초음파는 진단을 배제하지 못한다. 보조 검사 기준이 2개뿐이었다면 심초음파로 관상동맥 이상을 확인해 결정하는 이 선지가 맞다.\n  - ③ 정맥 세프트리악손은 요로감염이나 패혈증처럼 세균 감염 증거가 있을 때 준다. 이 영아의 소변 백혈구는 배양 음성인 무균농뇨로 가와사키병의 요도염이고 혈액배양도 음성이라 항생제만 주면 진단이 늦어진다. 소변 배양에서 대장균이 자라고 결막충혈·구순 변화가 없었다면 항생제가 정답이 된다.\n  - ④ 경구 프레드니솔론은 관상동맥류가 이미 있거나 IVIG 에 반응하지 않는 고위험군에서 IVIG 에 더하는 병용 치료이지 단독 1차 치료가 아니다. 스테로이드만 주면 관상동맥 보호 효과가 입증된 IVIG 를 빠뜨린다. IVIG 투여 36시간 뒤에도 열이 지속되는 불응성 가와사키병이라면 IVIG 재투여나 스테로이드 병용이 다음 단계가 된다.\n  - ⑤ 해열제로 경과를 보는 것은 진단 기준을 만족하지 못하고 염증 지표가 낮은 원인 불명 발열에서의 접근이다. 이 증례는 이미 불완전 가와사키병 기준을 만족했고, 1세 미만 영아는 관상동맥류 위험이 가장 높아 기다릴수록 위험이 커진다. 발열 3일째에 결막충혈만 있고 CRP 가 1 mg/dL 였다면 경과 관찰이 맞다.\n- 함정: 「주요 기준이 2개뿐」에서 멈추지 않는다. 영아의 5일 이상 발열에 CRP·ESR 상승과 보조 검사 기준 3개 이상이면 심초음파를 기다리지 않고 IVIG 를 준다 — 무균농뇨를 요로감염으로 오인하는 것이 대표적 지연 경로다.\n- 학습목표: 5일 이상 발열에 주요 임상 기준이 2~3개뿐인 영아에서 불완전 가와사키병을 의심하고, CRP·ESR 상승과 보조 검사 기준(빈혈·혈소판 증가·저알부민혈증·무균농뇨·ALT 상승·백혈구 증가) 3개 이상이면 심초음파를 기다리지 않고 정맥 면역글로불린과 아스피린을 시작한다\n- 근거·출처: McCrindle BW et al. Diagnosis, treatment, and long-term management of Kawasaki disease: AHA scientific statement. Circulation 2017;135:e927 — incomplete KD algorithm, supplemental laboratory criteria · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Kawasaki disease' — infants, incomplete presentation, BCG site reaction, IVIG timing · Newburger JW et al. Kawasaki disease. J Am Coll Cardiol 2016;67:1738 · 대한소아심장학회·대한소아과학회. 가와사키병 진료 지침 — 불완전 가와사키병의 진단과 치료 · Uehara R et al. Analysis of potential risk factors associated with nonresponse to IVIG in Kawasaki disease. Pediatr Infect Dis J 2008;27:155",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "6일 이상 지속되는 발열에 양측 비삼출성 결막충혈과 구순 변화 두 가지 주요 기준만 있어 완전형 기준(5개 중 4개)은 만족하지 않지만, CRP 3 mg/dL 이상·ESR 40 mm/h 이상이면서 보조 검사 기준(빈혈, 혈소판 45만 이상, 알부민 3 g/dL 이하, ALT 상승, 백혈구 15,000 이상, 무균농뇨) 6개 중 3개 이상을 만족하므로 불완전 가와사키병으로 진단할 수 있다. BCG 접종 부위 발적은 영아에서 특징적인 소견이다. 1세 미만 영아는 불완전형이 흔하고 관상동맥류 위험이 가장 높으므로 심초음파를 기다리지 않고 발열 10일 이내에 정맥 면역글로불린 2 g/kg 과 아스피린을 시작한다. 배양 음성·바이러스 검사 음성에 항생제나 단순 경과 관찰은 관상동맥 합병증 위험을 키우고, 스테로이드는 고위험군의 병용 요법이지 단독 1차 치료가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>가와사키병은 중간 크기 동맥, 특히 관상동맥의 전신 혈관염</b>이다. 발열 10일 안에 정맥 면역글로불린(IVIG)을 주면 관상동맥류 발생을 약 25 %에서 5 % 미만으로 줄이므로, 진단의 목적은 「이름 붙이기」가 아니라 <b>치료 시기를 놓치지 않는 것</b>이다. 완전형 기준(5일 이상 발열 + 주요 기준 5개 중 4개: 결막충혈, 구강 변화, 사지 말단 변화, 다형 발진, 경부 림프절 종대)은 특이도를 위해 만들어졌고, <b>1세 미만 영아는 주요 기준이 적게 나타나면서 관상동맥류 위험은 가장 높다</b>. 그래서 AHA 알고리듬은 발열 5일 이상에 주요 기준 2~3개면 CRP ≥ 3 mg/dL 또는 ESR ≥ 40 mm/h 를 확인하고, 보조 검사 기준 <b>6개(빈혈, 혈소판 ≥ 450,000 — 발병 7일 이후, 알부민 ≤ 3 g/dL, ALT 상승, 백혈구 ≥ 15,000, 소변 백혈구 ≥ 10/HPF) 중 3개 이상</b>이거나 심초음파에 이상이 있으면 불완전형으로 치료한다. 이 증례는 빈혈·혈소판 증가·저알부민혈증·ALT 상승·백혈구 증가·무균농뇨 6개를 모두 만족한다. 6개월 미만이거나 영아에서 7일 이상 원인 없는 발열만 있어도 같은 검사를 한다. <b>BCG 접종 부위의 발적·경결</b>은 BCG 를 접종하는 나라에서 영아 가와사키병의 특징적 소견으로, 접종 항원과 열충격단백질의 교차반응으로 설명한다.<br> <b>왜 심초음파를 기다리지 않는가</b> — 심초음파는 관상동맥 확장을 확인해 진단을 뒷받침하지만, 정상이라도 진단을 배제하지 못하고 동맥류는 대개 발병 2~4주에 생긴다. 검사 기준을 이미 만족한 영아에서 하루를 미루는 것은 IVIG 의 효과가 가장 큰 창을 좁힌다. 무균농뇨는 요도염에 의한 것이라 세균 배양이 음성이며, 이를 요로감염으로 오인해 항생제만 주는 것이 영아 가와사키병 진단 지연의 흔한 경로다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>IVIG + 아스피린 즉시(정답)</b></td><td><b>완전형, 또는 불완전형 알고리듬(염증 지표 + 보조 기준 ≥ 3)을 만족한 5일 이상 발열</b></td><td><b>주요 기준 2 + CRP·ESR 상승 + 보조 기준 6/6</b></td></tr> <tr><td>심초음파 확인 후 결정(가장 가까운 오답)</td><td>보조 검사 기준이 3개 미만이라 진단이 불확실할 때</td><td>이미 검사 기준을 만족 — 정상 심초음파도 진단을 배제하지 못하고 치료 창만 좁아진다</td></tr> <tr><td>정맥 세프트리악손</td><td>세균 감염(요로감염·패혈증) 증거가 있을 때</td><td>혈액·소변 배양 음성, 무균농뇨는 혈관염의 요도염</td></tr> <tr><td>경구 프레드니솔론</td><td>고위험군(관상동맥류 이미 존재, 영아, IVIG 불응)에서 IVIG 에 더하는 병용 치료</td><td>단독 1차 치료가 아니다</td></tr> <tr><td>해열제와 경과 관찰</td><td>진단 기준을 만족하지 못하고 염증 지표가 낮은 원인 불명 발열</td><td>관상동맥류 위험이 가장 높은 영아를 방치하는 선택</td></tr> </tbody></table> <b>가장 가까운 오답은 「심초음파 확인 후 결정」</b>이다 — 주요 기준이 2개뿐이라 확신이 서지 않기 때문이다. 갈림길은 <b>보조 검사 기준의 수</b>다. CRP·ESR 상승에 보조 기준 3개 이상이면 심초음파 결과와 무관하게 치료하고, 보조 기준이 3개 미만일 때만 심초음파가 진단을 결정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 심초음파를 기다리는 것은 주요 기준이 2개뿐이라 진단이 불확실해 보이기 때문이다. 그러나 불완전형 알고리듬에서 CRP·ESR 상승에 보조 검사 기준 3개 이상이면 심초음파 결과와 무관하게 치료하며, 정상 심초음파는 진단을 배제하지 못한다. 보조 검사 기준이 2개뿐이었다면 심초음파로 관상동맥 이상을 확인해 결정하는 이 선지가 맞다.\n③ 정맥 세프트리악손은 요로감염이나 패혈증처럼 세균 감염 증거가 있을 때 준다. 이 영아의 소변 백혈구는 배양 음성인 무균농뇨로 가와사키병의 요도염이고 혈액배양도 음성이라 항생제만 주면 진단이 늦어진다. 소변 배양에서 대장균이 자라고 결막충혈·구순 변화가 없었다면 항생제가 정답이 된다.\n④ 경구 프레드니솔론은 관상동맥류가 이미 있거나 IVIG 에 반응하지 않는 고위험군에서 IVIG 에 더하는 병용 치료이지 단독 1차 치료가 아니다. 스테로이드만 주면 관상동맥 보호 효과가 입증된 IVIG 를 빠뜨린다. IVIG 투여 36시간 뒤에도 열이 지속되는 불응성 가와사키병이라면 IVIG 재투여나 스테로이드 병용이 다음 단계가 된다.\n⑤ 해열제로 경과를 보는 것은 진단 기준을 만족하지 못하고 염증 지표가 낮은 원인 불명 발열에서의 접근이다. 이 증례는 이미 불완전 가와사키병 기준을 만족했고, 1세 미만 영아는 관상동맥류 위험이 가장 높아 기다릴수록 위험이 커진다. 발열 3일째에 결막충혈만 있고 CRP 가 1 mg/dL 였다면 경과 관찰이 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "「주요 기준이 2개뿐」에서 멈추지 않는다. 영아의 5일 이상 발열에 CRP·ESR 상승과 보조 검사 기준 3개 이상이면 심초음파를 기다리지 않고 IVIG 를 준다 — 무균농뇨를 요로감염으로 오인하는 것이 대표적 지연 경로다."
+   },
+   {
+    "k": "학습목표",
+    "v": "5일 이상 발열에 주요 임상 기준이 2~3개뿐인 영아에서 불완전 가와사키병을 의심하고, CRP·ESR 상승과 보조 검사 기준(빈혈·혈소판 증가·저알부민혈증·무균농뇨·ALT 상승·백혈구 증가) 3개 이상이면 심초음파를 기다리지 않고 정맥 면역글로불린과 아스피린을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW et al. Diagnosis, treatment, and long-term management of Kawasaki disease: AHA scientific statement. Circulation 2017;135:e927 — incomplete KD algorithm, supplemental laboratory criteria · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Kawasaki disease' — infants, incomplete presentation, BCG site reaction, IVIG timing · Newburger JW et al. Kawasaki disease. J Am Coll Cardiol 2016;67:1738 · 대한소아심장학회·대한소아과학회. 가와사키병 진료 지침 — 불완전 가와사키병의 진단과 치료 · Uehara R et al. Analysis of potential risk factors associated with nonresponse to IVIG in Kawasaki disease. Pediatr Infect Dis J 2008;27:155"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "5일 이상 발열에 주요 기준 2개뿐이라도 CRP·ESR 상승과 보조 검사 기준 3개 이상을 만족하는 영아는 불완전 가와사키병으로 심초음파를 기다리지 않고 IVIG 와 아스피린을 시작한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "보조 검사 기준 6개(빈혈·혈소판 증가·저알부민혈증·ALT 상승·백혈구 증가·무균농뇨)를 모두 만족 — 3개 이상이면 심초음파 결과는 치료 시작 조건이 아니다",
+   "steps": 4,
+   "key": [
+    {
+     "item": "6일 전부터 39℃ 이상의 열이 계속",
+     "why": "5일 이상 발열 — 알고리듬의 입구",
+     "also": []
+    },
+    {
+     "item": "양쪽 눈이 충혈되었으나 눈곱은 없고",
+     "why": "비삼출성 양측 결막충혈 — 주요 기준 1",
+     "also": []
+    },
+    {
+     "item": "입술이 붉고 갈라져 있다",
+     "why": "구순·구강 변화 — 주요 기준 2",
+     "also": []
+    },
+    {
+     "item": "C반응단백 9.6 mg/dL, 적혈구침강속도 68 mm/h",
+     "why": "CRP ≥ 3, ESR ≥ 40 — 불완전형 평가를 진행하는 조건",
+     "also": []
+    },
+    {
+     "item": "혈색소 9.2 g/dL",
+     "why": "연령 대비 빈혈 — 보조 기준",
+     "also": []
+    },
+    {
+     "item": "혈소판 512,000/mm³",
+     "why": "발병 7일 무렵 혈소판 증가 — 보조 기준",
+     "also": []
+    },
+    {
+     "item": "알부민 2.7 g/dL",
+     "why": "3 g/dL 이하 — 보조 기준",
+     "also": []
+    },
+    {
+     "item": "소변검사에서 백혈구 15/HPF 에 세균 배양은 음성",
+     "why": "무균농뇨 — 보조 기준이자 요로감염으로 오인되는 함정",
+     "also": []
+    },
+    {
+     "item": "BCG 접종 부위가 붉게 부어 있다",
+     "why": "영아 가와사키병의 특징적 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "심초음파는 다음 날 예정",
+     "why": "검사 기준을 이미 만족했으므로 결과를 기다리지 않는다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "6일 발열의 8개월 남아가 결막충혈·구순 변화 두 가지 주요 기준과 CRP·ESR 상승, 보조 검사 기준 6개를 모두 만족하고 BCG 부위 발적까지 있어 불완전 가와사키병이다. 관상동맥류 위험이 가장 높은 영아이므로 심초음파를 기다리지 않고 IVIG 2 g/kg 과 아스피린을 즉시 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "CRP·ESR 은 올라 있으나 보조 검사 기준이 빈혈과 백혈구 증가 2개뿐이었다면 심초음파에서 관상동맥 이상을 확인해 치료를 결정한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0089",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "신장·비뇨 — 횡문근융해증의 급성 콩팥손상",
+  "type": "신장·비뇨 — 횡문근융해증의 급성 콩팥손상",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-21",
+  "vignette": "A 22-year-old man is brought to the emergency department 12 hours after collapsing during a military training exercise on a hot day. He has diffuse muscle pain and weakness and has passed only a small amount of dark brown urine since the exercise. He takes no medications and does not use drugs. His temperature is 37.9°C, pulse is 112/min, blood pressure is 102/64 mm Hg, and mucous membranes are dry. Examination shows tenderness and swelling of the thigh and calf muscles bilaterally; distal pulses are intact. Laboratory studies show serum creatinine of 2.1 mg/dL, potassium of 5.9 mEq/L, calcium of 7.6 mg/dL, phosphorus of 6.8 mg/dL, and creatine kinase of 68,000 U/L. Urinalysis shows dark brown urine, 3+ blood on dipstick, and no red blood cells on microscopy. An electrocardiogram shows peaked T waves without QRS widening.",
+  "question": "Which of the following is the most appropriate initial step in management?",
+  "options": [
+   "Aggressive intravenous isotonic saline",
+   "Intravenous furosemide",
+   "Emergency hemodialysis",
+   "Intravenous calcium gluconate followed by fasciotomy of the thighs",
+   "Oral sodium bicarbonate and allopurinol"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Exertional collapse with muscle pain and swelling, creatine kinase of 68,000 U/L, hyperkalemia, hyperphosphatemia, hypocalcemia, and brown urine that is dipstick-positive for blood without red cells (myoglobinuria) is rhabdomyolysis with early acute kidney injury. The single most important initial step is rapid, large-volume isotonic crystalloid to restore volume, maintain urine output above 200–300 mL/h, dilute myoglobin, and prevent tubular cast formation. Hyperkalemia with peaked T waves is treated medically alongside fluids, but calcium is given cautiously because of calcium-phosphate deposition in muscle, and fasciotomy needs compartment pressures, not just swelling; furosemide is not given to a hypovolemic patient; dialysis is reserved for refractory hyperkalemia, acidosis, or oliguric renal failure; bicarbonate and allopurinol are adjuncts for tumor lysis rather than first-line here.\n- 원리: <b>Rhabdomyolysis</b> releases the contents of skeletal muscle into the circulation: <b>myoglobin, creatine kinase, potassium, phosphate, purines, and organic acids</b>, while calcium moves into damaged muscle and precipitates with phosphate (hence hypocalcemia early and hypercalcemia during recovery). The kidney is injured by three linked mechanisms: <b>volume depletion</b> from fluid sequestration in swollen muscle causes renal vasoconstriction; myoglobin, filtered freely, <b>precipitates with Tamm-Horsfall protein in acidic urine</b> to form obstructing casts; and the heme moiety of myoglobin generates <b>free radicals</b> that directly injure tubular cells. The diagnostic clue in the urinalysis is <b>heme-positive dipstick with no red cells on microscopy</b> — the dipstick reacts with the heme in myoglobin, not only with hemoglobin or intact erythrocytes.<br> <b>Why fluids are the first step</b> — every mechanism above is worsened by low flow and concentrated, acidic urine. Early aggressive isotonic crystalloid (often 1–2 L/h initially, targeting urine output of 200–300 mL/h) restores renal perfusion, dilutes myoglobin, and washes casts out before they obstruct; it is the only intervention shown to reduce acute kidney injury and it must begin before laboratory confirmation when the history is typical. Urinary alkalinization and mannitol are optional adjuncts once urine flow is established; loop diuretics are reserved for volume-overloaded oliguric patients; hemodialysis is for complications that fluids cannot correct.<br> <b>Why hyperkalemia here is handled with care</b> — potassium is treated with insulin-glucose and, if the electrocardiogram changes progress, calcium, but calcium is given sparingly in rhabdomyolysis because it deposits in injured muscle and rebounds as hypercalcemia later; restoring urine flow is itself the most effective way to excrete potassium.\n- 비교: <table><thead><tr><th style=\"width:30%\">Step</th><th style=\"width:38%\">When it is right</th><th>Why not first here</th></tr></thead><tbody> <tr><td><b>Aggressive isotonic saline (answer)</b></td><td><b>Any rhabdomyolysis with volume depletion and rising creatinine</b></td><td><b>Restores perfusion, dilutes myoglobin, prevents casts, promotes potassium excretion</b></td></tr> <tr><td>Intravenous furosemide (closest distractor)</td><td>Oliguria persisting after volume repletion with fluid overload</td><td>The patient is hypovolemic (dry mucosa, tachycardia, low blood pressure); diuretics before volume worsen the injury</td></tr> <tr><td>Emergency hemodialysis</td><td>Hyperkalemia or acidosis refractory to medical therapy, or anuric renal failure with overload</td><td>Potassium 5.9 with only peaked T waves responds to fluids and insulin-glucose; creatinine 2.1 is early injury</td></tr> <tr><td>Calcium gluconate + fasciotomy</td><td>Hyperkalemia with QRS widening; compartment syndrome confirmed by compartment pressure or neurovascular compromise</td><td>QRS is normal and calcium precipitates in injured muscle; pulses are intact and no pressures are measured</td></tr> <tr><td>Oral bicarbonate + allopurinol</td><td>Tumor lysis prophylaxis; alkalinization as an adjunct after fluids</td><td>Oral therapy cannot replace volume; allopurinol addresses uric acid, not myoglobin</td></tr> </tbody></table> The <b>closest distractor is furosemide</b>, because forcing diuresis sounds like a way to 'flush' myoglobin. The dividing line is <b>volume status</b>: in a dehydrated patient the tubules are protected by restoring flow with crystalloid, and a loop diuretic before that further reduces renal perfusion; furosemide has a place only when oliguria persists after the patient has been filled.\n- 오답 이유:\n  - (B) Furosemide is tempting because a brisk diuresis would seem to wash myoglobin out of the tubules, but in a hypovolemic patient with dry mucosa, tachycardia, and low blood pressure it reduces renal perfusion further and can precipitate the very injury one is trying to prevent. If the patient remained oliguric with signs of fluid overload after several liters of crystalloid, a loop diuretic would be appropriate.\n  - (C) Emergency hemodialysis is indicated for hyperkalemia or acidosis refractory to medical therapy, or for anuric renal failure with volume overload. Here potassium is 5.9 mEq/L with only peaked T waves and creatinine is 2.1 mg/dL, both expected to improve with fluids and insulin-glucose. If potassium had been 7.5 mEq/L with a widened QRS despite medical therapy, dialysis would be the correct step.\n  - (D) Calcium gluconate stabilizes the myocardium in hyperkalemia with QRS widening, and fasciotomy relieves a confirmed compartment syndrome; neither is the first step here. The QRS is narrow, calcium precipitates in injured muscle and rebounds as hypercalcemia later, and swelling alone without measured compartment pressures or neurovascular compromise does not justify fasciotomy. If the QRS had widened and compartment pressures exceeded 30 mm Hg, this option would be correct.\n  - (E) Sodium bicarbonate and allopurinol are the prophylactic regimen for tumor lysis syndrome, and alkalinization is at most an adjunct in rhabdomyolysis once urine flow is established. Oral therapy cannot restore intravascular volume, and allopurinol targets uric acid rather than myoglobin. If the patient had been a leukemia patient about to start chemotherapy, this combination would be the appropriate prophylaxis.\n- 함정: Do not reach for a diuretic or dialysis before filling the tank. Heme-positive urine without red cells plus a creatine kinase in the tens of thousands means myoglobinuria, and the kidney is saved by volume — aggressive isotonic saline first, everything else after.\n- 학습목표: 심한 근육 운동 뒤 근육통·검은 소변에서 소변 잠혈 양성이면서 현미경에 적혈구가 없는 소견을 미오글로빈뇨로 해석해 횡문근융해증을 진단하고, 급성 콩팥손상을 막기 위한 첫 처치로 대량 등장성 수액을 고른다\n- 근거·출처: Bosch X, Poch E, Grau JM. Rhabdomyolysis and acute kidney injury. N Engl J Med 2009;361:62 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute kidney injury' — pigment nephropathy, myoglobinuria, fluid management · Brenner and Rector's The Kidney, 11th ed., ch. 'Pathophysiology of acute kidney injury' — heme pigment nephropathy · Chavez LO et al. Beyond muscle destruction: a systematic review of rhabdomyolysis for clinical practice. Crit Care 2016;20:135",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Exertional collapse with muscle pain and swelling, creatine kinase of 68,000 U/L, hyperkalemia, hyperphosphatemia, hypocalcemia, and brown urine that is dipstick-positive for blood without red cells (myoglobinuria) is rhabdomyolysis with early acute kidney injury. The single most important initial step is rapid, large-volume isotonic crystalloid to restore volume, maintain urine output above 200–300 mL/h, dilute myoglobin, and prevent tubular cast formation. Hyperkalemia with peaked T waves is treated medically alongside fluids, but calcium is given cautiously because of calcium-phosphate deposition in muscle, and fasciotomy needs compartment pressures, not just swelling; furosemide is not given to a hypovolemic patient; dialysis is reserved for refractory hyperkalemia, acidosis, or oliguric renal failure; bicarbonate and allopurinol are adjuncts for tumor lysis rather than first-line here."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Rhabdomyolysis</b> releases the contents of skeletal muscle into the circulation: <b>myoglobin, creatine kinase, potassium, phosphate, purines, and organic acids</b>, while calcium moves into damaged muscle and precipitates with phosphate (hence hypocalcemia early and hypercalcemia during recovery). The kidney is injured by three linked mechanisms: <b>volume depletion</b> from fluid sequestration in swollen muscle causes renal vasoconstriction; myoglobin, filtered freely, <b>precipitates with Tamm-Horsfall protein in acidic urine</b> to form obstructing casts; and the heme moiety of myoglobin generates <b>free radicals</b> that directly injure tubular cells. The diagnostic clue in the urinalysis is <b>heme-positive dipstick with no red cells on microscopy</b> — the dipstick reacts with the heme in myoglobin, not only with hemoglobin or intact erythrocytes.<br> <b>Why fluids are the first step</b> — every mechanism above is worsened by low flow and concentrated, acidic urine. Early aggressive isotonic crystalloid (often 1–2 L/h initially, targeting urine output of 200–300 mL/h) restores renal perfusion, dilutes myoglobin, and washes casts out before they obstruct; it is the only intervention shown to reduce acute kidney injury and it must begin before laboratory confirmation when the history is typical. Urinary alkalinization and mannitol are optional adjuncts once urine flow is established; loop diuretics are reserved for volume-overloaded oliguric patients; hemodialysis is for complications that fluids cannot correct.<br> <b>Why hyperkalemia here is handled with care</b> — potassium is treated with insulin-glucose and, if the electrocardiogram changes progress, calcium, but calcium is given sparingly in rhabdomyolysis because it deposits in injured muscle and rebounds as hypercalcemia later; restoring urine flow is itself the most effective way to excrete potassium."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Step</th><th style=\"width:38%\">When it is right</th><th>Why not first here</th></tr></thead><tbody> <tr><td><b>Aggressive isotonic saline (answer)</b></td><td><b>Any rhabdomyolysis with volume depletion and rising creatinine</b></td><td><b>Restores perfusion, dilutes myoglobin, prevents casts, promotes potassium excretion</b></td></tr> <tr><td>Intravenous furosemide (closest distractor)</td><td>Oliguria persisting after volume repletion with fluid overload</td><td>The patient is hypovolemic (dry mucosa, tachycardia, low blood pressure); diuretics before volume worsen the injury</td></tr> <tr><td>Emergency hemodialysis</td><td>Hyperkalemia or acidosis refractory to medical therapy, or anuric renal failure with overload</td><td>Potassium 5.9 with only peaked T waves responds to fluids and insulin-glucose; creatinine 2.1 is early injury</td></tr> <tr><td>Calcium gluconate + fasciotomy</td><td>Hyperkalemia with QRS widening; compartment syndrome confirmed by compartment pressure or neurovascular compromise</td><td>QRS is normal and calcium precipitates in injured muscle; pulses are intact and no pressures are measured</td></tr> <tr><td>Oral bicarbonate + allopurinol</td><td>Tumor lysis prophylaxis; alkalinization as an adjunct after fluids</td><td>Oral therapy cannot replace volume; allopurinol addresses uric acid, not myoglobin</td></tr> </tbody></table> The <b>closest distractor is furosemide</b>, because forcing diuresis sounds like a way to 'flush' myoglobin. The dividing line is <b>volume status</b>: in a dehydrated patient the tubules are protected by restoring flow with crystalloid, and a loop diuretic before that further reduces renal perfusion; furosemide has a place only when oliguria persists after the patient has been filled."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Furosemide is tempting because a brisk diuresis would seem to wash myoglobin out of the tubules, but in a hypovolemic patient with dry mucosa, tachycardia, and low blood pressure it reduces renal perfusion further and can precipitate the very injury one is trying to prevent. If the patient remained oliguric with signs of fluid overload after several liters of crystalloid, a loop diuretic would be appropriate.\n(C) Emergency hemodialysis is indicated for hyperkalemia or acidosis refractory to medical therapy, or for anuric renal failure with volume overload. Here potassium is 5.9 mEq/L with only peaked T waves and creatinine is 2.1 mg/dL, both expected to improve with fluids and insulin-glucose. If potassium had been 7.5 mEq/L with a widened QRS despite medical therapy, dialysis would be the correct step.\n(D) Calcium gluconate stabilizes the myocardium in hyperkalemia with QRS widening, and fasciotomy relieves a confirmed compartment syndrome; neither is the first step here. The QRS is narrow, calcium precipitates in injured muscle and rebounds as hypercalcemia later, and swelling alone without measured compartment pressures or neurovascular compromise does not justify fasciotomy. If the QRS had widened and compartment pressures exceeded 30 mm Hg, this option would be correct.\n(E) Sodium bicarbonate and allopurinol are the prophylactic regimen for tumor lysis syndrome, and alkalinization is at most an adjunct in rhabdomyolysis once urine flow is established. Oral therapy cannot restore intravascular volume, and allopurinol targets uric acid rather than myoglobin. If the patient had been a leukemia patient about to start chemotherapy, this combination would be the appropriate prophylaxis."
+   },
+   {
+    "k": "함정",
+    "v": "Do not reach for a diuretic or dialysis before filling the tank. Heme-positive urine without red cells plus a creatine kinase in the tens of thousands means myoglobinuria, and the kidney is saved by volume — aggressive isotonic saline first, everything else after."
+   },
+   {
+    "k": "학습목표",
+    "v": "심한 근육 운동 뒤 근육통·검은 소변에서 소변 잠혈 양성이면서 현미경에 적혈구가 없는 소견을 미오글로빈뇨로 해석해 횡문근융해증을 진단하고, 급성 콩팥손상을 막기 위한 첫 처치로 대량 등장성 수액을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bosch X, Poch E, Grau JM. Rhabdomyolysis and acute kidney injury. N Engl J Med 2009;361:62 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute kidney injury' — pigment nephropathy, myoglobinuria, fluid management · Brenner and Rector's The Kidney, 11th ed., ch. 'Pathophysiology of acute kidney injury' — heme pigment nephropathy · Chavez LO et al. Beyond muscle destruction: a systematic review of rhabdomyolysis for clinical practice. Crit Care 2016;20:135"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Exertional rhabdomyolysis with myoglobinuria, hypovolemia, and early acute kidney injury is treated first with aggressive intravenous isotonic saline",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The patient is volume-depleted (dry mucous membranes, tachycardia, low blood pressure) — restoring flow with crystalloid protects the tubules, whereas a loop diuretic before volume repletion worsens perfusion",
+   "steps": 2,
+   "key": [
+    {
+     "item": "creatine kinase of 68,000 U/L",
+     "why": "Massive muscle breakdown — rhabdomyolysis",
+     "also": []
+    },
+    {
+     "item": "3+ blood on dipstick, and no red blood cells on microscopy",
+     "why": "Heme-positive without erythrocytes — myoglobinuria, the pigment that injures the tubules",
+     "also": []
+    },
+    {
+     "item": "mucous membranes are dry",
+     "why": "Volume depletion from fluid sequestration in muscle — the reason fluids come first",
+     "also": []
+    },
+    {
+     "item": "serum creatinine of 2.1 mg/dL",
+     "why": "Early acute kidney injury that fluids can still limit",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "distal pulses are intact",
+     "why": "No neurovascular compromise — swelling alone does not indicate fasciotomy",
+     "also": []
+    },
+    {
+     "item": "does not use drugs",
+     "why": "No toxin-induced muscle injury; management is unchanged but the cause is exertional heat stress",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "potassium of 5.9 mEq/L",
+     "why": "Hyperkalemia from muscle release — treated alongside fluids with insulin-glucose",
+     "also": []
+    },
+    {
+     "item": "peaked T waves without QRS widening",
+     "why": "Early ECG change — does not yet require calcium or dialysis",
+     "also": []
+    },
+    {
+     "item": "calcium of 7.6 mg/dL",
+     "why": "Hypocalcemia from deposition in muscle — a reason to give calcium sparingly",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "Collapse during hot-weather exertion with muscle swelling, creatine kinase of 68,000, and heme-positive urine without red cells is rhabdomyolysis with myoglobinuria and early kidney injury. The hypovolemic patient needs aggressive isotonic saline first; diuretics, dialysis, and calcium are reserved for specific complications.",
+   "switch": {
+    "choice": "C",
+    "condition": "If potassium had been 7.5 mEq/L with a widened QRS that did not respond to calcium and insulin-glucose, or the patient were anuric with fluid overload, emergency hemodialysis would be the correct step"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0087",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "감염 — 인공판막 심내막염의 항생제",
+  "type": "감염 — 인공판막 심내막염의 항생제",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-21",
+  "vignette": "A 64-year-old man comes to the emergency department because of 5 days of fever, chills, and fatigue. He underwent mechanical aortic valve replacement 7 months ago and takes warfarin. He has no drug allergies. His temperature is 38.9°C, pulse is 104/min, and blood pressure is 118/72 mm Hg. Examination shows a new grade 3/6 diastolic decrescendo murmur at the left sternal border, nontender erythematous macules on both palms, and a splinter hemorrhage under one fingernail. There is no neck stiffness or focal weakness. Laboratory studies show a leukocyte count of 15,200/mm3, erythrocyte sedimentation rate of 78 mm/h, and INR of 2.6. Three sets of blood cultures obtained 1 hour apart grow gram-positive cocci in clusters in all bottles; species identification and susceptibility are pending. Transesophageal echocardiography shows a 9-mm vegetation on the prosthetic valve with a small perivalvular abscess.",
+  "question": "Which of the following is the most appropriate initial antibiotic regimen?",
+  "options": [
+   "Ceftriaxone and gentamicin",
+   "Ampicillin and gentamicin",
+   "Vancomycin alone",
+   "Vancomycin, gentamicin, and rifampin",
+   "Nafcillin and gentamicin"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Fever with a new regurgitant murmur, Janeway lesions, a splinter hemorrhage, persistent bacteremia with gram-positive cocci in clusters, and a vegetation with perivalvular abscess 7 months after valve replacement is early prosthetic valve endocarditis. Staphylococci, mostly coagulase-negative and often methicillin-resistant, dominate this setting and form biofilm on the prosthesis, so empirical therapy must cover methicillin-resistant organisms and penetrate biofilm: vancomycin plus rifampin, with gentamicin for the first 2 weeks. Nafcillin covers only methicillin-susceptible staphylococci and is chosen after susceptibility returns; ceftriaxone or ampicillin regimens target streptococci or enterococci; vancomycin alone omits rifampin, which is what sterilizes biofilm on prosthetic material, and the abscess also mandates early surgical evaluation.\n- 원리: <b>Prosthetic valve endocarditis within the first year</b> is usually seeded at surgery or through the hospital course, so the organisms are skin flora that adhere to foreign material: <b>coagulase-negative staphylococci (largely methicillin-resistant), <i>Staphylococcus aureus</i></b>, and less often enterococci and fungi. On a prosthesis the bacteria live in a <b>biofilm</b> — a polysaccharide matrix in which growth is slow and antibiotic penetration is poor — and infection tends to spread around the sewing ring, producing <b>perivalvular abscess, dehiscence, and new regurgitation</b> (here, an aortic diastolic murmur). That is why the regimen differs from native-valve disease in three ways: it must cover methicillin resistance before susceptibility is known (<b>vancomycin</b>), it must include an agent active against biofilm-embedded organisms (<b>rifampin</b>, which penetrates the matrix and kills stationary-phase staphylococci), and it adds a synergistic aminoglycoside for the first 2 weeks (<b>gentamicin</b>) to reduce the emergence of rifampin resistance. Rifampin is never used alone because resistance arises by a single mutation, which is also why it is started once bacteremia is being cleared by the other drugs.<br> <b>Why the abscess matters</b> — a perivalvular abscess means the infection has escaped the reach of antibiotics; along with heart failure from prosthetic dysfunction, persistent bacteremia, and large mobile vegetations it is an indication for <b>early surgery</b> while antibiotics are continued for 6 weeks. Warfarin is often held because of the risk of hemorrhagic transformation of embolic infarcts.\n- 비교: <table><thead><tr><th style=\"width:28%\">Regimen</th><th style=\"width:40%\">When it is right</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Vancomycin + gentamicin + rifampin (answer)</b></td><td><b>Empirical or MRSA/MR-CoNS prosthetic valve endocarditis</b></td><td><b>Covers methicillin resistance and biofilm on the prosthesis</b></td></tr> <tr><td>Nafcillin + gentamicin (closest distractor)</td><td>Prosthetic valve endocarditis by methicillin-susceptible staphylococci — after susceptibility is known, with rifampin added</td><td>Susceptibility is pending; most early prosthetic isolates are methicillin-resistant, and rifampin is missing</td></tr> <tr><td>Ceftriaxone + gentamicin</td><td>Viridans streptococci with reduced penicillin susceptibility, or HACEK organisms</td><td>Gram-positive cocci in clusters are staphylococci</td></tr> <tr><td>Ampicillin + gentamicin</td><td>Enterococcal endocarditis (gram-positive cocci in chains or pairs)</td><td>Wrong organism morphology; no biofilm-active agent</td></tr> <tr><td>Vancomycin alone</td><td>Native-valve MRSA endocarditis</td><td>Prosthetic material requires rifampin (and initial gentamicin) to sterilize biofilm</td></tr> </tbody></table> The <b>closest distractor is nafcillin plus gentamicin</b>, because nafcillin is the best drug for methicillin-susceptible staphylococci and gentamicin is part of the prosthetic regimen. The dividing line is <b>what is known at the moment of the decision</b>: with susceptibility pending in a prosthetic-valve setting, methicillin resistance must be assumed, and the prosthesis itself requires rifampin whichever staphylococcus is eventually identified.\n- 오답 이유:\n  - (A) Ceftriaxone with gentamicin is the regimen for viridans streptococci with reduced penicillin susceptibility or for HACEK organisms, which would appear as gram-positive cocci in chains or as fastidious gram-negative rods. Cocci in clusters are staphylococci, against which ceftriaxone is inadequate. If the cultures had grown Streptococcus gallolyticus or a HACEK organism, this combination would be appropriate.\n  - (B) Ampicillin with gentamicin treats enterococcal endocarditis, in which the cultures show gram-positive cocci in pairs and chains and the aminoglycoside provides the synergy needed for a bactericidal effect. It does not cover staphylococci reliably and has no biofilm-active agent. If the blood cultures had grown Enterococcus faecalis, ampicillin-based synergy therapy would be the answer.\n  - (C) Vancomycin alone is acceptable for native-valve endocarditis caused by methicillin-resistant Staphylococcus aureus, but a prosthetic valve harbors biofilm that vancomycin penetrates poorly. Rifampin, added once bacteremia is being cleared, with gentamicin for the first 2 weeks, is what allows cure and reduces relapse. If this were a native aortic valve infected with MRSA, vancomycin monotherapy would be the correct choice.\n  - (E) Nafcillin with gentamicin is attractive because nafcillin is superior to vancomycin for methicillin-susceptible staphylococci and gentamicin belongs in the prosthetic-valve regimen. But susceptibility is still pending, most early prosthetic isolates are methicillin-resistant coagulase-negative staphylococci, and rifampin is absent. Once the isolate is reported as methicillin-susceptible, switching to nafcillin plus rifampin with 2 weeks of gentamicin would be correct.\n- 함정: Do not treat prosthetic valve endocarditis like native-valve disease. With susceptibility pending in the first year after surgery, assume methicillin resistance and add rifampin for biofilm — and a perivalvular abscess means surgery must be discussed at once.\n- 학습목표: 인공판막 삽입 1년 이내의 발열·심잡음·색전 증상에서 초기 인공판막 심내막염을 의심하고, 메티실린 내성 포도알균과 생물막을 겨냥해 반코마이신·젠타마이신·리팜핀 3제 요법을 선택한다\n- 근거·출처: Baddour LM et al. Infective endocarditis in adults: diagnosis, antimicrobial therapy, and management of complications. AHA scientific statement. Circulation 2015;132:1435 — prosthetic valve staphylococcal regimens · Delgado V et al. 2023 ESC Guidelines for the management of endocarditis. Eur Heart J 2023;44:3948 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Endocarditis' — prosthetic valve endocarditis, empirical therapy, surgical indications · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed., ch. 'Prosthetic valve endocarditis' — biofilm, rifampin",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever with a new regurgitant murmur, Janeway lesions, a splinter hemorrhage, persistent bacteremia with gram-positive cocci in clusters, and a vegetation with perivalvular abscess 7 months after valve replacement is early prosthetic valve endocarditis. Staphylococci, mostly coagulase-negative and often methicillin-resistant, dominate this setting and form biofilm on the prosthesis, so empirical therapy must cover methicillin-resistant organisms and penetrate biofilm: vancomycin plus rifampin, with gentamicin for the first 2 weeks. Nafcillin covers only methicillin-susceptible staphylococci and is chosen after susceptibility returns; ceftriaxone or ampicillin regimens target streptococci or enterococci; vancomycin alone omits rifampin, which is what sterilizes biofilm on prosthetic material, and the abscess also mandates early surgical evaluation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Prosthetic valve endocarditis within the first year</b> is usually seeded at surgery or through the hospital course, so the organisms are skin flora that adhere to foreign material: <b>coagulase-negative staphylococci (largely methicillin-resistant), <i>Staphylococcus aureus</i></b>, and less often enterococci and fungi. On a prosthesis the bacteria live in a <b>biofilm</b> — a polysaccharide matrix in which growth is slow and antibiotic penetration is poor — and infection tends to spread around the sewing ring, producing <b>perivalvular abscess, dehiscence, and new regurgitation</b> (here, an aortic diastolic murmur). That is why the regimen differs from native-valve disease in three ways: it must cover methicillin resistance before susceptibility is known (<b>vancomycin</b>), it must include an agent active against biofilm-embedded organisms (<b>rifampin</b>, which penetrates the matrix and kills stationary-phase staphylococci), and it adds a synergistic aminoglycoside for the first 2 weeks (<b>gentamicin</b>) to reduce the emergence of rifampin resistance. Rifampin is never used alone because resistance arises by a single mutation, which is also why it is started once bacteremia is being cleared by the other drugs.<br> <b>Why the abscess matters</b> — a perivalvular abscess means the infection has escaped the reach of antibiotics; along with heart failure from prosthetic dysfunction, persistent bacteremia, and large mobile vegetations it is an indication for <b>early surgery</b> while antibiotics are continued for 6 weeks. Warfarin is often held because of the risk of hemorrhagic transformation of embolic infarcts."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Regimen</th><th style=\"width:40%\">When it is right</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Vancomycin + gentamicin + rifampin (answer)</b></td><td><b>Empirical or MRSA/MR-CoNS prosthetic valve endocarditis</b></td><td><b>Covers methicillin resistance and biofilm on the prosthesis</b></td></tr> <tr><td>Nafcillin + gentamicin (closest distractor)</td><td>Prosthetic valve endocarditis by methicillin-susceptible staphylococci — after susceptibility is known, with rifampin added</td><td>Susceptibility is pending; most early prosthetic isolates are methicillin-resistant, and rifampin is missing</td></tr> <tr><td>Ceftriaxone + gentamicin</td><td>Viridans streptococci with reduced penicillin susceptibility, or HACEK organisms</td><td>Gram-positive cocci in clusters are staphylococci</td></tr> <tr><td>Ampicillin + gentamicin</td><td>Enterococcal endocarditis (gram-positive cocci in chains or pairs)</td><td>Wrong organism morphology; no biofilm-active agent</td></tr> <tr><td>Vancomycin alone</td><td>Native-valve MRSA endocarditis</td><td>Prosthetic material requires rifampin (and initial gentamicin) to sterilize biofilm</td></tr> </tbody></table> The <b>closest distractor is nafcillin plus gentamicin</b>, because nafcillin is the best drug for methicillin-susceptible staphylococci and gentamicin is part of the prosthetic regimen. The dividing line is <b>what is known at the moment of the decision</b>: with susceptibility pending in a prosthetic-valve setting, methicillin resistance must be assumed, and the prosthesis itself requires rifampin whichever staphylococcus is eventually identified."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ceftriaxone with gentamicin is the regimen for viridans streptococci with reduced penicillin susceptibility or for HACEK organisms, which would appear as gram-positive cocci in chains or as fastidious gram-negative rods. Cocci in clusters are staphylococci, against which ceftriaxone is inadequate. If the cultures had grown Streptococcus gallolyticus or a HACEK organism, this combination would be appropriate.\n(B) Ampicillin with gentamicin treats enterococcal endocarditis, in which the cultures show gram-positive cocci in pairs and chains and the aminoglycoside provides the synergy needed for a bactericidal effect. It does not cover staphylococci reliably and has no biofilm-active agent. If the blood cultures had grown Enterococcus faecalis, ampicillin-based synergy therapy would be the answer.\n(C) Vancomycin alone is acceptable for native-valve endocarditis caused by methicillin-resistant Staphylococcus aureus, but a prosthetic valve harbors biofilm that vancomycin penetrates poorly. Rifampin, added once bacteremia is being cleared, with gentamicin for the first 2 weeks, is what allows cure and reduces relapse. If this were a native aortic valve infected with MRSA, vancomycin monotherapy would be the correct choice.\n(E) Nafcillin with gentamicin is attractive because nafcillin is superior to vancomycin for methicillin-susceptible staphylococci and gentamicin belongs in the prosthetic-valve regimen. But susceptibility is still pending, most early prosthetic isolates are methicillin-resistant coagulase-negative staphylococci, and rifampin is absent. Once the isolate is reported as methicillin-susceptible, switching to nafcillin plus rifampin with 2 weeks of gentamicin would be correct."
+   },
+   {
+    "k": "함정",
+    "v": "Do not treat prosthetic valve endocarditis like native-valve disease. With susceptibility pending in the first year after surgery, assume methicillin resistance and add rifampin for biofilm — and a perivalvular abscess means surgery must be discussed at once."
+   },
+   {
+    "k": "학습목표",
+    "v": "인공판막 삽입 1년 이내의 발열·심잡음·색전 증상에서 초기 인공판막 심내막염을 의심하고, 메티실린 내성 포도알균과 생물막을 겨냥해 반코마이신·젠타마이신·리팜핀 3제 요법을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Baddour LM et al. Infective endocarditis in adults: diagnosis, antimicrobial therapy, and management of complications. AHA scientific statement. Circulation 2015;132:1435 — prosthetic valve staphylococcal regimens · Delgado V et al. 2023 ESC Guidelines for the management of endocarditis. Eur Heart J 2023;44:3948 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Endocarditis' — prosthetic valve endocarditis, empirical therapy, surgical indications · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed., ch. 'Prosthetic valve endocarditis' — biofilm, rifampin"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Staphylococcal bacteremia with vegetation and perivalvular abscess 7 months after mechanical valve replacement is early prosthetic valve endocarditis and is treated empirically with vancomycin, gentamicin, and rifampin",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Susceptibility is pending and the setting is a prosthesis — methicillin resistance must be assumed and rifampin is required for biofilm, so nafcillin-based therapy waits for the susceptibility report",
+   "steps": 3,
+   "key": [
+    {
+     "item": "mechanical aortic valve replacement 7 months ago",
+     "why": "Early prosthetic valve endocarditis — staphylococci, often methicillin-resistant, in biofilm",
+     "also": []
+    },
+    {
+     "item": "gram-positive cocci in clusters in all bottles",
+     "why": "Staphylococcal morphology with persistent bacteremia",
+     "also": []
+    },
+    {
+     "item": "species identification and susceptibility are pending",
+     "why": "Empirical decision point — methicillin resistance must be assumed",
+     "also": []
+    },
+    {
+     "item": "a new grade 3/6 diastolic decrescendo murmur",
+     "why": "New aortic regurgitation from prosthetic dysfunction — a major Duke criterion",
+     "also": []
+    },
+    {
+     "item": "nontender erythematous macules on both palms",
+     "why": "Janeway lesions — embolic vascular phenomenon supporting endocarditis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no drug allergies",
+     "why": "No beta-lactam allergy, so the choice of vancomycin is driven by resistance, not allergy",
+     "also": []
+    },
+    {
+     "item": "There is no neck stiffness or focal weakness",
+     "why": "No evidence of central embolism at present; does not change the antibiotic choice",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "a 9-mm vegetation on the prosthetic valve with a small perivalvular abscess",
+     "why": "Confirms endocarditis and is an indication for early surgical evaluation",
+     "also": []
+    },
+    {
+     "item": "takes warfarin",
+     "why": "Anticoagulation may be held during active endocarditis because of hemorrhagic embolic infarcts",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "Persistent staphylococcal bacteremia, new aortic regurgitation, Janeway lesions, and a prosthetic-valve vegetation with abscess 7 months after surgery is early prosthetic valve endocarditis. With susceptibility pending, empirical vancomycin plus gentamicin plus rifampin covers methicillin-resistant organisms and biofilm.",
+   "switch": {
+    "choice": "E",
+    "condition": "If the isolate had been reported as methicillin-susceptible Staphylococcus aureus, nafcillin with gentamicin (plus rifampin) would replace vancomycin"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0086",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "혈액·종양 — 급성 전골수구백혈병의 초기 치료",
+  "type": "혈액·종양 — 급성 전골수구백혈병의 초기 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-21",
+  "vignette": "27세 여자가 3일 전부터 잇몸에서 피가 나고 다리에 멍이 늘어 병원에 왔다. 2주 전부터 피로하고 어지러웠으며 발열은 없다. 약물 복용력과 가족력은 없다. 혈압 112/70 mmHg, 맥박 96회/분, 체온 37.2℃ 이고 결막이 창백하며 정강이에 점상출혈과 반상출혈이 있고 간·비장은 만져지지 않는다. 혈액검사에서 혈색소 7.9 g/dL, 백혈구 2,100/mm³, 혈소판 18,000/mm³, 프로트롬빈시간 INR 1.7, 활성화부분트롬보플라스틴시간 48초, 피브리노겐 95 mg/dL, D-이합체 8.4 μg/mL 이다. 말초혈액도말에서 과립이 많고 두 엽으로 접힌 핵을 가진 비정상 전골수구가 보이며 일부 세포에는 아우어소체가 다발로 들어 있다. 골수검사와 유전자검사 결과는 아직 나오지 않았다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "시타라빈과 다우노루비신 7+3 관해유도",
+   "동종조혈모세포이식 공여자 검색",
+   "헤파린 지속 정주",
+   "all-trans retinoic acid 즉시 투여",
+   "유전자검사 결과 확인 후 치료 시작"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 젊은 환자의 범혈구감소에 출혈 경향과 파종성혈관내응고(INR·aPTT 연장, 피브리노겐 저하, D-이합체 상승)가 있고 말초혈액에서 아우어소체 다발과 두 엽 핵을 가진 비정상 전골수구가 보이면 급성 전골수구백혈병(APL)이다. APL 은 응고장애로 인한 조기 출혈 사망이 가장 큰 위험이므로 PML-RARA 확진을 기다리지 않고 형태학적 의심만으로 all-trans retinoic acid(ATRA)를 즉시 시작하고, 혈소판 30,000~50,000/mm³·피브리노겐 150 mg/dL 이상을 유지하는 공격적 수혈 지지를 함께 한다. 이후 삼산화비소를 더하거나 안트라사이클린을 병용한다. 표준 7+3 은 APL 의 1차 치료가 아니고, 헤파린은 출혈을 악화시키며, 이식은 1차 치료가 아니다.\n- 원리: <b>급성 전골수구백혈병(APL)은 t(15;17) 로 생기는 PML-RARA 융합단백</b>이 레티노산 수용체를 억제해 골수 세포를 전골수구 단계에서 멈추게 하는 병이다. 전골수구의 <b>1차 과립</b>에는 조직인자·암 프로코아귤런트와 단백분해효소(엘라스타아제)가 가득 차 있고, 세포가 파괴되거나 세포막에 아넥신 II 가 과발현되면 플라스민 생성이 늘어 <b>파종성혈관내응고와 과다 섬유소용해</b>가 동시에 일어난다. 그래서 백혈구가 낮은데도 출혈이 심하고, 진단 초기의 사망 대부분이 뇌·폐 출혈이다. 두 엽으로 접힌 핵, 많은 과립, <b>아우어소체 다발(faggot cell)</b>은 이 세포의 형태학적 표지다.<br> <b>왜 ATRA 를 확진 전에 주는가</b> — 약리학적 용량의 all-trans retinoic acid 는 PML-RARA 에 결합해 억제 복합체를 떼어내고 전골수구를 <b>분화</b>시킨다. 세포를 죽이는 것이 아니라 성숙시키므로 종양 용해와 과립 방출에 의한 응고장애 악화가 적고, 치료 시작 며칠 안에 응고 지표가 좋아진다. APL 은 형태·응고 소견만으로도 의심이 강하고 ATRA 는 다른 백혈병에 해가 적으므로, 유전자검사(PML-RARA PCR·FISH)가 나오기 전에 시작하고 결과가 음성이면 끊는다. 이후 저·중위험군은 ATRA + 삼산화비소, 고위험군(백혈구 &gt; 10,000)은 안트라사이클린을 더한다. 분화증후군(발열·호흡곤란·체중 증가·흉수)이 생기면 덱사메타손을 준다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>ATRA 즉시 투여(정답)</b></td><td><b>형태·응고 소견으로 APL 이 의심되는 즉시 — 확진 전</b></td><td><b>아우어소체 다발 전골수구 + DIC</b></td></tr> <tr><td>유전자검사 확인 후 시작(가장 가까운 오답)</td><td>APL 이 아닌 급성백혈병에서 표적치료(FLT3 억제제 등)를 고를 때</td><td>며칠의 지연이 출혈 사망으로 이어진다 — 결과 음성이면 끊으면 된다</td></tr> <tr><td>7+3 관해유도</td><td>APL 이 아닌 급성골수성백혈병의 표준 유도</td><td>APL 은 ATRA 기반 치료가 표준이며 7+3 단독은 응고장애를 악화</td></tr> <tr><td>동종이식 공여자 검색</td><td>고위험 AML 의 1차 관해 후 또는 재발 APL</td><td>APL 은 ATRA·비소로 90% 이상 완치되어 1차 이식 대상이 아니다</td></tr> <tr><td>헤파린 지속 정주</td><td>혈전이 지배적인 만성 DIC(예: Trousseau 증후군)</td><td>출혈이 지배적인 APL 의 DIC 에서 헤파린은 출혈을 악화</td></tr> </tbody></table> <b>가장 가까운 오답은 「유전자검사 확인 후 시작」</b>이다 — 대부분의 종양 치료가 확진 뒤 시작되기 때문이다. 갈림길은 <b>조기 출혈 사망의 위험</b>이다. APL 은 진단 첫 주 사망의 대부분이 응고장애에 의한 출혈이고, ATRA 는 분화 유도라 오진이라도 해가 적으므로 형태학적 의심만으로 시작한다.\n- 오답 이유:\n  - ① 시타라빈과 다우노루비신 7+3 은 APL 이 아닌 급성골수성백혈병의 표준 관해유도다. APL 에 세포독성 항암제만 먼저 쓰면 전골수구가 대량 파괴되며 과립 속 조직인자와 단백분해효소가 쏟아져 응고장애가 악화된다. 아우어소체가 없고 응고장애가 없는 골수모구성 백혈병으로 확진되었다면 이 선지가 정답이다.\n  - ② 동종조혈모세포이식은 고위험 급성골수성백혈병의 1차 관해 뒤나 재발한 APL 에서 고려한다. APL 은 ATRA 와 삼산화비소로 90% 이상이 완치되므로 1차 치료로 이식을 준비하지 않는다. ATRA·비소 치료 뒤 분자학적 재발이 확인된 환자라면 공여자 검색이 다음 단계가 된다.\n  - ③ 헤파린은 혈전이 지배적인 만성 파종성혈관내응고, 예를 들어 암과 연관된 Trousseau 증후군에서 쓴다. APL 의 응고장애는 과다 섬유소용해가 겹쳐 출혈이 지배적이므로 헤파린은 출혈을 악화시키고, 대신 혈소판·냉동침전물·신선동결혈장으로 지지한다. 출혈 없이 반복 혈전만 있는 만성 DIC 였다면 헤파린이 맞다.\n  - ⑤ 유전자검사 결과를 기다리는 것은 대부분의 종양에서 옳지만, APL 은 예외다. 진단 첫 주의 사망 대부분이 파종성혈관내응고에 의한 뇌·폐 출혈이고, ATRA 는 분화 유도제라 다른 백혈병이어도 해가 적으므로 형태·응고 소견만으로 시작하고 PML-RARA 가 음성이면 끊는다. 응고장애 없이 아우어소체가 하나씩만 보이는 일반 골수모구였다면 확진 뒤 치료 결정이 맞다.\n- 함정: 「확진 전에는 치료하지 않는다」는 원칙의 예외를 안다. 아우어소체 다발 전골수구 + DIC 는 그 자체가 ATRA 를 시작할 근거이며, 유전자검사는 치료를 멈출지 정하는 데 쓴다.\n- 학습목표: 범혈구감소·파종성혈관내응고·아우어소체 다발 전골수구가 있는 급성백혈병에서 급성 전골수구백혈병을 의심하면 유전자 확진을 기다리지 않고 즉시 all-trans retinoic acid 를 시작한다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute myeloid leukemia' — acute promyelocytic leukemia: coagulopathy, ATRA on morphologic suspicion, arsenic trioxide · Sanz MA et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. Blood 2019;133:1630 · Lo-Coco F et al. Retinoic acid and arsenic trioxide for acute promyelocytic leukemia. N Engl J Med 2013;369:111 · NCCN Clinical Practice Guidelines in Oncology: Acute Myeloid Leukemia — APL treatment induction, supportive care targets (platelets, fibrinogen) · Hoffman R et al. Hematology: Basic Principles and Practice, 8th ed., ch. 'Acute promyelocytic leukemia'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "젊은 환자의 범혈구감소에 출혈 경향과 파종성혈관내응고(INR·aPTT 연장, 피브리노겐 저하, D-이합체 상승)가 있고 말초혈액에서 아우어소체 다발과 두 엽 핵을 가진 비정상 전골수구가 보이면 급성 전골수구백혈병(APL)이다. APL 은 응고장애로 인한 조기 출혈 사망이 가장 큰 위험이므로 PML-RARA 확진을 기다리지 않고 형태학적 의심만으로 all-trans retinoic acid(ATRA)를 즉시 시작하고, 혈소판 30,000~50,000/mm³·피브리노겐 150 mg/dL 이상을 유지하는 공격적 수혈 지지를 함께 한다. 이후 삼산화비소를 더하거나 안트라사이클린을 병용한다. 표준 7+3 은 APL 의 1차 치료가 아니고, 헤파린은 출혈을 악화시키며, 이식은 1차 치료가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>급성 전골수구백혈병(APL)은 t(15;17) 로 생기는 PML-RARA 융합단백</b>이 레티노산 수용체를 억제해 골수 세포를 전골수구 단계에서 멈추게 하는 병이다. 전골수구의 <b>1차 과립</b>에는 조직인자·암 프로코아귤런트와 단백분해효소(엘라스타아제)가 가득 차 있고, 세포가 파괴되거나 세포막에 아넥신 II 가 과발현되면 플라스민 생성이 늘어 <b>파종성혈관내응고와 과다 섬유소용해</b>가 동시에 일어난다. 그래서 백혈구가 낮은데도 출혈이 심하고, 진단 초기의 사망 대부분이 뇌·폐 출혈이다. 두 엽으로 접힌 핵, 많은 과립, <b>아우어소체 다발(faggot cell)</b>은 이 세포의 형태학적 표지다.<br> <b>왜 ATRA 를 확진 전에 주는가</b> — 약리학적 용량의 all-trans retinoic acid 는 PML-RARA 에 결합해 억제 복합체를 떼어내고 전골수구를 <b>분화</b>시킨다. 세포를 죽이는 것이 아니라 성숙시키므로 종양 용해와 과립 방출에 의한 응고장애 악화가 적고, 치료 시작 며칠 안에 응고 지표가 좋아진다. APL 은 형태·응고 소견만으로도 의심이 강하고 ATRA 는 다른 백혈병에 해가 적으므로, 유전자검사(PML-RARA PCR·FISH)가 나오기 전에 시작하고 결과가 음성이면 끊는다. 이후 저·중위험군은 ATRA + 삼산화비소, 고위험군(백혈구 &gt; 10,000)은 안트라사이클린을 더한다. 분화증후군(발열·호흡곤란·체중 증가·흉수)이 생기면 덱사메타손을 준다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>ATRA 즉시 투여(정답)</b></td><td><b>형태·응고 소견으로 APL 이 의심되는 즉시 — 확진 전</b></td><td><b>아우어소체 다발 전골수구 + DIC</b></td></tr> <tr><td>유전자검사 확인 후 시작(가장 가까운 오답)</td><td>APL 이 아닌 급성백혈병에서 표적치료(FLT3 억제제 등)를 고를 때</td><td>며칠의 지연이 출혈 사망으로 이어진다 — 결과 음성이면 끊으면 된다</td></tr> <tr><td>7+3 관해유도</td><td>APL 이 아닌 급성골수성백혈병의 표준 유도</td><td>APL 은 ATRA 기반 치료가 표준이며 7+3 단독은 응고장애를 악화</td></tr> <tr><td>동종이식 공여자 검색</td><td>고위험 AML 의 1차 관해 후 또는 재발 APL</td><td>APL 은 ATRA·비소로 90% 이상 완치되어 1차 이식 대상이 아니다</td></tr> <tr><td>헤파린 지속 정주</td><td>혈전이 지배적인 만성 DIC(예: Trousseau 증후군)</td><td>출혈이 지배적인 APL 의 DIC 에서 헤파린은 출혈을 악화</td></tr> </tbody></table> <b>가장 가까운 오답은 「유전자검사 확인 후 시작」</b>이다 — 대부분의 종양 치료가 확진 뒤 시작되기 때문이다. 갈림길은 <b>조기 출혈 사망의 위험</b>이다. APL 은 진단 첫 주 사망의 대부분이 응고장애에 의한 출혈이고, ATRA 는 분화 유도라 오진이라도 해가 적으므로 형태학적 의심만으로 시작한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 시타라빈과 다우노루비신 7+3 은 APL 이 아닌 급성골수성백혈병의 표준 관해유도다. APL 에 세포독성 항암제만 먼저 쓰면 전골수구가 대량 파괴되며 과립 속 조직인자와 단백분해효소가 쏟아져 응고장애가 악화된다. 아우어소체가 없고 응고장애가 없는 골수모구성 백혈병으로 확진되었다면 이 선지가 정답이다.\n② 동종조혈모세포이식은 고위험 급성골수성백혈병의 1차 관해 뒤나 재발한 APL 에서 고려한다. APL 은 ATRA 와 삼산화비소로 90% 이상이 완치되므로 1차 치료로 이식을 준비하지 않는다. ATRA·비소 치료 뒤 분자학적 재발이 확인된 환자라면 공여자 검색이 다음 단계가 된다.\n③ 헤파린은 혈전이 지배적인 만성 파종성혈관내응고, 예를 들어 암과 연관된 Trousseau 증후군에서 쓴다. APL 의 응고장애는 과다 섬유소용해가 겹쳐 출혈이 지배적이므로 헤파린은 출혈을 악화시키고, 대신 혈소판·냉동침전물·신선동결혈장으로 지지한다. 출혈 없이 반복 혈전만 있는 만성 DIC 였다면 헤파린이 맞다.\n⑤ 유전자검사 결과를 기다리는 것은 대부분의 종양에서 옳지만, APL 은 예외다. 진단 첫 주의 사망 대부분이 파종성혈관내응고에 의한 뇌·폐 출혈이고, ATRA 는 분화 유도제라 다른 백혈병이어도 해가 적으므로 형태·응고 소견만으로 시작하고 PML-RARA 가 음성이면 끊는다. 응고장애 없이 아우어소체가 하나씩만 보이는 일반 골수모구였다면 확진 뒤 치료 결정이 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "「확진 전에는 치료하지 않는다」는 원칙의 예외를 안다. 아우어소체 다발 전골수구 + DIC 는 그 자체가 ATRA 를 시작할 근거이며, 유전자검사는 치료를 멈출지 정하는 데 쓴다."
+   },
+   {
+    "k": "학습목표",
+    "v": "범혈구감소·파종성혈관내응고·아우어소체 다발 전골수구가 있는 급성백혈병에서 급성 전골수구백혈병을 의심하면 유전자 확진을 기다리지 않고 즉시 all-trans retinoic acid 를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute myeloid leukemia' — acute promyelocytic leukemia: coagulopathy, ATRA on morphologic suspicion, arsenic trioxide · Sanz MA et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. Blood 2019;133:1630 · Lo-Coco F et al. Retinoic acid and arsenic trioxide for acute promyelocytic leukemia. N Engl J Med 2013;369:111 · NCCN Clinical Practice Guidelines in Oncology: Acute Myeloid Leukemia — APL treatment induction, supportive care targets (platelets, fibrinogen) · Hoffman R et al. Hematology: Basic Principles and Practice, 8th ed., ch. 'Acute promyelocytic leukemia'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "범혈구감소·파종성혈관내응고와 아우어소체 다발을 가진 비정상 전골수구는 급성 전골수구백혈병이며, 확진 전이라도 즉시 ATRA 를 시작한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "APL 의 조기 사망은 응고장애 출혈이고 ATRA 는 분화 유도제라 오진이어도 해가 적다 — 유전자검사 결과를 기다리는 며칠이 치명적이다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "일부 세포에는 아우어소체가 다발로 들어 있다",
+     "why": "faggot cell — APL 의 형태학적 표지",
+     "also": []
+    },
+    {
+     "item": "과립이 많고 두 엽으로 접힌 핵을 가진 비정상 전골수구",
+     "why": "과립형 APL 세포의 전형적 형태",
+     "also": []
+    },
+    {
+     "item": "피브리노겐 95 mg/dL",
+     "why": "소모성 저피브리노겐혈증 — DIC 와 과다 섬유소용해의 증거",
+     "also": []
+    },
+    {
+     "item": "D-이합체 8.4 μg/mL",
+     "why": "활발한 섬유소 형성과 용해 — APL 응고장애",
+     "also": []
+    },
+    {
+     "item": "골수검사와 유전자검사 결과는 아직 나오지 않았다",
+     "why": "확진 전 상태 — 그래도 치료를 시작해야 한다는 판단의 핵심 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "발열은 없다",
+     "why": "감염에 의한 패혈성 DIC 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "프로트롬빈시간 INR 1.7",
+     "why": "응고인자 소모 — 신선동결혈장·냉동침전물 지지 치료 대상",
+     "also": []
+    },
+    {
+     "item": "혈소판 18,000/mm³",
+     "why": "출혈 위험 — 30,000~50,000 이상으로 유지하는 수혈 목표",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "간·비장은 만져지지 않는다",
+     "why": "APL 은 종양 부하가 낮아 장기 종대가 드물다 — 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "점상출혈·범혈구감소에 INR 연장·피브리노겐 저하·D-이합체 상승의 DIC 가 있고 아우어소체 다발 전골수구가 보이면 APL 이다. 조기 출혈 사망을 막기 위해 PML-RARA 결과를 기다리지 않고 ATRA 를 즉시 시작하고 혈소판·피브리노겐을 보충한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "말초혈액에 과립이 적고 아우어소체가 없는 골수모구가 보이고 응고장애가 없으며 골수검사에서 APL 이 배제되었다면 표준 7+3 관해유도가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0084",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "소화기·간담췌 — 자발성 세균성 복막염의 진단",
+  "type": "소화기·간담췌 — 자발성 세균성 복막염의 진단",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-21",
+  "vignette": "58세 남자가 2일 전부터 배가 아프고 열이 나며 오늘 아침부터 말이 어눌해져 병원에 왔다. 알코올 간경변으로 3년 전부터 복수가 있어 스피로놀락톤과 푸로세미드를 복용하고 있으며 3개월 전에도 복수천자를 받았다. 혈압 96/60 mmHg, 맥박 108회/분, 체온 38.4℃ 이고 배가 팽만되어 있으며 전반적인 압통이 있으나 반동압통과 근육 강직은 없다. 손 떨림(퍼덕떨림)이 있다. 혈액검사에서 백혈구 13,800/mm³, 혈소판 76,000/mm³, 알부민 2.4 g/dL, 총빌리루빈 4.2 mg/dL, 크레아티닌 1.4 mg/dL, 프로트롬빈시간 INR 2.1 이다. 복수검사에서 다형핵 백혈구 620/mm³, 총단백 0.9 g/dL, 복수 포도당 78 mg/dL 이며 그람염색에서 세균은 보이지 않는다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "이뇨제 증량과 락툴로오스 투여",
+   "정맥 세포탁심 투여",
+   "복수 배양 결과 확인 후 항생제 결정",
+   "응급 개복술",
+   "복부 CT 로 천공 확인 후 항생제 결정"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 간경변 복수 환자의 발열·복통·간성뇌증 악화에서 복수 다형핵 백혈구가 250/mm³ 이상이면 배양 결과나 그람염색 결과와 관계없이 자발성 세균성 복막염으로 진단하고 즉시 경험적 항생제(정맥 세포탁심 또는 세프트리악손)를 시작한다. 복수 총단백이 낮고(1 g/dL 미만) 포도당이 정상이며 단일 균 감염 양상이면 이차성 복막염보다 자발성 복막염에 합당하므로 개복술이나 CT 를 먼저 할 이유가 없다. 배양은 항생제 전에 채취하되 결과를 기다리지 않는다. 크레아티닌 1.4, 빌리루빈 4.2 로 콩팥 기능 악화 위험이 높아 알부민 병용도 고려한다.\n- 원리: <b>자발성 세균성 복막염(SBP)</b>은 복강 내 원인 병소 없이 장내 세균이 장벽을 넘어(세균 전위) 복수에 정착하는 감염이다. 간경변에서는 문맥압 항진으로 장 점막 투과성이 늘고, 망상내피계 기능과 복수의 옵소닌 활성(보체·단백)이 떨어져 세균이 복수에서 제거되지 못한다. 그래서 <b>복수 총단백이 1 g/dL 미만</b>일수록 위험이 크고, 감염되면 복수로 호중구가 몰려 <b>다형핵 백혈구 ≥ 250/mm³</b>가 진단 기준이 된다. 복수 배양은 감염 세균 농도가 낮아 절반 가까이 음성이고 그람염색은 더 둔감하므로, <b>세포 수만으로 진단하고 배양을 기다리지 않는다</b>. 원인균은 대장균·클레브시엘라·폐렴사슬알균이 대부분이라 3세대 세팔로스포린이 1차 약이다.<br> <b>왜 이차성 복막염과 갈라야 하는가</b> — 천공·농양에 의한 이차성 복막염은 항생제만으로 낫지 않고 수술이 필요하다. 이차성을 시사하는 복수 소견은 <b>총단백 &gt; 1 g/dL, 포도당 &lt; 50 mg/dL, 젖산탈수소효소가 혈청 상한보다 높음</b>, 그람염색에서 여러 균이 보임, 항생제 48시간 뒤 다형핵 백혈구가 25 % 이상 줄지 않음이다. 이 증례는 총단백 0.9, 포도당 78 로 자발성에 합당하다.<br> <b>동반 처치</b> — SBP 는 간신증후군을 유발하는 대표 사건이다. 크레아티닌 &gt; 1 mg/dL 또는 빌리루빈 &gt; 4 mg/dL 이면 1일째 알부민 1.5 g/kg, 3일째 1 g/kg 을 더해 콩팥 손상과 사망을 줄인다. 회복 뒤에는 재발 방지를 위한 예방적 항생제(노르플록사신)를 고려한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>정맥 세포탁심 즉시 투여(정답)</b></td><td><b>간경변 복수에서 복수 다형핵 백혈구 ≥ 250/mm³ — 배양 결과와 무관</b></td><td><b>620/mm³, 총단백 0.9, 포도당 78 → SBP</b></td></tr> <tr><td>배양 결과 확인 후 결정(가장 가까운 오답)</td><td>세포 수가 250 미만이고 증상이 없어 감염이 불확실할 때의 경과 관찰</td><td>배양은 절반이 음성 — 기다리면 패혈증·간신증후군 위험</td></tr> <tr><td>응급 개복술</td><td>천공·농양의 이차성 복막염(총단백 &gt; 1, 포도당 &lt; 50, 여러 균)</td><td>복수 소견이 자발성에 합당, 반동압통·강직 없음</td></tr> <tr><td>복부 CT 후 결정</td><td>이차성 복막염이 의심될 때 원인 병소 확인</td><td>항생제를 미룰 이유가 없다 — 필요하면 항생제 시작 뒤 촬영</td></tr> <tr><td>이뇨제 증량 + 락툴로오스</td><td>감염 없는 복수·간성뇌증의 조절</td><td>뇌증의 유발 요인이 감염이므로 감염 치료가 먼저, 저혈압에 이뇨제 증량은 위험</td></tr> </tbody></table> <b>가장 가까운 오답은 「배양 결과 확인 후 결정」</b>이다 — 그람염색이 음성이라 근거가 부족해 보이기 때문이다. 갈림길은 <b>복수 다형핵 백혈구 250/mm³</b>다. 이 기준을 넘으면 배양·염색과 무관하게 진단하고 즉시 치료하며, 미달이면 배양 양성이라도 증상이 없으면 세균성 복수(bacterascites)로 보고 경과를 본다.\n- 오답 이유:\n  - ① 이뇨제 증량과 락툴로오스는 감염이 없는 복수와 간성뇌증의 조절 치료다. 이 증례의 뇌증은 감염이 유발한 것이므로 감염 치료가 먼저이고, 혈압 96/60 에 크레아티닌이 오른 상태에서 이뇨제를 늘리면 콩팥 손상을 부른다. 감염 증거 없이 복수와 뇌증만 있었다면 락툴로오스와 이뇨제 조절이 맞다.\n  - ③ 배양 결과를 기다리는 것은 복수 세포 수가 250/mm³ 미만이고 증상이 없어 감염이 불확실할 때의 접근이다. 자발성 세균성 복막염은 배양이 절반 가까이 음성이고 그람염색은 더 둔감해 세포 수만으로 진단하며, 치료를 미루면 패혈증과 간신증후군으로 진행한다. 복수 다형핵 백혈구가 120/mm³ 이고 열이 없었다면 배양을 보며 기다리는 이 선지가 맞다.\n  - ④ 응급 개복술은 천공이나 농양에 의한 이차성 복막염에 필요하다. 이차성은 복수 총단백 1 g/dL 초과, 포도당 50 mg/dL 미만, 여러 균, 반동압통·근육 강직이 단서다. 이 증례는 총단백 0.9, 포도당 78 에 복막 자극 징후가 없어 자발성이다. 복수 포도당이 30, 총단백이 2.5 이고 그람염색에서 여러 균이 보였다면 수술 평가가 정답이 된다.\n  - ⑤ 복부 CT 는 이차성 복막염이 의심될 때 천공·농양 같은 원인 병소를 찾는 검사다. 이 증례의 복수 소견은 자발성에 합당하고, 항생제를 시작한 뒤 48시간에 세포 수가 25% 이상 줄지 않으면 그때 CT 로 이차성을 찾는다. 항생제 치료에도 다형핵 백혈구가 줄지 않았다면 CT 가 다음 단계다.\n- 함정: 「그람염색 음성」에 흔들리지 않는다. 간경변 복수에서 다형핵 백혈구 250/mm³ 이상이면 그 자체가 진단이며, 총단백·포도당으로 이차성만 가른 뒤 곧바로 3세대 세팔로스포린을 준다.\n- 학습목표: 간경변 복수 환자의 발열·복통·의식 변화에서 진단적 복수천자를 시행하고, 복수 다형핵 백혈구 250/mm³ 이상이면 배양 결과를 기다리지 않고 자발성 세균성 복막염으로 진단해 3세대 세팔로스포린을 시작한다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed., ch. 'Cirrhosis and its complications' — spontaneous bacterial peritonitis: diagnosis by ascitic PMN ≥ 250/µL, empirical cefotaxime, albumin · Biggins SW et al. Diagnosis, evaluation, and management of ascites, SBP and hepatorenal syndrome. AASLD guidance. Hepatology 2021;74:1014 · EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. J Hepatol 2018;69:406 · Sort P et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and SBP. N Engl J Med 1999;341:403 · 대한간학회. 간경변증 진료 가이드라인 — 복수 및 관련 합병증",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "간경변 복수 환자의 발열·복통·간성뇌증 악화에서 복수 다형핵 백혈구가 250/mm³ 이상이면 배양 결과나 그람염색 결과와 관계없이 자발성 세균성 복막염으로 진단하고 즉시 경험적 항생제(정맥 세포탁심 또는 세프트리악손)를 시작한다. 복수 총단백이 낮고(1 g/dL 미만) 포도당이 정상이며 단일 균 감염 양상이면 이차성 복막염보다 자발성 복막염에 합당하므로 개복술이나 CT 를 먼저 할 이유가 없다. 배양은 항생제 전에 채취하되 결과를 기다리지 않는다. 크레아티닌 1.4, 빌리루빈 4.2 로 콩팥 기능 악화 위험이 높아 알부민 병용도 고려한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>자발성 세균성 복막염(SBP)</b>은 복강 내 원인 병소 없이 장내 세균이 장벽을 넘어(세균 전위) 복수에 정착하는 감염이다. 간경변에서는 문맥압 항진으로 장 점막 투과성이 늘고, 망상내피계 기능과 복수의 옵소닌 활성(보체·단백)이 떨어져 세균이 복수에서 제거되지 못한다. 그래서 <b>복수 총단백이 1 g/dL 미만</b>일수록 위험이 크고, 감염되면 복수로 호중구가 몰려 <b>다형핵 백혈구 ≥ 250/mm³</b>가 진단 기준이 된다. 복수 배양은 감염 세균 농도가 낮아 절반 가까이 음성이고 그람염색은 더 둔감하므로, <b>세포 수만으로 진단하고 배양을 기다리지 않는다</b>. 원인균은 대장균·클레브시엘라·폐렴사슬알균이 대부분이라 3세대 세팔로스포린이 1차 약이다.<br> <b>왜 이차성 복막염과 갈라야 하는가</b> — 천공·농양에 의한 이차성 복막염은 항생제만으로 낫지 않고 수술이 필요하다. 이차성을 시사하는 복수 소견은 <b>총단백 &gt; 1 g/dL, 포도당 &lt; 50 mg/dL, 젖산탈수소효소가 혈청 상한보다 높음</b>, 그람염색에서 여러 균이 보임, 항생제 48시간 뒤 다형핵 백혈구가 25 % 이상 줄지 않음이다. 이 증례는 총단백 0.9, 포도당 78 로 자발성에 합당하다.<br> <b>동반 처치</b> — SBP 는 간신증후군을 유발하는 대표 사건이다. 크레아티닌 &gt; 1 mg/dL 또는 빌리루빈 &gt; 4 mg/dL 이면 1일째 알부민 1.5 g/kg, 3일째 1 g/kg 을 더해 콩팥 손상과 사망을 줄인다. 회복 뒤에는 재발 방지를 위한 예방적 항생제(노르플록사신)를 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:40%\">언제 맞는가</th><th>이 증례에서</th></tr></thead><tbody> <tr><td><b>정맥 세포탁심 즉시 투여(정답)</b></td><td><b>간경변 복수에서 복수 다형핵 백혈구 ≥ 250/mm³ — 배양 결과와 무관</b></td><td><b>620/mm³, 총단백 0.9, 포도당 78 → SBP</b></td></tr> <tr><td>배양 결과 확인 후 결정(가장 가까운 오답)</td><td>세포 수가 250 미만이고 증상이 없어 감염이 불확실할 때의 경과 관찰</td><td>배양은 절반이 음성 — 기다리면 패혈증·간신증후군 위험</td></tr> <tr><td>응급 개복술</td><td>천공·농양의 이차성 복막염(총단백 &gt; 1, 포도당 &lt; 50, 여러 균)</td><td>복수 소견이 자발성에 합당, 반동압통·강직 없음</td></tr> <tr><td>복부 CT 후 결정</td><td>이차성 복막염이 의심될 때 원인 병소 확인</td><td>항생제를 미룰 이유가 없다 — 필요하면 항생제 시작 뒤 촬영</td></tr> <tr><td>이뇨제 증량 + 락툴로오스</td><td>감염 없는 복수·간성뇌증의 조절</td><td>뇌증의 유발 요인이 감염이므로 감염 치료가 먼저, 저혈압에 이뇨제 증량은 위험</td></tr> </tbody></table> <b>가장 가까운 오답은 「배양 결과 확인 후 결정」</b>이다 — 그람염색이 음성이라 근거가 부족해 보이기 때문이다. 갈림길은 <b>복수 다형핵 백혈구 250/mm³</b>다. 이 기준을 넘으면 배양·염색과 무관하게 진단하고 즉시 치료하며, 미달이면 배양 양성이라도 증상이 없으면 세균성 복수(bacterascites)로 보고 경과를 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 이뇨제 증량과 락툴로오스는 감염이 없는 복수와 간성뇌증의 조절 치료다. 이 증례의 뇌증은 감염이 유발한 것이므로 감염 치료가 먼저이고, 혈압 96/60 에 크레아티닌이 오른 상태에서 이뇨제를 늘리면 콩팥 손상을 부른다. 감염 증거 없이 복수와 뇌증만 있었다면 락툴로오스와 이뇨제 조절이 맞다.\n③ 배양 결과를 기다리는 것은 복수 세포 수가 250/mm³ 미만이고 증상이 없어 감염이 불확실할 때의 접근이다. 자발성 세균성 복막염은 배양이 절반 가까이 음성이고 그람염색은 더 둔감해 세포 수만으로 진단하며, 치료를 미루면 패혈증과 간신증후군으로 진행한다. 복수 다형핵 백혈구가 120/mm³ 이고 열이 없었다면 배양을 보며 기다리는 이 선지가 맞다.\n④ 응급 개복술은 천공이나 농양에 의한 이차성 복막염에 필요하다. 이차성은 복수 총단백 1 g/dL 초과, 포도당 50 mg/dL 미만, 여러 균, 반동압통·근육 강직이 단서다. 이 증례는 총단백 0.9, 포도당 78 에 복막 자극 징후가 없어 자발성이다. 복수 포도당이 30, 총단백이 2.5 이고 그람염색에서 여러 균이 보였다면 수술 평가가 정답이 된다.\n⑤ 복부 CT 는 이차성 복막염이 의심될 때 천공·농양 같은 원인 병소를 찾는 검사다. 이 증례의 복수 소견은 자발성에 합당하고, 항생제를 시작한 뒤 48시간에 세포 수가 25% 이상 줄지 않으면 그때 CT 로 이차성을 찾는다. 항생제 치료에도 다형핵 백혈구가 줄지 않았다면 CT 가 다음 단계다."
+   },
+   {
+    "k": "함정",
+    "v": "「그람염색 음성」에 흔들리지 않는다. 간경변 복수에서 다형핵 백혈구 250/mm³ 이상이면 그 자체가 진단이며, 총단백·포도당으로 이차성만 가른 뒤 곧바로 3세대 세팔로스포린을 준다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 복수 환자의 발열·복통·의식 변화에서 진단적 복수천자를 시행하고, 복수 다형핵 백혈구 250/mm³ 이상이면 배양 결과를 기다리지 않고 자발성 세균성 복막염으로 진단해 3세대 세팔로스포린을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed., ch. 'Cirrhosis and its complications' — spontaneous bacterial peritonitis: diagnosis by ascitic PMN ≥ 250/µL, empirical cefotaxime, albumin · Biggins SW et al. Diagnosis, evaluation, and management of ascites, SBP and hepatorenal syndrome. AASLD guidance. Hepatology 2021;74:1014 · EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. J Hepatol 2018;69:406 · Sort P et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and SBP. N Engl J Med 1999;341:403 · 대한간학회. 간경변증 진료 가이드라인 — 복수 및 관련 합병증"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "간경변 복수 환자의 발열·복통·뇌증 악화에서 복수 다형핵 백혈구 620/mm³ 은 배양·그람염색과 무관하게 자발성 세균성 복막염이므로 즉시 정맥 세포탁심을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "복수 다형핵 백혈구 ≥ 250/mm³ 자체가 진단 기준이다 — 배양은 절반이 음성이고 그람염색은 더 둔감하므로 결과를 기다리지 않는다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "다형핵 백혈구 620/mm³",
+     "why": "250/mm³ 이상 — 자발성 세균성 복막염의 진단 기준",
+     "also": []
+    },
+    {
+     "item": "오늘 아침부터 말이 어눌해져",
+     "why": "간성뇌증 악화 — 감염이 유발 요인이라는 임상 단서",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "총단백 0.9 g/dL",
+     "why": "1 g/dL 미만 — 이차성 복막염보다 자발성에 합당, 옵소닌 결핍 배경",
+     "also": []
+    },
+    {
+     "item": "복수 포도당 78 mg/dL",
+     "why": "50 미만이 아니어서 천공에 의한 이차성 복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "반동압통과 근육 강직은 없다",
+     "why": "천공성 복막염의 복막 자극 징후가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 1.4 mg/dL",
+     "why": "1 mg/dL 초과 — 알부민 병용으로 간신증후군을 예방할 대상",
+     "also": []
+    },
+    {
+     "item": "총빌리루빈 4.2 mg/dL",
+     "why": "4 mg/dL 초과 — 알부민 병용 기준을 함께 만족",
+     "also": []
+    },
+    {
+     "item": "혈압 96/60 mmHg",
+     "why": "저혈압 — 이뇨제 증량이 위험한 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "그람염색에서 세균은 보이지 않는다",
+     "why": "SBP 의 절반 이상이 염색 음성 — 진단을 바꾸지 못하는 함정 정보",
+     "also": []
+    }
+   ],
+   "summary": "간경변 복수에 발열·복통·뇌증이 생기고 복수 다형핵 백혈구가 620/mm³ 이면 자발성 세균성 복막염이다. 총단백 0.9·포도당 78 로 이차성이 아니므로 배양을 기다리지 않고 정맥 세포탁심을 시작하고, 크레아티닌·빌리루빈 기준에 따라 알부민을 더한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "복수 총단백이 2.5 g/dL, 포도당이 30 mg/dL 이고 그람염색에서 여러 종류의 균이 보이며 반동압통이 있었다면 천공에 의한 이차성 복막염으로 보고 CT 와 수술 평가가 우선이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0083",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·이비인후과·소화기·신경·혈액종양·감염·진단검사영상판독·신장비뇨·소아·병리조직)",
+  "subtopic": "이비인후과 — 급성 중이염 합병증(꼭지돌기염)",
+  "type": "이비인후과 — 급성 중이염 합병증(꼭지돌기염)",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-21",
+  "vignette": "A 4-year-old boy is brought to the emergency department by his mother because of 2 days of swelling and pain behind his right ear. Ten days ago he was diagnosed with acute otitis media of the right ear and was treated with oral amoxicillin, which his mother stopped after 4 days when the fever resolved. He has no history of ear surgery and his immunizations are up to date. His temperature is 39.1°C, pulse is 128/min, and respirations are 24/min. Examination shows tenderness, erythema, and fluctuant swelling over the right mastoid process; the right auricle is displaced anteriorly and inferiorly. Otoscopy shows a bulging, erythematous right tympanic membrane with sagging of the posterosuperior canal wall. There is no neck stiffness, and the facial muscles move symmetrically. Laboratory studies show a leukocyte count of 19,500/mm3 with 80% neutrophils.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral amoxicillin-clavulanate and follow-up in 48 hours",
+   "Incision and drainage of the postauricular swelling in the emergency department",
+   "Lumbar puncture followed by intravenous antibiotics",
+   "Magnetic resonance venography of the head",
+   "Computed tomography of the temporal bone and intravenous antibiotics"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Postauricular erythema, tenderness, and fluctuance with anteroinferior displacement of the auricle, sagging of the posterosuperior canal wall, and persistent otitis media after incomplete antibiotic therapy are the classic signs of acute coalescent mastoiditis with a subperiosteal abscess. Contrast-enhanced CT of the temporal bone defines bony erosion, abscess, and intracranial extension, and intravenous antibiotics (for example ceftriaxone, with vancomycin added if resistant organisms are suspected) with myringotomy are started at the same time. Oral therapy is inadequate for a coalescent process; blind incision without imaging risks missing intracranial or deep-neck extension; there are no meningeal signs to justify lumbar puncture first; MR venography is reserved for suspected sigmoid sinus thrombosis after CT.\n- 원리: <b>Acute mastoiditis is a complication of acute otitis media</b>, not a separate infection. The mastoid air cells communicate with the middle ear through the aditus ad antrum, so every otitis media inflames the mastoid mucosa. When the aditus becomes obstructed by mucosal edema, purulent secretions accumulate under pressure, the bony septa between the air cells are resorbed by osteoclast activation (<b>coalescent mastoiditis</b>), and pus breaks through the lateral cortex into the subperiosteal space behind the ear. That is why the signs are <b>postauricular</b>: erythema, tenderness, fluctuance, and displacement of the auricle anteriorly and inferiorly. Sagging of the posterosuperior external canal wall reflects the same periosteal reaction on the inner side. Inadequate or interrupted antibiotic courses and the most virulent otitis pathogens (<i>Streptococcus pneumoniae</i>, <i>Streptococcus pyogenes</i>, <i>Staphylococcus aureus</i>) are the usual setting.<br> <b>Why CT and intravenous therapy come first</b> — clinical examination cannot tell whether the pus is confined to the mastoid, has formed a subperiosteal abscess, or has extended into the cranium (epidural abscess, sigmoid sinus thrombosis, meningitis) or down the neck (Bezold abscess). Contrast CT of the temporal bone shows loss of the air-cell septa, cortical erosion, and rim-enhancing collections, and it decides between medical management with myringotomy and mastoidectomy. Intravenous antibiotics are begun immediately because the process is osteitic and oral drugs no longer reach it reliably.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Temporal bone CT + IV antibiotics (answer)</b></td><td><b>Postauricular swelling and auricular displacement after otitis media — coalescent mastoiditis</b></td><td><b>Fits the presentation</b></td></tr> <tr><td>Oral amoxicillin-clavulanate and 48-h follow-up (closest distractor)</td><td>Uncomplicated acute otitis media that failed first-line amoxicillin, without postauricular signs</td><td>Fluctuant postauricular swelling and auricular displacement mean the infection has left the middle ear</td></tr> <tr><td>Bedside incision and drainage</td><td>A superficial abscess with no possible deep or intracranial extension</td><td>The abscess is subperiosteal over eroded bone; imaging must first exclude intracranial or deep-neck spread</td></tr> <tr><td>Lumbar puncture first</td><td>Meningeal signs, altered consciousness, or seizures suggesting meningitis</td><td>No neck stiffness; a mass lesion must be excluded by CT before any puncture anyway</td></tr> <tr><td>MR venography</td><td>Suspected sigmoid sinus thrombosis — headache, papilledema, or CT showing the sinus</td><td>Second-line study after CT; it does not guide the immediate antibiotic decision</td></tr> </tbody></table> The <b>closest distractor is oral amoxicillin-clavulanate</b>, because a child who failed amoxicillin ordinarily steps up to the clavulanate combination. The dividing line is <b>whether the infection is still confined to the middle ear</b>: postauricular fluctuance and displacement of the auricle mean the bone has been breached, and that is treated with imaging plus intravenous therapy, never with another oral course.\n- 오답 이유:\n  - (A) Oral amoxicillin-clavulanate is the correct step-up for uncomplicated acute otitis media that fails amoxicillin, and it is tempting because the boy did fail amoxicillin. But postauricular fluctuance with anterior displacement of the auricle means coalescent mastoiditis, which is osteitic and needs intravenous therapy. Had the child had only a persistent bulging drum without postauricular signs, this option would be correct.\n  - (B) Incision and drainage will eventually be needed for a subperiosteal abscess, but performing it blindly in the emergency department before imaging risks overlooking intracranial extension, sigmoid sinus thrombosis, or a Bezold abscess and is usually done in the operating room with a cortical mastoidectomy. If CT had already shown an isolated subperiosteal collection without intracranial spread, surgical drainage would be the next step.\n  - (C) Lumbar puncture is indicated when meningitis is suspected — neck stiffness, altered consciousness, or seizures — and even then a mass lesion must be excluded first. This child has no meningeal signs, and puncture would delay the imaging and antibiotics that the mastoid process requires. If he had presented with neck stiffness and lethargy after CT excluded a mass, lumbar puncture followed by antibiotics would be appropriate.\n  - (D) MR venography evaluates lateral (sigmoid) sinus thrombosis, a complication of mastoiditis that presents with headache, papilledema, or a 'picket-fence' fever. It is a second-line study chosen after CT raises the suspicion and does not replace the immediate need for antibiotics. If the CT had shown a filling defect in the sigmoid sinus or the child had papilledema, MR venography would be the next test.\n- 함정: Do not treat a child who 'failed amoxicillin' as a simple treatment failure. Look behind the ear: postauricular swelling and displacement of the auricle mean mastoiditis, which needs CT and intravenous antibiotics, not another oral course.\n- 학습목표: 급성 중이염 치료 중 귀 뒤 부기·통증·귓바퀴 전방 전위가 생기면 급성 꼭지돌기염을 인지하고, 측두골 CT 로 골파괴·농양을 확인한 뒤 정맥 항생제와 고막절개를 시작한다\n- 근거·출처: Cummings Otolaryngology–Head and Neck Surgery, 7th ed., ch. 'Acute otitis media and otitis media with effusion' and 'Complications of temporal bone infections' — coalescent mastoiditis, subperiosteal abscess · Lieberthal AS et al. The diagnosis and management of acute otitis media. AAP clinical practice guideline. Pediatrics 2013;131:e964 · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Otitis media' — mastoiditis, indications for imaging and intravenous therapy · Bailey's Head and Neck Surgery–Otolaryngology, 6th ed., ch. 'Chronic otitis media, mastoiditis, and complications'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Postauricular erythema, tenderness, and fluctuance with anteroinferior displacement of the auricle, sagging of the posterosuperior canal wall, and persistent otitis media after incomplete antibiotic therapy are the classic signs of acute coalescent mastoiditis with a subperiosteal abscess. Contrast-enhanced CT of the temporal bone defines bony erosion, abscess, and intracranial extension, and intravenous antibiotics (for example ceftriaxone, with vancomycin added if resistant organisms are suspected) with myringotomy are started at the same time. Oral therapy is inadequate for a coalescent process; blind incision without imaging risks missing intracranial or deep-neck extension; there are no meningeal signs to justify lumbar puncture first; MR venography is reserved for suspected sigmoid sinus thrombosis after CT."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Acute mastoiditis is a complication of acute otitis media</b>, not a separate infection. The mastoid air cells communicate with the middle ear through the aditus ad antrum, so every otitis media inflames the mastoid mucosa. When the aditus becomes obstructed by mucosal edema, purulent secretions accumulate under pressure, the bony septa between the air cells are resorbed by osteoclast activation (<b>coalescent mastoiditis</b>), and pus breaks through the lateral cortex into the subperiosteal space behind the ear. That is why the signs are <b>postauricular</b>: erythema, tenderness, fluctuance, and displacement of the auricle anteriorly and inferiorly. Sagging of the posterosuperior external canal wall reflects the same periosteal reaction on the inner side. Inadequate or interrupted antibiotic courses and the most virulent otitis pathogens (<i>Streptococcus pneumoniae</i>, <i>Streptococcus pyogenes</i>, <i>Staphylococcus aureus</i>) are the usual setting.<br> <b>Why CT and intravenous therapy come first</b> — clinical examination cannot tell whether the pus is confined to the mastoid, has formed a subperiosteal abscess, or has extended into the cranium (epidural abscess, sigmoid sinus thrombosis, meningitis) or down the neck (Bezold abscess). Contrast CT of the temporal bone shows loss of the air-cell septa, cortical erosion, and rim-enhancing collections, and it decides between medical management with myringotomy and mastoidectomy. Intravenous antibiotics are begun immediately because the process is osteitic and oral drugs no longer reach it reliably."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Temporal bone CT + IV antibiotics (answer)</b></td><td><b>Postauricular swelling and auricular displacement after otitis media — coalescent mastoiditis</b></td><td><b>Fits the presentation</b></td></tr> <tr><td>Oral amoxicillin-clavulanate and 48-h follow-up (closest distractor)</td><td>Uncomplicated acute otitis media that failed first-line amoxicillin, without postauricular signs</td><td>Fluctuant postauricular swelling and auricular displacement mean the infection has left the middle ear</td></tr> <tr><td>Bedside incision and drainage</td><td>A superficial abscess with no possible deep or intracranial extension</td><td>The abscess is subperiosteal over eroded bone; imaging must first exclude intracranial or deep-neck spread</td></tr> <tr><td>Lumbar puncture first</td><td>Meningeal signs, altered consciousness, or seizures suggesting meningitis</td><td>No neck stiffness; a mass lesion must be excluded by CT before any puncture anyway</td></tr> <tr><td>MR venography</td><td>Suspected sigmoid sinus thrombosis — headache, papilledema, or CT showing the sinus</td><td>Second-line study after CT; it does not guide the immediate antibiotic decision</td></tr> </tbody></table> The <b>closest distractor is oral amoxicillin-clavulanate</b>, because a child who failed amoxicillin ordinarily steps up to the clavulanate combination. The dividing line is <b>whether the infection is still confined to the middle ear</b>: postauricular fluctuance and displacement of the auricle mean the bone has been breached, and that is treated with imaging plus intravenous therapy, never with another oral course."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral amoxicillin-clavulanate is the correct step-up for uncomplicated acute otitis media that fails amoxicillin, and it is tempting because the boy did fail amoxicillin. But postauricular fluctuance with anterior displacement of the auricle means coalescent mastoiditis, which is osteitic and needs intravenous therapy. Had the child had only a persistent bulging drum without postauricular signs, this option would be correct.\n(B) Incision and drainage will eventually be needed for a subperiosteal abscess, but performing it blindly in the emergency department before imaging risks overlooking intracranial extension, sigmoid sinus thrombosis, or a Bezold abscess and is usually done in the operating room with a cortical mastoidectomy. If CT had already shown an isolated subperiosteal collection without intracranial spread, surgical drainage would be the next step.\n(C) Lumbar puncture is indicated when meningitis is suspected — neck stiffness, altered consciousness, or seizures — and even then a mass lesion must be excluded first. This child has no meningeal signs, and puncture would delay the imaging and antibiotics that the mastoid process requires. If he had presented with neck stiffness and lethargy after CT excluded a mass, lumbar puncture followed by antibiotics would be appropriate.\n(D) MR venography evaluates lateral (sigmoid) sinus thrombosis, a complication of mastoiditis that presents with headache, papilledema, or a 'picket-fence' fever. It is a second-line study chosen after CT raises the suspicion and does not replace the immediate need for antibiotics. If the CT had shown a filling defect in the sigmoid sinus or the child had papilledema, MR venography would be the next test."
+   },
+   {
+    "k": "함정",
+    "v": "Do not treat a child who 'failed amoxicillin' as a simple treatment failure. Look behind the ear: postauricular swelling and displacement of the auricle mean mastoiditis, which needs CT and intravenous antibiotics, not another oral course."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 중이염 치료 중 귀 뒤 부기·통증·귓바퀴 전방 전위가 생기면 급성 꼭지돌기염을 인지하고, 측두골 CT 로 골파괴·농양을 확인한 뒤 정맥 항생제와 고막절개를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cummings Otolaryngology–Head and Neck Surgery, 7th ed., ch. 'Acute otitis media and otitis media with effusion' and 'Complications of temporal bone infections' — coalescent mastoiditis, subperiosteal abscess · Lieberthal AS et al. The diagnosis and management of acute otitis media. AAP clinical practice guideline. Pediatrics 2013;131:e964 · Nelson Textbook of Pediatrics, 22nd ed., ch. 'Otitis media' — mastoiditis, indications for imaging and intravenous therapy · Bailey's Head and Neck Surgery–Otolaryngology, 6th ed., ch. 'Chronic otitis media, mastoiditis, and complications'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Postauricular fluctuant swelling with anteroinferior auricular displacement after incompletely treated otitis media is coalescent mastoiditis and needs temporal bone CT with intravenous antibiotics",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "Fluctuant postauricular swelling and displacement of the auricle — the infection has breached the mastoid cortex, so oral step-up therapy for otitis media no longer applies",
+   "steps": 2,
+   "key": [
+    {
+     "item": "tenderness, erythema, and fluctuant swelling over the right mastoid process",
+     "why": "Subperiosteal abscess from coalescent mastoiditis",
+     "also": []
+    },
+    {
+     "item": "the right auricle is displaced anteriorly and inferiorly",
+     "why": "Classic sign that pus has broken through the lateral mastoid cortex",
+     "also": []
+    },
+    {
+     "item": "sagging of the posterosuperior canal wall",
+     "why": "Periosteal reaction on the canal side of the mastoid — confirms the process is in bone",
+     "also": []
+    },
+    {
+     "item": "oral amoxicillin, which his mother stopped after 4 days",
+     "why": "Incomplete therapy is the usual setting for coalescent mastoiditis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no neck stiffness",
+     "why": "No meningeal signs, so lumbar puncture is not the first step",
+     "also": []
+    },
+    {
+     "item": "the facial muscles move symmetrically",
+     "why": "No facial nerve involvement yet — no need for emergency decompression before imaging",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "leukocyte count of 19,500/mm3 with 80% neutrophils",
+     "why": "Supports a suppurative bacterial process needing intravenous therapy",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "his immunizations are up to date",
+     "why": "Lowers but does not exclude pneumococcal disease; does not change the next step",
+     "also": []
+    },
+    {
+     "item": "4-year-old boy",
+     "why": "Peak age of acute otitis media and its complications",
+     "also": []
+    }
+   ],
+   "summary": "Fluctuant postauricular swelling with auricular displacement after an interrupted amoxicillin course is coalescent mastoiditis with a subperiosteal abscess; temporal bone CT to map bony erosion and intracranial spread is obtained while intravenous antibiotics are started.",
+   "switch": {
+    "choice": "A",
+    "condition": "If the child had a persistent bulging tympanic membrane and fever after 3 days of amoxicillin but no postauricular swelling or auricular displacement, oral amoxicillin-clavulanate with 48-hour follow-up would be correct"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260921T202011Z_일일영상_2026-09-22_10units_10q_10322b00",
+  "qid": "Q0002"
+ },
+ {
   "id": "imaging-2026-0079",
   "exam": "imaging",
   "style": "kmle_style",
