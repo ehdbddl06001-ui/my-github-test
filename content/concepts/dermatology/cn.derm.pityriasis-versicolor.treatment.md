@@ -25,7 +25,7 @@ criteria:
     name: 1차 치료
     kind: 치료 권고
     population: "국한된 어루러기"
-    statement: "국소 항진균제(케토코나졸 등 아졸, 징크 피리치온, 테르비나핀 국소제)가 1차"
+    statement: "국소 항진균제(케토코나졸 등 아졸, 징크 피리치온, 테르비나핀 국소제)가 1차 — 해리슨도 셀레늄 설파이드·아졸 국소제를 1–2주 매일, 이후 주 1회로 제시한다 [[harrison-21: 57장 p.381]]"
     exceptions: "광범위·재발·국소 치료 실패는 경구 아졸 고려"
     source: gupta-2015
     basis: current
@@ -34,7 +34,7 @@ criteria:
     name: 경구 치료
     kind: 치료 권고
     population: "중증·난치 어루러기"
-    statement: "경구 이트라코나졸 또는 플루코나졸. 경구 테르비나핀은 효과가 없고 경구 케토코나졸은 더 이상 처방하지 않는다"
+    statement: "경구 이트라코나졸 또는 플루코나졸. 경구 테르비나핀은 효과가 없고 경구 케토코나졸은 간독성으로 더 이상 1차로 쓰지 않는다 [[harrison-21: 57장 p.380–381]]. 해리슨은 경구제가 효과는 있으나 오래가지 않는다고 적는다 [[harrison-21: 57장 p.381]]"
     exceptions: "용량·기간은 이 정리본에서 대조하지 않았다(검토 항목)"
     source: gupta-2015
     basis: current
@@ -49,6 +49,15 @@ criteria:
     basis: current
     exams: [kmle, usmle]
 sources:
+  - id: harrison-21
+    org: "McGraw Hill"
+    title: "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 57: Eczema, Psoriasis, Cutaneous Infections, Acne, and Other Common Skin Disorders"
+    kind: textbook
+    year: 2022
+    citation: "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 57장 p.380–381 (Table 57-5 · Tinea (Pityriasis) Versicolor)"
+    checked_at: 2026-09-22
+    checked: "본문 대조(PC, 드라이브 원본 PDF 57장 p.380–381) — 원인 Malassezia furfur(피부 상재균, 고온다습에서 발현) · 가슴·어깨·등의 인설 반, 피부색에 따라 저·과색소 · KOH 에서 짧은 균사+둥근 포자(spaghetti and meatballs) · 치료는 국소 셀레늄 설파이드·아졸(유황·살리실산·셀레늄 설파이드 로션/샴푸 1–2주 매일 뒤 주 1회), 10분 넘게 두면 자극 · 경구 항진균제도 효과는 있으나 효과가 오래가지 않고 FDA 적응증이 아니다 · 경구 케토코나졸은 간독성으로 FDA 가 1차 사용을 제한. 색소 회복 기간·경구 이트라코나졸/플루코나졸 용량은 해리슨에 없다"
+    verified: text
   - id: gupta-2015
     org: "Gupta AK, Foley KA (체계적 문헌고찰)"
     title: "Antifungal treatment for pityriasis versicolor"

@@ -12,6 +12,7 @@
   python pipelines/outline.py --book 순환기내과    # 그 과의 순서와 「작성됨/대기」
   python pipelines/outline.py --gaps [--book …]    # 아직 정리본이 없는 슬롯(커리큘럼 빈칸)
   python pipelines/outline.py --find "long QT"     # 슬롯·해리슨 장 제목에서 찾기(PDF 를 열지 않는다)
+  python pipelines/outline.py --harrison h57       # 대조할 해리슨 장 · 인쇄쪽 · 드라이브 문서 ID(루틴용)
 """
 from __future__ import annotations
 
@@ -151,17 +152,46 @@ def written(concepts: dict) -> dict[str, list[str]]:
     return out
 
 
+DRIVE_IDS = ROOT / "content" / "outline" / "harrison_drive.json"
+
+
+def harrison_targets(slot_id: str, books: dict[str, list[Slot]]) -> int:
+    """대조할 장을 알려 준다. 드라이브에 장별 문서가 있으면 그 ID(루틴이 Google Drive 커넥터로 그것만 읽는다)."""
+    s = index(books).get(slot_id)
+    if not s:
+        print(f"슬롯 {slot_id} 가 기본틀에 없다")
+        return 1
+    if not s.chapters:
+        print(f"{slot_id} 는 해리슨이 다루지 않는 자리다 — 해리슨 대조 대상 아님(다른 출처로 근거를 단다)")
+        return 0
+    toc = load_toc()
+    ids = {}
+    if DRIVE_IDS.exists():
+        ids = json.loads(DRIVE_IDS.read_text(encoding="utf-8")).get("chapters", {})
+    for n in s.chapters:
+        c = toc[n]
+        offset = c["pdf"] - c["page"]
+        doc = ids.get(str(n))
+        where = (f"드라이브 문서 {doc} (Google Drive read_file_content)" if doc
+                 else "드라이브 문서 없음 — PC 에서 `python pipelines/harrison_read.py --chapter %d` 로 대조" % n)
+        print(f"해리슨 21판 {n}장 {c['title']} · 인쇄쪽 {c['page']}~{c['pdf_end'] - offset} · {where}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--book")
     ap.add_argument("--gaps", action="store_true", help="정리본이 없는 슬롯만")
     ap.add_argument("--find", help="슬롯·해리슨 장 제목 검색")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--harrison", metavar="SLOT", help="그 슬롯을 대조할 해리슨 장·쪽·드라이브 문서 ID")
     a = ap.parse_args(argv)
 
     books, errs = load()
     for e in errs:
         print("  ✗", e)
+    if a.harrison:
+        return harrison_targets(a.harrison, books)
     try:
         sys.path.insert(0, str(ROOT / "pipelines"))
         from concepts import load_concepts

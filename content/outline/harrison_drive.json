@@ -1,0 +1,10 @@
+{
+ "note": "해리슨 21판 장별 텍스트(사용자 드라이브의 Google 문서, 비공개). 루틴은 Google Drive 커넥터 read_file_content 로 그 장만 읽는다. `===== [H21 p.N] =====` 뒤가 인쇄쪽 N 의 본문이다.",
+ "folder": "내 드라이브/교과서/Harrison_21e_장별",
+ "parent_folder_id": "13w6B2aVzC2reEIUr9ScqdYunb_aCjdIn",
+ "chapters": {
+  "53": "1Oz0xgduQotglS1JV4WTQrvjCgUv4hp1h2lSVwEZ2Ocs",
+  "57": "1gWjaZtQJdXf2EMnZEJPmm5QT8uHA9IK-9r4ogcbM5yo",
+  "255": "1xBOkkAfoUt061Ff7hjZxxuPF_jhQFzj_HohrECpQRhI"
+ }
+}
