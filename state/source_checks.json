@@ -21,7 +21,7 @@
   "checked_at": "2026-09-22",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1016/j.jaad.2019.04.042": {
   "concepts": [
@@ -33,7 +33,7 @@
   "checked_at": "2026-09-22",
   "baseline": "[\"ErratumIn:31948783\"]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1016/j.jaad.2020.02.044": {
   "concepts": [
@@ -51,7 +51,7 @@
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "기준 지문과 같음 · 2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -64,10 +64,10 @@
   "title": "2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-21",
+  "checked_at": "2026-09-22",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1093/eurheartj/eht089": {
@@ -76,8 +76,8 @@
   ],
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
-  "checked_at": "2026-09-21",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "checked_at": "2026-09-22",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -89,8 +89,8 @@
   ],
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
   "status": "ok",
-  "checked_at": "2026-09-21",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "checked_at": "2026-09-22",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
   "baseline": "[\"ErratumIn:30354425\"]",
@@ -103,10 +103,10 @@
   "title": "Febrile seizures: clinical practice guideline for the long-term management of the child with simple febrile seizures",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-21",
+  "checked_at": "2026-09-22",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
@@ -131,7 +131,8 @@
   "checked_at": "2026-09-22",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음"
+  "note": "기준 지문과 같음 · 2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "fitzpatrick-9e": {
   "concepts": [
@@ -143,7 +144,7 @@
   "checked_at": "2026-09-22",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "harrison-21": {
   "concepts": [

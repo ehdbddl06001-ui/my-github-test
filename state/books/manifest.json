@@ -1,12 +1,12 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "adb4cff470f5f10a3f79",
-   "version": 3,
-   "date": "2026-09-21",
+   "hash": "efdbc011394180ce2a5c",
+   "version": 4,
+   "date": "2026-09-22",
    "file": "MedKOS_학습서_순환기내과.pdf",
    "pages": 6,
-   "template_version": 6,
+   "template_version": 7,
    "units": {
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지",
@@ -17,14 +17,15 @@
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "8b5d59f8e5d6a40d19647f012ca0831b",
-    "version": 3,
-    "uploaded": "2026-09-21T08:16:35+09:00"
+    "md5": "eeb3d75a260a05afb6e9d90d25c34708",
+    "version": 4,
+    "uploaded": "2026-09-22T20:53:16+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
     "MedKOS_학습서_순환기내과_v2_2026-09-21.pdf",
-    "MedKOS_학습서_순환기내과_v3_2026-09-21.pdf"
+    "MedKOS_학습서_순환기내과_v3_2026-09-21.pdf",
+    "MedKOS_학습서_순환기내과_v4_2026-09-22.pdf"
    ],
    "changes": []
   },
@@ -53,6 +54,58 @@
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf"
    ],
    "changes": []
+  },
+  "신장내과": {
+   "hash": "3688e78f30cce471b0bc",
+   "version": 1,
+   "date": "2026-09-22",
+   "file": "MedKOS_학습서_신장내과.pdf",
+   "pages": 6,
+   "template_version": 7,
+   "units": {
+    "cn.neph.hyperkalemia.first-step": {
+     "title": "고칼륨혈증 — 생리에서 첫 처치·재평가까지",
+     "page": 1,
+     "concept_hash": "b5ad717be57d4ab8",
+     "concept_version": 2
+    }
+   },
+   "drive": {
+    "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
+    "md5": "6e496f0edbf331a7919874f101cfef1d",
+    "version": 1,
+    "uploaded": "2026-09-22T20:53:16+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_신장내과_v1_2026-09-22.pdf"
+   ],
+   "changes": []
+  },
+  "소아청소년과": {
+   "hash": "41ae7aed84c4ea96d089",
+   "version": 1,
+   "date": "2026-09-22",
+   "file": "MedKOS_학습서_소아청소년과.pdf",
+   "pages": 3,
+   "template_version": 7,
+   "units": {
+    "cn.peds.febrile-seizure.workup": {
+     "title": "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우",
+     "page": 1,
+     "concept_hash": "3ae22017a7d1b1c0",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
+    "md5": "628d93d7cd23241d33af409c6317f1f9",
+    "version": 1,
+    "uploaded": "2026-09-22T20:53:16+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf"
+   ],
+   "changes": []
   }
  },
  "index": {
@@ -60,9 +113,9 @@
   "date": "2026-09-22",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "60afae25e881e9c017a1d1eae5b45deb",
+   "md5": "865f212579a10562546a6c6647638932",
    "version": null,
-   "uploaded": "2026-09-22T09:12:56+09:00"
+   "uploaded": "2026-09-22T20:53:16+09:00"
   }
  },
  "updated": "2026-09-22"
