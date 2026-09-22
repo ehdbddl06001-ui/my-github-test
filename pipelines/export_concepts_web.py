@@ -46,6 +46,15 @@ def _web(s, c: dict) -> str:
     return render_cites(re.sub(r"\*\*(.+?)\*\*", lambda m: f"<b>{m.group(1)}</b>", html.escape(str(s or ""), quote=False)), c, "web")
 
 
+def blocking(errs: list[str]) -> list[str]:
+    """[WARN] 이 아닌 것만 — concepts.py 의 CLI 와 같은 기준이다.
+
+    2026-09-23 실측: 해리슨 대조 없음 [WARN](클라우드 루틴은 드라이브를 못 읽어 정상적으로 남는다)을
+    오류로 세어 exit 1 → publish.py 가 그날 문항 32개까지 통째로 못 올렸다. WARN 은 보고만 하고 막지 않는다.
+    """
+    return [e for e in errs if "[WARN]" not in e]
+
+
 def build() -> tuple[dict, list[str]]:
     concepts, errors = load_concepts()
     links = linked_questions(load_questions())
@@ -77,7 +86,7 @@ def build() -> tuple[dict, list[str]]:
             "geo": c.get("geo"),
             "steps": dd.text_steps(spec) if c.get("geo") else [],
             "questions": links.get(cid, []),
-            "hasErrors": bool(c["errors"]),
+            "hasErrors": bool(blocking(c["errors"])),
         }
     return out, errors
 
@@ -85,7 +94,7 @@ def build() -> tuple[dict, list[str]]:
 def main() -> int:
     data, errors = build()
     for e in errors:
-        print("  ✗", e)
+        print("  ⚠" if "[WARN]" in e else "  ✗", e)
     OUT.write_text(
         "// 자동 생성 파일 — 수정하지 마세요.\n"
         "// 원본: content/concepts/**/*.md  →  `python pipelines/export_concepts_web.py`로 재생성\n"
@@ -93,7 +102,7 @@ def main() -> int:
         encoding="utf-8", newline="\n",
     )
     print(f"생성: {OUT.relative_to(ROOT)} ({len(data)}개 정리본)")
-    return 1 if errors else 0
+    return 1 if blocking(errors) else 0
 
 
 if __name__ == "__main__":

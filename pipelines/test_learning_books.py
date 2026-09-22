@@ -629,6 +629,13 @@ class OutlineFrame(unittest.TestCase):
         peds = copy.deepcopy(base["cn.peds.febrile-seizure.workup"])                  # 손 슬롯 — 해리슨 대상 아님
         self.assertFalse([e for e in C.validate_concept(peds) if "해리슨 대조 없음" in e])
 
+    def test_export_warns_do_not_block_publish(self):
+        # 2026-09-23 실측: 해리슨 대조 없음 [WARN] 하나가 export_concepts_web 을 exit 1 로 만들어
+        # publish.py 가 그날 문항 32개까지 통째로 못 올렸다. WARN 은 보고만, ERROR 만 막는다(concepts.py CLI 와 동일).
+        import export_concepts_web as ex
+        self.assertEqual(ex.blocking(["a.md: [WARN] 해리슨 대조 없음 — …", "b.md: [WARN] outline 없음"]), [])
+        self.assertEqual(ex.blocking(["a.md: [WARN] x", "b.md: sources 가 비어 있다"]), ["b.md: sources 가 비어 있다"])
+
     def test_new_confusion_on_existing_note_is_a_touch_not_a_new_note(self):
         base, _ = C.load_concepts()
         c = base["cn.cardio.long-qt-syndrome.first-line-drug"]
