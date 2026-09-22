@@ -123,7 +123,7 @@ function wrongIds() {
 
 /* ---------- 오답 동기화(/api/wrong) ---------- */
 const SYNC = {
-  url: "api/wrong",
+  url: (window.MEDKOS_API_BASE || "") + "api/wrong",   // 옛 GitHub Pages 주소면 Cloudflare 서버로(learn.js)
   available: null,          // null=미확인, true/false
   timer: null,
   busy: false,

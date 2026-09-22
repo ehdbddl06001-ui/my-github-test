@@ -1,3 +1,5 @@
+/* 동기화 서버 주소 — 같은 주소면 상대경로, 옛 GitHub Pages 주소면 Cloudflare 주소(2026-09-22). */
+var API_BASE = window.MEDKOS_API_BASE = /\.github\.io$/.test(location.hostname) ? "https://my-github-test.pages.dev/" : "";
 /* MedKOS 오답 뒤 학습 흐름 — 순수 JS, 의존성 없음 (app.js 의 $·escapeHtml·label·sanitizeHtml·openZoom 을 쓴다)
 
    흐름(강요하지 않음 — 훑고 넘어가도, 깊게 봐도, 저장만 하고 계속 풀어도 된다):
@@ -550,12 +552,14 @@ const LEARN = (() => {
   }
 
   /* ---------- 동기화(/api/learning — 있으면) ---------- */
+  // 옛 주소(GitHub Pages)에는 동기화 서버가 없다 — 그 주소에서 연 앱(예: 예전에 설치한 아이패드 홈 화면 앱)은
+  // Cloudflare 주소의 /api 를 직접 부른다(서버 쪽 functions/api/_middleware.js 가 그 출처만 CORS 허용, 2026-09-22).
   // 2026-09-22: 예전에는 첫 전송이 한 번만 실패해도(잠깐 오프라인·서버 일시 오류) 그 세션 내내 다시 보내지 않았다.
   // 핸드폰 앱은 하루 종일 백그라운드에 살아 있어서 그날 기록이 통째로 저장소에 안 올라갔다.
   // 이제 「함수가 없는 호스트」(404·405·501·JSON 아님)만 포기하고, 나머지 실패는 간격을 늘려 다시 시도하며
   // 앱으로 돌아올 때·온라인이 될 때·「지금 동기화」를 누를 때도 보낸다. 서버는 eid 합집합이라 여러 번 보내도 안전하다.
   let syncTimer = null;
-  const LSYNC = { url: "api/learning", available: null, busy: false, fails: 0, lastOk: "", lastError: "" };
+  const LSYNC = { url: API_BASE + "api/learning", available: null, busy: false, fails: 0, lastOk: "", lastError: "" };
   function scheduleLearnSync(delay) {
     if (LSYNC.available === false) return;
     clearTimeout(syncTimer);
