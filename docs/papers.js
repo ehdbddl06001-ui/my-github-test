@@ -2,6 +2,100 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0643",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Combined Small Treatment Zone Orthokeratology and Alternate-Day 0.01% Atropine for Axial Elongation Control in Rapidly Progressing Myopic Children",
+  "authors": [
+   "Xu Mengying",
+   "Jing Lili",
+   "Zhao Lianghui",
+   "Xiu Yanyan",
+   "Du Xianli"
+  ],
+  "journal": "Translational vision science & technology",
+  "doi": "10.1167/tvst.15.9.13",
+  "pmid": "42770659",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42770659/",
+  "pubdate": "2026-09-01",
+  "date": "2026-09-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**PURPOSE:** To evaluate the efficacy of small treatment zone (STZ) orthokeratology (ortho-K) combined with alternate-day 0.01% atropine to control axial elongation in rapidly progressing myopic children and identify associated optical predictors.\n\n**METHODS:** This prospective randomized study included 105 children ages 8 to 12 years with axial elongation ≥0.20 mm during the initial 6 months of STZ ortho-K wear, assigned to ortho-K plus alternate-day 0.01% atropine (AOK) or ortho-K alone (OK) for 12 months. The primary outcome was axial length (AL) elongation. Other outcomes included pupil diameter (PD), intraocular pressure, visual quality, and adverse events. In the AOK group, corneal higher-order aberrations (HOAs) and pupil-zone defocus were assessed before and after atropine therapy.\n\n**RESULTS:** AL elongation was lower in the AOK group than in the OK group at 3, 6, and 12 months (0.03 ± 0.06 vs. 0.09 ± 0.04; 0.09 ± 0.08 vs. 0.18 ± 0.07; and 0.20 ± 0.12 vs. 0.33 ± 0.09 mm, respectively; all P < 0.05). At 3 months, corneal HOAs and pupil-zone defocus increased in the AOK group (all P < 0.05). In AOK, multivariable regression identified baseline age, PD, and total pupil-zone defocus as independent predictors of 1-year AL elongation. Mild photophobia occurred in two participants, with no serious adverse events.\n\n**CONCLUSIONS:** Compared with STZ ortho-K alone, adding alternate-day 0.01% atropine further reduced axial elongation in rapidly progressing myopic children, with response associated with age and pupil-related optical factors, including PD and pupil-zone defocus.\n\n**TRANSLATIONAL RELEVANCE:** Optimized lens design and atropine dosing may support precision optical-pharmacologic myopia control.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0642",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "Bilateral Intraocular Natural Killer/T-Cell Lymphoma",
+  "authors": [
+   "Xiao Xingyu",
+   "Dai Rongping"
+  ],
+  "journal": "Ophthalmology",
+  "doi": "10.1016/j.ophtha.2026.08.002",
+  "pmid": "42770917",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42770917/",
+  "pubdate": "2026-09-22",
+  "date": "2026-09-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0641",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Medical Assistance in Dying in Patients With Destination-Therapy Left Ventricular Assist Devices",
+  "authors": [
+   "Carverhill Jacqueline",
+   "Bertelli Michele",
+   "Kiamanesh Omid"
+  ],
+  "journal": "JACC. Case reports",
+  "doi": "10.1016/j.jaccas.2026.110390",
+  "pmid": "42770934",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42770934/",
+  "pubdate": "2026-09-22",
+  "date": "2026-09-22",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Published experience with medical assistance in dying (MAiD) in patients receiving durable left ventricular assist device (LVAD) support is limited, with no prior Canadian reports.\n\n**CASE SUMMARY:** Two male patients with destination-therapy LVADs received clinician-administered MAiD. One had refractory transfusion-dependent gastrointestinal bleeding and died in a community hospice; the other had refractory pain, anxiety, and existential suffering and died on an acute care ward. In both cases, intravenous medications were administered while the LVAD remained active, and the device was deactivated after unconsciousness and apnea were confirmed. No procedural complications occurred.\n\n**DISCUSSION:** These cases describe a practical approach to coordinating MAiD with LVAD deactivation in hospital and hospice settings. The process required advance agreement among the LVAD team, MAiD provider, and palliative care team regarding medication sequencing, responsibility for device deactivation, and anticipated alarms.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0640",
   "topic": "Surgery",
   "subtopic": "",
