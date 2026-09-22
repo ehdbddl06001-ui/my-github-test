@@ -559,11 +559,101 @@ function renderTriage(q) {
     + review + "</div>";
 }
 
+// 부록 「가이드라인」 글을 표로 — 원본은 여러 모양으로 쓰여 있다(2026-09-22, 295문항 조사).
+//   목록형: 제목 / 「- 항목: 내용」 / 「· 하위」 / 「각주: …」        → 항목 | 내용 표
+//   정렬형: 제목 / ───── / 「조건   : 처치」(들여쓴 다음 줄은 이어짐) / 「† ‡ ※」 주석
+//   결정표: 「상황 → 진단 → 검사」 줄들                                → 화살표 단계마다 한 칸
+//   마크다운 표: 「| 지표 | 정의 |」 + 「|---|」                       → 머리행이 있는 표
+// 읽어 내지 못하면 예전처럼 글 그대로(<pre>). 모든 글은 escapeHtml 을 거친다(**굵게**만 허용).
+function guideTableHtml(raw) {
+  const text = String(raw || "").replace(/\r/g, "").trim();
+  if (!text) return "";
+  const inline = (t) => escapeHtml(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+  const RULE = /^[─━═\-=_]{3,}\s*$/;
+  const NOTE = /^(각주\s*[:：]?|[†‡§¶※*]+)\s*/;
+  const PIPE = /^\|.*\|\s*$/;
+  const splitKV = (t) => {
+    if (/→/.test(t.split(/[:：]/)[0])) return null;                   // 화살표가 콜론보다 먼저면 결정표 줄
+    const m = t.match(/^([^:：]{1,28}?)\s*[:：]\s*(.+)$/);
+    if (!m) return null;
+    const k = m[1].replace(/\s{2,}/g, " ").trim(), v = m[2].trim();
+    if (!k || !v || (/\d$/.test(k) && /^\d/.test(v))) return null;     // 1:1 같은 비율은 나누지 않는다
+    return [k, v];
+  };
+  const cellsOf = (row) => row.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+  const blocks = [], notes = [];
+  const push = (type, row) => {
+    const last = blocks[blocks.length - 1];
+    if (last && last.type === type) last.rows.push(row); else blocks.push({ type, rows: [row] });
+  };
+  const lastRow = () => { const b = blocks[blocks.length - 1]; return b && b.type === "kv" ? b.rows[b.rows.length - 1] : null; };
+  const lines = text.split("\n");
+  let caption = "", i = 0;
+  const first = lines[0].trim();
+  if (first && !RULE.test(first) && !PIPE.test(first) && !/^[-•·ㆍ]\s/.test(first) && !NOTE.test(first)
+      && !splitKV(first) && !/→/.test(first)) { caption = first; i = 1; }
+  for (; i < lines.length; i++) {
+    const line = lines[i].replace(/\s+$/, "");
+    const t = line.trim();
+    if (!t || RULE.test(t)) continue;
+    if (PIPE.test(t)) {                                              // 마크다운 표
+      const cells = cellsOf(t);
+      if (cells.every((c) => /^:?-{2,}:?$/.test(c))) {               // |---| 구분선 → 앞 행이 머리행
+        const b = blocks[blocks.length - 1];
+        if (b && b.type === "md" && b.rows.length === 1) b.head = b.rows.pop();
+        continue;
+      }
+      push("md", cells);
+      continue;
+    }
+    if (NOTE.test(t) && !/^\*\*/.test(t)) { notes.push(t.replace(/^각주\s*[:：]\s*/, "")); continue; }
+    const sub = t.match(/^[·ㆍ]\s*(.+)$/);
+    if (sub && lastRow()) { lastRow().subs.push(sub[1]); continue; }
+    if (/^\s{2,}/.test(line) && lastRow() && !/^[-•]\s/.test(t)) { lastRow().v.push(t); continue; }   // 들여쓴 줄 = 윗줄의 이어짐
+    const body = (t.match(/^(?:[-•]|\d+[.)])\s+(.+)$/) || [null, t])[1];
+    const kv = splitKV(body);
+    if (!kv && (body.match(/→/g) || []).length >= 1) { push("flow", body.split(/\s*→\s*/)); continue; }
+    push("kv", kv ? { k: kv[0], v: [kv[1]], subs: [] } : { k: "", v: [body], subs: [] });
+  }
+  if (!blocks.length) return `<pre class="guide-table">${escapeHtml(text)}</pre>`;
+  const subList = (subs) => subs.length ? `<ul>${subs.map((x) => {
+    const kv = splitKV(x);
+    return `<li>${kv ? `<b>${inline(kv[0])}</b> — ${inline(kv[1])}` : inline(x)}</li>`;
+  }).join("")}</ul>` : "";
+  const html = blocks.map((b) => {
+    if (b.type === "md") {
+      const n = Math.max(b.head ? b.head.length : 0, ...b.rows.map((r) => r.length));
+      const pad = (r) => r.concat(Array(Math.max(0, n - r.length)).fill(""));
+      const head = b.head ? `<thead><tr>${pad(b.head).map((c) => `<th scope="col">${inline(c)}</th>`).join("")}</tr></thead>` : "";
+      return `<table class="gt-table gt-grid">${head}<tbody>${b.rows.map((r) =>
+        `<tr>${pad(r).map((c, j) => j === 0 ? `<th scope="row">${inline(c)}</th>`
+          : `<td${b.head && b.head[j] ? ` data-h="${escapeHtml(b.head[j])}"` : ""}>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    }
+    if (b.type === "flow") {                                          // 결정표: 단계마다 한 칸, 마지막 칸이 결론
+      const n = Math.max(...b.rows.map((r) => r.length));
+      return `<table class="gt-table gt-flow"><tbody>${b.rows.map((r) => {
+        // 단계가 적은 줄은 가운데를 비워 결론이 늘 마지막 칸에 오게 한다
+        const cells = r.length >= n ? r : r.slice(0, -1).concat(Array(n - r.length).fill(""), r.slice(-1));
+        return `<tr>${cells.map((c, j) => j === 0 ? `<th scope="row">${inline(c)}</th>`
+          : `<td${j === n - 1 ? ' class="gt-end"' : ""}>${c ? `<span class="gt-arrow" aria-hidden="true">→</span>${inline(c)}` : ""}</td>`).join("")}</tr>`;
+      }).join("")}</tbody></table>`;
+    }
+    return `<table class="gt-table"><tbody>${b.rows.map((r) => {
+      const val = r.v.map(inline).join("<br>") + subList(r.subs);
+      return r.k ? `<tr><th scope="row">${inline(r.k)}</th><td>${val}</td></tr>`
+                 : `<tr><td colspan="2" class="gt-wide">${val}</td></tr>`;
+    }).join("")}</tbody></table>`;
+  }).join("");
+  return `<div class="gt">${caption ? `<div class="gt-cap">${inline(caption)}</div>` : ""}${html}`
+    + (notes.length ? `<ul class="gt-notes">${notes.map((n) => `<li>${inline(n)}</li>`).join("")}</ul>` : "")
+    + "</div>";
+}
+
 function renderAppendix(ap) {
   if (!ap) return "";
   const parts = [];
   if (ap["가이드라인"]) {
-    parts.push(`<div class="item"><span class="k">가이드라인</span></div><pre class="guide-table">${escapeHtml(ap["가이드라인"].trim())}</pre>`);
+    parts.push(`<div class="item"><span class="k">가이드라인</span></div>${guideTableHtml(ap["가이드라인"])}`);
   }
   if (ap["최신지견"]) {
     parts.push(`<div class="item"><span class="k">최신지견</span>${escapeHtml(ap["최신지견"])}</div>`);

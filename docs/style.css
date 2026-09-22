@@ -479,3 +479,29 @@ body{word-break:keep-all; overflow-wrap:break-word}
   .explanation .expl-item{margin:12px 0; line-height:1.62}
   .deep-body .dp{margin-bottom:12px}
 }
+
+/* 부록 가이드라인 표(2026-09-22) — 글 그대로(<pre>) 대신 항목 | 내용 표 */
+.gt{margin:.3em 0 .6em}
+.gt-cap{font-weight:700; margin:.2em 0 .45em; line-height:1.45}
+.gt-table{width:100%; border-collapse:collapse; font-size:.93em; line-height:1.55}
+.gt-table th, .gt-table td{border:1px solid var(--line, #2a3a4d); padding:.45em .6em; vertical-align:top; text-align:left}
+.gt-table th{width:28%; background:rgba(120,160,210,.10); font-weight:600}
+.gt-table td.gt-wide{background:rgba(120,160,210,.05); font-weight:600}
+.gt-table ul{margin:.35em 0 0; padding-left:1.1em}
+.gt-table li{margin:.15em 0; font-weight:400}
+.gt-table + .gt-table{margin-top:.5em}
+.gt-grid th[scope=col]{background:rgba(120,160,210,.16); font-weight:700}
+.gt-grid th, .gt-flow th{width:auto}
+.gt-flow td.gt-end{font-weight:600}
+.gt-arrow{color:var(--muted); margin-right:.3em}
+.gt-notes{margin:.45em 0 0; padding-left:1.1em; font-size:.86em; color:var(--muted)}
+.gt-notes li{margin:.15em 0}
+@media (max-width: 600px){
+  /* 좁은 화면: 항목을 위, 내용을 아래로 쌓는다(두 칸이면 첫 칸이 글자 단위로 쪼개진다) */
+  .gt-table, .gt-table tbody, .gt-table tr, .gt-table th, .gt-table td{display:block; width:auto}
+  .gt-table tr{border:1px solid var(--line, #2a3a4d); border-radius:8px; margin:0 0 .45em; overflow:hidden}
+  .gt-table th, .gt-table td{border:0}
+  .gt-table th{padding-bottom:.2em}
+  .gt-grid thead{display:none}                 /* 쌓인 표에서는 머리행 대신 각 칸에 이름을 붙인다 */
+  .gt-grid td[data-h]::before{content:attr(data-h) " · "; color:var(--muted); font-size:.9em}
+}
