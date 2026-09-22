@@ -1,0 +1,27 @@
+{
+ "exam": "imaging",
+ "items": {
+  "imaging-2026-0004": {
+   "id": "imaging-2026-0004",
+   "exam": "imaging",
+   "subject": "병리·조직학",
+   "step": "Step 2",
+   "type": "생식샘 조직학과 성분화·무월경",
+   "style": "usmle_style",
+   "modality": "HISTOLOGY_IHC",
+   "question": "The strongly brown-stained cells are the principal target of which of the following hormones?",
+   "chosen": 3,
+   "chosenText": "Follicle-stimulating hormone",
+   "answer": 2,
+   "answerText": "Luteinizing hormone",
+   "coreNote": "",
+   "differ": "",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260913T053235Z_일일영상_2026-09-13_10units_9q_7072fb0c",
+   "date": "2026-09-13",
+   "device": "pc-0n9xt6",
+   "note": ""
+  }
+ },
+ "removed": {},
+ "updated": "2026-09-22T12:20:29.954Z"
+}
