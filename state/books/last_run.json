@@ -1,11 +1,11 @@
 {
- "started": "2026-09-22T20:52:46+09:00",
- "built": [
+ "started": "2026-09-22T21:00:41+09:00",
+ "built": [],
+ "skipped": [
   "순환기내과",
   "신장내과",
   "소아청소년과"
  ],
- "skipped": [],
  "failed": {
   "피부과": "RuntimeError: 검증 실패: 단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치"
  },
@@ -14,30 +14,17 @@
  ],
  "previews": [],
  "validation": {
-  "순환기내과": [],
   "피부과": [
    "단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치"
-  ],
-  "신장내과": [],
-  "소아청소년과": []
+  ]
  },
  "notes": {
-  "순환기내과": [],
   "피부과": [
    "마지막 쪽 내용이 적다(11%)"
-  ],
-  "신장내과": [],
-  "소아청소년과": []
+  ]
  },
  "concept_errors": [],
  "layout_trials": {
-  "순환기내과": {
-   "tried": 3,
-   "diagram_after_section": {
-    "u-cn-cardio-long-qt-syndrome-first-line-drug": 29,
-    "u-cn-cardio-long-qt-syndrome-first-line-drug#crit_end": false
-   }
-  },
   "피부과": {
    "tried": 21,
    "diagram_after_section": {
@@ -46,62 +33,16 @@
     "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 13,
     "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#crit_end": false
    }
-  },
-  "신장내과": {
-   "tried": 2,
-   "diagram_after_section": {
-    "u-cn-neph-hyperkalemia-first-step": 22,
-    "u-cn-neph-hyperkalemia-first-step#crit_end": false
-   }
-  },
-  "소아청소년과": {
-   "tried": 1,
-   "diagram_after_section": {
-    "u-cn-peds-febrile-seizure-workup": 15,
-    "u-cn-peds-febrile-seizure-workup#crit_end": false
-   }
   }
  },
  "trace": {
-  "피부과": "Traceback (most recent call last):\n  File \"/home/runner/work/my-github-test/my-github-test/pipelines/build_books.py\", line 889, in build\n    raise RuntimeError(\"검증 실패: \" + \"; \".join(errs[:6]))\nRuntimeError: 검증 실패: 단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치\n"
+  "피부과": "Traceback (most recent call last):\n  File \"/home/runner/work/my-github-test/my-github-test/pipelines/build_books.py\", line 892, in build\n    raise RuntimeError(\"검증 실패: \" + \"; \".join(errs[:6]))\nRuntimeError: 검증 실패: 단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치\n"
  },
- "result": "partial",
- "finished": "2026-09-22T20:53:16+09:00",
+ "result": "failed",
+ "finished": "2026-09-22T21:01:02+09:00",
  "upload": {
   "result": "ok",
-  "items": {
-   "순환기내과": {
-    "file": "MedKOS_학습서_순환기내과.pdf",
-    "status": "uploaded",
-    "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "kept_id": true,
-    "md5": "eeb3d75a260a05afb6e9d90d25c34708",
-    "archive": "MedKOS_학습서_순환기내과_v4_2026-09-22.pdf"
-   },
-   "신장내과": {
-    "file": "MedKOS_학습서_신장내과.pdf",
-    "status": "uploaded",
-    "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "kept_id": false,
-    "md5": "6e496f0edbf331a7919874f101cfef1d",
-    "archive": "MedKOS_학습서_신장내과_v1_2026-09-22.pdf"
-   },
-   "소아청소년과": {
-    "file": "MedKOS_학습서_소아청소년과.pdf",
-    "status": "uploaded",
-    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "kept_id": false,
-    "md5": "628d93d7cd23241d33af409c6317f1f9",
-    "archive": "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf"
-   },
-   "__index__": {
-    "file": "MedKOS_학습서_전체목차.pdf",
-    "status": "uploaded",
-    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-    "kept_id": true,
-    "md5": "865f212579a10562546a6c6647638932"
-   }
-  },
-  "at": "2026-09-22T20:53:16+09:00"
+  "items": {},
+  "at": "2026-09-22T21:01:02+09:00"
  }
 }
