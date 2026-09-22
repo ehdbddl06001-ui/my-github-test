@@ -444,14 +444,14 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
         pit = ('<h3>혼동하기 쉬운 점</h3><ul class="pit">' + "".join(
             f"<li><b>{esc(p['contrast'])}</b> — {esc(p['point'])}" + (f' <span class="ex">예외: {esc(p["exception"])}</span>' if p["exception"] else "")
             + "</li>" for p in pits) + "</ul>") if pits else ""
-        return (f'<section class="unit" id="{a}"><div class="uh span"><h2>{esc(u.title)}</h2>'
+        return (f'<section class="unit"><div class="uh span" id="{a}"><h2>{esc(u.title)}</h2>'
                 f'<div class="um">{esc(book_title)} · 정리본 준비 중 — 문항 해설에서 옮긴 요약, 의학 내용 검토 전</div></div>'
                 + "".join(body) + pit + "</section>"), info
     meta = [esc(book_title), f"정리본 v{esc(c.get('version'))}", f"{esc(c.get('updated', c.get('date')))} 갱신"]
     rs = c.get("review_status")
     meta.append("의학 내용 검토 완료" if rs == "reviewed" else "의학 내용 검토 전(형식 검사만)")
     flags = "".join(f' · <span class="flag">⚠ {esc(f)}</span>' for f in u.flags)
-    h = [f'<section class="unit" id="{a}"><div class="uh span"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>']
+    h = [f'<section class="unit"><div class="uh span" id="{a}"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>']
     if c.get("summary"):
         h.append('<div class="sum"><b>한눈에 — 전체 관계</b><ul>' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in c["summary"]) + "</ul></div>")
     secs = c.get("sections") or []
