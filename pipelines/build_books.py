@@ -641,7 +641,10 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
             errs.append(f"차례 링크가 단원을 가리키지 않는다: {u.title}")
             continue
         probe = re.sub(r"\s+", " ", u.title)[:10]
-        if not doc[pm[u.anchor] - 1].search_for(probe):
+        # search_for 는 한 줄 안에서만 찾는다 — 제목이 「—」 뒤에서 줄바꿈되면(서버 글꼴 폭 차이) 못 찾았다(2026-09-22).
+        # 쪽 글자에서 공백을 모두 뺀 뒤 비교한다.
+        flat = re.sub(r"\s+", "", doc[pm[u.anchor] - 1].get_text())
+        if re.sub(r"\s+", "", probe) not in flat:
             errs.append(f"단원 첫 쪽에서 제목 검색 실패: {probe}")
         if u.concept and re.search(re.escape(u.key), " ".join(texts)):
             errs.append(f"내부 ID 가 PDF 에 보인다: {u.key}")
