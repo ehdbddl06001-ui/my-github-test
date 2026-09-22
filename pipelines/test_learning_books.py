@@ -629,6 +629,18 @@ class OutlineFrame(unittest.TestCase):
         peds = copy.deepcopy(base["cn.peds.febrile-seizure.workup"])                  # 손 슬롯 — 해리슨 대상 아님
         self.assertFalse([e for e in C.validate_concept(peds) if "해리슨 대조 없음" in e])
 
+    def test_new_confusion_on_existing_note_is_a_touch_not_a_new_note(self):
+        base, _ = C.load_concepts()
+        c = base["cn.cardio.long-qt-syndrome.first-line-drug"]
+        q = {"topic": "Cardiology", "objective": c["id"],
+             "choices": ["A. 프로프라놀롤", "B. 아미오다론", "C. 소탈롤", "D. 플레카이니드", "E. 딜티아젬"]}
+        ev = [wrong("e1", "qx", c["id"], "2026-09-22T01:00:00Z", "2026-09-22", text="딜티아젬")]
+        S = ll.states(ev)
+        touches = cq._touches(S[c["id"]], c, {"qx": q})
+        self.assertEqual([t["cover"] for t in touches], ["qx:E"])              # 새 혼동 → 손질 1건
+        c2 = dict(c, pitfalls=list(c["pitfalls"]) + [{"contrast": "x", "point": "y", "covers": ["qx:E"]}])
+        self.assertEqual(cq._touches(S[c["id"]], c2, {"qx": q}), [])           # 이미 다룬 혼동이면 할 일 없음
+
     def test_gap_queue_continues_after_the_last_written_slot(self):
         base, _ = C.load_concepts()
         c = copy.deepcopy(base["cn.neph.hyperkalemia.first-step"])                      # outline h53
