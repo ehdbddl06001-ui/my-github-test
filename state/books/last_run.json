@@ -1,20 +1,42 @@
 {
- "started": "2026-09-21T08:20:49+09:00",
- "built": [],
+ "started": "2026-09-22T09:12:51+09:00",
+ "built": [
+  "피부과"
+ ],
  "skipped": [
   "순환기내과"
  ],
  "failed": {},
  "retry": [],
  "previews": [],
- "validation": {},
- "notes": {},
+ "validation": {
+  "피부과": []
+ },
+ "notes": {
+  "피부과": []
+ },
  "concept_errors": [],
- "result": "skipped",
- "finished": "2026-09-21T08:20:54+09:00",
+ "result": "ok",
+ "finished": "2026-09-22T09:12:56+09:00",
  "upload": {
   "result": "ok",
-  "items": {},
-  "at": "2026-09-21T08:20:54+09:00"
+  "items": {
+   "피부과": {
+    "file": "MedKOS_학습서_피부과.pdf",
+    "status": "uploaded",
+    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "kept_id": false,
+    "md5": "0c9eb09ea2f042a4765f892ae52aa7eb",
+    "archive": "MedKOS_학습서_피부과_v1_2026-09-22.pdf"
+   },
+   "__index__": {
+    "file": "MedKOS_학습서_전체목차.pdf",
+    "status": "uploaded",
+    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
+    "kept_id": true,
+    "md5": "60afae25e881e9c017a1d1eae5b45deb"
+   }
+  },
+  "at": "2026-09-22T09:12:56+09:00"
  }
 }

@@ -27,17 +27,43 @@
     "MedKOS_학습서_순환기내과_v3_2026-09-21.pdf"
    ],
    "changes": []
+  },
+  "피부과": {
+   "hash": "2a31e05e7b8bc56fc18d",
+   "version": 1,
+   "date": "2026-09-22",
+   "file": "MedKOS_학습서_피부과.pdf",
+   "pages": 5,
+   "template_version": 6,
+   "units": {
+    "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning": {
+     "title": "판상건선 — 전신치료가 필요한 환자에서 임신 계획·고혈압이 약 선택을 어떻게 바꾸는가",
+     "page": 1,
+     "concept_hash": "17667642ed4f2801",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "md5": "0c9eb09ea2f042a4765f892ae52aa7eb",
+    "version": 1,
+    "uploaded": "2026-09-22T09:12:56+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_피부과_v1_2026-09-22.pdf"
+   ],
+   "changes": []
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "3afc9d3eafc4264d40d16743f131738e",
+   "md5": "60afae25e881e9c017a1d1eae5b45deb",
    "version": null,
-   "uploaded": "2026-09-21T08:16:35+09:00"
+   "uploaded": "2026-09-22T09:12:56+09:00"
   }
  },
- "updated": "2026-09-21"
+ "updated": "2026-09-22"
 }
