@@ -30,30 +30,39 @@
    "changes": []
   },
   "피부과": {
-   "hash": "2a31e05e7b8bc56fc18d",
-   "version": 1,
+   "hash": "c89a7788b0f75790f2c0",
+   "version": 2,
    "date": "2026-09-22",
    "file": "MedKOS_학습서_피부과.pdf",
-   "pages": 5,
-   "template_version": 6,
+   "pages": 8,
+   "template_version": 7,
    "units": {
+    "cn.derm.pityriasis-versicolor.treatment": {
+     "title": "어루러기 — 진단 단서에서 치료 수준(국소 vs 경구 아졸)으로",
+     "page": 1,
+     "concept_hash": "6ab89e1274efe0d0",
+     "concept_version": 2
+    },
     "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning": {
      "title": "판상건선 — 전신치료가 필요한 환자에서 임신 계획·고혈압이 약 선택을 어떻게 바꾸는가",
-     "page": 1,
+     "page": 3,
      "concept_hash": "17667642ed4f2801",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "0c9eb09ea2f042a4765f892ae52aa7eb",
-    "version": 1,
-    "uploaded": "2026-09-22T09:12:56+09:00"
+    "md5": "87ed03f8f89f648e504e2fd56f15b5e5",
+    "version": 2,
+    "uploaded": "2026-09-22T21:08:49+09:00"
    },
    "archive": [
-    "MedKOS_학습서_피부과_v1_2026-09-22.pdf"
+    "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
+    "MedKOS_학습서_피부과_v2_2026-09-22.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 어루러기 — 진단 단서에서 치료 수준(국소 vs 경구 아졸)으로"
+   ]
   },
   "신장내과": {
    "hash": "3688e78f30cce471b0bc",
@@ -113,9 +122,9 @@
   "date": "2026-09-22",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "865f212579a10562546a6c6647638932",
+   "md5": "9ba0188e79f28cd4eeb010d33c19dfd2",
    "version": null,
-   "uploaded": "2026-09-22T20:53:16+09:00"
+   "uploaded": "2026-09-22T21:08:49+09:00"
   }
  },
  "updated": "2026-09-22"

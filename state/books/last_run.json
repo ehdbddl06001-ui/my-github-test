@@ -1,22 +1,18 @@
 {
- "started": "2026-09-22T21:00:41+09:00",
- "built": [],
+ "started": "2026-09-22T21:08:27+09:00",
+ "built": [
+  "피부과"
+ ],
  "skipped": [
   "순환기내과",
   "신장내과",
   "소아청소년과"
  ],
- "failed": {
-  "피부과": "RuntimeError: 검증 실패: 단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치"
- },
- "retry": [
-  "피부과"
- ],
+ "failed": {},
+ "retry": [],
  "previews": [],
  "validation": {
-  "피부과": [
-   "단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치"
-  ]
+  "피부과": []
  },
  "notes": {
   "피부과": [
@@ -35,14 +31,27 @@
    }
   }
  },
- "trace": {
-  "피부과": "Traceback (most recent call last):\n  File \"/home/runner/work/my-github-test/my-github-test/pipelines/build_books.py\", line 892, in build\n    raise RuntimeError(\"검증 실패: \" + \"; \".join(errs[:6]))\nRuntimeError: 검증 실패: 단원 첫 쪽에서 제목 검색 실패: 판상건선 — 전신치\n"
- },
- "result": "failed",
- "finished": "2026-09-22T21:01:02+09:00",
+ "result": "ok",
+ "finished": "2026-09-22T21:08:49+09:00",
  "upload": {
   "result": "ok",
-  "items": {},
-  "at": "2026-09-22T21:01:02+09:00"
+  "items": {
+   "피부과": {
+    "file": "MedKOS_학습서_피부과.pdf",
+    "status": "uploaded",
+    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "kept_id": true,
+    "md5": "87ed03f8f89f648e504e2fd56f15b5e5",
+    "archive": "MedKOS_학습서_피부과_v2_2026-09-22.pdf"
+   },
+   "__index__": {
+    "file": "MedKOS_학습서_전체목차.pdf",
+    "status": "uploaded",
+    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
+    "kept_id": true,
+    "md5": "9ba0188e79f28cd4eeb010d33c19dfd2"
+   }
+  },
+  "at": "2026-09-22T21:08:49+09:00"
  }
 }
