@@ -95,5 +95,9 @@ jobs:
           git add state/books state/source_checks.json state/learning_sync 2>/dev/null || true
           if git diff --cached --quiet; then echo "기록 변경 없음"; exit 0; fi
           git commit -m "학습서: $(python -c "import json;r=json.load(open('state/books/last_run.json',encoding='utf-8'));print(r.get('result'),'built',len(r.get('built',[])),'upload',(r.get('upload') or {}).get('result','-'))")"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          # 앱 동기화 커밋과 겹치면 push 가 거절된다 — 다시 받아 얹고 다시 민다(2026-09-22, wrong-sync 와 같은 규칙)
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            [ "$i" = 5 ] && exit 1
+            echo "push 경합 — ${i}번째 재시도"; sleep $((i * 3))
+          done
