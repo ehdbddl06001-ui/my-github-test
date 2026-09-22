@@ -2,6 +2,1558 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0102",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "병리·조직 — 유방 상피의 전사인자 면역조직화학",
+  "type": "병리·조직 — 유방 상피의 전사인자 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "A 45-year-old woman undergoes reduction mammoplasty. Her preoperative mammogram was normal, she has no personal or family history of breast cancer, and she takes no hormonal medications. Sections of the resected breast tissue are used as normal control tissue in the pathology laboratory. A section is stained by immunohistochemistry for a zinc-finger transcription factor that drives luminal differentiation of the mammary epithelium and that is also expressed in urothelium and in T lymphocytes but not in myoepithelial or stromal cells. A photomicrograph of the stained section of the breast is shown.",
+  "question": "In diagnostic pathology, detection of this protein is most useful for which of the following?",
+  "options": [
+   "Estimating the proliferation rate of a breast carcinoma",
+   "Distinguishing ductal carcinoma in situ from invasive carcinoma",
+   "Identifying breast or urothelial origin of a metastatic carcinoma of unknown primary",
+   "Predicting response to endocrine therapy in invasive breast carcinoma",
+   "Predicting response to trastuzumab in invasive breast carcinoma"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The photomicrograph shows strong brown nuclear staining confined to the luminal epithelial cells lining the ducts and lobular acini, while the stroma, adipose tissue, vessels, and the outer myoepithelial layer are unstained — the pattern of a nuclear transcription factor restricted to luminal epithelium. The stem defines the protein as a zinc-finger transcription factor of luminal differentiation that is also expressed in urothelium and T cells, which is GATA3. Because GATA3 is retained in most breast carcinomas, including many that have lost estrogen receptor, and in urothelial carcinoma, its main diagnostic use is to assign a metastatic carcinoma of unknown primary to a breast or urothelial origin. Estrogen receptor predicts endocrine response, HER2 predicts trastuzumab benefit, Ki-67 estimates proliferation, and myoepithelial markers such as p63 and smooth muscle myosin heavy chain separate in situ from invasive disease.\n- 원리: <b>GATA3 is a zinc-finger transcription factor</b> that binds the GATA motif and is required for the specification and maintenance of the <b>luminal cell lineage</b> of the mammary gland; it is also essential for T-helper-2 lymphocyte differentiation and is expressed in urothelium, skin adnexa, and some other epithelia. As a transcription factor it lives in the nucleus, so a positive stain is <b>nuclear</b>, and in normal breast it marks the inner luminal layer of ducts and acini but not the outer myoepithelial cells or the stroma — exactly the distribution in the image. In breast carcinoma GATA3 lies in the same regulatory network as estrogen receptor and FOXA1, but it is retained in roughly 90 percent of all breast cancers and in about half of triple-negative tumors, so it identifies breast lineage even where estrogen receptor is lost.<br> <b>Why lineage assignment is its diagnostic role</b> — when a carcinoma presents as a metastasis (axillary or supraclavicular node, bone, liver, pleura) with no known primary, the pathologist uses a panel of lineage-restricted transcription factors: TTF-1 for lung and thyroid, PAX8 for kidney, ovary, and thyroid, CDX2 for intestine, NKX3.1 for prostate, and <b>GATA3 for breast and urothelium</b>. A GATA3-positive, TTF-1-negative adenocarcinoma in a woman's axillary node points to an occult breast primary; GATA3 with p63 and uroplakin points to urothelial carcinoma. The <b>predictive</b> markers are different proteins with different logic: estrogen and progesterone receptors predict benefit from tamoxifen or aromatase inhibitors, HER2 predicts benefit from trastuzumab, and Ki-67 quantifies the fraction of cycling cells. Myoepithelial markers (p63, calponin, smooth muscle myosin heavy chain) outline the intact layer around in situ carcinoma and are lost when tumor invades.\n- 비교: <table><thead><tr><th style=\"width:30%\">Use</th><th style=\"width:40%\">Marker and staining pattern</th><th>Why not the protein shown</th></tr></thead><tbody> <tr><td><b>Breast or urothelial origin of a metastasis (answer)</b></td><td><b>GATA3 — nuclear, luminal epithelium, retained in most breast and urothelial carcinomas</b></td><td><b>Fits the stem and the image</b></td></tr> <tr><td>Endocrine-therapy response (closest rival)</td><td>Estrogen receptor — nuclear steroid receptor in luminal cells of normal breast and in about 75 percent of carcinomas</td><td>Not a zinc-finger transcription factor, not expressed in urothelium or T cells</td></tr> <tr><td>Trastuzumab response</td><td>HER2 — membranous growth-factor receptor, amplified in 15–20 percent of carcinomas</td><td>Membranous, not nuclear; not a transcription factor</td></tr> <tr><td>Proliferation rate</td><td>Ki-67 — nuclear protein of cycling cells, scattered positive nuclei</td><td>Present in all dividing cells, not lineage-restricted; staining here is uniform in luminal cells</td></tr> <tr><td>In situ versus invasive</td><td>p63, calponin, smooth muscle myosin heavy chain — myoepithelial layer</td><td>The protein shown is absent from myoepithelial cells</td></tr> </tbody></table> <b>The closest rival is estrogen receptor</b>, because it too stains luminal nuclei of normal breast and is the marker students associate with breast pathology. The dividing line is <b>what the stem says the protein is</b>: a zinc-finger transcription factor expressed also in urothelium and T lymphocytes is GATA3, whose job in diagnosis is lineage, not therapy prediction. Read the biology in the stem before reaching for the most familiar marker.\n- 오답 이유:\n  - (A) Estimating proliferation is the role of Ki-67, a nuclear protein present in all cycling cells regardless of lineage, giving scattered positive nuclei whose percentage is reported. The protein shown stains essentially every luminal cell uniformly and is lineage-restricted to breast, urothelium, and T cells, which is the opposite of a proliferation marker. Had the stem described a nuclear antigen expressed only in the G1, S, G2, and M phases of the cell cycle, this option would be correct.\n  - (B) Distinguishing in situ from invasive carcinoma relies on demonstrating the myoepithelial layer with p63, calponin, or smooth muscle myosin heavy chain, which is intact around ductal carcinoma in situ and absent around invasive tumor. The stem states that this protein is not expressed in myoepithelial cells, so it cannot outline that layer. If the stain had decorated the outer basal layer of the ducts while sparing the luminal cells, a myoepithelial marker and this option would fit.\n  - (D) Predicting endocrine-therapy response is the role of estrogen receptor, which also shows nuclear staining in luminal cells of normal breast, so it is the natural first thought. The stem, however, describes a zinc-finger transcription factor expressed in urothelium and T lymphocytes — GATA3, not a steroid hormone receptor — and GATA3 status does not by itself determine hormonal therapy. Had the stem described a nuclear steroid receptor whose ligand is estradiol, this option would be correct.\n  - (E) Predicting trastuzumab response belongs to HER2, a membrane tyrosine-kinase receptor whose overexpression or amplification is scored by membranous staining and in situ hybridization. The protein in this image is nuclear and is defined as a transcription factor, so it cannot be HER2. If the photomicrograph had shown complete, strong membranous staining of tumor cells and the stem had described a growth-factor receptor, this option would be the answer.\n- 함정: Nuclear staining of luminal breast cells is not automatically estrogen receptor. The stem gives the identity — a lineage transcription factor shared with urothelium and T cells — and lineage markers answer 'where did this tumor come from', not 'which drug will work'.\n- 학습목표: 정상 유방 조직의 면역조직화학에서 관강 상피세포 핵에 국한된 염색을 읽고, 관강 분화를 조절하며 요로상피·T세포에도 발현되는 아연손가락 전사인자(GATA3)의 임상적 용도가 원발 불명 전이암의 유방·요로상피 기원 확인임을 에스트로겐 수용체·HER2·Ki-67·근상피 표지자와 구별한다\n- 근거·출처: Human Protein Atlas, GATA3 / breast (CC BY 4.0), image 140542_B_2_4 — 45 F, normal breast TMA core; author reading 2026-09-23 — Grade A tissue identity; teacher-only · 작성자 판독(2026-09-23): 유관·소엽 관강 상피세포 핵이 강한 갈색으로 염색되고 기질·지방·혈관·근상피 쪽은 음성; 문자·식별 표지 없음 · Miettinen M et al. GATA3: a multispecific but potentially useful marker in surgical pathology. Am J Surg Pathol 2014;38:13 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The breast' — prognostic and predictive markers; ch. 'Neoplasia' — immunohistochemistry in carcinoma of unknown primary · Kouros-Mehr H et al. GATA-3 maintains the differentiation of the luminal cell fate in the mammary gland. Cell 2006;127:1041\n\n## 출처\n- Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photomicrograph shows strong brown nuclear staining confined to the luminal epithelial cells lining the ducts and lobular acini, while the stroma, adipose tissue, vessels, and the outer myoepithelial layer are unstained — the pattern of a nuclear transcription factor restricted to luminal epithelium. The stem defines the protein as a zinc-finger transcription factor of luminal differentiation that is also expressed in urothelium and T cells, which is GATA3. Because GATA3 is retained in most breast carcinomas, including many that have lost estrogen receptor, and in urothelial carcinoma, its main diagnostic use is to assign a metastatic carcinoma of unknown primary to a breast or urothelial origin. Estrogen receptor predicts endocrine response, HER2 predicts trastuzumab benefit, Ki-67 estimates proliferation, and myoepithelial markers such as p63 and smooth muscle myosin heavy chain separate in situ from invasive disease."
+   },
+   {
+    "k": "원리",
+    "v": "<b>GATA3 is a zinc-finger transcription factor</b> that binds the GATA motif and is required for the specification and maintenance of the <b>luminal cell lineage</b> of the mammary gland; it is also essential for T-helper-2 lymphocyte differentiation and is expressed in urothelium, skin adnexa, and some other epithelia. As a transcription factor it lives in the nucleus, so a positive stain is <b>nuclear</b>, and in normal breast it marks the inner luminal layer of ducts and acini but not the outer myoepithelial cells or the stroma — exactly the distribution in the image. In breast carcinoma GATA3 lies in the same regulatory network as estrogen receptor and FOXA1, but it is retained in roughly 90 percent of all breast cancers and in about half of triple-negative tumors, so it identifies breast lineage even where estrogen receptor is lost.<br> <b>Why lineage assignment is its diagnostic role</b> — when a carcinoma presents as a metastasis (axillary or supraclavicular node, bone, liver, pleura) with no known primary, the pathologist uses a panel of lineage-restricted transcription factors: TTF-1 for lung and thyroid, PAX8 for kidney, ovary, and thyroid, CDX2 for intestine, NKX3.1 for prostate, and <b>GATA3 for breast and urothelium</b>. A GATA3-positive, TTF-1-negative adenocarcinoma in a woman's axillary node points to an occult breast primary; GATA3 with p63 and uroplakin points to urothelial carcinoma. The <b>predictive</b> markers are different proteins with different logic: estrogen and progesterone receptors predict benefit from tamoxifen or aromatase inhibitors, HER2 predicts benefit from trastuzumab, and Ki-67 quantifies the fraction of cycling cells. Myoepithelial markers (p63, calponin, smooth muscle myosin heavy chain) outline the intact layer around in situ carcinoma and are lost when tumor invades."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Use</th><th style=\"width:40%\">Marker and staining pattern</th><th>Why not the protein shown</th></tr></thead><tbody> <tr><td><b>Breast or urothelial origin of a metastasis (answer)</b></td><td><b>GATA3 — nuclear, luminal epithelium, retained in most breast and urothelial carcinomas</b></td><td><b>Fits the stem and the image</b></td></tr> <tr><td>Endocrine-therapy response (closest rival)</td><td>Estrogen receptor — nuclear steroid receptor in luminal cells of normal breast and in about 75 percent of carcinomas</td><td>Not a zinc-finger transcription factor, not expressed in urothelium or T cells</td></tr> <tr><td>Trastuzumab response</td><td>HER2 — membranous growth-factor receptor, amplified in 15–20 percent of carcinomas</td><td>Membranous, not nuclear; not a transcription factor</td></tr> <tr><td>Proliferation rate</td><td>Ki-67 — nuclear protein of cycling cells, scattered positive nuclei</td><td>Present in all dividing cells, not lineage-restricted; staining here is uniform in luminal cells</td></tr> <tr><td>In situ versus invasive</td><td>p63, calponin, smooth muscle myosin heavy chain — myoepithelial layer</td><td>The protein shown is absent from myoepithelial cells</td></tr> </tbody></table> <b>The closest rival is estrogen receptor</b>, because it too stains luminal nuclei of normal breast and is the marker students associate with breast pathology. The dividing line is <b>what the stem says the protein is</b>: a zinc-finger transcription factor expressed also in urothelium and T lymphocytes is GATA3, whose job in diagnosis is lineage, not therapy prediction. Read the biology in the stem before reaching for the most familiar marker."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Estimating proliferation is the role of Ki-67, a nuclear protein present in all cycling cells regardless of lineage, giving scattered positive nuclei whose percentage is reported. The protein shown stains essentially every luminal cell uniformly and is lineage-restricted to breast, urothelium, and T cells, which is the opposite of a proliferation marker. Had the stem described a nuclear antigen expressed only in the G1, S, G2, and M phases of the cell cycle, this option would be correct.\n(B) Distinguishing in situ from invasive carcinoma relies on demonstrating the myoepithelial layer with p63, calponin, or smooth muscle myosin heavy chain, which is intact around ductal carcinoma in situ and absent around invasive tumor. The stem states that this protein is not expressed in myoepithelial cells, so it cannot outline that layer. If the stain had decorated the outer basal layer of the ducts while sparing the luminal cells, a myoepithelial marker and this option would fit.\n(D) Predicting endocrine-therapy response is the role of estrogen receptor, which also shows nuclear staining in luminal cells of normal breast, so it is the natural first thought. The stem, however, describes a zinc-finger transcription factor expressed in urothelium and T lymphocytes — GATA3, not a steroid hormone receptor — and GATA3 status does not by itself determine hormonal therapy. Had the stem described a nuclear steroid receptor whose ligand is estradiol, this option would be correct.\n(E) Predicting trastuzumab response belongs to HER2, a membrane tyrosine-kinase receptor whose overexpression or amplification is scored by membranous staining and in situ hybridization. The protein in this image is nuclear and is defined as a transcription factor, so it cannot be HER2. If the photomicrograph had shown complete, strong membranous staining of tumor cells and the stem had described a growth-factor receptor, this option would be the answer."
+   },
+   {
+    "k": "함정",
+    "v": "Nuclear staining of luminal breast cells is not automatically estrogen receptor. The stem gives the identity — a lineage transcription factor shared with urothelium and T cells — and lineage markers answer 'where did this tumor come from', not 'which drug will work'."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 유방 조직의 면역조직화학에서 관강 상피세포 핵에 국한된 염색을 읽고, 관강 분화를 조절하며 요로상피·T세포에도 발현되는 아연손가락 전사인자(GATA3)의 임상적 용도가 원발 불명 전이암의 유방·요로상피 기원 확인임을 에스트로겐 수용체·HER2·Ki-67·근상피 표지자와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas, GATA3 / breast (CC BY 4.0), image 140542_B_2_4 — 45 F, normal breast TMA core; author reading 2026-09-23 — Grade A tissue identity; teacher-only · 작성자 판독(2026-09-23): 유관·소엽 관강 상피세포 핵이 강한 갈색으로 염색되고 기질·지방·혈관·근상피 쪽은 음성; 문자·식별 표지 없음 · Miettinen M et al. GATA3: a multispecific but potentially useful marker in surgical pathology. Am J Surg Pathol 2014;38:13 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The breast' — prognostic and predictive markers; ch. 'Neoplasia' — immunohistochemistry in carcinoma of unknown primary · Kouros-Mehr H et al. GATA-3 maintains the differentiation of the luminal cell fate in the mammary gland. Cell 2006;127:1041 ## 출처 Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "A nuclear stain confined to luminal epithelial cells of normal breast, defined in the stem as a zinc-finger transcription factor shared with urothelium and T cells, is GATA3, whose diagnostic role is assigning breast or urothelial lineage to a metastatic carcinoma of unknown primary",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Estrogen receptor also stains luminal nuclei, but it is a steroid receptor, not a zinc-finger transcription factor, and it is not expressed in urothelium or T lymphocytes; its role is predictive, whereas GATA3's role is lineage",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: strong brown nuclear staining of the luminal epithelial cells lining ducts and lobular acini",
+     "why": "Nuclear localization in luminal cells — a transcription factor of the luminal lineage",
+     "also": []
+    },
+    {
+     "item": "a zinc-finger transcription factor that drives luminal differentiation of the mammary epithelium",
+     "why": "Defines GATA3 rather than the steroid receptor ER",
+     "also": []
+    },
+    {
+     "item": "also expressed in urothelium and in T lymphocytes",
+     "why": "The tissue distribution that makes GATA3 a breast-or-urothelial lineage marker",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: stroma, adipose tissue, vessels, and the outer myoepithelial layer unstained",
+     "why": "Excludes myoepithelial markers and confirms lineage restriction",
+     "also": []
+    },
+    {
+     "item": "not in myoepithelial or stromal cells",
+     "why": "Cannot be a marker of the myoepithelial layer used for in situ versus invasive",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Her preoperative mammogram was normal, she has no personal or family history of breast cancer",
+     "why": "Confirms the tissue is normal control breast — the stain shows normal distribution, not disease",
+     "also": []
+    },
+    {
+     "item": "she takes no hormonal medications",
+     "why": "Excludes hormone-induced changes in the control tissue; irrelevant to the marker's use",
+     "also": []
+    },
+    {
+     "item": "45-year-old woman",
+     "why": "Age of the tissue donor — not part of the question",
+     "also": []
+    }
+   ],
+   "summary": "The stain marks luminal epithelial nuclei of ducts and acini and spares myoepithelium and stroma, and the stem identifies the protein as a zinc-finger luminal transcription factor shared with urothelium and T cells: GATA3. Its diagnostic use is to assign breast or urothelial origin to a metastatic carcinoma of unknown primary, unlike ER, HER2, Ki-67, and myoepithelial markers.",
+   "switch": {
+    "choice": "D",
+    "condition": "If the stem had described a nuclear steroid hormone receptor activated by estradiol and expressed in luminal cells and endometrium, the marker would be estrogen receptor and predicting endocrine-therapy response would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0102.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast",
+   "asset_id": "HPA-GATA3_140542_B_2_4",
+   "text": "Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg"
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0098",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "감염 — 양측 폐렴의 원인 진단 검사",
+  "type": "감염 — 양측 폐렴의 원인 진단 검사",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "A 55-year-old man comes to the emergency department because of 4 days of fever, dry cough, and worsening shortness of breath. One week ago he returned from a 3-night stay at a resort with a hot tub and spa. For 2 days he has had watery diarrhea 4 to 5 times daily, and this morning his family noticed that he was confused and slurring his words. He has a 20-pack-year smoking history, no diabetes mellitus, and no recent antibiotic use. His temperature is 39.4°C, pulse is 92/min, respirations are 26/min, and blood pressure is 108/66 mmHg; oxygen saturation is 90% on room air. Coarse crackles are heard over both lungs, and there is no neck stiffness. Laboratory studies show a leukocyte count of 14,800/mm3 (86% neutrophils), serum sodium of 126 mEq/L, AST of 96 U/L, ALT of 88 U/L, creatine kinase of 1,240 U/L, and C-reactive protein of 24 mg/dL. Gram stain of sputum shows many neutrophils but no organisms. A portable chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate test to identify the causative organism?",
+  "options": [
+   "Nasopharyngeal influenza antigen test",
+   "Two sets of blood cultures",
+   "Urinary Legionella antigen assay",
+   "Acid-fast stain of sputum for mycobacteria",
+   "Serum Mycoplasma pneumoniae antibody titers"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The chest radiograph shows patchy consolidation in both lungs, most marked in the right mid and lower zones and the left perihilar and lower zone, without cavitation or a large effusion. High fever and pneumonia beginning after a stay at a resort with a hot tub, together with watery diarrhea, confusion, hyponatremia, elevated aminotransferases and creatine kinase, and a sputum Gram stain with many neutrophils but no organisms, is the classic picture of Legionella pneumonia. Legionella stains poorly with Gram stain and does not grow on routine media, so the fastest and most widely used confirmatory test is the urinary antigen assay for serogroup 1, which remains positive after antibiotics are begun. Tuberculosis has a subacute course with upper-lobe cavitation; Mycoplasma causes milder disease in younger patients and antibody titers rise late; influenza does not explain diarrhea, hyponatremia, and a creatine kinase of 1,240 U/L; and blood cultures do not detect Legionella.\n- 원리: <b>Legionella is a gram-negative bacillus that lives inside amoebae in man-made water systems</b> — hot-water plumbing, cooling towers, hot tubs — and infects by inhalation of contaminated aerosol. In the lung it enters alveolar macrophages, blocks fusion of the phagosome with the lysosome, and multiplies inside the cell: it is a <b>facultative intracellular pathogen</b>. That biology explains three things at once: extracellular organisms are scarce, so <b>sputum Gram stain shows neutrophils without bacteria</b>; the lipopolysaccharide of its cell wall takes up Gram stain poorly; and it grows only on <b>buffered charcoal yeast extract</b> agar supplemented with cysteine and iron, so routine blood and sputum cultures are negative. Clinically the clues are the <b>extrapulmonary features</b> that accompany the pneumonia — diarrhea, altered mental status, hyponatremia (inappropriate antidiuretic hormone secretion), elevated aminotransferases, and rhabdomyolysis — and radiographs typically show rapidly progressive, multifocal, often bilateral consolidation.<br> <b>Why the urinary antigen assay</b> — soluble antigen is excreted in urine from the first days of illness; the assay returns a result within an hour, has a sensitivity of 70 to 90 percent and a specificity above 99 percent for <i>L. pneumophila</i> serogroup 1, which causes 80 to 90 percent of cases, and <b>stays positive for days to weeks after antibiotics are started</b>. Its limitation is that it misses other serogroups and species, so a negative result in a strongly suspected case is followed by culture on buffered charcoal yeast extract agar and polymerase chain reaction. Treatment requires a drug that reaches the intracellular organism — a <b>respiratory fluoroquinolone or azithromycin</b> — and beta-lactams are ineffective, which is why identifying the organism directly determines the antibiotic.\n- 비교: <table><thead><tr><th style=\"width:28%\">Test</th><th style=\"width:40%\">When it is the right test</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Urinary Legionella antigen (answer)</b></td><td><b>Water exposure + pneumonia with diarrhea, confusion, hyponatremia, high CK, and a Gram stain without organisms</b></td><td><b>Hot-tub resort, watery diarrhea, confusion, Na 126, CK 1,240, no organisms on Gram stain</b></td></tr> <tr><td>Two sets of blood cultures (closest rival)</td><td>Baseline test in severe pneumonia — detects pneumococcal or staphylococcal bacteremia</td><td>Legionella does not grow on routine media, so cultures stay negative</td></tr> <tr><td>Acid-fast stain of sputum</td><td>Weeks to months of cough, weight loss, night sweats; upper-lobe cavities or nodules</td><td>Four-day acute course, no cavitation</td></tr> <tr><td>Mycoplasma antibody titers</td><td>Mild atypical pneumonia in a young patient; acute and convalescent titers compared</td><td>Older, severe, multifocal consolidation; result too slow</td></tr> <tr><td>Nasopharyngeal influenza antigen</td><td>Acute fever, myalgia, and cough in influenza season to decide on antivirals</td><td>Does not explain diarrhea, hyponatremia, aminotransferase and CK elevation</td></tr> </tbody></table> <b>The closest rival is blood cultures</b>, because they are ordered in every severe pneumonia. The dividing line is <b>what the test is meant to find</b>: this question asks for the causative organism in a patient whose picture points to Legionella, an organism that routine cultures cannot grow. Blood cultures are still sent, but the urinary antigen assay is the test that identifies the cause.\n- 오답 이유:\n  - (A) A nasopharyngeal influenza antigen test is considered because of acute high fever and cough, but influenza does not explain watery diarrhea, confusion, a sodium of 126 mEq/L, a creatine kinase of 1,240 U/L, bilateral multifocal consolidation, or exposure to a hot tub, and the neutrophil-predominant leukocytosis argues against it. A patient in influenza season with abrupt fever, myalgia, and dry cough of one day and a clear radiograph would make this the appropriate test.\n  - (B) Two sets of blood cultures are a standard part of the evaluation of severe pneumonia and should indeed be drawn, but Legionella is an intracellular organism that rarely causes bacteremia and does not grow on routine blood-culture media, so they cannot identify this cause. The question asks for the test that identifies the organism. If the Gram stain had shown gram-positive diplococci with lobar consolidation and pneumococcal bacteremia were the concern, blood cultures would be the appropriate answer.\n  - (D) An acid-fast stain of sputum comes to mind in a smoker with fever, cough, and lung opacities, but tuberculosis runs a course of weeks to months with cough, weight loss, and night sweats and produces upper-lobe nodules and cavities; it does not explain diarrhea, confusion, hyponatremia, or a creatine kinase of 1,240 U/L. This patient has a 4-day febrile illness. Two months of cough with weight loss and an upper-lobe cavity on the radiograph would make this the right test.\n  - (E) Mycoplasma antibody titers are considered because the Gram stain shows no organisms, which suggests an atypical pathogen. Mycoplasma pneumonia is typically a milder illness of younger patients, the titers must be compared between acute and convalescent sera so the result is late, and it does not account for hyponatremia, aminotransferase and creatine kinase elevation, or hot-tub exposure. A 20-year-old college student with 2 weeks of dry cough and low-grade fever and a unilateral interstitial infiltrate would fit this option.\n- 함정: Do not answer 'severe pneumonia' with 'blood cultures'. Extrapulmonary clues (diarrhea, confusion, hyponatremia, high CK), a Gram stain without organisms, and water exposure together call for the test that detects an organism routine cultures cannot grow.\n- 학습목표: 여행 뒤 발열·설사·의식 혼탁·저나트륨혈증과 흉부 X선의 양측 다발성 음영을 보이는 폐렴에서 레지오넬라 폐렴을 의심하고, 일반 배양으로 자라지 않는 이 균의 진단에 소변 항원검사를 선택한다\n- 근거·출처: TCIA COVID-19-AR (CC BY 4.0) — 55 M, portable AP chest radiograph, human-confirmed bilateral opacities — Grade B; the item asks only for the visible bilateral multifocal opacities and supplies the cause through clinical data; teacher-only · 작성자 판독(2026-09-23): 우측 중·하부와 좌측 폐문 주위·하부의 양측 반점상 경화·간유리 음영, 대엽 균질 경화·공동·큰 흉수 없음, 심전도 전극·케이블 외 장치 없음, 번인 문자 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Legionella infections' — clinical clues, urinary antigen, BCYE culture, therapy · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia. ATS/IDSA guideline. Am J Respir Crit Care Med 2019;200:e45 — Legionella urinary antigen in severe CAP · Cunha BA, Burillo A, Bouza E. Legionnaires' disease. Lancet 2016;387:376\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …11234748 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest radiograph shows patchy consolidation in both lungs, most marked in the right mid and lower zones and the left perihilar and lower zone, without cavitation or a large effusion. High fever and pneumonia beginning after a stay at a resort with a hot tub, together with watery diarrhea, confusion, hyponatremia, elevated aminotransferases and creatine kinase, and a sputum Gram stain with many neutrophils but no organisms, is the classic picture of Legionella pneumonia. Legionella stains poorly with Gram stain and does not grow on routine media, so the fastest and most widely used confirmatory test is the urinary antigen assay for serogroup 1, which remains positive after antibiotics are begun. Tuberculosis has a subacute course with upper-lobe cavitation; Mycoplasma causes milder disease in younger patients and antibody titers rise late; influenza does not explain diarrhea, hyponatremia, and a creatine kinase of 1,240 U/L; and blood cultures do not detect Legionella."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Legionella is a gram-negative bacillus that lives inside amoebae in man-made water systems</b> — hot-water plumbing, cooling towers, hot tubs — and infects by inhalation of contaminated aerosol. In the lung it enters alveolar macrophages, blocks fusion of the phagosome with the lysosome, and multiplies inside the cell: it is a <b>facultative intracellular pathogen</b>. That biology explains three things at once: extracellular organisms are scarce, so <b>sputum Gram stain shows neutrophils without bacteria</b>; the lipopolysaccharide of its cell wall takes up Gram stain poorly; and it grows only on <b>buffered charcoal yeast extract</b> agar supplemented with cysteine and iron, so routine blood and sputum cultures are negative. Clinically the clues are the <b>extrapulmonary features</b> that accompany the pneumonia — diarrhea, altered mental status, hyponatremia (inappropriate antidiuretic hormone secretion), elevated aminotransferases, and rhabdomyolysis — and radiographs typically show rapidly progressive, multifocal, often bilateral consolidation.<br> <b>Why the urinary antigen assay</b> — soluble antigen is excreted in urine from the first days of illness; the assay returns a result within an hour, has a sensitivity of 70 to 90 percent and a specificity above 99 percent for <i>L. pneumophila</i> serogroup 1, which causes 80 to 90 percent of cases, and <b>stays positive for days to weeks after antibiotics are started</b>. Its limitation is that it misses other serogroups and species, so a negative result in a strongly suspected case is followed by culture on buffered charcoal yeast extract agar and polymerase chain reaction. Treatment requires a drug that reaches the intracellular organism — a <b>respiratory fluoroquinolone or azithromycin</b> — and beta-lactams are ineffective, which is why identifying the organism directly determines the antibiotic."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Test</th><th style=\"width:40%\">When it is the right test</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Urinary Legionella antigen (answer)</b></td><td><b>Water exposure + pneumonia with diarrhea, confusion, hyponatremia, high CK, and a Gram stain without organisms</b></td><td><b>Hot-tub resort, watery diarrhea, confusion, Na 126, CK 1,240, no organisms on Gram stain</b></td></tr> <tr><td>Two sets of blood cultures (closest rival)</td><td>Baseline test in severe pneumonia — detects pneumococcal or staphylococcal bacteremia</td><td>Legionella does not grow on routine media, so cultures stay negative</td></tr> <tr><td>Acid-fast stain of sputum</td><td>Weeks to months of cough, weight loss, night sweats; upper-lobe cavities or nodules</td><td>Four-day acute course, no cavitation</td></tr> <tr><td>Mycoplasma antibody titers</td><td>Mild atypical pneumonia in a young patient; acute and convalescent titers compared</td><td>Older, severe, multifocal consolidation; result too slow</td></tr> <tr><td>Nasopharyngeal influenza antigen</td><td>Acute fever, myalgia, and cough in influenza season to decide on antivirals</td><td>Does not explain diarrhea, hyponatremia, aminotransferase and CK elevation</td></tr> </tbody></table> <b>The closest rival is blood cultures</b>, because they are ordered in every severe pneumonia. The dividing line is <b>what the test is meant to find</b>: this question asks for the causative organism in a patient whose picture points to Legionella, an organism that routine cultures cannot grow. Blood cultures are still sent, but the urinary antigen assay is the test that identifies the cause."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A nasopharyngeal influenza antigen test is considered because of acute high fever and cough, but influenza does not explain watery diarrhea, confusion, a sodium of 126 mEq/L, a creatine kinase of 1,240 U/L, bilateral multifocal consolidation, or exposure to a hot tub, and the neutrophil-predominant leukocytosis argues against it. A patient in influenza season with abrupt fever, myalgia, and dry cough of one day and a clear radiograph would make this the appropriate test.\n(B) Two sets of blood cultures are a standard part of the evaluation of severe pneumonia and should indeed be drawn, but Legionella is an intracellular organism that rarely causes bacteremia and does not grow on routine blood-culture media, so they cannot identify this cause. The question asks for the test that identifies the organism. If the Gram stain had shown gram-positive diplococci with lobar consolidation and pneumococcal bacteremia were the concern, blood cultures would be the appropriate answer.\n(D) An acid-fast stain of sputum comes to mind in a smoker with fever, cough, and lung opacities, but tuberculosis runs a course of weeks to months with cough, weight loss, and night sweats and produces upper-lobe nodules and cavities; it does not explain diarrhea, confusion, hyponatremia, or a creatine kinase of 1,240 U/L. This patient has a 4-day febrile illness. Two months of cough with weight loss and an upper-lobe cavity on the radiograph would make this the right test.\n(E) Mycoplasma antibody titers are considered because the Gram stain shows no organisms, which suggests an atypical pathogen. Mycoplasma pneumonia is typically a milder illness of younger patients, the titers must be compared between acute and convalescent sera so the result is late, and it does not account for hyponatremia, aminotransferase and creatine kinase elevation, or hot-tub exposure. A 20-year-old college student with 2 weeks of dry cough and low-grade fever and a unilateral interstitial infiltrate would fit this option."
+   },
+   {
+    "k": "함정",
+    "v": "Do not answer 'severe pneumonia' with 'blood cultures'. Extrapulmonary clues (diarrhea, confusion, hyponatremia, high CK), a Gram stain without organisms, and water exposure together call for the test that detects an organism routine cultures cannot grow."
+   },
+   {
+    "k": "학습목표",
+    "v": "여행 뒤 발열·설사·의식 혼탁·저나트륨혈증과 흉부 X선의 양측 다발성 음영을 보이는 폐렴에서 레지오넬라 폐렴을 의심하고, 일반 배양으로 자라지 않는 이 균의 진단에 소변 항원검사를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (CC BY 4.0) — 55 M, portable AP chest radiograph, human-confirmed bilateral opacities — Grade B; the item asks only for the visible bilateral multifocal opacities and supplies the cause through clinical data; teacher-only · 작성자 판독(2026-09-23): 우측 중·하부와 좌측 폐문 주위·하부의 양측 반점상 경화·간유리 음영, 대엽 균질 경화·공동·큰 흉수 없음, 심전도 전극·케이블 외 장치 없음, 번인 문자 없음 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Legionella infections' — clinical clues, urinary antigen, BCYE culture, therapy · Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia. ATS/IDSA guideline. Am J Respir Crit Care Med 2019;200:e45 — Legionella urinary antigen in severe CAP · Cunha BA, Burillo A, Bouza E. Legionnaires' disease. Lancet 2016;387:376 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …11234748 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "High fever and bilateral multifocal pneumonia after a stay at a resort with a hot tub, with diarrhea, confusion, hyponatremia, elevated aminotransferases and creatine kinase, and a Gram stain without organisms, is Legionella pneumonia, and the organism is identified by the urinary antigen assay",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Blood cultures are routine in severe pneumonia but cannot grow Legionella; the urinary antigen assay is the rapid confirmatory test and stays positive after antibiotics",
+   "steps": 3,
+   "key": [
+    {
+     "item": "영상: bilateral patchy consolidation, most marked in the right mid and lower zones and the left perihilar and lower zone, without cavitation or large effusion",
+     "why": "Rapidly progressive multifocal bilateral consolidation — the usual radiograph of Legionella pneumonia",
+     "also": []
+    },
+    {
+     "item": "returned from a 3-night stay at a resort with a hot tub and spa",
+     "why": "Aerosol from a man-made warm-water system — the route of infection",
+     "also": []
+    },
+    {
+     "item": "For 2 days he has had watery diarrhea 4 to 5 times daily",
+     "why": "Gastrointestinal symptoms accompanying pneumonia — an extrapulmonary clue",
+     "also": []
+    },
+    {
+     "item": "he was confused and slurring his words",
+     "why": "Altered mental status — the neurologic feature of Legionella",
+     "also": []
+    },
+    {
+     "item": "serum sodium of 126 mEq/L",
+     "why": "Hyponatremia is far more common in Legionella than in other bacterial pneumonias",
+     "also": []
+    },
+    {
+     "item": "creatine kinase of 1,240 U/L",
+     "why": "Rhabdomyolysis — an extrapulmonary feature of Legionella",
+     "also": []
+    },
+    {
+     "item": "Gram stain of sputum shows many neutrophils but no organisms",
+     "why": "Intracellular organism that stains poorly — points to a pathogen routine cultures miss",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no neck stiffness",
+     "why": "Lowers the likelihood of meningitis, so the confusion is read as a systemic feature of pneumonia",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "oxygen saturation is 90% on room air",
+     "why": "Hypoxemia and tachypnea — severity that requires admission and oxygen",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has a 20-pack-year smoking history, no diabetes mellitus",
+     "why": "Smoking is a risk factor for Legionella but does not change the test chosen",
+     "also": []
+    }
+   ],
+   "summary": "After warm-water exposure this man has high fever, bilateral multifocal consolidation, diarrhea, confusion, hyponatremia, and a raised creatine kinase, with a Gram stain showing neutrophils but no organisms: Legionella pneumonia. Because the organism does not grow on routine media, the urinary antigen assay identifies it, while blood cultures are sent but cannot confirm the cause.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the Gram stain had shown many gram-positive diplococci with a single lobar consolidation and no diarrhea or hyponatremia, blood cultures to confirm pneumococcal bacteremia would be the more appropriate test for the causative organism"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0098.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1248654060495881396938411234748",
+   "asset_id": "TCIA-COVID19_AR-46144010963210",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …11234748"
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0094",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "응급·중환자·외상 — 흉통 환자의 심전도와 재관류",
+  "type": "응급·중환자·외상 — 흉통 환자의 심전도와 재관류",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-22",
+  "vignette": "71세 여자가 2시간 전부터 계속되는 가슴 가운데의 조이는 통증과 식은땀 때문에 구급차로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 좋아지지 않았다. 10년 전부터 고혈압과 당뇨병으로 약을 먹고 있으며 출혈 병력이나 최근 수술은 없다. 혈압 138/82 mmHg, 맥박 76회/분, 호흡 20회/분, 체온 36.7℃, 산소포화도 96% 이다. 폐음은 깨끗하고 심잡음은 없으며 경정맥 확장은 없다. 아스피린을 씹어 먹게 한 뒤 시행한 12유도 심전도는 그림과 같다. 이 병원은 심혈관조영실이 있어 30분 안에 시술을 시작할 수 있다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "즉시 일차 경피적 관상동맥중재술",
+   "정맥 혈전용해제 투여 후 관찰",
+   "저분자량 헤파린 투여 후 트로포닌 재검",
+   "정맥 니트로글리세린 지속 주입 후 재평가",
+   "응급 관상동맥우회술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 심전도에서 V1~V3 에 r파가 거의 없는 rS/QS 형과 함께 V2·V3 에 J점에서 약 2 mm 위로 볼록한 ST 분절 상승이 있고 V1·V4 에도 경한 ST 상승이 이어지며, 하벽 유도와 V5·V6 에는 ST 상승이 없다 — 전중격 ST상승 심근경색이다. 2시간째 계속되는 허혈성 흉통과 함께 ST상승 심근경색 기준을 만족하므로 재관류가 최우선이고, 첫 의료 접촉에서 120분 안에 시술이 가능한 병원에서는 혈전용해제보다 일차 경피적 관상동맥중재술이 표준이다. 혈전용해제는 시술을 제때 할 수 없을 때의 대안이고, 항응고제와 트로포닌 재검으로 기다리는 것은 ST상승 심근경색에서 허용되지 않으며, 니트로글리세린은 증상 완화 보조일 뿐 재관류가 아니다. 응급 우회술은 해부학적으로 중재술이 불가능하거나 기계적 합병증이 있을 때 선택한다.\n- 원리: <b>ST 분절 상승은 심외막까지 이르는 관통성 허혈의 전기 신호</b>다. 관상동맥이 완전히 막히면 그 영역의 심근이 심내막에서 심외막으로 파도처럼 괴사해 가고(wavefront), 손상 전류가 그 영역을 마주 보는 유도에서 ST 상승으로 나타난다. <b>V1~V3 는 심실중격과 전벽을 마주 보는 유도</b>이므로 여기의 ST 상승은 좌전하행동맥(특히 중격 분지·대각 분지 이전 근위부)의 폐쇄를 뜻하고, r파가 사라지고 QS 형이 되는 것은 그 영역의 탈분극 전위가 소실됐다는 뜻이다. 하벽 유도에 ST 상승이 없고 상호 하강도 뚜렷하지 않아 우관상동맥 영역은 아니다.<br> <b>왜 일차 중재술인가</b> — 괴사는 시간에 비례해 커지므로(「time is muscle」) 치료의 본질은 <b>가장 빠르고 확실한 재개통</b>이다. 일차 경피적 관상동맥중재술은 혈전용해제보다 재개통률이 높고(TIMI 3 흐름 90 % 이상 vs 50~60 %), 재폐쇄와 두개내출혈이 적으며 사망률을 낮춘다. 그래서 첫 의료 접촉에서 <b>120분 안에 풍선 확장이 가능</b>하면 일차 중재술을, 그럴 수 없으면 증상 시작 12시간 안에 혈전용해제를 30분 안에 주고 이후 시술 병원으로 옮기는 약물-침습 전략을 쓴다. 이 환자는 시술 가능 병원에 있고 30분 안에 시작할 수 있으므로 갈등의 여지가 없다. 아스피린·P2Y12 억제제·항응고제는 시술과 함께 가는 보조 치료다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>즉시 일차 경피적 관상동맥중재술(정답)</b></td><td><b>ST상승 심근경색 + 첫 의료 접촉 120분 안에 시술 가능</b></td><td><b>V1~V3 ST 상승, 30분 안에 시술 가능</b></td></tr> <tr><td>정맥 혈전용해제(가장 가까운 오답)</td><td>ST상승 심근경색인데 120분 안에 시술이 불가능하고 증상 12시간 이내, 출혈 금기 없음</td><td>시술 가능 병원 — 혈전용해제의 자리가 없다</td></tr> <tr><td>저분자량 헤파린 + 트로포닌 재검</td><td>ST 상승이 없는 급성 관상동맥증후군에서 위험도 층화 중</td><td>ST 상승이 있어 기다리지 않는다</td></tr> <tr><td>정맥 니트로글리세린 지속 주입</td><td>지속 흉통·고혈압·폐울혈의 증상 조절 보조 — 재관류를 대신하지 못함</td><td>보조 치료일 뿐 최우선 처치가 아니다</td></tr> <tr><td>응급 관상동맥우회술</td><td>중재술 실패·불가능한 해부, 심실중격 파열·유두근 파열 같은 기계적 합병증</td><td>중재술 시도 전, 합병증 소견 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「정맥 혈전용해제」</b>다 — 같은 ST상승 심근경색의 재관류 치료이기 때문이다. 갈림길은 <b>시간과 시설</b>이다. 시술을 120분 안에 시작할 수 있으면 중재술, 없으면 혈전용해제 뒤 이송이다. 이 문제는 「30분 안에 시술 가능」이라는 한 줄이 답을 정한다.\n- 오답 이유:\n  - ② 정맥 혈전용해제는 ST상승 심근경색의 재관류 치료이고 증상 2시간·출혈 금기 없음이라는 조건이 맞아 떠올릴 수 있지만, 첫 의료 접촉에서 120분 안에 시술이 가능하면 일차 중재술이 재개통률·출혈·사망률 모두에서 우월하다. 이 환자는 30분 안에 시술이 가능하다. 시술 병원까지 이송에 3시간이 걸리는 지역 병원이었다면 이 선지가 정답이다.\n  - ③ 저분자량 헤파린을 주고 트로포닌을 재검하는 것은 ST 상승이 없는 급성 관상동맥증후군에서 위험도를 층화하며 초기 보존 치료를 할 때의 접근이다. 이 심전도는 V1~V3 에 ST 상승이 있어 트로포닌 결과와 무관하게 즉시 재관류 대상이다. 심전도에 ST 상승 없이 T파 역전만 있고 혈역학이 안정적이었다면 이 선지가 맞다.\n  - ④ 정맥 니트로글리세린은 계속되는 흉통·고혈압·폐울혈을 조절하는 보조 치료라 떠올릴 수 있지만, 막힌 혈관을 열지 못하므로 재관류를 대신할 수 없고 우심실 경색이나 저혈압에서는 오히려 위험하다. 이 환자의 최우선은 재개통이다. 이미 재관류가 이루어진 뒤 흉통이 계속되고 혈압이 높았다면 이 선지가 적절한 보조 처치가 된다.\n  - ⑤ 응급 관상동맥우회술은 중재술이 실패했거나 해부학적으로 불가능한 좌주간부·다혈관 질환, 또는 심실중격 파열·유두근 파열 같은 기계적 합병증이 있을 때의 재관류 방법이다. 이 환자는 아직 조영술도 하지 않았고 심잡음·폐울혈이 없어 합병증 징후가 없다. 조영술에서 중재술이 불가능한 좌주간부 병변이 확인되었다면 이 선지가 정답이 된다.\n- 함정: 「2시간 이내·출혈 금기 없음」이라는 혈전용해제의 조건이 모두 맞아도, 시술 가능 병원에서는 일차 중재술이 우선이다. 트로포닌 결과를 기다리지 않는다.\n- 학습목표: 급성 흉통 환자의 12유도 심전도에서 V1~V3 의 ST 분절 상승과 Q파를 읽어 전중격 ST상승 심근경색을 인지하고, 시술 가능 병원에서는 혈전용해제가 아니라 일차 경피적 관상동맥중재술을 선택한다\n- 근거·출처: PTB-XL (PhysioNet, CC BY 4.0) record 05895 — 71 F, anteroseptal myocardial infarction (ASMI likelihood 100), 2-cardiologist validated — Grade A; teacher-only · 작성자 판독(2026-09-23): 동리듬 75회/분, V1~V3 rS/QS 에 V2·V3 J점 약 2 mm 위로 볼록한 ST 상승, V1·V4 경한 ST 상승, 하벽 유도·V5·V6 ST 상승 없음, 유도 I 기저선 잡음 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720 — primary PCI if ≤120 min from first medical contact · Rao SV et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the management of patients with acute coronary syndromes. Circulation 2025 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'ST-segment elevation myocardial infarction' — reperfusion strategy selection\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5895 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도에서 V1~V3 에 r파가 거의 없는 rS/QS 형과 함께 V2·V3 에 J점에서 약 2 mm 위로 볼록한 ST 분절 상승이 있고 V1·V4 에도 경한 ST 상승이 이어지며, 하벽 유도와 V5·V6 에는 ST 상승이 없다 — 전중격 ST상승 심근경색이다. 2시간째 계속되는 허혈성 흉통과 함께 ST상승 심근경색 기준을 만족하므로 재관류가 최우선이고, 첫 의료 접촉에서 120분 안에 시술이 가능한 병원에서는 혈전용해제보다 일차 경피적 관상동맥중재술이 표준이다. 혈전용해제는 시술을 제때 할 수 없을 때의 대안이고, 항응고제와 트로포닌 재검으로 기다리는 것은 ST상승 심근경색에서 허용되지 않으며, 니트로글리세린은 증상 완화 보조일 뿐 재관류가 아니다. 응급 우회술은 해부학적으로 중재술이 불가능하거나 기계적 합병증이 있을 때 선택한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>ST 분절 상승은 심외막까지 이르는 관통성 허혈의 전기 신호</b>다. 관상동맥이 완전히 막히면 그 영역의 심근이 심내막에서 심외막으로 파도처럼 괴사해 가고(wavefront), 손상 전류가 그 영역을 마주 보는 유도에서 ST 상승으로 나타난다. <b>V1~V3 는 심실중격과 전벽을 마주 보는 유도</b>이므로 여기의 ST 상승은 좌전하행동맥(특히 중격 분지·대각 분지 이전 근위부)의 폐쇄를 뜻하고, r파가 사라지고 QS 형이 되는 것은 그 영역의 탈분극 전위가 소실됐다는 뜻이다. 하벽 유도에 ST 상승이 없고 상호 하강도 뚜렷하지 않아 우관상동맥 영역은 아니다.<br> <b>왜 일차 중재술인가</b> — 괴사는 시간에 비례해 커지므로(「time is muscle」) 치료의 본질은 <b>가장 빠르고 확실한 재개통</b>이다. 일차 경피적 관상동맥중재술은 혈전용해제보다 재개통률이 높고(TIMI 3 흐름 90 % 이상 vs 50~60 %), 재폐쇄와 두개내출혈이 적으며 사망률을 낮춘다. 그래서 첫 의료 접촉에서 <b>120분 안에 풍선 확장이 가능</b>하면 일차 중재술을, 그럴 수 없으면 증상 시작 12시간 안에 혈전용해제를 30분 안에 주고 이후 시술 병원으로 옮기는 약물-침습 전략을 쓴다. 이 환자는 시술 가능 병원에 있고 30분 안에 시작할 수 있으므로 갈등의 여지가 없다. 아스피린·P2Y12 억제제·항응고제는 시술과 함께 가는 보조 치료다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>즉시 일차 경피적 관상동맥중재술(정답)</b></td><td><b>ST상승 심근경색 + 첫 의료 접촉 120분 안에 시술 가능</b></td><td><b>V1~V3 ST 상승, 30분 안에 시술 가능</b></td></tr> <tr><td>정맥 혈전용해제(가장 가까운 오답)</td><td>ST상승 심근경색인데 120분 안에 시술이 불가능하고 증상 12시간 이내, 출혈 금기 없음</td><td>시술 가능 병원 — 혈전용해제의 자리가 없다</td></tr> <tr><td>저분자량 헤파린 + 트로포닌 재검</td><td>ST 상승이 없는 급성 관상동맥증후군에서 위험도 층화 중</td><td>ST 상승이 있어 기다리지 않는다</td></tr> <tr><td>정맥 니트로글리세린 지속 주입</td><td>지속 흉통·고혈압·폐울혈의 증상 조절 보조 — 재관류를 대신하지 못함</td><td>보조 치료일 뿐 최우선 처치가 아니다</td></tr> <tr><td>응급 관상동맥우회술</td><td>중재술 실패·불가능한 해부, 심실중격 파열·유두근 파열 같은 기계적 합병증</td><td>중재술 시도 전, 합병증 소견 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「정맥 혈전용해제」</b>다 — 같은 ST상승 심근경색의 재관류 치료이기 때문이다. 갈림길은 <b>시간과 시설</b>이다. 시술을 120분 안에 시작할 수 있으면 중재술, 없으면 혈전용해제 뒤 이송이다. 이 문제는 「30분 안에 시술 가능」이라는 한 줄이 답을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 정맥 혈전용해제는 ST상승 심근경색의 재관류 치료이고 증상 2시간·출혈 금기 없음이라는 조건이 맞아 떠올릴 수 있지만, 첫 의료 접촉에서 120분 안에 시술이 가능하면 일차 중재술이 재개통률·출혈·사망률 모두에서 우월하다. 이 환자는 30분 안에 시술이 가능하다. 시술 병원까지 이송에 3시간이 걸리는 지역 병원이었다면 이 선지가 정답이다.\n③ 저분자량 헤파린을 주고 트로포닌을 재검하는 것은 ST 상승이 없는 급성 관상동맥증후군에서 위험도를 층화하며 초기 보존 치료를 할 때의 접근이다. 이 심전도는 V1~V3 에 ST 상승이 있어 트로포닌 결과와 무관하게 즉시 재관류 대상이다. 심전도에 ST 상승 없이 T파 역전만 있고 혈역학이 안정적이었다면 이 선지가 맞다.\n④ 정맥 니트로글리세린은 계속되는 흉통·고혈압·폐울혈을 조절하는 보조 치료라 떠올릴 수 있지만, 막힌 혈관을 열지 못하므로 재관류를 대신할 수 없고 우심실 경색이나 저혈압에서는 오히려 위험하다. 이 환자의 최우선은 재개통이다. 이미 재관류가 이루어진 뒤 흉통이 계속되고 혈압이 높았다면 이 선지가 적절한 보조 처치가 된다.\n⑤ 응급 관상동맥우회술은 중재술이 실패했거나 해부학적으로 불가능한 좌주간부·다혈관 질환, 또는 심실중격 파열·유두근 파열 같은 기계적 합병증이 있을 때의 재관류 방법이다. 이 환자는 아직 조영술도 하지 않았고 심잡음·폐울혈이 없어 합병증 징후가 없다. 조영술에서 중재술이 불가능한 좌주간부 병변이 확인되었다면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「2시간 이내·출혈 금기 없음」이라는 혈전용해제의 조건이 모두 맞아도, 시술 가능 병원에서는 일차 중재술이 우선이다. 트로포닌 결과를 기다리지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 흉통 환자의 12유도 심전도에서 V1~V3 의 ST 분절 상승과 Q파를 읽어 전중격 ST상승 심근경색을 인지하고, 시술 가능 병원에서는 혈전용해제가 아니라 일차 경피적 관상동맥중재술을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL (PhysioNet, CC BY 4.0) record 05895 — 71 F, anteroseptal myocardial infarction (ASMI likelihood 100), 2-cardiologist validated — Grade A; teacher-only · 작성자 판독(2026-09-23): 동리듬 75회/분, V1~V3 rS/QS 에 V2·V3 J점 약 2 mm 위로 볼록한 ST 상승, V1·V4 경한 ST 상승, 하벽 유도·V5·V6 ST 상승 없음, 유도 I 기저선 잡음 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720 — primary PCI if ≤120 min from first medical contact · Rao SV et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the management of patients with acute coronary syndromes. Circulation 2025 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'ST-segment elevation myocardial infarction' — reperfusion strategy selection ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5895 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "2시간째 지속되는 허혈성 흉통에 V1~V3 ST 상승이 있는 ST상승 심근경색이고 30분 안에 시술이 가능하므로 즉시 일차 경피적 관상동맥중재술을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "혈전용해제와 갈리는 것은 시간·시설 — 첫 의료 접촉 120분 안에 시술이 가능한 병원이므로 일차 중재술이 우선이다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "심전도: V2·V3 J점 약 2 mm 위로 볼록한 ST 분절 상승, V1·V4 경한 ST 상승",
+     "why": "인접한 두 유도 이상의 ST 상승 — ST상승 심근경색의 심전도 기준",
+     "also": []
+    },
+    {
+     "item": "심전도: V1~V3 r파가 거의 없는 rS/QS 형",
+     "why": "전중격 탈분극 전위 소실 — 좌전하행동맥 영역의 관통성 손상",
+     "also": []
+    },
+    {
+     "item": "2시간 전부터 계속되는 가슴 가운데의 조이는 통증과 식은땀",
+     "why": "증상 12시간 이내의 진행 중인 허혈 — 재관류 적응",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "폐음은 깨끗하고 심잡음은 없으며 경정맥 확장은 없다",
+     "why": "심부전·기계적 합병증 징후가 없어 응급 우회술 상황이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "이 병원은 심혈관조영실이 있어 30분 안에 시술을 시작할 수 있다",
+     "why": "120분 안에 시술 가능 — 혈전용해제가 아니라 일차 중재술을 고르게 하는 조건",
+     "also": []
+    },
+    {
+     "item": "출혈 병력이나 최근 수술은 없다",
+     "why": "혈전용해제 금기가 없다는 뜻이지만, 시술이 가능하면 그래도 중재술이 우선이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "심전도: 하벽 유도와 V5·V6 에 ST 상승 없음, 동리듬 약 75회/분",
+     "why": "전중격에 국한된 경색이며 서맥·방실차단이 없다 — 재관류 결정은 바뀌지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈압 138/82 mmHg, 맥박 76회/분",
+     "why": "혈역학 안정 — 쇼크가 없어도 재관류의 긴급성은 같다",
+     "also": []
+    },
+    {
+     "item": "10년 전부터 고혈압과 당뇨병",
+     "why": "관상동맥질환의 위험인자 — 사전 확률을 높이지만 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "V1~V3 의 ST 상승과 QS 형은 전중격 ST상승 심근경색이고, 증상 2시간에 시술이 30분 안에 가능하므로 즉시 일차 경피적 관상동맥중재술이 정답이다. 혈전용해제는 시술을 120분 안에 할 수 없을 때의 대안이며, 트로포닌을 기다리거나 니트로글리세린으로 재평가하는 것은 재관류를 늦춘다.",
+   "switch": {
+    "choice": "B",
+    "condition": "가장 가까운 시술 가능 병원까지 이송에 3시간이 걸리는 병원이었다면 정맥 혈전용해제를 30분 안에 투여하고 이송하는 것이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0094.png",
+   "caption": "12유도 심전도, 25 mm/s · 10 mm/mV, 3×4 + II 리듬 스트립 (PTB-XL ECG dataset, PhysioNet, CC BY 4.0 — 원신호 그대로 작도)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/05000/#files-panel",
+   "asset_id": "PTBXL-05895",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 5895"
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0092",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "피부 — 몸통의 색소성 결절, 더모스코피 판독",
+  "type": "피부 — 몸통의 색소성 결절, 더모스코피 판독",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-22",
+  "vignette": "60세 남자가 3년 전부터 등에 생겨 서서히 커지는 반점 때문에 병원에 왔다. 가렵거나 아프지는 않고 출혈은 없었다. 젊어서 야외에서 일했고 흡연은 하지 않으며 피부암의 가족력은 없다. 진찰에서 등 위쪽에 지름 약 8 mm 의 경계가 비교적 뚜렷한 분홍빛 반점이 있고 표면은 약간 광택이 있으며 가장자리를 따라 갈색 점들이 흩어져 있다. 병변은 단단하지 않고 눌러도 함몰되지 않으며 주위에 비슷한 병변은 없다. 더모스코피 소견은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "지루각화증",
+   "피부섬유종",
+   "색소모반",
+   "기저세포암",
+   "악성 흑색종"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 더모스코피에서 분홍-흰색의 광택 있는 배경 위에 회갈색 잎사귀 모양(leaf-like) 구조와 바퀴살(spoke-wheel) 모양 구조가 흩어져 있고, 멜라닌세포 병변의 기본 소견인 색소 그물(pigment network)이 없으며 배경에 가는 나뭇가지 모양 혈관이 비친다. 60세 남자의 햇빛 노출 부위에 수년에 걸쳐 서서히 커진 광택 있는 분홍 반점이라는 임상 맥락과 합쳐지면 색소성 기저세포암이다. 궤양·청백색 베일·비대칭 점과 줄무늬가 없어 흑색종과 거리가 있고, 면포모양 개구부·뇌이랑 모양이 없어 지루각화증도, 중심 흰 반흔에 주변 색소 그물이 없어 피부섬유종도 아니다.\n- 원리: <b>기저세포암은 모낭 상피의 기저세포에서 생기는 종양</b>으로 종양 둥지가 진피 안에서 소엽 모양으로 자라고 둥지 주변에 멜라닌세포와 멜라닌 함유 대식세포가 끼어들면 색소성 아형이 된다. 더모스코피에서 <b>잎사귀 모양 구조</b>는 진피 얕은 곳에서 소엽 모양으로 뻗은 색소성 종양 둥지가 단풍잎처럼 보이는 것이고, <b>바퀴살 모양 구조</b>는 중심의 짙은 색소 축에서 방사상으로 뻗는 종양 둥지다. <b>크고 청회색 난원형 둥지·다발성 청회색 소구</b>는 더 깊은 색소성 둥지, <b>나뭇가지 모양 혈관</b>은 종양 기질의 확장된 모세혈관, <b>궤양·광택 있는 흰 부위</b>는 표피 파괴와 섬유화를 반영한다. 이 구조들은 멜라닌세포가 표피 능선을 따라 배열될 때 생기는 <b>색소 그물</b>과 근본적으로 다르다 — 그래서 기저세포암 더모스코피 판독의 첫 단계는 <b>「색소 그물이 없다」</b>는 음성 기준이고, 둘째가 위의 양성 기준 중 하나 이상이다.<br> <b>왜 감별이 중요한가</b> — 기저세포암은 국소 파괴는 하지만 전이가 매우 드물어 절제 여유가 작은 완전 절제나 표재형이면 국소 치료로 충분하다. 반면 흑색종은 두께에 따라 절제 여유와 감시림프절 생검이 결정되고 예후가 완전히 다르다. 두 종양 모두 색소성일 수 있으므로 <b>구조의 종류</b>로 갈라야 하며, 확진은 절제 또는 펀치 생검의 조직검사다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:44%\">더모스코피의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>기저세포암(정답)</b></td><td><b>색소 그물 없음 + 잎사귀 모양·바퀴살 모양·청회색 난원형 둥지·나뭇가지 모양 혈관·궤양 중 하나 이상</b></td><td><b>색소 그물 없음, 잎사귀·바퀴살 구조, 나뭇가지 모양 혈관</b></td></tr> <tr><td>악성 흑색종(가장 가까운 오답)</td><td>비정형 색소 그물, 비대칭 점·소구, 불규칙 줄무늬, 청백색 베일, 여러 색조, 퇴행 구조</td><td>색소 그물·줄무늬·청백색 베일 없음</td></tr> <tr><td>지루각화증</td><td>면포모양 개구부, 좁쌀 모양 낭, 뇌이랑 모양 고랑, 경계가 「도장 찍은 듯」 명확</td><td>개구부·낭·뇌이랑 모양 없음</td></tr> <tr><td>피부섬유종</td><td>중심 흰 반흔 모양 부위와 주변의 섬세한 색소 그물, 촉진 시 단단하고 집으면 함몰(dimple)</td><td>단단하지 않고 함몰 없음, 색소 그물 없음</td></tr> <tr><td>색소모반</td><td>규칙적 색소 그물 또는 균일한 소구, 대칭, 한두 가지 색조</td><td>색소 그물 없음, 분홍 배경에 회갈색 구조가 국소적</td></tr> </tbody></table> <b>가장 가까운 오답은 「악성 흑색종」</b>이다 — 갈색 점이 흩어진 색소성 병변이라는 겉모습이 겹치기 때문이다. 갈림길은 <b>색소 그물의 유무와 구조의 종류</b>다. 색소 그물·줄무늬·청백색 베일이 있으면 멜라닌세포 계열로 보고 비대칭·다색조를 따지며, 색소 그물이 없고 잎사귀·바퀴살·나뭇가지 혈관이 보이면 기저세포암으로 본다. 어느 쪽이든 임상적으로 의심되면 조직검사로 확정한다.\n- 오답 이유:\n  - ① 지루각화증은 고령의 몸통에 흔한 갈색 병변이라 떠올릴 수 있지만, 더모스코피에서 면포모양 개구부·좁쌀 모양 낭·뇌이랑 모양 고랑과 도장 찍은 듯한 경계가 특징이다. 이 병변은 그런 각질 구조가 없고 광택 있는 분홍 배경에 나뭇가지 모양 혈관이 있다. 표면이 사마귀처럼 거칠고 개구부와 낭이 보였다면 이 선지가 맞다.\n  - ② 피부섬유종은 몸통·사지의 작은 갈색 결절로 떠올릴 수 있지만, 중심의 흰 반흔 모양 부위를 섬세한 색소 그물이 둘러싸고 촉진하면 단단하며 양쪽에서 집으면 함몰된다. 이 병변은 단단하지 않고 함몰이 없으며 색소 그물이 없다. 단단한 결절에 함몰 징후와 중심 흰 반흔·주변 색소 그물이 있었다면 이 선지가 정답이 된다.\n  - ③ 색소모반은 가장 흔한 색소성 병변이라 떠올릴 수 있지만, 규칙적인 색소 그물이나 균일한 소구가 대칭적으로 배열되고 색조가 한두 가지다. 이 병변은 색소 그물이 없고 분홍 배경에 회갈색 잎사귀·바퀴살 구조가 국소적으로 놓여 있으며 수년간 커졌다. 대칭적이고 규칙적인 색소 그물이 전체를 채우고 크기 변화가 없었다면 이 선지가 맞다.\n  - ⑤ 악성 흑색종은 갈색 점이 흩어진 색소성 병변이라 떠올릴 수 있지만, 비정형 색소 그물·불규칙 줄무늬·청백색 베일·여러 색조 같은 멜라닌세포 병변의 구조가 있어야 한다. 이 병변은 색소 그물이 없고 잎사귀·바퀴살 모양 구조가 분홍 배경에 놓여 있다. 색소 그물이 비정형이고 여러 색조에 청백색 베일이 있었다면 이 선지가 정답이다.\n- 함정: 「갈색 색소 병변 = 멜라닌세포 병변」으로 시작하지 않는다. 판독의 첫 단계는 색소 그물의 유무이고, 없으면 기저세포암의 양성 기준(잎사귀·바퀴살·청회색 둥지·나뭇가지 혈관·궤양)을 찾는다.\n- 학습목표: 몸통의 서서히 커지는 색소성 병변에서 더모스코피의 잎사귀 모양·바퀴살 모양 구조와 색소 그물의 부재를 읽고 색소성 기저세포암을 흑색종·지루각화증·피부섬유종·색소모반과 감별한다\n- 근거·출처: ISIC Archive ISIC_0001120 (CC0 1.0) — 60 M, posterior trunk, dermoscopic image, histopathology-confirmed basal cell carcinoma — Grade A; teacher-only · 작성자 판독(2026-09-23): 분홍-흰 광택 배경 위 회갈색 잎사귀 모양·바퀴살 모양 색소 구조, 색소 그물 없음, 가는 나뭇가지 모양 혈관, 궤양·청백색 베일·줄무늬 없음, 문자·식별 표지 없음 · Menzies SW et al. Surface microscopy of pigmented basal cell carcinoma. Arch Dermatol 2000;136:1012 — 색소 그물 부재 + 양성 기준 · Lallas A et al. The dermoscopic universe of basal cell carcinoma. Dermatol Pract Concept 2014;4:11 · Bolognia JL et al. Dermatology, 5th ed., ch. 'Basal cell carcinoma' and 'Dermoscopy'\n\n## 출처\n- ISIC Archive ISIC_0001120 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 분홍-흰색의 광택 있는 배경 위에 회갈색 잎사귀 모양(leaf-like) 구조와 바퀴살(spoke-wheel) 모양 구조가 흩어져 있고, 멜라닌세포 병변의 기본 소견인 색소 그물(pigment network)이 없으며 배경에 가는 나뭇가지 모양 혈관이 비친다. 60세 남자의 햇빛 노출 부위에 수년에 걸쳐 서서히 커진 광택 있는 분홍 반점이라는 임상 맥락과 합쳐지면 색소성 기저세포암이다. 궤양·청백색 베일·비대칭 점과 줄무늬가 없어 흑색종과 거리가 있고, 면포모양 개구부·뇌이랑 모양이 없어 지루각화증도, 중심 흰 반흔에 주변 색소 그물이 없어 피부섬유종도 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>기저세포암은 모낭 상피의 기저세포에서 생기는 종양</b>으로 종양 둥지가 진피 안에서 소엽 모양으로 자라고 둥지 주변에 멜라닌세포와 멜라닌 함유 대식세포가 끼어들면 색소성 아형이 된다. 더모스코피에서 <b>잎사귀 모양 구조</b>는 진피 얕은 곳에서 소엽 모양으로 뻗은 색소성 종양 둥지가 단풍잎처럼 보이는 것이고, <b>바퀴살 모양 구조</b>는 중심의 짙은 색소 축에서 방사상으로 뻗는 종양 둥지다. <b>크고 청회색 난원형 둥지·다발성 청회색 소구</b>는 더 깊은 색소성 둥지, <b>나뭇가지 모양 혈관</b>은 종양 기질의 확장된 모세혈관, <b>궤양·광택 있는 흰 부위</b>는 표피 파괴와 섬유화를 반영한다. 이 구조들은 멜라닌세포가 표피 능선을 따라 배열될 때 생기는 <b>색소 그물</b>과 근본적으로 다르다 — 그래서 기저세포암 더모스코피 판독의 첫 단계는 <b>「색소 그물이 없다」</b>는 음성 기준이고, 둘째가 위의 양성 기준 중 하나 이상이다.<br> <b>왜 감별이 중요한가</b> — 기저세포암은 국소 파괴는 하지만 전이가 매우 드물어 절제 여유가 작은 완전 절제나 표재형이면 국소 치료로 충분하다. 반면 흑색종은 두께에 따라 절제 여유와 감시림프절 생검이 결정되고 예후가 완전히 다르다. 두 종양 모두 색소성일 수 있으므로 <b>구조의 종류</b>로 갈라야 하며, 확진은 절제 또는 펀치 생검의 조직검사다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단</th><th style=\"width:44%\">더모스코피의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>기저세포암(정답)</b></td><td><b>색소 그물 없음 + 잎사귀 모양·바퀴살 모양·청회색 난원형 둥지·나뭇가지 모양 혈관·궤양 중 하나 이상</b></td><td><b>색소 그물 없음, 잎사귀·바퀴살 구조, 나뭇가지 모양 혈관</b></td></tr> <tr><td>악성 흑색종(가장 가까운 오답)</td><td>비정형 색소 그물, 비대칭 점·소구, 불규칙 줄무늬, 청백색 베일, 여러 색조, 퇴행 구조</td><td>색소 그물·줄무늬·청백색 베일 없음</td></tr> <tr><td>지루각화증</td><td>면포모양 개구부, 좁쌀 모양 낭, 뇌이랑 모양 고랑, 경계가 「도장 찍은 듯」 명확</td><td>개구부·낭·뇌이랑 모양 없음</td></tr> <tr><td>피부섬유종</td><td>중심 흰 반흔 모양 부위와 주변의 섬세한 색소 그물, 촉진 시 단단하고 집으면 함몰(dimple)</td><td>단단하지 않고 함몰 없음, 색소 그물 없음</td></tr> <tr><td>색소모반</td><td>규칙적 색소 그물 또는 균일한 소구, 대칭, 한두 가지 색조</td><td>색소 그물 없음, 분홍 배경에 회갈색 구조가 국소적</td></tr> </tbody></table> <b>가장 가까운 오답은 「악성 흑색종」</b>이다 — 갈색 점이 흩어진 색소성 병변이라는 겉모습이 겹치기 때문이다. 갈림길은 <b>색소 그물의 유무와 구조의 종류</b>다. 색소 그물·줄무늬·청백색 베일이 있으면 멜라닌세포 계열로 보고 비대칭·다색조를 따지며, 색소 그물이 없고 잎사귀·바퀴살·나뭇가지 혈관이 보이면 기저세포암으로 본다. 어느 쪽이든 임상적으로 의심되면 조직검사로 확정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 지루각화증은 고령의 몸통에 흔한 갈색 병변이라 떠올릴 수 있지만, 더모스코피에서 면포모양 개구부·좁쌀 모양 낭·뇌이랑 모양 고랑과 도장 찍은 듯한 경계가 특징이다. 이 병변은 그런 각질 구조가 없고 광택 있는 분홍 배경에 나뭇가지 모양 혈관이 있다. 표면이 사마귀처럼 거칠고 개구부와 낭이 보였다면 이 선지가 맞다.\n② 피부섬유종은 몸통·사지의 작은 갈색 결절로 떠올릴 수 있지만, 중심의 흰 반흔 모양 부위를 섬세한 색소 그물이 둘러싸고 촉진하면 단단하며 양쪽에서 집으면 함몰된다. 이 병변은 단단하지 않고 함몰이 없으며 색소 그물이 없다. 단단한 결절에 함몰 징후와 중심 흰 반흔·주변 색소 그물이 있었다면 이 선지가 정답이 된다.\n③ 색소모반은 가장 흔한 색소성 병변이라 떠올릴 수 있지만, 규칙적인 색소 그물이나 균일한 소구가 대칭적으로 배열되고 색조가 한두 가지다. 이 병변은 색소 그물이 없고 분홍 배경에 회갈색 잎사귀·바퀴살 구조가 국소적으로 놓여 있으며 수년간 커졌다. 대칭적이고 규칙적인 색소 그물이 전체를 채우고 크기 변화가 없었다면 이 선지가 맞다.\n⑤ 악성 흑색종은 갈색 점이 흩어진 색소성 병변이라 떠올릴 수 있지만, 비정형 색소 그물·불규칙 줄무늬·청백색 베일·여러 색조 같은 멜라닌세포 병변의 구조가 있어야 한다. 이 병변은 색소 그물이 없고 잎사귀·바퀴살 모양 구조가 분홍 배경에 놓여 있다. 색소 그물이 비정형이고 여러 색조에 청백색 베일이 있었다면 이 선지가 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "「갈색 색소 병변 = 멜라닌세포 병변」으로 시작하지 않는다. 판독의 첫 단계는 색소 그물의 유무이고, 없으면 기저세포암의 양성 기준(잎사귀·바퀴살·청회색 둥지·나뭇가지 혈관·궤양)을 찾는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "몸통의 서서히 커지는 색소성 병변에서 더모스코피의 잎사귀 모양·바퀴살 모양 구조와 색소 그물의 부재를 읽고 색소성 기저세포암을 흑색종·지루각화증·피부섬유종·색소모반과 감별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ISIC Archive ISIC_0001120 (CC0 1.0) — 60 M, posterior trunk, dermoscopic image, histopathology-confirmed basal cell carcinoma — Grade A; teacher-only · 작성자 판독(2026-09-23): 분홍-흰 광택 배경 위 회갈색 잎사귀 모양·바퀴살 모양 색소 구조, 색소 그물 없음, 가는 나뭇가지 모양 혈관, 궤양·청백색 베일·줄무늬 없음, 문자·식별 표지 없음 · Menzies SW et al. Surface microscopy of pigmented basal cell carcinoma. Arch Dermatol 2000;136:1012 — 색소 그물 부재 + 양성 기준 · Lallas A et al. The dermoscopic universe of basal cell carcinoma. Dermatol Pract Concept 2014;4:11 · Bolognia JL et al. Dermatology, 5th ed., ch. 'Basal cell carcinoma' and 'Dermoscopy' ## 출처 ISIC Archive ISIC_0001120 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "고령 남자의 몸통에 수년간 서서히 커진 광택 있는 분홍 반점의 더모스코피에서 색소 그물이 없고 잎사귀·바퀴살 모양 구조와 나뭇가지 모양 혈관이 보이면 색소성 기저세포암이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "색소 그물·줄무늬·청백색 베일 같은 멜라닌세포 구조가 없고, 대신 기저세포암 고유의 잎사귀·바퀴살 모양 색소 구조가 분홍 배경에 놓여 있다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "영상: 회갈색 잎사귀 모양·바퀴살 모양 색소 구조",
+     "why": "진피 얕은 곳의 소엽 모양 색소성 종양 둥지 — 기저세포암의 특이 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 색소 그물 없음, 분홍-흰 광택 배경에 가는 나뭇가지 모양 혈관",
+     "why": "멜라닌세포 병변의 기본 구조가 없고 기저세포암 기질의 혈관이 비친다",
+     "also": []
+    },
+    {
+     "item": "3년 전부터 등에 생겨 서서히 커지는 반점",
+     "why": "수년에 걸친 완만한 성장 — 기저세포암의 자연 경과",
+     "also": []
+    },
+    {
+     "item": "젊어서 야외에서 일했고",
+     "why": "누적 자외선 노출 — 기저세포암의 주요 위험인자",
+     "also": []
+    },
+    {
+     "item": "표면은 약간 광택이 있으며",
+     "why": "진주빛 광택 — 기저세포암의 임상 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 궤양·청백색 베일·불규칙 줄무늬 없음",
+     "why": "흑색종 가능성을 낮추는 음성 소견",
+     "also": []
+    },
+    {
+     "item": "병변은 단단하지 않고 눌러도 함몰되지 않으며",
+     "why": "피부섬유종의 촉진 소견이 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "가렵거나 아프지는 않고 출혈은 없었다",
+     "why": "증상 없음은 진단을 가르지 못한다 — 초기 기저세포암도 무증상이다",
+     "also": []
+    },
+    {
+     "item": "피부암의 가족력은 없다",
+     "why": "산발성 기저세포암이 대부분이라 가족력 부재가 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "색소 그물이 없고 잎사귀·바퀴살 모양 구조와 나뭇가지 모양 혈관이 분홍 광택 배경에 놓인 더모스코피는 색소성 기저세포암의 소견이다. 고령·자외선 노출·수년간의 완만한 성장이 이를 뒷받침하며, 흑색종의 구조와 지루각화증·피부섬유종의 특이 소견이 없다.",
+   "switch": {
+    "choice": "E",
+    "condition": "더모스코피에서 비정형 색소 그물과 불규칙 줄무늬, 청백색 베일이 여러 색조로 비대칭하게 보였다면 악성 흑색종이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0092.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001120",
+   "asset_id": "ISIC-ISIC_0001120",
+   "text": "ISIC Archive ISIC_0001120 (CC-0)"
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0101",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "정신 — 세로토닌 작용 약물 병용 후 급성 증후군",
+  "type": "정신 — 세로토닌 작용 약물 병용 후 급성 증후군",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-22",
+  "vignette": "A 24-year-old woman is brought to the emergency department by her roommate because of agitation, tremor, and sweating for 6 hours. She has major depressive disorder treated with sertraline for the past year. Two days ago she began taking tramadol prescribed by a dentist after a tooth extraction, and this morning she took an extra dose for pain. She has no other medical conditions and does not use illicit drugs. Her temperature is 39.2°C, pulse is 128/min, respirations are 24/min, and blood pressure is 158/96 mmHg. She is restless and diaphoretic, her pupils are 7 mm and reactive, and bowel sounds are hyperactive. Muscle tone is increased in the lower extremities more than in the upper extremities, deep tendon reflexes are 4+ at the knees and ankles, and there is sustained clonus at both ankles. Serum creatine kinase is 640 U/L, and leukocyte count is 11,200/mm3. Intravenous fluids and lorazepam are given, and sertraline and tramadol are withheld.",
+  "question": "Which of the following is the most appropriate additional pharmacotherapy?",
+  "options": [
+   "Haloperidol",
+   "Cyproheptadine",
+   "Dantrolene",
+   "Bromocriptine",
+   "Physostigmine"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Sertraline blocks serotonin reuptake and tramadol both inhibits reuptake and releases serotonin; within hours of adding the second drug she developed the triad of serotonin syndrome — mental-status change (agitation), autonomic hyperactivity (fever, tachycardia, hypertension, diaphoresis, mydriasis, hyperactive bowel sounds), and neuromuscular hyperactivity with the defining features of hyperreflexia and inducible and sustained clonus, worse in the legs. After stopping the serotonergic drugs and giving benzodiazepines and fluids, the specific antidote for a moderate to severe case is cyproheptadine, an antihistamine with 5-HT2A antagonist activity. Dantrolene and bromocriptine treat neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity and hyporeflexia; physostigmine treats anticholinergic toxicity, which has dry skin and absent bowel sounds; haloperidol has anticholinergic and dopamine-blocking effects that worsen hyperthermia and confound the picture.\n- 원리: <b>Serotonin syndrome is excess stimulation of postsynaptic 5-HT2A (and 5-HT1A) receptors</b> in the central nervous system and periphery. It requires a drug interaction more often than an overdose: here sertraline blocks the serotonin transporter, and <b>tramadol</b> — used for its mu-opioid effect — also inhibits serotonin reuptake and promotes release, so a therapeutic dose added to an SSRI can tip the balance within hours. The three domains follow the receptor distribution: <b>mental status</b> (agitation, hypomania, confusion) from cortical and limbic 5-HT2A stimulation; <b>autonomic</b> activation (hyperthermia from muscle activity, tachycardia, hypertension, sweating, mydriasis, hyperactive bowel sounds with diarrhea); and <b>neuromuscular</b> excitation — tremor, hyperreflexia, <b>inducible or spontaneous clonus</b>, and hypertonia that are characteristically <b>greater in the lower limbs</b>, because spinal serotonergic pathways facilitate lower motor neurons. The Hunter criteria rest on clonus and hyperreflexia for exactly this reason.<br> <b>Why cyproheptadine, and why the alternatives fail</b> — most cases resolve within 24 hours of stopping the drugs with benzodiazepines, cooling, and fluids. When agitation, hyperthermia, and clonus persist, <b>cyproheptadine</b>, a first-generation antihistamine with potent 5-HT2A antagonism, blocks the receptor that is overstimulated (12 mg orally, then 2 mg every 2 hours). Severe hyperthermia above 41°C is treated by sedation, paralysis, and intubation, not by antipyretics, because the heat comes from muscle activity. <b>Dantrolene</b> and <b>bromocriptine</b> address neuroleptic malignant syndrome, a state of dopamine blockade with rigidity and bradyreflexia that evolves over days; bromocriptine, a dopamine agonist with serotonergic activity, can worsen serotonin syndrome. <b>Physostigmine</b> reverses anticholinergic delirium, which shares fever and agitation but has dry skin, absent bowel sounds, and normal reflexes. <b>Haloperidol</b> adds dopamine blockade and anticholinergic effects, impairs sweating, and can raise the temperature further.\n- 비교: <table><thead><tr><th style=\"width:24%\">Drug / syndrome</th><th style=\"width:44%\">Distinguishing features</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Cyproheptadine — serotonin syndrome (answer)</b></td><td><b>Onset within hours of a serotonergic drug change; hyperreflexia, clonus (legs &gt; arms), mydriasis, hyperactive bowel sounds, diaphoresis</b></td><td><b>6 h after extra tramadol on sertraline; 4+ reflexes, sustained ankle clonus, 7-mm pupils, hyperactive bowels</b></td></tr> <tr><td>Dantrolene / bromocriptine — neuroleptic malignant syndrome (closest rival)</td><td>Days after a dopamine antagonist or dopamine-agonist withdrawal; lead-pipe rigidity, bradyreflexia, bradykinesia, normal pupils, very high CK</td><td>No antipsychotic exposure, hyperreflexia and clonus instead of rigidity, CK only 640</td></tr> <tr><td>Physostigmine — anticholinergic toxicity</td><td>Dry flushed skin, urinary retention, absent bowel sounds, mydriasis with normal reflexes, no clonus</td><td>Diaphoretic, hyperactive bowel sounds, clonus</td></tr> <tr><td>Haloperidol — agitation control</td><td>Psychotic agitation without hyperthermia or autonomic instability</td><td>Dopamine blockade and anticholinergic effect worsen hyperthermia and mimic NMS</td></tr> </tbody></table> <b>The closest rival is neuroleptic malignant syndrome</b> (treated with dantrolene and bromocriptine), because both produce fever, autonomic instability, altered mental status, and raised creatine kinase. The dividing line is <b>the reflexes and the time course</b>: serotonin syndrome brings hyperreflexia and clonus within hours of a serotonergic change, whereas neuroleptic malignant syndrome brings lead-pipe rigidity with reduced reflexes over days after a dopamine antagonist.\n- 오답 이유:\n  - (A) Haloperidol is considered for control of severe agitation, but it blocks dopamine and has anticholinergic effects that impair heat loss, so it can worsen hyperthermia and add features of neuroleptic malignant syndrome to a serotonin syndrome. Agitation in serotonin syndrome is managed with benzodiazepines. In a patient with agitated psychosis and normal temperature, muscle tone, and reflexes, haloperidol would be an acceptable sedative.\n  - (C) Dantrolene is considered because fever, autonomic instability, and a raised creatine kinase resemble neuroleptic malignant syndrome or malignant hyperthermia, for which it is the treatment. Neuroleptic malignant syndrome, however, follows a dopamine antagonist over days and produces lead-pipe rigidity with reduced reflexes, not the hyperreflexia and clonus seen here after a serotonergic drug change. Had she developed rigidity and hyporeflexia 3 days after starting haloperidol, dantrolene would be appropriate.\n  - (D) Bromocriptine comes to mind as the dopamine agonist used for neuroleptic malignant syndrome. This patient has no dopamine antagonist exposure and shows hyperreflexia with clonus rather than rigidity, and bromocriptine has serotonergic activity that can aggravate serotonin syndrome. If the presentation had been bradykinetic rigidity, bradyreflexia, and a creatine kinase of 15,000 U/L days after an antipsychotic, bromocriptine with dantrolene would be the right choice.\n  - (E) Physostigmine is considered because agitation, tachycardia, hyperthermia, and dilated pupils also occur in anticholinergic toxicity, which it reverses. Anticholinergic patients are dry and flushed with absent bowel sounds and urinary retention and have normal reflexes without clonus; this patient is diaphoretic with hyperactive bowel sounds and sustained clonus. A patient who took diphenhydramine with dry skin, no bowel sounds, and normal reflexes would be the setting for physostigmine.\n- 함정: Fever, agitation, and high creatine kinase do not equal neuroleptic malignant syndrome. Ask what changed in the last hours and examine the reflexes: hyperreflexia with clonus after a serotonergic drug is serotonin syndrome, and the antidote is a 5-HT2A antagonist.\n- 학습목표: SSRI 복용 중 트라마돌을 더한 뒤 수시간 안에 생긴 초조·빈맥·고열·유발성 간대성 경련·반사항진·산동에서 세로토닌증후군을 악성증후군·항콜린성 중독과 감별하고, 원인 약물 중단과 벤조디아제핀에 더해 사이프로헵타딘을 선택한다\n- 근거·출처: Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 — Hunter criteria, cyproheptadine, differentiation from NMS and anticholinergic toxicity · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Poisoning and drug overdose' — serotonin syndrome vs neuroleptic malignant syndrome · Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed., ch. 'Serotonin syndrome' and 'Neuroleptic malignant syndrome'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sertraline blocks serotonin reuptake and tramadol both inhibits reuptake and releases serotonin; within hours of adding the second drug she developed the triad of serotonin syndrome — mental-status change (agitation), autonomic hyperactivity (fever, tachycardia, hypertension, diaphoresis, mydriasis, hyperactive bowel sounds), and neuromuscular hyperactivity with the defining features of hyperreflexia and inducible and sustained clonus, worse in the legs. After stopping the serotonergic drugs and giving benzodiazepines and fluids, the specific antidote for a moderate to severe case is cyproheptadine, an antihistamine with 5-HT2A antagonist activity. Dantrolene and bromocriptine treat neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity and hyporeflexia; physostigmine treats anticholinergic toxicity, which has dry skin and absent bowel sounds; haloperidol has anticholinergic and dopamine-blocking effects that worsen hyperthermia and confound the picture."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Serotonin syndrome is excess stimulation of postsynaptic 5-HT2A (and 5-HT1A) receptors</b> in the central nervous system and periphery. It requires a drug interaction more often than an overdose: here sertraline blocks the serotonin transporter, and <b>tramadol</b> — used for its mu-opioid effect — also inhibits serotonin reuptake and promotes release, so a therapeutic dose added to an SSRI can tip the balance within hours. The three domains follow the receptor distribution: <b>mental status</b> (agitation, hypomania, confusion) from cortical and limbic 5-HT2A stimulation; <b>autonomic</b> activation (hyperthermia from muscle activity, tachycardia, hypertension, sweating, mydriasis, hyperactive bowel sounds with diarrhea); and <b>neuromuscular</b> excitation — tremor, hyperreflexia, <b>inducible or spontaneous clonus</b>, and hypertonia that are characteristically <b>greater in the lower limbs</b>, because spinal serotonergic pathways facilitate lower motor neurons. The Hunter criteria rest on clonus and hyperreflexia for exactly this reason.<br> <b>Why cyproheptadine, and why the alternatives fail</b> — most cases resolve within 24 hours of stopping the drugs with benzodiazepines, cooling, and fluids. When agitation, hyperthermia, and clonus persist, <b>cyproheptadine</b>, a first-generation antihistamine with potent 5-HT2A antagonism, blocks the receptor that is overstimulated (12 mg orally, then 2 mg every 2 hours). Severe hyperthermia above 41°C is treated by sedation, paralysis, and intubation, not by antipyretics, because the heat comes from muscle activity. <b>Dantrolene</b> and <b>bromocriptine</b> address neuroleptic malignant syndrome, a state of dopamine blockade with rigidity and bradyreflexia that evolves over days; bromocriptine, a dopamine agonist with serotonergic activity, can worsen serotonin syndrome. <b>Physostigmine</b> reverses anticholinergic delirium, which shares fever and agitation but has dry skin, absent bowel sounds, and normal reflexes. <b>Haloperidol</b> adds dopamine blockade and anticholinergic effects, impairs sweating, and can raise the temperature further."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Drug / syndrome</th><th style=\"width:44%\">Distinguishing features</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Cyproheptadine — serotonin syndrome (answer)</b></td><td><b>Onset within hours of a serotonergic drug change; hyperreflexia, clonus (legs &gt; arms), mydriasis, hyperactive bowel sounds, diaphoresis</b></td><td><b>6 h after extra tramadol on sertraline; 4+ reflexes, sustained ankle clonus, 7-mm pupils, hyperactive bowels</b></td></tr> <tr><td>Dantrolene / bromocriptine — neuroleptic malignant syndrome (closest rival)</td><td>Days after a dopamine antagonist or dopamine-agonist withdrawal; lead-pipe rigidity, bradyreflexia, bradykinesia, normal pupils, very high CK</td><td>No antipsychotic exposure, hyperreflexia and clonus instead of rigidity, CK only 640</td></tr> <tr><td>Physostigmine — anticholinergic toxicity</td><td>Dry flushed skin, urinary retention, absent bowel sounds, mydriasis with normal reflexes, no clonus</td><td>Diaphoretic, hyperactive bowel sounds, clonus</td></tr> <tr><td>Haloperidol — agitation control</td><td>Psychotic agitation without hyperthermia or autonomic instability</td><td>Dopamine blockade and anticholinergic effect worsen hyperthermia and mimic NMS</td></tr> </tbody></table> <b>The closest rival is neuroleptic malignant syndrome</b> (treated with dantrolene and bromocriptine), because both produce fever, autonomic instability, altered mental status, and raised creatine kinase. The dividing line is <b>the reflexes and the time course</b>: serotonin syndrome brings hyperreflexia and clonus within hours of a serotonergic change, whereas neuroleptic malignant syndrome brings lead-pipe rigidity with reduced reflexes over days after a dopamine antagonist."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Haloperidol is considered for control of severe agitation, but it blocks dopamine and has anticholinergic effects that impair heat loss, so it can worsen hyperthermia and add features of neuroleptic malignant syndrome to a serotonin syndrome. Agitation in serotonin syndrome is managed with benzodiazepines. In a patient with agitated psychosis and normal temperature, muscle tone, and reflexes, haloperidol would be an acceptable sedative.\n(C) Dantrolene is considered because fever, autonomic instability, and a raised creatine kinase resemble neuroleptic malignant syndrome or malignant hyperthermia, for which it is the treatment. Neuroleptic malignant syndrome, however, follows a dopamine antagonist over days and produces lead-pipe rigidity with reduced reflexes, not the hyperreflexia and clonus seen here after a serotonergic drug change. Had she developed rigidity and hyporeflexia 3 days after starting haloperidol, dantrolene would be appropriate.\n(D) Bromocriptine comes to mind as the dopamine agonist used for neuroleptic malignant syndrome. This patient has no dopamine antagonist exposure and shows hyperreflexia with clonus rather than rigidity, and bromocriptine has serotonergic activity that can aggravate serotonin syndrome. If the presentation had been bradykinetic rigidity, bradyreflexia, and a creatine kinase of 15,000 U/L days after an antipsychotic, bromocriptine with dantrolene would be the right choice.\n(E) Physostigmine is considered because agitation, tachycardia, hyperthermia, and dilated pupils also occur in anticholinergic toxicity, which it reverses. Anticholinergic patients are dry and flushed with absent bowel sounds and urinary retention and have normal reflexes without clonus; this patient is diaphoretic with hyperactive bowel sounds and sustained clonus. A patient who took diphenhydramine with dry skin, no bowel sounds, and normal reflexes would be the setting for physostigmine."
+   },
+   {
+    "k": "함정",
+    "v": "Fever, agitation, and high creatine kinase do not equal neuroleptic malignant syndrome. Ask what changed in the last hours and examine the reflexes: hyperreflexia with clonus after a serotonergic drug is serotonin syndrome, and the antidote is a 5-HT2A antagonist."
+   },
+   {
+    "k": "학습목표",
+    "v": "SSRI 복용 중 트라마돌을 더한 뒤 수시간 안에 생긴 초조·빈맥·고열·유발성 간대성 경련·반사항진·산동에서 세로토닌증후군을 악성증후군·항콜린성 중독과 감별하고, 원인 약물 중단과 벤조디아제핀에 더해 사이프로헵타딘을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 — Hunter criteria, cyproheptadine, differentiation from NMS and anticholinergic toxicity · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Poisoning and drug overdose' — serotonin syndrome vs neuroleptic malignant syndrome · Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed., ch. 'Serotonin syndrome' and 'Neuroleptic malignant syndrome'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Agitation, hyperthermia, autonomic hyperactivity, and hyperreflexia with sustained clonus within hours of adding tramadol to sertraline is serotonin syndrome; after withdrawal of the drugs and benzodiazepines, the specific additional agent is cyproheptadine",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Neuroleptic malignant syndrome would show lead-pipe rigidity with reduced reflexes developing over days after a dopamine antagonist; this patient has 4+ reflexes and sustained clonus within 6 hours of a serotonergic change",
+   "steps": 3,
+   "key": [
+    {
+     "item": "deep tendon reflexes are 4+ at the knees and ankles, and there is sustained clonus at both ankles",
+     "why": "Hyperreflexia and clonus — the Hunter criteria features that define serotonin toxicity and exclude NMS",
+     "also": []
+    },
+    {
+     "item": "Two days ago she began taking tramadol",
+     "why": "Tramadol inhibits serotonin reuptake and releases serotonin — the interacting drug",
+     "also": []
+    },
+    {
+     "item": "treated with sertraline for the past year",
+     "why": "Baseline serotonin reuptake inhibition that the second drug pushes over the threshold",
+     "also": []
+    },
+    {
+     "item": "this morning she took an extra dose for pain",
+     "why": "The onset within 6 hours of the dose change — the time course of serotonin syndrome",
+     "also": []
+    },
+    {
+     "item": "Muscle tone is increased in the lower extremities more than in the upper extremities",
+     "why": "Lower-limb predominance of hypertonia is characteristic of serotonin syndrome, not of NMS",
+     "also": []
+    },
+    {
+     "item": "her pupils are 7 mm and reactive, and bowel sounds are hyperactive",
+     "why": "Mydriasis with hyperactive bowels — serotonergic, and the opposite of anticholinergic toxicity",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She is restless and diaphoretic",
+     "why": "Sweating excludes the dry skin of anticholinergic toxicity",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Intravenous fluids and lorazepam are given, and sertraline and tramadol are withheld",
+     "why": "First-line steps already done — the question asks for the next specific agent",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum creatine kinase is 640 U/L",
+     "why": "Mild rise from muscle activity — far below the massive elevation of NMS, so it does not favor the rival",
+     "also": []
+    },
+    {
+     "item": "does not use illicit drugs",
+     "why": "Excludes sympathomimetic intoxication as an alternative, without changing treatment",
+     "also": []
+    }
+   ],
+   "summary": "Within hours of adding tramadol to sertraline she developed agitation, hyperthermia, autonomic hyperactivity, and hyperreflexia with sustained clonus, worse in the legs: serotonin syndrome. With the drugs stopped and benzodiazepines given, cyproheptadine, a 5-HT2A antagonist, is the specific addition; dantrolene and bromocriptine belong to neuroleptic malignant syndrome and physostigmine to anticholinergic toxicity.",
+   "switch": {
+    "choice": "C",
+    "condition": "If she had instead developed lead-pipe rigidity with reduced reflexes, bradykinesia, and a creatine kinase of 15,000 U/L over 3 days after starting an antipsychotic, neuroleptic malignant syndrome would be the diagnosis and dantrolene with bromocriptine the treatment"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0100",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "약리 — 흡연 여성의 피임 약물 선택",
+  "type": "약리 — 흡연 여성의 피임 약물 선택",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "37세 여자가 피임 상담을 위해 병원에 왔다. 두 아이가 있고 더 이상 출산 계획은 없으며 남편은 정관수술을 원하지 않는다. 하루 15개비씩 15년째 담배를 피우고 있고 끊을 생각이 없다. 월경은 규칙적이고 양이 많은 편이며 생리통은 심하지 않다. 편두통·혈전증·유방암의 병력과 가족력은 없고 복용 중인 약은 없다. 혈압 118/76 mmHg, 체질량지수 23 kg/m² 이고 진찰에서 이상은 없다. 그녀는 매일 먹는 약도 괜찮고 장기 방법도 괜찮다고 한다.",
+  "question": "가장 적절한 피임 방법은?",
+  "options": [
+   "주기적 금욕법",
+   "레보노르게스트렐 자궁내장치",
+   "저용량 복합 경구피임약",
+   "에스트로겐 피부 부착제",
+   "질 고리(에토노게스트렐-에티닐에스트라디올)"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 35세 이상이면서 하루 15개비 이상 흡연하는 여성에게는 에스트로겐이 든 모든 복합 호르몬 피임법(경구피임약·부착제·질 고리)이 WHO 의학적 적격 기준 4등급, 즉 절대 금기다. 에스트로겐은 간에서 응고인자 합성을 늘리고 흡연은 혈관 내피 손상과 혈소판 활성화를 더해 심근경색·뇌졸중·정맥혈전색전증 위험이 곱해지기 때문이다. 프로게스틴 단독 방법은 이 위험이 없어 흡연과 무관하게 쓸 수 있으며, 그중 레보노르게스트렐 자궁내장치는 가장 효과적이고 월경량까지 줄여 이 환자의 과다 월경에 이점이 있다. 주기적 금욕법은 실패율이 높아 더 이상 출산을 원하지 않는 여성의 1차 선택이 아니다.\n- 원리: <b>복합 호르몬 피임법의 에스트로겐(에티닐에스트라디올)은 간을 첫 통과하며 응고인자 II·VII·X·피브리노겐 합성을 늘리고 항트롬빈·단백질 S 를 줄인다</b> — 그래서 정맥혈전색전증 위험이 3~4배 오른다. 동맥 쪽에서는 혈압을 약간 올리고 혈관 내피의 반응성을 바꾼다. <b>흡연</b>은 니코틴과 일산화탄소로 내피를 손상하고 혈소판을 활성화하며 피브리노겐을 높이는 독립적 동맥 위험인자다. 두 요인이 겹치면 위험은 더해지는 것이 아니라 <b>곱해진다</b>: 35세 이상 하루 15개비 이상 흡연 여성에서 복합 피임약 사용 시 심근경색 위험은 비흡연 비사용자의 20배를 넘는다는 자료가 WHO 기준(<b>MEC 4 = 사용 불가</b>)의 근거다. 34세 이하 흡연이나 35세 이상 15개비 미만은 MEC 2~3 으로 완화되지만 이 환자는 나이와 양이 모두 기준을 넘는다. 부착제와 질 고리는 경로만 다를 뿐 같은 에스트로겐 노출이라 같은 등급이다.<br> <b>왜 프로게스틴 단독인가</b> — 프로게스틴은 응고인자 합성을 의미 있게 늘리지 않아 혈전·심혈관 위험 증가가 확인되지 않았고, 흡연·고혈압·편두통 조짐 같은 에스트로겐 금기 상황에서 MEC 1~2 다. 레보노르게스트렐 자궁내장치는 자궁내막을 얇게 하고 경부 점액을 두껍게 해 실패율이 1 % 미만이며, 자궁내막 위축으로 월경량을 크게 줄여 과다 월경의 치료 효과까지 있다. 프로게스틴 단독 경구제(매일 같은 시간), 피하 이식제, 구리 자궁내장치도 대안이고, 더 이상 출산을 원하지 않으면 불임수술도 상담한다.\n- 비교: <table><thead><tr><th style=\"width:28%\">방법</th><th style=\"width:40%\">그 방법이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>레보노르게스트렐 자궁내장치(정답)</b></td><td><b>에스트로겐 금기 여성, 장기 방법 허용, 과다 월경이 있으면 더 유리</b></td><td><b>흡연 37세, 장기 방법 허용, 월경량 많음</b></td></tr> <tr><td>저용량 복합 경구피임약(가장 가까운 오답)</td><td>35세 미만이거나 비흡연이면서 혈전·편두통 조짐·고혈압이 없는 여성</td><td>35세 이상 + 하루 15개비 흡연 = MEC 4</td></tr> <tr><td>에스트로겐 피부 부착제</td><td>복합 피임약과 같은 적격 조건, 매일 복용이 어려운 여성</td><td>같은 에스트로겐 노출 — 같은 금기</td></tr> <tr><td>질 고리</td><td>복합 피임약과 같은 적격 조건, 월 1회 교체를 선호</td><td>같은 에스트로겐 노출 — 같은 금기</td></tr> <tr><td>주기적 금욕법</td><td>호르몬·기구를 원치 않고 임신을 감수할 수 있을 때</td><td>실패율 높음, 출산 계획 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「저용량 복합 경구피임약」</b>이다 — 환자가 매일 먹는 약도 괜찮다고 했고 저용량이면 안전해 보이기 때문이다. 갈림길은 <b>나이 35세 이상 × 흡연 15개비/일 이상</b>이라는 조합이고, 저용량이라도 에스트로겐이 들어 있는 한 등급은 바뀌지 않는다. 그 조합이 없으면 복합 피임약이 좋은 선택이고, 있으면 에스트로겐이 없는 방법으로 간다.\n- 오답 이유:\n  - ① 주기적 금욕법은 호르몬 위험이 전혀 없어 흡연 여성에게 안전해 보이지만, 전형적 사용 실패율이 연 20 % 를 넘어 더 이상 출산을 원하지 않는 여성의 1차 선택이 될 수 없고 과다 월경에도 도움이 안 된다. 이 환자는 효과적인 장기 방법을 받아들일 수 있다. 종교적 이유로 모든 인공 피임을 거부하고 임신 가능성을 감수하겠다고 했다면 이 선지가 정답이 된다.\n  - ③ 저용량 복합 경구피임약은 매일 복용이 가능하고 월경량도 줄여 주며 저용량이면 안전하다고 생각해 떠올릴 수 있지만, 35세 이상이면서 하루 15개비 이상 흡연하는 여성에게는 용량과 무관하게 WHO 적격 기준 4등급(사용 불가)이다 — 에스트로겐과 흡연이 심근경색·뇌졸중 위험을 곱한다. 이 환자가 28세였거나 하루 5개비 미만이어서 끊을 예정이었다면 이 선지가 정답이 될 수 있다.\n  - ④ 에스트로겐 피부 부착제는 매일 약을 먹지 않아도 되고 간 첫 통과를 피한다고 생각해 떠올릴 수 있지만, 전신 에스트로겐 노출은 경구제와 같거나 오히려 높아 흡연 35세 이상 여성에게 같은 절대 금기다. 이 환자는 나이와 흡연량이 모두 기준을 넘는다. 비흡연 30세 여성이 매일 복용을 자주 잊어 복합 호르몬법을 원했다면 이 선지가 맞다.\n  - ⑤ 질 고리는 월 1회 교체의 편리함 때문에 떠올릴 수 있지만, 에토노게스트렐과 함께 에티닐에스트라디올을 방출하는 복합 호르몬법이라 흡연 35세 이상 여성에게 경구피임약과 같은 4등급이다. 경로가 달라도 에스트로겐의 혈전·심혈관 위험은 같다. 비흡연 32세 여성이 매일 복용 대신 월 1회 방법을 원했다면 이 선지가 적절하다.\n- 함정: 「저용량」「피부 부착」「질 고리」는 에스트로겐 위험을 없애지 못한다. 35세 이상 × 하루 15개비 이상 흡연이면 에스트로겐이 든 모든 방법이 금기이고, 프로게스틴 단독 또는 비호르몬 방법으로 간다.\n- 학습목표: 35세 이상이면서 하루 15개비 이상 흡연하는 여성에게 복합 경구피임약이 절대 금기인 이유(에스트로겐의 혈전·심혈관 위험)를 알고, 에스트로겐이 없는 프로게스틴 단독 방법을 선택한다\n- 근거·출처: World Health Organization. Medical eligibility criteria for contraceptive use, 5th ed. 2015 — combined hormonal contraception: age ≥35 and ≥15 cigarettes/day = category 4 · Curtis KM et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024. MMWR Recomm Rep 2024;73(4):1 · Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed., ch. 'Estrogens, progestins, and the female reproductive tract' — estrogen effects on coagulation factors · Williams Gynecology, 4th ed., ch. 'Contraception and sterilization'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "35세 이상이면서 하루 15개비 이상 흡연하는 여성에게는 에스트로겐이 든 모든 복합 호르몬 피임법(경구피임약·부착제·질 고리)이 WHO 의학적 적격 기준 4등급, 즉 절대 금기다. 에스트로겐은 간에서 응고인자 합성을 늘리고 흡연은 혈관 내피 손상과 혈소판 활성화를 더해 심근경색·뇌졸중·정맥혈전색전증 위험이 곱해지기 때문이다. 프로게스틴 단독 방법은 이 위험이 없어 흡연과 무관하게 쓸 수 있으며, 그중 레보노르게스트렐 자궁내장치는 가장 효과적이고 월경량까지 줄여 이 환자의 과다 월경에 이점이 있다. 주기적 금욕법은 실패율이 높아 더 이상 출산을 원하지 않는 여성의 1차 선택이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>복합 호르몬 피임법의 에스트로겐(에티닐에스트라디올)은 간을 첫 통과하며 응고인자 II·VII·X·피브리노겐 합성을 늘리고 항트롬빈·단백질 S 를 줄인다</b> — 그래서 정맥혈전색전증 위험이 3~4배 오른다. 동맥 쪽에서는 혈압을 약간 올리고 혈관 내피의 반응성을 바꾼다. <b>흡연</b>은 니코틴과 일산화탄소로 내피를 손상하고 혈소판을 활성화하며 피브리노겐을 높이는 독립적 동맥 위험인자다. 두 요인이 겹치면 위험은 더해지는 것이 아니라 <b>곱해진다</b>: 35세 이상 하루 15개비 이상 흡연 여성에서 복합 피임약 사용 시 심근경색 위험은 비흡연 비사용자의 20배를 넘는다는 자료가 WHO 기준(<b>MEC 4 = 사용 불가</b>)의 근거다. 34세 이하 흡연이나 35세 이상 15개비 미만은 MEC 2~3 으로 완화되지만 이 환자는 나이와 양이 모두 기준을 넘는다. 부착제와 질 고리는 경로만 다를 뿐 같은 에스트로겐 노출이라 같은 등급이다.<br> <b>왜 프로게스틴 단독인가</b> — 프로게스틴은 응고인자 합성을 의미 있게 늘리지 않아 혈전·심혈관 위험 증가가 확인되지 않았고, 흡연·고혈압·편두통 조짐 같은 에스트로겐 금기 상황에서 MEC 1~2 다. 레보노르게스트렐 자궁내장치는 자궁내막을 얇게 하고 경부 점액을 두껍게 해 실패율이 1 % 미만이며, 자궁내막 위축으로 월경량을 크게 줄여 과다 월경의 치료 효과까지 있다. 프로게스틴 단독 경구제(매일 같은 시간), 피하 이식제, 구리 자궁내장치도 대안이고, 더 이상 출산을 원하지 않으면 불임수술도 상담한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">방법</th><th style=\"width:40%\">그 방법이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>레보노르게스트렐 자궁내장치(정답)</b></td><td><b>에스트로겐 금기 여성, 장기 방법 허용, 과다 월경이 있으면 더 유리</b></td><td><b>흡연 37세, 장기 방법 허용, 월경량 많음</b></td></tr> <tr><td>저용량 복합 경구피임약(가장 가까운 오답)</td><td>35세 미만이거나 비흡연이면서 혈전·편두통 조짐·고혈압이 없는 여성</td><td>35세 이상 + 하루 15개비 흡연 = MEC 4</td></tr> <tr><td>에스트로겐 피부 부착제</td><td>복합 피임약과 같은 적격 조건, 매일 복용이 어려운 여성</td><td>같은 에스트로겐 노출 — 같은 금기</td></tr> <tr><td>질 고리</td><td>복합 피임약과 같은 적격 조건, 월 1회 교체를 선호</td><td>같은 에스트로겐 노출 — 같은 금기</td></tr> <tr><td>주기적 금욕법</td><td>호르몬·기구를 원치 않고 임신을 감수할 수 있을 때</td><td>실패율 높음, 출산 계획 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「저용량 복합 경구피임약」</b>이다 — 환자가 매일 먹는 약도 괜찮다고 했고 저용량이면 안전해 보이기 때문이다. 갈림길은 <b>나이 35세 이상 × 흡연 15개비/일 이상</b>이라는 조합이고, 저용량이라도 에스트로겐이 들어 있는 한 등급은 바뀌지 않는다. 그 조합이 없으면 복합 피임약이 좋은 선택이고, 있으면 에스트로겐이 없는 방법으로 간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 주기적 금욕법은 호르몬 위험이 전혀 없어 흡연 여성에게 안전해 보이지만, 전형적 사용 실패율이 연 20 % 를 넘어 더 이상 출산을 원하지 않는 여성의 1차 선택이 될 수 없고 과다 월경에도 도움이 안 된다. 이 환자는 효과적인 장기 방법을 받아들일 수 있다. 종교적 이유로 모든 인공 피임을 거부하고 임신 가능성을 감수하겠다고 했다면 이 선지가 정답이 된다.\n③ 저용량 복합 경구피임약은 매일 복용이 가능하고 월경량도 줄여 주며 저용량이면 안전하다고 생각해 떠올릴 수 있지만, 35세 이상이면서 하루 15개비 이상 흡연하는 여성에게는 용량과 무관하게 WHO 적격 기준 4등급(사용 불가)이다 — 에스트로겐과 흡연이 심근경색·뇌졸중 위험을 곱한다. 이 환자가 28세였거나 하루 5개비 미만이어서 끊을 예정이었다면 이 선지가 정답이 될 수 있다.\n④ 에스트로겐 피부 부착제는 매일 약을 먹지 않아도 되고 간 첫 통과를 피한다고 생각해 떠올릴 수 있지만, 전신 에스트로겐 노출은 경구제와 같거나 오히려 높아 흡연 35세 이상 여성에게 같은 절대 금기다. 이 환자는 나이와 흡연량이 모두 기준을 넘는다. 비흡연 30세 여성이 매일 복용을 자주 잊어 복합 호르몬법을 원했다면 이 선지가 맞다.\n⑤ 질 고리는 월 1회 교체의 편리함 때문에 떠올릴 수 있지만, 에토노게스트렐과 함께 에티닐에스트라디올을 방출하는 복합 호르몬법이라 흡연 35세 이상 여성에게 경구피임약과 같은 4등급이다. 경로가 달라도 에스트로겐의 혈전·심혈관 위험은 같다. 비흡연 32세 여성이 매일 복용 대신 월 1회 방법을 원했다면 이 선지가 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "「저용량」「피부 부착」「질 고리」는 에스트로겐 위험을 없애지 못한다. 35세 이상 × 하루 15개비 이상 흡연이면 에스트로겐이 든 모든 방법이 금기이고, 프로게스틴 단독 또는 비호르몬 방법으로 간다."
+   },
+   {
+    "k": "학습목표",
+    "v": "35세 이상이면서 하루 15개비 이상 흡연하는 여성에게 복합 경구피임약이 절대 금기인 이유(에스트로겐의 혈전·심혈관 위험)를 알고, 에스트로겐이 없는 프로게스틴 단독 방법을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "World Health Organization. Medical eligibility criteria for contraceptive use, 5th ed. 2015 — combined hormonal contraception: age ≥35 and ≥15 cigarettes/day = category 4 · Curtis KM et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024. MMWR Recomm Rep 2024;73(4):1 · Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed., ch. 'Estrogens, progestins, and the female reproductive tract' — estrogen effects on coagulation factors · Williams Gynecology, 4th ed., ch. 'Contraception and sterilization'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "금기",
+   "decision": "35세 이상이면서 하루 15개비 이상 흡연하는 여성에게 에스트로겐이 든 복합 호르몬 피임법은 절대 금기이므로, 프로게스틴 단독 방법 중 가장 효과적이고 과다 월경에도 유리한 레보노르게스트렐 자궁내장치를 고른다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "복합 경구피임약과 갈리는 것은 나이 35세 이상 × 흡연 15개비/일 이상의 조합 — 저용량이어도 에스트로겐이 있는 한 4등급이다",
+   "steps": 2,
+   "key": [
+    {
+     "item": "37세 여자",
+     "why": "35세 이상 — 흡연과 결합하면 복합 호르몬법 금기의 나이 기준",
+     "also": []
+    },
+    {
+     "item": "하루 15개비씩 15년째 담배를 피우고 있고 끊을 생각이 없다",
+     "why": "하루 15개비 이상 흡연 — 에스트로겐과 곱해지는 동맥 혈전 위험, 금연 의사 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "편두통·혈전증·유방암의 병력과 가족력은 없고",
+     "why": "다른 호르몬 금기는 없다 — 프로게스틴 단독 방법에 제한이 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "월경은 규칙적이고 양이 많은 편이며",
+     "why": "레보노르게스트렐 자궁내장치가 월경량을 줄인다 — 프로게스틴 단독 방법 중 이것을 고르게 하는 정보",
+     "also": []
+    },
+    {
+     "item": "장기 방법도 괜찮다고 한다",
+     "why": "자궁내장치 같은 장기 가역 피임을 받아들일 수 있다",
+     "also": []
+    },
+    {
+     "item": "더 이상 출산 계획은 없으며",
+     "why": "높은 효과의 방법이 필요하고 불임수술도 상담 대상",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈압 118/76 mmHg, 체질량지수 23 kg/m²",
+     "why": "정상 혈압·체중은 흡연 금기를 상쇄하지 못한다",
+     "also": []
+    },
+    {
+     "item": "매일 먹는 약도 괜찮고",
+     "why": "복합 경구피임약으로 끌리게 하는 정보이지만 금기가 우선한다",
+     "also": []
+    }
+   ],
+   "summary": "37세에 하루 15개비 흡연은 에스트로겐 함유 피임법(경구·부착제·질 고리) 전부의 절대 금기다. 프로게스틴 단독 방법 가운데 레보노르게스트렐 자궁내장치가 가장 효과적이고 과다 월경까지 줄이므로 정답이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "환자가 29세이고 하루 5개비 미만을 피우며 곧 끊을 계획이었다면 저용량 복합 경구피임약도 적절한 선택이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0099",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "내분비·대사 — 갈색세포종의 수술 전 준비",
+  "type": "내분비·대사 — 갈색세포종의 수술 전 준비",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "A 39-year-old woman is scheduled for laparoscopic adrenalectomy in 3 weeks because of a pheochromocytoma. For 6 months she has had episodes of pounding headache, sweating, and palpitations lasting 20 to 30 minutes, and her blood pressure has been difficult to control with lisinopril. Plasma free metanephrines were four times the upper limit of normal, and CT showed a 4-cm mass in the right adrenal gland. She has no other medical conditions and does not smoke. Her pulse is 104/min and blood pressure is 168/102 mmHg. Examination shows a thin, anxious woman with moist palms; there are no abnormalities of the heart, lungs, or abdomen. Serum glucose is 128 mg/dL, and the ECG shows sinus tachycardia without ischemic changes.",
+  "question": "Which of the following is the most appropriate pharmacotherapy to begin now?",
+  "options": [
+   "Propranolol",
+   "Metyrosine",
+   "Hydrochlorothiazide",
+   "Clonidine",
+   "Phenoxybenzamine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Before resection of a catecholamine-secreting tumor the patient must be protected from the hypertensive crisis and arrhythmia that tumor manipulation provokes, and from the vascular collapse that follows sudden removal of catecholamines. The standard is 7 to 14 days of alpha-adrenergic blockade — phenoxybenzamine, a non-competitive alpha blocker, or a selective alpha-1 blocker such as doxazosin — together with liberal salt and fluid intake to re-expand the contracted intravascular volume. A beta blocker is added only after alpha blockade is established, to control the reflex tachycardia; given first, it removes beta-2 vasodilation and leaves alpha-mediated vasoconstriction unopposed, raising blood pressure and risking pulmonary edema. Metyrosine is a second-line adjunct, thiazides worsen volume depletion, and clonidine does not block the receptors that catecholamines act on.\n- 원리: <b>Pheochromocytoma secretes norepinephrine and epinephrine into the circulation in surges.</b> Norepinephrine acting on <b>alpha-1 receptors</b> constricts arterioles and veins, which is the source of the hypertension and of a chronically <b>contracted plasma volume</b>; epinephrine acting on <b>beta-1 receptors</b> drives tachycardia and on <b>beta-2 receptors</b> dilates skeletal-muscle arterioles, partly offsetting the alpha effect. Surgery is dangerous at two moments: when the tumor is handled, catecholamines pour out and can produce a crisis of 250/150 mm Hg with arrhythmia or stroke, and when the venous drainage is clamped, the catecholamine level collapses within minutes and a vasoconstricted, volume-depleted circulation suddenly dilates.<br> <b>Why alpha first</b> — phenoxybenzamine binds alpha receptors irreversibly, so no surge of catecholamines can overcome it; over 7 to 14 days the arterioles and veins relax, the plasma volume refills (helped by salt loading), and the postoperative hypotension becomes manageable. A beta blocker given <b>before</b> alpha blockade is the classic error: blocking beta-2 removes the only vasodilating action of epinephrine while alpha-1 vasoconstriction continues unopposed, so blood pressure rises further, and blocking beta-1 in a heart already strained by catecholamine cardiomyopathy can precipitate pulmonary edema. Once alpha blockade is established, the reflex tachycardia that it unmasks is treated by adding a beta blocker. Metyrosine, which inhibits tyrosine hydroxylase and reduces catecholamine synthesis, is added when blockade alone is insufficient or the tumor is very active.\n- 비교: <table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:42%\">When it is the right choice</th><th>Why not now</th></tr></thead><tbody> <tr><td><b>Phenoxybenzamine (answer)</b></td><td><b>First step of preoperative preparation, 7–14 days before adrenalectomy, with salt and fluid loading</b></td><td><b>Fits — surgery in 3 weeks, untreated alpha-mediated hypertension</b></td></tr> <tr><td>Propranolol (closest rival)</td><td>Added after alpha blockade to control reflex tachycardia or catecholamine-induced arrhythmia</td><td>Given first, unopposed alpha stimulation raises pressure and risks pulmonary edema</td></tr> <tr><td>Metyrosine</td><td>Adjunct when alpha and beta blockade cannot control symptoms, or for metastatic disease</td><td>Second-line; alpha blockade has not been tried</td></tr> <tr><td>Hydrochlorothiazide</td><td>Essential hypertension</td><td>Further depletes the already contracted plasma volume</td></tr> <tr><td>Clonidine</td><td>Diagnostic suppression test; central sympatholytic in essential hypertension</td><td>Does not block receptors on which circulating tumor catecholamines act</td></tr> </tbody></table> <b>The closest rival is propranolol</b> because the patient is tachycardic and palpitations are prominent. The dividing line is <b>the order of blockade</b>: alpha receptors are blocked first, then beta receptors once the alpha effect is established. Tachycardia in an unblocked pheochromocytoma is a reason to hurry alpha blockade, not a reason to start a beta blocker.\n- 오답 이유:\n  - (A) Propranolol seems logical for palpitations and a pulse of 104/min, but starting a beta blocker before alpha blockade removes epinephrine's beta-2 vasodilation while alpha-1 vasoconstriction continues unopposed, so blood pressure climbs and a catecholamine-strained heart may fail. It is the second drug, added after 7 to 14 days of alpha blockade for the reflex tachycardia that alpha blockade unmasks. Had she already been taking phenoxybenzamine for 10 days with a pulse of 110/min, propranolol would be the right addition.\n  - (B) Metyrosine reduces catecholamine synthesis by inhibiting tyrosine hydroxylase and is used in pheochromocytoma, so it comes to mind. It is an adjunct for patients whose blood pressure or symptoms remain uncontrolled despite alpha and beta blockade, or for unresectable metastatic disease, and it causes sedation and extrapyramidal effects. It is not the first step. If her pressure stayed at 170/100 mm Hg despite full-dose phenoxybenzamine and propranolol, adding metyrosine would be appropriate.\n  - (C) Hydrochlorothiazide is a standard antihypertensive, so it is considered for a pressure of 168/102 mm Hg. In pheochromocytoma the plasma volume is already contracted by chronic vasoconstriction, and a diuretic worsens the depletion and the postoperative collapse that follows tumor removal; preoperative management calls for salt and fluid loading, the opposite of diuresis. In a patient with essential hypertension and no catecholamine excess, a thiazide would be a reasonable first agent.\n  - (D) Clonidine is considered because it lowers sympathetic outflow and is used in the clonidine suppression test for pheochromocytoma. It suppresses catecholamine release from neurons, not from the tumor, and it does not block the alpha and beta receptors on which tumor catecholamines act, so it neither prevents the intraoperative crisis nor restores plasma volume. As a diagnostic test when plasma metanephrines are equivocal, or as an antihypertensive in essential hypertension, clonidine would be appropriate.\n- 함정: Tachycardia and palpitations tempt a beta blocker, but in pheochromocytoma the beta blocker comes second. Alpha blockade with volume expansion comes first, always.\n- 학습목표: 발작성 두통·발한·두근거림과 고혈압, 혈장 메타네프린 상승과 부신 종괴로 확인된 갈색세포종에서 수술 전 알파차단제를 먼저 충분히 준 뒤에만 베타차단제를 더한다는 순서를 이해하고, 베타차단제 단독 선행의 위험을 안다\n- 근거·출처: Lenders JWM et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915 — preoperative alpha blockade 7–14 days, beta blocker only after · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Pheochromocytoma' — preoperative management · Williams Textbook of Endocrinology, 14th ed., ch. 'Pheochromocytoma and paraganglioma'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Before resection of a catecholamine-secreting tumor the patient must be protected from the hypertensive crisis and arrhythmia that tumor manipulation provokes, and from the vascular collapse that follows sudden removal of catecholamines. The standard is 7 to 14 days of alpha-adrenergic blockade — phenoxybenzamine, a non-competitive alpha blocker, or a selective alpha-1 blocker such as doxazosin — together with liberal salt and fluid intake to re-expand the contracted intravascular volume. A beta blocker is added only after alpha blockade is established, to control the reflex tachycardia; given first, it removes beta-2 vasodilation and leaves alpha-mediated vasoconstriction unopposed, raising blood pressure and risking pulmonary edema. Metyrosine is a second-line adjunct, thiazides worsen volume depletion, and clonidine does not block the receptors that catecholamines act on."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Pheochromocytoma secretes norepinephrine and epinephrine into the circulation in surges.</b> Norepinephrine acting on <b>alpha-1 receptors</b> constricts arterioles and veins, which is the source of the hypertension and of a chronically <b>contracted plasma volume</b>; epinephrine acting on <b>beta-1 receptors</b> drives tachycardia and on <b>beta-2 receptors</b> dilates skeletal-muscle arterioles, partly offsetting the alpha effect. Surgery is dangerous at two moments: when the tumor is handled, catecholamines pour out and can produce a crisis of 250/150 mm Hg with arrhythmia or stroke, and when the venous drainage is clamped, the catecholamine level collapses within minutes and a vasoconstricted, volume-depleted circulation suddenly dilates.<br> <b>Why alpha first</b> — phenoxybenzamine binds alpha receptors irreversibly, so no surge of catecholamines can overcome it; over 7 to 14 days the arterioles and veins relax, the plasma volume refills (helped by salt loading), and the postoperative hypotension becomes manageable. A beta blocker given <b>before</b> alpha blockade is the classic error: blocking beta-2 removes the only vasodilating action of epinephrine while alpha-1 vasoconstriction continues unopposed, so blood pressure rises further, and blocking beta-1 in a heart already strained by catecholamine cardiomyopathy can precipitate pulmonary edema. Once alpha blockade is established, the reflex tachycardia that it unmasks is treated by adding a beta blocker. Metyrosine, which inhibits tyrosine hydroxylase and reduces catecholamine synthesis, is added when blockade alone is insufficient or the tumor is very active."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:42%\">When it is the right choice</th><th>Why not now</th></tr></thead><tbody> <tr><td><b>Phenoxybenzamine (answer)</b></td><td><b>First step of preoperative preparation, 7–14 days before adrenalectomy, with salt and fluid loading</b></td><td><b>Fits — surgery in 3 weeks, untreated alpha-mediated hypertension</b></td></tr> <tr><td>Propranolol (closest rival)</td><td>Added after alpha blockade to control reflex tachycardia or catecholamine-induced arrhythmia</td><td>Given first, unopposed alpha stimulation raises pressure and risks pulmonary edema</td></tr> <tr><td>Metyrosine</td><td>Adjunct when alpha and beta blockade cannot control symptoms, or for metastatic disease</td><td>Second-line; alpha blockade has not been tried</td></tr> <tr><td>Hydrochlorothiazide</td><td>Essential hypertension</td><td>Further depletes the already contracted plasma volume</td></tr> <tr><td>Clonidine</td><td>Diagnostic suppression test; central sympatholytic in essential hypertension</td><td>Does not block receptors on which circulating tumor catecholamines act</td></tr> </tbody></table> <b>The closest rival is propranolol</b> because the patient is tachycardic and palpitations are prominent. The dividing line is <b>the order of blockade</b>: alpha receptors are blocked first, then beta receptors once the alpha effect is established. Tachycardia in an unblocked pheochromocytoma is a reason to hurry alpha blockade, not a reason to start a beta blocker."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Propranolol seems logical for palpitations and a pulse of 104/min, but starting a beta blocker before alpha blockade removes epinephrine's beta-2 vasodilation while alpha-1 vasoconstriction continues unopposed, so blood pressure climbs and a catecholamine-strained heart may fail. It is the second drug, added after 7 to 14 days of alpha blockade for the reflex tachycardia that alpha blockade unmasks. Had she already been taking phenoxybenzamine for 10 days with a pulse of 110/min, propranolol would be the right addition.\n(B) Metyrosine reduces catecholamine synthesis by inhibiting tyrosine hydroxylase and is used in pheochromocytoma, so it comes to mind. It is an adjunct for patients whose blood pressure or symptoms remain uncontrolled despite alpha and beta blockade, or for unresectable metastatic disease, and it causes sedation and extrapyramidal effects. It is not the first step. If her pressure stayed at 170/100 mm Hg despite full-dose phenoxybenzamine and propranolol, adding metyrosine would be appropriate.\n(C) Hydrochlorothiazide is a standard antihypertensive, so it is considered for a pressure of 168/102 mm Hg. In pheochromocytoma the plasma volume is already contracted by chronic vasoconstriction, and a diuretic worsens the depletion and the postoperative collapse that follows tumor removal; preoperative management calls for salt and fluid loading, the opposite of diuresis. In a patient with essential hypertension and no catecholamine excess, a thiazide would be a reasonable first agent.\n(D) Clonidine is considered because it lowers sympathetic outflow and is used in the clonidine suppression test for pheochromocytoma. It suppresses catecholamine release from neurons, not from the tumor, and it does not block the alpha and beta receptors on which tumor catecholamines act, so it neither prevents the intraoperative crisis nor restores plasma volume. As a diagnostic test when plasma metanephrines are equivocal, or as an antihypertensive in essential hypertension, clonidine would be appropriate."
+   },
+   {
+    "k": "함정",
+    "v": "Tachycardia and palpitations tempt a beta blocker, but in pheochromocytoma the beta blocker comes second. Alpha blockade with volume expansion comes first, always."
+   },
+   {
+    "k": "학습목표",
+    "v": "발작성 두통·발한·두근거림과 고혈압, 혈장 메타네프린 상승과 부신 종괴로 확인된 갈색세포종에서 수술 전 알파차단제를 먼저 충분히 준 뒤에만 베타차단제를 더한다는 순서를 이해하고, 베타차단제 단독 선행의 위험을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lenders JWM et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915 — preoperative alpha blockade 7–14 days, beta blocker only after · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Pheochromocytoma' — preoperative management · Williams Textbook of Endocrinology, 14th ed., ch. 'Pheochromocytoma and paraganglioma'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "A confirmed pheochromocytoma awaiting adrenalectomy in 3 weeks needs alpha-adrenergic blockade with phenoxybenzamine started now, before any beta blocker",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "The tachycardia invites a beta blocker, but beta blockade before alpha blockade leaves alpha-mediated vasoconstriction unopposed; the order is alpha first, beta second",
+   "steps": 2,
+   "key": [
+    {
+     "item": "scheduled for laparoscopic adrenalectomy in 3 weeks because of a pheochromocytoma",
+     "why": "The diagnosis is settled and the task is preoperative preparation — the 7–14 day alpha-blockade window fits",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "blood pressure is 168/102 mmHg",
+     "why": "Alpha-1-mediated vasoconstriction that phenoxybenzamine reverses",
+     "also": []
+    },
+    {
+     "item": "Plasma free metanephrines were four times the upper limit of normal",
+     "why": "Biochemical confirmation of catecholamine excess",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the ECG shows sinus tachycardia without ischemic changes",
+     "why": "No arrhythmia or ischemia that would demand urgent beta blockade under alpha cover",
+     "also": []
+    },
+    {
+     "item": "there are no abnormalities of the heart, lungs, or abdomen",
+     "why": "No heart failure or pulmonary edema — but a beta blocker given first could still precipitate it",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Her pulse is 104/min",
+     "why": "Tachycardia is the lure toward a beta blocker — it is treated after alpha blockade, not before",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "CT showed a 4-cm mass in the right adrenal gland",
+     "why": "Localization for surgery — does not change the drug order",
+     "also": []
+    },
+    {
+     "item": "Serum glucose is 128 mg/dL",
+     "why": "Catecholamine-induced hyperglycemia — resolves after resection, not a treatment target now",
+     "also": []
+    },
+    {
+     "item": "difficult to control with lisinopril",
+     "why": "Failure of an ACE inhibitor is expected — the pressure is receptor-mediated, not renin-mediated",
+     "also": []
+    }
+   ],
+   "summary": "A confirmed pheochromocytoma three weeks before adrenalectomy is prepared with phenoxybenzamine and salt loading for 7 to 14 days; the tachycardia is treated afterward by adding a beta blocker. Beta blockade first, diuretics, and clonidine each worsen the physiology of catecholamine excess.",
+   "switch": {
+    "choice": "A",
+    "condition": "If she had already completed 10 days of phenoxybenzamine with a blood pressure of 128/80 mmHg but a persistent pulse of 110/min, propranolol would be the appropriate drug to add"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0097",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "혈액·종양 — 헤파린 사용 중 혈소판감소와 혈전",
+  "type": "혈액·종양 — 헤파린 사용 중 혈소판감소와 혈전",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "A 68-year-old man who underwent right total knee arthroplasty 8 days ago is evaluated because of pain and swelling of the left calf that began this morning. He has received subcutaneous unfractionated heparin for thromboprophylaxis since surgery. He has hypertension treated with amlodipine and no history of bleeding or clotting disorders. His temperature is 37.1°C, pulse is 92/min, and blood pressure is 138/84 mmHg. The left calf is swollen and tender, and the surgical wound is clean. Laboratory studies show a hemoglobin of 11.8 g/dL, a leukocyte count of 8,400/mm3, and a platelet count of 71,000/mm3; the platelet count on the day of surgery was 236,000/mm3. Prothrombin time and activated partial thromboplastin time are normal, and a peripheral blood smear shows no schistocytes or platelet clumps. Compression ultrasonography shows an occlusive thrombus in the left popliteal vein.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Discontinue heparin and begin argatroban",
+   "Switch to therapeutic-dose enoxaparin",
+   "Begin warfarin and continue heparin until the INR is therapeutic",
+   "Transfuse platelets and place an inferior vena cava filter",
+   "Continue heparin at therapeutic dose and repeat the platelet count in 24 hours"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A fall in the platelet count of more than 50 percent beginning 5 to 10 days after the start of heparin, a nadir above 20,000/mm3, a new venous thrombosis, and no other explanation give a high pretest probability of heparin-induced thrombocytopenia with thrombosis. Heparin has generated IgG antibodies against platelet factor 4–heparin complexes that activate platelets through their Fc receptors, so the disorder is prothrombotic despite the low count. All heparin, including low-molecular-weight heparin, which cross-reacts, must be stopped and a non-heparin anticoagulant such as argatroban started immediately while antibody testing is sent. Warfarin alone in the acute phase lowers protein C and can precipitate venous limb gangrene, platelet transfusion adds fuel to a thrombotic process, and waiting on heparin allows further thrombosis.\n- 원리: <b>Heparin-induced thrombocytopenia is an immune, prothrombotic drug reaction.</b> Heparin binds platelet factor 4 released from platelet alpha granules and exposes neoepitopes; in 5 to 10 days IgG against the PF4–heparin complex appears. The immune complexes bind platelet FcγRIIa receptors and <b>activate platelets</b>, releasing procoagulant microparticles and more PF4, and they also activate monocytes and endothelium to express tissue factor. Activated platelets are cleared by the spleen, so the count falls (typically by more than half, rarely below 20,000/mm3), but thrombin generation is massive — <b>venous and arterial thrombosis occurs in 30 to 50 percent</b> of untreated patients. That is why the picture is paradoxical: a low platelet count with new clots and no bleeding.<br> <b>Why argatroban and not the alternatives</b> — the immediate goals are to remove the antigen (stop every source of heparin, including flushes and coated catheters) and to suppress thrombin. Argatroban is a direct thrombin inhibitor with no cross-reactivity, hepatic clearance, and a short half-life, so it can be titrated by aPTT even in renal failure; bivalirudin, fondaparinux, and direct oral anticoagulants are other non-heparin options. Low-molecular-weight heparin cross-reacts with the antibody in most cases. Warfarin started during acute thrombocytopenia lowers protein C faster than the procoagulant factors and can cause venous limb gangrene; it is added only after the platelet count recovers to at least 150,000/mm3 with overlap. Platelet transfusion supplies more targets for activation and is reserved for life-threatening bleeding. The 4Ts score (thrombocytopenia, timing, thrombosis, other causes) guides pretest probability, and PF4 immunoassay followed by a functional serotonin-release assay confirms the diagnosis.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Stop heparin, begin argatroban (answer)</b></td><td><b>Intermediate or high 4Ts probability of HIT, especially with thrombosis</b></td><td><b>Platelets fell 70 percent on day 8 with a new DVT</b></td></tr> <tr><td>Therapeutic enoxaparin (closest rival)</td><td>Postoperative DVT without suspicion of HIT</td><td>LMWH cross-reacts with PF4–heparin antibodies</td></tr> <tr><td>Warfarin with heparin bridge</td><td>Ordinary DVT; in HIT only after platelets recover above 150,000/mm3 and on a non-heparin agent</td><td>Acute HIT — protein C fall risks venous limb gangrene</td></tr> <tr><td>Platelet transfusion + IVC filter</td><td>Life-threatening bleeding with severe thrombocytopenia; filter when anticoagulation is impossible</td><td>No bleeding; transfusion fuels thrombosis, filter adds thrombus</td></tr> <tr><td>Continue heparin, recheck in 24 h</td><td>Mild early fall (days 1–4) from non-immune heparin-associated thrombocytopenia</td><td>Fall of more than 50 percent on day 8 with thrombosis</td></tr> </tbody></table> <b>The closest rival is switching to therapeutic enoxaparin</b>, because a postoperative deep vein thrombosis would ordinarily be treated that way. The dividing line is <b>the timing and magnitude of the platelet fall</b>: a drop of more than 50 percent beginning 5 to 10 days after heparin exposure, with a new clot and no other cause, means the anticoagulant itself is the cause, and every heparin, low-molecular-weight included, must go.\n- 오답 이유:\n  - (B) Therapeutic-dose enoxaparin is the usual treatment of a postoperative deep vein thrombosis, so it is the natural first thought. But the platelet count has fallen by 70 percent between days 5 and 10 of heparin exposure with a new thrombosis, which is heparin-induced thrombocytopenia, and low-molecular-weight heparin cross-reacts with the PF4–heparin antibody in most patients. Had the platelet count been stable at 230,000/mm3, enoxaparin would be the right choice for this DVT.\n  - (C) Warfarin with a heparin bridge is the traditional regimen for venous thromboembolism, so it comes to mind. In acute HIT, however, heparin must stop, and warfarin started while the platelet count is low depletes protein C before the procoagulant factors fall and can precipitate venous limb gangrene. Warfarin is added only after platelets recover above 150,000/mm3, overlapping with a non-heparin anticoagulant. Once the count had recovered on argatroban, transitioning to warfarin would be appropriate.\n  - (D) Platelet transfusion with an inferior vena cava filter seems to address both the low count and the clot, but HIT is a platelet-activating, prothrombotic state: transfused platelets become new substrate for thrombosis, and a filter is itself a nidus for thrombus in a patient who needs anticoagulation. If the patient had life-threatening bleeding with a platelet count of 8,000/mm3 and an absolute contraindication to anticoagulation, this combination would be considered.\n  - (E) Continuing heparin and rechecking the count is reasonable for the mild, non-immune fall in platelets that occurs within the first 4 days of heparin and resolves spontaneously. Here the fall exceeds 50 percent, begins on day 8, and is accompanied by a new thrombosis, so waiting allows further clotting. A 15 percent fall on postoperative day 2 with no thrombosis would justify observation on heparin.\n- 함정: Do not treat a new clot on heparin by giving more heparin, and do not treat a low platelet count in this setting by giving platelets. The timing (days 5–10) and the size of the fall (over 50 percent) identify the drug as the cause.\n- 학습목표: 헤파린 시작 5~10일 뒤 혈소판이 50 % 이상 떨어지고 새 혈전이 생기면 헤파린유발 혈소판감소증을 인지하고, 모든 헤파린을 끊고 비헤파린 항응고제(아르가트로반)로 바꾸며 혈소판 수혈·와파린 즉시 시작을 피한다\n- 근거·출처: Cuker A et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360 · Greinacher A. Heparin-induced thrombocytopenia. N Engl J Med 2015;373:252 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Disorders of platelets and vessel wall' — HIT pathogenesis, 4Ts score, non-heparin anticoagulants",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A fall in the platelet count of more than 50 percent beginning 5 to 10 days after the start of heparin, a nadir above 20,000/mm3, a new venous thrombosis, and no other explanation give a high pretest probability of heparin-induced thrombocytopenia with thrombosis. Heparin has generated IgG antibodies against platelet factor 4–heparin complexes that activate platelets through their Fc receptors, so the disorder is prothrombotic despite the low count. All heparin, including low-molecular-weight heparin, which cross-reacts, must be stopped and a non-heparin anticoagulant such as argatroban started immediately while antibody testing is sent. Warfarin alone in the acute phase lowers protein C and can precipitate venous limb gangrene, platelet transfusion adds fuel to a thrombotic process, and waiting on heparin allows further thrombosis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Heparin-induced thrombocytopenia is an immune, prothrombotic drug reaction.</b> Heparin binds platelet factor 4 released from platelet alpha granules and exposes neoepitopes; in 5 to 10 days IgG against the PF4–heparin complex appears. The immune complexes bind platelet FcγRIIa receptors and <b>activate platelets</b>, releasing procoagulant microparticles and more PF4, and they also activate monocytes and endothelium to express tissue factor. Activated platelets are cleared by the spleen, so the count falls (typically by more than half, rarely below 20,000/mm3), but thrombin generation is massive — <b>venous and arterial thrombosis occurs in 30 to 50 percent</b> of untreated patients. That is why the picture is paradoxical: a low platelet count with new clots and no bleeding.<br> <b>Why argatroban and not the alternatives</b> — the immediate goals are to remove the antigen (stop every source of heparin, including flushes and coated catheters) and to suppress thrombin. Argatroban is a direct thrombin inhibitor with no cross-reactivity, hepatic clearance, and a short half-life, so it can be titrated by aPTT even in renal failure; bivalirudin, fondaparinux, and direct oral anticoagulants are other non-heparin options. Low-molecular-weight heparin cross-reacts with the antibody in most cases. Warfarin started during acute thrombocytopenia lowers protein C faster than the procoagulant factors and can cause venous limb gangrene; it is added only after the platelet count recovers to at least 150,000/mm3 with overlap. Platelet transfusion supplies more targets for activation and is reserved for life-threatening bleeding. The 4Ts score (thrombocytopenia, timing, thrombosis, other causes) guides pretest probability, and PF4 immunoassay followed by a functional serotonin-release assay confirms the diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Stop heparin, begin argatroban (answer)</b></td><td><b>Intermediate or high 4Ts probability of HIT, especially with thrombosis</b></td><td><b>Platelets fell 70 percent on day 8 with a new DVT</b></td></tr> <tr><td>Therapeutic enoxaparin (closest rival)</td><td>Postoperative DVT without suspicion of HIT</td><td>LMWH cross-reacts with PF4–heparin antibodies</td></tr> <tr><td>Warfarin with heparin bridge</td><td>Ordinary DVT; in HIT only after platelets recover above 150,000/mm3 and on a non-heparin agent</td><td>Acute HIT — protein C fall risks venous limb gangrene</td></tr> <tr><td>Platelet transfusion + IVC filter</td><td>Life-threatening bleeding with severe thrombocytopenia; filter when anticoagulation is impossible</td><td>No bleeding; transfusion fuels thrombosis, filter adds thrombus</td></tr> <tr><td>Continue heparin, recheck in 24 h</td><td>Mild early fall (days 1–4) from non-immune heparin-associated thrombocytopenia</td><td>Fall of more than 50 percent on day 8 with thrombosis</td></tr> </tbody></table> <b>The closest rival is switching to therapeutic enoxaparin</b>, because a postoperative deep vein thrombosis would ordinarily be treated that way. The dividing line is <b>the timing and magnitude of the platelet fall</b>: a drop of more than 50 percent beginning 5 to 10 days after heparin exposure, with a new clot and no other cause, means the anticoagulant itself is the cause, and every heparin, low-molecular-weight included, must go."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Therapeutic-dose enoxaparin is the usual treatment of a postoperative deep vein thrombosis, so it is the natural first thought. But the platelet count has fallen by 70 percent between days 5 and 10 of heparin exposure with a new thrombosis, which is heparin-induced thrombocytopenia, and low-molecular-weight heparin cross-reacts with the PF4–heparin antibody in most patients. Had the platelet count been stable at 230,000/mm3, enoxaparin would be the right choice for this DVT.\n(C) Warfarin with a heparin bridge is the traditional regimen for venous thromboembolism, so it comes to mind. In acute HIT, however, heparin must stop, and warfarin started while the platelet count is low depletes protein C before the procoagulant factors fall and can precipitate venous limb gangrene. Warfarin is added only after platelets recover above 150,000/mm3, overlapping with a non-heparin anticoagulant. Once the count had recovered on argatroban, transitioning to warfarin would be appropriate.\n(D) Platelet transfusion with an inferior vena cava filter seems to address both the low count and the clot, but HIT is a platelet-activating, prothrombotic state: transfused platelets become new substrate for thrombosis, and a filter is itself a nidus for thrombus in a patient who needs anticoagulation. If the patient had life-threatening bleeding with a platelet count of 8,000/mm3 and an absolute contraindication to anticoagulation, this combination would be considered.\n(E) Continuing heparin and rechecking the count is reasonable for the mild, non-immune fall in platelets that occurs within the first 4 days of heparin and resolves spontaneously. Here the fall exceeds 50 percent, begins on day 8, and is accompanied by a new thrombosis, so waiting allows further clotting. A 15 percent fall on postoperative day 2 with no thrombosis would justify observation on heparin."
+   },
+   {
+    "k": "함정",
+    "v": "Do not treat a new clot on heparin by giving more heparin, and do not treat a low platelet count in this setting by giving platelets. The timing (days 5–10) and the size of the fall (over 50 percent) identify the drug as the cause."
+   },
+   {
+    "k": "학습목표",
+    "v": "헤파린 시작 5~10일 뒤 혈소판이 50 % 이상 떨어지고 새 혈전이 생기면 헤파린유발 혈소판감소증을 인지하고, 모든 헤파린을 끊고 비헤파린 항응고제(아르가트로반)로 바꾸며 혈소판 수혈·와파린 즉시 시작을 피한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cuker A et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360 · Greinacher A. Heparin-induced thrombocytopenia. N Engl J Med 2015;373:252 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Disorders of platelets and vessel wall' — HIT pathogenesis, 4Ts score, non-heparin anticoagulants"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "A platelet fall of more than 50 percent beginning 8 days after heparin with a new deep vein thrombosis and no other cause is heparin-induced thrombocytopenia with thrombosis; all heparin is stopped and argatroban is begun immediately",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "An ordinary postoperative DVT would get enoxaparin, but the timing and magnitude of the platelet fall identify heparin as the cause, and low-molecular-weight heparin cross-reacts with the antibody",
+   "steps": 3,
+   "key": [
+    {
+     "item": "a platelet count of 71,000/mm3; the platelet count on the day of surgery was 236,000/mm3",
+     "why": "A fall of about 70 percent — the first T of the 4Ts",
+     "also": []
+    },
+    {
+     "item": "right total knee arthroplasty 8 days ago",
+     "why": "Onset within days 5–10 of heparin exposure — the timing of immune HIT",
+     "also": []
+    },
+    {
+     "item": "subcutaneous unfractionated heparin for thromboprophylaxis since surgery",
+     "why": "Unfractionated heparin after orthopedic surgery — the highest-risk exposure",
+     "also": []
+    },
+    {
+     "item": "Compression ultrasonography shows an occlusive thrombus in the left popliteal vein",
+     "why": "New thrombosis on prophylaxis — HIT with thrombosis, so therapeutic non-heparin anticoagulation is required",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "a peripheral blood smear shows no schistocytes or platelet clumps",
+     "why": "Lowers the likelihood of thrombotic microangiopathy and pseudothrombocytopenia",
+     "also": []
+    },
+    {
+     "item": "Prothrombin time and activated partial thromboplastin time are normal",
+     "why": "Argues against disseminated intravascular coagulation as the cause of the low count",
+     "also": []
+    },
+    {
+     "item": "the surgical wound is clean",
+     "why": "No sepsis to explain thrombocytopenia",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "no history of bleeding or clotting disorders",
+     "why": "No prior bleeding tendency — does not change the choice of anticoagulant",
+     "also": []
+    },
+    {
+     "item": "hemoglobin of 11.8 g/dL",
+     "why": "Expected postoperative anemia — no bleeding that would argue against anticoagulation",
+     "also": []
+    }
+   ],
+   "summary": "A 70 percent platelet fall beginning on postoperative day 8 of unfractionated heparin, together with a new popliteal vein thrombosis and no alternative cause, is heparin-induced thrombocytopenia with thrombosis. Every heparin is stopped and argatroban is started at once; warfarin waits for platelet recovery, and platelets are not transfused.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the platelet count had remained near 230,000/mm3, the popliteal DVT would be an ordinary postoperative thrombosis and therapeutic enoxaparin would be the appropriate treatment"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0096",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "류마티스·근골격 — 류마티스다발근통 환자의 새 두통",
+  "type": "류마티스·근골격 — 류마티스다발근통 환자의 새 두통",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-22",
+  "vignette": "72세 여자가 1주 전부터 시작된 오른쪽 관자놀이의 지속적인 두통 때문에 병원에 왔다. 음식을 씹으면 턱이 아파서 식사를 중간에 쉬어야 하고, 어제부터 오른눈이 몇 분간 흐려졌다가 돌아오는 일이 두 번 있었다. 3개월 전 양쪽 어깨와 엉덩이의 아침 뻣뻣함으로 류마티스다발근통을 진단받고 프레드니솔론 12.5 mg 을 매일 복용해 근육 증상은 좋아진 상태였다. 혈압 134/80 mmHg, 맥박 78회/분, 체온 37.2℃ 이다. 오른쪽 관자동맥이 두껍고 눌러서 아프며 맥박이 약하다. 시력은 양쪽 모두 1.0 이고 안저는 정상이며 신경학적 검사에서 이상은 없다. 혈액검사에서 혈색소 11.2 g/dL, 백혈구 8,900/mm³, 혈소판 452,000/mm³, 적혈구침강속도 88 mm/h, C반응단백 6.4 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "관자동맥 생검 결과를 확인한 뒤 치료를 결정한다",
+   "프레드니솔론을 20 mg 으로 올리고 2주 뒤 재평가한다",
+   "메토트렉세이트를 추가하고 프레드니솔론을 유지한다",
+   "저용량 아스피린을 추가하고 두통에 진통제를 처방한다",
+   "즉시 고용량 글루코코르티코이드를 시작하고 관자동맥 생검을 의뢰한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 류마티스다발근통 환자에게 새로 생긴 측두부 두통, 턱 파행, 일과성 단안 시력 소실, 두껍고 압통이 있으며 맥박이 약한 관자동맥, 저용량 스테로이드 중에도 높은 적혈구침강속도와 C반응단백은 거대세포동맥염의 소견이다. 일과성 시력 소실은 앞허혈시신경병증으로 인한 영구 실명의 전조이므로 생검을 기다리지 말고 즉시 고용량 글루코코르티코이드(프레드니솔론 1 mg/kg 또는 시각 증상이 있으면 메틸프레드니솔론 정맥 충격요법)를 시작해야 한다. 관자동맥 생검은 치료 시작 후 1~2주 안에 해도 조직 소견이 유지되므로 치료를 늦출 이유가 되지 않는다. 류마티스다발근통 용량(12.5~25 mg)으로 올리는 것은 동맥염을 억제하기에 부족하고, 메토트렉세이트는 재발 방지의 보조제이며, 아스피린과 진통제는 원인 치료가 아니다.\n- 원리: <b>거대세포동맥염은 대동맥과 그 두개외 분지, 특히 외경동맥 가지(얕은관자동맥·후두동맥)와 안동맥 가지(뒤섬모체동맥)를 침범하는 육아종성 혈관염</b>이다. 활성화된 수지상세포와 T세포가 내탄력판 근처에 육아종 염증을 일으키고, 내막이 증식해 관강이 좁아진다. 그래서 <b>턱 파행</b>은 씹기근육을 먹이는 상악동맥의 허혈이고, <b>두피 압통과 두꺼운 관자동맥</b>은 얕은관자동맥의 염증, <b>일과성 단안 시력 소실(amaurosis fugax)</b>은 뒤섬모체동맥의 허혈로 시신경유두가 순간적으로 관류를 잃는 것이다. 이 단계에서 치료하지 않으면 <b>앞허혈시신경병증</b>으로 이어져 시력이 영구히 사라지고, 한쪽이 잃으면 며칠 안에 반대쪽도 위험해진다. 류마티스다발근통은 같은 병의 스펙트럼으로, 환자의 15~20 % 에서 거대세포동맥염이 동반되거나 뒤따르므로 <b>저용량 스테로이드로 근육 증상이 좋아진 뒤 새 두개 증상이 생기면 동맥염을 의심</b>해야 한다.<br> <b>왜 즉시 고용량인가</b> — 거대세포동맥염의 유일한 응급은 시력 상실이고, 글루코코르티코이드가 이를 막는 유일한 즉효 치료다. 프레드니솔론 40~60 mg/일이 기본이고 시각 증상이 있으면 메틸프레드니솔론 500~1,000 mg 정맥 충격요법을 3일간 먼저 준다. 생검의 육아종·다핵거대세포·내탄력판 파괴 소견은 치료 시작 후 2주까지도 대부분 남으므로, 생검은 「치료 후」에 해도 진단 가치가 유지된다. 토실리주맙은 재발 감소와 스테로이드 절약을 위해 이후에 더한다.\n- 비교: <table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:40%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>즉시 고용량 글루코코르티코이드 + 생검 의뢰(정답)</b></td><td><b>거대세포동맥염 의심 — 두개 증상·시각 증상·염증 지표 상승</b></td><td><b>턱 파행, 일과성 시력 소실, 압통 있는 관자동맥, ESR 88</b></td></tr> <tr><td>생검 결과 확인 후 치료(가장 가까운 오답)</td><td>임상적 의심이 낮고 시각 증상이 없어 며칠 기다려도 위험이 작을 때</td><td>시각 증상이 있어 기다리면 실명 위험</td></tr> <tr><td>프레드니솔론 20 mg 으로 증량</td><td>류마티스다발근통 단독의 재발 — 12.5~25 mg 범위 조정</td><td>동맥염 억제에 부족한 용량</td></tr> <tr><td>메토트렉세이트 추가</td><td>스테로이드 절약·재발 방지 목적의 보조 치료, 급성기 이후</td><td>급성 허혈 증상을 막지 못한다</td></tr> <tr><td>저용량 아스피린 + 진통제</td><td>거대세포동맥염 치료 중 허혈 합병증 예방의 보조(근거 제한적)</td><td>원인 염증을 억제하지 않는다</td></tr> </tbody></table> <b>가장 가까운 오답은 「생검 결과를 확인한 뒤 치료」</b>다 — 확진 없이 고용량 스테로이드를 쓰는 것이 부담스럽기 때문이다. 갈림길은 <b>시각 증상의 유무</b>다. 일과성 시력 소실·복시·시야 결손이 있으면 생검을 기다리는 며칠이 곧 영구 실명의 위험이고, 생검은 치료 시작 후 1~2주 안에 해도 진단 가치가 유지된다. 시각 증상이 없고 의심이 낮으면 신속히 생검·초음파를 하고 결과에 따라 결정할 수 있다.\n- 오답 이유:\n  - ① 생검 결과를 확인한 뒤 치료하는 것은 고용량 스테로이드의 부작용을 피하려는 합리적 생각이지만, 이 환자는 일과성 단안 시력 소실이 있어 며칠의 지연이 앞허혈시신경병증과 영구 실명으로 이어질 수 있다. 생검은 치료 시작 후 1~2주 안에 해도 육아종 소견이 남는다. 시각 증상 없이 두통만 있고 관자동맥 초음파와 생검을 24~48시간 안에 할 수 있는 상황이었다면 이 선지가 허용된다.\n  - ② 프레드니솔론을 20 mg 으로 올리는 것은 류마티스다발근통이 재발했을 때의 용량 조정이라 떠올릴 수 있지만, 두개 동맥염을 억제하려면 40~60 mg(약 1 mg/kg)이 필요하고 시각 증상이 있으면 정맥 충격요법이 먼저다. 20 mg 은 동맥 허혈을 막기에 부족하다. 새 두통·턱 파행·시각 증상 없이 어깨·엉덩이 뻣뻣함만 다시 나타났다면 이 선지가 정답이 된다.\n  - ③ 메토트렉세이트 추가는 거대세포동맥염과 류마티스다발근통에서 스테로이드 절약과 재발 감소를 위한 보조 치료라 떠올릴 수 있지만, 효과가 나타나기까지 수주가 걸려 급성 허혈 증상을 막지 못한다. 급성기의 답은 고용량 글루코코르티코이드다. 고용량 스테로이드로 안정된 뒤 감량 중 반복 재발하거나 스테로이드 부작용이 문제였다면 이 선지가 맞다.\n  - ④ 저용량 아스피린은 거대세포동맥염의 허혈 합병증을 줄일 수 있다는 관찰 자료가 있어 보조로 쓰기도 하지만, 원인인 혈관벽 염증을 억제하지 못하므로 단독으로 시력 상실을 막지 못하며 진통제는 증상만 가린다. 이 환자는 즉시 염증을 꺼야 한다. 고용량 스테로이드를 이미 시작한 환자에게 출혈 위험이 없을 때 허혈 예방 보조로 더한다면 이 선지가 적절한 부가 처치가 된다.\n- 함정: 「생검으로 확진한 뒤 치료」는 거대세포동맥염에서 통하지 않는다. 시각 증상이 있으면 치료가 먼저이고 생검은 치료 후 2주 안에 해도 된다. 류마티스다발근통 환자의 새 두통은 동맥염이 증명될 때까지 동맥염이다.\n- 학습목표: 류마티스다발근통으로 저용량 스테로이드를 쓰는 고령 환자에서 새로 생긴 측두부 두통·턱 파행·시야 흐림을 거대세포동맥염의 경고 징후로 읽고, 생검 결과를 기다리지 않고 즉시 고용량 글루코코르티코이드를 시작한다\n- 근거·출처: Hellmich B et al. 2018 Update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19 — 의심 즉시 고용량 GC, 생검이 치료를 늦추지 않는다 · Maz M et al. 2021 ACR/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol 2021;73:1349 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'The vasculitis syndromes' — giant cell arteritis and polymyalgia rheumatica · Kelley and Firestein's Textbook of Rheumatology, 11th ed., ch. 'Giant cell arteritis and polymyalgia rheumatica'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "류마티스다발근통 환자에게 새로 생긴 측두부 두통, 턱 파행, 일과성 단안 시력 소실, 두껍고 압통이 있으며 맥박이 약한 관자동맥, 저용량 스테로이드 중에도 높은 적혈구침강속도와 C반응단백은 거대세포동맥염의 소견이다. 일과성 시력 소실은 앞허혈시신경병증으로 인한 영구 실명의 전조이므로 생검을 기다리지 말고 즉시 고용량 글루코코르티코이드(프레드니솔론 1 mg/kg 또는 시각 증상이 있으면 메틸프레드니솔론 정맥 충격요법)를 시작해야 한다. 관자동맥 생검은 치료 시작 후 1~2주 안에 해도 조직 소견이 유지되므로 치료를 늦출 이유가 되지 않는다. 류마티스다발근통 용량(12.5~25 mg)으로 올리는 것은 동맥염을 억제하기에 부족하고, 메토트렉세이트는 재발 방지의 보조제이며, 아스피린과 진통제는 원인 치료가 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>거대세포동맥염은 대동맥과 그 두개외 분지, 특히 외경동맥 가지(얕은관자동맥·후두동맥)와 안동맥 가지(뒤섬모체동맥)를 침범하는 육아종성 혈관염</b>이다. 활성화된 수지상세포와 T세포가 내탄력판 근처에 육아종 염증을 일으키고, 내막이 증식해 관강이 좁아진다. 그래서 <b>턱 파행</b>은 씹기근육을 먹이는 상악동맥의 허혈이고, <b>두피 압통과 두꺼운 관자동맥</b>은 얕은관자동맥의 염증, <b>일과성 단안 시력 소실(amaurosis fugax)</b>은 뒤섬모체동맥의 허혈로 시신경유두가 순간적으로 관류를 잃는 것이다. 이 단계에서 치료하지 않으면 <b>앞허혈시신경병증</b>으로 이어져 시력이 영구히 사라지고, 한쪽이 잃으면 며칠 안에 반대쪽도 위험해진다. 류마티스다발근통은 같은 병의 스펙트럼으로, 환자의 15~20 % 에서 거대세포동맥염이 동반되거나 뒤따르므로 <b>저용량 스테로이드로 근육 증상이 좋아진 뒤 새 두개 증상이 생기면 동맥염을 의심</b>해야 한다.<br> <b>왜 즉시 고용량인가</b> — 거대세포동맥염의 유일한 응급은 시력 상실이고, 글루코코르티코이드가 이를 막는 유일한 즉효 치료다. 프레드니솔론 40~60 mg/일이 기본이고 시각 증상이 있으면 메틸프레드니솔론 500~1,000 mg 정맥 충격요법을 3일간 먼저 준다. 생검의 육아종·다핵거대세포·내탄력판 파괴 소견은 치료 시작 후 2주까지도 대부분 남으므로, 생검은 「치료 후」에 해도 진단 가치가 유지된다. 토실리주맙은 재발 감소와 스테로이드 절약을 위해 이후에 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">처치</th><th style=\"width:40%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>즉시 고용량 글루코코르티코이드 + 생검 의뢰(정답)</b></td><td><b>거대세포동맥염 의심 — 두개 증상·시각 증상·염증 지표 상승</b></td><td><b>턱 파행, 일과성 시력 소실, 압통 있는 관자동맥, ESR 88</b></td></tr> <tr><td>생검 결과 확인 후 치료(가장 가까운 오답)</td><td>임상적 의심이 낮고 시각 증상이 없어 며칠 기다려도 위험이 작을 때</td><td>시각 증상이 있어 기다리면 실명 위험</td></tr> <tr><td>프레드니솔론 20 mg 으로 증량</td><td>류마티스다발근통 단독의 재발 — 12.5~25 mg 범위 조정</td><td>동맥염 억제에 부족한 용량</td></tr> <tr><td>메토트렉세이트 추가</td><td>스테로이드 절약·재발 방지 목적의 보조 치료, 급성기 이후</td><td>급성 허혈 증상을 막지 못한다</td></tr> <tr><td>저용량 아스피린 + 진통제</td><td>거대세포동맥염 치료 중 허혈 합병증 예방의 보조(근거 제한적)</td><td>원인 염증을 억제하지 않는다</td></tr> </tbody></table> <b>가장 가까운 오답은 「생검 결과를 확인한 뒤 치료」</b>다 — 확진 없이 고용량 스테로이드를 쓰는 것이 부담스럽기 때문이다. 갈림길은 <b>시각 증상의 유무</b>다. 일과성 시력 소실·복시·시야 결손이 있으면 생검을 기다리는 며칠이 곧 영구 실명의 위험이고, 생검은 치료 시작 후 1~2주 안에 해도 진단 가치가 유지된다. 시각 증상이 없고 의심이 낮으면 신속히 생검·초음파를 하고 결과에 따라 결정할 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 생검 결과를 확인한 뒤 치료하는 것은 고용량 스테로이드의 부작용을 피하려는 합리적 생각이지만, 이 환자는 일과성 단안 시력 소실이 있어 며칠의 지연이 앞허혈시신경병증과 영구 실명으로 이어질 수 있다. 생검은 치료 시작 후 1~2주 안에 해도 육아종 소견이 남는다. 시각 증상 없이 두통만 있고 관자동맥 초음파와 생검을 24~48시간 안에 할 수 있는 상황이었다면 이 선지가 허용된다.\n② 프레드니솔론을 20 mg 으로 올리는 것은 류마티스다발근통이 재발했을 때의 용량 조정이라 떠올릴 수 있지만, 두개 동맥염을 억제하려면 40~60 mg(약 1 mg/kg)이 필요하고 시각 증상이 있으면 정맥 충격요법이 먼저다. 20 mg 은 동맥 허혈을 막기에 부족하다. 새 두통·턱 파행·시각 증상 없이 어깨·엉덩이 뻣뻣함만 다시 나타났다면 이 선지가 정답이 된다.\n③ 메토트렉세이트 추가는 거대세포동맥염과 류마티스다발근통에서 스테로이드 절약과 재발 감소를 위한 보조 치료라 떠올릴 수 있지만, 효과가 나타나기까지 수주가 걸려 급성 허혈 증상을 막지 못한다. 급성기의 답은 고용량 글루코코르티코이드다. 고용량 스테로이드로 안정된 뒤 감량 중 반복 재발하거나 스테로이드 부작용이 문제였다면 이 선지가 맞다.\n④ 저용량 아스피린은 거대세포동맥염의 허혈 합병증을 줄일 수 있다는 관찰 자료가 있어 보조로 쓰기도 하지만, 원인인 혈관벽 염증을 억제하지 못하므로 단독으로 시력 상실을 막지 못하며 진통제는 증상만 가린다. 이 환자는 즉시 염증을 꺼야 한다. 고용량 스테로이드를 이미 시작한 환자에게 출혈 위험이 없을 때 허혈 예방 보조로 더한다면 이 선지가 적절한 부가 처치가 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「생검으로 확진한 뒤 치료」는 거대세포동맥염에서 통하지 않는다. 시각 증상이 있으면 치료가 먼저이고 생검은 치료 후 2주 안에 해도 된다. 류마티스다발근통 환자의 새 두통은 동맥염이 증명될 때까지 동맥염이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "류마티스다발근통으로 저용량 스테로이드를 쓰는 고령 환자에서 새로 생긴 측두부 두통·턱 파행·시야 흐림을 거대세포동맥염의 경고 징후로 읽고, 생검 결과를 기다리지 않고 즉시 고용량 글루코코르티코이드를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hellmich B et al. 2018 Update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19 — 의심 즉시 고용량 GC, 생검이 치료를 늦추지 않는다 · Maz M et al. 2021 ACR/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol 2021;73:1349 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'The vasculitis syndromes' — giant cell arteritis and polymyalgia rheumatica · Kelley and Firestein's Textbook of Rheumatology, 11th ed., ch. 'Giant cell arteritis and polymyalgia rheumatica'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "류마티스다발근통 환자에게 새로 생긴 측두부 두통·턱 파행·일과성 단안 시력 소실과 압통 있는 관자동맥, 높은 염증 지표는 거대세포동맥염이며, 시각 증상이 있으므로 생검을 기다리지 않고 즉시 고용량 글루코코르티코이드를 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "생검을 기다리는 선택과 갈리는 것은 일과성 시력 소실 — 영구 실명의 전조이므로 치료가 먼저이고, 생검은 치료 후 2주 안에 해도 진단 가치가 유지된다",
+   "steps": 3,
+   "key": [
+    {
+     "item": "어제부터 오른눈이 몇 분간 흐려졌다가 돌아오는 일이 두 번 있었다",
+     "why": "일과성 단안 시력 소실 — 뒤섬모체동맥 허혈, 즉시 치료를 결정하게 하는 소견",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "음식을 씹으면 턱이 아파서 식사를 중간에 쉬어야 하고",
+     "why": "턱 파행 — 거대세포동맥염에 가장 특이적인 증상",
+     "also": []
+    },
+    {
+     "item": "오른쪽 관자동맥이 두껍고 눌러서 아프며 맥박이 약하다",
+     "why": "얕은관자동맥의 염증과 관강 협착",
+     "also": []
+    },
+    {
+     "item": "적혈구침강속도 88 mm/h, C반응단백 6.4 mg/dL",
+     "why": "저용량 스테로이드 중에도 높은 염증 지표 — 동맥염 활성",
+     "also": []
+    },
+    {
+     "item": "3개월 전 양쪽 어깨와 엉덩이의 아침 뻣뻣함으로 류마티스다발근통을 진단받고",
+     "why": "같은 질병 스펙트럼 — 15~20 % 에서 거대세포동맥염이 동반된다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "신경학적 검사에서 이상은 없다",
+     "why": "뇌졸중·두개내 병변 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "프레드니솔론 12.5 mg 을 매일 복용해",
+     "why": "현재 용량이 동맥염을 억제하지 못한다는 뜻 — 증량이 아니라 고용량 전환이 필요",
+     "also": []
+    },
+    {
+     "item": "시력은 양쪽 모두 1.0 이고 안저는 정상이며",
+     "why": "아직 영구 손상 전 — 지금 치료하면 시력을 지킬 수 있는 창",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈색소 11.2 g/dL, 혈소판 452,000/mm³",
+     "why": "만성 염증의 빈혈과 혈소판 증가 — 진단을 뒷받침하지만 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "류마티스다발근통 환자의 새 측두부 두통, 턱 파행, 일과성 시력 소실, 압통 있는 관자동맥, ESR 88 은 거대세포동맥염이다. 시각 증상은 실명의 전조이므로 즉시 고용량 글루코코르티코이드를 시작하고, 관자동맥 생검은 치료 후 2주 안에 의뢰한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "시각 증상과 턱 파행 없이 두통만 있고 관자동맥 초음파·생검을 24~48시간 안에 할 수 있었다면 결과를 보고 치료를 결정하는 것도 허용된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0095",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "소화기·간담췌 — 연하곤란 환자의 다음 검사",
+  "type": "소화기·간담췌 — 연하곤란 환자의 다음 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-22",
+  "vignette": "A 42-year-old man comes to the physician because of 8 months of progressive difficulty swallowing both solids and liquids. He often regurgitates undigested food at night and has had a 5-kg weight loss. He has no heartburn, chest pain, or hematemesis, and he does not smoke or drink alcohol. He has no history of gastrointestinal disease and takes no medications. His temperature is 36.8°C, pulse is 72/min, and blood pressure is 124/78 mmHg. BMI is 22 kg/m2. Physical examination shows no abnormalities. A barium esophagram shows a dilated esophagus with an air-fluid level and smooth, tapered narrowing at the gastroesophageal junction.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Laparoscopic Heller myotomy",
+   "Trial of a proton pump inhibitor",
+   "Botulinum toxin injection into the lower esophageal sphincter",
+   "Upper endoscopy",
+   "Pneumatic dilation of the lower esophageal sphincter"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Progressive dysphagia to solids and liquids from the outset, nocturnal regurgitation of undigested food, weight loss, and a barium esophagram with a dilated esophagus and a smooth bird-beak taper at the gastroesophageal junction point to achalasia. Before any definitive therapy, however, upper endoscopy is required to exclude a tumor infiltrating the gastroesophageal junction that mimics achalasia (pseudoachalasia) and to inspect the mucosa; esophageal manometry then confirms the diagnosis. Pneumatic dilation, Heller myotomy, and botulinum toxin are treatments that follow confirmation, and a proton pump inhibitor treats reflux, which does not explain dysphagia to liquids with a dilated esophagus.\n- 원리: <b>Achalasia is a loss of inhibitory (nitric oxide, VIP) neurons of the myenteric plexus</b> of the distal esophagus. Without inhibitory input the lower esophageal sphincter cannot relax with swallowing and the esophageal body loses peristalsis. Food and liquid therefore stall above a sphincter that never opens, the esophagus dilates, retained food is regurgitated undigested (often at night, with aspiration), and weight falls. Because the obstruction is a functional sphincter and not a mechanical narrowing, <b>dysphagia involves solids and liquids from the beginning</b>, unlike a stricture or tumor, which blocks solids first. Barium shows the dilated body, an air-fluid level of retained contents, and the smooth <b>bird-beak taper</b> of the non-relaxing sphincter.<br> <b>Why endoscopy comes before treatment</b> — an adenocarcinoma of the cardia or gastroesophageal junction infiltrating the myenteric plexus, or a paraneoplastic process, produces the same symptoms, the same barium picture, and even the same manometry (<b>pseudoachalasia</b>). Its clues are older age, rapid onset under a year, and marked weight loss, but none is reliable enough to skip direct inspection. Endoscopy also documents the retained food, the puckered but passable sphincter, and candida esophagitis, and it is required before pneumatic dilation or myotomy. High-resolution manometry then confirms impaired sphincter relaxation with absent peristalsis and classifies the subtype, which guides the choice among dilation, myotomy, and peroral endoscopic myotomy.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Upper endoscopy (answer)</b></td><td><b>Suspected achalasia before confirmation and therapy — excludes tumor at the gastroesophageal junction</b></td><td><b>Weight loss and 8-month course make pseudoachalasia a real concern</b></td></tr> <tr><td>Pneumatic dilation (closest rival)</td><td>Confirmed achalasia (endoscopy and manometry done) in a patient fit for the small perforation risk</td><td>Diagnosis not yet confirmed, tumor not excluded</td></tr> <tr><td>Laparoscopic Heller myotomy</td><td>Confirmed achalasia, especially younger patients or after failed dilation</td><td>Definitive surgery before endoscopy and manometry</td></tr> <tr><td>Proton pump inhibitor trial</td><td>Heartburn-predominant reflux disease, peptic stricture with solid-food dysphagia</td><td>No heartburn, liquids affected, dilated esophagus</td></tr> <tr><td>Botulinum toxin injection</td><td>Confirmed achalasia in patients too frail for dilation or surgery — effect wanes in months</td><td>Not a diagnostic step, and the patient is 42 and fit</td></tr> </tbody></table> <b>The closest rival is pneumatic dilation</b> because the barium picture already suggests achalasia and dilation is an effective first-line treatment. The dividing line is <b>confirmation versus treatment</b>: a treatment for achalasia is chosen only after endoscopy has excluded a tumor at the junction and manometry has confirmed the motor disorder. Ask \"what has not yet been shown?\" before choosing a therapy.\n- 오답 이유:\n  - (A) Laparoscopic Heller myotomy is a durable treatment for achalasia in a young patient, so it comes to mind. It is definitive surgery and is chosen only after endoscopy has excluded pseudoachalasia and manometry has confirmed and subtyped the disorder. Here neither has been done. Had achalasia been confirmed in this 42-year-old and he preferred a single durable procedure, myotomy would be an appropriate answer.\n  - (B) A proton pump inhibitor trial is considered because dysphagia can follow reflux disease with a peptic stricture. That causes heartburn and dysphagia to solids first, with a distal ring or stricture on barium, not a dilated esophagus with a bird-beak taper and dysphagia to liquids from the start. Had the patient reported years of heartburn with solid-food dysphagia and a short distal stricture, an acid-suppression trial would be reasonable.\n  - (C) Botulinum toxin injection into the sphincter is an achalasia treatment, so it is considered, but its effect fades within months and it is reserved for patients too frail for dilation or surgery. It is not a diagnostic step and would not exclude a tumor. In an 85-year-old with confirmed achalasia and severe cardiopulmonary disease, botulinum toxin would be the appropriate choice.\n  - (E) Pneumatic dilation is tempting because the barium study strongly suggests achalasia and dilation is an effective first-line therapy for it. But a tumor at the gastroesophageal junction produces the same picture, and dilating a malignant obstruction delays the diagnosis and risks perforation. Endoscopy and manometry come first. If endoscopy had shown no tumor and manometry had confirmed type II achalasia, this would be the right next step.\n- 함정: A classic barium picture is not a confirmed diagnosis. Weight loss with a bird-beak esophagus means the gastroesophageal junction must be seen directly before any sphincter-directed therapy.\n- 학습목표: 고형식과 유동식 모두에 대한 연하곤란·역류·체중감소와 바륨 식도조영의 새부리 모양 협착에서 이완불능증을 의심하되, 확진·치료 전에 위식도접합부 종양(가성이완불능증)을 배제하기 위한 상부 내시경을 다음 검사로 고른다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed., ch. 'Diseases of the esophagus' — achalasia, pseudoachalasia, diagnostic sequence · Vaezi MF et al. ACG Clinical Guidelines: Diagnosis and management of achalasia. Am J Gastroenterol 2020;115:1393 — endoscopy to exclude pseudoachalasia before treatment · Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed., ch. 'Esophageal neuromuscular function and motility disorders'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Progressive dysphagia to solids and liquids from the outset, nocturnal regurgitation of undigested food, weight loss, and a barium esophagram with a dilated esophagus and a smooth bird-beak taper at the gastroesophageal junction point to achalasia. Before any definitive therapy, however, upper endoscopy is required to exclude a tumor infiltrating the gastroesophageal junction that mimics achalasia (pseudoachalasia) and to inspect the mucosa; esophageal manometry then confirms the diagnosis. Pneumatic dilation, Heller myotomy, and botulinum toxin are treatments that follow confirmation, and a proton pump inhibitor treats reflux, which does not explain dysphagia to liquids with a dilated esophagus."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Achalasia is a loss of inhibitory (nitric oxide, VIP) neurons of the myenteric plexus</b> of the distal esophagus. Without inhibitory input the lower esophageal sphincter cannot relax with swallowing and the esophageal body loses peristalsis. Food and liquid therefore stall above a sphincter that never opens, the esophagus dilates, retained food is regurgitated undigested (often at night, with aspiration), and weight falls. Because the obstruction is a functional sphincter and not a mechanical narrowing, <b>dysphagia involves solids and liquids from the beginning</b>, unlike a stricture or tumor, which blocks solids first. Barium shows the dilated body, an air-fluid level of retained contents, and the smooth <b>bird-beak taper</b> of the non-relaxing sphincter.<br> <b>Why endoscopy comes before treatment</b> — an adenocarcinoma of the cardia or gastroesophageal junction infiltrating the myenteric plexus, or a paraneoplastic process, produces the same symptoms, the same barium picture, and even the same manometry (<b>pseudoachalasia</b>). Its clues are older age, rapid onset under a year, and marked weight loss, but none is reliable enough to skip direct inspection. Endoscopy also documents the retained food, the puckered but passable sphincter, and candida esophagitis, and it is required before pneumatic dilation or myotomy. High-resolution manometry then confirms impaired sphincter relaxation with absent peristalsis and classifies the subtype, which guides the choice among dilation, myotomy, and peroral endoscopic myotomy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:40%\">When it is the right step</th><th>Why not here</th></tr></thead><tbody> <tr><td><b>Upper endoscopy (answer)</b></td><td><b>Suspected achalasia before confirmation and therapy — excludes tumor at the gastroesophageal junction</b></td><td><b>Weight loss and 8-month course make pseudoachalasia a real concern</b></td></tr> <tr><td>Pneumatic dilation (closest rival)</td><td>Confirmed achalasia (endoscopy and manometry done) in a patient fit for the small perforation risk</td><td>Diagnosis not yet confirmed, tumor not excluded</td></tr> <tr><td>Laparoscopic Heller myotomy</td><td>Confirmed achalasia, especially younger patients or after failed dilation</td><td>Definitive surgery before endoscopy and manometry</td></tr> <tr><td>Proton pump inhibitor trial</td><td>Heartburn-predominant reflux disease, peptic stricture with solid-food dysphagia</td><td>No heartburn, liquids affected, dilated esophagus</td></tr> <tr><td>Botulinum toxin injection</td><td>Confirmed achalasia in patients too frail for dilation or surgery — effect wanes in months</td><td>Not a diagnostic step, and the patient is 42 and fit</td></tr> </tbody></table> <b>The closest rival is pneumatic dilation</b> because the barium picture already suggests achalasia and dilation is an effective first-line treatment. The dividing line is <b>confirmation versus treatment</b>: a treatment for achalasia is chosen only after endoscopy has excluded a tumor at the junction and manometry has confirmed the motor disorder. Ask \"what has not yet been shown?\" before choosing a therapy."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Laparoscopic Heller myotomy is a durable treatment for achalasia in a young patient, so it comes to mind. It is definitive surgery and is chosen only after endoscopy has excluded pseudoachalasia and manometry has confirmed and subtyped the disorder. Here neither has been done. Had achalasia been confirmed in this 42-year-old and he preferred a single durable procedure, myotomy would be an appropriate answer.\n(B) A proton pump inhibitor trial is considered because dysphagia can follow reflux disease with a peptic stricture. That causes heartburn and dysphagia to solids first, with a distal ring or stricture on barium, not a dilated esophagus with a bird-beak taper and dysphagia to liquids from the start. Had the patient reported years of heartburn with solid-food dysphagia and a short distal stricture, an acid-suppression trial would be reasonable.\n(C) Botulinum toxin injection into the sphincter is an achalasia treatment, so it is considered, but its effect fades within months and it is reserved for patients too frail for dilation or surgery. It is not a diagnostic step and would not exclude a tumor. In an 85-year-old with confirmed achalasia and severe cardiopulmonary disease, botulinum toxin would be the appropriate choice.\n(E) Pneumatic dilation is tempting because the barium study strongly suggests achalasia and dilation is an effective first-line therapy for it. But a tumor at the gastroesophageal junction produces the same picture, and dilating a malignant obstruction delays the diagnosis and risks perforation. Endoscopy and manometry come first. If endoscopy had shown no tumor and manometry had confirmed type II achalasia, this would be the right next step."
+   },
+   {
+    "k": "함정",
+    "v": "A classic barium picture is not a confirmed diagnosis. Weight loss with a bird-beak esophagus means the gastroesophageal junction must be seen directly before any sphincter-directed therapy."
+   },
+   {
+    "k": "학습목표",
+    "v": "고형식과 유동식 모두에 대한 연하곤란·역류·체중감소와 바륨 식도조영의 새부리 모양 협착에서 이완불능증을 의심하되, 확진·치료 전에 위식도접합부 종양(가성이완불능증)을 배제하기 위한 상부 내시경을 다음 검사로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed., ch. 'Diseases of the esophagus' — achalasia, pseudoachalasia, diagnostic sequence · Vaezi MF et al. ACG Clinical Guidelines: Diagnosis and management of achalasia. Am J Gastroenterol 2020;115:1393 — endoscopy to exclude pseudoachalasia before treatment · Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed., ch. 'Esophageal neuromuscular function and motility disorders'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "Dysphagia to solids and liquids with regurgitation, weight loss, and a bird-beak esophagram suggests achalasia, but the next step is upper endoscopy to exclude a tumor at the gastroesophageal junction before manometry and treatment",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Pneumatic dilation treats confirmed achalasia; nothing yet excludes pseudoachalasia from a junctional tumor, which weight loss and an 8-month course make a real possibility",
+   "steps": 2,
+   "key": [
+    {
+     "item": "progressive difficulty swallowing both solids and liquids",
+     "why": "Dysphagia to liquids from the outset points to a motility disorder rather than a mechanical stricture",
+     "also": []
+    },
+    {
+     "item": "regurgitates undigested food at night",
+     "why": "Retained esophageal contents above a non-relaxing sphincter",
+     "also": []
+    },
+    {
+     "item": "A barium esophagram shows a dilated esophagus with an air-fluid level and smooth, tapered narrowing at the gastroesophageal junction",
+     "why": "The bird-beak sign of achalasia — but also of pseudoachalasia",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no heartburn",
+     "why": "Lowers the likelihood of reflux disease with peptic stricture",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "5-kg weight loss",
+     "why": "Weight loss raises concern for a junctional tumor and is the reason endoscopy cannot be skipped",
+     "also": []
+    },
+    {
+     "item": "8 months",
+     "why": "Onset within a year is one of the red flags for pseudoachalasia",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "does not smoke or drink alcohol",
+     "why": "Lowers squamous cancer risk somewhat but does not exclude a junctional adenocarcinoma",
+     "also": []
+    },
+    {
+     "item": "Physical examination shows no abnormalities",
+     "why": "Expected in achalasia — a normal examination does not settle the question",
+     "also": []
+    }
+   ],
+   "summary": "Solid-and-liquid dysphagia, nocturnal regurgitation, weight loss, and a dilated esophagus with a smooth bird-beak taper suggest achalasia. Before dilation or myotomy, upper endoscopy must exclude a tumor at the gastroesophageal junction, and manometry then confirms the disorder.",
+   "switch": {
+    "choice": "E",
+    "condition": "If endoscopy had already shown a normal gastroesophageal junction without tumor and high-resolution manometry had confirmed type II achalasia, pneumatic dilation would be an appropriate next step"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0093",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·안과·응급·소화기·류마티스근골격·혈액종양·감염·내분비·약리·정신·병리조직)",
+  "subtopic": "안과 — 급성 안통과 시력저하의 감별",
+  "type": "안과 — 급성 안통과 시력저하의 감별",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-22",
+  "vignette": "A 64-year-old woman comes to the emergency department because of severe pain in her right eye, blurred vision, and nausea that began 3 hours ago while she was watching a movie in a dark theater. She has also had a frontal headache and has seen colored halos around lights. She has hyperopia and wears reading glasses. She has no history of eye surgery or trauma and takes no medications. Her temperature is 36.9°C, pulse is 96/min, and blood pressure is 152/90 mmHg. Visual acuity is 20/200 in the right eye and 20/25 in the left eye. The right eye is red with circumcorneal injection, the cornea is hazy, and the pupil is mid-dilated and does not react to light. The left pupil is 3 mm and reactive. The anterior chamber of the right eye appears shallow on penlight examination. Intraocular pressure is 52 mm Hg in the right eye and 15 mm Hg in the left eye.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Acute angle-closure glaucoma",
+   "Acute anterior uveitis",
+   "Central retinal artery occlusion",
+   "Bacterial keratitis",
+   "Migraine with aura"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Sudden unilateral eye pain with blurred vision, halos, headache, and nausea after time in a dark environment in a hyperopic older woman, together with a red eye, hazy cornea, a mid-dilated nonreactive pupil, a shallow anterior chamber, and an intraocular pressure of 52 mm Hg, is acute angle-closure glaucoma. Pupillary dilation in the dark pushed the peripheral iris of a shallow, hyperopic eye against the trabecular meshwork and blocked aqueous outflow. Anterior uveitis gives a small, sluggish pupil with cells and flare and normal or low pressure; central retinal artery occlusion is painless with a pale retina and afferent pupillary defect; bacterial keratitis has a corneal infiltrate and discharge with a normal pupil; migraine has no red eye or raised pressure.\n- 원리: <b>Aqueous humor is produced by the ciliary body</b>, flows through the pupil into the anterior chamber, and drains through the trabecular meshwork at the iridocorneal angle. In a short, hyperopic eye the anterior chamber is shallow and the angle narrow. When the pupil dilates in dim light, the mid-dilated iris both maximizes <b>pupillary block</b> (contact between the iris and the lens impedes flow through the pupil, so pressure builds behind the iris) and lets the peripheral iris bow forward and <b>appose the trabecular meshwork</b>. Outflow stops while production continues, so the pressure rises within hours to 40–70 mm Hg. That pressure explains every finding: <b>corneal edema</b> (haze, halos, blurred vision) because the endothelial pump is overwhelmed; <b>a mid-dilated fixed pupil</b> because iris sphincter ischemia paralyses constriction; ciliary and trigeminal pain with vagal <b>nausea and vomiting</b>; and a rock-hard globe.<br> <b>Why the diagnosis must be made at once</b> — sustained pressure above 40–50 mm Hg damages the optic nerve within hours to days. Treatment lowers the pressure medically (topical beta blocker, alpha agonist, pilocarpine once the sphincter can respond, systemic acetazolamide, and hyperosmotic agents) and then opens the block definitively with <b>laser peripheral iridotomy</b>, which is also done prophylactically in the fellow eye because the anatomy is bilateral.\n- 비교: <table><thead><tr><th style=\"width:26%\">Diagnosis</th><th style=\"width:42%\">Decisive findings</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Acute angle-closure glaucoma (answer)</b></td><td><b>Mid-dilated fixed pupil, hazy cornea, shallow chamber, IOP &gt; 40 mm Hg, onset in the dark, hyperopia</b></td><td><b>All present, IOP 52 mm Hg</b></td></tr> <tr><td>Acute anterior uveitis (closest rival)</td><td>Small, irregular, sluggish pupil, cells and flare, photophobia, normal or low IOP, keratic precipitates</td><td>Pupil mid-dilated and fixed, IOP 52</td></tr> <tr><td>Central retinal artery occlusion</td><td>Painless sudden loss of vision, afferent pupillary defect, pale retina with cherry-red spot, white eye</td><td>Severe pain, red eye, high IOP</td></tr> <tr><td>Bacterial keratitis</td><td>Corneal infiltrate or ulcer with discharge, contact lens use, normal pupil and IOP</td><td>No infiltrate or discharge, IOP 52</td></tr> <tr><td>Migraine with aura</td><td>Visual scintillations preceding headache, white eye, normal pupil, cornea, and IOP</td><td>Red eye, hazy cornea, IOP 52</td></tr> </tbody></table> <b>The closest rival is acute anterior uveitis</b> because both cause a painful red eye with circumcorneal injection and blurred vision. The dividing line is <b>the pupil and the pressure</b>: uveitis constricts the pupil (sphincter spasm from inflammation) and usually lowers pressure (ciliary body shutdown), whereas angle closure fixes the pupil in mid-dilation and drives pressure above 40 mm Hg. Whenever a red painful eye has a mid-dilated pupil, measure the pressure before instilling anything.\n- 오답 이유:\n  - (B) Acute anterior uveitis is worth considering because it also causes a painful red eye with circumcorneal injection and blurred vision. It produces a small, sluggish, sometimes irregular pupil with cells and flare in the anterior chamber and a normal or low intraocular pressure. Here the pupil is mid-dilated and fixed and the pressure is 52 mm Hg. Had the pupil been miotic with flare and a pressure of 12 mm Hg, this would be the answer.\n  - (C) Central retinal artery occlusion comes to mind because of sudden monocular visual loss in an older patient. It is painless, the eye is white, there is a relative afferent pupillary defect, and the fundus shows a pale retina with a cherry-red spot while the pressure is normal. This patient has severe pain, a red eye, corneal haze, and a pressure of 52 mm Hg. Painless loss of vision with a cherry-red spot and a white eye would make this option correct.\n  - (D) Bacterial keratitis is considered because of pain, redness, and reduced vision, but it shows a corneal infiltrate or ulcer with discharge, often in a contact lens wearer, and the pupil and intraocular pressure are normal. This cornea is diffusely hazy from edema without an infiltrate, and the pressure is 52 mm Hg. A contact lens wearer with a focal white corneal infiltrate, discharge, and normal pressure would make this the answer.\n  - (E) Migraine with aura is considered because of headache, nausea, and visual disturbance, but the eye is white and the pupil, cornea, and intraocular pressure are normal; the aura consists of scintillating scotomas that precede the headache. Here the eye is red with a hazy cornea, a fixed mid-dilated pupil, and a pressure of 52 mm Hg. A young patient with scintillations followed by a throbbing headache and a normal eye examination would fit this option.\n- 함정: Do not let the headache and nausea steer toward a neurologic or gastrointestinal cause. A red eye with a mid-dilated fixed pupil is angle closure until the intraocular pressure proves otherwise.\n- 학습목표: 급성 안통·시력저하·두통·구역에서 중간 크기의 고정된 동공, 각막 부종, 안압 상승을 읽고 급성 폐쇄각녹내장을 급성 앞포도막염·중심망막동맥폐쇄·편두통과 감별한다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed., ch. 'Disorders of the eye' — acute angle-closure glaucoma vs uveitis vs keratitis · American Academy of Ophthalmology. Primary Angle-Closure Disease Preferred Practice Pattern, 2020 · Kanski's Clinical Ophthalmology, 9th ed., ch. 'Glaucoma — primary angle-closure' and 'Uveitis'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sudden unilateral eye pain with blurred vision, halos, headache, and nausea after time in a dark environment in a hyperopic older woman, together with a red eye, hazy cornea, a mid-dilated nonreactive pupil, a shallow anterior chamber, and an intraocular pressure of 52 mm Hg, is acute angle-closure glaucoma. Pupillary dilation in the dark pushed the peripheral iris of a shallow, hyperopic eye against the trabecular meshwork and blocked aqueous outflow. Anterior uveitis gives a small, sluggish pupil with cells and flare and normal or low pressure; central retinal artery occlusion is painless with a pale retina and afferent pupillary defect; bacterial keratitis has a corneal infiltrate and discharge with a normal pupil; migraine has no red eye or raised pressure."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Aqueous humor is produced by the ciliary body</b>, flows through the pupil into the anterior chamber, and drains through the trabecular meshwork at the iridocorneal angle. In a short, hyperopic eye the anterior chamber is shallow and the angle narrow. When the pupil dilates in dim light, the mid-dilated iris both maximizes <b>pupillary block</b> (contact between the iris and the lens impedes flow through the pupil, so pressure builds behind the iris) and lets the peripheral iris bow forward and <b>appose the trabecular meshwork</b>. Outflow stops while production continues, so the pressure rises within hours to 40–70 mm Hg. That pressure explains every finding: <b>corneal edema</b> (haze, halos, blurred vision) because the endothelial pump is overwhelmed; <b>a mid-dilated fixed pupil</b> because iris sphincter ischemia paralyses constriction; ciliary and trigeminal pain with vagal <b>nausea and vomiting</b>; and a rock-hard globe.<br> <b>Why the diagnosis must be made at once</b> — sustained pressure above 40–50 mm Hg damages the optic nerve within hours to days. Treatment lowers the pressure medically (topical beta blocker, alpha agonist, pilocarpine once the sphincter can respond, systemic acetazolamide, and hyperosmotic agents) and then opens the block definitively with <b>laser peripheral iridotomy</b>, which is also done prophylactically in the fellow eye because the anatomy is bilateral."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Diagnosis</th><th style=\"width:42%\">Decisive findings</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Acute angle-closure glaucoma (answer)</b></td><td><b>Mid-dilated fixed pupil, hazy cornea, shallow chamber, IOP &gt; 40 mm Hg, onset in the dark, hyperopia</b></td><td><b>All present, IOP 52 mm Hg</b></td></tr> <tr><td>Acute anterior uveitis (closest rival)</td><td>Small, irregular, sluggish pupil, cells and flare, photophobia, normal or low IOP, keratic precipitates</td><td>Pupil mid-dilated and fixed, IOP 52</td></tr> <tr><td>Central retinal artery occlusion</td><td>Painless sudden loss of vision, afferent pupillary defect, pale retina with cherry-red spot, white eye</td><td>Severe pain, red eye, high IOP</td></tr> <tr><td>Bacterial keratitis</td><td>Corneal infiltrate or ulcer with discharge, contact lens use, normal pupil and IOP</td><td>No infiltrate or discharge, IOP 52</td></tr> <tr><td>Migraine with aura</td><td>Visual scintillations preceding headache, white eye, normal pupil, cornea, and IOP</td><td>Red eye, hazy cornea, IOP 52</td></tr> </tbody></table> <b>The closest rival is acute anterior uveitis</b> because both cause a painful red eye with circumcorneal injection and blurred vision. The dividing line is <b>the pupil and the pressure</b>: uveitis constricts the pupil (sphincter spasm from inflammation) and usually lowers pressure (ciliary body shutdown), whereas angle closure fixes the pupil in mid-dilation and drives pressure above 40 mm Hg. Whenever a red painful eye has a mid-dilated pupil, measure the pressure before instilling anything."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Acute anterior uveitis is worth considering because it also causes a painful red eye with circumcorneal injection and blurred vision. It produces a small, sluggish, sometimes irregular pupil with cells and flare in the anterior chamber and a normal or low intraocular pressure. Here the pupil is mid-dilated and fixed and the pressure is 52 mm Hg. Had the pupil been miotic with flare and a pressure of 12 mm Hg, this would be the answer.\n(C) Central retinal artery occlusion comes to mind because of sudden monocular visual loss in an older patient. It is painless, the eye is white, there is a relative afferent pupillary defect, and the fundus shows a pale retina with a cherry-red spot while the pressure is normal. This patient has severe pain, a red eye, corneal haze, and a pressure of 52 mm Hg. Painless loss of vision with a cherry-red spot and a white eye would make this option correct.\n(D) Bacterial keratitis is considered because of pain, redness, and reduced vision, but it shows a corneal infiltrate or ulcer with discharge, often in a contact lens wearer, and the pupil and intraocular pressure are normal. This cornea is diffusely hazy from edema without an infiltrate, and the pressure is 52 mm Hg. A contact lens wearer with a focal white corneal infiltrate, discharge, and normal pressure would make this the answer.\n(E) Migraine with aura is considered because of headache, nausea, and visual disturbance, but the eye is white and the pupil, cornea, and intraocular pressure are normal; the aura consists of scintillating scotomas that precede the headache. Here the eye is red with a hazy cornea, a fixed mid-dilated pupil, and a pressure of 52 mm Hg. A young patient with scintillations followed by a throbbing headache and a normal eye examination would fit this option."
+   },
+   {
+    "k": "함정",
+    "v": "Do not let the headache and nausea steer toward a neurologic or gastrointestinal cause. A red eye with a mid-dilated fixed pupil is angle closure until the intraocular pressure proves otherwise."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 안통·시력저하·두통·구역에서 중간 크기의 고정된 동공, 각막 부종, 안압 상승을 읽고 급성 폐쇄각녹내장을 급성 앞포도막염·중심망막동맥폐쇄·편두통과 감별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed., ch. 'Disorders of the eye' — acute angle-closure glaucoma vs uveitis vs keratitis · American Academy of Ophthalmology. Primary Angle-Closure Disease Preferred Practice Pattern, 2020 · Kanski's Clinical Ophthalmology, 9th ed., ch. 'Glaucoma — primary angle-closure' and 'Uveitis'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A painful red eye with a mid-dilated nonreactive pupil, hazy cornea, shallow anterior chamber, and intraocular pressure of 52 mm Hg after time in the dark in a hyperopic older woman is acute angle-closure glaucoma",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "The pupil is mid-dilated and fixed with an intraocular pressure of 52 mm Hg, whereas uveitis gives a small sluggish pupil with flare and normal or low pressure",
+   "steps": 2,
+   "key": [
+    {
+     "item": "Intraocular pressure is 52 mm Hg in the right eye",
+     "why": "Pressure above 40 mm Hg with a normal fellow eye defines the acute attack",
+     "also": []
+    },
+    {
+     "item": "the pupil is mid-dilated and does not react to light",
+     "why": "Sphincter ischemia from high pressure — the sign that separates angle closure from uveitis",
+     "also": []
+    },
+    {
+     "item": "the cornea is hazy",
+     "why": "Corneal edema from pressure overwhelming the endothelial pump — explains blur and halos",
+     "also": []
+    },
+    {
+     "item": "The anterior chamber of the right eye appears shallow",
+     "why": "The anatomic substrate of pupillary block and angle closure",
+     "also": []
+    },
+    {
+     "item": "began 3 hours ago while she was watching a movie in a dark theater",
+     "why": "Dim light dilates the pupil to the mid position that maximizes pupillary block",
+     "also": []
+    },
+    {
+     "item": "She has hyperopia",
+     "why": "Short axial length and shallow chamber — the eye at risk",
+     "also": []
+    },
+    {
+     "item": "has seen colored halos around lights",
+     "why": "Diffraction through an edematous cornea",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "no history of eye surgery or trauma",
+     "why": "Excludes secondary causes but does not change the diagnosis",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 152/90 mmHg",
+     "why": "Pain-related elevation — not a clue to the eye diagnosis",
+     "also": []
+    }
+   ],
+   "summary": "Sudden pain, blur, halos, and nausea in a hyperopic eye after time in the dark, with a mid-dilated fixed pupil, hazy cornea, shallow chamber, and a pressure of 52 mm Hg, is acute angle-closure glaucoma. The pupil and the pressure separate it from anterior uveitis, and the red painful eye separates it from retinal artery occlusion and migraine.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the pupil had been small and sluggish with cells and flare in the anterior chamber and an intraocular pressure of 12 mm Hg, acute anterior uveitis would be the diagnosis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+  "qid": "Q0002"
+ },
+ {
   "id": "imaging-2026-0091",
   "exam": "imaging",
   "style": "usmle_style",

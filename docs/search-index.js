@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2744,
+  "total": 2755,
   "byType": {
    "kmle": 1099,
    "concept": 8,
    "anatomy": 734,
    "usmle": 156,
+   "imaging": 101,
    "paper": 640,
-   "imaging": 90,
    "ailab": 14,
    "basic": 3
   },
@@ -46,36 +46,37 @@ window.MEDKOS_INDEX = {
    "Microbiology": 11,
    "Immunology": 9,
    "Internal Medicine": 9,
-   "병리·조직학": 5,
+   "병리·조직학": 6,
+   "소화기": 5,
    "호흡기": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "감염": 4,
+   "내분비": 4,
    "소아과": 4,
-   "소화기": 4,
+   "응급·중환자": 4,
+   "혈액·종양": 4,
    "Oncology": 3,
-   "감염": 3,
-   "내분비": 3,
    "신경": 3,
-   "응급·중환자": 3,
-   "혈액·종양": 3,
+   "피부과": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
+   "근골격·류마티스": 2,
    "신장·비뇨기": 2,
+   "약리": 2,
    "예방의학·역학": 2,
    "외과": 2,
-   "피부과": 2,
+   "정신과": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "근골격·류마티스": 1,
-   "약리": 1,
+   "안과": 1,
    "영상의학": 1,
-   "이비인후과": 1,
-   "정신과": 1
+   "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1856,
+   "high": 1867,
    "medium": 839,
    "low": 49
   },
@@ -1280,6 +1281,197 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0164.md",
    "snippet": "A 7 month old boy is brought to the physician because of vomiting, irritability and poor feeding for 3 weeks. The symptoms began shortly after his parents started giving him pureed fruit and diluted juice in addition to breast milk; he had ",
    "text": "Biochemistry Vomiting, Lethargy and a Big Liver Weeks After Fruit Was Added to the Diet — The Trapped Sugar Phosphate That Starves Glycogenolysis of Phosphate hereditary-fructose-intolerance aldolase-B fructose-1-phosphate hypoglycemia lactic-acidosis hyperuricemia hepatomegaly galactosemia von-gierke essential-fructosuria USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fructose Metabolism; Nelson Textbook of Pediatrics 21e Ch 105 Defects in Metabolism of Carbohydrates; Baker P et al. Hereditary Fructose Intolerance, GeneReviews 2015/2021) A 7 month old boy is brought to the physician because of vomiting, irritability and poor feeding for 3 weeks. The symptoms began shortly after his parents started giving him pureed fruit and diluted juice in addition to breast milk; he had been thriving on breast milk alone. Yesterday he became unusually drowsy about an hour after a meal. He was born at term, and his newborn screen, which included galactosemia and medium chain acyl CoA dehydrogenase deficiency, was reported as normal. His vital signs and laboratory studies are shown. He is pale, sweaty and lethargic. The liver edge is palpable 4 cm below the right costal margin. There is no dysmorphism. Which of the following best explains the hypoglycemia in this infant? A. Impaired transfer of long chain fatty acids into mitochondria B. Accumulation of galactose 1 phosphate in hepatocytes C. Sequestration of inorganic phosphate as fructose 1 phosphate D. Deficient glucose 6 phosphatase activity in the endoplasmic reticulum E. Absent hepatic fructokinase activity 모유만 먹을 때는 건강하다가 과일·주스를 시작한 뒤 구토·기면·간비대·저혈당이 생겼고, 식후 1시간에 증상이 나타나며, 소변 환원당 양성인데 glucose oxidase 스틱은 음성(포도당이 아닌 환원당 = 과당), 젖산·요산 상승, 인 감소, 케톤 생성은 유지된 저혈당 = 유전성 과당불내증(알돌라아제 B 결핍)이다. 과당은 과당인산화효소로 fructose 1 phosphate 가 되지만 알돌라아제 B 가 없어 여기서 막힌다. F1P 가 간세포에 쌓이면서 무기인산과 ATP 를 붙잡아 두어(sequestration) 인산이 필요한 글리코겐 가인산분해효소가 멈추고, 알돌라아제 B 자체가 포도당신생합성의 알돌라아제 단계이기도 하므로 글리코겐 분해·포도당신생합성이 모두 막혀 식후 저혈당이 온다. ATP 고갈은 AMP 탈아미노효소를 활성화해 요산을 올리고, 인산 부족과 저혈당은 젖산산증을 동반한다. 치료는 과당·설탕(자당)·소르비톨 제거이며, 확진은 ALDOB 유전자 검사로 하고 과당 부하검사는 위험해서 하지 않는다."
+  },
+  {
+   "id": "imaging-2026-0102",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 유방 상피의 전사인자 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0102.md",
+   "snippet": "A 45 year old woman undergoes reduction mammoplasty. Her preoperative mammogram was normal, she has no personal or family history of breast cancer, and she takes no hormonal medications. Sections of the resected breast tissue are used as no",
+   "text": "병리·조직학 병리·조직 — 유방 상피의 전사인자 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 45 year old woman undergoes reduction mammoplasty. Her preoperative mammogram was normal, she has no personal or family history of breast cancer, and she takes no hormonal medications. Sections of the resected breast tissue are used as normal control tissue in the pathology laboratory. A section is stained by immunohistochemistry for a zinc finger transcription factor that drives luminal differentiation of the mammary epithelium and that is also expressed in urothelium and in T lymphocytes but not in myoepithelial or stromal cells. A photomicrograph of the stained section of the breast is shown. In diagnostic pathology, detection of this protein is most useful for which of the following? A. Estimating the proliferation rate of a breast carcinoma B. Distinguishing ductal carcinoma in situ from invasive carcinoma C. Identifying breast or urothelial origin of a metastatic carcinoma of unknown primary D. Predicting response to endocrine therapy in invasive breast carcinoma E. Predicting response to trastuzumab in invasive breast carcinoma"
+  },
+  {
+   "id": "imaging-2026-0101",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 세로토닌 작용 약물 병용 후 급성 증후군",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0101.md",
+   "snippet": "A 24 year old woman is brought to the emergency department by her roommate because of agitation, tremor, and sweating for 6 hours. She has major depressive disorder treated with sertraline for the past year. Two days ago she began taking tr",
+   "text": "정신과 정신 — 세로토닌 작용 약물 병용 후 급성 증후군 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 24 year old woman is brought to the emergency department by her roommate because of agitation, tremor, and sweating for 6 hours. She has major depressive disorder treated with sertraline for the past year. Two days ago she began taking tramadol prescribed by a dentist after a tooth extraction, and this morning she took an extra dose for pain. She has no other medical conditions and does not use illicit drugs. Her temperature is 39.2°C, pulse is 128/min, respirations are 24/min, and blood pressure is 158/96 mmHg. She is restless and diaphoretic, her pupils are 7 mm and reactive, and bowel sounds are hyperactive. Muscle tone is increased in the lower extremities more than in the upper extremities, deep tendon reflexes are 4+ at the knees and ankles, and there is sustained clonus at both ankles. Serum creatine kinase is 640 U/L, and leukocyte count is 11,200/mm3. Intravenous fluids and lorazepam are given, and sertraline and tramadol are withheld. Which of the following is the most appropriate additional pharmacotherapy? A. Haloperidol B. Cyproheptadine C. Dantrolene D. Bromocriptine E. Physostigmine"
+  },
+  {
+   "id": "imaging-2026-0100",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 흡연 여성의 피임 약물 선택",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0100.md",
+   "snippet": "37세 여자가 피임 상담을 위해 병원에 왔다. 두 아이가 있고 더 이상 출산 계획은 없으며 남편은 정관수술을 원하지 않는다. 하루 15개비씩 15년째 담배를 피우고 있고 끊을 생각이 없다. 월경은 규칙적이고 양이 많은 편이며 생리통은 심하지 않다. 편두통·혈전증·유방암의 병력과 가족력은 없고 복용 중인 약은 없다. 혈압 118/76 mmHg, 체질량지수 23 kg/m² 이고 진찰에서 이상은 없다. 그녀는 매일 먹는 약도 괜찮고",
+   "text": "약리 약리 — 흡연 여성의 피임 약물 선택 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 37세 여자가 피임 상담을 위해 병원에 왔다. 두 아이가 있고 더 이상 출산 계획은 없으며 남편은 정관수술을 원하지 않는다. 하루 15개비씩 15년째 담배를 피우고 있고 끊을 생각이 없다. 월경은 규칙적이고 양이 많은 편이며 생리통은 심하지 않다. 편두통·혈전증·유방암의 병력과 가족력은 없고 복용 중인 약은 없다. 혈압 118/76 mmHg, 체질량지수 23 kg/m² 이고 진찰에서 이상은 없다. 그녀는 매일 먹는 약도 괜찮고 장기 방법도 괜찮다고 한다. 가장 적절한 피임 방법은? A. 주기적 금욕법 B. 레보노르게스트렐 자궁내장치 C. 저용량 복합 경구피임약 D. 에스트로겐 피부 부착제 E. 질 고리(에토노게스트렐 에티닐에스트라디올)"
+  },
+  {
+   "id": "imaging-2026-0099",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 갈색세포종의 수술 전 준비",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0099.md",
+   "snippet": "A 39 year old woman is scheduled for laparoscopic adrenalectomy in 3 weeks because of a pheochromocytoma. For 6 months she has had episodes of pounding headache, sweating, and palpitations lasting 20 to 30 minutes, and her blood pressure ha",
+   "text": "내분비 내분비·대사 — 갈색세포종의 수술 전 준비 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 39 year old woman is scheduled for laparoscopic adrenalectomy in 3 weeks because of a pheochromocytoma. For 6 months she has had episodes of pounding headache, sweating, and palpitations lasting 20 to 30 minutes, and her blood pressure has been difficult to control with lisinopril. Plasma free metanephrines were four times the upper limit of normal, and CT showed a 4 cm mass in the right adrenal gland. She has no other medical conditions and does not smoke. Her pulse is 104/min and blood pressure is 168/102 mmHg. Examination shows a thin, anxious woman with moist palms; there are no abnormalities of the heart, lungs, or abdomen. Serum glucose is 128 mg/dL, and the ECG shows sinus tachycardia without ischemic changes. Which of the following is the most appropriate pharmacotherapy to begin now? A. Propranolol B. Metyrosine C. Hydrochlorothiazide D. Clonidine E. Phenoxybenzamine"
+  },
+  {
+   "id": "imaging-2026-0098",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 양측 폐렴의 원인 진단 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0098.md",
+   "snippet": "A 55 year old man comes to the emergency department because of 4 days of fever, dry cough, and worsening shortness of breath. One week ago he returned from a 3 night stay at a resort with a hot tub and spa. For 2 days he has had watery diar",
+   "text": "감염 감염 — 양측 폐렴의 원인 진단 검사 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 55 year old man comes to the emergency department because of 4 days of fever, dry cough, and worsening shortness of breath. One week ago he returned from a 3 night stay at a resort with a hot tub and spa. For 2 days he has had watery diarrhea 4 to 5 times daily, and this morning his family noticed that he was confused and slurring his words. He has a 20 pack year smoking history, no diabetes mellitus, and no recent antibiotic use. His temperature is 39.4°C, pulse is 92/min, respirations are 26/min, and blood pressure is 108/66 mmHg; oxygen saturation is 90% on room air. Coarse crackles are heard over both lungs, and there is no neck stiffness. Laboratory studies show a leukocyte count of 14,800/mm3 (86% neutrophils), serum sodium of 126 mEq/L, AST of 96 U/L, ALT of 88 U/L, creatine kinase of 1,240 U/L, and C reactive protein of 24 mg/dL. Gram stain of sputum shows many neutrophils but no organisms. A portable chest radiograph is shown. Which of the following is the most appropriate test to identify the causative organism? A. Nasopharyngeal influenza antigen test B. Two sets of blood cultures C. Urinary Legionella antigen assay D. Acid fast stain of sputum for mycobacteria E. Serum Mycoplasma pneumoniae antibody titers"
+  },
+  {
+   "id": "imaging-2026-0097",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 헤파린 사용 중 혈소판감소와 혈전",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0097.md",
+   "snippet": "A 68 year old man who underwent right total knee arthroplasty 8 days ago is evaluated because of pain and swelling of the left calf that began this morning. He has received subcutaneous unfractionated heparin for thromboprophylaxis since su",
+   "text": "혈액·종양 혈액·종양 — 헤파린 사용 중 혈소판감소와 혈전 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 68 year old man who underwent right total knee arthroplasty 8 days ago is evaluated because of pain and swelling of the left calf that began this morning. He has received subcutaneous unfractionated heparin for thromboprophylaxis since surgery. He has hypertension treated with amlodipine and no history of bleeding or clotting disorders. His temperature is 37.1°C, pulse is 92/min, and blood pressure is 138/84 mmHg. The left calf is swollen and tender, and the surgical wound is clean. Laboratory studies show a hemoglobin of 11.8 g/dL, a leukocyte count of 8,400/mm3, and a platelet count of 71,000/mm3; the platelet count on the day of surgery was 236,000/mm3. Prothrombin time and activated partial thromboplastin time are normal, and a peripheral blood smear shows no schistocytes or platelet clumps. Compression ultrasonography shows an occlusive thrombus in the left popliteal vein. Which of the following is the most appropriate next step in management? A. Discontinue heparin and begin argatroban B. Switch to therapeutic dose enoxaparin C. Begin warfarin and continue heparin until the INR is therapeutic D. Transfuse platelets and place an inferior vena cava filter E. Continue heparin at therapeutic dose and repeat the platelet count in 24 hours"
+  },
+  {
+   "id": "imaging-2026-0096",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 류마티스다발근통 환자의 새 두통",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0096.md",
+   "snippet": "72세 여자가 1주 전부터 시작된 오른쪽 관자놀이의 지속적인 두통 때문에 병원에 왔다. 음식을 씹으면 턱이 아파서 식사를 중간에 쉬어야 하고, 어제부터 오른눈이 몇 분간 흐려졌다가 돌아오는 일이 두 번 있었다. 3개월 전 양쪽 어깨와 엉덩이의 아침 뻣뻣함으로 류마티스다발근통을 진단받고 프레드니솔론 12.5 mg 을 매일 복용해 근육 증상은 좋아진 상태였다. 혈압 134/80 mmHg, 맥박 78회/분, 체온 37.2℃ 이다. ",
+   "text": "근골격·류마티스 류마티스·근골격 — 류마티스다발근통 환자의 새 두통 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 72세 여자가 1주 전부터 시작된 오른쪽 관자놀이의 지속적인 두통 때문에 병원에 왔다. 음식을 씹으면 턱이 아파서 식사를 중간에 쉬어야 하고, 어제부터 오른눈이 몇 분간 흐려졌다가 돌아오는 일이 두 번 있었다. 3개월 전 양쪽 어깨와 엉덩이의 아침 뻣뻣함으로 류마티스다발근통을 진단받고 프레드니솔론 12.5 mg 을 매일 복용해 근육 증상은 좋아진 상태였다. 혈압 134/80 mmHg, 맥박 78회/분, 체온 37.2℃ 이다. 오른쪽 관자동맥이 두껍고 눌러서 아프며 맥박이 약하다. 시력은 양쪽 모두 1.0 이고 안저는 정상이며 신경학적 검사에서 이상은 없다. 혈액검사에서 혈색소 11.2 g/dL, 백혈구 8,900/mm³, 혈소판 452,000/mm³, 적혈구침강속도 88 mm/h, C반응단백 6.4 mg/dL 이다. 가장 적절한 처치는? A. 관자동맥 생검 결과를 확인한 뒤 치료를 결정한다 B. 프레드니솔론을 20 mg 으로 올리고 2주 뒤 재평가한다 C. 메토트렉세이트를 추가하고 프레드니솔론을 유지한다 D. 저용량 아스피린을 추가하고 두통에 진통제를 처방한다 E. 즉시 고용량 글루코코르티코이드를 시작하고 관자동맥 생검을 의뢰한다"
+  },
+  {
+   "id": "imaging-2026-0095",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 연하곤란 환자의 다음 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0095.md",
+   "snippet": "A 42 year old man comes to the physician because of 8 months of progressive difficulty swallowing both solids and liquids. He often regurgitates undigested food at night and has had a 5 kg weight loss. He has no heartburn, chest pain, or he",
+   "text": "소화기 소화기·간담췌 — 연하곤란 환자의 다음 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 42 year old man comes to the physician because of 8 months of progressive difficulty swallowing both solids and liquids. He often regurgitates undigested food at night and has had a 5 kg weight loss. He has no heartburn, chest pain, or hematemesis, and he does not smoke or drink alcohol. He has no history of gastrointestinal disease and takes no medications. His temperature is 36.8°C, pulse is 72/min, and blood pressure is 124/78 mmHg. BMI is 22 kg/m2. Physical examination shows no abnormalities. A barium esophagram shows a dilated esophagus with an air fluid level and smooth, tapered narrowing at the gastroesophageal junction. Which of the following is the most appropriate next step in management? A. Laparoscopic Heller myotomy B. Trial of a proton pump inhibitor C. Botulinum toxin injection into the lower esophageal sphincter D. Upper endoscopy E. Pneumatic dilation of the lower esophageal sphincter"
+  },
+  {
+   "id": "imaging-2026-0094",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 흉통 환자의 심전도와 재관류",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0094.md",
+   "snippet": "71세 여자가 2시간 전부터 계속되는 가슴 가운데의 조이는 통증과 식은땀 때문에 구급차로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 좋아지지 않았다. 10년 전부터 고혈압과 당뇨병으로 약을 먹고 있으며 출혈 병력이나 최근 수술은 없다. 혈압 138/82 mmHg, 맥박 76회/분, 호흡 20회/분, 체온 36.7℃, 산소포화도 96% 이다. 폐음은 깨끗하고 심잡음은 없으며 경정맥 확장은 없다. 아스피린을 씹어 먹게 한 뒤 시",
+   "text": "응급·중환자 응급·중환자·외상 — 흉통 환자의 심전도와 재관류 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 71세 여자가 2시간 전부터 계속되는 가슴 가운데의 조이는 통증과 식은땀 때문에 구급차로 응급실에 왔다. 통증은 왼팔로 뻗치고 쉬어도 좋아지지 않았다. 10년 전부터 고혈압과 당뇨병으로 약을 먹고 있으며 출혈 병력이나 최근 수술은 없다. 혈압 138/82 mmHg, 맥박 76회/분, 호흡 20회/분, 체온 36.7℃, 산소포화도 96% 이다. 폐음은 깨끗하고 심잡음은 없으며 경정맥 확장은 없다. 아스피린을 씹어 먹게 한 뒤 시행한 12유도 심전도는 그림과 같다. 이 병원은 심혈관조영실이 있어 30분 안에 시술을 시작할 수 있다. 가장 적절한 처치는? A. 즉시 일차 경피적 관상동맥중재술 B. 정맥 혈전용해제 투여 후 관찰 C. 저분자량 헤파린 투여 후 트로포닌 재검 D. 정맥 니트로글리세린 지속 주입 후 재평가 E. 응급 관상동맥우회술"
+  },
+  {
+   "id": "imaging-2026-0093",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 급성 안통과 시력저하의 감별",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0093.md",
+   "snippet": "A 64 year old woman comes to the emergency department because of severe pain in her right eye, blurred vision, and nausea that began 3 hours ago while she was watching a movie in a dark theater. She has also had a frontal headache and has s",
+   "text": "안과 안과 — 급성 안통과 시력저하의 감별 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 A 64 year old woman comes to the emergency department because of severe pain in her right eye, blurred vision, and nausea that began 3 hours ago while she was watching a movie in a dark theater. She has also had a frontal headache and has seen colored halos around lights. She has hyperopia and wears reading glasses. She has no history of eye surgery or trauma and takes no medications. Her temperature is 36.9°C, pulse is 96/min, and blood pressure is 152/90 mmHg. Visual acuity is 20/200 in the right eye and 20/25 in the left eye. The right eye is red with circumcorneal injection, the cornea is hazy, and the pupil is mid dilated and does not react to light. The left pupil is 3 mm and reactive. The anterior chamber of the right eye appears shallow on penlight examination. Intraocular pressure is 52 mm Hg in the right eye and 15 mm Hg in the left eye. Which of the following is the most likely diagnosis? A. Acute angle closure glaucoma B. Acute anterior uveitis C. Central retinal artery occlusion D. Bacterial keratitis E. Migraine with aura"
+  },
+  {
+   "id": "imaging-2026-0092",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 몸통의 색소성 결절, 더모스코피 판독",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "confidence": "high",
+   "date": "2026-09-22",
+   "path": "content/imaging/2026/imaging-2026-0092.md",
+   "snippet": "60세 남자가 3년 전부터 등에 생겨 서서히 커지는 반점 때문에 병원에 왔다. 가렵거나 아프지는 않고 출혈은 없었다. 젊어서 야외에서 일했고 흡연은 하지 않으며 피부암의 가족력은 없다. 진찰에서 등 위쪽에 지름 약 8 mm 의 경계가 비교적 뚜렷한 분홍빛 반점이 있고 표면은 약간 광택이 있으며 가장자리를 따라 갈색 점들이 흩어져 있다. 병변은 단단하지 않고 눌러도 함몰되지 않으며 주위에 비슷한 병변은 없다. 더모스코피 소견은 ",
+   "text": "피부과 피부 — 몸통의 색소성 결절, 더모스코피 판독 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0 60세 남자가 3년 전부터 등에 생겨 서서히 커지는 반점 때문에 병원에 왔다. 가렵거나 아프지는 않고 출혈은 없었다. 젊어서 야외에서 일했고 흡연은 하지 않으며 피부암의 가족력은 없다. 진찰에서 등 위쪽에 지름 약 8 mm 의 경계가 비교적 뚜렷한 분홍빛 반점이 있고 표면은 약간 광택이 있으며 가장자리를 따라 갈색 점들이 흩어져 있다. 병변은 단단하지 않고 눌러도 함몰되지 않으며 주위에 비슷한 병변은 없다. 더모스코피 소견은 그림과 같다. 가장 가능성이 높은 진단은? A. 지루각화증 B. 피부섬유종 C. 색소모반 D. 기저세포암 E. 악성 흑색종"
   },
   {
    "id": "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning",
