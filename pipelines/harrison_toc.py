@@ -33,7 +33,7 @@ OUT = ROOT / "content" / "outline" / "harrison_toc.json"
 DEFAULT_PDF = Path(r"G:\내 드라이브\교과서\Harrison_s Principles of Internal Medicine, Twenty-First Edition.pdf")
 TOC_PAGES = range(6, 17)          # PDF 인덱스(0부터) — Contents 지면
 OFFSET = 40                       # PDF 인덱스 = 인쇄쪽 + OFFSET
-BODY_END = 4131                   # 본문 마지막 PDF 인덱스(뒤는 찾아보기)
+BODY_END = 3895                   # 본문 마지막 PDF 인덱스 = 인쇄쪽 3855(492장 끝). 3896 빈 쪽, 3897 부터 찾아보기(2026-09-22 실측)
 
 PART = re.compile(r"^\s*PART\s+(\d+)\s*(.*)$")
 SECTION = re.compile(r"^\s*SECTION\s+(\d+)\s*(.*)$")
