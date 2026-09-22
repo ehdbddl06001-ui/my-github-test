@@ -174,7 +174,11 @@ async function syncAll(quiet) {
     parts.push(`${examName(e)} ${n}개`);
   }
   const t = new Date().toTimeString().slice(0, 5);
-  setSyncStatus(`☁ 오답 ${parts.join(" · ")} 동기화됨 · ${t}`, "ok");
+  // 학습 기록(정리본 큐가 읽는 것)은 따로 전송된다 — 실패 중이면 상태 줄에 드러낸다
+  const ls = typeof LEARN === "object" && LEARN.learnSyncState ? LEARN.learnSyncState() : null;
+  const learnNote = !ls || ls.available === false ? ""
+    : ls.fails ? ` · 학습 기록 전송 실패 ${ls.fails}회(자동 재시도)` : ls.lastOk ? ` · 학습 기록 ${ls.count}건 ${ls.lastOk}` : "";
+  setSyncStatus(`☁ 오답 ${parts.join(" · ")} 동기화됨 · ${t}${learnNote}`, ls && ls.fails ? "bad" : "ok");
 }
 // 반환: 동기화된 오답 수(실패·서버 없음이면 null)
 async function syncNow(e, quiet) {
@@ -1093,7 +1097,10 @@ function init() {
       renderWrongbook(); updateWrongCount(); scheduleSync();
     }
   };
-  if ($("syncBtn")) $("syncBtn").onclick = () => syncAll(false);
+  if ($("syncBtn")) $("syncBtn").onclick = async () => {
+    if (typeof LEARN === "object") await LEARN.syncLearning(false);   // 학습 기록(정리본 큐의 원천)도 함께 보낸다
+    syncAll(false);
+  };
   if ($("syncKey")) {
     $("syncKey").value = syncKey();
     $("syncKey").onchange = () => {
@@ -1104,6 +1111,8 @@ function init() {
   }
   updateWrongCount();
   window.addEventListener("online", () => { if (SYNC.available !== false) syncAll(true); });
+  // 핸드폰 앱은 닫히지 않고 백그라운드에서 돌아온다 — 돌아올 때마다 한 번 맞춘다(2026-09-22)
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && SYNC.available !== false) syncAll(true); });
   if ($("reviewOpenBtn")) $("reviewOpenBtn").onclick = () => renderReview();
   if ($("rvBackBtn")) $("rvBackBtn").onclick = () => { hide($("review")); show($("setup")); onModeChange(); };
   if ($("rvExportBtn")) $("rvExportBtn").onclick = () => LEARN.exportJson();

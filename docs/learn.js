@@ -550,28 +550,43 @@ const LEARN = (() => {
   }
 
   /* ---------- 동기화(/api/learning — 있으면) ---------- */
+  // 2026-09-22: 예전에는 첫 전송이 한 번만 실패해도(잠깐 오프라인·서버 일시 오류) 그 세션 내내 다시 보내지 않았다.
+  // 핸드폰 앱은 하루 종일 백그라운드에 살아 있어서 그날 기록이 통째로 저장소에 안 올라갔다.
+  // 이제 「함수가 없는 호스트」(404·405·501·JSON 아님)만 포기하고, 나머지 실패는 간격을 늘려 다시 시도하며
+  // 앱으로 돌아올 때·온라인이 될 때·「지금 동기화」를 누를 때도 보낸다. 서버는 eid 합집합이라 여러 번 보내도 안전하다.
   let syncTimer = null;
-  const LSYNC = { url: "api/learning", available: null, busy: false };
-  function scheduleLearnSync() {
+  const LSYNC = { url: "api/learning", available: null, busy: false, fails: 0, lastOk: "", lastError: "" };
+  function scheduleLearnSync(delay) {
     if (LSYNC.available === false) return;
     clearTimeout(syncTimer);
-    syncTimer = setTimeout(() => syncLearning(true), 2500);
+    syncTimer = setTimeout(() => syncLearning(true), delay == null ? 2500 : delay);
   }
   async function syncLearning(quiet) {
-    if (LSYNC.busy || LSYNC.available === false || typeof fetch !== "function") return;
+    if (LSYNC.busy || LSYNC.available === false || typeof fetch !== "function") return LSYNC;
     LSYNC.busy = true;
     try {
       const headers = Object.assign({ "content-type": "application/json" }, typeof syncHeaders === "function" ? syncHeaders() : {});
       const r = await fetch(LSYNC.url, { method: "POST", headers, body: JSON.stringify({ device: device(), events: load() }) });
-      // 함수가 없는 호스트(GitHub Pages 405 · 정적 서버 501 · 404)나 서버 오류면 이 세션은 로컬 기록만 쓴다
-      if (!r.ok || !/json/.test(r.headers.get("content-type") || "")) { LSYNC.available = false; return; }
-      LSYNC.available = true;
+      if (r.status === 404 || r.status === 405 || r.status === 501) { LSYNC.available = false; return LSYNC; }  // 함수 없는 호스트
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      if (!/json/.test(r.headers.get("content-type") || "")) { LSYNC.available = false; return LSYNC; }
+      LSYNC.available = true; LSYNC.fails = 0; LSYNC.lastError = "";
+      LSYNC.lastOk = new Date().toTimeString().slice(0, 5);
       const data = await r.json();
       if (data && Array.isArray(data.events)) mergeEvents(data.events);
-    } catch (e) { LSYNC.available = false; /* 오프라인·함수 없음 → 로컬 기록만(다음 방문에 다시 확인) */ }
-    finally { LSYNC.busy = false; }
+    } catch (e) {
+      LSYNC.fails += 1;
+      LSYNC.lastError = String((e && e.message) || e);
+      scheduleLearnSync(Math.min(10 * 60 * 1000, 20000 * Math.pow(2, LSYNC.fails - 1)));   // 20초·40초·80초 … 최대 10분
+    } finally { LSYNC.busy = false; }
+    return LSYNC;
+  }
+  function learnSyncState() { return { available: LSYNC.available, fails: LSYNC.fails, lastOk: LSYNC.lastOk, lastError: LSYNC.lastError, count: load().length }; }
+  if (typeof document !== "undefined") {
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) scheduleLearnSync(500); });
+    window.addEventListener("online", () => scheduleLearnSync(500));
   }
 
   return { onAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
-    syncLearning, states, load, concept, STATUS };
+    syncLearning, learnSyncState, states, load, concept, STATUS };
 })();

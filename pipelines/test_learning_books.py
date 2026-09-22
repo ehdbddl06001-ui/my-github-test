@@ -239,6 +239,7 @@ class LearningStates(unittest.TestCase):
 class Planning(unittest.TestCase):
     def setUp(self):
         self.cfg = bb.load_config()
+        self.cfg["include_all_concepts"] = False               # 이 묶음은 「오답 → 단원」 규칙만 본다(전체 싣기는 아래 따로)
         base, _ = C.load_concepts()
         self.c1 = copy.deepcopy(base["cn.derm.pityriasis-versicolor.treatment"])
         self.c2 = copy.deepcopy(self.c1)                      # 같은 질환, 다른 학습 목표
@@ -252,6 +253,15 @@ class Planning(unittest.TestCase):
 
     def _plan(self, events):
         return bb.plan(self.concepts, self.qs, ll.states(events), self.cfg, {})
+
+    def test_all_concepts_are_included_when_merged(self):
+        cfg = dict(self.cfg, include_all_concepts=True)        # 2026-09-22 학습서·학습서_검증 통합
+        books = bb.plan(self.concepts, self.qs, ll.states([]), cfg, {})
+        self.assertEqual(sorted(u.key for u in books["피부과"].units), sorted(self.concepts))
+        e = [wrong("e1", "q1", self.c1["id"], "2026-09-18T01:00:00Z", "2026-09-18")]
+        units = bb.plan(self.concepts, self.qs, ll.states(e), cfg, {})["피부과"].units
+        self.assertEqual(len(units), 2)                        # 오답 단원과 겹치지 않는다
+        self.assertEqual(next(u for u in units if u.key == self.c1["id"]).state.wrongs, 1)
 
     def test_new_concept_new_unit_and_repeat_no_duplicate(self):
         e = [wrong("e1", "q1", self.c1["id"], "2026-09-18T01:00:00Z", "2026-09-18")]
@@ -448,6 +458,7 @@ class RenderedBook(unittest.TestCase):
     def test_build_skip_and_failure_keeps_latest(self):
         import pymupdf
         cfg = bb.load_config()
+        cfg["include_all_concepts"] = False           # 오답이 만든 책만 — 건너뜀·실패 규칙을 한 권으로 본다
         events = [wrong("e1", "kmle-2026-0675", "cn.peds.febrile-seizure.workup", "2026-09-18T01:00:00Z", "2026-09-18",
                         text="뇌척수액검사 시행")]
         with tempfile.TemporaryDirectory() as td:

@@ -144,6 +144,21 @@ def plan(concepts: dict, questions: dict, S: dict[str, ll.State], cfg: dict, sou
         else:
             q = questions.get(key[2:], {})
             books.setdefault(book_of(q.get("topic"), cfg), Book(book_of(q.get("topic"), cfg))).pending.append((s, q))
+    # 오답과 연결되지 않은 정리본(기본틀 빈칸 채우기·예전 시연 단원)도 싣는다 — 2026-09-22 사용자 지시로
+    # 「학습서」와 「학습서_검증」을 한 벌로 합쳤다. 학습서는 오답 목록이 아니라 과별 교과서처럼 쌓인다.
+    if cfg.get("include_all_concepts", True):
+        have = {u.key for b in books.values() for u in b.units}
+        for cid, c in concepts.items():
+            if cid in have:
+                continue
+            name = book_of(c.get("topic"), cfg)
+            u = Unit(key=cid, book=name, concept=c, state=ll.State(key=cid, objective=cid),
+                     questions=links.get(cid, []), title=str(c.get("title")), slot=str(c.get("outline") or ""))
+            for src in c.get("sources") or []:
+                st = source_state.get(source_key(src)) or {}
+                if st.get("status") in ("changed", "failed"):
+                    u.flags.append(f"출처 개정 확인 필요 — {src.get('org')} {src.get('year')}: {st.get('note', '')}")
+            books.setdefault(name, Book(name)).units.append(u)
     # 단원 순서 = 기본틀(해리슨 서술 순서). 배치되지 않은 단원은 맨 뒤에 제목순으로 남는다.
     slots = ol.index(ol.load()[0])
     for b in books.values():
@@ -848,9 +863,11 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                             later = sorted(q for q in info["dia_choices"] if q > d0)
                             earlier = sorted((q for q in info["dia_choices"] if q < d0), reverse=True)
                             order = later + earlier + ["full"]    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
+                            per_unit = 0                          # 단원마다 따로 센다 — 앞 단원이 예산을 다 쓰면 뒤 단원은 시도조차 못 했다(2026-09-22)
                             for crit_end, pos in [(False, q) for q in order] + [(True, q) for q in [info["dia_default"]] + order]:
-                                if (pos == info["dia_at"] and not crit_end) or tried >= 30:
+                                if (pos == info["dia_at"] and not crit_end) or per_unit >= 24:
                                     continue
+                                per_unit += 1
                                 tried += 1
                                 trial = dict(best[2], **{u.anchor: pos, u.anchor + "#crit_end": crit_end})
                                 e2, n2, p2, i2, g2 = render_once(trial, passes=1)
