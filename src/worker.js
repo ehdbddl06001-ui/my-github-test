@@ -9,6 +9,7 @@
  */
 import { onRequestGet as wrongGet, onRequestPost as wrongPost } from "../functions/api/wrong.js";
 import { onRequestPost as learningPost } from "../functions/api/learning.js";
+import { onRequest as apiMiddleware } from "../functions/api/_middleware.js";   // CORS(옛 주소의 앱) — Pages 와 같은 규칙
 
 const ROUTES = {
   "/api/wrong": { GET: wrongGet, POST: wrongPost },
@@ -20,15 +21,19 @@ export default {
     const path = new URL(request.url).pathname.replace(/\/+$/, "") || "/";
     const route = ROUTES[path];
     if (route) {
-      const handler = route[request.method];
-      if (!handler) {
-        return new Response(JSON.stringify({ error: `${request.method} 는 이 경로에서 쓰지 않는다` }), {
-          status: 405,
-          headers: { "content-type": "application/json; charset=utf-8", allow: Object.keys(route).join(", ") },
-        });
-      }
-      return handler({ request, env, ctx });
+      return apiMiddleware({ request, env, next: () => dispatch(route, request, env, ctx) });
     }
     return env.ASSETS.fetch(request);      // 나머지는 docs/ 의 정적 파일
   },
 };
+
+async function dispatch(route, request, env, ctx) {
+  const handler = route[request.method];
+  if (!handler) {
+    return new Response(JSON.stringify({ error: `${request.method} 는 이 경로에서 쓰지 않는다` }), {
+      status: 405,
+      headers: { "content-type": "application/json; charset=utf-8", allow: Object.keys(route).join(", ") },
+    });
+  }
+  return handler({ request, env, ctx });
+}
