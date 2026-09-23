@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2820,
+  "total": 2821,
   "byType": {
    "usmle": 162,
+   "anatomy": 735,
    "kmle": 1099,
    "concept": 64,
-   "anatomy": 734,
    "paper": 643,
    "imaging": 101,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 734,
+   "Anatomy": 735,
    "Cardiology": 208,
    "Nephrology": 171,
    "Infectious Disease": 151,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1873,
+   "high": 1874,
    "medium": 898,
    "low": 49
   },
@@ -222,6 +222,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0170.md",
    "snippet": "A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tigh",
    "text": "Pathology Headache, Blurred Vision and Rising Creatinine Weeks After Prednisone in a Woman With Tight Skin — The Vessel Lesion Behind an Abrupt Renal Crisis systemic-sclerosis scleroderma-renal-crisis hyperplastic-arteriolosclerosis onion-skin malignant-hypertension thrombotic-microangiopathy renin corticosteroid-risk USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 6 Systemic Sclerosis, Ch 11 Blood Vessels — Hypertensive Vascular Disease, Ch 14 Kidney; Denton CP, Khanna D. Systemic sclerosis. Lancet 2017) A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tight and thick, and she has had heartburn and difficulty swallowing solid food. Three weeks ago, she was started on prednisone 30 mg daily for rapidly worsening skin tightening. She has had no hemoptysis or rash, and she has noticed less urine than usual. Her vital signs are shown. Funduscopic examination shows flame shaped hemorrhages and cotton wool spots. The skin of the fingers, hands, forearms and face is thickened and bound down, and the oral aperture is narrowed. There are healed pitting scars on the fingertips. Laboratory studies are shown. A peripheral blood smear shows numerous schistocytes. A kidney biopsy is performed. Which of the following is most likely to be found in this patient's kidney? A. Homogeneous hyaline thickening of arteriolar walls B. Concentric laminated intimal thickening of small arteries C. Crescents of proliferating cells in Bowman space D. Subepithelial immune deposits along basement membranes E. Mesangial deposits of IgA containing immune complexes 레이노 현상·손/팔/얼굴 피부 경화·손끝 함몰 흉터·삼킴곤란은 미만성 전신경화증이다. 스테로이드를 시작한 몇 주 뒤 갑자기 204/118 의 악성 범위 고혈압, 고혈압성 망막병증(화염상 출혈·면화반), 크레아티닌 급상승, 분열적혈구·혈소판감소·LDH 상승·합토글로빈 저하(미세혈관병성 용혈)가 나타났고 요침사는 적혈구 원주 없이 비교적 조용하다 = 경피증 신장 위기(scleroderma renal crisis). 이 병의 1차 병변은 사구체가 아니라 소동맥(엽간·궁상 동맥, 수입 세동맥)이다: 내막이 점액양 기질과 증식한 평활근세포로 동심원상·층판상으로 두꺼워져(양파 껍질 모양, hyperplastic arteriolosclerosis) 내강이 좁아지고 섬유소양 괴사가 겹친다. 좁아진 혈관 → 신장 관류 저하 → 레닌 과분비 → 고혈압 악화의 악순환이 생기므로 ACE 억제제가 치료의 핵심이다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-24",
+   "type": "anatomy",
+   "unit": "등·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-24",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/anatomy/daily/2026-09-24.md",
+   "snippet": "오늘의 학습 (2026 09 24 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 14일 · Tagging 2까지 25일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-24 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 24 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 14일 · Tagging 2까지 25일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "kmle-2026-1130",
