@@ -902,8 +902,29 @@
    "date": "2026-09-23",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1128": {
+   "id": "kmle-2026-1128",
+   "exam": "kmle",
+   "subject": "Pulmonology",
+   "step": "",
+   "type": "Normotensive Acute Pulmonary Embolism with RV Dysfunction and Elevated Troponin — Next Step",
+   "style": "",
+   "modality": "",
+   "question": "다음 처치는?",
+   "chosen": 1,
+   "chosenText": "알테플라제 전신 정맥 투여",
+   "answer": 0,
+   "answerText": "저분자량 헤파린 피하 투여",
+   "coreNote": "",
+   "differ": "",
+   "decision": "CT 로 확진된 급성 폐색전증이 혈압을 유지하면서 우심실 기능장애와 트로포닌 상승을 보이면 중간-고위험군이다. 이 군의 표준은 즉시 치료 용량 항응고(저분자량 헤파린)와 집중 감시이고, 전신 혈전용해는 감시 중 혈역학이 무너질 때의 구제 요법이다. 항응고 금기가 없어 하대정맥 필터의 적응이 아니다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-23",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-23T07:10:20.769Z"
+ "updated": "2026-09-23T07:16:20.671Z"
 }
