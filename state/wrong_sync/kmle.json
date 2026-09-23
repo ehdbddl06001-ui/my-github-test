@@ -923,8 +923,29 @@
    "date": "2026-09-23",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1126": {
+   "id": "kmle-2026-1126",
+   "exam": "kmle",
+   "subject": "Psychiatry",
+   "step": "",
+   "type": "Heavy Smoker Failing Nicotine Patch Twice with Controlled Epilepsy — Choice of Cessation Drug",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 약물은?",
+   "chosen": 0,
+   "chosenText": "부프로피온 서방정 경구 투여",
+   "answer": 2,
+   "answerText": "바레니클린 경구 투여",
+   "coreNote": "",
+   "differ": "",
+   "decision": "니코틴 대체요법을 두 차례 충분히 시도하고도 실패한 고의존 흡연자에게는 다른 기전의 1차 약물이 필요하다. 후보는 바레니클린과 부프로피온인데, 뇌전증 병력은 발작이 조절돼 있어도 부프로피온(그리고 노르트립틸린)을 금기로 만든다. 우울증이 없고 신기능이 정상인 이 환자에게는 바레니클린이 가장 적절하다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-23",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-23T07:16:20.671Z"
+ "updated": "2026-09-23T07:27:20.408Z"
 }
