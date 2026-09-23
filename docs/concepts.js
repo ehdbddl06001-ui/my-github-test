@@ -5645,6 +5645,1119 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.cardio.qrs-axis.limb-lead-polarity": {
+  "id": "cn.cardio.qrs-axis.limb-lead-polarity",
+  "title": "평균 QRS 전기축 — 유도 I 과 aVF 의 극성으로 사분면을 정한다",
+  "objective": "사지유도가 평균 QRS 벡터를 각 유도 축에 투영한 값임을 이해하고, 유도 I 과 aVF(필요하면 II)의 QRS 순면적 부호로 정상축·좌축편위·우축편위·극단축·결정 불가를 가르며, 우축편위의 원인(젊고 마른 체형의 정상 변이·전극 뒤바뀜·우심실 부하·측벽경색·좌각후섬유속차단)을 차례로 따진다",
+  "objectiveKind": "진단",
+  "condition": "12유도 심전도의 전두면 QRS 축 판독",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Pulmonology",
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "81926fa2f82211b6",
+  "summary": [
+   "사지유도 여섯 개는 같은 심실 탈분극을 전두면의 여섯 방향에서 본다. 탈분극이 유도의 양극 쪽으로 향하면 위로(양성), 음극 쪽으로 향하면 아래로(음성) 그려지고, 유도 축에 수직이면 위아래가 같은 이상성 파형이 된다 [[harrison-21: 240장 p.1825]].",
+   "유도 I(0°)과 aVF(+90°)는 서로 수직이라 두 유도의 부호만으로 평균 QRS 벡터가 어느 사분면에 있는지 정해진다. I 음성 + aVF 양성 = +90°~+180°, 우축편위 [[harrison-21: 240장 p.1825]].",
+   "부호는 R 파 높이가 아니라 **순면적(양성 − 음성)**으로 판단한다. 작은 r 뒤 깊은 S(rS)는 음성이다.",
+   "우축편위는 젊은 성인·소아의 정상 변이일 수 있지만, 팔 전극 뒤바뀜·우심실 부하·측벽경색·우흉심·좌측 기흉·좌각후섬유속차단도 만든다. 좌각후섬유속차단은 드물어 다른 원인을 모두 배제한 뒤에만 붙인다 [[harrison-21: 240장 p.1826]] [[harrison-21: 240장 p.1828]].",
+   "정상 범위의 경계값은 자료마다 다르다 — 해리슨은 −30°~+100°, 많은 시험 문항은 −30°~+90° 를 쓴다(아래 시험 쟁점)."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>평균 QRS 전기축은 심실 탈분극 전체를 하나의 벡터로 합쳤을 때 그 벡터가 전두면에서 가리키는 방향이다. 유도 I 의 양극(왼쪽)을 0° 로 두고, 아래쪽을 양(+), 위쪽을 음(−)으로 잰다 <sup>[1 240장 p.1825]</sup>. 이 정리본의 목표는 <strong>사지유도의 극성만으로 축의 사분면을 정하고, 우축편위가 나왔을 때 원인을 어떤 순서로 따지는지</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 기능.</strong> 탈분극은 동결절에서 시작해 방실결절·His 다발을 지나 좌우 다발가지와 Purkinje 섬유로 퍼진다. 좌다발가지는 앞·뒤 섬유속으로 갈라진다 <sup>[1 240장 p.1824]</sup>. 좌심실이 더 두꺼워 두 심실이 함께 탈분극할 때의 합 벡터는 왼쪽·뒤로 향하고 <sup>[1 240장 p.1825]</sup>, 전두면에서는 대개 왼쪽 아래(0°~+90° 부근)를 가리킨다. 해리슨의 정상 심전도 예시는 약 +70° 다 <sup>[1 240장 p.1826]</sup>.</p>\n<p><strong>유도가 벡터를 「보는」 방식.</strong> 각 사지유도는 같은 사건을 다른 각도에서 찍는 카메라와 같다. 탈분극이 유도의 양극 쪽으로 향하면 위로, 음극 쪽으로 향하면 아래로 그려지며, 유도 축에 수직이면 위아래가 같은 이상성 파형이 된다 <sup>[1 240장 p.1825]</sup>. 그래서 각 유도의 QRS 순면적은 평균 벡터를 그 유도 축에 투영한 값이다.</p>\n<p><strong>축이 움직이는 기전.</strong> 평균 벡터는 늦게 또는 더 많이 탈분극하는 쪽으로 기운다. 우심실이 두꺼워지면 오른쪽으로 <sup>[1 240장 p.1826]</sup>, 한 섬유속이 막히면 그 섬유속이 맡던 부위가 늦게 탈분극해 그쪽으로 기운다 — 좌각전섬유속차단은 왼쪽(위)으로, 좌각후섬유속차단은 오른쪽(아래)으로 <sup>[1 240장 p.1828]</sup>. 경색으로 한쪽 벽의 기전력이 없어지면 벡터는 반대쪽으로 밀린다(측벽경색 → 우축). 심장이 세로로 서 있는 마른 체형·젊은 나이에서도 벡터가 아래·오른쪽으로 기운다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>유도 I 음성</strong>: 벡터가 유도 I 의 음극(180°) 쪽 반원, 즉 +90° 보다 오른쪽에 있다. 작은 r 뒤 깊은 S(rS)는 순면적 음성이다.</li>\n<li><strong>aVF 양성</strong>: 벡터가 아래쪽(0°~+180°) 반원에 있다.</li>\n<li><strong>둘을 합치면</strong>: I 음성 + aVF 양성 = 오른쪽 아래 사분면(+90°~+180°), 우축편위. 유도 III(+120°)과 aVF 가 크게 양성(qR)인 것도 같은 뜻이다.</li>\n<li><strong>가장 등전위인 유도</strong>: 축은 그 유도에 수직이다 — 사분면을 정한 뒤 각도를 좁힐 때 쓴다 <sup>[1 240장 p.1825]</sup>.</li>\n<li><strong>QRS 폭</strong>: 섬유속차단은 QRS 폭을 크게 늘리지 않고 축만 옮긴다. 다발가지 차단은 120 ms 이상으로 넓힌다 <sup>[1 240장 p.1828]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>사분면은 표 「유도 I · aVF 극성으로 정하는 축의 사분면」으로 정하고, 우축편위가 나오면 표 「우축편위 — 원인과 가르는 단서」 순서로 따진다. 핵심은 순서다.</p>\n<ol>\n<li><strong>기술적 원인</strong> — 좌우 팔 전극 뒤바뀜은 유도 I 을 통째로 뒤집는다 <sup>[1 240장 p.1826]</sup>.</li>\n<li><strong>구조적 원인</strong> — 우심실 부하(대개 V1 의 큰 R 과 함께), 급성 폐색전증, 측벽경색, 우흉심, 좌측 기흉 <sup>[1 240장 p.1826]</sup>.</li>\n<li><strong>정상 변이</strong> — 소아·젊은 성인. 다른 이상이 없을 때만 <sup>[1 240장 p.1826]</sup>.</li>\n<li><strong>좌각후섬유속차단</strong> — +110~+120° 를 넘고 위 원인이 모두 없을 때만. 단독으로는 매우 드물다 <sup>[1 240장 p.1828]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>축 판독은 체계적 판독 14항목(보정·리듬·심박수·PR·QRS·QT·<strong>평균 QRS 축</strong>·P 파·전압·R 파 진행·Q 파·ST·T·U) 가운데 하나다 <sup>[1 240장 p.1830]</sup>. 순서는 ① 보정과 전극 위치 확인 → ② 유도 I 순면적 → ③ aVF 순면적 → ④ (I 양성·aVF 음성이면) 유도 II → ⑤ 가장 등전위인 유도로 각도 좁히기. 이전 심전도와 비교하면 새로 생긴 축 변화(섬유속차단·경색)를 가를 수 있다 <sup>[1 240장 p.1830]</sup>. 우축편위에 우심실 부하 소견이 함께 있으면 심초음파로 구조를 확인한다 — 심전도는 비대 진단의 민감도·특이도가 제한적이다 <sup>[1 240장 p.1827]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>축 자체는 치료 대상이 아니다. 판독 뒤의 행동은 원인에 따른다. 전극 뒤바뀜이면 재기록, 증상 없는 젊은 사람의 단독 우축편위이고 다른 판독 항목이 모두 정상이면 추가 검사 없이 기록해 둔다. 우심실 부하 소견·흉통·호흡곤란이 함께 있으면 원인 질환(폐고혈압·폐색전증) 평가로 넘어간다. <strong>재평가</strong>: 이전 심전도와 비교해 축이 새로 오른쪽으로 옮겨 갔다면 정상 변이로 두지 않는다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>사분면은 유도 I 과 aVF 두 개로 정한다. II 는 좌축편위 경계(−30°)를 가를 때만 결정 유도다.</li>\n<li>부호는 순면적으로 — rS 는 음성.</li>\n<li>우축편위는 「소견」이다. 원인(정상 변이·우심실 부하·섬유속차단)은 전극 확인 → 구조 → 정상 변이 → 섬유속차단 순으로 붙인다.</li>\n<li>섬유속차단의 형태 기준(AHA/ACCF/HRS 2009)은 원문 미대조다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 정상축의 오른쪽 경계(+90° 대 +100°)</strong> — 시험 기준: 문항 보기에 적힌 범위(이 문항은 정상 −30°~+90°, 우축편위 +90°~+180°) / 다른 기준: 해리슨은 정상을 −30° 미만~+100° 로, 우축편위를 「+90~+100° 초과」로 적는다 <sup>[1 240장 p.1826]</sup> / 왜 다른가: 경계값은 합의된 한 숫자가 아니라 관례이며, 교과서마다 +90° 또는 +100° 를 쓴다 / 시험에서는: USMLE · KMLE 모두 사분면 문항은 대개 +90° 경계를 쓴다 — 축이 +90°~+100° 사이로 애매하면 보기의 정의를 따른다.</li>\n<li><strong>Z2 맥락 · 좌각후섬유속차단의 축 기준</strong> — 시험 기준: 우축편위 + 좁은 QRS + 다른 원인 배제 <sup>[1 240장 p.1828]</sup> / 다른 기준: 해리슨은 축 문턱을 「+110~+120° 초과」로 적는다 <sup>[1 240장 p.1828]</sup>. 문항 해설이 든 AHA/ACCF/HRS 2009 의 문턱은 원문을 보지 못했다 <sup>[2†]</sup> / 왜 다른가: 섬유속차단은 배제 진단이라 문턱과 형태 기준이 자료마다 조금씩 다르다 / 시험에서는: USMLE 는 「우축편위 + 다른 원인 없음」, KMLE 는 좌각전섬유속차단(좌축편위) 쪽을 더 자주 묻는다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 두 유도로 충분한가",
+    "deep": true,
+    "html": "<p>전두면은 평면이라 벡터 하나는 직교하는 두 성분으로 정해진다. 유도 I 은 좌우 성분을, aVF 는 위아래 성분을 잰다. 부호 두 개로 사분면이, 크기의 비로 각도가 나온다 — 예를 들어 I 의 순면적이 작은 음성이고 aVF 가 크게 양성이면 벡터는 +90° 를 조금 넘은 곳(+100°~+120°)에 있다. 이 문항처럼 유도 III(+120°)이 가장 크게 양성이라면 벡터는 +120° 가까이 있다. 해리슨의 육축 도해가 이 계산의 지도다 <sup>[1 240장 p.1825]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "유도 I · aVF 극성으로 정하는 축의 사분면",
+    "columns": [
+     "축",
+     "유도 I",
+     "유도 aVF",
+     "보탤 확인"
+    ],
+    "rows": [
+     [
+      "정상(0°~+90°)",
+      "양성",
+      "양성",
+      "—"
+     ],
+     [
+      "정상 또는 좌축(0°~−90°)",
+      "양성",
+      "음성",
+      "II 양성이면 0°~−30° 정상, II 음성이면 −30° 넘은 좌축편위"
+     ],
+     [
+      "우축편위(+90°~+180°)",
+      "<b>음성</b>",
+      "<b>양성</b>",
+      "먼저 팔 전극 뒤바뀜 배제 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "극단축(−90°~±180°)",
+      "음성",
+      "음성",
+      "심실 기원 리듬·전극 오류 확인"
+     ],
+     [
+      "결정 불가",
+      "등전위",
+      "등전위",
+      "모든 사지유도가 이상성"
+     ]
+    ],
+    "note": "유도 I 과 aVF 가 서로 수직이라는 점이 이 표의 근거다(그림 240-4) <sup>[1 240장 p.1825]</sup>. 우축편위의 상한(+90° 대 +100°)은 시험 쟁점 절 참조."
+   },
+   {
+    "title": "우축편위 — 원인과 가르는 단서",
+    "columns": [
+     "원인",
+     "기전",
+     "함께 보이는 소견",
+     "판단"
+    ],
+    "rows": [
+     [
+      "정상 변이(소아·젊은 성인, 마르고 키 큰 체형)",
+      "심장이 세로로 서 있어 벡터가 아래·오른쪽으로 기움",
+      "QRS 폭·전압·재분극 정상",
+      "다른 원인이 없을 때만 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "좌우 팔 전극 뒤바뀜",
+      "유도 I 이 거꾸로 기록됨",
+      "I 에서 P·QRS·T 모두 음성, aVR 양성",
+      "다시 붙여 재기록 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "우심실 압력 부하(폐고혈압·폐동맥판 협착)",
+      "두꺼운 우심실이 벡터를 오른쪽으로 당김",
+      "V1 R ≥ S 또는 qR, 우흉부 ST-T 변화",
+      "심초음파로 확인 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "급성 폐색전증",
+      "급성 우심실 확장",
+      "동빈맥, S1Q3T3, 우각차단",
+      "임상 맥락으로 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "측벽경색",
+      "측벽(왼쪽) 기전력 소실",
+      "I·aVL 의 Q 파",
+      "병력·효소 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "좌각후섬유속차단",
+      "하벽이 늦게 탈분극",
+      "QRS 폭 거의 정상, 축 +110~+120° 초과",
+      "위 원인을 모두 배제한 뒤 <sup>[1 240장 p.1828]</sup>"
+     ]
+    ],
+    "note": "해리슨은 이 밖에 우흉심·좌측 기흉도 우축편위 원인으로 적는다 <sup>[1 240장 p.1826]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "우축편위 vs 정상축 — 「젊고 마른 사람이니 세로축, 정상」",
+    "point": "마른 젊은 성인은 축이 +90° 가까이 서는 일이 흔하지만, 축 판정은 체형이 아니라 유도 I 의 QRS 순면적이 정한다. 유도 I 이 rS(작은 r, 깊은 S)로 순면적이 음성이면 벡터가 +90° 를 넘어 오른쪽으로 간 것이다 — 그 뒤에 「이 우축편위가 정상 변이인가」를 따진다 <sup>[1 240장 p.1826]</sup>. 순서가 거꾸로면(체형 → 정상) 우심실 부하·섬유속차단을 놓친다.",
+    "exception": "유도 I 이 거의 등전위라면 축은 약 +90° 로 경계선이다 — 보기에 적힌 범위(+90° 또는 +100°)를 확인한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "유도 II 만 보기 — 「II 가 양성이니 정상」",
+    "point": "유도 II(+60°)는 정상축과 우축편위(+90°~+150°) 모두에서 양성이다. II 는 좌축편위(−30° 넘음)를 가를 때 쓰는 유도이고, 오른쪽 경계는 유도 I 이 가른다 <sup>[1 240장 p.1825]</sup>.",
+    "exception": "I 양성·aVF 음성일 때는 II 가 정상(0°~−30°)과 좌축편위를 가르는 결정 유도가 된다.",
+    "cites": ""
+   },
+   {
+    "contrast": "좌각후섬유속차단 vs 우축편위 — 「축이 오른쪽이면 섬유속차단」",
+    "point": "좌각후섬유속차단은 단독으로 매우 드물고 +110~+120° 를 넘어야 하며, 정상 변이·우심실 부하·측벽경색 같은 흔한 원인을 먼저 배제해야 붙일 수 있는 진단이다 <sup>[1 240장 p.1828]</sup>. 우축편위라는 「소견」과 섬유속차단이라는 「원인」을 같은 것으로 쓰지 않는다.",
+    "exception": "보기가 축의 범위만 묻는다면 원인 진단 없이 「우축편위」가 답이다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "「순면적」은 R 과 S(와 q)의 넓이 차이다. 높은 R 이라도 더 깊은 S 가 따라오면 음성이다.",
+   "우축편위의 상한을 +90° 로 둘지 +100° 로 둘지는 자료마다 다르다 — 해리슨은 정상 범위를 +100° 까지 본다 <sup>[1 240장 p.1826]</sup>.",
+   "원인 평가(cause)에서 다른 이상이 없고 젊고 마른 체형이면 정상 변이로 두고, QRS 폭이 거의 정상인데 +110~+120° 를 넘고 다른 원인이 모두 없을 때만 좌각후섬유속차단을 붙인다 <sup>[1 240장 p.1828]</sup>.",
+   "축은 판독 14항목 가운데 하나일 뿐이다 — 리듬·간격·Q 파·ST-T 를 함께 본다 <sup>[1 240장 p.1830]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "axis-ranges-harrison",
+    "name": "전두면 QRS 축의 범위(해리슨)",
+    "kind": "정의",
+    "population": "성인 12유도 심전도",
+    "statement": "정상 QRS 축은 약 −30°~+100°. −30° 보다 음이면 좌축편위, +90~+100° 보다 양이면 우축편위 [[harrison-21: 240장 p.1826]]",
+    "exceptions": "경계값(+90° 대 +100°)은 자료마다 다르다 — 시험 문항은 보기에 적힌 범위를 따른다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "lpfb-harrison",
+    "name": "좌각후섬유속차단의 축 기준",
+    "kind": "진단 기준",
+    "population": "QRS 폭이 거의 정상인 우축편위",
+    "statement": "QRS 축이 +110~+120° 보다 오른쪽. 단독으로는 매우 드물어 우축편위의 다른 원인을 배제해야 한다 [[harrison-21: 240장 p.1828]]",
+    "exceptions": "AHA/ACCF/HRS 2009 권고의 세부 형태 기준(I·aVL rS, III·aVF qR)은 원문 미대조 [[?aha-ivcd-2009]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 240: Electrocardiography",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 240장(Goldberger AL) p.1824-1828, 1830",
+    "checked": "본문 대조(드라이브 240장 문서) — p.1825 유도 극성 규칙(양극 쪽 = 양성, 수직 = 이상성)·육축 도해(그림 240-4, I 0°·aVF +90°·III +120°) · p.1826 정상 QRS 축 <−30°~+100°, 좌축편위 −30° 초과, 우축편위 +90~+100° 초과, 우축편위 원인(소아·젊은 성인 정상 변이, 좌우 팔 전극 뒤바뀜, 급성·만성 우심실 부하, 측벽경색, 우흉심, 좌측 기흉, 좌각후섬유속차단), 우심실비대는 대개 우축편위 동반 · p.1828 섬유속차단은 QRS 폭을 크게 늘리지 않고 축만 옮김, 좌각후섬유속차단 축 +110~+120° 초과·단독은 극히 드물어 다른 원인 배제 필요 · p.1824 전도계(좌다발가지 앞·뒤 섬유속) · p.1827 심전도의 비대 진단 한계·심초음파 · p.1830 판독 14항목(7번째 평균 QRS 축)·이전 심전도 비교",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "aha-ivcd-2009",
+    "org": "American Heart Association / American College of Cardiology Foundation / Heart Rhythm Society",
+    "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram, Part III: Intraventricular Conduction Disturbances",
+    "kind": "guideline",
+    "citation": "Surawicz B, Childers R, Deal BJ, Gettes LS. Circulation 2009;119:e235-e240 (문항 해설에 적힌 권고)",
+    "checked": "서지만 — 문항 해설이 근거로 든 권고. 이 컨테이너에서 원문을 열지 못해 섬유속차단 형태 기준 문구를 대조하지 못했다(url 은 학술지 첫 화면, 논문 DOI 미확인)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.ahajournals.org/journal/circ"
+   }
+  ],
+  "checks": [
+   {
+    "q": "유도 I 음성, aVF 양성이면 축은?",
+    "a": "+90°~+180°, 우축편위."
+   },
+   {
+    "q": "유도 I 양성, aVF 음성일 때 정상과 좌축편위를 가르는 유도는?",
+    "a": "유도 II — 양성이면 0°~−30° 정상, 음성이면 −30° 넘은 좌축편위."
+   },
+   {
+    "q": "유도 I 이 rS 일 때 부호는?",
+    "a": "순면적이 음성이므로 음성이다. R 이 있다는 것만으로 양성이라 하지 않는다."
+   },
+   {
+    "q": "우축편위를 보면 가장 먼저 배제할 기술적 원인은?",
+    "a": "좌우 팔 전극 뒤바뀜 — 유도 I 에서 P·QRS·T 가 모두 뒤집힌다."
+   },
+   {
+    "q": "좌각후섬유속차단을 붙이기 전에 필요한 것은?",
+    "a": "축이 +110~+120° 를 넘고, 정상 변이·우심실 부하·측벽경색 같은 다른 우축편위 원인을 배제하는 것."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.qrs-axis.limb-lead-polarity#v1",
+    "context": "Changed clue flips the answer — lead I now net positive",
+    "stem": "A 23-year-old woman is evaluated before starting college athletics. She has no cardiopulmonary symptoms and takes no medications. She is slender. Blood pressure is 112/70 mm Hg and pulse is 66/min and regular. A 12-lead ECG shows sinus rhythm and a QRS duration of 0.08 s. In lead I the QRS complex is a small q followed by a tall R with a small s (net positive); leads II, III, and aVF each show a dominant R wave. Which of the following best describes the mean QRS axis in the frontal plane?",
+    "options": [
+     "Right axis deviation (+90° to +180°)",
+     "Normal axis (−30° to +90°)",
+     "Left axis deviation (−30° to −90°)",
+     "Extreme (northwest) axis (−90° to −180°)",
+     "Indeterminate axis (isoelectric in all limb leads)"
+    ],
+    "answer": 2,
+    "explanation": "Lead I (0°) and aVF (+90°) are perpendicular, so their polarities place the mean QRS vector in a quadrant. Both are net positive here, which puts the axis between 0° and +90° — a normal axis [[harrison-21: 240장 p.1825]]. In the original item lead I was rS (net negative) with aVF positive, which moves the vector past +90° into right axis deviation; the lean body habitus is the same in both cases and does not decide the axis. Left axis deviation would need a negative lead II and aVF, and an extreme axis would need both I and aVF negative.",
+    "of": "imaging-2026-0011",
+    "changed": "유도 I 을 rS(순면적 음성)에서 qR(순면적 양성)로 바꾸고 aVF 양성은 유지 → 벡터가 0°~+90° 사분면으로 들어와 답이 「우축편위」에서 「정상축」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.qrs-axis.limb-lead-polarity#v2",
+    "context": "Surface details change, answer stays — adolescent swimmer at school screening",
+    "stem": "A 17-year-old boy on his high school swim team has a screening ECG as part of a school sports program. He feels well and has never fainted. Examination shows a lean build and no murmurs. The tracing shows sinus rhythm at 64/min with a QRS duration of 0.08 s. Leads III and aVF show a qR pattern. Lead I shows a small r wave followed by a deeper S wave. Lead II is upright. Which of the following best describes the mean QRS axis in the frontal plane?",
+    "options": [
+     "Normal axis (−30° to +90°)",
+     "Left axis deviation (−30° to −90°)",
+     "Right axis deviation (+90° to +180°)",
+     "Extreme (northwest) axis (−90° to −180°)",
+     "Indeterminate axis (isoelectric in all limb leads)"
+    ],
+    "answer": 3,
+    "explanation": "Lead I is net negative (r smaller than S) and aVF is net positive, so the mean QRS vector points downward and to the right: +90° to +180°, right axis deviation [[harrison-21: 240장 p.1825]]. The upright lead II does not help, because lead II is positive in both the normal range and right axis deviation. Age, sex, sport, and setting differ from the original item, but the deciding clue — the polarity of leads I and aVF — is the same. Right axis deviation can be a normal variant in young adults, but that is a statement about cause, not about the axis itself [[harrison-21: 240장 p.1826]].",
+    "of": "imaging-2026-0011",
+    "changed": "나이·성별(17세 남자 고교 수영선수)·내원 경위(학교 검진)·제시 순서를 바꾸고 「유도 I rS(순면적 음성) + III·aVF 양성, 좁은 QRS」는 유지 → 답은 여전히 우축편위",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "전두면 QRS 축 — 유도 I 에서 시작",
+  "geo": {
+   "title": "전두면 QRS 축 — 유도 I 에서 시작",
+   "w": 948,
+   "h": 814.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "12유도 심전도 — 보정(10",
+      "mm/mV)·전극 위치 확인 뒤",
+      "사지유도를 본다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "lead1",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유도 I 의 QRS 순면적(양성 −",
+      "음성)은?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 163.0
+    },
+    {
+     "id": "iso",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "가장 등전위인 사지유도를",
+      "찾는다 — 축은 그 유도 축에",
+      "수직, 그 방향으로 I 부호를",
+      "다시 판정"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 293.0
+    },
+    {
+     "id": "avf_p",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유도 I 양성 — aVF 순면적은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "avf_n",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유도 I 음성 — aVF 순면적은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 457.0
+    },
+    {
+     "id": "lead2",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유도 II 순면적은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "normal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정상축(−30°~+90°)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 717.0
+    },
+    {
+     "id": "lad",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "좌축편위(−30° 넘음) —",
+      "좌각전섬유속차단·",
+      "좌심실비대·하벽경색 평가"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 717.0
+    },
+    {
+     "id": "rad",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "우축편위(+90°~+180°) — I",
+      "에서 P·T 도 음성인가(전극",
+      "뒤바뀜)?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 570.0
+    },
+    {
+     "id": "redo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "팔 전극을 바로 붙여 재기록"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 717.0
+    },
+    {
+     "id": "cause",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "원인 평가 — 체형·나이, V1",
+      "R/S, 우흉부 ST-T, I·aVL Q",
+      "파, QRS 폭"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 694.0,
+     "y": 717.0
+    },
+    {
+     "id": "extreme",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "극단축 — 심실 기원 리듬·",
+      "전극 오류 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 581.0,
+     "y": 570.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "lead1",
+     "points": [
+      [
+       453.0,
+       97
+      ],
+      [
+       453.0,
+       107
+      ],
+      [
+       453.0,
+       107
+      ],
+      [
+       453.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "lead1",
+     "to": "avf_p",
+     "points": [
+      [
+       404.0,
+       227.0
+      ],
+      [
+       404.0,
+       237.0
+      ],
+      [
+       904,
+       237.0
+      ],
+      [
+       904,
+       411.0
+      ],
+      [
+       307.3,
+       411.0
+      ],
+      [
+       307.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "lead1",
+     "to": "iso",
+     "points": [
+      [
+       453.0,
+       227.0
+      ],
+      [
+       453.0,
+       243.0
+      ],
+      [
+       453.0,
+       243.0
+      ],
+      [
+       453.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "거의 등전위"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 419.6,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "lead1",
+     "to": "avf_n",
+     "points": [
+      [
+       502.0,
+       227.0
+      ],
+      [
+       502.0,
+       249.0
+      ],
+      [
+       918,
+       249.0
+      ],
+      [
+       918,
+       411.0
+      ],
+      [
+       533.3,
+       411.0
+      ],
+      [
+       533.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 518.3,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "iso",
+     "to": "avf_p",
+     "points": [
+      [
+       420.3,
+       391.0
+      ],
+      [
+       420.3,
+       401.0
+      ],
+      [
+       372.7,
+       401.0
+      ],
+      [
+       372.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "다시 봐도 양성 쪽"
+      ],
+      "w": 96.2,
+      "h": 17,
+      "x": 324.6,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "iso",
+     "to": "avf_n",
+     "points": [
+      [
+       485.7,
+       391.0
+      ],
+      [
+       485.7,
+       407.0
+      ],
+      [
+       598.7,
+       407.0
+      ],
+      [
+       598.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "다시 봐도 음성 쪽"
+      ],
+      "w": 96.2,
+      "h": 17,
+      "x": 550.6,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "avf_p",
+     "to": "normal",
+     "points": [
+      [
+       307.3,
+       504.0
+      ],
+      [
+       307.3,
+       514.0
+      ],
+      [
+       932,
+       514.0
+      ],
+      [
+       932,
+       671.0
+      ],
+      [
+       146.7,
+       671.0
+      ],
+      [
+       146.7,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 677.0
+     }
+    },
+    {
+     "from": "avf_p",
+     "to": "lead2",
+     "points": [
+      [
+       372.7,
+       504.0
+      ],
+      [
+       372.7,
+       520.0
+      ],
+      [
+       227.0,
+       520.0
+      ],
+      [
+       227.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "avf_n",
+     "to": "rad",
+     "points": [
+      [
+       533.3,
+       504.0
+      ],
+      [
+       533.3,
+       514.0
+      ],
+      [
+       453.0,
+       514.0
+      ],
+      [
+       453.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "avf_n",
+     "to": "extreme",
+     "points": [
+      [
+       598.7,
+       504.0
+      ],
+      [
+       598.7,
+       520.0
+      ],
+      [
+       679.0,
+       520.0
+      ],
+      [
+       679.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 664.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "lead2",
+     "to": "normal",
+     "points": [
+      [
+       194.3,
+       617.0
+      ],
+      [
+       194.3,
+       627.0
+      ],
+      [
+       81.3,
+       627.0
+      ],
+      [
+       81.3,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성(0°~−30°)"
+      ],
+      "w": 87.4,
+      "h": 17,
+      "x": 37.6,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "lead2",
+     "to": "lad",
+     "points": [
+      [
+       259.7,
+       617.0
+      ],
+      [
+       259.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "rad",
+     "to": "redo",
+     "points": [
+      [
+       420.3,
+       651.0
+      ],
+      [
+       420.3,
+       661.0
+      ],
+      [
+       566.0,
+       661.0
+      ],
+      [
+       566.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 556.5,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "rad",
+     "to": "cause",
+     "points": [
+      [
+       485.7,
+       651.0
+      ],
+      [
+       485.7,
+       667.0
+      ],
+      [
+       792.0,
+       667.0
+      ],
+      [
+       792.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 771.5,
+      "y": 697.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "12유도 심전도 — 보정(10 mm/mV)·전극 위치 확인 뒤 사지유도를 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "유도 I 의 QRS 순면적(양성 − 음성)은?"
+     }
+    ]
+   },
+   {
+    "id": "lead1",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유도 I 의 QRS 순면적(양성 − 음성)은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 4,
+      "toText": "유도 I 양성 — aVF 순면적은?"
+     },
+     {
+      "label": "음성",
+      "to": 5,
+      "toText": "유도 I 음성 — aVF 순면적은?"
+     },
+     {
+      "label": "거의 등전위",
+      "to": 3,
+      "toText": "가장 등전위인 사지유도를 찾는다 — 축은 그 유도 축에 수직, 그 방향으로 I 부호를 다시 판정"
+     }
+    ]
+   },
+   {
+    "id": "iso",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "가장 등전위인 사지유도를 찾는다 — 축은 그 유도 축에 수직, 그 방향으로 I 부호를 다시 판정",
+    "note": "",
+    "branches": [
+     {
+      "label": "다시 봐도 양성 쪽",
+      "to": 4,
+      "toText": "유도 I 양성 — aVF 순면적은?"
+     },
+     {
+      "label": "다시 봐도 음성 쪽",
+      "to": 5,
+      "toText": "유도 I 음성 — aVF 순면적은?"
+     }
+    ]
+   },
+   {
+    "id": "avf_p",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유도 I 양성 — aVF 순면적은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 9,
+      "toText": "정상축(−30°~+90°)"
+     },
+     {
+      "label": "음성",
+      "to": 6,
+      "toText": "유도 II 순면적은?"
+     }
+    ]
+   },
+   {
+    "id": "avf_n",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유도 I 음성 — aVF 순면적은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 7,
+      "toText": "우축편위(+90°~+180°) — I 에서 P·T 도 음성인가(전극 뒤바뀜)?"
+     },
+     {
+      "label": "음성",
+      "to": 8,
+      "toText": "극단축 — 심실 기원 리듬·전극 오류 확인"
+     }
+    ]
+   },
+   {
+    "id": "lead2",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유도 II 순면적은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성(0°~−30°)",
+      "to": 9,
+      "toText": "정상축(−30°~+90°)"
+     },
+     {
+      "label": "음성",
+      "to": 10,
+      "toText": "좌축편위(−30° 넘음) — 좌각전섬유속차단·좌심실비대·하벽경색 평가"
+     }
+    ]
+   },
+   {
+    "id": "rad",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "우축편위(+90°~+180°) — I 에서 P·T 도 음성인가(전극 뒤바뀜)?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 11,
+      "toText": "팔 전극을 바로 붙여 재기록"
+     },
+     {
+      "label": "아니오",
+      "to": 12,
+      "toText": "원인 평가 — 체형·나이, V1 R/S, 우흉부 ST-T, I·aVL Q 파, QRS 폭"
+     }
+    ]
+   },
+   {
+    "id": "extreme",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "극단축 — 심실 기원 리듬·전극 오류 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "normal",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정상축(−30°~+90°)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lad",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "좌축편위(−30° 넘음) — 좌각전섬유속차단·좌심실비대·하벽경색 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "redo",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "팔 전극을 바로 붙여 재기록",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cause",
+    "num": 12,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "원인 평가 — 체형·나이, V1 R/S, 우흉부 ST-T, I·aVL Q 파, QRS 폭",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0011"
+  ],
+  "hasErrors": false
+ },
  "cn.derm.erythema-nodosum.underlying-cause-workup": {
   "id": "cn.derm.erythema-nodosum.underlying-cause-workup",
   "title": "결절홍반 — 정강이 압통 결절을 보면 피부가 아니라 원인을 찾는다",
@@ -7916,6 +9029,885 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.derm.regressing-pigmented-lesion.biopsy-first": {
+  "id": "cn.derm.regressing-pigmented-lesion.biopsy-first",
+  "title": "퇴행 구조가 주된 색소 병변 — 양성으로 보여도 조직검사가 먼저",
+  "objective": "더모스코피에서 회갈색 과립(peppering)·흉터양 백색 영역 같은 퇴행 구조가 주를 이루고 최근 변한 색소 병변은 퇴행 중 편평태선양 각화증과 퇴행 흑색종을 육안으로 가를 수 없으므로, 추적 관찰·파괴적 치료·국소 약물보다 조직검사를 먼저 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "퇴행 구조를 보이는 색소 병변(편평태선양 각화증 vs 퇴행 흑색종)",
+  "topic": "Dermatology",
+  "seeAlso": [
+   "Hematology-Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "87b2bb348d1f7856",
+  "summary": [
+   "정상 피부의 멜라닌은 표피 기저층 멜라닌세포가 만들어 각질형성세포에 넘긴다. 염증이 기저층을 부수면 멜라닌이 진피로 떨어져 멜라닌탐식세포에 담기고, 더모스코피에서 회청색·회갈색 과립(peppering)으로 보인다. 염증이 지나간 자리는 섬유화돼 흉터양 백색 영역이 된다 — 이것이 「퇴행 구조」다 [[?marghoob-atlas: regression structures]].",
+   "퇴행은 병변의 종류가 아니라 면역 반응의 흔적이다. 양성 흑자·지루각화증이 태선양 염증으로 퇴행하면 편평태선양 각화증(LPLK)이 되고, 흑색종도 면역 공격으로 부분·완전 퇴행한다 — 둘은 같은 그림을 그린다 [[?bolognia-4: Benign epidermal tumors and proliferations]].",
+   "해리슨: 진단의 목표는 흑색종을 침윤 전에 찾는 것이고, 크기·모양이 변했거나 흑색종을 시사하는 다른 특징이 있는 색소 병변은 생검 대상이다. 권장은 1–3 mm 경계의 절제 생검이며, 병리 보고에는 퇴행 여부가 들어간다 [[harrison-21: 76장 p.580]] [[harrison-21: 76장 p.581]].",
+   "그래서 최근 변화 + 퇴행 구조가 주된 병변은 LPLK 병력이 그럴듯해도 조직검사로 확진한다. 냉동치료·이미퀴모드·스테로이드는 조직을 없애거나 염증을 눌러 진단 기회를 없애고, 추적 관찰은 변하지 않는 양성 패턴에서만 선택지가 된다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>퇴행(regression)</strong> 은 색소 병변의 일부 또는 전부가 면역 반응으로 사라지며 남긴 흔적이다. 더모스코피에서는 회청색·회갈색 과립(peppering)과 흉터양 백색 영역으로 보인다. <strong>편평태선양 각화증(LPLK, lichenoid keratosis)</strong> 은 기존의 일광흑자·지루각화증이 태선양 염증으로 퇴행하는 양성 과정이다 <sup>[2† Benign epidermal tumors and proliferations]</sup>. 이 정리본의 목표는 LPLK 를 알아보는 것보다, <strong>퇴행 구조가 주된 색소 병변은 퇴행 흑색종과 겹치므로 추적·파괴·억제보다 조직검사가 먼저임을 고르는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상</strong>: 표피 기저층의 멜라닌세포가 멜라닌을 만들어 주변 각질형성세포에 넘기고, 멜라닌은 표피 안에 머문다. 더모스코피의 색소망은 기저층을 따라 늘어선 이 멜라닌이 표피 능선(rete ridge)에 모여 그물처럼 보이는 것이다.</p>\n<p><strong>퇴행의 기전</strong>: T 세포가 표피 기저층을 공격하면(태선양 염증) 각질형성세포가 죽고 기저층이 무너져 멜라닌이 진피 상부로 떨어진다. 떨어진 멜라닌은 대식세포가 삼켜 <strong>멜라닌탐식세포</strong>가 되는데, 진피에 있는 멜라닌은 빛 산란(틴들 현상) 때문에 갈색이 아니라 <strong>회청색</strong>으로 보인다 — 이것이 peppering 이다. 염증이 지나간 진피는 섬유화되어 <strong>흉터양 백색 영역</strong>이 된다. 기저층의 색소가 사라지니 원래의 색소망도 없어진다 <sup>[3† regression structures]</sup>.</p>\n<p><strong>왜 양성과 악성이 같은 그림을 그리나</strong>: 면역계는 양성 흑자도 흑색종도 공격한다. LPLK 는 양성 병변이 공격받은 결과이고, 퇴행 흑색종은 흑색종이 공격받아 일부 또는 전부가 사라진 결과다. 더모스코피가 보는 것은 「무엇이 공격받았는가」가 아니라 「공격의 흔적」이다. 완전히 퇴행한 흑색종은 남은 멜라닌세포 구조 없이 과립·백색 영역만 남아 LPLK 와 구별되지 않을 수 있다 <sup>[2† Benign epidermal tumors and proliferations]</sup>. 해리슨은 병리 보고에 퇴행 여부를 적게 하고, 현미경적 퇴행을 흑색종의 나쁜 예후 인자로 든다 <sup>[1 76장 p.581]</sup> <sup>[1 76장 p.583]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>오래된 갈색 반점이 분홍색으로 변하며 가려움</strong>: 태선양 염증이 시작되면 혈관이 늘어 분홍빛이 되고 염증이 가려움을 만든다. 해리슨 ABCDE 의 E(변화)는 색 변화와 가려움 같은 새 증상을 포함한다 — 양성 LPLK 의 전형 경과이면서 동시에 흑색종의 경고 신호다 <sup>[1 76장 p.580]</sup>.</li>\n<li><strong>회청색·회갈색 과립(peppering)</strong>: 진피 멜라닌탐식세포.</li>\n<li><strong>흉터양 백색 영역</strong>: 섬유화.</li>\n<li><strong>색소망·소구 소실</strong>: 기저층 멜라닌세포 구조가 사라짐 — 활동성 멜라닌세포 병변의 흔적이 없다는 뜻이지만, 완전 퇴행 흑색종을 배제하지 못한다(음성 소견의 한계).</li>\n<li><strong>결절·궤양 없음</strong>: 침윤성 흑색종·기저세포암의 가능성을 낮출 뿐 배제하지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>표 「퇴행·회색 과립을 보이는 색소 병변」이 비교다. 핵심은 <strong>퇴행 구조가 병변의 주를 이루는가</strong>와 <strong>최근 변했는가</strong>다. 둘 중 하나라도 있으면 퇴행 흑색종이 후보에 남아 조직으로만 가른다. 남은 비정형 망·청백색 베일·다형성 혈관이 함께 보이면 흑색종 쪽으로 더 기운다 <sup>[3† regression structures]</sup>. 반대로 밀리아 유사 낭·면포 유사 개구가 뚜렷한 지루각화증, 대칭 색소망만 있는 모반처럼 <strong>특정 양성 패턴이 분명하고 변화가 없으면</strong> 추적할 수 있다. 무색소 흑색종은 색소가 없어 분홍 병변으로 보일 수 있다 <sup>[1 76장 p.582]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>더모스코피</strong> — 육안보다 색소 양상을 정밀하게 보여 주고 의심 병변을 고르는 데 도움이 된다 <sup>[1 76장 p.580]</sup>. 그러나 퇴행 구조 앞에서는 결론이 아니라 생검 결정의 근거다.</li>\n<li><strong>조직검사</strong> — 확진 검사. 1–3 mm 경계의 절제 생검이 권장되며, 조직학적 평가와 두께 측정이 가능하고 양성이면 그대로 치료가 된다. 큰 병변이나 얼굴·손·발은 가장 결절성이거나 어두운 부위의 부분 생검도 되고, 부분 생검이 흑색종을 퍼뜨리지 않는다. 의심이 낮으면 면도·접시형·펀치 생검도 되지만 가장 깊은 부분과 바닥 색소를 포함해야 한다 <sup>[1 76장 p.580]</sup>.</li>\n<li><strong>병리 판독</strong> — 색소 병변에 경험 있는 병리의사가 읽고, 흑색종이면 Breslow 두께·유사분열·궤양·림프관 침범·<strong>퇴행</strong>·미세위성·경계를 보고한다 <sup>[1 76장 p.581]</sup>. LPLK 는 띠 모양 림프구 침윤·기저층 액화변성·진피 멜라닌탐식세포를 보이고 비정형 멜라닌세포 증식이 없다 <sup>[2† Benign epidermal tumors and proliferations]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>선택</strong>: 최근 변화 + 퇴행 구조가 주된 색소 병변 → <strong>조직검사(절제 생검)</strong> 가 다음 처치다 <sup>[1 76장 p.580]</sup>.</li>\n<li><strong>하지 않는 것과 이유</strong>: 냉동치료·이미퀴모드는 조직을 없애 진단·병기 정보를 지우고, 국소 스테로이드는 염증(변화의 신호)만 누르며, 추적 관찰은 이미 변한 병변을 기다리는 선택이다 — 표 「색소 병변 — 다음 처치를 정하는 조건」. 이미퀴모드·냉동은 조직으로 확인된 표재성 기저세포암 등의 치료 선택지다 <sup>[1 76장 p.588]</sup>.</li>\n<li><strong>반응 확인·재평가</strong>: 조직이 LPLK 이면 추가 처치 없이 끝난다(절제 생검이었다면 그 자체로 치료). 흑색종이면 두께에 따른 광범위 절제·병기 평가로 넘어간다. 생검 결과와 임상 인상이 어긋나면(예: 임상적으로 의심이 큰데 LPLK 로 나옴) 병리의사와 재검토한다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「변한 색소 병변 · 퇴행 구조가 주된 병변 = 조직검사」. 추적은 변화 없는 양성 패턴에서만.</li>\n<li>파괴·억제 처치(냉동·이미퀴모드·스테로이드)는 진단이 확실할 때의 선택이다.</li>\n<li>LPLK 의 병태·조직 소견과 「퇴행이 주되면 생검」 규칙의 정확한 문구는 Bolognia·더모스코피 아틀라스 원문을 열지 못해 서지만 남겼다(†, 검토 항목). 해리슨 76장은 흑색종 진단·생검 원칙을 대조했고 LPLK 는 다루지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 「의심 병변」에 추적도 선택지인가</strong> — 시험 기준: 크기·모양이 변했거나 흑색종을 시사하는 특징이 있는 색소 병변은 생검 대상 <sup>[1 76장 p.580]</sup> / 다른 기준: 같은 쪽 앞 문단은 의심 병변을 「생검, 전문의 평가, 또는 기록·사진으로 추적」하라고 세 가지를 나란히 든다 <sup>[1 76장 p.580]</sup> / 왜 다른가: 앞 문단은 전신 피부 검진에서 걸러 낸 병변 전반의 선택지이고, 뒤 문단은 이미 변했거나 흑색종 특징이 있는 병변의 생검 원칙이다 / 시험에서는: KMLE · USMLE 모두 「최근 변화 + 퇴행 구조」가 주어지면 추적이 아니라 생검을 답으로 낸다.</li>\n</ul>"
+   },
+   {
+    "title": "퇴행은 좋은 신호인가, 나쁜 신호인가",
+    "deep": true,
+    "html": "<p>직관적으로는 면역계가 병변을 공격해 없애고 있으니 좋은 신호처럼 보인다. 양성 흑자에게는 실제로 그렇다 — LPLK 는 스스로 사라져 가는 병변이다. 그러나 흑색종에서는 다르다 — 해리슨은 현미경적 퇴행을 높은 유사분열·림프관 침범과 함께 나쁜 예후 인자로 든다 <sup>[1 76장 p.583]</sup>. 면역 공격이 병변 일부를 지웠다는 것은 그 전에 병변이 자라 있었다는 뜻이기도 하다. 그래서 퇴행 구조는 「안심의 근거」가 아니라 「조직으로 확인할 이유」로 읽는다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "퇴행·회색 과립을 보이는 색소 병변 — 무엇이고 무엇을 하나",
+    "columns": [
+     "진단",
+     "더모스코피·병력",
+     "확진",
+     "처치"
+    ],
+    "rows": [
+     [
+      "편평태선양 각화증(퇴행 중)",
+      "회갈색 과립(peppering)·흉터양 백색·미세 혈관, 원래 색소망 소실; 오래된 흑자·지루각화증이 분홍색으로 변하며 가려움 <sup>[2† Benign epidermal tumors and proliferations]</sup>",
+      "조직: 띠 모양 림프구 침윤·기저층 액화변성·진피 멜라닌탐식세포, 비정형 멜라닌세포 증식 없음",
+      "조직으로 확인되면 추가 처치 불필요"
+     ],
+     [
+      "퇴행 흑색종",
+      "같은 과립·백색 영역 + 남은 비정형 망·청백색 베일·다형성 혈관이 있을 수 있음; 단독 병변·최근 변화 <sup>[3† regression structures]</sup>",
+      "조직: 비정형 멜라닌세포 증식, 병리 보고에 퇴행 기재 <sup>[1 76장 p.581]</sup>",
+      "절제 생검(1–3 mm) → 병기에 따라 광범위 절제 <sup>[1 76장 p.580]</sup>"
+     ],
+     [
+      "지루각화증",
+      "밀리아 유사 낭·면포 유사 개구·뇌 모양 융기, 경계 뚜렷",
+      "특정 패턴이 분명하면 임상 진단",
+      "경과관찰 또는 냉동치료"
+     ],
+     [
+      "표재성 기저세포암",
+      "가는 모세혈관확장·잎 모양 영역·청회색 소구",
+      "생검",
+      "절제·전기소작소파·냉동·이미퀴모드 등 <sup>[1 76장 p.588]</sup>"
+     ]
+    ],
+    "note": "LPLK·지루각화증·기저세포암의 더모스코피 소견은 교과서 원문 미대조(†). 해리슨 76장은 흑색종 진단·생검·기저세포암 치료를 다루고 LPLK 는 다루지 않는다."
+   },
+   {
+    "title": "색소 병변 — 다음 처치를 정하는 조건",
+    "columns": [
+     "처치",
+     "맞는 조건",
+     "이 병변에서 안 되는 이유"
+    ],
+    "rows": [
+     [
+      "조직검사(절제 생검)",
+      "변화한 병변, 흑색종 의심 특징, 퇴행 구조가 주됨 <sup>[1 76장 p.580]</sup>",
+      "—(정답)"
+     ],
+     [
+      "사진·더모스코피 추적",
+      "변화 없고 특정 양성 패턴이 분명한 병변, 고위험군 감시 <sup>[1 76장 p.580]</sup>",
+      "이미 변했고 퇴행 흑색종을 배제 못함"
+     ],
+     [
+      "냉동치료",
+      "진단이 확실한 광선각화증·지루각화증·사마귀",
+      "조직을 없애 진단이 사라짐"
+     ],
+     [
+      "이미퀴모드",
+      "조직으로 확인된 표재성 기저세포암 등 <sup>[1 76장 p.588]</sup>",
+      "확진 없이 쓰면 진단이 늦어짐"
+     ],
+     [
+      "국소 스테로이드",
+      "진단이 확실한 염증성 피부염",
+      "염증을 눌러도 흑색종 배제가 안 됨"
+     ]
+    ],
+    "note": "파괴·억제 처치는 모두 「진단이 이미 확실할 때」라는 전제가 있다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "추적 관찰 vs 조직검사 — 「양성으로 보이니 몇 달 뒤 다시 보자」",
+    "point": "사진·더모스코피 추적은 변화를 찾는 도구라, 변화가 없고 양성 패턴이 분명한 병변에서 쓴다. 이미 크기·모양·색·증상이 변한 색소 병변은 해리슨이 생검 대상으로 둔다 <sup>[1 76장 p.580]</sup>. 퇴행 구조가 주된 병변은 퇴행 흑색종을 더모스코피로 배제할 수 없어, 기다리는 동안 흑색종이면 진단이 늦어진다 <sup>[3† regression structures]</sup>.",
+    "exception": "변화가 없고 대칭적 색소망만 보이는 모반이나 고위험군 감시 중인 병변은 사진·더모스코피 추적이 맞다 <sup>[1 76장 p.580]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "염증 억제(스테로이드) vs 확진 — 「분홍색·가려움 = 염증성 피부염」",
+    "point": "분홍 배경과 가려움은 태선양 염증의 결과지만, 그 염증이 무엇을 공격하고 있는지(양성 흑자인지 흑색종인지)는 보여 주지 않는다. 해리슨의 ABCDE 에서 가려움은 「변화(E)」의 한 증상이다 <sup>[1 76장 p.580]</sup>. 스테로이드로 염증을 누르면 변화의 신호만 가린다.",
+    "exception": "진단이 확실한 습진·편평태선에는 국소 스테로이드가 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "파괴적 치료(냉동·이미퀴모드) vs 생검 — 「양성이면 없애면 끝」",
+    "point": "냉동치료·이미퀴모드는 조직을 남기지 않는다. 진단 전에 쓰면 흑색종이었을 때 두께(Breslow)·퇴행·경계 같은 병리 정보가 사라진다 <sup>[1 76장 p.581]</sup>. 절제 생검은 진단과 동시에, 양성이면 그 자체로 치료가 된다 <sup>[1 76장 p.580]</sup>.",
+    "exception": "조직으로 표재성 기저세포암이 확인되면 이미퀴모드·냉동이 치료 선택지가 된다 <sup>[1 76장 p.588]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "조직에서 비정형 멜라닌세포 증식 없이 띠 모양 림프구 침윤·진피 멜라닌탐식세포만 있으면 편평태선양 각화증으로 끝나고, 비정형 멜라닌세포가 있으면 흑색종으로 두께에 따라 광범위 절제·병기 평가로 간다 <sup>[2† Benign epidermal tumors and proliferations]</sup>.",
+   "무색소 흑색종은 색소 단서가 없어 분홍 병변도 이 흐름에 넣는다 — 진단은 생검 후 현미경으로 한다 <sup>[1 76장 p.582]</sup>.",
+   "얼굴·손·발이나 큰 병변은 가장 결절성이거나 어두운 부위를 부분 생검해도 된다 — 부분 생검이 전이를 조장하지는 않는다 <sup>[1 76장 p.580]</sup>.",
+   "현미경적 퇴행은 흑색종의 나쁜 예후 인자이기도 하다 <sup>[1 76장 p.583]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "h76-abcde",
+    "name": "흑색종 의심 — ABCDE 와 미운 오리 새끼",
+    "kind": "진단 기준",
+    "population": "색소 병변",
+    "statement": "비대칭, 경계 불규칙, 색 다양성, 직경 > 6 mm, 변화(크기·모양·색·높이의 변화나 출혈·가려움·딱지 같은 새 증상). 같은 사람의 다른 모반과 달라 보이는 병변(미운 오리 새끼)도 의심한다 [[harrison-21: 76장 p.580]]",
+    "exceptions": "무색소(amelanotic) 흑색종은 색소가 없어 생검 후 현미경으로 진단한다 [[harrison-21: 76장 p.582]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "h76-biopsy",
+    "name": "생검 대상과 방법",
+    "kind": "검사 권고",
+    "population": "흑색종이 의심되는 색소 병변",
+    "statement": "크기·모양이 변했거나 흑색종을 시사하는 특징이 있는 색소 병변은 생검 대상이다. 1–3 mm 경계의 절제 생검을 권하며, 조직학적 평가·두께 측정이 가능하고 양성이면 그 자체로 치료가 된다. 얼굴·손·발이나 큰 병변은 가장 결절성이거나 어두운 부위의 부분 생검도 된다 [[harrison-21: 76장 p.580]]",
+    "exceptions": "의심이 낮으면 면도·접시형·펀치 생검도 되지만 병변의 가장 깊은 부분과 바닥의 색소까지 포함해야 한다 [[harrison-21: 76장 p.580]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "regression-rule",
+    "name": "퇴행 구조가 주된 병변",
+    "kind": "검사 권고",
+    "population": "더모스코피에서 퇴행 구조(회청색 과립·흉터양 백색)가 보이는 색소 병변",
+    "statement": "퇴행 구조가 병변의 대부분을 차지하거나 단독 병변에서 보이면 퇴행 흑색종을 배제하지 못하므로 조직검사한다 [[?marghoob-atlas: regression structures]]",
+    "exceptions": "밀리아 유사 낭·면포 유사 개구가 뚜렷한 지루각화증처럼 특정 양성 패턴이 분명하고 변화가 없으면 경과관찰할 수 있다 [[?bolognia-4: Benign epidermal tumors and proliferations]]",
+    "source": "marghoob-atlas",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 76: Cancer of the Skin",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 76장 Cancer of the Skin, 인쇄쪽 578–589",
+    "checked": "드라이브 장 문서로 본문 대조. p.580 진단(ABCDE — E 에 색 변화·가려움 포함, 미운 오리 새끼, 더모스코피는 색소 양상 평가에 도움, 의심 병변은 생검·전문의 평가·사진 추적), 고위험군 감시(전신 사진·더모스코피), 생검(변화한 색소 병변은 생검 대상, 1–3 mm 절제 생검, 부분 생검 허용, 면도·펀치는 의심 낮을 때·깊이 포함). p.581 병리 보고 항목(퇴행 포함). p.582 무색소 흑색종은 생검 후 현미경 진단. p.583 현미경적 퇴행은 나쁜 예후 인자. p.588 이미퀴모드·냉동수술은 기저세포암 치료 선택지. LPLK·더모스코피 퇴행 구조의 세부는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "bolognia-4",
+    "org": "Elsevier",
+    "title": "Dermatology, 4th ed. — Benign epidermal tumors and proliferations",
+    "kind": "textbook",
+    "citation": "Bolognia JL, Schaffer JV, Cerroni L (eds). Dermatology, 4th ed. 장 'Benign epidermal tumors and proliferations' — lichenoid keratosis: 퇴행하는 흑자·지루각화증, 흑색종 배제를 위한 생검(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 문항 해설의 근거 목록에서 옮겼고 본문을 열지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "marghoob-atlas",
+    "org": "Informa Healthcare",
+    "title": "Atlas of Dermoscopy, 2nd ed.",
+    "kind": "textbook",
+    "citation": "Marghoob AA, Malvehy J, Braun RP (eds). Atlas of Dermoscopy, 2nd ed. — 퇴행 구조(peppering·흉터양 탈색)와 퇴행이 주된 병변의 생검 규칙(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 「퇴행 구조가 병변의 대부분」 기준의 정확한 문구·비율은 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2012",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "더모스코피의 회청색·회갈색 과립(peppering)은 무엇을 반영하나?",
+    "a": "기저층이 손상되어 진피로 떨어진 멜라닌을 담은 멜라닌탐식세포 — 퇴행 구조다."
+   },
+   {
+    "q": "퇴행 구조가 주된 색소 병변에서 LPLK 병력이 그럴듯해도 조직검사를 하는 이유는?",
+    "a": "흑색종도 퇴행하며 같은 과립·흉터양 백색 영역을 보여 더모스코피로 배제할 수 없기 때문이다."
+   },
+   {
+    "q": "해리슨이 생검 대상으로 두는 색소 병변은? 권장 방법은?",
+    "a": "크기·모양이 변했거나 흑색종을 시사하는 특징이 있는 병변. 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)."
+   },
+   {
+    "q": "ABCDE 의 E 에 포함되는 증상은?",
+    "a": "크기·모양·색·높이의 변화와 출혈·가려움·딱지 같은 새 증상."
+   },
+   {
+    "q": "사진·더모스코피 추적이 맞는 병변은?",
+    "a": "변화가 없고 특정 양성 패턴이 분명한 병변, 또는 고위험군 감시 중인 병변."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.derm.regressing-pigmented-lesion.biopsy-first#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 변화 없는 대칭 모반",
+    "stem": "34세 남자가 건강검진에서 등에 점이 많다는 말을 듣고 피부과에 왔다. 등의 직경 5 mm 갈색 반점 하나가 걱정된다고 하나, 가족 사진으로 보면 10년 전에도 같은 모양이었고 가렵거나 피가 난 적은 없다. 다른 점들과 모양이 비슷하다. 더모스코피에서 병변 전체에 가늘고 규칙적인 그물 모양 색소망이 대칭적으로 퍼져 있고, 회청색 과립·흉터양 백색 영역·청백색 베일·비정형 혈관은 없다. 가장 적절한 다음 조치는?",
+    "options": [
+     "1–3 mm 경계의 절제 생검",
+     "사진과 더모스코피 영상을 기록하고 추적 관찰",
+     "액체질소 냉동치료",
+     "국소 이미퀴모드 도포",
+     "국소 스테로이드 도포 후 경과관찰"
+    ],
+    "answer": 2,
+    "explanation": "10년간 변화가 없고, 다른 모반과 닮았으며(미운 오리 새끼가 아님), 대칭적 규칙 색소망만 있고 퇴행 구조가 없다 — ABCDE 어느 것도 해당하지 않는다. 의심 소견이 없는 병변은 사진·더모스코피 기록으로 추적하는 것이 맞다 [[harrison-21: 76장 p.580]]. 원래 문항은 최근 변화와 퇴행 구조가 있어 퇴행 흑색종을 배제할 수 없었기에 생검이 정답이었다. 냉동·이미퀴모드·스테로이드는 진단이 확실한 다른 병변의 처치다.",
+    "of": "imaging-2026-0054",
+    "changed": "「3년 된 갈색 반점이 2개월 전 분홍색으로 변하며 가려움 + 회갈색 과립·흉터양 백색 영역」을 「수년간 변화 없는 모반 + 대칭적 그물 모양 색소망만, 퇴행 구조 없음」으로 바꿈 → 생검 대상이 아니라 사진·더모스코피 기록 후 추적이 정답",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.regressing-pigmented-lesion.biopsy-first#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 회색으로 변한 등의 반점",
+    "stem": "68세 남자가 아내가 등의 점 색이 달라졌다고 해서 왔다. 오래전부터 있던 1 cm 크기의 갈색 반점이 최근 3개월 사이 일부가 회색으로 옅어졌다고 한다. 통증·출혈은 없다. 더모스코피에서 병변의 대부분이 흩어진 회청색 작은 과립과 흉터처럼 하얀 영역으로 덮여 있고, 가장자리에 옅은 갈색 색소가 조금 남아 있다. 만져지는 결절이나 궤양은 없다. 가장 적절한 다음 조치는?",
+    "options": [
+     "3개월 뒤 더모스코피 재검",
+     "액체질소 냉동치료",
+     "국소 이미퀴모드 도포",
+     "피부 조직검사",
+     "국소 스테로이드 도포"
+    ],
+    "answer": 4,
+    "explanation": "색이 최근 변했고(E — 변화), 더모스코피에서 회청색 과립과 흉터양 백색 영역이라는 퇴행 구조가 병변의 대부분을 차지한다. 퇴행 흑색종도 같은 그림을 그리므로 더모스코피로 배제할 수 없어 조직검사가 먼저다 [[harrison-21: 76장 p.580]] [[?marghoob-atlas: regression structures]]. 나이·부위·증상이 원래 문항과 달라도 「최근 변화 + 퇴행 구조가 주됨」이라는 결정 단서는 같다. 재검은 이미 변한 병변을 기다리는 선택이고, 냉동·이미퀴모드·스테로이드는 조직을 없애거나 염증을 눌러 진단을 가린다.",
+    "of": "imaging-2026-0054",
+    "changed": "나이·성별(68세 남자)·부위(등)·내원 경위(아내가 발견)·증상(가려움 대신 색이 회색으로 변함)과 제시 순서를 바꾸고 「최근 변화 + 퇴행 구조가 주됨 + 결절·궤양 없음」은 그대로 → 답은 여전히 조직검사",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "색소 병변 — 생검할까, 지켜볼까",
+  "geo": {
+   "title": "색소 병변 — 생검할까, 지켜볼까",
+   "w": 510,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "색소 병변 — 병력(변화 여부)",
+      "과 더모스코피"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "change",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "크기·모양·색·증상(가려움·",
+      "출혈)의 변화나 흑색종 의심",
+      "구조가 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "변화 여부를 모른다 — 이전",
+      "사진·환자 기억으로 변화",
+      "정보를 확인한다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "regress",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "퇴행 구조(회청색 과립·",
+      "흉터양 백색)가 병변의 주를",
+      "이루는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "benign",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "특정 양성",
+      "패턴(지루각화증의 밀리아",
+      "유사 낭·면포 유사 개구,",
+      "대칭 색소망)이 분명한가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 587.0
+    },
+    {
+     "id": "biopsy",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "조직검사 — 1–3 mm 경계의",
+      "절제 생검(부위에 따라 부분",
+      "생검)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 751.0
+    },
+    {
+     "id": "follow",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "사진·더모스코피 기록 후",
+      "추적 — 변하면 생검"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 751.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "change",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "change",
+     "to": "biopsy",
+     "points": [
+      [
+       178.0,
+       227.0
+      ],
+      [
+       178.0,
+       237.0
+      ],
+      [
+       452,
+       237.0
+      ],
+      [
+       452,
+       705.0
+      ],
+      [
+       55.2,
+       705.0
+      ],
+      [
+       55.2,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 40.2,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "change",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "change",
+     "to": "regress",
+     "points": [
+      [
+       276.0,
+       227.0
+      ],
+      [
+       276.0,
+       249.0
+      ],
+      [
+       466,
+       249.0
+      ],
+      [
+       466,
+       394.0
+      ],
+      [
+       194.3,
+       394.0
+      ],
+      [
+       194.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "biopsy",
+     "points": [
+      [
+       194.3,
+       374.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       480,
+       384.0
+      ],
+      [
+       480,
+       705.0
+      ],
+      [
+       94.4,
+       705.0
+      ],
+      [
+       94.4,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "변화 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 66.5,
+      "y": 711.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "regress",
+     "points": [
+      [
+       259.7,
+       374.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       259.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "변화 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "regress",
+     "to": "biopsy",
+     "points": [
+      [
+       194.3,
+       521.0
+      ],
+      [
+       194.3,
+       531.0
+      ],
+      [
+       494,
+       531.0
+      ],
+      [
+       494,
+       705.0
+      ],
+      [
+       133.6,
+       705.0
+      ],
+      [
+       133.6,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "주를 이룸"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 105.7,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "regress",
+     "to": "benign",
+     "points": [
+      [
+       259.7,
+       521.0
+      ],
+      [
+       259.7,
+       537.0
+      ],
+      [
+       227.0,
+       537.0
+      ],
+      [
+       227.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음·일부"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 197.8,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "benign",
+     "to": "biopsy",
+     "points": [
+      [
+       194.3,
+       685.0
+      ],
+      [
+       194.3,
+       695.0
+      ],
+      [
+       172.8,
+       695.0
+      ],
+      [
+       172.8,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불분명"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 152.3,
+      "y": 711.0
+     }
+    },
+    {
+     "from": "benign",
+     "to": "follow",
+     "points": [
+      [
+       259.7,
+       685.0
+      ],
+      [
+       259.7,
+       701.0
+      ],
+      [
+       340.0,
+       701.0
+      ],
+      [
+       340.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "분명"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 731.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "색소 병변 — 병력(변화 여부)과 더모스코피",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "크기·모양·색·증상(가려움·출혈)의 변화나 흑색종 의심 구조가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "change",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "크기·모양·색·증상(가려움·출혈)의 변화나 흑색종 의심 구조가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 7,
+      "toText": "조직검사 — 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "변화 여부를 모른다 — 이전 사진·환자 기억으로 변화 정보를 확인한다"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "퇴행 구조(회청색 과립·흉터양 백색)가 병변의 주를 이루는가?"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "변화 여부를 모른다 — 이전 사진·환자 기억으로 변화 정보를 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "변화 확인",
+      "to": 7,
+      "toText": "조직검사 — 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)"
+     },
+     {
+      "label": "변화 없음",
+      "to": 4,
+      "toText": "퇴행 구조(회청색 과립·흉터양 백색)가 병변의 주를 이루는가?"
+     }
+    ]
+   },
+   {
+    "id": "regress",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "퇴행 구조(회청색 과립·흉터양 백색)가 병변의 주를 이루는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "주를 이룸",
+      "to": 7,
+      "toText": "조직검사 — 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)"
+     },
+     {
+      "label": "없음·일부",
+      "to": 5,
+      "toText": "특정 양성 패턴(지루각화증의 밀리아 유사 낭·면포 유사 개구, 대칭 색소망)이 분명한가?"
+     }
+    ]
+   },
+   {
+    "id": "benign",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "특정 양성 패턴(지루각화증의 밀리아 유사 낭·면포 유사 개구, 대칭 색소망)이 분명한가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "분명",
+      "to": 6,
+      "toText": "사진·더모스코피 기록 후 추적 — 변하면 생검"
+     },
+     {
+      "label": "불분명",
+      "to": 7,
+      "toText": "조직검사 — 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)"
+     }
+    ]
+   },
+   {
+    "id": "follow",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "사진·더모스코피 기록 후 추적 — 변하면 생검",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "biopsy",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "조직검사 — 1–3 mm 경계의 절제 생검(부위에 따라 부분 생검)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0054"
+  ],
+  "hasErrors": false
+ },
  "cn.derm.scabies.treat-with-contacts": {
   "id": "cn.derm.scabies.treat-with-contacts",
   "title": "옴 — 진드기 과민반응에서 환자·접촉자 동시 치료까지",
@@ -8973,6 +10965,1023 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.em.ards.lung-protective-ventilation": {
+  "id": "cn.em.ards.lung-protective-ventilation",
+  "title": "급성호흡곤란증후군 — 심장 원인을 배제한 뒤 첫 처치는 저일회호흡량 폐보호 환기",
+  "objective": "양측 폐 음영과 저산소혈증이 심부전·용적 과부하로 설명되지 않을 때 Berlin 기준(발병 시기·양측 음영·PEEP ≥ 5 에서 PaO2/FiO2·정수압성 부종 배제)으로 급성호흡곤란증후군과 중증도를 판단하고, 첫 처치로 일회호흡량 6 mL/kg 예측체중·고평부압 ≤ 30 cm H2O 폐보호 환기를 고르며, 이뇨·PEEP·복와위의 자리를 가른다",
+  "objectiveKind": "다음 처치",
+  "condition": "급성호흡곤란증후군(ARDS)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Pulmonology",
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "4e4a051f1cc40dc0",
+  "summary": [
+   "ARDS 는 폐포-모세혈관 장벽이 손상돼 단백이 많은 부종액이 폐포를 채우는 염증성(투과성) 부종이다. 심부전의 정수압성 부종과 흉부 사진은 비슷할 수 있어, 심장 원인을 객관적으로 배제해야 진단이 선다.",
+   "Berlin 기준: 유발 요인·호흡 증상 뒤 1주 안 발병 · 흉수·허탈·결절로 설명되지 않는 양측 음영 · 정수압성 부종이 주원인이 아님 · PEEP ≥ 5 cm H2O 에서 PaO2/FiO2 로 경증(200–300)·중등증(100–200)·중증(≤ 100).",
+   "부종은 아래쪽(의존 부위) 폐에 몰려 통기되는 폐가 작다. 정상 크기의 일회호흡량은 이 작은 폐를 과팽창시키고(volutrauma), 허탈된 폐포를 매 호흡마다 열고 닫아(atelectrauma) 손상을 키운다.",
+   "그래서 첫 처치는 혈액가스 정상화가 아니라 폐보호 환기다 — 일회호흡량 6 mL/kg 예측체중, 고평부압 ≤ 30 cm H2O(ARDS Network: 사망 40 % → 31 %). 고탄산혈증은 허용한다.",
+   "PEEP 는 허탈을 막아 산소화를 돕고(낮추지 않는다), 중증(PaO2/FiO2 < 150)은 복와위로 사망률이 줄었다. 체액은 저혈압·저관류가 없는 한 제한·이뇨로 좌심방압을 낮게 유지한다 — 이뇨는 금기가 아니라 환기 설정 다음의 보조다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>급성호흡곤란증후군(ARDS)은 빠르게 시작한 심한 호흡곤란·저산소혈증·미만성 폐 침윤으로 호흡부전에 이르는 임상 증후군이며, 폐렴·패혈증·흡인·외상·다량 수혈 같은 직접·간접 손상이 원인이다 <sup>[1 301장 p.2225]</sup>. 이 정리본의 목표는 원인 나열이 아니라, <strong>양측 폐 음영과 저산소혈증을 보았을 때 심장 원인을 배제해 ARDS 와 중증도를 판단하고, 첫 처치로 폐보호 환기를 고르며 이뇨·PEEP·복와위의 자리를 가르는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 폐포는 얇은 제1형 폐포세포와 모세혈관 내피가 단단한 장벽을 이루어 혈장 단백과 물이 폐포로 새지 않는다. 제2형 폐포세포가 만드는 표면활성제는 폐포가 숨을 내쉴 때 닫히지 않게 한다.</p>\n<p>ARDS 의 삼출기(첫 7일)에는 이 내피와 제1형 세포가 손상돼 장벽이 무너지고, <strong>단백이 많은 부종액</strong>이 간질과 폐포를 채운다. 염증성 사이토카인이 호중구를 끌어들이고, 단백·세포 잔해·기능을 잃은 표면활성제가 유리막을 만든다 <sup>[1 301장 p.2226]</sup>. 부종은 중력 방향의 <strong>아래쪽(의존 부위) 폐</strong>에 몰리고 그 부분이 허탈되어 폐 유순도가 떨어진다. 피가 통기되지 않는 폐포를 지나므로 <strong>단락</strong>이 생겨 산소를 올려도 PaO2 가 잘 오르지 않고, 미세혈관 폐쇄로 사강이 늘어 고탄산혈증도 생긴다 <sup>[1 301장 p.2226]</sup>.</p>\n<p>처치를 정하는 것은 이 불균일성이다. CT 에서 보듯 손상은 아래쪽에 몰리고 위쪽은 비교적 남아 있어 <strong>통기되는 폐가 작다</strong>. 이 작은 폐에 정상 크기의 일회호흡량을 넣으면 남은 폐포가 과팽창하고(volutrauma), 허탈된 폐포는 호흡마다 열리고 닫히며 다친다(atelectrauma) <sup>[1 301장 p.2228]</sup>. 인공호흡기는 생명을 구하지만 설정이 틀리면 손상을 키운다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>발병 시기</strong>: 유발 사건 뒤 대개 12–36시간, 늦으면 5–7일에 호흡곤란이 시작된다 — 그래서 Berlin 은 「1주 안」을 요구한다 <sup>[1 301장 p.2226]</sup>.</li>\n<li><strong>빠른 호흡·저산소혈증</strong>: 유순도 저하로 호흡일이 늘고, 단락 때문에 FiO2 를 올려도 SpO2 가 덜 오른다(문항: 비재호흡 마스크에서 90 %).</li>\n<li><strong>흉부 사진</strong>: 폐부종에 맞는 양측 음영, 흔히 폐야의 3/4 이상. 심인성 부종과 구별되지 않을 수 있으나 심비대·흉수·혈관 재분포는 없을 수 있다 <sup>[1 301장 p.2226]</sup>.</li>\n<li><strong>PaO2/FiO2</strong>: 산소화 장애의 크기. PEEP 가 허탈된 폐포를 열어 값을 바꾸므로 PEEP ≥ 5 에서 잰 값으로 등급을 매긴다.</li>\n<li><strong>심장 평가(정상이 의미 있는 음성)</strong>: 경정맥 팽대·말초 부종이 없고 심초음파 좌심실 기능이 정상이면 정수압성 부종이 주원인이 아니다. 유발 요인이 없을 때는 이 객관적 평가가 필수다 <sup>[1 301장 p.2226]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>흔한 감별은 <strong>심인성 폐부종·양측 폐렴·폐포 출혈</strong>이고, 드물게 급성 간질성 폐렴·과민성 폐렴·방사선 폐렴·신경성 폐부종이 있다 <sup>[1 301장 p.2226]</sup>. 저산소혈증이 심한데 폐가 깨끗하면 폐색전증, 한쪽 호흡음 소실·과투과성이면 기흉을 먼저 생각한다 — 둘 다 「양측 실질 음영」과 맞지 않는다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>동맥혈가스(PEEP ≥ 5 에서)</strong> — PaO2/FiO2 로 중증도: 경증 200–300, 중등증 100–200, 중증 ≤ 100 <sup>[1 301장 p.2226]</sup>.</li>\n<li><strong>흉부 사진·CT</strong> — 양측 음영이 흉수·허탈·결절로 설명되지 않음을 확인. CT 는 의존 부위 위주의 불균일한 침범을 보여 준다.</li>\n<li><strong>심초음파·혈역학 평가</strong> — 정수압성 부종 배제. 유발 요인이 없으면 반드시 <sup>[1 301장 p.2226]</sup>.</li>\n<li><strong>원인 검사</strong> — 폐렴 병원체·패혈증 원인. 검사 수치는 대개 비특이적이고 원인 질환을 반영한다.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>폐보호 환기(첫 결정)</strong> — 일회호흡량 6 mL/kg 예측체중, 고평부압 ≤ 30 cm H2O. 12 mL/kg 와 비교해 사망 40 % → 31 % <sup>[1 301장 p.2228]</sup>. 산증은 호흡수(≤ 35)로 보정하고 pH ≥ 7.30 까지 고탄산혈증을 허용한다 <sup>[1 301장 p.2229]</sup>.</li>\n<li><strong>PEEP·FiO2</strong> — 허탈을 막아 FiO2 를 낮추면서 산소화(SpO2 88–95 %)를 얻는다. 최적 설정법은 합의가 없다 <sup>[1 301장 p.2228–2229]</sup>.</li>\n<li><strong>복와위</strong> — PaO2/FiO2 &lt; 150 이면 28일 사망 32.8 % → 16.0 % <sup>[1 301장 p.2228]</sup>.</li>\n<li><strong>보수적 체액·이뇨</strong> — 저혈압·저관류가 없으면 좌심방압을 낮게 유지해 폐부종을 줄인다(등급 B) <sup>[1 301장 p.2228–2229]</sup>.</li>\n<li><strong>선택적 처치</strong> — 동조 불량이면 48시간 신경근차단, 표준 치료에 반응 없는 중증은 ECMO 구조 치료. 재개방 수기(고PEEP 와 함께면 사망 증가 보고)·고빈도 환기·스테로이드 일상 사용·흡입 혈관확장제는 이득이 입증되지 않았다 <sup>[1 301장 p.2228–2229]</sup>.</li>\n<li><strong>반응 확인·재평가</strong> — 고평부압을 매번 재고(&gt; 30 이면 일회호흡량을 더 낮춤), PaO2/FiO2 가 150 아래로 머물면 복와위, 원인(폐렴·패혈증)의 치료 반응을 본다. 사망은 대부분 패혈증·다장기부전 같은 폐 밖 원인이라 일반 중환자 관리가 예후를 좌우한다 <sup>[1 301장 p.2229]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「양측 음영 + 저산소혈증」은 곧 심부전이 아니다 — 경정맥·부종·심초음파로 정수압성 부종을 먼저 가른다.</li>\n<li>ARDS 의 첫 처치는 6 mL/kg PBW·Pplat ≤ 30. PaCO2 를 맞추려고 일회호흡량을 늘리지 않는다.</li>\n<li>PEEP 는 낮추지 않는다. 이뇨는 금기가 아니라 저혈압이 없을 때의 보조다.</li>\n<li>중증(PaO2/FiO2 &lt; 150)은 복와위를 더한다.</li>\n<li>해리슨 301장은 비-COVID ARDS 를 다룬다. COVID-19 ARDS(199장)는 읽지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · ARDS 에서 이뇨제는 틀린 답인가</strong> — 시험 기준: 심장 원인이 배제된 ARDS 의 <strong>첫</strong> 처치는 폐보호 환기이고, 「이뇨+PEEP 감량」은 오답이다(PEEP 감량이 허탈을 키운다) <sup>[1 301장 p.2228]</sup> / 다른 기준: 해리슨은 저혈압·저관류가 없으면 수액 제한·이뇨로 좌심방압을 낮추는 것을 ARDS 관리의 중요한 부분(등급 B)으로 권한다 <sup>[1 301장 p.2228–2229]</sup> — 문항 해설의 「이뇨는 혈관 내 용적만 줄인다」는 이보다 강한 표현이다 / 왜 다른가: 문항은 「다음 처치 하나」를, 해리슨은 전체 관리 묶음을 말한다 / 시험에서는: KMLE·USMLE 모두 「첫 처치」를 물으면 폐보호 환기, 「체액 전략」을 물으면 보수적 체액(저혈압 없을 때)을 고른다.</li>\n<li><strong>Z2 새 근거 · ARDS 의 정의</strong> — 시험 기준: Berlin(PEEP ≥ 5 에서 PaO2/FiO2) <sup>[1 301장 p.2226]</sup> / 다른 기준: 2023–2024 「새 전 세계 정의」는 비삽관 고유량 산소 환자와 SpO2/FiO2 도 포함한다고 알려져 있으나 원문 미대조 <sup>[4†]</sup> / 왜 다른가: 해리슨 21판(2022) 이후 개정 / 시험에서는: KMLE·USMLE 모두 당분간 Berlin 네 요소와 100·200·300 경계를 묻는다.</li>\n<li><strong>Z3 맥락 · COVID-19 ARDS</strong> — 시험 기준: 해리슨 301장은 비-COVID ARDS 를 다루며 스테로이드 일상 사용을 권하지 않는다(등급 D) <sup>[1 301장 p.2228–2229]</sup> / 다른 기준: COVID-19 ARDS 의 권고는 해리슨 199장에 따로 있다(읽지 않음 <sup>[1† 199장]</sup>) / 왜 다른가: 원인 질환별 치료가 다르다 / 시험에서는: 문항에 COVID-19 가 명시되지 않으면 일반 ARDS 원칙(폐보호 환기)으로 푼다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 「혈액가스를 맞추는 환기」에서 「폐를 지키는 환기」로 바뀌었나",
+    "deep": true,
+    "html": "<p>2000년 이전에는 인공호흡의 목표가 PaCO2·pH 를 정상으로 되돌리는 것이었고, 10–15 mL/kg 의 일회호흡량이 흔했다. 그러나 ARDS 폐의 CT 는 손상이 아래쪽에 몰리고 위쪽의 정상 폐는 작다는 것을 보여 주었고, 동물 실험은 큰 일회호흡량 자체가 폐를 다치게 한다는 것을 보여 주었다. ARDS Network 시험은 6 mL/kg·고평부압 ≤ 30 이 12 mL/kg 보다 사망률을 낮춘다는 것을 증명했다 <sup>[1 301장 p.2228]</sup>. 이후 대부분의 약물 시험(스테로이드·표면활성제·혈관확장제)은 실패했고, 사망률을 바꾼 것은 여전히 「폐를 덜 다치게 하는」 처치 — 저일회호흡량과 중증에서의 복와위 — 였다. 남은 논쟁은 PEEP 를 어떻게 정할지이며, 해리슨은 합의가 없다고 적는다 <sup>[1 301장 p.2228]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "양측 폐 음영 + 저산소혈증 — ARDS 와 심인성 폐부종 가르기",
+    "columns": [
+     "구분",
+     "ARDS(투과성 부종)",
+     "심인성 폐부종(정수압성)",
+     "가르는 근거"
+    ],
+    "rows": [
+     [
+      "기전",
+      "폐포-모세혈관 장벽 손상 → 단백 많은 부종액 <sup>[1 301장 p.2225–2226]</sup>",
+      "좌심방압 상승 → 모세혈관 정수압 상승",
+      "장벽이 망가졌나, 압력이 높나"
+     ],
+     [
+      "선행 사건",
+      "폐렴·패혈증·흡인·외상·수혈 뒤 1주 안 <sup>[1 301장 p.2225]</sup>",
+      "심근경색·심근병증·판막병·용적 과부하",
+      "유발 요인이 없으면 심장 원인을 객관적으로 배제해야 한다"
+     ],
+     [
+      "흉부 사진",
+      "양측 음영, 심비대·흉수·혈관 재분포가 없을 수 있음 <sup>[1 301장 p.2226]</sup>",
+      "심비대·흉수·상엽 혈관 재분포·Kerley B 선",
+      "사진만으로는 구별되지 않는 경우가 많다 <sup>[1 301장 p.2226]</sup>"
+     ],
+     [
+      "심장 평가",
+      "심초음파 좌심실 기능 정상, 경정맥 팽대·말초 부종 없음",
+      "좌심실 확장·수축 저하 또는 중증 판막병, 경정맥 팽대",
+      "심초음파가 객관적 배제 수단 <sup>[1 301장 p.2226]</sup>"
+     ],
+     [
+      "첫 처치",
+      "폐보호 환기(6 mL/kg PBW, Pplat ≤ 30)·PEEP <sup>[1 301장 p.2228]</sup>",
+      "이뇨제·혈관확장제, 원인 심질환 치료 <sup>[5†]</sup>",
+      "진단이 처치를 가른다"
+     ]
+    ],
+    "note": "BNP 는 심부전 쪽 근거를 보태지만 이 표의 판정 기준(Berlin)에는 들어가지 않는다 — 문항 해설의 「&gt; 400 pg/mL」 문턱은 원문 미대조."
+   },
+   {
+    "title": "Berlin 중증도와 더하는 처치",
+    "columns": [
+     "중증도(PEEP ≥ 5)",
+     "PaO2/FiO2",
+     "모두에게",
+     "더하는 것"
+    ],
+    "rows": [
+     [
+      "경증",
+      "200 &lt; … ≤ 300",
+      "6 mL/kg PBW, Pplat ≤ 30, PEEP, 보수적 체액",
+      "—"
+     ],
+     [
+      "중등증",
+      "100 &lt; … ≤ 200",
+      "위와 같음",
+      "PaO2/FiO2 &lt; 150 이면 복와위 <sup>[1 301장 p.2228]</sup>"
+     ],
+     [
+      "중증",
+      "≤ 100",
+      "위와 같음",
+      "복와위, 동조 불량이면 신경근차단, 반응 없으면 ECMO 센터 <sup>[1 301장 p.2228]</sup>"
+     ]
+    ],
+    "note": "등급 경계는 해리슨 표 301-2(p.2226). 복와위 문턱(&lt; 150)은 등급 경계(200·100)와 다르다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "이뇨+PEEP 감량 vs 폐보호 환기 — 「양측 음영 + 저산소 = 폐부종 = 이뇨」",
+    "point": "양측 폐 음영과 수포음은 ARDS 와 심인성 부종에 모두 있고 흉부 사진으로는 가려지지 않는 일이 많다 <sup>[1 301장 p.2226]</sup>. 가르는 것은 심장 쪽 근거다 — 경정맥 팽대·말초 부종이 없고 심초음파 좌심실 기능이 정상이면 부종은 정수압성이 아니라 투과성이다. 이때 PEEP 를 낮추면 허탈된 폐포가 더 닫혀 단락이 커진다(PEEP 는 허탈을 막는 처치다 <sup>[1 301장 p.2228]</sup>). 진단이 ARDS 로 서면 첫 결정은 환기 설정 — 6 mL/kg PBW·Pplat ≤ 30 이다.",
+    "exception": "경정맥 팽대·확장되고 수축이 떨어진 좌심실·심비대와 흉수가 있으면 심인성 부종이고 이뇨제가 앞선다 <sup>[5†]</sup>. 또 ARDS 로 확진된 뒤에도 저혈압이 없으면 보수적 체액·이뇨는 권고되는 보조다 <sup>[1 301장 p.2228]</sup> — 틀린 것은 「이뇨」 자체가 아니라 「PEEP 감량」과 「환기보다 먼저」라는 순서다.",
+    "cites": ""
+   },
+   {
+    "contrast": "12 mL/kg vs 6 mL/kg — 「호흡성 산증을 교정」",
+    "point": "ARDS 폐는 아래쪽이 부종·허탈로 차 있어 통기되는 폐가 작다. 정상 크기의 일회호흡량은 남은 정상 폐포를 과팽창시킨다(volutrauma) <sup>[1 301장 p.2228]</sup>. 목표는 혈액가스 정상화가 아니라 폐 손상을 늘리지 않는 것 — 산증은 호흡수(≤ 35)로 보정하고 pH ≥ 7.30 까지 고탄산혈증을 허용한다 <sup>[1 301장 p.2229]</sup>.",
+    "exception": "없음 — 12 mL/kg 는 ARDS 에서 정답이 되는 조건이 없다.",
+    "cites": ""
+   },
+   {
+    "contrast": "예측체중 vs 실제 체중",
+    "point": "폐 크기는 키와 성별로 정해지고 체중이 늘어도 커지지 않는다. 그래서 일회호흡량은 예측체중(PBW)으로 계산한다 <sup>[1 301장 p.2228]</sup> — 비만 환자에게 실제 체중을 쓰면 과팽창이 된다.",
+    "exception": "PBW 계산식 자체(키·성별)는 이 정리본의 출처로 대조하지 않았다.",
+    "cites": ""
+   },
+   {
+    "contrast": "중증 ARDS 의 보조 처치 — 스테로이드·흡입 산화질소",
+    "point": "스테로이드는 일상 사용 근거가 없고(권고 등급 D), 흡입 산화질소·에포프로스테놀은 산소화를 잠깐 올릴 뿐 생존·환기 기간을 개선하지 못했다 <sup>[1 301장 p.2228–2229]</sup>. 중증에서 사망률을 낮춘 것은 복와위다.",
+    "exception": "해리슨 301장은 비-COVID ARDS 를 다룬다. COVID-19 ARDS 의 스테로이드는 199장이 다룬다(이 정리본에서 읽지 않음).",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "심인성 부종과 ARDS 는 함께 있을 수 있다 — Berlin 은 「정수압성 부종이 주원인이 아님」을 요구하지 「심장병이 없음」을 요구하지 않는다 <sup>[1 301장 p.2226]</sup>.",
+   "PaO2/FiO2 는 PEEP ≥ 5 cm H2O 에서 잰 값이다. 삽관 전 비재호흡 마스크의 FiO2 는 정확하지 않아 등급 계산에 쓰지 않는다.",
+   "PEEP 의 최적 설정법은 합의가 없다(ARDS Network PEEP–FiO2 표, 압력-용적 곡선, 식도압 등) <sup>[1 301장 p.2228]</sup> — 시험은 「PEEP 를 낮추지 않는다」까지를 묻는다.",
+   "체액 제한·이뇨는 폐보호 환기와 경쟁하는 선택이 아니라 그 뒤의 보조이며, 저혈압·저관류가 한계다 <sup>[1 301장 p.2228]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "berlin-2012",
+    "name": "ARDS 진단 기준(Berlin)",
+    "kind": "진단 기준",
+    "population": "급성 저산소성 호흡부전 성인",
+    "statement": "발병: 알려진 유발 요인 또는 새롭거나 악화된 호흡 증상 뒤 1주 안 · 영상: 흉수·폐엽/폐 허탈·결절로 충분히 설명되지 않는 양측 음영 · 부종의 원인: 정수압성 부종이 호흡부전의 주원인이 아님(유발 요인이 없으면 심초음파 같은 객관적 평가로 배제) · 산소화: PEEP ≥ 5 cm H2O 에서 경증 200 < PaO2/FiO2 ≤ 300, 중등증 100 < … ≤ 200, 중증 ≤ 100 mm Hg [[harrison-21: 301장 p.2226]]",
+    "exceptions": "PaO2/FiO2 는 PEEP ≥ 5 에서 잰 값이어야 한다 — PEEP 없이 잰 비율로 등급을 매기지 않는다. 2023–2024 「새 전 세계 정의」는 고유량 비강 산소·SpO2/FiO2 를 받아들인다는 보고가 있으나 원문 미대조 [[?global-ards-2024]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "lpv-armanet",
+    "name": "폐보호 환기",
+    "kind": "치료 권고",
+    "population": "기계환기 중인 ARDS",
+    "statement": "일회호흡량 6 mL/kg 예측체중(키·성별로 계산), 고평부압 ≤ 30 cm H2O(흡기 끝 0.5초 멈춤에서 잰 값). 12 mL/kg·≤ 50 cm H2O 와 비교한 무작위 시험에서 사망률 31 % 대 40 % — 해리슨 권고 등급 A [[harrison-21: 301장 p.2228–2229]]",
+    "exceptions": "산증은 pH ≥ 7.30 을 목표로 호흡수(≤ 35회/분)로 보정한다 — 일회호흡량을 늘려 PaCO2 를 맞추지 않는다 [[harrison-21: 301장 p.2229]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "prone-severe",
+    "name": "복와위 환기",
+    "kind": "치료 권고",
+    "population": "중증 ARDS(PaO2/FiO2 < 150 mm Hg)",
+    "statement": "복와위 환기로 28일 사망률이 32.8 % 에서 16.0 % 로 줄었다(2013 시험). 숙련된 팀이 필요하다 — 권고 등급 B [[harrison-21: 301장 p.2228]]",
+    "exceptions": "삽관관 빠짐·중심정맥관 이탈·정형외과적 손상 위험이 있다 [[harrison-21: 301장 p.2228]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "fluid-conservative",
+    "name": "체액 관리",
+    "kind": "치료 권고",
+    "population": "ARDS",
+    "statement": "좌심방 충만압을 낮게 유지(수액 제한·이뇨제)하면 산소화·폐 역학이 좋아지고 기계환기·ICU 기간이 준다. 저혈압·주요 장기(콩팥) 저관류가 한계다 — 권고 등급 B [[harrison-21: 301장 p.2228]]",
+    "exceptions": "쇼크·저관류가 있으면 이뇨보다 관류 유지(평균동맥압 ≥ 65 mm Hg)가 앞선다 [[harrison-21: 301장 p.2229]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 301: Acute Respiratory Distress Syndrome",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 301장 Acute Respiratory Distress Syndrome(Baron RM, Levy BD), 인쇄쪽 2225–2229",
+    "checked": "드라이브 장 문서로 본문 대조. p.2225 정의(급성 호흡곤란·저산소혈증·미만성 침윤), 원인(폐렴·패혈증 40–60 %, 흡인·외상·다량 수혈·약물 과다), 직접/간접 손상 표. p.2226 삼출기(내피·제1형 폐포세포 손상, 단백 부종, 유리막, 의존 부위 부종·허탈 → 단락·저산소혈증, 사강 증가로 고탄산혈증), 흉부 사진이 심인성 부종과 구별 어려움·심비대·흉수·혈관 재분포가 없을 수 있음, 유발 요인 없으면 심초음파로 정수압성 부종 배제, 표 301-2 Berlin(1주·양측 음영·PEEP ≥ 5 의 PaO2/FiO2 경증/중등증/중증), 감별(심인성 부종·양측 폐렴·폐포 출혈). p.2228 volutrauma·atelectrauma, 의존 부위 위주 이질성, ARDS Network 6 대 12 mL/kg 예측체중·고평부압 ≤ 30 대 ≤ 50·사망 31 % 대 40 %, PEEP 최적 설정 합의 없음, 복와위(PaO2/FiO2 < 150, 32.8 → 16.0 %), 재개방 수기·고빈도 환기 이득 없음, ECMO 선택적 구조 치료, 체액 제한·이뇨(저혈압·저관류가 한계), 신경근차단 48시간(첫 시험 이득, 후속 시험 이득 없음), 스테로이드 일상 사용 근거 없음, 흡입 혈관확장제 생존 이득 없음. p.2229 표 301-3 권고 등급(저일회호흡량 A, 좌심방압 최소화 B, 고PEEP·복와위·ECMO B, 재개방 수기 C, 고빈도 D, 스테로이드 D), 그림 301-5 목표(VT ≤ 6 mL/kg PBW, Pplat ≤ 30, RR ≤ 35, FiO2 ≤ 0.6, SpO2 88–95 %, MAP ≥ 65, pH ≥ 7.30), 중증도별 사망(LUNG SAFE 34.9/40.3/46.1 %). 이 장은 비-COVID ARDS 만 다룬다(COVID ARDS 는 199장 — 읽지 않음)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "berlin-jama-2012",
+    "org": "ARDS Definition Task Force",
+    "title": "Acute respiratory distress syndrome: the Berlin Definition",
+    "kind": "guideline",
+    "citation": "ARDS Definition Task Force; Ranieri VM, Rubenfeld GD, Thompson BT, et al. JAMA 2012;307(23):2526-2533",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 기준 문구는 해리슨 301장 표 301-2 로 대조했다. DOI 는 접근이 막혀 확인하지 못한 값이다",
+    "doi": "10.1001/jama.2012.5669",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2012",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1001/jama.2012.5669"
+   },
+   {
+    "id": "ardsnet-arma-2000",
+    "org": "Acute Respiratory Distress Syndrome Network",
+    "title": "Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome",
+    "kind": "trial",
+    "citation": "N Engl J Med 2000;342(18):1301-1308",
+    "checked": "서지만(원문 미대조 — doi 접근 막힘). 설계·결과(6 대 12 mL/kg PBW, 사망 31 % 대 40 %)는 해리슨 301장 p.2228 서술로 대조했다. 문항 해설의 861명·39.8 % 대 31.0 % 는 원문 미대조",
+    "doi": "10.1056/NEJM200005043421801",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2000",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1056/NEJM200005043421801"
+   },
+   {
+    "id": "global-ards-2024",
+    "org": "American Thoracic Society (ATS)",
+    "title": "A New Global Definition of Acute Respiratory Distress Syndrome",
+    "kind": "guideline",
+    "citation": "Matthay MA, Arabi Y, Arroliga AC, et al. Am J Respir Crit Care Med 2024;209(1):37-47",
+    "checked": "서지만(원문 미대조 — doi·PubMed 접근 막힘). 고유량 비강 산소·SpO2/FiO2 수용 등 내용은 확인하지 못해 [[?]] 로만 인용한다. 서지 세부(권·쪽·DOI)는 기억에서 옮긴 것이라 검토 항목",
+    "doi": "10.1164/rccm.202303-0558WS",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1164/rccm.202303-0558WS"
+   },
+   {
+    "id": "acc-aha-hf-2022",
+    "org": "American Heart Association / American College of Cardiology / Heart Failure Society of America",
+    "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+    "kind": "guideline",
+    "citation": "Heidenreich PA, Bozkurt B, Aguilar D, et al. Circulation 2022;145(18):e895-e1032",
+    "checked": "서지만(원문 미대조 — doi 접근 막힘). 심인성 폐부종의 울혈 치료(고리 이뇨제 정맥 투여)와 BNP 의 쓰임은 원문 문구를 대조하지 못했다",
+    "doi": "10.1161/CIR.0000000000001063",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIR.0000000000001063"
+   }
+  ],
+  "checks": [
+   {
+    "q": "Berlin 기준의 네 요소는?",
+    "a": "1주 안 발병, 흉수·허탈·결절로 설명되지 않는 양측 음영, 정수압성 부종이 주원인이 아님(필요하면 심초음파로 배제), PEEP ≥ 5 에서 PaO2/FiO2 ≤ 300(경증 200–300, 중등증 100–200, 중증 ≤ 100)."
+   },
+   {
+    "q": "PEEP 10 에서 FiO2 0.8 로 PaO2 68 mm Hg 이다. 중증도는?",
+    "a": "PaO2/FiO2 = 85 → 중증(≤ 100)."
+   },
+   {
+    "q": "폐보호 환기의 두 숫자와 근거 시험의 결과는?",
+    "a": "일회호흡량 6 mL/kg 예측체중, 고평부압 ≤ 30 cm H2O. ARDS Network 시험에서 12 mL/kg 대비 사망 40 % → 31 %."
+   },
+   {
+    "q": "왜 예측체중으로 계산하는가?",
+    "a": "폐 크기는 키·성별로 정해지고 체중이 늘어도 커지지 않기 때문이다."
+   },
+   {
+    "q": "사망률을 낮춘 중증 ARDS 의 추가 처치와 그 문턱은?",
+    "a": "복와위 환기, PaO2/FiO2 < 150(28일 사망 32.8 % → 16.0 %)."
+   },
+   {
+    "q": "ARDS 에서 이뇨제는 금기인가?",
+    "a": "아니다. 저혈압·저관류가 없으면 좌심방압을 낮게 유지하는 보수적 체액·이뇨가 권고된다. 다만 첫 처치(환기 설정)를 대신하지 않고, PEEP 를 낮추는 것은 틀리다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.em.ards.lung-protective-ventilation#v1",
+    "context": "Changed cue — hydrostatic (cardiogenic) edema instead of ARDS",
+    "stem": "A 63-year-old man comes to the emergency department because of 2 days of progressive shortness of breath; he now has to sleep sitting up. He had an anterior myocardial infarction 3 years ago. He has not had fever or cough. His pulse is 112/min, respirations are 30/min, and blood pressure is 164/98 mm Hg. Oxygen saturation is 86% on room air and 93% on a nonrebreather mask. Jugular venous pressure is elevated, an S3 gallop is heard, crackles are present over both lung fields, and there is pitting edema of both legs. A chest radiograph shows an enlarged cardiac silhouette, bilateral perihilar opacities, and small bilateral pleural effusions. Bedside echocardiography shows a dilated left ventricle with an ejection fraction of 20%. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Intravenous loop diuretic with a vasodilator",
+     "Intubation with a tidal volume of 12 mL/kg predicted body weight",
+     "Prone positioning",
+     "Intravenous glucocorticoids",
+     "Inhaled nitric oxide"
+    ],
+    "answer": 1,
+    "explanation": "Bilateral opacities with hypoxemia are not specific: here elevated jugular venous pressure, an S3, leg edema, cardiomegaly with effusions and a dilated, poorly contracting left ventricle explain the edema by hydrostatic pressure, so the Berlin requirement that hydrostatic edema is not the primary cause is not met and this is not ARDS [[harrison-21: 301장 p.2226]]. Decongestion with an intravenous loop diuretic and a vasodilator treats the cause [[?acc-aha-hf-2022]]. In the original item the same radiographic pattern came with a normal ventricle, no venous distention and a preceding febrile illness — that is what made lung-protective ventilation the answer. Prone positioning is for severe ARDS, 12 mL/kg is never lung-protective, and glucocorticoids and inhaled nitric oxide do not treat hydrostatic edema.",
+    "of": "imaging-2026-0063",
+    "changed": "「경정맥 팽대 없음·BNP 낮음·심초음파 좌심실 기능 정상·발열성 호흡기 감염 선행」을 「경정맥 팽대·양측 다리 오목부종·S3·심초음파 좌심실 확장과 박출률 20 %·흉부 사진 심비대와 양측 흉수」로 바꿈 → 부종이 정수압성이라 답이 「폐보호 환기」에서 「정맥 고리 이뇨제+혈관확장제」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.em.ards.lung-protective-ventilation#v2",
+    "context": "Same decisive cues, different story — aspiration-related ARDS",
+    "stem": "A 58-year-old woman is found unresponsive at home next to empty pill bottles, with vomitus around her mouth. She is intubated in the emergency department and admitted to the intensive care unit. Over the next 24 hours her oxygenation worsens. A chest radiograph shows new bilateral airspace opacities without cardiomegaly or pleural effusion. Transthoracic echocardiography shows normal left ventricular size and function, and there is no jugular venous distention. She is 165 cm tall and weighs 92 kg. On a positive end-expiratory pressure of 12 cm H2O and an FiO2 of 0.9, arterial PaO2 is 72 mm Hg and PaCO2 is 52 mm Hg. Which of the following ventilator strategies is most appropriate now?",
+    "options": [
+     "Tidal volume based on her actual weight of 92 kg to lower the PaCO2",
+     "Reduce PEEP to 5 cm H2O and give intravenous furosemide",
+     "Tidal volume of 6 mL/kg predicted body weight with plateau pressure 30 cm H2O or less",
+     "Increase tidal volume to 10 mL/kg predicted body weight until the pH is normal",
+     "High-frequency oscillatory ventilation"
+    ],
+    "answer": 3,
+    "explanation": "Aspiration of gastric contents is a direct cause of ARDS [[harrison-21: 301장 p.2225]]. Onset within a week, new bilateral opacities, a normal ventricle without venous distention, and a PaO2/FiO2 of 80 (72/0.9) on PEEP 12 meet the Berlin definition of severe ARDS [[harrison-21: 301장 p.2226]]. The story changed, but the decisive cues did not, so the answer is still lung-protective ventilation: 6 mL/kg of predicted (not actual) body weight with plateau pressure ≤ 30 cm H2O; the modest hypercapnia is tolerated [[harrison-21: 301장 p.2228–2229]]. Lowering PEEP de-recruits alveoli, and high-frequency oscillation has not been shown to help [[harrison-21: 301장 p.2228]].",
+    "of": "imaging-2026-0063",
+    "changed": "성별·나이(58세 여자)·유발 사건(약물 과다 복용 뒤 위 내용물 흡인)·제시 순서·수치를 바꾸고 「1주 안 발병·양측 음영·PEEP ≥ 5 에서 PaO2/FiO2 ≤ 100·심장 원인 배제」는 그대로 → 답은 여전히 6 mL/kg PBW·고평부압 ≤ 30",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "양측 폐 음영 + 급성 저산소혈증 — ARDS 인가, 첫 처치는?",
+  "geo": {
+   "title": "양측 폐 음영 + 급성 저산소혈증 — ARDS 인가, 첫 처치는?",
+   "w": 482,
+   "h": 1012.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "급성 저산소성 호흡부전,",
+      "흉부 사진 양측 음영 — 산소·",
+      "필요하면 삽관"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "cardiac",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "정수압성(심장) 부종으로",
+      "충분히 설명되는가? 경정맥",
+      "팽대·말초 부종·심초음파",
+      "좌심실 기능"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "심초음파·혈역학 평가가",
+      "아직 없다 — 유발 요인이",
+      "없으면 객관적 평가로 심장",
+      "원인을 배제해야 한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 327.0
+    },
+    {
+     "id": "hf",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심인성 폐부종 — 이뇨제·",
+      "혈관확장제, 원인 심질환",
+      "치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 491.0
+    },
+    {
+     "id": "pf",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "PEEP ≥ 5 에서 PaO2/FiO2",
+      "는? (1주 안 발병, 흉수·",
+      "허탈·결절로 설명 안 되는",
+      "양측 음영)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 491.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "> 300 — ARDS 기준 밖: 폐렴·",
+      "폐포 출혈 등 다른 원인을",
+      "찾는다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 655.0
+    },
+    {
+     "id": "lpv",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "ARDS — 6 mL/kg 예측체중,",
+      "고평부압 ≤ 30, PEEP/FiO2",
+      "조정, 고탄산혈증 허용"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 655.0
+    },
+    {
+     "id": "sev",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "PaO2/FiO2 < 150 인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 802.0
+    },
+    {
+     "id": "prone",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "복와위 환기(± 동조 불량 시",
+      "신경근차단, 반응 없으면",
+      "ECMO 센터)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 915.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "폐보호 환기 유지 + 저혈압",
+      "없으면 보수적 체액·이뇨,",
+      "원인(폐렴·패혈증) 치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 915.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "cardiac",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cardiac",
+     "to": "hf",
+     "points": [
+      [
+       178.0,
+       261.0
+      ],
+      [
+       178.0,
+       271.0
+      ],
+      [
+       452,
+       271.0
+      ],
+      [
+       452,
+       445.0
+      ],
+      [
+       81.3,
+       445.0
+      ],
+      [
+       81.3,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예 — 심장 근거 있음"
+      ],
+      "w": 106.3,
+      "h": 17,
+      "x": 28.2,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "cardiac",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       261.0
+      ],
+      [
+       227.0,
+       277.0
+      ],
+      [
+       227.0,
+       277.0
+      ],
+      [
+       227.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "평가 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 204.6,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "cardiac",
+     "to": "pf",
+     "points": [
+      [
+       276.0,
+       261.0
+      ],
+      [
+       276.0,
+       283.0
+      ],
+      [
+       466,
+       283.0
+      ],
+      [
+       466,
+       445.0
+      ],
+      [
+       307.3,
+       445.0
+      ],
+      [
+       307.3,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오 — 심장 근거 없음"
+      ],
+      "w": 128.3,
+      "h": 17,
+      "x": 243.2,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "hf",
+     "points": [
+      [
+       194.3,
+       425.0
+      ],
+      [
+       194.3,
+       435.0
+      ],
+      [
+       146.7,
+       435.0
+      ],
+      [
+       146.7,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "좌심실 기능 저하·울혈"
+      ],
+      "w": 120.9,
+      "h": 17,
+      "x": 86.2,
+      "y": 451.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "pf",
+     "points": [
+      [
+       259.7,
+       425.0
+      ],
+      [
+       259.7,
+       441.0
+      ],
+      [
+       372.7,
+       441.0
+      ],
+      [
+       372.7,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "심장 원인 배제"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 331.9,
+      "y": 451.0
+     }
+    },
+    {
+     "from": "pf",
+     "to": "other",
+     "points": [
+      [
+       307.3,
+       589.0
+      ],
+      [
+       307.3,
+       599.0
+      ],
+      [
+       114.0,
+       599.0
+      ],
+      [
+       114.0,
+       655.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "> 300"
+      ],
+      "w": 37.3,
+      "h": 17,
+      "x": 95.4,
+      "y": 635.0
+     }
+    },
+    {
+     "from": "pf",
+     "to": "lpv",
+     "points": [
+      [
+       372.7,
+       589.0
+      ],
+      [
+       372.7,
+       605.0
+      ],
+      [
+       340.0,
+       605.0
+      ],
+      [
+       340.0,
+       655.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "≤ 300"
+      ],
+      "w": 37.3,
+      "h": 17,
+      "x": 321.4,
+      "y": 635.0
+     }
+    },
+    {
+     "from": "lpv",
+     "to": "sev",
+     "points": [
+      [
+       340.0,
+       736.0
+      ],
+      [
+       340.0,
+       746.0
+      ],
+      [
+       227.0,
+       746.0
+      ],
+      [
+       227.0,
+       802.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sev",
+     "to": "prone",
+     "points": [
+      [
+       194.3,
+       849.0
+      ],
+      [
+       194.3,
+       859.0
+      ],
+      [
+       114.0,
+       859.0
+      ],
+      [
+       114.0,
+       915.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 895.0
+     }
+    },
+    {
+     "from": "sev",
+     "to": "keep",
+     "points": [
+      [
+       259.7,
+       849.0
+      ],
+      [
+       259.7,
+       865.0
+      ],
+      [
+       340.0,
+       865.0
+      ],
+      [
+       340.0,
+       915.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 895.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "급성 저산소성 호흡부전, 흉부 사진 양측 음영 — 산소·필요하면 삽관",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "정수압성(심장) 부종으로 충분히 설명되는가? 경정맥 팽대·말초 부종·심초음파 좌심실 기능"
+     }
+    ]
+   },
+   {
+    "id": "cardiac",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "정수압성(심장) 부종으로 충분히 설명되는가? 경정맥 팽대·말초 부종·심초음파 좌심실 기능",
+    "note": "",
+    "branches": [
+     {
+      "label": "예 — 심장 근거 있음",
+      "to": 4,
+      "toText": "심인성 폐부종 — 이뇨제·혈관확장제, 원인 심질환 치료"
+     },
+     {
+      "label": "아니오 — 심장 근거 없음",
+      "to": 5,
+      "toText": "PEEP ≥ 5 에서 PaO2/FiO2 는? (1주 안 발병, 흉수·허탈·결절로 설명 안 되는 양측 음영)"
+     },
+     {
+      "label": "평가 전",
+      "to": 3,
+      "toText": "심초음파·혈역학 평가가 아직 없다 — 유발 요인이 없으면 객관적 평가로 심장 원인을 배제해야 한다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "심초음파·혈역학 평가가 아직 없다 — 유발 요인이 없으면 객관적 평가로 심장 원인을 배제해야 한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "좌심실 기능 저하·울혈",
+      "to": 4,
+      "toText": "심인성 폐부종 — 이뇨제·혈관확장제, 원인 심질환 치료"
+     },
+     {
+      "label": "심장 원인 배제",
+      "to": 5,
+      "toText": "PEEP ≥ 5 에서 PaO2/FiO2 는? (1주 안 발병, 흉수·허탈·결절로 설명 안 되는 양측 음영)"
+     }
+    ]
+   },
+   {
+    "id": "hf",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심인성 폐부종 — 이뇨제·혈관확장제, 원인 심질환 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pf",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "PEEP ≥ 5 에서 PaO2/FiO2 는? (1주 안 발병, 흉수·허탈·결절로 설명 안 되는 양측 음영)",
+    "note": "",
+    "branches": [
+     {
+      "label": "> 300",
+      "to": 6,
+      "toText": "> 300 — ARDS 기준 밖: 폐렴·폐포 출혈 등 다른 원인을 찾는다"
+     },
+     {
+      "label": "≤ 300",
+      "to": 7,
+      "toText": "ARDS — 6 mL/kg 예측체중, 고평부압 ≤ 30, PEEP/FiO2 조정, 고탄산혈증 허용"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "> 300 — ARDS 기준 밖: 폐렴·폐포 출혈 등 다른 원인을 찾는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lpv",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "ARDS — 6 mL/kg 예측체중, 고평부압 ≤ 30, PEEP/FiO2 조정, 고탄산혈증 허용",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "PaO2/FiO2 < 150 인가?"
+     }
+    ]
+   },
+   {
+    "id": "sev",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "PaO2/FiO2 < 150 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "복와위 환기(± 동조 불량 시 신경근차단, 반응 없으면 ECMO 센터)"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "폐보호 환기 유지 + 저혈압 없으면 보수적 체액·이뇨, 원인(폐렴·패혈증) 치료"
+     }
+    ]
+   },
+   {
+    "id": "prone",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "복와위 환기(± 동조 불량 시 신경근차단, 반응 없으면 ECMO 센터)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "keep",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "폐보호 환기 유지 + 저혈압 없으면 보수적 체액·이뇨, 원인(폐렴·패혈증) 치료",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0063"
+  ],
+  "hasErrors": false
+ },
  "cn.em.beta-blocker-overdose.glucagon-mechanism": {
   "id": "cn.em.beta-blocker-overdose.glucagon-mechanism",
   "title": "베타차단제 중독 — 글루카곤이 막힌 수용체를 우회하는 기전",
@@ -9864,6 +12873,972 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0038"
+  ],
+  "hasErrors": false
+ },
+ "cn.em.lithium-toxicity.hemodialysis-indication": {
+  "id": "cn.em.lithium-toxicity.hemodialysis-indication",
+  "title": "리튬 중독 — 티아지드로 쌓인 만성 중독, 식염수에서 멈추지 않고 혈액투석을 고르는 조건",
+  "objective": "리튬이 나트륨과 같은 길로 근위세뇨관에서 재흡수된다는 정상 처리에서 출발해 티아지드·탈수가 리튬 청소율을 떨어뜨려 만성 중독을 만드는 기전을 설명하고, 만성 중독이 같은 농도에서 더 심한 이유를 이해한 뒤, 의식 저하·중증 신경근 기능 이상·콩팥기능 저하가 있을 때 식염수 보조가 아니라 응급 혈액투석을 고르며 활성탄·양이온 교환수지·강제 이뇨가 왜 답이 아닌지 가른다",
+  "objectiveKind": "치료",
+  "condition": "만성 리튬 중독(약물 상호작용으로 인한 축적)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Pharmacology",
+   "Psychiatry",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "5b25fd940a95ba5d",
+  "summary": [
+   "리튬은 1가 양이온으로 사구체에서 자유롭게 여과된 뒤 근위세뇨관에서 나트륨과 함께 대부분 재흡수된다. 몸이 나트륨을 아끼는 상황(탈수·저염식·티아지드·ACE 억제제·NSAID)은 리튬 재흡수도 늘려 농도를 올린다 [[?katzung]].",
+   "티아지드는 원위세뇨관에서 나트륨 재흡수를 막아 가벼운 용적 감소를 만들고, 보상으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 떨어진다(교과서 수치 25~40 %) [[?katzung]]. 용량을 바꾸지 않았는데 새 약 시작 뒤 몇 주 만에 중독이 생기는 이유다.",
+   "만성 중독은 리튬이 이미 조직(뇌)에 분포해 있어 급성 과량복용보다 **낮은 농도에서** 독성이 나타난다 [[harrison-21: 459장 p.3595]]. 혈청 농도만 보고 안심하지 않는다.",
+   "해리슨의 혈액투석 적응: 혼수·경련·뇌병증 또는 중증·진행·지속하는 신경근 기능 이상, 급성 과량복용 뒤 최고 농도 4 mEq/L 초과. 정맥 수액은 모든 환자의 기본이다 [[harrison-21: 459장 p.3595]].",
+   "리튬은 분자가 작고 단백결합이 없으며 분포용적이 작아 투석으로 잘 빠진다 [[harrison-21: 459장 p.3589]]. 활성탄은 리튬을 흡착하지 못하고 [[harrison-21: 459장 p.3588]], 투석을 멈추면 조직에서 다시 나와 농도가 되오른다 [[harrison-21: 459장 p.3587]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>리튬 중독은 치료 범위(대개 0.6~1.2 mEq/L)가 좁은 리튬이 몸에 쌓여 신경·콩팥·심장 독성이 나타나는 상태다. 급성(한꺼번에 대량 복용), 만성(치료 중 서서히 축적), 급성-만성(복용 중인 사람이 대량 복용)으로 나눈다. 이 정리본의 목표는 <strong>약물 상호작용으로 생긴 만성 중독에서 어떤 소견이 식염수 보조를 넘어 응급 혈액투석을 부르는지</strong>를 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 처리.</strong> 리튬은 대사되지 않고 거의 전부 콩팥으로 나간다. 1가 양이온이라 사구체에서 자유롭게 여과되고, 근위세뇨관에서 나트륨과 같은 길로 대부분 재흡수된다 <sup>[3†]</sup>. 그래서 리튬 청소율은 콩팥이 나트륨을 얼마나 아끼느냐에 따라 움직인다.</p>\n<p><strong>축적의 기전.</strong> 탈수·설사·구토·저염식처럼 몸이 나트륨을 아끼는 상황은 근위세뇨관 재흡수를 늘리고, 리튬도 함께 되돌아온다. 티아지드는 원위세뇨관 Na-Cl 공수송체를 막아 가벼운 용적 감소를 만들고, 그 보상으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 떨어진다(교과서 수치 25~40 %) <sup>[3†]</sup>. NSAID·ACE 억제제도 사구체 여과·나트륨 처리를 바꿔 같은 방향으로 작용한다 <sup>[3†]</sup>. 용량을 바꾸지 않았는데 새 약을 시작한 지 몇 주 만에 중독이 생기는 이유다. 콩팥기능이 떨어지면 배설이 더 줄고, 리튬이 콩팥을 다시 다치게 하는 악순환이 생긴다.</p>\n<p><strong>독성의 기전.</strong> 리튬은 세포막 이온 수송, adenylate cyclase, Na-K-ATPase, 신경전달물질 분비를 방해한다 <sup>[1 459장 p.3595]</sup>. 뇌 안으로 천천히 들어가고 천천히 나오는 약이라(해리슨은 「느린 분포」 약으로 분류 <sup>[1 459장 p.3584]</sup>), 만성 축적에서는 혈청과 뇌가 이미 평형을 이뤄 <strong>급성 중독보다 낮은 농도에서</strong> 독성이 나타난다 <sup>[1 459장 p.3595]</sup>. 중증에서는 뇌병증·운동장애가 오래 또는 영구히 남을 수 있다 <sup>[1 459장 p.3595]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>신경</strong>: 실조, 무도무정위운동, 뇌병증, 반사항진, 근간대경련, 안진 → 중증은 혼수·경련 <sup>[1 459장 p.3595]</sup>. 거친 진전·실조가 치료 중 미세 진전과 다른 점이다.</li>\n<li><strong>위장관</strong>: 오심·구토·설사 — 급성 과량에서 먼저 두드러진다 <sup>[1 459장 p.3595]</sup>.</li>\n<li><strong>콩팥</strong>: 신성 요붕증(다뇨·고나트륨혈증 경향) <sup>[1 459장 p.3595]</sup>. 크레아티닌 상승은 원인이자 결과다.</li>\n<li><strong>심장</strong>: 서맥·방실차단 <sup>[1 459장 p.3585]</sup>, 중증에서 부정맥 <sup>[1 459장 p.3595]</sup>.</li>\n<li><strong>검사</strong>: 혈청 리튬 정량이 처치를 이끈다 <sup>[1 459장 p.3586]</sup>. 리튬은 음이온차를 낮출 수 있다 <sup>[1 459장 p.3585]</sup>. 한 번의 농도로 끝내지 않는다 — 서방정은 흡수가 늦고, 투석 뒤에는 재분포로 되오른다 <sup>[1 459장 p.3587]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>세로토닌 증후군</strong>: 근간대경련·반사항진이 겹치지만 자율신경 항진(발열·발한·설사·빈맥)과 세로토닌 약 복용이 단서다 <sup>[1 459장 p.3595]</sup>.</li>\n<li><strong>신경이완제 악성 증후군</strong>: 고열·납관 경직·CK 상승, 항정신병약 복용.</li>\n<li><strong>리튬성 신성 요붕증 단독</strong>: 다뇨·고나트륨혈증이 주 소견이고 농도는 정상~경도 상승, 신경독성은 없다.</li>\n<li><strong>치료 용량의 부작용</strong>: 미세 자세 진전은 치료 농도에서도 흔하다 — 거친 진전·실조·의식 변화가 중독 쪽 신호다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈청 리튬(마지막 복용 시각과 함께), 크레아티닌·요소질소, 나트륨·칼륨, 칼슘, 갑상선 기능, 12유도 심전도. 급성 대량 복용이 의심되면 서방정 여부를 확인하고 몇 시간 간격으로 농도를 반복한다. <strong>해석 한계</strong>: 만성 중독에서는 혈청 농도가 조직 농도를 다 보여 주지 못한다 — 같은 농도라도 급성보다 무겁게 본다 <sup>[1 459장 p.3595]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>모두에게</strong> — 리튬과 원인약(티아지드·NSAID·ACE 억제제) 중단, 정맥 수액(식염수)으로 용적을 채워 근위세뇨관 리튬 재흡수를 줄인다 <sup>[1 459장 p.3595]</sup>.</li>\n<li><strong>위장관 제거</strong> — 급성 대량 복용이면 전장관 세척 <sup>[1 459장 p.3595]</sup>. 활성탄은 리튬을 흡착하지 못한다 <sup>[1 459장 p.3588]</sup>. 만성 축적에는 해당하지 않는다.</li>\n<li><strong>혈액투석</strong> — 혼수·경련·뇌병증 또는 중증·진행·지속하는 신경근 기능 이상, 급성 과량 뒤 최고 농도 &gt; 4 mEq/L <sup>[1 459장 p.3595]</sup>. 리튬은 분자가 작고 수용성이며 단백결합이 없고 분포용적이 작아 투석에 잘 빠진다 <sup>[1 459장 p.3589]</sup>. EXTRIP 은 콩팥기능 저하를 함께 기준에 넣는다 <sup>[2†]</sup>.</li>\n<li><strong>반응 확인·재평가</strong> — 투석 뒤 몇 시간 간격으로 농도를 다시 잰다. 조직에서 재분포해 되오르면 투석을 반복한다 <sup>[1 459장 p.3587]</sup>. 신경 증상은 농도보다 늦게 좋아진다. 회복 뒤 리튬을 다시 쓸지, 쓴다면 상호작용 약을 피하고 용량·농도 감시를 다시 정한다.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>식염수는 모든 리튬 중독의 기본이지만, 중증 신경독성에서는 투석의 대체가 아니다.</li>\n<li>만성 중독의 투석 판단은 농도보다 <strong>신경 증상</strong>이 이끈다. 숫자 문턱(&gt; 4)은 급성 과량의 기준이다 <sup>[1 459장 p.3595]</sup>.</li>\n<li>활성탄·양이온 교환수지·강제 이뇨는 리튬 제거 수단이 아니다.</li>\n<li>티아지드 상호작용의 수치(청소율 25~40 % 감소)와 EXTRIP 세부 문턱은 원문 미대조다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 투석 적응을 무엇으로 적나</strong> — 시험 기준: 의식 저하·경련·중증 신경근 기능 이상이면 농도와 무관하게 혈액투석 <sup>[1 459장 p.3595]</sup> / 다른 기준: EXTRIP 은 콩팥기능 저하 + 리튬 &gt; 4.0, 리튬 &gt; 5.0, 착란, 36시간 안에 1.0 미만이 어려울 때를 권고·제안으로 나눈다 <sup>[2†]</sup>. 해리슨 표는 콩팥기능 기준 없이 「급성 과량 뒤 최고 농도 &gt; 4」만 숫자로 적는다 / 왜 다른가: 해리슨 표는 요약이고, EXTRIP 은 체외 제거만 다룬 체계적 검토 권고다 / 시험에서는: KMLE · USMLE 모두 「의식 저하·경련 = 투석」은 공통. 숫자 문턱을 묻는다면 급성 과량 &gt; 4 가 두 자료에 공통인 값이다.</li>\n<li><strong>Z2 맥락 · 문항 해설 안의 숫자 불일치</strong> — 원래 문항 해설의 「정답 핵심」은 EXTRIP 문턱을 「콩팥기능 저하 + 리튬 2.5 초과」로, 「원리」는 「&gt; 4.0」으로 적는다. 이 정리본은 해리슨과 같은 방향인 4.0 을 따랐고, 2.5 는 원문을 보지 못해 쓰지 않았다 <sup>[2†]</sup> / 시험에서는: 이 문항은 의식 저하로 이미 투석 적응이라 답은 바뀌지 않는다(문항 해설 수정은 사람 검토).</li>\n</ul>"
+   },
+   {
+    "title": "왜 만성 중독은 투석 뒤에도 끝나지 않는가",
+    "deep": true,
+    "html": "<p>리튬은 혈액에서는 투석으로 빨리 빠지지만, 세포 안·뇌 조직에서는 천천히 나온다. 해리슨은 체외 제거 중에는 혈중 농도가 조직 농도보다 낮아 독성과 어긋날 수 있고, 투석을 멈춘 뒤 조직에서 재분포해 혈중 농도가 되오른다고 리튬을 예로 든다 <sup>[1 459장 p.3587]</sup>. 만성 축적은 조직에 쌓인 양이 많아 이 반동이 크다. 그래서 투석은 「한 번에 끝」이 아니라 농도를 다시 재며 반복 여부를 정하는 과정이고, 신경 증상의 회복은 혈청 농도보다 늦다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "리튬 중독 — 상황별 처치",
+    "columns": [
+     "상황",
+     "근거",
+     "처치",
+     "피할 것"
+    ],
+    "rows": [
+     [
+      "만성 중독 + 의식 저하·중증 신경근 기능 이상(± 콩팥기능 저하)",
+      "기면·혼수·경련·근간대경련·반사항진·실조",
+      "응급 혈액투석 + 정맥 식염수 보조, 투석 뒤 농도 재측정 <sup>[1 459장 p.3595]</sup>",
+      "식염수만 주고 기다리기"
+     ],
+     [
+      "만성 중독, 경증(의식 명료, 미세 진전·오심만, 콩팥기능 정상)",
+      "농도 경도 상승",
+      "리튬·원인약 중단, 정맥 식염수, 농도 추적 <sup>[1 459장 p.3595]</sup>",
+      "리튬 유지"
+     ],
+     [
+      "급성 대량 복용(서방정)",
+      "복용량·시간 확인",
+      "전장관 세척 <sup>[1 459장 p.3595]</sup>, 정맥 수액, 반복 농도(늦게 흡수)",
+      "활성탄 단독 <sup>[1 459장 p.3588]</sup>"
+     ],
+     [
+      "급성 과량 뒤 최고 농도 &gt; 4 mEq/L",
+      "증상과 무관",
+      "혈액투석 <sup>[1 459장 p.3595]</sup>",
+      "—"
+     ]
+    ],
+    "note": "콩팥기능 저하를 투석 적응의 문턱(리튬 &gt; 4.0)으로 쓰는 것은 EXTRIP 기준이다 <sup>[2†]</sup> — 해리슨 표는 신경 증상과 급성 과량 농도로 적는다."
+   },
+   {
+    "title": "만성 vs 급성 리튬 중독",
+    "columns": [
+     "구분",
+     "급성 과량",
+     "만성 축적"
+    ],
+    "rows": [
+     [
+      "분포",
+      "혈청 높고 뇌는 아직 낮음",
+      "혈청·조직이 평형"
+     ],
+     [
+      "주 증상",
+      "오심·구토·설사 먼저, 신경 증상은 늦게",
+      "실조·진전·근간대경련·뇌병증"
+     ],
+     [
+      "농도와 독성",
+      "높은 농도에도 견딤",
+      "더 낮은 농도에서 독성 <sup>[1 459장 p.3595]</sup>"
+     ],
+     [
+      "흔한 계기",
+      "의도적 대량 복용",
+      "탈수·티아지드·NSAID·ACE 억제제·콩팥기능 저하 <sup>[3†]</sup>"
+     ]
+    ],
+    "note": "만성 중독에서는 같은 숫자라도 더 무겁게 본다 — 농도보다 신경 증상이 투석을 부른다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "혈액투석 vs 식염수 정주 후 경과관찰 — 「식염수가 리튬 중독의 기본」",
+    "point": "정맥 식염수는 모든 리튬 중독의 기본 처치이지만 <sup>[1 459장 p.3595]</sup>, 스스로 리튬을 빼는 것은 콩팥이다. 의식 저하·근간대경련 같은 중증 신경 증상이 있으면 해리슨도 농도와 무관하게 혈액투석을 적는다 <sup>[1 459장 p.3595]</sup>. 콩팥기능까지 떨어져 있으면 식염수만으로는 농도가 느리게 내려가 그 사이 신경 손상이 굳어질 수 있다 <sup>[2†]</sup>. 식염수는 투석의 대체가 아니라 투석과 함께 주는 보조다.",
+    "exception": "의식이 명료하고 미세 진전·오심만 있으며 콩팥기능이 정상인 경증 만성 중독에서는 리튬·원인약 중단 + 식염수 + 농도 추적이 답이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "활성탄 vs 전장관 세척 — 「중독이면 활성탄」",
+    "point": "활성탄은 리튬 같은 이온화된 무기물을 잘 흡착하지 못한다 <sup>[1 459장 p.3588]</sup>. 급성 대량 복용(특히 서방정)의 위장관 제거는 전장관 세척이고 <sup>[1 459장 p.3595]</sup>, 몇 주에 걸친 만성 축적에는 제거할 약이 장에 없다.",
+    "exception": "흡착되는 다른 약을 함께 과량 복용했다면 그 약을 위해 활성탄을 쓸 수 있다.",
+    "cites": ""
+   },
+   {
+    "contrast": "강제 이뇨·양이온 교환수지 vs 혈액투석 — 「배설을 늘리거나 장에서 붙잡는다」",
+    "point": "루프 이뇨제로 소변량을 늘리면 용적이 줄어 근위세뇨관의 나트륨·리튬 재흡수가 오히려 늘 수 있고, 콩팥기능이 나쁜 환자에게 부담이 된다 <sup>[3†]</sup>. 폴리스티렌설폰산나트륨은 칼륨 교환 수지이며 리튬 제거 효과는 원문으로 확인하지 못했다 <sup>[2†]</sup>. 체외 제거가 필요한 환자에게 둘 다 투석을 대신하지 못한다 <sup>[1 459장 p.3589]</sup>.",
+    "exception": "용적 과부하가 동반되면 이뇨제가 보조로 쓰일 수 있으나 리튬 제거 수단은 아니다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "만성 중독에서는 농도가 4 mEq/L 보다 낮아도 중증 신경독성이 있으면 투석한다 — 숫자 문턱(&gt; 4)은 해리슨에서 급성 과량복용에 붙은 기준이다 <sup>[1 459장 p.3595]</sup>.",
+   "콩팥기능 저하 + 리튬 &gt; 4.0, 36시간 안에 1.0 미만이 어렵다는 예상 같은 세부 문턱은 EXTRIP 기준이며 원문 미대조다 <sup>[2†]</sup>.",
+   "투석을 끝낸 뒤 조직의 리튬이 혈중으로 다시 나와 농도가 되오를 수 있어 재측정한다 <sup>[1 459장 p.3587]</sup>.",
+   "서맥·방실차단은 리튬 중독에서 생길 수 있어 심전도를 감시한다 <sup>[1 459장 p.3585]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "hd-harrison",
+    "name": "리튬 중독의 혈액투석 적응(해리슨)",
+    "kind": "치료 적응",
+    "population": "리튬 중독(급성·만성)",
+    "statement": "혼수, 경련, 뇌병증 또는 중증·진행·지속하는 신경근 기능 이상이 있거나, 급성 과량복용 뒤 최고 농도가 4 mEq/L 를 넘으면 혈액투석 [[harrison-21: 459장 p.3595]]",
+    "exceptions": "콩팥기능 저하를 따로 적지 않는다 — 콩팥기능 기준은 EXTRIP 행에서 본다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hd-extrip",
+    "name": "리튬 중독의 체외 제거(EXTRIP 2015)",
+    "kind": "치료 적응",
+    "population": "리튬 중독(급성·만성)",
+    "statement": "권고: 콩팥기능 저하 + 리튬 > 4.0 mEq/L, 또는 의식 저하·경련·생명을 위협하는 부정맥(농도와 무관). 제안: 리튬 > 5.0, 착란, 적절한 치료로 36시간 안에 1.0 미만이 되지 않을 것으로 예상될 때 [[?extrip-lithium-2015]]",
+    "exceptions": "문항 해설에서 옮긴 기준이며 원문을 대조하지 못했다(검토 항목)",
+    "source": "extrip-lithium-2015",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 459: Poisoning and Drug Overdose",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 459장 p.3584-3589, 3595 (Table 459-1, 459-4)",
+    "checked": "본문 대조(드라이브 459장 문서) — p.3584 표 459-1 「느린 분포」 약에 리튬 · p.3585 리튬 중독의 서맥·방실차단, 낮은 음이온차 · p.3586 리튬은 정량 혈중농도가 처치를 이끄는 약 · p.3587 체외 제거 뒤 조직에서 재분포해 혈중농도가 반동 상승(리튬 예시) · p.3588 활성탄은 리튬 등 이온화된 무기물을 잘 흡착하지 못함 · p.3589 투석에 맞는 물질(<500 Da·수용성·낮은 단백결합·분포용적 <1 L/kg), 중증 중독에서 투석을 고려할 약에 리튬 포함 · p.3595 표 459-4 리튬 행·세로토닌 증후군 행(기전: 막 이온 수송·adenylate cyclase·Na-K-ATPase 방해; 소견: 오심·구토·설사·실조·무도무정위운동·뇌병증·반사항진·근간대경련·안진·신성 요붕증, 중증은 혼수·경련·부정맥·지속 뇌병증; 만성 중독은 급성보다 낮은 농도에서 독성; 치료: 대량 복용에 전장관 세척, 정맥 수액, 혼수·경련·뇌병증·중증 신경근 기능 이상 또는 급성 과량 뒤 최고 농도 >4 mEq/L 에 혈액투석). 티아지드 상호작용·EXTRIP 콩팥기능 기준은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "extrip-lithium-2015",
+    "org": "EXTRIP workgroup",
+    "title": "Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup",
+    "kind": "guideline",
+    "citation": "Decker BS, Goldfarb DS, Dargan PI, et al. Clin J Am Soc Nephrol 2015;10:875 (문항 해설에 적힌 서지)",
+    "checked": "서지만 — 문항 해설이 인용한 권고. 이 컨테이너는 PubMed·doi·학술지 접근이 막혀 권고 문구(농도 문턱·36시간 기준)를 대조하지 못했다(url 은 학술지 첫 화면, 논문 DOI 미확인)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2015",
+    "checkedAt": "2026-09-23",
+    "url": "https://cjasn.asnjournals.org/"
+   },
+   {
+    "id": "katzung",
+    "org": "McGraw Hill",
+    "title": "Basic & Clinical Pharmacology — Antipsychotic Agents & Lithium",
+    "kind": "textbook",
+    "citation": "Katzung BG, Vanderah TW (eds). Basic & Clinical Pharmacology, 16e. 29장 'Antipsychotic agents and lithium' (쪽 미대조, 문항 해설에 적힌 판·장)",
+    "checked": "서지만 — 근위세뇨관 나트륨 동반 재흡수·티아지드/NSAID/ACE 억제제 상호작용·청소율 25~40 % 감소 서술의 근거로 문항 해설이 든 교과서. 원문 미대조",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": "https://accessmedicine.mhmedical.com/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "티아지드가 리튬 농도를 올리는 기전은?",
+    "a": "원위세뇨관 나트륨 재흡수를 막아 가벼운 용적 감소 → 근위세뇨관이 나트륨과 함께 리튬을 더 재흡수 → 리튬 청소율 감소."
+   },
+   {
+    "q": "만성 중독이 같은 농도의 급성 중독보다 위험한 이유는?",
+    "a": "리튬이 이미 조직(뇌)에 분포해 혈청과 평형을 이루므로 더 낮은 농도에서 신경독성이 나타난다."
+   },
+   {
+    "q": "해리슨이 적는 혈액투석 적응은?",
+    "a": "혼수·경련·뇌병증 또는 중증·진행·지속하는 신경근 기능 이상, 급성 과량 뒤 최고 농도 > 4 mEq/L."
+   },
+   {
+    "q": "활성탄이 리튬 중독에 쓸모없는 이유는?",
+    "a": "리튬은 이온화된 작은 무기 양이온이라 활성탄에 잘 흡착되지 않는다. 급성 대량 복용이면 전장관 세척을 쓴다."
+   },
+   {
+    "q": "혈액투석 뒤 무엇을 확인하나?",
+    "a": "리튬 농도 재측정 — 조직에서 재분포해 농도가 반동 상승할 수 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.em.lithium-toxicity.hemodialysis-indication#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 의식 명료한 경증 만성 중독",
+    "stem": "52세 남자가 일주일 전부터 손이 가늘게 떨리고 속이 메스꺼워 외래에 왔다. 양극성장애로 8년 동안 탄산리튬을 같은 용량으로 복용하고 있고, 한 달 전 고혈압으로 히드로클로로티아지드를 시작했다. 약을 한꺼번에 많이 먹은 적은 없다. 혈압 132/84 mmHg, 맥박 70회/분이다. 의식은 명료하고 말이 또렷하며 보행은 정상이다. 양손에 미세한 자세 진전이 있고 근간대경련·반사항진은 없다. 혈청 리튬 1.8 mEq/L(치료 범위 0.6~1.2), 나트륨 141 mEq/L, 칼륨 4.2 mEq/L, 크레아티닌 0.8 mg/dL 이다. 심전도는 정상이다. 가장 적절한 처치는?",
+    "options": [
+     "응급 혈액투석",
+     "리튬·히드로클로로티아지드 중단, 0.9% 식염수 정주 후 농도 추적",
+     "활성탄 경구 투여",
+     "푸로세미드 정주로 이뇨 촉진",
+     "리튬 유지하고 프로프라놀롤 추가"
+    ],
+    "answer": 2,
+    "explanation": "티아지드 시작 뒤 생긴 만성 리튬 축적이지만 의식이 명료하고 미세 진전·오심만 있으며 콩팥기능이 정상이다. 해리슨의 투석 적응(혼수·경련·뇌병증·중증 신경근 기능 이상)에 해당하지 않으므로 원인약을 끊고 정맥 수액을 주며 농도를 추적한다 [[harrison-21: 459장 p.3595]]. 원래 문항은 기면·근간대경련에 크레아티닌 2.1 이 겹쳐 투석이 답이었다 — 같은 약 상호작용이라도 「신경독성의 정도와 콩팥기능」이 답을 가른다. 활성탄은 리튬을 흡착하지 못하고 [[harrison-21: 459장 p.3588]], 루프 이뇨제는 용적을 줄여 리튬 재흡수를 늘릴 수 있으며 [[?katzung]], 중독 상태에서 리튬을 유지하는 것은 틀리다.",
+    "of": "imaging-2026-0072",
+    "changed": "리튬 3.4 → 1.8, 거친 진전·근간대경련·기면 → 손의 미세 진전만·의식 명료, 크레아티닌 2.1 → 0.8(정상)로 바꿈 → 중증 신경독성·콩팥기능 저하가 없어 답이 「응급 혈액투석」에서 「원인약 중단 + 0.9% 식염수 정주 후 농도 추적」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.em.lithium-toxicity.hemodialysis-indication#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — NSAID·탈수로 쌓인 노인의 만성 중독",
+    "stem": "68세 남자가 이틀 전부터 점점 멍해지고 팔다리가 튀듯이 움찔거려 요양원에서 응급실로 이송되었다. 양극성장애로 오래 리튬을 복용해 왔고, 2주 전 무릎 관절염으로 나프록센을 매일 먹기 시작했으며, 닷새 전부터 묽은 변을 하루 4~5번 보았다. 약을 한 번에 많이 먹은 정황은 없다. 혈압 104/66 mmHg, 맥박 56회/분, 체온 36.9 ℃ 이다. 부르면 겨우 눈을 뜨고, 근간대경련과 사지 반사항진이 있다. 혈청 리튬 2.9 mEq/L(치료 범위 0.6~1.2), 나트륨 144 mEq/L, 칼륨 3.8 mEq/L, 크레아티닌 2.4 mg/dL(평소 1.0)이다. 가장 적절한 치료는?",
+    "options": [
+     "0.9% 식염수 정주 후 경과관찰",
+     "응급 혈액투석",
+     "활성탄 경구 투여",
+     "폴리스티렌설폰산나트륨 경구 투여",
+     "전장관 세척"
+    ],
+    "answer": 2,
+    "explanation": "원인약(NSAID)과 탈수의 계기, 나이·성별이 달라도 결정 단서는 원래 문항과 같다 — 몇 주에 걸친 만성 축적, 의식 저하와 근간대경련·반사항진의 중증 신경독성, 콩팥기능 저하. 만성 중독은 더 낮은 농도에서도 독성이 심하고, 해리슨은 뇌병증·중증 신경근 기능 이상에 혈액투석을 적는다 [[harrison-21: 459장 p.3595]]. 식염수는 보조로 함께 주지만 혼자서는 부족하다. 활성탄은 리튬을 흡착하지 못하고 [[harrison-21: 459장 p.3588]], 전장관 세척은 급성 대량 복용에만 해당하며, 양이온 교환수지는 칼륨 교환 수지로 리튬 제거 수단이 아니다.",
+    "of": "imaging-2026-0072",
+    "changed": "나이·성별(68세 남자)·원인약(티아지드 → 새로 시작한 NSAID 와 설사로 인한 탈수)·내원 경위(요양원에서 이송)·제시 순서를 바꾸고 「만성 축적 + 의식 저하·근간대경련 + 크레아티닌 상승」은 유지 → 답은 여전히 응급 혈액투석",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "리튬 중독 — 투석이냐 식염수냐",
+  "geo": {
+   "title": "리튬 중독 — 투석이냐 식염수냐",
+   "w": 510,
+   "h": 1108.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "리튬 복용자의 진전·실조·",
+      "의식 변화 — 혈청 리튬·",
+      "크레아티닌·나트륨·심전도"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "sev",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "중증 신경독성(기면·혼수·",
+      "경련·근간대경련·반사항진)",
+      "이 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "6시간 뒤 농도 재측정·복용",
+      "방식(급성 대량? 서방정?)·",
+      "크레아티닌 추이를 확인한다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 310.0
+    },
+    {
+     "id": "hd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "응급 혈액투석 + 정맥 식염수",
+      "보조 · 투석 뒤 반동 확인",
+      "재측정"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 1011.0
+    },
+    {
+     "id": "acute",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "급성 대량 복용인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 457.0
+    },
+    {
+     "id": "wbi",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "전장관 세척(활성탄은 흡착",
+      "안 됨) · 정맥 수액"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "stop",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "리튬·원인약(티아지드·",
+      "NSAID·ACE 억제제) 중단 ·",
+      "0.9% 식염수"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 700.0
+    },
+    {
+     "id": "re",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "재측정: 증상 악화, 급성 뒤",
+      "최고 농도 > 4, 또는",
+      "콩팥기능 저하로 농도가 안",
+      "떨어지는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 847.0
+    },
+    {
+     "id": "ok",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "호전 — 농도 추적 후 재시작",
+      "여부·용량 재조정, 상호작용",
+      "약 피하기"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 1011.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sev",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sev",
+     "to": "hd",
+     "points": [
+      [
+       178.0,
+       244.0
+      ],
+      [
+       178.0,
+       254.0
+      ],
+      [
+       452,
+       254.0
+      ],
+      [
+       452,
+       965.0
+      ],
+      [
+       65.0,
+       965.0
+      ],
+      [
+       65.0,
+       1011.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 50.0,
+      "y": 991.0
+     }
+    },
+    {
+     "from": "sev",
+     "to": "acute",
+     "points": [
+      [
+       227.0,
+       244.0
+      ],
+      [
+       227.0,
+       260.0
+      ],
+      [
+       466,
+       260.0
+      ],
+      [
+       466,
+       411.0
+      ],
+      [
+       194.3,
+       411.0
+      ],
+      [
+       194.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음 — 의식 명료, 미세 진전·오심"
+      ],
+      "w": 177.8,
+      "h": 17,
+      "x": 105.4,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "sev",
+     "to": "info",
+     "points": [
+      [
+       276.0,
+       244.0
+      ],
+      [
+       276.0,
+       266.0
+      ],
+      [
+       227.0,
+       266.0
+      ],
+      [
+       227.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판단 자료 부족"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 186.3,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "hd",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       480,
+       401.0
+      ],
+      [
+       480,
+       965.0
+      ],
+      [
+       114.0,
+       965.0
+      ],
+      [
+       114.0,
+       1011.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중증 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 86.1,
+      "y": 971.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "acute",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       259.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "경증 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "acute",
+     "to": "wbi",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       227.0,
+       514.0
+      ],
+      [
+       227.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 217.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "acute",
+     "to": "stop",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       494,
+       520.0
+      ],
+      [
+       494,
+       654.0
+      ],
+      [
+       194.3,
+       654.0
+      ],
+      [
+       194.3,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오 — 만성 축적"
+      ],
+      "w": 102.6,
+      "h": 17,
+      "x": 143.0,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "wbi",
+     "to": "stop",
+     "points": [
+      [
+       227.0,
+       634.0
+      ],
+      [
+       227.0,
+       644.0
+      ],
+      [
+       259.7,
+       644.0
+      ],
+      [
+       259.7,
+       700.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "stop",
+     "to": "re",
+     "points": [
+      [
+       227.0,
+       781.0
+      ],
+      [
+       227.0,
+       791.0
+      ],
+      [
+       227.0,
+       791.0
+      ],
+      [
+       227.0,
+       847.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "re",
+     "to": "hd",
+     "points": [
+      [
+       194.3,
+       945.0
+      ],
+      [
+       194.3,
+       955.0
+      ],
+      [
+       163.0,
+       955.0
+      ],
+      [
+       163.0,
+       1011.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 153.5,
+      "y": 991.0
+     }
+    },
+    {
+     "from": "re",
+     "to": "ok",
+     "points": [
+      [
+       259.7,
+       945.0
+      ],
+      [
+       259.7,
+       961.0
+      ],
+      [
+       340.0,
+       961.0
+      ],
+      [
+       340.0,
+       1011.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 991.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "리튬 복용자의 진전·실조·의식 변화 — 혈청 리튬·크레아티닌·나트륨·심전도",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "중증 신경독성(기면·혼수·경련·근간대경련·반사항진)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "sev",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "중증 신경독성(기면·혼수·경련·근간대경련·반사항진)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "응급 혈액투석 + 정맥 식염수 보조 · 투석 뒤 반동 확인 재측정"
+     },
+     {
+      "label": "없음 — 의식 명료, 미세 진전·오심",
+      "to": 4,
+      "toText": "급성 대량 복용인가?"
+     },
+     {
+      "label": "판단 자료 부족",
+      "to": 3,
+      "toText": "6시간 뒤 농도 재측정·복용 방식(급성 대량? 서방정?)·크레아티닌 추이를 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "6시간 뒤 농도 재측정·복용 방식(급성 대량? 서방정?)·크레아티닌 추이를 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "중증 확인",
+      "to": 8,
+      "toText": "응급 혈액투석 + 정맥 식염수 보조 · 투석 뒤 반동 확인 재측정"
+     },
+     {
+      "label": "경증 확인",
+      "to": 4,
+      "toText": "급성 대량 복용인가?"
+     }
+    ]
+   },
+   {
+    "id": "acute",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "급성 대량 복용인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "전장관 세척(활성탄은 흡착 안 됨) · 정맥 수액"
+     },
+     {
+      "label": "아니오 — 만성 축적",
+      "to": 6,
+      "toText": "리튬·원인약(티아지드·NSAID·ACE 억제제) 중단 · 0.9% 식염수"
+     }
+    ]
+   },
+   {
+    "id": "wbi",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "전장관 세척(활성탄은 흡착 안 됨) · 정맥 수액",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "리튬·원인약(티아지드·NSAID·ACE 억제제) 중단 · 0.9% 식염수"
+     }
+    ]
+   },
+   {
+    "id": "stop",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "리튬·원인약(티아지드·NSAID·ACE 억제제) 중단 · 0.9% 식염수",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "재측정: 증상 악화, 급성 뒤 최고 농도 > 4, 또는 콩팥기능 저하로 농도가 안 떨어지는가?"
+     }
+    ]
+   },
+   {
+    "id": "re",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "재측정: 증상 악화, 급성 뒤 최고 농도 > 4, 또는 콩팥기능 저하로 농도가 안 떨어지는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "응급 혈액투석 + 정맥 식염수 보조 · 투석 뒤 반동 확인 재측정"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "호전 — 농도 추적 후 재시작 여부·용량 재조정, 상호작용 약 피하기"
+     }
+    ]
+   },
+   {
+    "id": "hd",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "응급 혈액투석 + 정맥 식염수 보조 · 투석 뒤 반동 확인 재측정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ok",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "호전 — 농도 추적 후 재시작 여부·용량 재조정, 상호작용 약 피하기",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0072"
   ],
   "hasErrors": false
  },
@@ -13050,6 +17025,896 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0132"
+  ],
+  "hasErrors": false
+ },
+ "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization": {
+  "id": "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization",
+  "title": "갑상샘 여포의 단백질 지도 — 콜로이드를 채우는 것은 타이로글로불린, 막을 따라 선으로 남는 것은 TPO·NIS",
+  "objective": "갑상샘 조직 면역조직화학에서 염색이 놓인 자리(여포 내강 콜로이드 전체·정단막 선·기저측막 선·여포 사이 흩어진 세포·염색 없음)로 타이로글로불린·갑상샘과산화효소·나트륨-요오드 공동수송체·칼시토닌·티록신결합글로불린을 가르고, 각 단백질이 호르몬 합성·운반에서 맡는 기능을 짝짓는다",
+  "objectiveKind": "기전",
+  "condition": "정상 갑상샘 여포의 호르몬 합성 단백질(면역조직화학 판독)",
+  "topic": "Endocrinology",
+  "seeAlso": [
+   "Pathology",
+   "Physiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "f521f483de387c26",
+  "summary": [
+   "갑상샘 여포는 극성이 있는 여포세포가 콜로이드를 둘러싼 구조다. 기저측막(혈관 쪽)이 요오드를 들이고, 정단막(내강 쪽)에서 요오드화가 일어나며, 내강의 콜로이드가 호르몬 전구 단백을 저장한다 [[harrison-21: 382장 p.2926]].",
+   "콜로이드의 주성분은 타이로글로불린(Tg, 660 kDa 이량체 당단백)이다. 여포세포가 합성해 내강으로 분비하고, 그 타이로신 잔기가 요오드화·짝지음되어 T4·T3 를 품은 채 저장되었다가 다시 세포로 흡수되어 리소좀에서 분해되며 호르몬을 내놓는다 [[harrison-21: 382장 p.2927–2928]].",
+   "갑상샘과산화효소(TPO)는 정단막에서 H₂O₂ 로 요오드를 산화해 Tg 의 타이로신에 붙이고(유기화) 요오드타이로신을 짝짓는 효소, 나트륨-요오드 공동수송체(NIS)는 기저측막에서 요오드를 끌어들이는 수송체다 [[harrison-21: 382장 p.2927]]. 둘 다 막단백질이라 세포 경계에 선으로 염색되고 내강은 비어 보인다.",
+   "칼시토닌은 여포 사이에 흩어진 C 세포(신경능선 유래)의 칼슘 저하 호르몬이다 [[harrison-21: 382장 p.2926]]. 티록신결합글로불린(TBG)은 혈장에서 결합 호르몬의 약 80 %를 나르는 운반단백으로 [[harrison-21: 382장 p.2929]] 갑상샘 조직의 단백이 아니다.",
+   "그래서 면역조직화학 판독의 첫 질문은 「무엇이 호르몬 합성에 중요한가」가 아니라 「갈색이 어디에 있는가」다 — 내강을 균질하게 채우면 저장 단백 Tg 다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>이 정리본의 목표는 갑상샘 질환의 진단이 아니라, <strong>정상 갑상샘 조직의 면역조직화학 사진에서 갈색이 놓인 자리로 단백질을 알아보고 그 기능을 짝짓는 것</strong>이다. 대상 단백질은 호르몬 합성 경로의 다섯 선수 — 타이로글로불린(Tg)·갑상샘과산화효소(TPO)·나트륨-요오드 공동수송체(NIS)·칼시토닌·티록신결합글로불린(TBG)이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 구조.</strong> 갑상샘은 여포세포가 한 층으로 둘러싼 둥근 여포들로 이루어지고, 여포 안은 단백질이 풍부한 콜로이드로 차 있다. 콜로이드에는 갑상샘호르몬의 단백 전구체인 Tg 가 대량으로 들어 있다. 여포세포는 극성이 있어 기저측막은 혈류를, 정단막은 여포 내강을 향한다 <sup>[1 382장 p.2926]</sup>.</p>\n<p><strong>합성의 순서.</strong> ① 요오드 들이기 — NIS 가 기저측막에서 혈중 요오드를 세포 안으로 끌어들인다. 요오드가 모자라면 NIS 가 늘고, 넘치면 줄어든다 <sup>[1 382장 p.2927]</sup>. ② 내강으로 — 정단막의 pendrin 이 요오드를 내강으로 내보낸다. ③ 유기화 — 정단막에서 TPO 가 DUOX 가 만든 H₂O₂ 로 요오드를 산화해, 내강으로 분비된 Tg(660 kDa 이량체)의 특정 타이로신 잔기에 붙인다. ④ 짝지음 — 요오드타이로신 둘이 에테르 결합으로 이어져 T4 또는 T3 가 되며, 이 반응도 TPO 가 촉매한다 <sup>[1 382장 p.2927]</sup>. ⑤ 저장과 방출 — 호르몬을 품은 Tg 는 콜로이드로 저장되었다가, TSH 자극으로 세포 안에 다시 흡수되어 리소좀에서 분해되며 T4·T3 를 내놓는다. 짝지어지지 못한 MIT·DIT 의 요오드는 탈할로겐효소가 재활용한다 <sup>[1 382장 p.2926–2928]</sup>.</p>\n<p><strong>어디가 고장 나면.</strong> 선천 갑상샘저하증의 합성 결함은 드물지만 대부분 TPO·Tg 의 열성 돌연변이이며, NIS·pendrin·H₂O₂ 생성 결함도 있다. 호르몬을 못 만들면 TSH 가 올라 큰 갑상샘종이 생긴다 <sup>[1 382장 p.2928]</sup>.</p>\n<p><strong>같은 샘의 다른 세포.</strong> C 세포는 신경능선(후새체) 유래로 샘 전체에 흩어져 있고(윗 1/3 과 아래 2/3 경계에 가장 많다) 칼슘을 낮추는 칼시토닌을 만든다. 사람의 칼슘 항상성에서 역할은 작지만 수질암과 관련돼 중요하다 <sup>[1 382장 p.2926]</sup>.</p>\n<p><strong>혈중 운반.</strong> 분비된 T4·T3 는 TBG·트랜스티레틴·알부민에 붙어 돈다. TBG 는 농도가 낮아도(1–2 mg/dL) 친화도가 높아 결합 호르몬의 약 80 %를 나른다 <sup>[1 382장 p.2929]</sup>. TBG 는 간에서 만들어지는 혈장 단백이다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<p>면역조직화학은 항체가 단백질이 <strong>있는 자리</strong>에 갈색(DAB)을 남기고, 헤마톡실린이 핵을 파랗게 물들인다. 그래서 단백질의 위치 = 염색 양상이다.</p>\n<ul>\n<li><strong>콜로이드 전체가 균질하게 강양성</strong> — 세포 밖 내강에 대량으로 저장되는 단백. 이 조건을 채우는 것은 Tg 뿐이다. 여포세포질이 함께 물드는 것은 Tg 를 합성·재흡수하는 세포이기 때문이다.</li>\n<li><strong>세포 경계를 따라 얇은 선, 내강은 빔</strong> — 막단백. 내강 쪽 둘레면 TPO(또는 pendrin), 혈관 쪽 둘레면 NIS.</li>\n<li><strong>여포 사이 드문드문 흩어진 세포의 세포질</strong> — 여포세포가 아닌 C 세포의 산물, 칼시토닌.</li>\n<li><strong>여포·콜로이드 모두 음성</strong> — 갑상샘에서 만들지 않는 단백. 예: TBG.</li>\n<li>조직 마이크로어레이의 저배율 사진에서는 막의 앞뒤(정단/기저측)를 구별하기 어렵다 — 이때는 발문의 다른 정보로 가른다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Tg vs TPO</strong>: 둘 다 정단막·내강 쪽에서 합성에 쓰이지만 Tg 는 재료이자 저장형(내강), TPO 는 효소(막)다. 염색이 내강을 채우는가, 경계에 선으로 남는가.</li>\n<li><strong>TPO vs NIS</strong>: 둘 다 막단백. 내강 쪽인지 혈관 쪽인지.</li>\n<li><strong>칼시토닌</strong>: 여포 구조와 무관한 점상 분포.</li>\n<li><strong>TBG</strong>: 이름에 「티록신」이 있어도 갑상샘 조직 단백이 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>정상 조직 IHC 판독 외에, 같은 단백질들이 혈청 검사로 쓰이는 자리를 함께 묶는다.</p>\n<ul>\n<li><strong>혈청 Tg</strong>: 주 용도는 분화 갑상샘암 추적 — 전절제·방사성요오드 제거 뒤 항-Tg 항체가 없을 때 &lt;0.2 ng/mL 이어야 하고 측정되면 불완전 제거나 재발이다. 외인성 호르몬 복용을 뺀 모든 갑상샘중독증에서 오르고, 갑상샘염에서는 조직 파괴로 특히 높다 <sup>[1 382장 p.2932]</sup>.</li>\n<li><strong>항-TPO 항체</strong>: 자가면역 갑상샘병 선별의 기본. 항-Tg 항체만 단독 양성인 경우는 드물어 항-TPO 만 재도 된다. 자가면역 갑상샘저하증 거의 전부, Graves 병의 최대 80 %가 양성 <sup>[1 382장 p.2932]</sup>.</li>\n<li><strong>방사성요오드 흡수·스캔</strong>: NIS 가 갑상샘에 선택적으로 많아 가능하다 <sup>[1 382장 p.2927]</sup>.</li>\n<li><strong>TBG</strong>: 에스트로겐·임신으로 늘어 총 T4 를 올린다 — 유리 호르몬 해석이 필요한 이유 <sup>[1 382장 p.2929]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>이 목표는 기전·판독이라 직접 치료 선택은 없다. 다만 단백질의 자리가 치료로 이어진다: NIS 가 있어 방사성요오드로 갑상샘기능항진증을 치료하고 갑상샘암을 제거할 수 있으며 <sup>[1 382장 p.2927]</sup>, 제거 뒤에는 Tg 로 반응을 확인·재평가한다(항체 음성 전제) <sup>[1 382장 p.2932]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>판독 순서: 기능을 떠올리기 전에 「갈색의 자리」 — 내강 / 막의 선 / 점상 세포 / 없음.</li>\n<li>콜로이드가 균질하게 물들면 Tg. 내강이 비고 내강 쪽 경계가 선이면 TPO.</li>\n<li>혈청 Tg 해석은 항-Tg 항체 음성이 전제다.</li>\n<li>TBG 의 간 합성 서술은 해리슨 이 장에 없어 생리학 교과서 출처로 남겼다(원문 미대조).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 382장 p.2926~2932). 문항 해설의 합성 순서·단백질 위치·Tg 의 임상 용도는 해리슨 서술과 어긋나지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 Tg 는 세포 밖에 저장되나",
+    "deep": true,
+    "html": "<p>대부분의 호르몬은 만들어진 뒤 곧 분비되지만, 갑상샘은 원료인 요오드의 공급이 불규칙하다. 그래서 호르몬을 이미 품은 거대한 단백질(Tg)을 세포 밖 내강에 몇 주치 쌓아 두고, 필요할 때 TSH 신호로 조금씩 다시 삼켜 분해한다 <sup>[1 382장 p.2926–2928]</sup>. 요오드화가 세포 안이 아니라 내강 쪽 정단막에서 일어나는 것도 이 설계와 맞물린다 — 반응성 요오드와 H₂O₂ 를 세포질에서 떼어 놓는다. 이 구조 때문에 여포가 깨지는 갑상샘염에서는 저장된 Tg 와 호르몬이 한꺼번에 새어 나와 일시적 갑상샘중독증과 Tg 상승이 함께 온다 <sup>[1 382장 p.2932]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "갑상샘 여포 단백질 — 어디에 염색되고 무엇을 하나",
+    "columns": [
+     "단백질",
+     "만드는 곳·자리",
+     "면역조직화학 양상",
+     "기능",
+     "임상 연결"
+    ],
+    "rows": [
+     [
+      "타이로글로불린(Tg)",
+      "여포세포가 합성 → 내강으로 분비, 콜로이드에 저장 <sup>[1 382장 p.2926]</sup>",
+      "여포 내강 콜로이드 전체가 균질하게 강양성 + 여포세포질",
+      "타이로신 잔기가 요오드화·짝지음되어 T4·T3 의 골격 <sup>[1 382장 p.2927]</sup>",
+      "분화암 전절제·제거 뒤 재발 표지, 갑상샘염에서 상승 <sup>[1 382장 p.2932]</sup>"
+     ],
+     [
+      "갑상샘과산화효소(TPO)",
+      "여포세포 정단막 <sup>[1 382장 p.2927]</sup>",
+      "내강 쪽 세포 경계를 따라 얇은 선, 콜로이드는 음성",
+      "요오드 산화·유기화, 요오드타이로신 짝지음 <sup>[1 382장 p.2927]</sup>",
+      "자가면역 갑상샘병 항체의 표적 <sup>[1 382장 p.2932]</sup>"
+     ],
+     [
+      "나트륨-요오드 공동수송체(NIS)",
+      "여포세포 기저측막 <sup>[1 382장 p.2927]</sup>",
+      "혈관 쪽 세포 경계를 따라 선",
+      "요오드를 세포 안으로 능동 흡수 <sup>[1 382장 p.2927]</sup>",
+      "방사성요오드 스캔·치료·암 제거의 근거 <sup>[1 382장 p.2927]</sup>"
+     ],
+     [
+      "칼시토닌",
+      "여포 사이에 흩어진 C 세포(신경능선 유래) <sup>[1 382장 p.2926]</sup>",
+      "소수 세포의 세포질에 점상, 콜로이드 음성",
+      "혈중 칼슘 저하(사람에서 역할 작음) <sup>[1 382장 p.2926]</sup>",
+      "수질암과 관련 <sup>[1 382장 p.2926]</sup>"
+     ],
+     [
+      "티록신결합글로불린(TBG)",
+      "혈장 운반단백(간 합성 <sup>[2†]</sup>)",
+      "갑상샘 조직에 염색 없음",
+      "결합 호르몬의 ~80 % 운반 <sup>[1 382장 p.2929]</sup>",
+      "에스트로겐·임신에서 증가 → 총 T4 상승 <sup>[1 382장 p.2929]</sup>"
+     ]
+    ],
+    "note": "면역조직화학은 단백질의 「위치」를 보여 준다. 저장 단백(내강) · 막단백(선) · 다른 세포의 산물(점상) · 혈장 단백(없음)의 네 갈래로 먼저 나눈다."
+   },
+   {
+    "title": "타이로글로불린 vs 갑상샘과산화효소 — 같은 정단막 쪽에서 일하지만",
+    "columns": [
+     "구분",
+     "타이로글로불린",
+     "갑상샘과산화효소"
+    ],
+    "rows": [
+     [
+      "정체",
+      "기질(재료) — 요오드가 붙는 단백",
+      "효소 — 요오드를 붙이는 쪽"
+     ],
+     [
+      "자리",
+      "세포 밖 내강(콜로이드)",
+      "정단막(막에 박힘)"
+     ],
+     [
+      "염색",
+      "내강을 균질하게 채움",
+      "내강 경계의 선, 내강은 빔"
+     ],
+     [
+      "혈청 검사",
+      "재발 표지·갑상샘염",
+      "자가항체(항-TPO)"
+     ]
+    ],
+    "note": "해리슨 382장 p.2927·2932 의 서술을 재료/효소로 나눠 정리했다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "타이로글로불린 vs 갑상샘과산화효소 — 「갑상샘호르몬 합성의 핵심 = TPO」",
+    "point": "TPO 는 요오드를 산화해 타이로신에 붙이고 짝짓는 효소지만 정단막에 박힌 막단백이라 염색은 세포 경계의 선으로 남는다. 여포 내강(세포 밖)을 균질하게 채우는 단백은 그 효소가 작용하는 재료이자 저장형인 타이로글로불린이다 <sup>[1 382장 p.2926–2927]</sup>. 기능을 떠올리기 전에 염색이 「내강」인지 「막」인지부터 본다.",
+    "exception": "콜로이드가 비어 있고 내강 쪽 경계만 선으로 갈색이면 TPO 가 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "NIS vs TPO — 둘 다 막단백, 어느 쪽 막인가",
+    "point": "NIS 는 혈관 쪽 기저측막에서 요오드를 들이고, TPO·pendrin 은 내강 쪽 정단막에서 일한다 <sup>[1 382장 p.2927]</sup>. 선상 염색이 여포의 바깥 둘레인지 안쪽 둘레인지가 둘을 가른다.",
+    "exception": "저배율 조직 마이크로어레이에서는 두 막을 구별하기 어렵다 — 그럴 때는 문항의 다른 정보(분포·설명)를 쓴다.",
+    "cites": ""
+   },
+   {
+    "contrast": "칼시토닌 — 갑상샘에 있지만 여포세포 산물이 아니다",
+    "point": "C 세포는 신경능선 유래로 여포 사이에 흩어져 있어 염색이 점상으로 드문드문 나온다 <sup>[1 382장 p.2926]</sup>. 여포 전체·콜로이드가 물들면 칼시토닌이 아니다.",
+    "exception": "수질암 조직에서는 칼시토닌 양성 세포가 덩어리를 이룬다.",
+    "cites": ""
+   },
+   {
+    "contrast": "TBG — 갑상샘호르몬과 결합하지만 갑상샘 단백이 아니다",
+    "point": "TBG 는 혈장에서 T4·T3 를 나르는 운반단백이다 <sup>[1 382장 p.2929]</sup>. 갑상샘 조직에서 합성·저장되지 않아 여포·콜로이드에 염색되지 않는다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "여포세포질이 함께 물드는 것은 Tg 를 합성·재흡수하는 세포라서다 — 콜로이드 염색이 있으면 세포질 양성은 Tg 판단을 흔들지 않는다 <sup>[1 382장 p.2926]</sup>.",
+   "TSH 수치(정상)는 염색 판독을 바꾸지 않는다 — 문항의 배경 정보다.",
+   "pendrin 도 정단막 단백(요오드를 내강으로 내보냄)이라 TPO 와 같은 선상 양상이 나온다 <sup>[1 382장 p.2927]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "tg-marker",
+    "name": "혈청 타이로글로불린의 임상적 자리",
+    "kind": "검사 해석",
+    "population": "분화 갑상샘암으로 전절제·방사성요오드 제거술을 받은 환자",
+    "statement": "항-Tg 항체가 없을 때 Tg 는 0.2 ng/mL 미만이어야 하며, 측정되면 불완전 제거나 재발을 뜻한다. 혈청 Tg 는 외인성 갑상샘호르몬 복용(허위 갑상샘중독증)을 뺀 모든 갑상샘중독증에서 오르고 갑상샘염에서 특히 높다 [[harrison-21: 382장 p.2932]]",
+    "exceptions": "항-Tg 항체가 있으면 측정값을 믿을 수 없다 — 위 기준은 항체 음성일 때만이다 [[harrison-21: 382장 p.2932]]",
+    "source": "harrison-21",
+    "locator": "382장 p.2932 Thyroglobulin",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 382: Thyroid Gland Physiology and Testing",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 382장 p.2926–2932",
+    "checked": "본문 대조(드라이브 문서, 382장) — p.2926: 신경능선 유래 C 세포가 칼슘 저하 호르몬 칼시토닌을 만들고 샘 전체에 흩어져 있으며 사람의 칼슘 항상성에서 역할은 작음; 여포세포가 Tg 가 많은 콜로이드를 둘러싸고 극성(기저측막은 혈류, 정단막은 내강)이 있으며 TSH 가 Tg 재흡수·세포 안 단백분해를 일으킴. p.2927: NIS 는 기저측막, pendrin 은 정단막(내강으로 요오드 유출); 정단막에서 TPO 와 DUOX 의 H₂O₂ 로 유기화, Tg(660 kDa 이량체)의 타이로신에 요오드 부착, TPO 가 짝지음도 촉매; Tg 는 여포로 분비된 뒤 요오드화. p.2928: 재흡수된 Tg 가 리소좀에서 처리되어 T4·T3 방출, 선천 갑상샘저하증의 합성 결함은 대부분 TPO·Tg 열성 돌연변이. p.2929: TBG·TTR·알부민, TBG 가 결합 호르몬의 ~80 %. p.2932: 자가면역 갑상샘병은 항-TPO·항-Tg 항체, Tg 의 주 용도는 갑상샘암 추적(<0.2 ng/mL). TBG 가 간에서 합성된다는 서술은 이 장에서 찾지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "guyton-14",
+    "org": "Elsevier",
+    "title": "Guyton and Hall Textbook of Medical Physiology, 14th ed. — Chapter 77: Thyroid Metabolic Hormones",
+    "kind": "textbook",
+    "citation": "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology, 14e. ch. 77",
+    "checked": "서지만(문항 해설의 근거 목록에서 옮김, 원문 미대조 — 검토 항목). TBG 의 간 합성·칼시토닌의 파골세포 억제 서술에만 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "hpa-tg",
+    "org": "Human Protein Atlas",
+    "title": "TG (thyroglobulin) — Thyroid gland tissue immunohistochemistry",
+    "kind": "other",
+    "citation": "",
+    "checked": "문항 attribution 의 영상 출처(306_B_1_5). 페이지는 이 컨테이너에서 열지 않았다 — 염색 양상은 문항 작성자 판독을 따른다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland"
+   }
+  ],
+  "checks": [
+   {
+    "q": "갑상샘 IHC 에서 여포 내강 콜로이드가 균질하게 강양성이다. 단백질과 기능은?",
+    "a": "타이로글로불린 — 타이로신 잔기가 요오드화·짝지음되어 T4·T3 의 골격이 되고 콜로이드로 저장된다."
+   },
+   {
+    "q": "TPO 와 NIS 는 각각 여포세포의 어느 막에 있나?",
+    "a": "TPO 는 정단막(내강 쪽), NIS 는 기저측막(혈관 쪽)."
+   },
+   {
+    "q": "칼시토닌 염색은 어떤 분포로 나오나?",
+    "a": "여포 사이에 흩어진 C 세포의 세포질에 점상 — 콜로이드는 음성."
+   },
+   {
+    "q": "분화 갑상샘암 전절제·제거 뒤 혈청 Tg 가 측정된다. 의미와 전제 조건은?",
+    "a": "불완전 제거나 재발을 뜻한다(정상 <0.2 ng/mL). 항-Tg 항체가 없을 때만 해석할 수 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 점상 분포의 여포 사이 세포",
+    "stem": "47세 여자가 갑상샘 왼엽의 3 cm 결절로 왼쪽 갑상샘엽절제술을 받았다. 수술 전 갑상샘기능검사는 정상이었다. 결절에서 떨어진 정상 갑상샘 조직에 한 가지 단백질에 대한 면역조직화학염색을 시행하였다. 여포 내강의 콜로이드는 염색되지 않았고 여포상피도 대부분 음성이었으나, 여포와 여포 사이에 드문드문 흩어진 크고 옅은 세포들의 세포질만 갈색으로 염색되었다. 염색된 단백질의 기능으로 가장 적절한 것은?",
+    "options": [
+     "타이로신 잔기가 요오드화되어 갑상샘호르몬의 골격이 된다",
+     "요오드를 산화해 타이로신 잔기에 결합시킨다",
+     "나트륨 농도기울기를 이용해 요오드를 세포 안으로 들여온다",
+     "혈중 칼슘 농도를 낮춘다",
+     "혈장에서 티록신과 결합해 운반한다"
+    ],
+    "answer": 4,
+    "explanation": "콜로이드와 여포상피가 음성이고 여포 사이에 흩어진 소수 세포만 양성이면 여포세포의 단백이 아니라 C 세포의 산물이다. C 세포는 신경능선에서 유래해 갑상샘 전체에 흩어져 있고 칼슘을 낮추는 호르몬인 칼시토닌을 만든다 [[harrison-21: 382장 p.2926]]. 원래 문항은 콜로이드가 균질하게 물들어 저장 단백인 타이로글로불린이 답이었다 — 같은 조직이라도 「갈색이 어디에 있는가」가 답을 바꾼다. TPO·NIS 는 막을 따라 선으로, TBG 는 갑상샘 조직에 염색되지 않는다.",
+    "of": "imaging-2026-0079",
+    "changed": "염색 양상을 「콜로이드 균질 강양성」에서 「콜로이드 음성, 여포 사이에 드문드문 흩어진 세포의 세포질만 갈색」으로 바꿈 → 단백질이 타이로글로불린에서 칼시토닌으로 바뀌어 답이 「타이로신 요오드화의 골격」에서 「혈중 칼슘 저하」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 전절제 표본의 정상 부위",
+    "stem": "58세 여자가 오른엽의 유두갑상샘암으로 갑상샘전절제술을 받았다. 병리과에서 암과 떨어진 왼엽의 정상 조직에 한 가지 단백질에 대한 면역조직화학염색을 하였더니 여포 내강을 채운 콜로이드가 모두 균질하게 진한 갈색이었고 여포상피 세포질도 옅은 갈색이었다. 사이질과 혈관은 거의 염색되지 않았다. 이 단백질에 대한 설명으로 옳은 것은?",
+    "options": [
+     "자가면역 갑상샘병 환자 대부분에서 혈중 자가항체의 주 표적으로 측정된다",
+     "전절제와 방사성요오드 제거술 뒤 항체가 없을 때 혈청에서 측정되면 재발을 시사한다",
+     "방사성요오드가 갑상샘에 모이는 수송 경로다",
+     "신경능선 유래 세포에서 분비되어 수질암의 표지가 된다",
+     "에스트로겐이나 임신에서 혈중 농도가 늘어 총 T4 를 높인다"
+    ],
+    "answer": 2,
+    "explanation": "환자·수술 이유·묻는 방식이 달라도 결정 단서(정상 부위 콜로이드의 균질 강양성)는 같아 단백질은 타이로글로불린이다. 해리슨은 Tg 측정의 주 용도를 갑상샘암 추적으로 들며, 전절제·방사성요오드 제거 뒤 항-Tg 항체가 없을 때 0.2 ng/mL 미만이어야 하고 측정되면 불완전 제거나 재발을 뜻한다고 쓴다 [[harrison-21: 382장 p.2932]]. 자가면역 갑상샘병에서 주로 측정하는 항체는 항-TPO(A) [[harrison-21: 382장 p.2932]], 방사성요오드 흡수는 NIS(C) [[harrison-21: 382장 p.2927]], 수질암은 칼시토닌(D) [[harrison-21: 382장 p.2926]], 에스트로겐으로 느는 것은 TBG(E) [[harrison-21: 382장 p.2929]]다.",
+    "of": "imaging-2026-0079",
+    "changed": "성별·나이(58세 여자)·수술 이유(반대엽 유두암으로 전절제)·묻는 방식(기능 대신 「이 단백질에 대한 설명」)을 바꾸고 「정상 부위 콜로이드 균질 강양성」은 그대로 → 단백질은 여전히 타이로글로불린",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "갑상샘 조직 면역조직화학 — 갈색은 어디에 있는가?",
+  "geo": {
+   "title": "갑상샘 조직 면역조직화학 — 갈색은 어디에 있는가?",
+   "w": 934,
+   "h": 718.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "갑상샘 조직 절편, 한",
+      "단백질에 대한",
+      "면역조직화학(갈색 = 양성,",
+      "핵은 파랑)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "where",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "갈색이 놓인 자리는? 내강",
+      "전체 / 세포 경계의 선 /",
+      "여포 사이 흩어진 세포 / 없음"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 180.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "저배율이라 어느 막인지",
+      "분간이 안 되면 발문의 추가",
+      "정보(분포 설명·기능 서술)",
+      "를 먼저 확인한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 474.0
+    },
+    {
+     "id": "tg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "타이로글로불린 — 타이로신",
+      "잔기가 요오드화되어 T4·T3",
+      "의 골격, 콜로이드에 저장"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 327.0
+    },
+    {
+     "id": "membrane",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "선이 여포의 어느 쪽 막인가?",
+      "내강 쪽 정단막 / 혈관 쪽",
+      "기저측막"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 327.0
+    },
+    {
+     "id": "tpo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "갑상샘과산화효소 — 요오드",
+      "산화·유기화·짝지음"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 638.0
+    },
+    {
+     "id": "nis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "나트륨-요오드 공동수송체 —",
+      "요오드 능동 흡수"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 638.0
+    },
+    {
+     "id": "ct",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "칼시토닌(C 세포) — 혈중",
+      "칼슘 저하"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 327.0
+    },
+    {
+     "id": "tbg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "갑상샘 단백이 아님 — 예:",
+      "TBG 는 혈장 운반단백"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 327.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "where",
+     "points": [
+      [
+       453.0,
+       114
+      ],
+      [
+       453.0,
+       124
+      ],
+      [
+       453.0,
+       124
+      ],
+      [
+       453.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "where",
+     "to": "tg",
+     "points": [
+      [
+       394.2,
+       261.0
+      ],
+      [
+       394.2,
+       271.0
+      ],
+      [
+       114.0,
+       271.0
+      ],
+      [
+       114.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "콜로이드 전체 균질"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 62.3,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "membrane",
+     "points": [
+      [
+       433.4,
+       261.0
+      ],
+      [
+       433.4,
+       277.0
+      ],
+      [
+       340.0,
+       277.0
+      ],
+      [
+       340.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "세포 경계의 얇은 선"
+      ],
+      "w": 107.2,
+      "h": 17,
+      "x": 286.4,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "ct",
+     "points": [
+      [
+       472.6,
+       261.0
+      ],
+      [
+       472.6,
+       283.0
+      ],
+      [
+       566.0,
+       283.0
+      ],
+      [
+       566.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여포 사이 점상 세포"
+      ],
+      "w": 107.2,
+      "h": 17,
+      "x": 512.4,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "tbg",
+     "points": [
+      [
+       511.8,
+       261.0
+      ],
+      [
+       511.8,
+       289.0
+      ],
+      [
+       792.0,
+       289.0
+      ],
+      [
+       792.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여포·콜로이드 모두 음성"
+      ],
+      "w": 131.9,
+      "h": 17,
+      "x": 726.1,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "tpo",
+     "points": [
+      [
+       420.3,
+       572.0
+      ],
+      [
+       420.3,
+       582.0
+      ],
+      [
+       372.7,
+       582.0
+      ],
+      [
+       372.7,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "내강 쪽 효소로 설명됨"
+      ],
+      "w": 118.2,
+      "h": 17,
+      "x": 313.6,
+      "y": 598.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "nis",
+     "points": [
+      [
+       485.7,
+       572.0
+      ],
+      [
+       485.7,
+       588.0
+      ],
+      [
+       598.7,
+       588.0
+      ],
+      [
+       598.7,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "혈관 쪽 수송체로 설명됨"
+      ],
+      "w": 129.2,
+      "h": 17,
+      "x": 534.1,
+      "y": 598.0
+     }
+    },
+    {
+     "from": "membrane",
+     "to": "tpo",
+     "points": [
+      [
+       291.0,
+       408.0
+      ],
+      [
+       291.0,
+       418.0
+      ],
+      [
+       904,
+       418.0
+      ],
+      [
+       904,
+       592.0
+      ],
+      [
+       307.3,
+       592.0
+      ],
+      [
+       307.3,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정단막(내강 쪽)"
+      ],
+      "w": 90.5,
+      "h": 17,
+      "x": 262.1,
+      "y": 618.0
+     }
+    },
+    {
+     "from": "membrane",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       408.0
+      ],
+      [
+       340.0,
+       424.0
+      ],
+      [
+       453.0,
+       424.0
+      ],
+      [
+       453.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "막 구별 불가"
+      ],
+      "w": 70.5,
+      "h": 17,
+      "x": 417.8,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "membrane",
+     "to": "nis",
+     "points": [
+      [
+       389.0,
+       408.0
+      ],
+      [
+       389.0,
+       430.0
+      ],
+      [
+       918,
+       430.0
+      ],
+      [
+       918,
+       592.0
+      ],
+      [
+       533.3,
+       592.0
+      ],
+      [
+       533.3,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "기저측막(혈관 쪽)"
+      ],
+      "w": 101.5,
+      "h": 17,
+      "x": 482.6,
+      "y": 618.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "갑상샘 조직 절편, 한 단백질에 대한 면역조직화학(갈색 = 양성, 핵은 파랑)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "갈색이 놓인 자리는? 내강 전체 / 세포 경계의 선 / 여포 사이 흩어진 세포 / 없음"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "갈색이 놓인 자리는? 내강 전체 / 세포 경계의 선 / 여포 사이 흩어진 세포 / 없음",
+    "note": "",
+    "branches": [
+     {
+      "label": "콜로이드 전체 균질",
+      "to": 3,
+      "toText": "타이로글로불린 — 타이로신 잔기가 요오드화되어 T4·T3 의 골격, 콜로이드에 저장"
+     },
+     {
+      "label": "세포 경계의 얇은 선",
+      "to": 4,
+      "toText": "선이 여포의 어느 쪽 막인가? 내강 쪽 정단막 / 혈관 쪽 기저측막"
+     },
+     {
+      "label": "여포 사이 점상 세포",
+      "to": 5,
+      "toText": "칼시토닌(C 세포) — 혈중 칼슘 저하"
+     },
+     {
+      "label": "여포·콜로이드 모두 음성",
+      "to": 6,
+      "toText": "갑상샘 단백이 아님 — 예: TBG 는 혈장 운반단백"
+     }
+    ]
+   },
+   {
+    "id": "tg",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "타이로글로불린 — 타이로신 잔기가 요오드화되어 T4·T3 의 골격, 콜로이드에 저장",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "membrane",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "선이 여포의 어느 쪽 막인가? 내강 쪽 정단막 / 혈관 쪽 기저측막",
+    "note": "",
+    "branches": [
+     {
+      "label": "정단막(내강 쪽)",
+      "to": 8,
+      "toText": "갑상샘과산화효소 — 요오드 산화·유기화·짝지음"
+     },
+     {
+      "label": "기저측막(혈관 쪽)",
+      "to": 9,
+      "toText": "나트륨-요오드 공동수송체 — 요오드 능동 흡수"
+     },
+     {
+      "label": "막 구별 불가",
+      "to": 7,
+      "toText": "저배율이라 어느 막인지 분간이 안 되면 발문의 추가 정보(분포 설명·기능 서술)를 먼저 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "칼시토닌(C 세포) — 혈중 칼슘 저하",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tbg",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "갑상샘 단백이 아님 — 예: TBG 는 혈장 운반단백",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "저배율이라 어느 막인지 분간이 안 되면 발문의 추가 정보(분포 설명·기능 서술)를 먼저 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "내강 쪽 효소로 설명됨",
+      "to": 8,
+      "toText": "갑상샘과산화효소 — 요오드 산화·유기화·짝지음"
+     },
+     {
+      "label": "혈관 쪽 수송체로 설명됨",
+      "to": 9,
+      "toText": "나트륨-요오드 공동수송체 — 요오드 능동 흡수"
+     }
+    ]
+   },
+   {
+    "id": "tpo",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "갑상샘과산화효소 — 요오드 산화·유기화·짝지음",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "nis",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "나트륨-요오드 공동수송체 — 요오드 능동 흡수",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0079"
   ],
   "hasErrors": false
  },
@@ -21029,6 +25894,1993 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
+  "id": "cn.obgyn.cervix-transformation-zone.squamous-metaplasia",
+  "title": "자궁경부 변형대 — 뒤집혀 나온 자궁목내막 원주상피를 대체하는 것은 편평상피화생(생리), 이형성은 그 뒤에 오는 HPV 병변",
+  "objective": "자궁경부 조직에서 점액을 채운 단층 원주상피를 자궁목내막 상피로 읽고, 사춘기 이후 질 쪽으로 뒤집혀 나온 이 상피가 변형대에서 예비세포를 거쳐 편평상피로 대체되는 생리 과정이 편평상피화생임을 설명하며, 뒤이어 그 화생 편평상피에 생기는 HPV 관련 이형성(CIN)·미세샘증식·자궁경부 자궁내막증·과각화증과 가른다",
+  "objectiveKind": "기전",
+  "condition": "자궁경부 변형대의 편평상피화생",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Pathology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a950f6bc2f3d0aaa",
+  "summary": [
+   "자궁경부에는 원래 두 상피가 있다 — 질에 이어지는 자궁경부 바깥쪽의 비각화 중층편평상피와, 자궁목관을 덮고 기질로 움푹 들어가 샘(움)을 이루는 단층 원주 점액상피 [[?robbins-10]].",
+   "사춘기·임신의 에스트로겐으로 자궁경부가 커지면 원주상피가 자궁경부 바깥쪽으로 뒤집혀 나오고(외번), 산성 질 환경에 노출된 원주상피 밑의 예비세포가 증식해 미성숙 → 성숙 편평상피로 바뀐다. 이것이 편평상피화생이며 생리적 과정이다 [[?iarc-colpo-2003]] [[?robbins-10]].",
+   "원래의 편평원주접합부와 새 접합부 사이가 변형대다. 미성숙 화생세포는 HPV 감염에 가장 취약해, 자궁경부 상피내종양(CIN)과 편평세포암의 거의 모두가 여기서 생긴다 [[?robbins-10]].",
+   "이형성(CIN)은 화생 「뒤에」 그 편평상피 안에서 생기는 HPV 유발 클론성 성숙 장애다 — 핵 이형성·극성 소실·기저층 위 유사분열이 있고, 화생은 성숙 순서가 보존되며 핵이 균일하다 [[?robbins-10]].",
+   "그래서 사진 문항은 ① 상피 종류(원주 vs 편평) ② 편평이면 성숙이 질서 있는가(화생·정상) vs 무너졌는가(이형성)의 두 단계로 읽는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>자궁경부의 <strong>편평상피화생</strong>은 자궁목관의 단층 원주 점액상피가 자궁경부 바깥 면으로 뒤집혀 나와 산성 질 환경에 노출될 때, 원주상피 밑의 예비세포가 증식해 편평상피로 바뀌는 <strong>생리적</strong> 과정이다 <sup>[2†]</sup>. 이 과정이 일어나는 띠가 <strong>변형대</strong>다. 이 정리본의 목표는 조직 사진에서 원주상피를 알아보고, 변형대에서 그 상피를 <strong>정상적으로</strong> 대체하는 과정(화생)을 그 뒤에 오는 <strong>병적</strong> 변화(이형성)와 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 두 상피.</strong> 자궁경부 바깥 면은 질에 이어지는 비각화 중층편평상피이고, 자궁목관은 점액을 만드는 단층 키 큰 원주세포가 덮으며 기질 속으로 움(흔히 「샘」이라 부름)을 이룬다 <sup>[1†]</sup>. 원주세포의 세포질과 움의 내강은 겔을 이루는 점액(MUC5B·MUC5AC)으로 차 있다 — 원래 문항의 점액 면역조직화학에서 원주세포가 강양성이고 기질이 음성인 이유다 <sup>[3†]</sup>.</p>\n<p><strong>접합부가 움직이는 이유.</strong> 사춘기 전에는 원래의 편평원주접합부가 외자궁구 근처에 있다. 사춘기·임신의 에스트로겐으로 자궁경부가 커지면 원주상피가 바깥 면으로 뒤집혀 나온다(외번). 드러난 원주상피는 락토바실루스가 만드는 산성 질 환경과 마찰에 노출되고, 이에 반응해 <strong>예비세포 증식 → 미성숙 편평화생 → 성숙 편평화생</strong>의 순서로 편평상피가 원주층을 밀어 올려 대체한다 <sup>[2†]</sup>. 새 접합부는 나이가 들며 자궁목관 쪽으로 물러나고, 원래 접합부와 새 접합부 사이가 변형대다.</p>\n<p><strong>왜 여기서 암이 생기나.</strong> 미성숙 화생세포는 HPV 감염에 가장 취약하다. HPV 가 이 세포에 자리 잡으면 성숙이 무너지는 클론성 변화, 즉 <strong>이형성(CIN)</strong>이 생기고 일부가 편평세포암으로 진행한다 <sup>[1†]</sup>. 화생 자체는 생리적이고 질서 있는 성숙을 유지한다 — 이형성은 화생 「뒤」에, 화생 편평상피 「안」에서 생긴다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>원주상피</strong>: 단층 키 큰 원주세포, 세포질 점액, 움 내강의 점액, 주위 섬유근육 기질은 음성(점액 염색에서) <sup>[3†]</sup>.</li>\n<li><strong>화생 편평상피</strong>: 원주층 밑에 작고 균일한 예비세포가 여러 층 → 표면 쪽으로 다각형 편평세포로 성숙. 핵은 작고 균일하며 유사분열은 바닥층에 국한된다 <sup>[2†]</sup>.</li>\n<li><strong>나보트낭</strong>: 화생 편평상피가 움의 입구를 덮으면 점액이 고여 낭이 된다 — 변형대의 흔적 <sup>[1†]</sup>.</li>\n<li><strong>이형성</strong>: 핵 커짐·과염색·불규칙한 핵막, 극성 소실, 바닥층 위쪽의 유사분열 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>이형성(CIN)</strong>: 같은 변형대, 같은 편평상피지만 HPV 유발·클론성·성숙 소실. 「대체하는 정상 과정」이 아니다.</li>\n<li><strong>미세샘증식</strong>: 원주상피 자체의 양성 밀집 — 대체가 아니다 <sup>[1†]</sup>.</li>\n<li><strong>자궁경부 자궁내막증</strong>: 자궁내막 샘과 <strong>자궁내막 기질</strong>이 함께 있다 — 다른 조직의 이소성.</li>\n<li><strong>과각화증</strong>: 바깥 면 편평상피 위의 각질층 — 원주상피와 무관하다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>세포검사·HPV 검사</strong>: 변형대에서 세포를 얻는다 — 병변의 대부분이 여기서 생기기 때문이다 <sup>[1†]</sup>.</li>\n<li><strong>질확대경</strong>: 편평원주접합부와 변형대 전체를 보는 것이 목표다. 접합부가 자궁목관 안으로 물러나 전부 보이지 않으면 판독이 불충분하다 <sup>[2†]</sup>.</li>\n<li><strong>비정형 샘세포</strong>: 원주상피에서 생기는 샘 병변 가능성이 있어 자궁목관 표본을 함께 얻는다(원래 문항의 원추절제 이유).</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>화생은 생리 과정이라 <strong>치료 대상이 아니다</strong>. 치료가 필요한 것은 이형성이다 — 고등급 이형성은 원래 문항처럼 루프 전기절제(LEEP)로 변형대를 떼어 낸다. 떼어 낸 조직에서 이형성이 절제면까지 이어졌는지 보고, 이후 세포검사·HPV 검사로 <strong>재평가</strong>한다. 추적 간격·절제 기준의 수치는 지침마다 달라 이 정리본에 적지 않았다(원문 미대조 — 검토 항목).</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「원주상피를 정상적으로 대체하는 것 = 편평상피화생」. 이형성은 그 화생 편평상피에 생기는 병변이다.</li>\n<li>사진은 두 단계로 읽는다: 상피 종류 → (편평이면) 성숙 질서와 핵.</li>\n<li>이 슬롯(산부인과 손 슬롯 「부인암」)은 해리슨 대조 대상이 아니다. Robbins·IARC 교본·Human Protein Atlas 는 이 컨테이너에서 원문을 열지 못해 서지만 남겼다(모든 근거 †, 검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "화생은 왜 「적응」인가",
+    "deep": true,
+    "html": "<p>화생은 한 분화 세포가 다른 분화 세포로 바뀌는 것이 아니라, 줄기(예비)세포가 다른 방향으로 분화하는 것이다. 자궁경부의 원주상피는 점액을 만들어 자궁목관 안에서는 잘 맞지만, 산성·마찰이 있는 질 쪽에서는 여러 층의 편평상피가 더 버틴다 — 환경에 맞춘 적응이다. 대가는 성숙이 덜 된 화생세포가 HPV 에 취약하다는 점이다. 그래서 변형대는 「생리적 적응이 일어나는 곳」이자 「암이 시작되는 곳」이고, 시험은 이 둘을 한 문항에서 순서(화생 → 이형성)로 가른다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "자궁경부의 상피 — 원래 상피와 변형대에서 생기는 변화",
+    "columns": [
+     "상피·변화",
+     "어디",
+     "현미경 소견",
+     "성격",
+     "임상 의미"
+    ],
+    "rows": [
+     [
+      "자궁목내막 원주상피(원래)",
+      "자궁목관, 기질 속 움(샘)",
+      "단층 키 큰 원주세포, 세포질에 점액, 내강에 점액 <sup>[3†]</sup>",
+      "정상",
+      "샘 병변(상피내 선암)의 자리 <sup>[1†]</sup>"
+     ],
+     [
+      "자궁경부 바깥쪽 편평상피(원래)",
+      "질에 이어지는 바깥 면",
+      "비각화 중층편평, 표층에 글리코겐",
+      "정상",
+      "—"
+     ],
+     [
+      "편평상피화생",
+      "변형대(원래·새 접합부 사이)",
+      "예비세포 증식 → 미성숙 → 성숙 편평상피, 성숙 순서 보존, 핵 균일 <sup>[2†]</sup>",
+      "생리적",
+      "HPV 에 가장 취약한 세포층 <sup>[1†]</sup>"
+     ],
+     [
+      "편평상피 이형성(CIN)",
+      "변형대의 화생 편평상피",
+      "핵 커짐·과염색·극성 소실, 기저층 위 유사분열 <sup>[1†]</sup>",
+      "병적·클론성(HPV)",
+      "편평세포암의 전구 병변"
+     ]
+    ],
+    "note": "원래 상피 둘 + 그 경계에서 일어나는 생리(화생)와 병(이형성)을 한 줄에 놓았다. 출처는 모두 원문 미대조(†)."
+   },
+   {
+    "title": "「원주상피를 대체한다」가 아닌 변화들",
+    "columns": [
+     "변화",
+     "무엇인가",
+     "원주상피와의 관계"
+    ],
+    "rows": [
+     [
+      "미세샘증식",
+      "프로게스틴·임신과 관련된 작은 자궁목내막 샘의 양성 밀집 <sup>[1†]</sup>",
+      "원주상피 자체의 증식 — 대체 아님"
+     ],
+     [
+      "자궁경부 자궁내막증",
+      "자궁내막 샘과 자궁내막 기질이 자궁경부에 자리 잡음(원추절제·분만 뒤)",
+      "다른 조직의 이소성 — 대체 아님"
+     ],
+     [
+      "과각화증",
+      "바깥쪽 편평상피 위의 각질층(탈출·만성 자극, 백반증)",
+      "편평상피의 변화 — 원주상피와 무관"
+     ],
+     [
+      "편평상피 이형성",
+      "화생 편평상피 안의 HPV 성숙 장애",
+      "화생 「뒤」의 병변 — 원주상피를 직접 대체하지 않는다"
+     ]
+    ],
+    "note": "문항의 해설이 든 감별이며, 미세샘증식 외 항목도 원문 미대조 — 검토 항목."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "편평상피화생 vs 편평상피 이형성(CIN) — 「변형대에서 상피가 바뀐다」",
+    "point": "둘 다 변형대에서 일어나고 둘 다 상피를 바꾸지만 순서와 원인이 다르다. 화생은 먼저 오며, 뒤집혀 나온 원주상피가 산성 질 환경에 반응해 예비세포를 거쳐 편평상피로 바뀌는 생리적·질서 있는 과정이다(성숙 보존, 핵 균일) <sup>[2†]</sup>. 이형성은 그 화생 편평상피에 HPV 가 감염된 뒤 생기는 클론성 성숙 장애로 핵 이형성·극성 소실·위층 유사분열이 있다 <sup>[1†]</sup>. 「정상적으로 원주상피를 대체하는 과정」을 물으면 화생이다.",
+    "exception": "질문이 「변형대에서 침윤성 편평세포암의 전구 병변」을 묻거나, 사진의 편평상피에 핵 이형성과 성숙 소실이 보이면 이형성이 답이 된다.",
+    "cites": ""
+   },
+   {
+    "contrast": "원주상피 「대체」 vs 원주상피의 다른 변화 — 미세샘증식·자궁내막증·과각화증",
+    "point": "원주상피를 다른 상피로 바꾸는 생리 과정은 편평상피화생 하나다. 미세샘증식은 원주상피 자체가 밀집하는 양성 변화이고, 자궁경부 자궁내막증은 다른 조직(자궁내막 샘+기질)이 자리 잡은 것이며, 과각화증은 이미 편평상피인 바깥 면에 각질이 덮인 것이다 <sup>[1†]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "화생 편평상피 밑에 남은 자궁목내막 움의 입구가 막히면 점액이 고여 나보트낭(Nabothian cyst)이 생긴다 — 변형대가 있었다는 흔적이다 <sup>[1†]</sup>.",
+   "편평원주접합부는 나이가 들수록 자궁목관 안쪽으로 물러난다 — 폐경 뒤에는 질확대경으로 접합부가 보이지 않을 수 있다 <sup>[2†]</sup>.",
+   "비정형 샘세포(AGC)가 세포검사에 나오면 변형대뿐 아니라 자궁목관의 원주상피도 표본을 얻는다 — 샘 병변은 원주상피에서 생긴다(원래 문항의 상황)."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "robbins-10",
+    "org": "Elsevier",
+    "title": "Robbins & Cotran Pathologic Basis of Disease, 10th ed. — Chapter 22: The Female Genital Tract (Cervix)",
+    "kind": "textbook",
+    "citation": "Kumar V, Abbas AK, Aster JC (eds). Robbins & Cotran Pathologic Basis of Disease, 10e. Chapter 22, Cervix — transformation zone, squamous metaplasia, reserve cells, CIN",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 문항 해설이 인용한 장·절을 그대로 옮겼고, 이 컨테이너에서 본문 쪽수를 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "iarc-colpo-2003",
+    "org": "International Agency for Research on Cancer (IARC)",
+    "title": "Colposcopy and Treatment of Cervical Intraepithelial Neoplasia: A Beginners' Manual — Chapter 1: An introduction to the anatomy of the uterine cervix",
+    "kind": "other",
+    "citation": "Sellors JW, Sankaranarayanan R. IARC, Lyon 2003",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 이 컨테이너에서 IARC 사이트 접속이 막혀 변형대·화생 단계 서술을 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2003",
+    "checkedAt": "2026-09-23",
+    "url": "https://screening.iarc.fr/colpochap.php?chap=1"
+   },
+   {
+    "id": "hpa-muc5b",
+    "org": "Human Protein Atlas",
+    "title": "MUC5B — tissue expression, Cervix",
+    "kind": "other",
+    "citation": "",
+    "checked": "문항 영상의 출처 페이지. 접속이 막혀 주석(자궁목내막 샘세포 강양성·기질 음성)을 직접 대조하지 못했다 — 문항 해설의 인용만 확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix"
+   }
+  ],
+  "checks": [
+   {
+    "q": "자궁경부 조직에서 단층 키 큰 세포가 점액을 채우고 기질 속 샘을 덮는다. 무슨 상피인가?",
+    "a": "자궁목내막 원주(점액)상피."
+   },
+   {
+    "q": "사춘기 이후 변형대에서 이 원주상피를 정상적으로 대체하는 과정과 그 출발 세포는?",
+    "a": "편평상피화생 — 원주상피 밑의 예비세포가 증식해 미성숙 → 성숙 편평상피가 된다."
+   },
+   {
+    "q": "변형대가 임상적으로 중요한 이유는?",
+    "a": "미성숙 화생세포가 HPV 감염에 가장 취약해 CIN·편평세포암의 거의 모두가 여기서 생긴다 — 질확대경·세포검사의 표적이다."
+   },
+   {
+    "q": "화생과 이형성을 조직에서 가르는 소견은?",
+    "a": "화생은 성숙 순서가 보존되고 핵이 균일하다. 이형성은 핵 커짐·과염색·극성 소실·기저층 위 유사분열이 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.obgyn.cervix-transformation-zone.squamous-metaplasia#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 변형대 편평상피의 성숙이 무너졌다",
+    "stem": "A 31-year-old woman undergoes colposcopy after a Papanicolaou smear showed a high-grade squamous intraepithelial lesion; testing for high-risk human papillomavirus is positive. A biopsy is taken at the transformation zone. The section shows stratified squamous epithelium overlying residual endocervical glands. Throughout most of the epithelial thickness, the cells have enlarged hyperchromatic nuclei with irregular contours, polarity is lost, and mitotic figures are present in the upper two-thirds of the epithelium. Which of the following best describes the process in this squamous epithelium?",
+    "options": [
+     "Squamous metaplasia",
+     "Squamous dysplasia",
+     "Reserve cell hyperplasia",
+     "Microglandular hyperplasia",
+     "Hyperkeratosis"
+    ],
+    "answer": 2,
+    "explanation": "Squamous epithelium at the transformation zone with nuclear atypia, loss of polarity and mitoses above the basal layer is dysplasia (cervical intraepithelial neoplasia), an HPV-driven clonal disorder of maturation [[?robbins-10]]. In the original item the question concerned the orderly, physiological replacement of everted columnar epithelium, so the answer was squamous metaplasia; here the single changed clue — disordered maturation with atypia — turns the answer to dysplasia. Metaplasia and reserve cell hyperplasia preserve orderly maturation without atypia [[?iarc-colpo-2003]]; microglandular hyperplasia is a glandular change and hyperkeratosis is a surface keratin layer.",
+    "of": "imaging-2026-0049",
+    "changed": "변형대 편평상피의 소견을 「바닥에서 표면으로 질서 있게 성숙, 핵 균일」에서 「핵 커짐·과염색·극성 소실, 상피 위쪽 2/3 까지 유사분열」로 바꿈 → 답이 편평상피화생에서 편평상피 이형성으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.cervix-transformation-zone.squamous-metaplasia#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 젊은 여성의 자궁경부 외번",
+    "stem": "A 19-year-old woman taking combined oral contraceptives has a red, velvety area surrounding the external os on speculum examination. Colposcopy shows the squamocolumnar junction well out on the ectocervix. A biopsy from the edge of the red area shows mucin-secreting columnar epithelium at the surface; beneath it, several layers of small, uniform basal-type cells are maturing toward the surface into polygonal squamous cells. Nuclei are small and regular, and mitoses are confined to the basal layer. Which of the following best describes the process occurring in this epithelium?",
+    "options": [
+     "Squamous dysplasia",
+     "Hyperkeratosis",
+     "Cervical endometriosis",
+     "Squamous metaplasia",
+     "Microglandular hyperplasia"
+    ],
+    "answer": 4,
+    "explanation": "Everted endocervical columnar epithelium exposed to the acidic vaginal environment is replaced by squamous epithelium when the subcolumnar reserve cells proliferate and mature into squamous cells — squamous metaplasia, a physiological process at the transformation zone [[?iarc-colpo-2003]] [[?robbins-10]]. Age, contraceptive use and the H&E description differ from the original item, but the decisive clue is unchanged: columnar epithelium being replaced by orderly maturing squamous cells without atypia. Dysplasia would show nuclear atypia and loss of maturation; microglandular hyperplasia is crowding of endocervical glands; endometriosis requires endometrial glands with endometrial stroma; hyperkeratosis is a keratin layer on existing squamous epithelium.",
+    "of": "imaging-2026-0049",
+    "changed": "나이(19세)·임상 상황(경구피임약 복용 중 질확대경에서 자궁경부 외번)·제시 순서·염색(점액 면역조직화학 → H&E 기술)을 바꾸고 「뒤집혀 나온 원주상피 밑 예비세포가 질서 있게 편평상피로 성숙, 이형성 없음」은 그대로 → 답은 여전히 편평상피화생",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "자궁경부 조직 — 상피를 읽고 변형대의 변화를 가른다",
+  "geo": {
+   "title": "자궁경부 조직 — 상피를 읽고 변형대의 변화를 가른다",
+   "w": 934,
+   "h": 780.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "자궁경부 조직 사진의 상피를",
+      "본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "epi",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "상피의 종류는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "상피가 애매하면 층 수(단층",
+      "vs 중층)·세포질 점액·",
+      "샘(움) 구조·기질 위치를",
+      "다시 본다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 259.0
+    },
+    {
+     "id": "col",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "단층 키 큰 원주세포 + 점액",
+      "→ 자궁목내막 원주상피"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 423.0
+    },
+    {
+     "id": "sq",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "중층 편평상피"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 423.0
+    },
+    {
+     "id": "site",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "이 원주상피가 질 쪽(바깥 면)",
+      "으로 뒤집혀 나와 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 553.0
+    },
+    {
+     "id": "order",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "성숙이 질서 있는가? 핵은",
+      "균일한가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 553.0
+    },
+    {
+     "id": "meta",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "편평상피화생 — 예비세포 →",
+      "미성숙 → 성숙 편평상피로",
+      "대체(생리적, 변형대)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 683.0
+    },
+    {
+     "id": "canal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "자궁목관의 원주상피 유지 —",
+      "샘 병변(상피내 선암)이",
+      "생기는 자리"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 683.0
+    },
+    {
+     "id": "normal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "성숙 화생 또는 원래",
+      "편평상피 — 정상"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 683.0
+    },
+    {
+     "id": "cin",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "편평상피 이형성(CIN) —",
+      "HPV 유발, 암 전구 병변"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 683.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "epi",
+     "points": [
+      [
+       453.0,
+       80
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "epi",
+     "to": "col",
+     "points": [
+      [
+       404.0,
+       193.0
+      ],
+      [
+       404.0,
+       203.0
+      ],
+      [
+       904,
+       203.0
+      ],
+      [
+       904,
+       377.0
+      ],
+      [
+       307.3,
+       377.0
+      ],
+      [
+       307.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "단층 원주·점액"
+      ],
+      "w": 84.1,
+      "h": 17,
+      "x": 265.3,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "epi",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       193.0
+      ],
+      [
+       453.0,
+       209.0
+      ],
+      [
+       453.0,
+       209.0
+      ],
+      [
+       453.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판단 어려움"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 419.6,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "epi",
+     "to": "sq",
+     "points": [
+      [
+       502.0,
+       193.0
+      ],
+      [
+       502.0,
+       215.0
+      ],
+      [
+       918,
+       215.0
+      ],
+      [
+       918,
+       377.0
+      ],
+      [
+       533.3,
+       377.0
+      ],
+      [
+       533.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중층 편평"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 505.5,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "col",
+     "points": [
+      [
+       420.3,
+       357.0
+      ],
+      [
+       420.3,
+       367.0
+      ],
+      [
+       372.7,
+       367.0
+      ],
+      [
+       372.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "원주로 확인"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 339.3,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "sq",
+     "points": [
+      [
+       485.7,
+       357.0
+      ],
+      [
+       485.7,
+       373.0
+      ],
+      [
+       598.7,
+       373.0
+      ],
+      [
+       598.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "편평으로 확인"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 559.8,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "col",
+     "to": "site",
+     "points": [
+      [
+       340.0,
+       487.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       340.0,
+       553.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sq",
+     "to": "order",
+     "points": [
+      [
+       566.0,
+       470.0
+      ],
+      [
+       566.0,
+       480.0
+      ],
+      [
+       566.0,
+       480.0
+      ],
+      [
+       566.0,
+       553.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "site",
+     "to": "meta",
+     "points": [
+      [
+       307.3,
+       617.0
+      ],
+      [
+       307.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예 — 산성 질 환경에 노출(변형대)"
+      ],
+      "w": 177.8,
+      "h": 17,
+      "x": 25.1,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "site",
+     "to": "canal",
+     "points": [
+      [
+       372.7,
+       617.0
+      ],
+      [
+       372.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오 — 자궁목관 안"
+      ],
+      "w": 113.6,
+      "h": 17,
+      "x": 283.2,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "order",
+     "to": "normal",
+     "points": [
+      [
+       533.3,
+       617.0
+      ],
+      [
+       533.3,
+       627.0
+      ],
+      [
+       566.0,
+       627.0
+      ],
+      [
+       566.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예 — 질서 있는 성숙"
+      ],
+      "w": 106.3,
+      "h": 17,
+      "x": 512.8,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "order",
+     "to": "cin",
+     "points": [
+      [
+       598.7,
+       617.0
+      ],
+      [
+       598.7,
+       633.0
+      ],
+      [
+       792.0,
+       633.0
+      ],
+      [
+       792.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오 — 핵 이형성·극성 소실"
+      ],
+      "w": 156.7,
+      "h": 17,
+      "x": 713.6,
+      "y": 663.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "자궁경부 조직 사진의 상피를 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "상피의 종류는?"
+     }
+    ]
+   },
+   {
+    "id": "epi",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "상피의 종류는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "단층 원주·점액",
+      "to": 4,
+      "toText": "단층 키 큰 원주세포 + 점액 → 자궁목내막 원주상피"
+     },
+     {
+      "label": "중층 편평",
+      "to": 5,
+      "toText": "중층 편평상피"
+     },
+     {
+      "label": "판단 어려움",
+      "to": 3,
+      "toText": "상피가 애매하면 층 수(단층 vs 중층)·세포질 점액·샘(움) 구조·기질 위치를 다시 본다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "상피가 애매하면 층 수(단층 vs 중층)·세포질 점액·샘(움) 구조·기질 위치를 다시 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "원주로 확인",
+      "to": 4,
+      "toText": "단층 키 큰 원주세포 + 점액 → 자궁목내막 원주상피"
+     },
+     {
+      "label": "편평으로 확인",
+      "to": 5,
+      "toText": "중층 편평상피"
+     }
+    ]
+   },
+   {
+    "id": "col",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "단층 키 큰 원주세포 + 점액 → 자궁목내막 원주상피",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "이 원주상피가 질 쪽(바깥 면)으로 뒤집혀 나와 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "sq",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "중층 편평상피",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "성숙이 질서 있는가? 핵은 균일한가?"
+     }
+    ]
+   },
+   {
+    "id": "site",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "이 원주상피가 질 쪽(바깥 면)으로 뒤집혀 나와 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예 — 산성 질 환경에 노출(변형대)",
+      "to": 8,
+      "toText": "편평상피화생 — 예비세포 → 미성숙 → 성숙 편평상피로 대체(생리적, 변형대)"
+     },
+     {
+      "label": "아니오 — 자궁목관 안",
+      "to": 9,
+      "toText": "자궁목관의 원주상피 유지 — 샘 병변(상피내 선암)이 생기는 자리"
+     }
+    ]
+   },
+   {
+    "id": "order",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "성숙이 질서 있는가? 핵은 균일한가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예 — 질서 있는 성숙",
+      "to": 10,
+      "toText": "성숙 화생 또는 원래 편평상피 — 정상"
+     },
+     {
+      "label": "아니오 — 핵 이형성·극성 소실",
+      "to": 11,
+      "toText": "편평상피 이형성(CIN) — HPV 유발, 암 전구 병변"
+     }
+    ]
+   },
+   {
+    "id": "meta",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "편평상피화생 — 예비세포 → 미성숙 → 성숙 편평상피로 대체(생리적, 변형대)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "canal",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "자궁목관의 원주상피 유지 — 샘 병변(상피내 선암)이 생기는 자리",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "normal",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "성숙 화생 또는 원래 편평상피 — 정상",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cin",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "편평상피 이형성(CIN) — HPV 유발, 암 전구 병변",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0049"
+  ],
+  "hasErrors": false
+ },
+ "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
+  "id": "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk",
+  "title": "기능성 시상하부 무월경 — 에스트로겐이 없는 무월경이라 가장 큰 위험은 골밀도 저하다",
+  "objective": "무월경 환자에서 소퇴 출혈 음성·낮은~정상 성선자극호르몬으로 저에스트로겐성 시상하부 무월경을 알아보고, 그 결과로 오는 위험(골밀도 저하)을 에스트로겐이 있는 무배란(자궁내막 증식)·안드로겐 과다(다모증)·고프롤락틴혈증(유루증)·에스트로겐 과다(정맥혈전) 위험과 가른다",
+  "objectiveKind": "예후",
+  "condition": "기능성 시상하부 무월경(여성 운동선수 삼주징)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Endocrinology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a63c46e0350ed19a",
+  "summary": [
+   "무월경은 먼저 임신을 배제하고 [[harrison-21: 393장 p.3034]], 그다음 「어느 층이 멈췄나(시상하부·뇌하수체·난소·자궁)」와 「에스트로겐이 있나」를 가린다.",
+   "에스트로겐이 낮은데 FSH·LH 가 낮거나 정상이면 중추(시상하부·뇌하수체) 원인이다 — 저성선자극호르몬 저성선증 [[harrison-21: 393장 p.3035]]. 프롤락틴은 모두 잰다.",
+   "기능성 시상하부 무월경은 에너지 섭취와 소비의 불균형·스트레스가 렙틴·키스펩틴 경로로 GnRH 분비를 누른 상태이며, 다른 원인을 배제한 뒤 내리는 진단이다 [[harrison-21: 393장 p.3035]].",
+   "결과는 만성 저에스트로겐이다 — 뼈 손실(최대 골량 획득 실패)과 피로골절이 가장 큰 위험이다. 에스트로겐이 있는 무배란(다낭난소증후군)은 반대로 자궁내막 증식이 위험이다 [[harrison-21: 393장 p.3036]].",
+   "치료는 에너지 균형 회복이 먼저다. 호르몬 보충만으로는 기능성 시상하부 무월경의 골밀도를 되돌리거나 지키기에 부족할 수 있다 [[harrison-21: 393장 p.3036]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>기능성 시상하부 무월경은 구조적 병변 없이 <strong>에너지 섭취와 소비의 불균형이나 스트레스</strong>가 시상하부의 GnRH 분비를 눌러 생긴 무월경이다 <sup>[1 393장 p.3035]</sup>. 운동선수에서 에너지 결핍·무월경·골밀도 저하가 함께 오면 「여성 운동선수 삼주징」이라 부른다. 이 정리본의 목표는 진단 자체보다 <strong>「이 무월경에서 에스트로겐이 있는가」를 가려, 가장 큰 위험(골밀도 저하)을 에스트로겐이 있는 무배란·안드로겐 과다·고프롤락틴혈증·에스트로겐 과다의 위험과 구별하는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 기능.</strong> 시상하부는 GnRH 를 박동으로 내보내고, 뇌하수체는 그 박동에 맞춰 FSH·LH 를 낸다. FSH·LH 는 난포를 키워 에스트라디올을 만들고, 배란 뒤 황체가 프로게스테론을 만든다. 에스트라디올은 자궁내막을 두껍게 하고, 프로게스테론이 빠지면 내막이 떨어져 월경이 된다. 난소 호르몬과 인히빈은 되먹임으로 FSH·LH 를 조절한다 <sup>[1 393장 p.3034]</sup>.</p>\n<p><strong>이상이 생기는 기전.</strong> 섭취보다 소비가 많거나(장거리 달리기·무용·섭식 제한) 스트레스가 크면, 지방 조직의 렙틴 신호가 줄고 시상하부 키스펩틴의 GnRH 조절이 억제된다 <sup>[1 393장 p.3035]</sup>. GnRH 박동이 느려지면 LH 박동이 사라지고, 난포가 자라지 못해 에스트라디올이 바닥으로 떨어진다. 결과는 <strong>FSH·LH 가 낮거나 정상인 저에스트로겐 상태</strong>(저성선자극호르몬 저성선증)다. 에스트로겐이 없으니 내막은 얇고 떨어질 것이 없어 월경이 멈춘다. IHH 관련 유전자 변이가 이런 환경 입력에 대한 민감도를 높여 같은 운동량에도 누구는 무월경이 되고 누구는 안 되는 차이를 일부 설명한다 <sup>[1 393장 p.3035]</sup>.</p>\n<p><strong>왜 뼈인가.</strong> 에스트로겐은 파골세포 활동을 눌러 뼈흡수를 억제한다. 20대 초반까지는 최대 골량을 쌓는 시기인데, 이때 에스트로겐이 없으면 얻어야 할 뼈를 얻지 못하고 있던 뼈도 잃는다. 에너지 결핍 자체도 뼈 형성을 떨어뜨린다. 그래서 저에스트로겐 무월경의 치료 목적에 「뼈 보호」가 들어가고, 기능성 시상하부 무월경에서는 호르몬만 채워도 골밀도가 충분히 돌아오지 않을 수 있다 <sup>[1 393장 p.3036]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>무월경 + 저체중·과도한 운동·체중 감소</strong> — 에너지 결핍의 병력이 기전의 입구다.</li>\n<li><strong>소퇴 출혈 없음</strong> — 프로게스틴을 끊었을 때 출혈이 나려면 에스트로겐으로 준비된 내막과 열린 유출로가 필요하다. 출혈이 없으면 에스트로겐 결핍(또는 자궁·유출로 이상)이다.</li>\n<li><strong>FSH·LH 낮음~정상</strong> — 난소가 아니라 위층(시상하부·뇌하수체)의 문제다. 난소부전이면 되먹임이 풀려 FSH 가 높다 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>프롤락틴·TSH 정상</strong> — 고프롤락틴혈증·갑상선 질환이라는 다른 저성선증 원인을 배제한다(프롤락틴은 모두 잰다) <sup>[1 393장 p.3035]</sup>.</li>\n<li><strong>안드로겐 과다 징후 없음</strong> — 다낭난소증후군 방향이 아니다.</li>\n<li><strong>골밀도 저하·피로골절</strong> — 저에스트로겐이 오래 지속된 결과로, 진단 시 골밀도 평가가 필요한 이유다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>다낭난소증후군</strong> — 배란이 없지만 에스트로겐은 있다. 소퇴 출혈이 나고, 안드로겐 과다·LH 상승 경향, 위험은 <strong>자궁내막 증식·암(2–6배)</strong>과 대사 질환이다 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>일차 난소부전</strong> — 40세 미만, FSH 높음. 저에스트로겐이라 뼈 위험은 같지만 원인·평가(핵형·FMR1·자가면역)가 다르다 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>고프롤락틴혈증·뇌하수체/시상하부 종양</strong> — 유루증·두통·시야결손. 가벼운 고프롤락틴혈증이라도 MRI 로 구조 원인을 배제한다 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>만성 질환·약물</strong> — 1형 당뇨·셀리악병·갑상선항진·쿠싱, 아편계·당질코르티코이드·향정신성 약물은 기능성 진단 전에 배제한다 <sup>[1 393장 p.3035]</sup>.</li>\n<li><strong>Asherman 증후군</strong> — 소파술 뒤 자궁 유착. 호르몬은 정상이지만 내막이 반응하지 못해 소퇴 출혈이 없다 <sup>[1 393장 p.3035]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>임신 검사</strong> — 모든 무월경에서 먼저 <sup>[1 393장 p.3034]</sup>.</li>\n<li><strong>FSH(± LH·에스트라디올)·프롤락틴·TSH·안드로겐 과다 평가</strong> — 층을 가르는 초기 검사 <sup>[1 393장 p.3035]</sup>.</li>\n<li><strong>프로게스틴 소퇴 출혈</strong> — 에스트로겐 상태를 임상적으로 확인하는 검사로 시험에 자주 나온다(해리슨 알고리듬은 FSH 로 가른다 — 시험 쟁점 Z1).</li>\n<li><strong>뇌 MRI</strong> — 비전형 병력·두통·다른 시상하부 징후·고프롤락틴혈증일 때 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>골밀도(DXA)</strong> — 저에스트로겐이 오래된 환자에서 뼈 상태를 본다(일차 난소부전에서는 해리슨이 평가 항목으로 명시 <sup>[1 393장 p.3036]</sup>).</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>원인 교정이 먼저</strong> — 섭취를 늘리고 운동량을 줄여 에너지 균형을 회복하면 GnRH 박동이 돌아오고 월경·골대사가 회복된다. 섭식장애가 있으면 정신건강 치료를 함께 한다.</li>\n<li><strong>호르몬 보충</strong> — 해리슨은 저에스트로겐 무월경에 뼈·심혈관 보호를 위한 호르몬 보충(저용량 에스트로겐/프로게스테론 또는 경구피임약)을 권하면서도, 기능성 시상하부 무월경·신경성 식욕부진에서는 그것만으로 골밀도를 지키기에 부족할 수 있다고 적는다 <sup>[1 393장 p.3036]</sup>. 경구피임약의 자리는 지침마다 다르다(시험 쟁점 Z2).</li>\n<li><strong>임신을 원하면</strong> 외인성 FSH·LH 가 필요하다 <sup>[1 393장 p.3036]</sup>.</li>\n<li><strong>반응 확인·재평가</strong> — 체중·에너지 섭취 회복과 함께 월경 재개를 추적하고, 무월경이 길었으면 골밀도를 다시 본다. 호르몬 보충으로 생긴 출혈은 시상하부 회복의 증거가 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>무월경의 위험은 「에스트로겐이 있는가」가 정한다: 없으면 뼈, 있고 배란이 없으면 자궁내막.</li>\n<li>소퇴 출혈 음성 + 낮은~정상 성선자극호르몬 + 정상 프롤락틴·TSH = 저에스트로겐성 중추 무월경. 기능성은 제외 진단이다.</li>\n<li>두통·시야 이상·고프롤락틴혈증이 있으면 기능성으로 단정하지 말고 MRI.</li>\n<li>정맥혈전은 에스트로겐 과다(외인성·임신)의 위험이지 결핍의 위험이 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 에스트로겐 상태를 무엇으로 가르나</strong> — 시험 기준: 임신 음성·프롤락틴·TSH 정상 뒤 프로게스틴 소퇴 출혈로 에스트로겐 상태를 가르고, 음성이면 FSH 로 층을 가른다(문항 imaging-2026-0009 의 흐름) / 다른 기준: 해리슨의 무월경 알고리듬은 소퇴 출혈 검사 없이 임신 검사·FSH·안드로겐 과다 평가로 바로 가른다 <sup>[1 393장 p.3035]</sup> / 왜 다른가: 해리슨은 이유를 적지 않았다 — 두 방법은 같은 질문(에스트로겐이 있는가, 어느 층인가)을 임상 반응과 호르몬 수치라는 다른 도구로 묻는다 / 시험에서는: USMLE·KMLE 모두 문항에 소퇴 출혈 결과가 주어지면 「에스트로겐이 있는가」의 단서로 읽는다 — 결과가 없으면 FSH·에스트라디올로 판단한다.</li>\n<li><strong>Z2 충돌 · 기능성 시상하부 무월경에 경구피임약을 쓰는가</strong> — 시험 기준: 에너지 균형 회복이 먼저다 / 다른 기준: 해리슨은 저에스트로겐 무월경 전체에 뼈·심혈관 보호용 호르몬 보충(저용량 에스트로겐/프로게스테론 또는 경구피임약)을 권하면서, FHA 에서는 보충만으로 부족할 수 있다고 덧붙인다 <sup>[1 393장 p.3036]</sup>; Endocrine Society 지침은 FHA 에서 골 보호 목적의 경구피임약을 권하지 않고 단기 경피 에스트라디올+주기적 프로게스틴을 제시한다고 알려져 있으나 원문을 대조하지 못했다 <sup>[2†]</sup> / 왜 다른가: 해리슨은 난소부전·저성선증을 한데 묶어 서술하고, FHA 지침은 경구 에스트로겐이 간에서 IGF-1 을 낮춰 뼈에 불리할 수 있다는 점을 고려한다 <sup>[2†]</sup> / 시험에서는: KMLE·USMLE 모두 「첫 치료」를 물으면 에너지 섭취 증가·운동 감소를 고르고, 「피임약으로 월경을 되돌리면 뼈가 보호된다」는 보기는 피한다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 「무월경 = 내막이 쌓인다」가 반만 맞는가",
+    "deep": true,
+    "html": "<p>월경은 에스트로겐으로 자란 내막이 프로게스테론 철회로 떨어지는 사건이다. 무월경은 이 사건이 멈췄다는 뜻일 뿐, 어느 단계가 멈췄는지는 말해 주지 않는다. <strong>프로게스테론만 없는</strong> 경우(배란만 멈춘 다낭난소증후군)에는 에스트로겐이 내막을 계속 자라게 해 증식·암 위험이 오른다 <sup>[1 393장 p.3036]</sup>. <strong>에스트로겐까지 없는</strong> 경우(시상하부 무월경·난소부전)에는 내막이 자라지 않으니 쌓일 것이 없고, 대신 에스트로겐이 지키던 뼈가 무너진다. 소퇴 출혈 검사와 FSH·LH 는 결국 「무월경의 어느 층에서, 어떤 호르몬이 빠졌나」를 묻는 도구이고, 그 답이 위험의 방향을 정한다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "무월경 — 에스트로겐 상태가 위험을 정한다",
+    "columns": [
+     "원인",
+     "에스트로겐",
+     "FSH · LH",
+     "소퇴 출혈",
+     "대표 위험",
+     "근거"
+    ],
+    "rows": [
+     [
+      "기능성 시상하부 무월경",
+      "낮음",
+      "낮음~정상",
+      "없음",
+      "골밀도 저하·피로골절",
+      "<sup>[1 393장 p.3035–3036]</sup>"
+     ],
+     [
+      "다낭난소증후군",
+      "있음(대항 없는 에스트로겐)",
+      "LH 상승 경향, FSH 정상~낮음",
+      "있음",
+      "자궁내막 증식·암(2–6배), 다모증, 대사 질환",
+      "<sup>[1 393장 p.3036]</sup>"
+     ],
+     [
+      "일차 난소부전",
+      "낮음",
+      "FSH 높음",
+      "대개 없음",
+      "골밀도 저하, 동반 자가면역 질환",
+      "<sup>[1 393장 p.3036]</sup>"
+     ],
+     [
+      "고프롤락틴혈증",
+      "대개 낮음",
+      "낮음",
+      "없음~있음",
+      "유루증, (종양이면) 두통·시야결손",
+      "<sup>[1 393장 p.3035]</sup>"
+     ],
+     [
+      "자궁·유출로 이상(Asherman 등)",
+      "정상",
+      "정상",
+      "없음(내막이 반응 못 함)",
+      "불임",
+      "<sup>[1 393장 p.3035]</sup>"
+     ]
+    ],
+    "note": "소퇴 출혈 칸은 「에스트로겐으로 준비된 내막 + 열린 유출로」가 있어야 출혈이 난다는 원리에서 온다 — 해리슨 393장의 알고리듬은 소퇴 출혈 대신 FSH 로 가른다(시험 쟁점 Z1)."
+   },
+   {
+    "title": "에스트로겐 결핍 vs 과다 — 위험의 방향",
+    "columns": [
+     "상태",
+     "대표 위험",
+     "이유"
+    ],
+    "rows": [
+     [
+      "결핍(시상하부 무월경·난소부전)",
+      "골밀도 저하·피로골절",
+      "뼈흡수 억제가 풀리고 최대 골량을 못 얻는다"
+     ],
+     [
+      "대항 없는 에스트로겐(무배란 PCOS)",
+      "자궁내막 증식·암",
+      "프로게스테론 없이 내막이 계속 자란다 <sup>[1 393장 p.3036]</sup>"
+     ],
+     [
+      "외인성 에스트로겐·임신",
+      "정맥혈전색전증",
+      "간의 응고인자 합성이 늘어난다"
+     ]
+    ],
+    "note": "무월경이라는 같은 증상이라도 에스트로겐이 있는지 없는지에 따라 위험이 반대가 된다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "에스트로겐 결핍의 위험 vs 에스트로겐 과다의 위험 — 「호르몬 이상이면 혈전」",
+    "point": "정맥혈전색전증 위험을 올리는 것은 에스트로겐이 <b>많을 때</b>다(경구 에스트로겐 제제·임신 — 간의 응고인자 합성 증가). 기능성 시상하부 무월경은 에스트로겐이 <b>바닥인</b> 상태라 혈전 위험이 오르지 않고, 뼈흡수를 누르던 에스트로겐이 빠져 골밀도 저하가 온다 <sup>[1 393장 p.3036]</sup>.",
+    "exception": "이 환자에게 경구 에스트로겐 제제를 쓰기 시작하면 그 약이 혈전 위험을 더한다 — 위험은 질환이 아니라 치료에서 온다.",
+    "cites": ""
+   },
+   {
+    "contrast": "시상하부 무월경 vs 다낭난소증후군 — 「무월경이면 내막이 쌓인다」",
+    "point": "자궁내막 증식은 배란이 없어 프로게스테론은 없지만 에스트로겐은 있는 상태(다낭난소증후군)에서 온다 <sup>[1 393장 p.3036]</sup>. 소퇴 출혈이 없고 성선자극호르몬이 낮으면 에스트로겐이 없다는 뜻이므로 내막은 오히려 얇다.",
+    "exception": "기능성 시상하부 무월경의 일부는 다낭 난소 모양·AMH 상승을 보인다 — 그래도 에스트로겐이 낮으면 위험은 뼈 쪽이다 <sup>[1 393장 p.3036]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "시상하부 무월경 vs 안드로겐 과다·고프롤락틴혈증 — 「무월경의 흔한 동반 소견」",
+    "point": "다모증은 안드로겐 과다(다낭난소증후군·부신)의, 유루증은 고프롤락틴혈증의 표현이다. 프롤락틴이 정상이고 안드로겐 과다 징후가 없으면 그 방향이 아니다 — 시상하부 억제는 성호르몬을 <b>모두</b> 낮춘다 <sup>[1 393장 p.3035]</sup>.",
+    "exception": "가벼운 고프롤락틴혈증이라도 있으면 기능성으로 단정하지 말고 뇌 MRI 로 구조 원인을 배제한다 <sup>[1 393장 p.3036]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "프롤락틴 상승·TSH 이상은 labs 단계에서 먼저 그 원인으로 간다 — 그림은 둘 다 정상인 경로다 <sup>[1 393장 p.3035]</sup>.",
+   "초경이 없는 일차 무월경은 자궁·유출로 이상(뮐러관 무발생·안드로겐 무감응)을 먼저 본다 — 이 도식의 대상이 아니다 <sup>[1 393장 p.3034]</sup>.",
+   "소퇴 출혈이 없으면 에스트로겐 결핍 말고도 자궁·유출로 이상(Asherman 증후군)일 수 있다 — 자궁 기구 조작 병력이 있으면 에스트로겐/프로게스테론 시험으로 가른다 <sup>[1 393장 p.3035]</sup>.",
+   "기능성 시상하부 무월경은 제외 진단이다 — 만성 질환(1형 당뇨·셀리악·갑상선항진·쿠싱)과 약물(아편계·당질코르티코이드·향정신성)을 먼저 배제한다 <sup>[1 393장 p.3035]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "amenorrhea-evaluation-timing",
+    "name": "이차 무월경의 정의와 평가 시점",
+    "kind": "정의",
+    "population": "생식 연령 여성",
+    "statement": "월경이 3–6개월 멈추면 이차 무월경이다. 3개월 무월경(이전 주기가 불규칙했으면 6개월)이면 평가를 시작하며, 임신은 가장 흔한 원인이라 모든 경우에 먼저 배제한다 [[harrison-21: 393장 p.3034]]",
+    "exceptions": "초경 뒤 3년까지와 폐경 전 1–2년은 불규칙 주기가 흔하다 [[harrison-21: 393장 p.3034]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hypogonadotropic-pattern",
+    "name": "저성선자극호르몬 저성선증의 검사 양상",
+    "kind": "진단 기준",
+    "population": "임신이 배제된 무월경",
+    "statement": "초기 검사는 임신 검사·FSH·안드로겐 과다 평가다. 에스트로겐이 낮고 LH·FSH 가 정상 또는 낮으면 시상하부 GnRH 분비나 뇌하수체 반응의 이상이며, 이 경우 프롤락틴을 모두 잰다 [[harrison-21: 393장 p.3035]]",
+    "exceptions": "FSH 가 높으면 일차 난소부전(40세 미만) — 핵형·FMR1 전돌연변이·골밀도 평가로 간다 [[harrison-21: 393장 p.3036]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "fha-diagnosis",
+    "name": "기능성 시상하부 무월경의 진단",
+    "kind": "진단 기준",
+    "population": "저성선자극호르몬 저성선증 양상의 무월경",
+    "statement": "제외 진단이다 — 만성 질환(1형 당뇨·셀리악병·갑상선항진·쿠싱)과 아편계·당질코르티코이드·프롤락틴을 올리는 향정신성 약물을 배제하고, 병력·진찰·낮은 성선자극호르몬·정상 프롤락틴으로 진단한다. 섭식장애·과도한 운동을 구체적으로 묻는다. 비전형 병력·두통·다른 시상하부 징후·(가벼운) 고프롤락틴혈증이면 뇌 MRI 로 구조 원인을 배제한다 [[harrison-21: 393장 p.3035–3036]]",
+    "exceptions": "기능성 시상하부 무월경의 최대 10 % 는 다낭 난소 모양·AMH 상승·가벼운 안드로겐 상승 같은 다낭난소증후군 양상을 일부 보인다 [[harrison-21: 393장 p.3036]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hypoestrogenic-treatment",
+    "name": "저에스트로겐 무월경의 치료 원칙",
+    "kind": "치료 권고",
+    "population": "저성선자극호르몬 저성선증·일차 난소부전으로 인한 무월경",
+    "statement": "무월경은 거의 늘 만성 저에스트로겐을 동반한다. 뼈·심혈관 보호를 위해 폐경 나이까지 저용량 에스트로겐/프로게스테론 또는 경구피임약으로 호르몬 보충을 권한다. 그러나 기능성 시상하부 무월경·신경성 식욕부진에서는 호르몬 보충만으로 골밀도를 회복·유지하기에 부족할 수 있다. 임신을 원하면 외인성 FSH·LH 가 필요하다 [[harrison-21: 393장 p.3036]]",
+    "exceptions": "Endocrine Society 지침은 기능성 시상하부 무월경에서 에너지 균형 회복을 먼저 두고 경구피임약을 골 보호 목적으로 쓰지 않는다고 알려져 있다 — 원문 미대조 [[?endo-fha-2017]]. 아래 「시험 쟁점」 Z2.",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 393: Menstrual Disorders and Pelvic Pain",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 393장 Menstrual Disorders and Pelvic Pain(Hall JE, Dokras A), 인쇄쪽 3033–3038",
+    "checked": "드라이브 장 문서로 본문 대조. p.3034 이차 무월경 정의(3–6개월)·평가 시점(3개월, 불규칙이면 6개월)·임신이 가장 흔한 원인. p.3035 초기 검사(임신·FSH·안드로겐 과다), 저성선자극호르몬 저성선증 = 에스트로겐 저하 + LH·FSH 정상/저하, 프롤락틴 전원 측정, 기능성 시상하부 무월경 = 제외 진단·에너지 불균형/스트레스·렙틴·키스펩틴. p.3036 진단(낮은 성선자극호르몬·정상 프롤락틴, MRI 적응), 일차 난소부전(FSH 상승, 골밀도 평가), 저에스트로겐 무월경 치료(뼈·심혈관 보호 호르몬 보충, FHA 는 보충만으로 골밀도 부족할 수 있음, 임신엔 FSH·LH), 다낭난소증후군의 자궁내막 증식·암 위험(2–6배)·프로게스틴 10–14일 3개월마다, 안드로겐 과다·LH 상승. 프로게스틴 소퇴 출혈 검사는 이 장의 진단 알고리듬(그림 393-2)에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "endo-fha-2017",
+    "org": "Endocrine Society",
+    "title": "Functional Hypothalamic Amenorrhea: An Endocrine Society Clinical Practice Guideline",
+    "kind": "guideline",
+    "citation": "Gordon CM, Ackerman KE, Berga SL, et al. J Clin Endocrinol Metab 2017;102(5):1413-1439",
+    "checked": "서지만(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 에너지 균형 회복 우선·경구피임약 비권고·단기 경피 에스트라디올+주기적 프로게스틴 권고의 원문 문구를 대조하지 못했다. DOI 도 접근이 막혀 확인하지 못한 값이다",
+    "doi": "10.1210/jc.2017-00131",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1210/jc.2017-00131"
+   }
+  ],
+  "checks": [
+   {
+    "q": "소퇴 출혈 음성 + FSH·LH 낮음~정상 + 프롤락틴·TSH 정상 — 어느 층, 에스트로겐은?",
+    "a": "시상하부(기능성 시상하부 무월경), 에스트로겐 결핍."
+   },
+   {
+    "q": "기능성 시상하부 무월경의 가장 큰 장기 위험은?",
+    "a": "골밀도 저하와 피로골절 — 만성 저에스트로겐 때문."
+   },
+   {
+    "q": "자궁내막 증식 위험이 큰 무월경은?",
+    "a": "에스트로겐은 있고 프로게스테론이 없는 무배란(다낭난소증후군) — 소퇴 출혈이 나온다."
+   },
+   {
+    "q": "기능성으로 단정하기 전에 뇌 MRI 를 찍는 경우는?",
+    "a": "비전형 병력, 두통, 다른 시상하부 기능 이상 징후, 가벼운 것이라도 고프롤락틴혈증."
+   },
+   {
+    "q": "치료의 첫 단계는?",
+    "a": "에너지 균형 회복(섭취 늘리기·운동 줄이기). 호르몬 보충만으로는 골밀도를 지키기에 부족할 수 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 에스트로겐이 있는 무배란",
+    "stem": "A 24-year-old woman comes to the physician because she has had only two menstrual periods in the past year. She has had acne and increasing hair growth on her upper lip and chin for 3 years. Her BMI is 32 kg/m2. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges. Serum LH concentration is increased, and FSH concentration is within the reference range. After a 10-day course of oral medroxyprogesterone, she has vaginal bleeding. Without treatment, this patient is at greatest long-term risk for which of the following?",
+    "options": [
+     "Stress fractures from decreased bone mineral density",
+     "Endometrial hyperplasia",
+     "Galactorrhea",
+     "Premature ovarian insufficiency",
+     "Venous thromboembolism"
+    ],
+    "answer": 2,
+    "explanation": "Withdrawal bleeding after a progestin shows an estrogen-primed endometrium, and with hyperandrogenism and an increased LH this is anovulatory polycystic ovary syndrome. Without ovulation there is no progesterone to oppose estrogen, so the endometrium keeps proliferating; PCOS carries a two- to sixfold increased risk of endometrial hyperplasia and cancer, prevented with periodic progestin [[harrison-21: 393장 p.3036]]. In the original item there was no withdrawal bleeding and gonadotropins were low-normal — estrogen was absent, so bone loss was the risk. Galactorrhea needs hyperprolactinemia, ovarian insufficiency would show a high FSH, and venous thromboembolism rises with exogenous estrogen or pregnancy, not with the disorder itself.",
+    "of": "imaging-2026-0009",
+    "changed": "「BMI 17.5 장거리 선수 · 소퇴 출혈 없음 · FSH·LH 낮은 정상」을 「BMI 32 · 여드름·다모 · 소퇴 출혈 있음 · LH 상승」으로 바꿈 → 에스트로겐이 있는 무배란(다낭난소증후군)이라 답이 「골밀도 저하」에서 「자궁내막 증식」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 청소년 발레 무용수",
+    "stem": "A 17-year-old ballet dancer is brought to the physician by her mother because she has not had a menstrual period for 6 months. Menarche was at age 13 years, and her periods were regular until she began training 25 hours a week. She has lost 5 kg over the past year. Her BMI is 16.8 kg/m2. There is no acne or hirsutism, and there is no nipple discharge. Urine hCG is negative. Serum TSH and prolactin concentrations are within the reference ranges; FSH and LH concentrations are low, and estradiol concentration is decreased. She has no bleeding after a course of oral progestin. Which of the following complications is this patient most likely to develop if the condition persists?",
+    "options": [
+     "Endometrial carcinoma",
+     "Venous thromboembolism",
+     "Stress fracture",
+     "Pituitary macroadenoma",
+     "Ovarian hyperstimulation"
+    ],
+    "answer": 3,
+    "explanation": "Energy deficit from heavy training and weight loss has suppressed hypothalamic GnRH secretion: estrogen is low with low-to-normal gonadotropins and normal prolactin, and the absent withdrawal bleed confirms an unprimed endometrium [[harrison-21: 393장 p.3035]]. Chronic hypoestrogenism removes the brake on bone resorption during the years when peak bone mass should be accrued, so decreased bone density and stress fractures follow [[harrison-21: 393장 p.3036]]. The age, sport and wording differ from the original, but the deciding clues are the same. Endometrial carcinoma needs unopposed estrogen, thromboembolism rises with estrogen excess, a macroadenoma would usually raise prolactin or cause headache or visual loss, and hyperstimulation is a complication of gonadotropin treatment.",
+    "of": "imaging-2026-0009",
+    "changed": "나이(17세)·종목(발레)·기간(6개월)·검사 제시(에스트라디올 낮음을 수치로)·질문(장기 합병증)을 바꾸고 「에너지 결핍 · 소퇴 출혈 없음 · 낮은 성선자극호르몬 · 정상 프롤락틴·TSH」는 그대로 → 답은 여전히 골밀도 저하(피로골절)",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "이차 무월경 — 어느 층, 에스트로겐은 있는가",
+  "geo": {
+   "title": "이차 무월경 — 어느 층, 에스트로겐은 있는가",
+   "w": 468,
+   "h": 1091.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "3개월 이상 무월경(이전",
+      "주기가 불규칙했으면 6개월)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "preg",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "β-hCG 는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "labs",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "TSH · 프롤락틴 · FSH(± LH",
+      "· 에스트라디올) · 안드로겐",
+      "과다 징후"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 259.0
+    },
+    {
+     "id": "fsh",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "FSH 는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 406.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "한 번의 FSH ·",
+      "에스트라디올로 애매하다 —",
+      "반복 측정, 또는 소퇴 출혈로",
+      "에스트로겐 상태를 확인"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 519.0
+    },
+    {
+     "id": "estro",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "에스트로겐이 있는가? (소퇴",
+      "출혈 · 안드로겐 과다 · 다낭",
+      "난소)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 683.0
+    },
+    {
+     "id": "fha",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "에너지 결핍 · 스트레스 ·",
+      "체중 감소가 있고, 두통 ·",
+      "시야 이상 · 다른 시상하부",
+      "징후 · 고프롤락틴이 없는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 830.0
+    },
+    {
+     "id": "end_preg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "임신"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 259.0
+    },
+    {
+     "id": "end_poi",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "일차 난소부전 — 핵형 · FMR1",
+      "· 골밀도"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 519.0
+    },
+    {
+     "id": "end_pcos",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "에스트로겐 있는",
+      "무배란(다낭난소증후군 등)",
+      "— 자궁내막 보호(주기적",
+      "프로게스틴)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 830.0
+    },
+    {
+     "id": "end_fha",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "기능성 시상하부 무월경 —",
+      "골밀도 저하 위험, 에너지",
+      "균형 회복이 먼저"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 994.0
+    },
+    {
+     "id": "end_mri",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "뇌 MRI — 구조 원인(종양 ·",
+      "침윤 질환) 배제"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 994.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "preg",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "preg",
+     "to": "end_preg",
+     "points": [
+      [
+       194.3,
+       193.0
+      ],
+      [
+       194.3,
+       203.0
+      ],
+      [
+       114.0,
+       203.0
+      ],
+      [
+       114.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "preg",
+     "to": "labs",
+     "points": [
+      [
+       259.7,
+       193.0
+      ],
+      [
+       259.7,
+       209.0
+      ],
+      [
+       340.0,
+       209.0
+      ],
+      [
+       340.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "labs",
+     "to": "fsh",
+     "points": [
+      [
+       340.0,
+       340.0
+      ],
+      [
+       340.0,
+       350.0
+      ],
+      [
+       227.0,
+       350.0
+      ],
+      [
+       227.0,
+       406.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "fsh",
+     "to": "end_poi",
+     "points": [
+      [
+       178.0,
+       453.0
+      ],
+      [
+       178.0,
+       463.0
+      ],
+      [
+       114.0,
+       463.0
+      ],
+      [
+       114.0,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 499.0
+     }
+    },
+    {
+     "from": "fsh",
+     "to": "estro",
+     "points": [
+      [
+       227.0,
+       453.0
+      ],
+      [
+       227.0,
+       469.0
+      ],
+      [
+       452,
+       469.0
+      ],
+      [
+       452,
+       637.0
+      ],
+      [
+       194.3,
+       637.0
+      ],
+      [
+       194.3,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음~정상"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 165.1,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "fsh",
+     "to": "info",
+     "points": [
+      [
+       276.0,
+       453.0
+      ],
+      [
+       276.0,
+       475.0
+      ],
+      [
+       340.0,
+       475.0
+      ],
+      [
+       340.0,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "경계 · 한 번만 측정"
+      ],
+      "w": 106.3,
+      "h": 17,
+      "x": 286.8,
+      "y": 499.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "estro",
+     "points": [
+      [
+       340.0,
+       617.0
+      ],
+      [
+       340.0,
+       627.0
+      ],
+      [
+       259.7,
+       627.0
+      ],
+      [
+       259.7,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "확인 뒤"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 237.3,
+      "y": 643.0
+     }
+    },
+    {
+     "from": "estro",
+     "to": "end_pcos",
+     "points": [
+      [
+       194.3,
+       764.0
+      ],
+      [
+       194.3,
+       774.0
+      ],
+      [
+       114.0,
+       774.0
+      ],
+      [
+       114.0,
+       830.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 810.0
+     }
+    },
+    {
+     "from": "estro",
+     "to": "fha",
+     "points": [
+      [
+       259.7,
+       764.0
+      ],
+      [
+       259.7,
+       780.0
+      ],
+      [
+       340.0,
+       780.0
+      ],
+      [
+       340.0,
+       830.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 810.0
+     }
+    },
+    {
+     "from": "fha",
+     "to": "end_fha",
+     "points": [
+      [
+       307.3,
+       928.0
+      ],
+      [
+       307.3,
+       938.0
+      ],
+      [
+       114.0,
+       938.0
+      ],
+      [
+       114.0,
+       994.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 974.0
+     }
+    },
+    {
+     "from": "fha",
+     "to": "end_mri",
+     "points": [
+      [
+       372.7,
+       928.0
+      ],
+      [
+       372.7,
+       944.0
+      ],
+      [
+       340.0,
+       944.0
+      ],
+      [
+       340.0,
+       994.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오 · 비전형"
+      ],
+      "w": 87.9,
+      "h": 17,
+      "x": 296.1,
+      "y": 974.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "3개월 이상 무월경(이전 주기가 불규칙했으면 6개월)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "β-hCG 는?"
+     }
+    ]
+   },
+   {
+    "id": "preg",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "β-hCG 는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 3,
+      "toText": "임신"
+     },
+     {
+      "label": "음성",
+      "to": 4,
+      "toText": "TSH · 프롤락틴 · FSH(± LH · 에스트라디올) · 안드로겐 과다 징후"
+     }
+    ]
+   },
+   {
+    "id": "end_preg",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "임신",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "labs",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "TSH · 프롤락틴 · FSH(± LH · 에스트라디올) · 안드로겐 과다 징후",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "FSH 는?"
+     }
+    ]
+   },
+   {
+    "id": "fsh",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "FSH 는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "높음",
+      "to": 6,
+      "toText": "일차 난소부전 — 핵형 · FMR1 · 골밀도"
+     },
+     {
+      "label": "낮음~정상",
+      "to": 8,
+      "toText": "에스트로겐이 있는가? (소퇴 출혈 · 안드로겐 과다 · 다낭 난소)"
+     },
+     {
+      "label": "경계 · 한 번만 측정",
+      "to": 7,
+      "toText": "한 번의 FSH · 에스트라디올로 애매하다 — 반복 측정, 또는 소퇴 출혈로 에스트로겐 상태를 확인"
+     }
+    ]
+   },
+   {
+    "id": "end_poi",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "일차 난소부전 — 핵형 · FMR1 · 골밀도",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "한 번의 FSH · 에스트라디올로 애매하다 — 반복 측정, 또는 소퇴 출혈로 에스트로겐 상태를 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "확인 뒤",
+      "to": 8,
+      "toText": "에스트로겐이 있는가? (소퇴 출혈 · 안드로겐 과다 · 다낭 난소)"
+     }
+    ]
+   },
+   {
+    "id": "estro",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "에스트로겐이 있는가? (소퇴 출혈 · 안드로겐 과다 · 다낭 난소)",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 9,
+      "toText": "에스트로겐 있는 무배란(다낭난소증후군 등) — 자궁내막 보호(주기적 프로게스틴)"
+     },
+     {
+      "label": "없음",
+      "to": 10,
+      "toText": "에너지 결핍 · 스트레스 · 체중 감소가 있고, 두통 · 시야 이상 · 다른 시상하부 징후 · 고프롤락틴이 없는가?"
+     }
+    ]
+   },
+   {
+    "id": "end_pcos",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "에스트로겐 있는 무배란(다낭난소증후군 등) — 자궁내막 보호(주기적 프로게스틴)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "fha",
+    "num": 10,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "에너지 결핍 · 스트레스 · 체중 감소가 있고, 두통 · 시야 이상 · 다른 시상하부 징후 · 고프롤락틴이 없는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 11,
+      "toText": "기능성 시상하부 무월경 — 골밀도 저하 위험, 에너지 균형 회복이 먼저"
+     },
+     {
+      "label": "아니오 · 비전형",
+      "to": 12,
+      "toText": "뇌 MRI — 구조 원인(종양 · 침윤 질환) 배제"
+     }
+    ]
+   },
+   {
+    "id": "end_fha",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "기능성 시상하부 무월경 — 골밀도 저하 위험, 에너지 균형 회복이 먼저",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "end_mri",
+    "num": 12,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "뇌 MRI — 구조 원인(종양 · 침윤 질환) 배제",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0009"
+  ],
+  "hasErrors": false
+ },
  "cn.obgyn.gestational-diabetes.insulin-indication": {
   "id": "cn.obgyn.gestational-diabetes.insulin-indication",
   "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
@@ -22948,6 +29800,1013 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0089"
+  ],
+  "hasErrors": false
+ },
+ "cn.obgyn.intrapartum-fhr.nichd-category": {
+  "id": "cn.obgyn.intrapartum-fhr.nichd-category",
+  "title": "분만 중 태아심박동 기록 — 네 요소를 차례로 읽어 NICHD 범주를 정하고, 범주가 대응을 정한다",
+  "objective": "분만 중 태아심박동 기록에서 기저선·변이도·가속·감속을 차례로 읽어 NICHD 3단계 범주(I·II·III)를 정하고, 범주에 맞는 대응(일상 감시 · 원인 교정과 자궁내 소생술 · 신속 분만)을 고른다",
+  "objectiveKind": "감별",
+  "condition": "분만 중 전자태아감시(태아심박동 기록)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a17fe9bd687cd803",
+  "summary": [
+   "태아심박동 기록은 네 요소를 정해진 순서로 읽는다 — 기저선(10분 창의 평균, 5/분 단위) → 변이도 → 가속 → 감속(모양과 수축과의 시간 관계, 반복 여부) [[?nichd-2008]].",
+   "범주 I 은 네 조건을 **모두** 채울 때만이다: 기저 110–160/분 · 변이도 중등도(6–25/분) · 후기·가변감속 없음(조기감속·가속은 있든 없든). 하나라도 벗어나면 범주 II 다 [[?nichd-2008]].",
+   "범주 III 은 좁다: 변이도 소실 + (반복 후기감속 · 반복 가변감속 · 서맥 가운데 하나), 또는 사인파형. 나머지는 모두 범주 II(불확정) — 빈맥·최소 변이도·단발 감속도 여기다 [[?nichd-2008]].",
+   "예후의 무게는 심박수가 아니라 변이도에 있다. 중등도 변이도나 가속이 있으면 그 시점의 태아 대사성 산증 가능성이 매우 낮다 — 그래서 「빈맥 + 중등도 변이도」는 범주 II 이지만 응급 분만 대상이 아니다 [[?nichd-2008]].",
+   "대응은 범주가 정한다: 범주 I → 일상 감시 · 범주 II → 원인 찾기(발열·수축 과다·저혈압·약물)와 자궁내 소생술, 계속 재평가 · 범주 III → 소생술과 동시에 신속 분만 준비 [[?acog-pb116]]. 지연임신·초산 같은 배경은 기록을 대신하지 못한다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>분만 중 전자태아감시는 태아심박동과 자궁수축을 함께 기록해, 진통이라는 반복되는 산소 공급 감소를 태아가 견디고 있는지 판단하는 검사다. 이 정리본의 목표는 기록을 <strong>네 요소(기저선·변이도·가속·감속)로 쪼개 읽고, NICHD 3단계 범주를 정해, 범주에 맞는 대응을 고르는 것</strong>이다 <sup>[1†]</sup>. 태아 부정맥 진단이나 진통 이상(분만 정지) 자체는 범위 밖이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 기능.</strong> 태아 심박수는 동방결절의 고유 속도에 교감·부교감 신경의 끊임없는 조절이 얹힌 결과다. 뇌간과 대뇌피질이 산소를 충분히 받는 동안 자율신경은 박동마다 속도를 조금씩 바꾸고(변이도), 태아가 움직이면 교감 신경이 속도를 잠깐 올린다(가속). 자궁수축은 근육층을 지나는 나선동맥을 눌러 태반 사이 공간의 혈류를 잠시 줄이지만, 정상 태반의 예비력은 수축 사이의 회복으로 그 부족을 메운다.</p>\n<p><strong>이상이 생기는 기전.</strong> 세 가지 길이 있다. ① <strong>머리 압박</strong> — 두개 내압이 오르면 미주 반사로 수축과 동시에 심박이 완만히 떨어졌다 돌아온다(조기감속, 무해). ② <strong>제대 압박</strong> — 제대정맥·동맥이 눌리면 압수용체 반사로 심박이 <strong>급격히</strong> 떨어진다(가변감속). 양수과소·양막 파열 뒤 흔하다. ③ <strong>자궁태반 관류 부족</strong> — 수축 동안 산소가 모자라면 화학수용체를 거쳐 수축 정점이 <strong>지난 뒤</strong> 완만하게 떨어지고 늦게 회복한다(후기감속). 저산소가 계속되면 대사성 산증이 쌓이고 중추신경이 억제되어 <strong>변이도가 줄다가 사라진다</strong> — 그래서 변이도가 산증의 가장 중요한 창이다 <sup>[1†]</sup>.</p>\n<p><strong>심박수 자체의 변화.</strong> 빈맥은 대개 태아 밖의 자극(산모 발열·자궁내 감염, 탈수, β 작용제, 갑상선항진)이나 태아 빈혈·빈맥성 부정맥에서 온다. 변이도가 유지되면 자율신경이 제대로 일한다는 뜻이라, 빈맥만으로 산증을 뜻하지 않는다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>기저선</strong> — 10분 창에서 가속·감속·현저 변이 구간을 뺀 평균을 5/분 단위로 반올림하고, 2분 이상 안정된 구간이 필요하다. 110–160 정상, 160 초과 빈맥, 110 미만 서맥 <sup>[1†]</sup>. 눈금선(150·160·180)에 대 보고 읽는다.</li>\n<li><strong>변이도</strong> — 진폭으로 등급을 매긴다: 소실 · 최소(≤5) · 중등도(6–25) · 현저(&gt;25). 중등도면 그 시점의 산증 가능성이 매우 낮다 <sup>[1†]</sup>.</li>\n<li><strong>가속</strong> — 32주 이후 15/분·15초 이상. 있으면 산증을 거의 배제한다.</li>\n<li><strong>감속</strong> — 모양(완만 vs 급격)과 수축과의 시간 관계(동시 vs 정점 뒤)로 조기·후기·가변을 가르고, 20분 동안 수축의 절반 이상에 동반되면 「반복」이다. 15초 미만의 짧은 하강은 감속으로 세지 않는다 <sup>[1†]</sup>.</li>\n<li><strong>사인파형</strong> — 3–5회/분의 매끄러운 규칙 파동이 20분 이상, 변이도 없음. 태아 빈혈에서 전형적이다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>범주를 가르는 규칙은 비대칭이다 — 범주 I 은 조건을 <strong>모두</strong> 채워야 하고, 범주 III 은 <strong>특정 조합</strong>만 들어가며, 나머지는 <strong>모두</strong> 범주 II 다 <sup>[1†]</sup>. 그래서 좋아 보이는 기록도 한 요소(예: 기저선 165)가 벗어나면 범주 II 이고, 나빠 보이는 기록도 변이도가 남아 있으면 범주 III 이 아니다. 판정 순서를 「범주 III 조합이 있나 → 범주 I 을 모두 채우나 → 나머지는 II」로 두면 틀리지 않는다(도식).</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>외부 감시</strong>(도플러 + 토코): 비침습이지만 산모 심박을 잡거나 신호가 끊길 수 있고, 토코는 수축의 <strong>빈도와 시간</strong>만 보여 준다(강도는 아님).</li>\n<li><strong>내부 감시</strong>: 태아 두피 전극(신호가 나쁠 때), 자궁내압 카테터(수축 강도가 필요할 때) — 양막 파열 뒤에만 쓸 수 있다.</li>\n<li><strong>범주 II 에서 산증 여부 확인</strong>: 두피 자극으로 가속이 유도되면 산증 가능성이 낮다. 태아 두피 혈액 pH 는 일부 기관에서 쓰는 보조 검사다.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>범주 I</strong> — 일상 감시. 산모의 주수(지연임신)나 위험 배경은 감시를 지속할 이유이지, 정상 기록을 건너뛰고 개입할 근거가 아니다 <sup>[4†]</sup>.</li>\n<li><strong>범주 II</strong> — 원인을 찾고(체온, 혈압, 수축 빈도, 약물) 원인에 맞춰 <strong>자궁내 소생술</strong>을 한다: 측와위(대정맥 압박 해소·제대 압박 이동), 수액, 수축 과다면 옥시토신 중단·자궁이완제, 양막 파열 뒤 반복 가변감속이 계속되면 양수주입 <sup>[3†]</sup>. 중등도 변이도·가속이 있으면 감시를 이어 간다.</li>\n<li><strong>범주 III</strong> — 소생술을 하면서 호전되지 않으면 분만을 서두른다(방법은 진통 단계에 따라) <sup>[3†]</sup>.</li>\n<li><strong>반응 확인·재평가</strong>: 조치 뒤 기록을 다시 읽어 범주를 새로 매긴다. 범주 II 에서 변이도가 최소·소실로 떨어지거나 감속이 반복·심화되면 대응 수위를 올리고, 소생술로 감속이 사라지고 변이도가 유지되면 감시로 돌아간다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>범주는 「I = 모두 · III = 특정 조합 · II = 나머지」. 기저선 하나가 벗어나도 I 이 아니다.</li>\n<li>변이도가 가장 무거운 소견이다 — 중등도 변이도·가속은 그 시점의 산증을 거의 배제한다.</li>\n<li>대응은 범주를 따른다: I 감시 · II 원인 교정·소생술·재평가 · III 소생술 + 신속 분만.</li>\n<li>양수주입은 양막 파열 뒤 반복 가변감속에만, 옥시토신은 후기감속·수축 과다에서 멈춘다.</li>\n<li>이 슬롯(분만)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. NICHD 2008·ACOG 진료지침은 원문을 열지 못해 서지만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "왜 범주 II 가 그렇게 넓은가",
+    "deep": true,
+    "html": "<p>분만 중 감시의 목적은 「산증이 생기기 전에 알아채는 것」인데, 기록이 산증을 <strong>확실히 배제</strong>하는 경우(범주 I)와 <strong>강하게 시사</strong>하는 경우(범주 III)는 둘 다 좁다. 그 사이의 대부분은 태아가 스트레스에 반응하고 있지만 아직 보상 중인 상태라, 기록 하나로 정답을 내릴 수 없다. 그래서 NICHD 는 이 넓은 영역을 「불확정」으로 묶고 <strong>변이도·가속이라는 보상의 증거</strong>로 다시 가르게 했다 <sup>[1†]</sup>. 시험에서 범주 II 문항이 「원인 찾기」나 「소생술」을 답으로 두고, 범주 III 문항만 「분만을 서두름」을 답으로 두는 이유다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "NICHD 3단계 범주 — 무엇이 범주를 가르나",
+    "columns": [
+     "범주",
+     "기저선",
+     "변이도",
+     "감속",
+     "뜻",
+     "대응"
+    ],
+    "rows": [
+     [
+      "I",
+      "110–160/분",
+      "중등도(6–25)",
+      "후기·가변 없음(조기 허용)",
+      "그 시점 산-염기 정상 <sup>[1†]</sup>",
+      "일상 감시"
+     ],
+     [
+      "II",
+      "빈맥·서맥(변이도 있음) 포함",
+      "최소·현저, 또는 소실(반복 감속 없이)",
+      "단발·반복 감속(변이도 있음), 지속감속",
+      "불확정 — 산증을 단정도 배제도 못함",
+      "원인 찾기 · 자궁내 소생술 · 재평가 <sup>[3†]</sup>"
+     ],
+     [
+      "III",
+      "서맥(변이도 소실과 함께)",
+      "소실",
+      "반복 후기·반복 가변",
+      "산증 위험 높음 <sup>[1†]</sup>",
+      "소생술 + 신속 분만 준비 <sup>[3†]</sup>"
+     ],
+     [
+      "III(사인파형)",
+      "—",
+      "변이 대신 매끄러운 파동 3–5회/분, 20분 이상",
+      "—",
+      "태아 빈혈 등",
+      "신속 평가·분만 준비"
+     ]
+    ],
+    "note": "범주 I 은 「모두」, 범주 III 은 「특정 조합」, 범주 II 는 「그 밖의 전부」 — 그래서 범주 II 가 가장 넓다. 모든 정의는 NICHD 2008 보고서(원문 미대조 †)."
+   },
+   {
+    "title": "심박수 이상 vs 변이도 이상 — 무게가 다르다",
+    "columns": [
+     "소견",
+     "주된 원인",
+     "산증의 신호인가"
+    ],
+    "rows": [
+     [
+      "빈맥(&gt;160) + 중등도 변이도",
+      "산모 발열·자궁내 감염, 탈수, β 작용제, 갑상선항진, 태아 빈혈",
+      "아니다 — 원인을 교정하며 감시"
+     ],
+     [
+      "변이도 최소·소실",
+      "저산소로 인한 중추 억제, 수면 주기, 마약·황산마그네슘",
+      "지속되면 그렇다 — 가장 무게가 큰 소견"
+     ],
+     [
+      "반복 후기감속",
+      "자궁태반 관류 부족",
+      "변이도가 함께 줄면 그렇다"
+     ],
+     [
+      "반복 가변감속",
+      "제대 압박(양수과소·양막 파열 뒤)",
+      "깊어지고 변이도가 줄면 그렇다"
+     ]
+    ],
+    "note": "원인 목록은 문항 해설의 서술을 정리한 것이다 — 원문 대조 전(검토 항목)."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "빈맥 + 중등도 변이도 vs 최소 변이도 + 반복 가변감속 — 「빈맥이면 나쁜 기록」",
+    "point": "범주는 네 요소를 따로 읽어 맞춘다. 기저선이 160/분을 넘으면 그것만으로 범주 I 에서 빠져 범주 II 가 되지만, 변이도가 6–25/분이고 수축 뒤 감속이 없으면 「최소 변이도」나 「반복 가변감속」이라는 말을 붙일 근거가 없다. 변이도는 진폭으로(5/분 이하 = 최소), 가변감속은 15/분 이상·15초 이상의 급격한 하강이 수축의 절반 이상에 동반될 때(반복)만 쓴다 <sup>[1†]</sup>.",
+    "exception": "빈맥과 함께 변이도가 5/분 이하로 줄거나 수축마다 급격한 하강이 생기면 그때는 최소 변이도·반복 가변감속이 되고, 변이도까지 사라지면 범주 III 으로 간다.",
+    "cites": ""
+   },
+   {
+    "contrast": "안심되는 변이도·가속 vs 범주 I — 「좋아 보이면 범주 I」",
+    "point": "범주 I 은 기저선 110–160/분이라는 조건을 포함한다. 변이도·가속이 아무리 좋아도 기저선이 범위를 벗어나면 범주 II 다 — 기록의 눈금(150·160·180 선)에 기저선을 먼저 대 본다 <sup>[1†]</sup>.",
+    "exception": "범주 II 라도 중등도 변이도·가속이 있으면 산증 가능성은 낮다 — 범주와 산증 위험은 같은 말이 아니다.",
+    "cites": ""
+   },
+   {
+    "contrast": "정상 기록의 지연임신 vs 응급 제왕절개 — 「42주·위험 배경이니 개입」",
+    "point": "응급 분만은 범주 III 이거나 범주 II 가 자궁내 소생술에도 악화될 때의 대응이다 <sup>[3†]</sup>. 진통이 이미 시작된 지연임신에서 태아가 진통을 견디는지는 기록이 답한다 — 기저 정상·중등도 변이도·가속·반복 감속 없음(범주 I)이면 일상 감시하며 진통을 지켜본다. 산모의 주수·위험 배경은 감시의 강도를 올릴 이유이지 기록을 건너뛴 개입의 근거가 아니다 <sup>[4†]</sup>.",
+    "exception": "같은 산모에서 변이도가 사라지고 반복 후기감속이나 지속 서맥이 나타나면 범주 III 로 분만을 서두른다.",
+    "cites": ""
+   },
+   {
+    "contrast": "산소·좌측와위 vs 경과 관찰 — 「해가 없으니 해 두자」",
+    "point": "자궁내 소생술은 교정할 이상(후기감속·반복 가변감속·변이도 감소·수축 과다)이 있을 때의 대응이다. 범주 I 기록에는 교정할 대상이 없으므로 시험은 일상 감시를 답으로 둔다 <sup>[3†]</sup>.",
+    "exception": "범주 II 의 반복 후기감속이 나타나면 체위 변경·수액·옥시토신 중단이 첫 대응이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "양수주입 vs 체위·산소 — 「가변감속이면 양수주입」",
+    "point": "양수주입은 양막이 파열된 뒤 제대 압박으로 반복 가변감속이 생기고 다른 소생술로 호전되지 않을 때 쓴다. 양막이 온전하거나 감속이 없으면 적응이 아니다 <sup>[3†]</sup>.",
+    "exception": "후기감속(관류 부족)에는 양수주입이 원인을 다루지 못한다 — 체위·수액·수축 조절이 먼저다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "범주는 판정 시점의 것이다 — 범주 I 이던 기록도 몇 분 뒤 범주 II·III 로 바뀔 수 있어 매 평가마다 다시 매긴다.",
+   "32주 전에는 가속 기준이 10/분·10초로 낮다 <sup>[1†]</sup>.",
+   "자궁내 소생술의 구체 조치(체위 · 수액 · 옥시토신 중단 · 자궁이완제 · 양막 파열 뒤 반복 가변감속의 양수주입)는 원인에 맞춰 고른다 <sup>[3†]</sup>.",
+   "외부 토코는 수축의 빈도와 시간만 보여 준다 — 진폭으로 수축 강도를 판단하지 않는다."
+  ],
+  "criteria": [
+   {
+    "id": "fhr-baseline",
+    "name": "기저 심박수의 정의",
+    "kind": "정의",
+    "population": "분만 중 태아심박동 기록",
+    "statement": "10분 창에서 가속·감속·현저한 변이 구간을 빼고 5/분 단위로 반올림한 평균이며, 그 창에서 적어도 2분 동안 확인돼야 한다. 정상 110–160/분, 160/분 초과는 빈맥, 110/분 미만은 서맥 [[?nichd-2008]]",
+    "exceptions": "한 창에서 2분 이상 안정된 구간이 없으면 기저선은 「판정 불가」다 — 앞 10분 창을 참고한다",
+    "source": "nichd-2008",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "fhr-variability",
+    "name": "기저 변이도의 등급",
+    "kind": "정의",
+    "population": "분만 중 태아심박동 기록",
+    "statement": "변이도는 진폭(정점–바닥)으로 등급을 매긴다: 소실(보이지 않음) · 최소(5/분 이하) · 중등도(6–25/분) · 현저(25/분 초과) [[?nichd-2008]]",
+    "exceptions": "사인파형은 규칙적이고 매끄러운 파동이라 변이도로 세지 않는다",
+    "source": "nichd-2008",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "fhr-accel-decel",
+    "name": "가속과 감속의 정의",
+    "kind": "정의",
+    "population": "분만 중 태아심박동 기록",
+    "statement": "가속 — 32주 이후 15/분 이상·15초 이상(32주 전 10/분·10초). 조기·후기감속 — 시작에서 바닥까지 30초 이상 걸리는 완만한 감속으로, 조기는 바닥이 수축 정점과 겹치고 후기는 정점 뒤에 온다. 가변감속 — 30초 안에 떨어지는 급격한 감속, 15/분 이상·15초 이상·2분 미만. 지속감속 — 2분 이상 10분 미만. 「반복」 = 20분 동안 수축의 50 % 이상에 동반 [[?nichd-2008]]",
+    "exceptions": "15초 미만·15/분 미만의 짧은 하강은 감속으로 세지 않는다",
+    "source": "nichd-2008",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "nichd-three-tier",
+    "name": "NICHD 3단계 범주",
+    "kind": "분류",
+    "population": "분만 중 태아심박동 기록",
+    "statement": "범주 I — 기저 110–160, 변이도 중등도, 후기·가변감속 없음(조기감속·가속 유무 무관). 범주 III — 변이도 소실과 반복 후기감속·반복 가변감속·서맥 중 하나, 또는 사인파형. 범주 II — 나머지 전부 [[?nichd-2008]]",
+    "exceptions": "범주는 그 시점의 판정이다 — 기록은 계속 바뀌므로 범주도 다시 매긴다",
+    "source": "nichd-2008",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "category-management",
+    "name": "범주별 대응",
+    "kind": "치료 권고",
+    "population": "분만 중 지속 전자태아감시",
+    "statement": "범주 I 은 일상 감시. 범주 II 는 원인 평가와 감시 지속, 필요하면 자궁내 소생술(체위 변경, 수액, 수축 과다면 옥시토신 중단·자궁이완제, 반복 가변감속이면 양수주입)을 하고 재평가한다. 범주 III 은 소생술을 하면서 호전되지 않으면 분만을 서두른다 [[?acog-pb116]] [[?acog-pb106]]",
+    "exceptions": "범주 II 에서 중등도 변이도나 가속이 있으면 산증 가능성이 낮아 감시를 이어 가는 쪽이다 — 변이도가 최소·소실로 떨어지거나 감속이 반복되면 대응 수위를 올린다",
+    "source": "acog-pb116",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "nichd-2008",
+    "org": "Eunice Kennedy Shriver National Institute of Child Health and Human Development · ACOG · SMFM (workshop)",
+    "title": "The 2008 National Institute of Child Health and Human Development Workshop Report on Electronic Fetal Monitoring: Update on Definitions, Interpretation, and Research Guidelines",
+    "kind": "guideline",
+    "citation": "Macones GA, Hankins GDV, Spong CY, Hauth J, Moore T. Obstet Gynecol 2008;112(3):661-666",
+    "checked": "서지만(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 기저선·변이도·가속·감속 정의와 3단계 범주 표의 원문 문구를 대조하지 못했다. DOI 도 접근이 막혀 확인하지 못한 값이다. 정의 수치는 문항 해설(imaging-2026-0032·0048)이 이 보고서를 근거로 적은 것과 일치시켰다",
+    "doi": "10.1097/AOG.0b013e3181841395",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2008",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1097/AOG.0b013e3181841395"
+   },
+   {
+    "id": "acog-pb106",
+    "org": "American College of Obstetricians and Gynecologists",
+    "title": "ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring — Nomenclature, Interpretation, and General Management Principles",
+    "kind": "guideline",
+    "citation": "Obstet Gynecol 2009;114(1):192-202",
+    "checked": "서지만(원문 미대조 — 검토 항목). 범주별 일반 관리 원칙의 원문 문구와 DOI 를 확인하지 못했다",
+    "doi": "10.1097/AOG.0b013e3181aef106",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1097/AOG.0b013e3181aef106"
+   },
+   {
+    "id": "acog-pb116",
+    "org": "American College of Obstetricians and Gynecologists",
+    "title": "ACOG Practice Bulletin No. 116: Management of Intrapartum Fetal Heart Rate Tracings",
+    "kind": "guideline",
+    "citation": "Obstet Gynecol 2010;116(5):1232-1240",
+    "checked": "서지만(원문 미대조 — 검토 항목). 자궁내 소생술 표(체위·수액·옥시토신 중단·양수주입)·범주 II 관리 도식의 원문을 대조하지 못했다. DOI 는 접근이 막혀 확인하지 못한 값이다",
+    "doi": "10.1097/AOG.0b013e3182004fa9",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2010",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1097/AOG.0b013e3182004fa9"
+   },
+   {
+    "id": "acog-pb146",
+    "org": "American College of Obstetricians and Gynecologists",
+    "title": "ACOG Practice Bulletin No. 146: Management of Late-Term and Postterm Pregnancies",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "번호·제목·연도만(원문 미대조 — 검토 항목). 41주 이후 산전 감시·41–42주 유도 권고의 원문 문구, 이후 개정 여부를 확인하지 못했다. url 은 ACOG 진료지침 목록 쪽이다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2014",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin"
+   }
+  ],
+  "checks": [
+   {
+    "q": "범주 I 의 조건 넷은?",
+    "a": "기저 110–160/분, 변이도 중등도(6–25/분), 후기감속 없음, 가변감속 없음(조기감속·가속 유무는 무관)."
+   },
+   {
+    "q": "범주 III 에 드는 두 가지 형태는?",
+    "a": "변이도 소실과 함께 반복 후기감속·반복 가변감속·서맥 중 하나, 또는 사인파형."
+   },
+   {
+    "q": "기저 165/분, 변이도 8/분, 가속 있음, 감속 없음 — 범주는?",
+    "a": "범주 II(빈맥). 산증 가능성은 낮고, 산모 발열·감염·탈수·약물 등 원인을 찾으며 감시한다."
+   },
+   {
+    "q": "중등도 변이도가 가진 뜻은?",
+    "a": "그 시점에 태아 대사성 산증 가능성이 매우 낮다는 뜻이다 — 가속이 있으면 더 확실하다."
+   },
+   {
+    "q": "응급 분만을 고르는 기록은?",
+    "a": "범주 III, 또는 범주 II 가 자궁내 소생술에도 악화될 때."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.obgyn.intrapartum-fhr.nichd-category#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 기저선만 정상 범위로",
+    "stem": "A 26-year-old woman, gravida 1, para 0, at 40 weeks' gestation is in active labor with continuous external fetal monitoring. Her temperature is 37.0°C (98.6°F). Over a 10-minute window, the fetal heart rate baseline is 140/min with an amplitude of fluctuation of about 10/min. Two rises of 20/min lasting about 30 seconds each are seen. Contractions occur every 3 minutes, and none is followed by a fall in heart rate. Which of the following best describes this tracing according to the NICHD three-tier system?",
+    "options": [
+     "Category I",
+     "Category II because of fetal tachycardia",
+     "Category II because of minimal variability",
+     "Category III because of recurrent variable decelerations",
+     "Category III because of a sinusoidal pattern"
+    ],
+    "answer": 1,
+    "explanation": "Baseline 140/min lies within 110–160/min, fluctuation of about 10/min is moderate variability (6–25/min), the rises meet the acceleration definition (≥15/min for ≥15 s after 32 weeks), and there are no late or variable decelerations — every Category I condition is met [[?nichd-2008]]. In the original item the baseline sat above 160/min; that single element moved an otherwise reassuring tracing into Category II. Variability here is not minimal (≤5/min), and there are no decelerations or regular sine waves.",
+    "of": "imaging-2026-0032",
+    "changed": "기저선 「160/분 선 위(≈163)」를 「140/분 안팎」으로 바꾸고 나머지(중등도 변이도·가속·감속 없음)는 그대로 → 기저선 조건이 채워져 답이 「범주 II 빈맥」에서 「범주 I」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.intrapartum-fhr.nichd-category#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 발열 산모의 빈맥",
+    "stem": "A 31-year-old woman, gravida 3, para 2, at 39 weeks' gestation has had ruptured membranes for 20 hours and is now in labor. Her temperature is 38.4°C (101.1°F). Continuous external fetal monitoring over 10 minutes shows a baseline of 170/min with fluctuations of 10–15/min and one rise of 18/min lasting 25 seconds. Contractions occur every 4 minutes without any associated fall in fetal heart rate. Which of the following best describes this tracing according to the NICHD three-tier system?",
+    "options": [
+     "Category I: normal baseline with moderate variability",
+     "Category II: fetal tachycardia with moderate variability and no decelerations",
+     "Category II: minimal variability with recurrent late decelerations",
+     "Category III: absent variability with fetal tachycardia",
+     "Category III: sinusoidal pattern"
+    ],
+    "answer": 2,
+    "explanation": "A baseline above 160/min for the 10-minute window is fetal tachycardia, which excludes Category I; variability of 10–15/min is moderate and there are no decelerations, so nothing places it in Category III [[?nichd-2008]]. The fever, prolonged rupture of membranes and multiparity change the story, not the reading — the likely cause (intra-amniotic infection) is sought and treated while monitoring continues. Minimal variability requires amplitude ≤5/min, and Category III requires absent variability with recurrent decelerations or bradycardia, or a sinusoidal pattern.",
+    "of": "imaging-2026-0032",
+    "changed": "산모 나이·경산 여부·양막 파열·산모 발열(38.4 ℃)을 새로 넣고 기저선 수치를 170/분으로 바꿨지만 「기저 >160 · 변이도 중등도 · 감속 없음」은 그대로 → 답은 여전히 「범주 II 빈맥(변이도 중등도, 감속 없음)」",
+    "flip": false
+   },
+   {
+    "id": "cn.obgyn.intrapartum-fhr.nichd-category#v3",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 지연임신 진통 중 반복 후기감속",
+    "stem": "30세 초산부가 임신 42주 1일에 규칙적인 진통으로 입원하였다. 자궁경부는 5 cm 개대되었고 양막은 파열되지 않았다. 옥시토신은 투여하지 않았다. 지속 전자태아감시에서 기저 태아심박동은 145회/분, 변이도는 8~12회/분이다. 최근 20분 동안 3분 간격의 자궁수축 7회 가운데 5회에서 수축 정점이 지난 뒤 완만하게 시작해 수축이 끝난 뒤 회복되는 감속(최저 125회/분)이 보인다. 산모 혈압은 100/60 mmHg 이고 반듯이 누워 있다. 가장 먼저 할 조치는?",
+    "options": [
+     "지속 감시하며 진통 경과 관찰",
+     "산소 투여와 좌측와위, 수액 투여",
+     "양수주입",
+     "응급 제왕절개술",
+     "옥시토신으로 진통 촉진"
+    ],
+    "answer": 2,
+    "explanation": "수축 정점 뒤에 최저점이 오는 완만한 감속이 수축의 절반 이상에 동반되면 반복 후기감속이다. 변이도는 중등도로 유지되어 범주 III 이 아니라 범주 II 이며, 자궁태반 관류를 높이는 자궁내 소생술(측와위로 대정맥 압박 해소·수액·산소)이 첫 대응이다 [[?acog-pb116]]. 원래 문항은 반복 감속이 없는 범주 I 이라 경과 관찰이 답이었다. 양수주입은 양막 파열 뒤 반복 가변감속의 대응이고, 응급 제왕절개는 변이도 소실이 겹치거나 소생술에도 악화될 때, 옥시토신은 관류를 더 줄이므로 금한다.",
+    "of": "imaging-2026-0048",
+    "changed": "기록을 「기저 140~145·변이도 중등도·가속·반복 감속 없음」에서 「기저 145·변이도 중등도·대부분의 수축 정점 뒤 완만한 감속 반복」으로 바꿈 → 범주 II(반복 후기감속)라 답이 「지속 감시하며 경과 관찰」에서 「산소 투여와 좌측와위(자궁내 소생술)」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.intrapartum-fhr.nichd-category#v4",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 양막 파열·조기감속이 있는 범주 I",
+    "stem": "24세 초산부가 임신 39주 2일에 진통으로 입원하였다. 2시간 전 양막이 자연 파열되었고 양수는 맑다. 자궁경부는 7 cm 개대되었다. 지속 전자태아감시에서 기저 태아심박동은 130회/분, 변이도는 10~15회/분이다. 자궁수축이 시작될 때 함께 완만하게 떨어져 수축 정점에 최저점(118회/분)을 이루고 수축이 끝나면 기저선으로 돌아오는 감속이 대부분의 수축에서 보인다. 급격한 하강이나 수축 정점 뒤에 최저점이 오는 감속은 없다. 가장 적절한 조치는?",
+    "options": [
+     "양수주입",
+     "산소 투여와 좌측와위",
+     "지속 감시하며 진통 경과 관찰",
+     "태아 두피 혈액 pH 검사",
+     "응급 제왕절개술"
+    ],
+    "answer": 3,
+    "explanation": "수축과 거울처럼 겹치는 완만한 감속은 조기감속으로, 태아 머리 압박에 의한 미주신경 반응이며 범주 I 에 허용된다. 기저 130회/분·변이도 중등도·후기·가변감속 없음이므로 범주 I 이고 일상 감시하며 진통을 지켜본다 [[?nichd-2008]]. 양막이 파열되었더라도 반복 가변감속이 없으면 양수주입의 적응이 아니고, 교정할 이상이 없어 소생술·침습 검사·응급 분만도 필요 없다.",
+    "of": "imaging-2026-0048",
+    "changed": "지연임신·경산부를 「39주 초산부·양막 파열(맑은 양수)」로, 가속 대신 「수축과 겹치는 조기감속」을 넣고 「기저 정상·변이도 중등도·후기·가변감속 없음」은 그대로 → 범주 I 이라 답은 여전히 「지속 감시하며 진통 경과 관찰」",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "분만 중 태아심박동 기록 — 범주와 대응",
+  "geo": {
+   "title": "분만 중 태아심박동 기록 — 범주와 대응",
+   "w": 468,
+   "h": 1063.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "분만 중 지속 전자태아감시 —",
+      "10분 창에서 기저선 · 변이도",
+      "· 가속 · 감속을 차례로",
+      "읽는다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "cat3",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "범주 III 소견? 변이도 소실",
+      "+ (반복 후기 · 반복 가변 ·",
+      "서맥) 또는 사인파형"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 180.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "기저선이 2분 이상 안정되지",
+      "않거나 신호가 끊긴다 —",
+      "기록을 더 보고, 필요하면",
+      "내부 감시(두피 전극·",
+      "자궁내압 카테터)"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 242.0,
+     "y": 327.0
+    },
+    {
+     "id": "cat1",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "범주 I 조건을 모두",
+      "채우는가? 기저 110–160 ·",
+      "변이도 중등도 · 후기·",
+      "가변감속 없음"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 508.0
+    },
+    {
+     "id": "cat2",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "범주 II — 원인 찾기(발열 ·",
+      "수축 과다 · 저혈압 · 약물)",
+      "+ 필요하면 자궁내 소생술"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 672.0
+    },
+    {
+     "id": "reassure",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "중등도 변이도 또는",
+      "가속(자극 유도 포함)이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 819.0
+    },
+    {
+     "id": "end1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "범주 I — 일상 감시, 진통",
+      "경과 관찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 672.0
+    },
+    {
+     "id": "end2a",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "산증 가능성 낮음 — 원인을",
+      "교정하며 감시 지속 · 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 966.0
+    },
+    {
+     "id": "end2b",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "산증을 배제하지 못함 —",
+      "소생술에 반응 없으면 분만을",
+      "서두른다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 966.0
+    },
+    {
+     "id": "end3",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "범주 III — 자궁내 소생술과",
+      "동시에 신속 분만 준비"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 327.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "cat3",
+     "points": [
+      [
+       227.0,
+       114
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cat3",
+     "to": "end3",
+     "points": [
+      [
+       178.0,
+       261.0
+      ],
+      [
+       178.0,
+       271.0
+      ],
+      [
+       114.0,
+       271.0
+      ],
+      [
+       114.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "cat3",
+     "to": "cat1",
+     "points": [
+      [
+       227.0,
+       261.0
+      ],
+      [
+       227.0,
+       277.0
+      ],
+      [
+       452,
+       277.0
+      ],
+      [
+       452,
+       462.0
+      ],
+      [
+       194.3,
+       462.0
+      ],
+      [
+       194.3,
+       508.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 488.0
+     }
+    },
+    {
+     "from": "cat3",
+     "to": "info",
+     "points": [
+      [
+       276.0,
+       261.0
+      ],
+      [
+       276.0,
+       283.0
+      ],
+      [
+       340.0,
+       283.0
+      ],
+      [
+       340.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판독 불가"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "cat1",
+     "points": [
+      [
+       340.0,
+       442.0
+      ],
+      [
+       340.0,
+       452.0
+      ],
+      [
+       259.7,
+       452.0
+      ],
+      [
+       259.7,
+       508.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판독 가능해짐"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 220.8,
+      "y": 468.0
+     }
+    },
+    {
+     "from": "cat1",
+     "to": "end1",
+     "points": [
+      [
+       194.3,
+       606.0
+      ],
+      [
+       194.3,
+       616.0
+      ],
+      [
+       114.0,
+       616.0
+      ],
+      [
+       114.0,
+       672.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 충족"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 86.1,
+      "y": 652.0
+     }
+    },
+    {
+     "from": "cat1",
+     "to": "cat2",
+     "points": [
+      [
+       259.7,
+       606.0
+      ],
+      [
+       259.7,
+       622.0
+      ],
+      [
+       340.0,
+       622.0
+      ],
+      [
+       340.0,
+       672.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나라도 벗어남"
+      ],
+      "w": 88.7,
+      "h": 17,
+      "x": 295.6,
+      "y": 652.0
+     }
+    },
+    {
+     "from": "cat2",
+     "to": "reassure",
+     "points": [
+      [
+       340.0,
+       753.0
+      ],
+      [
+       340.0,
+       763.0
+      ],
+      [
+       227.0,
+       763.0
+      ],
+      [
+       227.0,
+       819.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "reassure",
+     "to": "end2a",
+     "points": [
+      [
+       194.3,
+       900.0
+      ],
+      [
+       194.3,
+       910.0
+      ],
+      [
+       114.0,
+       910.0
+      ],
+      [
+       114.0,
+       966.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 946.0
+     }
+    },
+    {
+     "from": "reassure",
+     "to": "end2b",
+     "points": [
+      [
+       259.7,
+       900.0
+      ],
+      [
+       259.7,
+       916.0
+      ],
+      [
+       340.0,
+       916.0
+      ],
+      [
+       340.0,
+       966.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음(최소·소실 지속)"
+      ],
+      "w": 118.9,
+      "h": 17,
+      "x": 280.6,
+      "y": 946.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "분만 중 지속 전자태아감시 — 10분 창에서 기저선 · 변이도 · 가속 · 감속을 차례로 읽는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "범주 III 소견? 변이도 소실 + (반복 후기 · 반복 가변 · 서맥) 또는 사인파형"
+     }
+    ]
+   },
+   {
+    "id": "cat3",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "범주 III 소견? 변이도 소실 + (반복 후기 · 반복 가변 · 서맥) 또는 사인파형",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "범주 III — 자궁내 소생술과 동시에 신속 분만 준비"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "범주 I 조건을 모두 채우는가? 기저 110–160 · 변이도 중등도 · 후기·가변감속 없음"
+     },
+     {
+      "label": "판독 불가",
+      "to": 4,
+      "toText": "기저선이 2분 이상 안정되지 않거나 신호가 끊긴다 — 기록을 더 보고, 필요하면 내부 감시(두피 전극·자궁내압 카테터)"
+     }
+    ]
+   },
+   {
+    "id": "end3",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "범주 III — 자궁내 소생술과 동시에 신속 분만 준비",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "기저선이 2분 이상 안정되지 않거나 신호가 끊긴다 — 기록을 더 보고, 필요하면 내부 감시(두피 전극·자궁내압 카테터)",
+    "note": "",
+    "branches": [
+     {
+      "label": "판독 가능해짐",
+      "to": 5,
+      "toText": "범주 I 조건을 모두 채우는가? 기저 110–160 · 변이도 중등도 · 후기·가변감속 없음"
+     }
+    ]
+   },
+   {
+    "id": "cat1",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "범주 I 조건을 모두 채우는가? 기저 110–160 · 변이도 중등도 · 후기·가변감속 없음",
+    "note": "",
+    "branches": [
+     {
+      "label": "모두 충족",
+      "to": 6,
+      "toText": "범주 I — 일상 감시, 진통 경과 관찰"
+     },
+     {
+      "label": "하나라도 벗어남",
+      "to": 7,
+      "toText": "범주 II — 원인 찾기(발열 · 수축 과다 · 저혈압 · 약물) + 필요하면 자궁내 소생술"
+     }
+    ]
+   },
+   {
+    "id": "end1",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "범주 I — 일상 감시, 진통 경과 관찰",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cat2",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "범주 II — 원인 찾기(발열 · 수축 과다 · 저혈압 · 약물) + 필요하면 자궁내 소생술",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "중등도 변이도 또는 가속(자극 유도 포함)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "reassure",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "중등도 변이도 또는 가속(자극 유도 포함)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 9,
+      "toText": "산증 가능성 낮음 — 원인을 교정하며 감시 지속 · 재평가"
+     },
+     {
+      "label": "없음(최소·소실 지속)",
+      "to": 10,
+      "toText": "산증을 배제하지 못함 — 소생술에 반응 없으면 분만을 서두른다"
+     }
+    ]
+   },
+   {
+    "id": "end2a",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "산증 가능성 낮음 — 원인을 교정하며 감시 지속 · 재평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "end2b",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "산증을 배제하지 못함 — 소생술에 반응 없으면 분만을 서두른다",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0032",
+   "imaging-2026-0048"
   ],
   "hasErrors": false
  },
@@ -28664,6 +36523,1032 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ortho.torus-fracture.splint-no-reduction": {
+  "id": "cn.ortho.torus-fracture.splint-no-reduction",
+  "title": "소아 원위 요골 융기(torus) 골절 — 안정 골절이라 정복 없이 짧은 부목 고정",
+  "objective": "소아 손목 X선에서 원위 요골 골간단의 한쪽 피질 융기(torus/buckle)를 읽고, 전위·각형성·성장판 침범이 없는 안정 골절이므로 정복·긴 석고·수술 없이 제거 가능한 부목으로 약 3주 고정함을 고르며, 정복·석고·핀 고정이 필요한 다른 소아 손목 골절과 가른다",
+  "objectiveKind": "치료",
+  "condition": "소아 원위 요골 융기 골절",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Pediatrics",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "2c390f02221dfcda",
+  "summary": [
+   "소아 뼈는 탄성이 크고 골막이 두꺼워, 손을 짚고 넘어질 때(FOOSH) 축 방향 압박이 걸리면 부러져 갈라지기보다 골간단의 얇은 피질이 국소적으로 좌굴한다 — 이것이 융기(torus, buckle) 골절이다.",
+   "X선: 한쪽 피질의 매끈한 융기 또는 각진 꺾임 + 골간단을 가로지르는 희미한 경화선, 반대쪽 피질은 이어져 있고 전위·각형성이 없으며 성장판·골단은 정상.",
+   "피질이 압축돼 맞물린 불완전 골절이라 전위될 골편이 없다 — 본질적으로 안정 골절이다. 그래서 정복이 필요 없고, 통증 조절·보호 목적의 제거 가능한 부목을 약 3주 대는 것으로 충분하다 [[?nelson-21: Common fractures]].",
+   "처치가 달라지는 것은 「어떤 골절인가」다: 양쪽 피질이 끊기고 각형성·전위가 연령별 허용 범위를 넘으면 정복 + 석고, 골절선이 성장판을 지나면 Salter-Harris 골절로 따로 판단, 불안정·개방 골절이면 수술적 고정.",
+   "X선이 정상이어도 성장판 위 압통이 뚜렷하면 Salter-Harris I 형을 배제하지 못한다 — 정상 X선의 해석 한계다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>융기(torus, buckle) 골절은 소아 장골의 골간단에서 압박 쪽 피질이 국소적으로 좌굴해 불룩 솟은 <strong>불완전 골절</strong>이다. 원위 요골이 가장 흔한 자리다. 이 정리본의 목표는 진단명 자체보다, <strong>X선에서 융기 골절을 읽고 그것이 안정 골절이라 정복·긴 석고·수술 없이 짧은 부목 고정으로 충분함을 고르며, 처치가 달라지는 다른 소아 손목 골절과 가르는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 소아 뼈</strong>는 성인보다 물·콜라겐이 많고 무기질이 적어 탄성이 크며, 두껍고 튼튼한 골막이 겉을 싼다. 골간단은 단단한 골간 피질이 얇아지며 해면골로 넘어가는 자리라 압박에 약하다. 성장판(골단판)은 골간단과 골단 사이의 연골로, 인대보다 약해 소아 손목 손상의 또 다른 약점이다.</p>\n<p><strong>이상이 생기는 기전</strong>: 손을 짚고 넘어지면(FOOSH) 손목을 통해 요골에 축 방향 압박이 걸린다. 성인의 취약한 뼈는 여기서 골절선이 가로질러 부러지지만, 탄성이 큰 소아 뼈는 얇은 골간단 피질이 아코디언처럼 <strong>국소적으로 접히며(좌굴)</strong> 에너지를 흡수한다. 반대쪽(장력 쪽) 피질은 끊기지 않고 골막도 온전하다. 결과적으로 골절면이 서로 <strong>압축돼 맞물린 채</strong> 남아, 전위될 수 있는 떨어진 골편이 없다. 이것이 융기 골절이 본질적으로 안정 골절인 이유다.</p>\n<p>같은 기전이라도 힘이 더 크거나 방향이 비틀리면 장력 쪽 피질까지 끊긴다 — 한쪽만 끊기고 휘면 생나무 골절, 양쪽이 끊기면 완전 골간단 골절이고, 골절선이 성장판을 지나면 Salter-Harris 골절이다. 이들은 각형성·전위가 생기거나 진행할 수 있어 처치가 달라진다 <sup>[2† Fractures of the distal radius and ulna]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>손목 통증·원위 요골 압통·경한 부종, 변형 없음</strong>: 피질 좌굴은 골막 안에서 일어나 출혈·부종이 적고, 골편 전위가 없으니 눈에 보이는 변형이 없다. 만져지는 계단 모양 변형은 완전 골절 쪽 신호다.</li>\n<li><strong>신경혈관 정상</strong>: 골편이 움직이지 않으니 정중신경·요골동맥을 누를 일이 없다. 이상이 있으면 전위된 골절을 먼저 생각하고 응급 정복이 우선이다.</li>\n<li><strong>X선 — 피질 융기·꺾임</strong>: 압축된 피질이 바깥으로 불룩하거나 각지게 꺾여 보인다. 측면 사진에서 배측 피질에만 보이는 일이 있어 두 방향을 본다.</li>\n<li><strong>X선 — 골간단 경화선</strong>: 압축된 해면골 소주가 겹쳐 골간단을 가로지르는 희미한 흰 띠로 보인다.</li>\n<li><strong>X선 — 반대쪽 피질 연속, 전위·각형성 없음, 성장판·골단 정상</strong>: 안정 골절임을 보여 주는 소견이다. 이것이 치료를 정한다.</li>\n<li><strong>정상 X선의 한계</strong>: 골절선이 보이지 않아도 성장판 위 국소 압통이 뚜렷하면 전위 없는 Salter-Harris I 형을 배제하지 못한다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>X선에서 「골절이 있다」에서 멈추지 않고 「어떤 골절인가」까지 읽는다 — 표 「소아 원위 요골 손상」이 치료로 이어지는 비교다. 갈림길은 셋이다. ① <strong>반대쪽 피질이 끊겼는가</strong>(융기 vs 생나무·완전 골절), ② <strong>각형성·전위가 나이별 허용 범위를 넘는가</strong>(석고만 vs 정복), ③ <strong>골절선이 성장판을 지나는가</strong>(Salter-Harris — 성장 장애 추적). 반복 골절·설명과 맞지 않는 손상·걷기 전 영아의 골절이면 학대를 감별한다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>손목 전후면·측면 X선</strong> — 진단과 치료 결정에 충분하다. 두 방향을 봐야 배측 융기·각형성을 놓치지 않는다.</li>\n<li><strong>MRI</strong> — X선 정상인데 성장판·인대 손상이 임상적으로 의심될 때. 융기 골절이 이미 보이면 치료를 바꾸지 않는다.</li>\n<li><strong>추적 X선</strong> — 전형적 융기 골절은 필요 없다 <sup>[1† Common fractures]</sup>. 정복하지 않고 석고로 본 생나무·완전 골절은 각형성이 진행하는지 추적한다.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>선택</strong>: 전위·각형성·성장판 침범 없는 융기 골절 → <strong>정복 없이 제거 가능한 손목 부목, 약 3주</strong> <sup>[1† Common fractures]</sup>. 목적은 골편 고정이 아니라 통증 조절과 보호다. 소아의 왕성한 골막 골형성으로 수 주 안에 유합되고, 미세한 각형성은 성장하며 재형성된다.</li>\n<li><strong>하지 않는 것과 이유</strong>: 6주 석고(필요한 기간보다 길다), 도수 정복·장상지 석고(되돌릴 변형이 없고 팔꿈치 강직만 더한다), 핀 고정(적응 없음), MRI(치료를 바꾸지 않음) — 표 「융기 골절에 과한 처치」.</li>\n<li><strong>다른 골절이면</strong>: 완전·생나무 골절에서 각형성이 허용 범위를 넘거나 변형이 만져지면 도수 정복 후 석고, 정복이 유지되지 않으면 경피 핀 고정. 개방 골절·불안정 골절은 수술적 처치 <sup>[2† Fractures of the distal radius and ulna]</sup>.</li>\n<li><strong>반응 확인·재평가</strong>: 부목을 뗀 뒤 통증이 사라지면 활동을 재개한다. 통증이 지속되거나 새 변형이 생기면 재촬영해 다른 골절(생나무·SH)을 놓쳤는지 본다. X선 정상 + 성장판 압통으로 고정한 경우는 1–2주 뒤 재평가한다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「융기 골절 = 안정 골절 = 정복 없음 + 짧은 부목」. 골절의 이름이 아니라 <strong>안정성</strong>이 고정 방법과 기간을 정한다.</li>\n<li>탄력 붕대만으로도 단단한 고정과 결과가 같다는 무작위 시험(FORCE)이 있다 <sup>[3†]</sup> — 원문을 열지 못해 세부(대상 나이·결과 지표)는 대조하지 못했다(검토 항목). 문항의 정답 기준은 「제거 가능한 부목 약 3주」다.</li>\n<li>나이별 허용 각형성 수치는 교과서 원문을 대조하지 못해 넣지 않았다(검토 항목).</li>\n<li>이 슬롯(ortho.pediatric)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Nelson·Rockwood 는 서지만 남겼다(†).</li>\n</ul>"
+   },
+   {
+    "title": "왜 소아 뼈는 「부러지지 않고 접히는가」",
+    "deep": true,
+    "html": "<p>뼈는 압박에는 강하고 장력에는 약하다. 성인 피질은 무기질이 많아 단단하지만 부서지기 쉬워, 한계를 넘으면 장력 쪽에서 균열이 시작해 반대편까지 한 번에 가로지른다. 소아 피질은 무기질이 적고 콜라겐·물이 많아 소성 변형(휘어진 채 남는 변형)의 여지가 크고, 두꺼운 골막이 바깥에서 붙잡아 준다. 그래서 같은 압박이 골간단의 얇은 피질을 접는 데서 끝난다 — 융기 골절이다. 힘이 더 크면 장력 쪽만 끊기고 압박 쪽은 휘는 생나무 골절이 되고, 더 크면 완전 골절이 된다. 이 연속선에서 <strong>어느 쪽 피질이 살아 있는가</strong>가 안정성, 곧 치료를 정한다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "소아 원위 요골 손상 — X선 소견이 치료를 정한다",
+    "columns": [
+     "손상",
+     "X선 소견",
+     "안정성",
+     "치료"
+    ],
+    "rows": [
+     [
+      "융기(torus/buckle) 골절",
+      "한쪽 피질 국소 융기·꺾임 + 골간단 경화선, 반대쪽 피질 연속, 전위·각형성 없음, 성장판 정상",
+      "안정(압축돼 맞물림)",
+      "제거 가능 부목 약 3주, 정복 없음 <sup>[1† Common fractures]</sup>"
+     ],
+     [
+      "생나무(greenstick) 골절",
+      "장력 쪽 피질이 끊기고 압박 쪽 피질은 휘어짐, 각형성 동반",
+      "각형성이 진행할 수 있음",
+      "각형성이 허용 범위를 넘으면 정복 후 석고 <sup>[2† Fractures of the distal radius and ulna]</sup>"
+     ],
+     [
+      "완전 골간단 골절",
+      "양쪽 피질 단절, 골편 전위·각형성, 변형 촉지",
+      "불안정할 수 있음",
+      "도수 정복 후 석고, 유지 안 되면 핀 고정 <sup>[2† Fractures of the distal radius and ulna]</sup>"
+     ],
+     [
+      "Salter-Harris II 형",
+      "골절선이 성장판을 지나 골간단 삼각 조각 동반, 골단 전위",
+      "성장판 손상",
+      "정복 후 석고, 성장 장애 추적 <sup>[2† Fractures of the distal radius and ulna]</sup>"
+     ],
+     [
+      "X선 정상(염좌·SH I 의심)",
+      "피질 연속, 융기·경화선 없음",
+      "—",
+      "성장판 압통이 있으면 고정 후 재평가"
+     ]
+    ],
+    "note": "모두 교과서 원문 미대조(†). 허용 각도의 나이별 수치는 대조하지 못해 넣지 않았다."
+   },
+   {
+    "title": "융기 골절에 과한 처치 — 무엇이 문제인가",
+    "columns": [
+     "처치",
+     "이 골절에서",
+     "정답이 되는 상황"
+    ],
+    "rows": [
+     [
+      "긴 기간(6주) 석고",
+      "유합에 필요한 기간보다 길고 부목과 결과 차이의 이득이 없다",
+      "정복을 유지해야 하는 완전·생나무 골절"
+     ],
+     [
+      "도수 정복 + 장상지 석고",
+      "정복할 변형이 없다, 팔꿈치 강직만 더한다",
+      "각형성·전위가 허용 범위를 넘을 때"
+     ],
+     [
+      "수술(핀 고정)",
+      "안정 골절이라 적응 없음",
+      "정복 유지 실패·개방·불안정 골절"
+     ],
+     [
+      "MRI",
+      "X선이 이미 진단, 치료를 바꾸지 않음",
+      "X선 정상 + 성장판 손상 의심 지속"
+     ]
+    ],
+    "note": "골절의 이름이 아니라 안정성이 고정 방법과 기간을 정한다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "융기 골절 vs 「골절이면 석고 여러 주」",
+    "point": "골절이 보인다는 사실만으로 석고·긴 고정 기간이 정해지지 않는다. 고정의 목적은 골편이 움직이지 않게 붙이는 것인데, 융기 골절은 피질이 압축돼 맞물려 움직일 골편이 없다. 그래서 고정은 통증 조절·보호 목적이고, 제거 가능한 부목으로 약 3주면 된다 <sup>[1† Common fractures]</sup>. 6주 석고는 유합에 필요한 기간보다 길고 강직·피부 문제만 더한다.",
+    "exception": "양쪽 피질이 끊긴 완전 골절이나 생나무 골절처럼 정복 위치를 유지해야 할 때는 석고 고정이 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "융기 골절 vs 전위된 골간단 골절 — 「정복이 필요한가」",
+    "point": "정복은 전위·각형성을 되돌리는 처치다. X선에서 반대쪽 피질이 이어져 있고 전위·각형성이 없으면 되돌릴 것이 없다. 갈림길은 골절 유무가 아니라 피질 단절의 범위와 각형성이다 <sup>[2† Fractures of the distal radius and ulna]</sup>.",
+    "exception": "양쪽 피질이 끊기고 각형성이 나이별 허용 범위를 넘거나 변형이 만져지면 도수 정복 후 석고가 정답이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "영상 추가(MRI) vs X선으로 끝난 진단",
+    "point": "MRI 는 X선이 정상인데 성장판·인대 손상이 임상적으로 의심될 때 의미가 있다. X선이 이미 성장판을 비껴간 융기 골절을 보여 주면 추가 영상은 치료를 바꾸지 않는다.",
+    "exception": "X선 정상 + 성장판 위 국소 압통이 지속되면 Salter-Harris I 형을 의심해 고정 후 재평가한다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "나이가 어릴수록 남은 성장이 많아 각형성이 재형성으로 교정되는 폭이 크다 — 「허용 범위」는 나이별로 다르며 수치는 교과서 원문 미대조다.",
+   "개방 골절은 이 도식과 별개로 세척·항생제·수술적 처치가 우선이다.",
+   "융기 골절의 부목은 통증 조절이 목적이라, 통증이 가라앉으면 활동을 재개한다. 전형적 융기 골절에는 추적 X선이 필요 없다 <sup>[1† Common fractures]</sup>.",
+   "반복 골절·설명과 맞지 않는 손상·어린 영아의 골절은 학대 평가가 필요하다(이 도식 밖)."
+  ],
+  "criteria": [
+   {
+    "id": "torus-definition",
+    "name": "융기 골절의 X선 정의",
+    "kind": "정의",
+    "population": "소아 원위 요골 골간단 손상",
+    "statement": "한쪽(압박 쪽) 피질의 국소 융기·꺾임과 골간단 경화선이 있고, 반대쪽 피질이 연속이며 전위·각형성·성장판 침범이 없다 [[?rockwood-9: Fractures of the distal radius and ulna]]",
+    "exceptions": "측면 사진에서만 배측 피질 융기가 보이는 경우가 있다 — 한 방향 사진이 정상이라고 배제하지 않는다",
+    "source": "rockwood-9",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "torus-treatment",
+    "name": "융기 골절의 치료",
+    "kind": "치료 기준",
+    "population": "전위·각형성·성장판 침범이 없는 소아 원위 요골 융기 골절",
+    "statement": "정복하지 않는다. 제거 가능한 손목 부목으로 약 3주 고정하고, 통증이 가라앉으면 활동을 재개한다. 전형적 융기 골절은 추적 X선이 필요 없다 [[?nelson-21: Common fractures]]",
+    "exceptions": "무작위 시험(FORCE)은 탄력 붕대만으로도 단단한 고정과 통증·기능 결과가 같다고 보고했다 — 원문 미대조 [[?force-2022]]",
+    "source": "nelson-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "complete-metaphyseal",
+    "name": "정복이 필요한 골간단 골절",
+    "kind": "치료 기준",
+    "population": "소아 원위 요골 완전·생나무 골절",
+    "statement": "양쪽 피질 단절(완전 골절) 또는 생나무 골절에서 각형성·전위가 나이별 허용 범위를 넘거나 변형이 만져지면 도수 정복 후 석고 고정한다. 정복이 유지되지 않으면 경피 핀 고정을 더한다 [[?rockwood-9: Fractures of the distal radius and ulna]]",
+    "exceptions": "허용 각도는 나이·남은 성장 기간·각형성 평면에 따라 다르다 — 구체 수치는 원문 미대조",
+    "source": "rockwood-9",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "nelson-21",
+    "org": "Elsevier",
+    "title": "Nelson Textbook of Pediatrics, 21st ed. — Common fractures",
+    "kind": "textbook",
+    "citation": "Kliegman RM, St Geme JW III, et al (eds). Nelson Textbook of Pediatrics, 21st ed. 장 'Common fractures' — torus(buckle) 골절: 안정, 부목 3–4주, 정복 불필요(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 문항 해설의 근거 목록에서 옮겼고 이 컨테이너에서 교과서 본문을 열지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "rockwood-9",
+    "org": "Wolters Kluwer",
+    "title": "Rockwood and Wilkins' Fractures in Children, 9th ed. — Fractures of the distal radius and ulna",
+    "kind": "textbook",
+    "citation": "Waters PM, Skaggs DL, Flynn JM (eds). Rockwood and Wilkins' Fractures in Children, 9th ed. 장 'Fractures of the distal radius and ulna' — torus·완전 골간단·생나무 골절, 나이별 허용 각형성(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목). 허용 각도 수치를 대조하지 못해 본문에 숫자를 쓰지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "force-2022",
+    "org": "The Lancet",
+    "title": "Immobilisation of torus fractures of the wrist in children (FORCE): a randomised controlled equivalence trial in the UK",
+    "kind": "trial",
+    "citation": "Perry DC, Achten J, Knight R, et al. Lancet 2022;400(10345):39-47",
+    "checked": "서지만(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 초록·결과를 열지 못했다. DOI 는 접근이 막혀 확인하지 못한 값이다",
+    "doi": "10.1016/S0140-6736(22)01015-7",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/S0140-6736(22)01015-7"
+   }
+  ],
+  "checks": [
+   {
+    "q": "소아 원위 요골 융기 골절의 X선 정의는?",
+    "a": "한쪽 피질의 국소 융기·꺾임과 골간단 경화선, 반대쪽 피질 연속, 전위·각형성·성장판 침범 없음."
+   },
+   {
+    "q": "융기 골절에 정복이 필요 없는 이유는?",
+    "a": "피질이 압축돼 맞물린 안정 골절이라 전위될 골편·되돌릴 각형성이 없다."
+   },
+   {
+    "q": "융기 골절의 표준 고정은?",
+    "a": "제거 가능한 손목 부목 약 3주, 통증이 사라지면 활동 재개, 추적 X선 불필요."
+   },
+   {
+    "q": "같은 소아 손목에서 도수 정복 후 석고가 정답이 되는 조건은?",
+    "a": "양쪽 피질 단절(완전 골절)·생나무 골절에서 각형성·전위가 나이별 허용 범위를 넘거나 변형이 만져질 때."
+   },
+   {
+    "q": "X선이 정상인데 성장판 위 압통이 뚜렷하면?",
+    "a": "Salter-Harris I 형을 배제하지 못하므로 고정 후 1–2주 뒤 재평가한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.torus-fracture.splint-no-reduction#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 양쪽 피질 단절과 각형성",
+    "stem": "8세 여아가 1시간 전 트램펄린에서 떨어지며 오른손을 짚은 뒤 손목 통증으로 응급실에 왔다. 오른쪽 손목 등쪽이 부어 있고 계단 모양의 변형이 만져진다. 손가락의 감각·움직임과 요골동맥 맥박, 모세혈관 재충만은 정상이다. 손목 X선에서 원위 요골 골간단의 등쪽·손바닥쪽 피질이 모두 끊기고 원위 골편이 배측으로 뚜렷하게 각형성되어 있으며, 골절선은 성장판에 닿지 않는다. 가장 적절한 치료는?",
+    "options": [
+     "제거 가능한 손목 부목으로 3주 고정",
+     "탄력 붕대 후 증상에 따라 활동",
+     "도수 정복 후 장상지 석고 고정",
+     "손목 MRI 후 치료 결정",
+     "추가 처치 없이 1주 뒤 재촬영"
+    ],
+    "answer": 3,
+    "explanation": "양쪽 피질이 끊기고 골편이 배측으로 각형성된 완전 골간단 골절이며 변형이 만져진다. 정복할 변형이 있으므로 도수 정복 후 석고로 그 위치를 유지한다 [[?rockwood-9: Fractures of the distal radius and ulna]]. 부목·탄력 붕대는 피질이 맞물린 안정 융기 골절의 처치이고, X선이 이미 진단을 주었으니 MRI 는 치료를 바꾸지 않는다. 원래 문항은 반대쪽 피질이 이어진 융기 골절이라 정복할 것이 없었다 — 「피질이 어디까지 끊겼나·각형성이 있나」가 답을 가른다.",
+    "of": "imaging-2026-0056",
+    "changed": "X선 소견을 「한쪽 피질 융기, 반대쪽 피질 연속, 전위 없음」에서 「요골 골간단 양쪽 피질이 끊기고 원위 골편이 배측으로 뚜렷이 각형성, 손목 등쪽 변형 촉지」로 바꿈 → 안정 융기 골절이 아니라 전위된 완전 골간단 골절이므로 답이 「제거 가능 부목」에서 「도수 정복 후 장상지 석고」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.torus-fracture.splint-no-reduction#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 측면 사진의 배측 융기",
+    "stem": "10세 남아가 어제 자전거를 타다 넘어지며 오른손을 짚었고 밤새 손목이 아팠다며 외래에 왔다. 오른쪽 원위 요골 위에 압통과 경한 부종이 있으나 변형은 없고, 손가락의 감각·운동은 정상이다. 손목 측면 X선에서 원위 요골 골간단의 등쪽 피질이 작게 불룩 솟아 있고 손바닥쪽 피질은 이어져 있다. 전위·각형성은 없고 성장판과 골단은 정상이다. 치료로 가장 적절한 것은?",
+    "options": [
+     "도수 정복 후 장상지 석고 고정",
+     "제거 가능한 손목 부목으로 약 3주 고정",
+     "단상지 석고로 6주 고정 후 추적 X선",
+     "경피 핀 고정",
+     "손목 MRI 로 성장판 평가"
+    ],
+    "answer": 2,
+    "explanation": "측면 사진의 배측 피질 융기와 이어진 손바닥쪽 피질, 전위·각형성·성장판 침범 없음은 융기 골절이다. 나이·기전·사진 방향이 달라도 결정 단서는 같다 — 피질이 압축돼 맞물린 안정 골절이라 정복할 것이 없고, 제거 가능한 부목으로 약 3주 고정한다 [[?nelson-21: Common fractures]]. 정복·핀은 전위된 골절, 6주 석고는 정복 위치를 유지해야 하는 골절, MRI 는 X선이 정상인데 성장판 손상이 의심될 때의 선택이다.",
+    "of": "imaging-2026-0056",
+    "changed": "나이·성별(10세 남아)·기전(자전거에서 넘어짐)·손(오른쪽)·사진 방향(측면에서 배측 피질 융기)과 제시 순서를 바꾸고 「한쪽 피질 융기·반대쪽 피질 연속·전위·각형성·성장판 침범 없음·신경혈관 정상」은 그대로 → 답은 여전히 제거 가능 부목 약 3주",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "소아 손목 외상 — X선 소견에서 치료로",
+  "geo": {
+   "title": "소아 손목 외상 — X선 소견에서 치료로",
+   "w": 920,
+   "h": 797.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "소아가 손을 짚고 넘어진 뒤",
+      "손목 통증 — 원위 요골 압통"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "nv",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "눈에 띄는 변형·신경혈관",
+      "이상(감각·운동·모세혈관",
+      "재충만)이 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 146.0
+    },
+    {
+     "id": "urgent",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "응급 정복·정형외과 —",
+      "신경혈관 평가를 되풀이한다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 293.0
+    },
+    {
+     "id": "xr",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "손목 전후면·측면 X선"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 293.0
+    },
+    {
+     "id": "read",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "피질·성장판은 어떻게",
+      "보이는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 423.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "골절선이 안 보인다 — 측면",
+      "사진·성장판 위 압통 여부를",
+      "확인한다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 581.0,
+     "y": 553.0
+    },
+    {
+     "id": "torus",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "융기 골절 — 제거 가능 부목",
+      "약 3주, 정복 없음, 추적 X선",
+      "불필요"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 700.0
+    },
+    {
+     "id": "angle",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "각형성·전위가 나이별 허용",
+      "범위를 넘는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 553.0
+    },
+    {
+     "id": "reduce",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "도수 정복 후 석고 — 유지 안",
+      "되면 핀 고정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 700.0
+    },
+    {
+     "id": "cast",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정복 없이 석고 고정 · 추적",
+      "X선으로 각형성 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 700.0
+    },
+    {
+     "id": "physis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "Salter-Harris 골절 —",
+      "유형·전위에 따라 정복·고정,",
+      "성장 장애 추적"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 553.0
+    },
+    {
+     "id": "sh1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "성장판 압통 → SH I 의심해",
+      "고정 후 1–2주 재평가 / 압통",
+      "없음 → 염좌로 보호대"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 694.0,
+     "y": 700.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "nv",
+     "points": [
+      [
+       453.0,
+       80
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "nv",
+     "to": "urgent",
+     "points": [
+      [
+       420.3,
+       227.0
+      ],
+      [
+       420.3,
+       237.0
+      ],
+      [
+       340.0,
+       237.0
+      ],
+      [
+       340.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "nv",
+     "to": "xr",
+     "points": [
+      [
+       485.7,
+       227.0
+      ],
+      [
+       485.7,
+       243.0
+      ],
+      [
+       566.0,
+       243.0
+      ],
+      [
+       566.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 551.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "xr",
+     "to": "read",
+     "points": [
+      [
+       566.0,
+       340.0
+      ],
+      [
+       566.0,
+       350.0
+      ],
+      [
+       453.0,
+       350.0
+      ],
+      [
+       453.0,
+       423.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "read",
+     "to": "angle",
+     "points": [
+      [
+       394.2,
+       487.0
+      ],
+      [
+       394.2,
+       497.0
+      ],
+      [
+       227.0,
+       497.0
+      ],
+      [
+       227.0,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양쪽 피질 단절·생나무"
+      ],
+      "w": 120.9,
+      "h": 17,
+      "x": 166.6,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "read",
+     "to": "physis",
+     "points": [
+      [
+       433.4,
+       487.0
+      ],
+      [
+       433.4,
+       503.0
+      ],
+      [
+       453.0,
+       503.0
+      ],
+      [
+       453.0,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "골절선이 성장판을 지남"
+      ],
+      "w": 125.5,
+      "h": 17,
+      "x": 390.3,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "read",
+     "to": "torus",
+     "points": [
+      [
+       472.6,
+       487.0
+      ],
+      [
+       472.6,
+       509.0
+      ],
+      [
+       904,
+       509.0
+      ],
+      [
+       904,
+       654.0
+      ],
+      [
+       533.3,
+       654.0
+      ],
+      [
+       533.3,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "한쪽 피질 융기만, 반대쪽 연속"
+      ],
+      "w": 161.3,
+      "h": 17,
+      "x": 452.7,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "read",
+     "to": "info",
+     "points": [
+      [
+       511.8,
+       487.0
+      ],
+      [
+       511.8,
+       515.0
+      ],
+      [
+       679.0,
+       515.0
+      ],
+      [
+       679.0,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "골절선 불분명"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 640.1,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "torus",
+     "points": [
+      [
+       646.3,
+       634.0
+      ],
+      [
+       646.3,
+       644.0
+      ],
+      [
+       598.7,
+       644.0
+      ],
+      [
+       598.7,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "측면에서 융기 확인"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 546.9,
+      "y": 660.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "sh1",
+     "points": [
+      [
+       711.7,
+       634.0
+      ],
+      [
+       711.7,
+       650.0
+      ],
+      [
+       792.0,
+       650.0
+      ],
+      [
+       792.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "여전히 정상"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 758.6,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "angle",
+     "to": "reduce",
+     "points": [
+      [
+       194.3,
+       617.0
+      ],
+      [
+       194.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "넘음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "angle",
+     "to": "cast",
+     "points": [
+      [
+       259.7,
+       617.0
+      ],
+      [
+       259.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "허용 범위 안"
+      ],
+      "w": 70.5,
+      "h": 17,
+      "x": 304.8,
+      "y": 680.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "소아가 손을 짚고 넘어진 뒤 손목 통증 — 원위 요골 압통",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "눈에 띄는 변형·신경혈관 이상(감각·운동·모세혈관 재충만)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "nv",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "눈에 띄는 변형·신경혈관 이상(감각·운동·모세혈관 재충만)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "응급 정복·정형외과 — 신경혈관 평가를 되풀이한다"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "손목 전후면·측면 X선"
+     }
+    ]
+   },
+   {
+    "id": "urgent",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "응급 정복·정형외과 — 신경혈관 평가를 되풀이한다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "xr",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "손목 전후면·측면 X선",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "피질·성장판은 어떻게 보이는가?"
+     }
+    ]
+   },
+   {
+    "id": "read",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "피질·성장판은 어떻게 보이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "한쪽 피질 융기만, 반대쪽 연속",
+      "to": 11,
+      "toText": "융기 골절 — 제거 가능 부목 약 3주, 정복 없음, 추적 X선 불필요"
+     },
+     {
+      "label": "양쪽 피질 단절·생나무",
+      "to": 6,
+      "toText": "각형성·전위가 나이별 허용 범위를 넘는가?"
+     },
+     {
+      "label": "골절선이 성장판을 지남",
+      "to": 7,
+      "toText": "Salter-Harris 골절 — 유형·전위에 따라 정복·고정, 성장 장애 추적"
+     },
+     {
+      "label": "골절선 불분명",
+      "to": 8,
+      "toText": "골절선이 안 보인다 — 측면 사진·성장판 위 압통 여부를 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "angle",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "각형성·전위가 나이별 허용 범위를 넘는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "넘음",
+      "to": 9,
+      "toText": "도수 정복 후 석고 — 유지 안 되면 핀 고정"
+     },
+     {
+      "label": "허용 범위 안",
+      "to": 10,
+      "toText": "정복 없이 석고 고정 · 추적 X선으로 각형성 확인"
+     }
+    ]
+   },
+   {
+    "id": "physis",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "Salter-Harris 골절 — 유형·전위에 따라 정복·고정, 성장 장애 추적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "골절선이 안 보인다 — 측면 사진·성장판 위 압통 여부를 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "측면에서 융기 확인",
+      "to": 11,
+      "toText": "융기 골절 — 제거 가능 부목 약 3주, 정복 없음, 추적 X선 불필요"
+     },
+     {
+      "label": "여전히 정상",
+      "to": 12,
+      "toText": "성장판 압통 → SH I 의심해 고정 후 1–2주 재평가 / 압통 없음 → 염좌로 보호대"
+     }
+    ]
+   },
+   {
+    "id": "reduce",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "도수 정복 후 석고 — 유지 안 되면 핀 고정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cast",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정복 없이 석고 고정 · 추적 X선으로 각형성 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "torus",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "융기 골절 — 제거 가능 부목 약 3주, 정복 없음, 추적 X선 불필요",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "sh1",
+    "num": 12,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "성장판 압통 → SH I 의심해 고정 후 1–2주 재평가 / 압통 없음 → 염좌로 보호대",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0056"
+  ],
+  "hasErrors": false
+ },
  "cn.path.hepatic-congestion.zone3-mechanism": {
   "id": "cn.path.hepatic-congestion.zone3-mechanism",
   "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
@@ -29352,6 +38237,996 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0037"
+  ],
+  "hasErrors": false
+ },
+ "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin": {
+  "id": "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin",
+  "title": "GATA3 — 관강 상피 핵의 계통 전사인자: 「어디서 왔나」를 묻는 표지이지 「어떤 약이 듣나」나 「침윤했나」를 묻는 표지가 아니다",
+  "objective": "유방 조직 면역조직화학에서 관강 상피세포 핵에 국한된 염색을 읽고, 관강 분화 아연손가락 전사인자 GATA3 의 진단적 용도가 원발 불명 전이암의 유방(·요로상피) 기원 확인임을, 치료 반응 예측 표지(ER·HER2)·증식 표지(Ki-67)·근상피 표지(p63 등, 상피내암 vs 침윤암)와 염색 위치·질문의 종류로 구별한다",
+  "objectiveKind": "기전",
+  "condition": "유방 관강 상피의 계통 표지(GATA3) — 원발 불명 전이암의 면역조직화학",
+  "topic": "Hematology-Oncology",
+  "seeAlso": [
+   "Pathology",
+   "Urology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "d40b6ae86d8d3c12",
+  "summary": [
+   "면역조직화학 표지는 묻는 질문이 다르다: 계통(이 암은 어디서 왔나) · 예측(어떤 치료가 듣나) · 증식(얼마나 빨리 자라나) · 구조(기저막 안에 있나, 넘었나).",
+   "GATA3 는 유방 관강 세포 계통을 정하고 유지하는 아연손가락 전사인자라 정상 유방에서 관강 상피 핵만 물들고 근상피·기질은 음성이다 [[?kouros-mehr-2006]]. 요로상피·T 림프구에도 발현된다 [[?miettinen-2014]].",
+   "원발 불명 암(CUP)에서 IHC 는 계통을 정하는 도구이며, GATA3 는 유방 원발이 의심될 때 점점 더 쓰이고 특히 내분비 표지가 없는 삼중음성·화생성 유방암의 전이에서 유용하다 [[harrison-21: 92장 p.718]].",
+   "ER·HER2 는 치료 반응을 예측하는 표지다 — 유방암 치료(호르몬·항 HER2)는 호르몬 수용체·HER2 상태로 정한다 [[harrison-21: 92장 p.720]]. Ki-67 은 증식 분율, p63·calponin 같은 근상피 표지는 상피내암과 침윤암을 가른다 [[?robbins-10]].",
+   "관강 핵 염색만으로는 ER 과 GATA3 를 가를 수 없다 — 발문이 주는 단백질의 정체(스테로이드 수용체 vs 요로상피·T 세포에도 있는 전사인자)가 결정 단서다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>원발 불명 암(CUP)은 생검으로 확인된 악성종양이지만 표준 평가 뒤에도 원발 부위를 모르는 경우로, 전체 악성종양의 3–5 %다 <sup>[1 92장 p.716]</sup>. 이 정리본의 목표는 CUP 의 치료가 아니라, <strong>유방 관강 상피 핵을 물들이는 전사인자 GATA3 가 병리 진단에서 무엇을 묻는 표지인지 — 계통(기원) — 를, 치료 예측·증식·구조 표지와 구별하는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 유방의 두 층.</strong> 유관과 소엽 선방은 안쪽의 관강 상피세포와 바깥의 근상피세포 두 층으로 이루어지고, 그 밖을 기저막과 기질이 둘러싼다. 관강 세포 계통의 분화를 정하고 유지하는 전사인자가 GATA3 다 <sup>[3†]</sup>. 전사인자는 DNA 에 붙어 일하므로 <strong>핵</strong>에 있고, 관강 세포에만 있으므로 근상피·기질은 음성이다. GATA3 는 요로상피와 T 림프구(Th2 분화)에도 발현된다 <sup>[2†]</sup>.</p>\n<p><strong>종양이 되어도 계통은 남는다.</strong> 암세포는 분화 정도가 떨어져도 자신이 유래한 조직의 계통 전사인자를 흔히 유지한다. 그래서 전이 병소에서 계통 전사인자를 보면 원발을 짐작할 수 있다 — 폐·갑상샘의 TTF-1, 장의 CDX-2 처럼 핵에 물드는 전사인자가 CUP 판단의 뼈대다 <sup>[1 92장 p.717]</sup>. GATA3 는 유방 원발이 의심될 때 쓰이며, 특히 ER 등 내분비 표지를 잃은 삼중음성·화생성 유방암의 전이에서 유방 기원을 뒷받침한다 <sup>[1 92장 p.718]</sup>.</p>\n<p><strong>같은 조직, 다른 질문.</strong> 같은 유방암 조직에서 ER·HER2 는 「이 종양이 어떤 치료에 반응하나」를 묻는다 — 유방암의 항암·호르몬 치료는 호르몬 수용체·HER2 상태로 정한다 <sup>[1 92장 p.720]</sup>. Ki-67 은 분열 중인 세포 비율, 근상피 표지는 종양이 기저막을 넘었는지를 묻는다 <sup>[4†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>관강 상피 핵이 고르게 갈색, 근상피·기질 음성</strong> — 관강 계통의 핵 단백(GATA3 또는 ER). 사진만으로는 둘을 가를 수 없다.</li>\n<li><strong>흩어진 일부 핵만 갈색</strong> — 세포주기 중인 세포(Ki-67). 계통과 무관하다.</li>\n<li><strong>세포막 둘레가 갈색</strong> — 막 수용체(HER2).</li>\n<li><strong>관 바깥 기저층이 한 줄로 갈색, 관강 음성</strong> — 근상피 표지. 상피내암 주위에서는 이 줄이 남고 침윤암 주위에서는 사라진다 <sup>[4†]</sup>.</li>\n<li>IHC 해석은 항원 보존(고정·처리)·판독자 간 차이·생검 크기의 영향을 받고, 종양과 정상 조직에서 핵·세포질·막 위치를 구별해 읽어야 한다 <sup>[1 92장 p.718]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>GATA3 vs ER</strong>: 같은 관강 핵. 정체(아연손가락 전사인자, 요로상피·T 세포 발현 vs 에스트라디올 핵 스테로이드 수용체)와 용도(계통 vs 치료 예측)가 다르다.</li>\n<li><strong>GATA3 vs 근상피 표지</strong>: 안쪽 관강층 vs 바깥 근상피층. 상피내·침윤 판단은 근상피 표지의 몫.</li>\n<li><strong>GATA3 vs Ki-67</strong>: 균일한 계통 제한 염색 vs 흩어진 증식 세포.</li>\n<li><strong>GATA3 vs HER2</strong>: 핵 vs 막.</li>\n<li><strong>유방 vs 요로상피 기원</strong>: GATA3 는 둘 다에서 양성일 수 있어, 요로상피 표지(uroplakin III·thrombomodulin·CK20·고분자량 CK)와 CK7/CK20 양상을 함께 본다 <sup>[1 92장 p.718]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>CUP 의 IHC 는 많이 할수록 좋은 것이 아니라 임상·영상과 함께 골라 쓰며, 병리의와의 소통이 필수다 <sup>[1 92장 p.717]</sup>. CK7/CK20 으로 큰 갈래를 나누고, 계통 전사인자·표지로 좁힌다 — 여러 염색의 동시 발현 양상이 개별 염색보다 믿을 만하다 <sup>[1 92장 p.718]</sup>. 유방 원발 양상 표지로 ER·GCDFP-15·mammaglobin·HER2·GATA3 를 든다(Table 92-2) <sup>[1 92장 p.718]</sup>. 겨드랑이 림프절 전이 여성은 유방촬영을 하고, 유방촬영·초음파가 음성이면 유방 MRI 를 고려한다 <sup>[1 92장 p.717]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>GATA3 는 치료를 고르는 표지가 아니다. 겨드랑이 림프절만 침범한 여성의 원발 불명 선암은 병리가 유방암 양상(형태·ER·mammaglobin·GCDFP-15·GATA3·HER2)인지 확인한 뒤 대개 2·3기 유방암으로 치료하며, MRI 양성이면 같은 쪽 유방 수술 또는 방사선, 항암·호르몬 치료는 나이·림프절 부담·호르몬 수용체·HER2 상태로 정한다 <sup>[1 92장 p.720]</sup>. <strong>반응 확인·재평가</strong>: 계통이 확정되면 그 원발의 치료·추적 방식을 따른다 — CUP 로 남은 경우보다 치료 선택지가 넓어진다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>표지의 「용도」를 물으면 먼저 질문의 종류를 가른다: 계통(GATA3) · 예측(ER·HER2) · 증식(Ki-67) · 구조(근상피 표지).</li>\n<li>관강 핵 염색만으로 ER 과 GATA3 를 가르지 않는다 — 발문이 주는 분자 정체를 읽는다.</li>\n<li>단일 IHC 는 100 % 민감·특이하지 않다 <sup>[1 92장 p.717]</sup>.</li>\n<li>근상피 표지·Ki-67·HER2 막 염색의 세부는 병리 교과서 출처로 남겼고 원문 미대조다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · GATA3 는 「유방」 표지인가, 「유방 또는 요로상피」 표지인가</strong> — 시험 기준: USMLE 형 문항은 GATA3 를 유방·요로상피 공통 계통 표지로 낸다(이 문항의 정답) <sup>[2†]</sup> / 다른 기준: 해리슨 92장은 GATA3 를 유방 원발(특히 삼중음성·화생성) 표지로만 들고, 요로상피 기원 표지로는 UROIII·고분자량 CK·thrombomodulin·CK20 을 든다(Table 92-2 요로상피 칸에 GATA3 없음) <sup>[1 92장 p.718]</sup> / 왜 다른가: 해리슨은 CUP 임상 흐름을 요약한 내과 교과서이고, 요로상피에서의 GATA3 발현은 외과병리 계열 문헌이 정리한다 — 서로 모순이라기보다 서술 범위가 다르다 / 시험에서는: USMLE — 「breast or urothelial origin」이 GATA3 의 답 · KMLE — 출제 드묾, 나오면 유방 기원 표지로 먼저 떠올린다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 계통 표지는 전사인자가 많은가",
+    "deep": true,
+    "html": "<p>세포의 정체는 어떤 유전자를 켜 두느냐로 유지되고, 그 스위치가 계통 전사인자다. 암세포는 형태가 무너져도 이 스위치를 끄지 않는 경우가 많아 원발을 가리키는 흔적이 된다 — TTF-1(폐·갑상샘), CDX-2(장), NKX3-1(전립샘), PAX8(콩팥·난소)이 모두 핵 전사인자인 까닭이다 <sup>[1 92장 p.717–718]</sup>. 반대로 ER·HER2 는 종양이 무엇에 의존해 자라는지(호르몬·성장인자 신호)를 보여 주므로 계통보다 치료 표적을 말한다. 같은 관강 핵 염색이라도 「이 세포는 누구인가」와 「이 세포는 무엇으로 사는가」는 다른 질문이다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "유방 병리의 면역조직화학 — 표지마다 묻는 질문이 다르다",
+    "columns": [
+     "묻는 질문",
+     "표지",
+     "정체",
+     "염색 위치·양상",
+     "근거"
+    ],
+    "rows": [
+     [
+      "이 전이암은 어디서 왔나(계통)",
+      "GATA3",
+      "관강 분화 아연손가락 전사인자, 요로상피·T 세포에도 발현",
+      "관강 상피 핵, 균일; 근상피·기질 음성",
+      "<sup>[1 92장 p.718]</sup> <sup>[2†]</sup>"
+     ],
+     [
+      "내분비 치료가 듣나(예측)",
+      "에스트로겐 수용체(ER)",
+      "에스트라디올이 활성화하는 핵 스테로이드 수용체",
+      "관강 상피 핵(정상 유방에서도)",
+      "<sup>[1 92장 p.720]</sup>"
+     ],
+     [
+      "항 HER2 치료가 듣나(예측)",
+      "HER2",
+      "막 성장인자 수용체(티로신키나아제)",
+      "세포막 둘레",
+      "<sup>[1 92장 p.718]</sup> <sup>[4†]</sup>"
+     ],
+     [
+      "얼마나 빨리 자라나(증식)",
+      "Ki-67",
+      "세포주기 중인 세포의 핵 단백",
+      "흩어진 일부 핵(백분율로 보고)",
+      "<sup>[4†]</sup>"
+     ],
+     [
+      "기저막을 넘었나(상피내 vs 침윤)",
+      "p63·calponin·평활근 미오신 중쇄",
+      "근상피 표지",
+      "관 바깥 근상피층 — 상피내암 주위엔 남고 침윤암 주위엔 없음",
+      "<sup>[4†]</sup>"
+     ]
+    ],
+    "note": "해리슨 92장 Table 92-2 는 유방 원발 양상 표지로 ER·GCDFP-15·mammaglobin·HER2·GATA3 를 함께 든다 — ER·HER2 도 계통의 단서가 될 수 있지만, 시험에서 이 둘의 「용도」를 물으면 치료 예측이다."
+   },
+   {
+    "title": "GATA3 vs ER — 둘 다 관강 핵이 갈색일 때",
+    "columns": [
+     "구분",
+     "GATA3",
+     "ER"
+    ],
+    "rows": [
+     [
+      "분자 종류",
+      "아연손가락 전사인자(GATA 모티프)",
+      "핵 스테로이드 호르몬 수용체"
+     ],
+     [
+      "유방 밖 발현",
+      "요로상피·T 세포 <sup>[2†]</sup>",
+      "자궁내막 등 호르몬 표적 조직"
+     ],
+     [
+      "ER 음성 유방암",
+      "삼중음성에서도 쓸모 <sup>[1 92장 p.718]</sup>",
+      "음성(정의상)"
+     ],
+     [
+      "진단적 용도",
+      "계통(유방·요로상피 기원)",
+      "내분비 치료 반응 예측"
+     ]
+    ],
+    "note": "사진만으로는 둘을 가를 수 없다 — 발문의 분자 정체·조직 분포가 단서다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "계통 표지 vs 근상피 표지 — 「유방 표지면 상피내암·침윤암 감별에도 쓰인다」",
+    "point": "상피내암과 침윤암은 관을 둘러싼 근상피층이 남아 있는가로 가른다. 그래서 그 감별에는 근상피를 물들이는 표지(p63·calponin·평활근 미오신 중쇄)가 필요하다 <sup>[4†]</sup>. 관강 세포 핵만 물들고 근상피가 음성인 표지(GATA3)는 그 층을 그려 낼 수 없으므로, 염색이 「안쪽 관강층」인지 「바깥 근상피층」인지가 두 용도를 가른다.",
+    "exception": "염색이 관의 바깥 기저층을 따라 한 줄로 두르고 관강 세포는 음성이면 근상피 표지이며, 이때는 상피내 vs 침윤 판단이 답이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "GATA3 vs ER — 「관강 핵 염색 = ER」",
+    "point": "ER 도 정상 유방 관강 핵을 물들인다. 그러나 발문이 요로상피·T 세포에도 있는 아연손가락 전사인자라고 정체를 밝히면 GATA3 이고, 그 용도는 치료 예측이 아니라 계통이다 <sup>[1 92장 p.718]</sup>. 친숙한 표지로 달려가기 전에 발문의 생물학을 읽는다.",
+    "exception": "발문이 에스트라디올로 활성화되는 핵 스테로이드 수용체를 말하면 ER 이며 답은 내분비 치료 반응 예측이다 <sup>[1 92장 p.720]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "GATA3 vs Ki-67 — 둘 다 핵",
+    "point": "Ki-67 은 계통과 무관하게 분열 중인 세포 핵에만 있어 흩어진 일부 핵이 양성이다. 관강 세포 거의 전부가 고르게 물드는 계통 제한 염색은 증식 표지가 아니다 <sup>[4†]</sup>.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "GATA3 vs HER2 — 핵 vs 막",
+    "point": "HER2 는 막 수용체라 세포막 둘레가 물든다. 핵 염색이면 HER2 가 아니다 <sup>[4†]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "해리슨 92장은 GATA3 를 유방 원발 표지로 들고, 요로상피 표지로는 UROIII·고분자량 CK·thrombomodulin·CK20 을 든다 — 요로상피 기원에서 GATA3 의 자리는 병리 문헌 근거다(시험 쟁점 절) <sup>[1 92장 p.718]</sup> <sup>[2†]</sup>.",
+   "단일 염색은 100 % 민감·특이하지 않다 — 실제 CUP 판단은 CK7/CK20 과 여러 계통 표지의 조합으로 한다 <sup>[1 92장 p.717–718]</sup>.",
+   "GATA3 양성 자체가 치료를 정하지 않는다 — 유방암으로 치료할 때도 호르몬 수용체·HER2 상태로 약을 고른다 <sup>[1 92장 p.720]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "cup-ihc-principle",
+    "name": "원발 불명 암에서 IHC 의 쓰임",
+    "kind": "검사 원칙",
+    "population": "생검으로 확인된 원발 불명 상피성 암",
+    "statement": "IHC 는 종양 계통을 정의하는 데 쓰며, 많이 할수록 좋은 것이 아니라 임상·영상과 함께 골라 쓴다. 단일 염색은 100 % 민감·특이하지 않으며 여러 염색의 동시 발현 양상이 개별 염색보다 낫다 [[harrison-21: 92장 p.717–718]]",
+    "exceptions": "분화가 나쁘면 알려진 원발에서도 대표 표지의 민감도가 떨어진다 [[harrison-21: 92장 p.717]]",
+    "source": "harrison-21",
+    "locator": "92장 p.717–718 Role of IHC Analysis, Table 92-2",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "axillary-cup",
+    "name": "겨드랑이 림프절만 침범한 여성의 원발 불명 선암",
+    "kind": "치료 원칙",
+    "population": "겨드랑이 림프절 선암·암종만 있는 여성",
+    "statement": "대개 병리 소견에 따라 2·3기 유방암으로 치료한다. 치료 전 형태·유방 IHC 표지(ER·mammaglobin·GCDFP-15·GATA3·HER2)로 유방암 양상인지 확인한다. 유방촬영·초음파가 음성이면 유방 MRI 를 한다 [[harrison-21: 92장 p.720]]",
+    "exceptions": "항암·호르몬 치료는 나이·림프절 부담·호르몬 수용체·HER2 상태로 정한다 — GATA3 양성 자체는 치료를 정하지 않는다 [[harrison-21: 92장 p.720]]",
+    "source": "harrison-21",
+    "locator": "92장 p.720 Women with Isolated Axillary Adenopathy",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 92: Carcinoma of Unknown Primary",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 92장 p.716–720",
+    "checked": "본문 대조(드라이브 문서, 92장) — p.716: CUP 정의(표준 평가 뒤에도 원발 부위 미상, 전체 악성종양의 3–5 %). p.717: IHC 는 종양 계통을 정하는 과산화효소 표지 항체, 많이 할수록 좋은 것이 아님, 단일 염색은 100 % 민감·특이하지 않음, 분화 불량이면 민감도 저하, PSA·Tg 가 가장 특이; CK7/CK20, CDX-2·TTF-1 은 핵 전사인자 염색; 겨드랑이 림프절 여성은 유방촬영, 음성이면 유방 MRI. p.718: GATA3 는 유방 원발이 우려될 때 점점 더 쓰이며 특히 삼중음성·화생성 유방암(유선 기원의 내분비 표지 없음)의 전이에서 유용; 요로상피 기원 표지로는 UROIII·고분자량 CK·thrombomodulin·CK20 을 듦; 여러 염색의 양상이 개별 염색보다 나음; Table 92-2 유방 = ER·GCDFP-15·mammaglobin·HER2·GATA3, 요로상피 = CK7·CK20·thrombomodulin·uroplakin III, SCC = p63·p40·CK5/6. p.720: 겨드랑이 림프절만 침범한 여성은 유방암 2·3기로 치료, 항암·호르몬 치료는 호르몬 수용체·HER2 상태 등으로 정함, 치료 전 유방 IHC(ER·mammaglobin·GCDFP-15·GATA3·HER2)로 유방암 양상 확인. 이 장은 GATA3 를 요로상피 표지 목록에 넣지 않는다 — 시험 쟁점 절 참조. Ki-67·근상피 표지·ER 의 예측 역할 세부는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "miettinen-2014",
+    "org": "American Journal of Surgical Pathology",
+    "title": "GATA3: a multispecific but potentially useful marker in surgical pathology — a systematic analysis of 2500 epithelial and nonepithelial tumors",
+    "kind": "review",
+    "citation": "Miettinen M, McCue PA, Sarlomo-Rikala M, et al. Am J Surg Pathol 2014;38(1):13-22",
+    "checked": "서지만(문항 해설 근거 목록에서 옮김, 원문 미대조 — 검토 항목). 이 컨테이너는 PubMed 접근이 막혀 있어 url 은 서지 검색 주소다. GATA3 의 요로상피·T 세포 발현, 유방·요로상피암에서의 양성률 서술에 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2014",
+    "checkedAt": "2026-09-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Miettinen+GATA3+multispecific+marker+surgical+pathology"
+   },
+   {
+    "id": "kouros-mehr-2006",
+    "org": "Cell",
+    "title": "GATA-3 maintains the differentiation of the luminal cell fate in the mammary gland",
+    "kind": "other",
+    "citation": "Kouros-Mehr H, Slorach EM, Sternlicht MD, Werb Z. Cell 2006;127(5):1041-1055",
+    "checked": "서지만(문항 해설 근거 목록에서 옮김, 원문 미대조 — 검토 항목). 관강 세포 운명 유지 서술에만 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2006",
+    "checkedAt": "2026-09-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=GATA-3+maintains+the+differentiation+of+the+luminal+cell+fate+in+the+mammary+gland"
+   },
+   {
+    "id": "robbins-10",
+    "org": "Elsevier",
+    "title": "Robbins & Cotran Pathologic Basis of Disease, 10th ed. — The Breast (prognostic and predictive markers); Neoplasia",
+    "kind": "textbook",
+    "citation": "Kumar V, Abbas AK, Aster JC (eds). Robbins & Cotran Pathologic Basis of Disease, 10e. ch. The Breast",
+    "checked": "서지만(문항 해설 근거 목록에서 옮김, 원문 미대조 — 검토 항목). 근상피 표지(p63·calponin·평활근 미오신 중쇄)·Ki-67·HER2 막 염색 서술에 쓴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "hpa-gata3",
+    "org": "Human Protein Atlas",
+    "title": "GATA3 — Breast tissue immunohistochemistry",
+    "kind": "other",
+    "citation": "",
+    "checked": "문항 attribution 의 영상 출처(140542_B_2_4). 페이지는 이 컨테이너에서 열지 않았다 — 염색 양상은 문항 작성자 판독을 따른다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast"
+   }
+  ],
+  "checks": [
+   {
+    "q": "정상 유방에서 관강 상피 핵만 물들고 근상피·기질은 음성, 요로상피·T 세포에도 발현되는 아연손가락 전사인자는? 진단적 용도는?",
+    "a": "GATA3 — 원발 불명 전이암의 유방(·요로상피) 기원 확인."
+   },
+   {
+    "q": "상피내암과 침윤암을 가르는 표지는 어느 세포를 물들이나?",
+    "a": "관 바깥의 근상피 세포(p63·calponin·평활근 미오신 중쇄) — 상피내암 주위에 남고 침윤암 주위엔 없다."
+   },
+   {
+    "q": "ER 음성 유방암의 겨드랑이 전이에서 유방 기원을 뒷받침하는 데 GATA3 가 특히 쓸모 있는 이유는?",
+    "a": "삼중음성·화생성 유방암은 내분비 표지가 없지만 GATA3 는 남아 있는 경우가 많아서다(해리슨 92장 p.718)."
+   },
+   {
+    "q": "ER·HER2·Ki-67 은 각각 무엇을 묻는 표지인가?",
+    "a": "ER = 내분비 치료 반응 예측, HER2 = 항 HER2 치료 반응 예측, Ki-67 = 증식 분율."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 단백질의 정체가 스테로이드 수용체",
+    "stem": "A 39-year-old woman has a benign fibroadenoma excised. Adjacent normal breast tissue in the specimen is stained by immunohistochemistry for a ligand-activated nuclear steroid hormone receptor whose physiologic ligand is estradiol and which is also abundant in the endometrium. The photomicrograph shows brown nuclear staining of many luminal epithelial cells lining the ducts and lobules, with unstained myoepithelial cells and stroma. In the pathology report of an invasive breast carcinoma, the result of this stain is used mainly for which of the following?",
+    "options": [
+     "Identifying breast or urothelial origin of a metastatic carcinoma of unknown primary",
+     "Estimating the proliferation rate of the tumor",
+     "Predicting benefit from endocrine therapy such as tamoxifen or an aromatase inhibitor",
+     "Predicting benefit from trastuzumab",
+     "Demonstrating loss of the myoepithelial layer around invasive tumor"
+    ],
+    "answer": 3,
+    "explanation": "The stain pattern (luminal nuclei, myoepithelium and stroma negative) is the same as in the original item, but the stem now defines the protein as an estradiol-activated nuclear steroid receptor — estrogen receptor. Its role in breast cancer is predictive: hormone receptor status, together with HER2, determines whether endocrine therapy is used [[harrison-21: 92장 p.720]]. In the original item the protein was a zinc-finger transcription factor shared with urothelium and T cells (GATA3), whose role is lineage. Because the image alone cannot separate the two, the identity given in the stem changes the answer. HER2 is membranous and predicts trastuzumab benefit, Ki-67 marks cycling cells, and myoepithelial markers outline the basal layer [[?robbins-10]].",
+    "of": "imaging-2026-0102",
+    "changed": "발문의 단백질 정체를 「요로상피·T 세포에도 있는 아연손가락 전사인자」에서 「에스트라디올이 결합해 활성화되는, 자궁내막에도 있는 핵 스테로이드 수용체」로 바꿈 → 표지가 GATA3 에서 ER 로 바뀌어 답이 「전이암의 기원 확인」에서 「내분비 치료 반응 예측」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 겨드랑이 림프절의 원발 불명 선암",
+    "stem": "A 61-year-old woman has a firm 2.5-cm left axillary lymph node. Mammography and breast ultrasound show no mass. Excisional biopsy shows metastatic adenocarcinoma that is negative for estrogen receptor, progesterone receptor, and HER2. The tumor is stained for a zinc-finger transcription factor that is also expressed in urothelium and in T lymphocytes and that, in normal breast, is confined to the nuclei of luminal epithelial cells. The tumor nuclei are strongly positive. This result most directly helps with which of the following?",
+    "options": [
+     "Selecting trastuzumab as adjuvant therapy",
+     "Confirming that the metastasis is compatible with a breast primary",
+     "Showing that the primary tumor is still confined within the basement membrane",
+     "Selecting an aromatase inhibitor as adjuvant therapy",
+     "Measuring the fraction of tumor cells in the cell cycle"
+    ],
+    "answer": 2,
+    "explanation": "The age, tissue (a lymph node metastasis rather than normal breast), and question wording differ, but the decisive clue is unchanged: a zinc-finger transcription factor of luminal breast epithelium shared with urothelium and T cells is GATA3, a lineage marker. Harrison notes that GATA3 is increasingly used in carcinoma of unknown primary when a breast primary is suspected and is especially useful for triple-negative and metaplastic carcinomas, which lack endocrine markers of mammary origin; in women with isolated axillary adenopathy the pathology should be verified as a breast profile, and breast MRI follows negative mammography and ultrasound [[harrison-21: 92장 p.717–720]]. GATA3 positivity does not choose drugs — trastuzumab and aromatase inhibitors depend on HER2 and hormone-receptor status, both negative here [[harrison-21: 92장 p.720]].",
+    "of": "imaging-2026-0102",
+    "changed": "환자(61세 여성, 겨드랑이 림프절 전이암·유방촬영 음성·ER/HER2 음성)·조직(전이 림프절)·발문 방식(용도 대신 가장 도움이 될 판단)을 바꾸고 「관강형 핵 염색 + 요로상피·T 세포에 발현되는 아연손가락 전사인자」는 그대로 → 답은 여전히 기원(계통) 확인",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "유방 조직 IHC — 이 표지의 용도는?",
+  "geo": {
+   "title": "유방 조직 IHC — 이 표지의 용도는?",
+   "w": 708,
+   "h": 865.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "유방(또는 전이 병소) 조직,",
+      "한 단백질에 대한",
+      "면역조직화학"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "where",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "갈색의 자리는? 세포막 둘레 /",
+      "관 바깥 근상피층 / 핵"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 163.0
+    },
+    {
+     "id": "her2",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "HER2 — 항 HER2",
+      "치료(trastuzumab) 반응",
+      "예측"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 293.0
+    },
+    {
+     "id": "myo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "근상피 표지(p63·calponin",
+      "등) — 상피내암 vs 침윤암"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 293.0
+    },
+    {
+     "id": "nuc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "핵 염색의 분포는? 흩어진",
+      "일부 핵 / 관강 세포 거의",
+      "전부 균일"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 293.0
+    },
+    {
+     "id": "ki67",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "Ki-67 — 증식 분율 추정"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "ident",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "발문이 밝힌 정체는?",
+      "에스트라디올 핵 스테로이드",
+      "수용체 / 요로상피·T",
+      "세포에도 있는 아연손가락",
+      "전사인자"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 355.0,
+     "y": 440.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "정체가 발문에 없으면",
+      "사진만으로 ER 과 GATA3 를",
+      "가를 수 없다 — 다른 조직",
+      "분포·분자 설명을 찾는다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 621.0
+    },
+    {
+     "id": "er",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "ER — 내분비 치료 반응 예측"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 785.0
+    },
+    {
+     "id": "gata3",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "GATA3 — 원발 불명 전이암의",
+      "유방·요로상피 기원 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 785.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "where",
+     "points": [
+      [
+       340.0,
+       97
+      ],
+      [
+       340.0,
+       107
+      ],
+      [
+       340.0,
+       107
+      ],
+      [
+       340.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "where",
+     "to": "her2",
+     "points": [
+      [
+       291.0,
+       227.0
+      ],
+      [
+       291.0,
+       237.0
+      ],
+      [
+       114.0,
+       237.0
+      ],
+      [
+       114.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "세포막 둘레"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 80.6,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "myo",
+     "points": [
+      [
+       340.0,
+       227.0
+      ],
+      [
+       340.0,
+       243.0
+      ],
+      [
+       340.0,
+       243.0
+      ],
+      [
+       340.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관 바깥 기저층(관강 음성)"
+      ],
+      "w": 142.0,
+      "h": 17,
+      "x": 269.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "nuc",
+     "points": [
+      [
+       389.0,
+       227.0
+      ],
+      [
+       389.0,
+       249.0
+      ],
+      [
+       566.0,
+       249.0
+      ],
+      [
+       566.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "핵"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 556.5,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "nuc",
+     "to": "ki67",
+     "points": [
+      [
+       533.3,
+       374.0
+      ],
+      [
+       533.3,
+       384.0
+      ],
+      [
+       227.0,
+       384.0
+      ],
+      [
+       227.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "흩어진 일부 핵"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 186.3,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "nuc",
+     "to": "ident",
+     "points": [
+      [
+       598.7,
+       374.0
+      ],
+      [
+       598.7,
+       390.0
+      ],
+      [
+       453.0,
+       390.0
+      ],
+      [
+       453.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관강 세포 균일"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 412.3,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "ident",
+     "to": "er",
+     "points": [
+      [
+       404.0,
+       555.0
+      ],
+      [
+       404.0,
+       565.0
+      ],
+      [
+       678,
+       565.0
+      ],
+      [
+       678,
+       739.0
+      ],
+      [
+       259.7,
+       739.0
+      ],
+      [
+       259.7,
+       785.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "스테로이드 수용체"
+      ],
+      "w": 99.7,
+      "h": 17,
+      "x": 209.8,
+      "y": 745.0
+     }
+    },
+    {
+     "from": "ident",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       555.0
+      ],
+      [
+       453.0,
+       571.0
+      ],
+      [
+       340.0,
+       571.0
+      ],
+      [
+       340.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정체 정보 없음"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 299.3,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "ident",
+     "to": "gata3",
+     "points": [
+      [
+       502.0,
+       555.0
+      ],
+      [
+       502.0,
+       577.0
+      ],
+      [
+       692,
+       577.0
+      ],
+      [
+       692,
+       739.0
+      ],
+      [
+       485.7,
+       739.0
+      ],
+      [
+       485.7,
+       785.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "요로상피·T 세포 공유 전사인자"
+      ],
+      "w": 164.0,
+      "h": 17,
+      "x": 403.7,
+      "y": 745.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "er",
+     "points": [
+      [
+       307.3,
+       719.0
+      ],
+      [
+       307.3,
+       729.0
+      ],
+      [
+       194.3,
+       729.0
+      ],
+      [
+       194.3,
+       785.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "자궁내막 등 호르몬 표적 분포"
+      ],
+      "w": 155.0,
+      "h": 17,
+      "x": 116.9,
+      "y": 765.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "gata3",
+     "points": [
+      [
+       372.7,
+       719.0
+      ],
+      [
+       372.7,
+       735.0
+      ],
+      [
+       420.3,
+       735.0
+      ],
+      [
+       420.3,
+       785.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "요로상피·T 세포 분포"
+      ],
+      "w": 116.2,
+      "h": 17,
+      "x": 362.2,
+      "y": 765.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "유방(또는 전이 병소) 조직, 한 단백질에 대한 면역조직화학",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "갈색의 자리는? 세포막 둘레 / 관 바깥 근상피층 / 핵"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "갈색의 자리는? 세포막 둘레 / 관 바깥 근상피층 / 핵",
+    "note": "",
+    "branches": [
+     {
+      "label": "세포막 둘레",
+      "to": 3,
+      "toText": "HER2 — 항 HER2 치료(trastuzumab) 반응 예측"
+     },
+     {
+      "label": "관 바깥 기저층(관강 음성)",
+      "to": 4,
+      "toText": "근상피 표지(p63·calponin 등) — 상피내암 vs 침윤암"
+     },
+     {
+      "label": "핵",
+      "to": 5,
+      "toText": "핵 염색의 분포는? 흩어진 일부 핵 / 관강 세포 거의 전부 균일"
+     }
+    ]
+   },
+   {
+    "id": "her2",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "HER2 — 항 HER2 치료(trastuzumab) 반응 예측",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "myo",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "근상피 표지(p63·calponin 등) — 상피내암 vs 침윤암",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "nuc",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "핵 염색의 분포는? 흩어진 일부 핵 / 관강 세포 거의 전부 균일",
+    "note": "",
+    "branches": [
+     {
+      "label": "흩어진 일부 핵",
+      "to": 6,
+      "toText": "Ki-67 — 증식 분율 추정"
+     },
+     {
+      "label": "관강 세포 균일",
+      "to": 7,
+      "toText": "발문이 밝힌 정체는? 에스트라디올 핵 스테로이드 수용체 / 요로상피·T 세포에도 있는 아연손가락 전사인자"
+     }
+    ]
+   },
+   {
+    "id": "ki67",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "Ki-67 — 증식 분율 추정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ident",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "발문이 밝힌 정체는? 에스트라디올 핵 스테로이드 수용체 / 요로상피·T 세포에도 있는 아연손가락 전사인자",
+    "note": "",
+    "branches": [
+     {
+      "label": "정체 정보 없음",
+      "to": 8,
+      "toText": "정체가 발문에 없으면 사진만으로 ER 과 GATA3 를 가를 수 없다 — 다른 조직 분포·분자 설명을 찾는다"
+     },
+     {
+      "label": "스테로이드 수용체",
+      "to": 9,
+      "toText": "ER — 내분비 치료 반응 예측"
+     },
+     {
+      "label": "요로상피·T 세포 공유 전사인자",
+      "to": 10,
+      "toText": "GATA3 — 원발 불명 전이암의 유방·요로상피 기원 확인"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "정체가 발문에 없으면 사진만으로 ER 과 GATA3 를 가를 수 없다 — 다른 조직 분포·분자 설명을 찾는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "자궁내막 등 호르몬 표적 분포",
+      "to": 9,
+      "toText": "ER — 내분비 치료 반응 예측"
+     },
+     {
+      "label": "요로상피·T 세포 분포",
+      "to": 10,
+      "toText": "GATA3 — 원발 불명 전이암의 유방·요로상피 기원 확인"
+     }
+    ]
+   },
+   {
+    "id": "er",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "ER — 내분비 치료 반응 예측",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "gata3",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "GATA3 — 원발 불명 전이암의 유방·요로상피 기원 확인",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0102"
   ],
   "hasErrors": false
  },
@@ -39744,6 +49619,946 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.pulm.chest-ct-anatomy.diaphragm-level-structures": {
+  "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures",
+  "title": "폐 바닥·심실 높이 흉부 CT — 가로막 주변 정상 구조를 위치로 읽고, 병변과 가로막 구멍 높이를 가른다",
+  "objective": "심실 높이·폐 바닥 흉부 CT 축상면에서 가로막 주변 정상 구조(하행대동맥·식도·홀정맥·가로막돔과 간)를 위치·모양·위아래 연속성으로 식별해 병변(경화·무기폐·흉수·종괴)과 가르고, 각 구조가 가로막을 지나는 높이(대정맥구멍 T8·식도구멍 T10·대동맥구멍 T12)에 연결한다",
+  "objectiveKind": "감별",
+  "condition": "흉부 CT 정상 해부 — 세로칸·가로막",
+  "topic": "Pulmonology",
+  "seeAlso": [
+   "Anatomy",
+   "Radiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "5b132ef5f6217ffe",
+  "summary": [
+   "CT 는 조직의 X선 감쇠를 하운스필드 단위(물 0, 공기 −1000)로 재고, 창 설정은 그 값을 어떻게 보여 줄지만 바꾼다. 폐창에서는 폐보다 짙은 구조가 모두 희게 뭉치므로 세로칸 구조는 밀도가 아니라 「위치 관계」로 읽는다.",
+   "심실 높이 축상면에서 척추체 왼쪽 앞에 붙은 크고 둥근 단면은 하행대동맥, 그 오른쪽 앞·정중 가까이의 납작하고 공기가 있을 수 있는 관은 식도, 척추체 오른쪽 앞의 작은 점은 홀정맥이다.",
+   "가로막의 세 구멍 — 대정맥구멍 T8(중심널힘줄 안), 식도구멍 T10(오른다리 근육섬유가 감쌈), 대동맥구멍 T12(두 다리와 정중활꼴인대 뒤, 가슴림프관·홀정맥 동반). 구조를 먼저 확정하고 높이를 붙인다.",
+   "오른쪽 가로막돔은 간 때문에 왼쪽보다 높다. 폐 바닥 축상면은 돔의 꼭대기를 잘라 간을 「폐로 둘러싸인 둥근 연부조직 음영」으로 보이게 한다 — 부분용적·기하학 효과이지 병변이 아니다.",
+   "돔을 가르는 단서: 매끈하게 폐 쪽으로 볼록한 경계, 완전히 균질한 내부(공기기관지조영상·혈관 없음), 주변 폐 정상(부피 감소 없음), 아래 단면으로 갈수록 커져 간과 이어짐. 한 장만 보고 병변을 부르지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>이 정리본은 질환이 아니라 <strong>정상 흉부 CT 해부</strong>를 다룬다. 목표는 심실 높이·폐 바닥의 축상면에서 가로막 주변 정상 구조 — 하행대동맥·식도·홀정맥·가로막돔과 그 아래 간 — 를 위치·모양·위아래 연속성으로 식별해 병변과 가르고, 대동맥·식도·아래대정맥이 가로막을 지나는 높이(T12·T10·T8)에 연결하는 것이다. 영상 판독에서 「정상 구조를 병변으로 부르는 것」과 「구조를 잘못 식별해 엉뚱한 높이를 붙이는 것」이 가장 흔한 두 오류다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>(정상 해부와 영상 원리) <strong>가로막</strong>은 가운데가 중심널힘줄, 가장자리가 근육인 돔 모양 판이다. 뒤쪽에서 두 다리(crura)가 허리뼈에 붙고, 두 다리를 잇는 정중활꼴인대가 대동맥 위로 아치를 이룬다. 오른쪽 돔은 아래에 간이 있어 왼쪽보다 높다.</p>\n<p>세 구멍의 높이와 구조는 기능과 연결된다 <sup>[2†]</sup>. <strong>대정맥구멍(T8)</strong> 은 중심널힘줄 안에 있어 들숨에 가로막이 수축하면 오히려 벌어져 정맥 환류를 돕는다. <strong>식도구멍(T10)</strong> 은 오른다리 근육섬유가 감싸 수축할 때 식도를 조여 위 내용물 역류를 막는 생리적 조임근이 된다. <strong>대동맥구멍(T12)</strong> 은 가로막을 뚫지 않고 두 다리와 정중활꼴인대 <strong>뒤</strong>, 척추체 <strong>앞</strong>을 지나므로 가로막이 수축해도 대동맥이 눌리지 않는다 — 가슴림프관과 홀정맥이 함께 지난다.</p>\n<p><strong>CT 원리</strong> — CT 는 X선이 조직을 지나며 약해지는 정도를 하운스필드 단위로 재며 물은 0, 공기는 −1000 HU 다. 사람 눈은 비슷한 밀도를 잘 가르지 못하므로 창 너비·중심을 정해 보여 줄 범위를 고른다. 폐창에서는 폐보다 짙은 모든 구조가 희게, 세로칸창에서는 폐가 검게 보이며, 창을 바꿔도 복셀의 HU 값은 그대로다 <sup>[1 286장 p.2143]</sup>. 흉부 사진이 3차원을 2차원으로 겹쳐 보여 주는 것과 달리 CT 는 흉곽의 모든 구조를 공간적으로 재구성한다 <sup>[1 286장 p.2143]</sup> — 그러나 한 장의 축상면은 휘어진 장기를 얇게 자른 판이라, 휘어진 면(가로막돔)을 비스듬히 자르면 장기의 일부가 떨어진 「덩이」처럼 보인다(부분용적·기하학 효과).</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>폐창에서 세로칸이 희게 뭉침</strong> → 창 설정의 결과이므로, 대동맥·식도·홀정맥은 밀도가 아니라 <strong>자리와 모양</strong>으로 가른다 <sup>[1 286장 p.2143]</sup>.</li>\n<li><strong>척추체 왼쪽 앞의 크고 둥근 단면</strong> → 하행대동맥은 뒤세로칸에서 척추체 왼쪽 앞을 따라 내려가므로 위아래 모든 단면에서 같은 자리에 둥글게 잘린다.</li>\n<li><strong>대동맥의 오른쪽 앞·정중의 납작한 관</strong> → 식도는 비어 있을 때 납작하고 안에 공기가 있을 수 있다.</li>\n<li><strong>척추체 오른쪽 앞의 작은 점</strong> → 홀정맥.</li>\n<li><strong>폐 바닥 오른쪽 앞의 둥글고 균질한 음영</strong> → 높은 오른쪽 돔의 꼭대기가 잘려 간이 폐로 둘러싸여 보인다. 경계는 휘어진 면이라 매끈하게 볼록하고, 속은 간 실질이라 완전히 균질하며, 아래 단면으로 갈수록 커져 간 전체와 이어진다 <sup>[3†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>폐 바닥의 연부조직 음영은 가로막돔(정상)·폐엽 경화·무기폐·흉수·종괴를 가른다(표 참조). 핵심은 네 가지 질문이다 — 속에 공기기관지조영상이 있는가(경화), 부피가 줄어 틈새·폐문·세로칸이 끌려가는가(무기폐), 누운 자세의 뒤쪽 흉벽을 따라 초승달로 고였는가(흉수), 경계가 불규칙하고 아래 단면에서 간과 떨어진 독립 구조인가(종괴). 넷 모두 아니고 아래로 간과 이어지면 가로막돔이다. 증상이 없다는 병력은 경화의 가능성을 낮추지만, 흡연력 같은 병력이 영상 소견을 바꾸지는 않는다.</p>\n<p>척추체 앞 구조의 감별은 대동맥(왼쪽 앞·둥글고 큼) · 식도(오른쪽 앞·정중·납작) · 홀정맥(오른쪽 앞·작음)이며, 심실 높이의 흉강에는 아래대정맥이 거의 보이지 않는다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>위아래 단면 넘겨 보기</strong> — 한 장의 둥근 음영은 연속성을 봐야 정체가 드러난다. 가로막돔은 아래로 커져 간과 이어지고, 대동맥은 같은 자리에 이어진다.</li>\n<li><strong>창 바꾸기</strong> — 폐창은 폐 실질, 세로칸창은 세로칸 연부조직을 본다. 창은 HU 값을 바꾸지 않는다 <sup>[1 286장 p.2143]</sup>.</li>\n<li><strong>관상·시상 재구성</strong> — 가로막돔과 간의 연속성, 대동맥이 가로막 뒤로 내려가는 길을 한 장에 보여 준다.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>정상 구조이므로 치료 대상이 아니다. 이 목표에서 「처치」에 해당하는 판단은 <strong>추가 검사를 하지 않는 것</strong>이다 — 가로막돔을 종괴로 부르면 불필요한 추적 CT·조직검사로 이어지고, 대동맥을 식도로 부르면 엉뚱한 높이·구조를 보고한다. <strong>반응 확인·재평가</strong>: 판독을 마치기 전에 위아래 단면·다른 창·재구성 영상으로 연속성을 한 번 더 확인하고, 그래도 독립 구조로 남는 음영만 병변으로 기술한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>구조를 먼저 확정하고(자리·모양·연속성), 그다음에 높이를 붙인다 — 대동맥 T12, 식도 T10, 아래대정맥 T8.</li>\n<li>폐 바닥 오른쪽 앞의 매끈하고 균질한 둥근 음영은 아래 단면에서 간과 이어지면 가로막돔이다. 한 장만으로 병변을 부르지 않는다.</li>\n<li>해리슨 286장은 CT 의 감쇠·창 설정 원리까지만 다루고, 가로막 구멍 높이와 가로막돔 부분용적 효과는 다루지 않는다. 그 서술은 해부학·흉부영상 교과서(Moore·Webb)를 따랐으나 원문 쪽수는 대조하지 못했다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 286장 p.2143~2145 — CT 원리·창 설정 서술이 이 정리본과 일치. 가로막 구멍 높이는 해리슨이 다루지 않아 대조 범위 밖)</li>\n</ul>"
+   },
+   {
+    "title": "왜 대동맥은 가로막을 「뚫지」 않는가",
+    "deep": true,
+    "html": "<p>대정맥구멍은 중심널힘줄 안에 있어 가로막이 수축할수록 벌어지고, 식도구멍은 근육에 싸여 수축할수록 조여진다. 대동맥은 이 둘과 달리 가로막 뒤, 두 다리와 정중활꼴인대가 만든 아치 아래로 지나간다. 들숨마다 가로막이 수축해도 심장에서 나온 고압의 혈류가 눌리지 않게 하는 배치다 <sup>[2†]</sup>. 그래서 대동맥구멍은 세 구멍 중 가장 낮고(T12) 가장 뒤에 있으며, 영상에서 하행대동맥이 가로막 높이까지 척추체 왼쪽 앞에 붙어 있는 이유이기도 하다. 식도는 T10 에서 앞으로 나와 오른다리를 지나 위와 만나고, 아래대정맥은 T8 에서 중심널힘줄을 지나 바로 오른심방으로 들어간다 — 세 구조가 「뒤에서 앞으로, 아래에서 위로」 배열된다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "심실 높이 축상 CT — 척추체 앞 구조와 가로막 통과 높이",
+    "columns": [
+     "구조",
+     "축상면의 자리·모양",
+     "가로막 통과",
+     "함께 지나는 것"
+    ],
+    "rows": [
+     [
+      "하행대동맥",
+      "척추체 <b>왼쪽 앞</b>에 붙은 크고(지름 2–3 cm) 둥근 단면, 위아래 단면에서 같은 자리",
+      "대동맥구멍 T12 — 두 다리·정중활꼴인대 뒤 <sup>[2†]</sup>",
+      "가슴림프관, 홀정맥"
+     ],
+     [
+      "식도",
+      "대동맥의 <b>오른쪽 앞</b>, 정중 가까이, 납작하고 안에 공기가 있을 수 있음",
+      "식도구멍 T10 — 오른다리 근육섬유 <sup>[2†]</sup>",
+      "앞·뒤 미주신경줄기"
+     ],
+     [
+      "아래대정맥",
+      "심실 높이 흉강에는 거의 없음(간 위 짧은 구간), 척추 오른쪽 앞",
+      "대정맥구멍 T8 — 중심널힘줄 안 <sup>[2†]</sup>",
+      "오른가로막신경 가지"
+     ],
+     [
+      "홀정맥",
+      "척추체 <b>오른쪽 앞</b>의 작은 점",
+      "대동맥구멍(또는 오른다리) <sup>[2†]</sup>",
+      "—"
+     ]
+    ],
+    "note": "배쪽 가지 높이(복강동맥 T12 부근·위창자간막동맥 L1·아래창자간막동맥 L3·대동맥 갈림 L4)는 「가로막 통과」와 다른 질문이다 — 원문 미대조."
+   },
+   {
+    "title": "폐 바닥의 연부조직 음영 — 가로막돔 vs 병변",
+    "columns": [
+     "소견",
+     "모양·내부",
+     "주변 폐",
+     "위아래 단면"
+    ],
+    "rows": [
+     [
+      "가로막돔 + 간(정상)",
+      "매끈하고 폐 쪽으로 볼록, 완전히 균질, 오른쪽 앞 바닥",
+      "정상, 부피 감소 없음",
+      "아래로 갈수록 커져 간과 이어짐 <sup>[3†]</sup>"
+     ],
+     [
+      "폐엽 경화",
+      "폐엽 모양, <b>공기기관지조영상</b>, 불균질",
+      "부피 유지, 틈새가 곧은 경계",
+      "폐엽 범위에 머묾"
+     ],
+     [
+      "무기폐",
+      "쐐기·삼각형, 혈관이 모임",
+      "<b>부피 감소</b> — 틈새·폐문·세로칸이 끌려감",
+      "폐엽 범위에 머묾"
+     ],
+     [
+      "흉수",
+      "흉벽을 따른 초승달, 누운 자세에서 <b>뒤쪽(의존 부위)</b>",
+      "앞쪽으로 눌린 폐, 메니스커스",
+      "뒤쪽 바닥에 층을 이룸"
+     ],
+     [
+      "폐 종괴",
+      "불규칙·분엽·침상 경계, 들어가는 혈관",
+      "대개 정상",
+      "가로막 아래 간과 이어지지 않는 독립 구조"
+     ]
+    ],
+    "note": "모든 행은 문항 해설과 영상의학 교과서 서술을 따른 것이며 교과서 원문 쪽수는 미대조(†)."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "식도구멍(T10) vs 대동맥구멍(T12) — 「척추 앞의 둥근 관 = 식도」",
+    "point": "폐창에서는 세로칸 구조가 모두 희게 뭉쳐 보여 밀도로는 대동맥과 식도가 갈리지 않는다 <sup>[1 286장 p.2143]</sup>. 가르는 것은 자리와 모양이다 — 척추체 <b>왼쪽 앞</b>에 붙은 크고 <b>둥근</b> 단면은 하행대동맥이고, 식도는 그 <b>오른쪽 앞·정중</b> 가까이의 납작한 관이다. 구조를 확정한 뒤 높이를 붙이면 대동맥은 T12, 식도는 T10 이다 <sup>[2†]</sup>.",
+    "exception": "그림의 구조가 정중 앞의 납작하고 공기가 든 관이라면 식도이고 답은 T10 이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "가로막돔(간) vs 폐 종괴 — 「폐로 둘러싸인 둥근 음영 = 종괴」",
+    "point": "축상면은 휘어진 가로막돔의 꼭대기를 잘라 간을 폐 한가운데의 둥근 연부조직 음영으로 보이게 한다. 종괴와 가르는 단서는 매끈하게 볼록한 경계·완전히 균질한 내부(공기기관지조영상·들어가는 혈관 없음)·정상인 주변 폐, 그리고 아래 단면에서 간과 이어지는 연속성이다 <sup>[3†]</sup>. 한 장으로 병변을 부르지 말고 위아래로 넘겨 본다.",
+    "exception": "경계가 불규칙·분엽·침상이고, 가로막 아래에서 간과 이어지지 않는 독립 구조로 남으면 종괴를 의심한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "가로막돔 vs 경화·흉수·무기폐",
+    "point": "경화는 폐엽 모양에 공기기관지조영상이 있고, 흉수는 누운 환자에서 뒤쪽 흉벽을 따라 초승달로 고이며, 무기폐는 틈새·폐문·세로칸을 끌어당긴다. 증상 없는 건강검진 환자의 앞쪽 오른쪽 바닥에 있는 매끈하고 균질한 음영에는 이 셋의 특징이 없다.",
+    "exception": "발열·기침과 함께 공기기관지조영상이 보이면 경화, 뒤쪽 의존 부위의 초승달이면 흉수다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "표준 표시 방향은 환자의 오른쪽이 그림의 왼쪽이다 — 「왼쪽 앞」은 환자 기준이다.",
+   "창 설정은 보이는 방식만 바꾼다(HU 값은 그대로) <sup>[1 286장 p.2143]</sup>. 폐창에서 세로칸 구조를 가를 때는 밀도가 아니라 자리로 읽는다.",
+   "오른쪽 돔이 왼쪽보다 높아 폐 바닥 단면에서는 오른쪽이 먼저 잘린다 — 같은 높이에서 왼쪽 바닥은 폐가 정상으로 남는다.",
+   "홀정맥도 대동맥구멍(또는 오른다리)으로 지나지만 척추 오른쪽 앞의 작은 점이라 「왼쪽 앞의 큰 둥근 단면」과 헷갈리지 않는다."
+  ],
+  "criteria": [
+   {
+    "id": "hiatus-levels",
+    "name": "가로막 구멍의 척추 높이",
+    "kind": "해부 기준",
+    "population": "성인 가로막",
+    "statement": "대정맥구멍 T8(중심널힘줄 안, 아래대정맥·오른가로막신경 가지) · 식도구멍 T10(오른다리 근육섬유, 식도·앞뒤 미주신경줄기) · 대동맥구멍 T12(두 다리와 정중활꼴인대 뒤·척추체 앞, 대동맥·가슴림프관·홀정맥) [[?moore-coa]]",
+    "exceptions": "높이는 호흡·자세·개인에 따라 한 척추 정도 달라질 수 있다 — 시험은 T8·T10·T12 를 쓴다",
+    "source": "moore-coa",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ct-window",
+    "name": "CT 감쇠값과 창 설정",
+    "kind": "검사 원리",
+    "population": "흉부 CT",
+    "statement": "감쇠는 하운스필드 단위로 재며 물 0, 공기 −1000 HU 이다. 창 너비·중심을 골라 보여 줄 범위를 정한다 — 폐창에서는 폐보다 짙은 구조가 모두 희게, 세로칸창에서는 폐가 검게 보인다. 창 설정은 복셀의 HU 값을 바꾸지 않는다 [[harrison-21: 286장 p.2143]]",
+    "exceptions": "창 설정으로는 병변과 정상 구조가 갈리지 않는다 — 위치·모양·연속성으로 가른다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 286: Diagnostic Procedures in Respiratory Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 286장 Diagnostic Procedures in Respiratory Disease(Washko GR, Goldberg HJ, Shafiq M), 인쇄쪽 2140–2146",
+    "checked": "드라이브 장 문서로 본문 대조. p.2143 흉부 사진(2차원 투영이라 겹친 구조를 여러 방향으로 풀어야 함, 가로막 거상은 폐 밖 원인), CT(흉곽 모든 구조의 공간 재구성, 감쇠 HU — 물 0·공기 −1000, 창 너비·중심, 폐창에서는 짙은 구조가 희게·세로칸창에서는 폐가 검게, 창은 HU 값을 바꾸지 않음), 2차 폐소엽. p.2144 폐동맥 줄기 > 3 cm. p.2145 전리 방사선. 가로막 구멍 높이·가로막돔 부분용적 효과는 이 장이 다루지 않는다(해부학·영상의학 교과서 몫)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "moore-coa",
+    "org": "Wolters Kluwer",
+    "title": "Clinically Oriented Anatomy — Diaphragm (apertures) and posterior mediastinum",
+    "kind": "textbook",
+    "citation": "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy, 8th ed. Wolters Kluwer; 2018 — 가로막 구멍(대정맥구멍·식도구멍·대동맥구멍)",
+    "checked": "서지만(원문 미대조 — 이 컨테이너에서 교과서 본문을 열지 못했다). 문항 해설이 인용한 출처이며 쪽수는 확인하지 못했다(검토 항목)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "webb-thoracic",
+    "org": "Wolters Kluwer",
+    "title": "Thoracic Imaging: Pulmonary and Cardiovascular Radiology — diaphragm and partial-volume effects at the lung bases",
+    "kind": "textbook",
+    "citation": "Webb WR, Higgins CB. Thoracic Imaging: Pulmonary and Cardiovascular Radiology, 3rd ed. Wolters Kluwer; 2017",
+    "checked": "서지만(원문 미대조). 문항 해설이 인용한 출처이며 가로막돔 부분용적 서술의 쪽수는 확인하지 못했다(검토 항목)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "가로막의 세 구멍과 척추 높이는?",
+    "a": "대정맥구멍 T8(중심널힘줄), 식도구멍 T10(오른다리 근육), 대동맥구멍 T12(두 다리·정중활꼴인대 뒤)."
+   },
+   {
+    "q": "심실 높이 축상 CT 에서 하행대동맥과 식도를 어떻게 가르나?",
+    "a": "대동맥은 척추체 왼쪽 앞의 크고 둥근 단면, 식도는 그 오른쪽 앞·정중의 납작한 관(공기가 있을 수 있음)."
+   },
+   {
+    "q": "폐창에서 세로칸 구조가 모두 희게 보이는 이유는?",
+    "a": "폐창은 낮은 감쇠(폐)에 맞춘 창이라 그보다 짙은 구조가 모두 흰색으로 표시된다. HU 값이 바뀐 것이 아니다."
+   },
+   {
+    "q": "폐 바닥의 앞쪽 오른쪽 둥근 음영이 가로막돔임을 보여 주는 네 단서는?",
+    "a": "매끈한 볼록 경계, 완전히 균질한 내부, 정상인 주변 폐(부피 감소 없음), 아래 단면에서 간과 이어짐."
+   },
+   {
+    "q": "대동맥구멍으로 대동맥과 함께 지나는 구조는?",
+    "a": "가슴림프관과 홀정맥."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 대동맥 대신 식도",
+    "stem": "58세 남자가 3년 전 발견된 작은 폐결절의 추적 관찰을 위해 흉부 CT 를 찍었다. 결절은 크기 변화가 없다. 심실 높이의 축상면에서 하행대동맥의 오른쪽 앞, 정중선 가까이에 가운데 작은 공기 음영이 있는 납작한 관 구조물이 보인다. 이 구조물이 가로막을 통과하는 척추 높이는?",
+    "options": [
+     "제8등뼈(T8)",
+     "제10등뼈(T10)",
+     "제12등뼈(T12)",
+     "제1허리뼈(L1)",
+     "제4허리뼈(L4)"
+    ],
+    "answer": 2,
+    "explanation": "하행대동맥의 오른쪽 앞·정중 가까이에 있는 납작하고 안에 공기가 보이는 관은 식도다. 식도는 가로막 오른다리의 근육섬유가 감싸는 식도구멍을 T10 높이에서 지난다 [[?moore-coa]]. 원래 문항은 척추체 왼쪽 앞의 크고 둥근 단면(하행대동맥)을 물어 T12 가 답이었다 — 같은 높이의 영상이라도 「어느 구조인가」가 답을 가른다. T8 은 아래대정맥, L1 은 위창자간막동맥 기시, L4 는 대동맥 갈림 높이다.",
+    "of": "imaging-2026-0012",
+    "changed": "묻는 구조를 「척추체 왼쪽 앞의 크고 둥근 단면」에서 「그 오른쪽 앞·정중 가까이의 납작하고 안에 공기가 보이는 관」으로 바꿈 → 구조가 식도가 되어 답이 T12 에서 T10 으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 외상 CT·세로칸창",
+    "stem": "45세 남자가 교통사고 뒤 응급실에서 흉부 CT 를 찍었다. 갈비뼈 골절이나 기흉은 없다. 세로칸창의 심실 높이 축상면에서 척추체 왼쪽 앞에 붙어 있는 지름 약 2.5 cm 의 둥글고 균질한 구조물이 보이고, 위아래 단면에서도 같은 자리에 이어진다. 이 구조물이 배안으로 내려가려고 가로막을 지나는 척추 높이는?",
+    "options": [
+     "제12등뼈(T12)",
+     "제8등뼈(T8)",
+     "제10등뼈(T10)",
+     "제3허리뼈(L3)",
+     "제1허리뼈(L1)"
+    ],
+    "answer": 1,
+    "explanation": "창 설정·검사 이유·환자가 달라도 결정 단서(척추체 왼쪽 앞, 크고 둥근 단면, 위아래로 같은 자리)는 그대로이므로 구조는 하행대동맥이다. 대동맥은 가로막의 두 다리와 정중활꼴인대 뒤의 대동맥구멍을 T12 높이에서 지난다 [[?moore-coa]]. 세로칸창은 연부조직 구조를 구분해 보여 줄 뿐 위치 관계로 읽는 방법은 같다 [[harrison-21: 286장 p.2143]]. T8 은 아래대정맥, T10 은 식도, L1·L3 은 배쪽 가지의 기시 높이다.",
+    "of": "imaging-2026-0012",
+    "changed": "성별·나이(45세 남자)·검사 경위(교통사고 뒤 외상 CT)·창(세로칸창)·제시 순서를 바꾸고 「척추체 왼쪽 앞의 크고 둥근 단면」은 그대로 → 답은 여전히 T12",
+    "flip": false
+   },
+   {
+    "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures#v3",
+    "context": "Changed cue — air bronchograms in a lobe-shaped posterior opacity",
+    "stem": "A 67-year-old woman comes to the physician because of 5 days of fever and a cough productive of yellow sputum. Her temperature is 38.9°C and respirations are 24/min. Crackles are heard over the right lung base posteriorly. An axial CT image of the chest at the level of the lung bases (lung window) shows a dense opacity filling the posterior basal right lower lobe; branching tubular air lucencies run through it, its anterior border is a straight line along the major fissure, and the right hilum and mediastinum are in normal position. Which of the following best explains the opacity?",
+    "options": [
+     "Dome of the right hemidiaphragm with the liver beneath it",
+     "Loculated right pleural effusion",
+     "Consolidation of the right lower lobe",
+     "Mass arising in the right middle lobe",
+     "Atelectasis of the right lower lobe"
+    ],
+    "answer": 3,
+    "explanation": "Branching air lucencies inside a lobe-shaped opacity are air bronchograms: the alveoli are filled but the bronchi stay open, which is consolidation, and fever with productive cough fits pneumonia. A straight border along the fissure with no shift of the hilum or mediastinum means the lobe has kept its volume, arguing against atelectasis. In the original item the density was anterior, perfectly homogeneous with a smooth convex edge, in an asymptomatic patient — the diaphragmatic dome. An effusion would be a dependent crescent along the chest wall, and a mass would be a separate structure with an irregular edge [[?webb-thoracic]].",
+    "of": "imaging-2026-0013",
+    "changed": "「증상 없음, 매끈하고 균질한 앞쪽 음영, 주변 폐 정상」을 「5일간 발열·가래 기침, 뒤쪽 바닥의 폐엽 모양 음영 안에 가지 치는 공기 음영, 틈새가 곧은 경계」로 바꿈 → 답이 가로막돔에서 오른아래엽 경화로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures#v4",
+    "context": "Same decisive cues, different story — lung cancer screening CT in a former smoker",
+    "stem": "A 59-year-old man with a 35-pack-year smoking history who quit 5 years ago undergoes low-dose CT of the chest for lung cancer screening. He has no symptoms. On one axial image through the lung bases, a round, homogeneous soft-tissue density with a smooth, convex margin occupies the anterior right lower hemithorax, and aerated lung surrounds it without distortion. On the next caudal images the density becomes progressively larger and becomes continuous with the liver. Which of the following best explains the density?",
+    "options": [
+     "Primary lung carcinoma in the right middle lobe",
+     "Round atelectasis of the right lower lobe",
+     "Dome of the right hemidiaphragm with the liver beneath it",
+     "Loculated right pleural effusion",
+     "Consolidation of the right lower lobe"
+    ],
+    "answer": 3,
+    "explanation": "Smoking history raises the pretest probability of cancer, but it does not change what the image shows. A smooth convex margin, perfect homogeneity, normal surrounding lung and — decisively — continuity with the liver on caudal images identify the top of the right hemidiaphragmatic dome cut by the axial plane, a geometric partial-volume effect rather than a lesion [[?webb-thoracic]]. A carcinoma would remain a separate structure with an irregular edge, atelectasis would show volume loss, an effusion would lie posteriorly, and consolidation would contain air bronchograms.",
+    "of": "imaging-2026-0013",
+    "changed": "성별·나이(59세 남자)·검사 경위(전 흡연자의 저선량 폐암 선별 CT)·제시 순서를 바꾸고 「앞쪽 오른쪽 바닥, 매끈한 볼록 경계, 완전히 균질, 주변 폐 정상, 아래 단면에서 간과 이어짐」은 그대로 → 답은 여전히 가로막돔과 간",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "폐 바닥·심실 높이 축상 CT — 이 둥근 연부조직 음영은 무엇인가?",
+  "geo": {
+   "title": "폐 바닥·심실 높이 축상 CT — 이 둥근 연부조직 음영은 무엇인가?",
+   "w": 934,
+   "h": 752.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "흉부 CT 축상면에서 둥근",
+      "연부조직 음영 — 창 설정과",
+      "단면 높이를 먼저 확인"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "where",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "어디에 있나? 척추체 바로",
+      "앞(세로칸) / 폐",
+      "바닥(가로막 근처)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 163.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "한 장만으로는 모른다 —",
+      "위아래 단면을 넘겨 연속성을",
+      "보고, 필요하면",
+      "세로칸창으로 바꿔 본다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 310.0
+    },
+    {
+     "id": "side",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "척추체 왼쪽 앞의 크고 둥근",
+      "단면인가, 오른쪽 앞·정중의",
+      "납작한 관인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 474.0
+    },
+    {
+     "id": "aorta",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "하행대동맥 — 대동맥구멍",
+      "T12(가슴림프관·홀정맥",
+      "동반)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 621.0
+    },
+    {
+     "id": "eso",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "식도 — 식도구멍",
+      "T10(미주신경줄기 동반)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 621.0
+    },
+    {
+     "id": "dome",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "매끈한 볼록 경계·균질·주변",
+      "폐 정상·아래 단면에서 간과",
+      "이어지나?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 474.0
+    },
+    {
+     "id": "normal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "가로막돔과 간 —",
+      "정상(부분용적·기하학 효과)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 621.0
+    },
+    {
+     "id": "lesion",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "병변 —",
+      "공기기관지조영상(경화)·",
+      "부피 감소(무기폐)·뒤쪽",
+      "초승달(흉수)·불규칙",
+      "경계(종괴)로 가른다"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 694.0,
+     "y": 621.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "where",
+     "points": [
+      [
+       453.0,
+       97
+      ],
+      [
+       453.0,
+       107
+      ],
+      [
+       453.0,
+       107
+      ],
+      [
+       453.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "where",
+     "to": "side",
+     "points": [
+      [
+       404.0,
+       244.0
+      ],
+      [
+       404.0,
+       254.0
+      ],
+      [
+       904,
+       254.0
+      ],
+      [
+       904,
+       428.0
+      ],
+      [
+       307.3,
+       428.0
+      ],
+      [
+       307.3,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "척추체 앞"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 279.5,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       244.0
+      ],
+      [
+       453.0,
+       260.0
+      ],
+      [
+       453.0,
+       260.0
+      ],
+      [
+       453.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "한 단면뿐"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 425.1,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "dome",
+     "points": [
+      [
+       502.0,
+       244.0
+      ],
+      [
+       502.0,
+       266.0
+      ],
+      [
+       918,
+       266.0
+      ],
+      [
+       918,
+       428.0
+      ],
+      [
+       533.3,
+       428.0
+      ],
+      [
+       533.3,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "폐 바닥"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 511.0,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "side",
+     "points": [
+      [
+       420.3,
+       408.0
+      ],
+      [
+       420.3,
+       418.0
+      ],
+      [
+       372.7,
+       418.0
+      ],
+      [
+       372.7,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "세로칸 구조로 확인"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 320.9,
+      "y": 434.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "dome",
+     "points": [
+      [
+       485.7,
+       408.0
+      ],
+      [
+       485.7,
+       424.0
+      ],
+      [
+       598.7,
+       424.0
+      ],
+      [
+       598.7,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "가로막 근처로 확인"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 546.9,
+      "y": 434.0
+     }
+    },
+    {
+     "from": "side",
+     "to": "aorta",
+     "points": [
+      [
+       307.3,
+       555.0
+      ],
+      [
+       307.3,
+       565.0
+      ],
+      [
+       114.0,
+       565.0
+      ],
+      [
+       114.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "왼쪽 앞·둥글고 큼"
+      ],
+      "w": 98.9,
+      "h": 17,
+      "x": 64.6,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "side",
+     "to": "eso",
+     "points": [
+      [
+       372.7,
+       555.0
+      ],
+      [
+       372.7,
+       571.0
+      ],
+      [
+       340.0,
+       571.0
+      ],
+      [
+       340.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "오른쪽 앞·정중·납작"
+      ],
+      "w": 112.5,
+      "h": 17,
+      "x": 283.8,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "dome",
+     "to": "normal",
+     "points": [
+      [
+       533.3,
+       555.0
+      ],
+      [
+       533.3,
+       565.0
+      ],
+      [
+       566.0,
+       565.0
+      ],
+      [
+       566.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 예"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 543.6,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "dome",
+     "to": "lesion",
+     "points": [
+      [
+       598.7,
+       555.0
+      ],
+      [
+       598.7,
+       571.0
+      ],
+      [
+       792.0,
+       571.0
+      ],
+      [
+       792.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나라도 아니오"
+      ],
+      "w": 88.7,
+      "h": 17,
+      "x": 747.6,
+      "y": 601.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "흉부 CT 축상면에서 둥근 연부조직 음영 — 창 설정과 단면 높이를 먼저 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "어디에 있나? 척추체 바로 앞(세로칸) / 폐 바닥(가로막 근처)"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "어디에 있나? 척추체 바로 앞(세로칸) / 폐 바닥(가로막 근처)",
+    "note": "",
+    "branches": [
+     {
+      "label": "척추체 앞",
+      "to": 4,
+      "toText": "척추체 왼쪽 앞의 크고 둥근 단면인가, 오른쪽 앞·정중의 납작한 관인가?"
+     },
+     {
+      "label": "폐 바닥",
+      "to": 5,
+      "toText": "매끈한 볼록 경계·균질·주변 폐 정상·아래 단면에서 간과 이어지나?"
+     },
+     {
+      "label": "한 단면뿐",
+      "to": 3,
+      "toText": "한 장만으로는 모른다 — 위아래 단면을 넘겨 연속성을 보고, 필요하면 세로칸창으로 바꿔 본다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "한 장만으로는 모른다 — 위아래 단면을 넘겨 연속성을 보고, 필요하면 세로칸창으로 바꿔 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "세로칸 구조로 확인",
+      "to": 4,
+      "toText": "척추체 왼쪽 앞의 크고 둥근 단면인가, 오른쪽 앞·정중의 납작한 관인가?"
+     },
+     {
+      "label": "가로막 근처로 확인",
+      "to": 5,
+      "toText": "매끈한 볼록 경계·균질·주변 폐 정상·아래 단면에서 간과 이어지나?"
+     }
+    ]
+   },
+   {
+    "id": "side",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "척추체 왼쪽 앞의 크고 둥근 단면인가, 오른쪽 앞·정중의 납작한 관인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "왼쪽 앞·둥글고 큼",
+      "to": 6,
+      "toText": "하행대동맥 — 대동맥구멍 T12(가슴림프관·홀정맥 동반)"
+     },
+     {
+      "label": "오른쪽 앞·정중·납작",
+      "to": 7,
+      "toText": "식도 — 식도구멍 T10(미주신경줄기 동반)"
+     }
+    ]
+   },
+   {
+    "id": "dome",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "매끈한 볼록 경계·균질·주변 폐 정상·아래 단면에서 간과 이어지나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "모두 예",
+      "to": 8,
+      "toText": "가로막돔과 간 — 정상(부분용적·기하학 효과)"
+     },
+     {
+      "label": "하나라도 아니오",
+      "to": 9,
+      "toText": "병변 — 공기기관지조영상(경화)·부피 감소(무기폐)·뒤쪽 초승달(흉수)·불규칙 경계(종괴)로 가른다"
+     }
+    ]
+   },
+   {
+    "id": "aorta",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "하행대동맥 — 대동맥구멍 T12(가슴림프관·홀정맥 동반)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "eso",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "식도 — 식도구멍 T10(미주신경줄기 동반)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "normal",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "가로막돔과 간 — 정상(부분용적·기하학 효과)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lesion",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "병변 — 공기기관지조영상(경화)·부피 감소(무기폐)·뒤쪽 초승달(흉수)·불규칙 경계(종괴)로 가른다",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0012",
+   "imaging-2026-0013"
+  ],
+  "hasErrors": false
+ },
  "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
   "id": "cn.pulm.community-acquired-pneumonia.curb65-site-of-care",
   "title": "지역사회획득폐렴의 치료 장소 — CURB-65 다섯 항목을 모두 세고, 점수와 산소·복용·순응으로 외래·입원·중환자실을 가른다",
@@ -48832,6 +59647,959 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1129"
+  ],
+  "hasErrors": false
+ },
+ "cn.uro.testis-histology.leydig-lh-target": {
+  "id": "cn.uro.testis-histology.leydig-lh-target",
+  "title": "고환 조직에서 세포를 위치로 정하고 호르몬을 붙인다 — 관 사이 간질세포는 LH, 관 안 세르톨리세포는 FSH",
+  "objective": "고환 조직 사진에서 염색된 세포를 위치(세정관 사이 간질 vs 세정관 안 기저막 위)로 간질(Leydig)세포와 세르톨리세포로 가르고, 간질세포는 LH 의 표적(테스토스테론·INSL3 생산), 세르톨리세포는 FSH 의 표적(인히빈 B·AMH 분비)임을 연결하며, 「표적이 되는 호르몬」과 「그 세포가 분비하는 호르몬」을 구분한다",
+  "objectiveKind": "기전",
+  "condition": "고환 간질세포·세르톨리세포와 성선자극호르몬 축",
+  "topic": "Urology",
+  "seeAlso": [
+   "Endocrinology",
+   "Pathology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "8776dc7062f7b98b",
+  "summary": [
+   "고환은 두 구획이다 — 세정관 안에서는 세르톨리세포가 생식세포를 둘러싸 정자형성을 돕고, 세정관 사이 간질에서는 간질(Leydig)세포가 테스토스테론을 만든다 [[harrison-21: 391장 p.3006]].",
+   "뇌하수체 성선자극호르몬은 표적이 갈린다 — LH 는 주로 간질세포에 작용해 테스토스테론 합성을 자극하고, FSH 는 세르톨리세포에 작용해 정자형성과 인히빈 B 생산을 조절한다 [[harrison-21: 391장 p.3007]].",
+   "그래서 사진 문항은 세포의 「위치」가 먼저다. 관 안이 전부 음성이고 관 사이 무리만 양성이면 간질세포 → LH 의 표적이다. INSL3 는 간질세포가 만드는 펩타이드다 [[harrison-21: 391장 p.3006]].",
+   "AMH(뮐러관 억제물질)와 인히빈 B 는 세르톨리세포가 「분비하는」 호르몬이지 간질세포의 「표적」 호르몬이 아니다 [[harrison-21: 391장 p.3006]] [[harrison-21: 391장 p.3007]]. 문항이 표적을 묻는지 분비 산물을 묻는지 먼저 읽는다.",
+   "임상으로 이으면 — 테스토스테론이 낮을 때 LH 가 높으면 고환 쪽(일차), 낮거나 정상이면 시상하부·뇌하수체 쪽(이차) 성선기능저하증이고 [[harrison-21: 391장 p.3010]], 세정관 손상은 인히빈 B 가 줄어 FSH 만 선택적으로 오른다 [[harrison-21: 391장 p.3009]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>고환은 두 구획으로 이루어진다. <strong>세정관 안</strong>에서는 세르톨리세포가 생식세포를 둘러싸 분열·분화·성숙을 돕고, <strong>세정관 사이 간질</strong>에서는 간질(Leydig)세포가 테스토스테론을 만든다. 두 세포는 뇌하수체의 LH·FSH 통제를 받는다 <sup>[1 391장 p.3006]</sup>. 이 정리본의 목표는 조직 사진에서 <strong>양성 세포의 위치로 세포를 정하고</strong>, 그 세포가 <strong>어느 호르몬의 표적인지</strong>(LH vs FSH), 그리고 그 세포가 <strong>무엇을 분비하는지</strong>(테스토스테론·INSL3 vs 인히빈 B·AMH)를 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 축.</strong> 시상하부 GnRH 는 약 2시간마다 박동으로 나와 뇌하수체 LH·FSH 의 박동을 만든다. LH 는 주로 간질세포에 작용해 테스토스테론 합성을 자극하고, FSH 는 세르톨리세포에 작용해 정자형성과 인히빈 B 생산을 조절하며, 인히빈 B 는 뇌하수체 FSH 를 선택적으로 누른다. 테스토스테론과 에스트라디올은 시상하부·뇌하수체에 음성 되먹임을 건다 <sup>[1 391장 p.3007]</sup>.</p>\n<p><strong>간질세포 안에서.</strong> LH 는 7회 막관통 G 단백 결합 수용체에 붙어 cAMP 경로를 켜고, StAR 단백과 여러 스테로이드 합성 효소를 유도한다. 테스토스테론 합성의 속도제한 단계는 StAR 가 세포 안 콜레스테롤을 미토콘드리아 내막으로 옮기는 과정이고, 미토콘드리아에서 CYP11A1 이 프레그네놀론을 만든 뒤 CYP17A1(17α-수산화효소·17,20-분해효소)을 거친다. LH 수용체 변이는 간질세포 형성저하·무형성을 일으킨다 — 이 축이 간질세포의 발달과 기능에 필수라는 뜻이다 <sup>[1 391장 p.3007]</sup>.</p>\n<p><strong>두 구획은 이어져 있다.</strong> 테스토스테론은 고환 안에서 매우 높은 농도에 이르러 정자형성에 필수이고, FSH 와 테스토스테론이 함께 감수분열과 정자 방출을 진행시킨다 <sup>[1 391장 p.3009]</sup>. 그래서 두 축을 따로 외우되, 정자형성은 둘 다 필요하다는 점을 같이 기억한다.</p>\n<p><strong>태아기.</strong> SRY 가 세르톨리세포 분화를 유도하고, 세르톨리세포는 뮐러관을 퇴행시키는 MIS(=AMH)를 만든다. 태아 간질세포는 테스토스테론으로 볼프관과 외생식기의 남성화를 이끌고, INSL3 로 고환의 복강 내 하강을 돕는다 <sup>[1 391장 p.3006]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>간질세포 표지(INSL3·스테로이드 합성 효소)로 염색한 사진</strong>: 세정관 안(생식세포·세르톨리세포)은 음성, 관 사이 결합조직의 다각형 세포 무리만 양성이다. INSL3 는 간질세포가 만드는 펩타이드라 이 양상이 나온다 <sup>[1 391장 p.3006]</sup> <sup>[2†]</sup>.</li>\n<li><strong>세르톨리세포를 보는 사진</strong>: 양성 세포가 세정관 기저막 위에 서서 생식세포 사이로 뻗고, 간질은 음성이다.</li>\n<li><strong>호르몬 검사</strong>: 간질세포 부전 → 테스토스테론↓·LH↑(일차) <sup>[1 391장 p.3010]</sup>. 세정관만 다치면 인히빈 B 가 줄어 FSH 만 선택적으로 오른다 <sup>[1 391장 p.3009]</sup>. 양측 고환절제는 일차 고환 부전의 원인이다 — 원래 문항의 환자는 수술 뒤 LH 가 오른다 <sup>[1 391장 p.3020]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>LH vs FSH</strong>: 표적 위치(관 사이 vs 관 안)로 가른다 <sup>[1 391장 p.3007]</sup>.</li>\n<li><strong>표적 vs 분비</strong>: AMH·인히빈 B 는 세르톨리세포의 분비 산물이다 — 「무엇의 표적인가」를 묻는 문항의 답이 될 수 없다.</li>\n<li><strong>프롤락틴</strong>: 고프롤락틴혈증은 성선자극호르몬이 낮은 시상하부·뇌하수체 원인이다 <sup>[1 391장 p.3012]</sup>. 간질세포를 직접 자극하는 영양호르몬이 아니다.</li>\n<li><strong>일차 vs 이차 성선기능저하증</strong>: LH 수치로 가른다(아래 기준·표).</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>조직</strong>: 세정관 윤곽(기저막)을 먼저 찾고 양성 세포가 관 안인지 관 사이인지 본다. 음성 구획도 소견이다.</li>\n<li><strong>혈액</strong>: 테스토스테론이 낮을 때 LH 가 높으면 일차, 낮거나 부적절하게 정상이면 이차 <sup>[1 391장 p.3010]</sup>. LH 는 1–3시간마다 박동하므로 한 번 값에 기대지 않는다 <sup>[1 391장 p.3010]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>이 정리본의 범위는 세포–호르몬 연결이지만, 축을 알면 치료 선택이 따라온다. 성인기에 생긴 성선자극호르몬 결핍에서는 hCG 나 재조합 LH 가 LH 수용체를 통해 간질세포를 자극해 FSH 없이도 정자형성을 다시 시작시킬 수 있다 <sup>[1 391장 p.3009]</sup>. 원래 문항처럼 전립선암의 안드로겐 차단을 위해 양측 고환절제를 하면 테스토스테론의 주된 공급원(순환 테스토스테론의 95 % 가 고환 유래)이 사라진다 <sup>[1 391장 p.3007]</sup>. <strong>재평가</strong>: 치료·수술 뒤에는 테스토스테론과 LH 를 함께 보아 결함 위치를 다시 확인한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「위치 → 세포 → 수용체」 순서로 읽는다: 관 사이 = 간질세포 = LH, 관 안 = 세르톨리세포 = FSH.</li>\n<li>「표적」과 「분비」를 섞지 않는다: 세르톨리세포는 FSH 의 표적이면서 인히빈 B·AMH 를 분비한다.</li>\n<li>LH 로 성선기능저하증의 위치를 가르되, 박동 분비 때문에 반복 측정한다.</li>\n<li>INSL3 의 조직 분포(간질세포 강양성·세정관 음성)는 Human Protein Atlas 주석을 직접 열지 못해 문항 해설의 인용만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 391장 p.3006~3010, p.3012, p.3020)</li>\n</ul>"
+   },
+   {
+    "title": "왜 두 세포에 두 호르몬인가",
+    "deep": true,
+    "html": "<p>LH 와 FSH 는 같은 GnRH 박동에 반응하지만, 고환은 두 결과물 — 전신으로 나가는 테스토스테론과 관 안에서 쓰이는 정자 — 을 따로 조절해야 한다. 간질세포–LH–테스토스테론 고리는 테스토스테론·에스트라디올의 되먹임으로, 세르톨리세포–FSH–인히빈 B 고리는 인히빈 B 의 선택적 FSH 억제로 닫힌다 <sup>[1 391장 p.3007]</sup>. 그래서 세정관만 다친 환자는 테스토스테론과 LH 가 정상인데 FSH 만 오르는 「분리된」 양상을 보인다 <sup>[1 391장 p.3009]</sup>. 시험은 이 분리를 사진(어느 구획이 양성인가)과 호르몬 수치(어느 되먹임이 끊겼나) 두 방향에서 묻는다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "고환의 두 세포 — 어디에 있고, 무엇의 표적이며, 무엇을 내보내나",
+    "columns": [
+     "세포",
+     "위치(사진에서)",
+     "표적이 되는 호르몬",
+     "세포가 만드는 것",
+     "기능이 떨어지면"
+    ],
+    "rows": [
+     [
+      "간질(Leydig)세포",
+      "세정관 <b>사이</b> 결합조직에 무리 지음",
+      "LH(수용체: G 단백 결합, cAMP) <sup>[1 391장 p.3007]</sup>",
+      "테스토스테론, INSL3 <sup>[1 391장 p.3006]</sup>",
+      "테스토스테론↓ · LH↑(일차 성선기능저하증) <sup>[1 391장 p.3010]</sup>"
+     ],
+     [
+      "세르톨리세포",
+      "세정관 <b>안</b> 기저막 위, 생식세포를 둘러쌈",
+      "FSH (+ 고환 내 고농도 테스토스테론) <sup>[1 391장 p.3007]</sup>",
+      "인히빈 B, AMH(MIS) <sup>[1 391장 p.3006]</sup>",
+      "인히빈 B↓ → FSH 선택 상승 <sup>[1 391장 p.3009]</sup>"
+     ],
+     [
+      "생식세포",
+      "세정관 안, 기저막에서 내강 쪽으로 성숙",
+      "직접 표적 아님 — 세르톨리세포·테스토스테론을 거쳐 조절",
+      "정자",
+      "정자형성 저하(FSH·고환 내 테스토스테론 모두 필요) <sup>[1 391장 p.3009]</sup>"
+     ]
+    ],
+    "note": "사진 문항의 순서: ① 위치로 세포를 정한다 ② 그 세포의 수용체(표적 호르몬)를 붙인다 ③ 질문이 표적을 묻는지 분비 산물을 묻는지 확인한다."
+   },
+   {
+    "title": "호르몬 양상으로 병변 위치 읽기",
+    "columns": [
+     "상황",
+     "테스토스테론",
+     "LH",
+     "FSH"
+    ],
+    "rows": [
+     [
+      "간질세포·고환 전체 부전(고환절제·클라인펠터)",
+      "↓",
+      "↑ <sup>[1 391장 p.3020]</sup>",
+      "↑"
+     ],
+     [
+      "세정관만 손상(방사선 등)",
+      "대개 유지",
+      "정상",
+      "선택적 ↑ <sup>[1 391장 p.3009]</sup>"
+     ],
+     [
+      "시상하부·뇌하수체(고프롤락틴혈증 포함)",
+      "↓",
+      "↓ 또는 부적절하게 정상 <sup>[1 391장 p.3012]</sup>",
+      "↓ 또는 정상"
+     ]
+    ],
+    "note": "LH 는 간질세포 쪽, FSH 는 세르톨리세포 쪽의 되먹임을 읽는 창이다 <sup>[1 391장 p.3007]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "LH vs FSH — 「둘 다 성선자극호르몬이니 고환 세포면 아무거나」",
+    "point": "두 호르몬은 같은 뇌하수체 세포에서 나오지만 고환 안의 표적이 다르다. LH 는 세정관 사이의 간질세포, FSH 는 세정관 안의 세르톨리세포다 <sup>[1 391장 p.3007]</sup>. 사진에서 관 안이 음성이고 관 사이 무리만 양성이면 FSH 의 표적은 염색되지 않은 것이다 — 위치가 호르몬을 정한다.",
+    "exception": "양성 세포가 세정관 안 기저막 위에 한 줄로 서서 생식세포를 둘러싸면 세르톨리세포이고, 그때는 FSH 가 답이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "표적 호르몬 vs 분비 호르몬 — AMH·인히빈 B",
+    "point": "AMH(MIS)와 인히빈 B 는 세르톨리세포가 만들어 내보내는 호르몬이다. AMH 는 태아 뮐러관을 퇴행시키고, 인히빈 B 는 뇌하수체 FSH 를 선택적으로 누른다 <sup>[1 391장 p.3006]</sup> <sup>[1 391장 p.3007]</sup>. 어느 쪽도 간질세포를 표적으로 삼지 않는다 — 「이 세포에 작용하는 것」과 「이 세포가 내는 것」을 섞지 않는다.",
+    "exception": "질문이 「이 세포가 분비하는 것」을 묻고 염색 세포가 세르톨리세포라면 AMH·인히빈 B 가 답이 된다.",
+    "cites": ""
+   },
+   {
+    "contrast": "프롤락틴 — 테스토스테론을 낮출 수는 있지만 간질세포의 영양호르몬은 아니다",
+    "point": "고프롤락틴혈증은 성선자극호르몬을 낮추는 시상하부·뇌하수체 원인으로 분류된다 <sup>[1 391장 p.3012]</sup> — 테스토스테론 저하는 GnRH·LH 를 거친 간접 효과다. 간질세포를 직접 움직이는 호르몬은 LH 다 <sup>[1 391장 p.3007]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "간질세포 표지(INSL3 등)로 염색한 사진은 관 안이 전부 음성이다 — 「관 안이 비었다」는 음성 소견 자체가 세르톨리세포를 배제하는 근거다.",
+   "정자형성에는 FSH 와 함께 고환 안의 고농도 테스토스테론(LH → 간질세포)이 필요하다 — 두 축은 따로 그려도 기능은 이어져 있다 <sup>[1 391장 p.3009]</sup>.",
+   "hCG·재조합 LH 는 LH 수용체를 통해 성인기 발병 성선자극호르몬 결핍에서 정자형성을 다시 시작시킬 수 있다 <sup>[1 391장 p.3009]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "lh-level-primary-secondary",
+    "name": "테스토스테론 저하에서 LH 로 병변 위치 가르기",
+    "kind": "진단 기준",
+    "population": "혈청 테스토스테론이 낮은 남성",
+    "statement": "LH 가 높으면 고환 수준의 일차 결함, LH 가 낮거나 「부적절하게 정상」이면 시상하부·뇌하수체 수준의 이차 결함이다 [[harrison-21: 391장 p.3010]]",
+    "exceptions": "LH 는 1–3시간마다 박동성으로 분비돼 값이 출렁인다 — 여러 번 채혈해 합치거나 반복 측정한다 [[harrison-21: 391장 p.3010]]",
+    "source": "harrison-21",
+    "locator": "391장 p.3010 Gonadotropin and inhibin measurements",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 391: Disorders of the Testes and Male Reproductive System",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 391장 p.3006–3026",
+    "checked": "드라이브 391장 문서 대조 — p.3006(LH·FSH 통제 아래 간질세포 테스토스테론·세르톨리세포의 생식세포 지지, 간질세포 INSL3·세르톨리세포 MIS, 태아 간질세포), p.3007(LH 는 주로 간질세포, FSH 는 세르톨리세포·인히빈 B 의 FSH 선택 억제, LH 수용체 G 단백·cAMP·StAR, 콜레스테롤 미토콘드리아 내막 수송이 속도제한, CYP11A1·CYP17A1), p.3009(FSH 수용체 변이·세정관 손상 시 FSH 선택 상승·고환 내 고농도 테스토스테론), p.3010(LH 로 일차·이차 구분, 박동 분비), p.3012(고프롤락틴혈증 = 성선자극호르몬이 낮은 시상하부·뇌하수체 원인), p.3020(고환절제 = 일차 고환 부전·LH 상승)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "hpa-insl3",
+    "org": "Human Protein Atlas",
+    "title": "INSL3 — tissue expression, Testis",
+    "kind": "other",
+    "citation": "",
+    "checked": "문항 영상의 출처 페이지. 이 컨테이너에서 접속이 막혀 주석(간질세포 강양성·세정관 세포 음성)을 직접 대조하지 못했다 — 문항 해설의 인용만 확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2026",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis"
+   }
+  ],
+  "checks": [
+   {
+    "q": "고환 사진에서 세정관 안은 음성이고 관 사이 세포 무리만 강양성이다. 이 세포의 주된 표적 호르몬은?",
+    "a": "LH — 관 사이의 간질(Leydig)세포이며 LH 수용체를 통해 테스토스테론을 만든다."
+   },
+   {
+    "q": "FSH 의 고환 표적 세포와 그 세포가 내는 FSH 되먹임 호르몬은?",
+    "a": "세르톨리세포, 인히빈 B(FSH 를 선택적으로 억제)."
+   },
+   {
+    "q": "간질세포에서 테스토스테론 합성의 속도제한 단계는?",
+    "a": "StAR 단백에 의한 콜레스테롤의 미토콘드리아 내막 수송."
+   },
+   {
+    "q": "테스토스테론이 낮고 LH 가 높다. 병변 위치는?",
+    "a": "고환(일차 성선기능저하증). LH 가 낮거나 부적절하게 정상이면 시상하부·뇌하수체(이차)."
+   },
+   {
+    "q": "AMH 가 간질세포의 표적 호르몬이 아닌 이유는?",
+    "a": "AMH 는 세르톨리세포가 분비해 태아 뮐러관을 퇴행시키는 호르몬이다 — 분비 산물이지 간질세포에 작용하는 호르몬이 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.uro.testis-histology.leydig-lh-target#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 양성 세포가 세정관 안에 있다",
+    "stem": "A 34-year-old man with 2 years of infertility undergoes testicular biopsy. Semen analysis showed reduced sperm concentration. The section is stained by immunohistochemistry for a protein expressed by a single testicular cell type. The positive cells are tall, irregular cells that rest on the basement membrane of the seminiferous tubules and extend cytoplasmic processes toward the lumen, surrounding developing germ cells; the interstitial tissue between the tubules is negative. The positive cells are the principal target of which of the following hormones?",
+    "options": [
+     "Luteinizing hormone",
+     "Follicle-stimulating hormone",
+     "Prolactin",
+     "Gonadotropin-releasing hormone",
+     "Anti-Müllerian hormone"
+    ],
+    "answer": 2,
+    "explanation": "Cells that sit on the tubular basement membrane and surround germ cells inside the seminiferous tubules are Sertoli cells, and FSH acts on the Sertoli cell to regulate spermatogenesis and inhibin B production [[harrison-21: 391장 p.3007]]. In the original item the positive cells lay between the tubules (Leydig cells), so the answer was LH; moving the positive cells into the tubule is the single change that switches the answer. LH acts primarily on Leydig cells, GnRH acts on the pituitary, and AMH is secreted by Sertoli cells rather than acting on them [[harrison-21: 391장 p.3006]].",
+    "of": "imaging-2026-0004",
+    "changed": "양성 세포의 위치를 「세정관 사이 간질의 무리」에서 「세정관 안 기저막 위에서 생식세포를 둘러싸는 키 큰 세포」로 바꿈 → 표적 호르몬이 LH 에서 FSH 로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.uro.testis-histology.leydig-lh-target#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 다른 표지로 염색한 간질세포",
+    "stem": "During varicocele repair, a small testicular biopsy is taken from a 27-year-old man. The specimen is stained by immunohistochemistry for the side-chain cleavage enzyme (CYP11A1) that converts cholesterol to pregnenolone. Germ cells and all cells inside the seminiferous tubules are unstained. Strong cytoplasmic staining is present in clusters of polygonal cells in the connective tissue between the tubules. Which of the following hormones is the principal physiologic stimulus of the stained cells?",
+    "options": [
+     "Follicle-stimulating hormone",
+     "Inhibin B",
+     "Luteinizing hormone",
+     "Prolactin",
+     "Anti-Müllerian hormone"
+    ],
+    "answer": 3,
+    "explanation": "Clusters of cells between the tubules with the tubules themselves negative are Leydig cells — the location decides the cell, whatever the marker. In Leydig cells, CYP11A1 forms pregnenolone within the mitochondrion as part of testosterone synthesis, and LH acting on its G protein–coupled receptor drives this pathway through cAMP and StAR [[harrison-21: 391장 p.3007]]. FSH targets Sertoli cells inside the tubules; inhibin B and AMH are Sertoli-cell products, not hormones acting on Leydig cells; prolactin lowers testosterone only indirectly through suppression of gonadotropins [[harrison-21: 391장 p.3012]].",
+    "of": "imaging-2026-0004",
+    "changed": "나이·수술 이유(전립선암 고환절제 → 정계정맥류 수술 중 생검)·염색 대상(펩타이드 호르몬 → 스테로이드 합성 효소)·제시 순서를 바꾸고 「관 안 음성, 관 사이 무리 양성」은 그대로 → 답은 여전히 LH",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "고환 조직 사진 — 염색된 세포와 호르몬 연결",
+  "geo": {
+   "title": "고환 조직 사진 — 염색된 세포와 호르몬 연결",
+   "w": 934,
+   "h": 780.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "고환 조직 사진에서",
+      "양성(갈색) 세포를 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 16
+    },
+    {
+     "id": "loc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "양성 세포는 어디에 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "위치가 애매하면 세정관",
+      "윤곽(기저막)·생식세포층을",
+      "먼저 찾고, 양성 세포가 관",
+      "안인지 관 사이인지 다시 본다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 259.0
+    },
+    {
+     "id": "leydig",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "세정관 사이 간질의 무리 →",
+      "간질(Leydig)세포"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 423.0
+    },
+    {
+     "id": "sertoli",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "세정관 안 기저막 위,",
+      "생식세포를 둘러쌈 →",
+      "세르톨리세포"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 423.0
+    },
+    {
+     "id": "askl",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "질문이 묻는 것은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "asks",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "질문이 묻는 것은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 570.0
+    },
+    {
+     "id": "lh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "표적 = LH (LH 수용체 →",
+      "cAMP → StAR →",
+      "테스토스테론)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 683.0
+    },
+    {
+     "id": "testo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "분비 = 테스토스테론 · INSL3"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 683.0
+    },
+    {
+     "id": "fsh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "표적 = FSH (정자형성 지원)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 683.0
+    },
+    {
+     "id": "inh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "분비 = 인히빈 B · AMH(MIS)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 694.0,
+     "y": 683.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "loc",
+     "points": [
+      [
+       453.0,
+       80
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       90
+      ],
+      [
+       453.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "loc",
+     "to": "leydig",
+     "points": [
+      [
+       404.0,
+       193.0
+      ],
+      [
+       404.0,
+       203.0
+      ],
+      [
+       904,
+       203.0
+      ],
+      [
+       904,
+       377.0
+      ],
+      [
+       307.3,
+       377.0
+      ],
+      [
+       307.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관 사이(간질)"
+      ],
+      "w": 79.5,
+      "h": 17,
+      "x": 267.6,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       193.0
+      ],
+      [
+       453.0,
+       209.0
+      ],
+      [
+       453.0,
+       209.0
+      ],
+      [
+       453.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "판단 어려움"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 419.6,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "sertoli",
+     "points": [
+      [
+       502.0,
+       193.0
+      ],
+      [
+       502.0,
+       215.0
+      ],
+      [
+       918,
+       215.0
+      ],
+      [
+       918,
+       377.0
+      ],
+      [
+       533.3,
+       377.0
+      ],
+      [
+       533.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관 안(기저막 위)"
+      ],
+      "w": 94.2,
+      "h": 17,
+      "x": 486.2,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "leydig",
+     "points": [
+      [
+       420.3,
+       357.0
+      ],
+      [
+       420.3,
+       367.0
+      ],
+      [
+       372.7,
+       367.0
+      ],
+      [
+       372.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관 사이로 확인"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 331.9,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "sertoli",
+     "points": [
+      [
+       485.7,
+       357.0
+      ],
+      [
+       485.7,
+       373.0
+      ],
+      [
+       598.7,
+       373.0
+      ],
+      [
+       598.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관 안으로 확인"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 557.9,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "leydig",
+     "to": "askl",
+     "points": [
+      [
+       340.0,
+       487.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       340.0,
+       570.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sertoli",
+     "to": "asks",
+     "points": [
+      [
+       566.0,
+       504.0
+      ],
+      [
+       566.0,
+       514.0
+      ],
+      [
+       566.0,
+       514.0
+      ],
+      [
+       566.0,
+       570.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "askl",
+     "to": "lh",
+     "points": [
+      [
+       307.3,
+       617.0
+      ],
+      [
+       307.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "표적 호르몬"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 80.6,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "askl",
+     "to": "testo",
+     "points": [
+      [
+       372.7,
+       617.0
+      ],
+      [
+       372.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "분비 산물"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "asks",
+     "to": "fsh",
+     "points": [
+      [
+       533.3,
+       617.0
+      ],
+      [
+       533.3,
+       627.0
+      ],
+      [
+       566.0,
+       627.0
+      ],
+      [
+       566.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "표적 호르몬"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 532.6,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "asks",
+     "to": "inh",
+     "points": [
+      [
+       598.7,
+       617.0
+      ],
+      [
+       598.7,
+       633.0
+      ],
+      [
+       792.0,
+       633.0
+      ],
+      [
+       792.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "분비 산물"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 764.1,
+      "y": 663.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "고환 조직 사진에서 양성(갈색) 세포를 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "양성 세포는 어디에 있나?"
+     }
+    ]
+   },
+   {
+    "id": "loc",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "양성 세포는 어디에 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "관 사이(간질)",
+      "to": 4,
+      "toText": "세정관 사이 간질의 무리 → 간질(Leydig)세포"
+     },
+     {
+      "label": "관 안(기저막 위)",
+      "to": 5,
+      "toText": "세정관 안 기저막 위, 생식세포를 둘러쌈 → 세르톨리세포"
+     },
+     {
+      "label": "판단 어려움",
+      "to": 3,
+      "toText": "위치가 애매하면 세정관 윤곽(기저막)·생식세포층을 먼저 찾고, 양성 세포가 관 안인지 관 사이인지 다시 본다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "위치가 애매하면 세정관 윤곽(기저막)·생식세포층을 먼저 찾고, 양성 세포가 관 안인지 관 사이인지 다시 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "관 사이로 확인",
+      "to": 4,
+      "toText": "세정관 사이 간질의 무리 → 간질(Leydig)세포"
+     },
+     {
+      "label": "관 안으로 확인",
+      "to": 5,
+      "toText": "세정관 안 기저막 위, 생식세포를 둘러쌈 → 세르톨리세포"
+     }
+    ]
+   },
+   {
+    "id": "leydig",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "세정관 사이 간질의 무리 → 간질(Leydig)세포",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "질문이 묻는 것은?"
+     }
+    ]
+   },
+   {
+    "id": "sertoli",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "세정관 안 기저막 위, 생식세포를 둘러쌈 → 세르톨리세포",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "질문이 묻는 것은?"
+     }
+    ]
+   },
+   {
+    "id": "askl",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "질문이 묻는 것은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "표적 호르몬",
+      "to": 8,
+      "toText": "표적 = LH (LH 수용체 → cAMP → StAR → 테스토스테론)"
+     },
+     {
+      "label": "분비 산물",
+      "to": 9,
+      "toText": "분비 = 테스토스테론 · INSL3"
+     }
+    ]
+   },
+   {
+    "id": "asks",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "질문이 묻는 것은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "표적 호르몬",
+      "to": 10,
+      "toText": "표적 = FSH (정자형성 지원)"
+     },
+     {
+      "label": "분비 산물",
+      "to": 11,
+      "toText": "분비 = 인히빈 B · AMH(MIS)"
+     }
+    ]
+   },
+   {
+    "id": "lh",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "표적 = LH (LH 수용체 → cAMP → StAR → 테스토스테론)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "testo",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "분비 = 테스토스테론 · INSL3",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "fsh",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "표적 = FSH (정자형성 지원)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "inh",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "분비 = 인히빈 B · AMH(MIS)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0004"
   ],
   "hasErrors": false
  }

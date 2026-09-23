@@ -1523,6 +1523,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0102.jpg",
    "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
@@ -4495,6 +4496,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0079.jpg",
    "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
@@ -6336,6 +6338,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.em.lithium-toxicity.hemodialysis-indication",
   "figureImg": null,
   "attribution": {
    "dataset": "",
@@ -7033,6 +7036,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.em.ards.lung-protective-ventilation",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0063.png",
    "caption": "Upright anteroposterior chest radiograph obtained before intubation (The Cancer Imaging Archive, CC BY 4.0; original pixel data, no windowing or cropping)",
@@ -7307,6 +7311,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.torus-fracture.splint-no-reduction",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0056.png",
    "caption": "왼쪽 손목 전후면 단순 X선, 원본 그대로 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
@@ -7441,6 +7446,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.derm.regressing-pigmented-lesion.biopsy-first",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0054.jpg",
    "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0)",
@@ -8214,6 +8220,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.cervix-transformation-zone.squamous-metaplasia",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0049.jpg",
    "caption": "Immunohistochemistry (DAB brown, hematoxylin counterstain) of a tissue-microarray core, original magnification (Human Protein Atlas, CC BY 4.0; no cropping or adjustment)",
@@ -8292,6 +8299,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.intrapartum-fhr.nichd-category",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0048.png",
    "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
@@ -9508,6 +9516,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.intrapartum-fhr.nichd-category",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0032.png",
    "caption": "Intrapartum fetal heart rate (top) and uterine activity (bottom), minutes 10–20 of the recording; 3 cm/min, vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; raw 4 Hz data, no smoothing)",
@@ -10958,6 +10967,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0013.png",
    "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM with windowing only)",
@@ -11036,6 +11046,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0012.png",
    "caption": "흉부 CT 축상면, 폐창(lung window) — 표준 표시 방향(환자의 오른쪽이 그림의 왼쪽) (The Cancer Imaging Archive, CC BY 3.0 — DICOM 원본을 창 설정 외 가공 없이 변환)",
@@ -11114,6 +11125,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.qrs-axis.limb-lead-polarity",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0011.png",
    "caption": "12-lead ECG, 25 mm/s, 10 mm/mV, 3×4 + lead II rhythm strip (PTB-XL, PhysioNet, CC BY 4.0; raw signal, no filtering)",
@@ -11348,6 +11360,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.uro.testis-histology.leydig-lh-target",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0004.jpg",
    "caption": "Human tissue section, immunohistochemistry (brown = positive, blue = hematoxylin counterstain) (Human Protein Atlas, CC BY 4.0; original image, resized only)",
@@ -11956,6 +11969,7 @@ window.IMAGING_QUESTIONS = [
   "appendix": null,
   "design": null,
   "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk",
   "figureImg": null,
   "attribution": {
    "dataset": "",
