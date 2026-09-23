@@ -16,6 +16,12 @@
            이미 단원이 있는 책만 대상으로 하고, 그 책의 해리슨 서술 순서에서 앞쪽 빈 슬롯부터 준다.
 우선순위 = 반복 오답·후속 확인 실패·표시(learning_log 의 priority)를 그대로 쓴다.
 
+오답의 원천은 둘이다(2026-09-23).
+  학습 기록  state/learning_sync/events.json — 2026-09-18 학습 흐름이 생긴 뒤의 풀이만 있다.
+  오답 목록  state/wrong_sync/<exam>.json   — 앱 오답노트(기기에서 동기화). 그 전의 오답도 여기 남아 있다.
+학습 기록에 **오답으로 남지 않은** 문항만 오답 목록에서 채운다(`wrongnote_events`). 실제 풀이가 있으면 그 기록이
+우선이다. 채운 사건은 큐 계산에만 쓰고 events.json 에 쓰지 않는다(사용자 기록을 지어내지 않는다).
+
 사용:
   python pipelines/concept_queue.py                 # 큐 출력 + state/concept_queue.json 갱신
   python pipelines/concept_queue.py --limit 3       # 오늘 쓸 상위 N개만(루틴 상한)
@@ -34,11 +40,44 @@ from concepts import load_concepts, load_questions
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "concept_queue.json"
+WRONG_SYNC = ROOT / "state" / "wrong_sync"
 
 
-def build(events: list[dict]) -> dict:
+def load_wrong_notes(folder: Path = WRONG_SYNC) -> dict[str, dict]:
+    """{문항id: 오답노트 항목} — kmle·usmle·imaging 오답 목록을 합친다. 읽을 수 없는 파일은 건너뛴다."""
+    out: dict[str, dict] = {}
+    for f in sorted(folder.glob("*.json")) if folder.exists() else []:
+        try:
+            items = json.loads(f.read_text(encoding="utf-8")).get("items") or {}
+        except (OSError, ValueError, AttributeError):
+            continue
+        rows = items.values() if isinstance(items, dict) else items
+        for it in rows:
+            if isinstance(it, dict) and it.get("id"):
+                out[str(it["id"])] = it
+    return out
+
+
+def wrongnote_events(wrongnote: dict[str, dict], events: list[dict]) -> list[dict]:
+    """학습 기록에 오답이 없는 오답노트 항목을 큐 계산용 「오답 사건」으로 바꾼다(저장하지 않음)."""
+    logged = {e.get("qid") for e in events if e.get("kind") == "answer" and not e.get("ok")}
+    out = []
+    for qid, it in sorted(wrongnote.items()):
+        if qid in logged:
+            continue
+        day = str(it.get("date") or "")[:10]
+        out.append({"eid": f"wrongnote:{qid}", "kind": "answer", "ok": False, "qid": qid,
+                    "t": f"{day}T00:00:00Z" if day else "", "day": day, "mode": "wrongnote",
+                    "chosenText": str(it.get("chosenText") or ""), "answerText": str(it.get("answerText") or "")})
+    return out
+
+
+def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
+    """wrongnote: 오답 목록({문항id: 항목}). 넘기면 학습 기록에 없는 오답을 채운다(None = 학습 기록만)."""
     concepts, _ = load_concepts()
     questions = load_questions()
+    from_note = wrongnote_events(wrongnote or {}, events)
+    events = list(events) + from_note
     S = ll.states(events, {q: m.get("objective") for q, m in questions.items() if m.get("objective")})
     notes: list[dict] = []
     touches: list[dict] = []
@@ -69,7 +108,8 @@ def build(events: list[dict]) -> dict:
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
     return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches, "gap": gaps,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
-                       "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts)}}
+                       "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
+                       "from_wrongnote": len(from_note)}}
 
 
 def _letter(q: dict, text: str) -> str:
@@ -128,13 +168,15 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--events", help="학습 기록 파일(기본: state/learning_sync/events.json + 수신함)")
     ap.add_argument("--limit", type=int, default=0, help="오늘 처리할 상위 N개만 출력(0=전부)")
     ap.add_argument("--json", action="store_true", help="사람이 읽는 줄 대신 JSON 만")
+    ap.add_argument("--wrong-sync", help="오답 목록 폴더(기본: state/wrong_sync)")
+    ap.add_argument("--no-wrongnote", action="store_true", help="학습 기록만 쓴다(오답 목록 무시)")
     a = ap.parse_args(argv)
     if a.events:
         events = ll.read_events(Path(a.events))
     else:
         ll.sync_inbox()
         events = ll.read_events(ll.SYNC_FILE)
-    q = build(events)
+    q = build(events, None if a.no_wrongnote else load_wrong_notes(Path(a.wrong_sync) if a.wrong_sync else WRONG_SYNC))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, gap = q["note"], q["link"], q["touch"], q["gap"]
@@ -143,11 +185,12 @@ def main(argv: list[str]) -> int:
     if a.json:
         print(json.dumps({"note": note, "link": link, "touch": touch, "gap": gap, "counts": q["counts"]}, ensure_ascii=False, indent=1))
         return 0
-    if not events:
+    if not events and not q["counts"]["from_wrongnote"]:
         print("학습 기록이 없다 — 앱의 「학습 기록 내보내기」가 드라이브 수신함에 들어왔는지 본다(동기화 미설정이면 정상).")
     print(f"정리본 대기(note) {q['counts']['note']}건 · 목표 연결 대기(link) {q['counts']['link']}건 · "
           f"손질 대기(touch) {q['counts']['touch']}건 · "
-          f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개")
+          f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개 · "
+          f"오답 목록에서 채운 오답 {q['counts']['from_wrongnote']}건")
     for n in note:
         print(f"  [note] {n['objective']}  오답 {n['wrongs']}회 · 우선순위 {n['priority']} · {n['topic']}/{n['subtopic']} · 문항 {', '.join(n['questions'][:4])}")
     for l in link:

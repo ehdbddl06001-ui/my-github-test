@@ -508,6 +508,31 @@ class ConceptQueueTest(unittest.TestCase):
     def tearDown(self):
         self.cq.load_concepts, self.cq.load_questions = self._orig
 
+    def test_wrong_note_fills_answers_missing_from_learning_log(self):
+        """학습 흐름(2026-09-18) 전의 오답은 오답 목록에만 있다 — 큐가 그것도 집어야 한다(2026-09-23)."""
+        e = [wrong("e2", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20")]
+        note = {"q2": {"id": "q2", "date": "2026-09-20", "chosenText": "x"},            # 학습 기록에 이미 있음 → 중복 안 셈
+                "q3": {"id": "q3", "date": "2026-09-13", "chosenText": "a", "answerText": "b"},   # 목표 없음 → link
+                "q9": {"id": "q9", "date": "2026-09-13"}}                                # 없는 문항 → 무시
+        q = self.cq.build(e, note)
+        self.assertEqual([(n["objective"], n["wrongs"]) for n in q["note"]], [("cn.derm.c.d", 1)])
+        self.assertEqual([l["questions"] for l in q["link"]], [["q3"]])
+        self.assertEqual(q["counts"]["from_wrongnote"], 2)
+        self.assertEqual(self.cq.build(e)["counts"]["from_wrongnote"], 0)            # 넘기지 않으면 학습 기록만
+
+    def test_wrong_note_with_objective_and_existing_concept_becomes_touch(self):
+        self.qs["q1"]["choices"] = ["A. 가", "B. 나"]
+        self.concepts["cn.derm.a.b"]["pitfalls"] = []
+        q = self.cq.build([], {"q1": {"id": "q1", "date": "2026-09-10", "chosenText": "나", "answerText": "가"}})
+        self.assertEqual([x["cover"] for x in q["touch"]], ["q1:B"])
+
+    def test_load_wrong_notes_reads_every_exam_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            Path(d, "kmle.json").write_text(json.dumps({"items": {"k1": {"id": "k1"}}}), encoding="utf-8")
+            Path(d, "usmle.json").write_text(json.dumps({"items": [{"id": "u1"}]}), encoding="utf-8")
+            Path(d, "broken.json").write_text("{", encoding="utf-8")
+            self.assertEqual(sorted(self.cq.load_wrong_notes(Path(d))), ["k1", "u1"])
+
     def test_queue_splits_note_and_link_and_skips_existing_notes(self):
         e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20"),     # 정리본 있음 → 큐에 없음
              wrong("e2", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20"),     # 목표만 있음 → note
