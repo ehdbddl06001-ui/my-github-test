@@ -129,7 +129,9 @@ const SYNC = {
   busy: false,
   device: deviceId(),
   lastError: "",
+  auth: null,               // null=모름 · "ok" · "missing"(서버는 키가 필요한데 이 기기에 없음) · "wrong"(틀린 키)
 };
+const SYNC_EXAMS = ["kmle", "usmle", "imaging"];
 function deviceId() {
   try {
     let id = localStorage.getItem("medkos_device");
@@ -142,7 +144,71 @@ function deviceId() {
     return id;
   } catch (e) { return "web"; }
 }
-function syncKey() { try { return localStorage.getItem("medkos_sync_key") || ""; } catch (e) { return ""; } }
+// 키는 docs/synckey.js 가 관리한다(#k= 연결 링크로 받은 키 포함).
+function syncKey() {
+  if (typeof MEDKOS_SYNC === "object") return MEDKOS_SYNC.get();
+  try { return localStorage.getItem("medkos_sync_key") || ""; } catch (e) { return ""; }
+}
+// 이 기기에만 있는 것 — 키가 들어오면 전부 합쳐 올라간다(서버는 합집합).
+function localBacklog() {
+  let wrong = 0;
+  SYNC_EXAMS.forEach((e) => { wrong += Object.keys(loadWrong(e)).length; });
+  const events = typeof LEARN === "object" && LEARN.load ? LEARN.load().length : 0;
+  return { wrong, events };
+}
+/* 키가 없거나 틀린 기기는 첫 화면에 크게 알린다(2026-09-23). 예전에는 상태 줄 한 칸의 「실패」뿐이라
+   몇 주 동안 오답이 기기 안에만 쌓인 것을 아무도 몰랐다. */
+function renderSyncBanner() {
+  const el = $("syncNeedKey");
+  if (!el) return;
+  if (SYNC.auth !== "missing" && SYNC.auth !== "wrong") { el.classList.add("hidden"); return; }
+  const b = localBacklog();
+  const why = SYNC.auth === "wrong" ? "이 기기에 저장된 동기화 키가 서버와 맞지 않아" : "이 기기에 동기화 키가 없어";
+  $("syncNeedKeyText").textContent =
+    `${why} 오답 ${b.wrong}개 · 학습 기록 ${b.events}건이 이 기기에만 있습니다. ` +
+    "키가 있는 기기의 「동기화 설정 ▸ 다른 기기 연결 링크」를 이 기기에서 열거나, 아래에 키를 넣으세요. " +
+    "넣는 즉시 지금까지의 기록이 모두 올라갑니다.";
+  el.classList.remove("hidden");
+}
+function describeAuth() {
+  const el = $("syncAuthInfo");
+  if (!el) return;
+  el.textContent = SYNC.auth === "ok" ? "이 기기: 키 확인됨"
+    : SYNC.auth === "missing" ? "이 기기: 키 없음 — 동기화 안 됨"
+    : SYNC.auth === "wrong" ? "이 기기: 키 틀림 — 동기화 안 됨"
+    : "이 기기: 키 상태 확인 전";
+}
+// 서버에 「이 기기의 키가 맞는가」만 묻는다(데이터는 읽지 않음). 옛 배포라 /api/status 가 없으면 동기화 응답(401)으로 판단한다.
+async function checkSyncAuth() {
+  if (location.protocol === "file:" || typeof fetch !== "function") return;
+  try {
+    const r = await fetch((window.MEDKOS_API_BASE || "") + "api/status", { headers: syncHeaders() });
+    if (!r.ok || !/json/.test(r.headers.get("content-type") || "")) return;
+    const s = await r.json();
+    SYNC.auth = s.keyOk ? "ok" : (s.keySent ? "wrong" : "missing");
+  } catch (e) { return; }
+  renderSyncBanner(); describeAuth();
+}
+async function onSyncKeyChange(value) {
+  if (typeof MEDKOS_SYNC === "object") MEDKOS_SYNC.set(value);
+  else try { localStorage.setItem("medkos_sync_key", String(value || "").trim()); } catch (e) { /* ignore */ }
+  SYNC.available = null;
+  SYNC.auth = null;
+  await checkSyncAuth();
+  if (typeof LEARN === "object") await LEARN.syncLearning(false);
+  await syncAll(false);
+}
+async function shareSyncLink() {
+  const k = syncKey();
+  const out = $("syncLinkOut");
+  if (!k) { alert("이 기기에 동기화 키가 없어 링크를 만들 수 없습니다. 키가 있는 기기에서 만드세요."); return; }
+  const link = typeof MEDKOS_SYNC === "object" ? MEDKOS_SYNC.linkFor(k) : "";
+  if (out) { out.value = link; out.classList.remove("hidden"); out.select(); }
+  try {
+    if (navigator.share) { await navigator.share({ title: "MedKOS 기기 연결", url: link }); return; }
+    if (navigator.clipboard) { await navigator.clipboard.writeText(link); setSyncStatus("☁ 연결 링크를 복사했습니다 — 본인 기기에서만 여세요.", "ok"); }
+  } catch (e) { /* 공유 취소 — 아래 칸에서 직접 복사 */ }
+}
 function syncHeaders() {
   const h = { "content-type": "application/json" };
   const k = syncKey();
@@ -164,7 +230,12 @@ function scheduleSync() {
 // 상태 줄은 마지막 덱이 아니라 **덱별 개수를 모아** 한 줄로 적는다 — 예전에는 늘 뒤에 도는 영상 결과만 남아
 // 「영상 오답 0개」로 보여, KMLE 오답이 안 올라간 것처럼 읽혔다(2026-09-20).
 async function syncAll(quiet) {
-  const list = isImaging() ? ["imaging"] : [exam(), "imaging"];
+  // 지금 연 덱만이 아니라 이 기기에 기록이 있는 모든 시험을 보낸다(2026-09-23) — 예전에는 KMLE 덱을 열면
+  // USMLE 오답이 올라가지 않아 저장소에 USMLE 오답 파일이 한 번도 생기지 않았다.
+  const list = [exam()];
+  SYNC_EXAMS.forEach((e) => {
+    if (list.indexOf(e) < 0 && (e === "imaging" || Object.keys(loadWrong(e)).length || Object.keys(loadRemoved(e)).length)) list.push(e);
+  });
   if (!quiet) setSyncStatus("☁ 동기화 중…");
   const parts = [];
   for (const e of list) {
@@ -197,6 +268,13 @@ async function syncNow(e, quiet) {
       return null;
     }
     const data = await res.json().catch(() => ({}));
+    if (res.status === 401) {                     // 키 없음·틀림 — 첫 화면에 크게 알린다
+      SYNC.auth = syncKey() ? "wrong" : "missing";
+      SYNC.lastError = data.error || "동기화 키 필요";
+      setSyncStatus("동기화 안 됨: 이 기기에 맞는 동기화 키가 없습니다(아래 경고 참고)", "bad");
+      renderSyncBanner(); describeAuth();
+      return null;
+    }
     if (!res.ok) {
       SYNC.available = res.status !== 503;
       SYNC.lastError = data.error || ("HTTP " + res.status);
@@ -204,6 +282,7 @@ async function syncNow(e, quiet) {
       return null;
     }
     SYNC.available = true;
+    if (SYNC.auth !== "ok") { SYNC.auth = "ok"; renderSyncBanner(); describeAuth(); }
     saveWrong(data.items || {}, e);
     saveRemoved(data.removed || {}, e);
     const n = Object.keys(data.items || {}).length;
@@ -1103,12 +1182,16 @@ function init() {
   };
   if ($("syncKey")) {
     $("syncKey").value = syncKey();
-    $("syncKey").onchange = () => {
-      try { localStorage.setItem("medkos_sync_key", $("syncKey").value.trim()); } catch (e) { /* ignore */ }
-      SYNC.available = null;
-      syncNow(exam(), false);
-    };
+    $("syncKey").onchange = () => onSyncKeyChange($("syncKey").value);
   }
+  if ($("syncLinkBtn")) $("syncLinkBtn").onclick = shareSyncLink;
+  if ($("syncNeedKeyBtn")) $("syncNeedKeyBtn").onclick = () => {
+    const d = document.querySelector(".syncopts"); if (d) d.open = true;
+    if ($("syncKey")) $("syncKey").focus();
+  };
+  if (typeof MEDKOS_SYNC === "object" && MEDKOS_SYNC.captured) setSyncStatus("☁ 연결 링크의 동기화 키를 이 기기에 저장했습니다 — 기록을 올립니다…", "ok");
+  describeAuth();
+  checkSyncAuth();
   updateWrongCount();
   window.addEventListener("online", () => { if (SYNC.available !== false) syncAll(true); });
   // 핸드폰 앱은 닫히지 않고 백그라운드에서 돌아온다 — 돌아올 때마다 한 번 맞춘다(2026-09-22)

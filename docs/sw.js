@@ -10,10 +10,10 @@
    경로는 전부 상대경로라 GitHub Pages(/my-github-test/)와 Cloudflare Pages(/) 어디서든 같다. */
 "use strict";
 
-const VERSION = "medkos-v14";
+const VERSION = "medkos-v15";
 const DATA_TIMEOUT_MS = 8000;   // 이 시간 안에 네트워크 응답이 없으면 캐시로 먼저 보여 준다
 const SHELL = [
-  "./", "./index.html", "./style.css", "./app.js", "./learn.js", "./pwa.js", "./manifest.webmanifest",
+  "./", "./index.html", "./style.css", "./app.js", "./learn.js", "./synckey.js", "./pwa.js", "./manifest.webmanifest",
   "./papers.html", "./papers-app.js", "./ailab.html", "./ailab-app.js",
   "./anatomy.html", "./anatomy.css", "./anatomy-app.js",
   "./search.html", "./search-app.js", "./whatsnew.html", "./whatsnew-app.js",

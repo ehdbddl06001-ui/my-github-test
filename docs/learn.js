@@ -559,7 +559,7 @@ const LEARN = (() => {
   // 이제 「함수가 없는 호스트」(404·405·501·JSON 아님)만 포기하고, 나머지 실패는 간격을 늘려 다시 시도하며
   // 앱으로 돌아올 때·온라인이 될 때·「지금 동기화」를 누를 때도 보낸다. 서버는 eid 합집합이라 여러 번 보내도 안전하다.
   let syncTimer = null;
-  const LSYNC = { url: API_BASE + "api/learning", available: null, busy: false, fails: 0, lastOk: "", lastError: "" };
+  const LSYNC = { url: API_BASE + "api/learning", available: null, busy: false, fails: 0, lastOk: "", lastError: "", needsKey: false };
   function scheduleLearnSync(delay) {
     if (LSYNC.available === false) return;
     clearTimeout(syncTimer);
@@ -572,9 +572,11 @@ const LEARN = (() => {
       const headers = Object.assign({ "content-type": "application/json" }, typeof syncHeaders === "function" ? syncHeaders() : {});
       const r = await fetch(LSYNC.url, { method: "POST", headers, body: JSON.stringify({ device: device(), events: load() }) });
       if (r.status === 404 || r.status === 405 || r.status === 501) { LSYNC.available = false; return LSYNC; }  // 함수 없는 호스트
+      // 키 없음·틀림은 다시 보내도 같다 — 재시도하지 않고 표시만 한다. 키가 바뀌면 app.js 가 syncLearning 을 다시 부른다(2026-09-23).
+      if (r.status === 401) { LSYNC.needsKey = true; LSYNC.lastError = "동기화 키 필요"; return LSYNC; }
       if (!r.ok) throw new Error("HTTP " + r.status);
       if (!/json/.test(r.headers.get("content-type") || "")) { LSYNC.available = false; return LSYNC; }
-      LSYNC.available = true; LSYNC.fails = 0; LSYNC.lastError = "";
+      LSYNC.available = true; LSYNC.fails = 0; LSYNC.lastError = ""; LSYNC.needsKey = false;
       LSYNC.lastOk = new Date().toTimeString().slice(0, 5);
       const data = await r.json();
       if (data && Array.isArray(data.events)) mergeEvents(data.events);
@@ -585,7 +587,7 @@ const LEARN = (() => {
     } finally { LSYNC.busy = false; }
     return LSYNC;
   }
-  function learnSyncState() { return { available: LSYNC.available, fails: LSYNC.fails, lastOk: LSYNC.lastOk, lastError: LSYNC.lastError, count: load().length }; }
+  function learnSyncState() { return { available: LSYNC.available, fails: LSYNC.fails, lastOk: LSYNC.lastOk, lastError: LSYNC.lastError, needsKey: LSYNC.needsKey, count: load().length }; }
   if (typeof document !== "undefined") {
     document.addEventListener("visibilitychange", () => { if (!document.hidden) scheduleLearnSync(500); });
     window.addEventListener("online", () => scheduleLearnSync(500));

@@ -223,7 +223,7 @@ class LearningStates(unittest.TestCase):
                   wrong("e3", "q4", "o3", "2026-09-20T01:00:00Z", "2026-09-20")]
         harness = (
             "const fs=require('fs');const vm=require('vm');const store={};"
-            "const ctx={window:{},localStorage:{getItem:k=>store[k]||null,setItem:(k,v)=>{store[k]=v}},"
+            "const ctx={window:{},location:{hostname:'localhost',protocol:'https:'},localStorage:{getItem:k=>store[k]||null,setItem:(k,v)=>{store[k]=v}},"
             "KMLE:[],USMLE:[],IMAGING:[],console};vm.createContext(ctx);"
             f"store['medkos_learning_events']=JSON.stringify({json.dumps(events)});"
             f"vm.runInContext(fs.readFileSync({json.dumps(str(ROOT / 'docs' / 'learn.js'))},'utf8')+"

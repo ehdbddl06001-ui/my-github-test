@@ -123,6 +123,11 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   커밋 → `.github/workflows/wrong-sync.yml` 이 `pipelines/import_wrong_sync.py` 로 오답노트 .md 를
   다시 쓴다. `state/wrong_sync/` 는 **사용자 데이터**라 커밋한다(파생 상태가 아님). 시크릿
   (`GITHUB_TOKEN`·`SYNC_KEY`)은 Cloudflare 대시보드에만 두고 repo 에 절대 넣지 않는다.
+- **동기화 키는 기기마다 따로다(2026-09-23)** — 손으로 넣지 않은 기기의 기록은 그 기기에만 쌓였다. 이제 키가 있는
+  기기의 「동기화 설정 ▸ 다른 기기 연결 링크」(`https://my-github-test.pages.dev/#k=<키>`)를 새 기기에서 한 번 열면
+  `docs/synckey.js` 가 키를 저장하고 주소에서 지운다. 앱은 켜질 때 `functions/api/status.js` 로 키 상태만 묻고(키 값은
+  돌려주지 않음) 없거나 틀리면 첫 화면에 경고를 띄운다. 동기화는 연 덱만이 아니라 기록이 있는 모든 시험을 보낸다.
+  회귀: `python pipelines/test_sync_key.py`.
 
 ## 오답 뒤 학습 흐름 · 과별 PDF 학습서 (2026-09-18)
 - 앱: `docs/learn.js` 가 채점 뒤에만 오답 확인·보기 비교·정리본·판단 도식(createElementNS — innerHTML 없음)·
