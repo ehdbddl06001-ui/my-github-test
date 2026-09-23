@@ -1,57 +1,155 @@
 {
- "started": "2026-09-22T21:08:27+09:00",
+ "started": "2026-09-23T17:47:24+09:00",
  "built": [
-  "피부과"
+  "안과",
+  "정형외과",
+  "외과",
+  "산부인과",
+  "소아청소년과",
+  "정신건강의학과",
+  "류마티스내과",
+  "호흡기내과"
  ],
  "skipped": [
+  "피부과",
   "순환기내과",
-  "신장내과",
-  "소아청소년과"
+  "신장내과"
  ],
  "failed": {},
  "retry": [],
  "previews": [],
  "validation": {
-  "피부과": []
+  "안과": [],
+  "정형외과": [],
+  "외과": [],
+  "산부인과": [],
+  "소아청소년과": [],
+  "정신건강의학과": [],
+  "류마티스내과": [],
+  "호흡기내과": []
  },
  "notes": {
-  "피부과": [
-   "마지막 쪽 내용이 적다(11%)"
-  ]
+  "안과": [],
+  "정형외과": [],
+  "외과": [],
+  "산부인과": [],
+  "소아청소년과": [],
+  "정신건강의학과": [],
+  "류마티스내과": [],
+  "호흡기내과": []
  },
- "concept_errors": [],
+ "concept_errors": [
+  "content/concepts/obstetrics-gynecology/cn.obgyn.gestational-diabetes.insulin-indication.md: [WARN] 해리슨 대조 없음 — 슬롯 ob.medical-complications = 해리슨 398장. 그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다"
+ ],
  "layout_trials": {
-  "피부과": {
+  "정형외과": {
+   "tried": 2,
+   "diagram_after_section": {
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale": 27,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#crit_end": false
+   }
+  },
+  "외과": {
+   "tried": 27,
+   "diagram_after_section": {
+    "u-cn-gs-acute-cholecystitis-grade2-early-lc": 18,
+    "u-cn-gs-acute-cholecystitis-grade2-early-lc#crit_end": false,
+    "u-cn-gs-papillary-thyroid-carcinoma-surgical-extent-n1a": 29,
+    "u-cn-gs-papillary-thyroid-carcinoma-surgical-extent-n1a#crit_end": false
+   }
+  },
+  "산부인과": {
    "tried": 21,
    "diagram_after_section": {
-    "u-cn-derm-pityriasis-versicolor-treatment": "full",
-    "u-cn-derm-pityriasis-versicolor-treatment#crit_end": true,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 13,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#crit_end": false
+    "u-cn-obgyn-pcos-infertility-ovulation-induction": "full",
+    "u-cn-obgyn-pcos-infertility-ovulation-induction#crit_end": false
+   }
+  },
+  "소아청소년과": {
+   "tried": 24,
+   "diagram_after_section": {
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": "full",
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#crit_end": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-09-22T21:08:49+09:00",
+ "finished": "2026-09-23T17:48:30+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
+   "안과": {
+    "file": "MedKOS_학습서_안과.pdf",
     "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "kept_id": false,
+    "md5": "ab8e44998d2ca250ff3bbe873b81a3ca",
+    "archive": "MedKOS_학습서_안과_v1_2026-09-23.pdf"
+   },
+   "정형외과": {
+    "file": "MedKOS_학습서_정형외과.pdf",
+    "status": "uploaded",
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "kept_id": false,
+    "md5": "6a1212a58bf2b057106b98ceb363fb6e",
+    "archive": "MedKOS_학습서_정형외과_v1_2026-09-23.pdf"
+   },
+   "외과": {
+    "file": "MedKOS_학습서_외과.pdf",
+    "status": "uploaded",
+    "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
+    "kept_id": false,
+    "md5": "b35d1cdcb2c24f5b77354c60023b1b90",
+    "archive": "MedKOS_학습서_외과_v1_2026-09-23.pdf"
+   },
+   "산부인과": {
+    "file": "MedKOS_학습서_산부인과.pdf",
+    "status": "uploaded",
+    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
+    "kept_id": false,
+    "md5": "7514c88d458a7ce9b7198ae6b3a287a2",
+    "archive": "MedKOS_학습서_산부인과_v1_2026-09-23.pdf"
+   },
+   "소아청소년과": {
+    "file": "MedKOS_학습서_소아청소년과.pdf",
+    "status": "uploaded",
+    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
     "kept_id": true,
-    "md5": "87ed03f8f89f648e504e2fd56f15b5e5",
-    "archive": "MedKOS_학습서_피부과_v2_2026-09-22.pdf"
+    "md5": "15f689203164e793a3ca145a8f1743a5",
+    "archive": "MedKOS_학습서_소아청소년과_v2_2026-09-23.pdf"
+   },
+   "정신건강의학과": {
+    "file": "MedKOS_학습서_정신건강의학과.pdf",
+    "status": "uploaded",
+    "id": "1ZQToBsTHL2kPkoAh0qBCglJGTuVQnQ5o",
+    "kept_id": false,
+    "md5": "eb44f2a3c8f500b97d14ff38cd081d91",
+    "archive": "MedKOS_학습서_정신건강의학과_v1_2026-09-23.pdf"
+   },
+   "류마티스내과": {
+    "file": "MedKOS_학습서_류마티스내과.pdf",
+    "status": "uploaded",
+    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
+    "kept_id": false,
+    "md5": "6f603a67fcb326a7dbe48feeaefd5e86",
+    "archive": "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf"
+   },
+   "호흡기내과": {
+    "file": "MedKOS_학습서_호흡기내과.pdf",
+    "status": "uploaded",
+    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
+    "kept_id": false,
+    "md5": "47a98a3ce0078a1175c56811117dd577",
+    "archive": "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "9ba0188e79f28cd4eeb010d33c19dfd2"
+    "md5": "fea0de2bc2e068b775cfa022554876bf"
    }
   },
-  "at": "2026-09-22T21:08:49+09:00"
+  "at": "2026-09-23T17:48:30+09:00"
  }
 }

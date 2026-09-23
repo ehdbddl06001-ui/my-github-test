@@ -91,41 +91,275 @@
    "changes": []
   },
   "소아청소년과": {
-   "hash": "41ae7aed84c4ea96d089",
-   "version": 1,
-   "date": "2026-09-22",
+   "hash": "70b0cbdbceb0a257a594",
+   "version": 2,
+   "date": "2026-09-23",
    "file": "MedKOS_학습서_소아청소년과.pdf",
-   "pages": 3,
+   "pages": 11,
    "template_version": 7,
    "units": {
+    "cn.peds.rheumatic-fever.secondary-prophylaxis": {
+     "title": "급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다",
+     "page": 1,
+     "concept_hash": "79e59f24e9ff3124",
+     "concept_version": 1
+    },
+    "cn.peds.febrile-uti.imaging-workup": {
+     "title": "영아의 첫 열성 요로감염 — 영상은 신장·방광 초음파부터, 배뇨방광요도조영술은 조건이 있을 때만",
+     "page": 5,
+     "concept_hash": "848b5eabd8bac24c",
+     "concept_version": 1
+    },
     "cn.peds.febrile-seizure.workup": {
      "title": "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우",
-     "page": 1,
+     "page": 9,
      "concept_hash": "3ae22017a7d1b1c0",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "628d93d7cd23241d33af409c6317f1f9",
-    "version": 1,
-    "uploaded": "2026-09-22T20:53:16+09:00"
+    "md5": "15f689203164e793a3ca145a8f1743a5",
+    "version": 2,
+    "uploaded": "2026-09-23T17:48:30+09:00"
    },
    "archive": [
-    "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf"
+    "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
+    "MedKOS_학습서_소아청소년과_v2_2026-09-23.pdf"
+   ],
+   "changes": [
+    "새 단원: 급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다",
+    "새 단원: 영아의 첫 열성 요로감염 — 영상은 신장·방광 초음파부터, 배뇨방광요도조영술은 조건이 있을 때만"
+   ]
+  },
+  "안과": {
+   "hash": "99411b86c6a7695ff823",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_안과.pdf",
+   "pages": 9,
+   "template_version": 7,
+   "units": {
+    "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
+     "title": "급성 수술 후 안내염 — 유리체 천자·배양과 유리체내 항생제가 기본이고, 즉시 유리체절제술은 시력이 빛 감지뿐일 때다",
+     "page": 1,
+     "concept_hash": "04a06330eda7f81e",
+     "concept_version": 1
+    },
+    "cn.ophth.crao.arteritic-workup": {
+     "title": "망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다",
+     "page": 5,
+     "concept_hash": "bf6c176f71df6974",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "md5": "ab8e44998d2ca250ff3bbe873b81a3ca",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_안과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "정형외과": {
+   "hash": "0dca6f7b0adb6d3e3b0f",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_정형외과.pdf",
+   "pages": 5,
+   "template_version": 7,
+   "units": {
+    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
+     "title": "엉덩관절 골절 — 「관절낭 안 vs 밖」이 첫 갈림길이고, 전위된 넙다리뼈목 골절을 고령에서 치환하는 이유는 골두 혈류다",
+     "page": 1,
+     "concept_hash": "cee6e9adc52255d4",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "md5": "6a1212a58bf2b057106b98ceb363fb6e",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_정형외과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "외과": {
+   "hash": "240273a51c4b886631f5",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_외과.pdf",
+   "pages": 12,
+   "template_version": 7,
+   "units": {
+    "cn.gs.acute-cholecystitis.grade2-early-lc": {
+     "title": "급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기",
+     "page": 1,
+     "concept_hash": "e06f9e4766a74b8a",
+     "concept_version": 1
+    },
+    "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
+     "title": "유두갑상선암 — 크기·갑상선외 침범·림프절 전이(cN0/cN1a/cN1b)로 수술 범위를 정한다",
+     "page": 7,
+     "concept_hash": "0fe17795e5060888",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
+    "md5": "b35d1cdcb2c24f5b77354c60023b1b90",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_외과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "산부인과": {
+   "hash": "457ae6574929b843faf0",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_산부인과.pdf",
+   "pages": 10,
+   "template_version": 7,
+   "units": {
+    "cn.obgyn.pcos-infertility.ovulation-induction": {
+     "title": "다낭성 난소 증후군의 무배란 불임 — 남성·난관 요인을 확인한 뒤 경구 배란 유도(레트로졸)부터 단계로 올라간다",
+     "page": 1,
+     "concept_hash": "ba87c27faa7225c6",
+     "concept_version": 2
+    },
+    "cn.obgyn.gestational-diabetes.insulin-indication": {
+     "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
+     "page": 5,
+     "concept_hash": "6039b67383f06b56",
+     "concept_version": 1
+    }
+   },
+   "drive": {
+    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
+    "md5": "7514c88d458a7ce9b7198ae6b3a287a2",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_산부인과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "정신건강의학과": {
+   "hash": "019ccdb57f6f5e327066",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_정신건강의학과.pdf",
+   "pages": 6,
+   "template_version": 7,
+   "units": {
+    "cn.psy.ocd.ssri-trial-optimization": {
+     "title": "강박장애의 SSRI 치료 — 「시작 용량 4주 무반응」은 실패가 아니라 미완이다: 증량·8–12주 유지가 증강·교체보다 먼저다",
+     "page": 1,
+     "concept_hash": "b45734d7fe9d6c5d",
+     "concept_version": 1
+    },
+    "cn.psy.smoking-cessation.varenicline-seizure": {
+     "title": "Heavy Smoker Failing Nicotine Patch Twice with Controlled Epilepsy — Choice of Cessation Drug",
+     "page": 5,
+     "concept_hash": null,
+     "concept_version": null
+    }
+   },
+   "drive": {
+    "id": "1ZQToBsTHL2kPkoAh0qBCglJGTuVQnQ5o",
+    "md5": "eb44f2a3c8f500b97d14ff38cd081d91",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_정신건강의학과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "류마티스내과": {
+   "hash": "9d15c11abde756cc561f",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_류마티스내과.pdf",
+   "pages": 1,
+   "template_version": 7,
+   "units": {
+    "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
+     "title": "HCV-associated Mixed Cryoglobulinemic Vasculitis with Purpura, Arthralgia and Mild Neuropathy, No Organ-threatening Disease — Treatment",
+     "page": 1,
+     "concept_hash": null,
+     "concept_version": null
+    },
+    "cn.rheum.sle.mild-disease-hydroxychloroquine": {
+     "title": "New-onset SLE with Skin, Joint and Mucosal Disease but No Organ Involvement — Initial Treatment",
+     "page": 1,
+     "concept_hash": null,
+     "concept_version": null
+    }
+   },
+   "drive": {
+    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
+    "md5": "6f603a67fcb326a7dbe48feeaefd5e86",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf"
+   ],
+   "changes": []
+  },
+  "호흡기내과": {
+   "hash": "06feb2297ed2ab47ade0",
+   "version": 1,
+   "date": "2026-09-23",
+   "file": "MedKOS_학습서_호흡기내과.pdf",
+   "pages": 1,
+   "template_version": 7,
+   "units": {
+    "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
+     "title": "Normotensive Acute Pulmonary Embolism with RV Dysfunction and Elevated Troponin — Next Step",
+     "page": 1,
+     "concept_hash": null,
+     "concept_version": null
+    },
+    "cn.pulm.early-nsclc.lobectomy-vs-sublobar": {
+     "title": "Peripheral 2.5 cm Adenocarcinoma, cT1cN0M0 (IA), Good Lung Function in a 70-year-old — Treatment",
+     "page": 1,
+     "concept_hash": null,
+     "concept_version": null
+    }
+   },
+   "drive": {
+    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
+    "md5": "47a98a3ce0078a1175c56811117dd577",
+    "version": 1,
+    "uploaded": "2026-09-23T17:48:30+09:00"
+   },
+   "archive": [
+    "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf"
    ],
    "changes": []
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "9ba0188e79f28cd4eeb010d33c19dfd2",
+   "md5": "fea0de2bc2e068b775cfa022554876bf",
    "version": null,
-   "uploaded": "2026-09-22T21:08:49+09:00"
+   "uploaded": "2026-09-23T17:48:30+09:00"
   }
  },
- "updated": "2026-09-22"
+ "updated": "2026-09-23"
 }

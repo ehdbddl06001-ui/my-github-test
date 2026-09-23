@@ -6,10 +6,49 @@
   "title": "Pityriasis versicolor: a systematic review of interventions",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "10.1001/archopht.1995.01100120009001": {
+  "concepts": [
+   "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy"
+  ],
+  "title": "Results of the Endophthalmitis Vitrectomy Study. A randomized trial of immediate vitrectomy and of intravenous antibiotics for the treatment of postoperative bacterial endophthalmitis",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1002/jhbp.515": {
+  "concepts": [
+   "cn.gs.acute-cholecystitis.grade2-early-lc"
+  ],
+  "title": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos)",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1002/jhbp.516": {
+  "concepts": [
+   "cn.gs.acute-cholecystitis.grade2-early-lc"
+  ],
+  "title": "Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1016/S0140-6736(17)30066-1": {
+  "concepts": [
+   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+  ],
+  "title": "Fracture fixation in the operative management of hip fractures (FAITH): an international, multicentre, randomised controlled trial",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-23",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "10.1016/j.jaad.2018.11.057": {
   "concepts": [
@@ -18,7 +57,7 @@
   "title": "Joint AAD–NPF guidelines of care for the management and treatment of psoriasis with biologics",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -30,7 +69,7 @@
   "title": "Joint American Academy of Dermatology–National Psoriasis Foundation guidelines of care for the management and treatment of psoriasis with phototherapy",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:31948783\"]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[\"ErratumIn:31948783\"]",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -40,9 +79,13 @@
    "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning"
   ],
   "title": "Joint AAD–NPF guidelines of care for the management of psoriasis with systemic nonbiologic therapies",
-  "status": "unchecked",
+  "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+  "note": "기준 지문 기록",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-23",
+  "baseline": "[]"
  },
  "10.1016/j.jacc.2012.07.046": {
   "concepts": [
@@ -51,11 +94,38 @@
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
   "checked_at": "2026-09-21",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "2026-09-23 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1056/NEJMoa1313517": {
+  "concepts": [
+   "cn.obgyn.pcos-infertility.ovulation-induction"
+  ],
+  "title": "Letrozole versus Clomiphene for Infertility in the Polycystic Ovary Syndrome (PPCOS II)",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1056/NEJMoa1906190": {
+  "concepts": [
+   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+  ],
+  "title": "Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1089/thy.2015.0020": {
+  "concepts": [
+   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a"
+  ],
+  "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1093/eurheartj/ehac262": {
   "concepts": [
@@ -64,10 +134,10 @@
   "title": "2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1093/eurheartj/eht089": {
@@ -76,12 +146,39 @@
   ],
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
-  "checked_at": "2026-09-22",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "checked_at": "2026-09-23",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1097/AOG.0000000000002501": {
+  "concepts": [
+   "cn.obgyn.gestational-diabetes.insulin-indication"
+  ],
+  "title": "ACOG Practice Bulletin No. 190: Gestational Diabetes Mellitus",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1097/SLA.0b013e3182a1599b": {
+  "concepts": [
+   "cn.gs.acute-cholecystitis.grade2-early-lc"
+  ],
+  "title": "Acute cholecystitis: early versus delayed cholecystectomy, a multicenter randomized trial (ACDC study, NCT00447304)",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1161/CIR.0000000000000205": {
+  "concepts": [
+   "cn.peds.rheumatic-fever.secondary-prophylaxis"
+  ],
+  "title": "Revision of the Jones Criteria for the Diagnosis of Acute Rheumatic Fever in the Era of Doppler Echocardiography: A Scientific Statement From the American Heart Association",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1161/CIR.0000000000000549": {
   "concepts": [
@@ -89,12 +186,30 @@
   ],
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
   "status": "ok",
-  "checked_at": "2026-09-22",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "checked_at": "2026-09-23",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
   "baseline": "[\"ErratumIn:30354425\"]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1161/CIRCULATIONAHA.109.191959": {
+  "concepts": [
+   "cn.peds.rheumatic-fever.secondary-prophylaxis"
+  ],
+  "title": "Prevention of Rheumatic Fever and Diagnosis and Treatment of Acute Streptococcal Pharyngitis: A Scientific Statement From the American Heart Association",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1161/STR.0000000000000366": {
+  "concepts": [
+   "cn.ophth.crao.arteritic-workup"
+  ],
+  "title": "Management of Central Retinal Artery Occlusion: A Scientific Statement From the American Heart Association",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1542/peds.2008-0939": {
   "concepts": [
@@ -103,10 +218,10 @@
   "title": "Febrile seizures: clinical practice guideline for the long-term management of the child with simple febrile seizures",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
@@ -116,11 +231,29 @@
   "title": "Neurodiagnostic evaluation of the child with a simple febrile seizure",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1542/peds.2011-1330": {
+  "concepts": [
+   "cn.peds.febrile-uti.imaging-workup"
+  ],
+  "title": "Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Children 2 to 24 Months (Reaffirmed 2016)",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.2337/dc24-S015": {
+  "concepts": [
+   "cn.obgyn.gestational-diabetes.insulin-indication"
+  ],
+  "title": "15. Management of Diabetes in Pregnancy: Standards of Care in Diabetes—2024",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.3390/jof1010013": {
   "concepts": [
@@ -129,11 +262,23 @@
   "title": "Antifungal treatment for pityriasis versicolor",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "2026-09-22 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "17849776": {
+  "concepts": [
+   "cn.psy.ocd.ssri-trial-optimization"
+  ],
+  "title": "Practice Guideline for the Treatment of Patients With Obsessive-Compulsive Disorder (Guideline Watch 2013)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-23",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "fitzpatrick-9e": {
   "concepts": [
@@ -142,7 +287,7 @@
   "title": "Psoriasis",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -152,15 +297,86 @@
    "cn.cardio.long-qt-syndrome.first-line-drug",
    "cn.derm.pityriasis-versicolor.treatment",
    "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning",
-   "cn.neph.hyperkalemia.first-step"
+   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a",
+   "cn.neph.hyperkalemia.first-step",
+   "cn.obgyn.pcos-infertility.ovulation-induction",
+   "cn.ophth.crao.arteritic-workup",
+   "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy",
+   "cn.psy.ocd.ssri-trial-optimization"
   ],
   "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 255: Polymorphic Ventricular Tachycardia and Ventricular Fibrillation",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "https://www.aaos.org/quality/quality-programs/lower-extremity-programs/hip-fractures-in-the-elderly/": {
+  "concepts": [
+   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+  ],
+  "title": "Management of Hip Fractures in Older Adults — Evidence-Based Clinical Practice Guideline",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag) — 업데이트 확인 필요"
+ },
+ "https://www.diabetes.or.kr": {
+  "concepts": [
+   "cn.obgyn.gestational-diabetes.insulin-indication"
+  ],
+  "title": "2023 당뇨병 진료지침 — 임신과 당뇨병",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-23",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.escrs.org": {
+  "concepts": [
+   "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy"
+  ],
+  "title": "ESCRS Guidelines for Prevention and Treatment of Endophthalmitis Following Cataract Surgery",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-23",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.monash.edu/medicine/mchri/pcos": {
+  "concepts": [
+   "cn.obgyn.pcos-infertility.ovulation-induction"
+  ],
+  "title": "International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome 2023",
+  "status": "failed",
+  "checked_at": "2026-09-23",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://www.nice.org.uk/guidance/ng224": {
+  "concepts": [
+   "cn.peds.febrile-uti.imaging-workup"
+  ],
+  "title": "Urinary tract infection in under 16s: diagnosis and management (NG224)",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-23",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.thyroid.kr": {
+  "concepts": [
+   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a"
+  ],
+  "title": "갑상선분화암 진료권고안 2024",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-23",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults": {
   "concepts": [
@@ -169,9 +385,57 @@
   "title": "Clinical Practice Guidelines — Treatment of Acute Hyperkalaemia in Adults",
   "method": "pattern",
   "fingerprint": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
-  "checked_at": "2026-09-22",
+  "checked_at": "2026-09-23",
   "baseline": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "rockwood-9": {
+  "concepts": [
+   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+  ],
+  "title": "Rockwood and Green's Fractures in Adults, 9th ed. — Femoral Neck Fractures / Intertrochanteric Fractures",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-23",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "sabiston-21": {
+  "concepts": [
+   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a"
+  ],
+  "title": "Sabiston Textbook of Surgery — Thyroid",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-23",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "sabiston-21e": {
+  "concepts": [
+   "cn.gs.acute-cholecystitis.grade2-early-lc"
+  ],
+  "title": "Sabiston Textbook of Surgery, 21st ed. — Biliary System (급성 담낭염·총담관결석 절)",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-23",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "williams-26e": {
+  "concepts": [
+   "cn.obgyn.gestational-diabetes.insulin-indication"
+  ],
+  "title": "Diabetes Mellitus",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-23",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
  }
 }
