@@ -467,6 +467,7 @@ function grade(chosenIdx, btn) {
     sessionWrong.push(q);
   }
   if (typeof LEARN === "object") LEARN.onAnswer(q, chosenIdx, ok);   // 덧붙이기만 하는 학습 기록
+  updateReviewBadge();
   showGraded(chosenIdx);
   updateWrongCount();
   saveProgress();
@@ -633,7 +634,10 @@ function renderTriage(q) {
   }
   const more = parts.filter(Boolean).join("");
   const target = d.target ? `<span class="tg-target">평가: ${escapeHtml(d.target)}${d.steps ? ` · 판단 ${escapeHtml(String(d.steps))}단계` : ""}</span>` : "";
-  const sum = d.summary ? `<div class="triage-sum"><span class="k">핵심 판단</span>${escapeHtml(d.summary)}</div>` : "";
+  const sum = (d.summary ? `<div class="triage-sum"><span class="k">핵심 판단</span>${escapeHtml(d.summary)}</div>` : "")
+    + (Array.isArray(d.chain) && d.chain.length
+      ? `<div class="triage-chain"><span class="k">판단 사슬 — 어느 단계에서 갈렸는지 짚어 보세요</span><ol>${d.chain.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}</ol></div>`
+      : "");
   const review = q.reviewStatus === "reviewed"
     ? '<div class="triage-rev ok">내용 검토 완료</div>'
     : '<div class="triage-rev">의학적 내용 검토 전 문항 — 생성 후 자동 형식 검사만 통과했습니다</div>';
@@ -938,6 +942,14 @@ function openSingleQuestion(id) {
 }
 
 /* ---------- 개념 복습 화면(복습 필요 · 복습 중 · 재확인 완료) ---------- */
+// 첫 화면 버튼에 「오늘 다시 풀 것」 수를 붙인다(learn.js schedule — 2026-09-23)
+function updateReviewBadge() {
+  const b = $("reviewOpenBtn");
+  if (!b || typeof LEARN !== "object" || !LEARN.dueKeys) return;
+  let n = 0;
+  try { n = LEARN.dueKeys().length; } catch (e) { n = 0; }
+  b.textContent = n ? `개념 복습 · 오늘 다시 풀 것 ${n}` : "개념 복습";
+}
 function renderReview(openConcept) {
   ["setup", "quiz", "result", "wrongbook"].forEach((s) => hide($(s)));
   show($("review"));
@@ -1197,7 +1209,8 @@ function init() {
   // 핸드폰 앱은 닫히지 않고 백그라운드에서 돌아온다 — 돌아올 때마다 한 번 맞춘다(2026-09-22)
   document.addEventListener("visibilitychange", () => { if (!document.hidden && SYNC.available !== false) syncAll(true); });
   if ($("reviewOpenBtn")) $("reviewOpenBtn").onclick = () => renderReview();
-  if ($("rvBackBtn")) $("rvBackBtn").onclick = () => { hide($("review")); show($("setup")); onModeChange(); };
+  if ($("rvBackBtn")) $("rvBackBtn").onclick = () => { hide($("review")); show($("setup")); onModeChange(); updateReviewBadge(); };
+  updateReviewBadge();
   if ($("rvExportBtn")) $("rvExportBtn").onclick = () => LEARN.exportJson();
   if ($("rvImportFile")) $("rvImportFile").onchange = (ev) => {
     const f = ev.target.files && ev.target.files[0];

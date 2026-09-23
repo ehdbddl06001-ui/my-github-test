@@ -11,7 +11,8 @@ var API_BASE = window.MEDKOS_API_BASE = /\.github\.io$/.test(location.hostname) 
    - 학습 기록은 **덧붙이기만** 한다(medkos_learning_events). 고치거나 지우지 않는다 — 상태는 기록에서 계산한다.
    - 열람은 학습의 증거가 아니다. 해설 열람 · 정리본 읽음 · 이해 표시 · 이후 적용 성공을 따로 센다.
      「재확인 완료」는 **다음 날 이후** 같은 목표의 다른 문항·변형 문제를 맞혔을 때만.
-   - 정해진 「최적 간격」을 두지 않는다. 우선순위는 반복 오답과 후속 확인 실패로만 정한다.
+   - 우선순위는 반복 오답과 후속 확인 실패로 정한다. 「다시 풀 날」(schedule — 2026-09-23 사용자 채택)은 틀린 날 +1일·+7일이
+     기본값이지만 **최적이라는 근거로 정한 값이 아니다**(2026-09-18 지시) — 개념 복습 화면에서 바꿀 수 있다.
    - 콘텐츠는 미리 만들어 검토한다 — 여기서 생성하지 않는다(브라우저에 API 키 없음).
    - 콘텐츠의 글자는 escape 하거나 허용 태그만 남기고(sanitizeHtml), 도식은 createElementNS+textContent 로 그린다.
      스크립트·속성·외부 리소스가 끼어들 길을 만들지 않는다. 링크는 https 만.
@@ -142,6 +143,73 @@ const LEARN = (() => {
     });
     return S;
   }
+  /* ---------- 다시 풀 날(learning_log.py 의 schedule() 과 같은 규칙 — test_learning_books.py 가 같은 픽스처로 본다) ----------
+     틀리면 그날이 기준일·0단계. 기준일 + 간격[단계] 일 이후에 같은 목표 문항(변형 포함)을 맞히면 한 단계 올라가고 그날이 새 기준일.
+     예정일 전에 맞힌 것은 연습(단계 그대로). 마지막 단계를 넘기면 예정 끝. 다시 틀리면 0단계. */
+  const STEPS_KEY = "medkos_review_steps";
+  const DEFAULT_STEPS = [1, 7];
+  function parseSteps(v) {
+    const parts = Array.isArray(v) ? v : String(v == null ? "" : v).replace(/\s/g, "").split(",");
+    const out = [];
+    for (const x of parts) {
+      if (!/^\d+$/.test(String(x))) return DEFAULT_STEPS.slice();
+      const n = parseInt(String(x), 10);
+      if (n < 1 || n > 365) return DEFAULT_STEPS.slice();
+      out.push(n);
+    }
+    return out.length ? out.slice(0, 6) : DEFAULT_STEPS.slice();
+  }
+  function reviewSteps() { try { return parseSteps(localStorage.getItem(STEPS_KEY)); } catch (e) { return DEFAULT_STEPS.slice(); } }
+  function setReviewSteps(v) { const s = parseSteps(v); try { localStorage.setItem(STEPS_KEY, s.join(",")); } catch (e) { /* 저장 불가 — 이번 화면만 */ } return s; }
+  function addDays(day, n) {
+    const d = new Date(String(day) + "T00:00:00Z");
+    if (isNaN(d.getTime())) return "";
+    d.setUTCDate(d.getUTCDate() + n);
+    return d.toISOString().slice(0, 10);
+  }
+  function schedule(steps) {
+    const st = steps ? parseSteps(steps) : reviewSteps();
+    const out = {};
+    load().slice().sort((a, b) => String(a.t).localeCompare(String(b.t)) || String(a.eid).localeCompare(String(b.eid))).forEach((e) => {
+      if (e.kind !== "answer") return;
+      const key = e.objective || (e.qid ? ((qById(e.qid) || {}).objective || "q:" + e.qid) : null);
+      if (!key) return;
+      const day = e.day || kstDay(e.t);
+      const r = out[key];
+      if (!e.ok) out[key] = { stage: 0, total: st.length, anchor: day, due: addDays(day, st[0]) };
+      else if (r && r.due && day >= r.due) {
+        r.stage++; r.anchor = day;
+        r.due = r.stage < st.length ? addDays(day, st[r.stage]) : "";
+      }
+    });
+    return out;
+  }
+  function dueKeys() {
+    const today = kstDay();
+    const sc = schedule();
+    return Object.keys(sc).filter((k) => sc[k].due && sc[k].due <= today);
+  }
+  // 다시 풀 문항 고르기: ① 틀린 문항에서 나온 변형(안 푼 것) ② 같은 목표의 다른 변형 ③ 같은 목표의 안 푼 다른 문항 ④ 틀린 문항 그대로
+  function pickRetest(key) {
+    const s = states()[key];
+    if (!s) return null;
+    const done = new Set(load().filter((e) => e.kind === "answer").map((e) => e.qid));
+    const c = concept(s.objective);
+    const vs = (c && c.variants) || [];
+    const fresh = vs.filter((v) => !done.has(v.id));
+    const own = fresh.find((v) => v.of && s.wrongQids.has(v.of));
+    if (own) return { type: "variant", c, v: own };
+    if (fresh.length) return { type: "variant", c, v: fresh[0] };
+    if (s.objective) {
+      for (const arr of [KMLE, USMLE, IMAGING]) {
+        const q = arr.find((x) => x && x.objective === s.objective && !done.has(x.id) && !s.wrongQids.has(x.id));
+        if (q) return { type: "q", id: q.id };
+      }
+    }
+    const first = Array.from(s.wrongQids).find((id) => id && id.indexOf("#") < 0);
+    return first ? { type: "q", id: first } : null;
+  }
+
   function phaseFor(key) {
     const s = states()[key];
     return s && s.lastWrongDay && kstDay() > s.lastWrongDay ? "delayed" : "immediate";
@@ -171,6 +239,8 @@ const LEARN = (() => {
       + `<div class="ans"><span class="k">정답</span>${label(ci, q)} ${escapeHtml(q.options[ci])}</div></div>`;
     if (diff) h += `<div class="learn-row"><span class="k">결정적 차이</span>${escapeHtml(diff)}</div>`;
     if (goal) h += `<div class="learn-row"><span class="k">학습 목표</span>${escapeHtml(goal)}</div>`;
+    const sc = schedule()[keyOf(q)];
+    if (sc && sc.due) h += `<div class="learn-row"><span class="k">다시 풀 날</span>${escapeHtml(sc.due)} — 개념 복습 ▸ 「오늘 다시 풀 것」에 나옵니다(가능하면 변형 문항으로)</div>`;
     if (dist) h += distCard(q, chosenIdx, dist, true);
     const others = q.distractors ? Object.keys(q.distractors).filter((k) => k !== L) : [];
     if (others.length) {
@@ -493,6 +563,7 @@ const LEARN = (() => {
         const res = body.querySelector(".var-res");
         res.innerHTML = `<div class="verdict ${ok ? "ok" : "bad"}">${ok ? "✅ 맞았습니다" : "❌ 다릅니다"} · 정답 ${ALPHA[v.answer - 1]}</div>`
           + `<div class="expl-item">${escapeHtml(v.explanation)}</div>`
+          + (v.changed ? `<div class="learn-row"><span class="k">${v.flip ? "바뀐 단서 → 답이 바뀜" : "바뀐 겉모습 → 답은 그대로"}</span>${escapeHtml(v.changed)}</div>` : "")
           + `<div class="muted small">${phase === "delayed" ? "지연된 적용 확인으로 기록했습니다." : "즉시 확인으로 기록했습니다 — 다음 날 이후 다시 확인하면 재확인 완료가 될 수 있습니다."}</div>`;
         res.hidden = false;
       };
@@ -508,7 +579,8 @@ const LEARN = (() => {
     Object.values(S).forEach((s) => { if (s.status) counts[s.status]++; });
     let h = `<div class="rv-filter">` + [["all", "전체"], ["need", STATUS.need], ["doing", STATUS.doing], ["done", STATUS.done]].map(([k, t]) =>
       `<button type="button" class="chip${(filter || "all") === k ? " on" : ""}" data-rvf="${k}">${t}${k !== "all" ? " " + counts[k] : ""}</button>`).join("") + `</div>`;
-    h += `<p class="muted small">순서는 반복 오답·후속 확인 실패가 많은 것부터입니다. 정해진 복습 간격은 두지 않습니다. 재확인 완료도 지우지 않고 남깁니다.</p>`;
+    h += dueHtml();
+    h += `<p class="muted small">아래 목록 순서는 반복 오답·후속 확인 실패가 많은 것부터입니다. 재확인 완료도 지우지 않고 남깁니다.</p>`;
     if (!rows.length) h += `<p class="muted">아직 기록이 없습니다. 문항을 풀고 오답이 생기면 여기에 모입니다.</p>`;
     h += rows.map((s) => {
       const c = concept(s.objective);
@@ -524,6 +596,23 @@ const LEARN = (() => {
     }).join("");
     container.innerHTML = h;
     container.querySelectorAll("button[data-rvf]").forEach((b) => { b.onclick = () => renderReviewList(container, b.getAttribute("data-rvf")); });
+    container.querySelectorAll("button[data-rt]").forEach((b) => {
+      b.onclick = () => {
+        const p = pickRetest(b.getAttribute("data-rt"));
+        const body = b.parentNode.querySelector(".rt-body");
+        if (!p) { body.textContent = "다시 풀 문항을 찾지 못했습니다(문항이 덱에서 빠졌을 수 있습니다)."; body.hidden = false; return; }
+        if (p.type === "q") { openSingleQuestion(p.id); return; }
+        renderVariant(body, p.c, p.v);
+        body.hidden = false; b.hidden = true;
+      };
+    });
+    const sb = container.querySelector("button[data-steps-save]");
+    if (sb) sb.onclick = () => {
+      const s = setReviewSteps(container.querySelector("#rvSteps").value);
+      renderReviewList(container, filter);
+      const note = container.querySelector(".rt-steps-note");
+      if (note) note.textContent = `저장했습니다 — ${s.join("일 · ")}일`;
+    };
     container.querySelectorAll("button[data-rv-open]").forEach((b) => {
       b.onclick = () => {
         const box = b.parentNode.querySelector(".learn-concept");
@@ -533,6 +622,37 @@ const LEARN = (() => {
       };
     });
     container.querySelectorAll("button[data-rv-q]").forEach((b) => { b.onclick = () => openSingleQuestion(b.getAttribute("data-rv-q")); });
+  }
+
+  function dueHtml() {
+    const sc = schedule();
+    const today = kstDay();
+    const S = states();
+    const title = (key) => {
+      const c = concept(S[key] && S[key].objective);
+      const q = !c && key.startsWith("q:") ? qById(key.slice(2)) : null;
+      return c ? c.title : q ? `[${q.subject}] ${q.question}` : key;
+    };
+    const keys = Object.keys(sc).filter((k) => sc[k].due);
+    const due = keys.filter((k) => sc[k].due <= today)
+      .sort((a, b) => sc[a].due.localeCompare(sc[b].due) || ((S[b] || {}).priority || 0) - ((S[a] || {}).priority || 0));
+    const later = keys.filter((k) => sc[k].due > today).sort((a, b) => sc[a].due.localeCompare(sc[b].due));
+    const steps = reviewSteps();
+    let h = `<div class="rt"><div class="cn-sec">오늘 다시 풀 것 ${due.length}</div>`;
+    h += due.length ? due.map((k) => `<div class="rv"><div class="rv-h">${escapeHtml(title(k))}</div>`
+        + `<div class="muted small">예정일 ${escapeHtml(sc[k].due)} · ${sc[k].stage + 1}/${sc[k].total}단계</div>`
+        + `<button type="button" class="small primary" data-rt="${escapeHtml(k)}">다시 풀기</button><div class="rt-body" hidden></div></div>`).join("")
+      : `<p class="muted small">오늘 예정된 문항이 없습니다.</p>`;
+    if (later.length) {
+      h += `<details class="learn-others"><summary>앞으로 예정 ${later.length}</summary>`
+        + later.map((k) => `<div class="muted small">${escapeHtml(sc[k].due)} · ${escapeHtml(title(k))}</div>`).join("") + `</details>`;
+    }
+    h += `<div class="rt-steps muted small"><label for="rvSteps">다시 풀 간격(일, 쉼표로)</label> `
+      + `<input id="rvSteps" value="${escapeHtml(steps.join(","))}" size="10" inputmode="numeric" /> `
+      + `<button type="button" class="small" data-steps-save="1">저장</button> <span class="rt-steps-note"></span><br>`
+      + `틀린 날부터 첫 간격 뒤에 다시 풀고, 맞히면 다음 간격으로 넘어갑니다. 예정일 전에 푼 것은 연습으로 칩니다. `
+      + `기본 1일·7일은 출발점일 뿐 최적이라고 검증된 값이 아닙니다 — 자신에게 맞게 바꾸세요.</div></div>`;
+    return h;
   }
 
   /* ---------- 내보내기·가져오기(드라이브 수신함 · 기기 이동용) ---------- */
@@ -594,5 +714,5 @@ const LEARN = (() => {
   }
 
   return { onAnswer, wrongPanelHtml, flagRowHtml, bind, renderConcept, renderReviewList, exportJson, importJson,
-    syncLearning, learnSyncState, states, load, concept, STATUS };
+    syncLearning, learnSyncState, states, schedule, dueKeys, reviewSteps, load, concept, STATUS };
 })();

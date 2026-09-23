@@ -282,6 +282,14 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
         if v.get("id") in vids:
             errs.append(f"variants id 중복: {v.get('id')}")
         vids.add(v.get("id"))
+        # 오답에서 나온 변형(2026-09-23): of = 틀린 문항 id, changed = 무엇을 바꿨나, flip = 답이 바뀌는가
+        if v.get("of") is not None:
+            if not re.fullmatch(r"[a-z]+-\d{4}-\d{3,5}", str(v.get("of"))):
+                errs.append(f"variants[{i}].of '{v.get('of')}' 는 문항 id(예: kmle-2026-1035)여야 한다")
+            if not str(v.get("changed", "") or "").strip():
+                errs.append(f"variants[{i}] 는 of 가 있으면 changed(바꾼 단서와 그 결과)를 적어야 한다")
+            if not isinstance(v.get("flip"), bool):
+                errs.append(f"variants[{i}].flip 은 true(단서를 바꿔 답이 바뀜)·false(겉모습만 바뀌고 답은 그대로)")
     return errs
 
 

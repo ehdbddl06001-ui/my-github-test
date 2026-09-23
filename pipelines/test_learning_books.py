@@ -229,12 +229,62 @@ class LearningStates(unittest.TestCase):
             f"vm.runInContext(fs.readFileSync({json.dumps(str(ROOT / 'docs' / 'learn.js'))},'utf8')+"
             "';this.__S=LEARN.states();',ctx);"
             "const out={};for(const [k,s] of Object.entries(ctx.__S)){out[k]=[s.status,s.priority,s.applied,s.wrongs]}"
-            "console.log(JSON.stringify(out));")
+            "const sc=ctx.LEARN_SC;"
+            "console.log(JSON.stringify({states:out,schedule:sc}));")
+        harness = harness.replace("';this.__S=LEARN.states();'", "';this.__S=LEARN.states();this.LEARN_SC=LEARN.schedule([1,7]);'")
         r = subprocess.run([node, "-e", harness], capture_output=True, text=True, encoding="utf-8")
         self.assertEqual(r.returncode, 0, r.stderr)
         js = json.loads(r.stdout)
         py = {k: [s.status, s.priority, s.applied, s.wrongs] for k, s in ll.states(events).items()}
-        self.assertEqual(js, py)
+        self.assertEqual(js["states"], py)
+        self.assertEqual(js["schedule"], ll.schedule(events, steps=(1, 7)))
+
+
+class RetestSchedule(unittest.TestCase):
+    """다시 풀 날(2026-09-23) — 틀린 날 +1일 · 맞히면 +7일 · 끝. 예정일 전 정답은 연습."""
+    OBJ = "cn.x.y.z"
+
+    def test_wrong_sets_first_due_and_early_practice_does_not_advance(self):
+        e = [wrong("e1", "q1", self.OBJ, "2026-09-18T01:00:00Z", "2026-09-18")]
+        self.assertEqual(ll.schedule(e)[self.OBJ], {"stage": 0, "total": 2, "anchor": "2026-09-18", "due": "2026-09-19"})
+        same_day = e + [right("e2", "q2", self.OBJ, "2026-09-18T02:00:00Z", "2026-09-18")]
+        self.assertEqual(ll.schedule(same_day)[self.OBJ]["stage"], 0)
+
+    def test_on_time_success_advances_then_finishes_and_wrong_resets(self):
+        e = [wrong("e1", "q1", self.OBJ, "2026-09-18T01:00:00Z", "2026-09-18"),
+             right("e2", "cn.x.y.z#v1", self.OBJ, "2026-09-20T01:00:00Z", "2026-09-20", mode="variant")]
+        s = ll.schedule(e)[self.OBJ]
+        self.assertEqual((s["stage"], s["due"]), (1, "2026-09-27"))
+        done = e + [right("e3", "q3", self.OBJ, "2026-09-27T01:00:00Z", "2026-09-27")]
+        self.assertEqual(ll.schedule(done)[self.OBJ]["due"], "")
+        again = done + [wrong("e4", "q4", self.OBJ, "2026-09-30T01:00:00Z", "2026-09-30")]
+        self.assertEqual(ll.schedule(again)[self.OBJ], {"stage": 0, "total": 2, "anchor": "2026-09-30", "due": "2026-10-01"})
+
+    def test_steps_are_configurable_and_bad_values_fall_back(self):
+        e = [wrong("e1", "q1", self.OBJ, "2026-09-18T01:00:00Z", "2026-09-18")]
+        self.assertEqual(ll.schedule(e, steps="3,10,30")[self.OBJ]["due"], "2026-09-21")
+        for bad in ("", "0,7", "a", "1.5", [400]):
+            self.assertEqual(ll.parse_steps(bad), ll.DEFAULT_STEPS)
+        self.assertEqual(ll.parse_steps([2, 5]), (2, 5))
+
+
+class ItemStats(unittest.TestCase):
+    def test_first_attempt_only_and_no_verdict_on_small_groups(self):
+        import item_stats as st
+        e = [wrong("e1", "q1", "o", "2026-09-18T01:00:00Z", "2026-09-18"),
+             right("e2", "q1", "o", "2026-09-19T01:00:00Z", "2026-09-19"),            # 두 번째 풀이 — 세지 않는다
+             right("e3", "o#v1", "o", "2026-09-19T01:00:00Z", "2026-09-19", mode="variant")]
+        qs = {"q1": {"difficulty": 4, "type": "kmle", "design": {"steps": 3, "target": "치료"}}}
+        r = st.build(e, qs)
+        self.assertEqual((r["first_attempts"], r["accuracy"]), (1, 0.0))
+        self.assertEqual(r["label_inversions"], [])
+
+    def test_inversion_needs_big_groups(self):
+        import item_stats as st
+        g = {"난이도 3": {"n": 25, "ok": 10, "acc": 0.4}, "난이도 4": {"n": 25, "ok": 15, "acc": 0.6}}
+        self.assertEqual(len(st.inversions(g, ["난이도 3", "난이도 4"])), 1)
+        g["난이도 4"]["n"] = 5
+        self.assertEqual(st.inversions(g, ["난이도 3", "난이도 4"]), [])
 
 
 class Planning(unittest.TestCase):
@@ -544,6 +594,23 @@ class ConceptQueueTest(unittest.TestCase):
         self.assertEqual([(l["topic"], l["subtopic"], sorted(l["questions"])) for l in q["link"]],
                          [("Cardiology", "심부전", ["q3", "q4"])])
         self.assertEqual(q["counts"]["wrong_objectives_with_note"], 1)
+
+    def test_variant_queue_per_wrong_question_until_two_exist(self):
+        self.qs["q1"].update(type="kmle", choices=["A. 가", "B. 나"], answer="A", design={"switch": {"choice": "B", "condition": "x"}})
+        e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20", text="나")]
+        q = self.cq.build(e)
+        self.assertEqual([(v["qid"], v["need"], v["due"], v["seed"]) for v in q["variant"]], [("q1", 2, "2026-09-21", "design.switch")])
+        self.concepts["cn.derm.a.b"]["variants"] = [{"id": "v1", "of": "q1"}, {"id": "v2", "of": "q1"}]
+        self.assertEqual(self.cq.build(e)["variant"], [])
+
+    def test_dist_queue_only_for_chosen_letter_without_explanation(self):
+        self.qs["q1"].update(type="kmle", choices=["A. 가", "B. 나", "C. 다"], answer="A", path="content/kmle/x.md")
+        e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20", text="나")]
+        self.assertEqual([d["key"] for d in self.cq.build(e)["dist"]], ["q1:B"])
+        self.qs["q1"]["distractors"] = {"B": {"tempting": "x"}}
+        self.assertEqual(self.cq.build(e)["dist"], [])
+        self.qs["q1"].update(type="imaging", distractors={})             # 영상 문항은 빌더 파생물 — 제외
+        self.assertEqual(self.cq.build(e)["dist"], [])
 
     def test_correct_answers_do_not_queue(self):
         e = [right("e1", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20")]

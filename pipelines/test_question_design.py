@@ -109,6 +109,30 @@ class FormatChecks(unittest.TestCase):
         self.assertIn("design-target", codes)
         self.assertIn("design-role", codes)
 
+    def test_chain_length_must_match_steps_and_is_required_for_new_items(self):
+        m = copy.deepcopy(self.base)
+        m["design"]["steps"] = 2
+        m["design"]["chain"] = ["단서 → 진단"]
+        self.assertIn("design-chain-steps", _codes(format_findings(m, "kmle")))
+        m["design"]["chain"] = ["단서 → 진단", "중증도 → 치료"]
+        self.assertNotIn("design-chain-steps", _codes(format_findings(m, "kmle")))
+        self.assertEqual(design_record(m)["chain"], ["단서 → 진단", "중증도 → 치료"])
+        del m["design"]["chain"]
+        m["date"] = "2026-09-24"
+        self.assertIn("design-chain-missing", _codes(format_findings(m, "kmle")))
+        m["date"] = "2026-09-23"
+        self.assertNotIn("design-chain-missing", _codes(format_findings(m, "kmle")))
+
+    def test_mix_report_warns_on_shallow_or_one_target_sets(self):
+        from question_design import mix_report
+        shallow = [{"design": {"steps": 2, "target": "치료"}}] * 6
+        _, w = mix_report(shallow)
+        self.assertEqual(len(w), 2)                                   # 3단계 이상 0 % · 한 목표 100 %
+        good = ([{"design": {"steps": 3, "target": t}} for t in ("진단", "감별", "치료")]
+                + [{"design": {"steps": 2, "target": t}} for t in ("기전", "검사 선택")])
+        self.assertEqual(mix_report(good)[1], [])
+        self.assertEqual(mix_report(shallow[:3])[1], [])              # 묶음이 작으면 따지지 않는다
+
     def test_difficulty_follows_reasoning_steps_not_volume(self):
         m = copy.deepcopy(self.base)
         m["difficulty"], m["design"]["steps"] = 5, 1

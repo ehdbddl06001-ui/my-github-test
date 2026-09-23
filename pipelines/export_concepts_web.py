@@ -38,7 +38,8 @@ def _variant(cid: str, v: dict) -> dict:
     clean = [o[3:].strip() if len(o) > 2 and o[0] in LETTERS and o[1] in ".)" else o for o in opts]
     return {"id": f"{cid}#{v.get('id')}", "context": str(v.get("context", "") or ""), "stem": str(v.get("stem", "")),
             "options": clean, "answer": LETTERS.index(ans) + 1 if ans in LETTERS else 1,
-            "explanation": str(v.get("explanation", "") or "")}
+            "explanation": str(v.get("explanation", "") or ""),
+            "of": str(v.get("of", "") or ""), "changed": str(v.get("changed", "") or ""), "flip": bool(v.get("flip"))}
 
 
 def _web(s, c: dict) -> str:

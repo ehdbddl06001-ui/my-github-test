@@ -13342,6 +13342,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "포도당-6-인산분해효소 결핍(D)도 젖산·요산이 오르지만 저혈당이 공복에 오고 생후 3–4개월부터 음식과 무관하게 나타나며, 여기서는 「과일을 시작한 뒤」「식후 1시간」에 온다. 갈락토오스혈증(B)은 모유(젖당)만 먹을 때 신생아기에 시작되어야 하는데 이 아이는 모유로 잘 자랐고 신생아 선별검사도 정상이다.",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "began shortly after his parents started giving him pureed fruit and diluted juice",
@@ -13543,6 +13544,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "XLA(A)는 CD19⁺ B 세포가 거의 없고 IgM 까지 함께 낮으며 Pneumocystis 감염이 특징이 아닌데, 이 아이는 B 세포 980 /µL 로 정상이고 IgM 이 380 으로 높다. SCID(B)는 CD3⁺ T 세포가 없거나 매우 낮고 생후 첫 달부터 성장부전으로 오는데, 이 아이는 T 세포 3,400 으로 정상이고 6개월까지 건강했다.",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "CD19⁺ B 세포",
@@ -13729,6 +13731,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "흡기에는 흉강내압이 내려가 우심실로의 정맥환류가 줄지 않고 **늘어난다** — 늘어난 우심실이 중격을 밀어 좌심실을 좁히는 것이 핵심이다(A 는 방향이 반대). 트로포닌 < 0.01 이고 흉통이 없으며 젖산이 정상이라 심근 허혈·수축력 저하(E·C)의 가능성이 낮다.",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "Korotkoff sounds are at first heard only during expiration, and they are heard throughout the respiratory cycle only after the cuff pressure has fallen a further 24 mm Hg",
@@ -13923,6 +13926,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "라임 방실차단은 항생제로 수 주 안에 회복되는 **가역적** 차단이라 영구 심박동기(A)의 적응이 아니고, 지금은 누워서 증상이 없고 혈압 122/74 로 안정적이며 경피 패드가 준비돼 있어 임시 경정맥 심박동기(D)를 지금 넣을 이유가 없다 — 실신·저혈압이 생기면 그때 넣는다.",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "심전도: P 파와 QRS 가 규칙적이지만 서로 무관하게 진행하고 심실 40 회 — 완전(3도) 방실차단",
@@ -14103,6 +14107,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "CT 혈관조영술은 「동맥류가 있는가」를 보고 요추천자는 「출혈이 있었는가」를 본다. 성인의 2~3 % 가 무증상 동맥류를 갖고 있어 CTA 를 먼저 찍으면 출혈 없는 동맥류를 원인으로 오인하거나 비동맥류성 출혈을 놓친다 — 6시간이 지난 정상 CT 다음은 요추천자다.",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "14 hours after the abrupt onset of the most severe headache of her life",
@@ -14286,6 +14291,7 @@ window.USMLE_QUESTIONS = [
    ],
    "discriminator": "치료 여부를 가르는 것은 혈소판 14,000 이라는 숫자가 아니라 출혈 정도다 — 코피·잇몸·혈뇨·혈변이 없고 구강 점막 출혈이 없는 피부 국한 출혈이라 IVIG(A)·스테로이드(C)의 적응(점막·중등도 이상 출혈)이 아니다.",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "혈소판",

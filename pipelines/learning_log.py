@@ -13,7 +13,14 @@
   - 복습 필요: 오답·표시가 있고 아직 능동적 후속 확인이 없다.
   - 복습 중: 인출 확인·같은 날 변형 문제·이해 표시 등 후속 활동이 있다.
   - 재확인 완료: 마지막 오답 **다음 날 이후** 같은 목표의 **다른 문항 또는 변형 문제**를 맞혔다. 이후 다시 틀리면 되돌아간다.
-  - 우선순위 = 반복 오답·후속 확인 실패·표시. 고정된 「최적 간격」은 두지 않는다.
+  - 우선순위 = 반복 오답·후속 확인 실패·표시.
+
+다시 풀 날(2026-09-23 사용자 채택 — 「오답 → 변형 문항 → 간격을 두고 다시 출제」, schedule())
+  - 틀리면 그날을 기준일로 0단계. 기준일 + steps[단계] 일 **이후에** 같은 목표의 문항(변형 포함)을 맞히면
+    한 단계 올라가고 그날이 새 기준일이 된다. 마지막 단계를 넘기면 예정이 끝난다. 다시 틀리면 0단계로.
+  - 예정일 전에 맞힌 것은 연습으로 치고 단계를 올리지 않는다(같은 날 몰아 풀기로 끝나지 않게).
+  - 기본 간격 DEFAULT_STEPS = (1, 7) 일은 **기본값일 뿐 최적이라는 근거로 정한 값이 아니다**(2026-09-18 지시 —
+    특정 간격을 과학적 최적처럼 고정하지 말 것). 앱 설정에서 바꿀 수 있고, 계산은 그 값을 받는다.
 """
 from __future__ import annotations
 
@@ -196,6 +203,55 @@ def states(events: list[dict], objective_of: dict[str, str] | None = None) -> di
                       + (1 if s.flags.get("not_understood") else 0) + (1 if s.flags.get("guessed") else 0)
                       + (-10 if s.status == "done" else 0))
     return S
+
+
+DEFAULT_STEPS: tuple[int, ...] = (1, 7)
+
+
+def parse_steps(v: Any) -> tuple[int, ...]:
+    """「1,7」·[1, 7] → (1, 7). 1~365 일 정수 1~6개만. 틀리면 기본값(앱 learn.js reviewSteps() 와 같은 규칙)."""
+    parts = v if isinstance(v, (list, tuple)) else str(v or "").replace(" ", "").split(",")
+    out: list[int] = []
+    for x in parts:
+        try:
+            n = int(str(x))
+        except ValueError:
+            return DEFAULT_STEPS
+        if not 1 <= n <= 365:
+            return DEFAULT_STEPS
+        out.append(n)
+    return tuple(out[:6]) if out else DEFAULT_STEPS
+
+
+def add_days(day: str, n: int) -> str:
+    try:
+        return (datetime.strptime(day, "%Y-%m-%d") + timedelta(days=n)).strftime("%Y-%m-%d")
+    except ValueError:
+        return ""
+
+
+def schedule(events: list[dict], objective_of: dict[str, str] | None = None,
+             steps: Any = DEFAULT_STEPS) -> dict[str, dict]:
+    """{key: {stage, total, anchor, due}} — 오답이 있었던 목표만. due 가 "" 이면 예정이 끝났다.
+    key 는 states() 와 같은 규칙(기록의 목표 → 문항의 현재 목표 → q:<문항>)."""
+    st = parse_steps(steps)
+    out: dict[str, dict] = {}
+    for e in sorted(events, key=lambda e: (str(e.get("t", "")), e.get("eid", ""))):
+        if e.get("kind") != "answer":
+            continue
+        qid = e.get("qid")
+        key = e.get("objective") or (objective_of or {}).get(qid) or (f"q:{qid}" if qid else None)
+        if not key:
+            continue
+        day = e.get("day") or kst_day(e.get("t", ""))
+        r = out.get(key)
+        if not e.get("ok"):
+            out[key] = {"stage": 0, "total": len(st), "anchor": day, "due": add_days(day, st[0])}
+        elif r and r["due"] and day >= r["due"]:
+            r["stage"] += 1
+            r["anchor"] = day
+            r["due"] = add_days(day, st[r["stage"]]) if r["stage"] < len(st) else ""
+    return out
 
 
 def main(argv: list[str]) -> int:

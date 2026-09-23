@@ -15,6 +15,9 @@ question_design.py — 문항의 「출제 설계」와 「정보 역할」을 �
       rival: B                    # 학습자가 실제로 혼동할 대안(보기 letter 1~2개)
       discriminator: "…"          # 그 대안과 정답을 가르는 소견
       steps: 2                    # 정답까지 필요한 판단 단계 수(1~4) — 난이도는 이것으로 매긴다
+      chain:                      # 판단 사슬 — steps 개의 「단서 → 결론」(2026-09-24 이후 문항 필수)
+        - "가려움 없는 저색소 반점 + KOH 균사·포자 → 어루러기"
+        - "좁은 범위 · 재발 첫 회 → 국소 항진균제"
       findings:                   # 주요 정보의 역할. 하나가 여러 역할을 가질 수 있다
         - {item: "KOH 검경", role: key, why: "…"}
         - {item: "병변 감각 / 발한", role: rule_out, why: "…"}
@@ -54,6 +57,15 @@ REVIEW_STATUS = ("unreviewed", "reviewed", "needs_revision")
 # design 이 없으면 형식 오류가 되는 기준일 — 이날 이후 생성된 문항부터 적용(기존 문항은 일괄 재생성하지 않는다)
 DESIGN_REQUIRED_FROM = "2026-09-19"
 MAX_FINDINGS = 10   # 해설의 정보 선별은 빠르게 복습할 분량으로 — 전 항목 나열 금지
+# 판단 사슬(design.chain) 필수 기준일(2026-09-23 사용자 채택 — 「판단 단계를 높인다」). steps 를 숫자로만 적으면
+# 실제로 몇 단계 추론인지 확인할 길이 없다 — 단계마다 「어떤 단서로 무엇을 정했나」를 한 줄씩 적게 해
+# steps 와 개수가 맞는지 기계로 보고, 채점 뒤 앱이 사슬을 보여 줘 어느 단계에서 갈렸는지 스스로 찾게 한다.
+CHAIN_REQUIRED_FROM = "2026-09-24"
+# 하루 세트의 판단 단계 구성 목표(gen-kmle 「판단 단계 구성」) — mix_report 가 이 기준으로 WARN 한다.
+MIX_MIN_DEEP = 0.4       # steps ≥ 3 비율 하한
+MIX_MAX_SHALLOW = 0.1    # steps = 1 비율 상한
+MIX_MAX_TARGET = 0.5     # 한 평가 목표(target)가 차지하는 비율 상한
+MIX_MIN_N = 5            # 이보다 적은 묶음은 구성을 따지지 않는다
 
 # 정상·음성 소견을 「완전 배제」로 단정하는 표현 — 내용 검토 신호(판정 아님)
 _ABSOLUTE = re.compile(
@@ -172,6 +184,23 @@ def format_findings(meta: dict[str, Any], qtype: str) -> list[tuple[str, str, st
         except (TypeError, ValueError):
             out.append(("ERROR", "design-steps", "design.steps 는 1~4 정수여야 한다."))
             steps = None
+
+    chain = d.get("chain")
+    if chain is None:
+        if qtype in ("kmle", "usmle") and str(meta.get("date", "") or "") >= CHAIN_REQUIRED_FROM:
+            out.append(("ERROR", "design-chain-missing",
+                        f"{CHAIN_REQUIRED_FROM} 이후 문항은 design.chain(판단 사슬 — steps 개의 「단서 → 결론」 한 줄씩)이 필요하다."))
+    elif not isinstance(chain, list) or not all(isinstance(c, str) and c.strip() for c in chain):
+        out.append(("ERROR", "design-chain", "design.chain 은 비어 있지 않은 문자열 목록이어야 한다."))
+    else:
+        if steps is not None and len(chain) != int(steps):
+            out.append(("ERROR", "design-chain-steps",
+                        f"design.chain 이 {len(chain)}줄인데 steps 는 {steps} — 단계 수와 사슬 길이를 맞춰라."))
+        for i, c in enumerate(chain, 1):
+            if "→" not in c:
+                out.append(("WARN", "design-chain-arrow", f"design.chain[{i}] 에 「단서 → 결론」 화살표가 없다."))
+            if len(c) > 140:
+                out.append(("WARN", "design-chain-long", f"design.chain[{i}] 이 길다({len(c)}자) — 한 단계는 한 줄로."))
 
     findings = d.get("findings") or []
     if not isinstance(findings, list) or not findings:
@@ -313,6 +342,7 @@ def design_record(meta: dict[str, Any]) -> dict[str, Any] | None:
         "rival": _letters(d.get("rival")),
         "discriminator": str(d.get("discriminator", "") or ""),
         "steps": d.get("steps"),
+        "chain": [str(c) for c in d.get("chain") or [] if isinstance(c, str) and c.strip()],
         "key": groups["key"],
         "ruleOut": groups["rule_out"],
         "management": groups["management"],
@@ -322,6 +352,38 @@ def design_record(meta: dict[str, Any]) -> dict[str, Any] | None:
                    if sw else None),
     }
     return rec
+
+
+def mix_report(metas: list[dict[str, Any]]) -> tuple[dict[str, Any], list[str]]:
+    """문항 묶음(보통 하루 세트)의 판단 단계·평가 목표 구성. (요약, WARN 목록). design 없는 문항은 센다만 한다."""
+    steps: dict[int, int] = {}
+    targets: dict[str, int] = {}
+    n = 0
+    for m in metas:
+        d = m.get("design") if isinstance(m.get("design"), dict) else None
+        if not d:
+            continue
+        try:
+            s = int(d.get("steps"))
+        except (TypeError, ValueError):
+            continue
+        n += 1
+        steps[s] = steps.get(s, 0) + 1
+        t = str(d.get("target", "") or "")
+        targets[t] = targets.get(t, 0) + 1
+    summary = {"n": n, "steps": dict(sorted(steps.items())), "targets": dict(sorted(targets.items(), key=lambda x: -x[1]))}
+    warns: list[str] = []
+    if n >= MIX_MIN_N:
+        deep = sum(v for k, v in steps.items() if k >= 3) / n
+        shallow = steps.get(1, 0) / n
+        top_t, top_n = max(targets.items(), key=lambda x: x[1])
+        if deep < MIX_MIN_DEEP:
+            warns.append(f"판단 3단계 이상이 {deep:.0%} — 목표 {MIX_MIN_DEEP:.0%} 이상(진단 → 중증도/금기 → 처치처럼 이어지는 문항을 늘린다)")
+        if shallow > MIX_MAX_SHALLOW:
+            warns.append(f"판단 1단계(단순 회상)가 {shallow:.0%} — 목표 {MIX_MAX_SHALLOW:.0%} 이하")
+        if top_n / n > MIX_MAX_TARGET:
+            warns.append(f"평가 목표 「{top_t}」가 {top_n / n:.0%} — 한 목표는 {MIX_MAX_TARGET:.0%} 이하(진단·감별·기전·검사 선택도 섞는다)")
+    return summary, warns
 
 
 def review_status(meta: dict[str, Any]) -> str:
