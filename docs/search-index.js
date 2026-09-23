@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2821,
+  "total": 2831,
   "byType": {
    "usmle": 162,
    "anatomy": 735,
    "kmle": 1099,
+   "imaging": 111,
    "concept": 64,
    "paper": 643,
-   "imaging": 101,
    "ailab": 14,
    "basic": 3
   },
@@ -46,27 +46,27 @@ window.MEDKOS_INDEX = {
    "Microbiology": 12,
    "Immunology": 9,
    "Internal Medicine": 9,
-   "병리·조직학": 6,
-   "소화기": 5,
-   "호흡기": 5,
+   "병리·조직학": 7,
+   "소화기": 6,
+   "호흡기": 6,
+   "내분비": 5,
+   "소아과": 5,
+   "응급·중환자": 5,
    "Allergy": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "감염": 4,
-   "내분비": 4,
-   "소아과": 4,
-   "응급·중환자": 4,
+   "신경": 4,
    "혈액·종양": 4,
    "Oncology": 3,
-   "신경": 3,
+   "신장·비뇨기": 3,
+   "예방의학·역학": 3,
+   "외과": 3,
    "피부과": 3,
    "Emergency Medicine": 2,
    "Medical Imaging AI": 2,
    "근골격·류마티스": 2,
-   "신장·비뇨기": 2,
    "약리": 2,
-   "예방의학·역학": 2,
-   "외과": 2,
    "정신과": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1874,
+   "high": 1884,
    "medium": 898,
    "low": 49
   },
@@ -908,6 +908,180 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1099.md",
    "snippet": "34세 여자가 2시간 전 프로프라놀롤 40 mg 정제 약 60정을 한꺼번에 삼킨 뒤 어지럼과 구역이 심해져 가족이 응급실로 데려왔다. 공황장애로 프로프라놀롤을 처방받아 복용해 왔고, 유서를 남긴 것을 가족이 발견했다. 다른 약이나 술을 함께 먹지는 않았다고 한다. 의식은 졸리지만 부르면 눈을 뜨고 대답하며, 손발이 차고 축축하다. 폐음은 깨끗하고 쌕쌕거림은 없다. 정맥로를 잡아 생리식염수 1 L를 빠르게 주고 아트로핀 1 mg",
    "text": "Cardiology Intentional Propranolol Overdose with Bradycardia and Hypotension Unresponsive to Atropine — Next Step beta-blocker-overdose propranolol glucagon bradycardia toxicology ecg KMLE 2026 / Claude Routine 34세 여자가 2시간 전 프로프라놀롤 40 mg 정제 약 60정을 한꺼번에 삼킨 뒤 어지럼과 구역이 심해져 가족이 응급실로 데려왔다. 공황장애로 프로프라놀롤을 처방받아 복용해 왔고, 유서를 남긴 것을 가족이 발견했다. 다른 약이나 술을 함께 먹지는 않았다고 한다. 의식은 졸리지만 부르면 눈을 뜨고 대답하며, 손발이 차고 축축하다. 폐음은 깨끗하고 쌕쌕거림은 없다. 정맥로를 잡아 생리식염수 1 L를 빠르게 주고 아트로핀 1 mg을 정맥 투여했으나 맥박과 혈압이 그대로다. 활력징후·검사 소견과 심전도는 자료와 같다. 다음으로 시행할 처치는? A. 염화칼슘 정맥 투여 B. 고용량 인슐린 정맥 투여 C. 글루카곤 정맥 투여 D. 도파민 정맥 투여 E. 경피 심박조율 시작 치료용량의 수십 배에 이르는 프로프라놀롤을 삼킨 뒤 동서맥 40회/분과 혈압 76/44의 쇼크가 생겼고, 수액과 아트로핀에 반응하지 않았다. 베타차단제 중독의 서맥·저혈압은 베타수용체가 막혀 아트로핀·카테콜아민만으로는 잘 풀리지 않으므로, 베타수용체를 거치지 않고 아데닐산고리화효소를 자극해 cAMP를 올리는 글루카곤(3–5 mg 정맥 일시 투여 후 지속 주입)을 다음으로 준다. 혈당이 64 mg/dL로 낮은 것은 베타차단제 중독에 어울리는 소견이며, 칼슘차단제 중독이라면 고혈당이 흔하고 그때는 칼슘과 고용량 인슐린을 먼저 쓴다. 글루카곤에 반응이 부족하면 고용량 인슐린·혈관수축제·심박조율로 단계를 올린다."
+  },
+  {
+   "id": "imaging-2026-0112",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 고환 종양의 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0112.md",
+   "snippet": "A 39 year old man comes to the physician because of a painless, gradually enlarging mass in his right testis for 3 months. He has no fever, night sweats, or weight loss. Examination shows a firm, nontender intratesticular mass that does not",
+   "text": "병리·조직학 병리·조직 — 고환 종양의 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 A 39 year old man comes to the physician because of a painless, gradually enlarging mass in his right testis for 3 months. He has no fever, night sweats, or weight loss. Examination shows a firm, nontender intratesticular mass that does not transilluminate; there is no lymphadenopathy. Scrotal ultrasonography shows a homogeneous hypoechoic intratesticular mass. Serum alpha fetoprotein concentration is within the reference range, beta hCG is slightly increased at 12 mIU/mL, and lactate dehydrogenase is increased. A radical inguinal orchiectomy is performed. A photomicrograph of a section of the tumor stained immunohistochemically for CD3 is shown. Which of the following is the most likely diagnosis? A. Seminoma B. Diffuse large B cell lymphoma C. Embryonal carcinoma D. Yolk sac tumor E. Choriocarcinoma"
+  },
+  {
+   "id": "imaging-2026-0111",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 인구 기여위험분율",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0111.md",
+   "snippet": "30년 동안 하루 한 갑씩 담배를 피운 62세 남자가 보건소 금연 클리닉에 왔다. 상담 의사는 금연 사업의 필요성을 설명하려고 이 지역 자료를 보여 주었다. 이 지역 40세 이상 성인 10,000명을 10년 동안 추적한 코호트 연구에서 시작 시점 흡연자는 4,000명, 비흡연자는 6,000명이었다. 추적 기간 중 흡연자에서 120명, 비흡연자에서 30명에게 만성폐쇄폐질환이 새로 진단되었다. 추적 탈락은 없었고 두 군의 나이·성",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 인구 기여위험분율 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 30년 동안 하루 한 갑씩 담배를 피운 62세 남자가 보건소 금연 클리닉에 왔다. 상담 의사는 금연 사업의 필요성을 설명하려고 이 지역 자료를 보여 주었다. 이 지역 40세 이상 성인 10,000명을 10년 동안 추적한 코호트 연구에서 시작 시점 흡연자는 4,000명, 비흡연자는 6,000명이었다. 추적 기간 중 흡연자에서 120명, 비흡연자에서 30명에게 만성폐쇄폐질환이 새로 진단되었다. 추적 탈락은 없었고 두 군의 나이·성별 분포는 비슷하였다. 보건소장은 이 지역에서 흡연을 완전히 없앤다면 만성폐쇄폐질환 발생의 몇 %를 줄일 수 있는지 알고 싶어 한다. 흡연과 만성폐쇄폐질환의 인과관계를 가정할 때 이 지역의 인구 기여위험분율은? A. 83.3% B. 80.0% C. 50.0% D. 40.0% E. 66.7%"
+  },
+  {
+   "id": "imaging-2026-0110",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 당뇨병케톤산증의 칼륨과 인슐린",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0110.md",
+   "snippet": "A 19 year old woman with type 1 diabetes mellitus is brought to the emergency department because of 2 days of vomiting, abdominal pain, and increasing drowsiness after she ran out of insulin. Her pulse is 124/min, respirations are 30/min an",
+   "text": "내분비 내분비·대사 — 당뇨병케톤산증의 칼륨과 인슐린 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 A 19 year old woman with type 1 diabetes mellitus is brought to the emergency department because of 2 days of vomiting, abdominal pain, and increasing drowsiness after she ran out of insulin. Her pulse is 124/min, respirations are 30/min and deep, and blood pressure is 98/60 mmHg. Her mucous membranes are dry. Laboratory studies show: glucose 512 mg/dL, sodium 132 mEq/L, potassium 3.0 mEq/L, chloride 96 mEq/L, bicarbonate 8 mEq/L, BUN 32 mg/dL, and creatinine 1.3 mg/dL. Arterial pH is 7.08. Serum beta hydroxybutyrate is markedly elevated. An ECG shows sinus tachycardia with prominent U waves. Intravenous 0.9% saline is started. Which of the following is the most appropriate next step in management? A. Subcutaneous insulin glargine B. Intravenous potassium chloride before starting insulin C. Intravenous regular insulin infusion D. Intravenous sodium bicarbonate E. Intravenous phosphate replacement"
+  },
+  {
+   "id": "imaging-2026-0109",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 치유 중인 소아 원위 요골 골절의 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0109.md",
+   "snippet": "9세 남아가 3주 전 놀이터에서 넘어지며 왼손을 짚은 뒤 손목이 계속 아파서 병원에 왔다. 넘어진 당일 손목이 부었으나 병원에 가지 않았고 부기는 1주일 뒤 대부분 가라앉았다. 지금은 손목을 짚거나 공을 던질 때만 아프다. 열·체중감소·야간 통증은 없고 다른 부위에 멍이나 골절 병력은 없다. 체온 36.6℃ 이다. 왼쪽 원위 요골 등쪽에 국한된 가벼운 압통이 있고 발적·열감·변형은 없으며 손가락 운동과 감각은 정상이다. 혈액검",
+   "text": "소아과 소아청소년 — 치유 중인 소아 원위 요골 골절의 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 9세 남아가 3주 전 놀이터에서 넘어지며 왼손을 짚은 뒤 손목이 계속 아파서 병원에 왔다. 넘어진 당일 손목이 부었으나 병원에 가지 않았고 부기는 1주일 뒤 대부분 가라앉았다. 지금은 손목을 짚거나 공을 던질 때만 아프다. 열·체중감소·야간 통증은 없고 다른 부위에 멍이나 골절 병력은 없다. 체온 36.6℃ 이다. 왼쪽 원위 요골 등쪽에 국한된 가벼운 압통이 있고 발적·열감·변형은 없으며 손가락 운동과 감각은 정상이다. 혈액검사에서 백혈구 7,600/mm³, 적혈구침강속도 8 mm/h, C반응단백 0.2 mg/dL 이다. 왼쪽 손목 측면 X선은 그림과 같다. 가장 적절한 처치는? A. 도수정복과 경피적 핀 고정 B. 뼈 스캔 C. 짧은 팔 석고 고정 후 외래 추적 D. 뼈 생검 E. 정맥 항생제 투여"
+  },
+  {
+   "id": "imaging-2026-0108",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 감염된 폐쇄성 요로결석",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0108.md",
+   "snippet": "A 54 year old woman is brought to the emergency department because of 2 days of left flank pain and 12 hours of fever and chills. She has no history of kidney stones. Her temperature is 39.2°C, pulse is 118/min, respirations are 22/min, and",
+   "text": "신장·비뇨기 신장·비뇨 — 감염된 폐쇄성 요로결석 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 A 54 year old woman is brought to the emergency department because of 2 days of left flank pain and 12 hours of fever and chills. She has no history of kidney stones. Her temperature is 39.2°C, pulse is 118/min, respirations are 22/min, and blood pressure is 92/58 mmHg after 2 L of intravenous crystalloid. There is marked left costovertebral angle tenderness. Leukocyte count is 18,400/mm3, and serum creatinine is 1.6 mg/dL. Urinalysis shows many leukocytes, nitrites, and bacteria. Blood and urine cultures are obtained, and intravenous piperacillin tazobactam is started. Noncontrast CT of the abdomen shows an 8 mm stone in the proximal left ureter with moderate hydronephrosis and perinephric stranding. Which of the following is the most appropriate next step in management? A. Extracorporeal shock wave lithotripsy B. Tamsulosin and oral fluids with outpatient follow up C. Continue intravenous antibiotics alone and repeat CT in 48 hours D. Urgent decompression with a ureteral stent or percutaneous nephrostomy E. Ureteroscopy with laser lithotripsy"
+  },
+  {
+   "id": "imaging-2026-0107",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 심방세동 환자의 급성 하지 허혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0107.md",
+   "snippet": "72세 남자가 3시간 전 갑자기 시작된 오른쪽 다리 통증과 저림 때문에 응급실에 왔다. 2년 전 심방세동으로 진단받았으나 항응고제를 스스로 끊었다. 걸을 때 다리가 아팠던 적은 없다. 혈압 146/88 mmHg, 맥박 108회/분(불규칙), 호흡 18회/분, 체온 36.7℃ 이다. 오른쪽 종아리와 발이 창백하고 차며, 오른쪽 넙다리동맥 맥박은 촉지되나 오금동맥·발등동맥·뒤정강동맥 맥박은 촉지되지 않고 도플러로도 동맥 신호가 들",
+   "text": "외과 외과계 — 심방세동 환자의 급성 하지 허혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 72세 남자가 3시간 전 갑자기 시작된 오른쪽 다리 통증과 저림 때문에 응급실에 왔다. 2년 전 심방세동으로 진단받았으나 항응고제를 스스로 끊었다. 걸을 때 다리가 아팠던 적은 없다. 혈압 146/88 mmHg, 맥박 108회/분(불규칙), 호흡 18회/분, 체온 36.7℃ 이다. 오른쪽 종아리와 발이 창백하고 차며, 오른쪽 넙다리동맥 맥박은 촉지되나 오금동맥·발등동맥·뒤정강동맥 맥박은 촉지되지 않고 도플러로도 동맥 신호가 들리지 않는다. 오른쪽 발가락과 발등의 감각이 떨어져 있고 발목 배측굴곡이 약간 약하다. 종아리는 부드럽다. 왼쪽 다리의 맥박은 모두 정상으로 촉지된다. 혈청 크레아티닌은 1.0 mg/dL 이다. 정맥 헤파린을 투여하였다. 다음 처치로 가장 적절한 것은? A. 카테터 유도 혈전용해술 B. 와파린 투여 후 외래 추적 C. 1차 무릎위 절단 D. 실로스타졸 투여와 보행 운동 E. 응급 수술적 색전제거술"
+  },
+  {
+   "id": "imaging-2026-0106",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 혈전용해 전 급성 뇌경색의 혈압",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0106.md",
+   "snippet": "A 68 year old man is brought to the emergency department 70 minutes after his wife found him with sudden weakness of the right arm and leg and difficulty speaking. He was last known to be well 80 minutes ago. He has hypertension and type 2 ",
+   "text": "신경 신경 — 혈전용해 전 급성 뇌경색의 혈압 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 A 68 year old man is brought to the emergency department 70 minutes after his wife found him with sudden weakness of the right arm and leg and difficulty speaking. He was last known to be well 80 minutes ago. He has hypertension and type 2 diabetes mellitus and takes lisinopril and metformin. He does not take anticoagulants. His pulse is 84/min and regular, respirations are 16/min, and blood pressure is 204/112 mmHg. Fingerstick glucose is 142 mg/dL. He has a right facial droop, right hemiparesis, and expressive aphasia; the NIH Stroke Scale score is 12. Noncontrast CT of the head shows no hemorrhage and no early ischemic changes. Platelet count and coagulation studies are normal. Which of the following is the most appropriate next step in management? A. Sublingual nifedipine to lower blood pressure to below 140/90 mmHg B. Intravenous labetalol, then intravenous alteplase once blood pressure is below 185/110 mmHg C. Intravenous alteplase immediately D. Withhold thrombolysis because the blood pressure exceeds 185/110 mmHg E. Oral aspirin and clopidogrel"
+  },
+  {
+   "id": "imaging-2026-0105",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 경증 급성 췌장염의 영양",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0105.md",
+   "snippet": "45세 남자가 하루 전부터 시작된 명치 통증이 등으로 뻗쳐 입원하였다. 전날 저녁에 소주 두 병을 마셨고 10년 동안 매일 술을 마셨다. 입원 당시 혈청 리파아제는 정상 상한의 8배였고 복부 초음파에서 담석과 담관 확장은 없었다. 입원 후 정맥 수액(젖산 링거액)과 진통제를 투여하였다. 입원 36시간째 체온 36.9℃, 혈압 128/78 mmHg, 맥박 84회/분, 호흡 16회/분이다. 통증은 많이 줄었고 배가 고프다고 한다.",
+   "text": "소화기 소화기·간담췌 — 경증 급성 췌장염의 영양 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 45세 남자가 하루 전부터 시작된 명치 통증이 등으로 뻗쳐 입원하였다. 전날 저녁에 소주 두 병을 마셨고 10년 동안 매일 술을 마셨다. 입원 당시 혈청 리파아제는 정상 상한의 8배였고 복부 초음파에서 담석과 담관 확장은 없었다. 입원 후 정맥 수액(젖산 링거액)과 진통제를 투여하였다. 입원 36시간째 체온 36.9℃, 혈압 128/78 mmHg, 맥박 84회/분, 호흡 16회/분이다. 통증은 많이 줄었고 배가 고프다고 한다. 명치에 가벼운 압통이 있고 장음은 정상이며 구역·구토는 없다. 혈액검사에서 백혈구 11,200/mm³, 혈중요소질소 14 mg/dL, 크레아티닌 0.8 mg/dL, 칼슘 9.1 mg/dL 이다. 가장 적절한 처치는? A. 저지방 경구 식이 시작 B. 금식 유지와 비경구영양 C. 예방적 카바페넴 투여 D. 조영증강 복부 CT E. 내시경역행담췌관조영술"
+  },
+  {
+   "id": "imaging-2026-0104",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 흉통이 멎은 고령 환자의 심전도와 다음 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0104.md",
+   "snippet": "An 83 year old man comes to the emergency department 2 hours after an episode of pressure like substernal chest discomfort that began while he was walking and resolved after 20 minutes of rest. He is now pain free. He has hypertension and h",
+   "text": "응급·중환자 응급·중환자·외상 — 흉통이 멎은 고령 환자의 심전도와 다음 검사 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 An 83 year old man comes to the emergency department 2 hours after an episode of pressure like substernal chest discomfort that began while he was walking and resolved after 20 minutes of rest. He is now pain free. He has hypertension and hyperlipidemia treated with amlodipine and atorvastatin. His temperature is 36.6°C, pulse is 66/min, respirations are 16/min, and blood pressure is 142/80 mmHg. Oxygen saturation is 97% on room air. The lungs are clear to auscultation, and there is no murmur or peripheral edema. He is given aspirin on arrival. A 12 lead ECG is shown. An initial high sensitivity troponin T level is at the upper reference limit. Which of the following is the most appropriate next step in management? A. Intravenous alteplase B. Discharge home with outpatient exercise stress testing C. CT pulmonary angiography D. Repeat high sensitivity troponin measurement in 1 to 3 hours E. Emergency coronary angiography"
+  },
+  {
+   "id": "imaging-2026-0103",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 산소가 필요한 코로나19 폐렴의 약물치료",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "confidence": "high",
+   "date": "2026-09-23",
+   "path": "content/imaging/2026/imaging-2026-0103.md",
+   "snippet": "77세 여자가 5일 전부터 열과 기침이 나고 이틀 전부터 숨이 차서 응급실에 왔다. 3일 전 같은 요양시설의 입소자가 코로나19로 진단되었다. 10년 전 완전방실차단으로 심박동기를 넣었고 고혈압약을 먹고 있다. 체온 38.4℃, 혈압 132/76 mmHg, 맥박 88회/분, 호흡 26회/분이고 실내공기에서 산소포화도는 89% 이다. 양쪽 아래 폐야에서 수포음이 들린다. 다리 부종은 없다. 코인두 도말 SARS CoV 2 PCR",
+   "text": "호흡기 호흡기 — 산소가 필요한 코로나19 폐렴의 약물치료 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44 77세 여자가 5일 전부터 열과 기침이 나고 이틀 전부터 숨이 차서 응급실에 왔다. 3일 전 같은 요양시설의 입소자가 코로나19로 진단되었다. 10년 전 완전방실차단으로 심박동기를 넣었고 고혈압약을 먹고 있다. 체온 38.4℃, 혈압 132/76 mmHg, 맥박 88회/분, 호흡 26회/분이고 실내공기에서 산소포화도는 89% 이다. 양쪽 아래 폐야에서 수포음이 들린다. 다리 부종은 없다. 코인두 도말 SARS CoV 2 PCR 은 양성이고 혈청 크레아티닌은 0.9 mg/dL 이다. 흉부 X선은 그림과 같다. 비강 캐뉼라로 산소를 주기 시작하였다. 이 환자에게 투여할 약물로 가장 적절한 것은? A. 오셀타미비르 B. 이버멕틴 C. 덱사메타손 D. 니르마트렐비르 리토나비르 E. 하이드록시클로로퀸"
   },
   {
    "id": "cn.rheum.sle.mild-disease-hydroxychloroquine",

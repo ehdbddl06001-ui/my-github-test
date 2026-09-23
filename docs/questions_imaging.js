@@ -2,6 +2,1405 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0112",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "병리·조직 — 고환 종양의 면역조직화학",
+  "type": "병리·조직 — 고환 종양의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-23",
+  "vignette": "A 39-year-old man comes to the physician because of a painless, gradually enlarging mass in his right testis for 3 months. He has no fever, night sweats, or weight loss. Examination shows a firm, nontender intratesticular mass that does not transilluminate; there is no lymphadenopathy. Scrotal ultrasonography shows a homogeneous hypoechoic intratesticular mass. Serum alpha-fetoprotein concentration is within the reference range, beta-hCG is slightly increased at 12 mIU/mL, and lactate dehydrogenase is increased. A radical inguinal orchiectomy is performed. A photomicrograph of a section of the tumor stained immunohistochemically for CD3 is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Seminoma",
+   "Diffuse large B-cell lymphoma",
+   "Embryonal carcinoma",
+   "Yolk sac tumor",
+   "Choriocarcinoma"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The section shows sheets of uniform, large, round tumor cells with clear cytoplasm and central nuclei divided by thin fibrous septa, and the brown CD3-positive cells are small lymphocytes clustered along the septa and scattered between tumor cells; the tumor cells themselves are negative. Sheets of monotonous clear cells with septal T-lymphocyte infiltrates are the classic pattern of seminoma. A 39-year-old man with a homogeneous hypoechoic testicular mass, a normal AFP, and only a slight rise in beta-hCG (from scattered syncytiotrophoblasts, present in about 15% of seminomas) fits. Lymphoma is a disease of older men with sheets of atypical lymphoid cells that would themselves be the stained or counted population; a normal AFP argues against yolk sac tumor, and a markedly high hCG with hemorrhage would suggest choriocarcinoma.\n- 원리: <b>Seminoma is the testicular counterpart of the primordial germ cell</b> — the germ cell that has not differentiated toward embryonic or extraembryonic tissue. Its cells therefore look like primitive germ cells: large, round, uniform, with glycogen-rich <b>clear cytoplasm</b>, distinct cell borders, and a central nucleus with a prominent nucleolus. They grow in <b>sheets or lobules separated by thin fibrous septa</b>, and those septa carry a characteristic <b>lymphocytic infiltrate</b>, mostly CD3-positive T cells, sometimes with granulomas. This host immune reaction is so constant that it is a diagnostic clue, and a CD3 stain highlights it while leaving the tumor cells blank. Tumor cells stain for OCT3/4, SALL4, PLAP, D2-40, and CD117 and are negative for CD30 and keratin (mostly), which separates them from embryonal carcinoma.<br> <b>Serum markers mirror what each tumor differentiates into.</b> Because seminoma does not make yolk sac structures, <b>AFP is normal</b> — an elevated AFP means a nonseminomatous component and changes management even if the histology looks like pure seminoma. Scattered syncytiotrophoblastic giant cells can secrete small amounts of hCG, so a mild rise is compatible. LDH reflects tumor burden. Seminoma is exquisitely radiosensitive and chemosensitive, which is why the distinction from nonseminomatous germ cell tumors and from testicular lymphoma (the most common testicular tumor in men over 60) matters.\n- 비교: <table><thead><tr><th style=\"width:24%\">Diagnosis</th><th style=\"width:46%\">Morphology, immunostains, and markers</th><th>This case</th></tr></thead><tbody> <tr><td><b>Seminoma (answer)</b></td><td><b>Sheets of uniform clear cells, fibrous septa with CD3+ T lymphocytes; OCT3/4+, CD117+; AFP normal, hCG normal or mildly high</b></td><td><b>Clear-cell sheets, septal CD3+ lymphocytes, tumor cells CD3−, AFP normal, hCG 12</b></td></tr> <tr><td>Diffuse large B-cell lymphoma (closest rival)</td><td>Men &gt; 60, often bilateral; diffuse large atypical lymphoid cells infiltrating between tubules; CD20+, CD3− tumor; markers normal</td><td>Age 39, tumor cells epithelioid with clear cytoplasm, lymphocytes small and septal</td></tr> <tr><td>Embryonal carcinoma</td><td>Pleomorphic cells in glands and sheets, necrosis, hemorrhage; CD30+, keratin+; AFP and hCG often high</td><td>Uniform cells, no pleomorphism; AFP normal</td></tr> <tr><td>Yolk sac tumor</td><td>Reticular pattern, Schiller-Duval bodies, hyaline globules; AFP markedly high; most common in young children</td><td>AFP normal</td></tr> <tr><td>Choriocarcinoma</td><td>Syncytiotrophoblast and cytotrophoblast with hemorrhage; hCG very high (often &gt; 10,000)</td><td>hCG only 12 mIU/mL</td></tr> </tbody></table> <b>The closest rival is diffuse large B-cell lymphoma</b>, because lymphocytes are the stained cells. The key is <b>which cells are abnormal</b>: here the brown cells are small, reactive, and septal, while the tumor is the unstained clear-cell population — the reverse of lymphoma, where the large atypical lymphoid cells are the tumor.\n- 오답 이유:\n  - (B) Diffuse large B-cell lymphoma is tempting because the stain highlights lymphocytes and lymphoma is the most common testicular tumor in older men. But the stained cells are small reactive T cells along septa, and the tumor cells are large clear epithelioid cells that do not stain; lymphoma would show sheets of atypical CD20-positive B cells. In a 68-year-old man with bilateral testicular masses, lymphoma would be the answer.\n  - (C) Embryonal carcinoma is a common germ cell tumor of young men and can cause a firm testicular mass with raised LDH. Its cells are pleomorphic, form glands and papillae, and are accompanied by necrosis and hemorrhage, and AFP and hCG are often elevated. If the tumor showed pleomorphic CD30-positive cells with necrosis and a raised AFP, embryonal carcinoma would be correct.\n  - (D) Yolk sac tumor is the classic source of AFP and should be considered in any testicular germ cell tumor. It shows a reticular or microcystic pattern with Schiller-Duval bodies, and serum AFP is markedly elevated. This patient's AFP is normal. In a 2-year-old boy with a testicular mass and an AFP of several thousand, yolk sac tumor would be the answer.\n  - (E) Choriocarcinoma is suggested by any rise in beta-hCG, and it metastasizes early by blood. Its hCG levels are very high (often thousands to hundreds of thousands) and its histology shows hemorrhagic syncytiotrophoblast and cytotrophoblast. A slight elevation to 12 mIU/mL fits scattered syncytiotrophoblasts in seminoma. With hCG over 50,000 mIU/mL and lung metastases, choriocarcinoma would be correct.\n- 함정: In an immunostain, ask which cells are the tumor. Brown lymphocytes along septa of an unstained clear-cell tumor are the host response of seminoma, not a lymphoma.\n- 학습목표: 고환 종양의 CD3 면역조직화학에서 음성인 균일한 종양세포 판과 섬유 격막을 따라 모인 양성 T 림프구를 읽고, 정상 AFP 와 함께 정상피종을 진단하며 림프종·비정상피종 생식세포종양과 감별한다\n- 근거·출처: Human Protein Atlas (CC BY 4.0) CD3E, sample 1299 A-1-5 — 39 M, testis cancer, SNOMED seminoma NOS (sample annotation) — Grade A; teacher-only · 작성자 판독(2026-09-24): 맑은 세포질·둥근 핵의 균일한 종양세포 판, 섬유 격막을 따라 CD3 양성 작은 림프구 무리, 종양세포 음성 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The lower urinary tract and male genital system' — seminoma, nonseminomatous germ cell tumors · WHO Classification of Tumours, Urinary and Male Genital Tumours, 5th ed. (2022) — germ cell neoplasia in situ-derived tumours · Gilligan T et al. Testicular cancer, version 2.2020, NCCN Clinical Practice Guidelines. J Natl Compr Canc Netw 2019;17:1529\n\n## 출처\n- Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The section shows sheets of uniform, large, round tumor cells with clear cytoplasm and central nuclei divided by thin fibrous septa, and the brown CD3-positive cells are small lymphocytes clustered along the septa and scattered between tumor cells; the tumor cells themselves are negative. Sheets of monotonous clear cells with septal T-lymphocyte infiltrates are the classic pattern of seminoma. A 39-year-old man with a homogeneous hypoechoic testicular mass, a normal AFP, and only a slight rise in beta-hCG (from scattered syncytiotrophoblasts, present in about 15% of seminomas) fits. Lymphoma is a disease of older men with sheets of atypical lymphoid cells that would themselves be the stained or counted population; a normal AFP argues against yolk sac tumor, and a markedly high hCG with hemorrhage would suggest choriocarcinoma."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Seminoma is the testicular counterpart of the primordial germ cell</b> — the germ cell that has not differentiated toward embryonic or extraembryonic tissue. Its cells therefore look like primitive germ cells: large, round, uniform, with glycogen-rich <b>clear cytoplasm</b>, distinct cell borders, and a central nucleus with a prominent nucleolus. They grow in <b>sheets or lobules separated by thin fibrous septa</b>, and those septa carry a characteristic <b>lymphocytic infiltrate</b>, mostly CD3-positive T cells, sometimes with granulomas. This host immune reaction is so constant that it is a diagnostic clue, and a CD3 stain highlights it while leaving the tumor cells blank. Tumor cells stain for OCT3/4, SALL4, PLAP, D2-40, and CD117 and are negative for CD30 and keratin (mostly), which separates them from embryonal carcinoma.<br> <b>Serum markers mirror what each tumor differentiates into.</b> Because seminoma does not make yolk sac structures, <b>AFP is normal</b> — an elevated AFP means a nonseminomatous component and changes management even if the histology looks like pure seminoma. Scattered syncytiotrophoblastic giant cells can secrete small amounts of hCG, so a mild rise is compatible. LDH reflects tumor burden. Seminoma is exquisitely radiosensitive and chemosensitive, which is why the distinction from nonseminomatous germ cell tumors and from testicular lymphoma (the most common testicular tumor in men over 60) matters."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Diagnosis</th><th style=\"width:46%\">Morphology, immunostains, and markers</th><th>This case</th></tr></thead><tbody> <tr><td><b>Seminoma (answer)</b></td><td><b>Sheets of uniform clear cells, fibrous septa with CD3+ T lymphocytes; OCT3/4+, CD117+; AFP normal, hCG normal or mildly high</b></td><td><b>Clear-cell sheets, septal CD3+ lymphocytes, tumor cells CD3−, AFP normal, hCG 12</b></td></tr> <tr><td>Diffuse large B-cell lymphoma (closest rival)</td><td>Men &gt; 60, often bilateral; diffuse large atypical lymphoid cells infiltrating between tubules; CD20+, CD3− tumor; markers normal</td><td>Age 39, tumor cells epithelioid with clear cytoplasm, lymphocytes small and septal</td></tr> <tr><td>Embryonal carcinoma</td><td>Pleomorphic cells in glands and sheets, necrosis, hemorrhage; CD30+, keratin+; AFP and hCG often high</td><td>Uniform cells, no pleomorphism; AFP normal</td></tr> <tr><td>Yolk sac tumor</td><td>Reticular pattern, Schiller-Duval bodies, hyaline globules; AFP markedly high; most common in young children</td><td>AFP normal</td></tr> <tr><td>Choriocarcinoma</td><td>Syncytiotrophoblast and cytotrophoblast with hemorrhage; hCG very high (often &gt; 10,000)</td><td>hCG only 12 mIU/mL</td></tr> </tbody></table> <b>The closest rival is diffuse large B-cell lymphoma</b>, because lymphocytes are the stained cells. The key is <b>which cells are abnormal</b>: here the brown cells are small, reactive, and septal, while the tumor is the unstained clear-cell population — the reverse of lymphoma, where the large atypical lymphoid cells are the tumor."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Diffuse large B-cell lymphoma is tempting because the stain highlights lymphocytes and lymphoma is the most common testicular tumor in older men. But the stained cells are small reactive T cells along septa, and the tumor cells are large clear epithelioid cells that do not stain; lymphoma would show sheets of atypical CD20-positive B cells. In a 68-year-old man with bilateral testicular masses, lymphoma would be the answer.\n(C) Embryonal carcinoma is a common germ cell tumor of young men and can cause a firm testicular mass with raised LDH. Its cells are pleomorphic, form glands and papillae, and are accompanied by necrosis and hemorrhage, and AFP and hCG are often elevated. If the tumor showed pleomorphic CD30-positive cells with necrosis and a raised AFP, embryonal carcinoma would be correct.\n(D) Yolk sac tumor is the classic source of AFP and should be considered in any testicular germ cell tumor. It shows a reticular or microcystic pattern with Schiller-Duval bodies, and serum AFP is markedly elevated. This patient's AFP is normal. In a 2-year-old boy with a testicular mass and an AFP of several thousand, yolk sac tumor would be the answer.\n(E) Choriocarcinoma is suggested by any rise in beta-hCG, and it metastasizes early by blood. Its hCG levels are very high (often thousands to hundreds of thousands) and its histology shows hemorrhagic syncytiotrophoblast and cytotrophoblast. A slight elevation to 12 mIU/mL fits scattered syncytiotrophoblasts in seminoma. With hCG over 50,000 mIU/mL and lung metastases, choriocarcinoma would be correct."
+   },
+   {
+    "k": "함정",
+    "v": "In an immunostain, ask which cells are the tumor. Brown lymphocytes along septa of an unstained clear-cell tumor are the host response of seminoma, not a lymphoma."
+   },
+   {
+    "k": "학습목표",
+    "v": "고환 종양의 CD3 면역조직화학에서 음성인 균일한 종양세포 판과 섬유 격막을 따라 모인 양성 T 림프구를 읽고, 정상 AFP 와 함께 정상피종을 진단하며 림프종·비정상피종 생식세포종양과 감별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Human Protein Atlas (CC BY 4.0) CD3E, sample 1299 A-1-5 — 39 M, testis cancer, SNOMED seminoma NOS (sample annotation) — Grade A; teacher-only · 작성자 판독(2026-09-24): 맑은 세포질·둥근 핵의 균일한 종양세포 판, 섬유 격막을 따라 CD3 양성 작은 림프구 무리, 종양세포 음성 · Robbins & Cotran Pathologic Basis of Disease, 10th ed., ch. 'The lower urinary tract and male genital system' — seminoma, nonseminomatous germ cell tumors · WHO Classification of Tumours, Urinary and Male Genital Tumours, 5th ed. (2022) — germ cell neoplasia in situ-derived tumours · Gilligan T et al. Testicular cancer, version 2.2020, NCCN Clinical Practice Guidelines. J Natl Compr Canc Netw 2019;17:1529 ## 출처 Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "Sheets of uniform clear tumor cells that are CD3-negative, divided by septa carrying CD3-positive T lymphocytes, in a 39-year-old man with normal AFP and a mild hCG rise, is seminoma",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "In lymphoma the large atypical lymphoid cells are the tumor; here the stained lymphocytes are small and reactive, and the tumor is the unstained clear-cell population",
+   "steps": 3,
+   "chain": [
+    "영상: 맑은 세포질의 균일한 종양세포 판 + 격막의 CD3 양성 작은 림프구 → 정상피종의 림프구 침윤 양상",
+    "tumor cells CD3-negative, age 39 → lymphoma가 아니라 생식세포종양",
+    "AFP normal, hCG slightly increased → 비정상피종(난황낭·융모막암)보다 정상피종"
+   ],
+   "key": [
+    {
+     "item": "영상: sheets of uniform clear tumor cells divided by fibrous septa, tumor cells CD3-negative",
+     "why": "Seminoma morphology — the tumor is the unstained population",
+     "also": []
+    },
+    {
+     "item": "영상: CD3-positive small lymphocytes clustered along the septa",
+     "why": "Septal T-lymphocyte infiltrate characteristic of seminoma",
+     "also": []
+    },
+    {
+     "item": "Scrotal ultrasonography shows a homogeneous hypoechoic intratesticular mass",
+     "why": "Homogeneous hypoechoic pattern typical of seminoma",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum alpha-fetoprotein concentration is within the reference range",
+     "why": "Makes yolk sac tumor and mixed nonseminoma less likely",
+     "also": []
+    },
+    {
+     "item": "beta-hCG is slightly increased at 12 mIU/mL",
+     "why": "Compatible with syncytiotrophoblasts in seminoma, far below choriocarcinoma",
+     "also": []
+    },
+    {
+     "item": "A 39-year-old man",
+     "why": "Typical seminoma age; testicular lymphoma is mainly over 60",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He has no fever, night sweats, or weight loss",
+     "why": "No B symptoms — slightly lowers lymphoma but not decisive",
+     "also": []
+    },
+    {
+     "item": "lactate dehydrogenase is increased",
+     "why": "Tumor burden marker — nonspecific among testicular tumors",
+     "also": []
+    }
+   ],
+   "summary": "The tumor cells are uniform clear cells in sheets that do not stain for CD3, while small CD3-positive T lymphocytes line the fibrous septa — the host response of seminoma. A normal AFP and only mildly raised hCG in a 39-year-old man support seminoma over nonseminomatous tumors and lymphoma.",
+   "switch": {
+    "choice": "B",
+    "condition": "If the patient were 68 with bilateral testicular masses and the large atypical tumor cells were CD20-positive lymphoid cells, diffuse large B-cell lymphoma would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0112.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (cancer tissue IHC, Pathology section)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer",
+   "asset_id": "HPA-CD3E_1299_A_1_5",
+   "text": "Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg"
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0109",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "소아청소년 — 치유 중인 소아 원위 요골 골절의 X선",
+  "type": "소아청소년 — 치유 중인 소아 원위 요골 골절의 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-23",
+  "vignette": "9세 남아가 3주 전 놀이터에서 넘어지며 왼손을 짚은 뒤 손목이 계속 아파서 병원에 왔다. 넘어진 당일 손목이 부었으나 병원에 가지 않았고 부기는 1주일 뒤 대부분 가라앉았다. 지금은 손목을 짚거나 공을 던질 때만 아프다. 열·체중감소·야간 통증은 없고 다른 부위에 멍이나 골절 병력은 없다. 체온 36.6℃ 이다. 왼쪽 원위 요골 등쪽에 국한된 가벼운 압통이 있고 발적·열감·변형은 없으며 손가락 운동과 감각은 정상이다. 혈액검사에서 백혈구 7,600/mm³, 적혈구침강속도 8 mm/h, C반응단백 0.2 mg/dL 이다. 왼쪽 손목 측면 X선은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "도수정복과 경피적 핀 고정",
+   "뼈 스캔",
+   "짧은 팔 석고 고정 후 외래 추적",
+   "뼈 생검",
+   "정맥 항생제 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: X선에서 원위 요골 골간단을 가로지르는 희미한 경화대가 있고 전위·각형성은 없으며 성장판은 열려 있어, 3주 전 외상에 따른 치유 중인 원위 요골 골절(경화대 = 골절선 주변의 새 뼈, 피질을 따라 얇은 골막 신생골)이다. 열·야간 통증·체중감소가 없고 백혈구·적혈구침강속도·C반응단백이 정상이며 압통이 국소적이어서 골수염이나 종양으로 인한 골막 반응을 의심할 이유가 없다. 따라서 짧은 팔 석고 또는 부목으로 고정해 통증을 줄이고 2~3주 뒤 추적한다. 생검·항생제·뼈 스캔은 필요 없고, 전위가 없어 정복과 핀 고정도 필요 없다.\n- 원리: <b>골막 반응은 「뼈가 반응하고 있다」는 뜻일 뿐, 원인은 맥락이 정한다.</b> 소아의 골막은 두껍고 느슨하게 붙어 있으며 골형성 능력이 매우 커서, 골절이 생기면 1~2주 안에 골막 밑에서 새 뼈(가골)를 만든다. 그래서 X선에서 <b>피질을 따라 얇고 매끈한 한 겹의 골막 신생골</b>과 <b>골절선 주변의 경화대</b> (골절 틈에 새로 생긴 뼈가 겹쳐 하얗게 보임)가 나타나는데, 이것은 치유의 정상 경과다. 외상 직후 X선에서 보이지 않던 미세 골절이 2~3주 뒤 이런 경화대로 비로소 드러나기도 한다.<br> <b>같은 골막 반응이 골수염·유잉육종·골육종에서도 나온다.</b> 이들을 가르는 것은 <b>골막 반응의 모양</b>과 <b>임상 맥락</b>이다. 치유 가골은 매끈하고 연속적인 한 겹이며 골절선과 붙어 있고, 뼈 파괴가 없다. 공격적인 병변은 여러 겹의 양파 껍질 모양, 햇살 모양, 코드만 삼각을 만들고 골수의 경계 불분명한 골용해를 동반한다. 임상에서는 외상과 시간 관계가 맞는가, 열·야간 통증·체중감소가 있는가, 염증 표지(적혈구침강속도·C반응단백)가 오르는가를 본다. 이 아이는 외상 3주 뒤, 매끈한 가골, 뼈 파괴 없음, 정상 염증 표지이므로 치유 중인 골절이고, 추가 검사가 아니라 고정과 추적이 답이다. 여러 시기의 골절이나 설명과 맞지 않는 손상이면 아동학대를 반드시 생각한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">진단(처치)</th><th style=\"width:44%\">X선과 임상의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>치유 중 골절(고정·추적 — 정답)</b></td><td><b>외상 2~3주 뒤, 골절선 경화대 + 매끈한 한 겹 골막 신생골, 뼈 파괴 없음, 염증 표지 정상</b></td><td><b>3주 전 넘어짐, 경화대, 전위 없음, ESR·CRP 정상</b></td></tr> <tr><td>유잉육종·골육종(뼈 생검 — 가장 가까운 오답)</td><td>여러 겹 양파 껍질·햇살 모양 골막 반응, 코드만 삼각, 투과성 골용해, 야간 통증·연부조직 종괴</td><td>야간 통증·종괴·골용해 없음</td></tr> <tr><td>급성 골수염(정맥 항생제)</td><td>열, 국소 발적·열감, ESR·CRP 상승, 골간단 골용해(1~2주 뒤)</td><td>열 없음, 염증 표지 정상</td></tr> <tr><td>전위 골절(도수정복·핀 고정)</td><td>각형성·전위가 허용 범위를 넘는 급성 골절</td><td>전위·각형성 없음, 이미 치유 중</td></tr> <tr><td>뼈 스캔</td><td>X선 음성인 피로 골절·다발성 병변·학대 선별</td><td>X선으로 이미 설명됨</td></tr> </tbody></table> <b>가장 가까운 오답은 뼈 생검</b>이다 — 「소아 뼈의 골막 반응 = 종양」이라는 연상 때문이다. 갈림길은 <b>외상과의 시간 관계 + 골막 반응의 모양 + 전신 증상</b>이다. 세 가지가 모두 치유 쪽이면 추적 X선으로 충분하고, 하나라도 공격적이면 MRI 와 생검으로 간다.\n- 오답 이유:\n  - ① 도수정복과 경피적 핀 고정은 전위되거나 각형성이 허용 범위를 넘는 원위 요골 골절의 치료라 골절이라는 공통점으로 떠오를 수 있다. 이 X선은 전위·각형성이 없고 이미 가골이 생기고 있다. 넘어진 당일 X선에서 등쪽으로 30° 각형성된 골간단 골절이 보였다면 이 선지가 적절하다.\n  - ② 뼈 스캔은 X선에서 안 보이는 피로 골절이나 다발성 병변, 아동학대의 숨은 골절을 찾을 때 쓰여 떠올릴 수 있지만, 이 아이의 통증은 X선의 치유 골절로 설명되고 다른 부위 손상 병력도 없다. 설명과 맞지 않는 여러 시기의 골절이 의심되는 영아였다면 골격 조사와 함께 이 검사가 필요하다.\n  - ④ 뼈 생검은 소아 뼈의 골막 반응에서 유잉육종·골육종을 놓치지 않으려는 생각으로 떠오르지만, 이 아이는 외상과 시간 관계가 맞고 야간 통증·연부조직 종괴·골용해가 없으며 골막 반응이 매끈한 한 겹이다. 여러 겹의 양파 껍질 모양 골막 반응과 투과성 골용해, 야간 통증이 있었다면 MRI 뒤 생검이 정답이다.\n  - ⑤ 정맥 항생제는 소아 골간단의 급성 골수염이 흔하고 골막 반응을 만들기 때문에 떠올릴 수 있지만, 이 아이는 열이 없고 발적·열감이 없으며 백혈구·적혈구침강속도·C반응단백이 정상이다. 열이 나고 국소 발적·열감과 함께 C반응단백이 크게 올라 있었다면 혈액배양 뒤 정맥 항생제가 정답이 된다.\n- 함정: 소아 X선의 골막 반응을 곧바로 종양·감염으로 읽지 않는다. 외상과의 시간 관계, 골막 반응의 모양, 전신 증상을 함께 본다.\n- 학습목표: 외상 3주 뒤 소아 손목 X선에서 원위 요골 골간단의 경화대와 골막 신생골을 치유 중인 골절의 가골로 읽고, 전신 증상·염증 표지가 없으면 골수염·종양 검사 대신 고정과 추적을 선택한다\n- 근거·출처: GRAZPEDWRI-DX (figshare, CC BY 4.0) — 9.8 M, left wrist lateral, healing distal radius fracture with periosteal reaction, pediatric radiologist annotation (AO/OTA 23r-E/2.1) — Grade A; teacher-only · 작성자 판독(2026-09-24): 원위 요골 골간단을 가로지르는 희미한 경화대, 전위·각형성 없음, 성장판 열림, 좌하단 표지 막대에 글자 없음 · Nagy E et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — healing and periosteal reaction · Nelson Textbook of Pediatrics, 21st ed., ch. 'Osteomyelitis' and 'Ewing sarcoma' — periosteal reaction patterns\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 원위 요골 골간단을 가로지르는 희미한 경화대가 있고 전위·각형성은 없으며 성장판은 열려 있어, 3주 전 외상에 따른 치유 중인 원위 요골 골절(경화대 = 골절선 주변의 새 뼈, 피질을 따라 얇은 골막 신생골)이다. 열·야간 통증·체중감소가 없고 백혈구·적혈구침강속도·C반응단백이 정상이며 압통이 국소적이어서 골수염이나 종양으로 인한 골막 반응을 의심할 이유가 없다. 따라서 짧은 팔 석고 또는 부목으로 고정해 통증을 줄이고 2~3주 뒤 추적한다. 생검·항생제·뼈 스캔은 필요 없고, 전위가 없어 정복과 핀 고정도 필요 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>골막 반응은 「뼈가 반응하고 있다」는 뜻일 뿐, 원인은 맥락이 정한다.</b> 소아의 골막은 두껍고 느슨하게 붙어 있으며 골형성 능력이 매우 커서, 골절이 생기면 1~2주 안에 골막 밑에서 새 뼈(가골)를 만든다. 그래서 X선에서 <b>피질을 따라 얇고 매끈한 한 겹의 골막 신생골</b>과 <b>골절선 주변의 경화대</b> (골절 틈에 새로 생긴 뼈가 겹쳐 하얗게 보임)가 나타나는데, 이것은 치유의 정상 경과다. 외상 직후 X선에서 보이지 않던 미세 골절이 2~3주 뒤 이런 경화대로 비로소 드러나기도 한다.<br> <b>같은 골막 반응이 골수염·유잉육종·골육종에서도 나온다.</b> 이들을 가르는 것은 <b>골막 반응의 모양</b>과 <b>임상 맥락</b>이다. 치유 가골은 매끈하고 연속적인 한 겹이며 골절선과 붙어 있고, 뼈 파괴가 없다. 공격적인 병변은 여러 겹의 양파 껍질 모양, 햇살 모양, 코드만 삼각을 만들고 골수의 경계 불분명한 골용해를 동반한다. 임상에서는 외상과 시간 관계가 맞는가, 열·야간 통증·체중감소가 있는가, 염증 표지(적혈구침강속도·C반응단백)가 오르는가를 본다. 이 아이는 외상 3주 뒤, 매끈한 가골, 뼈 파괴 없음, 정상 염증 표지이므로 치유 중인 골절이고, 추가 검사가 아니라 고정과 추적이 답이다. 여러 시기의 골절이나 설명과 맞지 않는 손상이면 아동학대를 반드시 생각한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">진단(처치)</th><th style=\"width:44%\">X선과 임상의 결정적 소견</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>치유 중 골절(고정·추적 — 정답)</b></td><td><b>외상 2~3주 뒤, 골절선 경화대 + 매끈한 한 겹 골막 신생골, 뼈 파괴 없음, 염증 표지 정상</b></td><td><b>3주 전 넘어짐, 경화대, 전위 없음, ESR·CRP 정상</b></td></tr> <tr><td>유잉육종·골육종(뼈 생검 — 가장 가까운 오답)</td><td>여러 겹 양파 껍질·햇살 모양 골막 반응, 코드만 삼각, 투과성 골용해, 야간 통증·연부조직 종괴</td><td>야간 통증·종괴·골용해 없음</td></tr> <tr><td>급성 골수염(정맥 항생제)</td><td>열, 국소 발적·열감, ESR·CRP 상승, 골간단 골용해(1~2주 뒤)</td><td>열 없음, 염증 표지 정상</td></tr> <tr><td>전위 골절(도수정복·핀 고정)</td><td>각형성·전위가 허용 범위를 넘는 급성 골절</td><td>전위·각형성 없음, 이미 치유 중</td></tr> <tr><td>뼈 스캔</td><td>X선 음성인 피로 골절·다발성 병변·학대 선별</td><td>X선으로 이미 설명됨</td></tr> </tbody></table> <b>가장 가까운 오답은 뼈 생검</b>이다 — 「소아 뼈의 골막 반응 = 종양」이라는 연상 때문이다. 갈림길은 <b>외상과의 시간 관계 + 골막 반응의 모양 + 전신 증상</b>이다. 세 가지가 모두 치유 쪽이면 추적 X선으로 충분하고, 하나라도 공격적이면 MRI 와 생검으로 간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 도수정복과 경피적 핀 고정은 전위되거나 각형성이 허용 범위를 넘는 원위 요골 골절의 치료라 골절이라는 공통점으로 떠오를 수 있다. 이 X선은 전위·각형성이 없고 이미 가골이 생기고 있다. 넘어진 당일 X선에서 등쪽으로 30° 각형성된 골간단 골절이 보였다면 이 선지가 적절하다.\n② 뼈 스캔은 X선에서 안 보이는 피로 골절이나 다발성 병변, 아동학대의 숨은 골절을 찾을 때 쓰여 떠올릴 수 있지만, 이 아이의 통증은 X선의 치유 골절로 설명되고 다른 부위 손상 병력도 없다. 설명과 맞지 않는 여러 시기의 골절이 의심되는 영아였다면 골격 조사와 함께 이 검사가 필요하다.\n④ 뼈 생검은 소아 뼈의 골막 반응에서 유잉육종·골육종을 놓치지 않으려는 생각으로 떠오르지만, 이 아이는 외상과 시간 관계가 맞고 야간 통증·연부조직 종괴·골용해가 없으며 골막 반응이 매끈한 한 겹이다. 여러 겹의 양파 껍질 모양 골막 반응과 투과성 골용해, 야간 통증이 있었다면 MRI 뒤 생검이 정답이다.\n⑤ 정맥 항생제는 소아 골간단의 급성 골수염이 흔하고 골막 반응을 만들기 때문에 떠올릴 수 있지만, 이 아이는 열이 없고 발적·열감이 없으며 백혈구·적혈구침강속도·C반응단백이 정상이다. 열이 나고 국소 발적·열감과 함께 C반응단백이 크게 올라 있었다면 혈액배양 뒤 정맥 항생제가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "소아 X선의 골막 반응을 곧바로 종양·감염으로 읽지 않는다. 외상과의 시간 관계, 골막 반응의 모양, 전신 증상을 함께 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "외상 3주 뒤 소아 손목 X선에서 원위 요골 골간단의 경화대와 골막 신생골을 치유 중인 골절의 가골로 읽고, 전신 증상·염증 표지가 없으면 골수염·종양 검사 대신 고정과 추적을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "GRAZPEDWRI-DX (figshare, CC BY 4.0) — 9.8 M, left wrist lateral, healing distal radius fracture with periosteal reaction, pediatric radiologist annotation (AO/OTA 23r-E/2.1) — Grade A; teacher-only · 작성자 판독(2026-09-24): 원위 요골 골간단을 가로지르는 희미한 경화대, 전위·각형성 없음, 성장판 열림, 좌하단 표지 막대에 글자 없음 · Nagy E et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · Rockwood and Wilkins' Fractures in Children, 9th ed., ch. 'Fractures of the distal radius and ulna' — healing and periosteal reaction · Nelson Textbook of Pediatrics, 21st ed., ch. 'Osteomyelitis' and 'Ewing sarcoma' — periosteal reaction patterns ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "외상 3주 뒤 X선의 원위 요골 경화대와 얇은 골막 신생골은 치유 중인 골절이고, 전신 증상과 염증 표지가 정상이므로 고정 후 추적한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "종양의 골막 반응은 여러 겹·햇살 모양이고 골용해·야간 통증을 동반한다 — 이 아이는 외상 시간 관계가 맞고 매끈한 치유 반응뿐이다",
+   "steps": 3,
+   "chain": [
+    "3주 전 손을 짚고 넘어짐 + 국소 압통 → 외상성 원위 요골 손상",
+    "영상: 골간단 경화대, 전위 없음 → 치유 중인 골절(가골)",
+    "열·야간 통증 없음 + ESR·CRP 정상 → 골수염·종양 검사 불필요 → 고정 후 추적"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단을 가로지르는 희미한 경화대, 전위·각형성 없음",
+     "why": "치유 중 골절선 — 가골 형성",
+     "also": []
+    },
+    {
+     "item": "3주 전 놀이터에서 넘어지며 왼손을 짚은",
+     "why": "외상과 X선 소견의 시간 관계가 맞는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "열·체중감소·야간 통증은 없고",
+     "why": "종양·골수염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "백혈구 7,600/mm³, 적혈구침강속도 8 mm/h, C반응단백 0.2 mg/dL",
+     "why": "염증 표지 정상 — 골수염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "발적·열감·변형은 없으며",
+     "why": "감염·전위 골절 소견이 없다",
+     "also": []
+    },
+    {
+     "item": "다른 부위에 멍이나 골절 병력은 없다",
+     "why": "아동학대를 시사하는 다발 손상이 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "손가락 운동과 감각은 정상이다",
+     "why": "신경혈관 손상이 없음을 확인할 뿐 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "외상 3주 뒤 원위 요골 골간단의 경화대와 매끈한 골막 신생골은 치유 중인 골절의 가골이고, 열·야간 통증이 없고 염증 표지가 정상이어서 종양·골수염을 의심할 근거가 없다. 짧은 팔 석고 고정 후 추적이 정답이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "외상 병력 없이 야간 통증이 있고 X선에서 양파 껍질 모양 골막 반응과 투과성 골용해가 보였다면 MRI 뒤 뼈 생검이 필요하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0109.png",
+   "caption": "왼쪽 손목 측면 단순 X선, 원본 그대로 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0823_0912797851_02_WRI-L2_M009",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0104",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "응급·중환자·외상 — 흉통이 멎은 고령 환자의 심전도와 다음 검사",
+  "type": "응급·중환자·외상 — 흉통이 멎은 고령 환자의 심전도와 다음 검사",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-23",
+  "vignette": "An 83-year-old man comes to the emergency department 2 hours after an episode of pressure-like substernal chest discomfort that began while he was walking and resolved after 20 minutes of rest. He is now pain free. He has hypertension and hyperlipidemia treated with amlodipine and atorvastatin. His temperature is 36.6°C, pulse is 66/min, respirations are 16/min, and blood pressure is 142/80 mmHg. Oxygen saturation is 97% on room air. The lungs are clear to auscultation, and there is no murmur or peripheral edema. He is given aspirin on arrival. A 12-lead ECG is shown. An initial high-sensitivity troponin T level is at the upper reference limit.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous alteplase",
+   "Discharge home with outpatient exercise stress testing",
+   "CT pulmonary angiography",
+   "Repeat high-sensitivity troponin measurement in 1 to 3 hours",
+   "Emergency coronary angiography"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 65/min with narrow QRS complexes, flattened T waves in leads I, aVL, V5, and V6, and no ST-segment elevation or new bundle branch block. This is a nonspecific repolarization abnormality, not a STEMI equivalent. An 83-year-old man with exertional substernal pressure relieved by rest has a high pretest probability of acute coronary syndrome, and a single troponin at the reference limit 2 hours after pain cannot exclude myocardial infarction. The next step is a repeat high-sensitivity troponin at 1 to 3 hours (per the assay algorithm) to look for a rise, while continuing monitoring and antiplatelet therapy. Emergency angiography and thrombolysis are for STEMI or unstable NSTE-ACS, discharge requires a rule-out first, and pulmonary embolism is not suggested.\n- 원리: <b>Myocardial infarction is diagnosed by a rise and/or fall of troponin</b> with at least one value above the 99th percentile, in a clinical setting of ischemia. Troponin leaks from necrotic myocytes over hours, so one value drawn soon after symptoms can be normal even in infarction. A <b>delta</b> — the change between two samples 1 to 3 hours apart with a high-sensitivity assay — separates acute injury (rising or falling) from chronic elevation (stable) and from no injury.<br> <b>The ECG sorts the pathway first.</b> ST elevation in two contiguous leads (or a STEMI equivalent) means an occluded artery and immediate reperfusion, without waiting for troponin. Anything else — ST depression, T-wave inversion, <b>nonspecific T flattening</b>, or a normal tracing — goes down the NSTE pathway, where troponin kinetics and risk scores decide between invasive and noninvasive strategies. Flat T waves in lateral leads are common in older adults with hypertension and are neither diagnostic of ischemia nor reassuring; they simply do not change the pathway. The history here (typical angina at exertion, relief by rest, age 83) keeps the probability of ACS high, so the patient cannot be discharged on one borderline value. Serial troponin plus serial ECGs if pain recurs is the correct, time-bounded step; a rise would make this NSTEMI and lead to early angiography within 24 hours.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Repeat hs-troponin in 1–3 h (answer)</b></td><td><b>Suspected ACS, no ST elevation, pain-free, first troponin not diagnostic</b></td><td><b>Nonspecific T flattening only, troponin at reference limit</b></td></tr> <tr><td>Emergency coronary angiography (closest rival)</td><td>STEMI, or NSTE-ACS with refractory pain, hemodynamic or electrical instability, acute heart failure</td><td>Pain free, stable, no heart failure, no arrhythmia</td></tr> <tr><td>Intravenous alteplase</td><td>STEMI when timely PCI is not available</td><td>No ST elevation — fibrinolysis is harmful in NSTE-ACS</td></tr> <tr><td>Discharge with outpatient stress test</td><td>Low-risk chest pain after serial troponins exclude infarction</td><td>Infarction not yet excluded</td></tr> <tr><td>CT pulmonary angiography</td><td>Pleuritic pain, tachycardia, hypoxemia, risk factors for venous thromboembolism</td><td>SpO2 97%, pulse 66, exertional pressure</td></tr> </tbody></table> <b>The closest rival is emergency angiography</b>: the story sounds like unstable angina in an old man. What divides them is <b>ST elevation or instability</b>. Without either, the NSTE pathway uses the troponin delta to decide how urgently to go to the catheterization laboratory.\n- 오답 이유:\n  - (A) Intravenous alteplase is a reperfusion therapy and so comes to mind for suspected infarction, but fibrinolysis helps only when ST elevation shows an occluded artery and PCI cannot be done in time. In NSTE-ACS it increases bleeding without benefit. With ST elevation in two contiguous leads and no nearby PCI center, it would be correct.\n  - (B) Discharge with outpatient stress testing is reasonable for low-risk chest pain once serial high-sensitivity troponins show no rise. A single borderline value 2 hours after typical angina in an 83-year-old does not exclude infarction. If the repeat troponin were unchanged and below the threshold with no recurrent pain, this would become the right plan.\n  - (C) CT pulmonary angiography evaluates pulmonary embolism, which can cause chest pain and troponin elevation. Here the pain was exertional pressure relieved by rest, and he is not tachycardic or hypoxemic. With sudden pleuritic pain, tachycardia, hypoxemia, and a recent long flight or surgery, this would be the right test.\n  - (E) Emergency coronary angiography is tempting because the history is typical for unstable coronary disease in an elderly man. It is indicated immediately only for STEMI or very-high-risk NSTE-ACS (ongoing pain, shock, arrhythmia, acute heart failure). This patient is pain free and stable with no ST elevation. If his chest pain had recurred and persisted despite nitrates, this would be the answer.\n- 함정: A 'nonspecific' ECG is not a normal one, and a single normal troponin soon after pain does not rule out infarction. Neither is it an indication for immediate reperfusion — follow the troponin delta.\n- 학습목표: 흉통이 멎은 고령 환자의 12유도 심전도에서 ST 상승 없이 측벽 유도의 비특이적 T파 편평만 있음을 읽고, 즉시 재관류가 아니라 고감도 트로포닌 연속 측정으로 비ST상승 급성 관상동맥증후군을 평가한다\n- 근거·출처: PTB-XL (PhysioNet, CC BY 4.0) record 10022 — 83 M, non-diagnostic T abnormalities (NDT likelihood 100), 2-cardiologist validated — Grade A; teacher-only · 작성자 판독(2026-09-24): 동리듬 약 65회/분, 좁은 QRS, I·aVL·V5·V6 T파 편평, ST 상승 없음, III·aVF 기저선 흔들림 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720 — 0 h/1 h and 0 h/2 h hs-troponin algorithms · Thygesen K et al. Fourth universal definition of myocardial infarction (2018). Circulation 2018;138:e618 · Gulati M et al. 2021 AHA/ACC guideline for the evaluation and diagnosis of chest pain. Circulation 2021;144:e368\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10022 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 65/min with narrow QRS complexes, flattened T waves in leads I, aVL, V5, and V6, and no ST-segment elevation or new bundle branch block. This is a nonspecific repolarization abnormality, not a STEMI equivalent. An 83-year-old man with exertional substernal pressure relieved by rest has a high pretest probability of acute coronary syndrome, and a single troponin at the reference limit 2 hours after pain cannot exclude myocardial infarction. The next step is a repeat high-sensitivity troponin at 1 to 3 hours (per the assay algorithm) to look for a rise, while continuing monitoring and antiplatelet therapy. Emergency angiography and thrombolysis are for STEMI or unstable NSTE-ACS, discharge requires a rule-out first, and pulmonary embolism is not suggested."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Myocardial infarction is diagnosed by a rise and/or fall of troponin</b> with at least one value above the 99th percentile, in a clinical setting of ischemia. Troponin leaks from necrotic myocytes over hours, so one value drawn soon after symptoms can be normal even in infarction. A <b>delta</b> — the change between two samples 1 to 3 hours apart with a high-sensitivity assay — separates acute injury (rising or falling) from chronic elevation (stable) and from no injury.<br> <b>The ECG sorts the pathway first.</b> ST elevation in two contiguous leads (or a STEMI equivalent) means an occluded artery and immediate reperfusion, without waiting for troponin. Anything else — ST depression, T-wave inversion, <b>nonspecific T flattening</b>, or a normal tracing — goes down the NSTE pathway, where troponin kinetics and risk scores decide between invasive and noninvasive strategies. Flat T waves in lateral leads are common in older adults with hypertension and are neither diagnostic of ischemia nor reassuring; they simply do not change the pathway. The history here (typical angina at exertion, relief by rest, age 83) keeps the probability of ACS high, so the patient cannot be discharged on one borderline value. Serial troponin plus serial ECGs if pain recurs is the correct, time-bounded step; a rise would make this NSTEMI and lead to early angiography within 24 hours."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Repeat hs-troponin in 1–3 h (answer)</b></td><td><b>Suspected ACS, no ST elevation, pain-free, first troponin not diagnostic</b></td><td><b>Nonspecific T flattening only, troponin at reference limit</b></td></tr> <tr><td>Emergency coronary angiography (closest rival)</td><td>STEMI, or NSTE-ACS with refractory pain, hemodynamic or electrical instability, acute heart failure</td><td>Pain free, stable, no heart failure, no arrhythmia</td></tr> <tr><td>Intravenous alteplase</td><td>STEMI when timely PCI is not available</td><td>No ST elevation — fibrinolysis is harmful in NSTE-ACS</td></tr> <tr><td>Discharge with outpatient stress test</td><td>Low-risk chest pain after serial troponins exclude infarction</td><td>Infarction not yet excluded</td></tr> <tr><td>CT pulmonary angiography</td><td>Pleuritic pain, tachycardia, hypoxemia, risk factors for venous thromboembolism</td><td>SpO2 97%, pulse 66, exertional pressure</td></tr> </tbody></table> <b>The closest rival is emergency angiography</b>: the story sounds like unstable angina in an old man. What divides them is <b>ST elevation or instability</b>. Without either, the NSTE pathway uses the troponin delta to decide how urgently to go to the catheterization laboratory."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous alteplase is a reperfusion therapy and so comes to mind for suspected infarction, but fibrinolysis helps only when ST elevation shows an occluded artery and PCI cannot be done in time. In NSTE-ACS it increases bleeding without benefit. With ST elevation in two contiguous leads and no nearby PCI center, it would be correct.\n(B) Discharge with outpatient stress testing is reasonable for low-risk chest pain once serial high-sensitivity troponins show no rise. A single borderline value 2 hours after typical angina in an 83-year-old does not exclude infarction. If the repeat troponin were unchanged and below the threshold with no recurrent pain, this would become the right plan.\n(C) CT pulmonary angiography evaluates pulmonary embolism, which can cause chest pain and troponin elevation. Here the pain was exertional pressure relieved by rest, and he is not tachycardic or hypoxemic. With sudden pleuritic pain, tachycardia, hypoxemia, and a recent long flight or surgery, this would be the right test.\n(E) Emergency coronary angiography is tempting because the history is typical for unstable coronary disease in an elderly man. It is indicated immediately only for STEMI or very-high-risk NSTE-ACS (ongoing pain, shock, arrhythmia, acute heart failure). This patient is pain free and stable with no ST elevation. If his chest pain had recurred and persisted despite nitrates, this would be the answer."
+   },
+   {
+    "k": "함정",
+    "v": "A 'nonspecific' ECG is not a normal one, and a single normal troponin soon after pain does not rule out infarction. Neither is it an indication for immediate reperfusion — follow the troponin delta."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉통이 멎은 고령 환자의 12유도 심전도에서 ST 상승 없이 측벽 유도의 비특이적 T파 편평만 있음을 읽고, 즉시 재관류가 아니라 고감도 트로포닌 연속 측정으로 비ST상승 급성 관상동맥증후군을 평가한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "PTB-XL (PhysioNet, CC BY 4.0) record 10022 — 83 M, non-diagnostic T abnormalities (NDT likelihood 100), 2-cardiologist validated — Grade A; teacher-only · 작성자 판독(2026-09-24): 동리듬 약 65회/분, 좁은 QRS, I·aVL·V5·V6 T파 편평, ST 상승 없음, III·aVF 기저선 흔들림 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720 — 0 h/1 h and 0 h/2 h hs-troponin algorithms · Thygesen K et al. Fourth universal definition of myocardial infarction (2018). Circulation 2018;138:e618 · Gulati M et al. 2021 AHA/ACC guideline for the evaluation and diagnosis of chest pain. Circulation 2021;144:e368 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10022 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Typical angina now resolved, an ECG without ST elevation (only nonspecific lateral T flattening), and a single borderline troponin mean the NSTE pathway: repeat high-sensitivity troponin to detect a rise",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Emergency angiography needs ST elevation or instability (ongoing pain, shock, arrhythmia, heart failure); this patient is pain free and stable",
+   "steps": 3,
+   "chain": [
+    "영상: ST 상승 없이 측벽 T파 편평만 → STEMI 경로가 아니다",
+    "exertional substernal pressure relieved by rest in an 83-year-old → ACS 사전확률이 높다",
+    "첫 트로포닌 경계값, 흉통 후 2시간 → 한 번으로 배제 불가 → 1~3시간 뒤 재측정"
+   ],
+   "key": [
+    {
+     "item": "영상: flattened T waves in leads I, aVL, V5, and V6",
+     "why": "Nonspecific repolarization change — keeps him on the NSTE pathway",
+     "also": []
+    },
+    {
+     "item": "pressure-like substernal chest discomfort that began while he was walking and resolved after 20 minutes of rest",
+     "why": "Typical angina — high pretest probability of ACS",
+     "also": []
+    },
+    {
+     "item": "An initial high-sensitivity troponin T level is at the upper reference limit",
+     "why": "One early value cannot exclude MI — a delta is needed",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: no ST-segment elevation, narrow QRS, sinus rhythm about 65/min",
+     "why": "Makes STEMI and bundle branch block unlikely — no immediate reperfusion",
+     "also": []
+    },
+    {
+     "item": "Oxygen saturation is 97% on room air",
+     "why": "Lowers the probability of pulmonary embolism",
+     "also": []
+    },
+    {
+     "item": "there is no murmur or peripheral edema",
+     "why": "No acute heart failure or mechanical complication",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He is now pain free",
+     "why": "No refractory pain — immediate angiography is not required",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He is given aspirin on arrival",
+     "why": "Antiplatelet therapy already given — the question is diagnostic",
+     "also": []
+    },
+    {
+     "item": "hypertension and hyperlipidemia",
+     "why": "Risk factors that raise pretest probability but do not choose the next step",
+     "also": []
+    }
+   ],
+   "summary": "The ECG shows only nonspecific lateral T-wave flattening without ST elevation, so this is not a STEMI; typical angina in an 83-year-old keeps ACS likely, and one borderline troponin 2 hours after pain cannot exclude infarction. Repeat high-sensitivity troponin in 1 to 3 hours is the next step.",
+   "switch": {
+    "choice": "E",
+    "condition": "If his chest pain recurred and persisted despite nitrates, or he developed hypotension or ventricular arrhythmia, immediate coronary angiography would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0104.png",
+   "caption": "12-lead ECG, 25 mm/s and 10 mm/mV, 3×4 layout with lead II rhythm strip (PTB-XL ECG dataset, PhysioNet, CC BY 4.0; plotted from the raw signal)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/10000/#files-panel",
+   "asset_id": "PTBXL-10022",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 10022"
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0103",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "호흡기 — 산소가 필요한 코로나19 폐렴의 약물치료",
+  "type": "호흡기 — 산소가 필요한 코로나19 폐렴의 약물치료",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-23",
+  "vignette": "77세 여자가 5일 전부터 열과 기침이 나고 이틀 전부터 숨이 차서 응급실에 왔다. 3일 전 같은 요양시설의 입소자가 코로나19로 진단되었다. 10년 전 완전방실차단으로 심박동기를 넣었고 고혈압약을 먹고 있다. 체온 38.4℃, 혈압 132/76 mmHg, 맥박 88회/분, 호흡 26회/분이고 실내공기에서 산소포화도는 89% 이다. 양쪽 아래 폐야에서 수포음이 들린다. 다리 부종은 없다. 코인두 도말 SARS-CoV-2 PCR 은 양성이고 혈청 크레아티닌은 0.9 mg/dL 이다. 흉부 X선은 그림과 같다. 비강 캐뉼라로 산소를 주기 시작하였다.",
+  "question": "이 환자에게 투여할 약물로 가장 적절한 것은?",
+  "options": [
+   "오셀타미비르",
+   "이버멕틴",
+   "덱사메타손",
+   "니르마트렐비르-리토나비르",
+   "하이드록시클로로퀸"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 우측 폐문 주위에서 중·하폐야로 이어지는 반점상 경화·간유리 음영과 좌하폐야 심장 뒤의 흐린 음영이 보여 양측 폐렴이고, 좌측 쇄골하 심박동기와 리드는 병력과 맞는 기구일 뿐이다. SARS-CoV-2 PCR 양성에 실내공기 산소포화도 89% 로 산소 보충이 필요하므로 중증(산소 요구) 코로나19 폐렴이다. 이 단계에서 사망률을 낮추는 것으로 증명된 약물은 덱사메타손(6 mg 하루 1회, 최대 10일)이다. 니르마트렐비르-리토나비르는 산소가 필요 없는 고위험 외래 환자의 경증 질환에서 발병 5일 안에 쓰는 약이고, 하이드록시클로로퀸·이버멕틴은 효과가 없으며, 오셀타미비르는 인플루엔자 치료제다.\n- 원리: <b>코로나19 폐렴은 시기에 따라 병의 주체가 바뀐다.</b> 발병 첫 며칠은 <b>바이러스 증식</b>이 주체라 항바이러스제가 효과를 내고, 약 1주 전후로 폐에서 <b>과도한 숙주 염증 반응</b>(사이토카인·폐포 손상·미세혈전)이 주체가 되면서 저산소증이 나타난다. 그래서 치료 선택의 축은 「발병 며칠째인가」보다 <b>「산소가 필요한가」</b>다 — 산소 요구는 염증 단계에 들어섰다는 가장 실용적인 표지이기 때문이다.<br> <b>덱사메타손</b>은 글루코코르티코이드 수용체를 통해 NF-κB 등 염증 전사를 억제해 폐포 손상을 줄인다. RECOVERY 시험에서 산소 보충이 필요한 환자와 기계환기 환자의 28일 사망률을 낮췄고, <b>산소가 필요 없는 환자에서는 이득이 없고 해가 될 수 있었다</b> — 같은 약이 시기에 따라 득실이 뒤집히는 것이다. 반대로 <b>니르마트렐비르-리토나비르</b>(3CL 단백분해효소 억제)는 바이러스 증식 단계의 약이라 산소가 필요 없는 고위험 외래 환자에서 입원·사망을 줄인다. 이미 입원해 산소가 필요한 환자에서는 이 근거가 없고, 리토나비르가 CYP3A 를 강하게 억제해 고령 다약제 복용자에서 상호작용 부담도 크다. 흉부 X선은 양측 음영으로 폐렴을 확인하고, 산소포화도가 중증도를 정한다 — 둘을 합쳐야 치료가 정해진다.\n- 비교: <table><thead><tr><th style=\"width:26%\">약물</th><th style=\"width:42%\">그 약이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>덱사메타손(정답)</b></td><td><b>입원 + 산소 보충 또는 환기 보조가 필요한 코로나19</b></td><td><b>실내공기 SpO2 89%, 산소 시작, 양측 폐렴</b></td></tr> <tr><td>니르마트렐비르-리토나비르(가장 가까운 오답)</td><td>산소가 필요 없는 경증·중등증, 중증 진행 고위험(고령 등), 발병 5일 이내, 외래</td><td>이미 산소가 필요 — 이 약의 대상 단계를 지났다</td></tr> <tr><td>하이드록시클로로퀸</td><td>코로나19 적응 없음(대규모 무작위시험에서 효과 없음), 말라리아·루푸스 약</td><td>—</td></tr> <tr><td>오셀타미비르</td><td>인플루엔자(뉴라미니데이스 억제) — 동시 감염이 확인되면 추가</td><td>인플루엔자 검사 결과 없음, PCR 은 SARS-CoV-2 양성</td></tr> <tr><td>이버멕틴</td><td>기생충 감염 — 코로나19 무작위시험에서 효과 없음</td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 니르마트렐비르-리토나비르</b>다 — 77세라는 고위험 인자가 떠오르게 한다. 갈림길은 <b>산소 요구</b>다. 산소가 필요 없으면 항바이러스제, 산소가 필요하면 덱사메타손(입원 환자에서는 렘데시비르를 함께 쓰기도 한다)이라고 정리하면 어느 방향으로 물어도 풀린다.\n- 오답 이유:\n  - ① 오셀타미비르는 요양시설 고령자의 열·기침에서 인플루엔자를 함께 생각하게 만들지만, 이 환자는 SARS-CoV-2 PCR 이 양성이고 인플루엔자 검사 근거가 없다. 인플루엔자 신속항원이나 PCR 이 양성이었다면 발병 시기와 무관하게 입원 환자에게 투여할 약이다.\n  - ② 이버멕틴은 기생충 치료제로 코로나19에서 여러 무작위시험이 효과를 보여 주지 못해 권고되지 않는다. 분선충(Strongyloides) 감염 위험 지역 출신 환자에게 스테로이드를 쓰기 전 선제 치료를 할 때라면 이 약이 정답이 된다.\n  - ④ 니르마트렐비르-리토나비르는 77세 고위험 환자에서 입원과 사망을 줄이는 경구 항바이러스제라 떠올릴 수 있지만, 근거가 있는 대상은 산소가 필요 없는 경증·중등증 외래 환자다. 이 환자는 산소포화도 89% 로 이미 산소가 필요하다. 산소포화도가 96% 이고 발병 3일째인 외래 환자였다면 이 선지가 정답이다.\n  - ⑤ 하이드록시클로로퀸은 유행 초기 시험관 연구로 기대를 모았지만 대규모 무작위시험에서 사망률·입원에 효과가 없고 QT 연장 위험만 있어 코로나19 치료로 권고되지 않는다. 말라리아 예방이나 전신홍반루푸스를 치료하는 상황이라면 정답이 될 약이다.\n- 함정: 고령·기저질환이라는 「고위험」 단어에 끌려 외래 경구 항바이러스제를 고르지 않는다. 치료 단계를 가르는 것은 나이가 아니라 산소 요구다.\n- 학습목표: 코로나19 환자의 흉부 X선에서 양측 폐 음영을 읽고 실내공기 산소포화도 저하로 산소가 필요한 중증 폐렴임을 판단해, 외래 경구 항바이러스제가 아니라 덱사메타손을 고른다\n- 근거·출처: TCIA COVID-19-AR (CC BY 4.0) — 77 F portable AP chest radiograph, bilateral opacities (collection-level label, Grade B); teacher-only · 작성자 판독(2026-09-24): 우측 폐문 주위~중·하폐야 반점상 경화·간유리 음영, 좌하폐야 심장 뒤 흐린 음영, 흉수·기흉 없음, 좌측 쇄골하 이중 리드 심박동기 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693 · Hammond J et al. Oral nirmatrelvir for high-risk, nonhospitalized adults with Covid-19 (EPIC-HR). N Engl J Med 2022;386:1397 · IDSA Guidelines on the treatment and management of patients with COVID-19 (updated) — corticosteroids for patients requiring supplemental oxygen\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27602620 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 우측 폐문 주위에서 중·하폐야로 이어지는 반점상 경화·간유리 음영과 좌하폐야 심장 뒤의 흐린 음영이 보여 양측 폐렴이고, 좌측 쇄골하 심박동기와 리드는 병력과 맞는 기구일 뿐이다. SARS-CoV-2 PCR 양성에 실내공기 산소포화도 89% 로 산소 보충이 필요하므로 중증(산소 요구) 코로나19 폐렴이다. 이 단계에서 사망률을 낮추는 것으로 증명된 약물은 덱사메타손(6 mg 하루 1회, 최대 10일)이다. 니르마트렐비르-리토나비르는 산소가 필요 없는 고위험 외래 환자의 경증 질환에서 발병 5일 안에 쓰는 약이고, 하이드록시클로로퀸·이버멕틴은 효과가 없으며, 오셀타미비르는 인플루엔자 치료제다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>코로나19 폐렴은 시기에 따라 병의 주체가 바뀐다.</b> 발병 첫 며칠은 <b>바이러스 증식</b>이 주체라 항바이러스제가 효과를 내고, 약 1주 전후로 폐에서 <b>과도한 숙주 염증 반응</b>(사이토카인·폐포 손상·미세혈전)이 주체가 되면서 저산소증이 나타난다. 그래서 치료 선택의 축은 「발병 며칠째인가」보다 <b>「산소가 필요한가」</b>다 — 산소 요구는 염증 단계에 들어섰다는 가장 실용적인 표지이기 때문이다.<br> <b>덱사메타손</b>은 글루코코르티코이드 수용체를 통해 NF-κB 등 염증 전사를 억제해 폐포 손상을 줄인다. RECOVERY 시험에서 산소 보충이 필요한 환자와 기계환기 환자의 28일 사망률을 낮췄고, <b>산소가 필요 없는 환자에서는 이득이 없고 해가 될 수 있었다</b> — 같은 약이 시기에 따라 득실이 뒤집히는 것이다. 반대로 <b>니르마트렐비르-리토나비르</b>(3CL 단백분해효소 억제)는 바이러스 증식 단계의 약이라 산소가 필요 없는 고위험 외래 환자에서 입원·사망을 줄인다. 이미 입원해 산소가 필요한 환자에서는 이 근거가 없고, 리토나비르가 CYP3A 를 강하게 억제해 고령 다약제 복용자에서 상호작용 부담도 크다. 흉부 X선은 양측 음영으로 폐렴을 확인하고, 산소포화도가 중증도를 정한다 — 둘을 합쳐야 치료가 정해진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">약물</th><th style=\"width:42%\">그 약이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>덱사메타손(정답)</b></td><td><b>입원 + 산소 보충 또는 환기 보조가 필요한 코로나19</b></td><td><b>실내공기 SpO2 89%, 산소 시작, 양측 폐렴</b></td></tr> <tr><td>니르마트렐비르-리토나비르(가장 가까운 오답)</td><td>산소가 필요 없는 경증·중등증, 중증 진행 고위험(고령 등), 발병 5일 이내, 외래</td><td>이미 산소가 필요 — 이 약의 대상 단계를 지났다</td></tr> <tr><td>하이드록시클로로퀸</td><td>코로나19 적응 없음(대규모 무작위시험에서 효과 없음), 말라리아·루푸스 약</td><td>—</td></tr> <tr><td>오셀타미비르</td><td>인플루엔자(뉴라미니데이스 억제) — 동시 감염이 확인되면 추가</td><td>인플루엔자 검사 결과 없음, PCR 은 SARS-CoV-2 양성</td></tr> <tr><td>이버멕틴</td><td>기생충 감염 — 코로나19 무작위시험에서 효과 없음</td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 니르마트렐비르-리토나비르</b>다 — 77세라는 고위험 인자가 떠오르게 한다. 갈림길은 <b>산소 요구</b>다. 산소가 필요 없으면 항바이러스제, 산소가 필요하면 덱사메타손(입원 환자에서는 렘데시비르를 함께 쓰기도 한다)이라고 정리하면 어느 방향으로 물어도 풀린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 오셀타미비르는 요양시설 고령자의 열·기침에서 인플루엔자를 함께 생각하게 만들지만, 이 환자는 SARS-CoV-2 PCR 이 양성이고 인플루엔자 검사 근거가 없다. 인플루엔자 신속항원이나 PCR 이 양성이었다면 발병 시기와 무관하게 입원 환자에게 투여할 약이다.\n② 이버멕틴은 기생충 치료제로 코로나19에서 여러 무작위시험이 효과를 보여 주지 못해 권고되지 않는다. 분선충(Strongyloides) 감염 위험 지역 출신 환자에게 스테로이드를 쓰기 전 선제 치료를 할 때라면 이 약이 정답이 된다.\n④ 니르마트렐비르-리토나비르는 77세 고위험 환자에서 입원과 사망을 줄이는 경구 항바이러스제라 떠올릴 수 있지만, 근거가 있는 대상은 산소가 필요 없는 경증·중등증 외래 환자다. 이 환자는 산소포화도 89% 로 이미 산소가 필요하다. 산소포화도가 96% 이고 발병 3일째인 외래 환자였다면 이 선지가 정답이다.\n⑤ 하이드록시클로로퀸은 유행 초기 시험관 연구로 기대를 모았지만 대규모 무작위시험에서 사망률·입원에 효과가 없고 QT 연장 위험만 있어 코로나19 치료로 권고되지 않는다. 말라리아 예방이나 전신홍반루푸스를 치료하는 상황이라면 정답이 될 약이다."
+   },
+   {
+    "k": "함정",
+    "v": "고령·기저질환이라는 「고위험」 단어에 끌려 외래 경구 항바이러스제를 고르지 않는다. 치료 단계를 가르는 것은 나이가 아니라 산소 요구다."
+   },
+   {
+    "k": "학습목표",
+    "v": "코로나19 환자의 흉부 X선에서 양측 폐 음영을 읽고 실내공기 산소포화도 저하로 산소가 필요한 중증 폐렴임을 판단해, 외래 경구 항바이러스제가 아니라 덱사메타손을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (CC BY 4.0) — 77 F portable AP chest radiograph, bilateral opacities (collection-level label, Grade B); teacher-only · 작성자 판독(2026-09-24): 우측 폐문 주위~중·하폐야 반점상 경화·간유리 음영, 좌하폐야 심장 뒤 흐린 음영, 흉수·기흉 없음, 좌측 쇄골하 이중 리드 심박동기 · RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693 · Hammond J et al. Oral nirmatrelvir for high-risk, nonhospitalized adults with Covid-19 (EPIC-HR). N Engl J Med 2022;386:1397 · IDSA Guidelines on the treatment and management of patients with COVID-19 (updated) — corticosteroids for patients requiring supplemental oxygen ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27602620 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "SARS-CoV-2 양성에 흉부 X선 양측 폐 음영과 실내공기 산소포화도 89% 로 산소가 필요한 중증 코로나19 폐렴이므로 덱사메타손을 투여한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "니르마트렐비르-리토나비르는 산소가 필요 없는 고위험 외래 환자의 약이다 — 산소 요구가 있으면 덱사메타손 단계다",
+   "steps": 2,
+   "chain": [
+    "흉부 X선 양측 반점상 음영 + SARS-CoV-2 PCR 양성 → 코로나19 폐렴",
+    "실내공기 산소포화도 89% 로 산소 시작 → 산소 요구 단계의 치료인 덱사메타손"
+   ],
+   "key": [
+    {
+     "item": "영상: 우측 폐문 주위에서 중·하폐야로 이어지는 반점상 경화·간유리 음영과 좌하폐야의 흐린 음영",
+     "why": "양측 폐렴 — 폐 실질을 침범한 코로나19",
+     "also": []
+    },
+    {
+     "item": "실내공기에서 산소포화도는 89%",
+     "why": "산소 보충이 필요한 중증도 — 덱사메타손의 적응을 정한다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "코인두 도말 SARS-CoV-2 PCR 은 양성",
+     "why": "원인 확인 — 인플루엔자 약을 고를 이유가 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "다리 부종은 없다",
+     "why": "심부전으로 인한 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "5일 전부터 열과 기침",
+     "why": "발병 5일째 — 항바이러스제의 이른 창이 거의 끝났고 염증 단계로 넘어가는 시기",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "영상: 좌측 쇄골하 심박동기와 리드",
+     "why": "병력의 심박동기와 맞는 기구 — 판단에 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "혈청 크레아티닌은 0.9 mg/dL",
+     "why": "콩팥 기능 정상 — 약물 용량 조정이 필요 없음을 보여 줄 뿐 선택을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "10년 전 완전방실차단으로 심박동기",
+     "why": "영상의 기구를 설명하는 배경",
+     "also": []
+    }
+   ],
+   "summary": "흉부 X선의 양측 반점상 음영과 PCR 양성은 코로나19 폐렴이고, 실내공기 산소포화도 89% 로 산소가 필요하므로 사망률을 낮추는 덱사메타손이 정답이다. 경구 항바이러스제는 산소가 필요 없는 고위험 외래 환자의 약이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "산소포화도가 96% 로 산소가 필요 없고 발병 3일째인 외래 환자였다면 니르마트렐비르-리토나비르가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0103.png",
+   "caption": "이동식 전후면 흉부 X선, 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·윈도우 조정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1465835668632121183508127602620",
+   "asset_id": "TCIA-COVID19_AR-02037850895527",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …27602620"
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0111",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "예방의학·역학·보건통계 — 인구 기여위험분율",
+  "type": "예방의학·역학·보건통계 — 인구 기여위험분율",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-23",
+  "vignette": "30년 동안 하루 한 갑씩 담배를 피운 62세 남자가 보건소 금연 클리닉에 왔다. 상담 의사는 금연 사업의 필요성을 설명하려고 이 지역 자료를 보여 주었다. 이 지역 40세 이상 성인 10,000명을 10년 동안 추적한 코호트 연구에서 시작 시점 흡연자는 4,000명, 비흡연자는 6,000명이었다. 추적 기간 중 흡연자에서 120명, 비흡연자에서 30명에게 만성폐쇄폐질환이 새로 진단되었다. 추적 탈락은 없었고 두 군의 나이·성별 분포는 비슷하였다. 보건소장은 이 지역에서 흡연을 완전히 없앤다면 만성폐쇄폐질환 발생의 몇 %를 줄일 수 있는지 알고 싶어 한다.",
+  "question": "흡연과 만성폐쇄폐질환의 인과관계를 가정할 때 이 지역의 인구 기여위험분율은?",
+  "options": [
+   "83.3%",
+   "80.0%",
+   "50.0%",
+   "40.0%",
+   "66.7%"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 흡연군 발생률은 120/4,000 = 30/1,000, 비흡연군 발생률은 30/6,000 = 5/1,000, 전체 인구 발생률은 150/10,000 = 15/1,000 이다. 인구 기여위험분율은 「인구 전체 발생 중 노출이 없었다면 생기지 않았을 몫」이므로 (전체 발생률 − 비노출군 발생률)/전체 발생률 = (15 − 5)/15 = 66.7 % 이다. 같은 값을 노출 유병률 Pe = 0.4, 비교위험도 RR = 6 으로 Pe(RR−1)/[1 + Pe(RR−1)] = 2/3 로도 얻는다. 83.3 % 는 흡연자 안에서 흡연 때문에 생긴 몫(노출군 기여위험분율), 80.0 % 는 환자 중 흡연자의 비율(120/150)로 서로 다른 질문의 답이다.\n- 원리: <b>기여위험분율은 「노출을 없애면 발생의 몇 %가 사라지는가」를 묻는 지표</b>이고, 누구의 발생을 분모로 삼느냐에 따라 두 가지가 있다. <b>노출군 기여위험분율</b>(AF<sub>e</sub>)은 흡연자에게 생긴 환자 가운데 흡연 때문에 생긴 몫이다 — (I<sub>e</sub> − I<sub>u</sub>)/I<sub>e</sub> = (RR − 1)/RR. 흡연자 개인에게 「당신의 위험 중 이만큼이 흡연 탓」이라고 말할 때 쓴다. <b>인구 기여위험분율</b>(PAF)은 인구 전체에 생긴 환자 가운데 노출 때문에 생긴 몫이다 — (I<sub>t</sub> − I<sub>u</sub>)/I<sub>t</sub>. 정책 결정자가 「이 지역에서 흡연을 없애면」이라고 물을 때 쓴다.<br> <b>왜 PAF 가 더 작은가</b> — 비노출군에서 생기는 환자(여기서는 비흡연자 30명)는 흡연을 없애도 줄지 않고, 인구에는 흡연자만 있는 것이 아니다. 그래서 PAF 는 <b>비교위험도(얼마나 해로운가)</b>와 <b>노출 유병률(얼마나 흔한가)</b>을 함께 반영한다: PAF = Pe(RR − 1)/[1 + Pe(RR − 1)]. 비교위험도가 매우 커도 노출이 드물면 PAF 는 작고, 비교위험도가 작아도 노출이 흔하면 PAF 가 클 수 있다 — 보건 정책의 우선순위가 비교위험도만으로 정해지지 않는 이유다. 사례-대조 연구에서는 발생률이 없으므로 PAF = Pc(OR − 1)/OR(Pc = 환자 중 노출 비율)로 구한다. 계산은 인과관계와 교란이 없다는 가정 위에서만 의미가 있다.\n- 비교: <table><thead><tr><th style=\"width:26%\">값</th><th style=\"width:44%\">공식과 뜻</th><th>이 자료</th></tr></thead><tbody> <tr><td><b>인구 기여위험분율(정답)</b></td><td><b>(I<sub>t</sub> − I<sub>u</sub>)/I<sub>t</sub> — 인구 전체 발생 중 노출이 없었다면 사라질 몫</b></td><td><b>(15 − 5)/15 = 66.7 %</b></td></tr> <tr><td>노출군 기여위험분율(가장 가까운 오답)</td><td>(I<sub>e</sub> − I<sub>u</sub>)/I<sub>e</sub> = (RR − 1)/RR — 흡연자 발생 중 흡연 탓인 몫</td><td>(30 − 5)/30 = 83.3 %</td></tr> <tr><td>환자 중 노출자 비율</td><td>노출된 환자 수/전체 환자 수 — 기여분율이 아니다(비노출에서도 생길 환자 포함)</td><td>120/150 = 80.0 %</td></tr> <tr><td>노출 유병률</td><td>인구 중 흡연자 비율</td><td>4,000/10,000 = 40.0 %</td></tr> <tr><td>기여위험(위험차)</td><td>I<sub>e</sub> − I<sub>u</sub> — 비율이 아니라 발생률 단위</td><td>25/1,000(10년)</td></tr> </tbody></table> <b>가장 가까운 오답은 83.3 %</b>다 — 같은 「기여위험분율」 이름이 붙어 있기 때문이다. 질문의 주어가 <b>개인(흡연자)</b>이면 노출군 기여위험분율, <b>지역·인구</b>면 인구 기여위험분율이다. 분모가 흡연자 발생률인지 전체 인구 발생률인지만 확인하면 어느 방향으로 물어도 풀린다.\n- 오답 이유:\n  - ① 83.3 % 는 (30 − 5)/30 으로 구한 노출군 기여위험분율로, 흡연자에게 생긴 만성폐쇄폐질환 가운데 흡연 때문에 생긴 몫이다. 같은 이름의 지표라 헷갈리지만 비흡연자까지 포함한 인구 전체를 분모로 삼지 않았다. 「흡연자가 담배를 끊으면 그 사람의 위험 중 몇 %가 줄어드는가」를 물었다면 이 값이 정답이다.\n  - ② 80.0 % 는 환자 150명 중 흡연자 120명의 비율로, 환자가 대부분 흡연자라는 직관적인 계산이다. 그러나 흡연자 4,000명 중 20명(비흡연자 발생률 5/1,000 적용)은 흡연과 무관하게 생겼을 환자라 이 값은 기여분을 부풀린다. 「이 지역 환자 중 흡연자의 비율은?」이라고 물었다면 정답이 된다.\n  - ③ 50.0 % 는 흡연자의 비교위험도 6 이나 발생 차이를 잘못 나눈 결과처럼 보이는 값으로, 흡연자와 비흡연자의 환자 수 차이(120 − 30)를 180 같은 엉뚱한 분모로 나누는 실수에서 나온다. 노출 유병률이 20 % 이고 비교위험도가 6 인 인구라면 PAF = 0.2×5/(1 + 1) = 50 % 로 이 값이 정답이 된다.\n  - ④ 40.0 % 는 인구 중 흡연자의 비율(노출 유병률)로, PAF 공식에 들어가는 재료이지 결과가 아니다. 노출 유병률만으로는 흡연이 얼마나 해로운지를 알 수 없다. 「이 코호트의 시작 시점 흡연율은?」을 물었다면 이 값이 정답이다.\n- 함정: 기여위험분율의 분모를 확인한다. 「이 지역에서 없앤다면」은 인구 전체 발생률, 「흡연자에서」는 흡연자 발생률이다.\n- 학습목표: 코호트 자료에서 노출군·비노출군 발생률과 전체 인구 발생률로 인구 기여위험분율을 계산하고, 노출군 기여위험분율·환자 중 노출자 비율과 구분한다\n- 근거·출처: Gordis Epidemiology, 6th ed., ch. 'More on risk: estimating the potential for prevention' — attributable risk in exposed and population attributable risk · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed., ch. 'Measures of effect and measures of association' — attributable fractions · Levin ML. The occurrence of lung cancer in man. Acta Unio Int Contra Cancrum 1953;9:531 — population attributable fraction formula",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흡연군 발생률은 120/4,000 = 30/1,000, 비흡연군 발생률은 30/6,000 = 5/1,000, 전체 인구 발생률은 150/10,000 = 15/1,000 이다. 인구 기여위험분율은 「인구 전체 발생 중 노출이 없었다면 생기지 않았을 몫」이므로 (전체 발생률 − 비노출군 발생률)/전체 발생률 = (15 − 5)/15 = 66.7 % 이다. 같은 값을 노출 유병률 Pe = 0.4, 비교위험도 RR = 6 으로 Pe(RR−1)/[1 + Pe(RR−1)] = 2/3 로도 얻는다. 83.3 % 는 흡연자 안에서 흡연 때문에 생긴 몫(노출군 기여위험분율), 80.0 % 는 환자 중 흡연자의 비율(120/150)로 서로 다른 질문의 답이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>기여위험분율은 「노출을 없애면 발생의 몇 %가 사라지는가」를 묻는 지표</b>이고, 누구의 발생을 분모로 삼느냐에 따라 두 가지가 있다. <b>노출군 기여위험분율</b>(AF<sub>e</sub>)은 흡연자에게 생긴 환자 가운데 흡연 때문에 생긴 몫이다 — (I<sub>e</sub> − I<sub>u</sub>)/I<sub>e</sub> = (RR − 1)/RR. 흡연자 개인에게 「당신의 위험 중 이만큼이 흡연 탓」이라고 말할 때 쓴다. <b>인구 기여위험분율</b>(PAF)은 인구 전체에 생긴 환자 가운데 노출 때문에 생긴 몫이다 — (I<sub>t</sub> − I<sub>u</sub>)/I<sub>t</sub>. 정책 결정자가 「이 지역에서 흡연을 없애면」이라고 물을 때 쓴다.<br> <b>왜 PAF 가 더 작은가</b> — 비노출군에서 생기는 환자(여기서는 비흡연자 30명)는 흡연을 없애도 줄지 않고, 인구에는 흡연자만 있는 것이 아니다. 그래서 PAF 는 <b>비교위험도(얼마나 해로운가)</b>와 <b>노출 유병률(얼마나 흔한가)</b>을 함께 반영한다: PAF = Pe(RR − 1)/[1 + Pe(RR − 1)]. 비교위험도가 매우 커도 노출이 드물면 PAF 는 작고, 비교위험도가 작아도 노출이 흔하면 PAF 가 클 수 있다 — 보건 정책의 우선순위가 비교위험도만으로 정해지지 않는 이유다. 사례-대조 연구에서는 발생률이 없으므로 PAF = Pc(OR − 1)/OR(Pc = 환자 중 노출 비율)로 구한다. 계산은 인과관계와 교란이 없다는 가정 위에서만 의미가 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">값</th><th style=\"width:44%\">공식과 뜻</th><th>이 자료</th></tr></thead><tbody> <tr><td><b>인구 기여위험분율(정답)</b></td><td><b>(I<sub>t</sub> − I<sub>u</sub>)/I<sub>t</sub> — 인구 전체 발생 중 노출이 없었다면 사라질 몫</b></td><td><b>(15 − 5)/15 = 66.7 %</b></td></tr> <tr><td>노출군 기여위험분율(가장 가까운 오답)</td><td>(I<sub>e</sub> − I<sub>u</sub>)/I<sub>e</sub> = (RR − 1)/RR — 흡연자 발생 중 흡연 탓인 몫</td><td>(30 − 5)/30 = 83.3 %</td></tr> <tr><td>환자 중 노출자 비율</td><td>노출된 환자 수/전체 환자 수 — 기여분율이 아니다(비노출에서도 생길 환자 포함)</td><td>120/150 = 80.0 %</td></tr> <tr><td>노출 유병률</td><td>인구 중 흡연자 비율</td><td>4,000/10,000 = 40.0 %</td></tr> <tr><td>기여위험(위험차)</td><td>I<sub>e</sub> − I<sub>u</sub> — 비율이 아니라 발생률 단위</td><td>25/1,000(10년)</td></tr> </tbody></table> <b>가장 가까운 오답은 83.3 %</b>다 — 같은 「기여위험분율」 이름이 붙어 있기 때문이다. 질문의 주어가 <b>개인(흡연자)</b>이면 노출군 기여위험분율, <b>지역·인구</b>면 인구 기여위험분율이다. 분모가 흡연자 발생률인지 전체 인구 발생률인지만 확인하면 어느 방향으로 물어도 풀린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 83.3 % 는 (30 − 5)/30 으로 구한 노출군 기여위험분율로, 흡연자에게 생긴 만성폐쇄폐질환 가운데 흡연 때문에 생긴 몫이다. 같은 이름의 지표라 헷갈리지만 비흡연자까지 포함한 인구 전체를 분모로 삼지 않았다. 「흡연자가 담배를 끊으면 그 사람의 위험 중 몇 %가 줄어드는가」를 물었다면 이 값이 정답이다.\n② 80.0 % 는 환자 150명 중 흡연자 120명의 비율로, 환자가 대부분 흡연자라는 직관적인 계산이다. 그러나 흡연자 4,000명 중 20명(비흡연자 발생률 5/1,000 적용)은 흡연과 무관하게 생겼을 환자라 이 값은 기여분을 부풀린다. 「이 지역 환자 중 흡연자의 비율은?」이라고 물었다면 정답이 된다.\n③ 50.0 % 는 흡연자의 비교위험도 6 이나 발생 차이를 잘못 나눈 결과처럼 보이는 값으로, 흡연자와 비흡연자의 환자 수 차이(120 − 30)를 180 같은 엉뚱한 분모로 나누는 실수에서 나온다. 노출 유병률이 20 % 이고 비교위험도가 6 인 인구라면 PAF = 0.2×5/(1 + 1) = 50 % 로 이 값이 정답이 된다.\n④ 40.0 % 는 인구 중 흡연자의 비율(노출 유병률)로, PAF 공식에 들어가는 재료이지 결과가 아니다. 노출 유병률만으로는 흡연이 얼마나 해로운지를 알 수 없다. 「이 코호트의 시작 시점 흡연율은?」을 물었다면 이 값이 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "기여위험분율의 분모를 확인한다. 「이 지역에서 없앤다면」은 인구 전체 발생률, 「흡연자에서」는 흡연자 발생률이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "코호트 자료에서 노출군·비노출군 발생률과 전체 인구 발생률로 인구 기여위험분율을 계산하고, 노출군 기여위험분율·환자 중 노출자 비율과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis Epidemiology, 6th ed., ch. 'More on risk: estimating the potential for prevention' — attributable risk in exposed and population attributable risk · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed., ch. 'Measures of effect and measures of association' — attributable fractions · Levin ML. The occurrence of lung cancer in man. Acta Unio Int Contra Cancrum 1953;9:531 — population attributable fraction formula"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "인구 기여위험분율은 인구 전체 발생률에서 비노출군 발생률을 뺀 값을 전체 발생률로 나눈 것으로 (15 − 5)/15 = 66.7 % 이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "83.3 % 는 분모를 흡연자 발생률로 삼은 노출군 기여위험분율이다 — 질문의 주어가 지역 인구이므로 전체 인구 발생률을 분모로 쓴다",
+   "steps": 3,
+   "chain": [
+    "120/4,000·30/6,000 → 흡연군 30/1,000, 비흡연군 5/1,000",
+    "150/10,000 → 전체 인구 발생률 15/1,000",
+    "「이 지역에서 흡연을 없앤다면」 → 인구 기여위험분율 (15 − 5)/15 = 66.7 %"
+   ],
+   "key": [
+    {
+     "item": "흡연자에서 120명, 비흡연자에서 30명",
+     "why": "두 군의 발생 수 — 발생률 계산의 분자",
+     "also": []
+    },
+    {
+     "item": "흡연자는 4,000명, 비흡연자는 6,000명",
+     "why": "발생률의 분모이자 노출 유병률 40 %",
+     "also": []
+    },
+    {
+     "item": "이 지역에서 흡연을 완전히 없앤다면",
+     "why": "질문의 주어가 인구 — 인구 기여위험분율을 고르게 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "추적 탈락은 없었고 두 군의 나이·성별 분포는 비슷하였다",
+     "why": "탈락 편향·나이 교란 가능성을 낮춰 조정 없이 계산해도 된다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "흡연과 만성폐쇄폐질환의 인과관계를 가정할 때",
+     "why": "기여분율 해석의 전제",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "40세 이상 성인 10,000명을 10년 동안",
+     "why": "연구 설계 배경 — 계산은 누적발생률로 한다",
+     "also": []
+    }
+   ],
+   "summary": "흡연군 30/1,000, 비흡연군 5/1,000, 전체 15/1,000 이므로 인구 기여위험분율은 (15 − 5)/15 = 66.7 % 다. 83.3 % 는 흡연자 발생을 분모로 한 노출군 기여위험분율, 80.0 % 는 환자 중 흡연자의 비율이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "「흡연자 개인이 담배를 끊으면 그 사람의 발생 위험 중 몇 %가 줄어드는가」를 물었다면 노출군 기여위험분율 83.3 % 가 정답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0110",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "내분비·대사 — 당뇨병케톤산증의 칼륨과 인슐린",
+  "type": "내분비·대사 — 당뇨병케톤산증의 칼륨과 인슐린",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-23",
+  "vignette": "A 19-year-old woman with type 1 diabetes mellitus is brought to the emergency department because of 2 days of vomiting, abdominal pain, and increasing drowsiness after she ran out of insulin. Her pulse is 124/min, respirations are 30/min and deep, and blood pressure is 98/60 mmHg. Her mucous membranes are dry. Laboratory studies show: glucose 512 mg/dL, sodium 132 mEq/L, potassium 3.0 mEq/L, chloride 96 mEq/L, bicarbonate 8 mEq/L, BUN 32 mg/dL, and creatinine 1.3 mg/dL. Arterial pH is 7.08. Serum beta-hydroxybutyrate is markedly elevated. An ECG shows sinus tachycardia with prominent U waves. Intravenous 0.9% saline is started.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Subcutaneous insulin glargine",
+   "Intravenous potassium chloride before starting insulin",
+   "Intravenous regular insulin infusion",
+   "Intravenous sodium bicarbonate",
+   "Intravenous phosphate replacement"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Hyperglycemia, an anion gap of 28 (132 − 96 − 8), pH 7.08, and elevated beta-hydroxybutyrate after missed insulin define severe diabetic ketoacidosis. Although total-body potassium is always depleted in DKA, the serum level is usually normal or high because acidosis and insulin deficiency shift potassium out of cells. A serum potassium of 3.0 mEq/L with U waves therefore reflects profound depletion. Insulin drives potassium into cells and would drop the level further, risking arrhythmia and respiratory muscle weakness, so insulin must be held until potassium is at least 3.3 mEq/L while IV potassium is given with fluids. Bicarbonate is not indicated above pH 6.9, phosphate is replaced only if very low, and subcutaneous basal insulin does not treat DKA.\n- 원리: <b>In DKA, the serum potassium hides the true deficit.</b> Osmotic diuresis from glycosuria, vomiting, and secondary hyperaldosteronism from volume depletion strip 3–5 mEq/kg of potassium from the body. Yet the serum level typically appears normal or high at presentation because two forces move potassium out of cells: <b>insulin deficiency</b> (insulin normally activates Na+/K+-ATPase to pull potassium in) and <b>hyperosmolality</b> (water leaves cells and drags potassium by solvent drag). Acidosis contributes less in organic acidosis than classically taught, but the direction is the same.<br> <b>Treatment reverses every one of these shifts at once.</b> Insulin activates the pump, fluids dilute and restore renal potassium losses, and correcting acidosis moves potassium back into cells. The serum level therefore falls — sometimes precipitously — within the first hours. If it starts <b>low</b>, the patient has lost a huge amount of potassium, and starting insulin can push the level to lethal hypokalemia with arrhythmias and respiratory muscle paralysis. Hence the rule shared by the ADA consensus and most protocols: <b>K &lt; 3.3 mEq/L → hold insulin, give 10–20 mEq/h KCl until ≥ 3.3</b>; K 3.3–5.0 → add 20–30 mEq to each liter of fluid with insulin; K &gt; 5.0 → insulin without potassium and recheck every 2 hours. Fluids come first in every case, because volume depletion drives the hyperglycemia and the renal hypoperfusion, and they are already running.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>IV KCl before insulin (answer)</b></td><td><b>DKA with serum K &lt; 3.3 mEq/L</b></td><td><b>K 3.0 with U waves</b></td></tr> <tr><td>IV regular insulin infusion (closest rival)</td><td>DKA with K ≥ 3.3 mEq/L after fluids have started</td><td>Would drop K further — delay until ≥ 3.3</td></tr> <tr><td>IV sodium bicarbonate</td><td>pH &lt; 6.9 (some protocols 7.0)</td><td>pH 7.08</td></tr> <tr><td>IV phosphate</td><td>Phosphate &lt; 1.0 mg/dL, or cardiac dysfunction, respiratory depression, hemolysis</td><td>No such indication given</td></tr> <tr><td>Subcutaneous insulin glargine</td><td>After DKA resolves (gap closed, eating), overlapping 2 h with infusion</td><td>Severe active DKA</td></tr> </tbody></table> <b>The closest rival is the insulin infusion</b> — it is the core treatment of DKA and must eventually be given. The dividing line is the <b>potassium of 3.3 mEq/L</b>: below it, potassium first; at or above it, insulin with potassium in the fluids.\n- 오답 이유:\n  - (A) Subcutaneous insulin glargine provides basal insulin and is part of the transition off the insulin drip. It cannot correct severe acidosis because its absorption is slow and unpredictable in dehydration, and it does not solve the low potassium. Once the anion gap closed and she could eat, overlapping glargine with the infusion would be appropriate.\n  - (C) An intravenous regular insulin infusion is the definitive treatment of DKA, so it is the natural next choice after fluids. Here the serum potassium is 3.0 mEq/L; insulin would drive potassium into cells and could cause fatal arrhythmia or respiratory muscle weakness. If her potassium had been 4.2 mEq/L, starting the insulin infusion with potassium in the fluids would be correct.\n  - (D) Intravenous sodium bicarbonate is tempting because the pH of 7.08 is alarming. Trials have not shown benefit above pH 6.9, and bicarbonate itself shifts potassium into cells, worsening hypokalemia, and may delay ketone clearance. If her arterial pH had been 6.8, bicarbonate (with added potassium) would be indicated.\n  - (E) Intravenous phosphate replacement is considered because phosphate, like potassium, is depleted in DKA and falls with insulin. Routine replacement does not improve outcomes and risks hypocalcemia. If her serum phosphate had been below 1.0 mg/dL or she had cardiac dysfunction or respiratory depression, phosphate would be given.\n- 함정: Do not reflexively start insulin in DKA. Check the potassium first — below 3.3 mEq/L, potassium comes before insulin.\n- 학습목표: 당뇨병케톤산증에서 혈청 칼륨이 3.3 mEq/L 미만이면 인슐린이 칼륨을 세포 안으로 옮겨 치명적 저칼륨혈증을 일으키므로, 인슐린을 미루고 칼륨을 먼저 보충한다\n- 근거·출처: Umpierrez GE et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). Diabetes Care 2024;47:1257 · Kitabchi AE et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Diabetes mellitus: complications' — diabetic ketoacidosis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Hyperglycemia, an anion gap of 28 (132 − 96 − 8), pH 7.08, and elevated beta-hydroxybutyrate after missed insulin define severe diabetic ketoacidosis. Although total-body potassium is always depleted in DKA, the serum level is usually normal or high because acidosis and insulin deficiency shift potassium out of cells. A serum potassium of 3.0 mEq/L with U waves therefore reflects profound depletion. Insulin drives potassium into cells and would drop the level further, risking arrhythmia and respiratory muscle weakness, so insulin must be held until potassium is at least 3.3 mEq/L while IV potassium is given with fluids. Bicarbonate is not indicated above pH 6.9, phosphate is replaced only if very low, and subcutaneous basal insulin does not treat DKA."
+   },
+   {
+    "k": "원리",
+    "v": "<b>In DKA, the serum potassium hides the true deficit.</b> Osmotic diuresis from glycosuria, vomiting, and secondary hyperaldosteronism from volume depletion strip 3–5 mEq/kg of potassium from the body. Yet the serum level typically appears normal or high at presentation because two forces move potassium out of cells: <b>insulin deficiency</b> (insulin normally activates Na+/K+-ATPase to pull potassium in) and <b>hyperosmolality</b> (water leaves cells and drags potassium by solvent drag). Acidosis contributes less in organic acidosis than classically taught, but the direction is the same.<br> <b>Treatment reverses every one of these shifts at once.</b> Insulin activates the pump, fluids dilute and restore renal potassium losses, and correcting acidosis moves potassium back into cells. The serum level therefore falls — sometimes precipitously — within the first hours. If it starts <b>low</b>, the patient has lost a huge amount of potassium, and starting insulin can push the level to lethal hypokalemia with arrhythmias and respiratory muscle paralysis. Hence the rule shared by the ADA consensus and most protocols: <b>K &lt; 3.3 mEq/L → hold insulin, give 10–20 mEq/h KCl until ≥ 3.3</b>; K 3.3–5.0 → add 20–30 mEq to each liter of fluid with insulin; K &gt; 5.0 → insulin without potassium and recheck every 2 hours. Fluids come first in every case, because volume depletion drives the hyperglycemia and the renal hypoperfusion, and they are already running."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>IV KCl before insulin (answer)</b></td><td><b>DKA with serum K &lt; 3.3 mEq/L</b></td><td><b>K 3.0 with U waves</b></td></tr> <tr><td>IV regular insulin infusion (closest rival)</td><td>DKA with K ≥ 3.3 mEq/L after fluids have started</td><td>Would drop K further — delay until ≥ 3.3</td></tr> <tr><td>IV sodium bicarbonate</td><td>pH &lt; 6.9 (some protocols 7.0)</td><td>pH 7.08</td></tr> <tr><td>IV phosphate</td><td>Phosphate &lt; 1.0 mg/dL, or cardiac dysfunction, respiratory depression, hemolysis</td><td>No such indication given</td></tr> <tr><td>Subcutaneous insulin glargine</td><td>After DKA resolves (gap closed, eating), overlapping 2 h with infusion</td><td>Severe active DKA</td></tr> </tbody></table> <b>The closest rival is the insulin infusion</b> — it is the core treatment of DKA and must eventually be given. The dividing line is the <b>potassium of 3.3 mEq/L</b>: below it, potassium first; at or above it, insulin with potassium in the fluids."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Subcutaneous insulin glargine provides basal insulin and is part of the transition off the insulin drip. It cannot correct severe acidosis because its absorption is slow and unpredictable in dehydration, and it does not solve the low potassium. Once the anion gap closed and she could eat, overlapping glargine with the infusion would be appropriate.\n(C) An intravenous regular insulin infusion is the definitive treatment of DKA, so it is the natural next choice after fluids. Here the serum potassium is 3.0 mEq/L; insulin would drive potassium into cells and could cause fatal arrhythmia or respiratory muscle weakness. If her potassium had been 4.2 mEq/L, starting the insulin infusion with potassium in the fluids would be correct.\n(D) Intravenous sodium bicarbonate is tempting because the pH of 7.08 is alarming. Trials have not shown benefit above pH 6.9, and bicarbonate itself shifts potassium into cells, worsening hypokalemia, and may delay ketone clearance. If her arterial pH had been 6.8, bicarbonate (with added potassium) would be indicated.\n(E) Intravenous phosphate replacement is considered because phosphate, like potassium, is depleted in DKA and falls with insulin. Routine replacement does not improve outcomes and risks hypocalcemia. If her serum phosphate had been below 1.0 mg/dL or she had cardiac dysfunction or respiratory depression, phosphate would be given."
+   },
+   {
+    "k": "함정",
+    "v": "Do not reflexively start insulin in DKA. Check the potassium first — below 3.3 mEq/L, potassium comes before insulin."
+   },
+   {
+    "k": "학습목표",
+    "v": "당뇨병케톤산증에서 혈청 칼륨이 3.3 mEq/L 미만이면 인슐린이 칼륨을 세포 안으로 옮겨 치명적 저칼륨혈증을 일으키므로, 인슐린을 미루고 칼륨을 먼저 보충한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Umpierrez GE et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). Diabetes Care 2024;47:1257 · Kitabchi AE et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Diabetes mellitus: complications' — diabetic ketoacidosis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "In severe DKA with serum potassium 3.0 mEq/L, insulin must be held and IV potassium given first because insulin would shift potassium into cells and cause dangerous hypokalemia",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "The insulin infusion is correct once potassium is at least 3.3 mEq/L; at 3.0 mEq/L with U waves potassium comes first",
+   "steps": 3,
+   "chain": [
+    "glucose 512, anion gap 28, pH 7.08, beta-hydroxybutyrate high → severe DKA",
+    "K 3.0 despite DKA shift + U waves → profound total-body potassium depletion",
+    "insulin would lower K further → IV KCl first, insulin when K ≥ 3.3"
+   ],
+   "key": [
+    {
+     "item": "potassium 3.0 mEq/L",
+     "why": "Below 3.3 — hold insulin",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "An ECG shows sinus tachycardia with prominent U waves",
+     "why": "Electrical effect of hypokalemia — urgency",
+     "also": []
+    },
+    {
+     "item": "Arterial pH is 7.08",
+     "why": "Severe DKA, but above the 6.9 threshold for bicarbonate",
+     "also": [
+      "의미 있는 정상·음성 소견"
+     ]
+    },
+    {
+     "item": "Serum beta-hydroxybutyrate is markedly elevated",
+     "why": "Confirms ketoacidosis",
+     "also": []
+    },
+    {
+     "item": "glucose 512 mg/dL",
+     "why": "Hyperglycemia of DKA",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "Intravenous 0.9% saline is started",
+     "why": "Fluids are already running — the question is what follows",
+     "also": []
+    },
+    {
+     "item": "creatinine 1.3 mg/dL",
+     "why": "Prerenal injury from volume depletion; urine output allows potassium replacement",
+     "also": []
+    }
+   ],
+   "summary": "Missed insulin, glucose 512 mg/dL, anion gap 28, pH 7.08, and elevated ketones are severe DKA. A serum potassium of 3.0 mEq/L with U waves reveals profound depletion; insulin would drop it further, so IV potassium is given first and insulin is started when potassium reaches 3.3 mEq/L.",
+   "switch": {
+    "choice": "C",
+    "condition": "If her serum potassium had been 4.2 mEq/L, an IV regular insulin infusion with potassium added to the fluids would be the next step"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0108",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "신장·비뇨 — 감염된 폐쇄성 요로결석",
+  "type": "신장·비뇨 — 감염된 폐쇄성 요로결석",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-23",
+  "vignette": "A 54-year-old woman is brought to the emergency department because of 2 days of left flank pain and 12 hours of fever and chills. She has no history of kidney stones. Her temperature is 39.2°C, pulse is 118/min, respirations are 22/min, and blood pressure is 92/58 mmHg after 2 L of intravenous crystalloid. There is marked left costovertebral angle tenderness. Leukocyte count is 18,400/mm3, and serum creatinine is 1.6 mg/dL. Urinalysis shows many leukocytes, nitrites, and bacteria. Blood and urine cultures are obtained, and intravenous piperacillin-tazobactam is started. Noncontrast CT of the abdomen shows an 8-mm stone in the proximal left ureter with moderate hydronephrosis and perinephric stranding.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Extracorporeal shock wave lithotripsy",
+   "Tamsulosin and oral fluids with outpatient follow-up",
+   "Continue intravenous antibiotics alone and repeat CT in 48 hours",
+   "Urgent decompression with a ureteral stent or percutaneous nephrostomy",
+   "Ureteroscopy with laser lithotripsy"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Fever, tachycardia, and hypotension after fluids with pyuria and nitrites, together with an obstructing 8-mm proximal ureteral stone and hydronephrosis, mean an infected obstructed kidney with sepsis. Antibiotics cannot sterilize pus trapped behind an obstruction, so the obstruction must be relieved urgently — either by retrograde ureteral stent or percutaneous nephrostomy, which are equivalent. Definitive stone removal (ureteroscopy or shock wave lithotripsy) is deferred until the infection is treated, because manipulating the stone in infected urine can cause bacteremia and septic shock. Medical expulsive therapy is for uncomplicated, smaller stones without infection.\n- 원리: <b>An infected, obstructed kidney is a urologic emergency, and the principle is the same as an abscess: drain it.</b> Behind an obstruction, urine stagnates under pressure; bacteria multiply in a closed space that antibiotics reach poorly because renal blood flow and urine flow fall as pelvic pressure rises. Pressure also drives bacteria and endotoxin across the injured urothelium into the bloodstream (pyelovenous backflow), which is why obstructive pyelonephritis progresses rapidly to septic shock and has substantially higher mortality than nonobstructive pyelonephritis.<br> <b>Decompression, not stone removal, is the goal of the first procedure.</b> A retrograde double-J stent passed cystoscopically or a percutaneous nephrostomy tube placed under ultrasound both relieve pressure; trials show comparable outcomes, and the choice depends on local availability, coagulation status, and anatomy (nephrostomy is preferred when retrograde access is difficult, stent when bleeding risk is high). Stone manipulation such as ureteroscopy or shock wave lithotripsy in infected urine can push bacteria into the circulation and precipitate septic shock, so definitive treatment is delayed until after a full antibiotic course. Size matters for the elective plan: stones ≤ 5 mm usually pass, 5–10 mm may pass with alpha-blockers, and larger or proximal stones generally need intervention — but infection overrides size in the acute decision.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Urgent stent or nephrostomy (answer)</b></td><td><b>Obstructing stone + infection (fever, pyuria, sepsis) or anuria/AKI in a solitary kidney</b></td><td><b>Fever, hypotension, pyuria, hydronephrosis</b></td></tr> <tr><td>Ureteroscopy with laser lithotripsy (closest rival)</td><td>Definitive removal of a stone ≥ 10 mm or failed passage — in sterile urine</td><td>Infected urine — manipulation risks septic shock</td></tr> <tr><td>Shock wave lithotripsy</td><td>Elective, sterile urine, proximal stone ≤ 10–20 mm</td><td>Infection, acute setting</td></tr> <tr><td>Tamsulosin and outpatient follow-up</td><td>Uncomplicated stone 5–10 mm, controlled pain, no infection</td><td>Sepsis — contraindicated to send home</td></tr> <tr><td>Antibiotics alone, repeat CT</td><td>Pyelonephritis without obstruction</td><td>Obstruction present — antibiotics alone fail</td></tr> </tbody></table> <b>The closest rival is ureteroscopy</b>, because it both relieves the obstruction and removes the stone in one step. The dividing line is <b>infection</b>: in infected urine, drain first and remove the stone later; in sterile urine, ureteroscopy can be definitive.\n- 오답 이유:\n  - (A) Shock wave lithotripsy fragments proximal ureteral stones noninvasively, which makes it a reasonable elective option. It is contraindicated with active urinary infection because fragmenting an infected stone releases bacteria, and it does not decompress the kidney quickly. In an afebrile patient with sterile urine and a 7-mm proximal stone, it would be a correct choice.\n  - (B) Tamsulosin with fluids is medical expulsive therapy for uncomplicated distal stones of 5 to 10 mm, which is why it comes to mind for an 8-mm stone. Infection with sepsis is an absolute indication for intervention, and she cannot be managed as an outpatient. If she had no fever, a normal leukocyte count, and controlled pain, this would be an appropriate plan.\n  - (C) Continuing antibiotics alone is correct for pyelonephritis without obstruction, and the antibiotics are already started. Behind an obstructing stone, though, infected urine under pressure is not sterilized by antibiotics, and she is already hypotensive. If CT had shown no stone and no hydronephrosis, continuing IV antibiotics and monitoring would be the answer.\n  - (E) Ureteroscopy with laser lithotripsy is attractive because it removes the stone and relieves the obstruction in one procedure. In infected urine, however, stone manipulation with irrigation under pressure can cause bacteremia and septic shock, so it is deferred until after the infection is treated. If her urine were sterile and she were afebrile with an 8-mm stone that failed to pass, this would be appropriate.\n- 함정: Do not be pulled toward removing the stone. With fever and obstruction, the first procedure only drains the kidney; the stone waits.\n- 학습목표: 요관결석으로 폐쇄된 콩팥에 발열·패혈증이 동반되면 결석 제거가 아니라 요관 스텐트나 경피적 신루설치술로 응급 감압하고 항생제를 투여한다\n- 근거·출처: EAU Guidelines on Urolithiasis (2024) — decompression of obstructed infected kidney by stent or nephrostomy; defer definitive treatment · Assimos D et al. Surgical management of stones: AUA/Endourological Society guideline. J Urol 2016;196:1153 · Pearle MS et al. Optimal method of urgent decompression of the collecting system for obstruction and infection due to ureteral calculi. J Urol 1998;160:1260",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever, tachycardia, and hypotension after fluids with pyuria and nitrites, together with an obstructing 8-mm proximal ureteral stone and hydronephrosis, mean an infected obstructed kidney with sepsis. Antibiotics cannot sterilize pus trapped behind an obstruction, so the obstruction must be relieved urgently — either by retrograde ureteral stent or percutaneous nephrostomy, which are equivalent. Definitive stone removal (ureteroscopy or shock wave lithotripsy) is deferred until the infection is treated, because manipulating the stone in infected urine can cause bacteremia and septic shock. Medical expulsive therapy is for uncomplicated, smaller stones without infection."
+   },
+   {
+    "k": "원리",
+    "v": "<b>An infected, obstructed kidney is a urologic emergency, and the principle is the same as an abscess: drain it.</b> Behind an obstruction, urine stagnates under pressure; bacteria multiply in a closed space that antibiotics reach poorly because renal blood flow and urine flow fall as pelvic pressure rises. Pressure also drives bacteria and endotoxin across the injured urothelium into the bloodstream (pyelovenous backflow), which is why obstructive pyelonephritis progresses rapidly to septic shock and has substantially higher mortality than nonobstructive pyelonephritis.<br> <b>Decompression, not stone removal, is the goal of the first procedure.</b> A retrograde double-J stent passed cystoscopically or a percutaneous nephrostomy tube placed under ultrasound both relieve pressure; trials show comparable outcomes, and the choice depends on local availability, coagulation status, and anatomy (nephrostomy is preferred when retrograde access is difficult, stent when bleeding risk is high). Stone manipulation such as ureteroscopy or shock wave lithotripsy in infected urine can push bacteria into the circulation and precipitate septic shock, so definitive treatment is delayed until after a full antibiotic course. Size matters for the elective plan: stones ≤ 5 mm usually pass, 5–10 mm may pass with alpha-blockers, and larger or proximal stones generally need intervention — but infection overrides size in the acute decision."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Urgent stent or nephrostomy (answer)</b></td><td><b>Obstructing stone + infection (fever, pyuria, sepsis) or anuria/AKI in a solitary kidney</b></td><td><b>Fever, hypotension, pyuria, hydronephrosis</b></td></tr> <tr><td>Ureteroscopy with laser lithotripsy (closest rival)</td><td>Definitive removal of a stone ≥ 10 mm or failed passage — in sterile urine</td><td>Infected urine — manipulation risks septic shock</td></tr> <tr><td>Shock wave lithotripsy</td><td>Elective, sterile urine, proximal stone ≤ 10–20 mm</td><td>Infection, acute setting</td></tr> <tr><td>Tamsulosin and outpatient follow-up</td><td>Uncomplicated stone 5–10 mm, controlled pain, no infection</td><td>Sepsis — contraindicated to send home</td></tr> <tr><td>Antibiotics alone, repeat CT</td><td>Pyelonephritis without obstruction</td><td>Obstruction present — antibiotics alone fail</td></tr> </tbody></table> <b>The closest rival is ureteroscopy</b>, because it both relieves the obstruction and removes the stone in one step. The dividing line is <b>infection</b>: in infected urine, drain first and remove the stone later; in sterile urine, ureteroscopy can be definitive."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Shock wave lithotripsy fragments proximal ureteral stones noninvasively, which makes it a reasonable elective option. It is contraindicated with active urinary infection because fragmenting an infected stone releases bacteria, and it does not decompress the kidney quickly. In an afebrile patient with sterile urine and a 7-mm proximal stone, it would be a correct choice.\n(B) Tamsulosin with fluids is medical expulsive therapy for uncomplicated distal stones of 5 to 10 mm, which is why it comes to mind for an 8-mm stone. Infection with sepsis is an absolute indication for intervention, and she cannot be managed as an outpatient. If she had no fever, a normal leukocyte count, and controlled pain, this would be an appropriate plan.\n(C) Continuing antibiotics alone is correct for pyelonephritis without obstruction, and the antibiotics are already started. Behind an obstructing stone, though, infected urine under pressure is not sterilized by antibiotics, and she is already hypotensive. If CT had shown no stone and no hydronephrosis, continuing IV antibiotics and monitoring would be the answer.\n(E) Ureteroscopy with laser lithotripsy is attractive because it removes the stone and relieves the obstruction in one procedure. In infected urine, however, stone manipulation with irrigation under pressure can cause bacteremia and septic shock, so it is deferred until after the infection is treated. If her urine were sterile and she were afebrile with an 8-mm stone that failed to pass, this would be appropriate."
+   },
+   {
+    "k": "함정",
+    "v": "Do not be pulled toward removing the stone. With fever and obstruction, the first procedure only drains the kidney; the stone waits."
+   },
+   {
+    "k": "학습목표",
+    "v": "요관결석으로 폐쇄된 콩팥에 발열·패혈증이 동반되면 결석 제거가 아니라 요관 스텐트나 경피적 신루설치술로 응급 감압하고 항생제를 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "EAU Guidelines on Urolithiasis (2024) — decompression of obstructed infected kidney by stent or nephrostomy; defer definitive treatment · Assimos D et al. Surgical management of stones: AUA/Endourological Society guideline. J Urol 2016;196:1153 · Pearle MS et al. Optimal method of urgent decompression of the collecting system for obstruction and infection due to ureteral calculi. J Urol 1998;160:1260"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "An obstructing ureteral stone with hydronephrosis and sepsis is an infected obstructed kidney that requires urgent decompression by stent or nephrostomy before any stone treatment",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "Ureteroscopy also relieves obstruction but manipulates the stone in infected urine, risking septic shock; drainage alone is the safe first step",
+   "steps": 3,
+   "chain": [
+    "fever, pyuria, nitrites, flank tenderness → pyelonephritis",
+    "8-mm proximal ureteral stone with hydronephrosis → obstructed infected kidney, hypotension despite fluids → sepsis",
+    "infected urine behind obstruction → drain first with stent or nephrostomy, defer stone removal"
+   ],
+   "key": [
+    {
+     "item": "an 8-mm stone in the proximal left ureter with moderate hydronephrosis",
+     "why": "Obstruction — antibiotics alone cannot clear infection",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 92/58 mmHg after 2 L of intravenous crystalloid",
+     "why": "Sepsis with hypotension — urgency of drainage",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "Urinalysis shows many leukocytes, nitrites, and bacteria",
+     "why": "Infected urine — contraindicates stone manipulation now",
+     "also": []
+    },
+    {
+     "item": "Her temperature is 39.2°C",
+     "why": "Fever marks infection behind the obstruction",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "serum creatinine is 1.6 mg/dL",
+     "why": "Acute kidney injury — another reason to relieve obstruction",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "intravenous piperacillin-tazobactam is started",
+     "why": "Antibiotics are already given — the question is what else is needed",
+     "also": []
+    },
+    {
+     "item": "She has no history of kidney stones",
+     "why": "First episode — does not change management",
+     "also": []
+    }
+   ],
+   "summary": "Fever, pyuria, and hypotension with an obstructing 8-mm proximal ureteral stone and hydronephrosis mean an infected obstructed kidney. Urgent decompression by ureteral stent or percutaneous nephrostomy is required; ureteroscopy or lithotripsy waits until the infection is treated.",
+   "switch": {
+    "choice": "E",
+    "condition": "If she were afebrile with sterile urine and the 8-mm stone had failed to pass after 4 weeks, ureteroscopy with laser lithotripsy would be appropriate"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0107",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "외과계 — 심방세동 환자의 급성 하지 허혈",
+  "type": "외과계 — 심방세동 환자의 급성 하지 허혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-23",
+  "vignette": "72세 남자가 3시간 전 갑자기 시작된 오른쪽 다리 통증과 저림 때문에 응급실에 왔다. 2년 전 심방세동으로 진단받았으나 항응고제를 스스로 끊었다. 걸을 때 다리가 아팠던 적은 없다. 혈압 146/88 mmHg, 맥박 108회/분(불규칙), 호흡 18회/분, 체온 36.7℃ 이다. 오른쪽 종아리와 발이 창백하고 차며, 오른쪽 넙다리동맥 맥박은 촉지되나 오금동맥·발등동맥·뒤정강동맥 맥박은 촉지되지 않고 도플러로도 동맥 신호가 들리지 않는다. 오른쪽 발가락과 발등의 감각이 떨어져 있고 발목 배측굴곡이 약간 약하다. 종아리는 부드럽다. 왼쪽 다리의 맥박은 모두 정상으로 촉지된다. 혈청 크레아티닌은 1.0 mg/dL 이다. 정맥 헤파린을 투여하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "카테터 유도 혈전용해술",
+   "와파린 투여 후 외래 추적",
+   "1차 무릎위 절단",
+   "실로스타졸 투여와 보행 운동",
+   "응급 수술적 색전제거술"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 심방세동에서 항응고제를 끊은 환자에게 갑자기 생긴 한쪽 다리의 통증·창백·냉감·맥박 소실은 심장 색전에 의한 급성 하지 허혈이다. 넙다리동맥 맥박은 있고 오금동맥 이하가 없으므로 넙다리동맥 분지부 근처(넙다리-오금 부위)의 색전이고, 반대쪽 맥박이 정상이며 파행 병력이 없어 기존 동맥경화 폐쇄의 혈전증보다 색전이 맞다. 발가락을 넘는 감각 저하와 경한 근력 약화, 도플러 동맥 신호 소실은 Rutherford IIb(즉시 위협) 단계라 몇 시간 안에 재관류하지 않으면 다리를 잃는다. 헤파린 후 가장 빠르고 확실한 재관류는 포가티 풍선 카테터를 이용한 응급 색전제거술이다. 카테터 혈전용해술은 효과가 나기까지 시간이 걸려 IIa 에 적합하고, 절단은 비가역적 허혈(III)에서 한다.\n- 원리: <b>급성 하지 허혈은 사지 관류가 갑자기 줄어 다리의 생존이 위협받는 상태</b>로, 증상 2주 이내를 말한다. 원인은 크게 <b>색전</b>(심방세동·심근경색 후 좌심실 혈전에서 떨어진 덩어리가 분지부에 걸림)과 <b>혈전증</b>(기존 동맥경화 협착 위에 생긴 폐쇄)이다. 색전은 곁순환이 발달할 시간이 없어 증상이 갑작스럽고 심하며 반대쪽 맥박은 정상이고, 혈전증은 파행 병력·반대쪽 맥박 감소·곁순환 때문에 비교적 덜 심하다. 이 구분이 치료 방법을 가른다 — 색전은 정상 혈관 속 덩어리라 풍선 카테터로 뽑아내기 쉽고, 혈전증은 밑의 협착까지 해결해야 한다.<br> <b>얼마나 급한지는 Rutherford 분류가 정한다.</b> 말초 신경은 허혈에 가장 약해서 감각이 먼저, 운동이 다음으로 떨어진다. <b>I(생존 가능)</b>: 감각·근력 정상, 도플러 동맥 신호 있음 — 영상 뒤 계획 재관류. <b>IIa(경미하게 위협)</b>: 발가락에 국한된 감각 저하, 근력 정상 — 빠른 재관류(카테터 혈전용해도 가능). <b>IIb(즉시 위협)</b>: 발가락을 넘는 감각 저하와 휴식 통증, 경~중등도 근력 약화, 동맥 신호 소실 — <b>즉시 재관류</b>, 대개 수술. <b>III(비가역)</b>: 감각 소실·마비·근육 경직, 동맥·정맥 신호 소실 — 절단. 재관류 뒤에는 구획증후군과 재관류 손상(고칼륨혈증·미오글로빈뇨)을 감시하고, 색전의 원인인 심방세동은 평생 항응고로 다스린다.\n- 비교: <table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:44%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>응급 색전제거술(정답)</b></td><td><b>Rutherford IIb — 발가락 너머 감각 저하 + 근력 약화, 색전성 폐쇄</b></td><td><b>발등까지 감각 저하, 배측굴곡 약화, 심방세동</b></td></tr> <tr><td>카테터 유도 혈전용해술(가장 가까운 오답)</td><td>Rutherford I~IIa, 증상이 비교적 오래된 혈전증, 수술 위험이 높을 때 — 재관류까지 수 시간~하루</td><td>IIb 라 기다릴 시간이 없다</td></tr> <tr><td>와파린 후 외래 추적</td><td>재관류 뒤 또는 만성 폐쇄의 이차 예방</td><td>진행 중인 급성 허혈</td></tr> <tr><td>1차 무릎위 절단</td><td>Rutherford III — 완전 마비, 감각 소실, 근육 경직, 동맥·정맥 신호 소실</td><td>근육 부드럽고 근력 일부 유지</td></tr> <tr><td>실로스타졸 + 보행 운동</td><td>만성 안정 파행</td><td>급성, 파행 병력 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 카테터 유도 혈전용해술</b>이다 — 같은 재관류 방법이고 실제로 IIa 에서 쓰인다. 갈림길은 <b>신경 기능</b>이다. 감각 저하가 발가락을 넘고 근력이 약해지면 시간이 없으므로 수술로 즉시 뚫고, 발가락 감각만 떨어지고 근력이 정상이면 혈전용해를 고를 여유가 있다.\n- 오답 이유:\n  - ① 카테터 유도 혈전용해술은 급성 하지 허혈의 재관류 방법이라 떠올리기 쉽지만, 혈전이 녹는 데 수 시간에서 하루가 걸리고 출혈 위험이 있다. 이 환자는 발가락을 넘는 감각 저하와 근력 약화가 있는 IIb 라 그만큼 기다리면 신경과 근육이 비가역적으로 손상된다. 감각 저하가 발가락에만 있고 근력이 정상인 IIa 였다면 이 선지가 적절하다.\n  - ② 와파린 투여는 심방세동의 색전 예방으로 결국 필요한 약이라 떠올릴 수 있지만, 이미 막힌 동맥을 뚫지 못하고 효과도 며칠 뒤에 나타난다. 이 환자의 다리는 몇 시간 안에 재관류되어야 한다. 색전제거술로 혈류가 회복된 뒤 퇴원할 때라면 경구 항응고제 투여가 정답이 된다.\n  - ③ 1차 무릎위 절단은 괴사된 다리를 남기면 고칼륨혈증·산증·패혈증으로 생명이 위험해지기 때문에 고려되지만, 비가역적 허혈(Rutherford III)의 선택이다. 이 환자는 근육이 부드럽고 근력이 일부 남아 있어 살릴 수 있는 다리다. 완전한 마비와 감각 소실, 근육 경직, 정맥 도플러 신호까지 없었다면 이 선지가 맞다.\n  - ④ 실로스타졸과 보행 운동은 만성 말초동맥질환의 간헐 파행에서 보행 거리를 늘리는 치료라 동맥 질환이라는 공통점으로 떠오를 수 있다. 이 환자는 파행 병력 없이 3시간 전에 갑자기 생긴 급성 허혈이다. 수개월에 걸쳐 걸으면 종아리가 아프고 쉬면 좋아지는 안정 파행 환자였다면 이 선지가 1차 치료다.\n- 함정: 「혈전용해도 재관류다」로 끝내지 않는다. 급성 하지 허혈의 방법은 원인보다 먼저 Rutherford 단계(감각·근력)가 정한다.\n- 학습목표: 심방세동 환자의 갑작스러운 하지 통증·창백·맥박 소실에 감각 저하와 경한 근력 약화가 있으면 즉시 위협받는 급성 하지 허혈(Rutherford IIb)로 판단해 헤파린 투여 후 응급 색전제거술을 한다\n- 근거·출처: Björck M et al. European Society for Vascular Surgery 2020 clinical practice guidelines on the management of acute limb ischaemia. Eur J Vasc Endovasc Surg 2020;59:173 · Rutherford RB et al. Recommended standards for reports dealing with lower extremity ischemia: revised version. J Vasc Surg 1997;26:517 · Sabiston Textbook of Surgery, 21st ed., ch. 'Acute limb ischemia'",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심방세동에서 항응고제를 끊은 환자에게 갑자기 생긴 한쪽 다리의 통증·창백·냉감·맥박 소실은 심장 색전에 의한 급성 하지 허혈이다. 넙다리동맥 맥박은 있고 오금동맥 이하가 없으므로 넙다리동맥 분지부 근처(넙다리-오금 부위)의 색전이고, 반대쪽 맥박이 정상이며 파행 병력이 없어 기존 동맥경화 폐쇄의 혈전증보다 색전이 맞다. 발가락을 넘는 감각 저하와 경한 근력 약화, 도플러 동맥 신호 소실은 Rutherford IIb(즉시 위협) 단계라 몇 시간 안에 재관류하지 않으면 다리를 잃는다. 헤파린 후 가장 빠르고 확실한 재관류는 포가티 풍선 카테터를 이용한 응급 색전제거술이다. 카테터 혈전용해술은 효과가 나기까지 시간이 걸려 IIa 에 적합하고, 절단은 비가역적 허혈(III)에서 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>급성 하지 허혈은 사지 관류가 갑자기 줄어 다리의 생존이 위협받는 상태</b>로, 증상 2주 이내를 말한다. 원인은 크게 <b>색전</b>(심방세동·심근경색 후 좌심실 혈전에서 떨어진 덩어리가 분지부에 걸림)과 <b>혈전증</b>(기존 동맥경화 협착 위에 생긴 폐쇄)이다. 색전은 곁순환이 발달할 시간이 없어 증상이 갑작스럽고 심하며 반대쪽 맥박은 정상이고, 혈전증은 파행 병력·반대쪽 맥박 감소·곁순환 때문에 비교적 덜 심하다. 이 구분이 치료 방법을 가른다 — 색전은 정상 혈관 속 덩어리라 풍선 카테터로 뽑아내기 쉽고, 혈전증은 밑의 협착까지 해결해야 한다.<br> <b>얼마나 급한지는 Rutherford 분류가 정한다.</b> 말초 신경은 허혈에 가장 약해서 감각이 먼저, 운동이 다음으로 떨어진다. <b>I(생존 가능)</b>: 감각·근력 정상, 도플러 동맥 신호 있음 — 영상 뒤 계획 재관류. <b>IIa(경미하게 위협)</b>: 발가락에 국한된 감각 저하, 근력 정상 — 빠른 재관류(카테터 혈전용해도 가능). <b>IIb(즉시 위협)</b>: 발가락을 넘는 감각 저하와 휴식 통증, 경~중등도 근력 약화, 동맥 신호 소실 — <b>즉시 재관류</b>, 대개 수술. <b>III(비가역)</b>: 감각 소실·마비·근육 경직, 동맥·정맥 신호 소실 — 절단. 재관류 뒤에는 구획증후군과 재관류 손상(고칼륨혈증·미오글로빈뇨)을 감시하고, 색전의 원인인 심방세동은 평생 항응고로 다스린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:44%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>응급 색전제거술(정답)</b></td><td><b>Rutherford IIb — 발가락 너머 감각 저하 + 근력 약화, 색전성 폐쇄</b></td><td><b>발등까지 감각 저하, 배측굴곡 약화, 심방세동</b></td></tr> <tr><td>카테터 유도 혈전용해술(가장 가까운 오답)</td><td>Rutherford I~IIa, 증상이 비교적 오래된 혈전증, 수술 위험이 높을 때 — 재관류까지 수 시간~하루</td><td>IIb 라 기다릴 시간이 없다</td></tr> <tr><td>와파린 후 외래 추적</td><td>재관류 뒤 또는 만성 폐쇄의 이차 예방</td><td>진행 중인 급성 허혈</td></tr> <tr><td>1차 무릎위 절단</td><td>Rutherford III — 완전 마비, 감각 소실, 근육 경직, 동맥·정맥 신호 소실</td><td>근육 부드럽고 근력 일부 유지</td></tr> <tr><td>실로스타졸 + 보행 운동</td><td>만성 안정 파행</td><td>급성, 파행 병력 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 카테터 유도 혈전용해술</b>이다 — 같은 재관류 방법이고 실제로 IIa 에서 쓰인다. 갈림길은 <b>신경 기능</b>이다. 감각 저하가 발가락을 넘고 근력이 약해지면 시간이 없으므로 수술로 즉시 뚫고, 발가락 감각만 떨어지고 근력이 정상이면 혈전용해를 고를 여유가 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 카테터 유도 혈전용해술은 급성 하지 허혈의 재관류 방법이라 떠올리기 쉽지만, 혈전이 녹는 데 수 시간에서 하루가 걸리고 출혈 위험이 있다. 이 환자는 발가락을 넘는 감각 저하와 근력 약화가 있는 IIb 라 그만큼 기다리면 신경과 근육이 비가역적으로 손상된다. 감각 저하가 발가락에만 있고 근력이 정상인 IIa 였다면 이 선지가 적절하다.\n② 와파린 투여는 심방세동의 색전 예방으로 결국 필요한 약이라 떠올릴 수 있지만, 이미 막힌 동맥을 뚫지 못하고 효과도 며칠 뒤에 나타난다. 이 환자의 다리는 몇 시간 안에 재관류되어야 한다. 색전제거술로 혈류가 회복된 뒤 퇴원할 때라면 경구 항응고제 투여가 정답이 된다.\n③ 1차 무릎위 절단은 괴사된 다리를 남기면 고칼륨혈증·산증·패혈증으로 생명이 위험해지기 때문에 고려되지만, 비가역적 허혈(Rutherford III)의 선택이다. 이 환자는 근육이 부드럽고 근력이 일부 남아 있어 살릴 수 있는 다리다. 완전한 마비와 감각 소실, 근육 경직, 정맥 도플러 신호까지 없었다면 이 선지가 맞다.\n④ 실로스타졸과 보행 운동은 만성 말초동맥질환의 간헐 파행에서 보행 거리를 늘리는 치료라 동맥 질환이라는 공통점으로 떠오를 수 있다. 이 환자는 파행 병력 없이 3시간 전에 갑자기 생긴 급성 허혈이다. 수개월에 걸쳐 걸으면 종아리가 아프고 쉬면 좋아지는 안정 파행 환자였다면 이 선지가 1차 치료다."
+   },
+   {
+    "k": "함정",
+    "v": "「혈전용해도 재관류다」로 끝내지 않는다. 급성 하지 허혈의 방법은 원인보다 먼저 Rutherford 단계(감각·근력)가 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심방세동 환자의 갑작스러운 하지 통증·창백·맥박 소실에 감각 저하와 경한 근력 약화가 있으면 즉시 위협받는 급성 하지 허혈(Rutherford IIb)로 판단해 헤파린 투여 후 응급 색전제거술을 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Björck M et al. European Society for Vascular Surgery 2020 clinical practice guidelines on the management of acute limb ischaemia. Eur J Vasc Endovasc Surg 2020;59:173 · Rutherford RB et al. Recommended standards for reports dealing with lower extremity ischemia: revised version. J Vasc Surg 1997;26:517 · Sabiston Textbook of Surgery, 21st ed., ch. 'Acute limb ischemia'"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "심방세동 환자의 갑작스러운 한쪽 하지 허혈에서 발가락을 넘는 감각 저하와 근력 약화(Rutherford IIb)가 있으므로 헤파린 뒤 응급 색전제거술로 즉시 재관류한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "카테터 혈전용해는 재관류까지 시간이 걸려 IIa 이하에 맞다 — 근력 약화가 있는 IIb 는 즉시 수술이다",
+   "steps": 3,
+   "chain": [
+    "심방세동 + 항응고제 중단 + 갑작스러운 통증·창백·맥박 소실 → 색전성 급성 하지 허혈",
+    "넙다리 맥박 있고 오금 이하 없음, 반대쪽 정상 → 넙다리-오금 부위 색전",
+    "발등까지 감각 저하 + 배측굴곡 약화 + 도플러 신호 소실 → Rutherford IIb → 응급 색전제거술"
+   ],
+   "key": [
+    {
+     "item": "오른쪽 발가락과 발등의 감각이 떨어져 있고 발목 배측굴곡이 약간 약하다",
+     "why": "발가락을 넘는 감각 저하와 근력 약화 — IIb 즉시 위협",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "오금동맥·발등동맥·뒤정강동맥 맥박은 촉지되지 않고 도플러로도 동맥 신호가 들리지 않는다",
+     "why": "오금 이하 폐쇄, 동맥 신호 소실",
+     "also": []
+    },
+    {
+     "item": "항응고제를 스스로 끊었다",
+     "why": "심방세동의 색전 위험 — 원인을 설명한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "걸을 때 다리가 아팠던 적은 없다",
+     "why": "기존 말초동맥질환에 의한 혈전증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "왼쪽 다리의 맥박은 모두 정상으로 촉지된다",
+     "why": "전신 동맥경화보다 색전을 시사한다",
+     "also": []
+    },
+    {
+     "item": "종아리는 부드럽다",
+     "why": "근육 경직이 없어 비가역 허혈(III)이 아니다 — 절단 대상이 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "혈청 크레아티닌은 1.0 mg/dL",
+     "why": "조영제·재관류 손상 대비에 참고할 뿐 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "항응고제를 끊은 심방세동 환자에게 갑자기 생긴 한쪽 다리의 창백·맥박 소실은 색전성 급성 하지 허혈이고, 발가락을 넘는 감각 저하와 근력 약화는 Rutherford IIb 다. 헤파린 뒤 응급 색전제거술이 정답이며 카테터 혈전용해는 IIa 이하에 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "감각 저하가 발가락에만 있고 근력이 정상이며 도플러 동맥 신호가 들리는 IIa 였다면 카테터 유도 혈전용해술을 고를 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0106",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "신경 — 혈전용해 전 급성 뇌경색의 혈압",
+  "type": "신경 — 혈전용해 전 급성 뇌경색의 혈압",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-23",
+  "vignette": "A 68-year-old man is brought to the emergency department 70 minutes after his wife found him with sudden weakness of the right arm and leg and difficulty speaking. He was last known to be well 80 minutes ago. He has hypertension and type 2 diabetes mellitus and takes lisinopril and metformin. He does not take anticoagulants. His pulse is 84/min and regular, respirations are 16/min, and blood pressure is 204/112 mmHg. Fingerstick glucose is 142 mg/dL. He has a right facial droop, right hemiparesis, and expressive aphasia; the NIH Stroke Scale score is 12. Noncontrast CT of the head shows no hemorrhage and no early ischemic changes. Platelet count and coagulation studies are normal.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Sublingual nifedipine to lower blood pressure to below 140/90 mmHg",
+   "Intravenous labetalol, then intravenous alteplase once blood pressure is below 185/110 mmHg",
+   "Intravenous alteplase immediately",
+   "Withhold thrombolysis because the blood pressure exceeds 185/110 mmHg",
+   "Oral aspirin and clopidogrel"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: He has an acute disabling ischemic stroke (NIHSS 12) within the 4.5-hour window, a CT without hemorrhage, normal glucose, platelets, and coagulation, and no anticoagulant use — he is a candidate for IV thrombolysis. The only obstacle is blood pressure: thrombolysis requires a pressure below 185/110 mmHg before the bolus and below 180/105 mmHg for 24 hours afterward, because higher pressures increase symptomatic intracranial hemorrhage. Elevated pressure is a correctable barrier, not a contraindication, so he should receive IV labetalol (or nicardipine) and then alteplase once the target is reached. Aggressive lowering to normal and sublingual nifedipine risk hypoperfusion of the penumbra.\n- 원리: <b>Ischemic stroke has a core that is already dead and a penumbra that is salvageable</b> as long as flow is restored. The penumbra survives on collateral perfusion that depends passively on systemic pressure because autoregulation is lost in ischemic brain. That is why, in patients who are not getting reperfusion therapy, blood pressure is allowed to run high (permissive hypertension up to 220/120 mmHg) — lowering it starves the penumbra.<br> <b>Thrombolysis changes the balance.</b> Alteplase lyses the clot but also acts on ischemic, leaky vessels; reperfusion of damaged vessels under high pressure causes <b>hemorrhagic transformation</b>. Trials that established IV thrombolysis excluded patients with pressures above 185/110 mmHg, and higher post-treatment pressures are associated with symptomatic intracranial hemorrhage. So the rule is: lower the pressure <b>to just below 185/110 mmHg</b> with a titratable IV agent (labetalol 10–20 mg IV, nicardipine infusion, or clevidipine), give alteplase or tenecteplase, and keep it below 180/105 mmHg for 24 hours. The pressure target is modest on purpose — enough to reduce hemorrhage risk, not so much that the penumbra loses its collateral supply. Time is the other axis: every minute of delay costs neurons, so blood pressure control is done in parallel with preparation for thrombolysis, not as a reason to abandon it.\n- 비교: <table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>IV labetalol, then alteplase (answer)</b></td><td><b>Thrombolysis candidate with BP &gt; 185/110 mmHg that can be lowered promptly</b></td><td><b>80 min from onset, CT clear, BP 204/112</b></td></tr> <tr><td>Alteplase immediately (closest rival)</td><td>Thrombolysis candidate with BP already &lt; 185/110 mmHg</td><td>BP above threshold — bleeding risk</td></tr> <tr><td>Withhold thrombolysis</td><td>BP that cannot be brought below 185/110 despite IV agents, or a true contraindication</td><td>BP not yet treated — not a contraindication</td></tr> <tr><td>Aspirin and clopidogrel</td><td>Minor stroke (NIHSS ≤ 3) or high-risk TIA not eligible for thrombolysis</td><td>NIHSS 12 — disabling, eligible</td></tr> <tr><td>Sublingual nifedipine to &lt; 140/90</td><td>Never in acute stroke — uncontrolled precipitous fall</td><td>Would hypoperfuse the penumbra</td></tr> </tbody></table> <b>The closest rival is immediate alteplase</b>, because \"time is brain.\" The dividing line is the <b>185/110 mmHg threshold</b>: above it, lower first with a titratable IV agent; below it, give the drug. Neither hurry past the threshold nor treat the threshold as a contraindication.\n- 오답 이유:\n  - (A) Sublingual nifedipine lowers pressure quickly and unpredictably, and a target below 140/90 mmHg is far too aggressive; both reduce collateral flow to the penumbra and can extend the infarct. It is not used in acute stroke. A controlled reduction to normal pressure would be appropriate only later, days after the acute phase, for secondary prevention.\n  - (C) Immediate alteplase reflects the right instinct that every minute counts, and he is otherwise eligible. But giving a thrombolytic at 204/112 mmHg raises the risk of symptomatic intracranial hemorrhage; the threshold is below 185/110 mmHg before the bolus. If his blood pressure had been 172/98 mmHg on arrival, this would be correct.\n  - (D) Withholding thrombolysis treats the high pressure as a contraindication, but it is a correctable barrier. Only pressure that stays above 185/110 mmHg despite IV labetalol or nicardipine excludes him. If two doses of labetalol and a nicardipine infusion had failed to lower it, withholding thrombolysis would be the right decision.\n  - (E) Dual antiplatelet therapy with aspirin and clopidogrel reduces early recurrence after minor stroke or high-risk TIA and so is a reasonable thought. This patient has a disabling deficit (NIHSS 12) and is within the window, so reperfusion is the priority. With an NIHSS of 2 and nondisabling symptoms, this would be the preferred treatment.\n- 함정: High blood pressure in a thrombolysis candidate is a problem to fix, not a reason to stop — but it must be fixed before the bolus, and only to below 185/110 mmHg.\n- 학습목표: 혈전용해 적응이 되는 급성 허혈뇌졸중에서 혈압이 185/110 mmHg 를 넘으면 정맥 라베탈롤·니카르디핀으로 먼저 낮춘 뒤 알테플라제를 투여한다\n- 근거·출처: Powers WJ et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. Stroke 2019;50:e344 — BP < 185/110 before and < 180/105 after IV alteplase · Berge E et al. European Stroke Organisation guidelines on intravenous thrombolysis for acute ischaemic stroke. Eur Stroke J 2021;6:I · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Ischemic stroke' — acute management",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has an acute disabling ischemic stroke (NIHSS 12) within the 4.5-hour window, a CT without hemorrhage, normal glucose, platelets, and coagulation, and no anticoagulant use — he is a candidate for IV thrombolysis. The only obstacle is blood pressure: thrombolysis requires a pressure below 185/110 mmHg before the bolus and below 180/105 mmHg for 24 hours afterward, because higher pressures increase symptomatic intracranial hemorrhage. Elevated pressure is a correctable barrier, not a contraindication, so he should receive IV labetalol (or nicardipine) and then alteplase once the target is reached. Aggressive lowering to normal and sublingual nifedipine risk hypoperfusion of the penumbra."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Ischemic stroke has a core that is already dead and a penumbra that is salvageable</b> as long as flow is restored. The penumbra survives on collateral perfusion that depends passively on systemic pressure because autoregulation is lost in ischemic brain. That is why, in patients who are not getting reperfusion therapy, blood pressure is allowed to run high (permissive hypertension up to 220/120 mmHg) — lowering it starves the penumbra.<br> <b>Thrombolysis changes the balance.</b> Alteplase lyses the clot but also acts on ischemic, leaky vessels; reperfusion of damaged vessels under high pressure causes <b>hemorrhagic transformation</b>. Trials that established IV thrombolysis excluded patients with pressures above 185/110 mmHg, and higher post-treatment pressures are associated with symptomatic intracranial hemorrhage. So the rule is: lower the pressure <b>to just below 185/110 mmHg</b> with a titratable IV agent (labetalol 10–20 mg IV, nicardipine infusion, or clevidipine), give alteplase or tenecteplase, and keep it below 180/105 mmHg for 24 hours. The pressure target is modest on purpose — enough to reduce hemorrhage risk, not so much that the penumbra loses its collateral supply. Time is the other axis: every minute of delay costs neurons, so blood pressure control is done in parallel with preparation for thrombolysis, not as a reason to abandon it."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:30%\">Option</th><th style=\"width:40%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>IV labetalol, then alteplase (answer)</b></td><td><b>Thrombolysis candidate with BP &gt; 185/110 mmHg that can be lowered promptly</b></td><td><b>80 min from onset, CT clear, BP 204/112</b></td></tr> <tr><td>Alteplase immediately (closest rival)</td><td>Thrombolysis candidate with BP already &lt; 185/110 mmHg</td><td>BP above threshold — bleeding risk</td></tr> <tr><td>Withhold thrombolysis</td><td>BP that cannot be brought below 185/110 despite IV agents, or a true contraindication</td><td>BP not yet treated — not a contraindication</td></tr> <tr><td>Aspirin and clopidogrel</td><td>Minor stroke (NIHSS ≤ 3) or high-risk TIA not eligible for thrombolysis</td><td>NIHSS 12 — disabling, eligible</td></tr> <tr><td>Sublingual nifedipine to &lt; 140/90</td><td>Never in acute stroke — uncontrolled precipitous fall</td><td>Would hypoperfuse the penumbra</td></tr> </tbody></table> <b>The closest rival is immediate alteplase</b>, because \"time is brain.\" The dividing line is the <b>185/110 mmHg threshold</b>: above it, lower first with a titratable IV agent; below it, give the drug. Neither hurry past the threshold nor treat the threshold as a contraindication."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Sublingual nifedipine lowers pressure quickly and unpredictably, and a target below 140/90 mmHg is far too aggressive; both reduce collateral flow to the penumbra and can extend the infarct. It is not used in acute stroke. A controlled reduction to normal pressure would be appropriate only later, days after the acute phase, for secondary prevention.\n(C) Immediate alteplase reflects the right instinct that every minute counts, and he is otherwise eligible. But giving a thrombolytic at 204/112 mmHg raises the risk of symptomatic intracranial hemorrhage; the threshold is below 185/110 mmHg before the bolus. If his blood pressure had been 172/98 mmHg on arrival, this would be correct.\n(D) Withholding thrombolysis treats the high pressure as a contraindication, but it is a correctable barrier. Only pressure that stays above 185/110 mmHg despite IV labetalol or nicardipine excludes him. If two doses of labetalol and a nicardipine infusion had failed to lower it, withholding thrombolysis would be the right decision.\n(E) Dual antiplatelet therapy with aspirin and clopidogrel reduces early recurrence after minor stroke or high-risk TIA and so is a reasonable thought. This patient has a disabling deficit (NIHSS 12) and is within the window, so reperfusion is the priority. With an NIHSS of 2 and nondisabling symptoms, this would be the preferred treatment."
+   },
+   {
+    "k": "함정",
+    "v": "High blood pressure in a thrombolysis candidate is a problem to fix, not a reason to stop — but it must be fixed before the bolus, and only to below 185/110 mmHg."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈전용해 적응이 되는 급성 허혈뇌졸중에서 혈압이 185/110 mmHg 를 넘으면 정맥 라베탈롤·니카르디핀으로 먼저 낮춘 뒤 알테플라제를 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Powers WJ et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. Stroke 2019;50:e344 — BP < 185/110 before and < 180/105 after IV alteplase · Berge E et al. European Stroke Organisation guidelines on intravenous thrombolysis for acute ischaemic stroke. Eur Stroke J 2021;6:I · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Ischemic stroke' — acute management"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "An eligible thrombolysis candidate within 4.5 hours has blood pressure above 185/110 mmHg, which must be lowered with an IV titratable agent before alteplase",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Alteplase immediately is correct only when pressure is already below 185/110 mmHg; at 204/112 mmHg the hemorrhage risk requires lowering first",
+   "steps": 3,
+   "chain": [
+    "sudden right hemiparesis and aphasia, CT without hemorrhage → acute ischemic stroke",
+    "80 min from last known well, NIHSS 12, normal glucose·coagulation, no anticoagulant → thrombolysis candidate",
+    "BP 204/112 above 185/110 → lower with IV labetalol first, then alteplase"
+   ],
+   "key": [
+    {
+     "item": "He was last known to be well 80 minutes ago",
+     "why": "Within the 4.5-hour thrombolysis window",
+     "also": []
+    },
+    {
+     "item": "the NIH Stroke Scale score is 12",
+     "why": "Disabling deficit — reperfusion rather than antiplatelet therapy alone",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "Noncontrast CT of the head shows no hemorrhage and no early ischemic changes",
+     "why": "Excludes hemorrhage — ischemic stroke eligible for lysis",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 204/112 mmHg",
+     "why": "Above 185/110 — must be lowered before the bolus",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He does not take anticoagulants",
+     "why": "Removes a common contraindication to thrombolysis",
+     "also": []
+    },
+    {
+     "item": "Platelet count and coagulation studies are normal",
+     "why": "No hematologic contraindication",
+     "also": []
+    },
+    {
+     "item": "Fingerstick glucose is 142 mg/dL",
+     "why": "Hypoglycemia as a stroke mimic is unlikely",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "hypertension and type 2 diabetes mellitus",
+     "why": "Vascular risk factors — explain the stroke but do not change the next step",
+     "also": []
+    }
+   ],
+   "summary": "Sudden right hemiparesis with aphasia, NIHSS 12, a clear CT, and onset 80 minutes ago make him a thrombolysis candidate. His blood pressure of 204/112 mmHg must first be lowered below 185/110 mmHg with IV labetalol, and then alteplase is given.",
+   "switch": {
+    "choice": "D",
+    "condition": "If his blood pressure stayed above 185/110 mmHg despite repeated IV labetalol and a nicardipine infusion, thrombolysis would have to be withheld"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0105",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·소화기·신경·외과·신장비뇨·소아·내분비·예방의학·병리조직)",
+  "subtopic": "소화기·간담췌 — 경증 급성 췌장염의 영양",
+  "type": "소화기·간담췌 — 경증 급성 췌장염의 영양",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-23",
+  "vignette": "45세 남자가 하루 전부터 시작된 명치 통증이 등으로 뻗쳐 입원하였다. 전날 저녁에 소주 두 병을 마셨고 10년 동안 매일 술을 마셨다. 입원 당시 혈청 리파아제는 정상 상한의 8배였고 복부 초음파에서 담석과 담관 확장은 없었다. 입원 후 정맥 수액(젖산 링거액)과 진통제를 투여하였다. 입원 36시간째 체온 36.9℃, 혈압 128/78 mmHg, 맥박 84회/분, 호흡 16회/분이다. 통증은 많이 줄었고 배가 고프다고 한다. 명치에 가벼운 압통이 있고 장음은 정상이며 구역·구토는 없다. 혈액검사에서 백혈구 11,200/mm³, 혈중요소질소 14 mg/dL, 크레아티닌 0.8 mg/dL, 칼슘 9.1 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "저지방 경구 식이 시작",
+   "금식 유지와 비경구영양",
+   "예방적 카바페넴 투여",
+   "조영증강 복부 CT",
+   "내시경역행담췌관조영술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 알코올성 급성 췌장염에서 입원 36시간째 활력징후가 안정적이고 장기부전(혈압·콩팥 기능·호흡)이 없으며 통증이 줄고 배고픔을 느끼고 장음이 정상이다 — 경증 급성 췌장염이다. 경증 췌장염은 통증 소실이나 검사 수치 정상화를 기다리지 않고 24~48시간 안에 저지방 경구 식이를 시작하는 것이 입원 기간을 줄이고 안전하다. 금식 연장과 비경구영양은 감염 합병증을 늘리고, 예방적 항생제는 괴사성 췌장염에서도 권고되지 않으며, 진단이 확실한 경증 환자의 조기 CT 와 담관염·담관 폐쇄가 없는 환자의 ERCP 는 필요 없다.\n- 원리: <b>급성 췌장염은 췌장 효소가 췌장 안에서 활성화돼 자기 소화와 전신 염증을 일으키는 병</b>이고, 대부분(약 80 %)은 간질부종성의 경증으로 며칠 안에 좋아진다. 예전에는 「음식이 췌장을 자극하니 쉬게 해야 한다(pancreatic rest)」는 생각으로 금식을 오래 했지만, 금식은 <b>장 점막 위축 → 장벽 투과성 증가 → 세균 전위</b>를 일으켜 괴사 조직의 감염을 늘린다. 장으로 들어가는 영양은 장 점막 장벽을 유지해 이 경로를 막는다. 그래서 현재 원칙은 <b>「가능하면 일찍, 가능하면 장으로」</b>다.<br> <b>경증의 기준</b>(개정 애틀랜타 분류)은 장기부전과 국소·전신 합병증이 없는 것이다 — 혈압, 콩팥 기능(크레아티닌), 산소화가 정상이고 요소질소가 오르지 않으면 경증이다. 경증 환자는 통증이 줄고 배고픔을 느끼면 리파아제가 정상화되기를 기다리지 않고 저지방 경구 식이(맑은 유동식부터 시작할 필요도 없다)를 시작한다. 경구 섭취를 못 하는 중증 환자에게도 비경구영양보다 <b>경장영양(비위관·비공장관)</b>이 우선이다. 조영증강 CT 는 진단이 불확실하거나 72시간이 지나도 좋아지지 않아 괴사·합병증을 찾을 때 찍고, ERCP 는 담관염이나 지속되는 담관 폐쇄가 있을 때만 한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>저지방 경구 식이(정답)</b></td><td><b>경증 — 장기부전 없음, 통증 호전, 배고픔, 구역·구토·장폐색 없음</b></td><td><b>36시간째 안정, 배고픔, 장음 정상</b></td></tr> <tr><td>금식 + 비경구영양(가장 가까운 오답)</td><td>장을 쓸 수 없을 때(지속 장폐색·복부구획증후군·경장영양 불내성)만</td><td>장음 정상, 구토 없음 — 장을 쓸 수 있다</td></tr> <tr><td>예방적 카바페넴</td><td>권고 안 함 — 감염 괴사가 입증·강력 의심될 때만 치료 목적으로</td><td>괴사 증거 없음, 발열 없음</td></tr> <tr><td>조영증강 복부 CT</td><td>진단 불확실, 72시간 뒤에도 호전 없음, 괴사·합병증 의심</td><td>진단 확실, 호전 중</td></tr> <tr><td>ERCP</td><td>담석 췌장염 + 담관염 또는 지속 담관 폐쇄</td><td>알코올성, 담석·담관 확장 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「금식 유지와 비경구영양」</b>이다 — 「췌장을 쉬게 한다」는 오래된 직관 때문이다. 갈림길은 <b>장을 쓸 수 있는가</b>다. 쓸 수 있으면 경증은 입으로, 입으로 못 먹는 중증은 관으로 먹이고, 비경구영양은 장을 쓸 수 없을 때만 쓴다.\n- 오답 이유:\n  - ② 금식 유지와 비경구영양은 「췌장을 쉬게 한다」는 오래된 원칙이라 떠올리기 쉽지만, 금식이 길어지면 장 점막이 위축돼 세균 전위와 감염 합병증이 늘고, 비경구영양은 중심정맥관 감염까지 더한다. 이 환자는 장음이 정상이고 배고프다. 지속되는 장폐색으로 경장영양을 견디지 못하는 중증 췌장염이라면 이 선지가 맞다.\n  - ③ 예방적 카바페넴은 괴사 조직의 감염을 막겠다는 생각으로 쓰던 적이 있지만, 무작위시험에서 사망률·감염 괴사를 줄이지 못해 괴사성 췌장염에서도 권고되지 않는다. 이 환자는 괴사 증거조차 없다. 발병 2주 뒤 CT 에서 괴사 안 가스가 보이는 감염 괴사라면 치료 목적으로 이 약이 정답이 된다.\n  - ④ 조영증강 복부 CT 는 췌장 괴사와 합병증을 가장 잘 보여 주어 떠올릴 수 있지만, 괴사는 발병 72시간 뒤에야 잘 드러나고 진단이 확실하며 호전 중인 경증 환자에게는 치료를 바꾸지 못한다. 72시간이 지나도 통증과 발열이 계속되거나 진단이 불확실하면 이 검사가 맞다.\n  - ⑤ 내시경역행담췌관조영술은 담석 췌장염에서 담관의 돌을 빼는 처치라 떠올릴 수 있지만, 이 환자는 알코올성이고 초음파에서 담석과 담관 확장이 없으며 황달·담관염 소견도 없다. 발열·황달·우상복부 통증을 동반한 담석 췌장염(담관염)이었다면 24시간 안의 ERCP 가 정답이다.\n- 함정: 리파아제가 아직 정상이 아니라는 이유로 식이를 미루지 않는다. 경증 췌장염의 식이 시작 기준은 효소 수치가 아니라 통증·배고픔·장 기능이다.\n- 학습목표: 경증 급성 췌장염에서 통증이 줄고 배고픔을 느끼면 24~48시간 안에 저지방 경구 식이를 시작하고, 금식 연장·비경구영양·예방적 항생제·조기 CT 를 피한다\n- 근거·출처: Tenner S et al. American College of Gastroenterology Guideline: Management of acute pancreatitis. Am J Gastroenterol 2024;119:419 · Banks PA et al. Classification of acute pancreatitis — 2012: revision of the Atlanta classification. Gut 2013;62:102 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute and chronic pancreatitis' — nutrition and antibiotics",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "알코올성 급성 췌장염에서 입원 36시간째 활력징후가 안정적이고 장기부전(혈압·콩팥 기능·호흡)이 없으며 통증이 줄고 배고픔을 느끼고 장음이 정상이다 — 경증 급성 췌장염이다. 경증 췌장염은 통증 소실이나 검사 수치 정상화를 기다리지 않고 24~48시간 안에 저지방 경구 식이를 시작하는 것이 입원 기간을 줄이고 안전하다. 금식 연장과 비경구영양은 감염 합병증을 늘리고, 예방적 항생제는 괴사성 췌장염에서도 권고되지 않으며, 진단이 확실한 경증 환자의 조기 CT 와 담관염·담관 폐쇄가 없는 환자의 ERCP 는 필요 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>급성 췌장염은 췌장 효소가 췌장 안에서 활성화돼 자기 소화와 전신 염증을 일으키는 병</b>이고, 대부분(약 80 %)은 간질부종성의 경증으로 며칠 안에 좋아진다. 예전에는 「음식이 췌장을 자극하니 쉬게 해야 한다(pancreatic rest)」는 생각으로 금식을 오래 했지만, 금식은 <b>장 점막 위축 → 장벽 투과성 증가 → 세균 전위</b>를 일으켜 괴사 조직의 감염을 늘린다. 장으로 들어가는 영양은 장 점막 장벽을 유지해 이 경로를 막는다. 그래서 현재 원칙은 <b>「가능하면 일찍, 가능하면 장으로」</b>다.<br> <b>경증의 기준</b>(개정 애틀랜타 분류)은 장기부전과 국소·전신 합병증이 없는 것이다 — 혈압, 콩팥 기능(크레아티닌), 산소화가 정상이고 요소질소가 오르지 않으면 경증이다. 경증 환자는 통증이 줄고 배고픔을 느끼면 리파아제가 정상화되기를 기다리지 않고 저지방 경구 식이(맑은 유동식부터 시작할 필요도 없다)를 시작한다. 경구 섭취를 못 하는 중증 환자에게도 비경구영양보다 <b>경장영양(비위관·비공장관)</b>이 우선이다. 조영증강 CT 는 진단이 불확실하거나 72시간이 지나도 좋아지지 않아 괴사·합병증을 찾을 때 찍고, ERCP 는 담관염이나 지속되는 담관 폐쇄가 있을 때만 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>저지방 경구 식이(정답)</b></td><td><b>경증 — 장기부전 없음, 통증 호전, 배고픔, 구역·구토·장폐색 없음</b></td><td><b>36시간째 안정, 배고픔, 장음 정상</b></td></tr> <tr><td>금식 + 비경구영양(가장 가까운 오답)</td><td>장을 쓸 수 없을 때(지속 장폐색·복부구획증후군·경장영양 불내성)만</td><td>장음 정상, 구토 없음 — 장을 쓸 수 있다</td></tr> <tr><td>예방적 카바페넴</td><td>권고 안 함 — 감염 괴사가 입증·강력 의심될 때만 치료 목적으로</td><td>괴사 증거 없음, 발열 없음</td></tr> <tr><td>조영증강 복부 CT</td><td>진단 불확실, 72시간 뒤에도 호전 없음, 괴사·합병증 의심</td><td>진단 확실, 호전 중</td></tr> <tr><td>ERCP</td><td>담석 췌장염 + 담관염 또는 지속 담관 폐쇄</td><td>알코올성, 담석·담관 확장 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 「금식 유지와 비경구영양」</b>이다 — 「췌장을 쉬게 한다」는 오래된 직관 때문이다. 갈림길은 <b>장을 쓸 수 있는가</b>다. 쓸 수 있으면 경증은 입으로, 입으로 못 먹는 중증은 관으로 먹이고, 비경구영양은 장을 쓸 수 없을 때만 쓴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 금식 유지와 비경구영양은 「췌장을 쉬게 한다」는 오래된 원칙이라 떠올리기 쉽지만, 금식이 길어지면 장 점막이 위축돼 세균 전위와 감염 합병증이 늘고, 비경구영양은 중심정맥관 감염까지 더한다. 이 환자는 장음이 정상이고 배고프다. 지속되는 장폐색으로 경장영양을 견디지 못하는 중증 췌장염이라면 이 선지가 맞다.\n③ 예방적 카바페넴은 괴사 조직의 감염을 막겠다는 생각으로 쓰던 적이 있지만, 무작위시험에서 사망률·감염 괴사를 줄이지 못해 괴사성 췌장염에서도 권고되지 않는다. 이 환자는 괴사 증거조차 없다. 발병 2주 뒤 CT 에서 괴사 안 가스가 보이는 감염 괴사라면 치료 목적으로 이 약이 정답이 된다.\n④ 조영증강 복부 CT 는 췌장 괴사와 합병증을 가장 잘 보여 주어 떠올릴 수 있지만, 괴사는 발병 72시간 뒤에야 잘 드러나고 진단이 확실하며 호전 중인 경증 환자에게는 치료를 바꾸지 못한다. 72시간이 지나도 통증과 발열이 계속되거나 진단이 불확실하면 이 검사가 맞다.\n⑤ 내시경역행담췌관조영술은 담석 췌장염에서 담관의 돌을 빼는 처치라 떠올릴 수 있지만, 이 환자는 알코올성이고 초음파에서 담석과 담관 확장이 없으며 황달·담관염 소견도 없다. 발열·황달·우상복부 통증을 동반한 담석 췌장염(담관염)이었다면 24시간 안의 ERCP 가 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "리파아제가 아직 정상이 아니라는 이유로 식이를 미루지 않는다. 경증 췌장염의 식이 시작 기준은 효소 수치가 아니라 통증·배고픔·장 기능이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 급성 췌장염에서 통증이 줄고 배고픔을 느끼면 24~48시간 안에 저지방 경구 식이를 시작하고, 금식 연장·비경구영양·예방적 항생제·조기 CT 를 피한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tenner S et al. American College of Gastroenterology Guideline: Management of acute pancreatitis. Am J Gastroenterol 2024;119:419 · Banks PA et al. Classification of acute pancreatitis — 2012: revision of the Atlanta classification. Gut 2013;62:102 · Harrison's Principles of Internal Medicine, 21st ed., ch. 'Acute and chronic pancreatitis' — nutrition and antibiotics"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "장기부전이 없고 통증이 줄며 배고픔을 느끼는 경증 급성 췌장염이므로 24~48시간 안에 저지방 경구 식이를 시작한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "비경구영양은 장을 쓸 수 없을 때만 쓴다 — 장음 정상·구토 없음·배고픔은 장을 쓸 수 있다는 뜻이다",
+   "steps": 2,
+   "chain": [
+    "혈압·크레아티닌·요소질소·호흡 정상 → 장기부전 없는 경증 급성 췌장염",
+    "통증 감소·배고픔·장음 정상 → 효소 정상화를 기다리지 않고 경구 식이"
+   ],
+   "key": [
+    {
+     "item": "통증은 많이 줄었고 배가 고프다고 한다",
+     "why": "경구 식이 시작 기준",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "장음은 정상이며 구역·구토는 없다",
+     "why": "장을 쓸 수 있다 — 비경구영양의 이유가 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈중요소질소 14 mg/dL, 크레아티닌 0.8 mg/dL",
+     "why": "콩팥 기능 정상 — 장기부전·중증을 시사하지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈압 128/78 mmHg, 맥박 84회/분, 호흡 16회/분",
+     "why": "순환·호흡 장기부전 없음",
+     "also": []
+    },
+    {
+     "item": "복부 초음파에서 담석과 담관 확장은 없었다",
+     "why": "담석 췌장염·담관 폐쇄 가능성을 낮춰 ERCP 가 필요 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "10년 동안 매일 술을 마셨다",
+     "why": "알코올성이라는 원인 — 식이 시기 결정에는 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "백혈구 11,200/mm³",
+     "why": "염증 반응으로 흔한 경한 증가 — 감염 근거가 아니며 항생제 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "칼슘 9.1 mg/dL",
+     "why": "고칼슘혈증 원인과 중증 저칼슘혈증이 없음을 보여 준다",
+     "also": []
+    }
+   ],
+   "summary": "입원 36시간째 장기부전이 없고 통증이 줄며 배고픔을 느끼는 경증 알코올성 췌장염이다. 효소 정상화를 기다리지 않고 저지방 경구 식이를 시작하며, 비경구영양·예방적 항생제·조기 CT·ERCP 는 필요 없다.",
+   "switch": {
+    "choice": "D",
+    "condition": "72시간이 지나도 통증과 발열이 계속되고 백혈구가 오르면 괴사·합병증을 찾는 조영증강 복부 CT 가 적절해진다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0102",
   "exam": "imaging",
   "style": "usmle_style",
