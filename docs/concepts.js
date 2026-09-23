@@ -1,6 +1,4472 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/concepts/**/*.md  →  `python pipelines/export_concepts_web.py`로 재생성
 window.MEDKOS_CONCEPTS = {
+ "cn.allergy.anaphylaxis.im-epinephrine-first": {
+  "id": "cn.allergy.anaphylaxis.im-epinephrine-first",
+  "title": "아나필락시스 — 첫 약은 근육주사 에피네프린, 항히스타민·스테로이드는 혈역학이 안정된 뒤의 보조",
+  "objective": "벌 쏘임·약·음식 노출 뒤 수 분 안에 피부 증상과 함께 기도(천명·후두부종)·순환(저혈압) 침범이 생기면 아나필락시스로 판단하고, 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사를 첫 치료로 골라 누운 자세·필요 시 반복·수액을 더하며, 항히스타민제·글루코코르티코이드·흡입 기관지확장제가 첫 약이 될 수 없는 이유를 매개체와 약의 작용 범위로 설명한다",
+  "objectiveKind": "치료",
+  "condition": "아나필락시스(저혈압·기도 침범)",
+  "topic": "Allergy",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "126ec7453d66d985",
+  "summary": [
+   "아나필락시스는 유발 물질(가장 흔히 약·음식·벌류 쏘임) 노출 뒤 수 초~수 분 안에 오는 생명을 위협하는 전신 알레르기 반응이다. 저혈압·저산소증이 오면 특히 위험하다.",
+   "비만세포·호염기구가 히스타민·류코트리엔·프로스타글란딘·PAF 를 한꺼번에 내놓는다. 이 매개체들이 혈관 확장·혈관 누출·기관지 수축을 함께 만든다.",
+   "첫 치료는 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사, 심하면 5–20분 간격 반복이다. 알파 작용(혈관 수축)·베타 작용(기관지 이완)·세정맥 누출 감소를 한 약이 다 한다.",
+   "증상 시작 20분 안에 에피네프린을 쓰지 못하면 결과가 나쁘다. 에피네프린 전에 눕힌다. 항히스타민제·글루코코르티코이드·기관지확장제는 혈역학이 안정된 뒤 두드러기·혈관부종·기관지 연축에 쓰는 보조다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>아나필락시스는 하나 이상의 장기계를 침범하는 생명을 위협하는 전신 알레르기 반응으로, 대개 약·음식·벌류 쏘임 같은 유발 물질 노출 뒤 수 초~수 분 안에 생긴다 <sup>[1 353장 p.2727]</sup>. 이 정리본의 목표는 <strong>첫 약과 그 경로를 고르는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>대부분 알레르겐이 비만세포·호염기구 표면 IgE-FcεRI 를 교차결합하면서 시작한다 <sup>[1 353장 p.2727]</sup>. 탈과립으로 히스타민·트립타제·키마제가 즉시 나오고, 이어 류코트리엔·프로스타글란딘 D2·PAF 가 만들어진다. 히스타민은 홍조·두드러기·가려움과 높은 농도에서 저혈압·빈맥을, 류코트리엔·PGD2 는 기관지 수축과 미세혈관 투과성 증가를 만든다. PAF 농도는 중증도와 비례한다. 트립타제·키마제는 보체(C3a·C5a)와 칼리크레인-키닌계를 켠다. 이 매개체들의 작용은 더해지거나 상승한다 <sup>[1 353장 p.2727]</sup>. <strong>여러 매개체가 한꺼번에</strong> 혈관을 넓히고 새게 하며 기관지를 조이므로, 한 매개체를 막는 약이 아니라 <strong>말단 기관의 반응을 거꾸로 돌리는 약</strong>(에피네프린)이 필요하다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>피부(90 % 초과): 두드러기·홍조·온몸 열감 <sup>[1 353장 p.2727]</sup>.</li>\n<li>기도: 후두부종(목의 덩어리감·쉰 목소리·그렁거림), 기관지 폐쇄(가슴 조임·천명). 천식이 있으면 더 심하고 사망률이 높다 <sup>[1 353장 p.2727]</sup>.</li>\n<li>순환: 혈관 내 용적 소실에 의한 저혈압·심혈관 허탈 <sup>[1 353장 p.2727]</sup>.</li>\n<li>위장관: 구역·구토·산통성 복통, 장벽 혈관부종이 용적 소실을 더한다 <sup>[1 353장 p.2727]</sup>.</li>\n<li>경과: 80–90 % 단상, 10–20 % 이상성 <sup>[1 353장 p.2727]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>피부에 국한된 알레르기 반응·큰 국소 반응</strong>: 기도·순환 침범이 없다. 벌류 큰 국소 반응만 있던 환자는 다음 쏘임에 아나필락시스가 올 가능성이 낮다 <sup>[1 353장 p.2728]</sup>.</li>\n<li><strong>비 IgE 비만세포 활성화</strong>(조영제·반코마이신·근이완제·퀴놀론 등): 임상적으로 구별되지 않고 첫 노출에도 생긴다 — 치료는 같다 <sup>[1 353장 p.2728]</sup>.</li>\n<li><strong>혈관미주신경 실신</strong>: 서맥·창백, 두드러기·천명이 없다(일반 지식, 원문 미대조).</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 병력(노출과 증상의 시간 관계)이다 <sup>[1 353장 p.2728]</sup>. 혈청 트립타제는 60–90분에 정점, 5시간까지 잴 수 있어 중증도 기록에 쓰고, 안정 뒤 기저치를 다시 재 비만세포증을 찾는다(특히 벌류 쏘임) <sup>[1 353장 p.2728]</sup>. 어느 검사도 치료를 기다리게 하지 않는다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>눕히고 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사</strong>, 심하면 5–20분 간격 반복 <sup>[1 353장 p.2728]</sup>.</li>\n<li>난치성 저혈압: 정맥 수액·승압제. 산소, 분무 알부테롤. 진행 저산소증: 삽관·기관절개 <sup>[1 353장 p.2728]</sup>.</li>\n<li>혈역학이 안정된 뒤: 항히스타민제·글루코코르티코이드·기관지확장제로 두드러기·혈관부종·기관지 연축 <sup>[1 353장 p.2728]</sup>.</li>\n<li><strong>재평가</strong>: 혈압·기도가 돌아오는지 보고, 이상성 반응(10–20 %)에 대비해 관찰한다 <sup>[1 353장 p.2727]</sup>.</li>\n<li><strong>예방</strong>: 유발 물질 회피, 자가주사 에피네프린 교육, 벌류 아나필락시스면 벌독 면역요법 <sup>[1 353장 p.2728]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>기도·순환 침범이 있으면 망설이지 않고 근육주사 에피네프린 — 20분 안의 투여가 결과를 가른다 <sup>[1 353장 p.2728]</sup>.</li>\n<li>베타차단제 복용자는 에피네프린 반응이 약할 수 있다 <sup>[1 353장 p.2728]</sup>.</li>\n<li>주사 부위(대퇴 앞가쪽)와 피하 경로와의 비교는 해리슨 353장에 없어 이 정리본에서 원문 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 353장 p.2727~2728)</li>\n</ul>"
+   },
+   {
+    "title": "왜 에피네프린 하나가 답인가",
+    "deep": true,
+    "html": "<p>아나필락시스의 위험은 매개체 종류가 아니라 그 결과 — 혈관이 풀리고 새고, 기관지가 조이는 것 — 에서 온다. 항히스타민제는 여러 매개체 중 하나의 수용체만 막고, 스테로이드는 새 매개체 합성을 줄이는 쪽이라 이미 나온 매개체에 대해서는 할 일이 적다. 에피네프린은 매개체와 상관없이 표적 기관 쪽에서 알파 작용으로 혈관을 조이고, 베타 작용으로 기관지를 열고, 세정맥 누출을 줄인다 <sup>[1 353장 p.2728]</sup>. 매개체의 「종류」가 아닌 「결과」를 뒤집는 약이라서 첫 약이 된다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "아나필락시스 — 약마다 닿는 범위",
+    "columns": [
+     "약",
+     "혈관 확장·누출(저혈압)",
+     "후두부종·기관지 수축",
+     "두드러기·가려움",
+     "자리"
+    ],
+    "rows": [
+     [
+      "에피네프린 근육주사",
+      "알파 작용 혈관 수축·세정맥 누출 감소 <sup>[1 353장 p.2728]</sup>",
+      "베타 작용 기관지 이완 <sup>[1 353장 p.2728]</sup>",
+      "예",
+      "첫 치료"
+     ],
+     [
+      "항히스타민제",
+      "아니오(히스타민 외 매개체는 그대로)",
+      "아니오",
+      "예 <sup>[1 353장 p.2728]</sup>",
+      "안정 뒤 보조"
+     ],
+     [
+      "글루코코르티코이드",
+      "아니오(발현 느림)",
+      "아니오",
+      "일부",
+      "안정 뒤 보조 <sup>[1 353장 p.2728]</sup>"
+     ],
+     [
+      "흡입 베타작용제",
+      "아니오",
+      "하기도만",
+      "아니오",
+      "보조 <sup>[1 353장 p.2728]</sup>"
+     ],
+     [
+      "정맥 수액·승압제",
+      "예",
+      "아니오",
+      "아니오",
+      "난치성 저혈압에 추가 <sup>[1 353장 p.2728]</sup>"
+     ]
+    ],
+    "note": "매개체가 여럿(히스타민·류코트리엔·PGD2·PAF)이라 한 매개체만 막는 약은 쇼크를 되돌리지 못한다 <sup>[1 353장 p.2727]</sup>. 「발현 느림」은 약리 일반 서술로 해리슨 353장이 직접 쓰지는 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "정맥 스테로이드 vs 근육주사 에피네프린 — 「알레르기 반응이면 스테로이드」",
+    "point": "해리슨은 첫 선택을 에피네프린 근육주사로 두고, 글루코코르티코이드·항히스타민제·기관지확장제는 혈역학이 안정된 뒤 두드러기·혈관부종·기관지 연축에 쓰는 보조로 둔다 <sup>[1 353장 p.2728]</sup>. 저혈압과 천명이 있는 지금 필요한 것은 혈관을 조이고 기관지를 여는 약이다.",
+    "exception": "혈압·기도가 에피네프린으로 안정된 뒤에는 남은 두드러기·혈관부종에 보조 약을 더한다 <sup>[1 353장 p.2728]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "항히스타민제 vs 에피네프린 — 「히스타민이 원인이니 항히스타민」",
+    "point": "아나필락시스의 매개체는 히스타민만이 아니다 — 류코트리엔·PGD2 가 기관지 수축과 혈관 누출을, PAF 가 중증도를 좌우한다 <sup>[1 353장 p.2727]</sup>. 한 수용체만 막는 약은 쇼크와 기도 폐쇄를 되돌리지 못한다.",
+    "exception": "피부 증상만 있는 알레르기 반응(아나필락시스 아님)에서는 항히스타민제가 주 치료다.",
+    "cites": ""
+   },
+   {
+    "contrast": "앉히기 vs 눕히기 — 「숨이 차니 앉혀서」",
+    "point": "선 자세·앉은 자세는 정맥 환류가 모자라 빈 심실 증후군을 부를 수 있고, 에피네프린의 심박 증가가 이를 더 부추길 수 있어 에피네프린 전에 눕힌다 <sup>[1 353장 p.2728]</sup>.",
+    "exception": "눕히는 자세의 세부 변형(호흡곤란이 심할 때·임신부)은 해리슨 353장이 다루지 않는다 — 원문 미대조.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "천식·심혈관 질환이 있으면 더 빨리 나빠진다 <sup>[1 353장 p.2727]</sup>.",
+   "벌류 쏘임으로 뚜렷한 저혈압이 온 경우 비만세포증을 생각해 안정 뒤 기저 트립타제를 잰다 <sup>[1 353장 p.2727]</sup> <sup>[1 353장 p.2728]</sup>.",
+   "벌류 아나필락시스가 확인된 환자는 나이와 관계없이 평가 후 벌독 면역요법(대개 3–5년)을 시작한다 <sup>[1 353장 p.2728]</sup>.",
+   "근육주사 부위(대퇴 앞가쪽)와 피하 주사보다 근육주사가 나은 이유는 해리슨 353장에 없다 — 원문 미대조."
+  ],
+  "criteria": [
+   {
+    "id": "ana-definition",
+    "name": "정의와 진단",
+    "kind": "진단 기준",
+    "population": "유발 물질 노출 뒤 급성 전신 반응",
+    "statement": "아나필락시스는 하나 이상의 장기계를 침범하는 생명 위협 전신 알레르기 반응으로 대개 유발 물질 노출 뒤 수 초~수 분 안에 생기며, 진단은 주로 그 시간 관계를 보여 주는 병력에 근거한다 [[harrison-21: 353장 p.2727]] [[harrison-21: 353장 p.2728]]",
+    "exceptions": "알파갈 감작 환자의 육류 아나필락시스는 늦게 온다 [[harrison-21: 353장 p.2728]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ana-epinephrine",
+    "name": "첫 치료",
+    "kind": "치료 기준",
+    "population": "아나필락시스",
+    "statement": "첫 선택 치료는 에피네프린 1 mg/mL(1:1000) 0.3–0.5 mL 근육주사이고, 심한 반응이면 5–20분 간격으로 반복한다. 증상 20분 안에 에피네프린을 쓰지 못한 것은 나쁜 결과의 위험인자다 [[harrison-21: 353장 p.2728]]",
+    "exceptions": "베타차단제가 에피네프린 반응을 약하게 할 수 있다 — 응급 에피네프린이 필요할 고위험 환자는 다른 혈압약을 고려한다 [[harrison-21: 353장 p.2728]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ana-supportive",
+    "name": "자세·수액·기도",
+    "kind": "치료 기준",
+    "population": "아나필락시스",
+    "statement": "선 자세·앉은 자세는 정맥 환류가 모자란 「빈 심실 증후군」을 부를 수 있어 에피네프린 전에 눕힌다. 난치성 저혈압이면 정맥 수액·승압제, 진행하는 저산소증이면 기관 삽관 또는 기관절개가 필수다 [[harrison-21: 353장 p.2728]]",
+    "exceptions": "산소 단독 또는 분무 알부테롤이 도움이 될 수 있으나 에피네프린을 대신하지 않는다 [[harrison-21: 353장 p.2728]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ana-ancillary",
+    "name": "보조 약의 자리",
+    "kind": "치료 기준",
+    "population": "아나필락시스",
+    "statement": "항히스타민제·글루코코르티코이드·기관지확장제는 환자의 혈역학이 안정된 뒤 두드러기·혈관부종·기관지 연축을 치료하는 보조 약이다 [[harrison-21: 353장 p.2728]]",
+    "exceptions": "10–20 % 는 이상성으로 첫 증상이 가라앉고 1시간 이상 지나 다시 온다 — 관찰이 필요하다 [[harrison-21: 353장 p.2727]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 353: Anaphylaxis",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 353장 Anaphylaxis, 인쇄쪽 2727–2728",
+    "checked": "드라이브 장 문서로 본문 대조. p.2727 정의(수 초~수 분, 약·음식·벌류), 단상 80–90 %·이상성 10–20 %, 저혈압·저산소증 위험, 후두부종·기관지 폐쇄, 피부 증상 90 % 초과, 매개체(히스타민·트립타제·류코트리엔·PGD2·PAF), 천식·심혈관 질환 위험, 벌류 아나필락시스와 비만세포증. p.2728 진단(병력, 트립타제 60–90분 정점·5시간까지), 치료(에피네프린 1 mg/mL 0.3–0.5 mL 근육주사·5–20분 반복, 20분 내 미투여 나쁜 결과, 누운 자세·빈 심실 증후군, 수액·승압제, 알파·베타 작용, 베타차단제, 산소·알부테롤, 삽관, 보조 약은 혈역학 안정 뒤), 예방(자가주사 교육, 벌독 면역요법 3–5년)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "아나필락시스의 첫 치료와 용량·경로는?",
+    "a": "에피네프린 1 mg/mL(1:1000) 0.3–0.5 mL 근육주사, 심하면 5–20분 간격 반복."
+   },
+   {
+    "q": "에피네프린 투여 전 자세와 그 이유는?",
+    "a": "눕힌다. 선·앉은 자세는 빈 심실 증후군(정맥 환류 부족)을 부를 수 있다."
+   },
+   {
+    "q": "항히스타민제·글루코코르티코이드는 언제 쓰나?",
+    "a": "혈역학이 안정된 뒤 두드러기·혈관부종·기관지 연축의 보조로."
+   },
+   {
+    "q": "이상성 아나필락시스의 빈도는?",
+    "a": "10–20 %, 첫 증상이 가라앉고 1시간 이상 지나 다시 온다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.allergy.anaphylaxis.im-epinephrine-first#v1",
+    "context": "같은 벌 쏘임, 기도·순환 침범 단서를 모두 뺀 변형",
+    "stem": "25세 여자가 30분 전 팔을 벌에 쏘인 뒤 쏘인 자리 주변과 같은 쪽 팔에 가려운 두드러기가 생겨 왔다. 입술·혀 부기, 목이 조이는 느낌, 쉰 목소리, 숨참, 어지러움, 복통은 없다. 혈압 124/78 mmHg, 맥박 84회/분, 호흡 14회/분, 산소포화도 99 %. 호흡음은 깨끗하고 천명은 없다. 두드러기는 팔에만 있고 증상은 지난 20분간 번지지 않았다. 가장 적절한 처치는?",
+    "options": [
+     "경구 항히스타민제 투여 후 관찰",
+     "대퇴 앞가쪽 근육주사 에피네프린",
+     "정맥 에피네프린 지속 주입",
+     "기관 삽관",
+     "고용량 정맥 글루코코르티코이드 단독"
+    ],
+    "answer": 1,
+    "explanation": "같은 벌 쏘임이지만 원래 문항의 결정 단서인 기도(천명·호흡곤란)와 순환(저혈압) 침범이 없다. 피부에 국한되고 번지지 않는 두드러기는 아나필락시스가 아니므로 항히스타민제로 가려움·두드러기를 다루고 진행 여부를 관찰한다. 기도·순환 증상이 새로 생기면 그 순간 근육주사 에피네프린으로 넘어간다.",
+    "of": "kmle-2026-0096",
+    "changed": "천명·호흡곤란·혈압 80/50 → 호흡음 정상·혈압 124/78·산소포화도 99 %, 20분 전 쏘인 자리 주변과 팔에만 두드러기 ⇒ 아나필락시스가 아니라 피부에 국한된 반응이 되어 정답이 근육주사 에피네프린에서 경구 항히스타민제로",
+    "flip": true
+   },
+   {
+    "id": "cn.allergy.anaphylaxis.im-epinephrine-first#v2",
+    "context": "겉모습만 바꾼 변형 — 노출 직후 순환·기도 침범이라는 결정 단서는 같다",
+    "stem": "58세 남자가 폐렴으로 입원해 세프트리악손 정맥 주사를 시작하고 5분 뒤 어지럽고 목소리가 쉬며 목이 조인다고 한다. 혈압 76/44 mmHg, 맥박 132회/분, 산소포화도 91 %. 흡기 시 그렁거리는 소리가 들리고 얼굴과 가슴이 붉게 달아올라 있으며 배가 쥐어짜듯 아프다고 한다. 항생제 주입은 이미 중단했다. 다음으로 가장 먼저 할 것은?",
+    "options": [
+     "정맥 디펜히드라민",
+     "정맥 메틸프레드니솔론",
+     "환자를 눕히고 에피네프린 근육주사",
+     "분무 알부테롤 단독",
+     "혈청 트립타제 측정 후 결과에 따라 치료"
+    ],
+    "answer": 3,
+    "explanation": "나이·성별·유발 물질(벌 대신 항생제)·증상 제시 순서가 바뀌었지만 결정 단서는 같다 — 노출 수 분 안에 저혈압·후두 침범(쉰 목소리·그렁거림)·피부·위장관 증상이 함께 왔다. 아나필락시스의 첫 치료는 눕힌 뒤 에피네프린 근육주사이고 필요하면 5–20분 간격으로 반복하며 수액을 더한다. 항히스타민제·스테로이드·알부테롤은 안정 뒤 보조이며, 트립타제는 진단 기록에 쓸 뿐 치료를 기다리게 하지 않는다.",
+    "of": "kmle-2026-0096",
+    "changed": "22세 여자·벌 쏘임·두드러기 먼저 → 58세 남자·벌 쏘임 대신 세프트리악손 정맥 주사 5분 뒤·저혈압과 쉰 목소리 먼저, 피부 홍조는 뒤에 ⇒ 답은 그대로 근육주사 에피네프린",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "노출 뒤 급성 전신 반응 — 첫 몇 분",
+  "geo": {
+   "title": "노출 뒤 급성 전신 반응 — 첫 몇 분",
+   "w": 482,
+   "h": 831.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "벌 쏘임·약·음식 노출 뒤 수",
+      "분 안의 두드러기·혈관부종"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "sys",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "기도(천명·쉰목소리·",
+      "후두부종)·순환(저혈압·",
+      "실신)·심한 위장관 증상이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "혈압·산소포화도·호흡음을",
+      "지금 잰다 — 피부만 보고",
+      "판단하지 않는다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 310.0
+    },
+    {
+     "id": "skin",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "피부에 국한 → 항히스타민제,",
+      "진행 여부 관찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "epi",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "눕히고 에피네프린 1 mg/mL",
+      "0.3–0.5 mL 근육주사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 457.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "5–20분 뒤 저혈압·기도",
+      "증상이 남는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 587.0
+    },
+    {
+     "id": "repeat",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "에피네프린 반복 · 정맥 수액",
+      "· 승압제 · 진행",
+      "저산소증이면 삽관"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 717.0
+    },
+    {
+     "id": "stable",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "안정 → 항히스타민제·",
+      "글루코코르티코이드·",
+      "기관지확장제 보조, 이상성",
+      "반응 관찰, 자가주사기 교육"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 717.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sys",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sys",
+     "to": "epi",
+     "points": [
+      [
+       178.0,
+       244.0
+      ],
+      [
+       178.0,
+       254.0
+      ],
+      [
+       452,
+       254.0
+      ],
+      [
+       452,
+       411.0
+      ],
+      [
+       146.7,
+       411.0
+      ],
+      [
+       146.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 137.2,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "sys",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       244.0
+      ],
+      [
+       227.0,
+       260.0
+      ],
+      [
+       227.0,
+       260.0
+      ],
+      [
+       227.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "sys",
+     "to": "skin",
+     "points": [
+      [
+       276.0,
+       244.0
+      ],
+      [
+       276.0,
+       266.0
+      ],
+      [
+       466,
+       266.0
+      ],
+      [
+       466,
+       411.0
+      ],
+      [
+       372.7,
+       411.0
+      ],
+      [
+       372.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "epi",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       81.3,
+       401.0
+      ],
+      [
+       81.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "침범 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 53.5,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "skin",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       307.3,
+       407.0
+      ],
+      [
+       307.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 279.5,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "epi",
+     "to": "resp",
+     "points": [
+      [
+       114.0,
+       521.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       227.0,
+       531.0
+      ],
+      [
+       227.0,
+       587.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "repeat",
+     "points": [
+      [
+       194.3,
+       651.0
+      ],
+      [
+       194.3,
+       661.0
+      ],
+      [
+       114.0,
+       661.0
+      ],
+      [
+       114.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "남음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "stable",
+     "points": [
+      [
+       259.7,
+       651.0
+      ],
+      [
+       259.7,
+       667.0
+      ],
+      [
+       340.0,
+       667.0
+      ],
+      [
+       340.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "호전"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 697.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "벌 쏘임·약·음식 노출 뒤 수 분 안의 두드러기·혈관부종",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "기도(천명·쉰목소리·후두부종)·순환(저혈압·실신)·심한 위장관 증상이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "sys",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "기도(천명·쉰목소리·후두부종)·순환(저혈압·실신)·심한 위장관 증상이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "혈압·산소포화도·호흡음을 지금 잰다 — 피부만 보고 판단하지 않는다"
+     },
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "눕히고 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "피부에 국한 → 항히스타민제, 진행 여부 관찰"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "혈압·산소포화도·호흡음을 지금 잰다 — 피부만 보고 판단하지 않는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "침범 있음",
+      "to": 4,
+      "toText": "눕히고 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사"
+     },
+     {
+      "label": "없음 확인",
+      "to": 5,
+      "toText": "피부에 국한 → 항히스타민제, 진행 여부 관찰"
+     }
+    ]
+   },
+   {
+    "id": "epi",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "눕히고 에피네프린 1 mg/mL 0.3–0.5 mL 근육주사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "5–20분 뒤 저혈압·기도 증상이 남는가?"
+     }
+    ]
+   },
+   {
+    "id": "skin",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "피부에 국한 → 항히스타민제, 진행 여부 관찰",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "resp",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "5–20분 뒤 저혈압·기도 증상이 남는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "남음",
+      "to": 7,
+      "toText": "에피네프린 반복 · 정맥 수액 · 승압제 · 진행 저산소증이면 삽관"
+     },
+     {
+      "label": "호전",
+      "to": 8,
+      "toText": "안정 → 항히스타민제·글루코코르티코이드·기관지확장제 보조, 이상성 반응 관찰, 자가주사기 교육"
+     }
+    ]
+   },
+   {
+    "id": "repeat",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "에피네프린 반복 · 정맥 수액 · 승압제 · 진행 저산소증이면 삽관",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "stable",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "안정 → 항히스타민제·글루코코르티코이드·기관지확장제 보조, 이상성 반응 관찰, 자가주사기 교육",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0096"
+  ],
+  "hasErrors": false
+ },
+ "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest": {
+  "id": "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest",
+  "title": "X연관 무감마글로불린혈증 — B세포 성숙 정지에서 감염 양상과 감별까지",
+  "objective": "BTK 결함이 pre-B 단계에서 B세포 성숙을 멈추는 기전으로 X연관 무감마글로불린혈증의 발병 시기·피막 세균 감염·B세포 부재를 설명하고, 면역글로불린 양상과 T세포·호중구·보체 소견으로 Hyper-IgM·SCID·CGD·말단 보체결핍과 가른다",
+  "objectiveKind": "기전",
+  "condition": "X연관 무감마글로불린혈증(Bruton 병)",
+  "topic": "Allergy",
+  "seeAlso": [
+   "Immunology",
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "c2fa911257513c19",
+  "summary": [
+   "B세포는 골수에서 pre-B 세포 → 미성숙 B → 성숙 B 로 자라며, pre-B 세포 수용체 신호가 다음 단계로 넘어가는 문이다. BTK 는 그 신호를 전하는 키나아제라, 결함이 있으면 pre-B 에서 B 로 넘어가지 못한다(새는 차단) [[harrison-21: 351장 p.2716]].",
+   "결과는 말초 B세포 거의 부재(<1%)와 모든 클래스의 면역글로불린 저하다. 림프절 배중심·편도 같은 B세포 구역이 자라지 않는다. T세포·호중구·보체는 정상이다.",
+   "항체가 없으면 옵소닌화가 안 되어 피막 세균(폐렴구균·헤모필루스·모락셀라)의 부비동·폐 감염이 반복되고, 장 편모충·장바이러스 감염도 생긴다 [[harrison-21: 351장 p.2716]].",
+   "태반을 건넌 모체 IgG 가 몇 달 동안 지켜 주므로 감염은 대개 6개월 무렵부터 시작된다 [[harrison-21: 351장 p.2716]]. X연관이라 남아다.",
+   "치료는 평생 면역글로불린 대체(IV 또는 피하) [[harrison-21: 351장 p.2716–2717]]. 확진은 BTK 유전자 또는 단핵구 안 BTK 단백 소실 [[harrison-21: 351장 p.2716]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>X연관 무감마글로불린혈증(XLA, Bruton 병)은 X 염색체의 <strong>BTK</strong> 유전자 결함으로 B세포가 성숙하지 못해 항체가 거의 만들어지지 않는 원발 면역결핍이다. 무감마글로불린혈증의 85% 가 BTK 변이다 <sup>[1 351장 p.2716]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 B세포는 골수에서 중쇄를 재배열한 pre-B 세포가 대리 경쇄와 함께 <strong>pre-B 세포 수용체</strong>를 표면에 내고, 그 신호를 받아야 경쇄 재배열과 증식을 거쳐 미성숙·성숙 B세포로 넘어간다. BTK 는 이 수용체 신호를 전하는 키나아제다. BTK 가 없으면 pre-B → B 단계에서 (새면서) 멈춘다 <sup>[1 351장 p.2716]</sup>. 나머지 약 10% 는 같은 수용체의 다른 부품(μ 중쇄·λ5·Igα/β·BLNK 등) 결함이다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>성숙 B세포가 없음 → 말초 CD19+ B세포 &lt;1%, <strong>IgG·IgA·IgM 모두</strong> 저하.</li>\n<li>B세포 구역(배중심·여포)이 자라지 않음 → 편도가 작거나 없고 림프절이 거의 만져지지 않는다(해리슨 351장에서 이 서술은 확인하지 못했다 — 검토 항목).</li>\n<li>옵소닌 항체가 없음 → 폐렴구균·헤모필루스·모락셀라의 중이염·부비동염·폐렴이 반복되고, 치료하지 않으면 기관지확장증으로 간다. 장 편모충·장바이러스(수막뇌염) 감염도 생긴다 <sup>[1 351장 p.2716]</sup>.</li>\n<li>모체 IgG 가 소진되는 생후 6개월 무렵부터 감염 시작 <sup>[1 351장 p.2716]</sup>.</li>\n<li>T세포·호중구·보체는 정상 → 세포 내 병원체·진균 기회감염은 두드러지지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>SCID(ADA 결핍 등)</strong>: T·B·NK 모두 감소, 기회감염·성장부진, ADA 결핍은 뼈 이형성 동반 가능 <sup>[1 351장 p.2713]</sup>.</li>\n<li><strong>Hyper-IgM</strong>: B세포 수 정상, IgM 정상/상승, IgG·IgA 매우 낮음 <sup>[1 351장 p.2717]</sup>.</li>\n<li><strong>CVID</strong>: B세포는 있으나 항체 생산 저하, 대개 더 늦게 발병.</li>\n<li><strong>CGD·말단 보체결핍</strong>: 면역글로불린 정상 — 호중구 기능 검사(DHR)·CH50 으로.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>면역글로불린 정량 → 림프구 아형(CD19·CD3·CD56) → BTK 단백(단핵구 면역형광) 또는 BTK 유전자 <sup>[1 351장 p.2716]</sup>. 백신 항체 반응 측정은 더 미묘한 결핍에서 쓴다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li>평생 면역글로불린 대체(IV 또는 피하 — 둘 다 효과적이라 환자 선호로) <sup>[1 351장 p.2716–2717]</sup>.</li>\n<li>급성 감염은 적극적으로 항생제. 만성 폐질환이 생겼으면 흉부 물리요법과 항생제 병행.</li>\n<li>재평가: 감염 빈도, 폐 기능·영상(기관지확장증), 최저 IgG. 생백신은 피한다(이 정리본에서는 원문 미대조 — 검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>BTK 변이라도 B세포가 낮게 남는 가벼운 형이 있다 — CVID 로 부르지 않는다 <sup>[1 351장 p.2716]</sup>.</li>\n<li>면역글로불린 제제에는 IgA 가 조금 들어 있어, 잔존 항체 생산이 있으면서 IgA 가 완전 결핍인 환자는 항 IgA 항체로 과민반응이 날 수 있다 — XLA 보다는 IgA 결핍·CVID 의 문제다 <sup>[1 351장 p.2717]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 351장 p.2713–2717)</li>\n</ul>"
+   },
+   {
+    "title": "「기전」 문항의 보기 읽기",
+    "deep": true,
+    "html": "<p>보기 다섯은 모두 면역계의 서로 다른 칸(B세포 발달·클래스 전환·림프구 전체·호중구·보체)에 하나씩 대응한다. 제시된 검사(B세포·Ig 세 종류·호중구·CH50·T세포 소견)가 칸을 하나씩 지우도록 짜여 있다 — 정상 소견이 오답을 지우는 정보다.</p>"
+   }
+  ],
+  "tables": [],
+  "pitfalls": [
+   {
+    "contrast": "XLA vs SCID(ADA 결핍 등) — 둘 다 영아의 반복 감염·림프 조직 빈약",
+    "point": "SCID 는 T세포 발달이 멈춰 T·B(ADA 결핍은 NK 까지) 모두 없다 <sup>[1 351장 p.2713]</sup>. T세포가 없으면 세포 매개 면역이 빠져 주폐포자충·지속 아구창·바이러스 같은 기회감염과 성장부진이 앞에 선다. XLA 는 B세포만 없어 감염이 피막 세균에 몰린다 — 호중구·보체·T세포가 정상이면 결함은 B세포 쪽이다.",
+    "exception": "SCID 는 모체 T세포 생착으로 T세포 수가 가려질 수 있다 — 기회감염이 보이면 T세포 기능·아형을 더 본다 <sup>[1 351장 p.2713]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "XLA vs Hyper-IgM(CD40L 결핍)",
+    "point": "Hyper-IgM 은 B세포 수는 정상이고 클래스 전환만 안 된다 — IgG·IgA 는 낮고 IgM 은 정상이거나 높다 <sup>[1 351장 p.2717]</sup>. CD40L 결핍은 T세포 도움도 빠져 주폐포자충 같은 기회감염이 생길 수 있다. XLA 는 IgM 까지 모두 낮고 B세포 자체가 없다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "B세포 결핍 vs 호중구(CGD)·말단 보체결핍",
+    "point": "CGD 는 면역글로불린·B세포 정상에 카탈라아제 양성균·아스페르길루스의 농양, 말단 보체(C5–C9) 결핍은 CH50 저하에 나이세리아 반복 감염이다. 면역글로불린이 모두 낮으면 이 둘이 먼저가 아니다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "6개월 전의 면역글로불린 수치는 모체 IgG 가 섞여 해석이 어렵다 — 발병 시기 자체가 단서다.",
+   "SCID 에서는 모체 T세포가 남아 T세포 수를 정상처럼 보이게 할 수 있다 — 기회감염이 있으면 T세포 수만 믿지 않는다.",
+   "BTK 변이 일부는 B세포가 낮게 남는다 — B세포가 「조금 있다」고 XLA 를 배제하지 않는다."
+  ],
+  "criteria": [
+   {
+    "id": "xla-dx",
+    "name": "무감마글로불린혈증 진단 단서",
+    "kind": "진단 기준",
+    "population": "반복 세균 감염 영아·소아",
+    "statement": "말초 B세포 <1%(정상 대비)와 모든 클래스 면역글로불린 저하. 85% 가 X 염색체의 BTK 변이, 약 10% 가 pre-B 세포 수용체 구성 요소의 상염색체 열성 결함 [[harrison-21: 351장 p.2716]]",
+    "exceptions": "일부 BTK 변이는 B세포가 낮게 남는 가벼운 저감마글로불린혈증으로 나타난다 — CVID 와 혼동하지 않는다 [[harrison-21: 351장 p.2716]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "xla-tx",
+    "name": "치료",
+    "kind": "치료 기준",
+    "population": "무감마글로불린혈증",
+    "statement": "평생 면역글로불린 대체(IV 또는 피하, 환자 선호로 선택). 만성 폐질환이 있으면 흉부 물리요법과 항생제를 더한다 [[harrison-21: 351장 p.2716–2717]]",
+    "exceptions": "용량·간격·목표 최저 IgG 는 이 정리본에서 대조하지 않았다(검토 항목)",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 351: Primary Immune Deficiency Diseases",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 351장 p.2709–2718",
+    "checked": "본문 대조(드라이브 351장 문서) — p.2713: ADA 결핍이 SCID 의 10–20%, T·B·NK 모두 부재, 모체 T세포가 림프구 감소를 가릴 수 있음 · p.2716: B세포 결핍이 PID 의 60–70%, 폐렴구균·헤모필루스·모락셀라의 부비동·폐 감염, 지아르디아·장바이러스, 모체 Ig 로 6개월 전 감염 드묾, 무감마글로불린혈증 B세포 <1%·85% BTK(X 연관)·pre-B→B 단계의 새는 차단·단핵구 BTK 면역형광 진단, 치료는 Ig 대체 · p.2717: Hyper-IgM 은 클래스 전환 결함으로 IgG·IgA 매우 낮고 IgM 정상/상승, CD40L(X 연관)·CD40 결핍은 B·T 모두 침범, Ig 대체는 평생. 편도·림프절 부재 서술은 이 장에서 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "XLA 에서 감염이 생후 6개월 무렵에야 시작되는 이유는?",
+    "a": "임신 후반에 태반을 건넌 모체 IgG 가 몇 달 동안 보호하다가 그 무렵 소진되기 때문이다."
+   },
+   {
+    "q": "XLA 와 ADA 결핍 SCID 를 가르는 가장 직접적인 소견은?",
+    "a": "T세포(와 NK). XLA 는 B세포만 없고 T세포가 정상이라 피막 세균 감염에 몰리고, SCID 는 T세포가 없어 기회감염·성장부진이 생긴다."
+   },
+   {
+    "q": "B세포 수가 정상인데 IgG·IgA 만 낮고 IgM 이 높다. 결함 자리는?",
+    "a": "클래스 전환(CD40L–CD40 또는 AID) — Hyper-IgM 증후군."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — T세포까지 없는 영아",
+    "stem": "A 4-month-old boy is evaluated for failure to thrive, chronic diarrhea, and persistent oral thrush since 2 months of age. He is now tachypneic and hypoxemic, and bronchoalveolar lavage shows Pneumocystis jirovecii. Chest x-ray shows diffuse interstitial infiltrates, no thymic shadow, and flaring of the costochondral junctions. Laboratory studies show an absolute lymphocyte count of 300/mm3; CD3+ T cells, CD19+ B cells, and CD56+ NK cells are all markedly reduced. Serum IgG, IgA, and IgM are low. The neutrophil count and total complement activity are normal. Which of the following best describes the mechanism underlying this infant's disease?",
+    "options": [
+     "Accumulation of toxic purine metabolites that kills lymphocyte precursors",
+     "Arrest of B-cell maturation at the pre-B stage from a defective tyrosine kinase",
+     "Defective CD40 ligand preventing immunoglobulin class switching",
+     "Absent NADPH oxidase activity in phagocytes",
+     "Deficiency of the terminal complement components C5 through C9"
+    ],
+    "answer": 1,
+    "explanation": "The changed clue is the loss of T and NK cells with opportunistic infection (Pneumocystis, thrush), failure to thrive, and skeletal changes at the costochondral junctions. Adenosine deaminase deficiency lets adenosine and deoxyadenosine metabolites accumulate and kill lymphocyte progenitors, removing T, B, and NK cells, and can cause bone dysplasia [[harrison-21: 351장 p.2713]]. A BTK defect removes only B cells, so T-cell-dependent opportunistic infections would not be expected. CD40L deficiency preserves B-cell numbers, and NADPH oxidase or terminal complement defects leave lymphocytes and immunoglobulins normal.",
+    "of": "usmle-2026-0043",
+    "changed": "T세포 정상·피막 세균 감염만 → CD3+ T세포·NK 세포 모두 감소, 주폐포자충 폐렴·지속 아구창·만성 설사·성장부진, 늑연골 접합부 이상 ⇒ 정답이 BTK 결함(pre-B 정지)에서 ADA 결핍에 의한 림프구 발달 전반 정지로",
+    "flip": true
+   },
+   {
+    "id": "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 외래 면역 평가로 온 걸음마기 남아",
+    "stem": "A 14-month-old boy is referred for immunologic evaluation after his third serious bacterial infection. He was healthy until 7 months of age and has since had Haemophilus influenzae pneumonia and Streptococcus pneumoniae bacteremia, each responding to antibiotics. His maternal uncle died of recurrent pneumonia in childhood. Growth is normal and there has been no thrush or diarrhea. Serum IgG, IgA, and IgM are all markedly decreased. Flow cytometry shows CD19+ B cells below 1% with normal CD3+, CD4+, and CD8+ T-cell counts. Neutrophil count and CH50 are normal. Which of the following best describes the mechanism of this child's immunodeficiency?",
+    "options": [
+     "Failure of lymphocyte precursors due to purine metabolite toxicity",
+     "Absent CD40 ligand on activated helper T cells",
+     "Block in B-cell development at the pre-B stage due to a defective kinase",
+     "Defective phagocyte respiratory burst",
+     "Impaired assembly of the membrane attack complex"
+    ],
+    "answer": 3,
+    "explanation": "The deciding clues are unchanged: a boy with an affected maternal uncle (X-linked pattern), onset after maternal IgG waned, infections limited to encapsulated bacteria, all immunoglobulin classes low, B cells below 1%, and normal T cells. This is X-linked agammaglobulinemia, in which defective BTK blocks the pre-B to B transition [[harrison-21: 351장 p.2716]]. Normal T cells and no opportunistic infections argue against SCID; low IgM argues against CD40L deficiency; normal neutrophil and complement studies argue against CGD and terminal complement deficiency.",
+    "of": "usmle-2026-0043",
+    "changed": "나이(14개월)·첫 감염(헤모필루스 폐렴 뒤 폐렴구균 균혈증)·내원 경위(외래 면역 평가)·제시 순서를 바꾸고, 남아·6개월 이후 발병·피막 세균·전 클래스 Ig 저하·B세포 부재·T세포 정상은 유지 ⇒ 답은 그대로 BTK 결함",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "영아 반복 세균 감염 — 결함이 어느 칸에 있나",
+  "geo": {
+   "title": "영아 반복 세균 감염 — 결함이 어느 칸에 있나",
+   "w": 482,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "생후 6개월 무렵부터",
+      "반복되는 피막 세균",
+      "감염(중이염·부비동염·폐렴)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "igs",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈청 IgG·IgA·IgM 이",
+      "어떤가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "igdo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "면역글로불린 정량 · 호중구",
+      "수 · CH50 을 함께 잰다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 293.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "Ig 정상 — 호중구 기능(CGD)",
+      "·보체(CH50) 쪽을 본다(이",
+      "도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 440.0
+    },
+    {
+     "id": "higm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "IgG·IgA 저하 + IgM 정상/",
+      "상승 — Hyper-IgM(CD40L",
+      "등 클래스 전환 결함)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 293.0
+    },
+    {
+     "id": "bcell",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "말초 CD19+ B세포가 거의",
+      "없는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 440.0
+    },
+    {
+     "id": "cvid",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "B세포는 있는데 Ig 저하 —",
+      "CVID 등(이 도식 범위 밖,",
+      "대개 더 늦게 발병)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 587.0
+    },
+    {
+     "id": "tcell",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "T·NK 세포와 기회감염은?",
+      "주폐포자충·지속 아구창·",
+      "성장부진"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 587.0
+    },
+    {
+     "id": "xla",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "T세포 정상·피막 세균만 —",
+      "XLA(BTK 결함, pre-B 단계",
+      "정지) → 평생 면역글로불린",
+      "대체"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 734.0
+    },
+    {
+     "id": "scid",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "T·B(·NK) 모두 감소 +",
+      "기회감염 — SCID(ADA 결핍",
+      "등) → 격리·조혈모세포이식"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 734.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "igs",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "igs",
+     "to": "igdo",
+     "points": [
+      [
+       168.2,
+       227.0
+      ],
+      [
+       168.2,
+       237.0
+      ],
+      [
+       114.0,
+       237.0
+      ],
+      [
+       114.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미측정"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "igs",
+     "to": "bcell",
+     "points": [
+      [
+       207.4,
+       227.0
+      ],
+      [
+       207.4,
+       243.0
+      ],
+      [
+       452,
+       243.0
+      ],
+      [
+       452,
+       394.0
+      ],
+      [
+       146.7,
+       394.0
+      ],
+      [
+       146.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 저하"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "igs",
+     "to": "other",
+     "points": [
+      [
+       246.6,
+       227.0
+      ],
+      [
+       246.6,
+       249.0
+      ],
+      [
+       466,
+       249.0
+      ],
+      [
+       466,
+       394.0
+      ],
+      [
+       372.7,
+       394.0
+      ],
+      [
+       372.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 정상"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "igs",
+     "to": "higm",
+     "points": [
+      [
+       285.8,
+       227.0
+      ],
+      [
+       285.8,
+       255.0
+      ],
+      [
+       340.0,
+       255.0
+      ],
+      [
+       340.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "IgM 만 정상/상승"
+      ],
+      "w": 96.0,
+      "h": 17,
+      "x": 292.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "igdo",
+     "to": "bcell",
+     "points": [
+      [
+       81.3,
+       357.0
+      ],
+      [
+       81.3,
+       367.0
+      ],
+      [
+       81.3,
+       367.0
+      ],
+      [
+       81.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 저하로 나오면"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 29.6,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "igdo",
+     "to": "other",
+     "points": [
+      [
+       146.7,
+       357.0
+      ],
+      [
+       146.7,
+       373.0
+      ],
+      [
+       307.3,
+       373.0
+      ],
+      [
+       307.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상으로 나오면"
+      ],
+      "w": 88.7,
+      "h": 17,
+      "x": 263.0,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "bcell",
+     "to": "tcell",
+     "points": [
+      [
+       81.3,
+       504.0
+      ],
+      [
+       81.3,
+       514.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       114.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "거의 없음(<1–2%)"
+      ],
+      "w": 100.4,
+      "h": 17,
+      "x": 63.8,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "bcell",
+     "to": "cvid",
+     "points": [
+      [
+       146.7,
+       504.0
+      ],
+      [
+       146.7,
+       520.0
+      ],
+      [
+       340.0,
+       520.0
+      ],
+      [
+       340.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상 수"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 317.6,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "tcell",
+     "to": "xla",
+     "points": [
+      [
+       81.3,
+       668.0
+      ],
+      [
+       81.3,
+       678.0
+      ],
+      [
+       114.0,
+       678.0
+      ],
+      [
+       114.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "T 정상 · 기회감염 없음"
+      ],
+      "w": 123.7,
+      "h": 17,
+      "x": 52.1,
+      "y": 714.0
+     }
+    },
+    {
+     "from": "tcell",
+     "to": "scid",
+     "points": [
+      [
+       146.7,
+       668.0
+      ],
+      [
+       146.7,
+       684.0
+      ],
+      [
+       340.0,
+       684.0
+      ],
+      [
+       340.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "T·NK 감소 · 기회감염"
+      ],
+      "w": 117.1,
+      "h": 17,
+      "x": 281.4,
+      "y": 714.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "생후 6개월 무렵부터 반복되는 피막 세균 감염(중이염·부비동염·폐렴)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "혈청 IgG·IgA·IgM 이 어떤가?"
+     }
+    ]
+   },
+   {
+    "id": "igs",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈청 IgG·IgA·IgM 이 어떤가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "미측정",
+      "to": 3,
+      "toText": "면역글로불린 정량 · 호중구 수 · CH50 을 함께 잰다"
+     },
+     {
+      "label": "모두 정상",
+      "to": 6,
+      "toText": "Ig 정상 — 호중구 기능(CGD)·보체(CH50) 쪽을 본다(이 도식 범위 밖)"
+     },
+     {
+      "label": "IgM 만 정상/상승",
+      "to": 4,
+      "toText": "IgG·IgA 저하 + IgM 정상/상승 — Hyper-IgM(CD40L 등 클래스 전환 결함)"
+     },
+     {
+      "label": "모두 저하",
+      "to": 5,
+      "toText": "말초 CD19+ B세포가 거의 없는가?"
+     }
+    ]
+   },
+   {
+    "id": "igdo",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "면역글로불린 정량 · 호중구 수 · CH50 을 함께 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "모두 저하로 나오면",
+      "to": 5,
+      "toText": "말초 CD19+ B세포가 거의 없는가?"
+     },
+     {
+      "label": "정상으로 나오면",
+      "to": 6,
+      "toText": "Ig 정상 — 호중구 기능(CGD)·보체(CH50) 쪽을 본다(이 도식 범위 밖)"
+     }
+    ]
+   },
+   {
+    "id": "higm",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "IgG·IgA 저하 + IgM 정상/상승 — Hyper-IgM(CD40L 등 클래스 전환 결함)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bcell",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "말초 CD19+ B세포가 거의 없는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "거의 없음(<1–2%)",
+      "to": 7,
+      "toText": "T·NK 세포와 기회감염은? 주폐포자충·지속 아구창·성장부진"
+     },
+     {
+      "label": "정상 수",
+      "to": 8,
+      "toText": "B세포는 있는데 Ig 저하 — CVID 등(이 도식 범위 밖, 대개 더 늦게 발병)"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "Ig 정상 — 호중구 기능(CGD)·보체(CH50) 쪽을 본다(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tcell",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "T·NK 세포와 기회감염은? 주폐포자충·지속 아구창·성장부진",
+    "note": "",
+    "branches": [
+     {
+      "label": "T 정상 · 기회감염 없음",
+      "to": 9,
+      "toText": "T세포 정상·피막 세균만 — XLA(BTK 결함, pre-B 단계 정지) → 평생 면역글로불린 대체"
+     },
+     {
+      "label": "T·NK 감소 · 기회감염",
+      "to": 10,
+      "toText": "T·B(·NK) 모두 감소 + 기회감염 — SCID(ADA 결핍 등) → 격리·조혈모세포이식"
+     }
+    ]
+   },
+   {
+    "id": "cvid",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "B세포는 있는데 Ig 저하 — CVID 등(이 도식 범위 밖, 대개 더 늦게 발병)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "xla",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "T세포 정상·피막 세균만 — XLA(BTK 결함, pre-B 단계 정지) → 평생 면역글로불린 대체",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "scid",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "T·B(·NK) 모두 감소 + 기회감염 — SCID(ADA 결핍 등) → 격리·조혈모세포이식",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0043"
+  ],
+  "hasErrors": false
+ },
+ "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia": {
+  "id": "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia",
+  "title": "MCAD 결핍 — 공복 에너지 전환에서 저케톤성 저혈당까지",
+  "objective": "공복 때 간이 지방산 β산화로 아세틸-CoA 를 만들어 케톤 생성과 당신생을 동시에 떠받치는 원리를 설명하고, 공복·감염 뒤 저케톤성 저혈당·정상 젖산·유리지방산 상승·아실카르니틴 C8 상승을 근거로 중쇄 아실-CoA 탈수소효소(MCAD) 결핍을 글리코겐 분해·당신생·케톤 합성·카르니틴 운반 결핍과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "중쇄 아실-CoA 탈수소효소(MCAD) 결핍",
+  "topic": "Biochemistry",
+  "seeAlso": [
+   "Pediatrics",
+   "Endocrinology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "0a3635e6166b23ba",
+  "summary": [
+   "식후에는 포도당·글리코겐이 에너지를 대지만, 공복이 길어지면(영아는 수 시간~하루) 간 글리코겐이 바닥나고 지방조직에서 나온 유리지방산을 간이 β산화해 아세틸-CoA 를 만든다. 이 아세틸-CoA 가 케톤체의 원료이고, β산화가 만드는 NADH·ATP 와 아세틸-CoA 의 피루브산 카르복실화효소 활성화가 당신생을 돌린다 [[?genereviews-mcad]].",
+   "MCAD 는 사슬 길이 C12–C4 부근의 아실-CoA 를 산화하는 미토콘드리아 효소다. 결핍되면 긴 사슬은 중쇄까지 줄어든 뒤 멈추고, 쌓인 옥타노일-CoA 가 카르니틴에 붙어 옥타노일카르니틴(C8)으로 혈중에 나온다 — 진단 표지다 [[?genereviews-mcad]].",
+   "아세틸-CoA 가 모자라니 케톤이 만들어지지 않고 당신생도 약해져, 공복·구토·감염 때 「저혈당인데 케톤이 없다」(저케톤성 저혈당)가 된다. 젖산은 정상이고, 지방 분해는 일어나므로 유리지방산은 높다 [[?genereviews-mcad]].",
+   "첫 발작은 대개 3–24개월 사이에 장염·중이염 같은 가벼운 병으로 굶은 뒤 기면·구토·경련으로 오며, 간비대·경한 고암모니아혈증·간효소 상승(라이 증후군 유사)이 동반될 수 있다. 첫 발작에서 급사할 수 있다 [[?genereviews-mcad]].",
+   "케톤·젖산·유리지방산 세 가지로 공복 저혈당의 갈래를 좁힌다 — 케톤 적절 상승이면 글리코겐 분해 장애(간 인산화효소 등)·케톤성 저혈당, 젖산 상승이면 당신생 장애(포도당-6-인산분해효소), 유리지방산이 낮으면 고인슐린혈증, 케톤 낮고 유리지방산 높고 젖산 정상이면 지방산 산화·케톤 합성 장애이며 아실카르니틴·소변 유기산이 효소를 가린다 [[?genereviews-mcad]] [[?saudubray-iem]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>MCAD 결핍</strong>은 미토콘드리아 지방산 β산화에서 중쇄(대략 C12–C4) 아실-CoA 의 첫 탈수소 단계를 맡는 효소가 결핍된 상염색체 열성 질환이다(ACADM 유전자). 가장 흔한 지방산 산화 장애로, 공복 스트레스에서 <strong>저케톤성 저혈당</strong>과 대사위기를 일으킨다. 탠덤질량분석 신생아 선별로 대부분 증상 전에 발견된다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "정상 — 공복 때 간은 지방으로 포도당과 케톤을 만든다",
+    "deep": false,
+    "html": "<ul>\n<li><strong>식후</strong>: 포도당이 주 연료이고, 남는 포도당은 글리코겐·지방으로 저장된다.</li>\n<li><strong>짧은 공복</strong>: 간 글리코겐 분해가 혈당을 지킨다. 영유아는 글리코겐이 적어 이 단계가 짧다.</li>\n<li><strong>긴 공복</strong>: 인슐린이 떨어지고 글루카곤이 오르면 지방조직에서 유리지방산이 나온다. 긴사슬 지방산은 <strong>카르니틴 셔틀</strong>(CPT Ⅰ → 전위효소 → CPT Ⅱ)로 미토콘드리아에 들어가고, 중쇄 지방산은 카르니틴 없이 들어간다. 안에서 β산화가 두 탄소씩 잘라 <strong>아세틸-CoA</strong> 를 만든다.</li>\n<li>간의 아세틸-CoA 는 ① HMG-CoA 합성효소·분해효소를 거쳐 <strong>케톤체</strong>(아세토아세트산·β-하이드록시부티르산)가 되어 뇌의 대체 연료가 되고, ② 피루브산 카르복실화효소를 활성화하며 β산화가 낸 ATP·NADH 와 함께 <strong>당신생</strong>을 돌린다 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "병태생리 — β산화가 중쇄에서 멈추면",
+    "deep": false,
+    "html": "<p>MCAD 가 없으면 긴사슬 지방산은 긴사슬 효소들로 몇 번 잘려 중쇄가 되지만 그다음 단계로 가지 못한다. 결과는 세 갈래다.</p>\n<ol>\n<li><strong>아세틸-CoA 부족 → 케톤 생성 실패</strong>: 뇌가 쓸 대체 연료가 없다.</li>\n<li><strong>당신생 약화</strong>: 아세틸-CoA 의 피루브산 카르복실화효소 활성화와 β산화의 에너지 공급이 줄어 포도당도 만들지 못한다. 글리코겐이 바닥나는 순간 저혈당이 급격히 온다.</li>\n<li><strong>중쇄 대사물 축적</strong>: 옥타노일-CoA 등이 카르니틴에 붙어 <strong>C8 아실카르니틴</strong>으로 혈중에 나오고(진단 표지), 카르니틴이 소모되어 2차 카르니틴 결핍이 올 수 있다. 쌓인 중쇄 지방산과 에너지 부족이 간 기능 장애(고암모니아혈증·간효소 상승·지방간)와 뇌병증을 부른다 <sup>[1†]</sup>.</li>\n</ol>\n<p>평소 잘 먹을 때는 증상이 없다. 문제는 <strong>공복 시간이 길어질 때</strong>뿐이다 — 이것이 선별과 공복 회피만으로 예후가 크게 달라지는 이유다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>유발</strong>: 장염·중이염 같은 흔한 감염으로 먹지 못하거나 토한 뒤, 또는 긴 금식 뒤. 첫 발작은 대개 3–24개월 <sup>[1†]</sup>.</li>\n<li><strong>증상</strong>: 구토·기면 → 경련·혼수. 첫 발작에서 급사할 수 있어, 형제의 원인 불명 급사가 단서가 된다.</li>\n<li><strong>검사</strong>: 저혈당, <strong>케톤 음성 또는 미량</strong>(저혈당 정도에 비해 부적절), <strong>유리지방산 상승</strong>(지방 분해는 정상 작동), <strong>젖산 정상</strong>, 경한 고암모니아혈증·간효소 상승, 간비대.</li>\n<li><strong>아실카르니틴</strong>: C8 이 두드러지고 C6·C10:1 이 함께 오른다. 소변 유기산에서 헥사노일글리신·수베릴글리신과 디카르복실산 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 케톤·젖산·유리지방산으로 좁히기",
+    "deep": false,
+    "html": "<p>공복 저혈당은 <strong>어느 단계가 막혔나</strong>로 푼다(감별표·도식).</p>\n<ul>\n<li><strong>케톤이 잘 오른다</strong> → β산화·케톤 합성은 정상. 글리코겐 분해 장애(간 인산화효소·인산화효소 키나아제 결핍 — 당원병 Ⅵ·Ⅸ형), 특발성 케톤성 저혈당.</li>\n<li><strong>케톤이 낮고 유리지방산도 낮다</strong> → 지방 분해 자체가 눌렸다. 고인슐린혈증.</li>\n<li><strong>케톤이 낮고 유리지방산은 높고 젖산이 높다</strong> → 당신생 장애(포도당-6-인산분해효소 결핍, 당원병 Ⅰ형 — 고요산·고중성지방 동반).</li>\n<li><strong>케톤이 낮고 유리지방산은 높고 젖산이 정상</strong> → 지방산 산화 또는 케톤 합성 장애. 아실카르니틴으로 가린다: C8 상승이면 MCAD, 유리 카르니틴이 높고 긴사슬 아실카르니틴이 낮으면 CPT Ⅰ, C5-OH·소변 3-하이드록시-3-메틸글루타르산과 대사성 산증이면 HMG-CoA 분해효소 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>발작 중 검체(포도당 투여 전)</strong>: 혈당·케톤(β-하이드록시부티르산)·유리지방산·젖산·인슐린·암모니아·간효소. 포도당을 준 뒤에는 양상이 흐려진다.</li>\n<li><strong>혈장 아실카르니틴·유리 카르니틴</strong>: C8 우세 상승과 C8/C10 비 상승이 특징적이다. 발작 사이에는 약해질 수 있다 <sup>[1†]</sup>.</li>\n<li><strong>소변 유기산·아실글리신</strong>: 헥사노일글리신·수베릴글리신.</li>\n<li><strong>ACADM 유전자 검사</strong>: 확진. 북유럽계에서 흔한 c.985A&gt;G 변이 <sup>[1†]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>급성기</strong>: 즉시 포도당 정맥 투여(10 % 포도당)로 저혈당을 교정하고 인슐린 분비를 끌어내 지방 분해를 멈춘다. 저혈당이 교정된 뒤에도 뇌병증이 남을 수 있어 포도당 주입을 유지한다 <sup>[1†]</sup>.</li>\n<li><strong>장기</strong>: 공복 회피가 핵심 — 나이에 맞는 수유·식사 간격, 잠들기 전 탄수화물, 아플 때(구토·식이 거부) 조기 병원 방문과 포도당 정맥 투여 계획서. 중쇄 중성지방(MCT) 식품은 피한다. 카르니틴 보충은 논란이다 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>선별 양성 신생아는 증상이 없어도 확진 전부터 공복 회피 지침을 준다.</li>\n<li>성인기까지 진단되지 않다가 금식·음주·수술 전 금식에서 처음 드러나기도 한다 <sup>[1†]</sup>.</li>\n<li>대상: 기초의학 슬롯이라 해리슨 대조 대상이 아니다. 서술은 원문 미대조(†)이므로 사람 대조가 필요하다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 CPT Ⅰ 결핍에서는 중쇄 지방이 치료가 되고 MCAD 결핍에서는 금기인가",
+    "deep": true,
+    "html": "<p>중쇄 지방산은 카르니틴 셔틀 없이 미토콘드리아로 들어간다. 그래서 입구(CPT Ⅰ)가 막힌 환자에게 MCT 는 셔틀을 우회해 β산화를 돌리는 연료가 된다. MCAD 결핍은 바로 그 중쇄 단계가 막힌 병이라, MCT 를 주면 처리하지 못하는 중쇄 대사물만 더 쌓인다 — 같은 「지방산 산화 장애」라도 막힌 자리가 치료를 뒤집는다 <sup>[2†]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "공복 저혈당 — 결손 단계별 검사 양상",
+    "columns": [
+     "결손(예)",
+     "케톤",
+     "젖산",
+     "유리지방산",
+     "가르는 검사",
+     "근거"
+    ],
+    "rows": [
+     [
+      "MCAD (중쇄 β산화)",
+      "낮음",
+      "정상",
+      "높음",
+      "아실카르니틴 C8(·C6·C10:1) 상승",
+      "<sup>[1†]</sup>"
+     ],
+     [
+      "CPT Ⅰ (카르니틴 운반 입구)",
+      "낮음",
+      "정상",
+      "높음",
+      "유리 카르니틴 높음, 긴사슬 아실카르니틴 낮음",
+      "<sup>[2†]</sup>"
+     ],
+     [
+      "HMG-CoA 분해효소 (케톤 합성 끝)",
+      "낮음",
+      "정상~상승",
+      "높음",
+      "대사성 산증, 소변 3-하이드록시-3-메틸글루타르산, C5-OH",
+      "<sup>[2†]</sup>"
+     ],
+     [
+      "포도당-6-인산분해효소 (당원병 Ⅰ형)",
+      "낮음~중간",
+      "높음",
+      "높음",
+      "젖산산증·고요산·고중성지방, 글루카곤에 무반응",
+      "<sup>[2†]</sup>"
+     ],
+     [
+      "간 글리코겐 인산화효소 (당원병 Ⅵ형)",
+      "높음",
+      "정상",
+      "높음",
+      "경한 저혈당·간비대, 아실카르니틴 정상",
+      "<sup>[2†]</sup>"
+     ],
+     [
+      "고인슐린혈증",
+      "낮음",
+      "정상",
+      "낮음",
+      "저혈당 때 인슐린 검출, 글루카곤에 혈당 반응",
+      "<sup>[2†]</sup>"
+     ]
+    ],
+    "note": "케톤은 「저혈당에 비해 적절한가」로 판단한다 — 같은 수치라도 혈당이 30 mg/dL 대이면 낮은 것이다. 검체는 저혈당 발작 중(포도당 투여 전)에 받아야 해석할 수 있다 <sup>[2†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "간 글리코겐 인산화효소 결핍(당원병 Ⅵ형) vs MCAD 결핍 — 둘 다 공복 저혈당·간비대",
+    "point": "글리코겐 분해가 막혀도 지방산 β산화는 멀쩡해 공복 때 케톤이 잘 오른다(케톤성 저혈당, 대개 경증). MCAD 결핍은 β산화가 막혀 케톤이 오르지 않는다. 저혈당과 간비대만으로는 가를 수 없고, 소변·혈중 케톤이 가른다.",
+    "exception": "당원병 Ⅰ형(포도당-6-인산분해효소)은 케톤이 낮을 수 있지만 젖산산증·고요산·고중성지방이 함께 온다.",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "HMG-CoA 분해효소 결핍 vs MCAD 결핍 — 둘 다 저케톤성 저혈당",
+    "point": "HMG-CoA 분해효소는 케톤 합성의 마지막 단계라, 결핍돼도 저케톤성 저혈당이 된다. 그러나 β산화는 끝까지 돌아 C8 이 쌓이지 않는다. 대신 류신 분해 중간물이 쌓여 대사성 산증과 소변 3-하이드록시-3-메틸글루타르산, 아실카르니틴 C5-OH 가 오른다. 「케톤이 없는 이유」를 물어도 C8 상승이 있으면 답은 β산화 단계(MCAD)다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "CPT Ⅰ 결핍 vs MCAD 결핍",
+    "point": "CPT Ⅰ 은 긴사슬 지방산을 미토콘드리아로 들이는 입구다. 결핍되면 역시 저케톤성 저혈당이지만 아실카르니틴이 만들어지지 않아 유리 카르니틴이 높고 긴사슬 아실카르니틴은 낮다 — C8 이 특이적으로 오르지 않는다. 중쇄 지방산은 CPT 없이 미토콘드리아에 들어가므로 CPT Ⅰ 결핍에서 중쇄 지방은 에너지원이 되지만, MCAD 결핍에서는 금기다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "피루브산 탈수소효소 결핍",
+    "point": "피루브산 → 아세틸-CoA 가 막혀 젖산·피루브산이 오르고 신경 증상이 주다. 공복 저혈당·C8 상승의 그림이 아니다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "치료는 진단을 기다리지 않는다 — 저혈당이면 먼저 포도당을 주고, 검체는 그 전에 받아 둔다.",
+   "당원병 Ⅰ형도 케톤이 낮게 나올 수 있어 「케톤 낮음」 갈래에서 젖산으로 한 번 더 가른다.",
+   "각 갈래의 검사 양상은 원문 미대조(†) — 전형 양상이며 예외가 있다."
+  ],
+  "criteria": [
+   {
+    "id": "mcad-screen",
+    "name": "선별·확진(GeneReviews)",
+    "kind": "진단 기준",
+    "population": "신생아 선별 양성 또는 저케톤성 저혈당 영유아",
+    "statement": "혈장 아실카르니틴에서 C8 이 두드러지게 오르고 C6·C10·C10:1 이 함께 오르며 C8/C10 비가 높다. ACADM 유전자 검사(흔한 변이 c.985A>G)로 확진",
+    "exceptions": "대사위기 사이·포도당 투여 뒤에는 이상이 약해질 수 있다. 세부 비율 기준은 원문 미대조",
+    "source": "genereviews-mcad",
+    "locator": "Diagnosis 절(원문 미대조 — 루틴 컨테이너에서 NCBI 접근 차단)",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "genereviews-mcad",
+    "org": "GeneReviews (University of Washington, Seattle)",
+    "title": "Medium-Chain Acyl-Coenzyme A Dehydrogenase Deficiency",
+    "kind": "review",
+    "citation": "Merritt JL 2nd, Chang IJ. Medium-Chain Acyl-Coenzyme A Dehydrogenase Deficiency. In: Adam MP, et al, eds. GeneReviews. Seattle (WA): University of Washington, Seattle; 2000 (updated 2019). NBK1424",
+    "checked": "서지만 — 루틴 컨테이너의 네트워크 정책이 NCBI 접근을 막아 본문을 대조하지 못했다. 발병 연령·아실카르니틴 패턴·흔한 변이·치료(공복 회피·포도당) 서술은 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK1424/"
+   },
+   {
+    "id": "saudubray-iem",
+    "org": "Springer",
+    "title": "Inborn Metabolic Diseases: Diagnosis and Treatment, 7th ed.",
+    "kind": "textbook",
+    "citation": "Saudubray JM, Baumgartner MR, García-Cazorla Á, Walter JH (eds). Inborn Metabolic Diseases: Diagnosis and Treatment, 7th ed. Berlin: Springer; 2022",
+    "checked": "서지만 — 본문(저혈당 감별·지방산 산화 장애 장)을 열어 보지 못했다. 감별표의 케톤·젖산·유리지방산 양상은 기억에 근거",
+    "doi": "10.1007/978-3-662-63123-2",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1007/978-3-662-63123-2"
+   }
+  ],
+  "checks": [
+   {
+    "q": "MCAD 결핍에서 케톤도 안 생기고 당신생도 약해지는 이유를 한 물질로 설명하라.",
+    "a": "아세틸-CoA. β산화가 중쇄에서 멈춰 간의 아세틸-CoA 가 모자라면 케톤 원료가 없고, 피루브산 카르복실화효소를 활성화할 아세틸-CoA 와 β산화의 ATP·NADH 도 부족해 당신생이 약해진다."
+   },
+   {
+    "q": "저케톤성 저혈당 아이에서 유리지방산이 낮다면 무엇을 먼저 의심하나?",
+    "a": "고인슐린혈증. 인슐린이 지방 분해 자체를 막아 유리지방산과 케톤이 함께 낮다. 지방산 산화 장애는 지방 분해는 일어나 유리지방산이 높다."
+   },
+   {
+    "q": "MCAD 결핍 환아의 장기 관리 원칙은?",
+    "a": "공복을 피한다(나이에 맞는 수유 간격, 아플 때 탄수화물 공급·먹지 못하면 병원에서 포도당 정맥 투여). 중쇄 중성지방(MCT) 식품은 피한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia#v1",
+    "context": "Same fasting hypoglycemia with hepatomegaly, but ketosis is intact",
+    "stem": "A 3-year-old boy is evaluated for morning irritability and sweating that resolve after breakfast. He is at the 5th percentile for height. Temperature is 36.8°C, pulse 110/min, respirations 24/min, and blood pressure 96/60 mm Hg. The liver edge is palpable 5 cm below the right costal margin; the spleen is not palpable. After an overnight fast, serum glucose is 54 mg/dL and urine ketones are strongly positive. Serum lactate, uric acid, and creatine kinase are within normal limits; AST and ALT are mildly elevated. Plasma acylcarnitine profile is normal. Deficiency of which of the following enzymes is the most likely cause?",
+    "options": [
+     "Carnitine palmitoyltransferase I",
+     "Glucose-6-phosphatase",
+     "Liver glycogen phosphorylase",
+     "HMG-CoA lyase",
+     "Medium-chain acyl-CoA dehydrogenase"
+    ],
+    "answer": 3,
+    "explanation": "Fasting hypoglycemia with hepatomegaly and growth delay but appropriately brisk ketosis, normal lactate, and a normal acylcarnitine profile indicates impaired hepatic glycogen breakdown with intact fatty acid oxidation — liver glycogen phosphorylase deficiency (Hers disease). In the original item the decisive clue was the absence of ketones with a C8 elevation, which places the block in beta-oxidation (MCAD). Glucose-6-phosphatase deficiency would add lactic acidosis and hyperuricemia; CPT I, HMG-CoA lyase, and MCAD deficiencies all prevent ketosis.",
+    "of": "usmle-2026-0104",
+    "changed": "urine ketones negative + C8 elevation → urine ketones strongly positive, normal acylcarnitine profile, milder hypoglycemia with prominent hepatomegaly and short stature ⇒ answer changes from MCAD to liver glycogen phosphorylase",
+    "flip": true
+   },
+   {
+    "id": "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia#v2",
+    "context": "Different child, same biochemical signature",
+    "stem": "A 22-month-old girl has a generalized seizure at home. For the past 36 hours she has had ear pain and fever and has eaten very little. Her 4-year-old brother died suddenly in his sleep at 16 months of age. Temperature is 38.4°C, pulse 150/min, respirations 34/min, and blood pressure 90/54 mm Hg. The liver is palpable 3 cm below the costal margin, and the right tympanic membrane is bulging. Plasma acylcarnitine analysis shows a marked increase in octanoylcarnitine with smaller increases in hexanoyl- and decenoylcarnitine. Serum glucose is 29 mg/dL, plasma free fatty acids are elevated, lactate is 1.5 mmol/L, and urine ketones are negative. Impaired activity of which of the following enzymes is the most likely cause?",
+    "options": [
+     "Carnitine palmitoyltransferase I",
+     "Glucose-6-phosphatase",
+     "Liver glycogen phosphorylase",
+     "HMG-CoA lyase",
+     "Medium-chain acyl-CoA dehydrogenase"
+    ],
+    "answer": 5,
+    "explanation": "The story is different — an older girl, an ear infection, a seizure, a sibling's sudden death — but the decisive clues are unchanged: hypoglycemia without ketosis despite high free fatty acids, normal lactate, and a C8-predominant acylcarnitine profile. That pattern localizes the block to medium-chain beta-oxidation (MCAD). Liver phosphorylase deficiency would allow ketosis; glucose-6-phosphatase deficiency would raise lactate; HMG-CoA lyase and CPT I deficiencies do not produce a C8 elevation.",
+    "of": "usmle-2026-0104",
+    "changed": "age, sex, precipitating illness (otitis media instead of gastroenteritis), presentation (seizure), and order of data changed; hypoketotic hypoglycemia with C8 elevation kept ⇒ answer still MCAD",
+    "flip": false
+   },
+   {
+    "id": "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia#v3",
+    "context": "Hypoketotic hypoglycemia where beta-oxidation runs to completion",
+    "stem": "A 10-month-old boy is brought to the emergency department because of lethargy after 2 days of vomiting with a viral illness. Temperature is 37.9°C, pulse 160/min, respirations 44/min and deep, and blood pressure 88/52 mm Hg. Serum glucose is 31 mg/dL, bicarbonate 11 mEq/L, and ammonia mildly elevated; urine ketones are negative. Plasma free fatty acids are elevated and lactate is 2.4 mmol/L. Plasma acylcarnitine analysis shows elevated 3-hydroxyisovalerylcarnitine (C5-OH) with a normal octanoylcarnitine (C8) level, and urine organic acids show a large peak of 3-hydroxy-3-methylglutaric acid. Which of the following best explains the absence of ketosis in this child?",
+    "options": [
+     "Impaired carnitine palmitoyltransferase-1 activity prevents long-chain fatty acids from entering the mitochondria",
+     "Deficient glucose-6-phosphatase activity prevents the final step of glycogenolysis and gluconeogenesis",
+     "Deficient pyruvate dehydrogenase activity prevents conversion of pyruvate to acetyl-CoA",
+     "Deficient medium-chain acyl-CoA dehydrogenase activity blocks beta-oxidation of medium-chain fatty acids, limiting the acetyl-CoA available for ketogenesis",
+     "Deficient HMG-CoA lyase activity blocks the terminal step of ketone body synthesis"
+    ],
+    "answer": 5,
+    "explanation": "Beta-oxidation is intact here — C8 is normal — so acetyl-CoA is produced but cannot be turned into acetoacetate. HMG-CoA lyase is also the last step of leucine breakdown, which explains the C5-OH acylcarnitine, urinary 3-hydroxy-3-methylglutaric acid, and metabolic acidosis. In the original item the C8 elevation was the clue that placed the block upstream, in medium-chain beta-oxidation (MCAD).",
+    "of": "usmle-2026-0044",
+    "changed": "C8 elevation → C5-OH acylcarnitine and urinary 3-hydroxy-3-methylglutaric acid with metabolic acidosis ⇒ answer changes from MCAD to HMG-CoA lyase",
+    "flip": true
+   },
+   {
+    "id": "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia#v4",
+    "context": "Same mechanism question in a different fasting setting",
+    "stem": "A 2-year-old boy is kept fasting for 16 hours before a scheduled dental procedure under anesthesia because of an operating room delay. He becomes pale, sweaty, and difficult to rouse. Temperature is 36.6°C, pulse 142/min, respirations 28/min, and blood pressure 94/58 mm Hg. Serum glucose is 36 mg/dL, plasma free fatty acids are 2.4 mmol/L, lactate is 1.2 mmol/L, and serum insulin is undetectable. Urine ketones are trace. A plasma acylcarnitine profile shows a prominent increase in octanoylcarnitine. Which of the following best explains why this child is not ketotic?",
+    "options": [
+     "Impaired carnitine palmitoyltransferase-1 activity prevents long-chain fatty acids from entering the mitochondria",
+     "Deficient glucose-6-phosphatase activity prevents the final step of glycogenolysis and gluconeogenesis",
+     "Deficient pyruvate dehydrogenase activity prevents conversion of pyruvate to acetyl-CoA",
+     "Deficient medium-chain acyl-CoA dehydrogenase activity blocks beta-oxidation of medium-chain fatty acids, limiting the acetyl-CoA available for ketogenesis",
+     "Deficient HMG-CoA lyase activity blocks the terminal step of ketone body synthesis"
+    ],
+    "answer": 4,
+    "explanation": "Undetectable insulin and high free fatty acids show that lipolysis is working; normal lactate argues against a gluconeogenic block. The octanoylcarnitine (C8) rise localizes the defect to medium-chain beta-oxidation, so the liver lacks acetyl-CoA for ketogenesis — MCAD deficiency. HMG-CoA lyase deficiency would leave C8 normal and raise C5-OH; CPT I deficiency would not generate medium-chain acylcarnitines.",
+    "of": "usmle-2026-0044",
+    "changed": "age, sex, trigger (prolonged fast before a procedure instead of febrile illness), and presentation changed; hypoketotic hypoglycemia, high free fatty acids, normal lactate, and C8 elevation kept ⇒ answer still MCAD",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "공복·감염 뒤 저혈당 영유아 — 결손 단계를 좁히는 순서",
+  "geo": {
+   "title": "공복·감염 뒤 저혈당 영유아 — 결손 단계를 좁히는 순서",
+   "w": 680,
+   "h": 1012.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "공복·구토·감염 뒤 기면·",
+      "경련 → 혈당 확인, 포도당",
+      "투여 전 검체(케톤·젖산·",
+      "유리지방산·인슐린·",
+      "아실카르니틴·암모니아) 확보"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "ketone",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈당에 비해 케톤이 적절히",
+      "올랐는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 197.0
+    },
+    {
+     "id": "ketotic",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "케톤성 저혈당 — 글리코겐",
+      "분해 장애(간 인산화효소 등)",
+      "·특발성 케톤성 저혈당"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 327.0
+    },
+    {
+     "id": "ffa",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "유리지방산이 올랐는가?",
+      "(지방 분해가 일어났는가)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 327.0
+    },
+    {
+     "id": "insulin",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "고인슐린혈증 — 인슐린이",
+      "지방 분해·케톤 생성을 함께",
+      "누른다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 474.0
+    },
+    {
+     "id": "lactate",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "젖산이 올랐는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 474.0
+    },
+    {
+     "id": "gsd1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "당신생 장애 —",
+      "포도당-6-인산분해효소",
+      "결핍(당원병 Ⅰ형) 등"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 621.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "지방산 산화·케톤 합성 장애",
+      "— 혈장 아실카르니틴·유리",
+      "카르니틴·소변 유기산으로",
+      "결손 단계를 가린다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 621.0
+    },
+    {
+     "id": "acyl",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "아실카르니틴·유기산 양상은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 785.0
+    },
+    {
+     "id": "mcad",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "C8 상승 → MCAD 결핍 —",
+      "포도당(10 %) 정맥 투여,",
+      "공복 회피"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 898.0
+    },
+    {
+     "id": "hmgcl",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "C5-OH·소변",
+      "3-하이드록시-3-메틸글루타",
+      "르산 → HMG-CoA 분해효소",
+      "결핍"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 898.0
+    },
+    {
+     "id": "cpt1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "유리 카르니틴 높고 긴사슬",
+      "아실카르니틴 낮음 → CPT Ⅰ",
+      "결핍"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 898.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "ketone",
+     "points": [
+      [
+       340.0,
+       131
+      ],
+      [
+       340.0,
+       141
+      ],
+      [
+       340.0,
+       141
+      ],
+      [
+       340.0,
+       197.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ketone",
+     "to": "ketotic",
+     "points": [
+      [
+       307.3,
+       261.0
+      ],
+      [
+       307.3,
+       271.0
+      ],
+      [
+       227.0,
+       271.0
+      ],
+      [
+       227.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "적절히 상승"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 193.6,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "ketone",
+     "to": "ffa",
+     "points": [
+      [
+       372.7,
+       261.0
+      ],
+      [
+       372.7,
+       277.0
+      ],
+      [
+       453.0,
+       277.0
+      ],
+      [
+       453.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "ffa",
+     "to": "insulin",
+     "points": [
+      [
+       420.3,
+       391.0
+      ],
+      [
+       420.3,
+       401.0
+      ],
+      [
+       227.0,
+       401.0
+      ],
+      [
+       227.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "ffa",
+     "to": "lactate",
+     "points": [
+      [
+       485.7,
+       391.0
+      ],
+      [
+       485.7,
+       407.0
+      ],
+      [
+       453.0,
+       407.0
+      ],
+      [
+       453.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "lactate",
+     "to": "gsd1",
+     "points": [
+      [
+       420.3,
+       521.0
+      ],
+      [
+       420.3,
+       531.0
+      ],
+      [
+       227.0,
+       531.0
+      ],
+      [
+       227.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "lactate",
+     "to": "info",
+     "points": [
+      [
+       485.7,
+       521.0
+      ],
+      [
+       485.7,
+       537.0
+      ],
+      [
+       453.0,
+       537.0
+      ],
+      [
+       453.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "acyl",
+     "points": [
+      [
+       453.0,
+       719.0
+      ],
+      [
+       453.0,
+       729.0
+      ],
+      [
+       340.0,
+       729.0
+      ],
+      [
+       340.0,
+       785.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "acyl",
+     "to": "mcad",
+     "points": [
+      [
+       291.0,
+       832.0
+      ],
+      [
+       291.0,
+       842.0
+      ],
+      [
+       114.0,
+       842.0
+      ],
+      [
+       114.0,
+       898.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "C8 상승"
+      ],
+      "w": 46.5,
+      "h": 17,
+      "x": 90.8,
+      "y": 878.0
+     }
+    },
+    {
+     "from": "acyl",
+     "to": "hmgcl",
+     "points": [
+      [
+       340.0,
+       832.0
+      ],
+      [
+       340.0,
+       848.0
+      ],
+      [
+       340.0,
+       848.0
+      ],
+      [
+       340.0,
+       898.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "C5-OH·유기산"
+      ],
+      "w": 79.3,
+      "h": 17,
+      "x": 300.4,
+      "y": 878.0
+     }
+    },
+    {
+     "from": "acyl",
+     "to": "cpt1",
+     "points": [
+      [
+       389.0,
+       832.0
+      ],
+      [
+       389.0,
+       854.0
+      ],
+      [
+       566.0,
+       854.0
+      ],
+      [
+       566.0,
+       898.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "유리 카르니틴↑"
+      ],
+      "w": 84.1,
+      "h": 17,
+      "x": 523.9,
+      "y": 878.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "공복·구토·감염 뒤 기면·경련 → 혈당 확인, 포도당 투여 전 검체(케톤·젖산·유리지방산·인슐린·아실카르니틴·암모니아) 확보",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "혈당에 비해 케톤이 적절히 올랐는가?"
+     }
+    ]
+   },
+   {
+    "id": "ketone",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈당에 비해 케톤이 적절히 올랐는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "적절히 상승",
+      "to": 3,
+      "toText": "케톤성 저혈당 — 글리코겐 분해 장애(간 인산화효소 등)·특발성 케톤성 저혈당"
+     },
+     {
+      "label": "낮음",
+      "to": 4,
+      "toText": "유리지방산이 올랐는가? (지방 분해가 일어났는가)"
+     }
+    ]
+   },
+   {
+    "id": "ketotic",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "케톤성 저혈당 — 글리코겐 분해 장애(간 인산화효소 등)·특발성 케톤성 저혈당",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ffa",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "유리지방산이 올랐는가? (지방 분해가 일어났는가)",
+    "note": "",
+    "branches": [
+     {
+      "label": "낮음",
+      "to": 5,
+      "toText": "고인슐린혈증 — 인슐린이 지방 분해·케톤 생성을 함께 누른다"
+     },
+     {
+      "label": "높음",
+      "to": 6,
+      "toText": "젖산이 올랐는가?"
+     }
+    ]
+   },
+   {
+    "id": "insulin",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "고인슐린혈증 — 인슐린이 지방 분해·케톤 생성을 함께 누른다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "lactate",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "젖산이 올랐는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "높음",
+      "to": 7,
+      "toText": "당신생 장애 — 포도당-6-인산분해효소 결핍(당원병 Ⅰ형) 등"
+     },
+     {
+      "label": "정상",
+      "to": 8,
+      "toText": "지방산 산화·케톤 합성 장애 — 혈장 아실카르니틴·유리 카르니틴·소변 유기산으로 결손 단계를 가린다"
+     }
+    ]
+   },
+   {
+    "id": "gsd1",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "당신생 장애 — 포도당-6-인산분해효소 결핍(당원병 Ⅰ형) 등",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "지방산 산화·케톤 합성 장애 — 혈장 아실카르니틴·유리 카르니틴·소변 유기산으로 결손 단계를 가린다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "아실카르니틴·유기산 양상은?"
+     }
+    ]
+   },
+   {
+    "id": "acyl",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "아실카르니틴·유기산 양상은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "C8 상승",
+      "to": 10,
+      "toText": "C8 상승 → MCAD 결핍 — 포도당(10 %) 정맥 투여, 공복 회피"
+     },
+     {
+      "label": "C5-OH·유기산",
+      "to": 11,
+      "toText": "C5-OH·소변 3-하이드록시-3-메틸글루타르산 → HMG-CoA 분해효소 결핍"
+     },
+     {
+      "label": "유리 카르니틴↑",
+      "to": 12,
+      "toText": "유리 카르니틴 높고 긴사슬 아실카르니틴 낮음 → CPT Ⅰ 결핍"
+     }
+    ]
+   },
+   {
+    "id": "mcad",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "C8 상승 → MCAD 결핍 — 포도당(10 %) 정맥 투여, 공복 회피",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hmgcl",
+    "num": 11,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "C5-OH·소변 3-하이드록시-3-메틸글루타르산 → HMG-CoA 분해효소 결핍",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cpt1",
+    "num": 12,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "유리 카르니틴 높고 긴사슬 아실카르니틴 낮음 → CPT Ⅰ 결핍",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0044",
+   "usmle-2026-0104"
+  ],
+  "hasErrors": false
+ },
+ "cn.cardio.aortic-dissection.impulse-control-first": {
+  "id": "cn.cardio.aortic-dissection.impulse-control-first",
+  "title": "급성 대동맥박리 — 벽 전단응력에서 첫 약물(베타차단제)까지",
+  "objective": "대동맥벽에 걸리는 전단응력(dP/dt)이 박리를 넓히는 기전을 설명하고, 급성 대동맥박리를 흉통의 다른 원인과 구별한 뒤 저혈압이 없으면 정맥 베타차단제로 심박수·수축력을 먼저 낮추고 혈관확장제는 그 뒤에 더하며 혈전용해·항혈전제를 피해야 하는 이유를 판단한다",
+  "objectiveKind": "치료",
+  "condition": "급성 대동맥박리",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Thoracic Surgery"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "8375aa4a53bcf137",
+  "summary": [
+   "대동맥은 수축기마다 늘어났다 되돌아가며 높은 박동압과 전단응력을 받는다. 박리는 내막이 찢어져 혈류가 중막의 층 사이로 파고들어 가짜 내강을 만드는 것이고, 박동 흐름이 그 틈을 계속 밀어 넓힌다 [[harrison-21: 280장 p.2104]].",
+   "그래서 치료의 표적은 「혈압 숫자」가 아니라 벽을 찢는 힘 — 수축력과 압력 상승 속도(dP/dt)·심박수 — 이다. 저혈압이 없으면 정맥 베타차단제(에스몰롤·메토프롤롤·프로프라놀롤, 또는 라베탈롤)로 심박 약 60회/분을 먼저 만들고, 이어 니트로프루시드로 수축기압 ≤120 mmHg 를 맞춘다 [[harrison-21: 280장 p.2105–2106]].",
+   "하이드랄라진 같은 직접 혈관확장제를 단독으로 쓰면 반사 빈맥·수축력 증가로 전단응력이 오히려 커져 박리가 번질 수 있어 금기다 — 혈관확장제는 베타차단 뒤에 더한다 [[harrison-21: 280장 p.2106]].",
+   "갑작스러운 찢어지는 흉통이 등·어깨뼈 사이로 옮겨 가고, 맥박 소실·양팔 혈압차·새 이완기 잡음(대동맥판 역류)·신경 결손이 붙으면 박리를 먼저 생각한다. 허혈 소견 없는 심전도는 심근경색과의 감별에 도움이 된다 [[harrison-21: 280장 p.2105]].",
+   "치료 방향은 Stanford 분류가 정한다 — 상행대동맥을 침범한 A형은 응급·긴급 수술, 합병증 없는 B형은 약물 치료, 합병증(진행·분지 폐쇄·파열 임박·지속 통증) 있는 B형은 혈관내 스텐트그라프트 [[harrison-21: 280장 p.2106]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>급성 대동맥박리</strong>는 대동맥 내막이 찢어지고(또는 중막 출혈이 내막을 뚫고), 박동 혈류가 중막의 탄력판 사이를 따라 파고들어 <strong>가짜 내강</strong>을 만드는 병이다. 발병 14일 이내를 급성으로 본다. 벽내 혈종(내막 파열 없이 영양혈관 출혈)·관통성 죽상 궤양과 함께 급성 대동맥증후군을 이룬다 <sup>[1 280장 p.2104]</sup>.</p>\n<p>분류는 치료를 정하는 <strong>Stanford</strong> 가 실용적이다 — 상행대동맥을 침범하면 A형(근위), 궁·하행에 국한되면 B형(원위). DeBakey Ⅰ·Ⅱ형은 A형, Ⅲ형은 B형에 해당한다 <sup>[1 280장 p.2105]</sup>.</p>"
+   },
+   {
+    "title": "정상 — 대동맥은 박동압을 버티는 탄성 관이다",
+    "deep": false,
+    "html": "<p>대동맥 벽은 얇은 내막, 평활근과 탄력판이 층을 이룬 두꺼운 중막, 외막으로 되어 있다. 수축기에 늘어나 일회박출량 일부와 탄성 에너지를 저장했다가 이완기에 되돌아가며 혈류를 이어 준다(완충 기능). 그 대가로 대동맥은 끊임없이 높은 박동압과 <strong>전단응력</strong>을 받고, 라플라스 법칙상 벽 장력은 압력×반지름에 비례한다 <sup>[1 280장 p.2101]</sup>.</p>"
+   },
+   {
+    "title": "병태생리 — 무엇이 벽을 찢는가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>벽이 약해지는 조건</strong>: 중막 퇴행(마르판·로이스-디에츠·엘러스-단로스 Ⅳ형·이첨판막·터너), 대동맥염, 축착, 임신 3삼분기, 외상 <sup>[1 280장 p.2105]</sup>.</li>\n<li><strong>벽에 힘이 더 걸리는 조건</strong>: 고혈압(환자의 약 70 %), 코카인, 역도 같은 순간적 압력 상승 <sup>[1 280장 p.2105]</sup>.</li>\n<li>찢어짐은 전단응력이 큰 <strong>상행대동맥 오른쪽 가쪽 벽</strong>과 <strong>동맥관인대 바로 아래 하행대동맥</strong>에 잘 생긴다. 한 번 생긴 틈은 매 박동마다 혈류가 밀어 넓히며 주로 원위로, 때로 근위로 번진다 <sup>[1 280장 p.2104]</sup>.</li>\n</ul>\n<p>박리를 넓히는 힘은 혈압의 크기만이 아니라 <strong>압력이 얼마나 빨리 오르는가(dP/dt)</strong> 와 박동 횟수다 — 수축력이 강하고 심박이 빠를수록 매 박동의 충격이 크다. 치료가 「혈압 낮추기」보다 「심박수·수축력 낮추기」로 시작하는 이유가 여기에 있다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>통증</strong>: 갑자기 시작해 처음부터 가장 심하고, 찢어지는 양상이며 발한을 동반한다. 박리가 번지는 만큼 앞가슴 → 등·어깨뼈 사이 → 배로 <strong>옮겨 간다</strong> <sup>[1 280장 p.2105]</sup>.</li>\n<li><strong>분지 폐쇄</strong>: 가짜 내강·박리막이 분지 입구를 막아 맥박 소실·양팔 혈압차, 경동맥이면 편마비, 척수동맥이면 하반신마비, 장간막·신동맥이면 장 허혈·혈뇨가 생긴다.</li>\n<li><strong>대동맥판 역류</strong>: 근위 박리의 50 % 이상에서 생긴다. 판륜이 넓어지거나 박리 혈종이 판엽을 밀어 내려 이완기 잡음(흉골 오른쪽 가장자리)·넓은 맥압·심부전이 나타난다 <sup>[1 280장 p.2105]</sup>.</li>\n<li><strong>심낭 혈종·압전</strong>: A형이 근위로 역행하면 생기며, 저혈압의 가장 위험한 원인이다.</li>\n<li><strong>흉부 X선</strong>: 상종격동 확장, 왼쪽 흉막 삼출. <strong>심전도</strong>: 허혈 소견이 없으면 심근경색과 가르는 데 도움이 되지만, 드물게 박리가 관상동맥 입구(주로 우측)를 막아 심근경색을 일으킨다 <sup>[1 280장 p.2105]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 재관류 치료 전에 박리를 거르는 이유",
+    "deep": false,
+    "html": "<p>급성 흉통의 가장 흔한 「반사」는 급성 관동맥증후군 치료(항혈소판·항응고·혈전용해)다. 그러나 박리에서 이 약들은 벽 안 출혈을 키워 파열·압전을 부른다. 그래서 흉통 환자를 재관류 경로로 보내기 전에 <strong>이동성 통증·맥박/혈압 비대칭·새 이완기 잡음·신경 결손·종격동 확장</strong>을 확인한다(감별표). 폐색전증·긴장성 기흉·심낭염·식도 파열도 같은 자리에서 감별한다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>CT 혈관조영</strong>: 박리막·범위·분지 침범을 보여 주며 민감도·특이도가 90 % 를 넘는다. 불안정한 환자에게는 덜 적합하다 <sup>[1 280장 p.2105]</sup>.</li>\n<li><strong>경식도 심초음파</strong>: 상행·하행 박리에 매우 정확하고(민감도 98 %) 대동맥판 역류·심낭 삼출을 함께 본다. 침상에서 할 수 있어 불안정 환자에게 쓴다. 경흉부 심초음파는 근위 박리에서 민감도 80 % 이상이지만 궁·하행에서는 약하다 <sup>[1 280장 p.2105]</sup>.</li>\n<li><strong>MRI</strong>: 정확하지만 시간이 걸려 안정된 환자·추적용.</li>\n<li>디이량체는 박리에서 대개 오르지만 확진 검사가 아니다. 정상 트로포닌·허혈 없는 심전도는 관동맥 원인을 낮출 뿐 박리를 확인하지는 않는다.</li>\n</ol>"
+   },
+   {
+    "title": "치료 — 무엇을 어떤 순서로",
+    "deep": false,
+    "html": "<p>진단을 <strong>의심하는 순간</strong> 약물 치료를 시작하고 중환자실에서 혈역학을 감시한다. 저혈압이 없다면 목표는 수축력과 동맥압, 곧 전단응력을 낮추는 것이다 <sup>[1 280장 p.2105–2106]</sup>.</p>\n<ul>\n<li><strong>1단계 — 정맥 베타차단제</strong>: 프로프라놀롤·메토프롤롤·단시간 작용 에스몰롤로 심박 약 60회/분을 만든다. α·β 차단제 라베탈롤도 쓸 수 있다 <sup>[1 280장 p.2106]</sup>.</li>\n<li><strong>2단계 — 혈관확장제 추가</strong>: 수축기압이 여전히 높으면 니트로프루시드로 ≤120 mmHg 를 맞춘다. 정맥 ACE 억제제(에날라프릴랏)를 더할 수도 있다 <sup>[1 280장 p.2106]</sup>.</li>\n<li><strong>베타차단제를 쓸 수 없을 때</strong>: 정맥 베라파밀·딜티아젬이 심박 조절을 대신한다.</li>\n<li><strong>금기</strong>: 하이드랄라진 같은 직접 혈관확장제 단독 — 반사 빈맥으로 전단응력을 키워 박리를 넓힌다 <sup>[1 280장 p.2106]</sup>. 혈전용해제·항혈전제, 고혈압 환자에서의 수액 부하도 해롭다(약물 비교표).</li>\n<li><strong>확정 치료</strong>: A형은 응급·긴급 수술(박리막 절제·가짜 내강 폐쇄·인조혈관 치환, 판막이 망가졌으면 판막 처치). 합병증 없는 B형은 약물, 합병증 있는 B형은 흉부 혈관내 스텐트그라프트(TEVAR), 불가하면 수술 <sup>[1 280장 p.2106]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li><strong>저혈압·쇼크</strong>가 있으면 위의 약물 조절을 하지 않는다 — 압전·파열·심한 역류를 의심하고 소생과 함께 응급 수술로 간다.</li>\n<li>장기 관리는 베타차단제에 다른 강압제(ACE 억제제·칼슘통로차단제)를 더한 혈압·수축력 조절이며, 만성 B형·벽내 혈종은 6–12개월마다 CT·MRI 로 진행·확장을 추적한다. 수술받은 환자의 원내 사망률은 15–25 %, 약물 치료한 B형은 약 12 % 이다 <sup>[1 280장 p.2106]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 280장 p.2104~2106) — 첫 약물(정맥 베타차단제)·혈관확장제 단독 금기·A형 수술/B형 약물의 서술은 문항 해설과 맞는다. 2022 ACC/AHA 지침의 세부 목표 수치는 본문 미대조(†).</li>\n</ul>"
+   },
+   {
+    "title": "벽내 혈종과 관통성 궤양",
+    "deep": true,
+    "html": "<p>벽내 혈종은 내막 파열 없이 영양혈관이 터져 벽 안에 피가 고인 상태로 대부분 하행대동맥에 생기고, 박리·파열로 진행할 수 있다. 관통성 죽상 궤양은 죽상판이 중막까지 파고든 것으로 국소적이며, 가성동맥류·파열로 갈 수 있다. 두 경우 모두 A/B 분류와 치료 원칙(A형 수술, 합병증 없는 B형 약물)을 박리와 같이 적용한다 <sup>[1 280장 p.2104–2106]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "급성 흉통에서 박리를 가리키는 소견과 그 이유",
+    "columns": [
+     "소견",
+     "생기는 이유",
+     "박리 외에 흔한 원인",
+     "근거"
+    ],
+    "rows": [
+     [
+      "갑작스러운 찢어지는 통증, 등·어깨뼈 사이로 이동",
+      "박리가 벽을 따라 진행하는 만큼 통증 위치가 옮겨 간다",
+      "심근경색은 점차 심해지고 이동하지 않는 압박감",
+      "<sup>[1 280장 p.2105]</sup>"
+     ],
+     [
+      "양팔 혈압차·맥박 소실",
+      "가짜 내강·박리막이 분지(쇄골하·경동맥) 입구를 막는다",
+      "쇄골하동맥 협착, 대동맥 축착",
+      "<sup>[1 280장 p.2105]</sup>"
+     ],
+     [
+      "새 이완기 잡음(대동맥판 역류)",
+      "근위 박리가 판륜을 넓히거나 판엽 지지를 무너뜨린다(근위 박리의 50 % 이상)",
+      "만성 대동맥판 역류, 감염심내막염",
+      "<sup>[1 280장 p.2105]</sup>"
+     ],
+     [
+      "편마비·하반신마비·장 허혈·혈뇨",
+      "경동맥·척수·내장 분지의 혈류 차단",
+      "뇌졸중·장간막 허혈 단독",
+      "<sup>[1 280장 p.2105]</sup>"
+     ],
+     [
+      "허혈 소견 없는 심전도, 정상 트로포닌",
+      "관상동맥을 침범하지 않은 박리",
+      "허혈 없는 흉통(폐색전증·심낭염 등)",
+      "<sup>[1 280장 p.2105]</sup>"
+     ]
+    ],
+    "note": "드물게 박리가 관상동맥 입구를 침범해 심근경색이 동반된다 — ST 상승이 있어도 박리 단서가 있으면 영상으로 먼저 확인한다 <sup>[1 280장 p.2105]</sup>."
+   },
+   {
+    "title": "급성 박리의 약물 — 역할과 순서",
+    "columns": [
+     "약물",
+     "순서·역할",
+     "목표·주의",
+     "근거"
+    ],
+    "rows": [
+     [
+      "정맥 베타차단제(에스몰롤·메토프롤롤·프로프라놀롤)",
+      "첫 약물 — 심박수·수축력을 낮춰 dP/dt 감소",
+      "심박 약 60회/분. 저혈압이면 쓰지 않는다",
+      "<sup>[1 280장 p.2106]</sup>"
+     ],
+     [
+      "라베탈롤",
+      "α·β 차단을 한 약으로 — 첫 약물로 가능",
+      "베타차단 효과가 먼저 확보되는지 확인",
+      "<sup>[1 280장 p.2106]</sup>"
+     ],
+     [
+      "니트로프루시드",
+      "베타차단 뒤 추가 — 압력을 더 낮춘다",
+      "수축기 ≤120 mmHg. 단독 투여 금지",
+      "<sup>[1 280장 p.2106]</sup>"
+     ],
+     [
+      "정맥 베라파밀·딜티아젬",
+      "베타차단제를 쓸 수 없을 때 심박 조절 대안",
+      "음성 변력 작용 확인",
+      "<sup>[1 280장 p.2106]</sup>"
+     ],
+     [
+      "하이드랄라진 등 직접 혈관확장제 단독",
+      "금기",
+      "반사 빈맥으로 전단응력 증가 → 박리 확장",
+      "<sup>[1 280장 p.2106]</sup>"
+     ],
+     [
+      "혈전용해제·이중 항혈소판·항응고",
+      "쓰지 않는다",
+      "벽 안 출혈·파열·심낭 혈종 위험",
+      "<sup>[2†]</sup>"
+     ]
+    ],
+    "note": "통증 조절(마약성 진통제)도 교감 흥분을 줄여 같은 목표에 기여한다 <sup>[2†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「급성 흉통 = 관동맥 재관류(혈전용해·항혈소판)」 반사 vs 대동맥박리",
+    "point": "혈전용해제·이중 항혈소판제·항응고제는 관동맥 혈전이 원인일 때의 치료다. 박리에서는 가짜 내강·벽 안으로의 출혈을 키우고 파열·심낭 혈종을 조장한다. 흉통 환자에서 재관류 치료 전에 박리 단서(통증의 이동·맥박/혈압 비대칭·이완기 잡음·종격동 확장)를 먼저 걸러야 하는 이유다.",
+    "exception": "박리가 관상동맥 입구(주로 우관상동맥)를 침범해 ST 상승이 함께 나올 수 있다 — 이때도 혈전용해가 아니라 수술이 답이다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "니트로프루시드(혈관확장제)를 먼저 vs 베타차단제를 먼저",
+    "point": "혈관확장제만 먼저 주면 압력은 내려가도 반사 교감 흥분으로 심박수·수축력이 올라 dP/dt 가 커진다. 순서는 「베타차단 → 필요하면 혈관확장」이다.",
+    "exception": "베타차단제 금기(심한 천식·고도 방실차단 등)면 정맥 딜티아젬·베라파밀이 심박 조절을 대신할 수 있다 <sup>[1 280장 p.2106]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "「혈압을 지키려고」 수액 부하",
+    "point": "혈압이 높거나 정상인 박리 환자에게 수액을 빠르게 주면 박동압과 전단응력을 키운다. 수액·승압은 저혈압(심낭압전·파열·심한 대동맥판 역류)을 동반한 경우의 소생 처치이고, 그때는 약물 조절보다 응급 수술이 우선이다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "약물 조절은 영상 확인을 기다리지 않는다 — 진단을 의심하는 순간 시작한다 <sup>[1 280장 p.2105]</sup>.",
+   "「박리 단서 없음」 갈래에서도 관상동맥 입구를 침범한 박리가 ST 상승으로 보일 수 있다 — 단서가 하나라도 있으면 재관류 전에 영상을 먼저 본다.",
+   "목표 수치(심박 약 60·수축기 ≤120)는 해리슨 기준이다. 지침의 세부 목표는 본문 미대조(†)."
+  ],
+  "criteria": [
+   {
+    "id": "ad-targets-harrison",
+    "name": "초기 약물 목표(해리슨)",
+    "kind": "치료 기준",
+    "population": "저혈압이 없는 급성 대동맥박리",
+    "statement": "정맥 베타차단제로 심박 약 60회/분, 이어 니트로프루시드로 수축기압 ≤120 mmHg. 라베탈롤 단독도 가능",
+    "exceptions": "저혈압이면 적용하지 않는다. 베타차단제를 쓸 수 없으면 정맥 베라파밀·딜티아젬",
+    "source": "harrison-21",
+    "locator": "280장 p.2105–2106 Treatment: Aortic Dissection",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ad-surgery-harrison",
+    "name": "확정 치료(해리슨)",
+    "kind": "치료 기준",
+    "population": "급성 대동맥박리·벽내 혈종",
+    "statement": "A형(상행 침범)은 응급·긴급 수술. 합병증 없는 B형은 약물 치료, 합병증 있는 B형은 흉부 혈관내 스텐트그라프트(불가능하면 수술)",
+    "exceptions": "B형의 합병증 = 진행, 주요 분지 혈류 장애, 파열 임박, 지속 통증",
+    "source": "harrison-21",
+    "locator": "280장 p.2106",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 280: Diseases of the Aorta",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 280장 p.2101–2106",
+    "checked": "본문 대조(드라이브 문서, 280장 p.2104–2106) — 박리 기전(내막 파열·가짜 내강, 박동 흐름이 층을 따라 박리), Stanford A/B 분류, 고혈압 동반 70 %, 찢어지는 이동성 통증·맥박 소실·대동맥판 역류(근위 박리의 50 % 이상)·신경 결손, 허혈 없는 심전도가 심근경색 감별에 도움, 경식도 심초음파·CT·MRI 의 정확도, 치료(저혈압이 없으면 정맥 베타차단제로 심박 ~60, 니트로프루시드로 수축기 ≤120, 라베탈롤 가능, 베타차단제 불가 시 베라파밀·딜티아젬, 직접 혈관확장제 단독 금기), A형 수술·B형 약물/합병증 시 TEVAR 서술을 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "acc-aha-aortic-2022",
+    "org": "American College of Cardiology / American Heart Association",
+    "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+    "kind": "guideline",
+    "citation": "Isselbacher EM, Preventza O, Hamilton Black J 3rd, et al. Circulation 2022;146(24):e334–e482",
+    "checked": "서지만 — 루틴 컨테이너의 네트워크 정책이 ahajournals·PubMed 접근을 막아 권고 본문·수치 목표를 대조하지 못했다",
+    "doi": "10.1161/CIR.0000000000001106",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIR.0000000000001106"
+   }
+  ],
+  "checks": [
+   {
+    "q": "혈압이 높은 급성 박리에서 니트로프루시드를 먼저 쓰지 않고 베타차단제를 먼저 쓰는 이유는?",
+    "a": "혈관확장만 하면 반사 교감 흥분으로 심박수·수축력이 올라 압력 상승 속도(dP/dt)와 전단응력이 커진다. 베타차단으로 그 반사를 먼저 막아야 혈관확장이 안전해진다."
+   },
+   {
+    "q": "박리 환자에게 혈전용해제가 해로운 이유를 기전으로 설명하라.",
+    "a": "박리는 혈전이 아니라 벽이 갈라진 병이다. 혈전용해는 가짜 내강·벽 안으로의 출혈을 키워 파열·심낭 혈종·압전을 부른다."
+   },
+   {
+    "q": "박리 환자가 혈압 78/40 mmHg 로 왔다. 베타차단제를 먼저 주지 않는 이유와 할 일은?",
+    "a": "저혈압은 심낭압전·파열·심한 대동맥판 역류를 뜻할 수 있어, 심박·수축력을 낮추는 약은 쇼크를 악화시킨다. 소생과 함께 응급 수술로 간다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.aortic-dissection.impulse-control-first#v1",
+    "context": "같은 흉통, 박리 단서가 없고 재관류가 급한 경우",
+    "stem": "60세 남자가 1시간 전 시작된 가슴을 짓누르는 통증으로 섬 지역 보건의료원에 왔다. 통증은 이동하지 않고 왼팔로 뻗친다. 혈압 오른팔 142/84, 왼팔 138/82 mmHg, 맥박 88회/분, 호흡 20회/분, 체온 36.7 ℃. 심잡음은 없고 사지 맥박은 대칭이다. 심전도에서 Ⅱ·Ⅲ·aVF 에 ST 분절 상승이 있다. 흉부 X선의 종격동 폭은 정상이다. 경피적 관동맥중재가 가능한 병원까지 이송에 2시간 이상 걸리며, 출혈 병력이나 최근 수술은 없다. 가장 적절한 처치는?",
+    "options": [
+     "정맥 니트로프루시드를 투여한다",
+     "정맥 베타차단제만 투여하고 관찰한다",
+     "정맥 혈전용해제를 투여한다",
+     "응급 대동맥 치환술을 의뢰한다",
+     "정맥 수액을 빠르게 투여한다"
+    ],
+    "answer": 3,
+    "explanation": "이동하는 찢어지는 통증·혈압 비대칭·이완기 잡음·종격동 확장 같은 박리 단서가 없고, 허혈 심전도(하벽 ST 상승)가 있으며 제시간에 관동맥중재를 받을 수 없다. 이때는 금기가 없으면 혈전용해가 재관류 수단이다. 원 문항과 같은 흉통이라도 박리 단서가 있으면 혈전용해는 금기이고 베타차단제가 먼저다 — 답을 바꾼 것은 「박리 단서의 유무」다.",
+    "of": "kmle-2026-0555",
+    "changed": "양팔 혈압차·이완기 잡음·이동성 통증 → 박리 단서 없이 압박성 흉통과 하벽 ST 상승, 경피적 관동맥중재 불가(이송 2시간 이상) ⇒ 정답이 베타차단제에서 혈전용해제로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.aortic-dissection.impulse-control-first#v2",
+    "context": "겉모습만 다른 박리 — 등에서 시작한 통증",
+    "stem": "71세 여자가 40분 전 갑자기 어깨뼈 사이가 찢어지는 듯 아프다가 통증이 가슴 앞과 배 쪽으로 번져 응급실에 왔다. 오래된 고혈압이 있다. 혈압 왼팔 184/102, 오른팔 150/88 mmHg, 맥박 104회/분, 호흡 22회/분, 체온 36.6 ℃. 흉부 X선에서 상종격동이 넓어져 있다. 심전도는 동빈맥 외에 허혈 소견이 없고 트로포닌은 정상이다. 영상 검사를 준비하는 동안 가장 먼저 투여할 약물은?",
+    "options": [
+     "정맥 하이드랄라진",
+     "정맥 에스몰롤",
+     "정맥 알테플라제",
+     "정맥 헤파린",
+     "정맥 생리식염수 급속 투여"
+    ],
+    "answer": 2,
+    "explanation": "통증의 시작 부위와 환자 특성은 달라도 이동하는 찢어지는 통증·양팔 혈압차·종격동 확장·허혈 없는 심전도가 박리를 가리키고, 혈압이 높다. 첫 약물은 심박수·수축력을 낮추는 정맥 베타차단제(에스몰롤)이고, 혈관확장제(하이드랄라진) 단독은 반사 빈맥으로 박리를 키운다. 혈전용해·항응고·수액 부하는 모두 해롭다.",
+    "of": "kmle-2026-0555",
+    "changed": "나이·성별·통증 시작 부위(등 먼저)·검사 제시 순서를 바꾸고, 이동성 통증·혈압 비대칭·고혈압은 남김 ⇒ 답은 그대로 정맥 베타차단제",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "급성 흉통에서 박리 의심 — 첫 약물에서 확정 치료까지",
+  "geo": {
+   "title": "급성 흉통에서 박리 의심 — 첫 약물에서 확정 치료까지",
+   "w": 454,
+   "h": 1306.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "갑작스러운 심한 흉·배부",
+      "통증 → 활력징후·양팔 혈압·",
+      "맥박·잡음·신경학 진찰,",
+      "심전도"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "suspect",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "박리 단서(이동성 찢어지는",
+      "통증·맥박/혈압 비대칭·새",
+      "이완기 잡음·신경 결손)가",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 180.0
+    },
+    {
+     "id": "acs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "박리 단서 없음 + 허혈",
+      "심전도 — 급성 관동맥증후군",
+      "경로(재관류)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 344.0
+    },
+    {
+     "id": "hypo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "저혈압·쇼크(심낭압전·파열·",
+      "심한 대동맥판 역류)가",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 344.0
+    },
+    {
+     "id": "shock",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "소생 + 응급 수술 — 혈압을",
+      "낮추는 약물 조절은 하지",
+      "않는다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 491.0
+    },
+    {
+     "id": "bb",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "정맥 베타차단제 먼저(심박",
+      "약 60회/분) + 통증 조절 ·",
+      "중환자실 감시"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 491.0
+    },
+    {
+     "id": "vd",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "수축기 >120 mmHg 가 남으면",
+      "니트로프루시드 추가(단독",
+      "투여 금지)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 638.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "영상으로 확인·분류 — CT",
+      "혈관조영(안정 시) 또는",
+      "경식도 심초음파(불안정 시)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 785.0
+    },
+    {
+     "id": "type",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "상행대동맥을",
+      "침범했는가(Stanford A)?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 932.0
+    },
+    {
+     "id": "surgery",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "A형 — 응급·긴급",
+      "수술(인조혈관 치환, 필요 시",
+      "판막 처치)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 1062.0
+    },
+    {
+     "id": "comp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "B형 — 합병증(진행·분지",
+      "폐쇄·파열 임박·지속 통증)",
+      "이 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 1062.0
+    },
+    {
+     "id": "tevar",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "합병증 있는 B형 — 혈관내",
+      "스텐트그라프트(불가하면",
+      "수술)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 1209.0
+    },
+    {
+     "id": "medical",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "합병증 없는 B형 — 약물 치료",
+      "유지, 6–12개월마다 CT·MRI",
+      "추적"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 1209.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "suspect",
+     "points": [
+      [
+       227.0,
+       114
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "suspect",
+     "to": "acs",
+     "points": [
+      [
+       194.3,
+       278.0
+      ],
+      [
+       194.3,
+       288.0
+      ],
+      [
+       114.0,
+       288.0
+      ],
+      [
+       114.0,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 324.0
+     }
+    },
+    {
+     "from": "suspect",
+     "to": "hypo",
+     "points": [
+      [
+       259.7,
+       278.0
+      ],
+      [
+       259.7,
+       294.0
+      ],
+      [
+       340.0,
+       294.0
+      ],
+      [
+       340.0,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 324.0
+     }
+    },
+    {
+     "from": "hypo",
+     "to": "shock",
+     "points": [
+      [
+       307.3,
+       425.0
+      ],
+      [
+       307.3,
+       435.0
+      ],
+      [
+       114.0,
+       435.0
+      ],
+      [
+       114.0,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "저혈압"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "hypo",
+     "to": "bb",
+     "points": [
+      [
+       372.7,
+       425.0
+      ],
+      [
+       372.7,
+       441.0
+      ],
+      [
+       340.0,
+       441.0
+      ],
+      [
+       340.0,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상·고혈압"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 305.3,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "bb",
+     "to": "vd",
+     "points": [
+      [
+       340.0,
+       572.0
+      ],
+      [
+       340.0,
+       582.0
+      ],
+      [
+       227.0,
+       582.0
+      ],
+      [
+       227.0,
+       638.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "vd",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       719.0
+      ],
+      [
+       227.0,
+       729.0
+      ],
+      [
+       227.0,
+       729.0
+      ],
+      [
+       227.0,
+       785.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "type",
+     "points": [
+      [
+       227.0,
+       866.0
+      ],
+      [
+       227.0,
+       876.0
+      ],
+      [
+       227.0,
+       876.0
+      ],
+      [
+       227.0,
+       932.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "type",
+     "to": "surgery",
+     "points": [
+      [
+       194.3,
+       996.0
+      ],
+      [
+       194.3,
+       1006.0
+      ],
+      [
+       114.0,
+       1006.0
+      ],
+      [
+       114.0,
+       1062.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "침범"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 1042.0
+     }
+    },
+    {
+     "from": "type",
+     "to": "comp",
+     "points": [
+      [
+       259.7,
+       996.0
+      ],
+      [
+       259.7,
+       1012.0
+      ],
+      [
+       340.0,
+       1012.0
+      ],
+      [
+       340.0,
+       1062.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비침범"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 1042.0
+     }
+    },
+    {
+     "from": "comp",
+     "to": "tevar",
+     "points": [
+      [
+       307.3,
+       1143.0
+      ],
+      [
+       307.3,
+       1153.0
+      ],
+      [
+       114.0,
+       1153.0
+      ],
+      [
+       114.0,
+       1209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 1189.0
+     }
+    },
+    {
+     "from": "comp",
+     "to": "medical",
+     "points": [
+      [
+       372.7,
+       1143.0
+      ],
+      [
+       372.7,
+       1159.0
+      ],
+      [
+       340.0,
+       1159.0
+      ],
+      [
+       340.0,
+       1209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 1189.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "갑작스러운 심한 흉·배부 통증 → 활력징후·양팔 혈압·맥박·잡음·신경학 진찰, 심전도",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "박리 단서(이동성 찢어지는 통증·맥박/혈압 비대칭·새 이완기 잡음·신경 결손)가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "suspect",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "박리 단서(이동성 찢어지는 통증·맥박/혈압 비대칭·새 이완기 잡음·신경 결손)가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 3,
+      "toText": "박리 단서 없음 + 허혈 심전도 — 급성 관동맥증후군 경로(재관류)"
+     },
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "저혈압·쇼크(심낭압전·파열·심한 대동맥판 역류)가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "acs",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "박리 단서 없음 + 허혈 심전도 — 급성 관동맥증후군 경로(재관류)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hypo",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "저혈압·쇼크(심낭압전·파열·심한 대동맥판 역류)가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "저혈압",
+      "to": 5,
+      "toText": "소생 + 응급 수술 — 혈압을 낮추는 약물 조절은 하지 않는다"
+     },
+     {
+      "label": "정상·고혈압",
+      "to": 6,
+      "toText": "정맥 베타차단제 먼저(심박 약 60회/분) + 통증 조절 · 중환자실 감시"
+     }
+    ]
+   },
+   {
+    "id": "shock",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "소생 + 응급 수술 — 혈압을 낮추는 약물 조절은 하지 않는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bb",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "정맥 베타차단제 먼저(심박 약 60회/분) + 통증 조절 · 중환자실 감시",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "수축기 >120 mmHg 가 남으면 니트로프루시드 추가(단독 투여 금지)"
+     }
+    ]
+   },
+   {
+    "id": "vd",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "수축기 >120 mmHg 가 남으면 니트로프루시드 추가(단독 투여 금지)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "영상으로 확인·분류 — CT 혈관조영(안정 시) 또는 경식도 심초음파(불안정 시)"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "영상으로 확인·분류 — CT 혈관조영(안정 시) 또는 경식도 심초음파(불안정 시)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "상행대동맥을 침범했는가(Stanford A)?"
+     }
+    ]
+   },
+   {
+    "id": "type",
+    "num": 9,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "상행대동맥을 침범했는가(Stanford A)?",
+    "note": "",
+    "branches": [
+     {
+      "label": "침범",
+      "to": 10,
+      "toText": "A형 — 응급·긴급 수술(인조혈관 치환, 필요 시 판막 처치)"
+     },
+     {
+      "label": "비침범",
+      "to": 11,
+      "toText": "B형 — 합병증(진행·분지 폐쇄·파열 임박·지속 통증)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "surgery",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "A형 — 응급·긴급 수술(인조혈관 치환, 필요 시 판막 처치)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "comp",
+    "num": 11,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "B형 — 합병증(진행·분지 폐쇄·파열 임박·지속 통증)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 12,
+      "toText": "합병증 있는 B형 — 혈관내 스텐트그라프트(불가하면 수술)"
+     },
+     {
+      "label": "없음",
+      "to": 13,
+      "toText": "합병증 없는 B형 — 약물 치료 유지, 6–12개월마다 CT·MRI 추적"
+     }
+    ]
+   },
+   {
+    "id": "tevar",
+    "num": 12,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "합병증 있는 B형 — 혈관내 스텐트그라프트(불가하면 수술)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "medical",
+    "num": 13,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "합병증 없는 B형 — 약물 치료 유지, 6–12개월마다 CT·MRI 추적",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0555"
+  ],
+  "hasErrors": false
+ },
+ "cn.cardio.atrial-flutter.stable-rate-control-first": {
+  "id": "cn.cardio.atrial-flutter.stable-rate-control-first",
+  "title": "심방조동 — 톱니파 인식에서 안정형 첫 처치(심박수 조절·항응고 판단)까지",
+  "objective": "규칙적인 좁은 QRS 빈맥에서 톱니 모양 조동파와 2:1 전도로 전형적 심방조동을 알아보고, 방실결절 비의존 거대 회귀회로라 아데노신이 종료하지 못하는 이유를 설명한 뒤, 혈역학이 안정하고 지속시간이 불확실하면 동율동전환보다 심박수 조절과 항응고 판단을 먼저 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "전형적 심방조동(삼첨판 협부 의존)",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "7d88f85486258f0b",
+  "summary": [
+   "전형적 심방조동은 삼첨판륜을 도는 우심방의 거대 회귀회로다. 회로가 심방 안에서 닫혀 있어 방실결절은 회로의 일부가 아니다 — 방실결절은 심방 신호 중 몇 개를 심실로 보낼지만 정한다 [[harrison-21: 250장 p.1899]].",
+   "심방 속도 240–300회/분이 2:1 로 전도되면 심실은 130–150회/분의 규칙적인 빈맥이 되고, 조동파가 T파에 묻혀 PSVT 처럼 보인다. II·III·aVF 의 음성 톱니파가 단서다 [[harrison-21: 250장 p.1899]].",
+   "아데노신·미주신경 자극은 방실결절을 잠시 막아 조동파를 드러낼 뿐 회로를 끊지 못한다 — 방실결절이 회로에 들어 있는 PSVT(AVNRT·AVRT)에서만 종료 약이다 [[harrison-21: 250장 p.1899]].",
+   "불안정(저혈압·흉통·의식저하·폐부종)하면 즉시 전기적 동율동전환. 안정하면 방실결절 차단제(IV 베타차단제 또는 딜티아젬·베라파밀)로 심박수를 조절한다 [[harrison-21: 250장 p.1900, Fig 250-3 p.1902]].",
+   "혈전색전 위험은 심방세동과 비슷하게 본다. 48시간을 넘었거나 시작 시점을 모르면 동율동전환 전에 항응고(또는 경식도 초음파로 좌심방이 혈전 배제)가 필요하고, 장기 항응고는 CHA2DS2-VASc 로 정한다 [[harrison-21: 250장 p.1900]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>심방조동은 심방 안의 거대 회귀회로로 생기는 규칙적인 심방 빈맥이다. <strong>전형적(흔한) 심방조동</strong>은 삼첨판륜을 도는 우심방 회로로, 하대정맥과 삼첨판륜 사이의 좁은 통로(삼첨판 협부)를 반드시 지나가므로 「협부 의존 조동」이라고도 한다 <sup>[1 250장 p.1899]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서는 동결절의 한 번의 흥분이 심방을 한 번 지나고 끝난다. 심방에 흉터(노화·심장 수술)나 우심·폐혈관 질환이 있으면 전도가 느린 부위와 기능적 차단선(분계능선)이 생겨, 흥분이 삼첨판륜을 따라 계속 돌 수 있는 길이 만들어진다 <sup>[1 250장 p.1899]</sup>. 이 회로는 <strong>심방 안에서만</strong> 닫혀 있다. 방실결절은 회로 밖에서 심방의 신호를 몇 개 걸러 심실로 보낼지만 정한다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>회로가 약 300회/분으로 돌아 심방 속도 240–300회/분 → 방실결절이 절반만 통과시키면(2:1) 심실 130–150회/분의 <strong>규칙적인</strong> 좁은 QRS 빈맥 <sup>[1 250장 p.1899]</sup>.</li>\n<li>반시계 방향 회로의 탈분극 방향 때문에 II·III·aVF 에서 <strong>음성 톱니파</strong>, V1 에서 양성 P파가 보인다.</li>\n<li>2:1 전도에서는 조동파 하나가 T파에 겹쳐 PSVT 처럼 보인다. 방실결절 전도를 늦추는 조작(미주신경 자극·아데노신·방실결절 차단제)을 하면 전도 비가 높아져 톱니파가 드러난다 <sup>[1 250장 p.1899]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>PSVT(AVNRT·AVRT)</strong>: 방실결절이 회로의 일부 → 아데노신·미주신경 자극으로 <strong>종료</strong>된다 <sup>[1 249장 p.1899]</sup>.</li>\n<li><strong>다초점 심방빈맥(MAT)</strong>: P파 모양 3가지 이상, 등전위선 있음, 불규칙, 100–150회/분. 중증 폐질환·급성 질환에서. 기저 질환 치료, 전기적 전환은 효과 없음 <sup>[1 250장 p.1901]</sup>.</li>\n<li><strong>심방세동</strong>: 불규칙하게 불규칙, 뚜렷한 심방파 없음.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>12유도 심전도(하벽 유도 톱니파, 전도 비), 전해질·갑상선 기능(유발 요인), 심초음파. 동율동전환을 계획하면 좌심방이 혈전을 보기 위한 경식도 초음파.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>불안정</strong> → 즉시 동기화 전기적 동율동전환(저에너지로 잘 전환된다).</li>\n<li><strong>안정</strong> → 방실결절 차단제(IV 베타차단제·딜티아젬·베라파밀)로 심박수 조절. 심방세동보다 조절이 어렵다 <sup>[1 250장 p.1900]</sup>.</li>\n<li><strong>항응고 판단</strong> — 혈전색전 위험은 심방세동과 비슷하게 본다. 48시간 넘게 지속했거나 시점을 모르면 전환 전 항응고, 장기 항응고는 CHA2DS2-VASc <sup>[1 250장 p.1900]</sup>.</li>\n<li><strong>리듬 조절</strong> — 첫 발작은 전환 뒤 장기 항부정맥제 없이 지켜볼 수 있다. 재발하면 삼첨판 협부 도자 절제(&gt;95% 성공, 1차 치료로도 고려) <sup>[1 250장 p.1900–1901]</sup>.</li>\n<li>재평가: 심박수 조절 뒤 심실 반응, 증상, 혈압을 다시 본다. 조절이 안 되면 항응고 조건을 맞춘 뒤 리듬 조절로 넘어간다.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>불안정하면 항응고를 기다리지 않는다.</li>\n<li>아미오다론은 약물적 전환을 일으킬 수 있으므로, 항응고가 안 된 지속시간 불명 조동에서 「심박수 조절 목적」이라도 전환 위험을 생각해야 한다(이 정리본에서는 원문 미대조 — 검토 항목).</li>\n<li>항부정맥제(플레카이니드·프로파페논·아미오다론)를 쓰던 심방세동 환자가 조동으로 나타날 수 있다 — 약이 심방 전도를 늦춰 회귀를 돕는다 <sup>[1 250장 p.1899]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · COPD 환자에서 베타차단제</strong> — 시험 기준: 안정형 조동의 심박수 조절은 IV 베타차단제 또는 딜티아젬·베라파밀(둘 다 IIa B) <sup>[1 250장 p.1902]</sup> / 다른 기준: 해리슨은 MAT 절에서 중증 폐질환 환자가 베타차단제를 잘 견디지 못한다고 적는다 <sup>[1 250장 p.1901]</sup> / 왜 다른가: 기관지 수축 위험 때문에 실제로는 비DHP 칼슘통로차단제나 β1 선택 약을 고르는 경우가 많다 / 시험에서는: USMLE · 보기에 심박수 조절 약이 하나뿐이면 그것이 답(「첫 단계는 심박수 조절」을 묻는다), 둘 다 있으면 폐질환 정도를 본다 · KMLE 도 같은 원칙.</li>\n<li>그 밖에 해리슨과 어긋난 곳 없음(대조: 해리슨 250장 p.1899–1902).</li>\n</ul>"
+   },
+   {
+    "title": "왜 이 문항은 「리듬 인식」 문항인가",
+    "deep": true,
+    "html": "<p>보기 다섯 개 중 넷은 「리듬을 지금 끝낸다」(전기·아데노신·아미오다론·TEE 없는 전환)이다. 톱니파를 알아보면 아데노신이 빠지고, 지속시간 불명을 읽으면 전환 셋이 빠진다 — 인식과 항응고 판단 두 단계가 이어져야 답이 남는다.</p>"
+   }
+  ],
+  "tables": [],
+  "pitfalls": [
+   {
+    "contrast": "「안정형 규칙적 좁은 QRS 빈맥 = 아데노신」 vs 심방조동",
+    "point": "아데노신은 방실결절이 회로의 일부일 때만 빈맥을 끝낸다. 심방조동은 심방 안에서 닫힌 거대 회귀회로라 방실전도만 잠깐 끊겨 조동파가 드러나고 리듬은 그대로 이어진다. 톱니파가 이미 보이면 아데노신은 진단도 치료도 더하지 않는다.",
+    "exception": "심방파가 보이지 않는 규칙적 좁은 QRS 빈맥에서는 아데노신이 진단(조동파 노출)과 치료(PSVT 종료)를 겸한다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "「리듬을 되돌리면 끝」 vs 지속시간 불명",
+    "point": "전기적이든 약물(아미오다론)이든 동율동으로 돌아가는 순간 기절해 있던 좌심방이 수축을 되찾아 이미 생긴 혈전이 떨어질 수 있다. 시작 시점을 모르면 48시간이 넘은 것으로 본다 — 항응고 3주 또는 경식도 초음파 배제가 먼저다.",
+    "exception": "혈역학이 불안정하면 항응고를 기다리지 않고 동율동전환한다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "심방조동 vs 다초점 심방빈맥(MAT) — 둘 다 COPD 환자에서",
+    "point": "MAT 는 P파 모양이 3가지 이상이고 P파 사이 등전위선이 있으며 리듬이 불규칙하다. 기저 폐질환 치료가 핵심이고 전기적 동율동전환은 효과가 없다. 조동은 한 가지 모양의 톱니파가 규칙적으로 이어진다 <sup>[1 250장 p.1901]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "아데노신은 조동을 끝내지 못한다 — 심방파를 드러내는 진단 도구일 뿐이다. 조동파가 이미 보이면 쓸 이유가 없다.",
+   "시작 시점이 불확실하면(「어제쯤부터일 수도」) 48시간 이상으로 취급한다.",
+   "재발하는 전형적 조동은 삼첨판 협부 도자 절제가 95% 넘게 없앤다 — 1차 치료로도 고려된다. 절제 뒤에도 약 절반은 5년 안에 심방세동이 생겨 항응고 판단은 계속된다 <sup>[1 250장 p.1901]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "afl-unstable",
+    "name": "불안정 심방조동",
+    "kind": "치료 기준",
+    "population": "혈역학 불안정 또는 심한 증상의 심방조동",
+    "statement": "동기화 전기적 동율동전환(저에너지) [[harrison-21: 250장 p.1900, Fig 250-3 p.1902]]",
+    "exceptions": "불안정하면 지속시간·항응고 상태와 무관하게 먼저 전환한다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "afl-stable-rate",
+    "name": "안정형 심박수 조절",
+    "kind": "치료 기준",
+    "population": "혈역학이 안정한 심방조동",
+    "statement": "IV 베타차단제 또는 IV 딜티아젬·베라파밀로 심박수 조절(Fig 250-3 에서 IIa B). 조동은 심방세동보다 심박수 조절이 더 어렵다 [[harrison-21: 250장 p.1900, p.1902]]",
+    "exceptions": "리듬 조절을 택하면 동기화 동율동전환(I B)·이부틸리드·도페틸리드가 도식에 있다 — 항응고 조건을 먼저 맞춘다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "afl-anticoag",
+    "name": "전환 전 항응고",
+    "kind": "치료 기준",
+    "population": "동율동전환을 계획하는 심방조동",
+    "statement": "지속 48시간을 넘으면 전환 전에 항응고, 혈전색전 위험이 높으면(CHA2DS2-VASc) 장기 항응고 — 심방세동과 같은 원칙 [[harrison-21: 250장 p.1900–1901]]",
+    "exceptions": "시작 시점을 모르면 48시간 초과로 취급한다. 3주 항응고 대신 경식도 초음파로 좌심방이 혈전을 배제하는 길은 지침 세부로 이 정리본에서는 원문 미대조 [[?acc-aha-af-2023]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 250: Common Atrial Flutter and Macroreentrant and Multifocal Atrial Tachycardias",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 250장 p.1899–1902",
+    "checked": "본문 대조(드라이브 250장 문서) — p.1899: 삼첨판륜 회귀회로·협부 의존·반시계 방향이 II/III/aVF 음성 톱니파·심방 240–300회/분·2:1 전도로 130–150회/분·방실결절 차단 조작이 조동파를 드러냄, 249장 말미 PSVT 에서 아데노신은 방실결절 전도를 막아 종료 · p.1900: 불안정·심한 증상이면 전기적 전환, 아니면 방실결절 차단제로 심박수 조절(심방세동보다 어려움), 혈전색전 위험은 심방세동과 비슷, 48시간 초과 시 전환 전 항응고, CHA2DS2-VASc 로 장기 항응고 · p.1901: 협부 절제 >95%, 5년 내 약 50% 심방세동, MAT 정의·폐질환 환자는 베타차단제 불내성 흔함 · p.1902 Fig 250-3: 안정형 IV 베타차단제 또는 IV 딜티아젬·베라파밀(IIa B), 동기화 전환(I B)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "acc-aha-af-2023",
+    "org": "ACC/AHA/ACCP/HRS",
+    "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+    "kind": "guideline",
+    "citation": "Joglar JA, et al. Circulation 2024;149:e1–e156",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 접근 차단으로 권고 본문(3주 항응고·TEE 전략)은 대조하지 못했다",
+    "doi": "10.1161/CIR.0000000000001193",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIR.0000000000001193"
+   }
+  ],
+  "checks": [
+   {
+    "q": "심방조동에서 아데노신이 리듬을 끝내지 못하는 이유는?",
+    "a": "회귀회로가 삼첨판륜을 도는 심방 안에서 닫혀 있고 방실결절은 회로에 들어 있지 않다. 방실전도만 잠시 막혀 조동파가 드러날 뿐이다."
+   },
+   {
+    "q": "심실 150회/분의 규칙적 좁은 QRS 빈맥을 보면 무엇을 먼저 의심해야 하나?",
+    "a": "2:1 전도의 심방조동(심방 약 300회/분). II·III·aVF 에서 T파에 묻힌 톱니파를 찾는다."
+   },
+   {
+    "q": "안정한 심방조동인데 시작 시점을 모른다. 오늘 동율동전환하지 않는 이유는?",
+    "a": "48시간 초과로 취급하므로 좌심방이 혈전 가능성이 있다. 전환 순간 혈전이 떨어질 수 있어 항응고(또는 경식도 초음파 배제)가 먼저이고, 그동안은 심박수 조절을 한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.atrial-flutter.stable-rate-control-first#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 혈역학 불안정한 심방조동",
+    "stem": "A 66-year-old woman with a history of hypertension is brought to the emergency department with palpitations that began at an uncertain time over the past day. She now reports chest pressure and lightheadedness. Blood pressure is 78/50 mm Hg, pulse is 150/min and regular, and respirations are 24/min. Her skin is cool and clammy, and she is slow to answer questions. An ECG shows a regular narrow-complex tachycardia with negative sawtooth atrial waves in leads II, III, and aVF and 2:1 atrioventricular conduction. Serum potassium is 4.0 mEq/L. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Synchronized electrical cardioversion now",
+     "Intravenous metoprolol for rate control",
+     "Intravenous adenosine bolus",
+     "Start anticoagulation and plan cardioversion in 3 weeks",
+     "Intravenous diltiazem infusion"
+    ],
+    "answer": 1,
+    "explanation": "The changed clue is hemodynamic instability: hypotension, chest pressure, altered mentation, and poor perfusion. Unstable atrial flutter is treated with immediate synchronized cardioversion regardless of duration or anticoagulation status [[harrison-21: 250장 p.1900]]. Beta-blockers and diltiazem would worsen hypotension, adenosine only transiently blocks the AV node without terminating the atrial macroreentrant circuit, and waiting 3 weeks is not safe in an unstable patient. In the original case the patient was warm and well perfused, so rate control came first.",
+    "of": "usmle-2026-0046",
+    "changed": "안정·시작 시점 불명(48시간 초과로 취급) → 수축기 혈압 78 mmHg·흉통·차갑고 축축한 피부로 불안정 ⇒ 정답이 IV 베타차단제 심박수 조절에서 즉시 동기화 전기적 동율동전환으로",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.atrial-flutter.stable-rate-control-first#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 외래에서 발견된 심방조동",
+    "stem": "A 64-year-old woman with hypertension and type 2 diabetes is found to have a pulse of 146/min at a routine clinic visit. She has noticed fatigue and occasional fluttering in her chest for 'a few days, maybe longer.' Blood pressure is 124/78 mm Hg, and she has no chest pain, dyspnea at rest, or confusion. Lungs are clear. An ECG shows a regular narrow-complex rhythm with a continuous sawtooth baseline in the inferior leads and two atrial waves for every QRS complex. Electrolytes and TSH are within normal limits. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Intravenous adenosine to terminate the rhythm",
+     "Rate control with an atrioventricular nodal blocking agent",
+     "Electrical cardioversion today without imaging",
+     "Oral amiodarone loading for cardioversion this week",
+     "Urgent catheter ablation of the cavotricuspid isthmus today"
+    ],
+    "answer": 2,
+    "explanation": "The deciding clues are unchanged: stable hemodynamics, sawtooth flutter waves with 2:1 conduction, and an onset that cannot be dated within 48 hours. Rate control with a beta-blocker or nondihydropyridine calcium channel blocker comes first, and anticoagulation must be addressed before any rhythm-control attempt [[harrison-21: 250장 p.1900]]. Adenosine cannot terminate a macroreentrant atrial circuit; cardioversion or pharmacologic conversion without anticoagulation risks embolic stroke; ablation is an elective option for recurrent flutter, not an emergency first step.",
+    "of": "usmle-2026-0046",
+    "changed": "나이·성별(64세 여성)·기저질환(고혈압·당뇨)·내원 경위(정기 진료 중 발견)·제시 순서를 바꾸고, 안정 혈역학·톱니파 2:1 전도·시작 시점 불명은 유지 ⇒ 답은 그대로 심박수 조절",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "규칙적인 좁은 QRS 빈맥 — 심방조동 인식과 첫 처치",
+  "geo": {
+   "title": "규칙적인 좁은 QRS 빈맥 — 심방조동 인식과 첫 처치",
+   "w": 468,
+   "h": 978.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "규칙적인 좁은 QRS",
+      "빈맥(심실 130–150회/분)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "stable",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈역학이 안정한가? 저혈압·",
+      "흉통·의식저하·폐부종"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "dccv",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "즉시 동기화 전기적",
+      "동율동전환"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 276.0
+    },
+    {
+     "id": "waves",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "II·III·aVF 에 톱니 모양",
+      "조동파가 보이는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 276.0
+    },
+    {
+     "id": "expose",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "조동파가 T파에 묻혀 불분명",
+      "— 미주신경 자극·",
+      "아데노신으로 방실전도를",
+      "잠시 늦춰 심방파를 드러낸다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 406.0
+    },
+    {
+     "id": "psvt",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "심방파 없이 빈맥이 끝나면",
+      "방실결절 의존 PSVT(AVNRT·",
+      "AVRT) — 이 도식 범위 밖"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "rate",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "심방조동 — IV 베타차단제",
+      "또는 딜티아젬·베라파밀로",
+      "심박수 조절"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "onset",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "시작 48시간 미만이",
+      "확실한가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 717.0
+    },
+    {
+     "id": "early",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "조기 동율동전환을 고려할 수",
+      "있다(항응고 병행) · 장기",
+      "항응고는 CHA2DS2-VASc"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 847.0
+    },
+    {
+     "id": "delay",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "심박수 조절 유지 + 항응고",
+      "3주(또는 경식도 초음파로",
+      "혈전 배제) 뒤 동율동전환 ·",
+      "장기 항응고는",
+      "CHA2DS2-VASc"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 242.0,
+     "y": 847.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "stable",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "stable",
+     "to": "dccv",
+     "points": [
+      [
+       194.3,
+       210.0
+      ],
+      [
+       194.3,
+       220.0
+      ],
+      [
+       114.0,
+       220.0
+      ],
+      [
+       114.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불안정"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "stable",
+     "to": "waves",
+     "points": [
+      [
+       259.7,
+       210.0
+      ],
+      [
+       259.7,
+       226.0
+      ],
+      [
+       340.0,
+       226.0
+      ],
+      [
+       340.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안정"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "waves",
+     "to": "expose",
+     "points": [
+      [
+       307.3,
+       340.0
+      ],
+      [
+       307.3,
+       350.0
+      ],
+      [
+       227.0,
+       350.0
+      ],
+      [
+       227.0,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불분명"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 386.0
+     }
+    },
+    {
+     "from": "waves",
+     "to": "rate",
+     "points": [
+      [
+       372.7,
+       340.0
+      ],
+      [
+       372.7,
+       356.0
+      ],
+      [
+       452,
+       356.0
+      ],
+      [
+       452,
+       524.0
+      ],
+      [
+       372.7,
+       524.0
+      ],
+      [
+       372.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "톱니파 보임"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 339.3,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "expose",
+     "to": "psvt",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       114.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "빈맥 종료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 86.1,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "expose",
+     "to": "rate",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       307.3,
+       520.0
+      ],
+      [
+       307.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "톱니파 드러남"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 268.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "rate",
+     "to": "onset",
+     "points": [
+      [
+       340.0,
+       651.0
+      ],
+      [
+       340.0,
+       661.0
+      ],
+      [
+       227.0,
+       661.0
+      ],
+      [
+       227.0,
+       717.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "onset",
+     "to": "early",
+     "points": [
+      [
+       194.3,
+       781.0
+      ],
+      [
+       194.3,
+       791.0
+      ],
+      [
+       114.0,
+       791.0
+      ],
+      [
+       114.0,
+       847.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "48시간 미만 확실"
+      ],
+      "w": 94.2,
+      "h": 17,
+      "x": 66.9,
+      "y": 827.0
+     }
+    },
+    {
+     "from": "onset",
+     "to": "delay",
+     "points": [
+      [
+       259.7,
+       781.0
+      ],
+      [
+       259.7,
+       797.0
+      ],
+      [
+       340.0,
+       797.0
+      ],
+      [
+       340.0,
+       847.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "48시간 이상 · 시점 불명"
+      ],
+      "w": 130.1,
+      "h": 17,
+      "x": 274.9,
+      "y": 827.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "규칙적인 좁은 QRS 빈맥(심실 130–150회/분)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "혈역학이 안정한가? 저혈압·흉통·의식저하·폐부종"
+     }
+    ]
+   },
+   {
+    "id": "stable",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈역학이 안정한가? 저혈압·흉통·의식저하·폐부종",
+    "note": "",
+    "branches": [
+     {
+      "label": "불안정",
+      "to": 3,
+      "toText": "즉시 동기화 전기적 동율동전환"
+     },
+     {
+      "label": "안정",
+      "to": 4,
+      "toText": "II·III·aVF 에 톱니 모양 조동파가 보이는가?"
+     }
+    ]
+   },
+   {
+    "id": "dccv",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "즉시 동기화 전기적 동율동전환",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "waves",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "II·III·aVF 에 톱니 모양 조동파가 보이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "톱니파 보임",
+      "to": 6,
+      "toText": "심방조동 — IV 베타차단제 또는 딜티아젬·베라파밀로 심박수 조절"
+     },
+     {
+      "label": "불분명",
+      "to": 5,
+      "toText": "조동파가 T파에 묻혀 불분명 — 미주신경 자극·아데노신으로 방실전도를 잠시 늦춰 심방파를 드러낸다"
+     }
+    ]
+   },
+   {
+    "id": "expose",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "조동파가 T파에 묻혀 불분명 — 미주신경 자극·아데노신으로 방실전도를 잠시 늦춰 심방파를 드러낸다",
+    "note": "",
+    "branches": [
+     {
+      "label": "톱니파 드러남",
+      "to": 6,
+      "toText": "심방조동 — IV 베타차단제 또는 딜티아젬·베라파밀로 심박수 조절"
+     },
+     {
+      "label": "빈맥 종료",
+      "to": 7,
+      "toText": "심방파 없이 빈맥이 끝나면 방실결절 의존 PSVT(AVNRT·AVRT) — 이 도식 범위 밖"
+     }
+    ]
+   },
+   {
+    "id": "rate",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "심방조동 — IV 베타차단제 또는 딜티아젬·베라파밀로 심박수 조절",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "시작 48시간 미만이 확실한가?"
+     }
+    ]
+   },
+   {
+    "id": "psvt",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "심방파 없이 빈맥이 끝나면 방실결절 의존 PSVT(AVNRT·AVRT) — 이 도식 범위 밖",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "onset",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "시작 48시간 미만이 확실한가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "48시간 미만 확실",
+      "to": 9,
+      "toText": "조기 동율동전환을 고려할 수 있다(항응고 병행) · 장기 항응고는 CHA2DS2-VASc"
+     },
+     {
+      "label": "48시간 이상 · 시점 불명",
+      "to": 10,
+      "toText": "심박수 조절 유지 + 항응고 3주(또는 경식도 초음파로 혈전 배제) 뒤 동율동전환 · 장기 항응고는 CHA2DS2-VASc"
+     }
+    ]
+   },
+   {
+    "id": "early",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "조기 동율동전환을 고려할 수 있다(항응고 병행) · 장기 항응고는 CHA2DS2-VASc",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "delay",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "심박수 조절 유지 + 항응고 3주(또는 경식도 초음파로 혈전 배제) 뒤 동율동전환 · 장기 항응고는 CHA2DS2-VASc",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0046"
+  ],
+  "hasErrors": false
+ },
  "cn.cardio.long-qt-syndrome.first-line-drug": {
   "id": "cn.cardio.long-qt-syndrome.first-line-drug",
   "title": "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지",
@@ -12,10 +4478,10 @@ window.MEDKOS_CONCEPTS = {
    "Pediatrics",
    "Emergency Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-21",
+  "version": 2,
+  "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "0c107970eff312e8",
+  "hash": "5b44f8f8efef146f",
   "summary": [
    "QT 간격은 심실 활동전위의 길이다. 재분극은 주로 두 칼륨 전류(IKr·IKs)가 맡고, 이 중 하나가 약해져도 나머지가 메우는 「재분극 예비력」이 있다 — 선천 QT연장증후군은 이 예비력이 유전적으로 깎인 상태다.",
    "재분극이 길어지면 활동전위 고평부에서 칼슘 통로가 다시 열려 조기후탈분극(EAD)이 생기고, 이것이 방아쇠가 되어 다형 심실빈맥(토르사드 드 푸앵트)이 난다. 실신과 급사는 이 부정맥의 결과다.",
@@ -405,6 +4871,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "베타차단제를 잘 복용하던 중 심정지가 왔으므로 약물 최적화 단계를 넘어섰다. 심정지 생존자는 ICD 적응이며 베타차단제는 유지한다. 아미오다론은 QT 를 더 늘리고, 메실레틴은 LQT3 보조약이며 운동 유발형에 근거가 없고, 딜티아젬은 기전과 무관하다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.cardio.long-qt-syndrome.first-line-drug#v2",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 수면 중 사건, LQT3",
+    "stem": "19세 남자가 밤에 자다가 숨을 헐떡이며 몸이 굳는 것을 가족이 두 번 목격해 왔다. 두 번 모두 1분 안에 저절로 깨어났다. 1년 전 선천 QT연장증후군으로 진단받아 프로프라놀롤을 빠짐없이 복용하고 있다. 혈압 116/70 mmHg, 맥박 52회/분. 심전도는 동서맥에 QTc 530 ms 이며 등전위 ST 분절이 길게 이어진 뒤 늦게 나타나는 T파가 보인다. 칼륨·마그네슘·TSH 는 정상이고 심초음파는 정상, 유전자 검사에서 SCN5A 기능획득 변이가 확인되었다. 심정지 병력은 없다. 다음 치료로 가장 적절한 것은?",
+    "options": [
+     "메실레틴 추가",
+     "아미오다론 추가",
+     "프로프라놀롤을 소탈롤로 교체",
+     "딜티아젬 추가",
+     "프로프라놀롤 중단"
+    ],
+    "answer": 1,
+    "explanation": "수면·서맥 중 사건, 늦게 나오는 T파, SCN5A 기능획득 변이는 LQT3 다. 탈분극 뒤에도 새는 late Na⁺ 전류가 고평부를 늘리므로, 이를 막는 메실레틴을 베타차단제에 더하는 것이 기전에 맞는다 [[?esc-va-2022]]. 베타차단제는 끊지 않는다. 아미오다론·소탈롤은 IKr 을 막아 QT 를 더 늘리고, 딜티아젬은 방실결절 약이라 재분극과 무관하다. 원래 문항(수영 중 실신·넓은 T파 = LQT1 양상, 치료 전)에서는 메실레틴이 아니라 베타차단제 시작이 먼저였다.",
+    "of": "kmle-2026-1035",
+    "changed": "유발 상황을 수영에서 수면 중으로, T파를 긴 등전위 ST 뒤 늦게 나오는 모양으로 바꾸고 SCN5A 변이·베타차단제 복용 중 재발을 더함 → LQT3 이므로 답이 「베타차단제 시작」에서 「메실레틴 추가」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.long-qt-syndrome.first-line-drug#v3",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 운동 중 실신한 남학생",
+    "stem": "14세 남자가 체육 시간에 달리기를 하다 전조 없이 쓰러져 30초쯤 뒤 스스로 깨어났다. 1년 전에도 축구 중 비슷한 일이 있었다. 형이 17세에 운동 중 급사했다. 복용 약물은 없고 신경학적 진찰은 정상이다. 혈압 112/70 mmHg, 맥박 66회/분. 심초음파는 구조 정상이며 칼륨·마그네슘·칼슘·TSH 도 정상이다. 반복한 12유도 심전도에서 QTc 는 500 ms, 505 ms 이고 기저가 넓은 T파가 보인다. 재발 예방을 위해 시작할 약물로 가장 적절한 것은?",
+    "options": [
+     "나돌롤",
+     "아미오다론",
+     "소탈롤",
+     "메실레틴",
+     "베라파밀"
+    ],
+    "answer": 1,
+    "explanation": "운동 중 전조 없는 반복 실신, 젊은 가족의 급사, 후천 원인이 없는 상태에서 반복 QTc ≥480 ms 는 선천 QT연장증후군이고 넓은 T파·운동 유발은 LQT1 양상이다. 나이·성별·운동 종류가 달라져도 결정 단서(QT 연장 + 교감신경 유발 + 치료 전)가 같으므로 1차는 비선택 베타차단제(나돌롤)다 [[?esc-va-2022]]. 아미오다론·소탈롤은 QT 를 더 늘리고, 메실레틴은 LQT3 에서 베타차단제에 더하는 약이며, 베라파밀은 방실결절 약이라 토르사드를 막지 못한다.",
+    "of": "kmle-2026-1035",
+    "changed": "나이·성별(14세 남자)·유발 상황(달리기 중)·가족력(형의 급사)·제시 순서를 바꾸고 QTc 연장·후천 원인 없음·치료 전 상태는 그대로 → 답은 여전히 비선택 베타차단제",
     "flip": false
    }
   ],
@@ -1142,6 +5642,223 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1035"
+  ],
+  "hasErrors": false
+ },
+ "cn.derm.erythema-nodosum.underlying-cause-workup": {
+  "id": "cn.derm.erythema-nodosum.underlying-cause-workup",
+  "title": "결절홍반 — 정강이 압통 결절을 보면 피부가 아니라 원인을 찾는다",
+  "objective": "정강이 앞의 궤양 없는 압통성 붉은 결절을 결절홍반으로 알아보고, 다음 단계가 병변 치료가 아니라 기저 원인(연쇄구균·사르코이드증·염증성 장질환·약물·결핵 등) 검사임을 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "결절홍반(erythema nodosum)",
+  "topic": "Dermatology",
+  "seeAlso": [
+   "Rheumatology",
+   "Infectious Disease",
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "1733392df3643ff8",
+  "summary": [
+   "결절홍반은 피하지방 격막의 반응성 염증(격막성 지방층염)이다 — 균이나 종양이 병변 안에 있는 것이 아니라 다른 질환에 대한 면역 반응이다.",
+   "모양: 양쪽 정강이 앞의 아프고 붉은 결절, 궤양·흉터 없이 멍 같은 푸른색으로 변하며 가라앉는다. 종아리에 궤양이 생기면 경결홍반 쪽이다.",
+   "원인 질환이 없어도 발열·권태·백혈구 증가·관절통이 올 수 있다 — 그래도 원인은 배제해야 한다.",
+   "그래서 다음 단계는 원인 검사: 인후배양·ASO(연쇄구균), 흉부 X선(사르코이드증·결핵), 복부 증상·대변(염증성 장질환·예르시니아), 약물력(경구피임약·설폰아마이드·페니실린), 임신 여부.",
+   "치료는 원인 치료 + 안정·다리 올리기·NSAID. 국소 스테로이드 단독이나 절제는 원인을 놓친다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>결절홍반은 피하지방의 <strong>격막(septum)</strong> 에 생기는 반응성 염증, 즉 격막성 지방층염이다. 병변 안에 균이나 종양이 있는 것이 아니라, 감염·염증 질환·약물에 대한 <strong>면역 반응이 피부에 드러난 것</strong>이다 <sup>[1 58장 p.397]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 격막으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반응으로 격막에 염증세포가 모인다. 지방 소엽 자체가 괴사하지 않으므로 <strong>궤양이나 흉터 없이</strong> 낫는다 — 이것이 다른 지방층염과 가르는 핵심이다 <sup>[1 58장 p.397]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>깊은 지방층 염증 → 표면은 매끈하고 만지면 단단하고 아픈 결절. 표면 비늘·물집이 없다.</li>\n<li>격막 염증이 가라앉으면서 혈색소가 분해 → 붉은색에서 <strong>멍 같은 푸른색</strong>으로 바뀐다 <sup>[1 58장 p.397]</sup>.</li>\n<li>전신 면역 반응 → 원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있다 <sup>[1 58장 p.397]</sup>. 그러므로 이런 전신 증상을 「중증 감염」의 근거로 삼아 항생제를 먼저 쓰지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>경결홍반·결절성 혈관염</strong>: 종아리, 궤양·흉터 가능, 결핵과 연관 <sup>[1 58장 p.397]</sup>.</li>\n<li><strong>봉와직염</strong>: 한쪽, 경계가 퍼지는 홍반, 결절 여러 개가 양쪽에 대칭으로 생기지 않는다.</li>\n<li><strong>루푸스 지방층염</strong>: 뺨·위팔·엉덩이처럼 지방이 많은 자리 <sup>[1 58장 p.397]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 대개 임상적이다. 검사는 <strong>원인을 찾기 위한 것</strong>이다(표 참고). 생검이 필요하면 지방층까지 포함한 깊은 조직을 얻어야 한다 — 표재 생검으로는 지방층염을 볼 수 없다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>원인을 치료하고(연쇄구균이면 항생제, 약물이면 중단), 병변에는 안정·다리 올리기·NSAID 등 대증치료를 한다 <sup>[2†]</sup>. 결절은 대개 수주에 걸쳐 저절로 가라앉는다. 결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>원인 검사를 해도 원인을 못 찾는 특발성이 적지 않다 <sup>[2†]</sup> — 음성이면 대증치료로 경과를 본다.</li>\n<li>국소 스테로이드는 원인 검사를 대신하지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 58장 p.397)</li>\n</ul>"
+   },
+   {
+    "title": "「다음 단계」 문항의 구조",
+    "deep": true,
+    "html": "<p>보기에 치료가 여러 개 섞여 있어도, 결절홍반처럼 <strong>다른 병의 신호인 피부 소견</strong>에서는 「원인을 찾는다」가 다음 단계다. 같은 구조가 흑색극세포증(인슐린 저항성·위암), 괴저성 농피증(염증성 장질환)에도 되풀이된다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "결절홍반의 원인 — 무엇으로 찾나",
+    "columns": [
+     "원인 무리",
+     "예",
+     "먼저 할 검사"
+    ],
+    "rows": [
+     [
+      "감염",
+      "연쇄구균 인두염, 상기도 바이러스, 예르시니아·살모넬라 장염, 결핵",
+      "인후배양·ASO, 대변배양, 흉부 X선·결핵 검사"
+     ],
+     [
+      "염증 질환",
+      "사르코이드증, 염증성 장질환",
+      "흉부 X선(양측 폐문 림프절), 복부 증상·대변 검사"
+     ],
+     [
+      "약물·호르몬",
+      "경구피임약, 설폰아마이드, 페니실린",
+      "약물력, 임신 여부"
+     ]
+    ],
+    "note": "원인 목록은 해리슨 58장 p.397. 검사 선택은 원인 목록에서 끌어낸 것으로 해리슨이 순서를 정하지 않는다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「붉고 아픈 피부 결절 = 국소 스테로이드」 vs 결절홍반",
+    "point": "결절홍반은 피부 병이라기보다 전신 질환의 신호다. 병변을 가라앉히는 국소 치료는 원인을 찾는 일을 대신하지 못하고, 깊은 지방층 병변이라 국소제의 효과도 제한적이다. 치료는 원인 검사 뒤 원인 치료와 NSAID·안정이다.",
+    "exception": "원인 검사를 마친 뒤 증상 완화를 위한 보조 요법은 가능하다 — 단독 치료가 아닐 뿐이다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "결절홍반 vs 경결홍반(결절성 혈관염)",
+    "point": "결절홍반은 정강이, 궤양·흉터 없이 낫는다. 경결홍반은 종아리에 흔하고 궤양이 생기거나 흉터가 남으며 결핵균 DNA 와 관련된다 <sup>[1 58장 p.397]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "en-cause-first",
+    "name": "원인 검색",
+    "kind": "진료 원칙",
+    "population": "결절홍반으로 판단된 환자",
+    "statement": "원인 질환 없이도 발열·권태·백혈구 증가·관절통이 있을 수 있으나 기저 질환 가능성은 배제해야 한다. 흔한 연관은 연쇄구균 감염·상기도 바이러스 감염·사르코이드증·염증성 장질환과 약물(경구피임약·설폰아마이드·페니실린 등) [[harrison-21: 58장 p.397]]",
+    "exceptions": "원인을 끝내 못 찾는 특발성도 흔하다 — 검사를 했는데 음성이면 대증치료로 경과를 본다 [[?schwartz-2007]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 58: Skin Manifestations of Internal Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 58장 p.397 (Subcutaneous nodules — panniculitis)",
+    "checked": "본문 대조(드라이브 58장 문서, 인쇄쪽 p.397) — 결절홍반은 지방층염의 한 형태, 다른 지방층염과 달리 궤양·흉터가 없다 · 정강이가 가장 흔한 위치(경결홍반은 종아리) · 붉다가 멍 같은 푸른색으로 가라앉음 · 원인 질환 없이도 발열·권태·백혈구 증가·관절통/관절염 가능하나 기저 질환은 배제해야 함 · 흔한 연관: 연쇄구균·상기도 바이러스·사르코이드증·염증성 장질환·약물(경구피임약·설폰아마이드·페니실린·브로마이드·아이오다이드·BRAF 억제제) · 드문 연관: 예르시니아·살모넬라 장염, 콕시디오이데스, 결핵 등 · 경결홍반은 결핵균 DNA 와 연관. 대증치료(NSAID·안정)는 이 장에서 확인하지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "schwartz-2007",
+    "org": "Schwartz RA, Nervi SJ (종설)",
+    "title": "Erythema nodosum: a sign of systemic disease",
+    "kind": "review",
+    "citation": "Am Fam Physician 2007;75(5):695-700",
+    "checked": "서지만 — 이 컨테이너에서 PubMed·원문 접근이 막혀 대조하지 못함(특발성 비율·대증치료 서술은 미대조)",
+    "doi": "",
+    "pmid": "17375516",
+    "verified": "citation",
+    "year": "2007",
+    "checkedAt": "2026-09-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17375516/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "결절홍반을 진단했을 때 가장 먼저 할 일은?",
+    "a": "기저 원인 검사 — 인후배양·ASO, 흉부 X선, 약물력·임신 여부, 복부 증상 확인. 병변 자체 치료가 먼저가 아니다."
+   },
+   {
+    "q": "결절홍반과 경결홍반을 가르는 두 가지는?",
+    "a": "위치(정강이 vs 종아리)와 경과(궤양·흉터 없음 vs 궤양·흉터 가능)."
+   },
+   {
+    "q": "결절홍반 환자에게 흉부 X선을 찍는 이유는?",
+    "a": "사르코이드증(양측 폐문 림프절 비대)과 결핵을 찾기 위해서다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.derm.erythema-nodosum.underlying-cause-workup#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 종아리의 궤양성 결절",
+    "stem": "38세 여자가 3개월 전부터 양쪽 종아리 뒤쪽에 생겼다 가라앉기를 반복하는 붉은 결절로 왔다. 결절은 약간 아프고, 일부는 터져 얕은 궤양을 만든 뒤 오목한 흉터를 남겼다. 2년 전 함께 살던 시어머니가 폐결핵으로 치료받았다. 발열·관절통은 없고 최근 인후통도 없었다. 흉부 X선은 정상이다. 진단을 위해 가장 적절한 검사는?",
+    "options": [
+     "표재 면도생검",
+     "지방층까지 포함한 깊은 절개생검과 결핵 검사",
+     "항스트렙토리신O 추적",
+     "대장내시경",
+     "검사 없이 NSAID 로 경과관찰"
+    ],
+    "answer": 2,
+    "explanation": "종아리 뒤쪽·궤양·흉터·결핵 접촉력은 경결홍반(결절성 혈관염)을 가리킨다 — 결절홍반은 정강이 앞에 생기고 궤양·흉터 없이 낫는다 [[harrison-21: 58장 p.397]]. 지방층염은 표재 생검으로 보이지 않으므로 깊은 생검이 필요하고, 경결홍반은 결핵과 관련되므로 결핵 검사를 함께 한다. ASO 는 결절홍반의 연쇄구균 원인 검색이고, 원래 문항처럼 정강이 앞의 궤양 없는 결절이라면 원인 검사가 먼저다.",
+    "of": "kmle-2026-0169",
+    "changed": "병변 위치·경과를 「정강이 앞, 궤양 없음」에서 「종아리 뒤쪽, 일부 궤양·흉터」로, 선행 인후염 대신 결핵 접촉력을 넣음 → 결절홍반이 아니라 경결홍반이 의심되어 답이 「원인 검사」 대신 「깊은 절개생검과 결핵 검사」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.erythema-nodosum.underlying-cause-workup#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 장염 뒤 생긴 정강이 결절",
+    "stem": "19세 남자가 5일 전부터 양쪽 정강이 앞이 아프고 붉게 부어오른 몇 개의 결절로 왔다. 2주 전 사흘간 설사와 복통을 앓고 나았다. 결절은 누르면 아프고 따뜻하며 궤양은 없다. 체온 37.6 ℃, 발목 관절이 아프다. ESR 38 mm/hr 이다. 가장 적절한 다음 단계는?",
+    "options": [
+     "병변을 절제해 조직검사한다",
+     "원인을 찾기 위한 검사(대변배양·흉부 X선·약물력 등)를 한다",
+     "고용량 전신 스테로이드를 시작한다",
+     "강한 국소 스테로이드를 바른다",
+     "장기간 경구 항생제를 투여한다"
+    ],
+    "answer": 2,
+    "explanation": "정강이 앞의 궤양 없는 압통성 결절에 발열·관절통·ESR 상승이면 결절홍반이다. 선행 사건이 인후염이든 장염이든 결정 단서는 같다 — 결절홍반은 반응성 지방층염이라 원인(예르시니아·살모넬라 장염, 염증성 장질환, 연쇄구균, 사르코이드증, 약물)을 찾는 것이 다음 단계다 [[harrison-21: 58장 p.397]]. 전신 스테로이드는 감염·결핵을 배제하기 전에는 쓰지 않고, 항생제는 원인이 확인된 뒤 그 원인에 맞춘다.",
+    "of": "kmle-2026-0169",
+    "changed": "나이·성별(19세 남자)·선행 원인 단서(인후염 대신 설사 뒤)·검사 제시 순서를 바꾸고 「정강이 앞 궤양 없는 압통성 결절」은 그대로 → 답은 여전히 기저 원인 검사",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0169"
   ],
   "hasErrors": false
  },
@@ -1972,10 +6689,10 @@ window.MEDKOS_CONCEPTS = {
    "Obstetrics & Gynecology",
    "Rheumatology"
   ],
-  "version": 1,
-  "updated": "2026-09-22",
+  "version": 2,
+  "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "17667642ed4f2801",
+  "hash": "2c20b0113b468bf0",
   "summary": [
    "전신치료 대상: 체표면적 > 10 %(또는 PASI > 10), 손·발·얼굴·음부·손톱 침범, 국소치료 실패, 삶의 질 저하.",
    "치료 후보는 네 층 — 좁은파장 UVB 광선치료 · 경구 전신제(메토트렉세이트·아시트레틴·사이클로스포린·아프레밀라스트) · 생물학제 · (전신 스테로이드는 판상건선에 쓰지 않음).",
@@ -2330,6 +7047,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "임신 계획으로 메토트렉세이트·아시트레틴이 지워지고, 광선치료는 통원이 불가능하다. 혈압·신기능이 정상이므로 임신 중에도 쓸 수 있는 사이클로스포린을 단기로 쓰고 혈압·크레아티닌을 감시한다(광범위·중증이면 세르톨리주맙도 선택지). 전신 스테로이드는 판상건선에 쓰지 않는다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning#v3",
+    "context": "같은 임신 계획 판상건선, 후보를 지우는 조건 하나를 고혈압에서 광선치료 통원 불가로 바꾼 변형",
+    "stem": "35세 여자가 6년 된 판상건선으로 왔다. 팔꿈치·무릎·허리·두피의 은백색 각질이 덮인 붉은 판이 몸 표면의 약 15 %를 차지하고, 6개월 동안 칼시포트리올·베타메타손 복합 연고를 꾸준히 발랐지만 나아지지 않았다. 관절통·손가락 붓기는 없다. 1년 안에 임신을 계획하고 있고 술은 마시지 않는다. 섬에 살며 배편이 하루 한 번뿐이라 주 2–3회 병원에 다니기는 불가능하다고 한다. 혈압 118/74 mmHg, 크레아티닌 0.7 mg/dL, 간기능·혈구 검사는 정상이고 B형간염·C형간염 검사는 음성, 소변 임신반응은 음성이다. 가장 적절한 치료는?",
+    "options": [
+     "좁은파장 자외선B 광선치료",
+     "메토트렉세이트 경구 투여",
+     "아시트레틴 경구 투여",
+     "사이클로스포린 단기 경구 투여",
+     "프레드니솔론 경구 투여"
+    ],
+    "answer": 4,
+    "explanation": "전신치료 대상(체표면적 15 %·국소치료 실패)이고 임신 계획으로 메토트렉세이트·아시트레틴이 지워지는 것은 원래 문항과 같다. 달라진 것은 남은 두 후보를 가르는 조건이다 — 혈압·신기능이 정상이라 사이클로스포린의 금기가 없고, 반대로 주 2–3회 통원이 불가능해 광선치료를 할 수 없다. 그래서 임신 중에도 쓸 수 있는 사이클로스포린을 단기로 쓰며 혈압·크레아티닌을 감시한다. 전신 스테로이드는 중단 시 반동·농포성 악화 위험으로 판상건선에 쓰지 않는다.",
+    "of": "kmle-2026-1098",
+    "changed": "혈압 144/92·암로디핀 복용(사이클로스포린 제외) → 혈압·신기능 정상이고 섬 지역 거주로 주 2–3회 광선치료 통원이 불가능(광선치료 제외) ⇒ 정답이 좁은파장 자외선B 광선치료에서 단기 사이클로스포린으로",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning#v4",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(임신 계획·조절 안 되는 고혈압)는 같다",
+    "stem": "31세 여자가 지난달 결혼해 곧 아이를 가지려 하는데 몸의 건선이 심해져 걱정이 되어 왔다. 몸통과 양쪽 다리에 은백색 각질이 덮인 붉은 판이 몸 표면의 약 14 %를 차지하며, 8개월간 국소 스테로이드와 칼시포트리올을 발랐지만 나아지지 않았다. 관절이 붓거나 아픈 적은 없다. 2년 전 고혈압을 진단받아 니페디핀을 먹고 있으나 오늘 혈압은 148/94 mmHg 이다. 크레아티닌 0.8 mg/dL, 간기능·혈구 검사는 정상이고 소변 임신반응은 음성이다. 가까운 병원에서 주 2–3회 통원할 수 있다. 가장 적절한 치료는?",
+    "options": [
+     "메토트렉세이트 경구 투여",
+     "사이클로스포린 경구 투여",
+     "좁은파장 자외선B 광선치료",
+     "아시트레틴 경구 투여",
+     "프레드니솔론 경구 투여"
+    ],
+    "answer": 3,
+    "explanation": "나이·침범 부위·복용 중인 혈압약·내원 경위가 바뀌었지만 결정 단서는 같다 — 국소치료에 실패한 체표면적 > 10 % 판상건선이라 전신치료 대상이고, 임신 계획이 메토트렉세이트·아시트레틴을, 치료 중에도 조절되지 않는 고혈압이 사이클로스포린을 지운다. 전신 스테로이드는 반동 위험으로 쓰지 않으므로, 임신 중에도 안전하고 통원이 가능한 좁은파장 자외선B 광선치료가 남는다(엽산 보충 고려). 관절염이 없어 관절 보호 약을 앞세울 이유도 없다.",
+    "of": "kmle-2026-1098",
+    "changed": "36세·암로디핀·팔꿈치 등 15 % → 31세·니페디핀·몸통과 다리 14 %, 신혼·임신 준비로 내원 경위와 제시 순서 바꿈(국소 실패·임신 계획·치료 중인데도 높은 혈압·관절염 없음은 그대로) ⇒ 답은 그대로 좁은파장 자외선B 광선치료",
     "flip": false
    }
   ],
@@ -3165,6 +7916,6059 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.derm.scabies.treat-with-contacts": {
+  "id": "cn.derm.scabies.treat-with-contacts",
+  "title": "옴 — 진드기 과민반응에서 환자·접촉자 동시 치료까지",
+  "objective": "옴 진드기가 각질층에 굴을 파고 과민반응으로 가려움을 일으키는 과정을 설명하고, 야간 악화 소양·호발 부위의 굴·집단 발생으로 옴을 진단한 뒤 살충제(퍼메트린 5 %)를 턱선 아래 전신에 바르되 증상 없는 밀접 접촉자까지 동시에 치료하고 침구·의류를 처리해야 하는 이유를, 증상 완화제(국소 스테로이드·항히스타민)만 쓰는 선택과 구별해 판단한다",
+  "objectiveKind": "치료",
+  "condition": "옴(scabies)",
+  "topic": "Dermatology",
+  "seeAlso": [
+   "Infectious Disease",
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "e4f42be9b4110b88",
+  "summary": [
+   "옴 진드기(Sarcoptes scabiei var. hominis)의 수정된 암컷이 각질층에 굴을 파고 알을 낳는다. 사람에서 사람으로 주로 직접적이고 오래 지속된 피부 접촉으로 옮고, 숙주 없이는 하루 남짓 만에 죽는다 [[harrison-21: 461장 p.3608]].",
+   "가려움과 발진은 진드기와 그 분비물·배설물에 대한 과민반응이다. 첫 감염은 최대 6주까지 증상이 없다가 심한 가려움이 시작되므로, 함께 사는 사람이 지금 가렵지 않아도 이미 감염돼 있을 수 있다 [[harrison-21: 461장 p.3608]].",
+   "가려움은 밤과 뜨거운 샤워 뒤 심해지고, 병변은 손목 굽힘쪽·손가락 사이, 남자의 음경·음낭, 겨드랑이·배꼽·허리띠 선·엉덩이에 대칭으로 생긴다. 굴은 3–15 mm 의 어두운 물결 모양 선이다. 영아를 빼면 얼굴·두피·손발바닥은 대개 빠진다 [[harrison-21: 461장 p.3608]].",
+   "치료는 살충제다 — 퍼메트린 5 % 크림을 목욕 뒤 턱선 아래 전신(손가락 사이·배꼽·손톱 밑 포함)에 얇게 바르고 6–14시간 뒤 씻어 낸다. 증상이 없어도 확진 환자의 밀접 접촉자는 동시에 치료하고, 침구·의류는 뜨거운 물로 빨고 고온 건조한다 [[harrison-21: 461장 p.3608–3609]].",
+   "효과적인 치료 하루 뒤면 전염력은 없어지지만, 죽은 진드기에 대한 과민 피부염으로 가려움이 몇 주 남는다. 이때 불필요한 재치료는 접촉피부염을 부르고, 가려움은 보습제·항히스타민·(치료 뒤 남은 가려움에) 국소 스테로이드로 달랜다 [[harrison-21: 461장 p.3608–3609]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>옴</strong>은 사람 옴 진드기(<em>Sarcoptes scabiei</em> var. <em>hominis</em>)가 피부 각질층에 기생해 생기는 가려운 피부병이다. 사람만을 숙주로 하는 의무 외부기생충이며 전 세계 약 2억 5천만 명이 앓는다. 어린이집·병원·요양원·교도소 같은 집단 시설에서 집단 발생이 잘 생긴다 <sup>[1 461장 p.3608]</sup>.</p>"
+   },
+   {
+    "title": "정상 — 각질층은 죽은 세포의 보호막이다",
+    "deep": false,
+    "html": "<p>표피의 가장 바깥 각질층은 죽은 각질세포가 쌓인 층으로, 신경·혈관이 없고 물리적 장벽 역할을 한다. 진드기는 이 층 안에서만 산다 — 그래서 굴은 얕고, 피부를 긁어 낸 표본에서 진드기·알·배설물을 볼 수 있다.</p>"
+   },
+   {
+    "title": "병태생리 — 가려움은 진드기가 아니라 면역반응이다",
+    "deep": false,
+    "html": "<ul>\n<li><strong>생활사</strong>: 수정된 암컷(약 0.3 mm)이 각질층에 굴을 파며 하루 몇 개씩 알을 낳는다. 유충 → 약충 → 성충을 거쳐 약 8일 뒤 새 암컷이 표면으로 나와 같은 사람이나 다른 사람의 피부로 들어간다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>전파</strong>: 주로 직접적이고 오래 지속된 피부 접촉(동거·성 접촉·돌봄). 숙주가 없으면 하루 남짓 만에 죽어, 침구·옷을 통한 전파는 흔히 생각하는 것보다 적다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>가려움의 기전</strong>: 진드기와 그 분비물·배설물에 대한 <strong>과민반응</strong>이다. 굴 주위에 호산구·림프구·조직구가 모인다. 첫 감염에서는 감작까지 <strong>최대 6주 무증상</strong>이다가 심한 가려움이 시작되고, 재감염에서는 곧바로 반응한다 <sup>[1 461장 p.3608]</sup>.</li>\n</ul>\n<p>이 두 사실 — 가려움은 면역반응, 첫 감염은 오래 무증상 — 이 치료 원칙 둘을 만든다. ① 면역반응만 누르는 약(스테로이드·항히스타민)은 원인을 없애지 못한다. ② 지금 가렵지 않은 접촉자도 감염돼 있을 수 있다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>가려움</strong>: 밤과 뜨거운 샤워 뒤 심하고, 병변이 적은 곳까지 전신이 가렵다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>굴</strong>: 표피 위쪽의 3–15 mm 어두운 물결 모양 선. 수가 적고 긁은 자국에 가려 찾기 어렵다.</li>\n<li><strong>분포</strong>: 손목 굽힘쪽·손가락 사이가 가장 흔하고, 남자는 음경·음낭이 거의 항상 침범된다. 겨드랑이·배꼽·허리띠 선·엉덩이·허벅지 위쪽에 구진·수포·습진성 판·결절이 대칭으로. 영아를 빼면 얼굴·두피·목·손발바닥은 대개 빠진다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>2차 세균 감염</strong>: 황색포도알균·화농연쇄알균에 의한 농가진·연조직염, 드물게 연쇄알균 감염 후 사구체신염 <sup>[1 461장 p.3609]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>딱지옴(가피옴)</strong>: 스테로이드 사용·면역저하(HIV 포함)·긁지 못하는 신경/정신 질환에서 수천 마리가 번식한다. 건선처럼 두꺼운 각화성 딱지·비늘 판·이영양성 손발톱, 굴은 보이지 않고 가려움이 적지만 전염력이 매우 커 병원 내 일반 옴 집단 발생의 원인이 된다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>다른 가려운 피부병</strong>: 아토피피부염·접촉피부염·두드러기·곤충 교상. 「집단 발생」이라는 추정만으로 다른 병을 옴으로 오진하는 일도 흔하므로 분포·굴을 확인한다 <sup>[1 461장 p.3608]</sup>.</li>\n<li>다른 포유류의 옴 진드기는 사람에게 일시적 자극을 줄 뿐 번식하지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>굴 긁어 현미경</strong>: 멸균 바늘·칼날로 굴을 벗겨 진드기·알·배설물을 찾는다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>더모스코피·투명 테이프·표재 생검</strong>: 보조 진단.</li>\n<li><strong>임상 진단</strong>: 진드기를 찾지 못해도 가려움·진찰 소견·역학적 연결(감염자와의 오랜 직접 접촉)이 있으면 옴으로 진단하고 치료한다 <sup>[1 461장 p.3608]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "치료 — 원인 치료와 증상 조절을 나눠서",
+    "deep": false,
+    "html": "<ul>\n<li><strong>살충제(원인 치료)</strong>: 퍼메트린 5 % 크림이 린데인보다 독성이 적고 린데인 내성에도 듣는다. 목욕 뒤 <strong>턱선 아래 전신</strong>에 얇고 빠짐없이 — 손가락 사이·배꼽·손톱 밑까지 — 바르고 6–14시간 뒤 비누로 씻는다. 크로타미톤·스피노사드도 국소 대안이다 <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>경구 이버멕틴</strong>: 200 μg/kg 1회가 건강한 사람에게 효과적이다(미국 FDA 옴 적응증은 미승인) <sup>[1 461장 p.3608]</sup>.</li>\n<li><strong>밀접 접촉자 동시 치료</strong>: 확진 환자의 밀접 접촉자는 증상이 없어도 <strong>같은 때에</strong> 치료한다 <sup>[1 461장 p.3609]</sup>.</li>\n<li><strong>환경</strong>: 침구·의류는 뜨거운 물로 빨고 고온 건조하거나 다림질하고, 주변을 청소한다 <sup>[1 461장 p.3609]</sup>.</li>\n<li><strong>증상 조절(보조)</strong>: 보습제·멘톨·칼라민·경구 항히스타민이 치료 중 가려움을 덜고, 치료 뒤 남은 가려움에는 국소 스테로이드를 쓴다 <sup>[1 461장 p.3608–3609]</sup>.</li>\n<li><strong>딱지옴</strong>: 6 % 살리실산 같은 각질용해제를 먼저 바른 뒤 두피·얼굴·귀까지 전신에 살충제, 이버멕틴을 8–30일에 걸쳐 3–7회 <sup>[1 461장 p.3608]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>효과적 치료 <strong>하루 뒤면 전염력이 없다</strong>. 그러나 죽은 진드기에 대한 과민 피부염으로 가려움이 몇 주 남는다 — 새 굴이 없으면 치료 실패가 아니며, 불필요한 반복 도포는 (특히 퍼메트린) 접촉피부염을 부른다 <sup>[1 461장 p.3608]</sup>.</li>\n<li>새 굴이 생기거나 접촉자 치료가 빠졌다면 재감염·치료 실패로 보고 다시 평가한다.</li>\n<li>영아는 얼굴·두피도 침범되므로 도포 범위를 넓힌다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 퍼메트린을 몇 번 바르나</strong> — 시험 기준: 퍼메트린 5 % 전신 도포 + 접촉자 동시 치료 <sup>[1 461장 p.3608–3609]</sup> / 다른 기준: 1주 뒤 2회째 도포를 권하는 지침이 있다 <sup>[2†]</sup> / 왜 다른가: 해리슨은 1회 도포 방법만 쓰고 재도포 간격을 적지 않았다(알에는 살충제가 덜 들어 부화한 유충을 잡으려는 목적의 재도포로 알려져 있으나 원문 미대조) / 시험에서는: KMLE·USMLE 모두 「환자와 접촉자 동시 퍼메트린」이 답의 핵심이며, 재도포 횟수를 묻는 보기면 지침(1주 뒤 반복)을 따르는지 확인한다.</li>\n</ul>"
+   },
+   {
+    "title": "스테로이드가 옴을 키우는 이유",
+    "deep": true,
+    "html": "<p>국소·전신 스테로이드는 진드기에 대한 염증·면역 반응을 눌러 가려움과 긁기를 줄이지만 진드기는 그대로 둔다. 해리슨은 스테로이드 사용과 가려움·긁기 반응을 막는 신경·정신 질환을 딱지옴(수천 마리의 과다 감염)의 원인으로 함께 든다 <sup>[1 461장 p.3608]</sup>. 진단 전 「습진」으로 스테로이드를 오래 바르면 전형적인 굴·분포가 흐려져 진단이 늦어질 수 있다는 점에서도, 굴·호발 부위·주변의 가려움을 먼저 확인한다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "옴 치료 — 원인 치료와 증상 조절을 나눠서",
+    "columns": [
+     "처치",
+     "대상·방법",
+     "역할",
+     "주의",
+     "근거"
+    ],
+    "rows": [
+     [
+      "퍼메트린 5 % 크림",
+      "환자 + 밀접 접촉자(증상 무관) 동시, 턱선 아래 전신·손가락 사이·배꼽·손톱 밑, 6–14시간 뒤 세척",
+      "진드기 박멸 — 원인 치료",
+      "반복 도포는 접촉피부염 유발 가능",
+      "<sup>[1 461장 p.3608–3609]</sup>"
+     ],
+     [
+      "경구 이버멕틴 200 μg/kg",
+      "국소제 적용이 어렵거나 집단 발생, 딱지옴(3–7회)",
+      "전신 살충",
+      "미국 FDA 옴 적응증은 미승인",
+      "<sup>[1 461장 p.3608]</sup>"
+     ],
+     [
+      "침구·의류 고온 세탁·건조, 환경 청소",
+      "치료 시점에 함께",
+      "재감염 예방",
+      "옷·침구 전파는 직접 접촉보다 드물다",
+      "<sup>[1 461장 p.3608–3609]</sup>"
+     ],
+     [
+      "보습제·항히스타민·칼라민",
+      "치료 중·후 가려움",
+      "증상 조절(보조)",
+      "단독으로는 진드기를 죽이지 못한다",
+      "<sup>[1 461장 p.3608–3609]</sup>"
+     ],
+     [
+      "국소 스테로이드",
+      "효과적 치료 뒤 남는 가려움",
+      "과민 피부염 진정",
+      "치료 전 단독 사용은 원인을 가리고 딱지옴 위험 인자",
+      "<sup>[1 461장 p.3608–3609]</sup>"
+     ],
+     [
+      "항생제",
+      "2차 세균 감염(농가진·연조직염)",
+      "합병증 치료",
+      "옴 치료를 대신하지 않는다",
+      "<sup>[1 461장 p.3609]</sup>"
+     ]
+    ],
+    "note": "치료 하루 뒤면 전염력은 없어진다 — 가려움이 남는다고 치료 실패가 아니다 <sup>[1 461장 p.3608]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "가려운 습진성 발진 = 국소 스테로이드 vs 옴",
+    "point": "국소 스테로이드는 과민반응(가려움·염증)을 누를 뿐 진드기를 죽이지 못한다. 원인 치료 없이 스테로이드만 쓰면 증상이 가려진 채 진드기가 계속 늘고 전파되며, 스테로이드 사용은 딱지옴(가피옴)의 위험 인자이기도 하다. 굴·호발 부위·집단 발생이 보이면 살충제가 먼저다.",
+    "exception": "효과적인 살충제 치료 뒤에도 몇 주 남는 가려움(옴 후 과민 피부염)에는 국소 스테로이드가 맞는 선택이다 <sup>[1 461장 p.3609]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "증상이 있는 사람만 치료",
+    "point": "첫 감염은 최대 6주까지 가려움 없이 지나가므로, 지금 증상이 없는 동거인·성 접촉자도 감염돼 있을 수 있다. 한 사람씩 치료하면 서로 다시 옮기는(핑퐁) 재감염이 반복된다 — 증상 유무와 무관하게 동시에 치료한다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "항히스타민만 주고 관찰 / 국소 항생제",
+    "point": "항히스타민은 치료 중·후 가려움을 덜어 주는 보조다. 긁어서 생긴 2차 세균 감염(황색포도알균·화농연쇄알균 — 농가진·연조직염)이 있으면 그에 맞는 항생제를 더하지만, 옴 자체의 치료는 여전히 살충제다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "딱지옴(가피옴) — 가렵지 않은 옴",
+    "point": "스테로이드 사용·면역저하·신경/정신 질환으로 긁지 못하는 사람에게 수천 마리가 번식해 건선처럼 두꺼운 딱지와 이영양성 손발톱이 생긴다. 굴이 보이지 않고 가려움이 적지만 전염력이 매우 커 병원 집단 발생의 원인이 된다. 각질용해제 뒤 두피·얼굴까지 전신 살충제와 경구 이버멕틴 여러 번이 필요하다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "현미경에서 진드기를 못 찾아도 옴을 배제하지 않는다 — 굴은 수가 적고 긁은 자국에 가려진다. 가려움·진찰·역학으로 임상 진단한다 <sup>[1 461장 p.3608]</sup>.",
+   "반대로 「집단 발생」이라는 이유만으로 다른 피부병을 옴으로 오진하는 일도 흔하다 <sup>[1 461장 p.3608]</sup>.",
+   "퍼메트린 재도포 간격(1주 뒤 2회째 등)은 해리슨에 없고 다른 지침의 권고다 — 시험 쟁점 절 참조."
+  ],
+  "criteria": [
+   {
+    "id": "scabies-tx-harrison",
+    "name": "일반 옴 치료(해리슨)",
+    "kind": "치료 기준",
+    "population": "일반 옴 환자와 밀접 접촉자",
+    "statement": "퍼메트린 5 % 크림을 목욕 뒤 턱선 아래 전신에 바르고 6–14시간 뒤 씻어 낸다. 대안: 경구 이버멕틴 200 μg/kg 1회(미국 FDA 옴 적응증 미승인). 확진 환자의 밀접 접촉자는 증상이 없어도 동시에 치료하고, 침구·의류는 세탁 후 고온 건조",
+    "exceptions": "딱지옴은 각질용해제 + 두피·얼굴 포함 전신 도포, 이버멕틴 3–7회(8–30일). 영아는 얼굴·두피도 침범",
+    "source": "harrison-21",
+    "locator": "461장 p.3608–3609 Treatment: Scabies",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 461: Ectoparasite Infestations and Arthropod Injuries",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 461장 p.3608–3616",
+    "checked": "본문 대조(드라이브 문서, 461장 p.3608–3609) — 생활사·전파(주로 직접 피부 접촉, 숙주 없이 하루 남짓 생존, 침구·의류 전파는 생각보다 드묾), 과민반응 기전과 첫 감염 최대 6주 무증상, 야간·온수 샤워 뒤 악화, 굴(3–15 mm)과 호발 부위·얼굴·두피·손발바닥 제외(영아 예외), 딱지옴(스테로이드·면역저하·신경정신 질환, 굴 없음·가려움 적음·강한 전염력), 진단(굴 긁어 현미경, 더모스코피, 임상 진단), 치료(퍼메트린 5 %·크로타미톤·스피노사드·린데인, 턱선 아래 도포 후 6–14시간, 이버멕틴 200 μg/kg 1회, 딱지옴 이버멕틴 3–7회), 치료 1일 뒤 비전염·가려움 수 주 지속, 불필요한 재치료가 접촉피부염 유발, 치료 후 남은 가려움에 국소 스테로이드, 침구·의류 고온 세탁, 무증상 밀접 접촉자 동시 치료, 2차 세균 감염(농가진·연조직염·연쇄알균 감염 후 사구체신염)을 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "cdc-scabies",
+    "org": "Centers for Disease Control and Prevention",
+    "title": "Scabies — Clinical Care / Treatment",
+    "kind": "guideline",
+    "citation": "CDC. Parasites — Scabies: Clinical Overview and Treatment (웹 문서)",
+    "checked": "서지만 — 루틴 컨테이너에서 외부 접속이 막혀 본문(퍼메트린 재도포 간격 등)을 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.cdc.gov/scabies/hcp/clinical-care/index.html"
+   }
+  ],
+  "checks": [
+   {
+    "q": "동거인이 지금 가렵지 않아도 함께 치료하는 이유를 기전으로 설명하라.",
+    "a": "가려움은 진드기에 대한 과민반응이라 첫 감염에서는 감작까지 최대 6주 동안 증상이 없다. 무증상 감염자를 남기면 치료받은 사람에게 다시 옮긴다."
+   },
+   {
+    "q": "퍼메트린 치료 2주 뒤에도 가려움이 남은 환자, 새 굴은 없다. 다음 처치는?",
+    "a": "죽은 진드기에 대한 과민 피부염(옴 후 가려움)으로 보고 보습제·항히스타민·국소 스테로이드로 조절한다. 불필요한 재치료는 접촉피부염을 부른다."
+   },
+   {
+    "q": "가렵지 않은데 옴인 경우는?",
+    "a": "딱지옴 — 면역저하·스테로이드 사용·긁지 못하는 신경정신 질환자에서 수천 마리가 번식해 두꺼운 딱지를 만든다. 가려움이 적지만 전염력이 매우 크다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.derm.scabies.treat-with-contacts#v1",
+    "context": "같은 옴, 효과적 치료 뒤 남은 가려움",
+    "stem": "24세 남자가 가려움이 낫지 않는다며 다시 왔다. 2주 전 손가락 사이와 손목의 굴로 옴을 진단받아 본인과 함께 사는 두 명이 같은 날 퍼메트린 크림을 지시대로 전신에 발랐고, 침구와 옷도 뜨거운 물로 빨았다. 동거인들은 가려움이 없어졌다. 혈압 120/74 mmHg, 맥박 76회/분, 호흡 16회/분, 체온 36.6 ℃. 손목과 배꼽 주변에 긁은 자국과 습진성 구진이 있으나 새로 생긴 굴은 없고, 병변을 긁어 본 현미경 검사에서 진드기와 알이 보이지 않는다. 가장 적절한 처치는?",
+    "options": [
+     "국소 스테로이드와 보습제를 바른다",
+     "퍼메트린을 매일 1주간 다시 바른다",
+     "환자와 동거인에게 퍼메트린을 다시 바른다",
+     "경구 항진균제를 투여한다",
+     "국소 항생제 연고를 바른다"
+    ],
+    "answer": 1,
+    "explanation": "효과적인 살충제 치료를 접촉자와 함께 마쳤고 새 굴·진드기가 없다. 남은 가려움은 죽은 진드기와 그 잔해에 대한 과민 피부염으로 몇 주 지속될 수 있으며, 국소 스테로이드·보습제·항히스타민으로 조절한다. 불필요한 재도포는 접촉피부염을 부른다. 원 문항에서는 치료 전의 활동성 감염(새 굴·동거인의 가려움)이라 살충제와 접촉자 동시 치료가 먼저였다 — 답을 바꾼 것은 「이미 효과적으로 치료했고 활동성 감염의 증거가 없다」는 단서다.",
+    "of": "kmle-2026-0129",
+    "changed": "치료 전의 새 굴·집단 가려움 → 2주 전 환자·동거인 모두 퍼메트린으로 치료했고 새 굴 없음, 긁은 자국·습진성 구진만 남음 ⇒ 정답이 접촉자 동시 퍼메트린에서 국소 스테로이드(증상 조절)로",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.scabies.treat-with-contacts#v2",
+    "context": "겉모습만 다른 옴 — 요양원 같은 방",
+    "stem": "71세 여자가 3주 전부터 잠을 설칠 만큼 밤에 심해지는 가려움으로 왔다. 요양원에서 3명이 한 방을 쓰며, 같은 방의 한 명도 최근 가렵다고 하고 다른 한 명은 아직 증상이 없다. 혈압 132/80 mmHg, 맥박 72회/분, 호흡 16회/분, 체온 36.5 ℃. 겨드랑이와 허리띠 선을 따라 긁은 구진이 있고, 손가락 사이에 3–5 mm 의 가는 물결 모양 선이 보인다. 두꺼운 딱지나 손발톱 변형은 없고 면역억제제 복용력은 없다. 가장 적절한 치료 방침은?",
+    "options": [
+     "병변 부위에만 국소 스테로이드를 바른다",
+     "증상이 있는 두 사람만 퍼메트린으로 치료한다",
+     "환자와 같은 방 사람 모두를 동시에 퍼메트린으로 치료한다",
+     "경구 항히스타민만 주고 경과를 관찰한다",
+     "국소 항생제 연고를 바른다"
+    ],
+    "answer": 3,
+    "explanation": "나이·거주 형태는 달라도 야간 악화 가려움, 손가락 사이의 굴, 겨드랑이·허리띠 선 병변, 같은 공간의 가려움은 옴이다. 첫 감염은 최대 6주까지 증상이 없으므로 증상 없는 룸메이트도 함께 동시에 치료하고 침구·의류를 처리한다. 스테로이드·항히스타민은 진드기를 죽이지 못하고, 딱지옴 소견은 없어 일반 치료로 충분하다.",
+    "of": "kmle-2026-0129",
+    "changed": "나이·성별·거주 형태(요양원 같은 방)·병변 부위 서술 순서를 바꾸고, 야간 가려움·호발 부위의 굴·같은 방 사람들의 가려움은 남김 ⇒ 답은 그대로 환자와 밀접 접촉자 동시 퍼메트린",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "밤에 심한 전신 가려움 — 옴 진단에서 치료 범위까지",
+  "geo": {
+   "title": "밤에 심한 전신 가려움 — 옴 진단에서 치료 범위까지",
+   "w": 454,
+   "h": 1080.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "밤·샤워 뒤 심해지는 전신",
+      "가려움 → 병변 부위·모양,",
+      "주변 사람의 가려움,",
+      "스테로이드·면역저하 병력",
+      "확인"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "sus",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "호발 부위(손가락 사이·손목·",
+      "음부·겨드랑이·허리띠 선)의",
+      "구진·굴, 또는 역학적 연결이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 197.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "옴 가능성 낮음 —",
+      "아토피피부염·접촉피부염·",
+      "두드러기 등 다른 원인 평가"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 361.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "굴을 긁어 현미경(진드기·알·",
+      "배설물) 또는 더모스코피 —",
+      "못 찾으면 가려움·진찰·",
+      "역학으로 임상 진단"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 361.0
+    },
+    {
+     "id": "crust",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "두꺼운 딱지·손발톱 변형,",
+      "가려움이 적은 면역저하·",
+      "스테로이드 사용자인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 525.0
+    },
+    {
+     "id": "crusted",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "딱지옴 — 각질용해제 + 두피·",
+      "얼굴 포함 전신 살충제 +",
+      "이버멕틴 여러 번, 접촉 차단"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 672.0
+    },
+    {
+     "id": "treat",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "퍼메트린 5 % 턱선 아래 전신",
+      "도포 — 환자와 밀접",
+      "접촉자(증상 무관) 동시,",
+      "침구·의류 고온 세탁"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 672.0
+    },
+    {
+     "id": "itch",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "치료 뒤에도 가려움이",
+      "남는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 836.0
+    },
+    {
+     "id": "post",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "옴 후 과민 피부염 — 보습·",
+      "항히스타민·국소 스테로이드,",
+      "새 굴이 없으면 재치료하지",
+      "않음"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 966.0
+    },
+    {
+     "id": "done",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "완치 — 새 병변·새 굴이",
+      "생기면 재감염·치료 실패",
+      "평가"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 966.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sus",
+     "points": [
+      [
+       227.0,
+       131
+      ],
+      [
+       227.0,
+       141
+      ],
+      [
+       227.0,
+       141
+      ],
+      [
+       227.0,
+       197.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sus",
+     "to": "other",
+     "points": [
+      [
+       194.3,
+       295.0
+      ],
+      [
+       194.3,
+       305.0
+      ],
+      [
+       114.0,
+       305.0
+      ],
+      [
+       114.0,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 341.0
+     }
+    },
+    {
+     "from": "sus",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       295.0
+      ],
+      [
+       259.7,
+       311.0
+      ],
+      [
+       340.0,
+       311.0
+      ],
+      [
+       340.0,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 341.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "crust",
+     "points": [
+      [
+       340.0,
+       459.0
+      ],
+      [
+       340.0,
+       469.0
+      ],
+      [
+       227.0,
+       469.0
+      ],
+      [
+       227.0,
+       525.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "crust",
+     "to": "crusted",
+     "points": [
+      [
+       194.3,
+       606.0
+      ],
+      [
+       194.3,
+       616.0
+      ],
+      [
+       114.0,
+       616.0
+      ],
+      [
+       114.0,
+       672.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 652.0
+     }
+    },
+    {
+     "from": "crust",
+     "to": "treat",
+     "points": [
+      [
+       259.7,
+       606.0
+      ],
+      [
+       259.7,
+       622.0
+      ],
+      [
+       340.0,
+       622.0
+      ],
+      [
+       340.0,
+       672.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 652.0
+     }
+    },
+    {
+     "from": "treat",
+     "to": "itch",
+     "points": [
+      [
+       340.0,
+       770.0
+      ],
+      [
+       340.0,
+       780.0
+      ],
+      [
+       227.0,
+       780.0
+      ],
+      [
+       227.0,
+       836.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "itch",
+     "to": "post",
+     "points": [
+      [
+       194.3,
+       900.0
+      ],
+      [
+       194.3,
+       910.0
+      ],
+      [
+       114.0,
+       910.0
+      ],
+      [
+       114.0,
+       966.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "남음(새 굴 없음)"
+      ],
+      "w": 94.2,
+      "h": 17,
+      "x": 66.9,
+      "y": 946.0
+     }
+    },
+    {
+     "from": "itch",
+     "to": "done",
+     "points": [
+      [
+       259.7,
+       900.0
+      ],
+      [
+       259.7,
+       916.0
+      ],
+      [
+       340.0,
+       916.0
+      ],
+      [
+       340.0,
+       966.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 946.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "밤·샤워 뒤 심해지는 전신 가려움 → 병변 부위·모양, 주변 사람의 가려움, 스테로이드·면역저하 병력 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "호발 부위(손가락 사이·손목·음부·겨드랑이·허리띠 선)의 구진·굴, 또는 역학적 연결이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "sus",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "호발 부위(손가락 사이·손목·음부·겨드랑이·허리띠 선)의 구진·굴, 또는 역학적 연결이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 3,
+      "toText": "옴 가능성 낮음 — 아토피피부염·접촉피부염·두드러기 등 다른 원인 평가"
+     },
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "굴을 긁어 현미경(진드기·알·배설물) 또는 더모스코피 — 못 찾으면 가려움·진찰·역학으로 임상 진단"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "옴 가능성 낮음 — 아토피피부염·접촉피부염·두드러기 등 다른 원인 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "굴을 긁어 현미경(진드기·알·배설물) 또는 더모스코피 — 못 찾으면 가려움·진찰·역학으로 임상 진단",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "두꺼운 딱지·손발톱 변형, 가려움이 적은 면역저하·스테로이드 사용자인가?"
+     }
+    ]
+   },
+   {
+    "id": "crust",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "두꺼운 딱지·손발톱 변형, 가려움이 적은 면역저하·스테로이드 사용자인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "딱지옴 — 각질용해제 + 두피·얼굴 포함 전신 살충제 + 이버멕틴 여러 번, 접촉 차단"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "퍼메트린 5 % 턱선 아래 전신 도포 — 환자와 밀접 접촉자(증상 무관) 동시, 침구·의류 고온 세탁"
+     }
+    ]
+   },
+   {
+    "id": "crusted",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "딱지옴 — 각질용해제 + 두피·얼굴 포함 전신 살충제 + 이버멕틴 여러 번, 접촉 차단",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "treat",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "퍼메트린 5 % 턱선 아래 전신 도포 — 환자와 밀접 접촉자(증상 무관) 동시, 침구·의류 고온 세탁",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "치료 뒤에도 가려움이 남는가?"
+     }
+    ]
+   },
+   {
+    "id": "itch",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "치료 뒤에도 가려움이 남는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "남음(새 굴 없음)",
+      "to": 9,
+      "toText": "옴 후 과민 피부염 — 보습·항히스타민·국소 스테로이드, 새 굴이 없으면 재치료하지 않음"
+     },
+     {
+      "label": "없음",
+      "to": 10,
+      "toText": "완치 — 새 병변·새 굴이 생기면 재감염·치료 실패 평가"
+     }
+    ]
+   },
+   {
+    "id": "post",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "옴 후 과민 피부염 — 보습·항히스타민·국소 스테로이드, 새 굴이 없으면 재치료하지 않음",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "done",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "완치 — 새 병변·새 굴이 생기면 재감염·치료 실패 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0129"
+  ],
+  "hasErrors": false
+ },
+ "cn.derm.ssss.antistaphylococcal-therapy": {
+  "id": "cn.derm.ssss.antistaphylococcal-therapy",
+  "title": "포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다",
+  "objective": "발열·전신 홍반·니콜스키 양성 표층 박리·점막 보존인 어린 소아를 포도알균 열상피부증후군으로 알아보고, 스테로이드가 아니라 정맥 항포도알균 항생제와 수액·상처 관리를 고른다",
+  "objectiveKind": "치료",
+  "condition": "포도알균 열상피부증후군(SSSS)",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Dermatology",
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "443152d0cdbdc311",
+  "summary": [
+   "원인: 황색포도알균이 국소 감염 부위(입 주위·코·배꼽·결막 등)에서 표피박리독소(ETA·ETB)를 내고, 독소가 퍼져 멀리 떨어진 피부까지 벗긴다.",
+   "독소는 표층 표피의 데스모솜 카데린(데스모글레인 1)을 자르는 단백분해효소 — 갈라지는 층이 과립층이라 얕게 벗겨지고, 점막은 대개 보존된다.",
+   "주로 신생아·어린 소아. 발열·보챔·수유 곤란, 넓게 벗겨지면 수분 손실이 크다.",
+   "치료는 원인 균: 정맥 항포도알균 항생제(옥사실린·나프실린 같은 페니실린분해효소 저항 페니실린 또는 1세대 세팔로스포린, MRSA 가 흔하면 반코마이신) + 수액·보온·상처 관리.",
+   "스테로이드(국소·전신)는 원인 치료가 아니고 감염을 돕는다. 점막 침범·표적 병변·약물 노출이 있으면 SJS/TEN 을 감별한다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>포도알균 열상피부증후군(SSSS)은 황색포도알균이 국소 감염 부위에서 만든 <strong>표피박리독소</strong>가 혈류로 퍼져, 감염되지 않은 먼 피부의 표층을 벗기는 독소 매개 질환이다 <sup>[1 147장 p.1181]</sup>. 주로 신생아와 어린 소아에게 생긴다 <sup>[1 147장 p.1184]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 표피의 각질형성세포는 데스모솜으로 서로 붙어 있다. 표피 위층에서는 데스모글레인 1 이 이 접착을 맡는다 <sup>[2†]</sup>. 표피박리독소 ETA·ETB 는 세린 단백분해효소로 표층의 데스모솜 카데린을 잘라 <strong>과립층 높이</strong>에서 표피를 가른다 <sup>[1 147장 p.1181]</sup>. 점막 상피는 위층 접착을 데스모글레인 1 에 덜 의존하므로 대개 보존된다 <sup>[2†]</sup>. 어린 소아에게 많은 것은 독소에 대한 항체가 아직 없고 독소 배설이 적기 때문으로 설명된다 — 항독소 항체가 SSSS 를 막는다는 근거가 있다 <sup>[1 147장 p.1180]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>국소 감염 병소(입 주위 노란 딱지·코·배꼽·결막) → 독소 생산의 출발점.</li>\n<li>독소가 퍼짐 → 발열·보챔·전신 홍반, 피부가 아프다.</li>\n<li>과립층 분리 → 얇은 수포가 살짝 눌러도 터지고 벗겨진다(니콜스키 양성) <sup>[1 147장 p.1184]</sup>.</li>\n<li>넓게 벗겨지면 피부 장벽이 없어져 <strong>수분 손실</strong>이 크다 <sup>[1 147장 p.1184]</sup>. 체온도 잃기 쉽다 — 수액·보온이 치료의 한 축인 이유.</li>\n<li>벗겨진 곳에는 균이 없을 수 있다 — 배양은 박리된 피부보다 병소(코·결막·배꼽 등)에서 얻는다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>SJS/TEN</strong>: 약물 노출, 점막 침범, 표피 전층 괴사(표 참고).</li>\n<li><strong>수포성 농가진</strong>: 독소가 병소 자리에만 작용한 국한형 — 같은 독소 스펙트럼의 한쪽 끝이다 <sup>[1 147장 p.1184]</sup>.</li>\n<li><strong>성홍열·독성쇼크증후군</strong>: 홍반은 있으나 표층 박리가 이렇게 일찍 넓게 오지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 임상적이다. 병소 배양으로 포도알균과 감수성을 확인하고, 수분·전해질·신기능을 본다. 혈액배양은 소아에서 흔히 음성이다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>정맥 항포도알균 항생제</strong> — 옥사실린·나프실린(페니실린분해효소 저항 페니실린), 대안으로 1세대 세팔로스포린 <sup>[1 147장 p.1185]</sup>. MRSA 가 흔한 지역이면 반코마이신을 포함한다.</li>\n<li><strong>수액·보온</strong>: 벗겨진 면적에 비례해 수분 손실이 크다.</li>\n<li><strong>상처 관리</strong>: 비고착성 드레싱, 통증 조절.</li>\n<li>박리는 균이 없어지고 독소 생산이 멈춘 뒤 대개 흉터 없이 낫는다(과립층 분리라 진피가 남는다).</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>스테로이드(국소·전신)는 쓰지 않는다 — 원인 치료가 아니다.</li>\n<li>성인 SSSS 는 드물다 <sup>[1 147장 p.1184]</sup> — 성인에서 넓은 박리는 먼저 SJS/TEN 을 생각한다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 147장 p.1180–1185)</li>\n</ul>"
+   },
+   {
+    "title": "같은 독소, 두 모습",
+    "deep": true,
+    "html": "<p>수포성 농가진과 SSSS 는 같은 표피박리독소의 국소형과 전신형이다. 독소가 병소 안에 머물면 국한된 물집, 혈류로 퍼지면 먼 곳까지 벗겨진다. 그래서 어느 쪽이든 치료의 과녁은 독소를 만드는 <strong>균</strong>이다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "SSSS 와 중독표피괴사용해(TEN) 가르기",
+    "columns": [
+     "",
+     "SSSS",
+     "SJS/TEN"
+    ],
+    "rows": [
+     [
+      "원인",
+      "포도알균 표피박리독소",
+      "약물(항경련제·설폰아마이드·알로퓨리놀 등)"
+     ],
+     [
+      "갈라지는 층",
+      "과립층(표피 안, 얕음)",
+      "표피 전층 괴사(표피-진피 경계)"
+     ],
+     [
+      "점막",
+      "대개 보존",
+      "2곳 이상 침범이 흔함"
+     ],
+     [
+      "주 연령",
+      "신생아·어린 소아",
+      "성인"
+     ],
+     [
+      "치료",
+      "항포도알균 항생제 + 지지",
+      "원인 약 중단 + 화상 치료 수준 지지"
+     ]
+    ],
+    "note": "SSSS 칸의 원인·층·점막·연령은 해리슨 147장 p.1181·1184. SJS/TEN 칸은 이 장에서 대조하지 않았다(해리슨 60장 영역)."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「피부가 빨갛고 벗겨진다 = 피부 염증 → 스테로이드」 vs SSSS",
+    "point": "SSSS 의 피부 소견은 염증이 아니라 독소가 데스모솜을 자른 결과다. 독소를 만드는 균을 없애야 박리가 멈춘다. 국소든 전신이든 스테로이드는 원인을 건드리지 못하고 감염 조절을 방해할 수 있다.",
+    "exception": "발열·전신 증상 없는 국한된 습진·접촉피부염은 국소 스테로이드의 자리다 — 발열·딱지(감염 병소)·니콜스키 양성·점막 보존이 가른다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "점막 보존 vs 점막 침범",
+    "point": "SSSS 는 점막이 대개 보존된다 <sup>[1 147장 p.1184]</sup>. 입·눈·생식기 점막이 벗겨지고 새 약물 노출이 있으면 SJS/TEN 쪽으로 판단을 옮긴다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "ssss-mechanism",
+    "name": "기전",
+    "kind": "병태 근거",
+    "population": "SSSS",
+    "statement": "표피박리독소(ETA·ETB)는 표층 피부의 데스모솜 카데린을 자르는 세린 단백분해효소로, 과립층 높이에서 표피를 가른다 [[harrison-21: 147장 p.1181]]",
+    "exceptions": "성인에서는 드물고, 신기능 저하·면역저하에서 생길 수 있다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ssss-antibiotic",
+    "name": "항포도알균 항생제",
+    "kind": "치료 권고",
+    "population": "페니실린 내성 포도알균 감염",
+    "statement": "옥사실린·나프실린 등 페니실린분해효소 저항 페니실린, 대안으로 세팔로스포린(1세대가 2·3세대보다 못하지 않다) [[harrison-21: 147장 p.1185]]",
+    "exceptions": "MRSA 가 의심되거나 흔한 지역은 반코마이신 등 — 지역 내성률에 따른다. SSSS 에 대한 구체 용법은 해리슨 147장이 따로 적지 않는다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 147: Staphylococcal Infections",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 147장 p.1180–1185",
+    "checked": "본문 대조(드라이브 147장 문서) — p.1180 독소 3종·항독소 항체 보호 · p.1181 표피박리독소 ETA·ETB 는 표층 피부 데스모솜 카데린을 자르는 세린 단백분해효소, 과립층에서 분리, 신생아에 가장 흔함 · p.1184 SSSS 는 신생아·소아, 국소 물집에서 광범위 박리까지, 얇은 수포가 살짝 눌러도 터짐, 점막은 대개 보존, 발열·보챔·수유 곤란, 수분 손실, 국소 감염에 뒤따름, 성인은 드묾 · p.1185 페니실린 내성은 옥사실린·나프실린, 세팔로스포린 대안(1세대가 2·3세대보다 못하지 않음). SSSS 의 구체 치료 용법·수액량·SJS/TEN 비교는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "ladhani-1999",
+    "org": "Ladhani S, Joannou CL, Lochrie DP, Evans RW, Poston SM (종설)",
+    "title": "Clinical, microbial, and biochemical aspects of the exfoliative toxins causing staphylococcal scalded-skin syndrome",
+    "kind": "review",
+    "citation": "Clin Microbiol Rev 1999;12(2):224-242",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 접근이 막혀 대조하지 못함(데스모글레인 1 표적 서술은 미대조)",
+    "doi": "10.1128/CMR.12.2.224",
+    "pmid": "",
+    "verified": "citation",
+    "year": "1999",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1128/CMR.12.2.224"
+   }
+  ],
+  "checks": [
+   {
+    "q": "SSSS 에서 표피가 얕게 벗겨지는 이유는?",
+    "a": "표피박리독소가 표층 표피의 데스모솜 카데린을 잘라 과립층 높이에서 갈라지기 때문이다."
+   },
+   {
+    "q": "SSSS 의 1차 치료는?",
+    "a": "정맥 항포도알균 항생제(옥사실린·나프실린 또는 1세대 세팔로스포린, MRSA 위험이면 반코마이신)와 수액·보온·상처 관리."
+   },
+   {
+    "q": "SSSS 와 TEN 을 가르는 진찰 소견 하나는?",
+    "a": "점막 — SSSS 는 대개 보존, TEN 은 흔히 침범."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.derm.ssss.antistaphylococcal-therapy#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 점막 침범과 새 약물",
+    "stem": "9세 여아가 사흘 전부터 열이 나고 얼굴과 몸통에 가운데가 짙은 붉은 반점이 퍼지더니 일부가 물집으로 변해 벗겨진다. 입술과 입안이 헐어 먹지 못하고 양쪽 눈이 충혈되어 있다. 3주 전 뇌전증으로 카르바마제핀을 시작했다. 벗겨진 면적은 체표면의 약 15% 다. 가장 먼저 할 처치는?",
+    "options": [
+     "정맥 항포도알균 항생제를 투여한다",
+     "카르바마제핀을 즉시 중단한다",
+     "국소 스테로이드를 바른다",
+     "아시클로버를 투여한다",
+     "광선치료를 한다"
+    ],
+    "answer": 2,
+    "explanation": "새 약(카르바마제핀) 시작 뒤 수주 안에 생긴 표적 모양 반점·물집·박리에 입안·눈 점막 침범이 있으면 SJS/TEN 이다. 가장 먼저 원인 약을 끊는다. 원래 문항처럼 점막이 보존되고 입 주위 딱지(포도알균 병소)가 있는 어린 소아라면 SSSS 로 항포도알균 항생제가 답이다 — 점막과 약물 노출이 둘을 가른다.",
+    "of": "kmle-2026-0168",
+    "changed": "점막 보존·입 주위 딱지를 「입안·결막 짓무름과 표적 모양 반점」으로 바꾸고, 2주 전 시작한 항경련제를 넣음 → SSSS 가 아니라 SJS/TEN 이 되어 답이 「항포도알균 항생제」에서 「원인 약 중단」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.ssss.antistaphylococcal-therapy#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 신생아 배꼽 감염 뒤 박리",
+    "stem": "생후 10일 된 여아가 하루 전부터 열이 나고 잘 먹지 않으며 보챈다. 이틀 전부터 배꼽 둘레가 붉고 진물이 났고, 오늘은 목과 겨드랑이 피부가 빨갛게 되어 살짝 문질러도 얇게 벗겨진다. 입안과 눈은 정상이다. 체온 38.4 ℃, 맥박 176회/분. 가장 적절한 치료는?",
+    "options": [
+     "전신 스테로이드를 투여한다",
+     "국소 스테로이드를 바른다",
+     "정맥 항포도알균 항생제와 수액을 투여한다",
+     "아시클로버를 투여한다",
+     "보습제만 바르고 경과를 본다"
+    ],
+    "answer": 3,
+    "explanation": "배꼽 감염 병소, 발열, 문지르면 얇게 벗겨지는 피부(니콜스키 양성), 점막 보존은 신생아 SSSS 다. 병소가 입 주위든 배꼽이든 결정 단서는 같다 — 표피박리독소를 내는 포도알균을 정맥 항생제(옥사실린·나프실린, 대안 1세대 세팔로스포린)로 치료하고 수분 손실을 보충한다 [[harrison-21: 147장 p.1184–1185]]. 스테로이드는 원인 치료가 아니다.",
+    "of": "kmle-2026-0168",
+    "changed": "나이·성별(생후 10일 여아)·감염 병소(입 주위 대신 배꼽 둘레 발적)·박리 부위를 바꾸고 「발열·니콜스키 양성 표층 박리·점막 보존」은 그대로 → 답은 여전히 정맥 항포도알균 항생제",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0168"
+  ],
+  "hasErrors": false
+ },
+ "cn.em.beta-blocker-overdose.glucagon-mechanism": {
+  "id": "cn.em.beta-blocker-overdose.glucagon-mechanism",
+  "title": "베타차단제 중독 — 글루카곤이 막힌 수용체를 우회하는 기전",
+  "objective": "심근의 베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → L형 칼슘통로 인산화로 이어지는 정상 신호를 설명하고, 베타차단제 중독의 서맥·저혈압이 이 사슬의 입구가 막힌 결과임을 이해한 뒤, 글루카곤이 자신의 Gs 결합 수용체로 같은 사슬에 들어가 cAMP 를 올린다는 기전을 PDE 억제·직접 칼슘통로 개방·수용체 경쟁 같은 다른 기전과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "베타차단제 중독(과량 복용)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Pharmacology",
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "ea6611e1e9621610",
+  "summary": [
+   "심근에서 노르에피네프린·에피네프린이 베타1 수용체에 붙으면 Gs 단백이 adenylate cyclase 를 켜 cAMP 가 늘고, PKA 가 L형 칼슘통로 등을 인산화해 칼슘 유입이 늘어난다 → 심박수(변시)와 수축력(변력)이 오른다 [[?goodman-gilman]].",
+   "베타차단제 중독은 이 사슬의 입구(베타 수용체)를 막아 서맥·방실차단·저혈압을 만든다. 해리슨 표 459-4 는 저혈당·고칼륨·경련도 적고, 프로프라놀롤처럼 막 작용(membrane-active)이 있는 약은 따로 위험하다고 적는다 [[harrison-21: 459장 p.3591]].",
+   "글루카곤은 베타 수용체가 아닌 **자신의 글루카곤 수용체**(역시 Gs 결합)에 붙어 같은 adenylate cyclase → cAMP 사슬을 켠다. 입구가 달라서 베타 수용체가 막혀 있어도 작동한다 [[?goodman-gilman]].",
+   "해리슨의 치료 순서: 저혈압·증상성 서맥에 글루카곤. 아트로핀·이소프로테레놀·도파민·도부타민·에피네프린·노르에피네프린은 때때로 효과가 있고, 반응이 없으면 고용량 인슐린(포도당·칼륨으로 정상 혈당·칼륨 유지)·조율·기계적 순환 보조 [[harrison-21: 459장 p.3591]].",
+   "cAMP 를 올리는 다른 길 — PDE 억제(밀리논: 분해를 막음), 칼슘 투여(세포 밖 칼슘을 늘림) — 도 있지만 글루카곤의 기전은 아니다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>베타차단제 중독은 베타 수용체 차단이 과도해 서맥·방실차단·저혈압·심인성 쇼크가 생기는 상태다. 약에 따라 심장선택(아테놀롤·메토프롤롤)·비선택(프로프라놀롤·나돌롤)·부분작용(핀돌롤)·알파 차단 겸비(카르베딜롤·라베탈롤)·막 작용(프로프라놀롤·소탈롤·아세부톨롤) 성질이 달라 중독 양상도 다르다 <sup>[1 459장 p.3591]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 심근: 카테콜아민 → 베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → L형 칼슘통로·포스포람반 인산화 → 칼슘 유입과 근소포체 칼슘 재흡수 증가 → 수축력과 심박수 증가 <sup>[2†]</sup>. 베타차단제는 이 사슬의 입구를 막는다. 사슬의 뒤쪽(adenylate cyclase 이후)은 멀쩡하므로, 다른 입구로 들어가거나(글루카곤) 뒤쪽을 직접 거드는(PDE 억제, 칼슘) 방법이 해독의 원리가 된다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>동결절·방실결절의 cAMP 감소 → 서맥·방실차단(아트로핀은 미주신경만 풀어 반응이 약하다).</li>\n<li>심근 cAMP 감소 → 수축력 저하 → 저혈압·심인성 쇼크.</li>\n<li>간 글리코겐 분해·포도당신생의 베타 매개 부분이 막힘 → 저혈당. 세포 안으로의 칼륨 이동 감소 → 고칼륨 <sup>[1 459장 p.3591]</sup>.</li>\n<li>막 작용 약(프로프라놀롤) → 나트륨통로 차단으로 QRS 연장·경련. 소탈롤 → QT 연장·심실빈맥. 서방형·소탈롤은 늦게 나타날 수 있다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>칼슘통로차단제 중독도 서맥·저혈압이지만 <strong>고혈당</strong>이 흔하고 저혈압이 주로 혈관저항 감소 때문이다. 디곡신 중독(고칼륨·다양한 부정맥), 클로니딘·아편류(축동·의식 저하)도 서맥·저혈압을 만든다 <sup>[1 459장 p.3591]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>12유도 심전도(PR·QRS·QT), 혈당·칼륨, 복용 약의 이름·제형(서방형 여부)·양. 베타차단제의 혈중 농도는 치료에 쓰지 않는다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li>기도·호흡·순환 확보, 수액, 아트로핀.</li>\n<li>저혈압·증상성 서맥에 <strong>글루카곤</strong> <sup>[1 459장 p.3591]</sup>.</li>\n<li>아트로핀·이소프로테레놀·도파민·도부타민·에피네프린·노르에피네프린은 때때로 효과가 있다.</li>\n<li>난치성: 고용량 인슐린(포도당·칼륨으로 정상 혈당·칼륨 유지), 전기 조율, 기계적 순환 보조 <sup>[1 459장 p.3587, p.3591]</sup>.</li>\n<li>반응 확인: 심박·혈압·소변량·의식, 혈당·칼륨 반복 측정.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>글루카곤은 구역·구토가 흔하다 — 의식이 떨어진 환자에서는 기도 보호를 먼저 생각한다(용량·지속 주입 속도는 이 정리본에서 대조하지 않았다).</li>\n<li>해리슨은 글루카곤을 먼저 적지만, 약제 간 우선순위는 근거 수준이 낮은 영역이다 — 이 정리본의 목표는 「왜 듣는가」의 기전이다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 459장 p.3587, 3591 — 문항의 해설과 어긋난 곳 없음. 수용체 수준의 기전은 해리슨이 다루지 않아 대조 범위 밖)</li>\n</ul>"
+   },
+   {
+    "title": "cAMP 를 올리는 여러 길",
+    "deep": true,
+    "html": "<p>표 「심근 cAMP·칼슘을 올리는 길」. 수용체가 막혔을 때의 해독 원리는 세 가지다 — 막힌 입구를 경쟁으로 연다(고용량 작용제), 다른 입구로 같은 사슬에 들어간다(글루카곤), 사슬의 뒤쪽을 거든다(PDE 억제·칼슘). USMLE 기전 문항은 이 셋을 서로의 오답으로 둔다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "심근 cAMP·칼슘을 올리는 길 — 무엇이 어디에 작용하나",
+    "columns": [
+     "약",
+     "작용점",
+     "베타 수용체가 막혀도?",
+     "기전"
+    ],
+    "rows": [
+     [
+      "베타 작용제(이소프로테레놀 등)",
+      "베타 수용체",
+      "경쟁 — 고용량 필요",
+      "막힌 입구를 경쟁으로 연다"
+     ],
+     [
+      "글루카곤",
+      "글루카곤 수용체(Gs)",
+      "작동한다",
+      "다른 입구로 같은 adenylate cyclase"
+     ],
+     [
+      "밀리논",
+      "PDE3",
+      "작동한다",
+      "cAMP 분해를 막는다(새로 만들지 않음)"
+     ],
+     [
+      "칼슘염",
+      "세포 밖 칼슘",
+      "작동한다",
+      "L형 통로를 지나는 칼슘의 양을 늘린다"
+     ]
+    ],
+    "note": "해리슨 표 459-4 는 약 이름과 사용 상황만 적고 수용체 수준의 기전은 적지 않는다 <sup>[1 459장 p.3591]</sup>. 기전 서술은 약리학 교과서 <sup>[2†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "글루카곤 = 「칼슘통로를 직접 연다」 vs 2차전달자를 거친다",
+    "point": "글루카곤 효과의 마지막 단계는 실제로 L형 칼슘통로를 통한 칼슘 유입 증가다. 그러나 그 사이에 글루카곤 수용체 → Gs → adenylate cyclase → cAMP → PKA 인산화가 있다. 기전 문항에서 「2차전달자 없이」「직접」 같은 말은 사슬의 중간을 지운 서술이다. 베타 수용체가 막혀도 글루카곤이 듣는 이유는 「다른 입구, 같은 사슬」이다.",
+    "exception": "칼슘염 투여는 통로를 지나는 칼슘의 양을 늘려 수축력을 올린다 — 이것은 글루카곤이 아니라 칼슘의 기전이다.",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "글루카곤 vs 밀리논(PDE 억제)",
+    "point": "둘 다 베타 수용체를 거치지 않고 cAMP 를 올리지만, 글루카곤은 cAMP 를 새로 만들게 하고(adenylate cyclase 활성) 밀리논은 이미 있는 cAMP 의 분해를 막는다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "글루카곤 = 혈당 호르몬?",
+    "point": "글루카곤은 간에서 글리코겐 분해로 혈당을 올리지만, 심박·혈압 회복은 심근 수용체-cAMP 작용이다. 혈당 상승은 부수 효과이고(구역·구토도 흔하다) 심장 효과의 원인이 아니다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "베타차단제 중독의 저혈당·고칼륨은 표 459-4 에 적힌 소견이다 — 고용량 인슐린을 쓸 때 포도당·칼륨을 함께 보는 이유이기도 하다 <sup>[1 459장 p.3591]</sup>.",
+   "칼슘통로차단제 중독은 고혈당, 혈관저항 감소에 의한 저혈압이 특징이고 칼슘·글루카곤·고용량 인슐린·지질 유제를 쓴다 — 베타차단제 중독과 해독 도구가 겹친다 <sup>[1 459장 p.3591]</sup>.",
+   "QRS 연장에 탄산수소나트륨을 쓰는 가지는 해리슨이 나트륨통로 차단 약(항정신병약 등)에 적은 원칙을 옮긴 것이다 — 베타차단제 행 자체에는 적혀 있지 않다(검토 항목)."
+  ],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 459: Poisoning and Drug Overdose",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 459장 p.3587, 3591 (Table 459-4)",
+    "checked": "본문 대조(드라이브 459장 문서) — p.3587 저혈압을 동반한 서맥성 부정맥에서 글루카곤·칼슘·고용량 인슐린+포도당이 베타차단제·칼슘통로차단제 중독에 효과적일 수 있음 · p.3591 표 459-4 β차단제 행(분류: 심장선택·비선택·부분작용제·α1 길항·막 작용 약; 소견: 생리적 억제·방실차단·저혈당·고칼륨·경련, 소탈롤 QT 연장; 치료: 저혈압·증상성 서맥에 글루카곤, 아트로핀·이소프로테레놀·도파민·도부타민·에피네프린·노르에피네프린은 때때로 효과, 난치성은 고용량 인슐린·조율·기계 보조) · 칼슘통로차단제 행(저혈압은 주로 혈관저항 감소, 고혈당, 칼슘·글루카곤). 글루카곤의 수용체·cAMP 기전은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "goodman-gilman",
+    "org": "McGraw Hill",
+    "title": "Goodman & Gilman's The Pharmacological Basis of Therapeutics — adrenergic receptor signaling · beta-blocker toxicity",
+    "kind": "textbook",
+    "citation": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14e. (장·쪽 미대조)",
+    "checked": "서지만 — 문항 출처로 적힌 교과서. 이 세션에서 원문 미대조(글루카곤 수용체-Gs-cAMP 기전 서술의 근거)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "베타 수용체가 약으로 막혀 있는데 글루카곤이 심박·수축력을 올릴 수 있는 이유는?",
+    "a": "글루카곤은 베타 수용체가 아닌 자신의 Gs 결합 수용체에 붙어 같은 adenylate cyclase → cAMP → PKA 사슬을 켠다 — 입구가 다르다."
+   },
+   {
+    "q": "글루카곤과 밀리논이 cAMP 를 올리는 방식의 차이는?",
+    "a": "글루카곤은 adenylate cyclase 를 활성화해 cAMP 를 새로 만들게 하고, 밀리논은 PDE3 를 억제해 cAMP 분해를 막는다."
+   },
+   {
+    "q": "해리슨 표 459-4 가 적은 베타차단제 중독의 대사 소견 두 가지는?",
+    "a": "저혈당과 고칼륨(칼슘통로차단제 중독은 반대로 고혈당)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.em.beta-blocker-overdose.glucagon-mechanism#v1",
+    "context": "Same patient and poisoning; only the rescue inotrope differs",
+    "stem": "A 51-year-old woman is brought to the emergency department 3 hours after taking a large number of propranolol tablets. Her pulse is 38/min and blood pressure is 70/40 mm Hg despite intravenous fluids and atropine. Glucagon is unavailable, so the intensivist starts an intravenous infusion of milrinone, and her cardiac output improves. Which of the following best explains how this drug increases myocardial contractility while beta-adrenergic receptors remain blocked?",
+    "options": [
+     "It binds a Gs-coupled receptor distinct from the beta receptor and activates adenylate cyclase",
+     "It inhibits phosphodiesterase 3, reducing breakdown of intracellular cAMP",
+     "It directly opens L-type calcium channels without any change in second messengers",
+     "It displaces propranolol from the beta-1 receptor by competitive agonism",
+     "It inhibits the Na+/K+-ATPase, increasing intracellular sodium and calcium"
+    ],
+    "answer": 2,
+    "explanation": "Milrinone inhibits phosphodiesterase 3, so cAMP that is still being produced is broken down more slowly; cAMP-PKA signaling rises without using the blocked beta receptor. The single changed clue — the rescue drug is milrinone, not glucagon — turns the original distractor (PDE inhibition) into the answer. Choice A is glucagon's mechanism, E is digoxin's, and D describes a high-dose beta agonist such as isoproterenol rather than milrinone.",
+    "of": "usmle-2026-0038",
+    "changed": "rescue drug changed from IV glucagon to IV milrinone (same propranolol overdose, same bradycardia/hypotension) → answer shifts from 'own Gs-coupled receptor activates adenylate cyclase' to 'phosphodiesterase inhibition slows cAMP breakdown'",
+    "flip": true
+   },
+   {
+    "id": "cn.em.beta-blocker-overdose.glucagon-mechanism#v2",
+    "context": "Different patient and beta blocker; same antidote and same question",
+    "stem": "A 67-year-old man is found confused at home by his daughter next to an empty bottle of his metoprolol tablets. In the emergency department his pulse is 34/min with a junctional rhythm and his blood pressure is 76/44 mm Hg. Fluids and atropine produce no response. An intravenous bolus of glucagon is given, and within minutes his heart rate rises to 58/min and blood pressure to 98/60 mm Hg. Which of the following is the primary mechanism of this improvement?",
+    "options": [
+     "Glucagon raises blood glucose, and hyperglycemia increases sinoatrial node automaticity",
+     "Glucagon competes with metoprolol at the beta-1 receptor and displaces it",
+     "Glucagon activates its own Gs protein-coupled receptor on cardiac myocytes, stimulating adenylate cyclase and raising cAMP",
+     "Glucagon blocks phosphodiesterase, preventing degradation of existing cAMP",
+     "Glucagon opens myocardial calcium channels directly, bypassing intracellular signaling"
+    ],
+    "answer": 3,
+    "explanation": "Glucagon binds its own Gs-coupled receptor, activates adenylate cyclase and increases cAMP, so PKA-mediated calcium entry, chronotropy and inotropy recover even though beta-1 receptors remain occupied by metoprolol. Changing the patient, the drug (cardioselective metoprolol instead of propranolol) and the setting does not change the key clue — glucagon reversing beta-blocker-induced bradycardia — so the answer is the same. Calcium-channel opening happens downstream through PKA, not directly.",
+    "of": "usmle-2026-0038",
+    "changed": "age, sex, the specific beta blocker (metoprolol), the setting (found at home by family) and answer order changed; glucagon still reverses bradycardia and hypotension → answer unchanged (own Gs-coupled receptor → adenylate cyclase → cAMP)",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "베타차단제 중독 — 서맥·저혈압 치료 순서",
+  "geo": {
+   "title": "베타차단제 중독 — 서맥·저혈압 치료 순서",
+   "w": 496,
+   "h": 1091.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "베타차단제 과량 복용 · 서맥",
+      "· 저혈압"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "qrs",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "QRS 가 넓어졌거나 경련이",
+      "있는가? (막 작용 약 —",
+      "프로프라놀롤 등)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "qrsdo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "12유도 심전도 · 혈당 · 칼륨",
+      "· 복용 약 이름과 서방형",
+      "여부 확인"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "na",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "나트륨통로 차단 소견을 함께",
+      "치료(해리슨 표의",
+      "항정신병약·삼환계 행처럼",
+      "QRS 연장에 탄산수소나트륨)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수액·아트로핀 뒤에도",
+      "저혈압·증상성 서맥이",
+      "남는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 604.0
+    },
+    {
+     "id": "obs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "관찰 — 서방형·소탈롤은 늦게",
+      "나빠질 수 있다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 751.0
+    },
+    {
+     "id": "glu",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "글루카곤 정주 — 자신의 Gs",
+      "수용체로 cAMP 를 올린다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 751.0
+    },
+    {
+     "id": "refr",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "글루카곤에도 반응이 없는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 881.0
+    },
+    {
+     "id": "hdi",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "고용량 인슐린(포도당·칼륨",
+      "보충) · 카테콜아민 · 조율 ·",
+      "기계적 순환 보조"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 994.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "글루카곤 지속 · 혈당·칼륨",
+      "감시"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 994.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "qrs",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "qrs",
+     "to": "na",
+     "points": [
+      [
+       178.0,
+       227.0
+      ],
+      [
+       178.0,
+       237.0
+      ],
+      [
+       452,
+       237.0
+      ],
+      [
+       452,
+       394.0
+      ],
+      [
+       194.3,
+       394.0
+      ],
+      [
+       194.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "qrs",
+     "to": "resp",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       466,
+       243.0
+      ],
+      [
+       466,
+       558.0
+      ],
+      [
+       178.0,
+       558.0
+      ],
+      [
+       178.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 157.5,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "qrs",
+     "to": "qrsdo",
+     "points": [
+      [
+       276.0,
+       227.0
+      ],
+      [
+       276.0,
+       249.0
+      ],
+      [
+       227.0,
+       249.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "qrsdo",
+     "to": "na",
+     "points": [
+      [
+       194.3,
+       374.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       259.7,
+       384.0
+      ],
+      [
+       259.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "QRS 연장"
+      ],
+      "w": 52.9,
+      "h": 17,
+      "x": 233.2,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "qrsdo",
+     "to": "resp",
+     "points": [
+      [
+       259.7,
+       374.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       480,
+       390.0
+      ],
+      [
+       480,
+       558.0
+      ],
+      [
+       227.0,
+       558.0
+      ],
+      [
+       227.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "QRS 정상"
+      ],
+      "w": 52.9,
+      "h": 17,
+      "x": 200.6,
+      "y": 564.0
+     }
+    },
+    {
+     "from": "na",
+     "to": "resp",
+     "points": [
+      [
+       227.0,
+       538.0
+      ],
+      [
+       227.0,
+       548.0
+      ],
+      [
+       276.0,
+       548.0
+      ],
+      [
+       276.0,
+       604.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "glu",
+     "points": [
+      [
+       194.3,
+       685.0
+      ],
+      [
+       194.3,
+       695.0
+      ],
+      [
+       114.0,
+       695.0
+      ],
+      [
+       114.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "obs",
+     "points": [
+      [
+       259.7,
+       685.0
+      ],
+      [
+       259.7,
+       701.0
+      ],
+      [
+       340.0,
+       701.0
+      ],
+      [
+       340.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "glu",
+     "to": "refr",
+     "points": [
+      [
+       114.0,
+       815.0
+      ],
+      [
+       114.0,
+       825.0
+      ],
+      [
+       227.0,
+       825.0
+      ],
+      [
+       227.0,
+       881.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "refr",
+     "to": "hdi",
+     "points": [
+      [
+       194.3,
+       928.0
+      ],
+      [
+       194.3,
+       938.0
+      ],
+      [
+       114.0,
+       938.0
+      ],
+      [
+       114.0,
+       994.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 974.0
+     }
+    },
+    {
+     "from": "refr",
+     "to": "keep",
+     "points": [
+      [
+       259.7,
+       928.0
+      ],
+      [
+       259.7,
+       944.0
+      ],
+      [
+       340.0,
+       944.0
+      ],
+      [
+       340.0,
+       994.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 974.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "베타차단제 과량 복용 · 서맥 · 저혈압",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "QRS 가 넓어졌거나 경련이 있는가? (막 작용 약 — 프로프라놀롤 등)"
+     }
+    ]
+   },
+   {
+    "id": "qrs",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "QRS 가 넓어졌거나 경련이 있는가? (막 작용 약 — 프로프라놀롤 등)",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "나트륨통로 차단 소견을 함께 치료(해리슨 표의 항정신병약·삼환계 행처럼 QRS 연장에 탄산수소나트륨)"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "수액·아트로핀 뒤에도 저혈압·증상성 서맥이 남는가?"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "12유도 심전도 · 혈당 · 칼륨 · 복용 약 이름과 서방형 여부 확인"
+     }
+    ]
+   },
+   {
+    "id": "qrsdo",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "12유도 심전도 · 혈당 · 칼륨 · 복용 약 이름과 서방형 여부 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "QRS 연장",
+      "to": 4,
+      "toText": "나트륨통로 차단 소견을 함께 치료(해리슨 표의 항정신병약·삼환계 행처럼 QRS 연장에 탄산수소나트륨)"
+     },
+     {
+      "label": "QRS 정상",
+      "to": 5,
+      "toText": "수액·아트로핀 뒤에도 저혈압·증상성 서맥이 남는가?"
+     }
+    ]
+   },
+   {
+    "id": "na",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "나트륨통로 차단 소견을 함께 치료(해리슨 표의 항정신병약·삼환계 행처럼 QRS 연장에 탄산수소나트륨)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "수액·아트로핀 뒤에도 저혈압·증상성 서맥이 남는가?"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수액·아트로핀 뒤에도 저혈압·증상성 서맥이 남는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "글루카곤 정주 — 자신의 Gs 수용체로 cAMP 를 올린다"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "관찰 — 서방형·소탈롤은 늦게 나빠질 수 있다"
+     }
+    ]
+   },
+   {
+    "id": "glu",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "글루카곤 정주 — 자신의 Gs 수용체로 cAMP 를 올린다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "글루카곤에도 반응이 없는가?"
+     }
+    ]
+   },
+   {
+    "id": "obs",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "관찰 — 서방형·소탈롤은 늦게 나빠질 수 있다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "refr",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "글루카곤에도 반응이 없는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "고용량 인슐린(포도당·칼륨 보충) · 카테콜아민 · 조율 · 기계적 순환 보조"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "글루카곤 지속 · 혈당·칼륨 감시"
+     }
+    ]
+   },
+   {
+    "id": "hdi",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "고용량 인슐린(포도당·칼륨 보충) · 카테콜아민 · 조율 · 기계적 순환 보조",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "keep",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "글루카곤 지속 · 혈당·칼륨 감시",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0038"
+  ],
+  "hasErrors": false
+ },
+ "cn.em.ventricular-fibrillation.immediate-defibrillation": {
+  "id": "cn.em.ventricular-fibrillation.immediate-defibrillation",
+  "title": "무맥성 심실세동 — 조직된 전기 활동이 없는 리듬에 즉시 비동기 제세동",
+  "objective": "심실세동에서 조직된 수축이 사라져 심박출이 멎는 기전을 설명하고, 무반응·무맥·무호흡 환자에서 제세동 가능 리듬(심실세동·무맥 심실빈맥)을 알아본 뒤 가슴압박과 함께 즉시 비동기 제세동을 첫 처치로 고르며, 동기화 율동전환·약물·서맥 처치와의 적응 차이를 판단한다",
+  "objectiveKind": "다음 처치",
+  "condition": "심실세동(심정지)",
+  "topic": "Emergency Medicine",
+  "seeAlso": [
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "8177761d42945c82",
+  "summary": [
+   "정상 심장은 한 곳에서 시작한 흥분이 차례로 퍼져 심실 전체가 한꺼번에 수축한다. 심실세동은 여러 개의 흥분 파면이 무질서하게 돌아 심근이 제각각 떨기만 하는 상태라 심박출이 0 이 되고, 곧 의식·맥박·호흡이 사라진다.",
+   "심정지는 리듬으로 치료를 가른다. 심실세동·무맥 심실빈맥은 「제세동 가능 리듬」이고, 무맥성 전기활동·무수축은 아니다. 제세동이 얼마나 빨리 되느냐가 결과를 정하는 중요한 예측 인자다 [[harrison-21: 306장 p.2262]].",
+   "심실세동·다형 심실빈맥에는 비동기 충격을 준다. 동기화 충격은 QRS 에 맞춰 쏘는 방식이라 QRS 가 없는 세동파에서는 쏠 시점을 잡지 못한다 — 동기화는 맥박이 있는 단형 심실빈맥 같은 조직된 리듬의 방법이다 [[harrison-21: 306장 p.2263]].",
+   "순서: 가슴압박 → 리듬 확인 즉시 이상성 200 J 제세동 → 곧바로 가슴압박 2분 → 리듬 확인·반복. 에피네프린 1 mg(3–5분마다)과, 충격 뒤에도 반복되면 아미오다론 300 mg(재발 시 150 mg)은 제세동 사이에 더하는 보조다 [[harrison-21: 306장 p.2262–2263]].",
+   "아트로핀·경피 조율은 서맥 리듬의 처치이며 세동을 끝내지 못한다. 재발하는 세동에서는 원인(허혈·QT 연장·고칼륨)을 찾아 치료한다 [[harrison-21: 306장 p.2263]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>심실세동(VF)</strong> 은 심실 곳곳에서 무질서한 흥분이 돌며 조직된 수축이 사라진 리듬이다. 심전도에는 크기·모양·간격이 제각각인 세동파만 보이고 QRS 를 구분할 수 없다. 심박출이 없으므로 곧 <strong>심정지</strong>(무반응·무맥·무호흡 또는 헐떡임)가 된다. 무맥 심실빈맥과 함께 <strong>제세동 가능 리듬(shockable rhythm)</strong> 으로 묶는다 <sup>[1 306장 p.2262]</sup>.</p>"
+   },
+   {
+    "title": "정상 — 한 번의 흥분이 심실 전체를 한꺼번에 수축시킨다",
+    "deep": false,
+    "html": "<p>동결절에서 시작한 흥분은 방실결절·히스속·푸르키니에 섬유를 따라 심실 전체로 빠르게 퍼져, 심근이 거의 동시에 탈분극하고 함께 수축한다. 탈분극이 끝난 심근은 불응기에 들어가 다음 흥분이 올 때까지 다시 자극되지 않는다 — 이 질서가 한 박동 = 한 번의 효과적인 박출을 보장한다.</p>"
+   },
+   {
+    "title": "병태생리 — 질서가 깨지면 박출이 0 이 된다",
+    "deep": false,
+    "html": "<p>허혈·심근경색 흉터·심근병증·QT 연장·전해질 이상은 심근 부위마다 불응기를 다르게 만든다. 이 불균일한 조직에 조기 박동이 들어오면 흥분이 이미 회복한 곳과 아직 불응기인 곳을 돌아 여러 개의 회귀 파면이 생기고, 이 파면들이 쪼개지며 떠돌아 심근이 제각각 떨기만 한다. 심실이 혈액을 밀어내지 못하므로 뇌 혈류가 몇 초 안에 멎어 의식을 잃는다.</p>\n<p>전기충격은 심근 대부분을 한꺼번에 탈분극시켜 모든 파면을 동시에 불응기로 만든다. 그 뒤 가장 먼저 회복하는 동결절이 다시 질서 있는 리듬을 이끌 기회를 얻는다. 시간이 지날수록 심근의 에너지가 고갈되어 충격의 성공률이 떨어지므로, <strong>제세동이 얼마나 빨리 되느냐가 결과의 중요한 예측 인자</strong>다 <sup>[1 306장 p.2262]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>무반응·무맥·무호흡(또는 헐떡임)</strong>: 심박출 0 의 결과. 헐떡이는 숨은 정상 호흡이 아니므로 심정지로 판단한다.</li>\n<li><strong>리듬</strong>: QRS 없는 불규칙 세동파. 무맥 심실빈맥은 넓은 QRS 가 빠르게 이어지지만 맥박이 없다. 무수축은 평탄선, 무맥성 전기활동은 리듬은 있으나 맥박이 없다.</li>\n<li><strong>원인 단서</strong>: 급성 관동맥 허혈이 가장 흔한 배경이고, QT 연장(토르사드)·고칼륨·약물도 원인이 된다 <sup>[1 306장 p.2263]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 리듬이 처치를 정한다",
+    "deep": false,
+    "html": "<p>심정지 처치는 리듬으로 갈린다(리듬 표). 제세동 가능 리듬(VF·무맥 VT)은 충격이 치료이고, 제세동 불가 리듬(무맥성 전기활동·무수축)은 압박·에피네프린·가역 원인 교정이 치료다. 맥박이 있는 빈맥은 심정지가 아니며, 불안정하면 <strong>동기화</strong> 율동전환, 서맥이면 아트로핀·조율이다.</p>\n<p>전기충격의 두 방식을 구별한다:</p>\n<ul>\n<li><strong>동기화 율동전환</strong>: 기계가 R파를 인식해 그 위에 쏜다. T파(재분극 취약기)에 충격이 떨어져 세동을 유발하는 것을 피하려는 것이다. 조직된 QRS 가 있는 리듬(맥박 있는 단형 VT, 상심실성 빈맥)에 쓴다.</li>\n<li><strong>비동기 제세동</strong>: 시점을 가리지 않고 즉시 쏜다. 인식할 R파가 없는 VF, QRS 모양이 계속 바뀌는 다형 VT 에 쓴다 <sup>[1 306장 p.2263]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>심정지 중의 검사는 리듬 확인이 전부다 — 압박을 잠깐 멈추고 감시장치·제세동기로 리듬을 본다. 자동제세동기가 기록한 첫 리듬은 원인 추정과 이후 평가에 중요하므로 보관한다. 자발순환이 돌아와도 의식이 없거나 순환이 불안정하면 동맥혈가스로 산증·저산소를 확인하고, 재발하는 VF 는 허혈 평가(응급 관동맥조영)·전해질·QT 를 본다 <sup>[1 306장 p.2262–2263]</sup>.</p>"
+   },
+   {
+    "title": "치료 — 순서가 곧 처치다",
+    "deep": false,
+    "html": "<ol>\n<li><strong>인지와 가슴압박</strong>: 무반응·무맥·비정상 호흡이면 즉시 도움을 요청하고 가슴압박을 시작한다(생존 사슬의 앞 두 고리) <sup>[1 306장 p.2260]</sup>.</li>\n<li><strong>즉시 비동기 제세동</strong>: VF·VT 로 진단되면 이상성 200 J 충격. 충전 중에도 압박을 계속한다 <sup>[1 306장 p.2262]</sup>.</li>\n<li><strong>곧바로 압박 2분</strong>: 충격 직후 맥박을 찾지 말고 압박을 재개해 2분 뒤 리듬을 확인한다. VF/VT 가 남아 있으면 최대 에너지로 다시 충격.</li>\n<li><strong>전문소생술 약물(충격 사이에)</strong>: 정맥·골내로 에피네프린 1 mg 을 3–5분마다. 한 번 이상 충격 뒤에도 반복되면 아미오다론 300 mg, 재발 시 150 mg, 실패하면 리도카인 <sup>[1 306장 p.2263]</sup>.</li>\n<li><strong>원인 치료</strong>: 허혈이면 응급 관동맥조영·재관류, 토르사드면 마그네슘, 고칼륨이면 칼슘과 칼륨 낮추기 <sup>[1 306장 p.2263]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>무맥 단형 VT 도 제세동(비동기)한다 — 「단형이면 동기화」는 맥박이 있을 때의 규칙이다.</li>\n<li>대사성 산증이 제세동과 충분한 환기 뒤에도 남으면 중탄산나트륨 1 mEq/kg 을 줄 수 있다 <sup>[1 306장 p.2263]</sup>.</li>\n<li>일시적·가역 원인으로 설명되지 않고 기대여명이 합리적인 VF/VT 심정지 생존자는 2차 예방으로 ICD 를 넣는다. 급성 심근경색 첫 48시간 안의 VF 는 대개 여기에 해당하지 않는다 <sup>[1 306장 p.2263]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 306장 p.2260~2263) — 즉시 비동기 제세동·동기화의 적응·아미오다론의 자리는 문항 해설과 맞는다. 문항이 인용한 2020 AHA 지침 본문은 미대조(†).</li>\n</ul>"
+   },
+   {
+    "title": "왜 동기화가 세동을 만들 수 있는가",
+    "deep": true,
+    "html": "<p>T파의 정점 부근은 심근 일부는 회복했고 일부는 아직 불응기인 「취약기」다. 조직된 리듬에서 이 순간에 충격이 떨어지면 불균일한 회복 상태에 회귀가 생겨 VF 가 유발될 수 있다(R-on-T). 그래서 맥박이 있는 리듬은 R파에 맞춰 쏜다. VF 에서는 이미 전체가 무질서하므로 이 위험을 따질 이유가 없고, 기다리는 시간만 생존을 깎는다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "심정지·불안정 리듬별 첫 전기·약물 처치",
+    "columns": [
+     "리듬",
+     "맥박",
+     "첫 처치",
+     "왜 그런가",
+     "근거"
+    ],
+    "rows": [
+     [
+      "심실세동",
+      "없음",
+      "비동기 제세동 + 가슴압박",
+      "조직된 QRS 가 없어 동기화 불가, 시간이 곧 생존",
+      "<sup>[1 306장 p.2262–2263]</sup>"
+     ],
+     [
+      "다형 심실빈맥(무맥)",
+      "없음",
+      "비동기 제세동",
+      "QRS 모양이 계속 바뀌어 동기화가 믿을 수 없다",
+      "<sup>[1 306장 p.2263]</sup>"
+     ],
+     [
+      "단형 심실빈맥",
+      "있음·불안정",
+      "동기화 율동전환",
+      "R파에 맞춰 쏘아 취약기 충격을 피한다",
+      "<sup>[1 306장 p.2263]</sup>"
+     ],
+     [
+      "무맥성 전기활동·무수축",
+      "없음",
+      "가슴압박 + 에피네프린, 가역 원인 치료",
+      "제세동할 세동이 없다",
+      "<sup>[1 306장 p.2263]</sup>"
+     ],
+     [
+      "증상성 서맥",
+      "있음",
+      "아트로핀 1 mg, 경피·경정맥 조율",
+      "박동이 느린 것이 문제 — 박동수를 올린다",
+      "<sup>[1 306장 p.2262]</sup>"
+     ]
+    ],
+    "note": "에너지는 이상성 200 J(첫 충격), 이후 최대 에너지 — 제세동기 종류에 따라 다르다 <sup>[1 306장 p.2262]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "동기화 율동전환 vs 비동기 제세동",
+    "point": "둘 다 전기충격이지만 동기화는 기계가 R파를 인식해 그 위에 쏜다(재분극 취약기에 쏘아 세동을 만들지 않으려고). 세동파에는 인식할 R파가 없어 동기화 모드로는 충격이 나가지 않거나 늦어진다. 무맥 리듬 — 심실세동·다형 심실빈맥 — 은 비동기다.",
+    "exception": "맥박이 있는 불안정 단형 심실빈맥·상심실성 빈맥은 동기화 율동전환이 맞다. 무맥이면 단형 심실빈맥도 제세동한다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "항부정맥제를 먼저 vs 충격을 먼저",
+    "point": "아미오다론은 한 번 이상 충격을 줬는데도 세동·빈맥이 반복될 때 다음 충격 뒤 재발을 줄이려는 보조다. 약이 도는 동안 제세동을 미루면 성공 가능성이 시간에 따라 떨어진다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "서맥 처치(아트로핀·조율)를 심정지에",
+    "point": "아트로핀·경피/경정맥 조율은 맥박이 느린 리듬(증상성 서맥·방실차단)에서 박동수를 올리는 처치다. 세동은 박동이 느린 것이 아니라 조직된 박동이 없는 것이라 올릴 박동이 없다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "무수축(평탄선)에 충격",
+    "point": "무수축·무맥성 전기활동은 제세동 불가 리듬이다. 가슴압박·에피네프린과 가역 원인 탐색(저산소·저혈량·산증·고칼륨·저체온·독물·압전·긴장성 기흉·폐색전·심근경색)이 치료다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "맥박이 있는 빈맥은 이 도식 밖이다 — 불안정한 단형 빈맥은 동기화 율동전환, 안정하면 약물·전문가 상담.",
+   "충전하는 동안에도 압박을 계속하고, 충격 직후 리듬·맥박을 보지 말고 곧바로 압박을 재개한다 <sup>[1 306장 p.2262]</sup>.",
+   "약물 용량·간격은 해리슨 서술이다. 2020 AHA 지침 본문은 미대조(†)."
+  ],
+  "criteria": [
+   {
+    "id": "vf-shock-harrison",
+    "name": "제세동 가능 리듬의 처치(해리슨)",
+    "kind": "치료 기준",
+    "population": "심실세동·무맥 심실빈맥 심정지",
+    "statement": "진단 즉시 이상성 200 J 충격 → 곧바로 가슴압박 2분 → 리듬 확인, 남아 있으면 최대 에너지로 반복. 에피네프린 1 mg IV/IO 3–5분마다, 충격 뒤 반복되면 아미오다론 300 mg(재발 시 150 mg), 실패 시 리도카인",
+    "exceptions": "단형 심실빈맥은 동기화, 다형 심실빈맥·심실세동은 비동기 충격",
+    "source": "harrison-21",
+    "locator": "306장 p.2262–2263, 그림 306-3",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 306: Cardiovascular Collapse, Cardiac Arrest, and Sudden Cardiac Death",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 306장 p.2257–2266",
+    "checked": "본문 대조(드라이브 문서, 306장 p.2260–2263) — 생존 사슬(인지·가슴압박 중심 CPR·가능한 한 빠른 제세동·전문소생술), 제세동 속도가 결과의 중요한 예측 인자, VF/VT 진단 즉시 이상성 200 J 충격 뒤 곧바로 압박 2분·리듬 확인, 에피네프린 1 mg 3–5분마다, 단형 VT 는 QRS 동기화·다형 VT 와 VF 는 비동기 충격, 반복 시 아미오다론 300 mg 뒤 150 mg·실패 시 리도카인, 재발 원인(허혈·QT 연장→마그네슘·고칼륨→칼슘), PEA/무수축은 CPR·에피네프린·가역 원인, 서맥 리듬에 아트로핀 1 mg·조율(그림 306-3)을 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "aha-acls-2020",
+    "org": "American Heart Association",
+    "title": "Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care",
+    "kind": "guideline",
+    "citation": "Panchal AR, Bartos JA, Cabañas JG, et al. Circulation 2020;142(16 Suppl 2):S366–S468",
+    "checked": "서지만 — 루틴 컨테이너에서 ahajournals·PubMed 접근이 막혀 본문을 대조하지 못했다(문항 해설의 출처)",
+    "doi": "10.1161/CIR.0000000000000916",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIR.0000000000000916"
+   }
+  ],
+  "checks": [
+   {
+    "q": "심실세동에서 동기화 모드로는 충격을 줄 수 없는 이유는?",
+    "a": "동기화는 제세동기가 R파를 인식해 그 순간에 쏘는 방식인데, 세동파에는 인식할 QRS 가 없다. 그래서 충격이 지연되거나 나가지 않는다 — 비동기로 즉시 쏜다."
+   },
+   {
+    "q": "아미오다론은 심실세동 소생에서 언제 들어가는가?",
+    "a": "한 번 이상 충격을 줬는데도 세동·무맥 빈맥이 반복될 때, 다음 충격 뒤 재발을 줄이려고 300 mg(재발 시 150 mg)을 준다. 첫 처치가 아니다."
+   },
+   {
+    "q": "맥박이 있고 혈압이 떨어진 단형 심실빈맥의 전기 처치는? 그 환자가 맥박을 잃으면?",
+    "a": "맥박이 있으면 동기화 율동전환, 맥박을 잃으면 무맥 심실빈맥으로 보고 비동기 제세동을 한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.em.ventricular-fibrillation.immediate-defibrillation#v1",
+    "context": "같은 전기충격, 맥박이 있는 조직된 리듬",
+    "stem": "58세 남자가 30분 전부터 가슴이 두근거리고 어지러워 응급실에 왔다. 2년 전 전벽 심근경색을 앓았다. 도착 시 묻는 말에 늦게 대답하고 식은땀을 흘린다. 혈압 74/46 mmHg, 맥박 184회/분(목동맥에서 약하게 촉지), 호흡 24회/분, 체온 36.6 ℃. 심전도에서 모양이 일정하고 규칙적인 넓은 QRS 빈맥이 계속된다. 칼륨은 4.2 mmol/L 이다. 가장 먼저 시행할 처치는?",
+    "options": [
+     "즉시 비동기 전기충격을 시행한다",
+     "정맥 아미오다론을 투여하고 관찰한다",
+     "동기화 심장율동전환을 시행한다",
+     "정맥 아트로핀을 투여한다",
+     "경피 인공심장박동조율을 시작한다"
+    ],
+    "answer": 3,
+    "explanation": "맥박이 있고 저혈압·의식 저하가 동반된 불안정 단형 심실빈맥이다. QRS 가 일정해 제세동기가 R파를 인식할 수 있으므로 동기화 율동전환으로 취약기 충격을 피한다. 원 문항과 달리 맥박이 있고 조직된 QRS 가 있다는 단서가 답을 바꿨다 — 맥박을 잃거나 다형으로 바뀌면 비동기 제세동이다.",
+    "of": "kmle-2026-0554",
+    "changed": "무맥·무호흡·QRS 없는 세동파 → 맥박이 있고 의식이 흐린 저혈압 환자의 규칙적인 넓은 QRS 빈맥(단형 심실빈맥) ⇒ 정답이 비동기 제세동에서 동기화 율동전환으로",
+    "flip": true
+   },
+   {
+    "id": "cn.em.ventricular-fibrillation.immediate-defibrillation#v2",
+    "context": "겉모습만 다른 심정지 — 병원 밖 수영장",
+    "stem": "34세 여자가 수영장 탈의실에서 쓰러졌다. 출동한 구급대원이 도착했을 때 불러도 반응이 없고 목동맥 맥박이 없으며 헐떡이는 숨만 가끔 있다. 가슴압박을 시작하고 제세동기 패드를 붙였다. 리듬 화면에는 크기와 모양이 제각각인 불규칙한 파형만 보이고 QRS 를 구분할 수 없다. 체온 36.2 ℃, 혈당 112 mg/dL. 다음으로 할 처치는?",
+    "options": [
+     "정맥로를 잡고 에피네프린을 먼저 투여한다",
+     "동기화 모드로 전기충격을 시행한다",
+     "즉시 비동기 전기충격을 시행한다",
+     "정맥 아트로핀을 투여한다",
+     "경피 인공심장박동조율을 시작한다"
+    ],
+    "answer": 3,
+    "explanation": "환자·장소·발견 경위는 달라도 무반응·무맥·비정상 호흡에 QRS 없는 세동파는 심실세동, 곧 제세동 가능 리듬이다. 즉시 비동기 충격 뒤 곧바로 압박 2분을 한다. 헐떡이는 숨은 정상 호흡이 아니다. 동기화는 인식할 R파가 없어 불가능하고, 에피네프린은 충격 사이의 보조, 아트로핀·조율은 서맥 처치다.",
+    "of": "kmle-2026-0554",
+    "changed": "나이·성별·쓰러진 장소(수영장)·발견 경위와 감시 방법(자동제세동기)을 바꾸고, 무반응·무맥·세동파는 남김 ⇒ 답은 그대로 즉시 비동기 제세동",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "쓰러진 환자 — 리듬 확인에서 첫 전기충격까지",
+  "geo": {
+   "title": "쓰러진 환자 — 리듬 확인에서 첫 전기충격까지",
+   "w": 468,
+   "h": 1091.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "무반응 · 큰 동맥 맥박 없음 ·",
+      "정상 호흡 없음 → 도움 요청,",
+      "가슴압박 시작"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "pads",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "제세동기·감시장치 부착 —",
+      "압박을 잠깐 멈추고 리듬 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "rhythm",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "제세동 가능 리듬(심실세동·",
+      "무맥 심실빈맥)인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "shock",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "즉시 비동기 충격(이상성",
+      "200 J) → 곧바로 가슴압박",
+      "2분"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 423.0
+    },
+    {
+     "id": "persist",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "2분 뒤 리듬 확인 — 세동·",
+      "빈맥이 남아 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "acls",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "충격 반복 + 에피네프린 1",
+      "mg(3–5분마다), 반복되면",
+      "아미오다론 300 mg"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 700.0
+    },
+    {
+     "id": "cause",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "재발 원인 탐색 —",
+      "허혈(관동맥조영), QT",
+      "연장(마그네슘),",
+      "고칼륨(칼슘)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 847.0
+    },
+    {
+     "id": "rosc",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "자발순환 회복 — 소생 후",
+      "치료, 원인 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 1011.0
+    },
+    {
+     "id": "nonshock",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "무맥성 전기활동·무수축 —",
+      "압박·에피네프린·가역",
+      "원인(충격 없음)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 423.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "pads",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "pads",
+     "to": "rhythm",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "rhythm",
+     "to": "shock",
+     "points": [
+      [
+       194.3,
+       357.0
+      ],
+      [
+       194.3,
+       367.0
+      ],
+      [
+       114.0,
+       367.0
+      ],
+      [
+       114.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "rhythm",
+     "to": "nonshock",
+     "points": [
+      [
+       259.7,
+       357.0
+      ],
+      [
+       259.7,
+       373.0
+      ],
+      [
+       340.0,
+       373.0
+      ],
+      [
+       340.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "shock",
+     "to": "persist",
+     "points": [
+      [
+       114.0,
+       504.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       227.0,
+       514.0
+      ],
+      [
+       227.0,
+       570.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "persist",
+     "to": "acls",
+     "points": [
+      [
+       194.3,
+       634.0
+      ],
+      [
+       194.3,
+       644.0
+      ],
+      [
+       227.0,
+       644.0
+      ],
+      [
+       227.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "남아 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "persist",
+     "to": "rosc",
+     "points": [
+      [
+       259.7,
+       634.0
+      ],
+      [
+       259.7,
+       650.0
+      ],
+      [
+       452,
+       650.0
+      ],
+      [
+       452,
+       965.0
+      ],
+      [
+       194.3,
+       965.0
+      ],
+      [
+       194.3,
+       1011.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "순환 회복"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 166.5,
+      "y": 991.0
+     }
+    },
+    {
+     "from": "acls",
+     "to": "cause",
+     "points": [
+      [
+       227.0,
+       781.0
+      ],
+      [
+       227.0,
+       791.0
+      ],
+      [
+       227.0,
+       791.0
+      ],
+      [
+       227.0,
+       847.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cause",
+     "to": "rosc",
+     "points": [
+      [
+       227.0,
+       945.0
+      ],
+      [
+       227.0,
+       955.0
+      ],
+      [
+       259.7,
+       955.0
+      ],
+      [
+       259.7,
+       1011.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "무반응 · 큰 동맥 맥박 없음 · 정상 호흡 없음 → 도움 요청, 가슴압박 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "제세동기·감시장치 부착 — 압박을 잠깐 멈추고 리듬 확인"
+     }
+    ]
+   },
+   {
+    "id": "pads",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "제세동기·감시장치 부착 — 압박을 잠깐 멈추고 리듬 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "제세동 가능 리듬(심실세동·무맥 심실빈맥)인가?"
+     }
+    ]
+   },
+   {
+    "id": "rhythm",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "제세동 가능 리듬(심실세동·무맥 심실빈맥)인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "즉시 비동기 충격(이상성 200 J) → 곧바로 가슴압박 2분"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "무맥성 전기활동·무수축 — 압박·에피네프린·가역 원인(충격 없음)"
+     }
+    ]
+   },
+   {
+    "id": "shock",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "즉시 비동기 충격(이상성 200 J) → 곧바로 가슴압박 2분",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "2분 뒤 리듬 확인 — 세동·빈맥이 남아 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "nonshock",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "무맥성 전기활동·무수축 — 압박·에피네프린·가역 원인(충격 없음)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "persist",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "2분 뒤 리듬 확인 — 세동·빈맥이 남아 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "남아 있음",
+      "to": 7,
+      "toText": "충격 반복 + 에피네프린 1 mg(3–5분마다), 반복되면 아미오다론 300 mg"
+     },
+     {
+      "label": "순환 회복",
+      "to": 9,
+      "toText": "자발순환 회복 — 소생 후 치료, 원인 평가"
+     }
+    ]
+   },
+   {
+    "id": "acls",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "충격 반복 + 에피네프린 1 mg(3–5분마다), 반복되면 아미오다론 300 mg",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "재발 원인 탐색 — 허혈(관동맥조영), QT 연장(마그네슘), 고칼륨(칼슘)"
+     }
+    ]
+   },
+   {
+    "id": "cause",
+    "num": 8,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "재발 원인 탐색 — 허혈(관동맥조영), QT 연장(마그네슘), 고칼륨(칼슘)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "자발순환 회복 — 소생 후 치료, 원인 평가"
+     }
+    ]
+   },
+   {
+    "id": "rosc",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "자발순환 회복 — 소생 후 치료, 원인 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0554"
+  ],
+  "hasErrors": false
+ },
+ "cn.endo.cushing-syndrome.screening-test": {
+  "id": "cn.endo.cushing-syndrome.screening-test",
+  "title": "쿠싱증후군 — 코르티솔 특이 소견에서 첫 선별검사까지",
+  "objective": "시상하부-뇌하수체-부신 축의 일주기·음성되먹임으로 코르티솔 과잉을 선별하는 검사의 원리를 설명하고, 쿠싱에 특이적인 소견을 근거로 심야 타액 코르티솔·1 mg 야간 덱사메타손 억제검사·24시간 소변 유리코르티솔 가운데 선별검사를 고르며, ACTH 측정과 다른 부신 호르몬 검사는 그 다음 단계임을 판단한다",
+  "objectiveKind": "진단",
+  "condition": "쿠싱증후군(코르티솔 과잉)",
+  "topic": "Endocrinology",
+  "seeAlso": [
+   "Internal Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "5f195041169badd3",
+  "summary": [
+   "정상 코르티솔은 아침에 높고 밤에 가장 낮으며(일주기), 외부 글루코코르티코이드(덱사메타손)가 들어오면 CRH·ACTH 가 억제돼 떨어진다(음성되먹임). 쿠싱증후군은 이 두 성질 — 밤의 최저점과 억제성 — 이 사라진 상태다 [[harrison-21: 386장 p.2956]].",
+   "그래서 선별검사는 세 가지다: 심야 타액 코르티솔(밤의 최저점이 없어졌는가), 1 mg 야간 덱사메타손 억제검사(억제되지 않는가), 24시간 소변 유리코르티솔(하루 총량이 늘었는가) [[harrison-21: 386장 p.2962]].",
+   "검사 전에 외부 글루코코르티코이드 사용부터 배제한다 — 쿠싱증후군의 가장 흔한 원인은 의인성이다 [[harrison-21: 386장 p.2960, 2962]].",
+   "비만·고혈압·고혈당은 흔해서 쿠싱을 가려내지 못한다. 폭 넓은(>1 cm) 보라색 선조·쉽게 드는 멍·근위부 근병증·나이에 맞지 않는 골다공증처럼 변별력이 큰 소견이 여러 개 겹칠 때 검사한다 [[harrison-21: 386장 p.2961]].",
+   "코르티솔 과잉이 확인된 뒤에야 혈장 ACTH 로 ACTH 의존형(뇌하수체·이소성)과 비의존형(부신)을 가른다. 소변 메타네프린은 카테콜아민 과잉(갈색세포종) 검사로, 부신 우연종에서는 함께 하지만 쿠싱 소견의 선별검사가 아니다 [[harrison-21: 386장 p.2962, p.2968]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>쿠싱증후군은 원인과 관계없이 글루코코르티코이드(코르티솔)에 지속적으로 과다 노출되어 생기는 임상 상태다. 쿠싱병은 그중 뇌하수체 ACTH 분비 선종에 의한 것만 가리킨다 <sup>[1 386장 p.2959]</sup>. 가장 흔한 원인은 염증·면역질환 치료에 쓴 외부 글루코코르티코이드(의인성)이고, 내인성 가운데는 뇌하수체 미세선종이 가장 흔하다 <sup>[1 386장 p.2960]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 HPA 축에서 코르티솔은 <strong>일주기</strong>를 가진다 — 잠에서 깨기 전부터 올라 아침에 최고, 저녁·자정에 최저. 또 코르티솔(또는 덱사메타손)이 시상하부·뇌하수체 글루코코르티코이드 수용체에 붙으면 CRH·ACTH 가 줄어드는 <strong>음성되먹임</strong>이 있다 <sup>[1 386장 p.2956]</sup>. 내인성 쿠싱은 어느 원인이든 이 두 조절이 깨진다: 부신 선종은 ACTH 와 무관하게 분비하고(ACTH 는 이미 억제), 뇌하수체 선종은 되먹임 문턱이 올라가 저용량 덱사메타손에 억제되지 않으며, 이소성 ACTH 는 대개 되먹임에 반응하지 않는다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>단백 이화</strong> → 피부·결합조직이 얇아져 넓고(&gt;1 cm) 보라색인 선조, 쉽게 드는 멍. 근육 소실 → 엉덩이·허벅지 근육 위축으로 의자에서 손 짚지 않고 일어나기·계단 오르기가 어렵다(근위부 근병증) <sup>[1 386장 p.2961]</sup>.</li>\n<li><strong>지방 재분포</strong> → 중심성 비만·달덩이 얼굴·들소 혹.</li>\n<li><strong>포도당신생·인슐린 저항</strong> → 내당능 장애·당뇨. <strong>광물코르티코이드 수용체 활성</strong>(11β-HSD2 가 과량 코르티솔을 다 불활성화하지 못함) → 고혈압·저칼륨 <sup>[1 386장 p.2958]</sup>.</li>\n<li><strong>골형성 억제</strong> → 나이에 맞지 않는 골다공증·척추 압박골절.</li>\n<li>비만·고혈압·당뇨는 흔한 병이라 그것만으로는 쿠싱을 가리지 못한다. 변별력이 큰 소견(선조·멍·근병증·젊은 나이의 골다공증)이 여러 개 겹치고 진행할 때 검사한다 <sup>[1 386장 p.2961]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>고혈압과 고혈당이 함께 있는 환자에서 과잉 호르몬을 가르는 것은 동반 소견이다(표 「고혈압 + 고혈당 — 어느 호르몬 과잉인가」). 카테콜아민 과잉은 발작성 두통·발한·심계항진과 혈압 급변, 알도스테론 과잉은 저칼륨·대사성 알칼리증이 단서다. 선조·근병증은 이 둘로 설명되지 않는다. 알코올 관련 가성 쿠싱, 우울증, 중증 비만에서도 코르티솔 검사가 경계로 나올 수 있다 <sup>[1 386장 p.2962]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>외부 글루코코르티코이드 배제</strong>가 첫 단계다 <sup>[1 386장 p.2962]</sup>.</li>\n<li><strong>선별·확진</strong> — 심야 타액 코르티솔, 1 mg 야간 덱사메타손 억제검사, 24시간 소변 유리코르티솔(표 「코르티솔 과잉 선별검사」). 여러 검사가 일관되게 양성이면 확진한다. 음성 결과는 주기성 쿠싱에서 거짓 음성일 수 있으므로 소견이 진행하면 재검한다.</li>\n<li><strong>원인 감별</strong>은 확진 뒤에만 — 혈장 ACTH 로 의존형/비의존형을 가르고, 의존형이면 뇌하수체 MRI·(필요 시) 추체정맥동 채혈, 비의존형이면 부신 영상 <sup>[1 386장 p.2962]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>원인에 따라 다르다 — 의인성은 약을 서서히 줄이고, 뇌하수체 선종은 경접형동 수술, 부신 선종은 부신 절제. 이 정리본의 목표(첫 선별검사 고르기) 밖이라 자세히 다루지 않는다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>경구 피임약(에스트로겐)은 코르티솔 결합 글로불린을 올려 1 mg DST 를 위양성으로 만든다 — 4–6주 끊고 검사한다 <sup>[1 386장 p.2962]</sup>.</li>\n<li>교대근무·수면 불규칙은 심야 타액 코르티솔 해석을 흐린다(일주기 자체가 바뀜).</li>\n<li>부신 우연종은 증상과 무관하게 호르몬 과잉 세 가지(코르티솔·카테콜아민·알도스테론)를 모두 선별한다 <sup>[1 386장 p.2968]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 386장 p.2956~2968 — 문항의 정답·해설과 어긋난 곳 없음)</li>\n</ul>"
+   },
+   {
+    "title": "왜 한 번의 수치로 확진하지 않는가",
+    "deep": true,
+    "html": "<p>세 선별검사는 서로 다른 생리(일주기·되먹임·총량)를 본다. 한 검사가 경계면 다른 생리를 보는 검사를 더해 일관성을 확인하는 것이 해리슨의 방식이다 — 흔한 병(비만·당뇨·우울증)에서 한 검사만 약간 높은 경우가 드물지 않기 때문이다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "코르티솔 과잉 선별검사 — 무엇을 보는가",
+    "columns": [
+     "검사",
+     "보는 생리",
+     "양성 기준(해리슨)",
+     "주의"
+    ],
+    "rows": [
+     [
+      "심야 타액 코르티솔",
+      "밤의 최저점 소실",
+      "&gt;5 nmol/L(정상의 2배 이상)",
+      "교대근무·수면 불규칙"
+     ],
+     [
+      "1 mg 야간 덱사메타손 억제검사",
+      "음성되먹임 소실",
+      "다음 날 아침 &gt;50 nmol/L",
+      "에스트로겐 복용 시 위양성"
+     ],
+     [
+      "24시간 소변 유리코르티솔",
+      "하루 분비 총량",
+      "정상의 2배 이상",
+      "소변 수집 불완전"
+     ]
+    ],
+    "note": "양성 기준은 해리슨 21판 그림 386-12 <sup>[1 386장 p.2962]</sup>. 단위는 nmol/L 이다(µg/dL 환산은 대조하지 않았다)."
+   },
+   {
+    "title": "고혈압 + 고혈당 — 어느 호르몬 과잉인가",
+    "columns": [
+     "과잉 호르몬",
+     "변별 소견",
+     "선별검사"
+    ],
+    "rows": [
+     [
+      "코르티솔(쿠싱)",
+      "보라색 넓은 선조·멍·근위부 근병증·중심성 비만",
+      "심야 타액 코르티솔·1 mg DST·24h UFC"
+     ],
+     [
+      "카테콜아민(갈색세포종)",
+      "발작성 두통·발한·심계항진·혈압 급변",
+      "혈장 유리 또는 24h 소변 메타네프린"
+     ],
+     [
+      "알도스테론",
+      "저칼륨·대사성 알칼리증",
+      "혈장 알도스테론·레닌"
+     ]
+    ],
+    "note": "부신 우연종에서는 세 가지를 모두 검사한다 <sup>[1 386장 p.2968]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「젊은 사람의 고혈압 + 고혈당 = 이차성 고혈압 → 메타네프린」 vs 코르티솔 특이 소견",
+    "point": "고혈압·고혈당은 코르티솔·카테콜아민·알도스테론 과잉 모두에서 나서 호르몬을 가리지 못한다. 가리는 것은 동반 소견이다 — 보라색 넓은 선조·쉽게 드는 멍·근위부 근병증은 코르티솔 과잉(단백 이화·피부 위축)의 소견이고 카테콜아민으로는 설명되지 않는다. 그런 소견이 있으면 선별검사도 코르티솔 쪽이다.",
+    "exception": "부신 우연종이 먼저 발견된 경우에는 증상과 무관하게 메타네프린·1 mg DST·(고혈압이면) 알도스테론/레닌을 모두 본다 <sup>[1 386장 p.2968]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "선별검사 vs 원인 감별 검사",
+    "point": "혈장 ACTH·고용량 덱사메타손·뇌하수체 MRI 는 코르티솔 과잉이 확인된 다음의 검사다. 순서를 바꾸면 우연히 발견된 뇌하수체 미세선종이나 부신 결절을 원인으로 오인한다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "선별검사 결과가 엇갈리면 다른 선별검사를 더하거나 저용량 덱사메타손 검사로 확인한다 — 한 번의 경계 수치로 확진하지 않는다.",
+   "ACTH 5–15 pg/mL 는 회색 지대라 해리슨 그림은 CRH 검사·고용량 덱사메타손을 덧붙인다.",
+   "경구 피임약을 먹는 여성의 1 mg DST 위양성 — 4–6주 끊고 재검한다."
+  ],
+  "criteria": [
+   {
+    "id": "cs-screen",
+    "name": "선별·확진 검사",
+    "kind": "진단 기준",
+    "population": "쿠싱증후군이 의심되는 성인(외부 글루코코르티코이드 배제 후)",
+    "statement": "24시간 소변 유리코르티솔 정상의 2배 이상 · 1 mg 덱사메타손(밤 11시) 다음 날 아침 8–9시 혈장 코르티솔 >50 nmol/L · 심야 타액 코르티솔 >5 nmol/L(정상의 2배 이상) 중 여러 검사가 일관되게 양성이면 확진한다 [[harrison-21: 386장 p.2962]]",
+    "exceptions": "에스트로겐(경구 피임약)은 코르티솔 결합 글로불린을 올려 덱사메타손 검사를 위양성으로 만든다 — 4–6주 끊은 뒤 검사. 알코올 관련 가성 쿠싱·주기성 쿠싱은 추가 검사가 필요할 수 있다 [[harrison-21: 386장 p.2962]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "cs-acth",
+    "name": "원인 감별 첫 단계",
+    "kind": "진단 순서",
+    "population": "코르티솔 과잉이 확인된 환자",
+    "statement": "혈장 ACTH — 억제(<5 pg/mL)면 ACTH 비의존형(부신), 정상·상승(>15 pg/mL)이면 ACTH 의존형(뇌하수체·이소성) [[harrison-21: 386장 p.2962]]",
+    "exceptions": "코르티솔 과잉이 확인되기 전에는 원인 감별 검사를 하지 않는다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 386: Disorders of the Adrenal Cortex",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 386장 p.2956, 2958–2962, 2968",
+    "checked": "본문 대조(드라이브 386장 문서) — p.2956 코르티솔 일주기·덱사메타손 억제 원리 · p.2958 11β-HSD2 · p.2959 쿠싱병 정의 · p.2960 가장 흔한 원인은 의인성 · p.2961 변별 소견(>1 cm 보라색 선조·멍·근위부 근병증) · p.2962 그림 386-12 선별 기준(24h UFC ≥2배, 1 mg DST 아침 >50 nmol/L, 심야 타액 >5 nmol/L)·외부 글루코코르티코이드 배제 후 검사·에스트로겐 4–6주 중단·ACTH <5 / >15 pg/mL · p.2968 부신 우연종에서 메타네프린·1 mg DST·알도스테론/레닌",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "endo-society-2008",
+    "org": "Endocrine Society",
+    "title": "The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline",
+    "kind": "guideline",
+    "citation": "Nieman LK, et al. J Clin Endocrinol Metab 2008;93(5):1526-1540",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 차단으로 원문 미대조. 문항 출처로 적힌 지침",
+    "doi": "10.1210/jc.2008-0125",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2008",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1210/jc.2008-0125"
+   }
+  ],
+  "checks": [
+   {
+    "q": "쿠싱증후군 선별검사 세 가지는 각각 정상 HPA 축의 어떤 성질이 사라졌는지를 보는가?",
+    "a": "심야 타액 코르티솔 = 밤의 최저점(일주기) 소실, 1 mg 야간 덱사메타손 억제검사 = 음성되먹임 소실, 24시간 소변 유리코르티솔 = 하루 분비 총량 증가."
+   },
+   {
+    "q": "선별검사를 하기 전에 먼저 확인할 것은?",
+    "a": "외부 글루코코르티코이드 사용 — 쿠싱증후군의 가장 흔한 원인은 의인성이다."
+   },
+   {
+    "q": "고혈압·고혈당 환자에서 코르티솔 과잉을 카테콜아민 과잉과 가르는 소견은?",
+    "a": "폭 넓은 보라색 선조·쉽게 드는 멍·근위부 근병증(의자에서 손 짚지 않고 일어나기 어려움). 발작성 두통·발한·심계항진은 카테콜아민 쪽."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.endo.cushing-syndrome.screening-test#v1",
+    "context": "같은 뼈대(중년 여성·고혈압·고혈당), 결정적 동반 소견만 카테콜아민 과잉으로",
+    "stem": "44세 여자가 몇 달 전부터 몇 분씩 이어지는 두통, 가슴 두근거림, 온몸 땀이 반복된다며 왔다. 발작 때 잰 혈압은 210/120 mmHg 였고 평소에는 150/95 mmHg 이다. 공복 혈당은 132 mg/dL 이다. 체형은 말랐고 피부 선조나 근력 약화는 없다. 다음 중 진단을 위한 첫 검사로 가장 적절한 것은?",
+    "options": [
+     "1 mg 야간 덱사메타손 억제검사",
+     "혈장 유리 메타네프린",
+     "혈장 알도스테론·레닌 비",
+     "갑상선자극호르몬",
+     "혈장 ACTH"
+    ],
+    "answer": 2,
+    "explanation": "발작성 두통·심계항진·발한과 혈압 급변은 카테콜아민 과잉(갈색세포종)의 소견이다. 첫 검사는 혈장 유리 메타네프린(또는 24시간 소변 메타네프린)이다. 원래 문항과 달리 보라색 선조·근위부 근병증 같은 코르티솔 특이 소견이 없어 쿠싱 선별검사(A)의 근거가 없고, ACTH(E)는 코르티솔 과잉이 확인된 뒤의 원인 감별 검사다.",
+    "of": "kmle-2026-0039",
+    "changed": "보라색 선조·근위부 근약화·달덩이 얼굴 → 발작성 두통·발한·심계항진과 혈압 급변으로 바꿈 → 정답이 코르티솔 선별검사에서 소변(혈장) 메타네프린으로",
+    "flip": true
+   },
+   {
+    "id": "cn.endo.cushing-syndrome.screening-test#v2",
+    "context": "다른 환자·다른 경위, 같은 결정적 단서",
+    "stem": "36세 남자가 가벼운 낙상 뒤 생긴 척추 압박골절로 정형외과에서 의뢰되었다. 골밀도는 T 점수 −2.8 이다. 계단을 오를 때 허벅지에 힘이 빠지고, 팔다리에 멍이 잘 든다. 진찰에서 복부와 겨드랑이에 폭 1.5 cm 의 보라색 선조가 있고 혈압은 158/98 mmHg, 당화혈색소는 7.1% 이다. 먹거나 바르는 스테로이드는 쓰지 않는다. 다음 중 먼저 시행할 검사로 가장 적절한 것은?",
+    "options": [
+     "혈장 ACTH",
+     "뇌하수체 자기공명영상",
+     "심야 타액 코르티솔",
+     "24시간 소변 메타네프린",
+     "부갑상선호르몬"
+    ],
+    "answer": 3,
+    "explanation": "젊은 남자의 골다공증성 골절·근위부 근병증·쉽게 드는 멍·넓은 보라색 선조는 코르티솔 과잉을 시사하고, 외부 스테로이드는 배제되었다. 먼저 선별검사(심야 타액 코르티솔 — 1 mg DST·24시간 소변 유리코르티솔도 가능)로 코르티솔 과잉을 확인한다. ACTH·뇌하수체 MRI 는 확인 뒤 원인 감별 단계이고, 메타네프린은 카테콜아민 과잉 검사다. 겉모습(나이·성별·골절로 발견)이 바뀌어도 결정적 단서가 같아 답이 같다.",
+    "of": "kmle-2026-0039",
+    "changed": "나이·성별·내원 경위(골절로 발견)·소견 제시 순서를 바꿈, 보라색 선조·근위부 근병증은 남김 → 정답은 그대로 코르티솔 선별검사",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "쿠싱 의심 — 선별에서 원인 감별로",
+  "geo": {
+   "title": "쿠싱 의심 — 선별에서 원인 감별로",
+   "w": 482,
+   "h": 865.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "중심성 비만 · 고혈압 ·",
+      "고혈당 + 보라색 선조 ·",
+      "근위부 근약화"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "exo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "외부",
+      "글루코코르티코이드(먹는 약·",
+      "주사·흡입·연고)를 쓰는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "exoask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "약 복용력을 묻는다 — 관절",
+      "주사·흡입제·피부 연고까지"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 310.0
+    },
+    {
+     "id": "iatro",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "의인성 쿠싱 — 약을 줄이는",
+      "계획(갑자기 끊지 않는다)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 440.0
+    },
+    {
+     "id": "screen",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "선별검사(심야 타액",
+      "코르티솔 · 1 mg DST · 24h",
+      "UFC) 여러 개가 일관되게",
+      "양성인가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 440.0
+    },
+    {
+     "id": "notcs",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "쿠싱 가능성 낮음 — 소견이",
+      "진행하면 재검. 발작성",
+      "증상이면 메타네프린,",
+      "저칼륨이면 알도스테론·레닌"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 604.0
+    },
+    {
+     "id": "acth",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈장 ACTH 가 억제되었는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 604.0
+    },
+    {
+     "id": "adrenal",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "ACTH 비의존형 — 부신",
+      "영상(선종·암·결절 과형성)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 768.0
+    },
+    {
+     "id": "dep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "ACTH 의존형 — 뇌하수체 MRI",
+      "· 필요하면 추체정맥동",
+      "채혈로 이소성과 구분"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 768.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "exo",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "exo",
+     "to": "iatro",
+     "points": [
+      [
+       178.0,
+       244.0
+      ],
+      [
+       178.0,
+       254.0
+      ],
+      [
+       452,
+       254.0
+      ],
+      [
+       452,
+       394.0
+      ],
+      [
+       81.3,
+       394.0
+      ],
+      [
+       81.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "쓴다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 66.3,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "exo",
+     "to": "exoask",
+     "points": [
+      [
+       227.0,
+       244.0
+      ],
+      [
+       227.0,
+       260.0
+      ],
+      [
+       227.0,
+       260.0
+      ],
+      [
+       227.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정보 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "exo",
+     "to": "screen",
+     "points": [
+      [
+       276.0,
+       244.0
+      ],
+      [
+       276.0,
+       266.0
+      ],
+      [
+       466,
+       266.0
+      ],
+      [
+       466,
+       394.0
+      ],
+      [
+       307.3,
+       394.0
+      ],
+      [
+       307.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안 쓴다"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 285.0,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "exoask",
+     "to": "iatro",
+     "points": [
+      [
+       194.3,
+       374.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       146.7,
+       384.0
+      ],
+      [
+       146.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "사용 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "exoask",
+     "to": "screen",
+     "points": [
+      [
+       259.7,
+       374.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       372.7,
+       390.0
+      ],
+      [
+       372.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "사용 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "screen",
+     "to": "acth",
+     "points": [
+      [
+       307.3,
+       538.0
+      ],
+      [
+       307.3,
+       548.0
+      ],
+      [
+       114.0,
+       548.0
+      ],
+      [
+       114.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "screen",
+     "to": "notcs",
+     "points": [
+      [
+       372.7,
+       538.0
+      ],
+      [
+       372.7,
+       554.0
+      ],
+      [
+       340.0,
+       554.0
+      ],
+      [
+       340.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "acth",
+     "to": "adrenal",
+     "points": [
+      [
+       81.3,
+       651.0
+      ],
+      [
+       81.3,
+       661.0
+      ],
+      [
+       114.0,
+       661.0
+      ],
+      [
+       114.0,
+       768.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "억제(<5 pg/mL)"
+      ],
+      "w": 91.2,
+      "h": 17,
+      "x": 68.4,
+      "y": 748.0
+     }
+    },
+    {
+     "from": "acth",
+     "to": "dep",
+     "points": [
+      [
+       146.7,
+       651.0
+      ],
+      [
+       146.7,
+       667.0
+      ],
+      [
+       340.0,
+       667.0
+      ],
+      [
+       340.0,
+       768.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상·상승(>15 pg/mL)"
+      ],
+      "w": 125.9,
+      "h": 17,
+      "x": 277.0,
+      "y": 748.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "중심성 비만 · 고혈압 · 고혈당 + 보라색 선조 · 근위부 근약화",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "외부 글루코코르티코이드(먹는 약·주사·흡입·연고)를 쓰는가?"
+     }
+    ]
+   },
+   {
+    "id": "exo",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "외부 글루코코르티코이드(먹는 약·주사·흡입·연고)를 쓰는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "쓴다",
+      "to": 4,
+      "toText": "의인성 쿠싱 — 약을 줄이는 계획(갑자기 끊지 않는다)"
+     },
+     {
+      "label": "안 쓴다",
+      "to": 5,
+      "toText": "선별검사(심야 타액 코르티솔 · 1 mg DST · 24h UFC) 여러 개가 일관되게 양성인가?"
+     },
+     {
+      "label": "정보 없음",
+      "to": 3,
+      "toText": "약 복용력을 묻는다 — 관절 주사·흡입제·피부 연고까지"
+     }
+    ]
+   },
+   {
+    "id": "exoask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "약 복용력을 묻는다 — 관절 주사·흡입제·피부 연고까지",
+    "note": "",
+    "branches": [
+     {
+      "label": "사용 확인",
+      "to": 4,
+      "toText": "의인성 쿠싱 — 약을 줄이는 계획(갑자기 끊지 않는다)"
+     },
+     {
+      "label": "사용 없음",
+      "to": 5,
+      "toText": "선별검사(심야 타액 코르티솔 · 1 mg DST · 24h UFC) 여러 개가 일관되게 양성인가?"
+     }
+    ]
+   },
+   {
+    "id": "iatro",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "의인성 쿠싱 — 약을 줄이는 계획(갑자기 끊지 않는다)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "screen",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "선별검사(심야 타액 코르티솔 · 1 mg DST · 24h UFC) 여러 개가 일관되게 양성인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 6,
+      "toText": "혈장 ACTH 가 억제되었는가?"
+     },
+     {
+      "label": "음성",
+      "to": 7,
+      "toText": "쿠싱 가능성 낮음 — 소견이 진행하면 재검. 발작성 증상이면 메타네프린, 저칼륨이면 알도스테론·레닌"
+     }
+    ]
+   },
+   {
+    "id": "acth",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈장 ACTH 가 억제되었는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "억제(<5 pg/mL)",
+      "to": 8,
+      "toText": "ACTH 비의존형 — 부신 영상(선종·암·결절 과형성)"
+     },
+     {
+      "label": "정상·상승(>15 pg/mL)",
+      "to": 9,
+      "toText": "ACTH 의존형 — 뇌하수체 MRI · 필요하면 추체정맥동 채혈로 이소성과 구분"
+     }
+    ]
+   },
+   {
+    "id": "notcs",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "쿠싱 가능성 낮음 — 소견이 진행하면 재검. 발작성 증상이면 메타네프린, 저칼륨이면 알도스테론·레닌",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "adrenal",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "ACTH 비의존형 — 부신 영상(선종·암·결절 과형성)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "dep",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "ACTH 의존형 — 뇌하수체 MRI · 필요하면 추체정맥동 채혈로 이소성과 구분",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0039"
+  ],
+  "hasErrors": false
+ },
+ "cn.endo.hhs.initial-fluid-resuscitation": {
+  "id": "cn.endo.hhs.initial-fluid-resuscitation",
+  "title": "고혈당고삼투상태(HHS) — 삼투성 이뇨에서 첫 치료(등장식염수)까지",
+  "objective": "상대적 인슐린 결핍과 수분 섭취 부족이 삼투성 이뇨로 혈관내 용적을 고갈시키는 기전을 설명하고, 케톤·산증이 경미한 극심한 고혈당·고삼투를 HHS 로 인지해 첫 치료로 0.9% 생리식염수 대량 수액을 고르며, 인슐린·칼륨·저장성 수액·중탄산염의 순서와 적응을 판단한다",
+  "objectiveKind": "치료",
+  "condition": "고혈당고삼투상태(HHS)",
+  "topic": "Endocrinology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "9c0eb21dbefa1875",
+  "summary": [
+   "인슐린이 상대적으로 모자라면 간의 포도당 생산이 늘고 근육의 사용이 줄어 혈당이 오른다. 콩팥 역치를 넘은 포도당이 물을 끌고 나가(삼투성 이뇨) 혈관내 용적이 빠지고, 물을 마시지 못하는 노인에서는 며칠~몇 주에 걸쳐 탈수와 고삼투가 깊어진다 [[harrison-21: 404장 p.3117]].",
+   "HHS 는 혈당 600–1200 mg/dL·삼투질농도 330–380 mOsm/kg·pH >7.3·중탄산 >18·케톤 ± 가 전형이다 — 케톤·산증이 없거나 경미한 것이 DKA 와 다르다 [[harrison-21: 404장 p.3115]].",
+   "첫 치료는 혈역학을 안정시키는 0.9% 생리식염수(처음 2–3시간 1–3 L)다. 혈당도 수액만으로 먼저 떨어진다 [[harrison-21: 404장 p.3117]].",
+   "인슐린은 수액을 시작하고 칼륨을 확인한 다음이다(칼륨 <3.3 이면 교정 전까지 보류 — DKA 관리표) [[harrison-21: 404장 p.3116–3117]]. 혈역학이 안정되면 자유수 결핍을 저장성 수액으로 1–2일에 걸쳐 천천히 채운다(너무 빠르면 신경학적 악화).",
+   "중탄산염은 산증이 거의 없는 HHS 에서 적응이 없다. DKA 에서도 일상적으로 쓰지 않고 pH <7.0 의 심한 산증에서만 고려한다 [[harrison-21: 404장 p.3116]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>고혈당고삼투상태(HHS)는 상대적 인슐린 결핍과 수분 섭취 부족으로 극심한 고혈당·고삼투·탈수가 생기지만 케톤산증은 없거나 경미한 고혈당 위기다. DKA 와 한 연속선 위에 있으며, 주로 2형 당뇨 고령자에서 본다 <sup>[1 404장 p.3114]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서는 인슐린이 간의 포도당 생산(글리코겐 분해·포도당신생)을 누르고 근육의 포도당 사용을 늘린다. 인슐린이 상대적으로 부족하면 이 두 가지가 거꾸로 되어 혈당이 오른다. 포도당이 콩팥 재흡수 한계를 넘으면 소변으로 물을 끌고 나가는 <strong>삼투성 이뇨</strong>가 생기고, 물을 스스로 마시지 못하는 노인(뇌졸중·치매 후유증)에서는 보충이 안 되어 혈관내 용적이 계속 빠진다 <sup>[1 404장 p.3117]</sup>. 케톤이 거의 생기지 않는 이유는 확실하지 않다 — 인슐린 결핍이 DKA 보다 덜하고, 역조절 호르몬·유리지방산이 더 낮다는 설명이 있다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>수일~수주의 삼투성 이뇨 → <strong>깊은 탈수</strong>: 저혈압·빈맥·전신 쇠약, 전신 수분 결핍은 9–10 L 에 이를 수 있다 <sup>[1 404장 p.3117]</sup>.</li>\n<li>고삼투로 뇌세포에서 물이 빠짐 → <strong>혼동·기면·혼수</strong>. DKA 와 달리 구역·구토·복통·Kussmaul 호흡은 없다.</li>\n<li>탈수 → 신전성 질소혈증(크레아티닌 상승). 측정 나트륨은 정상이거나 약간 낮지만 <strong>교정 나트륨</strong>은 대개 높다.</li>\n<li>산증은 없거나 경미 — 젖산으로 작은 음이온차 산증, 굶주림으로 중등도 케톤뇨가 있을 수 있다.</li>\n<li>흔한 유발 요인: 심근경색·뇌졸중·패혈증·폐렴 — 반드시 찾는다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>DKA 와의 차이는 표 「DKA vs HHS」. 핵심은 케톤과 산증의 크기다. pH 가 정상 하한을 조금 밑돈다는 것만으로 케톤산증으로 분류하지 않는다 — 케톤·중탄산·음이온차를 함께 본다. 다른 음이온차 산증(젖산·알코올케톤산증·중독)도 감별에 든다 <sup>[1 404장 p.3115]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈당·전해질(교정 나트륨)·삼투질농도·동맥혈 가스·혈청 케톤(β-hydroxybutyrate)·크레아티닌·칼륨·인·마그네슘, 그리고 유발 질환 검사(혈액배양·흉부 X선·심전도·심근효소).</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>수액</strong>: 0.9% 생리식염수 1–3 L(처음 2–3시간)로 혈역학을 안정시킨다. 나트륨 &gt;150 이면 0.45% 식염수 <sup>[1 404장 p.3117]</sup>.</li>\n<li><strong>칼륨 확인</strong>: 반복 측정으로 보충. 칼륨 &lt;3.3 이면 교정 전까지 인슐린 보류(DKA 관리표) <sup>[1 404장 p.3116]</sup>.</li>\n<li><strong>인슐린</strong>: 정맥 0.1 U/kg 뒤 0.1 U/kg/시간 지속 주입, 반응이 없으면 두 배. 혈당 200–250 mg/dL 에서 수액에 포도당을 넣고 주입 속도를 줄인다 <sup>[1 404장 p.3117]</sup>.</li>\n<li><strong>자유수 결핍 교정</strong>: 안정 뒤 저장성 수액(0.45% → 5% 포도당)으로 1–2일에 걸쳐 — 너무 빠른 교정은 신경학적 악화를 부른다.</li>\n<li><strong>유발 질환 치료</strong>, 퇴원은 인슐린으로(일부는 나중에 경구약으로 전환).</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>적절히 치료해도 HHS 사망률은 DKA 보다 높다(일부 보고 최대 15%) — 고령·동반 질환·유발 질환 때문이다 <sup>[1 404장 p.3117]</sup>.</li>\n<li>이뇨제를 먹던 환자는 칼륨 결핍이 크고 마그네슘 결핍이 동반될 수 있다.</li>\n<li>중탄산염은 HHS 에서 적응이 없다. DKA 에서도 일상적으로 쓰지 않는다 <sup>[1 404장 p.3116]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · DKA 에서 중탄산염을 고려하는 pH 문턱</strong> — 시험 기준: 동맥혈 pH &lt;7.0 에서 처음 2시간, pH &gt;7.0 이 될 때까지 <sup>[1 404장 p.3116]</sup> / 다른 기준: 문항 kmle-2026-0074 의 보기 설명(distractors.B.when_right)은 「pH 6.9 미만」을 적었고 출처로 ADA 고혈당 위기 지침을 든다 <sup>[2†]</sup> / 왜 다른가: 지침 판마다 문턱이 다르게 알려져 있으나 이 정리본에서는 ADA 원문을 열어 보지 못해 확인하지 않았다 / 시험에서는: KMLE · USMLE 모두 「HHS·경한 산증에는 중탄산염을 주지 않는다」가 답이다. 문턱 수치 자체를 묻는 문항이면 출제 출처를 확인한다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 HHS 의 탈수가 DKA 보다 깊은가",
+    "deep": true,
+    "html": "<p>DKA 는 케톤산증의 구역·구토·복통·호흡곤란이 하루 안에 병원으로 오게 만든다. HHS 는 그런 경고 증상이 없어 수일~수주 동안 삼투성 이뇨가 이어지고, 대개 스스로 물을 마시기 어려운 사람에게 생긴다. 그래서 같은 「고혈당 위기」라도 HHS 의 치료 중심은 수액이고, 인슐린은 그다음이다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "DKA vs HHS — 무엇이 다르고 치료에 무엇을 바꾸나",
+    "columns": [
+     "항목",
+     "DKA",
+     "HHS"
+    ],
+    "rows": [
+     [
+      "환자·경과",
+      "주로 1형, 24시간 안에 진행",
+      "고령 2형, 며칠~몇 주"
+     ],
+     [
+      "혈당(mg/dL)",
+      "250–600",
+      "600–1200"
+     ],
+     [
+      "삼투질농도",
+      "300–320",
+      "330–380"
+     ],
+     [
+      "pH · 중탄산",
+      "6.8–7.3 · &lt;18",
+      "&gt;7.3 · &gt;18"
+     ],
+     [
+      "케톤 · 음이온차",
+      "++++ · 증가",
+      "± · 정상~약간 증가"
+     ],
+     [
+      "치료의 중심",
+      "수액 + 인슐린으로 케톤 생성 억제",
+      "수액(탈수가 더 깊다) → 인슐린"
+     ]
+    ],
+    "note": "값은 해리슨 표 404-6 의 내원 시 대표 범위 <sup>[1 404장 p.3115]</sup>. 삼투질농도 단위는 표에 mOsm/mL 로 인쇄되어 있으나 본문은 mOsm/L 이다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「혈당 위기 + pH 가 정상보다 조금 낮다 → 중탄산염」 vs 산증의 크기",
+    "point": "HHS 의 문제는 산증이 아니라 탈수와 고삼투다. pH 7.34·케톤 미량은 HHS 범위 안(작은 젖산 산증·굶주림 케톤이 있을 수 있다)이고 중탄산염 적응이 없다. DKA 에서도 중탄산염은 일상 치료가 아니며, 빠른 알칼리화는 저칼륨·조직 산소 공급 저하를 부를 수 있다.",
+    "exception": "DKA 에서 동맥혈 pH &lt;7.0 이면 처음 2시간 중탄산염을 고려한다 <sup>[1 404장 p.3116]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "인슐린 먼저 vs 수액 먼저",
+    "point": "탈수가 심한 상태에서 인슐린부터 주면 포도당과 함께 물이 세포 안으로 들어가 혈관내 용적이 더 줄고, 칼륨도 세포 안으로 들어가 저칼륨이 온다. 수액이 혈당을 먼저 낮춘다.",
+    "exception": "혈역학이 안정되고 칼륨 ≥3.3 이면 정맥 인슐린을 시작한다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "저장성 포도당액으로 「물을 채운다」?",
+    "point": "자유수 결핍은 실제로 크지만(9–10 L) 첫 단계는 혈역학 안정(등장식염수)이고, 포도당은 혈당이 200–250 mg/dL 로 내려온 뒤에 넣는다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "결과를 기다리는 동안에도 탈수·저혈압이 뚜렷하면 등장식염수는 먼저 시작한다 — 수액은 DKA·HHS 어느 쪽이든 첫 치료다.",
+   "혈청 나트륨이 &gt;150 mmol/L 이면 첫 수액을 0.45% 식염수로 바꾼다. 측정 나트륨은 고혈당 때문에 낮게 보인다 — 혈당 100 mg/dL 오를 때마다 1.6 meq 를 더해 교정 나트륨을 본다.",
+   "칼륨이 처음에 정상이어도 몸 전체 칼륨은 부족하다 — 인슐린·수액으로 세포 안으로 들어가며 떨어지므로 반복 측정한다."
+  ],
+  "criteria": [
+   {
+    "id": "hhs-labs",
+    "name": "HHS 검사 소견(대표 범위)",
+    "kind": "진단 소견",
+    "population": "고혈당 위기 성인",
+    "statement": "혈당 600–1200 mg/dL · 삼투질농도 330–380 · pH >7.3 · 중탄산 >18 meq/L · 혈청/소변 케톤 ± · β-hydroxybutyrate <1.0 mmol/L · 크레아티닌 중등도 상승 [[harrison-21: 404장 p.3115]]",
+    "exceptions": "표의 값은 내원 시 대표 범위다 — 젖산 증가로 작은 음이온차 산증이 있을 수 있고, 굶어서 생긴 중등도 케톤뇨가 있을 수 있다 [[harrison-21: 404장 p.3117]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hhs-fluid",
+    "name": "첫 수액",
+    "kind": "치료 권고",
+    "population": "HHS",
+    "statement": "처음 2–3시간 0.9% 생리식염수 1–3 L 로 혈역학 안정. 혈청 나트륨 >150 이면 0.45% 식염수. 안정 뒤 자유수 결핍을 저장성 수액(0.45% → 5% 포도당)으로 1–2일에 걸쳐 교정 [[harrison-21: 404장 p.3117]]",
+    "exceptions": "고삼투를 너무 빨리 되돌리면 신경학적 기능이 나빠질 수 있다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hhs-insulin",
+    "name": "인슐린·칼륨",
+    "kind": "치료 권고",
+    "population": "HHS(수액 시작 후)",
+    "statement": "정맥 인슐린 0.1 U/kg 볼루스 뒤 0.1 U/kg/h 지속 주입, 혈당이 안 떨어지면 두 배. 혈당 200–250 mg/dL 에서 수액에 포도당을 넣고 주입 속도를 줄인다. 칼륨은 반복 측정으로 보충 [[harrison-21: 404장 p.3117]]",
+    "exceptions": "초기 칼륨 <3.3 mmol/L 이면 칼륨을 교정할 때까지 인슐린을 주지 않는다(DKA 관리표 404-8) [[harrison-21: 404장 p.3116]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 404: Diabetes Mellitus: Management and Therapies",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 404장 p.3114–3117 (Table 404-6, 404-8; Hyperglycemic Hyperosmolar State)",
+    "checked": "본문 대조(드라이브 404장 문서) — p.3115 표 404-6 DKA/HHS 검사 범위 · p.3116 DKA 중탄산염은 일상적으로 불필요, pH <7.0 에서만 · 표 404-8 칼륨 <3.3 이면 인슐린 보류 · p.3117 HHS 임상상(고령 2형·수주 경과·Kussmaul 없음·유발 질환), 병태생리(상대적 인슐린 결핍+수분 섭취 부족 → 삼투성 이뇨), 소견(혈당 >1000 가능·삼투 >350·교정 나트륨), 치료(0.9% 1–3 L 2–3시간 · Na >150 이면 0.45% · 자유수 결핍 1–2일 교정 · 인슐린 0.1 U/kg 볼루스 후 0.1 U/kg/h · 혈당 200–250 에서 포도당 추가 · 사망률 최대 15%). 이 장에 HHS 진단 기준 수치(ADA 정의)는 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "ada-hyperglycemic-crises",
+    "org": "American Diabetes Association",
+    "title": "Hyperglycemic crises in adult patients with diabetes (consensus statement)",
+    "kind": "guideline",
+    "citation": "Kitabchi AE, et al. Diabetes Care 2009;32(7):1335-1343",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 차단으로 원문 미대조. 문항 출처로 적힌 지침(2024 개정판 존재 여부도 대조하지 않았다)",
+    "doi": "10.2337/dc09-9032",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.2337/dc09-9032"
+   }
+  ],
+  "checks": [
+   {
+    "q": "HHS 에서 인슐린보다 수액이 먼저인 이유 두 가지는?",
+    "a": "① 삼투성 이뇨로 혈관내 용적이 크게 줄어 있어 먼저 채워야 하고(인슐린은 물을 세포 안으로 옮겨 용적을 더 줄인다), ② 인슐린이 칼륨을 세포 안으로 넣어 저칼륨을 부를 수 있어 칼륨 확인이 먼저다."
+   },
+   {
+    "q": "HHS 첫 수액의 종류와 양은? 언제 바꾸나?",
+    "a": "0.9% 생리식염수 1–3 L(처음 2–3시간). 혈청 나트륨 >150 이면 0.45%, 혈역학 안정 뒤 저장성 수액으로 자유수 결핍을 1–2일에 걸쳐, 혈당 200–250 에서 포도당 추가."
+   },
+   {
+    "q": "HHS 와 DKA 를 가르는 검사 소견은?",
+    "a": "케톤(±)·pH >7.3·중탄산 >18·삼투질농도 330–380 이면 HHS. 케톤 ++++·pH 6.8–7.3·중탄산 <18·음이온차 증가면 DKA."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.endo.hhs.initial-fluid-resuscitation#v1",
+    "context": "같은 HHS 환자, 첫 수액을 마친 뒤의 다음 단계",
+    "stem": "76세 여자가 일주일간 다뇨와 기면으로 왔다. 혈당 1,020 mg/dL, 동맥혈 pH 7.36, 혈청 케톤 미량, 혈청 삼투질농도 348 mOsm/kg 이었다. 응급실에서 0.9% 생리식염수 2 L 를 2시간에 걸쳐 맞은 뒤 혈압은 84/52 에서 124/74 mmHg 로, 맥박은 118 에서 92회/분으로 바뀌었고 소변이 시간당 60 mL 나온다. 재검에서 혈당 780 mg/dL, 혈청 칼륨 4.0 mmol/L, 혈청 나트륨 146 mmol/L 이다. 다음으로 시작할 치료로 가장 적절한 것은?",
+    "options": [
+     "정맥 속효성 인슐린(0.1 U/kg 후 0.1 U/kg/시간 지속 주입)",
+     "탄산수소나트륨 정주",
+     "5% 포도당액으로 수액을 바꾼다",
+     "경구 메트포르민",
+     "칼륨 보충이 끝날 때까지 수액만 유지"
+    ],
+    "answer": 1,
+    "explanation": "혈역학이 안정되었고 칼륨이 3.3 mmol/L 이상이므로 이제 정맥 인슐린을 시작한다(0.1 U/kg 볼루스 뒤 0.1 U/kg/시간). 원래 문항에서 인슐린이 오답이었던 이유 — 심한 탈수·저혈압이 아직 교정되지 않았다는 단서 — 가 사라졌다. pH 7.36 이라 중탄산염 적응이 없고, 포도당은 혈당이 200–250 mg/dL 로 내려온 뒤 넣는다. 칼륨이 <3.3 일 때만 인슐린을 보류한다.",
+    "of": "kmle-2026-0074",
+    "changed": "심한 탈수·저혈압 → 이미 생리식염수 2 L 를 받아 혈압·소변량이 회복되고 칼륨 4.0 으로 바꿈 → 정답이 수액 볼루스에서 정맥 인슐린 시작으로",
+    "flip": true
+   },
+   {
+    "id": "cn.endo.hhs.initial-fluid-resuscitation#v2",
+    "context": "다른 환자·다른 유발 질환, 같은 결정적 단서",
+    "stem": "요양원에 사는 82세 남자가 사흘 전부터 기침과 발열이 있고 물을 거의 마시지 못하다가 오늘 불러도 겨우 눈을 떠 이송되었다. 혀와 겨드랑이가 말라 있다. 혈압 86/54 mmHg, 맥박 118회/분이다. 흉부 X선에서 오른쪽 아래엽 경화가 보인다. 혈청 삼투질농도 356 mOsm/kg, 혈청 케톤 음성, 동맥혈 pH 7.38, 혈당 1,140 mg/dL, 혈청 칼륨 4.5 mmol/L, 혈청 나트륨 139 mmol/L 이다. 다음 중 가장 먼저 시행할 치료는?",
+    "options": [
+     "0.9% 생리식염수를 빠르게 정주한다",
+     "정맥 인슐린 볼루스를 먼저 준다",
+     "탄산수소나트륨을 정주한다",
+     "0.45% 식염수에 5% 포도당을 섞어 천천히 준다",
+     "콧줄로 물을 준다"
+    ],
+    "answer": 1,
+    "explanation": "폐렴이 유발한 HHS(극심한 고혈당·고삼투·케톤 음성·pH 정상)에 저혈압·빈맥이 있다. 첫 치료는 0.9% 생리식염수로 혈역학을 안정시키는 것이다(처음 2–3시간 1–3 L). 인슐린은 수액을 시작하고 칼륨을 확인한 뒤, 저장성·포도당 수액은 혈역학 안정·혈당 저하 뒤다. 유발 질환(폐렴) 치료는 함께 시작한다. 나이·성별·유발 질환이 달라도 결정적 단서(탈수·저혈압·케톤 경미한 고삼투)가 같아 답이 같다.",
+    "of": "kmle-2026-0074",
+    "changed": "성별·나이·유발 질환(요양원 거주·폐렴)·검사 제시 순서를 바꿈, 심한 탈수·저혈압·케톤 경미·고삼투는 남김 → 정답은 그대로 등장식염수",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "고혈당 위기 — 첫 30분의 순서",
+  "geo": {
+   "title": "고혈당 위기 — 첫 30분의 순서",
+   "w": 482,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "혈당 수백~1000 mg/dL ·",
+      "탈수 · 의식 변화"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "kind",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "케톤이 뚜렷하고 음이온차",
+      "대사성 산증(pH <7.3 ·",
+      "중탄산 <18)인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "kinddo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "동맥혈 가스 · 혈청",
+      "케톤(β-hydroxybutyrate)",
+      "· 전해질 · 삼투질농도를 잰다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "hhs",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "HHS — 0.9% 생리식염수 1–3",
+      "L(처음 2–3시간)으로 혈역학",
+      "안정"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 440.0
+    },
+    {
+     "id": "dka",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "DKA — 0.9% 식염수 수액 +",
+      "칼륨 확인 후 인슐린 지속",
+      "주입"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 440.0
+    },
+    {
+     "id": "k",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈청 칼륨이 3.3 mmol/L",
+      "이상인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 587.0
+    },
+    {
+     "id": "kfix",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "칼륨부터 보충 — 교정 전까지",
+      "인슐린 보류"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 717.0
+    },
+    {
+     "id": "ins",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정맥 인슐린 시작 · 안정 뒤",
+      "저장성 수액으로 자유수",
+      "결핍을 1–2일에 걸쳐 교정 ·",
+      "유발 질환(감염·심근경색·",
+      "뇌졸중) 찾기"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 16.0,
+     "y": 717.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "kind",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "kind",
+     "to": "dka",
+     "points": [
+      [
+       178.0,
+       227.0
+      ],
+      [
+       178.0,
+       237.0
+      ],
+      [
+       452,
+       237.0
+      ],
+      [
+       452,
+       394.0
+      ],
+      [
+       81.3,
+       394.0
+      ],
+      [
+       81.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 71.8,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "kind",
+     "to": "kinddo",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "결과 대기"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "kind",
+     "to": "hhs",
+     "points": [
+      [
+       276.0,
+       227.0
+      ],
+      [
+       276.0,
+       249.0
+      ],
+      [
+       466,
+       249.0
+      ],
+      [
+       466,
+       394.0
+      ],
+      [
+       307.3,
+       394.0
+      ],
+      [
+       307.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오(케톤 ± · pH >7.3)"
+      ],
+      "w": 141.8,
+      "h": 17,
+      "x": 236.5,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "kinddo",
+     "to": "dka",
+     "points": [
+      [
+       194.3,
+       374.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       146.7,
+       384.0
+      ],
+      [
+       146.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "케톤산증"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 120.7,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "kinddo",
+     "to": "hhs",
+     "points": [
+      [
+       259.7,
+       374.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       372.7,
+       390.0
+      ],
+      [
+       372.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "고삼투 · 케톤 경미"
+      ],
+      "w": 102.6,
+      "h": 17,
+      "x": 321.4,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "hhs",
+     "to": "k",
+     "points": [
+      [
+       340.0,
+       521.0
+      ],
+      [
+       340.0,
+       531.0
+      ],
+      [
+       259.7,
+       531.0
+      ],
+      [
+       259.7,
+       587.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "dka",
+     "to": "k",
+     "points": [
+      [
+       114.0,
+       521.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       194.3,
+       531.0
+      ],
+      [
+       194.3,
+       587.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "k",
+     "to": "ins",
+     "points": [
+      [
+       194.3,
+       651.0
+      ],
+      [
+       194.3,
+       661.0
+      ],
+      [
+       114.0,
+       661.0
+      ],
+      [
+       114.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "k",
+     "to": "kfix",
+     "points": [
+      [
+       259.7,
+       651.0
+      ],
+      [
+       259.7,
+       667.0
+      ],
+      [
+       340.0,
+       667.0
+      ],
+      [
+       340.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오(<3.3)"
+      ],
+      "w": 79.3,
+      "h": 17,
+      "x": 300.4,
+      "y": 697.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "혈당 수백~1000 mg/dL · 탈수 · 의식 변화",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "케톤이 뚜렷하고 음이온차 대사성 산증(pH <7.3 · 중탄산 <18)인가?"
+     }
+    ]
+   },
+   {
+    "id": "kind",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "케톤이 뚜렷하고 음이온차 대사성 산증(pH <7.3 · 중탄산 <18)인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "DKA — 0.9% 식염수 수액 + 칼륨 확인 후 인슐린 지속 주입"
+     },
+     {
+      "label": "아니오(케톤 ± · pH >7.3)",
+      "to": 4,
+      "toText": "HHS — 0.9% 생리식염수 1–3 L(처음 2–3시간)으로 혈역학 안정"
+     },
+     {
+      "label": "결과 대기",
+      "to": 3,
+      "toText": "동맥혈 가스 · 혈청 케톤(β-hydroxybutyrate) · 전해질 · 삼투질농도를 잰다"
+     }
+    ]
+   },
+   {
+    "id": "kinddo",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "동맥혈 가스 · 혈청 케톤(β-hydroxybutyrate) · 전해질 · 삼투질농도를 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "고삼투 · 케톤 경미",
+      "to": 4,
+      "toText": "HHS — 0.9% 생리식염수 1–3 L(처음 2–3시간)으로 혈역학 안정"
+     },
+     {
+      "label": "케톤산증",
+      "to": 5,
+      "toText": "DKA — 0.9% 식염수 수액 + 칼륨 확인 후 인슐린 지속 주입"
+     }
+    ]
+   },
+   {
+    "id": "hhs",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "HHS — 0.9% 생리식염수 1–3 L(처음 2–3시간)으로 혈역학 안정",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "혈청 칼륨이 3.3 mmol/L 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "dka",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "DKA — 0.9% 식염수 수액 + 칼륨 확인 후 인슐린 지속 주입",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "혈청 칼륨이 3.3 mmol/L 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "k",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈청 칼륨이 3.3 mmol/L 이상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "정맥 인슐린 시작 · 안정 뒤 저장성 수액으로 자유수 결핍을 1–2일에 걸쳐 교정 · 유발 질환(감염·심근경색·뇌졸중) 찾기"
+     },
+     {
+      "label": "아니오(<3.3)",
+      "to": 8,
+      "toText": "칼륨부터 보충 — 교정 전까지 인슐린 보류"
+     }
+    ]
+   },
+   {
+    "id": "ins",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정맥 인슐린 시작 · 안정 뒤 저장성 수액으로 자유수 결핍을 1–2일에 걸쳐 교정 · 유발 질환(감염·심근경색·뇌졸중) 찾기",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "kfix",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "칼륨부터 보충 — 교정 전까지 인슐린 보류",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0074"
+  ],
+  "hasErrors": false
+ },
+ "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
+  "id": "cn.endo.pheochromocytoma.preoperative-alpha-blockade",
+  "title": "갈색세포종 수술 전 준비 — 알파차단 먼저, 베타차단은 나중",
+  "objective": "카테콜아민이 알파1 수용체(혈관수축)와 베타 수용체(심박·수축력, 베타2 혈관확장)에 작용하는 방식으로 갈색세포종의 발작성 고혈압과 용적 수축을 설명하고, 수술 전 혈압 조절을 알파차단제(페녹시벤자민)와 염분·수분 보충으로 시작하며, 베타차단제는 충분한 알파차단 뒤 빈맥 조절에만 더하는 이유를 판단한다",
+  "objectiveKind": "치료",
+  "condition": "갈색세포종(카테콜아민 분비 부신수질 종양)",
+  "topic": "Endocrinology",
+  "seeAlso": [
+   "General Surgery",
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "8fd44c7b2777e816",
+  "summary": [
+   "노르에피네프린은 주로 혈관의 알파1 수용체로 혈관을 조이고, 에피네프린은 베타1(심박·수축력)과 베타2(골격근 혈관 확장)에도 작용한다. 갈색세포종은 이 호르몬이 발작적으로 쏟아져 두통·발한·심계항진과 고혈압(발작성 또는 지속성)을 만든다 [[harrison-21: 387장 p.2976]].",
+   "혈관이 오래 조여 있어 환자는 혈장량이 줄어 있다(용적 수축). 그래서 수술 전 준비는 알파차단제(경구 페녹시벤자민)로 혈관수축을 풀면서 염분·수분을 넉넉히 채워 기립성 저혈압을 막는 것이다 — 목표 혈압은 꾸준히 <160/90 mmHg [[harrison-21: 387장 p.2978–2979]].",
+   "베타차단제(예: 프로프라놀롤)는 알파차단이 충분해진 **뒤에** 더한다 [[harrison-21: 387장 p.2979]]. 먼저 주면 베타2 매개 혈관확장이 사라져 알파 매개 수축만 남고, 심장은 늘어난 후부하를 이기지 못해 혈압이 더 오르거나 폐부종이 올 수 있다(견제받지 않는 알파 작용).",
+   "알파차단을 기다리는 동안의 발작은 경구 프라조신이나 정맥 펜톨아민으로, 수술 중 고혈압 위기는 니트로프루시드로, 종양 제거 뒤 저혈압은 수액으로 다룬다 [[harrison-21: 387장 p.2979]].",
+   "칼슘통로차단제·ACE 억제제도 보조 강압제로 효과적으로 쓰였다(해리슨) — 그러나 시험의 「가장 먼저 시작할 약」은 알파차단제다 [[harrison-21: 387장 p.2979]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>갈색세포종은 교감신경계 유래 크로마핀 세포에서 생긴 카테콜아민(노르에피네프린·에피네프린·도파민) 분비 종양이다. WHO 는 부신 안의 것만 갈색세포종, 그 밖의 부위는 부신경절종이라 부른다. 25–33% 는 유전 증후군(MEN 2·VHL·NF1·SDHx 등)이다 <sup>[1 387장 p.2976]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 교감신경 말단의 노르에피네프린은 혈관 평활근의 알파1 수용체로 혈관을 조이고, 부신수질의 에피네프린은 베타1(심박·수축력 증가)과 베타2(골격근 혈관 확장)에 작용해 두 힘이 균형을 이룬다. 종양은 이 호르몬을 발작적으로 또는 지속적으로 내보낸다. 환자는 혈장량이 줄어 있다(용적 수축) <sup>[1 387장 p.2979]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>카테콜아민 분출 → 두통·땀·심계항진(고전적 3징)과 발작성(또는 지속성) 고혈압. 셋이 고혈압과 함께 있으면 갈색세포종 가능성이 높다 <sup>[1 387장 p.2976]</sup>.</li>\n<li>발작은 대개 1시간 미만이고 수술·자세 변화·운동·배뇨(방광 종양)·약물(삼환계 항우울제·아편제·메토클로프라미드)로 유발된다.</li>\n<li>알파 작용 → 창백, 베타 작용 → 빈맥·부정맥, 대사 작용 → 고혈당. 위기 때는 심부전·폐부종·뇌출혈.</li>\n<li>용적 수축 → 기립성 저혈압(표 387-1 에도 있다) — 치료 전후 모두 문제가 된다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>본태성 고혈압, 불안·공황 발작, 코카인·암페타민, 클로니딘 중단, 비만세포증·카르시노이드(대개 고혈압 없음), 두개내 병변, 가성 발작(교감신경 흥분제) <sup>[1 387장 p.2978]</sup>. 증상 없는 부신 종양이면 비기능 선종·알도스테론 선종·코르티솔 분비 선종(쿠싱)이 대안이다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>생화학적 확인이 먼저다 — 혈장 유리 메타네프린이 가장 민감하고, 24시간 소변 분획 메타네프린도 쓴다. 정상 상한의 3배 이상이면 가능성이 매우 높다. 경계치는 위양성이 많아 약물(알파·베타차단제·삼환계·이뇨제)·스트레스를 배제하고 재검하거나 클로니딘 억제검사를 한다 <sup>[1 387장 p.2977]</sup>. 위치는 CT·MRI(조영), 필요 시 DOTATATE·DOPA PET.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>표 「갈색세포종 약물 — 언제 무엇을」.</p>\n<ol>\n<li><strong>알파차단 + 용적 보충</strong>: 경구 페녹시벤자민, 염분·수분 넉넉히. 목표 혈압 &lt;160/90 mmHg <sup>[1 387장 p.2978–2979]</sup>.</li>\n<li><strong>베타차단은 그 뒤</strong>: 빈맥이 남으면 프로프라놀롤 등을 더한다.</li>\n<li><strong>수술</strong>: 경험 있는 팀의 복강경·후복막경 절제. 수술 중 고혈압 위기는 니트로프루시드, 수술 뒤 저혈압은 수액. 수술 뒤 카테콜아민 정상화를 확인한다 <sup>[1 387장 p.2979]</sup>.</li>\n<li><strong>반응 확인</strong>: 누운·선 혈압과 맥박, 코막힘(알파차단의 신호), 기립성 증상을 매일 본다.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>유전 증후군(특히 양쪽 종양)에서는 부신 피질을 보존하는 부분 절제로 부신기능저하를 막는다 <sup>[1 387장 p.2978]</sup>.</li>\n<li>MEN 2 환자는 갑상선 수술 전에 갈색세포종을 반드시 배제한다 <sup>[1 387장 p.2980]</sup>.</li>\n<li>해리슨은 칼슘통로차단제·ACE 억제제도 효과적으로 쓰였다고 적는다 — 보조 약으로 이해한다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 모든 환자에게 수술 전 알파차단이 필요한가</strong> — 시험 기준: 수술 전 혈압은 알파차단제(페녹시벤자민)로 조절하고 베타차단제는 그 뒤에 더한다 <sup>[1 387장 p.2979]</sup> / 다른 기준: 해리슨은 같은 쪽에서 「혈압이 정상인 갈색세포종 환자는 수술 중 니트로프루시드만 대기시키는 방식이 안전했고 알파차단제로 흔한 수술 후 저혈압을 피했다 — 필수 알파차단이라는 오랜 지침은 논의 중」이라고 적는다 <sup>[1 387장 p.2979]</sup> / 왜 다른가: 알파차단제의 부작용(수술 후 저혈압)과 수술 중 약물·마취 관리의 발전 / 시험에서는: KMLE · USMLE 모두 고혈압이 있는 갈색세포종의 「가장 먼저 시작할 약」은 알파차단제, 「알파 전 베타 금지」가 답이다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 선택적 베타1 차단제도 먼저 쓰지 않는가",
+    "deep": true,
+    "html": "<p>베타2 차단만이 문제라면 아테놀롤 같은 선택적 베타1 차단제는 괜찮아 보인다. 그러나 베타1 차단은 심장의 수축력·심박 반응을 줄여, 알파1 매개 혈관수축으로 커진 후부하를 이기지 못하게 만든다 — 폐부종·심인성 쇼크의 위험이 남는다. 선택성도 용량이 크면 줄어든다. 그래서 시험은 두 베타차단제(A·D)를 모두 오답으로 둔다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "갈색세포종 약물 — 언제 무엇을",
+    "columns": [
+     "시점",
+     "약·조치",
+     "이유"
+    ],
+    "rows": [
+     [
+      "수술 전 기본",
+      "페녹시벤자민(경구 알파차단) + 염분·수분",
+      "혈관수축을 풀고 줄어든 혈장량을 채운다"
+     ],
+     [
+      "알파차단을 기다리는 동안 발작",
+      "경구 프라조신 · 정맥 펜톨아민",
+      "빠르게 작용하는 알파차단"
+     ],
+     [
+      "알파차단 뒤 빈맥",
+      "베타차단제(프로프라놀롤)",
+      "알파차단으로 생긴 반사 빈맥·카테콜아민 빈맥 조절"
+     ],
+     [
+      "수술 중 고혈압 위기",
+      "니트로프루시드 정주",
+      "종양 조작·삽관 때 혈압 급변"
+     ],
+     [
+      "종양 제거 뒤 저혈압",
+      "수액",
+      "카테콜아민이 갑자기 끊기고 알파차단이 남음"
+     ]
+    ],
+    "note": "해리슨 387장 치료 절 <sup>[1 387장 p.2978–2979]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「빈맥 + 고혈압 = 베타차단제」 vs 카테콜아민 분비 종양",
+    "point": "본태성 고혈압이나 갑상선중독증의 빈맥에는 베타차단제가 먼저일 수 있지만, 카테콜아민 과잉에서는 약의 순서가 답이다. 베타차단제를 먼저 쓰면 베타2 혈관확장이 사라져 알파1 수축만 남고, 늘어난 후부하로 혈압 상승·심부전이 올 수 있다. 선택적 베타1 차단제(아테놀롤)라도 알파차단 없이 먼저 쓰지 않는다.",
+    "exception": "알파차단이 충분해진 뒤 남은 빈맥·부정맥에는 베타차단제를 더한다 <sup>[1 387장 p.2979]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "이뇨제로 혈압을 내린다?",
+    "point": "갈색세포종 환자는 이미 혈장량이 줄어 있다. 이뇨제는 용적을 더 줄여 알파차단 뒤 기립성 저혈압과 수술 후 저혈압을 키운다 — 거꾸로 염분·수분을 보충한다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "베타차단제는 알파차단이 된 뒤의 가지에만 있다 — 도식 어디에도 알파차단 전에 베타차단제로 가는 선이 없다.",
+   "알파차단제·베타차단제는 메타네프린 검사를 위양성으로 만들 수 있다 — 진단 검사 전에 복용 약을 확인한다 <sup>[1 387장 p.2977]</sup>.",
+   "종양을 떼면 카테콜아민이 갑자기 끊기는데 알파차단은 남아 있어 저혈압이 온다 — 수술 전 용적 보충이 이것도 줄인다."
+  ],
+  "criteria": [
+   {
+    "id": "pheo-alpha",
+    "name": "수술 전 혈압 조절",
+    "kind": "치료 권고",
+    "population": "수술 예정 갈색세포종·부신외 갈색세포종",
+    "statement": "경구 알파차단제(페녹시벤자민 0.5–4 mg/kg)로 혈압을 꾸준히 <160/90 mmHg 로. 용적 수축이 있어 염분·수분 섭취를 넉넉히 해 심한 기립성 저혈압을 막는다 [[harrison-21: 387장 p.2978–2979]]",
+    "exceptions": "혈압이 정상인 환자에서는 수술 중 니트로프루시드만 대기시키는 방식이 안전했고, 알파차단 필수라는 오랜 지침은 논의 중이다 — 「시험 쟁점」 절 [[harrison-21: 387장 p.2979]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pheo-beta",
+    "name": "베타차단제의 자리",
+    "kind": "치료 순서",
+    "population": "알파차단이 된 갈색세포종",
+    "statement": "알파차단이 충분해진 뒤 빈맥 조절에 베타차단제(예: 프로프라놀롤 10 mg 하루 3–4회)를 더한다 [[harrison-21: 387장 p.2979]]",
+    "exceptions": "알파차단 없이 베타차단제를 먼저 쓰지 않는다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 387: Pheochromocytoma",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 387장 p.2976–2979",
+    "checked": "본문 대조(드라이브 387장 문서) — p.2976 두근거림·두통·발한 3징·발작성/지속성 고혈압·발작 유발(수술·자세·약물) · p.2977 메타네프린(혈장 유리 메타네프린이 가장 민감)·경계치 위양성 원인(알파·베타차단제 등) · p.2978 수술 전 혈압 <160/90 · p.2979 페녹시벤자민 0.5–4 mg/kg, 용적 수축으로 염분·수분 보충, 발작 시 프라조신·펜톨아민, 그 뒤 베타차단제(프로프라놀롤 10 mg 3–4회) 추가, CCB·ACEi 도 효과적으로 쓰임, 수술 중 니트로프루시드, 수술 후 저혈압은 수액, 정상혈압 환자의 필수 알파차단 지침은 논의 중. 「견제받지 않는 알파 작용」이라는 표현 자체는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "갈색세포종 수술 전 알파차단제와 함께 하는 조치와 그 이유는?",
+    "a": "염분·수분을 넉넉히 보충한다 — 오래된 혈관수축으로 혈장량이 줄어 있어 알파차단 뒤 심한 기립성 저혈압(그리고 수술 후 저혈압)이 올 수 있다."
+   },
+   {
+    "q": "알파차단 전에 베타차단제를 쓰면 왜 위험한가?",
+    "a": "베타2 매개 혈관확장이 없어져 알파1 매개 혈관수축만 남고(견제받지 않는 알파), 베타1 차단으로 심장이 늘어난 후부하를 이기지 못해 고혈압 위기·폐부종이 올 수 있다."
+   },
+   {
+    "q": "베타차단제는 언제 더하나?",
+    "a": "충분한 알파차단(혈압 <160/90 등)과 용적 보충 뒤에도 빈맥·부정맥이 남을 때."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.endo.pheochromocytoma.preoperative-alpha-blockade#v1",
+    "context": "같은 환자, 알파차단을 마친 뒤 수술 직전",
+    "stem": "43세 여자가 발작적인 두통·두근거림·땀으로 검사를 받아 혈장 유리 메타네프린이 크게 높고 왼쪽 부신에 3 cm 종양이 확인되었다. 2주 전부터 페녹시벤자민을 먹으며 소금과 물을 넉넉히 먹고 있다. 오늘 앉은 혈압은 126/80 mmHg, 선 혈압은 112/72 mmHg 이고 코막힘이 있다. 맥박은 118회/분이고 심전도는 동빈맥이다. 다음 주 수술 전에 추가할 약물로 가장 적절한 것은?",
+    "options": [
+     "프로프라놀롤",
+     "페녹시벤자민 증량",
+     "하이드로클로로티아지드",
+     "니트로프루시드 정주",
+     "에날라프릴"
+    ],
+    "answer": 1,
+    "explanation": "알파차단이 충분하고(혈압 조절·경한 기립성 변화·코막힘) 용적 보충도 되었지만 빈맥이 남았다. 이제 베타차단제를 더할 차례다. 원래 문항에서 프로프라놀롤이 오답이었던 이유 — 알파차단이 아직 안 됐다는 단서 — 가 사라졌다. 혈압이 이미 목표이므로 알파차단제 증량(B)은 기립성 저혈압만 키우고, 이뇨제(C)는 용적을 줄이며, 니트로프루시드(D)는 수술 중 고혈압 위기용이다.",
+    "of": "kmle-2026-0132",
+    "changed": "알파차단 전 → 페녹시벤자민 2주·염분 보충으로 혈압은 조절됐지만 맥박 118회/분 빈맥이 남은 상태로 바꿈 → 정답이 페녹시벤자민에서 프로프라놀롤 추가로",
+    "flip": true
+   },
+   {
+    "id": "cn.endo.pheochromocytoma.preoperative-alpha-blockade#v2",
+    "context": "다른 환자·다른 경위, 같은 결정적 단서",
+    "stem": "29세 남자가 아버지의 갑상선 수질암 때문에 받은 가족 검진에서 혈청 칼시토닌이 높고 RET 유전자 변이가 확인되었다. 혈압은 168/102 mmHg, 맥박은 104회/분이다. 가끔 운동 뒤 얼굴이 하얘지며 가슴이 뛴다. 혈장 유리 메타네프린은 정상 상한의 네 배이고, 복부 CT 에서 오른쪽 부신에 2.5 cm 종양이 있다. 부신 절제를 계획하고 있다. 가장 먼저 시작할 약물은?",
+    "options": [
+     "아테놀롤",
+     "암로디핀 단독",
+     "페녹시벤자민",
+     "푸로세미드",
+     "프로프라놀롤"
+    ],
+    "answer": 3,
+    "explanation": "MEN 2 에 동반된 갈색세포종이다(메타네프린 상승 + 부신 종양). 수술 전 준비는 알파차단제(페녹시벤자민)와 염분·수분 보충으로 시작한다. 알파차단 전 베타차단제(A·E)는 견제받지 않는 알파 작용으로 고혈압 위기를 부를 수 있고, 이뇨제(D)는 줄어든 혈장량을 더 줄인다. 칼슘통로차단제는 보조로 쓰일 수 있지만 첫 약이 아니다. 나이·성별·발견 경위가 달라도 답이 같다 — 갈색세포종은 갑상선 수술보다 먼저 배제·치료한다.",
+    "of": "kmle-2026-0132",
+    "changed": "나이·성별·발견 경위(가족력 검진)·제시 순서를 바꿈, 알파차단 전 카테콜아민 분비 부신 종양이라는 단서는 남김 → 정답은 그대로 페녹시벤자민",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "갈색세포종 확진 뒤 수술 전 준비",
+  "geo": {
+   "title": "갈색세포종 확진 뒤 수술 전 준비",
+   "w": 482,
+   "h": 797.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "메타네프린 상승 + 부신 종양",
+      "— 수술 예정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "alpha",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "알파차단제(페녹시벤자민)",
+      "시작 + 염분·수분 넉넉히"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "bp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈압이 꾸준히 <160/90",
+      "mmHg 이고 기립성 저혈압이",
+      "견딜 만한가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 276.0
+    },
+    {
+     "id": "bpask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "누운 자세·선 자세 혈압과",
+      "맥박을 매일 잰다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 423.0
+    },
+    {
+     "id": "titrate",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "알파차단제 증량 · 염분·수분",
+      "보충 강화 — 발작은 프라조신·",
+      "펜톨아민"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 553.0
+    },
+    {
+     "id": "hr",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "알파차단 뒤에도 빈맥(또는",
+      "빈맥성 부정맥)이 남는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 553.0
+    },
+    {
+     "id": "beta",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "베타차단제(프로프라놀롤)를",
+      "더한 뒤 수술"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 700.0
+    },
+    {
+     "id": "surg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "수술(복강경) — 수술 중",
+      "니트로프루시드 대기, 수술",
+      "뒤 저혈압은 수액"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 700.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "alpha",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "alpha",
+     "to": "bp",
+     "points": [
+      [
+       227.0,
+       210.0
+      ],
+      [
+       227.0,
+       220.0
+      ],
+      [
+       227.0,
+       220.0
+      ],
+      [
+       227.0,
+       276.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "bp",
+     "to": "hr",
+     "points": [
+      [
+       178.0,
+       357.0
+      ],
+      [
+       178.0,
+       367.0
+      ],
+      [
+       452,
+       367.0
+      ],
+      [
+       452,
+       507.0
+      ],
+      [
+       81.3,
+       507.0
+      ],
+      [
+       81.3,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 71.8,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "bp",
+     "to": "bpask",
+     "points": [
+      [
+       227.0,
+       357.0
+      ],
+      [
+       227.0,
+       373.0
+      ],
+      [
+       227.0,
+       373.0
+      ],
+      [
+       227.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "측정 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 204.6,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "bp",
+     "to": "titrate",
+     "points": [
+      [
+       276.0,
+       357.0
+      ],
+      [
+       276.0,
+       379.0
+      ],
+      [
+       466,
+       379.0
+      ],
+      [
+       466,
+       507.0
+      ],
+      [
+       307.3,
+       507.0
+      ],
+      [
+       307.3,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "bpask",
+     "to": "hr",
+     "points": [
+      [
+       194.3,
+       487.0
+      ],
+      [
+       194.3,
+       497.0
+      ],
+      [
+       146.7,
+       497.0
+      ],
+      [
+       146.7,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "목표 도달"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 513.0
+     }
+    },
+    {
+     "from": "bpask",
+     "to": "titrate",
+     "points": [
+      [
+       259.7,
+       487.0
+      ],
+      [
+       259.7,
+       503.0
+      ],
+      [
+       372.7,
+       503.0
+      ],
+      [
+       372.7,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미도달"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 513.0
+     }
+    },
+    {
+     "from": "hr",
+     "to": "beta",
+     "points": [
+      [
+       81.3,
+       617.0
+      ],
+      [
+       81.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "hr",
+     "to": "surg",
+     "points": [
+      [
+       146.7,
+       617.0
+      ],
+      [
+       146.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 680.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "메타네프린 상승 + 부신 종양 — 수술 예정",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "알파차단제(페녹시벤자민) 시작 + 염분·수분 넉넉히"
+     }
+    ]
+   },
+   {
+    "id": "alpha",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "알파차단제(페녹시벤자민) 시작 + 염분·수분 넉넉히",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "혈압이 꾸준히 <160/90 mmHg 이고 기립성 저혈압이 견딜 만한가?"
+     }
+    ]
+   },
+   {
+    "id": "bp",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈압이 꾸준히 <160/90 mmHg 이고 기립성 저혈압이 견딜 만한가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "알파차단 뒤에도 빈맥(또는 빈맥성 부정맥)이 남는가?"
+     },
+     {
+      "label": "아니오",
+      "to": 6,
+      "toText": "알파차단제 증량 · 염분·수분 보충 강화 — 발작은 프라조신·펜톨아민"
+     },
+     {
+      "label": "측정 전",
+      "to": 4,
+      "toText": "누운 자세·선 자세 혈압과 맥박을 매일 잰다"
+     }
+    ]
+   },
+   {
+    "id": "bpask",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "누운 자세·선 자세 혈압과 맥박을 매일 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "목표 도달",
+      "to": 5,
+      "toText": "알파차단 뒤에도 빈맥(또는 빈맥성 부정맥)이 남는가?"
+     },
+     {
+      "label": "미도달",
+      "to": 6,
+      "toText": "알파차단제 증량 · 염분·수분 보충 강화 — 발작은 프라조신·펜톨아민"
+     }
+    ]
+   },
+   {
+    "id": "hr",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "알파차단 뒤에도 빈맥(또는 빈맥성 부정맥)이 남는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "베타차단제(프로프라놀롤)를 더한 뒤 수술"
+     },
+     {
+      "label": "아니오",
+      "to": 8,
+      "toText": "수술(복강경) — 수술 중 니트로프루시드 대기, 수술 뒤 저혈압은 수액"
+     }
+    ]
+   },
+   {
+    "id": "titrate",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "알파차단제 증량 · 염분·수분 보충 강화 — 발작은 프라조신·펜톨아민",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "beta",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "베타차단제(프로프라놀롤)를 더한 뒤 수술",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "surg",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "수술(복강경) — 수술 중 니트로프루시드 대기, 수술 뒤 저혈압은 수액",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0132"
+  ],
+  "hasErrors": false
+ },
+ "cn.gi.acetaminophen-toxicity.nac-mechanism": {
+  "id": "cn.gi.acetaminophen-toxicity.nac-mechanism",
+  "title": "아세트아미노펜 중독 — NAPQI·글루타티온 고갈과 N-아세틸시스테인의 기전",
+  "objective": "아세트아미노펜의 정상 대사(포합 → 소량의 CYP2E1 경로 → 글루타티온 포합)와 과량에서 포합이 포화되고 글루타티온이 고갈되어 NAPQI 가 간세포 단백과 결합해 중심소엽 괴사를 일으키는 기전을 설명하고, N-아세틸시스테인이 설프히드릴기를 공급해 글루타티온을 다시 채운다는 기전을 CYP 억제·흡착·포합 효소 유도·수용체 길항과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "아세트아미노펜(파라세타몰) 중독",
+  "topic": "Gastroenterology",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Pharmacology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "b9cedfd4299994bc",
+  "summary": [
+   "치료 용량의 아세트아미노펜은 대부분 2상 반응(황산·글루쿠론산 포합)으로 무해한 대사물이 되고, 적은 양만 1상 반응(CYP2E1)으로 반응성 대사물 NAPQI 가 된다. NAPQI 는 간의 글루타티온과 결합해 수용성 머캅투르산으로 콩팥에서 배설된다 [[harrison-21: 340장 p.2588]].",
+   "과량이면 NAPQI 가 너무 많이 생기거나 글루타티온이 적어(굶주림·만성 음주) 글루타티온이 고갈되고, NAPQI 가 간세포 거대분자와 공유결합(단백 부가물)해 중심소엽(3구역) 괴사를 일으킨다 [[harrison-21: 340장 p.2588]].",
+   "N-아세틸시스테인(NAC)은 설프히드릴기를 공급해 글루타티온을 다시 채운다 — 그래서 이미 만들어지는 NAPQI 를 무해하게 만든다. CYP2E1 을 막거나 흡수를 막는 약이 아니다 [[harrison-21: 340장 p.2588]].",
+   "초기(4–12시간)에는 구역·구토 정도이고 간수치가 정상일 수 있다. 간 손상은 24–48시간에 드러나고 3–5일에 최고(AST/ALT >10,000 IU/L 도 흔함)다 — 그래서 치료는 증상이나 간수치가 아니라 혈중 농도(노모그램)로 정한다 [[harrison-21: 340장 p.2588]].",
+   "NAC 는 8시간 안에 시작해야 가장 효과적이고, 24–36시간에 주어도 부분적 효과가 있다. 흡착(활성탄·콜레스티라민)은 복용 30분이 지나면 효과가 없어 보인다 [[harrison-21: 340장 p.2588]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>아세트아미노펜 중독은 한 번의 과량(자해) 또는 며칠에 걸친 반복 과량(진통·해열 목적의 중복 복용)으로 용량 의존적 중심소엽 간괴사가 생기는 상태다. 아세트아미노펜은 직접 독소형 간 손상의 대표이며, 서구에서 급성 간부전의 가장 흔한 원인이다 <sup>[1 340장 p.2584, p.2588]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상: 대부분 2상 반응(황산·글루쿠론산 포합)으로 무해한 대사물이 되고, 적은 양이 CYP2E1(1상)으로 NAPQI 가 된다. NAPQI 는 「간 보호」 글루타티온과 결합해 머캅투르산으로 콩팥에서 나간다. 과량이면 포합 경로가 감당하지 못한 몫이 CYP2E1 로 가 NAPQI 가 많아지고, 글루타티온이 고갈되면 NAPQI 가 간세포 거대분자와 공유결합한다(아세트아미노펜-단백 부가물). 이것이 괴사로 이어진다고 보나 정확한 순서는 밝혀지지 않았다 <sup>[1 340장 p.2588]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>독성 대사물 생성과 괴사에는 시간이 걸린다 → 4–12시간에는 구역·구토·설사·복통 정도, 24–48시간에 간 손상이 드러나고 3–5일에 최고.</li>\n<li>3구역(중심정맥 주변)은 CYP2E1 이 많아 NAPQI 가 가장 많이 생긴다 → 중심소엽 괴사.</li>\n<li>급성 괴사 → AST/ALT 가 10,000 IU/L 를 넘기도 하는데 빌리루빈은 낮다 — 이 조합 자체가 아세트아미노펜을 의심하게 하는 단서다 <sup>[1 340장 p.2588]</sup>.</li>\n<li>콩팥 손상·심근 손상이 동반될 수 있다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>매우 높은 아미노전이효소를 만드는 다른 원인 — 허혈성 간염(쇼크), 급성 바이러스 간염, 버섯(아마니타) 중독. 병력을 부인하거나 의식이 떨어져 있으면 아세트아미노펜을 추정 진단하고 NAC 를 준다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>복용 4시간 이후의 혈중 농도를 노모그램에 찍는다(해리슨: 4–8시간 농도). 초기 간수치·INR 정상은 안심 근거가 아니다. 반복 과량·시각 불명이면 노모그램을 쓸 수 없다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>NAC</strong> — 노모그램 치료선 위면 즉시. 8시간 안에 시작하고, 24–36시간에도 부분적 효과가 있다. 해리슨은 정맥 부하 140 mg/kg 뒤 70 mg/kg 4시간마다를 적는다 <sup>[1 340장 p.2588]</sup>.</li>\n<li><strong>흡착</strong> — 활성탄·콜레스티라민은 복용 30분이 지나면 효과가 없어 보인다.</li>\n<li><strong>반응 확인</strong> — 간수치·INR·크레아티닌·의식을 추적하고, 간부전 징후(뇌병증·응고장애)가 보이면 간이식 가능 기관과 상의한다.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>만성 음주자는 CYP2E1 유도와 글루타티온 생성 억제로 독성 용량이 2 g 까지 낮아질 수 있다 <sup>[1 340장 p.2588]</sup>.</li>\n<li>굶주림·열성 질환으로 먹지 못한 사람도 글루타티온이 적어 위험이 크다.</li>\n<li>FDA 는 하루 최대 용량을 4 g 에서 3 g 로 줄이라고 권했고, 오피오이드 복합제의 아세트아미노펜은 1정 325 mg 으로 제한했다(해리슨이 인용) <sup>[1 340장 p.2588]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · NAC 를 시작하는 노모그램 문턱과 시점</strong> — 시험 기준: 복용 4시간 이후 농도가 노모그램 치료선 위면 NAC, 8시간 안에 시작이 가장 좋고 늦어도 준다 <sup>[1 340장 p.2588]</sup> / 다른 기준: 해리슨 같은 쪽 안에서도 「4시간 &gt;300 µg/mL 는 중증 예측, &lt;150 은 손상 가능성 매우 낮음」「4시간 &gt;200·8시간 &gt;100 이면 NAC 가 괴사를 크게 줄임」「12시간 안이면 효과적」「8시간 안에 시작」이 함께 나온다 <sup>[1 340장 p.2588]</sup> / 왜 다른가: 앞의 두 수치는 예후 예측, 뒤는 치료 효과를 입증한 집단의 기준이다. 미국 응급실의 치료선 수치는 이 정리본에서 원문 대조하지 못했다 / 시험에서는: USMLE 는 「치료선 위 → NAC」와 「8–10시간 안이면 거의 완전 예방, 늦어도 준다」를 묻는다. KMLE 도 수치 자체보다 「혈중 농도로 판단 · 간수치 정상이어도 준다」를 묻는다.</li>\n</ul>"
+   },
+   {
+    "title": "해독 기전을 가르는 법",
+    "deep": true,
+    "html": "<p>표 「보기로 나오는 해독 기전」. 기전 문항은 해독제의 작용점을 사슬 위의 위치로 묻는다 — 흡수 전(흡착), 대사 효소(억제·유도), 독성 대사물 제거(포합 기질 공급), 표적 수용체(길항). NAC 는 「독성 대사물 제거」 칸에 있다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "보기로 나오는 해독 기전 — 누구의 기전인가",
+    "columns": [
+     "기전",
+     "해당 약·조치",
+     "아세트아미노펜에서"
+    ],
+    "rows": [
+     [
+      "글루타티온 재보충(설프히드릴기 공급)",
+      "N-아세틸시스테인",
+      "정답 — NAPQI 를 무해화"
+     ],
+     [
+      "장관 안에서 흡착",
+      "활성탄·콜레스티라민",
+      "복용 직후에만(30분 넘으면 효과 없어 보임)"
+     ],
+     [
+      "CYP 억제로 독성 대사물 생성 차단",
+      "포메피졸(알코올 탈수소효소 억제 — 메탄올·에틸렌글리콜)",
+      "NAC 의 기전이 아니다"
+     ],
+     [
+      "수용체 길항",
+      "날록손(오피오이드)·플루마제닐",
+      "아세트아미노펜은 수용체 독성이 아니다"
+     ]
+    ],
+    "note": "NAC·흡착의 서술은 해리슨 340장 <sup>[1 340장 p.2588]</sup>. 포메피졸·날록손 행은 비교를 위한 일반 약리 지식으로 이 정리본에서 원문 대조하지 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「독성 대사물을 만드는 효소를 막는다」 vs NAC 의 실제 작용점",
+    "point": "NAPQI 를 만드는 효소가 CYP2E1 인 것은 맞다. 그러나 NAC 는 그 효소를 막지 않는다 — 설프히드릴기를 공급해 고갈된 글루타티온을 다시 채워, 이미 만들어지는 NAPQI 를 무해한 머캅투르산으로 만든다. 「효소 억제로 독성 대사물 생성 차단」은 메탄올·에틸렌글리콜 중독의 포메피졸(알코올 탈수소효소 억제) 같은 다른 해독제의 틀이다.",
+    "exception": "만성 음주자에서 CYP2E1 유도가 독성 문턱을 낮추는 것은 사실이다 — 효소는 위험 요인 설명에 등장하지 해독 기전에 등장하지 않는다 <sup>[1 340장 p.2588]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "NAC vs 활성탄",
+    "point": "활성탄·콜레스티라민은 장관 안의 남은 약을 흡착해 흡수를 막는 조치이고, 복용 30분이 지나면 효과가 없어 보인다. 10시간 뒤 온 환자의 간 보호는 NAC 의 글루타티온 재보충이 맡는다 <sup>[1 340장 p.2588]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "4시간 전 농도는 흡수가 끝나지 않아 노모그램에 찍지 않는다 — 4시간 이후 농도를 쓴다(해리슨: 4–8시간 농도) <sup>[1 340장 p.2588]</sup>.",
+   "초기 간수치 정상은 안심 근거가 아니다 — 손상은 24–48시간 뒤에 드러난다.",
+   "며칠에 걸친 반복 과량(하루 8 g, 진통제·오피오이드 복합제)은 단회 노모그램으로 판정하지 않는다 <sup>[1 340장 p.2588]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "apap-nac",
+    "name": "NAC 적응·시점",
+    "kind": "치료 권고",
+    "population": "급성 단회 아세트아미노펜 과량 복용",
+    "statement": "복용 4–8시간 혈중 농도를 노모그램에 찍어 위험을 판정하고, 높은 농도(해리슨: 4시간 >200 µg/mL 또는 8시간 >100 µg/mL)면 NAC 가 간 괴사를 크게 줄인다. 복용 8시간 안에 시작하고, 24–36시간에 주어도 부분적 효과가 있다 [[harrison-21: 340장 p.2588]]",
+    "exceptions": "복용량·시점이 불확실하거나 의식 저하·부인으로 병력이 불확실하면서 매우 높은 AST/ALT·낮은 빌리루빈이면 추정 진단으로 NAC 를 준다 — 안전하고 늦게 줘도 쓴다 [[harrison-21: 340장 p.2588]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "apap-risk",
+    "name": "독성 문턱을 낮추는 조건",
+    "kind": "위험 요인",
+    "population": "아세트아미노펜 복용자",
+    "statement": "만성 음주(CYP2E1 유도 + 글루타티온 생성 억제 — 독성 용량이 2 g 까지 낮아질 수 있음), 굶주림·열성 질환으로 먹지 못함(글루타티온 감소), 페노바르비탈·이소니아지드 등 CYP 유도 약 [[harrison-21: 340장 p.2588]]",
+    "exceptions": "급성 음주가 급성 아세트아미노펜 손상을 키우는지는 논란이다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 340: Toxic and Drug-Induced Hepatitis",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 340장 p.2584, 2588 (Acetaminophen Hepatotoxicity)",
+    "checked": "본문 대조(드라이브 340장 문서) — p.2584 아세트아미노펜은 직접 독소의 대표 · p.2588 중심소엽 괴사, 단회 10–15 g 에서 간 손상, 4시간 >300 µg/mL 는 중증 예측·<150 µg/mL 는 손상 가능성 매우 낮음, 4–12시간 구역·구토 → 24–48시간 간 손상 → 3–5일 최고(AST/ALT >10,000), 2상(황산·글루쿠론산)이 주 경로·CYP2E1 로 NAPQI·글루타티온 포합 → 머캅투르산, 글루타티온 고갈 시 단백 부가물, 음주·페노바르비탈·INH·굶주림이 위험을 높임(만성 음주자 2 g), 활성탄·콜레스티라민은 30분 넘으면 효과 없어 보임, 노모그램 4–8시간 농도, 4시간 >200·8시간 >100 µg/mL 에서 NAC 가 괴사를 크게 줄임, NAC 는 설프히드릴기를 공급해 글루타티온을 재보충, 8시간 안에 시작·24–36시간에도 부분 효과, 정맥 부하 140 mg/kg 뒤 70 mg/kg 4시간마다(문서 표기 그대로). 같은 쪽 앞부분은 「12시간 안이면 효과적」이라고도 적는다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "아세트아미노펜 과량에서 간세포 괴사가 일어나는 순서는?",
+    "a": "황산·글루쿠론산 포합 포화 → CYP2E1 경로로 NAPQI 증가 → 글루타티온 고갈 → NAPQI 가 간세포 거대분자와 공유결합(단백 부가물) → 중심소엽 괴사."
+   },
+   {
+    "q": "N-아세틸시스테인의 해독 기전은?",
+    "a": "설프히드릴기를 공급해 글루타티온을 다시 채운다 — NAPQI 를 포합해 무해화할 능력을 되살린다."
+   },
+   {
+    "q": "복용 10시간 뒤 간수치가 정상이면 NAC 를 미뤄도 되나?",
+    "a": "아니다. 간 손상은 24–48시간에 드러나므로 혈중 농도(노모그램)로 판단하고, 치료선 위면 즉시 준다 — 8시간이 지났어도 효과가 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.gi.acetaminophen-toxicity.nac-mechanism#v1",
+    "context": "Same overdose; the patient arrives while unabsorbed drug is still in the gut",
+    "stem": "A 19-year-old woman is brought to the emergency department 25 minutes after swallowing a large number of acetaminophen tablets in front of her roommate. She is alert, protecting her airway, and has not vomited. Before a serum drug level can be obtained, she is given a single oral dose of an agent that is intended to reduce the amount of drug that reaches her liver. Which of the following best describes the mechanism of this agent?",
+    "options": [
+     "Replenishing hepatic glutathione to conjugate a reactive metabolite",
+     "Inhibiting CYP2E1 so the parent drug is excreted unchanged",
+     "Binding the parent drug within the gut lumen to prevent its absorption",
+     "Inducing glucuronosyltransferase to speed phase II conjugation",
+     "Antagonizing the receptor that mediates the drug's central effects"
+    ],
+    "answer": 3,
+    "explanation": "Activated charcoal adsorbs unabsorbed drug in the gut lumen; Harrison notes it (like cholestyramine) appears ineffective once more than 30 minutes have passed since acetaminophen ingestion, so it has a role only in a patient who arrives this early. The single changed clue — 25 minutes instead of 10 hours after ingestion, with the agent aimed at reducing drug reaching the liver — makes the original distractor about gut-lumen binding correct. N-acetylcysteine (A) is still given if the 4-hour level is above the treatment line, but it acts after absorption by repleting glutathione.",
+    "of": "usmle-2026-0025",
+    "changed": "time since ingestion 10 hours → 25 minutes, and the question asks about the first gut-directed intervention given → answer shifts from glutathione repletion (NAC) to adsorption of drug in the gut lumen (activated charcoal)",
+    "flip": true
+   },
+   {
+    "id": "cn.gi.acetaminophen-toxicity.nac-mechanism#v2",
+    "context": "Different patient and presentation; same antidote and same mechanism question",
+    "stem": "A 34-year-old man is brought to the emergency department by his partner, who found empty packets of an over-the-counter analgesic 6 hours after he took them during an argument. He has mild nausea. Vital signs, examination, serum aminotransferases, and INR are normal. A serum drug level drawn at 4 hours is above the treatment line on the nomogram, and intravenous N-acetylcysteine is started. This drug prevents hepatocellular necrosis primarily by which of the following mechanisms?",
+    "options": [
+     "Adsorbing unabsorbed drug remaining in the stomach",
+     "Blocking the cytochrome P450 isoenzyme that oxidizes the drug",
+     "Accelerating renal excretion of the unchanged parent drug",
+     "Supplying sulfhydryl groups that restore hepatic glutathione, which conjugates the reactive metabolite NAPQI",
+     "Inducing sulfotransferase enzymes to increase sulfate conjugation"
+    ],
+    "answer": 4,
+    "explanation": "N-acetylcysteine supplies sulfhydryl donor groups that replete glutathione, which detoxifies NAPQI to mercapturic acid before it binds covalently to hepatocyte proteins. Changing the patient, the setting and the time (6 rather than 10 hours) does not change the key clue — a level above the treatment line with NAC started — so the mechanism answer is the same. Normal aminotransferases early do not exclude injury, which appears 24–48 hours later.",
+    "of": "usmle-2026-0025",
+    "changed": "age, sex, setting (single intentional ingestion discovered by a partner), timing 10 → 6 hours and answer order changed; level still above the treatment line and question still asks the antidote's hepatoprotective mechanism → answer unchanged (glutathione repletion)",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "아세트아미노펜 과량 복용 — NAC 판단",
+  "geo": {
+   "title": "아세트아미노펜 과량 복용 — NAC 판단",
+   "w": 482,
+   "h": 650.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "아세트아미노펜 과량 복용",
+      "의심"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "time",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "복용 시각을 알고 단회 급성",
+      "복용인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "timeask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "복용 시각·양·제형, 다른 약·",
+      "음주, 금식 여부를 확인한다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 276.0
+    },
+    {
+     "id": "level",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "복용 4시간 이후 혈중 농도가",
+      "노모그램 치료선 위인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 406.0
+    },
+    {
+     "id": "nac",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "N-아세틸시스테인 — 8시간",
+      "안에 시작할수록",
+      "좋다(늦어도 준다)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 553.0
+    },
+    {
+     "id": "nonac",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "NAC 불필요 — 동반 복용 약·",
+      "자해 위험 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 553.0
+    },
+    {
+     "id": "unk",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "시각 불명·반복 과량·AST/",
+      "ALT 상승 — 노모그램을 쓸 수",
+      "없다, NAC 를 준다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 406.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "time",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "time",
+     "to": "level",
+     "points": [
+      [
+       178.0,
+       210.0
+      ],
+      [
+       178.0,
+       220.0
+      ],
+      [
+       452,
+       220.0
+      ],
+      [
+       452,
+       360.0
+      ],
+      [
+       81.3,
+       360.0
+      ],
+      [
+       81.3,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 71.8,
+      "y": 386.0
+     }
+    },
+    {
+     "from": "time",
+     "to": "timeask",
+     "points": [
+      [
+       227.0,
+       210.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정보 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "time",
+     "to": "unk",
+     "points": [
+      [
+       276.0,
+       210.0
+      ],
+      [
+       276.0,
+       232.0
+      ],
+      [
+       466,
+       232.0
+      ],
+      [
+       466,
+       360.0
+      ],
+      [
+       307.3,
+       360.0
+      ],
+      [
+       307.3,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 386.0
+     }
+    },
+    {
+     "from": "timeask",
+     "to": "level",
+     "points": [
+      [
+       194.3,
+       340.0
+      ],
+      [
+       194.3,
+       350.0
+      ],
+      [
+       146.7,
+       350.0
+      ],
+      [
+       146.7,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "시각 확인"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 366.0
+     }
+    },
+    {
+     "from": "timeask",
+     "to": "unk",
+     "points": [
+      [
+       259.7,
+       340.0
+      ],
+      [
+       259.7,
+       356.0
+      ],
+      [
+       372.7,
+       356.0
+      ],
+      [
+       372.7,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불명"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 366.0
+     }
+    },
+    {
+     "from": "level",
+     "to": "nac",
+     "points": [
+      [
+       81.3,
+       470.0
+      ],
+      [
+       81.3,
+       480.0
+      ],
+      [
+       114.0,
+       480.0
+      ],
+      [
+       114.0,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "위"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 533.0
+     }
+    },
+    {
+     "from": "level",
+     "to": "nonac",
+     "points": [
+      [
+       146.7,
+       470.0
+      ],
+      [
+       146.7,
+       486.0
+      ],
+      [
+       340.0,
+       486.0
+      ],
+      [
+       340.0,
+       553.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아래"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 533.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "아세트아미노펜 과량 복용 의심",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "복용 시각을 알고 단회 급성 복용인가?"
+     }
+    ]
+   },
+   {
+    "id": "time",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "복용 시각을 알고 단회 급성 복용인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "복용 4시간 이후 혈중 농도가 노모그램 치료선 위인가?"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "시각 불명·반복 과량·AST/ALT 상승 — 노모그램을 쓸 수 없다, NAC 를 준다"
+     },
+     {
+      "label": "정보 없음",
+      "to": 3,
+      "toText": "복용 시각·양·제형, 다른 약·음주, 금식 여부를 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "timeask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "복용 시각·양·제형, 다른 약·음주, 금식 여부를 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "시각 확인",
+      "to": 4,
+      "toText": "복용 4시간 이후 혈중 농도가 노모그램 치료선 위인가?"
+     },
+     {
+      "label": "불명",
+      "to": 5,
+      "toText": "시각 불명·반복 과량·AST/ALT 상승 — 노모그램을 쓸 수 없다, NAC 를 준다"
+     }
+    ]
+   },
+   {
+    "id": "level",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "복용 4시간 이후 혈중 농도가 노모그램 치료선 위인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "위",
+      "to": 6,
+      "toText": "N-아세틸시스테인 — 8시간 안에 시작할수록 좋다(늦어도 준다)"
+     },
+     {
+      "label": "아래",
+      "to": 7,
+      "toText": "NAC 불필요 — 동반 복용 약·자해 위험 평가"
+     }
+    ]
+   },
+   {
+    "id": "unk",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "시각 불명·반복 과량·AST/ALT 상승 — 노모그램을 쓸 수 없다, NAC 를 준다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "nac",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "N-아세틸시스테인 — 8시간 안에 시작할수록 좋다(늦어도 준다)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "nonac",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "NAC 불필요 — 동반 복용 약·자해 위험 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0025"
+  ],
+  "hasErrors": false
+ },
+ "cn.gi.crohn-disease.distribution-histology-diagnosis": {
+  "id": "cn.gi.crohn-disease.distribution-histology-diagnosis",
+  "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
+  "objective": "만성 우하복부 통증·설사·체중감소에 건너뛰는 병변·말단회장 침범·조약돌 점막·비건락성 육아종이 있으면 궤양성대장염·장결핵이 아니라 크론병으로 진단한다",
+  "objectiveKind": "진단",
+  "condition": "크론병",
+  "topic": "Gastroenterology",
+  "seeAlso": [
+   "Infectious Disease",
+   "Pathology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a42f5d1fdb9f489c",
+  "summary": [
+   "두 염증성 장질환은 「어디에(분포)·얼마나 깊이(층)·무엇이 보이나(조직)」로 갈린다.",
+   "궤양성대장염: 직장에서 시작해 근위로 연속, 점막에 국한, 혈성 설사·뒤무직.",
+   "크론병: 입에서 항문까지 어디든, 말단회장이 가장 흔함, 건너뛰는 병변, 경벽성(장벽 전층) 염증 → 조약돌 점막·협착·누공, 직장은 흔히 보존, 항문 주위 병변.",
+   "비건락성 육아종은 크론병의 특징이지만 점막 생검에서는 수술 절제 표본보다 드물게 보인다 — 없다고 크론병을 배제하지 않는다.",
+   "장결핵·예르시니아·아메바 등 감염은 크론병을 흉내 낸다. 특히 결핵(건락성 육아종)은 면역억제 치료 전에 반드시 배제한다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>크론병은 입에서 항문까지 위장관 어디든 침범할 수 있는 만성 경벽성 염증성 장질환이다. 가장 흔한 자리는 말단회장이다 <sup>[1 326장 p.2474]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 장 점막은 상재균과 음식 항원에 대해 염증을 억제하는 균형(관용)을 유지한다. 염증성 장질환에서는 유전 소인·장내 세균·환경 요인이 겹쳐 이 균형이 깨진다. 동물 모델에서 TH1 세포는 크론병을 닮은 경벽성 육아종성 염증을, TH2 계열은 궤양성대장염을 닮은 얕은 점막 염증을 일으킨다 <sup>[1 326장 p.2473]</sup> — 두 병의 「깊이」 차이를 이해하는 틀이다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>경벽성 염증</strong> → 장벽이 두꺼워지고 좁아짐(협착), 장벽을 뚫고 나감(누공·농양) <sup>[1 326장 p.2474–2475]</sup>.</li>\n<li><strong>세로·가로 궤양이 이어짐</strong> → 사이에 남은 점막 섬이 솟아 조약돌 모양 <sup>[1 326장 p.2475]</sup>.</li>\n<li><strong>분절성 침범</strong> → 정상 점막을 사이에 둔 건너뛰는 병변, 직장은 흔히 보존 <sup>[1 326장 p.2474]</sup>.</li>\n<li><strong>말단회장 침범</strong> → 우하복부 통증, 설사, 체중감소(흡수 장애·식사 기피) <sup>[1 326장 p.2476]</sup>. 점막 국한 출혈이 적어 설사는 흔히 비혈성이다.</li>\n<li><strong>육아종</strong> → 대식세포가 모여 괴사 없는 육아종을 만든다. 절제 표본에서 더 흔하고 생검에서는 놓치기 쉽다 <sup>[1 326장 p.2475]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>궤양성대장염</strong>: 직장부터 연속, 점막 국한, 혈성 설사·뒤무직 [harrison-21: 326장 p.2474–2475].</li>\n<li><strong>감염</strong>: 결핵·예르시니아·아메바·CMV 등은 IBD 를 흉내 낸다 <sup>[1 326장 p.2479]</sup>. 장결핵은 회맹부 침범과 육아종이 겹치므로 흉부 X선·결핵 검사·조직 항산균 검사로 배제한다.</li>\n<li><strong>과민성장증후군</strong>: 체중감소·염증 소견·내시경 이상이 없다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>대장내시경과 말단회장 삽관·다발 생검이 중심이다. 직장 보존·아프타 궤양·누공·건너뛰는 병변이 내시경 소견이다 <sup>[1 326장 p.2477]</sup>. 소장 침범 범위와 누공·협착은 CT·MR 장조영으로 본다. 감염(대변 배양·결핵 검사)은 함께 배제한다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>이 정리본의 목표는 진단이다. 치료는 범위·중증도·양상(염증·협착·누공)에 따라 정해지고, 면역억제제·항TNF 제를 시작하기 전 결핵·B형간염 검사를 한다 <sup>[1 326장 p.2487]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>육아종이 없다고 크론병을 배제하지 않는다.</li>\n<li>치료를 받은 궤양성대장염은 겉보기로 건너뛰는 것처럼 보일 수 있다 — 정상처럼 보이는 점막도 생검한다 <sup>[1 326장 p.2474]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 326장 p.2473–2487)</li>\n</ul>"
+   },
+   {
+    "title": "「가장 가능성이 높은 진단」 문항에서 보기 두 개가 남을 때",
+    "deep": true,
+    "html": "<p>염증성 장질환 두 개가 남으면 병변의 <strong>자리</strong>부터 본다. 말단회장·건너뜀·직장 보존·항문 병변은 한쪽, 직장부터 연속은 다른 쪽이다. 그다음 <strong>깊이</strong>(조약돌·누공 = 경벽성)와 <strong>조직</strong>(육아종)이 확인해 준다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "크론병과 궤양성대장염",
+    "columns": [
+     "",
+     "크론병",
+     "궤양성대장염"
+    ],
+    "rows": [
+     [
+      "분포",
+      "어디든, 말단회장 흔함, 건너뜀, 직장 흔히 보존",
+      "직장부터 근위로 연속"
+     ],
+     [
+      "깊이",
+      "경벽성 → 협착·누공·농양",
+      "점막 국한"
+     ],
+     [
+      "내시경",
+      "아프타·세로 궤양, 조약돌 점막",
+      "미만성 발적·과립·쉽게 출혈"
+     ],
+     [
+      "조직",
+      "비건락성 육아종(특징, 생검엔 드묾)",
+      "움샘 농양·움샘 구조 변형, 육아종 없음"
+     ],
+     [
+      "증상",
+      "우하복부 통증·설사·체중감소, 항문 주위 병변",
+      "혈성 설사·뒤무직·점액"
+     ]
+    ],
+    "note": "해리슨 326장 p.2474–2477. 궤양성대장염의 움샘 소견은 이 정리본에서 쪽을 대조하지 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「젊은 사람 만성 설사 + 대장 궤양 = 궤양성대장염」 vs 크론병",
+    "point": "둘 다 젊은 층의 만성 설사를 일으키는 염증성 장질환이라 「대장 궤양」만으로는 가르지 못한다. 가르는 것은 분포(말단회장·건너뜀 vs 직장부터 연속), 깊이(조약돌·누공 = 경벽성), 조직(비건락성 육아종), 그리고 혈변의 유무다.",
+    "exception": "직장부터 연속된 점막 국한 염증과 혈성 설사가 있고 회장 침범·육아종이 없으면 궤양성대장염이다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "크론병 vs 장결핵",
+    "point": "둘 다 회맹부를 침범하고 육아종을 만든다. 결핵은 건락성 괴사를 동반한 육아종이 특징이고, 해리슨은 결핵을 IBD 를 흉내 내는 감염으로 든다 <sup>[1 326장 p.2479]</sup>. 항TNF 등 면역억제제는 결핵을 재활성화하므로 시작 전 결핵 검사를 한다 <sup>[1 326장 p.2487]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "cd-vs-uc-distribution",
+    "name": "분포",
+    "kind": "진단 근거",
+    "population": "염증성 장질환 의심",
+    "statement": "궤양성대장염은 점막 질환으로 대개 직장을 침범하고 근위로 연속 진행한다. 크론병은 소장 침범 환자의 90% 에서 말단회장을 침범하고, 직장은 흔히 보존되며, 건너뛰는 분절성 병변을 보인다 [[harrison-21: 326장 p.2474]]",
+    "exceptions": "치료 뒤 궤양성대장염도 건너뛰는 것처럼 보일 수 있다 — 겉보기 정상 점막에서도 생검한다 [[harrison-21: 326장 p.2474]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "cd-histology",
+    "name": "조직",
+    "kind": "진단 근거",
+    "population": "크론병 의심",
+    "statement": "크론병은 경벽성 과정이고, 장벽 모든 층에 비건락성 육아종이 생긴다. 육아종은 특징적 소견이지만 점막 생검보다 수술 절제 표본에서 더 흔히 보인다 [[harrison-21: 326장 p.2474–2475]]",
+    "exceptions": "육아종이 없어도 분포·경벽성 소견으로 진단할 수 있다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 326: Inflammatory Bowel Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 326장 p.2473–2487",
+    "checked": "본문 대조(드라이브 326장 문서) — p.2474 궤양성대장염은 직장을 침범하고 근위로 확장하는 점막 질환, 치료 뒤 겉보기 건너뜀이 있어 정상 점막도 생검 · 소장 침범의 90% 에서 말단회장, 크론병은 직장 흔히 보존·건너뛰는 분절 병변, 항문 주위 병변 1/3, 경벽성 과정 · p.2475 조약돌 모양은 크론병의 특징, 장벽 전층의 비건락성 육아종은 특징적이나 점막 생검보다 절제 표본에서 흔함, 궤양성대장염의 주 증상은 설사·직장 출혈·뒤무직·점액 · p.2476 회결장염은 우하복부 통증·설사, 체중감소 흔함 · p.2477 내시경 소견 직장 보존·아프타 궤양·누공·건너뛰는 병변 · p.2479 표 326-6 IBD 모방 감염에 결핵·아메바·예르시니아 · p.2487 항TNF 전 결핵 검사. 장결핵의 건락성 육아종 서술은 이 장에서 찾지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "크론병과 궤양성대장염을 가르는 세 축은?",
+    "a": "분포(건너뜀·말단회장·직장 보존 vs 직장부터 연속), 깊이(경벽성 vs 점막), 조직(비건락성 육아종)."
+   },
+   {
+    "q": "대장내시경 생검에서 육아종이 없으면 크론병이 배제되는가?",
+    "a": "아니다. 육아종은 점막 생검보다 절제 표본에서 더 흔하다. 분포·경벽성 소견으로 진단할 수 있다."
+   },
+   {
+    "q": "크론병에서 조약돌 점막이 생기는 이유는?",
+    "a": "세로·가로 궤양이 이어지며 그 사이에 비교적 정상인 점막 섬이 남기 때문이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.gi.crohn-disease.distribution-histology-diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 직장부터 연속된 점막 염증",
+    "stem": "26세 여자가 3개월간 하루 6~8번의 피 섞인 묽은 변과 뒤무직, 아랫배 쥐어짜는 통증으로 왔다. 체중은 2 kg 줄었다. 항문 주위는 정상이다. 대장내시경에서 직장부터 하행결장까지 끊김 없이 이어지는 미만성 발적·과립상 점막이 보이고 건드리면 쉽게 피가 난다. 말단회장은 정상이다. 생검에서 움샘 농양과 움샘 구조 변형이 보이고 육아종은 없다. 대변 배양과 아메바 검사는 음성이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "궤양성대장염",
+     "크론병",
+     "과민성장증후군",
+     "장결핵",
+     "아메바성 대장염"
+    ],
+    "answer": 1,
+    "explanation": "직장부터 근위로 연속된 점막 국한 염증, 혈성 설사·뒤무직, 회장 정상, 육아종 없음은 궤양성대장염이다 [[harrison-21: 326장 p.2474–2475]]. 원래 문항처럼 말단회장 침범·건너뛰는 궤양·조약돌 점막·비건락성 육아종이 있으면 크론병이다 — 분포와 조직이 답을 가른다. 감염 검사 음성으로 아메바성 대장염을 낮춘다.",
+    "of": "kmle-2026-0071",
+    "changed": "분포·조직을 「말단회장·건너뛰는 궤양·조약돌·비건락성 육아종」에서 「직장부터 근위로 연속된 미만성 발적·쉽게 출혈하는 점막, 회장 정상, 육아종 없음」으로, 설사를 혈성·뒤무직으로 바꿈 → 답이 크론병에서 궤양성대장염으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.gi.crohn-disease.distribution-histology-diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 항문 누공으로 온 청소년",
+    "stem": "17세 여자가 반복되는 항문 주위 고름과 1년간 7 kg 의 체중감소로 왔다. 가끔 오른쪽 아랫배가 아프고 피 없는 묽은 변을 본다. 항문 주위에 누공 구멍이 두 개 있다. CT 장조영술에서 말단회장 벽이 두꺼워지고, 대장내시경에서는 말단회장과 상행결장에 세로 궤양이 있으며 그 사이 직장·S결장은 정상이다. 생검에서 괴사 없는 육아종이 보이고, 인터페론감마 분비검사는 음성이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "장결핵",
+     "궤양성대장염",
+     "크론병",
+     "과민성장증후군",
+     "예르시니아 장염"
+    ],
+    "answer": 3,
+    "explanation": "주소가 항문 누공과 체중감소로 바뀌었어도 결정 단서는 같다 — 말단회장 침범, 정상 점막을 사이에 둔 건너뛰는 병변, 직장 보존, 비건락성 육아종, 항문 주위 병변은 크론병이다 [[harrison-21: 326장 p.2474–2475]]. 장결핵은 건락성 육아종이 특징이고 결핵 검사가 음성이다. 궤양성대장염은 직장부터 연속되며 누공을 만들지 않는다.",
+    "of": "kmle-2026-0071",
+    "changed": "나이·성별(17세 여자)·주소(체중감소·성장 둔화와 항문 주위 누공을 먼저 제시)·검사 순서(CT 장조영 뒤 내시경)를 바꾸고 「말단회장·건너뛰는 병변·비건락성 육아종」은 그대로 → 답은 여전히 크론병",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0071"
+  ],
+  "hasErrors": false
+ },
  "cn.gs.acute-cholecystitis.grade2-early-lc": {
   "id": "cn.gs.acute-cholecystitis.grade2-early-lc",
   "title": "급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기",
@@ -3175,10 +13979,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Gastroenterology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "e06f9e4766a74b8a",
+  "hash": "e4add5b6ffea285d",
   "summary": [
    "진단(TG18): 국소 징후(오른쪽 윗배 압통·덩이·Murphy 징후) + 전신 염증(발열·백혈구·CRP) + 영상(담석·담낭벽 비후·주위 액체) 세 가지가 다 있으면 확진이다.",
    "중증도는 「장기부전 → 3등급, 국소 염증 심함(백혈구 > 18,000·촉지 덩이·발병 > 72시간·괴저/농양/기종/담즙성 복막염) → 2등급, 둘 다 없음 → 1등급」 순서로 매긴다.",
@@ -3509,6 +14313,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "승압제가 필요한 저혈압·의식 저하·크레아티닌 2.6 으로 장기부전이 있어 3등급이고, 심부전·만성 콩팥병·낮은 기능 상태로 수술 위험도 높다. 3등급·고위험은 집중치료 + 항생제 + 경피경간 담낭배액으로 감염원을 먼저 배출하고, 회복 뒤 간격 담낭절제를 계획한다. 빌리루빈·ALP·총담관 지름이 정상이라 담관 폐쇄 근거가 없어 ERCP·스텐트는 적응이 아니고, 항생제만으로 지켜보거나 6주 뒤로 미루는 것은 감염원을 그대로 두는 선택이다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.gs.acute-cholecystitis.grade2-early-lc#v2",
+    "context": "같은 2등급·같은 72시간 이내, 수술 위험 하나만 높인 변형",
+    "stem": "48세 남자가 하루 반 전 기름진 식사 뒤 시작된 오른쪽 윗배 통증과 열로 응급실에 왔다. 3년 전 확장성 심근병증을 진단받았고 좌심실 박출률은 25 %이며, 두 달 전 심부전 악화로 입원한 뒤로 집 안에서 몇 걸음만 걸어도 숨이 차 산소를 쓴다. 오른쪽 갈비뼈 아래에 압통과 함께 팽팽한 덩이가 만져지고 황달은 없다. 혈압 112/70 mmHg, 맥박 96회/분, 체온 38.3 ℃, 산소 2 L 로 산소포화도 95 %. 백혈구 19,800/mm³, 크레아티닌 1.0 mg/dL, 혈소판 210,000/mm³, 총빌리루빈 0.9 mg/dL, 알칼리인산분해효소 88 U/L. 초음파에서 담낭 안 담석, 담낭벽 두께 7 mm, 담낭 주위 액체가 있고 총담관은 확장되지 않았다. 항생제와 함께 가장 적절한 처치는?",
+    "options": [
+     "입원 중 조기 복강경 담낭절제술",
+     "경피경간 담낭배액술 후 간격 담낭절제술",
+     "내시경역행담췌관조영술 후 담낭절제술",
+     "항생제 정맥 투여 후 외래 추적",
+     "즉시 개복 담낭절제술"
+    ],
+    "answer": 2,
+    "explanation": "백혈구 > 18,000·촉지 덩이로 2등급이고, 혈압·의식·크레아티닌·혈소판이 정상이라 장기부전(3등급)은 없다 — 등급과 시간창은 원래 문항과 같다. 달라진 것은 수술 위험이다. 박출률 25 %·최근 심부전 입원·안정 시 호흡곤란은 동반질환 지수·ASA 로 고위험에 해당해, 2등급이라도 항생제 + 경피경간 담낭배액으로 감염원을 먼저 빼고 회복 뒤 간격 담낭절제로 간다(TG18 흐름도). 담관 폐쇄 소견이 없어 ERCP 는 적응이 아니고, 항생제 단독은 감염원을 남긴다. 개복 수술은 위험을 더 키운다.",
+    "of": "kmle-2026-1091",
+    "changed": "동반질환·복용약 없음 → 박출률 25 %의 심부전으로 최근 입원·가정 산소(수술 위험 높음, 장기부전은 여전히 없음) ⇒ 정답이 조기 복강경 담낭절제술에서 경피경간 담낭배액 후 간격 담낭절제로",
+    "flip": true
+   },
+   {
+    "id": "cn.gs.acute-cholecystitis.grade2-early-lc#v3",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(등급·장기부전·수술 위험·시간·담관)는 같다",
+    "stem": "37세 여자가 어제 오후부터 오른쪽 윗배가 계속 아프고 열이 나서 동네 의원을 거쳐 의뢰되었다. 통증이 시작된 지 약 28시간 되었다. 초음파에서 담낭 안 여러 개의 담석, 담낭벽 두께 6 mm, 담낭 주위 액체가 보였고, 탐촉자로 담낭을 누르면 아파하며, 총담관 지름은 4 mm 이다. 혈액검사에서 백혈구 20,400/mm³(호중구 86 %), CRP 13.2 mg/dL, 총빌리루빈 0.8 mg/dL, 알칼리인산분해효소 75 U/L, 리파아제 32 U/L, 크레아티닌 0.7 mg/dL, 혈소판 280,000/mm³ 이다. 혈압 118/74 mmHg, 맥박 94회/분, 체온 38.2 ℃. 앓는 병과 먹는 약은 없고 요가 강사로 일한다. 오른쪽 윗배에 압통과 Murphy 징후가 있고 황달은 없다. 가장 적절한 치료는?",
+    "options": [
+     "경피경간 담낭배액술 후 간격 담낭절제술",
+     "항생제로 염증을 가라앉힌 뒤 6주 후 담낭절제술",
+     "입원 중 조기 복강경 담낭절제술",
+     "자기공명담췌관조영술 후 내시경역행담췌관조영술",
+     "경구 항생제 처방 후 외래 추적"
+    ],
+    "answer": 3,
+    "explanation": "영상·국소 징후·전신 염증이 모두 있어 급성 담낭염 확진이고, 백혈구 > 18,000 으로 2등급이다. 혈압·크레아티닌·혈소판이 정상이라 장기부전이 없고, 동반질환·복용약이 없어 수술 위험이 낮으며, 발병 28시간이라 72시간 이내다 — 나이·성별·내원 경위·2등급 근거가 바뀌어도 이 단서들은 그대로라 답은 조기 복강경 담낭절제술이다. 빌리루빈·ALP·총담관 지름이 정상이라 담관 처치는 필요 없고, 6주 뒤 지연 수술은 이환율·재원기간이 더 나쁘며, 배액은 수술 위험이 높은 환자의 선택이다.",
+    "of": "kmle-2026-1091",
+    "changed": "남자 46세 응급실 → 여자 37세 외래 의뢰, 2등급 근거를 덩이 대신 백혈구로·검사 제시 순서 바꿈(장기부전 없음·동반질환 없음·72시간 이내·담관 정상은 그대로) ⇒ 답은 그대로 조기 복강경 담낭절제술",
     "flip": false
    }
   ],
@@ -4354,10 +15192,10 @@ window.MEDKOS_CONCEPTS = {
    "Endocrinology",
    "Otolaryngology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "0fe17795e5060888",
+  "hash": "3d398b249acfc1a5",
   "summary": [
    "수술 범위를 정하는 네 인자: 종양 크기(≤1 / 1–4 / >4 cm) · 갑상선외 침범 · 임상적 림프절 전이(cN0 / cN1a 중심구역 / cN1b 측경부) · 원격전이. 세침으로 진단이 끝나면 이 네 가지를 수술 전 초음파로 채운다.",
    "1–4 cm 이고 갑상선 안에 국한·cN0 이면 엽절제도 전절제도 허용(선택). 그러나 >4 cm·육안적 갑상선외 침범·임상적 림프절 전이(cN1)·원격전이 가운데 하나라도 있으면 갑상선 전절제다.",
@@ -4741,6 +15579,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "1–4 cm·갑상선외 침범 없음·cN0 이므로 엽절제와 전절제가 모두 허용되고, 재발 위험·RAI 계획·환자 선호로 고른다. 측경부 절제는 확인된 전이가 없으면 하지 않고(예방적 측경부 절제 금지), RAI 는 수술 뒤 보조요법이며, 능동감시는 1 cm 이하 저위험 미세암에서만 선택지다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a#v3",
+    "context": "같은 3 cm 유두암·같은 중심구역 전이, 측경부 소견 하나만 바꾼 변형",
+    "stem": "43세 여자가 건강검진 초음파에서 발견된 갑상선 결절로 왔다. 쉰 목소리·삼킴곤란은 없고 목 방사선 노출력과 갑상선암 가족력은 없다. 초음파에서 오른엽에 3.0 cm 저에코 결절(경계 불규칙·미세석회화)이 있고 갑상선 밖 침범은 없으며 왼엽은 정상이다. 중심구역(6구역)에 지방문이 소실된 1.1 cm 림프절이, 오른쪽 측경부 3구역과 4구역에 낭성 변화와 미세석회화를 보이는 1.4 cm·1.0 cm 림프절이 있다. 결절 세침은 유두암, 중심구역 림프절과 오른쪽 3구역 림프절 세침은 모두 전이 유두암이다. 후두 내시경에서 양쪽 성대 움직임은 정상이고 칼시토닌은 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "갑상선 전절제술과 중심구역 림프절절제술",
+     "갑상선 엽절제술과 협부절제술",
+     "갑상선 전절제술, 중심구역 림프절절제술과 오른쪽 변형 근치 경부절제술",
+     "갑상선 전절제술 후 방사성요오드 치료만 시행",
+     "갑상선 전절제술과 오른쪽 3구역 림프절 단독 적출"
+    ],
+    "answer": 3,
+    "explanation": "원래 문항과 크기·중심구역 전이는 같지만, 측경부 3·4구역 림프절이 초음파에서 의심되고 세침으로 전이가 확인되어 cN1b 가 되었다. 측경부 전이가 확인되면 전절제와 치료적 중심구역 절제에 더해 구역 단위 치료적 측경부 절제(변형 근치 경부절제)를 한다. 중심구역만 떼면 확인된 측경부 전이를 남기고, 방사성요오드는 수술 뒤 보조요법이라 육안적 림프절 전이를 대신하지 못하며, 보이는 림프절만 떼는 적출(버리 뽑기)은 권고되지 않는다.",
+    "of": "kmle-2026-1092",
+    "changed": "측경부 이상 림프절 없음 → 오른쪽 3·4구역 림프절이 초음파에서 의심되고 세침에서 전이 확인(cN1b) ⇒ 정답이 전절제 + 중심구역 절제에서 전절제 + 중심구역 절제 + 오른쪽 변형 근치 경부절제로",
+    "flip": true
+   },
+   {
+    "id": "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a#v4",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(cN1a·측경부 음성)는 같다",
+    "stem": "56세 남자가 면도하다가 목 앞쪽 왼편에 만져지는 혹을 알고 왔다. 목소리는 변하지 않았고 고혈압약만 먹는다. 후두 내시경에서 양쪽 성대 움직임은 정상이다. 세침흡인 세포검사에서 결절은 유두암이고, 기관 옆 중심구역(6구역)의 0.9 cm 둥근 림프절에서도 전이 유두암 세포가 나왔다. 초음파에서 결절은 왼엽의 2.4 cm 저에코 결절로 미세석회화가 있고 갑상선 밖 침범은 없으며, 오른엽은 정상이고 양쪽 측경부(2–5구역)에 이상 림프절은 없다. TSH·칼슘·칼시토닌은 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "갑상선 엽절제술과 협부절제술",
+     "갑상선 전절제술과 중심구역 림프절절제술",
+     "갑상선 전절제술과 왼쪽 변형 근치 경부절제술",
+     "방사성요오드 치료 단독 시행",
+     "6개월 간격 초음파 추적 관찰"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·결절의 쪽과 크기, 내원 경위가 바뀌었지만 결정 단서는 같다 — 1–4 cm 이지만 중심구역 림프절 세침에서 전이가 확인된 cN1a 이므로 엽절제 선택지는 사라지고 갑상선 전절제와 치료적 중심구역 림프절절제를 한다. 측경부에 이상 림프절이 없어 측경부 절제는 하지 않으며(예방적 측경부 절제 없음), 방사성요오드는 수술 뒤 보조요법, 추적 관찰은 1 cm 이하·림프절 전이 없는 미세암에서만 선택지다.",
+    "of": "kmle-2026-1092",
+    "changed": "41세 여자·오른엽 3.1 cm → 56세 남자·왼엽 2.4 cm·목 혹 촉진으로 내원, 검사 제시 순서 바꿈(중심구역 세침 전이 양성·측경부 정상·갑상선외 침범 없음은 그대로) ⇒ 답은 그대로 전절제 + 치료적 중심구역 림프절절제",
     "flip": false
    }
   ],
@@ -5514,6 +16386,1684 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1092"
+  ],
+  "hasErrors": false
+ },
+ "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
+  "id": "cn.id.invasive-aspergillosis.angioinvasion-mechanism",
+  "title": "침습성 폐 아스페르길루스증 — 혈관 침습에서 객혈·halo 징후·갈락토만난까지",
+  "objective": "장기 호중구감소 환자에서 격벽이 있고 예각으로 갈라지는 아스페르길루스 균사가 혈관을 침습해 혈전·출혈성 경색을 만드는 기전으로 객혈과 CT halo 징후를 설명하고, 균의 형태(무격벽 리본형 균사·효모·협막)와 갈락토만난으로 털곰팡이증·칸디다·크립토코쿠스와 가른다",
+  "objectiveKind": "기전",
+  "condition": "침습성 폐 아스페르길루스증",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Microbiology",
+   "Hematology-Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "23378148e05b8bc9",
+  "summary": [
+   "아스페르길루스는 공기 중에 늘 있는 사상균이다. 들이마신 포자는 평소 대식세포와 호중구가 치우는데, 깊은 호중구감소·스테로이드가 길어질수록 그 방어가 빠져 침습성 감염 위험이 커진다 [[harrison-21: 217장 p.1677]].",
+   "호중구감소 환자에서는 균사가 폐혈관 벽을 뚫고 들어가는 **혈관 침습형**이 된다 [[harrison-21: 217장 p.1678 Table 217-2]]. 혈관이 막혀 조직이 출혈성 경색을 일으키고, 그 결과가 객혈·흉막성 흉통·흉막 기저 경색이다 [[harrison-21: 217장 p.1679]].",
+   "CT 의 halo 징후는 결절 둘레의 간유리 음영으로, 출혈성 경색이 결절을 둘러싼 모습이다. 호중구감소 환자의 감염 초기 약 7일 동안 보인다 [[harrison-21: 217장 p.1680]].",
+   "조직에서 균사는 가늘고 투명하며 격벽이 있고 약 45°로 갈라진다. 조직 안에 효모형은 없다 [[harrison-21: 217장 p.1679]]. 넓고 격벽이 거의 없는 리본형 균사가 직각으로 갈라지면 털곰팡이증이다 [[harrison-21: 218장 p.1683]].",
+   "혈청 갈락토만난(자라는 균이 내놓는 세포벽 항원)은 임상·영상 소견보다 며칠 먼저 양성이 되기도 하고, 배양은 10–30% 에서만 양성이다 [[harrison-21: 217장 p.1680]]. 치료는 보리코나졸·이사부코나졸·포사코나졸 [[harrison-21: 217장 p.1680]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>침습성 폐 아스페르길루스증은 <em>Aspergillus</em>(대개 <em>A. fumigatus</em>) 균사가 폐 조직과 혈관을 침범하는 감염이다. 경과가 1개월 이내면 급성, 1–3개월이면 아급성으로 나눈다 <sup>[1 217장 p.1677–1678]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>포자는 흙·퇴비·공기 속 어디에나 있어 매일 들이마신다. 정상에서는 폐포 대식세포가 포자를 먹고, 발아한 균사는 호중구가 막는다. <strong>깊고 긴 호중구감소</strong>, 고용량 스테로이드, 기저 폐질환이 이 방어를 무너뜨리는 주 위험 인자이며 기간이 길수록 위험이 커진다 <sup>[1 217장 p.1677]</sup>. 호중구가 없으면 균사가 자라 혈관 벽을 뚫고 들어간다(혈관 침습형) <sup>[1 217장 p.1678 Table 217-2]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>혈관 침습 → 혈전 → <strong>출혈성 경색</strong>: 조직 소견은 많은 균사가 혈관을 침범한 경색이다 <sup>[1 217장 p.1679]</sup>.</li>\n<li>경색 부위가 흉막에 닿으면 흉막성 흉통, 경색 조직의 출혈이 기도로 나오면 객혈(대개 가볍다) <sup>[1 217장 p.1678]</sup>.</li>\n<li>결절 둘레의 출혈 → CT <strong>halo 징후</strong>(간유리 테두리), 호중구감소 초기 약 7일 <sup>[1 217장 p.1680]</sup>. 이후 흉막 기저 경색·공동.</li>\n<li>자라는 균이 세포벽 <strong>갈락토만난</strong>을 내놓아 혈청에서 검출된다 — 임상·영상보다 먼저 양성이 되기도 한다 <sup>[1 217장 p.1680]</sup>.</li>\n<li>혈류를 따라 퍼지면 뇌(출혈성 경색·농양)·피부·다른 장기로 간다 <sup>[1 217장 p.1678]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>털곰팡이증</strong>: 넓은 리본형 무격벽 균사·직각 분지, 결절 다수·흉막 삼출·부비동염, 보리코나졸 예방 중 돌파 감염 <sup>[1 218장 p.1682–1683]</sup>.</li>\n<li><strong>칸디다</strong>: 발아관을 만드는 효모 — 점막 칸디다증·칸디다혈증.</li>\n<li><strong>크립토코쿠스</strong>: 두꺼운 다당 협막의 효모 — 협막이 식작용을 막는다.</li>\n<li><strong>히스토플라스마</strong>: 대식세포 안의 작은 이형성 효모.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>흉부 CT(초기에 바로), 혈청·기관지폐포세척액 갈락토만난(세척액이 더 민감), 실시간 PCR, 가능하면 조직 검사와 진균 배양 — 세균 배지는 진균 배지보다 민감도가 낮아 진균 배양을 따로 요청해야 한다 <sup>[1 217장 p.1680]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li>1차: 보리코나졸·이사부코나졸·포사코나졸(정주로 시작), 2차: 에키노칸딘·지질 암포테리신 B <sup>[1 217장 p.1680]</sup>.</li>\n<li>보리코나졸은 약물 상호작용과 농도 편차가 커서 농도 감시를 권한다.</li>\n<li>치료 기간은 면역 상태와 반응에 따라 약 3개월에서 수년. 면역이 회복되지 않으면 재발한다 <sup>[1 217장 p.1680]</sup>.</li>\n<li>재평가: 발열·CT 병변 크기, 호중구 회복. 호중구가 회복될 때 병변이 일시적으로 커 보일 수 있다(면역 재구성).</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>보리코나졸은 털곰팡이에 듣지 않으므로, 형태가 애매하거나 보리코나졸 예방 중 돌파 감염이면 털곰팡이까지 덮는 약을 고려한다 <sup>[1 218장 p.1683]</sup>.</li>\n<li>AML 유도 치료 뒤처럼 위험이 높으면 포사코나졸 예방이 쓰인다. 플루코나졸은 아스페르길루스에 효과가 없다 <sup>[1 217장 p.1681]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 217장 p.1677–1681 · 218장 p.1682–1685)</li>\n</ul>"
+   },
+   {
+    "title": "「균의 성질」 보기 읽기",
+    "deep": true,
+    "html": "<p>보기 다섯은 모두 진균의 형태 하나와 그 형태가 만드는 병을 짝지어 둔 것이다(무격벽 리본형 균사 ↔ 털곰팡이, 협막 ↔ 크립토코쿠스, 발아관 효모 ↔ 칸디다, 대식세포 안 이형성 효모 ↔ 히스토플라스마). 문항의 질문은 「객혈과 CT 소견을 가장 직접 설명하는 성질」이라, 숙주가 아니라 <strong>혈관 침습</strong>을 설명하는 보기가 답이다.</p>"
+   }
+  ],
+  "tables": [],
+  "pitfalls": [
+   {
+    "contrast": "「호중구감소 + 항생제 무반응 발열 = 칸디다」 vs 사상균의 혈관 침습",
+    "point": "숙주 배경만으로는 칸디다와 아스페르길루스가 모두 들어맞는다. 둘을 가르는 것은 병변의 모양이다 — 효모(칸디다)는 점막을 따라 퍼지거나 혈류로 가지만, halo 결절·쐐기 경색·객혈은 혈관을 침습해 경색을 만드는 사상균의 소견이다. 갈락토만난은 아스페르길루스 세포벽 항원이다.",
+    "exception": "칸디다는 점막 칸디다증·중심정맥관 관련 칸디다혈증에서 답이 된다(이 정리본 출처 밖 — 해리슨 216장 미대조).",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "아스페르길루스 vs 털곰팡이증 — 둘 다 혈관 침습형 사상균",
+    "point": "둘 다 혈관을 침습해 괴사·공동·객혈을 만든다. 가르는 것은 균사의 폭과 모양이다: 털곰팡이는 6–30 µm 의 넓고 두꺼운 리본형·무격벽 균사가 직각으로 갈라지고, 아스페르길루스는 가늘고 격벽이 있으며 예각으로 갈라진다. 조직 처리로 가짜 격벽이 생길 수 있어 폭과 리본 모양이 가장 믿을 만한 기준이다 <sup>[1 218장 p.1683]</sup>. 치료가 다르다 — 보리코나졸은 털곰팡이에 듣지 않고 악화시킬 수 있다(동물 모델).",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "halo 징후 = 침습성 아스페르길루스증?",
+    "point": "halo 는 출혈성 경색을 보여 줄 뿐 원인균 특이적이지 않다. 코로나19 폐렴에서도 halo 결절이 보이며 그것만으로 침습성 아스페르길루스증을 뜻하지 않는다 <sup>[1 217장 p.1680]</sup>. 숙주·갈락토만난·조직 소견과 함께 읽는다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "halo 징후는 초기(약 7일)에만 보이고 그 뒤 공동(반달 공기음영)으로 바뀐다 — 일찍 찍을수록 얻는 정보가 많다 <sup>[1 217장 p.1680]</sup>.",
+   "갈락토만난 음성은 털곰팡이증을 지지하지만, 항진균제를 쓰는 중이면 아스페르길루스에서도 음성이 나올 수 있다.",
+   "두 사상균이 함께 감염될 수 있다 — 형태가 애매하면 털곰팡이까지 덮는 약(이사부코나졸·포사코나졸, 또는 폴리엔)을 고려한다 <sup>[1 218장 p.1683]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ia-dx",
+    "name": "침습성 아스페르길루스증 진단",
+    "kind": "진단 기준",
+    "population": "위험 숙주(장기 호중구감소·스테로이드·조혈모세포이식)",
+    "statement": "확진은 무균 부위 검체 배양 양성, 또는 침범 장기 검체의 조직 소견과 배양(또는 분자 확인) 둘 다 양성. 대부분은 CT halo 징후·갈락토만난 같은 더 적은 자료로 추정 진단한다 [[harrison-21: 217장 p.1680]]",
+    "exceptions": "항진균제를 쓰는 중에는 항원 검출 민감도가 떨어진다 [[harrison-21: 217장 p.1680]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "ia-tx",
+    "name": "1차 치료",
+    "kind": "치료 기준",
+    "population": "침습성 아스페르길루스증",
+    "statement": "보리코나졸·이사부코나졸·포사코나졸이 1차, 카스포펀진·미카펀진·지질 암포테리신 B 는 2차. 급성 침습형은 정주로 시작 [[harrison-21: 217장 p.1680]]",
+    "exceptions": "보리코나졸은 약물 농도 감시 권고. 털곰팡이 가능성을 배제하지 못하면 이사부코나졸·포사코나졸을 넣는 것이 합리적 [[harrison-21: 218장 p.1683]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 217: Aspergillosis · Chapter 218: Mucormycosis",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 217장 p.1677–1681 · 218장 p.1681–1685",
+    "checked": "본문 대조(드라이브 217·218장 문서) — 217장 p.1677: 격벽 있는 분지 사상균, 깊은 호중구감소·스테로이드·기저 폐질환이 주 위험 인자, 기간이 길수록 위험 증가 · p.1678: 폐 침범 80% 이상, 증상은 발열·기침·흉부 불편·가벼운 객혈, Table 217-2 폐는 호중구감소에서 혈관 침습형, 뇌는 출혈성 경색 · p.1679: 조직에서 혈관 침습에 의한 경색, 균사는 투명·가늘고 격벽·45° 분지, 조직에 효모형 없음 · p.1680: 갈락토만난이 임상·영상보다 수일 먼저 양성, 항진균제로 민감도 저하, 배양 양성 10–30%, halo 징후는 출혈성 경색이 결절을 둘러싼 간유리 음영·호중구감소 초기 약 7일, 코로나19 halo 는 침습성 아스페르길루스증을 뜻하지 않음, 보리코나졸·이사부코나졸·포사코나졸 1차 · 218장 p.1683: 털곰팡이 균사는 6–30 µm 넓고 두꺼운 리본형·무격벽·직각 분지, 아스페르길루스는 격벽·가늘고 예각, 폭과 리본 모양이 가장 믿을 만한 기준, 암 환자에서 결절 10개 이상·흉막 삼출·동반 부비동염이면 털곰팡이 가능성, 보리코나졸이 털곰팡이 악화(동물 모델) · p.1682: 보리코나졸·이트라코나졸 예방 중 털곰팡이 위험 · p.1684–1685: 1차는 폴리엔(지질 암포테리신 B)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "침습성 아스페르길루스증에서 객혈과 halo 징후가 생기는 기전은?",
+    "a": "균사가 폐혈관 벽을 침습해 혈전을 만들고 그 뒤 조직이 출혈성 경색을 일으킨다. 결절 둘레의 출혈이 CT 에서 간유리 테두리(halo)로 보인다."
+   },
+   {
+    "q": "조직에서 아스페르길루스와 털곰팡이를 가르는 가장 믿을 만한 형태 기준은?",
+    "a": "균사의 폭과 리본 모양. 털곰팡이는 6–30 µm 로 넓은 리본형·무격벽·직각 분지, 아스페르길루스는 가늘고 격벽 있으며 약 45° 로 갈라진다(가짜 격벽이 생길 수 있어 격벽보다 폭이 믿을 만하다)."
+   },
+   {
+    "q": "갈락토만난이 음성인데 호중구감소 환자에게 halo 결절이 있다. 아스페르길루스증이 배제되나?",
+    "a": "아니다. 항진균제 중에는 민감도가 떨어지고, 털곰팡이증 등 다른 사상균도 생각해야 한다 — 조직 검사가 필요하다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.id.invasive-aspergillosis.angioinvasion-mechanism#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 보리코나졸 예방 중 돌파 감염",
+    "stem": "A 52-year-old woman receiving consolidation chemotherapy for acute myeloid leukemia has been profoundly neutropenic for 18 days while taking voriconazole prophylaxis. She develops fever, pleuritic chest pain, hemoptysis, and nasal congestion with a dark lesion on the nasal turbinate. CT of the chest shows more than ten nodules, some with surrounding ground glass, and a small left pleural effusion; sinus CT shows ethmoid opacification. Serum galactomannan is negative on two occasions. A transbronchial biopsy shows vessel thrombosis with tissue necrosis. Which characteristic of the responsible organism is most likely to be seen on the biopsy?",
+    "options": [
+     "Narrow septate hyphae branching at acute angles",
+     "Wide, ribbon-like, pauciseptate hyphae branching at right angles",
+     "Encapsulated budding yeast with a thick polysaccharide capsule",
+     "Budding yeast with pseudohyphae forming germ tubes",
+     "Small intracellular yeast within alveolar macrophages"
+    ],
+    "answer": 2,
+    "explanation": "The changed clues are breakthrough infection on voriconazole prophylaxis, negative galactomannan, many nodules with pleural effusion, and concomitant sinus disease — features that make mucormycosis more likely than aspergillosis in a patient with cancer [[harrison-21: 218장 p.1682–1683]]. Mucorales form wide (6–30 µm), ribbon-like, aseptate hyphae branching at right angles that invade vessels and cause necrosis and hemoptysis [[harrison-21: 218장 p.1683]]. Narrow septate hyphae branching at acute angles describe Aspergillus, which releases galactomannan and is covered by voriconazole. The distinction matters because the first-line treatment of mucormycosis is a lipid polyene, not voriconazole.",
+    "of": "usmle-2026-0027",
+    "changed": "갈락토만난 양성 → 보리코나졸 예방 중 발생·갈락토만난 음성·결절 10개 이상·흉막 삼출·동반 부비동염, 생검에서 넓은 리본형 무격벽 직각 분지 균사 ⇒ 정답이 격벽성 예각 분지 균사(아스페르길루스)에서 넓은 무격벽 균사(털곰팡이)로",
+    "flip": true
+   },
+   {
+    "id": "cn.id.invasive-aspergillosis.angioinvasion-mechanism#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 조혈모세포이식 전처치 뒤",
+    "stem": "A 34-year-old woman is in the hospital after conditioning chemotherapy for allogeneic hematopoietic stem cell transplantation for acute lymphoblastic leukemia. Her absolute neutrophil count has been below 100/mm3 for 16 days. Despite cefepime and vancomycin, she has persistent fever, and on day 17 she reports sharp right-sided chest pain, followed the next day by blood-streaked sputum. CT of the chest shows two nodules with a surrounding rim of ground-glass attenuation. Serum galactomannan is positive. Which property of the causative organism best explains her hemoptysis and imaging findings?",
+    "options": [
+     "Vessel invasion by narrow septate hyphae with acute-angle branching",
+     "A thick polysaccharide capsule that blocks phagocytosis by macrophages",
+     "Germ-tube-forming yeast that spreads along mucosal surfaces",
+     "Dimorphic yeast that survives within alveolar macrophages",
+     "A heat-labile exotoxin that inhibits host protein synthesis"
+    ],
+    "answer": 1,
+    "explanation": "The deciding clues are unchanged: prolonged profound neutropenia, fever unresponsive to antibacterials, pleuritic pain with hemoptysis, halo nodules, and a positive galactomannan. Aspergillus hyphae are narrow, septate, and branch at about 45 degrees; in neutropenic hosts they invade vessels and cause hemorrhagic infarction, which appears as the ground-glass halo around a nodule [[harrison-21: 217장 p.1679–1680]]. Galactomannan is an Aspergillus cell-wall antigen. A capsule describes Cryptococcus, germ-tube yeast describes Candida albicans, and intracellular dimorphic yeast describes Histoplasma.",
+    "of": "usmle-2026-0027",
+    "changed": "나이·성별(34세 여성)·기저질환(동종 조혈모세포이식 전처치 뒤 호중구감소)·주 증상 순서(흉통 먼저, 객혈 나중)를 바꾸고, 장기 호중구감소·halo 결절·갈락토만난 양성·객혈은 유지 ⇒ 답은 그대로 격벽성 예각 분지 균사의 혈관 침습",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "호중구감소 환자의 폐 결절 — 어떤 균이 혈관을 침습했나",
+  "geo": {
+   "title": "호중구감소 환자의 폐 결절 — 어떤 균이 혈관을 침습했나",
+   "w": 510,
+   "h": 865.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "장기 호중구감소 + 광범위",
+      "항생제에도 지속되는 발열"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "ct",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "흉부 CT 에 halo 결절·흉막",
+      "기저 경색·공동이 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "ctdo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "흉부 CT 를 바로 찍는다 —",
+      "흉부 X선은 초기 병변을",
+      "놓친다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 276.0
+    },
+    {
+     "id": "nonspec",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "비특이적 경화뿐 — 세균·",
+      "바이러스 등 다른 원인도",
+      "함께 찾는다(이 도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 423.0
+    },
+    {
+     "id": "hyphae",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "검체의 균 모양은? 균사의 폭·",
+      "격벽·분지 각도, 효모 여부"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 423.0
+    },
+    {
+     "id": "gm",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "조직을 얻지 못함 —",
+      "혈청(또는 기관지폐포세척액)",
+      "갈락토만난을 본다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "asp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "가늘고 격벽 있는 45° 분지",
+      "균사 · 갈락토만난 양성 —",
+      "아스페르길루스(혈관 침습·",
+      "출혈성 경색) → 보리코나졸·",
+      "이사부코나졸"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 16.0,
+     "y": 734.0
+    },
+    {
+     "id": "muc",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "넓은 리본형 무격벽 균사 ·",
+      "직각 분지 — 털곰팡이증 →",
+      "지질 암포테리신 B + 괴사",
+      "조직 제거"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 734.0
+    },
+    {
+     "id": "yeast",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "효모(발아관 형성) —",
+      "칸디다: 점막·혈류 감염 쪽,",
+      "halo 결절의 원인으로는",
+      "맞지 않다(이 도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 570.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "ct",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ct",
+     "to": "hyphae",
+     "points": [
+      [
+       178.0,
+       210.0
+      ],
+      [
+       178.0,
+       220.0
+      ],
+      [
+       452,
+       220.0
+      ],
+      [
+       452,
+       377.0
+      ],
+      [
+       81.3,
+       377.0
+      ],
+      [
+       81.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 66.3,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "ctdo",
+     "points": [
+      [
+       227.0,
+       210.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미시행"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "ct",
+     "to": "nonspec",
+     "points": [
+      [
+       276.0,
+       210.0
+      ],
+      [
+       276.0,
+       232.0
+      ],
+      [
+       466,
+       232.0
+      ],
+      [
+       466,
+       377.0
+      ],
+      [
+       307.3,
+       377.0
+      ],
+      [
+       307.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비특이 경화만"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 268.5,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "ctdo",
+     "to": "hyphae",
+     "points": [
+      [
+       194.3,
+       357.0
+      ],
+      [
+       194.3,
+       367.0
+      ],
+      [
+       146.7,
+       367.0
+      ],
+      [
+       146.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "halo·경색 보이면"
+      ],
+      "w": 98.6,
+      "h": 17,
+      "x": 97.3,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "ctdo",
+     "to": "nonspec",
+     "points": [
+      [
+       259.7,
+       357.0
+      ],
+      [
+       259.7,
+       373.0
+      ],
+      [
+       372.7,
+       373.0
+      ],
+      [
+       372.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비특이면"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 346.7,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "hyphae",
+     "to": "asp",
+     "points": [
+      [
+       55.2,
+       487.0
+      ],
+      [
+       55.2,
+       497.0
+      ],
+      [
+       480,
+       497.0
+      ],
+      [
+       480,
+       688.0
+      ],
+      [
+       81.3,
+       688.0
+      ],
+      [
+       81.3,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "가늘고 격벽·예각"
+      ],
+      "w": 95.1,
+      "h": 17,
+      "x": 33.8,
+      "y": 714.0
+     }
+    },
+    {
+     "from": "hyphae",
+     "to": "yeast",
+     "points": [
+      [
+       94.4,
+       487.0
+      ],
+      [
+       94.4,
+       503.0
+      ],
+      [
+       114.0,
+       503.0
+      ],
+      [
+       114.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "효모"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "hyphae",
+     "to": "muc",
+     "points": [
+      [
+       133.6,
+       487.0
+      ],
+      [
+       133.6,
+       509.0
+      ],
+      [
+       494,
+       509.0
+      ],
+      [
+       494,
+       688.0
+      ],
+      [
+       307.3,
+       688.0
+      ],
+      [
+       307.3,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "넓은 리본·무격벽·직각"
+      ],
+      "w": 123.5,
+      "h": 17,
+      "x": 245.6,
+      "y": 714.0
+     }
+    },
+    {
+     "from": "hyphae",
+     "to": "gm",
+     "points": [
+      [
+       172.8,
+       487.0
+      ],
+      [
+       172.8,
+       515.0
+      ],
+      [
+       340.0,
+       515.0
+      ],
+      [
+       340.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "검체 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "gm",
+     "to": "asp",
+     "points": [
+      [
+       307.3,
+       651.0
+      ],
+      [
+       307.3,
+       661.0
+      ],
+      [
+       146.7,
+       661.0
+      ],
+      [
+       146.7,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 694.0
+     }
+    },
+    {
+     "from": "gm",
+     "to": "muc",
+     "points": [
+      [
+       372.7,
+       651.0
+      ],
+      [
+       372.7,
+       667.0
+      ],
+      [
+       372.7,
+       667.0
+      ],
+      [
+       372.7,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성 + 결절 다수·흉막 삼출·",
+       "부비동염"
+      ],
+      "w": 152.1,
+      "h": 30,
+      "x": 296.6,
+      "y": 668.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "장기 호중구감소 + 광범위 항생제에도 지속되는 발열",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "흉부 CT 에 halo 결절·흉막 기저 경색·공동이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "ct",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "흉부 CT 에 halo 결절·흉막 기저 경색·공동이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "검체의 균 모양은? 균사의 폭·격벽·분지 각도, 효모 여부"
+     },
+     {
+      "label": "비특이 경화만",
+      "to": 5,
+      "toText": "비특이적 경화뿐 — 세균·바이러스 등 다른 원인도 함께 찾는다(이 도식 범위 밖)"
+     },
+     {
+      "label": "미시행",
+      "to": 3,
+      "toText": "흉부 CT 를 바로 찍는다 — 흉부 X선은 초기 병변을 놓친다"
+     }
+    ]
+   },
+   {
+    "id": "ctdo",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "흉부 CT 를 바로 찍는다 — 흉부 X선은 초기 병변을 놓친다",
+    "note": "",
+    "branches": [
+     {
+      "label": "halo·경색 보이면",
+      "to": 4,
+      "toText": "검체의 균 모양은? 균사의 폭·격벽·분지 각도, 효모 여부"
+     },
+     {
+      "label": "비특이면",
+      "to": 5,
+      "toText": "비특이적 경화뿐 — 세균·바이러스 등 다른 원인도 함께 찾는다(이 도식 범위 밖)"
+     }
+    ]
+   },
+   {
+    "id": "hyphae",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "검체의 균 모양은? 균사의 폭·격벽·분지 각도, 효모 여부",
+    "note": "",
+    "branches": [
+     {
+      "label": "가늘고 격벽·예각",
+      "to": 8,
+      "toText": "가늘고 격벽 있는 45° 분지 균사 · 갈락토만난 양성 — 아스페르길루스(혈관 침습·출혈성 경색) → 보리코나졸·이사부코나졸"
+     },
+     {
+      "label": "넓은 리본·무격벽·직각",
+      "to": 9,
+      "toText": "넓은 리본형 무격벽 균사 · 직각 분지 — 털곰팡이증 → 지질 암포테리신 B + 괴사 조직 제거"
+     },
+     {
+      "label": "효모",
+      "to": 6,
+      "toText": "효모(발아관 형성) — 칸디다: 점막·혈류 감염 쪽, halo 결절의 원인으로는 맞지 않다(이 도식 범위 밖)"
+     },
+     {
+      "label": "검체 없음",
+      "to": 7,
+      "toText": "조직을 얻지 못함 — 혈청(또는 기관지폐포세척액) 갈락토만난을 본다"
+     }
+    ]
+   },
+   {
+    "id": "nonspec",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "비특이적 경화뿐 — 세균·바이러스 등 다른 원인도 함께 찾는다(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "yeast",
+    "num": 6,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "효모(발아관 형성) — 칸디다: 점막·혈류 감염 쪽, halo 결절의 원인으로는 맞지 않다(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "gm",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "조직을 얻지 못함 — 혈청(또는 기관지폐포세척액) 갈락토만난을 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 8,
+      "toText": "가늘고 격벽 있는 45° 분지 균사 · 갈락토만난 양성 — 아스페르길루스(혈관 침습·출혈성 경색) → 보리코나졸·이사부코나졸"
+     },
+     {
+      "label": "음성 + 결절 다수·흉막 삼출·부비동염",
+      "to": 9,
+      "toText": "넓은 리본형 무격벽 균사 · 직각 분지 — 털곰팡이증 → 지질 암포테리신 B + 괴사 조직 제거"
+     }
+    ]
+   },
+   {
+    "id": "asp",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "가늘고 격벽 있는 45° 분지 균사 · 갈락토만난 양성 — 아스페르길루스(혈관 침습·출혈성 경색) → 보리코나졸·이사부코나졸",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "muc",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "넓은 리본형 무격벽 균사 · 직각 분지 — 털곰팡이증 → 지질 암포테리신 B + 괴사 조직 제거",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0027"
+  ],
+  "hasErrors": false
+ },
+ "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": {
+  "id": "cn.id.legionella-pneumonia.urinary-antigen-diagnosis",
+  "title": "레지오넬라 폐렴 — 세포 내 세균의 단서에서 확진 검사(소변 항원) 고르기까지",
+  "objective": "레지오넬라가 대식세포 안에서 자라고 일반 배지에서 자라지 않는 성질로 수계 노출·위장관 증상·저나트륨혈증·그람염색 무균 소견을 설명하고, 급성 폐렴에서 이 단서가 모이면 첫 확진 검사로 소변 항원(혈청군 1)을 고르되 음성의 한계와 결핵·마이코플라스마·진균 검사가 맞는 조건을 가른다",
+  "objectiveKind": "검사 선택",
+  "condition": "레지오넬라 폐렴(재향군인병)",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Microbiology",
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "97783bc7282b9068",
+  "summary": [
+   "레지오넬라는 원래 물속 아메바 안에서 사는 세균이다. 사람은 오염된 물의 에어로졸(냉각탑·분수·온수 욕조·샤워기)을 들이마셔 우연히 감염되고, 폐포 대식세포 안에서 식작용을 피해 증식한다 [[harrison-21: 159장 p.1250–1251]].",
+   "시스테인 같은 특수 영양이 필요해 일반 혈액 한천에서 자라지 않고 BCYE 배지에서 3–5일 걸려 자란다. 객담 그람염색에 호중구는 많은데 균이 안 보이는 것이 이 성질의 결과다 [[harrison-21: 159장 p.1254]].",
+   "폐렴에 신경·위장관 증상(설사·구역)이 같이 오고 저나트륨혈증·간효소 상승·신기능 저하가 흔하다 — 이 조합이 다른 폐렴과 가르는 단서다 [[harrison-21: 159장 p.1253]].",
+   "가장 빠른 확진은 소변 항원검사다. 쉽고 빠르며 특이도가 매우 높지만 L. pneumophila 혈청군 1만 잡는다(민감도 약 70%) — 음성이어도 배제하지 못한다 [[harrison-21: 159장 p.1255]]. 하기도 검체 PCR 은 배양보다 민감하다 [[harrison-21: 159장 p.1255]].",
+   "치료는 세포 안으로 들어가는 약 — 플루오로퀴놀론(레보플록사신) 또는 매크롤라이드(아지스로마이신) [[harrison-21: 159장 p.1256]]. 베타락탐은 세포 안에 닿지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>레지오넬라 폐렴(재향군인병)은 주로 <em>Legionella pneumophila</em>(대개 혈청군 1)가 일으키는 폐렴이다. 폐렴 없이 독감처럼 지나가는 <strong>폰티악열</strong>과 함께 레지오넬라증이라 부른다 <sup>[1 159장 p.1249, p.1253]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>레지오넬라는 물속 아메바·원생동물 안에서 증식하는 세균이고 사람은 우연 숙주다. 냉각탑·분수·온수 욕조·샤워기처럼 따뜻한 물이 고인 건물 배관에서 에어로졸로 흡입되면, 폐포 대식세포에 먹힌 뒤 식포-리소좀 융합을 피해 <strong>대식세포 안에서</strong> 증식한다 <sup>[1 159장 p.1250–1251]</sup>. 사람 사이 전파는 거의 없다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>세포 내 증식 + 특수 영양 요구 → 그람염색에 호중구는 많은데 균이 거의 안 보이고, 일반 혈액 한천에서 자라지 않는다(BCYE 필요) <sup>[1 159장 p.1254]</sup>.</li>\n<li>전신 염증과 다장기 침범 → 고열, 두통·혼돈, 설사·구역, 간효소 상승, 신기능 저하, <strong>저나트륨혈증</strong> <sup>[1 159장 p.1253]</sup>.</li>\n<li>흉부 X선은 반점형·대엽성 침윤으로 특이적이지 않다 — 영상으로 원인균을 정할 수 없다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>결핵</strong>: 수주~수개월 경과, 객혈·야간발한·체중감소, 상엽 침윤·공동 → AFB 도말·배양·핵산증폭.</li>\n<li><strong>마이코플라스마·클라미도필라</strong>: 대개 가벼운 비정형 폐렴, 저나트륨·설사는 두드러지지 않음.</li>\n<li><strong>침습성 진균 감염</strong>: 호중구감소·면역저하 숙주 → 베타-D-글루칸·갈락토만난.</li>\n<li><strong>폐렴구균 폐렴</strong>: 그람양성 쌍구균이 보이고 소변 폐렴구균 항원이 있다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>소변 항원(혈청군 1)</strong> — 가장 빠르고 쉬움, 특이도 매우 높음, 민감도 약 70% <sup>[1 159장 p.1255]</sup>.</li>\n<li><strong>하기도 검체 PCR</strong> — 배양보다 민감, 점점 보급 <sup>[1 159장 p.1255]</sup>.</li>\n<li><strong>BCYE 배양</strong> — 표준, 역학 조사(노출원 비교)에 필수, 3–5일 <sup>[1 159장 p.1254]</sup>.</li>\n<li>혈청 항체(4배 상승) — 급성기 진단에는 늦고 민감도가 낮아 역학 조사용.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li>레보플록사신 등 플루오로퀴놀론 또는 아지스로마이신 등 매크롤라이드 — 세포 안으로 들어가는 약 <sup>[1 159장 p.1256]</sup>.</li>\n<li>면역저하자는 중등증 이상으로 보고 정주로 시작한다 <sup>[1 159장 p.1256]</sup>.</li>\n<li>재평가: 발열·산소화·나트륨·신기능의 호전. 음성 소변 항원으로 치료를 끊지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>소변 항원 음성은 혈청군 1 이외 균, 발병 초기, 면역저하자에서 흔하다 — PCR·배양으로 확인.</li>\n<li>집단 발생이 의심되면 배양 분리주가 노출원 추적에 필요하므로 항생제 전에 하기도 검체를 받는 것이 좋다 <sup>[1 159장 p.1254]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 「가장 좋은 확진 검사」</strong> — 시험 기준: 빠른 첫 확진 검사는 소변 항원(혈청군 1) <sup>[1 159장 p.1255]</sup> / 다른 기준: 해리슨은 하기도 검체 PCR 이 배양보다 2–4배 더 많은 증례를 찾는다며 보급이 늘고 있다고 적는다 <sup>[1 159장 p.1255]</sup> / 왜 다른가: 소변 항원은 빠르지만 혈청군 1만 잡고, PCR 은 민감하지만 하기도 검체와 검사실 여건이 필요하다 / 시험에서는: USMLE · 보기에 소변 항원이 있으면 「다음 검사」로 그것, 「표준(gold standard)」을 물으면 BCYE 배양 · KMLE 도 같은 흐름.</li>\n</ul>"
+   },
+   {
+    "title": "음성 결과가 주는 정보",
+    "deep": true,
+    "html": "<p>이 문항의 「그람염색 무균 + 일반 배지 48시간 무성장」은 음성 결과지만 진단을 좁히는 정보다. 다만 그것만으로는 결핵·마이코플라스마·레지오넬라가 모두 남는다 — 경과(며칠)와 노출(온수 욕조)이 셋 중 하나를 고른다.</p>"
+   }
+  ],
+  "tables": [],
+  "pitfalls": [
+   {
+    "contrast": "「일반 배지 음성·그람염색 무균 = 특수 균(결핵)」 vs 급성 레지오넬라",
+    "point": "일반 배지에서 안 자라는 폐렴균은 여럿이다(레지오넬라·마이코플라스마·결핵·진균). 어느 검사를 할지는 배양 결과가 아니라 <b>경과와 노출</b>이 정한다. 며칠 사이의 고열·설사·저나트륨과 수계 노출이면 레지오넬라, 수주의 기침·객혈·야간발한·체중감소와 상엽 공동이면 결핵이다.",
+    "exception": "면역저하자는 전형적 증상 없이 올 수 있고, 두 감염이 겹칠 수도 있다 — 경과가 애매하면 둘 다 검사한다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "소변 항원 음성 = 레지오넬라 배제?",
+    "point": "소변 항원은 혈청군 1만 잡고 민감도도 약 70% 다. 발병 아주 초기에는 음성일 수 있고, 무뇨 환자에게는 쓸 수 없다. 의심이 남으면 하기도 검체 PCR·BCYE 배양을 하고 경험적 치료를 유지한다 <sup>[1 159장 p.1255]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "한랭응집소(마이코플라스마)",
+    "point": "마이코플라스마는 젊은 사람의 가벼운 「걸어 다니는 폐렴」이 전형이고, 한랭응집소는 비특이적이라 확진 검사가 아니다. 저나트륨·설사·수계 노출·고열의 중증 폐렴은 레지오넬라 쪽이다(마이코플라스마 서술은 해리슨 159장 밖 — 원문 미대조).",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "그람염색에 균이 안 보이는 것은 레지오넬라가 없다는 뜻이 아니라, 일반 염색·배지로 잘 안 보이는 세균이라는 뜻이다.",
+   "면역저하자는 발열 없이 올 수 있고 혈청군 1 이외·다른 종이 더 흔해 소변 항원 음성이 더 흔하다 — PCR·배양을 함께 낸다 <sup>[1 159장 p.1250, p.1253]</sup>.",
+   "소변 항원은 수개월 양성이 남을 수 있다 — 최근 레지오넬라 병력이 있으면 양성의 해석에 주의한다 <sup>[1 159장 p.1255]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "leg-uat",
+    "name": "소변 항원검사",
+    "kind": "검사 기준",
+    "population": "레지오넬라가 의심되는 폐렴",
+    "statement": "쉽고 빠르며 특이도가 매우 높다. L. pneumophila 혈청군 1만 검출, 민감도 약 70%. 초기에는 음성일 수 있고 감염 뒤 수개월 양성이 남을 수 있으며, 무뇨 환자에서는 쓸 수 없다 [[harrison-21: 159장 p.1255]]",
+    "exceptions": "혈청군 1 이외·다른 종(면역저하자에서 더 흔함)은 놓친다 [[harrison-21: 159장 p.1250]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "leg-culture-pcr",
+    "name": "배양·분자 검사",
+    "kind": "검사 기준",
+    "population": "레지오넬라가 의심되는 폐렴",
+    "statement": "하기도 검체의 BCYE 배양이 표준(역학 조사에 필수), 3–5일 소요. PCR 등 핵산증폭검사는 배양보다 민감하다 [[harrison-21: 159장 p.1254–1255]]",
+    "exceptions": "항생제 투여 뒤 채취하면 배양 민감도가 떨어진다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "leg-tx",
+    "name": "치료",
+    "kind": "치료 기준",
+    "population": "레지오넬라 폐렴",
+    "statement": "플루오로퀴놀론(레보플록사신 등) 또는 매크롤라이드(아지스로마이신 등). 면역저하자는 중등증 이상으로 보고 정주로 시작 [[harrison-21: 159장 p.1256]]",
+    "exceptions": "기간·병용 요법 세부는 이 정리본에서 대조하지 않았다(검토 항목)",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 159: Legionella Infections",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 159장 p.1249–1256",
+    "checked": "본문 대조(드라이브 159장 문서) — p.1250: 아메바 안 증식·사람은 우연 숙주·흡입 뒤 폐포 대식세포 안 증식, 미국 배양 확진의 약 10% 가 혈청군 1 이외 · p.1251: 냉각탑·분수·온수 욕조·샤워기 등 수계 노출원 · p.1253: 신경·위장관 증상이 있으면 레지오넬라 가능성, 백혈구 증가·혈소판 감소·간효소 상승·저나트륨·신기능 저하 흔함, 폰티악열은 폐렴 없는 자기 제한 질환 · p.1254: BCYE 배지·시스테인 요구·3–5일, 배양이 표준 · p.1255: 소변 항원은 혈청군 1만·민감도 약 70%·특이도 매우 높음·초기 음성·수개월 양성·무뇨 불가, PCR 이 배양보다 민감 · p.1256 표: 플루오로퀴놀론 또는 매크롤라이드. 비교맥(상대적 서맥)은 이 장에서 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "레지오넬라 폐렴에서 객담 그람염색에 균이 잘 보이지 않고 일반 배지에서 자라지 않는 이유는?",
+    "a": "대식세포 안에서 자라는 세포 내 세균이고 시스테인 같은 특수 영양이 필요해 BCYE 배지에서만 자란다."
+   },
+   {
+    "q": "소변 항원검사가 음성이면 레지오넬라를 배제할 수 있나?",
+    "a": "아니다. 혈청군 1만 잡고 민감도가 약 70% 라 음성이어도 하기도 PCR·BCYE 배양으로 확인한다."
+   },
+   {
+    "q": "같은 「배양 음성 폐렴」에서 결핵 검사를 먼저 해야 하는 경과는?",
+    "a": "수주 이상의 기침·객혈·야간발한·체중감소, 상엽 침윤이나 공동, 결핵 노출 위험."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.id.legionella-pneumonia.urinary-antigen-diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 수주의 경과와 상엽 공동",
+    "stem": "A 58-year-old man who works as a guard at a correctional facility presents with an 8-week history of productive cough, two episodes of blood-streaked sputum, drenching night sweats, and a 6-kg weight loss. He has had low-grade evening fevers but no diarrhea. Chest x-ray shows a right upper lobe infiltrate with a thick-walled cavity. Sputum Gram stain shows many neutrophils but no predominant organism, and a routine culture on standard blood agar shows only normal flora after 48 hours. Serum sodium is 139 mEq/L, and liver enzymes are normal. Which of the following is the most appropriate next diagnostic test?",
+    "options": [
+     "Urinary antigen test for Legionella pneumophila serogroup 1",
+     "Sputum acid-fast bacillus smear and mycobacterial culture",
+     "Cold agglutinin titer",
+     "Serum beta-D-glucan assay",
+     "Repeat sputum culture on standard blood agar"
+    ],
+    "answer": 2,
+    "explanation": "The changed clues are the time course and pattern: weeks of cough with hemoptysis, night sweats, weight loss, an occupational tuberculosis exposure, and an upper-lobe cavity. These point to pulmonary tuberculosis, so sputum AFB smear and mycobacterial culture (with nucleic acid amplification) come first. Legionella causes an acute illness over days with water-source exposure, diarrhea, hyponatremia, and transaminitis — none are present here [[harrison-21: 159장 p.1253]]. Cold agglutinins are nonspecific, beta-D-glucan targets invasive fungal infection in immunocompromised hosts, and repeating a standard culture will not grow mycobacteria.",
+    "of": "usmle-2026-0045",
+    "changed": "3일의 급성 고열·설사·저나트륨·호텔 온수 욕조 노출 → 8주의 기침·객혈·야간발한·체중감소, 교정시설 근무, 우상엽 공동·정상 나트륨 ⇒ 정답이 소변 레지오넬라 항원에서 객담 AFB 도말·배양으로",
+    "flip": true
+   },
+   {
+    "id": "cn.id.legionella-pneumonia.urinary-antigen-diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 크루즈 여행 뒤 폐렴과 혼돈",
+    "stem": "A 67-year-old woman is brought to the emergency department 4 days after returning from a cruise during which she used the ship's spa pool daily. Her husband reports that she has had fever to 40 C, loose stools, and new confusion for 2 days, followed by a cough. She smokes 1 pack per day. Chest x-ray shows a left lower lobe consolidation. Serum sodium is 127 mEq/L, AST is 88 U/L, and ALT is 71 U/L. A sputum Gram stain shows abundant neutrophils without visible bacteria, and a sputum culture on routine media has no growth at 2 days. Which of the following is the most appropriate test to confirm the most likely diagnosis?",
+    "options": [
+     "Serum galactomannan assay",
+     "Sputum acid-fast bacillus smear",
+     "Legionella urinary antigen test",
+     "Cold agglutinin titer",
+     "Rapid streptococcal antigen test of the throat"
+    ],
+    "answer": 3,
+    "explanation": "The deciding clues are unchanged: an acute pneumonia after aerosolized warm-water exposure, with diarrhea, neurologic symptoms, hyponatremia, elevated transaminases, and neutrophils without organisms on a sputum that does not grow on routine media [[harrison-21: 159장 p.1251, p.1253]]. The urinary antigen test is the fastest confirmatory test, although it detects only serogroup 1 and a negative result should prompt PCR or BCYE culture [[harrison-21: 159장 p.1255]]. The acute course argues against tuberculosis, galactomannan is for invasive aspergillosis, and cold agglutinins are nonspecific.",
+    "of": "usmle-2026-0045",
+    "changed": "나이·성별(67세 여성)·노출원(크루즈선 스파)·동반 증상(혼돈)·제시 순서를 바꾸고, 급성 고열·설사·저나트륨·간효소 상승·그람염색 무균·일반 배지 음성은 유지 ⇒ 답은 그대로 소변 항원",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "급성 폐렴에서 레지오넬라 확진 검사 고르기",
+  "geo": {
+   "title": "급성 폐렴에서 레지오넬라 확진 검사 고르기",
+   "w": 482,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "고열·기침·새 침윤의 폐렴,",
+      "객담 그람염색에 호중구는",
+      "많고 균은 안 보임"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "course",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "경과는? 며칠의 급성 vs",
+      "수주의 기침·객혈·야간발한·",
+      "체중감소"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "tb",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "만성 경과·상엽 침윤이나",
+      "공동 — 결핵: AFB 도말·배양·",
+      "핵산증폭검사(이 도식 범위",
+      "밖)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 310.0
+    },
+    {
+     "id": "clue",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "레지오넬라 단서가 있는가?",
+      "수계 노출·설사·저나트륨·",
+      "간효소 상승"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 310.0
+    },
+    {
+     "id": "cluedo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "여행·숙박·온수 욕조 노출과",
+      "나트륨·간효소를 확인한다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 474.0
+    },
+    {
+     "id": "cap",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "단서 없음 — 일반 지역사회",
+      "폐렴 평가·경험적 치료(이",
+      "도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 604.0
+    },
+    {
+     "id": "uat",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "소변 항원검사(혈청군 1)",
+      "결과는?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 604.0
+    },
+    {
+     "id": "confirm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "확진 — 레보플록사신 또는",
+      "아지스로마이신"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 751.0
+    },
+    {
+     "id": "more",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "배제되지 않음 — 하기도 검체",
+      "PCR·BCYE 배양, 경험적",
+      "치료 유지"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 751.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "course",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "course",
+     "to": "tb",
+     "points": [
+      [
+       194.3,
+       244.0
+      ],
+      [
+       194.3,
+       254.0
+      ],
+      [
+       114.0,
+       254.0
+      ],
+      [
+       114.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "수주·만성"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 84.8,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "course",
+     "to": "clue",
+     "points": [
+      [
+       259.7,
+       244.0
+      ],
+      [
+       259.7,
+       260.0
+      ],
+      [
+       340.0,
+       260.0
+      ],
+      [
+       340.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "며칠·급성"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 310.8,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "clue",
+     "to": "uat",
+     "points": [
+      [
+       291.0,
+       391.0
+      ],
+      [
+       291.0,
+       401.0
+      ],
+      [
+       452,
+       401.0
+      ],
+      [
+       452,
+       558.0
+      ],
+      [
+       146.7,
+       558.0
+      ],
+      [
+       146.7,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 564.0
+     }
+    },
+    {
+     "from": "clue",
+     "to": "cluedo",
+     "points": [
+      [
+       340.0,
+       391.0
+      ],
+      [
+       340.0,
+       407.0
+      ],
+      [
+       227.0,
+       407.0
+      ],
+      [
+       227.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "clue",
+     "to": "cap",
+     "points": [
+      [
+       389.0,
+       391.0
+      ],
+      [
+       389.0,
+       413.0
+      ],
+      [
+       466,
+       413.0
+      ],
+      [
+       466,
+       558.0
+      ],
+      [
+       372.7,
+       558.0
+      ],
+      [
+       372.7,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 564.0
+     }
+    },
+    {
+     "from": "cluedo",
+     "to": "uat",
+     "points": [
+      [
+       194.3,
+       538.0
+      ],
+      [
+       194.3,
+       548.0
+      ],
+      [
+       81.3,
+       548.0
+      ],
+      [
+       81.3,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나라도 있으면"
+      ],
+      "w": 88.7,
+      "h": 17,
+      "x": 37.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "cluedo",
+     "to": "cap",
+     "points": [
+      [
+       259.7,
+       538.0
+      ],
+      [
+       259.7,
+       554.0
+      ],
+      [
+       307.3,
+       554.0
+      ],
+      [
+       307.3,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모두 없으면"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 274.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "uat",
+     "to": "confirm",
+     "points": [
+      [
+       81.3,
+       668.0
+      ],
+      [
+       81.3,
+       678.0
+      ],
+      [
+       114.0,
+       678.0
+      ],
+      [
+       114.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "uat",
+     "to": "more",
+     "points": [
+      [
+       146.7,
+       668.0
+      ],
+      [
+       146.7,
+       684.0
+      ],
+      [
+       340.0,
+       684.0
+      ],
+      [
+       340.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 731.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "고열·기침·새 침윤의 폐렴, 객담 그람염색에 호중구는 많고 균은 안 보임",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "경과는? 며칠의 급성 vs 수주의 기침·객혈·야간발한·체중감소"
+     }
+    ]
+   },
+   {
+    "id": "course",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "경과는? 며칠의 급성 vs 수주의 기침·객혈·야간발한·체중감소",
+    "note": "",
+    "branches": [
+     {
+      "label": "수주·만성",
+      "to": 3,
+      "toText": "만성 경과·상엽 침윤이나 공동 — 결핵: AFB 도말·배양·핵산증폭검사(이 도식 범위 밖)"
+     },
+     {
+      "label": "며칠·급성",
+      "to": 4,
+      "toText": "레지오넬라 단서가 있는가? 수계 노출·설사·저나트륨·간효소 상승"
+     }
+    ]
+   },
+   {
+    "id": "tb",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "만성 경과·상엽 침윤이나 공동 — 결핵: AFB 도말·배양·핵산증폭검사(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "clue",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "레지오넬라 단서가 있는가? 수계 노출·설사·저나트륨·간효소 상승",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "소변 항원검사(혈청군 1) 결과는?"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "단서 없음 — 일반 지역사회 폐렴 평가·경험적 치료(이 도식 범위 밖)"
+     },
+     {
+      "label": "모름",
+      "to": 5,
+      "toText": "여행·숙박·온수 욕조 노출과 나트륨·간효소를 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "cluedo",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "여행·숙박·온수 욕조 노출과 나트륨·간효소를 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "하나라도 있으면",
+      "to": 6,
+      "toText": "소변 항원검사(혈청군 1) 결과는?"
+     },
+     {
+      "label": "모두 없으면",
+      "to": 7,
+      "toText": "단서 없음 — 일반 지역사회 폐렴 평가·경험적 치료(이 도식 범위 밖)"
+     }
+    ]
+   },
+   {
+    "id": "uat",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "소변 항원검사(혈청군 1) 결과는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 8,
+      "toText": "확진 — 레보플록사신 또는 아지스로마이신"
+     },
+     {
+      "label": "음성",
+      "to": 9,
+      "toText": "배제되지 않음 — 하기도 검체 PCR·BCYE 배양, 경험적 치료 유지"
+     }
+    ]
+   },
+   {
+    "id": "cap",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "단서 없음 — 일반 지역사회 폐렴 평가·경험적 치료(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "confirm",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "확진 — 레보플록사신 또는 아지스로마이신",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "more",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "배제되지 않음 — 하기도 검체 PCR·BCYE 배양, 경험적 치료 유지",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0045"
   ],
   "hasErrors": false
  },
@@ -6555,6 +19105,1930 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
+  "id": "cn.neph.poststreptococcal-gn.latency-complement-diagnosis",
+  "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 신염증후군을 가르기",
+  "objective": "사구체 면역복합체 손상의 기전으로 신염증후군(혈뇨·적혈구원주·고혈압·부종)이 생기는 이유를 설명하고, 선행 감염과의 간격(잠복기)과 혈청 보체(C3)로 연쇄구균감염후사구체신염을 IgA신병증 등 다른 사구체질환과 감별해 진단한다",
+  "objectiveKind": "진단",
+  "condition": "연쇄구균감염후사구체신염",
+  "topic": "Nephrology",
+  "seeAlso": [
+   "Pediatrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "bee021342c3bd335",
+  "summary": [
+   "사구체 모세혈관벽은 적혈구와 알부민을 거르는 장벽이다. 면역복합체가 쌓여 보체가 활성화되고 염증세포가 모이면 벽이 찢어져 적혈구가 새고(혈뇨·적혈구원주), 여과가 줄어 나트륨·수분이 저류된다(고혈압·부종·핍뇨) — 이것이 신염증후군이다.",
+   "연쇄구균감염후사구체신염(PSGN)은 신염원성 A군 연쇄구균 감염 뒤 면역 반응이 만들어질 시간이 필요해 인두염 1~3주·농가진 2~6주 뒤에 나타난다 [[harrison-21: 314장 p.2337]].",
+   "보체가 소모되므로 첫 주에 약 90%에서 CH50·C3 가 낮고 C4 는 정상이다. ASO(30%)·anti-DNase(70%) 역가 상승이 선행 감염을 뒷받침하므로 대개 신생검이 필요 없다 [[harrison-21: 314장 p.2337]].",
+   "IgA신병증은 상기도감염 도중 또는 직후 육안적 혈뇨가 반복되고 C3 가 낮지 않다 — 「간격」과 「C3」가 두 질환을 가르는 두 축이다 [[harrison-21: 314장 p.2339]].",
+   "치료는 지지요법(혈압·부종 조절, 필요 시 투석)과 활동성 감염의 항생제이며, 반월체가 있어도 면역억제제의 자리는 없다. 소아는 대부분 3~6주에 회복한다 [[harrison-21: 314장 p.2337]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>연쇄구균감염후사구체신염(PSGN)</strong> 은 신염원성 A군 연쇄구균의 인두·피부 감염 뒤 면역복합체 매개로 생기는 급성 내모세혈관 증식성 사구체신염으로, 급성 신염증후군의 원형이다 <sup>[1 314장 p.2337]</sup>. 개발도상국에서는 2~14세 소아에서 유행성으로, 선진국에서는 산발적으로 노인·쇠약 환자에게 더 많다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 사구체 모세혈관벽(내피 · 기저막 · 족세포)은 적혈구와 알부민을 혈관 안에 붙잡아 둔다. PSGN 에서는 연쇄구균 항원(SPEB·NAPlr 이 후보)과 항체가 만든 면역복합체가 내피하·상피하(「혹, hump」)에 쌓이고, 보체가 활성화되며 호중구가 모인다 <sup>[1 314장 p.2337]</sup>. 항원에 대한 항체가 만들어질 시간이 필요하므로 감염과 신염 사이에 <strong>잠복기</strong>가 생긴다 — 인두염 1~3주, 농가진 2~6주.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>모세혈관벽 손상 → 적혈구가 사구체로 빠져나가 세뇨관에서 원주가 되어 <strong>적혈구원주·콜라색 소변</strong>.</li>\n<li>사구체 염증·증식으로 여과 면적이 줄면 나트륨·수분이 저류 → <strong>부종(눈 주위)·고혈압·핍뇨</strong>. 신피막이 부어 옆구리 통증이 올 수 있다.</li>\n<li>면역복합체가 보체를 소모 → 첫 주 약 90% 에서 <strong>CH50·C3 감소, C4 정상</strong>(대체 경로 중심) <sup>[1 314장 p.2337]</sup>.</li>\n<li>단백뇨는 대개 신증후군 범위 아래지만 소아 5%·성인 20% 는 신증후군 범위다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>상기도감염과 혈뇨가 이어지는 대표 감별은 IgA신병증이다(감별 표). IgA신병증은 감염 <strong>도중·직후</strong> 육안적 혈뇨가 반복되고 보체가 정상이다 <sup>[1 314장 p.2339]</sup>. 보체 저하가 있으면 저보체 사구체신염(PSGN · 루푸스신염 · 막증식사구체신염 · 감염내막염 관련 사구체신염)으로 범위가 좁혀지고, 그중 선행 감염·잠복기·연쇄구균 항체가 PSGN 을 고른다. 미세변화신증후군은 적혈구원주·고혈압 없는 대량 단백뇨, 알포트증후군은 가족력·감각신경성 난청, 용혈요독증후군은 혈성 설사 뒤 용혈·혈소판감소·급성신손상이 단서다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>소변검사</strong>: 혈뇨·적혈구원주·농뇨·단백뇨.</li>\n<li><strong>보체</strong>: C3·CH50 감소, C4 정상. 정상 C3 는 PSGN 을 멀어지게 한다.</li>\n<li><strong>연쇄구균 항체</strong>: 배양 양성은 10~70% 로 일정치 않고, ASO(30%)·anti-DNase(70%)·antihyaluronidase(40%) 역가 상승이 선행 감염을 확인한다 — ASO 음성만으로 배제하지 않는다 <sup>[1 314장 p.2337]</sup>.</li>\n<li><strong>신생검</strong>: 전형적이면 거의 필요 없다. 경과가 비전형적(급속 진행, 보체 저하 지속)이면 다른 진단을 위해 고려한다.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>지지요법 — 혈압·부종 조절(염분·수분 제한, 이뇨제), 필요하면 투석. 활동성 연쇄구균 감염이 있으면 환자와 동거인에게 항생제를 준다. 반월체가 있어도 면역억제제의 역할은 없다 <sup>[1 314장 p.2337]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<p>소아는 대부분 3~6주 안에 질소혈증·혈뇨·단백뇨가 완전히 회복하지만 3~10% 는 현미경적 혈뇨·단백뇨·고혈압이 남는다. 노인은 예후가 나빠 질소혈증(최대 60%)·신증후군·말기신부전이 더 많다 <sup>[1 314장 p.2337]</sup>. 재발은 드물다.</p>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 314장 p.2337·2339)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "상기도감염 뒤 혈뇨 — PSGN 과 IgA신병증",
+    "columns": [
+     "항목",
+     "PSGN",
+     "IgA신병증"
+    ],
+    "rows": [
+     [
+      "감염과의 간격",
+      "인두염 1~3주 · 농가진 2~6주 뒤",
+      "감염 도중 또는 직후"
+     ],
+     [
+      "혈청 C3",
+      "첫 주 약 90% 감소(C4 정상)",
+      "정상"
+     ],
+     [
+      "경과",
+      "대개 한 번, 재발 드묾",
+      "육안적 혈뇨가 반복"
+     ],
+     [
+      "확진",
+      "임상+보체+연쇄구균 항체 — 생검 드묾",
+      "신생검(메산지움 IgA 침착)"
+     ]
+    ],
+    "note": "harrison-21: 314장 p.2337·2339"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "상기도감염 뒤 혈뇨 = IgA신병증?",
+    "point": "두 질환 모두 상기도감염과 혈뇨가 이어진다. 가르는 것은 간격과 보체다 — PSGN 은 1~3주 잠복 뒤 신염증후군과 C3 저하, IgA신병증은 감염 도중·직후 육안적 혈뇨가 반복되며 C3 는 정상이다. 저보체 자체가 IgA신병증을 거스르는 소견이다.",
+    "exception": "잠복기가 애매하면 C3 추적이 도움이 된다 — PSGN 의 저보체는 회복과 함께 정상화되고, 지속되면 C3 사구체병증·막증식사구체신염 등 다른 저보체 사구체신염을 찾는다(정상화 시점은 해리슨 본문에 수치 없음).",
+    "cites": "<sup>[1 314장 p.2337·2339]</sup>"
+   },
+   {
+    "contrast": "신염증후군 vs 신증후군",
+    "point": "미세변화신증후군은 사구체 족세포 이상으로 대량 단백뇨·저알부민혈증·부종이 오지만 적혈구원주·고혈압·보체 저하가 없다. 적혈구원주는 사구체 기원의 출혈을 뜻해 신염 쪽으로 기운다.",
+    "exception": "PSGN 에서도 소아 5%·성인 20%는 신증후군 범위 단백뇨를 보인다 <sup>[1 314장 p.2337]</sup>.",
+    "cites": "<sup>[1 314장 p.2337]</sup>"
+   },
+   {
+    "contrast": "항생제를 쓰면 신염을 막는다?",
+    "point": "항생제는 신염 발생을 줄이지 못한다. 활동성 감염이 있으면 환자와 동거인에게 균 제거 목적으로 준다.",
+    "exception": "",
+    "cites": "<sup>[1 314장 p.2337]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 314: Glomerular Diseases",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 314장 p.2331–2349",
+    "checked": "본문 대조(드라이브 문서) — p.2337 PSGN: 인두염 1~3주·농가진 2~6주 잠복, 항생제가 신염 발생을 줄이지 못함, 신염증후군 양상, 첫 주 90% CH50·C3 감소·C4 정상, ASO 30%·anti-DNase 70%, 생검 드묾, 지지요법·면역억제 역할 없음, 소아 3~6주 회복. p.2339 IgA신병증: 상기도감염 도중·직후 육안적 혈뇨 반복",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "인두염 2주 뒤 콜라색 소변·고혈압·적혈구원주가 생긴 소아에서 진단을 가장 강하게 지지하는 혈액 소견 한 쌍은?",
+    "a": "C3(CH50) 감소와 C4 정상, 그리고 ASO·anti-DNase 역가 상승."
+   },
+   {
+    "q": "PSGN 에 반월체가 보이면 면역억제제를 쓰는가?",
+    "a": "쓰지 않는다. 지지요법(혈압·부종 조절, 필요 시 투석)이 치료다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.neph.poststreptococcal-gn.latency-complement-diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 잠복기 없음·C3 정상",
+    "stem": "17세 남자가 목이 아프고 열이 난 지 이틀째에 콜라색 소변이 나와 왔다. 1년 전 감기에 걸렸을 때도 같은 일이 있었고 며칠 뒤 저절로 맑아졌다. 혈압 124/78 mmHg, 부종은 없다. 소변검사에서 변형 적혈구와 단백뇨 1+가 있고, 혈청 크레아티닌 0.9 mg/dL, C3·C4 는 정상이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "IgA신병증",
+     "감염후사구체신염",
+     "미세변화신증후군",
+     "알포트증후군",
+     "용혈요독증후군"
+    ],
+    "answer": 1,
+    "explanation": "상기도감염 도중(이틀째)에 육안적 혈뇨가 나타나고 같은 일이 반복되며 C3 가 정상이면 IgA신병증이다 [[harrison-21: 314장 p.2339]]. 감염후사구체신염은 면역 반응이 만들어질 1~3주 잠복기가 필요하고 첫 주에 C3 가 떨어진다 [[harrison-21: 314장 p.2337]]. 미세변화는 신증후군, 알포트는 가족력·난청, 용혈요독증후군은 용혈·혈소판감소가 단서다.",
+    "of": "kmle-2026-0073",
+    "changed": "혈뇨가 인두염 2주 뒤가 아니라 인두염 이틀째에 시작하고, 전에도 감기 때마다 같은 일이 있었으며 C3 가 정상 → 잠복기 없는 반복 육안적 혈뇨·정상 보체이므로 답이 감염후사구체신염에서 IgA신병증으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.neph.poststreptococcal-gn.latency-complement-diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 아침 얼굴 부종으로 온 여아",
+    "stem": "10세 여아가 사흘 전부터 아침에 눈꺼풀이 붓고 소변량이 줄어 어머니와 함께 왔다. 혈압은 138/92 mmHg 이다. 소변은 짙은 갈색이며 적혈구원주와 단백뇨 2+가 보인다. 혈청 C3 는 낮고 C4 는 정상, 항스트렙토리신O(ASO) 역가는 높다. 보호자에 따르면 약 2주 전 열과 인후통으로 며칠 앓았다고 한다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "미세변화신증후군",
+     "IgA신병증",
+     "감염후사구체신염",
+     "루푸스신염",
+     "알포트증후군"
+    ],
+    "answer": 3,
+    "explanation": "제시 순서와 환자는 달라도 결정 단서 — 인두염 약 2주 뒤의 신염증후군(갈색뇨·적혈구원주·고혈압·부종), C3 감소·C4 정상, ASO 상승 — 는 같으므로 감염후사구체신염이다 [[harrison-21: 314장 p.2337]]. IgA신병증은 감염 직후 혈뇨·정상 C3, 루푸스신염은 C3·C4 가 함께 낮고 전신 증상이 있다, 미세변화는 적혈구원주·고혈압이 없는 신증후군이다.",
+    "of": "kmle-2026-0073",
+    "changed": "나이·성별(10세 여아)·내원 경위(학교 검진 뒤 부모가 부종 발견)·제시 순서를 바꾸고, 인두염 뒤 약 2주 잠복·신염증후군·C3 감소·ASO 상승은 그대로 → 답은 여전히 감염후사구체신염",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0073"
+  ],
+  "hasErrors": false
+ },
+ "cn.neph.siadh.chronic-mild-fluid-restriction": {
+  "id": "cn.neph.siadh.chronic-mild-fluid-restriction",
+  "title": "SIADH 저나트륨혈증 — 자유수 배설이 막힌 기전에서 첫 치료 선택까지",
+  "objective": "AVP(ADH)의 정상 물 조절로 SIADH 에서 정상용적 저삼투 저나트륨혈증과 농축뇨가 생기는 이유를 설명하고, 증상의 중증도와 경과(급성·만성)에 따라 수분제한·고장성식염수·바프탄을 고르며 ADH 작용을 더하는 치료(데스모프레신)·등장성 수액을 피하는 이유를 판단한다",
+  "objectiveKind": "치료",
+  "condition": "SIADH(부적절 항이뇨 증후군)",
+  "topic": "Nephrology",
+  "seeAlso": [
+   "Endocrinology",
+   "Oncology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "a1b26d0296b22f89",
+  "summary": [
+   "정상에서는 혈장 삼투질농도가 약 285 mOsm/kg 아래로 내려가면 AVP 가 억제되어 콩팥이 묽은 소변으로 자유수를 버린다 [[harrison-21: 53장 p.339]]. SIADH 는 낮은 삼투질농도에서도 AVP(또는 V2 수용체 작용)가 지속돼 자유수를 버리지 못하는 상태다.",
+   "그래서 소견은 저삼투 저나트륨혈증 + 부적절하게 진한 소변(요삼투 >100) + 요나트륨 상승 + 부종·탈수 없음이며, 갑상선저하·부신기능저하·이뇨제를 먼저 걸러야 진단된다 [[harrison-21: 53장 p.342–343]]. 소세포폐암은 악성 종양 관련 SIADH 의 75% 를 차지한다.",
+   "치료의 급한 정도는 증상이 정한다. 경련·혼수 같은 중증 증상의 급성 저나트륨혈증은 3% 고장성식염수로 4~6 mM 만 빨리 올리고, 증상이 가볍거나 만성이면 수분제한이 기둥이다 [[harrison-21: 53장 p.345]].",
+   "만성 저나트륨혈증은 24시간에 8~10 mM·48시간에 18 mM 을 넘겨 교정하면 삼투성 탈수초 증후군(ODS)이 온다 — 어느 치료든 나트륨을 자주 다시 잰다 [[harrison-21: 53장 p.344–345]].",
+   "데스모프레신은 ADH 작용을 더해 SIADH 를 악화시킨다. SIADH 치료에서 데스모프레신이 등장하는 자리는 과교정을 되돌리거나 막을 때뿐이다 [[harrison-21: 53장 p.346]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>SIADH(부적절 항이뇨 증후군, Harrison 의 SIAD)</strong> 는 혈장 삼투질농도가 낮은데도 AVP 분비(또는 V2 수용체 작용)가 억제되지 않아 자유수 배설이 막히고, 그 결과 정상용적 저삼투 저나트륨혈증이 생긴 상태다. 정상용적 저나트륨혈증의 가장 흔한 원인이다 <sup>[1 53장 p.342]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 AVP 는 혈장 삼투질농도 약 285 mOsm/kg 부터 분비되어 삼투질농도에 비례해 늘고, 집합관 주세포의 V2 수용체 → cAMP → 아쿠아포린-2 삽입으로 물을 재흡수한다 <sup>[1 53장 p.339]</sup>. 삼투질농도가 이 역치 아래로 떨어지면 AVP 가 꺼져 묽은 소변으로 과잉의 물을 버린다. SIADH 에서는 AVP 분비가 제멋대로이거나, 낮은 삼투질농도에서 억제되지 않거나, 역치가 낮게 재설정되거나, V2 수용체 기능획득으로 AVP 없이도 작용한다 <sup>[1 53장 p.342]</sup>. 여기에 갈증 역치도 낮아져 물을 계속 마시므로 저나트륨혈증이 만들어진다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>물은 재흡수되지만 「AVP escape」로 원위부 수송이 제한돼 부종이 생길 만큼은 늘지 않는다 — 임상적으로 정상용적(엄밀히는 약간 용적 과다) <sup>[1 53장 p.343]</sup>.</li>\n<li>용적이 약간 늘어 근위세뇨관 재흡수가 줄므로 <strong>요나트륨 상승(&gt;20~30)</strong>, <strong>혈청 요산 저하(&lt;4 mg/dL)</strong>.</li>\n<li>혈장이 묽은데 소변은 진하다(요삼투 &gt;100, 흔히 혈장보다 높다) — 「부적절」의 뜻.</li>\n<li>증상은 뇌세포 부종에서 온다: 두통·오심·구토 → 경련·의식저하·뇌탈출. 48시간 넘은 만성은 뇌세포가 삼투질을 내보내 적응하므로 증상이 가볍다 <sup>[1 53장 p.345]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>진단은 제외 진단이다. 정상용적 저나트륨혈증의 다른 원인 — 갑상선기능저하, 2차(뇌하수체성) 부신부전(당질코르티코이드 결핍이 AVP 를 풀어놓는다) — 을 먼저 거른다 <sup>[1 53장 p.342]</sup>. 저혈량성(요나트륨 &lt;20, 요산 상승), 과혈량성(심부전·간경변·신증후군, 부종), 저용질 섭취(맥주 포토마니아)와도 가른다. 원인: 폐질환(폐렴·결핵), 중추신경 질환(종양·지주막하출혈·수막염), 악성 종양(소세포폐암이 75%), 약물(SSRI 가 가장 흔함) <sup>[1 53장 p.343]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈장 삼투질농도(저삼투 확인 — 고혈당·가성저나트륨혈증 배제), 요삼투, 요나트륨·요칼륨, 용적 평가, TSH·오전 코르티솔, 요산. 요/혈장 전해질비((요Na+요K)/혈장Na)는 자유수 배설 능력의 빠른 지표로 수분제한 강도를 정한다 <sup>[1 53장 p.345]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>세 가지가 치료를 정한다 — 증상의 유무·중증도, 만성일 때 ODS 위험, 개입에 대한 반응의 예측 불가능성(자주 재측정) <sup>[1 53장 p.345]</sup>.</p>\n<ol>\n<li><strong>원인 교정</strong>: 약물 중단, 폐렴·종양 치료.</li>\n<li><strong>수분제한</strong> — 만성 저나트륨혈증 치료의 초석. 요/혈장 전해질비로 제한량을 정한다(혼동 항목).</li>\n<li><strong>수분제한이 듣지 않으면</strong>: 경구 요소, 푸로세마이드+염분 정제, 톨밥탄(V2 길항 — 입원해서 시작, 수분제한을 풀고, 간독성 때문에 1~2개월 이내). 톨밥탄은 소세포폐암처럼 지속되는 SIADH 에 가장 알맞다 <sup>[1 53장 p.345]</sup>.</li>\n<li><strong>급성 중증 증상</strong>: 3% 고장성식염수 4~6 mM(기준 비교표).</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<p>과교정(24시간 8~10 mM 초과)이 생기면 포도당수와 데스모프레신으로 되돌려 ODS 를 막는다. 중증 저나트륨혈증은 처음부터 데스모프레신을 고정 투여하고 고장성식염수로 천천히 올리는 전략도 있다 <sup>[1 53장 p.346]</sup>. 이 두 경우를 빼면 데스모프레신은 SIADH 를 악화시키는 약이다.</p>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 「중등도 증상」에 고장성식염수를 쓰는가</strong> — 시험 기준: 해리슨은 급성·중증 증상(경련·의식저하)에 고장성식염수를, 증상이 가벼운 만성에 수분제한을 둔다 <sup>[1 53장 p.345]</sup> / 다른 기준: 유럽 지침은 증상을 중등도(오심·혼돈·두통)와 중증(구토·경련·혼수)으로 나눠 중등도에도 고장성식염수 일회 주입을 권한다고 알려져 있으나 원문을 대조하지 못했다 <sup>[2†]</sup> / 왜 다른가: 증상 분류와 「급성·만성」 구분의 무게가 다르다 / 시험에서는: KMLE · USMLE 모두 가벼운 증상의 만성 SIADH 는 수분제한, 경련·혼수는 고장성식염수로 답한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "SIADH — 상황별 치료",
+    "columns": [
+     "상황",
+     "치료",
+     "주의"
+    ],
+    "rows": [
+     [
+      "경증·만성, 증상 가볍다",
+      "수분제한(원인 교정과 함께)",
+      "요/혈장 전해질비로 제한량 결정"
+     ],
+     [
+      "중증 증상(경련·혼수), 급성",
+      "3% 고장성식염수 4~6 mM",
+      "그 뒤 만성 교정 한계"
+     ],
+     [
+      "수분제한에 반응 없음",
+      "경구 요소·푸로세마이드+염분, 톨밥탄",
+      "톨밥탄은 입원 시작, 1~2개월 이내"
+     ],
+     [
+      "과교정",
+      "포도당수·데스모프레신",
+      "ODS 예방 목적"
+     ]
+    ],
+    "note": "harrison-21: 53장 p.345–346"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「ADH·소변 농축 문제 = 데스모프레신」",
+    "point": "데스모프레신은 V2 작용제로, ADH 가 부족해 묽은 소변이 나오는 중추성 요붕증의 치료다. SIADH 는 이미 ADH 작용이 과잉이라 데스모프레신을 주면 자유수 저류가 늘어 저나트륨혈증이 악화된다. 필요한 것은 반대 방향 — 물 섭취를 줄이거나(수분제한) V2 를 막는 것(바프탄)이다.",
+    "exception": "과교정이 일어났거나 우려될 때는 데스모프레신과 포도당수로 교정 속도를 되돌리거나, 처음부터 데스모프레신을 고정 투여하며 고장성식염수로 천천히 올리는 전략이 있다 <sup>[1 53장 p.346]</sup>.",
+    "cites": "<sup>[1 53장 p.346]</sup>"
+   },
+   {
+    "contrast": "저나트륨혈증 = 생리식염수",
+    "point": "등장성 식염수는 AVP 가 억제되는 저혈량성 저나트륨혈증에 듣는다. SIADH 에서는 요삼투가 수액의 삼투질농도보다 높으면 나트륨은 소변으로 나가고 물은 남아 나트륨이 더 떨어질 수 있다.",
+    "exception": "",
+    "cites": "<sup>[1 53장 p.345]</sup>"
+   },
+   {
+    "contrast": "수분제한의 강도",
+    "point": "소변으로 자유수를 거의 못 버리는 환자일수록 강하게 제한해야 한다. 요/혈장 전해질비((요Na+요K)/혈장Na) &gt;1 이면 500 mL/일 미만, 약 1 이면 500~700 mL/일, &lt;1 이면 1 L/일 미만 <sup>[1 53장 p.345]</sup>. 갈증도 부적절하게 자극돼 있어 지키기 어렵다.",
+    "exception": "",
+    "cites": "<sup>[1 53장 p.345]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "hypoNa-correction-limit",
+    "name": "만성 저나트륨혈증 교정 한계(Harrison)",
+    "kind": "치료 기준",
+    "population": "48시간 넘게 지속된(또는 기간 불명) 저나트륨혈증",
+    "statement": "24시간에 8~10 mM, 48시간에 18 mM 을 넘겨 올리지 않는다 — 넘으면 ODS 위험",
+    "exceptions": "맥주 포토마니아·저칼륨혈증·알코올·영양실조는 ODS 고위험이라 더 조심한다",
+    "source": "harrison-21",
+    "locator": "53장 p.344–345",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hypoNa-acute-severe",
+    "name": "급성 중증 증상(Harrison)",
+    "kind": "치료 기준",
+    "population": "경련·의식저하 등 중증 증상의 급성 저나트륨혈증",
+    "statement": "3% 고장성식염수(513 mM)로 1~2 mM/h, 총 4~6 mM 을 올린다. 100 mL 일시 주입이 지속 주입보다 효과적",
+    "exceptions": "증상이 가라앉으면 만성 교정 한계를 따른다",
+    "source": "harrison-21",
+    "locator": "53장 p.345",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 53: Fluid and Electrolyte Disturbances",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 53장 p.338–355",
+    "checked": "본문 대조(드라이브 문서) — p.339 AVP 삼투 역치 약 285 mOsm/kg·V2 작용; p.342–343 SIAD 가 정상용적 저나트륨혈증의 가장 흔한 원인, 갑상선저하·2차 부신부전 감별, 소세포폐암 75%, 요산 저하; p.344–345 ODS 교정 한계(8–10 mM/24h·18 mM/48h), 수분제한과 요/혈장 전해질비별 제한량, 3% 식염수 4–6 mM, 톨밥탄 적응·기간; p.346 과교정 시 DDAVP·포도당수",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "spasovski-2014",
+    "org": "European Society of Endocrinology / ESICM / ERA-EDTA",
+    "title": "Clinical practice guideline on diagnosis and treatment of hyponatraemia",
+    "kind": "guideline",
+    "citation": "Spasovski G, Vanholder R, Allolio B, et al. Eur J Endocrinol 2014;170(3):G1–G47",
+    "checked": "서지만 — 루틴 컨테이너에서 doi·PubMed 접근이 막혀 본문을 대조하지 못했다. 시험 쟁점 절의 증상 분류 서술은 사람 대조가 필요하다",
+    "doi": "10.1530/EJE-13-1020",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2014",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1530/EJE-13-1020"
+   }
+  ],
+  "checks": [
+   {
+    "q": "SIADH 에서 생리식염수가 오히려 나트륨을 낮출 수 있는 이유는?",
+    "a": "요삼투가 수액(약 300 mOsm/kg)보다 높으면 투여한 나트륨은 소변으로 나가고 그 물의 일부는 남기 때문이다."
+   },
+   {
+    "q": "만성 저나트륨혈증의 24시간·48시간 교정 상한은?",
+    "a": "24시간 8~10 mM, 48시간 18 mM."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.neph.siadh.chronic-mild-fluid-restriction#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 경련을 동반한 급성 저나트륨혈증",
+    "stem": "66세 남성이 소세포폐암으로 항암치료를 받던 중 이틀 전부터 두통과 구토가 심해지다가 오늘 전신 강직간대 경련을 한 뒤 불러도 눈을 겨우 뜬다. 사흘 전 외래 혈청 나트륨은 134 mmol/L 였다. 부종이나 탈수 소견은 없다. 혈청 나트륨 116 mmol/L, 혈청 삼투질농도 242 mOsm/kg, 소변 삼투질농도 510 mOsm/kg, 소변 나트륨 55 mmol/L 이며 갑상선·부신 기능은 정상이다. 가장 먼저 할 치료는?",
+    "options": [
+     "3% 고장성식염수 투여",
+     "수분제한",
+     "데스모프레신 투여",
+     "0.45% 식염수 투여",
+     "경구 톨밥탄 투여"
+    ],
+    "answer": 1,
+    "explanation": "SIADH 라는 진단은 같지만, 이틀 사이 생긴(급성) 저나트륨혈증이 경련·의식저하를 일으켰으므로 뇌부종을 줄이기 위해 3% 고장성식염수로 4~6 mM 을 빨리 올린다 [[harrison-21: 53장 p.345]]. 수분제한은 며칠에 걸쳐 작용해 중증 증상에는 늦고, 톨밥탄은 반응이 예측하기 어려워 응급 치료가 아니다. 데스모프레신과 저장성 수액은 나트륨을 더 낮춘다. 원래 문항은 증상이 가벼워 수분제한이 먼저였다.",
+    "of": "kmle-2026-0072",
+    "changed": "증상을 가벼운 오심·집중력저하에서 전신 강직간대 경련·의식저하로, 경과를 이틀 사이 급격한 발생으로 바꿈 → 중증 증상 급성 저나트륨혈증이므로 답이 수분제한에서 3% 고장성식염수로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.neph.siadh.chronic-mild-fluid-restriction#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 정기 채혈에서 발견된 저나트륨혈증",
+    "stem": "72세 여성이 소세포폐암 2차 항암치료 전 정기 채혈에서 혈청 나트륨 121 mmol/L 로 확인되었다. 최근 한두 주 동안 입맛이 떨어지고 약간 멍한 느낌이 있었다고 한다. 혈압 128/76 mmHg, 누운 자세와 선 자세 혈압 차이가 없고 피부 긴장도와 하지 부종은 정상이다. 이뇨제는 복용하지 않는다. 혈청 삼투질농도 252 mOsm/kg, 소변 삼투질농도 450 mOsm/kg, 소변 나트륨 48 mmol/L, TSH 와 오전 코르티솔은 정상이다. 가장 적절한 초기 치료는?",
+    "options": [
+     "데스모프레신 투여",
+     "생리식염수 정주",
+     "3% 고장성식염수 투여",
+     "수분제한",
+     "5% 포도당수 정주"
+    ],
+    "answer": 4,
+    "explanation": "환자와 발견 경위는 달라도 결정 단서 — 정상용적, 저삼투 저나트륨혈증에 부적절하게 진한 소변과 요나트륨 상승, 갑상선·부신 정상, 소세포폐암, 가벼운 만성 증상 — 가 같으므로 SIADH 의 1차 치료인 수분제한이다 [[harrison-21: 53장 p.343·345]]. 데스모프레신·포도당수는 자유수를 늘려 악화시키고, 생리식염수는 농축뇨로 나트륨이 빠져 효과가 없거나 악화시킬 수 있으며, 고장성식염수는 중증 증상일 때 쓴다.",
+    "of": "kmle-2026-0072",
+    "changed": "성별·나이(72세 여성)·내원 경위(정기 채혈에서 발견)·제시 순서를 바꾸고, 소세포폐암·정상용적·농축뇨·요나트륨 상승·갑상선/부신 정상·가벼운 증상은 그대로 → 답은 여전히 수분제한",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0072"
+  ],
+  "hasErrors": false
+ },
+ "cn.neuro.guillain-barre.respiratory-monitoring-first": {
+  "id": "cn.neuro.guillain-barre.respiratory-monitoring-first",
+  "title": "길랑-바레 증후군의 첫 처치 — 활력징후가 안정해도 입원해 폐활량을 재는 것이 먼저다(면역치료는 그 안에서)",
+  "objective": "빠르게 오르는 대칭성 이완마비·건반사 소실·연수 증상으로 길랑-바레 증후군을 알아보고, 활력징후가 안정적이어도 가장 먼저 할 일이 감시 병상 입원과 연속 폐활량(FVC)·최대흡기압 측정임을 고르며, 면역치료(IVIG·혈장교환)·신경전도검사·스테로이드·외래 추적이 그 순서에서 어디에 있는지 가른다",
+  "objectiveKind": "다음 처치",
+  "condition": "길랑-바레 증후군(악화기)",
+  "topic": "Neurology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "5af628a646f1c7e2",
+  "summary": [
+   "길랑-바레 증후군 = 감염 1–3주 뒤 말초신경·신경근에 대한 자가면역 공격. 수 시간~수일에 걸쳐 오르는 대칭성 이완마비 + 건반사 소실, 감각 증상은 가볍다.",
+   "악화기의 목숨을 가르는 것은 진단 확정이 아니라 호흡근·연수 마비와 자율신경 불안정이다. 최대 30 % 가 인공호흡을 필요로 한다.",
+   "그래서 첫 처치 = 감시 병상(대개 중환자실) 입원 + 연속 폐활량·최대흡기압·심전도·혈압 감시. 지금 숨이 괜찮다는 것은 몇 시간 뒤를 보장하지 않는다.",
+   "면역치료(IVIG 2 g/kg 5일 또는 혈장교환)는 진단 뒤 가능한 한 빨리 — 하루하루가 중요하다. 감시와 경쟁하는 것이 아니라 감시 안에서 시작한다.",
+   "스테로이드는 길랑-바레에 효과가 없다(만성형 CIDP 와 다른 점). 신경전도·뇌척수액은 첫 주에 정상일 수 있어 결과를 기다리며 감시·치료를 늦추지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>길랑-바레 증후군은 말초신경과 신경근을 공격하는 급성 자가면역 다발신경병이다. 빠르게 진행하는 건반사 소실성 운동마비로, 흔히 다리에서 시작해 오르고(「고무 다리」), 수 시간~수일에 걸쳐 진행하며 손발 저림이 동반된다. 얼굴 양측 마비가 절반에서, 하부 뇌신경 침범으로 분비물 처리·기도 유지 곤란이 흔히 온다 <sup>[1 447장 p.3501]</sup>. 이 정리본의 목표는 진단 자체보다, <strong>진단을 떠올린 순간 무엇을 가장 먼저 해야 하는가</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 말초 운동신경은 수초 덕분에 도약 전도로 빠르게 신호를 보낸다. 선행 감염(캄필로박터 제주니 20–30 %, CMV·EBV 등 헤르페스바이러스 비슷한 비율 <sup>[1 447장 p.3501]</sup>)이 신경 성분과 닮은 항원에 대한 면역 반응을 일으키면, 수초 또는 축삭 막이 공격받아 전도가 막힌다. 신경근·근위부 신경이 먼저 다쳐 뇌척수액 단백이 오르지만 염증 세포는 늘지 않는다(단백–세포 해리) <sup>[1 447장 p.3503]</sup>. 심한 경우 축삭 변성이 오고 회복이 훨씬 늦다.</p>\n<p>호흡은 횡격막(목 신경근 C3–5)과 늑간근, 기도 보호는 하부 뇌신경이 맡는다. 마비가 이 높이까지 오르면 <strong>폐활량이 떨어지는 속도</strong>가 곧 생명의 문제다. 자율신경 섬유도 같이 다쳐 혈압이 크게 오르내리고 부정맥이 생긴다 <sup>[1 447장 p.3501]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>상행성 대칭 약화·건반사 소실</strong>: 긴 신경부터·근위 신경근에서 전도 차단 → 반사는 첫 며칠 안에 약해지거나 사라진다 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>감각은 가볍다</strong>: 저림은 흔하지만 객관적 감각 소실은 적다.</li>\n<li><strong>얼굴·연수 약화</strong>: 삼킴 곤란, 목소리 변화, 분비물 처리 곤란 — 기도 위험의 신호. 초기엔 뇌간 허혈로 오인되기도 한다 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>통증</strong>: 목·어깨·등 통증이 초기 절반에서 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>발열 없음</strong>: 시작 때 발열·전신 증상이 있으면 진단을 의심한다 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>정상 활력징후의 한계</strong>: 호흡근은 여력이 크다가 한꺼번에 무너진다. 산소포화도는 환기 실패의 늦은 지표이므로, 폐활량·흡기압을 직접 재야 한다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>척수 질환(횡단척수염·압박)</strong>: 감각 수준·방광 기능 이상 — 뚜렷하면 척수 영상 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>뇌간 허혈</strong>: 연수 약화로 시작할 때 혼동 <sup>[1 447장 p.3501]</sup>.</li>\n<li><strong>CIDP</strong>: 8주 넘게 진행하거나 재발 — 스테로이드에 반응한다 <sup>[1 447장 p.3506]</sup>.</li>\n<li><strong>소아마비·급성 이완성 척수염·라임·CMV 다발신경근염</strong>: 뇌척수액 세포 증가가 가른다 <sup>[1 447장 p.3504]</sup>.</li>\n<li><strong>중증근무력증·보툴리눔 중독</strong>: 반사 보존·동공(보툴리눔), 피로성 약화 — 이 정리본의 주제는 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>호흡 측정(가장 먼저·반복)</strong>: 폐활량(FVC), 최대흡기압(NIF). 한 번 값보다 추세가 중요하다.</li>\n<li><strong>뇌척수액</strong>: 단백 1–10 g/L(100–1000 mg/dL), 세포 증가 없음. 48시간 이내엔 정상일 수 있고 첫 주 끝에 대개 오른다. 세포 10–100/µL 는 가끔 있지만 계속 많으면 다른 진단 <sup>[1 447장 p.3503]</sup>.</li>\n<li><strong>신경전도검사</strong>: 초기엔 미미할 수 있다. 강하게 의심되면 특징 소견을 기다리지 않고 치료한다 <sup>[1 447장 p.3504]</sup>.</li>\n<li><strong>HIV 검사</strong>: 위험 인자나 뇌척수액 세포 증가가 있으면 <sup>[1 447장 p.3504]</sup>.</li>\n<li><strong>음성 결과의 해석</strong>: 첫날 정상 뇌척수액·정상 신경전도는 길랑-바레를 배제하지 못한다.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 감시.</strong> 악화기에는 대부분 중환자 병상에서 폐활량, 심장 리듬, 혈압, 영양, 심부정맥혈전 예방, 흉부 물리치료를 챙기고, 삽관 2주 뒤 기관절개를 고려한다 <sup>[1 447장 p.3504]</sup>. 폐활량 &lt; 20 mL/kg 이나 빠른 하강, 흡기압 약화는 선택적 삽관을 고려할 신호다 <sup>[2†]</sup>.</p>\n<p><strong>2. 면역치료.</strong> 진단 뒤 가능한 한 빨리 — 하루하루가 중요하다. IVIG(2 g/kg 을 5일에 나눠) 또는 혈장교환(40–50 mL/kg 씩 7–10일에 4–5회)은 효과가 같고 병용은 더 낫지 않다. 인공호흡 필요를 거의 절반(27 → 14 %)으로 줄이고 1년 완전 회복을 55 → 68 % 로 늘린다 <sup>[1 447장 p.3504]</sup>. 첫 운동 증상 뒤 약 2주가 지나 정체기에 이르렀으면 대개 적응이 없다 <sup>[1 447장 p.3504]</sup>.</p>\n<p><strong>3. 스테로이드 없음.</strong> 길랑-바레에는 효과가 없다 <sup>[1 447장 p.3506]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 호전은 첫 주 끝 무렵에 오거나 몇 주 늦을 수 있고, 한 치료에 뚜렷한 호전이 없다고 다른 치료로 바꾸는 근거는 없다 <sup>[1 447장 p.3504]</sup>. 약 85 % 가 몇 달~1년 안에 기능을 회복하고, 최적 환경의 사망률은 5 % 미만이며 사망은 주로 폐 합병증 때문이다 <sup>[1 447장 p.3504]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>활력징후가 안정적이어도 악화 중인 길랑-바레는 감시 병상에 입원한다.</li>\n<li>면역치료와 감시는 경쟁 관계가 아니다 — 감시를 갖춘 뒤(같은 시간대에) 가능한 한 빨리 시작한다.</li>\n<li>확진 검사를 기다리며 감시·치료를 늦추지 않는다.</li>\n<li>정체기에 이른 아주 가벼운 환자는 면역치료 없이 볼 수 있다 <sup>[1 447장 p.3504]</sup>.</li>\n<li>삽관 역치 「20/30/40」은 해리슨 밖의 출처로, 원문 미대조다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 「감시 먼저」와 「치료는 하루라도 빨리」</strong> — 시험 기준: 응급실 첫 대면에서 「가장 먼저」를 물으면 입원·연속 폐활량 감시다(문항 해설) / 다른 기준: 해리슨은 진단 뒤 가능한 한 빨리 면역치료를 시작하라고(하루하루가 중요하다) 적고, 악화기엔 중환자 감시를 따로 적어 둘 사이에 순서를 두지 않는다 <sup>[1 447장 p.3504]</sup> / 왜 다른가: 시험은 한 가지 「첫 행동」을 고르게 하려고 순서를 묻지만 실제로는 같은 시간대에 함께 한다 / 시험에서는: USMLE·KMLE 모두 보기에 「호흡 평가 없이」 같은 순서 단서가 있으면 감시를 고르고, 이미 감시 중이면 IVIG·혈장교환을 고른다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 산소포화도가 아니라 폐활량인가",
+    "deep": true,
+    "html": "<p>호흡근 약화는 먼저 폐활량과 기침력을 깎는다. 환자는 얕고 빠른 호흡으로 분시환기량을 유지하고, 무기폐가 생기기 전까지 산소포화도는 정상에 머문다. 이산화탄소가 오르고 포화도가 떨어질 때는 이미 여력이 바닥난 뒤다. 그래서 길랑-바레 감시는 「지금의 가스교환」이 아니라 「남은 여력의 추세」를 재는 폐활량·흡기압으로 한다. 해리슨이 악화기 감시 항목의 첫머리에 폐활량을 두는 것도 같은 이유로 읽을 수 있다 <sup>[1 447장 p.3504]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "길랑-바레 의심 환자의 첫 몇 시간 — 무엇을 먼저, 무엇을 함께",
+    "columns": [
+     "순서",
+     "무엇을",
+     "왜",
+     "근거"
+    ],
+    "rows": [
+     [
+      "1",
+      "감시 병상 입원 + 폐활량·최대흡기압 연속 측정, 심전도·혈압 감시, 연하 평가",
+      "호흡근·연수 마비와 자율신경 불안정이 몇 시간 만에 올 수 있다",
+      "<sup>[1 447장 p.3501]</sup> <sup>[1 447장 p.3504]</sup>"
+     ],
+     [
+      "1과 함께",
+      "IVIG 또는 혈장교환을 가능한 한 빨리",
+      "치료가 인공호흡 필요를 거의 절반으로 줄인다",
+      "<sup>[1 447장 p.3504]</sup>"
+     ],
+     [
+      "병행",
+      "뇌척수액·신경전도검사 — 흉내 질환 배제",
+      "첫 주에는 정상일 수 있다 — 결과를 기다리며 치료를 늦추지 않는다",
+      "<sup>[1 447장 p.3504]</sup>"
+     ],
+     [
+      "추세 악화 시",
+      "선택적 삽관",
+      "응급 삽관보다 안전하다",
+      "<sup>[2†]</sup>"
+     ]
+    ],
+    "note": "「무엇이 먼저인가」 문항에서 감시가 앞서는 이유는 면역치료가 덜 중요해서가 아니라, 면역치료의 효과가 며칠~몇 주 뒤에 나타나는 동안 환자를 지켜 주는 것이 감시이기 때문이다."
+   },
+   {
+    "title": "첫 처치로 틀린 선택들 — 이유가 다르다",
+    "columns": [
+     "선택",
+     "왜 첫 처치가 아닌가",
+     "언제 맞는가"
+    ],
+    "rows": [
+     [
+      "호흡 평가 없이 IVIG 만",
+      "효과가 나기까지 호흡부전을 막아 주지 못한다",
+      "감시 체계 안에서는 가능한 한 빨리"
+     ],
+     [
+      "스테로이드",
+      "길랑-바레에 효과 없음 <sup>[1 447장 p.3506]</sup>",
+      "CIDP"
+     ],
+     [
+      "신경전도검사 먼저",
+      "초기엔 정상일 수 있고 기다리면 늦는다 <sup>[1 447장 p.3504]</sup>",
+      "진단이 불확실하고 감시가 이미 된 뒤"
+     ],
+     [
+      "외래 추적",
+      "진행 속도를 예측할 수 없다",
+      "정체기에 이른 아주 가벼운 환자 <sup>[1 447장 p.3504]</sup>"
+     ]
+    ],
+    "note": "네 선택 모두 「지금 괜찮다」를 「앞으로도 괜찮다」로 읽는 순서 문제다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "IVIG 즉시(호흡 평가 없이) vs 입원·연속 폐활량 감시 — 「표준 치료니까 바로」",
+    "point": "IVIG 는 길랑-바레의 표준 면역치료이고 가능한 한 빨리 시작한다 <sup>[1 447장 p.3504]</sup>. 그러나 효과는 첫 주 끝 무렵이나 몇 주 뒤에야 나타나므로 <sup>[1 447장 p.3504]</sup> 그 사이 호흡근·연수 마비를 잡아 줄 수 없다. 3일 만에 발에서 손까지 오르고 연하곤란이 있는 환자는 인공호흡 위험 인자(빠른 진행·연수 약화)를 가진다 <sup>[1 447장 p.3501]</sup>. 첫 처치는 감시 병상 입원과 연속 폐활량 측정이고, IVIG 는 그 안에서 시작한다.",
+    "exception": "이미 입원해 폐활량을 재며 안정적으로 감시 중이라면 다음 처치는 IVIG(또는 혈장교환)다.",
+    "cites": ""
+   },
+   {
+    "contrast": "스테로이드 vs 면역글로불린 — 「탈수초 염증이니 스테로이드」",
+    "point": "만성 염증성 탈수초 다발신경병(CIDP)은 스테로이드에 반응하지만 길랑-바레는 반응하지 않는다 <sup>[1 447장 p.3506]</sup>. 급성 탈수초라는 겉모습이 같아도 약이 다르다.",
+    "exception": "8주 넘게 진행하거나 재발하면 CIDP 를 생각한다 — 그때는 스테로이드가 맞다.",
+    "cites": ""
+   },
+   {
+    "contrast": "안정 활력징후 → 외래 vs 입원 — 「지금 숨이 괜찮다」",
+    "point": "정체기는 거의 4주 이내에 오지만 <sup>[1 447장 p.3501]</sup> 그 전까지 진행 속도를 예측할 수 없다. 자율신경 침범은 가벼운 환자에게도 오고 치명적일 수 있다 <sup>[1 447장 p.3501]</sup>.",
+    "exception": "이미 정체기에 이른 아주 가벼운 환자는 면역치료 없이 보존적으로 볼 수 있다 <sup>[1 447장 p.3504]</sup> — 그래도 판단은 진찰·측정 뒤다.",
+    "cites": ""
+   },
+   {
+    "contrast": "신경전도검사·뇌척수액 먼저 vs 감시·치료 먼저 — 「확진 뒤에 치료」",
+    "point": "뇌척수액 단백은 첫 주 끝에야 오르고 48시간 이내엔 정상일 수 있으며 <sup>[1 447장 p.3503]</sup>, 신경전도 소견도 초기엔 미미하다. 강하게 의심되면 특징 소견을 기다리지 않고 치료를 시작한다 <sup>[1 447장 p.3504]</sup>.",
+    "exception": "뇌척수액 세포가 계속 많으면 다른 진단(척수염·HIV·림프종 등)을 찾는다 <sup>[1 447장 p.3503]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "폐활량 20 mL/kg 등 삽관 수치는 해리슨이 제시하지 않으며 원문 미대조 출처의 것이다 <sup>[2†]</sup>.",
+   "빠른 진행·첫 주의 얼굴·연수 약화·입원 때 심한 근력저하는 인공호흡 위험을 높인다 <sup>[1 447장 p.3501]</sup> — 수치가 괜찮아도 이 경우 감시 간격을 좁힌다.",
+   "면역치료는 첫 운동 증상 뒤 약 2주 안에 의미가 있다 <sup>[1 447장 p.3504]</sup>.",
+   "스테로이드는 어느 갈래에도 없다 <sup>[1 447장 p.3506]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "gbs-clinical",
+    "name": "길랑-바레 증후군의 임상 양상(해리슨)",
+    "kind": "정의",
+    "population": "급성 근력저하로 온 환자",
+    "statement": "빠르게 진행하는 건반사 소실성 운동마비. 흔히 다리에서 시작해 오르며 수 시간~수일에 걸쳐 진행하고, 얼굴 양측 마비가 절반, 하부 뇌신경 침범으로 분비물 처리·기도 유지가 어려워질 수 있다. 발열·전신 증상은 시작 때 없고 있으면 진단을 의심한다 [[harrison-21: 447장 p.3501]]",
+    "exceptions": "20–30 % 는 캄필로박터 제주니 감염이 선행하고, 비슷한 비율로 CMV·EBV 등 헤르페스바이러스 감염이 선행한다 [[harrison-21: 447장 p.3501]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "gbs-ventilation-risk",
+    "name": "인공호흡 위험 인자(해리슨)",
+    "kind": "중증도",
+    "population": "길랑-바레 증후군 입원 환자",
+    "statement": "대부분 입원이 필요하고 최대 30 % 가 경과 중 인공호흡을 필요로 한다. 입원 때 심한 근력저하, 빠른 진행 속도, 첫 주의 얼굴·연수 약화가 인공호흡 필요와 연관된다 [[harrison-21: 447장 p.3501]]",
+    "exceptions": "자율신경 침범(혈압 급변·기립저혈압·부정맥)은 근력저하가 가벼운 환자에게도 오고 치명적일 수 있어 따로 감시한다 [[harrison-21: 447장 p.3501]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "gbs-monitoring",
+    "name": "악화기 감시(해리슨)",
+    "kind": "치료 권고",
+    "population": "악화 중인 길랑-바레 증후군",
+    "statement": "악화기에는 대부분 중환자 병상에서 감시하며 폐활량, 심장 리듬, 혈압, 영양, 심부정맥혈전 예방, 기관절개(삽관 2주 뒤 고려), 흉부 물리치료에 주의한다 [[harrison-21: 447장 p.3504]]",
+    "exceptions": "이미 정체기에 이른 아주 가벼운 환자는 IVIG·혈장교환 없이 보존적으로 볼 수 있다 [[harrison-21: 447장 p.3504]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "gbs-intubation-numbers",
+    "name": "삽관을 고려하는 호흡 수치(「20/30/40」)",
+    "kind": "치료 기준",
+    "population": "연속 호흡 측정 중인 길랑-바레",
+    "statement": "폐활량 < 20 mL/kg, 최대흡기압이 −30 cmH2O 보다 약함, 최대호기압 < 40 cmH2O, 또는 빠르게 떨어지는 추세면 선택적 삽관을 고려한다 [[?lawn-2001]]",
+    "exceptions": "해리슨 447장은 폐활량 감시를 적을 뿐 삽관 역치 수치를 제시하지 않는다 — 수치는 원문을 대조하지 못한 출처의 것이다(검토 항목)",
+    "source": "lawn-2001",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "gbs-immunotherapy",
+    "name": "면역치료(해리슨)",
+    "kind": "치료 권고",
+    "population": "길랑-바레 증후군(진행 중이거나 걸을 수 없는 환자)",
+    "statement": "진단 뒤 가능한 한 빨리 시작한다 — 하루하루가 중요하다. IVIG(2 g/kg 을 5일에 나눠) 또는 혈장교환(40–50 mL/kg 씩 7–10일에 4–5회)은 효과가 같고 병용은 더 낫지 않다. 치료는 인공호흡 필요를 거의 절반(27 → 14 %)으로 줄이고 1년 완전 회복을 55 → 68 % 로 늘린다 [[harrison-21: 447장 p.3504]]",
+    "exceptions": "첫 운동 증상 뒤 약 2주가 지나 정체기에 이르렀으면 대개 치료 적응이 없다. 한 치료에 뚜렷한 호전이 없다고 다른 치료로 바꾸는 근거는 없다 [[harrison-21: 447장 p.3504]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 447: Guillain-Barré Syndrome and Other Immune-Mediated Neuropathies",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 447장(Hauser SL, Amato AA), 인쇄쪽 3501–3506",
+    "checked": "드라이브 장 문서로 본문 대조. p.3501 임상 양상(상행성 이완마비, 얼굴 양측 마비 50 %, 연수 약화·기도, 인공호흡 최대 30 %와 위험 인자, 발열 없음, 자율신경 침범, 정체기 4주 이내, 선행 감염 캄필로박터 20–30 %), p.3503 뇌척수액(단백 1–10 g/L·세포 증가 없음, 48시간 이내 정상일 수 있음), p.3504 진단 전 치료 시작·치료(하루하루 중요, 2주·정체기, IVIG 2 g/kg 5일·혈장교환 동등, 병용 이득 없음, 인공호흡 27→14 %, 1년 회복 55→68 %, 무반응 시 교체 근거 없음, 악화기 중환자 감시 항목, 가벼운 정체기 환자 보존 치료), p.3506 스테로이드는 CIDP 에 듣고 GBS 에는 안 듣는다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "lawn-2001",
+    "org": "Archives of Neurology",
+    "title": "Anticipating mechanical ventilation in Guillain-Barré syndrome",
+    "kind": "other",
+    "citation": "Lawn ND, Fletcher DD, Henderson RD, Wolter TD, Wijdicks EF. Arch Neurol 2001;58(6):893-898",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 「20/30/40」 수치를 원문과 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2001",
+    "checkedAt": "2026-09-23",
+    "url": "https://jamanetwork.com/journals/jamaneurology"
+   }
+  ],
+  "checks": [
+   {
+    "q": "선행 설사 2주 뒤 3일간 오르는 대칭성 근력저하·건반사 소실·가벼운 연하곤란, 활력징후 안정. 가장 먼저 할 일은?",
+    "a": "감시 병상 입원과 연속 폐활량·최대흡기압 측정(자율신경 감시 포함). 면역치료는 그 안에서 가능한 한 빨리."
+   },
+   {
+    "q": "길랑-바레에서 인공호흡이 필요해질 위험 인자 셋은?",
+    "a": "입원 때 심한 근력저하, 빠른 진행 속도, 첫 주의 얼굴·연수 약화."
+   },
+   {
+    "q": "IVIG 와 혈장교환 중 무엇이 나은가? 병용은?",
+    "a": "효과가 같다. 병용은 단독보다 유의하게 낫지 않다."
+   },
+   {
+    "q": "길랑-바레에 스테로이드를 쓰지 않는 이유는?",
+    "a": "효과가 없다 — 스테로이드에 반응하는 것은 CIDP 다."
+   },
+   {
+    "q": "증상 첫날 뇌척수액이 정상이면 길랑-바레를 배제하나?",
+    "a": "아니다. 단백은 첫 주 끝에야 오르고 48시간 이내엔 정상일 수 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.neuro.guillain-barre.respiratory-monitoring-first#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 감시가 이미 갖춰진 환자",
+    "stem": "A 41-year-old man was admitted to the intensive care unit 6 hours ago with 4 days of ascending, symmetric weakness that began after an upper respiratory infection. He now cannot walk without assistance. Deep tendon reflexes are absent. Forced vital capacity has been measured every 4 hours and is stable at 38 mL/kg; negative inspiratory force is -48 cm H2O. He handles his secretions without difficulty. Cerebrospinal fluid analysis shows protein 72 mg/dL with 2 cells/µL. Blood pressure and cardiac rhythm have remained stable on telemetry. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Oral prednisone taper",
+     "Intravenous immunoglobulin, 2 g/kg divided over 5 days",
+     "Elective endotracheal intubation now",
+     "Repeat nerve conduction studies in 2 weeks before deciding on therapy",
+     "Discharge with outpatient physical therapy"
+    ],
+    "answer": 2,
+    "explanation": "Monitoring is already in place and respiratory function is safe, so the next step is disease-modifying immunotherapy: IVIG (or plasma exchange, equally effective) should be started as soon as possible in a patient who is still progressing and cannot walk. Glucocorticoids do not help GBS, intubation is not indicated with an FVC of 38 mL/kg and strong NIF, and waiting for repeat studies loses the treatment window. In the original item the patient had just arrived and the order of steps was the question — monitoring first.",
+    "of": "usmle-2026-0041",
+    "changed": "환자를 「응급실 도착 직후」에서 「이미 중환자실에 입원해 연속 폐활량 측정 중이며 수치가 안정적이지만 걸을 수 없음」으로 바꿈 → 감시가 이미 갖춰졌으므로 답이 「입원·폐활량 감시」에서 「IVIG 시작」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.neuro.guillain-barre.respiratory-monitoring-first#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 얼굴 약화가 함께 온 중년 남자",
+    "stem": "A 58-year-old man is brought to the emergency department by his wife because he has had difficulty climbing stairs for 2 days and today cannot button his shirt. He also notices that he cannot whistle and that liquids occasionally come back through his nose. Ten days ago he had a sore throat and cough that resolved. Examination shows bilateral facial weakness, symmetric weakness of all four limbs that is worse in the legs, and absent reflexes. Temperature is 36.9°C, pulse 92/min, respirations 16/min, blood pressure 132/80 mm Hg, and oxygen saturation 98% on room air. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Obtain nerve conduction studies before deciding on admission",
+     "Intravenous methylprednisolone for 5 days",
+     "Admit to a monitored unit for serial forced vital capacity and negative inspiratory force measurements",
+     "Outpatient MRI of the spine and neurology follow-up in 1 week",
+     "Give one dose of intravenous immunoglobulin in the emergency department and discharge home"
+    ],
+    "answer": 3,
+    "explanation": "Rapidly ascending areflexic weakness with bilateral facial and bulbar involvement after an infection is Guillain-Barré syndrome. Rapid progression and early facial/bulbar weakness predict the need for ventilation, so normal oxygen saturation and vital signs do not make him safe; the first step is admission with serial FVC/NIF monitoring, with IVIG or plasma exchange started promptly within that setting. Steroids are ineffective, and nerve studies can be normal early and must not delay monitoring.",
+    "of": "usmle-2026-0041",
+    "changed": "나이·성별(58세 남자), 선행 감염(설사 → 상기도 감염), 첫 증상(발 저림 → 양측 얼굴 약화 동반)을 바꾸고 「빠른 상행 진행 + 건반사 소실 + 연수 침범 + 활력징후 안정 + 응급실 첫 대면」은 그대로 → 답은 여전히 입원·연속 폐활량 감시",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "길랑-바레 의심 — 첫 처치의 순서",
+  "geo": {
+   "title": "길랑-바레 의심 — 첫 처치의 순서",
+   "w": 454,
+   "h": 735.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "수 시간~수일 오르는 대칭성",
+      "이완마비 + 건반사 소실(±",
+      "선행 감염)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "폐활량·최대흡기압, 기침·",
+      "연하, 목 굴곡력, 혈압·",
+      "심전도 변동을 잰다 —",
+      "활력징후만으로 판단하지",
+      "않는다"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "호흡·연수 기능이 위험한가?",
+      "(폐활량 < 20 mL/kg 또는",
+      "빠른 하강, 분비물 처리 불가)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 344.0
+    },
+    {
+     "id": "intub",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "중환자실 · 선택적 삽관 +",
+      "면역치료"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 491.0
+    },
+    {
+     "id": "phase",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "아직 악화 중인가,",
+      "정체기인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 491.0
+    },
+    {
+     "id": "icu",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "감시 병상 입원 · 연속",
+      "폐활량/최대흡기압 ·",
+      "자율신경 감시 + 가능한 한",
+      "빨리 IVIG 또는 혈장교환"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 621.0
+    },
+    {
+     "id": "mild",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정체기의 아주 가벼운 환자 —",
+      "보존 치료 가능(입원 관찰 뒤",
+      "판단)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 621.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "resp",
+     "points": [
+      [
+       227.0,
+       278.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "측정 완료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 324.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "intub",
+     "points": [
+      [
+       194.3,
+       425.0
+      ],
+      [
+       194.3,
+       435.0
+      ],
+      [
+       114.0,
+       435.0
+      ],
+      [
+       114.0,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "위험"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "phase",
+     "points": [
+      [
+       259.7,
+       425.0
+      ],
+      [
+       259.7,
+       441.0
+      ],
+      [
+       340.0,
+       441.0
+      ],
+      [
+       340.0,
+       491.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아직 안전"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 471.0
+     }
+    },
+    {
+     "from": "phase",
+     "to": "icu",
+     "points": [
+      [
+       307.3,
+       555.0
+      ],
+      [
+       307.3,
+       565.0
+      ],
+      [
+       114.0,
+       565.0
+      ],
+      [
+       114.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "악화 중(대부분)"
+      ],
+      "w": 90.5,
+      "h": 17,
+      "x": 68.8,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "phase",
+     "to": "mild",
+     "points": [
+      [
+       372.7,
+       555.0
+      ],
+      [
+       372.7,
+       571.0
+      ],
+      [
+       340.0,
+       571.0
+      ],
+      [
+       340.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정체기 + 걸을 수 있음"
+      ],
+      "w": 117.3,
+      "h": 17,
+      "x": 281.3,
+      "y": 601.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "수 시간~수일 오르는 대칭성 이완마비 + 건반사 소실(± 선행 감염)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "폐활량·최대흡기압, 기침·연하, 목 굴곡력, 혈압·심전도 변동을 잰다 — 활력징후만으로 판단하지 않는다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "폐활량·최대흡기압, 기침·연하, 목 굴곡력, 혈압·심전도 변동을 잰다 — 활력징후만으로 판단하지 않는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "측정 완료",
+      "to": 3,
+      "toText": "호흡·연수 기능이 위험한가? (폐활량 < 20 mL/kg 또는 빠른 하강, 분비물 처리 불가)"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "호흡·연수 기능이 위험한가? (폐활량 < 20 mL/kg 또는 빠른 하강, 분비물 처리 불가)",
+    "note": "",
+    "branches": [
+     {
+      "label": "위험",
+      "to": 4,
+      "toText": "중환자실 · 선택적 삽관 + 면역치료"
+     },
+     {
+      "label": "아직 안전",
+      "to": 5,
+      "toText": "아직 악화 중인가, 정체기인가?"
+     }
+    ]
+   },
+   {
+    "id": "intub",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "중환자실 · 선택적 삽관 + 면역치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "phase",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "아직 악화 중인가, 정체기인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "악화 중(대부분)",
+      "to": 6,
+      "toText": "감시 병상 입원 · 연속 폐활량/최대흡기압 · 자율신경 감시 + 가능한 한 빨리 IVIG 또는 혈장교환"
+     },
+     {
+      "label": "정체기 + 걸을 수 있음",
+      "to": 7,
+      "toText": "정체기의 아주 가벼운 환자 — 보존 치료 가능(입원 관찰 뒤 판단)"
+     }
+    ]
+   },
+   {
+    "id": "icu",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "감시 병상 입원 · 연속 폐활량/최대흡기압 · 자율신경 감시 + 가능한 한 빨리 IVIG 또는 혈장교환",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mild",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정체기의 아주 가벼운 환자 — 보존 치료 가능(입원 관찰 뒤 판단)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0041"
+  ],
+  "hasErrors": false
+ },
+ "cn.neuro.multiple-sclerosis.dissemination-diagnosis": {
+  "id": "cn.neuro.multiple-sclerosis.dissemination-diagnosis",
+  "title": "다발경화증의 진단 — 중추신경 병변이 시간과 공간으로 흩어져 있다는 것을 보이는 일",
+  "objective": "젊은 성인의 시신경염·감각 증상 같은 발작과 MRI 의 뇌실주위·척수 병변에서 「시간적·공간적 파종」을 읽어 다발경화증을 진단하고, 병변이 중추신경인지 말초신경인지로 길랑-바레 증후군·중증근무력증·근위축성측삭경화증을, 병변 모양·항체로 시신경척수염을 가른다",
+  "objectiveKind": "진단",
+  "condition": "다발경화증(재발-완화형 첫 진단)",
+  "topic": "Neurology",
+  "seeAlso": [
+   "Ophthalmology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "ca7a37b69532c9a3",
+  "summary": [
+   "다발경화증 = 중추신경(뇌·척수·시신경) 백질의 자가면역 탈수초. 병변이 여러 곳(공간)에 여러 번(시간) 생긴다 — 이 둘을 보이는 것이 진단이다.",
+   "공간적 파종 = 뇌실주위·피질근처·천막하·척수 네 곳 중 두 곳 이상에 T2 병변. 시간적 파종 = 조영증강·비증강 병변의 동시 존재, 추적 MRI 의 새 병변, 또는 두 번째 발작.",
+   "20–40세 여성에 약 3배 흔하다. 첫 증상은 감각 소실·시신경염(눈 움직일 때 아픈 한쪽 시력저하)·근력저하 순.",
+   "말초신경 질환(길랑-바레)은 MRI 뇌·척수 병변이 없고 건반사가 사라지며 단상성이다. 다발경화증은 중추 병변이라 반사가 항진하고 재발한다.",
+   "시신경척수염은 감별 목록의 첫머리다 — 긴 척수 병변·심한 양측 시신경염·AQP4 항체로 가른다. 더 나은 설명이 없어야 다발경화증이다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>다발경화증은 중추신경(뇌·척수·시신경)의 만성 자가면역 탈수초 질환이다. 병변이 서로 이어지지 않는 여러 백질 경로에(공간), 한 달 이상 떨어진 여러 때에(시간) 생긴다 — 이 「파종」을 보이는 것이 진단의 전부다. 단일 진단 검사는 없다 <sup>[1 444장 p.3465]</sup>. 여성에 약 3배 흔하고 대개 20–40세에 시작한다 <sup>[1 444장 p.3463]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 중추신경 축삭은 희소돌기아교세포가 만든 수초로 도약 전도를 한다. 다발경화증에서는 자가반응 림프구가 혈액–뇌 장벽을 넘어 정맥 주위에 염증을 일으키고(Dawson 손가락) 수초를 벗겨 전도가 느려지거나 막힌다 <sup>[1 444장 p.3466]</sup>. 뇌척수액에는 척수강 안에서 만들어진 IgG 와 올리고클론 항체가 보인다 <sup>[1 444장 p.3465]</sup>. 초기의 질환 활동은 대부분 증상이 없어서 MRI 는 발작 횟수보다 훨씬 자주 새 병변을 보인다 <sup>[1 444장 p.3466]</sup> — MRI 가 「시간」의 증거가 될 수 있는 이유다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>첫 증상</strong>: 감각 소실 37 %, 시신경염 36 %, 근력저하 35 %, 저림 24 %, 복시 15 % <sup>[1 444장 p.3462]</sup>.</li>\n<li><strong>시신경염</strong>: 중심 시야의 시력·색각 저하, 대개 한쪽, 눈 움직일 때 심해지는 눈 주위 통증, 구심성 동공 결손. 시신경유두는 정상이거나 부어 있다 <sup>[1 444장 p.3462]</sup>.</li>\n<li><strong>중추 병변의 흔적</strong>: 반사 항진·바빈스키 — 말초신경 질환의 건반사 소실과 반대.</li>\n<li><strong>MRI</strong>: 6 mm 넘는 뇌량·뇌실주위·뇌간·소뇌·척수 병변이 진단에 특히 도움이 된다 <sup>[1 444장 p.3466]</sup>.</li>\n<li><strong>뇌척수액</strong>: 단핵구 약간 증가, 척수강 내 IgG 증가, 총 단백은 정상~경도 상승 <sup>[1 444장 p.3466]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>해리슨은 시신경척수염, 전신홍반루푸스·쇼그렌·혈관염, 사르코이드증, 라임병·매독·HTLV, 비타민 B12 결핍, 허혈성 시신경병증, 척수 동정맥루 등을 감별 목록에 올린다 <sup>[1 444장 p.3468]</sup>. 시험 보기에서는 두 축으로 지운다:</p>\n<ul>\n<li><strong>어디에</strong> — 중추(다발경화증·시신경척수염) / 말초신경(길랑-바레) / 신경근 접합부(중증근무력증) / 운동신경세포(근위축성측삭경화증).</li>\n<li><strong>어떻게</strong> — 재발–완화 / 단상성 / 변동·피로성 / 꾸준한 진행.\n시신경척수염은 긴(세 분절 이상) 척수 병변, 심한 양측 시신경염, AQP4 항체로 가른다 <sup>[3†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>뇌·척수 MRI(T2·조영증강)</strong>: 공간 파종(네 부위 중 두 곳)과 시간 파종(증강·비증강 병변 동시, 또는 추적 MRI 새 병변)을 본다 <sup>[1 444장 p.3466]</sup>.</li>\n<li><strong>뇌척수액</strong>: 올리고클론띠·IgG 지수 — 진단을 뒷받침하고 다른 원인을 거른다 <sup>[1 444장 p.3466]</sup>.</li>\n<li><strong>유발전위</strong>: 두 번째 징후를 보태는 데 쓸 수 있다 <sup>[1 444장 p.3465]</sup>.</li>\n<li><strong>음성 결과의 한계</strong>: MRI 한 번에 파종이 다 안 보이면 「다발경화증이 아니다」가 아니라 「아직 증명되지 않았다」(임상 단독 증후군) — 추적 MRI 를 한다.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>진단 목표의 정리본이라 개요만 둔다. 급성 발작·첫 탈수초 발작은 정맥 메틸프레드니솔론 500–1000 mg/일 3–5일로 발작을 짧고 가볍게 한다. 열·감염에 의한 가성 악화에는 스테로이드가 적절하지 않다 <sup>[1 444장 p.3468]</sup>. 장기적으로는 질환 조절 약물로 재발과 새 MRI 병변을 줄인다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>진단에는 공간과 시간 파종이 <strong>모두</strong> 필요하다. 하나만 있으면 추적한다.</li>\n<li>더 나은 설명(특히 시신경척수염)이 없어야 한다 — 긴 척수 병변·AQP4 양성이면 다발경화증 약을 쓰기 전에 멈춘다.</li>\n<li>시신경은 중추신경이다 — 시신경염이 있으면 말초신경 질환 보기는 지운다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 444장 p.3462~3468). 올리고클론띠가 시간 파종을 대신하는 2017 개정 조항은 원문 미대조라 시험 기준으로 쓰지 않았다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "왜 MRI 가 「시간」의 증거가 되는가",
+    "deep": true,
+    "html": "<p>조영제는 혈액–뇌 장벽이 새는 곳, 즉 몇 주 안에 생긴 활동성 병변에만 스민다. 오래된 병변은 T2 에서만 보이고 증강되지 않는다. 그러니 한 장의 MRI 에 증강 병변과 비증강 병변이 함께 있다는 것은 「적어도 두 번의 다른 시점에 병변이 생겼다」는 뜻이다. 초기 다발경화증의 활동 대부분이 증상 없이 일어난다는 사실 <sup>[1 444장 p.3466]</sup>이 두 번째 임상 발작을 기다리지 않고 MRI 로 진단할 수 있게 한다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "보기에 나오는 신경 질환 — 병변이 어디에 있고 어떻게 흘러가나",
+    "columns": [
+     "질환",
+     "병변 위치",
+     "경과",
+     "가르는 소견"
+    ],
+    "rows": [
+     [
+      "다발경화증",
+      "중추 백질(뇌실주위·피질근처·천막하·척수·시신경)",
+      "재발–완화(시간 파종)",
+      "MRI 공간·시간 파종, 반사 항진, 뇌척수액 올리고클론띠 <sup>[1 444장 p.3466]</sup>"
+     ],
+     [
+      "시신경척수염",
+      "시신경·척수(긴 병변)·맨아래 뇌간",
+      "재발, 발작이 심함",
+      "세 척추 분절 이상 척수 병변, 양측·심한 시신경염, AQP4 항체 <sup>[3†]</sup>"
+     ],
+     [
+      "길랑-바레 증후군",
+      "말초신경·신경근",
+      "단상성, 수일~4주 진행",
+      "상행 이완마비·건반사 소실, 뇌척수액 단백–세포 해리 <sup>[1 447장 p.3501]</sup>"
+     ],
+     [
+      "중증근무력증",
+      "신경근 접합부",
+      "변동·피로성",
+      "감각 정상, 눈꺼풀처짐·복시가 오후에 악화"
+     ],
+     [
+      "근위축성측삭경화증",
+      "상·하위 운동신경세포",
+      "꾸준히 진행",
+      "근위축·섬유속연축 + 반사 항진, 감각 정상"
+     ]
+    ],
+    "note": "「어디에(중추/말초/접합부/운동신경세포)」와 「어떻게(재발/단상/변동/진행)」 두 축으로 보기를 지운다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "다발경화증 vs 길랑-바레 증후군 — 「젊은 사람의 저림·근력저하 + 탈수초」",
+    "point": "둘 다 탈수초 질환이지만 공격받는 곳이 다르다. 다발경화증은 중추신경 수초(희소돌기아교세포)라 MRI 뇌실주위·척수에 병변이 보이고 시신경염이 흔하며, 한 달 이상 간격으로 재발한다 <sup>[1 444장 p.3465]</sup>. 길랑-바레는 말초신경 수초라 뇌·척수 MRI 병변이 없고, 수 시간~수일에 오르는 대칭성 이완마비와 건반사 소실로 오며 대개 4주 안에 정체기에 이르는 단상성 경과다 <sup>[1 447장 p.3501]</sup>. 시신경염은 말초신경 질환이 아니다 — 시신경은 중추신경의 일부다.",
+    "exception": "감염 뒤 수일~수주에 대칭성 상행 근력저하·건반사 소실이 오고 뇌척수액 단백만 오르며 MRI 뇌 병변이 없으면 길랑-바레다.",
+    "cites": ""
+   },
+   {
+    "contrast": "다발경화증 vs 시신경척수염 — 「시신경염 + 척수 병변」",
+    "point": "시신경척수염도 시신경과 척수를 침범하고 재발한다. 가르는 것은 병변의 모양(세 분절 이상 긴 척수 병변 vs 짧고 비대칭인 다발경화증 병변)과 시신경염의 정도(양측·심함), 그리고 AQP4 항체다 <sup>[3†]</sup>. 해리슨도 시신경척수염을 다발경화증 감별 목록에 올린다 <sup>[1 444장 p.3468]</sup>.",
+    "exception": "뇌실주위·피질근처에 흩어진 짧은 병변과 재발–완화 경과는 다발경화증 쪽이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "발작 하나 = 다발경화증? — 「시신경염이 있으니 다발경화증」",
+    "point": "시신경염 한 번은 임상 단독 증후군일 수 있다. 다발경화증 진단에는 공간과 시간 파종이 모두 필요하다 — 두 번째 발작, 또는 MRI 에서 증강·비증강 병변의 동시 존재나 추적 MRI 의 새 병변 <sup>[1 444장 p.3466]</sup>.",
+    "exception": "첫 발작이라도 MRI 가 공간·시간 파종을 모두 보여 주면 그 자리에서 진단할 수 있다 <sup>[1 444장 p.3466]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "증상은 24시간 넘게 가야 발작으로 센다 — 열·감염으로 옛 증상이 잠깐 나빠지는 가성 악화는 새 발작이 아니다 <sup>[1 444장 p.3468]</sup>.",
+   "뇌척수액 총 단백은 정상~경도 상승이고 단핵구가 조금 늘 수 있다 — 단백–세포 해리와는 다르다 <sup>[1 444장 p.3466]</sup>.",
+   "급성 발작은 정맥 메틸프레드니솔론 500–1000 mg/일 3–5일로 짧게 치료한다. 장기 경과를 바꾸는지는 불분명하다 <sup>[1 444장 p.3468]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ms-dx-principle",
+    "name": "진단의 원칙(해리슨)",
+    "kind": "진단 기준",
+    "population": "중추신경 탈수초 증상이 있는 환자",
+    "statement": "단일 진단 검사는 없다. 해부학적으로 이어지지 않는 중추신경 백질 경로를 반영하는 증상 발작 2회 이상과 징후 2개 이상을 기록한다. 증상은 24시간 넘게 가고 한 달 이상 떨어진 별개의 발작이어야 한다. 두 번째 징후는 MRI·유발전위로, 두 번째 사건(시간)은 MRI 새 병변 또는 증강·비증강 병변 동시 존재로 대신할 수 있다 [[harrison-21: 444장 p.3465]]",
+    "exceptions": "진행형(1차 진행형)은 발작 없이 1년 이상 진행으로 판단한다 [[harrison-21: 444장 p.3466]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ms-dis",
+    "name": "공간적 파종(2017 McDonald, 해리슨 표 444-3)",
+    "kind": "진단 기준",
+    "population": "발작 1회 이상의 환자",
+    "statement": "다발경화증에 전형적인 네 부위(뇌실주위·피질근처·천막하·척수) 중 두 곳 이상에 T2 병변 1개 이상 — 또는 다른 부위를 침범하는 추가 발작을 기다린다 [[harrison-21: 444장 p.3466]]",
+    "exceptions": "6 mm 넘는 뇌량·뇌실주위 백질·뇌간·소뇌·척수 병변이 특히 도움이 된다 [[harrison-21: 444장 p.3466]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ms-dit",
+    "name": "시간적 파종(2017 McDonald, 해리슨 표 444-3)",
+    "kind": "진단 기준",
+    "population": "발작 1회의 환자(임상 단독 증후군 포함)",
+    "statement": "무증상 조영증강 병변과 비증강 병변이 어느 때든 동시에 있거나, 기준 MRI 와 시점 관계없이 추적 MRI 에서 새 T2·증강 병변이 보이거나, 두 번째 임상 발작을 기다린다 [[harrison-21: 444장 p.3466]]",
+    "exceptions": "뇌척수액 올리고클론띠가 시간적 파종을 대신할 수 있다는 2017 개정 문구는 원문을 대조하지 못했다 [[?thompson-2018]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 444: Multiple Sclerosis",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 444장(Cree BAC, Hauser SL), 인쇄쪽 3462–3468",
+    "checked": "드라이브 장 문서로 본문 대조. p.3462 첫 증상 표 444-1(감각 소실 37 %, 시신경염 36 %, 근력저하 35 %)·시신경염 양상(중심 시야 시력·색각 저하, 눈 움직일 때 통증, 구심성 동공 결손), p.3463 역학(여성 약 3배, 20–40세), p.3465 진단(단일 검사 없음, 발작 2회·징후 2개, 24시간·1개월, MRI 로 대신), 뇌척수액 올리고클론 항체, p.3466 MRI(6 mm 넘는 뇌실주위·뇌량 등 병변, Dawson 손가락)·표 444-3(공간·시간 파종)·뇌척수액(단핵구 증가, 척수강 내 IgG, 총 단백 정상~경도 상승), p.3468 감별 표(시신경척수염 등)·급성 발작 치료(메틸프레드니솔론 500–1000 mg/일 3–5일, 가성 악화에는 부적절). 감별 표의 길랑-바레 행은 447장 p.3501(상행 이완마비·건반사 소실·단상성)에서 확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "thompson-2018",
+    "org": "Lancet Neurology",
+    "title": "Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria",
+    "kind": "guideline",
+    "citation": "Thompson AJ, Banwell BL, Barkhof F, et al. Lancet Neurol 2018;17(2):162-173",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 해리슨 표 444-3 이 이 기준을 옮겨 싣고 있어 공간·시간 파종 문구는 해리슨으로 대조했다. 올리고클론띠 대체 조항은 원문 미대조",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.thelancet.com/journals/laneur"
+   },
+   {
+    "id": "wingerchuk-2015",
+    "org": "Neurology",
+    "title": "International consensus diagnostic criteria for neuromyelitis optica spectrum disorders",
+    "kind": "consensus",
+    "citation": "Wingerchuk DM, Banwell B, Bennett JL, et al. Neurology 2015;85(2):177-189",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 해리슨 444장은 시신경척수염을 감별 표에 올리고 자세한 내용은 445장으로 넘긴다 — 긴 척수 병변·AQP4 항체 특징은 이 출처로 남겼고 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2015",
+    "checkedAt": "2026-09-23",
+    "url": "https://n.neurology.org"
+   }
+  ],
+  "checks": [
+   {
+    "q": "다발경화증의 공간적 파종을 MRI 로 보이는 조건은?",
+    "a": "뇌실주위·피질근처·천막하·척수 네 부위 중 두 곳 이상에 T2 병변 1개 이상."
+   },
+   {
+    "q": "시간적 파종을 MRI 한 번으로 보일 수 있나?",
+    "a": "그렇다 — 무증상 조영증강 병변과 비증강 병변이 동시에 있으면 된다."
+   },
+   {
+    "q": "시신경염 환자에서 길랑-바레가 답이 될 수 없는 이유는?",
+    "a": "시신경은 중추신경이다. 길랑-바레는 말초신경 질환이라 MRI 뇌·척수 병변이 없고 건반사가 사라지는 단상성 상행마비다."
+   },
+   {
+    "q": "다발경화증과 시신경척수염을 가르는 세 가지는?",
+    "a": "척수 병변 길이(세 분절 이상이면 시신경척수염), 시신경염의 정도(양측·심함), AQP4 항체."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.neuro.multiple-sclerosis.dissemination-diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 말초신경의 단상성 상행마비",
+    "stem": "26세 여자가 3일 전부터 발끝이 저리고 힘이 빠지더니 오늘은 계단을 오르지 못하고 젓가락질도 어렵다며 왔다. 2주 전 설사를 앓고 나았다. 시력은 정상이다. 양쪽 팔다리 근력이 대칭적으로 떨어져 있고 심부건반사는 모두 나오지 않으며 바빈스키 징후는 음성이다. 뇌척수액 단백 95 mg/dL, 백혈구 2/µL 이고 뇌·척수 MRI 는 정상이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "다발경화증",
+     "길랑-바레증후군",
+     "중증근무력증",
+     "시신경척수염",
+     "근위축성측삭경화증"
+    ],
+    "answer": 2,
+    "explanation": "선행 감염 뒤 수일에 걸쳐 오르는 대칭성 이완마비와 건반사 소실, 세포 증가 없는 단백 상승(단백–세포 해리), 정상 뇌·척수 MRI 는 말초신경 탈수초인 길랑-바레증후군이다. 원래 문항은 시신경염과 뇌실주위·척수 병변이 시간·공간적으로 흩어져 있어 중추신경 질환(다발경화증)이었다 — 병변이 어디에 있는가가 답을 바꾼다.",
+    "of": "kmle-2026-0083",
+    "changed": "「시신경염 + MRI 뇌실주위·척수 병변(시간·공간 파종)」을 「설사 2주 뒤 3일간 대칭성 상행 근력저하 + 건반사 소실 + 뇌척수액 단백만 상승 + 뇌·척수 MRI 정상」으로 바꿈 → 병변이 말초신경이고 단상성이므로 답이 다발경화증에서 길랑-바레증후군으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.neuro.multiple-sclerosis.dissemination-diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 복시로 온 남자",
+    "stem": "33세 남자가 1주 전부터 오른쪽을 볼 때 물체가 둘로 보인다며 왔다. 1년 전 왼쪽 눈이 눈을 움직일 때 아프면서 흐리게 보였다가 두 달 만에 저절로 좋아진 적이 있다. 오른쪽을 볼 때 왼쪽 눈이 안쪽으로 들어가지 않고 오른쪽 눈에 안진이 생긴다. 무릎반사는 양쪽 모두 항진되어 있다. 뇌 MRI 에서 뇌실주위 백질과 뇌교에 T2 고신호 병변이 있으며, 그중 뇌교 병변만 조영증강된다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "중증근무력증",
+     "시신경척수염",
+     "다발경화증",
+     "길랑-바레증후군",
+     "근위축성측삭경화증"
+    ],
+    "answer": 3,
+    "explanation": "핵간안근마비(내측세로다발 병변)와 과거 시신경염, 반사 항진은 중추신경 병변이다. 뇌실주위·천막하(뇌교) 두 부위에 병변이 있어 공간적 파종을, 증강·비증강 병변의 동시 존재로 시간적 파종을 보인다 — 다발경화증이다. 환자의 성별·증상 종류가 달라도 결정 단서(중추 병변의 시간·공간 파종)는 같다.",
+    "of": "kmle-2026-0083",
+    "changed": "성별·나이(33세 남자)와 증상 종류(시신경염 → 핵간안근마비에 의한 복시, 과거 발작은 한쪽 시력저하), MRI 파종 근거(시간 파종을 조영증강·비증강 병변 동시 존재로)를 바꾸고 「중추신경 병변이 시간·공간으로 흩어짐」은 그대로 → 답은 여전히 다발경화증",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "중추신경 탈수초 의심 — 다발경화증을 진단하는 길",
+  "geo": {
+   "title": "중추신경 탈수초 의심 — 다발경화증을 진단하는 길",
+   "w": 454,
+   "h": 814.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "젊은 성인의 24시간 넘는",
+      "신경 증상 발작(시신경염·",
+      "감각 저하·근력저하 등)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "site",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "병변이 중추신경인가? (반사",
+      "항진·시신경·MRI 뇌·척수",
+      "병변)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "pns",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "말초신경·접합부 질환 쪽 —",
+      "길랑-바레(건반사 소실·",
+      "단상성)·중증근무력증 등"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 310.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "뇌·척수 MRI(T2·조영증강),",
+      "필요하면 뇌척수액",
+      "올리고클론띠·AQP4 항체"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 310.0
+    },
+    {
+     "id": "mimic",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "더 나은 설명이 있는가? (긴",
+      "척수 병변·AQP4 양성, 감염·",
+      "혈관염 등)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 457.0
+    },
+    {
+     "id": "nmo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "시신경척수염 등 다른 진단"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 604.0
+    },
+    {
+     "id": "dis",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "공간·시간 파종이 모두",
+      "증명되는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 604.0
+    },
+    {
+     "id": "ms",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다발경화증"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 734.0
+    },
+    {
+     "id": "cis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "임상 단독 증후군 — 추적",
+      "MRI·다음 발작을 기다린다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 734.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "site",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "site",
+     "to": "pns",
+     "points": [
+      [
+       194.3,
+       244.0
+      ],
+      [
+       194.3,
+       254.0
+      ],
+      [
+       114.0,
+       254.0
+      ],
+      [
+       114.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다(말초)"
+      ],
+      "w": 75.8,
+      "h": 17,
+      "x": 76.1,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "site",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       244.0
+      ],
+      [
+       259.7,
+       260.0
+      ],
+      [
+       340.0,
+       260.0
+      ],
+      [
+       340.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다(중추)"
+      ],
+      "w": 75.8,
+      "h": 17,
+      "x": 302.1,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "mimic",
+     "points": [
+      [
+       340.0,
+       391.0
+      ],
+      [
+       340.0,
+       401.0
+      ],
+      [
+       227.0,
+       401.0
+      ],
+      [
+       227.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "검사 결과"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "mimic",
+     "to": "nmo",
+     "points": [
+      [
+       194.3,
+       538.0
+      ],
+      [
+       194.3,
+       548.0
+      ],
+      [
+       114.0,
+       548.0
+      ],
+      [
+       114.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "mimic",
+     "to": "dis",
+     "points": [
+      [
+       259.7,
+       538.0
+      ],
+      [
+       259.7,
+       554.0
+      ],
+      [
+       340.0,
+       554.0
+      ],
+      [
+       340.0,
+       604.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 584.0
+     }
+    },
+    {
+     "from": "dis",
+     "to": "ms",
+     "points": [
+      [
+       307.3,
+       668.0
+      ],
+      [
+       307.3,
+       678.0
+      ],
+      [
+       114.0,
+       678.0
+      ],
+      [
+       114.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둘 다"
+      ],
+      "w": 33.7,
+      "h": 17,
+      "x": 97.1,
+      "y": 714.0
+     }
+    },
+    {
+     "from": "dis",
+     "to": "cis",
+     "points": [
+      [
+       372.7,
+       668.0
+      ],
+      [
+       372.7,
+       684.0
+      ],
+      [
+       340.0,
+       684.0
+      ],
+      [
+       340.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나만/없음"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 305.3,
+      "y": 714.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "젊은 성인의 24시간 넘는 신경 증상 발작(시신경염·감각 저하·근력저하 등)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "병변이 중추신경인가? (반사 항진·시신경·MRI 뇌·척수 병변)"
+     }
+    ]
+   },
+   {
+    "id": "site",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "병변이 중추신경인가? (반사 항진·시신경·MRI 뇌·척수 병변)",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니다(말초)",
+      "to": 3,
+      "toText": "말초신경·접합부 질환 쪽 — 길랑-바레(건반사 소실·단상성)·중증근무력증 등"
+     },
+     {
+      "label": "그렇다(중추)",
+      "to": 4,
+      "toText": "뇌·척수 MRI(T2·조영증강), 필요하면 뇌척수액 올리고클론띠·AQP4 항체"
+     }
+    ]
+   },
+   {
+    "id": "pns",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "말초신경·접합부 질환 쪽 — 길랑-바레(건반사 소실·단상성)·중증근무력증 등",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "뇌·척수 MRI(T2·조영증강), 필요하면 뇌척수액 올리고클론띠·AQP4 항체",
+    "note": "",
+    "branches": [
+     {
+      "label": "검사 결과",
+      "to": 5,
+      "toText": "더 나은 설명이 있는가? (긴 척수 병변·AQP4 양성, 감염·혈관염 등)"
+     }
+    ]
+   },
+   {
+    "id": "mimic",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "더 나은 설명이 있는가? (긴 척수 병변·AQP4 양성, 감염·혈관염 등)",
+    "note": "",
+    "branches": [
+     {
+      "label": "있다",
+      "to": 6,
+      "toText": "시신경척수염 등 다른 진단"
+     },
+     {
+      "label": "없다",
+      "to": 7,
+      "toText": "공간·시간 파종이 모두 증명되는가?"
+     }
+    ]
+   },
+   {
+    "id": "nmo",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "시신경척수염 등 다른 진단",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "dis",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "공간·시간 파종이 모두 증명되는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "둘 다",
+      "to": 8,
+      "toText": "다발경화증"
+     },
+     {
+      "label": "하나만/없음",
+      "to": 9,
+      "toText": "임상 단독 증후군 — 추적 MRI·다음 발작을 기다린다"
+     }
+    ]
+   },
+   {
+    "id": "ms",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다발경화증",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cis",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "임상 단독 증후군 — 추적 MRI·다음 발작을 기다린다",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0083"
+  ],
+  "hasErrors": false
+ },
  "cn.obgyn.gestational-diabetes.insulin-indication": {
   "id": "cn.obgyn.gestational-diabetes.insulin-indication",
   "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
@@ -6565,10 +21039,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Endocrinology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "6039b67383f06b56",
+  "hash": "406336c2a5823d51",
   "summary": [
    "진단은 24–28주 선별로 시작한다: 2단계(50 g 선별 1시간 ≥ 140 → 100 g 3시간 부하, Carpenter-Coustan 기준 2개 이상) 또는 1단계(75 g 2시간 부하, IADPSG 기준 1개 이상).",
    "1차 치료는 의학적 영양요법 + 운동 + 자가혈당(하루 4회: 공복 + 매 식후). 목표는 공복 ≤ 95 · 식후 1시간 ≤ 140 · 식후 2시간 ≤ 120 mg/dL.",
@@ -6924,6 +21398,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "순응이 좋은 2주 요법 뒤에도 식후 1시간 혈당이 목표(≤ 140)를 반복해 넘어 약물 시작 기준을 충족했다. 임신 중 1차 약물은 인슐린이며, 공복은 목표 안이고 식후만 높으므로 식전 속효·초속효 인슐린으로 맞춘다(취침 전 NPH 는 공복 고혈당의 처방). 주사에 대한 두려움은 교육·상담으로 먼저 다루고, 메트포르민은 상담 뒤에도 거부하거나 투여가 불가능할 때의 대안이며 글리부리드는 권하지 않는다. 식단 재조정 2주 연장은 이미 순응이 좋은 상태에서 초과가 반복되므로 지연이다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.obgyn.gestational-diabetes.insulin-indication#v2",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 공복은 목표 안, 식후만 간헐 초과",
+    "stem": "32세 여자(임신 2회 출산 1회)가 임신 28주에 정기 산전 진찰을 위해 왔다. 26주 100 g 경구 포도당부하검사에서 기준 이상이 3개로 임신당뇨병을 진단받아 2주 전부터 탄수화물을 나눠 먹고 매일 30분씩 걸으며 하루 4회 자가 혈당을 잰다. 최근 1주 자가 혈당은 공복 82–92 mg/dL 이고, 식후 1시간은 대부분 110–135 mg/dL 이지만 저녁을 외식한 이틀만 146, 152 mg/dL 였다. 체중은 2주간 0.4 kg 늘었고 소변 케톤은 음성이며 태아 추정 체중은 55백분위다. 가장 적절한 처치는?",
+    "options": [
+     "외식 때의 탄수화물 구성을 조정하고 1–2주 뒤 혈당 기록을 다시 본다",
+     "메트포르민을 시작한다",
+     "취침 전 NPH 인슐린을 시작한다",
+     "글리부리드를 시작한다",
+     "식전 속효 인슐린을 시작한다"
+    ],
+    "answer": 1,
+    "explanation": "공복 혈당은 목표(< 95 mg/dL) 안이고, 식후 초과는 외식한 이틀에 국한된 간헐적 초과라 「충실한 요법에도 반복 초과」라는 약물 시작 기준에 이르지 않았다 [[?acog-pb190]]. 원인이 식단에서 보이므로 그 부분을 조정하고 1–2주 뒤 기록을 다시 본다. 원래 문항은 공복 평균 101 mg/dL 로 공복 고혈당이 지속돼 — 식이로 교정되기 어려운 간 포도당 생성의 문제라 — 인슐린이 답이었다. 경구제는 인슐린을 쓸 수 없을 때의 대안이고, 약물이 필요해지면 그때도 1차는 인슐린이다.",
+    "of": "kmle-2026-1089",
+    "changed": "자가혈당을 「공복 평균 101(목표 초과)」에서 「공복 82–92(목표 안), 식후 1시간은 외식한 이틀만 146·152」로 바꿈 → 공복 고혈당이 없고 식후 초과가 간헐적·원인이 보이므로 답이 「인슐린 시작」에서 「식단 조정 후 1–2주 재평가」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.gestational-diabetes.insulin-indication#v3",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 첫 임신의 고령 임신부",
+    "stem": "36세 여자(임신 1회 출산 0회)가 임신 29주에 자가 혈당 기록지를 가지고 왔다. 최근 1주 공복 혈당은 97–106 mg/dL 이고 식후 1시간 혈당은 118–134 mg/dL 이다. 27주에 100 g 경구 포도당부하검사에서 공복·1시간·2시간 값이 기준을 넘어 임신당뇨병을 진단받았고, 이후 2주 동안 영양사가 짜 준 식단을 지키며 매일 실내 자전거를 30분 탄다. 체중은 2주간 0.3 kg 늘었고 소변 케톤은 음성이다. 주사 치료에 대한 거부감은 없다. 가장 적절한 처치는?",
+    "options": [
+     "메트포르민을 시작한다",
+     "인슐린을 시작한다",
+     "식이요법을 2주 더 유지한다",
+     "운동을 하루 1시간으로 늘린다",
+     "글리부리드를 시작한다"
+    ],
+    "answer": 2,
+    "explanation": "나이·산과력·운동 종류가 달라도 결정 단서는 같다 — 2주간 충실한 영양·운동 요법(체중 증가 적정, 케톤 음성)에도 공복 혈당이 목표(< 95 mg/dL)를 반복해 넘는다. 공복 고혈당은 식이·운동 연장으로 잘 내려가지 않아 약물로 올리고, 임신 중 1차 약물은 태반을 유의하게 통과하지 않는 인슐린이다(공복 고혈당이므로 취침 전 기저 인슐린) [[?acog-pb190]] [[?ada-2024-s15]]. 메트포르민·글리부리드는 인슐린을 거부하거나 쓸 수 없을 때의 대안인데 그런 사유가 없다.",
+    "of": "kmle-2026-1089",
+    "changed": "나이·산과력(36세 첫 임신)·운동 방식(실내 자전거)·제시 순서(혈당 기록을 먼저)를 바꾸고 「2주 충실한 요법 뒤 공복 고혈당 지속·순응 문제 없음·인슐린 불가 사유 없음」은 그대로 → 답은 여전히 인슐린",
     "flip": false
    }
   ],
@@ -7583,6 +22091,866 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.obgyn.hydatidiform-mole.diagnosis": {
+  "id": "cn.obgyn.hydatidiform-mole.diagnosis",
+  "title": "임신 초기 출혈에서 포상기태 알아보기 — 주수보다 큰 자궁, 자궁 안 다낭성 덩이, 주수에 비해 매우 높은 β-hCG",
+  "objective": "무월경 뒤 질출혈을 보이는 임신 초기 여성에서 자궁 크기·자궁 안 초음파 소견·β-hCG 수치의 방향으로 포상기태를 진단하고, 자궁외임신·절박유산·정상 또는 다태 임신과 가른다",
+  "objectiveKind": "진단",
+  "condition": "포상기태(임신영양막질환)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Oncology",
+   "Endocrinology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "c5b8eaa590c6cb93",
+  "summary": [
+   "포상기태는 수정 이상으로 영양막이 과증식하고 융모가 물주머니처럼 부푸는 임신이다. 완전기태는 태아 조직이 없고, 부분기태는 비정상 태아 조직이 함께 있다 [[?williams-26]].",
+   "영양막이 과증식하니 β-hCG 가 주수에 비해 지나치게 높고, 그 결과 심한 입덧·조기 전자간증·갑상선기능항진·난포막황체낭이 따라온다. 부푼 융모가 자궁을 채워 자궁이 주수보다 크다 [[?williams-26]].",
+   "초음파에서 태아 없이 자궁 안을 채운 다낭성 덩이(눈보라·포도송이 모양)가 보인다 — 핵심은 「자궁 안」이다 [[?williams-26]].",
+   "자궁외임신은 방향이 반대다 — 자궁은 주수보다 작거나 비어 있고, β-hCG 는 주수에 비해 낮거나 느리게 오르며, 부속기 덩이·복통·복강 내 액체가 동반된다 [[?williams-26]].",
+   "진단되면 흡입소파로 비우고, β-hCG 가 정상이 될 때까지 추적해 임신영양막종양으로의 진행을 감시한다(추적 동안 피임) [[?williams-26]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>포상기태는 임신영양막질환 가운데 양성 형태로, 비정상 수정으로 생긴 임신에서 영양막이 과증식하고 융모가 수종성으로 부풀어 포도송이 같은 낭들을 이루는 것이다. 완전기태와 부분기태로 나뉜다 <sup>[1†]</sup>. 이 정리본의 목표는 임신 초기 출혈 환자에서 <strong>자궁 크기·자궁 안 소견·β-hCG 의 방향</strong>으로 포상기태를 알아보고 자궁외임신·유산·다태 임신과 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 임신에서 영양막은 태반이 되어 모체와 태아 사이를 잇고, β-hCG 를 만들어 황체를 유지한다. β-hCG 는 임신 초기에 빠르게 올라 8–10주께 정점에 이른다. 완전기태는 대개 핵이 없는 난자에 정자가 수정한 뒤 부계 염색체만 복제되어 생기며(46,XX), 태아 조직 없이 영양막만 과증식한다. 부분기태는 정상 난자에 정자 두 개가 들어가 삼배체가 되며, 비정상 태아 조직이 함께 있다 <sup>[1†]</sup>.</p>\n<p>소견은 과증식한 영양막에서 나온다. 영양막이 많으니 β-hCG 가 주수에 비해 지나치게 높고, 부푼 융모와 출혈이 자궁을 채워 자궁이 주수보다 크다. 높은 β-hCG 는 입덧을 심하게 하고, TSH 와 구조가 비슷해 갑상선을 자극하며, 난소를 자극해 난포막황체낭을 만든다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>질출혈</strong>: 가장 흔한 증상 — 부푼 융모가 탈락막에서 떨어지며 난다.</li>\n<li><strong>주수보다 큰 자궁</strong>: 융모 덩이와 고인 혈액.</li>\n<li><strong>매우 높은 β-hCG</strong>: 영양막 과증식 — 이것이 심한 입덧·갑상선기능항진·난포막황체낭·20주 전 전자간증을 부른다 <sup>[1†]</sup>.</li>\n<li><strong>초음파</strong>: 태아 없이 자궁 안을 채운 다낭성·눈보라 모양 덩이(완전기태). 부분기태는 태반의 국소 낭성 변화와 비정상 태아.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>표 「임신 초기 출혈 — 세 칸으로 가르기」가 감별의 뼈대다. 특히 자궁외임신은 무월경·출혈·「자궁 안에 태아 없음」을 공유하지만 자궁이 작거나 비어 있고, β-hCG 가 주수에 비해 낮거나 느리게 오르며, 부속기 덩이·편측 통증·복강 내 액체가 있다 <sup>[1†]</sup>. 다태 임신은 자궁이 크고 β-hCG 가 높지만 태아가 둘 이상 보인다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>질식 초음파와 정량 β-hCG 가 진단의 두 축이다. 포상기태가 의심되면 소파 전에 혈구·혈액형(Rh), 간·신장·갑상선 기능, 흉부 X선(폐 전이)을 본다. 확진은 소파 조직의 병리로 하고, 완전기태는 p57 면역염색이 음성이다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 흡입소파.</strong> 자궁을 흡입으로 비운다 — 가임력을 보존하려면 이것이 표준이다. 출산을 원하지 않는 고령 여성은 자궁절제술도 선택지다. Rh 음성이면 항D 면역글로불린을 고려한다 <sup>[1†]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 소파 뒤 β-hCG 를 정상이 될 때까지 주기적으로 추적한다. 정체하거나 다시 오르면 임신영양막종양(침윤기태·융모막암 등)으로 진단해 항암 치료로 넘어간다. 추적 기간 동안 새 임신이 β-hCG 해석을 흐리지 않도록 믿을 만한 피임을 한다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「태아가 안 보인다」 하나로 자궁외임신을 고르지 않는다 — 자궁 안이 비었는지, 덩이로 찼는지를 본다.</li>\n<li>초음파 조기 진단 시대에는 고전 소견(큰 자궁·심한 입덧)이 없는 포상기태가 많다 — 유산 조직은 병리로 확인한다.</li>\n<li>부분기태는 계류유산처럼 보일 수 있다.</li>\n<li>추적 기간·피임 방법의 세부는 지침마다 다르다(원문 미대조).</li>\n</ul>"
+   },
+   {
+    "title": "왜 β-hCG 가 진단과 추적을 함께 맡는가",
+    "deep": true,
+    "html": "<p>β-hCG 는 영양막의 양을 비추는 거울이다. 진단 때는 「주수에 비해 너무 많은 영양막」을 알려 주고, 소파 뒤에는 「남은 영양막이 있는가」를 알려 준다. 정상 임신이나 유산의 영양막은 비워지면 사라지지만, 기태의 일부는 자궁근층으로 파고들거나 전이하는 종양으로 자란다. 그래서 소파가 끝이 아니라 β-hCG 가 0 으로 내려가는 것을 확인하는 과정까지가 치료다 <sup>[1†]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "임신 초기 출혈 — 세 칸으로 가르기",
+    "columns": [
+     "진단",
+     "자궁 크기",
+     "자궁 안 초음파",
+     "β-hCG(주수 대비)",
+     "동반"
+    ],
+    "rows": [
+     [
+      "포상기태(완전)",
+      "주수보다 큼",
+      "태아 없는 다낭성 덩이(눈보라) <sup>[1†]</sup>",
+      "매우 높음",
+      "심한 입덧·난포막황체낭·조기 전자간증·갑상선기능항진"
+     ],
+     [
+      "자궁외임신",
+      "주수보다 작음·정상",
+      "비어 있음(가성 태낭 가능) <sup>[1†]</sup>",
+      "낮거나 느리게 오름",
+      "부속기 덩이·편측 복통·복강 내 액체"
+     ],
+     [
+      "절박유산",
+      "주수에 맞음",
+      "태아·심박 있음",
+      "주수에 맞음",
+      "적은 출혈, 자궁경부 닫힘"
+     ],
+     [
+      "다태 임신",
+      "주수보다 큼",
+      "태아 둘 이상",
+      "높음",
+      "입덧 심할 수 있음"
+     ],
+     [
+      "정상 임신",
+      "주수에 맞음",
+      "주수에 맞는 태낭·태아",
+      "주수에 맞음",
+      "—"
+     ]
+    ],
+    "note": "세 칸(자궁 크기·자궁 안·β-hCG 방향)이 모두 「크다·찼다·높다」면 포상기태, 「작다·비었다·낮다」면 자궁외임신."
+   },
+   {
+    "title": "완전기태 vs 부분기태",
+    "columns": [
+     "구분",
+     "완전기태",
+     "부분기태"
+    ],
+    "rows": [
+     [
+      "핵형",
+      "46,XX(대부분 부계만)",
+      "69,XXY 등 삼배체"
+     ],
+     [
+      "태아 조직",
+      "없음",
+      "있음(비정상)"
+     ],
+     [
+      "β-hCG",
+      "매우 높음",
+      "덜 높음"
+     ],
+     [
+      "종양 진행",
+      "더 흔함",
+      "드묾"
+     ]
+    ],
+    "note": "핵형·진행 위험의 수치는 원문 미대조 <sup>[1†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "자궁외임신 vs 포상기태 — 「무월경·질출혈·자궁 안 태아 없음」",
+    "point": "두 병 모두 무월경 뒤 출혈과 「자궁 안에 태아가 안 보인다」를 공유하지만, 나머지 세 소견은 정반대 방향이다. 포상기태는 자궁이 주수보다 크고, 자궁 안이 다낭성 덩이로 <b>차 있으며</b>, β-hCG 가 주수에 비해 <b>매우 높다</b>. 자궁외임신은 자궁 안이 <b>비어 있고</b>, β-hCG 가 주수에 비해 낮거나 느리게 오르며, 부속기 덩이·복통이 있다 <sup>[1†]</sup>. 「태아 없음」 하나가 아니라 자궁 안에 무엇이 있느냐와 β-hCG 의 방향으로 가른다.",
+    "exception": "β-hCG 가 판별 수준을 넘었는데 자궁 안이 비어 있고 부속기 덩이나 복강 내 액체가 있으면 자궁외임신이다. 드물게 자궁외 기태도 있다.",
+    "cites": ""
+   },
+   {
+    "contrast": "다태 임신 vs 포상기태 — 「큰 자궁 + 높은 β-hCG」",
+    "point": "다태 임신도 자궁이 크고 β-hCG 가 높지만 초음파에서 태아가 둘 이상 보인다. 태아가 없고 다낭성 덩이만 있으면 포상기태다 <sup>[1†]</sup>.",
+    "exception": "부분기태는 태아가 보일 수 있다 — 태반의 낭성 변화와 태아 이상을 함께 본다.",
+    "cites": ""
+   },
+   {
+    "contrast": "부분기태 vs 계류유산 — 「고전 소견이 없다」",
+    "point": "부분기태는 β-hCG 가 크게 높지 않고 자궁도 커지지 않아 계류유산으로 진단되었다가 소파 조직 병리에서 발견되는 일이 많다. 그래서 유산 조직은 병리로 확인한다 <sup>[1†]</sup>.",
+    "exception": "완전기태도 초음파 조기 진단 시대에는 고전 소견 없이 발견될 수 있다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "자궁 크기와 β-hCG 의 「주수 대비 방향」은 그림의 첫 갈림(자궁 안 소견)을 뒷받침한다 — 포상기태는 크고·높고, 자궁외임신은 작고·낮다 <sup>[1†]</sup>.",
+   "포상기태는 흡입소파로 비운다. Rh 음성이면 항D 면역글로불린을 고려하고, 소파 뒤 β-hCG 를 정상이 될 때까지 추적하며 그동안 피임한다 <sup>[1†]</sup>.",
+   "소파 전 흉부 X선은 폐 전이, 갑상선 기능은 hCG 의 TSH 유사 작용에 의한 갑상선기능항진을 보기 위해서다."
+  ],
+  "criteria": [
+   {
+    "id": "mole-us-hcg",
+    "name": "포상기태를 시사하는 소견 조합",
+    "kind": "진단 기준",
+    "population": "임신 초기 질출혈",
+    "statement": "자궁 안의 다낭성 덩이(태아 없음 — 완전기태) 또는 태반의 낭성 변화와 비정상 태아(부분기태), 주수에 비해 높은 β-hCG, 주수보다 큰 자궁. 확진은 소파 조직의 병리(완전기태는 p57 음성)로 한다 [[?williams-26]]",
+    "exceptions": "요즘은 초음파로 일찍 진단되어 주수보다 큰 자궁·심한 입덧 같은 고전 소견이 없는 경우가 많다. 부분기태는 β-hCG 가 크게 높지 않고 계류유산처럼 보일 수 있다 [[?williams-26]]",
+    "source": "williams-26",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "mole-followup",
+    "name": "소파 뒤 추적",
+    "kind": "치료 권고",
+    "population": "흡입소파를 받은 포상기태",
+    "statement": "β-hCG 를 정상이 될 때까지 주기적으로 추적하고, 추적 동안 믿을 만한 피임을 한다. 정체·상승하면 임신영양막종양으로 진단해 치료한다 [[?williams-26]]",
+    "exceptions": "정상화 뒤 추적 기간(완전기태·부분기태별)은 지침마다 다르다 — 원문 미대조",
+    "source": "williams-26",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "williams-26",
+    "org": "McGraw Hill",
+    "title": "Williams Obstetrics, 26th ed. — Gestational Trophoblastic Disease",
+    "kind": "textbook",
+    "citation": "Cunningham FG, Leveno KJ, Dashe JS, et al. Williams Obstetrics 26e — 임신영양막질환 장(장·쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 이 컨테이너에서 교과서 본문을 열지 못했다). 완전·부분기태의 핵형·임상 소견·추적 권고의 원문 문구와 장·쪽을 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "포상기태와 자궁외임신을 가르는 세 소견은?",
+    "a": "자궁 크기(주수보다 큼 vs 작음), 자궁 안(다낭성 덩이 vs 비어 있음), β-hCG(주수에 비해 매우 높음 vs 낮거나 느리게 오름)."
+   },
+   {
+    "q": "포상기태에서 심한 입덧·갑상선기능항진·난포막황체낭이 생기는 이유는?",
+    "a": "과증식한 영양막이 β-hCG 를 과다하게 만들기 때문이다."
+   },
+   {
+    "q": "포상기태 소파 뒤 무엇을 추적하는가?",
+    "a": "β-hCG 를 정상이 될 때까지 — 정체·상승하면 임신영양막종양. 추적 동안 피임."
+   },
+   {
+    "q": "큰 자궁과 높은 β-hCG 가 있는데 태아가 둘 보이면?",
+    "a": "다태 임신."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.obgyn.hydatidiform-mole.diagnosis#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 비어 있는 자궁과 부속기 덩이",
+    "stem": "29세 여성이 마지막 월경 7주 뒤 소량의 질출혈과 오른쪽 아랫배 통증으로 왔다. 혈압 112/70 mmHg, 맥박 96회/분, 호흡 18회/분, 체온 36.8 ℃. 자궁은 임신주수보다 작고 오른쪽 부속기에 압통이 있다. 혈청 β-hCG 는 2,600 mIU/mL 이다. 질식 초음파에서 자궁 안은 비어 있고 오른쪽 난소 옆에 3 cm 크기의 덩이가 보이며 더글러스와에 소량의 액체가 있다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "정상임신",
+     "절박유산",
+     "자궁외임신",
+     "쌍둥이임신",
+     "포상기태"
+    ],
+    "answer": 3,
+    "explanation": "β-hCG 가 질식 초음파 판별 수준을 넘었는데 자궁 안이 비어 있고, 부속기 덩이·복강 내 액체·편측 통증이 있으므로 자궁외임신이다 [[?williams-26]]. 원래 문항은 자궁이 크고 자궁 안이 다낭성 덩이로 차 있으며 β-hCG 가 매우 높아 포상기태였다 — 세 소견의 방향이 반대로 바뀌면 답도 바뀐다. 절박유산·정상임신은 자궁 안에 태낭·태아가 보여야 하고, 쌍둥이임신은 태아가 둘 보인다.",
+    "of": "kmle-2026-0089",
+    "changed": "「자궁이 주수보다 큼, 자궁 안 포도송이 소견, β-hCG 매우 높음」을 「자궁이 주수보다 작음, 자궁 안 비어 있음, β-hCG 2,600 mIU/mL, 오른쪽 부속기 덩이·더글러스와 액체, 오른쪽 아랫배 통증」으로 바꿈 → 답이 「포상기태」에서 「자궁외임신」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.hydatidiform-mole.diagnosis#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 고령 경산부",
+    "stem": "41세 경산부가 응급실에 왔다. 혈청 β-hCG 는 280,000 mIU/mL 이고, 질식 초음파에서 자궁 안에 태아나 태낭 없이 크기가 제각각인 작은 낭들이 모인 덩이가 자궁강을 채우고 있다. 마지막 월경은 10주 전이었고, 2주 전부터 갈색 질출혈이 있으며 물도 못 마실 만큼 토해 왔다. 혈압 132/84 mmHg, 맥박 102회/분, 호흡 18회/분, 체온 36.9 ℃. 자궁저부는 배꼽 높이에서 만져진다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "계류유산",
+     "자궁외임신",
+     "쌍둥이임신",
+     "포상기태",
+     "절박유산"
+    ],
+    "answer": 4,
+    "explanation": "임신 10주인데 자궁저부가 배꼽 높이로 주수보다 크고, 자궁 안이 태아 없는 다낭성 덩이로 차 있으며, β-hCG 가 주수에 비해 매우 높고 심한 입덧이 있다 — 포상기태(완전기태)다 [[?williams-26]]. 나이·경산·응급실 내원·검사를 먼저 제시한 순서가 달라도 세 결정 단서는 같다(고령은 오히려 위험 요인이다). 자궁외임신은 자궁 안이 비고 β-hCG 가 낮으며, 쌍둥이임신은 태아가 둘 보이고, 계류유산·절박유산은 태낭이 보이며 β-hCG 가 이렇게 높지 않다.",
+    "of": "kmle-2026-0089",
+    "changed": "나이(41세)·내원 경위(분만 경험 있는 여성의 응급실 방문)·제시 순서(검사 먼저)·수치 표기(β-hCG 280,000 mIU/mL)를 바꾸고 「주수보다 큰 자궁·태아 없는 자궁 안 다낭성 덩이·매우 높은 β-hCG·심한 입덧」은 그대로 → 답은 여전히 포상기태",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "임신 초기 질출혈 — 자궁 안에 무엇이 있나",
+  "geo": {
+   "title": "임신 초기 질출혈 — 자궁 안에 무엇이 있나",
+   "w": 708,
+   "h": 650.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "무월경 뒤 질출혈 · β-hCG",
+      "양성"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "iu",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "자궁 안 초음파에 무엇이",
+      "보이는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "자궁 안이 비었고 β-hCG 가",
+      "판별 수준 미만 — 48시간 뒤",
+      "β-hCG 와 초음파 재검"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 423.0
+    },
+    {
+     "id": "fetus",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "태아 심박이 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 276.0
+    },
+    {
+     "id": "threat",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "절박유산(또는 정상·다태",
+      "임신) — 경과 관찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "missed",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "계류유산 — 소파 조직 병리",
+      "확인(부분기태 가능)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 423.0
+    },
+    {
+     "id": "mole",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "포상기태 의심 — β-hCG·흉부",
+      "X선·갑상선 기능 → 흡입소파",
+      "→ 병리 확인 · β-hCG 추적"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 276.0
+    },
+    {
+     "id": "adnexa",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "부속기 덩이·복강 내 액체가",
+      "있거나 β-hCG 가 판별 수준",
+      "이상인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 276.0
+    },
+    {
+     "id": "ectopic",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "자궁외임신 — 혈역학 따라",
+      "수술 또는 메토트렉세이트"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 570.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "iu",
+     "points": [
+      [
+       340.0,
+       80
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "iu",
+     "to": "fetus",
+     "points": [
+      [
+       291.0,
+       210.0
+      ],
+      [
+       291.0,
+       220.0
+      ],
+      [
+       114.0,
+       220.0
+      ],
+      [
+       114.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "태낭·태아"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 84.8,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "iu",
+     "to": "mole",
+     "points": [
+      [
+       340.0,
+       210.0
+      ],
+      [
+       340.0,
+       226.0
+      ],
+      [
+       340.0,
+       226.0
+      ],
+      [
+       340.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "태아 없는 다낭성 덩이"
+      ],
+      "w": 118.2,
+      "h": 17,
+      "x": 280.9,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "iu",
+     "to": "adnexa",
+     "points": [
+      [
+       389.0,
+       210.0
+      ],
+      [
+       389.0,
+       232.0
+      ],
+      [
+       566.0,
+       232.0
+      ],
+      [
+       566.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비어 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 538.1,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "threat",
+     "points": [
+      [
+       420.3,
+       504.0
+      ],
+      [
+       420.3,
+       514.0
+      ],
+      [
+       259.7,
+       514.0
+      ],
+      [
+       259.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "재검에서 자궁 안 임신 확인"
+      ],
+      "w": 144.0,
+      "h": 17,
+      "x": 187.7,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "ectopic",
+     "points": [
+      [
+       485.7,
+       504.0
+      ],
+      [
+       485.7,
+       520.0
+      ],
+      [
+       420.3,
+       520.0
+      ],
+      [
+       420.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "재검에서 자궁외 확인"
+      ],
+      "w": 114.5,
+      "h": 17,
+      "x": 363.1,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "fetus",
+     "to": "threat",
+     "points": [
+      [
+       81.3,
+       323.0
+      ],
+      [
+       81.3,
+       333.0
+      ],
+      [
+       678,
+       333.0
+      ],
+      [
+       678,
+       524.0
+      ],
+      [
+       194.3,
+       524.0
+      ],
+      [
+       194.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "fetus",
+     "to": "missed",
+     "points": [
+      [
+       146.7,
+       323.0
+      ],
+      [
+       146.7,
+       339.0
+      ],
+      [
+       227.0,
+       339.0
+      ],
+      [
+       227.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "adnexa",
+     "to": "ectopic",
+     "points": [
+      [
+       533.3,
+       357.0
+      ],
+      [
+       533.3,
+       367.0
+      ],
+      [
+       692,
+       367.0
+      ],
+      [
+       692,
+       524.0
+      ],
+      [
+       485.7,
+       524.0
+      ],
+      [
+       485.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "adnexa",
+     "to": "info",
+     "points": [
+      [
+       598.7,
+       357.0
+      ],
+      [
+       598.7,
+       373.0
+      ],
+      [
+       453.0,
+       373.0
+      ],
+      [
+       453.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 432.5,
+      "y": 403.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "무월경 뒤 질출혈 · β-hCG 양성",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "자궁 안 초음파에 무엇이 보이는가?"
+     }
+    ]
+   },
+   {
+    "id": "iu",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "자궁 안 초음파에 무엇이 보이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "태낭·태아",
+      "to": 3,
+      "toText": "태아 심박이 있는가?"
+     },
+     {
+      "label": "태아 없는 다낭성 덩이",
+      "to": 4,
+      "toText": "포상기태 의심 — β-hCG·흉부 X선·갑상선 기능 → 흡입소파 → 병리 확인 · β-hCG 추적"
+     },
+     {
+      "label": "비어 있음",
+      "to": 5,
+      "toText": "부속기 덩이·복강 내 액체가 있거나 β-hCG 가 판별 수준 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "fetus",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "태아 심박이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 9,
+      "toText": "절박유산(또는 정상·다태 임신) — 경과 관찰"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "계류유산 — 소파 조직 병리 확인(부분기태 가능)"
+     }
+    ]
+   },
+   {
+    "id": "mole",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "포상기태 의심 — β-hCG·흉부 X선·갑상선 기능 → 흡입소파 → 병리 확인 · β-hCG 추적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "adnexa",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "부속기 덩이·복강 내 액체가 있거나 β-hCG 가 판별 수준 이상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 8,
+      "toText": "자궁외임신 — 혈역학 따라 수술 또는 메토트렉세이트"
+     },
+     {
+      "label": "아니다",
+      "to": 7,
+      "toText": "자궁 안이 비었고 β-hCG 가 판별 수준 미만 — 48시간 뒤 β-hCG 와 초음파 재검"
+     }
+    ]
+   },
+   {
+    "id": "missed",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "계류유산 — 소파 조직 병리 확인(부분기태 가능)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "자궁 안이 비었고 β-hCG 가 판별 수준 미만 — 48시간 뒤 β-hCG 와 초음파 재검",
+    "note": "",
+    "branches": [
+     {
+      "label": "재검에서 자궁외 확인",
+      "to": 8,
+      "toText": "자궁외임신 — 혈역학 따라 수술 또는 메토트렉세이트"
+     },
+     {
+      "label": "재검에서 자궁 안 임신 확인",
+      "to": 9,
+      "toText": "절박유산(또는 정상·다태 임신) — 경과 관찰"
+     }
+    ]
+   },
+   {
+    "id": "ectopic",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "자궁외임신 — 혈역학 따라 수술 또는 메토트렉세이트",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "threat",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "절박유산(또는 정상·다태 임신) — 경과 관찰",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0089"
+  ],
+  "hasErrors": false
+ },
  "cn.obgyn.pcos-infertility.ovulation-induction": {
   "id": "cn.obgyn.pcos-infertility.ovulation-induction",
   "title": "다낭성 난소 증후군의 무배란 불임 — 남성·난관 요인을 확인한 뒤 경구 배란 유도(레트로졸)부터 단계로 올라간다",
@@ -7593,10 +22961,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Endocrinology"
   ],
-  "version": 2,
+  "version": 3,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "ba87c27faa7225c6",
+  "hash": "722229d4eac214e7",
   "summary": [
    "불임 평가는 부부 둘 다 끝내고 치료한다 — 배란(황체기 프로게스테론), 난관(자궁난관조영술), 정액검사(WHO 기준) 세 축이 정상인지가 치료 단계를 정한다.",
    "무배란의 다른 원인(갑상선기능저하·고프로락틴혈증)은 배란 유도제보다 먼저 고친다. 비만이면 체중 감량이 자발 배란과 약물 배란 모두를 높인다.",
@@ -7917,6 +23285,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "무배란이 있어도 양쪽 난관이 막혀 있으면 배란을 유도해도 수정이 일어날 수 없다. 난관 요인에서는 체외수정이 성공률이 가장 높고, 감염성 난관 폐쇄·수난관의 재건은 성공률이 낮고 자궁외임신 위험이 커 권하지 않으며, 수난관을 절제하면 체외수정 성공률이 올라간다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.obgyn.pcos-infertility.ovulation-induction#v3",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 심한 남성 요인 동반",
+    "stem": "29세 여자가 2년간 피임 없이 규칙적으로 부부관계를 했으나 임신이 되지 않아 왔다. 초경 이후 월경이 2–4개월에 한 번 있고 턱에 굵은 털이 난다. 6개월간 식이·운동으로 체중을 5 kg 줄였으나 월경 주기는 그대로다. 황체기 프로게스테론은 0.9 ng/mL, 총 테스토스테론은 약간 높고, 질 초음파에서 양쪽 난소에 작은 난포가 각 15개 이상 보인다. TSH·프로락틴은 정상이고 자궁난관조영술에서 양쪽 난관이 잘 통과한다. 남편의 정액검사를 두 번 반복했는데 두 번 모두 정자 수 200만/mL, 운동성 12 % 였다. 임신을 위해 가장 적절한 치료는?",
+    "options": [
+     "레트로졸 투여",
+     "클로미펜 투여",
+     "메트포르민 단독 투여",
+     "저용량 생식샘자극호르몬 주사",
+     "체외수정(세포질내 정자 주입)"
+    ],
+    "answer": 5,
+    "explanation": "여성 쪽은 원래 문항과 같은 다낭성 난소 증후군 무배란이지만, 반복 정액검사에서 심한 정자 감소·운동성 저하가 있어 남성 요인이 함께 있다. 불임 평가는 부부 모두를 끝낸 뒤 단계를 정하며, 체외수정은 앞 단계가 실패했을 때뿐 아니라 난관·남성 요인이 함께 있을 때의 선택이다 [[harrison-21: 396장 p.3052]]. 배란 유도제(레트로졸·클로미펜·생식샘자극호르몬)는 배란만 해결할 뿐 정자 요인을 넘지 못한다. 원래 문항은 정액·난관이 정상이라 경구 배란 유도(레트로졸)가 1차였다.",
+    "of": "kmle-2026-1090",
+    "changed": "남편 정액검사를 정상에서 「정자 수 200만/mL·운동성 12 %」의 심한 남성 요인으로 바꿈 → 배란만 유도해서는 수정이 어렵고 남성 요인이 함께 있으므로 답이 「레트로졸」에서 「체외수정(세포질내 정자 주입)」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.pcos-infertility.ovulation-induction#v4",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 여드름이 동반된 20대",
+    "stem": "26세 여자가 결혼 후 1년 반 동안 피임 없이 지냈으나 임신이 되지 않아 왔다. 남편 정액검사와 자궁난관조영술은 이미 다른 병원에서 정상이었다. 월경은 1년에 4–5번뿐이고 얼굴 여드름과 윗입술 털이 심하다. 1년간 운동과 식이 조절로 체질량지수를 31에서 27로 줄였지만 월경은 달라지지 않았다. 황체기 프로게스테론은 1.1 ng/mL 이고 TSH·프로락틴은 정상이며, 질 초음파에서 양쪽 난소 부피가 커져 있고 작은 난포가 많다. 임신을 위해 가장 적절한 치료는?",
+    "options": [
+     "메트포르민 단독 투여",
+     "레트로졸 투여",
+     "체외수정",
+     "생식샘자극호르몬 주사",
+     "체중을 더 줄일 때까지 치료를 미룬다"
+    ],
+    "answer": 2,
+    "explanation": "희발월경·고안드로겐 증상·다낭성 난소 형태로 다낭성 난소 증후군이고, 황체기 프로게스테론이 낮아 무배란 불임이다. 나이·증상 표현이 달라도 결정 단서는 같다 — 정액·난관이 정상이고 생활습관 교정을 이미 했으므로 경구 배란 유도 단계이며, 국제 지침은 생아 출생률이 높고 다태가 적은 레트로졸을 1차로 권고한다 [[?pcos-intl-2023]] [[harrison-21: 396장 p.3052]]. 메트포르민은 2차 보조 약, 생식샘자극호르몬·체외수정은 경구 약 실패 뒤의 단계다.",
+    "of": "kmle-2026-1090",
+    "changed": "나이(26세)·고안드로겐 표현(여드름·다모증)·생활습관 교정 방식·검사 제시 순서를 바꾸고 「무배란 + 정액·난관 정상 + 체중 감량 이미 시행」은 그대로 → 답은 여전히 레트로졸",
     "flip": false
    }
   ],
@@ -8460,6 +23862,221 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ophth.chemical-burn.immediate-irrigation": {
+  "id": "cn.ophth.chemical-burn.immediate-irrigation",
+  "title": "안구 화학화상 — 검사보다 세척이 먼저인 이유",
+  "objective": "알칼리·산이 눈에 들어간 환자에서 시력·안압·세극등 검사나 안연고·안대보다 먼저 즉시 다량 지속 세척(결막낭 pH 중성까지)을 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "안구 화학화상(알칼리)",
+  "topic": "Ophthalmology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "3c66c7ee6648abf8",
+  "summary": [
+   "안구 화학화상은 시간이 손상을 정한다 — 화학물질이 결막낭에 남아 있는 동안 계속 침투한다.",
+   "알칼리는 세포막 지질을 비누화해 액화괴사를 만들고 깊이(각막 기질·전방)까지 파고든다. 산은 단백을 응고시켜 스스로 장벽을 만들어 대개 얕다.",
+   "그래서 첫 처치는 병력·검사보다 먼저 즉시·다량·지속 세척 — 점안마취 뒤 눈꺼풀을 벌리고 결막낭 pH 가 중성이 될 때까지.",
+   "세척 뒤에야 시력·세극등(각막 상피 결손·윤부 허혈)·안압을 평가하고 등급을 매긴다.",
+   "안연고+안대는 각막 찰과상의 처치다 — 화학화상에서 먼저 쓰면 남은 화학물질을 가둔다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>안구 화학화상은 산·알칼리가 결막·각막에 닿아 생기는 손상이다. 산업 현장·가정 세정제·시멘트·배터리액이 흔한 원인이며, <strong>노출 뒤 경과 시간과 물질의 성질</strong>이 손상 깊이를 정한다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 <strong>윤부(각막-결막 경계)의 줄기세포</strong>에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다.</p>\n<ul>\n<li><strong>알칼리</strong>는 세포막 지질을 비누화해 세포를 녹이며(액화괴사) 장벽 없이 기질·전방까지 들어간다. 기질 콜라겐 손상 → 각막 혼탁, 윤부 허혈 → 줄기세포 소실 → 상피가 재생되지 못한다 <sup>[2†]</sup>.</li>\n<li><strong>산</strong>은 단백을 응고시켜 표면에 응고층을 만들고, 그 층이 더 깊은 침투를 막는 경우가 많다(불산은 예외) <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>결막낭에 남은 화학물질 → 세척 전까지 손상이 계속된다. 「가장 먼저」의 근거.</li>\n<li>윤부 허혈(윤부 둘레가 하얗게 창백) → 줄기세포 손상의 신호, 예후가 나쁘다.</li>\n<li>각막 상피 결손 → 형광염색 양성, 심하면 기질 혼탁으로 홍채가 안 보인다.</li>\n<li>전방 침투 → 안압 상승·포도막염·백내장 같은 뒤따르는 합병증.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>경위가 판단을 정한다. 화학물질 노출이 확인되면 감별보다 세척이 먼저다. 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염·포도막염을 가른다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>세척으로 pH 를 정상화한 뒤: 시력, 세극등(형광염색으로 상피 결손 범위, 윤부 허혈 범위, 각막 혼탁), 안압. 이 소견으로 중증도를 매겨 예후와 치료 수준을 정한다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>즉시 세척</strong> — 점안마취 뒤 눈꺼풀을 벌려 생리식염수·링거액 등으로 다량 지속 세척, 결막낭 pH 가 중성이 될 때까지 <sup>[2†]</sup>. 수돗물이라도 지체 없이 쓰는 편이 낫다.</li>\n<li>눈꺼풀을 뒤집어 남은 입자(시멘트·석회)를 제거한다.</li>\n<li>세척 뒤 평가에 따라 항생제 점안(감염 예방), 조절마비제(통증), 안압 조절, 염증 조절(스테로이드는 안과 판단으로 초기에 짧게) <sup>[2†]</sup>.</li>\n<li>중증(윤부 허혈 넓음)은 안과 수술적 재건(양막 이식 등)까지 이어질 수 있다.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>검사·병력 청취·전원은 세척을 늦출 이유가 아니다.</li>\n<li>안연고+안대는 찰과상의 처치이며 세척 뒤의 일이다 <sup>[1 32장 p.218]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "왜 「pH 중성까지」인가",
+    "deep": true,
+    "html": "<p>세척량을 리터로 정하지 않고 pH 로 정하는 것은, 조직 속에 스며든 알칼리가 세척을 멈춘 뒤에도 결막낭으로 다시 스며 나오기 때문이다. 그래서 중성이 된 뒤 잠시 기다려 다시 재고, 다시 오르면 세척을 이어 간다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "알칼리와 산 화상의 차이",
+    "columns": [
+     "",
+     "알칼리",
+     "산"
+    ],
+    "rows": [
+     [
+      "예",
+      "세정제·시멘트·석회·양잿물·암모니아",
+      "배터리액·표백·산업용 산"
+     ],
+     [
+      "조직 반응",
+      "지질 비누화 → 액화괴사",
+      "단백 응고 → 응고괴사"
+     ],
+     [
+      "침투",
+      "깊다(기질·전방까지)",
+      "대개 얕다(응고층이 장벽)"
+     ],
+     [
+      "예후",
+      "대개 더 나쁘다",
+      "대개 덜 나쁘다(불산은 예외)"
+     ]
+    ],
+    "note": "표 전체는 일반 안과 서술로 이 정리본에서 원문 대조하지 않았다 <sup>[2†]</sup>. 첫 처치(즉시 세척)는 둘이 같다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「심한 안통·시야흐림 = 녹내장 발작 → 안압부터」 vs 화학화상",
+    "point": "통증·시야흐림이 같아도 경위가 화학물질 노출이면 판단 순서가 바뀐다. 검사하는 몇 분 동안에도 알칼리는 침투하므로, 안압·세극등·시력 측정은 세척으로 pH 를 정상화한 뒤에 한다.",
+    "exception": "화학물질 노출 없이 급성 안통·충혈·동공 중간 산대·혼탁 각막이 있으면 급성 폐쇄각녹내장을 의심해 안압을 잰다.",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "안연고+안대: 찰과상의 처치를 화상에 옮기기",
+    "point": "해리슨은 각막 상피가 벗겨진 찰과상에 항생제 안연고와 안대를 쓴다고 적지만 <sup>[1 32장 p.218]</sup>, 그것은 이물을 제거·세척한 뒤의 처치다. 화학화상에서 먼저 덮으면 남은 화학물질을 결막낭에 가둔다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "chem-irrigate-first",
+    "name": "즉시 세척",
+    "kind": "응급 처치 원칙",
+    "population": "화학물질 안구 노출",
+    "statement": "시력 측정·정밀 검사보다 먼저 즉시 다량 세척하고, 결막낭 pH 가 중성이 될 때까지 계속한다 [[?eslani-2014]]",
+    "exceptions": "안구 천공이 의심되는 개방성 손상이 함께 있으면 압박을 피한다 — 이 판단도 세척을 늦추는 이유가 되지는 않는다(미대조)",
+    "source": "eslani-2014",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 32: Disorders of the Eye",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 32장 p.218 (Trauma — foreign body · corneal abrasion)",
+    "checked": "본문 대조(드라이브 32장 문서) — p.218 이물은 점안마취 뒤 제거하거나 식염수·인공눈물로 다량 세척해 씻어낼 수 있고, 각막 상피가 벗겨졌으면 항생제 안연고와 안대, 조절마비제 · 32장 p.215–231 에서 'chemical'·'alkali'·'burn' 을 찾았으나 안구 화학화상 서술은 없다(화학화상 처치는 해리슨 대조 불가)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "eslani-2014",
+    "org": "Eslani M, Baradaran-Rafii A, Movahedan A, Djalilian AR (종설)",
+    "title": "The ocular surface chemical burns",
+    "kind": "review",
+    "citation": "J Ophthalmol 2014;2014:196827",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 접근이 막혀 대조하지 못함(즉시 세척·pH 목표·알칼리 기전 서술은 미대조)",
+    "doi": "10.1155/2014/196827",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2014",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1155/2014/196827"
+   }
+  ],
+  "checks": [
+   {
+    "q": "알칼리가 산보다 눈에 더 위험한 이유는?",
+    "a": "지질을 비누화해 액화괴사를 만들며 깊이 침투하기 때문이다. 산은 단백을 응고시켜 얕은 장벽을 만든다."
+   },
+   {
+    "q": "화학화상 세척은 언제 멈추나?",
+    "a": "결막낭 pH 가 중성이 되었을 때(세척을 멈춘 뒤 잠시 기다려 다시 재어 다시 오르지 않는지 확인)."
+   },
+   {
+    "q": "화학화상에서 안압·세극등 검사의 자리는?",
+    "a": "세척으로 pH 를 정상화한 뒤 — 손상 정도(각막 상피 결손·윤부 허혈)와 합병증 평가 단계에서."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ophth.chemical-burn.immediate-irrigation#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 화학물질 노출이 없는 급성 안통",
+    "stem": "62세 여자가 어두운 영화관에서 나온 뒤부터 갑자기 오른쪽 눈이 몹시 아프고 흐리게 보이며 두통과 구토가 있어 왔다. 불빛 둘레에 무지개 같은 빛이 번져 보인다고 한다. 눈에 무엇이 들어가거나 다친 적은 없다. 오른쪽 눈은 충혈되고 각막이 뿌옇고 동공은 중간 크기로 커져 빛에 느리게 반응한다. 다음 중 가장 먼저 시행할 것은?",
+    "options": [
+     "안압 측정",
+     "생리식염수로 다량 지속 세척",
+     "항생제 안연고 도포 후 안대",
+     "스테로이드 점안 후 경과관찰",
+     "동공 산대제 점안 후 안저검사"
+    ],
+    "answer": 1,
+    "explanation": "화학물질 노출이 없고, 어두운 곳 뒤 갑작스러운 한쪽 안통·두통·구토·무지개 빛 번짐·혼탁 각막·중간 산대 고정 동공은 급성 폐쇄각녹내장이다 — 안압을 재어 확인하고 곧바로 안압을 낮춘다. 원래 문항처럼 알칼리가 튄 경위가 있으면 어떤 검사보다 세척이 먼저다. 산대제는 폐쇄각을 악화시킨다.",
+    "of": "kmle-2026-0093",
+    "changed": "경위를 「알칼리 세정제가 튐」에서 「노출 없이 저녁에 갑자기 시작한 한쪽 눈 통증·두통·구토, 무지개 빛 번짐」으로 바꾸고 혼탁 각막·중간 산대 동공을 넣음 → 급성 폐쇄각녹내장이 되어 답이 「즉시 세척」에서 「안압 측정」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ophth.chemical-burn.immediate-irrigation#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 공사장 시멘트 가루",
+    "stem": "27세 여자가 공사장에서 일하다 바람에 날린 시멘트 가루가 왼쪽 눈에 들어가 10분 뒤 응급실에 왔다. 눈이 타는 듯 아프고 눈물이 멈추지 않으며 눈을 뜨기 어렵다. 접수 직원이 시력검사표 앞에 서도록 안내하였다. 다음 중 가장 먼저 시행할 것은?",
+    "options": [
+     "시력 측정",
+     "세극등 형광염색 검사",
+     "점안마취 뒤 다량 지속 세척(pH 중성까지)",
+     "항생제 안연고 도포 후 안대",
+     "스테로이드 점안"
+    ],
+    "answer": 3,
+    "explanation": "시멘트·석회는 알칼리다. 물질 이름과 장소가 달라도 결정 단서는 같다 — 화학물질이 결막낭에 남아 있는 한 손상이 진행하므로 시력 측정·세극등보다 즉시 다량 세척이 먼저이고, pH 가 중성이 될 때까지 계속한다 [[?eslani-2014]]. 시멘트 덩어리는 눈꺼풀을 뒤집어 결막낭에서 제거한다. 안연고·안대는 남은 알칼리를 가둔다.",
+    "of": "kmle-2026-0093",
+    "changed": "나이·성별(27세 여자)·물질(시멘트 가루·석회)·장소(공사장)·제시 순서(시력 측정 요청을 먼저 제시)를 바꾸고 「알칼리 노출 직후」는 그대로 → 답은 여전히 즉시 다량 지속 세척",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0093"
+  ],
+  "hasErrors": false
+ },
  "cn.ophth.crao.arteritic-workup": {
   "id": "cn.ophth.crao.arteritic-workup",
   "title": "망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다",
@@ -8471,10 +24088,10 @@ window.MEDKOS_CONCEPTS = {
    "Rheumatology",
    "Neurology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "bf6c176f71df6974",
+  "hash": "d2e16a47f8018f0c",
   "summary": [
    "망막중심동맥폐쇄 = 갑작스러운 무통 단안 시력소실 + 상대구심동공결손 + 창백한(우윳빛) 망막과 붉은 중심오목. 이미 막힌 눈의 회복은 드물다.",
    "원인은 둘로 가른다 — 색전(경동맥·대동맥 죽상판, 심장)이 가장 흔하고, 거대세포동맥염에 의한 동맥염성 폐쇄는 드물지만 며칠 안에 반대쪽 눈까지 잃게 한다.",
@@ -8738,6 +24355,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "염증 지표가 높은 동맥염성 폐쇄 의심에서는 생검을 기다리지 않고 고용량 글루코코르티코이드를 즉시 시작해 반대쪽 눈을 지킨다. 생검은 되도록 빨리 하되 치료를 미루는 이유가 되지 않는다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.ophth.crao.arteritic-workup#v3",
+    "context": "같은 70대 망막중심동맥폐쇄, 원인 단서 하나를 동맥염에서 경동맥 죽상판으로 바꾼 변형",
+    "stem": "73세 여자가 3시간 전 갑자기 오른쪽 눈이 통증 없이 거의 보이지 않게 되어 응급실에 왔다. 두통·두피 압통·씹을 때 턱 통증·어깨 뻣뻣함·체중 감소는 없다. 한 달 전 오른쪽 눈이 몇 분 동안 커튼이 내려오듯 캄캄해졌다가 돌아온 적이 있다. 고혈압·이상지질혈증이 있고 30년간 담배를 피웠다. 오른쪽 목에서 수축기 잡음이 들린다. 오른쪽 상대구심동공결손이 있고, 안저에서 망막이 전반적으로 창백하고 중심오목이 붉으며 망막 동맥 갈림 부위에 노랗게 반짝이는 작은 색전이 보인다. 맥박 72회/분(규칙적), 심전도는 정상 동리듬이다. 적혈구침강속도 14 mm/h, C반응단백 0.2 mg/dL, 혈색소·혈소판은 정상이다. 원인을 찾기 위해 가장 먼저 해야 할 검사는?",
+    "options": [
+     "경동맥 도플러 초음파",
+     "측두동맥 생검",
+     "형광안저혈관조영술",
+     "적혈구침강속도와 C반응단백 재검",
+     "24시간 활동 심전도"
+    ],
+    "answer": 1,
+    "explanation": "망막중심동맥폐쇄 자체는 원래 문항과 같지만 원인 단서가 바뀌었다. 동맥염 증상이 없고 염증 지표가 정상이며, 같은 쪽 경동맥 잡음·일과성 흑암시 병력·망막 동맥 안의 콜레스테롤 색전(Hollenhorst 판)은 경동맥 죽상판에서 온 색전을 가리킨다 — 그래서 같은 쪽 경동맥 도플러 초음파로 출처를 먼저 찾는다(뇌 확산강조 MRI·심장 평가도 이어서 한다). 측두동맥 생검은 동맥염이 의심될 때의 검사이고, 규칙적 맥박·정상 동리듬에서 활동 심전도는 출처 탐색의 첫 순서가 아니며, 형광안저혈관조영술은 원인을 알려 주지 않는다.",
+    "of": "kmle-2026-1095",
+    "changed": "관자놀이 두통·두피 압통·턱 파행·근위부 뻣뻣함·빈혈·혈소판 증가 → 동맥염 증상 없음·염증 지표 정상, 대신 같은 쪽 경동맥 잡음과 망막 동맥 안 반짝이는 색전(Hollenhorst 판) ⇒ 정답이 적혈구침강속도·C반응단백에서 경동맥 도플러 초음파로",
+    "flip": true
+   },
+   {
+    "id": "cn.ophth.crao.arteritic-workup#v4",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(동맥염 증상·반대쪽 눈 보호)는 같다",
+    "stem": "79세 남자가 오늘 아침 일어나 보니 왼쪽 눈이 통증 없이 손 움직임만 보여 딸과 함께 왔다. 왼쪽 상대구심동공결손이 있고, 안저에서 왼쪽 망막이 우윳빛으로 창백하며 중심오목만 붉고 동맥이 가늘다. 오른쪽 눈은 정상이다. 딸에 따르면 한 달 전부터 머리 옆쪽이 아프다며 모자를 쓰면 두피가 쓰리다고 했고, 고기를 씹다가 턱이 아파 자주 멈추었으며, 아침에 양쪽 어깨가 뻣뻣해 옷 입기가 힘들었다. 당뇨병 약을 먹는다. 맥박은 규칙적이고 경동맥 잡음은 없다. 혈색소 11.2 g/dL, 혈소판 452,000/mm³ 이다. 반대쪽 눈의 시력을 지키기 위해 가장 먼저 확인해야 할 검사는?",
+    "options": [
+     "경흉부 심장초음파",
+     "적혈구침강속도와 C반응단백",
+     "뇌 자기공명영상(확산강조)",
+     "경동맥 도플러 초음파",
+     "형광안저혈관조영술"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·눈의 쪽·정보 제시 순서가 바뀌었지만 결정 단서는 같다 — 50세 이상의 새 관자놀이 두통·두피 압통·턱 파행·류마티스다발근통 증상·빈혈·혈소판 증가는 거대세포동맥염에 의한 동맥염성 폐쇄를 가리키고, 치료하지 않으면 며칠 안에 반대쪽 눈을 잃을 수 있다. 그래서 적혈구침강속도·C반응단백을 즉시 확인하고, 높으면 생검을 기다리지 않고 고용량 글루코코르티코이드를 시작한다. 경동맥·심장·뇌 영상은 색전 원인 평가로 뒤에 한다.",
+    "of": "kmle-2026-1095",
+    "changed": "74세 여자·오른쪽·관자놀이 두통 먼저 제시 → 79세 남자·왼쪽·시력소실과 안저를 먼저, 동맥염 증상은 뒤에(두피 압통·턱 파행·근위부 뻣뻣함·빈혈·혈소판 증가는 그대로) ⇒ 답은 그대로 적혈구침강속도·C반응단백",
     "flip": false
    }
   ],
@@ -9374,6 +25025,806 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ophth.crvo.neovascular-glaucoma-risk": {
+  "id": "cn.ophth.crvo.neovascular-glaucoma-risk",
+  "title": "허혈성 중심망막정맥폐쇄 뒤 가장 경계할 합병증 — 망막 허혈이 VEGF 를 통해 홍채·전방각 신생혈관을 만들어 신생혈관녹내장으로 간다",
+  "objective": "네 사분면 망막출혈·정맥 확장·유두부종에 상대구심동공운동장애 양성인 허혈성 중심망막정맥폐쇄에서 추적 중 가장 경계할 합병증이 신생혈관녹내장임을 고르고, 기전(허혈 → VEGF → 홍채·전방각 신생혈관)이 없는 망막박리·황반변성·거짓비늘녹내장·망막색소변성과 가른다",
+  "objectiveKind": "예후",
+  "condition": "중심망막정맥폐쇄(허혈성)",
+  "topic": "Ophthalmology",
+  "seeAlso": [
+   "Cardiology",
+   "Internal Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "60270135bd58579c",
+  "summary": [
+   "중심망막정맥폐쇄(CRVO)는 사상판 부근에서 중심망막정맥이 혈전으로 막혀 네 사분면 전체에 화염모양 출혈·면화반·정맥 확장·유두부종이 생기는 병이다. 고혈압·고령·녹내장이 위험인자다.",
+   "허혈형과 비허혈형으로 나눈다. 시력이 매우 나쁘고(흔히 0.1 이하), 상대구심동공운동장애(RAPD)가 뚜렷하고, 출혈·면화반이 광범위하면 허혈형을 시사한다 [[?aao-rvo-ppp-2019]].",
+   "허혈 망막은 VEGF 를 분비한다 → VEGF 가 전안부로 퍼져 홍채(NVI)·전방각(NVA) 신생혈관 → 섬유혈관막이 전방각을 덮어 안압이 오른다 = 신생혈관녹내장. 흔히 수개월(「90일 녹내장」) 안에 온다 [[?cvos-1997]].",
+   "그래서 추적의 핵심은 처음 몇 개월 동안 자주(매달) 산동 전 세극등으로 홍채를 보고 전방각경검사로 전방각을 보는 것이다. 신생혈관이 보이면 범망막광응고 ± 항VEGF 주사 [[?cvos-1997]] [[?aao-rvo-ppp-2019]].",
+   "황반부종은 가장 흔한 시력 저하 원인이지만(항VEGF 로 치료), 「가장 두려운」 합병증은 통증·실명으로 가는 신생혈관녹내장이다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>중심망막정맥폐쇄(CRVO)는 중심망막정맥이 시신경 사상판 부근에서 막혀 망막 전체의 정맥 배출이 막히는 병이다. 허혈형과 비허혈형으로 나누며, 허혈형의 가장 두려운 합병증이 신생혈관녹내장이다. 이 정리본의 목표는 <strong>CRVO 를 보고 허혈형을 알아차린 뒤, 무엇을(홍채·전방각 신생혈관) 언제까지 추적해야 하는지</strong>를 고르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 망막 동맥으로 들어온 혈액은 모세혈관을 지나 망막정맥으로 모여 사상판을 통과해 눈 밖으로 나간다. 사상판 부근에서 중심망막동맥과 정맥은 같은 외막을 공유해, 동맥경화로 굳은 동맥이 정맥을 누르면 난류·내피 손상·혈전이 생긴다 — 그래서 고혈압·고령·죽상경화 위험인자가 흔하고, 사상판을 누르는 녹내장(안압 상승)도 위험인자다.</p>\n<p>정맥이 막히면 상류의 모세혈관 압력이 올라 네 사분면 전체에 출혈(신경섬유층이면 화염모양)과 부종이 생기고, 유두가 붓는다. 관류가 크게 떨어지면 망막이 허혈에 빠지고(면화반 = 신경섬유층 경색), 허혈 망막은 VEGF 를 분비한다. VEGF 는 유리체·방수를 따라 앞쪽으로 퍼져 <strong>홍채 표면과 전방각에 새 혈관</strong>을 자라게 하고, 신생혈관을 따라온 섬유혈관막이 섬유주를 덮은 뒤 수축하면 전방각이 닫혀 안압이 오른다 — 신생혈관녹내장이다. 같은 VEGF 가 황반 혈관의 투과성을 높여 황반부종도 만든다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>갑작스러운 무통성 한쪽 시력 저하</strong> — 정맥 배출이 한순간에 막힌다.</li>\n<li><strong>네 사분면 출혈·정맥 확장·구불거림·유두부종</strong> — 한 가지(분지)가 아니라 본줄기가 막혔다는 뜻.</li>\n<li><strong>면화반·RAPD 양성·매우 나쁜 시력</strong> — 망막 허혈이 넓다(허혈형 시사) <sup>[2†]</sup>.</li>\n<li><strong>발병 초기 안압 정상</strong> — 신생혈관이 전방각을 덮기 전이다. 정상 안압은 위험이 없다는 뜻이 아니다.</li>\n<li><strong>공복혈당 정상</strong> — 당뇨망막병증이 아니라는 점을 가르는 정보(당뇨도 CRVO 위험인자이긴 하다).</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>분지망막정맥폐쇄</strong>: 한 사분면(흔히 위이측)만, 동정맥 교차부에서.</li>\n<li><strong>당뇨망막병증</strong>: 양측, 미세동맥류·경성삼출물, 혈당 이상.</li>\n<li><strong>고혈압망막병증(악성)</strong>: 양측, 혈압 매우 높음, 유두부종 양측.</li>\n<li><strong>중심망막동맥폐쇄</strong>: 체리붉은 반점·창백한 망막, 출혈이 적다(<code>cn.ophth.crao.arteritic-workup</code>).</li>\n<li>합병증의 감별은 위 표 — 기전이 다른 병은 CRVO 의 추적 대상이 아니다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>시력·RAPD·안압, 산동 전 홍채 세극등(신생혈관), 전방각경검사, 산동 안저검사, 빛간섭단층촬영(황반부종), 형광안저혈관조영(비관류 범위 — 허혈 판단). 전신: 혈압, 혈당·당화혈색소, 지질, 혈구. 젊은 환자나 양측이면 과응고 상태 검사를 고려한다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>황반부종</strong>: 항VEGF 유리체내 주사가 1차, 스테로이드 주사는 대안 <sup>[2†]</sup>.</li>\n<li><strong>홍채·전방각 신생혈관</strong>: 즉시 범망막광응고로 허혈 망막의 VEGF 생산을 줄이고, 항VEGF 주사로 신생혈관을 빠르게 퇴행시킨다 <sup>[1†]</sup>.</li>\n<li><strong>신생혈관녹내장이 생긴 뒤</strong>: 안압하강제, 범망막광응고·항VEGF, 필요하면 방수유출관 삽입술·섬모체 파괴술.</li>\n<li><strong>전신 위험인자 조절</strong>: 혈압·혈당·지질 — 반대쪽 눈의 폐쇄를 예방한다.</li>\n</ul>\n<p><strong>반응 확인·재평가.</strong> 허혈형은 처음 수개월(대략 6개월) 매달 홍채·전방각을 본다. 레이저 뒤 신생혈관이 퇴행하는지, 안압이 조절되는지, 황반부종이 줄어 시력이 회복되는지를 추적한다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>허혈형 CRVO 에서 추적할 곳은 망막만이 아니라 <strong>홍채와 전방각</strong>이다.</li>\n<li>신생혈관이 보일 때 즉시 레이저 — CVOS 는 일률적 예방 레이저보다 신생혈관 발견 즉시 치료를 권했다 <sup>[1†]</sup>.</li>\n<li>비허혈형도 허혈로 바뀔 수 있어 추적을 끊지 않는다.</li>\n<li>이 슬롯은 안과 손 슬롯이라 해리슨 대조 대상이 아니다. CVOS·AAO PPP 는 원문을 열지 못해 서지만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "「90일 녹내장」이라는 말이 뜻하는 것",
+    "deep": true,
+    "html": "<p>허혈성 CRVO 에서 신생혈관녹내장이 대개 발병 뒤 수개월 안(흔히 3개월 전후)에 생긴다고 해서 「90일 녹내장」이라 불러 왔다. 핵심은 숫자가 아니라 시간 구조다 — 허혈 망막이 VEGF 를 쌓아 전안부 혈관이 자라고 전방각을 덮는 데 수주~수개월이 걸리므로, 그 기간에 자주 보면 안압이 오르기 전에 신생혈관 단계에서 잡을 수 있다. 항VEGF 주사를 황반부종 때문에 반복 중이면 신생혈관이 억제돼 있다가 주사를 멈춘 뒤 나타날 수 있어, 주사 간격이 벌어질 때도 홍채·전방각 추적을 이어 간다. 구체 수치(비관류 문턱·빈도)는 원문 대조가 필요하다 <sup>[1†]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "CRVO 뒤 합병증 — 무엇이, 어떤 기전으로",
+    "columns": [
+     "합병증",
+     "기전",
+     "언제·누구",
+     "잡는 법"
+    ],
+    "rows": [
+     [
+      "신생혈관녹내장",
+      "망막 허혈 → VEGF → 홍채·전방각 신생혈관 → 전방각 폐쇄",
+      "허혈형, 수개월 안(「90일」) <sup>[1†]</sup>",
+      "매달 홍채·전방각경검사"
+     ],
+     [
+      "황반부종",
+      "정맥압 상승·VEGF → 혈관 누출",
+      "허혈·비허혈 모두, 가장 흔한 시력 저하 원인",
+      "빛간섭단층촬영"
+     ],
+     [
+      "유리체출혈",
+      "망막·유두 신생혈관 출혈",
+      "허혈형",
+      "안저·초음파"
+     ],
+     [
+      "비허혈 → 허혈 전환",
+      "관류 악화",
+      "비허혈형 일부",
+      "시력·RAPD·혈관조영 추적"
+     ]
+    ],
+    "note": "모두 「허혈과 VEGF」 한 줄기에서 나온다. 기전이 다른 병(열공망막박리·황반변성·거짓비늘녹내장·망막색소변성)은 CRVO 의 합병증 목록에 들지 않는다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "노년황반변성 vs 신생혈관녹내장 — 「노인의 한쪽 시력 저하 = 황반변성」",
+    "point": "노년황반변성(특히 습성)도 VEGF 가 관여하는 신생혈관 질환이지만, 혈관이 자라는 자리는 맥락막(황반 아래)이고 원인은 나이 관련 브루크막·망막색소상피 변화다. 정맥폐쇄의 결과가 아니며 네 사분면 출혈·정맥 확장·유두부종을 설명하지 못한다. CRVO 의 허혈이 만드는 신생혈관은 홍채·전방각으로 가서 안압을 올린다 — 추적할 것은 홍채·전방각이다 <sup>[1†]</sup>.",
+    "exception": "CRVO 뒤 황반의 시력 저하는 황반부종이 흔한 원인이다 — 황반변성이 아니다. 고령이라 두 병이 한 눈에 함께 있을 수는 있지만 인과는 없다.",
+    "cites": ""
+   },
+   {
+    "contrast": "열공망막박리 vs 정맥폐쇄 합병증 — 「망막 병이니 망막박리」",
+    "point": "열공망막박리는 유리체 견인이 망막을 찢어 액체가 들어가는 기계적 병으로, 광시증·비문증·커튼 시야결손이 신호다. 정맥폐쇄의 허혈-VEGF 경로와 무관하다.",
+    "exception": "증식성 병변(당뇨망막병증·허혈성 정맥폐쇄의 섬유혈관 증식)은 견인망막박리를 일으킬 수 있다 — 열공성과 기전이 다르다.",
+    "cites": ""
+   },
+   {
+    "contrast": "안압이 지금 정상 → 녹내장 걱정 없음?",
+    "point": "발병 당일 안압 정상은 신생혈관녹내장 위험을 낮추지 않는다. 신생혈관은 수주~수개월에 걸쳐 자라고, 전방각이 덮인 뒤에야 안압이 오른다. 그래서 안압이 아니라 홍채·전방각을 직접 본다 <sup>[1†]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "신생혈관은 산동 전에 홍채 동공연에서 먼저 보이는 경우가 많다 — 산동하면 가려질 수 있다.",
+   "비허혈형도 일부가 허혈형으로 바뀐다 — 비허혈이라고 추적을 끊지 않는다.",
+   "고혈압·당뇨·녹내장 같은 위험인자는 반대쪽 눈 폐쇄 예방을 위해 함께 조절한다."
+  ],
+  "criteria": [
+   {
+    "id": "ischemic-signs",
+    "name": "허혈성 CRVO 를 시사하는 소견",
+    "kind": "진단 기준",
+    "population": "CRVO 환자",
+    "statement": "시력 저하가 심함, 뚜렷한 RAPD, 광범위한 망막 출혈·면화반, 형광안저혈관조영에서 넓은 모세혈관 비관류(CVOS 에서는 10 유두면적 이상) [[?cvos-1997]]",
+    "exceptions": "초기에는 출혈이 비관류를 가려 혈관조영으로 판단하기 어렵다 — 비허혈형도 추적 중 허혈형으로 바뀔 수 있다",
+    "source": "cvos-1997",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "crvo-followup",
+    "name": "CRVO 추적과 신생혈관 치료",
+    "kind": "치료 권고",
+    "population": "CRVO 환자(특히 허혈성)",
+    "statement": "처음 6개월 동안 매달 가깝게 추적하며 산동 전 홍채 세극등 검사와 전방각경검사로 신생혈관을 찾는다. 홍채·전방각 신생혈관이 생기면 즉시 범망막광응고(± 항VEGF)를 한다 — 예방적 범망막광응고는 일률적으로 권하지 않는다 [[?cvos-1997]] [[?aao-rvo-ppp-2019]]",
+    "exceptions": "추적이 어려운 환자에서는 예방적 레이저를 고려하기도 한다 — 원문 대조 필요",
+    "source": "cvos-1997",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "cvos-1997",
+    "org": "Central Vein Occlusion Study Group",
+    "title": "Natural history and clinical management of central retinal vein occlusion",
+    "kind": "trial",
+    "citation": "The Central Vein Occlusion Study Group. Arch Ophthalmol 1997;115(4):486-491",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 비관류 문턱·추적 간격·예방 레이저 권고의 수치는 기억에 근거하며 사람 대조가 필요하다. DOI 도 확인하지 못한 값이다",
+    "doi": "10.1001/archopht.1997.01100150488006",
+    "pmid": "",
+    "verified": "citation",
+    "year": "1997",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1001/archopht.1997.01100150488006"
+   },
+   {
+    "id": "aao-rvo-ppp-2019",
+    "org": "American Academy of Ophthalmology",
+    "title": "Retinal Vein Occlusions Preferred Practice Pattern",
+    "kind": "guideline",
+    "citation": "Flaxel CJ, Adelman RA, Bailey ST, et al. Ophthalmology 2020;127(2):P288-P320",
+    "checked": "서지만(원문 미대조). 허혈형 판단 소견·추적 간격·항VEGF 역할 서술은 원문 대조가 필요하다",
+    "doi": "10.1016/j.ophtha.2019.09.029",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/j.ophtha.2019.09.029"
+   }
+  ],
+  "checks": [
+   {
+    "q": "허혈성 CRVO 뒤 가장 경계할 합병증과 그 기전은?",
+    "a": "신생혈관녹내장 — 망막 허혈이 VEGF 를 분비해 홍채·전방각에 신생혈관이 자라고 전방각을 덮어 안압이 오른다."
+   },
+   {
+    "q": "허혈형을 시사하는 진찰 소견 하나는?",
+    "a": "뚜렷한 상대구심동공운동장애(RAPD) — 그 밖에 매우 나쁜 시력, 광범위 출혈·면화반."
+   },
+   {
+    "q": "추적에서 무엇을 보는가?",
+    "a": "처음 수개월 매달 산동 전 홍채 세극등과 전방각경검사로 신생혈관을 찾는다(안압 정상은 안심 근거가 아님)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ophth.crvo.neovascular-glaucoma-risk#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 급성 후유리체박리와 망막열공",
+    "stem": "58세 남자가 어제 저녁부터 오른쪽 눈에 번쩍이는 빛이 보이고 검은 점이 갑자기 많이 떠다닌다며 왔다. 통증은 없고 시력은 1.0 이다. 고도근시로 안경을 쓴다. 상대구심동공운동장애는 없고 안압은 14 mmHg 이다. 산동 안저검사에서 망막정맥과 시신경유두는 정상이고 망막출혈은 없으며, 위쪽 주변부 망막에 말굽 모양 열공이 있으나 망막은 붙어 있다. 앞으로 가장 경계해야 할 합병증은?",
+    "options": [
+     "신생혈관녹내장",
+     "열공망막박리",
+     "거짓비늘녹내장",
+     "망막색소변성",
+     "노년황반변성"
+    ],
+    "answer": 2,
+    "explanation": "고도근시 환자의 급성 광시증·비문증은 후유리체박리이고, 유리체가 당겨 생긴 말굽 모양 열공으로 액체가 들어가면 열공망막박리가 된다 — 경계할 것은 이것이며 열공은 레이저로 둘러막는다. 원래 문항은 네 사분면 출혈·정맥 확장·유두부종·RAPD 로 허혈성 CRVO 였고, 허혈 → VEGF 경로의 신생혈관녹내장이 답이었다. 이 사례에는 망막 허혈이 없으므로 신생혈관녹내장의 근거가 없다.",
+    "of": "kmle-2026-0574",
+    "changed": "네 사분면 출혈·정맥 확장·유두부종·RAPD 를 없애고, 고도근시에 갑작스러운 광시증·비문증 소나기·주변부 말굽 모양 망막열공(박리 없음)으로 바꿈 → 경계할 합병증이 신생혈관녹내장에서 열공망막박리로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ophth.crvo.neovascular-glaucoma-risk#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 녹내장 치료 중인 고령 여자",
+    "stem": "74세 여자가 1주 전부터 왼쪽 눈이 뿌옇게 안 보인다며 왔다. 통증은 없다. 고혈압과 개방각녹내장으로 치료 중이다. 왼쪽 시력은 안전수지이고 왼쪽 상대구심동공운동장애가 뚜렷하다. 안압은 양쪽 16 mmHg 이고 홍채에 새 혈관은 아직 보이지 않는다. 왼쪽 안저에서 시신경유두가 부어 있고, 망막정맥이 굵고 구불구불하며, 네 사분면 모두에 화염모양 출혈과 여러 개의 면화반이 있다. 앞으로 매달 추적하며 가장 경계해야 할 합병증은?",
+    "options": [
+     "신생혈관녹내장",
+     "열공망막박리",
+     "급성 폐쇄각녹내장(동공차단)",
+     "망막색소변성",
+     "노년황반변성"
+    ],
+    "answer": 1,
+    "explanation": "네 사분면 출혈·정맥 확장·유두부종은 CRVO 이고, 매우 나쁜 시력·뚜렷한 RAPD·많은 면화반은 허혈형을 시사한다 [[?aao-rvo-ppp-2019]]. 허혈 망막의 VEGF 가 홍채·전방각에 신생혈관을 키워 수개월 안에 신생혈관녹내장이 올 수 있어 매달 홍채·전방각을 본다 [[?cvos-1997]]. 지금 안압·홍채가 정상인 것은 안심 근거가 아니다. 나이·성별·동반 녹내장이 달라도 결정 단서는 같다. 동공차단에 의한 급성 폐쇄각녹내장은 기전이 다르다.",
+    "of": "kmle-2026-0574",
+    "changed": "나이·성별(74세 여자)·위험인자(개방각녹내장·고혈압)·내원 경위(발병 1주 뒤)·제시 순서를 바꾸고 네 사분면 출혈·면화반·정맥 확장·유두부종·RAPD 양성은 그대로 → 답은 여전히 신생혈관녹내장",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "CRVO 진단 뒤 — 허혈 여부와 추적",
+  "geo": {
+   "title": "CRVO 진단 뒤 — 허혈 여부와 추적",
+   "w": 482,
+   "h": 814.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "네 사분면 출혈·정맥 확장·",
+      "유두부종 = CRVO"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "isch",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "허혈형 소견(시력 매우 나쁨·",
+      "RAPD 뚜렷·광범위 출혈/",
+      "면화반)이 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "판단이 어려우면",
+      "형광안저혈관조영(비관류",
+      "범위)·",
+      "빛간섭단층촬영(황반부종)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "nonisch",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "비허혈형 — 황반부종 치료,",
+      "허혈 전환 여부를 추적"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 457.0
+    },
+    {
+     "id": "ischf",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "허혈형 — 처음 수개월 매달",
+      "홍채 세극등·전방각경검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "nv",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "홍채·전방각 신생혈관이",
+      "보이는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 587.0
+    },
+    {
+     "id": "prp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "즉시 범망막광응고 ± 항VEGF,",
+      "안압 조절"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 717.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "추적 유지 + 전신",
+      "위험인자(혈압·혈당·지질)",
+      "조절"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 717.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "isch",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "isch",
+     "to": "nonisch",
+     "points": [
+      [
+       178.0,
+       227.0
+      ],
+      [
+       178.0,
+       237.0
+      ],
+      [
+       452,
+       237.0
+      ],
+      [
+       452,
+       411.0
+      ],
+      [
+       146.7,
+       411.0
+      ],
+      [
+       146.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "isch",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "애매함"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "isch",
+     "to": "ischf",
+     "points": [
+      [
+       276.0,
+       227.0
+      ],
+      [
+       276.0,
+       249.0
+      ],
+      [
+       466,
+       249.0
+      ],
+      [
+       466,
+       411.0
+      ],
+      [
+       372.7,
+       411.0
+      ],
+      [
+       372.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "nonisch",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       81.3,
+       401.0
+      ],
+      [
+       81.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비관류 좁음"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 48.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "ischf",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       307.3,
+       407.0
+      ],
+      [
+       307.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비관류 넓음"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 274.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "nonisch",
+     "to": "nv",
+     "points": [
+      [
+       114.0,
+       521.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       194.3,
+       531.0
+      ],
+      [
+       194.3,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "추적 중"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 172.0,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "ischf",
+     "to": "nv",
+     "points": [
+      [
+       340.0,
+       521.0
+      ],
+      [
+       340.0,
+       531.0
+      ],
+      [
+       259.7,
+       531.0
+      ],
+      [
+       259.7,
+       587.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "nv",
+     "to": "prp",
+     "points": [
+      [
+       194.3,
+       651.0
+      ],
+      [
+       194.3,
+       661.0
+      ],
+      [
+       114.0,
+       661.0
+      ],
+      [
+       114.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 697.0
+     }
+    },
+    {
+     "from": "nv",
+     "to": "keep",
+     "points": [
+      [
+       259.7,
+       651.0
+      ],
+      [
+       259.7,
+       667.0
+      ],
+      [
+       340.0,
+       667.0
+      ],
+      [
+       340.0,
+       717.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 697.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "네 사분면 출혈·정맥 확장·유두부종 = CRVO",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "허혈형 소견(시력 매우 나쁨·RAPD 뚜렷·광범위 출혈/면화반)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "isch",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "허혈형 소견(시력 매우 나쁨·RAPD 뚜렷·광범위 출혈/면화반)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "애매함",
+      "to": 3,
+      "toText": "판단이 어려우면 형광안저혈관조영(비관류 범위)·빛간섭단층촬영(황반부종)"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "비허혈형 — 황반부종 치료, 허혈 전환 여부를 추적"
+     },
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "허혈형 — 처음 수개월 매달 홍채 세극등·전방각경검사"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "판단이 어려우면 형광안저혈관조영(비관류 범위)·빛간섭단층촬영(황반부종)",
+    "note": "",
+    "branches": [
+     {
+      "label": "비관류 좁음",
+      "to": 4,
+      "toText": "비허혈형 — 황반부종 치료, 허혈 전환 여부를 추적"
+     },
+     {
+      "label": "비관류 넓음",
+      "to": 5,
+      "toText": "허혈형 — 처음 수개월 매달 홍채 세극등·전방각경검사"
+     }
+    ]
+   },
+   {
+    "id": "nonisch",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "비허혈형 — 황반부종 치료, 허혈 전환 여부를 추적",
+    "note": "",
+    "branches": [
+     {
+      "label": "추적 중",
+      "to": 6,
+      "toText": "홍채·전방각 신생혈관이 보이는가?"
+     }
+    ]
+   },
+   {
+    "id": "ischf",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "허혈형 — 처음 수개월 매달 홍채 세극등·전방각경검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "홍채·전방각 신생혈관이 보이는가?"
+     }
+    ]
+   },
+   {
+    "id": "nv",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "홍채·전방각 신생혈관이 보이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있다",
+      "to": 7,
+      "toText": "즉시 범망막광응고 ± 항VEGF, 안압 조절"
+     },
+     {
+      "label": "없다",
+      "to": 8,
+      "toText": "추적 유지 + 전신 위험인자(혈압·혈당·지질) 조절"
+     }
+    ]
+   },
+   {
+    "id": "prp",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "즉시 범망막광응고 ± 항VEGF, 안압 조절",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "keep",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "추적 유지 + 전신 위험인자(혈압·혈당·지질) 조절",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0574"
+  ],
+  "hasErrors": false
+ },
  "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
   "id": "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy",
   "title": "급성 수술 후 안내염 — 유리체 천자·배양과 유리체내 항생제가 기본이고, 즉시 유리체절제술은 시력이 빛 감지뿐일 때다",
@@ -9384,10 +25835,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Infectious Disease"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "04a06330eda7f81e",
+  "hash": "425f9d164600657a",
   "summary": [
    "안내염은 눈 속 구조의 세균·바이러스·진균·기생충 감염이다. 내인성(혈행성)은 만성질환·당뇨·면역억제·정맥 카테터·균혈증에서, 외인성은 안구 수술·관통 외상 뒤에 온다.",
    "백내장 수술 뒤 3–7일의 통증·급격한 시력저하·앞방 고름층·유리체 혼탁 = 급성 수술 후 세균 안내염. 수술 직후 24시간 안의 무통 염증(독성 전방 분절 증후군)과 다르다.",
@@ -9684,6 +26135,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "만성질환·당뇨·균혈증이 있는 내인성(혈행성) 안내염이다. 눈은 유리체내 항생제로, 원발 병소(간농양·균혈증)는 전신 항생제로 치료한다. 「정맥 항생제 무이득」은 수술 후 안내염(EVS)의 결론이고 내인성에는 원발 감염원 치료가 필수다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy#v3",
+    "context": "같은 백내장 수술 후 급성 안내염, 시력 하나만 빛 감지로 낮춘 변형",
+    "stem": "69세 남자가 나흘 전 오른쪽 눈 백내장 수술을 받았고, 어젯밤부터 그 눈이 심하게 아프고 갑자기 뿌옇게 되어 응급실에 왔다. 수술 이튿날 외래 진찰은 이상이 없었다. 당뇨병·면역억제제 복용은 없다. 오른쪽 눈꺼풀이 붓고 결막이 심하게 충혈되어 있다. 오른쪽 시력은 손 움직임도 알아보지 못하고 빛이 비치는지만 안다. 세극등에서 각막 부종, 앞방 세포 4+, 앞방 아래쪽 2 mm 고름층이 있고 인공수정체 위치는 정상이다. 유리체가 혼탁해 붉은 반사가 흐리다. B-스캔 초음파에서 유리체 전반의 에코가 증가해 있고 망막은 부착되어 있다. 안압 20 mmHg, 체온 36.7 ℃, 백혈구 9,100/mm³ 이다. 왼쪽 눈은 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "유리체천자 후 유리체내 항생제 주입",
+     "정맥 항생제 투여 후 경과 관찰",
+     "즉시 유리체절제술과 유리체내 항생제 주입",
+     "유리체내 스테로이드 단독 주입",
+     "강화 항생제 점안과 경구 항생제"
+    ],
+    "answer": 3,
+    "explanation": "백내장 수술 나흘 뒤 통증·고름층·유리체 혼탁은 원래 문항과 같은 급성 수술 후 세균 안내염이다. 바뀐 것은 시력 하나 — 빛 감지뿐이다. EVS 에서 즉시 유리체절제술이 천자·주입보다 시력 결과를 좋게 한 것은 이 군뿐이므로, 절제술을 하며 검체를 배양하고 유리체내 항생제를 주입한다. 안전수동 이상이었다면 천자·주입으로 충분했다. 정맥·점안·경구 항생제는 유리체 농도가 낮아 단독 치료가 되지 못하고, 스테로이드는 항생제의 보조일 뿐이다.",
+    "of": "kmle-2026-1096",
+    "changed": "시력 안전수동 50 cm → 빛 감지만 가능(나머지 경과·소견은 같음) ⇒ 정답이 유리체천자 + 유리체내 항생제에서 즉시 유리체절제술(+ 유리체내 항생제)로",
+    "flip": true
+   },
+   {
+    "id": "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy#v4",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(시력이 빛 감지보다 좋음)는 같다",
+    "stem": "63세 여자가 오른쪽 눈이 빨갛고 욱신거리며 어제부터 급격히 안 보인다고 안과 외래에 왔다. 세극등에서 결막 충혈, 각막 부종, 앞방 세포 3+ 와 1 mm 고름층이 있고 인공수정체는 제자리에 있다. B-스캔 초음파에서 유리체 혼탁이 있고 망막은 부착되어 있으며 맥락막박리는 없다. 오른쪽 시력은 30 cm 앞 손가락 수를 센다. 닷새 전 그 눈의 백내장 수술을 받았고, 수술 이튿날 진찰에서는 이상이 없었다. 고혈압 약만 먹는다. 체온 36.9 ℃, 안압 17 mmHg 이다. 가장 적절한 치료는?",
+    "options": [
+     "유리체천자 후 유리체내 항생제 주입",
+     "즉시 유리체절제술",
+     "정맥 항생제 투여 후 경과 관찰",
+     "유리체내 스테로이드 단독 주입",
+     "강화 항생제 점안과 경구 항생제"
+    ],
+    "answer": 1,
+    "explanation": "나이·성별·눈의 쪽·수술 뒤 날수·정보 제시 순서가 바뀌었지만 결정 단서는 같다 — 백내장 수술 며칠 뒤의 통증·급격한 시력저하·고름층·유리체 혼탁은 급성 수술 후 세균 안내염이고, 시력(안전수지 30 cm)이 빛 감지보다 좋다. EVS 에서 이 군은 천자·주입과 즉시 유리체절제술의 결과가 같아, 유리체 검체를 얻고 유리체내 반코마이신 + 세프타지딤을 주입한 뒤 48–72시간 뒤 재평가한다. 전신·점안 항생제는 유리체 농도가 낮고, 스테로이드 단독은 감염을 치료하지 못한다.",
+    "of": "kmle-2026-1096",
+    "changed": "70세 남자·왼쪽·사흘째·안전수동 50 cm → 63세 여자·오른쪽·닷새째·안전수지 30 cm, 소견 제시 순서 바꿈(빛 감지보다 좋은 시력·급성 수술 후 세균 안내염은 그대로) ⇒ 답은 그대로 유리체천자 + 유리체내 항생제",
     "flip": false
    }
   ],
@@ -10244,6 +26729,213 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.ortho.achilles-rupture.thompson-test": {
+  "id": "cn.ortho.achilles-rupture.thompson-test",
+  "title": "아킬레스건 파열 — 종아리를 쥐어짜 발이 움직이는지 본다",
+  "objective": "밀어내는 순간 종아리 뒤를 맞은 듯한 통증·발끝서기 불가·힘줄 결손을 아킬레스건 완전파열로 알아보고, 확인 이학적 검사로 종아리 압박(톰슨) 검사를 고른다",
+  "objectiveKind": "검사 선택",
+  "condition": "아킬레스건 파열",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Emergency Medicine",
+   "Sports Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "781e23d56f8901e7",
+  "summary": [
+   "종아리 세갈래근(비복근·가자미근)은 아킬레스건 하나로 발꿈치뼈에 붙어 발바닥굽힘을 만든다 — 힘줄이 끊기면 근육이 수축해도 발이 움직이지 않는다.",
+   "전형: 30~50대, 가끔 운동하는 사람이 점프·출발 때 발을 밀어내다 「누가 뒤에서 찼다」는 느낌. 이후 발끝서기·힘껏 밀기가 안 된다.",
+   "종아리 압박(톰슨) 검사: 엎드려 무릎을 굽히고 종아리를 쥐어짜면 정상은 발바닥굽힘, 완전파열은 움직임이 없다.",
+   "함께 보는 소견: 힘줄 결손(함몰) 촉지, 엎드린 자세에서 환측 발목의 휴식 각도 소실(더 처짐).",
+   "주의: 발가락·뒤정강근이 남아 있어 누워서 약한 발바닥굽힘은 되므로 「발목을 굽힐 수 있다」로 파열을 배제하지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>아킬레스건 파열은 종아리 세갈래근(비복근·가자미근)이 발꿈치뼈에 붙는 공동 힘줄이 끊어진 것이다. 대개 발꿈치 부착부 위 몇 cm 의 혈류가 적은 부위에서 끊어진다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 종아리 근육이 수축하면 아킬레스건이 발꿈치뼈를 끌어올려 발바닥굽힘을 만든다 — 걷기·달리기의 밀어내기, 발끝서기의 힘이 여기서 나온다. 힘줄은 나이와 함께 퇴행하며, 가끔 운동하는 중년이 발을 힘껏 밀어내는(편심 수축에서 동심 수축으로 바뀌는) 순간 과부하가 걸려 끊어진다. 퀴놀론·스테로이드 주사도 위험을 높인다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>힘줄이 끊기는 순간 → 「뒤에서 누가 찼다·공에 맞았다」는 느낌, 때로 뚝 소리.</li>\n<li>세갈래근의 힘이 발꿈치로 가지 않음 → 발끝서기·힘껏 밀기 불가. 종아리 압박에도 발이 움직이지 않는다(톰슨 검사).</li>\n<li>끊긴 틈 → 힘줄 경로를 따라 만지면 오목한 결손.</li>\n<li>힘줄의 기본 장력 소실 → 엎드려 무릎을 굽히면 환측 발이 반대쪽보다 더 처진다(휴식 각도 소실).</li>\n<li>다른 발바닥굽힘근(긴발가락굽힘근·뒤정강근·종아리근)은 남아 → 누워서 약한 발바닥굽힘은 된다. 이것이 「걸을 수 있으니 괜찮다」는 오판의 원인이다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>발목 가쪽 인대 손상</strong>: 안쪽번짐 기전, 가쪽 복사 앞 통증 — 앞당김검사.</li>\n<li><strong>종아리 근육 파열(테니스 다리)</strong>: 종아리 중간 안쪽 통증, 힘줄 연속성은 유지되어 종아리 압박 반응이 있다.</li>\n<li><strong>아킬레스건염·부분파열</strong>: 서서히 시작, 압통은 있으나 결손·압박 반응 소실은 없다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 이학적 검사가 중심이다. 종아리 압박 검사·결손 촉지·휴식 각도·근력 저하 중 둘 이상이면 진단한다 <sup>[1†]</sup>. 소견이 애매하거나(부종·부분파열) 수술 계획이 필요하면 초음파나 MRI 를 쓴다 <sup>[1†]</sup>. X선은 발꿈치뼈 견열골절을 보는 데 쓴다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>발바닥굽힘(첨족) 위치 고정 후 기능적 재활로 가는 비수술 치료와 힘줄 봉합 수술이 모두 선택지다. 수술은 재파열이 적고, 비수술은 상처 합병증이 없다 — 나이·활동 수준·동반 질환으로 정한다 <sup>[1†]</sup>. 어느 쪽이든 조기 체중 부하와 기능적 보조기가 쓰인다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「누워서 발목을 굽힐 수 있다」로 파열을 배제하지 않는다.</li>\n<li>치료 방법 사이의 비교 수치(재파열률 등)는 이 정리본에서 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "검사 선택 문항을 푸는 순서",
+    "deep": true,
+    "html": "<p>검사 문항은 먼저 「어느 구조의 무엇을 묻는가」를 정하고 그 구조를 직접 시험하는 검사를 고른다. 손상 기전(밀어내기 vs 꺾임)과 통증 위치(종아리 뒤 vs 가쪽 복사 앞)가 구조를 정하고, 구조가 검사를 정한다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "하지 이학적 검사 — 무엇을 보나",
+    "columns": [
+     "검사",
+     "하는 법",
+     "무엇을 보나"
+    ],
+    "rows": [
+     [
+      "종아리 압박(톰슨)",
+      "엎드려 종아리를 쥐어짠다",
+      "아킬레스건 연속성 — 발바닥굽힘 없으면 완전파열"
+     ],
+     [
+      "발목 앞당김",
+      "정강뼈를 고정하고 발꿈치를 앞으로 당긴다",
+      "앞목말종아리인대 — 발목 가쪽 불안정"
+     ],
+     [
+      "목말뼈 기울임(안쪽번짐 부하)",
+      "발꿈치를 안쪽으로 기울인다",
+      "발꿈치종아리인대"
+     ],
+     [
+      "바깥번짐 부하",
+      "발을 바깥쪽으로 돌리거나 기울인다",
+      "삼각인대·원위 정강종아리 인대결합"
+     ],
+     [
+      "맥머레이",
+      "무릎을 굽혔다 펴며 돌린다",
+      "반달연골 파열"
+     ]
+    ],
+    "note": "하는 법과 대상 구조는 표준 정형외과 서술로 이 정리본에서 원문 대조하지 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「운동 중 발목 부위 통증 = 발목 앞당김검사」 vs 아킬레스건 파열",
+    "point": "앞당김검사는 발목을 접질린(안쪽번짐) 뒤 가쪽 인대의 불안정을 보는 검사다. 발을 밀어내는 순간 종아리 뒤쪽에 온 통증·발끝서기 불가는 뒤쪽 힘줄의 연속성을 묻는 상황이라 종아리 압박 검사가 맞다.",
+    "exception": "안쪽번짐 손상 뒤 가쪽 복사 앞 통증·부종이 있으면 앞목말종아리인대 손상을 앞당김검사로 평가한다.",
+    "cites": "<sup>[1†]</sup>"
+   },
+   {
+    "contrast": "「발바닥굽힘이 된다 = 힘줄은 괜찮다」",
+    "point": "긴발가락굽힘근·뒤정강근·종아리근이 남아 있어 누운 자세에서 약한 발바닥굽힘은 된다. 체중을 싣는 발끝서기와 종아리 압박 반응이 연속성을 가린다.",
+    "exception": "",
+    "cites": "<sup>[1†]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "atr-exam",
+    "name": "이학적 진단",
+    "kind": "진단 기준",
+    "population": "급성 아킬레스건 파열 의심",
+    "statement": "종아리 압박 검사에서 발바닥굽힘 소실, 힘줄 결손 촉지, 엎드린 자세의 발목 휴식 각도 증가(더 처짐), 발바닥굽힘 근력 저하 중 둘 이상이면 진단한다 [[?aaos-2010]]",
+    "exceptions": "부분파열·부종이 심할 때는 결손 촉지가 어렵다 — 이학적 소견이 애매하면 초음파·MRI [[?aaos-2010]]",
+    "source": "aaos-2010",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "aaos-2010",
+    "org": "American Academy of Orthopaedic Surgeons (Chiodo CP, Glazebrook M, Bluman EM, et al)",
+    "title": "Diagnosis and treatment of acute Achilles tendon rupture (AAOS clinical practice guideline)",
+    "kind": "guideline",
+    "citation": "J Am Acad Orthop Surg 2010;18(8):503-510",
+    "checked": "서지만 — 이 컨테이너에서 PubMed·원문 접근이 막혀 대조하지 못함(이학적 진단 기준 네 가지·영상 적응 서술은 미대조. 서지 식별자도 접속해 확인하지 못함 — 검토 항목)",
+    "doi": "",
+    "pmid": "20675643",
+    "verified": "citation",
+    "year": "2010",
+    "checkedAt": "2026-09-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20675643/"
+   }
+  ],
+  "checks": [
+   {
+    "q": "종아리 압박 검사에서 발이 움직이지 않는 이유는?",
+    "a": "종아리 근육을 쥐어짜면 근육이 짧아지며 아킬레스건을 당기는데, 힘줄이 끊겨 있으면 그 힘이 발꿈치뼈로 전달되지 않는다."
+   },
+   {
+    "q": "누워서 발목을 아래로 굽힐 수 있으면 아킬레스건 파열이 배제되는가?",
+    "a": "아니다. 다른 발바닥굽힘근이 남아 있다. 발끝서기 불가·종아리 압박 반응 소실·결손 촉지로 판단한다."
+   },
+   {
+    "q": "이학적 소견이 애매할 때 쓰는 영상은?",
+    "a": "초음파 또는 MRI."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.achilles-rupture.thompson-test#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 안쪽번짐 손상",
+    "stem": "22세 여자가 농구를 하다 점프 뒤 착지하면서 오른쪽 발목이 안쪽으로 꺾여 넘어졌다. 바깥쪽 복사뼈 앞쪽이 붓고 멍이 들었으며 누르면 아프다. 절뚝거리지만 네 걸음 이상 걸을 수 있고, 아프지만 발끝으로 설 수 있다. 종아리 뒤쪽 통증이나 힘줄 결손은 없다. 발목 X선에서 골절은 없다. 인대 손상과 불안정성을 확인하기 위해 가장 유용한 이학적 검사는?",
+    "options": [
+     "발목 앞당김검사",
+     "종아리 압박검사",
+     "무릎 맥머레이검사",
+     "발목 바깥번짐 부하검사",
+     "무릎 앞당김검사"
+    ],
+    "answer": 1,
+    "explanation": "안쪽번짐 손상 뒤 가쪽 복사 앞 통증·부종은 앞목말종아리인대 손상이 가장 흔하고, 그 불안정은 발목 앞당김검사로 본다. 원래 문항처럼 발을 밀어내는 순간 종아리 뒤쪽 통증·발끝서기 불가·힘줄 결손이 있으면 종아리 압박검사가 답이다 — 손상 기전과 통증 위치가 검사를 가른다. 바깥번짐 부하검사는 안쪽(삼각인대) 쪽이다.",
+    "of": "kmle-2026-0576",
+    "changed": "손상 기전을 「발을 밀어낼 때 종아리 뒤가 맞은 느낌」에서 「착지하다 발목이 안쪽으로 꺾임」으로, 통증 위치를 가쪽 복사 앞 부종으로 바꾸고 발끝서기는 아파도 가능하게 함 → 가쪽 인대 손상이 되어 답이 「종아리 압박검사」에서 「발목 앞당김검사」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.achilles-rupture.thompson-test#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 테니스 중 종아리 뒤 통증",
+    "stem": "52세 여자가 왼쪽 발꿈치 위 약 4 cm 에서 오목하게 들어간 부분이 만져진다며 왔다. 어제 테니스를 치다 앞으로 뛰쳐나가려고 발을 차는 순간 뒤에서 공에 맞은 듯한 느낌과 함께 종아리 뒤가 아팠다고 한다. 지금은 걸을 수는 있지만 왼발로 발끝서기를 하지 못한다. 누운 자세에서는 발목을 약하게 아래로 굽힐 수 있다. 진단을 확인하기 위해 가장 유용한 이학적 검사는?",
+    "options": [
+     "무릎 맥머레이검사",
+     "종아리 압박검사",
+     "발목 앞당김검사",
+     "발목 바깥번짐 부하검사",
+     "엉덩관절 회전검사"
+    ],
+    "answer": 2,
+    "explanation": "운동 종목·나이·제시 순서가 달라도 결정 단서는 같다 — 밀어내는 순간 뒤에서 맞은 듯한 통증, 발끝서기 불가, 힘줄 결손은 아킬레스건 완전파열이다. 누워서 약하게 굽혀지는 것은 다른 발바닥굽힘근 때문이라 파열을 배제하지 못한다. 엎드려 종아리를 쥐어짜 발바닥굽힘이 없는지 확인한다 [[?aaos-2010]].",
+    "of": "kmle-2026-0576",
+    "changed": "나이·성별(52세 여자)·운동(테니스 서브 뒤 달려 나가기)·병력 제시 순서(결손 촉지를 먼저 제시)를 바꾸고 「밀어낼 때 종아리 뒤 통증·발끝서기 불가·결손」은 그대로 → 답은 여전히 종아리 압박검사",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0576"
+  ],
+  "hasErrors": false
+ },
  "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
   "id": "cn.ortho.femoral-neck-fracture.arthroplasty-rationale",
   "title": "엉덩관절 골절 — 「관절낭 안 vs 밖」이 첫 갈림길이고, 전위된 넙다리뼈목 골절을 고령에서 치환하는 이유는 골두 혈류다",
@@ -10254,10 +26946,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Geriatrics"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "cee6e9adc52255d4",
+  "hash": "393679b821e878e0",
   "summary": [
    "엉덩관절 골절은 골절선이 관절낭 안(넙다리뼈목)인지 밖(돌기 사이·돌기 아래)인지로 먼저 가른다. 이 구분이 골두 혈류가 다치는지를 정한다.",
    "골두 혈류의 대부분은 안쪽넙다리휘돌이동맥의 지지대(retinacular) 분지가 관절낭 안 목을 따라 올라가 공급한다. 전위된 목 골절은 이 길을 끊는다.",
@@ -10587,6 +27279,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "젊은 환자는 인공물 수명이 여생보다 짧아 골두를 살리려 응급 정복·내고정을 한다. 전위 목 골절의 혈류 손상 위험은 같지만 대응이 다르다 — 빨리 정복해 남은 혈류를 지키고, 괴사가 오면 그때 치환을 논의한다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.ortho.femoral-neck-fracture.arthroplasty-rationale#v3",
+    "context": "같은 80세 낙상 환자, 골절 위치 하나만 관절낭 밖으로 옮긴 변형",
+    "stem": "81세 여자가 부엌에서 미끄러져 넘어진 뒤 왼쪽 엉덩이가 아파 일어서지 못해 응급실에 왔다. 넘어지기 전에는 혼자 장을 보러 다녔고 고혈압 약만 먹는다. 왼쪽 다리가 짧아지고 바깥으로 돌아가 있으며 발등동맥 맥박과 발가락 감각·운동은 정상이다. 엉덩관절 X선에서 골절선이 큰돌기에서 작은돌기로 비스듬히 지나고 넙다리뼈목과 골두는 온전하다. 지난해 골밀도 T-점수는 −2.9 였다. 혈색소 11.6 g/dL, 크레아티닌 0.8 mg/dL, 심전도는 정상 동리듬이다. 정형외과는 골수강내 금속정으로 내고정하기로 했다. 이 수술 뒤 고정 실패(골두 안 나사가 밀려 나오는 것)의 위험을 가장 크게 좌우하는 이 환자의 요인은?",
+    "options": [
+     "골다공증으로 뼈가 나사를 붙잡는 힘이 약한 것",
+     "고령이라 마취·수술 시간을 줄여야 하는 것",
+     "골두로 가는 혈류가 끊겨 불유합·골두괴사가 흔한 것",
+     "골절선이 관절낭 밖에 있어 정복이 어려운 것",
+     "골절이 관절면을 지나 관절염이 곧 생기는 것"
+    ],
+    "answer": 1,
+    "explanation": "골절선이 돌기 사이(관절낭 밖)로 옮겨 가면 골두로 가는 지지대 혈관이 골절선을 지나지 않아 혈류가 보존된다 — 그래서 골다공증이 있어도 치환이 아니라 내고정을 하고, 불유합·골두괴사는 이 골절의 주된 문제가 아니다. 내고정을 택한 이상 결과를 좌우하는 것은 뼈가 고정물을 붙잡는 힘이며, T-점수 −2.9 의 골다공증이 고정 실패에 기여한다(심한 골다공증은 금속정 선택 같은 「어떻게 고정할지」의 요인이 된다). 관절낭 밖이라는 사실은 정복을 어렵게 하는 이유가 아니라 혈류가 보존되는 이유이고, 돌기 사이 골절은 관절면을 지나지 않는다.",
+    "of": "kmle-2026-1094",
+    "changed": "골절선이 관절낭 안 넙다리뼈목(가든 4형) → 관절낭 밖 큰돌기·작은돌기 사이(목·골두 온전), 계획이 관절치환에서 골수강내 금속정 내고정으로 ⇒ 골두 혈류가 보존되어, 고정 실패를 좌우하는 주된 요인이 골두 혈류 차단에서 골다공증(나사 고정력)으로",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.femoral-neck-fracture.arthroplasty-rationale#v4",
+    "context": "겉모습만 바꾼 변형 — 결정 단서(관절낭 안·전위)는 같다",
+    "stem": "77세 남자가 새벽에 화장실에 가다 넘어져 왼쪽 엉덩이 통증으로 걷지 못해 119로 왔다. 엉덩관절 X선에서 골두 바로 아래 넙다리뼈목(관절낭 안)에 골절선이 있고 골두가 어긋나 있다(가든 3형). 큰돌기·작은돌기는 온전하다. 골밀도 T-점수는 −2.6 이다. 평소 아내와 매일 공원을 걸었고 당뇨병 약을 먹는다. 왼쪽 다리가 짧고 바깥으로 돌아가 있으며 발의 맥박·감각·운동은 정상이다. 정형외과는 나사 고정 대신 인공 관절로 바꾸는 수술을 계획했다. 이 결정의 가장 중요한 근거는?",
+    "options": [
+     "골절이 관절면을 지나 관절염이 곧 생기기 때문",
+     "골두로 가는 혈류가 끊겨 불유합·골두괴사가 흔하기 때문",
+     "골다공증으로 나사의 고정력이 약하기 때문",
+     "골절선이 관절낭 밖에 있어 정복이 어렵기 때문",
+     "고령이라 마취·수술 시간을 줄여야 하기 때문"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·쪽·가든 형(3형)·내원 경위가 바뀌었지만 결정 단서는 같다 — 골절선이 관절낭 안 넙다리뼈목이고 골두가 전위되어 안쪽넙다리휘돌이동맥의 지지대 분지가 끊긴다. 그래서 내고정 뒤 불유합·무혈성괴사·재수술이 흔해 고령의 전위 목 골절은 치환술로 바꾼다. 골다공증은 고정 실패에 기여하는 부수 요인일 뿐(같은 골다공증의 돌기 사이 골절은 내고정한다), 골절선은 관절낭 밖이 아니며 관절면을 지나지도 않는다.",
+    "of": "kmle-2026-1094",
+    "changed": "80세 여자·오른쪽·가든 4형·집 안 낙상 → 77세 남자·왼쪽·골두 바로 아래 가든 3형·화장실 낙상, 검사 제시 순서 바꿈(관절낭 안 전위 골절은 그대로) ⇒ 답은 그대로 골두 혈류 차단",
     "flip": false
    }
   ],
@@ -11210,6 +27936,2170 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1094"
+  ],
+  "hasErrors": false
+ },
+ "cn.ortho.scfe.in-situ-fixation": {
+  "id": "cn.ortho.scfe.in-situ-fixation",
+  "title": "대퇴골두골단분리증의 치료 — 진단 즉시 체중부하를 막고, 정복하지 않은 채 제자리에서 나사로 고정한다",
+  "objective": "사춘기 비만아의 무릎·허벅지 연관통, 굽힘 시 강제 바깥돌림, 뒤아래로 미끄러진 골단 X선으로 대퇴골두골단분리증을 알아본 뒤, 치료가 정복 없는 제자리 나사 고정임을 고르고 도수 정복·체중부하 제한 뒤 관찰·견인·활막절제가 왜 틀렸는지 가른다",
+  "objectiveKind": "치료",
+  "condition": "대퇴골두골단분리증(안정형)",
+  "topic": "Orthopedics",
+  "seeAlso": [
+   "Pediatrics",
+   "Endocrinology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "32e9bf78d10bd57d",
+  "summary": [
+   "대퇴골두골단분리증(SCFE)은 급성장기(대개 10–16세) 아이에서 약해진 근위 대퇴 성장판(비대층)을 따라 대퇴 목이 앞위로 밀려 올라가고, 골두(골단)는 비구 안에 남아 상대적으로 뒤·아래로 미끄러진 상태다. 비만·남아·내분비 이상(갑상선저하·성장호르몬 치료)이 위험인자다.",
+   "통증은 엉덩관절보다 무릎·허벅지로 나타나는 경우가 많다(폐쇄신경 연관통) — 무릎 진찰·X선이 정상이면 엉덩관절을 찍는다. 굽히면 다리가 저절로 바깥으로 돌아가고 안쪽 돌림이 제한된다.",
+   "진단: 골반 전후 + 개구리다리 측면 X선. 전후상에서 목 바깥 가장자리 연장선(클라인 선)이 골두를 지나지 않고, 측면상에서 골단이 뒤로 밀린 것이 보인다.",
+   "안정성(Loder): 목발 유무와 관계없이 걸을 수 있으면 안정형, 걸을 수 없으면 불안정형 — 불안정형은 무혈성괴사 위험이 훨씬 높다 [[?loder-1993]].",
+   "치료: 진단 즉시 체중부하 금지 → 미끄러진 자리 그대로 성장판을 가로지르는 캐뉼러 나사 1개(제자리 고정). 도수 정복은 골두로 가는 혈관을 다쳐 무혈성괴사를 부른다. 관찰·견인은 미끄러짐의 진행을 막지 못한다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>대퇴골두골단분리증(SCFE)은 근위 대퇴 성장판을 따라 대퇴 목이 앞위·바깥으로 움직이고 골단(골두)이 상대적으로 뒤·아래로 남는 사춘기 엉덩관절 질환이다. 이 정리본의 목표는 <strong>SCFE 를 알아본 뒤 치료를 고르는 것</strong> — 정복하지 않는 제자리 고정과, 비슷해 보이는 보존·정복 치료를 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 성장판은 연골세포가 층을 이루며 길이 성장을 담당하고, 그중 비대층은 세포가 커지고 기질이 적어 기계적으로 가장 약하다. 사춘기에는 성장판이 넓어지고(성장 급증), 성호르몬이 아직 판을 닫지 않았다. 여기에 <strong>체중(비만)</strong>과 <strong>대퇴 목의 뒤기울기</strong>가 전단력을 키우면 비대층을 따라 미끄러짐이 생긴다. 갑상선저하증·성장호르몬 치료·신부전(이차성 부갑상선항진)은 성장판을 더 약하게 만든다 <sup>[2†]</sup>.</p>\n<p>골두로 가는 주 혈류는 대퇴 목 뒤위쪽 표면을 따라 올라가 골단으로 들어가는 지대 혈관(내측 대퇴회선동맥 가지)이다. 골단이 뒤로 밀리면 이 혈관이 당겨지고, 여기서 강제로 되돌리면 찢어진다 — <strong>무혈성괴사</strong>가 SCFE 의 가장 나쁜 합병증이며 치료 원칙(정복 금지)을 정한다. 성장판이 열려 있는 한 미끄러짐은 계속될 수 있어, 성장판을 가로지르는 고정으로 진행을 멈춘다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>무릎·허벅지 통증</strong> — 엉덩관절의 감각이 폐쇄신경을 따라 무릎 안쪽으로 연관된다. 무릎 진찰·X선은 정상.</li>\n<li><strong>굽힘 시 강제 바깥돌림(드레만 징후)·안쪽돌림 제한</strong> — 골단이 뒤로 밀려 목이 앞으로 튀어나와 비구 앞 테두리에 걸린다.</li>\n<li><strong>절뚝임·바깥돌림 자세</strong> — 걸을 수 있으면 안정형, 못 걸으면 불안정형 <sup>[1†]</sup>.</li>\n<li><strong>염증 지표 정상·발열 없음</strong> — 화농성 관절염·일과성 활막염과 가른다.</li>\n<li><strong>X선</strong> — 전후상: 성장판이 넓고 흐림, 클라인 선이 골두를 지나지 않음. 측면상: 골단 후방 전위(측면이 더 민감).</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>일과성 활막염</strong>: 3–10세, 상기도 감염 뒤, X선 정상, 수일 내 호전.</li>\n<li><strong>화농성 엉덩관절염</strong>: 발열·체중부하 불가·ESR/CRP·백혈구 상승 — 응급 배액.</li>\n<li><strong>레그-칼베-페르테스병</strong>: 4–8세 마른 남아, 골두 괴사·편평화, 성장판 정렬 정상.</li>\n<li><strong>무릎 자체 질환(오스굿-슐라터 등)</strong>: 무릎에 국소 압통·부종, 엉덩관절 운동 정상.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>골반 전후 + 개구리다리 측면 X선(불안정형 의심이면 교차 측면). 10세 미만·비만이 아니거나 키가 작으면 갑상선 기능·성장 관련 검사. X선이 애매한 초기(미끄러짐 전 단계)는 MRI 에서 성장판 부종이 보인다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>진단 즉시 체중부하 금지</strong>(휠체어·목발)와 입원 — 수술 전까지 더 미끄러지지 않게.</li>\n<li><strong>제자리 고정</strong>: 캐뉼러 나사 1개를 골단 중심에 성장판을 가로질러 박는다 — 정복하지 않는다 <sup>[2†]</sup>.</li>\n<li><strong>불안정형</strong>: 무혈성괴사 위험이 높아 응급으로 고정한다 <sup>[1†]</sup>. 의도적 강제 정복은 하지 않는다.</li>\n<li><strong>반대쪽</strong>: 추적하며, 고위험군(내분비 이상·어린 나이)은 예방적 고정을 고려한다.</li>\n</ol>\n<p><strong>반응 확인·재평가.</strong> 수술 뒤 통증 소실과 보행 회복, 성장판이 닫힐 때까지 양쪽 X선 추적(반대쪽 발생·나사 위치), 무혈성괴사·연골용해(관절 간격 좁아짐)를 감시한다. 남은 변형은 대퇴비구 충돌의 원인이 될 수 있어 장기 추적한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「안정형 = 보존 치료」가 아니다. 안정형도 제자리 고정이 표준이다.</li>\n<li>체중부하 제한은 수술 전 조치이며 그것만으로 끝내지 않는다.</li>\n<li>정복(도수·견인)은 하지 않는다 — 무혈성괴사.</li>\n<li>이 슬롯은 정형외과 손 슬롯이라 해리슨 대조 대상이 아니다. Loder 1993·Peck 2010 은 원문을 열지 못해 서지만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "왜 나사 1개인가",
+    "deep": true,
+    "html": "<p>나사를 여러 개 박으면 고정력은 크지만 골단 안에서 관절로 뚫고 나갈 위험(관절 침범 → 연골용해)이 커진다. 골단 중심에 한 개를 성장판에 수직으로 넣으면 미끄러짐을 막기에 충분하고, 나사가 성장판을 닫아 추가 미끄러짐을 끝낸다. 대가는 그쪽 다리의 길이 성장이 멈추는 것이지만, SCFE 는 대개 성장 말기에 오므로 다리 길이 차이는 크지 않다. 어린 환자에서 성장을 살리려는 특수 나사 설계도 쓰인다 — 구체 근거는 원문 대조가 필요하다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "SCFE 에서 보기별 치료 — 무엇을 겨냥하고 왜 안 되나",
+    "columns": [
+     "치료",
+     "겨냥",
+     "SCFE 에서",
+     "제자리가 맞는 병"
+    ],
+    "rows": [
+     [
+      "제자리 나사 고정",
+      "성장판을 가로질러 더 미끄러지지 않게 고정",
+      "표준 <sup>[2†]</sup>",
+      "SCFE(안정·불안정)"
+     ],
+     [
+      "도수 정복 + 석고",
+      "어긋난 뼈를 되돌림",
+      "골두 혈관 손상 → 무혈성괴사",
+      "탈구·전위 골절"
+     ],
+     [
+      "체중부하 제한 뒤 관찰",
+      "통증 완화·자연 경과",
+      "미끄러짐 진행·불안정형 전환",
+      "레그-칼베-페르테스병 초기(어린 나이)·일과성 활막염"
+     ],
+     [
+      "피부 견인",
+      "근육 경축 완화·정렬",
+      "정복 효과 없음, 권고되지 않음",
+      "과거 일부 골절 대기"
+     ],
+     [
+      "관절경 활막절제",
+      "염증 활막 제거",
+      "구조 문제를 못 고침",
+      "만성 활막염"
+     ]
+    ],
+    "note": "체중부하 제한은 틀린 조치가 아니라 수술 전까지의 <b>첫 단계</b>다 — 그것만으로 끝내는 것이 틀렸다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "체중부하 제한 뒤 관찰 vs 제자리 고정 — 「걸을 수 있으니 안정형, 안정형이니 보존」",
+    "point": "안정형은 「무혈성괴사 위험이 낮다」는 뜻이지 「저절로 멈춘다」는 뜻이 아니다. 성장판이 닫힐 때까지 약한 비대층에 체중과 전단력이 계속 걸려 미끄러짐이 진행하고, 어느 순간 불안정형으로 바뀌면 무혈성괴사 위험이 크게 오른다 <sup>[1†]</sup>. 그래서 안정형도 체중부하를 막은 채 서둘러 제자리 고정을 한다 <sup>[2†]</sup>. 체중부하 제한은 수술 전까지의 조치일 뿐 치료가 아니다.",
+    "exception": "엉덩관절 통증·운동 제한이 있는 어린 아이에서 X선이 골두 괴사·편평화(레그-칼베-페르테스병)를 보이면 초기에는 활동 조절·운동범위 유지하며 관찰하는 것이 흔한 선택이다 — SCFE 와 다른 병이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "도수 정복 vs 제자리 고정 — 「어긋났으니 되돌린다」",
+    "point": "골두의 주 혈류는 대퇴 목 뒤위쪽을 따라 올라가는 지대(망상) 혈관이다. 미끄러진 골단을 억지로 되돌리면 이 혈관이 당겨지거나 찢어져 무혈성괴사가 생긴다. 그래서 탈구·골절처럼 정복하지 않고 미끄러진 위치 그대로 고정한다.",
+    "exception": "불안정형의 처치(체위 정복의 의미·피막 감압·개방 정복술)는 전문 기관마다 다르다 — 시험에서는 「강제 도수 정복 금기」로 기억한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "무릎 통증 → 무릎 검사 — 「아픈 곳을 찍는다」",
+    "point": "엉덩관절 병변은 폐쇄신경을 따라 무릎 안쪽·허벅지로 통증이 퍼진다. 사춘기 아이의 무릎 통증에 무릎 진찰·X선이 정상이면 엉덩관절(개구리다리 측면 포함)을 찍는다. 놓치면 진단이 수주 늦어지고 미끄러짐이 커진다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "불안정형(걸을 수 없음)은 응급 수술이다 — 무혈성괴사 위험이 훨씬 높다 <sup>[1†]</sup>.",
+   "10세 미만·비만이 아닌 아이·키가 작은 아이의 SCFE 는 갑상선저하증·성장호르몬 결핍 등 내분비 원인을 찾는다.",
+   "반대쪽도 일정 비율에서 미끄러진다 — 성장판이 닫힐 때까지 추적한다(예방적 고정은 고위험군에서).",
+   "개구리다리 측면상은 불안정형이 의심될 때 강제로 찍지 않는다(더 미끄러질 수 있다) — 교차 측면상을 쓴다."
+  ],
+  "criteria": [
+   {
+    "id": "loder-stability",
+    "name": "SCFE 안정성 분류(Loder)",
+    "kind": "중증도 분류",
+    "population": "SCFE 로 진단된 소아",
+    "statement": "목발 유무와 관계없이 걸을 수 있으면 안정형, 목발로도 걸을 수 없으면 불안정형. 원 연구에서 무혈성괴사는 불안정형에서 약 47 %, 안정형에서 0 % 였다 [[?loder-1993]]",
+    "exceptions": "원 연구 수치는 원문 미대조 — 학습 시 「불안정형 = 무혈성괴사 위험이 훨씬 높다」로 기억한다",
+    "source": "loder-1993",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "scfe-pinning",
+    "name": "SCFE 의 표준 치료",
+    "kind": "치료 기준",
+    "population": "안정형 SCFE",
+    "statement": "즉시 체중부하를 금하고 입원·수술 — 정복하지 않고 캐뉼러 나사 1개를 골단 중심에 성장판을 가로질러 박는 제자리 고정술 [[?peck-2010]]",
+    "exceptions": "불안정형은 응급 수술로 고정하며, 의도적 강제 정복은 하지 않는다(체위로 생기는 우연한 정복의 의미·피막 감압은 논란 — 원문 대조 필요). 반대쪽 예방적 고정은 내분비 이상·어린 나이 등 고위험군에서 고려한다",
+    "source": "peck-2010",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "loder-1993",
+    "org": "Journal of Bone and Joint Surgery (American)",
+    "title": "Acute slipped capital femoral epiphysis: the importance of physeal stability",
+    "kind": "other",
+    "citation": "Loder RT, Richards BS, Shapiro PS, Reznick LR, Aronson DD. J Bone Joint Surg Am 1993;75(8):1134-1140",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 안정성 정의와 무혈성괴사 비율은 기억에 근거하며 사람 대조가 필요하다. DOI 도 확인하지 못한 값이다",
+    "doi": "10.2106/00004623-199308000-00002",
+    "pmid": "",
+    "verified": "citation",
+    "year": "1993",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.2106/00004623-199308000-00002"
+   },
+   {
+    "id": "peck-2010",
+    "org": "American Family Physician",
+    "title": "Slipped capital femoral epiphysis: diagnosis and management",
+    "kind": "review",
+    "citation": "Peck D. Am Fam Physician 2010;82(3):258-262",
+    "checked": "서지만(원문 미대조). 위험인자·연관통·제자리 고정·반대쪽 발생 서술은 원문 대조가 필요하다. URL 은 접근하지 못해 확인하지 못한 값이다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2010",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.aafp.org/pubs/afp/issues/2010/0801/p258.html"
+   }
+  ],
+  "checks": [
+   {
+    "q": "안정형 SCFE 의 표준 치료는?",
+    "a": "즉시 체중부하 금지 뒤 정복하지 않고 캐뉼러 나사 1개로 제자리 고정."
+   },
+   {
+    "q": "도수 정복이 금기인 이유는?",
+    "a": "골두로 가는 뒤위쪽 지대 혈관을 다쳐 무혈성괴사를 일으킨다."
+   },
+   {
+    "q": "안정형·불안정형을 무엇으로 가르나?",
+    "a": "걸을 수 있는지(목발 유무 무관) — 걸을 수 없으면 불안정형, 무혈성괴사 위험이 크다."
+   },
+   {
+    "q": "체중부하 제한만 하고 관찰하면 어떤 일이 생기나?",
+    "a": "성장판이 닫힐 때까지 미끄러짐이 진행하고 불안정형으로 바뀔 수 있다 — 수술 전 조치일 뿐 치료가 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.ortho.scfe.in-situ-fixation#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 어린 아이의 골두 괴사",
+    "stem": "5세 남아가 한 달 전부터 가끔 오른쪽 무릎이 아프다며 절뚝거린다. 다친 적은 없고 열도 없다. 키는 또래보다 작고 마른 편이다. 오른쪽 엉덩관절의 벌림과 안쪽 돌림이 약간 제한되고 끝에서 통증이 있다. 적혈구침강속도·C-반응단백·백혈구는 정상이다. 골반 전후·개구리다리 측면 X선에서 오른쪽 대퇴골두의 음영이 증가하고 약간 편평하며, 골단과 대퇴골 목의 정렬과 성장판 위치는 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "제자리 나사 고정술",
+     "도수 정복 후 석고 고정",
+     "활동 조절·운동범위 유지하며 경과관찰",
+     "피부 견인 치료",
+     "관절경 활막절제술"
+    ],
+    "answer": 3,
+    "explanation": "4–8세 마르고 작은 남아, 염증 지표 정상, 골두 음영 증가·편평화에 골단 정렬이 정상이면 레그-칼베-페르테스병(골두 무혈성괴사)이다. 어린 나이의 초기 병변은 통증 조절과 운동범위 유지를 하며 관찰하는 것이 흔한 선택이고, 나이가 많거나 골두 변형이 심하면 수술(절골술)을 고려한다. 원래 문항은 사춘기 비만아에서 골단이 뒤아래로 미끄러진 SCFE 여서 제자리 고정이 답이었다 — 미끄러짐이 없으니 고정할 대상이 없다.",
+    "of": "kmle-2026-0961",
+    "changed": "나이를 12세에서 5세로, 체형을 비만에서 마른 체형으로, X선을 「골단이 뒤아래로 미끄러짐」에서 「골두 음영 증가·편평화, 성장판은 정상 위치」로 바꿈 → 레그-칼베-페르테스병 초기이므로 답이 「제자리 나사 고정」에서 「활동 조절·운동범위 유지하며 경과관찰」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.ortho.scfe.in-situ-fixation#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 사타구니 통증의 여아",
+    "stem": "11세 여아가 2주 전부터 오른쪽 사타구니가 뻐근하고, 체육 시간 뒤 더 아파 다리를 끈다며 왔다. 넘어진 적은 없다. 체질량지수는 연령 97 백분위이다. 걸어서 진료실에 들어왔다. 오른쪽 엉덩관절을 굽히면 허벅지가 바깥으로 돌아가며 안쪽 돌림이 거의 되지 않는다. 체온 36.7 ℃, 적혈구침강속도·C-반응단백·갑상선자극호르몬은 정상이다. 골반 전후 X선에서 대퇴골 목 바깥 가장자리 연장선이 오른쪽 골두를 지나지 않고, 개구리다리 측면상에서 골단이 목에 대해 뒤로 밀려 있다. 가장 적절한 치료는?",
+    "options": [
+     "제자리 나사 고정술",
+     "전신마취 하 도수 정복",
+     "목발 보행하며 6주 뒤 재촬영",
+     "비스테로이드소염제 후 경과관찰",
+     "피부 견인 치료"
+    ],
+    "answer": 1,
+    "explanation": "사춘기 비만아, 외상 없는 통증, 굽힘 시 강제 바깥돌림, 클라인 선 이상과 골단 후방 미끄러짐은 대퇴골두골단분리증이고, 걸을 수 있으니 안정형이다 [[?loder-1993]]. 성별·아픈 자리·경위가 달라도 결정 단서가 같으므로 즉시 체중부하를 막고 정복 없이 제자리 나사 고정한다 [[?peck-2010]]. 정복은 무혈성괴사를 부르고, 목발·소염제로 기다리면 미끄러짐이 진행한다.",
+    "of": "kmle-2026-0961",
+    "changed": "성별(여아)·나이(11세)·아픈 자리(오른쪽 사타구니)·내원 경위(체육 시간 뒤 악화)·제시 순서를 바꾸고 비만·외상 없음·굽힘 시 바깥돌림·걸을 수 있음·골단 뒤아래 미끄러짐은 그대로 → 답은 여전히 제자리 나사 고정",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "사춘기 아이의 절뚝임·무릎/엉덩 통증 — SCFE 확인에서 치료까지",
+  "geo": {
+   "title": "사춘기 아이의 절뚝임·무릎/엉덩 통증 — SCFE 확인에서 치료까지",
+   "w": 482,
+   "h": 831.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "10–16세, 외상 없는 무릎·",
+      "허벅지·사타구니 통증 +",
+      "절뚝임"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "exam",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "엉덩관절 굽힘 시 바깥돌림·",
+      "안쪽돌림 제한이 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "무릎 진찰·X선이 정상이면",
+      "엉덩관절 진찰을 다시 — 골반",
+      "전후 + 개구리다리 측면 X선"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "xr",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "X선에서 골단이 목에 대해 뒤·",
+      "아래로 미끄러졌는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 원인 — 염증 지표·",
+      "초음파(일과성 활막염·",
+      "화농성 관절염), 골두",
+      "괴사(페르테스)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "nwb",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "즉시 체중부하 금지·입원 —",
+      "걸을 수 있는지로 안정성 판정"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "pin",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "정복 없이 제자리 나사 1개",
+      "고정 · 반대쪽 감시(고위험은",
+      "예방 고정)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 734.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "exam",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "exam",
+     "to": "info",
+     "points": [
+      [
+       178.0,
+       227.0
+      ],
+      [
+       178.0,
+       237.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "애매하거나 진찰 전"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 175.3,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "exam",
+     "to": "xr",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       243.0
+      ],
+      [
+       452,
+       243.0
+      ],
+      [
+       452,
+       394.0
+      ],
+      [
+       259.7,
+       394.0
+      ],
+      [
+       259.7,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있다"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 400.0
+     }
+    },
+    {
+     "from": "exam",
+     "to": "other",
+     "points": [
+      [
+       276.0,
+       227.0
+      ],
+      [
+       276.0,
+       249.0
+      ],
+      [
+       466,
+       249.0
+      ],
+      [
+       466,
+       524.0
+      ],
+      [
+       307.3,
+       524.0
+      ],
+      [
+       307.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없고 무릎 병변이 뚜렷함"
+      ],
+      "w": 129.2,
+      "h": 17,
+      "x": 242.7,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "xr",
+     "points": [
+      [
+       227.0,
+       374.0
+      ],
+      [
+       227.0,
+       384.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       194.3,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "X선 촬영"
+      ],
+      "w": 51.1,
+      "h": 17,
+      "x": 168.8,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "xr",
+     "to": "nwb",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       114.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "xr",
+     "to": "other",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       372.7,
+       520.0
+      ],
+      [
+       372.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "nwb",
+     "to": "pin",
+     "points": [
+      [
+       114.0,
+       634.0
+      ],
+      [
+       114.0,
+       644.0
+      ],
+      [
+       227.0,
+       644.0
+      ],
+      [
+       227.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안정형·불안정형 모두"
+      ],
+      "w": 117.1,
+      "h": 17,
+      "x": 168.4,
+      "y": 714.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "10–16세, 외상 없는 무릎·허벅지·사타구니 통증 + 절뚝임",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "엉덩관절 굽힘 시 바깥돌림·안쪽돌림 제한이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "exam",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "엉덩관절 굽힘 시 바깥돌림·안쪽돌림 제한이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "애매하거나 진찰 전",
+      "to": 3,
+      "toText": "무릎 진찰·X선이 정상이면 엉덩관절 진찰을 다시 — 골반 전후 + 개구리다리 측면 X선"
+     },
+     {
+      "label": "있다",
+      "to": 4,
+      "toText": "X선에서 골단이 목에 대해 뒤·아래로 미끄러졌는가?"
+     },
+     {
+      "label": "없고 무릎 병변이 뚜렷함",
+      "to": 6,
+      "toText": "다른 원인 — 염증 지표·초음파(일과성 활막염·화농성 관절염), 골두 괴사(페르테스)"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "무릎 진찰·X선이 정상이면 엉덩관절 진찰을 다시 — 골반 전후 + 개구리다리 측면 X선",
+    "note": "",
+    "branches": [
+     {
+      "label": "X선 촬영",
+      "to": 4,
+      "toText": "X선에서 골단이 목에 대해 뒤·아래로 미끄러졌는가?"
+     }
+    ]
+   },
+   {
+    "id": "xr",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "X선에서 골단이 목에 대해 뒤·아래로 미끄러졌는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 5,
+      "toText": "즉시 체중부하 금지·입원 — 걸을 수 있는지로 안정성 판정"
+     },
+     {
+      "label": "아니다",
+      "to": 6,
+      "toText": "다른 원인 — 염증 지표·초음파(일과성 활막염·화농성 관절염), 골두 괴사(페르테스)"
+     }
+    ]
+   },
+   {
+    "id": "nwb",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "즉시 체중부하 금지·입원 — 걸을 수 있는지로 안정성 판정",
+    "note": "",
+    "branches": [
+     {
+      "label": "안정형·불안정형 모두",
+      "to": 7,
+      "toText": "정복 없이 제자리 나사 1개 고정 · 반대쪽 감시(고위험은 예방 고정)"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 원인 — 염증 지표·초음파(일과성 활막염·화농성 관절염), 골두 괴사(페르테스)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pin",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "정복 없이 제자리 나사 1개 고정 · 반대쪽 감시(고위험은 예방 고정)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0961"
+  ],
+  "hasErrors": false
+ },
+ "cn.path.hepatic-congestion.zone3-mechanism": {
+  "id": "cn.path.hepatic-congestion.zone3-mechanism",
+  "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
+  "objective": "우심부전의 만성 수동 간울혈에서 울혈·괴사가 중심정맥 주위(zone 3)에 모이는 이유를 간소엽의 혈류 방향(문맥삼합 → 굴모세혈관 → 중심정맥)에 따른 산소 기울기와 역행성 정맥압 전달로 설명하고, Kupffer 세포·담즙·가상의 밸브 같은 다른 설명이 왜 틀렸는지, 심장성 간경화·Budd-Chiari 와의 차이를 가른다",
+  "objectiveKind": "기전",
+  "condition": "만성 수동 간울혈(우심부전) — 중심소엽 괴사",
+  "topic": "Gastroenterology",
+  "seeAlso": [
+   "Pathology",
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "244285a159ec50ee",
+  "summary": [
+   "간소엽의 혈액은 문맥삼합(간동맥 + 문맥)에서 들어와 굴모세혈관을 지나 중심정맥으로 나간다. 그래서 문맥역 쪽(zone 1)이 산소를 먼저, 중심정맥 쪽(zone 3)이 가장 늦게 받는다 [[?robbins-basic-10]].",
+   "우심부전으로 오른 정맥압은 하대정맥 → 간정맥 → 굴모세혈관으로 거꾸로 전달되어 굴모세혈관이 늘어나고 피가 고인다. 중심정맥에 가장 가까운 zone 3 가 이 압력을 먼저 받는다 [[harrison-21: 344장 p.2628]].",
+   "오랜 수동 울혈에 순환 저하로 인한 상대적 허혈이 겹쳐 중심소엽 간세포가 괴사하고, 중심정맥 주위 섬유화로 이어진다 [[harrison-21: 344장 p.2628]]. 붉은 울혈 구역과 창백한 문맥역이 섞인 단면이 「육두구 간」이다 [[?robbins-basic-10]].",
+   "섬유화가 소엽 바깥으로 퍼지면 심장성 간경화가 된다. 간은 크고 단단하며, ALP 가 특징적으로 오르고 아미노전달효소는 정상이거나 약간 높다(AST > ALT). 정맥류 출혈·간성뇌증은 드물다 [[harrison-21: 344장 p.2628]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>만성 수동 간울혈</strong>은 우심 압력이 오래 높아 간에서 피가 빠져나가지 못하고 고이는 상태다. 단면이 붉은 울혈 구역과 창백한 구역이 섞여 육두구처럼 보여 「육두구 간(nutmeg liver)」이라 한다 <sup>[2†]</sup>. 오래되면 중심정맥 주위 섬유화가 소엽 바깥으로 퍼져 <strong>심장성 간경화</strong>가 된다 <sup>[1 344장 p.2628]</sup>. 이 정리본의 목표는 치료가 아니라 <strong>왜 손상이 중심정맥 주위에 모이는가</strong>라는 기전이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p><strong>정상 혈류</strong>: 간소엽의 혈액은 문맥삼합에서 간동맥(산소 많은 피)과 문맥(장에서 온 피)으로 들어와 굴모세혈관을 따라 흐르며 간세포에 산소를 내주고, 중심정맥으로 모여 간정맥 → 하대정맥 → 우심방으로 나간다. 그래서 산소는 zone 1 에서 zone 3 으로 갈수록 줄어든다(구역 표) <sup>[2†]</sup>.</p>\n<p><strong>우심부전에서</strong>:</p>\n<ol>\n<li><strong>역행 정맥압</strong>: 우심방·하대정맥의 높은 압력이 간정맥을 거쳐 굴모세혈관까지 전달되어 굴모세혈관이 늘어나고 피가 고인다 <sup>[1 344장 p.2628]</sup>. 중심정맥에 가장 가까운 zone 3 가 가장 먼저, 가장 세게 받는다.</li>\n<li><strong>상대적 허혈</strong>: 심박출이 줄어 간으로 오는 산소 자체가 적고, 고인 피가 흐르지 않아 산소 전달이 더 떨어진다. 원래 산소가 가장 적은 zone 3 가 먼저 한계에 닿는다 <sup>[1 344장 p.2628]</sup>.</li>\n<li><strong>괴사 → 섬유화</strong>: 두 기전이 같은 자리(zone 3)에서 겹쳐 중심소엽 간세포가 괴사하고, 중심정맥 주위 섬유화가 생겨 오래되면 소엽 바깥으로 퍼진다 <sup>[1 344장 p.2628]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>크고 단단한 간</strong>: 울혈로 부은 간, 오래되면 섬유화 <sup>[1 344장 p.2628]</sup>.</li>\n<li><strong>육두구 단면</strong>: 울혈된 zone 3(붉음)과 비교적 보존된 zone 1(창백·지방 변화)이 번갈아 보인다 <sup>[2†]</sup>.</li>\n<li><strong>ALP 상승, 아미노전달효소 정상~약간 상승(AST &gt; ALT)</strong>: 만성 울혈의 검사 양상 <sup>[1 344장 p.2628]</sup>.</li>\n<li><strong>정맥류 출혈·간성뇌증 드묾</strong>: 다른 원인의 간경화와 다른 점 <sup>[1 344장 p.2628]</sup>.</li>\n<li><strong>목정맥 팽대·삼첨판 역류·부종</strong>: 원인인 우심부전의 소견.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>간 유출 장애 감별 표를 따른다. 심장성 간병증과 Budd-Chiari 증후군은 모두 zone 3 울혈을 만들지만, Budd-Chiari 는 생검에서 적혈구가 혈관 밖으로 새어 나와 있다 <sup>[1 344장 p.2628]</sup>. 심장 원인(수축성 심낭염·제한성 심근병·중증 울혈성 심부전)은 간후성 문맥고혈압으로 분류된다 <sup>[1 344장 p.2629]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>심장 질환이 뚜렷한 환자에서 ALP 상승과 간 비대가 있으면 대개 진단된다. 간생검의 섬유화 양상은 숙련된 간병리 의사가 알아보며, 적혈구 유출 여부가 Budd-Chiari 를 가른다 <sup>[1 344장 p.2628]</sup>. 심초음파는 원인 심장 질환을 찾는다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>원인 심장 질환을 치료한다 <sup>[1 344장 p.2628]</sup>. 우심 압력이 내려가면 울혈이 줄어든다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>zone 3 손상은 울혈만의 신호가 아니다 — 급성 쇼크(허혈성 간염)와 아세트아미노펜처럼 zone 3 의 대사 효소로 활성화되는 독성도 같은 자리를 다친다 <sup>[2†]</sup>.</li>\n<li>반대로 문맥으로 실려 오는 독소(예: 철)는 zone 1 을 먼저 다친다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 344장 p.2628~2629). 구역별 산소 기울기는 해리슨 이 장에 서술이 없어 병리 교과서 출처로 남겼다(원문 미대조).</li>\n</ul>"
+   },
+   {
+    "title": "왜 급성 쇼크와 만성 울혈이 같은 자리를 다치나",
+    "deep": true,
+    "html": "<p>급성 쇼크는 들어오는 산소를 줄이고(유입 문제), 우심부전은 나가는 길을 막아 고이게 한다(유출 문제). 방향은 다르지만 둘 다 굴모세혈관 끝의 zone 3 에서 산소가 먼저 바닥난다. 우심부전 환자가 저심박출까지 겹치면 두 기전이 더해져 괴사가 더 넓어진다 — 해리슨이 만성 수동 울혈에 「순환 저하로 인한 상대적 허혈」을 함께 적는 이유다 <sup>[1 344장 p.2628]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "간소엽 구역 — 혈류 순서가 손상 부위를 정한다",
+    "columns": [
+     "구역",
+     "위치",
+     "산소",
+     "잘 다치는 손상"
+    ],
+    "rows": [
+     [
+      "zone 1",
+      "문맥삼합 주위",
+      "가장 먼저·가장 많이",
+      "문맥역으로 들어오는 독소·염증에 먼저 노출"
+     ],
+     [
+      "zone 2",
+      "중간",
+      "중간",
+      "—"
+     ],
+     [
+      "zone 3",
+      "중심정맥 주위",
+      "가장 늦게·가장 적게",
+      "허혈·울혈(우심부전·쇼크), CYP 로 활성화되는 독성(아세트아미노펜)"
+     ]
+    ],
+    "note": "구역별 산소 기울기와 취약성은 <sup>[2†]</sup>. 울혈·허혈에 의한 중심소엽 괴사는 <sup>[1 344장 p.2628]</sup>."
+   },
+   {
+    "title": "간 유출 장애의 감별",
+    "columns": [
+     "질환",
+     "막힌 자리",
+     "원인 예",
+     "구별 단서",
+     "근거"
+    ],
+    "rows": [
+     [
+      "만성 수동 간울혈·심장성 간경화",
+      "간 밖(심장) — 우심 압력 상승",
+      "우심부전, 삼첨판 역류, 수축성 심낭염, 제한성 심근병",
+      "목정맥 팽대 등 심장 소견, ALP↑, 생검에 적혈구 유출 없음",
+      "<sup>[1 344장 p.2628]</sup> <sup>[1 344장 p.2629]</sup>"
+     ],
+     [
+      "Budd-Chiari 증후군",
+      "간정맥·하대정맥",
+      "혈전·막성 폐쇄",
+      "생검에 적혈구 혈관 밖 유출",
+      "<sup>[1 344장 p.2628]</sup>"
+     ],
+     [
+      "굴모세혈관 폐쇄 증후군",
+      "굴모세혈관·소정맥",
+      "골수이식 전처치(방사선·항암), 피롤리지딘 알칼로이드",
+      "특징적 생검 소견, 전처치 병력",
+      "<sup>[1 344장 p.2628]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "문맥역 간세포가 보존되니 굴모세혈관에 일방향 밸브가 있다?",
+    "point": "굴모세혈관에 밸브는 없다. 문맥역이 「상대적으로」 보존되는 것은 산소를 먼저 받고 역행 정맥압이 가장 늦게·약하게 닿는 혈류 순서 때문이다. 손상이 중심에서 바깥으로 퍼지는 기울기이지, 경계에서 차단되는 모양이 아니다 — 오래되면 섬유화가 소엽 바깥으로 번진다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "중심정맥이 산소 많은 간동맥혈을 받는다?",
+    "point": "해부학이 거꾸로다. 간동맥혈은 문맥삼합으로 들어오고, 중심정맥은 소엽을 다 지나 산소가 소모된 혈액을 모아 간정맥으로 내보낸다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "담즙 독성·Kupffer 세포로 설명?",
+    "point": "담관은 문맥역으로 모이고 Kupffer 세포는 굴모세혈관 전체에 있다. 우심부전의 zone 3 손상은 저산소 + 울혈이라는 순환 기전이다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "심장성 간경화에서는 정맥류 출혈·간성뇌증이 드물다 — 다른 간경화와 다른 점 <sup>[1 344장 p.2628]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "cardiac-hepatopathy",
+    "name": "심장성 간경화의 진단 단서(해리슨)",
+    "kind": "진단 기준",
+    "population": "오랜 우심부전 환자",
+    "statement": "뚜렷한 심장 질환 + ALP 상승 + 커진 간이면 대개 진단된다. 간생검의 섬유화 양상은 숙련된 간병리 의사가 알아본다. Budd-Chiari 증후군은 적혈구 혈관 밖 유출이 있어 구별된다 [[harrison-21: 344장 p.2628]]",
+    "exceptions": "치료는 원인 심장 질환의 치료다 [[harrison-21: 344장 p.2628]]",
+    "source": "harrison-21",
+    "locator": "344장 p.2628 Cardiac Cirrhosis",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 344: Cirrhosis and Its Complications",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 344장 p.2624–2632",
+    "checked": "본문 대조(드라이브 문서, 344장) — p.2624 Table 344-1 간경화 원인에 심장성 간경화; p.2628 Cardiac Cirrhosis 절: 오랜 우심부전에서 올라간 정맥압이 하대정맥·간정맥을 거쳐 굴모세혈관으로 전달되어 확장·울혈, 간 비대·부종, 장기 수동 울혈과 순환 저하로 인한 상대적 허혈로 중심소엽 간세포 괴사 → 중심정맥 주위 섬유화 → 소엽 바깥으로 퍼져 간경화, 크고 단단한 간, ALP 특징적 상승·아미노전달효소 정상~약간 상승(AST > ALT), 정맥류 출혈·뇌증은 드묾, 진단(심장 질환 + ALP↑ + 간 비대), Budd-Chiari 는 적혈구 유출로 구별, 굴모세혈관 폐쇄 증후군, 치료는 심장 질환; p.2629 Table 344-3 간후성 문맥고혈압의 심장 원인(제한성 심근병·수축성 심낭염·중증 울혈성 심부전). 간소엽 zone 1→3 산소 기울기 자체는 이 장에 서술이 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "robbins-basic-10",
+    "org": "Elsevier",
+    "title": "Robbins Basic Pathology, 10th ed. — The Liver and Gallbladder (hepatic zonation, circulatory disorders)",
+    "kind": "textbook",
+    "citation": "Kumar V, Abbas AK, Aster JC (eds). Robbins Basic Pathology, 10e. Elsevier; 2018. 간 소엽 구역과 순환 장애 절",
+    "checked": "서지만 — 이 컨테이너에서 원문을 열지 못했다. 원 문항 출처로 적힌 교과서이며, zone 1→3 산소 기울기·육두구 간 육안 소견은 표준 병리 서술을 기억에 근거해 적었다. 쪽수 미확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "우심부전에서 zone 3 가 먼저 다치는 두 가지 이유는?",
+    "a": "혈류 순서상 산소를 가장 늦게(적게) 받고, 우심의 높은 정맥압이 간정맥 → 중심정맥으로 거꾸로 전달되어 가장 먼저 울혈되기 때문이다."
+   },
+   {
+    "q": "심장성 간경화의 전형적 검사 소견은?",
+    "a": "ALP 상승, 아미노전달효소 정상~약간 상승(AST > ALT), 크고 단단한 간. 정맥류 출혈·뇌증은 드물다."
+   },
+   {
+    "q": "생검에서 Budd-Chiari 를 심장성 간병증과 가르는 소견은?",
+    "a": "Budd-Chiari 에서는 적혈구가 혈관 밖으로 새어 나와 있다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.path.hepatic-congestion.zone3-mechanism#v1",
+    "context": "Same zonation question; the injury pattern (zone 1 vs zone 3) is flipped",
+    "stem": "A 34-year-old woman develops acute liver injury several days after an accidental ingestion of an iron-containing supplement. Liver biopsy shows hepatocyte necrosis concentrated around the portal tracts, with relative sparing of hepatocytes around the central veins. Her heart examination and echocardiogram are normal. Which of the following best explains why the injury is centered on the portal tracts?",
+    "options": [
+     "Periportal hepatocytes receive portal venous blood first and are exposed to the highest concentration of an absorbed toxin",
+     "Periportal hepatocytes are the last in the sinusoidal flow to receive oxygen",
+     "Elevated central venous pressure is transmitted first to the portal tracts",
+     "Bile canaliculi converge on the central vein, protecting centrilobular cells",
+     "Kupffer cells are absent from the periportal sinusoids"
+    ],
+    "answer": 1,
+    "explanation": "Blood enters the lobule at the portal triad, so an ingested toxin carried in portal venous blood reaches zone 1 hepatocytes first and at the highest concentration — iron poisoning classically causes periportal (zone 1) necrosis. In the original item the pattern was centrilobular (zone 3) because zone 3 is last to receive oxygen and first to feel right-heart back-pressure; here the heart is normal and the gradient that matters is the toxin gradient, not the oxygen or pressure gradient. Choice B describes zone 3, not zone 1.",
+    "of": "usmle-2026-0037",
+    "changed": "long-standing right heart failure with centrilobular necrosis → periportal (zone 1) necrosis after ingestion of a toxin that reaches the lobule via the portal blood without needing zone-3 CYP activation → the best explanation changes from 'last to get oxygen / first to get back-pressure' to 'first to meet portal-delivered toxin'",
+    "flip": true
+   },
+   {
+    "id": "cn.path.hepatic-congestion.zone3-mechanism#v2",
+    "context": "Surface change only — constrictive pericarditis instead of tricuspid regurgitation",
+    "stem": "A 59-year-old woman who received mediastinal radiation for lymphoma 20 years ago has progressive leg edema, ascites, and a markedly elevated jugular venous pressure that rises on inspiration. The liver is enlarged and firm. Serum alkaline phosphatase is elevated and aminotransferases are mildly increased. A biopsy shows dilated, blood-filled sinusoids with hepatocyte loss around the central veins; hepatocytes near the portal tracts are relatively preserved, and there is no red-cell extravasation into the liver plates. Which of the following best explains the distribution of this injury?",
+    "options": [
+     "Kupffer cells cluster around central veins and release cytokines locally",
+     "Bile acids accumulate around central veins because bile ducts drain there",
+     "Centrilobular hepatocytes receive the least-oxygenated blood and are first exposed to elevated hepatic venous pressure",
+     "Hepatic arterial blood enters the lobule through the central vein",
+     "A valve between sinusoids and portal tracts blocks pressure transmission"
+    ],
+    "answer": 3,
+    "explanation": "The cause of the high right-sided pressure changed (constrictive pericarditis instead of tricuspid regurgitation), but the clue that decides the answer did not: congestion and necrosis around central veins with portal sparing and no red-cell extravasation (arguing against Budd-Chiari). Zone 3 hepatocytes sit at the end of the sinusoidal flow, so they get the least oxygen, and they are the first to receive the back-pressure transmitted from the IVC and hepatic veins. Kupffer cells are distributed throughout the sinusoids, bile ducts run in portal tracts, arterial blood enters at the portal triad, and there is no sinusoidal valve.",
+    "of": "usmle-2026-0037",
+    "changed": "age/sex (59-year-old woman), cause of right heart failure (constrictive pericarditis after radiation), and wording changed; centrilobular congestion-necrosis with portal sparing kept → answer still 'last to receive oxygen, first to bear retrograde venous pressure'",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "간 손상의 분포로 기전을 읽는다 — 중심정맥 주위면 순환(울혈·허혈)부터",
+  "geo": {
+   "title": "간 손상의 분포로 기전을 읽는다 — 중심정맥 주위면 순환(울혈·허혈)부터",
+   "w": 680,
+   "h": 684.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "간생검에서 간세포 괴사·",
+      "울혈 분포를 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "where",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "손상이 중심정맥 주위(zone",
+      "3)에 모이는가,",
+      "문맥역(zone 1)에 모이는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 146.0
+    },
+    {
+     "id": "z1",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "문맥역 중심: 문맥으로",
+      "들어오는 독소·염증 손상을",
+      "먼저 생각"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "심장 소견(목정맥 팽대·",
+      "삼첨판 역류·우심부전),",
+      "쇼크 병력,",
+      "약물(아세트아미노펜),",
+      "생검의 적혈구 유출 확인"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 355.0,
+     "y": 293.0
+    },
+    {
+     "id": "cause",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "zone 3 손상의 원인은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 474.0
+    },
+    {
+     "id": "cong",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "만성 수동 간울혈 → 오래되면",
+      "심장성 간경화 — 심장 질환",
+      "치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 587.0
+    },
+    {
+     "id": "bcs",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "적혈구 유출 동반:",
+      "Budd-Chiari(간정맥 폐쇄)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 587.0
+    },
+    {
+     "id": "tox",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "급성 쇼크·아세트아미노펜:",
+      "허혈성·독성 zone 3 괴사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 587.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "where",
+     "points": [
+      [
+       340.0,
+       80
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "where",
+     "to": "z1",
+     "points": [
+      [
+       307.3,
+       227.0
+      ],
+      [
+       307.3,
+       237.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "문맥역"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "where",
+     "to": "info",
+     "points": [
+      [
+       372.7,
+       227.0
+      ],
+      [
+       372.7,
+       243.0
+      ],
+      [
+       453.0,
+       243.0
+      ],
+      [
+       453.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중심정맥 주위"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 414.1,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "cause",
+     "points": [
+      [
+       453.0,
+       408.0
+      ],
+      [
+       453.0,
+       418.0
+      ],
+      [
+       340.0,
+       418.0
+      ],
+      [
+       340.0,
+       474.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cause",
+     "to": "cong",
+     "points": [
+      [
+       291.0,
+       521.0
+      ],
+      [
+       291.0,
+       531.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       114.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "만성 우심부전"
+      ],
+      "w": 77.7,
+      "h": 17,
+      "x": 75.1,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "bcs",
+     "points": [
+      [
+       340.0,
+       521.0
+      ],
+      [
+       340.0,
+       537.0
+      ],
+      [
+       340.0,
+       537.0
+      ],
+      [
+       340.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "간정맥 폐쇄"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 306.6,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "tox",
+     "points": [
+      [
+       389.0,
+       521.0
+      ],
+      [
+       389.0,
+       543.0
+      ],
+      [
+       566.0,
+       543.0
+      ],
+      [
+       566.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "쇼크·약물"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 536.8,
+      "y": 567.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "간생검에서 간세포 괴사·울혈 분포를 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "손상이 중심정맥 주위(zone 3)에 모이는가, 문맥역(zone 1)에 모이는가?"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "손상이 중심정맥 주위(zone 3)에 모이는가, 문맥역(zone 1)에 모이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "문맥역",
+      "to": 3,
+      "toText": "문맥역 중심: 문맥으로 들어오는 독소·염증 손상을 먼저 생각"
+     },
+     {
+      "label": "중심정맥 주위",
+      "to": 4,
+      "toText": "심장 소견(목정맥 팽대·삼첨판 역류·우심부전), 쇼크 병력, 약물(아세트아미노펜), 생검의 적혈구 유출 확인"
+     }
+    ]
+   },
+   {
+    "id": "z1",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "문맥역 중심: 문맥으로 들어오는 독소·염증 손상을 먼저 생각",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "심장 소견(목정맥 팽대·삼첨판 역류·우심부전), 쇼크 병력, 약물(아세트아미노펜), 생검의 적혈구 유출 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "zone 3 손상의 원인은?"
+     }
+    ]
+   },
+   {
+    "id": "cause",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "zone 3 손상의 원인은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "만성 우심부전",
+      "to": 6,
+      "toText": "만성 수동 간울혈 → 오래되면 심장성 간경화 — 심장 질환 치료"
+     },
+     {
+      "label": "간정맥 폐쇄",
+      "to": 7,
+      "toText": "적혈구 유출 동반: Budd-Chiari(간정맥 폐쇄)"
+     },
+     {
+      "label": "쇼크·약물",
+      "to": 8,
+      "toText": "급성 쇼크·아세트아미노펜: 허혈성·독성 zone 3 괴사"
+     }
+    ]
+   },
+   {
+    "id": "cong",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "만성 수동 간울혈 → 오래되면 심장성 간경화 — 심장 질환 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bcs",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "적혈구 유출 동반: Budd-Chiari(간정맥 폐쇄)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tox",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "급성 쇼크·아세트아미노펜: 허혈성·독성 zone 3 괴사",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0037"
+  ],
+  "hasErrors": false
+ },
+ "cn.peds.biliary-atresia.cholestasis-workup": {
+  "id": "cn.peds.biliary-atresia.cholestasis-workup",
+  "title": "생후 2주 넘은 황달에 결합빌리루빈이 오르면 — 생리적·모유 황달이 아니라 담즙정체다, 담도폐쇄부터 서둘러 확인한다",
+  "objective": "생후 2주 이후 지속되는 황달에서 결합(직접)빌리루빈 상승·회백색 변·진한 소변을 담즙정체로 읽고, 담도폐쇄를 배제하기 위한 간담도 영상 평가를 지체 없이 의뢰하는 것을 고르며, 모유수유 중단·광선치료·관찰이 비결합 황달의 조치임을 가른다",
+  "objectiveKind": "검사 선택",
+  "condition": "신생아 담즙정체(담도폐쇄 의심)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "Gastroenterology",
+   "General Surgery"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "239dd259f6a3c4b6",
+  "summary": [
+   "신생아 황달의 첫 갈림길은 「결합이냐 비결합이냐」다. 생리적·모유 황달·용혈은 비결합형이고, 결합빌리루빈 상승은 어떤 경우에도 생리적이지 않다 — 담즙정체다 [[?naspghan-2017]].",
+   "생후 2주(만삭아)가 넘도록 황달이 남으면 분획 빌리루빈을 잰다. 결합빌리루빈 > 1.0 mg/dL 이면 비정상으로 보고 평가한다 [[?naspghan-2017]].",
+   "회백색(무담즙) 변 + 진한 소변 + 간비대 + GGT 상승은 담도폐쇄를 가장 먼저 의심하게 한다. 아기가 잘 먹고 잘 크는 것은 배제 근거가 아니다.",
+   "담도폐쇄는 카사이(간문부 공장 문합)수술을 일찍 할수록 담즙 배출·자가간 생존이 좋다 — 흔히 생후 30–45일(늦어도 60일) 안을 목표로 한다 [[?naspghan-2017]]. 그래서 「기다려 본다」가 가장 해로운 선택이다.",
+   "평가는 복부 초음파(담낭·삼각끈 징후, 다른 원인 배제) → 간담도 스캔·간생검 → 수술적 담도조영(확진)으로 이어진다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>신생아 담즙정체는 결합(직접)빌리루빈 &gt; 1.0 mg/dL 로 정의되는 결합고빌리루빈혈증이다 <sup>[1†]</sup>. 담도폐쇄는 간외 담도가 진행성 섬유화로 막히는 영아 질환으로, 담즙정체의 가장 흔하고 가장 시간이 급한 원인이다. 이 정리본의 목표는 <strong>지속 황달을 분획으로 가르고, 결합형이면 담도폐쇄 평가를 지체 없이 시작하는 것</strong>이다(카사이수술 자체의 세부는 목표 밖).</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 적혈구 분해로 생긴 비결합빌리루빈은 알부민에 붙어 간으로 가서 UGT1A1 로 포합(결합)되고, 수용성이 된 결합빌리루빈은 담즙으로 장에 나간다. 장에서 세균이 스테르코빌린을 만들어 변을 노랗게·갈색으로 물들인다.</p>\n<ul>\n<li><strong>비결합형 황달</strong>은 「생산이 많거나 포합이 늦은」 문제다 — 신생아의 짧은 적혈구 수명·미숙한 UGT 활성(생리적), 모유 속 인자로 늘어난 장간순환(모유 황달), 용혈. 결합 이후의 배출길은 멀쩡하므로 변은 노랗다.</li>\n<li><strong>결합형 황달</strong>은 「포합은 됐는데 나가지 못하는」 문제다. 담도폐쇄에서는 간외 담도가 막혀 결합빌리루빈이 혈액으로 역류한다 → 수용성이라 소변으로 나가 <strong>소변이 진해지고</strong>, 장에 담즙이 없어 <strong>변이 회백색</strong>이 된다. 담즙 정체가 간세포·담관을 손상시켜 GGT 가 크게 오르고 간이 커지며, 몇 주 안에 섬유화가 진행한다.</li>\n</ul>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>생후 2주 넘게 지속되는 황달 — 생리적 황달이 끝났어야 할 시기.</li>\n<li>회백색·크림색 변, 진한 소변 — 담즙이 장에 가지 않고 결합빌리루빈이 소변으로 나간다.</li>\n<li>간비대(이후 비장비대) — 담즙정체와 섬유화.</li>\n<li>GGT 현저 상승, 아미노전달효소 경도 상승 — 담관 손상 양상.</li>\n<li>잘 먹고 잘 크는 경우가 많다 — 초기에는 전신 상태가 좋아 안심하기 쉽다.</li>\n<li>지용성 비타민 흡수 장애 → 비타민 K 결핍 출혈이 첫 소견일 수 있다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>위 표처럼 먼저 결합형·비결합형을 가른다. 결합형 안에서는 담도폐쇄 외에 담관낭(초음파로 보인다), 알라질 증후군(특징 얼굴·척추·심장), 감염(요로감염·패혈증·TORCH), 대사질환(갈락토스혈증·α1-항트립신 결핍·갑상선저하), 비경구영양 관련 담즙정체를 본다. 담도폐쇄는 시간이 가장 급하므로 다른 원인 평가를 이유로 담도 평가를 미루지 않는다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li>분획 빌리루빈(총·직접) — 모든 2주 이상 지속 황달.</li>\n<li>결합형이면: 간기능·GGT·응고(PT/INR)·혈당, 요검사·배양, 갑상선 기능, 대사 선별.</li>\n<li>복부 초음파(공복): 담낭이 작거나 없음·삼각끈 징후는 담도폐쇄를 시사, 담관낭 등 다른 구조 이상을 가른다. 정상 초음파가 담도폐쇄를 배제하지는 못한다.</li>\n<li>간담도 스캔(장 배출 여부)·간생검(담관 증식·담즙 마개).</li>\n<li>수술적(또는 내시경적) 담도조영 — 확진.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>담도폐쇄가 확진되면 카사이수술(간문부 공장 문합)로 담즙길을 새로 낸다. 일찍 할수록 담즙 배출 성공률과 자가간 생존이 좋고 <sup>[1†]</sup>, 실패하거나 늦으면 간경변으로 진행해 간이식이 필요하다. 수술 전후 지용성 비타민(A·D·E·K) 보충, 중쇄지방 분유 등 영양 지원을 한다.</p>\n<p><strong>반응 확인·재평가.</strong> 수술 뒤 변 색이 돌아오고 빌리루빈이 수개월 안에 정상화되는지를 본다. 담관염(발열·황달 재발)·문맥고혈압·성장 부진을 추적한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>결합빌리루빈 상승은 어떤 나이에도 생리적이지 않다 — 「모유 황달」로 부르기 전에 분획을 잰다.</li>\n<li>회백색 변은 그 자체로 즉시 평가 대상이다(연령·전신 상태와 무관).</li>\n<li>모유 중단·광선치료는 비결합형 조치이며 담즙정체에서 진단만 늦춘다.</li>\n<li>비결합형 모유 황달이면 모유를 계속하는 것이 원칙이다.</li>\n<li>이 슬롯은 소아과 손 슬롯이라 해리슨 대조 대상이 아니다. NASPGHAN/ESPGHAN 2017 지침은 원문을 열지 못해 서지만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "왜 시간이 예후인가",
+    "deep": true,
+    "html": "<p>담도폐쇄의 간외 담도는 태어날 때 부분적으로 열려 있다가 생후 몇 주 동안 염증·섬유화로 완전히 막히고, 같은 과정이 간내 담도와 간실질로 번진다. 카사이수술은 간문부에 남아 있는 미세 담관을 공장에 이어 담즙을 흘려 보내는 수술이라, 그 미세 담관이 섬유화로 사라지기 전에 해야 한다. 여러 나라가 대변 색 카드 선별을 도입한 이유도 같다 — 부모가 회백색 변을 일찍 알아보면 진단 나이가 앞당겨진다. 수치 문턱(결합빌리루빈 &gt; 1.0 mg/dL)과 카사이 시기의 구체 값은 지침 원문 대조가 필요하다 <sup>[1†]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "신생아 황달 — 비결합형과 결합형은 조치가 정반대다",
+    "columns": [
+     "구분",
+     "대표 원인",
+     "변·소변",
+     "조치"
+    ],
+    "rows": [
+     [
+      "비결합형 — 생리적",
+      "간 포합 미숙·적혈구 수명 짧음",
+      "노란 변, 옅은 소변",
+      "관찰, 수치 높으면 광선치료"
+     ],
+     [
+      "비결합형 — 모유 황달",
+      "모유 속 인자가 장간순환 증가(2주 이후까지 지속)",
+      "노란 변",
+      "모유 계속, 관찰 — 중단은 대개 불필요"
+     ],
+     [
+      "비결합형 — 용혈",
+      "ABO·Rh 부적합, G6PD 결핍",
+      "노란 변",
+      "광선치료·교환수혈"
+     ],
+     [
+      "결합형 — 담즙정체",
+      "담도폐쇄·담관낭·알라질·감염·대사질환",
+      "회백색 변, 진한 소변",
+      "즉시 간담도 평가 — 광선치료·모유 중단 무효 <sup>[1†]</sup>"
+     ]
+    ],
+    "note": "분획 빌리루빈 한 번이 두 갈래를 가른다. 비결합형 조치를 결합형에 쓰면 진단만 늦어진다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "모유수유 중단 vs 간담도 평가 — 「2주 넘은 황달 = 모유 황달」",
+    "point": "모유 황달은 비결합빌리루빈이 오르는 상태로, 변이 노랗고 소변이 옅으며 결합빌리루빈은 정상이다. 결합빌리루빈 상승·회백색 변·진한 소변은 모유 황달로 설명되지 않는다 — 담즙이 장으로 내려가지 못한다는 신호다 <sup>[1†]</sup>. 모유 중단은 담즙정체를 전혀 고치지 못하고, 담도폐쇄라면 카사이수술 시기만 늦춘다.",
+    "exception": "분획 빌리루빈이 비결합형이고 변이 노랗고 잘 크면 모유 황달로 보고 모유를 계속하며 관찰한다(중단은 대개 필요 없다).",
+    "cites": ""
+   },
+   {
+    "contrast": "광선치료 vs 담즙정체 평가 — 「황달이면 광선치료」",
+    "point": "광선치료는 피부의 비결합빌리루빈을 수용성 이성체로 바꿔 배설시킨다. 결합빌리루빈은 이미 수용성이며 담즙 배출길이 막힌 것이 문제라 광선치료가 소용없다(피부가 청동색으로 변할 수 있다).",
+    "exception": "결합·비결합이 함께 높은 경우 비결합 수치가 광선치료 기준을 넘으면 병행할 수 있다 — 그래도 담즙정체 평가는 따로 한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "잘 먹고 잘 크니 관찰 — 「전신 상태가 좋으면 서두를 것 없다」",
+    "point": "담도폐쇄 영아는 초기에 대개 잘 먹고 체중도 는다. 전신 상태는 배제 근거가 아니며, 관찰하는 사이 간섬유화가 진행해 카사이수술 성공률이 떨어진다 <sup>[1†]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "담도폐쇄가 의심되면 다른 원인 평가를 기다리며 수술 평가를 미루지 않는다 — 시간이 예후다.",
+   "간담도 스캔에서 장으로 배출이 보이면 담도폐쇄 가능성이 크게 낮아지지만, 배출 없음은 특이도가 낮다(심한 간세포성 담즙정체에서도 안 보인다).",
+   "비타민 K 결핍 출혈이 담즙정체의 첫 증상일 수 있다 — 응고검사를 함께 본다."
+  ],
+  "criteria": [
+   {
+    "id": "conj-bili-cutoff",
+    "name": "신생아 결합고빌리루빈혈증의 정의",
+    "kind": "진단 기준",
+    "population": "황달이 있는 신생아·영아",
+    "statement": "직접(결합)빌리루빈 > 1.0 mg/dL 은 비정상으로 보고 담즙정체 평가를 시작한다(총빌리루빈에 대한 비율이 아니라 절대값) [[?naspghan-2017]]",
+    "exceptions": "검사법(직접 vs 결합)에 따라 참고치가 다르다 — 원문 대조 필요",
+    "source": "naspghan-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "prolonged-jaundice-check",
+    "name": "지속 황달의 분획 측정",
+    "kind": "검사 권고",
+    "population": "생후 2주 이후에도 황달이 있는 만삭아(미숙아는 3주)",
+    "statement": "총빌리루빈과 직접(결합)빌리루빈을 함께 잰다 — 모유를 먹고 잘 크는 아기라도 분획 없이 모유 황달로 단정하지 않는다 [[?naspghan-2017]]",
+    "exceptions": "대변 색 카드로 회백색 변을 확인하면 연령과 무관하게 바로 평가한다",
+    "source": "naspghan-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "naspghan-2017",
+    "org": "NASPGHAN / ESPGHAN",
+    "title": "Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of the North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition and the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition",
+    "kind": "guideline",
+    "citation": "Fawaz R, Baumann U, Ekong U, et al. J Pediatr Gastroenterol Nutr 2017;64(1):154-168",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 결합빌리루빈 > 1.0 mg/dL 문턱, 2주 분획 측정, 카사이 시기 서술은 기억에 근거하며 사람 대조가 필요하다. DOI 도 확인하지 못한 값이다",
+    "doi": "10.1097/MPG.0000000000001334",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1097/MPG.0000000000001334"
+   }
+  ],
+  "checks": [
+   {
+    "q": "생후 3주 황달 아기에서 가장 먼저 확인할 검사 값은?",
+    "a": "분획 빌리루빈 — 직접(결합)빌리루빈이 > 1.0 mg/dL 인지."
+   },
+   {
+    "q": "결합빌리루빈 상승 + 회백색 변 영아에서 모유수유 중단이 왜 틀렸나?",
+    "a": "모유 황달은 비결합형이다. 결합형은 담즙 배출 장애라 모유 중단이 효과가 없고 담도폐쇄 진단·수술만 늦춘다."
+   },
+   {
+    "q": "담도폐쇄 평가를 서두르는 이유는?",
+    "a": "카사이수술을 일찍 할수록 담즙 배출·자가간 생존이 좋고, 기다리는 동안 간섬유화가 진행한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.biliary-atresia.cholestasis-workup#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 분획이 비결합형인 3주 모유수유아",
+    "stem": "생후 3주 여아가 황달이 아직 남아 있어 왔다. 완전 모유수유 중이며 출생 체중보다 600 g 늘었다. 대변은 노란색이고 소변은 옅은 색이다. 간·비장은 만져지지 않는다. 혈청 총빌리루빈 14 mg/dL, 직접빌리루빈 0.6 mg/dL, 혈색소 15.2 g/dL, 망상적혈구 1.0 %, 직접항글로불린검사 음성이며 갑상선자극호르몬은 정상이다. 가장 적절한 조치는?",
+    "options": [
+     "모유수유를 계속하며 경과관찰",
+     "간담도 스캔 의뢰",
+     "모유수유 영구 중단",
+     "교환수혈",
+     "우르소데옥시콜산 투여"
+    ],
+    "answer": 1,
+    "explanation": "노란 변·옅은 소변·직접빌리루빈 정상(비결합형)에 체중 증가가 좋고 용혈·갑상선저하가 없으므로 모유 황달이다. 모유를 계속하며 관찰한다. 원래 문항은 결합빌리루빈 상승·회백색 변·간비대로 담즙정체였기에 간담도 평가가 답이었다 — 분획 한 번이 조치를 뒤집는다. 간담도 스캔·우르소데옥시콜산은 담즙정체의 조치이고, 교환수혈은 이 수치에서 적응이 아니다.",
+    "of": "kmle-2026-0386",
+    "changed": "변을 노란색으로, 소변을 옅게, 분획을 「직접빌리루빈 0.6 mg/dL(총 14 mg/dL)」로 바꾸고 간비대·GGT 상승을 없앰 → 비결합형 모유 황달이므로 답이 「간담도 영상 의뢰」에서 「모유 계속하며 경과관찰」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.biliary-atresia.cholestasis-workup#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 예방접종 때 발견된 5주 영아",
+    "stem": "생후 5주 여아가 예방접종을 위해 왔는데 눈 흰자와 피부가 노랗다. 어머니는 모유를 먹이고 있고 아기가 잘 먹어 황달은 모유 때문이라고 들었다고 한다. 기저귀의 대변은 옅은 크림색이고 소변이 기저귀를 진하게 물들인다. 간이 우늑골연 아래 3 cm 만져진다. 총빌리루빈 8.4 mg/dL, 직접빌리루빈 5.9 mg/dL, 감마글루타밀전이효소 480 U/L 이다. 다음 조치로 가장 적절한 것은?",
+    "options": [
+     "복부 초음파 등 간담도 영상 평가 의뢰",
+     "모유를 분유로 바꾸고 2주 뒤 재검",
+     "광선치료",
+     "예방접종 후 1개월 뒤 재방문",
+     "철분제 보충"
+    ],
+    "answer": 1,
+    "explanation": "직접빌리루빈 > 1.0 mg/dL 인 결합고빌리루빈혈증에 회백색 변·진한 소변·간비대·GGT 상승이면 담즙정체이며 담도폐쇄를 먼저 배제해야 한다 [[?naspghan-2017]]. 나이·성별·발견 경위가 달라도 결정 단서(결합형 + 무담즙 변)는 같다. 분유 전환·광선치료는 비결합형 조치이고, 기다리면 카사이수술 시기를 놓친다.",
+    "of": "kmle-2026-0386",
+    "changed": "나이(생후 5주)·성별(여아)·내원 경위(예방접종 때 발견)·제시 순서를 바꾸고 결합빌리루빈 상승·회백색 변·진한 소변·간비대는 그대로 → 답은 여전히 간담도 영상 평가",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "생후 2주 넘은 황달 — 분획 빌리루빈부터",
+  "geo": {
+   "title": "생후 2주 넘은 황달 — 분획 빌리루빈부터",
+   "w": 482,
+   "h": 797.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "생후 2주(미숙아 3주)",
+      "이후에도 황달"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "frac",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "직접(결합)빌리루빈 > 1.0",
+      "mg/dL 인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "분획을 아직 안 쟀다면 잰다",
+      "— 변 색(대변 색 카드)·소변",
+      "색을 함께 본다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 276.0
+    },
+    {
+     "id": "unconj",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "비결합형 — 모유 황달·용혈·",
+      "갑상선저하 확인, 모유 계속"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 423.0
+    },
+    {
+     "id": "us",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "담즙정체 — 즉시 복부 초음파·",
+      "간기능·GGT·감염/대사 선별"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 423.0
+    },
+    {
+     "id": "stool",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "회백색 변·GGT 상승·담낭",
+      "작거나 없음 등 담도폐쇄 쪽",
+      "소견인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 553.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 담즙정체 원인(담관낭·",
+      "알라질·감염·대사) 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 700.0
+    },
+    {
+     "id": "ba",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "간담도 스캔·간생검 → 수술적",
+      "담도조영, 확진 시 조기",
+      "카사이수술"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 700.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "frac",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "frac",
+     "to": "unconj",
+     "points": [
+      [
+       178.0,
+       210.0
+      ],
+      [
+       178.0,
+       220.0
+      ],
+      [
+       452,
+       220.0
+      ],
+      [
+       452,
+       377.0
+      ],
+      [
+       146.7,
+       377.0
+      ],
+      [
+       146.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 126.2,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "frac",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       210.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       226.0
+      ],
+      [
+       227.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "분획 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "frac",
+     "to": "us",
+     "points": [
+      [
+       276.0,
+       210.0
+      ],
+      [
+       276.0,
+       232.0
+      ],
+      [
+       466,
+       232.0
+      ],
+      [
+       466,
+       377.0
+      ],
+      [
+       372.7,
+       377.0
+      ],
+      [
+       372.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "unconj",
+     "points": [
+      [
+       194.3,
+       357.0
+      ],
+      [
+       194.3,
+       367.0
+      ],
+      [
+       81.3,
+       367.0
+      ],
+      [
+       81.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비결합형"
+      ],
+      "w": 52.0,
+      "h": 17,
+      "x": 55.3,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "us",
+     "points": [
+      [
+       259.7,
+       357.0
+      ],
+      [
+       259.7,
+       373.0
+      ],
+      [
+       307.3,
+       373.0
+      ],
+      [
+       307.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "결합형"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "stool",
+     "points": [
+      [
+       340.0,
+       487.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       227.0,
+       497.0
+      ],
+      [
+       227.0,
+       553.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "stool",
+     "to": "ba",
+     "points": [
+      [
+       194.3,
+       634.0
+      ],
+      [
+       194.3,
+       644.0
+      ],
+      [
+       114.0,
+       644.0
+      ],
+      [
+       114.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "stool",
+     "to": "other",
+     "points": [
+      [
+       259.7,
+       634.0
+      ],
+      [
+       259.7,
+       650.0
+      ],
+      [
+       340.0,
+       650.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 680.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "생후 2주(미숙아 3주) 이후에도 황달",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "직접(결합)빌리루빈 > 1.0 mg/dL 인가?"
+     }
+    ]
+   },
+   {
+    "id": "frac",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "직접(결합)빌리루빈 > 1.0 mg/dL 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "분획 없음",
+      "to": 3,
+      "toText": "분획을 아직 안 쟀다면 잰다 — 변 색(대변 색 카드)·소변 색을 함께 본다"
+     },
+     {
+      "label": "아니다",
+      "to": 4,
+      "toText": "비결합형 — 모유 황달·용혈·갑상선저하 확인, 모유 계속"
+     },
+     {
+      "label": "그렇다",
+      "to": 5,
+      "toText": "담즙정체 — 즉시 복부 초음파·간기능·GGT·감염/대사 선별"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "분획을 아직 안 쟀다면 잰다 — 변 색(대변 색 카드)·소변 색을 함께 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "비결합형",
+      "to": 4,
+      "toText": "비결합형 — 모유 황달·용혈·갑상선저하 확인, 모유 계속"
+     },
+     {
+      "label": "결합형",
+      "to": 5,
+      "toText": "담즙정체 — 즉시 복부 초음파·간기능·GGT·감염/대사 선별"
+     }
+    ]
+   },
+   {
+    "id": "unconj",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "비결합형 — 모유 황달·용혈·갑상선저하 확인, 모유 계속",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "us",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "담즙정체 — 즉시 복부 초음파·간기능·GGT·감염/대사 선별",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "회백색 변·GGT 상승·담낭 작거나 없음 등 담도폐쇄 쪽 소견인가?"
+     }
+    ]
+   },
+   {
+    "id": "stool",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "회백색 변·GGT 상승·담낭 작거나 없음 등 담도폐쇄 쪽 소견인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 7,
+      "toText": "간담도 스캔·간생검 → 수술적 담도조영, 확진 시 조기 카사이수술"
+     },
+     {
+      "label": "아니다",
+      "to": 8,
+      "toText": "다른 담즙정체 원인(담관낭·알라질·감염·대사) 평가"
+     }
+    ]
+   },
+   {
+    "id": "ba",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "간담도 스캔·간생검 → 수술적 담도조영, 확진 시 조기 카사이수술",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 담즙정체 원인(담관낭·알라질·감염·대사) 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0386"
   ],
   "hasErrors": false
  },
@@ -12127,10 +31017,10 @@ window.MEDKOS_CONCEPTS = {
    "Nephrology",
    "Urology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "848b5eabd8bac24c",
+  "hash": "290355f3ff25744c",
   "summary": [
    "열성 요로감염은 대개 상부(신우신염)이고, 영아는 요로 구조 이상(수신증·요관 확장·방광요관역류·폐쇄)이 배경에 있을 수 있어 첫 감염 뒤 영상 평가를 한다.",
    "2–24개월의 첫 열성 요로감염은 모두 신장·방광 초음파를 한다 — 비침습·무방사선이며 구조 이상(수신증·요관 확장·이중 집합계·방광 이상)을 찾는다. 시기는 치료 반응이 전형적이면 급성기 뒤 편한 때, 비전형 경과면 급성기에.",
@@ -12429,6 +31319,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "전형 경과라도 초음파에서 수신증·요관 확장이 보이면 고등급 역류나 폐쇄 요로병증을 가려야 하므로 VCUG 가 다음 검사다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.peds.febrile-uti.imaging-workup#v3",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 두 번째 열성 요로감염",
+    "stem": "생후 9개월 남아가 이틀 동안 39 ℃ 가 넘는 열이 나고 잘 먹지 않아 입원했다. 3개월 전에도 열성 요로감염으로 입원해 항생제 치료를 받았고, 당시 시행한 신장·방광 초음파는 정상이었다. 이번에도 도뇨 소변 배양에서 대장균이 10⁵ CFU/mL 이상 자랐고, 정맥 항생제 36시간 뒤 해열되었다. 혈액 배양은 음성, 크레아티닌은 0.3 mg/dL 이고 복부 덩이는 없다. 다음으로 시행할 검사로 가장 적절한 것은?",
+    "options": [
+     "배뇨방광요도조영술",
+     "신장·방광 초음파만 반복하고 추가 검사는 하지 않는다",
+     "복부 전산화단층촬영",
+     "정맥신우조영술",
+     "방광경 검사"
+    ],
+    "answer": 1,
+    "explanation": "두 번째 열성 요로감염은 경과가 전형적이어도 배뇨방광요도조영술의 적응이다 [[?aap-uti-2011]]. 첫 감염 때의 정상 초음파는 방광요관역류를 배제하지 못하므로, 재발이라는 두 번째 조건이 역류 검사의 문을 연다. 원래 문항은 첫 감염·전형 경과라 초음파가 답이었다 — 같은 경과라도 「몇 번째 감염인가」가 답을 가른다. CT·정맥신우조영술은 방사선·조영제 부담 때문에 쓰지 않고, 방광경은 역류 평가 검사가 아니다.",
+    "of": "kmle-2026-1087",
+    "changed": "「이전에 열이 난 적 없음(첫 감염)」을 「3개월 전 열성 요로감염으로 치료, 그때 초음파 정상」으로 바꿈 → 두 번째 열성 요로감염이므로 답이 「신장·방광 초음파」에서 「배뇨방광요도조영술」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.febrile-uti.imaging-workup#v4",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 외래에서 치료한 첫 감염 여아",
+    "stem": "생후 14개월 여아가 사흘 전 39.5 ℃ 열로 외래를 방문해 도뇨 소변검사에서 백혈구 증가와 아질산염 양성이 확인되어 경구 항생제를 시작했다. 소변 배양에서는 대장균이 자랐고 항생제를 먹은 지 하루 만에 열이 내렸으며 오늘은 잘 먹고 잘 논다. 이번이 처음 열이 난 것이다. 크레아티닌은 0.3 mg/dL 이고 배뇨는 원활하며 복부 덩이는 없다. 이후 시행할 검사로 가장 적절한 것은?",
+    "options": [
+     "DMSA 신장스캔",
+     "배뇨방광요도조영술",
+     "신장·방광 초음파",
+     "복부 전산화단층촬영",
+     "정맥신우조영술"
+    ],
+    "answer": 3,
+    "explanation": "2–24개월의 첫 열성 요로감염이 전형 경과(대장균, 48시간 안 해열, 신기능·소변 흐름 정상)를 보였다. 성별·나이·외래 치료라는 겉모습이 달라도 결정 단서는 원래 문항과 같으므로 영상은 비침습적인 신장·방광 초음파로 구조 이상을 먼저 찾는다 [[?aap-uti-2011]]. 배뇨방광요도조영술은 초음파 이상·재발·비전형 경과에서, DMSA 는 반흔 평가가 필요할 때 선택적으로 쓰며, CT·정맥신우조영술은 쓰지 않는다 [[?nice-ng224]].",
+    "of": "kmle-2026-1087",
+    "changed": "성별·나이(생후 14개월 여아)·내원 경위(외래에서 경구 항생제)·제시 순서를 바꾸고 「첫 열성 요로감염·대장균·48시간 안 해열·신기능 정상」은 그대로 → 답은 여전히 신장·방광 초음파",
     "flip": false
    }
   ],
@@ -13007,6 +31931,2607 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.peds.kawasaki.acute-ivig": {
+  "id": "cn.peds.kawasaki.acute-ivig",
+  "title": "가와사키병 급성기 치료 — 발열 10일 안의 고용량 면역글로불린 정주가 중심, 아스피린은 병용 보조",
+  "objective": "5일 이상 발열과 주요 소견으로 진단한 급성기 가와사키병에서 관상동맥류를 막는 1차 치료가 면역글로불린 정주(2 g/kg 단회, 발열 10일 이내)와 아스피린 병용임을 고르고, 아스피린 단독·스테로이드 단독·인플릭시맙·항생제가 각각 어떤 자리(회복기 유지·고위험 보조·불응 구제·세균 감염)인지 가른다",
+  "objectiveKind": "치료",
+  "condition": "가와사키병(급성기)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "Cardiology",
+   "Rheumatology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "132bf8fdeb570684",
+  "summary": [
+   "가와사키병은 주로 5세 미만에서 오는 원인 미상의 급성 전신 혈관염이다. 치료하지 않으면 약 25 %에서 관상동맥류가 생기고, 이것이 소아 후천성 심질환의 주된 원인이 된다 [[?aha-kawasaki-2017]].",
+   "진단은 5일 이상의 발열 + 주요 소견 5개(양측 비화농성 결막충혈, 입술·구강 변화, 손발 홍반·부종, 다형 발진, 편측 경부 림프절 ≥ 1.5 cm) 중 4개 이상이다. 부족하면 염증 지표·보조 검사·심초음파로 불완전형을 판단한다 [[?aha-kawasaki-2017]].",
+   "1차 치료는 면역글로불린 정주 2 g/kg 을 한 번에(10–12시간) — 발열 10일 이내(가능하면 7일 이내)에 주면 관상동맥류가 약 4 % 수준으로 줄어든다. 아스피린을 함께 쓴다 [[?aha-kawasaki-2017]].",
+   "아스피린은 급성기 중등도~고용량으로 시작해 해열 뒤 저용량(3–5 mg/kg/일)으로 낮춰 관상동맥 이상이 없음을 확인할 때까지(대개 4–6주) 유지한다. 관상동맥류를 막는 약이 아니라 항염·항혈소판 보조제다 [[?aha-kawasaki-2017]].",
+   "면역글로불린 투여를 마치고 36시간 넘게 열이 나면 불응이다 — 2차 면역글로불린, 스테로이드, 인플릭시맙을 쓴다. 불응 고위험(이미 관상동맥 확장, 영아 등)은 처음부터 스테로이드를 병용하기도 한다 [[?aha-kawasaki-2017]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>가와사키병은 주로 5세 미만 소아에 오는 원인 미상의 급성 자기제한성 전신 혈관염으로, 중간 크기 근육형 동맥 — 특히 관상동맥 — 을 침범한다 <sup>[1†]</sup>. 증상은 수 주 안에 저절로 가라앉지만, 그 사이 관상동맥 벽이 손상되면 동맥류가 남아 혈전·협착·심근경색의 원인이 된다. 이 정리본의 목표는 진단이 선 급성기에 <strong>관상동맥류를 막는 치료가 무엇이고, 다른 약들은 어느 시기·어느 환자의 자리인지</strong> 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 관상동맥 벽은 내막·중막(평활근·탄력섬유)·외막으로 이루어져 혈압을 버틴다. 가와사키병에서는 감염 같은 계기에 대한 과도한 선천·후천 면역 반응이 혈관벽으로 번져, 호중구 침윤으로 시작하는 괴사성 동맥염이 중막의 탄력층을 무너뜨린다. 지지 구조를 잃은 벽이 늘어나 동맥류가 되고, 이어지는 아급성·만성 염증과 내막 증식이 협착을 만든다 <sup>[1†]</sup>.</p>\n<p>치료 논리는 여기서 나온다. 벽 손상은 염증이 지속되는 동안 쌓이므로, <strong>발열(=진행 중인 전신 염증)이 이어지는 초기에 염증을 빨리 끄는 것</strong>이 동맥류를 막는 길이다. 고용량 면역글로불린이 그 역할을 하며, 발열 10일 이내에 줄 때 효과가 가장 크다. 아스피린은 급성기 항염, 이후 저용량으로 혈소판 응집을 막아 손상된 내피 위 혈전을 예방하지만 벽 손상 자체를 막지는 못한다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>발열</strong>: 전신 염증의 표지 — 치료하지 않으면 1–3주 지속. 발열 일수는 치료 창(10일)을 재는 시계다.</li>\n<li><strong>점막·피부 소견</strong>: 혈관염이 작은 혈관까지 번지며 생긴다 — 비화농성 결막충혈(삼출이 없어 눈곱 없음), 입술 홍조·균열·딸기혀, 손발 홍반·부종(회복기 손발가락 끝 막 모양 탈피), 다형 발진, 편측 경부 림프절 종대(≥ 1.5 cm) <sup>[1†]</sup>.</li>\n<li><strong>검사</strong>: 급성기 반응물(CRP·ESR↑), 백혈구 증가, 정구성 빈혈, 저알부민·저나트륨, 간효소 상승, 무균 농뇨. 혈소판은 2주째 전후로 크게 는다 — 아급성기 소견 <sup>[1†]</sup>.</li>\n<li><strong>심장</strong>: 관상동맥 확장·동맥류(z-score), 심근염·심낭액, 판막 역류.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>세균성 감염(성홍열 — 인두 배양·ASO, 항생제 반응; 세균성 경부 림프절염), 아데노바이러스 등 바이러스 감염(화농성 결막염·삼출성 인두염), 독성 쇼크 증후군, 약물 반응(스티븐스-존슨), 소아 특발성 관절염 전신형, 홍역을 가른다. 항생제에 반응하지 않는 5일 이상 발열과 점막 변화는 가와사키병을 먼저 떠올리게 한다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단 시 심초음파는 필수다 — 기저 관상동맥 크기(z-score)와 심실 기능·심낭액을 본다. 이후 1–2주, 4–6주에 다시 본다 <sup>[1†]</sup>. 주요 소견이 모자라면 CRP ≥ 3.0 mg/dL 또는 ESR ≥ 40 mm/h 에 보조 검사(알부민 ≤ 3.0 g/dL, 나이에 비한 빈혈, ALT 상승, 7일 뒤 혈소판 ≥ 450,000/µL, 백혈구 ≥ 15,000/µL, 소변 백혈구 ≥ 10/HPF) 3개 이상 또는 심초음파 이상으로 불완전형을 판단한다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 면역글로불린 — 모든 급성기 환자.</strong> 2 g/kg 을 한 번에 10–12시간에 걸쳐 정주한다. 발열 10일 이내(가능하면 7일 이내)가 원칙이며, 그 뒤라도 열·염증 지표 상승·관상동맥 이상이 있으면 준다 <sup>[1†]</sup>.</p>\n<p><strong>2. 아스피린 — 병용.</strong> 급성기 중등도(30–50) 또는 고용량(80–100 mg/kg/일)으로 시작해 해열 48–72시간 뒤 3–5 mg/kg/일로 낮춘다. 발병 4–6주 심초음파가 정상이면 끊는다 <sup>[1†]</sup>.</p>\n<p><strong>3. 불응 고위험의 1차 병용.</strong> 이미 관상동맥이 확장되었거나 영아처럼 불응 위험이 높으면 면역글로불린에 스테로이드를 더하는 것을 고려한다 <sup>[1†]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 면역글로불린 투여 종료 36시간 뒤에도 열이 나거나 다시 나면 불응(약 10–20 %)이다 — 2차 면역글로불린 2 g/kg, 메틸프레드니솔론 펄스·장기 스테로이드, 인플릭시맙 가운데 고른다 <sup>[1†]</sup>. 해열 뒤에는 CRP 하락과 1–2주·4–6주 심초음파로 재평가한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>면역글로불린은 「관상동맥류가 생기면」이 아니라 <strong>진단되면</strong> 준다 — 동맥류를 막는 치료다.</li>\n<li>아스피린은 늘 함께 쓰되 단독으로 급성기 치료를 대신하지 못한다.</li>\n<li>스테로이드·인플릭시맙은 면역글로불린을 대신하지 않는다 — 고위험 병용 또는 불응 구제.</li>\n<li>면역글로불린 뒤 생백신은 11개월 미룬다. 아스피린 복용 중 인플루엔자·수두는 라이증후군 위험 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "왜 「10일」인가",
+    "deep": true,
+    "html": "<p>관상동맥류는 대개 발병 둘째 주부터 심초음파에 나타나 3–4주에 가장 커진다. 벽 손상은 염증이 지속되는 동안 누적되므로, 면역글로불린은 동맥류가 <strong>보이기 전</strong>에 염증을 끄는 치료로 설계되었고 초기 시험도 발열 10일 이내 환자에서 이득을 보였다 <sup>[1†]</sup>. 그래서 「관상동맥이 아직 정상이니 기다린다」는 틀린 논리이고, 반대로 10일이 지났어도 염증이 살아 있으면 손상이 계속 쌓이는 중이므로 준다. 「10일」은 달력이 아니라 <strong>진행 중인 염증</strong>의 대리 지표로 읽는다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "가와사키병에 쓰는 약 — 각자의 자리",
+    "columns": [
+     "약",
+     "겨냥",
+     "언제·누구에게",
+     "한계"
+    ],
+    "rows": [
+     [
+      "면역글로불린 2 g/kg 단회 정주",
+      "혈관 염증 — 관상동맥류 예방",
+      "진단된 모든 급성기 환자, 발열 10일 이내 <sup>[1†]</sup>",
+      "10–20 %는 불응, 투여 후 생백신 연기"
+     ],
+     [
+      "아스피린(급성기 중등도~고용량 → 저용량)",
+      "항염 → 항혈소판",
+      "면역글로불린과 병용, 해열 뒤 저용량 4–6주 <sup>[1†]</sup>",
+      "단독으로 관상동맥류를 줄이지 못함"
+     ],
+     [
+      "스테로이드",
+      "면역글로불린으로 부족한 염증",
+      "불응 고위험군의 1차 병용, 또는 불응 뒤 구제 <sup>[1†]</sup>",
+      "단독 1차 치료가 아니다"
+     ],
+     [
+      "인플릭시맙(항 TNF)",
+      "TNF 매개 염증",
+      "면역글로불린 불응(구제) <sup>[1†]</sup>",
+      "1차 치료 근거 없음"
+     ]
+    ],
+    "note": "첫 줄이 「모든 환자 · 지금」이다. 아스피린은 늘 함께 가지만 혼자 가지 않는다."
+   },
+   {
+    "title": "보기의 원래 자리",
+    "columns": [
+     "보기",
+     "원래 자리",
+     "급성기 1차가 아닌 이유"
+    ],
+    "rows": [
+     [
+      "저용량 아스피린 단독",
+      "해열 뒤 회복기 유지",
+      "관상동맥류 예방 효과가 없다"
+     ],
+     [
+      "경구 스테로이드 단독",
+      "고위험 병용·불응 구제",
+      "면역글로불린을 대신하지 않는다"
+     ],
+     [
+      "인플릭시맙",
+      "면역글로불린 불응",
+      "구제 치료"
+     ],
+     [
+      "항생제",
+      "세균 감염(성홍열·경부 림프절염)",
+      "원인이 세균이 아니다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "아스피린 단독 vs 면역글로불린 + 아스피린 — 「가와사키병 약 = 아스피린」",
+    "point": "아스피린은 가와사키병 치료에 실제로 들어가지만 급성기 항염·이후 항혈소판 보조제일 뿐 관상동맥류 발생을 줄이는 약이 아니다. 관상동맥류를 약 25 %에서 4 % 안팎으로 낮춘 것은 발열 10일 이내의 면역글로불린 2 g/kg 이다 <sup>[1†]</sup>. 그래서 급성기 답은 「면역글로불린(+ 아스피린)」이고, 「아스피린 단독」은 면역글로불린을 뺀 불완전한 치료다.",
+    "exception": "면역글로불린 치료 뒤 열이 내린 회복기에는 저용량 아스피린 단독 유지가 맞다 — 같은 약이라도 시기가 답을 가른다.",
+    "cites": ""
+   },
+   {
+    "contrast": "스테로이드 병용 vs 스테로이드 단독 — 「염증이 심하니 스테로이드」",
+    "point": "관상동맥이 이미 확장되기 시작했거나 영아처럼 불응 위험이 높으면 면역글로불린에 스테로이드를 더하는 것을 고려한다. 더하는 것이지 대신하는 것이 아니다 <sup>[1†]</sup>.",
+    "exception": "면역글로불린 불응(투여 종료 36시간 뒤에도 발열)이면 스테로이드가 구제 치료의 하나가 된다.",
+    "cites": ""
+   },
+   {
+    "contrast": "10일이 지났으면 면역글로불린 불필요? — 「치료 창이 닫혔다」",
+    "point": "10일 이내가 가장 효과적이지만, 그 뒤라도 열이나 염증 지표 상승이 계속되거나 관상동맥 이상이 있으면 면역글로불린을 준다 <sup>[1†]</sup>.",
+    "exception": "10일이 지났고 해열·염증 지표 정상·관상동맥 정상이면 주지 않는다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "관상동맥 확장이 이미 보이면 발열 일수와 상관없이 가와사키병 치료를 서두른다 — 불완전형 판단의 강한 근거이기도 하다 <sup>[1†]</sup>.",
+   "면역글로불린을 맞은 뒤에는 홍역·수두 같은 생백신을 11개월 미룬다 <sup>[1†]</sup>.",
+   "아스피린을 먹는 동안 인플루엔자·수두에 걸리면 라이증후군 위험이 있어 인플루엔자 예방접종(불활성화)을 챙긴다 <sup>[1†]</sup>.",
+   "관상동맥류가 남으면 크기(z-score)에 따라 저용량 아스피린 지속·항응고·장기 추적으로 넘어간다 — 이 정리본 밖이다."
+  ],
+  "criteria": [
+   {
+    "id": "kd-ivig",
+    "name": "급성기 1차 치료 — 면역글로불린 정주",
+    "kind": "치료 기준",
+    "population": "완전형 또는 불완전형 가와사키병, 발열 10일 이내",
+    "statement": "면역글로불린 2 g/kg 단회 정주(10–12시간)와 아스피린을 함께 준다. 발열 10일이 지났어도 열이나 염증 지표(ESR·CRP) 상승이 계속되거나 관상동맥 이상이 있으면 준다 [[?aha-kawasaki-2017]]",
+    "exceptions": "10일이 지나 열이 내렸고 염증 지표가 정상이며 관상동맥이 정상이면 면역글로불린의 이득이 없다",
+    "source": "aha-kawasaki-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "kd-aspirin",
+    "name": "아스피린의 용량과 기간",
+    "kind": "치료 권고",
+    "population": "면역글로불린을 받는 가와사키병",
+    "statement": "급성기 중등도(30–50 mg/kg/일) 또는 고용량(80–100 mg/kg/일)으로 시작해 해열 48–72시간 뒤 저용량 3–5 mg/kg/일로 바꾸고, 관상동맥 이상이 없으면 발병 4–6주에 끊는다 [[?aha-kawasaki-2017]]",
+    "exceptions": "관상동맥류가 남으면 저용량 아스피린을 계속하고 크기에 따라 항응고를 더한다. 인플루엔자·수두 노출 시 라이증후군 위험을 고려한다 [[?aha-kawasaki-2017]]",
+    "source": "aha-kawasaki-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "kd-resistance",
+    "name": "면역글로불린 불응과 구제 치료",
+    "kind": "치료 권고",
+    "population": "면역글로불린 투여 종료 뒤 36시간 이상 발열이 지속되거나 재발한 환자",
+    "statement": "2차 면역글로불린 2 g/kg 을 줄 수 있고, 대안으로 고용량 메틸프레드니솔론 펄스, 장기 스테로이드, 인플릭시맙을 쓴다 [[?aha-kawasaki-2017]]",
+    "exceptions": "불응 고위험군(이미 관상동맥 확장, 1세 미만 등)은 처음부터 면역글로불린에 스테로이드를 병용하는 것을 고려한다 — 단독 대체가 아니라 추가다 [[?aha-kawasaki-2017]]",
+    "source": "aha-kawasaki-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "kd-zscore",
+    "name": "관상동맥 z-score 분류",
+    "kind": "중증도",
+    "population": "가와사키병의 심초음파",
+    "statement": "z < 2 이상 없음 · 2 ≤ z < 2.5 확장만 · 2.5 ≤ z < 5 작은 동맥류 · 5 ≤ z < 10 중간 동맥류 · z ≥ 10 또는 ≥ 8 mm 큰(거대) 동맥류 [[?aha-kawasaki-2017]]",
+    "exceptions": "z-score 는 체표면적 보정값이라 기준 자료에 따라 조금씩 다르다",
+    "source": "aha-kawasaki-2017",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "aha-kawasaki-2017",
+    "org": "American Heart Association",
+    "title": "Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association",
+    "kind": "guideline",
+    "citation": "McCrindle BW, Rowley AH, Newburger JW, et al. Circulation 2017;135(17):e927-e999",
+    "checked": "서지만 확인(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 진단 기준·면역글로불린 용량·아스피린 용량·불응 정의·z-score 분류의 원문 문구는 검토 항목이다",
+    "doi": "10.1161/CIR.0000000000000484",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIR.0000000000000484"
+   },
+   {
+    "id": "nelson-22",
+    "org": "Elsevier",
+    "title": "Nelson Textbook of Pediatrics, 22nd ed. — Kawasaki Disease",
+    "kind": "textbook",
+    "citation": "Kliegman RM, St Geme JW, et al (eds). Nelson Textbook of Pediatrics 22e — 가와사키병 장(장·쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 원 문항이 출처로 적은 교과서). 장·쪽을 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "가와사키병 급성기에 관상동맥류를 줄이는 1차 치료는?",
+    "a": "면역글로불린 2 g/kg 단회 정주(발열 10일 이내) — 아스피린과 병용."
+   },
+   {
+    "q": "저용량 아스피린 단독이 맞는 때는?",
+    "a": "면역글로불린 뒤 해열된 회복기에 관상동맥 이상이 없음을 확인할 때까지(대개 4–6주) 항혈소판 목적으로."
+   },
+   {
+    "q": "면역글로불린 불응의 정의와 대응은?",
+    "a": "투여 종료 36시간 뒤에도 발열(또는 재발). 2차 면역글로불린·스테로이드·인플릭시맙."
+   },
+   {
+    "q": "발열 12일째라도 면역글로불린을 주는 경우는?",
+    "a": "열이 계속되거나 염증 지표가 높거나 관상동맥 이상이 있을 때."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.kawasaki.acute-ivig#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 면역글로불린 뒤 해열된 회복기",
+    "stem": "4세 여아가 가와사키병(발열 6일, 결막충혈, 딸기혀, 손발 부종, 다형 발진)으로 입원해 3일 전 면역글로불린 2 g/kg 정주와 고용량 아스피린을 시작했다. 면역글로불린을 다 맞은 다음 날 열이 내린 뒤 72시간째 발열이 없고 잘 먹는다. CRP 는 입원 시 11.2 mg/dL 에서 2.1 mg/dL 로 떨어졌고 혈소판은 520,000/µL 이다. 오늘 심초음파에서 관상동맥 z-score 는 1.6 이다. 이후 약물 치료로 가장 적절한 것은?",
+    "options": [
+     "면역글로불린 2 g/kg 재투여",
+     "저용량 아스피린 유지",
+     "인플릭시맙 정주",
+     "프레드니솔론 경구",
+     "모든 약 중단"
+    ],
+    "answer": 2,
+    "explanation": "면역글로불린 뒤 해열이 48–72시간 이어졌으므로 불응이 아니다 — 2차 면역글로불린·인플릭시맙·스테로이드의 자리가 없다. 이제 아스피린을 항혈소판 용량(3–5 mg/kg/일)으로 낮추어 발병 4–6주 심초음파에서 관상동맥 이상이 없음을 확인할 때까지 유지한다 [[?aha-kawasaki-2017]]. 원래 문항은 치료 전 급성기라 면역글로불린이 먼저였다. 혈소판 증가는 아급성기의 예상 소견이라 치료를 바꾸지 않으며, 지금 모든 약을 끊으면 혈전 예방이 빠진다.",
+    "of": "kmle-2026-0962",
+    "changed": "「발열 6일째, 아직 치료 전」을 「3일 전 면역글로불린 2 g/kg 과 고용량 아스피린을 받았고 투여 다음 날부터 72시간째 열이 없음, CRP 하락」으로 바꿈 → 남은 결정이 회복기 유지이므로 답이 「면역글로불린 정주」에서 「저용량 아스피린」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.kawasaki.acute-ivig#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 의원에서 의뢰된 영아기 여아",
+    "stem": "20개월 여아가 7일째 열이 나 동네 소아과 의원에서 해열제와 세팔로스포린을 받았으나 호전이 없어 의뢰되었다. 체온 39.5 ℃. 몸통과 사타구니에 모양이 제각각인 붉은 발진이 있고 손발 등이 단단하게 부었으며 손바닥이 붉다. 왼쪽 목에 1.8 cm 림프절이 만져진다. 입술은 붉고 갈라져 피가 나며, 양쪽 눈 흰자가 충혈되었으나 눈곱은 없다. 백혈구 17,200/µL, 알부민 3.0 g/dL, CRP 12.4 mg/dL, 소변 백혈구 12/HPF(배양 음성)이고 심초음파에서 관상동맥 z-score 는 1.8 이다. 가장 적절한 치료는?",
+    "options": [
+     "세팔로스포린 정주로 변경",
+     "저용량 아스피린 단독",
+     "면역글로불린 정주",
+     "메틸프레드니솔론 펄스 단독",
+     "인플릭시맙 정주"
+    ],
+    "answer": 3,
+    "explanation": "5일 이상 발열에 주요 소견 5개(다형 발진, 손발 부종·홍반, 편측 경부 림프절, 입술 변화, 비화농성 결막충혈)를 갖춘 완전형 가와사키병이고 발열 7일째로 치료 창 안에 있다. 나이·성별·의뢰 경위·제시 순서가 달라도 결정 단서는 같으므로 면역글로불린 2 g/kg 단회 정주와 아스피린이 답이다 [[?aha-kawasaki-2017]]. 관상동맥이 아직 정상이어도 치료는 같다 — 면역글로불린은 동맥류가 생기기 전에 막는 치료다. 항생제는 원인이 세균이 아니고, 아스피린 단독·스테로이드 단독·인플릭시맙은 1차 치료가 아니다.",
+    "of": "kmle-2026-0962",
+    "changed": "나이·성별(20개월 여아), 내원 경위(소아과 의원 의뢰), 소견 제시 순서와 검사 이름을 바꾸고 「5일 이상 발열·주요 소견 5개·발열 10일 이내·치료 전」은 그대로 → 답은 여전히 면역글로불린 정주",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "가와사키병 급성기 — 무엇을, 언제",
+  "geo": {
+   "title": "가와사키병 급성기 — 무엇을, 언제",
+   "w": 468,
+   "h": 978.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "5일 이상 발열 + 가와사키병",
+      "주요 소견"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "dx",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "주요 소견이 4개 이상인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "소견 2–3개 — CRP·ESR,",
+      "보조 검사(알부민·빈혈·ALT·",
+      "혈소판·백혈구·소변 백혈구)",
+      ", 심초음파로 불완전형 판단"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 259.0
+    },
+    {
+     "id": "timing",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "발열 10일 이내이거나, 그",
+      "뒤라도 발열·염증 지표 상승·",
+      "관상동맥 이상이 있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 423.0
+    },
+    {
+     "id": "ivig",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "면역글로불린 2 g/kg 단회",
+      "정주 +",
+      "아스피린(중등도~고용량) ·",
+      "불응 고위험이면 스테로이드",
+      "병용 고려"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "observe",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "면역글로불린 이득 없음 —",
+      "저용량 아스피린 · 심초음파",
+      "추적"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "fever",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "투여 종료 36시간 뒤에도",
+      "열이 나는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 751.0
+    },
+    {
+     "id": "rescue",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "불응 — 2차 면역글로불린 ·",
+      "스테로이드 · 인플릭시맙"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 881.0
+    },
+    {
+     "id": "low",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "해열 — 저용량 아스피린 3–5",
+      "mg/kg/일, 심초음파(진단",
+      "시·1–2주·4–6주)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 881.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "dx",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "dx",
+     "to": "timing",
+     "points": [
+      [
+       194.3,
+       193.0
+      ],
+      [
+       194.3,
+       203.0
+      ],
+      [
+       452,
+       203.0
+      ],
+      [
+       452,
+       377.0
+      ],
+      [
+       194.3,
+       377.0
+      ],
+      [
+       194.3,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "4개 이상(완전형)"
+      ],
+      "w": 96.9,
+      "h": 17,
+      "x": 145.9,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "dx",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       193.0
+      ],
+      [
+       259.7,
+       209.0
+      ],
+      [
+       227.0,
+       209.0
+      ],
+      [
+       227.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "2–3개"
+      ],
+      "w": 38.1,
+      "h": 17,
+      "x": 207.9,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "timing",
+     "points": [
+      [
+       227.0,
+       357.0
+      ],
+      [
+       227.0,
+       367.0
+      ],
+      [
+       259.7,
+       367.0
+      ],
+      [
+       259.7,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불완전형 기준 충족"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 207.9,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "timing",
+     "to": "ivig",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       114.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "timing",
+     "to": "observe",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       340.0,
+       520.0
+      ],
+      [
+       340.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "10일 지났고 해열·지표 정상·",
+       "관상동맥 정상"
+      ],
+      "w": 154.7,
+      "h": 30,
+      "x": 262.6,
+      "y": 537.0
+     }
+    },
+    {
+     "from": "ivig",
+     "to": "fever",
+     "points": [
+      [
+       114.0,
+       685.0
+      ],
+      [
+       114.0,
+       695.0
+      ],
+      [
+       227.0,
+       695.0
+      ],
+      [
+       227.0,
+       751.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "fever",
+     "to": "rescue",
+     "points": [
+      [
+       194.3,
+       815.0
+      ],
+      [
+       194.3,
+       825.0
+      ],
+      [
+       114.0,
+       825.0
+      ],
+      [
+       114.0,
+       881.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 861.0
+     }
+    },
+    {
+     "from": "fever",
+     "to": "low",
+     "points": [
+      [
+       259.7,
+       815.0
+      ],
+      [
+       259.7,
+       831.0
+      ],
+      [
+       340.0,
+       831.0
+      ],
+      [
+       340.0,
+       881.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 861.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "5일 이상 발열 + 가와사키병 주요 소견",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "주요 소견이 4개 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "dx",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "주요 소견이 4개 이상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "4개 이상(완전형)",
+      "to": 4,
+      "toText": "발열 10일 이내이거나, 그 뒤라도 발열·염증 지표 상승·관상동맥 이상이 있는가?"
+     },
+     {
+      "label": "2–3개",
+      "to": 3,
+      "toText": "소견 2–3개 — CRP·ESR, 보조 검사(알부민·빈혈·ALT·혈소판·백혈구·소변 백혈구), 심초음파로 불완전형 판단"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "소견 2–3개 — CRP·ESR, 보조 검사(알부민·빈혈·ALT·혈소판·백혈구·소변 백혈구), 심초음파로 불완전형 판단",
+    "note": "",
+    "branches": [
+     {
+      "label": "불완전형 기준 충족",
+      "to": 4,
+      "toText": "발열 10일 이내이거나, 그 뒤라도 발열·염증 지표 상승·관상동맥 이상이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "timing",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "발열 10일 이내이거나, 그 뒤라도 발열·염증 지표 상승·관상동맥 이상이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 5,
+      "toText": "면역글로불린 2 g/kg 단회 정주 + 아스피린(중등도~고용량) · 불응 고위험이면 스테로이드 병용 고려"
+     },
+     {
+      "label": "10일 지났고 해열·지표 정상·관상동맥 정상",
+      "to": 6,
+      "toText": "면역글로불린 이득 없음 — 저용량 아스피린 · 심초음파 추적"
+     }
+    ]
+   },
+   {
+    "id": "ivig",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "면역글로불린 2 g/kg 단회 정주 + 아스피린(중등도~고용량) · 불응 고위험이면 스테로이드 병용 고려",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "투여 종료 36시간 뒤에도 열이 나는가?"
+     }
+    ]
+   },
+   {
+    "id": "observe",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "면역글로불린 이득 없음 — 저용량 아스피린 · 심초음파 추적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "fever",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "투여 종료 36시간 뒤에도 열이 나는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 8,
+      "toText": "불응 — 2차 면역글로불린 · 스테로이드 · 인플릭시맙"
+     },
+     {
+      "label": "아니다",
+      "to": 9,
+      "toText": "해열 — 저용량 아스피린 3–5 mg/kg/일, 심초음파(진단 시·1–2주·4–6주)"
+     }
+    ]
+   },
+   {
+    "id": "rescue",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "불응 — 2차 면역글로불린 · 스테로이드 · 인플릭시맙",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "low",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "해열 — 저용량 아스피린 3–5 mg/kg/일, 심초음파(진단 시·1–2주·4–6주)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0962"
+  ],
+  "hasErrors": false
+ },
+ "cn.peds.pyloric-stenosis.preop-resuscitation": {
+  "id": "cn.peds.pyloric-stenosis.preop-resuscitation",
+  "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
+  "objective": "초음파로 확인된 비대유문협착증에 탈수와 저염소·저칼륨 대사알칼리증이 동반된 영아에서 가장 먼저 할 일이 생리식염수 수액과 칼륨 보충임을 고르고, 즉시 유문근절개술·상부위장관조영·위장관운동촉진제·비위관 감압이 각각 왜 그 자리를 대신하지 못하는지 가른다",
+  "objectiveKind": "다음 처치",
+  "condition": "영아 비대유문협착증(탈수·대사알칼리증 동반)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "General Surgery",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "8f3966e1e4dac11d",
+  "summary": [
+   "비대유문협착증은 생후 약 3–6주 영아에서 유문 괄약근이 두꺼워져 위 출구가 막히는 병이다. 담즙이 섞이지 않은 분수 구토와 토한 뒤의 배고픔이 특징이다 [[?nelson-22]].",
+   "위산(HCl)만 반복해서 잃으므로 저염소 대사알칼리증이 생기고, 탈수로 알도스테론이 올라 신장이 나트륨을 붙잡는 대가로 칼륨·수소 이온을 내보내 저칼륨과 알칼리증이 더 깊어진다 [[?nelson-22]].",
+   "진단은 초음파(유문근 두께·길이 증가)로 한다. 조영검사는 초음파가 결론을 못 낼 때의 대안이다 [[?nelson-22]].",
+   "유문근절개술은 확정 치료지만 응급 수술이 아니다. 알칼리증·저칼륨을 안은 채 마취하면 수술 뒤 무호흡·부정맥 위험이 커서, 먼저 생리식염수로 탈수를 교정하고 소변이 나오면 칼륨을 더해 전해질이 기준에 들어온 뒤 수술한다 [[?holcomb-7]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>비대유문협착증은 위 출구의 유문 괄약근(윤상근)이 두꺼워지고 길어져 위 내용물이 십이지장으로 넘어가지 못하는 영아의 병이다. 대개 생후 3–6주에 나타나고 남아·첫째 아이에서 흔하다 <sup>[1†]</sup>. 이 정리본의 목표는 진단이 선 뒤 <strong>무엇을 가장 먼저 하는지</strong> — 수술보다 수액·전해질 교정이 먼저라는 순서 — 를 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 유문은 위의 연동이 밀어낸 내용물을 조금씩 십이지장으로 보낸다. 유문근이 비대해지면 통로가 좁고 길어져 위가 배출하지 못하고, 강한 연동으로 위 내용물을 거꾸로 뿜어낸다(분수 구토). 막힌 곳이 담즙이 들어오는 십이지장보다 위쪽이라 토물에 담즙이 없다 <sup>[1†]</sup>.</p>\n<p>산염기 이상은 무엇을 잃느냐에서 나온다. 위액은 HCl 이 주성분이라 반복 구토로 수소 이온과 염화물이 빠지고, 그 대신 위벽세포가 혈액으로 내보낸 중탄산염이 남아 <strong>저염소 대사알칼리증</strong>이 된다. 탈수로 레닌-알도스테론이 올라가면 신장은 나트륨을 붙잡는 대신 칼륨과 수소 이온을 소변으로 내보낸다 — 그래서 <strong>저칼륨</strong>이 오고, 칼륨·염화물이 바닥나면 알칼리증인데도 소변이 산성이 되는 역설적 산성뇨가 나타난다 <sup>[1†]</sup>. 염화물이 모자라는 한 신장은 중탄산염을 버리지 못하므로, 알칼리증을 푸는 열쇠는 <strong>염화물(식염수)과 칼륨을 채우는 것</strong>이다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>담즙 없는 분수 구토, 토한 뒤 배고파함</strong>: 폐쇄가 위 출구에 있고 영아 자체는 배가 고프다.</li>\n<li><strong>체중 감소·핍뇨·함몰 숫구멍·빈맥·BUN 상승</strong>: 수분 소실 — 탈수의 정도가 첫 처치의 긴급도를 정한다.</li>\n<li><strong>저염소·저칼륨 대사알칼리증(HCO₃⁻↑, pH↑)</strong>: 위 HCl 소실 + 알도스테론 효과.</li>\n<li><strong>올리브 모양 덩이·위 연동파</strong>: 비대한 유문근과 막힌 위의 움직임 — 초음파 시대에는 만져지기 전에 진단되는 일이 많다 <sup>[1†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>담즙성 구토면 장회전이상·중장염전을 먼저 배제한다 — 이것이 진짜 외과 응급이다. 위식도역류(힘 없는 역류, 체중 증가 유지), 과식, 선천부신과형성증의 염분 소실형(저나트륨·<strong>고칼륨</strong>·산증 — 방향이 반대), 감염(요로감염·패혈증)을 가른다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>초음파가 1차 진단 검사다 — 유문근 두께·길이 증가와 위 내용 정체를 본다. 조영검사는 초음파가 결론을 내지 못할 때 쓴다(가늘고 긴 유문관, string sign). 전해질·혈액가스·BUN·크레아티닌·혈당으로 탈수와 알칼리증 정도를 잰다 <sup>[1†]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 수액·전해질 교정 — 모든 환자, 가장 먼저.</strong> 중등도 이상 탈수면 0.9 % 식염수 볼루스(20 mL/kg)로 순환을 회복한다. 이어 포도당이 든 식염수를 유지 속도보다 조금 많이 주고, 소변이 나오면 염화칼륨을 섞는다 <sup>[2†]</sup>.</p>\n<p><strong>2. 유문근절개술 — 교정 뒤.</strong> 복강경 또는 개복으로 비대한 근육층만 세로로 갈라 점막을 부풀게 한다. 수술 뒤 수 시간 안에 수유를 다시 시작한다 <sup>[2†]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 소변량 회복과 전해질(염화물·중탄산염·칼륨)을 반복 측정해 기준에 들어오면(대개 24–48시간) 수술한다. 알칼리증이 남은 채 마취하면 호흡 보상(저환기)이 겹쳐 수술 뒤 무호흡이 오므로, 수치가 들어오기 전에는 수술하지 않는다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「가장 먼저」는 수액이다 — 비대유문협착증은 내과적 응급이고 외과적 응급이 아니다.</li>\n<li>초음파로 확진되면 조영검사는 필요 없다. 초음파가 불확실할 때만 조영검사.</li>\n<li>칼륨은 소변 확인 뒤 유지 수액에 섞는다.</li>\n<li>비위관은 일상적이지 않다 — 팽만·흡인 위험이 클 때만.</li>\n</ul>"
+   },
+   {
+    "title": "왜 알칼리증이 마취를 위험하게 하나",
+    "deep": true,
+    "html": "<p>대사알칼리증이 있으면 호흡 중추는 이산화탄소를 붙잡아 pH 를 낮추려고 환기를 줄인다. 여기에 마취제·아편유사제의 호흡 억제가 겹치면, 영아의 미숙한 호흡 조절이 버티지 못해 수술 뒤 무호흡이 온다. 또 뇌척수액의 알칼리화는 수 시간 늦게 풀리므로 혈중 수치가 좋아져도 곧바로 안전하지 않다. 그래서 교정은 「수술 직전에 한 번 맞추는 것」이 아니라 <strong>충분한 시간을 두고 염화물과 칼륨을 채우는 과정</strong>이다 <sup>[2†]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "선택지의 자리 — 무엇을, 언제",
+    "columns": [
+     "처치",
+     "무엇을 하나",
+     "언제",
+     "지금 첫 조치가 아닌 이유"
+    ],
+    "rows": [
+     [
+      "생리식염수 볼루스 → 포도당·식염수 + KCl",
+      "순환·염화물·칼륨 회복, 알칼리증 교정",
+      "진단 즉시, 수술 전 모두 <sup>[2†]</sup>",
+      "— (첫 조치)"
+     ],
+     [
+      "유문근절개술",
+      "막힌 유문 근육을 가른다(확정 치료)",
+      "전해질·소변량 교정 뒤 <sup>[2†]</sup>",
+      "알칼리증 상태 마취 → 수술 뒤 무호흡"
+     ],
+     [
+      "상부위장관조영",
+      "유문관 모양(string sign)",
+      "초음파가 불확실할 때 <sup>[1†]</sup>",
+      "초음파로 이미 확진, 조영제 흡인 위험"
+     ],
+     [
+      "비위관 감압",
+      "위 내용 배출",
+      "팽만·담즙성 구토·장폐쇄",
+      "위액(HCl) 소실을 늘려 알칼리증 악화 가능"
+     ],
+     [
+      "메토클로프라미드",
+      "위 운동 촉진",
+      "기능성 위배출 지연",
+      "기계적 폐쇄에 무효"
+     ]
+    ],
+    "note": "진단이 섰을 때 「가장 먼저」는 늘 첫 줄이다. 수술은 그 뒤에 온다."
+   },
+   {
+    "title": "구토의 종류와 산염기",
+    "columns": [
+     "구토",
+     "잃는 것",
+     "산염기"
+    ],
+    "rows": [
+     [
+      "담즙 없는 위 구토(유문 폐쇄)",
+      "HCl·수분·칼륨",
+      "저염소·저칼륨 대사알칼리증"
+     ],
+     [
+      "담즙성 구토(십이지장 아래 폐쇄)",
+      "위액 + 담즙·췌액(HCO₃⁻)",
+      "알칼리증이 덜하거나 없음 — 중장염전 의심"
+     ],
+     [
+      "설사",
+      "HCO₃⁻",
+      "대사산증"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "상부위장관조영 vs 수액 — 「진단 검사부터」",
+    "point": "상부위장관조영은 위 출구 모양을 보는 고전적 검사지만, 초음파가 유문근 두께·길이 증가를 이미 보였다면 진단은 섰다. 이때 「가장 먼저」의 질문은 진단이 아니라 순환이다 — 처짐·함몰 숫구멍·핍뇨·BUN 상승의 탈수와 알칼리증을 생리식염수와 칼륨으로 먼저 교정한다 <sup>[2†]</sup>. 조영검사는 초음파가 결론을 못 낼 때의 대안이며, 위에 조영제를 넣으면 구토·흡인 위험이 더해진다 <sup>[1†]</sup>.",
+    "exception": "탈수가 교정된 뒤에도 초음파가 유문을 제대로 보여 주지 못하거나 경계값이면 조영검사가 다음 검사가 된다. 담즙성 구토면 장회전이상·중장염전을 보려고 응급 조영검사를 한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "유문근절개술 vs 수액 — 「진단 = 즉시 수술」",
+    "point": "유문근절개술은 확정 치료지만 비대유문협착증은 내과적 응급(탈수·전해질)이고 외과적 응급이 아니다. 대사알칼리증은 호흡을 억제하는 쪽으로 보상되어 마취 뒤 무호흡을 부르고, 저칼륨은 부정맥을 부른다 — 그래서 교정이 끝난 뒤 수술한다 <sup>[2†]</sup>.",
+    "exception": "전해질이 이미 정상이고 탈수가 없으면 곧바로 수술 일정을 잡는다.",
+    "cites": ""
+   },
+   {
+    "contrast": "칼륨을 언제 — 「저칼륨이니 칼륨부터」",
+    "point": "칼륨은 소변이 나오는 것을 확인한 뒤 유지 수액에 섞는다. 볼루스 단계의 목표는 순환 회복이다 <sup>[2†]</sup>.",
+    "exception": "심한 저칼륨으로 부정맥이 있으면 감시하에 더 서두른다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "초음파가 불확실해도 탈수가 있으면 수액은 검사와 함께 시작한다 — 진단 확인이 교정을 늦출 이유가 되지 않는다.",
+   "젖산링거액은 대사되어 중탄산염이 되므로 알칼리증 교정에는 식염수를 쓴다(원 문항 부록의 서술, 원문 미대조) <sup>[2†]</sup>.",
+   "비위관은 일상적으로 넣지 않는다 — 위액 소실이 알칼리증을 악화시킬 수 있다. 팽만·흡인 위험이 크면 예외.",
+   "역설적 산성뇨: 칼륨·염화물이 모자라면 신장이 수소 이온을 내보내 알칼리증인데도 소변이 산성이 된다 — 교정이 덜 되었다는 신호다 <sup>[1†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "hps-us",
+    "name": "초음파 진단 기준",
+    "kind": "진단 기준",
+    "population": "분수 구토를 보이는 영아",
+    "statement": "유문근 두께 ≥ 3–4 mm, 유문관 길이 ≥ 15–17 mm 면 비대유문협착증으로 진단한다(기관마다 절단값이 조금씩 다르다) [[?nelson-22]]",
+    "exceptions": "초음파가 결론을 내지 못하면(기술적 제한·경계값) 상부위장관조영에서 가늘고 긴 유문관(string sign)을 본다 [[?nelson-22]]",
+    "source": "nelson-22",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "hps-resus",
+    "name": "수술 전 교정",
+    "kind": "치료 기준",
+    "population": "탈수·대사알칼리증이 있는 비대유문협착증",
+    "statement": "중등도 이상 탈수면 0.9 % 식염수 볼루스(20 mL/kg)로 순환을 회복하고, 이어 포도당이 든 식염수 유지액에 소변이 확인되면 염화칼륨을 더한다. 염화물·중탄산염·칼륨이 정상 범위에 가까워지고 소변량이 회복된 뒤(대개 24–48시간) 수술한다 [[?holcomb-7]]",
+    "exceptions": "수술 허용 수치(예: 염화물 ≥ 100, 중탄산염 ≤ 30 mmol/L)는 기관마다 다르다 — 원 문항 부록의 값이며 원문 미대조 [[?holcomb-7]]",
+    "source": "holcomb-7",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "nelson-22",
+    "org": "Elsevier",
+    "title": "Nelson Textbook of Pediatrics, 22nd ed. — Pyloric Stenosis and Other Congenital Anomalies of the Stomach",
+    "kind": "textbook",
+    "citation": "Kliegman RM, St Geme JW, et al (eds). Nelson Textbook of Pediatrics 22e — 유문협착증 장(장·쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 원 문항이 출처로 적은 교과서). 초음파 기준값·전해질 이상·수술 원칙의 원문 문구와 장·쪽을 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "holcomb-7",
+    "org": "Elsevier",
+    "title": "Holcomb and Ashcraft's Pediatric Surgery, 7th ed. — Hypertrophic Pyloric Stenosis",
+    "kind": "textbook",
+    "citation": "Holcomb GW III, Murphy JP, St Peter SD (eds). Holcomb and Ashcraft's Pediatric Surgery 7e — 비대유문협착증 장(장·쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 원 문항이 출처로 적은 교과서). 수액 조성·수술 허용 전해질 값의 원문을 확인하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "초음파로 확진된 비대유문협착증에 탈수·알칼리증이 있다. 가장 먼저 할 일은?",
+    "a": "생리식염수 볼루스로 탈수를 교정하고, 소변 확인 뒤 칼륨을 더한 유지 수액 — 수술은 교정 뒤."
+   },
+   {
+    "q": "왜 곧바로 수술하지 않는가?",
+    "a": "대사알칼리증의 호흡 보상(저환기)으로 마취 뒤 무호흡, 저칼륨으로 부정맥 위험이 있다."
+   },
+   {
+    "q": "상부위장관조영이 맞는 때는?",
+    "a": "초음파가 결론을 내지 못할 때, 또는 담즙성 구토에서 장회전이상을 확인할 때."
+   },
+   {
+    "q": "위 출구 폐쇄의 전형적 전해질 이상은?",
+    "a": "저염소·저칼륨 대사알칼리증(± 역설적 산성뇨)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.pyloric-stenosis.preop-resuscitation#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 교정은 끝났고 초음파가 결론을 못 냄",
+    "stem": "생후 6주 남아가 열흘 전부터 먹은 뒤 힘차게 토해 입원했다. 토물에 담즙은 없다. 입원 때 탈수와 저염소 알칼리증이 있어 이틀간 정맥 수액과 칼륨을 받았고 오늘은 활발하며 소변을 잘 본다. 오늘 검사에서 나트륨 138, 칼륨 4.1, 염소 103, 중탄산염 25 mmol/L 이다. 입원 때와 오늘 시행한 복부 초음파는 모두 장내 가스가 많아 유문부가 보이지 않아 판정하지 못했다. 배는 부드럽고 팽만은 없다. 다음으로 시행할 것은?",
+    "options": [
+     "유문근절개술",
+     "생리식염수 볼루스 추가",
+     "상부위장관조영",
+     "메토클로프라미드 투여",
+     "비위관 감압 후 금식"
+    ],
+    "answer": 3,
+    "explanation": "탈수와 전해질은 이미 교정되어 더 줄 수액의 목표가 없다. 남은 문제는 진단이다 — 초음파가 결론을 내지 못했으므로 상부위장관조영에서 가늘고 길어진 유문관을 확인하는 것이 다음 순서다 [[?nelson-22]]. 원래 문항은 초음파로 이미 확진된 채 탈수·알칼리증이 진행 중이라 수액이 먼저였다. 진단 없이 수술할 수 없고, 메토클로프라미드는 기계적 폐쇄에 무효하며, 비위관은 팽만이 없으면 일상적으로 필요하지 않다.",
+    "of": "kmle-2026-0963",
+    "changed": "「초음파로 확진, 탈수·알칼리증 진행 중」을 「이틀째 수액으로 전해질·소변량이 정상화, 초음파는 장내 가스로 유문이 보이지 않아 판정 불가」로 바꿈 → 남은 결정이 진단 확인이므로 답이 「생리식염수 수액」에서 「상부위장관조영」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.pyloric-stenosis.preop-resuscitation#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 응급실에 온 여아",
+    "stem": "생후 4주 여아가 밤중에 응급실에 왔다. 복부 초음파에서 유문근 두께 5 mm, 유문관 길이 18 mm 로 측정되었고 정맥혈 가스는 pH 7.52, 중탄산염 36 mmol/L, 전해질은 나트륨 132, 칼륨 2.9, 염소 86 mmol/L, BUN 26 mg/dL 이다. 부모는 닷새 전부터 수유 후 곧바로 멀리 뿜듯이 토하고 토물은 젖 색깔뿐이며 토한 뒤에도 젖을 찾는다고 했다. 하루 동안 기저귀가 한 번만 젖었다. 맥박 172회/분이고 눈이 쑥 들어가 있으며 모세혈관 재충혈 시간이 3초다. 배는 팽만이 없다. 가장 먼저 해야 할 처치는?",
+    "options": [
+     "응급 유문근절개술",
+     "상부위장관조영",
+     "생리식염수 볼루스 후 칼륨 첨가 수액",
+     "에리트로마이신 투여",
+     "비위관 삽입 후 지속 흡인"
+    ],
+    "answer": 3,
+    "explanation": "초음파로 비대유문협착증이 확진되었고 핍뇨·빈맥·모세혈관 재충혈 지연의 탈수와 저염소·저칼륨 대사알칼리증이 있다. 성별·나이·응급실 내원·검사를 먼저 제시한 순서가 달라도 결정 단서는 같으므로 생리식염수로 순환을 회복하고 소변 확인 뒤 칼륨을 더한다 [[?holcomb-7]]. 수술은 전해질 교정 뒤, 조영검사는 이미 확진이라 불필요하며, 위장관운동촉진제는 기계적 폐쇄에 효과가 없다. 비위관 지속 흡인은 위액 소실을 늘린다.",
+    "of": "kmle-2026-0963",
+    "changed": "나이·성별(생후 4주 여아), 내원 경위(야간 응급실), 제시 순서(검사 먼저)를 바꾸고 「초음파 확진·탈수·저염소 저칼륨 알칼리증」은 그대로 → 답은 여전히 생리식염수 수액",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "분수 구토 영아 — 무엇부터",
+  "geo": {
+   "title": "분수 구토 영아 — 무엇부터",
+   "w": 468,
+   "h": 927.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "생후 수 주 영아의 담즙 없는",
+      "분수 구토 · 토한 뒤 배고파함"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "bile",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "구토에 담즙이 섞이는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "volvulus",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "담즙성 — 장회전이상·",
+      "중장염전 의심: 응급",
+      "조영검사·외과 협진"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 259.0
+    },
+    {
+     "id": "us",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "초음파에서 유문근 두께·",
+      "길이가 증가했는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 259.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "초음파가 불확실 — 수액을",
+      "먼저 시작하고",
+      "상부위장관조영 또는 초음파",
+      "재검"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 406.0
+    },
+    {
+     "id": "resus",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "생리식염수 볼루스 → 포도당·",
+      "식염수 유지 + 소변 확인 뒤",
+      "KCl"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "lytes",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "염화물·중탄산염·칼륨·",
+      "소변량이 기준에 들어왔는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 717.0
+    },
+    {
+     "id": "more",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "아직 — 수액 계속, 전해질",
+      "재검(대개 24–48시간 안)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 847.0
+    },
+    {
+     "id": "op",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "유문근절개술(복강경·개복)",
+      "→ 수 시간 뒤 수유 재개"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 847.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "bile",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "bile",
+     "to": "volvulus",
+     "points": [
+      [
+       194.3,
+       193.0
+      ],
+      [
+       194.3,
+       203.0
+      ],
+      [
+       114.0,
+       203.0
+      ],
+      [
+       114.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "bile",
+     "to": "us",
+     "points": [
+      [
+       259.7,
+       193.0
+      ],
+      [
+       259.7,
+       209.0
+      ],
+      [
+       340.0,
+       209.0
+      ],
+      [
+       340.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "resus",
+     "points": [
+      [
+       307.3,
+       323.0
+      ],
+      [
+       307.3,
+       333.0
+      ],
+      [
+       452,
+       333.0
+      ],
+      [
+       452,
+       524.0
+      ],
+      [
+       259.7,
+       524.0
+      ],
+      [
+       259.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다(확진)"
+      ],
+      "w": 75.8,
+      "h": 17,
+      "x": 221.8,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "us",
+     "to": "info",
+     "points": [
+      [
+       372.7,
+       323.0
+      ],
+      [
+       372.7,
+       339.0
+      ],
+      [
+       227.0,
+       339.0
+      ],
+      [
+       227.0,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불확실"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 386.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "resus",
+     "points": [
+      [
+       227.0,
+       504.0
+      ],
+      [
+       227.0,
+       514.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       194.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "비대유문협착증 확인"
+      ],
+      "w": 110.7,
+      "h": 17,
+      "x": 139.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "resus",
+     "to": "lytes",
+     "points": [
+      [
+       227.0,
+       651.0
+      ],
+      [
+       227.0,
+       661.0
+      ],
+      [
+       227.0,
+       661.0
+      ],
+      [
+       227.0,
+       717.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "lytes",
+     "to": "op",
+     "points": [
+      [
+       194.3,
+       781.0
+      ],
+      [
+       194.3,
+       791.0
+      ],
+      [
+       114.0,
+       791.0
+      ],
+      [
+       114.0,
+       847.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 827.0
+     }
+    },
+    {
+     "from": "lytes",
+     "to": "more",
+     "points": [
+      [
+       259.7,
+       781.0
+      ],
+      [
+       259.7,
+       797.0
+      ],
+      [
+       340.0,
+       797.0
+      ],
+      [
+       340.0,
+       847.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 827.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "생후 수 주 영아의 담즙 없는 분수 구토 · 토한 뒤 배고파함",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "구토에 담즙이 섞이는가?"
+     }
+    ]
+   },
+   {
+    "id": "bile",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "구토에 담즙이 섞이는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 3,
+      "toText": "담즙성 — 장회전이상·중장염전 의심: 응급 조영검사·외과 협진"
+     },
+     {
+      "label": "아니다",
+      "to": 4,
+      "toText": "초음파에서 유문근 두께·길이가 증가했는가?"
+     }
+    ]
+   },
+   {
+    "id": "volvulus",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "담즙성 — 장회전이상·중장염전 의심: 응급 조영검사·외과 협진",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "us",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "초음파에서 유문근 두께·길이가 증가했는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다(확진)",
+      "to": 6,
+      "toText": "생리식염수 볼루스 → 포도당·식염수 유지 + 소변 확인 뒤 KCl"
+     },
+     {
+      "label": "불확실",
+      "to": 5,
+      "toText": "초음파가 불확실 — 수액을 먼저 시작하고 상부위장관조영 또는 초음파 재검"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "초음파가 불확실 — 수액을 먼저 시작하고 상부위장관조영 또는 초음파 재검",
+    "note": "",
+    "branches": [
+     {
+      "label": "비대유문협착증 확인",
+      "to": 6,
+      "toText": "생리식염수 볼루스 → 포도당·식염수 유지 + 소변 확인 뒤 KCl"
+     }
+    ]
+   },
+   {
+    "id": "resus",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "생리식염수 볼루스 → 포도당·식염수 유지 + 소변 확인 뒤 KCl",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "염화물·중탄산염·칼륨·소변량이 기준에 들어왔는가?"
+     }
+    ]
+   },
+   {
+    "id": "lytes",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "염화물·중탄산염·칼륨·소변량이 기준에 들어왔는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "그렇다",
+      "to": 8,
+      "toText": "유문근절개술(복강경·개복) → 수 시간 뒤 수유 재개"
+     },
+     {
+      "label": "아니다",
+      "to": 9,
+      "toText": "아직 — 수액 계속, 전해질 재검(대개 24–48시간 안)"
+     }
+    ]
+   },
+   {
+    "id": "op",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "유문근절개술(복강경·개복) → 수 시간 뒤 수유 재개",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "more",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "아직 — 수액 계속, 전해질 재검(대개 24–48시간 안)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0963"
+  ],
+  "hasErrors": false
+ },
+ "cn.peds.rheumatic-fever.acute-eradication": {
+  "id": "cn.peds.rheumatic-fever.acute-eradication",
+  "title": "급성 류마티스열 확진 뒤 반드시 할 치료 — 남은 A군 사슬알균 제균(페니실린)은 모든 환자에게, 항염·스테로이드는 증상 치료",
+  "objective": "급성 류마티스열로 확진된 환자에서 심염 유무와 무관하게 선행 A군 사슬알균 감염을 제균하는 페니실린(경구 10일 또는 벤자틴 페니실린 G 1회 근육)이 필수임을 고르고, 스테로이드 단독·면역억제제·항바이러스제·관찰이 왜 그 자리를 대신하지 못하는지 가른다",
+  "objectiveKind": "치료",
+  "condition": "급성 류마티스열(이동성 다발관절염 ± 심염)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "Cardiology",
+   "Rheumatology",
+   "Infectious Disease"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "b070a2142e062df0",
+  "summary": [
+   "급성 류마티스열은 A군 사슬알균 인두(또는 피부) 감염 뒤 약 3주(1–5주)에 오는 자가면역 반응이다. 균이 아니라 균에 대한 교차 면역이 판막·관절을 친다 [[harrison-21: 359장 p.2767]].",
+   "그래도 확진된 모든 환자는 선행 감염을 치료할 만큼의 항생제를 받는다 — 페니실린 V(또는 아목시실린) 10일 경구, 또는 벤자틴 페니실린 G 1회 근육(≤27 kg 60만, 그 외 120만 단위) [[harrison-21: 359장 p.2768]].",
+   "그 밖의 급성기 치료는 대증이다 — 관절염·발열에 살리실산·NSAID, 심부전 동반 중증 심염에 스테로이드 고려(논란), 무도병에 카바마제핀·발프로산. RHD 로의 진행을 바꾼다고 증명된 치료는 없다 [[harrison-21: 359장 p.2768]].",
+   "급성기를 넘기면 우선순위는 2차 예방(벤자틴 페니실린 G 4주마다) — 다른 정리본 cn.peds.rheumatic-fever.secondary-prophylaxis 의 목표다.",
+   "인두 배양이 음성이어도 제균은 한다 — 대부분의 환자는 발병 시 배양·신속항원이 음성이고 혈청(ASO·anti-DNase B)으로 선행 감염을 확인한다 [[harrison-21: 359장 p.2768]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 완전히 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 <sup>[1 359장 p.2766]</sup>. 이 정리본의 목표는 진단 뒤 <strong>급성기에 무엇을 반드시 하고, 무엇은 증상에 따라 더하는지</strong>를 가르는 것이다. 급성기 뒤 재발 예방(약·간격·기간)은 <code>cn.peds.rheumatic-fever.secondary-prophylaxis</code> 가 다룬다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 면역은 사슬알균 M 단백·N-아세틸글루코사민 탄수화물에 항체와 T 세포를 만들어 균을 없앤다. 감수성이 있는 사람(인구의 약 3–6 %, 유전 소인)에서는 이 반응이 판막 내피·심근·활막·기저핵의 비슷한 구조를 함께 인식한다 — 분자 모방이다. 교차 항체가 판막 내피에 붙어 VCAM-1 을 활성화하고 림프구를 불러들이며, 파괴된 내피에서 나온 라미닌·트로포미오신이 다시 교차 T 세포를 자극해 손상이 넓어진다 <sup>[1 359장 p.2767]</sup>.</p>\n<p>치료 논리는 여기서 나온다. 손상은 면역이 만들지만 <strong>면역을 계속 자극하는 항원(남은 사슬알균)</strong>이 인두나 피부에 있을 수 있으므로, 먼저 그 균을 없앤다(제균). 이미 일어난 염증은 항생제로 되돌릴 수 없어 관절·발열은 항염제로, 심부전은 심부전 치료로 다룬다. 어떤 치료도 RHD 로의 진행을 바꾼다고 증명되지 않았다 <sup>[1 359장 p.2768]</sup> — 그래서 급성기 이후 재감염을 막는 2차 예방이 관리의 중심이 된다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>잠복기</strong>: 선행 감염 뒤 약 3주(1–5주). 무도병·완만한 심염은 최대 6개월 뒤 <sup>[1 359장 p.2767]</sup>.</li>\n<li><strong>이동성 다발관절염</strong>(60–75 %): 무릎·발목·엉덩·팔꿈치 같은 큰 관절이 몇 시간~며칠 사이 옮겨 가며 붓고 몹시 아프다. 살리실산에 극적으로 반응한다 <sup>[1 359장 p.2767–2768]</sup>.</li>\n<li><strong>심염</strong>(50–75 %): 승모판 역류가 특징(때로 대동맥판 역류). 심근 염증이 전도로를 건드려 PR 연장·S1 약화가 생긴다 <sup>[1 359장 p.2767]</sup>.</li>\n<li><strong>선행 감염 증거</strong>: 대부분 인두 배양·신속항원 음성이므로 ASO·anti-DNase B 로 확인한다 <sup>[1 359장 p.2768]</sup>.</li>\n<li><strong>발열·염증 지표</strong>: 대부분에서 상승(ESR·CRP) — 부 기준이자 치료 반응 지표.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>관절염이 살리실산 시작 뒤 1–2일 넘게 지속되면 ARF 일 가능성이 낮다 <sup>[1 359장 p.2768]</sup>. 소아 특발성 관절염(이동성 아님, 만성), 화농성 관절염(한 관절, 관절액 배양), 바이러스 관절염, 감염성 심내막염(혈액배양 양성, 균이 판막에 있음), 가와사키병(5세 미만, 점막·손발 변화)을 가른다. 해리슨은 검사 표에서 관절액·혈액배양·자가항체·바이러스 혈청을 상황에 따라 추가하라고 적는다 <sup>[1 359장 p.2769]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>항상: 심전도, 심초음파(모든 의심 환자 — 진단과 심염 기준 중증도), 혈구, CRP, 사슬알균 혈청(ASO·anti-DNase B). 상황에 따라: 인두·피부 병변 배양, 혈액배양, 관절액, 신기능(NSAID 사용 전) <sup>[1 359장 p.2768–2769]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 제균 — 모든 확진 환자.</strong> 페녹시메틸페니실린 500 mg(≤27 kg 250 mg) 하루 2회 또는 아목시실린 50 mg/kg(최대 1 g) 하루 1회 10일, 또는 벤자틴 페니실린 G 120만 단위(≤27 kg 60만) 1회 근육 <sup>[1 359장 p.2768]</sup>. 인두 배양 음성이어도 준다.</p>\n<p><strong>2. 항염 — 관절염·발열.</strong> 진단이 확정된 뒤 아스피린 50–60 mg/kg/일(최대 80–100 mg/kg/일)을 4–5회 나누어, 증상이 가라앉으면(대개 2주 안) 50–60 mg/kg/일로 2–4주 더. 이명·구역이 나오면 줄인다. 나프록센 10–20 mg/kg/일이 대안이다. 심염·무도병에는 효과가 증명되지 않았다 <sup>[1 359장 p.2768–2769]</sup>.</p>\n<p><strong>3. 심염 — 중증도에 따라.</strong> 심부전 치료가 생명을 구할 수 있는 유일한 비대증 치료다. 스테로이드는 논란이지만 심부전을 일으키는 중증 심염에 프레드니솔론 1–2 mg/kg/일(최대 80 mg)을 수일~3주 쓰는 임상의가 많다 <sup>[1 359장 p.2769]</sup>.</p>\n<p><strong>4. 무도병.</strong> 조용한 환경; 중증이면 카바마제핀·발프로산(할로페리돌보다 선호), 중증·난치면 스테로이드 고려 <sup>[1 359장 p.2769]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 염증 지표를 1–2주마다 정상화까지(대개 4–6주), 1개월 뒤 심초음파로 심염 진행을 본다. 약을 끊은 뒤 3주 안에 열·관절 증상·염증 지표가 다시 올라도 재발이 아니며 살리실산을 잠깐 다시 쓴다. 퇴원 전 2차 예방·등록·교육 계획을 세운다 <sup>[1 359장 p.2769–2770]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>제균은 「심염이 있으면」이 아니라 <strong>모든</strong> 확진 환자에게, 배양 결과와 무관하게.</li>\n<li>스테로이드는 제균을 대신하지 못한다 — 중증 심염에서 선택적으로 더할 뿐이다.</li>\n<li>살리실산은 진단 확정 뒤 — 먼저 쓰면 이동 양상이 가려져 단관절염처럼 보일 수 있다 <sup>[1 359장 p.2768]</sup>.</li>\n<li>제균을 벤자틴 1회로 했으면 그것이 2차 예방의 첫 회다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 중증 심염의 스테로이드</strong> — 시험 기준: 심부전을 일으키는 중증 심염에는 스테로이드를 더한다(국시 교과서형 서술) <sup>[1 359장 p.2769]</sup> / 다른 기준: 두 메타분석에서 위약·살리실산 대비 심염 결과 개선이 없었고, 해리슨은 사용을 「논란」으로 적는다 <sup>[1 359장 p.2769]</sup> / 왜 다른가: 근거 연구가 40년 이상 전이고 현대 약물을 쓰지 않았다 — 효과가 없다는 증명도, 있다는 증명도 약하다 / 시험에서는: KMLE·USMLE 모두 「중증 심염 → 스테로이드 추가」를 고르되, 어떤 경우에도 「스테로이드 단독(제균 없이)」은 오답이다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 항생제가 이미 생긴 면역 질환에 필요한가",
+    "deep": true,
+    "html": "<p>ARF 는 감염 뒤 면역 질환이라 「이제 와서 항생제가 무슨 소용인가」라는 물음이 자연스럽다. 해리슨은 이 점을 분명히 한다 — 어떤 치료도 RHD 진행을 바꾼다고 증명되지 않았고, 심부전 치료 외에는 대증이다 <sup>[1 359장 p.2768]</sup>. 그럼에도 제균이 필수인 이유는 두 가지다. ① 인두·피부에 남은 균은 교차 면역을 계속 자극할 항원이자 가족·접촉자에게 옮길 감염원이다. ② 제균은 곧 재발 예방의 출발점이다 — 한 번 감작된 환자는 다음 사슬알균 감염에서 재발 위험이 일반인보다 극적으로 높고, 재발이 판막 손상을 누적시키기 때문이다 <sup>[1 359장 p.2770]</sup>. 그래서 급성기 첫 벤자틴 주사와 4주 뒤 두 번째 주사는 하나의 사슬로 이어진다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "급성기 치료의 네 갈래 — 무엇을 겨냥하는가",
+    "columns": [
+     "치료",
+     "겨냥",
+     "누구에게",
+     "한계"
+    ],
+    "rows": [
+     [
+      "페니실린 제균(경구 10일 또는 벤자틴 1회) <sup>[1 359장 p.2768]</sup>",
+      "인두·피부에 남은 A군 사슬알균 — 항원 자극 제거",
+      "확진된 모든 환자",
+      "이미 생긴 판막 염증은 되돌리지 못한다"
+     ],
+     [
+      "살리실산·나프록센 <sup>[1 359장 p.2768–2769]</sup>",
+      "관절염·관절통·발열",
+      "관절 증상이 있는 환자",
+      "심염·무도병 경과를 바꾸지 못한다"
+     ],
+     [
+      "스테로이드 <sup>[1 359장 p.2769]</sup>",
+      "심부전을 일으키는 심염의 급성 염증",
+      "중증 심염(선택)",
+      "심염 결과 개선이 증명되지 않음 — 논란"
+     ],
+     [
+      "2차 예방(벤자틴 4주마다) <sup>[1 359장 p.2770]</sup>",
+      "다음 사슬알균 감염 → 재발",
+      "급성기를 넘긴 모든 환자",
+      "순응도가 성패를 가른다"
+     ]
+    ],
+    "note": "첫 줄만 「모든 환자」이면서 「지금 당장」이다. 나머지는 증상·중증도에 따라 더한다."
+   },
+   {
+    "title": "오답 보기의 자리 — 어떤 병의 치료인가",
+    "columns": [
+     "보기",
+     "원래 자리",
+     "여기서 안 되는 이유"
+    ],
+    "rows": [
+     [
+      "스테로이드 단독",
+      "중증 심염의 보조 항염",
+      "제균이 빠진다"
+     ],
+     [
+      "메토트렉세이트",
+      "소아 특발성·류마티스관절염",
+      "만성 관절염 약, ARF 표준 아님"
+     ],
+     [
+      "항바이러스제",
+      "바이러스 감염",
+      "원인이 세균 감염 후 면역"
+     ],
+     [
+      "대증 관찰",
+      "자기제한 바이러스 관절염",
+      "제균·심염 평가·2차 예방이 빠진다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "스테로이드 단독 vs 페니실린 제균 — 「면역 질환이니 면역을 누른다」",
+    "point": "급성 류마티스열의 조직 손상은 면역 반응이 만들지만, 그 반응을 일으키는 항원(A군 사슬알균)이 인두·피부에 남아 있을 수 있다. 그래서 확진된 모든 환자는 먼저 선행 감염을 치료할 만큼의 페니실린을 받는다 <sup>[1 359장 p.2768]</sup>. 스테로이드는 심부전을 일으키는 중증 심염에서 선택적으로 더하는 항염제이고, 심염 결과 개선도 증명되지 않았다 <sup>[1 359장 p.2769]</sup> — 제균을 대신하는 자리가 아니다.",
+    "exception": "이미 제균을 마쳤고 심부전을 동반한 중증 심염이면 스테로이드를 더하는 것이 흔한 선택이다(여전히 단독이 아니라 추가).",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "배양 음성 → 항생제 불필요? — 「균이 안 나왔으니 제균할 것이 없다」",
+    "point": "발병 시점에는 대부분 인두 배양·신속항원이 음성이고 선행 감염은 ASO·anti-DNase B 로 확인한다 <sup>[1 359장 p.2768]</sup>. 배양 음성은 제균을 생략할 근거가 아니다.",
+    "exception": "무도병·경한 심염처럼 수개월 뒤 나타나는 경우는 혈청 증거조차 없을 수 있다 — 그래도 진단되면 제균과 2차 예방을 시작한다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "만성 관절염 약 vs 급성 류마티스열 — 「관절염이니 DMARD」",
+    "point": "ARF 관절염은 큰 관절을 옮겨 다니며 살리실산에 1–2일 안에 극적으로 반응한다. 살리실산에도 1–2일 넘게 지속되면 ARF 가 아닐 가능성이 크다 <sup>[1 359장 p.2768]</sup>. 메토트렉세이트 같은 만성 관절염 약은 이 질환의 자리가 없다.",
+    "exception": "살리실산에 반응하지 않는 지속 관절염이면 소아 특발성 관절염 등 다른 진단을 다시 본다.",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "제균 1회분으로 벤자틴 페니실린 G 를 썼다면 그 주사가 2차 예방의 첫 회가 된다.",
+   "살리실산은 진단이 확정된 뒤에 시작한다 — 먼저 쓰면 이동 양상이 가려진다 <sup>[1 359장 p.2768]</sup>.",
+   "염증 지표는 1–2주마다 정상화(대개 4–6주)까지, 심초음파는 1개월 뒤 다시 본다 <sup>[1 359장 p.2770]</sup>.",
+   "무도병은 카바마제핀·발프로산이 할로페리돌보다 선호되고, 중증·난치면 스테로이드를 고려한다 <sup>[1 359장 p.2769]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "arf-eradication",
+    "name": "급성 류마티스열의 제균 요법",
+    "kind": "치료 기준",
+    "population": "급성 류마티스열로 진단된 모든 환자(심염·배양 결과와 무관)",
+    "statement": "선행 A군 사슬알균 감염을 치료할 항생제를 준다. 페니실린이 1차 — 페녹시메틸페니실린 500 mg(≤27 kg 250 mg) 하루 2회 또는 아목시실린 50 mg/kg(최대 1 g) 하루 1회를 10일, 또는 벤자틴 페니실린 G 120만 단위(≤27 kg 60만 단위) 1회 근육 [[harrison-21: 359장 p.2768]]",
+    "exceptions": "페니실린 알레르기는 대체 약제(마크롤라이드 등)를 쓴다 — 해리슨 359장은 2차 예방에서 에리트로마이신을 대안으로 적는다 [[harrison-21: 359장 p.2770]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "arf-antiinflammatory",
+    "name": "급성기 항염 치료",
+    "kind": "치료 권고",
+    "population": "관절염·관절통·발열이 있는 확진 환자",
+    "statement": "진단이 확정된 뒤 살리실산(아스피린 50–60 mg/kg/일, 최대 80–100 mg/kg/일, 4–5회 분할) 또는 나프록센 10–20 mg/kg/일. 심염·무도병에는 효과가 증명되지 않았다 [[harrison-21: 359장 p.2768–2769]]",
+    "exceptions": "진단 전에 시작하면 이동 양상이 나타나기 전에 관절염이 가라앉아 진단을 흐린다 — 해리슨은 조기 항염제가 무균성 단관절염 양상을 만들 수 있다고 적는다 [[harrison-21: 359장 p.2768]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "arf-steroid",
+    "name": "심염에서의 스테로이드",
+    "kind": "치료 권고",
+    "population": "심부전을 일으키는 중증 심염",
+    "statement": "논란이다. 두 메타분석에서 위약·살리실산 대비 심염 결과 개선을 보이지 못했지만(연구가 40년 이상 전), 많은 임상의가 중증 심염에 프레드니손·프레드니솔론 1–2 mg/kg/일(최대 80 mg)을 수일~최대 3주 쓴다 [[harrison-21: 359장 p.2769]]",
+    "exceptions": "스테로이드는 어떤 경우에도 제균을 대신하지 않는다 — 항염과 제균은 목적이 다르다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 359: Acute Rheumatic Fever",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 359장(Kado J, Carapetis J) p.2766–2770",
+    "checked": "본문 대조(드라이브 문서, 359장 p.2766–2770) — 잠복기 약 3주(1–5주)·분자 모방(p.2767), 모든 ARF 환자에게 선행 감염을 치료할 항생제·페니실린 경구 10일 또는 벤자틴 1회 용량, 치료는 심부전 외에는 대증이며 RHD 진행을 바꾸는 치료가 증명되지 않음, 배양 음성이 흔해 혈청 검사가 필요, 조기 항염제가 단관절염 양상을 만들 수 있음(p.2768), 살리실산·나프록센 용량과 심염·무도병 무효, 스테로이드 논란과 용량, 무도병 약제(p.2769), 급성기 뒤 2차 예방이 우선(p.2770)을 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "aha-prevention-2009",
+    "org": "American Heart Association",
+    "title": "Prevention of Rheumatic Fever and Diagnosis and Treatment of Acute Streptococcal Pharyngitis: A Scientific Statement From the American Heart Association",
+    "kind": "guideline",
+    "citation": "Gerber MA, Baltimore RS, Eaton CB, et al. Circulation 2009;119(11):1541-1551",
+    "checked": "서지만 확인(원문 미대조 — 이 컨테이너는 doi·PubMed 접근이 막혀 있다). 해리슨 359장 표 359-4 가 이 성명을 출처로 인용하는 것은 확인했다",
+    "doi": "10.1161/CIRCULATIONAHA.109.191959",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1161/CIRCULATIONAHA.109.191959"
+   }
+  ],
+  "checks": [
+   {
+    "q": "급성 류마티스열로 확진된 환자에게 심염 유무와 무관하게 반드시 주는 것은?",
+    "a": "선행 A군 사슬알균 감염을 치료할 페니실린 — 경구 10일 또는 벤자틴 페니실린 G 1회 근육."
+   },
+   {
+    "q": "인두 배양이 음성이면 제균을 생략하는가?",
+    "a": "아니다. 발병 시 대부분 배양 음성이며 선행 감염은 ASO·anti-DNase B 로 확인한다. 제균은 한다."
+   },
+   {
+    "q": "스테로이드는 언제, 어떤 위치인가?",
+    "a": "심부전을 일으키는 중증 심염에서 선택적으로 더하는 항염제(효과 논란). 제균을 대신하지 않는다."
+   },
+   {
+    "q": "살리실산에 1–2일 넘게 반응하지 않는 관절염이면?",
+    "a": "ARF 가능성이 낮다 — 다른 관절염을 다시 감별한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.rheumatic-fever.acute-eradication#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 제균을 마친 뒤 심부전을 동반한 중증 심염",
+    "stem": "9세 여아가 2주 전 급성 류마티스열(이동성 다발관절염, 심잡음, 항연쇄구균용혈소O 상승)로 진단되어 진단 당일 벤자틴 페니실린 G 60만 단위를 근육 주사로 맞았고 아스피린을 복용 중이다. 이틀 전부터 누우면 숨이 차고 발목이 붓는다. 맥박 136회/분, 호흡 36회/분, 양쪽 폐 기저부에 수포음이 들리고 간이 우늑골연 아래 4 cm 만져진다. 심초음파에서 중증 승모판역류와 좌심실 확장이 보이고 흉부 X선에서 폐울혈이 있다. 이뇨제와 함께 고려할 치료로 가장 적절한 것은?",
+    "options": [
+     "프레드니솔론 투여",
+     "벤자틴 페니실린 G 재투여",
+     "메토트렉세이트 투여",
+     "항바이러스제 투여",
+     "아스피린 중단 후 관찰"
+    ],
+    "answer": 1,
+    "explanation": "제균은 이미 벤자틴 페니실린 G 1회로 마쳤으므로 다시 줄 이유가 없다(다음 주사는 4주 뒤 2차 예방). 남은 문제는 심부전을 일으키는 중증 심염이며, 이 경우 많은 임상의가 심부전 치료와 함께 프레드니솔론 1–2 mg/kg/일을 짧게 쓴다 — 효과는 논란이지만 이 상황의 표준적 선택이다 [[harrison-21: 359장 p.2769]]. 원래 문항은 제균 전이라 페니실린이 먼저였다. 메토트렉세이트·항바이러스제는 자리가 없고, 아스피린 중단은 관절 증상을 되살릴 뿐 심염을 다루지 못한다.",
+    "of": "kmle-2026-0387",
+    "changed": "제균 전 상태를 「벤자틴 페니실린 G 를 이미 맞았음」으로, 심염을 「호흡곤란·폐부종·간비대를 동반한 중증 승모판역류(심부전)」로 바꿈 → 남은 결정이 항염 강화이므로 답이 「페니실린 제균」에서 「스테로이드 추가」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.rheumatic-fever.acute-eradication#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 배양 음성인 여아",
+    "stem": "13세 여아가 한 달 전 목이 몹시 아팠다가 저절로 나았다. 5일 전부터 오른쪽 발목이 붓고 아프더니 이틀 뒤에는 발목이 가라앉고 왼쪽 무릎이 붓기 시작했다. 체온 38.7 ℃, 맥박 104회/분. 심잡음은 들리지 않는다. 인후배양은 음성이고 항연쇄구균용혈소O 와 항DNase B 가 상승했으며 적혈구침강속도 72 mm/hr, 심전도에서 PR 간격이 연장되어 있다. 급성 류마티스열로 진단했다. 지금 반드시 시행해야 할 치료는?",
+    "options": [
+     "벤자틴 페니실린 G 근육 주사",
+     "인후배양이 양성이 될 때까지 재검 후 결정",
+     "고용량 스테로이드 단독",
+     "관절 천자 후 관절 내 스테로이드",
+     "해열제만 투여하며 관찰"
+    ],
+    "answer": 1,
+    "explanation": "이동성 다발관절염(주 기준) + 발열·ESR 상승·PR 연장(부 기준) + 항체 상승(선행 감염 증거)으로 급성 류마티스열이다. 발병 시 배양은 흔히 음성이며 혈청으로 선행 감염을 확인하므로, 배양 결과와 무관하게 선행 감염을 치료할 페니실린(벤자틴 페니실린 G 1회 근육 또는 경구 10일)을 준다 [[harrison-21: 359장 p.2768]]. 나이·성별·관절 순서가 달라도 결정 단서는 같다. 관절 증상은 진단 뒤 살리실산으로 조절한다.",
+    "of": "kmle-2026-0387",
+    "changed": "나이·성별(13세 여아), 선행 감염(4주 전 인두염, 배양은 지금 음성), 침범 관절(발목→무릎), 제시 순서를 바꾸고 이동성 다발관절염·선행 감염 증거·PR 연장·제균 전 상태는 그대로 → 답은 여전히 페니실린 제균",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "급성 류마티스열 확진 뒤 — 무엇부터, 무엇을 더하나",
+  "geo": {
+   "title": "급성 류마티스열 확진 뒤 — 무엇부터, 무엇을 더하나",
+   "w": 496,
+   "h": 910.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "급성 류마티스열 확진(존스",
+      "기준 + 선행 A군 사슬알균",
+      "감염 증거)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "abx",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "모든 환자: 페니실린 제균 —",
+      "경구 10일 또는 벤자틴",
+      "페니실린 G 1회 근육"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "echo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "심초음파로 심염이 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 310.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "심초음파 전이면 먼저 한다 —",
+      "아임상 심염은 청진으로",
+      "놓친다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 423.0
+    },
+    {
+     "id": "joint",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "관절염·발열 → 살리실산 또는",
+      "나프록센"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "hf",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "심부전을 일으키는 중증",
+      "심염인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "mild",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "심부전 없는 심염 → 대증 +",
+      "1개월 뒤 심초음파 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 700.0
+    },
+    {
+     "id": "severe",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "심부전 치료 + 스테로이드",
+      "고려(1–2 mg/kg/일, ≤3주)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 700.0
+    },
+    {
+     "id": "end",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "급성기 뒤 2차 예방 — 벤자틴",
+      "페니실린 G 4주마다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 830.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "abx",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "abx",
+     "to": "echo",
+     "points": [
+      [
+       227.0,
+       244.0
+      ],
+      [
+       227.0,
+       254.0
+      ],
+      [
+       227.0,
+       254.0
+      ],
+      [
+       227.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "제균 시작과 동시에"
+      ],
+      "w": 103.5,
+      "h": 17,
+      "x": 175.3,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "echo",
+     "to": "joint",
+     "points": [
+      [
+       178.0,
+       357.0
+      ],
+      [
+       178.0,
+       367.0
+      ],
+      [
+       452,
+       367.0
+      ],
+      [
+       452,
+       524.0
+      ],
+      [
+       146.7,
+       524.0
+      ],
+      [
+       146.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "echo",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       357.0
+      ],
+      [
+       227.0,
+       373.0
+      ],
+      [
+       227.0,
+       373.0
+      ],
+      [
+       227.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아직 안 함"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 197.3,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "echo",
+     "to": "hf",
+     "points": [
+      [
+       276.0,
+       357.0
+      ],
+      [
+       276.0,
+       379.0
+      ],
+      [
+       466,
+       379.0
+      ],
+      [
+       466,
+       524.0
+      ],
+      [
+       372.7,
+       524.0
+      ],
+      [
+       372.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "joint",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       81.3,
+       514.0
+      ],
+      [
+       81.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "심염 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 53.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "hf",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       307.3,
+       520.0
+      ],
+      [
+       307.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "심염 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 279.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "joint",
+     "to": "end",
+     "points": [
+      [
+       114.0,
+       634.0
+      ],
+      [
+       114.0,
+       644.0
+      ],
+      [
+       480,
+       644.0
+      ],
+      [
+       480,
+       784.0
+      ],
+      [
+       178.0,
+       784.0
+      ],
+      [
+       178.0,
+       830.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hf",
+     "to": "mild",
+     "points": [
+      [
+       307.3,
+       634.0
+      ],
+      [
+       307.3,
+       644.0
+      ],
+      [
+       114.0,
+       644.0
+      ],
+      [
+       114.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "hf",
+     "to": "severe",
+     "points": [
+      [
+       372.7,
+       634.0
+      ],
+      [
+       372.7,
+       650.0
+      ],
+      [
+       340.0,
+       650.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "mild",
+     "to": "end",
+     "points": [
+      [
+       114.0,
+       764.0
+      ],
+      [
+       114.0,
+       774.0
+      ],
+      [
+       227.0,
+       774.0
+      ],
+      [
+       227.0,
+       830.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "severe",
+     "to": "end",
+     "points": [
+      [
+       340.0,
+       764.0
+      ],
+      [
+       340.0,
+       774.0
+      ],
+      [
+       276.0,
+       774.0
+      ],
+      [
+       276.0,
+       830.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "급성 류마티스열 확진(존스 기준 + 선행 A군 사슬알균 감염 증거)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "모든 환자: 페니실린 제균 — 경구 10일 또는 벤자틴 페니실린 G 1회 근육"
+     }
+    ]
+   },
+   {
+    "id": "abx",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "모든 환자: 페니실린 제균 — 경구 10일 또는 벤자틴 페니실린 G 1회 근육",
+    "note": "",
+    "branches": [
+     {
+      "label": "제균 시작과 동시에",
+      "to": 3,
+      "toText": "심초음파로 심염이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "echo",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "심초음파로 심염이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아직 안 함",
+      "to": 4,
+      "toText": "심초음파 전이면 먼저 한다 — 아임상 심염은 청진으로 놓친다"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "관절염·발열 → 살리실산 또는 나프록센"
+     },
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "심부전을 일으키는 중증 심염인가?"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "심초음파 전이면 먼저 한다 — 아임상 심염은 청진으로 놓친다",
+    "note": "",
+    "branches": [
+     {
+      "label": "심염 없음",
+      "to": 5,
+      "toText": "관절염·발열 → 살리실산 또는 나프록센"
+     },
+     {
+      "label": "심염 있음",
+      "to": 6,
+      "toText": "심부전을 일으키는 중증 심염인가?"
+     }
+    ]
+   },
+   {
+    "id": "joint",
+    "num": 5,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "관절염·발열 → 살리실산 또는 나프록센",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "급성기 뒤 2차 예방 — 벤자틴 페니실린 G 4주마다"
+     }
+    ]
+   },
+   {
+    "id": "hf",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "심부전을 일으키는 중증 심염인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니다",
+      "to": 7,
+      "toText": "심부전 없는 심염 → 대증 + 1개월 뒤 심초음파 재평가"
+     },
+     {
+      "label": "그렇다",
+      "to": 8,
+      "toText": "심부전 치료 + 스테로이드 고려(1–2 mg/kg/일, ≤3주)"
+     }
+    ]
+   },
+   {
+    "id": "mild",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "심부전 없는 심염 → 대증 + 1개월 뒤 심초음파 재평가",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "급성기 뒤 2차 예방 — 벤자틴 페니실린 G 4주마다"
+     }
+    ]
+   },
+   {
+    "id": "severe",
+    "num": 8,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "심부전 치료 + 스테로이드 고려(1–2 mg/kg/일, ≤3주)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "급성기 뒤 2차 예방 — 벤자틴 페니실린 G 4주마다"
+     }
+    ]
+   },
+   {
+    "id": "end",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "급성기 뒤 2차 예방 — 벤자틴 페니실린 G 4주마다",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0387"
+  ],
+  "hasErrors": false
+ },
  "cn.peds.rheumatic-fever.secondary-prophylaxis": {
   "id": "cn.peds.rheumatic-fever.secondary-prophylaxis",
   "title": "급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다",
@@ -13019,10 +34544,10 @@ window.MEDKOS_CONCEPTS = {
    "Rheumatology",
    "Infectious Disease"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "79e59f24e9ff3124",
+  "hash": "a37e85fc1c6f6e24",
   "summary": [
    "류마티스열은 A군 사슬알균 인두염 뒤 2–4주에 오는 면역 매개 질환이다. 재발은 새로운 사슬알균 인두 감염 때마다 일어나고, 재발할수록 판막 손상이 누적된다.",
    "1차 예방 = 인두염을 10일 페니실린으로 치료해 첫 발병을 막는 것. 급성기 치료에도 같은 제균 요법이 들어가지만, 그것만으로는 이후 재감염을 막지 못한다.",
@@ -13312,6 +34837,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "심염에 잔여 판막 질환이 남아 있으면 마지막 발병 뒤 10년 또는 40세까지(긴 쪽), 재발 위험이 높으면 평생 잇는다. 21세는 잔여 판막 질환이 없는 심염의 기준이다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.peds.rheumatic-fever.secondary-prophylaxis#v3",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 류마티스열 이전의 인두염",
+    "stem": "9세 여아가 이틀 전부터 39 ℃ 열과 목 아픔이 있어 병원에 왔다. 기침·콧물은 없다. 진찰에서 편도가 붓고 삼출물이 덮여 있으며 앞목 림프절이 커져 누르면 아프다. 관절 통증·부종은 없고 심잡음은 들리지 않는다. 신속 A군 사슬알균 항원 검사는 양성이다. 류마티스열을 앓은 적은 없고 약물 알레르기는 없다. 류마티스열을 예방하기 위해 가장 적절한 조치는?",
+    "options": [
+     "페니실린 V 를 10일간 경구 투여 후 종료",
+     "벤자틴 페니실린 G 를 4주마다 근육 주사",
+     "인두 배양 결과가 나올 때까지 항생제 없이 관찰",
+     "치과 시술 전에만 예방적 항생제 투여",
+     "저용량 아스피린을 매일 장기 복용"
+    ],
+    "answer": 1,
+    "explanation": "류마티스열을 앓은 적 없는 아이의 A군 사슬알균 인두염이다. 이때 목표는 첫 발병을 막는 1차 예방이고, 인두염을 10일 페니실린으로 치료해 균을 없애는 것으로 충분하다 [[?aha-prevention-2009]]. 벤자틴 페니실린 G 4주마다 주사는 이미 류마티스열을 앓아 재감염 자체를 계속 막아야 하는 환자의 2차 예방이다 — 원래 문항(이동성 관절염 + 승모판 역류 심염 뒤 퇴원)에서는 그것이 답이었다. 신속 검사가 양성이면 배양을 기다리지 않고, 시술 전 예방은 심내막염 개념이며, 아스피린은 류마티스열을 예방하지 못한다.",
+    "of": "kmle-2026-1088",
+    "changed": "같은 9세 여아가 관절염·심잡음이 생기기 전, 사슬알균 인두염 자체로 온 시점으로 바꿈(류마티스열 병력 없음) → 막을 것은 재발이 아니라 첫 발병이므로 답이 「벤자틴 4주마다(2차 예방)」에서 「페니실린 V 10일(1차 예방)」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.rheumatic-fever.secondary-prophylaxis#v4",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 손목·팔꿈치 관절염의 남아",
+    "stem": "12세 남아가 일주일 사이 왼쪽 손목, 이어서 오른쪽 팔꿈치가 차례로 붓고 아파 입원했다. 한 달 전 목이 아프고 열이 났으나 치료받지 않았다. 입원 당시 체온 38.7 ℃, 심첨부에 새로 생긴 범수축기 잡음이 들렸다. 심초음파에서 중등도 승모판 역류가 보이고, ASO 와 ESR 이 높으며 인두 배양은 음성이다. 아스피린과 제균 항생제로 증상이 좋아져 퇴원을 앞두고 있다. 재발을 막기 위해 가장 적절한 조치는?",
+    "options": [
+     "저용량 아스피린을 매일 장기 복용",
+     "인두염 증상이 생길 때만 페니실린 10일 투여",
+     "벤자틴 페니실린 G 를 4주마다 근육 주사",
+     "치과 시술 전에만 아목시실린 투여",
+     "퇴원 전 페니실린 V 10일 경구로 종료"
+    ],
+    "answer": 3,
+    "explanation": "선행 인두염 뒤 이동성 다발관절염과 판막 역류를 동반한 심염(주 기준 2개)에 발열·ESR 상승과 ASO 상승이 더해진 급성 류마티스열이다 [[?aha-jones-2015]]. 나이·성별·관절 부위가 달라도 결정 단서(류마티스열 확진 + 심염)가 같으므로 퇴원 뒤 벤자틴 페니실린 G 4주마다 근육 주사로 재감염 자체를 막는다. 심염이 있으니 기간은 최소 10년 또는 21세까지, 판막 질환이 남으면 더 길다 [[?aha-prevention-2009]]. 증상 시에만 치료하거나 10일로 끝내면 무증상 재감염을 막지 못하고, 아스피린은 급성기 항염제일 뿐이며, 시술 전 예방은 심내막염 개념이다.",
+    "of": "kmle-2026-1088",
+    "changed": "나이·성별(12세 남아)·관절 부위(손목·팔꿈치)·검사 제시 순서를 바꾸고 「이동성 다발관절염 + 심초음파 판막 역류 심염 → 퇴원 시 재발 예방」은 그대로 → 답은 여전히 벤자틴 페니실린 G 4주마다",
     "flip": false
    }
   ],
@@ -13853,6 +35412,1002 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.peds.stec-hus.supportive-no-antibiotics": {
+  "id": "cn.peds.stec-hus.supportive-no-antibiotics",
+  "title": "소아 STEC 용혈요독증후군 — 시가독소의 혈관 손상에서 지지치료·항생제 회피까지",
+  "objective": "시가독소가 신장 미세혈관 내피를 손상해 혈전성 미세혈관병증을 만드는 기전으로 혈성 설사 뒤의 용혈·혈소판감소·급성 신손상을 설명하고, 전형적 소아 STEC-HUS 의 치료로 수액·전해질·투석 중심의 지지치료를 고르며 항생제·지사제·예방적 혈소판 수혈·혈장교환을 피하는 이유와 TTP·비전형 HUS 와의 경계를 판단한다",
+  "objectiveKind": "치료",
+  "condition": "시가독소 생성 대장균 용혈요독증후군(STEC-HUS)",
+  "topic": "Pediatrics",
+  "seeAlso": [
+   "Nephrology",
+   "Infectious Disease"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "03a47c3ed75ee81f",
+  "summary": [
+   "시가독소 생성 대장균(O157:H7 등)은 덜 익힌 간 쇠고기·생채소로 들어와 3–4일 잠복 뒤 대장에 붙어 복통과 설사를 일으키고, 설사는 흔히 육안적 혈변으로 바뀐다. 열은 대개 없다 [[harrison-21: 161장 p.1268]].",
+   "대장에서 흡수된 시가독소가 혈류를 타고(적혈구가 운반) 신장·뇌의 작은 혈관 내피에 붙는다. 독소 A 소단위가 리보솜을 멈춰 내피가 손상되고 혈전성 미세혈관병증이 생긴다 [[harrison-21: 161장 p.1268]].",
+   "그 결과가 설사 2–14일 뒤의 삼징 — 분열적혈구가 있는 용혈성 빈혈·혈소판감소·급성 신손상(때로 뇌병증)이다. 10세 미만 감염 아동의 약 15% 에서 생기고, 미국 소아 HUS 의 90% 가 STEC 때문이다 [[harrison-21: 161장 p.1268]].",
+   "치료는 지지치료다 — 수액·전해질·혈압 관리, 필요하면 투석. 항생제는 독소 생산·방출을 늘려 HUS 위험을 높일 수 있어 피한다 [[harrison-21: 161장 p.1270]]. 지사제도 피한다 [[?tarr-2005]].",
+   "혈장교환은 STEC-HUS 에 이득이 없고, 에쿨리주맙(C5 억제)의 가치는 정해지지 않았다 [[harrison-21: 161장 p.1270]] — 혈장교환은 ADAMTS13 결핍 TTP 의 치료다 [[?isth-ttp-2020]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>용혈요독증후군(HUS)은 분열적혈구가 있는 용혈성 빈혈·혈소판감소·급성 신손상을 특징으로 하는 혈전성 미세혈관병증이다. 소아 HUS 의 대부분(미국 90%)은 시가독소 생성 대장균(STEC, 대표 O157:H7)의 장염 뒤에 오는 <strong>전형적 HUS</strong> 다 <sup>[1 161장 p.1268]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<ul>\n<li><strong>감염</strong>: 덜 익힌 간 쇠고기·생채소·동물 접촉으로 들어온 STEC 가 3–4일 잠복 뒤 대장에 붙는다. 처음에는 물설사, 곧 육안적 혈변이 되고 복통이 심하며 열은 드물다 <sup>[1 161장 p.1268]</sup>.</li>\n<li><strong>독소</strong>: 시가독소(특히 Stx2)는 B 소단위로 글로보실 세라마이드를 가진 세포에 붙고, A 소단위가 28S rRNA 를 잘라 단백 합성을 멈춘다 <sup>[1 161장 p.1268]</sup>.</li>\n<li><strong>전신화</strong>: 장에서 흡수된 독소가 적혈구에 실려 신장·뇌 소혈관 내피로 간다. 내피가 손상되면 그 자리에 혈소판·피브린 미세혈전이 생긴다 <sup>[1 161장 p.1268]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>미세혈전 사이를 지나는 적혈구가 찢김 → <strong>분열적혈구</strong>, LDH 상승, 용혈성 빈혈(창백).</li>\n<li>미세혈전에 혈소판 소모 → <strong>혈소판감소</strong>(출혈은 대개 경미).</li>\n<li>사구체 모세혈관 폐쇄 → <strong>급성 신손상</strong>(핍뇨·부종·고혈압·고칼륨).</li>\n<li>뇌 소혈관 → 기면·경련 같은 뇌병증.</li>\n<li>시점: 설사 2–14일 뒤, 설사가 나아질 무렵 <sup>[1 161장 p.1268]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>TTP</strong>: ADAMTS13 결핍, 대개 성인, 신경 증상 우세, 신손상은 상대적으로 가벼움 → 혈장교환 <sup>[5†]</sup>.</li>\n<li><strong>비전형(보체 매개) HUS</strong>: 설사 선행 없음, 가족력·재발 → 보체 억제제.</li>\n<li><strong>파종혈관내응고</strong>: PT·aPTT 연장, 피브리노겐 감소(패혈증) — HUS 는 응고 검사가 대개 정상에 가깝다(원문 미대조).</li>\n<li>열 없는 혈성 설사는 장중첩·염증성 장질환으로 오인되기 쉽다 <sup>[1 161장 p.1268]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈구·말초 도말(분열적혈구), LDH·간접 빌리루빈·합토글로빈, 크레아티닌·전해질, 소변검사. 대변 배양과 시가독소(또는 유전자) 검출을 함께 한다 <sup>[1 161장 p.1269]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li><strong>지지치료가 전부다</strong> — 체액량·전해질(특히 칼륨)·혈압 관리, 영양, 적응이 되면 투석.</li>\n<li><strong>피할 것</strong>: 항생제(HUS 위험 증가) <sup>[1 161장 p.1270]</sup>, 지사제(로페라마이드) <sup>[2†]</sup>, 예방적 혈소판 수혈(활동성 출혈·시술 때만), 혈장교환(이득 없음) <sup>[1 161장 p.1270]</sup>.</li>\n<li>재평가: 소변량·크레아티닌·칼륨·혈압·혈색소·혈소판·의식. 신기능 회복 뒤에도 단백뇨·고혈압을 추적한다(장기 추적 기간은 원문 미대조).</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>2011 독일 유행의 ST-EAEC(O104:H4)는 성인, 특히 젊은 여성에서 HUS 가 많았다 — 「HUS = 소아」가 절대 규칙은 아니다 <sup>[1 161장 p.1268]</sup>.</li>\n<li>에쿨리주맙의 STEC-HUS 에서의 가치는 정해지지 않았다 <sup>[1 161장 p.1270]</sup> — 중증 신경 침범 등에서 쓰이는 사례는 이 정리본에서 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · STEC-HUS 에 에쿨리주맙</strong> — 시험 기준: 전형적 STEC-HUS 는 지지치료, 보체 억제제는 비전형 HUS 의 약 / 다른 기준: 해리슨은 STEC-HUS 에서 C5 억제(에쿨리주맙)의 가치가 「정해지지 않았다」고 적는다 <sup>[1 161장 p.1270]</sup> / 왜 다른가: 유행 때 중증 환자에 쓰인 관찰 자료가 있으나 대조 시험 근거가 부족하다(관찰 자료 원문 미대조) / 시험에서는: USMLE · 전형적 소아 STEC-HUS 의 답은 지지치료, 에쿨리주맙은 설사 없는 비전형 HUS · KMLE 도 같은 흐름.</li>\n</ul>"
+   },
+   {
+    "title": "「하지 말 것」 네 가지가 보기로 나오는 이유",
+    "deep": true,
+    "html": "<p>이 문항의 오답 넷(항생제·지사제·예방적 혈소판·혈장교환)은 모두 「무언가를 적극적으로 하는」 선택이다. 각각 독소 방출 증가, 독소의 장 체류 증가, 미세혈전 우려, 원인이 다른 질환(TTP)의 치료라는 서로 다른 이유로 빠진다 — 지지치료가 답인 것은 「할 게 없어서」가 아니라 넷을 각각 배제했기 때문이다.</p>"
+   }
+  ],
+  "tables": [],
+  "pitfalls": [
+   {
+    "contrast": "「혈전성 미세혈관병증 = 혈장교환」 vs 설사 선행 소아 STEC-HUS",
+    "point": "분열적혈구·혈소판감소·장기 손상은 TTP 와 HUS 가 공유하는 결과일 뿐 원인이 다르다. TTP 는 ADAMTS13 결핍으로 초거대 폰빌레브란트 인자가 쌓인 것이라 혈장교환으로 효소를 채우고 자가항체를 걷어 낸다. STEC-HUS 는 시가독소의 내피 손상이라 혈장에 보충할 것이 없고, 혈장교환은 이득이 없다 <sup>[1 161장 p.1270]</sup>. 설사 선행·시가독소 확인·소아·신손상 우세가 STEC-HUS 쪽이다.",
+    "exception": "설사 선행이 없거나 가족력·재발이 있으면 비전형(보체) HUS, 성인·신경 증상 우세·ADAMTS13 현저 저하면 TTP 를 생각한다 <sup>[5†]</sup>.",
+    "cites": "<sup>[1]</sup> <sup>[5†]</sup>"
+   },
+   {
+    "contrast": "「세균 감염 = 항생제로 빨리 없앤다」",
+    "point": "STEC 장염은 대개 5–10일에 저절로 낫는다. 항생제는 세균이 죽거나 스트레스를 받을 때 시가독소 생산·방출을 늘려 HUS 위험을 높일 수 있다 — 그래서 열 없는 혈성 설사에서는 원인균이 확인되기 전에도 항생제를 피한다 <sup>[1 161장 p.1268, p.1270]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1]</sup> <sup>[3†]</sup>"
+   },
+   {
+    "contrast": "혈소판 3–4만인데 예방적 수혈?",
+    "point": "혈소판은 미세혈전에 소모되어 낮다. 출혈이 없으면 수혈로 얻는 것이 적고 미세혈전을 더할 수 있다는 우려가 있어, 활동성 출혈이나 시술 때로 제한한다(원문 미대조 — 검토 항목) <sup>[2†]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "열 없는 혈성 설사는 그 자체로 STEC 를 의심할 단서다 — 원인균이 확인되기 전에도 항생제를 삼간다 <sup>[1 161장 p.1270]</sup>.",
+   "HUS 는 설사가 좋아질 무렵(2–14일 뒤) 온다. 설사가 멎었다고 끝이 아니다 <sup>[1 161장 p.1268]</sup>.",
+   "재평가: 소변량·크레아티닌·칼륨·혈압·혈색소·혈소판을 매일, 의식 변화(뇌병증)를 본다. 무뇨·조절 안 되는 전해질·체액 과다는 투석 적응이다(세부 기준 원문 미대조)."
+  ],
+  "criteria": [
+   {
+    "id": "stec-abx",
+    "name": "항생제 회피",
+    "kind": "치료 기준",
+    "population": "STEC 감염이 의심되거나 확인된 설사(열 없는 혈성 설사)",
+    "statement": "항생제를 쓰지 않는다 — HUS 발생을 늘릴 수 있다(시가독소 생산·방출 증가 추정) [[harrison-21: 161장 p.1270]]",
+    "exceptions": "소아 코호트에서 항생제와 HUS 위험 증가의 연관을 보고한 연구가 근거로 인용된다 — 원문 미대조 [[?wong-2000]] · 메타분석 [[?freedman-2016]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "hus-plasma",
+    "name": "HUS 에서 혈장교환",
+    "kind": "치료 기준",
+    "population": "STEC-HUS",
+    "statement": "혈장교환은 이득이 없다. 에쿨리주맙의 가치는 정해지지 않았다 [[harrison-21: 161장 p.1270]]",
+    "exceptions": "TTP(ADAMTS13 결핍)는 혈장교환이 치료의 축이다 [[?isth-ttp-2020]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "stec-test",
+    "name": "진단 검사",
+    "kind": "검사 기준",
+    "population": "지역사회 획득 설사",
+    "statement": "CDC 는 모든 지역사회 획득 설사에서 배양(분리주 확보)과 시가독소(또는 유전자) 검출을 함께 하도록 권한다 — 혈변·분변 백혈구가 늘 있지는 않아서다. O157 은 소르비톨 비발효로 선별한다 [[harrison-21: 161장 p.1269]]",
+    "exceptions": "비 O157 STEC 는 선택 배지가 없어 독소 검출이 필요하다 [[harrison-21: 161장 p.1269]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 161: Diseases Caused by Gram-Negative Enteric Bacilli",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 161장 p.1268–1270 (Shiga toxin–producing E. coli)",
+    "checked": "본문 대조(드라이브 161장 문서) — p.1268: 덜 익힌 간 쇠고기·생채소 유행, 시가독소(Stx2 가 HUS 에 더 중요) A 소단위가 28S rRNA 를 잘라 단백 합성 억제, 3–4일 잠복, 비혈성 설사 → 육안적 혈변, 복통·분변 백혈구 흔하고 열은 드묾, 5–10일 자기 제한, HUS 는 설사 2–14일 뒤·10세 미만 감염 아동의 약 15%·미국 소아 HUS 의 90%, 적혈구가 독소를 신장·뇌 소혈관 내피로 운반해 혈전성 미세혈관병증 → 용혈성 빈혈·혈소판감소·신부전·뇌병증 · p.1269: CDC 는 모든 지역사회 설사에 배양+시가독소 검출 권고, O157 은 소르비톨 비발효 · p.1270: STEC 항생제는 HUS 를 늘릴 수 있어 피함, HUS 에 혈장교환 이득 없음, 에쿨리주맙 가치 미정. 지사제·혈소판 수혈·수액 요법 세부는 이 장에 없다. 슬롯 peds.renal 은 해리슨 대조 대상이 아닌 손 슬롯이나 근거로 이 장을 읽었다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "tarr-2005",
+    "org": "Tarr PI, Gordon CA, Chandler WL (종설)",
+    "title": "Shiga-toxin-producing Escherichia coli and haemolytic uraemic syndrome",
+    "kind": "review",
+    "citation": "Lancet 2005;365(9464):1073-1086",
+    "checked": "서지만 — 이 컨테이너에서 doi·PubMed 접근 차단으로 지사제 회피·혈소판 수혈 제한 서술을 원문과 대조하지 못했다",
+    "doi": "10.1016/S0140-6736(05)71144-2",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2005",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/S0140-6736(05)71144-2"
+   },
+   {
+    "id": "wong-2000",
+    "org": "Wong CS, Jelacic S, Habeeb RL, et al (전향 코호트)",
+    "title": "The risk of the hemolytic-uremic syndrome after antibiotic treatment of Escherichia coli O157:H7 infections",
+    "kind": "other",
+    "citation": "N Engl J Med 2000;342(26):1930-1936",
+    "checked": "서지만 — 원문·초록 접근 차단(수치 인용하지 않음)",
+    "doi": "10.1056/NEJM200006293422601",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2000",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1056/NEJM200006293422601"
+   },
+   {
+    "id": "freedman-2016",
+    "org": "Freedman SB, Xie J, Neufeld MS, et al (체계적 문헌고찰·메타분석)",
+    "title": "Shiga toxin-producing Escherichia coli infection, antibiotics, and risk of developing hemolytic uremic syndrome: a meta-analysis",
+    "kind": "review",
+    "citation": "Clin Infect Dis 2016;62(10):1251-1258",
+    "checked": "서지만 — 원문·초록 접근 차단(수치 인용하지 않음)",
+    "doi": "10.1093/cid/ciw099",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2016",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1093/cid/ciw099"
+   },
+   {
+    "id": "isth-ttp-2020",
+    "org": "International Society on Thrombosis and Haemostasis",
+    "title": "ISTH guideline for treatment of thrombotic thrombocytopenic purpura",
+    "kind": "guideline",
+    "citation": "Zheng XL, et al. J Thromb Haemost 2020;18(10):2496-2502",
+    "checked": "서지만 — 원문 접근 차단. 서지 세부(권·쪽·doi)도 원문으로 확인하지 못했다 — 검토 항목",
+    "doi": "10.1111/jth.15010",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1111/jth.15010"
+   }
+  ],
+  "checks": [
+   {
+    "q": "STEC 장염에서 항생제를 피하는 이유는?",
+    "a": "항생제가 시가독소 생산·방출을 늘려 HUS 위험을 높일 수 있기 때문이다. 장염 자체는 5–10일에 저절로 낫는다."
+   },
+   {
+    "q": "STEC-HUS 에서 혈장교환이 1차가 아닌 이유는?",
+    "a": "원인이 시가독소의 내피 손상이라 혈장으로 보충하거나 제거할 대상(TTP 의 ADAMTS13·자가항체)이 없다. 해리슨은 이득이 없다고 적는다."
+   },
+   {
+    "q": "HUS 의 삼징과 그것이 생기는 자리는?",
+    "a": "분열적혈구 용혈성 빈혈·혈소판감소·급성 신손상. 시가독소가 신장(과 뇌)의 작은 혈관 내피를 손상해 미세혈전이 생기고, 적혈구가 그 사이를 지나며 부서지고 혈소판이 소모된다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.peds.stec-hus.supportive-no-antibiotics#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 설사 없는 성인의 혈전성 미세혈관병증",
+    "stem": "A 38-year-old woman is brought to the emergency department with 2 days of fatigue, headache, and episodes of confusion and slurred speech that resolve within minutes. She has had no diarrhea, vomiting, or recent travel, and takes no medications. Temperature is 37.9 C. There are scattered petechiae on the legs. Hemoglobin is 7.8 g/dL with many schistocytes on the peripheral smear, platelet count is 12,000/microL, LDH is markedly elevated, and creatinine is 1.3 mg/dL. Stool studies are negative for Shiga toxin. ADAMTS13 activity is below 10%. Which of the following is the most appropriate management?",
+    "options": [
+     "Empiric antibiotics directed at enteric pathogens",
+     "Loperamide with oral rehydration",
+     "Platelet transfusion to a target above 50,000/microL",
+     "Urgent plasma exchange",
+     "Supportive care with fluids and electrolytes alone"
+    ],
+    "answer": 4,
+    "explanation": "The changed clues are the absence of preceding diarrhea or Shiga toxin, an adult patient, fluctuating neurologic deficits with only mild renal injury, and severely reduced ADAMTS13 activity — thrombotic thrombocytopenic purpura. Plasma exchange replaces the deficient enzyme and removes the inhibiting autoantibody and is the urgent first step [[?isth-ttp-2020]]. In typical pediatric STEC-HUS, by contrast, plasma exchange offers no benefit and care is supportive [[harrison-21: 161장 p.1270]]. Supportive care alone would miss a rapidly fatal disorder, antibiotics and loperamide have no role, and platelet transfusion is avoided unless there is life-threatening bleeding.",
+    "of": "usmle-2026-0030",
+    "changed": "4세·덜 익힌 햄버거 뒤 혈성 설사 선행·시가독소 생성균 확인·크레아티닌 3배 → 38세 여성·설사 선행 없음·혼돈과 말더듬·크레아티닌 경미 상승·ADAMTS13 활성 <10% ⇒ 정답이 지지치료에서 즉시 혈장교환으로",
+    "flip": true
+   },
+   {
+    "id": "cn.peds.stec-hus.supportive-no-antibiotics#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 체험 농장 방문 뒤",
+    "stem": "A 7-year-old boy is brought to the pediatrician because his parents noticed he has barely urinated in the past day. One week ago, after a class trip to a petting farm, he developed abdominal cramps and diarrhea that became bloody on the third day; the diarrhea has now nearly resolved. He has had no fever. He appears pale and puffy around the eyes. Blood pressure is 118/76 mm Hg. Hemoglobin is 7.9 g/dL with fragmented red cells on the smear, platelet count is 52,000/microL, and creatinine is 2.4 mg/dL (baseline 0.5 mg/dL). A stool assay is positive for Shiga toxin. Which of the following is the most appropriate management?",
+    "options": [
+     "Oral azithromycin to eradicate the organism",
+     "Plasma exchange started later today",
+     "Supportive fluid and electrolyte care, dialysis if needed",
+     "Prophylactic platelet transfusion before any procedure",
+     "Loperamide to control the residual diarrhea"
+    ],
+    "answer": 3,
+    "explanation": "The deciding clues are unchanged: bloody diarrhea without fever preceding a triad of microangiopathic hemolysis, thrombocytopenia, and acute kidney injury in a child, with Shiga toxin confirmed [[harrison-21: 161장 p.1268]]. Management is supportive — fluids, electrolytes, blood pressure control, and dialysis when indicated. Antibiotics may increase the risk of HUS and plasma exchange has shown no benefit [[harrison-21: 161장 p.1270]]; antimotility agents and prophylactic platelet transfusion are avoided [[?tarr-2005]].",
+    "of": "usmle-2026-0030",
+    "changed": "나이·성별(7세 남아)·노출원(체험 농장 방문)·제시 순서(핍뇨 먼저 알아챔)를 바꾸고, 혈성 설사 선행·분열적혈구·혈소판감소·급성 신손상·시가독소 확인은 유지 ⇒ 답은 그대로 지지치료",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "혈성 설사 뒤 창백·핍뇨 — 전형적 STEC-HUS 인가, 치료는 무엇인가",
+  "geo": {
+   "title": "혈성 설사 뒤 창백·핍뇨 — 전형적 STEC-HUS 인가, 치료는 무엇인가",
+   "w": 708,
+   "h": 752.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "혈성 설사 며칠 뒤 창백·기면·",
+      "소변 감소"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "tma",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "분열적혈구 용혈성 빈혈 +",
+      "혈소판감소 + 급성 신손상이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 146.0
+    },
+    {
+     "id": "labs",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "혈구·말초혈액",
+      "도말(분열적혈구)·LDH·",
+      "크레아티닌·전해질을",
+      "확인한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 293.0
+    },
+    {
+     "id": "enteritis",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "아직 HUS 아님 — 설사",
+      "지지치료, 항생제·지사제",
+      "피하고 2주간 혈구·신기능",
+      "감시(이 도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 355.0,
+     "y": 457.0
+    },
+    {
+     "id": "cause",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "설사가 선행했고 시가독소",
+      "생성균이 확인되었나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 457.0
+    },
+    {
+     "id": "ttp",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "설사 선행 없음·신경 증상",
+      "우세·ADAMTS13 현저 저하 —",
+      "TTP: 혈장교환(이 도식 범위",
+      "밖)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 621.0
+    },
+    {
+     "id": "ahus",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "설사 선행 없음·가족력·재발",
+      "— 비전형(보체) HUS:",
+      "에쿨리주맙 고려(이 도식",
+      "범위 밖)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 468.0,
+     "y": 621.0
+    },
+    {
+     "id": "support",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전형적 STEC-HUS — 수액·",
+      "전해질·혈압 관리, 적응 시",
+      "투석 · 항생제·지사제·",
+      "예방적 혈소판 수혈·",
+      "혈장교환은 하지 않는다"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 16.0,
+     "y": 621.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "tma",
+     "points": [
+      [
+       340.0,
+       80
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "tma",
+     "to": "cause",
+     "points": [
+      [
+       291.0,
+       227.0
+      ],
+      [
+       291.0,
+       237.0
+      ],
+      [
+       678,
+       237.0
+      ],
+      [
+       678,
+       411.0
+      ],
+      [
+       194.3,
+       411.0
+      ],
+      [
+       194.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "셋 다 있음"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 164.6,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "tma",
+     "to": "labs",
+     "points": [
+      [
+       340.0,
+       227.0
+      ],
+      [
+       340.0,
+       243.0
+      ],
+      [
+       340.0,
+       243.0
+      ],
+      [
+       340.0,
+       293.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "검사 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 317.6,
+      "y": 273.0
+     }
+    },
+    {
+     "from": "tma",
+     "to": "enteritis",
+     "points": [
+      [
+       389.0,
+       227.0
+      ],
+      [
+       389.0,
+       249.0
+      ],
+      [
+       692,
+       249.0
+      ],
+      [
+       692,
+       411.0
+      ],
+      [
+       420.3,
+       411.0
+      ],
+      [
+       420.3,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 405.3,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "labs",
+     "to": "cause",
+     "points": [
+      [
+       307.3,
+       391.0
+      ],
+      [
+       307.3,
+       401.0
+      ],
+      [
+       259.7,
+       401.0
+      ],
+      [
+       259.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "셋 다 있으면"
+      ],
+      "w": 70.5,
+      "h": 17,
+      "x": 224.4,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "labs",
+     "to": "enteritis",
+     "points": [
+      [
+       372.7,
+       391.0
+      ],
+      [
+       372.7,
+       407.0
+      ],
+      [
+       485.7,
+       407.0
+      ],
+      [
+       485.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없으면"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "support",
+     "points": [
+      [
+       178.0,
+       521.0
+      ],
+      [
+       178.0,
+       531.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       114.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예(소아·혈성 설사 선행)"
+      ],
+      "w": 133.6,
+      "h": 17,
+      "x": 47.2,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "ttp",
+     "points": [
+      [
+       227.0,
+       521.0
+      ],
+      [
+       227.0,
+       537.0
+      ],
+      [
+       340.0,
+       537.0
+      ],
+      [
+       340.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "성인·신경 증상·ADAMTS13 저하"
+      ],
+      "w": 167.3,
+      "h": 17,
+      "x": 256.4,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "ahus",
+     "points": [
+      [
+       276.0,
+       521.0
+      ],
+      [
+       276.0,
+       543.0
+      ],
+      [
+       566.0,
+       543.0
+      ],
+      [
+       566.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "설사 없음·가족력·재발"
+      ],
+      "w": 123.5,
+      "h": 17,
+      "x": 504.2,
+      "y": 601.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "혈성 설사 며칠 뒤 창백·기면·소변 감소",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "분열적혈구 용혈성 빈혈 + 혈소판감소 + 급성 신손상이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "tma",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "분열적혈구 용혈성 빈혈 + 혈소판감소 + 급성 신손상이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "셋 다 있음",
+      "to": 4,
+      "toText": "설사가 선행했고 시가독소 생성균이 확인되었나?"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "아직 HUS 아님 — 설사 지지치료, 항생제·지사제 피하고 2주간 혈구·신기능 감시(이 도식 범위 밖)"
+     },
+     {
+      "label": "검사 전",
+      "to": 3,
+      "toText": "혈구·말초혈액 도말(분열적혈구)·LDH·크레아티닌·전해질을 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "labs",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "혈구·말초혈액 도말(분열적혈구)·LDH·크레아티닌·전해질을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "셋 다 있으면",
+      "to": 4,
+      "toText": "설사가 선행했고 시가독소 생성균이 확인되었나?"
+     },
+     {
+      "label": "없으면",
+      "to": 5,
+      "toText": "아직 HUS 아님 — 설사 지지치료, 항생제·지사제 피하고 2주간 혈구·신기능 감시(이 도식 범위 밖)"
+     }
+    ]
+   },
+   {
+    "id": "cause",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "설사가 선행했고 시가독소 생성균이 확인되었나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예(소아·혈성 설사 선행)",
+      "to": 6,
+      "toText": "전형적 STEC-HUS — 수액·전해질·혈압 관리, 적응 시 투석 · 항생제·지사제·예방적 혈소판 수혈·혈장교환은 하지 않는다"
+     },
+     {
+      "label": "성인·신경 증상·ADAMTS13 저하",
+      "to": 7,
+      "toText": "설사 선행 없음·신경 증상 우세·ADAMTS13 현저 저하 — TTP: 혈장교환(이 도식 범위 밖)"
+     },
+     {
+      "label": "설사 없음·가족력·재발",
+      "to": 8,
+      "toText": "설사 선행 없음·가족력·재발 — 비전형(보체) HUS: 에쿨리주맙 고려(이 도식 범위 밖)"
+     }
+    ]
+   },
+   {
+    "id": "enteritis",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "아직 HUS 아님 — 설사 지지치료, 항생제·지사제 피하고 2주간 혈구·신기능 감시(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "support",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전형적 STEC-HUS — 수액·전해질·혈압 관리, 적응 시 투석 · 항생제·지사제·예방적 혈소판 수혈·혈장교환은 하지 않는다",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ttp",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "설사 선행 없음·신경 증상 우세·ADAMTS13 현저 저하 — TTP: 혈장교환(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ahus",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "설사 선행 없음·가족력·재발 — 비전형(보체) HUS: 에쿨리주맙 고려(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0030"
+  ],
+  "hasErrors": false
+ },
+ "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras": {
+  "id": "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras",
+  "title": "사구체 혈역학 — 양측 신동맥협착에서 ACE억제제가 GFR 을 떨어뜨리는 이유",
+  "objective": "수입·수출세동맥 저항이 사구체 모세혈관압과 GFR 을 정하는 원리로, 관류압이 낮아진 콩팥(양측 신동맥협착·단일 콩팥 협착)이 안지오텐신II 의 수출세동맥 수축에 기대어 GFR 을 지탱함을 설명하고, ACE억제제·ARB 가 이 보상을 없애 급성신손상을 일으키는 기전을 NSAID(수입세동맥 확장 차단) 기전과 구별한다",
+  "objectiveKind": "기전",
+  "condition": "양측 신동맥협착에서 ACE억제제 유발 급성신손상",
+  "topic": "Physiology",
+  "seeAlso": [
+   "Nephrology",
+   "Cardiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "f51f3060095ca9a8",
+  "summary": [
+   "GFR 은 사구체 모세혈관압에 달려 있고, 이 압력은 앞문(수입세동맥)과 뒷문(수출세동맥)의 저항이 정한다. 수입세동맥이 넓어지거나 수출세동맥이 좁아지면 모세혈관압이 올라 GFR 이 늘고, 반대면 준다.",
+   "신동맥이 좁아져 관류압이 떨어지면 레닌-안지오텐신계가 켜진다 [[harrison-21: 278장 p.2088]]. 안지오텐신II 는 수출세동맥을 상대적으로 더 수축시켜, 들어오는 압력이 낮아도 사구체 모세혈관압과 GFR 을 붙잡아 둔다 — 이때 GFR 은 안지오텐신II 에 「의존」한다.",
+   "ACE억제제·ARB 는 이 수출세동맥 수축을 없앤다. 협착 뒤의 콩팥은 여과압을 지탱할 수단을 잃어 GFR 이 급격히 떨어지고 크레아티닌이 오른다. 캡토프릴 신장스캔이 협착 쪽 관류 차이를 키워 보여 주는 것도 같은 원리다 [[harrison-21: 278장 p.2089]].",
+   "양측(또는 기능하는 단일 콩팥) 협착이어야 전체 GFR 이 크게 떨어진다. 한쪽 협착이면 반대쪽 콩팥이 메워 혈청 크레아티닌 변화가 작을 수 있다.",
+   "ACE억제제·ARB 투여 중 GFR 이 떨어지면 신동맥협착을 의심하는 단서이며, 혈관 재개통을 고려하는 임상 요인으로 꼽힌다 [[harrison-21: 278장 p.2090 표 278-2]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>사구체 여과율(GFR)</strong> 은 사구체 모세혈관압에서 보우만주머니압과 혈장 교질삼투압을 뺀 순여과압과 여과 계수로 정해진다. 이 중 급격히 변하는 것은 모세혈관압이며, 모세혈관압은 앞뒤 세동맥 저항으로 조절된다. 이 정리본의 목표는 <strong>양측 신동맥협착(또는 단일 기능 콩팥의 협착)에서 ACE억제제·ARB 가 급성신손상을 일으키는 기전</strong> 이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 콩팥은 관류압이 넓은 범위에서 변해도 수입세동맥 근원성 반응과 세뇨관-사구체 되먹임으로 GFR 을 일정하게 지킨다(자가조절). 신동맥이 심하게 좁아져 협착 뒤 관류압이 이 범위 아래로 떨어지면, 콩팥은 레닌을 분비해 안지오텐신II 를 만든다 <sup>[1 278장 p.2088]</sup>. 안지오텐신II 는 (1) 전신 혈관을 수축시켜 신관류압을 끌어올리고 (2) 수출세동맥을 수입세동맥보다 더 수축시켜 사구체 모세혈관압을 지탱한다. 이 두 번째 효과 때문에 협착 뒤 콩팥의 GFR 은 안지오텐신II 에 의존하게 된다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<p>ACE억제제는 안지오텐신II 생성을 막고 ARB 는 수용체를 막아, 수출세동맥이 풀린다. 협착 탓에 들어오는 압력은 낮은데 뒷문까지 열리면 사구체 모세혈관압이 떨어지고 GFR 이 급감한다 — 투약 며칠~1주 안의 크레아티닌 급상승. 이것은 혈역학적 변화이므로 소변검사는 대개 깨끗하고, 약을 끊으면 대개 되돌아간다. 한쪽 협착이면 건강한 반대쪽이 메워 크레아티닌 변화가 작다(세동맥 표). 같은 원리로 캡토프릴 신장스캔은 캡토프릴이 여과압을 떨어뜨려 좌우 관류 차이를 키운다 <sup>[1 278장 p.2089]</sup>.</p>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>NSAID 유발</strong>: 수입세동맥 쪽 — 프로스타글란딘 매개 확장이 막혀 들어오는 혈류가 준다. 탈수·심부전·간경변에서 잘 생긴다.</li>\n<li><strong>급성 세뇨관 괴사·간질신염</strong>: 원주·백혈구·세뇨관 손상 소견이 있다.</li>\n<li><strong>신경색·혈전</strong>: 옆구리 통증·발열·백혈구 증가·LDH 극단적 상승 <sup>[1 278장 p.2090]</sup>.</li>\n<li><strong>콜레스테롤 색전</strong>: 혈관조영·혈관 수술 뒤 1~14일, 그물울혈반·발가락 괴저·일시적 호산구증가 <sup>[1 278장 p.2089–2090]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈청 크레아티닌·칼륨을 ACE억제제·ARB 시작 전과 시작 뒤 짧은 간격으로 잰다. 신동맥협착 확인은 도플러 초음파(최고 수축기 속도 &gt;200 cm/s 면 의미 있는 협착), CT 혈관조영 등으로 한다 <sup>[1 278장 p.2089]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>ACE억제제·ARB 로 GFR 이 떨어지면 약을 끊거나 줄이고 다른 강압제로 바꾸며, 크레아티닌 회복을 확인한다. 동맥경화성 신동맥협착의 기본 치료는 레닌-안지오텐신계 차단을 포함한 약물 치료·금연·스타틴·아스피린이지만, 이 약으로 GFR 이 떨어지는 것은 혈관 재개통을 고려하는 요인이다 <sup>[1 278장 p.2089–2090]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<p>혈압이 조절되고 신기능이 안정적이면 약물 치료와 추적이 재개통과 비슷한 성적을 보였다. 반대로 신기능의 빠른·반복 감소, ACE억제제·ARB 중 GFR 감소, 설명되지 않는 반복 심부전은 재개통을 고려하는 요인이다 <sup>[1 278장 p.2089–2090 표 278-2]</sup>.</p>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 278장 p.2088–2090)</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "세동맥 톤과 GFR",
+    "columns": [
+     "변화",
+     "사구체 모세혈관압",
+     "GFR",
+     "예"
+    ],
+    "rows": [
+     [
+      "수입세동맥 확장",
+      "↑",
+      "↑",
+      "프로스타글란딘"
+     ],
+     [
+      "수입세동맥 수축",
+      "↓",
+      "↓",
+      "NSAID(확장 차단)·칼시뉴린억제제"
+     ],
+     [
+      "수출세동맥 수축",
+      "↑",
+      "↑(유지)",
+      "안지오텐신II"
+     ],
+     [
+      "수출세동맥 확장",
+      "↓",
+      "↓",
+      "ACE억제제·ARB"
+     ]
+    ],
+    "note": "표준 신장 생리. 임상 대조는 harrison-21: 278장 p.2088–2090"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "ACE억제제 AKI vs NSAID AKI — 어느 세동맥인가",
+    "point": "ACE억제제·ARB 는 수출세동맥의 안지오텐신II 수축을 없애 여과압을 낮춘다. NSAID 는 프로스타글란딘이 유지하던 수입세동맥 확장을 막아 들어오는 혈류를 줄인다. 두 약 모두 「세동맥 톤」을 바꿔 GFR 을 떨어뜨리지만 작용하는 문이 다르고, ACE억제제는 수입세동맥을 직접 수축시키지 않는다.",
+    "exception": "관류가 떨어진 콩팥(심부전·탈수·간경변)에서는 두 기전이 겹쳐 이뇨제+ACE억제제+NSAID 조합이 특히 위험하다.",
+    "cites": ""
+   },
+   {
+    "contrast": "크레아티닌 상승 = 약물의 직접 세뇨관 독성?",
+    "point": "혈역학적 GFR 감소는 구조 손상이 아니라 여과압의 변화이므로 약을 끊으면 대개 되돌아간다. 세뇨관 괴사처럼 원주·세뇨관 표지로 시작하는 손상과 구별한다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "ACE억제제가 협착 부위에 혈전을 만든다?",
+    "point": "급격한 크레아티닌 상승은 혈전·경색이 아니라 여과압 소실로 설명된다. 신경색은 옆구리 통증·발열·LDH 의 극단적 상승이 동반된다 <sup>[1 278장 p.2090]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 278장 p.2090]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 278: Renovascular Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 278장 p.2088–2090",
+    "checked": "본문 대조(드라이브 문서) — p.2088 관류압 감소 → 레닌-안지오텐신계 활성·나트륨 배설 감소·교감신경 활성, 초기 안지오텐신 의존 고혈압; p.2089 표 278-1 캡토프릴 신장스캔(캡토프릴에 의한 여과압 저하가 관류 차이를 키움); p.2090 표 278-2 혈관재개통 고려 요인에 「ACE억제제·ARB 치료 중 GFR 감소」, 신경색의 옆구리 통증·발열·LDH 상승. 수입·수출세동맥 기전 자체는 이 장에 서술되지 않아 표준 생리로 남긴다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "양측 신동맥협착 환자에서 GFR 이 안지오텐신II 에 의존하는 이유는?",
+    "a": "관류압이 낮아 수출세동맥을 안지오텐신II 로 수축시켜야만 사구체 모세혈관압을 유지할 수 있기 때문이다."
+   },
+   {
+    "q": "NSAID 로 인한 혈역학적 GFR 감소는 어느 세동맥의 변화인가?",
+    "a": "프로스타글란딘 매개 수입세동맥 확장이 차단된 수입세동맥 쪽 변화다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras#v1",
+    "context": "Clue changed so the answer changes — NSAID instead of ACE inhibitor",
+    "stem": "A 76-year-old woman with chronic heart failure on stable doses of furosemide and metoprolol takes ibuprofen 800 mg three times daily for 10 days for knee osteoarthritis. Her serum creatinine rises from 1.1 to 2.6 mg/dL. Urinalysis shows no casts, protein, or blood. Renal ultrasound shows normal-sized kidneys without hydronephrosis, and Doppler shows no renal artery stenosis. Which of the following best explains the decline in her glomerular filtration rate?",
+    "options": [
+     "Loss of angiotensin II-mediated efferent arteriolar constriction",
+     "Loss of prostaglandin-mediated afferent arteriolar dilation, reducing glomerular capillary pressure",
+     "Immune complex deposition in the glomerular basement membrane",
+     "Obstruction of the renal tubules by drug crystals",
+     "Acute thrombosis of the main renal artery"
+    ],
+    "answer": 2,
+    "explanation": "In a volume-contracted kidney (heart failure plus loop diuretic), prostaglandins dilate the afferent arteriole to preserve glomerular perfusion. NSAIDs block prostaglandin synthesis, the afferent arteriole narrows, glomerular capillary pressure falls, and GFR drops. No ACE inhibitor or ARB is involved and there is no renal artery stenosis, so the efferent (angiotensin II) mechanism of the original item does not apply. A bland urinalysis argues against glomerulonephritis and crystal nephropathy.",
+    "of": "usmle-2026-0039",
+    "changed": "Replaced lisinopril in bilateral renal artery stenosis with high-dose ibuprofen in a patient with volume-contracted heart failure (no ACE inhibitor started) → the GFR fall now comes from loss of prostaglandin-mediated afferent dilation, so the answer moves from 'loss of angiotensin II efferent constriction' to 'afferent arteriolar constriction'",
+    "flip": true
+   },
+   {
+    "id": "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras#v2",
+    "context": "Surface changed, answer the same — enalapril after flash pulmonary edema",
+    "stem": "A 69-year-old woman returns for follow-up 10 days after being started on enalapril. She was recently hospitalized for sudden pulmonary edema with a blood pressure of 188/104 mm Hg, and CT angiography during that admission showed 80% stenosis of both renal arteries. Her serum creatinine was 1.2 mg/dL before enalapril and is now 3.1 mg/dL; potassium is 4.8 mEq/L. Urinalysis is bland. Which of the following best explains the change in her renal function?",
+    "options": [
+     "Enalapril-induced acute interstitial nephritis",
+     "Direct afferent arteriolar constriction by enalapril",
+     "Removal of angiotensin II-mediated efferent arteriolar constriction that had maintained glomerular filtration pressure",
+     "Cholesterol emboli released from the stenotic segments",
+     "Enalapril-induced thrombosis of both renal arteries"
+    ],
+    "answer": 3,
+    "explanation": "The key facts are unchanged: bilateral renal artery stenosis lowers renal perfusion pressure, so GFR depends on angiotensin II constricting the efferent arteriole. An ACE inhibitor removes that support, glomerular capillary pressure falls, and creatinine rises sharply within days [[harrison-21: 278장 p.2088–2090]]. ACE inhibitors do not constrict the afferent arteriole; a bland urinalysis and the timing argue against interstitial nephritis, and atheroemboli typically follow an angiographic procedure rather than drug initiation.",
+    "of": "usmle-2026-0039",
+    "changed": "Changed age/sex (69-year-old woman), drug name (enalapril instead of lisinopril), presentation (routine follow-up after a flash pulmonary edema admission), and order of facts; kept bilateral renal artery stenosis + new ACE inhibitor + sharp creatinine rise with normal potassium → answer is still loss of angiotensin II efferent constriction",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "usmle-2026-0039"
+  ],
+  "hasErrors": false
+ },
  "cn.psy.ocd.ssri-trial-optimization": {
   "id": "cn.psy.ocd.ssri-trial-optimization",
   "title": "강박장애의 SSRI 치료 — 「시작 용량 4주 무반응」은 실패가 아니라 미완이다: 증량·8–12주 유지가 증강·교체보다 먼저다",
@@ -13863,10 +36418,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Neurology"
   ],
-  "version": 1,
+  "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "b45734d7fe9d6c5d",
+  "hash": "de8c05f6c280fa6b",
   "summary": [
    "강박장애 = 강박 사고(오염·화재 등)와 그 불안을 풀려는 강박 행동(씻기·확인)이 하루 1시간 넘게 기능을 해친다. 병식이 좋은 환자가 많고, 숨기므로 손등 갈라짐 같은 단서로 직접 묻는다.",
    "약물 1차는 SSRI(클로미프라민과 효과가 같고 부작용이 적다). 강박장애는 우울증보다 높은 용량·긴 시간이 필요하다 — 충분 시도 = 최대 내약 용량에서 최소 4–6주를 포함한 8–12주.",
@@ -14181,6 +36736,40 @@ window.MEDKOS_CONCEPTS = {
     "explanation": "증량을 막는 부작용이 있으면 견딜 수 있는 용량에서 충분 기간(8–12주)을 채워 판정하고, 무반응이면 다른 SSRI 로 교체한다. 클로미프라민은 부작용이 더 크고, 벤조디아제핀은 강박 증상에 효과가 없으며, 뇌심부자극은 여러 시도 뒤 심한 불응의 선택이다.",
     "of": "",
     "changed": "",
+    "flip": false
+   },
+   {
+    "id": "cn.psy.ocd.ssri-trial-optimization#v3",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 충분 시도를 마친 부분 반응",
+    "stem": "24세 여자가 집에 불이 날 것 같다는 생각 때문에 가스밸브와 문을 반복해서 확인하고 손을 하루 몇 시간씩 씻는 증상으로 치료받고 있다. 본인도 이 생각이 지나치다는 것을 안다. 에스시탈로프람을 20 mg 까지 올려 12주째 빠짐없이 먹고 있고 노출·반응방지 치료도 매주 받고 있다. 확인과 손 씻기에 쓰는 시간은 절반쯤 줄었지만 여전히 하루 2시간 가까이 걸려 출근이 늦는다. 부작용은 없고 환청·망상은 없으며 기분은 우울하지 않다. 심전도는 QTc 415 ms 이다. 다음 처치로 가장 적절한 것은?",
+    "options": [
+     "알프라졸람을 추가한다",
+     "저용량 리스페리돈을 추가한다",
+     "부프로피온으로 바꾼다",
+     "같은 용량으로 4주 더 유지한다",
+     "약물을 중단하고 노출·반응방지 치료만 한다"
+    ],
+    "answer": 2,
+    "explanation": "최대 내약 용량에서 8–12주를 채우고 노출·반응방지 치료까지 병행했으므로 충분 시도를 마쳤고, 결과는 부분 반응이다. 이때가 저용량 항정신병약(리스페리돈·아리피프라졸) 증강을 고려할 자리다 [[?apa-ocd-2007]]. 원래 문항은 시작 용량 4주라 아직 시도 중이어서 증량이 답이었다 — 같은 환자라도 복용 용량·기간이 답을 가른다. 벤조디아제핀·부프로피온은 강박 증상에 효과가 없고, 충분 시도를 마친 뒤 같은 용량을 더 끄는 것은 판단을 미룰 뿐이다.",
+    "of": "kmle-2026-1086",
+    "changed": "복용 기록을 「시작 용량 4주·무반응」에서 「최대 용량 12주 + 노출·반응방지 병행 뒤 절반만 호전」으로 바꿈 → 충분 시도 뒤 부분 반응이므로 답이 「증량·유지」에서 「저용량 항정신병약 증강」으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.psy.ocd.ssri-trial-optimization#v4",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 오염 강박의 남자",
+    "stem": "31세 남자가 문손잡이·엘리베이터 버튼을 만질 때마다 병균이 옮는다는 생각이 떠올라 손을 씻고, 씻을 때마다 숫자를 50까지 세지 않으면 불안해 하루 3시간 이상을 쓴다. 자신도 지나친 걱정임을 안다. 5주 전 플루옥세틴 20 mg 을 시작해 매일 먹고 있고 부작용은 없지만 증상은 거의 그대로다. 환청·망상은 없고 기분·수면은 괜찮다. TSH 와 심전도는 정상이다. 다음 처치로 가장 적절한 것은?",
+    "options": [
+     "아리피프라졸을 추가한다",
+     "클로미프라민으로 바꾼다",
+     "플루옥세틴을 증량해 계속 쓰고 노출·반응방지 치료를 병행한다",
+     "로라제팜을 추가한다",
+     "부프로피온으로 바꾼다"
+    ],
+    "answer": 3,
+    "explanation": "오염 강박 사고와 씻기·세기 강박 행동이 하루 수시간을 차지하는 병식 좋은 강박장애다. 약 이름과 기간이 달라도 결정 단서는 같다 — 시작 용량·5주·부작용 없음은 충분 시도(최대 내약 용량에서 4–6주를 포함한 8–12주)에 이르지 못했다. 그러므로 증량해 기간을 채우고 노출·반응방지 치료를 더한다 [[?apa-ocd-2007]]. 항정신병약 증강·클로미프라민 교체는 충분 시도 뒤 불응·부분 반응일 때이고, 벤조디아제핀·부프로피온은 강박 증상에 효과가 없다.",
+    "of": "kmle-2026-1086",
+    "changed": "성별·나이(31세 남자)·강박 내용(오염·세기)·약 이름(플루옥세틴 20 mg 5주)을 바꾸고 「시작 용량·짧은 기간·부작용 없음·병식 좋음」은 그대로 → 답은 여전히 증량해 충분 기간 유지",
     "flip": false
    }
   ],
@@ -14829,6 +37418,11420 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1086"
+  ],
+  "hasErrors": false
+ },
+ "cn.psy.ptsd.duration-vs-acute-stress": {
+  "id": "cn.psy.ptsd.duration-vs-acute-stress",
+  "title": "외상후스트레스장애의 진단 — 같은 증상군을 「한 달」이라는 시계로 급성스트레스장애와 가른다",
+  "objective": "외상 사건 뒤의 재경험·회피·부정적 인지·과각성을 알아보고, 증상 지속 기간(1개월 초과)과 기능 저하로 외상후스트레스장애를 진단하며, 급성스트레스장애(외상 뒤 한 달 이내)·적응장애·공황장애·범불안장애와 가른다",
+  "objectiveKind": "진단",
+  "condition": "외상후스트레스장애",
+  "topic": "Psychiatry",
+  "seeAlso": [],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "b187700e1a6b6c8a",
+  "summary": [
+   "외상후스트레스장애 = 실제 또는 위협된 죽음·심한 부상·성폭력에 노출된 뒤 네 증상군(침투·회피·인지·기분의 부정적 변화·각성 변화)이 1개월을 넘게 지속되고 기능을 해친다.",
+   "급성스트레스장애는 같은 종류의 반응이 외상 직후에 나타나 한 달 안에 머무는 것이다. 증상이 아니라 시계가 둘을 가른다.",
+   "기전은 공포 기억의 과잉 부호화 — 청반의 노르에피네프린 과다 분비가 해마·편도체에서 공포 기억을 굳히고, 단서에 교감신경 반응이 커진다.",
+   "적응장애는 외상 기준에 못 미치는 스트레스 뒤의 비특이 증상, 공황장애는 예기치 못한 발작, 범불안장애는 광범위한 만성 걱정 — 재경험이 없다.",
+   "치료 1차는 외상 초점 인지행동치료·지속 노출 치료, 약물은 SSRI(파록세틴·설트랄린). 외상 직후 벤조디아제핀·SSRI 와 일괄 디브리핑은 권하지 않는다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>외상후스트레스장애는 실제 또는 위협된 죽음, 심한 부상, 성폭력에 노출된 뒤 침투(재경험)·회피·인지와 기분의 부정적 변화·각성과 반응성 변화가 1개월을 넘게 지속되고 기능을 해치는 상태다 <sup>[1 452장 p.3545]</sup>. 반응이 외상 직후에 나타나면 급성스트레스장애, 늦게 오고 재발할 수 있으면 외상후스트레스장애다 <sup>[1 452장 p.3545]</sup>. 이 정리본의 목표는 두 진단을 <strong>기간</strong>으로 가르는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 위협은 교감신경·시상하부–뇌하수체–부신 축을 켜고, 해마는 「그때 그곳」이라는 맥락을 붙여 기억을 저장하며 편도체의 공포 반응은 안전해지면 꺼진다. 외상후스트레스장애에서는 스트레스에 대해 청반에서 노르에피네프린이 과하게 나오고 해마·편도체의 노르아드레날린 활동이 늘어 공포 기억이 과잉 부호화된다고 생각된다. 사건 단서에 대한 교감신경 반응은 커지지만 뇌하수체–부신 반응은 오히려 둔하다. 위협 탐지(섬엽 과활성), 실행 기능, 정서 조절, 맥락 학습의 변화도 보고됐다 <sup>[1 452장 p.3546]</sup>. 쌍둥이 연구는 유전 영향이 크다고 보여 준다 <sup>[1 452장 p.3546]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>침투</strong>: 맥락 없이 떠오르는 기억, 악몽, 플래시백 — 공포 기억이 「지금 여기」로 재생된다 <sup>[1 452장 p.3545]</sup>.</li>\n<li><strong>회피</strong>: 단서가 고통을 부르므로 피한다. 피할수록 공포가 꺼질 기회가 없어 유지된다 <sup>[1 452장 p.3546]</sup>.</li>\n<li><strong>과각성</strong>: 경계·과장된 놀람·수면 곤란 — 커진 노르아드레날린 반응 <sup>[1 452장 p.3546]</sup>.</li>\n<li><strong>해리·정서 둔마</strong>: 이인감, 사건 일부를 기억 못 함 — 두 스트레스장애 모두에 있다 <sup>[1 452장 p.3545]</sup>.</li>\n<li><strong>동반</strong>: 불안·기분장애·물질 사용(특히 알코올) 위험이 높다. 평생 유병률 5–10 %, 여성에 많다 <sup>[1 452장 p.3546]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>재경험이 보이면 외상 관련 진단(급성스트레스장애·외상후스트레스장애)만 남고, 그다음은 기간이다. 적응장애는 외상 기준·증상군을 채우지 않는 스트레스 반응, 공황장애는 예기치 못한 발작, 범불안장애는 여러 일에 대한 만성 걱정으로 재경험이 없다. 물질·의학적 상태로 설명되면 진단하지 않는다(기준 H) <sup>[1 452장 p.3545]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 면담으로 한다. 사건의 성격(기준 A), 증상 시작 시점과 <strong>지속 기간</strong>, 네 증상군, 기능 저하, 음주·약물을 차례로 묻는다. 선별에는 4문항 PC-PTSD 가 있다 <sup>[1 452장 p.3546]</sup>. 증상 시작이 늦었다고 기간을 사건 날짜로 세지 않는다 — 증상이 얼마나 지속됐는가가 기준이다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1차.</strong> 회피를 단계적으로 허무는 외상 초점 인지행동치료·처리 치료·지속 노출 치료가 가장 효과적이다 <sup>[1 452장 p.3546]</sup>.\n<strong>약물.</strong> SSRI(파록세틴·설트랄린이 FDA 승인), 벤라팍신·플루옥세틴·토피라메이트가 불안·침투·회피를 줄인다. 불면에는 저용량 트라조돈·미르타자핀을 흔히 쓴다 <sup>[1 452장 p.3546]</sup>.\n<strong>하지 않는 것.</strong> 외상 직후 벤조디아제핀·SSRI 투여, 일괄 디브리핑(예방 효과 없고 악화 가능) <sup>[1 452장 p.3546]</sup>.\n<strong>재평가.</strong> 동반 우울·알코올 사용을 함께 추적하고, 회피가 줄어드는지를 치료 반응의 지표로 본다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「외상 뒤 증상」 문항은 먼저 증상군, 다음 기간이다 — 1개월이 경계다.</li>\n<li>급성 스트레스 반응은 대개 저절로 가라앉는다 <sup>[1 452장 p.3546]</sup>.</li>\n<li>급성스트레스장애의 3일 하한은 원문 미대조(DSM-5-TR)다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 외상 직후의 벤조디아제핀</strong> — 시험 기준: 외상 직후 벤조디아제핀은 외상후스트레스장애 예방에 쓰지 않는다 <sup>[1 452장 p.3546]</sup> / 다른 기준: 같은 쪽에서 해리슨은 급성 스트레스 반응의 치료가 「대개 단기 벤조디아제핀과 지지·표현 정신치료」라고도 적는다 <sup>[1 452장 p.3546]</sup> / 왜 다른가: 앞의 것은 급성 증상(불면·초조) 조절, 뒤의 것은 외상후스트레스장애 예방 목적의 투여를 말한다 — 문맥이 다르다 / 시험에서는: KMLE·USMLE 모두 「외상후스트레스장애 예방·치료 약」으로 벤조디아제핀을 고르지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 회피가 병을 유지하는가",
+    "deep": true,
+    "html": "<p>공포 기억은 지워지지 않고, 안전한 상황에서 단서를 반복해 겪으며 「이제는 괜찮다」는 새 기억(소거 학습)이 덧씌워질 때 약해진다. 회피는 단서와의 만남을 막아 이 새 학습을 막는다. 지속 노출 치료가 단서를 단계적으로 마주하게 하는 이유, 그리고 해리슨이 회피를 허무는 치료를 가장 효과적이라고 꼽는 이유 <sup>[1 452장 p.3546]</sup>가 여기에 있다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "외상 뒤 시간축 — 같은 증상, 다른 이름",
+    "columns": [
+     "외상 뒤 시점",
+     "증상군 충족",
+     "진단"
+    ],
+    "rows": [
+     [
+      "처음 며칠",
+      "있음",
+      "급성 스트레스 반응(대개 저절로 가라앉음) <sup>[1 452장 p.3546]</sup>"
+     ],
+     [
+      "3일~1개월",
+      "있음",
+      "급성스트레스장애 <sup>[2†]</sup>"
+     ],
+     [
+      "1개월 초과",
+      "있음 + 기능 저하",
+      "외상후스트레스장애 <sup>[1 452장 p.3545]</sup>"
+     ],
+     [
+      "늦게 시작",
+      "있음 + 1개월 초과",
+      "외상후스트레스장애(늦게 오고 재발할 수 있음) <sup>[1 452장 p.3545]</sup>"
+     ]
+    ],
+    "note": "시점은 외상 사건이 아니라 증상 지속 기간으로 센다 — 증상 시작이 늦어도 1개월을 넘겨 지속되면 외상후스트레스장애다."
+   },
+   {
+    "title": "보기에 나오는 불안 관련 진단 — 무엇이 없으면 지우나",
+    "columns": [
+     "진단",
+     "핵심",
+     "외상후스트레스장애와 다른 점"
+    ],
+    "rows": [
+     [
+      "급성스트레스장애",
+      "외상 직후 같은 증상군",
+      "1개월 안에 머문다"
+     ],
+     [
+      "적응장애",
+      "스트레스 뒤 비특이 정서·행동 증상",
+      "외상 기준 사건·재경험 기준을 채우지 않는다"
+     ],
+     [
+      "공황장애",
+      "예기치 못한 공황발작 반복",
+      "특정 외상 단서와 묶이지 않는다"
+     ],
+     [
+      "범불안장애",
+      "여러 일에 대한 만성 걱정",
+      "재경험·회피가 없다"
+     ]
+    ],
+    "note": "재경험(악몽·플래시백·단서 반응)이 보이면 외상 관련 두 진단만 남고, 그다음은 시계다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "외상후스트레스장애 vs 급성스트레스장애 — 「외상 뒤 재경험·회피·과각성」",
+    "point": "두 진단은 같은 종류의 증상군(침투·회피·부정적 인지·과각성)을 공유한다. 반응이 외상 직후에 나타나 머물면 급성스트레스장애, 늦게 오거나 재발하며 증상이 1개월을 넘겨 지속되면 외상후스트레스장애다 <sup>[1 452장 p.3545]</sup>. 문항에서 「3개월 전 사고」「한 달 이상 지속」은 증상의 종류가 아니라 기간의 단서다.",
+    "exception": "같은 증상이 외상 뒤 3일 이상 1개월 이내에만 있으면 급성스트레스장애다 <sup>[2†]</sup>. 이 시기의 급성스트레스장애는 이후 외상후스트레스장애 발생과 강하게 연관된다 <sup>[1 452장 p.3546]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "외상후스트레스장애 vs 적응장애 — 「스트레스 뒤 불안·우울」",
+    "point": "적응장애는 외상 기준(A: 죽음·심한 부상·성폭력)에 이르지 않는 스트레스나, 이르더라도 침투·회피 증상군을 채우지 않는 반응이다. 교통사고라도 재경험·회피·과각성이 기준을 채우면 적응장애가 아니다 <sup>[1 452장 p.3545]</sup>.",
+    "exception": "이혼·실직 같은 비외상 스트레스 뒤의 우울·불안이면 적응장애 쪽이다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "증상 시작이 늦어도(몇 달 뒤) 기간 기준은 같다 — 1개월 초과 지속이면 외상후스트레스장애다 <sup>[1 452장 p.3545]</sup>.",
+   "불안·기분장애·물질 사용(특히 알코올)이 흔히 함께 온다 — 동반 진단을 따로 확인한다 <sup>[1 452장 p.3546]</sup>.",
+   "선별에는 4문항 PC-PTSD 가 있다 <sup>[1 452장 p.3546]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ptsd-dsm5",
+    "name": "외상후스트레스장애 진단 기준(DSM-5, 해리슨 표 452-6)",
+    "kind": "진단 기준",
+    "population": "외상 사건 뒤 증상이 있는 성인",
+    "statement": "A 실제·위협된 죽음, 심한 부상, 성폭력에 직접 경험·목격·가까운 사람의 사건을 앎·반복 노출로 노출. B 침투 증상(원치 않는 기억, 악몽, 플래시백 같은 해리 반응, 단서에 대한 심리적 고통·생리 반응) 1개 이상. C 관련 자극의 지속적 회피. D 인지·기분의 부정적 변화. E 각성·반응성 변화(과각성, 과장된 놀람 반응, 집중·수면 곤란 등). F 증상(B–E) 지속 1개월 초과. G 임상적으로 의미 있는 고통·기능 저하. H 물질·다른 의학적 상태로 설명되지 않음 [[harrison-21: 452장 p.3545]]",
+    "exceptions": "반응은 외상 직후에 올 수도(급성스트레스장애), 늦게 오고 재발할 수도(외상후스트레스장애) 있다 [[harrison-21: 452장 p.3545]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "asd-window",
+    "name": "급성스트레스장애의 기간(DSM-5)",
+    "kind": "진단 기준",
+    "population": "외상 사건 직후의 성인",
+    "statement": "외상 뒤 3일에서 1개월 사이에 증상이 있을 때 급성스트레스장애로 진단한다 — 1개월을 넘기면 외상후스트레스장애로 본다 [[?dsm5tr-2022]]",
+    "exceptions": "해리슨은 급성스트레스장애를 「외상 직후의 반응」으로만 적고 3일이라는 하한은 제시하지 않는다 [[harrison-21: 452장 p.3545]]",
+    "source": "dsm5tr-2022",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ptsd-treatment",
+    "name": "치료(해리슨)",
+    "kind": "치료 권고",
+    "population": "외상후스트레스장애",
+    "statement": "SSRI(파록세틴·설트랄린이 미국 FDA 승인), 벤라팍신, 플루옥세틴, 토피라메이트가 불안·침투·회피를 줄인다. 회피를 단계적으로 허무는 외상 초점 인지행동치료·처리 치료·지속 노출 치료가 가장 효과적이다. 외상 직후에는 벤조디아제핀·SSRI 를 주지 않고, 외상 뒤 디브리핑은 예방 효과가 없으며 증상을 악화시킬 수 있다 [[harrison-21: 452장 p.3546]]",
+    "exceptions": "급성 스트레스 반응은 대개 저절로 가라앉고, 치료는 보통 단기 벤조디아제핀과 지지·표현 정신치료다 [[harrison-21: 452장 p.3546]] — 같은 쪽의 「외상 직후 벤조디아제핀 금지」와 긴장이 있다(시험 쟁점 Z1)",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 452: Psychiatric Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 452장(Reus VI), 인쇄쪽 3545–3546",
+    "checked": "드라이브 장 문서로 본문 대조. p.3545 스트레스장애 임상(외상 직후 반응 = 급성스트레스장애, 늦게 오고 재발 = PTSD, 이인감·정서 반응 소실)과 표 452-6 PTSD 진단 기준 A–H(F 기간 1개월 초과), p.3546 재경험·회피·과각성, 불안·기분·물질 동반, 평생 유병률 5–10 %·여성에 많음, PC-PTSD 선별, 위험 인자, 병태생리(청반 노르에피네프린, 해마·편도체, 뇌하수체–부신 반응 둔화), 치료(급성 반응 단기 벤조디아제핀·지지치료, SSRI 파록세틴·설트랄린 승인, 벤라팍신·플루옥세틴·토피라메이트, 외상 직후 벤조디아제핀·SSRI 금지, 외상 초점 인지행동·지속 노출, 디브리핑 무효)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "dsm5tr-2022",
+    "org": "American Psychiatric Association",
+    "title": "Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR)",
+    "kind": "guideline",
+    "citation": "American Psychiatric Association. DSM-5-TR. Washington, DC: APA Publishing; 2022 — Acute Stress Disorder",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 급성스트레스장애의 「외상 뒤 3일~1개월」 기간은 이 컨테이너에서 원문을 열지 못해 대조하지 못했다. PTSD 기준 F(1개월 초과)는 해리슨 표 452-6 으로 대조했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.psychiatry.org/psychiatrists/practice/dsm"
+   }
+  ],
+  "checks": [
+   {
+    "q": "외상 뒤 재경험·회피·과각성이 3개월째 지속되고 기능이 떨어졌다. 진단은?",
+    "a": "외상후스트레스장애 — 증상 지속이 1개월을 넘는다."
+   },
+   {
+    "q": "같은 증상이 외상 2주째에 있다면?",
+    "a": "급성스트레스장애(외상 뒤 3일~1개월)."
+   },
+   {
+    "q": "외상후스트레스장애의 네 증상군은?",
+    "a": "침투(재경험), 회피, 인지·기분의 부정적 변화, 각성·반응성 변화."
+   },
+   {
+    "q": "외상 직후 예방 목적으로 하지 않는 것 두 가지는?",
+    "a": "벤조디아제핀·SSRI 투여와 일괄 디브리핑(예방 효과 없고 악화 가능)."
+   },
+   {
+    "q": "외상후스트레스장애의 1차 치료는?",
+    "a": "외상 초점 인지행동치료·지속 노출 치료, 약물은 SSRI(파록세틴·설트랄린)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.psy.ptsd.duration-vs-acute-stress#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 외상 뒤 열흘",
+    "stem": "31세 남자가 10일 전 공사 현장에서 비계가 무너져 옆 동료가 크게 다치는 것을 바로 옆에서 겪었다. 그 뒤로 무너지는 장면이 불쑥 떠오르고 매일 밤 그 꿈을 꾸다 깨며, 현장 근처로 가는 길을 피하고, 작은 소리에도 깜짝 놀라 잠을 거의 못 잔다. 멍하고 현실감이 없다고 한다. 이 때문에 출근하지 못하고 있다. 음주·약물 복용은 없고 신체 진찰은 정상이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "외상후스트레스장애",
+     "급성스트레스장애",
+     "적응장애",
+     "공황장애",
+     "범불안장애"
+    ],
+    "answer": 2,
+    "explanation": "외상 사건(동료의 심한 부상 목격) 뒤 침투·회피·과각성·해리 증상이 있지만 아직 10일째다. 외상 뒤 3일~1개월에 머무는 반응은 급성스트레스장애이고, 1개월을 넘겨 지속되어야 외상후스트레스장애다. 원래 문항은 3개월째 지속되어 외상후스트레스장애였다 — 증상이 같아도 기간이 답을 바꾼다.",
+    "of": "kmle-2026-0085",
+    "changed": "외상 뒤 경과를 「3개월 전 사고, 한 달 이상 지속」에서 「10일 전 사고, 그 뒤 계속」으로 바꿈 → 증상 지속이 1개월 이내이므로 답이 외상후스트레스장애에서 급성스트레스장애로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.psy.ptsd.duration-vs-acute-stress#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 수면 문제로 온 소방관",
+    "stem": "46세 남자 소방관이 잠을 못 자고 술이 늘었다며 아내와 함께 왔다. 5개월 전 화재 현장에서 함께 들어간 동료가 숨지는 것을 보았다. 그 뒤로 사이렌 소리만 들어도 가슴이 뛰고 땀이 나며 그 장면이 눈앞에 되살아난다. 출동 대기를 피하려고 휴가를 반복해서 냈고, 가족과도 거리를 두며 「내가 더 빨리 움직였어야 했다」는 생각을 떨치지 못한다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "적응장애",
+     "범불안장애",
+     "급성스트레스장애",
+     "외상후스트레스장애",
+     "공황장애"
+    ],
+    "answer": 4,
+    "explanation": "외상 사건(동료 사망 목격) 뒤 침투(플래시백·단서에 대한 생리 반응), 회피(출동 회피), 부정적 인지(자책·거리감)가 5개월째 지속되고 직업 기능이 떨어졌다. 음주 증가는 흔한 동반 문제다. 1개월을 넘겼으므로 외상후스트레스장애다 — 환자와 사건의 종류가 달라도 결정 단서(증상군 + 기간)는 같다.",
+    "of": "kmle-2026-0085",
+    "changed": "환자(27세 여자 → 46세 남자 소방관), 외상의 종류(교통사고 → 화재 현장에서 동료 사망 목격), 제시 순서(수면·음주 문제로 내원 뒤 외상력)를 바꾸고 「외상 뒤 1개월을 훨씬 넘긴 재경험·회피·과각성 + 기능 저하」는 그대로 → 답은 여전히 외상후스트레스장애",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "외상 뒤 불안 — 진단을 가르는 순서",
+  "geo": {
+   "title": "외상 뒤 불안 — 진단을 가르는 순서",
+   "w": 454,
+   "h": 797.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "스트레스 사건 뒤 불안·수면",
+      "곤란·기능 저하"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "crit_a",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "사건이 실제·위협된 죽음,",
+      "심한 부상, 성폭력 노출인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "adj",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "적응장애 등 다른 진단 쪽"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 276.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "증상 시작 시점과 지속 기간,",
+      "침투·회피·부정적 인지·",
+      "과각성 각 증상군, 물질·",
+      "의학적 원인을 묻는다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 276.0
+    },
+    {
+     "id": "sx",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "침투·회피·부정적 인지·",
+      "과각성 증상군을 채우는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "공황장애·범불안장애·",
+      "우울장애 등 — 재경험 없음"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "dur",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "증상 지속이 1개월을 넘는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "asd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "급성스트레스장애(외상 뒤",
+      "3일~1개월)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 700.0
+    },
+    {
+     "id": "ptsd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "외상후스트레스장애 — 외상",
+      "초점 인지행동치료·지속",
+      "노출 ± SSRI"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 700.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "crit_a",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "crit_a",
+     "to": "adj",
+     "points": [
+      [
+       194.3,
+       210.0
+      ],
+      [
+       194.3,
+       220.0
+      ],
+      [
+       114.0,
+       220.0
+      ],
+      [
+       114.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "crit_a",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       210.0
+      ],
+      [
+       259.7,
+       226.0
+      ],
+      [
+       340.0,
+       226.0
+      ],
+      [
+       340.0,
+       276.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 256.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "sx",
+     "points": [
+      [
+       340.0,
+       374.0
+      ],
+      [
+       340.0,
+       384.0
+      ],
+      [
+       227.0,
+       384.0
+      ],
+      [
+       227.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "문진 완료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "sx",
+     "to": "other",
+     "points": [
+      [
+       194.3,
+       504.0
+      ],
+      [
+       194.3,
+       514.0
+      ],
+      [
+       114.0,
+       514.0
+      ],
+      [
+       114.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "sx",
+     "to": "dur",
+     "points": [
+      [
+       259.7,
+       504.0
+      ],
+      [
+       259.7,
+       520.0
+      ],
+      [
+       340.0,
+       520.0
+      ],
+      [
+       340.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "dur",
+     "to": "asd",
+     "points": [
+      [
+       307.3,
+       617.0
+      ],
+      [
+       307.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "1개월 이내"
+      ],
+      "w": 62.1,
+      "h": 17,
+      "x": 82.9,
+      "y": 680.0
+     }
+    },
+    {
+     "from": "dur",
+     "to": "ptsd",
+     "points": [
+      [
+       372.7,
+       617.0
+      ],
+      [
+       372.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "1개월 초과 + 기능 저하"
+      ],
+      "w": 123.7,
+      "h": 17,
+      "x": 278.1,
+      "y": 680.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "스트레스 사건 뒤 불안·수면 곤란·기능 저하",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "사건이 실제·위협된 죽음, 심한 부상, 성폭력 노출인가?"
+     }
+    ]
+   },
+   {
+    "id": "crit_a",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "사건이 실제·위협된 죽음, 심한 부상, 성폭력 노출인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니다",
+      "to": 3,
+      "toText": "적응장애 등 다른 진단 쪽"
+     },
+     {
+      "label": "그렇다",
+      "to": 4,
+      "toText": "증상 시작 시점과 지속 기간, 침투·회피·부정적 인지·과각성 각 증상군, 물질·의학적 원인을 묻는다"
+     }
+    ]
+   },
+   {
+    "id": "adj",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "적응장애 등 다른 진단 쪽",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "증상 시작 시점과 지속 기간, 침투·회피·부정적 인지·과각성 각 증상군, 물질·의학적 원인을 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "문진 완료",
+      "to": 5,
+      "toText": "침투·회피·부정적 인지·과각성 증상군을 채우는가?"
+     }
+    ]
+   },
+   {
+    "id": "sx",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "침투·회피·부정적 인지·과각성 증상군을 채우는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니다",
+      "to": 6,
+      "toText": "공황장애·범불안장애·우울장애 등 — 재경험 없음"
+     },
+     {
+      "label": "그렇다",
+      "to": 7,
+      "toText": "증상 지속이 1개월을 넘는가?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "공황장애·범불안장애·우울장애 등 — 재경험 없음",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "dur",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "증상 지속이 1개월을 넘는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "1개월 이내",
+      "to": 8,
+      "toText": "급성스트레스장애(외상 뒤 3일~1개월)"
+     },
+     {
+      "label": "1개월 초과 + 기능 저하",
+      "to": 9,
+      "toText": "외상후스트레스장애 — 외상 초점 인지행동치료·지속 노출 ± SSRI"
+     }
+    ]
+   },
+   {
+    "id": "asd",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "급성스트레스장애(외상 뒤 3일~1개월)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ptsd",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "외상후스트레스장애 — 외상 초점 인지행동치료·지속 노출 ± SSRI",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0085"
+  ],
+  "hasErrors": false
+ },
+ "cn.psy.serotonin-syndrome.cyproheptadine-refractory": {
+  "id": "cn.psy.serotonin-syndrome.cyproheptadine-refractory",
+  "title": "세로토닌증후군 — 클로누스·발한·설사로 알아보고, 중단·벤조디아제핀으로 안 잡히면 사이프로헵타딘",
+  "objective": "세로토닌 약물 병용(SSRI + 트라마돌 등) 뒤 하루 안에 온 정신 변화·자율신경 항진·신경근 과활성(유발 클로누스·반사 항진)으로 세로토닌증후군을 알아보고, 유발 약 중단·벤조디아제핀·냉각으로 조절되지 않을 때 5-HT2A 길항제 사이프로헵타딘을 고르며, 신경이완제악성증후군의 약(브로모크립틴·단트롤렌)·항정신병약·플루마제닐이 왜 답이 아닌지 가른다",
+  "objectiveKind": "치료",
+  "condition": "세로토닌증후군(중등도, 초기 처치 불응)",
+  "topic": "Psychiatry",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "6ce499f2d471b32a",
+  "summary": [
+   "세로토닌증후군 = 세로토닌 수용체(주로 5-HT1A·5-HT2)의 과자극. 세 축: 정신 변화(초조·혼동) + 자율신경 항진(고열·빈맥·고혈압·발한·설사·산동) + 신경근 과활성(떨림·클로누스·반사 항진·강직).",
+   "원인은 세로토닌 약의 겹침 — SSRI·MAO 억제제·삼환계 + 트라마돌·메페리딘·덱스트로메토르판·트립탄·암페타민 등. 대개 새 약을 더하거나 올린 뒤 하루 안에 온다.",
+   "처치 순서: 유발 약 모두 중단 → 벤조디아제핀(초조·자극 징후) + 냉각·수액 → 불응하면 세로토닌 수용체 길항제 사이프로헵타딘 → 고열이 심하면 진정·근마비·삽관으로 근육 열 생성을 끊는다.",
+   "신경이완제악성증후군은 항정신병약(도파민 차단) 뒤 수일에 걸쳐 오고 납관 강직·반사 저하가 특징 — 그 약(브로모크립틴 등)을 세로토닌증후군에 쓰면 안 된다(브로모크립틴 자체에 세로토닌 작용이 있다).",
+   "할로페리돌 같은 항정신병약은 초조 조절용으로 쓰지 않고, 플루마제닐은 필요한 벤조디아제핀 효과를 되돌린다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>세로토닌증후군은 중추·말초 세로토닌 수용체(주로 5-HT1A·5-HT2)가 과하게 자극되어 정신 변화·자율신경 항진·신경근 과활성이 함께 오는 약물 독성이다 <sup>[1 459장 p.3595]</sup>. 대개 세로토닌 약을 겹쳐 쓰거나 올린 뒤 빠르게 온다. 이 정리본의 목표는 알아본 뒤, <strong>초기 처치에 반응하지 않을 때 무엇을 더하는가</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 세로토닌은 시냅스로 나온 뒤 재흡수 운반체로 거둬들여지고 MAO 로 분해된다. SSRI 는 재흡수를 막고, 트라마돌·메페리딘·덱스트로메토르판은 재흡수 억제나 방출 촉진으로, 암페타민·코카인은 방출로, 트립탄은 수용체 직접 자극으로, MAO 억제제는 분해 차단으로 세로토닌 작용을 늘린다 <sup>[1 459장 p.3595]</sup>. 두 경로가 겹치면 시냅스 세로토닌이 급증한다 — SSRI 와 MAO 억제제의 병용이 절대 금기인 이유다 <sup>[1 452장 p.3543]</sup>. 뇌간 5-HT1A 과자극이 간대성 근경련·초조·복부 경련·고열·고혈압을 일으키고 사망할 수도 있다 <sup>[1 452장 p.3549]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>신경근 과활성</strong>: 반사 항진·간대성 근경련(클로누스)·떨림·강직 <sup>[1 459장 p.3595]</sup>. 하지 우세의 유발 클로누스가 가장 쓸모 있는 단서다 <sup>[3†]</sup>.</li>\n<li><strong>자율신경 항진</strong>: 발한·설사·복통·산동·빈맥·불안정한 고혈압·발열·눈물·침 <sup>[1 459장 p.3595]</sup> — 항콜린 중독의 건조한 피부·장음 감소와 반대.</li>\n<li><strong>정신 변화</strong>: 초조·혼동에서 무언증·혼수·경련까지 <sup>[1 459장 p.3595]</sup>.</li>\n<li><strong>고열의 근원</strong>: 근육 과활성이 열을 만든다. 그래서 진정·근마비가 열을 끊는다 <sup>[1 459장 p.3587]</sup>.</li>\n<li><strong>검사</strong>: 진단 검사는 없다. CK·백혈구가 조금 오를 수 있고, 심해지면 젖산산증·횡문근융해·다장기부전이 온다 <sup>[1 459장 p.3595]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>신경이완제악성증후군</strong>: 도파민 차단제 뒤 수일에 걸쳐, 납관 강직·반사 저하·서동, CK 크게 상승 <sup>[2†]</sup>.</li>\n<li><strong>항콜린 중독</strong>: 건조한 피부·점막, 장음 감소, 요저류, 근간대·집는 행동 — 피소스티그민 <sup>[1 459장 p.3590]</sup>.</li>\n<li><strong>악성고열</strong>: 흡입마취제·석시닐콜린, 마취 중.</li>\n<li><strong>교감신경 흥분제 중독</strong>: 소변 약물 선별, 클로누스가 두드러지지 않음.</li>\n<li><strong>감염(뇌수막염·패혈증)·갑상선 중독</strong>: 약력이 없거나 검사로 가른다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>진단은 약력과 진찰로 한다. 약력에서 <strong>최근 더하거나 올린 약</strong>(진통제 트라마돌·메페리딘, 기침약 덱스트로메토르판, 트립탄, 리네졸리드, 불법 약물)을 찾는다. 진찰에서 클로누스(발목·안구)·반사·근긴장·피부 건조/발한·장음을 본다. CK·크레아티닌·전해질·젖산은 합병증을 보고, 심전도·소변 약물 선별·필요시 영상은 다른 원인을 거른다. 정상 CK 나 음성 약물 선별이 세로토닌증후군을 배제하지는 않는다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>1. 유발 약 모두 중단</strong> <sup>[1 459장 p.3595]</sup>.\n<strong>2. 벤조디아제핀</strong> — 초조·자극 징후에 <sup>[1 459장 p.3595]</sup>. 냉각·수액을 함께.\n<strong>3. 사이프로헵타딘</strong> — 세로토닌 수용체 길항제. 심한 경우에 도움이 될 수 있다 <sup>[1 459장 p.3595]</sup> <sup>[1 459장 p.3588]</sup>. 경구·비위관으로 준다(용량은 원문 미대조 <sup>[2†]</sup>).\n<strong>4. 심한 고열·강직</strong> — 치료적 진정·근마비와 기계 환기로 근육 열 생성을 끊는다 <sup>[1 459장 p.3587]</sup>.\n<strong>피할 것</strong> — 항정신병약(신경이완제악성증후군 유발 위험), 플루마제닐(벤조디아제핀 효과 역전), 브로모크립틴(세로토닌 작용 <sup>[1 459장 p.3590]</sup>).\n<strong>재평가</strong> — 대개 유발 약을 끊으면 하루 안에 가라앉는다고 알려져 있다 <sup>[2†]</sup>. 반감기가 긴 약(플루옥세틴 등)은 더 오래 간다. 회복 뒤에는 세로토닌 약 병용을 다시 설계한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>세로토닌증후군의 1차는 약 중단·벤조디아제핀·냉각이고, 사이프로헵타딘은 그다음이다.</li>\n<li>신경이완제악성증후군의 약을 세로토닌증후군에 가져오지 않는다 — 유발 약·속도·반사로 먼저 가른다.</li>\n<li>SSRI 와 MAO 억제제는 함께 쓰지 않는다 <sup>[1 452장 p.3543]</sup>.</li>\n<li>사이프로헵타딘 용량·41 ℃ 기준·Hunter 기준 문구는 원문 미대조다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 어느 수용체가 주범인가</strong> — 시험 기준: 사이프로헵타딘은 5-HT2A 길항제로 쓴다(문항 해설) <sup>[2†]</sup> / 다른 기준: 해리슨 452장은 세로토닌증후군을 뇌간 5-HT1A 과자극으로 설명하고 <sup>[1 452장 p.3549]</sup>, 459장 표는 5-HT1A·5-HT2 를 함께 적는다 <sup>[1 459장 p.3595]</sup> / 왜 다른가: 증상은 여러 아형의 과자극이 겹친 결과이고, 치료 약은 그중 5-HT2A 를 막는 것이 중증 소견과 더 관련 있다고 설명된다(원문 미대조) / 시험에서는: KMLE·USMLE 모두 「사이프로헵타딘 = 세로토닌(5-HT2A) 길항제」로 답한다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 발한·설사·클로누스가 세로토닌을 가리키는가",
+    "deep": true,
+    "html": "<p>세로토닌은 장 신경계에 가장 많아 과자극되면 장운동이 늘어 설사·복통이 오고, 척수 운동신경의 흥분성을 높여 반사 항진과 클로누스를 만든다(척수 경로가 긴 하지에서 더 뚜렷하다). 땀샘은 교감 콜린성 신경이 지배하므로 항콜린 중독에서는 마르지만 세로토닌증후군에서는 젖는다. 반대로 신경이완제악성증후군은 선조체 도파민 차단으로 기저핵 출력이 굳어 납관 강직과 운동 저하가 중심이 된다. 같은 「고열 + 의식 변화」라도 근육이 「떨며 튀는가(클로누스)」, 「굳어 있는가(납관)」가 약을 가른다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "약물 관련 고열·의식 변화 — 무엇으로 가르고 무엇을 주나",
+    "columns": [
+     "증후군",
+     "유발 약·속도",
+     "신경근·자율신경 단서",
+     "특이 처치"
+    ],
+    "rows": [
+     [
+      "세로토닌증후군",
+      "세로토닌 약 겹침, 대개 하루 안",
+      "클로누스·반사 항진(하지 우세), 발한·설사·산동 <sup>[1 459장 p.3595]</sup>",
+      "중단·벤조디아제핀 → 사이프로헵타딘 <sup>[1 459장 p.3595]</sup>"
+     ],
+     [
+      "신경이완제악성증후군",
+      "도파민 차단제, 수일에 걸쳐",
+      "납관 강직·반사 저하, CK 크게 상승",
+      "중단·냉각 → 브로모크립틴·단트롤렌 <sup>[2†]</sup>"
+     ],
+     [
+      "항콜린 중독",
+      "항콜린 약",
+      "건조 피부·장음 감소·요저류, 클로누스 없음 <sup>[1 459장 p.3590]</sup>",
+      "피소스티그민 <sup>[1 459장 p.3590]</sup>"
+     ],
+     [
+      "교감신경 흥분제 중독",
+      "암페타민·코카인",
+      "발한·산동, 클로누스 드묾",
+      "벤조디아제핀"
+     ]
+    ],
+    "note": "발한·설사·클로누스는 세로토닌, 건조함은 항콜린, 느린 납관 강직은 신경이완제악성증후군 쪽이다. 신경이완제악성증후군 행의 처치는 원문 미대조다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "브로모크립틴 vs 사이프로헵타딘 — 「항우울제 복용 중 고열·의식 변화·근육 이상」",
+    "point": "고열·의식 변화·근육 이상이라는 겉모습은 신경이완제악성증후군과 겹친다. 가르는 것은 유발 약(세로토닌 약의 겹침 vs 도파민 차단제), 속도(하루 안 vs 수일), 신경근 소견(클로누스·반사 항진 vs 납관 강직·반사 저하), 자율신경 소견(발한·설사·산동)이다 <sup>[1 459장 p.3595]</sup>. 브로모크립틴은 도파민 작용제로 도파민 차단이 원인인 신경이완제악성증후군의 약인데, 맥각 알칼로이드로서 세로토닌 수용체도 자극한다 <sup>[1 459장 p.3590]</sup> — 세로토닌증후군에서는 오히려 자극을 더한다.",
+    "exception": "항정신병약을 시작·증량한 뒤 수일에 걸쳐 납관 강직·고열·의식 변화·CK 크게 상승이 오면 신경이완제악성증후군이고, 그때는 브로모크립틴이 선택지다 <sup>[2†]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "단트롤렌 vs 사이프로헵타딘 — 「고열 + 근육 강직이면 근이완제」",
+    "point": "세로토닌증후군의 고열은 중추 세로토닌 과자극에 따른 근육 과활성에서 온다. 원인 수용체를 막는 것(사이프로헵타딘)과 진정·근마비로 근육 열 생성을 끊는 것이 처치다 <sup>[1 459장 p.3587]</sup> <sup>[1 459장 p.3588]</sup>. 단트롤렌은 근소포체 칼슘 방출을 막는 악성고열의 약으로 세로토닌증후군에서의 근거는 확인하지 못했다 <sup>[2†]</sup>.",
+    "exception": "흡입마취제·석시닐콜린 뒤 마취 중 급격한 고열·강직·이산화탄소 상승(악성고열)이면 단트롤렌이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "할로페리돌·플루마제닐 — 「초조를 누르거나, 진정을 깨우거나」",
+    "point": "세로토닌증후군의 초조와 자극 징후에는 벤조디아제핀을 쓴다 <sup>[1 459장 p.3595]</sup>. 플루마제닐은 그 효과를 되돌린다. 항정신병약은 신경이완제악성증후군을 부를 수 있어 초조 조절용으로 쓰지 않는다 <sup>[2†]</sup>.",
+    "exception": "벤조디아제핀 과다 복용 단독에 의한 호흡 억제라면 플루마제닐을 고려하는 상황이 있지만, 이 환자에게는 해당하지 않는다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "사이프로헵타딘은 경구 제형뿐이라 삼키기 어려우면 비위관으로 준다. 용량(초회 12 mg, 2시간마다 2 mg)은 원문 미대조다 <sup>[2†]</sup>.",
+   "해열제는 근육 과활성에서 오는 열에 효과가 없다고 알려져 있다 — 원문 미대조 <sup>[2†]</sup>. 해리슨은 진정·근마비로 근육 열 생성을 끊는 쪽을 적는다 <sup>[1 459장 p.3587]</sup>.",
+   "SSRI 와 MAO 억제제의 병용은 절대 금기다 <sup>[1 452장 p.3543]</sup>.",
+   "세로토닌 작용제를 함께 쓰는 환자는 가까이 감시해야 한다 <sup>[1 452장 p.3549]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ss-toxidrome",
+    "name": "세로토닌증후군의 원인·기전·소견·처치(해리슨 표)",
+    "kind": "정의",
+    "population": "세로토닌 약물을 복용 중인 급성 초조·고열 환자",
+    "statement": "원인: 암페타민·코카인·덱스트로메토르판·메페리딘·MAO 억제제·SSRI·삼환계·트라마돌·트립탄·트립토판. 기전: 세로토닌 방출 촉진·재흡수 억제·중추·말초 세로토닌 수용체(주로 5-HT1A·5-HT2) 직접 자극의 단독 또는 조합. 소견: 정신 변화(초조·혼동·무언증·혼수·경련), 신경근 과활성(반사 항진·간대성 근경련·강직·떨림), 자율신경 기능 이상(복통·설사·발한·발열·홍조·불안정한 고혈압·산동·눈물·침·빈맥). 합병증: 고체온·젖산산증·횡문근융해·다장기부전. 처치: 유발 약 중단, 초조·자극 징후에 벤조디아제핀, 심한 경우 세로토닌 수용체 길항제 사이프로헵타딘이 도움이 될 수 있다 [[harrison-21: 459장 p.3595]]",
+    "exceptions": "사이프로헵타딘의 초회 12 mg·2시간마다 2 mg 용량과 Hunter 기준 세부는 해리슨에 없다 — 원문 미대조 출처 [[?boyer-2005]] [[?dunkley-2003]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ss-hunter",
+    "name": "Hunter 세로토닌 독성 기준",
+    "kind": "진단 기준",
+    "population": "세로토닌 약물 노출 환자",
+    "statement": "세로토닌 약물 노출 + 다음 중 하나: 자발 클로누스 / 유발 클로누스 + 초조 또는 발한 / 안구 클로누스 + 초조 또는 발한 / 떨림 + 반사 항진 / 근긴장 증가 + 체온 38 ℃ 초과 + 안구 또는 유발 클로누스 [[?dunkley-2003]]",
+    "exceptions": "원문 미대조 — 검토 항목. 해리슨 표는 같은 세 축(정신·신경근·자율신경)을 적지만 Hunter 기준 문구는 싣지 않는다 [[harrison-21: 459장 p.3595]]",
+    "source": "dunkley-2003",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "ss-hyperthermia",
+    "name": "신경근 과활성에 의한 고체온(해리슨)",
+    "kind": "치료 권고",
+    "population": "중독에 의한 신경근 과활성·고체온",
+    "statement": "신경근 과활성에 따른 고체온·산증·횡문근융해를 막거나 치료하려고 치료적 진정이나 근마비를 할 때 기계 환기가 필요할 수 있다 [[harrison-21: 459장 p.3587]]. 세로토닌 수용체 과자극은 사이프로헵타딘으로 치료할 수 있다 [[harrison-21: 459장 p.3588]]",
+    "exceptions": "체온 41 ℃ 초과를 삽관·비탈분극 근이완제의 기준으로 쓰는 수치는 해리슨에 없다 [[?boyer-2005]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 452: Psychiatric Disorders; Chapter 459: Poisoning and Drug Overdose",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 452장(Reus VI) 인쇄쪽 3543·3549, 459장 인쇄쪽 3587·3588·3590·3595",
+    "checked": "드라이브 장 문서로 본문 대조. 452장 p.3543 표 452-3(SSRI + MAO 억제제 = 세로토닌증후군 절대 금기, 트립탄·트립토판 병용 위험), p.3549 세로토닌증후군(뇌간 5-HT1A 과자극, 간대성 근경련·초조·복부 경련·고열·고혈압·사망 가능, 세로토닌 작용제 병용 시 감시). 459장 p.3595 표(세로토닌증후군 원인에 트라마돌·SSRI·덱스트로메토르판 등, 기전 5-HT1A·5-HT2, 소견 세 축, 합병증, 처치: 중단·벤조디아제핀·심하면 사이프로헵타딘), p.3588 사이프로헵타딘, p.3587 신경근 과활성 고체온에 진정·근마비·기계 환기, p.3590 맥각 알칼로이드(브로모크립틴 포함)의 세로토닌·α 수용체 자극·도파민 수용체 자극, 항콜린 중독(건조 피부·장음 감소·요저류, 피소스티그민)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "boyer-2005",
+    "org": "New England Journal of Medicine",
+    "title": "The serotonin syndrome",
+    "kind": "review",
+    "citation": "Boyer EW, Shannon M. N Engl J Med 2005;352(11):1112-1120",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 이 컨테이너는 NEJM·PubMed·doi 접근이 막혀 사이프로헵타딘 용량(초회 12 mg, 2시간마다 2 mg)·41 ℃ 기준·항정신병약 회피·단트롤렌·브로모크립틴에 관한 서술을 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2005",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMra041867"
+   },
+   {
+    "id": "dunkley-2003",
+    "org": "QJM",
+    "title": "The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity",
+    "kind": "other",
+    "citation": "Dunkley EJ, Isbister GK, Sibbritt D, Dawson AH, Whyte IM. QJM 2003;96(9):635-642",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). Hunter 기준 문구와 민감도·특이도를 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2003",
+    "checkedAt": "2026-09-23",
+    "url": "https://academic.oup.com/qjmed"
+   }
+  ],
+  "checks": [
+   {
+    "q": "서트랄린 복용자가 트라마돌을 시작하고 하루 만에 발한·설사·산동·유발 클로누스·반사 항진·고열이 왔다. 진단은?",
+    "a": "세로토닌증후군."
+   },
+   {
+    "q": "약 중단·벤조디아제핀·냉각에도 지속되면 추가하는 약은?",
+    "a": "5-HT2A(세로토닌 수용체) 길항제 사이프로헵타딘."
+   },
+   {
+    "q": "브로모크립틴을 세로토닌증후군에 쓰지 않는 이유는?",
+    "a": "신경이완제악성증후군(도파민 차단)의 약이고, 맥각 알칼로이드로서 세로토닌 수용체도 자극해 악화시킬 수 있다."
+   },
+   {
+    "q": "세로토닌증후군과 신경이완제악성증후군을 가르는 신경근 소견은?",
+    "a": "세로토닌: 클로누스·반사 항진(하지 우세). 신경이완제악성증후군: 납관 강직·반사 저하."
+   },
+   {
+    "q": "세로토닌증후군을 일으키는 SSRI 의 절대 금기 병용 약은?",
+    "a": "MAO 억제제."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.psy.serotonin-syndrome.cyproheptadine-refractory#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 도파민 차단제 뒤 느린 강직",
+    "stem": "29세 남자가 조현병으로 입원해 5일 전 할로페리돌 근육주사를 증량한 뒤 점점 말이 없어지고 몸이 굳더니 오늘 열이 난다. 다른 약은 복용하지 않는다. 진찰에서 사지 전체가 납관처럼 뻣뻣하고 심부건반사는 저하되어 있으며 클로누스는 없다. 피부는 땀으로 젖어 있고 장음은 정상이다. 혈압 164/100 mmHg, 맥박 124회/분, 호흡 22회/분, 체온 40.1 ℃이다. 크레아틴키나아제 18,400 U/L 이다. 할로페리돌을 끊고 냉각·수액을 시작했으나 강직과 고열이 지속된다. 추가로 투여할 약물로 가장 적절한 것은?",
+    "options": [
+     "브로모크립틴",
+     "사이프로헵타딘",
+     "피소스티그민",
+     "클로르프로마진",
+     "플루마제닐"
+    ],
+    "answer": 1,
+    "explanation": "도파민 차단제(할로페리돌) 증량 뒤 수일에 걸쳐 온 납관 강직·반사 저하·고열·의식 변화·CK 크게 상승은 신경이완제악성증후군이다. 원인이 도파민 차단이므로 도파민 작용제 브로모크립틴을 쓴다(단트롤렌도 선택지) [[?boyer-2005]]. 사이프로헵타딘은 세로토닌증후군의 약이고, 원래 문항은 세로토닌 약의 겹침·하루 만의 발병·클로누스와 반사 항진이라 사이프로헵타딘이 답이었다 — 유발 약과 신경근 소견이 답을 바꾼다.",
+    "of": "kmle-2026-0964",
+    "changed": "유발 약을 「서트랄린 + 트라마돌, 하루 만의 발병, 클로누스·반사 항진·발한·설사」에서 「할로페리돌 증량 뒤 5일에 걸친 발병, 납관 강직·반사 저하·CK 크게 상승」으로 바꿈 → 신경이완제악성증후군이므로 답이 사이프로헵타딘에서 브로모크립틴으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.psy.serotonin-syndrome.cyproheptadine-refractory#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 기침약을 더한 중년 남자",
+    "stem": "48세 남자가 오늘 아침부터 몸을 가만히 두지 못하고 떨며 땀을 흘리고 묽은 변을 여러 번 봤다며 아내와 함께 왔다. 혈압 162/98 mmHg, 맥박 122회/분, 호흡 22회/분, 체온 38.9 ℃이다. 동공이 커져 있고 무릎반사가 매우 항진되어 있으며 양쪽 발목을 굽히면 멈추지 않는 클로누스가 있다. 공황장애로 1년째 에스시탈로프람을 복용하고 있고, 어제 감기로 덱스트로메토르판이 든 기침약을 사서 먹기 시작했다. 두 약을 끊고 수액·냉각과 디아제팜 정주를 했으나 1시간 뒤에도 초조와 떨림, 발열이 계속된다. 추가로 투여할 약물로 가장 적절한 것은?",
+    "options": [
+     "단트롤렌",
+     "할로페리돌",
+     "브로모크립틴",
+     "사이프로헵타딘",
+     "플루마제닐"
+    ],
+    "answer": 4,
+    "explanation": "SSRI(에스시탈로프람)에 덱스트로메토르판을 더한 뒤 하루 안에 온 초조·발한·설사·산동·유발 클로누스·반사 항진·고열은 세로토닌증후군이다 [[harrison-21: 459장 p.3595]]. 유발 약 중단·벤조디아제핀·냉각에 반응하지 않으므로 세로토닌 수용체 길항제 사이프로헵타딘을 더한다. 환자와 겹친 약 이름이 달라도 결정 단서(세로토닌 약 겹침 + 클로누스·반사 항진 + 초기 처치 불응)는 같다.",
+    "of": "kmle-2026-0964",
+    "changed": "환자(26세 여자 → 48세 남자), 세로토닌 약 조합(서트랄린 + 트라마돌 → 에스시탈로프람 + 덱스트로메토르판 기침약), 제시 순서(검사 뒤 약력)를 바꾸고 「세로토닌 약 겹침 뒤 하루 안의 발병 + 클로누스·반사 항진·발한·설사·산동 + 초기 처치 불응」은 그대로 → 답은 여전히 사이프로헵타딘",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "세로토닌 약 복용 중 고열·초조 — 알아보고 처치하는 순서",
+  "geo": {
+   "title": "세로토닌 약 복용 중 고열·초조 — 알아보고 처치하는 순서",
+   "w": 680,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "세로토닌 약 복용 중 급성",
+      "초조·떨림·고열"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "최근 추가·증량한",
+      "약(트라마돌·",
+      "덱스트로메토르판·트립탄·",
+      "리네졸리드·항정신병약),",
+      "발병 속도, 클로누스·반사·",
+      "근긴장, 피부 건조/발한,",
+      "장음을 확인한다"
+     ],
+     "w": 196,
+     "h": 149,
+     "x": 242.0,
+     "y": 146.0
+    },
+    {
+     "id": "which",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "어떤 양상인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 361.0
+    },
+    {
+     "id": "nms",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "도파민 차단제 + 수일에 걸친",
+      "납관 강직·반사 저하 →",
+      "신경이완제악성증후군 처치"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 474.0
+    },
+    {
+     "id": "acho",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "건조 피부·장음 감소·요저류,",
+      "클로누스 없음 → 항콜린 중독",
+      "처치"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 474.0
+    },
+    {
+     "id": "first",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "세로토닌증후군 — 모든 유발",
+      "약 중단 + 벤조디아제핀 +",
+      "냉각·수액 뒤 반응은?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 468.0,
+     "y": 474.0
+    },
+    {
+     "id": "observe",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "호전 — 감시하며 관찰(대개",
+      "하루 안에 가라앉는다)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 621.0
+    },
+    {
+     "id": "temp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "고열·강직이 생명을",
+      "위협하는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 621.0
+    },
+    {
+     "id": "cypro",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "사이프로헵타딘 경구·비위관",
+      "투여 + 계속 감시"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 751.0
+    },
+    {
+     "id": "icu",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "중환자실 · 진정·비탈분극",
+      "근이완제·삽관 +",
+      "사이프로헵타딘"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 355.0,
+     "y": 751.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       80
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       90
+      ],
+      [
+       340.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "which",
+     "points": [
+      [
+       340.0,
+       295.0
+      ],
+      [
+       340.0,
+       305.0
+      ],
+      [
+       340.0,
+       305.0
+      ],
+      [
+       340.0,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "확인 완료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 341.0
+     }
+    },
+    {
+     "from": "which",
+     "to": "nms",
+     "points": [
+      [
+       291.0,
+       408.0
+      ],
+      [
+       291.0,
+       418.0
+      ],
+      [
+       114.0,
+       418.0
+      ],
+      [
+       114.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "납관 강직·반사 저하"
+      ],
+      "w": 109.9,
+      "h": 17,
+      "x": 59.1,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "which",
+     "to": "acho",
+     "points": [
+      [
+       340.0,
+       408.0
+      ],
+      [
+       340.0,
+       424.0
+      ],
+      [
+       340.0,
+       424.0
+      ],
+      [
+       340.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "건조·클로누스 없음"
+      ],
+      "w": 106.1,
+      "h": 17,
+      "x": 286.9,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "which",
+     "to": "first",
+     "points": [
+      [
+       389.0,
+       408.0
+      ],
+      [
+       389.0,
+       430.0
+      ],
+      [
+       566.0,
+       430.0
+      ],
+      [
+       566.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "클로누스·반사 항진·발한·설사"
+      ],
+      "w": 162.9,
+      "h": 17,
+      "x": 484.6,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "first",
+     "to": "observe",
+     "points": [
+      [
+       533.3,
+       555.0
+      ],
+      [
+       533.3,
+       565.0
+      ],
+      [
+       227.0,
+       565.0
+      ],
+      [
+       227.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "조절됨"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "first",
+     "to": "temp",
+     "points": [
+      [
+       598.7,
+       555.0
+      ],
+      [
+       598.7,
+       571.0
+      ],
+      [
+       453.0,
+       571.0
+      ],
+      [
+       453.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "지속"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "temp",
+     "to": "cypro",
+     "points": [
+      [
+       420.3,
+       685.0
+      ],
+      [
+       420.3,
+       695.0
+      ],
+      [
+       227.0,
+       695.0
+      ],
+      [
+       227.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니다(중등도)"
+      ],
+      "w": 86.8,
+      "h": 17,
+      "x": 183.6,
+      "y": 731.0
+     }
+    },
+    {
+     "from": "temp",
+     "to": "icu",
+     "points": [
+      [
+       485.7,
+       685.0
+      ],
+      [
+       485.7,
+       701.0
+      ],
+      [
+       453.0,
+       701.0
+      ],
+      [
+       453.0,
+       751.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "그렇다(심한 고열)"
+      ],
+      "w": 101.5,
+      "h": 17,
+      "x": 402.2,
+      "y": 731.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "세로토닌 약 복용 중 급성 초조·떨림·고열",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "최근 추가·증량한 약(트라마돌·덱스트로메토르판·트립탄·리네졸리드·항정신병약), 발병 속도, 클로누스·반사·근긴장, 피부 건조/발한, 장음을 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "최근 추가·증량한 약(트라마돌·덱스트로메토르판·트립탄·리네졸리드·항정신병약), 발병 속도, 클로누스·반사·근긴장, 피부 건조/발한, 장음을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "확인 완료",
+      "to": 3,
+      "toText": "어떤 양상인가?"
+     }
+    ]
+   },
+   {
+    "id": "which",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "어떤 양상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "납관 강직·반사 저하",
+      "to": 4,
+      "toText": "도파민 차단제 + 수일에 걸친 납관 강직·반사 저하 → 신경이완제악성증후군 처치"
+     },
+     {
+      "label": "건조·클로누스 없음",
+      "to": 5,
+      "toText": "건조 피부·장음 감소·요저류, 클로누스 없음 → 항콜린 중독 처치"
+     },
+     {
+      "label": "클로누스·반사 항진·발한·설사",
+      "to": 6,
+      "toText": "세로토닌증후군 — 모든 유발 약 중단 + 벤조디아제핀 + 냉각·수액 뒤 반응은?"
+     }
+    ]
+   },
+   {
+    "id": "nms",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "도파민 차단제 + 수일에 걸친 납관 강직·반사 저하 → 신경이완제악성증후군 처치",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "acho",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "건조 피부·장음 감소·요저류, 클로누스 없음 → 항콜린 중독 처치",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "first",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "세로토닌증후군 — 모든 유발 약 중단 + 벤조디아제핀 + 냉각·수액 뒤 반응은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "조절됨",
+      "to": 7,
+      "toText": "호전 — 감시하며 관찰(대개 하루 안에 가라앉는다)"
+     },
+     {
+      "label": "지속",
+      "to": 8,
+      "toText": "고열·강직이 생명을 위협하는가?"
+     }
+    ]
+   },
+   {
+    "id": "observe",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "호전 — 감시하며 관찰(대개 하루 안에 가라앉는다)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "temp",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "고열·강직이 생명을 위협하는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니다(중등도)",
+      "to": 9,
+      "toText": "사이프로헵타딘 경구·비위관 투여 + 계속 감시"
+     },
+     {
+      "label": "그렇다(심한 고열)",
+      "to": 10,
+      "toText": "중환자실 · 진정·비탈분극 근이완제·삽관 + 사이프로헵타딘"
+     }
+    ]
+   },
+   {
+    "id": "cypro",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "사이프로헵타딘 경구·비위관 투여 + 계속 감시",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "icu",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "중환자실 · 진정·비탈분극 근이완제·삽관 + 사이프로헵타딘",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0964"
+  ],
+  "hasErrors": false
+ },
+ "cn.psy.smoking-cessation.varenicline-seizure": {
+  "id": "cn.psy.smoking-cessation.varenicline-seizure",
+  "title": "금연 약물 선택 — 니코틴 대체요법에 실패한 고의존 흡연자, 뇌전증이 있으면 부프로피온을 지우고 바레니클린을 고른다",
+  "objective": "니코틴 대체요법을 충분히 시도하고도 실패한 고의존 흡연자에서 다음 금연 약물로 바레니클린을 고르고, 경련 병력이 부프로피온(그리고 삼환계 노르트립틸린)을 왜 배제하는지, 패치 증량·클로니딘이 왜 지금의 답이 아닌지 가른다",
+  "objectiveKind": "치료",
+  "condition": "니코틴 의존(담배 사용 장애) — 경련 질환 동반",
+  "topic": "Psychiatry",
+  "seeAlso": [
+   "Neurology",
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "193cf2d31ade0cb9",
+  "summary": [
+   "니코틴은 담배 중독의 주성분이다. 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 피우는 횟수·깊이로 니코틴 섭취를 스스로 조절한다 — 그래서 약물은 「금단·갈망을 대신 채우거나 막는」 방식으로 듣는다.",
+   "의존 강도는 하루 개비 수와 「기상 30분 안의 첫 담배」로 잰다. 강한 의존일수록 니코틴 대체요법 고용량·병합 또는 효과가 큰 약이 필요하다.",
+   "1차 약물 = 니코틴 대체요법(패치·껌·사탕·흡입제) · 부프로피온 · 바레니클린. 무개입 대비 성공 배수는 바레니클린 3.1, 부프로피온 2.0, 패치 1.9로 바레니클린이 가장 크다. 클로니딘·노르트립틸린은 1차 실패·사용 불가 때의 2차다.",
+   "니코틴 대체요법에 실패하면 같은 방식을 반복하기보다 다른 형태의 도움으로 바꾼다. 비니코틴 1차 약물 둘 가운데 부프로피온은 경련 역치를 낮춰 경련 병력에서 금기이므로, 뇌전증 환자에게는 바레니클린이 남는다.",
+   "바레니클린은 니코틴 수용체 부분작용제로, 금연일 1–2주 전 0.5 mg 으로 시작해 8일째 1 mg 하루 두 번으로 올린다. 약물은 상담과 함께 쓴다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>니코틴 의존(담배 사용 장애)은 니코틴을 주성분으로 하는 중독으로, 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 흡연의 빈도·강도를 조절해 니코틴 섭취를 스스로 맞춘다 <sup>[1 454장 p.3563]</sup>. 연기의 다른 성분과 행동 습관도 중독의 세기를 더한다 <sup>[1 454장 p.3563]</sup>. 이 정리본의 목표는 금연 약물 목록이 아니라, <strong>니코틴 대체요법에 실패한 고의존 흡연자에서 다음 약을 고를 때 「1차 약물 → 이 환자에게 지울 약」 순서로 판단하는 것</strong> — 경련 병력이 부프로피온을 지우고 바레니클린을 남기는 이유를 설명하는 것이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>니코틴은 뇌의 니코틴 아세틸콜린 수용체(주로 α4β2)에 붙어 중변연계 도파민 분비를 늘려 보상을 만든다. 반복 노출로 수용체가 적응하면 혈중 니코틴이 떨어질 때 갈망·짜증·불안·집중력 저하 같은 금단이 생기고, 흡연자는 이를 피하려고 섭취량을 조절한다 <sup>[1 454장 p.3563]</sup>. 궐련 연기는 산성이라 입안 흡수가 적어 폐 깊이 들이마셔야 충분한 니코틴을 얻는다 — 빠르고 강한 폐 흡수가 중독성과 폐·심장 질환을 함께 키운다 <sup>[1 454장 p.3563]</sup>.</p>\n<p>약이 듣는 방식은 세 가지다. ① <strong>니코틴 대체요법</strong>은 연기 없이 니코틴을 공급해 금단을 채운다 — 패치는 느리고 일정하게, 껌·사탕·흡입제는 급성 갈망에 빠르게. ② <strong>바레니클린</strong>은 같은 수용체의 부분작용제라 적은 도파민 분비로 금단을 누르면서, 담배를 피워도 니코틴이 수용체에 덜 붙어 보상이 줄어든다(성공 배수 3.1로 가장 크다 <sup>[1 454장 p.3566]</sup>). ③ <strong>부프로피온</strong>은 도파민·노르에피네프린 재흡수를 막는 항우울제로 금단·갈망을 줄인다. 부프로피온의 약점은 <strong>경련 역치 저하</strong>다 — 용량이 오를수록 경련 위험이 커져 경련 병력이 있는 환자에게는 금기다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>의존 강도</strong>: 하루 개비 수와 기상 30분 이내 첫 담배가 중독 강도의 유용한 척도다 <sup>[1 454장 p.3566]</sup>. 기상 5분 안의 흡연은 밤사이 떨어진 니코틴을 곧바로 채워야 하는 강한 신체 의존을 뜻한다.</li>\n<li><strong>금단 증상</strong>: 갈망·짜증·불안 — 니코틴 대체요법 중에도 이것이 견디기 어려우면 같은 약의 반복보다 다른 방식이 필요하다는 신호다.</li>\n<li><strong>호기 일산화탄소</strong>: 현재 흡연을 객관적으로 확인하고 금연 뒤 추적에 쓰지만 약 선택을 바꾸지 않는다.</li>\n<li><strong>경과</strong>: 금연은 대개 여러 번의 시도 끝에 성공한다. 절반 넘게 한 해에 금연을 시도하지만 6개월 유지는 6 %, 2년 유지는 3 % 뿐이다 <sup>[1 454장 p.3566]</sup>. 실패는 치료 실패가 아니라 다음 시도에 쓸 정보다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>약물 선택에서 「감별」은 <strong>이 환자에게 지울 약을 가려내는 일</strong>이다.</p>\n<ul>\n<li><strong>경련 병력·섭식장애·알코올/벤조디아제핀 급성 중단</strong> → 부프로피온 금기 <sup>[2†]</sup>. 뇌전증이 약으로 조절돼 있어도 병력 자체가 금기다.</li>\n<li><strong>우울 증상 병력</strong> → 항우울제가 더 효과적이다 <sup>[1 454장 p.3566]</sup>. 금기가 없으면 부프로피온 쪽으로 기운다.</li>\n<li><strong>심혈관 질환</strong> → 흡연 자체가 가장 큰 위험이다. 금연하면 두 번째 관상동맥 사건 위험이 6–12개월 안에 줄어든다 <sup>[1 454장 p.3564]</sup>.</li>\n<li><strong>중증 신부전</strong> → 바레니클린은 신배설이라 감량한다 <sup>[2†]</sup>.</li>\n<li><strong>삼환계(노르트립틸린)</strong> → 2차 약물이며 경련 역치를 낮추고 심전도·항콜린 부작용이 있다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>금연 약물 선택에 필수 검사실 검사는 없다. 필요한 정보는 ① 흡연량·기상 후 첫 담배 시간·과거 금연 시도와 쓴 약의 <strong>종류·용량·기간</strong> ② 경련·섭식장애·음주·벤조디아제핀 사용 ③ 우울·자살 생각 ④ 신기능(바레니클린 용량) ⑤ 복용약 — 흡연은 CYP450 을 유도하므로 금연 뒤 테오필린·클로자핀·올란자핀·와파린 등의 농도가 변할 수 있다 <sup>[1 454장 p.3564]</sup>. 호기 일산화탄소는 흡연 확인·금연 추적용이다.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>원칙.</strong> 받아들이는 모든 흡연자에게 약물(대개 니코틴 패치 또는 바레니클린)을 권하고 상담을 함께한다 <sup>[1 454장 p.3566]</sup>. 금연일은 방문 당일이 아니라 몇 주 안으로 협의하고 그 무렵 추적 연락을 잡는다 <sup>[1 454장 p.3566]</sup>. 조언·약물·상담을 합치면 성공이 거의 세 배가 된다 <sup>[1 454장 p.3566]</sup>.</p>\n<p><strong>1차 약물.</strong> 니코틴 대체요법(3–6개월, 고의존은 고용량) · 부프로피온(300 mg/일 분할, 최대 6개월) · 바레니클린(0.5 mg → 8일째 1 mg 하루 두 번, 최대 6개월). 항우울제·바레니클린은 금연일 1–2주 전에 시작한다 <sup>[1 454장 p.3566]</sup>. 니코틴 대체요법과 항우울제 병용, 패치 + 급성 갈망 때 껌·사탕도 성공률을 높인다 <sup>[1 454장 p.3566]</sup>.</p>\n<p><strong>니코틴 대체요법 실패 뒤.</strong> 매 시도마다 다른 형태의 도움을 쓰게 한다 <sup>[1 454장 p.3566]</sup>. 비니코틴 1차 약물 둘 가운데 금기를 먼저 지운다 — <strong>경련 병력이면 부프로피온을 지우고 바레니클린</strong>을 쓴다. 단독 효과도 바레니클린이 가장 크다(3.1) <sup>[1 454장 p.3566]</sup>.</p>\n<p><strong>2차 약물.</strong> 클로니딘·노르트립틸린은 1차 약물에 실패했거나 쓸 수 없는 환자에게 남겨 둔다 <sup>[1 454장 p.3566]</sup>.</p>\n<p><strong>반응 확인·재평가.</strong> 금연일 무렵 추적 연락, 이후 흡연 여부(필요하면 호기 일산화탄소)·금단·부작용(바레니클린 — 오심·꿈 이상)을 확인한다. 실패하면 비난하지 않고 다른 형태의 도움으로 다시 시도한다 <sup>[1 454장 p.3566]</sup>. 짧은 사용에 실패한 사람에게는 더 긴 유지 치료도 유용하다 <sup>[1 454장 p.3566]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>1차 약물 목록을 떠올린 뒤 「이 환자에게 지울 약」을 먼저 찾는다 — 경련 병력 → 부프로피온·노르트립틸린 제외.</li>\n<li>니코틴 대체요법 하나의 실패는 1차 약물 전체의 실패가 아니다 — 2차(클로니딘·노르트립틸린)로 건너뛰지 않는다.</li>\n<li>우울 증상 병력이 있고 경련 위험이 없으면 부프로피온이 유리하다 <sup>[1 454장 p.3566]</sup>.</li>\n<li>약은 반드시 상담·금연일 협의·추적과 함께 쓴다 <sup>[1 454장 p.3566]</sup>.</li>\n<li>부프로피온 경련 금기와 바레니클린의 신부전 감량은 해리슨이 아닌 지침·허가 정보의 서술이며 원문을 대조하지 못했다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 부프로피온 경련 금기의 출처</strong> — 시험 기준: 경련 질환 병력이면 발작이 조절돼 있어도 부프로피온 금기 <sup>[2†]</sup> / 다른 기준: 해리슨 454장은 부프로피온을 1차 약물(성공 배수 2.0)로만 적고 금기를 언급하지 않는다 <sup>[1 454장 p.3566]</sup> / 왜 다른가: 해리슨 장은 약물의 자리만 요약하고 금기는 허가 정보·지침에 맡긴다 / 시험에서는: KMLE · USMLE 모두 「경련 병력 → 부프로피온 금기」를 정답 논리로 쓴다.</li>\n<li><strong>Z2 충돌 · 니코틴 대체요법 실패 뒤 증량인가 교체인가</strong> — 시험 기준: 충분한 기간 실패했으면 기전이 다른 약(바레니클린) 또는 병합으로 바꾼다 <sup>[1 454장 p.3566]</sup> / 다른 기준: 해리슨은 고의존 흡연자에게 니코틴 대체요법 고용량을, 짧은 사용에 실패한 사람에게 장기 유지를 「유용한 전략」으로도 적는다 <sup>[1 454장 p.3566]</sup> / 왜 다른가: 고용량·장기 유지는 첫 시도의 설계·짧은 사용 실패에 대한 조언이고, 충분한 기간 반복 실패에는 「매 시도마다 다른 형태의 도움」이 앞선다 / 시험에서는: KMLE · USMLE 모두 두 번 충분히 실패 + 다른 1차 약물 가능 → 바레니클린.</li>\n<li><strong>Z3 새 근거 · 바레니클린의 정신신경 안전성</strong> — 시험 기준: 정신질환 병력만으로 바레니클린을 피하지 않는다 <sup>[3†]</sup> / 다른 기준: 해리슨 454장은 이 문제를 다루지 않는다 <sup>[1 454장 p.3566]</sup> / 왜 다른가: 과거 미국 FDA 박스 경고가 EAGLES 시험 뒤 삭제됐다는 서술은 이 컨테이너에서 원문을 대조하지 못했다 / 시험에서는: KMLE · USMLE 모두 옛 문항에서 「우울·자살 병력 → 바레니클린 주의」가 나올 수 있으니 발문의 기저 정신질환 여부를 확인한다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "부분작용제가 금연에 유리한 이유",
+    "deep": true,
+    "html": "<p>완전작용제인 니코틴은 수용체를 강하게 자극해 큰 도파민 분비를 만들고, 혈중 농도가 떨어지면 금단이 온다. 부분작용제인 바레니클린은 수용체에 높은 친화도로 붙어 <strong>중간 정도의 자극</strong>을 계속 주므로 금단·갈망이 줄고, 동시에 수용체 자리를 차지해 담배를 피워도 니코틴이 추가 보상을 만들지 못한다 — 「피워도 별로」라는 경험이 재발 고리를 끊는다. 이 두 작용 덕분에 바레니클린의 성공 배수(3.1)가 단일 니코틴 제제나 부프로피온(약 2)보다 크다 <sup>[1 454장 p.3566]</sup>. 경련 역치에 영향을 주는 도파민·노르에피네프린 재흡수 억제 기전이 없다는 점이 뇌전증 환자에서 바레니클린을 남기는 약리적 이유이기도 하다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "금연 약물 한눈에 — 효과와 이 환자에서의 자리",
+    "columns": [
+     "약",
+     "기전",
+     "성공 배수(무개입 대비)",
+     "주의·금기",
+     "경련 병력 환자"
+    ],
+    "rows": [
+     [
+      "바레니클린",
+      "니코틴 아세틸콜린 수용체 부분작용제 — 갈망·금단 완화 + 흡연 보상 차단",
+      "3.1 <sup>[1 454장 p.3566]</sup>",
+      "오심·꿈 이상. 신배설 — 중증 신부전 감량 <sup>[2†]</sup>",
+      "사용 가능 — 1차"
+     ],
+     [
+      "부프로피온 서방정",
+      "도파민·노르에피네프린 재흡수 억제 항우울제",
+      "2.0 <sup>[1 454장 p.3566]</sup>",
+      "경련 역치 저하 — 경련 병력·섭식장애·알코올 금단 금기 <sup>[2†]</sup>",
+      "금기"
+     ],
+     [
+      "니코틴 대체요법(패치·껌·사탕·흡입)",
+      "니코틴을 연기 없이 공급해 금단을 채움",
+      "패치 1.9, 4 mg 사탕 2.8 <sup>[1 454장 p.3566]</sup>",
+      "고의존은 고용량·병합, 실패 시 장기 유지 <sup>[1 454장 p.3566]</sup>",
+      "사용 가능 — 이미 두 번 실패"
+     ],
+     [
+      "노르트립틸린",
+      "삼환계 항우울제",
+      "1.8 <sup>[1 454장 p.3566]</sup>",
+      "2차. 항콜린·심전도 이상, 경련 역치 저하",
+      "피한다"
+     ],
+     [
+      "클로니딘",
+      "α2 작용제 — 교감 금단 증상 완화",
+      "2.1 <sup>[1 454장 p.3566]</sup>",
+      "2차. 저혈압·졸음·구갈",
+      "가능하나 2차"
+     ]
+    ],
+    "note": "성공 배수는 해리슨 표 454-3 의 값이며 서로 다른 연구의 무개입 대비 배수라 약끼리 직접 비교한 수치가 아니다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "부프로피온 vs 바레니클린 — 「니코틴 대체요법 실패 뒤의 비니코틴 1차 약물」",
+    "point": "니코틴 대체요법 실패 뒤 기전이 다른 1차 약물로 넘어가는 방향은 두 약 모두에 맞다. 두 약을 가르는 것은 환자의 금기다. 부프로피온은 경련 역치를 낮춰 경련 질환 병력에서 발작이 조절돼 있어도 금기이고 <sup>[2†]</sup>, 바레니클린은 경련 금기가 없고 단독 성공 배수도 가장 크다(3.1 vs 2.0) <sup>[1 454장 p.3566]</sup>. 1차 약물 목록을 외운 뒤 반드시 「이 환자에게 지울 약이 있는가」를 한 번 더 묻는다.",
+    "exception": "경련 위험 요인이 없으면 부프로피온도 1차로 고를 수 있고, 우울 증상 병력이 있으면 항우울제가 더 효과적이다 <sup>[1 454장 p.3566]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "패치 증량 vs 다른 기전 — 「같은 약을 더 세게」",
+    "point": "해리슨은 고의존 흡연자에게 니코틴 대체요법 고용량을, 짧은 사용에 실패한 사람에게 장기 유지를 권한다 <sup>[1 454장 p.3566]</sup>. 그러나 충분한 기간(8주) 두 번 실패했다면 매 시도마다 다른 형태의 도움을 쓰라는 원칙 <sup>[1 454장 p.3566]</sup>에 따라 다른 약 또는 병합으로 바꾸는 것이 우선이다. 증량 단독은 급성 갈망을 다스리지 못한다 — 병합이라면 속효 제제(껌·사탕)를 더한다.",
+    "exception": "바레니클린·부프로피온을 모두 쓸 수 없는 환자라면 패치 고용량 + 속효 니코틴 병합이 현실적 선택이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "노르트립틸린·클로니딘 vs 1차 약물 — 「실패했으니 2차로」",
+    "point": "2차 약물은 1차 약물에 실패했거나 쓸 수 없을 때다 <sup>[1 454장 p.3566]</sup>. 니코틴 대체요법 하나에 실패했다고 1차 약물 전체에 실패한 것이 아니다 — 아직 바레니클린이 남아 있다. 노르트립틸린은 삼환계라 경련 역치를 낮춰 뇌전증 환자에게 더 부적절하다.",
+    "exception": "1차 약물을 모두 시도했거나 금기일 때 클로니딘이 선택지가 된다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "약물은 어느 갈래에서도 상담·금연일 협의·추적 연락과 함께 쓴다 — 조언·약물·상담을 합치면 성공이 거의 세 배가 된다 <sup>[1 454장 p.3566]</sup>.",
+   "금연은 대개 여러 번의 시도를 거친다. 실패 뒤에는 다른 형태의 도움으로 바꿔 다시 시도하게 한다 <sup>[1 454장 p.3566]</sup>.",
+   "1차 약물을 모두 쓸 수 없거나 실패했을 때만 클로니딘·노르트립틸린(2차)으로 간다 <sup>[1 454장 p.3566]</sup> — 경련 병력이면 노르트립틸린은 피한다.",
+   "흡연은 CYP450 을 유도한다 — 금연 뒤 일부 약(클로자핀·올란자핀·테오필린 등)의 혈중 농도가 오를 수 있어 복용약을 점검한다 <sup>[1 454장 p.3565]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "intensity",
+    "name": "니코틴 의존 강도 평가(해리슨)",
+    "kind": "평가",
+    "population": "모든 흡연자",
+    "statement": "흡연 여부·양·기간·과거 금연 경험·현재 의향을 묻는다. 하루 개비 수와 기상 30분 이내 흡연이 니코틴 중독 강도의 유용한 척도다 [[harrison-21: 454장 p.3566]]",
+    "exceptions": "파거스트롬 점수의 구간(≥ 6 높음 등)은 해리슨에 없다 — 문항 자료의 참고치로만 쓴다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "first-line",
+    "name": "1차·2차 금연 약물(해리슨 표 454-3)",
+    "kind": "치료 기준",
+    "population": "금연 의향이 있는 성인 흡연자",
+    "statement": "1차 = 니코틴 껌(1.5)·패치(1.9)·비강 흡입(2.3)·구강 흡입(2.1)·사탕(2 mg 2.0, 4 mg 2.8)·부프로피온(2.0)·바레니클린(3.1); 2차 = 클로니딘(2.1)·노르트립틸린(1.8). 괄호는 무개입 대비 금연 성공 배수 [[harrison-21: 454장 p.3566]]",
+    "exceptions": "클로니딘·노르트립틸린은 1차 약물에 실패했거나 다른 치료를 쓸 수 없는 환자에게 남겨 둔다 [[harrison-21: 454장 p.3566]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "dosing",
+    "name": "비니코틴 1차 약물의 용법(해리슨)",
+    "kind": "치료 기준",
+    "population": "금연 약물을 시작하는 성인",
+    "statement": "부프로피온 300 mg/일 분할, 최대 6개월. 바레니클린 0.5 mg 하루 한 번으로 시작해 8일째 1 mg 하루 두 번, 최대 6개월. 항우울제·바레니클린은 금연일 1–2주 전에 시작한다 [[harrison-21: 454장 p.3566]]",
+    "exceptions": "니코틴 대체요법과 항우울제 병용, 패치 사용 중 급성 갈망에 껌·사탕 추가는 성공률을 높인다. 항우울제는 우울 증상 병력이 있는 흡연자에서 더 효과적이다 [[harrison-21: 454장 p.3566]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "bupropion-seizure",
+    "name": "부프로피온의 경련 금기(허가 정보·지침)",
+    "kind": "금기",
+    "population": "부프로피온을 고려하는 흡연자",
+    "statement": "부프로피온은 용량 의존적으로 경련 위험을 높여 경련 질환 병력·섭식장애(신경성 폭식증·식욕부진증)·알코올·벤조디아제핀 급성 중단·MAO 억제제 병용에서 금기다 [[?uspshs-2008]]",
+    "exceptions": "해리슨 454장은 부프로피온의 금기를 적지 않는다 — 이 금기는 허가 정보·지침의 것이며 원문을 이 컨테이너에서 대조하지 못했다(검토 항목)",
+    "source": "uspshs-2008",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 454: Nicotine Addiction",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 454장 Nicotine Addiction(Burns DM), 인쇄쪽 3563–3566",
+    "checked": "드라이브 장 문서로 본문 대조. p.3563 니코틴이 중독의 주성분·흡연자의 섭취 자기조절·담배 연기 pH 와 폐 흡수, p.3564 흡연의 CYP450 유도와 약물 상호작용, p.3565 전자담배, p.3566 금연(반복 시도·매 시도마다 다른 형태의 도움, 기상 30분 이내 흡연=의존 강도, 금연일 협의, 니코틴 대체요법 3–6개월·고의존 고용량·실패 시 장기 유지, 부프로피온 300 mg 분할 최대 6개월, 바레니클린 0.5 mg→8일째 1 mg bid 최대 6개월, 금연일 1–2주 전 시작, 병합요법, 클로니딘·노르트립틸린 2차, 항우울제는 우울 병력에서 더 효과, 표 454-3 성공 배수). 해리슨은 부프로피온의 경련 금기·바레니클린의 정신신경 안전성을 적지 않는다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "uspshs-2008",
+    "org": "US Public Health Service",
+    "title": "Treating Tobacco Use and Dependence: 2008 Update. Clinical Practice Guideline",
+    "kind": "guideline",
+    "citation": "Fiore MC, Jaén CR, Baker TB, et al. Treating Tobacco Use and Dependence: 2008 Update. Rockville, MD: US Department of Health and Human Services, Public Health Service; 2008",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). 이 컨테이너는 NCBI 접근이 막혀 부프로피온 금기 문구와 약물표를 대조하지 못했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2008",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK63952/"
+   },
+   {
+    "id": "eagles-2016",
+    "org": "The Lancet",
+    "title": "Neuropsychiatric safety and efficacy of varenicline, bupropion, and nicotine patch in smokers with and without psychiatric disorders (EAGLES)",
+    "kind": "trial",
+    "citation": "Anthenelli RM, Benowitz NL, West R, et al. Lancet 2016;387:2507-2520",
+    "checked": "서지만 확인(원문 미대조 — 검토 항목). doi 접근이 막혀 초록·본문을 보지 못했다. 서지 값 자체도 이 컨테이너에서 확인하지 못했다",
+    "doi": "10.1016/S0140-6736(16)30272-0",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2016",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/S0140-6736(16)30272-0"
+   }
+  ],
+  "checks": [
+   {
+    "q": "니코틴 의존 강도를 가늠하는 두 가지 간단한 척도는?",
+    "a": "하루 개비 수와 기상 30분 이내의 흡연."
+   },
+   {
+    "q": "해리슨 표의 1차 금연 약물과 2차 약물은?",
+    "a": "1차 = 니코틴 대체요법(껌·패치·흡입·사탕)·부프로피온·바레니클린, 2차 = 클로니딘·노르트립틸린."
+   },
+   {
+    "q": "경련 병력이 있는 흡연자에서 피할 금연 약물 둘은?",
+    "a": "부프로피온(경련 역치 저하 — 금기)과 삼환계 노르트립틸린."
+   },
+   {
+    "q": "바레니클린의 기전과 시작 방법은?",
+    "a": "니코틴 아세틸콜린 수용체 부분작용제. 금연일 1–2주 전 0.5 mg 하루 한 번 → 8일째 1 mg 하루 두 번, 최대 6개월."
+   },
+   {
+    "q": "우울 증상 병력이 있는 흡연자에서 유리한 약물 계열은?",
+    "a": "항우울제(부프로피온) — 우울 병력에서 더 효과적이다(경련 금기가 없을 때)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.psy.smoking-cessation.varenicline-seizure#v1",
+    "context": "같은 목표, 단서 하나를 바꾼 변형 — 경련 병력 대신 우울 동반",
+    "stem": "38세 여자가 금연하고 싶다며 외래에 왔다. 17세부터 하루 20개비를 피웠고 일어나자마자 10분 안에 첫 담배를 피운다. 1년 전 니코틴 패치를 10주 붙였으나 끊지 못했다. 20대 후반부터 두 차례 우울 삽화로 치료받은 적이 있고, 최근 한 달 동안 기분이 가라앉고 흥미가 줄었다. 자살 생각은 없다. 경련·머리 외상·섭식장애·음주 문제는 없고 복용약은 없다. PHQ-9 14점, 크레아티닌 0.8 mg/dL, 활력징후는 정상이다. 금연과 기분 증상을 함께 고려할 때 가장 적절한 약물은?",
+    "options": [
+     "부프로피온 서방정 경구 투여",
+     "니코틴 패치 단독 재시도",
+     "클로니딘 경구 투여",
+     "노르트립틸린 경구 투여",
+     "로라제팜 경구 투여"
+    ],
+    "answer": 1,
+    "explanation": "니코틴 패치에 실패한 고의존 흡연자라 기전이 다른 1차 약물이 필요하다는 점은 원 문항과 같다. 달라진 단서는 경련 위험 요인이 없고 우울 증상이 동반된 것이다. 부프로피온의 금기(경련 병력·섭식장애·알코올 금단)가 하나도 없고, 항우울제는 우울 증상 병력이 있는 흡연자에서 더 효과적이므로 금연과 기분 증상을 한 약으로 다루는 부프로피온 서방정이 가장 적절하다(바레니클린도 1차로 가능하지만 보기에 없다). 패치 단독 재시도는 같은 방식의 반복이고, 클로니딘·노르트립틸린은 1차 약물을 쓸 수 없을 때의 2차이며, 벤조디아제핀은 금연 약물이 아니다.",
+    "of": "kmle-2026-1126",
+    "changed": "뇌전증·발프로산 병력을 지우고 반복된 우울 삽화와 현재 PHQ-9 14점을 넣음 → 부프로피온의 금기가 사라지고 우울 동반이 항우울제를 유리하게 해 정답이 바레니클린(C)에서 부프로피온 서방정(A)으로",
+    "flip": true
+   },
+   {
+    "id": "cn.psy.smoking-cessation.varenicline-seizure#v2",
+    "context": "같은 목표, 겉모습만 바꾼 변형 — 답은 그대로",
+    "stem": "58세 여자가 심근경색으로 스텐트를 넣은 지 3개월 되어 심장재활 외래에서 금연 상담을 받는다. 하루 25개비를 30년 넘게 피웠고 기상 직후 담배를 찾는다. 퇴원 뒤 니코틴 껌을 두 달 넘게 씹었으나 흡연량이 줄지 않았다. 12년 전 교통사고 뒤 외상 후 뇌전증이 생겨 레베티라세탐을 복용 중이며 2년간 발작은 없었다. 우울감은 없다. 혈압 118/72 mmHg, 크레아티닌 1.0 mg/dL. 금연을 위해 가장 적절한 약물은?",
+    "options": [
+     "클로니딘 경구 투여",
+     "부프로피온 서방정 경구 투여",
+     "니코틴 껌 용량 증량",
+     "노르트립틸린 경구 투여",
+     "바레니클린 경구 투여"
+    ],
+    "answer": 5,
+    "explanation": "환자의 나이·성별·내원 경위와 실패한 니코틴 제제는 바뀌었지만 결정적 단서는 같다 — 니코틴 대체요법을 충분히 시도해 실패했고, 경련 병력(외상 후 뇌전증)이 있다. 비니코틴 1차 약물 가운데 부프로피온은 경련 역치를 낮춰 발작이 조절돼 있어도 금기이고, 노르트립틸린도 삼환계라 피한다. 클로니딘은 2차 약물이며 껌 증량은 같은 방식의 반복이다. 경련 금기가 없고 단독 효과가 가장 큰 바레니클린을 금연일 1–2주 전에 시작하고 상담을 함께한다.",
+    "of": "kmle-2026-1126",
+    "changed": "나이·성별·내원 경위(심근경색 후 심장재활)·실패한 니코틴 제제(껌)·자료 제시 순서를 바꾸고, 결정적 단서(니코틴 대체요법 실패 + 경련 병력)는 유지 → 정답은 그대로 바레니클린",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "금연 약물 선택 — 니코틴 대체요법 실패 뒤",
+  "geo": {
+   "title": "금연 약물 선택 — 니코틴 대체요법 실패 뒤",
+   "w": 454,
+   "h": 735.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "금연 의향 있는 흡연자 —",
+      "의존 강도(개비 수·기상",
+      "30분 내 흡연)와 과거 시도",
+      "확인"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "이전 약물의 종류·용량·기간·",
+      "순응도, 경련·섭식장애·",
+      "알코올 금단·우울·신기능을",
+      "확인한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 180.0
+    },
+    {
+     "id": "prior",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "니코틴 대체요법을 충분히",
+      "시도해 실패했는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 344.0
+    },
+    {
+     "id": "nrt",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "니코틴 대체요법(고의존은",
+      "고용량 + 속효 제제 병합)",
+      "또는 바레니클린 + 상담"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 474.0
+    },
+    {
+     "id": "seizure",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "경련 위험 요인(경련 병력·",
+      "섭식장애·알코올/",
+      "벤조디아제핀 금단)이",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 474.0
+    },
+    {
+     "id": "vare",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "바레니클린 — 금연일 1–2주",
+      "전 시작 + 상담 (부프로피온·",
+      "노르트립틸린 피함)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 638.0
+    },
+    {
+     "id": "either",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "바레니클린 또는 부프로피온",
+      "— 우울 증상 병력이면",
+      "부프로피온도 유리"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 638.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       114
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "prior",
+     "points": [
+      [
+       227.0,
+       278.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       344.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "확인 완료"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 324.0
+     }
+    },
+    {
+     "from": "prior",
+     "to": "nrt",
+     "points": [
+      [
+       194.3,
+       408.0
+      ],
+      [
+       194.3,
+       418.0
+      ],
+      [
+       114.0,
+       418.0
+      ],
+      [
+       114.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오(첫 시도)"
+      ],
+      "w": 90.5,
+      "h": 17,
+      "x": 68.8,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "prior",
+     "to": "seizure",
+     "points": [
+      [
+       259.7,
+       408.0
+      ],
+      [
+       259.7,
+       424.0
+      ],
+      [
+       340.0,
+       424.0
+      ],
+      [
+       340.0,
+       474.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 330.5,
+      "y": 454.0
+     }
+    },
+    {
+     "from": "seizure",
+     "to": "vare",
+     "points": [
+      [
+       307.3,
+       572.0
+      ],
+      [
+       307.3,
+       582.0
+      ],
+      [
+       114.0,
+       582.0
+      ],
+      [
+       114.0,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 618.0
+     }
+    },
+    {
+     "from": "seizure",
+     "to": "either",
+     "points": [
+      [
+       372.7,
+       572.0
+      ],
+      [
+       372.7,
+       588.0
+      ],
+      [
+       340.0,
+       588.0
+      ],
+      [
+       340.0,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 618.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "금연 의향 있는 흡연자 — 의존 강도(개비 수·기상 30분 내 흡연)와 과거 시도 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "이전 약물의 종류·용량·기간·순응도, 경련·섭식장애·알코올 금단·우울·신기능을 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "이전 약물의 종류·용량·기간·순응도, 경련·섭식장애·알코올 금단·우울·신기능을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "확인 완료",
+      "to": 3,
+      "toText": "니코틴 대체요법을 충분히 시도해 실패했는가?"
+     }
+    ]
+   },
+   {
+    "id": "prior",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "니코틴 대체요법을 충분히 시도해 실패했는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오(첫 시도)",
+      "to": 4,
+      "toText": "니코틴 대체요법(고의존은 고용량 + 속효 제제 병합) 또는 바레니클린 + 상담"
+     },
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "경련 위험 요인(경련 병력·섭식장애·알코올/벤조디아제핀 금단)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "nrt",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "니코틴 대체요법(고의존은 고용량 + 속효 제제 병합) 또는 바레니클린 + 상담",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "seizure",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "경련 위험 요인(경련 병력·섭식장애·알코올/벤조디아제핀 금단)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "바레니클린 — 금연일 1–2주 전 시작 + 상담 (부프로피온·노르트립틸린 피함)"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "바레니클린 또는 부프로피온 — 우울 증상 병력이면 부프로피온도 유리"
+     }
+    ]
+   },
+   {
+    "id": "vare",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "바레니클린 — 금연일 1–2주 전 시작 + 상담 (부프로피온·노르트립틸린 피함)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "either",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "바레니클린 또는 부프로피온 — 우울 증상 병력이면 부프로피온도 유리",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1126"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
+  "id": "cn.pulm.community-acquired-pneumonia.curb65-site-of-care",
+  "title": "지역사회획득폐렴의 치료 장소 — CURB-65 다섯 항목을 모두 세고, 점수와 산소·복용·순응으로 외래·입원·중환자실을 가른다",
+  "objective": "지역사회획득폐렴에서 CURB-65(의식·요소·호흡수·혈압·나이)를 빠짐없이 세어 외래·입원·중환자실을 정하고, 점수와 별개로 입원이 필요한 조건(대기 산소포화도 < 92 %, 경구 불가, 순응 불가)과 중환자실 직행 조건(승압제 쇼크·삽관 필요, 부기준 3개 이상)을 가른다",
+  "objectiveKind": "다음 처치",
+  "condition": "지역사회획득폐렴 — 중증도와 치료 장소",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Pulmonology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "6205cf021ee60958",
+  "summary": [
+   "폐렴의 사망 위험은 감염이 얼마나 전신으로 번져 장기 관류·기능을 흔드는지로 정해진다. CURB-65 는 그 흔들림을 의식(C)·요소(U)·호흡수(R)·혈압(B)·나이(65)의 다섯 가지로 센다 [[harrison-21: 126장 p.1012]].",
+   "항목: 혼돈, 요소 > 7 mmol/L(BUN 약 > 19–20 mg/dL), 호흡수 ≥ 30회/분, 수축기 ≤ 90 또는 이완기 ≤ 60 mmHg, 나이 ≥ 65세 — 각 1점 [[harrison-21: 126장 p.1012]].",
+   "해리슨: 0점(30일 사망 1.5 %)은 외래, 1–2점은 입원(점수가 나이 때문뿐이면 입원이 필요 없을 수 있음), ≥ 3점은 사망 22 % 로 중환자실이 필요할 수 있다 [[harrison-21: 126장 p.1012]].",
+   "점수와 관계없이 대기 산소포화도 < 92 %, 경구 섭취 불가, 인지·주거 문제로 순응이 어려우면 입원이다 [[harrison-21: 126장 p.1012]].",
+   "CURB-65·PSI 모두 중환자실 필요를 정확히 가르지 못한다. 승압제가 필요한 패혈성 쇼크나 삽관이 필요한 호흡부전(주기준)은 중환자실 직행, 부기준 9개 중 3개 이상은 중환자실·고도 감시 병상이다 [[harrison-21: 126장 p.1012]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>지역사회획득폐렴</strong>은 병원 밖에서 생긴 폐 실질 감염이다. 이 정리본의 목표는 원인균이나 항생제 종류가 아니라 <strong>어디서 치료할지</strong> — 외래·일반 병동·중환자실 — 를 정하는 것이다. 입원 비용은 외래의 약 20배이지만, 중환자실 입실이 늦으면 사망률이 오른다 <sup>[1 126장 p.1012]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 폐는 기침·점액섬모 청소·폐포 대식세포로 들어온 균을 치운다. 균이 이 방어를 넘으면 폐포에 염증 삼출물이 차(폐경화) 가스 교환이 떨어진다. 염증이 전신으로 번지면 혈관이 확장되고 새어 혈압이 떨어지며(B), 콩팥 관류가 줄어 요소가 오르고(U), 뇌 관류·대사 장애로 혼돈이 오고(C), 저산소혈증과 대사성 산증을 보상하려 호흡이 빨라진다(R). 나이(65)는 같은 감염에서도 예비력이 적다는 뜻이다. CURB-65 는 이 <strong>장기 반응</strong>을 세는 점수라, 병변 크기보다 전신 영향을 본다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>저혈압(수축기 ≤ 90 또는 이완기 ≤ 60)</strong>: 패혈증성 혈관 확장·혈관 누출.</li>\n<li><strong>BUN 상승</strong>: 관류 저하·탈수로 인한 신전성 질소혈증.</li>\n<li><strong>빈호흡 ≥ 30</strong>: 저산소혈증·산증 보상, 폐 탄성 저하.</li>\n<li><strong>혼돈</strong>: 뇌 관류 저하·패혈증 뇌병증.</li>\n<li><strong>의식 명료·단일 폐엽</strong>: 안심 소견이 아니다 — 다른 항목이 채워지면 중증이다.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 점수를 빠짐없이 센다",
+    "deep": false,
+    "html": "<p>CURB-65 항목 표의 다섯 항목을 <strong>하나씩 모두</strong> 센다 <sup>[1 126장 p.1012]</sup>. 흔한 실수는 한 항목(의식 명료)만 보고 가볍게 판단하는 것, 그리고 BUN mg/dL 을 요소 mmol/L 기준과 맞추지 않는 것이다. 이어서 점수와 별개의 입원 조건(포화도 &lt; 92 %·경구 불가·순응 불가)과 중환자실 기준(주·부기준)을 확인한다 <sup>[1 126장 p.1012]</sup>.</p>\n<p>PSI 는 20개 변수로 5등급(사망 0.1–29.2 %)을 매겨 저위험군을 더 정확히 가르지만 계산이 번거롭다. 1–2등급은 외래, 3등급은 관찰 병상이 이상적이다 <sup>[1 126장 p.1012]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>활력징후·의식·대기 산소포화도</strong>: 점수와 입원 조건.</li>\n<li><strong>BUN·전해질·혈구(백혈구·혈소판)</strong>: 요소 항목과 부기준(BUN ≥ 20, 백혈구 &lt; 4,000, 혈소판 &lt; 100,000).</li>\n<li><strong>동맥혈 가스(PaO₂/FiO₂)</strong>: 부기준 ≤ 250.</li>\n<li><strong>흉부 X선</strong>: 확진과 다엽 침윤(부기준) <sup>[1 126장 p.1012]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료 — 장소와 첫 항생제",
+    "deep": false,
+    "html": "<ul>\n<li>모든 경우 <strong>항생제는 가능한 한 빨리</strong> 시작한다 <sup>[1 126장 p.1013]</sup>. 초기 치료는 가장 흔한 원인균을 덮는 경험적 치료다.</li>\n<li>치료 장소 표를 따른다. 입원 환자는 전통적으로 정맥으로 시작하고, 흡수가 좋은 약은 선택된 환자에게 처음부터 경구로 줄 수 있다 <sup>[1 126장 p.1015]</sup>.</li>\n<li>재평가: 입원 뒤에도 혈압·호흡수·산소 요구·의식을 반복해 본다. 병동에서 악화해 옮긴 환자는 처음부터 중환자실에서 본 환자보다 사망률이 높다 <sup>[1 126장 p.1013]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>점수가 입원을 가리켜도 나이만으로 1–2점이면 외래가 가능할 수 있다 <sup>[1 126장 p.1012]</sup>.</li>\n<li>점수가 0점이어도 포화도 &lt; 92 %·경구 불가·순응 불가면 입원한다 <sup>[1 126장 p.1012]</sup>.</li>\n<li>CURB-65 는 중환자실 판단에 쓰지 않는다 — 주·부기준으로 <sup>[1 126장 p.1012]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 1점과 2점의 자리</strong> — 시험 기준: 0–1점 외래, ≥ 2점 입원, ≥ 3점 중증(원 문항 해설) <sup>[2†]</sup> / 다른 기준: 해리슨은 0점 외래, 1–2점 입원(나이 탓이면 예외), ≥ 3점 사망 22 % 로 중환자실이 필요할 수 있다고 적는다 <sup>[1 126장 p.1012]</sup> / 왜 다른가: 점수 경계에서 입원을 얼마나 넓게 잡는지가 출처마다 다르다 / 시험에서는: 3점은 두 기준 모두 입원이라 답이 같다. 1점 문항이 나오면 KMLE 는 BTS 식(외래 고려)으로, 해리슨 기반 USMLE 해설은 「나이 외 항목이면 입원」으로 갈릴 수 있으니 나머지 조건(포화도·복용)을 함께 본다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 PSI 가 더 정확한데 CURB-65 를 쓰나",
+    "deep": true,
+    "html": "<p>PSI 는 동반 질환·검사값을 포함한 20개 변수로 저위험군을 더 잘 골라내 입원을 줄이지만, 응급실에서 바로 계산하기 어렵다. CURB-65 는 침상에서 다섯 가지만 세면 된다 — 대신 둘 다 중환자실 필요를 정확히 가르지 못하므로, 중환자실은 주·부기준이라는 별도 도구로 결정한다 <sup>[1 126장 p.1012]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "CURB-65 항목과 흔한 누락",
+    "columns": [
+     "항목",
+     "기준",
+     "놓치기 쉬운 점"
+    ],
+    "rows": [
+     [
+      "C 혼돈",
+      "새로 생긴 지남력 장애",
+      "의식 명료 = 0점일 뿐, 나머지 항목은 따로 센다"
+     ],
+     [
+      "U 요소",
+      "&gt; 7 mmol/L (BUN 약 &gt; 19–20 mg/dL)",
+      "단위 — BUN 25 mg/dL 은 1점"
+     ],
+     [
+      "R 호흡수",
+      "≥ 30회/분",
+      "22회/분은 0점"
+     ],
+     [
+      "B 혈압",
+      "수축기 ≤ 90 또는 이완기 ≤ 60",
+      "둘 중 하나면 1점"
+     ],
+     [
+      "65 나이",
+      "≥ 65세",
+      "나이만으로 1–2점이면 입원이 필수는 아님"
+     ]
+    ],
+    "note": "항목 기준은 <sup>[1 126장 p.1012]</sup>."
+   },
+   {
+    "title": "점수·조건별 치료 장소",
+    "columns": [
+     "조건",
+     "장소",
+     "항생제 경로",
+     "근거"
+    ],
+    "rows": [
+     [
+      "CURB-65 0점, 포화도 ≥ 92 %, 경구 가능, 순응 가능",
+      "외래",
+      "경구",
+      "<sup>[1 126장 p.1012]</sup>"
+     ],
+     [
+      "CURB-65 1–2점(나이 외 항목 포함) 또는 포화도 &lt; 92 %·경구 불가·순응 불가",
+      "입원",
+      "대개 정맥으로 시작",
+      "<sup>[1 126장 p.1012]</sup> <sup>[1 126장 p.1015]</sup>"
+     ],
+     [
+      "CURB-65 ≥ 3점",
+      "입원 — 중환자실 필요 여부 평가",
+      "정맥",
+      "<sup>[1 126장 p.1012]</sup>"
+     ],
+     [
+      "주기준 1개(승압제 쇼크·삽관) 또는 부기준 ≥ 3개",
+      "중환자실(또는 고도 감시)",
+      "정맥",
+      "<sup>[1 126장 p.1012]</sup>"
+     ]
+    ],
+    "note": "해리슨은 입원 환자도 흡수가 좋은 약(플루오로퀴놀론 등)은 선택된 환자에게 처음부터 경구로 줄 수 있다고 적는다 <sup>[1 126장 p.1015]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "의식이 명료하고 한 폐엽뿐이니 외래 경구 항생제?",
+    "point": "의식은 CURB-65 다섯 항목 중 하나일 뿐이다. 나이 ≥ 65·요소 상승·저혈압이 겹치면 의식이 명료해도 3점이고 입원·정맥 항생제 대상이다. 병변 범위(다엽)는 CURB-65 항목이 아니라 중환자실 부기준이다.",
+    "exception": "0점(혹은 나이만으로 1점)이고 포화도 ≥ 92 %·경구 복용·추적이 가능하면 외래가 맞다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "3점이면 무조건 중환자실?",
+    "point": "해리슨은 ≥ 3점을 「중환자실이 필요할 수 있다」로 적고, 중환자실 결정은 CURB-65 가 아니라 주·부기준으로 한다고 쓴다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "나이만으로 1–2점이면 입원이 필수는 아니다 — 해리슨의 예외 <sup>[1 126장 p.1012]</sup>.",
+   "BTS 는 0–1점 외래, 2점 입원 고려로 선을 긋는다(시험 쟁점 Z1) <sup>[2†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "curb65-harrison",
+    "name": "CURB-65 와 치료 장소(해리슨)",
+    "kind": "중증도 점수",
+    "population": "지역사회획득폐렴 성인",
+    "statement": "혼돈, 요소 > 7 mmol/L, 호흡수 ≥ 30회/분, 수축기 ≤ 90 또는 이완기 ≤ 60 mmHg, 나이 ≥ 65세 각 1점. 0점 외래(30일 사망 1.5 %), 1–2점 입원(나이 탓이면 불필요할 수 있음), ≥ 3점 사망 22 % — 중환자실이 필요할 수 있음 [[harrison-21: 126장 p.1012]]",
+    "exceptions": "산소포화도 < 92 %(대기)·경구 불가·순응 불가면 점수와 관계없이 입원. 중환자실 결정은 CURB-65 가 아니라 IDSA/ATS 주·부기준으로 [[harrison-21: 126장 p.1012]]",
+    "source": "harrison-21",
+    "locator": "126장 p.1012 Site of Care",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "severe-cap-idsa",
+    "name": "중증 지역사회획득폐렴 기준(IDSA/ATS, 해리슨 Table 126-3)",
+    "kind": "중증도 기준",
+    "population": "지역사회획득폐렴",
+    "statement": "주기준: 침습적 기계환기가 필요한 호흡부전, 승압제가 필요한 패혈성 쇼크. 부기준: 호흡수 ≥ 30, PaO₂/FiO₂ ≤ 250, 다엽 침윤, 혼돈, BUN ≥ 20 mg/dL, 백혈구 < 4,000, 혈소판 < 100,000, 체온 < 36 ℃, 적극적 수액이 필요한 저혈압. 주기준 1개 → 중환자실 직행, 부기준 3개 이상 → 중환자실 또는 고도 감시 [[harrison-21: 126장 p.1012]]",
+    "exceptions": "일반 병동 입원 후 악화해 중환자실로 옮긴 환자가 처음부터 중환자실에서 본 비슷한 환자보다 사망률이 높다 — 경계선 환자는 높은 쪽으로 [[harrison-21: 126장 p.1012]] [[harrison-21: 126장 p.1013]]",
+    "source": "harrison-21",
+    "locator": "126장 p.1012 Table 126-3",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "curb65-bts",
+    "name": "CURB-65 치료 장소(BTS)",
+    "kind": "중증도 점수",
+    "population": "지역사회획득폐렴 성인",
+    "statement": "0–1점 외래 고려, 2점 단기 입원 또는 병원 감독 외래, 3–5점 중증 — 입원, 4–5점은 중환자실 평가",
+    "exceptions": "원문 미대조 — 원 문항 해설(「≥ 2점 입원」)과 기억에 근거",
+    "source": "bts-cap-2009",
+    "locator": "CURB-65 치료 장소(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 126: Pneumonia",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 126장 p.1009–1019",
+    "checked": "본문 대조(드라이브 문서, 126장) — p.1010 치료 장소별 원인균(Table 126-1); p.1012 입원 비용 20배·늦은 중환자실 입실의 사망 증가, PSI 5등급 사망률(0.1·0.6·2.8·8.2·29.2 %), CURB-65 다섯 항목(요소 > 7 mmol/L, 호흡수 ≥ 30, 수축기 ≤ 90 또는 이완기 ≤ 60, 나이 ≥ 65)과 0점 외래(1.5 %)·1–2점 입원(나이 탓이면 예외)·≥ 3점 22 %, 대기 포화도 < 92 %·경구 불가·순응 불가 시 입원, PSI·CURB-65 모두 중환자실 판단에 부정확, Table 126-3 주·부기준; p.1013 병동 입원 후 악화한 환자의 높은 사망률, 치료는 가능한 한 빨리 시작",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "bts-cap-2009",
+    "org": "British Thoracic Society",
+    "title": "BTS guidelines for the management of community acquired pneumonia in adults: update 2009",
+    "kind": "guideline",
+    "citation": "Lim WS, Baudouin SV, George RC, et al. Thorax 2009;64(Suppl 3):iii1–iii55",
+    "checked": "서지만 — PubMed·doi 접근 차단으로 본문 미대조. 0–1 외래·2 입원 고려·3–5 중증 구분은 기억에 근거",
+    "doi": "10.1136/thx.2009.121434",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2009",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1136/thx.2009.121434"
+   }
+  ],
+  "checks": [
+   {
+    "q": "72세, 의식 명료, 혈압 88/58, 호흡수 22, BUN 25 mg/dL 의 CURB-65 점수는?",
+    "a": "나이(1) + 요소(1) + 혈압(1) = 3점."
+   },
+   {
+    "q": "CURB-65 0점인데 입원해야 하는 경우 세 가지는?",
+    "a": "대기 산소포화도 < 92 %, 경구 섭취 불가, 인지·주거 문제로 순응이 어려울 때."
+   },
+   {
+    "q": "중환자실 직행 주기준 두 가지는?",
+    "a": "침습적 기계환기가 필요한 호흡부전, 승압제가 필요한 패혈성 쇼크."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.community-acquired-pneumonia.curb65-site-of-care#v1",
+    "context": "같은 폐렴 소견, 점수를 만드는 단서만 바꿈",
+    "stem": "34세 남자가 4일간 기침과 누런 가래, 발열로 왔다. 기저 질환은 없고 약을 먹을 수 있으며 혼자 사는 집에서 지낸다. 의식은 명료하다. 혈압 124/78 mmHg, 호흡수 20회/분, 체온 38.4 ℃, 대기 중 산소포화도 96 %. BUN 12 mg/dL, 백혈구 13,200 /mm³ 이고 흉부 X선에서 우하엽 폐경화가 보인다. 치료 장소 결정으로 가장 적절한 것은?",
+    "options": [
+     "외래에서 경구 항생제 처방 후 추적",
+     "입원하여 경험적 정맥 항생제",
+     "중환자실 입원",
+     "항바이러스제 단독 외래 치료",
+     "스테로이드 단독 투여"
+    ],
+    "answer": 1,
+    "explanation": "의식·요소·호흡수·혈압·나이 어느 것도 기준에 해당하지 않아 CURB-65 0점(30일 사망 약 1.5 %)이고, 대기 포화도 ≥ 92 %·경구 가능·순응 가능이라 입원 조건도 없다 — 외래 경구 항생제가 맞다. 원래 문항에서 입원을 만든 것은 나이·요소·저혈압의 3점이었다.",
+    "of": "kmle-2026-0068",
+    "changed": "72세·혈압 88/58·BUN 25 → 34세·혈압 124/78·BUN 12(포화도 96 %, 경구 가능) → CURB-65 0점이 되어 정답이 입원 정맥 항생제에서 외래 경구 항생제로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.community-acquired-pneumonia.curb65-site-of-care#v2",
+    "context": "겉모습만 바꿈 — 이완기 혈압으로 혈압 항목을 채움",
+    "stem": "78세 여자가 이틀 전부터 열이 나고 가래가 섞인 기침을 한다며 딸과 함께 왔다. 흉부 X선에서 좌하엽에 폐경화가 있다. BUN 28 mg/dL, 백혈구 15,800 /mm³. 혈압 102/58 mmHg, 호흡수 24회/분, 체온 38.9 ℃, 대기 중 산소포화도 93 %. 이름·날짜·장소를 정확히 말한다. 치료 장소 결정으로 가장 적절한 것은?",
+    "options": [
+     "외래 경구 항생제 후 귀가",
+     "입원하여 경험적 정맥 항생제 시작",
+     "3일 뒤 외래 재평가만",
+     "항바이러스제 단독 투여",
+     "스테로이드 단독 투여"
+    ],
+    "answer": 2,
+    "explanation": "의식은 명료하지만 나이 ≥ 65(1), 요소 상승(1), 이완기 ≤ 60 mmHg(1)로 CURB-65 3점이다. 수축기가 90 을 넘어도 이완기 ≤ 60 이면 혈압 항목이 채워진다. 입원해 경험적 정맥 항생제를 시작하고 중환자실 기준(주·부기준)을 확인한다.",
+    "of": "kmle-2026-0068",
+    "changed": "성별(여자)·나이(78세)·증상 기간·폐엽(좌하엽)·제시 순서를 바꾸고 혈압은 이완기 기준(수축기 102/이완기 58)으로 바꿈, 나이·요소·혈압 3점은 그대로 → 답은 여전히 입원 정맥 항생제",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "지역사회획득폐렴 — 중환자실 기준부터, 그다음 점수와 입원 조건",
+  "geo": {
+   "title": "지역사회획득폐렴 — 중환자실 기준부터, 그다음 점수와 입원 조건",
+   "w": 454,
+   "h": 684.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "흉부 X선으로 확인된",
+      "지역사회획득폐렴"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "혈압·호흡수·의식·BUN·대기",
+      "산소포화도, 경구 섭취·주거·",
+      "인지(순응) 확인"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 146.0
+    },
+    {
+     "id": "major",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "승압제 쇼크·삽관",
+      "필요(주기준) 또는 부기준",
+      "3개 이상인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "icu",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "중환자실(또는 고도 감시",
+      "병상) — 정맥 항생제 즉시"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 440.0
+    },
+    {
+     "id": "curb",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "CURB-65 점수와 입원",
+      "조건(포화도 < 92 %·경구",
+      "불가·순응 불가)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 440.0
+    },
+    {
+     "id": "admit",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "입원 — 경험적 항생제(대개",
+      "정맥) 즉시, 3점 이상은 악화",
+      "감시를 촘촘히"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 587.0
+    },
+    {
+     "id": "opd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "외래 경구 항생제 + 추적"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 587.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       80
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       90
+      ],
+      [
+       227.0,
+       146.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "major",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "major",
+     "to": "icu",
+     "points": [
+      [
+       194.3,
+       374.0
+      ],
+      [
+       194.3,
+       384.0
+      ],
+      [
+       114.0,
+       384.0
+      ],
+      [
+       114.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "major",
+     "to": "curb",
+     "points": [
+      [
+       259.7,
+       374.0
+      ],
+      [
+       259.7,
+       390.0
+      ],
+      [
+       340.0,
+       390.0
+      ],
+      [
+       340.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "curb",
+     "to": "admit",
+     "points": [
+      [
+       307.3,
+       521.0
+      ],
+      [
+       307.3,
+       531.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       114.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "1점 이상(나이 외 항목) 또는 입원",
+       "조건 있음"
+      ],
+      "w": 177.8,
+      "h": 30,
+      "x": 25.1,
+      "y": 554.0
+     }
+    },
+    {
+     "from": "curb",
+     "to": "opd",
+     "points": [
+      [
+       372.7,
+       521.0
+      ],
+      [
+       372.7,
+       537.0
+      ],
+      [
+       340.0,
+       537.0
+      ],
+      [
+       340.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "0점(또는 나이만) · 입원 조건 없음"
+      ],
+      "w": 184.2,
+      "h": 17,
+      "x": 247.9,
+      "y": 567.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "흉부 X선으로 확인된 지역사회획득폐렴",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "혈압·호흡수·의식·BUN·대기 산소포화도, 경구 섭취·주거·인지(순응) 확인"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "혈압·호흡수·의식·BUN·대기 산소포화도, 경구 섭취·주거·인지(순응) 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "승압제 쇼크·삽관 필요(주기준) 또는 부기준 3개 이상인가?"
+     }
+    ]
+   },
+   {
+    "id": "major",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "승압제 쇼크·삽관 필요(주기준) 또는 부기준 3개 이상인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "중환자실(또는 고도 감시 병상) — 정맥 항생제 즉시"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "CURB-65 점수와 입원 조건(포화도 < 92 %·경구 불가·순응 불가)"
+     }
+    ]
+   },
+   {
+    "id": "icu",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "중환자실(또는 고도 감시 병상) — 정맥 항생제 즉시",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "curb",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "CURB-65 점수와 입원 조건(포화도 < 92 %·경구 불가·순응 불가)",
+    "note": "",
+    "branches": [
+     {
+      "label": "1점 이상(나이 외 항목) 또는 입원 조건 있음",
+      "to": 6,
+      "toText": "입원 — 경험적 항생제(대개 정맥) 즉시, 3점 이상은 악화 감시를 촘촘히"
+     },
+     {
+      "label": "0점(또는 나이만) · 입원 조건 없음",
+      "to": 7,
+      "toText": "외래 경구 항생제 + 추적"
+     }
+    ]
+   },
+   {
+    "id": "admit",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "입원 — 경험적 항생제(대개 정맥) 즉시, 3점 이상은 악화 감시를 촘촘히",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "opd",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "외래 경구 항생제 + 추적",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0068"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
+  "id": "cn.pulm.copd-exacerbation.hypercapnic-failure-niv",
+  "title": "COPD 급성 악화의 급성 고탄산 호흡부전 — 금기가 없으면 비침습적 양압환기가 먼저, 삽관은 금기·실패 때",
+  "objective": "COPD 급성 악화에서 동맥혈 가스로 급성 고탄산 호흡부전(산혈증 + PaCO₂ > 45 mmHg)을 알아보고, 의식·협조·기도 보호·혈역학이 유지되면 비침습적 양압환기를 고르며, 고유량 비강 산소·고농도 산소·즉시 삽관·헬리옥스가 각각 어떤 조건에서 답이 되는지 가른다",
+  "objectiveKind": "치료",
+  "condition": "COPD 급성 악화 — 급성 고탄산 호흡부전",
+  "topic": "Pulmonology",
+  "seeAlso": [
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "6789c4287fdc4d36",
+  "summary": [
+   "COPD 악화에서는 기도 저항과 동적 과팽창이 늘어 호흡근이 해야 할 일이 커지고, 호흡근이 지치면 폐포 환기가 줄어 PaCO₂ 가 오른다. 문제는 산소화보다 **환기**다.",
+   "PaCO₂ 가 10 mmHg 오를 때 pH 는 급성이면 약 0.08, 만성이면 약 0.03 떨어진다. PaCO₂ > 45 mmHg 의 환기부전에 산혈증이 동반되면 급성(만성 위의 급성) 호흡부전이다 [[harrison-21: 292장 p.2186]].",
+   "PaCO₂ > 45 mmHg 의 호흡부전에서 비침습적 양압환기(NIPPV)를 시작하면 사망률·삽관 필요·치료 합병증·재원 기간이 모두 준다 [[harrison-21: 292장 p.2189]].",
+   "NIPPV 금기 — 심혈관 불안정, 의식 저하, 협조 불가, 다량 분비물·배출 불가, 마스크를 못 댈 안면 기형·외상, 극도 비만, 심한 화상. 이때와 초기 치료에도 심한 호흡곤란·생명을 위협하는 저산소혈증·심한 고탄산혈증/산혈증·호흡정지가 있으면 삽관한다 [[harrison-21: 292장 p.2189]].",
+   "산소는 저산소혈증을 교정할 만큼 준다. 목표 포화도는 해리슨 ≥ 90 %, GOLD 88–92 % 로 자료마다 다르다(시험 쟁점 Z1) [[harrison-21: 292장 p.2189]] [[?gold-2024]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>COPD 급성 악화</strong>는 호흡곤란·기침·가래가 평소 변동을 넘어 악화되어 치료를 바꿔야 하는 상태다. 이 정리본의 목표는 악화 가운데 <strong>급성 고탄산 호흡부전</strong> — PaCO₂ &gt; 45 mmHg 의 환기부전에 산혈증이 동반된 상태 <sup>[1 292장 p.2186]</sup> — 에서 어떤 호흡 보조를 고르는가다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 호흡에서는 호흡근이 적은 일로 충분한 폐포 환기를 만들어 PaCO₂ 를 40 mmHg 근처로 유지한다.</p>\n<ol>\n<li><strong>악화 → 기도 저항·과팽창 증가</strong>: 감염 등으로 기도 염증·분비물이 늘면 호기 시간 안에 숨을 다 내쉬지 못해 공기가 갇힌다(동적 과팽창, 내인성 PEEP).</li>\n<li><strong>호흡근 부담 증가</strong>: 흡기를 시작하려면 내인성 PEEP 를 먼저 이겨야 하고, 편평해진 횡격막은 효율이 떨어진다.</li>\n<li><strong>환기 부족 → PaCO₂ 상승</strong>: 호흡근이 지치면 얕고 빠른 호흡이 되어 사강 비율이 커지고 폐포 환기가 줄어 PaCO₂ 가 오른다.</li>\n<li><strong>산혈증</strong>: 만성 고탄산혈증 환자는 신장이 HCO₃⁻ 를 올려 pH 를 지켜 왔는데(PaCO₂ 10 mmHg 당 pH 0.03), 급성으로 더 오르면 보상이 따라가지 못해 pH 가 떨어진다(0.08) <sup>[1 292장 p.2186]</sup>.</li>\n</ol>\n<p>NIPPV 는 흡기 압력으로 호흡근 일을 덜어 주고 호기 압력으로 내인성 PEEP 를 상쇄해, 폐포 환기를 늘려 PaCO₂ 를 낮춘다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>보조 호흡근 사용·입술 오므리기·말을 잇지 못함</strong>: 호흡 일의 증가.</li>\n<li><strong>졸림·혼돈</strong>: 고탄산혈증의 CO₂ 마취 효과. 의식 수준은 NIPPV 가능 여부를 가르는 소견이기도 하다.</li>\n<li><strong>pH ↓ · PaCO₂ ↑ · HCO₃⁻ ↑</strong>: 만성 위의 급성 호흡성 산증.</li>\n<li><strong>흉부 X선 과팽창, 새 침윤 없음</strong>: 폐렴·기흉·심부전 같은 다른 원인·동반 질환을 배제하는 근거. 폐색전증도 악화 중 늘어나므로 고려한다 <sup>[1 292장 p.2189]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>고탄산성 vs 저산소성 호흡부전</strong>: PaCO₂ 가 오르고 pH 가 떨어졌으면 환기 문제 → 환기 보조(NIPPV). PaCO₂ 가 정상·낮고 산소화만 나쁘면(폐렴 등) 산소화 도구(고유량 비강 산소 등)가 먼저다.</li>\n<li><strong>NIPPV 가능 vs 삽관 필요</strong>: 금기 목록(요약·기준표)이 가른다 <sup>[1 292장 p.2189]</sup>.</li>\n<li><strong>고탄산혈증 있지만 산혈증 없음</strong>: 만성 보상 상태 — NIV 적응이 아니다 <sup>[3†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>동맥혈 가스</strong>: 진행된 COPD, 고탄산 병력, 의식 변화(혼돈·졸림), 심한 고통이 있으면 필수 <sup>[1 292장 p.2189]</sup>. NIPPV 1–2시간 뒤 다시 잰다.</li>\n<li><strong>흉부 X선</strong>: 중등도 이상 고통이나 국소 소견이 있으면 — 약 25 % 에서 이상(폐렴·심부전이 흔함) <sup>[1 292장 p.2189]</sup>.</li>\n<li><strong>폐기능 검사</strong>: 악화의 진단·치료에는 도움이 안 된다 <sup>[1 292장 p.2189]</sup>.</li>\n<li><strong>입원 적응</strong>: 호흡성 산증·고탄산혈증, 새롭거나 악화된 저산소혈증, 중증 기저 질환, 집에서 관찰이 어려운 경우 <sup>[1 292장 p.2189]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료 — 환기를 돕는 도구 고르기",
+    "deep": false,
+    "html": "<ol>\n<li><strong>바탕 치료</strong>: 흡입 베타 작용제·항무스카린제, 전신 스테로이드(프레드니솔론 30–40 mg 5–10일 수준), 적응 시 항생제 <sup>[1 292장 p.2189]</sup>.</li>\n<li><strong>산소</strong>: 저산소혈증을 교정할 만큼. 해리슨은 포화도 ≥ 90 % 를 적고, 산소가 분당 환기를 줄이지는 않지만 V/Q 변화로 PaCO₂ 를 약간 올릴 수 있으며 그래도 필요한 산소를 주저하지 말라고 한다 <sup>[1 292장 p.2189]</sup>.</li>\n<li><strong>NIPPV</strong>: PaCO₂ &gt; 45 mmHg 의 호흡부전에서 사망·삽관·합병증·재원을 줄인다 <sup>[1 292장 p.2189]</sup>. 지침은 pH ≤ 7.35 를 함께 요구한다 <sup>[3†]</sup>.</li>\n<li><strong>삽관</strong>: NIPPV 금기, 또는 초기 치료에도 심한 호흡곤란·생명 위협 저산소혈증·심한 고탄산혈증/산혈증·뚜렷한 의식 저하·호흡정지·혈역학 불안정 <sup>[1 292장 p.2189]</sup>.</li>\n</ol>\n<p>재평가: NIPPV 1–2시간 뒤 pH·PaCO₂·호흡수·의식이 좋아지지 않으면 삽관을 미루지 않는다 <sup>[3†]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>NIPPV 는 협조와 기도 보호를 전제로 한다. 졸림 자체는 금기가 아니지만 뚜렷한 의식 저하·협조 불가는 금기다 <sup>[1 292장 p.2189]</sup>.</li>\n<li>헬리옥스·고유량 비강 산소는 NIPPV 를 대신하지 않는다 <sup>[2†]</sup>.</li>\n<li>한국 급여 기준·기기 설정 세부는 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 악화 중 목표 산소포화도</strong> — 시험 기준: 88–92 %(조절 산소) <sup>[2†]</sup> / 다른 기준: 해리슨은 악화 중 포화도 ≥ 90 % 유지를 적고, 급·만성 고탄산혈증 모두에서 산소가 분당 환기를 줄이지 않으며 PaCO₂ 상승은 주로 V/Q 변화 때문이라고 쓴다 <sup>[1 292장 p.2189]</sup> / 왜 다른가: 지침은 과량 산소의 고탄산 위험을 줄이려 상한을 두고, 교과서는 저산소 교정을 우선한다 — 두 값은 90 % 근처에서 겹친다 / 시험에서는: KMLE 는 88–92 % 를 고른다. 「산소가 호흡 구동을 없애 CO₂ 가 오른다」는 설명은 해리슨과 어긋나니 V/Q 변화(저산소성 폐혈관수축 해제)·홀데인 효과를 기전으로 쓴다. USMLE 도 88–92 % 가 흔한 답이다.</li>\n<li><strong>Z2 맥락 · NIV 적응의 pH 기준</strong> — 시험 기준: pH ≤ 7.35 + PaCO₂ &gt; 45 <sup>[3†]</sup> / 다른 기준: 해리슨은 「PaCO₂ &gt; 45 mmHg 의 호흡부전」으로만 적는다 <sup>[1 292장 p.2189]</sup> / 왜 다른가: 해리슨의 「호흡부전」 정의에 급성은 산혈증 동반이 들어 있다 <sup>[1 292장 p.2186]</sup> / 시험에서는: 산혈증 + 고탄산혈증을 함께 확인한다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 NIPPV 가 사망을 줄이나",
+    "deep": true,
+    "html": "<p>삽관을 피하면 인공호흡기 관련 폐렴·진정·이탈 실패 같은 침습적 환기의 합병증이 줄어든다. 해리슨이 NIPPV 의 이득으로 사망률·삽관 필요와 함께 「치료 합병증」·「재원 기간」 감소를 드는 이유다 <sup>[1 292장 p.2189]</sup>. 그 대신 실패를 늦게 알아차리면 이득이 사라지므로, 짧은 간격의 재평가가 치료의 일부다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "COPD 악화의 호흡 보조 — 무엇이 어떤 문제를 푸는가",
+    "columns": [
+     "도구",
+     "푸는 문제",
+     "고탄산 호흡부전에서",
+     "답이 되는 경우",
+     "근거"
+    ],
+    "rows": [
+     [
+      "비침습적 양압환기(BiPAP)",
+      "흡기 보조로 호흡근 일을 덜고 폐포 환기를 늘린다",
+      "금기가 없으면 1차 — 사망·삽관·재원 감소",
+      "PaCO₂ &gt; 45 + 산혈증, 의식·협조·기도 보호·혈역학 유지",
+      "<sup>[1 292장 p.2189]</sup> <sup>[3†]</sup>"
+     ],
+     [
+      "기관삽관·침습적 환기",
+      "기도 확보와 완전한 환기 대행",
+      "NIPPV 금기이거나 시도 후 악화 때",
+      "의식 저하·호흡정지·혈역학 불안정·다량 분비물, NIV 실패",
+      "<sup>[1 292장 p.2189]</sup>"
+     ],
+     [
+      "고유량 비강 산소",
+      "산소화, 비인두 사강 세척",
+      "환기 보조 근거가 NIV 에 못 미친다",
+      "고탄산혈증 없는 저산소성 호흡부전",
+      "<sup>[3†]</sup>"
+     ],
+     [
+      "조절 산소(벤투리·저유량)",
+      "저산소혈증 교정",
+      "필요한 만큼 — 과량은 V/Q 변화로 PaCO₂ 를 올릴 수 있다",
+      "모든 저산소혈증 악화의 기본",
+      "<sup>[1 292장 p.2189]</sup>"
+     ],
+     [
+      "헬리옥스",
+      "기도 난류 저항 감소",
+      "보조 수단 — 사망·삽관 감소 근거 없음",
+      "일상적 적응 없음",
+      "<sup>[2†]</sup>"
+     ]
+    ],
+    "note": "산소·기관지확장제·전신 스테로이드·(적응 시) 항생제는 모든 악화의 바탕이고, 환기 보조는 그 위에 얹는다 <sup>[1 292장 p.2189]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "고유량 비강 산소로 먼저 버텨 본다?",
+    "point": "고유량 비강 산소는 산소화 도구다. 산혈증을 동반한 고탄산 호흡부전은 환기가 문제라, 사망·삽관을 줄이는 근거가 확립된 NIPPV 가 먼저다.",
+    "exception": "고탄산혈증 없는 저산소성 호흡부전이거나, NIPPV 를 견디지 못하는 환자의 대안으로는 고려할 수 있다.",
+    "cites": "<sup>[1]</sup> <sup>[3†]</sup>"
+   },
+   {
+    "contrast": "졸려 하니 바로 삽관?",
+    "point": "부르면 깨고 협조하며 기도를 지키고 가래를 뱉을 수 있으면 NIPPV 금기가 아니다. 삽관은 뚜렷한 의식 저하·호흡정지·혈역학 불안정·분비물 배출 불가, 또는 NIPPV 1–2시간 뒤 악화 때다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "숨이 차니 비재호흡마스크 15 L/분?",
+    "point": "산소는 저산소혈증을 교정할 만큼 조절해서 준다. 과량 산소는 저산소성 폐혈관수축이 풀리며 V/Q 가 나빠져 PaCO₂ 를 올릴 수 있다 — 그렇다고 필요한 산소를 주저하지는 않는다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "HCO₃⁻ 가 높으면(예: 31 mmol/L) 만성 고탄산혈증이 있었다는 뜻이다. 그 위에서 pH 가 떨어졌다면 만성 위의 급성 악화다 <sup>[1 292장 p.2186]</sup>.",
+   "재평가 시점 1–2시간은 지침 관행이다 <sup>[3†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "niv-harrison",
+    "name": "COPD 악화의 NIPPV·삽관(해리슨)",
+    "kind": "치료 기준",
+    "population": "COPD 급성 악화",
+    "statement": "PaCO₂ > 45 mmHg 의 호흡부전 → NIPPV(사망·삽관·합병증·재원 감소). 금기: 심혈관 불안정·의식 저하·협조 불가·다량 분비물/배출 불가·안면 기형·외상·극도 비만·심한 화상. 삽관: 초기 치료에도 심한 호흡곤란, 생명 위협 저산소혈증, 심한 고탄산혈증/산혈증, 뚜렷한 의식 저하, 호흡정지, 혈역학 불안정 [[harrison-21: 292장 p.2189]]",
+    "exceptions": "해리슨은 NIPPV 적응을 PaCO₂ 로만 적는다 — pH 기준(≤ 7.35)은 지침(GOLD·ERS/ATS) 기준이다",
+    "source": "harrison-21",
+    "locator": "292장 p.2189 Mechanical Ventilatory Support",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "niv-ers-ats",
+    "name": "급성 고탄산 호흡부전의 NIV(ERS/ATS 2017)",
+    "kind": "치료 기준",
+    "population": "COPD 악화로 인한 급성 또는 만성 위의 급성 고탄산 호흡부전",
+    "statement": "pH ≤ 7.35 이고 PaCO₂ > 45 mmHg 이면 bilevel NIV 를 권고한다. 고탄산혈증이지만 산혈증이 없으면 NIV 를 쓰지 않는다",
+    "exceptions": "권고 문구·등급은 원문 미대조 — 루틴 컨테이너에서 학술지 접근 차단",
+    "source": "ers-ats-niv-2017",
+    "locator": "권고 1(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 292: Chronic Obstructive Pulmonary Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 292장 p.2180–2189",
+    "checked": "본문 대조(드라이브 문서, 292장) — p.2186 PaCO₂ 10 mmHg 당 pH 변화 급성 0.08·만성 0.03, 환기부전 정의 PaCO₂ > 45 mmHg 와 급성은 산혈증 동반; p.2188 만성 안정기 산소요법의 사망 감소; p.2189 악화 시 흉부 X선·동맥혈 가스 적응(진행된 COPD·고탄산 병력·의식 변화·심한 고통), 입원 적응(호흡성 산증·고탄산혈증 등), 폐색전 고려, 전신 스테로이드, 악화 중 산소는 포화도 ≥ 90 % 유지·급성·만성 고탄산혈증 모두 분당 환기를 줄이지 않고 V/Q 변화로 PaCO₂ 가 약간 오를 수 있으나 산소를 주저하지 말 것, NIPPV 의 효과(PaCO₂ > 45 mmHg)·금기, 삽관 적응",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "gold-2024",
+    "org": "Global Initiative for Chronic Obstructive Lung Disease",
+    "title": "Global Strategy for the Diagnosis, Management, and Prevention of COPD — 2024 Report",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "서지만 — 컨테이너에서 원문 접근을 확인하지 못했다. 악화 시 목표 포화도 88–92 %·NIV 적응은 원 문항 부록과 기억에 근거",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": "https://goldcopd.org/2024-gold-report/"
+   },
+   {
+    "id": "ers-ats-niv-2017",
+    "org": "European Respiratory Society / American Thoracic Society",
+    "title": "Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure",
+    "kind": "guideline",
+    "citation": "Rochwerg B, Brochard L, Elliott MW, et al. Eur Respir J 2017;50(2):1602426",
+    "checked": "서지만 — PubMed·doi 접근 차단으로 권고 본문 미대조. pH ≤ 7.35·PaCO₂ > 45 기준은 기억에 근거",
+    "doi": "10.1183/13993003.02426-2016",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1183/13993003.02426-2016"
+   }
+  ],
+  "checks": [
+   {
+    "q": "pH 7.27, PaCO₂ 70, HCO₃⁻ 31 은 어떤 상태인가?",
+    "a": "HCO₃⁻ 상승은 만성 고탄산혈증의 신장 보상이고, 그 위에 pH 가 7.35 아래로 떨어져 있으니 만성 위의 급성 호흡성 산증(급성 고탄산 호흡부전)이다."
+   },
+   {
+    "q": "NIPPV 금기 다섯 가지 이상을 대라.",
+    "a": "심혈관 불안정, 의식 저하, 협조 불가, 다량 분비물·배출 불가, 안면 기형·외상, 극도 비만, 심한 화상."
+   },
+   {
+    "q": "NIPPV 를 시작했는데 1시간 뒤 GCS 가 9로 떨어지고 PaCO₂ 가 더 올랐다. 다음은?",
+    "a": "NIPPV 실패 — 지체 없이 기관삽관한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.copd-exacerbation.hypercapnic-failure-niv#v1",
+    "context": "같은 고탄산 호흡부전, 의식·기도 보호만 바꿈",
+    "stem": "74세 남자가 나흘 전부터 기침과 누런 가래가 늘고 숨이 차더니 오늘 아침부터 깨워도 잘 일어나지 않는다며 가족이 데려왔다. 만성폐쇄성폐질환으로 흡입기를 쓰고 있다. 통증 자극에만 눈을 뜨고 목에서 가래 끓는 소리가 나지만 스스로 뱉지 못한다. 보조 호흡근을 쓰고 양쪽 폐에서 호기 천명이 들린다. 혈압 146/88 mmHg, 맥박 116회/분, 호흡 28회/분, 체온 37.9 ℃. 기관지확장제 분무·전신 스테로이드·항생제를 투여하고 벤투리 마스크로 산소를 주고 있다. 동맥혈 pH 7.22, PaCO₂ 78 mmHg, PaO₂ 56 mmHg, 중탄산염 32 mmol/L, 글래스고 혼수척도 8점이다. 가장 적절한 호흡 보조는?",
+    "options": [
+     "비침습적 양압환기",
+     "고유량 비강 산소",
+     "기관삽관 후 기계환기",
+     "비재호흡마스크 15 L/분",
+     "헬리옥스 흡입"
+    ],
+    "answer": 3,
+    "explanation": "급성 고탄산 호흡부전은 같지만, 뚜렷한 의식 저하(GCS 8)와 분비물을 스스로 뱉지 못하는 것은 NIPPV 금기다. 마스크 환기로는 기도를 지킬 수 없고 흡인 위험이 크므로 기관삽관·침습적 환기가 답이다. 고유량 비강 산소·고농도 산소·헬리옥스는 환기부전과 기도 보호 문제를 풀지 못한다.",
+    "of": "kmle-2026-0966",
+    "changed": "졸리나 부르면 깨고 가래를 뱉음·혈역학 안정 → 통증 자극에만 반응(GCS 8)·가래를 뱉지 못해 그르렁거림 → NIPPV 금기가 되어 정답이 비침습적 양압환기에서 기관삽관으로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.copd-exacerbation.hypercapnic-failure-niv#v2",
+    "context": "겉모습만 바꿈 — 상기도 감염 뒤 악화",
+    "stem": "66세 여자가 일주일 전 감기를 앓은 뒤 숨찬 것이 심해져 왔다. 40갑년 흡연력의 만성폐쇄성폐질환 환자다. 문장을 끝까지 말하지 못하고 목과 어깨 근육을 쓰며 숨을 쉰다. 질문에 느리지만 정확히 답하고 기침해 가래를 뱉는다. 혈압 138/84 mmHg, 맥박 108회/분, 호흡 32회/분. 흉부 X선에서 과팽창 외 새 병변은 없다. 분무 기관지확장제·전신 스테로이드를 주고 벤투리 마스크로 산소포화도 90 % 를 유지하는 상태에서 동맥혈 pH 7.29, PaCO₂ 66 mmHg, PaO₂ 60 mmHg, 중탄산염 30 mmol/L 이다. 다음으로 가장 적절한 처치는?",
+    "options": [
+     "기관삽관 후 기계환기",
+     "비침습적 양압환기",
+     "고유량 비강 산소",
+     "산소를 끊고 경과 관찰",
+     "비재호흡마스크 15 L/분"
+    ],
+    "answer": 2,
+    "explanation": "계기·나이·성별이 달라도 결정적 단서는 같다 — pH < 7.35 와 PaCO₂ > 45 의 급성 고탄산 호흡부전이고, 의식·협조·가래 배출·혈역학이 유지돼 금기가 없으니 NIPPV 가 1차다. 삽관은 금기·실패 때이고, 산소를 끊으면 저산소혈증이 위험하며, 고유량 비강 산소는 환기 보조 근거가 NIV 에 못 미친다.",
+    "of": "kmle-2026-0966",
+    "changed": "나이·성별(66세 여자)·악화 계기(감기 뒤)·제시 순서를 바꿈, 산혈증 + 고탄산혈증 + 협조·기도 보호·혈역학 유지는 그대로 → 답은 여전히 비침습적 양압환기",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "COPD 악화 — 동맥혈 가스로 환기부전을 가르고, 금기로 NIPPV 와 삽관을 가른다",
+  "geo": {
+   "title": "COPD 악화 — 동맥혈 가스로 환기부전을 가르고, 금기로 NIPPV 와 삽관을 가른다",
+   "w": 468,
+   "h": 944.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "COPD 악화 — 기관지확장제·",
+      "전신 스테로이드·(적응 시)",
+      "항생제·조절 산소 시작"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "동맥혈 가스(pH·PaCO₂·",
+      "HCO₃⁻), 의식 수준, 분비물",
+      "배출, 혈역학, 흉부 X선으로",
+      "폐렴·기흉·심부전 확인"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "acid",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "PaCO₂ > 45 mmHg 이고 pH <",
+      "7.35 인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 327.0
+    },
+    {
+     "id": "noacid",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "약물 치료 + 조절 산소 유지,",
+      "반복 가스로 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 457.0
+    },
+    {
+     "id": "contra",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "NIPPV 금기가 있는가? (의식",
+      "저하·협조 불가·분비물 배출",
+      "불가·혈역학 불안정·안면",
+      "외상·호흡정지)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "intub",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "기관삽관·침습적 환기"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 864.0
+    },
+    {
+     "id": "niv",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "NIPPV(BiPAP) 시작"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 621.0
+    },
+    {
+     "id": "re",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "1–2시간 뒤 pH·PaCO₂·",
+      "호흡수·의식이 좋아지는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 734.0
+    },
+    {
+     "id": "cont",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "NIPPV 유지, 호전되면 점차",
+      "이탈"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 864.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "acid",
+     "points": [
+      [
+       227.0,
+       261.0
+      ],
+      [
+       227.0,
+       271.0
+      ],
+      [
+       227.0,
+       271.0
+      ],
+      [
+       227.0,
+       327.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "acid",
+     "to": "noacid",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       114.0,
+       401.0
+      ],
+      [
+       114.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "acid",
+     "to": "contra",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       340.0,
+       407.0
+      ],
+      [
+       340.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 330.5,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "contra",
+     "to": "niv",
+     "points": [
+      [
+       307.3,
+       555.0
+      ],
+      [
+       307.3,
+       565.0
+      ],
+      [
+       227.0,
+       565.0
+      ],
+      [
+       227.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "contra",
+     "to": "intub",
+     "points": [
+      [
+       372.7,
+       555.0
+      ],
+      [
+       372.7,
+       571.0
+      ],
+      [
+       452,
+       571.0
+      ],
+      [
+       452,
+       818.0
+      ],
+      [
+       372.7,
+       818.0
+      ],
+      [
+       372.7,
+       864.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 824.0
+     }
+    },
+    {
+     "from": "niv",
+     "to": "re",
+     "points": [
+      [
+       227.0,
+       668.0
+      ],
+      [
+       227.0,
+       678.0
+      ],
+      [
+       227.0,
+       678.0
+      ],
+      [
+       227.0,
+       734.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "re",
+     "to": "cont",
+     "points": [
+      [
+       194.3,
+       798.0
+      ],
+      [
+       194.3,
+       808.0
+      ],
+      [
+       114.0,
+       808.0
+      ],
+      [
+       114.0,
+       864.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "좋아짐"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 93.5,
+      "y": 844.0
+     }
+    },
+    {
+     "from": "re",
+     "to": "intub",
+     "points": [
+      [
+       259.7,
+       798.0
+      ],
+      [
+       259.7,
+       814.0
+      ],
+      [
+       307.3,
+       814.0
+      ],
+      [
+       307.3,
+       864.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "악화·무호전"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 272.6,
+      "y": 844.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "COPD 악화 — 기관지확장제·전신 스테로이드·(적응 시) 항생제·조절 산소 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "동맥혈 가스(pH·PaCO₂·HCO₃⁻), 의식 수준, 분비물 배출, 혈역학, 흉부 X선으로 폐렴·기흉·심부전 확인"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "동맥혈 가스(pH·PaCO₂·HCO₃⁻), 의식 수준, 분비물 배출, 혈역학, 흉부 X선으로 폐렴·기흉·심부전 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "PaCO₂ > 45 mmHg 이고 pH < 7.35 인가?"
+     }
+    ]
+   },
+   {
+    "id": "acid",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "PaCO₂ > 45 mmHg 이고 pH < 7.35 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "약물 치료 + 조절 산소 유지, 반복 가스로 재평가"
+     },
+     {
+      "label": "예",
+      "to": 5,
+      "toText": "NIPPV 금기가 있는가? (의식 저하·협조 불가·분비물 배출 불가·혈역학 불안정·안면 외상·호흡정지)"
+     }
+    ]
+   },
+   {
+    "id": "noacid",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "약물 치료 + 조절 산소 유지, 반복 가스로 재평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "contra",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "NIPPV 금기가 있는가? (의식 저하·협조 불가·분비물 배출 불가·혈역학 불안정·안면 외상·호흡정지)",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 9,
+      "toText": "기관삽관·침습적 환기"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "NIPPV(BiPAP) 시작"
+     }
+    ]
+   },
+   {
+    "id": "niv",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "NIPPV(BiPAP) 시작",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "1–2시간 뒤 pH·PaCO₂·호흡수·의식이 좋아지는가?"
+     }
+    ]
+   },
+   {
+    "id": "re",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "1–2시간 뒤 pH·PaCO₂·호흡수·의식이 좋아지는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "좋아짐",
+      "to": 8,
+      "toText": "NIPPV 유지, 호전되면 점차 이탈"
+     },
+     {
+      "label": "악화·무호전",
+      "to": 9,
+      "toText": "기관삽관·침습적 환기"
+     }
+    ]
+   },
+   {
+    "id": "cont",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "NIPPV 유지, 호전되면 점차 이탈",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "intub",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "기관삽관·침습적 환기",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0966"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
+  "id": "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation",
+  "title": "폐동맥고혈압의 확진 — 심초음파는 선별, 확진과 분류는 우심도자술의 평균 폐동맥압·쐐기압·폐혈관저항",
+  "objective": "진행성 운동 시 호흡곤란·P2 항진·우심부전 징후와 심초음파의 우심실압 상승에서 폐고혈압을 의심하고, 확진·중증도·전모세혈관/후모세혈관 분류는 우심도자술(평균 폐동맥압 > 20 mmHg, 쐐기압 ≤ 15 mmHg, 폐혈관저항 ≥ 3 WU)로 한다는 것과, 흉부 X선·심초음파·환기-관류 스캔이 진단 과정에서 각각 맡는 자리를 가른다",
+  "objectiveKind": "검사 선택",
+  "condition": "폐동맥고혈압(WHO 1군) 의심",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Pulmonology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "c1ba97e0bcd17f4e",
+  "summary": [
+   "폐고혈압은 폐혈관이 개형되어 폐동맥압과 폐혈관저항이 오르는 병이다. 흔한 원인은 좌심질환·폐질환이고, 폐동맥고혈압(PAH)은 폐세동맥 자체의 폐쇄성 동맥병증인 드문 아형이다. 치료하지 않으면 우심부전으로 사망률이 높다 [[harrison-21: 283장 p.2121]].",
+   "진찰: 진행하면 목정맥압 상승·다리 부종·복수 같은 우심부전 징후, 두 번째 심음의 폐동맥 성분(P2) 항진, 우측 S3·S4, 삼첨판 역류 잡음 [[harrison-21: 283장 p.2122]].",
+   "심초음파(거품 검사 포함)가 가장 중요한 첫 선별 검사다 — 추정 폐동맥 수축기압 > 35 mmHg 나 비대·확장된 우심실이 폐고혈압을 뒷받침한다 [[harrison-21: 283장 p.2122]].",
+   "우심도자술은 폐고혈압 진단과 중증도 평가의 표준(gold standard)이다. 평균 폐동맥압 > 20 mmHg, 쐐기압 ≤ 15 mmHg, 폐혈관저항 ≥ 3.0 WU 면 전모세혈관 폐고혈압이다 [[harrison-21: 283장 p.2122]] [[harrison-21: 283장 p.2125]].",
+   "원인이 불분명한 폐고혈압에서는 만성 혈전색전성 폐고혈압을 환기-관류 스캔으로 선별한다 — 정상 D-이량체는 급성 색전을 낮출 뿐 만성 혈전색전을 배제하지 않는다 [[harrison-21: 283장 p.2124]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>폐고혈압</strong>은 폐혈관의 병적 개형으로 폐동맥압과 폐혈관저항이 오르는 이질적 질환이다. 우심도자술에서 평균 폐동맥압 &gt; 20 mmHg 로 정의한다(예전 기준 ≥ 25 mmHg) <sup>[1 283장 p.2121]</sup>. <strong>폐동맥고혈압(PAH, WHO 1군)</strong> 은 그 가운데 좌심질환·폐질환·만성 혈전색전 같은 다른 원인 없이 폐세동맥 자체가 좁아지는 전모세혈관 폐고혈압이다 <sup>[1 283장 p.2121]</sup> <sup>[1 283장 p.2125]</sup>. 이 정리본의 목표는 치료가 아니라 <strong>확진 검사의 선택</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 폐순환은 심박출 전체를 받으면서도 압력이 낮은 저저항 회로다(평균 폐동맥압은 20 mmHg 를 넘지 않는다). PAH 에서는 폐혈관 세포의 세포자멸사 저항·증식·대사 이상·산화 스트레스로 폐세동맥이 비대·섬유화·총상(plexiform) 병변으로 좁아진다 <sup>[1 283장 p.2121]</sup>. 저항이 오르면 우심실이 더 높은 압력으로 짜야 해 비대하고, 결국 확장·부전으로 넘어간다. 좌심방압(쐐기압)은 정상이다 — 문제가 모세혈관 <strong>앞</strong>에 있기 때문이다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>운동 시 호흡곤란·피로</strong>: 운동 때 심박출을 늘리지 못한다.</li>\n<li><strong>실신·어지러움</strong>: 고정된 폐혈관저항이 운동 중 심박출 증가를 막는다.</li>\n<li><strong>P2 항진</strong>: 높은 폐동맥압으로 폐동맥판이 세게 닫힌다 <sup>[1 283장 p.2122]</sup>.</li>\n<li><strong>목정맥압 상승·부종·복수, 우측 S3·S4, 삼첨판 역류 잡음</strong>: 우심실 압력 과부하·부전 <sup>[1 283장 p.2122]</sup>.</li>\n<li><strong>심전도 우심실 비대·긴장, 흉부 X선 폐동맥 확장·흉골 뒤 공간 소실</strong>: 진행된 병의 소견 <sup>[1 283장 p.2122]</sup>.</li>\n<li><strong>초기에는 진찰이 정상일 수 있다</strong> — 진단이 최대 2년 늦어지는 이유다 <sup>[1 283장 p.2121]</sup> <sup>[1 283장 p.2122]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>혈역학 분류가 원인을 가른다(기준 표). 쐐기압이 높으면 좌심질환(2군), 폐기능·CT 이상이면 폐질환(3군), 환기-관류 결손이면 만성 혈전색전(4군), 이 모두가 없고 전모세혈관 양상이면 PAH(1군)다 <sup>[1 283장 p.2124]</sup> <sup>[1 283장 p.2125]</sup>. 결합조직병(항핵항체·류마티스인자·항-Scl-70)과 HIV 같은 동반 질환도 확인한다 <sup>[1 283장 p.2124]</sup>.</p>"
+   },
+   {
+    "title": "검사 — 선별에서 확진까지",
+    "deep": false,
+    "html": "<p>검사 표를 따른다. 핵심은 <strong>심초음파는 추정·선별, 우심도자술은 측정·확진</strong>이라는 구분이다 <sup>[1 283장 p.2122]</sup>. 우심도자술은 평균 폐동맥압·쐐기압·폐혈관저항으로 폐고혈압을 확진하고 분류하며, 특발성·유전성 PAH 에서는 같은 시술에서 혈관반응성 검사까지 한다 <sup>[1 283장 p.2124]</sup>. 6분 보행 거리·심폐운동검사는 기능 부담과 예후를 정량한다 <sup>[1 283장 p.2122]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>확진된 PAH 는 우심도자술 때 혈관반응성을 검사해 양성(&lt; 5 %)이면 고용량 칼슘통로차단제, 나머지는 위험도에 따라 병용 경구 약물(저·중간 위험) 또는 정맥 제제를 포함한 병용(고위험), 필요하면 폐이식을 고려한다 <sup>[1 283장 p.2128]</sup>. 반응은 증상·기능 등급·보행 거리·우심 기능으로 재평가한다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>완전히 정상인 고품질 심초음파는 추가 평가를 줄일 수 있지만, 삼첨판 역류가 없어 압력을 추정하지 못한 것은 정상이 아니다 <sup>[1 283장 p.2122]</sup>.</li>\n<li>원인 불명 폐고혈압이면 만성 혈전색전을 환기-관류 스캔으로 선별한다 — 수술로 완치될 수 있다 <sup>[1 283장 p.2124]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 진단 수치</strong> — 시험 기준: 평균 폐동맥압 &gt; 20 mmHg, 쐐기압 ≤ 15 mmHg, 폐혈관저항 ≥ 3 WU <sup>[1 283장 p.2125]</sup> / 다른 기준: 예전 교과서·기출은 평균 폐동맥압 ≥ 25 mmHg 를 썼고 <sup>[1 283장 p.2121]</sup>, 2022 ESC/ERS 지침은 폐혈관저항 기준을 &gt; 2 WU 로 더 낮췄다 <sup>[2†]</sup> / 왜 다른가: 조기 진단을 위해 정상 상한에 맞춰 기준을 낮추는 흐름 / 시험에서는: 「무엇으로 확진하나」는 모든 판에서 우심도자술로 같다. 숫자를 묻는 문항이면 출제 판을 확인하고, 해리슨 21판 기준(&gt; 20 · ≤ 15 · ≥ 3)을 안전한 답으로 둔다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 쐐기압이 분류의 열쇠인가",
+    "deep": true,
+    "html": "<p>폐동맥 쐐기압은 풍선으로 폐동맥 가지를 막았을 때 그 너머 좌심방 압력을 반영한다. 쐐기압이 높으면 폐동맥압 상승이 좌심에서 거꾸로 전달된 것(후모세혈관)이고, 쐐기압은 정상인데 폐혈관저항(= 평균 폐동맥압과 쐐기압의 차이 ÷ 심박출)이 높으면 병이 폐혈관 자체에 있다(전모세혈관). 이 구분은 심초음파로 추정할 수 없고, 치료가 정반대라(PAH 약은 좌심질환 폐고혈압에 근거가 없다 <sup>[1 283장 p.2128]</sup>) 도자술이 필요하다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "폐고혈압 진단 과정에서 검사의 자리",
+    "columns": [
+     "검사",
+     "보여 주는 것",
+     "할 수 없는 것",
+     "자리",
+     "근거"
+    ],
+    "rows": [
+     [
+      "흉부 X선",
+      "진행하면 중심 폐동맥 확장·흉골 뒤 공간 소실, 폐실질 질환 단서",
+      "압력을 재지 못한다 — 초기에 정상일 수 있다",
+      "초기 평가(동반 질환 찾기)",
+      "<sup>[1 283장 p.2122]</sup>"
+     ],
+     [
+      "심전도",
+      "진행하면 우심실 비대·긴장",
+      "압력·원인 판정 불가",
+      "초기 평가",
+      "<sup>[1 283장 p.2122]</sup>"
+     ],
+     [
+      "심초음파(± 거품)",
+      "추정 폐동맥 수축기압(&gt; 35 mmHg 시사), 우심실 크기·기능, 좌심·판막·단락",
+      "추정치일 뿐 — 삼첨판 역류가 없으면 압력 추정 불가",
+      "가장 중요한 첫 선별",
+      "<sup>[1 283장 p.2122]</sup>"
+     ],
+     [
+      "환기-관류 스캔",
+      "만성 혈전색전성 폐고혈압의 관류 결손",
+      "PAH 를 확진하지 못한다",
+      "원인 불명 PH 모두에서 CTEPH 선별",
+      "<sup>[1 283장 p.2124]</sup>"
+     ],
+     [
+      "우심도자술",
+      "평균 폐동맥압·쐐기압·폐혈관저항·심박출, 혈관반응성",
+      "침습적",
+      "확진·분류·중증도(gold standard)",
+      "<sup>[1 283장 p.2122]</sup> <sup>[1 283장 p.2125]</sup>"
+     ]
+    ],
+    "note": "진단은 「의심(증상·진찰·심초음파) → 흔한 원인(좌심·폐질환) 평가 → CTEPH 선별 → 우심도자술」 순서로 좁힌다(Fig 283-6) <sup>[1 283장 p.2125]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "폐동맥 확장이 보이는 흉부 X선으로 확진?",
+    "point": "흉부 X선은 폐동맥 확장을 시사하고 폐실질 질환을 훑는 초기 검사지만 압력을 재지 못한다. 심초음파로 이미 우심실압 상승이 선별된 상태에서 「확진」을 묻는다면, 압력과 저항을 직접 재는 우심도자술이 답이다.",
+    "exception": "「첫 검사」·「초기 평가」를 묻는 문항이면 흉부 X선·심전도·심초음파가 답이 될 수 있다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "좌심도자술·관상동맥조영술이면 압력을 잴 수 있다?",
+    "point": "좌심도자술은 좌심 압력·관상동맥을 본다. 폐동맥압·쐐기압·폐혈관저항은 폐동맥까지 들어가는 우심도자술이 잰다 — 쐐기압이 후모세혈관(좌심) 원인을 가르는 값이다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "D-이량체가 정상이니 혈전색전은 끝?",
+    "point": "D-이량체는 급성 색전 배제 검사다. 만성 혈전색전성 폐고혈압은 원인 불명 폐고혈압 모두에서 환기-관류 스캔으로 선별한다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "심초음파에서 삼첨판 역류가 보이지 않으면 압력을 추정할 수 없다 — 「정상」과 다르며, 이런 환자의 1/3 에서 폐고혈압이 있다 <sup>[1 283장 p.2122]</sup>.",
+   "평균 폐동맥압 ≤ 20 mmHg 이면 폐고혈압이 아니다 <sup>[1 283장 p.2125]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "ph-hemodynamic",
+    "name": "폐고혈압의 혈역학 정의(해리슨 Fig 283-5)",
+    "kind": "진단 기준",
+    "population": "우심도자술을 받은 폐고혈압 의심 환자",
+    "statement": "평균 폐동맥압 > 20 mmHg → 폐고혈압. 쐐기압 ≤ 15 mmHg + 폐혈관저항 ≥ 3.0 WU → 전모세혈관(1·3·4·5군, PAH 포함). 쐐기압 > 15 mmHg + 폐혈관저항 < 3.0 WU → 단독 후모세혈관(2군), ≥ 3.0 WU → 복합 전·후모세혈관 [[harrison-21: 283장 p.2124]] [[harrison-21: 283장 p.2125]]",
+    "exceptions": "진단 기준 평균 폐동맥압이 ≥ 25 에서 > 20 mmHg 로 낮아졌다 [[harrison-21: 283장 p.2121]]. PAH 는 전모세혈관 양상에 좌심·폐질환·만성 혈전색전 등 다른 원인이 없을 때(Fig 283-6)",
+    "source": "harrison-21",
+    "locator": "283장 p.2124–2125 Fig 283-5·283-6",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "vasoreactivity",
+    "name": "혈관반응성 검사(해리슨)",
+    "kind": "검사 기준",
+    "population": "특발성·유전성 PAH, 치료 전 우심도자술",
+    "statement": "흡입 일산화질소 등 짧은 작용 혈관확장제로 평균 폐동맥압이 ≥ 10 mmHg 떨어져 ≤ 40 mmHg 가 되고 심박출이 줄지 않으면 양성 — 고용량 칼슘통로차단제 장기 치료 대상(< 5 %) [[harrison-21: 283장 p.2124]]",
+    "exceptions": "양성은 드물다 — 대부분은 위험도에 따라 병용 약물 치료 [[harrison-21: 283장 p.2128]]",
+    "source": "harrison-21",
+    "locator": "283장 p.2124 Vasoreactivity testing",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 283: Pulmonary Hypertension",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 283장 p.2121–2130",
+    "checked": "본문 대조(드라이브 문서, 283장) — p.2121 정의(폐혈관 개형·폐동맥압·저항 상승), 흔한 원인 좌심·폐질환, PAH 는 드문 폐쇄성 동맥병증, 진단 기준 mPAP ≥ 25 → > 20 mmHg, 최대 2년 진단 지연; p.2122 진찰(목정맥압↑·부종·복수, P2 항진, 우측 S3/S4, 삼첨판 역류 잡음), 진행 시 심전도 우심실 비대·흉부 X선 폐동맥 확장·흉골 뒤 공간 소실, 심초음파가 가장 중요한 첫 선별(PASP > 35 mmHg), 삼첨판 역류가 안 보이면 압력 추정 불가, 우심도자술 = 진단·중증도의 gold standard; p.2124 CTEPH 는 V/Q 스캔이 선별·진단의 기본 검사이고 원인 불명 PH 모두에서 고려, 확정은 폐동맥 조영, 혈관반응성 검사 기준(≥ 10 mmHg 하강·≤ 40 mmHg·CO 유지, < 5 %), 혈역학 분류; p.2125 Fig 283-5(mPAP > 20, PAWP > 15, PVR ≥ 3.0 WU 분기)·Fig 283-6 진단 전략; p.2128 Fig 283-8 치료 개요",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "esc-ers-ph-2022",
+    "org": "European Society of Cardiology / European Respiratory Society",
+    "title": "2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension",
+    "kind": "guideline",
+    "citation": "Humbert M, Kovacs G, Hoeper MM, et al. Eur Heart J 2022;43(38):3618–3731",
+    "checked": "서지만 — PubMed·doi 접근 차단으로 본문 미대조. 폐혈관저항 기준을 > 2 WU 로 낮췄다는 점은 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "10.1093/eurheartj/ehac237",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1093/eurheartj/ehac237"
+   }
+  ],
+  "checks": [
+   {
+    "q": "우심도자술에서 평균 폐동맥압 38, 쐐기압 10, 폐혈관저항 6 WU 이면?",
+    "a": "전모세혈관 폐고혈압. 좌심·폐질환·만성 혈전색전 등 다른 원인이 없으면 폐동맥고혈압(1군)."
+   },
+   {
+    "q": "혈관반응성 검사 양성의 기준과 의미는?",
+    "a": "짧은 작용 혈관확장제로 평균 폐동맥압이 ≥ 10 mmHg 떨어져 ≤ 40 mmHg 가 되고 심박출이 유지되면 양성. 고용량 칼슘통로차단제 대상이며 드물다(< 5 %)."
+   },
+   {
+    "q": "원인 불명 폐고혈압에서 반드시 선별해야 할 치료 가능한 원인과 그 검사는?",
+    "a": "만성 혈전색전성 폐고혈압 — 환기-관류 스캔(수술적 동맥내막절제로 완치될 수 있다)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation#v1",
+    "context": "같은 폐고혈압 뼈대, 결정적 단서(과거 폐색전증·원인 선별 질문)만 바꿈",
+    "stem": "52세 여자가 1년 전부터 점점 심해지는 운동 시 호흡곤란과 피로로 왔다. 2년 전 오른쪽 다리 심부정맥혈전과 폐색전증으로 6개월간 항응고제를 먹었다. 두 번째 심음의 폐동맥 성분이 항진되어 있고 목정맥이 팽대되어 있다. 심초음파에서 추정 우심실 수축기압 64 mmHg, 우심실 확장, 좌심실 박출률 62 % 이다. D-이량체는 정상이고 폐기능 검사와 흉부 CT 에서 폐실질 질환은 없다. 폐고혈압의 원인을 가리기 위해 다음으로 시행할 검사로 가장 적절한 것은?",
+    "options": [
+     "우심도자술 혈관반응성 검사",
+     "환기-관류 스캔",
+     "관상동맥조영술",
+     "기관지내시경",
+     "좌심도자술"
+    ],
+    "answer": 2,
+    "explanation": "폐색전증 병력이 있는 원인 불명 폐고혈압에서는 수술로 완치될 수 있는 만성 혈전색전성 폐고혈압을 먼저 선별한다 — 선별·진단의 기본 검사는 환기-관류 스캔이다. 정상 D-이량체는 급성 색전을 낮출 뿐 만성 혈전색전을 배제하지 못한다. 우심도자술은 확진·분류에 필요하지만, 이 문항이 묻는 원인 선별의 다음 단계가 아니다.",
+    "of": "kmle-2026-0390",
+    "changed": "심초음파·도자술 전 단계에서 「원인을 찾기 위한 선별」을 묻고 2년 전 폐색전증 병력을 더함(D-이량체 정상 유지) → 정답이 우심도자술에서 환기-관류 스캔으로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation#v2",
+    "context": "겉모습만 바꿈 — 실신으로 온 폐고혈압",
+    "stem": "38세 남자가 계단을 오르다 정신을 잃은 뒤 왔다. 반년 전부터 조금만 걸어도 숨이 찼다. 심전도에서 V1 의 높은 R파와 V2–V3 ST 하강이 있고, 흉부 X선에서 중심 폐동맥이 늘어나 보인다. 심초음파에서 추정 폐동맥 수축기압 72 mmHg, 우심실 비대·확장이 있고 좌심실 기능과 판막은 정상이다. 폐기능 검사·흉부 CT·환기-관류 스캔은 정상이다. 폐동맥고혈압 진단을 확정하기 위한 검사로 가장 적절한 것은?",
+    "options": [
+     "흉부 고해상도 CT 재검",
+     "운동 부하 심전도",
+     "우심도자술",
+     "좌심도자술",
+     "경식도 심초음파"
+    ],
+    "answer": 3,
+    "explanation": "주소·나이가 달라도 결정적 단서는 같다 — 심초음파로 폐고혈압이 선별되고 좌심·폐질환·만성 혈전색전이 배제됐으니, 확진과 분류는 평균 폐동맥압·쐐기압·폐혈관저항을 직접 재는 우심도자술이다. 심전도·흉부 X선 소견은 진행된 폐고혈압을 시사하지만 압력을 재지 못한다.",
+    "of": "kmle-2026-0390",
+    "changed": "나이·성별(38세 남자)·주소(운동 중 실신)·검사 제시 순서를 바꿈, 심초음파의 우심실압 상승 + 정상 좌심 기능 + 확진을 묻는 질문은 그대로 → 답은 여전히 우심도자술",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "폐고혈압 의심 — 심초음파로 선별, 흔한 원인과 CTEPH 를 거른 뒤 우심도자술로 확진·분류",
+  "geo": {
+   "title": "폐고혈압 의심 — 심초음파로 선별, 흔한 원인과 CTEPH 를 거른 뒤 우심도자술로 확진·분류",
+   "w": 454,
+   "h": 769.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "진행성 운동 시 호흡곤란·",
+      "피로·실신, P2 항진·",
+      "우심부전 징후"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "echo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "심초음파에서 폐고혈압",
+      "가능성이 있는가? (추정",
+      "폐동맥 수축기압 > 35 mmHg ·",
+      "우심실 비대/확장)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 원인으로 호흡곤란",
+      "평가(완전히 정상인 고품질",
+      "심초음파는 추가 평가를",
+      "줄인다)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 327.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "좌심질환·폐질환",
+      "평가(폐기능·고해상도 CT),",
+      "환기-관류 스캔으로 CTEPH",
+      "선별, 결합조직병·HIV 등",
+      "혈청 검사"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 242.0,
+     "y": 327.0
+    },
+    {
+     "id": "rhc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "우심도자술: 평균 폐동맥압 >",
+      "20 mmHg 이고 쐐기압 ≤ 15 ·",
+      "폐혈관저항 ≥ 3 WU 인가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 508.0
+    },
+    {
+     "id": "post",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "쐐기압 > 15 mmHg:",
+      "좌심질환에 따른",
+      "폐고혈압(2군) — 원인 질환",
+      "치료"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 655.0
+    },
+    {
+     "id": "pre",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전모세혈관 폐고혈압 — 다른",
+      "원인이 없으면 PAH:",
+      "혈관반응성 검사·위험도",
+      "평가 후 약물 치료"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 655.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "echo",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "echo",
+     "to": "other",
+     "points": [
+      [
+       194.3,
+       261.0
+      ],
+      [
+       194.3,
+       271.0
+      ],
+      [
+       114.0,
+       271.0
+      ],
+      [
+       114.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "echo",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       261.0
+      ],
+      [
+       259.7,
+       277.0
+      ],
+      [
+       340.0,
+       277.0
+      ],
+      [
+       340.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중간·높음"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 310.8,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "rhc",
+     "points": [
+      [
+       340.0,
+       442.0
+      ],
+      [
+       340.0,
+       452.0
+      ],
+      [
+       227.0,
+       452.0
+      ],
+      [
+       227.0,
+       508.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "rhc",
+     "to": "pre",
+     "points": [
+      [
+       194.3,
+       589.0
+      ],
+      [
+       194.3,
+       599.0
+      ],
+      [
+       114.0,
+       599.0
+      ],
+      [
+       114.0,
+       655.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예(전모세혈관)"
+      ],
+      "w": 86.8,
+      "h": 17,
+      "x": 70.6,
+      "y": 635.0
+     }
+    },
+    {
+     "from": "rhc",
+     "to": "post",
+     "points": [
+      [
+       259.7,
+       589.0
+      ],
+      [
+       259.7,
+       605.0
+      ],
+      [
+       340.0,
+       605.0
+      ],
+      [
+       340.0,
+       655.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "쐐기압 > 15"
+      ],
+      "w": 67.6,
+      "h": 17,
+      "x": 306.2,
+      "y": 635.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "진행성 운동 시 호흡곤란·피로·실신, P2 항진·우심부전 징후",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "심초음파에서 폐고혈압 가능성이 있는가? (추정 폐동맥 수축기압 > 35 mmHg · 우심실 비대/확장)"
+     }
+    ]
+   },
+   {
+    "id": "echo",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "심초음파에서 폐고혈압 가능성이 있는가? (추정 폐동맥 수축기압 > 35 mmHg · 우심실 비대/확장)",
+    "note": "",
+    "branches": [
+     {
+      "label": "낮음",
+      "to": 3,
+      "toText": "다른 원인으로 호흡곤란 평가(완전히 정상인 고품질 심초음파는 추가 평가를 줄인다)"
+     },
+     {
+      "label": "중간·높음",
+      "to": 4,
+      "toText": "좌심질환·폐질환 평가(폐기능·고해상도 CT), 환기-관류 스캔으로 CTEPH 선별, 결합조직병·HIV 등 혈청 검사"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 원인으로 호흡곤란 평가(완전히 정상인 고품질 심초음파는 추가 평가를 줄인다)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "좌심질환·폐질환 평가(폐기능·고해상도 CT), 환기-관류 스캔으로 CTEPH 선별, 결합조직병·HIV 등 혈청 검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "우심도자술: 평균 폐동맥압 > 20 mmHg 이고 쐐기압 ≤ 15 · 폐혈관저항 ≥ 3 WU 인가?"
+     }
+    ]
+   },
+   {
+    "id": "rhc",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "우심도자술: 평균 폐동맥압 > 20 mmHg 이고 쐐기압 ≤ 15 · 폐혈관저항 ≥ 3 WU 인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예(전모세혈관)",
+      "to": 6,
+      "toText": "전모세혈관 폐고혈압 — 다른 원인이 없으면 PAH: 혈관반응성 검사·위험도 평가 후 약물 치료"
+     },
+     {
+      "label": "쐐기압 > 15",
+      "to": 7,
+      "toText": "쐐기압 > 15 mmHg: 좌심질환에 따른 폐고혈압(2군) — 원인 질환 치료"
+     }
+    ]
+   },
+   {
+    "id": "pre",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전모세혈관 폐고혈압 — 다른 원인이 없으면 PAH: 혈관반응성 검사·위험도 평가 후 약물 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "post",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "쐐기압 > 15 mmHg: 좌심질환에 따른 폐고혈압(2군) — 원인 질환 치료",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0390"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
+  "id": "cn.pulm.pulmonary-embolism.high-risk-reperfusion",
+  "title": "쇼크를 동반한 고위험(대량) 폐색전증 — 항응고만으로는 부족하고, 금기가 없으면 전신 혈전용해로 재관류한다",
+  "objective": "확진된 급성 폐색전증에서 지속 저혈압·쇼크(고위험)를 알아보고, 출혈 금기를 확인한 뒤 미분획 헤파린 + 전신 혈전용해(알테플라제)를 고르며, 저분자량 헤파린·경구 항응고제·하대정맥 필터가 왜 이 상황의 답이 아닌지, 금기·실패 시 카테터·수술 색전제거로 넘어가는 조건을 가른다",
+  "objectiveKind": "치료",
+  "condition": "고위험(대량) 급성 폐색전증 — 폐쇄성 쇼크",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Pulmonology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "67f119b17cad0b6c",
+  "summary": [
+   "폐동맥이 크게 막히면 우심실 후부하가 갑자기 올라 우심실이 늘어나고, 중격이 좌심실 쪽으로 밀려 좌심실 충만이 줄어 심박출·혈압이 떨어진다 — 폐색전증 쇼크는 「좌심실이 덜 차는」 폐쇄성 쇼크다 [[harrison-21: 279장 p.2094]].",
+   "대량(고위험) 폐색전증은 전신 저혈압을 동반하는 5–10 % 다 [[harrison-21: 279장 p.2094]]. 시험 기준의 저혈압은 수축기 < 90 mmHg 15분 이상 또는 승압제가 필요한 경우다 [[?esc-pe-2019]].",
+   "항응고는 새 혈전이 쌓이는 것을 막을 뿐 이미 폐동맥을 막은 혈전을 녹이지 못한다. 저혈압이면 항응고에 혈전용해(금기·실패면 카테터·수술 색전제거)를 더한다 [[harrison-21: 279장 p.2098]].",
+   "전신 혈전용해는 알테플라제 100 mg 을 2시간 정맥 주입한다. 우심부전을 빠르게 되돌리지만 주요 출혈 약 10 %·두개내출혈 2–3 % 라, 금기(두개내 질환·최근 수술·외상)를 먼저 확인한다 [[harrison-21: 279장 p.2100]].",
+   "저혈압에는 생리식염수 500 mL 까지만 주고 노르에피네프린을 쓴다 — 수액을 많이 주면 우심실 벽 긴장·허혈과 중격 이동이 악화된다 [[harrison-21: 279장 p.2099]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>고위험(대량) 폐색전증</strong>은 급성 폐색전증 가운데 전신 저혈압·쇼크를 동반한 경우다. 전체 폐색전증의 5–10 % 로, 혈전이 폐혈관을 넓게 막는다 <sup>[1 279장 p.2094]</sup>. 시험에서 「저혈압」은 수축기 &lt; 90 mmHg 가 15분 넘게 이어지거나 승압제가 필요한 경우, 또는 심정지·폐쇄성 쇼크다 <sup>[2†]</sup>. 이 정리본의 목표는 진단이 아니라 <strong>확진 뒤 첫 치료</strong> — 무엇으로 재관류하고, 무엇이 왜 부족한가다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 폐순환은 저압·저저항 회로이고, 얇은 우심실은 갑작스러운 후부하 증가를 견디지 못한다.</p>\n<ol>\n<li>혈전의 기계적 폐쇄에 혈소판이 내놓는 세로토닌 같은 혈관수축 매개물이 겹쳐 폐혈관 저항이 오른다 <sup>[1 279장 p.2094]</sup>.</li>\n<li>우심실이 늘어나며 기능이 떨어지고, 벽 긴장이 우관상동맥 관류를 눌러 우심실 허혈이 생긴다(트로포닌·BNP 상승) <sup>[1 279장 p.2094]</sup>.</li>\n<li>중격이 좌심실 쪽으로 밀려 좌심실 충만이 줄고, 심박출과 혈압이 떨어진다. 혈압이 떨어지면 우관상동맥 관류압이 더 떨어져 우심실 허혈이 깊어지는 악순환이 된다 <sup>[1 279장 p.2094]</sup>.</li>\n</ol>\n<p>그래서 쇼크에 이른 폐색전증의 근본 치료는 <strong>후부하를 낮추는 것 — 막힌 혈전을 치우는 것(재관류)</strong> 이다. 항응고는 새 혈전을 막지만 이미 박힌 혈전을 녹이지 못한다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>목정맥 팽대 + 깨끗한 폐음 + 저혈압</strong>: 우심실이 넘치고 좌심실이 비는 폐쇄성 쇼크(좌심부전의 폐부종과 다르다).</li>\n<li><strong>실신·어지러움</strong>: 갑작스러운 심박출 감소.</li>\n<li><strong>심초음파 우심실 확장·중격 편평화, CT 우심실/좌심실 비 증가</strong>: 후부하 증가의 직접 소견.</li>\n<li><strong>트로포닌·BNP 상승</strong>: 우심실 허혈·늘어남.</li>\n<li><strong>젖산 상승·창백·식은땀</strong>: 조직 저관류 — 이미 사슬의 끝에 닿았다는 표지.</li>\n<li><strong>수액에 반응하지 않는 저혈압</strong>: 문제는 혈관 내 용적이 아니라 우심실 후부하다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>중간-고위험과의 경계</strong>: 우심실 기능장애·트로포닌 상승은 두 군에 모두 있을 수 있다. 가르는 것은 <strong>혈압·관류</strong>다. 혈압이 유지되면 항응고 + 감시, 쇼크면 재관류(→ <code>cn.pulm.pulmonary-embolism.intermediate-high-risk-management</code>).</li>\n<li><strong>다른 쇼크</strong>: 긴장성 기흉(한쪽 호흡음 소실), 심장눌림증(심낭 삼출), 우심실 경색(하벽 ST 상승)도 목정맥 팽대 + 저혈압을 만든다. CT·심초음파의 폐동맥 혈전과 우심실 확장이 폐색전증으로 묶는다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>CT 폐혈관조영</strong>: 확진과 우심실/좌심실 비.</li>\n<li><strong>침상 심초음파</strong>: 너무 불안정해 CT 로 옮길 수 없으면 우심실 확장만으로 재관류를 결정할 근거가 된다 <sup>[2†]</sup>.</li>\n<li><strong>혈색소·혈소판·크레아티닌·응고 검사</strong>와 <strong>금기 문진</strong>(두개내 질환·최근 수술·외상·활동성 출혈): 혈전용해 전 필수 <sup>[1 279장 p.2100]</sup>.</li>\n<li><strong>젖산</strong>: 저관류의 정도와 치료 반응.</li>\n</ul>"
+   },
+   {
+    "title": "치료 — 재관류를 더하는 이유",
+    "deep": false,
+    "html": "<ol>\n<li><strong>항응고 즉시</strong>: 미분획 헤파린(80 U/kg 볼루스 → 18 U/kg/h). 반감기가 짧아 혈전용해·시술 전후로 조절·중단하기 쉽다 <sup>[1 279장 p.2098]</sup>.</li>\n<li><strong>혈역학 지지</strong>: 생리식염수 500 mL 까지만, 노르에피네프린을 1차 승압제, 도부타민을 강심제로 쓴다. 과다 수액은 우심실 벽 긴장·허혈과 중격 이동을 악화시킨다 <sup>[1 279장 p.2099]</sup>.</li>\n<li><strong>전신 혈전용해</strong>: 알테플라제 100 mg 2시간 말초 정맥 주입. 혈전을 녹이고, 매개물 분비를 끊고, 원천 혈전을 녹여 우심부전을 빠르게 되돌리고 사망·재발을 줄일 수 있다 <sup>[1 279장 p.2100]</sup>. 빠를수록 효과적이지만 14일까지 쓸 수 있다.</li>\n<li><strong>금기·실패 시</strong>: 카테터 치료(국소 알테플라제 20–25 mg ± 기계적 파쇄·흡인) 또는 수술적 색전제거. 수술은 다장기부전 전에 의뢰해야 생존율이 높다. ECMO 는 이 둘로 가는 가교로만 쓴다 <sup>[1 279장 p.2100]</sup>.</li>\n</ol>\n<p>재평가: 혈압·승압제 요구량·젖산·산소 요구량이 좋아지는지 본다. 초기에 폐고혈압이 있던 환자는 약 6주 뒤 심초음파로 만성 혈전색전성 폐고혈압(2–4 %)을 추적한다 <sup>[1 279장 p.2100]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>혈전용해의 적응을 정하는 것은 <strong>쇼크·지속 저혈압</strong>이다. 우심실 확장·트로포닌만으로 일차 혈전용해를 하지 않는다 <sup>[1 279장 p.2100]</sup>.</li>\n<li>금기: 두개내 질환·최근 수술·외상(해리슨), 주요 출혈 약 10 %·두개내출혈 2–3 % <sup>[1 279장 p.2100]</sup>. 금기 목록의 세부 기간(예: 3주 내 수술)은 지침마다 다르다 <sup>[2†]</sup>.</li>\n<li>하대정맥 필터는 항응고를 못 할 활동성 출혈 또는 충분한 항응고 중 재발일 때만 <sup>[1 279장 p.2099]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 알테플라제 용량</strong> — 시험 기준: 100 mg 2시간 정주(허가 용법) <sup>[1 279장 p.2100]</sup> / 다른 기준: 해리슨은 허가 외 50 mg 2시간(출혈이 적을 수 있음)을 함께 적고, 원 문항 부록은 심정지 임박 시 50 mg 볼루스를 적었다(가속 투여 — 원문 미대조) <sup>[2†]</sup> / 왜 다른가: 허가 용법·저용량 연구·소생 상황의 가속 투여가 섞여 있다 / 시험에서는: KMLE · USMLE 모두 「100 mg 2시간」을 표준으로 고른다.</li>\n<li><strong>Z2 새 근거 · 카테터 치료</strong> — 시험 기준: 전신 혈전용해가 1차, 금기·실패면 카테터·수술 <sup>[1 279장 p.2100]</sup> / 다른 기준: 초음파 보조 카테터 혈전용해(총 24 mg 12시간)는 우심실 확장·혈전 부담을 줄이고 두개내출혈을 최소화했다 <sup>[1 279장 p.2100]</sup> / 왜 다른가: 사망 감소 근거가 아직 부족하다 / 시험에서는: 금기가 없는 쇼크 폐색전증의 정답은 전신 혈전용해다.</li>\n</ul>"
+   },
+   {
+    "title": "혈전용해 금기와 기관 역량",
+    "deep": true,
+    "html": "<p>금기가 있는 쇼크 환자는 기관이 가진 수단(흉부외과 수술, 중재 시술, ECMO)에 따라 길이 달라진다. 해리슨은 전신 혈전용해의 출혈 위험 때문에 수술적 색전제거가 다시 관심을 받고 있으며, 다장기부전이 오기 전에 빨리 의뢰할수록 생존율이 높다고 적는다 <sup>[1 279장 p.2100]</sup>.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "고위험 폐색전증에서 보기별 처치의 자리",
+    "columns": [
+     "처치",
+     "하는 일",
+     "고위험(쇼크)에서",
+     "답이 되는 경우",
+     "근거"
+    ],
+    "rows": [
+     [
+      "전신 혈전용해(알테플라제 100 mg 2시간)",
+      "폐동맥 혈전을 녹여 우심실 후부하를 빠르게 낮춘다",
+      "금기가 없으면 1차 재관류",
+      "저혈압·쇼크, 중간-고위험의 감시 중 붕괴(구제)",
+      "<sup>[1 279장 p.2100]</sup>"
+     ],
+     [
+      "미분획 헤파린 정주",
+      "새 혈전 생성·전파 차단, 시간 단위로 조절·중단",
+      "혈전용해와 함께 쓰는 바탕 — 단독으로는 재관류가 안 된다",
+      "재관류가 곧 필요할 수 있는 모든 환자, 콩팥 기능 저하",
+      "<sup>[1 279장 p.2098]</sup>"
+     ],
+     [
+      "저분자량 헤파린 피하(에녹사파린)",
+      "새 혈전 차단",
+      "쇼크를 되돌리지 못한다",
+      "혈역학이 안정된 폐색전증의 첫 항응고",
+      "<sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2099]</sup>"
+     ],
+     [
+      "경구 항응고제(리바록사반 등)",
+      "새 혈전 차단",
+      "쇼크를 되돌리지 못한다",
+      "안정된 저·중간-저위험의 시작·유지",
+      "<sup>[1 279장 p.2099]</sup>"
+     ],
+     [
+      "하대정맥 필터",
+      "다리 혈전이 폐로 가는 길을 막는다",
+      "이미 폐동맥을 막은 혈전에는 효과 없음",
+      "항응고를 못 할 활동성 출혈, 충분한 항응고 중 재발",
+      "<sup>[1 279장 p.2099]</sup>"
+     ],
+     [
+      "카테터 치료·수술적 색전제거",
+      "혈전을 기계적으로(또는 국소 저용량으로) 제거",
+      "혈전용해 금기·실패 때",
+      "혈전용해가 막힌 고위험",
+      "<sup>[1 279장 p.2100]</sup>"
+     ]
+    ],
+    "note": "치료의 바탕은 모든 위험군에서 항응고다 <sup>[1 279장 p.2098]</sup>. 혈전용해·시술·수술은 항응고에 더하는 재관류다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "폐색전증이니 늘 쓰는 저분자량 헤파린(에녹사파린)으로 시작?",
+    "point": "저분자량 헤파린은 혈역학이 안정된 폐색전증의 첫 항응고다. 쇼크·지속 저혈압이면 항응고만으로는 이미 폐동맥을 막은 혈전이 줄지 않아 우심실 사슬이 끊기지 않는다 — 금기가 없으면 전신 혈전용해를 더하고, 함께 쓰는 헤파린은 조절·중단이 쉬운 미분획 헤파린이 편하다.",
+    "exception": "혈전용해 절대 금기(두개내 질환·최근 수술·외상·활동성 출혈)면 혈전용해 대신 카테터·수술 색전제거로 재관류한다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "헤파린 「단독」 정주면 충분?",
+    "point": "헤파린은 즉시 시작하지만 재관류 수단이 아니다. 고위험에서 정답 구조는 헤파린 + 혈전용해다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "큰 혈전이니 하대정맥 필터?",
+    "point": "필터는 앞으로 올 색전을 막을 뿐 이미 박힌 혈전과 쇼크에는 효과가 없다. 적응은 항응고 불가 출혈·항응고 중 재발 두 가지다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "심정지가 임박했거나 CT 로 옮길 수 없을 만큼 불안정하면 침상 심초음파의 우심실 확장만으로 고위험 폐색전증으로 보고 재관류를 결정할 수 있다 <sup>[2†]</sup>.",
+   "ECMO 는 혈전용해·색전제거로 가는 가교로만 쓴다 <sup>[1 279장 p.2100]</sup>.",
+   "혈전용해는 빠를수록 효과적이지만 발생 뒤 14일까지 쓸 수 있다 <sup>[1 279장 p.2100]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "massive-pe-harrison",
+    "name": "대량 폐색전증(해리슨)",
+    "kind": "위험 분류",
+    "population": "확진된 급성 폐색전증",
+    "statement": "대량(고위험): 전신 저혈압 + 광범위 혈전, 전체의 5–10 % [[harrison-21: 279장 p.2094]]. 처치: 항응고 + 혈전용해, 또는 색전제거 [[harrison-21: 279장 p.2098]]",
+    "exceptions": "혈전용해 금기(두개내 질환·최근 수술·외상)면 카테터 치료·수술적 색전제거 [[harrison-21: 279장 p.2100]]",
+    "source": "harrison-21",
+    "locator": "279장 p.2094 Classification, p.2098 Fig 279-12",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "high-risk-esc",
+    "name": "고위험 폐색전증(ESC 2019)",
+    "kind": "위험 분류",
+    "population": "확진된 급성 폐색전증",
+    "statement": "심정지, 폐쇄성 쇼크(저혈압 + 장기 저관류), 지속 저혈압(수축기 < 90 mmHg 또는 40 mmHg 이상 하강이 15분 넘게) 중 하나 → 미분획 헤파린 + 전신 혈전용해. 금기·실패면 수술적 색전제거 또는 카테터 치료",
+    "exceptions": "권고 문구·등급은 원문 미대조 — 루틴 컨테이너에서 학술지 접근 차단",
+    "source": "esc-pe-2019",
+    "locator": "위험 분류 표·고위험 처치 권고(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 279: Deep-Venous Thrombosis and Pulmonary Thromboembolism",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 279장 p.2091–2100",
+    "checked": "본문 대조(드라이브 문서, 279장) — p.2094 우심실 기능장애→중격 이동→좌심실 충만 저하→순환 붕괴 기전, 대량 5–10 %; p.2098 저혈압 = 항응고 + 혈전용해·색전제거(Fig 279-12), 미분획 헤파린 용량; p.2099 하대정맥 필터 적응(항응고 불가 출혈·항응고 중 재발), 대량 폐색전증의 생리식염수 500 mL·과다 수액의 해, 노르에피네프린·도부타민; p.2100 ECMO 는 혈전용해·색전제거로 가는 가교로만, 혈전용해의 세 효과, 알테플라제 100 mg 2시간(14일까지), 50 mg 2시간은 허가 외, 금기(두개내 질환·최근 수술·외상), 주요 출혈 ~10 %·두개내출혈 2–3 %, 카테터 치료 20–25 mg, 수술적 색전제거는 다장기부전 전에 의뢰",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "esc-pe-2019",
+    "org": "European Society of Cardiology / European Respiratory Society",
+    "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
+    "kind": "guideline",
+    "citation": "Konstantinides SV, Meyer G, Becattini C, et al. Eur Heart J 2020;41(4):543–603",
+    "checked": "서지만 — 루틴 컨테이너가 PubMed·doi 접근을 막아 권고 본문·쪽수를 대조하지 못했다. 고위험 정의(15분 이상 지속 저혈압)·심정지 임박 시 가속 투여 방식은 기억에 근거하며 사람 대조 필요",
+    "doi": "10.1093/eurheartj/ehz405",
+    "pmid": "31504429",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1093/eurheartj/ehz405"
+   }
+  ],
+  "checks": [
+   {
+    "q": "폐색전증 쇼크에서 수액을 500 mL 정도로 아끼는 이유는?",
+    "a": "수액이 우심실 벽 긴장을 더 올려 허혈을 악화시키고 중격을 좌심실 쪽으로 더 밀어 좌심실 충만을 떨어뜨리기 때문이다. 노르에피네프린으로 혈압을 올린다."
+   },
+   {
+    "q": "고위험 폐색전증에서 전신 혈전용해가 사망·재발을 줄이는 세 가지 길은?",
+    "a": "폐동맥을 막은 혈전을 녹이고, 폐고혈압을 악화시키는 세로토닌 등 매개물 분비를 끊고, 골반·다리의 원천 혈전을 녹여 재발을 줄인다."
+   },
+   {
+    "q": "쇼크를 동반한 폐색전증인데 2주 전 개두술을 받았다면?",
+    "a": "최근 수술·두개내 질환은 혈전용해 금기다 — 카테터 치료나 수술적 색전제거로 재관류한다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.pulmonary-embolism.high-risk-reperfusion#v1",
+    "context": "같은 쇼크 폐색전증, 혈전용해 금기만 바꿈",
+    "stem": "63세 여자가 병동에서 화장실에 다녀온 직후 갑자기 숨이 차며 쓰러졌다. 10일 전 뇌수막종으로 개두술을 받고 입원 중이다. 목정맥이 팽대되어 있고 폐음은 깨끗하다. 혈압 80/48 mmHg, 맥박 130회/분, 호흡 32회/분, 비재호흡마스크로 산소포화도 88 %. 생리식염수 500 mL 뒤에도 혈압이 오르지 않아 노르에피네프린을 시작했고 미분획 헤파린을 투여하였다. CT 폐혈관조영에서 양쪽 주폐동맥에 걸친 큰 혈전, 우심실/좌심실 비 1.6, 젖산 4.0 mmol/L 이다. 이 병원에서 흉부외과 수술과 중재 시술이 모두 가능하다. 다음 처치로 가장 적절한 것은?",
+    "options": [
+     "알테플라제 100 mg 2시간 정주",
+     "수술적 폐색전제거술",
+     "에녹사파린으로 바꾸고 관찰",
+     "하대정맥 필터 단독 삽입",
+     "생리식염수 2 L 급속 추가"
+    ],
+    "answer": 2,
+    "explanation": "쇼크를 동반한 고위험 폐색전증이라 재관류가 필요하지만, 10일 전 개두술(최근 수술·두개내 질환)은 전신 혈전용해의 금기다. 이때는 수술적 색전제거 또는 카테터 치료로 혈전을 제거한다. 필터는 이미 박힌 혈전과 쇼크를 해결하지 못하고, 저분자량 헤파린은 재관류가 아니며, 대량 수액은 우심실 부담을 악화시킨다.",
+    "of": "kmle-2026-0967",
+    "changed": "출혈·수술 병력 없음 → 10일 전 뇌수막종 절제 개두술 → 전신 혈전용해 금기가 되어 정답이 알테플라제에서 수술적 색전제거(카테터 치료)로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.pulmonary-embolism.high-risk-reperfusion#v2",
+    "context": "겉모습만 바꿈 — 하지 고정 뒤 생긴 쇼크 폐색전증",
+    "stem": "47세 남자가 갑자기 숨이 차고 식은땀이 난다며 119로 왔다. 6주 전 발목 골절로 수술 없이 석고붕대를 했고 3주 전 풀었다. 그 뒤 수술·출혈·뇌질환은 없다. 혈압 84/52 mmHg 로 생리식염수 500 mL 뒤에도 20분 넘게 90 mmHg 를 넘지 않아 노르에피네프린을 시작했다. 맥박 122회/분, 산소포화도 90 %(비재호흡마스크). 심초음파에서 우심실이 크게 늘어나 있고 중격이 편평하며, CT 폐혈관조영에서 양쪽 폐동맥에 큰 혈전이 보인다. 젖산 3.8 mmol/L, 혈소판 230,000 /µL. 가장 적절한 치료는?",
+    "options": [
+     "아픽사반 경구 부하",
+     "에녹사파린 피하주사",
+     "알테플라제 전신 투여",
+     "하대정맥 필터 삽입",
+     "와파린 경구 시작"
+    ],
+    "answer": 3,
+    "explanation": "경위·나이가 달라도 결정적 단서는 같다 — 수액·승압제에도 지속되는 저혈압과 우심실 부전은 고위험 폐색전증이고, 출혈 금기가 없으니 헤파린과 함께 알테플라제 전신 혈전용해로 재관류한다. 경구·피하 항응고제는 안정 환자용이고, 필터는 항응고 금기·재발일 때다.",
+    "of": "kmle-2026-0967",
+    "changed": "나이·성별(47세 남자)·유발 경위(다리 골절 석고붕대 뒤 3주)·제시 순서를 바꿈, 지속 저혈압 + 우심실 부전 + 금기 없음은 그대로 → 답은 여전히 전신 혈전용해",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "확진된 폐색전증 — 혈압이 먼저, 쇼크면 금기를 보고 재관류 수단을 고른다",
+  "geo": {
+   "title": "확진된 폐색전증 — 혈압이 먼저, 쇼크면 금기를 보고 재관류 수단을 고른다",
+   "w": 454,
+   "h": 831.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "CT 폐혈관조영 또는 침상",
+      "심초음파로 확인된 급성",
+      "폐색전증"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "shock",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "쇼크·지속 저혈압인가?",
+      "(수축기 < 90 mmHg 15분",
+      "이상 · 승압제 필요 · 젖산↑)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "stable",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "혈역학 안정:",
+      "항응고(저분자량 헤파린·",
+      "경구 항응고제) + 우심실·",
+      "트로포닌으로 감시 강도 결정"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 310.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "출혈 금기 문진·확인: 두개내",
+      "질환·최근 수술·외상·활동성",
+      "출혈, 혈색소·혈소판"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 474.0
+    },
+    {
+     "id": "support",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "미분획 헤파린 시작,",
+      "생리식염수 500 mL 까지,",
+      "노르에피네프린"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 310.0
+    },
+    {
+     "id": "contra",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈전용해 금기가 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 621.0
+    },
+    {
+     "id": "lysis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "전신 혈전용해: 알테플라제",
+      "100 mg 2시간 + 헤파린"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 734.0
+    },
+    {
+     "id": "mech",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "카테터 치료 또는 수술적",
+      "색전제거(필요하면 ECMO 를",
+      "가교로)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 734.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "shock",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "shock",
+     "to": "stable",
+     "points": [
+      [
+       194.3,
+       244.0
+      ],
+      [
+       194.3,
+       254.0
+      ],
+      [
+       114.0,
+       254.0
+      ],
+      [
+       114.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "shock",
+     "to": "support",
+     "points": [
+      [
+       259.7,
+       244.0
+      ],
+      [
+       259.7,
+       260.0
+      ],
+      [
+       340.0,
+       260.0
+      ],
+      [
+       340.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "contra",
+     "points": [
+      [
+       227.0,
+       555.0
+      ],
+      [
+       227.0,
+       565.0
+      ],
+      [
+       227.0,
+       565.0
+      ],
+      [
+       227.0,
+       621.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "support",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       391.0
+      ],
+      [
+       340.0,
+       401.0
+      ],
+      [
+       227.0,
+       401.0
+      ],
+      [
+       227.0,
+       474.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "contra",
+     "to": "lysis",
+     "points": [
+      [
+       194.3,
+       668.0
+      ],
+      [
+       194.3,
+       678.0
+      ],
+      [
+       114.0,
+       678.0
+      ],
+      [
+       114.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 714.0
+     }
+    },
+    {
+     "from": "contra",
+     "to": "mech",
+     "points": [
+      [
+       259.7,
+       668.0
+      ],
+      [
+       259.7,
+       684.0
+      ],
+      [
+       340.0,
+       684.0
+      ],
+      [
+       340.0,
+       734.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음 또는 혈전용해 실패"
+      ],
+      "w": 129.2,
+      "h": 17,
+      "x": 275.4,
+      "y": 714.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "CT 폐혈관조영 또는 침상 심초음파로 확인된 급성 폐색전증",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "쇼크·지속 저혈압인가? (수축기 < 90 mmHg 15분 이상 · 승압제 필요 · 젖산↑)"
+     }
+    ]
+   },
+   {
+    "id": "shock",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "쇼크·지속 저혈압인가? (수축기 < 90 mmHg 15분 이상 · 승압제 필요 · 젖산↑)",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 3,
+      "toText": "혈역학 안정: 항응고(저분자량 헤파린·경구 항응고제) + 우심실·트로포닌으로 감시 강도 결정"
+     },
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "미분획 헤파린 시작, 생리식염수 500 mL 까지, 노르에피네프린"
+     }
+    ]
+   },
+   {
+    "id": "stable",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "혈역학 안정: 항응고(저분자량 헤파린·경구 항응고제) + 우심실·트로포닌으로 감시 강도 결정",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "support",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "미분획 헤파린 시작, 생리식염수 500 mL 까지, 노르에피네프린",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "출혈 금기 문진·확인: 두개내 질환·최근 수술·외상·활동성 출혈, 혈색소·혈소판"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "출혈 금기 문진·확인: 두개내 질환·최근 수술·외상·활동성 출혈, 혈색소·혈소판",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "혈전용해 금기가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "contra",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈전용해 금기가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "전신 혈전용해: 알테플라제 100 mg 2시간 + 헤파린"
+     },
+     {
+      "label": "있음 또는 혈전용해 실패",
+      "to": 8,
+      "toText": "카테터 치료 또는 수술적 색전제거(필요하면 ECMO 를 가교로)"
+     }
+    ]
+   },
+   {
+    "id": "lysis",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "전신 혈전용해: 알테플라제 100 mg 2시간 + 헤파린",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mech",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "카테터 치료 또는 수술적 색전제거(필요하면 ECMO 를 가교로)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0967"
+  ],
+  "hasErrors": false
+ },
+ "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
+  "id": "cn.pulm.pulmonary-embolism.intermediate-high-risk-management",
+  "title": "혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때",
+  "objective": "급성 폐색전증을 혈압 → 우심실 기능·심근 표지자 순으로 위험 분류하고, 혈압이 유지되지만 우심실 기능장애와 트로포닌 상승이 있는 중간-고위험군에서 즉시 치료 용량 항응고와 집중 감시를 고르며, 전신 혈전용해·하대정맥 필터·수술적 색전제거가 각각 어떤 조건에서 답이 되는지 가른다",
+  "objectiveKind": "다음 처치",
+  "condition": "급성 폐색전증(중간-고위험, 혈역학 안정)",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "Pulmonology",
+   "Emergency Medicine"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "e7b340ad0653c7a9",
+  "summary": [
+   "폐동맥이 막히면 우심실 후부하가 갑자기 오른다. 우심실이 늘어나며 BNP 가 나오고, 벽 긴장이 우관상동맥 관류를 눌러 미세경색이 생기면 트로포닌이 오른다. 늘어난 우심실이 중격을 좌심실 쪽으로 밀어 좌심실 충만이 줄면 심박출·혈압이 떨어지고 순환 붕괴로 간다 [[harrison-21: 279장 p.2094]].",
+   "그래서 위험 분류는 혈압이 먼저다. 저혈압·쇼크(고위험·대량) 5–10 %, 혈압은 정상이지만 우심실 기능장애가 있는 중간 위험(아대량) 20–25 %, 저위험 65–75 %. 우심부전에 트로포닌 상승이 겹치면 악화 위험이 높다 [[harrison-21: 279장 p.2094]].",
+   "치료의 바탕은 모든 군에서 효과적인 항응고다. 혈압이 정상이고 우심실이 정상이면 항응고만으로 경과가 좋고, 저혈압이면 항응고 + 혈전용해(금기·실패 시 카테터·수술 색전제거)다 [[harrison-21: 279장 p.2098]].",
+   "혈압이 유지되는 중간-고위험군에서 일차 전신 혈전용해는 논란이다 — 출혈(주요 출혈 약 10 %, 두개내출혈 2–3 %)이 이득을 상쇄할 수 있다 [[harrison-21: 279장 p.2100]]. 시험 기준은 즉시 치료 용량 항응고(저분자량 헤파린 등) + 감시실 관찰, 감시 중 혈역학이 무너지면 구제 혈전용해다 [[?esc-pe-2019]] [[?peitho-2014]].",
+   "하대정맥 필터는 항응고를 못 할 활동성 출혈, 또는 충분한 항응고 중 재발일 때의 도구다 — 혈전이 크거나 우심실 부담이 있다는 이유만으로 넣지 않는다 [[harrison-21: 279장 p.2099]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>급성 폐색전증</strong>은 대개 다리 심부정맥의 혈전이 떨어져 폐동맥을 막는 병이다. 다리 심부정맥혈전은 대개 종아리에서 시작해 오금·넙다리·엉덩정맥으로 올라간다 <sup>[1 279장 p.2094]</sup>. 이 정리본의 목표는 진단이 아니라 <strong>확진 뒤 위험 분류와 첫 처치</strong> — 특히 「혈압은 유지되는데 우심실이 힘들어하고 트로포닌이 오른」 환자(중간-고위험)에서 무엇을 먼저 하고, 언제 무엇으로 넘어가는지다.</p>\n<p>위험군은 혈역학을 먼저, 우심실과 심근 표지자를 다음으로 본다(위험군 표). 해리슨은 대량(고위험)·아대량(중간 위험)·저위험의 세 갈래로 나누고 <sup>[1 279장 p.2094]</sup>, ESC 는 중간 위험을 우심실 기능장애와 트로포닌 상승이 <strong>둘 다</strong> 있는 중간-고위험과 그렇지 않은 중간-저위험으로 다시 나눈다 <sup>[2†]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 폐순환은 저압·저저항 회로이고, 얇은 벽의 우심실은 갑작스러운 후부하 증가를 견디도록 만들어지지 않았다.</p>\n<ol>\n<li><strong>폐혈관 저항 상승</strong>: 혈전이 기계적으로 막는 것에 더해, 혈소판이 내놓는 세로토닌 같은 혈관수축 매개물이 폐동맥압과 폐혈관 저항을 올린다. 그래서 작은 색전에도 폐포–동맥 산소 분압차가 크게 벌어질 수 있다 <sup>[1 279장 p.2094]</sup>.</li>\n<li><strong>가스 교환 장애</strong>: 막힌 혈관 쪽은 사강이 늘고, 막히지 않은 쪽은 관류가 몰려 환기–관류 불균형으로 저산소혈증이 생긴다. 반사성 과호흡이 동반된다 <sup>[1 279장 p.2094]</sup>.</li>\n<li><strong>우심실 기능장애 → 순환 붕괴의 사슬</strong>: 우심실 벽 긴장이 오르면 우심실이 확장하고 기능이 떨어지며 늘어남 때문에 BNP 가 나온다. 중격이 좌심실 쪽으로 밀려 좌심실 이완기 충만이 줄고, 커진 벽 긴장이 우관상동맥을 눌러 우심실 허혈·미세경색을 만들며 트로포닌이 나온다. 좌심실이 덜 차면 심박출과 체혈압이 떨어져 순환 붕괴·사망으로 이어진다 <sup>[1 279장 p.2094]</sup>.</li>\n</ol>\n<p>이 사슬에서 <strong>혈압이 떨어지는 것은 마지막 단계</strong>다. 우심실 확장·트로포닌 상승은 사슬의 중간에 있다는 신호이고, 그래서 「악화 위험이 높다」는 뜻이지 이미 무너졌다는 뜻이 아니다 <sup>[1 279장 p.2094]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>갑작스러운 호흡곤란·빈호흡·저산소혈증</strong>: 사강 증가와 환기–관류 불균형, 반사성 과호흡.</li>\n<li><strong>흉막성 흉통</strong>: 말초 폐동맥 색전으로 폐경색이 생기면 흉막이 자극된다.</li>\n<li><strong>한쪽 종아리 부종·압통</strong>: 색전의 원천인 심부정맥혈전. 장거리 비행·입원 침상 안정이 흔한 계기다.</li>\n<li><strong>빈맥</strong>: 심박출 저하를 보상한다. 빈맥이 있는데 혈압이 유지된다는 것은 보상이 아직 버티고 있다는 뜻이다.</li>\n<li><strong>심전도</strong>: 동빈맥 외에 S1Q3T3 는 비교적 특이하나 민감하지 않고, 가장 흔한 이상은 우심실 부담·허혈에 따른 V1–V4 T파 역전이다 <sup>[1 279장 p.2096]</sup>.</li>\n<li><strong>트로포닌·BNP(NT-proBNP) 상승</strong>: 각각 우심실 미세경색, 심근 늘어남의 결과다 <sup>[1 279장 p.2096]</sup>.</li>\n<li><strong>CT 의 우심실/좌심실 비 증가·심초음파의 우심실 확장·운동 저하</strong>: 후부하 증가의 직접 소견.</li>\n<li><strong>정상 젖산·유지되는 혈압</strong>: 조직 관류가 아직 유지된다는 근거다. 다만 정상 젖산은 「지금」 저관류가 없다는 뜻이지 앞으로 붕괴하지 않는다는 보장이 아니다 — 그래서 감시가 처치의 일부다.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 같은 폐색전증, 다른 위험군",
+    "deep": false,
+    "html": "<p>위험군 표가 기준이다. 문항에서는 다음 순서로 읽는다.</p>\n<ol>\n<li><strong>혈압·관류</strong>: 수축기 &lt; 90 mmHg 15분 이상·승압제 필요·쇼크 징후가 있으면 고위험. 그 밖의 소견은 볼 필요 없이 재관류로 간다.</li>\n<li><strong>우심실</strong>: CT 의 우심실/좌심실 비 &gt; 0.9 또는 심초음파의 우심실 확장·운동 저하.</li>\n<li><strong>심근 표지자</strong>: 트로포닌 상승(BNP 는 보조).</li>\n<li>2와 3이 <strong>둘 다</strong> 있으면 중간-고위험, 하나 이하면 중간-저위험, 둘 다 없고 임상 점수가 낮으면 저위험 <sup>[2†]</sup>.</li>\n</ol>\n<p>혈압이 유지되는 환자에서 우심실 기능장애와 트로포닌 상승이 겹치면 항응고를 해도 불량한 경과의 위험이 높고, 우심실 기능이 정상이면 항응고만으로 좋은 경과가 매우 유력하다 <sup>[1 279장 p.2098]</sup>.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li><strong>CT 폐혈관조영</strong>: 확진과 동시에 우심실/좌심실 비로 우심실 부담을 본다.</li>\n<li><strong>심초음파</strong>: 우심실 확장·자유벽 운동 저하, 이동 중 혈전. 초기 폐고혈압이 있던 환자는 약 6주(필요하면 6개월) 뒤 심초음파로 폐동맥압이 정상화됐는지 확인한다 — 급성 폐색전증의 2–4 % 에서 만성 혈전색전성 폐고혈압이 생긴다 <sup>[1 279장 p.2100]</sup>.</li>\n<li><strong>트로포닌·NT-proBNP</strong>: 위험 분류. 정상이면 위험을 낮추지만 진단을 지우지는 않는다.</li>\n<li><strong>젖산</strong>: 숨은 저관류의 표지.</li>\n<li><strong>혈색소·혈소판·크레아티닌·PT/aPTT</strong>: 출혈 위험과 항응고제 선택(콩팥 기능 저하면 저분자량 헤파린 용량 조정 또는 미분획 헤파린), 헤파린 유발 혈소판감소증 감시의 기준값 <sup>[1 279장 p.2098]</sup>.</li>\n<li><strong>출혈 금기 문진</strong>: 두개내 질환·최근 수술·외상은 혈전용해 금기이고 <sup>[1 279장 p.2100]</sup>, 활동성 출혈은 항응고 자체의 금기(필터의 적응)다.</li>\n</ul>"
+   },
+   {
+    "title": "치료 — 무엇을 언제 쓰나",
+    "deep": false,
+    "html": "<p><strong>모든 위험군의 바탕은 효과적인 항응고다</strong> <sup>[1 279장 p.2098]</sup>. 항응고는 혈전을 직접 녹이지 않지만, 새 혈전이 쌓이고 자라는 것을 막아 몸의 섬유소용해가 혈전을 치울 시간을 번다(처치 도구 표).</p>\n<ul>\n<li><strong>중간-고위험의 첫 처치: 치료 용량 항응고 + 집중 감시.</strong> 콩팥 기능이 정상이면 저분자량 헤파린(예: 에녹사파린 1 mg/kg 1일 2회) <sup>[1 279장 p.2099]</sup>. 재관류로 넘어갈 가능성이 크면 시간 단위로 조절·중단할 수 있는 미분획 헤파린(80 U/kg 볼루스 → 18 U/kg/h, aPTT 60–80초)을 쓸 수 있다 <sup>[1 279장 p.2098]</sup>. 감시실에서 혈압·심박·산소·관류를 본다 <sup>[2†]</sup>.</li>\n<li><strong>왜 일차 혈전용해가 아닌가.</strong> 전신 혈전용해는 우심부전을 빠르게 되돌리지만 주요 출혈이 약 10 %, 두개내출혈이 2–3 % 다 <sup>[1 279장 p.2100]</sup>. 혈압이 유지되는 중간 위험군에서 일차 혈전용해는 혈역학 붕괴를 줄였으나 사망을 줄이지 못하고 두개내출혈을 늘렸다 <sup>[3†]</sup>. 해리슨도 이 군의 혈전용해를 「여전히 논란」이라고 적는다 <sup>[1 279장 p.2100]</sup>. 붕괴하지 않을 다수에게 출혈 위험을 지우지 않고, 붕괴하는 소수를 감시로 잡아 그때 쓰는 전략이다.</li>\n<li><strong>구제 혈전용해.</strong> 감시 중 혈역학이 무너지면(수축기 &lt; 90 mmHg 15분 이상·승압제 필요) 알테플라제 100 mg 을 2시간 정맥 주입한다. 빠를수록 효과적이지만 발생 뒤 14일까지 쓸 수 있다 <sup>[1 279장 p.2100]</sup> <sup>[2†]</sup>.</li>\n<li><strong>고위험(처음부터 쇼크).</strong> 항응고 + 일차 혈전용해. 저혈압에는 생리식염수 500 mL 까지만 주고(과다 수액은 우심실 벽 긴장·허혈을 악화시키고 중격을 더 민다), 노르에피네프린을 1차 승압제, 도부타민을 강심제로 쓴다. ECMO 는 혈전용해·색전제거로 가는 가교로만 쓴다 <sup>[1 279장 p.2099]</sup> <sup>[1 279장 p.2100]</sup>.</li>\n<li><strong>혈전용해 금기·실패.</strong> 카테터 치료(국소 저용량 알테플라제 20–25 mg ± 기계적 파쇄·흡인) 또는 수술적 색전제거. 수술은 다장기부전이 오기 전에 의뢰할 때 생존율이 높다 <sup>[1 279장 p.2100]</sup>.</li>\n<li><strong>하대정맥 필터.</strong> 항응고를 못 할 활동성 출혈, 충분한 항응고 중 재발이 두 주 적응이다. 필터는 폐색전은 막아도 심부정맥혈전을 늘리므로 회수형을 쓰고, 필요 없어지면 회수한다 <sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2099]</sup>.</li>\n<li><strong>경구 전환·기간.</strong> 안정되면 경구 항응고제로 바꾼다. 다비가트란·에독사반은 주사제 5일 뒤, 리바록사반·아픽사반은 부하 용량으로 단독 시작, 와파린은 주사제와 최소 5일 겹쳐 INR 2.0–3.0 이 두 번 나올 때까지 <sup>[1 279장 p.2099]</sup>. 기간은 재발 위험으로 정한다(시험 쟁점 Z2).</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>첫 처치 결정의 축은 <strong>혈압·관류</strong>다. 우심실·트로포닌은 감시 강도(감시실 입원)와 붕괴 대비(주사제 선택, 혈전용해 금기 미리 확인)를 정한다 <sup>[2†]</sup>.</li>\n<li>혈압이 유지되더라도 항응고 중 호전이 없거나 악화·심한 고통, 이동 중 혈전, 심하거나 지속되는 우심실 부담, 저심박출 징후가 있고 출혈 위험이 낮으며 기대 여명이 좋으면 혈전용해·색전제거 같은 진행 치료를 고려한다(AHA 2019 성명) <sup>[1 279장 p.2100]</sup>.</li>\n<li>혈전용해 금기(두개내 질환·최근 수술·외상)가 있는 중간-고위험 환자가 붕괴하면 카테터 치료·수술적 색전제거로 간다 <sup>[1 279장 p.2100]</sup>.</li>\n<li>콩팥 기능이 크게 떨어졌거나 고도 비만이면 저분자량 헤파린 용량 조정이 필요하고, 미분획 헤파린이 편하다 <sup>[1 279장 p.2098]</sup>.</li>\n<li>재평가: 감시 중 혈압·심박·산소 요구량·젖산을 반복하고, 초기에 폐고혈압이 있었으면 약 6주 뒤 심초음파로 폐동맥압을 확인한다 <sup>[1 279장 p.2100]</sup>. 한국 약제 급여 기준은 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 혈압 유지 + 우심실 기능장애의 첫 처치</strong> — 시험 기준: 치료 용량 항응고 + 감시, 붕괴 시 구제 혈전용해 <sup>[2†]</sup> <sup>[3†]</sup> / 다른 기준: 해리슨은 정상 혈압 + 우심실 운동 저하를 「개별화」로 두고 이 군의 혈전용해를 「여전히 논란」으로 적으며, 진행 치료를 고려할 조건(AHA 2019 성명)을 든다 <sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2100]</sup> / 왜 다른가: 교과서는 개별 판단의 여지를 열어 두고, 지침은 중간-고위험을 따로 정의해 「일차 혈전용해는 일상적으로 하지 않는다」로 정리했다 / 시험에서는: KMLE · USMLE 모두 혈압이 유지되고 붕괴 징후가 없으면 항응고(± 감시실 입원)를 고른다. 혈전용해는 저혈압·쇼크가 문항에 있을 때만.</li>\n<li><strong>Z2 충돌 · 장거리 비행 뒤 폐색전증의 치료 기간</strong> — 시험 기준: 확인 필요 — 원 문항 부록은 「일시적 유발 요인(비행·수술)은 3개월」로 적었다 <sup>[4†]</sup> / 다른 기준: 해리슨이 인용한 ESC 2019 는 「유발·비유발」 용어를 더는 쓰지 않고 재발 위험으로 나누며, 장거리 비행을 재발 <strong>중간 위험(연 3–8 %)</strong> 으로, 큰 수술·외상을 저위험(연 &lt; 3 %)으로 분류하고, 경미한 일시적 위험 요인만 있던 첫 폐색전증에도 기간 무제한 연장 항응고를 「고려」하라고 적는다 <sup>[1 279장 p.2099]</sup> / 왜 다른가: 경미한 유발 요인 뒤 폐색전증의 재발 위험이 비유발과 비슷하다는 관찰·무작위 자료가 쌓여 지침이 바뀌었다 <sup>[1 279장 p.2099]</sup> / 시험에서는: KMLE 는 큰 수술·외상 같은 뚜렷한 일시적 요인이면 3개월이 안전한 답. 비행 같은 경미한 요인은 판마다 답이 갈릴 수 있어 출제 판을 확인한다. USMLE 는 3개월 후 재평가(연장 고려)가 흐름이다.</li>\n<li><strong>Z3 새 근거 · 카테터 치료</strong> — 시험 기준: 붕괴 시 전신 혈전용해, 금기·실패면 카테터·수술 <sup>[1 279장 p.2100]</sup> / 다른 기준: 초음파 보조 카테터 혈전용해(알테플라제 총 24 mg, 12시간)는 우심실 확장·폐고혈압·혈전 부담을 줄이고 두개내출혈을 최소화했으며, 더 낮은 용량·짧은 시간이 연구 중이다 <sup>[1 279장 p.2100]</sup> / 왜 다른가: 우심실 지표 개선은 입증됐지만 사망·장기 결과를 줄인다는 근거는 아직 없다 / 시험에서는: 「다음 처치」의 정답으로 나오는 일은 드물다 — 혈전용해 금기인 고위험 환자의 대안으로만 고른다.</li>\n</ul>"
+   },
+   {
+    "title": "우심실–좌심실 상호작용과 「수액을 아끼는」 이유",
+    "deep": true,
+    "html": "<ul>\n<li>우심실과 좌심실은 중격과 심막을 함께 쓴다. 우심실이 갑자기 늘어나면 중격이 좌심실 쪽으로 밀리고(심초음파의 D자 모양 좌심실), 심막 안 공간이 한정돼 좌심실 이완기 용적이 줄어든다. 그래서 폐색전증 쇼크는 「좌심실 충만 부족」의 쇼크다 <sup>[1 279장 p.2094]</sup>.</li>\n<li>이때 수액을 많이 주면 우심실만 더 늘어나 벽 긴장·허혈이 커지고 중격이 더 밀려 좌심실 충만이 오히려 줄어든다. 노르에피네프린은 체혈압을 올려 우관상동맥 관류압을 되살리고 우심실 수축력을 높인다 <sup>[1 279장 p.2099]</sup> <sup>[1 279장 p.2100]</sup>.</li>\n<li>혈전용해가 효과를 내는 길은 세 가지다 — 폐동맥을 막는 혈전을 녹이고, 폐고혈압을 악화시키는 세로토닌 등 매개물 분비를 끊고, 골반·다리의 원천 혈전을 녹여 재발을 줄인다 <sup>[1 279장 p.2100]</sup>. 이득이 출혈 위험을 넘는 것은 우심실 사슬이 이미 끝(저혈압)에 닿았을 때다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "위험군별 소견과 첫 처치",
+    "columns": [
+     "위험군",
+     "혈압·관류",
+     "우심실(영상)",
+     "트로포닌·BNP",
+     "첫 처치",
+     "근거"
+    ],
+    "rows": [
+     [
+      "고위험(대량)",
+      "수축기 &lt; 90 mmHg 15분 이상·승압제 필요·쇼크(젖산↑, 소변↓, 의식 변화)",
+      "대개 확장·기능장애",
+      "대개 상승",
+      "미분획 헤파린 + 일차 전신 혈전용해. 금기·실패 → 카테터·수술 색전제거, ECMO 는 가교로만",
+      "<sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2100]</sup>"
+     ],
+     [
+      "중간-고위험",
+      "유지",
+      "기능장애 있음",
+      "상승",
+      "치료 용량 항응고(저분자량 헤파린 등) + 감시실. 붕괴 시 구제 혈전용해",
+      "<sup>[2†]</sup> <sup>[3†]</sup>"
+     ],
+     [
+      "중간-저위험",
+      "유지",
+      "기능장애 또는 표지자 상승 중 하나 이하",
+      "하나 이하 상승",
+      "항응고 + 입원 관찰",
+      "<sup>[2†]</sup>"
+     ],
+     [
+      "저위험",
+      "유지, 임상 점수 낮음",
+      "정상",
+      "정상",
+      "항응고 단독, 조기 퇴원·외래 가능",
+      "<sup>[1 279장 p.2098]</sup> <sup>[2†]</sup>"
+     ]
+    ],
+    "note": "해리슨은 「정상 혈압 + 우심실 정상 = 항응고 단독」, 「정상 혈압 + 우심실 운동 저하 = 개별화」, 「저혈압 = 항응고 + 혈전용해·색전제거」의 세 갈래로 그린다(Fig 279-12) <sup>[1 279장 p.2098]</sup>. 중간 위험을 둘로 나누는 것은 ESC 기준이다 <sup>[2†]</sup>."
+   },
+   {
+    "title": "폐색전증 처치 도구 — 적응과 한계",
+    "columns": [
+     "처치",
+     "적응",
+     "기전·목적",
+     "한계·금기",
+     "근거"
+    ],
+    "rows": [
+     [
+      "저분자량 헤파린(에녹사파린 1 mg/kg 1일 2회 등)",
+      "혈역학이 안정된 대부분의 폐색전증 첫 항응고",
+      "항트롬빈 매개로 새 혈전 생성·전파를 막고 자체 섬유소용해가 혈전을 녹일 시간을 번다",
+      "고도 비만·만성 콩팥병에서 용량 조정. 혈전을 직접 녹이지는 않는다",
+      "<sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2099]</sup>"
+     ],
+     [
+      "미분획 헤파린(80 U/kg 볼루스 → 18 U/kg/h, aPTT 60–80초)",
+      "고위험, 재관류(혈전용해·시술)가 곧 필요할 수 있을 때, 심한 콩팥 기능 저하",
+      "반감기가 짧아 시간 단위로 강도 조절·중단 가능",
+      "aPTT 감시 필요, 헤파린 유발 혈소판감소증",
+      "<sup>[1 279장 p.2098]</sup>"
+     ],
+     [
+      "전신 혈전용해(알테플라제 100 mg 2시간)",
+      "저혈압·쇼크(고위험), 중간-고위험에서 감시 중 붕괴(구제)",
+      "폐동맥 혈전을 녹여 우심부전을 빠르게 되돌리고, 세로토닌 등 매개물 분비를 끊고, 골반·다리 원천 혈전도 녹인다",
+      "주요 출혈 약 10 %·두개내출혈 2–3 %. 금기: 두개내 질환·최근 수술·외상",
+      "<sup>[1 279장 p.2100]</sup>"
+     ],
+     [
+      "카테터 치료(국소 저용량 알테플라제 20–25 mg ± 기계적 파쇄·흡인)",
+      "고위험·중간 위험에서 전신 혈전용해 금기·실패, 또는 진행 치료가 필요할 때",
+      "적은 용량으로 우심실 확장·혈전 부담 감소",
+      "시술 가능 기관·경험 필요. 사망 감소 근거는 제한적",
+      "<sup>[1 279장 p.2100]</sup>"
+     ],
+     [
+      "수술적 색전제거",
+      "고위험에서 혈전용해 금기·실패, 이동 중 혈전",
+      "기계적 혈전 제거",
+      "개흉·체외순환. 다장기부전 전에 의뢰해야 생존율이 높다",
+      "<sup>[1 279장 p.2100]</sup>"
+     ],
+     [
+      "하대정맥 필터",
+      "항응고를 못 할 활동성 출혈, 충분한 항응고 중 재발",
+      "다리 혈전이 폐로 가는 길을 막는다",
+      "혈전 자체를 치료하지 않고 오히려 심부정맥혈전을 늘린다. 회수형을 쓰고 필요 없어지면 회수",
+      "<sup>[1 279장 p.2098]</sup> <sup>[1 279장 p.2099]</sup>"
+     ]
+    ],
+    "note": "치료의 기반은 모든 위험군에서 효과적인 항응고다 <sup>[1 279장 p.2098]</sup>. 재관류(혈전용해·시술·수술)는 항응고에 「더하는」 것이지 대신하는 것이 아니다."
+   },
+   {
+    "title": "항응고 전략 — 시작 방법",
+    "columns": [
+     "전략",
+     "방법",
+     "주의"
+    ],
+    "rows": [
+     [
+      "주사 → 와파린",
+      "헤파린류를 최소 5일, INR 2.0–3.0 이 하루 간격 두 번 나올 때까지 겹친다",
+      "와파린 단독 시작은 초기 응고 경향 때문에 금지"
+     ],
+     [
+      "주사 5일 → 경구",
+      "다비가트란·에독사반",
+      "주사 기간 없이 시작하지 않는다"
+     ],
+     [
+      "경구 단독",
+      "리바록사반 15 mg 1일 2회 3주, 아픽사반 10 mg 1일 2회 1주 부하",
+      "재관류 가능성이 있는 중간-고위험은 주사제로 시작"
+     ]
+    ],
+    "note": "용량·순서는 해리슨 Table 279-4 <sup>[1 279장 p.2099]</sup>. 중간-고위험에서 주사제로 시작하는 이유(붕괴 시 재관류 전환)는 <sup>[2†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「우심실 확장 + 트로포닌 상승」 = 혈전용해?",
+    "point": "우심실 기능장애와 트로포닌은 악화 위험을 알리는 표지이지 혈전용해의 적응이 아니다. 전신 혈전용해의 적응을 정하는 것은 혈압·관류(쇼크·지속 저혈압)다. 혈압이 유지되는 중간-고위험군에서 일차 혈전용해는 붕괴를 줄였지만 사망을 줄이지 못하고 두개내출혈을 늘렸다 — 그래서 항응고로 시작하고, 감시하다 무너지면 구제로 쓴다.",
+    "exception": "감시 중 수축기 &lt; 90 mmHg 가 15분 이상 지속되거나 승압제가 필요해지면 그 순간 고위험이 되어 혈전용해가 답이 된다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup> <sup>[3†]</sup>"
+   },
+   {
+    "contrast": "큰 혈전·우심실 부담이 있으니 하대정맥 필터로 「추가 색전을 막는다」?",
+    "point": "필터의 주 적응은 항응고를 못 하는 활동성 출혈과 충분한 항응고 중 재발 두 가지다. 필터는 혈전을 녹이지 않고 오히려 심부정맥혈전을 늘린다. 출혈·금기가 없으면 항응고가 추가 색전을 막는 도구다.",
+    "exception": "해리슨은 혈전용해 대상이 아닌 우심부전 환자의 재발 방지를 「약한」 적응으로 든다 — 혈전용해가 가능한 환자는 여기에 해당하지 않는다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "수술적 색전제거를 혈압이 유지되는 환자에게?",
+    "point": "수술적 색전제거는 고위험(쇼크)에서 혈전용해가 금기이거나 실패했을 때의 재관류 수단이다. 혈압이 유지되면 침습 위험이 이득을 넘는다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "아스피린으로 정맥혈전을 치료?",
+    "point": "아스피린은 혈소판을 막을 뿐 정맥 혈전의 주성분인 섬유소 형성을 막지 못한다. 급성 폐색전증의 치료 항응고를 대신하지 않는다.",
+    "exception": "",
+    "cites": "<sup>[4†]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "항응고를 못 할 활동성 출혈이 있으면 어느 갈래에서든 항응고 대신 하대정맥 필터를 두고, 출혈이 멎으면 항응고를 시작한 뒤 필터를 회수한다.",
+   "「붕괴」 는 수축기 &lt; 90 mmHg 가 15분 이상 지속되거나 승압제가 필요해지는 것을 뜻한다. 호흡 악화·젖산 상승 같은 관류 저하 징후도 붕괴 신호로 본다.",
+   "중간-고위험에서 주사제(저분자량 헤파린·미분획 헤파린)로 시작하는 이유는 붕괴 시 혈전용해로 곧바로 넘어갈 수 있게 하기 위해서다. 안정되면 경구 항응고제로 바꾼다.",
+   "해리슨 Fig 279-12 는 정상 혈압 + 우심실 운동 저하를 「개별화」로 두고, AHA 2019 성명의 진행 치료 조건(항응고 중 무호전·이동 중 혈전·심하거나 지속되는 우심실 부담 등)을 든다 — 이 도식의 「감시」 가 그 개별 판단의 자리다."
+  ],
+  "criteria": [
+   {
+    "id": "pe-class-harrison",
+    "name": "폐색전증 분류(해리슨)",
+    "kind": "위험 분류",
+    "population": "확진된 급성 폐색전증",
+    "statement": "대량(고위험): 전신 저혈압 + 폐혈관의 절반 이상을 침범하는 광범위 혈전(5–10 %). 아대량(중간 위험): 전신 혈압은 정상이지만 우심실 기능장애(20–25 %) — 우심부전과 트로포닌 등 심근 표지자 상승이 함께 있으면 임상 악화 위험이 높다. 저위험(65–75 %): 예후가 매우 좋다 [[harrison-21: 279장 p.2094]]",
+    "exceptions": "해리슨은 중간 위험을 다시 「중간-고위험·중간-저위험」으로 나누지 않는다 — 그 세분은 ESC 기준이다(아래 행)",
+    "source": "harrison-21",
+    "locator": "279장 p.2094 Classification of Pulmonary Embolism",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pe-class-esc",
+    "name": "폐색전증 위험 분류(ESC 2019)",
+    "kind": "위험 분류",
+    "population": "확진된 급성 폐색전증",
+    "statement": "고위험: 심정지·폐쇄성 쇼크·지속 저혈압(수축기 < 90 mmHg 15분 이상 또는 승압제 필요). 중간-고위험: 혈압 유지 + 영상(심초음파·CT)의 우심실 기능장애 + 트로포닌 상승 둘 다. 중간-저위험: 둘 중 하나 이하(임상 점수 PESI III 이상 또는 sPESI ≥ 1). 저위험: sPESI 0, 우심실·트로포닌 정상",
+    "exceptions": "권고표 번호·쪽은 원문 미대조 — 루틴 컨테이너에서 학술지 접근 차단",
+    "source": "esc-pe-2019",
+    "locator": "위험 분류 표(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pe-ihr-tx-esc",
+    "name": "중간-고위험 처치(ESC 2019)",
+    "kind": "치료 기준",
+    "population": "혈압이 유지되는 중간-고위험 폐색전증",
+    "statement": "치료 용량 항응고로 시작하고(대개 저분자량 헤파린·폰다파리눅스, 재관류 가능성이 크면 미분획 헤파린) 감시한다. 일차 전신 혈전용해는 일상적으로 권고하지 않는다. 감시 중 혈역학이 무너지면 구제 혈전용해, 금기·실패면 수술적 색전제거 또는 카테터 치료",
+    "exceptions": "권고 등급·문구는 원문 미대조",
+    "source": "esc-pe-2019",
+    "locator": "급성기 치료 권고(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pe-advanced-aha",
+    "name": "아대량에서 진행 치료를 고려할 때(AHA 2019 성명, 해리슨 인용)",
+    "kind": "치료 기준",
+    "population": "수축기 혈압이 유지되지만 중등도 이상 우심실 기능장애가 있는 아대량 폐색전증",
+    "statement": "항응고만으로 호전이 없거나, 임상 악화·심한 고통, 이동 중 혈전(clot in transit), 심하거나 지속되는 우심실 부담, 저심박출 징후가 있고 출혈 위험이 낮으며 기대 여명이 좋으면 혈전용해·색전제거 같은 진행 치료를 고려한다 [[harrison-21: 279장 p.2100]]",
+    "exceptions": "해리슨은 이 군의 혈전용해를 「여전히 논란」이라고 적는다 — 처음부터 쓰라는 뜻이 아니다",
+    "source": "harrison-21",
+    "locator": "279장 p.2100 Fibrinolysis",
+    "basis": "current",
+    "exams": [
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 279: Deep-Venous Thrombosis and Pulmonary Thromboembolism",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 279장 p.2091–2100",
+    "checked": "본문 대조(드라이브 문서, 279장) — p.2094 우심실 기능장애·BNP·트로포닌(우심실 미세경색)·중격 이동으로 인한 좌심실 충만 저하와 순환 붕괴의 기전, 대량(고위험 5–10 %)·아대량(중간 위험 20–25 %, 우심부전 + 트로포닌 = 악화 위험 높음)·저위험(65–75 %) 분류; p.2096 트로포닌·BNP 상승 기전; p.2098 위험 분류와 Fig 279-12(정상 혈압 + 우심실 정상 = 항응고 단독, 정상 혈압 + 우심실 운동 저하 = 개별화, 저혈압 = 항응고 + 혈전용해·색전제거), 항응고 세 전략, 미분획 헤파린 aPTT 60–80초·80 U/kg 볼루스 후 18 U/kg/h, 저분자량 헤파린은 고도 비만·만성 콩팥병이 아니면 감시·용량 조정 불필요; p.2099 Table 279-4(에녹사파린 1 mg/kg 1일 2회 등, 다비가트란·에독사반은 헤파린 5일 뒤, 리바록사반·아픽사반 단독), 하대정맥 필터의 두 주 적응(항응고를 못 할 활동성 출혈, 충분한 항응고 중 재발), Table 279-5·279-6(유발/비유발 용어 폐기, 장거리 비행 = 재발 중간 위험), 대량 폐색전증의 수액 500 mL·노르에피네프린; p.2100 알테플라제 100 mg 2시간(14일까지 사용 가능), 금기(두개내 질환·최근 수술·외상), 주요 출혈 약 10 %·두개내출혈 2–3 %, 아대량에서 혈전용해는 논란이며 AHA 2019 성명의 진행 치료 고려 조건, 카테터 치료(알테플라제 20–25 mg), 수술적 색전제거, 만성 혈전색전성 폐고혈압 2–4 %와 6주 심초음파 추적을 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "esc-pe-2019",
+    "org": "European Society of Cardiology / European Respiratory Society",
+    "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
+    "kind": "guideline",
+    "citation": "Konstantinides SV, Meyer G, Becattini C, et al. Eur Heart J 2020;41(4):543–603",
+    "checked": "서지만 — 루틴 컨테이너의 네트워크 정책이 PubMed·doi·학술지 접근을 막아 권고 본문·쪽수를 대조하지 못했다. 해리슨 p.2099 가 이 지침을 인용하는 부분(Table 279-5·279-6)만 간접 확인. 위험 분류 세부(중간-고위험/중간-저위험)·중간-고위험 처치 권고는 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "10.1093/eurheartj/ehz405",
+    "pmid": "31504429",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1093/eurheartj/ehz405"
+   },
+   {
+    "id": "peitho-2014",
+    "org": "New England Journal of Medicine",
+    "title": "Fibrinolysis for Patients with Intermediate-Risk Pulmonary Embolism (PEITHO)",
+    "kind": "trial",
+    "citation": "Meyer G, Vicaut E, Danays T, et al. N Engl J Med 2014;370(15):1402–1411",
+    "checked": "서지만 — PubMed 접근 차단으로 초록·본문 미대조. 1차 결과(7일 사망 또는 혈역학 붕괴 감소)·두개내출혈 증가·7일 사망 차이 없음은 기억에 근거",
+    "doi": "10.1056/NEJMoa1302097",
+    "pmid": "24716681",
+    "verified": "citation",
+    "year": "2014",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1056/NEJMoa1302097"
+   },
+   {
+    "id": "chest-vte-2021",
+    "org": "American College of Chest Physicians",
+    "title": "Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline and Expert Panel Report",
+    "kind": "guideline",
+    "citation": "Stevens SM, Woller SC, Baumann Kreuziger L, et al. Chest 2021;160(6):e545–e608",
+    "checked": "서지만 — 접근 차단으로 권고 본문 미대조. 혈압이 유지되는 폐색전증에서 일상적 전신 혈전용해를 권하지 않고, 항응고 시작 후 악화하면 혈전용해를 권한다는 취지는 기억에 근거",
+    "doi": "10.1016/j.chest.2021.07.055",
+    "pmid": "34352278",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/j.chest.2021.07.055"
+   }
+  ],
+  "checks": [
+   {
+    "q": "혈압이 정상인 폐색전증 환자에서 트로포닌이 오르는 기전은?",
+    "a": "우심실 후부하가 급히 올라 벽 긴장이 커지면 우관상동맥 관류가 눌리고 산소 공급이 줄어 우심실 미세경색이 생긴다. 그 결과로 트로포닌이 나온다."
+   },
+   {
+    "q": "우심실 확장과 트로포닌 상승이 있는데 혈압 124/80 인 폐색전증 환자의 첫 처치와, 전신 혈전용해로 넘어가는 조건은?",
+    "a": "즉시 치료 용량 항응고(저분자량 헤파린 등)와 감시실 감시. 감시 중 수축기 < 90 mmHg 15분 이상·승압제 필요 같은 혈역학 붕괴가 오면 구제 혈전용해로 넘어간다."
+   },
+   {
+    "q": "하대정맥 필터의 두 주 적응은?",
+    "a": "항응고를 못 할 활동성 출혈, 그리고 충분한 치료 용량 항응고 중 재발한 정맥혈전색전증."
+   },
+   {
+    "q": "대량 폐색전증 저혈압에서 수액을 많이 주지 않는 이유는?",
+    "a": "수액이 우심실 벽 긴장을 더 올려 허혈을 악화시키고, 중격을 좌심실 쪽으로 더 밀어 좌심실 충만을 떨어뜨린다. 생리식염수 500 mL 정도만 주고 노르에피네프린을 쓴다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pulm.pulmonary-embolism.intermediate-high-risk-management#v1",
+    "context": "같은 환자 뼈대, 결정적 단서(혈역학)만 바꿈 — 쇼크를 동반한 폐색전증",
+    "stem": "61세 여자가 2시간 전 갑자기 시작된 호흡곤란과 어지러움으로 응급실에 왔다. 사흘 전 장거리 비행으로 귀국했고 왼쪽 종아리가 붓고 아프다. 최근 수술·외상·출혈은 없고 뇌졸중 병력이나 항응고제 복용도 없다. 혈압 84/56 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.9 ℃, 대기 중 산소포화도 86 %. 생리식염수 500 mL 를 준 뒤에도 20분 넘게 수축기혈압이 85 mmHg 를 넘지 않았고 손발이 차다. CT 폐혈관조영에서 양측 주폐동맥에 충만 결손, 우심실/좌심실 지름 비 1.5 이다. 트로포닌 I 0.41 ng/mL(참고치 < 0.04), 젖산 4.1 mmol/L(0.5–2.0), 혈색소 13.1 g/dL, 혈소판 210,000 /mm³, 크레아티닌 0.8 mg/dL 이다. 헤파린 투여를 시작하였다. 다음 처치는?",
+    "options": [
+     "하대정맥 필터 삽입",
+     "저분자량 헤파린으로 바꾸고 감시실에서 관찰",
+     "알테플라제 전신 정맥 투여",
+     "생리식염수 2 L 급속 추가 투여",
+     "아스피린 경구 투여"
+    ],
+    "answer": 3,
+    "explanation": "수액 뒤에도 수축기 < 90 mmHg 가 15분 넘게 지속되고 젖산이 올라 조직 저관류가 있으므로 고위험(대량) 폐색전증이다. 이때는 항응고에 일차 전신 혈전용해(알테플라제 100 mg 2시간)를 더한다 — 원래 문항에서 혈전용해를 미룬 이유(혈압 유지)가 사라졌다. 출혈·수술·외상·뇌졸중이 없어 혈전용해 금기도 없다. 추가 대량 수액은 우심실 벽 긴장과 중격 이동을 악화시키므로 피하고 노르에피네프린을 쓴다. 필터는 항응고 금기·재발일 때, 저분자량 헤파린 + 관찰은 혈압이 유지되는 중간-고위험의 처치다.",
+    "of": "kmle-2026-1128",
+    "changed": "혈압 유지(1시간 관찰에서 안정)·정상 젖산 → 내원 시 수축기 84 mmHg 가 수액 500 mL 뒤에도 20분 넘게 지속·젖산 4.1 → 고위험(쇼크)이 되어 정답이 저분자량 헤파린에서 전신 혈전용해(알테플라제)로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.pulm.pulmonary-embolism.intermediate-high-risk-management#v2",
+    "context": "겉모습만 바꿈 — 입원 환자에서 생긴 중간-고위험 폐색전증",
+    "stem": "72세 남자가 폐렴으로 입원해 닷새째 침상 안정 중 갑자기 숨이 차졌다. 심초음파에서 우심실이 확장되어 있고 자유벽 운동이 떨어져 있으며 좌심실 수축은 정상이다. 고감도 트로포닌 T 는 참고치의 6배, BNP 는 540 pg/mL(참고치 < 100)이다. CT 폐혈관조영에서 오른쪽 주폐동맥과 왼쪽 엽동맥들에 충만 결손이 있다. 혈압 128/76 mmHg, 맥박 104회/분, 호흡 22회/분, 체온 37.4 ℃, 비강 캐뉼라 2 L/분으로 산소포화도 94 % 이다. 이후 2시간 동안 혈압은 120 mmHg 이상으로 유지되었다. 젖산 1.4 mmol/L, 혈색소 13.0 g/dL, 혈소판 240,000 /mm³, 크레아티닌 0.9 mg/dL, 최근 수술·출혈·뇌졸중은 없다. 다음 처치는?",
+    "options": [
+     "알테플라제 전신 정맥 투여",
+     "에녹사파린 체중당 용량 피하 투여",
+     "하대정맥 필터 삽입",
+     "와파린 단독 경구 투여",
+     "수술적 폐색전제거술"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·유발 경위·검사 이름이 달라도 결정적 단서는 같다 — 혈압이 유지되고 젖산이 정상이라 고위험이 아니고, 우심실 기능장애 + 트로포닌 상승이라 중간-고위험이다. 첫 처치는 치료 용량 항응고(콩팥 기능이 정상이라 저분자량 헤파린)와 감시이며, 붕괴하면 구제 혈전용해로 넘어간다. 와파린은 효과가 나기까지 5일 이상 걸리고 초기 응고 경향이 있어 단독으로 시작하지 않는다. 필터는 항응고 금기·재발일 때, 수술적 색전제거는 쇼크에서 혈전용해 금기·실패일 때다.",
+    "of": "kmle-2026-1128",
+    "changed": "나이·성별(72세 남자)·유발 경위(폐렴 입원 중 침상 안정)·검사 이름(고감도 트로포닌 T·BNP)·제시 순서를 바꿈, 혈압 유지 + 우심실 기능장애 + 트로포닌 상승 + 출혈 금기 없음은 그대로 → 답은 여전히 치료 용량 저분자량 헤파린",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "확진된 급성 폐색전증 — 혈압으로 먼저 가르고, 안정하면 우심실·트로포닌으로 감시 강도를 정한다",
+  "geo": {
+   "title": "확진된 급성 폐색전증 — 혈압으로 먼저 가르고, 안정하면 우심실·트로포닌으로 감시 강도를 정한다",
+   "w": 468,
+   "h": 1046.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "CT 폐혈관조영 등으로 확진된",
+      "급성 폐색전증 — 출혈 금기가",
+      "없으면 곧바로 항응고를",
+      "준비한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "hemo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "쇼크 또는 지속 저혈압인가?",
+      "(수축기 < 90 mmHg 15분",
+      "이상 · 승압제 필요 · 저관류)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 180.0
+    },
+    {
+     "id": "high",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "고위험: 미분획 헤파린 +",
+      "일차 전신",
+      "혈전용해(알테플라제 100 mg",
+      "2시간). 금기·실패 → 카테터·",
+      "수술 색전제거, ECMO 는 가교"
+     ],
+     "w": 196,
+     "h": 115,
+     "x": 16.0,
+     "y": 327.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "심초음파 또는 CT 의 우심실/",
+      "좌심실 비, 트로포닌·",
+      "NT-proBNP, 젖산을 확인한다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 327.0
+    },
+    {
+     "id": "rv",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "우심실 기능장애와 트로포닌",
+      "상승이 둘 다 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 508.0
+    },
+    {
+     "id": "low",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "중간-저위험·저위험:",
+      "항응고(저분자량 헤파린",
+      "또는 경구 항응고제) + 입원",
+      "관찰 또는 조기 퇴원"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 638.0
+    },
+    {
+     "id": "ihr",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "중간-고위험: 치료 용량",
+      "항응고(저분자량 헤파린,",
+      "재관류 가능성 크면 미분획",
+      "헤파린) + 감시실 집중 감시"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 16.0,
+     "y": 638.0
+    },
+    {
+     "id": "mon",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "감시 중 혈역학이",
+      "무너지는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 802.0
+    },
+    {
+     "id": "rescue",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "구제 전신 혈전용해 — 금기·",
+      "실패면 수술적 색전제거 또는",
+      "카테터 치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 932.0
+    },
+    {
+     "id": "cont",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "항응고 유지 → 경구 항응고제",
+      "전환, 치료 기간 결정, 약",
+      "6주 뒤 심초음파로 폐고혈압",
+      "추적"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 932.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "hemo",
+     "points": [
+      [
+       227.0,
+       114
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hemo",
+     "to": "high",
+     "points": [
+      [
+       178.0,
+       261.0
+      ],
+      [
+       178.0,
+       271.0
+      ],
+      [
+       114.0,
+       271.0
+      ],
+      [
+       114.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "hemo",
+     "to": "rv",
+     "points": [
+      [
+       227.0,
+       261.0
+      ],
+      [
+       227.0,
+       277.0
+      ],
+      [
+       452,
+       277.0
+      ],
+      [
+       452,
+       462.0
+      ],
+      [
+       194.3,
+       462.0
+      ],
+      [
+       194.3,
+       508.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음(혈압 유지)"
+      ],
+      "w": 90.5,
+      "h": 17,
+      "x": 149.1,
+      "y": 488.0
+     }
+    },
+    {
+     "from": "hemo",
+     "to": "info",
+     "points": [
+      [
+       276.0,
+       261.0
+      ],
+      [
+       276.0,
+       283.0
+      ],
+      [
+       340.0,
+       283.0
+      ],
+      [
+       340.0,
+       327.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "혈압 유지 · 평가 전"
+      ],
+      "w": 106.3,
+      "h": 17,
+      "x": 286.8,
+      "y": 307.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "rv",
+     "points": [
+      [
+       340.0,
+       408.0
+      ],
+      [
+       340.0,
+       418.0
+      ],
+      [
+       259.7,
+       418.0
+      ],
+      [
+       259.7,
+       508.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "rv",
+     "to": "ihr",
+     "points": [
+      [
+       194.3,
+       572.0
+      ],
+      [
+       194.3,
+       582.0
+      ],
+      [
+       114.0,
+       582.0
+      ],
+      [
+       114.0,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "둘 다 있음"
+      ],
+      "w": 59.5,
+      "h": 17,
+      "x": 84.3,
+      "y": 618.0
+     }
+    },
+    {
+     "from": "rv",
+     "to": "low",
+     "points": [
+      [
+       259.7,
+       572.0
+      ],
+      [
+       259.7,
+       588.0
+      ],
+      [
+       340.0,
+       588.0
+      ],
+      [
+       340.0,
+       638.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "하나 이하"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 618.0
+     }
+    },
+    {
+     "from": "ihr",
+     "to": "mon",
+     "points": [
+      [
+       114.0,
+       736.0
+      ],
+      [
+       114.0,
+       746.0
+      ],
+      [
+       227.0,
+       746.0
+      ],
+      [
+       227.0,
+       802.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "mon",
+     "to": "rescue",
+     "points": [
+      [
+       194.3,
+       866.0
+      ],
+      [
+       194.3,
+       876.0
+      ],
+      [
+       114.0,
+       876.0
+      ],
+      [
+       114.0,
+       932.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "붕괴(저혈압·승압제 필요)"
+      ],
+      "w": 140.9,
+      "h": 17,
+      "x": 43.6,
+      "y": 912.0
+     }
+    },
+    {
+     "from": "mon",
+     "to": "cont",
+     "points": [
+      [
+       259.7,
+       866.0
+      ],
+      [
+       259.7,
+       882.0
+      ],
+      [
+       340.0,
+       882.0
+      ],
+      [
+       340.0,
+       932.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "안정 유지"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 912.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "CT 폐혈관조영 등으로 확진된 급성 폐색전증 — 출혈 금기가 없으면 곧바로 항응고를 준비한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "쇼크 또는 지속 저혈압인가? (수축기 < 90 mmHg 15분 이상 · 승압제 필요 · 저관류)"
+     }
+    ]
+   },
+   {
+    "id": "hemo",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "쇼크 또는 지속 저혈압인가? (수축기 < 90 mmHg 15분 이상 · 승압제 필요 · 저관류)",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "고위험: 미분획 헤파린 + 일차 전신 혈전용해(알테플라제 100 mg 2시간). 금기·실패 → 카테터·수술 색전제거, ECMO 는 가교"
+     },
+     {
+      "label": "없음(혈압 유지)",
+      "to": 5,
+      "toText": "우심실 기능장애와 트로포닌 상승이 둘 다 있는가?"
+     },
+     {
+      "label": "혈압 유지 · 평가 전",
+      "to": 4,
+      "toText": "심초음파 또는 CT 의 우심실/좌심실 비, 트로포닌·NT-proBNP, 젖산을 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "high",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "고위험: 미분획 헤파린 + 일차 전신 혈전용해(알테플라제 100 mg 2시간). 금기·실패 → 카테터·수술 색전제거, ECMO 는 가교",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "심초음파 또는 CT 의 우심실/좌심실 비, 트로포닌·NT-proBNP, 젖산을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "우심실 기능장애와 트로포닌 상승이 둘 다 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "rv",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "우심실 기능장애와 트로포닌 상승이 둘 다 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "둘 다 있음",
+      "to": 6,
+      "toText": "중간-고위험: 치료 용량 항응고(저분자량 헤파린, 재관류 가능성 크면 미분획 헤파린) + 감시실 집중 감시"
+     },
+     {
+      "label": "하나 이하",
+      "to": 7,
+      "toText": "중간-저위험·저위험: 항응고(저분자량 헤파린 또는 경구 항응고제) + 입원 관찰 또는 조기 퇴원"
+     }
+    ]
+   },
+   {
+    "id": "ihr",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "중간-고위험: 치료 용량 항응고(저분자량 헤파린, 재관류 가능성 크면 미분획 헤파린) + 감시실 집중 감시",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "감시 중 혈역학이 무너지는가?"
+     }
+    ]
+   },
+   {
+    "id": "low",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "중간-저위험·저위험: 항응고(저분자량 헤파린 또는 경구 항응고제) + 입원 관찰 또는 조기 퇴원",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mon",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "감시 중 혈역학이 무너지는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "붕괴(저혈압·승압제 필요)",
+      "to": 9,
+      "toText": "구제 전신 혈전용해 — 금기·실패면 수술적 색전제거 또는 카테터 치료"
+     },
+     {
+      "label": "안정 유지",
+      "to": 10,
+      "toText": "항응고 유지 → 경구 항응고제 전환, 치료 기간 결정, 약 6주 뒤 심초음파로 폐고혈압 추적"
+     }
+    ]
+   },
+   {
+    "id": "rescue",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "구제 전신 혈전용해 — 금기·실패면 수술적 색전제거 또는 카테터 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cont",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "항응고 유지 → 경구 항응고제 전환, 치료 기간 결정, 약 6주 뒤 심초음파로 폐고혈압 추적",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1128"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
+  "id": "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria",
+  "title": "항인지질항체증후군 — 혈전·임신 이환과 지속 항체로 진단하기",
+  "objective": "항인지질항체가 혈관 내피에서 응고를 일으키면서도 시험관에서는 aPTT 를 늘리는 역설을 설명하고, 임상 기준(동·정맥 혈전, 임신 이환)과 12주 간격 두 번 양성인 검사 기준으로 항인지질항체증후군을 진단하며 파종혈관내응고·유전 혈전성향 등과 감별한다",
+  "objectiveKind": "진단",
+  "condition": "항인지질항체증후군(APS)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Hematology",
+   "Obstetrics"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "e5ba228e67bdfd30",
+  "summary": [
+   "항인지질항체증후군(APS)은 음전하 인지질과 그에 붙는 혈장 단백(β2GPI·프로트롬빈)에 대한 자가항체로 생기는 후천 혈전성향이다. 반복하는 동맥·정맥 혈전과 임신 이환이 특징이며 주로 여성에서, 단독(1차) 또는 SLE 에 동반(2차)된다 [[harrison-21: 357장 p.2749]].",
+   "항체가 손상된 내피에 붙어 혈관 안에서 응고를 시작한다. 그런데 루푸스항응고인자는 시험관에서 인지질 의존 응고 반응을 방해해 aPTT 를 늘리고, 정상 혈장을 섞어도 교정되지 않는다 — 시험관의 「항응고」와 몸 안의 혈전은 모순이 아니다 [[harrison-21: 357장 p.2749]].",
+   "진단은 임상 기준 하나 이상(혈관 혈전, 또는 임신 이환 — 10주 이후 정상 태아의 원인 불명 사망, 34주 전 조산, 10주 전 연속 3회 이상 자연유산)과 검사 기준 하나 이상(LA·aCL·항β2GPI 가 중등도 이상 역가로 12주 간격 두 번)을, 다른 혈전성향 원인이 없을 때 함께 만족하는 것이다 [[harrison-21: 357장 p.2750]].",
+   "12주 간격을 두는 이유는 감염 등으로 일시적으로 나오는 항체를 거르기 위해서다 — 지속성이 진단의 핵심이다.",
+   "첫 혈전 뒤에는 비타민K 길항제(와파린)를 평생 쓴다 [[harrison-21: 357장 p.2750]]. 위험은 항체 종류(IgG>IgM)·개수(2~3개 양성)·역가·지속성으로 커진다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>항인지질항체증후군(APS)</strong> 은 자가항체가 매개하는 후천 혈전성향으로, 반복하는 동맥·정맥 혈전과 임신 이환이 특징이다. 주로 여성에서 생기며, 단독(1차) 또는 SLE 등 다른 자가면역 질환과 함께(2차) 나타난다. 세 곳 이상의 장기에 동시에 빠르게 혈전이 생기는 생명 위협 형태를 파국 APS(CAPS)라 한다 <sup>[1 357장 p.2749]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>주요 자가항체는 세포막의 음전하 인지질(카디오리핀·포스파티딜세린)과 인지질에 붙는 혈장 단백 — β2당단백I(β2GPI)·프로트롬빈 — 을 겨눈다. 감염·산화 스트레스·수술 같은 자극이 유전 배경 위에서 내피세포 자멸사를 늘려 인지질이 드러나고, 여기에 붙은 β2GPI 가 새 항원이 되어 항체를 만든다. 항체가 손상된 내피에 붙으면 혈관 안에서 응고가 시작되고, 보체·호중구 활성화가 혈전과 산과 합병증에 관여한다 <sup>[1 357장 p.2749–2750]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>aPTT 연장의 역설</strong>: 루푸스항응고인자는 β2GPI·프로트롬빈을 인식해 시험관의 인지질 의존 트롬빈 생성을 방해하므로 aPTT·희석 러셀 독사 독 시간이 늘고 정상 혈장을 섞어도 교정되지 않는다. 이것은 시험관 현상이며 몸 안에서는 혈전을 부른다 <sup>[1 357장 p.2749]</sup>.</li>\n<li><strong>정맥 혈전</strong>: 하지 심부정맥혈전(39%)·폐색전(14%), 하대정맥(버드-키아리)·뇌정맥.</li>\n<li><strong>동맥 혈전</strong>: 뇌가 가장 흔하다 — 뇌졸중(20%)·일과성 허혈발작(11%)·편두통·인지 저하. 심근경색·사지 괴저도.</li>\n<li><strong>임신 이환</strong>: 태반 경색으로 반복 유산·자궁내 성장지연·전자간증·조산.</li>\n<li><strong>그 밖</strong>: 그물울혈반(24%), 혈소판감소(30%), 쿰스 양성 용혈빈혈(10%), 리브만-색스 판막 증식, 매독 VDRL 위양성 <sup>[1 357장 p.2749–2750]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>다른 유전·후천 혈전성향, 쿰스 양성 용혈빈혈, 혈소판감소의 원인을 배제한다 <sup>[1 357장 p.2750]</sup>. 유전 혈전성향(단백C·S 결핍, 제5인자 라이덴)은 주로 정맥 혈전이고 aPTT 를 늘리지 않는다. DIC 는 급성 중증 질환 위의 소모성 응고병증이다(감별 표). TTP 는 미세혈관병용혈·심한 혈소판감소·신경 증상이 중심이다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>55세 미만의 혈전·뇌혈관 사고, 또는 그물울혈반·혈소판감소를 동반한 임신 이환이면 항인지질항체를 잰다 <sup>[1 357장 p.2750]</sup>.</p>\n<ol>\n<li><strong>루푸스항응고인자</strong> — aPTT·카올린 응고 시간·희석 러셀 독사 독 시간, 혼합 검사.</li>\n<li><strong>항카디오리핀항체(aCL)</strong> · <strong>항β2GPI 항체</strong> — ELISA, 중등도~고역가.</li>\n<li><strong>12주 간격 재검</strong> — 지속성 확인. 한 번 양성으로 진단하지 않는다.</li>\n<li>위험 평가: IgG, 2~3개 동시 양성, 고역가, 지속 양성일수록 혈전·산과 위험이 높다 <sup>[1 357장 p.2750]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>첫 혈전 사건 뒤 비타민K 길항제를 평생 쓴다 <sup>[1 357장 p.2750]</sup>. (목표 INR·동맥 혈전에서의 강도·임신 중 헤파린 전환은 이 컨테이너에서 읽은 해리슨 문서가 이 문장 중간에서 끝나 대조하지 못했다.)</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<p>항인지질항체는 일반 인구 1~5%, SLE 환자의 약 1/3 에서 나오지만 SLE 환자 중 APS 가 되는 것은 5~10% 다 — 임상 기준 없는 항체 양성은 APS 가 아니다 <sup>[1 357장 p.2749]</sup>. 고전적 항체가 음성이어도 APS 가 강하게 의심되면 항포스파티딜세린/프로트롬빈 항체가 도움이 될 수 있다(혈청음성 APS).</p>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 2023 ACR/EULAR 분류 기준</strong> — 시험 기준: 임상 기준 1개 + 검사 기준 1개(12주 간격 2회)의 이분법 <sup>[1 357장 p.2750]</sup> / 다른 기준: 2023 ACR/EULAR 분류 기준은 영역별 가중 점수 방식으로 바뀌었다고 알려져 있으나 원문을 대조하지 못했다 <sup>[2†]</sup> / 왜 다른가: 해리슨 21판(2022) 이후 발표된 분류(연구용) 기준이다 / 시험에서는: KMLE · USMLE 모두 「혈전 또는 임신 이환 + 12주 간격 두 번 양성인 항인지질항체」로 답한다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "혈전과 응고검사 이상 — APS 와 DIC",
+    "columns": [
+     "항목",
+     "APS",
+     "DIC"
+    ],
+    "rows": [
+     [
+      "경과",
+      "만성·반복(혈전·유산 병력)",
+      "급성, 중증 기저 질환 위"
+     ],
+     [
+      "출혈",
+      "드묾",
+      "혈전과 함께 흔함"
+     ],
+     [
+      "응고검사",
+      "aPTT 연장(혼합해도 교정 안 됨)",
+      "PT·aPTT 연장, 피브리노겐 저하, D-이합체 상승"
+     ],
+     [
+      "항인지질항체",
+      "12주 간격 2회 양성",
+      "진단에 쓰지 않음"
+     ]
+    ],
+    "note": "APS 쪽 harrison-21: 357장 p.2749–2750. DIC 쪽 서술은 이 장의 범위 밖(해리슨 116장 등) — 대조하지 않았다"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "혈전 + aPTT 연장 = 파종혈관내응고(DIC)?",
+    "point": "DIC 는 패혈증·외상·산과 합병증 같은 급성 중증 질환 위에서 응고인자와 혈소판이 소모돼 출혈과 혈전이 함께 오는 급성 상태다. APS 는 수년에 걸친 반복 혈전·유산 병력과 항인지질항체의 지속 양성이 특징이고, aPTT 연장은 루푸스항응고인자의 시험관 효과다.",
+    "exception": "APS 도 혈소판감소(약 30%)를 보일 수 있고, 여러 장기에 동시에 혈전이 생기는 파국 APS(CAPS)는 급성 중증 질환처럼 보인다 <sup>[1 357장 p.2749–2750]</sup>.",
+    "cites": "<sup>[1 357장 p.2749–2750]</sup>"
+   },
+   {
+    "contrast": "유전 혈전성향(단백C 결핍·제5인자 라이덴)과의 구별",
+    "point": "유전 혈전성향은 주로 정맥 혈전이며 aPTT 를 늘리지 않는다. 동맥 혈전(젊은 나이 뇌졸중)·반복 유산·aPTT 연장·항인지질항체 지속 양성이 함께 있으면 APS 다. APS 진단은 다른 혈전성향 원인을 배제한 뒤에 내린다 <sup>[1 357장 p.2750]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 357장 p.2750]</sup>"
+   },
+   {
+    "contrast": "항체 한 번 양성 = APS?",
+    "point": "항인지질항체는 일반 인구 1~5% 에서 나오고 SLE 의 약 1/3 이 가지지만 그중 5~10% 만 APS 가 된다. 임상 기준이 없거나 12주 뒤 재검에서 사라지면 APS 가 아니다 <sup>[1 357장 p.2749–2750]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 357장 p.2749–2750]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [
+   {
+    "id": "aps-classification-harrison",
+    "name": "진단 기준(Harrison 21판 서술)",
+    "kind": "진단 기준",
+    "population": "혈전 또는 임신 이환이 있는 환자",
+    "statement": "임상 기준 1개 이상(혈관 혈전; 임신 이환 — 10주 이후 원인 불명 태아 사망, 34주 전 조산, 10주 전 연속 3회 이상 유산) + 검사 기준 1개 이상(LA·aCL·항β2GPI 중등도~고역가, 12주 간격 2회)",
+    "exceptions": "다른 혈전성향 원인이 없을 때만. 2023 ACR/EULAR 분류 기준은 대조하지 못했다(시험 쟁점 Z1)",
+    "source": "harrison-21",
+    "locator": "357장 p.2750 DIAGNOSIS AND DIFFERENTIAL DIAGNOSIS",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 357: Antiphospholipid Syndrome",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 357장 p.2749–2750",
+    "checked": "본문 대조(드라이브 문서) — p.2749 정의(후천 혈전성향, 1차/2차, CAPS), 항체(aCL·항β2GPI·LA — LA 는 aPTT 연장·정상혈장으로 교정 안 됨, 시험관 현상이며 생체에서는 혈전), 역학(일반인 1–5%, SLE 1/3 보유·5–10% 발병), 병인(내피 결합 → 혈관 내 응고); p.2750 임상 표(DVT 39%, 뇌졸중 20%, 혈소판감소 30%), 진단 기준(임상 1+검사 1, 12주 간격 2회, 다른 혈전성향 배제), 위험 프로필, 첫 혈전 뒤 VKA 평생(문서가 이 문장 중간에서 끝나 목표 INR 은 확인하지 못함)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "barbhaiya-2023",
+    "org": "American College of Rheumatology / EULAR",
+    "title": "The 2023 ACR/EULAR Antiphospholipid Syndrome Classification Criteria",
+    "kind": "guideline",
+    "citation": "Barbhaiya M, Zuily S, Naden R, et al. Arthritis Rheumatol 2023;75(10):1687–1702",
+    "checked": "서지만 — 루틴 컨테이너에서 doi·PubMed 접근이 막혀 본문을 대조하지 못했다. 가중 점수 방식이라는 서술만 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "10.1002/art.42624",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1002/art.42624"
+   }
+  ],
+  "checks": [
+   {
+    "q": "루푸스항응고인자가 있는 환자에서 aPTT 가 길어지는데도 출혈이 아니라 혈전이 생기는 이유는?",
+    "a": "aPTT 연장은 인지질 의존 시험관 반응을 방해한 결과일 뿐이고, 몸 안에서는 항체가 내피에 붙어 응고를 시작시킨다."
+   },
+   {
+    "q": "APS 검사 기준에서 12주 간격 재검이 필요한 이유는?",
+    "a": "감염 등으로 일시적으로 생기는 항체를 거르고 지속 양성만 인정하기 위해서다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 패혈증 위의 급성 응고병증",
+    "stem": "58세 남성이 담관염으로 인한 패혈쇼크로 중환자실에 입원한 지 이틀째에 채혈 부위와 잇몸에서 피가 멎지 않고 발가락 끝이 검푸르게 변했다. 과거 혈전이나 출혈 병력은 없다. 혈소판 38,000/μL(입원 때 190,000/μL), PT INR 2.1, aPTT 52초, 피브리노겐 85 mg/dL, D-이합체는 크게 높고 말초혈액 도말에서 분열적혈구가 보인다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "항인지질항체증후군",
+     "파종혈관내응고",
+     "혈전혈소판감소자반증",
+     "단백C 결핍",
+     "헤파린유발 혈소판감소증"
+    ],
+    "answer": 2,
+    "explanation": "패혈증이라는 급성 중증 기저 질환 위에서 출혈과 말단 혈전이 함께 오고, 혈소판감소·PT 와 aPTT 연장·피브리노겐 저하·D-이합체 상승이 있으면 응고인자와 혈소판이 소모되는 파종혈관내응고다. 원래 문항은 반복 유산·동정맥 혈전의 만성 병력과 12주 간격 두 번 양성인 항인지질항체가 있어 APS 였다 — 그 지속성과 병력이 이 환자에게는 없다 [[harrison-21: 357장 p.2750]].",
+    "of": "kmle-2026-0080",
+    "changed": "반복 유산·혈전 병력과 12주 간격 항체 양성을 없애고, 패혈증 쇼크 위에서 급성으로 생긴 출혈(채혈 부위·잇몸)·혈소판감소·피브리노겐 저하·D-이합체 상승·PT 연장을 더함 → 급성 소모성 응고병증이므로 답이 항인지질항체증후군에서 파종혈관내응고로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 일과성 허혈발작으로 온 젊은 여성",
+    "stem": "27세 여성이 30분간 오른팔에 힘이 빠지고 말이 어눌했다가 저절로 좋아져 왔다. 2년 전 폐색전증으로 6개월간 항응고치료를 받았고, 임신 8주 전후 자연유산을 세 번 연속 겪었다. 다리에 그물 모양의 보랏빛 반점이 있다. 혈소판 112,000/μL, aPTT 는 연장되어 있으며 정상 혈장을 섞어도 교정되지 않는다. 12주 간격으로 두 번 측정한 루푸스항응고인자와 항β2당단백I 항체가 모두 양성이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "제5인자라이덴 변이",
+     "파종혈관내응고",
+     "항인지질항체증후군",
+     "혈전혈소판감소자반증",
+     "단백S 결핍"
+    ],
+    "answer": 3,
+    "explanation": "환자와 제시 순서는 달라도 결정 단서 — 동맥 혈전(55세 미만의 일과성 허혈발작)과 정맥 혈전(폐색전증), 10주 전 연속 3회 유산, 혼합 교정되지 않는 aPTT 연장, 12주 간격 두 번 양성인 항인지질항체 — 가 같으므로 항인지질항체증후군이다 [[harrison-21: 357장 p.2750]]. 그물울혈반과 혈소판감소도 APS 에서 흔하다. 유전 혈전성향은 aPTT 를 늘리지 않고 주로 정맥 혈전이며, DIC 는 급성 중증 질환 위의 소모성 응고병증이다.",
+    "of": "kmle-2026-0080",
+    "changed": "나이(27세)·내원 경위(일과성 팔 힘 빠짐·구음장애, 즉 TIA)·제시 순서를 바꾸고 폐색전증 병력으로 정맥 혈전을 표현했지만, 동·정맥 혈전 + 반복 유산 + aPTT 연장 + 12주 간격 두 번 양성인 항인지질항체는 그대로 → 답은 여전히 항인지질항체증후군",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0080"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.axial-spa.nsaid-failure-biologic": {
+  "id": "cn.rheum.axial-spa.nsaid-failure-biologic",
+  "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 메토트렉세이트·스테로이드가 듣지 않는다",
+  "objective": "확진된 활동성 축성 척추관절염에서 서로 다른 NSAID 둘을 충분히 써도 활동성이 남으면 TNF 억제제(또는 IL-17A 억제제)로 넘어가고, 잠복결핵·B형간염을 먼저 확인하며, 메토트렉세이트·경구 글루코코르티코이드·설파살라진이 축성 증상의 다음 단계가 아닌 이유를 설명한다",
+  "objectiveKind": "치료",
+  "condition": "축성 척추관절염(강직척추염), NSAID 실패",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Ophthalmology",
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "1eee06e4540344d6",
+  "summary": [
+   "강직척추염·비방사선학적 축성 척추관절염의 약물 치료 첫 단계는 NSAID다. 충분한 용량의 NSAID 로 많은 환자의 통증·강직이 줄어든다.",
+   "서로 다른 NSAID 둘에 반응이 불충분한 확진 활동성 질환이면 생물학제 — TNF 억제제 또는 IL-17A 억제제 — 로 간다.",
+   "메토트렉세이트는 축성 질환에 이득이 증명되지 않았고, 경구 글루코코르티코이드도 치료 역할이 없다. 설파살라진은 말초관절염용이다.",
+   "생물학제 전에는 잠복결핵·B형간염을 확인한다. 포도막염이 반복되면 단클론 TNF 억제제가 유리하고 에타너셉트는 포도막염 발생 보고가 있다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>축성 척추관절염은 천장관절과 척추의 부착부에서 시작하는 염증성 관절병으로, X선에서 천장관절염이 확실하면 강직척추염(방사선학적), MRI 에서만 보이면 비방사선학적 축성 척추관절염이다 <sup>[1 362장 p.2791]</sup>. 이 정리본의 목표는 진단이 아니라 <strong>NSAID 가 실패한 뒤 무엇을 쓰는가</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>천장관절 염증 부위에는 T 세포·대식세포가 모이고 특히 초기에 TNF 가 많다. TNF 나 IL-17A 를 막으면 병이 극적으로 좋아지므로 두 사이토카인이 병의 중심 경로다 <sup>[1 362장 p.2791]</sup>. 이 병은 활막보다 <strong>부착부(힘줄·인대가 뼈에 붙는 자리)</strong> 가 먼저 앓는다 — 류마티스관절염에서 활막 염증을 누르는 메토트렉세이트가 척추에서 효과를 내지 못하는 까닭을 여기서 이해할 수 있다. 염증이 오래 가면 연골 내 골화로 인대골극이 생겨 척추가 굳는다 <sup>[1 362장 p.2792]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>40세 이전에 서서히 시작하는 허리통증, 밤·새벽에 심하고 아침 강직이 길며 움직이면 나아진다(염증성 허리통증).</li>\n<li>가장 흔한 관절외 증상은 앞포도막염으로 최대 50 % 에서 생기고 척추 증상보다 먼저 올 수 있다 <sup>[1 362장 p.2793]</sup>.</li>\n<li>HLA-B27·CRP 상승·NSAID 에 대한 좋은 반응은 분류기준의 척추관절염 특징이다 <sup>[1 362장 p.2791]</sup>.</li>\n<li>류마티스인자·항CCP·항핵항체는 대개 음성이다 <sup>[1 362장 p.2793]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>류마티스관절염</strong>: 대칭 말초 소관절, 류마티스인자·항CCP. 약의 순서(메토트렉세이트 먼저)가 축성 척추관절염과 다르다.</li>\n<li><strong>기계적 허리통증</strong>: 활동하면 나빠지고 쉬면 나아진다. 염증 지표 정상.</li>\n<li><strong>건선관절염·장질환 관절염</strong>: 같은 척추관절염 집단 — 동반 질환이 약 선택(IL-17A vs TNF)을 바꾼다 <sup>[1 362장 p.2796]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>생물학제 결정 전에 볼 것: 활동성(증상·CRP), NSAID 시도가 충분했는지(서로 다른 두 가지, 충분한 용량), 잠복결핵(인터페론감마 분비검사·흉부 X선)과 B형간염 <sup>[1 362장 p.2795]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li>교육·운동과 NSAID 가 첫 단계 <sup>[1 362장 p.2794]</sup>.</li>\n<li>서로 다른 NSAID 둘에 불충분 반응 → TNF 억제제 또는 IL-17A 억제제 <sup>[1 362장 p.2795]</sup>. 동반 질환으로 고른다: 포도막염·IBD → 단클론 TNF 억제제(에타너셉트는 포도막염 보고, IL-17A 는 IBD 에 무효) <sup>[1 362장 p.2796]</sup>.</li>\n<li>말초관절염이 문제면 설파살라진 <sup>[1 362장 p.2796]</sup>.</li>\n<li><strong>재평가</strong>: 좋은 반응이면 통증·강직·CRP 가 뚜렷이 좋아진다 <sup>[1 362장 p.2794]</sup>. 반응을 잃으면 다른 TNF 억제제나 IL-17A 억제제로 바꾼다 <sup>[1 362장 p.2795]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>축성 증상의 사다리: NSAID → 생물학제. 전통적 DMARD·경구 스테로이드 단계가 없다.</li>\n<li>생물학제 금기: 활동성 감염, 다발경화증, 혈액암·루푸스 병력 <sup>[1 362장 p.2795]</sup>.</li>\n<li>NSAID 시도 기간·활동성 점수 문턱(ASDAS 등)은 지침 원문을 대조하지 못했다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 362장 p.2791~2796)</li>\n</ul>"
+   },
+   {
+    "title": "왜 류마티스관절염의 사다리가 척추에서는 통하지 않는가",
+    "deep": true,
+    "html": "<p>류마티스관절염의 표적은 활막이고, 메토트렉세이트는 활막염을 누르는 데 강하다. 축성 척추관절염의 표적은 부착부와 뼈 속(골수부종)이며 그 염증을 끌고 가는 것이 TNF·IL-17A 경로다 <sup>[1 362장 p.2791]</sup>. 그래서 같은 「염증성 관절염」이라도 사다리의 두 번째 칸이 다르다 — 말초 활막염에는 설파살라진이 들어서지만, 척추에는 곧장 사이토카인 차단제가 온다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "축성 척추관절염 — 약마다 맡는 자리",
+    "columns": [
+     "약",
+     "축성(척추·천장관절) 증상",
+     "쓰는 자리"
+    ],
+    "rows": [
+     [
+      "NSAID",
+      "효과 있음 <sup>[1 362장 p.2794]</sup>",
+      "첫 약물 치료"
+     ],
+     [
+      "TNF 억제제(아달리무맙·인플릭시맙·골리무맙·세르톨리주맙·에타너셉트)",
+      "빠르고 뚜렷한 효과 <sup>[1 362장 p.2794]</sup>",
+      "NSAID 두 가지 불충분 반응 뒤 <sup>[1 362장 p.2795]</sup>; IBD·반복 포도막염이면 단클론 항체"
+     ],
+     [
+      "IL-17A 억제제(세쿠키누맙·익세키주맙)",
+      "TNF 억제제와 비슷 <sup>[1 362장 p.2795]</sup>",
+      "TNF 억제제와 같은 자리; IBD 에는 듣지 않음 <sup>[1 362장 p.2796]</sup>"
+     ],
+     [
+      "설파살라진",
+      "근거 없음",
+      "말초관절염 동반 시 <sup>[1 362장 p.2796]</sup>"
+     ],
+     [
+      "메토트렉세이트",
+      "이득 미증명 <sup>[1 362장 p.2796]</sup>",
+      "축성 증상의 다음 단계가 아님"
+     ],
+     [
+      "경구 글루코코르티코이드",
+      "역할 미확인 <sup>[1 362장 p.2796]</sup>",
+      "국소 주사만"
+     ]
+    ],
+    "note": "류마티스관절염의 약 순서(메토트렉세이트 → 생물학제)를 그대로 옮기면 틀린다 — 축성 질환에는 전통적 항류마티스약 단계가 없다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "경구 스테로이드 vs 생물학제 — 「NSAID 로 안 되면 더 강한 항염제」",
+    "point": "NSAID 로 조절되지 않는 축성 염증에서 경구 글루코코르티코이드는 치료 역할이 확인되지 않았다 <sup>[1 362장 p.2796]</sup>. 두 가지 NSAID 실패 뒤의 다음 단계는 TNF 억제제 또는 IL-17A 억제제다 <sup>[1 362장 p.2795]</sup>.",
+    "exception": "부착부염 같은 국소 병변에는 병변 내 주사, 앞포도막염 발작에는 국소 스테로이드·산동제를 쓴다 <sup>[1 362장 p.2796]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "메토트렉세이트·설파살라진 vs 생물학제 — 「류마티스관절염처럼 DMARD 먼저」",
+    "point": "메토트렉세이트는 강직척추염에 이득이 증명되지 않았고 설파살라진은 말초관절염용이다 <sup>[1 362장 p.2796]</sup>. 순수 축성 침범이면 전통적 DMARD 를 거치지 않고 생물학제로 간다.",
+    "exception": "말초 관절이 붓는 경우에는 설파살라진을 고려한다 <sup>[1 362장 p.2796]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "에타너셉트 vs 단클론 TNF 억제제 — 「TNF 억제제는 다 같다」",
+    "point": "TNF 억제제로 새로 생기거나 재발한 포도막염이 특히 에타너셉트에서 보고되었다 <sup>[1 362장 p.2796]</sup>. 포도막염·염증성 장질환이 동반되면 단클론 항체(아달리무맙·인플릭시맙)를 고른다.",
+    "exception": "동반 질환이 없으면 TNF 억제제끼리의 선택은 투여 경로·비용·환자 선호로 정한다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "메토트렉세이트·경구 스테로이드는 어느 갈래에도 없다 — 축성 증상에 이득이 확인되지 않았다 <sup>[1 362장 p.2796]</sup>.",
+   "JAK 억제제(토파시티닙·우파다시티닙)도 임상시험에서 효과를 보였다 <sup>[1 362장 p.2796]</sup>. 지침상 위치는 원문 미대조 <sup>[2†]</sup>.",
+   "첫 TNF 억제제에 반응했다가 효과를 잃은 경우에는 두 번째 TNF 억제제가 효과적일 수 있다(원발 실패보다) <sup>[1 362장 p.2795]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "axspa-nsaid-first",
+    "name": "NSAID — 첫 약물 치료",
+    "kind": "치료 기준",
+    "population": "축성 척추관절염",
+    "statement": "NSAID 가 약물 치료의 첫 단계다. 통증·압통을 줄이고 움직임을 늘리며, 지속적 고용량 NSAID 는 진행 위험이 큰 환자에서 방사선 진행을 늦출 수 있다 [[harrison-21: 362장 p.2794]]",
+    "exceptions": "많은 환자가 NSAID 로도 증상이 지속되어 생물학제가 필요하다 [[harrison-21: 362장 p.2794]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "axspa-biologic-threshold",
+    "name": "생물학제로 넘어가는 문턱",
+    "kind": "치료 기준",
+    "population": "확진된 활동성 축성 척추관절염",
+    "statement": "TNF 억제제는 확진·활동성이며 서로 다른 NSAID 최소 두 가지에 반응이 불충분한 환자에게 쓴다. 시작 전 잠복결핵·B형간염을 검사하고 있으면 치료한다 [[harrison-21: 362장 p.2795]]",
+    "exceptions": "활동성 감염·감염 고위험, 다발경화증, 혈액암·루푸스 병력은 TNF 억제제 금기다 [[harrison-21: 362장 p.2795]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "axspa-il17",
+    "name": "IL-17A 억제제",
+    "kind": "치료 기준",
+    "population": "축성 척추관절염",
+    "statement": "세쿠키누맙·익세키주맙(IL-17A 항체)은 TNF 억제제와 비슷한 효과를 보이며, 생물학제 경험이 없거나 TNF 억제제에 실패한 환자 모두에게 효과가 있다 [[harrison-21: 362장 p.2795]]",
+    "exceptions": "염증성 장질환은 IL-17A 차단에 반응하지 않고 TNF 억제제에 반응한다 [[harrison-21: 362장 p.2796]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "axspa-not-effective",
+    "name": "축성 증상에 듣지 않는 약",
+    "kind": "치료 기준",
+    "population": "강직척추염",
+    "statement": "설파살라진(2–3 g/일)은 말초관절염에 쓴다. 메토트렉세이트는 널리 쓰이지만 강직척추염에 이득이 증명되지 않았고, 경구 글루코코르티코이드의 치료 역할도 확인되지 않았다 [[harrison-21: 362장 p.2796]]",
+    "exceptions": "부착부염 등 국소 병변은 병변 내 글루코코르티코이드 주사가 도움이 될 수 있다(반응관절염 절 서술) [[harrison-21: 362장 p.2798]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 362: Spondyloarthritis",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 362장 Spondyloarthritis, 인쇄쪽 2790–2801",
+    "checked": "드라이브 장 문서로 본문 대조. p.2791 ASAS 분류기준(SpA 특징에 포도막염·HLA-B27·CRP·NSAID 반응). p.2793 앞포도막염이 가장 흔한 관절외 증상(최대 50 %). p.2794 NSAID 1차, 지속 고용량 NSAID 의 방사선 진행 억제 가능성, TNF 억제제 종류. p.2795 두 가지 이상 NSAID 불충분 반응에 한정, 결핵·B형간염 검사, 금기, IL-17A 억제제 효과 TNF 와 비슷. p.2796 설파살라진 말초관절염, 메토트렉세이트 이득 미증명, 경구 스테로이드 역할 미확인, JAK 억제제, 포도막염과 에타너셉트, IBD 는 IL-17A 차단에 무반응. p.2798 병변 내 스테로이드",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "asas-eular-2022",
+    "org": "ASAS-EULAR",
+    "title": "ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update",
+    "kind": "guideline",
+    "citation": "Ramiro S, Nikiphorou E, Sepriano A, et al. Ann Rheum Dis 2023;82(1):19-34",
+    "checked": "서지만 확인(원문 미대조 — 이 컨테이너는 PubMed·doi 접근 차단). NSAID 시도 기간·ASDAS 문턱 수치는 대조하지 못했다",
+    "doi": "10.1136/ard-2022-223296",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1136/ard-2022-223296"
+   }
+  ],
+  "checks": [
+   {
+    "q": "축성 척추관절염에서 생물학제로 넘어가는 조건은?",
+    "a": "확진된 활동성 질환이 서로 다른 NSAID 최소 두 가지에 반응이 불충분할 때."
+   },
+   {
+    "q": "생물학제 시작 전 반드시 확인할 것은?",
+    "a": "잠복결핵과 B형간염."
+   },
+   {
+    "q": "메토트렉세이트·경구 스테로이드·설파살라진의 축성 증상 효과는?",
+    "a": "메토트렉세이트 이득 미증명, 경구 스테로이드 역할 미확인, 설파살라진은 말초관절염용."
+   },
+   {
+    "q": "반복 포도막염이 있는 강직척추염에서 피하는 TNF 억제제는?",
+    "a": "에타너셉트 — 포도막염 발생 보고가 많다. 단클론 항체를 고른다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.axial-spa.nsaid-failure-biologic#v1",
+    "context": "같은 HLA-B27 척추관절염, 남은 활동성의 자리를 척추에서 말초 관절로 바꾼 변형",
+    "stem": "29세 남자가 왼쪽 무릎과 오른쪽 발목이 붓고 아프다며 왔다. 3년 전 강직척추염으로 진단되었고 나프록센을 꾸준히 먹은 뒤로 새벽 허리 통증과 아침 강직은 거의 없어졌다. 두 달 전부터 무릎·발목이 번갈아 붓는다. 건선·설사·혈변은 없다. 왼쪽 무릎에 삼출이 있고 오른쪽 발목이 부어 있다. 요추 움직임은 지난번과 같다. HLA-B27 양성, CRP 1.4 mg/dL, 관절액 백혈구 8,000/µL(결정 없음, 그람염색 음성)이다. 추가할 약으로 가장 적절한 것은?",
+    "options": [
+     "설파살라진",
+     "하이드록시클로로퀸",
+     "알로푸리놀",
+     "경구 프레드니솔론 장기 투여",
+     "콜히친"
+    ],
+    "answer": 1,
+    "explanation": "축성 증상은 NSAID 로 조절되고 남은 활동성이 비대칭 말초관절염이다. 설파살라진은 척추관절염의 말초관절염에 쓰는 약이다 — 축성 증상에는 효과가 없어 원래 문항에서는 답이 될 수 없었지만, 말초관절염이 문제일 때는 다음 단계가 된다. 결정·감염이 없는 관절액이므로 통풍약·항생제 쪽이 아니고, 장기 경구 스테로이드는 척추관절염 치료 역할이 확인되지 않았다.",
+    "of": "kmle-2026-0969",
+    "changed": "허리·엉덩이만 아프던 순수 축성 침범 → NSAID 로 허리 증상은 가라앉았고 무릎·발목의 비대칭 말초관절염만 남음 ⇒ 정답이 아달리무맙에서 설파살라진으로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.axial-spa.nsaid-failure-biologic#v2",
+    "context": "겉모습만 바꾼 변형 — 두 가지 NSAID 실패한 활동성 축성 질환이라는 결정 단서는 같다",
+    "stem": "34세 여자가 3년째 계속되는 허리 아래쪽 통증으로 왔다. 밤중에 아파 깨고 아침 강직이 1시간 넘으며 운동하면 나아진다. 오른쪽 발뒤꿈치 뒤쪽이 자주 아프다. 지난 5개월 동안 이부프로펜 최대 용량 8주, 이어 멜록시캄 최대 용량 6주를 먹었으나 증상은 그대로다. 말초 관절 부기·건선·설사는 없다. HLA-B27 양성, CRP 1.9 mg/dL 이다. 골반 X선은 정상이고, 천장관절 MRI 에서 양쪽 연골하 골수부종이 보인다. 인터페론감마 분비검사와 HBsAg 는 음성이다. 다음 치료로 가장 적절한 것은?",
+    "options": [
+     "메토트렉세이트",
+     "에타너셉트 또는 아달리무맙",
+     "경구 프레드니솔론",
+     "설파살라진",
+     "세 번째 NSAID 로 교체"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·동반 부착부염, 방사선 소견 없이 MRI 로만 보이는 천장관절염(비방사선학적)으로 바뀌었지만 결정 단서는 같다 — 확진된 활동성 축성 척추관절염이 서로 다른 NSAID 두 가지에 반응하지 않았다. 다음은 TNF 억제제(또는 IL-17A 억제제)이며 비방사선학적 질환의 반응도 강직척추염과 비슷하다. 결핵·B형간염 음성이 확인되었다. 메토트렉세이트·경구 스테로이드는 축성 증상에 효과가 확인되지 않았고 설파살라진은 말초관절염용이다.",
+    "of": "kmle-2026-0969",
+    "changed": "27세 남자·포도막염 병력·나프록센→셀레콕시브 → 34세 여자·반복 발뒤꿈치 통증(아킬레스건 부착부염)·이부프로펜→멜록시캄, 천장관절 MRI 골수부종만(X선 정상) ⇒ 답은 그대로 TNF 억제제",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "축성 척추관절염 — NSAID 이후의 다음 단계",
+  "geo": {
+   "title": "축성 척추관절염 — NSAID 이후의 다음 단계",
+   "w": 694,
+   "h": 797.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "염증성 허리통증 +",
+      "천장관절염(X선·MRI) ±",
+      "HLA-B27 = 축성 척추관절염"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "nsaid",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "운동·교육 + 충분한 용량의",
+      "NSAID"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 163.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "서로 다른 NSAID 둘을",
+      "충분히 써도 활동성이",
+      "남는가?"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 293.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "용량·기간이 충분했는지,",
+      "복약을 지켰는지 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 440.0
+    },
+    {
+     "id": "cont",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "NSAID 유지·운동"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 570.0
+    },
+    {
+     "id": "periph",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "침범 부위는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 440.0
+    },
+    {
+     "id": "ssz",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "말초관절염 → 설파살라진",
+      "고려(축성에는 무효)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 570.0
+    },
+    {
+     "id": "screen",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "잠복결핵·B형간염 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 570.0
+    },
+    {
+     "id": "bio",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "TNF 억제제 또는 IL-17A",
+      "억제제 — 포도막염·IBD 면",
+      "단클론 TNF 억제제"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 700.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "nsaid",
+     "points": [
+      [
+       340.0,
+       97
+      ],
+      [
+       340.0,
+       107
+      ],
+      [
+       340.0,
+       107
+      ],
+      [
+       340.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "nsaid",
+     "to": "resp",
+     "points": [
+      [
+       340.0,
+       227.0
+      ],
+      [
+       340.0,
+       237.0
+      ],
+      [
+       340.0,
+       237.0
+      ],
+      [
+       340.0,
+       293.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "cont",
+     "points": [
+      [
+       291.0,
+       374.0
+      ],
+      [
+       291.0,
+       384.0
+      ],
+      [
+       678,
+       384.0
+      ],
+      [
+       678,
+       524.0
+      ],
+      [
+       146.7,
+       524.0
+      ],
+      [
+       146.7,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "반응 좋음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 530.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "info",
+     "points": [
+      [
+       340.0,
+       374.0
+      ],
+      [
+       340.0,
+       390.0
+      ],
+      [
+       227.0,
+       390.0
+      ],
+      [
+       227.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불명확"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 206.5,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "periph",
+     "points": [
+      [
+       389.0,
+       374.0
+      ],
+      [
+       389.0,
+       396.0
+      ],
+      [
+       453.0,
+       396.0
+      ],
+      [
+       453.0,
+       440.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "활동성 지속"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 419.6,
+      "y": 420.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "cont",
+     "points": [
+      [
+       227.0,
+       504.0
+      ],
+      [
+       227.0,
+       514.0
+      ],
+      [
+       81.3,
+       514.0
+      ],
+      [
+       81.3,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "용량·기간 부족"
+      ],
+      "w": 84.1,
+      "h": 17,
+      "x": 39.3,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "periph",
+     "to": "ssz",
+     "points": [
+      [
+       420.3,
+       487.0
+      ],
+      [
+       420.3,
+       497.0
+      ],
+      [
+       340.0,
+       497.0
+      ],
+      [
+       340.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "말초 관절만"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 306.6,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "periph",
+     "to": "screen",
+     "points": [
+      [
+       485.7,
+       487.0
+      ],
+      [
+       485.7,
+       503.0
+      ],
+      [
+       566.0,
+       503.0
+      ],
+      [
+       566.0,
+       570.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "축성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 551.0,
+      "y": 550.0
+     }
+    },
+    {
+     "from": "screen",
+     "to": "bio",
+     "points": [
+      [
+       566.0,
+       617.0
+      ],
+      [
+       566.0,
+       627.0
+      ],
+      [
+       340.0,
+       627.0
+      ],
+      [
+       340.0,
+       700.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "염증성 허리통증 + 천장관절염(X선·MRI) ± HLA-B27 = 축성 척추관절염",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "운동·교육 + 충분한 용량의 NSAID"
+     }
+    ]
+   },
+   {
+    "id": "nsaid",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "운동·교육 + 충분한 용량의 NSAID",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "서로 다른 NSAID 둘을 충분히 써도 활동성이 남는가?"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "서로 다른 NSAID 둘을 충분히 써도 활동성이 남는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "불명확",
+      "to": 4,
+      "toText": "용량·기간이 충분했는지, 복약을 지켰는지 확인"
+     },
+     {
+      "label": "반응 좋음",
+      "to": 6,
+      "toText": "NSAID 유지·운동"
+     },
+     {
+      "label": "활동성 지속",
+      "to": 5,
+      "toText": "침범 부위는?"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "용량·기간이 충분했는지, 복약을 지켰는지 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "용량·기간 부족",
+      "to": 6,
+      "toText": "NSAID 유지·운동"
+     }
+    ]
+   },
+   {
+    "id": "periph",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "침범 부위는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "말초 관절만",
+      "to": 7,
+      "toText": "말초관절염 → 설파살라진 고려(축성에는 무효)"
+     },
+     {
+      "label": "축성",
+      "to": 8,
+      "toText": "잠복결핵·B형간염 확인"
+     }
+    ]
+   },
+   {
+    "id": "cont",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "NSAID 유지·운동",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ssz",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "말초관절염 → 설파살라진 고려(축성에는 무효)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "screen",
+    "num": 8,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "잠복결핵·B형간염 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 9,
+      "toText": "TNF 억제제 또는 IL-17A 억제제 — 포도막염·IBD 면 단클론 TNF 억제제"
+     }
+    ]
+   },
+   {
+    "id": "bio",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "TNF 억제제 또는 IL-17A 억제제 — 포도막염·IBD 면 단클론 TNF 억제제",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0969"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
+  "id": "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa",
+  "title": "HCV 연관 크리오글로불린혈증 혈관염 — 원인 바이러스를 없애는 것이 1차 치료이고, 면역억제는 중증 장기 침범에 남긴다",
+  "objective": "촉지 자반·관절통·신경병에 크리오글로불린·류마티스인자·저보체가 겹치면 크리오글로불린혈증 혈관염으로 진단하고 HCV 를 확인한 뒤, 중증 장기 침범이 없으면 직접작용 항바이러스제가 1차 치료이며 스테로이드·리툭시맙·혈장교환·사이클로포스파미드가 왜 지금의 답이 아닌지 가른다",
+  "objectiveKind": "치료",
+  "condition": "HCV 연관 혼합 크리오글로불린혈증 혈관염",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Gastroenterology",
+   "Nephrology",
+   "Neurology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "aa52eb202f776add",
+  "summary": [
+   "크리오글로불린은 차가울 때 침전하는 면역글로불린이다. HCV 에 대한 비정상 면역반응으로 「HCV 항원 + HCV 특이 다클론 IgG + 류마티스인자 활성을 가진 단클론 IgM」 면역복합체가 생기고, 이것이 작은 혈관 벽에 쌓여 혈관염을 일으킨다 [[harrison-21: 363장 p.2814]].",
+   "그래서 임상은 소혈관 혈관염(촉지 자반)·관절통·말초신경병·막증식 사구체신염이고, 검사는 크리오글로불린 양성, 류마티스인자 거의 항상 양성, 저보체혈증(약 90 %)이다. 모든 환자에서 HCV 항체와 HCV RNA 를 확인한다 [[harrison-21: 363장 p.2814]].",
+   "HCV 연관 크리오글로불린혈증 혈관염의 1차 치료는 항바이러스 치료다. 임상 호전은 바이러스 반응에 달려 있고, 바이러스가 사라지면 혈관염·크리오글로불린·IgM·류마티스인자가 함께 줄어든다 [[harrison-21: 363장 p.2814]].",
+   "스테로이드는 일시적 호전만 주고 완전 반응은 7 % 에 그친다. 혈장교환·세포독성 약물은 일화적 보고뿐이고 위험이 크다. 리툭시맙은 무작위 시험 근거가 있어 활동성 혈관염에서 항바이러스제와 함께, 또는 항바이러스제에 실패·불내성·금기일 때 단독으로 고려한다 [[harrison-21: 363장 p.2814]].",
+   "치료 강도를 가르는 것은 장기 침범의 중증도다. 신염이 있으면 예후가 나쁘므로(말기 신부전 15 %) 소변·크레아티닌을 반드시 본다 [[harrison-21: 363장 p.2814]]. 급속 진행 신염·운동신경병·장허혈·폐포출혈 같은 중증에서는 리툭시맙(± 스테로이드, 생명 위협이면 혈장교환)으로 먼저 혈관염을 잡고 항바이러스제를 잇는 것이 지침의 흐름이다 [[?easl-hcv-2020]] [[?aasld-hcv]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>크리오글로불린은 37 ℃ 아래에서 침전했다가 데우면 다시 녹는 단클론 또는 다클론 면역글로불린이다. 크리오글로불린혈증은 촉지 자반·관절통·위약·신경병·사구체신염을 특징으로 하는 전신 혈관염과 연관될 수 있으며, 가장 흔한 연관 원인은 C형간염이다. 다발골수종·림프증식성 질환·결합조직병·감염·간질환과도 연관되고 원인 불명일 수도 있다 <sup>[1 363장 p.2814]</sup>. 만성 C형간염 환자의 약 5 % 가 크리오글로불린혈증 혈관염을 일으킨다고 추정된다 <sup>[1 363장 p.2814]</sup>.</p>\n<p>크리오글로불린은 구성에 따라 세 형으로 나뉜다(크리오글로불린 형 비교표). 혈관염을 일으키는 것은 주로 단클론 또는 다클론 IgM(류마티스인자 활성)과 다클론 IgG 가 섞인 <strong>혼합형(Ⅱ·Ⅲ형)</strong> 이고, 단일 단클론 Ig 로 된 Ⅰ형은 염증보다 과점도·혈관 폐쇄로 나타난다 <sup>[4†]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상에서 바이러스 항원에 대한 항체는 면역복합체를 이뤄 보체로 표지된 뒤 대식세포에 치워진다. HCV 연관 크리오글로불린혈증에서는 HCV 에 대한 비정상 면역반응으로 <strong>HCV 항원 + HCV 특이 다클론 IgG + 단클론 IgM 류마티스인자</strong> 로 된 면역복합체가 계속 만들어진다 <sup>[1 363장 p.2814]</sup>. 만성 감염이 B세포를 오래 자극해 류마티스인자 활성을 가진 B세포 클론이 늘어난 결과이며, 드물게 이 클론이 B세포 림프종으로 이행한다 <sup>[4†]</sup>.</p>\n<p>이 면역복합체가 작은 혈관 벽에 쌓이면 보체가 활성화되어 호중구가 모이고 염증이 시작된다 <sup>[1 363장 p.2814]</sup>. 피부 생검에서는 혈관 벽을 둘러싸고 침범한 염증세포, 섬유소양 괴사, 내피세포 증식, 출혈과 함께 면역글로불린·보체 침착이 보이고, 신장에서는 막증식 사구체신염이 신병변의 80 % 를 차지한다 <sup>[1 363장 p.2814]</sup>. HCV 가 원인이라는 근거는 환자 대부분에서 HCV 감염이 확인되고, 크리오침전물 안에 HCV RNA·항HCV 항체가 있으며, 피부 병변에서 HCV 항원이 보이고, <strong>항바이러스 치료가 효과적</strong>이라는 점이다 <sup>[1 363장 p.2814]</sup>. 치료 논리는 여기서 나온다 — 항원 공급원을 없애면 면역복합체가 새로 생기지 않는다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>촉지 자반</strong>: 소혈관 벽의 염증으로 적혈구가 혈관 밖으로 새어 나와 눌러도 사라지지 않고(자반), 염증 침윤 때문에 만지면 도드라진다. 중력으로 정수압이 높은 하지에 먼저 생기고, 적혈구가 분해되며 헤모시데린 갈색 자국을 남긴다.</li>\n<li><strong>관절통</strong>: 대개 비미란성이며 손·무릎에 온다. 관절 파괴가 없어 X선이 정상이다.</li>\n<li><strong>말초신경병</strong>: 신경을 먹이는 혈관(vasa nervorum)의 혈관염으로 긴 신경 끝부터 축삭이 손상된다 — 발끝 저림·감각 저하로 시작하는 감각 우세 다발신경병이 흔하다.</li>\n<li><strong>사구체신염</strong>: 신질환은 10–30 % 에서 생기고 대부분 막증식 사구체신염이다. 급속 진행 신염이나 중추신경·소화관·심장 혈관염 같은 생명 위협 침범은 드물다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>검사</strong>: 순환 크리오침전물이 기본 소견이다. 류마티스인자는 거의 항상 양성이어서 크리오글로불린이 검출되지 않을 때 단서가 되고, 저보체혈증은 90 % 에서, 적혈구침강속도·CRP 상승과 빈혈도 흔하다 <sup>[1 363장 p.2814]</sup>. 보체는 고전 경로 초기 성분이 소모되어 C4 가 C3 보다 훨씬 크게 떨어지는 양상이 특징적이다 <sup>[4†]</sup>.</li>\n<li><strong>검체 처리의 한계</strong>: 크리오글로불린은 식으면 가라앉으므로 채혈부터 혈청 분리까지 37 ℃ 를 지키지 않으면 위음성이 된다 — 음성 결과 하나로 배제하지 않는다 <sup>[4†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>ANCA 연관 혈관염(현미경적 다발혈관염 등)</strong>: 자반·신염·신경병이 겹치지만 ANCA 양성이고 보체는 대개 정상이다. 면역복합체 침착이 적다(pauci-immune).</li>\n<li><strong>IgA 혈관염(헤노흐-쇤라인)</strong>: 자반·관절통·신염이 같으나 소아에 많고 복통이 흔하며 조직에 IgA 가 침착한다. 류마티스인자·크리오글로불린·저보체가 없다.</li>\n<li><strong>류마티스관절염</strong>: 류마티스인자 양성에 관절통이 같지만 대칭 소관절 활막염·미란이 있고 항CCP 항체가 대개 양성이다. 자반·저보체는 류마티스 혈관염(오래된 중증 RA)이 아니면 드물다.</li>\n<li><strong>B형간염 연관 결절다발동맥염</strong>: 바이러스 간염에 연관된 혈관염이지만 중간 크기 동맥을 침범해 신경병·장허혈·고혈압이 앞서고, 크리오글로불린·류마티스인자가 핵심이 아니다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>Ⅰ형 크리오글로불린혈증</strong>: 골수종·발덴스트룀에서 과점도와 손발가락 괴사가 앞서며 류마티스인자 활성이 없다 — 치료가 혈액 종양 쪽이다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>크리오글로불린</strong>(37 ℃ 채혈·운반) — 양성이면 면역고정으로 형을 정한다. 크리오크리트는 양을 보여 줄 뿐 중증도와 꼭 맞지 않는다.</li>\n<li><strong>류마티스인자·C3/C4</strong> — 크리오글로불린 음성일 때도 의심을 유지하는 단서다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>HCV 항체와 HCV RNA — 모든 환자에게</strong> <sup>[1 363장 p.2814]</sup>. RNA 가 치료 대상(활동성 감염)을 정한다. B형간염·HIV 도 함께 확인한다(리툭시맙을 쓸 때 B형간염 재활성화 위험).</li>\n<li><strong>장기 침범 평가</strong> — 소변검사(단백·적혈구·원주)와 크레아티닌으로 신염을, 신경전도로 신경병의 양상(감각 대 운동)을, 복통·혈변·객혈로 소화관·폐 침범을 본다. 이 결과가 치료 강도를 정한다.</li>\n<li><strong>피부·신장 생검</strong> — 진단이 불확실하거나 신염의 형태를 확인할 때.</li>\n</ol>"
+   },
+   {
+    "title": "치료 — 중증도가 치료 강도를 정한다",
+    "deep": false,
+    "html": "<p>원칙은 「원인 항원을 없앤다 → 필요할 때만 면역계를 누른다」이다(중증도 표).</p>\n<ul>\n<li><strong>1차: 항바이러스 치료</strong> — HCV 연관 크리오글로불린혈증 혈관염의 1차 치료이며, 현재 C형간염 치료제의 효능이 높아 더욱 그렇다 <sup>[1 363장 p.2814]</sup>. 임상 호전은 바이러스 반응에 달려 있고, 혈액에서 HCV 가 사라진 환자는 혈관염이 객관적으로 좋아지며 크리오글로불린·IgM·류마티스인자가 크게 줄어든다 <sup>[1 363장 p.2814]</sup>. 요즘은 인터페론 없이 직접작용 항바이러스제(범유전형 복합제 8–12주)를 쓴다 <sup>[2†]</sup> <sup>[3†]</sup>.</li>\n<li><strong>리툭시맙</strong> — 무작위 시험에서 이득이 확인되어, 활동성 혈관염에서 항바이러스제와 병용하거나, 항바이러스제로도 재발했거나 불내성·금기인 환자에서 단독으로 고려한다 <sup>[1 363장 p.2814]</sup>. 크리오글로불린을 만드는 B세포 클론을 없애는 약이다.</li>\n<li><strong>스테로이드</strong> — 일시적 호전은 있지만 완전 반응은 7 % 에 그친다 <sup>[1 363장 p.2814]</sup>. 중증 침범에서 리툭시맙과 함께 짧게 쓰는 보조 약이다.</li>\n<li><strong>혈장교환·세포독성 약물(사이클로포스파미드)</strong> — 일화적 보고만 있고 확인되지 않았으며 위험이 크다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>중증 장기 침범</strong> — 급속 진행 신염·운동신경병·장허혈·폐포출혈에서는 항바이러스제가 효과를 내기까지 기다릴 수 없어, 리툭시맙(± 스테로이드)으로 혈관염을 먼저 잡고 항바이러스제를 잇는다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li><strong>예후</strong>: 혈관염 자체로 급사하는 일은 드물지만 사구체신염이 있으면 전체 예후가 나쁘다 — 그 환자의 15 % 가 말기 신부전으로 가고, 40 % 가 이후 심혈관 질환·감염·간부전으로 사망한다 <sup>[1 363장 p.2814]</sup>. 그래서 첫 평가에서 소변과 크레아티닌을 빠뜨리지 않는다.</li>\n<li><strong>재평가</strong>: 치료 뒤 바이러스 반응(치료 종료 12주 뒤 HCV RNA 음성)과 함께 자반·관절통·신경병, 소변, 크리오글로불린·류마티스인자·C4 를 추적한다. 임상 관해는 바이러스 제거를 따르지만 크리오글로불린은 천천히 줄어든다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>바이러스 제거 뒤에도 지속·재발</strong>: 리툭시맙을 고려하고, 단클론 IgM 증가·림프절 비대가 있으면 B세포 림프종을 평가한다 <sup>[4†]</sup>.</li>\n<li><strong>HCV 음성 크리오글로불린혈증</strong>: 항바이러스제의 자리가 없고, 기저질환(쇼그렌·림프증식성) 치료와 리툭시맙이 중심이다 <sup>[2†]</sup>.</li>\n<li>한국 급여 기준(리툭시맙의 크리오글로불린혈증 적응)은 대조하지 않았다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · 생명 위협 침범에서 혈장교환의 자리</strong> — 시험 기준: 급속 진행 신염·폐포출혈·장허혈처럼 생명을 위협하면 리툭시맙에 혈장교환을 더해 크리오글로불린을 빨리 뺀다 <sup>[2†]</sup> / 다른 기준: 해리슨은 혈장교환과 세포독성 약물을 「일화적 보고뿐이고 확인되지 않았으며 위험이 크다」고만 적는다 <sup>[1 363장 p.2814]</sup> / 왜 다른가: 무작위 근거가 없어 교과서는 근거 수준을, 지침은 생명 위협 상황의 실용적 선택을 적는다 / 시험에서는: KMLE · USMLE 모두 경증–중등증에서 혈장교환은 오답, 「생명 위협 급속 진행」이 명시될 때만 보조 처치로 고른다.</li>\n<li><strong>Z2 맥락 · 중증에서 리툭시맙과 항바이러스제의 순서</strong> — 시험 기준: 중증은 리툭시맙(± 스테로이드)을 먼저, 이어서 항바이러스제 <sup>[2†]</sup> / 다른 기준: 해리슨은 순서 없이 「항바이러스제와 병용하거나, 실패·불내성·금기 시 단독」으로 적는다 <sup>[1 363장 p.2814]</sup> / 왜 다른가: 해리슨은 약의 자리(병용·대체)를, 지침은 급한 장기 침범의 시간 순서를 다룬다 / 시험에서는: KMLE · USMLE 모두 장기 침범이 없으면 항바이러스제 단독, 급속 진행 신염이면 리툭시맙 포함 요법이 답.</li>\n<li><strong>Z3 새 근거 · 인터페론에서 직접작용 항바이러스제로</strong> — 시험 기준: 인터페론 없는 직접작용 항바이러스제 <sup>[2†]</sup> / 다른 기준: 해리슨 21판은 「현재 C형간염 치료의 효능」을 1차 근거로 들며 약제 선택은 C형간염 장(341장)으로 넘긴다 <sup>[1 363장 p.2814]</sup> / 왜 다른가: 인터페론은 신경병·혈관염을 악화시킬 수 있다는 점이 옛 교과서 서술의 배경인데, 이 부분은 원문 미대조다 <sup>[4†]</sup> / 시험에서는: KMLE · USMLE 모두 「인터페론 + 리바비린」 보기는 옛 요법으로 오답.</li>\n</ul>"
+   },
+   {
+    "title": "바이러스 제거 뒤에도 남는 것",
+    "deep": true,
+    "html": "<ul>\n<li>B세포 클론은 항원 자극이 사라진 뒤에도 일부 자율적으로 남을 수 있다. 그래서 바이러스를 없앴는데도 크리오글로불린·혈관염이 지속되는 환자가 있고, 이때 리툭시맙이 표적을 바꿔 B세포 자체를 없앤다 <sup>[1 363장 p.2814]</sup> <sup>[4†]</sup>.</li>\n<li>리툭시맙 첫 투여 때 크리오글로불린의 IgM 과 결합해 복합체를 만들어 혈관염이 일시 악화할 수 있다는 보고가 있다 — 크리오크리트가 높으면 용량·순서를 조심한다 <sup>[4†]</sup>.</li>\n<li>장기간의 만성 HCV 는 간경변·간세포암 위험도 함께 가지므로, 혈관염이 좋아져도 간 추적은 따로 이어간다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "크리오글로불린의 세 형(Brouet 분류)",
+    "columns": [
+     "형",
+     "구성",
+     "대표 원인",
+     "주된 임상",
+     "근거"
+    ],
+    "rows": [
+     [
+      "Ⅰ형(단일)",
+      "단클론 Ig 하나(주로 IgM 또는 IgG)",
+      "다발골수종·발덴스트룀 거대글로불린혈증",
+      "과점도·혈관 폐쇄(손발가락 괴사·망상피반)",
+      "<sup>[4†]</sup>"
+     ],
+     [
+      "Ⅱ형(혼합)",
+      "단클론 IgM(RF 활성) + 다클론 IgG",
+      "HCV(대부분), 림프증식성 질환, 쇼그렌",
+      "면역복합체 혈관염 — 자반·관절통·신경병·신염",
+      "<sup>[1 363장 p.2814]</sup> <sup>[4†]</sup>"
+     ],
+     [
+      "Ⅲ형(혼합)",
+      "다클론 IgM(RF 활성) + 다클론 IgG",
+      "HCV, 결합조직병, 만성 감염",
+      "Ⅱ형과 비슷하나 대개 경하다",
+      "<sup>[4†]</sup>"
+     ]
+    ],
+    "note": "Ⅱ·Ⅲ형을 합쳐 「혼합 크리오글로불린혈증」이라 부르며, 해리슨의 크리오글로불린혈증 혈관염은 주로 이것을 말한다 <sup>[1 363장 p.2814]</sup>."
+   },
+   {
+    "title": "장기 침범 중증도와 치료",
+    "columns": [
+     "범주",
+     "소견",
+     "치료",
+     "근거"
+    ],
+    "rows": [
+     [
+      "경증–중등증",
+      "자반·관절통·피로, 경한 감각 신경병, 신·소화관·폐 침범 없음(소변·크레아티닌 정상)",
+      "직접작용 항바이러스제 단독",
+      "<sup>[1 363장 p.2814]</sup> <sup>[2†]</sup>"
+     ],
+     [
+      "활동성·항바이러스제 실패",
+      "항바이러스제로 바이러스를 없앴는데도 혈관염 지속, 또는 항바이러스제 불내성·금기",
+      "리툭시맙(단독 또는 병용)",
+      "<sup>[1 363장 p.2814]</sup>"
+     ],
+     [
+      "중증",
+      "급속 진행 사구체신염, 운동신경병, 장허혈, 폐포출혈, 피부 궤양·괴사",
+      "리툭시맙 ± 스테로이드로 혈관염을 먼저 잡고 항바이러스제를 잇는다",
+      "<sup>[2†]</sup> <sup>[3†]</sup>"
+     ],
+     [
+      "생명 위협",
+      "위 중증 소견이 빠르게 진행",
+      "혈장교환을 더하는 흐름(지침마다 다름 — 시험 쟁점 Z1)",
+      "<sup>[2†]</sup>"
+     ]
+    ],
+    "note": "해리슨은 「항바이러스제 1차, 리툭시맙 병용·대체」까지만 적고 중증도별 순서는 적지 않는다 <sup>[1 363장 p.2814]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "「혈관염 = 스테로이드 먼저」 vs 바이러스가 원인인 혈관염",
+    "point": "원인 항원(HCV)이 계속 만들어지는 한 면역복합체도 계속 생긴다. 스테로이드는 염증만 일시적으로 누르고 완전 반응은 7 % 에 그치며, 바이러스 복제를 늘릴 수 있다. 원인이 있는 이차 혈관염은 원인 제거가 치료의 축이다.",
+    "exception": "중증 장기 침범(급속 진행 신염·장허혈·폐포출혈)에서는 리툭시맙과 함께 단기간 쓰는 보조 약으로 자리가 있다.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "리툭시맙 — 「크리오글로불린을 만드는 B세포를 없앤다」 vs 1차 약",
+    "point": "리툭시맙은 활동성 혈관염에서 항바이러스제와 함께 쓰거나, 항바이러스제에 실패·불내성·금기일 때 단독으로 쓴다. 장기 침범이 없는 HCV 양성 환자에서는 항바이러스제만으로 대부분 호전되므로 먼저 고르는 약이 아니다.",
+    "exception": "HCV 음성(자가면역·림프증식성) 크리오글로불린혈증과 중증 장기 침범에서는 리툭시맙이 중심 약이 된다 <sup>[2†]</sup>.",
+    "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "혈장교환·사이클로포스파미드 — ANCA 혈관염의 유도 치료를 그대로 옮기기",
+    "point": "혈장교환은 크리오글로불린을 물리적으로 빼 시간을 버는 처치이고, 세포독성 약물과 함께 해리슨은 「일화적 보고뿐이며 위험이 크다」고 적는다. 자반·관절통·경한 감각 신경병만 있는 환자에게는 자리가 없다.",
+    "exception": "급속 진행 사구체신염·폐포출혈·장허혈 같은 생명 위협 상황에서 혈장교환을 더하는 것은 지침에 따라 다르다 — 시험 쟁점 절 참조.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "류마티스인자 양성 + 관절통 = 류마티스관절염?",
+    "point": "혼합 크리오글로불린의 단클론 IgM 자체가 류마티스인자 활성을 가져 류마티스인자는 거의 항상 양성이다. 관절통이 비미란성이고 자반·신경병·저보체가 함께 있으면 크리오글로불린혈증을 먼저 생각한다. 크리오글로불린이 검출되지 않을 때(채혈·운반을 37 ℃ 로 지키지 않으면 위음성) 류마티스인자가 단서가 된다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "크리오글로불린 음성이라도 채혈부터 분리까지 37 ℃ 를 지키지 않았으면 위음성일 수 있다 — 류마티스인자 양성·저보체가 단서가 된다.",
+   "경한 감각 신경병은 「중증」이 아니다. 급속히 진행하는 운동신경병(발목 처짐·근력 저하)이 중증의 기준이다.",
+   "중증 경로의 순서(리툭시맙 먼저 → 항바이러스제)는 지침의 흐름이며 해리슨은 병용·대체만 적는다 — 권고 문구는 원문 미대조(†)."
+  ],
+  "criteria": [
+   {
+    "id": "cryo-tx-harrison",
+    "name": "치료 원칙(해리슨 21판)",
+    "kind": "치료 기준",
+    "population": "HCV 연관 크리오글로불린혈증 혈관염",
+    "statement": "항바이러스 치료가 1차. 리툭시맙은 활동성 혈관염에서 항바이러스제와 병용하거나, 항바이러스제에 재발·불내성·금기일 때 단독으로 고려한다. 스테로이드 단독은 완전 반응 7 %, 혈장교환·세포독성 약물은 일화적 근거",
+    "exceptions": "중증도에 따른 순서(리툭시맙 먼저 → 항바이러스제)는 해리슨에 명시되어 있지 않다",
+    "source": "harrison-21",
+    "locator": "363장 p.2814 Cryoglobulinemic Vasculitis — Treatment",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "cryo-tx-easl",
+    "name": "중증도별 순서(EASL 2020)",
+    "kind": "치료 기준",
+    "population": "HCV 연관 혼합 크리오글로불린혈증",
+    "statement": "경증–중등증은 직접작용 항바이러스제. 중증(급속 진행 신염·운동신경병·장허혈 등)은 리툭시맙(± 스테로이드·혈장교환)을 먼저 또는 함께 쓰고 항바이러스제를 잇는다",
+    "exceptions": "권고 문구·등급·쪽은 원문 미대조(†) — 루틴 컨테이너에서 접근 차단",
+    "source": "easl-hcv-2020",
+    "locator": "Extrahepatic manifestations 절(원문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 363: The Vasculitis Syndromes",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 363장(Langford CA, Fauci AS) p.2802–2816",
+    "checked": "본문 대조(드라이브 분할 문서, 363장 p.2814 Cryoglobulinemic Vasculitis 절 전체) — 정의(촉지 자반·관절통·위약·신경병·사구체신염, HCV 가 가장 흔한 연관), 만성 HCV 의 약 5 % 가 발생, 면역복합체(HCV 항원·다클론 IgG·단클론 IgM RF) 기전, 신병변의 80 % 가 막증식 사구체신염, 신질환 10–30 %, 류마티스인자 거의 항상 양성·저보체 90 %, 모든 환자에서 HCV 항체·RNA 검사, 사구체신염 환자의 15 % 말기 신부전, 항바이러스 치료가 1차·호전은 바이러스 반응에 좌우, 스테로이드 완전 반응 7 %, 혈장교환·세포독성 약물은 일화적·위험, 리툭시맙은 항바이러스제와 병용 또는 실패·불내성·금기 시 단독 고려를 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "easl-hcv-2020",
+    "org": "European Association for the Study of the Liver",
+    "title": "EASL recommendations on treatment of hepatitis C: Final update of the series",
+    "kind": "guideline",
+    "citation": "European Association for the Study of the Liver. J Hepatol 2020;73(5):1170–1218",
+    "checked": "서지만 — 루틴 컨테이너의 네트워크 정책이 doi·저널 사이트 접근을 막아 권고 본문을 대조하지 못했다. 크리오글로불린혈증의 중증도별 순서(리툭시맙 먼저 → 항바이러스제)·DAA 요법 이름·기간은 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "10.1016/j.jhep.2020.08.018",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/j.jhep.2020.08.018"
+   },
+   {
+    "id": "aasld-hcv",
+    "org": "AASLD / IDSA",
+    "title": "HCV Guidance: Recommendations for Testing, Managing, and Treating Hepatitis C",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "서지만 — 접근 차단으로 본문 미대조. 크리오글로불린혈증을 포함한 간외 증상 환자의 치료 우선 권고는 기억에 근거",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-23",
+    "url": "https://www.hcvguidelines.org"
+   },
+   {
+    "id": "roccatello-2018",
+    "org": "Nature Reviews Disease Primers",
+    "title": "Cryoglobulinaemia",
+    "kind": "review",
+    "citation": "Roccatello D, Saadoun D, Ramos-Casals M, et al. Nat Rev Dis Primers 2018;4(1):11",
+    "checked": "서지만 — Brouet 분류(Ⅰ·Ⅱ·Ⅲ형), C4 선택적 저하, 검체를 37 ℃ 로 유지해야 하는 이유, 림프종 이행은 기억에 근거하며 원문 미대조",
+    "doi": "10.1038/s41572-018-0009-4",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1038/s41572-018-0009-4"
+   }
+  ],
+  "checks": [
+   {
+    "q": "HCV 크리오글로불린혈증에서 항바이러스제가 혈관염을 치료하는 기전은?",
+    "a": "혈관염은 HCV 항원·HCV 특이 IgG·단클론 IgM RF 로 된 면역복합체가 혈관 벽에 쌓여 생긴다. 바이러스를 없애면 항원 공급과 B세포 자극이 끊겨 면역복합체가 새로 생기지 않으므로, 임상 호전은 바이러스 반응을 따라간다."
+   },
+   {
+    "q": "이 병에서 류마티스인자가 거의 항상 양성인 이유는?",
+    "a": "혼합 크리오글로불린의 IgM 성분 자체가 IgG 의 Fc 에 결합하는 류마티스인자 활성을 가진다."
+   },
+   {
+    "q": "자반·관절통에 단백뇨 3+·혈뇨·크레아티닌 상승이 더해졌다. 치료가 어떻게 바뀌는가?",
+    "a": "급속 진행 신염이면 중증 장기 침범이다. 리툭시맙(± 스테로이드, 빠르게 나빠지면 혈장교환)으로 혈관염을 먼저 잡고 항바이러스제를 잇는다. 신염은 예후를 가장 크게 나쁘게 하는 소견이다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa#v1",
+    "context": "같은 HCV 크리오글로불린혈증 혈관염, 급속 진행 신염·운동신경병이 동반된 경우",
+    "stem": "61세 남자가 3주 전부터 심해진 다리 부종과 오른발을 들기 힘든 증상으로 왔다. 1년 전부터 정강이에 눌러도 없어지지 않는 붉은 반점이 반복해서 돋았고 손가락 관절이 아팠다. 수년 전 C형간염을 진단받았으나 치료하지 않았다. 혈압 158/96 mmHg, 맥박 84회/분, 호흡 18회/분, 체온 36.9 ℃. 오른쪽 발목 배굴 근력이 2/5 이고 양쪽 정강이에 오목부종이 있다. 검사 결과: HCV RNA 1.8 × 10⁶ IU/mL, 크리오글로불린 양성(제2형), 류마티스인자 280 IU/mL, C3 82 mg/dL, C4 3 mg/dL, 크레아티닌 2.3 mg/dL(1주 전 1.0), 소변 단백 3+, 적혈구 30–50/HPF·적혈구 원주, ANCA 음성. 가장 적절한 치료는?",
+    "options": [
+     "직접작용 항바이러스제 단독 투여",
+     "리툭시맙과 스테로이드 투여",
+     "고용량 스테로이드 단독 투여",
+     "경과 관찰 후 신생검 결과 확인",
+     "안지오텐신전환효소억제제 단독 투여"
+    ],
+    "answer": 2,
+    "explanation": "자반·관절통·C4 저하·RF·크리오글로불린 양성은 원 문항과 같은 HCV 크리오글로불린혈증 혈관염이지만, 1주 새 크레아티닌이 두 배가 넘고 적혈구 원주가 보이는 급속 진행 신염과 발목 처짐(운동신경병)이 더해져 중증 장기 침범이다. 이때는 항바이러스제 효과를 기다릴 여유가 없어 리툭시맙(± 스테로이드)으로 혈관염을 먼저 잡고 항바이러스제를 잇는다. 스테로이드 단독은 완전 반응이 드물고, 신생검을 기다리며 치료를 미루거나 ACE 억제제만 쓰면 신기능을 잃는다.",
+    "of": "kmle-2026-1130",
+    "changed": "소변·신기능 정상, 감각 신경병만 → 단백뇨 3+·적혈구 원주·크레아티닌 1주 새 1.0→2.3 과 발목 처짐(운동신경병) — 중증 장기 침범이 생겨 정답이 항바이러스제 단독에서 리툭시맙+스테로이드로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa#v2",
+    "context": "HCV 를 먼저 알게 된 뒤 자반·관절통이 확인된 경우",
+    "stem": "47세 여자가 건강검진에서 C형간염 항체 양성이 나와 왔다. 1년 전부터 손목과 무릎이 쑤셨고, 오래 서 있으면 발목 위로 눌러도 사라지지 않는 작은 붉은 반점이 도드라졌다가 갈색 자국을 남긴다고 한다. 손발 저림·근력 저하·복통·객혈은 없다. 혈압 122/78 mmHg, 맥박 72회/분, 호흡 14회/분, 체온 36.6 ℃. 관절 부종·변형은 없다. 검사 결과: HCV RNA 9.5 × 10⁵ IU/mL, 류마티스인자 190 IU/mL, 항CCP항체 음성, C3 94 mg/dL, C4 5 mg/dL, 크리오글로불린 양성(제2형), 크레아티닌 0.7 mg/dL, 소변검사 정상, 손 X선 정상. 가장 적절한 치료는?",
+    "options": [
+     "메토트렉세이트 투여",
+     "고용량 프레드니솔론 투여",
+     "리툭시맙 투여",
+     "직접작용 항바이러스제 투여",
+     "혈장교환술 시행"
+    ],
+    "answer": 4,
+    "explanation": "제시 순서와 인물은 달라도 촉지 자반·비미란성 관절통·RF 양성·C4 선택적 저하·크리오글로불린 양성은 HCV 크리오글로불린혈증 혈관염이고, 소변·크레아티닌 정상과 신경·소화관·폐 증상 없음이 중증 장기 침범이 없음을 보여 준다. 따라서 원인 바이러스를 없애는 직접작용 항바이러스제가 1차다. RF 양성이지만 항CCP 음성·미란 없음이라 메토트렉세이트를 쓸 류마티스관절염이 아니며, 스테로이드·리툭시맙·혈장교환은 중증 침범이나 항바이러스제 실패에 남긴다.",
+    "of": "kmle-2026-1130",
+    "changed": "남자·자반으로 내원 → 건강검진에서 HCV 를 먼저 발견한 여자, 관절통을 먼저 제시하고 검사 이름·순서를 바꿈 — 장기 침범이 없다는 결정적 단서는 그대로라 답은 항바이러스제로 같다",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "촉지 자반·관절통·신경병 — 크리오글로불린혈증 혈관염의 치료 선택",
+  "geo": {
+   "title": "촉지 자반·관절통·신경병 — 크리오글로불린혈증 혈관염의 치료 선택",
+   "w": 468,
+   "h": 1142.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "하지 촉지 자반 + 관절통 +",
+      "말초신경병 →",
+      "크리오글로불린·",
+      "류마티스인자·C3/C4 검사"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "HCV 항체·HCV RNA,",
+      "소변검사·크레아티닌,",
+      "신경전도, 복부·폐 증상을",
+      "확인한다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 180.0
+    },
+    {
+     "id": "hcv",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "HCV RNA 가 양성인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 344.0
+    },
+    {
+     "id": "neg",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "HCV 음성 — 림프증식성·",
+      "자가면역(쇼그렌 등) 원인",
+      "평가, 리툭시맙 중심 치료"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 457.0
+    },
+    {
+     "id": "sev",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "중증 장기 침범이 있는가?",
+      "(급속 진행 신염 ·",
+      "운동신경병 · 장허혈 ·",
+      "폐포출혈)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "ind",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "리툭시맙 ± 스테로이드로",
+      "혈관염을 먼저 잡는다(생명",
+      "위협이면 혈장교환 추가 —",
+      "지침마다 다름)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 621.0
+    },
+    {
+     "id": "daa",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "직접작용 항바이러스제로",
+      "HCV 제거"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 785.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "바이러스 제거 뒤 혈관염이",
+      "가라앉았는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 915.0
+    },
+    {
+     "id": "fu",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "추적 — 크리오글로불린·RF·",
+      "보체는 서서히 정상화, 증상·",
+      "소변 정기 확인"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 1045.0
+    },
+    {
+     "id": "pers",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "지속·재발 — 리툭시맙,",
+      "B세포 림프종 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 1045.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       114
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       124
+      ],
+      [
+       227.0,
+       180.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "hcv",
+     "points": [
+      [
+       227.0,
+       278.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       288.0
+      ],
+      [
+       227.0,
+       344.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hcv",
+     "to": "neg",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       114.0,
+       401.0
+      ],
+      [
+       114.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "hcv",
+     "to": "sev",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       340.0,
+       407.0
+      ],
+      [
+       340.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "sev",
+     "to": "daa",
+     "points": [
+      [
+       307.3,
+       555.0
+      ],
+      [
+       307.3,
+       565.0
+      ],
+      [
+       452,
+       565.0
+      ],
+      [
+       452,
+       739.0
+      ],
+      [
+       259.7,
+       739.0
+      ],
+      [
+       259.7,
+       785.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 745.0
+     }
+    },
+    {
+     "from": "sev",
+     "to": "ind",
+     "points": [
+      [
+       372.7,
+       555.0
+      ],
+      [
+       372.7,
+       571.0
+      ],
+      [
+       227.0,
+       571.0
+      ],
+      [
+       227.0,
+       621.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 601.0
+     }
+    },
+    {
+     "from": "ind",
+     "to": "daa",
+     "points": [
+      [
+       227.0,
+       719.0
+      ],
+      [
+       227.0,
+       729.0
+      ],
+      [
+       194.3,
+       729.0
+      ],
+      [
+       194.3,
+       785.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "daa",
+     "to": "resp",
+     "points": [
+      [
+       227.0,
+       849.0
+      ],
+      [
+       227.0,
+       859.0
+      ],
+      [
+       227.0,
+       859.0
+      ],
+      [
+       227.0,
+       915.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "fu",
+     "points": [
+      [
+       194.3,
+       979.0
+      ],
+      [
+       194.3,
+       989.0
+      ],
+      [
+       114.0,
+       989.0
+      ],
+      [
+       114.0,
+       1045.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "관해"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 1025.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "pers",
+     "points": [
+      [
+       259.7,
+       979.0
+      ],
+      [
+       259.7,
+       995.0
+      ],
+      [
+       340.0,
+       995.0
+      ],
+      [
+       340.0,
+       1045.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "지속·재발"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 310.8,
+      "y": 1025.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "하지 촉지 자반 + 관절통 + 말초신경병 → 크리오글로불린·류마티스인자·C3/C4 검사",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "HCV 항체·HCV RNA, 소변검사·크레아티닌, 신경전도, 복부·폐 증상을 확인한다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "HCV 항체·HCV RNA, 소변검사·크레아티닌, 신경전도, 복부·폐 증상을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "HCV RNA 가 양성인가?"
+     }
+    ]
+   },
+   {
+    "id": "hcv",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "HCV RNA 가 양성인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "음성",
+      "to": 4,
+      "toText": "HCV 음성 — 림프증식성·자가면역(쇼그렌 등) 원인 평가, 리툭시맙 중심 치료"
+     },
+     {
+      "label": "양성",
+      "to": 5,
+      "toText": "중증 장기 침범이 있는가? (급속 진행 신염 · 운동신경병 · 장허혈 · 폐포출혈)"
+     }
+    ]
+   },
+   {
+    "id": "neg",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "HCV 음성 — 림프증식성·자가면역(쇼그렌 등) 원인 평가, 리툭시맙 중심 치료",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "sev",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "중증 장기 침범이 있는가? (급속 진행 신염 · 운동신경병 · 장허혈 · 폐포출혈)",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "직접작용 항바이러스제로 HCV 제거"
+     },
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "리툭시맙 ± 스테로이드로 혈관염을 먼저 잡는다(생명 위협이면 혈장교환 추가 — 지침마다 다름)"
+     }
+    ]
+   },
+   {
+    "id": "ind",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "리툭시맙 ± 스테로이드로 혈관염을 먼저 잡는다(생명 위협이면 혈장교환 추가 — 지침마다 다름)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 7,
+      "toText": "직접작용 항바이러스제로 HCV 제거"
+     }
+    ]
+   },
+   {
+    "id": "daa",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "직접작용 항바이러스제로 HCV 제거",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "바이러스 제거 뒤 혈관염이 가라앉았는가?"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "바이러스 제거 뒤 혈관염이 가라앉았는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "관해",
+      "to": 9,
+      "toText": "추적 — 크리오글로불린·RF·보체는 서서히 정상화, 증상·소변 정기 확인"
+     },
+     {
+      "label": "지속·재발",
+      "to": 10,
+      "toText": "지속·재발 — 리툭시맙, B세포 림프종 평가"
+     }
+    ]
+   },
+   {
+    "id": "fu",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "추적 — 크리오글로불린·RF·보체는 서서히 정상화, 증상·소변 정기 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pers",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "지속·재발 — 리툭시맙, B세포 림프종 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1130"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
+  "id": "cn.rheum.giant-cell-arteritis.steroids-before-biopsy",
+  "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
+  "objective": "50세 이상에서 새 두통·턱 파행·측두동맥 압통·류마티스다발근통·ESR/CRP 상승으로 거대세포동맥염이 의심되면, 특히 일과성 시력상실 같은 눈 증상이 있으면 측두동맥 생검·초음파 결과를 기다리지 않고 고용량 글루코코르티코이드(눈 증상이면 메틸프레드니솔론 정주)를 즉시 시작하고, 생검은 치료 시작 뒤에도 약 2주까지 진단 소견이 남는다는 근거로 순서를 정한다",
+  "objectiveKind": "치료",
+  "condition": "거대세포동맥염(두개 침범, 시력 위협)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Ophthalmology",
+   "Neurology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "89f5f1ed574ac8c3",
+  "summary": [
+   "거대세포동맥염은 50세 이상에서 경동맥 가지(특히 측두동맥)와 대동맥을 침범하는 육아종성 중·대혈관염이다. 류마티스다발근통이 40–50 % 에서 동반된다.",
+   "가장 두려운 합병증은 허혈 시신경병증에 의한 갑작스러운 실명이다. 대부분 그 전에 머리·눈 증상(두통·턱 파행·일과성 시력상실)이 먼저 온다 — 그 신호에서 치료하면 실명을 줄인다.",
+   "진단 검사(생검·초음파)를 기다리느라 치료를 미루지 않는다. 측두동맥 생검은 스테로이드 약 14일 뒤에도 혈관염을 보여 준다.",
+   "프레드니손 40–60 mg/일로 시작하고, 눈 증상이 있으면 메틸프레드니솔론 1,000 mg/일 3일을 고려한다. 토실리주맙은 스테로이드와 함께 쓰는 절감제이고, 아스피린은 보조다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>거대세포동맥염(측두동맥염)은 중·대동맥의 염증으로 경동맥 가지, 특히 측두동맥을 잘 침범하지만 대동맥과 그 큰 가지까지 앓는 전신 혈관염이다. 거의 50세 초과에서만 생기고 여성에 많다. 류마티스다발근통이 40–50 % 에서 함께 있고, 단독 류마티스다발근통 환자의 10–20 % 가 나중에 거대세포동맥염으로 간다 <sup>[1 363장 p.2811]</sup>. 이 정리본의 목표는 <strong>의심되는 순간의 치료 순서</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>외막의 영양혈관으로 들어온 CD4 T 세포가 활성화되어 대식세포를 부르고, 혈관벽 전층에 단핵구 침윤과 거대세포가 생기며 내막이 증식하고 내탄력판이 끊어진다 <sup>[1 363장 p.2811]</sup>. 내막 증식으로 내강이 좁아지면 그 혈관이 먹이는 조직이 허혈에 빠진다 — 씹는 근육(턱 파행), 두피, 그리고 시신경(후모양체동맥)이다. 시신경 허혈은 몇 시간·며칠 안에 비가역적 실명으로 굳을 수 있어, 염증을 빨리 가라앉히는 것이 치료의 첫째 목표가 된다 <sup>[1 363장 p.2812]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>새 두통, 압통·비후·결절이 있는 측두동맥(초기 박동, 나중 폐쇄), 두피 통증, 턱·혀 파행 <sup>[1 363장 p.2812]</sup>.</li>\n<li>전신 염증: 발열·권태·체중 감소·류마티스다발근통. 검사실: ESR/CRP 상승, 정색소성 빈혈, ALP 상승 <sup>[1 363장 p.2812]</sup>.</li>\n<li>허혈 시신경병증 → 갑작스러운 실명. 대부분 그 전에 머리·눈 증상이 먼저 있다 <sup>[1 363장 p.2812]</sup>. 일과성 시력상실·복시는 경고 신호다.</li>\n<li>대혈관 침범(최대 1/3): 팔 파행, 맥박 감소·잡음, 흉부대동맥류 <sup>[1 363장 p.2812]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>단독 류마티스다발근통</strong>: 근위부 강직·통증과 ESR/CRP 상승이 있지만 두개 증상이 없고 저용량 프레드니손(10–20 mg/일)에 빠르게 반응한다 <sup>[1 363장 p.2812]</sup>.</li>\n<li><strong>비동맥염성 허혈 시신경병증·색전성 망막동맥 폐쇄</strong>: 염증 지표가 정상이고 전신 증상이 없다 — cn.ophth.crao.arteritic-workup 참조.</li>\n<li><strong>다카야스동맥염</strong>: 젊은 여성, 대동맥궁과 그 가지 <sup>[1 363장 p.2813]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li>측두동맥 생검이 확진이지만 병변이 띄엄띄엄 있어 음성일 수 있다 — 3–5 cm 절편·연속 절편 <sup>[1 363장 p.2812]</sup>.</li>\n<li>측두동맥 초음파(halo)는 진단에 도움이 되어 점점 많이 쓰인다 <sup>[1 363장 p.2812]</sup>.</li>\n<li>어떤 진단 검사도 치료 시작 조건이 아니다 — 생검은 치료 약 14일 뒤에도 혈관염을 보인다 <sup>[1 363장 p.2812]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ol>\n<li><strong>즉시</strong> 프레드니손 40–60 mg/일, 약 1개월 뒤 서서히 감량 <sup>[1 363장 p.2812]</sup>.</li>\n<li>눈 징후·증상이 있으면 메틸프레드니솔론 1,000 mg/일 3일을 고려해 남은 시력을 지킨다 <sup>[1 363장 p.2812]</sup>.</li>\n<li>금기가 없으면 아스피린 81 mg/일을 더한다 <sup>[1 363장 p.2812]</sup>.</li>\n<li>스테로이드 독성·재발 위험이 크면 토실리주맙(스테로이드와 함께), 그것도 어려우면 메토트렉세이트 <sup>[1 363장 p.2812]</sup>.</li>\n<li><strong>재평가</strong>: 증상과 ESR/CRP 로 감량 속도를 정한다. 대부분 2년 이상, 감량 중 60–85 % 가 재발한다. 토실리주맙을 쓰면 ESR/CRP 로 활성도를 볼 수 없다 <sup>[1 363장 p.2812]</sup>.</li>\n</ol>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>의심 → 치료 → 확진의 순서. 생검은 반드시 하되 치료 뒤 2주 안에.</li>\n<li>눈 증상이 있으면 정주 펄스를 고려한다.</li>\n<li>토실리주맙·메토트렉세이트·아스피린은 어느 것도 스테로이드를 대신하지 않는다.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 아스피린의 위치</strong> — 시험 기준: 아스피린은 단독 치료가 아니고 스테로이드에 더하는 보조다 <sup>[1 363장 p.2812]</sup> / 다른 기준: 해리슨은 금기가 없으면 81 mg 을 「더해야 한다」고 쓰지만; 다른 지침(ACR 2021)의 권고 강도는 원문을 보지 못했다 <sup>[2†]</sup> / 왜 다른가: 두개 허혈 감소 자료가 관찰 연구 중심이라 권고 강도를 다르게 읽는다 / 시험에서는: KMLE · USMLE 모두 「아스피린 단독」은 오답, 스테로이드가 첫 치료.</li>\n</ul>"
+   },
+   {
+    "title": "왜 확진 전에 치료해도 되는가",
+    "deep": true,
+    "html": "<p>확진 전 치료를 망설이는 이유는 「치료가 진단을 지운다」는 걱정이다. 거대세포동맥염에서는 그 걱정이 작다 — 혈관벽의 육아종성 염증은 스테로이드 뒤에도 약 2주 남는다 <sup>[1 363장 p.2812]</sup>. 반면 기다리는 비용은 비가역적 실명이다. 되돌릴 수 없는 손해(실명)와 되돌릴 수 있는 손해(며칠의 불필요한 스테로이드, 생검 음성이면 끊으면 된다)를 비교하면 순서가 정해진다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "거대세포동맥염 의심 — 보기별 자리",
+    "columns": [
+     "선택",
+     "역할",
+     "지금 먼저인가"
+    ],
+    "rows": [
+     [
+      "고용량 글루코코르티코이드",
+      "염증을 빠르게 누르고 실명을 막는 첫 치료 <sup>[1 363장 p.2812]</sup>",
+      "예 — 의심되는 즉시, 눈 증상이면 정주 펄스 고려"
+     ],
+     [
+      "측두동맥 생검",
+      "확진. 띄엄띄엄 병변이라 음성일 수 있음 <sup>[1 363장 p.2812]</sup>",
+      "아니오 — 치료 뒤 약 14일 안에"
+     ],
+     [
+      "측두동맥 초음파",
+      "진단 보조 <sup>[1 363장 p.2812]</sup>",
+      "치료를 늦추지 않는 범위에서"
+     ],
+     [
+      "토실리주맙",
+      "스테로이드 절감, 스테로이드와 함께 <sup>[1 363장 p.2812]</sup>",
+      "단독 첫 치료 아님"
+     ],
+     [
+      "메토트렉세이트",
+      "절감제, 근거 엇갈림 <sup>[1 363장 p.2812]</sup>",
+      "아니오"
+     ],
+     [
+      "아스피린 81 mg",
+      "두개 허혈 합병증 감소, 스테로이드에 더함 <sup>[1 363장 p.2812]</sup>",
+      "단독 아님"
+     ]
+    ],
+    "note": "생검은 「할 것인가」가 아니라 「언제 할 것인가」의 문제다 — 한다, 다만 치료 뒤에."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "생검 먼저 vs 치료 먼저 — 「확진한 뒤 장기 스테로이드」",
+    "point": "진단 검사를 기다리느라 치료를 미뤄서는 안 된다. 생검은 스테로이드 약 14일 뒤에도 혈관염을 보여 주므로 순서를 바꿔도 진단을 잃지 않는다 <sup>[1 363장 p.2812]</sup>. 반대로 기다리는 며칠 사이 허혈 시신경병증으로 실명할 수 있다 <sup>[1 363장 p.2812]</sup>.",
+    "exception": "눈·두개 증상이 없고 거대세포동맥염 가능성이 낮아 검사 결과가 치료 여부를 좌우할 때는 먼저 확인할 여지가 있다 — 이 판단 문턱은 원문 미대조 <sup>[2†]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "절감제·보조제 단독 vs 스테로이드 — 「새 약이 더 낫다」",
+    "point": "토실리주맙은 감량하는 글루코코르티코이드와 함께 쓰는 약이고, 메토트렉세이트는 근거가 엇갈리며, 아스피린은 스테로이드에 더하는 보조다 <sup>[1 363장 p.2812]</sup>. 급성기 첫 치료는 어느 경우든 글루코코르티코이드다.",
+    "exception": "스테로이드 독성이 크고 재발이 잦은 환자에서 토실리주맙을 더하는 시점은 개별 판단이다 <sup>[1 363장 p.2812]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "일과성 시력상실 = 지나간 증상 vs 실명 전조",
+    "point": "허혈 시신경병증에 의한 실명은 대개 머리·눈 증상이 먼저 온 뒤 생긴다 — 그 신호에서 치료하면 위험이 줄어든다 <sup>[1 363장 p.2812]</sup>. 저절로 회복됐다는 것은 안심 근거가 아니라 치료를 서두를 근거다.",
+    "exception": "망막중심동맥폐쇄로 이미 시력을 잃은 경우의 첫 검사 순서는 cn.ophth.crao.arteritic-workup 에서 다룬다.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "생검 음성이 진단을 배제하지 않는다 — 병변이 띄엄띄엄 있다 <sup>[1 363장 p.2812]</sup>. 임상 의심이 강하고 스테로이드에 극적으로 반응하면 진단을 뒷받침한다.",
+   "대혈관 침범(팔 파행·맥박 감소·잡음, 흉부대동맥류)은 최대 1/3 에서 생기며 CT·MR 혈관영상으로 확인한다 <sup>[1 363장 p.2812]</sup>.",
+   "감량 중 ESR/CRP 가 조금 오르는 것만으로 재발로 보지 않는다 — 증상이 없으면 조심스럽게 감량을 이어 간다 <sup>[1 363장 p.2812]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "gca-clinical",
+    "name": "임상 진단의 뼈대",
+    "kind": "진단 기준",
+    "population": "50세 이상",
+    "statement": "발열·빈혈·높은 ESR/CRP·두통의 조합에 류마티스다발근통 증상 유무로 임상적으로 의심한다. 측두동맥은 압통·비후·결절이 있고 초기에 박동하다 나중에 막힐 수 있으며, 두피 통증·턱과 혀의 파행이 생긴다 [[harrison-21: 363장 p.2812]]",
+    "exceptions": "생검은 병변이 띄엄띄엄 있어 모든 환자에서 양성이 아니다 — 3–5 cm 절편과 연속 절편으로 수율을 높인다 [[harrison-21: 363장 p.2812]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "gca-no-delay",
+    "name": "치료를 진단 검사에 앞세운다",
+    "kind": "치료 기준",
+    "population": "거대세포동맥염 의심",
+    "statement": "진단 검사 결과를 기다리느라 치료를 미뤄서는 안 된다. 측두동맥 생검은 글루코코르티코이드 치료 약 14일 뒤에도 혈관염을 보일 수 있다 [[harrison-21: 363장 p.2812]]",
+    "exceptions": "스테로이드에 대한 극적인 임상 반응은 진단을 뒷받침할 뿐 생검을 대신하지 않는다 [[harrison-21: 363장 p.2812]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "gca-dose",
+    "name": "초기 용량",
+    "kind": "치료 기준",
+    "population": "거대세포동맥염",
+    "statement": "프레드니손 40–60 mg/일로 약 1개월 뒤 서서히 감량한다. 눈 징후·증상이 있으면 남은 시력을 지키려 메틸프레드니솔론 1,000 mg/일 3일을 고려한다 [[harrison-21: 363장 p.2812]]",
+    "exceptions": "대부분 2년 이상 치료가 필요하고 감량 중 60–85 % 에서 재발한다 [[harrison-21: 363장 p.2812]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "gca-adjuncts",
+    "name": "보조·절감 약",
+    "kind": "치료 기준",
+    "population": "거대세포동맥염",
+    "statement": "토실리주맙(IL-6 수용체 항체)은 감량하는 글루코코르티코이드와 함께 쓴다. 메토트렉세이트는 두 무작위 시험의 결론이 엇갈려 선택된 환자에서만 고려한다. 아스피린 81 mg/일은 두개 허혈 합병증을 줄여 금기가 없으면 글루코코르티코이드에 더한다 [[harrison-21: 363장 p.2812]]",
+    "exceptions": "토실리주맙은 ESR·CRP 를 낮춰 활성도 지표로 쓸 수 없게 만든다 [[harrison-21: 363장 p.2812]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 363: The Vasculitis Syndromes",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 363장 The Vasculitis Syndromes, 인쇄쪽 2802–2816",
+    "checked": "드라이브 장 문서로 본문 대조. p.2811 정의(중·대동맥, 측두동맥, 대동맥), 류마티스다발근통 40–50 % 동반, 50세 초과, 병리(육아종성 범동맥염). p.2812 임상(발열·빈혈·ESR/CRP·두통, 압통성 측두동맥, 턱·혀 파행, 허혈 시신경병증 실명·대부분 선행 머리/눈 증상), 검사(ALP 상승), 생검 3–5 cm·연속 절편, 초음파, 진단 검사로 치료 지연 금지, 스테로이드 ~14일 뒤에도 생검 양성, 프레드니손 40–60 mg, 눈 증상 메틸프레드니솔론 1,000 mg 3일, ≥2년·재발 60–85 %, 토실리주맙·메토트렉세이트·아스피린 81 mg",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "acr-vf-gca-2021",
+    "org": "American College of Rheumatology / Vasculitis Foundation",
+    "title": "2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis",
+    "kind": "guideline",
+    "citation": "Maz M, Chung SA, Abril A, et al. Arthritis Rheumatol 2021;73(8):1349-1365",
+    "checked": "서지만 확인(원문 미대조 — 이 컨테이너는 PubMed·doi 접근 차단). 아스피린·토실리주맙 권고 문구를 대조하지 못했다",
+    "doi": "10.1002/art.41774",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1002/art.41774"
+   }
+  ],
+  "checks": [
+   {
+    "q": "거대세포동맥염 의심에서 생검과 스테로이드의 순서와 그 근거는?",
+    "a": "스테로이드를 먼저 즉시 시작한다. 생검은 치료 약 14일 뒤에도 혈관염을 보여 준다."
+   },
+   {
+    "q": "눈 증상이 있을 때의 초기 치료는?",
+    "a": "메틸프레드니솔론 1,000 mg/일 3일을 고려한 뒤 경구 프레드니손. 없으면 프레드니손 40–60 mg/일."
+   },
+   {
+    "q": "토실리주맙 사용의 원칙과 주의점은?",
+    "a": "감량하는 글루코코르티코이드와 함께 쓴다. ESR·CRP 를 낮춰 활성도 지표로 쓸 수 없게 된다."
+   },
+   {
+    "q": "측두동맥 생검이 음성일 수 있는 이유와 수율을 높이는 방법은?",
+    "a": "병변이 띄엄띄엄 있다. 3–5 cm 절편을 얻어 연속 절편으로 본다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.giant-cell-arteritis.steroids-before-biopsy#v1",
+    "context": "같은 70대 여자의 근위부 강직, 두개 허혈 단서를 모두 뺀 변형",
+    "stem": "72세 여자가 6주 전부터 아침마다 양쪽 어깨와 엉덩이가 뻣뻣하고 아파 머리를 빗거나 의자에서 일어나기 힘들다며 왔다. 아침 강직은 1시간 넘게 간다. 두통·두피 통증·씹을 때 턱 통증·시력 변화는 없다. 양쪽 측두동맥은 압통이 없고 박동이 정상이다. 어깨를 들어 올릴 때 통증으로 움직임이 제한되지만 근력은 정상이다. ESR 58 mm/h, CRP 3.2 mg/dL, 크레아틴키나아제 정상, 류마티스인자·항CCP 항체 음성이다. 가장 적절한 치료는?",
+    "options": [
+     "프레드니솔론 15 mg/일",
+     "메틸프레드니솔론 1,000 mg 정주 3일",
+     "측두동맥 생검 후 결과에 따라 치료",
+     "메토트렉세이트 단독",
+     "토실리주맙 단독"
+    ],
+    "answer": 1,
+    "explanation": "근위부 강직·통증, ESR/CRP 상승, 정상 크레아틴키나아제에 두개 증상·측두동맥 이상·눈 증상이 모두 없으면 거대세포동맥염이 아니라 단독 류마티스다발근통으로 본다. 이때는 프레드니손 10–20 mg/일 저용량으로 빠르게 반응한다. 원래 문항에서 고용량·즉시 치료를 정당화한 것은 턱 파행·측두동맥 압통·일과성 시력상실이었다 — 그 단서가 없으니 고용량 펄스도, 생검도 첫 선택이 아니다. 다만 약 10–20 % 는 나중에 거대세포동맥염으로 가므로 두통·시력 증상이 생기면 곧바로 오라고 알려 준다.",
+    "of": "kmle-2026-0968",
+    "changed": "턱 파행·측두동맥 압통·일과성 시력상실·ESR 96 → 어깨·엉덩이 뻣뻣함만 있고 두통·턱 파행·눈 증상 없음, 측두동맥 정상 ⇒ 정답이 고용량 스테로이드에서 저용량 프레드니솔론(류마티스다발근통)으로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.giant-cell-arteritis.steroids-before-biopsy#v2",
+    "context": "겉모습만 바꾼 변형 — 눈 증상을 동반한 거대세포동맥염 의심이라는 결정 단서는 같다",
+    "stem": "81세 남자가 이틀 전 몇 분 동안 물건이 둘로 보였다가 저절로 좋아졌다며 왔다. 한 달 전부터 머리를 빗으면 두피가 아프고, 딱딱한 음식을 씹다 보면 턱이 아파 멈춘다. 체중이 3 kg 줄었고 미열이 있다. 지금 복시와 시력 저하는 없고 안저는 정상이다. 왼쪽 측두동맥이 굵고 결절이 만져지며 박동이 약하다. ESR 88 mm/h, CRP 5.1 mg/dL, 혈색소 11.0 g/dL, 혈소판 470,000/µL 이다. 측두동맥 생검은 3일 뒤로 예약되어 있다. 지금 가장 적절한 것은?",
+    "options": [
+     "생검 결과를 확인한 뒤 치료를 정한다",
+     "고용량 글루코코르티코이드를 즉시 시작한다",
+     "저용량 아스피린만 시작하고 경과를 본다",
+     "메토트렉세이트를 시작한다",
+     "뇌 MRI 로 원인을 먼저 찾는다"
+    ],
+    "answer": 2,
+    "explanation": "나이·성별·눈 증상의 종류(일과성 복시)·검사 순서가 바뀌었지만 결정 단서는 같다 — 두피 통증·턱 파행·측두동맥 이상·높은 염증 지표로 거대세포동맥염이 의심되고 일과성 눈 증상이 있다. 실명은 이런 선행 증상 뒤에 오므로 생검을 기다리지 않고 고용량 글루코코르티코이드를 즉시 시작한다(눈 증상이면 메틸프레드니솔론 정주 고려). 생검은 치료 약 14일 뒤에도 진단 소견이 남아 예정대로 한다. 아스피린은 보조일 뿐 단독 치료가 아니다.",
+    "of": "kmle-2026-0968",
+    "changed": "74세 여자·관자놀이 두통 먼저·초음파 halo → 81세 남자·일과성 복시와 두피 통증 먼저·초음파 없이 생검만 3일 뒤 예약 ⇒ 답은 그대로 고용량 스테로이드 즉시",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "50세 이상 새 두통 — 거대세포동맥염 의심의 순서",
+  "geo": {
+   "title": "50세 이상 새 두통 — 거대세포동맥염 의심의 순서",
+   "w": 454,
+   "h": 848.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "50세 이상 새 두통 · 턱 파행",
+      "· 두피 통증 · 측두동맥 압통",
+      "· 류마티스다발근통"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "ESR/CRP · 혈구(빈혈·",
+      "혈소판) · ALP 를 즉시 —",
+      "결과를 치료의 조건으로",
+      "삼지는 않는다"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "suspect",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "거대세포동맥염 의심이",
+      "높은가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 327.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 두통 원인 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 457.0
+    },
+    {
+     "id": "eye",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "눈 증상(일과성·영구",
+      "시력상실, 복시)이 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 457.0
+    },
+    {
+     "id": "pulse",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "메틸프레드니솔론 1,000 mg/",
+      "일 3일 고려 → 경구",
+      "프레드니손"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 587.0
+    },
+    {
+     "id": "oral",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "프레드니손 40–60 mg/일",
+      "즉시"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 587.0
+    },
+    {
+     "id": "confirm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "치료 시작 뒤 측두동맥",
+      "생검(3–5 cm) 또는 초음파 —",
+      "약 14일 안에; 아스피린·",
+      "토실리주맙은 함께 검토"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 129.0,
+     "y": 734.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "info",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "info",
+     "to": "suspect",
+     "points": [
+      [
+       227.0,
+       261.0
+      ],
+      [
+       227.0,
+       271.0
+      ],
+      [
+       227.0,
+       271.0
+      ],
+      [
+       227.0,
+       327.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "suspect",
+     "to": "other",
+     "points": [
+      [
+       194.3,
+       391.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       114.0,
+       401.0
+      ],
+      [
+       114.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "낮음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "suspect",
+     "to": "eye",
+     "points": [
+      [
+       259.7,
+       391.0
+      ],
+      [
+       259.7,
+       407.0
+      ],
+      [
+       340.0,
+       407.0
+      ],
+      [
+       340.0,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "높음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 437.0
+     }
+    },
+    {
+     "from": "eye",
+     "to": "pulse",
+     "points": [
+      [
+       307.3,
+       521.0
+      ],
+      [
+       307.3,
+       531.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       114.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "eye",
+     "to": "oral",
+     "points": [
+      [
+       372.7,
+       521.0
+      ],
+      [
+       372.7,
+       537.0
+      ],
+      [
+       340.0,
+       537.0
+      ],
+      [
+       340.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "pulse",
+     "to": "confirm",
+     "points": [
+      [
+       114.0,
+       668.0
+      ],
+      [
+       114.0,
+       678.0
+      ],
+      [
+       194.3,
+       678.0
+      ],
+      [
+       194.3,
+       734.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "oral",
+     "to": "confirm",
+     "points": [
+      [
+       340.0,
+       651.0
+      ],
+      [
+       340.0,
+       661.0
+      ],
+      [
+       259.7,
+       661.0
+      ],
+      [
+       259.7,
+       734.0
+      ]
+     ],
+     "label": null
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "50세 이상 새 두통 · 턱 파행 · 두피 통증 · 측두동맥 압통 · 류마티스다발근통",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "ESR/CRP · 혈구(빈혈·혈소판) · ALP 를 즉시 — 결과를 치료의 조건으로 삼지는 않는다"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "ESR/CRP · 혈구(빈혈·혈소판) · ALP 를 즉시 — 결과를 치료의 조건으로 삼지는 않는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "거대세포동맥염 의심이 높은가?"
+     }
+    ]
+   },
+   {
+    "id": "suspect",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "거대세포동맥염 의심이 높은가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "낮음",
+      "to": 4,
+      "toText": "다른 두통 원인 평가"
+     },
+     {
+      "label": "높음",
+      "to": 5,
+      "toText": "눈 증상(일과성·영구 시력상실, 복시)이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 두통 원인 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "eye",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "눈 증상(일과성·영구 시력상실, 복시)이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "메틸프레드니솔론 1,000 mg/일 3일 고려 → 경구 프레드니손"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "프레드니손 40–60 mg/일 즉시"
+     }
+    ]
+   },
+   {
+    "id": "pulse",
+    "num": 6,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "메틸프레드니솔론 1,000 mg/일 3일 고려 → 경구 프레드니손",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "치료 시작 뒤 측두동맥 생검(3–5 cm) 또는 초음파 — 약 14일 안에; 아스피린·토실리주맙은 함께 검토"
+     }
+    ]
+   },
+   {
+    "id": "oral",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "프레드니손 40–60 mg/일 즉시",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "치료 시작 뒤 측두동맥 생검(3–5 cm) 또는 초음파 — 약 14일 안에; 아스피린·토실리주맙은 함께 검토"
+     }
+    ]
+   },
+   {
+    "id": "confirm",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "치료 시작 뒤 측두동맥 생검(3–5 cm) 또는 초음파 — 약 14일 안에; 아스피린·토실리주맙은 함께 검토",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0968"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.iga-vasculitis.diagnosis": {
+  "id": "cn.rheum.iga-vasculitis.diagnosis",
+  "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
+  "objective": "소아에서 감염 뒤 엉덩이·하지의 만져지는 자반에 관절통·복통·혈뇨가 겹칠 때 혈소판 수와 자반의 성격(만져지는 혈관염성 자반 vs 비촉지 점상출혈)으로 혈소판감소 질환·용혈요독증후군·수막알균혈증·백혈병과 가르고, IgA혈관염을 임상으로 진단하며 콩팥 침범을 추적해야 하는 이유를 설명한다",
+  "objectiveKind": "진단",
+  "condition": "IgA혈관염(헤노흐-쇤라인자반증)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Pediatrics",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "f4ba5fbb118eaff2",
+  "summary": [
+   "IgA혈관염은 IgA 면역복합체가 작은 혈관에 쌓여 생기는 소혈관염으로, 만져지는 자반(엉덩이·하지)·관절통·위장관 증상·사구체신염이 네 기둥이다.",
+   "주로 4–7세 소아에서 상기도감염 등 뒤에 온다. 혈소판 수는 정상이고 보체도 정상이다 — 자반은 혈소판이 모자라서가 아니라 혈관벽 염증 때문에 생긴다.",
+   "진단은 임상 소견으로 한다. 애매하면 피부 생검에서 IgA·C3 침착을 동반한 백혈구파괴혈관염을 확인한다.",
+   "대부분 저절로 낫지만 콩팥 침범(10–50 %)을 추적한다. 1–5 % 는 말기 신부전으로 간다. 장중첩증이 합병할 수 있다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>IgA혈관염(헤노흐-쇤라인)은 만져지는 자반(주로 엉덩이·하지)·관절통·위장관 증상·사구체신염을 특징으로 하는 소혈관염이다. 주로 4–7세 소아에서 생기나 영아·성인에도 생기고, 남녀비 1.5:1, 봄에 많다 <sup>[1 363장 p.2813]</sup>. 이 정리본의 목표는 <strong>자반을 보고 IgA혈관염을 다른 소아 자반과 가르는 것</strong>이다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>상기도감염·약·음식·곤충 물림·예방접종 같은 자극 뒤 IgA 가 든 면역복합체가 작은 혈관벽에 쌓인다 <sup>[1 363장 p.2814]</sup>. 면역복합체가 보체·호중구를 불러 혈관벽이 염증으로 새면 적혈구가 피부로 빠져나가고, 염증 세포와 부종 때문에 자반이 <strong>만져진다</strong>. 이 자반은 혈소판이 모자라서 생긴 출혈이 아니므로 혈소판 수는 정상이다 <sup>[1 363장 p.2814]</sup>. 같은 기전이 장벽(산통·혈변), 관절 주변(관절통), 사구체(IgA 침착 사구체신염)에서 일어난다.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>소아에서 만져지는 자반은 거의 모든 환자에 있고, 대부분 관절염 없는 다발관절통이다 <sup>[1 363장 p.2814]</sup>.</li>\n<li>위장관 침범 약 70 %: 산통성 복통·구역·구토·설사/변비, 흔히 혈변·점액변, 장중첩증 가능 <sup>[1 363장 p.2814]</sup>.</li>\n<li>콩팥 침범 10–50 %: 단백뇨·현미경적 혈뇨, 대부분 적혈구 원주, 대개 저절로 사라진다 <sup>[1 363장 p.2814]</sup>.</li>\n<li>검사: 가벼운 백혈구증가, 정상 혈소판, 정상 보체, IgA 절반에서 상승 <sup>[1 363장 p.2814]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>표 참조. 핵심은 <strong>혈소판 수와 자반의 성격</strong>이다. 혈소판이 줄었으면 IgA혈관염이 아니라 혈소판 감소 원인(면역혈소판감소증·용혈요독증후군·백혈병·파종혈관내응고)을 찾는다. 아파 보이고 자반이 빠르게 번지면 수막알균혈증 같은 패혈증을 먼저 배제한다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li>진단은 임상으로 한다 <sup>[1 363장 p.2814]</sup>. 혈구(혈소판)·응고·소변·크레아티닌은 감별과 콩팥 평가에 필요하다.</li>\n<li>피부 생검: IgA·C3 침착 백혈구파괴혈관염 확인. 신장 생검: 진단에는 거의 불필요, 예후 정보 <sup>[1 363장 p.2814]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li>예후가 매우 좋고 많은 환자가 치료 없이 회복한다 <sup>[1 363장 p.2814]</sup>.</li>\n<li>필요하면 프레드니손 1 mg/kg/일로 부종·관절통·복통을 던다. 피부·콩팥 질환이나 병의 기간·재발에는 이득이 증명되지 않았다 <sup>[1 363장 p.2814]</sup>.</li>\n<li>급속진행 사구체신염에는 스테로이드+다른 면역억제제가 증례 수준에서 보고되었다 <sup>[1 363장 p.2814]</sup>.</li>\n<li><strong>재평가</strong>: 자반이 사라진 뒤에도 소변·혈압을 추적한다. 재발 10–40 %, 소아의 1–5 % 가 말기 신부전 <sup>[1 363장 p.2814]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>정상 혈소판 + 만져지는 하지 자반 + 관절·배·콩팥 = IgA혈관염(임상 진단).</li>\n<li>생검은 애매할 때(피부) 또는 예후가 필요할 때(콩팥).</li>\n<li>성인은 피부·관절로 시작이 많고 콩팥 경과가 은밀할 수 있다 <sup>[1 363장 p.2814]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 363장 p.2813~2814)</li>\n</ul>"
+   },
+   {
+    "title": "자반이 만져지는가 — 출혈의 두 가지 기전",
+    "deep": true,
+    "html": "<p>피부 출혈은 「그릇이 새는가(혈관염)」와 「마개가 모자란가(혈소판·응고)」 둘 중 하나다. 그릇이 새면 염증 세포와 부종이 함께 있어 도드라지고, 중력을 받는 하지·엉덩이에 모인다. 마개가 모자라면 염증 없이 피만 새어 평평한 점상출혈이 된다. 그래서 혈소판 수 하나와 손끝의 촉감이 감별의 대부분을 해낸다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "소아 자반 — 혈소판과 자반의 성격으로 가른다",
+    "columns": [
+     "질환",
+     "혈소판",
+     "자반",
+     "동반 소견"
+    ],
+    "rows": [
+     [
+      "IgA혈관염",
+      "정상 <sup>[1 363장 p.2814]</sup>",
+      "만져지는 자반, 엉덩이·하지 <sup>[1 363장 p.2813]</sup>",
+      "관절통·산통성 복통·혈뇨 <sup>[1 363장 p.2814]</sup>"
+     ],
+     [
+      "면역혈소판감소증",
+      "감소",
+      "비촉지 점상출혈·멍",
+      "그 밖에는 건강해 보임, 다른 혈구 정상"
+     ],
+     [
+      "용혈요독증후군",
+      "감소",
+      "드묾",
+      "혈성 설사 선행, 미세혈관 용혈, 급성 콩팥손상"
+     ],
+     [
+      "수막알균혈증",
+      "감소 가능(파종혈관내응고)",
+      "빠르게 번지는 점상출혈·자반",
+      "고열·쇼크·중독 양상"
+     ],
+     [
+      "백혈병",
+      "감소",
+      "점상출혈·멍",
+      "빈혈·호중구감소·모세포, 간비종대·뼈 통증"
+     ]
+    ],
+    "note": "용혈요독증후군·수막알균혈증·백혈병 행의 서술은 해리슨 363장 밖의 일반 지식이며 이 정리본에서 원문 대조하지 않았다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "IgA혈관염 vs 면역혈소판감소증 — 「감염 뒤 소아 자반」",
+    "point": "두 병 모두 감염 뒤 소아에게 자반을 만들지만 기전이 다르다. IgA혈관염의 자반은 혈관벽 염증이라 만져지고 혈소판이 정상이다 <sup>[1 363장 p.2814]</sup>. 혈소판감소 자반은 혈소판이 모자라 생기는 평평한 점상출혈이다. 혈소판 수와 관절·배·콩팥 동반이 둘을 가른다.",
+    "exception": "혈소판이 줄고 평평한 점상출혈·멍만 있으며 다른 장기 증상이 없으면 면역혈소판감소증 쪽이다.",
+    "cites": ""
+   },
+   {
+    "contrast": "임상 진단 vs 생검 필수 — 「혈관염이면 조직 확진」",
+    "point": "IgA혈관염은 임상 소견으로 진단하고, 피부 생검은 애매할 때의 확인용, 신장 생검은 예후용이다 <sup>[1 363장 p.2814]</sup>.",
+    "exception": "진행성 사구체신염이 의심되면 신장 생검이 예후와 치료 판단에 필요하다 <sup>[1 363장 p.2814]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "좋은 예후 vs 콩팥 추적 — 「저절로 낫는 병이니 끝」",
+    "point": "대부분 완전히 회복하지만 1–5 % 의 소아가 말기 신부전으로 간다 <sup>[1 363장 p.2814]</sup>. 자반이 사라져도 소변검사·혈압을 추적한다. 스테로이드는 부종·관절통·복통은 덜지만 피부·콩팥 질환에는 이득이 증명되지 않았다 <sup>[1 363장 p.2814]</sup>.",
+    "exception": "성인에서는 콩팥 경과가 더 은밀할 수 있어 더 가까이 추적한다 <sup>[1 363장 p.2814]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "복통이 심하고 혈변이 있으면 장중첩증을 생각한다 <sup>[1 363장 p.2814]</sup>.",
+   "콩팥 침범은 대개 가벼운 사구체신염(단백뇨·현미경적 혈뇨·적혈구 원주)이고 저절로 좋아지지만, 드물게 진행한다 <sup>[1 363장 p.2814]</sup>.",
+   "10–40 % 에서 재발한다 <sup>[1 363장 p.2814]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "igav-definition",
+    "name": "정의",
+    "kind": "진단 기준",
+    "population": "소아(주로 4–7세)·성인",
+    "statement": "만져지는 자반(엉덩이·하지에 가장 흔함)·관절통·위장관 증상·사구체신염을 특징으로 하는 소혈관염이다 [[harrison-21: 363장 p.2813]]",
+    "exceptions": "성인은 피부·관절 증상으로 주로 시작하고 위장관 증상으로 시작하는 일은 적다 [[harrison-21: 363장 p.2814]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "igav-labs",
+    "name": "검사실 소견",
+    "kind": "감별 기준",
+    "population": "IgA혈관염 의심",
+    "statement": "가벼운 백혈구증가, 정상 혈소판, 때로 호산구증가를 보이고 혈청 보체는 정상이며 IgA 는 약 절반에서 높다 [[harrison-21: 363장 p.2814]]",
+    "exceptions": "혈소판 정상은 혈소판감소 자반을 배제하는 단서이지 IgA혈관염을 확정하지는 않는다 — 진단은 전체 임상 그림으로 한다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "igav-diagnosis",
+    "name": "진단",
+    "kind": "진단 기준",
+    "population": "IgA혈관염 의심",
+    "statement": "진단은 임상 징후와 증상에 근거한다. 피부 생검은 면역형광에서 IgA·C3 침착을 동반한 백혈구파괴혈관염을 확인하는 데 쓸모 있고, 신장 생검은 진단에 거의 필요 없으나 예후 정보를 줄 수 있다 [[harrison-21: 363장 p.2814]]",
+    "exceptions": "진행성 사구체신염이 드물게 생기며, 그때 신장 생검과 면역억제가 논의된다 [[harrison-21: 363장 p.2814]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 363: The Vasculitis Syndromes",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 363장 The Vasculitis Syndromes, 인쇄쪽 2802–2816",
+    "checked": "드라이브 장 문서로 본문 대조. p.2813 IgA혈관염 정의(만져지는 자반·관절통·위장관·사구체신염), 4–7세, 남녀비 1.5:1, 봄. p.2814 면역복합체(IgA) 기전·유발 항원(상기도감염·약·음식·곤충·예방접종), 소아 자반 거의 전부·다발관절통, 위장관 약 70 %(산통·혈변·장중첩증), 콩팥 10–50 %(단백뇨·현미경적 혈뇨·적혈구 원주, 대개 자연 소실), 성인 경과, 검사(정상 혈소판·보체 정상·IgA 절반 상승), 임상 진단·피부 생검 IgA/C3, 신장 생검 예후, 예후(말기 신부전 1–5 %)·프레드니손 효과 범위·재발 10–40 %",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "IgA혈관염의 네 기둥은?",
+    "a": "만져지는 자반(엉덩이·하지), 관절통, 위장관 증상(산통성 복통·혈변), 사구체신염."
+   },
+   {
+    "q": "IgA혈관염의 혈소판 수와 보체는?",
+    "a": "혈소판 정상, 보체 정상. IgA 는 약 절반에서 상승."
+   },
+   {
+    "q": "IgA혈관염 진단에 생검이 필요한가?",
+    "a": "아니다. 임상으로 진단한다. 피부 생검(IgA·C3 침착)은 확인용, 신장 생검은 예후용."
+   },
+   {
+    "q": "IgA혈관염에서 장기적으로 추적할 장기는?",
+    "a": "콩팥 — 소아의 1–5 % 가 말기 신부전으로 간다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.iga-vasculitis.diagnosis#v1",
+    "context": "같은 감염 뒤 6세 자반, 혈소판 수와 자반의 성격을 바꾼 변형",
+    "stem": "5세 여아가 2주 전 감기를 앓은 뒤 어제부터 다리와 팔, 몸통에 붉은 점과 멍이 생겼다며 왔다. 열·복통·관절통은 없고 잘 논다. 온몸에 누르면 사라지지 않는 평평한 점상출혈과 여러 개의 멍이 있고 만져서 튀어나오지는 않는다. 간·비장·림프절은 커져 있지 않다. 혈색소 12.4 g/dL, 백혈구 7,800/µL(백분율 정상), 혈소판 8,000/µL, 말초혈액 도말에서 큰 혈소판 외에 이상 세포가 없다. 소변검사는 정상이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "면역혈소판감소증",
+     "헤노흐-쇤라인자반증(IgA혈관염)",
+     "용혈요독증후군",
+     "급성 림프모구백혈병",
+     "수막알균혈증"
+    ],
+    "answer": 1,
+    "explanation": "감염 뒤 소아 자반이라는 뼈대는 같지만 결정 단서가 바뀌었다 — 혈소판이 크게 줄었고 자반은 평평한 점상출혈·멍이며 관절·배·콩팥 증상이 없다. 다른 혈구가 정상이고 도말에 모세포가 없어 백혈병이 아니며, 용혈·콩팥손상이 없어 용혈요독증후군도 아니다. 원래 문항의 IgA혈관염은 혈소판이 정상인 만져지는 자반이었다 — 혈소판 수가 둘을 가른다.",
+    "of": "kmle-2026-0087",
+    "changed": "혈소판 정상·만져지는 하지 자반·관절통·복통·혈뇨 → 혈소판 8,000/µL·온몸의 평평한 점상출혈과 멍·다른 장기 증상 없음 ⇒ 정답이 IgA혈관염에서 면역혈소판감소증으로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.iga-vasculitis.diagnosis#v2",
+    "context": "겉모습만 바꾼 변형 — 정상 혈소판의 만져지는 자반과 다장기 침범이라는 결정 단서는 같다",
+    "stem": "8세 여아가 이틀째 배를 쥐어짜듯 아파하고 오늘 아침 점액이 섞인 붉은 변을 봤다며 왔다. 2주 전 목감기를 앓았다. 양쪽 발목이 아파 걷기 싫어하지만 관절이 붓지는 않았다. 엉덩이와 종아리 뒤쪽에 만지면 약간 도드라지는 붉은 자반이 흩어져 있다. 체온 37.5 ℃, 혈압 102/64 mmHg. 혈색소 12.8 g/dL, 백혈구 11,200/µL, 혈소판 310,000/µL, 프로트롬빈시간·활성화부분트롬보플라스틴시간 정상, 소변 단백 1+ 이다. 가장 가능성이 높은 진단은?",
+    "options": [
+     "급성 충수염",
+     "면역혈소판감소증",
+     "헤노흐-쇤라인자반증(IgA혈관염)",
+     "용혈요독증후군",
+     "혈우병"
+    ],
+    "answer": 3,
+    "explanation": "제시 순서(복통·혈변 먼저)와 나이·성별·콩팥 소견이 바뀌었지만 결정 단서는 같다 — 감염 뒤 정상 혈소판·정상 응고의 만져지는 엉덩이·하지 자반에 관절통·산통성 복통·혈변·단백뇨가 겹치면 IgA혈관염이다. 혈소판·응고가 정상이라 혈소판감소 질환·혈우병이 아니고, 용혈과 급성 콩팥손상이 없다. 심한 복통이 이어지면 장중첩증 합병을 확인한다.",
+    "of": "kmle-2026-0087",
+    "changed": "6세 남아·상기도감염·신전면 자반 먼저 → 8세 여아·인두염 2주 뒤·산통성 복통과 혈변을 먼저 제시, 자반은 엉덩이·종아리, 혈뇨 대신 단백뇨 1+ ⇒ 답은 그대로 IgA혈관염",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "소아 자반 — 혈소판에서 시작한다",
+  "geo": {
+   "title": "소아 자반 — 혈소판에서 시작한다",
+   "w": 694,
+   "h": 616.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "소아 자반(감염 뒤)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 16
+    },
+    {
+     "id": "sick",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "고열·쇼크·빠르게 번지는",
+      "자반인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 129.0
+    },
+    {
+     "id": "sepsis",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "수막알균혈증 등 패혈증 —",
+      "즉시 항생제·소생"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 259.0
+    },
+    {
+     "id": "plt",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "혈소판 수는?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 259.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "혈구 전체·말초혈액 도말·",
+      "소변·크레아티닌을 함께 본다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 389.0
+    },
+    {
+     "id": "low",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "감소 → 면역혈소판감소증 ·",
+      "용혈요독증후군 · 백혈병",
+      "감별(도말·용혈·콩팥)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 519.0
+    },
+    {
+     "id": "organs",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "만져지는 하지 자반 + 관절통·",
+      "복통·혈뇨가 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 389.0
+    },
+    {
+     "id": "igav",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "IgA혈관염 — 임상 진단,",
+      "지지 치료, 소변·혈압 추적"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 519.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "다른 혈관염·응고 이상",
+      "평가(필요 시 피부 생검)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 519.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sick",
+     "points": [
+      [
+       340.0,
+       63
+      ],
+      [
+       340.0,
+       73
+      ],
+      [
+       340.0,
+       73
+      ],
+      [
+       340.0,
+       129.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sick",
+     "to": "sepsis",
+     "points": [
+      [
+       307.3,
+       193.0
+      ],
+      [
+       307.3,
+       203.0
+      ],
+      [
+       227.0,
+       203.0
+      ],
+      [
+       227.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 217.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "sick",
+     "to": "plt",
+     "points": [
+      [
+       372.7,
+       193.0
+      ],
+      [
+       372.7,
+       209.0
+      ],
+      [
+       453.0,
+       209.0
+      ],
+      [
+       453.0,
+       259.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 432.5,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "plt",
+     "to": "low",
+     "points": [
+      [
+       404.0,
+       306.0
+      ],
+      [
+       404.0,
+       316.0
+      ],
+      [
+       678,
+       316.0
+      ],
+      [
+       678,
+       473.0
+      ],
+      [
+       146.7,
+       473.0
+      ],
+      [
+       146.7,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "감소"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 131.7,
+      "y": 479.0
+     }
+    },
+    {
+     "from": "plt",
+     "to": "info",
+     "points": [
+      [
+       453.0,
+       306.0
+      ],
+      [
+       453.0,
+       322.0
+      ],
+      [
+       227.0,
+       322.0
+      ],
+      [
+       227.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "결과 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 204.6,
+      "y": 369.0
+     }
+    },
+    {
+     "from": "plt",
+     "to": "organs",
+     "points": [
+      [
+       502.0,
+       306.0
+      ],
+      [
+       502.0,
+       328.0
+      ],
+      [
+       453.0,
+       328.0
+      ],
+      [
+       453.0,
+       389.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정상"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 369.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "low",
+     "points": [
+      [
+       227.0,
+       453.0
+      ],
+      [
+       227.0,
+       463.0
+      ],
+      [
+       81.3,
+       463.0
+      ],
+      [
+       81.3,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "감소"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 66.3,
+      "y": 499.0
+     }
+    },
+    {
+     "from": "organs",
+     "to": "igav",
+     "points": [
+      [
+       420.3,
+       453.0
+      ],
+      [
+       420.3,
+       463.0
+      ],
+      [
+       340.0,
+       463.0
+      ],
+      [
+       340.0,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 330.5,
+      "y": 499.0
+     }
+    },
+    {
+     "from": "organs",
+     "to": "other",
+     "points": [
+      [
+       485.7,
+       453.0
+      ],
+      [
+       485.7,
+       469.0
+      ],
+      [
+       566.0,
+       469.0
+      ],
+      [
+       566.0,
+       519.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 545.5,
+      "y": 499.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "소아 자반(감염 뒤)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "고열·쇼크·빠르게 번지는 자반인가?"
+     }
+    ]
+   },
+   {
+    "id": "sick",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "고열·쇼크·빠르게 번지는 자반인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "수막알균혈증 등 패혈증 — 즉시 항생제·소생"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "혈소판 수는?"
+     }
+    ]
+   },
+   {
+    "id": "sepsis",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "수막알균혈증 등 패혈증 — 즉시 항생제·소생",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "plt",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "혈소판 수는?",
+    "note": "",
+    "branches": [
+     {
+      "label": "결과 전",
+      "to": 5,
+      "toText": "혈구 전체·말초혈액 도말·소변·크레아티닌을 함께 본다"
+     },
+     {
+      "label": "감소",
+      "to": 7,
+      "toText": "감소 → 면역혈소판감소증 · 용혈요독증후군 · 백혈병 감별(도말·용혈·콩팥)"
+     },
+     {
+      "label": "정상",
+      "to": 6,
+      "toText": "만져지는 하지 자반 + 관절통·복통·혈뇨가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "혈구 전체·말초혈액 도말·소변·크레아티닌을 함께 본다",
+    "note": "",
+    "branches": [
+     {
+      "label": "감소",
+      "to": 7,
+      "toText": "감소 → 면역혈소판감소증 · 용혈요독증후군 · 백혈병 감별(도말·용혈·콩팥)"
+     }
+    ]
+   },
+   {
+    "id": "organs",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "만져지는 하지 자반 + 관절통·복통·혈뇨가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "IgA혈관염 — 임상 진단, 지지 치료, 소변·혈압 추적"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "다른 혈관염·응고 이상 평가(필요 시 피부 생검)"
+     }
+    ]
+   },
+   {
+    "id": "low",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "감소 → 면역혈소판감소증 · 용혈요독증후군 · 백혈병 감별(도말·용혈·콩팥)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "igav",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "IgA혈관염 — 임상 진단, 지지 치료, 소변·혈압 추적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "다른 혈관염·응고 이상 평가(필요 시 피부 생검)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0087"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
+  "id": "cn.rheum.polyarteritis-nodosa.tissue-diagnosis",
+  "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
+  "objective": "발열·체중 감소에 다발단신경병증·새 고혈압·복통·콩팥기능 저하가 겹치고 ANCA 음성(± B형간염)인 환자를 결절다발동맥염으로 의심했을 때, 진단적 혈청검사가 없다는 점을 근거로 증상 있는 장기(신경·근육·피부 결절·고환) 생검을 확진 검사로 고르고, 생검할 조직이 없으면 도관 내장동맥조영으로 대신하며, 보체·자가항체가 확진이 되지 못하는 이유를 설명한다",
+  "objectiveKind": "검사 선택",
+  "condition": "결절다발동맥염(B형간염 연관 포함)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Nephrology",
+   "Neurology",
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "ff88f1bc5d89ecc1",
+  "summary": [
+   "결절다발동맥염은 소·중형 근육성 동맥의 괴사성 혈관염으로 콩팥·내장 동맥을 잘 침범한다. 폐동맥·사구체는 침범하지 않는다(콩팥은 사구체신염이 아니라 동맥염).",
+   "허혈이 장기마다 증상을 만든다 — 콩팥(고혈압·신부전), 말초신경(다발단신경병증), 위장관(복통·장경색), 피부(결절·그물울혈반), 고환 통증.",
+   "진단적 혈청검사가 없다. ANCA 는 드물게만 양성이고, B형·C형간염은 모든 환자에서 선별한다.",
+   "확진은 침범 장기 생검의 특징적 혈관염 소견이다. 증상 있는 장기(피부 결절·아픈 고환·신경/근육)가 수율이 가장 높다. 생검할 조직이 없으면 도관 혈관조영에서 콩팥·간·내장 동맥의 동맥류가 진단에 충분하다."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p>결절다발동맥염은 소·중형 근육성 동맥을 침범하는 다장기 괴사성 혈관염으로, 콩팥과 내장 동맥 침범이 특징이다. 폐동맥을 침범하지 않고 육아종·뚜렷한 호산구증가·알레르기 소인이 없다 <sup>[1 363장 p.2810]</sup>. 이 정리본의 목표는 <strong>확진 검사 고르기</strong>다.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>동맥의 갈림 부위에 분절성으로 호중구가 벽 전층에 스며들고, 섬유소양 괴사가 내강을 좁히고 혈전·경색·출혈을 부른다. 약해진 벽은 1 cm 까지 부풀어 동맥류가 된다 <sup>[1 363장 p.2810]</sup>. B형간염 항원-항체 면역복합체가 혈관벽에 쌓이는 것이 한 원인이다 <sup>[1 363장 p.2810]</sup>. 병이 사구체 같은 작은 혈관이 아니라 <strong>근육성 동맥</strong>에 있으므로, 콩팥은 사구체신염이 아니라 동맥 허혈(고혈압·신부전)로 앓는다 <sup>[1 363장 p.2810]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>비특이 증상(발열·체중 감소·권태)이 절반 넘게 있다 <sup>[1 363장 p.2810]</sup>.</li>\n<li>장기별(표 363-6): 콩팥 60 %(신부전·고혈압), 근골격 64 %, 말초신경 51 %(다발단신경병증), 위장관 44 %(복통·장경색), 피부 43 %(결절·그물울혈반), 고환 통증 25 % <sup>[1 363장 p.2811]</sup>.</li>\n<li>신경 영양동맥이 막히면 그 신경만 죽는다 — 서로 떨어진 신경이 하나씩 빠지는 다발단신경병증이 생기는 이유다.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<ul>\n<li><strong>현미경적 다발혈관염</strong>: 사구체신염·폐출혈·ANCA 양성, 세정맥 침범 <sup>[1 363장 p.2810]</sup>.</li>\n<li><strong>호산구육아종다발혈관염</strong>: 천식·뚜렷한 호산구증가 <sup>[1 363장 p.2811]</sup>.</li>\n<li><strong>한랭글로불린혈증 혈관염·루푸스</strong>: 보체 소모·자가항체가 있는 면역복합체 질환.</li>\n<li><strong>감염심내막염</strong>: 혈액 배양·심장초음파로 가른다.</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ul>\n<li>진단적 혈청검사가 없다. 백혈구증가·ESR/CRP·빈혈은 비특이적이다. B형·C형간염은 모든 환자에서 선별한다 <sup>[1 363장 p.2811]</sup>.</li>\n<li><strong>확진 = 침범 장기 생검</strong>, 증상 있는 장기가 수율이 가장 높다. 생검할 조직이 없으면 <strong>도관 혈관조영</strong>(MR·CT 는 해상도 부족) <sup>[1 363장 p.2811]</sup>.</li>\n<li>혈관조영의 동맥류는 특이적이지 않고 없을 수도 있다 <sup>[1 363장 p.2811]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<ul>\n<li>중증: 프레드니손+사이클로포스파마이드, 경증: 글루코코르티코이드 단독 <sup>[1 363장 p.2811]</sup>.</li>\n<li>B·C형간염 연관: 항바이러스 치료가 중요한 축, 일부는 글루코코르티코이드·혈장교환과 함께 <sup>[1 363장 p.2811]</sup>.</li>\n<li>고혈압 조절이 혈관 합병증을 줄인다. 치료 뒤 10–20 % 재발 <sup>[1 363장 p.2811]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>「확진」 질문 → 조직(증상 장기) → 없으면 도관 혈관조영.</li>\n<li>ANCA·보체·자가항체는 감별용이다.</li>\n<li>소아 발병 결절다발동맥염 유사 혈관염은 DADA2 를 생각한다 <sup>[1 363장 p.2810]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 363장 p.2810~2811)</li>\n</ul>"
+   },
+   {
+    "title": "왜 혈청검사가 없는 병은 조직으로 가는가",
+    "deep": true,
+    "html": "<p>ANCA 연관 혈관염은 자가항체가 병의 기전에 가까워 혈청으로 강하게 의심할 수 있지만, 결절다발동맥염은 그런 표지가 없다 <sup>[1 363장 p.2811]</sup>. 남은 증거는 혈관벽 자체의 괴사성 염증뿐이다. 그래서 「어디를 떼면 보이는가」가 질문이 되고, 증상이 있는 장기가 답이 된다. 떼기 어려운 내장이면 벽의 흔적(동맥류)을 혈관조영으로 본다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "결절다발동맥염 의심 — 검사별 역할",
+    "columns": [
+     "검사",
+     "무엇을 알려 주나",
+     "확진인가"
+    ],
+    "rows": [
+     [
+      "침범 조직 생검(신경·근육·피부 결절·고환)",
+      "괴사성 중형동맥염을 직접 보여 줌 <sup>[1 363장 p.2811]</sup>",
+      "예"
+     ],
+     [
+      "도관 내장동맥조영",
+      "콩팥·간·내장 동맥의 동맥류·협착 <sup>[1 363장 p.2811]</sup>",
+      "생검할 조직이 없을 때 진단에 충분"
+     ],
+     [
+      "ANCA",
+      "대개 음성 — 현미경적 다발혈관염·육아종증과 감별 <sup>[1 363장 p.2811]</sup>",
+      "아니오"
+     ],
+     [
+      "B형·C형간염",
+      "연관 원인 → 항바이러스 치료 <sup>[1 363장 p.2811]</sup>",
+      "아니오(원인 선별)"
+     ],
+     [
+      "ESR/CRP·백혈구",
+      "염증 확인 <sup>[1 363장 p.2811]</sup>",
+      "아니오(비특이)"
+     ],
+     [
+      "혈청 보체·항핵항체·류마티스인자",
+      "루푸스·한랭글로불린혈증 등 다른 면역복합체 질환 감별",
+      "아니오"
+     ]
+    ],
+    "note": "「확진」을 묻는 문항에서 답은 조직(또는 혈관조영)이다. 혈청검사는 의심을 높이거나 다른 병을 가르는 데 쓴다."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "혈청 보체 vs 조직 생검 — 「면역복합체 혈관염이면 보체」",
+    "point": "결절다발동맥염에는 진단적 혈청검사가 없고, 진단은 침범 장기 생검의 혈관염 소견으로 한다 <sup>[1 363장 p.2811]</sup>. 보체는 면역복합체 질환에서 떨어질 수 있어도 어느 혈관염인지를 확정하지 못한다.",
+    "exception": "루푸스·한랭글로불린혈증 혈관염처럼 보체 소모가 활성도와 함께 움직이는 병에서는 활성도 평가에 쓴다.",
+    "cites": ""
+   },
+   {
+    "contrast": "결절다발동맥염 vs 현미경적 다발혈관염 — 「신장 침범 혈관염은 다 같다」",
+    "point": "결절다발동맥염의 콩팥은 사구체신염이 아니라 동맥염(고혈압·신부전·미세동맥류 출혈)이고 폐를 침범하지 않으며 ANCA 가 드물다 <sup>[1 363장 p.2810]</sup> <sup>[1 363장 p.2811]</sup>. 적혈구 원주·사구체신염·폐출혈·ANCA 양성이면 현미경적 다발혈관염 쪽이다.",
+    "exception": "세정맥 침범이 생검에서 보이면 현미경적 다발혈관염을 시사한다 <sup>[1 363장 p.2810]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "MR·CT 혈관조영 vs 도관 혈관조영",
+    "point": "결절다발동맥염의 작은 내장 동맥류는 MR·CT 혈관조영의 해상도로는 부족해 도관 혈관조영을 쓴다 <sup>[1 363장 p.2811]</sup>.",
+    "exception": "생검할 수 있는 증상 장기가 있으면 생검이 먼저다 <sup>[1 363장 p.2811]</sup>.",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "B형간염 양성은 진단이 아니라 원인이다 — 확진 뒤 치료에 항바이러스제가 들어간다 <sup>[1 363장 p.2811]</sup>.",
+   "신경·근육 생검은 증상이 있는 부위(발 처짐 쪽 비복신경 등)를 골라야 수율이 높다. 신경 선택의 세부는 원문 미대조."
+  ],
+  "criteria": [
+   {
+    "id": "pan-definition",
+    "name": "정의와 병리",
+    "kind": "진단 기준",
+    "population": "괴사성 혈관염 의심",
+    "statement": "소·중형 근육성 동맥의 다장기 괴사성 혈관염으로 콩팥·내장 동맥 침범이 특징이다. 폐동맥은 침범하지 않고 육아종·뚜렷한 호산구증가도 없다. 병변은 분절성으로 갈림 부위에 생기며, 1 cm 까지의 동맥류가 특징이다 [[harrison-21: 363장 p.2810]]",
+    "exceptions": "세정맥 침범이 있으면 결절다발동맥염보다 현미경적 다발혈관염을 시사한다 [[harrison-21: 363장 p.2810]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pan-labs",
+    "name": "검사실 소견의 한계",
+    "kind": "검사 권고",
+    "population": "결절다발동맥염 의심",
+    "statement": "진단적 혈청검사는 없다. 호중구 우세 백혈구증가(75 % 초과), 만성질환 빈혈, ESR/CRP 상승이 흔하고, 모든 환자에서 B형·C형간염을 선별한다. ANCA 는 드물다 [[harrison-21: 363장 p.2811]]",
+    "exceptions": "호산구가 크게 늘어 있으면 호산구육아종다발혈관염을 시사한다 [[harrison-21: 363장 p.2811]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pan-diagnosis",
+    "name": "확진",
+    "kind": "진단 기준",
+    "population": "결절다발동맥염 의심",
+    "statement": "진단은 침범 장기 생검에서 특징적 혈관염을 보이는 것이다. 피부 결절·아픈 고환·신경/근육처럼 증상 있는 장기의 생검 수율이 가장 높다. 생검하기 쉬운 조직이 없으면 콩팥·간·내장의 소·중형 동맥류를 보이는 혈관조영으로 충분하며, 도관 혈관조영이어야 한다(MR·CT 혈관조영은 해상도가 부족하다) [[harrison-21: 363장 p.2811]]",
+    "exceptions": "동맥류는 결절다발동맥염에 특이적이지 않고 늘 보이지도 않는다 — 협착·폐색만 보일 수 있다 [[harrison-21: 363장 p.2811]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "pan-treatment",
+    "name": "치료 요지",
+    "kind": "치료 기준",
+    "population": "결절다발동맥염",
+    "statement": "치료하지 않으면 5년 생존율 10–20 % 다. 프레드니손+사이클로포스파마이드가 생존을 크게 높이고, 덜 심한 경우 글루코코르티코이드만으로 관해되기도 한다. B형·C형간염 연관이면 항바이러스 치료가 중요한 축이다 [[harrison-21: 363장 p.2811]]",
+    "exceptions": "소아 발병의 결절다발동맥염 유사 혈관염은 ADA2 결핍(DADA2)을 생각한다 — TNF 억제제에 반응해 치료가 다르다 [[harrison-21: 363장 p.2810]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 363: The Vasculitis Syndromes",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 363장 The Vasculitis Syndromes, 인쇄쪽 2802–2816",
+    "checked": "드라이브 장 문서로 본문 대조. p.2810 결절다발동맥염 정의(소·중형 근육성 동맥, 콩팥·내장, 폐동맥 비침범), 병리(분절성·갈림 부위, 호중구→단핵구, 섬유소양 괴사, 1 cm 동맥류, 콩팥은 사구체신염 없는 동맥염, 세정맥 침범이면 MPA), B형간염 면역복합체, DADA2, 비특이 증상. p.2811 콩팥 침범(고혈압·신부전·미세동맥류 출혈), 진단 혈청검사 없음, 백혈구증가·ESR/CRP, B·C형간염 선별, ANCA 드묾, 생검(증상 장기 수율 최고), 도관 혈관조영, 표 363-6 장기별 빈도, 치료(프레드니손+사이클로포스파마이드, 항바이러스, 재발 10–20 %)",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "결절다발동맥염의 확진 검사는?",
+    "a": "침범 장기(증상 있는 신경·근육·피부 결절·고환) 생검의 괴사성 혈관염. 조직이 없으면 도관 혈관조영의 내장 동맥류."
+   },
+   {
+    "q": "결절다발동맥염이 침범하지 않는 것 두 가지는?",
+    "a": "폐동맥, 사구체(콩팥은 사구체신염이 아니라 동맥염)."
+   },
+   {
+    "q": "모든 결절다발동맥염 환자에서 선별할 감염은?",
+    "a": "B형·C형간염."
+   },
+   {
+    "q": "왜 MR·CT 혈관조영이 아니라 도관 혈관조영인가?",
+    "a": "침범 혈관이 작아 MR·CT 의 해상도로는 부족하다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.polyarteritis-nodosa.tissue-diagnosis#v1",
+    "context": "같은 다발단신경병증·신기능 저하 환자, ANCA·사구체 단서를 바꾼 변형",
+    "stem": "62세 남자가 한 달간 미열·체중 감소·근육통과 함께 왼쪽 발목을 들지 못하고 오른손 새끼손가락 쪽 감각이 떨어져 왔다. 사흘 전부터 가래에 피가 섞인다. 혈압 150/90 mmHg. 크레아티닌 2.6 mg/dL(한 달 전 1.0), 소변에서 적혈구 원주와 단백뇨 2+ 가 보인다. MPO-ANCA 양성, B형간염표면항원 음성, 항사구체기저막항체 음성이다. 흉부 CT 에서 양쪽 폐에 간유리음영이 있다. 진단을 확정하고 치료 강도를 정하기 위해 가장 적절한 검사는?",
+    "options": [
+     "혈청 보체 측정",
+     "경피적 신장 생검",
+     "도관 내장동맥조영",
+     "항핵항체 검사",
+     "혈액 배양 검사"
+    ],
+    "answer": 2,
+    "explanation": "다발단신경병증은 같지만 적혈구 원주(사구체신염)·폐출혈·MPO-ANCA 양성이 더해졌다. 결절다발동맥염은 사구체와 폐를 침범하지 않고 ANCA 가 드물므로, 이 그림은 현미경적 다발혈관염이다. 급속히 나빠지는 콩팥에서 괴사성 반월체 사구체신염을 신장 생검으로 확인하는 것이 확진과 치료 강도 결정에 가장 직접적이다. 도관 혈관조영의 동맥류는 결절다발동맥염을 뒷받침할 때 쓰는 검사다.",
+    "of": "kmle-2026-0393",
+    "changed": "ANCA 음성·B형간염 양성·소변 단백뇨만 → MPO-ANCA 양성·적혈구 원주 동반 혈뇨·객혈 ⇒ 질문이 같은 「확진」이어도 가리키는 병이 현미경적 다발혈관염으로 바뀌고 정답이 신경 생검에서 신장 생검(괴사성 반월체 사구체신염)으로",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.polyarteritis-nodosa.tissue-diagnosis#v2",
+    "context": "겉모습만 바꾼 변형 — ANCA 음성 중형혈관염과 「확진」 질문이라는 결정 단서는 같다",
+    "stem": "44세 여자가 두 달간 발열·체중 감소 5 kg·관절통으로 왔다. 오른쪽 손목을 뒤로 젖히지 못하고 왼발 바깥쪽 감각이 떨어진다. 식사 뒤 배가 아프다. 양쪽 종아리에 누르면 아픈 피부밑 결절과 그물 모양의 붉은 반점이 있다. 혈압 164/100 mmHg(1년 전 정상). ESR 92 mm/h, 크레아티닌 1.6 mg/dL, 소변 단백 1+·적혈구 원주 없음, ANCA 음성, 항HCV 양성, 호산구 정상이다. 진단을 확정하기 위한 검사로 가장 적절한 것은?",
+    "options": [
+     "혈청 보체 측정",
+     "한랭글로불린 측정",
+     "종아리 피부 결절 생검",
+     "류마티스인자 측정",
+     "흉부 CT"
+    ],
+    "answer": 3,
+    "explanation": "성별·나이·신경 침범 부위·간염 종류가 바뀌었지만 결정 단서는 같다 — 다발단신경병증·새 고혈압·식후 복통·콩팥기능 저하에 ANCA 음성·호산구 정상·적혈구 원주 없음은 결절다발동맥염을 가리키고, 진단적 혈청검사가 없으므로 확진은 침범 조직 생검이다. 아픈 피부 결절은 증상 있는 장기라 수율이 높다. C형간염 연관이라 한랭글로불린이 궁금할 수 있으나 그것은 다른 혈관염의 선별이지 결절다발동맥염의 확진이 아니다.",
+    "of": "kmle-2026-0393",
+    "changed": "50세 남자·발목 처짐·복통 → 44세 여자·고환 대신 종아리 피부 결절·그물울혈반과 손목 처짐, 식후 복통, B형간염 대신 C형간염 항체 양성 ⇒ 답은 그대로 침범 조직(피부 결절) 생검",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "결절다발동맥염 의심 — 확진 경로",
+  "geo": {
+   "title": "결절다발동맥염 의심 — 확진 경로",
+   "w": 454,
+   "h": 763.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "발열·체중 감소 +",
+      "다발단신경병증 · 새 고혈압 ·",
+      "복통 · 콩팥기능 저하"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "labs",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "ANCA · B형/C형간염 · ESR/",
+      "CRP · 소변(사구체신염 여부)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "anca",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "ANCA 양성 또는 사구체신염·",
+      "폐 침범이 있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 293.0
+    },
+    {
+     "id": "mpa",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "ANCA 연관 혈관염 쪽으로",
+      "평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 423.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "생검할 수 있는 증상 장기를",
+      "찾는다 — 피부 결절 · 아픈",
+      "고환 · 신경/근육"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 423.0
+    },
+    {
+     "id": "tissue",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "생검할 조직이 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 570.0
+    },
+    {
+     "id": "biopsy",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "침범 조직 생검 → 괴사성",
+      "중형동맥염 = 확진"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 683.0
+    },
+    {
+     "id": "angio",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "도관 내장동맥조영 → 콩팥·",
+      "간·내장 동맥류로 진단"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 683.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "labs",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "labs",
+     "to": "anca",
+     "points": [
+      [
+       227.0,
+       227.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       237.0
+      ],
+      [
+       227.0,
+       293.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "anca",
+     "to": "mpa",
+     "points": [
+      [
+       194.3,
+       357.0
+      ],
+      [
+       194.3,
+       367.0
+      ],
+      [
+       114.0,
+       367.0
+      ],
+      [
+       114.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "anca",
+     "to": "info",
+     "points": [
+      [
+       259.7,
+       357.0
+      ],
+      [
+       259.7,
+       373.0
+      ],
+      [
+       340.0,
+       373.0
+      ],
+      [
+       340.0,
+       423.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오(ANCA 음성, ± B형간염)"
+      ],
+      "w": 164.6,
+      "h": 17,
+      "x": 257.7,
+      "y": 403.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "tissue",
+     "points": [
+      [
+       340.0,
+       504.0
+      ],
+      [
+       340.0,
+       514.0
+      ],
+      [
+       227.0,
+       514.0
+      ],
+      [
+       227.0,
+       570.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "tissue",
+     "to": "biopsy",
+     "points": [
+      [
+       194.3,
+       617.0
+      ],
+      [
+       194.3,
+       627.0
+      ],
+      [
+       114.0,
+       627.0
+      ],
+      [
+       114.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 99.0,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "tissue",
+     "to": "angio",
+     "points": [
+      [
+       259.7,
+       617.0
+      ],
+      [
+       259.7,
+       633.0
+      ],
+      [
+       340.0,
+       633.0
+      ],
+      [
+       340.0,
+       683.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 663.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "발열·체중 감소 + 다발단신경병증 · 새 고혈압 · 복통 · 콩팥기능 저하",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "ANCA · B형/C형간염 · ESR/CRP · 소변(사구체신염 여부)"
+     }
+    ]
+   },
+   {
+    "id": "labs",
+    "num": 2,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "ANCA · B형/C형간염 · ESR/CRP · 소변(사구체신염 여부)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "ANCA 양성 또는 사구체신염·폐 침범이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "anca",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "ANCA 양성 또는 사구체신염·폐 침범이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "ANCA 연관 혈관염 쪽으로 평가"
+     },
+     {
+      "label": "아니오(ANCA 음성, ± B형간염)",
+      "to": 5,
+      "toText": "생검할 수 있는 증상 장기를 찾는다 — 피부 결절 · 아픈 고환 · 신경/근육"
+     }
+    ]
+   },
+   {
+    "id": "mpa",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "ANCA 연관 혈관염 쪽으로 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "info",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "생검할 수 있는 증상 장기를 찾는다 — 피부 결절 · 아픈 고환 · 신경/근육",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "생검할 조직이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "tissue",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "생검할 조직이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 7,
+      "toText": "침범 조직 생검 → 괴사성 중형동맥염 = 확진"
+     },
+     {
+      "label": "없음",
+      "to": 8,
+      "toText": "도관 내장동맥조영 → 콩팥·간·내장 동맥류로 진단"
+     }
+    ]
+   },
+   {
+    "id": "biopsy",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "침범 조직 생검 → 괴사성 중형동맥염 = 확진",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "angio",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "도관 내장동맥조영 → 콩팥·간·내장 동맥류로 진단",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-0393"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
+  "id": "cn.rheum.scleroderma-renal-crisis.ace-inhibitor",
+  "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
+  "objective": "전신경화증의 신혈관병증이 레닌-안지오텐신 악순환으로 가속 고혈압·급성신손상·미세혈관병용혈을 만드는 기전을 설명하고, 이를 혈전혈소판감소자반증(TTP) 등 다른 혈전미세혈관병증과 가려 단시간 작용 ACE억제제를 즉시 시작하며 고용량 스테로이드를 피해야 하는 이유를 판단한다",
+  "objectiveKind": "치료",
+  "condition": "전신경화증 신위기(scleroderma renal crisis)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "3985ff249a8c740e",
+  "summary": [
+   "전신경화증(SSc)의 핵심 손상은 섬유화와 함께 소동맥 혈관병증이다. 콩팥의 궁상·소엽간동맥 내막이 증식해 막히면 신혈류가 줄고, 사구체옆세포가 레닌을 쏟아 안지오텐신II 가 콩팥 혈관을 더 수축시키는 악순환이 가속 고혈압으로 끝난다 [[harrison-21: 360장 p.2782]].",
+   "그래서 신위기는 갑작스러운 고혈압(대개 >150/90 mmHg)·진행하는 핍뇨성 급성신손상에, 좁아진 혈관을 지나며 부서진 적혈구(미세혈관병용혈)·중등도 혈소판감소가 동반된다. 약 10% 는 혈압이 정상이며 예후가 나쁘다 [[harrison-21: 360장 p.2782]].",
+   "치료는 단시간 작용 ACE억제제를 즉시 시작해 용량을 올리며 혈압을 빨리 정상화하는 것이다 — 악순환의 중심(안지오텐신II)을 끊기 때문이며, ACE억제제 도입 뒤 단기 생존이 10% 미만에서 크게 좋아졌다 [[harrison-21: 360장 p.2782·2786]].",
+   "당질코르티코이드는 신위기와 연관되므로 고위험 SSc 에서는 꼭 필요할 때만 저용량(프레드니손 <10 mg/일)으로 쓴다 [[harrison-21: 360장 p.2782]].",
+   "신위기는 TTP 로 오진되기도 한다. 기저 SSc(피부경화·레이노)·심한 고혈압이 신위기를, 경피증 없는 심한 혈소판감소·신경 증상·ADAMTS13 활성 저하가 TTP 를 가리킨다 [[harrison-21: 360장 p.2782]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>전신경화증 신위기(SRC)</strong> 는 전신경화증(SSc)에서 가속 고혈압과 급성신손상이 갑자기 생기는 생명을 위협하는 합병증이다. SSc 의 15% 미만(미만형 약 15%, 제한형 약 2%)에서, 거의 항상 발병 4년 안에 생기며 SSc 의 첫 표현일 수도 있다 <sup>[1 360장 p.2773·2782]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 콩팥에서는 신혈류가 줄면 사구체옆세포가 레닌을 내어 안지오텐신II 로 혈압과 여과를 지탱한다 — 짧은 저관류를 메우는 보상이다. SSc 에서는 궁상·소엽간동맥의 내막이 증식하는 폐쇄성 혈관병증에 혈관 연축이 겹쳐 신혈류가 지속적으로 줄고, 레닌·안지오텐신II 가 콩팥 혈관을 더 수축시켜 혈류가 더 주는 <strong>악순환</strong>이 생긴다. 그 끝이 가속 고혈압이다 <sup>[1 360장 p.2782]</sup>. 조직에서는 수입세동맥의 급성 섬유소양 괴사와 내막 증식이 보인다 <sup>[1 360장 p.2777]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li>레닌 과다 → <strong>가속 고혈압</strong>(대개 &gt;150/90) → 두통·시야흐림·심부전·폐부종.</li>\n<li>좁아진 혈관·섬유소가 덮인 미세혈관을 지나는 적혈구가 부서짐 → <strong>분열적혈구·미세혈관병용혈</strong>, 중등도 혈소판감소.</li>\n<li>신혈류 감소 → 며칠에 걸쳐 진행하는 <strong>핍뇨성 급성신손상</strong>, 소변은 경한 단백뇨·과립원주·현미경적 혈뇨.</li>\n<li>약 10% 는 정상혈압 신위기이며 예후가 나쁘다 <sup>[1 360장 p.2782]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별",
+    "deep": false,
+    "html": "<p>TTP 등 다른 혈전미세혈관병증과 혼동된다(감별 표). 기저 SSc 의 피부·레이노·항체와 심한 고혈압이 신위기를 가리키며, 모호하면 ADAMTS13 활성과 신생검이 도움이 된다 <sup>[1 360장 p.2782]</sup>. SSc 에서는 MPO-ANCA 관련 반월체 사구체신염, D-페니실라민 관련 막성 사구체신염도 생길 수 있다.</p>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<p>혈압, 크레아티닌·소변량, 혈색소·혈소판·도말(분열적혈구)·LDH, 소변검사, ADAMTS13(TTP 감별), 필요 시 신생검. 처음 핍뇨나 크레아티닌 &gt;3 mg/dL 이면 영구 투석·사망 위험이 높다 <sup>[1 360장 p.2782]</sup>.</p>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p>의학적 응급이다. 즉시 입원해 다른 급성 신질환을 배제하고, <strong>단시간 작용 ACE억제제</strong>를 적정해 혈압을 빠르게 정상화한다. 최대로 써도 고혈압이 지속되면 ARB·칼슘통로차단제·엔도텔린 수용체 차단제·프로스타사이클린·직접 레닌 억제제를 더하고, 보체 활성 근거가 있어 에쿨리주맙 추가를 고려할 수 있다 <sup>[1 360장 p.2786]</sup>. 신독성 약물을 피하고 스테로이드는 꼭 필요할 때만 저용량으로 쓴다.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<p>최대 3분의 2 가 투석을 필요로 하지만 30~50% 는 결국 투석을 끊는다. 2년 뒤에도 투석을 못 끊으면 이식을 고려한다(재발 드묾) <sup>[1 360장 p.2786]</sup>. 고위험 환자(초기·광범위·진행성 피부, 힘줄 마찰음, 항RNA중합효소III)는 매일 혈압을 재도록 교육한다.</p>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 충돌 · ACE억제제로 부족할 때 ARB 의 자리</strong> — 시험 기준: 1차는 단시간 ACE억제제를 최대 용량까지 올리는 것(두 장 공통) <sup>[1 360장 p.2786]</sup> / 다른 기준: 해리슨 317장은 ARB 가 신부전 예방에 덜 효과적이라 ACE억제제 불내성일 때만 권하고, 투석을 시작해도 ACE억제제를 계속한다고 쓴다 <sup>[1 317장 p.2366]</sup> — 360장은 지속 고혈압에 ARB 를 CCB 등과 함께 추가 후보로 든다 <sup>[1 360장 p.2786]</sup> / 왜 다른가: 같은 판 안에서 장(신장·류마티스)마다 서술이 다르다 / 시험에서는: KMLE · USMLE 모두 첫 치료는 ACE억제제이며 ARB 로 대신하지 않는다.</li>\n<li><strong>Z2 맥락 · 발생 빈도</strong> — 360장은 미만형 약 15%(표) <sup>[1 360장 p.2773]</sup>, 317장은 미만형 12%·제한형 2% <sup>[1 317장 p.2366]</sup>. 시험에서는 「미만형에서 흔하고 제한형에서 드묾」만 묻는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "SSc 신위기와 TTP",
+    "columns": [
+     "항목",
+     "SSc 신위기",
+     "TTP"
+    ],
+    "rows": [
+     [
+      "배경",
+      "초기(&lt;4년) 미만성 SSc, 항RNA중합효소III",
+      "특정 배경 없음(후천 자가항체)"
+     ],
+     [
+      "혈압",
+      "가속 고혈압(약 10% 정상혈압)",
+      "대개 심하지 않음"
+     ],
+     [
+      "혈소판감소",
+      "중등도",
+      "심함"
+     ],
+     [
+      "치료",
+      "단시간 ACE억제제",
+      "혈장교환"
+     ]
+    ],
+    "note": "SSc 쪽 harrison-21: 360장 p.2782·2786. ADAMTS13 활성·신생검이 모호할 때 가른다(같은 쪽)"
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "미세혈관병용혈 + 급성신손상 = 혈장교환?",
+    "point": "혈장교환은 ADAMTS13 결핍(TTP)의 치료다. 전신경화증 환자의 가속 고혈압·급성신손상은 레닌 매개 신혈관 손상이 원인이므로, 용혈이 동반돼도 ACE억제제가 치료의 중심이다. 모호하면 ADAMTS13(폰빌레브란트인자 절단 효소) 활성과 신생검이 가른다 <sup>[1 360장 p.2782]</sup>.",
+    "exception": "경피증·중증 고혈압 없이 심한 혈소판감소·신경 증상·ADAMTS13 결핍이 있으면 TTP 로 보고 혈장교환을 한다.",
+    "cites": "<sup>[1 360장 p.2782]</sup>"
+   },
+   {
+    "contrast": "자가면역 질환의 급성 악화 = 고용량 스테로이드?",
+    "point": "SSc 에서 스테로이드는 신위기 위험을 높인다. 신위기에 고용량 스테로이드는 치료가 아니라 악화 요인이다.",
+    "exception": "",
+    "cites": "<sup>[1 360장 p.2782·2783]</sup>"
+   },
+   {
+    "contrast": "고혈압 응급이면 아무 강압제나",
+    "point": "칼슘통로차단제·베타차단제로 혈압만 낮추면 레닌-안지오텐신 악순환은 남는다. 칼슘통로차단제·ARB 등은 ACE억제제를 최대로 쓴 뒤에도 혈압이 높을 때 더한다 <sup>[1 360장 p.2786]</sup>.",
+    "exception": "",
+    "cites": "<sup>[1 360장 p.2786]</sup>"
+   }
+  ],
+  "diagramNotes": [],
+  "criteria": [],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 360: Systemic Sclerosis (Scleroderma) and Related Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 360장 p.2771–2786",
+    "checked": "본문 대조(드라이브 문서) — p.2773 표(dcSSc 15%, 발병 4년 이내); p.2782 신위기 병태(궁상·소엽간동맥 폐쇄 → 레닌·안지오텐신II 악순환), 위험 인자(미만성·진행성 피부, 항RNA중합효소III, 스테로이드 — 프레드니손 <10 mg/일), 임상(>150/90, 10% 정상혈압, 미세혈관병용혈·혈소판감소), TTP 오진과 ADAMTS13·생검, 크레아티닌 >3 불량 예후, ACE억제제 전 단기 생존 <10%; p.2786 치료(즉시 입원, 단시간 ACE억제제 적정, 지속 고혈압에 ARB·CCB 등 추가, 에쿨리주맙 고려, 2/3 투석, 30–50% 투석 중단); 317장 p.2366 SSc 신위기 절도 대조 — ACE억제제 1차, 24시간마다 수축기 20·이완기 10 mmHg 강하 목표, ARB 는 ACE억제제 불내성일 때만, 투석 후에도 ACE억제제 지속, 이식은 투석 2년 뒤",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "SSc 신위기에서 ACE억제제가 다른 강압제보다 먼저인 이유는?",
+    "a": "신혈류 감소 → 레닌·안지오텐신II 증가 → 콩팥 혈관 수축의 악순환을 직접 끊기 때문이다."
+   },
+   {
+    "q": "SSc 에서 신위기 위험을 높이는 약과 그 사용 원칙은?",
+    "a": "당질코르티코이드 — 고위험 환자는 꼭 필요할 때만 프레드니손 <10 mg/일."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.scleroderma-renal-crisis.ace-inhibitor#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 경피증이 없는 혈전미세혈관병증",
+    "stem": "38세 여성이 이틀 전부터 미열과 말이 어눌해지는 증상, 다리의 점상출혈로 왔다. 과거력에 특이 사항은 없고 손발 피부는 부드러우며 레이노현상은 없다. 혈압 132/84 mmHg. 혈색소 7.8 g/dL, 혈소판 14,000/μL, 말초혈액 도말에서 분열적혈구가 많고 LDH 는 크게 높으며, 혈청 크레아티닌 1.6 mg/dL, ADAMTS13 활성은 5% 미만이다. 가장 적절한 치료는?",
+    "options": [
+     "ACE억제제(캅토프릴)",
+     "혈장교환",
+     "혈소판 수혈",
+     "칼슘차단제 단독",
+     "혈액투석 단독"
+    ],
+    "answer": 2,
+    "explanation": "경피증 소견과 가속 고혈압이 없고, 발열·신경 증상·심한 혈소판감소·미세혈관병용혈·ADAMTS13 활성 저하가 있으면 TTP 이므로 혈장교환이 치료다. 경피증 신위기라면 기저 SSc 와 레닌 매개 가속 고혈압이 있어 ACE억제제가 답이었을 것이다 — 두 질환은 서로 오진되며 ADAMTS13 활성이 가른다 [[harrison-21: 360장 p.2782]].",
+    "of": "kmle-2026-0081",
+    "changed": "피부경화·레이노현상과 심한 고혈압을 없애고 발열·의식 혼돈·심한 혈소판감소·ADAMTS13 활성 저하를 더함 → 경피증 신위기가 아니라 TTP 이므로 답이 ACE억제제에서 혈장교환으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.scleroderma-renal-crisis.ace-inhibitor#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 두통·시야흐림으로 온 남성",
+    "stem": "52세 남성이 이틀 전부터 두통과 시야흐림이 심해져 응급실에 왔다. 혈압은 204/118 mmHg 이고 소변량이 줄었다. 혈청 크레아티닌은 한 달 전 0.9 mg/dL 에서 2.6 mg/dL 로 올랐고, 말초혈액 도말에서 분열적혈구가 보이며 혈소판은 98,000/μL 이다. 1년 전부터 손가락이 추위에 하얗게 변하고, 최근 몇 달 사이 손등과 팔뚝, 앞가슴 피부가 두꺼워졌다. 항RNA중합효소III 항체가 양성이다. 가장 적절한 치료는?",
+    "options": [
+     "혈장교환",
+     "고용량 메틸프레드니솔론",
+     "ACE억제제(캅토프릴)",
+     "베타차단제",
+     "칼슘차단제 단독"
+    ],
+    "answer": 3,
+    "explanation": "환자와 제시 순서는 달라도 결정 단서 — 초기 미만성 전신경화증(레이노·진행하는 몸통 피부경화, 항RNA중합효소III), 가속 고혈압, 급성신손상, 미세혈관병용혈 — 가 같으므로 전신경화증 신위기이고, 단시간 ACE억제제를 즉시 시작해 용량을 올린다 [[harrison-21: 360장 p.2782·2786]]. 고용량 스테로이드는 신위기 위험 인자이고, 혈장교환은 TTP 의 치료다. 칼슘차단제는 ACE억제제를 최대로 써도 혈압이 높을 때 더한다.",
+    "of": "kmle-2026-0081",
+    "changed": "성별·나이(52세 남성)·내원 경위(두통·시야흐림)·제시 순서를 바꾸고 항RNA중합효소III 항체를 더했지만, 초기 미만성 피부경화 + 가속 고혈압 + 급성신손상 + 미세혈관병용혈은 그대로 → 답은 여전히 ACE억제제",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "",
+  "geo": null,
+  "steps": [],
+  "questions": [
+   "kmle-2026-0081"
+  ],
+  "hasErrors": false
+ },
+ "cn.rheum.sle.mild-disease-hydroxychloroquine": {
+  "id": "cn.rheum.sle.mild-disease-hydroxychloroquine",
+  "title": "전신홍반루푸스 — 장기 침범으로 치료 강도를 정하고, 경증은 히드록시클로로퀸으로 시작한다",
+  "objective": "전신홍반루푸스로 진단된 환자에서 신장·혈액·신경·장막 침범 여부를 소변검사·크레아티닌·혈구·증상으로 판정해 장기 위협 질환과 경증(피부·관절·점막)을 가르고, 경증에서는 히드록시클로로퀸(+필요 시 NSAID·단기 저용량 스테로이드)을 첫 치료로 고르며 고용량 스테로이드·면역억제제를 장기 위협 질환에 남기는 이유를 설명한다",
+  "objectiveKind": "치료",
+  "condition": "전신홍반루푸스(장기 침범 없는 경증)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Nephrology",
+   "Dermatology",
+   "Ophthalmology"
+  ],
+  "version": 1,
+  "updated": "2026-09-23",
+  "reviewStatus": "unreviewed",
+  "hash": "f121322ceb8a0a3b",
+  "summary": [
+   "전신홍반루푸스(SLE)는 자가항체와 면역복합체가 여러 장기에 염증을 일으키는 병이다. 진단은 항핵항체 양성(≥1:80)을 입구로, 임상·면역 소견을 합쳐 확률을 올린다 — 항 dsDNA·항 Sm 은 SLE 에 특이하다 [[harrison-21: 356장 p.2740]].",
+   "치료 강도는 항체 수치가 아니라 **장기 침범**이 정한다 — 생명·장기를 위협하는가, 되돌릴 수 있는가, 치료 합병증을 어떻게 줄일까 [[harrison-21: 356장 p.2746]].",
+   "주요 장기 침범이 없는 피부·관절·점막·피로 위주 질환은 증상 억제가 목표이고, 진통제·항말라리아제가 중심이다. 히드록시클로로퀸은 재발을 줄이고(끊으면 재발 증가) 생존을 늘리며 신장을 포함한 조직 손상 축적을 줄인다 [[harrison-21: 356장 p.2746]].",
+   "그래서 유형과 무관하게 대부분의 SLE 환자가 히드록시클로로퀸을 받는다 [[harrison-21: 356장 p.2747]]. 용량은 실제 체중 5.0 mg/kg/일을 넘지 않고 [[harrison-21: 356장 p.2744]], 망막 독성 때문에 안과 검진을 한다 [[harrison-21: 356장 p.2746]].",
+   "고용량 스테로이드(0.5–1 mg/kg/일 또는 정맥 펄스)와 사이클로포스파미드·미코페놀레이트는 증식성 루푸스신염 같은 생명·장기 위협 질환의 유도 치료다. 메토트렉세이트는 관절염·피부염에 쓰일 수 있으나 신염 같은 중증 질환의 약은 아니다 [[harrison-21: 356장 p.2746–2747]]."
+  ],
+  "sections": [
+   {
+    "title": "정의",
+    "deep": false,
+    "html": "<p><strong>전신홍반루푸스(SLE)</strong> 는 자가항체와 면역복합체가 피부·관절·신장·혈구·장막·신경 등 여러 장기에 염증과 손상을 일으키는 만성 자가면역질환이다. 완치는 없고 완전 관해도 드물어, 목표는 가벼운 증상만 남긴 저질병활성 상태(LLDAS)를 가장 적은 약으로 유지하는 것이다 <sup>[1 356장 p.2745–2746]</sup>.</p>\n<p>분류기준(2019 EULAR/ACR)은 항핵항체 ≥1:80(면역형광)을 입구로, 임상·면역 영역의 가중 점수가 10 점 이상이면 SLE 로 분류한다(특이도 97%, 민감도 93%). 연구용 기준이지만 개별 환자에서 SLE 일 확률을 가늠하는 데 쓴다 <sup>[1 356장 p.2740]</sup>.</p>"
+   },
+   {
+    "title": "병태생리",
+    "deep": false,
+    "html": "<p>정상 면역은 죽은 세포의 핵 물질을 빨리 치워 자가항원이 면역계에 노출되지 않게 하고, 자가반응 B·T 세포를 억제한다. SLE 에서는 이 제거와 조절이 무너져 핵 항원(dsDNA·Sm 등)에 대한 자가항체가 생기고, 항원–항체 면역복합체가 조직에 쌓여 보체를 활성화한다. 보체가 소모되어 혈청 C3·C4 가 떨어지고, 활성화된 보체와 사이토카인(특히 제1형 인터페론)이 염증을 증폭한다. 염증이 반복되면 되돌릴 수 없는 장기 손상이 쌓이고, 치료(특히 스테로이드) 자체도 손상 축적의 원인이 된다 <sup>[1 356장 p.2746]</sup>.</p>"
+   },
+   {
+    "title": "기전에서 소견으로",
+    "deep": false,
+    "html": "<ul>\n<li><strong>광과민 뺨 발진(나비 발진)</strong>: 자외선이 각질세포 사멸을 늘려 핵 항원을 노출시키고 면역복합체 염증이 일어난다. 뺨과 콧등이 가장 흔하고 코입술 주름은 비켜 간다. 발진이 심해지는 것은 전신 재발과 함께 오는 일이 많다 <sup>[1 356장 p.2740]</sup>.</li>\n<li><strong>관절염</strong>: 윤활막 염증이지만 골미란을 일으키지 않는 것이 보통이다 — 류마티스관절염과 가르는 점이다.</li>\n<li><strong>무통성 구강궤양</strong>: 점막 침범. 통증이 없어 환자가 말하지 않으면 놓친다.</li>\n<li><strong>항 dsDNA·항 Sm</strong>: 두 항체는 SLE 에 특이해 진단 확률을 올린다. 항 dsDNA 는 시간에 따라 변하며, 상승이 특히 C3·C4 하강과 함께 오면 신염·혈관염 재발을 예고할 수 있다. 항 Sm 은 활동성과 상관하지 않는다 <sup>[1 356장 p.2740·p.2745]</sup>.</li>\n<li><strong>정상 결과의 해석 한계</strong>: 소변검사·크레아티닌 정상은 <strong>지금</strong> 임상적으로 뚜렷한 신염이 없다는 뜻이지 앞으로도 없다는 뜻이 아니다. 그래서 진단 뒤에도 소변·혈구·크레아티닌을 정기적으로 추적한다 <sup>[1 356장 p.2745]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "감별 — 장기 침범이 있는가",
+    "deep": false,
+    "html": "<p>SLE 로 진단되면 두 번째 질문은 「어느 장기가 얼마나 침범됐나」다. 해리슨은 치료 선택의 기준으로 ① 생명을 위협하거나 장기 손상을 일으킬 만한 발현인가(그래야 공격적 치료가 정당화된다) ② 되돌릴 수 있는가 ③ 질병·치료 합병증을 어떻게 막을까 를 든다 <sup>[1 356장 p.2746]</sup>.</p>\n<ul>\n<li><strong>신장</strong>: 단백뇨·적혈구·원주(활동성 요침사)·크레아티닌 상승 → 신생검으로 ISN/RPS 등급을 정한다. 증식성(III·IV 형)이면 장기 위협 질환이다.</li>\n<li><strong>혈액</strong>: 중증 용혈빈혈·혈소판감소증은 고용량 스테로이드 대상, 경한 백혈구 감소는 흔하고 그 자체로 강한 치료를 요구하지 않는다.</li>\n<li><strong>장막·신경</strong>: 흉막염·심낭염, 경련·정신증·척수염 등.</li>\n<li>이 중 아무것도 없고 피부·관절·점막·피로만 있으면 <strong>경증</strong>이다(중증도 비교표).</li>\n</ul>"
+   },
+   {
+    "title": "검사",
+    "deep": false,
+    "html": "<ol>\n<li><strong>소변검사(단백·적혈구·원주)와 크레아티닌</strong> — 신염 여부. 단백이 의심되면 정량(24시간 또는 단백/크레아티닌 비).</li>\n<li><strong>혈구 계산</strong> — 혈액학 침범.</li>\n<li><strong>보체(C3·C4)·항 dsDNA</strong> — 활동성과 재발 예고 지표로 추적한다. 치료 강도를 직접 정하지 않는다 <sup>[1 356장 p.2745]</sup>.</li>\n<li><strong>항인지질항체</strong> — 혈전·임신 합병증 위험 평가.</li>\n<li><strong>흉부 X선·심전도</strong> — 장막염.</li>\n<li><strong>히드록시클로로퀸 시작 시 안과 검진</strong> — 망막 독성 감시의 기준점(아래 시험 쟁점 Z2).</li>\n</ol>"
+   },
+   {
+    "title": "치료",
+    "deep": false,
+    "html": "<p><strong>경증(주요 장기 침범 없음) — 증상 억제가 목표</strong>. 해리슨은 진통제와 항말라리아제를 치료의 중심으로 둔다 <sup>[1 356장 p.2746]</sup> (경증 약물표).</p>\n<ul>\n<li><strong>히드록시클로로퀸</strong>: 증상을 줄이고, 끊으면 재발이 늘며, 생존을 늘리고 신장을 포함한 조직 손상 축적을 줄인다 <sup>[1 356장 p.2746]</sup>. 대부분의 SLE 환자가 유형과 무관하게 받는다 <sup>[1 356장 p.2747]</sup>. 200–400 mg/일, 실제 체중 5.0 mg/kg 를 넘지 않는다. QT 연장 약물(예: 아미오다론)과 병용 금기 <sup>[1 356장 p.2744]</sup>. 효과는 수 주~수 개월에 걸쳐 나타난다.</li>\n<li><strong>NSAID</strong>: 관절통·관절염에 유용하지만, SLE 환자는 일반인보다 NSAID 에 의한 무균수막염·간효소 상승·고혈압·신기능 저하 위험이 높고 심근경색 위험도 있다. 아세트아미노펜이 대안이다 <sup>[1 356장 p.2746]</sup>.</li>\n<li><strong>저용량 스테로이드</strong>: 보존 치료로도 삶의 질이 부족할 때 더한다. 유지는 가능한 가장 낮은 용량(이상적으로 ≤7.5 mg/일)으로 <sup>[1 356장 p.2746]</sup>.</li>\n<li><strong>피부 루푸스</strong>: 자외선 차단제(SPF 15 이상, 30+ 선호)·항말라리아제·국소 스테로이드·타크로리무스. 심하거나 반응이 없으면 전신 스테로이드 ± 미코페놀레이트·아자티오프린·메토트렉세이트·벨리무맙 <sup>[1 356장 p.2744·p.2746]</sup>.</li>\n<li><strong>지속 활동성</strong>: 표준 치료에도 활동성·피로가 남으면 벨리무맙(항 BAFF)·아니프롤루맙(항 제1형 인터페론 수용체) <sup>[1 356장 p.2746]</sup>.</li>\n</ul>\n<p><strong>생명·장기 위협 질환 — 유도 치료</strong>. 전신 스테로이드(0.5–1 mg/kg/일 경구 또는 메틸프레드니솔론 500–1000 mg 정맥 3일 뒤 경구)가 주축이고, 증식성 신염에는 사이클로포스파미드 또는 미코페놀레이트를 더한다. 고용량은 4–6주로 짧게 쓰고 빨리 줄인다 — 거의 모든 환자가 스테로이드의 중요한 부작용을 겪기 때문이다 <sup>[1 356장 p.2746–2747]</sup>. 메토트렉세이트는 관절염·피부염에 역할이 있을 수 있으나 신염 같은 중증 질환의 약은 아니다 <sup>[1 356장 p.2747]</sup>.</p>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>금기가 없으면 히드록시클로로퀸은 경증·중증 모두에서 유지한다 <sup>[1 356장 p.2747]</sup>. EULAR 2023 도 모든 환자에게 권고하고 목표 용량을 5 mg/kg/일로 둔다 <sup>[2†]</sup>.</li>\n<li>임신: 메토트렉세이트·미코페놀레이트는 피한다. 임신 중 활동성 SLE 는 히드록시클로로퀸과 필요 시 최저 용량 프레드니손/프레드니솔론으로 조절하고, 부족하면 아자티오프린을 더한다 <sup>[1 356장 p.2747]</sup>. 가임기 여성에서 2선 약을 고를 때 임신 계획을 먼저 확인한다.</li>\n<li>재평가: 경증 환자도 소변·혈구·크레아티닌·보체·항 dsDNA 를 정기 추적한다 — 새 단백뇨·요침사 이상이 생기면 경증 경로에서 벗어나 신생검·유도 치료로 넘어간다 <sup>[1 356장 p.2745]</sup>.</li>\n<li>심혈관 위험: SLE 는 죽상경화가 흔해 지질 검사와 치료에서 당뇨병처럼 독립 위험 인자로 셈한다 <sup>[1 356장 p.2745]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 혈청학적 활동성만으로 스테로이드?</strong> — 시험 기준: 장기 침범 없는 새 진단 환자는 항 dsDNA·보체 수치와 무관하게 히드록시클로로퀸으로 시작한다 <sup>[1 356장 p.2746]</sup> / 다른 기준: 추적 중인 환자에서 검사 변화(보체 하강·항 DNA 상승)가 그 환자의 재발을 예고해 왔다면 치료 조정이 권할 만하며, 항 DNA 상승 + 보체 하강 환자에서 프레드니손 30 mg/일 2주가 재발을 막았다는 보고가 있다 <sup>[1 356장 p.2745]</sup> / 왜 다른가: 앞은 첫 치료, 뒤는 이미 치료 중인 환자의 재발 예방이며 용량도 「고용량 유도」가 아닌 단기 중등 용량이다 / 시험에서는: KMLE · USMLE 모두 새 진단·장기 침범 없음 → 히드록시클로로퀸.</li>\n<li><strong>Z2 충돌 · 히드록시클로로퀸 안과 검진 시점</strong> — 시험 기준: 시작 때 기저 검사, 위험 인자가 없으면 5년 뒤부터 매년 선별(문항 해설·AAO 2016) <sup>[3†]</sup> / 다른 기준: 해리슨은 누적 1000 g(약 5년) 뒤 6% 에서 망막 독성이 생기므로 항말라리아제 복용자는 매년 안과 검진을 받으라고 적는다 <sup>[1 356장 p.2746]</sup> / 왜 다른가: 해리슨은 요약 서술(매년)이고, 안과 학회 지침은 기저 검사와 저위험군의 선별 시작 시점을 나눈다 / 시험에서는: KMLE · USMLE 모두 「시작 전 기저 안과 검사 + 정기 망막 선별」이 답이 되는 형태로 나온다.</li>\n<li><strong>Z3 새 근거 · 목표 용량과 스테로이드 유지 상한</strong> — 시험 기준: 히드록시클로로퀸 ≤5 mg/kg/일 실제 체중 <sup>[1 356장 p.2744]</sup> / 다른 기준: 해리슨은 활성 SLE 에서 혈중 농도 ≥750 ng/mL 를 권하는 전문가 의견을 소개하고(반응 뒤 감량), 스테로이드 유지 목표를 ≤7.5 mg/일로 둔다 <sup>[1 356장 p.2746]</sup>. EULAR 2023 은 유지 ≤5 mg/일 로 더 낮췄다 <sup>[2†]</sup> / 왜 다른가: 판 시점 차이 — 해리슨 21판 이후 EULAR 개정 / 시험에서는: KMLE · USMLE 모두 「가능한 최저 용량 스테로이드」로 묻는 경우가 많고 숫자 자체가 답을 가르는 일은 드물다.</li>\n</ul>"
+   },
+   {
+    "title": "왜 히드록시클로로퀸이 「모든 환자」의 약인가",
+    "deep": true,
+    "html": "<p>히드록시클로로퀸은 약염기라 세포 내 산성 소포(엔도솜·리소좀)에 모여 pH 를 올린다. 그러면 핵산을 인식하는 엔도솜 톨유사수용체(TLR7·TLR9) 신호와 항원 처리가 약해져, SLE 병태의 중심인 제1형 인터페론 생산과 자가항원 제시가 줄어든다. 이 작용은 강한 면역억제가 아니어서 감염 위험을 크게 올리지 않고, 임신 중에도 유지할 수 있다 <sup>[1 356장 p.2747]</sup>. 대신 망막 색소상피에 쌓이는 독성이 누적 용량에 비례하므로, 용량 상한(체중당)과 정기 안과 검진이 이 약을 오래 쓰는 조건이다. 기전 서술(TLR·pH)은 해리슨 본문에서 대조하지 않았다.</p>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "SLE 중증도를 가르는 소견과 그에 맞는 치료 강도",
+    "columns": [
+     "갈래",
+     "대표 소견",
+     "확인 검사",
+     "치료 축",
+     "근거"
+    ],
+    "rows": [
+     [
+      "경증 — 주요 장기 침범 없음",
+      "광과민 발진·관절통/비미란성 관절염·구강궤양·피로",
+      "소변검사·크레아티닌·혈구 정상, 장막염 없음",
+      "히드록시클로로퀸 + 광차단, 필요 시 NSAID(주의)·단기 저용량 스테로이드",
+      "<sup>[1 356장 p.2746]</sup>"
+     ],
+     [
+      "조절 안 되는 피부·관절",
+      "히드록시클로로퀸에도 남는 관절염·피부염",
+      "활동성 평가(SLEDAI-2K 등)",
+      "메토트렉세이트·아자티오프린·미코페놀레이트 추가, 벨리무맙·아니프롤루맙",
+      "<sup>[1 356장 p.2746–2747]</sup>"
+     ],
+     [
+      "생명·장기 위협",
+      "증식성 루푸스신염, 중추신경 침범, 중증 혈액학 침범 등",
+      "단백뇨·요침사·크레아티닌 → 신생검(ISN/RPS)",
+      "고용량 스테로이드(0.5–1 mg/kg/일 또는 펄스) + 사이클로포스파미드 또는 미코페놀레이트 유도",
+      "<sup>[1 356장 p.2746–2747]</sup>"
+     ]
+    ],
+    "note": "모든 갈래에서 히드록시클로로퀸은 금기가 없으면 함께 유지한다 — 중증 치료는 그 위에 얹는 것이다 <sup>[1 356장 p.2747]</sup>."
+   },
+   {
+    "title": "경증 SLE 에서 쓰는 약 — 적응과 주의",
+    "columns": [
+     "약",
+     "자리",
+     "주의"
+    ],
+    "rows": [
+     [
+      "히드록시클로로퀸",
+      "기본 약(재발·손상 감소, 생존 연장)",
+      "≤5.0 mg/kg 실제 체중, 망막 독성 → 안과 검진, QT 연장 약물 병용 금기"
+     ],
+     [
+      "NSAID",
+      "관절통·관절염",
+      "SLE 에서 무균수막염·간효소 상승·고혈압·신기능 저하 위험 증가, 심근경색 위험"
+     ],
+     [
+      "저용량 스테로이드",
+      "보존 치료로 삶의 질이 부족할 때",
+      "가장 낮은 용량·짧게, 유지 ≤7.5 mg/일"
+     ],
+     [
+      "국소 스테로이드·타크로리무스, 자외선 차단제",
+      "피부 루푸스",
+      "SPF 15 이상(30+ 선호)"
+     ]
+    ],
+    "note": "근거: <sup>[1 356장 p.2744·p.2746]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "항 dsDNA 고역가·저보체 = 고용량 스테로이드?",
+    "point": "항 dsDNA 상승과 C3·C4 감소는 혈청학적 활동성의 표지이고, 신염·혈관염 악화를 예고할 수 있다. 그러나 치료 강도는 장기 침범이 정한다 — 소변·크레아티닌·혈구가 정상이고 장막염이 없으면 고용량 스테로이드가 아니라 히드록시클로로퀸이 첫 치료다. 고용량 스테로이드는 거의 모든 환자에게 중요한 부작용을 남긴다 <sup>[1 356장 p.2745–2746]</sup>.",
+    "exception": "추적 중이던 환자에서 항 dsDNA 상승 + 보체 하강이 그 환자의 재발을 예고해 온 양상이면, 단기 중등 용량 스테로이드로 재발을 막는 전략이 해리슨에 소개돼 있다(시험 쟁점 Z1).",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "미코페놀레이트·사이클로포스파미드 = 루푸스 치료약?",
+    "point": "두 약은 증식성(ISN/RPS III·IV) 루푸스신염 등 중증 SLE 에서 스테로이드와 함께 쓰는 유도 약이다. 근거가 되는 대조시험도 거의 모두 신염 환자에서 나왔다 <sup>[1 356장 p.2747]</sup>. 단백뇨·활동성 요침사·신기능 저하가 없으면 적응이 없다. 미코페놀레이트는 임신 중 피해야 한다 <sup>[1 356장 p.2747]</sup>.",
+    "exception": "단백뇨·요침사 이상이 나타나면 신생검으로 등급을 확인한 뒤 유도 치료로 바꾼다.",
+    "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "관절염이 두드러지니 메토트렉세이트?",
+    "point": "메토트렉세이트는 SLE 관절염·피부염에 역할이 있을 수 있는 2선 약이고, 히드록시클로로퀸을 대신하지 않는다. 임신 중 피해야 하므로 가임기 여성에서는 임신 계획을 먼저 확인한다 <sup>[1 356장 p.2747]</sup>.",
+    "exception": "히드록시클로로퀸(± 저용량 스테로이드)으로 관절·피부가 조절되지 않으면 추가 약으로 고려한다 <sup>[1 356장 p.2746]</sup>.",
+    "cites": "<sup>[1]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "「확인 전」 갈래 — 소변검사·크레아티닌을 보기 전에는 경증이라 단정하지 않는다. 신장 소견부터 확인하고, 신경·혈액 소견이 새로 드러나면 범위 밖 경로로 간다.",
+   "항 dsDNA·보체는 도식의 판단 기준이 아니다. 활동성·재발 예고 지표로 추적하되, 장기 침범 없이 이 수치만으로 고용량 스테로이드·면역억제제를 시작하지 않는다.",
+   "중증 갈래에서도 히드록시클로로퀸은 끊지 않는다(대부분의 환자에게 유지)."
+  ],
+  "criteria": [
+   {
+    "id": "sle-class-eular-acr",
+    "name": "분류기준(2019 EULAR/ACR)",
+    "kind": "진단 기준",
+    "population": "SLE 가 의심되는 환자(연구용 분류기준 — 개별 환자에서는 확률 추정에 쓴다)",
+    "statement": "항핵항체 ≥1:80(면역형광) 을 입구로, 임상·면역 영역 점수 합 10 점 이상이면 SLE 로 분류한다(특이도 97%, 민감도 93%)",
+    "exceptions": "기준은 시간이 지나며 채워진다. 증상 없는 다중 자가항체만으로는 진단하지 않는다",
+    "source": "harrison-21",
+    "locator": "356장 p.2740",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "sle-hcq-harrison",
+    "name": "히드록시클로로퀸의 자리(해리슨)",
+    "kind": "치료 기준",
+    "population": "SLE 환자 전반, 특히 주요 장기 침범이 없는 환자",
+    "statement": "대부분의 SLE 환자는 유형과 무관하게 히드록시클로로퀸을 받는다(생존 연장·손상 감소). 장기 침범이 없으면 진통제·항말라리아제가 치료의 중심이고, 삶의 질이 부족하면 저용량 전신 스테로이드를 더한다",
+    "exceptions": "QT 연장 약물과 병용 금기. 망막 독성 감시(안과 검진)",
+    "source": "harrison-21",
+    "locator": "356장 p.2744(표 356-6)·p.2746·p.2747",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "sle-hcq-eular",
+    "name": "히드록시클로로퀸의 자리(EULAR 2023)",
+    "kind": "치료 기준",
+    "population": "SLE 환자 전반",
+    "statement": "금기가 없으면 모든 환자에게 히드록시클로로퀸, 목표 용량 5 mg/kg/일. 스테로이드는 유지 시 ≤5 mg/일 로 최소화",
+    "exceptions": "권고 문구·등급·쪽 번호는 원문 미대조(루틴 컨테이너 접근 차단)",
+    "source": "eular-sle-2023",
+    "locator": "권고표(본문 미대조)",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 356: Systemic Lupus Erythematosus",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 356장 p.2736–2748",
+    "checked": "본문 대조(드라이브 문서, 356장) — p.2740: EULAR/ACR 분류(ANA ≥1:80 + 10점, 특이도 97%·민감도 93%), 항 dsDNA·항 Sm 의 특이성, 광과민 나비 발진. p.2744(표 356-6): 히드록시클로로퀸 200–400 mg/일, 실제 체중 5.0 mg/kg 초과 금지, QT 연장 약물과 병용 금기, 망막 손상 등 부작용; 메토트렉세이트는 피부염·관절염용. p.2745: 추적 검사(소변·혈색소·혈소판·크레아티닌), 항 dsDNA 상승 + 보체 하강 시 프레드니손 30 mg 2주로 재발 예방 보고, 치료 원칙 서두. p.2746: 치료 선택 3원칙(생명·장기 위협 여부·가역성·합병증 예방), 장기 침범 없는 질환은 진통제·항말라리아제가 중심, NSAID 주의점, 히드록시클로로퀸 중단 시 재발 증가·생존 연장·신 손상 포함 손상 감소, 누적 1000 g(~5년) 뒤 6% 망막 독성 → 매년 안과 검진, 저용량 스테로이드·벨리무맙·아니프롤루맙, 피부 루푸스 관리, 장기 위협 질환의 스테로이드 0.5–1 mg/kg·펄스 용량과 유지 ≤7.5 mg. p.2747: 사이클로포스파미드·미코페놀레이트 유도(신염 대상 시험), 메토트렉세이트는 관절염·피부염에만, 대부분의 SLE 환자에 히드록시클로로퀸, 임신 중 메토트렉세이트·미코페놀레이트 회피와 히드록시클로로퀸 유지를 확인했다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-23",
+    "url": ""
+   },
+   {
+    "id": "eular-sle-2023",
+    "org": "European Alliance of Associations for Rheumatology",
+    "title": "EULAR recommendations for the management of systemic lupus erythematosus: 2023 update",
+    "kind": "guideline",
+    "citation": "Fanouriakis A, Kostopoulou M, Andersen J, et al. Ann Rheum Dis 2024;83(1):15–29",
+    "checked": "서지만 — 루틴 컨테이너가 doi·PubMed 접근을 막아 권고 본문·쪽수를 대조하지 못했다. 목표 용량 5 mg/kg/일·스테로이드 ≤5 mg/일 유지 서술은 사람 대조가 필요하다",
+    "doi": "10.1136/ard-2023-224762",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1136/ard-2023-224762"
+   },
+   {
+    "id": "aao-hcq-2016",
+    "org": "American Academy of Ophthalmology",
+    "title": "Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (2016 Revision)",
+    "kind": "guideline",
+    "citation": "Marmor MF, Kellner U, Lai TY, et al. Ophthalmology 2016;123(6):1386–1394",
+    "checked": "서지만 — 원문 접근 차단. 「시작 전 기저 안저검사, 위험 인자 없으면 5년 뒤부터 매년 선별」 서술은 기억에 근거하며 사람 대조가 필요하다",
+    "doi": "10.1016/j.ophtha.2016.01.058",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2016",
+    "checkedAt": "2026-09-23",
+    "url": "https://doi.org/10.1016/j.ophtha.2016.01.058"
+   }
+  ],
+  "checks": [
+   {
+    "q": "항 dsDNA 96 IU/mL·C3 저하인데 소변검사·크레아티닌·혈구가 정상인 새 SLE 환자의 첫 치료와 그 이유는?",
+    "a": "히드록시클로로퀸. 치료 강도는 장기 침범이 정하며, 주요 장기 침범이 없으면 진통제·항말라리아제로 증상을 억제한다. 히드록시클로로퀸은 재발을 줄이고 손상 축적을 줄이며 생존을 늘린다."
+   },
+   {
+    "q": "히드록시클로로퀸을 쓸 때 반드시 챙길 감시 두 가지는?",
+    "a": "망막 독성(안과 검진 — 누적 용량이 쌓일수록 위험) 과 용량 상한(실제 체중 5 mg/kg/일). QT 연장 약물 병용도 피한다."
+   },
+   {
+    "q": "미코페놀레이트·사이클로포스파미드의 SLE 적응은?",
+    "a": "증식성 루푸스신염 등 생명·장기 위협 질환의 유도 치료(스테로이드와 병용). 신장 소견이 없는 경증에는 적응이 없다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.rheum.sle.mild-disease-hydroxychloroquine#v1",
+    "context": "같은 목표, 단서 하나를 바꿈 — 신장 침범이 확인된 SLE",
+    "stem": "24세 여자가 2개월 전부터 손목·손가락 관절통과 햇볕을 쬔 뒤 심해지는 뺨의 붉은 발진이 있고, 2주 전부터 발목이 붓고 소변에 거품이 많아졌다. 임신 중이 아니고 복용 중인 약은 없다. 혈압 138/86 mmHg, 맥박 82회/분, 호흡 16회/분, 체온 37.0 ℃. 항핵항체 1:1280(균질), 항 dsDNA 항체 210 IU/mL, C3 52 mg/dL, C4 6 mg/dL. 혈색소 11.8 g/dL, 백혈구 4,100/mm³, 혈소판 180,000/mm³, 크레아티닌 1.4 mg/dL, 소변검사 단백 3+·적혈구 25–30/HPF·적혈구 원주 있음, 24시간 소변 단백 2.1 g. 신생검에서 미만성 증식성 사구체신염(ISN/RPS IV 형)이 확인되었다. 히드록시클로로퀸에 더해 가장 적절한 치료는?",
+    "options": [
+     "저용량 프레드니솔론 단독",
+     "고용량 글루코코르티코이드와 미코페놀레이트 병용",
+     "메토트렉세이트 단독",
+     "비스테로이드소염제 단독",
+     "치료 추가 없이 3개월 뒤 재검"
+    ],
+    "answer": 2,
+    "explanation": "바뀐 단서는 신장이다. 단백뇨·적혈구 원주·크레아티닌 상승과 IV 형 증식성 신염은 생명·장기 위협 질환이므로, 경증에서처럼 히드록시클로로퀸만으로는 부족하고 고용량 스테로이드(0.5–1 mg/kg/일 또는 펄스)에 미코페놀레이트(또는 사이클로포스파미드)를 더한 유도 치료가 필요하다. 히드록시클로로퀸은 계속 유지한다. 메토트렉세이트는 신염의 약이 아니고, 저용량 스테로이드·NSAID 단독은 신염을 조절하지 못하며 NSAID 는 신기능을 더 떨어뜨릴 수 있다. 원 문항에서는 소변·크레아티닌이 정상이라 이 경로가 열리지 않았다.",
+    "of": "kmle-2026-1129",
+    "changed": "소변검사 정상·크레아티닌 정상 → 단백 3+·적혈구 원주·24시간 단백 2.1 g·크레아티닌 1.4 와 신생검 ISN/RPS IV 형 ⇒ 정답이 히드록시클로로퀸 단독에서 고용량 스테로이드 + 미코페놀레이트 유도로 바뀐다",
+    "flip": true
+   },
+   {
+    "id": "cn.rheum.sle.mild-disease-hydroxychloroquine#v2",
+    "context": "같은 목표, 겉모습만 바꿈 — 피부과에서 의뢰된 SLE",
+    "stem": "34세 여자가 바닷가 휴가 뒤 얼굴에 생긴 붉은 발진으로 피부과를 거쳐 의뢰되었다. 1개월 전부터 아침에 양쪽 무릎과 손목이 뻣뻣하고, 혀와 볼 안쪽에 아프지 않은 궤양이 반복된다. 가슴 통증·숨참·발열은 없고, 다음 해까지 임신 계획이 없다. 혈압 118/74 mmHg, 맥박 72회/분, 호흡 14회/분, 체온 36.7 ℃. 소변검사 단백 음성·적혈구 0–1/HPF, 크레아티닌 0.6 mg/dL, 혈색소 13.1 g/dL, 백혈구 5,200/mm³, 혈소판 240,000/mm³. 항핵항체 1:320(얼룩), 항 Sm 항체 양성, 항 dsDNA 항체 48 IU/mL, C3 82 mg/dL. 흉부 X선은 정상이다. 가장 적절한 치료는?",
+    "options": [
+     "메토트렉세이트 경구 투여",
+     "히드록시클로로퀸 경구 투여",
+     "리툭시맙 정맥 투여",
+     "메틸프레드니솔론 정맥 펄스 투여",
+     "아자티오프린 경구 투여"
+    ],
+    "answer": 2,
+    "explanation": "환자의 나이·내원 경위·자가항체 종류가 달라도 판단 단서는 같다. 소변·크레아티닌·혈구가 정상이고 흉통·숨참이 없어 신염·혈액학·장막 침범이 없는 피부·관절·점막의 경증 SLE 이므로, 히드록시클로로퀸(광차단 포함)이 첫 치료다. 메토트렉세이트·아자티오프린은 히드록시클로로퀸으로 조절되지 않을 때 더하는 약이고, 메틸프레드니솔론 펄스·리툭시맙은 장기 위협 질환이나 불응 질환의 치료다.",
+    "of": "kmle-2026-1129",
+    "changed": "나이·경위·제시 순서·자가항체 종류(항 Sm 추가)를 바꾸고 결정적 단서(소변·크레아티닌·혈구 정상, 장막염 없음)는 유지 ⇒ 정답은 그대로 히드록시클로로퀸",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "SLE 진단 뒤 첫 치료 — 장기 침범으로 강도를 정한다",
+  "geo": {
+   "title": "SLE 진단 뒤 첫 치료 — 장기 침범으로 강도를 정한다",
+   "w": 482,
+   "h": 1012.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "광과민 발진·관절염·",
+      "구강궤양 + 항핵항체·항",
+      "dsDNA 양성 → SLE 진단"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 16
+    },
+    {
+     "id": "organ",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "생명·장기 위협 침범이",
+      "있는가? (신염 · 중추신경 ·",
+      "중증 혈액학 · 장막염)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 129.0,
+     "y": 163.0
+    },
+    {
+     "id": "info",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "소변검사(단백·적혈구·원주)",
+      "·크레아티닌·혈구·흉부",
+      "영상·신경 증상을 확인한다"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 310.0
+    },
+    {
+     "id": "nephritis",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "단백뇨 >0.5 g/일 · 활동성",
+      "요침사 · 신기능 저하?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 457.0
+    },
+    {
+     "id": "biopsy",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "신생검(ISN/RPS) →",
+      "증식성이면 고용량",
+      "스테로이드 +",
+      "미코페놀레이트 또는",
+      "사이클로포스파미드 유도,",
+      "히드록시클로로퀸 유지"
+     ],
+     "w": 196,
+     "h": 132,
+     "x": 16.0,
+     "y": 587.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "중추신경·중증 혈액학 침범 —",
+      "고용량/펄스 스테로이드 ±",
+      "면역억제제(이 도식 범위 밖)"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 242.0,
+     "y": 310.0
+    },
+    {
+     "id": "mild",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "경증: 히드록시클로로퀸(≤5",
+      "mg/kg) + 광차단, 필요 시",
+      "NSAID·단기 저용량",
+      "스테로이드. 안과 검진"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 587.0
+    },
+    {
+     "id": "resp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "관절·피부가 조절되는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 785.0
+    },
+    {
+     "id": "keep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "유지 · 소변·혈구·",
+      "크레아티닌·보체·항 dsDNA",
+      "정기 추적"
+     ],
+     "w": 196,
+     "h": 81,
+     "x": 16.0,
+     "y": 898.0
+    },
+    {
+     "id": "add",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "메토트렉세이트·",
+      "아자티오프린 추가 또는",
+      "벨리무맙·아니프롤루맙(임신",
+      "계획 확인)"
+     ],
+     "w": 196,
+     "h": 98,
+     "x": 242.0,
+     "y": 898.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "organ",
+     "points": [
+      [
+       227.0,
+       97
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       107
+      ],
+      [
+       227.0,
+       163.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "organ",
+     "to": "info",
+     "points": [
+      [
+       168.2,
+       244.0
+      ],
+      [
+       168.2,
+       254.0
+      ],
+      [
+       114.0,
+       254.0
+      ],
+      [
+       114.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "확인 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 91.6,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "organ",
+     "to": "nephritis",
+     "points": [
+      [
+       207.4,
+       244.0
+      ],
+      [
+       207.4,
+       260.0
+      ],
+      [
+       452,
+       260.0
+      ],
+      [
+       452,
+       411.0
+      ],
+      [
+       259.7,
+       411.0
+      ],
+      [
+       259.7,
+       457.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "신장 소견 있음"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 218.9,
+      "y": 417.0
+     }
+    },
+    {
+     "from": "organ",
+     "to": "other",
+     "points": [
+      [
+       246.6,
+       244.0
+      ],
+      [
+       246.6,
+       266.0
+      ],
+      [
+       340.0,
+       266.0
+      ],
+      [
+       340.0,
+       310.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "신경·혈액 침범"
+      ],
+      "w": 84.1,
+      "h": 17,
+      "x": 297.9,
+      "y": 290.0
+     }
+    },
+    {
+     "from": "organ",
+     "to": "mild",
+     "points": [
+      [
+       285.8,
+       244.0
+      ],
+      [
+       285.8,
+       272.0
+      ],
+      [
+       466,
+       272.0
+      ],
+      [
+       466,
+       541.0
+      ],
+      [
+       307.3,
+       541.0
+      ],
+      [
+       307.3,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "info",
+     "to": "nephritis",
+     "points": [
+      [
+       114.0,
+       391.0
+      ],
+      [
+       114.0,
+       401.0
+      ],
+      [
+       194.3,
+       401.0
+      ],
+      [
+       194.3,
+       457.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "nephritis",
+     "to": "biopsy",
+     "points": [
+      [
+       194.3,
+       521.0
+      ],
+      [
+       194.3,
+       531.0
+      ],
+      [
+       114.0,
+       531.0
+      ],
+      [
+       114.0,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 567.0
+     }
+    },
+    {
+     "from": "nephritis",
+     "to": "mild",
+     "points": [
+      [
+       259.7,
+       521.0
+      ],
+      [
+       259.7,
+       537.0
+      ],
+      [
+       372.7,
+       537.0
+      ],
+      [
+       372.7,
+       587.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 547.0
+     }
+    },
+    {
+     "from": "mild",
+     "to": "resp",
+     "points": [
+      [
+       340.0,
+       685.0
+      ],
+      [
+       340.0,
+       695.0
+      ],
+      [
+       227.0,
+       695.0
+      ],
+      [
+       227.0,
+       785.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "resp",
+     "to": "keep",
+     "points": [
+      [
+       194.3,
+       832.0
+      ],
+      [
+       194.3,
+       842.0
+      ],
+      [
+       114.0,
+       842.0
+      ],
+      [
+       114.0,
+       898.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 104.5,
+      "y": 878.0
+     }
+    },
+    {
+     "from": "resp",
+     "to": "add",
+     "points": [
+      [
+       259.7,
+       832.0
+      ],
+      [
+       259.7,
+       848.0
+      ],
+      [
+       340.0,
+       848.0
+      ],
+      [
+       340.0,
+       898.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 319.5,
+      "y": 878.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "광과민 발진·관절염·구강궤양 + 항핵항체·항 dsDNA 양성 → SLE 진단",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "생명·장기 위협 침범이 있는가? (신염 · 중추신경 · 중증 혈액학 · 장막염)"
+     }
+    ]
+   },
+   {
+    "id": "organ",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "생명·장기 위협 침범이 있는가? (신염 · 중추신경 · 중증 혈액학 · 장막염)",
+    "note": "",
+    "branches": [
+     {
+      "label": "확인 전",
+      "to": 3,
+      "toText": "소변검사(단백·적혈구·원주)·크레아티닌·혈구·흉부 영상·신경 증상을 확인한다"
+     },
+     {
+      "label": "신장 소견 있음",
+      "to": 5,
+      "toText": "단백뇨 >0.5 g/일 · 활동성 요침사 · 신기능 저하?"
+     },
+     {
+      "label": "신경·혈액 침범",
+      "to": 4,
+      "toText": "중추신경·중증 혈액학 침범 — 고용량/펄스 스테로이드 ± 면역억제제(이 도식 범위 밖)"
+     },
+     {
+      "label": "없음",
+      "to": 7,
+      "toText": "경증: 히드록시클로로퀸(≤5 mg/kg) + 광차단, 필요 시 NSAID·단기 저용량 스테로이드. 안과 검진"
+     }
+    ]
+   },
+   {
+    "id": "info",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "소변검사(단백·적혈구·원주)·크레아티닌·혈구·흉부 영상·신경 증상을 확인한다",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "단백뇨 >0.5 g/일 · 활동성 요침사 · 신기능 저하?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 4,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "중추신경·중증 혈액학 침범 — 고용량/펄스 스테로이드 ± 면역억제제(이 도식 범위 밖)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "nephritis",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "단백뇨 >0.5 g/일 · 활동성 요침사 · 신기능 저하?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "신생검(ISN/RPS) → 증식성이면 고용량 스테로이드 + 미코페놀레이트 또는 사이클로포스파미드 유도, 히드록시클로로퀸 유지"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "경증: 히드록시클로로퀸(≤5 mg/kg) + 광차단, 필요 시 NSAID·단기 저용량 스테로이드. 안과 검진"
+     }
+    ]
+   },
+   {
+    "id": "biopsy",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "신생검(ISN/RPS) → 증식성이면 고용량 스테로이드 + 미코페놀레이트 또는 사이클로포스파미드 유도, 히드록시클로로퀸 유지",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mild",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "경증: 히드록시클로로퀸(≤5 mg/kg) + 광차단, 필요 시 NSAID·단기 저용량 스테로이드. 안과 검진",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 8,
+      "toText": "관절·피부가 조절되는가?"
+     }
+    ]
+   },
+   {
+    "id": "resp",
+    "num": 8,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "관절·피부가 조절되는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 9,
+      "toText": "유지 · 소변·혈구·크레아티닌·보체·항 dsDNA 정기 추적"
+     },
+     {
+      "label": "아니오",
+      "to": 10,
+      "toText": "메토트렉세이트·아자티오프린 추가 또는 벨리무맙·아니프롤루맙(임신 계획 확인)"
+     }
+    ]
+   },
+   {
+    "id": "keep",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "유지 · 소변·혈구·크레아티닌·보체·항 dsDNA 정기 추적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "add",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "메토트렉세이트·아자티오프린 추가 또는 벨리무맙·아니프롤루맙(임신 계획 확인)",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "kmle-2026-1129"
   ],
   "hasErrors": false
  }
