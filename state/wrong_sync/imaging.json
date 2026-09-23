@@ -20,8 +20,29 @@
    "date": "2026-09-13",
    "device": "pc-0n9xt6",
    "note": ""
+  },
+  "imaging-2026-0102": {
+   "id": "imaging-2026-0102",
+   "exam": "imaging",
+   "subject": "병리·조직학",
+   "step": "Step 2",
+   "type": "병리·조직 — 유방 상피의 전사인자 면역조직화학",
+   "style": "usmle_style",
+   "modality": "HISTOLOGY_IHC",
+   "question": "In diagnostic pathology, detection of this protein is most useful for which of the following?",
+   "chosen": 1,
+   "chosenText": "Distinguishing ductal carcinoma in situ from invasive carcinoma",
+   "answer": 2,
+   "answerText": "Identifying breast or urothelial origin of a metastatic carcinoma of unknown primary",
+   "coreNote": "",
+   "differ": "",
+   "decision": "The stain marks luminal epithelial nuclei of ducts and acini and spares myoepithelium and stroma, and the stem identifies the protein as a zinc-finger luminal transcription factor shared with urothelium and T cells: GATA3. Its diagnostic use is to assign breast or urothelial origin to a metastatic carcinoma of unknown primary, unlike ER, HER2, Ki-67, and myoepithelial markers.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260922T204641Z_일일영상_2026-09-23_11units_11q_4342d0b0",
+   "date": "2026-09-23",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-22T12:20:29.954Z"
+ "updated": "2026-09-23T00:42:31.648Z"
 }
