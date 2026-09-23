@@ -68,7 +68,7 @@ jobs:
       - name: Tests (정리본·도식·학습 상태 JS/Python 일치·PDF 렌더·드라이브 보호)
         env:
           PYTHONIOENCODING: utf-8
-        run: python pipelines/test_learning_books.py
+        run: python pipelines/test_learning_books.py && python pipelines/test_sync_key.py
 
       - name: Check source revisions
         continue-on-error: true

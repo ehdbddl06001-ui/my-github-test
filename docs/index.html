@@ -85,6 +85,10 @@
   </div>
   <p id="modeHint" class="muted"></p>
   <p id="wrongCount" class="muted"></p>
+  <div id="syncNeedKey" class="syncwarn hidden" role="alert">
+    <p id="syncNeedKeyText"></p>
+    <button id="syncNeedKeyBtn" class="small">동기화 키 넣기</button>
+  </div>
   <div class="row syncrow">
     <p id="syncStatus" class="muted sync">☁ 오답 동기화 확인 중…</p>
     <button id="syncBtn" class="small">지금 동기화</button>
@@ -93,6 +97,10 @@
     <summary class="muted">동기화 설정</summary>
     <label class="muted" for="syncKey">동기화 키(서버에 SYNC_KEY 를 설정했을 때만 입력)</label>
     <input type="password" id="syncKey" autocomplete="off" placeholder="비워두면 키 없이 요청" />
+    <p id="syncAuthInfo" class="muted"></p>
+    <button id="syncLinkBtn" class="small">다른 기기 연결 링크</button>
+    <p class="muted">키가 든 링크입니다. 새 기기에서 한 번 열면 키가 저장되고, 그 기기의 기존 오답·학습 기록도 함께 올라갑니다. 본인 기기에만 보내세요.</p>
+    <input type="text" id="syncLinkOut" class="hidden" readonly aria-label="연결 링크" />
   </details>
 </section>
 
@@ -170,6 +178,7 @@
 <script src="questions_usmle.js"></script>
 <script src="questions_imaging.js"></script>
 <script src="concepts.js"></script>
+<script src="synckey.js"></script>
 <script src="learn.js"></script>
 <script src="app.js"></script>
 <script src="pwa.js"></script>

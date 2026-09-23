@@ -1,28 +1,28 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-22",
+ "generated": "2026-09-23",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2762,
+  "total": 2765,
   "byType": {
    "kmle": 1099,
    "concept": 15,
    "anatomy": 734,
    "usmle": 156,
+   "paper": 643,
    "imaging": 101,
-   "paper": 640,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 734,
-   "Cardiology": 202,
+   "Cardiology": 203,
    "Nephrology": 169,
    "Infectious Disease": 147,
-   "Pediatrics": 128,
-   "Hematology-Oncology": 93,
+   "Pediatrics": 129,
+   "Hematology-Oncology": 94,
    "Pathology": 91,
    "Obstetrics & Gynecology": 85,
    "Neurology": 82,
@@ -77,7 +77,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 1867,
-   "medium": 846,
+   "medium": 849,
    "low": 49
   },
   "tagCount": 4017
@@ -1379,6 +1379,57 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0164.md",
    "snippet": "A 7 month old boy is brought to the physician because of vomiting, irritability and poor feeding for 3 weeks. The symptoms began shortly after his parents started giving him pureed fruit and diluted juice in addition to breast milk; he had ",
    "text": "Biochemistry Vomiting, Lethargy and a Big Liver Weeks After Fruit Was Added to the Diet — The Trapped Sugar Phosphate That Starves Glycogenolysis of Phosphate hereditary-fructose-intolerance aldolase-B fructose-1-phosphate hypoglycemia lactic-acidosis hyperuricemia hepatomegaly galactosemia von-gierke essential-fructosuria USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry 8e — Fructose Metabolism; Nelson Textbook of Pediatrics 21e Ch 105 Defects in Metabolism of Carbohydrates; Baker P et al. Hereditary Fructose Intolerance, GeneReviews 2015/2021) A 7 month old boy is brought to the physician because of vomiting, irritability and poor feeding for 3 weeks. The symptoms began shortly after his parents started giving him pureed fruit and diluted juice in addition to breast milk; he had been thriving on breast milk alone. Yesterday he became unusually drowsy about an hour after a meal. He was born at term, and his newborn screen, which included galactosemia and medium chain acyl CoA dehydrogenase deficiency, was reported as normal. His vital signs and laboratory studies are shown. He is pale, sweaty and lethargic. The liver edge is palpable 4 cm below the right costal margin. There is no dysmorphism. Which of the following best explains the hypoglycemia in this infant? A. Impaired transfer of long chain fatty acids into mitochondria B. Accumulation of galactose 1 phosphate in hepatocytes C. Sequestration of inorganic phosphate as fructose 1 phosphate D. Deficient glucose 6 phosphatase activity in the endoplasmic reticulum E. Absent hepatic fructokinase activity 모유만 먹을 때는 건강하다가 과일·주스를 시작한 뒤 구토·기면·간비대·저혈당이 생겼고, 식후 1시간에 증상이 나타나며, 소변 환원당 양성인데 glucose oxidase 스틱은 음성(포도당이 아닌 환원당 = 과당), 젖산·요산 상승, 인 감소, 케톤 생성은 유지된 저혈당 = 유전성 과당불내증(알돌라아제 B 결핍)이다. 과당은 과당인산화효소로 fructose 1 phosphate 가 되지만 알돌라아제 B 가 없어 여기서 막힌다. F1P 가 간세포에 쌓이면서 무기인산과 ATP 를 붙잡아 두어(sequestration) 인산이 필요한 글리코겐 가인산분해효소가 멈추고, 알돌라아제 B 자체가 포도당신생합성의 알돌라아제 단계이기도 하므로 글리코겐 분해·포도당신생합성이 모두 막혀 식후 저혈당이 온다. ATP 고갈은 AMP 탈아미노효소를 활성화해 요산을 올리고, 인산 부족과 저혈당은 젖산산증을 동반한다. 치료는 과당·설탕(자당)·소르비톨 제거이며, 확진은 ALDOB 유전자 검사로 하고 과당 부하검사는 위험해서 하지 않는다."
+  },
+  {
+   "id": "paper-2026-0643",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Translational vision science & technology",
+   "confidence": "medium",
+   "date": "2026-09-22",
+   "path": "content/papers/2026/2026-09-22_paper-2026-0643_combined_small_treatment_zone_orthokeratology_and_alternate_.md",
+   "snippet": "Title Combined Small Treatment Zone Orthokeratology and Alternate Day 0.01% Atropine for Axial Elongation Control in Rapidly Progressing Myopic Children Authors Xu Mengying, Jing Lili, Zhao Lianghui, Xiu Yanyan, Du Xianli Journal / DOI Tran",
+   "text": "Pediatrics scraped pubmed PubMed / Translational vision science & technology Title Combined Small Treatment Zone Orthokeratology and Alternate Day 0.01% Atropine for Axial Elongation Control in Rapidly Progressing Myopic Children Authors Xu Mengying, Jing Lili, Zhao Lianghui, Xiu Yanyan, Du Xianli Journal / DOI Translational vision science & technology · DOI: 10.1167/tvst.15.9.13 · PMID: 42770659 https://pubmed.ncbi.nlm.nih.gov/42770659/ Abstract PURPOSE: To evaluate the efficacy of small treatment zone (STZ) orthokeratology (ortho K) combined with alternate day 0.01% atropine to control axial elongation in rapidly progressing myopic children and identify associated optical predictors. METHODS: This prospective randomized study included 105 children ages 8 to 12 years with axial elongation ≥0.20 mm during the initial 6 months of STZ ortho K wear, assigned to ortho K plus alternate day 0.01% atropine (AOK) or ortho K alone (OK) for 12 months. The primary outcome was axial length (AL) elongation. Other outcomes included pupil diameter (PD), intraocular pressure, visual quality, and adverse events. In the AOK group, corneal higher order aberrations (HOAs) and pupil zone defocus were assessed before and after atropine therapy. RESULTS: AL elongation was lower in the AOK group than in the OK group at 3, 6, and 12 months (0.03 ± 0.06 vs. 0.09 ± 0.04; 0.09 ± 0.08 vs. 0.18 ± 0.07; and 0.20 ± 0.12 vs. 0.33 ± 0.09 mm, respectively; all P < 0.05). At 3 months, corneal HOAs and pupil zone defocus increased in the AOK group (all P < 0.05). In AOK, multivariable regression identified baseline age, PD, and total pupil zone defocus as independent predictors of 1 year AL elongation. Mild photophobia occurred in two participants, with no serious adverse events. CONCLUSIONS: Compared with STZ ortho K alone, adding alternate day 0.01% atropine further reduced axial elongation in rapidly progressing myopic children, with response associated with age and pupil related optical factors, including PD and pupil zone defocus. TRANSLATIONAL RELEVANCE: Optimized lens design and atropine dosing may support precision optical pharmacologic myopia control. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0642",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmology",
+   "confidence": "medium",
+   "date": "2026-09-22",
+   "path": "content/papers/2026/2026-09-22_paper-2026-0642_bilateral_intraocular_natural_killer_t_cell_lymphoma.md",
+   "snippet": "Title Bilateral Intraocular Natural Killer/T Cell Lymphoma Authors Xiao Xingyu, Dai Rongping Journal / DOI Ophthalmology · DOI: 10.1016/j.ophtha.2026.08.002 · PMID: 42770917 https://pubmed.ncbi.nlm.nih.gov/42770917/ Abstract (PubMed에 초록 없음)",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Ophthalmology Title Bilateral Intraocular Natural Killer/T Cell Lymphoma Authors Xiao Xingyu, Dai Rongping Journal / DOI Ophthalmology · DOI: 10.1016/j.ophtha.2026.08.002 · PMID: 42770917 https://pubmed.ncbi.nlm.nih.gov/42770917/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0641",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-09-22",
+   "path": "content/papers/2026/2026-09-22_paper-2026-0641_medical_assistance_in_dying_in_patients_with_destination_the.md",
+   "snippet": "Title Medical Assistance in Dying in Patients With Destination Therapy Left Ventricular Assist Devices Authors Carverhill Jacqueline, Bertelli Michele, Kiamanesh Omid Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.110390 · PM",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Case reports Title Medical Assistance in Dying in Patients With Destination Therapy Left Ventricular Assist Devices Authors Carverhill Jacqueline, Bertelli Michele, Kiamanesh Omid Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.110390 · PMID: 42770934 https://pubmed.ncbi.nlm.nih.gov/42770934/ Abstract BACKGROUND: Published experience with medical assistance in dying (MAiD) in patients receiving durable left ventricular assist device (LVAD) support is limited, with no prior Canadian reports. CASE SUMMARY: Two male patients with destination therapy LVADs received clinician administered MAiD. One had refractory transfusion dependent gastrointestinal bleeding and died in a community hospice; the other had refractory pain, anxiety, and existential suffering and died on an acute care ward. In both cases, intravenous medications were administered while the LVAD remained active, and the device was deactivated after unconsciousness and apnea were confirmed. No procedural complications occurred. DISCUSSION: These cases describe a practical approach to coordinating MAiD with LVAD deactivation in hospital and hospice settings. The process required advance agreement among the LVAD team, MAiD provider, and palliative care team regarding medication sequencing, responsibility for device deactivation, and anticipated alarms. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0102",

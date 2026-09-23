@@ -5,7 +5,7 @@ topic: Obstetrics & Gynecology
 see_also: [Endocrinology]
 date: 2026-09-23
 updated: 2026-09-23
-version: 1
+version: 2
 outline: gyn.infertility            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 396장 Infertility and Contraception
 confidence: medium
 review_status: unreviewed
@@ -136,13 +136,11 @@ diagram:
   title: "무배란 불임 — 어느 단계의 치료인가"
   nodes:
     - {id: start, kind: start, text: "12개월 무피임에도 임신 안 됨 + 희발월경 — 불임 평가"}
-    - {id: workup, kind: decision, text: "부부 평가가 끝났는가? 배란(황체기 프로게스테론) · 난관(자궁난관조영술) · 정액검사(WHO 기준)"}
+    - {id: workup, kind: decision, text: "부부 평가가 끝났는가? 배란 · 난관 · 정액검사"}
     - {id: info, kind: info, text: "빠진 검사를 먼저 채운다 — 치료 전에 평가를 완료한다"}
     - {id: cause, kind: decision, text: "무배란 단독인가, 난관·심한 남성 요인이 함께 있는가?"}
-    - {id: ivf, kind: end, text: "체외수정(±세포질내 정자주입)으로 간다 — 난관 요인은 이것이 최고 성공률"}
-    - {id: fix, kind: decision, text: "갑상선기능저하·고프로락틴혈증·비만 같은 교정 가능한 요인이 남았는가?"}
-    - {id: lifestyle, kind: step, text: "먼저 교정한다 — 갑상선·프로락틴 치료, 체중 감량"}
-    - {id: oral, kind: step, text: "경구 배란 유도 — 레트로졸(국제 지침 1차) 또는 클로미펜, 필요 시 메트포르민 보조"}
+    - {id: ivf, kind: end, text: "체외수정(±세포질내 정자주입) — 난관 요인은 이것이 최고 성공률"}
+    - {id: oral, kind: step, text: "갑상선·프로락틴·비만을 먼저 교정 → 경구 배란 유도(레트로졸 1차 또는 클로미펜, ±메트포르민)"}
     - {id: resp, kind: decision, text: "3–6주기 뒤 배란·임신 반응은?"}
     - {id: preg, kind: end, text: "임신 — 초기 산전 관리로"}
     - {id: gnd, kind: end, text: "저용량 주사 생식샘자극호르몬(단일 난포) → 실패 시 체외수정"}
@@ -152,16 +150,13 @@ diagram:
     - {from: info, to: cause, label: "완료 후"}
     - {from: workup, to: cause, label: "완료"}
     - {from: cause, to: ivf, label: "난관·심한 남성 요인 동반"}
-    - {from: cause, to: fix, label: "무배란 단독"}
-    - {from: fix, to: lifestyle, label: "남았음"}
-    - {from: lifestyle, to: oral, label: "교정 뒤에도 무배란"}
-    - {from: fix, to: oral, label: "이미 교정됨"}
+    - {from: cause, to: oral, label: "무배란 단독"}
     - {from: oral, to: resp}
     - {from: resp, to: preg, label: "임신"}
     - {from: resp, to: gnd, label: "무반응"}
 diagram_notes:
   - "「평가 완료」에는 남편 정액검사가 반드시 들어간다 — 남성 요인이 40–50 % 에 있으므로 여성만 치료하면 놓친다 [[harrison-21: 396장 p.3050]]."
-  - "체중 감량을 이미 시도했는데 배란이 안 돌아왔다면 lifestyle 노드를 되풀이하지 않고 경구 약으로 간다 — 문항에서 「6개월 체중 감량」이 이 조건이다."
+  - "체중 감량을 이미 시도했는데 배란이 안 돌아왔다면 교정 단계를 되풀이하지 않고 바로 경구 약으로 간다 — 문항에서 「6개월 체중 감량」이 이 조건이다. 평가 항목은 배란(황체기 프로게스테론)·난관(자궁난관조영술)·정액검사(WHO 기준)다."
   - "레트로졸이 1차인 것은 국제 지침 기준이고, 해리슨은 두 약을 우열 없이 적는다 — 「어느 쪽도 1차」라는 문항이면 둘 다 맞다."
   - "생식샘자극호르몬 단계에서 다태·난소과자극이 가장 큰 위험이라 저용량으로 단일 난포를 목표로 한다."
 checks:
