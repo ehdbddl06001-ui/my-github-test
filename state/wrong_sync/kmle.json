@@ -881,8 +881,29 @@
    "differ": "",
    "source": "KMLE 2026 / Claude Routine",
    "date": "2026-08-16"
+  },
+  "kmle-2026-1129": {
+   "id": "kmle-2026-1129",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "New-onset SLE with Skin, Joint and Mucosal Disease but No Organ Involvement — Initial Treatment",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 0,
+   "chosenText": "고용량 프레드니솔론 경구 투여",
+   "answer": 4,
+   "answerText": "히드록시클로로퀸 경구 투여",
+   "coreNote": "",
+   "differ": "",
+   "decision": "광과민 뺨 발진·관절염·무통성 구강궤양에 항핵항체·항 dsDNA 양성이 더해진 전신홍반루푸스이지만, 소변·크레아티닌·혈구가 정상이고 장막염 소견이 없어 장기 침범이 없는 경증이다. 모든 루푸스 환자의 기본 약인 히드록시클로로퀸을 안저검사 뒤 시작하는 것이 첫 치료이며, 고용량 스테로이드와 면역억제제는 장기 위협 질환에 남긴다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-23",
+   "device": "pc-oc4qm2",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-23T07:07:42.028Z"
+ "updated": "2026-09-23T07:10:20.769Z"
 }
