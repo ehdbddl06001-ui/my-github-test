@@ -254,7 +254,9 @@ def main(argv: list[str]) -> int:
     paths = collect_paths(files)
 
     n_err = n_warn = n_rev = n_docs = 0
+    metas = []
     for d in iter_question_docs(paths):
+        metas.append(d.meta)
         fs = lint_doc(d)
         if not fs:
             continue
@@ -270,7 +272,13 @@ def main(argv: list[str]) -> int:
                 n_rev += 1
             print(f"  [{f.level}] {f.code}: {f.msg}")
 
+    from question_design import mix_report
+    mix, mix_warns = mix_report(metas)
     print(f"\n{'─'*60}")
+    print(f"판단 단계 구성(design 있는 {mix['n']}문항): 단계 {mix['steps']} · 평가 목표 {mix['targets']}")
+    for w in mix_warns:
+        n_warn += 1
+        print(f"  [WARN] mix: {w}")
     print(f"린트 완료: 문항 {n_docs}건에서 ERROR {n_err} · WARN {n_warn} · 내용 검토 신호 {n_rev}")
     if n_rev:
         print("  (REVIEW 는 판정이 아니다 — `python pipelines/review_questions.py <파일>` 로 검토지를 만들어 확인한다)")

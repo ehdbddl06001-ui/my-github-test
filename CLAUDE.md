@@ -137,6 +137,12 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   같은 목표의 다른 문항·변형 문제를 맞혔을 때만.
 - 기록 → 저장소: Cloudflare `functions/api/learning.js`(eid 합집합 → `state/learning_sync/events.json`, 사용자 데이터라
   커밋) 또는 앱의 「학습 기록 내보내기」 파일을 드라이브 `MedKOS/학습기록` 에 두면 books.yml 이 가져와 합친다.
+- **다시 풀 날 · 변형 · 보정(2026-09-23 사용자 채택)**: ① `learning_log.schedule()` = learn.js `schedule()` — 틀린 날 +1일·+7일
+  (기본값일 뿐 최적값이 아니다, 앱 「개념 복습」에서 바꿈)에 「오늘 다시 풀 것」, 그 문항에서 나온 변형(`variants[].of`)을 먼저 낸다.
+  ② `concept_queue.py` 의 `[variant]`(틀린 문항마다 flip true/false 변형 2개)·`[dist]`(고른 오답 보기의 distractors 설명) — `/gen-concept`.
+  ③ 판단 사슬 `design.chain`(2026-09-24 이후 필수, steps 와 개수 일치) · 하루 세트 구성(3단계 이상 40 %↑, 한 목표 50 %↓ —
+  `lint_questions.py` 끝 WARN). ④ `item_stats.py` — 학습자 1명이라 **문항별 통계는 내지 않고** 난이도 라벨·판단 단계·평가 목표
+  묶음(20문항 이상)만 판정. MedKOS 는 국시·USMLE 전용이다 — 학교 내신 기준·문항을 넣지 않는다.
 - 학습서: `.github/workflows/books.yml`(매일 06:30 KST) → `check_sources.py` → `build_books.py`(바뀐 책만, 렌더 후
   검증 통과한 것만) → `drive_books.py`(폴더 ID `pipelines/books_config.yaml`, 같은 파일 ID 갱신, archive/ 사본,
   드라이브 쪽이 바뀌었으면 필기 보호로 덮어쓰지 않음, 아무것도 지우지 않음). 판 기록 `state/books/`.

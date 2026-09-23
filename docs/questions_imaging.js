@@ -69,6 +69,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Estrogen receptor also stains luminal nuclei, but it is a steroid receptor, not a zinc-finger transcription factor, and it is not expressed in urothelium or T lymphocytes; its role is predictive, whereas GATA3's role is lineage",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: strong brown nuclear staining of the luminal epithelial cells lining ducts and lobular acini",
@@ -207,6 +208,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Blood cultures are routine in severe pneumonia but cannot grow Legionella; the urinary antigen assay is the rapid confirmatory test and stays positive after antibiotics",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: bilateral patchy consolidation, most marked in the right mid and lower zones and the left perihilar and lower zone, without cavitation or large effusion",
@@ -356,6 +358,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "혈전용해제와 갈리는 것은 시간·시설 — 첫 의료 접촉 120분 안에 시술이 가능한 병원이므로 일차 중재술이 우선이다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "심전도: V2·V3 J점 약 2 mm 위로 볼록한 ST 분절 상승, V1·V4 경한 ST 상승",
@@ -500,6 +503,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "색소 그물·줄무늬·청백색 베일 같은 멜라닌세포 구조가 없고, 대신 기저세포암 고유의 잎사귀·바퀴살 모양 색소 구조가 분홍 배경에 놓여 있다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: 회갈색 잎사귀 모양·바퀴살 모양 색소 구조",
@@ -643,6 +647,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Neuroleptic malignant syndrome would show lead-pipe rigidity with reduced reflexes developing over days after a dopamine antagonist; this patient has 4+ reflexes and sustained clonus within 6 hours of a serotonergic change",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "deep tendon reflexes are 4+ at the knees and ankles, and there is sustained clonus at both ankles",
@@ -788,6 +793,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "복합 경구피임약과 갈리는 것은 나이 35세 이상 × 흡연 15개비/일 이상의 조합 — 저용량이어도 에스트로겐이 있는 한 4등급이다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "37세 여자",
@@ -923,6 +929,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "The tachycardia invites a beta blocker, but beta blockade before alpha blockade leaves alpha-mediated vasoconstriction unopposed; the order is alpha first, beta second",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "scheduled for laparoscopic adrenalectomy in 3 weeks because of a pheochromocytoma",
@@ -1065,6 +1072,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "An ordinary postoperative DVT would get enoxaparin, but the timing and magnitude of the platelet fall identify heparin as the cause, and low-molecular-weight heparin cross-reacts with the antibody",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "a platelet count of 71,000/mm3; the platelet count on the day of surgery was 236,000/mm3",
@@ -1206,6 +1214,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "생검을 기다리는 선택과 갈리는 것은 일과성 시력 소실 — 영구 실명의 전조이므로 치료가 먼저이고, 생검은 치료 후 2주 안에 해도 진단 가치가 유지된다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "어제부터 오른눈이 몇 분간 흐려졌다가 돌아오는 일이 두 번 있었다",
@@ -1348,6 +1357,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Pneumatic dilation treats confirmed achalasia; nothing yet excludes pseudoachalasia from a junctional tumor, which weight loss and an 8-month course make a real possibility",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "progressive difficulty swallowing both solids and liquids",
@@ -1483,6 +1493,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "The pupil is mid-dilated and fixed with an intraocular pressure of 52 mm Hg, whereas uveitis gives a small sluggish pupil with flare and normal or low pressure",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "Intraocular pressure is 52 mm Hg in the right eye",
@@ -1621,6 +1632,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "The stem identifies a podocyte transmembrane protein of the immunoglobulin superfamily, not a secreted basement-membrane collagen — a slit-diaphragm defect leaks protein massively, whereas the collagen IV defect of Alport syndrome leaks red cells",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: strong brown staining of every glomerular tuft along the capillary loops",
@@ -1754,6 +1766,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "영상의 종괴효과(측뇌실 앞뿔 압박·중격 편위) — 뇌탈출 위험 때문에 요추천자를 배제하고, 발열·목 경직·CRP 상승이 없어 수막염 자체도 의심되지 않는다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: 오른쪽 이마엽-섬엽의 경계가 불분명한 저신호 병변, 회백질 경계와 고랑 소실",
@@ -1897,6 +1910,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "The image is specified as post-gadolinium — methemoglobin would be bright on the pre-contrast T1 as well, whereas barrier breakdown produces brightness only after contrast",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: ring- and nodule-shaped bright signal within lesions in the right frontal deep white matter, right periventricular region, and near the left ventricular atrium",
@@ -2035,6 +2049,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "병변의 분포와 염증 지표 — 한 엽의 균질한 경화와 백혈구·프로칼시토닌 상승이 아니라 양측 미만성 음영에 백혈구 정상·림프구 감소·프로칼시토닌 0.08 이다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: 양쪽 폐야 전반, 특히 중·하부와 폐문 주위의 미만성 반점상·그물결절 음영",
@@ -2179,6 +2194,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "보조 검사 기준 6개(빈혈·혈소판 증가·저알부민혈증·ALT 상승·백혈구 증가·무균농뇨)를 모두 만족 — 3개 이상이면 심초음파 결과는 치료 시작 조건이 아니다",
    "steps": 4,
+   "chain": [],
    "key": [
     {
      "item": "6일 전부터 39℃ 이상의 열이 계속",
@@ -2322,6 +2338,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "The patient is volume-depleted (dry mucous membranes, tachycardia, low blood pressure) — restoring flow with crystalloid protects the tubules, whereas a loop diuretic before volume repletion worsens perfusion",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "creatine kinase of 68,000 U/L",
@@ -2461,6 +2478,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Susceptibility is pending and the setting is a prosthesis — methicillin resistance must be assumed and rifampin is required for biofilm, so nafcillin-based therapy waits for the susceptibility report",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "mechanical aortic valve replacement 7 months ago",
@@ -2600,6 +2618,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "APL 의 조기 사망은 응고장애 출혈이고 ATRA 는 분화 유도제라 오진이어도 해가 적다 — 유전자검사 결과를 기다리는 며칠이 치명적이다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "일부 세포에는 아우어소체가 다발로 들어 있다",
@@ -2740,6 +2759,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "복수 다형핵 백혈구 ≥ 250/mm³ 자체가 진단 기준이다 — 배양은 절반이 음성이고 그람염색은 더 둔감하므로 결과를 기다리지 않는다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "다형핵 백혈구 620/mm³",
@@ -2880,6 +2900,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "Fluctuant postauricular swelling and displacement of the auricle — the infection has breached the mastoid cortex, so oral step-up therapy for otitis media no longer applies",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "tenderness, erythema, and fluctuant swelling over the right mastoid process",
@@ -3020,6 +3041,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "염색의 위치 — 콜로이드 전체가 균질하게 갈색이다. 갑상샘과산화효소라면 정단막을 따라 얇은 선으로만 염색되고 내강은 비어 보인다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: 여포 내강의 콜로이드가 균질하게 강한 갈색으로 염색됨",
@@ -3158,6 +3180,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "압통의 위치 — 손목 관절선 1 cm 근위의 요골 성장판 위에 국한된 뚜렷한 점 압통은 염좌가 아니라 방사선학적으로 보이지 않는 성장판 골절을 뜻한다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: open distal radial and ulnar physes, normal carpal alignment, no cortical break, buckle, physeal widening, or periosteal reaction",
@@ -3297,6 +3320,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "소기준을 세면 6개다 — 인공호흡기·승압제가 필요하지 않아도 소기준 3개 이상이면 병동이 아니라 중환자실이다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: patchy multilobar opacities in the right mid and lower zones and the left perihilar region, no large effusion or pneumothorax",
@@ -3445,6 +3469,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "모낭 개구부 주위의 비대칭 색소·마름모 구조·회색 과립이 없다 — 악성흑자는 모낭을 중심으로 색소가 비대칭으로 쌓인다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: 균질한 옅은 갈색 색소침착, 미세하고 규칙적인 그물·지문 모양 무늬",
@@ -3583,6 +3608,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "문항이 묻는 분모 — 「초대해야 하는 사람 수」는 무작위배정된 초대군 전체를 분모로 하므로 참여율 70% 로 보정하지 않는다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "대장암 사망은 초대군 320명, 비초대군 400명",
@@ -3713,6 +3739,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "신경근 소견과 시간 경과 — 과반사·지속성 발목 간대성 경련·안구 간대성 경련이 약물 추가 48시간 안에 생겼다. 신경이완제 악성증후군은 수일에 걸쳐 납관형 강직·반사저하로 나타나고 동공은 정상이다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "Two days ago she was started on linezolid",
@@ -3858,6 +3885,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "6일 지난 벽 있는 농양 — 이 시기의 즉시 절제는 유착된 장 손상·회맹장절제 확대·누공이 많고, 국소 반동압통·유리 공기 없음·안정된 혈역학은 응급 수술 적응이 아니다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "6일 전부터 시작된 오른쪽 아랫배 통증",
@@ -3998,6 +4026,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "두통·두피 압통·턱 파행·시각 증상이 없고 측두동맥이 정상 — 거대세포동맥염이 없으므로 40~60 mg 이 아니라 12.5~25 mg 이다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "pain and stiffness in both shoulders and hips for 6 weeks",
@@ -4143,6 +4172,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "거미혈관종·복수·혈소판 68,000·INR 1.9 의 간경변 — 출혈의 동력이 문맥압이므로 위산 억제보다 혈관수축제와 항생제가 먼저다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "알코올 간경변",
@@ -4283,6 +4313,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "「brown-stained cells 에 직접 작용」— 메트포르민은 간세포에서 포도당신생을 줄이지 베타세포에 작용하지 않는다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: exocrine acinar tissue negative (blue counterstain), compact cluster of strongly brown cells at the lower right",
@@ -4422,6 +4453,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "영상의 골막 신생골(치유 진행)과 「3주 전」 — 가골이 자리 잡은 성장판 골절을 힘으로 정복하면 성장판을 다시 다친다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: 원위 요골 골간단 골절선이 성장판까지 이어지고 삼각형 골간단 조각이 골단에 붙어 있다",
@@ -4560,6 +4592,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "회질·백질 대비의 방향 — FLAIR 도 뇌척수액이 검지만 회질이 백질보다 밝고, 여기서는 백질이 더 밝다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: cerebrospinal fluid in the lateral ventricles and sulci is dark",
@@ -4693,6 +4726,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "하대정맥이 가늘고 호흡에 따라 잘 허탈되며 좌심실 수축이 정상 — 혈관이 비어 있으니 승압제보다 수액이 먼저다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: 양쪽 폐야의 미만성 흐린 간유리·반점상 음영, 기흉·큰 흉수 없음",
@@ -4837,6 +4871,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "의식 저하(기면)와 콩팥기능 저하 — 식염수만으로는 36시간 안에 농도를 낮추지 못하고 만성 중독의 신경독성은 영구화된다",
    "steps": 4,
+   "chain": [],
    "key": [
     {
      "item": "혈청 리튬 3.4 mEq/L(치료 범위 0.6~1.2)",
@@ -4982,6 +5017,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "64세(> 50)와 당뇨 — Listeria 는 어떤 세팔로스포린에도 내성이라 암피실린을 더해야 한다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "leukocyte count 2,100/mm3 (88% neutrophils)",
@@ -5122,6 +5158,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "분열적혈구·LDH 1,450·간접 빌리루빈 우세 — 혈소판이 미세혈관 혈전에 소모되는 중이라 수혈하면 혈전이 커진다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "말초혈액도말에서 분열적혈구가 고배율 시야당 5~6개",
@@ -5266,6 +5303,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "산통이 지속통으로 바뀐 것과 반발압통·근육강직·젖산 상승 — 단순 폐색에는 없는 장 허혈·복막 자극의 징후",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "6시간 전부터 오른쪽 아랫배가 계속 아프다",
@@ -5399,6 +5437,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "경증(장기부전·괴사·저류 없음)이고 이미 호전 — 지연 수술은 중증·괴사성 췌장염의 원칙이며, 경증에서 기다리면 재발 위험 17 % 를 떠안는다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "Serum lipase is 2,400 U/L",
@@ -5539,6 +5578,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "PaO2/FiO2 ≤ 100 인 양측 폐 음영에서 아직 통기되는 폐는 작다 — 혈액가스를 정상화하려는 큰 일회호흡량은 그 폐를 과팽창시킨다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "영상: multifocal patchy and nodular opacities in both lungs without effusion or pneumothorax",
@@ -5678,6 +5718,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "영상에서 정맥굴 내부가 가장자리까지 균일하게 밝다 — 혈전이면 중심이 어둡고 벽만 증강되는 empty delta 가 된다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: thin, smooth, uniformly bright midline line formed by the falx and the completely filled superior sagittal sinus",
@@ -5821,6 +5862,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "영상에서 반대쪽 피질이 이어져 있고 전위·각형성이 없다 — 정복할 변형이 없다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: 원위 요골 골간단 척측 피질의 국소 융기와 골간단을 가로지르는 희미한 경화선",
@@ -5950,6 +5992,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "영상의 퇴행 구조(회갈색 과립·흉터양 백색 영역) — 염증성 양성 병변으로 보이지만 같은 그림을 퇴행 흑색종이 그린다",
    "steps": 2,
+   "chain": [],
    "key": [
     {
      "item": "영상: 분홍 배경 위 경계 불명확한 회갈색 과립과 반점(peppering)",
@@ -6083,6 +6126,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "분모가 「환자」인가 「검사 양성자」인가 — 80 % 는 환자 중 양성(민감도)이고, 물음은 양성 중 환자(예측도)다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "민감도 80%",
@@ -6213,6 +6257,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "고혈압의 원인은 α1 수용체 혈관수축이다 — β-차단제를 먼저 주면 β2 혈관확장이 사라져 α 자극이 대항 없이 남아 고혈압 위기가 온다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "Plasma free metanephrine concentration is 4.2 nmol/L",
@@ -6348,6 +6393,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "중증 기준 하나라도 있으면 정맥 투여 — 혼동·저혈압 환자는 경구 약을 흡수·유지할 수 없고 사망 위험이 높다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "Plasmodium falciparum with a parasite density of 8%",
@@ -6493,6 +6539,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "중심정맥관 삽입 부위에 발적이나 압통이 없고 혈압이 정상이다 — 반코마이신 초기 추가의 적응이 없다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "절대호중구수 120/mm³",
@@ -6633,6 +6680,7 @@ window.IMAGING_QUESTIONS = [
    ],
    "discriminator": "폐쇄 부위가 총담관(지름 14 mm 확장·황달)이고 담낭벽 비후가 없다 — 담낭을 떼어도 담관 압력은 내려가지 않는다",
    "steps": 3,
+   "chain": [],
    "key": [
     {
      "item": "오한을 동반한 발열",

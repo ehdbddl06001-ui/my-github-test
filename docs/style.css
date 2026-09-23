@@ -349,6 +349,12 @@ button.small{padding:6px 10px; font-size:.85rem}
 .triage-head{font-weight:700; margin-bottom:6px}
 .triage-head .tg-target{font-weight:400; font-size:.82rem; color:var(--muted, #9aa4b2); margin-left:6px}
 .triage-sum .k{font-weight:700; margin-right:6px}
+.triage-chain{margin-top:6px}
+.triage-chain .k{font-weight:700; display:block}
+.triage-chain ol{margin:4px 0 0 1.2em; padding:0}
+.rt{border:1px solid var(--line); border-radius:10px; padding:8px 12px; margin:8px 0 14px}
+.rt-steps{margin-top:8px}
+.rt-steps input{width:6em}
 .triage-more{margin-top:8px}
 .triage-more > summary{cursor:pointer; color:#fcd34d; font-size:.9rem}
 .triage .tg{margin:8px 0 2px}

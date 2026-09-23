@@ -11,6 +11,13 @@
   touch  — 정리본이 **이미 있는** 목표에서 새로 틀린 보기가 그 정리본의 `pitfalls[].covers` 에 없을 때.
            새 정리본을 쓰지 않고 혼동 항목 하나를 더하거나 고치는 **가벼운 손질**만 한다(2026-09-22 —
            정리본이 쌓이면 대부분의 오답은 이쪽이 된다).
+  variant — 정리본이 있는 목표에서 **틀린 문항마다 변형 2개**(of: <문항>)가 아직 없을 때(2026-09-23 사용자 채택 —
+           「오답 → 변형 문항 → 간격을 두고 다시 출제」). 하나는 결정적 단서를 바꿔 답이 바뀌고(flip: true —
+           문항 design.switch 가 씨앗), 하나는 겉모습만 바꾸고 답은 그대로(flip: false). 앱 「오늘 다시 풀 것」이
+           예정일(learning_log.schedule)에 이 변형을 먼저 낸다 — 그래서 예정일이 이른 것부터 준다.
+  dist   — 내가 **실제로 고른 오답 보기**에 문항의 `distractors.<보기>` 설명이 없을 때. 그 보기 하나의 설명
+           (왜 그럴듯한가·왜 정답이 먼저인가·가르는 소견·그 보기가 맞는 경우)을 문항에 더한다(선지 보정 —
+           고른 보기만. 영상 문항은 빌더 파생물이라 제외).
   gap    — 오답과 무관하게 **기본틀(content/outline/subjects.yaml)에서 아직 비어 있는 자리**.
            오답 큐가 비었을 때 커리큘럼 순서대로 한 칸씩 채우라고 내놓는다(2026-09-21 추가).
            이미 단원이 있는 책만 대상으로 하고, 그 책의 해리슨 서술 순서에서 앞쪽 빈 슬롯부터 준다.
@@ -78,16 +85,22 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     questions = load_questions()
     from_note = wrongnote_events(wrongnote or {}, events)
     events = list(events) + from_note
-    S = ll.states(events, {q: m.get("objective") for q, m in questions.items() if m.get("objective")})
+    obj_of = {q: m.get("objective") for q, m in questions.items() if m.get("objective")}
+    S = ll.states(events, obj_of)
+    sched = ll.schedule(events, obj_of)
     notes: list[dict] = []
+    variants: list[dict] = []
+    dists: list[dict] = []
     touches: list[dict] = []
     links: dict[tuple[str, str], dict] = {}
     for key, s in S.items():
         if not s.status or not s.wrongs:
             continue
+        dists.extend(_dists(s, questions))
         if s.objective:
             if s.objective in concepts:
                 touches.extend(_touches(s, concepts[s.objective], questions))
+                variants.extend(_variants(s, concepts[s.objective], questions, (sched.get(key) or {}).get("due", "")))
                 continue                                  # 정리본이 이미 있다 — 새 혼동만 손질 대상으로
             q = next((questions[q] for q in s.qids if q in questions), {})
             notes.append({"objective": s.objective, "topic": str(q.get("topic", "")),
@@ -106,8 +119,13 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     gaps = _gaps(concepts, questions, S)
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
-    return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches, "gap": gaps,
+    variants.sort(key=lambda x: (x["due"] or "9999", -x["priority"], x["qid"]))
+    seen_d: set[str] = set()
+    dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
+    return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches,
+            "variant": variants, "dist": dists, "gap": gaps,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
+                       "variant": len(variants), "dist": len(dists),
                        "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
                        "from_wrongnote": len(from_note)}}
 
@@ -132,6 +150,41 @@ def _touches(s, concept: dict, questions: dict) -> list[dict]:
             continue
         seen.add(key)
         out.append({"objective": concept.get("id"), "title": str(concept.get("title", "")), "cover": key,
+                    "chosen": ch.get("text", ""), "answer": ch.get("answer", ""), "day": ch.get("day", "")})
+    return out
+
+
+def _variants(s, concept: dict, questions: dict, due: str) -> list[dict]:
+    """틀린 문항마다 of 가 그 문항인 변형이 2개 미만이면 한 줄."""
+    have: dict[str, int] = {}
+    for v in concept.get("variants") or []:
+        if isinstance(v, dict) and v.get("of"):
+            have[str(v["of"])] = have.get(str(v["of"]), 0) + 1
+    out = []
+    for qid in s.wrong_qids:
+        q = questions.get(qid or "")
+        if not q or "#" in str(qid) or have.get(qid, 0) >= 2:
+            continue                                  # 사라진 문항·변형 자체의 오답·이미 둘 있음
+        d = q.get("design") if isinstance(q.get("design"), dict) else {}
+        out.append({"objective": concept.get("id"), "qid": qid, "exam": str(q.get("type", "")), "have": have.get(qid, 0),
+                    "need": 2 - have.get(qid, 0), "due": due, "priority": s.priority,
+                    "seed": "design.switch" if isinstance(d.get("switch"), dict) else ("design.discriminator" if d.get("discriminator") else "해설")})
+    return out
+
+
+def _dists(s, questions: dict) -> list[dict]:
+    """고른 오답 보기에 distractors 설명이 없는 KMLE·USMLE 문항."""
+    out = []
+    for ch in s.chosen:
+        qid = ch.get("qid") or ""
+        q = questions.get(qid)
+        if not q or str(q.get("type")) not in ("kmle", "usmle"):
+            continue
+        L = _letter(q, ch.get("text", ""))
+        dist = q.get("distractors") if isinstance(q.get("distractors"), dict) else {}
+        if not L or L == str(q.get("answer", "")).strip().upper()[:1] or L in dist:
+            continue
+        out.append({"key": f"{qid}:{L}", "qid": qid, "letter": L, "path": q.get("path", ""),
                     "chosen": ch.get("text", ""), "answer": ch.get("answer", ""), "day": ch.get("day", "")})
     return out
 
@@ -179,16 +232,18 @@ def main(argv: list[str]) -> int:
     q = build(events, None if a.no_wrongnote else load_wrong_notes(Path(a.wrong_sync) if a.wrong_sync else WRONG_SYNC))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
-    note, link, touch, gap = q["note"], q["link"], q["touch"], q["gap"]
+    note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
     if a.limit:
-        note, link, touch, gap = note[:a.limit], link[:a.limit], touch[:a.limit], gap[:a.limit]
+        note, link, touch, var, dist, gap = (x[:a.limit] for x in (note, link, touch, var, dist, gap))
     if a.json:
-        print(json.dumps({"note": note, "link": link, "touch": touch, "gap": gap, "counts": q["counts"]}, ensure_ascii=False, indent=1))
+        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "gap": gap,
+                          "counts": q["counts"]}, ensure_ascii=False, indent=1))
         return 0
     if not events and not q["counts"]["from_wrongnote"]:
         print("학습 기록이 없다 — 앱의 「학습 기록 내보내기」가 드라이브 수신함에 들어왔는지 본다(동기화 미설정이면 정상).")
     print(f"정리본 대기(note) {q['counts']['note']}건 · 목표 연결 대기(link) {q['counts']['link']}건 · "
-          f"손질 대기(touch) {q['counts']['touch']}건 · "
+          f"손질 대기(touch) {q['counts']['touch']}건 · 변형 대기(variant) {q['counts']['variant']}건 · "
+          f"오답 보기 설명 대기(dist) {q['counts']['dist']}건 · "
           f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개 · "
           f"오답 목록에서 채운 오답 {q['counts']['from_wrongnote']}건")
     for n in note:
@@ -197,6 +252,10 @@ def main(argv: list[str]) -> int:
         print(f"  [link] {l['topic']}/{l['subtopic']}  오답 {l['wrongs']}회 · 우선순위 {l['priority']} · 문항 {', '.join(l['questions'][:4])}")
     for t in touch:
         print(f"  [touch] {t['objective']}  새 혼동 {t['cover']} 「{str(t['chosen'])[:30]}」 → 정답 「{str(t['answer'])[:30]}」")
+    for v in var:
+        print(f"  [variant] {v['objective']}  문항 {v['qid']} 변형 {v['need']}개 더 · 예정일 {v['due'] or '-'} · 씨앗 {v['seed']}")
+    for d in dist:
+        print(f"  [dist] {d['qid']} 보기 {d['letter']} 「{str(d['chosen'])[:30]}」 설명 없음 · {d['path']}")
     if not note and not link and not touch:
         for g in gap:
             print(f"  [gap]  {g['book']} {g['slot']}  {g['title']}  {g['source']}")
