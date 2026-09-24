@@ -286,8 +286,29 @@
    "date": "2026-09-21",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0112": {
+   "id": "imaging-2026-0112",
+   "exam": "imaging",
+   "subject": "병리·조직학",
+   "step": "Step 2",
+   "type": "병리·조직 — 고환 종양의 면역조직화학",
+   "style": "usmle_style",
+   "modality": "HISTOLOGY_IHC",
+   "question": "Which of the following is the most likely diagnosis?",
+   "chosen": 1,
+   "chosenText": "Diffuse large B-cell lymphoma",
+   "answer": 0,
+   "answerText": "Seminoma",
+   "coreNote": "",
+   "differ": "",
+   "decision": "The tumor cells are uniform clear cells in sheets that do not stain for CD3, while small CD3-positive T lymphocytes line the fibrous septa — the host response of seminoma. A normal AFP and only mildly raised hCG in a 39-year-old man support seminoma over nonseminomatous tumors and lymphoma.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260923T202503Z_일일영상_2026-09-24_10units_10q_905ded44",
+   "date": "2026-09-24",
+   "device": "android-9buhos",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-23T10:01:27.111Z"
+ "updated": "2026-09-24T10:48:50.433Z"
 }
