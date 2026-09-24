@@ -1659,6 +1659,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0112.jpg",
    "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
