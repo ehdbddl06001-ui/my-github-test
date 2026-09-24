@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2883,
+  "total": 2884,
   "byType": {
    "kmle": 1131,
+   "anatomy": 736,
    "usmle": 162,
-   "anatomy": 735,
    "paper": 651,
    "imaging": 111,
    "concept": 76,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 735,
+   "Anatomy": 736,
    "Cardiology": 212,
    "Nephrology": 174,
    "Infectious Disease": 154,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1915,
+   "high": 1916,
    "medium": 919,
    "low": 49
   },
@@ -756,6 +756,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1131.md",
    "snippet": "81세 남자가 이틀 전부터 반복되는 어지럼과 오늘 아침 잠깐 정신을 잃고 쓰러진 일로 응급실에 왔다. 지금은 식은땀을 흘리고 묻는 말에 대답이 느리다. 고혈압으로 암로디핀만 복용하며 베타차단제·디곡신·비다이하이드로피리딘 칼슘통로차단제는 복용하지 않는다. 흉통은 없다. 도착 직후 찍은 심전도는 그림과 같다. 정맥로를 확보하고 아트로핀 1 mg 을 3–5분 간격으로 총 3 mg 투여했으나 맥박과 혈압은 변하지 않았다. 활력징후와 ",
    "text": "Cardiology Symptomatic Degenerative Complete AV Block Unresponsive to Atropine — Transcutaneous Pacing as Bridge complete-av-block bradycardia atropine-refractory transcutaneous-pacing acls ecg KMLE 2026 / Claude Routine 81세 남자가 이틀 전부터 반복되는 어지럼과 오늘 아침 잠깐 정신을 잃고 쓰러진 일로 응급실에 왔다. 지금은 식은땀을 흘리고 묻는 말에 대답이 느리다. 고혈압으로 암로디핀만 복용하며 베타차단제·디곡신·비다이하이드로피리딘 칼슘통로차단제는 복용하지 않는다. 흉통은 없다. 도착 직후 찍은 심전도는 그림과 같다. 정맥로를 확보하고 아트로핀 1 mg 을 3–5분 간격으로 총 3 mg 투여했으나 맥박과 혈압은 변하지 않았다. 활력징후와 검사 소견은 자료와 같다. 다음 처치로 가장 적절한 것은? A. 경피 심박조율 시작 B. 아트로핀 추가 정맥 투여 C. 영구 심박조율기 즉시 삽입 D. 아미오다론 정맥 투여 E. 동기화 심장율동전환 시행 P파와 QRS가 서로 무관하게 뛰는 완전 방실차단에 저혈압·실신·의식 저하가 동반된 불안정 서맥이다. 아트로핀을 최대량(3 mg)까지 썼으나 반응이 없으므로, 즉시 경피 심박조율(또는 도파민·에피네프린 지속 주입)로 심박을 확보하고 경정맥 임시 심박조율을 거쳐 영구 심박조율기로 이어 간다. 칼륨·트로포닌·TSH 정상과 서맥 유발 약물 부재는 교정 가능한 원인의 가능성을 낮추어 고령의 퇴행성 전도계 질환을 시사한다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-25",
+   "type": "anatomy",
+   "unit": "등·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-25",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/anatomy/daily/2026-09-25.md",
+   "snippet": "오늘의 학습 (2026 09 25 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 15일 · Tagging 2까지 24일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-25 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 25 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 15일 · Tagging 2까지 24일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0175",
