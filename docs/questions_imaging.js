@@ -2,6 +2,1537 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0116",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "산과 — 분만 중 산모 발열과 태아빈맥",
+  "type": "산과 — 분만 중 산모 발열과 태아빈맥",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "40주 경산부(34세)가 규칙적인 진통으로 입원하였다. 입원 20시간 전에 양막이 파수되었다. 자궁경부는 6 cm 열려 있다. 입원 후 산모의 체온이 38.6℃ 로 올랐고 맥박은 112회/분, 혈압은 118/72 mmHg 이다. 자궁저부를 누르면 압통이 있고 질 분비물에서 악취가 난다. 백혈구는 17,800/mm³ 이다. 임신 중 B군 사슬알균 선별검사는 음성이었고 약물 알레르기는 없다. 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 기록 끝부분의 끊긴 신호는 탐촉자 위치가 벗어난 것으로 확인되어 다시 붙였다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "옥시토신 투여 중단",
+   "산모 좌측위와 수액 볼루스만 시행",
+   "태아 두피 pH 측정",
+   "암피실린과 겐타마이신 정주",
+   "응급 제왕절개술"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 태아심박동 기록의 기저 심박수는 약 160~170회/분으로 태아빈맥이고, 변이도는 약 5회/분 정도로 최소~경도이며, 가속은 없다. 수축은 2~2.5분 간격으로 규칙적이고 반복 후기감속이나 심한 변이성 감속은 없다(끝부분은 인공물). 범주 II 기록이다. 파막 20시간, 산모 발열 38.6℃, 산모 빈맥, 자궁 압통, 악취 나는 분비물, 백혈구 증가, 태아빈맥이 모두 있어 양수내 감염(융모양막염)이다. 치료는 즉시 광범위 항생제(암피실린 + 겐타마이신)와 해열제이며, 감염 자체는 제왕절개의 적응증이 아니므로 태아 상태를 감시하며 분만을 진행한다.\n- 원리: <b>태아빈맥은 태아가 무언가에 반응한다는 신호다.</b> 기저 태아심박수는 교감·부교감 신경의 균형으로 정해지는데, <b>산모 발열</b>이 있으면 태아 체온이 산모보다 약 0.5~1℃ 더 높게 올라가 대사 요구가 늘고, <b>양수내 감염</b>의 염증 사이토카인이 태아 심박을 직접 끌어올린다. 그래서 분만 중 새로 생긴 태아빈맥(160회/분 이상)은 저산소증보다 <b>감염·발열</b>을 먼저 생각하게 한다. 변이도가 줄어든 것도 발열·감염에서 흔하다.<br> <b>양수내 감염</b>은 파막 뒤 질의 세균(대장균·B군 사슬알균·혐기균 등)이 양막강으로 올라가 생긴다. 진단은 산모 발열(≥39℃ 한 번 또는 38~38.9℃ 가 반복)에 <b>태아빈맥·산모 백혈구 증가·자궁경부의 화농성 분비물</b> 중 하나 이상이 더해지면 내린다. 그람음성균과 사슬알균을 함께 덮도록 <b>암피실린 + 겐타마이신</b>을 쓰고(제왕절개를 하게 되면 혐기균을 위해 클린다마이신이나 메트로니다졸 추가), 해열제로 태아의 대사 부담을 줄인다.<br> <b>분만 방식은 산과적 적응증으로 정한다</b> — 감염은 제왕절개 적응증이 아니다. 기록이 범주 III(변이도 소실 + 반복 후기·변이성 감속 또는 서맥, 사인파형)으로 가지 않는 한 항생제를 주며 질식분만을 진행하는 것이 표준이다(이 증례의 실제 분만도 Apgar 9점으로 끝났다).\n- 비교: <table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:40%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>암피실린 + 겐타마이신(정답)</b></td><td><b>산모 발열 + 태아빈맥·백혈구 증가·화농성 분비물 → 양수내 감염</b></td><td><b>38.6℃, 태아 기저 160~170/분, 백혈구 17,800, 악취 분비물</b></td></tr> <tr><td>응급 제왕절개술(가장 가까운 오답)</td><td>범주 III 기록(변이도 소실 + 반복 후기감속·서맥·사인파형) 또는 산과적 적응증</td><td>범주 II — 반복 감속·서맥 없음, 끝부분은 인공물</td></tr> <tr><td>옥시토신 중단</td><td>과다자궁수축(10분에 5회 초과)이나 그에 따른 감속</td><td>수축 10분에 4~5회, 감속 없음</td></tr> <tr><td>좌측위·수액만</td><td>저혈압·체위성 압박으로 인한 일시적 감속</td><td>원인(감염)을 치료하지 않는다</td></tr> <tr><td>태아 두피 pH</td><td>애매한 기록에서 산증 확인(현재 거의 쓰지 않음)</td><td>태아빈맥의 원인이 이미 설명된다</td></tr> </tbody></table> <b>가장 가까운 오답은 응급 제왕절개술</b>이다 — 태아빈맥과 줄어든 변이도는 「태아 곤란」처럼 보인다. 갈림길은 <b>기록의 범주와 원인</b>이다. 원인이 설명되는 범주 II 면 원인을 치료하며 분만을 진행하고, 범주 III 로 넘어가면 즉시 분만한다.\n- 오답 이유:\n  - ① 옥시토신 중단은 수축이 너무 잦아 태아 산소 공급이 줄 때 하는 처치라 태아감시 이상에서 떠올릴 수 있다. 이 기록의 수축은 10분에 4~5회이고 감속이 없다. 수축이 10분에 6회 이상이면서 후기감속이 반복되었다면 이 선지가 정답이다.\n  - ② 좌측위와 수액 볼루스는 대정맥 압박이나 경막외마취 후 저혈압으로 생긴 감속을 되돌리는 자궁 내 소생술이다. 이 산모는 혈압이 정상이고 문제의 원인은 감염이라 이것만으로는 부족하다. 경막외마취 직후 저혈압과 함께 감속이 생겼다면 정답이 된다.\n  - ③ 태아 두피 pH 측정은 애매한 기록에서 태아 산증을 확인하려는 검사지만 지금은 거의 쓰지 않고, 이 증례는 발열과 감염으로 태아빈맥이 설명된다. 원인을 모르는 범주 II 기록이 이어져 산증 여부가 분만 결정에 필요한 드문 상황이라면 선택지가 될 수 있다.\n  - ⑤ 응급 제왕절개술은 태아빈맥과 최소 변이도를 태아 곤란으로 읽으면 떠오르지만, 반복 후기감속·서맥·사인파형이 없는 범주 II 기록이고 원인(양수내 감염)이 설명된다. 감염만으로는 제왕절개 적응증이 아니다. 변이도가 사라지고 반복 후기감속이나 지속 서맥이 나타났다면 정답이 된다.\n- 함정: 태아빈맥 = 태아 곤란 = 제왕절개로 곧바로 잇지 않는다. 산모 발열이 있으면 먼저 감염을 치료하고, 수술 여부는 기록의 범주로 정한다.\n- 학습목표: 분만 중 산모 발열과 태아심박동 기록의 태아빈맥(기저 160회/분 이상)·최소 변이도를 읽어 양수내 감염(융모양막염)으로 판단하고, 범주 II 기록에서 즉시 제왕절개가 아니라 광범위 항생제와 해열제를 투여하며 분만을 진행한다\n- 근거·출처: CTU-UHB Intrapartum CTG Database record 1224 (PhysioNet, ODC-BY 1.0), 40–50 min window; teacher-only outcome: pH 7.33, Apgar 9/9 · 작성자 판독(2026-09-25): 기저 약 160~170/분, 변이도 약 5/분, 가속 없음, 수축 2~2.5분 간격, 49분 이후 신호 소실·인공물 · ACOG Committee Opinion No. 712: Intrapartum management of intraamniotic infection. Obstet Gynecol 2017;130:e95 · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring — three-tier interpretation system\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1224 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "태아심박동 기록의 기저 심박수는 약 160~170회/분으로 태아빈맥이고, 변이도는 약 5회/분 정도로 최소~경도이며, 가속은 없다. 수축은 2~2.5분 간격으로 규칙적이고 반복 후기감속이나 심한 변이성 감속은 없다(끝부분은 인공물). 범주 II 기록이다. 파막 20시간, 산모 발열 38.6℃, 산모 빈맥, 자궁 압통, 악취 나는 분비물, 백혈구 증가, 태아빈맥이 모두 있어 양수내 감염(융모양막염)이다. 치료는 즉시 광범위 항생제(암피실린 + 겐타마이신)와 해열제이며, 감염 자체는 제왕절개의 적응증이 아니므로 태아 상태를 감시하며 분만을 진행한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>태아빈맥은 태아가 무언가에 반응한다는 신호다.</b> 기저 태아심박수는 교감·부교감 신경의 균형으로 정해지는데, <b>산모 발열</b>이 있으면 태아 체온이 산모보다 약 0.5~1℃ 더 높게 올라가 대사 요구가 늘고, <b>양수내 감염</b>의 염증 사이토카인이 태아 심박을 직접 끌어올린다. 그래서 분만 중 새로 생긴 태아빈맥(160회/분 이상)은 저산소증보다 <b>감염·발열</b>을 먼저 생각하게 한다. 변이도가 줄어든 것도 발열·감염에서 흔하다.<br> <b>양수내 감염</b>은 파막 뒤 질의 세균(대장균·B군 사슬알균·혐기균 등)이 양막강으로 올라가 생긴다. 진단은 산모 발열(≥39℃ 한 번 또는 38~38.9℃ 가 반복)에 <b>태아빈맥·산모 백혈구 증가·자궁경부의 화농성 분비물</b> 중 하나 이상이 더해지면 내린다. 그람음성균과 사슬알균을 함께 덮도록 <b>암피실린 + 겐타마이신</b>을 쓰고(제왕절개를 하게 되면 혐기균을 위해 클린다마이신이나 메트로니다졸 추가), 해열제로 태아의 대사 부담을 줄인다.<br> <b>분만 방식은 산과적 적응증으로 정한다</b> — 감염은 제왕절개 적응증이 아니다. 기록이 범주 III(변이도 소실 + 반복 후기·변이성 감속 또는 서맥, 사인파형)으로 가지 않는 한 항생제를 주며 질식분만을 진행하는 것이 표준이다(이 증례의 실제 분만도 Apgar 9점으로 끝났다)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">처치</th><th style=\"width:40%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>암피실린 + 겐타마이신(정답)</b></td><td><b>산모 발열 + 태아빈맥·백혈구 증가·화농성 분비물 → 양수내 감염</b></td><td><b>38.6℃, 태아 기저 160~170/분, 백혈구 17,800, 악취 분비물</b></td></tr> <tr><td>응급 제왕절개술(가장 가까운 오답)</td><td>범주 III 기록(변이도 소실 + 반복 후기감속·서맥·사인파형) 또는 산과적 적응증</td><td>범주 II — 반복 감속·서맥 없음, 끝부분은 인공물</td></tr> <tr><td>옥시토신 중단</td><td>과다자궁수축(10분에 5회 초과)이나 그에 따른 감속</td><td>수축 10분에 4~5회, 감속 없음</td></tr> <tr><td>좌측위·수액만</td><td>저혈압·체위성 압박으로 인한 일시적 감속</td><td>원인(감염)을 치료하지 않는다</td></tr> <tr><td>태아 두피 pH</td><td>애매한 기록에서 산증 확인(현재 거의 쓰지 않음)</td><td>태아빈맥의 원인이 이미 설명된다</td></tr> </tbody></table> <b>가장 가까운 오답은 응급 제왕절개술</b>이다 — 태아빈맥과 줄어든 변이도는 「태아 곤란」처럼 보인다. 갈림길은 <b>기록의 범주와 원인</b>이다. 원인이 설명되는 범주 II 면 원인을 치료하며 분만을 진행하고, 범주 III 로 넘어가면 즉시 분만한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 옥시토신 중단은 수축이 너무 잦아 태아 산소 공급이 줄 때 하는 처치라 태아감시 이상에서 떠올릴 수 있다. 이 기록의 수축은 10분에 4~5회이고 감속이 없다. 수축이 10분에 6회 이상이면서 후기감속이 반복되었다면 이 선지가 정답이다.\n② 좌측위와 수액 볼루스는 대정맥 압박이나 경막외마취 후 저혈압으로 생긴 감속을 되돌리는 자궁 내 소생술이다. 이 산모는 혈압이 정상이고 문제의 원인은 감염이라 이것만으로는 부족하다. 경막외마취 직후 저혈압과 함께 감속이 생겼다면 정답이 된다.\n③ 태아 두피 pH 측정은 애매한 기록에서 태아 산증을 확인하려는 검사지만 지금은 거의 쓰지 않고, 이 증례는 발열과 감염으로 태아빈맥이 설명된다. 원인을 모르는 범주 II 기록이 이어져 산증 여부가 분만 결정에 필요한 드문 상황이라면 선택지가 될 수 있다.\n⑤ 응급 제왕절개술은 태아빈맥과 최소 변이도를 태아 곤란으로 읽으면 떠오르지만, 반복 후기감속·서맥·사인파형이 없는 범주 II 기록이고 원인(양수내 감염)이 설명된다. 감염만으로는 제왕절개 적응증이 아니다. 변이도가 사라지고 반복 후기감속이나 지속 서맥이 나타났다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "태아빈맥 = 태아 곤란 = 제왕절개로 곧바로 잇지 않는다. 산모 발열이 있으면 먼저 감염을 치료하고, 수술 여부는 기록의 범주로 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 산모 발열과 태아심박동 기록의 태아빈맥(기저 160회/분 이상)·최소 변이도를 읽어 양수내 감염(융모양막염)으로 판단하고, 범주 II 기록에서 즉시 제왕절개가 아니라 광범위 항생제와 해열제를 투여하며 분만을 진행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "CTU-UHB Intrapartum CTG Database record 1224 (PhysioNet, ODC-BY 1.0), 40–50 min window; teacher-only outcome: pH 7.33, Apgar 9/9 · 작성자 판독(2026-09-25): 기저 약 160~170/분, 변이도 약 5/분, 가속 없음, 수축 2~2.5분 간격, 49분 이후 신호 소실·인공물 · ACOG Committee Opinion No. 712: Intrapartum management of intraamniotic infection. Obstet Gynecol 2017;130:e95 · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring — three-tier interpretation system ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1224 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "분만 중 산모 발열·자궁 압통·백혈구 증가와 태아빈맥이 있으면 양수내 감염이므로 광범위 항생제를 투여하고, 범주 II 기록이므로 분만을 진행한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "응급 제왕절개는 범주 III 기록이나 산과적 적응증에서 한다 — 이 기록은 반복 감속·서맥이 없는 범주 II 다",
+   "steps": 3,
+   "chain": [
+    "파형: 기저 160~170/분·최소 변이도·가속 없음·반복 감속 없음 → 태아빈맥의 범주 II 기록",
+    "산모 발열·자궁 압통·악취 분비물·백혈구 증가 → 태아빈맥의 원인은 양수내 감염",
+    "감염은 제왕절개 적응증이 아니다 → 암피실린 + 겐타마이신을 주며 분만 진행"
+   ],
+   "key": [
+    {
+     "item": "파형: 기저 태아심박수 약 160~170회/분에 변이도 최소~경도",
+     "why": "태아빈맥 — 발열·감염에 대한 태아 반응",
+     "also": []
+    },
+    {
+     "item": "산모의 체온이 38.6℃",
+     "why": "양수내 감염 진단의 필수 요소",
+     "also": []
+    },
+    {
+     "item": "자궁저부를 누르면 압통",
+     "why": "양수내 감염의 보조 소견",
+     "also": []
+    },
+    {
+     "item": "백혈구는 17,800",
+     "why": "산모 백혈구 증가",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "파형: 반복 후기감속·서맥 없음",
+     "why": "범주 III 가 아니다 — 즉시 분만의 근거가 약하다",
+     "also": []
+    },
+    {
+     "item": "끊긴 신호는 탐촉자 위치가 벗어난 것",
+     "why": "끝부분 하강은 서맥이 아니라 인공물",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "약물 알레르기는 없다",
+     "why": "암피실린을 그대로 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "입원 20시간 전에 양막이 파수",
+     "why": "상행 감염의 위험 인자 — 진단 자체는 발열과 동반 소견으로 한다",
+     "also": []
+    },
+    {
+     "item": "B군 사슬알균 선별검사는 음성",
+     "why": "항생제 선택을 바꾸지 않는다 — 암피실린이 GBS 와 장내 세균을 함께 덮는다",
+     "also": []
+    }
+   ],
+   "summary": "태아심박동 기록은 기저 160~170회/분의 태아빈맥에 변이도가 줄었지만 반복 감속이 없는 범주 II 이고, 산모 발열·자궁 압통·백혈구 증가가 있어 양수내 감염이다. 암피실린과 겐타마이신을 주며 분만을 진행하고, 범주 III 로 바뀔 때 즉시 분만한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "기록의 변이도가 사라지고 매 수축마다 후기감속이 반복되거나 지속 서맥이 나타났다면 응급 제왕절개술이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0116.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 40~50분 구간; 3 cm/분, 세로선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1224_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1224"
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0115",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "신경 — 진행성 편마비 고령 환자의 뇌 MRI",
+  "type": "신경 — 진행성 편마비 고령 환자의 뇌 MRI",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "A 73-year-old man is brought to the physician by his wife because of progressive weakness of his left arm and leg over the past 4 weeks. During this period, he has had morning headaches and has become more forgetful. Yesterday he had a generalized tonic-clonic seizure lasting 1 minute. He has hypertension treated with amlodipine. He has not had fever, recent infection, or head trauma, and he is not immunocompromised. His temperature is 36.8°C and blood pressure is 146/84 mmHg. Examination shows mild left hemiparesis and a left pronator drift. CT of the chest, abdomen, and pelvis shows no mass. An axial precontrast T1-weighted MRI of the brain is shown. Postcontrast images show a thick, irregular rim of enhancement surrounding a central non-enhancing area within the right frontal and insular white matter.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Acute ischemic infarction",
+   "Pyogenic brain abscess",
+   "Primary CNS lymphoma",
+   "Chronic subdural hematoma",
+   "Glioblastoma"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: On the precontrast T1-weighted image, the white matter of the right frontal and insular region is lower in signal than the opposite side, the overlying sulci are effaced, and the right frontal horn of the lateral ventricle is narrowed — an intra-axial mass with mass effect. There is no crescentic extra-axial collection. Postcontrast images show a thick, irregular rim of enhancement around a central necrotic area. In a 73-year-old man with 4 weeks of progressive hemiparesis, headache, cognitive change, and a new seizure, with no fever, no immunocompromise, and no primary tumor on body CT, the most likely diagnosis is glioblastoma (IDH-wildtype), the most common malignant primary brain tumor in older adults.\n- 원리: <b>Glioblastoma grows fast enough to outstrip its blood supply.</b> Tumor cells induce abnormal, leaky vessels (VEGF-driven microvascular proliferation), so gadolinium escapes where the blood-brain barrier is broken and the viable tumor at the periphery <b>enhances as a thick, irregular rim</b>. The center, starved of oxygen, becomes <b>necrotic</b> (pseudopalisading necrosis on histology) and does not enhance. Infiltrating cells and vasogenic edema extend into the surrounding white matter, which is why T1 shows a region of low signal and <b>mass effect</b> — sulcal effacement and a compressed ventricle.<br> <b>Time course separates it from stroke.</b> An infarct produces its maximal deficit within minutes to hours, conforms to an arterial territory, and does not compress the ventricle for weeks; subacute infarcts enhance in a gyriform pattern, not as a thick ring. An <b>abscess</b> also enhances as a ring, but the wall is thin and smooth, often thinner toward the ventricle, and the center shows restricted diffusion; fever or a source is usual. <b>Primary CNS lymphoma</b> is so densely cellular that it enhances homogeneously and restricts diffusion, typically periventricular or callosal; ring enhancement suggests lymphoma mainly in immunocompromised patients. Body CT without a primary makes a solitary metastasis less likely.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Glioblastoma (answer)</th><th>Pyogenic brain abscess (closest rival)</th></tr></thead><tbody> <tr><td>Ring</td><td><b>Thick, irregular, nodular</b></td><td>Thin, smooth, often thinner on the ventricular side</td></tr> <tr><td>Center on DWI</td><td>Necrosis — usually no restricted diffusion</td><td><b>Pus — marked restricted diffusion</b></td></tr> <tr><td>Clinical setting</td><td><b>Older adult, weeks of progressive deficit, seizure, no fever</b></td><td>Fever, sinus or dental source, endocarditis, immunosuppression</td></tr> <tr><td>Why</td><td>Viable rim of neovascular tumor around hypoxic necrosis</td><td>Collagen capsule formed by the host around a liquefied center</td></tr> </tbody></table> <b>The closest rival is a pyogenic abscess</b> because both are ring-enhancing masses with mass effect. The ring's thickness and the clinical setting separate them here; diffusion-weighted imaging (restricted in an abscess) settles the rest.\n- 오답 이유:\n  - (A) Acute ischemic infarction comes to mind because the right frontal-insular region is in the middle cerebral artery territory and he has left hemiparesis. But the deficit developed over 4 weeks with headache and a seizure, and the lesion compresses the ventricle and enhances as a thick ring. A sudden onset of deficit with gyriform enhancement confined to that territory would make this correct.\n  - (B) Pyogenic brain abscess also forms a ring-enhancing lesion with edema and can cause seizures. It usually has a thin, smooth wall, and the patient typically has fever or a source such as sinusitis, dental infection, or endocarditis. With fever, a thin-walled ring, and restricted diffusion in the center, this would be the answer.\n  - (C) Primary CNS lymphoma is a malignant intra-axial mass in older adults, so it is a reasonable consideration. In immunocompetent patients it enhances homogeneously and often lies against the ventricles or corpus callosum, without central necrosis. A homogeneously enhancing periventricular mass that shrinks with corticosteroids would make this correct.\n  - (D) Chronic subdural hematoma causes progressive hemiparesis and cognitive decline in older adults and is often missed. It appears as a crescent-shaped extra-axial collection over the convexity, which is absent on this image. A crescentic collection following the inner table after a minor fall would make this the answer.\n- 함정: Left hemiparesis with a right MCA-territory lesion is not automatically a stroke — a 4-week progressive course and mass effect point to a tumor.\n- 학습목표: 수주에 걸친 진행성 편측 증상의 고령 환자 뇌 MRI 에서 한쪽 반구 축내 종괴 효과를 읽고, 두꺼운 불규칙 고리 조영증강·중심 괴사 설명과 합쳐 교모세포종으로 진단하며 축외 병변·뇌경색·농양·림프종과 구별한다\n- 근거·출처: TCIA UPENN-GBM (CC BY 4.0) — 73 M precontrast T1 axial, pathology-confirmed glioblastoma cohort; teacher-only · 작성자 판독(2026-09-25): 환자 우측 전두-섬엽 백질 저신호, 고랑 얕아짐, 같은 쪽 측뇌실 앞뿔 좁아짐, 축외 액체 저류 없음 · Louis DN et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro Oncol 2021;23:1231 · Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — glioblastoma vs abscess vs lymphoma\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …98465845 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On the precontrast T1-weighted image, the white matter of the right frontal and insular region is lower in signal than the opposite side, the overlying sulci are effaced, and the right frontal horn of the lateral ventricle is narrowed — an intra-axial mass with mass effect. There is no crescentic extra-axial collection. Postcontrast images show a thick, irregular rim of enhancement around a central necrotic area. In a 73-year-old man with 4 weeks of progressive hemiparesis, headache, cognitive change, and a new seizure, with no fever, no immunocompromise, and no primary tumor on body CT, the most likely diagnosis is glioblastoma (IDH-wildtype), the most common malignant primary brain tumor in older adults."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Glioblastoma grows fast enough to outstrip its blood supply.</b> Tumor cells induce abnormal, leaky vessels (VEGF-driven microvascular proliferation), so gadolinium escapes where the blood-brain barrier is broken and the viable tumor at the periphery <b>enhances as a thick, irregular rim</b>. The center, starved of oxygen, becomes <b>necrotic</b> (pseudopalisading necrosis on histology) and does not enhance. Infiltrating cells and vasogenic edema extend into the surrounding white matter, which is why T1 shows a region of low signal and <b>mass effect</b> — sulcal effacement and a compressed ventricle.<br> <b>Time course separates it from stroke.</b> An infarct produces its maximal deficit within minutes to hours, conforms to an arterial territory, and does not compress the ventricle for weeks; subacute infarcts enhance in a gyriform pattern, not as a thick ring. An <b>abscess</b> also enhances as a ring, but the wall is thin and smooth, often thinner toward the ventricle, and the center shows restricted diffusion; fever or a source is usual. <b>Primary CNS lymphoma</b> is so densely cellular that it enhances homogeneously and restricts diffusion, typically periventricular or callosal; ring enhancement suggests lymphoma mainly in immunocompromised patients. Body CT without a primary makes a solitary metastasis less likely."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Glioblastoma (answer)</th><th>Pyogenic brain abscess (closest rival)</th></tr></thead><tbody> <tr><td>Ring</td><td><b>Thick, irregular, nodular</b></td><td>Thin, smooth, often thinner on the ventricular side</td></tr> <tr><td>Center on DWI</td><td>Necrosis — usually no restricted diffusion</td><td><b>Pus — marked restricted diffusion</b></td></tr> <tr><td>Clinical setting</td><td><b>Older adult, weeks of progressive deficit, seizure, no fever</b></td><td>Fever, sinus or dental source, endocarditis, immunosuppression</td></tr> <tr><td>Why</td><td>Viable rim of neovascular tumor around hypoxic necrosis</td><td>Collagen capsule formed by the host around a liquefied center</td></tr> </tbody></table> <b>The closest rival is a pyogenic abscess</b> because both are ring-enhancing masses with mass effect. The ring's thickness and the clinical setting separate them here; diffusion-weighted imaging (restricted in an abscess) settles the rest."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Acute ischemic infarction comes to mind because the right frontal-insular region is in the middle cerebral artery territory and he has left hemiparesis. But the deficit developed over 4 weeks with headache and a seizure, and the lesion compresses the ventricle and enhances as a thick ring. A sudden onset of deficit with gyriform enhancement confined to that territory would make this correct.\n(B) Pyogenic brain abscess also forms a ring-enhancing lesion with edema and can cause seizures. It usually has a thin, smooth wall, and the patient typically has fever or a source such as sinusitis, dental infection, or endocarditis. With fever, a thin-walled ring, and restricted diffusion in the center, this would be the answer.\n(C) Primary CNS lymphoma is a malignant intra-axial mass in older adults, so it is a reasonable consideration. In immunocompetent patients it enhances homogeneously and often lies against the ventricles or corpus callosum, without central necrosis. A homogeneously enhancing periventricular mass that shrinks with corticosteroids would make this correct.\n(D) Chronic subdural hematoma causes progressive hemiparesis and cognitive decline in older adults and is often missed. It appears as a crescent-shaped extra-axial collection over the convexity, which is absent on this image. A crescentic collection following the inner table after a minor fall would make this the answer."
+   },
+   {
+    "k": "함정",
+    "v": "Left hemiparesis with a right MCA-territory lesion is not automatically a stroke — a 4-week progressive course and mass effect point to a tumor."
+   },
+   {
+    "k": "학습목표",
+    "v": "수주에 걸친 진행성 편측 증상의 고령 환자 뇌 MRI 에서 한쪽 반구 축내 종괴 효과를 읽고, 두꺼운 불규칙 고리 조영증강·중심 괴사 설명과 합쳐 교모세포종으로 진단하며 축외 병변·뇌경색·농양·림프종과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA UPENN-GBM (CC BY 4.0) — 73 M precontrast T1 axial, pathology-confirmed glioblastoma cohort; teacher-only · 작성자 판독(2026-09-25): 환자 우측 전두-섬엽 백질 저신호, 고랑 얕아짐, 같은 쪽 측뇌실 앞뿔 좁아짐, 축외 액체 저류 없음 · Louis DN et al. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro Oncol 2021;23:1231 · Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — glioblastoma vs abscess vs lymphoma ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …98465845 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "A thick irregular ring-enhancing intra-axial mass with mass effect in an afebrile older adult with weeks of progressive deficit and a seizure is glioblastoma",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "An abscess has a thin smooth wall with fever or an infectious source; here the ring is thick and irregular and there is no fever",
+   "steps": 3,
+   "chain": [
+    "영상: right frontal-insular low T1 signal with sulcal effacement and a narrowed frontal horn, no extra-axial collection → intra-axial mass",
+    "4 weeks of progressive weakness with headache and a seizure → a growing lesion, not an infarct",
+    "thick irregular rim enhancement, no fever, no primary on body CT → glioblastoma over abscess and metastasis"
+   ],
+   "key": [
+    {
+     "item": "영상: right frontal-insular white matter low signal with effaced sulci and a narrowed right frontal horn",
+     "why": "Intra-axial mass with mass effect",
+     "also": []
+    },
+    {
+     "item": "progressive weakness of his left arm and leg over the past 4 weeks",
+     "why": "Subacute progression — tumor rather than infarct",
+     "also": []
+    },
+    {
+     "item": "a thick, irregular rim of enhancement surrounding a central non-enhancing area",
+     "why": "Viable tumor rim around necrosis",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: no crescentic extra-axial collection",
+     "why": "Makes subdural hematoma less likely",
+     "also": []
+    },
+    {
+     "item": "He has not had fever",
+     "why": "Makes abscess less likely",
+     "also": []
+    },
+    {
+     "item": "he is not immunocompromised",
+     "why": "Makes ring-enhancing lymphoma or opportunistic infection less likely",
+     "also": []
+    },
+    {
+     "item": "CT of the chest, abdomen, and pelvis shows no mass",
+     "why": "Makes a solitary metastasis less likely",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "generalized tonic-clonic seizure",
+     "why": "Cortical irritation from a mass — common but not specific",
+     "also": []
+    }
+   ],
+   "summary": "The precontrast T1 image shows an intra-axial right frontal-insular mass with mass effect, and postcontrast images show a thick irregular rim around necrosis. With weeks of progression, no fever, and no primary elsewhere, glioblastoma is most likely; an abscess would have a thin wall and an infectious setting.",
+   "switch": {
+    "choice": "B",
+    "condition": "If he had a fever and a recent dental infection, and the ring were thin and smooth with restricted diffusion in the center, a pyogenic abscess would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0115.png",
+   "caption": "Axial T1-weighted MRI of the brain before contrast, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.149661151351296133163682154226898465845",
+   "asset_id": "TCIA-UPENN_GBM-13460695053520",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …98465845"
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0114",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "호흡기 — 산소 요구가 늘어나는 코로나19 폐렴의 호흡 보조",
+  "type": "호흡기 — 산소 요구가 늘어나는 코로나19 폐렴의 호흡 보조",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-24",
+  "vignette": "A 49-year-old man is admitted to the hospital with a 7-day history of fever, dry cough, and progressive shortness of breath. A nasopharyngeal swab is positive for SARS-CoV-2 by PCR. He has been receiving dexamethasone since admission. Over the past 6 hours, his oxygen requirement has increased, and his oxygen saturation is now 88% on 6 L/min of oxygen by nasal cannula. His temperature is 38.2°C, pulse is 104/min, respirations are 28/min, and blood pressure is 128/78 mmHg. He is alert and speaking in full sentences. Crackles are heard at both lung bases. Arterial blood gas analysis shows pH 7.46, PaCO2 33 mmHg, and PaO2 56 mmHg. A portable chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous furosemide",
+   "Bedside bronchoscopy with lavage",
+   "High-flow nasal cannula oxygen",
+   "Immediate endotracheal intubation",
+   "Needle decompression of the chest"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The portable chest x-ray shows patchy bilateral ground-glass and consolidative opacities in the perihilar regions and lower zones, without pneumothorax, a large pleural effusion, or cavitation; ECG leads and cables overlie the chest. With a positive SARS-CoV-2 PCR, this is worsening COVID-19 pneumonia with acute hypoxemic respiratory failure. He is alert, protecting his airway, and not hypercapnic (PaCO2 33 mmHg) or in shock, so the next step is to escalate noninvasive support with high-flow nasal cannula oxygen, which improves oxygenation and reduces the need for intubation compared with conventional oxygen. Intubation is reserved for failure of noninvasive support, altered mental status, exhaustion, or hemodynamic instability.\n- 원리: <b>High-flow nasal cannula (HFNC)</b> delivers heated, humidified gas at 30–60 L/min with an FiO2 up to 1.0. Because the flow exceeds the patient's peak inspiratory flow, room air is not entrained and the delivered FiO2 is close to the set value — unlike a 6 L/min nasal cannula, whose true FiO2 falls as the respiratory rate and tidal flow rise. High flow also <b>washes out nasopharyngeal dead space</b> (lowering the work of breathing) and generates a small positive end-expiratory pressure that helps recruit alveoli.<br> In COVID-19 pneumonia the defect is <b>shunt and ventilation-perfusion mismatch</b> from alveolar filling, so the first need is more oxygen and some recruitment, not ventilation — the PaCO2 is low because the patient hyperventilates. Guidelines (NIH, SSC, WHO) recommend HFNC over conventional oxygen and over noninvasive positive-pressure ventilation when conventional oxygen fails, with <b>awake prone positioning</b> as an adjunct.<br> <b>Intubation</b> is indicated when the airway is unprotected, consciousness falls, hypercapnia or acidosis develops, the patient tires, shock appears, or HFNC fails (a falling ROX index). Delaying intubation in a patient who is failing is harmful, which is why an HFNC trial must be closely monitored. The chest x-ray matters here because pneumothorax (barotrauma) and large effusions are treatable causes of sudden worsening that change the answer.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>High-flow nasal cannula (answer)</b></td><td><b>Hypoxemia despite low-flow O2, alert, protecting the airway, no hypercapnia or shock</b></td><td><b>SpO2 88% on 6 L, alert, PaCO2 33, BP 128/78</b></td></tr> <tr><td>Immediate intubation (closest rival)</td><td>Altered mental status, exhaustion, rising PaCO2 or acidosis, shock, failure of HFNC/NIV</td><td>Alert, speaking in full sentences, respiratory alkalosis</td></tr> <tr><td>Needle decompression</td><td>Tension pneumothorax — absent breath sounds, hypotension, tracheal shift</td><td>No pneumothorax on the x-ray, normotensive</td></tr> <tr><td>IV furosemide</td><td>Cardiogenic pulmonary edema — cardiomegaly, vascular redistribution, effusions</td><td>Normal heart size, patchy peripheral-basal opacities of infection</td></tr> <tr><td>Bronchoscopy with lavage</td><td>Suspected alternative pathogen or lobar collapse from mucus plugging</td><td>Diagnosis confirmed by PCR, no lobar collapse</td></tr> </tbody></table> <b>The closest rival is immediate intubation</b>, suggested by SpO2 88% and a respiratory rate of 28. The dividing line is <b>mental status, CO2, and hemodynamics</b>: with all three preserved, escalate noninvasive oxygen first and intubate if it fails.\n- 오답 이유:\n  - (A) Intravenous furosemide treats cardiogenic pulmonary edema, which can also cause bilateral opacities and hypoxemia. Here the heart size is normal, the opacities are patchy and basal-perihilar with PCR-proven infection, and there is no edema or jugular venous distension. In a patient with cardiomegaly, pleural effusions, and volume overload, it would be correct.\n  - (B) Bronchoscopy with lavage is used to look for an alternative pathogen or to clear an obstructing mucus plug. The pathogen is already confirmed by PCR, and bronchoscopy transiently worsens hypoxemia and aerosolizes virus. With lobar collapse from mucus plugging on the x-ray, it would be reasonable.\n  - (D) Immediate endotracheal intubation is tempting because he is hypoxemic and tachypneic, but he is alert, not hypercapnic (PaCO2 33 mmHg), and hemodynamically stable. Early intubation of such patients does not improve outcomes. If he became confused, his PaCO2 rose, or HFNC failed to improve his oxygenation, intubation would be correct.\n  - (E) Needle decompression treats tension pneumothorax, a recognized cause of sudden deterioration in patients with COVID-19. The x-ray shows no pneumothorax and he is normotensive with bilateral crackles. With absent breath sounds on one side, hypotension, and a visible pleural line, this would be the answer.\n- 함정: Hypoxemia alone is not an indication for intubation. Check mental status, CO2, and blood pressure first.\n- 학습목표: 코로나19 폐렴에서 저유량 산소에도 저산소혈증이 진행하지만 의식이 명료하고 과탄산혈증·쇼크가 없으면 즉시 기관삽관보다 고유량 비강 캐뉼라 산소를 먼저 적용하고, 흉부 X선에서 기흉·큰 흉수를 배제한다\n- 근거·출처: TCIA COVID-19-AR (CC BY 4.0) — 49 M portable AP chest radiograph, bilateral opacities (collection-level label, Grade B); teacher-only · 작성자 판독(2026-09-25): 양측 폐문 주위·하폐야 반점상 간유리·경화 음영, 흉수·기흉·공동 없음, 심장 크기 정상 범위, 심전도 전극·케이블 · Frat JP et al. High-flow oxygen through nasal cannula in acute hypoxemic respiratory failure (FLORALI). N Engl J Med 2015;372:2185 · NIH COVID-19 Treatment Guidelines — oxygenation and ventilation for adults (HFNC preferred over NIV when conventional oxygen fails) · Surviving Sepsis Campaign: guidelines on the management of adults with COVID-19 in the ICU (2021)\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …05460207 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The portable chest x-ray shows patchy bilateral ground-glass and consolidative opacities in the perihilar regions and lower zones, without pneumothorax, a large pleural effusion, or cavitation; ECG leads and cables overlie the chest. With a positive SARS-CoV-2 PCR, this is worsening COVID-19 pneumonia with acute hypoxemic respiratory failure. He is alert, protecting his airway, and not hypercapnic (PaCO2 33 mmHg) or in shock, so the next step is to escalate noninvasive support with high-flow nasal cannula oxygen, which improves oxygenation and reduces the need for intubation compared with conventional oxygen. Intubation is reserved for failure of noninvasive support, altered mental status, exhaustion, or hemodynamic instability."
+   },
+   {
+    "k": "원리",
+    "v": "<b>High-flow nasal cannula (HFNC)</b> delivers heated, humidified gas at 30–60 L/min with an FiO2 up to 1.0. Because the flow exceeds the patient's peak inspiratory flow, room air is not entrained and the delivered FiO2 is close to the set value — unlike a 6 L/min nasal cannula, whose true FiO2 falls as the respiratory rate and tidal flow rise. High flow also <b>washes out nasopharyngeal dead space</b> (lowering the work of breathing) and generates a small positive end-expiratory pressure that helps recruit alveoli.<br> In COVID-19 pneumonia the defect is <b>shunt and ventilation-perfusion mismatch</b> from alveolar filling, so the first need is more oxygen and some recruitment, not ventilation — the PaCO2 is low because the patient hyperventilates. Guidelines (NIH, SSC, WHO) recommend HFNC over conventional oxygen and over noninvasive positive-pressure ventilation when conventional oxygen fails, with <b>awake prone positioning</b> as an adjunct.<br> <b>Intubation</b> is indicated when the airway is unprotected, consciousness falls, hypercapnia or acidosis develops, the patient tires, shock appears, or HFNC fails (a falling ROX index). Delaying intubation in a patient who is failing is harmful, which is why an HFNC trial must be closely monitored. The chest x-ray matters here because pneumothorax (barotrauma) and large effusions are treatable causes of sudden worsening that change the answer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>High-flow nasal cannula (answer)</b></td><td><b>Hypoxemia despite low-flow O2, alert, protecting the airway, no hypercapnia or shock</b></td><td><b>SpO2 88% on 6 L, alert, PaCO2 33, BP 128/78</b></td></tr> <tr><td>Immediate intubation (closest rival)</td><td>Altered mental status, exhaustion, rising PaCO2 or acidosis, shock, failure of HFNC/NIV</td><td>Alert, speaking in full sentences, respiratory alkalosis</td></tr> <tr><td>Needle decompression</td><td>Tension pneumothorax — absent breath sounds, hypotension, tracheal shift</td><td>No pneumothorax on the x-ray, normotensive</td></tr> <tr><td>IV furosemide</td><td>Cardiogenic pulmonary edema — cardiomegaly, vascular redistribution, effusions</td><td>Normal heart size, patchy peripheral-basal opacities of infection</td></tr> <tr><td>Bronchoscopy with lavage</td><td>Suspected alternative pathogen or lobar collapse from mucus plugging</td><td>Diagnosis confirmed by PCR, no lobar collapse</td></tr> </tbody></table> <b>The closest rival is immediate intubation</b>, suggested by SpO2 88% and a respiratory rate of 28. The dividing line is <b>mental status, CO2, and hemodynamics</b>: with all three preserved, escalate noninvasive oxygen first and intubate if it fails."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intravenous furosemide treats cardiogenic pulmonary edema, which can also cause bilateral opacities and hypoxemia. Here the heart size is normal, the opacities are patchy and basal-perihilar with PCR-proven infection, and there is no edema or jugular venous distension. In a patient with cardiomegaly, pleural effusions, and volume overload, it would be correct.\n(B) Bronchoscopy with lavage is used to look for an alternative pathogen or to clear an obstructing mucus plug. The pathogen is already confirmed by PCR, and bronchoscopy transiently worsens hypoxemia and aerosolizes virus. With lobar collapse from mucus plugging on the x-ray, it would be reasonable.\n(D) Immediate endotracheal intubation is tempting because he is hypoxemic and tachypneic, but he is alert, not hypercapnic (PaCO2 33 mmHg), and hemodynamically stable. Early intubation of such patients does not improve outcomes. If he became confused, his PaCO2 rose, or HFNC failed to improve his oxygenation, intubation would be correct.\n(E) Needle decompression treats tension pneumothorax, a recognized cause of sudden deterioration in patients with COVID-19. The x-ray shows no pneumothorax and he is normotensive with bilateral crackles. With absent breath sounds on one side, hypotension, and a visible pleural line, this would be the answer."
+   },
+   {
+    "k": "함정",
+    "v": "Hypoxemia alone is not an indication for intubation. Check mental status, CO2, and blood pressure first."
+   },
+   {
+    "k": "학습목표",
+    "v": "코로나19 폐렴에서 저유량 산소에도 저산소혈증이 진행하지만 의식이 명료하고 과탄산혈증·쇼크가 없으면 즉시 기관삽관보다 고유량 비강 캐뉼라 산소를 먼저 적용하고, 흉부 X선에서 기흉·큰 흉수를 배제한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "TCIA COVID-19-AR (CC BY 4.0) — 49 M portable AP chest radiograph, bilateral opacities (collection-level label, Grade B); teacher-only · 작성자 판독(2026-09-25): 양측 폐문 주위·하폐야 반점상 간유리·경화 음영, 흉수·기흉·공동 없음, 심장 크기 정상 범위, 심전도 전극·케이블 · Frat JP et al. High-flow oxygen through nasal cannula in acute hypoxemic respiratory failure (FLORALI). N Engl J Med 2015;372:2185 · NIH COVID-19 Treatment Guidelines — oxygenation and ventilation for adults (HFNC preferred over NIV when conventional oxygen fails) · Surviving Sepsis Campaign: guidelines on the management of adults with COVID-19 in the ICU (2021) ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …05460207 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Worsening hypoxemia from COVID-19 pneumonia in an alert, normocapnic, hemodynamically stable patient calls for high-flow nasal cannula oxygen before intubation",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "Intubation is for altered mental status, hypercapnia, shock, or failure of noninvasive support — none is present",
+   "steps": 3,
+   "chain": [
+    "영상: bilateral patchy opacities without pneumothorax or effusion + PCR positive → COVID-19 pneumonia without a mechanical complication",
+    "SpO2 88% on 6 L/min with PaO2 56 mmHg → acute hypoxemic respiratory failure needing escalation",
+    "alert, PaCO2 33 mmHg, BP normal → noninvasive escalation (HFNC) rather than intubation"
+   ],
+   "key": [
+    {
+     "item": "영상: patchy bilateral ground-glass and consolidative opacities in the perihilar regions and lower zones",
+     "why": "COVID-19 pneumonia",
+     "also": []
+    },
+    {
+     "item": "oxygen saturation is now 88% on 6 L/min of oxygen by nasal cannula",
+     "why": "Failure of low-flow oxygen — escalation is needed",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: no pneumothorax or large pleural effusion",
+     "why": "Makes needle decompression or drainage unnecessary",
+     "also": []
+    },
+    {
+     "item": "positive for SARS-CoV-2 by PCR",
+     "why": "Pathogen confirmed — bronchoscopy for diagnosis is unnecessary",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He is alert and speaking in full sentences",
+     "why": "Airway protected — intubation is not yet indicated",
+     "also": []
+    },
+    {
+     "item": "PaCO2 33 mmHg",
+     "why": "No hypercapnic failure",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 128/78 mmHg",
+     "why": "No shock",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has been receiving dexamethasone since admission",
+     "why": "Standard therapy already given — does not change the respiratory support choice",
+     "also": []
+    }
+   ],
+   "summary": "Bilateral patchy opacities without pneumothorax or effusion and a positive PCR mean worsening COVID-19 pneumonia. Hypoxemia on 6 L/min requires escalation, and because he is alert, normocapnic, and stable, high-flow nasal cannula comes before intubation.",
+   "switch": {
+    "choice": "D",
+    "condition": "If he became drowsy with a PaCO2 of 55 mmHg or remained hypoxemic on HFNC at 60 L/min and FiO2 1.0, immediate intubation would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0114.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1132654489087211561216505460207",
+   "asset_id": "TCIA-COVID19_AR-26007350042506",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …05460207"
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0113",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "피부 — 어릴 때부터 있던 몸통 색소 병변의 더모스코피",
+  "type": "피부 — 어릴 때부터 있던 몸통 색소 병변의 더모스코피",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-24",
+  "vignette": "40세 남자가 등에 있는 점을 확인하려고 피부과에 왔다. 이 점은 어릴 때부터 있었고, 아내가 최근 사진과 비교해 보았을 때 크기와 색이 달라지지 않았다고 한다. 가려움·출혈·궤양은 없었다. 피부암 가족력은 없고 햇볕에 심하게 탄 적도 드물다. 진찰에서 등 가운데에 지름 약 7 mm 의 타원형 갈색 반점이 있고 경계가 뚜렷하다. 다른 부위에 비슷한 점이 몇 개 있지만 이 점만 조금 크다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "선천멜라닌세포모반",
+   "표재확산흑색종",
+   "색소성 기저세포암",
+   "지루각화증",
+   "청색모반"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 더모스코피에서 병변은 좌우·위아래가 거의 대칭인 타원형이고, 색은 갈색 한 계열로 균일하며(중심이 약간 진할 뿐) 가장자리를 따라 크기가 비슷한 갈색 소구가 규칙적으로 늘어서 있다. 비정형 색소망, 청백색 베일, 퇴행 구조, 비정형 혈관, 여러 색의 혼재 같은 흑색종 소견이 없다. 어릴 때부터 있었고 변화가 없다는 병력과 소구형 양상이 맞아 선천멜라닌세포모반이 가장 가능성이 높다(이 병변은 조직검사로 확정되었다).\n- 원리: <b>더모스코피는 표피-진피 경계에서 멜라닌이 어디에, 어떤 모양으로 모였는지를 보여 준다.</b> 멜라닌세포가 표피능선을 따라 늘어서면 <b>색소망</b>, 진피-표피 경계나 진피 윗부분에서 둥지(nest)를 이루면 <b>갈색 소구</b>로 보인다. 모반은 한 가지 규칙으로 자라는 양성 증식이라 구조가 <b>대칭이고 반복적</b>이다 — 소구가 크기·색이 고르고, 가장자리까지 같은 간격으로 늘어선다.<br> <b>흑색종</b>은 여러 클론이 서로 다른 속도로 자라고 표피 안에서 위로·옆으로 퍼지기 때문에 <b>비대칭</b>, <b>여러 색(검정·청회색·붉은색·흰색)</b>, <b>비정형 망</b>, 가장자리의 <b>불규칙한 줄무늬·점</b>, 진피 섬유화에 따른 <b>퇴행 구조</b>, 진피 멜라닌과 과각화가 겹친 <b>청백색 베일</b>이 나타난다. 그래서 판독은 「무엇이 보이는가」보다 <b>「구조가 하나의 규칙을 따르는가」</b>를 먼저 본다(대칭·단색·규칙 = 양성 쪽).<br> <b>가장자리 소구</b>는 방사상으로 커지는 모반의 표지다. 어린이·젊은 성인에서는 흔하고 정상적이지만, 50세 이후 새로 커지는 병변에 있으면 흑색종을 의심하는 근거가 된다 — 그래서 이 증례에서는 「어릴 때부터 있었고 변하지 않았다」는 병력이 판독을 뒷받침한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">선천멜라닌세포모반(정답)</th><th>표재확산흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대칭</td><td><b>두 축 모두 대칭</b></td><td>한 축 이상 비대칭</td></tr> <tr><td>색</td><td><b>갈색 한 계열</b>(중심이 약간 진함)</td><td>3색 이상 — 검정·청회색·붉은색·흰색 혼재</td></tr> <tr><td>구조</td><td><b>크기가 고른 소구가 가장자리에 규칙적으로 배열</b></td><td>비정형 망, 불규칙 줄무늬·점, 청백색 베일, 퇴행 구조</td></tr> <tr><td>경과</td><td>어릴 때부터 있고 변화 없음</td><td>새로 생기거나 크기·색·모양이 변함(ABCDE 의 E)</td></tr> </tbody></table> <b>가장 가까운 오답은 표재확산흑색종</b>이다 — 성인 등에 있는 7 mm 갈색 병변이라는 점이 흑색종의 호발 부위·크기와 겹친다. 갈림길은 <b>구조의 규칙성과 경과</b>다. 대칭·단색·규칙적 소구에 변화 없는 경과면 모반, 비대칭·다색·비정형 구조에 변화가 있으면 흑색종으로 정리한다.\n- 오답 이유:\n  - ② 표재확산흑색종은 성인 몸통에 흔하고 7 mm 로 6 mm 기준을 넘어 떠올리기 쉽다. 그러나 이 병변은 대칭이고 색이 균일하며 비정형 망·청백색 베일·퇴행 구조가 없다. 병변이 최근 커지고 검은색·청회색이 섞인 비대칭 구조였다면 이 선지가 정답이다.\n  - ③ 색소성 기저세포암은 색소가 있는 결절로 보일 수 있지만 더모스코피에서 색소망 없이 나뭇가지 모양 혈관, 잎 모양 구조, 청회색 난형 둥지, 궤양이 특징이다. 햇빛 노출 부위의 진주빛 결절에 이런 구조가 보였다면 정답이 된다.\n  - ④ 지루각화증은 중년 이후 몸통에 흔한 갈색 병변이라 떠올릴 수 있으나 더모스코피에서 면포 모양 개구부, 좁쌀 모양 낭종, 뇌회 모양 고랑과 이랑이 보이고 경계가 날카롭게 붙인 듯하다. 이런 구조가 보이는 사마귀 모양 병변이었다면 정답이다.\n  - ⑤ 청색모반은 진피 깊은 곳의 멜라닌세포 때문에 더모스코피에서 구조 없는 균일한 청회색~청흑색으로 보인다. 소구나 망이 없는 균일한 푸른 병변이었다면 이 선지가 정답이 된다.\n- 함정: 성인·몸통·6 mm 초과라는 숫자만 보고 흑색종을 고르지 않는다. 더모스코피 판독은 대칭·색·구조의 규칙성을 먼저 본다.\n- 학습목표: 몸통 색소 병변의 더모스코피에서 대칭·균일한 색·가장자리의 규칙적인 갈색 소구를 읽고, 어릴 때부터 있던 병력과 합쳐 선천멜라닌세포모반으로 판단하며 흑색종의 비대칭·다색·비정형 구조와 구별한다\n- 근거·출처: ISIC Archive ISIC_0001109 (CC0) — 40 M, posterior trunk, histopathology-confirmed congenital nevus; teacher-only · 작성자 판독(2026-09-25): 대칭 타원형 갈색 병변, 색 균일, 가장자리 규칙적 갈색 소구, 비정형 망·청백색 베일·퇴행 구조 없음 · Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Marghoob AA, Braun RP, Malvehy J. Atlas of Dermoscopy, 2nd ed. — globular pattern and peripheral globules in nevi\n\n## 출처\n- ISIC Archive ISIC_0001109 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 병변은 좌우·위아래가 거의 대칭인 타원형이고, 색은 갈색 한 계열로 균일하며(중심이 약간 진할 뿐) 가장자리를 따라 크기가 비슷한 갈색 소구가 규칙적으로 늘어서 있다. 비정형 색소망, 청백색 베일, 퇴행 구조, 비정형 혈관, 여러 색의 혼재 같은 흑색종 소견이 없다. 어릴 때부터 있었고 변화가 없다는 병력과 소구형 양상이 맞아 선천멜라닌세포모반이 가장 가능성이 높다(이 병변은 조직검사로 확정되었다)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>더모스코피는 표피-진피 경계에서 멜라닌이 어디에, 어떤 모양으로 모였는지를 보여 준다.</b> 멜라닌세포가 표피능선을 따라 늘어서면 <b>색소망</b>, 진피-표피 경계나 진피 윗부분에서 둥지(nest)를 이루면 <b>갈색 소구</b>로 보인다. 모반은 한 가지 규칙으로 자라는 양성 증식이라 구조가 <b>대칭이고 반복적</b>이다 — 소구가 크기·색이 고르고, 가장자리까지 같은 간격으로 늘어선다.<br> <b>흑색종</b>은 여러 클론이 서로 다른 속도로 자라고 표피 안에서 위로·옆으로 퍼지기 때문에 <b>비대칭</b>, <b>여러 색(검정·청회색·붉은색·흰색)</b>, <b>비정형 망</b>, 가장자리의 <b>불규칙한 줄무늬·점</b>, 진피 섬유화에 따른 <b>퇴행 구조</b>, 진피 멜라닌과 과각화가 겹친 <b>청백색 베일</b>이 나타난다. 그래서 판독은 「무엇이 보이는가」보다 <b>「구조가 하나의 규칙을 따르는가」</b>를 먼저 본다(대칭·단색·규칙 = 양성 쪽).<br> <b>가장자리 소구</b>는 방사상으로 커지는 모반의 표지다. 어린이·젊은 성인에서는 흔하고 정상적이지만, 50세 이후 새로 커지는 병변에 있으면 흑색종을 의심하는 근거가 된다 — 그래서 이 증례에서는 「어릴 때부터 있었고 변하지 않았다」는 병력이 판독을 뒷받침한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">선천멜라닌세포모반(정답)</th><th>표재확산흑색종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대칭</td><td><b>두 축 모두 대칭</b></td><td>한 축 이상 비대칭</td></tr> <tr><td>색</td><td><b>갈색 한 계열</b>(중심이 약간 진함)</td><td>3색 이상 — 검정·청회색·붉은색·흰색 혼재</td></tr> <tr><td>구조</td><td><b>크기가 고른 소구가 가장자리에 규칙적으로 배열</b></td><td>비정형 망, 불규칙 줄무늬·점, 청백색 베일, 퇴행 구조</td></tr> <tr><td>경과</td><td>어릴 때부터 있고 변화 없음</td><td>새로 생기거나 크기·색·모양이 변함(ABCDE 의 E)</td></tr> </tbody></table> <b>가장 가까운 오답은 표재확산흑색종</b>이다 — 성인 등에 있는 7 mm 갈색 병변이라는 점이 흑색종의 호발 부위·크기와 겹친다. 갈림길은 <b>구조의 규칙성과 경과</b>다. 대칭·단색·규칙적 소구에 변화 없는 경과면 모반, 비대칭·다색·비정형 구조에 변화가 있으면 흑색종으로 정리한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 표재확산흑색종은 성인 몸통에 흔하고 7 mm 로 6 mm 기준을 넘어 떠올리기 쉽다. 그러나 이 병변은 대칭이고 색이 균일하며 비정형 망·청백색 베일·퇴행 구조가 없다. 병변이 최근 커지고 검은색·청회색이 섞인 비대칭 구조였다면 이 선지가 정답이다.\n③ 색소성 기저세포암은 색소가 있는 결절로 보일 수 있지만 더모스코피에서 색소망 없이 나뭇가지 모양 혈관, 잎 모양 구조, 청회색 난형 둥지, 궤양이 특징이다. 햇빛 노출 부위의 진주빛 결절에 이런 구조가 보였다면 정답이 된다.\n④ 지루각화증은 중년 이후 몸통에 흔한 갈색 병변이라 떠올릴 수 있으나 더모스코피에서 면포 모양 개구부, 좁쌀 모양 낭종, 뇌회 모양 고랑과 이랑이 보이고 경계가 날카롭게 붙인 듯하다. 이런 구조가 보이는 사마귀 모양 병변이었다면 정답이다.\n⑤ 청색모반은 진피 깊은 곳의 멜라닌세포 때문에 더모스코피에서 구조 없는 균일한 청회색~청흑색으로 보인다. 소구나 망이 없는 균일한 푸른 병변이었다면 이 선지가 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "성인·몸통·6 mm 초과라는 숫자만 보고 흑색종을 고르지 않는다. 더모스코피 판독은 대칭·색·구조의 규칙성을 먼저 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "몸통 색소 병변의 더모스코피에서 대칭·균일한 색·가장자리의 규칙적인 갈색 소구를 읽고, 어릴 때부터 있던 병력과 합쳐 선천멜라닌세포모반으로 판단하며 흑색종의 비대칭·다색·비정형 구조와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ISIC Archive ISIC_0001109 (CC0) — 40 M, posterior trunk, histopathology-confirmed congenital nevus; teacher-only · 작성자 판독(2026-09-25): 대칭 타원형 갈색 병변, 색 균일, 가장자리 규칙적 갈색 소구, 비정형 망·청백색 베일·퇴행 구조 없음 · Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Marghoob AA, Braun RP, Malvehy J. Atlas of Dermoscopy, 2nd ed. — globular pattern and peripheral globules in nevi ## 출처 ISIC Archive ISIC_0001109 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "대칭·균일한 색·가장자리의 규칙적 갈색 소구에 어릴 때부터 변화 없는 병력이면 선천멜라닌세포모반이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "흑색종은 비대칭·다색·비정형 망·청백색 베일·퇴행 구조와 최근의 변화가 있다 — 이 병변에는 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 대칭·단색·규칙적 소구 → 한 가지 규칙으로 자라는 양성 멜라닌세포 병변",
+    "어릴 때부터 있었고 크기와 색이 달라지지 않음 → 흑색종보다 선천멜라닌세포모반"
+   ],
+   "key": [
+    {
+     "item": "영상: 대칭인 타원형 병변에 갈색 한 계열의 균일한 색",
+     "why": "양성 멜라닌세포 병변의 구조",
+     "also": []
+    },
+    {
+     "item": "영상: 가장자리를 따라 크기가 고른 갈색 소구가 규칙적으로 배열",
+     "why": "모반의 소구형 양상",
+     "also": []
+    },
+    {
+     "item": "이 점은 어릴 때부터 있었고",
+     "why": "선천 병변과 맞는 경과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 비정형 망·청백색 베일·퇴행 구조 없음",
+     "why": "흑색종 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "크기와 색이 달라지지 않았다",
+     "why": "변화(E)가 없어 흑색종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "지름 약 7 mm",
+     "why": "6 mm 기준을 넘지만 크기 하나로는 흑색종을 판단하지 않는다",
+     "also": []
+    },
+    {
+     "item": "피부암 가족력은 없고",
+     "why": "위험 인자가 적다는 배경 — 판독을 대신하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "더모스코피에서 대칭·균일한 갈색·가장자리의 규칙적 소구가 보이고 흑색종 구조가 없으며, 어릴 때부터 변화 없는 병변이므로 선천멜라닌세포모반이다. 흑색종은 비대칭·다색·비정형 구조와 변화가 있다.",
+   "switch": {
+    "choice": "B",
+    "condition": "최근 1년 새 커졌고 더모스코피에서 비대칭 구조에 청회색·검은색이 섞이고 비정형 망이 보였다면 표재확산흑색종이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0113.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001109",
+   "asset_id": "ISIC-ISIC_0001109",
+   "text": "ISIC Archive ISIC_0001109 (CC-0)"
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0123",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 검진 연구의 조기발견 편향",
+  "type": "예방의학·역학·보건통계 — 검진 연구의 조기발견 편향",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-24",
+  "vignette": "한 연구자가 60~69세 남녀 20,000명을 무작위로 두 군으로 나누어 한 군에는 매년 저선량 흉부 CT 로 폐암 검진을 하고, 다른 군에는 검진을 하지 않았다. 10년 추적 동안 폐암 진단 건수는 두 군이 거의 같았고, 인구 10만 명당 폐암 사망률도 두 군이 같았다. 그러나 폐암으로 진단된 사람만 보면 진단 후 평균 생존기간이 검진군 4.8년, 대조군 2.1년이었다. 개별 환자 기록을 보면 검진군 환자는 대조군 환자보다 평균 2.7년 일찍 진단되었고, 증상이 생긴 나이와 사망한 나이는 두 군이 같았다.",
+  "question": "검진군의 생존기간이 더 긴 것을 가장 잘 설명하는 것은?",
+  "options": [
+   "자원자 편향",
+   "호손 효과",
+   "조기발견 편향",
+   "기간 편향",
+   "과잉진단"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 무작위 배정이라 두 군의 기저 특성이 같고, 폐암 진단 건수가 같아 검진으로 더 많은 암이 발견된 것도 아니다. 사망률과 사망 나이가 같은데 진단만 평균 2.7년 앞당겨졌고, 진단 후 생존기간 차이(4.8 − 2.1 = 2.7년)가 바로 그 앞당겨진 기간과 같다. 검진이 죽음을 늦추지 않고 진단 시점만 당겼기 때문에 생긴 착시이므로 조기발견 편향(lead-time bias)이다. 그래서 검진 효과는 진단 후 생존기간이 아니라 인구 사망률로 평가한다.\n- 원리: <b>생존기간은 「진단 시점」에서 재기 시작한다.</b> 병의 자연경과(발생 → 검출 가능 → 증상 → 사망)가 그대로여도, 검진으로 검출 가능 시점에 진단하면 시계가 일찍 켜져 생존기간이 늘어난 것처럼 보인다. 이 앞당겨진 구간이 <b>선행시간(lead time)</b>이고, 그만큼의 생존기간 증가는 치료 효과가 아니다. 이 증례는 생존기간 차이(2.7년)가 진단이 앞당겨진 기간(2.7년)과 정확히 같아 <b>전부가 선행시간</b>이다.<br> <b>기간 편향(length-time bias)</b>은 다르다. 일정 간격의 검진은 전임상기가 긴 — 즉 천천히 자라는 — 종양을 더 많이 잡고, 빠르게 자라는 종양은 검진 사이에 증상으로 나타난다(중간암). 그래서 검진으로 발견된 환자 집단 자체가 예후 좋은 종양으로 채워진다. <b>과잉진단</b>은 그 극단으로, 평생 증상이나 사망을 일으키지 않을 암을 찾아내는 것이라 <b>진단 건수가 늘어난다</b>. <b>자원자 편향</b>은 검진을 스스로 받는 사람이 더 건강한 것이다.<br> 세 편향은 모두 <b>진단 후 생존기간</b>을 부풀리지만 <b>인구 전체의 사망률</b>은 바꾸지 못한다. 그래서 무작위 대조시험에서 질병 특이 사망률(가능하면 전체 사망률)을 결과 지표로 삼는다. 무작위화는 자원자 편향을 없애고, 같은 진단 건수는 과잉진단을 약하게 만든다.\n- 비교: <table><thead><tr><th style=\"width:20%\">편향</th><th style=\"width:40%\">무엇이 달라지나</th><th>이 연구에서</th></tr></thead><tbody> <tr><td><b>조기발견 편향(정답)</b></td><td><b>진단 시점만 당겨짐 — 증상 나이·사망 나이·사망률 동일</b></td><td><b>2.7년 일찍 진단, 생존기간 차이도 2.7년, 사망 나이 같음</b></td></tr> <tr><td>기간 편향(가장 가까운 오답)</td><td>검진군에 천천히 자라는 종양 비율이 높아 <b>사망 나이가 늦어지는 환자가 섞임</b></td><td>사망 나이가 같다 — 종양 구성 차이 근거 없음</td></tr> <tr><td>과잉진단</td><td>검진군의 <b>진단 건수 증가</b></td><td>진단 건수가 두 군 같다</td></tr> <tr><td>자원자 편향</td><td>스스로 검진받은 사람이 더 건강</td><td>무작위 배정</td></tr> <tr><td>호손 효과</td><td>관찰받는다는 사실로 행동이 바뀜</td><td>사망률·진단 건수에 차이 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 기간 편향</b>이다 — 둘 다 「검진군 생존이 길어 보이는」 편향이다. 갈림길은 <b>무엇이 달라졌는가</b>다. 같은 환자의 진단 시점만 당겨졌으면 조기발견 편향, 검진군 환자 집단의 종양 성질(느린 종양)이 달라졌으면 기간 편향이다.\n- 오답 이유:\n  - ① 자원자 편향은 스스로 검진을 선택한 사람이 원래 더 건강해 결과가 좋아 보이는 현상이다. 이 연구는 무작위로 배정했으므로 두 군의 기저 특성이 같다. 검진을 받은 사람과 받지 않은 사람을 관찰연구로 비교했다면 이 편향이 주된 설명이 된다.\n  - ② 호손 효과는 연구 대상이라는 사실만으로 행동이 바뀌어 결과가 달라지는 현상이다. 이 연구의 차이는 진단 시점에서만 생겼고 사망률·진단 건수에는 변화가 없어 행동 변화로 설명되지 않는다. 검진군이 연구 참여 뒤 담배를 끊어 폐암 발생이 줄었다면 떠올릴 수 있는 설명이다.\n  - ④ 기간 편향은 검진이 천천히 자라는 종양을 더 많이 잡아 검진 환자군의 예후가 좋아 보이는 현상이라, 생존기간이 늘어난 이유로 가장 먼저 떠오른다. 이 연구에서는 증상 나이·사망 나이가 같고 생존 차이가 앞당겨진 기간과 정확히 같아 종양 구성의 차이를 가리키지 않는다. 검진군 암의 병기·등급이 대조군보다 뚜렷이 낮고 중간암이 대조군 암보다 빨리 사망했다면 정답이 된다.\n  - ⑤ 과잉진단은 평생 문제를 일으키지 않을 암까지 찾아내 검진군의 생존 통계를 좋게 만든다. 그러나 과잉진단이 있으면 검진군의 진단 건수가 늘어야 하는데 이 연구에서는 같다. 검진군에서 폐암 진단이 30% 더 많고 사망률은 같았다면 이 선지가 정답이다.\n- 함정: 생존기간이 늘었다고 검진이 효과 있는 것이 아니다. 사망 나이와 사망률이 같으면 진단 시점만 당겨진 것이다.\n- 학습목표: 검진군의 진단 후 생존기간만 늘고 사망 시점·사망률은 같다면 진단 시점을 앞당긴 조기발견 편향(lead-time bias)이며, 서서히 자라는 종양이 많이 잡히는 기간 편향·과잉진단과 구별한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. — evaluation of screening programs: lead-time, length-time, and overdiagnosis biases · Welch HG, Black WC. Overdiagnosis in cancer. J Natl Cancer Inst 2010;102:605 · Fletcher RH, Fletcher SW, Fletcher GS. Clinical Epidemiology: The Essentials, 6th ed. — prevention",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "무작위 배정이라 두 군의 기저 특성이 같고, 폐암 진단 건수가 같아 검진으로 더 많은 암이 발견된 것도 아니다. 사망률과 사망 나이가 같은데 진단만 평균 2.7년 앞당겨졌고, 진단 후 생존기간 차이(4.8 − 2.1 = 2.7년)가 바로 그 앞당겨진 기간과 같다. 검진이 죽음을 늦추지 않고 진단 시점만 당겼기 때문에 생긴 착시이므로 조기발견 편향(lead-time bias)이다. 그래서 검진 효과는 진단 후 생존기간이 아니라 인구 사망률로 평가한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>생존기간은 「진단 시점」에서 재기 시작한다.</b> 병의 자연경과(발생 → 검출 가능 → 증상 → 사망)가 그대로여도, 검진으로 검출 가능 시점에 진단하면 시계가 일찍 켜져 생존기간이 늘어난 것처럼 보인다. 이 앞당겨진 구간이 <b>선행시간(lead time)</b>이고, 그만큼의 생존기간 증가는 치료 효과가 아니다. 이 증례는 생존기간 차이(2.7년)가 진단이 앞당겨진 기간(2.7년)과 정확히 같아 <b>전부가 선행시간</b>이다.<br> <b>기간 편향(length-time bias)</b>은 다르다. 일정 간격의 검진은 전임상기가 긴 — 즉 천천히 자라는 — 종양을 더 많이 잡고, 빠르게 자라는 종양은 검진 사이에 증상으로 나타난다(중간암). 그래서 검진으로 발견된 환자 집단 자체가 예후 좋은 종양으로 채워진다. <b>과잉진단</b>은 그 극단으로, 평생 증상이나 사망을 일으키지 않을 암을 찾아내는 것이라 <b>진단 건수가 늘어난다</b>. <b>자원자 편향</b>은 검진을 스스로 받는 사람이 더 건강한 것이다.<br> 세 편향은 모두 <b>진단 후 생존기간</b>을 부풀리지만 <b>인구 전체의 사망률</b>은 바꾸지 못한다. 그래서 무작위 대조시험에서 질병 특이 사망률(가능하면 전체 사망률)을 결과 지표로 삼는다. 무작위화는 자원자 편향을 없애고, 같은 진단 건수는 과잉진단을 약하게 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:20%\">편향</th><th style=\"width:40%\">무엇이 달라지나</th><th>이 연구에서</th></tr></thead><tbody> <tr><td><b>조기발견 편향(정답)</b></td><td><b>진단 시점만 당겨짐 — 증상 나이·사망 나이·사망률 동일</b></td><td><b>2.7년 일찍 진단, 생존기간 차이도 2.7년, 사망 나이 같음</b></td></tr> <tr><td>기간 편향(가장 가까운 오답)</td><td>검진군에 천천히 자라는 종양 비율이 높아 <b>사망 나이가 늦어지는 환자가 섞임</b></td><td>사망 나이가 같다 — 종양 구성 차이 근거 없음</td></tr> <tr><td>과잉진단</td><td>검진군의 <b>진단 건수 증가</b></td><td>진단 건수가 두 군 같다</td></tr> <tr><td>자원자 편향</td><td>스스로 검진받은 사람이 더 건강</td><td>무작위 배정</td></tr> <tr><td>호손 효과</td><td>관찰받는다는 사실로 행동이 바뀜</td><td>사망률·진단 건수에 차이 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 기간 편향</b>이다 — 둘 다 「검진군 생존이 길어 보이는」 편향이다. 갈림길은 <b>무엇이 달라졌는가</b>다. 같은 환자의 진단 시점만 당겨졌으면 조기발견 편향, 검진군 환자 집단의 종양 성질(느린 종양)이 달라졌으면 기간 편향이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 자원자 편향은 스스로 검진을 선택한 사람이 원래 더 건강해 결과가 좋아 보이는 현상이다. 이 연구는 무작위로 배정했으므로 두 군의 기저 특성이 같다. 검진을 받은 사람과 받지 않은 사람을 관찰연구로 비교했다면 이 편향이 주된 설명이 된다.\n② 호손 효과는 연구 대상이라는 사실만으로 행동이 바뀌어 결과가 달라지는 현상이다. 이 연구의 차이는 진단 시점에서만 생겼고 사망률·진단 건수에는 변화가 없어 행동 변화로 설명되지 않는다. 검진군이 연구 참여 뒤 담배를 끊어 폐암 발생이 줄었다면 떠올릴 수 있는 설명이다.\n④ 기간 편향은 검진이 천천히 자라는 종양을 더 많이 잡아 검진 환자군의 예후가 좋아 보이는 현상이라, 생존기간이 늘어난 이유로 가장 먼저 떠오른다. 이 연구에서는 증상 나이·사망 나이가 같고 생존 차이가 앞당겨진 기간과 정확히 같아 종양 구성의 차이를 가리키지 않는다. 검진군 암의 병기·등급이 대조군보다 뚜렷이 낮고 중간암이 대조군 암보다 빨리 사망했다면 정답이 된다.\n⑤ 과잉진단은 평생 문제를 일으키지 않을 암까지 찾아내 검진군의 생존 통계를 좋게 만든다. 그러나 과잉진단이 있으면 검진군의 진단 건수가 늘어야 하는데 이 연구에서는 같다. 검진군에서 폐암 진단이 30% 더 많고 사망률은 같았다면 이 선지가 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "생존기간이 늘었다고 검진이 효과 있는 것이 아니다. 사망 나이와 사망률이 같으면 진단 시점만 당겨진 것이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "검진군의 진단 후 생존기간만 늘고 사망 시점·사망률은 같다면 진단 시점을 앞당긴 조기발견 편향(lead-time bias)이며, 서서히 자라는 종양이 많이 잡히는 기간 편향·과잉진단과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. — evaluation of screening programs: lead-time, length-time, and overdiagnosis biases · Welch HG, Black WC. Overdiagnosis in cancer. J Natl Cancer Inst 2010;102:605 · Fletcher RH, Fletcher SW, Fletcher GS. Clinical Epidemiology: The Essentials, 6th ed. — prevention"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "사망률과 사망 나이가 같고 진단만 2.7년 앞당겨졌으며 생존기간 차이도 2.7년이므로, 늘어난 생존기간은 전부 조기발견 편향이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "기간 편향은 검진군 종양 구성이 달라져 사망 나이까지 늦어지는 환자가 섞인다 — 이 연구는 사망 나이가 같다",
+   "steps": 4,
+   "chain": [
+    "무작위 배정 → 자원자 편향 배제",
+    "폐암 진단 건수가 같다 → 과잉진단 가능성 낮음",
+    "사망률·증상 나이·사망 나이가 같다 → 검진이 자연경과를 바꾸지 않았다",
+    "생존기간 차이 2.7년 = 진단이 앞당겨진 2.7년 → 조기발견 편향"
+   ],
+   "key": [
+    {
+     "item": "인구 10만 명당 폐암 사망률도 두 군이 같았다",
+     "why": "검진이 사망을 줄이지 못했다",
+     "also": []
+    },
+    {
+     "item": "평균 2.7년 일찍 진단",
+     "why": "선행시간의 크기",
+     "also": []
+    },
+    {
+     "item": "검진군 4.8년",
+     "why": "생존기간 차이 2.7년이 선행시간과 같다",
+     "also": []
+    },
+    {
+     "item": "증상이 생긴 나이와 사망한 나이는 두 군이 같았다",
+     "why": "자연경과가 같고 진단 시점만 당겨졌다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "무작위로 두 군으로 나누어",
+     "why": "자원자 편향 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "폐암 진단 건수는 두 군이 거의 같았고",
+     "why": "과잉진단 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "저선량 흉부 CT",
+     "why": "검진 방법 자체는 편향의 종류를 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "무작위 배정이고 진단 건수·사망률·사망 나이가 같은데 진단만 2.7년 앞당겨졌고 생존기간 차이도 2.7년이다. 늘어난 생존기간은 진단 시점이 당겨져 생긴 착시, 즉 조기발견 편향이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "검진군의 폐암 진단 건수가 대조군보다 30% 많고 사망률은 같았다면 과잉진단이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0122",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "소아청소년 — 비후날문협착증의 수술 전 교정",
+  "type": "소아청소년 — 비후날문협착증의 수술 전 교정",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "A 5-week-old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for the past 4 days. He is hungry immediately after vomiting. He was born at term and was breastfed without problems until this week. He has had only two wet diapers today. He appears thin and has dry mucous membranes. His pulse is 168/min and respirations are 32/min. A firm, olive-shaped mass is palpable in the epigastrium. Serum studies show sodium 132 mEq/L, potassium 2.9 mEq/L, chloride 84 mEq/L, and bicarbonate 36 mEq/L. Ultrasonography shows a pyloric muscle thickness of 5 mm and a channel length of 19 mm.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous 0.9% saline with dextrose and potassium",
+   "Immediate pyloromyotomy",
+   "Intravenous 0.45% saline without potassium",
+   "Nasogastric tube feeding of formula",
+   "Intravenous ammonium chloride"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A 5-week-old boy with projectile nonbilious vomiting, hunger after vomiting, a palpable olive, and a thickened, elongated pylorus on ultrasonography (muscle ≥ 3–4 mm, channel ≥ 15–17 mm) has hypertrophic pyloric stenosis. Repeated loss of gastric HCl has produced dehydration and hypochloremic, hypokalemic metabolic alkalosis (bicarbonate 36 mEq/L, chloride 84 mEq/L). Pyloromyotomy is not an emergency; he first needs IV fluid resuscitation with isotonic saline, then maintenance fluid containing dextrose and potassium (once urine output is established) until the chloride and bicarbonate normalize. Operating while alkalotic risks postoperative apnea, because alkalosis depresses the ventilatory drive.\n- 원리: <b>Why alkalosis?</b> Gastric juice is rich in H⁺ and Cl⁻. Each H⁺ secreted by parietal cells leaves an HCO₃⁻ in the blood (the \"alkaline tide\"), which is normally neutralized when acid reaches the duodenum and triggers pancreatic bicarbonate secretion. When vomiting removes the acid before it reaches the duodenum, the bicarbonate stays — <b>metabolic alkalosis with hypochloremia</b>.<br> <b>Why does the kidney not fix it?</b> Volume depletion activates the renin-angiotensin-aldosterone system and increases proximal Na⁺-H⁺ exchange, so bicarbonate is reabsorbed avidly; chloride deficiency limits bicarbonate secretion by pendrin in the collecting duct. Aldosterone drives distal Na⁺ reabsorption in exchange for K⁺ and H⁺, producing <b>hypokalemia</b> and a paradoxical acidic urine. The alkalosis is therefore <b>chloride- and volume-responsive</b>: it corrects only when the child receives sodium chloride (and potassium) to restore volume and chloride.<br> <b>Why wait to operate?</b> Alkalemia shifts the chemoreceptor set point and blunts the ventilatory response to CO₂; after anesthesia, infants with uncorrected alkalosis are prone to <b>apnea</b>. Surgery (Ramstedt pyloromyotomy, open or laparoscopic) is performed once bicarbonate is below about 30 mEq/L and chloride is above about 100 mEq/L. Potassium is added only after urine output is confirmed, to avoid hyperkalemia in oliguria.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>0.9% saline with dextrose and K⁺ (answer)</b></td><td><b>Pyloric stenosis with dehydration and hypochloremic alkalosis before surgery</b></td><td><b>HCO₃⁻ 36, Cl⁻ 84, K⁺ 2.9, dry mucosa</b></td></tr> <tr><td>Immediate pyloromyotomy (closest rival)</td><td>After electrolytes are corrected (HCO₃⁻ &lt; 30, Cl⁻ &gt; 100)</td><td>Still alkalotic — risk of postoperative apnea</td></tr> <tr><td>0.45% saline without K⁺</td><td>Hypotonic maintenance in a euvolemic child</td><td>Does not replace chloride or potassium fast enough</td></tr> <tr><td>Nasogastric formula feeding</td><td>No setting — gastric outlet is obstructed</td><td>Feeds will be vomited or aspirated</td></tr> <tr><td>Ammonium chloride</td><td>Rare severe alkalosis refractory to saline</td><td>Saline-responsive alkalosis</td></tr> </tbody></table> <b>The closest rival is immediate pyloromyotomy</b>, because the diagnosis is certain and surgery is curative. The dividing line is <b>the metabolic state</b>: pyloric stenosis is a medical emergency first and a surgical problem second.\n- 오답 이유:\n  - (B) Immediate pyloromyotomy is the definitive cure and the diagnosis is confirmed on ultrasonography, so it seems like the obvious next step. But he is dehydrated with bicarbonate 36 mEq/L, and operating before correction risks postoperative apnea. Once bicarbonate falls below 30 mEq/L and chloride exceeds 100 mEq/L, pyloromyotomy becomes correct.\n  - (C) Intravenous 0.45% saline without potassium is a hypotonic maintenance fluid that contains less chloride and no potassium, so it corrects the chloride and potassium deficits slowly and risks hyponatremia. It is not the right resuscitation fluid. In a well-hydrated child who needs only maintenance, a similar fluid (with potassium) may be used.\n  - (D) Nasogastric tube feeding supplies calories to a thin, hungry infant, but formula cannot pass the obstructed pylorus and will be vomited or aspirated. A nasogastric tube in this setting is used only to decompress the stomach. After pyloromyotomy, feeds are restarted by mouth within hours.\n  - (E) Intravenous ammonium chloride delivers acid and chloride and was once used for severe metabolic alkalosis. This alkalosis is volume- and chloride-responsive and corrects with saline, while ammonium chloride risks ammonia toxicity in infants. It would be considered only for severe alkalosis that persists despite adequate saline and potassium.\n- 함정: A confirmed surgical diagnosis does not mean surgery first. Correct the alkalosis before pyloromyotomy.\n- 학습목표: 비후날문협착증의 저염소성 저칼륨성 대사알칼리증은 수술 전에 포도당이 든 등장식염수와 칼륨으로 교정한다 — 알칼리증이 남아 있으면 마취 후 무호흡 위험이 있어 날문근절개술을 미룬다\n- 근거·출처: Hunter AK, Liacouras CA. Pyloric stenosis and other congenital anomalies of the stomach. In: Nelson Textbook of Pediatrics, 21st ed. · Aspelund G, Langer JC. Current management of hypertrophic pyloric stenosis. Semin Pediatr Surg 2007;16:27 · Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — metabolic alkalosis (chloride-responsive)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A 5-week-old boy with projectile nonbilious vomiting, hunger after vomiting, a palpable olive, and a thickened, elongated pylorus on ultrasonography (muscle ≥ 3–4 mm, channel ≥ 15–17 mm) has hypertrophic pyloric stenosis. Repeated loss of gastric HCl has produced dehydration and hypochloremic, hypokalemic metabolic alkalosis (bicarbonate 36 mEq/L, chloride 84 mEq/L). Pyloromyotomy is not an emergency; he first needs IV fluid resuscitation with isotonic saline, then maintenance fluid containing dextrose and potassium (once urine output is established) until the chloride and bicarbonate normalize. Operating while alkalotic risks postoperative apnea, because alkalosis depresses the ventilatory drive."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why alkalosis?</b> Gastric juice is rich in H⁺ and Cl⁻. Each H⁺ secreted by parietal cells leaves an HCO₃⁻ in the blood (the \"alkaline tide\"), which is normally neutralized when acid reaches the duodenum and triggers pancreatic bicarbonate secretion. When vomiting removes the acid before it reaches the duodenum, the bicarbonate stays — <b>metabolic alkalosis with hypochloremia</b>.<br> <b>Why does the kidney not fix it?</b> Volume depletion activates the renin-angiotensin-aldosterone system and increases proximal Na⁺-H⁺ exchange, so bicarbonate is reabsorbed avidly; chloride deficiency limits bicarbonate secretion by pendrin in the collecting duct. Aldosterone drives distal Na⁺ reabsorption in exchange for K⁺ and H⁺, producing <b>hypokalemia</b> and a paradoxical acidic urine. The alkalosis is therefore <b>chloride- and volume-responsive</b>: it corrects only when the child receives sodium chloride (and potassium) to restore volume and chloride.<br> <b>Why wait to operate?</b> Alkalemia shifts the chemoreceptor set point and blunts the ventilatory response to CO₂; after anesthesia, infants with uncorrected alkalosis are prone to <b>apnea</b>. Surgery (Ramstedt pyloromyotomy, open or laparoscopic) is performed once bicarbonate is below about 30 mEq/L and chloride is above about 100 mEq/L. Potassium is added only after urine output is confirmed, to avoid hyperkalemia in oliguria."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>0.9% saline with dextrose and K⁺ (answer)</b></td><td><b>Pyloric stenosis with dehydration and hypochloremic alkalosis before surgery</b></td><td><b>HCO₃⁻ 36, Cl⁻ 84, K⁺ 2.9, dry mucosa</b></td></tr> <tr><td>Immediate pyloromyotomy (closest rival)</td><td>After electrolytes are corrected (HCO₃⁻ &lt; 30, Cl⁻ &gt; 100)</td><td>Still alkalotic — risk of postoperative apnea</td></tr> <tr><td>0.45% saline without K⁺</td><td>Hypotonic maintenance in a euvolemic child</td><td>Does not replace chloride or potassium fast enough</td></tr> <tr><td>Nasogastric formula feeding</td><td>No setting — gastric outlet is obstructed</td><td>Feeds will be vomited or aspirated</td></tr> <tr><td>Ammonium chloride</td><td>Rare severe alkalosis refractory to saline</td><td>Saline-responsive alkalosis</td></tr> </tbody></table> <b>The closest rival is immediate pyloromyotomy</b>, because the diagnosis is certain and surgery is curative. The dividing line is <b>the metabolic state</b>: pyloric stenosis is a medical emergency first and a surgical problem second."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Immediate pyloromyotomy is the definitive cure and the diagnosis is confirmed on ultrasonography, so it seems like the obvious next step. But he is dehydrated with bicarbonate 36 mEq/L, and operating before correction risks postoperative apnea. Once bicarbonate falls below 30 mEq/L and chloride exceeds 100 mEq/L, pyloromyotomy becomes correct.\n(C) Intravenous 0.45% saline without potassium is a hypotonic maintenance fluid that contains less chloride and no potassium, so it corrects the chloride and potassium deficits slowly and risks hyponatremia. It is not the right resuscitation fluid. In a well-hydrated child who needs only maintenance, a similar fluid (with potassium) may be used.\n(D) Nasogastric tube feeding supplies calories to a thin, hungry infant, but formula cannot pass the obstructed pylorus and will be vomited or aspirated. A nasogastric tube in this setting is used only to decompress the stomach. After pyloromyotomy, feeds are restarted by mouth within hours.\n(E) Intravenous ammonium chloride delivers acid and chloride and was once used for severe metabolic alkalosis. This alkalosis is volume- and chloride-responsive and corrects with saline, while ammonium chloride risks ammonia toxicity in infants. It would be considered only for severe alkalosis that persists despite adequate saline and potassium."
+   },
+   {
+    "k": "함정",
+    "v": "A confirmed surgical diagnosis does not mean surgery first. Correct the alkalosis before pyloromyotomy."
+   },
+   {
+    "k": "학습목표",
+    "v": "비후날문협착증의 저염소성 저칼륨성 대사알칼리증은 수술 전에 포도당이 든 등장식염수와 칼륨으로 교정한다 — 알칼리증이 남아 있으면 마취 후 무호흡 위험이 있어 날문근절개술을 미룬다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hunter AK, Liacouras CA. Pyloric stenosis and other congenital anomalies of the stomach. In: Nelson Textbook of Pediatrics, 21st ed. · Aspelund G, Langer JC. Current management of hypertrophic pyloric stenosis. Semin Pediatr Surg 2007;16:27 · Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — metabolic alkalosis (chloride-responsive)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Pyloric stenosis with dehydration and hypochloremic hypokalemic metabolic alkalosis needs IV saline with dextrose and potassium before pyloromyotomy",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Pyloromyotomy is delayed until bicarbonate and chloride normalize because alkalosis causes postoperative apnea",
+   "steps": 3,
+   "chain": [
+    "projectile nonbilious vomiting, olive-shaped mass, thickened pylorus → hypertrophic pyloric stenosis",
+    "bicarbonate 36, chloride 84, potassium 2.9 → hypochloremic hypokalemic metabolic alkalosis from HCl loss",
+    "alkalosis risks postoperative apnea → correct with saline, dextrose, and potassium before surgery"
+   ],
+   "key": [
+    {
+     "item": "forceful, nonbilious vomiting after every feeding",
+     "why": "Gastric outlet obstruction above the ampulla",
+     "also": []
+    },
+    {
+     "item": "A firm, olive-shaped mass is palpable in the epigastrium",
+     "why": "Hypertrophied pylorus",
+     "also": []
+    },
+    {
+     "item": "pyloric muscle thickness of 5 mm and a channel length of 19 mm",
+     "why": "Ultrasonographic criteria for pyloric stenosis",
+     "also": []
+    },
+    {
+     "item": "chloride 84 mEq/L",
+     "why": "Chloride depletion from HCl loss",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "bicarbonate 36 mEq/L",
+     "why": "Alkalosis — surgery must wait",
+     "also": []
+    },
+    {
+     "item": "potassium 2.9 mEq/L",
+     "why": "Potassium must be replaced once urine flows",
+     "also": []
+    },
+    {
+     "item": "He has had only two wet diapers today",
+     "why": "Dehydration — resuscitate first; confirm urine output before adding potassium",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He is hungry immediately after vomiting",
+     "why": "Classic but nonspecific feature",
+     "also": []
+    }
+   ],
+   "summary": "Projectile nonbilious vomiting, an olive mass, and a thickened pylorus mean pyloric stenosis, and HCl loss has produced hypochloremic hypokalemic alkalosis with dehydration. Resuscitate with saline, then dextrose and potassium, and perform pyloromyotomy only after the alkalosis is corrected.",
+   "switch": {
+    "choice": "B",
+    "condition": "If repeat labs after 24 hours of fluids showed bicarbonate 26 mEq/L, chloride 102 mEq/L, and potassium 4.0 mEq/L, pyloromyotomy would be the next step"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0121",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증",
+  "type": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "72세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성콩팥병(평소 크레아티닌 2.4 mg/dL)과 심부전으로 리시노프릴, 스피로놀락톤, 푸로세미드를 먹고 있고, 최근 무릎 통증으로 이부프로펜을 먹었다. 혈압 132/76 mmHg, 맥박 54회/분이다. 양쪽 다리 근력이 약간 떨어져 있다. 혈청 칼륨 7.4 mEq/L(용혈 없음), 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.6 mg/dL, 혈당 142 mg/dL 이다. 심전도에서 앞가슴 유도의 T파가 높고 뾰족하며 QRS 폭은 0.14초이고 P파가 납작하다.",
+  "question": "가장 먼저 투여할 약물은?",
+  "options": [
+   "탄산수소나트륨 정주",
+   "소듐 지르코늄 사이클로실리케이트 경구",
+   "살부타몰 분무 흡입",
+   "글루콘산칼슘 정주",
+   "인슐린과 포도당 정주"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 혈청 칼륨 7.4 mEq/L 에 뾰족한 T파, P파 납작해짐, QRS 넓어짐(0.14초), 서맥이 있어 치명적 부정맥이 임박한 중증 고칼륨혈증이다. 가장 먼저 글루콘산칼슘을 정주해 몇 분 안에 심근막을 안정시킨다. 칼슘은 혈청 칼륨을 낮추지 않으므로 이어서 인슐린·포도당과 살부타몰로 칼륨을 세포 안으로 옮기고, 칼륨 결합제·이뇨제·필요하면 투석으로 몸 밖으로 뺀다. 원인 약물(리시노프릴·스피로놀락톤·이부프로펜)은 끊는다.\n- 원리: <b>세포막의 안정 전위는 세포 안팎 칼륨 농도비로 정해진다.</b> 혈청 칼륨이 오르면 안정 전위가 덜 음(-)이 되어(탈분극), 처음에는 흥분성이 오르지만 곧 <b>빠른 나트륨 통로가 불활성화</b>되어 활동전위의 상승 속도가 느려진다. 그래서 전도가 느려지고 — P파가 납작해지고 PR 이 길어지며 QRS 가 넓어진다 — 끝내 사인파형·심실세동·무수축으로 간다. 뾰족한 T파는 재분극에 관여하는 칼륨 통로 전도가 늘어 재분극이 빨라지기 때문이다.<br> <b>칼슘</b>은 역치 전위를 덜 음(-)으로 올려 안정 전위와 역치 사이의 간격을 되돌린다(막 안정화). 또 나트륨 통로가 활동전위를 만들 수 있게 해 전도를 회복시킨다. 1~3분 안에 효과가 나지만 30~60분만 가고, <b>칼륨 수치는 바꾸지 않는다</b> — 그래서 「먼저 칼슘, 그다음 칼륨 이동·제거」다.<br> <b>인슐린</b>은 Na⁺/K⁺-ATPase 를 활성화해 15~30분에 칼륨을 0.5~1.2 mEq/L 낮추고, <b>β2 작용제</b>도 같은 펌프를 통해 더한다. 둘 다 몸속 총 칼륨은 그대로이므로 칼륨 결합제·루프이뇨제·투석으로 실제로 빼내야 한다. 이 환자는 ACE 억제제 + 알도스테론 길항제 + NSAID 가 만성콩팥병 위에 겹쳐 알도스테론 작용과 원위 칼륨 분비가 모두 막혔다.\n- 비교: <table><thead><tr><th style=\"width:24%\">약물</th><th style=\"width:24%\">작용·시작 시간</th><th>언제 쓰나</th></tr></thead><tbody> <tr><td><b>글루콘산칼슘(정답)</b></td><td><b>막 안정화, 1~3분</b></td><td><b>심전도 변화가 있는 고칼륨혈증에서 가장 먼저</b></td></tr> <tr><td>인슐린 + 포도당(가장 가까운 오답)</td><td>세포 내 이동, 15~30분</td><td>칼슘 직후 — 칼륨을 실제로 낮추는 첫 약</td></tr> <tr><td>살부타몰</td><td>세포 내 이동, 30분</td><td>인슐린에 더해서</td></tr> <tr><td>탄산수소나트륨</td><td>세포 내 이동(약함)</td><td>중증 대사산증이 함께 있을 때만 보조</td></tr> <tr><td>지르코늄 사이클로실리케이트</td><td>장관 배출, 1시간 이상</td><td>몸 밖 제거 — 급성기에는 느리다</td></tr> </tbody></table> <b>가장 가까운 오답은 인슐린·포도당</b>이다 — 칼륨을 실제로 낮추는 가장 빠른 약이라 「가장 효과적」으로 보인다. 갈림길은 <b>심전도 변화</b>다. 심전도가 변했으면 수치보다 심장이 먼저이므로 칼슘, 심전도가 정상이면 칼륨 이동·제거부터 한다.\n- 오답 이유:\n  - ① 탄산수소나트륨은 산증을 교정해 칼륨을 세포 안으로 옮기지만 효과가 약하고 느려, 고칼륨혈증 단독 치료로는 권고되지 않는다. 중탄산 18 mEq/L 은 중증 산증이 아니다. 중탄산이 10 mEq/L 인 중증 대사산증이 함께 있다면 보조로 쓸 수 있다.\n  - ② 소듐 지르코늄 사이클로실리케이트는 장에서 칼륨을 결합해 몸 밖으로 빼는 약으로 작용이 1시간 이상 걸린다. 심전도 변화가 있는 응급에서 첫 약이 될 수 없다. 급성 처치 후 재발을 막거나 경도 고칼륨혈증을 외래에서 관리할 때 정답이 된다.\n  - ③ 살부타몰 분무는 β2 수용체를 통해 칼륨을 세포 안으로 옮겨 인슐린에 더하면 효과가 커진다. 그러나 심근막을 안정시키지 못하고 효과가 약 30분 뒤에 나타난다. 정맥로를 확보하기 어려운 상황에서 칼슘·인슐린에 보태는 약으로 쓴다.\n  - ⑤ 인슐린과 포도당은 15~30분 안에 칼륨을 세포 안으로 옮겨 실제로 수치를 낮추므로 가장 효과적인 약처럼 보인다. 그러나 QRS 가 넓어진 지금은 몇 분 안에 부정맥이 올 수 있어 칼슘이 먼저다. 칼륨 6.4 mEq/L 에 심전도가 정상이었다면 첫 약으로 정답이다.\n- 함정: 칼륨을 가장 빨리 낮추는 약(인슐린)과 심장을 가장 빨리 보호하는 약(칼슘)을 구별한다. 심전도가 변했으면 칼슘이 먼저다.\n- 학습목표: 심전도 변화(뾰족한 T파·QRS 넓어짐)를 동반한 중증 고칼륨혈증에서는 칼륨을 낮추는 치료보다 먼저 정맥 칼슘으로 심근막을 안정시킨다\n- 근거·출처: Palmer BF, Clegg DJ. Physiology and pathophysiology of potassium homeostasis. Adv Physiol Educ 2016;40:480 · Lindner G et al. Acute hyperkalemia in the emergency department: a summary from a Kidney Disease: Improving Global Outcomes conference. Eur J Emerg Med 2020;27:329 · Rossignol P et al. Emergency management of severe hyperkalemia: guideline for best practice. Pharmacol Res 2016;113:585",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "혈청 칼륨 7.4 mEq/L 에 뾰족한 T파, P파 납작해짐, QRS 넓어짐(0.14초), 서맥이 있어 치명적 부정맥이 임박한 중증 고칼륨혈증이다. 가장 먼저 글루콘산칼슘을 정주해 몇 분 안에 심근막을 안정시킨다. 칼슘은 혈청 칼륨을 낮추지 않으므로 이어서 인슐린·포도당과 살부타몰로 칼륨을 세포 안으로 옮기고, 칼륨 결합제·이뇨제·필요하면 투석으로 몸 밖으로 뺀다. 원인 약물(리시노프릴·스피로놀락톤·이부프로펜)은 끊는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>세포막의 안정 전위는 세포 안팎 칼륨 농도비로 정해진다.</b> 혈청 칼륨이 오르면 안정 전위가 덜 음(-)이 되어(탈분극), 처음에는 흥분성이 오르지만 곧 <b>빠른 나트륨 통로가 불활성화</b>되어 활동전위의 상승 속도가 느려진다. 그래서 전도가 느려지고 — P파가 납작해지고 PR 이 길어지며 QRS 가 넓어진다 — 끝내 사인파형·심실세동·무수축으로 간다. 뾰족한 T파는 재분극에 관여하는 칼륨 통로 전도가 늘어 재분극이 빨라지기 때문이다.<br> <b>칼슘</b>은 역치 전위를 덜 음(-)으로 올려 안정 전위와 역치 사이의 간격을 되돌린다(막 안정화). 또 나트륨 통로가 활동전위를 만들 수 있게 해 전도를 회복시킨다. 1~3분 안에 효과가 나지만 30~60분만 가고, <b>칼륨 수치는 바꾸지 않는다</b> — 그래서 「먼저 칼슘, 그다음 칼륨 이동·제거」다.<br> <b>인슐린</b>은 Na⁺/K⁺-ATPase 를 활성화해 15~30분에 칼륨을 0.5~1.2 mEq/L 낮추고, <b>β2 작용제</b>도 같은 펌프를 통해 더한다. 둘 다 몸속 총 칼륨은 그대로이므로 칼륨 결합제·루프이뇨제·투석으로 실제로 빼내야 한다. 이 환자는 ACE 억제제 + 알도스테론 길항제 + NSAID 가 만성콩팥병 위에 겹쳐 알도스테론 작용과 원위 칼륨 분비가 모두 막혔다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">약물</th><th style=\"width:24%\">작용·시작 시간</th><th>언제 쓰나</th></tr></thead><tbody> <tr><td><b>글루콘산칼슘(정답)</b></td><td><b>막 안정화, 1~3분</b></td><td><b>심전도 변화가 있는 고칼륨혈증에서 가장 먼저</b></td></tr> <tr><td>인슐린 + 포도당(가장 가까운 오답)</td><td>세포 내 이동, 15~30분</td><td>칼슘 직후 — 칼륨을 실제로 낮추는 첫 약</td></tr> <tr><td>살부타몰</td><td>세포 내 이동, 30분</td><td>인슐린에 더해서</td></tr> <tr><td>탄산수소나트륨</td><td>세포 내 이동(약함)</td><td>중증 대사산증이 함께 있을 때만 보조</td></tr> <tr><td>지르코늄 사이클로실리케이트</td><td>장관 배출, 1시간 이상</td><td>몸 밖 제거 — 급성기에는 느리다</td></tr> </tbody></table> <b>가장 가까운 오답은 인슐린·포도당</b>이다 — 칼륨을 실제로 낮추는 가장 빠른 약이라 「가장 효과적」으로 보인다. 갈림길은 <b>심전도 변화</b>다. 심전도가 변했으면 수치보다 심장이 먼저이므로 칼슘, 심전도가 정상이면 칼륨 이동·제거부터 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 탄산수소나트륨은 산증을 교정해 칼륨을 세포 안으로 옮기지만 효과가 약하고 느려, 고칼륨혈증 단독 치료로는 권고되지 않는다. 중탄산 18 mEq/L 은 중증 산증이 아니다. 중탄산이 10 mEq/L 인 중증 대사산증이 함께 있다면 보조로 쓸 수 있다.\n② 소듐 지르코늄 사이클로실리케이트는 장에서 칼륨을 결합해 몸 밖으로 빼는 약으로 작용이 1시간 이상 걸린다. 심전도 변화가 있는 응급에서 첫 약이 될 수 없다. 급성 처치 후 재발을 막거나 경도 고칼륨혈증을 외래에서 관리할 때 정답이 된다.\n③ 살부타몰 분무는 β2 수용체를 통해 칼륨을 세포 안으로 옮겨 인슐린에 더하면 효과가 커진다. 그러나 심근막을 안정시키지 못하고 효과가 약 30분 뒤에 나타난다. 정맥로를 확보하기 어려운 상황에서 칼슘·인슐린에 보태는 약으로 쓴다.\n⑤ 인슐린과 포도당은 15~30분 안에 칼륨을 세포 안으로 옮겨 실제로 수치를 낮추므로 가장 효과적인 약처럼 보인다. 그러나 QRS 가 넓어진 지금은 몇 분 안에 부정맥이 올 수 있어 칼슘이 먼저다. 칼륨 6.4 mEq/L 에 심전도가 정상이었다면 첫 약으로 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "칼륨을 가장 빨리 낮추는 약(인슐린)과 심장을 가장 빨리 보호하는 약(칼슘)을 구별한다. 심전도가 변했으면 칼슘이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심전도 변화(뾰족한 T파·QRS 넓어짐)를 동반한 중증 고칼륨혈증에서는 칼륨을 낮추는 치료보다 먼저 정맥 칼슘으로 심근막을 안정시킨다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Palmer BF, Clegg DJ. Physiology and pathophysiology of potassium homeostasis. Adv Physiol Educ 2016;40:480 · Lindner G et al. Acute hyperkalemia in the emergency department: a summary from a Kidney Disease: Improving Global Outcomes conference. Eur J Emerg Med 2020;27:329 · Rossignol P et al. Emergency management of severe hyperkalemia: guideline for best practice. Pharmacol Res 2016;113:585"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "칼륨 7.4 mEq/L 에 QRS 넓어짐과 뾰족한 T파가 있으면 심근막 안정을 위해 글루콘산칼슘을 가장 먼저 투여한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "인슐린은 칼륨을 낮추지만 15~30분이 걸리고 막을 안정시키지 않는다 — 심전도 변화가 있으면 칼슘이 먼저",
+   "steps": 2,
+   "chain": [
+    "칼륨 7.4 mEq/L + QRS 0.14초·뾰족한 T파·P파 납작 → 부정맥이 임박한 중증 고칼륨혈증",
+    "심전도 변화가 있으면 수치를 낮추기 전에 막을 안정시킨다 → 글루콘산칼슘 정주"
+   ],
+   "key": [
+    {
+     "item": "혈청 칼륨 7.4 mEq/L",
+     "why": "중증 고칼륨혈증",
+     "also": []
+    },
+    {
+     "item": "QRS 폭은 0.14초",
+     "why": "전도 지연 — 즉시 막 안정화가 필요",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "T파가 높고 뾰족하며",
+     "why": "고칼륨혈증의 심전도 변화",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "용혈 없음",
+     "why": "가성 고칼륨혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "중탄산 18 mEq/L",
+     "why": "중증 산증이 아니어서 탄산수소나트륨의 역할이 작다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "맥박 54회/분",
+     "why": "서맥 — 부정맥 위험이 높다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "리시노프릴, 스피로놀락톤",
+     "why": "원인 약물 — 끊어야 하지만 첫 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "칼륨 7.4 mEq/L 에 QRS 넓어짐·뾰족한 T파·서맥이 있어 부정맥이 임박했다. 칼륨 수치를 낮추기 전에 글루콘산칼슘으로 심근막을 안정시키고, 이어서 인슐린·포도당과 살부타몰, 칼륨 제거를 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "칼륨이 6.3 mEq/L 이고 심전도가 정상이었다면 인슐린과 포도당이 첫 약으로 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0120",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "감염 — 페니실린 알레르기 임신부의 매독",
+  "type": "감염 — 페니실린 알레르기 임신부의 매독",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "A 26-year-old woman, gravida 1, para 0, at 14 weeks' gestation comes for her first prenatal visit. She feels well. She has had one new sexual partner in the past year. She developed generalized hives and lip swelling within an hour of taking amoxicillin 3 years ago. Her temperature is 36.7°C and blood pressure is 112/70 mmHg. Examination shows no rash, mucosal lesions, or lymphadenopathy, and the neurologic examination is normal. A rapid plasma reagin test is positive at a titer of 1:32, and a Treponema pallidum particle agglutination test is positive. She had a negative syphilis screening test 2 years ago. HIV testing is negative.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Penicillin desensitization followed by benzathine penicillin G",
+   "Doxycycline for 28 days",
+   "Azithromycin as a single oral dose",
+   "Ceftriaxone for 10 days",
+   "Benzathine penicillin G after an oral antihistamine"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A reactive nontreponemal (RPR 1:32) and treponemal test with no symptoms and a negative screen 2 years ago means latent syphilis of uncertain duration, treated as late latent syphilis with three weekly doses of benzathine penicillin G. In pregnancy, penicillin is the only drug proven to treat the mother and prevent congenital syphilis, because it crosses the placenta and reliably treats the fetus. Her reaction (hives and lip swelling within an hour) is an IgE-mediated allergy, so she should undergo penicillin desensitization and then receive benzathine penicillin G. Doxycycline is contraindicated in pregnancy, azithromycin has widespread resistance and does not treat the fetus, and ceftriaxone lacks proven efficacy in preventing congenital syphilis. Antihistamine premedication does not prevent anaphylaxis.\n- 원리: <b>Why must a pregnant woman receive penicillin?</b> Treponema pallidum crosses the placenta at any stage of pregnancy and can cause stillbirth, hydrops, and congenital syphilis. Treating the mother is not enough — the drug must also reach and cure the fetus. <b>Benzathine penicillin G</b> is the only regimen with proven efficacy in preventing congenital syphilis; the long-acting depot keeps treponemicidal levels for weeks, which matters because the organism divides only every 30–33 hours. Alternatives are either <b>contraindicated</b> (tetracyclines stain fetal teeth and bone) or <b>unreliable</b> (macrolide resistance from 23S rRNA mutations; poor transplacental passage; ceftriaxone lacks outcome data).<br> <b>Desensitization</b> works because giving tiny, gradually increasing doses of drug (oral or IV over 4–12 hours) binds IgE on mast cells in small amounts, causing subclinical, sequential activation and a temporary state of <b>tolerance</b> — mast cells release mediators too slowly to cause anaphylaxis. The tolerance lasts only while the drug is present, so therapy must continue without interruption; it is done in a monitored setting. Antihistamines only block one mediator and do not prevent IgE-mediated anaphylaxis.<br> Staging decides the dose: primary, secondary, and early latent (&lt; 1 year, documented) get one dose; <b>late latent or unknown duration gets three weekly doses</b>. In pregnancy, a missed dose by more than 7 days requires restarting the course.\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Desensitization, then benzathine penicillin G (answer)</b></td><td><b>Syphilis in pregnancy with IgE-mediated penicillin allergy</b></td><td><b>Pregnant, hives and lip swelling after amoxicillin</b></td></tr> <tr><td>Doxycycline 28 days (closest rival)</td><td>Late latent syphilis in a nonpregnant patient with penicillin allergy</td><td>Pregnant — contraindicated, does not prevent congenital syphilis</td></tr> <tr><td>Azithromycin single dose</td><td>Not recommended — resistance; historically for contacts when penicillin unavailable</td><td>Does not treat the fetus reliably</td></tr> <tr><td>Ceftriaxone 10 days</td><td>Alternative in nonpregnant patients (e.g., neurosyphilis with allergy) when desensitization is not possible</td><td>No proven protection against congenital syphilis</td></tr> <tr><td>Premedication and penicillin</td><td>Never for IgE-mediated reactions</td><td>Risk of anaphylaxis</td></tr> </tbody></table> <b>The closest rival is doxycycline</b>, the standard penicillin-allergy alternative outside pregnancy. The dividing line is <b>pregnancy</b>: it removes every alternative and makes desensitization mandatory.\n- 오답 이유:\n  - (B) Doxycycline for 28 days is the standard alternative for late latent syphilis in patients allergic to penicillin, so it is the reflex choice. It is contraindicated in pregnancy because tetracyclines stain fetal teeth and affect bone, and it does not prevent congenital syphilis. In a nonpregnant woman with the same allergy, this would be correct.\n  - (C) Azithromycin is sometimes remembered as a single-dose syphilis treatment, but macrolide resistance is widespread and it does not reliably treat the fetus. It is not recommended for syphilis in pregnancy. It would be appropriate for an uncomplicated chlamydial infection in pregnancy instead.\n  - (D) Ceftriaxone is active against T. pallidum and has low cross-reactivity with penicillin, so it seems a safe alternative. However, its ability to prevent congenital syphilis has not been established, so it is not recommended in pregnancy. In a nonpregnant patient with neurosyphilis who cannot be desensitized, it may be used.\n  - (E) Premedication with an antihistamine does not prevent IgE-mediated anaphylaxis, because histamine is only one of many mediators released by mast cells. Giving a full dose after premedication risks a severe reaction. If her past reaction had been a delayed, non-urticarial rash or a family history only, direct penicillin with observation would be reasonable.\n- 함정: Penicillin allergy in pregnancy does not mean an alternative drug — it means desensitization.\n- 학습목표: 페니실린 알레르기(두드러기) 임신부의 잠복 매독은 태아 감염까지 치료할 수 있는 유일한 약인 벤자틴 페니실린 G 를 쓰기 위해 탈감작 후 투여한다\n- 근거·출처: Workowski KA et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep 2021;70(4):1 — syphilis during pregnancy · Wendel GD Jr et al. Penicillin allergy and desensitization in serious infections during pregnancy. N Engl J Med 1985;312:1229 · Khan DA et al. Drug allergy: a 2022 practice parameter update. J Allergy Clin Immunol 2022;150:1333",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A reactive nontreponemal (RPR 1:32) and treponemal test with no symptoms and a negative screen 2 years ago means latent syphilis of uncertain duration, treated as late latent syphilis with three weekly doses of benzathine penicillin G. In pregnancy, penicillin is the only drug proven to treat the mother and prevent congenital syphilis, because it crosses the placenta and reliably treats the fetus. Her reaction (hives and lip swelling within an hour) is an IgE-mediated allergy, so she should undergo penicillin desensitization and then receive benzathine penicillin G. Doxycycline is contraindicated in pregnancy, azithromycin has widespread resistance and does not treat the fetus, and ceftriaxone lacks proven efficacy in preventing congenital syphilis. Antihistamine premedication does not prevent anaphylaxis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why must a pregnant woman receive penicillin?</b> Treponema pallidum crosses the placenta at any stage of pregnancy and can cause stillbirth, hydrops, and congenital syphilis. Treating the mother is not enough — the drug must also reach and cure the fetus. <b>Benzathine penicillin G</b> is the only regimen with proven efficacy in preventing congenital syphilis; the long-acting depot keeps treponemicidal levels for weeks, which matters because the organism divides only every 30–33 hours. Alternatives are either <b>contraindicated</b> (tetracyclines stain fetal teeth and bone) or <b>unreliable</b> (macrolide resistance from 23S rRNA mutations; poor transplacental passage; ceftriaxone lacks outcome data).<br> <b>Desensitization</b> works because giving tiny, gradually increasing doses of drug (oral or IV over 4–12 hours) binds IgE on mast cells in small amounts, causing subclinical, sequential activation and a temporary state of <b>tolerance</b> — mast cells release mediators too slowly to cause anaphylaxis. The tolerance lasts only while the drug is present, so therapy must continue without interruption; it is done in a monitored setting. Antihistamines only block one mediator and do not prevent IgE-mediated anaphylaxis.<br> Staging decides the dose: primary, secondary, and early latent (&lt; 1 year, documented) get one dose; <b>late latent or unknown duration gets three weekly doses</b>. In pregnancy, a missed dose by more than 7 days requires restarting the course."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Desensitization, then benzathine penicillin G (answer)</b></td><td><b>Syphilis in pregnancy with IgE-mediated penicillin allergy</b></td><td><b>Pregnant, hives and lip swelling after amoxicillin</b></td></tr> <tr><td>Doxycycline 28 days (closest rival)</td><td>Late latent syphilis in a nonpregnant patient with penicillin allergy</td><td>Pregnant — contraindicated, does not prevent congenital syphilis</td></tr> <tr><td>Azithromycin single dose</td><td>Not recommended — resistance; historically for contacts when penicillin unavailable</td><td>Does not treat the fetus reliably</td></tr> <tr><td>Ceftriaxone 10 days</td><td>Alternative in nonpregnant patients (e.g., neurosyphilis with allergy) when desensitization is not possible</td><td>No proven protection against congenital syphilis</td></tr> <tr><td>Premedication and penicillin</td><td>Never for IgE-mediated reactions</td><td>Risk of anaphylaxis</td></tr> </tbody></table> <b>The closest rival is doxycycline</b>, the standard penicillin-allergy alternative outside pregnancy. The dividing line is <b>pregnancy</b>: it removes every alternative and makes desensitization mandatory."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Doxycycline for 28 days is the standard alternative for late latent syphilis in patients allergic to penicillin, so it is the reflex choice. It is contraindicated in pregnancy because tetracyclines stain fetal teeth and affect bone, and it does not prevent congenital syphilis. In a nonpregnant woman with the same allergy, this would be correct.\n(C) Azithromycin is sometimes remembered as a single-dose syphilis treatment, but macrolide resistance is widespread and it does not reliably treat the fetus. It is not recommended for syphilis in pregnancy. It would be appropriate for an uncomplicated chlamydial infection in pregnancy instead.\n(D) Ceftriaxone is active against T. pallidum and has low cross-reactivity with penicillin, so it seems a safe alternative. However, its ability to prevent congenital syphilis has not been established, so it is not recommended in pregnancy. In a nonpregnant patient with neurosyphilis who cannot be desensitized, it may be used.\n(E) Premedication with an antihistamine does not prevent IgE-mediated anaphylaxis, because histamine is only one of many mediators released by mast cells. Giving a full dose after premedication risks a severe reaction. If her past reaction had been a delayed, non-urticarial rash or a family history only, direct penicillin with observation would be reasonable."
+   },
+   {
+    "k": "함정",
+    "v": "Penicillin allergy in pregnancy does not mean an alternative drug — it means desensitization."
+   },
+   {
+    "k": "학습목표",
+    "v": "페니실린 알레르기(두드러기) 임신부의 잠복 매독은 태아 감염까지 치료할 수 있는 유일한 약인 벤자틴 페니실린 G 를 쓰기 위해 탈감작 후 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Workowski KA et al. Sexually transmitted infections treatment guidelines, 2021. MMWR Recomm Rep 2021;70(4):1 — syphilis during pregnancy · Wendel GD Jr et al. Penicillin allergy and desensitization in serious infections during pregnancy. N Engl J Med 1985;312:1229 · Khan DA et al. Drug allergy: a 2022 practice parameter update. J Allergy Clin Immunol 2022;150:1333"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "Latent syphilis in a pregnant woman with an IgE-mediated penicillin allergy requires desensitization followed by benzathine penicillin G",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "Doxycycline is the allergy alternative only outside pregnancy — it is contraindicated and does not treat the fetus",
+   "steps": 3,
+   "chain": [
+    "RPR 1:32 and TP-PA positive, asymptomatic, negative screen 2 years ago → latent syphilis of uncertain duration",
+    "14 weeks' gestation → only penicillin prevents congenital syphilis",
+    "hives and lip swelling within an hour → IgE-mediated allergy, so desensitize before benzathine penicillin G"
+   ],
+   "key": [
+    {
+     "item": "rapid plasma reagin test is positive at a titer of 1:32",
+     "why": "Active infection",
+     "also": []
+    },
+    {
+     "item": "Treponema pallidum particle agglutination test is positive",
+     "why": "Confirms syphilis",
+     "also": []
+    },
+    {
+     "item": "at 14 weeks' gestation",
+     "why": "Pregnancy excludes alternatives to penicillin",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "no rash, mucosal lesions, or lymphadenopathy",
+     "why": "No secondary syphilis — latent stage",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "neurologic examination is normal",
+     "why": "Makes neurosyphilis less likely — no lumbar puncture needed first",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "generalized hives and lip swelling within an hour of taking amoxicillin",
+     "why": "IgE-mediated allergy — desensitization is needed",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "HIV testing is negative",
+     "why": "Standard co-testing — does not change the regimen",
+     "also": []
+    }
+   ],
+   "summary": "Reactive RPR and TP-PA without symptoms is latent syphilis, and in pregnancy only benzathine penicillin G prevents congenital syphilis. Because her allergy is IgE-mediated, she must be desensitized first; doxycycline is contraindicated and other alternatives are unproven.",
+   "switch": {
+    "choice": "B",
+    "condition": "If she were not pregnant, doxycycline for 28 days would be an acceptable alternative for late latent syphilis"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0119",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "혈액·종양 — 고위험 종양용해증후군의 예방",
+  "type": "혈액·종양 — 고위험 종양용해증후군의 예방",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-24",
+  "vignette": "24세 남자가 3주 전부터 배가 불러오고 복통이 있어 왔다. 복부 CT 에서 회맹부에 12 cm 종괴와 다발성 복강 내 림프절 비대가 있고, 조직검사에서 버킷림프종으로 진단되었다. 내일 항암화학요법을 시작할 예정이다. 혈압 128/80 mmHg, 맥박 92회/분이다. 소변량은 하루 1.4 L 이다. 혈청 검사 결과는 요산 11.8 mg/dL, 칼륨 5.1 mEq/L, 인 5.2 mg/dL, 칼슘 8.8 mg/dL, 크레아티닌 1.6 mg/dL(평소 0.9 mg/dL), 젖산탈수소효소 2,400 U/L 이다. G6PD 활성은 정상이다. 정맥 수액을 시작하였다.",
+  "question": "함께 투여할 약물로 가장 적절한 것은?",
+  "options": [
+   "푸로세미드",
+   "라스부리카제",
+   "알로푸리놀",
+   "탄산수소나트륨",
+   "페북소스타트"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 크고 빠르게 자라는 버킷림프종, 젖산탈수소효소 2,400 U/L, 치료 전부터 요산 11.8 mg/dL 과 크레아티닌 상승이 있어 종양용해증후군 고위험군이다. 이미 생긴 요산을 빠르게 낮춰야 하므로 요산을 수용성 알란토인으로 분해하는 라스부리카제를 수액과 함께 준다. G6PD 활성이 정상이어서 용혈·메트헤모글로빈혈증 위험이 없다. 알로푸리놀·페북소스타트는 새로 만들어지는 요산만 막고 이미 있는 요산은 낮추지 못하며, 요 알칼리화는 인산칼슘 침착을 늘려 권고되지 않고, 이뇨제는 수액으로 소변량을 늘린 뒤 체액 과부하가 있을 때만 쓴다.\n- 원리: <b>종양용해증후군은 세포 안의 물질이 한꺼번에 혈액으로 쏟아지는 대사 응급이다.</b> 세포가 깨지면 칼륨·인이 나오고, 핵산의 퓨린은 하이포잔틴 → 잔틴 → <b>요산</b>으로 대사된다. 요산은 산성인 원위세뇨관·집합관에서 결정으로 침착해 <b>급성 콩팥손상</b>을 일으키고, 인이 칼슘과 결합해 인산칼슘으로 침착하면 콩팥손상과 저칼슘혈증이 겹친다.<br> <b>알로푸리놀·페북소스타트</b>는 잔틴 산화효소를 막아 <b>새 요산 생성</b>을 줄인다. 이미 쌓인 요산은 그대로 두고, 잔틴이 쌓여 잔틴 결정 신병증을 일으킬 수도 있다. 그래서 요산 수치가 정상인 중간 위험군의 예방에 쓴다.<br> <b>라스부리카제</b>는 재조합 요산산화효소로, 사람에게 없는 효소(진화 과정에서 잃었다)라 요산을 녹기 쉬운 <b>알란토인</b>으로 직접 분해한다. 몇 시간 안에 요산이 떨어지므로 <b>고위험군이나 이미 요산이 높은 경우</b>에 쓴다. 반응 산물로 과산화수소가 생기므로 <b>G6PD 결핍</b> 환자는 용혈과 메트헤모글로빈혈증 위험이 있어 금기다.<br> <b>요 알칼리화</b>는 요산 용해도를 올리지만 인산칼슘·잔틴 침착을 늘려 현재는 권하지 않는다. 기본은 <b>충분한 수액으로 소변량을 늘리는 것</b>이다.\n- 비교: <table><thead><tr><th style=\"width:24%\">약물</th><th style=\"width:40%\">그 약이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>라스부리카제(정답)</b></td><td><b>고위험 TLS 또는 치료 전 요산 상승·콩팥손상, G6PD 정상</b></td><td><b>버킷림프종, 요산 11.8, 크레아티닌 1.6, G6PD 정상</b></td></tr> <tr><td>알로푸리놀(가장 가까운 오답)</td><td>중간 위험군 예방 — 요산 정상, 콩팥 기능 정상</td><td>요산이 이미 높아 새 생성만 막아서는 부족</td></tr> <tr><td>페북소스타트</td><td>알로푸리놀을 쓸 수 없는 중간 위험군</td><td>같은 이유로 부족</td></tr> <tr><td>탄산수소나트륨</td><td>현재 TLS 에서는 권고되지 않음</td><td>인 5.2 — 인산칼슘 침착 악화</td></tr> <tr><td>푸로세미드</td><td>수액 후 체액 과부하나 소변량 감소</td><td>소변량 1.4 L/일, 과부하 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 알로푸리놀</b>이다 — 「TLS 예방 = 알로푸리놀」로 외우기 쉽다. 갈림길은 <b>위험도와 이미 오른 요산</b>이다.\n- 오답 이유:\n  - ① 푸로세미드는 소변량을 늘리지만 체액이 부족하면 오히려 요산·인산칼슘 침착을 늘릴 수 있어, 충분한 수액 뒤에도 체액 과부하나 핍뇨가 있을 때만 쓴다. 수액 후 폐부종이 생기면서 소변량이 줄었다면 정답이 된다.\n  - ③ 알로푸리놀은 종양용해증후군 예방약으로 가장 먼저 떠오르지만 잔틴 산화효소를 막아 새 요산 생성만 줄이고 이미 11.8 mg/dL 로 쌓인 요산은 낮추지 못한다. 요산과 콩팥 기능이 정상인 중간 위험군 환자라면 이 선지가 정답이다.\n  - ④ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 잘 녹지만 인산칼슘과 잔틴의 침착이 늘어 콩팥손상이 악화될 수 있어 현재 권고되지 않는다. 종양용해증후군과 무관한 요산 결석을 녹이는 상황이라면 선택될 수 있다.\n  - ⑤ 페북소스타트도 잔틴 산화효소 억제제라 알로푸리놀과 같은 한계가 있다 — 이미 있는 요산을 줄이지 못한다. 알로푸리놀 과민반응이 있거나 콩팥 기능 때문에 용량을 줄여야 하는 중간 위험군이라면 이 선지가 정답이다.\n- 함정: 종양용해증후군 예방에 늘 알로푸리놀을 쓰지는 않는다. 이미 요산이 높거나 고위험군이면 라스부리카제를 쓴다(G6PD 확인).\n- 학습목표: 고위험 종양용해증후군(버킷림프종, 치료 전 요산 상승·콩팥 기능 저하)에서 수액과 함께 알로푸리놀이 아니라 라스부리카제를 쓰고, G6PD 결핍을 확인한다\n- 근거·출처: Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844 · Coiffier B et al. Guidelines for the management of pediatric and adult tumor lysis syndrome: an evidence-based review. J Clin Oncol 2008;26:2767 · Cairo MS, Bishop M. Tumour lysis syndrome: new therapeutic strategies and classification. Br J Haematol 2004;127:3",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "크고 빠르게 자라는 버킷림프종, 젖산탈수소효소 2,400 U/L, 치료 전부터 요산 11.8 mg/dL 과 크레아티닌 상승이 있어 종양용해증후군 고위험군이다. 이미 생긴 요산을 빠르게 낮춰야 하므로 요산을 수용성 알란토인으로 분해하는 라스부리카제를 수액과 함께 준다. G6PD 활성이 정상이어서 용혈·메트헤모글로빈혈증 위험이 없다. 알로푸리놀·페북소스타트는 새로 만들어지는 요산만 막고 이미 있는 요산은 낮추지 못하며, 요 알칼리화는 인산칼슘 침착을 늘려 권고되지 않고, 이뇨제는 수액으로 소변량을 늘린 뒤 체액 과부하가 있을 때만 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>종양용해증후군은 세포 안의 물질이 한꺼번에 혈액으로 쏟아지는 대사 응급이다.</b> 세포가 깨지면 칼륨·인이 나오고, 핵산의 퓨린은 하이포잔틴 → 잔틴 → <b>요산</b>으로 대사된다. 요산은 산성인 원위세뇨관·집합관에서 결정으로 침착해 <b>급성 콩팥손상</b>을 일으키고, 인이 칼슘과 결합해 인산칼슘으로 침착하면 콩팥손상과 저칼슘혈증이 겹친다.<br> <b>알로푸리놀·페북소스타트</b>는 잔틴 산화효소를 막아 <b>새 요산 생성</b>을 줄인다. 이미 쌓인 요산은 그대로 두고, 잔틴이 쌓여 잔틴 결정 신병증을 일으킬 수도 있다. 그래서 요산 수치가 정상인 중간 위험군의 예방에 쓴다.<br> <b>라스부리카제</b>는 재조합 요산산화효소로, 사람에게 없는 효소(진화 과정에서 잃었다)라 요산을 녹기 쉬운 <b>알란토인</b>으로 직접 분해한다. 몇 시간 안에 요산이 떨어지므로 <b>고위험군이나 이미 요산이 높은 경우</b>에 쓴다. 반응 산물로 과산화수소가 생기므로 <b>G6PD 결핍</b> 환자는 용혈과 메트헤모글로빈혈증 위험이 있어 금기다.<br> <b>요 알칼리화</b>는 요산 용해도를 올리지만 인산칼슘·잔틴 침착을 늘려 현재는 권하지 않는다. 기본은 <b>충분한 수액으로 소변량을 늘리는 것</b>이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">약물</th><th style=\"width:40%\">그 약이 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>라스부리카제(정답)</b></td><td><b>고위험 TLS 또는 치료 전 요산 상승·콩팥손상, G6PD 정상</b></td><td><b>버킷림프종, 요산 11.8, 크레아티닌 1.6, G6PD 정상</b></td></tr> <tr><td>알로푸리놀(가장 가까운 오답)</td><td>중간 위험군 예방 — 요산 정상, 콩팥 기능 정상</td><td>요산이 이미 높아 새 생성만 막아서는 부족</td></tr> <tr><td>페북소스타트</td><td>알로푸리놀을 쓸 수 없는 중간 위험군</td><td>같은 이유로 부족</td></tr> <tr><td>탄산수소나트륨</td><td>현재 TLS 에서는 권고되지 않음</td><td>인 5.2 — 인산칼슘 침착 악화</td></tr> <tr><td>푸로세미드</td><td>수액 후 체액 과부하나 소변량 감소</td><td>소변량 1.4 L/일, 과부하 없음</td></tr> </tbody></table> <b>가장 가까운 오답은 알로푸리놀</b>이다 — 「TLS 예방 = 알로푸리놀」로 외우기 쉽다. 갈림길은 <b>위험도와 이미 오른 요산</b>이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 푸로세미드는 소변량을 늘리지만 체액이 부족하면 오히려 요산·인산칼슘 침착을 늘릴 수 있어, 충분한 수액 뒤에도 체액 과부하나 핍뇨가 있을 때만 쓴다. 수액 후 폐부종이 생기면서 소변량이 줄었다면 정답이 된다.\n③ 알로푸리놀은 종양용해증후군 예방약으로 가장 먼저 떠오르지만 잔틴 산화효소를 막아 새 요산 생성만 줄이고 이미 11.8 mg/dL 로 쌓인 요산은 낮추지 못한다. 요산과 콩팥 기능이 정상인 중간 위험군 환자라면 이 선지가 정답이다.\n④ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 잘 녹지만 인산칼슘과 잔틴의 침착이 늘어 콩팥손상이 악화될 수 있어 현재 권고되지 않는다. 종양용해증후군과 무관한 요산 결석을 녹이는 상황이라면 선택될 수 있다.\n⑤ 페북소스타트도 잔틴 산화효소 억제제라 알로푸리놀과 같은 한계가 있다 — 이미 있는 요산을 줄이지 못한다. 알로푸리놀 과민반응이 있거나 콩팥 기능 때문에 용량을 줄여야 하는 중간 위험군이라면 이 선지가 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "종양용해증후군 예방에 늘 알로푸리놀을 쓰지는 않는다. 이미 요산이 높거나 고위험군이면 라스부리카제를 쓴다(G6PD 확인)."
+   },
+   {
+    "k": "학습목표",
+    "v": "고위험 종양용해증후군(버킷림프종, 치료 전 요산 상승·콩팥 기능 저하)에서 수액과 함께 알로푸리놀이 아니라 라스부리카제를 쓰고, G6PD 결핍을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844 · Coiffier B et al. Guidelines for the management of pediatric and adult tumor lysis syndrome: an evidence-based review. J Clin Oncol 2008;26:2767 · Cairo MS, Bishop M. Tumour lysis syndrome: new therapeutic strategies and classification. Br J Haematol 2004;127:3"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "버킷림프종에서 치료 전 요산 상승과 콩팥 기능 저하가 있는 고위험 종양용해증후군이므로 G6PD 정상을 확인하고 라스부리카제를 투여한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "알로푸리놀은 새 요산 생성만 막는다 — 이미 요산이 높은 고위험군에는 라스부리카제",
+   "steps": 3,
+   "chain": [
+    "버킷림프종·큰 종괴·높은 젖산탈수소효소 → 종양용해증후군 고위험",
+    "치료 전 요산 11.8 과 크레아티닌 상승 → 이미 쌓인 요산을 빨리 낮춰야 한다",
+    "G6PD 활성 정상 → 금기가 없으므로 라스부리카제"
+   ],
+   "key": [
+    {
+     "item": "버킷림프종",
+     "why": "세포 회전이 가장 빠른 종양 — 고위험",
+     "also": []
+    },
+    {
+     "item": "요산 11.8 mg/dL",
+     "why": "이미 오른 요산 — 생성 억제만으로 부족",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.6 mg/dL",
+     "why": "요산 신병증 시작 — 빠른 교정이 필요",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "젖산탈수소효소 2,400 U/L",
+     "why": "종양량이 많다는 표지",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변량은 하루 1.4 L",
+     "why": "핍뇨·과부하가 없어 이뇨제가 필요 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "G6PD 활성은 정상",
+     "why": "라스부리카제 금기 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "칼륨 5.1 mEq/L",
+     "why": "경계 수치 — 감시는 필요하지만 약물 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "버킷림프종과 높은 젖산탈수소효소, 이미 오른 요산과 크레아티닌은 고위험 종양용해증후군이다. 수액과 함께 요산을 직접 분해하는 라스부리카제를 쓰고(G6PD 정상), 알로푸리놀은 요산이 정상인 중간 위험군 예방에 쓴다.",
+   "switch": {
+    "choice": "C",
+    "condition": "만성 림프구백혈병으로 요산·크레아티닌이 정상이고 종양량이 적은 중간 위험군이었다면 알로푸리놀이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0118",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "외과계 — 무증상 복부대동맥류의 치료 시점",
+  "type": "외과계 — 무증상 복부대동맥류의 치료 시점",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-24",
+  "vignette": "A 71-year-old man comes to the physician for a follow-up examination. An abdominal aortic aneurysm measuring 4.9 cm was found on screening ultrasonography 2 years ago. He has no abdominal or back pain. He has hypertension and hyperlipidemia and smoked one pack of cigarettes daily for 40 years until he quit 2 years ago. His medications are amlodipine and atorvastatin. His blood pressure is 134/82 mmHg and pulse is 70/min. A pulsatile, nontender mass is palpable above the umbilicus. Serum creatinine is 1.0 mg/dL. CT angiography today shows an infrarenal abdominal aortic aneurysm with a maximal diameter of 5.8 cm and anatomy suitable for endovascular repair.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Add metoprolol and continue surveillance",
+   "Elective aneurysm repair",
+   "Repeat ultrasonography in 6 months",
+   "Emergency open laparotomy",
+   "Repeat CT angiography in 12 months"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: He has an asymptomatic, nontender infrarenal aneurysm that has grown from 4.9 cm to 5.8 cm. In men, elective repair is indicated when the diameter reaches 5.5 cm (5.0 cm in women), when it grows by more than 0.5 cm in 6 months or 1 cm in a year, or when it becomes symptomatic. At this size the annual rupture risk exceeds the operative risk, so elective repair (endovascular repair is suitable here) is the next step. Emergency laparotomy is for rupture or symptomatic aneurysm, and further surveillance or beta-blockers do not reduce rupture risk at this size.\n- 원리: <b>Why 5.5 cm?</b> By the law of Laplace, wall tension rises with the radius (T ∝ P × r), so a larger aneurysm is under more stress and expands faster — growth accelerates as it enlarges. Annual rupture risk is below 1% under 5.5 cm but rises to roughly 3–15% at 5.5–7 cm and higher beyond. Randomized trials (UK Small Aneurysm Trial, ADAM) showed that repairing 4.0–5.4 cm aneurysms early gave no survival benefit over surveillance, because the operative mortality (about 1–2% for EVAR, 3–5% for open repair) outweighed the low rupture risk. Above 5.5 cm the balance reverses.<br> <b>Women</b> rupture at smaller diameters (smaller native aorta), so the threshold is 5.0 cm. <b>Rapid growth</b> (&gt; 0.5 cm in 6 months, &gt; 1 cm/year) signals an unstable wall, and <b>symptoms</b> (tenderness, back or abdominal pain) suggest impending rupture — both prompt repair regardless of size.<br> <b>Medical therapy</b> — smoking cessation (the only intervention that clearly slows growth), statins, and blood pressure control — reduces cardiovascular risk but has not been shown to prevent rupture; beta-blockers did not slow growth in trials. Surveillance intervals shorten as size increases (every 3–6 months at 5.0–5.4 cm).\n- 비교: <table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Elective repair (answer)</b></td><td><b>Men ≥ 5.5 cm, women ≥ 5.0 cm, growth &gt; 0.5 cm/6 mo, or symptoms</b></td><td><b>5.8 cm, asymptomatic, stable</b></td></tr> <tr><td>Ultrasonography in 6 months (closest rival)</td><td>5.0–5.4 cm in men, asymptomatic, slow growth</td><td>Already above the threshold</td></tr> <tr><td>Emergency laparotomy</td><td>Rupture — pain, hypotension, pulsatile mass; or symptomatic tender aneurysm</td><td>No pain, normal blood pressure, nontender mass</td></tr> <tr><td>CT angiography in 12 months</td><td>4.0–4.9 cm aneurysm</td><td>Too long an interval at 5.8 cm</td></tr> <tr><td>Metoprolol and surveillance</td><td>No setting — beta-blockers do not slow growth</td><td>—</td></tr> </tbody></table> <b>The closest rival is continued surveillance</b>, because he feels well and the aneurysm is intact. The dividing line is <b>diameter relative to the sex-specific threshold and the growth rate</b>, not symptoms alone.\n- 오답 이유:\n  - (A) Metoprolol was once thought to slow expansion by lowering the rate of pressure rise, but trials showed no effect on growth or rupture. Surveillance at this size exposes him to avoidable rupture risk. Beta-blockers are still indicated for other reasons, such as coronary disease or perioperative rate control in selected patients.\n  - (C) Repeat ultrasonography in 6 months is appropriate for an asymptomatic aneurysm of 5.0 to 5.4 cm in a man, and he feels well, so continued watching seems safe. At 5.8 cm the rupture risk outweighs the operative risk. If the aneurysm measured 5.2 cm with slow growth, this would be the answer.\n  - (D) Emergency open laparotomy is the treatment for rupture or a symptomatic aneurysm. He has no pain, normal blood pressure, and a nontender mass, so there is time for planned repair with preoperative assessment. With sudden back pain, hypotension, and a pulsatile mass, emergency repair would be correct.\n  - (E) Repeat CT angiography in 12 months matches the surveillance interval for smaller aneurysms, roughly 4.0 to 4.9 cm. It is far too long at 5.8 cm, where yearly rupture risk is several percent. For a 4.3 cm aneurysm, this would be a reasonable plan.\n- 함정: An intact, painless aneurysm still needs repair once it passes the size threshold. Symptoms are not required.\n- 학습목표: 무증상 복부대동맥류는 남성에서 지름 5.5 cm 이상이거나 6개월에 0.5 cm 이상 커지면 선택적 수술(EVAR 또는 개복 교체)을 하고, 그 미만은 영상 추적한다\n- 근거·출처: Chaikof EL et al. The Society for Vascular Surgery practice guidelines on the care of patients with an abdominal aortic aneurysm. J Vasc Surg 2018;67:2 · UK Small Aneurysm Trial Participants. Mortality results for randomised controlled trial of early elective surgery or ultrasonographic surveillance for small abdominal aortic aneurysms. Lancet 1998;352:1649 · Isselbacher EM et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has an asymptomatic, nontender infrarenal aneurysm that has grown from 4.9 cm to 5.8 cm. In men, elective repair is indicated when the diameter reaches 5.5 cm (5.0 cm in women), when it grows by more than 0.5 cm in 6 months or 1 cm in a year, or when it becomes symptomatic. At this size the annual rupture risk exceeds the operative risk, so elective repair (endovascular repair is suitable here) is the next step. Emergency laparotomy is for rupture or symptomatic aneurysm, and further surveillance or beta-blockers do not reduce rupture risk at this size."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why 5.5 cm?</b> By the law of Laplace, wall tension rises with the radius (T ∝ P × r), so a larger aneurysm is under more stress and expands faster — growth accelerates as it enlarges. Annual rupture risk is below 1% under 5.5 cm but rises to roughly 3–15% at 5.5–7 cm and higher beyond. Randomized trials (UK Small Aneurysm Trial, ADAM) showed that repairing 4.0–5.4 cm aneurysms early gave no survival benefit over surveillance, because the operative mortality (about 1–2% for EVAR, 3–5% for open repair) outweighed the low rupture risk. Above 5.5 cm the balance reverses.<br> <b>Women</b> rupture at smaller diameters (smaller native aorta), so the threshold is 5.0 cm. <b>Rapid growth</b> (&gt; 0.5 cm in 6 months, &gt; 1 cm/year) signals an unstable wall, and <b>symptoms</b> (tenderness, back or abdominal pain) suggest impending rupture — both prompt repair regardless of size.<br> <b>Medical therapy</b> — smoking cessation (the only intervention that clearly slows growth), statins, and blood pressure control — reduces cardiovascular risk but has not been shown to prevent rupture; beta-blockers did not slow growth in trials. Surveillance intervals shorten as size increases (every 3–6 months at 5.0–5.4 cm)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:28%\">Option</th><th style=\"width:42%\">When it is right</th><th>This patient</th></tr></thead><tbody> <tr><td><b>Elective repair (answer)</b></td><td><b>Men ≥ 5.5 cm, women ≥ 5.0 cm, growth &gt; 0.5 cm/6 mo, or symptoms</b></td><td><b>5.8 cm, asymptomatic, stable</b></td></tr> <tr><td>Ultrasonography in 6 months (closest rival)</td><td>5.0–5.4 cm in men, asymptomatic, slow growth</td><td>Already above the threshold</td></tr> <tr><td>Emergency laparotomy</td><td>Rupture — pain, hypotension, pulsatile mass; or symptomatic tender aneurysm</td><td>No pain, normal blood pressure, nontender mass</td></tr> <tr><td>CT angiography in 12 months</td><td>4.0–4.9 cm aneurysm</td><td>Too long an interval at 5.8 cm</td></tr> <tr><td>Metoprolol and surveillance</td><td>No setting — beta-blockers do not slow growth</td><td>—</td></tr> </tbody></table> <b>The closest rival is continued surveillance</b>, because he feels well and the aneurysm is intact. The dividing line is <b>diameter relative to the sex-specific threshold and the growth rate</b>, not symptoms alone."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Metoprolol was once thought to slow expansion by lowering the rate of pressure rise, but trials showed no effect on growth or rupture. Surveillance at this size exposes him to avoidable rupture risk. Beta-blockers are still indicated for other reasons, such as coronary disease or perioperative rate control in selected patients.\n(C) Repeat ultrasonography in 6 months is appropriate for an asymptomatic aneurysm of 5.0 to 5.4 cm in a man, and he feels well, so continued watching seems safe. At 5.8 cm the rupture risk outweighs the operative risk. If the aneurysm measured 5.2 cm with slow growth, this would be the answer.\n(D) Emergency open laparotomy is the treatment for rupture or a symptomatic aneurysm. He has no pain, normal blood pressure, and a nontender mass, so there is time for planned repair with preoperative assessment. With sudden back pain, hypotension, and a pulsatile mass, emergency repair would be correct.\n(E) Repeat CT angiography in 12 months matches the surveillance interval for smaller aneurysms, roughly 4.0 to 4.9 cm. It is far too long at 5.8 cm, where yearly rupture risk is several percent. For a 4.3 cm aneurysm, this would be a reasonable plan."
+   },
+   {
+    "k": "함정",
+    "v": "An intact, painless aneurysm still needs repair once it passes the size threshold. Symptoms are not required."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 복부대동맥류는 남성에서 지름 5.5 cm 이상이거나 6개월에 0.5 cm 이상 커지면 선택적 수술(EVAR 또는 개복 교체)을 하고, 그 미만은 영상 추적한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Chaikof EL et al. The Society for Vascular Surgery practice guidelines on the care of patients with an abdominal aortic aneurysm. J Vasc Surg 2018;67:2 · UK Small Aneurysm Trial Participants. Mortality results for randomised controlled trial of early elective surgery or ultrasonographic surveillance for small abdominal aortic aneurysms. Lancet 1998;352:1649 · Isselbacher EM et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "An asymptomatic infrarenal aneurysm in a man that has reached 5.8 cm exceeds the 5.5 cm threshold, so elective repair is indicated",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "Surveillance is for 5.0–5.4 cm in men; at 5.8 cm annual rupture risk exceeds operative risk",
+   "steps": 2,
+   "chain": [
+    "maximal diameter of 5.8 cm in a man → above the 5.5 cm repair threshold",
+    "no pain, normal blood pressure, nontender → not ruptured, so elective (not emergency) repair"
+   ],
+   "key": [
+    {
+     "item": "maximal diameter of 5.8 cm",
+     "why": "Above the 5.5 cm threshold in men",
+     "also": []
+    },
+    {
+     "item": "measuring 4.9 cm was found on screening ultrasonography 2 years ago",
+     "why": "Growth of 0.9 cm over 2 years — the aneurysm is enlarging",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no abdominal or back pain",
+     "why": "Makes rupture or symptomatic aneurysm less likely — no emergency surgery",
+     "also": []
+    },
+    {
+     "item": "nontender mass",
+     "why": "No sign of impending rupture",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "anatomy suitable for endovascular repair",
+     "why": "EVAR is an option with lower early mortality",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "smoked one pack of cigarettes daily for 40 years",
+     "why": "Risk factor for aneurysm formation — does not change the size-based decision",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine is 1.0 mg/dL",
+     "why": "Normal renal function — contrast for EVAR is acceptable",
+     "also": []
+    }
+   ],
+   "summary": "The asymptomatic, nontender aneurysm has grown to 5.8 cm, above the 5.5 cm threshold for men, so elective repair is indicated. Surveillance is for smaller aneurysms, and emergency surgery is for rupture or symptoms.",
+   "switch": {
+    "choice": "C",
+    "condition": "If the aneurysm measured 5.2 cm and had grown only 0.2 cm over the past year, repeat ultrasonography in 6 months would be the answer"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0117",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 피부·호흡기·신경·산과·소화기·외과·혈액종양·감염·신장비뇨·소아·예방의학)",
+  "subtopic": "소화기·간담췌 — 활력징후가 안정된 비정맥류 상부위장관 출혈",
+  "type": "소화기·간담췌 — 활력징후가 안정된 비정맥류 상부위장관 출혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-24",
+  "vignette": "58세 남자가 이틀 전부터 검은 변을 보아 응급실에 왔다. 무릎 통증으로 2주 전부터 나프록센을 매일 먹었다. 간질환이나 음주력은 없다. 혈압 124/78 mmHg, 맥박 88회/분이고 일어서도 어지럽지 않다. 결막이 약간 창백하고 복부 압통은 없다. 직장수지검사에서 흑색변이 묻어난다. 혈색소 8.6 g/dL, 혈소판 245,000/mm³, 프로트롬빈시간 INR 1.0, 혈액요소질소 38 mg/dL, 크레아티닌 0.9 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "적혈구 2단위 수혈 후 상부내시경",
+   "옥트레오타이드 정주 후 상부내시경",
+   "복부 CT 혈관조영 후 색전술",
+   "경구 양성자펌프억제제 처방 후 외래 추적",
+   "고용량 양성자펌프억제제 정주 후 24시간 안에 상부내시경"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: NSAID 복용자의 흑색변과 혈액요소질소 상승은 상부위장관 출혈이고, 간질환·음주력이 없어 비정맥류 출혈(소화성 궤양)이 가장 가능성 높다. 혈압·맥박이 안정되고 기립 증상이 없어 고용량 양성자펌프억제제를 정주하고 24시간 안에 상부내시경으로 진단·지혈한다. 혈색소 8.6 g/dL 은 제한적 수혈 기준(7 g/dL, 심혈관질환이 있으면 8 g/dL)보다 높아 수혈하지 않는다. 옥트레오타이드는 정맥류 출혈, CT 혈관조영·색전술은 내시경으로 지혈하지 못한 경우, 외래 추적은 입원이 필요 없는 아주 낮은 위험군의 선택이다.\n- 원리: <b>상부위장관 출혈의 첫 판단은 「얼마나 급한가」와 「어디서 나는가(정맥류인가)」다.</b> 흑색변은 혈액이 위산과 장내 세균에 의해 헤마틴으로 바뀐 것이라 대개 트라이츠 인대 위쪽 출혈이고, 혈액 단백이 소장에서 흡수되어 <b>혈액요소질소가 크레아티닌에 비해 크게 오른다</b>(BUN/Cr &gt; 30).<br> <b>양성자펌프억제제</b>는 위 내 pH 를 6 이상으로 올린다. 혈소판 응집과 혈병은 산성 환경에서 펩신에 녹기 때문에, pH 를 올리면 궤양 바닥의 혈병이 안정되어 재출혈이 준다. 내시경 전에 주면 고위험 병변(활동 출혈·노출 혈관)의 비율과 내시경 치료의 필요가 줄어든다.<br> <b>제한적 수혈</b>: 혈색소 7 g/dL 기준으로 수혈한 군이 9 g/dL 기준보다 재출혈과 사망이 적었다(Villanueva 2013). 수혈로 혈관 내 압력이 오르면 문맥압과 출혈 부위 압력이 올라 혈병이 떨어질 수 있기 때문이다. 단, 활력징후가 불안정하면 혈색소 수치와 상관없이 수혈한다 — 급성 출혈 초기의 혈색소는 아직 희석되지 않아 실제 손실을 과소평가한다.<br> <b>내시경 시기</b>는 24시간 이내가 표준이다. 12시간 이내 응급 내시경이 더 낫다는 근거는 없고(Lau 2020), 불안정하면 소생을 먼저 한 뒤 서두른다.\n- 비교: <table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>PPI 정주 + 24시간 안 내시경(정답)</b></td><td><b>안정된 비정맥류 상부위장관 출혈</b></td><td><b>혈압·맥박 안정, NSAID, 간질환 없음</b></td></tr> <tr><td>수혈 후 내시경(가장 가까운 오답)</td><td>혈색소 &lt; 7 g/dL(심혈관질환 &lt; 8), 또는 쇼크·지속 출혈</td><td>혈색소 8.6, 안정 — 수혈 기준 아래로 내려가지 않았다</td></tr> <tr><td>옥트레오타이드</td><td>간경변·문맥압항진의 정맥류 출혈 의심</td><td>간질환·음주력 없음</td></tr> <tr><td>CT 혈관조영·색전술</td><td>내시경 지혈 실패 또는 내시경으로 출혈 부위를 못 찾은 활동 출혈</td><td>내시경을 아직 하지 않았다</td></tr> <tr><td>경구 PPI·외래</td><td>Glasgow-Blatchford 점수 0~1 의 아주 낮은 위험</td><td>BUN 38, 혈색소 8.6 — 입원이 필요한 위험군</td></tr> </tbody></table> <b>가장 가까운 오답은 수혈 후 내시경</b>이다 — 「출혈 + 빈혈 = 수혈」로 이어지기 쉽다. 갈림길은 <b>혈색소 7 g/dL(심혈관질환 8)과 활력징후</b>다.\n- 오답 이유:\n  - ① 적혈구 수혈은 흑색변과 혈색소 8.6 g/dL 을 보면 반사적으로 떠오르지만, 제한적 수혈(7 g/dL 기준)이 재출혈과 사망을 줄였다. 이 환자는 안정되어 있다. 혈색소가 6.5 g/dL 로 떨어졌거나 쇼크 징후가 있었다면 수혈을 먼저 하는 것이 정답이다.\n  - ② 옥트레오타이드는 내장 혈관을 수축시켜 문맥압을 낮추므로 정맥류 출혈에서 내시경 전에 쓴다. 이 환자는 간질환·음주력이 없고 NSAID 복용이라는 궤양 원인이 있다. 간경변 환자가 토혈로 왔다면 이 선지가 정답이 된다.\n  - ③ 복부 CT 혈관조영과 색전술은 출혈 부위를 찾아 막는 방법이지만, 상부위장관 출혈의 1차 진단·치료는 내시경이다. 내시경 지혈을 두 번 시도했는데도 재출혈했다면 이 선지가 정답이다.\n  - ④ 경구 PPI 와 외래 추적은 혈액요소질소·혈색소·활력징후가 모두 정상인 아주 낮은 위험(Glasgow-Blatchford 0~1)이면 가능하다. 이 환자는 BUN 38 mg/dL, 혈색소 8.6 g/dL 로 입원 내시경이 필요하다. 흑색변 한 번에 검사가 모두 정상이었다면 정답이 된다.\n- 함정: 빈혈이 있다고 바로 수혈하지 않는다. 안정된 상부위장관 출혈은 혈색소 7 g/dL(심혈관질환 8)을 기준으로 삼는다.\n- 학습목표: 활력징후가 안정된 비정맥류 상부위장관 출혈에서 고용량 양성자펌프억제제를 정주하고 24시간 이내 상부내시경을 하며, 혈색소 7 g/dL 이상이면 제한적 수혈 원칙으로 수혈하지 않는다\n- 근거·출처: Laine L et al. ACG clinical guideline: upper gastrointestinal and ulcer bleeding. Am J Gastroenterol 2021;116:899 · Villanueva C et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med 2013;368:11 · Lau JYW et al. Timing of endoscopy for acute upper gastrointestinal bleeding. N Engl J Med 2020;382:1299",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "NSAID 복용자의 흑색변과 혈액요소질소 상승은 상부위장관 출혈이고, 간질환·음주력이 없어 비정맥류 출혈(소화성 궤양)이 가장 가능성 높다. 혈압·맥박이 안정되고 기립 증상이 없어 고용량 양성자펌프억제제를 정주하고 24시간 안에 상부내시경으로 진단·지혈한다. 혈색소 8.6 g/dL 은 제한적 수혈 기준(7 g/dL, 심혈관질환이 있으면 8 g/dL)보다 높아 수혈하지 않는다. 옥트레오타이드는 정맥류 출혈, CT 혈관조영·색전술은 내시경으로 지혈하지 못한 경우, 외래 추적은 입원이 필요 없는 아주 낮은 위험군의 선택이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>상부위장관 출혈의 첫 판단은 「얼마나 급한가」와 「어디서 나는가(정맥류인가)」다.</b> 흑색변은 혈액이 위산과 장내 세균에 의해 헤마틴으로 바뀐 것이라 대개 트라이츠 인대 위쪽 출혈이고, 혈액 단백이 소장에서 흡수되어 <b>혈액요소질소가 크레아티닌에 비해 크게 오른다</b>(BUN/Cr &gt; 30).<br> <b>양성자펌프억제제</b>는 위 내 pH 를 6 이상으로 올린다. 혈소판 응집과 혈병은 산성 환경에서 펩신에 녹기 때문에, pH 를 올리면 궤양 바닥의 혈병이 안정되어 재출혈이 준다. 내시경 전에 주면 고위험 병변(활동 출혈·노출 혈관)의 비율과 내시경 치료의 필요가 줄어든다.<br> <b>제한적 수혈</b>: 혈색소 7 g/dL 기준으로 수혈한 군이 9 g/dL 기준보다 재출혈과 사망이 적었다(Villanueva 2013). 수혈로 혈관 내 압력이 오르면 문맥압과 출혈 부위 압력이 올라 혈병이 떨어질 수 있기 때문이다. 단, 활력징후가 불안정하면 혈색소 수치와 상관없이 수혈한다 — 급성 출혈 초기의 혈색소는 아직 희석되지 않아 실제 손실을 과소평가한다.<br> <b>내시경 시기</b>는 24시간 이내가 표준이다. 12시간 이내 응급 내시경이 더 낫다는 근거는 없고(Lau 2020), 불안정하면 소생을 먼저 한 뒤 서두른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">처치</th><th style=\"width:42%\">그 처치가 맞는 조건</th><th>이 증례</th></tr></thead><tbody> <tr><td><b>PPI 정주 + 24시간 안 내시경(정답)</b></td><td><b>안정된 비정맥류 상부위장관 출혈</b></td><td><b>혈압·맥박 안정, NSAID, 간질환 없음</b></td></tr> <tr><td>수혈 후 내시경(가장 가까운 오답)</td><td>혈색소 &lt; 7 g/dL(심혈관질환 &lt; 8), 또는 쇼크·지속 출혈</td><td>혈색소 8.6, 안정 — 수혈 기준 아래로 내려가지 않았다</td></tr> <tr><td>옥트레오타이드</td><td>간경변·문맥압항진의 정맥류 출혈 의심</td><td>간질환·음주력 없음</td></tr> <tr><td>CT 혈관조영·색전술</td><td>내시경 지혈 실패 또는 내시경으로 출혈 부위를 못 찾은 활동 출혈</td><td>내시경을 아직 하지 않았다</td></tr> <tr><td>경구 PPI·외래</td><td>Glasgow-Blatchford 점수 0~1 의 아주 낮은 위험</td><td>BUN 38, 혈색소 8.6 — 입원이 필요한 위험군</td></tr> </tbody></table> <b>가장 가까운 오답은 수혈 후 내시경</b>이다 — 「출혈 + 빈혈 = 수혈」로 이어지기 쉽다. 갈림길은 <b>혈색소 7 g/dL(심혈관질환 8)과 활력징후</b>다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 적혈구 수혈은 흑색변과 혈색소 8.6 g/dL 을 보면 반사적으로 떠오르지만, 제한적 수혈(7 g/dL 기준)이 재출혈과 사망을 줄였다. 이 환자는 안정되어 있다. 혈색소가 6.5 g/dL 로 떨어졌거나 쇼크 징후가 있었다면 수혈을 먼저 하는 것이 정답이다.\n② 옥트레오타이드는 내장 혈관을 수축시켜 문맥압을 낮추므로 정맥류 출혈에서 내시경 전에 쓴다. 이 환자는 간질환·음주력이 없고 NSAID 복용이라는 궤양 원인이 있다. 간경변 환자가 토혈로 왔다면 이 선지가 정답이 된다.\n③ 복부 CT 혈관조영과 색전술은 출혈 부위를 찾아 막는 방법이지만, 상부위장관 출혈의 1차 진단·치료는 내시경이다. 내시경 지혈을 두 번 시도했는데도 재출혈했다면 이 선지가 정답이다.\n④ 경구 PPI 와 외래 추적은 혈액요소질소·혈색소·활력징후가 모두 정상인 아주 낮은 위험(Glasgow-Blatchford 0~1)이면 가능하다. 이 환자는 BUN 38 mg/dL, 혈색소 8.6 g/dL 로 입원 내시경이 필요하다. 흑색변 한 번에 검사가 모두 정상이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "빈혈이 있다고 바로 수혈하지 않는다. 안정된 상부위장관 출혈은 혈색소 7 g/dL(심혈관질환 8)을 기준으로 삼는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "활력징후가 안정된 비정맥류 상부위장관 출혈에서 고용량 양성자펌프억제제를 정주하고 24시간 이내 상부내시경을 하며, 혈색소 7 g/dL 이상이면 제한적 수혈 원칙으로 수혈하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Laine L et al. ACG clinical guideline: upper gastrointestinal and ulcer bleeding. Am J Gastroenterol 2021;116:899 · Villanueva C et al. Transfusion strategies for acute upper gastrointestinal bleeding. N Engl J Med 2013;368:11 · Lau JYW et al. Timing of endoscopy for acute upper gastrointestinal bleeding. N Engl J Med 2020;382:1299"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "안정된 비정맥류 상부위장관 출혈이므로 고용량 PPI 정주 후 24시간 안에 내시경을 하고, 혈색소 8.6 g/dL 에서는 수혈하지 않는다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "수혈은 혈색소 7 g/dL(심혈관질환 8) 미만이나 불안정할 때 한다",
+   "steps": 2,
+   "chain": [
+    "흑색변 + 혈액요소질소 상승 + NSAID 복용, 간질환 없음 → 비정맥류(궤양) 상부위장관 출혈",
+    "활력징후 안정 + 혈색소 8.6 → 수혈 없이 PPI 정주와 24시간 안 내시경"
+   ],
+   "key": [
+    {
+     "item": "검은 변",
+     "why": "상부위장관 출혈",
+     "also": []
+    },
+    {
+     "item": "나프록센을 매일 먹었다",
+     "why": "소화성 궤양의 원인",
+     "also": []
+    },
+    {
+     "item": "혈액요소질소 38 mg/dL",
+     "why": "상부 출혈을 지지하고 저위험 외래 관리를 배제한다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "간질환이나 음주력은 없다",
+     "why": "정맥류 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 124/78 mmHg",
+     "why": "안정 — 소생보다 진단 내시경",
+     "also": []
+    },
+    {
+     "item": "혈색소 8.6 g/dL",
+     "why": "제한적 수혈 기준 7 g/dL 보다 높다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "INR 1.0",
+     "why": "응고 이상 없음 — 교정이 필요 없다",
+     "also": []
+    }
+   ],
+   "summary": "NSAID 복용자의 흑색변과 혈액요소질소 상승은 비정맥류 상부위장관 출혈이다. 활력징후가 안정되고 혈색소가 7 g/dL 보다 높으므로 수혈 없이 고용량 PPI 정주 후 24시간 안에 내시경을 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "혈색소가 6.5 g/dL 이거나 맥박 120회/분에 혈압 88/50 mmHg 로 불안정했다면 수혈이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0112",
   "exam": "imaging",
   "style": "usmle_style",

@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2884,
+  "total": 2895,
   "byType": {
    "kmle": 1131,
    "anatomy": 736,
    "usmle": 162,
+   "imaging": 122,
    "paper": 651,
-   "imaging": 111,
    "concept": 76,
    "ailab": 14,
    "basic": 3
@@ -38,7 +38,7 @@ window.MEDKOS_INDEX = {
    "General Surgery": 72,
    "Hematology": 69,
    "Laboratory Medicine": 65,
-   "산부인과": 30,
+   "산부인과": 31,
    "Physiology": 19,
    "순환기": 14,
    "Pharmacology": 13,
@@ -47,23 +47,23 @@ window.MEDKOS_INDEX = {
    "Immunology": 9,
    "Internal Medicine": 9,
    "병리·조직학": 7,
-   "소화기": 6,
-   "호흡기": 6,
+   "소화기": 7,
+   "호흡기": 7,
+   "소아과": 6,
+   "감염": 5,
    "내분비": 5,
-   "소아과": 5,
+   "신경": 5,
    "응급·중환자": 5,
+   "혈액·종양": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "감염": 4,
-   "신경": 4,
-   "혈액·종양": 4,
+   "신장·비뇨기": 4,
+   "예방의학·역학": 4,
+   "외과": 4,
+   "피부과": 4,
    "Oncology": 3,
-   "신장·비뇨기": 3,
-   "예방의학·역학": 3,
-   "외과": 3,
-   "피부과": 3,
    "Medical Imaging AI": 2,
    "근골격·류마티스": 2,
    "약리": 2,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1916,
+   "high": 1927,
    "medium": 919,
    "low": 49
   },
@@ -909,6 +909,197 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0170.md",
    "snippet": "A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tigh",
    "text": "Pathology Headache, Blurred Vision and Rising Creatinine Weeks After Prednisone in a Woman With Tight Skin — The Vessel Lesion Behind an Abrupt Renal Crisis systemic-sclerosis scleroderma-renal-crisis hyperplastic-arteriolosclerosis onion-skin malignant-hypertension thrombotic-microangiopathy renin corticosteroid-risk USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 6 Systemic Sclerosis, Ch 11 Blood Vessels — Hypertensive Vascular Disease, Ch 14 Kidney; Denton CP, Khanna D. Systemic sclerosis. Lancet 2017) A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tight and thick, and she has had heartburn and difficulty swallowing solid food. Three weeks ago, she was started on prednisone 30 mg daily for rapidly worsening skin tightening. She has had no hemoptysis or rash, and she has noticed less urine than usual. Her vital signs are shown. Funduscopic examination shows flame shaped hemorrhages and cotton wool spots. The skin of the fingers, hands, forearms and face is thickened and bound down, and the oral aperture is narrowed. There are healed pitting scars on the fingertips. Laboratory studies are shown. A peripheral blood smear shows numerous schistocytes. A kidney biopsy is performed. Which of the following is most likely to be found in this patient's kidney? A. Homogeneous hyaline thickening of arteriolar walls B. Concentric laminated intimal thickening of small arteries C. Crescents of proliferating cells in Bowman space D. Subepithelial immune deposits along basement membranes E. Mesangial deposits of IgA containing immune complexes 레이노 현상·손/팔/얼굴 피부 경화·손끝 함몰 흉터·삼킴곤란은 미만성 전신경화증이다. 스테로이드를 시작한 몇 주 뒤 갑자기 204/118 의 악성 범위 고혈압, 고혈압성 망막병증(화염상 출혈·면화반), 크레아티닌 급상승, 분열적혈구·혈소판감소·LDH 상승·합토글로빈 저하(미세혈관병성 용혈)가 나타났고 요침사는 적혈구 원주 없이 비교적 조용하다 = 경피증 신장 위기(scleroderma renal crisis). 이 병의 1차 병변은 사구체가 아니라 소동맥(엽간·궁상 동맥, 수입 세동맥)이다: 내막이 점액양 기질과 증식한 평활근세포로 동심원상·층판상으로 두꺼워져(양파 껍질 모양, hyperplastic arteriolosclerosis) 내강이 좁아지고 섬유소양 괴사가 겹친다. 좁아진 혈관 → 신장 관류 저하 → 레닌 과분비 → 고혈압 악화의 악순환이 생기므로 ACE 억제제가 치료의 핵심이다."
+  },
+  {
+   "id": "imaging-2026-0123",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 검진 연구의 조기발견 편향",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0123.md",
+   "snippet": "한 연구자가 60~69세 남녀 20,000명을 무작위로 두 군으로 나누어 한 군에는 매년 저선량 흉부 CT 로 폐암 검진을 하고, 다른 군에는 검진을 하지 않았다. 10년 추적 동안 폐암 진단 건수는 두 군이 거의 같았고, 인구 10만 명당 폐암 사망률도 두 군이 같았다. 그러나 폐암으로 진단된 사람만 보면 진단 후 평균 생존기간이 검진군 4.8년, 대조군 2.1년이었다. 개별 환자 기록을 보면 검진군 환자는 대조군 환자보다 ",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 검진 연구의 조기발견 편향 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 한 연구자가 60~69세 남녀 20,000명을 무작위로 두 군으로 나누어 한 군에는 매년 저선량 흉부 CT 로 폐암 검진을 하고, 다른 군에는 검진을 하지 않았다. 10년 추적 동안 폐암 진단 건수는 두 군이 거의 같았고, 인구 10만 명당 폐암 사망률도 두 군이 같았다. 그러나 폐암으로 진단된 사람만 보면 진단 후 평균 생존기간이 검진군 4.8년, 대조군 2.1년이었다. 개별 환자 기록을 보면 검진군 환자는 대조군 환자보다 평균 2.7년 일찍 진단되었고, 증상이 생긴 나이와 사망한 나이는 두 군이 같았다. 검진군의 생존기간이 더 긴 것을 가장 잘 설명하는 것은? A. 자원자 편향 B. 호손 효과 C. 조기발견 편향 D. 기간 편향 E. 과잉진단"
+  },
+  {
+   "id": "imaging-2026-0122",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 비후날문협착증의 수술 전 교정",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0122.md",
+   "snippet": "A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for the past 4 days. He is hungry immediately after vomiting. He was born at term and was breastfed without problems until ",
+   "text": "소아과 소아청소년 — 비후날문협착증의 수술 전 교정 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for the past 4 days. He is hungry immediately after vomiting. He was born at term and was breastfed without problems until this week. He has had only two wet diapers today. He appears thin and has dry mucous membranes. His pulse is 168/min and respirations are 32/min. A firm, olive shaped mass is palpable in the epigastrium. Serum studies show sodium 132 mEq/L, potassium 2.9 mEq/L, chloride 84 mEq/L, and bicarbonate 36 mEq/L. Ultrasonography shows a pyloric muscle thickness of 5 mm and a channel length of 19 mm. Which of the following is the most appropriate next step in management? A. Intravenous 0.9% saline with dextrose and potassium B. Immediate pyloromyotomy C. Intravenous 0.45% saline without potassium D. Nasogastric tube feeding of formula E. Intravenous ammonium chloride"
+  },
+  {
+   "id": "imaging-2026-0121",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0121.md",
+   "snippet": "72세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성콩팥병(평소 크레아티닌 2.4 mg/dL)과 심부전으로 리시노프릴, 스피로놀락톤, 푸로세미드를 먹고 있고, 최근 무릎 통증으로 이부프로펜을 먹었다. 혈압 132/76 mmHg, 맥박 54회/분이다. 양쪽 다리 근력이 약간 떨어져 있다. 혈청 칼륨 7.4 mEq/L(용혈 없음), 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3",
+   "text": "신장·비뇨기 신장·비뇨 — 심전도 변화를 동반한 고칼륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 72세 남자가 이틀 전부터 기운이 없고 다리에 힘이 빠져 응급실에 왔다. 당뇨병성 만성콩팥병(평소 크레아티닌 2.4 mg/dL)과 심부전으로 리시노프릴, 스피로놀락톤, 푸로세미드를 먹고 있고, 최근 무릎 통증으로 이부프로펜을 먹었다. 혈압 132/76 mmHg, 맥박 54회/분이다. 양쪽 다리 근력이 약간 떨어져 있다. 혈청 칼륨 7.4 mEq/L(용혈 없음), 나트륨 136 mEq/L, 중탄산 18 mEq/L, 크레아티닌 3.6 mg/dL, 혈당 142 mg/dL 이다. 심전도에서 앞가슴 유도의 T파가 높고 뾰족하며 QRS 폭은 0.14초이고 P파가 납작하다. 가장 먼저 투여할 약물은? A. 탄산수소나트륨 정주 B. 소듐 지르코늄 사이클로실리케이트 경구 C. 살부타몰 분무 흡입 D. 글루콘산칼슘 정주 E. 인슐린과 포도당 정주"
+  },
+  {
+   "id": "imaging-2026-0120",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 페니실린 알레르기 임신부의 매독",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0120.md",
+   "snippet": "A 26 year old woman, gravida 1, para 0, at 14 weeks' gestation comes for her first prenatal visit. She feels well. She has had one new sexual partner in the past year. She developed generalized hives and lip swelling within an hour of takin",
+   "text": "감염 감염 — 페니실린 알레르기 임신부의 매독 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a A 26 year old woman, gravida 1, para 0, at 14 weeks' gestation comes for her first prenatal visit. She feels well. She has had one new sexual partner in the past year. She developed generalized hives and lip swelling within an hour of taking amoxicillin 3 years ago. Her temperature is 36.7°C and blood pressure is 112/70 mmHg. Examination shows no rash, mucosal lesions, or lymphadenopathy, and the neurologic examination is normal. A rapid plasma reagin test is positive at a titer of 1:32, and a Treponema pallidum particle agglutination test is positive. She had a negative syphilis screening test 2 years ago. HIV testing is negative. Which of the following is the most appropriate treatment? A. Penicillin desensitization followed by benzathine penicillin G B. Doxycycline for 28 days C. Azithromycin as a single oral dose D. Ceftriaxone for 10 days E. Benzathine penicillin G after an oral antihistamine"
+  },
+  {
+   "id": "imaging-2026-0119",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 고위험 종양용해증후군의 예방",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0119.md",
+   "snippet": "24세 남자가 3주 전부터 배가 불러오고 복통이 있어 왔다. 복부 CT 에서 회맹부에 12 cm 종괴와 다발성 복강 내 림프절 비대가 있고, 조직검사에서 버킷림프종으로 진단되었다. 내일 항암화학요법을 시작할 예정이다. 혈압 128/80 mmHg, 맥박 92회/분이다. 소변량은 하루 1.4 L 이다. 혈청 검사 결과는 요산 11.8 mg/dL, 칼륨 5.1 mEq/L, 인 5.2 mg/dL, 칼슘 8.8 mg/dL, 크레아티닌 ",
+   "text": "혈액·종양 혈액·종양 — 고위험 종양용해증후군의 예방 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 24세 남자가 3주 전부터 배가 불러오고 복통이 있어 왔다. 복부 CT 에서 회맹부에 12 cm 종괴와 다발성 복강 내 림프절 비대가 있고, 조직검사에서 버킷림프종으로 진단되었다. 내일 항암화학요법을 시작할 예정이다. 혈압 128/80 mmHg, 맥박 92회/분이다. 소변량은 하루 1.4 L 이다. 혈청 검사 결과는 요산 11.8 mg/dL, 칼륨 5.1 mEq/L, 인 5.2 mg/dL, 칼슘 8.8 mg/dL, 크레아티닌 1.6 mg/dL(평소 0.9 mg/dL), 젖산탈수소효소 2,400 U/L 이다. G6PD 활성은 정상이다. 정맥 수액을 시작하였다. 함께 투여할 약물로 가장 적절한 것은? A. 푸로세미드 B. 라스부리카제 C. 알로푸리놀 D. 탄산수소나트륨 E. 페북소스타트"
+  },
+  {
+   "id": "imaging-2026-0118",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 무증상 복부대동맥류의 치료 시점",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0118.md",
+   "snippet": "A 71 year old man comes to the physician for a follow up examination. An abdominal aortic aneurysm measuring 4.9 cm was found on screening ultrasonography 2 years ago. He has no abdominal or back pain. He has hypertension and hyperlipidemia",
+   "text": "외과 외과계 — 무증상 복부대동맥류의 치료 시점 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a A 71 year old man comes to the physician for a follow up examination. An abdominal aortic aneurysm measuring 4.9 cm was found on screening ultrasonography 2 years ago. He has no abdominal or back pain. He has hypertension and hyperlipidemia and smoked one pack of cigarettes daily for 40 years until he quit 2 years ago. His medications are amlodipine and atorvastatin. His blood pressure is 134/82 mmHg and pulse is 70/min. A pulsatile, nontender mass is palpable above the umbilicus. Serum creatinine is 1.0 mg/dL. CT angiography today shows an infrarenal abdominal aortic aneurysm with a maximal diameter of 5.8 cm and anatomy suitable for endovascular repair. Which of the following is the most appropriate next step in management? A. Add metoprolol and continue surveillance B. Elective aneurysm repair C. Repeat ultrasonography in 6 months D. Emergency open laparotomy E. Repeat CT angiography in 12 months"
+  },
+  {
+   "id": "imaging-2026-0117",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 활력징후가 안정된 비정맥류 상부위장관 출혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0117.md",
+   "snippet": "58세 남자가 이틀 전부터 검은 변을 보아 응급실에 왔다. 무릎 통증으로 2주 전부터 나프록센을 매일 먹었다. 간질환이나 음주력은 없다. 혈압 124/78 mmHg, 맥박 88회/분이고 일어서도 어지럽지 않다. 결막이 약간 창백하고 복부 압통은 없다. 직장수지검사에서 흑색변이 묻어난다. 혈색소 8.6 g/dL, 혈소판 245,000/mm³, 프로트롬빈시간 INR 1.0, 혈액요소질소 38 mg/dL, 크레아티닌 0.9 mg/d",
+   "text": "소화기 소화기·간담췌 — 활력징후가 안정된 비정맥류 상부위장관 출혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 58세 남자가 이틀 전부터 검은 변을 보아 응급실에 왔다. 무릎 통증으로 2주 전부터 나프록센을 매일 먹었다. 간질환이나 음주력은 없다. 혈압 124/78 mmHg, 맥박 88회/분이고 일어서도 어지럽지 않다. 결막이 약간 창백하고 복부 압통은 없다. 직장수지검사에서 흑색변이 묻어난다. 혈색소 8.6 g/dL, 혈소판 245,000/mm³, 프로트롬빈시간 INR 1.0, 혈액요소질소 38 mg/dL, 크레아티닌 0.9 mg/dL 이다. 가장 적절한 처치는? A. 적혈구 2단위 수혈 후 상부내시경 B. 옥트레오타이드 정주 후 상부내시경 C. 복부 CT 혈관조영 후 색전술 D. 경구 양성자펌프억제제 처방 후 외래 추적 E. 고용량 양성자펌프억제제 정주 후 24시간 안에 상부내시경"
+  },
+  {
+   "id": "imaging-2026-0116",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 산모 발열과 태아빈맥",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0116.md",
+   "snippet": "40주 경산부(34세)가 규칙적인 진통으로 입원하였다. 입원 20시간 전에 양막이 파수되었다. 자궁경부는 6 cm 열려 있다. 입원 후 산모의 체온이 38.6℃ 로 올랐고 맥박은 112회/분, 혈압은 118/72 mmHg 이다. 자궁저부를 누르면 압통이 있고 질 분비물에서 악취가 난다. 백혈구는 17,800/mm³ 이다. 임신 중 B군 사슬알균 선별검사는 음성이었고 약물 알레르기는 없다. 전자태아감시의 태아심박동과 자궁수축 기",
+   "text": "산부인과 산과 — 분만 중 산모 발열과 태아빈맥 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 40주 경산부(34세)가 규칙적인 진통으로 입원하였다. 입원 20시간 전에 양막이 파수되었다. 자궁경부는 6 cm 열려 있다. 입원 후 산모의 체온이 38.6℃ 로 올랐고 맥박은 112회/분, 혈압은 118/72 mmHg 이다. 자궁저부를 누르면 압통이 있고 질 분비물에서 악취가 난다. 백혈구는 17,800/mm³ 이다. 임신 중 B군 사슬알균 선별검사는 음성이었고 약물 알레르기는 없다. 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 기록 끝부분의 끊긴 신호는 탐촉자 위치가 벗어난 것으로 확인되어 다시 붙였다. 가장 적절한 처치는? A. 옥시토신 투여 중단 B. 산모 좌측위와 수액 볼루스만 시행 C. 태아 두피 pH 측정 D. 암피실린과 겐타마이신 정주 E. 응급 제왕절개술"
+  },
+  {
+   "id": "imaging-2026-0115",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 진행성 편마비 고령 환자의 뇌 MRI",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0115.md",
+   "snippet": "A 73 year old man is brought to the physician by his wife because of progressive weakness of his left arm and leg over the past 4 weeks. During this period, he has had morning headaches and has become more forgetful. Yesterday he had a gene",
+   "text": "신경 신경 — 진행성 편마비 고령 환자의 뇌 MRI opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a A 73 year old man is brought to the physician by his wife because of progressive weakness of his left arm and leg over the past 4 weeks. During this period, he has had morning headaches and has become more forgetful. Yesterday he had a generalized tonic clonic seizure lasting 1 minute. He has hypertension treated with amlodipine. He has not had fever, recent infection, or head trauma, and he is not immunocompromised. His temperature is 36.8°C and blood pressure is 146/84 mmHg. Examination shows mild left hemiparesis and a left pronator drift. CT of the chest, abdomen, and pelvis shows no mass. An axial precontrast T1 weighted MRI of the brain is shown. Postcontrast images show a thick, irregular rim of enhancement surrounding a central non enhancing area within the right frontal and insular white matter. Which of the following is the most likely diagnosis? A. Acute ischemic infarction B. Pyogenic brain abscess C. Primary CNS lymphoma D. Chronic subdural hematoma E. Glioblastoma"
+  },
+  {
+   "id": "imaging-2026-0114",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 산소 요구가 늘어나는 코로나19 폐렴의 호흡 보조",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0114.md",
+   "snippet": "A 49 year old man is admitted to the hospital with a 7 day history of fever, dry cough, and progressive shortness of breath. A nasopharyngeal swab is positive for SARS CoV 2 by PCR. He has been receiving dexamethasone since admission. Over ",
+   "text": "호흡기 호흡기 — 산소 요구가 늘어나는 코로나19 폐렴의 호흡 보조 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a A 49 year old man is admitted to the hospital with a 7 day history of fever, dry cough, and progressive shortness of breath. A nasopharyngeal swab is positive for SARS CoV 2 by PCR. He has been receiving dexamethasone since admission. Over the past 6 hours, his oxygen requirement has increased, and his oxygen saturation is now 88% on 6 L/min of oxygen by nasal cannula. His temperature is 38.2°C, pulse is 104/min, respirations are 28/min, and blood pressure is 128/78 mmHg. He is alert and speaking in full sentences. Crackles are heard at both lung bases. Arterial blood gas analysis shows pH 7.46, PaCO2 33 mmHg, and PaO2 56 mmHg. A portable chest x ray is shown. Which of the following is the most appropriate next step in management? A. Intravenous furosemide B. Bedside bronchoscopy with lavage C. High flow nasal cannula oxygen D. Immediate endotracheal intubation E. Needle decompression of the chest"
+  },
+  {
+   "id": "imaging-2026-0113",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 어릴 때부터 있던 몸통 색소 병변의 더모스코피",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "confidence": "high",
+   "date": "2026-09-24",
+   "path": "content/imaging/2026/imaging-2026-0113.md",
+   "snippet": "40세 남자가 등에 있는 점을 확인하려고 피부과에 왔다. 이 점은 어릴 때부터 있었고, 아내가 최근 사진과 비교해 보았을 때 크기와 색이 달라지지 않았다고 한다. 가려움·출혈·궤양은 없었다. 피부암 가족력은 없고 햇볕에 심하게 탄 적도 드물다. 진찰에서 등 가운데에 지름 약 7 mm 의 타원형 갈색 반점이 있고 경계가 뚜렷하다. 다른 부위에 비슷한 점이 몇 개 있지만 이 점만 조금 크다. 병변의 더모스코피 사진은 그림과 같다.",
+   "text": "피부과 피부 — 어릴 때부터 있던 몸통 색소 병변의 더모스코피 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a 40세 남자가 등에 있는 점을 확인하려고 피부과에 왔다. 이 점은 어릴 때부터 있었고, 아내가 최근 사진과 비교해 보았을 때 크기와 색이 달라지지 않았다고 한다. 가려움·출혈·궤양은 없었다. 피부암 가족력은 없고 햇볕에 심하게 탄 적도 드물다. 진찰에서 등 가운데에 지름 약 7 mm 의 타원형 갈색 반점이 있고 경계가 뚜렷하다. 다른 부위에 비슷한 점이 몇 개 있지만 이 점만 조금 크다. 병변의 더모스코피 사진은 그림과 같다. 가장 가능성이 높은 진단은? A. 선천멜라닌세포모반 B. 표재확산흑색종 C. 색소성 기저세포암 D. 지루각화증 E. 청색모반"
   },
   {
    "id": "anatomy-daily-2026-09-24",
