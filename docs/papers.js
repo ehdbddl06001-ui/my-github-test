@@ -2,6 +2,141 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0655",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Glo-VLMs: Leveraging Vision-Language Models for Fine-Grained Diseased Glomerulus Classification",
+  "authors": [
+   "Guo Zhenhao",
+   "Saluja Rachit",
+   "Fang Hongjin",
+   "Yao Tianyuan",
+   "Liu Quan",
+   "Huo Yuankai",
+   "Liechty Benjamin",
+   "Pisapia David J",
+   "et al."
+  ],
+  "journal": "Proceedings of SPIE--the International Society for Optical Engineering",
+  "doi": "10.1117/12.3085625",
+  "pmid": "42781586",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42781586/",
+  "pubdate": "2026",
+  "date": "2026-09-24",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Vision-language models (VLMs) have shown considerable potential in digital pathology, yet their effectiveness remains limited for fine-grained, disease-specific classification tasks such as distinguishing between glomerular subtypes. The subtle morphological variations among these subtypes, combined with the difficulty of aligning visual patterns with precise clinical terminology, make automated diagnosis in renal pathology particularly challenging. In this work, we explore how large pretrained VLMs can be effectively adapted to perform fine-grained glomerular classification, even in scenarios where only a small number of labeled examples are available. In this work, we introduce Glo-VLMs, a systematic framework designed to explore the adaptation of VLMs to fine-grained glomerular classification in data-constrained settings. Our approach leverages curated pathology images alongside clinical text prompts to facilitate joint image-text representation learning for nuanced renal pathology subtypes. By assessing various VLMs architectures and adaptation strategies under a few-shot learning paradigm, we explore how both the choice of method and the amount of labeled data impact model performance in clinically relevant scenarios. To ensure a fair comparison, we evaluate all models using standardized multi-class metrics, aiming to clarify the practical requirements and potential of large pretrained models for specialized clinical research applications. As a result, fine-tuning the VLMs achieved 0.7416 accuracy, 0.9045 macro-AUC, and 0.5277 F1-score with only 8 shots per class, demonstrating that even with highly limited supervision, foundation models can be effectively adapted for fine-grained medical image classification.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0654",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Laboratory diagnostics of chronic kidney disease in Serbia: Current practice and priorities for harmonisation",
+  "authors": [
+   "Lukić Vera",
+   "Mrdaković Dušica",
+   "Milinković Neda"
+  ],
+  "journal": "Journal of medical biochemistry",
+  "doi": "10.5937/jomb0-65067",
+  "pmid": "42781651",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42781651/",
+  "pubdate": "2026-06-16",
+  "date": "2026-09-24",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** To assess current laboratory practices in chronic kidney disease (CKD) diagnostics in Serbia and identify areas requiring harmonisation in line with national and international guidelines.\n\n**METHODS:** A cross-sectional, questionnaire-based survey was conducted between June and August 2025, with support from the Serbian Society of Medical Biochemists, which distributed invitations to its members working in medical laboratories across Serbia. Eighty-three laboratories participated (response rate 84.7%), representing primary, secondary, tertiary, and private healthcare sectors. Data were analysed descriptively.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0653",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "New concepts of chitosan-based mucosal formulations for supporting control of the gastric pathogen Helicobacter pylori",
+  "authors": [
+   "Jaroniek Patrycja",
+   "Połomska Maria",
+   "Chmiela Magdalena",
+   "Gonciarz Weronika"
+  ],
+  "journal": "Frontiers in microbiology",
+  "doi": "10.3389/fmicb.2026.1937380",
+  "pmid": "42781450",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42781450/",
+  "pubdate": "2026",
+  "date": "2026-09-24",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Helicobacter pylori (H. pylori) is a human gastric pathogen that colonizes the stomach by adapting to acidic pH, penetrating the gastric mucus layer, adhering to epithelial and mucosal receptors, and delivering virulence factors that promote inflammation and immune evasion. Antibiotic-based regimens have markedly reduced the burden of H. pylori-associated disease; however, increasing antimicrobial resistance, treatment failure, recurrence, and disruption of the gut microbiota remain important clinical challenges. Future therapeutic strategies should therefore combine bacterial control with modulation of the gastric environment that sustains chronic infection and impaired host responses. Chitosan-based micro- and nanoparticles are promising delivery systems for drugs and biologically active compounds because of their biodegradability, cationic surface charge, and mucoadhesive properties. This Mini Review summarizes chitosan-based formulations proposed for the delivery of antibiotics, plant-derived antimicrobial compounds, and antimicrobial peptides, as well as systems targeting H. pylori adhesins, bacterial biofilm, or urease activity. We also discuss an experimental concept in which the immunomodulatory vaccine strain Mycobacterium bovis Bacillus Calmette-Guerin (BCG) is encapsulated in chitosan micro- or nanoparticles for gastric and/or intestinal delivery. Available in vitro and in vivo evidence suggests that chitosan-based systems may increase local exposure to active components, support mucosal immune responses, and potentially facilitate epithelial repair. Nevertheless, most data remain preclinical, and clinical efficacy in humans has not been demonstrated. The review highlights the need for broader independent validation, careful biosafety assessment, and standardized formulation parameters before these approaches can be considered for translation.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0652",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Imaging-based Demonstration of Reverse Left Heart Remodeling after Sodium-Glucose Co-transporter 2 Inhibitors in Heart Failure: A Systematic Review and Meta-analysis",
+  "authors": [
+   "Giannino Federico",
+   "Colarusso Luigi",
+   "Mancuso Matteo",
+   "Piccione Maurizio Cusmà",
+   "Di Bella Gianluca",
+   "Micari Antonio",
+   "Zito Concetta"
+  ],
+  "journal": "Journal of cardiovascular echography",
+  "doi": "10.4103/jcecho.jcecho_11_26",
+  "pmid": "42781654",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42781654/",
+  "pubdate": "2026",
+  "date": "2026-09-24",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Several studies have demonstrated the safety and efficacy of sodium-glucose co-transporter 2 inhibitors (SGLT2i), but there is little evidence on how these drugs improve cardiac remodeling parameters in patients with heart failure (HF). We performed a meta-analysis of RCTs to evaluate the effect of SGLT2i on cardiac remodeling in patients with HF. The study protocol was registered in June 2025 (PROSPERO: CRD420251055562).\n\n**METHODS:** The Medline, Scopus, and Cochrane Central databases were searched for RCTs that compared SGLT2i with placebo in patients ≥18 years of age with a diagnosis of HF. Eleven outcomes were analyzed, including left ventricular end-diastolic volume (LVEDV), left ventricular end-systolic volume (LVES), left ventricular mass (LVM), left ventricular ejection fraction (LVEF), left atrial volume indexed (LAVi), left ventricular global longitudinal Strain, stroke volume, and E/e'. Statistical analyses were performed using R version 4.3.2.\n\n**RESULTS:** We included 13 RCTs with 1181 patients, 592 of whom received SGLT2i as the intervention. LVEDV (MD: -8.41 mL; 95% CI: -13.07 to - 3.75, P = 0.004), LVES (MD: -8.11 mL; 95% CI: -13.95 to -2.28, P = 0,006), left ventricular end-systolic volume indexed (LVESVi) (MD: -3.71 mL/m2, 95% CI: -6.84 to - 0.58, P = 0.02), LVM (MD: -7.65 g; 95% CI: -13.79 to -1.51, P = 0.01), and LAVi (MD: -2.04 ml/m2; 95% CI: -3.21 to - 0.86, P = 0.0007) were significantly lower in patients treated with SGLT2i compared to placebo. In addition, this treatment led to a significant increase in LVEF (MD: +2.59%, 95% CI: 1.76 to 3.43, P < 0.00001) compared to placebo.\n\n**CONCLUSION:** Our results suggest that in patients with HF, SGLT2i have a positive influence on cardiac remodeling since they lead to a significant decrease in LVEDV, LVES, LVESVi, LVM, left ventricular mass indexed, and LAVi compared to placebo and a significant increase in EF.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0651",
   "topic": "Surgery",
   "subtopic": "",
