@@ -1,35 +1,35 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-23",
+ "generated": "2026-09-24",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2843,
+  "total": 2852,
   "byType": {
+   "anatomy": 736,
    "usmle": 162,
-   "anatomy": 735,
+   "paper": 651,
    "kmle": 1099,
    "imaging": 111,
    "concept": 76,
-   "paper": 643,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 735,
-   "Cardiology": 209,
-   "Nephrology": 171,
-   "Infectious Disease": 151,
-   "Pediatrics": 134,
-   "Hematology-Oncology": 95,
-   "Pathology": 92,
+   "Anatomy": 736,
+   "Cardiology": 210,
+   "Nephrology": 172,
+   "Infectious Disease": 152,
+   "Pediatrics": 135,
+   "Hematology-Oncology": 96,
+   "Pathology": 93,
    "Obstetrics & Gynecology": 90,
    "Psychiatry": 86,
    "Neurology": 84,
    "Rheumatology": 76,
+   "Surgery": 75,
    "Endocrinology": 74,
-   "Surgery": 74,
    "Dermatology": 73,
    "Gastroenterology": 72,
    "Ophthalmology": 72,
@@ -37,7 +37,7 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 71,
    "General Surgery": 70,
    "Hematology": 67,
-   "Laboratory Medicine": 64,
+   "Laboratory Medicine": 65,
    "산부인과": 30,
    "Physiology": 19,
    "순환기": 14,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1884,
-   "medium": 910,
+   "high": 1885,
+   "medium": 918,
    "low": 49
   },
   "tagCount": 4045
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-25",
+   "type": "anatomy",
+   "unit": "등·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-25",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/anatomy/daily/2026-09-25.md",
+   "snippet": "오늘의 학습 (2026 09 25 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 15일 · Tagging 2까지 24일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-25 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 25 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 15일 · Tagging 2까지 24일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0175",
    "type": "usmle",
@@ -237,6 +251,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-24.md",
    "snippet": "오늘의 학습 (2026 09 24 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 14일 · Tagging 2까지 25일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-24 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 24 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 14일 · Tagging 2까지 25일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 42개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0651",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0651_multioutput_machine_learning_model_for_predicting_postoperat.md",
+   "snippet": "Title Multioutput Machine Learning Model for Predicting Postoperative Outcomes After Liposuction: Algorithm Development and Validation Study in a Multicenter Cohort Authors Lee Chaewoo, Park Seoyoung, Hwang Jiyoung, Woo Selin, Park Youn Cha",
+   "text": "Surgery scraped pubmed PubMed / JMIR medical informatics Title Multioutput Machine Learning Model for Predicting Postoperative Outcomes After Liposuction: Algorithm Development and Validation Study in a Multicenter Cohort Authors Lee Chaewoo, Park Seoyoung, Hwang Jiyoung, Woo Selin, Park Youn Chan, Seo Jae Won, Lee Sun Ho, Ahn Jae Hyun, et al. Journal / DOI JMIR medical informatics · DOI: 10.2196/82145 · PMID: 42777233 https://pubmed.ncbi.nlm.nih.gov/42777233/ Abstract BACKGROUND: Liposuction is widely performed to remove localized fat deposits and improve body contour, yet individualized prediction of postoperative outcomes remains challenging. Existing machine learning (ML) studies have largely focused on single outcome prediction, with limited attention to the interdependence between postoperative body weight and circumferential size. OBJECTIVE: This study aimed to develop and validate a chained multioutput ML framework to jointly predict postoperative body weight and circumferential size after liposuction using a large multicenter cohort from the 365mc network. METHODS: We analyzed a multicenter cohort of 7804 individuals who underwent liposuction in 2024 at 20 obesity specialty clinics in the 365mc network across South Korea. Using 15 predictors, we compared 8 individual ML models, an automated ML approach, 2 ensemble approaches, and chained multioutput regression models for predicting postoperative body weight and circumferential size. Models were developed using 5 fold cross validation and evaluated on an independent test set. Performance was assessed using the coefficient of determination (R2), root mean square error (RMSE), mean absolute error (MAE), and mean absolute percentage error (MAPE), and feature importance was evaluated using Shapley additive explanation (SHAP) values. The selected model was integrated into a web based clinical decision support system (CDSS). RESULTS: A total of 7804 individuals who underwent liposuction were included; of these, 7612 (97.54%) were female. The chained extra trees regressor model with a weight to size prediction order achieved an R2 of 0.98, an RMSE of 2.36, an MAE of 1.24, and a MAPE of 2.19. The SHAP analysis identified preoperative weight as the main predictor of postoperative body weight and preoperative size and liposuction related factors as key predictors of postoperative circumferential size. The final model was integrated into a web based CDSS (365mc AI platform). CONCLUSIONS: We developed and validated a chained multioutput regression model to predict postoperative body weight and circumferential size after liposuction. Integrated into a web based CDSS, the model may support patient specific preoperative counseling and surgical planning. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0650",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0650_acceptance_and_perceived_efficacy_of_intraoral_versus_extrao.md",
+   "snippet": "Title Acceptance and perceived efficacy of intraoral versus extraoral photobiomodulation for oral mucositis prevention in pediatric patients Authors Freitas Isabela de Oliveira Plugge, Renz Giovanna Leal Klein, Schuartz Isabela, Pianovski M",
+   "text": "Pediatrics scraped pubmed PubMed / Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer Title Acceptance and perceived efficacy of intraoral versus extraoral photobiomodulation for oral mucositis prevention in pediatric patients Authors Freitas Isabela de Oliveira Plugge, Renz Giovanna Leal Klein, Schuartz Isabela, Pianovski Mara Albonei Dudeque, Sassi Laurindo Moacir, Wastner Bruna da Fonseca, de Araujo Melissa Rodrigues Journal / DOI Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer · DOI: 10.1007/s00520 026 11227 3 · PMID: 42776303 https://pubmed.ncbi.nlm.nih.gov/42776303/ Abstract OBJECTIVE: To compare acceptance, tolerability, and perceived efficacy of extraoral (EO) and intraoral (IO) photobiomodulation therapy (PBMT) for oral mucositis (OM) prevention in pediatric oncology patients. METHODS: Caregivers of 32 pediatric patients undergoing chemotherapy completed a structured questionnaire after their children experienced both intraoral and extraoral PBMT for oral mucositis prevention during different chemotherapy cycles within a randomized clinical study. Device preference, discomfort, perceived pain control, and reasons for preference were descriptively analyzed. RESULTS: EO PBMT was preferred by 65.6% of respondents, whereas 34.4% preferred IO PBMT. Preference for EO PBMT was mainly associated with greater comfort and avoidance of mouth opening. Discomfort was reported by 43.8% during IO PBM and by 6.3% during EO PBMT, with a statistically significant difference between the modalities (p = 0.001). IO PBMT was more often perceived to provide better pain control (34.4%), whereas 12.5% favored EO PBMT. CONCLUSION: EO PBMT demonstrated greater caregiver acceptance and lower treatment related discomfort than IO PBMT. Although caregivers more frequently perceived IO PBMT as providing better pain control, these subjective perceptions did not correspond to differences in the clinical occurrence or severity of OM between treatment modalities. EO PBMT therefore represents a feasible and well accepted approach for supportive care in pediatric oncology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0649",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology(R) neuroimmunology & neuroinflammation",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0649_human_autoantibodies_against_mog_isoforms_3_antibodies_sugge.md",
+   "snippet": "Title Human Autoantibodies Against MOG Isoforms: α3 Antibodies Suggest Relapsing Disease Course in Myelin Oligodendrocyte Glycoprotein Antibody Associated Disease Authors Kwon Young Nam, Leal Rato Miguel, Kim Jun Soon, Park Kyung Seok, Lee ",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Neurology(R) neuroimmunology & neuroinflammation Title Human Autoantibodies Against MOG Isoforms: α3 Antibodies Suggest Relapsing Disease Course in Myelin Oligodendrocyte Glycoprotein Antibody Associated Disease Authors Kwon Young Nam, Leal Rato Miguel, Kim Jun Soon, Park Kyung Seok, Lee Hyung Soo, Baek Seol Hee, Kim Byung Jo, Chung Yeon Hak, et al. Journal / DOI Neurology(R) neuroimmunology & neuroinflammation · DOI: 10.1212/NXI.0000000000200660 · PMID: 42777168 https://pubmed.ncbi.nlm.nih.gov/42777168/ Abstract BACKGROUND AND OBJECTIVES: A proportion of patients with myelin oligodendrocyte glycoprotein antibody associated disease (MOGAD) experience relapses, but biomarkers predicting which patients are likely to relapse are not yet widely available. The MOGα1 isoform is the most commonly used in diagnostic MOG antibody assays, while the clinical relevance of antibodies against other MOG isoforms remains unclear. METHODS: This study used a stepwise approach using international multicenter serum samples collected prospectively. First, diagnostic accuracy of the MOGα1 and β1 isoforms was compared using 748 consecutive sera from Korean patients suspected of having demyelinating disease of the CNS. Next, the predictive values of antibodies against each of 7 MOG isoforms for relapses were assessed on sera from Korean patients with MOGAD (derivation cohort). Finally, the association between MOG isoform antibody with relapses was validated in 2 independent cohorts: a Korean validation cohort (n = 49) and a UK validation cohort (n = 56). RESULTS: Both MOGα1 antibody and MOGβ1 antibody assays had comparable diagnostic accuracy. Among patients with MOGAD, the presence of MOGα3 antibody was associated with a higher risk of relapse, with a hazard ratio of 4.3 in the derivation cohort (log rank p < 0.001). This finding was also confirmed in an independent smaller Korean validation cohort (log rank p = 0.009) and in a subgroup of UK validation cohort (log rank p = 0.048). DISCUSSION: The presence of MOGα3 IgG in patients with MOGAD may be associated with an increased risk of relapse, indicating that early preventive treatment strategies may be appropriate in these individuals. MOGβ1 IgG demonstrated diagnostic accuracy similar to MOGα1 IgG. CLASSIFICATION OF EVIDENCE: This study provides Class II evidence that MOGα1 antibody and MOGβ1 antibody assays have comparable diagnostic accuracy for MOGAD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0648",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Infectious disease reports",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0648_mycobacterium_marinum_hand_infection_in_a_kidney_transplant_.md",
+   "snippet": "Title Mycobacterium marinum Hand Infection in a Kidney Transplant Recipient: A Diagnostic Challenge Authors Braile Mariantonia, Corvino Giusy, Abate Rosamaria, Conticelli Mariano Journal / DOI Infectious disease reports · DOI: 10.3390/idr18",
+   "text": "Pathology scraped pubmed PubMed / Infectious disease reports Title Mycobacterium marinum Hand Infection in a Kidney Transplant Recipient: A Diagnostic Challenge Authors Braile Mariantonia, Corvino Giusy, Abate Rosamaria, Conticelli Mariano Journal / DOI Infectious disease reports · DOI: 10.3390/idr18050095 · PMID: 42776646 https://pubmed.ncbi.nlm.nih.gov/42776646/ Abstract BACKGROUND: Mycobacterium marinum is a slow growing nontuberculous mycobacterium associated with aquatic environments and may cause chronic skin and soft tissue infections following minor skin trauma. Diagnosis can be delayed because clinical manifestations may mimic conventional bacterial infections. We report an unusual case in a kidney transplant recipient with a positive QuantiFERON TB Gold test and subsequent M. marinum infection of the hand. CASE PRESENTATION: A 53 year old man with a history of kidney transplantation and long term immunosuppressive therapy developed progressive swelling, pain, erythema, and functional impairment of the right third finger. After independently discontinuing tacrolimus, mycophenolate mofetil, and prednisone following a positive QuantiFERON TB Gold test, he developed a progressive hand infection despite empirical ciprofloxacin therapy. He reported repeated exposure to a domestic freshwater aquarium and frequent contact with aquarium water and filtration equipment, with minor skin abrasions. Surgical exploration revealed dense, whitish, caseous appearing material. Histopathology demonstrated chronic granulomatous inflammation, while Ziehl Neelsen staining showed acid fast bacilli. Culture yielded slow growing photochromogenic colonies at 28 32 °C, and species specific PCR confirmed M. marinum. No antimicrobial susceptibility testing was performed. Following surgical drainage and six days of empirical ciprofloxacin, no targeted antimycobacterial therapy was administered. The patient achieved complete clinical resolution, and immunosuppressive therapy was gradually reintroduced approximately four weeks after surgery. CONCLUSIONS: This case highlights the importance of considering M. marinum in persistent or treatment refractory hand infections, particularly in patients with aquarium exposure and impaired immunity. Early tissue sampling, appropriate culture conditions, and molecular identification are essential for diagnosis. A positive QuantiFERON TB Gold result should be interpreted cautiously because cross reactivity with M. marinum is possible. The favorable outcome observed after surgical source control and a short empirical course of ciprofloxacin is unusual and should not be interpreted as evidence supporting short course monotherapy for deep M. marinum infection. Because antimicrobial susceptibility testing and serial follow up cultures were unavailable, the contribution of ciprofloxacin to microbiological clearance cannot be determined. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0647",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0647_anito_cel_for_multiple_myeloma.md",
+   "snippet": "Title Anito cel for Multiple Myeloma Authors Lin Yi Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMe2609181 · PMID: 42777246 https://pubmed.ncbi.nlm.nih.gov/42777246/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen pape",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The New England journal of medicine Title Anito cel for Multiple Myeloma Authors Lin Yi Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMe2609181 · PMID: 42777246 https://pubmed.ncbi.nlm.nih.gov/42777246/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0646",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Turkish journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0646_spontaneous_renal_pelvis_perforation_in_an_adolescent_with_a.md",
+   "snippet": "Title Spontaneous renal pelvis perforation in an adolescent with a solitary kidney Authors Beşli Çelik Dilara, Yılmaz Songül, Burgu Berk, Fitöz Ömer Suat, Şahap Seda Kaynak, Özçakar Zeynep Birsin Journal / DOI The Turkish journal of pediatr",
+   "text": "Nephrology scraped pubmed PubMed / The Turkish journal of pediatrics Title Spontaneous renal pelvis perforation in an adolescent with a solitary kidney Authors Beşli Çelik Dilara, Yılmaz Songül, Burgu Berk, Fitöz Ömer Suat, Şahap Seda Kaynak, Özçakar Zeynep Birsin Journal / DOI The Turkish journal of pediatrics · DOI: 10.24953/turkjpediatr.2026.7209 · PMID: 42777206 https://pubmed.ncbi.nlm.nih.gov/42777206/ Abstract BACKGROUND: Spontaneous renal pelvis perforation is a rare but serious condition, often associated with urinary obstruction, infection, or increased intrapelvic pressure. Here, we present a pediatric patient with a solitary kidney who developed this rare condition. CASE PRESENTATION: We report the case of a 14 year old girl with a solitary kidney who presented with abdominal pain, vomiting, and anuria. Laboratory findings revealed acute kidney injury, requiring emergent hemodialysis. Imaging studies demonstrated a spontaneous perforation in the anteromedial renal pelvis. The patient was initially managed with antibiotics and a double J (DJ) ureteral stent. However, persistent fever and worsening retroperitoneal fluid collection necessitated percutaneous abscess drainage. Despite initial clinical improvement, she later developed recurrent urine leakage due to DJ stent occlusion, which required percutaneous nephrostomy placement. At the three month follow up, spontaneous resolution of the perforation was confirmed, and the patient was diagnosed with stage 4 chronic kidney disease. CONCLUSIONS: Spontaneous renal pelvis perforation remains a rare entity in the pediatric population, with limited cases documented in the literature. This case emphasizes the importance of early recognition, timely imaging, and appropriate urinary drainage to prevent long term renal impairment. In pediatric patients with a solitary kidney, close monitoring and a multidisciplinary approach are crucial to optimizing outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0645",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS sensors",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0645_single_bacterium_biosensing_a_rapid_electrochemical_strategy.md",
+   "snippet": "Title Single Bacterium Biosensing: A Rapid Electrochemical Strategy to Differentiate Antibacterial Efficacy and Mechanism Authors Liu Yuyang, Gao Guanyue, Ma Xiaoling, Zhang Hanxin, Zhao Qi, Zhi Jinfang Journal / DOI ACS sensors · DOI: 10.1",
+   "text": "Infectious Disease scraped pubmed PubMed / ACS sensors Title Single Bacterium Biosensing: A Rapid Electrochemical Strategy to Differentiate Antibacterial Efficacy and Mechanism Authors Liu Yuyang, Gao Guanyue, Ma Xiaoling, Zhang Hanxin, Zhao Qi, Zhi Jinfang Journal / DOI ACS sensors · DOI: 10.1021/acssensors.6c02048 · PMID: 42777140 https://pubmed.ncbi.nlm.nih.gov/42777140/ Abstract The timely identification of drug resistant pathogens and rapid differentiation of antibacterial mechanisms are critical in combating the escalating crisis of antimicrobial resistance. However, traditional broth culturing methods are inherently time consuming and lack single cell sensitivity. In this study, we reported a highly responsive biosensing platform based on single entity impact electrochemistry (SIE) to rapidly differentiate bacterial activity at the single bacterium level. This method utilized p benzoquinone (BQ) and BQ K3Fe(CN)6 as redox mediators that were continuously reduced by the bacterial respiratory chain. Upon the collision of an individual bacterium with the ultramicroelectrode, these mediators were re oxidized, generating transient current spikes that serve as a direct indicator of cellular viability. By tracking these distinct electrochemical signals, we successfully discriminated the responses of Escherichia coli to three antibacterial agents. Specifically, the heavy metal stress induced by Pb2+ exposure resulted in a progressive decline in collision spike amplitude, with the total transferred charge decreasing from (7.51 ± 0.48) × 10 2 pC to (2.50 ± 0.14) × 10 2 pC per bacterium. The bacteriostatic effect of doxycycline yielded negligible immediate signal change due to its protein synthesis inhibition mechanism. In contrast, the membrane disrupting effect of polymyxin B triggered a rapid cessation of collision signals alongside an increase in total current amplitude due to the leakage of intracellular redox contents. Based on these unique electrochemical signatures, we successfully identified polymyxin B resistant E. coli mutants and achieved rapid validation of alternative antibiotics against this drug resistant strain. This work expanded the analytical capabilities of SIE, offering a highly efficient platform for bacterial phenotypic screening and drug resistance monitoring. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0644",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular pharmacology and therapeutics",
+   "confidence": "medium",
+   "date": "2026-09-23",
+   "path": "content/papers/2026/2026-09-23_paper-2026-0644_adherence_to_direct_oral_anticoagulants_in_patients_with_non.md",
+   "snippet": "Title Adherence to Direct Oral Anticoagulants in Patients With Non valvular Atrial Fibrillation: A Single Center Retrospective Study Authors Chang Cuie, Lv Sha, Yu Lingyan, Xu Lingcheng, Xu Donghang, Dai Haibin, Xu Junjun Journal / DOI Jour",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular pharmacology and therapeutics Title Adherence to Direct Oral Anticoagulants in Patients With Non valvular Atrial Fibrillation: A Single Center Retrospective Study Authors Chang Cuie, Lv Sha, Yu Lingyan, Xu Lingcheng, Xu Donghang, Dai Haibin, Xu Junjun Journal / DOI Journal of cardiovascular pharmacology and therapeutics · DOI: 10.1177/10742484261490639 · PMID: 42777254 https://pubmed.ncbi.nlm.nih.gov/42777254/ Abstract ObjectiveTo investigate adherence to four direct oral anticoagulants (DOACs) and its influencing factors in patients with non valvular atrial fibrillation (NVAF), providing evidence for strategies to improve adherence.MethodsA retrospective cohort study included NVAF patients initiating DOAC therapy at a tertiary hospital (January 2016 November 2023). Adherence was evaluated using the proportion of days covered (PDC), with PDC ≥ 0.8 defined as good adherence. Adherence levels for dabigatran, rivaroxaban, apixaban, and edoxaban were compared at 3, 6, 9, and 12 months. Logistic regression identified factors influencing 1 year adherence, assessing the impact of initiation year and the National Volume Based Drug Procurement (NVBP) policy.ResultsA total of 1,150 NVAF patients were enrolled (dabigatran: n = 401; rivaroxaban: n = 656; apixaban: n = 18; edoxaban: n = 75),In this main cohort, overall adherence progressively declined, with only 40.78% achieving PDC ≥ 0.8 at 1 year. Significant differences existed among groups (P<0.001). Dabigatran demonstrated the highest 1 year adherence (53.62%), followed by rivaroxaban (34.91%), apixaban (27.78%), and edoxaban (26.67%). Compared with dabigatran, rivaroxaban (OR=0.47) and edoxaban (OR=0.33) were independently associated with poorer adherence. Age ≥75 years (OR=0.62) and self pay (OR=0.49) were risk factors for poor adherence, while diabetes (OR=1.48) and prior stroke (OR=1.48) predicted better adherence. Patients initiating therapy in 2017 showed the highest adherence. Post NVBP, generic dabigatran adherence exceeded the original formulation at 6 months (P=0.038), but this difference disappeared at 1 and 2 years.ConclusionDOAC adherence among NVAF patients is suboptimal and decreases over time. Among the four DOACs, dabigatran was associated with the highest adherence. Elderly (≥75 years) and self paying patients are at higher risk of poor adherence, whereas those with diabetes or stroke history show better adherence. The NVBP policy improves adherence short term, but long term effects are limited. Targeted interventions are necessary for high risk populations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1130",
