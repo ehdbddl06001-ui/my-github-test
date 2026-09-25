@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2905,
+  "total": 2906,
   "byType": {
+   "anatomy": 737,
    "kmle": 1131,
    "concept": 82,
-   "anatomy": 736,
    "usmle": 162,
    "paper": 655,
    "imaging": 122,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 736,
+   "Anatomy": 737,
    "Cardiology": 213,
    "Nephrology": 175,
    "Infectious Disease": 156,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "이비인후과": 1
   },
   "byConfidence": {
-   "high": 1927,
+   "high": 1928,
    "medium": 929,
    "low": 49
   },
   "tagCount": 4120
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-26",
+   "type": "anatomy",
+   "unit": "등·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-26",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/anatomy/daily/2026-09-26.md",
+   "snippet": "오늘의 학습 (2026 09 26 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 16일 · Tagging 2까지 23일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-26 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 26 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 16일 · Tagging 2까지 23일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-1162",
    "type": "kmle",
