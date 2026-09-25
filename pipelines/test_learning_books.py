@@ -629,6 +629,16 @@ class IdMentions(unittest.TestCase):
 
 
 class SourceChecks(_FixtureSources):
+    def test_method_change_rebaselines_instead_of_flagging(self):
+        # 2026-09-25: 출판사 url 도달(reachable)로 기록된 출처가 DOI→PubMed 로 바뀌자 「지문 변경」으로 찍혔다
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "sc.json"
+            out.write_text(json.dumps({"111": {"status": "ok", "method": "reachability", "baseline": "reachable"}}), encoding="utf-8")
+            xml = "<PubmedArticleSet><PubmedArticle></PubmedArticle></PubmedArticleSet>"
+            r = cs.run(getter=lambda u: xml if "eutils" in u else "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf", out=out, today="2026-09-26")
+            self.assertEqual((r["111"]["status"], r["111"]["baseline"]), ("ok", "[]"))
+            self.assertIn("확인 방법이 바뀌어", r["111"]["note"])
+
     def test_doi_with_publisher_url_is_checked_by_doi_not_the_site(self):
         SRC_FIXTURE[0]["cn.x.y.z"]["sources"].append({"id": "u", "doi": "10.1/pub", "url": "https://publisher.example/x",
                                                       "title": "출판사", "checked_at": "2026-09-18"})
