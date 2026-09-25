@@ -234,8 +234,29 @@
    "date": "2026-09-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0172": {
+   "id": "usmle-2026-0172",
+   "exam": "usmle",
+   "subject": "Pharmacology",
+   "step": "Step 1",
+   "type": "Sore Throat, Mouth Ulcers and Pancytopenia Five Weeks After a Gout Drug Was Added in a Man With Crohn Disease — The Enzyme That Was Quietly Clearing His Immunosuppressant",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following drugs is the most likely cause of this patient's current condition?",
+   "chosen": 0,
+   "chosenText": "Probenecid",
+   "answer": 2,
+   "answerText": "Allopurinol",
+   "coreNote": "",
+   "differ": "",
+   "decision": "아자티오프린의 활성형 6-MP 는 크산틴 산화효소와 TPMT 로 불활성화되므로, 알로푸리놀이 크산틴 산화효소를 막으면 활성 티오구아닌 뉴클레오타이드가 쌓여 골수 억제가 온다. 오래 안정적이던 환자에게 통풍 예방약 추가 몇 주 뒤 범혈구감소가 생기고 요산이 떨어졌다면 이 상호작용이다. 함께 써야 하면 아자티오프린을 1/4~1/3 로 줄인다.",
+   "source": "USMLE-style / MedKOS (Goodman & Gilman's The Pharmacological Basis of Therapeutics 14e — Immunosuppressants and Drugs for Gout; FitzGerald JD et al. 2020 American College of Rheumatology Guideline for the Management of Gout, Arthritis Care Res 2020; Relling MV et al. CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15 Genotypes, Clin Pharmacol Ther 2019)",
+   "date": "2026-09-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-25T08:27:15.273Z"
+ "updated": "2026-09-25T08:31:34.813Z"
 }
