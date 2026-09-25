@@ -55,7 +55,7 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
 - 출처가 충돌하면 임의로 고르지 말고 source/edition/date를 남기고 confidence를 낮춘다.
   출처는 실제로 확인한 것만, 논문·지침은 `pmid` 를 붙인다(DOI 만 두지 않는다).
 
-## 임시 컨테이너(루틴) 대응 — 매우 중요
+## 임시 컨테이너(루틴) 대응
 - 실행 시작: 최근 주제(`recent_topics`)를 읽어 중복을 피하고, ID는 `next_id()` 로만 발급한다.
 - 날짜는 **KST**(`TZ=Asia/Seoul date +%F`). 컨테이너는 UTC 라 그대로 쓰면 하루 밀린다.
 - **상태는 `content/` 파생물이다(충돌 원천 제거)**: `next_id`·`recent_topics`·`paper_seen`
@@ -209,7 +209,7 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   문제(예: inter-patient 일반화)를 SMOTE·도메인적응·self-supervised·파운데이션 모델 로드맵으로
   큐잉. `content/ailab/quests/`. 진척은 실험을 `ingest_run.py` 로그로 채우며 쌓는다.
 
-## 실행 로그 루프 (예측 방지 — 매우 중요)
+## 실행 로그 루프 (예측 방지)
 클로드가 "네가 실제로 한 것"을 낡은 repo 노트북으로 **추측**하면 틀린다. 그래서 실제 코드·
 수치의 Source of Truth를 repo에 박는다:
 1. Colab에서 실습 → 노트북과 `result.json`(CELL이 Drive에 저장)을 얻는다.

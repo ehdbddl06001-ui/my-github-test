@@ -42,10 +42,10 @@ python pipelines/indexer.py
 python pipelines/export_ailab_web.py     # 논의 노트가 홈페이지 🤖 AI랩 맨 위에 뜨게
 python pipelines/export_search_web.py
 ```
-새 `.md` + `state/*.json` + `docs/` 번들을 같은 커밋에. 신규 타입이므로 **claude/ 브랜치 →
-PR**로 올려 사람이 검수한다(사용자가 main 직접 커밋을 허용하면 예외).
+새 `.md` + `docs/` 번들을 같은 커밋에. 커밋은 `python pipelines/publish.py -m "<메시지>"`(콘텐츠 레인 → main).
+코드(`pipelines/**` 등)를 함께 고쳤으면 `--branch claude/<작업>` + PR.
 
 ## 주의
 - 코드 보완 제안 중 **작고 확실한 것은 직접 고쳐 같은 PR에 담아도 좋다**(예: 오타·주석·
   작은 리팩터). 크거나 애매하면 노트의 아이디어로만 남기고 사용자에게 판단을 넘긴다.
-- 한 회차에 너무 많이 던지지 말 것. 각 섹션 2~4개, 우선순위를 매겨 실행 가능하게.
+- 각 섹션은 우선순위를 매긴, 이번 회차에 실제로 실행할 수 있는 항목만 담는다.

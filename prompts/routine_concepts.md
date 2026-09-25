@@ -31,5 +31,5 @@ Claude Routine `trig_01DzVed7kjfo6hLqyLQf1vaJ`(cron `0 9,21 * * *` UTC, 모델 c
    - 이 컨테이너는 PubMed·doi.org·NCBI 를 막는다. 못 연 출처는 `verified: citation` 과 사유를 적는다. PMID 를 알면 `pmid` 를 붙이고, 모르면 DOI 만 둔다(학습서 워크플로가 DOI 로 PMID 를 찾는다). 없는 출처·안 본 쪽수를 만들지 않는다.
 5. 검증(오류 0 이어야 커밋): `python pipelines/concepts.py`(도식이 한 쪽에 안 들어가면 ERROR — 노드 글을 줄인다; 판형 2 정리본은 판형 WARN 도 0) → 목표·distractors 를 더한 문항이 있으면 `python pipelines/lint_questions.py <파일들>` → `python pipelines/outline.py`.
 6. 게시: `python pipelines/publish.py -m "오답 정리본 <날짜 시각>: <무엇을>"`(콘텐츠 레인 → main). `state/concept_queue.json` 이 코드 레인으로 잡히면 `git checkout -- state/concept_queue.json` 뒤 다시 게시. 코드를 고쳐야 하면 고치지 말고 보고에 남긴다.
-7. 조용한 무작업 종료 금지. 끝은 둘 중 하나 — (a) 커밋 해시 + 새 정리본(id·제목·슬롯·해리슨 대조: 쪽 / 문서 없음 / 대상 아님)·손질(id·더한 covers)·변형(정리본 id·문항 id·flip)·보기 설명(문항 id:보기)·판형 2로 옮긴 정리본(id) + 남은 큐 수, 또는 (b) 아무것도 만들지 않은 사유 한 문장을 첫 줄에. 한국어 15줄 이내. 새로 만들거나 손질했으면 PushNotification 으로 한 줄 요약.
+7. 조용한 무작업 종료 금지. 끝은 둘 중 하나 — (a) 커밋 해시 + 새 정리본(id·제목·슬롯·해리슨 대조: 쪽 / 문서 없음 / 대상 아님)·손질(id·더한 covers)·변형(정리본 id·문항 id·flip)·보기 설명(문항 id:보기)·판형 2로 옮긴 정리본(id) + 남은 큐 수, 또는 (b) 아무것도 만들지 않은 사유 한 문장을 첫 줄에. 보고는 한국어로, 폰 알림에서 바로 읽히게 결과·남은 큐·문제만. 새로 만들거나 손질했으면 PushNotification 으로 한 줄 요약.
 --------------------------------------------------------------------
