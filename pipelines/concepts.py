@@ -375,6 +375,35 @@ def source_numbers(meta: dict[str, Any]) -> dict[str, int]:
     return {str(s.get("id")): i for i, s in enumerate(meta.get("sources") or [], 1) if isinstance(s, dict)}
 
 
+ID_MENTION_RE = re.compile(r"(?:<code>|`)?\b(cn\.[a-z0-9-]+\.[a-z0-9-]+\.[a-z0-9-]+)\b(?:</code>|`)?")
+
+
+@lru_cache(maxsize=1)
+def concept_titles() -> dict[str, str]:
+    """{정리본 id: 제목} — frontmatter 만 읽는다(load_concepts 를 부르지 않아 순환이 없다)."""
+    out: dict[str, str] = {}
+    for f in CONCEPT_DIR.rglob("*.md") if CONCEPT_DIR.exists() else []:
+        try:
+            m = load(f).meta
+        except Exception:
+            continue
+        if m.get("id") and m.get("title"):
+            out[str(m["id"])] = str(m["title"])
+    return out
+
+
+def humanize_ids(text: str) -> str:
+    """본문이 다른 정리본을 내부 id 로 가리키면(「cn.peds.….secondary-prophylaxis 가 다룬다」) 그 정리본 제목으로 바꾼다.
+    2026-09-25: 루틴이 쓴 정리본 두 개가 id 를 본문에 적어 학습서 검증(「내부 ID 가 PDF 에 보인다」)이 안과·소아청소년과 책을 멈췄다.
+    모르는 id 는 그대로 둔다(검증이 잡는다)."""
+    titles = concept_titles()
+
+    def rep(m: re.Match) -> str:
+        t = titles.get(m.group(1))
+        return f"「{t}」" if t else m.group(0)
+    return ID_MENTION_RE.sub(rep, text)
+
+
 def render_cites(text: str, meta: dict[str, Any], mode: str = "web", anchor: str = "") -> str:
     """[[id: 위치]] 를 번호 근거로 바꾼다. text 는 이미 escape·정화된 글이어야 한다(여기서 만드는 태그만 더해진다).
     mode=pdf 이면 단원 끝 참고문헌으로 가는 링크, web 이면 <sup>. 원문 본문과 대조하지 않은 근거에는 † 를 붙인다."""
@@ -391,7 +420,7 @@ def render_cites(text: str, meta: dict[str, Any], mode: str = "web", anchor: str
         if mode == "pdf":
             return f'<a class="cite" href="#{anchor}-ref-{n}">[{label}]</a>'
         return f"<sup>[{label}]</sup>"
-    return CITE_RE.sub(rep, text)
+    return humanize_ids(CITE_RE.sub(rep, text))
 
 
 def question_learning_errors(meta: dict[str, Any], concept: dict | None) -> list[tuple[str, str]]:
