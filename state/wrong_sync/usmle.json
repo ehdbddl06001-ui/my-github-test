@@ -192,8 +192,29 @@
    "differ": "",
    "source": "USMLE-style / MedKOS (biochemistry · fatty acid oxidation disorders)",
    "date": "2026-08-18"
+  },
+  "usmle-2026-0170": {
+   "id": "usmle-2026-0170",
+   "exam": "usmle",
+   "subject": "Pathology",
+   "step": "Step 1",
+   "type": "Headache, Blurred Vision and Rising Creatinine Weeks After Prednisone in a Woman With Tight Skin — The Vessel Lesion Behind an Abrupt Renal Crisis",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is most likely to be found in this patient's kidney?",
+   "chosen": 2,
+   "chosenText": "Crescents of proliferating cells in Bowman space",
+   "answer": 1,
+   "answerText": "Concentric laminated intimal thickening of small arteries",
+   "coreNote": "",
+   "differ": "",
+   "decision": "전신경화증 환자가 스테로이드 뒤 갑자기 악성 범위 고혈압, 급성 신손상, 미세혈관병성 용혈을 보이고 요침사가 조용하면 경피증 신장 위기다. 병변은 소동맥 내막의 동심성·층판상 증식(양파 껍질)으로 내강이 좁아져 레닌이 과분비된다. 초자양 세동맥경화는 오래된 경도 고혈압·당뇨의 병변이고, 반달체·면역 침착은 활동성 요침사를 동반하는 사구체신염의 병변이다.",
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 6 Systemic Sclerosis, Ch 11 Blood Vessels — Hypertensive Vascular Disease, Ch 14 Kidney; Denton CP, Khanna D. Systemic sclerosis. Lancet 2017)",
+   "date": "2026-09-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-23T07:07:45.232Z"
+ "updated": "2026-09-25T08:24:10.401Z"
 }
