@@ -18,6 +18,10 @@
   dist   — 내가 **실제로 고른 오답 보기**에 문항의 `distractors.<보기>` 설명이 없을 때. 그 보기 하나의 설명
            (왜 그럴듯한가·왜 정답이 먼저인가·가르는 소견·그 보기가 맞는 경우)을 문항에 더한다(선지 보정 —
            고른 보기만. 영상 문항은 빌더 파생물이라 제외).
+  restyle — 판형 2(`note_form: 2`, 2026-09-25 사용자 요청 「이전 모델이 만든 오답 정리본을 더 좋은 스타일로」)로
+           아직 옮기지 않은 정리본. 새 글을 쓰는 게 아니라 **있는 내용을 판형 2 순서·예산으로 다시 배치**한다
+           (결론·시험 단서·왜 → 틀린 보기별 pitfalls → 표·도식 → 목표에 맞춘 본문). 오답이 걸린 목표부터,
+           그다음 오래된 것부터. note·link·touch 가 비었을 때 gap 보다 먼저 한다.
   gap    — 오답과 무관하게 **기본틀(content/outline/subjects.yaml)에서 아직 비어 있는 자리**.
            오답 큐가 비었을 때 커리큘럼 순서대로 한 칸씩 채우라고 내놓는다(2026-09-21 추가).
            이미 단원이 있는 책만 대상으로 하고, 그 책의 해리슨 서술 순서에서 앞쪽 빈 슬롯부터 준다.
@@ -117,14 +121,16 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
             e["wrongs"] += s.wrongs
             e["priority"] = max(e["priority"], s.priority)
     gaps = _gaps(concepts, questions, S)
+    restyles = _restyles(concepts, S)
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
     variants.sort(key=lambda x: (x["due"] or "9999", -x["priority"], x["qid"]))
     seen_d: set[str] = set()
     dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
     return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches,
-            "variant": variants, "dist": dists, "gap": gaps,
+            "variant": variants, "dist": dists, "restyle": restyles, "gap": gaps,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
+                       "restyle": len(restyles),
                        "variant": len(variants), "dist": len(dists),
                        "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
                        "from_wrongnote": len(from_note)}}
@@ -189,6 +195,18 @@ def _dists(s, questions: dict) -> list[dict]:
     return out
 
 
+def _restyles(concepts: dict, S: dict) -> list[dict]:
+    """판형 2 로 옮길 정리본 — 오답이 걸린 목표(우선순위 높은 것) 먼저, 그다음 id 순(대체로 오래된 과부터)."""
+    pri: dict[str, int] = {}
+    for s in S.values():
+        if s.objective and s.wrongs:
+            pri[s.objective] = max(pri.get(s.objective, 0), s.priority or 1)
+    out = [{"objective": cid, "path": str(c.get("path", "")), "priority": pri.get(cid, 0),
+            "title": str(c.get("title", ""))}
+           for cid, c in concepts.items() if c.get("note_form") != 2]
+    return sorted(out, key=lambda x: (-x["priority"], x["objective"]))
+
+
 def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     """기본틀에서 빈 슬롯 — 이미 단원이 있는 책만, 그 책의 순서대로 앞에서부터."""
     import yaml
@@ -233,10 +251,11 @@ def main(argv: list[str]) -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
+    rs = q["restyle"]
     if a.limit:
-        note, link, touch, var, dist, gap = (x[:a.limit] for x in (note, link, touch, var, dist, gap))
+        note, link, touch, var, dist, gap, rs = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs))
     if a.json:
-        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "gap": gap,
+        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "restyle": rs, "gap": gap,
                           "counts": q["counts"]}, ensure_ascii=False, indent=1))
         return 0
     if not events and not q["counts"]["from_wrongnote"]:
@@ -257,6 +276,11 @@ def main(argv: list[str]) -> int:
     for d in dist:
         print(f"  [dist] {d['qid']} 보기 {d['letter']} 「{str(d['chosen'])[:30]}」 설명 없음 · {d['path']}")
     if not note and not link and not touch:
+        for r in rs:
+            print(f"  [restyle] {r['objective']}  {r['title'][:40]}" + (f" · 오답 우선순위 {r['priority']}" if r["priority"] else "")
+                  + f" · {r['path']}")
+        if rs:
+            print(f"  (판형 2 로 옮길 정리본 {q['counts']['restyle']}개 남음 — /gen-concept 「판형 2로 옮기기」)")
         for g in gap:
             print(f"  [gap]  {g['book']} {g['slot']}  {g['title']}  {g['source']}")
     return 0

@@ -358,6 +358,7 @@ id 는 `cn.<과>.<주제>.<학습목표>`(파일 이름 = id). 같은 질환이�
 `exams`(kmle/usmle) · `sources`(각 `id·org·title·year·checked_at·checked` + https url/doi/pmid).
 선택: `criteria`(각 `id·name·kind·population·statement·exceptions·source(=sources.id)·basis(current|past_exam)·exams`) ·
 `diagram`(`pipelines/decision_diagram.py` 규격 — 세로·판단 노드 갈래 2개 이상·라벨 필수·「추가 정보 필요」 노드 필수) ·
+`note_form`(2 = 판형 2, 2026-09-25 — 있으면 `concepts.py` 가 모양 예산을 WARN 으로 본다: summary 3~5줄·「결론:」「시험 단서:」 머리말·한 줄 ≤110자, title ≤40자, 도식 노드 판단 ≤30·나머지 ≤40자, 라벨 ≤14자; 규칙 `/gen-concept`) ·
 `checks`(인출 확인 `{q, a}`) · `variants`(변형 문제 — 일반 덱에 섞이지 않는다. 오답에서 나온 변형은 `of: <틀린 문항 id>` ·
 `changed: "<바꾼 단서 → 결과>"` · `flip: true|false`(답이 바뀌는가) — 앱 「오늘 다시 풀 것」이 그 문항의 변형을 먼저 낸다) · `see_also`(함께 볼 과) ·
 `sources[].watch.pattern`(출처 쪽의 판·날짜 문자열 — `check_sources.py` 가 개정 신호로 본다).

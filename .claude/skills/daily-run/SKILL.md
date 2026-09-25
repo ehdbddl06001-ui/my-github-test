@@ -56,7 +56,9 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    ```
    python pipelines/indexer.py --check              # frontmatter 계약 검증(필수)
    python pipelines/concepts.py                    # 정리본·문항 학습 목표 계약(정리본을 건드린 날 필수)
-   python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만)
+   python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만) — ERROR 0, 그리고 끝의 mix WARN
+                                                     # (정답 순서 순환·치료+다음 처치 편중·3단계 비율)과 qualifier-tell·
+                                                     # subtopic-conclusion WARN 은 고치고 커밋한다(2026-09-25 감사 — 답이 문항 밖으로 샌다)
    python pipelines/review_questions.py --date <오늘> --out /tmp/review.md   # 내용 검토지(판정 아님 — 보고에 경로·REVIEW 신호 수를 남긴다)
    python pipelines/indexer.py                       # SQLite 재빌드
    ```
