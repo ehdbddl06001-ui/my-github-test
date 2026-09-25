@@ -88,6 +88,7 @@ sources:
     year: 2014
     citation: "Spasovski G, Vanholder R, Allolio B, et al. Eur J Endocrinol 2014;170(3):G1–G47"
     doi: "10.1530/EJE-13-1020"
+    pmid: "24569125"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너에서 doi·PubMed 접근이 막혀 본문을 대조하지 못했다. 시험 쟁점 절의 증상 분류 서술은 사람 대조가 필요하다"
     verified: citation

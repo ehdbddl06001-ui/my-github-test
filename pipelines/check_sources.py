@@ -6,6 +6,9 @@
 확인 방법(출처마다 할 수 있는 만큼만 — 할 수 없는 것을 했다고 쓰지 않는다)
   pmid       PubMed efetch 의 CommentsCorrections 에서 UpdateIn·ErratumIn·RetractionIn·RepublishedIn·
              ExpressionOfConcernIn 목록을 지문으로 둔다. 새 항목이 생기면 changed.
+  doi 만     PubMed esearch 로 그 DOI 의 PMID 를 한 번 찾아(state 에 기억) pmid 와 같이 본다. PubMed 에 없으면
+             doi.org 핸들 API 로 DOI 가 살아 있는지만 본다(method: doi — 개정은 알 수 없음). 2026-09-25 추가 —
+             루틴이 쓴 정리본 16개 출처가 DOI 만 있어 전부 「확인 실패」가 되어 책마다 경고가 찍힐 뻔했다.
   watch.pattern  (url) 쪽 글에서 정규식이 잡은 문자열(예: 「updated July 2022」)을 지문으로 둔다. 달라지면 changed.
   그 밖(url 만)  도달 여부만 본다 — 개정은 알 수 없음(method: reachability).
 결과: state/source_checks.json  {출처 키: {status, method, fingerprint, baseline, checked_at, changed_at, note, concepts}}
@@ -19,6 +22,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -30,6 +34,8 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "source_checks.json"
 KST = timezone(timedelta(hours=9))
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id="
+ESEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=xml&term="
+DOI_HANDLE = "https://doi.org/api/handles/"
 WATCH_REFS = {"UpdateIn", "ErratumIn", "RetractionIn", "RepublishedIn", "ExpressionOfConcernIn"}
 UA = {"User-Agent": "MedKOS-source-check/1 (study notes; contact via GitHub repo)"}
 
@@ -56,10 +62,31 @@ def pubmed_fingerprint(pmid: str, getter=fetch) -> list[str]:
     return sorted(out)
 
 
-def check_one(s: dict, getter=fetch) -> tuple[str, str]:
-    """(method, fingerprint). 실패하면 예외."""
+def pmid_for_doi(doi: str, getter=fetch) -> str:
+    """DOI → PMID(PubMed 에 딱 하나 있을 때만). 없으면 빈 글."""
+    root = ET.fromstring(getter(ESEARCH + urllib.parse.quote(f'"{doi}"[doi]')))
+    ids = [(i.text or "").strip() for i in root.iter("Id")]
+    return ids[0] if len(ids) == 1 and ids[0].isdigit() else ""
+
+
+def doi_alive(doi: str, getter=fetch) -> bool:
+    """doi.org 핸들 API — 출판사 사이트(봇 차단이 잦다)를 거치지 않고 DOI 등록만 본다."""
+    body = json.loads(getter(DOI_HANDLE + urllib.parse.quote(doi, safe="/")))
+    return body.get("responseCode") == 1
+
+
+def check_one(s: dict, getter=fetch, doi_pmid: str | None = None) -> tuple[str, str]:
+    """(method, fingerprint). 실패하면 예외. doi_pmid = DOI 에서 이미 찾아 둔 PMID(없으면 None → 찾아 본다)."""
     if s.get("pmid"):
         return "pubmed", json.dumps(pubmed_fingerprint(str(s["pmid"]), getter), ensure_ascii=False)
+    if s.get("doi") and not safe_url(s.get("url")):
+        doi = str(s["doi"]).strip()
+        pm = doi_pmid if doi_pmid is not None else pmid_for_doi(doi, getter)
+        if pm:
+            return "pubmed", json.dumps(pubmed_fingerprint(pm, getter), ensure_ascii=False)
+        if not doi_alive(doi, getter):
+            raise ValueError(f"DOI {doi} 가 doi.org 에 없다")
+        return "doi", "registered"
     url = safe_url(s.get("url"))
     if not url and s.get("kind") == "textbook":
         return "manual", "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)"
@@ -104,11 +131,16 @@ def run(offline: bool = False, getter=fetch, out: Path = OUT, today: str | None 
             res[k] = rec or {"status": "unchecked"}
             continue
         try:
-            method, fp = check_one(e["source"], getter)
+            src = e["source"]
+            doi_pmid = p.get("doi_pmid") if (src.get("doi") and not src.get("pmid") and "doi_pmid" in p) else None
+            if src.get("doi") and not src.get("pmid") and doi_pmid is None and not safe_url(src.get("url")):
+                doi_pmid = pmid_for_doi(str(src["doi"]).strip(), getter)
+                rec["doi_pmid"] = doi_pmid                    # 한 번 찾으면 기억(빈 글 = PubMed 에 없음)
+            method, fp = check_one(src, getter, doi_pmid)
             rec.update(method=method, fingerprint=fp, checked_at=today)
             base = p.get("baseline")
             if base is None:
-                rec.update(baseline=fp, status="ok", note="기준 지문 기록" + (" — 개정 여부는 알 수 없음(도달만 확인)" if method == "reachability" else ""))
+                rec.update(baseline=fp, status="ok", note="기준 지문 기록" + (" — 개정 여부는 알 수 없음(도달만 확인)" if method in ("reachability", "doi") else ""))
                 if method == "pubmed" and "RetractionIn" in fp:
                     rec.update(status="changed", changed_at=today, note="철회(Retraction) 기록이 있다")
             elif fp != base:

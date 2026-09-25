@@ -209,111 +209,336 @@ def _tokens(s: str) -> list[str]:
 
 
 # ── 배치 ───────────────────────────────────────────────────────────
-def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = RANK_GAP, col_gap: int = COL_GAP) -> dict:
+# 2026-09-25 다시 짬(사용자: 「선이 겹치고 너무 길어져 보기 불편하다」). 옛 배치는 두 층 이상 건너뛰는 선을
+# 오른쪽 바깥 통로로 돌리고, 같은 틈의 가로선을 같은 높이에 두어 선이 겹쳤다(77개 도식에 겹침 45·교차 276).
+# 라벨은 도착 노드 위에 두 줄로 엇갈려 쌓느라 층 사이가 길어졌다. 지금은 층 배치(Sugiyama) 순서를 따른다:
+#   ① 층 = 가장 긴 경로  ② 긴 선은 층마다 보이지 않는 경유점(더미)으로 나눠 노드 사이를 곧게 지난다
+#   ③ 층 안 순서는 무게중심 쓸기로 교차를 줄이고(가장 적은 배치를 고름)  ④ 가로 위치는 선이 나가는 포트
+#   바로 아래에 자식이 오도록 최소제곱(간격 제약)으로 맞춘다  ⑤ 틈마다 가로선이 겹치지 않게 트랙을 나눈다
+#   ⑥ 조건 라벨은 판단 노드 바로 아래(갈래가 시작하는 곳)에 둔다 — 「질문 → 답」이 붙어 읽힌다.
+# geometry 형식(nodes/edges/points/label)은 그대로라 웹(learn.js)은 고칠 것이 없다.
+TRACK = 9              # 한 틈 안 가로선 트랙 간격
+DUMMY_GAP = 16         # 긴 선 경유점과 이웃 사이 최소 간격
+LABEL_H = 13
+
+
+def _crossings(upper: list[str], lower: list[str], links: list[tuple[str, str]]) -> int:
+    pu = {n: i for i, n in enumerate(upper)}
+    pl = {n: i for i, n in enumerate(lower)}
+    es = sorted((pu[a], pl[b]) for a, b in links if a in pu and b in pl)
+    return sum(1 for i in range(len(es)) for j in range(i + 1, len(es))
+               if (es[i][0] - es[j][0]) * (es[i][1] - es[j][1]) < 0)
+
+
+def _isotonic(target: list[float], weight: list[float]) -> list[float]:
+    """y 가 오름차순이어야 할 때 Σw(y−target)² 최소(인접 위반 합치기)."""
+    blocks: list[list[float]] = []            # [Σw·t, Σw, 개수]
+    for t, w in zip(target, weight):
+        blocks.append([t * w, w, 1])
+        while len(blocks) > 1 and blocks[-2][0] / blocks[-2][1] > blocks[-1][0] / blocks[-1][1]:
+            s2, w2, n2 = blocks.pop()
+            blocks[-1][0] += s2; blocks[-1][1] += w2; blocks[-1][2] += n2
+    out: list[float] = []
+    for s_, w_, n_ in blocks:
+        out += [s_ / w_] * int(n_)
+    return out
+
+
+def _span(pc: dict) -> tuple[float, float]:
+    return min(pc["x0"], pc["x1"]), max(pc["x0"], pc["x1"])
+
+
+def _overlap(p: dict, q: dict) -> bool:
+    a0, a1 = _span(p); b0, b1 = _span(q)
+    return min(a1, b1) - max(a0, b0) > -6
+
+
+def _cross_cost(p: dict, q: dict) -> int:
+    """p 가 q 보다 위 트랙일 때 두 선의 교차 수."""
+    c = 0
+    q0, q1 = _span(q); p0, p1 = _span(p)
+    if q0 < p["x1"] < q1:          # 위 선의 아래쪽 세로선이 아래 선의 가로선을 지난다
+        c += 1
+    if p0 < q["x0"] < p1:          # 아래 선의 위쪽 세로선이 위 선의 가로선을 지난다
+        c += 1
+    return c
+
+
+def _assign_tracks(pieces: list[dict]) -> int:
+    """한 틈 안 가로 구간에 트랙 번호(0=맨 위)를 준다. 겹치면 다른 트랙, 위·아래 순서는 교차가 적은 쪽. 트랙 수를 돌려준다."""
+    hs = [pc for pc in pieces if abs(pc["x0"] - pc["x1"]) > 1.5]
+    for pc in pieces:
+        pc["track"] = -1
+    above: dict[int, set[int]] = {i: set() for i in range(len(hs))}
+    for i in range(len(hs)):
+        for j in range(i + 1, len(hs)):
+            if _overlap(hs[i], hs[j]):
+                if _cross_cost(hs[i], hs[j]) <= _cross_cost(hs[j], hs[i]):
+                    above[j].add(i)
+                else:
+                    above[i].add(j)
+    done: dict[int, int] = {}
+    left = set(range(len(hs)))
+    while left:
+        ready = [i for i in left if not (above[i] - set(done))] or sorted(left)[:1]
+        i = min(ready, key=lambda i: _span(hs[i])[0])
+        left.discard(i)
+        t = max([done[a] + 1 for a in above[i] if a in done] or [0])
+        while any(done[o] == t and _overlap(hs[i], hs[o]) for o in done):
+            t += 1
+        done[i] = t
+        hs[i]["track"] = t
+    return max(done.values()) + 1 if done else 0
+
+
+def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = "auto", col_gap: int = COL_GAP) -> dict:
     """노드 좌표·선 경로·라벨 위치. 웹은 기본 폭(좁은 세로 화면), PDF 는 넓은 노드로 높이를 줄여 같은 그래프를 그린다.
-    rank_gap="auto" 이면 층 사이를 그 틈에 실제로 필요한 만큼만 둔다(갈래 가로선 + 엇갈린 라벨 줄 수)."""
+    층 사이 높이는 그 틈에 실제로 필요한 만큼(라벨 + 가로선 트랙)만 둔다. rank_gap 에 수를 주면 그 절반이 최소 높이다."""
     errs = validate(spec)
     if errs:
         raise DiagramError("; ".join(errs))
     nodes = {str(n["id"]): n for n in spec["nodes"]}
     ids = list(nodes)
+    edges = list(spec.get("edges", []))
     out: dict[str, list[dict]] = {i: [] for i in ids}
     inc: dict[str, list[dict]] = {i: [] for i in ids}
-    for e in spec.get("edges", []):
+    for e in edges:
         out[e["from"]].append(e); inc[e["to"]].append(e)
     order = _topo(ids, out)
     rank = {i: 0 for i in ids}
     for n in order:                                # 가장 긴 경로 = 층
         for e in out[n]:
             rank[e["to"]] = max(rank[e["to"]], rank[n] + 1)
+    for n in reversed(order):                      # 나가는 선이 더 많은 노드는 자식 바로 위로 내려 긴 선을 줄인다
+        if out[n] and len(out[n]) > len(inc[n]) and nodes[n].get("kind") != "start":
+            rank[n] = max(rank[n], min(rank[e["to"]] for e in out[n]) - 1)
     nr = max(rank.values()) + 1
-    # 층 안 순서: 등장 순(DFS) → 부모 무게중심 두 번
-    dfs, seen = [], set()
 
-    def visit(n: str) -> None:
-        if n in seen:
-            return
-        seen.add(n); dfs.append(n)
-        for e in out[n]:
-            visit(e["to"])
-    visit(next(i for i in ids if nodes[i].get("kind") == "start"))
-    layers = [[i for i in dfs if rank[i] == r] for r in range(nr)]
-    for _ in range(2):
-        pos = {n: k for L in layers for k, n in enumerate(L)}
-        for r in range(1, nr):
-            def bary(n: str) -> float:
-                ps = [pos[e["from"]] for e in inc[n]]
-                return sum(ps) / len(ps) if ps else pos[n]
-            layers[r].sort(key=bary)
     max_em = (node_w - 2 * PAD_X) / FONT
     geo_nodes: dict[str, dict] = {}
     for n in ids:
         lines = wrap(nodes[n]["text"], max_em)
         geo_nodes[n] = dict(id=n, kind=nodes[n]["kind"], kindLabel=KINDS[nodes[n]["kind"]], lines=lines,
                             w=node_w, h=8 + TOP_LINE + LINE_H * len(lines) + 6)
-    widest = max(len(L) for L in layers)
-    inner_w = widest * node_w + (widest - 1) * col_gap
 
-    def label_h(e: dict, t_w: float) -> int:
-        lab = str(e.get("label", "") or "").strip()
-        return (len(wrap(lab, max(4.0, t_w * 0.92 / LABEL_FONT))[:2]) * 13 + 4) if lab else 0
-    zone: dict[int, int] = {}                     # 층 r 위쪽의 라벨 영역 높이
-    gaps: dict[int, float] = {}
-    for r in range(1, nr):
-        z = 0
-        for n in layers[r]:
-            hs = [label_h(e, node_w) for e in inc[n] if str(e.get("label", "") or "").strip()]
-            if hs:
-                z = max(z, (min(2, len(hs))) * (max(hs) + 3) + 3)
-        zone[r] = z
-        top = max([10 + 6 * (len(out[n]) - 1) for n in layers[r - 1]] or [10])
-        gaps[r] = max(top + 8 + z, 30) if rank_gap == "auto" else float(rank_gap)
-    y = MARGIN
-    for r, L in enumerate(layers):
-        if r:
-            y += gaps[r]
-        row_h = max(geo_nodes[n]["h"] for n in L)
-        lw = len(L) * node_w + (len(L) - 1) * col_gap
-        x = MARGIN + (inner_w - lw) / 2
-        for n in L:
-            g = geo_nodes[n]
-            g["x"], g["y"] = round(x, 1), round(y, 1)
-            x += node_w + col_gap
-        y += row_h
-    height = y + MARGIN
-    # 선: 나가는 포트는 아래 변에, 들어오는 포트는 위 변에 고르게. 두 층 이상 건너뛰면 오른쪽 통로로.
-    lane_x = MARGIN + inner_w + LANE_GAP
-    geo_edges = []
+    # 긴 선 → 층마다 경유점(더미). chains[k] = k 번째 선이 지나는 항목(출발 노드·더미…·도착 노드)
+    width = {n: float(node_w) for n in ids}
+    item_rank = dict(rank)
+    chains: list[list[str]] = []
+    links: list[tuple[str, str]] = []
+    for k, e in enumerate(edges):
+        ch = [e["from"]]
+        for r in range(rank[e["from"]] + 1, rank[e["to"]]):
+            d = f"\u0000{k}:{r}"
+            width[d] = 0.0; item_rank[d] = r; ch.append(d)
+        ch.append(e["to"])
+        chains.append(ch)
+        links += list(zip(ch, ch[1:]))
+    up: dict[str, list[str]] = {i: [] for i in item_rank}
+    down: dict[str, list[str]] = {i: [] for i in item_rank}
+    for a, b in links:
+        down[a].append(b); up[b].append(a)
+
+    # 층 안 순서: 등장 순(DFS) → 무게중심 위·아래 쓸기, 교차가 가장 적은 배치를 남긴다
+    dfs: list[str] = []
+    seen: set[str] = set()
+    stack = [next(i for i in ids if nodes[i].get("kind") == "start")]
+    while stack:
+        n = stack.pop()
+        if n in seen:
+            continue
+        seen.add(n); dfs.append(n)
+        stack += list(reversed(down[n]))
+    dfs += [i for i in item_rank if i not in seen]
+    layers = [[i for i in dfs if item_rank[i] == r] for r in range(nr)]
+
+    def total_cross(ls: list[list[str]]) -> int:
+        return sum(_crossings(ls[r], ls[r + 1], links) for r in range(nr - 1))
+    best, best_c = [list(L) for L in layers], total_cross(layers)
+    for it in range(12):
+        downward = it % 2 == 0
+        for r in (range(1, nr) if downward else range(nr - 2, -1, -1)):
+            ref = layers[r - 1] if downward else layers[r + 1]
+            nb = up if downward else down
+            pos = {n: k for k, n in enumerate(ref)}
+            cur = {n: k for k, n in enumerate(layers[r])}
+
+            def bary(n: str) -> float:
+                ps = [pos[m] for m in nb[n] if m in pos]
+                return sum(ps) / len(ps) if ps else cur[n]
+            layers[r].sort(key=lambda n: (bary(n), cur[n]))
+        c = total_cross(layers)
+        if c < best_c:
+            best, best_c = [list(L) for L in layers], c
+    layers = best
+    pos_in_layer = {n: k for L in layers for k, n in enumerate(L)}
+
+    # 포트: 나가는 선은 아래 변, 들어오는 선은 위 변에 상대 순서대로 고르게(포트에서 선이 엇갈리지 않게)
+    def port_off(n: str, other: str, downward: bool) -> float:
+        if width[n] == 0:
+            return 0.0
+        nbrs = sorted(down[n] if downward else up[n], key=lambda m: pos_in_layer[m])
+        k = nbrs.index(other)
+        return width[n] * ((k + 1) / (len(nbrs) + 1) - 0.5)
+
+    def sep(a: str, b: str) -> float:
+        g = col_gap if width[a] and width[b] else DUMMY_GAP
+        return (width[a] + width[b]) / 2 + g
+
+    # 가로 위치: 이웃의 포트 바로 위·아래에 오도록 최소제곱(간격 제약). 긴 선(더미)은 무게를 크게 둬 곧게 편다
+    x: dict[str, float] = {}
+    for L in layers:
+        cx = 0.0
+        for k, n in enumerate(L):
+            cx = cx + (sep(L[k - 1], n) if k else width[n] / 2)
+            x[n] = cx
+    for it in range(16):
+        if it >= 8:
+            rows, use_up, use_dn = list(range(nr)), True, True
+        elif it % 2 == 0:
+            rows, use_up, use_dn = list(range(1, nr)), True, False
+        else:
+            rows, use_up, use_dn = list(range(nr - 2, -1, -1)), False, True
+        for r in rows:
+            L = layers[r]
+            tgt, wts = [], []
+            for n in L:
+                want, ws = [], []
+                for m in (up[n] if use_up else []):
+                    want.append(x[m] + port_off(m, n, True) - port_off(n, m, False))
+                    ws.append(4.0 if width[m] == 0 or width[n] == 0 else 1.0)
+                for m in (down[n] if use_dn else []):
+                    want.append(x[m] + port_off(m, n, False) - port_off(n, m, True))
+                    ws.append(4.0 if width[m] == 0 or width[n] == 0 else 1.0)
+                if want:
+                    tgt.append(sum(a * b for a, b in zip(want, ws)) / sum(ws)); wts.append(sum(ws))
+                else:
+                    tgt.append(x[n]); wts.append(0.25)
+            off = [0.0]
+            for k in range(1, len(L)):
+                off.append(off[-1] + sep(L[k - 1], L[k]))
+            ys = _isotonic([t - o for t, o in zip(tgt, off)], wts)
+            for k, n in enumerate(L):
+                x[n] = ys[k] + off[k]
+    left = min(x[n] - width[n] / 2 for n in x)
+    for n in x:
+        x[n] += MARGIN - left
+    right = max(x[n] + width[n] / 2 for n in x)
+
+    # 선 조각: 층 r → r+1 마다 (출발 x, 도착 x)
+    metas = []
+    for e, ch in zip(edges, chains):
+        pieces = [dict(r=item_rank[a], x0=x[a] + port_off(a, b, True), x1=x[b] + port_off(b, a, False))
+                  for a, b in zip(ch, ch[1:])]
+        metas.append(dict(e=e, chain=ch, pieces=pieces))
+
+    # 라벨: 판단 노드 바로 아래, 갈래가 시작하는 선 위. 옆 라벨과 겹치면 한 칸 아래로 엇갈린다
+    labels: dict[int, dict] = {}
     for n in ids:
-        outs = sorted(out[n], key=lambda e: geo_nodes[e["to"]]["x"])
-        for k, e in enumerate(outs):
-            s, t = geo_nodes[e["from"]], geo_nodes[e["to"]]
-            ins = sorted(inc[e["to"]], key=lambda f: geo_nodes[f["from"]]["x"])
-            ki = ins.index(e)
-            px = s["x"] + s["w"] * (k + 1) / (len(outs) + 1)
-            tx = t["x"] + t["w"] * (ki + 1) / (len(ins) + 1)
-            ys, yt = s["y"] + s["h"], t["y"]
-            y_out = ys + 10 + 6 * k                   # 같은 노드에서 나가는 갈래는 가로선 높이를 달리한다
-            if rank[e["to"]] - rank[e["from"]] > 1:
-                y_in = yt - (zone.get(rank[e["to"]], 0) + 6 if rank_gap == "auto" else 46)
-                pts = [(px, ys), (px, y_out), (lane_x, y_out), (lane_x, y_in), (tx, y_in), (tx, yt)]
-                lane_x += LANE_GAP
-            else:
-                pts = [(px, ys), (px, y_out), (tx, y_out), (tx, yt)]
-            label = str(e.get("label", "") or "").strip()
-            lab = None
-            if label:
-                slot = t["w"] * 0.92
-                llines = wrap(label, max(4.0, slot / LABEL_FONT))[:2]
-                lw = max(sum(_cw(c) for c in ln) for ln in llines) * LABEL_FONT + 8
-                lh = len(llines) * 13 + 4
-                # 한 노드로 들어오는 선이 여럿이면 라벨을 위아래로 엇갈려 겹치지 않게 한다
-                ly = yt - 3 - lh - (ki % 2) * (lh + 3)
-                lab = dict(lines=llines, w=round(lw, 1), h=lh, x=round(tx - lw / 2, 1), y=round(ly, 1))
-            geo_edges.append(dict(**{"from": e["from"], "to": e["to"]},
-                                  points=[[round(a, 1), round(b, 1)] for a, b in pts], label=lab))
-    width = max(lane_x - LANE_GAP + MARGIN, MARGIN * 2 + inner_w)
-    return dict(title=str(spec.get("title", "")), w=round(width, 1), h=round(height, 1),
+        ports = sorted(m["pieces"][0]["x0"] for m in metas if m["e"]["from"] == n)
+        outs = [k for k, m in enumerate(metas) if m["e"]["from"] == n and str(m["e"].get("label", "") or "").strip()]
+        outs.sort(key=lambda k: metas[k]["pieces"][0]["x0"])
+        n_left, n_right = x[n] - node_w / 2 + 2, x[n] + node_w / 2 - 2
+        mine: list[tuple[int, dict]] = []
+        for k in outs:
+            text = str(metas[k]["e"]["label"]).strip()
+            cx = metas[k]["pieces"][0]["x0"]
+            i = ports.index(cx)
+            # 라벨은 제 선 위에, 옆 갈래 선을 덮지 않는 칸(이웃 포트 사이) 안에 둔다
+            lo = ports[i - 1] + 5 if i > 0 else n_left
+            hi = ports[i + 1] - 5 if i + 1 < len(ports) else n_right
+            room = max(min(cx - lo, hi - cx) * 2, 40.0) if 0 < i < len(ports) - 1 else max(hi - lo, 40.0)
+            llines = wrap(text, max(4.0, (room - 8) / LABEL_FONT))
+            if len(llines) > 3:                               # 칸이 너무 좁으면 넓히고 엇갈려 놓는다(글은 자르지 않는다)
+                w_ = room
+                while len(llines) > 2 and w_ < node_w:
+                    w_ += 12
+                    llines = wrap(text, max(4.0, (w_ - 8) / LABEL_FONT))
+            lw = max(sum(_cw(c) for c in ln) for ln in llines) * LABEL_FONT + 8
+            lx = min(max(cx - lw / 2, lo), hi - lw) if lw <= hi - lo else cx - lw / 2
+            lx = min(max(lx, cx - lw + 6), cx - 6)            # 제 선은 반드시 라벨 안을 지난다
+            mine.append((k, dict(lines=llines, w=round(lw, 1), h=len(llines) * LABEL_H + 4, x=lx, row=0)))
+        pitch = max([lab["h"] for _, lab in mine] or [0]) + 3      # 엇갈림 한 칸 = 이 노드의 가장 높은 라벨
+        placed: list[dict] = []
+        for k, lab in mine:
+            while any(p["row"] == lab["row"] and p["x"] < lab["x"] + lab["w"] + 3 and lab["x"] < p["x"] + p["w"] + 3 for p in placed):
+                lab["row"] += 1
+            lab["dy"] = 4 + lab["row"] * pitch
+            placed.append(lab)
+            labels[k] = lab
+    label_drop = {k: lab["dy"] + lab["h"] for k, lab in labels.items()}   # 노드 아래변 → 라벨 아래
+
+    gap_pieces: dict[int, list[dict]] = {r: [] for r in range(nr)}
+    for m in metas:
+        for pc in m["pieces"]:
+            gap_pieces[pc["r"]].append(pc)
+    ntracks = {r: _assign_tracks(ps) for r, ps in gap_pieces.items()}
+
+    # 세로 위치: 틈 = 라벨 영역 + 트랙 + 화살표 자리
+    row_top: list[float] = []
+    row_h: list[float] = []
+    lab_zone: dict[int, float] = {}
+    y = float(MARGIN)
+    min_gap = 22.0 if rank_gap == "auto" else float(rank_gap) / 2
+    for r, L in enumerate(layers):
+        real = [n for n in L if n in geo_nodes]
+        h = max([geo_nodes[n]["h"] for n in real] or [0])
+        if r:
+            z = 0.0
+            for k, d in label_drop.items():
+                src = metas[k]["e"]["from"]
+                if rank[src] == r - 1:
+                    z = max(z, geo_nodes[src]["h"] + d - row_h[r - 1])
+            lab_zone[r - 1] = z
+            need = z + 8 + (ntracks[r - 1] - 1) * TRACK + 14 if ntracks[r - 1] else z + 14   # 곧은 선만 있으면 트랙 자리를 두지 않는다
+            y += max(need, min_gap)
+        row_top.append(y); row_h.append(h)
+        for n in real:
+            geo_nodes[n]["x"], geo_nodes[n]["y"] = round(x[n] - node_w / 2, 1), round(y, 1)
+        y += h
+    height = y + MARGIN
+
+    geo_edges = []
+    for k, m in enumerate(metas):
+        e, ch = m["e"], m["chain"]
+        s = geo_nodes[e["from"]]
+        pts = [(m["pieces"][0]["x0"], s["y"] + s["h"])]
+        for pc, nxt in zip(m["pieces"], ch[1:]):
+            r = pc["r"]
+            if pc["track"] >= 0:
+                ty = row_top[r] + row_h[r] + lab_zone.get(r, 0.0) + 8 + pc["track"] * TRACK
+                pts += [(pc["x0"], ty), (pc["x1"], ty)]
+            if nxt in geo_nodes:
+                pts.append((pc["x1"], geo_nodes[nxt]["y"]))
+        clean = [pts[0]]
+        for p in pts[1:]:
+            if abs(p[0] - clean[-1][0]) < 0.05 and abs(p[1] - clean[-1][1]) < 0.05:
+                continue
+            if len(clean) >= 2 and ((abs(clean[-2][0] - clean[-1][0]) < 0.05 and abs(clean[-1][0] - p[0]) < 0.05)
+                                    or (abs(clean[-2][1] - clean[-1][1]) < 0.05 and abs(clean[-1][1] - p[1]) < 0.05)):
+                clean[-1] = p                      # 같은 방향으로 이어지는 꺾임점은 합친다
+                continue
+            clean.append(p)
+        lab = None
+        if k in labels:
+            L_ = labels[k]
+            lab = dict(lines=L_["lines"], w=L_["w"], h=L_["h"], x=round(L_["x"], 1),
+                       y=round(s["y"] + s["h"] + L_["dy"], 1))
+        geo_edges.append(dict(**{"from": e["from"], "to": e["to"]},
+                              points=[[round(a, 1), round(b, 1)] for a, b in clean], label=lab))
+    # 라벨이 도식 밖으로 나가지 않게
+    lab_l = min([g["label"]["x"] for g in geo_edges if g["label"]] or [float(MARGIN)])
+    lab_r = max([g["label"]["x"] + g["label"]["w"] for g in geo_edges if g["label"]] or [0.0])
+    shift = max(0.0, MARGIN - lab_l)
+    if shift:
+        for g in geo_nodes.values():
+            g["x"] = round(g["x"] + shift, 1)
+        for g in geo_edges:
+            g["points"] = [[round(a + shift, 1), b] for a, b in g["points"]]
+            if g["label"]:
+                g["label"]["x"] = round(g["label"]["x"] + shift, 1)
+    total_w = max(right, lab_r) + shift + MARGIN
+    return dict(title=str(spec.get("title", "")), w=round(total_w, 1), h=round(height, 1),
                 nodes=[geo_nodes[n] for n in ids], edges=geo_edges)
 
 

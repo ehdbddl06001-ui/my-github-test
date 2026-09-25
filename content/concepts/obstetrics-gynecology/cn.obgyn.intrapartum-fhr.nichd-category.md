@@ -73,6 +73,7 @@ sources:
     year: 2008
     citation: "Macones GA, Hankins GDV, Spong CY, Hauth J, Moore T. Obstet Gynecol 2008;112(3):661-666"
     doi: "10.1097/AOG.0b013e3181841395"
+    pmid: "18757666"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 기저선·변이도·가속·감속 정의와 3단계 범주 표의 원문 문구를 대조하지 못했다. DOI 도 접근이 막혀 확인하지 못한 값이다. 정의 수치는 문항 해설(imaging-2026-0032·0048)이 이 보고서를 근거로 적은 것과 일치시켰다"
     verified: citation
@@ -83,6 +84,7 @@ sources:
     year: 2009
     citation: "Obstet Gynecol 2009;114(1):192-202"
     doi: "10.1097/AOG.0b013e3181aef106"
+    pmid: "19546798"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만(원문 미대조 — 검토 항목). 범주별 일반 관리 원칙의 원문 문구와 DOI 를 확인하지 못했다"
     verified: citation
@@ -93,6 +95,7 @@ sources:
     year: 2010
     citation: "Obstet Gynecol 2010;116(5):1232-1240"
     doi: "10.1097/AOG.0b013e3182004fa9"
+    pmid: "20966730"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만(원문 미대조 — 검토 항목). 자궁내 소생술 표(체위·수액·옥시토신 중단·양수주입)·범주 II 관리 도식의 원문을 대조하지 못했다. DOI 는 접근이 막혀 확인하지 못한 값이다"
     verified: citation

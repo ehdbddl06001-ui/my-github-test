@@ -74,6 +74,7 @@ sources:
     year: 2017
     citation: "Gordon CM, Ackerman KE, Berga SL, et al. J Clin Endocrinol Metab 2017;102(5):1413-1439"
     doi: "10.1210/jc.2017-00131"
+    pmid: "28368518"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만(원문 미대조 — 검토 항목). 이 컨테이너는 PubMed·doi 접근이 막혀 에너지 균형 회복 우선·경구피임약 비권고·단기 경피 에스트라디올+주기적 프로게스틴 권고의 원문 문구를 대조하지 못했다. DOI 도 접근이 막혀 확인하지 못한 값이다"
     verified: citation

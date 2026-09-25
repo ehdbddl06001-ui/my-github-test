@@ -73,6 +73,7 @@ sources:
     year: 2022
     citation: "Isselbacher EM, Preventza O, Hamilton Black J 3rd, et al. Circulation 2022;146(24):e334–e482"
     doi: "10.1161/CIR.0000000000001106"
+    pmid: "36322642"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너의 네트워크 정책이 ahajournals·PubMed 접근을 막아 권고 본문·수치 목표를 대조하지 못했다"
     verified: citation

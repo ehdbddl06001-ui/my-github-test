@@ -78,6 +78,7 @@ sources:
     year: 2023
     citation: "Barbhaiya M, Zuily S, Naden R, et al. Arthritis Rheumatol 2023;75(10):1687–1702"
     doi: "10.1002/art.42624"
+    pmid: "37635643"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너에서 doi·PubMed 접근이 막혀 본문을 대조하지 못했다. 가중 점수 방식이라는 서술만 기억에 근거하며 사람 대조가 필요하다"
     verified: citation

@@ -84,6 +84,7 @@ sources:
     year: 2016
     citation: "Anthenelli RM, Benowitz NL, West R, et al. Lancet 2016;387:2507-2520"
     doi: "10.1016/S0140-6736(16)30272-0"
+    pmid: "27116918"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 확인(원문 미대조 — 검토 항목). doi 접근이 막혀 초록·본문을 보지 못했다. 서지 값 자체도 이 컨테이너에서 확인하지 못했다"
     verified: citation
