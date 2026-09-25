@@ -19,7 +19,7 @@ description: PubMed에서 관심 주제의 최신 논문을 긁어와 content/pa
    python pipelines/scrape_papers.py --days 7 --max 3
    # 특정 주제만: --topic Cardiology
    ```
-   - 중복은 `state/seen_papers.json`(PMID)로 자동 판별한다. 이미 저장한 논문은 건너뛴다.
+   - 중복은 저장된 `content/papers/**` 의 `pmid`(`state.paper_seen`)로 자동 판별한다. 이미 저장한 논문은 건너뛴다.
    - id는 `state.next_id('paper')`로만 발급된다.
 3. **검증 + 색인**
    ```
@@ -30,12 +30,12 @@ description: PubMed에서 관심 주제의 최신 논문을 긁어와 content/pa
    ```
    python pipelines/export_papers_web.py   # content/papers/**/*.md → docs/papers.js
    ```
-5. **커밋** — 새 `content/papers/**` + `state/seen_papers.json`(+ 필요시 `id_counter.json`,
-   `seen_topics.json`) + `docs/papers.js`를 **같은 커밋**에 포함해 push.
+5. **커밋** — 새 `content/papers/**` + `docs/papers.js`를 **같은 커밋**에 포함해 push.
+   `state/` 의 id·PMID 캐시는 content 파생물(gitignore)이라 커밋하지 않는다.
 
 ## 자동화
 
-- 매일은 `.github/workflows/scrape-papers.yml`(cron 21:00 UTC)가 위 1~5단계를 대신 돌린다.
+- 매일은 `.github/workflows/scrape-papers.yml`(cron 20:00 UTC = 05:00 KST)가 위 1~5단계를 대신 돌린다.
 - main에 커밋되면 `drive-sync.yml`이 Google Drive로 백업하고 `pages.yml`이 홈페이지를 배포한다.
 
 ## 주제 늘리기

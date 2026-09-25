@@ -297,7 +297,7 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
     return errs
 
 
-# ── 판형 2(2026-09-25) 모양 예산 — `style: 2` 인 정리본만 본다(옛 정리본은 [restyle] 큐로 하나씩 옮긴다) ──
+# ── 판형 2(2026-09-25) 모양 예산 — `note_form: 2` 인 정리본만 본다(옛 정리본은 [restyle] 큐로 하나씩 옮긴다) ──
 STYLE_SUMMARY = (3, 5)          # summary 줄 수
 STYLE_LINE = 110                # summary 한 줄 글자 수
 STYLE_TITLE = 40
@@ -307,7 +307,7 @@ STYLE_LEADS = ("결론:", "시험 단서:")
 
 
 def style_warnings(meta: dict[str, Any]) -> list[str]:
-    if meta.get("style") != 2:
+    if meta.get("note_form") != 2:
         return []
     w: list[str] = []
     title = str(meta.get("title", ""))

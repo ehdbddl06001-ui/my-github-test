@@ -13,9 +13,9 @@ CLAUDE.md 와 .claude/skills/ 가 자동 로드되므로 그걸 따르게만 한
 - 저장: content/usmle/{id}.md  (id는 state.next_id('usmle')).
 - 완료 후: `python pipelines/indexer.py --check` → `python pipelines/indexer.py`
   → `python pipelines/export_usmle_web.py` (docs/questions_usmle.js 재생성).
-  새 .md + state/*.json + docs 번들을 claude/ 브랜치에 커밋·푸시하고 PR로 올린다.
+  새 .md 와 docs 번들은 `python pipelines/publish.py -m "USMLE <날짜>: …"` 로 main 에 올린다(문항은 PR 로 올리지 않는다 — daily-run 7단계).
 --------------------------------------------------------------------
 
 ## 참고
-- USMLE는 self-verify 한계가 있어 main 직접 커밋이 아니라 PR로 사람이 검수한다.
+- 문항 PR 은 병합이 늦으면 `next_id()` 가 같은 ID 를 다시 발급한다 — 문항은 main 으로 바로 올리고, 사람 검토는 `review_status` 로 표시한다.
 - 규칙을 프롬프트에 복사하지 않는다. 규칙이 여러 벌로 갈라지면 관리가 무너진다.

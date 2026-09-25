@@ -29,9 +29,8 @@ python pipelines/deepen.py --list     # 완료 주차별 심화 여부 큐
 2. **`run_logs`** — split(intra/inter)별 실제 지표. "무엇으로 통과했는지"를 여기서 그대로 인용
    (state의 `achieved`보다 이게 정확하다). intra만 있으면 "낙관적 통과"임을 B에서 짚는다.
 3. `content/ailab/<source_card>.md` — 원 실습 카드(특히 `## My notes` 회고)와 관련 로그 카드.
-> ⚠️ **낡은 repo 노트북을 보고 예측하지 말 것.** 실행 로그의 `notebook`이 진짜다. 실행 로그가
-> 없고 노트북도 추정이라면, 지어내지 말고 A절에 한계를 밝히고 실제 노트북/`result.json` 업로드를
-> 요청한다(사용자 Colab·Drive엔 직접 접근 못 함).
+실행 로그도 실측 노트북도 없으면 A절에 그 한계를 밝히고 실제 노트북/`result.json` 업로드를 요청한다
+(사용자 Colab·Drive 에는 직접 접근하지 못한다).
 
 ## 본문 섹션(요청 A~E를 그대로 골격으로)
 `export_ailab_web.py`가 **모든 `## ` 섹션을 저작 순서대로** 싣는다. 순서:
@@ -55,7 +54,6 @@ python pipelines/deepen.py --list     # 완료 주차별 심화 여부 큐
    대주제), `modality`·`dataset`(작업지시서 값), `arch`(원본 → 대안), `level: intermediate`,
    `notebook`·`dataset_url`·`colab_url`, `related`에 `source_card`와 관련 멘토 노트, `date`(KST 오늘),
    `confidence`(A·B 사실이면 high, C~E 해석 섞이면 medium).
-4. **주제 기록**: `python -c "import sys; sys.path.insert(0,'.'); from pipelines.state import record_topic; record_topic('ailab','weekNN deepdive')"`
 
 ## 공통 마무리 (커밋 전 필수)
 ```bash
@@ -66,14 +64,14 @@ python pipelines/indexer.py                  # SQLite 재빌드
 python pipelines/export_ailab_web.py         # → docs/ailab.js (홈페이지 🤖 AI랩)
 python pipelines/export_search_web.py        # → docs/search-index.js
 ```
-새 `.md` + `state/*.json`(id_counter·seen_topics) + 재생성된 `docs/` 번들을 **같은 커밋**에.
+새 `.md` + 재생성된 `docs/` 번들을 **같은 커밋**에.
 
 ## 커밋 정책 · 루틴
-- `ailab`는 신규 타입이라 self-verify 한계 → **claude/ 브랜치에 push**(사용자가 검수/PR).
+- 커밋은 `python pipelines/publish.py -m "<메시지>"`(콘텐츠 레인 → main).
 - **루틴화**: KMLE/USMLE 일일 루틴과 같은 방식으로, 주간 Claude 루틴이 이 스킬을 호출하면
   된다(예: 매주 1회). 완료 주차가 쌓일 때마다 큐가 자동으로 다음 대상을 내주므로, 루틴
   프롬프트는 "`/deepen-week` 실행"처럼 **얇게** 유지한다(대상 선정은 `deepen.py`가 한다).
-- 심화할 게 없으면(큐 빔) 조용히 종료 — 억지로 만들지 않는다.
+- 심화할 게 없으면(큐 빔) 그 사실을 한 줄로 보고하고 끝낸다 — 억지로 만들지 않는다.
 
 ## 주의
 - 한 회차에 한 주차만. A~E를 다 채우되 각 절은 실행 가능하게(장황함 < 구체성).

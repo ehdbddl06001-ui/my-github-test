@@ -66,6 +66,8 @@ MIX_MIN_DEEP = 0.4       # steps ≥ 3 비율 하한
 MIX_MAX_SHALLOW = 0.1    # steps = 1 비율 상한
 MIX_MAX_TARGET = 0.5     # 한 평가 목표(target)가 차지하는 비율 상한
 MIX_MIN_N = 5            # 이보다 적은 묶음은 구성을 따지지 않는다
+MIX_MAX_MANAGEMENT = 0.55  # 「치료」+「다음 처치」 합 상한(2026-09-25 감사: 09-19 이후 73 % — 따로 세면 둘 다 50 % 아래라 못 잡았다)
+MIX_ANSWER_PERIOD = 0.5    # 정답 글자가 5문항 뒤에 되풀이되는 비율 상한(ABCDE 순환 — 번호만 보고 맞힐 수 있다)
 
 # 정상·음성 소견을 「완전 배제」로 단정하는 표현 — 내용 검토 신호(판정 아님)
 _ABSOLUTE = re.compile(
@@ -383,7 +385,31 @@ def mix_report(metas: list[dict[str, Any]]) -> tuple[dict[str, Any], list[str]]:
             warns.append(f"판단 1단계(단순 회상)가 {shallow:.0%} — 목표 {MIX_MAX_SHALLOW:.0%} 이하")
         if top_n / n > MIX_MAX_TARGET:
             warns.append(f"평가 목표 「{top_t}」가 {top_n / n:.0%} — 한 목표는 {MIX_MAX_TARGET:.0%} 이하(진단·감별·기전·검사 선택도 섞는다)")
+        mg = (targets.get("치료", 0) + targets.get("다음 처치", 0)) / n
+        if mg > MIX_MAX_MANAGEMENT:
+            warns.append(f"「치료」+「다음 처치」가 {mg:.0%} — 합쳐서 {MIX_MAX_MANAGEMENT:.0%} 이하(진단·감별·검사 선택·기전·예후를 섞는다)")
+    warns += answer_order_warnings(metas)
     return summary, warns
+
+
+def answer_order_warnings(metas: list[dict[str, Any]]) -> list[str]:
+    """정답 순서가 기계적인가(날짜별 세트, id 순). 글자 분포가 고르더라도 ABCDE 로 돌면 번호만 보고 풀린다."""
+    by_day: dict[str, list[tuple[str, str]]] = {}
+    for m in metas:
+        a = str(m.get("answer", "") or "").strip().upper()[:1]
+        if a in "ABCDE" and a:
+            by_day.setdefault(str(m.get("date", "") or ""), []).append((str(m.get("id", "")), a))
+    out = []
+    for day, items in sorted(by_day.items()):
+        seq = [a for _, a in sorted(items)]
+        if len(seq) < 10:
+            continue
+        same5 = sum(seq[i] == seq[i + 5] for i in range(len(seq) - 5)) / (len(seq) - 5)
+        runs = sum(1 for i in range(len(seq) - 3) if "".join(seq[i:i + 4]) in "ABCDEABCDE" or "".join(seq[i:i + 4]) in "EDCBAEDCBA")
+        if same5 > MIX_ANSWER_PERIOD or runs >= 2:
+            out.append(f"{day} 세트 정답 순서가 규칙적이다({''.join(seq[:15])}…, 5칸 주기 {same5:.0%}·연속 알파벳 {runs}곳) — "
+                       f"문항마다 정답 위치를 무작위로 정한다(보기를 섞고 answer 를 다시 적는다)")
+    return out
 
 
 def review_status(meta: dict[str, Any]) -> str:

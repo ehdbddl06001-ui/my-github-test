@@ -402,16 +402,23 @@ function figureHtml(q) {
   return "";
 }
 
+/* 문항 머리표. subtopic(q.type)은 정답을 말해 버리는 경우가 많아(예: 「… — Oral Vancomycin」, 2026-09-25 감사)
+   풀기 전에는 숨기고 채점 뒤에만 보인다. */
+function tagText(q, reveal) {
+  let tag;
+  if (q.exam === "imaging") {
+    tag = ["🩻 영상 세트", q.styleLabel || "", q.modality || (reveal ? q.type : "") || "", q.difficultyLabel ? "난이도 " + q.difficultyLabel : ""].filter(Boolean).join(" · ");
+  } else {
+    const t = reveal ? (q.type || "") : "";
+    tag = q.step ? (t ? `${q.step} · ${t}` : q.step) : (t || (q.exam === "usmle" ? "USMLE" : "국시형"));
+  }
+  return q.created ? `${tag}  ·  ${q.created}` : tag;
+}
+
 function renderQuestion() {
   const q = deck[pos];
   $("progress").textContent = `${pos + 1} / ${deck.length}`;
-  let tag;
-  if (q.exam === "imaging") {
-    tag = ["🩻 영상 세트", q.styleLabel || "", q.modality || q.type || "", q.difficultyLabel ? "난이도 " + q.difficultyLabel : ""].filter(Boolean).join(" · ");
-  } else {
-    tag = q.step ? `${q.step} · ${q.type || ""}` : (q.type || "");
-  }
-  $("typeTag").textContent = q.created ? `${tag}  ·  ${q.created}` : tag;
+  $("typeTag").textContent = tagText(q, answers[pos] != null);
   $("subjTag").textContent = q.subject;
   $("vignette").textContent = (q.vignette || "").trim();
   $("vignette").classList.toggle("hidden", !(q.vignette || "").trim());
@@ -469,6 +476,7 @@ function grade(chosenIdx, btn) {
   if (typeof LEARN === "object") LEARN.onAnswer(q, chosenIdx, ok);   // 덧붙이기만 하는 학습 기록
   updateReviewBadge();
   showGraded(chosenIdx);
+  $("typeTag").textContent = tagText(q, true);
   updateWrongCount();
   saveProgress();
 }

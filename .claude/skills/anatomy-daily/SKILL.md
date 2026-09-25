@@ -5,7 +5,7 @@ description: 2026-2학기 임상해부학술기(3Q) 일일 학습 세트를 생�
 
 # 해부학 일일 실행 절차
 
-spec: `experiments/specs/anatomy-3q-2026.md`. 아래 순서를 **반드시** 지킨다.
+spec: `experiments/specs/anatomy-3q-2026.md`. 동기화 → 큐 계산 → 검증 → 커밋은 이 순서대로 돈다. 산출물 작업은 아래 규칙을 따른다.
 
 ## 0. 중단 조건 — **이 둘만** 생성을 막는다
 
@@ -58,8 +58,7 @@ python pipelines/anatomy_schedule.py             # phase·D-day 확인
   (바이너리 PDF는 이 컨테이너에서 못 받는다 — spec D1. 페이지 번호를 지어내지 말 것.)
 - **Drive는 선택 단계다.** MCP 도구가 없거나(루틴 컨테이너에는 보통 없다) 접근이
   실패하면 기존 자료를 지우지 말고 **이 단계만 건너뛴 뒤 3단계로 계속 진행**한다.
-  보고에 "Drive 미접근 — 증분 확인 생략"을 한 줄 남기면 된다. 여기서 실행을
-  끝내면 안 된다.
+  보고에 "Drive 미접근 — 증분 확인 생략"을 한 줄 남긴다.
 
 ## 3. 오늘 큐 계산 (결정론) + 밀린 날 따라잡기
 
@@ -160,7 +159,7 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
 → quiz판(정답 라벨 inpaint + **좌상단 타이틀 존은 무조건 검은 박스** + 번호핀)
 → 4b QA 루프 → 문항 카드(`publishable: false` 고정 — 카데바·영상 캡처 파생물).
 
-- **카데바 위 글자는 덮지 말고 복원한다(2026-08-19 사용자 지적 — 매우 중요)**:
+- **카데바 위 글자는 덮지 말고 복원한다(사용자 지시)**:
   라벨이 표본 **위에** 얹혀 있는데 검은 박스로 덮으면 **물어볼 구조까지 사라져**
   문항이 무의미해진다. 그래서 가림 박스를 그대로 쓰지 말고 **밑에 무엇이 있는지로
   쪼갠다**(`scan_triage.split_by_bg`):
@@ -199,7 +198,7 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   구성: 실사 spotter 6~8개(그 회차 스캔 페이지, donor 복원) + 나머지는
   텍스트 관계형(인제스트된 pages 카드 근거, 토큰 저렴). 기존 문항 재사용
   우선, 부족분만 신규 생성.
-### 4d. 회차 배정은 **부위 기준** (사용자 지시 2026-08-15 · 위반 금지)
+### 4d. 회차 배정은 **부위 기준** (사용자 지시)
 
 업로드되는 스캔은 대부분 **과거 학기 자료**다. 과거 학기는 담당교수가 지금과 다르고
 파일명·표지의 날짜도 과거 학기다. 그래서:
@@ -220,7 +219,7 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   스캔이 **수업 D-2까지** 업로드·처리돼 있지 않으면 finalize는 텍스트
   문항만으로 세트를 완성하고, 보고에 "회차 N 스캔 미공급 — 실사 제외"를
   명시한다(추측으로 이미지를 만들지 않는다).
-- **회차 스캔은 전수 처리한다(2026-08-30 사용자 지시 — 이전의 '하루 2개 선별'을 대체)**:
+- **회차 스캔은 전수 처리한다(2026-08-30 사용자 지시)**:
   사용자가 올린 회차 스캔은 **그 회차 페이지를 전부** 돌리고, **지운 글씨는 하나도
   빠짐없이 문항으로 만든다**(표본 위 캡션·필기 포함. 검은 여백 위 자막·타이틀만 제외 —
   지우면 가리킬 구조가 없다). `scan_triage.plan()` 의 기본값이 전수 모드이고,
@@ -376,7 +375,7 @@ python pipelines/anatomy_subnote.py \
 ```
 python pipelines/anatomy_daily.py --date <KST 오늘>    # daily_plan 카드 작성
 python pipelines/indexer.py --check                     # ERROR 0 필수
-python pipelines/test_anatomy.py                        # 10개 회귀 테스트
+python pipelines/test_anatomy.py                        # 회귀 테스트
 ```
 
 실패하면 커밋하지 말고 원인을 보고한다.

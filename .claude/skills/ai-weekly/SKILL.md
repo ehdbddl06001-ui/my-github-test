@@ -44,8 +44,8 @@ description: 매주 도는 의료 AI 실습 오케스트레이터. pipelines/dat
    python pipelines/export_search_web.py
    ```
 
-6. **주제 기록 + 커밋** — `record_topic('ailab', '<goal>')` 후, 새 `.md` + `state/*.json`
-   + `docs/` 번들 + (있다면)새 노트북을 **같은 커밋**에. **claude/ 브랜치 push → PR**.
+6. **커밋** — 새 `.md` + `docs/` 번들 + (있다면)새 노트북 + (진도를 바꿨다면) `state/ailab_progress.json` 을
+   **같은 커밋**에. `python pipelines/publish.py -m "<메시지>"`(콘텐츠 레인 → main).
 
 ## 완료 게이트 (지속 연습의 핵심)
 - 사용자가 바빠 매주 못 만들어도, **판정→진급은 코드가** 한다: 노트북이 남긴 `results.json`을

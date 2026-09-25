@@ -32,7 +32,6 @@ description: 12주 커리큘럼과 직교하는 '독립 심화 퀘스트' 카드
    돌리면 `ingest_run.py`로 로그) → `## Resources` → `## My notes`(빈칸).
 5. **정직성**: 방법이 무엇을 개선하는지 **근거(논문/링크)**를 달고, 전망성 주장은 medium.
    숫자는 지어내지 말고 실행 로그로 확인하게 큐잉한다.
-6. **주제 기록**: `python -c "import sys; sys.path.insert(0,'.'); from pipelines.state import record_topic; record_topic('ailab','<quest name>')"`
 
 ## 공통 마무리 (커밋 전 필수)
 ```bash
@@ -41,10 +40,9 @@ python pipelines/indexer.py
 python pipelines/export_ailab_web.py     # 홈페이지 '실습 진도'의 🎯 심화 퀘스트 블록에 뜬다
 python pipelines/export_search_web.py
 ```
-새 `.md` + `state/*.json` + `docs/` 번들을 **같은 커밋**에. 신규 해석 카드라 **claude/ 브랜치**에
-push(사용자 검수).
+새 `.md` + `docs/` 번들을 **같은 커밋**에. 커밋은 `python pipelines/publish.py -m "<메시지>"`(콘텐츠 레인 → main).
 
-## 진척 갱신 루프 (MedKOS에서 '결과 + 다음 목표'가 보이게 — 매우 중요)
+## 진척 갱신 루프 (MedKOS에서 '결과 + 다음 목표'가 보이게)
 퀘스트는 한 번 만들고 끝이 아니라, 실험을 하나씩 하며 **갱신**된다. 사용자가 실험 결과를 주면:
 1. **결과를 퀘스트에 귀속시켜 로그**:
    ```bash
@@ -61,5 +59,5 @@ push(사용자 검수).
 
 ## 주의
 - 퀘스트는 **열린 트랙**이라 게이트(target)가 없다. 진척은 `## 실험 큐`의 항목을 로그로 채우며
-  쌓는다(매번 하나씩 — 완벽주의로 다 하려 하지 말 것).
+  쌓는다(한 번에 실험 하나씩).
 - 한 퀘스트 = 한 주제. 새 발견마다 **새 퀘스트를 추가**한다(사용자 요청: "따로 할 때마다 추가").

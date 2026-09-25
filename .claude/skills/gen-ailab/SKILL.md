@@ -29,8 +29,7 @@ description: 의료 AI·코딩 학습 카드(type ailab)를 표준 frontmatter�
    - **Instructions 표**가 이 카드의 핵심: 코드의 각 지시어가 모델에게 뭘 시키는지 한국어로.
 4. **정직성** — 공식 문서/코드 기반이면 `confidence: high`, 해석·추정이 섞이면 `medium`.
    실제 API 세부가 확실치 않으면 "원본과 대조하라"고 명시하고 medium으로 둔다.
-5. **주제 기록** — `python -c "from pipelines.state import record_topic; record_topic('ailab', '<topic>')"`
-6. **검증·색인·번들·커밋** — 아래 공통 마무리.
+5. **검증·색인·번들·커밋** — 아래 공통 마무리.
 
 ## 공통 마무리 (커밋 전 필수)
 ```
@@ -39,8 +38,7 @@ python pipelines/indexer.py                  # SQLite 재빌드
 python pipelines/export_ailab_web.py         # → docs/ailab.js (홈페이지 🤖 AI랩)
 python pipelines/export_search_web.py        # → docs/search-index.js (통합검색 갱신)
 ```
-새 `.md` + `state/*.json` + 재생성된 `docs/` 번들을 **같은 커밋**에 포함한다.
+새 `.md` + 재생성된 `docs/` 번들을 **같은 커밋**에 포함한다.
 
 ## 커밋 정책
-- `ailab`는 신규 타입이라 self-verify 한계가 있다 → **claude/ 브랜치에 push 후 PR**로 검수.
-  (paper/disease/drug와 같은 규칙.)
+- `python pipelines/publish.py -m "<메시지>"` 로 올린다(`content/ailab/`·`docs/` 는 콘텐츠 레인 → main).

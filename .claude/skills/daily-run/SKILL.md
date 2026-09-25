@@ -56,13 +56,15 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    ```
    python pipelines/indexer.py --check              # frontmatter 계약 검증(필수)
    python pipelines/concepts.py                    # 정리본·문항 학습 목표 계약(정리본을 건드린 날 필수)
-   python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만)
+   python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만) — ERROR 0, 그리고 끝의 mix WARN
+                                                     # (정답 순서 순환·치료+다음 처치 편중·3단계 비율)과 qualifier-tell·
+                                                     # subtopic-conclusion WARN 은 고치고 커밋한다(2026-09-25 감사 — 답이 문항 밖으로 샌다)
    python pipelines/review_questions.py --date <오늘> --out /tmp/review.md   # 내용 검토지(판정 아님 — 보고에 경로·REVIEW 신호 수를 남긴다)
    python pipelines/indexer.py                       # SQLite 재빌드
    ```
    - `--check` 나 린터 **ERROR** 가 나면 여기서 멈추고 원인 보고 후 문항을 고친다.
    - 린터는 에포님 떠먹임·활력징후 부재·정답 보기 누설·오답감별 뭉침 등 '시험 감각'
-     결함을 KMLE·USMLE 공통으로 잡는다(기준: `/gen-kmle`의 '실제 시험지 감각').
+     결함을 KMLE·USMLE 공통으로 잡는다(기준: `/gen-kmle` 「정상 소견·배경 정보」·「문항 감사 규칙」).
 
 6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 콘텐츠가 뜨게 하려면 필수.
    - USMLE를 생성했다면: `python pipelines/export_usmle_web.py` → `docs/questions_usmle.js`
@@ -83,18 +85,11 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
      동일하게 취급해 생성 즉시 사이트에 반영한다. `publish.py` 가 이를 강제한다 —
      문항만 바뀐 변경을 `--branch` 로 올리려 하면 거부한다.
 
-     > **PR 로 올리면 실제로 사고가 난다(2026-07~08 실측, PR #32·#33·#35·#36·#38·#39).**
-     > 문항 PR 6건이 병합되지 않고 쌓였는데, `next_id()` 는 **저장된 `content/`** 에서
-     > 다음 번호를 계산하므로 병합 안 된 문항은 안 보인다 → 매일 루틴이 **같은 ID
-     > `usmle-2026-0049~0054` 를 다섯 번 재발급**했다. 그 사이 main 은 그 ID 들을 다른
-     > 문항으로 채워, 나중에 병합하면 기존 문항을 덮어쓰는 상태가 됐다. 결국 6건 모두
-     > 병합 불가 판정 → 문항만 새 ID(`0067~0102`)로 이식해 구제해야 했다.
-     > 게다가 오래 열려 있던 브랜치는 main 에 없는 옛 커밋을 115~183개씩 들고 있어
-     > 병합 시 최신 콘텐츠가 되돌아갈 위험까지 있었다.
+     이유: `next_id()` 는 main 의 `content/` 에서 다음 번호를 계산한다. 병합 안 된 문항 PR 이 있으면
+     다음 루틴이 같은 ID 를 다시 발급해, 나중에 병합할 때 문항을 덮어쓴다.
 
-   - paper / disease / drug: **claude/ 브랜치에 push 후 PR 생성**
-     (신규 타입 self-verify 한계 → 사람 검수). **PR 은 같은 세션에서 병합한다** —
-     열어 두고 끝내면 위 ID 재발급 사고가 이 타입에서도 똑같이 난다.
+   - paper / disease / drug 도 콘텐츠 레인이다 — 같은 `publish.py` 로 main 에 올린다(CLAUDE.md 「커밋 전 필수 순서」).
+     사람 검토가 필요하면 `review_status` 로 표시한다.
 
 ## 주의
 - 검증(5번)에서 실패하면 커밋하지 말고 무엇이 틀렸는지 보고한다.

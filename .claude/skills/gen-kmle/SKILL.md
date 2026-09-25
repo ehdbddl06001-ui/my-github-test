@@ -16,8 +16,8 @@ description: KMLE 또는 USMLE 시험 문제를 표준 frontmatter가 붙은 .md
 - KMLE → `content/kmle/{연도}/{id}.md`
 - USMLE → `content/usmle/{id}.md`
 
-## USMLE 전용 규칙 (반드시 지킬 것)
-- frontmatter에 `step`("Step 1" 또는 "Step 2")과 `exam_subject`를 **반드시** 넣는다.
+## USMLE 전용 규칙
+- frontmatter에 `step`("Step 1" 또는 "Step 2")과 `exam_subject`를 넣는다.
   없으면 `indexer.py --check`에서 실패하고 웹/CLI 퀴즈에 분류되지 않는다.
   - Step 1 과목: Pharmacology, Immunology, Biochemistry, Microbiology, Pathology, Physiology
   - Step 2 과목: Internal Medicine, Surgery, Neurology, Pediatrics, Obstetrics & Gynecology, Psychiatry
@@ -30,7 +30,7 @@ description: KMLE 또는 USMLE 시험 문제를 표준 frontmatter가 붙은 .md
 
 ## 품질 규칙
 1. 최근 `recent_topics()` 로 나온 주제는 피한다(중복 방지).
-2. 임상 추론형으로 작성: 단순 암기보다 감별진단·치료선택 위주.
+2. 임상 추론형으로 작성: 단순 암기보다 판단(진단·감별·검사 선택·치료·금기·기전)을 묻는다 — 목표 배분은 「판단 단계 구성」.
 3. `confidence` 는 **출처의 신뢰도**다(교과서·가이드라인이 일치하면 high, 논쟁적이면 medium/low).
    **의학적으로 검증됐다는 표시가 아니다** — 생성 모델이 스스로 매긴 confidence 를 검토의 대체물로
    쓰지 않는다. 검토 완료 표시는 사람이 `review_status: reviewed` + `reviewed_by` + `review_note` 로만 한다.
@@ -115,8 +115,8 @@ ERROR). 영상·심전도 그림의 소견은 `영상:`·`심전도:` 로 시작
 사용자는 본2 — 내신은 끝나 가고 **국시·USMLE 대비**가 목적이다. 실제 시험은 「진단 → 중증도·금기 확인 → 처치」처럼
 여러 단계를 잇는 문항이 많으므로 하루 세트를 이렇게 맞춘다(`lint_questions.py` 가 끝에 구성 WARN 을 낸다):
 - **판단 3단계 이상(`steps ≥ 3`) 40 % 이상** · 1단계(단순 회상) 10 % 이하.
-- **한 평가 목표(target) 50 % 이하** — 최근 세트가 「치료·다음 처치」에 97 % 몰렸다(2026-09-23 실측). 진단·감별·검사 선택·
-  기전(USMLE Step 1)·금기·예후를 섞는다.
+- **한 평가 목표(target) 50 % 이하, 「치료」+「다음 처치」 합 55 % 이하** — 둘은 같은 판단 축이라 합쳐서 센다.
+  진단·감별·검사 선택·기전(USMLE Step 1)·금기·예후를 섞는다.
 - 단계는 **판단**이지 정보량이 아니다. 3단계 문항은 사슬의 각 줄이 **다른 단서**로 **다른 결정**을 내려야 한다
   (같은 진단을 세 번 확인하는 것은 1단계다).
 - 세트를 짜기 전에 `python pipelines/item_stats.py --brief` 로 **내 약한 평가 목표**를 보고 그 목표를 세트에 조금 더 넣는다
@@ -128,7 +128,25 @@ ERROR). 영상·심전도 그림의 소견은 `영상:`·`심전도:` 로 시작
 3. **동질적·매력적 오답**: 같은 범주로 맞추고 흔한 오개념을 심는다. `design.rival` 에 가장 경쟁하는
    대안을 적는다. 명백히 틀린 장식성 보기는 금지.
 4. **기초의학 연계(Step 1) / 함정(Step 2)**: 금기·순서 오류를 오답으로 배치.
-5. **정답 위치 분산**: 한 세트에서 정답을 A~E에 고르게(앱은 보기를 셔플하지 않는다).
+5. **정답 위치 무작위**: 문항마다 정답 위치를 따로 정한다(앱은 보기를 셔플하지 않는다). 글자 수만 고르게 맞추고
+   ABCDE 순서로 돌리면 번호만 보고 풀린다(린터 mix WARN).
+
+## 답이 문항 밖·보기 모양으로 새지 않게
+답은 문항 안의 판단으로만 가려져야 한다. 아래는 린터가 새 문항에서 잡는다.
+1. **subtopic 에 결론을 넣지 않는다.** `subtopic` 은 질환군·주제만(「Herpes Zoster」). 「… — Oral Valacyclovir」처럼
+   진단·약·처치를 붙이면 검색·새 자료 목록에서 답이 보인다(앱은 이제 채점 전에 숨기지만 다른 화면엔 남는다).
+   린터 WARN `subtopic-conclusion`(「 — 」가 있으면).
+2. **한정어를 오답 표지로 쓰지 않는다.** 「단독·만·없이·항상·절대 / only·alone·without」가 오답에만 붙으면 요령으로 풀린다
+   거울쌍(「X 없이」 vs 「X 뒤」, 「단독 먼저」 vs 「A 뒤 B」) 중 하나가 정답인 구성도 금지.
+   예후 문항에서 **정답만 좋은 경과**(나머지 넷은 나쁜 경과)로 만들지 않는다. 린터 WARN `qualifier-tell`.
+3. **단서를 쌓아 steps 를 부풀리지 않는다.** 같은 진단을 가리키는 결정적 단서를 셋 넘게 겹치면 1단계다. stem 이 진단을 말해 놓고 기전·사실을 묻는 문항은 steps 1 · difficulty ≤ 2.
+4. **management 정보는 그것이 바꾸는 보기가 있어야 한다.** 「임신 가능성 없음」「간기능 정상」을 넣었으면 그 정보로 탈락하거나
+   살아나는 보기가 보기 안에 있어야 한다. 보기는 같은 시점·층위로 — 급성 통풍 발작 문항에 요산저하제를 섞지 않고
+   실제 경쟁 대안(경구 스테로이드 등)을 넣는다. 적응이 전혀 없는 장식성 보기(서맥에 아미오다론) 금지.
+5. **오답 설명은 rival 보기부터 `distractors` 로.** 새 문항은 최소 `design.rival` 보기에 `distractors.<보기>`
+   (tempting·answer_first·discriminator·when_right)를 쓴다 — 틀렸을 때 앱이 바로 보여 주고 `[dist]` 큐가 줄어든다.
+6. **용어 — USMLE 는 검사 이름·값·참고치를 영어·미국 단위로**(린터 ERROR `usmle-labs-korean`).
+   KMLE 는 한 세트 안에서 같은 대상을 한 용어로(갑상선/갑상샘, 담관/쓸개관, 아밀라아제/아밀레이스를 섞지 않는다), 백혈구 등 단위는 /μL.
 
 ## 자료 구조 — 차트형 제시
 frontmatter의 `vitals`·`labs` 를 쓰면 웹이 **박스**로 렌더한다(`schemas/frontmatter.md`).
@@ -175,7 +193,8 @@ frontmatter의 `vitals`·`labs` 를 쓰면 웹이 **박스**로 렌더한다(`sc
 python pipelines/lint_questions.py content/kmle/2026/kmle-2026-0129.md   # 또는 여러 파일
 ```
 - **ERROR 0** 이어야 커밋한다(에포님 떠먹임·오답감별 누락·`design` 누락/오류·**문항에 없는 정보 인용** 등).
-- WARN(활력징후 부재·정답 보기만 김·정보 역할 과다·난이도와 판단 단계 불일치)도 가능한 한 해소한다.
+- WARN 중 `subtopic-conclusion`·`qualifier-tell`·세트 mix(정답 순서·목표 편중·3단계 비율)는 고치고 커밋한다.
+  나머지 WARN(활력징후 부재·정답 보기만 김·정보 역할 과다·난이도와 판단 단계 불일치)은 고치거나, 남기는 이유를 보고에 적는다.
 - **REVIEW** 는 내용 검토 신호다 — 판정이 아니므로 실패로 치지 않는다. 신호가 없다고 검증된 것도 아니다.
 
 ### 2) 내용 검토(사람) — 생성 후
@@ -188,7 +207,7 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 확인한 문항만 `review_status: reviewed`·`reviewed_by`·`review_note` 를 적는다(린터가 근거 없는 reviewed 를 막는다).
 근거를 확인하지 못한 임상적 주장이 있으면 `needs_revision` 으로 둔다.
 
-### 3) 오답 뒤 학습 흐름 필드(선택 — 가능하면 붙인다)
+### 3) 오답 뒤 학습 흐름 필드 — `objective` 필수, `distractors` 는 rival 보기부터
 - `objective`: **2026-09-21 이후 새로 만드는 KMLE·USMLE 문항에는 반드시 붙인다.** 이 문항이 평가하는
   **학습 목표**의 정리본 id(`content/concepts/<과>/cn.*.md`). 기존 목표로 묶을 수 있으면 그 id 를 쓰고, 새 목표면
   id 만 붙여 둔다 — 정리본은 내가 그 문항을 틀렸을 때 `/gen-concept` 큐가 자동으로 집어 간다(하루 상한 안에서).
@@ -201,16 +220,15 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 - 정리본의 출처는 **실제로 확인한 것만**(PubMed·기관 쪽) 적고 `checked` 에 무엇을 대조했는지 쓴다. 확인 못 한 세부는
   「본문 대조 전(검토 항목)」으로 적는다. `review_status: unreviewed` 로 두고 사람만 reviewed 로 바꾼다.
 
-- 정리본은 학습서(PDF)의 단원이 된다 — `schemas/frontmatter.md` 의 「깊이」 규칙대로 생리 → 기전 → 소견 → 기준 → 치료 → 재평가를
-  잇고, 수치·권고에는 `[[출처id: 쪽·절]]` 로 원문 위치를 단다. 원문을 읽지 못한 주장은 `[[?출처id]]` 또는 `verified: abstract/citation`.
-  다른 지침의 기준(정의·중증도·치료 기준)은 `criteria` 행을 나눠 쓰고 합치지 않는다.
+- 정리본 자체를 쓸 때는 `/gen-concept`(판형 2)을 따른다.
 
 ### 커밋 전 문항 자가 점검(체크리스트)
 - [ ] `design` 을 **문항보다 먼저** 정했고, 보기가 그 판단을 실제로 가르는가?
 - [ ] 혼동 대안(`rival`)이 실제로 경쟁하고, 구분 소견이 문항 안에 있는가?
 - [ ] 정상·음성 소견을 「배제」로 과장하지 않았는가? 부자연스러운 검사를 끼워 넣지 않았는가?
 - [ ] difficulty 가 정보량이 아니라 판단 단계·대안의 그럴듯함을 반영하는가?
-- [ ] 활력징후 4종 · 에포님 떠먹임 없음 · 보기 동질·평행 · 정답 위치 분산
+- [ ] 활력징후 4종 · 에포님 떠먹임 없음 · 보기 동질·평행 · 정답 위치 무작위(순환 아님)
+- [ ] subtopic 에 결론 없음 · 한정어·거울쌍 없음 · management 정보가 바꾸는 보기가 있음 · USMLE 검사명 영어
 - [ ] 오답감별이 보기별 하위 불릿이고, 관련 없는 오답에 억지 이유를 붙이지 않았는가?
 
 ## 본문 구조(사람이 읽는 부분)

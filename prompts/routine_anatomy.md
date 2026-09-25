@@ -27,6 +27,6 @@
   첫 줄에 한 문장으로 밝힌다. 만들 게 없으면 daily plan 카드라도 커밋한다.
 - 우선순위: ① 회차 종합 학습정리(`kind: study_guide`) → ② 예습시험 문항 → ③ daily plan.
 - KST 오늘 날짜 기준으로 `.claude/skills/anatomy-daily/SKILL.md` 절차를 그대로 따른다.
-- 규칙은 CLAUDE.md와 spec(experiments/specs/anatomy-3q-2026.md)에 있다. 이 프롬프트는
+- 규칙은 `docs/ANATOMY_RULES.md` 와 spec(experiments/specs/anatomy-3q-2026.md)에 있다. 이 프롬프트는
   얇게 유지한다.
 - 완료 보고에는 phase, D-day, 생성 항목 id, needs_review 대기, Drive 변경 현황을 담는다.

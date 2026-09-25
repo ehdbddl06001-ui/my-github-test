@@ -73,4 +73,4 @@ related: [disease-heart-failure]
 ## 생성 후 (daily-run 이 대신 수행)
 1. `python pipelines/indexer.py --check` → `indexer.py` (검증·색인)
 2. `python pipelines/export_search_web.py` (통합검색 색인 갱신 → 웹에서 검색됨)
-3. 새 `.md` + `state/*.json` + `docs/search-index.js` 를 같은 커밋에 포함
+3. 새 `.md` + `docs/search-index.js` 를 같은 커밋에 포함(`state/` 캐시는 gitignore)
