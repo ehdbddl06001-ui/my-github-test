@@ -65,6 +65,7 @@ sources:
     year: 2020
     citation: "Panchal AR, Bartos JA, Cabañas JG, et al. Circulation 2020;142(16 Suppl 2):S366–S468"
     doi: "10.1161/CIR.0000000000000916"
+    pmid: "33081529"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너에서 ahajournals·PubMed 접근이 막혀 본문을 대조하지 못했다(문항 해설의 출처)"
     verified: citation

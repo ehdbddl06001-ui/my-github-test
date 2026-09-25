@@ -67,6 +67,7 @@ sources:
     year: 2017
     citation: "Rochwerg B, Brochard L, Elliott MW, et al. Eur Respir J 2017;50(2):1602426"
     doi: "10.1183/13993003.02426-2016"
+    pmid: "28860265"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — PubMed·doi 접근 차단으로 권고 본문 미대조. pH ≤ 7.35·PaCO₂ > 45 기준은 기억에 근거"
     verified: citation

@@ -68,6 +68,7 @@ sources:
     year: 2009
     citation: "Lim WS, Baudouin SV, George RC, et al. Thorax 2009;64(Suppl 3):iii1–iii55"
     doi: "10.1136/thx.2009.121434"
+    pmid: "19783532"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — PubMed·doi 접근 차단으로 본문 미대조. 0–1 외래·2 입원 고려·3–5 중증 구분은 기억에 근거"
     verified: citation

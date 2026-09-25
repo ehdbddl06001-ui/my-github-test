@@ -84,6 +84,7 @@ sources:
     year: 2024
     citation: "Fanouriakis A, Kostopoulou M, Andersen J, et al. Ann Rheum Dis 2024;83(1):15–29"
     doi: "10.1136/ard-2023-224762"
+    pmid: "37827694"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너가 doi·PubMed 접근을 막아 권고 본문·쪽수를 대조하지 못했다. 목표 용량 5 mg/kg/일·스테로이드 ≤5 mg/일 유지 서술은 사람 대조가 필요하다"
     verified: citation
@@ -94,6 +95,7 @@ sources:
     year: 2016
     citation: "Marmor MF, Kellner U, Lai TY, et al. Ophthalmology 2016;123(6):1386–1394"
     doi: "10.1016/j.ophtha.2016.01.058"
+    pmid: "26992838"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 원문 접근 차단. 「시작 전 기저 안저검사, 위험 인자 없으면 5년 뒤부터 매년 선별」 서술은 기억에 근거하며 사람 대조가 필요하다"
     verified: citation

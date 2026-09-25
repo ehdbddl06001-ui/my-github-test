@@ -65,10 +65,25 @@ jobs:
           echo "$RCLONE_CONF_BASE64" | base64 -d > ~/.config/rclone/rclone.conf
           echo "ok=true" >> "$GITHUB_OUTPUT"
 
-      - name: Tests (정리본·도식·학습 상태 JS/Python 일치·PDF 렌더·드라이브 보호)
+      # 코드 시험만 관문이다. 실제 정리본 검사는 아래에서 따로 — 루틴이 쓴 정리본 하나가 모든 책을 멈추지 않게
+      # (2026-09-23·24: 새 정리본의 도식·DOI 출처가 시험을 세워 그날 PDF 가 하나도 안 나왔다).
+      - name: Tests (코드 — 도식 배치·학습 상태 JS/Python 일치·PDF 렌더·드라이브 보호)
         env:
           PYTHONIOENCODING: utf-8
         run: python pipelines/test_learning_books.py && python pipelines/test_sync_key.py
+
+      - name: Content check (실제 정리본·문항 계약 — 실패해도 다른 책은 만든다)
+        id: content
+        continue-on-error: true
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          python pipelines/test_content.py 2>&1 | tee /tmp/content.txt
+          status=${PIPESTATUS[0]}
+          if [ "$status" != 0 ]; then
+            { echo "### 정리본 검사 실패 — 해당 책은 이전 PDF 를 유지"; echo '```'; grep -E "AssertionError|FAIL|Error" /tmp/content.txt | head -20; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit $status
 
       - name: Check source revisions
         continue-on-error: true
@@ -101,3 +116,10 @@ jobs:
             [ "$i" = 5 ] && exit 1
             echo "push 경합 — ${i}번째 재시도"; sleep $((i * 3))
           done
+
+      # 책은 만들어 올렸어도 정리본 검사가 실패했으면 작업을 실패로 끝내 메일로 알린다(요약에 원인)
+      - name: Report content-check failure
+        if: steps.content.outcome == 'failure'
+        run: |
+          echo "::error::정리본 검사 실패 — 문제 정리본이 든 책은 이전 PDF 를 유지했다. 작업 요약·Content check 단계 로그를 본다."
+          exit 1

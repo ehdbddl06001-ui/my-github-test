@@ -213,6 +213,9 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
         if not (safe_url(s.get("url")) or s.get("doi") or s.get("pmid")) and not (
                 s.get("kind") == "textbook" and str(s.get("citation", "")).strip()):
             errs.append(f"sources[{i}] 는 https url·doi·pmid 중 하나로 찾아갈 수 있어야 한다(교과서는 판·장·쪽 citation)")
+        if s.get("doi") and not s.get("pmid") and not safe_url(s.get("url")) and s.get("kind") != "textbook":
+            errs.append(f"[WARN] sources[{i}] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. "
+                        f"컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)")
         if s.get("verified", "citation") not in VERIFIED:
             errs.append(f"sources[{i}].verified 는 {'/'.join(VERIFIED)}(무엇까지 대조했나)")
         if s.get("kind") and s["kind"] not in SOURCE_KINDS:
@@ -290,7 +293,61 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
                 errs.append(f"variants[{i}] 는 of 가 있으면 changed(바꾼 단서와 그 결과)를 적어야 한다")
             if not isinstance(v.get("flip"), bool):
                 errs.append(f"variants[{i}].flip 은 true(단서를 바꿔 답이 바뀜)·false(겉모습만 바뀌고 답은 그대로)")
+    errs += style_warnings(meta)
     return errs
+
+
+# ── 판형 2(2026-09-25) 모양 예산 — `style: 2` 인 정리본만 본다(옛 정리본은 [restyle] 큐로 하나씩 옮긴다) ──
+STYLE_SUMMARY = (3, 5)          # summary 줄 수
+STYLE_LINE = 110                # summary 한 줄 글자 수
+STYLE_TITLE = 40
+STYLE_NODE = {"decision": 30, "start": 40, "step": 40, "info": 40, "alert": 40, "end": 40}
+STYLE_EDGE_LABEL = 14
+STYLE_LEADS = ("결론:", "시험 단서:")
+
+
+def style_warnings(meta: dict[str, Any]) -> list[str]:
+    if meta.get("style") != 2:
+        return []
+    w: list[str] = []
+    title = str(meta.get("title", ""))
+    if len(title) > STYLE_TITLE:
+        w.append(f"[WARN] 판형 2: title {len(title)}자 > {STYLE_TITLE} — 「질환 — 판단 한 구절」")
+    summ = [str(x) for x in meta.get("summary") or []]
+    if not STYLE_SUMMARY[0] <= len(summ) <= STYLE_SUMMARY[1]:
+        w.append(f"[WARN] 판형 2: summary {len(summ)}줄 — {STYLE_SUMMARY[0]}~{STYLE_SUMMARY[1]}줄")
+    for i, lead in enumerate(STYLE_LEADS):
+        if len(summ) <= i or not summ[i].startswith(lead):
+            w.append(f"[WARN] 판형 2: summary {i + 1}번째 줄은 「{lead}」로 시작한다")
+    for i, x in enumerate(summ, 1):
+        if len(x) > STYLE_LINE:
+            w.append(f"[WARN] 판형 2: summary {i}번째 줄 {len(x)}자 > {STYLE_LINE} — 나머지는 본문·표로")
+    dia = meta.get("diagram")
+    if isinstance(dia, dict):
+        for n in dia.get("nodes") or []:
+            lim = STYLE_NODE.get(str(n.get("kind")), 40)
+            if isinstance(n, dict) and len(str(n.get("text", ""))) > lim:
+                w.append(f"[WARN] 판형 2: 도식 노드 '{n.get('id')}' {len(str(n.get('text', '')))}자 > {lim} — "
+                         f"기준 목록·용량·예외는 diagram_notes 나 표로 옮긴다")
+        for e in dia.get("edges") or []:
+            if isinstance(e, dict) and len(str(e.get("label", "") or "")) > STYLE_EDGE_LABEL:
+                w.append(f"[WARN] 판형 2: 도식 갈래 라벨 '{e.get('label')}' > {STYLE_EDGE_LABEL}자")
+    elif meta.get("objective_kind") not in ("기전",):
+        w.append("[WARN] 판형 2: diagram 이 없다 — 판단 목표는 도식으로 흐름을 보인다(기전 목표만 생략 가능)")
+    return w
+
+
+def diagram_fit_errors(concepts: dict[str, dict]) -> list[str]:
+    """PDF 한 쪽에 읽을 수 있는 크기로 안 들어가는 도식 — 학습서 빌드가 그 책을 멈추므로 커밋 전에 막는다."""
+    import build_books as bb                     # 늦게 가져온다(build_books 가 이 모듈을 가져온다)
+    out = []
+    for cid, c in concepts.items():
+        if c.get("diagram") and not dd.validate(c["diagram"]):
+            fit = bb.fit_diagram(c["diagram"])
+            if not fit["ok"]:
+                out.append(f"{c.get('path', cid)}: 도식이 읽을 크기로 한 쪽에 들어가지 않는다(배율 {fit['scale']} < "
+                           f"{bb.DIAGRAM_MIN_SCALE}) — 노드 글을 줄이거나(판단 ≤30자) 의미 단위로 나눈다")
+    return out
 
 
 def _cite_texts(meta: dict[str, Any]) -> list[str]:
@@ -470,6 +527,7 @@ if __name__ == "__main__":
         if m.get("objective"):
             for lvl, msg in question_learning_errors(m, cs.get(str(m["objective"]))):
                 errs.append(f"{m['path']}: [{lvl}] {msg}")
+    errs += diagram_fit_errors(cs)
     for e in errs:
         print("  ✗", e)
     sys.exit(1 if any("[WARN]" not in e for e in errs) else 0)

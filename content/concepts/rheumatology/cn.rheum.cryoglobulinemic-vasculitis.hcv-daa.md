@@ -77,6 +77,7 @@ sources:
     year: 2020
     citation: "European Association for the Study of the Liver. J Hepatol 2020;73(5):1170–1218"
     doi: "10.1016/j.jhep.2020.08.018"
+    pmid: "32956768"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — 루틴 컨테이너의 네트워크 정책이 doi·저널 사이트 접근을 막아 권고 본문을 대조하지 못했다. 크리오글로불린혈증의 중증도별 순서(리툭시맙 먼저 → 항바이러스제)·DAA 요법 이름·기간은 기억에 근거하며 사람 대조가 필요하다"
     verified: citation
@@ -96,6 +97,7 @@ sources:
     year: 2018
     citation: "Roccatello D, Saadoun D, Ramos-Casals M, et al. Nat Rev Dis Primers 2018;4(1):11"
     doi: "10.1038/s41572-018-0009-4"
+    pmid: "30072738"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — Brouet 분류(Ⅰ·Ⅱ·Ⅲ형), C4 선택적 저하, 검체를 37 ℃ 로 유지해야 하는 이유, 림프종 이행은 기억에 근거하며 원문 미대조"
     verified: citation

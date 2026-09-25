@@ -58,6 +58,7 @@ sources:
     year: 2022
     citation: "Humbert M, Kovacs G, Hoeper MM, et al. Eur Heart J 2022;43(38):3618–3731"
     doi: "10.1093/eurheartj/ehac237"
+    pmid: "36017548"   # 2026-09-25 PubMed esearch 로 DOI 확인·제목 일치
     checked_at: 2026-09-23
     checked: "서지만 — PubMed·doi 접근 차단으로 본문 미대조. 폐혈관저항 기준을 > 2 WU 로 낮췄다는 점은 기억에 근거하며 사람 대조가 필요하다"
     verified: citation

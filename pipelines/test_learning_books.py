@@ -49,6 +49,171 @@ SPEC = {
 }
 
 
+# 층을 건너뛰는 선이 여럿인 도식(2026-09-25 고칼륨혈증 도식 모양) — 옛 배치는 오른쪽 통로로 돌아 선이 겹쳤다
+SKIP = {
+    "title": "skip",
+    "nodes": [
+        {"id": "s", "kind": "start", "text": "시작"},
+        {"id": "d", "kind": "decision", "text": "심전도 변화가 있는가?"},
+        {"id": "i", "kind": "info", "text": "심전도를 판독한다"},
+        {"id": "ca", "kind": "step", "text": "칼슘"},
+        {"id": "k", "kind": "decision", "text": "칼륨 수치는?"},
+        {"id": "sh", "kind": "step", "text": "세포 안으로"},
+        {"id": "rm", "kind": "step", "text": "몸 밖으로"},
+        {"id": "e", "kind": "end", "text": "재측정"},
+    ],
+    "edges": [
+        {"from": "s", "to": "d"},
+        {"from": "d", "to": "ca", "label": "P 소실·넓은 QRS·부정맥 등"},
+        {"from": "d", "to": "i", "label": "판독 전"},
+        {"from": "d", "to": "k", "label": "없음·뾰족한 T만"},
+        {"from": "i", "to": "ca", "label": "변화 있음"},
+        {"from": "i", "to": "k", "label": "변화 없음"},
+        {"from": "ca", "to": "sh"},
+        {"from": "k", "to": "sh", "label": "≥6.0"},
+        {"from": "k", "to": "e", "label": "5.5–5.9"},
+        {"from": "sh", "to": "rm"},
+        {"from": "rm", "to": "e"},
+    ],
+}
+TALL = {
+ "title": "급성 흉통에서 박리 의심 — 첫 약물에서 확정 치료까지",
+ "nodes": [
+  {
+   "id": "start",
+   "kind": "start",
+   "text": "갑작스러운 심한 흉·배부 통증 → 활력징후·양팔 혈압·맥박·잡음·신경학 진찰, 심전도"
+  },
+  {
+   "id": "suspect",
+   "kind": "decision",
+   "text": "박리 단서(이동성 찢어지는 통증·맥박/혈압 비대칭·새 이완기 잡음·신경 결손)가 있는가?"
+  },
+  {
+   "id": "acs",
+   "kind": "end",
+   "text": "박리 단서 없음 + 허혈 심전도 — 급성 관동맥증후군 경로(재관류)"
+  },
+  {
+   "id": "hypo",
+   "kind": "decision",
+   "text": "저혈압·쇼크(심낭압전·파열·심한 대동맥판 역류)가 있는가?"
+  },
+  {
+   "id": "shock",
+   "kind": "alert",
+   "text": "소생 + 응급 수술 — 혈압을 낮추는 약물 조절은 하지 않는다"
+  },
+  {
+   "id": "bb",
+   "kind": "step",
+   "text": "정맥 베타차단제 먼저(심박 약 60회/분) + 통증 조절 · 중환자실 감시"
+  },
+  {
+   "id": "vd",
+   "kind": "step",
+   "text": "수축기 >120 mmHg 가 남으면 니트로프루시드 추가(단독 투여 금지)"
+  },
+  {
+   "id": "info",
+   "kind": "info",
+   "text": "영상으로 확인·분류 — CT 혈관조영(안정 시) 또는 경식도 심초음파(불안정 시)"
+  },
+  {
+   "id": "type",
+   "kind": "decision",
+   "text": "상행대동맥을 침범했는가(Stanford A)?"
+  },
+  {
+   "id": "surgery",
+   "kind": "end",
+   "text": "A형 — 응급·긴급 수술(인조혈관 치환, 필요 시 판막 처치)"
+  },
+  {
+   "id": "comp",
+   "kind": "decision",
+   "text": "B형 — 합병증(진행·분지 폐쇄·파열 임박·지속 통증)이 있는가?"
+  },
+  {
+   "id": "tevar",
+   "kind": "end",
+   "text": "합병증 있는 B형 — 혈관내 스텐트그라프트(불가하면 수술)"
+  },
+  {
+   "id": "medical",
+   "kind": "end",
+   "text": "합병증 없는 B형 — 약물 치료 유지, 6–12개월마다 CT·MRI 추적"
+  }
+ ],
+ "edges": [
+  {
+   "from": "start",
+   "to": "suspect"
+  },
+  {
+   "from": "suspect",
+   "to": "acs",
+   "label": "없음"
+  },
+  {
+   "from": "suspect",
+   "to": "hypo",
+   "label": "있음"
+  },
+  {
+   "from": "hypo",
+   "to": "shock",
+   "label": "저혈압"
+  },
+  {
+   "from": "hypo",
+   "to": "bb",
+   "label": "정상·고혈압"
+  },
+  {
+   "from": "bb",
+   "to": "vd"
+  },
+  {
+   "from": "vd",
+   "to": "info"
+  },
+  {
+   "from": "info",
+   "to": "type"
+  },
+  {
+   "from": "type",
+   "to": "surgery",
+   "label": "침범"
+  },
+  {
+   "from": "type",
+   "to": "comp",
+   "label": "비침범"
+  },
+  {
+   "from": "comp",
+   "to": "tevar",
+   "label": "있음"
+  },
+  {
+   "from": "comp",
+   "to": "medical",
+   "label": "없음"
+  }
+ ]
+}
+
+
+def _segments(g):
+    return [(k, a, b) for k, e in enumerate(g["edges"]) for a, b in zip(e["points"], e["points"][1:])]
+
+
+def _boxes_touch(a, b):
+    return a[0] < b[0] + b[2] - 0.5 and b[0] < a[0] + a[2] - 0.5 and a[1] < b[1] + b[3] - 0.5 and b[1] < a[1] + a[3] - 0.5
+
+
 def ev(eid, kind, t, **kw):
     return {"eid": eid, "kind": kind, "t": t, **kw}
 
@@ -109,6 +274,47 @@ class Diagram(unittest.TestCase):
         errs = dd.validate_case(SPEC, {"visit": [{"node": "s"}, {"node": "a"}]})
         self.assertTrue(any("선이 도식에 없다" in e for e in errs))
 
+    def test_skip_edges_do_not_overlap_cross_or_hide_labels(self):
+        """사용자 지적(2026-09-25): 선이 겹치고 길게 돌아간다. 겹침 0·교차 0·바깥 통로 없음·라벨이 선·노드를 덮지 않고 글을 자르지 않음."""
+        for nw in (196, 260, 330):
+            g = dd.layout(SKIP, node_w=nw)
+            segs = _segments(g)
+            for i in range(len(segs)):
+                for j in range(i + 1, len(segs)):
+                    (ki, a, b), (kj, c, d) = segs[i], segs[j]
+                    if ki == kj:
+                        continue
+                    ha, hc = a[1] == b[1], c[1] == d[1]
+                    if ha and hc and abs(a[1] - c[1]) < 0.5:          # 같은 높이의 가로선이 겹치지 않는다
+                        self.assertLessEqual(min(max(a[0], b[0]), max(c[0], d[0])) - max(min(a[0], b[0]), min(c[0], d[0])), 1)
+                    if ha != hc:                                      # 가로·세로가 엇갈리지 않는다
+                        H, V = ((a, b), (c, d)) if ha else ((c, d), (a, b))
+                        x0, x1 = sorted([H[0][0], H[1][0]]); y0, y1 = sorted([V[0][1], V[1][1]])
+                        self.assertFalse(x0 < V[0][0] < x1 and y0 < H[0][1] < y1, (nw, g["edges"][ki]["to"], g["edges"][kj]["to"]))
+            right = max(n["x"] + n["w"] for n in g["nodes"])
+            for k, a, b in segs:                                      # 바깥 통로로 돌지 않는다
+                self.assertLessEqual(max(a[0], b[0]), right)
+            nodes = [(n["x"], n["y"], n["w"], n["h"]) for n in g["nodes"]]
+            for e, se in zip(g["edges"], SKIP["edges"]):
+                if not e["label"]:
+                    continue
+                L = (e["label"]["x"], e["label"]["y"], e["label"]["w"], e["label"]["h"])
+                self.assertEqual("".join(e["label"]["lines"]).replace(" ", ""), se["label"].replace(" ", ""))
+                self.assertFalse(any(_boxes_touch(L, B) for B in nodes))
+                for k, a, b in segs:
+                    if g["edges"][k] is e:
+                        continue
+                    S = (min(a[0], b[0]) - 0.5, min(a[1], b[1]) - 0.5, abs(a[0] - b[0]) + 1, abs(a[1] - b[1]) + 1)
+                    self.assertFalse(_boxes_touch(L, S), (e["label"]["lines"], g["edges"][k]["to"]))
+
+    def test_label_sits_right_under_its_decision(self):
+        g = dd.layout(SKIP)
+        d = next(n for n in g["nodes"] if n["id"] == "d")
+        for e in g["edges"]:
+            if e["from"] == "d":
+                self.assertLess(e["label"]["y"] - (d["y"] + d["h"]), 40)   # 질문 바로 아래에 답(갈래)
+                self.assertTrue(e["label"]["x"] <= e["points"][0][0] <= e["label"]["x"] + e["label"]["w"])
+
     def test_text_and_svg_share_markers_and_escape(self):
         spec = copy.deepcopy(SPEC)
         spec["nodes"][0]["text"] = "<script>x</script>"
@@ -123,17 +329,7 @@ class Diagram(unittest.TestCase):
         self.assertIn("이 사례: 문항에 없음", txt)
 
 
-class RealContent(unittest.TestCase):
-    def test_concepts_and_linked_questions_valid(self):
-        concepts, errs = C.load_concepts()
-        # [WARN](해리슨 대조 없음 등)은 클라우드 루틴이 드라이브를 못 읽을 때 정상적으로 남는다 — ERROR 만 막는다
-        self.assertEqual([e for e in errs if "[WARN]" not in e], [])
-        qs = C.load_questions()
-        for qid, m in qs.items():
-            if m.get("objective"):
-                problems = [x for x in C.question_learning_errors(m, concepts.get(m["objective"])) if x[0] == "ERROR"]
-                self.assertEqual(problems, [], qid)
-
+class ConceptContract(unittest.TestCase):
     def test_no_you_dont_know_wording(self):
         m = {"answer": "A", "choices": ["A. a", "B. b"], "distractors": {"B": {
             "tempting": "학습자가 기준을 모른다", "answer_first": "x", "discriminator": "y"}}}
@@ -396,15 +592,63 @@ class Planning(unittest.TestCase):
         blocks = bb.split_blocks("<p>가</p><ul><li>나<ul><li>다</li></ul></li></ul><table><tr><td>라</td></tr></table>")
         self.assertEqual(len(blocks), 3)
 
-    def test_real_diagrams_fit_readably(self):
-        concepts, _ = C.load_concepts()
-        for c in concepts.values():
-            fit = bb.fit_diagram(c["diagram"])
-            self.assertTrue(fit["ok"], c["id"])
-            self.assertGreaterEqual(fit["scale"], bb.DIAGRAM_MIN_SCALE)
+    def test_tall_chain_fits_readably(self):
+        # 9층 사슬(2026-09-24 실패한 대동맥 박리 도식 그대로) — 층 사이를 필요한 만큼만 두면 한 쪽에 읽을 크기로 들어간다
+        fit = bb.fit_diagram(TALL)
+        self.assertTrue(fit["ok"])
+        self.assertGreaterEqual(fit["scale"], bb.DIAGRAM_MIN_SCALE)
 
 
-class SourceChecks(unittest.TestCase):
+SRC_FIXTURE = ({"cn.x.y.z": {"id": "cn.x.y.z", "sources": [
+    {"id": "p", "pmid": "111", "title": "PubMed 출처", "checked_at": "2026-09-18"},
+    {"id": "g", "url": "https://example.org/guideline.pdf", "title": "지침", "checked_at": "2026-09-18",
+     "watch": {"pattern": r"HYPERKALAEMIA GUIDELINE - (\w+ \d{4})"}},
+    {"id": "h", "kind": "textbook", "citation": "Harrison 21e", "title": "교과서", "checked_at": "2026-09-18"},
+]}}, [])
+
+
+class _FixtureSources(unittest.TestCase):
+    """출처 확인 시험은 실제 정리본이 아니라 고정 출처로 한다 — 루틴이 새 정리본을 쓸 때마다 시험이 깨지지 않게
+    (2026-09-23·24 학습서 실패: DOI 만 있는 새 출처가 가짜 응답으로 「실패」가 되어 시험을 세웠다)."""
+
+    def setUp(self):
+        from unittest import mock
+        p = mock.patch.object(cs, "load_concepts", lambda: copy.deepcopy(SRC_FIXTURE))
+        p.start()
+        self.addCleanup(p.stop)
+
+
+class SourceChecks(_FixtureSources):
+    def test_doi_only_source_resolves_to_pubmed_once_then_falls_back_to_doi_org(self):
+        SRC_FIXTURE[0]["cn.x.y.z"]["sources"].append({"id": "d", "doi": "10.1/abc", "title": "DOI 출처", "checked_at": "2026-09-18"})
+        self.addCleanup(SRC_FIXTURE[0]["cn.x.y.z"]["sources"].pop)
+        calls = []
+
+        def net(url):
+            calls.append(url)
+            if "esearch" in url:
+                return "<eSearchResult><IdList><Id>999</Id></IdList></eSearchResult>"
+            if "efetch" in url:
+                return "<PubmedArticleSet><PubmedArticle></PubmedArticle></PubmedArticleSet>"
+            return "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf"
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "sc.json"
+            r = cs.run(getter=net, out=out, today="2026-09-25")
+            self.assertEqual((r["10.1/abc"]["status"], r["10.1/abc"]["method"], r["10.1/abc"]["doi_pmid"]), ("ok", "pubmed", "999"))
+            calls.clear()
+            cs.run(getter=net, out=out, today="2026-09-26")
+            self.assertFalse(any("esearch" in u for u in calls))              # 찾은 PMID 는 기억한다
+
+            def not_in_pubmed(url):
+                if "esearch" in url:
+                    return "<eSearchResult><IdList></IdList></eSearchResult>"
+                if "doi.org/api/handles" in url:
+                    return '{"responseCode": 1, "handle": "10.1/abc"}'
+                return net(url)
+            r = cs.run(getter=not_in_pubmed, out=Path(td) / "sc2.json", today="2026-09-25")
+            self.assertEqual((r["10.1/abc"]["status"], r["10.1/abc"]["method"]), ("ok", "doi"))
+            self.assertIn("알 수 없음", r["10.1/abc"]["note"])                 # 개정을 확인했다고 쓰지 않는다
+
     def test_baseline_change_failure_and_human_recheck(self):
         with tempfile.TemporaryDirectory() as td:
             out = Path(td) / "sc.json"
@@ -636,7 +880,7 @@ class NewQuestionsNeedObjective(unittest.TestCase):
         self.assertNotIn("objective-missing", codes(d))
 
 
-class TransientSourceErrors(unittest.TestCase):
+class TransientSourceErrors(_FixtureSources):
     """요청 제한(429)은 「출처 개정」이 아니다 — 학습서에 경고를 찍지 않는다(2026-09-21)."""
 
     def test_rate_limit_keeps_status_and_does_not_flag_the_book(self):
