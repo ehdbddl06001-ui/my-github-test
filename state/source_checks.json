@@ -16,36 +16,48 @@
    "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy"
   ],
   "title": "Results of the Endophthalmitis Vitrectomy Study. A randomized trial of immediate vitrectomy and of intravenous antibiotics for the treatment of postoperative bacterial endophthalmitis",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)",
+  "doi_pmid": "",
+  "method": "doi",
+  "fingerprint": "registered",
+  "baseline": "registered"
  },
  "10.1001/archopht.1997.01100150488006": {
   "concepts": [
    "cn.ophth.crvo.neovascular-glaucoma-risk"
   ],
   "title": "Natural history and clinical management of central retinal vein occlusion",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "9109757",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1001/jama.2012.5669": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "Acute respiratory distress syndrome: the Berlin Definition",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "22797452",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1002/art.41774": {
   "concepts": [
    "cn.rheum.giant-cell-arteritis.steroids-before-biopsy"
   ],
   "title": "2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "34235884",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1002/art.42624": {
   "concepts": [
@@ -57,25 +69,29 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1002/jhbp.515": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos)",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "29032636",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1002/jhbp.516": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "29045062",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1007/978-3-662-63123-2": {
   "concepts": [
@@ -88,7 +104,7 @@
   "checked_at": "2026-09-25",
   "baseline": "registered",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "10.1016/S0140-6736(05)71144-2": {
   "concepts": [
@@ -100,7 +116,9 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "15781103",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/S0140-6736(16)30272-0": {
   "concepts": [
@@ -112,7 +130,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1016/S0140-6736(17)30066-1": {
   "concepts": [
@@ -124,7 +142,9 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문과 같음"
+  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "28262269",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/S0140-6736(22)01015-7": {
   "concepts": [
@@ -136,7 +156,8 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/j.chest.2021.07.055": {
   "concepts": [
@@ -148,7 +169,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:35809930\"]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1016/j.jaad.2018.11.057": {
   "concepts": [
@@ -172,7 +193,8 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:31948783\"]",
   "status": "ok",
-  "note": "기준 지문과 같음"
+  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/j.jaad.2020.02.044": {
   "concepts": [
@@ -194,7 +216,7 @@
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문과 같음",
+  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -210,16 +232,21 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:36464532\"]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/j.ophtha.2016.01.058": {
   "concepts": [
    "cn.rheum.sle.mild-disease-hydroxychloroquine"
   ],
   "title": "Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (2016 Revision)",
-  "status": "unchecked",
+  "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+  "note": "기준 지문 기록",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]"
  },
  "10.1016/j.ophtha.2019.09.029": {
   "concepts": [
@@ -231,7 +258,9 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "31757503",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1038/s41572-018-0009-4": {
   "concepts": [
@@ -243,25 +272,32 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJM200005043421801": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "10793162",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJM200006293422601": {
   "concepts": [
    "cn.peds.stec-hus.supportive-no-antibiotics"
   ],
   "title": "The risk of the hemolytic-uremic syndrome after antibiotic treatment of Escherichia coli O157:H7 infections",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "10874060",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1056/NEJMoa1302097": {
   "concepts": [
@@ -273,43 +309,53 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJMoa1313517": {
   "concepts": [
    "cn.obgyn.pcos-infertility.ovulation-induction"
   ],
   "title": "Letrozole versus Clomiphene for Infertility in the Polycystic Ovary Syndrome (PPCOS II)",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "25006718",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJMoa1906190": {
   "concepts": [
    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
   ],
   "title": "Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "31557429",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1089/thy.2015.0020": {
   "concepts": [
    "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a"
   ],
   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "26462967",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1093/cid/ciw099": {
   "concepts": [
    "cn.peds.stec-hus.supportive-no-antibiotics"
   ],
   "title": "Shiga toxin-producing Escherichia coli infection, antibiotics, and risk of developing hemolytic uremic syndrome: a meta-analysis",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1093/eurheartj/ehac237": {
   "concepts": [
@@ -321,7 +367,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:36821743\"]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1093/eurheartj/ehac262": {
   "concepts": [
@@ -343,7 +389,7 @@
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문과 같음",
+  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -355,18 +401,23 @@
    "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
   ],
   "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
-  "status": "unchecked",
+  "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+  "note": "기준 지문 기록",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]"
  },
  "10.1097/AOG.0000000000002501": {
   "concepts": [
    "cn.obgyn.gestational-diabetes.insulin-indication"
   ],
   "title": "ACOG Practice Bulletin No. 190: Gestational Diabetes Mellitus",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1097/AOG.0b013e3181841395": {
   "concepts": [
@@ -378,7 +429,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1097/AOG.0b013e3181aef106": {
   "concepts": [
@@ -390,7 +441,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1097/AOG.0b013e3182004fa9": {
   "concepts": [
@@ -406,51 +457,59 @@
    "cn.peds.biliary-atresia.cholestasis-workup"
   ],
   "title": "Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of the North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition and the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "27429428",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1097/SLA.0b013e3182a1599b": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Acute cholecystitis: early versus delayed cholecystectomy, a multicenter randomized trial (ACDC study, NCT00447304)",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1111/jth.15010": {
   "concepts": [
    "cn.peds.stec-hus.supportive-no-antibiotics"
   ],
   "title": "ISTH guideline for treatment of thrombotic thrombocytopenic purpura",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[]",
   "checked_at": "2026-09-25",
   "baseline": "reachable",
-  "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "status": "changed",
+  "note": "지문 변경: reachable → []",
+  "doi_pmid": "32914526",
+  "changed_at": "2026-09-25"
  },
  "10.1128/CMR.12.2.224": {
   "concepts": [
    "cn.derm.ssss.antistaphylococcal-therapy"
   ],
   "title": "Clinical, microbial, and biochemical aspects of the exfoliative toxins causing staphylococcal scalded-skin syndrome",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1136/ard-2022-223296": {
   "concepts": [
    "cn.rheum.axial-spa.nsaid-failure-biologic"
   ],
   "title": "ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[]",
   "checked_at": "2026-09-25",
   "baseline": "reachable",
-  "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "status": "changed",
+  "note": "지문 변경: reachable → []",
+  "doi_pmid": "36270658",
+  "changed_at": "2026-09-25"
  },
  "10.1136/ard-2023-224762": {
   "concepts": [
@@ -462,7 +521,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1136/thx.2009.121434": {
   "concepts": [
@@ -474,34 +533,44 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1155/2014/196827": {
   "concepts": [
    "cn.ophth.chemical-burn.immediate-irrigation"
   ],
   "title": "The ocular surface chemical burns",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "25105018",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1161/CIR.0000000000000205": {
   "concepts": [
    "cn.peds.rheumatic-fever.secondary-prophylaxis"
   ],
   "title": "Revision of the Jones Criteria for the Diagnosis of Acute Rheumatic Fever in the Era of Doppler Echocardiography: A Scientific Statement From the American Heart Association",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "25908771",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:32718244\"]",
+  "baseline": "[\"ErratumIn:32718244\"]"
  },
  "10.1161/CIR.0000000000000484": {
   "concepts": [
    "cn.peds.kawasaki.acute-ivig"
   ],
   "title": "Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1161/CIR.0000000000000549": {
   "concepts": [
@@ -526,16 +595,18 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1161/CIR.0000000000001063": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "35363499",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1161/CIR.0000000000001106": {
   "concepts": [
@@ -547,16 +618,21 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1161/CIR.0000000000001193": {
   "concepts": [
    "cn.cardio.atrial-flutter.stable-rate-control-first"
   ],
   "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "38033089",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:38153996\", \"ErratumIn:38408149\", \"ErratumIn:38857333\"]",
+  "baseline": "[\"ErratumIn:38153996\", \"ErratumIn:38408149\", \"ErratumIn:38857333\"]"
  },
  "10.1161/CIRCULATIONAHA.109.191959": {
   "concepts": [
@@ -564,27 +640,34 @@
    "cn.peds.rheumatic-fever.secondary-prophylaxis"
   ],
   "title": "Prevention of Rheumatic Fever and Diagnosis and Treatment of Acute Streptococcal Pharyngitis: A Scientific Statement From the American Heart Association",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "19246689",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1161/STR.0000000000000366": {
   "concepts": [
    "cn.ophth.crao.arteritic-workup"
   ],
   "title": "Management of Central Retinal Artery Occlusion: A Scientific Statement From the American Heart Association",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "doi_pmid": "33677974",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1164/rccm.202303-0558WS": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "A New Global Definition of Acute Respiratory Distress Syndrome",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1183/13993003.02426-2016": {
   "concepts": [
@@ -596,16 +679,21 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1210/jc.2008-0125": {
   "concepts": [
    "cn.endo.cushing-syndrome.screening-test"
   ],
   "title": "The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "18334580",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1210/jc.2017-00131": {
   "concepts": [
@@ -617,7 +705,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1530/EJE-13-1020": {
   "concepts": [
@@ -629,7 +717,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:Eur J Endocrinol. 2014 Jul;171(1):X1\"]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "10.1542/peds.2008-0939": {
   "concepts": [
@@ -641,7 +729,7 @@
   "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
@@ -662,39 +750,47 @@
    "cn.peds.febrile-uti.imaging-workup"
   ],
   "title": "Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Children 2 to 24 Months (Reaffirmed 2016)",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.2106/00004623-199308000-00002": {
   "concepts": [
    "cn.ortho.scfe.in-situ-fixation"
   ],
   "title": "Acute slipped capital femoral epiphysis: the importance of physeal stability",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[]",
   "checked_at": "2026-09-25",
   "baseline": "reachable",
-  "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "status": "changed",
+  "note": "지문 변경: reachable → []",
+  "doi_pmid": "8354671",
+  "changed_at": "2026-09-25"
  },
  "10.2337/dc09-9032": {
   "concepts": [
    "cn.endo.hhs.initial-fluid-resuscitation"
   ],
   "title": "Hyperglycemic crises in adult patients with diabetes (consensus statement)",
-  "status": "failed",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "기준 지문 기록",
+  "doi_pmid": "19564476",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.2337/dc24-S015": {
   "concepts": [
    "cn.obgyn.gestational-diabetes.insulin-indication"
   ],
   "title": "15. Management of Diabetes in Pregnancy: Standards of Care in Diabetes—2024",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.3390/jof1010013": {
   "concepts": [
@@ -719,7 +815,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "17849776": {
   "concepts": [
@@ -752,7 +848,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "fitzpatrick-9e": {
   "concepts": [
@@ -776,7 +872,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "guyton-14": {
   "concepts": [
@@ -788,7 +884,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "harrison-21": {
   "concepts": [
@@ -871,34 +967,37 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "https://academic.oup.com/qjmed": {
   "concepts": [
    "cn.psy.serotonin-syndrome.cyproheptadine-refractory"
   ],
   "title": "The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://accessmedicine.mhmedical.com/": {
   "concepts": [
    "cn.em.lithium-toxicity.hemodialysis-indication"
   ],
   "title": "Basic & Clinical Pharmacology — Antipsychotic Agents & Lithium",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://cjasn.asnjournals.org/": {
   "concepts": [
    "cn.em.lithium-toxicity.hemodialysis-indication"
   ],
   "title": "Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://goldcopd.org/2024-gold-report/": {
   "concepts": [
@@ -910,25 +1009,27 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://jamanetwork.com/journals/jamaneurology": {
   "concepts": [
    "cn.neuro.guillain-barre.respiratory-monitoring-first"
   ],
   "title": "Anticipating mechanical ventilation in Guillain-Barré syndrome",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://n.neurology.org": {
   "concepts": [
    "cn.neuro.multiple-sclerosis.dissemination-diagnosis"
   ],
   "title": "International consensus diagnostic criteria for neuromyelitis optica spectrum disorders",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://pubmed.ncbi.nlm.nih.gov/?term=GATA-3+maintains+the+differentiation+of+the+luminal+cell+fate+in+the+mammary+gland": {
   "concepts": [
@@ -940,7 +1041,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://pubmed.ncbi.nlm.nih.gov/?term=Miettinen+GATA3+multispecific+marker+surgical+pathology": {
   "concepts": [
@@ -952,7 +1053,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://screening.iarc.fr/colpochap.php?chap=1": {
   "concepts": [
@@ -964,7 +1065,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.aafp.org/pubs/afp/issues/2010/0801/p258.html": {
   "concepts": [
@@ -976,16 +1077,17 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.aaos.org/quality/quality-programs/lower-extremity-programs/hip-fractures-in-the-elderly/": {
   "concepts": [
    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
   ],
   "title": "Management of Hip Fractures in Older Adults — Evidence-Based Clinical Practice Guideline",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an "
  },
  "https://www.acog.org/clinical/clinical-guidance/practice-bulletin": {
   "concepts": [
@@ -997,16 +1099,17 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.ahajournals.org/journal/circ": {
   "concepts": [
    "cn.cardio.qrs-axis.limb-lead-polarity"
   ],
   "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram, Part III: Intraventricular Conduction Disturbances",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://www.cdc.gov/scabies/hcp/clinical-care/index.html": {
   "concepts": [
@@ -1018,7 +1121,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.diabetes.or.kr": {
   "concepts": [
@@ -1054,16 +1157,17 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.monash.edu/medicine/mchri/pcos": {
   "concepts": [
    "cn.obgyn.pcos-infertility.ovulation-induction"
   ],
   "title": "International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome 2023",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://www.ncbi.nlm.nih.gov/books/NBK1424/": {
   "concepts": [
@@ -1075,7 +1179,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.ncbi.nlm.nih.gov/books/NBK63952/": {
   "concepts": [
@@ -1087,16 +1191,17 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.nejm.org/doi/full/10.1056/NEJMra041867": {
   "concepts": [
    "cn.psy.serotonin-syndrome.cyproheptadine-refractory"
   ],
   "title": "The serotonin syndrome",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://www.nice.org.uk/guidance/ng224": {
   "concepts": [
@@ -1120,7 +1225,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast": {
   "concepts": [
@@ -1132,7 +1237,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix": {
   "concepts": [
@@ -1144,7 +1249,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer": {
   "concepts": [
@@ -1156,7 +1261,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis": {
   "concepts": [
@@ -1168,7 +1273,7 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.psychiatry.org/psychiatrists/practice/dsm": {
   "concepts": [
@@ -1180,16 +1285,17 @@
   "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.thelancet.com/journals/laneur": {
   "concepts": [
    "cn.neuro.multiple-sclerosis.dissemination-diagnosis"
   ],
   "title": "Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria",
-  "status": "failed",
+  "status": "unchecked",
   "checked_at": "2026-09-25",
-  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "last_error": "HTTPError: HTTP Error 403: Forbidden"
  },
  "https://www.thyroid.kr": {
   "concepts": [
@@ -1225,7 +1331,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "moore-coa": {
   "concepts": [
@@ -1237,7 +1343,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "nelson-21": {
   "concepts": [
@@ -1249,7 +1355,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "nelson-22": {
   "concepts": [
@@ -1262,7 +1368,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "robbins-10": {
   "concepts": [
@@ -1276,7 +1382,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "robbins-basic-10": {
   "concepts": [
@@ -1288,7 +1394,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "rockwood-9": {
   "concepts": [
@@ -1337,7 +1443,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "who-5-urinary-male": {
   "concepts": [
@@ -1349,7 +1455,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "williams-26": {
   "concepts": [
@@ -1361,7 +1467,7 @@
   "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "williams-26e": {
   "concepts": [
