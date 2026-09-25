@@ -18,7 +18,7 @@
   "title": "Results of the Endophthalmitis Vitrectomy Study. A randomized trial of immediate vitrectomy and of intravenous antibiotics for the treatment of postoperative bacterial endophthalmitis",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)",
+  "note": "기준 지문과 같음",
   "doi_pmid": "",
   "method": "doi",
   "fingerprint": "registered",
@@ -29,11 +29,14 @@
    "cn.ophth.crvo.neovascular-glaucoma-risk"
   ],
   "title": "Natural history and clinical management of central retinal vein occlusion",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "9109757",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:Arch Ophthalmol 1997 Oct;115(10):1275\"]",
+  "baseline": "[\"ErratumIn:Arch Ophthalmol 1997 Oct;115(10):1275\"]"
  },
  "10.1001/jama.2012.5669": {
   "concepts": [
@@ -42,7 +45,7 @@
   "title": "Acute respiratory distress syndrome: the Berlin Definition",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "22797452",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -53,11 +56,14 @@
    "cn.rheum.giant-cell-arteritis.steroids-before-biopsy"
   ],
   "title": "2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "34235884",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1002/art.42624": {
   "concepts": [
@@ -76,22 +82,28 @@
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos)",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "29032636",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1002/jhbp.516": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "29045062",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:31658506\"]",
+  "baseline": "[\"ErratumIn:31658506\"]"
  },
  "10.1007/978-3-662-63123-2": {
   "concepts": [
@@ -111,14 +123,15 @@
    "cn.peds.stec-hus.supportive-no-antibiotics"
   ],
   "title": "Shiga-toxin-producing Escherichia coli and haemolytic uraemic syndrome",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
+  "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "15781103",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "baseline_method": "pubmed"
  },
  "10.1016/S0140-6736(16)30272-0": {
   "concepts": [
@@ -137,27 +150,30 @@
    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
   ],
   "title": "Fracture fixation in the operative management of hip fractures (FAITH): an international, multicentre, randomised controlled trial",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
+  "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "28262269",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "baseline_method": "pubmed"
  },
  "10.1016/S0140-6736(22)01015-7": {
   "concepts": [
    "cn.ortho.torus-fracture.splint-no-reduction"
   ],
   "title": "Immobilisation of torus fractures of the wrist in children (FORCE): a randomised controlled equivalence trial in the UK",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:35871810\", \"ErratumIn:36183726\"]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
+  "baseline": "[\"ErratumIn:35871810\", \"ErratumIn:36183726\"]",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "35780790",
+  "baseline_method": "pubmed"
  },
  "10.1016/j.chest.2021.07.055": {
   "concepts": [
@@ -193,7 +209,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:31948783\"]",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/j.jaad.2020.02.044": {
@@ -216,7 +232,7 @@
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -232,7 +248,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:36464532\"]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1016/j.ophtha.2016.01.058": {
@@ -242,7 +258,7 @@
   "title": "Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (2016 Revision)",
   "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "checked_at": "2026-09-25",
@@ -253,14 +269,15 @@
    "cn.ophth.crvo.neovascular-glaucoma-risk"
   ],
   "title": "Retinal Vein Occlusions Preferred Practice Pattern",
-  "method": "reachability",
-  "fingerprint": "reachable",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:32828198\"]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
+  "baseline": "[\"ErratumIn:32828198\"]",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인) · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "31757503",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "baseline_method": "pubmed"
  },
  "10.1038/s41572-018-0009-4": {
   "concepts": [
@@ -272,7 +289,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJM200005043421801": {
@@ -280,11 +297,14 @@
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "10793162",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1056/NEJM200006293422601": {
   "concepts": [
@@ -293,7 +313,7 @@
   "title": "The risk of the hemolytic-uremic syndrome after antibiotic treatment of Escherichia coli O157:H7 infections",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "10874060",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -309,7 +329,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1056/NEJMoa1313517": {
@@ -317,11 +337,14 @@
    "cn.obgyn.pcos-infertility.ovulation-induction"
   ],
   "title": "Letrozole versus Clomiphene for Infertility in the Polycystic Ovary Syndrome (PPCOS II)",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "25006718",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:N Engl J Med. 2014 Oct 9;317(15):1465\"]",
+  "baseline": "[\"ErratumIn:N Engl J Med. 2014 Oct 9;317(15):1465\"]"
  },
  "10.1056/NEJMoa1906190": {
   "concepts": [
@@ -330,7 +353,7 @@
   "title": "Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "31557429",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -341,21 +364,28 @@
    "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a"
   ],
   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "26462967",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1093/cid/ciw099": {
   "concepts": [
    "cn.peds.stec-hus.supportive-no-antibiotics"
   ],
   "title": "Shiga toxin-producing Escherichia coli infection, antibiotics, and risk of developing hemolytic uremic syndrome: a meta-analysis",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "26917812",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1093/eurheartj/ehac237": {
   "concepts": [
@@ -389,7 +419,7 @@
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
@@ -403,7 +433,7 @@
   "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
   "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "checked_at": "2026-09-25",
@@ -414,10 +444,14 @@
    "cn.obgyn.gestational-diabetes.insulin-indication"
   ],
   "title": "ACOG Practice Bulletin No. 190: Gestational Diabetes Mellitus",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "29370047",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1097/AOG.0b013e3181841395": {
   "concepts": [
@@ -448,30 +482,41 @@
    "cn.obgyn.intrapartum-fhr.nichd-category"
   ],
   "title": "ACOG Practice Bulletin No. 116: Management of Intrapartum Fetal Heart Rate Tracings",
-  "status": "unchecked",
+  "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+  "note": "기준 지문 기록",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]"
  },
  "10.1097/MPG.0000000000001334": {
   "concepts": [
    "cn.peds.biliary-atresia.cholestasis-workup"
   ],
   "title": "Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of the North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition and the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "27429428",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1097/SLA.0b013e3182a1599b": {
   "concepts": [
    "cn.gs.acute-cholecystitis.grade2-early-lc"
   ],
   "title": "Acute cholecystitis: early versus delayed cholecystectomy, a multicenter randomized trial (ACDC study, NCT00447304)",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "24022431",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1111/jth.15010": {
   "concepts": [
@@ -481,21 +526,25 @@
   "method": "pubmed",
   "fingerprint": "[]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
-  "status": "changed",
-  "note": "지문 변경: reachable → []",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "32914526",
-  "changed_at": "2026-09-25"
+  "baseline_method": "pubmed"
  },
  "10.1128/CMR.12.2.224": {
   "concepts": [
    "cn.derm.ssss.antistaphylococcal-therapy"
   ],
   "title": "Clinical, microbial, and biochemical aspects of the exfoliative toxins causing staphylococcal scalded-skin syndrome",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "10194458",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1136/ard-2022-223296": {
   "concepts": [
@@ -505,11 +554,11 @@
   "method": "pubmed",
   "fingerprint": "[]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
-  "status": "changed",
-  "note": "지문 변경: reachable → []",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "36270658",
-  "changed_at": "2026-09-25"
+  "baseline_method": "pubmed"
  },
  "10.1136/ard-2023-224762": {
   "concepts": [
@@ -533,7 +582,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1155/2014/196827": {
@@ -543,7 +592,7 @@
   "title": "The ocular surface chemical burns",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "25105018",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -556,7 +605,7 @@
   "title": "Revision of the Jones Criteria for the Diagnosis of Acute Rheumatic Fever in the Era of Doppler Echocardiography: A Scientific Statement From the American Heart Association",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "25908771",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:32718244\"]",
@@ -567,10 +616,14 @@
    "cn.peds.kawasaki.acute-ivig"
   ],
   "title": "Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "28356445",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:31356128\"]",
+  "baseline": "[\"ErratumIn:31356128\"]"
  },
  "10.1161/CIR.0000000000000549": {
   "concepts": [
@@ -602,11 +655,14 @@
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "35363499",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:35500054\", \"ErratumIn:36154623\", \"ErratumIn:37011077\"]",
+  "baseline": "[\"ErratumIn:35500054\", \"ErratumIn:36154623\", \"ErratumIn:37011077\"]"
  },
  "10.1161/CIR.0000000000001106": {
   "concepts": [
@@ -618,7 +674,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1161/CIR.0000000000001193": {
@@ -628,7 +684,7 @@
   "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "38033089",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:38153996\", \"ErratumIn:38408149\", \"ErratumIn:38857333\"]",
@@ -642,7 +698,7 @@
   "title": "Prevention of Rheumatic Fever and Diagnosis and Treatment of Acute Streptococcal Pharyngitis: A Scientific Statement From the American Heart Association",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "19246689",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -653,21 +709,28 @@
    "cn.ophth.crao.arteritic-workup"
   ],
   "title": "Management of Central Retinal Artery Occlusion: A Scientific Statement From the American Heart Association",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문 기록",
   "doi_pmid": "33677974",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:34029154\"]",
+  "baseline": "[\"ErratumIn:34029154\"]"
  },
  "10.1164/rccm.202303-0558WS": {
   "concepts": [
    "cn.em.ards.lung-protective-ventilation"
   ],
   "title": "A New Global Definition of Acute Respiratory Distress Syndrome",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "37487152",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.1183/13993003.02426-2016": {
   "concepts": [
@@ -679,7 +742,7 @@
   "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문 기록 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1210/jc.2008-0125": {
@@ -689,7 +752,7 @@
   "title": "The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "18334580",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -726,10 +789,10 @@
   "title": "Febrile seizures: clinical practice guideline for the long-term management of the child with simple febrile seizures",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
@@ -750,10 +813,14 @@
    "cn.peds.febrile-uti.imaging-workup"
   ],
   "title": "Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Children 2 to 24 Months (Reaffirmed 2016)",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "21873693",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.2106/00004623-199308000-00002": {
   "concepts": [
@@ -763,11 +830,11 @@
   "method": "pubmed",
   "fingerprint": "[]",
   "checked_at": "2026-09-25",
-  "baseline": "reachable",
-  "status": "changed",
-  "note": "지문 변경: reachable → []",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "확인 방법이 바뀌어(이전 방법 → pubmed) 새 기준 지문 기록",
   "doi_pmid": "8354671",
-  "changed_at": "2026-09-25"
+  "baseline_method": "pubmed"
  },
  "10.2337/dc09-9032": {
   "concepts": [
@@ -776,7 +843,7 @@
   "title": "Hyperglycemic crises in adult patients with diabetes (consensus statement)",
   "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "doi_pmid": "19564476",
   "method": "pubmed",
   "fingerprint": "[]",
@@ -787,10 +854,14 @@
    "cn.obgyn.gestational-diabetes.insulin-indication"
   ],
   "title": "15. Management of Diabetes in Pregnancy: Standards of Care in Diabetes—2024",
-  "status": "unchecked",
+  "status": "ok",
   "checked_at": "2026-09-25",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
-  "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  "note": "기준 지문 기록",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "doi_pmid": "38078583",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "baseline": "[]"
  },
  "10.3390/jof1010013": {
   "concepts": [
@@ -834,9 +905,13 @@
    "cn.ortho.achilles-rupture.thompson-test"
   ],
   "title": "Diagnosis and treatment of acute Achilles tendon rupture (AAOS clinical practice guideline)",
-  "status": "unchecked",
+  "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+  "note": "기준 지문 기록",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]"
  },
  "bolognia-4": {
   "concepts": [
