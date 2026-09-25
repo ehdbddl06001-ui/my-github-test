@@ -127,11 +127,23 @@ class FormatChecks(unittest.TestCase):
         from question_design import mix_report
         shallow = [{"design": {"steps": 2, "target": "치료"}}] * 6
         _, w = mix_report(shallow)
-        self.assertEqual(len(w), 2)                                   # 3단계 이상 0 % · 한 목표 100 %
+        self.assertEqual(len(w), 3)                                   # 3단계 이상 0 % · 한 목표 100 % · 치료+다음 처치 100 %
         good = ([{"design": {"steps": 3, "target": t}} for t in ("진단", "감별", "치료")]
                 + [{"design": {"steps": 2, "target": t}} for t in ("기전", "검사 선택")])
         self.assertEqual(mix_report(good)[1], [])
         self.assertEqual(mix_report(shallow[:3])[1], [])              # 묶음이 작으면 따지지 않는다
+        mg = ([{"design": {"steps": 3, "target": "치료"}}] * 2 + [{"design": {"steps": 3, "target": "다음 처치"}}] * 2
+              + [{"design": {"steps": 3, "target": "진단"}}])
+        self.assertTrue(any("치료」+「다음 처치" in x for x in mix_report(mg)[1]))   # 따로는 40 %씩이라도 합이 80 %
+
+    def test_answer_order_cycle_is_flagged_but_shuffled_is_not(self):
+        from question_design import answer_order_warnings
+        cyc = [{"id": f"kmle-2026-{1000 + i}", "date": "2026-09-25", "answer": "ABCDE"[i % 5]} for i in range(15)]
+        self.assertEqual(len(answer_order_warnings(cyc)), 1)                       # 09-25 세트가 ABCDE… 였다
+        mixed = "CAEBDDBACEAEBDC"
+        ok = [{"id": f"kmle-2026-{1000 + i}", "date": "2026-09-26", "answer": a} for i, a in enumerate(mixed)]
+        self.assertEqual(answer_order_warnings(ok), [])
+        self.assertEqual(answer_order_warnings(cyc[:8]), [])                       # 작은 묶음은 따지지 않는다
 
     def test_difficulty_follows_reasoning_steps_not_volume(self):
         m = copy.deepcopy(self.base)
@@ -206,6 +218,36 @@ class WrongSync(unittest.TestCase):
         self.assertIn("| 핵심 판단 | 핵심 판단 요약 |", render("kmle", data))
         del data["items"]["x"]["decision"]
         self.assertNotIn("핵심 판단", render("kmle", data))
+
+
+class QualityRules0925(unittest.TestCase):
+    """2026-09-25 문항 감사에서 나온 규칙 — 한정어 요령·subtopic 결론·USMLE 한국어 검사명."""
+
+    def _doc(self, **meta):
+        from frontmatter import Doc
+        base = {"type": "kmle", "date": "2026-09-26", "id": "kmle-2026-9999", "topic": "t", "subtopic": "대상포진",
+                "stem": "x", "choices": ["A. 발라시클로버", "B. 아시클로버 연고만", "C. 스테로이드 단독", "D. 진통제만 투여", "E. 관찰"],
+                "answer": "A"}
+        base.update(meta)
+        return Doc(path=Path("x.md"), body="", meta=base)
+
+    def codes(self, d):
+        return [f.code for f in lint_doc(d)]
+
+    def test_qualifier_only_on_distractors(self):
+        self.assertIn("qualifier-tell", self.codes(self._doc()))
+        self.assertNotIn("qualifier-tell", self.codes(self._doc(choices=["A. 발라시클로버", "B. 아시클로버", "C. 스테로이드",
+                                                                          "D. 진통제", "E. 관찰"])))
+
+    def test_subtopic_conclusion_only_for_new_questions(self):
+        self.assertIn("subtopic-conclusion", self.codes(self._doc(subtopic="Herpes Zoster — Oral Valacyclovir")))
+        self.assertNotIn("subtopic-conclusion", self.codes(self._doc(subtopic="Herpes Zoster — Oral Valacyclovir", date="2026-09-25")))
+
+    def test_usmle_labs_in_english(self):
+        d = self._doc(type="usmle", id="usmle-2026-9999", labs=[{"name": "나트륨", "value": "128 mEq/L", "ref": "135-145"}])
+        self.assertIn("usmle-labs-korean", self.codes(d))
+        d.meta["labs"] = [{"name": "Sodium", "value": "128 mEq/L", "ref": "135-145 mEq/L"}]
+        self.assertNotIn("usmle-labs-korean", self.codes(d))
 
 
 if __name__ == "__main__":

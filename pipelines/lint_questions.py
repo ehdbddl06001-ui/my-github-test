@@ -58,6 +58,10 @@ CLINICAL_HINT = re.compile(
 VITALS_IN_STEM = re.compile(r"(혈압|맥박|호흡|체온|blood pressure|heart rate|temperature)", re.IGNORECASE)
 
 CONJUNCTION = re.compile(r"(하고|와 함께|과 함께|및|,|\band\b|\+)", re.IGNORECASE)
+# 2026-09-25 감사에서 나온 규칙(한정어 요령·subtopic 결론·USMLE 한국어 검사명) — 이 날짜 이후 문항에 적용
+QUALITY_RULES_FROM = "2026-09-26"
+QUALIFIER = re.compile(r"(단독|만으로|만 |만$|없이|항상|절대|반드시|\bonly\b|\balone\b|\bnever\b|\balways\b|\bwithout\b)", re.I)
+HANGUL = re.compile(r"[가-힣]")
 
 
 class Finding:
@@ -172,6 +176,31 @@ def lint_doc(d: Doc) -> list[Finding]:
                     "WARN", "answer-compound-tell",
                     "정답만 '~하고 ~도 함께' 식 복합 처치이고 오답은 단순 단일 항목이다 — "
                     "가장 완결적인 보기가 정답이라는 힌트. 보기를 같은 층위로 평행하게."))
+
+        # 7-b) 한정어가 오답에만 (WARN) — 「단독·만·없이·항상」이 붙은 보기는 틀렸다는 요령으로 풀린다(2026-09-25 감사:
+        #      최근 96문항에서 한정어 보기 오답 25 · 정답 2).
+        quals = [bool(QUALIFIER.search(c)) for c in choices]
+        if sum(q for i, q in enumerate(quals) if i != ans_idx) >= 2 and not quals[ans_idx]:
+            findings.append(Finding(
+                "WARN", "qualifier-tell",
+                "「단독·만·없이·항상·절대」 같은 한정어가 오답 보기에만 붙어 있다 — 한정어 = 오답이라는 요령으로 풀린다. "
+                "한정어를 빼고 보기 자체를 경쟁 대안으로 바꾸거나 정답에도 같은 꼴을 쓴다."))
+
+    new_rule = str(m.get("date", "") or "") >= QUALITY_RULES_FROM
+    # 7-c) subtopic 에 결론 (WARN) — 앱·검색·새 자료 목록에 보여 답을 말해 버린다(예: 「… — Oral Valacyclovir」)
+    sub = str(m.get("subtopic", "") or "")
+    if new_rule and re.search(r"\s[—–-]\s", sub):
+        findings.append(Finding(
+            "WARN", "subtopic-conclusion",
+            f"subtopic '{sub[:60]}' 에 「— 결론」이 있다 — subtopic 은 질환군·주제만(정답의 진단·약·처치를 넣지 않는다)."))
+    # 7-d) USMLE 검사 이름·값·참고치는 영어 (ERROR) — 영어 stem 에 한국어 검사명이 섞였다(usmle-0161~0175)
+    if new_rule and d.type == "usmle":
+        bad = [str(l.get("name", "")) for l in labs if isinstance(l, dict)
+               and HANGUL.search(" ".join(str(l.get(k, "") or "") for k in ("name", "value", "ref")))]
+        if bad:
+            findings.append(Finding(
+                "ERROR", "usmle-labs-korean",
+                f"USMLE labs 에 한국어가 있다({', '.join(bad[:4])}) — 검사 이름·값·참고치는 영어·미국 단위로(NBME 형식)."))
 
     # 8) 오답감별 letter 커버리지 (ERROR) + 한 줄 뭉침 (WARN)
     differ = _differ_value(d.body)
