@@ -14797,6 +14797,16 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis",
+  "qversion": 2,
+  "distractors": {
+   "C": {
+    "tempting": "급성 신손상에 혈뇨·단백뇨가 있으면 급속진행 사구체신염이 먼저 떠오르고, 반달체는 그 대표 조직 소견이다. 전신경화증에서도 MPO-ANCA 연관 반달체 사구체신염이 드물게 보고된다.",
+    "answer_first": "경피증 신장 위기의 1차 병변은 사구체가 아니라 소동맥(엽간·궁상 동맥, 수입 세동맥)이다 — 동심성 층판상 내막 증식(양파 껍질)과 섬유소양 괴사로 내강이 좁아지고, 사구체는 염증이 아니라 허혈성 허탈을 보인다.",
+    "discriminator": "수 주 만의 204/118 악성 범위 고혈압·고혈압성 망막병증 + 분열적혈구·혈소판감소·합토글로빈 저하(미세혈관병성 용혈) + 적혈구 원주 없는 요침사·정상 C3·폐출혈과 발진 없음 → 혈관 병. 반달체라면 적혈구 원주·활동성 요침사가 있어야 한다.",
+    "when_right": "전신경화증 환자라도 혈압이 크게 오르지 않고 분열적혈구가 없으며 적혈구 원주·혈담·MPO-ANCA 양성이면 반달체 사구체신염이 답이 된다.",
+    "split": "active"
+   }
+  },
   "figureSvg": ""
  },
  {
@@ -14978,6 +14988,16 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.id.bacillary-angiomatosis.kaposi-differentiation",
+  "qversion": 2,
+  "distractors": {
+   "C": {
+    "tempting": "파종 MAC 은 CD4 < 50·발열·야간 발한·체중감소·간비대·ALP 상승이 이 환자와 거의 그대로 겹치고, 세균성 혈관종증의 결절형은 마이코박테리아 감염의 결절과 닮아 보인다.",
+    "answer_first": "전신 소견은 두 병을 가르지 못하고, 조직이 가른다. 소엽상 모세혈관 증식에 호중구·세균 집락이 섞이고 은염색에서 간균 무리가 보이는 것은 Bartonella 의 세균성 혈관종증이며, MAC 은 이런 혈관 증식성 결절을 만들지 않는다.",
+    "discriminator": "A silver stain shows clusters of small bacilli; an acid-fast stain is negative — 은염색 양성·항산성 음성. 여기에 고양이 긁힘 병력이 B. henselae 를 가리킨다.",
+    "when_right": "생검이나 혈액 배양에서 항산균이 확인되고 혈관 증식 병변이 없는 CD4 < 50 의 발열·간비대 환자라면 파종 MAC 이 답이다.",
+    "split": "hist"
+   }
+  },
   "figureSvg": ""
  },
  {
@@ -15158,6 +15178,16 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
+  "qversion": 2,
+  "distractors": {
+   "A": {
+    "tempting": "프로베네시드도 통풍 발작을 막으려고 매일 먹는 요산 강하제라, 새로 시작한 약과 요산이 5.1 로 낮아진 것을 모두 설명한다.",
+    "answer_first": "요산 저하가 아니라 골수 억제를 설명해야 한다. 알로푸리놀은 6-MP 의 불활성화 효소인 크산틴 산화효소를 막아 활성 6-티오구아닌 뉴클레오타이드를 쌓지만, 프로베네시드는 요세관 요산 재흡수를 막아 배설을 늘릴 뿐 크산틴 산화효소·TPMT 를 건드리지 않는다.",
+    "discriminator": "요산 저하는 두 약이 모두 설명하므로 가르지 못한다. 가르는 것은 아자티오프린을 같은 용량으로 2년간 안정적으로 쓰던 사람(TPMT 정상)에게 새 약 5주 뒤 생긴 범혈구감소 — 6-MP 불활성화 경로가 막혔다는 소견이다.",
+    "when_right": "상대 약이 티오퓨린이 아니라 신세관 분비로 제거되는 메토트렉세이트라면 — 프로베네시드는 유기 음이온 분비를 막아 메토트렉세이트를 쌓아 골수 억제를 일으킬 수 있다.",
+    "split": "which"
+   }
+  },
   "figureSvg": ""
  },
  {
@@ -15328,6 +15358,16 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.gs.diverticular-abscess.percutaneous-drainage",
+  "qversion": 2,
+  "distractors": {
+   "D": {
+    "tempting": "게실염과 구불결장암은 CT 에서 모두 벽 비후로 보일 수 있고, 게실염 뒤 대장암 배제는 실제로 권고되는 검사라 보기 자체가 옳은 검사를 말한다.",
+    "answer_first": "지금은 5.5 cm 농양이 발열·백혈구 증가의 원인인 활동성 감염이라 배농이 먼저다. 대장내시경은 치료가 아니며 급발작 약 6주 뒤(회복 뒤) 대장암 배제·수술 전 평가로 한다.",
+    "discriminator": "체온 38.3 °C·백혈구 15,800·CRP 182 + 구불결장 옆 5.5 cm 테두리 조영 증강 액체 고임 = 배농이 필요한 급성기 농양. 6년 전 대장내시경에서 용종이 없었다는 병력은 급성기 검사 필요성을 만들지 않는다.",
+    "when_right": "농양을 배농·항생제로 치료하고 회복한 지 약 6주(6~8주) 뒤, 또는 선택적 구불결장 절제를 계획하기 전.",
+    "split": ""
+   }
+  },
   "figureSvg": ""
  },
  {
@@ -15731,6 +15771,16 @@ window.USMLE_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation",
+  "qversion": 2,
+  "distractors": {
+   "A": {
+    "tempting": "HELLP 도 임신 3분기에 상복부·우상복부 통증, AST/ALT 상승, 혈소판감소로 오고, 이 환자의 혈압도 3주 전 112/70 에서 138/86 으로 올라 있어 같은 그림으로 읽힌다.",
+    "answer_first": "이 환자에서 앞서는 것은 간 합성 기능 부전(혈당 52·INR 1.9·섬유소원 110·졸림)이다. HELLP 의 중심은 미세혈관병성 용혈과 전자간증이며, 초기부터 저혈당·뚜렷한 응고장애가 오는 일은 드물다.",
+    "discriminator": "도말에 분열적혈구가 없고 LDH 420 으로 용혈이 약하며, 혈압 138/86·요단백 미량으로 전자간증 소견이 경미하다. 반면 저혈당·INR 연장·저섬유소원혈증·갈증은 급성 임신 지방간을 가리킨다.",
+    "when_right": "혈압 ≥ 160/110·단백뇨 3+ 에 분열적혈구·LDH 뚜렷한 상승이 있고 혈당·INR·섬유소원이 정상이면 HELLP 증후군이 답이다.",
+    "split": "synth"
+   }
+  },
   "figureSvg": ""
  }
 ];

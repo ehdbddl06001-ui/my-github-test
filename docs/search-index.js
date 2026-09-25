@@ -1,37 +1,37 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-24",
+ "generated": "2026-09-25",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2896,
+  "total": 2905,
   "byType": {
    "kmle": 1131,
-   "concept": 77,
+   "concept": 82,
    "anatomy": 736,
    "usmle": 162,
+   "paper": 655,
    "imaging": 122,
-   "paper": 651,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 736,
-   "Cardiology": 212,
-   "Nephrology": 174,
-   "Infectious Disease": 154,
+   "Cardiology": 213,
+   "Nephrology": 175,
+   "Infectious Disease": 156,
    "Pediatrics": 137,
    "Hematology-Oncology": 97,
-   "Pathology": 93,
-   "Obstetrics & Gynecology": 92,
+   "Pathology": 94,
+   "Obstetrics & Gynecology": 93,
    "Psychiatry": 88,
    "Neurology": 86,
-   "Rheumatology": 78,
+   "Rheumatology": 80,
    "Endocrinology": 76,
    "Dermatology": 75,
+   "Gastroenterology": 75,
    "Surgery": 75,
-   "Gastroenterology": 74,
    "Ophthalmology": 74,
    "Orthopedics": 74,
    "Pulmonology": 73,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 1927,
-   "medium": 920,
+   "medium": 929,
    "low": 49
   },
   "tagCount": 4120
@@ -758,6 +758,20 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Symptomatic Degenerative Complete AV Block Unresponsive to Atropine — Transcutaneous Pacing as Bridge complete-av-block bradycardia atropine-refractory transcutaneous-pacing acls ecg KMLE 2026 / Claude Routine 81세 남자가 이틀 전부터 반복되는 어지럼과 오늘 아침 잠깐 정신을 잃고 쓰러진 일로 응급실에 왔다. 지금은 식은땀을 흘리고 묻는 말에 대답이 느리다. 고혈압으로 암로디핀만 복용하며 베타차단제·디곡신·비다이하이드로피리딘 칼슘통로차단제는 복용하지 않는다. 흉통은 없다. 도착 직후 찍은 심전도는 그림과 같다. 정맥로를 확보하고 아트로핀 1 mg 을 3–5분 간격으로 총 3 mg 투여했으나 맥박과 혈압은 변하지 않았다. 활력징후와 검사 소견은 자료와 같다. 다음 처치로 가장 적절한 것은? A. 경피 심박조율 시작 B. 아트로핀 추가 정맥 투여 C. 영구 심박조율기 즉시 삽입 D. 아미오다론 정맥 투여 E. 동기화 심장율동전환 시행 P파와 QRS가 서로 무관하게 뛰는 완전 방실차단에 저혈압·실신·의식 저하가 동반된 불안정 서맥이다. 아트로핀을 최대량(3 mg)까지 썼으나 반응이 없으므로, 즉시 경피 심박조율(또는 도파민·에피네프린 지속 주입)로 심박을 확보하고 경정맥 임시 심박조율을 거쳐 영구 심박조율기로 이어 간다. 칼륨·트로포닌·TSH 정상과 서맥 유발 약물 부재는 교정 가능한 원인의 가능성을 낮추어 고령의 퇴행성 전도계 질환을 시사한다."
   },
   {
+   "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/concepts/pharmacology/cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition.md",
+   "snippet": "기전 — 6 MP 의 세 갈래와 막힌 출구 아자티오프린은 흡수 뒤 빠르게 6 메르캅토퓨린(6 MP)으로 바뀐다 [[harrison 21: 326장 p.2483]]. 6 MP 는 세 갈래로 나뉜다(표). 활성 쪽(HGPRT) : 6 티오구아닌 뉴클레오타이드(6 TGN)가 되어 DNA 에 끼어들고 퓨린 합성을 막는다 — 분열이 빠른 림프구와 골수 전구세포가 멈추는 것이 면역억제이자 골수 억제다. 불활성 출구 두 개 : TPMT 의",
+   "text": "Rheumatology 기전 — 6 MP 의 세 갈래와 막힌 출구 아자티오프린은 흡수 뒤 빠르게 6 메르캅토퓨린(6 MP)으로 바뀐다 [[harrison 21: 326장 p.2483]]. 6 MP 는 세 갈래로 나뉜다(표). 활성 쪽(HGPRT) : 6 티오구아닌 뉴클레오타이드(6 TGN)가 되어 DNA 에 끼어들고 퓨린 합성을 막는다 — 분열이 빠른 림프구와 골수 전구세포가 멈추는 것이 면역억제이자 골수 억제다. 불활성 출구 두 개 : TPMT 의 메틸화와 크산틴 산화효소(xanthine oxidase)의 산화. 출구가 좁아지면 같은 용량에서도 더 많은 6 MP 가 활성 쪽으로 흘러간다. TPMT 결핍·이형접합에서 활성 6 티오구아닌이 쌓여 독성이 커지는 것 [[harrison 21: 326장 p.2484]]과 같은 원리로, 알로푸리놀이 크산틴 산화효소 출구를 막아도 6 TGN 이 쌓인다 [[?allopurinol label]]. 알로푸리놀이 요산을 낮추는 바로 그 작용(크산틴 산화효소 억제 [[harrison 21: 372장 p.2865]])이 상호작용의 원인이다. 결과는 용량을 몇 배로 올린 것과 같은 골수 억제 — 호중구감소로 발열·인후염·구내염, 혈소판감소로 출혈이 온다. 골수 억제는 용량 의존적이고 늦게 오기도 한다 [[harrison 21: 326장 p.2484]]. 가르는 소견 — 어느 통풍약인가 시간 관계 : 같은 용량으로 오래 안정 → 새 약 수주 뒤 감소. TPMT 결핍에 의한 독성은 대개 시작 초기에 오므로, 늦게 새로 생긴 억제는 새 약을 먼저 찾는다. 요산 : 새 약 뒤 요산이 떨어졌으면 요산 강하제다. 그중 6 MP 출구를 막는 것은 크산틴 산화효소 억제제(알로푸리놀·페북소스타트)뿐이다 — 프로베네시드는 배설을 늘릴 뿐이다 [[harrison 21: 372장 p.2865]]. 콜히친의 조건 : 콜히친도 매일 예방약으로 쓰이지만 쌓이려면 신질환이나 P 당단백·CYP3A4 억제제가 있어야 한다 [[harrison 21: 372장 p.2864]]. 크레아티닌 정상·억제제 없음·요산 저하는 콜히친 쪽을 약하게 만든다. 정상 TPMT 는 이 상호작용을 배제하지 않는다 — 다른 출구의 이야기다. 선택 — 함께 써야 할 때 알로푸리놀이 꼭 필요하면 아자티오프린·6 MP 를 평소의 1/3~1/4 로 줄이고 혈구를 자주 본다 [[?allopurinol label]]. 요산만 낮추면 되는데 감량·감시가 어렵다면 6 MP 대사와 무관한 요산 배설제(프로베네시드 — 신기능이 좋을 때)를 생각할 수 있다 [[harrison 21: 372장 p.2865]]. 이미 범혈구감소·호중구감소성 발열이 왔다면 두 약을 멈추고 발열성 호중구감소증으로 처치한다. 권고와 예외 티오퓨린 복용 중에는 용량과 무관하게 혈구·간기능을 정기적으로 본다 [[harrison 21: 326장 p.2484]]. 통풍약을 새로 시작할 때 기저 혈구를 재는 것도 같은 이유다 [[harrison 21: 372장 p.2864]]. 감량 비율(1/3~1/4)과 페북소스타트 병용 금기 표시는 허가사항 원문을 대조하지 못했다(검토 항목). NUDT15 결핍도 활성 대사물이 쌓이는 쪽이다 [[?cpic 2019]] — 동아시아인에서 중요하다는 점은 원문 미대조. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 「통풍 예방약」이 가리키는 약 — 시험 기준: 요산이 떨어진 매일 약 = 요산 강하제, 그중 알로푸리놀이 1차 [[harrison 21: 372장 p.2865]] / 다른 기준: 요산 강하제를 시작할 때 발작 예방으로 콜히친 0.6 mg 1–2회/일이나 나프록센 250 mg bid 를 매일 쓴다 [[harrison 21: 372장 p.2865]] / 왜 다른가: 「발작 예방」에는 요산 강하와 항염증 예방 두 뜻이 있다 / 시험에서는: KMLE · USMLE 모두 요산 추이·신기능·병용약으로 가른다. 나프록센을 「예방에 쓰지 않는 약」으로 외우지 않는다. Z2 새 근거 · 상호작용의 근거 위치 — 시험 기준: 알로푸리놀 + 티오퓨린 = 감량 필요 [[?allopurinol label]] / 다른 기준: 해리슨 21판은 통풍 장(372장 p.2862–2867)과 염증성 장질환 장(326장 p.2483–2484) 모두에서 이 상호작용을 다루지 않고 TPMT 만 적는다 / 왜 다른가: 약물 상호작용은 약리 교과서·허가사항의 영역이다 / 시험에서는: KMLE · USMLE 모두 표준 약리 사실로 출제된다."
+  },
+  {
    "id": "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes",
    "type": "concept",
    "unit": "",
@@ -770,6 +784,62 @@ window.MEDKOS_INDEX = {
    "path": "content/concepts/pathology/cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes.md",
    "snippet": "정의 고환 생식세포종양(GCT)은 고환 종양의 95 % 이며, 정상피종과 비정상피종(NSGCT)으로 나뉜다. 정상피종은 조직이 100 % 정상피종일 때만 붙이는 이름이고, 섞이면 NSGCT 로 다룬다 [[harrison 21: 88장 p.689–690]]. 이 정리본의 목표는 치료가 아니라, 면역염색 사진에서 「누가 종양인가」를 가려 정상피종을 진단하고 림프종·NSGCT 와 감별하는 것 이다. 병태생리 정상에서 출발. 정세관 ",
    "text": "Hematology-Oncology 정의 고환 생식세포종양(GCT)은 고환 종양의 95 % 이며, 정상피종과 비정상피종(NSGCT)으로 나뉜다. 정상피종은 조직이 100 % 정상피종일 때만 붙이는 이름이고, 섞이면 NSGCT 로 다룬다 [[harrison 21: 88장 p.689–690]]. 이 정리본의 목표는 치료가 아니라, 면역염색 사진에서 「누가 종양인가」를 가려 정상피종을 진단하고 림프종·NSGCT 와 감별하는 것 이다. 병태생리 정상에서 출발. 정세관 안의 생식세포는 원시 생식세포에서 나와 정자로 분화하고, 세관 사이 간질에는 Leydig 세포와 혈관·소수의 림프구가 있다. GCT 의 기원 세포는 원시 생식세포이며, 대부분 생식세포 상피내 종양(GCNIS)을 거쳐 생기고 i(12p) 복제수 증가가 흔하다 [[harrison 21: 88장 p.690]]. 무엇으로 분화했나가 모양과 표지자를 정한다. 정상피종은 배아·배아외 조직 어느 쪽으로도 분화하지 않은 원시 생식세포를 닮아 크고 둥글며 글리코겐이 많은 맑은 세포질을 갖고, 섬유 격막으로 나뉜 판을 이룬다. 격막에는 숙주 면역 반응인 T 림프구(때로 육아종)가 거의 늘 있다 [[?robbins 10]]. 난황 구조를 만들지 않으므로 AFP 를 만들지 않고, 합포영양세포가 섞이면 hCG 를 조금 낸다 [[harrison 21: 88장 p.690]]. 반면 배아암종은 가장 미분화한 NSGCT 로 다른 아형으로 분화할 수 있고, 난황낭종양은 AFP, 융모막암은 매우 높은 hCG 를 낸다 [[harrison 21: 88장 p.690]]. 림프종은 다른 뿌리. 고환의 비호지킨 림프종은 생식세포가 아닌 림프구에서 나온 비생식세포종양이며 고령 남성에게 흔하다 [[harrison 21: 88장 p.694]]. 이때는 크고 이형성인 림프구 자체가 종양이다 [[?robbins 10]]. 기전에서 소견으로 통증 없는 단단한 고환 종괴 — GCT 의 전형이지만 실제로는 부종·단단함·불편감으로 오는 경우가 많다. hCG 가 높으면 여성형 유방이 생길 수 있다 [[harrison 21: 88장 p.690]]. 초음파 저에코(다발 가능) 고형 종괴 — 달리 증명될 때까지 악성 [[harrison 21: 88장 p.690]]. CD3 염색에서 격막의 작은 림프구만 갈색, 맑은 종양세포 음성 — 정상피종의 숙주 반응을 그린 것 [[?robbins 10]]. AFP 정상, hCG 경미 상승, LDH 상승 — 정상피종과 맞다. LDH 는 비특이적 종양 부담 표지다 [[harrison 21: 88장 p.690]]. 정상 결과의 한계 : 정상피종 대부분과 NSGCT 의 최대 1/3 은 표지자가 정상이다 — 정상 표지자로 GCT 를 배제하지 않는다 [[harrison 21: 88장 p.690]]. 감별 림프종 : 갈색 세포가 크고 이형성인 판이면 림프종, 작고 격막에 모여 있으면 정상피종의 반응. 나이(고령)·양측성도 림프종 쪽 단서다 [[harrison 21: 88장 p.694]]. 배아암종 : 다형성·샘 구조·괴사·출혈, CD30 양성, AFP·hCG 가 오를 수 있음 [[harrison 21: 88장 p.690]] [[?robbins 10]]. 난황낭종양 : AFP 상승이 핵심. AFP 정상이면 멀어진다 [[harrison 21: 88장 p.690]]. 융모막암 : hCG 가 매우 높고 출혈성. 경미한 hCG 는 정상피종의 합포영양세포로 설명된다 [[harrison 21: 88장 p.690]]. 검사 단단한 고환 종괴는 양쪽 음낭 초음파, 혈청 AFP·hCG·LDH(절제 전후)를 하고, 음낭을 통한 흡인·생검은 종양 파종 위험 때문에 하지 않는다. 진단은 근치적 서혜부 고환절제술 조직으로 하며, 고환 전체를 병리로 보고 경험 있는 병리의가 분류해야 한다 [[harrison 21: 88장 p.690]]. 병기는 복부·골반 CT 와 흉부 X 선으로 정한다 [[harrison 21: 88장 p.691]]. 치료 치료는 정상피종 vs NSGCT 와 병기 두 가지로 정한다 [[harrison 21: 88장 p.691]]. 정상피종은 방사선·항암에 매우 민감하다 [[harrison 21: 88장 p.690]]. 1기 정상피종(약 70 %)은 고환절제 뒤 능동 감시가 가장 흔하고, 보조 carboplatin 1–2주기나 대동맥옆 방사선도 선택지다 [[harrison 21: 88장 p.691]]. 반응 확인·재평가 : 감시 중 신체검사·복부 CT 를 주기적으로 하고, 전이가 생긴 약 15 % 는 방사선이나 항암으로 거의 완치된다. 항암 중에는 표지자가 정상화되는지 본다 [[harrison 21: 88장 p.691]]. 권고와 예외 면역염색은 「어느 세포가 비정상인가」를 먼저 정하고 읽는다 — 물든 세포가 종양이라는 보장은 없다. 정상피종을 가르는 혈청 표지자는 AFP(결코 안 오름)이지 hCG 가 아니다 [[harrison 21: 88장 p.690]]. 조직 형태·면역염색 세부(OCT3/4·CD117·CD30·CD20)는 병리 교과서 출처로 남겼고 원문 미대조다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 고환 림프종의 「고령」 기준 나이 — 시험 기준: 해리슨은 고환 비호지킨 림프종이 50세 넘는 남성에서 가장 흔하다고 쓴다 [[harrison 21: 88장 p.694]] / 다른 기준: 문항 해설·병리 교과서 계열은 「60세 넘는 남성에서 가장 흔한 고환 종양」으로 쓴다 [[?robbins 10]] / 왜 다른가: 해리슨은 림프종이 흔해지는 연령대를, 병리 교과서는 그 연령대에서 모든 고환 종양 중 림프종이 1위라는 점을 말한다 — 기준 모집단이 다르다 / 시험에서는: USMLE — 「older man( 60), bilateral」이면 림프종 · KMLE — 고령 남성의 양측 고환 종괴로 기억하면 된다. (심화) 왜 정상피종에는 림프구가 모이나 정상피종 세포는 원시 생식세포의 성질을 유지해 태생기 항원을 드러내고, 이것이 강한 T 세포 반응을 부른다고 설명된다 [[?robbins 10]]. 이 반응은 너무 일정해서 진단 단서가 되고, 정상피종이 방사선·항암에 매우 민감하며 1기 대부분이 고환절제만으로 완치되는 좋은 예후와 함께 「고환암은 완치 가능한 암의 모델」이라는 말의 한 축을 이룬다 [[harrison 21: 88장 p.689, p.691]]. 반대로 AFP 가 한 번이라도 오르면 조직 어딘가에 난황 분화가 있다는 뜻이라, 사진이 아무리 정상피종 같아도 NSGCT 로 치료가 바뀐다 — 사진과 혈청이 같은 생물학을 다른 창으로 본다는 것을 기억한다."
+  },
+  {
+   "id": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/concepts/pathology/cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis.md",
+   "snippet": "기전 — 정상 소동맥에서 양파 껍질로 정상 신장에서는 엽간·궁상 동맥과 수입 세동맥(afferent arteriole)이 사구체 관류를 맞추고, 수입 세동맥 벽의 사구체곁 세포(juxtaglomerular cells)가 관류압이 떨어지면 레닌을 낸다. 전신경화증(systemic sclerosis)의 기본 병변은 폐쇄성 혈관병증 이다: 내피 손상 → 근내막 세포(myointimal cells)가 쌓이고 기저막이 두꺼워지며, 내막",
+   "text": "Rheumatology 기전 — 정상 소동맥에서 양파 껍질로 정상 신장에서는 엽간·궁상 동맥과 수입 세동맥(afferent arteriole)이 사구체 관류를 맞추고, 수입 세동맥 벽의 사구체곁 세포(juxtaglomerular cells)가 관류압이 떨어지면 레닌을 낸다. 전신경화증(systemic sclerosis)의 기본 병변은 폐쇄성 혈관병증 이다: 내피 손상 → 근내막 세포(myointimal cells)가 쌓이고 기저막이 두꺼워지며, 내막·중막 비후로 내강이 점차 막힌다 [[harrison 21: 360장 p.2774]]. 신장 위기에서는 수입 세동맥의 급성 섬유소양 괴사 (fibrinoid necrosis)가 먼저 오고, 이어서 내막 증식이 동심원상으로 겹겹이 쌓인다(양파 껍질, onion skin) . 사구체는 염증이 아니라 허혈성 허탈 을 보인다 [[harrison 21: 360장 p.2777]]. 중형 신동맥에는 내막 증식과 점액양(myxoid) 변화가 보인다 [[harrison 21: 360장 p.2782]]. 좁아진 내강과 혈관 수축 → 신혈류 감소 → 레닌·안지오텐신 II 증가 → 신혈관이 더 수축하는 악순환 → 가속 고혈압 [[harrison 21: 360장 p.2782]]. 좁고 손상된 소혈관을 지나며 적혈구가 찢기고(분열적혈구) 혈소판이 소모된다 — 혈전성 미세혈관병증(thrombotic microangiopathy)과 비슷한 그림이다 [[harrison 21: 360장 p.2777]]. 가르는 소견 — 혈관 병인가 사구체 병인가 속도 가 초자양과 과형성을 가른다: 수 일~수 주 만의 악성 범위 고혈압·망막병증·용혈이면 과형성, 수년간 서서히면 초자양 [[?robbins 10]]. 요침사 가 혈관 병과 사구체 병을 가른다: 신장 위기의 요검사는 경한 단백뇨·과립 원주·현미경적 혈뇨 정도다 [[harrison 21: 360장 p.2782]]. 적혈구 원주·활동성 요침사면 사구체신염을 먼저 생각한다. 혈압이 정상이라고 배제하지 않는다 — 약 10% 는 정상혈압성 신장 위기이고 예후가 더 나쁘다 [[harrison 21: 360장 p.2782]]. 신생검에서 광범위한 혈관 혈전·사구체 허혈성 허탈, 초기 핍뇨·크레아티닌 3 mg/dL 은 나쁜 예후 인자다 [[harrison 21: 360장 p.2782]]. 위험 인자와 치료 — 기전에서 나오는 결론 전신경화증의 15% 미만, 거의 모두 발병 4년 이내. 위험 인자: 미만성·진행성 피부 경화, 남성, 흑인, 항 RNA 중합효소 III 항체 (신장 위기의 최대 50%); 항센트로미어 항체는 보호적 [[harrison 21: 360장 p.2782]]. 스테로이드 사용이 신장 위기와 연관된다 [[harrison 21: 360장 p.2782]]. 레닌 안지오텐신 악순환이 핵심이므로 단시간형 ACE 억제제를 적정해 혈압을 빨리 정상화 한다. ACE 억제제 이전의 단기 생존은 10% 미만이었다 [[harrison 21: 360장 p.2782]] [[harrison 21: 360장 p.2786]]. 권고와 예외 고위험 초기 환자는 혈압을 매일 재고, 스테로이드는 꼭 필요할 때만 저용량(< 10 mg/일)으로 쓴다 [[harrison 21: 360장 p.2782]]. 혈압이 계속 높으면 ARB·칼슘통로차단제·엔도텔린 수용체 차단제·프로스타사이클린·직접 레닌 억제제를 더하고, 보체 활성 근거로 에쿨리주맙을 고려할 수 있다 [[harrison 21: 360장 p.2786]]. 최대 2/3 가 투석이 필요하지만 30–50% 는 투석을 끊는다. 2년 뒤에도 투석이면 신장 이식 — 재발은 드물다 [[harrison 21: 360장 p.2786]]. 초자양 세동맥경화의 조직 서술은 해리슨 360장에 없어 Robbins 서지로만 남겼다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 사구체신염의 가능성 — 시험 기준: 전신경화증 + 급성 고혈압 + 미세혈관병성 용혈 + 조용한 요침사 = 혈관 병변 [[harrison 21: 360장 p.2782]] / 다른 기준: 같은 장이 전신경화증에서 MPO ANCA 연관 반달체 사구체신염, D 페니실라민 연관 막성 사구체신염을 기술한다 [[harrison 21: 360장 p.2782]] / 왜 다른가: 드문 동반 질환이라 맥락(활동성 요침사·ANCA·약물)이 있을 때만 / 시험에서는: USMLE · KMLE 모두 그 단서가 없으면 양파 껍질 병변."
+  },
+  {
+   "id": "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation",
+   "type": "concept",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/concepts/obstetrics-gynecology/cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation.md",
+   "snippet": "판단 — 왜 HELLP가 아니라 급성 임신 지방간인가 두 질환은 3분기·상복부 통증·간효소 상승·혈소판감소를 공유하므로 공통 소견으로는 가르지 못한다 . 급성 임신 지방간(AFLP)은 간세포 자체가 기능을 잃는 병이다 — 저혈당, 빌리루빈·암모니아의 뚜렷한 상승이 해리슨이 드는 구별점이다 [[harrison 21: 479장 p.3767]]. INR 연장·섬유소원 저하·뇌증도 같은 간부전의 표현이다 [[?acg 2016]]. H",
+   "text": "Obstetrics & Gynecology 판단 — 왜 HELLP가 아니라 급성 임신 지방간인가 두 질환은 3분기·상복부 통증·간효소 상승·혈소판감소를 공유하므로 공통 소견으로는 가르지 못한다 . 급성 임신 지방간(AFLP)은 간세포 자체가 기능을 잃는 병이다 — 저혈당, 빌리루빈·암모니아의 뚜렷한 상승이 해리슨이 드는 구별점이다 [[harrison 21: 479장 p.3767]]. INR 연장·섬유소원 저하·뇌증도 같은 간부전의 표현이다 [[?acg 2016]]. HELLP 증후군(hemolysis, elevated liver enzymes, low platelets)은 중증 전자간증의 특수 아형 이다 [[harrison 21: 479장 p.3763]] — 중심은 내피 손상에 따른 미세혈관병성 용혈과 혈소판 소모다. 그래서 「간부전이 앞서고 용혈·고혈압이 약하다」면 AFLP, 「용혈이 뚜렷하고 합성 기능이 남아 있다」면 HELLP 로 기운다. 기전 — 지방산 산화에서 간부전으로 정상 간은 공복에 글리코겐 분해·당신생으로 혈당을 지키고, 응고인자·섬유소원을 만들고, 암모니아를 요소로 바꾸고, 빌리루빈을 포합해 내보낸다. AFLP 에서는 간세포에 미세수포 지방이 쌓여 이 기능들이 한꺼번에 떨어진다 → 저혈당, INR 연장·섬유소원 저하, 암모니아 상승·뇌증, 고빌리루빈혈증 [[harrison 21: 479장 p.3767]]. 태아의 긴사슬 지방산 β산화 결함(LCHAD 결핍)이 있으면 태아·태반 쪽 지방산 대사물이 모체 간에 부담을 준다는 연관이 알려져 있다 [[?acg 2016]]. 갈증·다뇨(일과성 요붕증)와 급성 신손상이 동반될 수 있다 [[?acg 2016]]. HELLP 는 태반의 항혈관신생 인자 과잉과 내피 손상에서 시작한다 [[harrison 21: 479장 p.3763]] → 손상된 미세혈관을 지나는 적혈구가 깨지고(분열적혈구·LDH 상승) 혈소판이 소모되며, 간 문맥주위 괴사로 효소가 오른다. 응고장애는 진행된 합병증이다 [[harrison 21: 479장 p.3763]]. 가르는 소견 — 간부전인가, 용혈인가 간부전 쪽 : 혈당, INR, 섬유소원, 암모니아, 의식. 임신 중 섬유소원은 원래 높아야 하므로 「정상 하한」도 이미 낮은 값이다. 용혈 쪽 : 말초혈액 도말의 분열적혈구, LDH, 혈소판. 분열적혈구가 없으면 HELLP·TTP 가 모두 멀어진다. 전자간증 쪽 : 중증 소견은 혈압 ≥ 160/110 mmHg, 혈소판 < 100 × 10⁹/L, 크레아티닌 1.1 mg/dL, 트랜스아미나제 정상의 2배 [[harrison 21: 479장 p.3763]]. 혈압이 낮다고 HELLP 를 배제하지는 않는다. 가려움 + 담즙산 상승이면 임신 담즙정체, 혈청검사 양성이면 바이러스 간염 — 표 참고. 처치 — 둘 다 안정 후 분만 AFLP: 분만 + 보존 치료 [[harrison 21: 479장 p.3767]] — 포도당, 신선동결혈장·동결침전제제·혈소판 등으로 교정 [[?acg 2016]]. 산후 신생아 지방산 산화 결함 검사, 다음 임신 재발 상담 [[?acg 2016]]. HELLP: 중증 전자간증에 준해 분만이 결정적 치료다 [[harrison 21: 479장 p.3763]]. 재평가: 분만 뒤 혈당·INR·의식·신기능이 회복되는지 본다 — 회복이 늦으면 간이식 센터 논의가 필요할 수 있다 [[?acg 2016]]. 권고와 예외 감별은 처치(분만)를 바꾸지 않는 경우가 많다 — 시험에서는 진단명을 묻고, 실제에서는 교정·분만을 미루지 않는다. HELLP 의 LDH 기준값(흔히 ≥ 600 U/L)과 Swansea 기준(6개 이상)은 원문을 대조하지 않았다(검토 항목) [[?acg 2016]] [[?chng 2002]]. 임신 담즙정체의 분만 시기를 담즙산 수치로 세분하는 권고는 이 정리본에서 대조하지 않았다. 해리슨은 37주까지 분만으로 적는다 [[harrison 21: 479장 p.3767]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · AFLP 와 HELLP 는 겹치는 스펙트럼 — 시험 기준: 저혈당·빌리루빈·암모니아 상승(간부전)이 앞서면 AFLP [[harrison 21: 479장 p.3767]] / 다른 기준: 해리슨은 AFLP 를 HELLP·전자간증과 같은 스펙트럼에 두고, 응고장애를 전자간증의 말단장기 합병증으로도 적는다 [[harrison 21: 479장 p.3763]] / 왜 다른가: 두 질환이 한 환자에서 겹쳐 나타날 수 있어 응고장애 하나로는 가르지 못한다 / 시험에서는: KMLE · USMLE 모두 조합(간부전 + 용혈 약함 → AFLP, 용혈 + 중증 고혈압 → HELLP)으로 묻고, 치료는 둘 다 분만이라 답이 갈리지 않는다."
+  },
+  {
+   "id": "cn.id.bacillary-angiomatosis.kaposi-differentiation",
+   "type": "concept",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/concepts/infectious-disease/cn.id.bacillary-angiomatosis.kaposi-differentiation.md",
+   "snippet": "판단 — 왜 조직이 먼저인가 진행성 HIV 의 붉은 자주색 결절은 모양으로 가르지 못한다 — 카포시육종(Kaposi sarcoma)·화농성 육아종(pyogenic granuloma)·피하 종양·verruga peruana 가 모두 감별 대상이다 [[harrison 21: 172장 p.1332]]. 발열·체중감소·야간 발한 같은 전신 증상도 흔해 파종 감염과 겹친다. 세균성 혈관종증(bacillary angiomatosis)은 ",
+   "text": "Infectious Disease 판단 — 왜 조직이 먼저인가 진행성 HIV 의 붉은 자주색 결절은 모양으로 가르지 못한다 — 카포시육종(Kaposi sarcoma)·화농성 육아종(pyogenic granuloma)·피하 종양·verruga peruana 가 모두 감별 대상이다 [[harrison 21: 172장 p.1332]]. 발열·체중감소·야간 발한 같은 전신 증상도 흔해 파종 감염과 겹친다. 세균성 혈관종증(bacillary angiomatosis)은 조직검사로 진단 한다 [[harrison 21: 172장 p.1332]]. 감별이 치료를 바꾼다 — 세균성 혈관종증은 항생제로 낫고, 카포시육종은 ART·항암 쪽이다. 기전 — 세균이 혈관 증식을 일으킨다 Bartonella 는 까다롭게 자라는 세포 내 그람음성 간균이다. 면역정상인에게 B. henselae 는 고양이 긁힘 뒤 국소 림프절염(고양이 긁힘병)으로 그치지만, CD4 < 100/µL 의 심한 면역저하에서는 혈관 내피를 자극해 신생혈관 증식 병변 을 만든다 [[harrison 21: 172장 p.1328, p.1332]]. 그래서 병변은 혈관종처럼 붉고 잘 부서져 피가 나며, 조직에 균 덩어리와 호중구가 섞인다. 간·비장에 가면 혈액이 찬 작은 낭(자반증, peliosis)을 만들어 간비대·ALP 상승·영상의 저음영 병변이 된다 [[harrison 21: 172장 p.1332]]. 가르는 소견 — 조직·염색이 가른다 은염색(Warthin Starry) 에서 간균 무리 — Bartonella 는 그람 염색으로 잘 안 보인다. 배양은 대개 음성이라 음성으로 배제하지 않는다 [[harrison 21: 172장 p.1332]]. 방추세포가 없고 호중구가 있다는 것이 카포시육종과의 경계다. 항산성 염색 음성은 파종 MAC 가능성을 낮춘다. 노출이 종을 가른다: 고양이·고양이 벼룩 → B. henselae(간·비장 병변은 이 종만), 몸니·노숙 → B. quintana(피하·용해성 뼈 병변이 많다) [[harrison 21: 172장 p.1332]]. 선택 — 진단이 치료를 바꾼다 마크롤라이드 또는 독시사이클린을 오래 쓴다 — 혈관종증 3개월, 자반증 4개월 [[harrison 21: 172장 p.1331]]. HIV 환자는 ART 를 다시 시작하고, CD4 200/µL 까지 억제 치료를 이어 간다 [[harrison 21: 172장 p.1333]]. 권고와 예외 1차 예방 항생제는 권하지 않는다. 고양이 벼룩 관리·고양이 긁힘 피하기(B. henselae), 몸니 치료(B. quintana)가 예방이다 [[harrison 21: 172장 p.1333]]. MAC 예방으로 쓰는 마크롤라이드·리파부틴과 ART 보급 뒤 발생이 줄었다 [[harrison 21: 172장 p.1332]]. 카포시육종·MAC·매독·크립토코쿠스의 세부 소견은 해리슨 이 장과 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 억제 치료를 끊는 조건 — 시험 기준: CD4 200/µL 까지 억제 치료, 재발하면 평생 [[harrison 21: 172장 p.1333]] / 다른 기준: 미국 HIV 기회감염 지침은 CD4 200 이 일정 기간 유지되는 등의 조건을 덧붙인다 [[?nih oi]] / 왜 다른가: 교과서는 요약, 지침은 유지 기간·치료 반응까지 정한다 / 시험에서는: KMLE·USMLE 모두 「CD4 200 까지」로 충분하다. Z2 맥락 · 치료 기간 3개월 vs 4개월 — 시험 기준: 피부 혈관종증 3개월, 간·비장 자반증 4개월 [[harrison 21: 172장 p.1331]] / 다른 기준: 「최소 3개월」로 묶어 쓰는 자료가 있다 [[?nih oi]] / 왜 다른가: 자반증을 따로 두는지의 차이 / 시험에서는: KMLE·USMLE 모두 기간보다 약(마크롤라이드·독시사이클린)을 묻는다."
+  },
+  {
+   "id": "cn.gs.diverticular-abscess.percutaneous-drainage",
+   "type": "concept",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/concepts/general-surgery/cn.gs.diverticular-abscess.percutaneous-drainage.md",
+   "snippet": "판단 — 왜 경피 배농이 먼저인가 게실염이 결장 옆 농양 을 만들었고 환자가 안정 하면, 할 일은 「고름을 빼되 장은 아직 자르지 않는 것」이다 — 그 도구가 CT 유도 경피 배농(percutaneous drainage)이다 [[harrison 21: 328장 p.2500]]. 크기가 항생제 단독과 배농을 가른다: 3 cm 를 넘고 벽이 뚜렷한 농양은 항생제에 배농을 더한다 [[harrison 21: 328장 p.2500]].",
+   "text": "Gastroenterology 판단 — 왜 경피 배농이 먼저인가 게실염이 결장 옆 농양 을 만들었고 환자가 안정 하면, 할 일은 「고름을 빼되 장은 아직 자르지 않는 것」이다 — 그 도구가 CT 유도 경피 배농(percutaneous drainage)이다 [[harrison 21: 328장 p.2500]]. 크기가 항생제 단독과 배농을 가른다: 3 cm 를 넘고 벽이 뚜렷한 농양은 항생제에 배농을 더한다 [[harrison 21: 328장 p.2500]]. 안정·국소 복막염·유리 공기 없음이 응급 수술을 가른다: 하트만 수술은 배농 실패 뒤 범발성 복막염이나 분변성 복막염의 처치다 [[harrison 21: 328장 p.2500]]. 배농은 급성 패혈 원인을 줄여, 필요한 절제를 나중에 문합과 함께 하게 해 준다(Table 328 4: Ib·II = 배농 뒤 절제) [[harrison 21: 328장 p.2500]]. 기전 — 미세 천공에서 농양까지 게실은 근육층이 약한 곳(혈관이 뚫고 들어가는 자리)으로 점막이 빠져나온 주머니다. 목이 막히고 내압이 오르면 벽에 염증과 미세 천공이 생긴다. 새어 나온 것이 결장 주위 지방·장간막에 갇히면 염증덩이(phlegmon, Ia)나 결장 주위 농양(Ib)이, 멀리 골반에 고이면 원격 농양(II)이 된다. 천공이 막히지 않고 복강에 퍼지면 화농성(III)·분변성(IV) 복막염이다 [[harrison 21: 328장 p.2498]]. 농양은 벽으로 둘러싸인 무혈관 고름이라 항생제가 안쪽까지 잘 닿지 않는다 — 크면 원인을 물리적으로 빼야 한다. CT 에서 「테두리 조영 증강」은 이 벽을 보여 주는 소견이다. 압통이 좌하복부에 머물고 반발통이 없으면 염증이 아직 결장 주위에 갇혀 있다는 뜻이다. 유리 공기·복강 전체 액체는 갇히지 않았다는 신호다. 정상 소견의 한계: 유리 공기가 없다고 천공이 없던 것은 아니다(농양 자체가 막힌 천공이다). 가르는 것은 「갇혔는가」다. 선택 — 크기·상태로 가르는 처치 경피 배농은 항생제와 함께 한다 — 배농이 항생제를 대신하지 않는다. 항생제는 그람음성 막대균·혐기균을 덮는다(3세대 세팔로스포린 또는 시프로플록사신 + 메트로니다졸, 단독 피페라실린) [[harrison 21: 328장 p.2499]]. 재평가: 배농 실패는 20~25% 다. 열·통증·백혈구가 좋아지지 않거나 범발성 복막염이 생기면 수술로 넘어간다 [[harrison 21: 328장 p.2500]]. 금기: 경피 경로 없음, 기복증, 분변성 복막염 [[harrison 21: 328장 p.2500]]. 권고와 예외 대장내시경은 급발작 약 6주 뒤 대장암 배제·수술 전 평가로 한다 [[harrison 21: 328장 p.2498]]. 급성기에 하지 않는 이유(공기 주입에 의한 천공 위험)는 해리슨에 적혀 있지 않다 [[?ascrs 2020]]. 배농 기준 크기를 4 cm 로 쓰는 문헌도 있다 [[?wses 2020]]. 어느 쪽이든 5 cm 를 넘으면 배농이다. 면역저하 환자에서 수술 문턱을 낮추는 문제는 이 정리본에서 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 배농 크기 기준 3 cm, 4 cm, 5 cm — 시험 기준: 안정 + 3 cm 넘는 벽 뚜렷한 농양 → 항생제 + 경피 배농 [[harrison 21: 328장 p.2500]] / 다른 기준: 같은 쪽에서 해리슨은 「5 cm 미만 농양은 항생제만으로 풀릴 수 있다」고도 적고, 4 cm 를 쓰는 지침도 있다 [[?wses 2020]] / 왜 다른가: 3~5 cm 는 어느 쪽도 성공할 수 있는 회색 지대라 기관마다 선을 달리 긋는다 / 시험에서는: USMLE·KMLE 모두 5 cm 를 넘으면 배농, 2 cm 안팎이면 항생제 단독으로 출제하는 것이 안전하다 — 회색 지대 크기가 나오면 다른 단서(악화·반응)를 찾는다. Z2 충돌 · 배농 뒤 절제는 늘 하는가 — 시험 기준: 급성기의 다음 처치는 배농이고, 배농 뒤 선택적 절제는 이 목표의 답이 아니다 / 다른 기준: 해리슨은 Ib·II 를 「배농 뒤 약 6주에 절제·문합」으로, 합병 게실염은 수술 위험이 낮으면 모두 수술 적응으로 적는다 [[harrison 21: 328장 p.2499–2500]]. 최근 지침은 재발 위험·환자 상태로 개별화한다고 알려져 있다 [[?ascrs 2020]] / 왜 다른가: 배농 뒤 재발률 자료가 쌓이며 일률적 절제에서 개별화로 옮겨 가는 중이다 / 시험에서는: 「배농 후 다음 단계」를 물으면 USMLE 는 회복 뒤 대장내시경 + 선택적 절제 논의, KMLE 는 교과서형으로 선택적 절제를 답으로 둘 수 있다. Z3 맥락 · Hinchey III 의 정의 — 시험 기준: III = 화농성 범발성 복막염, IV = 분변성 복막염 / 다른 기준: 해리슨 그림 328 2 설명은 III 을 「비교통 천공 + 분변성 복막염」으로 적지만, 같은 장 본문은 III 에 분변성 복막염이 없다고 적는다 [[harrison 21: 328장 p.2498·p.2500]] / 왜 다른가: 그림 설명 문구의 불일치 / 시험에서는: 본문 쪽 정의(III 화농성, IV 분변성)로 푼다."
   },
   {
    "id": "anatomy-daily-2026-09-25",
@@ -923,6 +993,74 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0170.md",
    "snippet": "A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tigh",
    "text": "Pathology Headache, Blurred Vision and Rising Creatinine Weeks After Prednisone in a Woman With Tight Skin — The Vessel Lesion Behind an Abrupt Renal Crisis systemic-sclerosis scleroderma-renal-crisis hyperplastic-arteriolosclerosis onion-skin malignant-hypertension thrombotic-microangiopathy renin corticosteroid-risk USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 6 Systemic Sclerosis, Ch 11 Blood Vessels — Hypertensive Vascular Disease, Ch 14 Kidney; Denton CP, Khanna D. Systemic sclerosis. Lancet 2017) A 46 year old woman comes to the emergency department because of headache and blurred vision for 2 days. Over the past year, her fingers have turned white and then blue on exposure to cold, the skin of her hands and forearms has become tight and thick, and she has had heartburn and difficulty swallowing solid food. Three weeks ago, she was started on prednisone 30 mg daily for rapidly worsening skin tightening. She has had no hemoptysis or rash, and she has noticed less urine than usual. Her vital signs are shown. Funduscopic examination shows flame shaped hemorrhages and cotton wool spots. The skin of the fingers, hands, forearms and face is thickened and bound down, and the oral aperture is narrowed. There are healed pitting scars on the fingertips. Laboratory studies are shown. A peripheral blood smear shows numerous schistocytes. A kidney biopsy is performed. Which of the following is most likely to be found in this patient's kidney? A. Homogeneous hyaline thickening of arteriolar walls B. Concentric laminated intimal thickening of small arteries C. Crescents of proliferating cells in Bowman space D. Subepithelial immune deposits along basement membranes E. Mesangial deposits of IgA containing immune complexes 레이노 현상·손/팔/얼굴 피부 경화·손끝 함몰 흉터·삼킴곤란은 미만성 전신경화증이다. 스테로이드를 시작한 몇 주 뒤 갑자기 204/118 의 악성 범위 고혈압, 고혈압성 망막병증(화염상 출혈·면화반), 크레아티닌 급상승, 분열적혈구·혈소판감소·LDH 상승·합토글로빈 저하(미세혈관병성 용혈)가 나타났고 요침사는 적혈구 원주 없이 비교적 조용하다 = 경피증 신장 위기(scleroderma renal crisis). 이 병의 1차 병변은 사구체가 아니라 소동맥(엽간·궁상 동맥, 수입 세동맥)이다: 내막이 점액양 기질과 증식한 평활근세포로 동심원상·층판상으로 두꺼워져(양파 껍질 모양, hyperplastic arteriolosclerosis) 내강이 좁아지고 섬유소양 괴사가 겹친다. 좁아진 혈관 → 신장 관류 저하 → 레닌 과분비 → 고혈압 악화의 악순환이 생기므로 ACE 억제제가 치료의 핵심이다."
+  },
+  {
+   "id": "paper-2026-0655",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Proceedings of SPIE--the International Society for Optical Engineering",
+   "confidence": "medium",
+   "date": "2026-09-24",
+   "path": "content/papers/2026/2026-09-24_paper-2026-0655_glo_vlms_leveraging_vision_language_models_for_fine_grained_.md",
+   "snippet": "Title Glo VLMs: Leveraging Vision Language Models for Fine Grained Diseased Glomerulus Classification Authors Guo Zhenhao, Saluja Rachit, Fang Hongjin, Yao Tianyuan, Liu Quan, Huo Yuankai, Liechty Benjamin, Pisapia David J, et al. Journal /",
+   "text": "Pathology scraped pubmed PubMed / Proceedings of SPIE--the International Society for Optical Engineering Title Glo VLMs: Leveraging Vision Language Models for Fine Grained Diseased Glomerulus Classification Authors Guo Zhenhao, Saluja Rachit, Fang Hongjin, Yao Tianyuan, Liu Quan, Huo Yuankai, Liechty Benjamin, Pisapia David J, et al. Journal / DOI Proceedings of SPIE the International Society for Optical Engineering · DOI: 10.1117/12.3085625 · PMID: 42781586 https://pubmed.ncbi.nlm.nih.gov/42781586/ Abstract Vision language models (VLMs) have shown considerable potential in digital pathology, yet their effectiveness remains limited for fine grained, disease specific classification tasks such as distinguishing between glomerular subtypes. The subtle morphological variations among these subtypes, combined with the difficulty of aligning visual patterns with precise clinical terminology, make automated diagnosis in renal pathology particularly challenging. In this work, we explore how large pretrained VLMs can be effectively adapted to perform fine grained glomerular classification, even in scenarios where only a small number of labeled examples are available. In this work, we introduce Glo VLMs, a systematic framework designed to explore the adaptation of VLMs to fine grained glomerular classification in data constrained settings. Our approach leverages curated pathology images alongside clinical text prompts to facilitate joint image text representation learning for nuanced renal pathology subtypes. By assessing various VLMs architectures and adaptation strategies under a few shot learning paradigm, we explore how both the choice of method and the amount of labeled data impact model performance in clinically relevant scenarios. To ensure a fair comparison, we evaluate all models using standardized multi class metrics, aiming to clarify the practical requirements and potential of large pretrained models for specialized clinical research applications. As a result, fine tuning the VLMs achieved 0.7416 accuracy, 0.9045 macro AUC, and 0.5277 F1 score with only 8 shots per class, demonstrating that even with highly limited supervision, foundation models can be effectively adapted for fine grained medical image classification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0654",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medical biochemistry",
+   "confidence": "medium",
+   "date": "2026-09-24",
+   "path": "content/papers/2026/2026-09-24_paper-2026-0654_laboratory_diagnostics_of_chronic_kidney_disease_in_serbia_c.md",
+   "snippet": "Title Laboratory diagnostics of chronic kidney disease in Serbia: Current practice and priorities for harmonisation Authors Lukić Vera, Mrdaković Dušica, Milinković Neda Journal / DOI Journal of medical biochemistry · DOI: 10.5937/jomb0 650",
+   "text": "Nephrology scraped pubmed PubMed / Journal of medical biochemistry Title Laboratory diagnostics of chronic kidney disease in Serbia: Current practice and priorities for harmonisation Authors Lukić Vera, Mrdaković Dušica, Milinković Neda Journal / DOI Journal of medical biochemistry · DOI: 10.5937/jomb0 65067 · PMID: 42781651 https://pubmed.ncbi.nlm.nih.gov/42781651/ Abstract BACKGROUND: To assess current laboratory practices in chronic kidney disease (CKD) diagnostics in Serbia and identify areas requiring harmonisation in line with national and international guidelines. METHODS: A cross sectional, questionnaire based survey was conducted between June and August 2025, with support from the Serbian Society of Medical Biochemists, which distributed invitations to its members working in medical laboratories across Serbia. Eighty three laboratories participated (response rate 84.7%), representing primary, secondary, tertiary, and private healthcare sectors. Data were analysed descriptively. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0653",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in microbiology",
+   "confidence": "medium",
+   "date": "2026-09-24",
+   "path": "content/papers/2026/2026-09-24_paper-2026-0653_new_concepts_of_chitosan_based_mucosal_formulations_for_supp.md",
+   "snippet": "Title New concepts of chitosan based mucosal formulations for supporting control of the gastric pathogen Helicobacter pylori Authors Jaroniek Patrycja, Połomska Maria, Chmiela Magdalena, Gonciarz Weronika Journal / DOI Frontiers in microbio",
+   "text": "Infectious Disease scraped pubmed PubMed / Frontiers in microbiology Title New concepts of chitosan based mucosal formulations for supporting control of the gastric pathogen Helicobacter pylori Authors Jaroniek Patrycja, Połomska Maria, Chmiela Magdalena, Gonciarz Weronika Journal / DOI Frontiers in microbiology · DOI: 10.3389/fmicb.2026.1937380 · PMID: 42781450 https://pubmed.ncbi.nlm.nih.gov/42781450/ Abstract Helicobacter pylori (H. pylori) is a human gastric pathogen that colonizes the stomach by adapting to acidic pH, penetrating the gastric mucus layer, adhering to epithelial and mucosal receptors, and delivering virulence factors that promote inflammation and immune evasion. Antibiotic based regimens have markedly reduced the burden of H. pylori associated disease; however, increasing antimicrobial resistance, treatment failure, recurrence, and disruption of the gut microbiota remain important clinical challenges. Future therapeutic strategies should therefore combine bacterial control with modulation of the gastric environment that sustains chronic infection and impaired host responses. Chitosan based micro and nanoparticles are promising delivery systems for drugs and biologically active compounds because of their biodegradability, cationic surface charge, and mucoadhesive properties. This Mini Review summarizes chitosan based formulations proposed for the delivery of antibiotics, plant derived antimicrobial compounds, and antimicrobial peptides, as well as systems targeting H. pylori adhesins, bacterial biofilm, or urease activity. We also discuss an experimental concept in which the immunomodulatory vaccine strain Mycobacterium bovis Bacillus Calmette Guerin (BCG) is encapsulated in chitosan micro or nanoparticles for gastric and/or intestinal delivery. Available in vitro and in vivo evidence suggests that chitosan based systems may increase local exposure to active components, support mucosal immune responses, and potentially facilitate epithelial repair. Nevertheless, most data remain preclinical, and clinical efficacy in humans has not been demonstrated. The review highlights the need for broader independent validation, careful biosafety assessment, and standardized formulation parameters before these approaches can be considered for translation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0652",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular echography",
+   "confidence": "medium",
+   "date": "2026-09-24",
+   "path": "content/papers/2026/2026-09-24_paper-2026-0652_imaging_based_demonstration_of_reverse_left_heart_remodeling.md",
+   "snippet": "Title Imaging based Demonstration of Reverse Left Heart Remodeling after Sodium Glucose Co transporter 2 Inhibitors in Heart Failure: A Systematic Review and Meta analysis Authors Giannino Federico, Colarusso Luigi, Mancuso Matteo, Piccione",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular echography Title Imaging based Demonstration of Reverse Left Heart Remodeling after Sodium Glucose Co transporter 2 Inhibitors in Heart Failure: A Systematic Review and Meta analysis Authors Giannino Federico, Colarusso Luigi, Mancuso Matteo, Piccione Maurizio Cusmà, Di Bella Gianluca, Micari Antonio, Zito Concetta Journal / DOI Journal of cardiovascular echography · DOI: 10.4103/jcecho.jcecho 11 26 · PMID: 42781654 https://pubmed.ncbi.nlm.nih.gov/42781654/ Abstract BACKGROUND: Several studies have demonstrated the safety and efficacy of sodium glucose co transporter 2 inhibitors (SGLT2i), but there is little evidence on how these drugs improve cardiac remodeling parameters in patients with heart failure (HF). We performed a meta analysis of RCTs to evaluate the effect of SGLT2i on cardiac remodeling in patients with HF. The study protocol was registered in June 2025 (PROSPERO: CRD420251055562). METHODS: The Medline, Scopus, and Cochrane Central databases were searched for RCTs that compared SGLT2i with placebo in patients ≥18 years of age with a diagnosis of HF. Eleven outcomes were analyzed, including left ventricular end diastolic volume (LVEDV), left ventricular end systolic volume (LVES), left ventricular mass (LVM), left ventricular ejection fraction (LVEF), left atrial volume indexed (LAVi), left ventricular global longitudinal Strain, stroke volume, and E/e'. Statistical analyses were performed using R version 4.3.2. RESULTS: We included 13 RCTs with 1181 patients, 592 of whom received SGLT2i as the intervention. LVEDV (MD: 8.41 mL; 95% CI: 13.07 to 3.75, P = 0.004), LVES (MD: 8.11 mL; 95% CI: 13.95 to 2.28, P = 0,006), left ventricular end systolic volume indexed (LVESVi) (MD: 3.71 mL/m2, 95% CI: 6.84 to 0.58, P = 0.02), LVM (MD: 7.65 g; 95% CI: 13.79 to 1.51, P = 0.01), and LAVi (MD: 2.04 ml/m2; 95% CI: 3.21 to 0.86, P = 0.0007) were significantly lower in patients treated with SGLT2i compared to placebo. In addition, this treatment led to a significant increase in LVEF (MD: +2.59%, 95% CI: 1.76 to 3.43, P < 0.00001) compared to placebo. CONCLUSION: Our results suggest that in patients with HF, SGLT2i have a positive influence on cardiac remodeling since they lead to a significant decrease in LVEDV, LVES, LVESVi, LVM, left ventricular mass indexed, and LAVi compared to placebo and a significant increase in EF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0123",
@@ -6847,8 +6985,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-18",
    "path": "content/concepts/dermatology/cn.derm.pityriasis-versicolor.treatment.md",
-   "snippet": "정의 어루러기(전풍)는 피부 상재 효모 말라세지아 가 균사형으로 늘어나 생기는 표재성 감염이다. 피지가 많은 몸통 위쪽·목·위팔에 비늘 있는 저색소 또는 과색소 반점을 만든다. 병태생리 덥고 습한 환경, 땀, 기름진 피부에서 효모형이 균사형으로 바뀐다. 상재균이라 재발이 흔하다 — 균을 없애도 다시 늘어날 조건이 남는다. 말라세지아는 지질을 요구해 일반 배양에서 잘 자라지 않는다. 기전에서 소견으로 균이 만드는 아젤라산이 멜라",
-   "text": "Dermatology 정의 어루러기(전풍)는 피부 상재 효모 말라세지아 가 균사형으로 늘어나 생기는 표재성 감염이다. 피지가 많은 몸통 위쪽·목·위팔에 비늘 있는 저색소 또는 과색소 반점을 만든다. 병태생리 덥고 습한 환경, 땀, 기름진 피부에서 효모형이 균사형으로 바뀐다. 상재균이라 재발이 흔하다 — 균을 없애도 다시 늘어날 조건이 남는다. 말라세지아는 지질을 요구해 일반 배양에서 잘 자라지 않는다. 기전에서 소견으로 균이 만드는 아젤라산이 멜라닌 합성을 억제 → 햇볕에 타도 그 부위만 하얗게 남는다(저색소). 각질층의 균 → 긁으면 미세한 비늘이 두드러진다. KOH 에서 짧은 균사와 둥근 포자 무리(「스파게티와 미트볼」). 우드등 형광은 일부에서만 보이는 보조 소견이다. 감별 백반증 : 비늘 없음, 완전 탈색, KOH 음성. 국소 타크로리무스가 쓰이는 쪽은 이것이다. 염증 후 저색소·백색 비강진·장미색 비강진·지루 피부염 : 분포·비늘·KOH 로 가른다. 체부백선 : 가장자리가 활동성인 고리 모양, 피부사상균 — 그리세오풀빈·테르비나핀이 듣는 쪽. 검사 KOH 검경이 핵심이다. 배양은 일상적으로 필요 없고, 일반 배지 음성은 오히려 합당하다. 치료 국한·첫 발병 → 국소 항진균제(아졸 크림·샴푸, 셀레늄 설파이드, 징크 피리치온). 광범위·재발·국소 실패 → 경구 이트라코나졸 또는 플루코나졸. 무효·금기: 경구 테르비나핀·그리세오풀빈(무효), 경구 케토코나졸(간독성으로 쓰지 않음), 국소 스테로이드(악화). 색 회복에 수개월 걸린다는 것을 미리 설명한다. 재발이 잦으면 예방적 국소제. 권고와 예외 국소제 사이의 상대 효과는 근거가 약하다 — 「가장 좋은 국소제」를 외울 필요는 없다. 경구 아졸의 용량·기간은 이 정리본에서 대조하지 않았다(검토 항목). 국내 교과서의 권고 문구는 대조하지 않았다(검토 항목). (심화) 치료 문항이 진단 문항처럼 보이는 이유 보기에 경쟁하는 치료(국소 vs 경구 아졸)가 없으면 문항은 사실상 「어루러기인가」만 묻게 된다. 이 정리본의 목표는 진단 다음 단계 — 범위·재발이 치료 수준을 바꾼다 — 이다."
+   "snippet": "판단 — 왜 범위·재발이 치료를 바꾸나 진단(어루러기)이 같아도 치료 수준은 범위·재발·국소 치료 결과 가 정한다. 원인균이 피부 상재 효모 라 균을 없애도 다시 늘어날 조건이 남는다 — 그래서 재발이 흔하고, 넓거나 되풀이되면 국소제로는 모자란다. 약 선택은 균의 종류에서 나온다: 효모(말라세지아)에는 아졸, 피부사상균(백선)에는 그리세오풀빈·테르비나핀. 기전 — 상재 효모에서 반점까지 덥고 습한 환경, 땀, 기름진 피부에서",
+   "text": "Dermatology 판단 — 왜 범위·재발이 치료를 바꾸나 진단(어루러기)이 같아도 치료 수준은 범위·재발·국소 치료 결과 가 정한다. 원인균이 피부 상재 효모 라 균을 없애도 다시 늘어날 조건이 남는다 — 그래서 재발이 흔하고, 넓거나 되풀이되면 국소제로는 모자란다. 약 선택은 균의 종류에서 나온다: 효모(말라세지아)에는 아졸, 피부사상균(백선)에는 그리세오풀빈·테르비나핀. 기전 — 상재 효모에서 반점까지 덥고 습한 환경, 땀, 기름진 피부에서 말라세지아(Malassezia)가 효모형에서 균사형으로 바뀌어 피지가 많은 몸통 위쪽·목·위팔에 퍼진다. 말라세지아는 지질을 요구해 일반 배양에서 잘 자라지 않는다. 균이 만드는 아젤라산이 멜라닌 합성을 억제 → 햇볕에 타도 그 부위만 하얗게 남는다(저색소). 각질층의 균 → 긁으면 미세한 비늘이 두드러진다. 가르는 소견 — 비늘·색·KOH KOH 검경 이 기준이다: 짧은 균사와 둥근 포자 무리(「스파게티와 미트볼」). 배양은 일상적으로 필요 없고, 일반 배지 음성은 오히려 합당하다. 우드등 형광은 일부에서만 보이는 보조 소견 — 음성이어도 배제하지 않는다. 선택 — 국소에서 경구로 올리는 조건 국한·첫 발병 → 국소 항진균제. 광범위·재발·국소 실패 → 경구 이트라코나졸 또는 플루코나졸. 색 회복에 수개월 걸린다는 것을 미리 설명한다. 재발이 잦으면 예방적 국소제. 권고와 예외 국소제 사이의 상대 효과는 근거가 약하다 — 「가장 좋은 국소제」를 외울 필요는 없다. 경구 아졸의 용량·기간은 이 정리본에서 대조하지 않았다(검토 항목). 국내 교과서의 권고 문구는 대조하지 않았다(검토 항목)."
   },
   {
    "id": "anatomy-daily-2026-09-18",

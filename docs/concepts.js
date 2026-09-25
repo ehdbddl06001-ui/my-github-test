@@ -19730,6 +19730,835 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.gs.diverticular-abscess.percutaneous-drainage": {
+  "id": "cn.gs.diverticular-abscess.percutaneous-drainage",
+  "title": "게실 농양 — 큰 농양·안정이면 경피 배농",
+  "objective": "농양을 동반한 급성 게실염에서 농양 크기·혈역학·복막염 범위로 경피 배농·항생제 단독·응급 절제 중 다음 처치를 고른다",
+  "objectiveKind": "다음 처치",
+  "condition": "농양 동반 급성 게실염(diverticular abscess, Hinchey Ib~II)",
+  "topic": "Gastroenterology",
+  "seeAlso": [
+   "General Surgery"
+  ],
+  "version": 1,
+  "updated": "2026-09-25",
+  "reviewStatus": "unreviewed",
+  "hash": "4fd67dc6c2a8bce7",
+  "summary": [
+   "결론: 안정된 환자의 3 cm 넘는 벽이 뚜렷한 게실 농양은 항생제에 CT 유도 경피 배농을 더한다.",
+   "시험 단서: 좌하복부 통증·발열 + CT 결장 옆 테두리 조영 증강 액체(rim-enhancing collection), 유리 공기 없음.",
+   "왜: 고름 덩어리엔 항생제가 잘 닿지 않는다 — 배농이 패혈 원인을 줄이고 응급 장루 수술을 피하게 한다.",
+   "수술로 가는 조건: 배농 실패 뒤 범발성 복막염, 분변성 복막염·유리 공기(경피 배농의 금기), 쇼크.",
+   "대장내시경(colonoscopy)은 급성기가 아니라 회복 약 6주 뒤 — 대장암 배제용."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 경피 배농이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>게실염이 <strong>결장 옆 농양</strong>을 만들었고 환자가 <strong>안정</strong>하면, 할 일은 「고름을 빼되 장은 아직 자르지 않는 것」이다 — 그 도구가 CT 유도 경피 배농(percutaneous drainage)이다 <sup>[1 328장 p.2500]</sup>.</li>\n<li>크기가 항생제 단독과 배농을 가른다: 3 cm 를 넘고 벽이 뚜렷한 농양은 항생제에 배농을 더한다 <sup>[1 328장 p.2500]</sup>.</li>\n<li>안정·국소 복막염·유리 공기 없음이 응급 수술을 가른다: 하트만 수술은 배농 실패 뒤 범발성 복막염이나 분변성 복막염의 처치다 <sup>[1 328장 p.2500]</sup>.</li>\n<li>배농은 급성 패혈 원인을 줄여, 필요한 절제를 나중에 문합과 함께 하게 해 준다(Table 328-4: Ib·II = 배농 뒤 절제) <sup>[1 328장 p.2500]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 미세 천공에서 농양까지",
+    "deep": false,
+    "html": "<p>게실은 근육층이 약한 곳(혈관이 뚫고 들어가는 자리)으로 점막이 빠져나온 주머니다. 목이 막히고 내압이 오르면 벽에 염증과 미세 천공이 생긴다. 새어 나온 것이 결장 주위 지방·장간막에 갇히면 염증덩이(phlegmon, Ia)나 결장 주위 농양(Ib)이, 멀리 골반에 고이면 원격 농양(II)이 된다. 천공이 막히지 않고 복강에 퍼지면 화농성(III)·분변성(IV) 복막염이다 <sup>[1 328장 p.2498]</sup>.</p>\n<ul>\n<li>농양은 벽으로 둘러싸인 무혈관 고름이라 <strong>항생제가 안쪽까지 잘 닿지 않는다</strong> — 크면 원인을 물리적으로 빼야 한다. CT 에서 「테두리 조영 증강」은 이 벽을 보여 주는 소견이다.</li>\n<li>압통이 좌하복부에 머물고 반발통이 없으면 염증이 아직 결장 주위에 갇혀 있다는 뜻이다. 유리 공기·복강 전체 액체는 갇히지 않았다는 신호다.</li>\n<li>정상 소견의 한계: 유리 공기가 없다고 천공이 없던 것은 아니다(농양 자체가 막힌 천공이다). 가르는 것은 「갇혔는가」다.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 크기·상태로 가르는 처치",
+    "deep": false,
+    "html": "<ul>\n<li>경피 배농은 항생제와 <strong>함께</strong> 한다 — 배농이 항생제를 대신하지 않는다. 항생제는 그람음성 막대균·혐기균을 덮는다(3세대 세팔로스포린 또는 시프로플록사신 + 메트로니다졸, 단독 피페라실린) <sup>[1 328장 p.2499]</sup>.</li>\n<li>재평가: 배농 실패는 20~25% 다. 열·통증·백혈구가 좋아지지 않거나 범발성 복막염이 생기면 수술로 넘어간다 <sup>[1 328장 p.2500]</sup>.</li>\n<li>금기: 경피 경로 없음, 기복증, 분변성 복막염 <sup>[1 328장 p.2500]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>대장내시경은 급발작 <strong>약 6주 뒤</strong> 대장암 배제·수술 전 평가로 한다 <sup>[1 328장 p.2498]</sup>. 급성기에 하지 않는 이유(공기 주입에 의한 천공 위험)는 해리슨에 적혀 있지 않다 <sup>[2†]</sup>.</li>\n<li>배농 기준 크기를 4 cm 로 쓰는 문헌도 있다 <sup>[3†]</sup>. 어느 쪽이든 5 cm 를 넘으면 배농이다.</li>\n<li>면역저하 환자에서 수술 문턱을 낮추는 문제는 이 정리본에서 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 배농 크기 기준 3 cm, 4 cm, 5 cm</strong> — 시험 기준: 안정 + 3 cm 넘는 벽 뚜렷한 농양 → 항생제 + 경피 배농 <sup>[1 328장 p.2500]</sup> / 다른 기준: 같은 쪽에서 해리슨은 「5 cm 미만 농양은 항생제만으로 풀릴 수 있다」고도 적고, 4 cm 를 쓰는 지침도 있다 <sup>[3†]</sup> / 왜 다른가: 3~5 cm 는 어느 쪽도 성공할 수 있는 회색 지대라 기관마다 선을 달리 긋는다 / 시험에서는: USMLE·KMLE 모두 5 cm 를 넘으면 배농, 2 cm 안팎이면 항생제 단독으로 출제하는 것이 안전하다 — 회색 지대 크기가 나오면 다른 단서(악화·반응)를 찾는다.</li>\n<li><strong>Z2 충돌 · 배농 뒤 절제는 늘 하는가</strong> — 시험 기준: 급성기의 다음 처치는 배농이고, 배농 뒤 선택적 절제는 이 목표의 답이 아니다 / 다른 기준: 해리슨은 Ib·II 를 「배농 뒤 약 6주에 절제·문합」으로, 합병 게실염은 수술 위험이 낮으면 모두 수술 적응으로 적는다 <sup>[1 328장 p.2499–2500]</sup>. 최근 지침은 재발 위험·환자 상태로 개별화한다고 알려져 있다 <sup>[2†]</sup> / 왜 다른가: 배농 뒤 재발률 자료가 쌓이며 일률적 절제에서 개별화로 옮겨 가는 중이다 / 시험에서는: 「배농 후 다음 단계」를 물으면 USMLE 는 회복 뒤 대장내시경 + 선택적 절제 논의, KMLE 는 교과서형으로 선택적 절제를 답으로 둘 수 있다.</li>\n<li><strong>Z3 맥락 · Hinchey III 의 정의</strong> — 시험 기준: III = 화농성 범발성 복막염, IV = 분변성 복막염 / 다른 기준: 해리슨 그림 328-2 설명은 III 을 「비교통 천공 + 분변성 복막염」으로 적지만, 같은 장 본문은 III 에 분변성 복막염이 없다고 적는다 <sup>[1 328장 p.2498·p.2500]</sup> / 왜 다른가: 그림 설명 문구의 불일치 / 시험에서는: 본문 쪽 정의(III 화농성, IV 분변성)로 푼다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "게실염 — CT 소견 × 상태 → 처치",
+    "columns": [
+     "상황",
+     "처치",
+     "주의"
+    ],
+    "rows": [
+     [
+      "염증덩이·작은 농양(Hinchey Ia, 작은 Ib)",
+      "IV 항생제 단독 <sup>[1 328장 p.2500]</sup>",
+      "5 cm 미만은 항생제로 풀릴 수 있다"
+     ],
+     [
+      "3 cm 넘고 벽이 뚜렷한 농양, 안정(Ib·II)",
+      "IV 항생제 + CT 유도 경피 배농 <sup>[1 328장 p.2500]</sup>",
+      "배농 실패 20~25%"
+     ],
+     [
+      "경피 접근 경로 없음·기복증·분변성 복막염",
+      "경피 배농 금기 → 수술 <sup>[1 328장 p.2500]</sup>",
+      "—"
+     ],
+     [
+      "배농 실패 + 범발성 복막염",
+      "응급 수술, 대개 하트만 수술 <sup>[1 328장 p.2500]</sup>",
+      "구불결장 절제 + 끝 결장루 + 직장 끝(rectal stump)"
+     ],
+     [
+      "화농성 복막염(III)",
+      "절제 ± 우회 장루, 선택적 복강경 세척 <sup>[1 328장 p.2500]</sup>",
+      "세척 단독은 재수술 위험 ↑"
+     ],
+     [
+      "분변성 복막염(IV)",
+      "하트만 수술 또는 세척 + 우회 장루 — 문합 금지 <sup>[1 328장 p.2500]</sup>",
+      "—"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "IV 항생제 단독 vs 배농 추가",
+    "point": "작은 농양은 항생제만으로 흔히 낫지만, 3 cm 를 넘고 벽이 뚜렷한 농양은 배농을 더한다. 크기가 가른다 — 5 cm 를 넘으면 두 기준 어디서도 단독 항생제 쪽이 아니다.",
+    "exception": "해리슨은 5 cm 미만도 항생제 단독으로 풀릴 수 있다고 적어 3~5 cm 는 겹친다(시험 쟁점 Z1).",
+    "cites": "<sup>[1 328장 p.2500]</sup>"
+   },
+   {
+    "contrast": "구불결장 절제 + 끝 결장루(Hartmann) vs 경피 배농",
+    "point": "하트만 수술은 배농 실패 뒤 범발성 복막염, 분변성 복막염(Hinchey IV)·쇼크의 처치다. 안정·국소 압통·유리 공기 없음이면 먼저 배농한다.",
+    "exception": "",
+    "cites": "<sup>[1 328장 p.2500]</sup>"
+   },
+   {
+    "contrast": "대장내시경으로 암 배제 — 지금?",
+    "point": "대장암 배제는 필요하지만 시기는 급발작 약 6주 뒤다. 활동성 감염·농양이 있는 지금의 다음 처치는 배농이다.",
+    "exception": "",
+    "cites": "<sup>[1 328장 p.2498]</sup>"
+   },
+   {
+    "contrast": "복강경 세척·배액 vs 경피 배농",
+    "point": "복강경 세척은 복강 전체로 퍼진 화농성 복막염(Hinchey III)에서 논의되는 선택지이고 재수술 위험이 높다. 결장 옆에 국한된 농양은 경피로 뺀다.",
+    "exception": "",
+    "cites": "<sup>[1 328장 p.2500]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "3~5 cm 는 겹친다 — 해리슨은 3 cm 초과 배농, 5 cm 미만은 항생제로도 풀릴 수 있다고 함께 적는다. 5 cm 를 넘으면 배농 쪽이다.",
+   "경피 배농의 금기: 접근 경로 없음, 기복증(pneumoperitoneum), 분변성 복막염.",
+   "배농이 실패하고(20~25%) 범발성 복막염이 생기면 응급 수술 — 대개 하트만 수술.",
+   "대장내시경은 급발작 약 6주 뒤, 대장암 배제용이다 — 도식의 어느 끝에서도 지금 하는 처치가 아니다."
+  ],
+  "criteria": [
+   {
+    "id": "dvabs-drain",
+    "name": "경피 배농 적응",
+    "kind": "치료 권고",
+    "population": "농양 동반 급성 게실염, 혈역학적으로 안정",
+    "statement": "항생제에 더해 3 cm 를 넘고 벽이 뚜렷한 게실 농양은 CT 유도 경피 배농(해리슨이 인용한 ASCRS 권고) [[harrison-21: 328장 p.2500]]",
+    "exceptions": "경피 접근 경로 없음·기복증·분변성 복막염은 금기. 5 cm 미만은 항생제 단독으로 풀릴 수 있다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "dvabs-surgery",
+    "name": "응급 수술 전환",
+    "kind": "치료 권고",
+    "population": "경피 배농 뒤 게실 농양",
+    "statement": "배농이 실패하고 범발성 복막염이 생기면 응급 수술 — 대부분 하트만 수술(구불결장 절제·끝 결장루·직장 끝(rectal stump)) [[harrison-21: 328장 p.2500]]",
+    "exceptions": "분변성 복막염(Hinchey IV)에서는 어떤 문합도 하지 않는다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "dvabs-colonoscopy",
+    "name": "대장내시경 시기",
+    "kind": "검사 시기",
+    "population": "게실염 급발작 뒤",
+    "statement": "대장암 배제를 위해 급발작 약 6주 뒤 대장내시경 [[harrison-21: 328장 p.2498]]",
+    "exceptions": "지침 문헌은 6~8주로 적기도 한다[[?ascrs-2020]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 328: Diverticular Disease and Common Anorectal Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 328장 p.2498–2500 (Fig. 328-2 · Table 328-1 · Table 328-4)",
+    "checked": "본문 대조(드라이브 장별 문서 h328) — p.2498: CT 진단 기준(벽 > 4 mm·결장 주위 지방 염증), 농양 최대 20%, Table 328-1(합병 25%, 농양 16%), Hinchey 분류·Ia 염증덩이/Ib 결장 주위 농양, 급발작 약 6주 뒤 대장내시경(대장암 배제·수술 전). p.2499: 입원 게실염 ~75% 비수술 치료 반응, 3세대 세팔로스포린 또는 시프로플록사신+메트로니다졸, 단독 piperacillin, 합병 게실염의 수술 위험 낮은 환자에서 수술 적응. p.2500: Table 328-4(Ib·II = 경피 배농 후 절제), ASCRS 인용 — 3 cm 초과·벽 뚜렷한 농양은 항생제 + CT 유도 경피 배농, 5 cm 미만은 항생제 단독으로 풀릴 수 있음, 금기(경로 없음·기복증·분변성 복막염), 실패율 20–25%, 실패 + 범발성 복막염 → 대개 하트만 수술, Hinchey III 복강경 세척(재수술 위험 ↑), IV 문합 금지. 해리슨에 없는 것: 급성기 대장내시경의 천공 위험 설명, 4 cm 기준, 배농 뒤 선택적 절제의 개별화, 면역저하 환자의 수술 문턱.",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "ascrs-2020",
+    "org": "American Society of Colon and Rectal Surgeons (Hall J et al.)",
+    "title": "The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Management of Left-Sided Colonic Diverticulitis",
+    "kind": "guideline",
+    "citation": "Dis Colon Rectum 2020;63(6):728-747",
+    "checked": "서지만(기억·문항 참고문헌 기준, 컨테이너가 PubMed·doi.org 를 막아 원문·PMID 미대조). 본문 권고는 해리슨 328장이 인용한 부분만 해리슨 쪽으로 확인했다.",
+    "doi": "10.1097/DCR.0000000000001679",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-25",
+    "url": "https://doi.org/10.1097/DCR.0000000000001679"
+   },
+   {
+    "id": "wses-2020",
+    "org": "World Society of Emergency Surgery (Sartelli M et al.)",
+    "title": "2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting",
+    "kind": "guideline",
+    "citation": "World J Emerg Surg 2020;15:32",
+    "checked": "서지만(기억·문항 참고문헌 기준, 원문·PMID 미대조). 4 cm 기준 등은 원문을 보지 않아 [[?wses-2020]] 로만 단다.",
+    "doi": "10.1186/s13017-020-00313-4",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-25",
+    "url": "https://doi.org/10.1186/s13017-020-00313-4"
+   }
+  ],
+  "checks": [
+   {
+    "q": "안정된 환자의 5.5 cm 게실 농양 — 항생제만으로 부족한 이유와 다음 처치는?",
+    "a": "3 cm 를 넘는 벽 뚜렷한 농양은 항생제만으로는 실패가 많다. IV 항생제에 CT 유도 경피 배농을 더한다."
+   },
+   {
+    "q": "경피 배농 대신 수술로 가는 조건 셋은?",
+    "a": "경피 접근 경로가 없음, 기복증·분변성 복막염(배농 금기), 배농 실패 뒤 범발성 복막염·쇼크."
+   },
+   {
+    "q": "게실염 뒤 대장내시경은 언제·왜?",
+    "a": "급발작 약 6주 뒤, 대장암을 배제하려고(특히 수술 전). 급성기의 다음 처치가 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.gs.diverticular-abscess.percutaneous-drainage#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 유리 공기·분변성 복막염·쇼크",
+    "stem": "A 66-year-old woman is brought to the emergency department with 3 days of left lower abdominal pain that became severe and generalized 6 hours ago. She has known sigmoid diverticulosis. Temperature is 38.9°C, pulse 124/min, respirations 26/min, and blood pressure 84/50 mm Hg despite 2 L of intravenous crystalloid. The abdomen is distended and rigid with diffuse rebound tenderness. Leukocyte count is 21,400/mm³ and serum lactate is 4.6 mmol/L. CT scan of the abdomen and pelvis shows sigmoid wall thickening with inflamed diverticula, free intraperitoneal air, and extraluminal fluid with fecal material throughout the pelvis and both paracolic gutters. Intravenous piperacillin-tazobactam is started. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "CT-guided percutaneous drainage of the pelvic fluid",
+     "Continuation of intravenous antibiotics with serial abdominal examinations",
+     "Laparoscopic peritoneal lavage without resection",
+     "Emergency sigmoid resection with end colostomy",
+     "Colonoscopy to evaluate the sigmoid colon"
+    ],
+    "answer": 4,
+    "explanation": "유리 공기와 분변성 복막염(Hinchey IV)에 쇼크가 겹쳤다. 기복증·분변성 복막염은 경피 배농의 금기이고 항생제만으로는 원인을 없앨 수 없으며, 분변성 복막염에서는 문합을 하지 않는다 — 응급 하트만 수술(구불결장 절제·끝 결장루)이 답이다. 세척 단독은 화농성(III)에서나 논의되고 재수술 위험이 높다. 원래 문항은 안정·국소 농양이라 배농이 먼저였다.",
+    "of": "usmle-2026-0173",
+    "changed": "혈압 132/80·국소 압통·유리 공기 없음 → 혈압 84/50·젖산 4.6·복부 전체 반발통·강직·CT 유리 공기와 복강 내 분변성 액체 → 경피 배농 금기가 되어 답이 「CT 유도 경피 배농」에서 「구불결장 절제 + 끝 결장루(하트만)」로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.gs.diverticular-abscess.percutaneous-drainage#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 골반 쪽 6 cm 농양의 중년 남자",
+    "stem": "A 58-year-old man comes to the emergency department because of 5 days of lower abdominal pain, fever, and increasing urinary frequency. He has hyperlipidemia treated with atorvastatin and takes no other medications. CT scan of the abdomen and pelvis with intravenous contrast shows sigmoid diverticula with wall thickening and fat stranding and a 6-cm thick-walled fluid collection in the pelvis between the sigmoid colon and the bladder; there is no free intraperitoneal air. Temperature is 38.4°C, pulse 96/min, and blood pressure 138/84 mm Hg. The abdomen is tender with guarding in the suprapubic region and left lower quadrant but is otherwise soft without rebound. Leukocyte count is 16,900/mm³ and serum lactate is 1.2 mmol/L. Intravenous ceftriaxone and metronidazole are started. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Continuation of intravenous antibiotics alone for 10 days",
+     "Emergency sigmoid resection with end colostomy",
+     "Colonoscopy to exclude sigmoid carcinoma",
+     "CT-guided percutaneous drainage of the collection",
+     "Laparoscopic peritoneal lavage and drain placement"
+    ],
+    "answer": 4,
+    "explanation": "겉모습(남자·골반 위치·배뇨 증상·다른 항생제)이 바뀌어도 결정적 단서는 같다 — 안정된 활력, 국소 압통, 유리 공기 없음, 3 cm 를 넘는 벽 뚜렷한 농양. 그래서 항생제에 CT 유도 경피 배농을 더한다. 방광 쪽 증상은 인접 염증으로 설명되고 누공 확인은 급성기 결정이 아니다. 대장내시경은 약 6주 뒤, 응급 절제·세척은 범발성 복막염에서.",
+    "of": "usmle-2026-0173",
+    "changed": "나이·성별(58세 남자), 병력(고혈압·과거 대장내시경 → 이상지질혈증), 배뇨 증상 추가, 농양 위치·크기(결장 옆 5.5 cm → 골반 쪽 6 cm), 검사 제시 순서를 바꾸고 「활력 안정·국소 압통·유리 공기 없음·3 cm 넘는 벽 뚜렷한 농양」은 그대로 → 답은 여전히 CT 유도 경피 배농",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "게실염 — 농양이 있을 때의 다음 처치",
+  "geo": {
+   "title": "게실염 — 농양이 있을 때의 다음 처치",
+   "w": 567.0,
+   "h": 596.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "좌하복부 통증·발열 + CT",
+      "급성 게실염"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "shock",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "쇼크·범발성 복막염·유리",
+      "공기?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "hartmann",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "응급 절제 — 하트만",
+      "수술(Hartmann)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 209.0
+    },
+    {
+     "id": "abscess",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "벽 뚜렷한 농양 > 3 cm?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 209.0
+    },
+    {
+     "id": "ctinfo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "조영 CT 로 농양 크기·벽·",
+      "위치 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 319.0
+    },
+    {
+     "id": "abx",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "IV 항생제 단독 + 경과 관찰"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 426.0
+    },
+    {
+     "id": "route",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "경피 접근 경로가 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 426.0
+    },
+    {
+     "id": "pcd",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "CT 유도 경피 배농 + IV",
+      "항생제"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 516.0
+    },
+    {
+     "id": "opdrain",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "수술적 배농·절제"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 516.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "shock",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "shock",
+     "to": "hartmann",
+     "points": [
+      [
+       194.3,
+       166.0
+      ],
+      [
+       194.3,
+       195.0
+      ],
+      [
+       114.0,
+       195.0
+      ],
+      [
+       114.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "shock",
+     "to": "abscess",
+     "points": [
+      [
+       259.7,
+       166.0
+      ],
+      [
+       259.7,
+       195.0
+      ],
+      [
+       340.0,
+       195.0
+      ],
+      [
+       340.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음·안정"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 230.5,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "abscess",
+     "to": "route",
+     "points": [
+      [
+       291.0,
+       256.0
+      ],
+      [
+       291.0,
+       305.0
+      ],
+      [
+       226.0,
+       305.0
+      ],
+      [
+       226.0,
+       412.0
+      ],
+      [
+       194.3,
+       412.0
+      ],
+      [
+       194.3,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 281.5,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "abscess",
+     "to": "abx",
+     "points": [
+      [
+       389.0,
+       256.0
+      ],
+      [
+       389.0,
+       305.0
+      ],
+      [
+       454.0,
+       305.0
+      ],
+      [
+       454.0,
+       412.0
+      ],
+      [
+       485.7,
+       412.0
+      ],
+      [
+       485.7,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "작음·없음"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 359.8,
+      "y": 280.0
+     }
+    },
+    {
+     "from": "abscess",
+     "to": "ctinfo",
+     "points": [
+      [
+       340.0,
+       256.0
+      ],
+      [
+       340.0,
+       319.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "영상 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "ctinfo",
+     "to": "route",
+     "points": [
+      [
+       307.3,
+       383.0
+      ],
+      [
+       307.3,
+       412.0
+      ],
+      [
+       259.7,
+       412.0
+      ],
+      [
+       259.7,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "큰 농양"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 285.0,
+      "y": 387.0
+     }
+    },
+    {
+     "from": "ctinfo",
+     "to": "abx",
+     "points": [
+      [
+       372.7,
+       383.0
+      ],
+      [
+       372.7,
+       412.0
+      ],
+      [
+       420.3,
+       412.0
+      ],
+      [
+       420.3,
+       426.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "작은 농양"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 387.0
+     }
+    },
+    {
+     "from": "route",
+     "to": "pcd",
+     "points": [
+      [
+       194.3,
+       473.0
+      ],
+      [
+       194.3,
+       502.0
+      ],
+      [
+       114.0,
+       502.0
+      ],
+      [
+       114.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 477.0
+     }
+    },
+    {
+     "from": "route",
+     "to": "opdrain",
+     "points": [
+      [
+       259.7,
+       473.0
+      ],
+      [
+       259.7,
+       502.0
+      ],
+      [
+       340.0,
+       502.0
+      ],
+      [
+       340.0,
+       516.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 477.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "좌하복부 통증·발열 + CT 급성 게실염",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "쇼크·범발성 복막염·유리 공기?"
+     }
+    ]
+   },
+   {
+    "id": "shock",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "쇼크·범발성 복막염·유리 공기?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 3,
+      "toText": "응급 절제 — 하트만 수술(Hartmann)"
+     },
+     {
+      "label": "없음·안정",
+      "to": 4,
+      "toText": "벽 뚜렷한 농양 > 3 cm?"
+     }
+    ]
+   },
+   {
+    "id": "hartmann",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "응급 절제 — 하트만 수술(Hartmann)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "abscess",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "벽 뚜렷한 농양 > 3 cm?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "경피 접근 경로가 있는가?"
+     },
+     {
+      "label": "작음·없음",
+      "to": 7,
+      "toText": "IV 항생제 단독 + 경과 관찰"
+     },
+     {
+      "label": "영상 없음",
+      "to": 5,
+      "toText": "조영 CT 로 농양 크기·벽·위치 확인"
+     }
+    ]
+   },
+   {
+    "id": "ctinfo",
+    "num": 5,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "조영 CT 로 농양 크기·벽·위치 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "큰 농양",
+      "to": 6,
+      "toText": "경피 접근 경로가 있는가?"
+     },
+     {
+      "label": "작은 농양",
+      "to": 7,
+      "toText": "IV 항생제 단독 + 경과 관찰"
+     }
+    ]
+   },
+   {
+    "id": "route",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "경피 접근 경로가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 8,
+      "toText": "CT 유도 경피 배농 + IV 항생제"
+     },
+     {
+      "label": "없음",
+      "to": 9,
+      "toText": "수술적 배농·절제"
+     }
+    ]
+   },
+   {
+    "id": "abx",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "IV 항생제 단독 + 경과 관찰",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "pcd",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "CT 유도 경피 배농 + IV 항생제",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "opdrain",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "수술적 배농·절제",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0173"
+  ],
+  "hasErrors": false
+ },
  "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
   "id": "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a",
   "title": "유두갑상선암 — 크기·갑상선외 침범·림프절 전이(cN0/cN1a/cN1b)로 수술 범위를 정한다",
@@ -20945,6 +21774,782 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-1092"
+  ],
+  "hasErrors": false
+ },
+ "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
+  "id": "cn.id.bacillary-angiomatosis.kaposi-differentiation",
+  "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
+  "objective": "진행성 HIV 환자의 붉은 자주색 결절에서 생검 조직·염색 소견으로 세균성 혈관종증(Bartonella)을 카포시육종·파종 감염과 감별한다",
+  "objectiveKind": "감별",
+  "condition": "세균성 혈관종증(bacillary angiomatosis) · 세균성 자반증(bacillary peliosis)",
+  "topic": "Infectious Disease",
+  "seeAlso": [
+   "Microbiology",
+   "Dermatology"
+  ],
+  "version": 1,
+  "updated": "2026-09-25",
+  "reviewStatus": "unreviewed",
+  "hash": "9ddc1bc38ebec090",
+  "summary": [
+   "결론: 호중구 섞인 소엽상 모세혈관 증식 + 은염색 간균 무리 = 세균성 혈관종증(Bartonella), 항생제로 낫는다.",
+   "시험 단서: CD4 < 100 + 쉽게 피 나는 붉은 자주색 결절 + 발열 + 고양이 긁힘(cat scratch) 또는 몸니·노숙.",
+   "왜: 모양은 카포시육종(Kaposi sarcoma)과 같아도 원인이 세균이라, 조직의 호중구·균이 종양과 가른다.",
+   "B. henselae = 고양이·간 자반증(peliosis hepatis), B. quintana = 몸니·노숙·뼈 용해 병변.",
+   "치료: 에리트로마이신 또는 독시사이클린 3개월(자반증은 4개월), CD4 > 200 까지 억제 치료."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 조직이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>진행성 HIV 의 붉은 자주색 결절은 <strong>모양으로 가르지 못한다</strong> — 카포시육종(Kaposi sarcoma)·화농성 육아종(pyogenic granuloma)·피하 종양·verruga peruana 가 모두 감별 대상이다 <sup>[1 172장 p.1332]</sup>.</li>\n<li>발열·체중감소·야간 발한 같은 전신 증상도 흔해 파종 감염과 겹친다. 세균성 혈관종증(bacillary angiomatosis)은 <strong>조직검사로 진단</strong>한다 <sup>[1 172장 p.1332]</sup>.</li>\n<li>감별이 치료를 바꾼다 — 세균성 혈관종증은 항생제로 낫고, 카포시육종은 ART·항암 쪽이다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 세균이 혈관 증식을 일으킨다",
+    "deep": false,
+    "html": "<p>Bartonella 는 까다롭게 자라는 세포 내 그람음성 간균이다. 면역정상인에게 B. henselae 는 고양이 긁힘 뒤 국소 림프절염(고양이 긁힘병)으로 그치지만, CD4 &lt; 100/µL 의 심한 면역저하에서는 혈관 내피를 자극해 <strong>신생혈관 증식 병변</strong>을 만든다 <sup>[1 172장 p.1328, p.1332]</sup>. 그래서 병변은 혈관종처럼 붉고 잘 부서져 피가 나며, 조직에 균 덩어리와 호중구가 섞인다. 간·비장에 가면 혈액이 찬 작은 낭(자반증, peliosis)을 만들어 간비대·ALP 상승·영상의 저음영 병변이 된다 <sup>[1 172장 p.1332]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 조직·염색이 가른다",
+    "deep": false,
+    "html": "<ul>\n<li><strong>은염색(Warthin-Starry)</strong> 에서 간균 무리 — Bartonella 는 그람 염색으로 잘 안 보인다. 배양은 대개 음성이라 음성으로 배제하지 않는다 <sup>[1 172장 p.1332]</sup>.</li>\n<li>방추세포가 없고 호중구가 있다는 것이 카포시육종과의 경계다. 항산성 염색 음성은 파종 MAC 가능성을 낮춘다.</li>\n<li>노출이 종을 가른다: 고양이·고양이 벼룩 → B. henselae(간·비장 병변은 이 종만), 몸니·노숙 → B. quintana(피하·용해성 뼈 병변이 많다) <sup>[1 172장 p.1332]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 진단이 치료를 바꾼다",
+    "deep": false,
+    "html": "<ul>\n<li>마크롤라이드 또는 독시사이클린을 <strong>오래</strong> 쓴다 — 혈관종증 3개월, 자반증 4개월 <sup>[1 172장 p.1331]</sup>.</li>\n<li>HIV 환자는 ART 를 다시 시작하고, CD4 &gt; 200/µL 까지 억제 치료를 이어 간다 <sup>[1 172장 p.1333]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>1차 예방 항생제는 권하지 않는다. 고양이 벼룩 관리·고양이 긁힘 피하기(B. henselae), 몸니 치료(B. quintana)가 예방이다 <sup>[1 172장 p.1333]</sup>.</li>\n<li>MAC 예방으로 쓰는 마크롤라이드·리파부틴과 ART 보급 뒤 발생이 줄었다 <sup>[1 172장 p.1332]</sup>.</li>\n<li>카포시육종·MAC·매독·크립토코쿠스의 세부 소견은 해리슨 이 장과 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 억제 치료를 끊는 조건</strong> — 시험 기준: CD4 &gt; 200/µL 까지 억제 치료, 재발하면 평생 <sup>[1 172장 p.1333]</sup> / 다른 기준: 미국 HIV 기회감염 지침은 CD4 &gt; 200 이 일정 기간 유지되는 등의 조건을 덧붙인다 <sup>[3†]</sup> / 왜 다른가: 교과서는 요약, 지침은 유지 기간·치료 반응까지 정한다 / 시험에서는: KMLE·USMLE 모두 「CD4 &gt; 200 까지」로 충분하다.</li>\n<li><strong>Z2 맥락 · 치료 기간 3개월 vs 4개월</strong> — 시험 기준: 피부 혈관종증 3개월, 간·비장 자반증 4개월 <sup>[1 172장 p.1331]</sup> / 다른 기준: 「최소 3개월」로 묶어 쓰는 자료가 있다 <sup>[3†]</sup> / 왜 다른가: 자반증을 따로 두는지의 차이 / 시험에서는: KMLE·USMLE 모두 기간보다 약(마크롤라이드·독시사이클린)을 묻는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "진행성 HIV 의 붉은 자주색 피부 결절 감별",
+    "columns": [
+     "질환",
+     "조직·염색",
+     "임상 단서"
+    ],
+    "rows": [
+     [
+      "세균성 혈관종증(Bartonella)",
+      "소엽상 소혈관 증식 + 커진 내피세포 + 호중구 우세 침윤, 과립성 덩어리, Warthin-Starry 은염색 간균 무리 <sup>[1 172장 p.1332]</sup>",
+      "CD4 &lt; 100, 발열·체중감소, 고양이·몸니 노출 <sup>[1 172장 p.1332]</sup>"
+     ],
+     [
+      "카포시육종(HHV-8)",
+      "방추세포 다발 + 틈새 모양 혈관 공간 + 적혈구 유출, LANA 면역염색 양성 <sup>[2†]</sup>",
+      "구강·위장관 침범이 흔하다 <sup>[3†]</sup>"
+     ],
+     [
+      "파종 MAC",
+      "항산성 염색 양성 균 <sup>[3†]</sup>",
+      "CD4 &lt; 50, 발열·간비대·ALP 상승 — 피부 결절은 드묾 <sup>[3†]</sup>"
+     ],
+     [
+      "화농성 육아종(pyogenic granuloma)",
+      "소엽상 모세혈관 증식이나 세균 없음 <sup>[2†]</sup>",
+      "면역정상인에게도 흔한 단발 병변 <sup>[1 172장 p.1332]</sup>"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "Bartonella 혈관 증식 병변의 치료(성인)",
+    "columns": [
+     "병형",
+     "치료",
+     "주의"
+    ],
+    "rows": [
+     [
+      "세균성 혈관종증",
+      "에리트로마이신 500 mg 하루 4번 또는 독시사이클린 100 mg 하루 2번, 3개월 <sup>[1 172장 p.1331]</sup>",
+      "다른 마크롤라이드도 대체 가능할 것 <sup>[1 172장 p.1331]</sup>"
+     ],
+     [
+      "세균성 자반증(간·비장)",
+      "같은 약, 4개월 <sup>[1 172장 p.1331]</sup>",
+      "영상에서 간 저음영 병변 <sup>[1 172장 p.1332]</sup>"
+     ],
+     [
+      "HIV 환자 재발 방지",
+      "마크롤라이드 또는 독시사이클린 억제 치료를 CD4 &gt; 200/µL 까지 <sup>[1 172장 p.1333]</sup>",
+      "재발하면 평생 억제가 필요할 수 있다 <sup>[1 172장 p.1333]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "카포시육종(HHV-8) vs 세균성 혈관종증",
+    "point": "둘 다 붉은 자주색 혈관성 결절이다. 카포시육종은 방추세포 다발·틈새 모양 혈관 공간이고 호중구·세균이 없다. 호중구 + 은염색 간균이면 Bartonella 다.",
+    "exception": "",
+    "cites": "<sup>[1 172장 p.1332]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "파종 MAC — 전신 소견이 같으면?",
+    "point": "CD4 &lt; 50·발열·체중감소·간비대·ALP 상승은 파종 MAC 과 겹쳐 가르지 못한다. MAC 은 항산성 염색에서 보이고 혈관 증식 결절을 만들지 않는다 — 은염색 양성·항산성 음성이면 Bartonella.",
+    "exception": "세균성 혈관종증의 결절형은 진균·마이코박테리아 감염 결절과 닮아 보인다 — 그래서 생검·염색이 필요하다.",
+    "cites": "<sup>[1 172장 p.1332]</sup> <sup>[3†]</sup>"
+   },
+   {
+    "contrast": "이차 매독 — 은염색에서 균이 보이면?",
+    "point": "매독 나선균도 은염색에 보일 수 있지만, 이차 매독은 손발바닥을 포함한 구리색 구진이고 모세혈관 증식성 결절이 아니다.",
+    "exception": "",
+    "cites": "<sup>[3†]</sup>"
+   },
+   {
+    "contrast": "파종 크립토코쿠스증 — 피부 구진 + 진행성 HIV?",
+    "point": "크립토코쿠스는 효모(간균이 아니다)이고 배꼽 모양 구진을 만든다. 혈청 크립토코쿠스 항원 음성이면 가능성이 낮다.",
+    "exception": "",
+    "cites": "<sup>[3†]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "모양·색·발열·CD4 만으로는 가르지 못한다 — 세균성 혈관종증의 결절형은 진균·마이코박테리아 감염 결절과도 닮았다. 조직검사가 진단이다.",
+   "Bartonella 는 배양이 대개 음성이다 — 배양 음성으로 배제하지 않는다. 혈액 배양은 양성일 수 있다.",
+   "간·비장 병변(자반증)은 B. henselae 만 만든다. 피하·용해성 뼈 병변은 B. quintana 에 많다.",
+   "HIV 환자는 치료 뒤 CD4 &gt; 200/µL 까지 억제 치료를 이어 간다."
+  ],
+  "criteria": [
+   {
+    "id": "ba-dx",
+    "name": "진단",
+    "kind": "진단 기준",
+    "population": "심한 면역저하(주로 CD4 < 100/µL 인 HIV)",
+    "statement": "세균성 혈관종증·자반증은 조직검사로 진단한다 — 은염색에서 간균 무리, 배양은 대개 음성, 혈액 배양은 양성일 수 있다 [[harrison-21: 172장 p.1332]]",
+    "exceptions": "혈청검사 해석은 이 정리본에서 다루지 않았다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 172: Bartonella Infections, Including Cat-Scratch Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 172장 p.1328–1333 (Table 172-1, Table 172-2, Bacillary Angiomatosis and Peliosis)",
+    "checked": "본문 대조(드라이브 172장 문서) — p.1329 Table 172-1: B. henselae(고양이, 세균성 혈관종증·자반증), B. quintana(몸니) · p.1331 Table 172-2: 세균성 혈관종증 에리트로마이신 500 mg qid 또는 독시사이클린 100 mg bid 3개월, 자반증 4개월, 다른 마크롤라이드 대체 가능 · p.1332: 심한 면역저하(HIV CD4 < 100/µL), 간·비장 병변은 B. henselae 만, 피하·용해성 뼈 병변은 B. quintana 에 많다, 고양이·고양이 벼룩 노출, MAC 예방 마크롤라이드·ART 로 발생 감소, 병변은 무통의 황갈·적·자색, 결절형은 진균·마이코박테리아 감염과 닮음, 감별에 카포시육종·화농성 육아종·피하 종양·verruga peruana, 병리 = 커진 내피세포의 소엽상 소혈관 증식 + 호중구 우세 혼합 침윤, Warthin-Starry 은염색 간균 무리, 배양 대개 음성, 조직으로 진단, 혈액 배양 양성 가능 · p.1333: 억제 치료 CD4 > 200/µL 까지, 재발 시 평생. 카포시육종의 조직 소견(방추세포·틈새 공간·LANA)·파종 MAC·매독·크립토코쿠스 소견은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "robbins-10",
+    "org": "Elsevier",
+    "title": "Robbins & Cotran Pathologic Basis of Disease, 10th ed. — Chapter 11: Blood Vessels (Vascular Tumors)",
+    "kind": "textbook",
+    "citation": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease, 10e. Ch 11",
+    "checked": "서지만(기억) — 카포시육종의 방추세포·틈새 공간·LANA 소견과 화농성 육아종 서술은 원문과 대조하지 않았다. 쪽수 없음",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "nih-oi",
+    "org": "Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents With HIV (NIH/CDC/HIVMA-IDSA)",
+    "title": "Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents With HIV — Bartonellosis; Mycobacterium avium Complex; Syphilis; Cryptococcosis",
+    "kind": "guideline",
+    "citation": "",
+    "checked": "서지만(기억) — 컨테이너가 기관 누리집·PubMed 를 막아 원문을 열지 못했다. MAC·매독·크립토코쿠스·카포시육종 임상 소견과 억제 치료 중단 세부 조건은 대조하지 않았다. 연도는 최신 개정 추정 · url 은 지침 첫 화면(기억, 열어 보지 않음)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-25",
+    "url": "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections"
+   }
+  ],
+  "checks": [
+   {
+    "q": "진행성 HIV 의 붉은 자주색 결절에서 세균성 혈관종증과 카포시육종을 가르는 조직 소견은?",
+    "a": "세균성 혈관종증 = 소엽상 소혈관 증식에 호중구 우세 침윤 + 은염색 간균 무리. 카포시육종 = 방추세포 다발·틈새 모양 혈관 공간·적혈구 유출, 세균 없음."
+   },
+   {
+    "q": "간 자반증(peliosis hepatis)이 있으면 어느 Bartonella 인가?",
+    "a": "B. henselae — 간·비장 병변은 B. henselae 만 만든다. 뼈 용해 병변은 B. quintana 쪽이다."
+   },
+   {
+    "q": "세균성 혈관종증과 자반증의 치료 기간은?",
+    "a": "에리트로마이신 또는 독시사이클린 — 혈관종증 3개월, 자반증 4개월. HIV 환자는 CD4 > 200/µL 까지 억제 치료."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.id.bacillary-angiomatosis.kaposi-differentiation#v1",
+    "context": "같은 환자 뼈대, 결정적 조직 소견만 카포시육종으로",
+    "stem": "A 41-year-old man with HIV infection who stopped antiretroviral therapy 18 months ago comes to the physician because of multiple purple skin lesions for 2 months. He has had low-grade fevers and a 3-kg weight loss. He owns two cats. Examination shows several violaceous, nonblanching plaques and nodules 0.5 to 2 cm in diameter on the trunk, legs and hard palate. His CD4+ T-lymphocyte count is 38/mm³. Biopsy of a nodule shows fascicles of spindle cells forming slit-like vascular spaces with extravasated erythrocytes and hemosiderin. There are no neutrophilic infiltrates. A Warthin-Starry silver stain and an acid-fast stain are negative. Immunohistochemical staining of the spindle cell nuclei for latency-associated nuclear antigen is positive. Which of the following is the most likely causal agent?",
+    "options": [
+     "Bartonella henselae",
+     "Human herpesvirus 8",
+     "Mycobacterium avium complex",
+     "Bartonella quintana",
+     "Epstein-Barr virus"
+    ],
+    "answer": 2,
+    "explanation": "고양이 노출·발열·CD4 38 은 그대로지만, 조직이 방추세포 다발 + 틈새 모양 혈관 공간 + 적혈구 유출이고 호중구·은염색 간균이 없으며 LANA 가 양성이다 — HHV-8 의 카포시육종이다. 고양이 노출은 조직 소견을 이기지 못한다. 경구개 병변도 카포시육종에 흔한 부위다.",
+    "of": "usmle-2026-0171",
+    "changed": "조직을 호중구·은염색 간균에서 방추세포 다발·틈새 공간·LANA 양성으로 → 정답이 Bartonella 에서 HHV-8 로",
+    "flip": true
+   },
+   {
+    "id": "cn.id.bacillary-angiomatosis.kaposi-differentiation#v2",
+    "context": "겉모습을 바꾼 같은 판단 — 응급실, 여성, 다리 병변, 영상의 간 병변",
+    "stem": "A 46-year-old woman with untreated HIV infection is brought to the emergency department because of fever, chills and night sweats for 3 weeks. She feeds several stray cats near her home. Examination shows a dozen friable, bright red papules 3 to 10 mm in diameter on both legs; one is ulcerated and bleeding. Her CD4+ T-lymphocyte count is 27/mm³ and serum alkaline phosphatase is 290 U/L. Abdominal CT shows multiple small hypodense lesions throughout the liver. Biopsy of a papule shows lobular clusters of small blood vessels lined by enlarged endothelial cells, a neutrophil-predominant infiltrate and granular amphophilic material. Spindle cell fascicles are absent. A Warthin-Starry stain shows clumps of small bacilli; Ziehl-Neelsen staining is negative. Which of the following is the most likely causal organism?",
+    "options": [
+     "Mycobacterium avium complex",
+     "Bartonella henselae",
+     "Human herpesvirus 8",
+     "Histoplasma capsulatum",
+     "Bartonella bacilliformis"
+    ],
+    "answer": 2,
+    "explanation": "다리 병변·여성·응급실·CT 간 저음영으로 겉모습은 바뀌었지만 결정적 단서 — 호중구 우세 소엽상 혈관 증식 + 은염색 간균, 방추세포 없음, 항산성 음성 — 가 그대로라 세균성 혈관종증이다. 간 병변(자반증)과 고양이 노출은 B. henselae 를 가리킨다. B. bacilliformis 는 안데스 모래파리 매개로 여행력이 없다.",
+    "of": "usmle-2026-0171",
+    "changed": "나이·성별·부위·내원 경위·간 소견 제시(촉진 → CT 저음영)를 바꾸고 조직(호중구·은염색 간균·방추세포 없음·항산성 음성)과 고양이 노출은 남김 → 정답 그대로 B. henselae",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "진행성 HIV 의 붉은 자주색 결절 — 조직으로 가르기",
+  "geo": {
+   "title": "진행성 HIV 의 붉은 자주색 결절 — 조직으로 가르기",
+   "w": 682.0,
+   "h": 531.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "진행성 HIV + 붉은 자주색",
+      "구진·결절"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 276.6,
+     "y": 16.0
+    },
+    {
+     "id": "hist",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "생검 조직·염색 소견은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 276.6,
+     "y": 102.0
+    },
+    {
+     "id": "bx",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "생검 — 은염색·항산성 염색·",
+      "LANA 염색"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 234.0
+    },
+    {
+     "id": "ks",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "카포시육종(HHV-8) — ART ±",
+      "항암"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 361.0
+    },
+    {
+     "id": "mac",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "파종 MAC 등 다른 감염 —",
+      "결절은 드묾"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 470.0,
+     "y": 234.0
+    },
+    {
+     "id": "expo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "고양이 노출·간 자반증인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 361.0
+    },
+    {
+     "id": "hens",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "B. henselae —",
+      "마크롤라이드·독시 3~4개월"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 451.0
+    },
+    {
+     "id": "quin",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "B. quintana — 뼈 병변",
+      "확인, 같은 치료"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 451.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "hist",
+     "points": [
+      [
+       374.6,
+       80.0
+      ],
+      [
+       374.6,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "hist",
+     "to": "expo",
+     "points": [
+      [
+       315.8,
+       149.0
+      ],
+      [
+       315.8,
+       211.0
+      ],
+      [
+       226.0,
+       211.0
+      ],
+      [
+       226.0,
+       347.0
+      ],
+      [
+       194.3,
+       347.0
+      ],
+      [
+       194.3,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "호중구·",
+       "은염색 간균"
+      ],
+      "w": 66.7,
+      "h": 30,
+      "x": 282.4,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "hist",
+     "to": "ks",
+     "points": [
+      [
+       394.2,
+       149.0
+      ],
+      [
+       394.2,
+       220.0
+      ],
+      [
+       454.0,
+       220.0
+      ],
+      [
+       454.0,
+       347.0
+      ],
+      [
+       485.7,
+       347.0
+      ],
+      [
+       485.7,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "방추세포·",
+       "틈새"
+      ],
+      "w": 58.4,
+      "h": 30,
+      "x": 365.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "hist",
+     "to": "mac",
+     "points": [
+      [
+       433.4,
+       149.0
+      ],
+      [
+       433.4,
+       211.0
+      ],
+      [
+       568.0,
+       211.0
+      ],
+      [
+       568.0,
+       234.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "항산균 양성"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 400.0,
+      "y": 186.0
+     }
+    },
+    {
+     "from": "hist",
+     "to": "bx",
+     "points": [
+      [
+       355.0,
+       149.0
+      ],
+      [
+       355.0,
+       211.0
+      ],
+      [
+       340.0,
+       211.0
+      ],
+      [
+       340.0,
+       234.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "생검 전"
+      ],
+      "w": 44.7,
+      "h": 17,
+      "x": 332.6,
+      "y": 186.0
+     }
+    },
+    {
+     "from": "bx",
+     "to": "expo",
+     "points": [
+      [
+       307.3,
+       298.0
+      ],
+      [
+       307.3,
+       347.0
+      ],
+      [
+       259.7,
+       347.0
+      ],
+      [
+       259.7,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "간균 있으면"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 274.0,
+      "y": 302.0
+     }
+    },
+    {
+     "from": "bx",
+     "to": "ks",
+     "points": [
+      [
+       372.7,
+       298.0
+      ],
+      [
+       372.7,
+       347.0
+      ],
+      [
+       420.3,
+       347.0
+      ],
+      [
+       420.3,
+       361.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "LANA 양성"
+      ],
+      "w": 59.3,
+      "h": 17,
+      "x": 343.0,
+      "y": 322.0
+     }
+    },
+    {
+     "from": "expo",
+     "to": "hens",
+     "points": [
+      [
+       194.3,
+       408.0
+      ],
+      [
+       194.3,
+       437.0
+      ],
+      [
+       114.0,
+       437.0
+      ],
+      [
+       114.0,
+       451.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 412.0
+     }
+    },
+    {
+     "from": "expo",
+     "to": "quin",
+     "points": [
+      [
+       259.7,
+       408.0
+      ],
+      [
+       259.7,
+       437.0
+      ],
+      [
+       340.0,
+       437.0
+      ],
+      [
+       340.0,
+       451.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "몸니·노숙"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 230.5,
+      "y": 412.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "진행성 HIV + 붉은 자주색 구진·결절",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "생검 조직·염색 소견은?"
+     }
+    ]
+   },
+   {
+    "id": "hist",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "생검 조직·염색 소견은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "호중구·은염색 간균",
+      "to": 5,
+      "toText": "고양이 노출·간 자반증인가?"
+     },
+     {
+      "label": "방추세포·틈새",
+      "to": 6,
+      "toText": "카포시육종(HHV-8) — ART ± 항암"
+     },
+     {
+      "label": "항산균 양성",
+      "to": 3,
+      "toText": "파종 MAC 등 다른 감염 — 결절은 드묾"
+     },
+     {
+      "label": "생검 전",
+      "to": 4,
+      "toText": "생검 — 은염색·항산성 염색·LANA 염색"
+     }
+    ]
+   },
+   {
+    "id": "mac",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "파종 MAC 등 다른 감염 — 결절은 드묾",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bx",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "생검 — 은염색·항산성 염색·LANA 염색",
+    "note": "",
+    "branches": [
+     {
+      "label": "간균 있으면",
+      "to": 5,
+      "toText": "고양이 노출·간 자반증인가?"
+     },
+     {
+      "label": "LANA 양성",
+      "to": 6,
+      "toText": "카포시육종(HHV-8) — ART ± 항암"
+     }
+    ]
+   },
+   {
+    "id": "expo",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "고양이 노출·간 자반증인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 7,
+      "toText": "B. henselae — 마크롤라이드·독시 3~4개월"
+     },
+     {
+      "label": "몸니·노숙",
+      "to": 8,
+      "toText": "B. quintana — 뼈 병변 확인, 같은 치료"
+     }
+    ]
+   },
+   {
+    "id": "ks",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "카포시육종(HHV-8) — ART ± 항암",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hens",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "B. henselae — 마크롤라이드·독시 3~4개월",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "quin",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "B. quintana — 뼈 병변 확인, 같은 치료",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0171"
   ],
   "hasErrors": false
  },
@@ -25518,6 +27123,847 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0083"
+  ],
+  "hasErrors": false
+ },
+ "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
+  "id": "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation",
+  "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
+  "objective": "임신 3분기 간효소 상승 환자에서 간 합성 기능 부전과 미세혈관병성 용혈 소견으로 급성 임신 지방간과 HELLP 증후군을 감별한다",
+  "objectiveKind": "감별",
+  "condition": "급성 임신 지방간(acute fatty liver of pregnancy, AFLP)",
+  "topic": "Obstetrics & Gynecology",
+  "seeAlso": [
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-09-25",
+  "reviewStatus": "unreviewed",
+  "hash": "2bd258b0b9896f0f",
+  "summary": [
+   "결론: 3분기 간효소 상승에 저혈당·INR 연장·섬유소원 저하·뇌증이 앞서면 HELLP 가 아니라 급성 임신 지방간이다.",
+   "시험 단서: 35주 전후 구토·상복부 통증·황달·갈증 + 혈당↓·INR↑, 분열적혈구 없음 = AFLP(acute fatty liver).",
+   "왜: AFLP 는 간세포 자체가 지방으로 기능을 잃고, HELLP 는 내피 손상으로 적혈구가 깨지는 병이다.",
+   "HELLP 의 중심은 용혈(분열적혈구·LDH 상승)·혈소판감소와 전자간증 — 합성 기능은 대개 늦게까지 남는다.",
+   "치료는 둘 다 모체 안정(포도당·혈장·혈액제제) 뒤 분만 — 감별은 치료보다 원인·신생아 검사를 바꾼다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 HELLP가 아니라 급성 임신 지방간인가",
+    "deep": false,
+    "html": "<ul>\n<li>두 질환은 3분기·상복부 통증·간효소 상승·혈소판감소를 공유하므로 <strong>공통 소견으로는 가르지 못한다</strong>.</li>\n<li>급성 임신 지방간(AFLP)은 <strong>간세포 자체가 기능을 잃는</strong> 병이다 — 저혈당, 빌리루빈·암모니아의 뚜렷한 상승이 해리슨이 드는 구별점이다 <sup>[1 479장 p.3767]</sup>. INR 연장·섬유소원 저하·뇌증도 같은 간부전의 표현이다 <sup>[2†]</sup>.</li>\n<li>HELLP 증후군(hemolysis, elevated liver enzymes, low platelets)은 <strong>중증 전자간증의 특수 아형</strong>이다 <sup>[1 479장 p.3763]</sup> — 중심은 내피 손상에 따른 미세혈관병성 용혈과 혈소판 소모다.</li>\n<li>그래서 「간부전이 앞서고 용혈·고혈압이 약하다」면 AFLP, 「용혈이 뚜렷하고 합성 기능이 남아 있다」면 HELLP 로 기운다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 지방산 산화에서 간부전으로",
+    "deep": false,
+    "html": "<p>정상 간은 공복에 글리코겐 분해·당신생으로 혈당을 지키고, 응고인자·섬유소원을 만들고, 암모니아를 요소로 바꾸고, 빌리루빈을 포합해 내보낸다. AFLP 에서는 간세포에 미세수포 지방이 쌓여 이 기능들이 한꺼번에 떨어진다 → 저혈당, INR 연장·섬유소원 저하, 암모니아 상승·뇌증, 고빌리루빈혈증 <sup>[1 479장 p.3767]</sup>. 태아의 긴사슬 지방산 β산화 결함(LCHAD 결핍)이 있으면 태아·태반 쪽 지방산 대사물이 모체 간에 부담을 준다는 연관이 알려져 있다 <sup>[2†]</sup>. 갈증·다뇨(일과성 요붕증)와 급성 신손상이 동반될 수 있다 <sup>[2†]</sup>.\nHELLP 는 태반의 항혈관신생 인자 과잉과 내피 손상에서 시작한다 <sup>[1 479장 p.3763]</sup> → 손상된 미세혈관을 지나는 적혈구가 깨지고(분열적혈구·LDH 상승) 혈소판이 소모되며, 간 문맥주위 괴사로 효소가 오른다. 응고장애는 진행된 합병증이다 <sup>[1 479장 p.3763]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 간부전인가, 용혈인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>간부전 쪽</strong>: 혈당, INR, 섬유소원, 암모니아, 의식. 임신 중 섬유소원은 원래 높아야 하므로 「정상 하한」도 이미 낮은 값이다.</li>\n<li><strong>용혈 쪽</strong>: 말초혈액 도말의 분열적혈구, LDH, 혈소판. 분열적혈구가 없으면 HELLP·TTP 가 모두 멀어진다.</li>\n<li><strong>전자간증 쪽</strong>: 중증 소견은 혈압 ≥ 160/110 mmHg, 혈소판 &lt; 100 × 10⁹/L, 크레아티닌 &gt; 1.1 mg/dL, 트랜스아미나제 정상의 2배 <sup>[1 479장 p.3763]</sup>. 혈압이 낮다고 HELLP 를 배제하지는 않는다.</li>\n<li>가려움 + 담즙산 상승이면 임신 담즙정체, 혈청검사 양성이면 바이러스 간염 — 표 참고.</li>\n</ul>"
+   },
+   {
+    "title": "처치 — 둘 다 안정 후 분만",
+    "deep": false,
+    "html": "<ul>\n<li>AFLP: 분만 + 보존 치료 <sup>[1 479장 p.3767]</sup> — 포도당, 신선동결혈장·동결침전제제·혈소판 등으로 교정 <sup>[2†]</sup>. 산후 신생아 지방산 산화 결함 검사, 다음 임신 재발 상담 <sup>[2†]</sup>.</li>\n<li>HELLP: 중증 전자간증에 준해 분만이 결정적 치료다 <sup>[1 479장 p.3763]</sup>.</li>\n<li>재평가: 분만 뒤 혈당·INR·의식·신기능이 회복되는지 본다 — 회복이 늦으면 간이식 센터 논의가 필요할 수 있다 <sup>[2†]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>감별은 처치(분만)를 바꾸지 않는 경우가 많다 — 시험에서는 진단명을 묻고, 실제에서는 교정·분만을 미루지 않는다.</li>\n<li>HELLP 의 LDH 기준값(흔히 ≥ 600 U/L)과 Swansea 기준(6개 이상)은 원문을 대조하지 않았다(검토 항목) <sup>[2†]</sup> <sup>[3†]</sup>.</li>\n<li>임신 담즙정체의 분만 시기를 담즙산 수치로 세분하는 권고는 이 정리본에서 대조하지 않았다. 해리슨은 37주까지 분만으로 적는다 <sup>[1 479장 p.3767]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · AFLP 와 HELLP 는 겹치는 스펙트럼</strong> — 시험 기준: 저혈당·빌리루빈·암모니아 상승(간부전)이 앞서면 AFLP <sup>[1 479장 p.3767]</sup> / 다른 기준: 해리슨은 AFLP 를 HELLP·전자간증과 같은 스펙트럼에 두고, 응고장애를 전자간증의 말단장기 합병증으로도 적는다 <sup>[1 479장 p.3763]</sup> / 왜 다른가: 두 질환이 한 환자에서 겹쳐 나타날 수 있어 응고장애 하나로는 가르지 못한다 / 시험에서는: KMLE · USMLE 모두 조합(간부전 + 용혈 약함 → AFLP, 용혈 + 중증 고혈압 → HELLP)으로 묻고, 치료는 둘 다 분만이라 답이 갈리지 않는다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "임신 3분기 간효소 상승 감별",
+    "columns": [
+     "질환",
+     "중심 병리",
+     "가르는 소견",
+     "처치"
+    ],
+    "rows": [
+     [
+      "급성 임신 지방간(AFLP)",
+      "간세포 미세수포 지방증 → 간부전",
+      "빌리루빈·암모니아 뚜렷이 상승, 저혈당 <sup>[1 479장 p.3767]</sup> · INR↑·섬유소원↓·뇌증·갈증·급성 신손상 <sup>[2†]</sup>",
+      "안정 후 분만 + 보존 치료 <sup>[1 479장 p.3767]</sup> · 신생아 지방산 산화 검사 <sup>[2†]</sup>"
+     ],
+     [
+      "HELLP 증후군",
+      "전자간증의 중증 아형 — 내피 손상·미세혈관병성 용혈 <sup>[1 479장 p.3763]</sup>",
+      "분열적혈구·LDH 상승·혈소판감소, 대개 고혈압·단백뇨 <sup>[2†]</sup>",
+      "안정 후 분만(전자간증 중증에 준함) <sup>[1 479장 p.3763]</sup>"
+     ],
+     [
+      "임신 담즙정체",
+      "담즙 대사 변화",
+      "3분기 심한 가려움 + 담즙산 상승, 간효소는 있거나 없음 <sup>[1 479장 p.3767]</sup>",
+      "우르소디올, 태아 감시, 37주까지 분만 <sup>[1 479장 p.3767]</sup>"
+     ],
+     [
+      "급성 바이러스 간염",
+      "바이러스성 간세포 손상",
+      "시기 무관, 혈청검사 양성",
+      "원인별"
+     ],
+     [
+      "TTP",
+      "ADAMTS13 결핍 미세혈전",
+      "분열적혈구 필수, INR 정상이 전형",
+      "혈장교환"
+     ]
+    ],
+    "note": "LDH 의 HELLP 기준값(흔히 ≥ 600 U/L)은 이 정리본에서 원문 대조하지 않았다 <sup>[2†]</sup>."
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "HELLP 증후군 vs 급성 임신 지방간",
+    "point": "같은 3분기·상복부 통증·간효소 상승·혈소판감소를 공유한다. 가르는 것은 간 합성 기능(혈당·INR·섬유소원·암모니아)과 용혈(분열적혈구·LDH)이다 — 간부전이 앞서고 용혈이 약하면 AFLP.",
+    "exception": "두 질환은 같은 스펙트럼에 있어 겹칠 수 있고, HELLP 도 진행하면 파종혈관내응고로 응고장애가 온다 — 한 소견이 아니라 조합으로 본다.",
+    "cites": "<sup>[1 479장 p.3763]</sup> <sup>[1 479장 p.3767]</sup>"
+   },
+   {
+    "contrast": "임신 담즙정체 vs 급성 임신 지방간",
+    "point": "임신 담즙정체(intrahepatic cholestasis)는 심한 가려움과 담즙산 상승이 핵심이고 간부전을 만들지 않는다. 가려움 없이 저혈당·응고장애가 있으면 담즙정체가 아니다.",
+    "exception": "",
+    "cites": "<sup>[1 479장 p.3767]</sup>"
+   },
+   {
+    "contrast": "급성 바이러스 간염 vs 급성 임신 지방간",
+    "point": "바이러스 간염도 황달·간부전을 만들지만 시기와 무관하고 혈청검사로 가른다. 혈청검사 음성 + 3분기 + 갈증·저혈당 조합은 AFLP 쪽이다.",
+    "exception": "E형 간염은 임신 중 중증이 될 수 있어 흔한 A·B·C형이 음성이면 필요 시 추가 검사한다 <sup>[2†]</sup>.",
+    "cites": ""
+   },
+   {
+    "contrast": "혈전혈소판감소자색반(TTP) vs 급성 임신 지방간",
+    "point": "TTP 는 미세혈관병성 용혈이 필수라 분열적혈구가 있어야 하고, 응고인자 합성은 보존돼 INR 이 정상인 것이 전형이다. 분열적혈구 없음 + INR 연장은 TTP 보다 간부전이다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "AFLP 와 HELLP 는 겹칠 수 있다 — 간부전과 용혈이 함께 있으면 둘 다 분만이 치료라 처치는 같고, AFLP 면 신생아 지방산 산화 검사를 더한다.",
+   "HELLP 도 진행하면 파종혈관내응고로 INR·섬유소원이 나빠진다 — 간부전 갈래는 용혈이 약할 때의 판단이다.",
+   "HELLP 의 약 15 % 는 고혈압이 없다고 알려져 있어 혈압이 낮다는 것만으로 배제하지 않는다(원문 미대조).",
+   "분열적혈구는 HELLP·TTP 모두에서 필요한 소견 — 없으면 둘 다 가능성이 낮아진다."
+  ],
+  "criteria": [
+   {
+    "id": "aflp-vs-hellp",
+    "name": "AFLP 를 가르는 소견",
+    "kind": "감별 기준",
+    "population": "임신 3분기 간효소 상승 산모",
+    "statement": "급성 임신 지방간은 빌리루빈·암모니아의 뚜렷한 상승과 저혈당으로 구별된다(해리슨은 HELLP·전자간증과 같은 스펙트럼에 둔다) [[harrison-21: 479장 p.3767]]",
+    "exceptions": "HELLP 도 진행하면 응고장애가 생긴다 [[harrison-21: 479장 p.3763]] — 용혈·고혈압 동반 여부를 함께 본다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "aflp-management",
+    "name": "치료",
+    "kind": "치료 권고",
+    "population": "급성 임신 지방간",
+    "statement": "분만과 보존 치료(포도당·혈장·혈액제제로 교정) [[harrison-21: 479장 p.3767]]",
+    "exceptions": "신생아 LCHAD 등 지방산 산화 결함 검사, 다음 임신 재발 상담 [[?acg-2016]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 479: Medical Disorders During Pregnancy",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 479장 p.3763(Preeclampsia · HELLP), p.3767(Gastrointestinal and Liver Disease)",
+    "checked": "본문 대조(드라이브 479장 문서) — p.3763: 전자간증 중증 소견(혈압 ≥160/110, 혈소판 <100×10⁹/L, 크레아티닌 >1.1, 트랜스아미나제 2배), HELLP 는 중증 전자간증의 특수 아형, 응고장애·간피막 파열은 전자간증의 말단장기 합병증, 내피 손상(항혈관신생 인자) 기전, 분만이 결정적 치료. p.3767: 임신 담즙정체는 3분기 심한 가려움 + 담즙산 상승, 37주까지 분만·우르소디올; 급성 임신 지방간은 드문 합병증으로 HELLP·전자간증과 같은 스펙트럼, 빌리루빈·암모니아의 뚜렷한 상승과 저혈당으로 구별, 치료는 분만 + 보존 치료. 해리슨에 없는 것: AFLP 의 INR·섬유소원·요붕증·신손상, LCHAD 연관, Swansea 기준, HELLP 의 LDH 기준값·분열적혈구 서술, TTP 감별",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "acg-2016",
+    "org": "American College of Gastroenterology (Tran TT, Ahn J, Reau NS)",
+    "title": "ACG Clinical Guideline: Liver Disease and Pregnancy",
+    "kind": "guideline",
+    "citation": "Am J Gastroenterol 2016;111(2):176-194",
+    "checked": "서지만(기억·문항 출처 인용 — 이 컨테이너는 PubMed·doi.org 를 막아 원문·PMID 를 확인하지 못했다). AFLP 의 응고장애·저혈당·신생아 LCHAD 검사, HELLP 의 LDH 기준 서술은 원문 미대조",
+    "doi": "10.1038/ajg.2015.430",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2016",
+    "checkedAt": "2026-09-25",
+    "url": "https://doi.org/10.1038/ajg.2015.430"
+   },
+   {
+    "id": "chng-2002",
+    "org": "Ch'ng CL, Morgan M, Hainsworth I, Kingham JG",
+    "title": "Prospective study of liver dysfunction in pregnancy in Southwest Wales",
+    "kind": "other",
+    "citation": "Gut 2002;51(6):876-880",
+    "checked": "서지만(기억 — Swansea 기준의 출처. 원문·PMID 미확인)",
+    "doi": "10.1136/gut.51.6.876",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2002",
+    "checkedAt": "2026-09-25",
+    "url": "https://doi.org/10.1136/gut.51.6.876"
+   }
+  ],
+  "checks": [
+   {
+    "q": "임신 35주 간효소 상승 환자에서 AFLP 를 HELLP 와 가르는 검사 소견 세 가지는?",
+    "a": "저혈당, INR 연장·섬유소원 저하(응고인자 합성 저하), 빌리루빈·암모니아의 뚜렷한 상승 — 간 합성 기능 부전. HELLP 는 분열적혈구·LDH 상승(용혈)과 혈소판감소가 중심."
+   },
+   {
+    "q": "AFLP 와 HELLP 의 치료는 어떻게 다른가?",
+    "a": "치료 원칙은 같다 — 모체 안정(포도당·혈장·혈액제제) 뒤 분만. AFLP 면 신생아 지방산 산화 결함(LCHAD) 검사와 재발 상담을 더한다."
+   },
+   {
+    "q": "가려움이 심하고 담즙산이 오른 3분기 산모 — AFLP 인가?",
+    "a": "아니다. 임신 담즙정체다. 간부전을 만들지 않고, 우르소디올·태아 감시·37주까지 분만."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 용혈과 중증 고혈압",
+    "stem": "A 31-year-old primigravid woman at 34 weeks' gestation comes to the emergency department because of epigastric and right upper quadrant pain and nausea for 1 day. She has had a mild headache since this morning. Her pregnancy had been uncomplicated, and her blood pressure was 118/74 mm Hg 2 weeks ago. Temperature is 36.9°C, pulse is 96/min, respirations are 18/min, and blood pressure is 168/110 mm Hg on two readings 15 minutes apart. She is alert and not jaundiced. There is right upper quadrant tenderness. The fetal heart rate is 145/min. Laboratory studies show hemoglobin 9.8 g/dL, leukocyte count 12,000/mm³, platelet count 72,000/mm³, AST 210 U/L, ALT 180 U/L, total bilirubin 1.6 mg/dL, glucose 94 mg/dL, INR 1.0, fibrinogen 420 mg/dL, creatinine 0.9 mg/dL, and LDH 900 U/L. Urine dipstick shows 3+ protein. A peripheral blood smear shows schistocytes. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Acute fatty liver of pregnancy",
+     "Intrahepatic cholestasis of pregnancy",
+     "HELLP syndrome",
+     "Acute viral hepatitis",
+     "Thrombotic thrombocytopenic purpura"
+    ],
+    "answer": 3,
+    "explanation": "중증 범위 혈압(≥160/110)·단백뇨 3+ 의 전자간증 위에 분열적혈구·LDH 900(용혈), 혈소판 72,000, AST/ALT 상승이 겹쳤다 = HELLP 증후군. 혈당·INR·섬유소원이 정상이라 간 합성 기능은 보존돼 있어 AFLP 가 아니다. TTP 도 분열적혈구가 있지만 중증 고혈압·단백뇨와 3분기 간효소 상승의 조합은 HELLP 쪽이다. 원래 문항은 용혈이 없고 간부전이 앞섰다 — 간부전 대 용혈이 답을 바꾼다.",
+    "of": "usmle-2026-0175",
+    "changed": "혈압 138/86·요단백 미량·분열적혈구 없음·LDH 420·혈당 52·INR 1.9·섬유소원 110 을 혈압 168/110·요단백 3+·분열적혈구 있음·LDH 900·혈당·INR·섬유소원 정상으로 바꿈 → 간부전 없이 용혈+중증 전자간증이 중심이므로 답이 급성 임신 지방간에서 HELLP 증후군으로 바뀜",
+    "flip": true
+   },
+   {
+    "id": "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 산전 진찰에서 의뢰된 경산부",
+    "stem": "A 37-year-old woman, gravida 3, para 2, at 36 weeks' gestation is referred from a routine prenatal visit because of 4 days of anorexia, nausea and vomiting. She reports drinking large amounts of water and waking at night to urinate. She has no itching, headache or visual changes. She takes no medications other than a prenatal vitamin. Temperature is 37.0°C, pulse is 100/min, respirations are 18/min, and blood pressure is 134/84 mm Hg. Her sclerae are icteric, and she is slow to answer questions but oriented. The abdomen is mildly tender in the right upper quadrant. The fetal heart rate is 140/min. Laboratory studies show platelet count 118,000/mm³, AST 260 U/L, ALT 240 U/L, total bilirubin 6.4 mg/dL, glucose 48 mg/dL, INR 2.0, fibrinogen 120 mg/dL, creatinine 1.6 mg/dL, and LDH 380 U/L. Urine dipstick shows trace protein. A peripheral blood smear shows no schistocytes. Serologic tests for hepatitis A, B and C are negative. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Thrombotic thrombocytopenic purpura",
+     "HELLP syndrome",
+     "Acute viral hepatitis",
+     "Acute fatty liver of pregnancy",
+     "Intrahepatic cholestasis of pregnancy"
+    ],
+    "answer": 4,
+    "explanation": "환자의 나이·산과력·내원 경위는 바뀌었지만 결정적 단서 — 저혈당 48·INR 2.0·섬유소원 120·느린 반응(간부전), 다음다뇨(요붕증), 분열적혈구 없음·LDH 380(용혈 약함), 경한 혈압·미량 단백뇨, 간염 혈청검사 음성 — 은 그대로다. 간 합성 기능 부전이 앞서므로 여전히 급성 임신 지방간이다.",
+    "of": "usmle-2026-0175",
+    "changed": "나이·산과력(37세 경산부, 36주)·내원 경위(산전 진찰에서 식욕부진·구토로 의뢰)·증상 제시 순서와 보기 순서를 바꾸고, 저혈당·INR 연장·섬유소원 저하·분열적혈구 없음·경한 혈압은 그대로 → 답은 여전히 급성 임신 지방간",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "임신 3분기 간효소 상승 — 간부전인가, 용혈인가",
+  "geo": {
+   "title": "임신 3분기 간효소 상승 — 간부전인가, 용혈인가",
+   "w": 906.0,
+   "h": 592.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "3분기 구토·상복부 통증·",
+      "황달, AST/ALT 상승"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "itch",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "심한 가려움이 주증상,",
+      "간부전 없음?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "icp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "임신 담즙정체 — 담즙산 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 209.0
+    },
+    {
+     "id": "labs",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "혈당·INR·섬유소원·도말·",
+      "LDH 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 209.0
+    },
+    {
+     "id": "synth",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "저혈당·INR↑·섬유소원↓·",
+      "뇌증?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 295.0
+    },
+    {
+     "id": "viral",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "간염 혈청검사 양성?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 193.4,
+     "y": 422.0
+    },
+    {
+     "id": "hep",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "급성 바이러스 간염"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 512.0
+    },
+    {
+     "id": "aflp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "급성 임신 지방간 → 안정 후",
+      "분만"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 512.0
+    },
+    {
+     "id": "hemo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "분열적혈구·LDH↑·혈소판↓?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 516.6,
+     "y": 422.0
+    },
+    {
+     "id": "hellp",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "HELLP 증후군 → 안정 후 분만"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 468.0,
+     "y": 512.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "다른 원인 — 전자간증·담도",
+      "질환 재평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 694.0,
+     "y": 512.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "itch",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "itch",
+     "to": "icp",
+     "points": [
+      [
+       307.3,
+       166.0
+      ],
+      [
+       307.3,
+       195.0
+      ],
+      [
+       227.0,
+       195.0
+      ],
+      [
+       227.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "itch",
+     "to": "labs",
+     "points": [
+      [
+       372.7,
+       166.0
+      ],
+      [
+       372.7,
+       195.0
+      ],
+      [
+       453.0,
+       195.0
+      ],
+      [
+       453.0,
+       209.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "labs",
+     "to": "synth",
+     "points": [
+      [
+       453.0,
+       273.0
+      ],
+      [
+       453.0,
+       295.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "synth",
+     "to": "viral",
+     "points": [
+      [
+       420.3,
+       359.0
+      ],
+      [
+       420.3,
+       408.0
+      ],
+      [
+       291.4,
+       408.0
+      ],
+      [
+       291.4,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "간부전 있음"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 387.0,
+      "y": 363.0
+     }
+    },
+    {
+     "from": "synth",
+     "to": "hemo",
+     "points": [
+      [
+       485.7,
+       359.0
+      ],
+      [
+       485.7,
+       408.0
+      ],
+      [
+       614.6,
+       408.0
+      ],
+      [
+       614.6,
+       422.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "간부전 없음"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 452.3,
+      "y": 383.0
+     }
+    },
+    {
+     "from": "viral",
+     "to": "hep",
+     "points": [
+      [
+       258.8,
+       469.0
+      ],
+      [
+       258.8,
+       498.0
+      ],
+      [
+       114.0,
+       498.0
+      ],
+      [
+       114.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "양성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 243.8,
+      "y": 473.0
+     }
+    },
+    {
+     "from": "viral",
+     "to": "aflp",
+     "points": [
+      [
+       324.1,
+       469.0
+      ],
+      [
+       324.1,
+       498.0
+      ],
+      [
+       340.0,
+       498.0
+      ],
+      [
+       340.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 309.1,
+      "y": 473.0
+     }
+    },
+    {
+     "from": "hemo",
+     "to": "hellp",
+     "points": [
+      [
+       581.9,
+       469.0
+      ],
+      [
+       581.9,
+       498.0
+      ],
+      [
+       566.0,
+       498.0
+      ],
+      [
+       566.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 566.9,
+      "y": 473.0
+     }
+    },
+    {
+     "from": "hemo",
+     "to": "other",
+     "points": [
+      [
+       647.2,
+       469.0
+      ],
+      [
+       647.2,
+       498.0
+      ],
+      [
+       792.0,
+       498.0
+      ],
+      [
+       792.0,
+       512.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 632.2,
+      "y": 473.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "3분기 구토·상복부 통증·황달, AST/ALT 상승",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "심한 가려움이 주증상, 간부전 없음?"
+     }
+    ]
+   },
+   {
+    "id": "itch",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "심한 가려움이 주증상, 간부전 없음?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 3,
+      "toText": "임신 담즙정체 — 담즙산 확인"
+     },
+     {
+      "label": "아니오",
+      "to": 4,
+      "toText": "혈당·INR·섬유소원·도말·LDH 확인"
+     }
+    ]
+   },
+   {
+    "id": "icp",
+    "num": 3,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "임신 담즙정체 — 담즙산 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "labs",
+    "num": 4,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "혈당·INR·섬유소원·도말·LDH 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 5,
+      "toText": "저혈당·INR↑·섬유소원↓·뇌증?"
+     }
+    ]
+   },
+   {
+    "id": "synth",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "저혈당·INR↑·섬유소원↓·뇌증?",
+    "note": "",
+    "branches": [
+     {
+      "label": "간부전 있음",
+      "to": 6,
+      "toText": "간염 혈청검사 양성?"
+     },
+     {
+      "label": "간부전 없음",
+      "to": 7,
+      "toText": "분열적혈구·LDH↑·혈소판↓?"
+     }
+    ]
+   },
+   {
+    "id": "viral",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "간염 혈청검사 양성?",
+    "note": "",
+    "branches": [
+     {
+      "label": "양성",
+      "to": 8,
+      "toText": "급성 바이러스 간염"
+     },
+     {
+      "label": "음성",
+      "to": 9,
+      "toText": "급성 임신 지방간 → 안정 후 분만"
+     }
+    ]
+   },
+   {
+    "id": "hemo",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "분열적혈구·LDH↑·혈소판↓?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 10,
+      "toText": "HELLP 증후군 → 안정 후 분만"
+     },
+     {
+      "label": "없음",
+      "to": 11,
+      "toText": "다른 원인 — 전자간증·담도 질환 재평가"
+     }
+    ]
+   },
+   {
+    "id": "hep",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "급성 바이러스 간염",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "aflp",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "급성 임신 지방간 → 안정 후 분만",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "hellp",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "HELLP 증후군 → 안정 후 분만",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 11,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "다른 원인 — 전자간증·담도 질환 재평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0175"
   ],
   "hasErrors": false
  },
@@ -32451,7 +34897,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "감별",
     "deep": false,
-    "html": "<ul>\n<li><strong>분지망막정맥폐쇄</strong>: 한 사분면(흔히 위이측)만, 동정맥 교차부에서.</li>\n<li><strong>당뇨망막병증</strong>: 양측, 미세동맥류·경성삼출물, 혈당 이상.</li>\n<li><strong>고혈압망막병증(악성)</strong>: 양측, 혈압 매우 높음, 유두부종 양측.</li>\n<li><strong>중심망막동맥폐쇄</strong>: 체리붉은 반점·창백한 망막, 출혈이 적다(<code>cn.ophth.crao.arteritic-workup</code>).</li>\n<li>합병증의 감별은 위 표 — 기전이 다른 병은 CRVO 의 추적 대상이 아니다.</li>\n</ul>"
+    "html": "<ul>\n<li><strong>분지망막정맥폐쇄</strong>: 한 사분면(흔히 위이측)만, 동정맥 교차부에서.</li>\n<li><strong>당뇨망막병증</strong>: 양측, 미세동맥류·경성삼출물, 혈당 이상.</li>\n<li><strong>고혈압망막병증(악성)</strong>: 양측, 혈압 매우 높음, 유두부종 양측.</li>\n<li><strong>중심망막동맥폐쇄</strong>: 체리붉은 반점·창백한 망막, 출혈이 적다(「망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다」).</li>\n<li>합병증의 감별은 위 표 — 기전이 다른 병은 CRVO 의 추적 대상이 아니다.</li>\n</ul>"
    },
    {
     "title": "검사",
@@ -38635,6 +41081,687 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
+  "id": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis",
+  "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
+  "objective": "경피증 신장 위기의 신장 조직 소견을 소동맥의 동심성 내막 증식(양파 껍질)으로 설명한다",
+  "objectiveKind": "기전",
+  "condition": "경피증 신장 위기(scleroderma renal crisis) — 과형성 세동맥경화",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Pathology",
+   "Nephrology"
+  ],
+  "version": 1,
+  "updated": "2026-09-25",
+  "reviewStatus": "unreviewed",
+  "hash": "33d260aafcb19b4f",
+  "summary": [
+   "결론: 경피증 신장 위기의 신장 병변은 엽간·궁상 동맥의 동심성 내막 증식(양파 껍질)과 수입 세동맥 섬유소양 괴사다.",
+   "시험 단서: 미만성 전신경화증 초기 + 스테로이드 뒤 급성 고혈압·AKI + 분열적혈구(schistocytes), 요침사는 조용하다.",
+   "왜: 소동맥이 좁아져 신관류↓ → 레닌·안지오텐신 II↑ → 혈관 수축·고혈압의 악순환 — 사구체 염증이 아니다.",
+   "초자양 세동맥경화(hyaline)는 수년간의 경도 고혈압·당뇨 병변이고, 반달체는 활동성 요침사의 사구체신염이다."
+  ],
+  "sections": [
+   {
+    "title": "기전 — 정상 소동맥에서 양파 껍질로",
+    "deep": false,
+    "html": "<p>정상 신장에서는 엽간·궁상 동맥과 수입 세동맥(afferent arteriole)이 사구체 관류를 맞추고, 수입 세동맥 벽의 사구체곁 세포(juxtaglomerular cells)가 관류압이 떨어지면 레닌을 낸다.</p>\n<ul>\n<li>전신경화증(systemic sclerosis)의 기본 병변은 <strong>폐쇄성 혈관병증</strong>이다: 내피 손상 → 근내막 세포(myointimal cells)가 쌓이고 기저막이 두꺼워지며, 내막·중막 비후로 내강이 점차 막힌다 <sup>[1 360장 p.2774]</sup>.</li>\n<li>신장 위기에서는 수입 세동맥의 <strong>급성 섬유소양 괴사</strong>(fibrinoid necrosis)가 먼저 오고, 이어서 <strong>내막 증식이 동심원상으로 겹겹이 쌓인다(양파 껍질, onion-skin)</strong>. 사구체는 염증이 아니라 <strong>허혈성 허탈</strong>을 보인다 <sup>[1 360장 p.2777]</sup>. 중형 신동맥에는 내막 증식과 점액양(myxoid) 변화가 보인다 <sup>[1 360장 p.2782]</sup>.</li>\n<li>좁아진 내강과 혈관 수축 → 신혈류 감소 → <strong>레닌·안지오텐신 II 증가</strong> → 신혈관이 더 수축하는 악순환 → 가속 고혈압 <sup>[1 360장 p.2782]</sup>.</li>\n<li>좁고 손상된 소혈관을 지나며 적혈구가 찢기고(분열적혈구) 혈소판이 소모된다 — 혈전성 미세혈관병증(thrombotic microangiopathy)과 비슷한 그림이다 <sup>[1 360장 p.2777]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 혈관 병인가 사구체 병인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>속도</strong>가 초자양과 과형성을 가른다: 수 일~수 주 만의 악성 범위 고혈압·망막병증·용혈이면 과형성, 수년간 서서히면 초자양 <sup>[2†]</sup>.</li>\n<li><strong>요침사</strong>가 혈관 병과 사구체 병을 가른다: 신장 위기의 요검사는 경한 단백뇨·과립 원주·현미경적 혈뇨 정도다 <sup>[1 360장 p.2782]</sup>. 적혈구 원주·활동성 요침사면 사구체신염을 먼저 생각한다.</li>\n<li>혈압이 정상이라고 배제하지 않는다 — 약 10% 는 정상혈압성 신장 위기이고 예후가 더 나쁘다 <sup>[1 360장 p.2782]</sup>.</li>\n<li>신생검에서 광범위한 혈관 혈전·사구체 허혈성 허탈, 초기 핍뇨·크레아티닌 &gt; 3 mg/dL 은 나쁜 예후 인자다 <sup>[1 360장 p.2782]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "위험 인자와 치료 — 기전에서 나오는 결론",
+    "deep": false,
+    "html": "<ul>\n<li>전신경화증의 15% 미만, 거의 모두 발병 4년 이내. 위험 인자: 미만성·진행성 피부 경화, 남성, 흑인, <strong>항 RNA 중합효소 III 항체</strong>(신장 위기의 최대 50%); 항센트로미어 항체는 보호적 <sup>[1 360장 p.2782]</sup>.</li>\n<li>스테로이드 사용이 신장 위기와 연관된다 <sup>[1 360장 p.2782]</sup>.</li>\n<li>레닌-안지오텐신 악순환이 핵심이므로 <strong>단시간형 ACE 억제제를 적정해 혈압을 빨리 정상화</strong>한다. ACE 억제제 이전의 단기 생존은 10% 미만이었다 <sup>[1 360장 p.2782]</sup> <sup>[1 360장 p.2786]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>고위험 초기 환자는 혈압을 매일 재고, 스테로이드는 꼭 필요할 때만 저용량(&lt; 10 mg/일)으로 쓴다 <sup>[1 360장 p.2782]</sup>.</li>\n<li>혈압이 계속 높으면 ARB·칼슘통로차단제·엔도텔린 수용체 차단제·프로스타사이클린·직접 레닌 억제제를 더하고, 보체 활성 근거로 에쿨리주맙을 고려할 수 있다 <sup>[1 360장 p.2786]</sup>.</li>\n<li>최대 2/3 가 투석이 필요하지만 30–50% 는 투석을 끊는다. 2년 뒤에도 투석이면 신장 이식 — 재발은 드물다 <sup>[1 360장 p.2786]</sup>.</li>\n<li>초자양 세동맥경화의 조직 서술은 해리슨 360장에 없어 Robbins 서지로만 남겼다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 사구체신염의 가능성</strong> — 시험 기준: 전신경화증 + 급성 고혈압 + 미세혈관병성 용혈 + 조용한 요침사 = 혈관 병변 <sup>[1 360장 p.2782]</sup> / 다른 기준: 같은 장이 전신경화증에서 MPO-ANCA 연관 반달체 사구체신염, D-페니실라민 연관 막성 사구체신염을 기술한다 <sup>[1 360장 p.2782]</sup> / 왜 다른가: 드문 동반 질환이라 맥락(활동성 요침사·ANCA·약물)이 있을 때만 / 시험에서는: USMLE · KMLE 모두 그 단서가 없으면 양파 껍질 병변.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "신장 소혈관·사구체 병변 — 임상 맥락과 조직",
+    "columns": [
+     "병변",
+     "조직 소견",
+     "임상 맥락",
+     "요침사·혈액"
+    ],
+    "rows": [
+     [
+      "과형성 세동맥경화(양파 껍질)",
+      "소동맥 내막의 동심성·층판상 증식, 점액양 변화 ± 수입 세동맥 섬유소양 괴사 <sup>[1 360장 p.2777]</sup>",
+      "경피증 신장 위기·악성 고혈압 — 수 일~수 주",
+      "경한 단백뇨·과립 원주·현미경적 혈뇨, 분열적혈구·혈소판감소 <sup>[1 360장 p.2782]</sup>"
+     ],
+     [
+      "초자양 세동맥경화",
+      "세동맥 벽의 균질한 분홍색 초자양 비후 <sup>[2†]</sup>",
+      "수년간의 경도 고혈압·당뇨·노화",
+      "서서히 떨어지는 신기능, 용혈 없음"
+     ],
+     [
+      "반달체 사구체신염",
+      "보우만 주머니의 세포성 반달체",
+      "항GBM·ANCA·면역복합체 — SSc 에서는 MPO-ANCA 와 연관 <sup>[1 360장 p.2782]</sup>",
+      "적혈구 원주·활동성 요침사"
+     ],
+     [
+      "막성 신병증 · IgA 신병증",
+      "상피하 침착 · 사구체간질 IgA 침착",
+      "신증후군 · 점막 감염 직후 혈뇨",
+      "단백뇨 많음 · 육안적 혈뇨"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "반달체(crescents) vs 소동맥 내막 증식",
+    "point": "급성 신손상에 혈뇨가 있어도 적혈구 원주 없는 조용한 요침사 + 미세혈관병성 용혈 + 악성 고혈압이면 병변은 혈관이다. 반달체는 보우만 주머니의 세포 증식으로, 급속진행 사구체신염의 활동성 요침사(적혈구 원주)와 짝을 이룬다.",
+    "exception": "전신경화증에서도 MPO-ANCA 와 연관된 반달체 사구체신염이 드물게 보고된다 — 그때는 요침사가 활동성이고 고혈압·용혈이 앞서지 않는다.",
+    "cites": "<sup>[1 360장 p.2782]</sup>"
+   },
+   {
+    "contrast": "초자양 vs 과형성 세동맥경화",
+    "point": "둘 다 고혈압의 신장 소혈관 병변이지만 속도가 다르다. 초자양은 혈장 단백이 벽에 스며 균질한 분홍색으로 두꺼워지는 만성 병변(경도 고혈압·당뇨·노화), 과형성은 수 일~수 주의 악성 고혈압에서 평활근·점액양 기질이 겹겹이 쌓이는 급성 병변이다.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
+   },
+   {
+    "contrast": "상피하 침착·IgA 침착 — 면역복합체 신염?",
+    "point": "면역 침착 병변은 사구체 질환이다. 경피증 신장 위기는 면역복합체가 아니라 혈관 폐쇄로 생기며, 정상 C3·적은 단백뇨는 막성 신병증·감염 후 사구체신염·IgA 신병증과 맞지 않는다.",
+    "exception": "D-페니실라민으로 치료받은 전신경화증 환자에서는 막성 사구체신염이 생길 수 있다.",
+    "cites": "<sup>[1 360장 p.2782]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "약 10% 는 혈압이 정상 범위로 온다(정상혈압성 신장 위기) — 혈압이 정상이어도 분열적혈구·혈소판감소·AKI 면 신장 위기를 배제하지 않는다 <sup>[1 360장 p.2782]</sup>.",
+   "신장 위기의 요검사도 경한 단백뇨·현미경적 혈뇨는 있을 수 있다 — 가르는 것은 적혈구 원주·활동성 요침사의 유무다 <sup>[1 360장 p.2782]</sup>.",
+   "TTP 와 비슷해 보일 수 있다 — 신생검과 ADAMTS13 활성이 가른다 <sup>[1 360장 p.2782]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "src-presentation",
+    "name": "경피증 신장 위기의 임상상",
+    "kind": "진단 기준",
+    "population": "전신경화증 환자",
+    "statement": "가속 고혈압(대개 > 150/90 mmHg)과 진행하는 핍뇨성 신부전, 두통·시야 흐림, 중등도 혈소판감소·분열적혈구 동반 미세혈관병성 용혈, 요검사는 경한 단백뇨·과립 원주·현미경적 혈뇨 [[harrison-21: 360장 p.2782]]",
+    "exceptions": "약 10% 는 혈압이 정상 범위(정상혈압성 신장 위기, 예후 나쁨). TTP 로 오진될 수 있어 신생검·ADAMTS13 활성이 도움 [[harrison-21: 360장 p.2782]]",
+    "source": "harrison-21",
+    "locator": "360장 p.2782 Renal Involvement: Scleroderma Renal Crisis",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 360: Systemic Sclerosis (Scleroderma) and Related Disorders",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 360장 p.2774, 2777, 2782, 2786",
+    "checked": "본문 대조(드라이브 문서, 360장) — p.2774 혈관병증: 근내막 세포가 쌓이고 기저막 비후, 내막·중막 비후로 내강이 점차 막히는 악순환; p.2777 Kidneys: 엽간·궁상 동맥 병변이 주, 신장 위기에서 수입 세동맥의 급성 섬유소양 괴사 뒤 내막 증식(onion-skin)과 사구체 허혈성 허탈, 혈전성 미세혈관병증(aHUS)과 비슷, 혈소판 소모·혈관내 용혈, 보체 활성화; p.2782 Scleroderma Renal Crisis: SSc 의 <15%, 거의 모두 발병 4년 이내, 궁상·엽간 동맥의 폐쇄성 혈관병증 → 신혈류↓ → 사구체곁 레닌·안지오텐신 II↑ → 악순환, 위험 인자(흑인·남성·미만성/진행성 피부, 항 RNA 중합효소 III 최대 50%, 항센트로미어는 보호적), 스테로이드 연관(고위험군은 꼭 필요할 때만 <10 mg/d), 임상상(>150/90, 핍뇨, 두통·시야 흐림, 혈소판감소·분열적혈구, 경한 단백뇨·과립 원주·현미경적 혈뇨), 정상혈압 ~10%, TTP 오진, 핍뇨·Cr >3 은 나쁜 예후, SSc 에서 MPO-ANCA 반달체 사구체신염 보고, D-페니실라민 막성; Fig 360-13 중형 신동맥의 내막 증식·점액양 변화와 분열적혈구; p.2786 치료: 입원, 단시간형 ACE 억제제 적정, 필요 시 ARB·CCB 등 추가, 에쿨리주맙 고려, 최대 2/3 투석, 30–50% 투석 중단. 초자양 세동맥경화의 조직·임상은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "robbins-10",
+    "org": "Elsevier",
+    "title": "Robbins & Cotran Pathologic Basis of Disease, 10th ed. — Blood Vessels (Hypertensive Vascular Disease), Kidney",
+    "kind": "textbook",
+    "citation": "Kumar V, Abbas AK, Aster JC (eds). Robbins & Cotran Pathologic Basis of Disease, 10e. Elsevier. 11장 혈관, 14장 신장",
+    "checked": "서지만 — 이 컨테이너에서 원문을 열지 못했다. 원 문항이 출처로 적은 교과서이며, 초자양 vs 과형성 세동맥경화의 조직·임상 대비는 표준 병리 서술을 기억에 근거해 적었다. 쪽수 미확인",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2020",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "경피증 신장 위기에서 신장의 1차 병변 자리와 모양은?",
+    "a": "엽간·궁상 동맥과 수입 세동맥 — 수입 세동맥의 섬유소양 괴사 뒤 동심성 층판상 내막 증식(양파 껍질), 점액양 변화. 사구체는 허혈성 허탈."
+   },
+   {
+    "q": "소동맥이 좁아지면 왜 고혈압이 더 심해지나?",
+    "a": "신혈류 감소 → 사구체곁 세포의 레닌 분비 → 안지오텐신 II → 신혈관 수축이 더해지는 악순환. 그래서 ACE 억제제가 치료의 핵심이다."
+   },
+   {
+    "q": "초자양 세동맥경화와 과형성 세동맥경화를 가르는 임상 맥락은?",
+    "a": "초자양은 수년간의 경도 고혈압·당뇨·노화(서서히), 과형성은 악성·가속 고혈압(수 일~수 주, 미세혈관병성 용혈 동반)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis#v1",
+    "context": "Same SSc patient; the kidney injury is glomerular (ANCA crescentic GN), not vascular",
+    "stem": "A 52-year-old woman with a 3-year history of Raynaud phenomenon, thickened skin of the fingers, hands, and forearms, and gastroesophageal reflux comes to the physician because of 1 week of cough with blood-streaked sputum and decreasing urine output. Her blood pressure is 142/88 mm Hg; it was 136/84 mm Hg 3 months ago. Serum creatinine is 3.1 mg/dL (0.9 mg/dL 2 months ago). Platelet count and haptoglobin are normal, and a peripheral blood smear shows no fragmented red cells. Urinalysis shows 2+ protein and numerous dysmorphic erythrocytes with red blood cell casts. Serum C3 is normal. Antimyeloperoxidase (MPO-ANCA) antibodies are positive. A kidney biopsy is performed. Which of the following is most likely to be found?",
+    "options": [
+     "Homogeneous hyaline thickening of arteriolar walls",
+     "Concentric laminated intimal thickening of small arteries",
+     "Crescents of proliferating cells in Bowman space",
+     "Subepithelial immune deposits along basement membranes",
+     "Mesangial deposits of IgA-containing immune complexes"
+    ],
+    "answer": 3,
+    "explanation": "뼈대(전신경화증 + 급성 신손상)는 같지만 결정적 단서가 바뀌었다. 혈압이 거의 오르지 않았고 분열적혈구·혈소판감소가 없으며, 적혈구 원주·혈담·MPO-ANCA 양성이 있다 — 혈관 폐쇄가 아니라 사구체의 괴사성 염증이므로 반달체다. 해리슨도 전신경화증에서 MPO-ANCA 와 연관된 반달체 사구체신염을 기술한다. 원래 문항은 급성 악성 고혈압 + 미세혈관병성 용혈 + 조용한 요침사라 소동맥 내막 증식(B)이 답이었다.",
+    "of": "usmle-2026-0170",
+    "changed": "abrupt 200/115 with schistocytes and bland sediment → BP only mildly raised, red-cell casts, hemoptysis, positive MPO-ANCA, no schistocytes → answer changes from concentric intimal thickening to crescents in Bowman space",
+    "flip": true
+   },
+   {
+    "id": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis#v2",
+    "context": "Surface change only — a man with early diffuse SSc and anti-RNA polymerase III antibodies",
+    "stem": "A 38-year-old man is brought to the emergency department after a generalized seizure. Eight months ago he developed swelling and then rapidly progressive thickening of the skin of his hands, forearms, chest, and thighs; he also has fatigue and tendon friction rubs at the knees. Antibodies to RNA polymerase III are positive. He takes no medications. His blood pressure is 216/124 mm Hg; it was 124/78 mm Hg 6 weeks ago. Serum creatinine is 2.9 mg/dL, hemoglobin 9.5 g/dL, and platelet count 92,000/mm3; a blood smear shows many schistocytes. Urinalysis shows 1+ protein, a few granular casts, and 2–4 RBCs/hpf without red blood cell casts. Serum complement levels are normal. A kidney biopsy is performed. Which of the following is most likely to be found in the renal vessels?",
+    "options": [
+     "Crescents of proliferating cells in Bowman space",
+     "Mesangial deposits of IgA-containing immune complexes",
+     "Homogeneous hyaline thickening of arteriolar walls",
+     "Concentric laminated intimal thickening of small arteries",
+     "Granulomatous inflammation of medium-sized arteries"
+    ],
+    "answer": 4,
+    "explanation": "성별·나이·유발 요인(스테로이드 대신 항 RNA 중합효소 III 항체와 빠르게 진행하는 초기 미만성 피부 경화)·내원 경위(경련)가 바뀌었지만 결정적 단서 — 수 주 만의 악성 범위 고혈압 + 분열적혈구·혈소판감소 + 적혈구 원주 없는 조용한 요침사·정상 보체 — 는 그대로다. 경피증 신장 위기이고 병변은 소동맥의 동심성 층판상 내막 증식(양파 껍질)이다. 초자양 비후는 수년간의 경도 고혈압 병변, 반달체·IgA 침착은 사구체신염이다.",
+    "of": "usmle-2026-0170",
+    "changed": "age/sex (38-year-old man), trigger (no steroid; anti-RNA polymerase III positive, early diffuse disease), presentation (seizure, dyspnea) changed; abrupt malignant-range BP + schistocytes + bland sediment kept → answer still concentric intimal thickening",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "신장 병변 읽기 — 혈관 병인가 사구체 병인가",
+  "geo": {
+   "title": "신장 병변 읽기 — 혈관 병인가 사구체 병인가",
+   "w": 680.0,
+   "h": 538.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "전신경화증 환자의 급성",
+      "신손상"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "sed",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "요침사·혈압·말초혈액",
+      "도말을 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "active",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "적혈구 원주·활동성 요침사?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 188.0
+    },
+    {
+     "id": "gn",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "사구체신염 —",
+      "반달체(MPO-ANCA 등)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 278.0
+    },
+    {
+     "id": "tempo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "급성 고혈압 + 분열적혈구?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 278.0
+    },
+    {
+     "id": "src",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "소동맥 동심성 내막",
+      "증식(양파 껍질)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 368.0
+    },
+    {
+     "id": "slow",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "수년간 경도 고혈압·당뇨?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 368.0
+    },
+    {
+     "id": "hya",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "초자양 세동맥경화(균질한",
+      "벽 비후)"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 458.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "다른 원인 — 약물 신독성·",
+      "전신 저관류"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 458.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "sed",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "sed",
+     "to": "active",
+     "points": [
+      [
+       227.0,
+       166.0
+      ],
+      [
+       227.0,
+       188.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "active",
+     "to": "gn",
+     "points": [
+      [
+       194.3,
+       235.0
+      ],
+      [
+       194.3,
+       264.0
+      ],
+      [
+       114.0,
+       264.0
+      ],
+      [
+       114.0,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "active",
+     "to": "tempo",
+     "points": [
+      [
+       259.7,
+       235.0
+      ],
+      [
+       259.7,
+       264.0
+      ],
+      [
+       340.0,
+       264.0
+      ],
+      [
+       340.0,
+       278.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "조용함"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 239.0
+     }
+    },
+    {
+     "from": "tempo",
+     "to": "src",
+     "points": [
+      [
+       307.3,
+       325.0
+      ],
+      [
+       307.3,
+       354.0
+      ],
+      [
+       227.0,
+       354.0
+      ],
+      [
+       227.0,
+       368.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "tempo",
+     "to": "slow",
+     "points": [
+      [
+       372.7,
+       325.0
+      ],
+      [
+       372.7,
+       354.0
+      ],
+      [
+       453.0,
+       354.0
+      ],
+      [
+       453.0,
+       368.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 329.0
+     }
+    },
+    {
+     "from": "slow",
+     "to": "hya",
+     "points": [
+      [
+       420.3,
+       415.0
+      ],
+      [
+       420.3,
+       444.0
+      ],
+      [
+       340.0,
+       444.0
+      ],
+      [
+       340.0,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 410.8,
+      "y": 419.0
+     }
+    },
+    {
+     "from": "slow",
+     "to": "other",
+     "points": [
+      [
+       485.7,
+       415.0
+      ],
+      [
+       485.7,
+       444.0
+      ],
+      [
+       566.0,
+       444.0
+      ],
+      [
+       566.0,
+       458.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 465.2,
+      "y": 419.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "전신경화증 환자의 급성 신손상",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "요침사·혈압·말초혈액 도말을 확인"
+     }
+    ]
+   },
+   {
+    "id": "sed",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "요침사·혈압·말초혈액 도말을 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "적혈구 원주·활동성 요침사?"
+     }
+    ]
+   },
+   {
+    "id": "active",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "적혈구 원주·활동성 요침사?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "사구체신염 — 반달체(MPO-ANCA 등)"
+     },
+     {
+      "label": "조용함",
+      "to": 5,
+      "toText": "급성 고혈압 + 분열적혈구?"
+     }
+    ]
+   },
+   {
+    "id": "gn",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "사구체신염 — 반달체(MPO-ANCA 등)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "tempo",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "급성 고혈압 + 분열적혈구?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "소동맥 동심성 내막 증식(양파 껍질)"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "수년간 경도 고혈압·당뇨?"
+     }
+    ]
+   },
+   {
+    "id": "src",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "소동맥 동심성 내막 증식(양파 껍질)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "slow",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "수년간 경도 고혈압·당뇨?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "초자양 세동맥경화(균질한 벽 비후)"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "다른 원인 — 약물 신독성·전신 저관류"
+     }
+    ]
+   },
+   {
+    "id": "hya",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "초자양 세동맥경화(균질한 벽 비후)",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "다른 원인 — 약물 신독성·전신 저관류",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0170"
+  ],
+  "hasErrors": false
+ },
  "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes": {
   "id": "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes",
   "title": "고환 종양 IHC — 「갈색 세포가 종양인가, 종양에 대한 반응인가」: 격막의 CD3 양성 작은 T 림프구 + 음성인 맑은 세포 판 = 정상피종",
@@ -43612,7 +46739,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "정의",
     "deep": false,
-    "html": "<p>급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 완전히 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 <sup>[1 359장 p.2766]</sup>. 이 정리본의 목표는 진단 뒤 <strong>급성기에 무엇을 반드시 하고, 무엇은 증상에 따라 더하는지</strong>를 가르는 것이다. 급성기 뒤 재발 예방(약·간격·기간)은 <code>cn.peds.rheumatic-fever.secondary-prophylaxis</code> 가 다룬다.</p>"
+    "html": "<p>급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 완전히 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 <sup>[1 359장 p.2766]</sup>. 이 정리본의 목표는 진단 뒤 <strong>급성기에 무엇을 반드시 하고, 무엇은 증상에 따라 더하는지</strong>를 가르는 것이다. 급성기 뒤 재발 예방(약·간격·기간)은 「급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다」 가 다룬다.</p>"
    },
    {
     "title": "병태생리",
@@ -46131,6 +49258,849 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "usmle-2026-0030"
+  ],
+  "hasErrors": false
+ },
+ "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
+  "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
+  "title": "티오퓨린 + 알로푸리놀 — 막힌 불활성 출구",
+  "objective": "티오퓨린 복용자에게 새로 생긴 골수 억제를 크산틴 산화효소 억제에 의한 6-MP 불활성화 차단으로 설명한다",
+  "objectiveKind": "기전",
+  "condition": "티오퓨린(아자티오프린·6-메르캅토퓨린)–크산틴 산화효소 억제제 상호작용(thiopurine–xanthine oxidase inhibitor interaction)",
+  "topic": "Rheumatology",
+  "seeAlso": [
+   "Pharmacology",
+   "Gastroenterology"
+  ],
+  "version": 1,
+  "updated": "2026-09-25",
+  "reviewStatus": "unreviewed",
+  "hash": "74b23c533596fc7f",
+  "summary": [
+   "결론: 티오퓨린을 오래 안정적으로 쓰던 사람이 요산 강하제 추가 뒤 범혈구감소면 알로푸리놀의 크산틴 산화효소 억제다.",
+   "시험 단서: 아자티오프린(azathioprine)·6-MP 수년 안정 + 통풍약 추가 수주 뒤 발열·호중구감소 + 요산 저하.",
+   "왜: 6-MP 의 불활성화 출구(xanthine oxidase)가 막히면 HGPRT 쪽 활성 6-티오구아닌 뉴클레오타이드가 쌓인다.",
+   "함께 써야 하면 아자티오프린·6-MP 를 평소의 1/3~1/4 로 줄이고 혈구를 자주 본다(알로푸리놀 허가사항).",
+   "프로베네시드(요산 배설)·나프록센·프레드니손은 6-MP 대사를 막지 않는다. 콜히친은 신부전·CYP3A4 억제제가 있어야 쌓인다."
+  ],
+  "sections": [
+   {
+    "title": "기전 — 6-MP 의 세 갈래와 막힌 출구",
+    "deep": false,
+    "html": "<p>아자티오프린은 흡수 뒤 빠르게 6-메르캅토퓨린(6-MP)으로 바뀐다 <sup>[1 326장 p.2483]</sup>. 6-MP 는 세 갈래로 나뉜다(표).</p>\n<ul>\n<li><strong>활성 쪽(HGPRT)</strong>: 6-티오구아닌 뉴클레오타이드(6-TGN)가 되어 DNA 에 끼어들고 퓨린 합성을 막는다 — 분열이 빠른 림프구와 골수 전구세포가 멈추는 것이 면역억제이자 골수 억제다.</li>\n<li><strong>불활성 출구 두 개</strong>: TPMT 의 메틸화와 크산틴 산화효소(xanthine oxidase)의 산화. 출구가 좁아지면 같은 용량에서도 더 많은 6-MP 가 활성 쪽으로 흘러간다.</li>\n<li>TPMT 결핍·이형접합에서 활성 6-티오구아닌이 쌓여 독성이 커지는 것 <sup>[1 326장 p.2484]</sup>과 같은 원리로, <strong>알로푸리놀이 크산틴 산화효소 출구를 막아도</strong> 6-TGN 이 쌓인다 <sup>[2†]</sup>. 알로푸리놀이 요산을 낮추는 바로 그 작용(크산틴 산화효소 억제 <sup>[1 372장 p.2865]</sup>)이 상호작용의 원인이다.</li>\n<li>결과는 용량을 몇 배로 올린 것과 같은 골수 억제 — 호중구감소로 발열·인후염·구내염, 혈소판감소로 출혈이 온다. 골수 억제는 용량 의존적이고 늦게 오기도 한다 <sup>[1 326장 p.2484]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "가르는 소견 — 어느 통풍약인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>시간 관계</strong>: 같은 용량으로 오래 안정 → 새 약 수주 뒤 감소. TPMT 결핍에 의한 독성은 대개 시작 초기에 오므로, 늦게 새로 생긴 억제는 새 약을 먼저 찾는다.</li>\n<li><strong>요산</strong>: 새 약 뒤 요산이 떨어졌으면 요산 강하제다. 그중 6-MP 출구를 막는 것은 크산틴 산화효소 억제제(알로푸리놀·페북소스타트)뿐이다 — 프로베네시드는 배설을 늘릴 뿐이다 <sup>[1 372장 p.2865]</sup>.</li>\n<li><strong>콜히친의 조건</strong>: 콜히친도 매일 예방약으로 쓰이지만 쌓이려면 신질환이나 P-당단백·CYP3A4 억제제가 있어야 한다 <sup>[1 372장 p.2864]</sup>. 크레아티닌 정상·억제제 없음·요산 저하는 콜히친 쪽을 약하게 만든다.</li>\n<li>정상 TPMT 는 이 상호작용을 배제하지 않는다 — 다른 출구의 이야기다.</li>\n</ul>"
+   },
+   {
+    "title": "선택 — 함께 써야 할 때",
+    "deep": false,
+    "html": "<ul>\n<li>알로푸리놀이 꼭 필요하면 아자티오프린·6-MP 를 평소의 1/3~1/4 로 줄이고 혈구를 자주 본다 <sup>[2†]</sup>.</li>\n<li>요산만 낮추면 되는데 감량·감시가 어렵다면 6-MP 대사와 무관한 요산 배설제(프로베네시드 — 신기능이 좋을 때)를 생각할 수 있다 <sup>[1 372장 p.2865]</sup>.</li>\n<li>이미 범혈구감소·호중구감소성 발열이 왔다면 두 약을 멈추고 발열성 호중구감소증으로 처치한다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>티오퓨린 복용 중에는 용량과 무관하게 혈구·간기능을 정기적으로 본다 <sup>[1 326장 p.2484]</sup>. 통풍약을 새로 시작할 때 기저 혈구를 재는 것도 같은 이유다 <sup>[1 372장 p.2864]</sup>.</li>\n<li>감량 비율(1/3~1/4)과 페북소스타트 병용 금기 표시는 허가사항 원문을 대조하지 못했다(검토 항목).</li>\n<li>NUDT15 결핍도 활성 대사물이 쌓이는 쪽이다 <sup>[3†]</sup> — 동아시아인에서 중요하다는 점은 원문 미대조.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 「통풍 예방약」이 가리키는 약</strong> — 시험 기준: 요산이 떨어진 매일 약 = 요산 강하제, 그중 알로푸리놀이 1차 <sup>[1 372장 p.2865]</sup> / 다른 기준: 요산 강하제를 시작할 때 발작 예방으로 콜히친 0.6 mg 1–2회/일이나 나프록센 250 mg bid 를 매일 쓴다 <sup>[1 372장 p.2865]</sup> / 왜 다른가: 「발작 예방」에는 요산 강하와 항염증 예방 두 뜻이 있다 / 시험에서는: KMLE · USMLE 모두 요산 추이·신기능·병용약으로 가른다. 나프록센을 「예방에 쓰지 않는 약」으로 외우지 않는다.</li>\n<li><strong>Z2 새 근거 · 상호작용의 근거 위치</strong> — 시험 기준: 알로푸리놀 + 티오퓨린 = 감량 필요 <sup>[2†]</sup> / 다른 기준: 해리슨 21판은 통풍 장(372장 p.2862–2867)과 염증성 장질환 장(326장 p.2483–2484) 모두에서 이 상호작용을 다루지 않고 TPMT 만 적는다 / 왜 다른가: 약물 상호작용은 약리 교과서·허가사항의 영역이다 / 시험에서는: KMLE · USMLE 모두 표준 약리 사실로 출제된다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "6-MP 가 가는 세 갈래",
+    "columns": [
+     "효소",
+     "산물",
+     "성격",
+     "막히거나 모자라면"
+    ],
+    "rows": [
+     [
+      "HGPRT",
+      "6-티오구아닌 뉴클레오타이드(6-TGN)",
+      "활성 — 골수 억제·면역억제의 본체",
+      "—"
+     ],
+     [
+      "TPMT",
+      "6-메틸메르캅토퓨린",
+      "불활성 <sup>[1 326장 p.2484]</sup>",
+      "결핍·이형접합이면 6-TGN 이 쌓인다 <sup>[1 326장 p.2484]</sup>"
+     ],
+     [
+      "크산틴 산화효소(xanthine oxidase)",
+      "6-티오요산",
+      "불활성",
+      "알로푸리놀·페북소스타트가 막으면 6-TGN 이 쌓인다 <sup>[2†]</sup>"
+     ]
+    ],
+    "note": ""
+   },
+   {
+    "title": "통풍약과 티오퓨린 골수 억제",
+    "columns": [
+     "약",
+     "작용",
+     "요산",
+     "티오퓨린과"
+    ],
+    "rows": [
+     [
+      "알로푸리놀·페북소스타트",
+      "크산틴 산화효소 억제 <sup>[1 372장 p.2865]</sup>",
+      "낮춘다",
+      "6-MP 불활성화 차단 → 골수 억제"
+     ],
+     [
+      "프로베네시드",
+      "요산 배설 촉진 <sup>[1 372장 p.2865]</sup>",
+      "낮춘다",
+      "6-MP 대사와 무관"
+     ],
+     [
+      "콜히친",
+      "항염증 — P-당단백·CYP3A4 로 제거 <sup>[1 372장 p.2864]</sup>",
+      "그대로",
+      "무관. 신부전·억제제 병용 시 자체 독성"
+     ],
+     [
+      "나프록센·프레드니손",
+      "항염증 <sup>[1 372장 p.2864]</sup>",
+      "그대로",
+      "무관. 프레드니손은 백혈구를 늘린다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "프로베네시드 vs 알로푸리놀 — 둘 다 요산을 낮추는데?",
+    "point": "요산 저하는 두 약이 모두 설명한다. 골수 억제를 설명하려면 6-MP 를 불활성화하는 효소가 막혀야 하는데, 프로베네시드는 요세관 요산 재흡수를 막아 배설을 늘리는 약이라 크산틴 산화효소·TPMT 를 건드리지 않는다. 해리슨도 프로베네시드를 알로푸리놀과 함께 쓸 수 있는 요산 배설제로 적는다 <sup>[1 372장 p.2865]</sup>.",
+    "exception": "프로베네시드는 신세관 분비를 막아 메토트렉세이트 같은 다른 약을 쌓을 수 있다 — 상대가 티오퓨린이 아니면 판단이 달라진다 <sup>[2†]</sup>.",
+    "cites": "<sup>[1 372장 p.2865]</sup>"
+   },
+   {
+    "contrast": "콜히친 — 매일 먹는 통풍 예방약이고 골수도 억제하는데?",
+    "point": "콜히친은 P-당단백(P-glycoprotein)과 CYP3A4 로 제거되므로 신기능 저하나 클라리트로마이신 같은 억제제가 있을 때 쌓인다 <sup>[1 372장 p.2864]</sup>. 신기능이 정상이고 억제제가 없으며 요산이 떨어졌다면 새 약은 요산 강하제 쪽이다. 콜히친은 요산을 낮추지 않는다.",
+    "exception": "",
+    "cites": "<sup>[1 372장 p.2864]</sup>"
+   },
+   {
+    "contrast": "나프록센 — 통풍 예방으로 매일 쓰일 수 있는데?",
+    "point": "요산 강하제를 시작할 때 발작 예방으로 나프록센 250 mg 하루 2번을 쓰기도 한다 <sup>[1 372장 p.2865]</sup>. 그러나 요산을 낮추지 않고 6-MP 대사와 무관하며, 세 계열이 모두 떨어지는 골수 억제는 드물다.",
+    "exception": "",
+    "cites": "<sup>[1 372장 p.2865]</sup>"
+   },
+   {
+    "contrast": "프레드니손 — 면역억제제니까 혈구도 줄이나?",
+    "point": "글루코코르티코이드는 호중구를 혈관벽에서 떼어 내(탈변연, demargination) 오히려 백혈구 수를 늘리고 골수를 억제하지 않는다. 범혈구감소의 원인 약으로 맞지 않는다.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "요산이 새 약 뒤 떨어졌다면 그 약은 요산 강하제다 — 그중 6-MP 대사를 막는 것은 크산틴 산화효소 억제제뿐이다(프로베네시드는 배설 촉진).",
+   "TPMT 활성이 정상이어도 크산틴 산화효소 경로가 막히면 활성 6-TGN 이 쌓인다 — 정상 TPMT 는 상호작용을 배제하지 않는다.",
+   "TPMT 결핍에 의한 골수 억제는 대개 투약 초기에 오고, 몇 년 안정 뒤 새로 생긴 억제는 새 약·용량 변화를 먼저 찾는다.",
+   "콜히친 축적은 신부전·P-당단백/CYP3A4 억제제(클라리트로마이신 등)가 있을 때 의심한다 <sup>[1 372장 p.2864]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "xo-dose-cut",
+    "name": "병용 시 감량",
+    "kind": "치료 권고",
+    "population": "아자티오프린·6-MP 복용자에게 알로푸리놀을 함께 쓸 때",
+    "statement": "아자티오프린·6-MP 를 평소 용량의 1/3~1/4 로 줄이고 혈구를 자주 확인한다",
+    "exceptions": "허가사항 문구는 원문을 대조하지 못했다(서지만). 페북소스타트는 병용 금기로 표시된다는 것도 원문 미대조",
+    "source": "allopurinol-label",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   },
+   {
+    "id": "tpmt-monitor",
+    "name": "TPMT 와 혈구 감시",
+    "kind": "검사 기준",
+    "population": "티오퓨린 복용자",
+    "statement": "골수 억제는 용량 의존적이고 늦게 오기도 하므로 혈구·간기능을 정기적으로 본다. TPMT 결핍(약 1/300)·이형접합(약 11 %)은 활성 6-티오구아닌이 쌓여 독성 위험이 높다 [[harrison-21: 326장 p.2484]]",
+    "exceptions": "TPMT 활성이 정상이어도 크산틴 산화효소 억제제를 더하면 같은 축적이 온다",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 372: Gout and Other Crystal-Associated Arthropathies; Chapter 326: Inflammatory Bowel Disease",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 372장 p.2862–2867(통풍) · 326장 p.2483–2484(아자티오프린·6-MP)",
+    "checked": "본문 대조(드라이브 장별 문서). 372장 p.2864 — 급성 발작 약(NSAID·콜히친·글루코코르티코이드), 콜히친은 P-glycoprotein·CYP3A4 로 제거되어 신질환·클라리트로마이신 등 억제제 병용 시 감량, 기저 혈색소·백혈구·간기능 측정. p.2865 — 알로푸리놀은 크산틴 산화효소 억제제로 1차 요산 강하제, 페북소스타트도 크산틴 산화효소 억제제, 프로베네시드는 2차 요산 배설제로 단독 또는 알로푸리놀과 병용, 요산 강하제 시작 시 콜히친 0.6 mg 1–2회/일 또는 나프록센 250 mg bid 예방. 326장 p.2483–2484 — 아자티오프린은 6-MP 로 바뀌어 활성 산물(thioinosinic acid)로 대사, 골수 억제(특히 백혈구감소)는 용량 의존적이고 늦게 올 수 있어 CBC 정기 감시, TPMT 결핍 1/300·이형접합 11 % 는 활성 6-티오구아닌 대사물 축적으로 독성 위험. 해리슨 두 장 모두 알로푸리놀–아자티오프린 상호작용·크산틴 산화효소에 의한 6-MP 불활성화·감량 비율을 다루지 않는다(검색어 allopurinol·xanthine 이 326장에 없음).",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-25",
+    "url": ""
+   },
+   {
+    "id": "allopurinol-label",
+    "org": "U.S. FDA / DailyMed",
+    "title": "Allopurinol (Zyloprim) prescribing information — Drug interactions: mercaptopurine and azathioprine",
+    "kind": "other",
+    "citation": "",
+    "checked": "기억·서지만 — 컨테이너에서 원문을 열지 못했다. 병용 시 아자티오프린·6-MP 를 평소의 1/3~1/4 로 감량한다는 문구와 판 연도는 대조하지 않았다",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2023",
+    "checkedAt": "2026-09-25",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=allopurinol"
+   },
+   {
+    "id": "cpic-2019",
+    "org": "Clinical Pharmacogenetics Implementation Consortium (Relling MV et al.)",
+    "title": "CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15 Genotypes: 2018 Update",
+    "kind": "guideline",
+    "citation": "Clin Pharmacol Ther 2019;105(5):1095-1105",
+    "checked": "서지만(기억) — PubMed·doi.org 가 막혀 원문·PMID 를 확인하지 못했다. NUDT15 결핍도 활성 대사물 축적 위험이라는 서술의 근거로만 든다",
+    "doi": "10.1002/cpt.1304",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2019",
+    "checkedAt": "2026-09-25",
+    "url": "https://doi.org/10.1002/cpt.1304"
+   }
+  ],
+  "checks": [
+   {
+    "q": "6-MP 를 불활성화하는 두 효소와 그 산물은?",
+    "a": "TPMT → 6-메틸메르캅토퓨린, 크산틴 산화효소 → 6-티오요산. 활성 경로는 HGPRT → 6-티오구아닌 뉴클레오타이드."
+   },
+   {
+    "q": "알로푸리놀을 더했을 때 아자티오프린 골수 억제가 커지는 이유는?",
+    "a": "크산틴 산화효소가 막혀 6-MP 가 HGPRT 쪽으로 몰리고 활성 6-TGN 이 쌓이기 때문. 병용하려면 아자티오프린을 1/3~1/4 로 줄인다."
+   },
+   {
+    "q": "TPMT 활성 정상이면 이 상호작용을 배제할 수 있나?",
+    "a": "아니다. TPMT 는 다른 출구다 — 크산틴 산화효소 출구가 막히면 TPMT 가 정상이어도 활성형이 쌓인다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 신부전과 CYP3A4/P-gp 억제제가 있는 통풍 예방약 복용자",
+    "stem": "A 67-year-old man is brought to the emergency department because of profuse watery diarrhea and vomiting for 4 days followed by difficulty climbing stairs and rising from a chair. He has chronic kidney disease and Crohn disease that has been in remission with azathioprine at the same dose for 3 years; his blood counts were normal 2 months ago. Six weeks ago he was started on a daily medication to prevent recurrent gout attacks, and 10 days ago he began a course of clarithromycin for community-acquired pneumonia. Temperature is 37.9°C, pulse 104/min, and blood pressure 104/66 mm Hg. There is symmetric proximal muscle weakness. Laboratory studies show hemoglobin 9.4 g/dL, leukocyte count 2,100/mm3, platelet count 88,000/mm3, creatinine 3.1 mg/dL (baseline 2.8 mg/dL), creatine kinase 1,650 U/L, and serum uric acid 8.9 mg/dL (8.7 mg/dL six weeks ago). Which of the following drugs is the most likely cause of this patient's current condition?",
+    "options": [
+     "Allopurinol",
+     "Probenecid",
+     "Prednisone",
+     "Colchicine",
+     "Naproxen"
+    ],
+    "answer": 4,
+    "explanation": "바뀐 단서는 신부전(크레아티닌 3.1), CYP3A4·P-당단백 억제제인 클라리트로마이신 병용, 설사가 먼저 오고 근병증(근위부 약화·CK 상승)이 뒤따른 경과, 그리고 요산이 그대로라는 점이다. 콜히친은 P-당단백과 CYP3A4 로 제거되므로 신질환이나 클라리트로마이신이 있으면 쌓인다(해리슨 372장 p.2864). 요산이 떨어지지 않았으니 새 예방약은 요산 강하제가 아니다 — 알로푸리놀(크산틴 산화효소 억제로 6-MP 축적)·프로베네시드는 맞지 않는다. 프레드니손은 골수를 억제하지 않고, 나프록센은 이 경과를 설명하지 못한다.",
+    "of": "usmle-2026-0172",
+    "changed": "크레아티닌 0.9·요산 저하·설사·근력 약화 없음 → 크레아티닌 3.1·클라리트로마이신 10일 병용·심한 설사 뒤 근력 약화·요산 8.9 그대로 ⇒ 정답이 알로푸리놀에서 콜히친으로",
+    "flip": true
+   },
+   {
+    "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition#v2",
+    "context": "겉모습을 바꿔도 답은 그대로인 변형 — 다른 병·다른 티오퓨린·다른 증상",
+    "stem": "A 61-year-old woman comes to the physician because of gum bleeding, easy bruising, and fatigue for 1 week. Her serum uric acid was 9.4 mg/dL two months ago and is now 4.6 mg/dL. She has autoimmune hepatitis that has been controlled for 4 years with prednisone 5 mg daily and mercaptopurine at an unchanged dose, with normal blood counts at every visit; thiopurine methyltransferase activity was normal before mercaptopurine was started. After two gout attacks this year, a new daily medication was added 6 weeks ago to keep her from having further attacks. Temperature is 37.2°C. There are petechiae on both legs. Hemoglobin is 9.1 g/dL, leukocyte count 1,600/mm3 with an absolute neutrophil count of 400/mm3, and platelet count 41,000/mm3. Creatinine and liver enzymes are within normal limits. Which of the following drugs is the most likely cause of this patient's current condition?",
+    "options": [
+     "Colchicine",
+     "Allopurinol",
+     "Probenecid",
+     "Indomethacin",
+     "Prednisone"
+    ],
+    "answer": 2,
+    "explanation": "겉모습(성별·기저 질환·아자티오프린 대신 6-MP·출혈 증상·요산을 먼저 제시)은 바뀌었지만 결정적 단서는 그대로다 — 오래 안정적이던 티오퓨린 + 새 통풍 예방약 수주 뒤 세 계열 감소 + 요산 저하 + 정상 TPMT·신기능. 알로푸리놀이 크산틴 산화효소를 막아 6-MP 가 활성 6-TGN 쪽으로 몰렸다. 프로베네시드도 요산을 낮추지만 6-MP 대사를 막지 않고, 콜히친은 신기능 정상이면 쌓일 조건이 약하며 요산을 낮추지 않는다. 프레드니손은 4년간 같은 용량이었다.",
+    "of": "usmle-2026-0172",
+    "changed": "52세 남자·크론병·아자티오프린·인후통/구내염 → 61세 여자·자가면역 간염·6-MP 직접 복용·잇몸 출혈과 점상출혈, 요산 저하는 먼저 제시 ⇒ 답은 그대로 알로푸리놀",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "티오퓨린 복용자의 새 골수 억제 — 원인 약 찾기",
+  "geo": {
+   "title": "티오퓨린 복용자의 새 골수 억제 — 원인 약 찾기",
+   "w": 567.0,
+   "h": 593.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "티오퓨린 안정 복용 중 새",
+      "범혈구감소"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "newdrug",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "최근 추가한 약이 있는가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "drugask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "약 목록·시작 날짜·요산",
+      "추이를 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "base",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "용량·TPMT/NUDT15·다른",
+      "원인 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 299.0
+    },
+    {
+     "id": "which",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "크산틴 산화효소를 막는",
+      "약인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 299.0
+    },
+    {
+     "id": "xo",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "알로푸리놀·페북소스타트 —",
+      "활성형 축적"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 406.0
+    },
+    {
+     "id": "colch",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "콜히친 + 신부전·CYP3A4",
+      "억제제?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 406.0
+    },
+    {
+     "id": "colchtox",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "콜히친 축적 독성 의심"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 513.0
+    },
+    {
+     "id": "other",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "그 약 자체의 독성·다른 원인",
+      "평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 513.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "newdrug",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "newdrug",
+     "to": "which",
+     "points": [
+      [
+       291.0,
+       149.0
+      ],
+      [
+       291.0,
+       178.0
+      ],
+      [
+       226.0,
+       178.0
+      ],
+      [
+       226.0,
+       285.0
+      ],
+      [
+       194.3,
+       285.0
+      ],
+      [
+       194.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 276.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "newdrug",
+     "to": "base",
+     "points": [
+      [
+       389.0,
+       149.0
+      ],
+      [
+       389.0,
+       178.0
+      ],
+      [
+       454.0,
+       178.0
+      ],
+      [
+       454.0,
+       285.0
+      ],
+      [
+       485.7,
+       285.0
+      ],
+      [
+       485.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "newdrug",
+     "to": "drugask",
+     "points": [
+      [
+       340.0,
+       149.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 325.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "drugask",
+     "to": "which",
+     "points": [
+      [
+       307.3,
+       256.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       259.7,
+       285.0
+      ],
+      [
+       259.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있으면"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 286.8,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "drugask",
+     "to": "base",
+     "points": [
+      [
+       372.7,
+       256.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       420.3,
+       285.0
+      ],
+      [
+       420.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없으면"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "which",
+     "to": "xo",
+     "points": [
+      [
+       194.3,
+       363.0
+      ],
+      [
+       194.3,
+       392.0
+      ],
+      [
+       114.0,
+       392.0
+      ],
+      [
+       114.0,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 184.8,
+      "y": 367.0
+     }
+    },
+    {
+     "from": "which",
+     "to": "colch",
+     "points": [
+      [
+       259.7,
+       363.0
+      ],
+      [
+       259.7,
+       392.0
+      ],
+      [
+       340.0,
+       392.0
+      ],
+      [
+       340.0,
+       406.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 367.0
+     }
+    },
+    {
+     "from": "colch",
+     "to": "colchtox",
+     "points": [
+      [
+       307.3,
+       470.0
+      ],
+      [
+       307.3,
+       499.0
+      ],
+      [
+       227.0,
+       499.0
+      ],
+      [
+       227.0,
+       513.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 474.0
+     }
+    },
+    {
+     "from": "colch",
+     "to": "other",
+     "points": [
+      [
+       372.7,
+       470.0
+      ],
+      [
+       372.7,
+       499.0
+      ],
+      [
+       453.0,
+       499.0
+      ],
+      [
+       453.0,
+       513.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 352.2,
+      "y": 474.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "티오퓨린 안정 복용 중 새 범혈구감소",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "최근 추가한 약이 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "newdrug",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "최근 추가한 약이 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "크산틴 산화효소를 막는 약인가?"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "용량·TPMT/NUDT15·다른 원인 평가"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "약 목록·시작 날짜·요산 추이를 확인"
+     }
+    ]
+   },
+   {
+    "id": "drugask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "약 목록·시작 날짜·요산 추이를 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "있으면",
+      "to": 4,
+      "toText": "크산틴 산화효소를 막는 약인가?"
+     },
+     {
+      "label": "없으면",
+      "to": 5,
+      "toText": "용량·TPMT/NUDT15·다른 원인 평가"
+     }
+    ]
+   },
+   {
+    "id": "which",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "크산틴 산화효소를 막는 약인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "알로푸리놀·페북소스타트 — 활성형 축적"
+     },
+     {
+      "label": "아니오",
+      "to": 7,
+      "toText": "콜히친 + 신부전·CYP3A4 억제제?"
+     }
+    ]
+   },
+   {
+    "id": "base",
+    "num": 5,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "용량·TPMT/NUDT15·다른 원인 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "xo",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "알로푸리놀·페북소스타트 — 활성형 축적",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "colch",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "콜히친 + 신부전·CYP3A4 억제제?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "콜히친 축적 독성 의심"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "그 약 자체의 독성·다른 원인 평가"
+     }
+    ]
+   },
+   {
+    "id": "colchtox",
+    "num": 8,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "콜히친 축적 독성 의심",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "other",
+    "num": 9,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "그 약 자체의 독성·다른 원인 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "usmle-2026-0172"
   ],
   "hasErrors": false
  },
@@ -52632,7 +56602,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "감별",
     "deep": false,
-    "html": "<ul>\n<li><strong>중간-고위험과의 경계</strong>: 우심실 기능장애·트로포닌 상승은 두 군에 모두 있을 수 있다. 가르는 것은 <strong>혈압·관류</strong>다. 혈압이 유지되면 항응고 + 감시, 쇼크면 재관류(→ <code>cn.pulm.pulmonary-embolism.intermediate-high-risk-management</code>).</li>\n<li><strong>다른 쇼크</strong>: 긴장성 기흉(한쪽 호흡음 소실), 심장눌림증(심낭 삼출), 우심실 경색(하벽 ST 상승)도 목정맥 팽대 + 저혈압을 만든다. CT·심초음파의 폐동맥 혈전과 우심실 확장이 폐색전증으로 묶는다.</li>\n</ul>"
+    "html": "<ul>\n<li><strong>중간-고위험과의 경계</strong>: 우심실 기능장애·트로포닌 상승은 두 군에 모두 있을 수 있다. 가르는 것은 <strong>혈압·관류</strong>다. 혈압이 유지되면 항응고 + 감시, 쇼크면 재관류(→ 「혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때」).</li>\n<li><strong>다른 쇼크</strong>: 긴장성 기흉(한쪽 호흡음 소실), 심장눌림증(심낭 삼출), 우심실 경색(하벽 ST 상승)도 목정맥 팽대 + 저혈압을 만든다. CT·심초음파의 폐동맥 혈전과 우심실 확장이 폐색전증으로 묶는다.</li>\n</ul>"
    },
    {
     "title": "검사",
@@ -56166,7 +60136,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "title": "감별",
     "deep": false,
-    "html": "<ul>\n<li><strong>단독 류마티스다발근통</strong>: 근위부 강직·통증과 ESR/CRP 상승이 있지만 두개 증상이 없고 저용량 프레드니손(10–20 mg/일)에 빠르게 반응한다 <sup>[1 363장 p.2812]</sup>.</li>\n<li><strong>비동맥염성 허혈 시신경병증·색전성 망막동맥 폐쇄</strong>: 염증 지표가 정상이고 전신 증상이 없다 — cn.ophth.crao.arteritic-workup 참조.</li>\n<li><strong>다카야스동맥염</strong>: 젊은 여성, 대동맥궁과 그 가지 <sup>[1 363장 p.2813]</sup>.</li>\n</ul>"
+    "html": "<ul>\n<li><strong>단독 류마티스다발근통</strong>: 근위부 강직·통증과 ESR/CRP 상승이 있지만 두개 증상이 없고 저용량 프레드니손(10–20 mg/일)에 빠르게 반응한다 <sup>[1 363장 p.2812]</sup>.</li>\n<li><strong>비동맥염성 허혈 시신경병증·색전성 망막동맥 폐쇄</strong>: 염증 지표가 정상이고 전신 증상이 없다 — 「망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다」 참조.</li>\n<li><strong>다카야스동맥염</strong>: 젊은 여성, 대동맥궁과 그 가지 <sup>[1 363장 p.2813]</sup>.</li>\n</ul>"
    },
    {
     "title": "검사",
@@ -56253,7 +60223,7 @@ window.MEDKOS_CONCEPTS = {
    {
     "contrast": "일과성 시력상실 = 지나간 증상 vs 실명 전조",
     "point": "허혈 시신경병증에 의한 실명은 대개 머리·눈 증상이 먼저 온 뒤 생긴다 — 그 신호에서 치료하면 위험이 줄어든다 <sup>[1 363장 p.2812]</sup>. 저절로 회복됐다는 것은 안심 근거가 아니라 치료를 서두를 근거다.",
-    "exception": "망막중심동맥폐쇄로 이미 시력을 잃은 경우의 첫 검사 순서는 cn.ophth.crao.arteritic-workup 에서 다룬다.",
+    "exception": "망막중심동맥폐쇄로 이미 시력을 잃은 경우의 첫 검사 순서는 「망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다」 에서 다룬다.",
     "cites": ""
    }
   ],
