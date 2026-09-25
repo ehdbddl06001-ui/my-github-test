@@ -2,6 +2,1388 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0133",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "피부 — 변하는 하지 색소 병변의 더모스코피와 생검",
+  "type": "피부 — 변하는 하지 색소 병변의 더모스코피와 생검",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-25",
+  "vignette": "55세 여자가 왼쪽 정강이에 있는 갈색 점이 지난 1년 동안 커졌다며 피부과에 왔다. 언니가 먼저 알아차렸고, 가렵거나 피가 난 적은 없다. 피부가 흰 편이고 10대에 물집이 잡힐 정도로 햇볕에 탄 적이 여러 번 있다. 본인과 가족 모두 피부암 병력은 없다. 진찰에서 왼쪽 정강이 앞면에 지름 9 mm 의 편평한 갈색 반점이 있고, 경계가 불규칙하며 색이 고르지 않다. 서혜부 림프절은 만져지지 않는다. 다른 부위의 점들은 작고 색이 고르다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "1~3 mm 절제연으로 병변 전체를 절제 생검한다",
+   "2 cm 절제연으로 광범위 절제를 한다",
+   "액체질소로 냉동치료를 한다",
+   "이미퀴모드 크림을 12주 동안 바르게 한다",
+   "안심시키고 12개월 뒤 더모스코피를 다시 한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 더모스코피에서 병변은 구조와 색이 비대칭이고, 밝은 갈색과 짙은 갈색이 섞여 있으며, 색소망이 굵고 불규칙하고, 가장자리에 크기와 분포가 고르지 않은 점·소구가 있으며, 가운데에 흰색 무구조 영역(퇴행)이 있다. 이런 흑색종 구조에 1년간 커짐·불규칙한 경계·고르지 않은 색·지름 9 mm(ABCDE)가 더해져 흑색종 가능성이 높다. 다음 단계는 병변 전체를 1~3 mm 절제연으로 떼어 내는 진단적 전절제 생검이다. 병리의사가 Breslow 두께를 재야 최종 광범위 절제연과 감시림프절 생검 여부를 정할 수 있다.\n- 원리: <b>더모스코피는 표피-진피 경계에서 멜라닌이 어떻게 배열되었는지를 보여 준다.</b> 양성 모반은 한 가지 규칙으로 자라 규칙적인 망·고른 소구, 대칭, 한두 가지 색을 보인다. <b>흑색종</b>은 서로 다른 속도로 자라는 클론이 섞이고 표피를 따라 위·옆으로 퍼지기 때문에(파젯양 확산) <b>구조와 색의 비대칭</b>, <b>굵고 불규칙한 망</b>, 가장자리의 <b>불규칙한 점·소구</b>, 줄무늬, 그리고 면역계가 종양을 공격한 자리의 <b>퇴행 구조</b>(흰 흉터 모양 영역, 청회색 후추 점)를 만든다.<br> <b>왜 먼저 좁은 절제연으로 전체를 떼어 내는가?</b> 흑색종의 치료는 전체 표본에서 잰 <b>Breslow 두께</b>(침윤 깊이)로 정해진다. 일부만 떼거나 얕게 깎아 내면 가장 두꺼운 부분을 놓쳐 병기를 낮게 매길 수 있다. 1~3 mm 절제연은 병변을 다 떼면서도 림프 흐름을 흐트러뜨리지 않아, 뒤에 할 <b>감시림프절 생검</b>의 정확도를 지킨다.<br> 조직 결과가 나오면 광범위 절제연을 두께로 고른다 — 제자리 0.5~1 cm, 1 mm 이하 1 cm, 1~2 mm 1~2 cm, 2 mm 초과 2 cm. 감시림프절 생검은 대략 0.8 mm 이상(또는 궤양이 있으면 더 얇아도)에서 고려한다. 냉동치료·이미퀴모드처럼 조직을 없애는 치료는 병기를 매길 표본을 남기지 않는다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1~3 mm 전절제 생검(정답)</th><th>2 cm 광범위 절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td><b>진단과 Breslow 두께 측정</b></td><td>병기 확인 뒤의 최종 치료</td></tr> <tr><td>시점</td><td><b>의심 병변, 조직 결과 없음</b></td><td>생검에서 두께 2 mm 초과 침윤성 흑색종</td></tr> <tr><td>림프 흐름</td><td>보존 — 감시림프절 지도화 가능</td><td>지도화 전에 하면 흐름이 흐트러질 수 있음</td></tr> <tr><td>먼저 했을 때</td><td>표준 순서</td><td>제자리·얇은 흑색종이면 과잉 치료, 절제연을 근거 없이 고름</td></tr> </tbody></table> <b>가장 가까운 오답은 2 cm 광범위 절제</b>다 — 병변이 악성으로 보이고 두꺼운 흑색종의 치료이기 때문이다. 갈림길은 <b>두께를 아는가</b>다. 절제연은 Breslow 두께로 정하므로 좁은 절제연의 진단적 전절제 생검이 언제나 먼저다.\n- 오답 이유:\n  - ② 2 cm 광범위 절제는 두께 2 mm 를 넘는 흑색종의 최종 수술이라 악성으로 보이는 병변에서 고르기 쉽다. 그러나 조직이 없으면 두께도 절제연도 알 수 없고, 이 병변이 제자리 흑색종이면 0.5~1 cm 로 충분하다. 생검에서 두께 2.5 mm 의 침윤성 흑색종이 나왔다면 정답이 된다.\n  - ③ 냉동치료는 광선각화증·사마귀 같은 얕은 병변을 없애는 치료로, 편평하고 얇아 보이는 반점에 떠올릴 수 있다. 표본이 남지 않아 흑색종을 진단하거나 병기를 매길 수 없고 불완전하게 치료되면 재발한다. 햇빛 노출 부위의 거칠고 비늘 있는 광선각화증이고 멜라닌세포 구조가 없다면 적절하다.\n  - ④ 이미퀴모드는 국소 면역을 자극해 표재성 기저세포암·광선각화증에, 때로는 수술이 어려운 얼굴의 악성 흑색점에 쓴다. 진단되지 않은 채 변하는 다리 병변의 첫 처치는 아니다. 조직으로 확인된 얼굴의 악성 흑색점이고 고령이라 수술이 어렵다면 고려한다.\n  - ⑤ 12개월 뒤 다시 보는 경과 관찰은 흑색종 구조가 없는 안정적이고 대칭인 모반에 맞다. 이 병변은 1년간 커졌고 비대칭·여러 색·불규칙 망·퇴행 구조가 있어 기다리면 더 깊이 침윤할 위험이 있다. 작고 대칭이며 색이 고르고 규칙적인 망에 변화가 없는 점이라면 이 선지가 맞다.\n- 함정: 악성으로 보인다고 넓은 절제부터 하지 않는다. 절제연은 조직의 Breslow 두께로 정하므로 좁은 절제연의 전절제 생검이 먼저다.\n- 학습목표: 변하는 하지 색소 병변의 더모스코피에서 비대칭·여러 갈색 음영·불규칙 색소망·가장자리 불규칙 점·중앙 퇴행 영역을 읽어 흑색종을 의심하고, 좁은 절제연(1~3 mm)의 전절제 생검을 고르며 조직 확인 전 광범위 절제와 구별한다\n- 근거·출처: Swetter SM et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol 2019;80:208 · NCCN Clinical Practice Guidelines in Oncology: Melanoma: Cutaneous — principles of biopsy and surgical margins · Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · ISIC Archive ISIC_0000022 (CC0) — 55 F, lower extremity, histopathology-confirmed melanoma in situ; teacher-only · 작성자 판독(2026-09-26): 비대칭, 여러 갈색 음영, 굵고 불규칙한 색소망, 가장자리 불규칙 점·소구, 중앙 흰색 무구조 영역\n\n## 출처\n- ISIC Archive ISIC_0000022 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더모스코피에서 병변은 구조와 색이 비대칭이고, 밝은 갈색과 짙은 갈색이 섞여 있으며, 색소망이 굵고 불규칙하고, 가장자리에 크기와 분포가 고르지 않은 점·소구가 있으며, 가운데에 흰색 무구조 영역(퇴행)이 있다. 이런 흑색종 구조에 1년간 커짐·불규칙한 경계·고르지 않은 색·지름 9 mm(ABCDE)가 더해져 흑색종 가능성이 높다. 다음 단계는 병변 전체를 1~3 mm 절제연으로 떼어 내는 진단적 전절제 생검이다. 병리의사가 Breslow 두께를 재야 최종 광범위 절제연과 감시림프절 생검 여부를 정할 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>더모스코피는 표피-진피 경계에서 멜라닌이 어떻게 배열되었는지를 보여 준다.</b> 양성 모반은 한 가지 규칙으로 자라 규칙적인 망·고른 소구, 대칭, 한두 가지 색을 보인다. <b>흑색종</b>은 서로 다른 속도로 자라는 클론이 섞이고 표피를 따라 위·옆으로 퍼지기 때문에(파젯양 확산) <b>구조와 색의 비대칭</b>, <b>굵고 불규칙한 망</b>, 가장자리의 <b>불규칙한 점·소구</b>, 줄무늬, 그리고 면역계가 종양을 공격한 자리의 <b>퇴행 구조</b>(흰 흉터 모양 영역, 청회색 후추 점)를 만든다.<br> <b>왜 먼저 좁은 절제연으로 전체를 떼어 내는가?</b> 흑색종의 치료는 전체 표본에서 잰 <b>Breslow 두께</b>(침윤 깊이)로 정해진다. 일부만 떼거나 얕게 깎아 내면 가장 두꺼운 부분을 놓쳐 병기를 낮게 매길 수 있다. 1~3 mm 절제연은 병변을 다 떼면서도 림프 흐름을 흐트러뜨리지 않아, 뒤에 할 <b>감시림프절 생검</b>의 정확도를 지킨다.<br> 조직 결과가 나오면 광범위 절제연을 두께로 고른다 — 제자리 0.5~1 cm, 1 mm 이하 1 cm, 1~2 mm 1~2 cm, 2 mm 초과 2 cm. 감시림프절 생검은 대략 0.8 mm 이상(또는 궤양이 있으면 더 얇아도)에서 고려한다. 냉동치료·이미퀴모드처럼 조직을 없애는 치료는 병기를 매길 표본을 남기지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1~3 mm 전절제 생검(정답)</th><th>2 cm 광범위 절제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td><b>진단과 Breslow 두께 측정</b></td><td>병기 확인 뒤의 최종 치료</td></tr> <tr><td>시점</td><td><b>의심 병변, 조직 결과 없음</b></td><td>생검에서 두께 2 mm 초과 침윤성 흑색종</td></tr> <tr><td>림프 흐름</td><td>보존 — 감시림프절 지도화 가능</td><td>지도화 전에 하면 흐름이 흐트러질 수 있음</td></tr> <tr><td>먼저 했을 때</td><td>표준 순서</td><td>제자리·얇은 흑색종이면 과잉 치료, 절제연을 근거 없이 고름</td></tr> </tbody></table> <b>가장 가까운 오답은 2 cm 광범위 절제</b>다 — 병변이 악성으로 보이고 두꺼운 흑색종의 치료이기 때문이다. 갈림길은 <b>두께를 아는가</b>다. 절제연은 Breslow 두께로 정하므로 좁은 절제연의 진단적 전절제 생검이 언제나 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 2 cm 광범위 절제는 두께 2 mm 를 넘는 흑색종의 최종 수술이라 악성으로 보이는 병변에서 고르기 쉽다. 그러나 조직이 없으면 두께도 절제연도 알 수 없고, 이 병변이 제자리 흑색종이면 0.5~1 cm 로 충분하다. 생검에서 두께 2.5 mm 의 침윤성 흑색종이 나왔다면 정답이 된다.\n③ 냉동치료는 광선각화증·사마귀 같은 얕은 병변을 없애는 치료로, 편평하고 얇아 보이는 반점에 떠올릴 수 있다. 표본이 남지 않아 흑색종을 진단하거나 병기를 매길 수 없고 불완전하게 치료되면 재발한다. 햇빛 노출 부위의 거칠고 비늘 있는 광선각화증이고 멜라닌세포 구조가 없다면 적절하다.\n④ 이미퀴모드는 국소 면역을 자극해 표재성 기저세포암·광선각화증에, 때로는 수술이 어려운 얼굴의 악성 흑색점에 쓴다. 진단되지 않은 채 변하는 다리 병변의 첫 처치는 아니다. 조직으로 확인된 얼굴의 악성 흑색점이고 고령이라 수술이 어렵다면 고려한다.\n⑤ 12개월 뒤 다시 보는 경과 관찰은 흑색종 구조가 없는 안정적이고 대칭인 모반에 맞다. 이 병변은 1년간 커졌고 비대칭·여러 색·불규칙 망·퇴행 구조가 있어 기다리면 더 깊이 침윤할 위험이 있다. 작고 대칭이며 색이 고르고 규칙적인 망에 변화가 없는 점이라면 이 선지가 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "악성으로 보인다고 넓은 절제부터 하지 않는다. 절제연은 조직의 Breslow 두께로 정하므로 좁은 절제연의 전절제 생검이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "변하는 하지 색소 병변의 더모스코피에서 비대칭·여러 갈색 음영·불규칙 색소망·가장자리 불규칙 점·중앙 퇴행 영역을 읽어 흑색종을 의심하고, 좁은 절제연(1~3 mm)의 전절제 생검을 고르며 조직 확인 전 광범위 절제와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Swetter SM et al. Guidelines of care for the management of primary cutaneous melanoma. J Am Acad Dermatol 2019;80:208 · NCCN Clinical Practice Guidelines in Oncology: Melanoma: Cutaneous — principles of biopsy and surgical margins · Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · ISIC Archive ISIC_0000022 (CC0) — 55 F, lower extremity, histopathology-confirmed melanoma in situ; teacher-only · 작성자 판독(2026-09-26): 비대칭, 여러 갈색 음영, 굵고 불규칙한 색소망, 가장자리 불규칙 점·소구, 중앙 흰색 무구조 영역 ## 출처 ISIC Archive ISIC_0000022 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "자라는 하지 색소 병변이 더모스코피에서 비대칭·다색·불규칙 망·퇴행 구조로 흑색종이 의심되면 좁은 절제연의 전절제 생검으로 진단과 Breslow 두께를 먼저 얻는다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "광범위 절제의 절제연은 Breslow 두께로 정한다 — 조직 없이 먼저 할 수 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 비대칭·여러 갈색 음영·불규칙 색소망·가장자리 불규칙 점·중앙 흰색 퇴행 영역 + 1년간 커짐 → 흑색종 의심",
+    "치료 범위는 Breslow 두께로 정함 → 1~3 mm 절제연의 전절제 생검이 먼저"
+   ],
+   "key": [
+    {
+     "item": "영상: 구조와 색이 비대칭이고 여러 갈색 음영이 섞여 있다",
+     "why": "흑색종의 비대칭·다색",
+     "also": []
+    },
+    {
+     "item": "영상: 굵고 불규칙한 색소망과 가장자리의 불규칙한 점·소구",
+     "why": "흑색종 특이 구조",
+     "also": []
+    },
+    {
+     "item": "영상: 중앙의 흰색 무구조 영역",
+     "why": "퇴행 구조",
+     "also": []
+    },
+    {
+     "item": "지난 1년 동안 커졌다",
+     "why": "변화(ABCDE 의 E)",
+     "also": []
+    },
+    {
+     "item": "경계가 불규칙하며 색이 고르지 않다",
+     "why": "B·C 기준",
+     "also": []
+    },
+    {
+     "item": "지름 9 mm",
+     "why": "D 기준(6 mm 초과)",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "서혜부 림프절은 만져지지 않는다",
+     "why": "임상적 림프절 전이 소견이 없지만 생검 방식은 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "10대에 물집이 잡힐 정도로 햇볕에 탄 적이 여러 번",
+     "why": "위험 인자이지만 판단은 병변 소견으로 한다",
+     "also": []
+    }
+   ],
+   "summary": "1년간 커진 하지 색소 병변이 더모스코피에서 비대칭·다색·불규칙 망·가장자리 불규칙 점·중앙 퇴행 영역을 보여 흑색종이 의심된다. 1~3 mm 절제연의 전절제 생검으로 진단과 Breslow 두께를 먼저 얻는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "생검에서 두께 2 mm 를 넘는 침윤성 흑색종이 확인되었다면 2 cm 절제연의 광범위 절제가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0133.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0000022",
+   "asset_id": "ISIC-ISIC_0000022",
+   "text": "ISIC Archive ISIC_0000022 (CC-0)"
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0130",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "소아청소년 — 걸음마 시기 O다리와 구루병 선별",
+  "type": "소아청소년 — 걸음마 시기 O다리와 구루병 선별",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-25",
+  "vignette": "20개월 남아가 두 다리가 바깥으로 휜 것 같다며 부모와 함께 소아청소년과에 왔다. 13개월에 걷기 시작했고 넘어지거나 절뚝이는 일은 없다. 모유 수유를 12개월에 끊었고 지금은 우유와 고기·달걀이 들어간 식사를 잘 먹는다. 키와 몸무게는 모두 50백분위수이며 발달은 정상이다. 진찰에서 양쪽 다리가 대칭적으로 바깥으로 휘어 있고, 발목을 붙이고 섰을 때 양쪽 무릎 사이가 4 cm 벌어진다. 손목이 굵어지거나 갈비연골 이음부가 튀어나온 곳은 없다. 혈청 칼슘은 9.6 mg/dL이다. 구루병을 확인하려고 찍은 왼쪽 손목 단순 X선 사진은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경구 인산염을 보충한다",
+   "근위 경골 절골술을 계획한다",
+   "안심시키고 6개월 뒤 다시 진찰한다",
+   "고용량 비타민 D를 경구로 투여한다",
+   "밤에 착용하는 교정 보조기를 처방한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 손목 X선에서 원위 요골 골간단의 끝이 편평하고 매끈하며, 구루병에서 보이는 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐이 없다. 손목뼈와 원위 요골 골단의 작은 골화중심은 이 나이에 맞는 정상 소견이다. 성장·식이가 정상이고 구루병 진찰 소견(손목 부종·구루병 염주)도 없으며 휘어짐이 대칭적이므로 생리적 내반슬이다. 생리적 내반슬은 18~24개월에 가장 심하다가 저절로 펴지고 3~4세에는 오히려 외반슬로 넘어가므로, 안심시키고 경과를 관찰한다.\n- 원리: <b>아이의 무릎 정렬은 나이에 따라 정해진 순서로 바뀐다.</b> 신생아는 자궁 안 자세 때문에 O다리(내반슬)로 태어나, <b>18~24개월</b>까지 내반이 가장 뚜렷하고, 2세 전후 곧게 된 뒤 <b>3~4세에 X다리(외반슬)가 최대</b>, 7세 무렵 어른의 가벼운 외반으로 자리 잡는다. 그래서 20개월 아이의 <b>대칭적인</b> O다리는 대부분 정상 발달이다.<br> 의심해야 할 때는 <b>비대칭</b>, 2세 이후에도 <b>진행</b>, 키가 작음(3백분위 미만), 통증·절뚝임, 무릎 간격이 크게 벌어짐(보통 6 cm 초과), 가족력이 있을 때다. 이때 떠올리는 병이 <b>구루병</b>(영양성·저인산혈증성)과 <b>블라운트병</b>(근위 경골 내측 성장판 장애)이다.<br> <b>구루병의 X선</b>은 성장판에서 연골이 석회화되지 못해 생긴다 — 성장판이 넓어지고, 골간단 끝이 <b>컵 모양으로 패이고(cupping)</b>, 가장자리가 <b>솔처럼 갈라진다(fraying)</b>. 빨리 자라는 원위 요골·척골과 무릎 주위에서 가장 먼저 보여 손목 X선으로 선별한다. 이 아이의 골간단은 편평하고 매끈해 구루병 소견이 없다. 골화중심은 갓난아기에 유두골· 유구골, 1세 무렵 원위 요골 골단이 나타나므로 이 영상의 골화중심 수도 나이에 맞다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">생리적 내반슬(정답: 경과 관찰)</th><th>영양성 구루병(가장 가까운 오답: 비타민 D)</th></tr></thead><tbody> <tr><td>손목 X선 골간단</td><td><b>편평·매끈, 성장판 폭 정상</b></td><td>컵 모양 함몰, 솔 모양 불규칙, 성장판 넓어짐</td></tr> <tr><td>진찰</td><td><b>대칭적 휘어짐, 다른 뼈 소견 없음</b></td><td>손목 부종, 구루병 염주, 숫구멍 늦게 닫힘</td></tr> <tr><td>성장·식이</td><td>정상 키, 고른 식사</td><td>성장 지연, 비타민 D 보충 없는 장기 모유 수유·햇빛 부족</td></tr> <tr><td>검사실</td><td>칼슘 정상</td><td>알칼리인산분해효소 상승, 인 저하, 25(OH)D 저하</td></tr> </tbody></table> <b>가장 가까운 오답은 비타민 D 투여</b>다 — O다리를 보면 구루병부터 떠올리기 때문이다. 갈림길은 <b>손목 X선의 골간단 모양</b>이다. 편평·매끈하면 생리적, 컵 모양·솔 모양이면 구루병이다.\n- 오답 이유:\n  - ① 경구 인산염 보충은 X-연관 저인산혈증성 구루병의 치료로, 식사가 좋아도 생기는 구루병이라 떠올릴 수 있다. 이 병도 손목 X선에서 컵 모양 함몰·성장판 넓어짐과 혈청 인 저하가 나타나는데 이 아이는 X선이 정상이다. 가족력이 있고 인이 낮으며 X선이 구루병 소견이었다면 정답이 된다.\n  - ② 근위 경골 절골술은 4세 이후까지 진행한 블라운트병이나 보조기에 실패한 심한 변형에 한다. 20개월의 대칭적 O다리에 수술은 필요 없고, 대부분 2세 전후 저절로 펴진다. 4세가 넘은 아이에서 한쪽 경골 내반이 진행하고 X선에서 내측 골간단 함몰이 뚜렷했다면 정답이 된다.\n  - ④ 고용량 비타민 D는 영양성 구루병의 치료다. 이 아이는 식사가 고르고 키가 정상이며 손목 X선의 골간단이 편평·매끈해 구루병 소견이 없다. 손목 X선에서 골간단이 컵 모양으로 패이고 가장자리가 솔처럼 갈라졌으며 알칼리인산분해효소가 높았다면 정답이 된다.\n  - ⑤ 교정 보조기는 3세 전 블라운트병의 초기 단계에서 시도하는 치료다. 이 아이는 20개월에 휘어짐이 대칭적이고 진행 소견이 없어 생리적 범위다. 2세가 넘어 한쪽이 점점 더 휘고 무릎 X선에서 근위 경골 내측 골간단이 부리 모양으로 꺾였다면 이 선지를 고려한다.\n- 함정: O다리 = 구루병으로 곧장 가지 않는다. 20개월 전후의 대칭적 내반은 생리적이고, 손목 X선 골간단이 매끈하면 구루병 가능성은 낮다.\n- 학습목표: 걸음마 시기(생후 20개월 전후)의 대칭적 O다리에서 성장·식이·진찰과 손목 X선(원위 요골 골간단의 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐 없음)으로 구루병을 배제하고, 생리적 내반슬로 판단해 안심시키고 경과 관찰한다\n- 근거·출처: Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — torsional and angular deformities of the limb; rickets · Salenius P, Vankka E. The development of the tibiofemoral angle in children. J Bone Joint Surg Am 1975;57:259 · GRAZPEDWRI-DX (Nagy E et al., Sci Data 2022; CC BY 4.0) — 1.7 M, left wrist lateral, no fracture; teacher-only · 작성자 판독(2026-09-26): 원위 요골 골간단 끝이 편평·매끈, 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐 없음, 연령에 맞는 골화중심\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "손목 X선에서 원위 요골 골간단의 끝이 편평하고 매끈하며, 구루병에서 보이는 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐이 없다. 손목뼈와 원위 요골 골단의 작은 골화중심은 이 나이에 맞는 정상 소견이다. 성장·식이가 정상이고 구루병 진찰 소견(손목 부종·구루병 염주)도 없으며 휘어짐이 대칭적이므로 생리적 내반슬이다. 생리적 내반슬은 18~24개월에 가장 심하다가 저절로 펴지고 3~4세에는 오히려 외반슬로 넘어가므로, 안심시키고 경과를 관찰한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>아이의 무릎 정렬은 나이에 따라 정해진 순서로 바뀐다.</b> 신생아는 자궁 안 자세 때문에 O다리(내반슬)로 태어나, <b>18~24개월</b>까지 내반이 가장 뚜렷하고, 2세 전후 곧게 된 뒤 <b>3~4세에 X다리(외반슬)가 최대</b>, 7세 무렵 어른의 가벼운 외반으로 자리 잡는다. 그래서 20개월 아이의 <b>대칭적인</b> O다리는 대부분 정상 발달이다.<br> 의심해야 할 때는 <b>비대칭</b>, 2세 이후에도 <b>진행</b>, 키가 작음(3백분위 미만), 통증·절뚝임, 무릎 간격이 크게 벌어짐(보통 6 cm 초과), 가족력이 있을 때다. 이때 떠올리는 병이 <b>구루병</b>(영양성·저인산혈증성)과 <b>블라운트병</b>(근위 경골 내측 성장판 장애)이다.<br> <b>구루병의 X선</b>은 성장판에서 연골이 석회화되지 못해 생긴다 — 성장판이 넓어지고, 골간단 끝이 <b>컵 모양으로 패이고(cupping)</b>, 가장자리가 <b>솔처럼 갈라진다(fraying)</b>. 빨리 자라는 원위 요골·척골과 무릎 주위에서 가장 먼저 보여 손목 X선으로 선별한다. 이 아이의 골간단은 편평하고 매끈해 구루병 소견이 없다. 골화중심은 갓난아기에 유두골· 유구골, 1세 무렵 원위 요골 골단이 나타나므로 이 영상의 골화중심 수도 나이에 맞다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">생리적 내반슬(정답: 경과 관찰)</th><th>영양성 구루병(가장 가까운 오답: 비타민 D)</th></tr></thead><tbody> <tr><td>손목 X선 골간단</td><td><b>편평·매끈, 성장판 폭 정상</b></td><td>컵 모양 함몰, 솔 모양 불규칙, 성장판 넓어짐</td></tr> <tr><td>진찰</td><td><b>대칭적 휘어짐, 다른 뼈 소견 없음</b></td><td>손목 부종, 구루병 염주, 숫구멍 늦게 닫힘</td></tr> <tr><td>성장·식이</td><td>정상 키, 고른 식사</td><td>성장 지연, 비타민 D 보충 없는 장기 모유 수유·햇빛 부족</td></tr> <tr><td>검사실</td><td>칼슘 정상</td><td>알칼리인산분해효소 상승, 인 저하, 25(OH)D 저하</td></tr> </tbody></table> <b>가장 가까운 오답은 비타민 D 투여</b>다 — O다리를 보면 구루병부터 떠올리기 때문이다. 갈림길은 <b>손목 X선의 골간단 모양</b>이다. 편평·매끈하면 생리적, 컵 모양·솔 모양이면 구루병이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 인산염 보충은 X-연관 저인산혈증성 구루병의 치료로, 식사가 좋아도 생기는 구루병이라 떠올릴 수 있다. 이 병도 손목 X선에서 컵 모양 함몰·성장판 넓어짐과 혈청 인 저하가 나타나는데 이 아이는 X선이 정상이다. 가족력이 있고 인이 낮으며 X선이 구루병 소견이었다면 정답이 된다.\n② 근위 경골 절골술은 4세 이후까지 진행한 블라운트병이나 보조기에 실패한 심한 변형에 한다. 20개월의 대칭적 O다리에 수술은 필요 없고, 대부분 2세 전후 저절로 펴진다. 4세가 넘은 아이에서 한쪽 경골 내반이 진행하고 X선에서 내측 골간단 함몰이 뚜렷했다면 정답이 된다.\n④ 고용량 비타민 D는 영양성 구루병의 치료다. 이 아이는 식사가 고르고 키가 정상이며 손목 X선의 골간단이 편평·매끈해 구루병 소견이 없다. 손목 X선에서 골간단이 컵 모양으로 패이고 가장자리가 솔처럼 갈라졌으며 알칼리인산분해효소가 높았다면 정답이 된다.\n⑤ 교정 보조기는 3세 전 블라운트병의 초기 단계에서 시도하는 치료다. 이 아이는 20개월에 휘어짐이 대칭적이고 진행 소견이 없어 생리적 범위다. 2세가 넘어 한쪽이 점점 더 휘고 무릎 X선에서 근위 경골 내측 골간단이 부리 모양으로 꺾였다면 이 선지를 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "O다리 = 구루병으로 곧장 가지 않는다. 20개월 전후의 대칭적 내반은 생리적이고, 손목 X선 골간단이 매끈하면 구루병 가능성은 낮다."
+   },
+   {
+    "k": "학습목표",
+    "v": "걸음마 시기(생후 20개월 전후)의 대칭적 O다리에서 성장·식이·진찰과 손목 X선(원위 요골 골간단의 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐 없음)으로 구루병을 배제하고, 생리적 내반슬로 판단해 안심시키고 경과 관찰한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — torsional and angular deformities of the limb; rickets · Salenius P, Vankka E. The development of the tibiofemoral angle in children. J Bone Joint Surg Am 1975;57:259 · GRAZPEDWRI-DX (Nagy E et al., Sci Data 2022; CC BY 4.0) — 1.7 M, left wrist lateral, no fracture; teacher-only · 작성자 판독(2026-09-26): 원위 요골 골간단 끝이 편평·매끈, 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐 없음, 연령에 맞는 골화중심 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "20개월 아이의 대칭적 O다리에서 성장·식이·진찰이 정상이고 손목 X선 골간단이 편평·매끈하면 생리적 내반슬이므로 경과 관찰한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "구루병은 손목 X선에서 골간단의 컵 모양 함몰·솔 모양 불규칙·성장판 넓어짐이 보인다 — 이 영상에는 없다",
+   "steps": 2,
+   "chain": [
+    "20개월·대칭적 휘어짐·정상 성장과 식이 → 생리적 내반슬의 전형적인 나이와 모양",
+    "영상: 원위 요골 골간단이 편평·매끈하고 성장판이 넓지 않음 → 구루병 가능성 낮음 → 경과 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단 끝이 편평하고 매끈하다",
+     "why": "컵 모양 함몰·솔 모양 불규칙 없음 — 구루병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "20개월 남아",
+     "why": "생리적 내반이 가장 뚜렷한 나이",
+     "also": []
+    },
+    {
+     "item": "양쪽 다리가 대칭적으로 바깥으로 휘어",
+     "why": "대칭 — 병적 원인 가능성이 낮다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "키와 몸무게는 모두 50백분위수",
+     "why": "구루병·골이형성증의 성장 장애가 없다",
+     "also": []
+    },
+    {
+     "item": "손목이 굵어지거나 갈비연골 이음부가 튀어나온 곳은 없다",
+     "why": "구루병 진찰 소견이 없다",
+     "also": []
+    },
+    {
+     "item": "우유와 고기·달걀이 들어간 식사",
+     "why": "영양성 구루병 위험을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "영상: 손목뼈와 원위 요골 골단의 작은 골화중심",
+     "why": "나이에 맞는 정상 — 이상 소견으로 읽지 않는다",
+     "also": []
+    },
+    {
+     "item": "양쪽 무릎 사이가 4 cm",
+     "why": "생리적 범위 — 크게 벌어진 간격이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "20개월 아이의 대칭적 O다리이고 성장·식이·진찰이 정상이며 손목 X선의 골간단이 편평·매끈해 구루병 소견이 없다. 생리적 내반슬이므로 안심시키고 경과를 본다.",
+   "switch": {
+    "choice": "D",
+    "condition": "손목 X선에서 골간단이 컵 모양으로 패이고 솔처럼 갈라졌으며 알칼리인산분해효소가 높았다면 비타민 D 투여가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0130.png",
+   "caption": "왼쪽 손목 측면 단순 X선, 원본 그대로 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0563_0852376160_01_WRI-L2_M001",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0129",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "진단검사·영상의학 판독 — 뇌 MRI 시퀀스와 종괴 효과 읽기",
+  "type": "진단검사·영상의학 판독 — 뇌 MRI 시퀀스와 종괴 효과 읽기",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-25",
+  "vignette": "A 68-year-old woman is brought to the physician by her daughter because of 3 weeks of progressive weakness of her left arm and leg and headaches that are worse in the morning. She has had two episodes of vomiting this week. She has hypertension treated with amlodipine. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 146/88 mmHg. She is alert and oriented. Neurologic examination shows 4/5 strength in the left upper and lower extremities with a left pronator drift and a left extensor plantar response. Sensation is intact. Funduscopic examination shows blurred optic disc margins bilaterally. Leukocyte count and serum glucose concentration are within the reference ranges. An axial MRI of the brain is shown.",
+  "question": "Which of the following is the most accurate interpretation of this image?",
+  "options": [
+   "T1-weighted image showing a right hemispheric mass with surrounding edema and leftward midline shift",
+   "T2-weighted image showing a left hemispheric mass with surrounding edema and rightward midline shift",
+   "FLAIR image showing an acute right hemispheric infarct with no mass effect or midline shift",
+   "Diffusion-weighted image showing a right subdural hematoma compressing the lateral ventricle",
+   "T2-weighted image showing a right hemispheric mass with surrounding edema and leftward midline shift"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The cerebrospinal fluid in the lateral ventricle and sulci is bright and the white matter is darker than the gray matter, which identifies a T2-weighted image (CSF is dark on T1 and suppressed on FLAIR). In the standard display orientation the patient's right is on the viewer's left: there is a heterogeneous hyperintense intra-axial mass in the right frontoparietal deep white matter with finger-like surrounding hyperintensity (vasogenic edema), effacement of the right lateral ventricle, and displacement of the septum pellucidum toward the left (subfalcine shift). This matches her left hemiparesis and signs of raised intracranial pressure (morning headache, vomiting, papilledema).\n- 원리: MRI contrast depends on how quickly protons recover (<b>T1</b>) and lose phase coherence (<b>T2</b>) after the radiofrequency pulse. <b>Free water</b> such as CSF has long T1 and long T2: it is <b>dark on T1-weighted</b> images (short TR/TE) and <b>bright on T2-weighted</b> images (long TR/TE). <b>FLAIR</b> is a T2-weighted sequence with an inversion pulse that nulls free water, so CSF is dark while edema and gliosis remain bright. Myelinated white matter, rich in lipid, is brighter than gray matter on T1 and darker on T2. So the fastest way to name a sequence is to look at the ventricles first, then compare gray and white matter.<br> <b>Vasogenic edema</b> arises when the blood–brain barrier breaks down around tumors or abscesses: plasma leaks into the extracellular space and tracks along white matter tracts, sparing the cortex — the \"finger-like\" pattern. It is bright on T2/FLAIR. <b>Mass effect</b> is judged by sulcal effacement, ventricular compression, and <b>subfalcine herniation</b> — the septum pellucidum and cingulate gyrus shift beneath the falx away from the mass.<br> Axial images are displayed in the <b>radiologic convention</b>: as if looking up from the patient's feet, so the patient's right is on the viewer's left. A lesion on the viewer's left is in the right hemisphere and causes left-sided weakness.\n- 비교: <table><thead><tr><th style=\"width:24%\">Clue</th><th style=\"width:38%\">T2-weighted (answer)</th><th>T1-weighted (closest rival)</th></tr></thead><tbody> <tr><td>CSF in ventricles/sulci</td><td><b>Bright</b></td><td>Dark</td></tr> <tr><td>White vs gray matter</td><td><b>White matter darker</b></td><td>White matter brighter</td></tr> <tr><td>Vasogenic edema</td><td><b>Bright, finger-like in white matter</b></td><td>Subtle, mildly dark</td></tr> <tr><td>FLAIR by comparison</td><td colspan=\"2\">Edema bright but CSF dark — the ventricles are the tell</td></tr> </tbody></table> <b>The closest rival is the same description on a T1-weighted image</b> — laterality and mass effect are correct, only the sequence is wrong. The dividing line is <b>the brightness of CSF</b>. Then laterality: viewer's left = patient's right, which fits the left hemiparesis.\n- 오답 이유:\n  - (A) The T1-weighted option describes the lesion, edema, and shift correctly but names the wrong sequence. On T1-weighted images CSF is dark and white matter is brighter than gray matter, the opposite of this image. If the ventricles were dark and the edema only faintly hypointense, this would be the answer.\n  - (B) This option reverses the laterality by reading the image as if the viewer's left were the patient's left. In the radiologic convention the mass on the viewer's left lies in the right hemisphere, which is consistent with left-sided weakness. It would be correct for a patient with right hemiparesis and a lesion on the viewer's right.\n  - (C) An acute infarct is bright on FLAIR and diffusion-weighted images, but here the CSF is bright (not FLAIR), the abnormality is a heterogeneous mass with white-matter edema and midline shift, and the history is 3 weeks of progression rather than sudden onset. A wedge-shaped cortical-subcortical lesion in a vascular territory with sudden deficits would fit this option.\n  - (D) A subdural hematoma is extra-axial: a crescent-shaped collection between the skull and brain that compresses the hemisphere from outside. This lesion lies within the deep white matter, and the image is not a diffusion-weighted sequence. A crescentic collection along the convexity in an older patient on anticoagulants after a fall would fit this option.\n- 함정: Name the sequence from the CSF first, then read laterality in radiologic convention — not the other way round.\n- 학습목표: 뇌 MRI 축상면에서 뇌척수액이 밝은 것으로 T2 강조영상을 알아보고, 표준 표시 방향(환자 오른쪽 = 화면 왼쪽)에서 오른쪽 대뇌 반구 종괴와 주변 혈관성 부종·왼쪽으로의 대뇌낫밑 이동을 읽어 임상 소견(왼쪽 편마비)과 맞춘다\n- 근거·출처: Osborn AG, Hedlund GL, Salzman KL. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — MR sequences; brain herniations · UPENN-GBM collection, The Cancer Imaging Archive (CC BY 4.0) — teacher-only provenance · 작성자 판독(2026-09-26): T2 축상면, 환자 우측 전두-두정 심부 백질 불균질 고신호 종괴, 혈관성 부종, 우측 측뇌실 소실, 투명중격 좌측 이동\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …13203111 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The cerebrospinal fluid in the lateral ventricle and sulci is bright and the white matter is darker than the gray matter, which identifies a T2-weighted image (CSF is dark on T1 and suppressed on FLAIR). In the standard display orientation the patient's right is on the viewer's left: there is a heterogeneous hyperintense intra-axial mass in the right frontoparietal deep white matter with finger-like surrounding hyperintensity (vasogenic edema), effacement of the right lateral ventricle, and displacement of the septum pellucidum toward the left (subfalcine shift). This matches her left hemiparesis and signs of raised intracranial pressure (morning headache, vomiting, papilledema)."
+   },
+   {
+    "k": "원리",
+    "v": "MRI contrast depends on how quickly protons recover (<b>T1</b>) and lose phase coherence (<b>T2</b>) after the radiofrequency pulse. <b>Free water</b> such as CSF has long T1 and long T2: it is <b>dark on T1-weighted</b> images (short TR/TE) and <b>bright on T2-weighted</b> images (long TR/TE). <b>FLAIR</b> is a T2-weighted sequence with an inversion pulse that nulls free water, so CSF is dark while edema and gliosis remain bright. Myelinated white matter, rich in lipid, is brighter than gray matter on T1 and darker on T2. So the fastest way to name a sequence is to look at the ventricles first, then compare gray and white matter.<br> <b>Vasogenic edema</b> arises when the blood–brain barrier breaks down around tumors or abscesses: plasma leaks into the extracellular space and tracks along white matter tracts, sparing the cortex — the \"finger-like\" pattern. It is bright on T2/FLAIR. <b>Mass effect</b> is judged by sulcal effacement, ventricular compression, and <b>subfalcine herniation</b> — the septum pellucidum and cingulate gyrus shift beneath the falx away from the mass.<br> Axial images are displayed in the <b>radiologic convention</b>: as if looking up from the patient's feet, so the patient's right is on the viewer's left. A lesion on the viewer's left is in the right hemisphere and causes left-sided weakness."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Clue</th><th style=\"width:38%\">T2-weighted (answer)</th><th>T1-weighted (closest rival)</th></tr></thead><tbody> <tr><td>CSF in ventricles/sulci</td><td><b>Bright</b></td><td>Dark</td></tr> <tr><td>White vs gray matter</td><td><b>White matter darker</b></td><td>White matter brighter</td></tr> <tr><td>Vasogenic edema</td><td><b>Bright, finger-like in white matter</b></td><td>Subtle, mildly dark</td></tr> <tr><td>FLAIR by comparison</td><td colspan=\"2\">Edema bright but CSF dark — the ventricles are the tell</td></tr> </tbody></table> <b>The closest rival is the same description on a T1-weighted image</b> — laterality and mass effect are correct, only the sequence is wrong. The dividing line is <b>the brightness of CSF</b>. Then laterality: viewer's left = patient's right, which fits the left hemiparesis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) The T1-weighted option describes the lesion, edema, and shift correctly but names the wrong sequence. On T1-weighted images CSF is dark and white matter is brighter than gray matter, the opposite of this image. If the ventricles were dark and the edema only faintly hypointense, this would be the answer.\n(B) This option reverses the laterality by reading the image as if the viewer's left were the patient's left. In the radiologic convention the mass on the viewer's left lies in the right hemisphere, which is consistent with left-sided weakness. It would be correct for a patient with right hemiparesis and a lesion on the viewer's right.\n(C) An acute infarct is bright on FLAIR and diffusion-weighted images, but here the CSF is bright (not FLAIR), the abnormality is a heterogeneous mass with white-matter edema and midline shift, and the history is 3 weeks of progression rather than sudden onset. A wedge-shaped cortical-subcortical lesion in a vascular territory with sudden deficits would fit this option.\n(D) A subdural hematoma is extra-axial: a crescent-shaped collection between the skull and brain that compresses the hemisphere from outside. This lesion lies within the deep white matter, and the image is not a diffusion-weighted sequence. A crescentic collection along the convexity in an older patient on anticoagulants after a fall would fit this option."
+   },
+   {
+    "k": "함정",
+    "v": "Name the sequence from the CSF first, then read laterality in radiologic convention — not the other way round."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌 MRI 축상면에서 뇌척수액이 밝은 것으로 T2 강조영상을 알아보고, 표준 표시 방향(환자 오른쪽 = 화면 왼쪽)에서 오른쪽 대뇌 반구 종괴와 주변 혈관성 부종·왼쪽으로의 대뇌낫밑 이동을 읽어 임상 소견(왼쪽 편마비)과 맞춘다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Osborn AG, Hedlund GL, Salzman KL. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — MR sequences; brain herniations · UPENN-GBM collection, The Cancer Imaging Archive (CC BY 4.0) — teacher-only provenance · 작성자 판독(2026-09-26): T2 축상면, 환자 우측 전두-두정 심부 백질 불균질 고신호 종괴, 혈관성 부종, 우측 측뇌실 소실, 투명중격 좌측 이동 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …13203111 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "뇌척수액이 밝아 T2 강조영상이고, 화면 왼쪽(환자 오른쪽) 반구의 종괴·부종·왼쪽으로의 정중선 이동이 왼쪽 편마비와 맞는다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "T1 강조영상에서는 뇌척수액이 어둡고 백질이 회백질보다 밝다 — 이 영상은 반대다",
+   "steps": 3,
+   "chain": [
+    "영상: 뇌실·고랑의 뇌척수액이 밝고 백질이 회백질보다 어둡다 → T2 강조영상",
+    "영상: 화면 왼쪽 반구의 불균질 고신호 종괴와 백질 부종, 투명중격이 화면 오른쪽으로 밀림",
+    "방사선학적 표시 규약(화면 왼쪽 = 환자 오른쪽) → 오른쪽 반구 종괴, 왼쪽 편마비와 일치"
+   ],
+   "key": [
+    {
+     "item": "영상: 측뇌실 뇌척수액이 밝다",
+     "why": "T2 강조영상의 표지(T1 은 어둡고 FLAIR 는 억제)",
+     "also": []
+    },
+    {
+     "item": "영상: 화면 왼쪽 심부 백질의 불균질 고신호 종괴와 손가락 모양 부종",
+     "why": "축내 종괴와 혈관성 부종",
+     "also": []
+    },
+    {
+     "item": "영상: 투명중격이 화면 오른쪽(환자 왼쪽)으로 밀림",
+     "why": "대뇌낫밑 이동",
+     "also": []
+    },
+    {
+     "item": "progressive weakness of her left arm and leg",
+     "why": "오른쪽 반구 병변과 맞다",
+     "also": []
+    },
+    {
+     "item": "headaches that are worse in the morning",
+     "why": "두개내압 상승과 맞다",
+     "also": []
+    },
+    {
+     "item": "blurred optic disc margins bilaterally",
+     "why": "유두부종 — 종괴 효과",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "3 weeks of progressive",
+     "why": "급성 뇌경색의 갑작스러운 발생과 다르다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "뇌졸중 위험 인자로 끌리지만 영상 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "뇌척수액이 밝아 T2 강조영상이다. 화면 왼쪽(환자 오른쪽) 반구 심부 백질에 불균질 고신호 종괴와 혈관성 부종이 있고 투명중격이 왼쪽으로 밀려 있어, 왼쪽 편마비·두개내압 상승과 맞는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "환자가 오른쪽 편마비였고 종괴가 화면 오른쪽에 있었다면 왼쪽 반구 종괴라는 해석이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0129.png",
+   "caption": "Axial MRI of the brain at the level of the lateral ventricles, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.159726640958288333855119953778013203111",
+   "asset_id": "TCIA-UPENN_GBM-64937111715183",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …13203111"
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0125",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "호흡기 — 기계환기 중인 코로나19 급성호흡곤란증후군의 일회호흡량",
+  "type": "호흡기 — 기계환기 중인 코로나19 급성호흡곤란증후군의 일회호흡량",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-25",
+  "vignette": "A 64-year-old man with COVID-19 pneumonia was intubated 12 hours ago in the intensive care unit because of worsening hypoxemia despite high-flow nasal cannula oxygen. He is 175 cm (5 ft 9 in) tall and weighs 102 kg (225 lb). Current ventilator settings are volume-assist control with a tidal volume of 700 mL, respiratory rate of 18/min, PEEP of 8 cm H2O, and FiO2 of 0.8. The plateau pressure is 34 cm H2O. His temperature is 38.1°C, pulse is 108/min, and blood pressure is 118/70 mmHg on a low-dose norepinephrine infusion. Breath sounds are equal bilaterally with diffuse crackles. Arterial blood gas analysis shows pH 7.36, PaCO2 44 mmHg, and PaO2 88 mmHg. Bedside echocardiography shows normal left ventricular size and function. A portable chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate change to the ventilator settings?",
+  "options": [
+   "Decrease the PEEP to 0 cm H2O to lower the plateau pressure",
+   "Increase the tidal volume to 10 mL/kg of actual body weight",
+   "Change to high-frequency oscillatory ventilation",
+   "Reduce the tidal volume to 6 mL/kg of predicted body weight",
+   "Reduce the tidal volume to 6 mL/kg of actual body weight"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The supine portable chest x-ray shows an endotracheal tube, an enteric tube, and central venous catheters with bilateral airspace opacities, denser on the right in the perihilar region and lower zone, and no pneumothorax. With bilateral opacities within a week of the insult, a PaO2/FiO2 ratio of 88/0.8 = 110 on PEEP 8, and normal left ventricular function, he meets the Berlin criteria for moderate ARDS. The current tidal volume of 700 mL is about 10 mL/kg of his predicted body weight (about 70.6 kg for a 175-cm man) and the plateau pressure of 34 cm H2O exceeds 30. Lung-protective ventilation — tidal volume 6 mL/kg of predicted body weight (about 420 mL) with a plateau pressure of 30 cm H2O or less — reduces mortality.\n- 원리: In ARDS only a small part of the lung is aerated — the <b>\"baby lung\"</b>. A tidal volume that would be normal for healthy lungs is delivered into this small compliant region and overdistends it (<b>volutrauma</b>), while collapsed units open and close each breath (<b>atelectrauma</b>); both release inflammatory mediators (<b>biotrauma</b>) that worsen the lung injury and cause multiorgan failure.<br> Lung size is set by <b>height and sex, not weight</b>: an obese patient does not have larger lungs. That is why tidal volume is calculated from <b>predicted body weight</b> (men 50 + 0.91 × [height in cm − 152.4]; for 175 cm ≈ 70.6 kg), not actual weight. The ARDS Network trial showed that 6 mL/kg PBW with a plateau pressure ≤ 30 cm H2O lowered mortality from about 40% to 31% compared with 12 mL/kg.<br> The <b>plateau pressure</b> (measured during an inspiratory hold) reflects alveolar distending pressure; keeping it ≤ 30 cm H2O limits overdistension. Moderate hypercapnia that follows lower tidal volumes is accepted (<b>permissive hypercapnia</b>, pH ≥ 7.25), compensated partly by raising the respiratory rate. PEEP is kept or increased to hold alveoli open; prone positioning is added when PaO2/FiO2 stays below 150.\n- 비교: <table><thead><tr><th style=\"width:26%\">Setting</th><th style=\"width:37%\">6 mL/kg predicted body weight (answer)</th><th>6 mL/kg actual body weight (closest rival)</th></tr></thead><tbody> <tr><td>Basis</td><td><b>Height and sex → lung size</b></td><td>Total weight, including fat that adds no lung</td></tr> <tr><td>This patient</td><td><b>70.6 kg × 6 ≈ 420 mL</b></td><td>102 kg × 6 ≈ 610 mL (≈ 8.7 mL/kg PBW)</td></tr> <tr><td>Expected plateau pressure</td><td>Likely ≤ 30 cm H2O</td><td>Likely still near or above 30 cm H2O</td></tr> <tr><td>Evidence</td><td>Mortality benefit (ARDSNet)</td><td>Not lung-protective in obesity</td></tr> </tbody></table> <b>The closest rival is 6 mL/kg of actual body weight</b> — the number \"6 mL/kg\" is right, but the denominator is wrong. The dividing line is <b>which weight</b>: the lungs of a 175-cm man are the same size at 70 kg or 102 kg, so the calculation always uses predicted body weight.\n- 오답 이유:\n  - (A) Decreasing PEEP to 0 would lower the plateau pressure, but it lets unstable alveoli collapse at end-expiration, worsening shunt and atelectrauma in a patient on FiO2 0.8. PEEP is lowered when there is barotrauma with hemodynamic compromise from high intrathoracic pressure and oxygenation is already adequate.\n  - (B) Increasing the tidal volume to 10 mL/kg of actual body weight (about 1,020 mL) would raise the plateau pressure further and increase volutrauma; the PaCO2 of 44 mmHg does not call for more ventilation. Larger tidal volumes are used only in patients without lung injury, and even then about 6–8 mL/kg PBW is preferred.\n  - (C) High-frequency oscillatory ventilation was proposed as the ultimate small-tidal-volume strategy, but trials (OSCILLATE, OSCAR) found no benefit and possible harm in moderate-to-severe ARDS. It is not a routine next step; conventional lung-protective ventilation is tried first and HFOV is reserved for refractory hypoxemia in selected centers.\n  - (E) Six mL/kg of actual body weight uses the right number with the wrong weight; in this 102-kg man it gives about 610 mL, roughly 8.7 mL/kg of predicted body weight, which still overdistends the small aerated lung. It would be correct only if his actual weight equaled his predicted body weight of about 70 kg.\n- 함정: 6 mL/kg 라는 숫자만 외우면 실제 체중으로 계산하는 함정에 빠진다. 폐 크기는 키와 성별이 정한다.\n- 학습목표: 코로나19 급성호흡곤란증후군으로 기계환기 중인 환자에서 흉부 X선의 양측 음영과 PaO2/FiO2 비로 ARDS를 확인하고, 일회호흡량을 실제 체중이 아닌 예측 체중 6 mL/kg 으로 낮추고 고원압 30 cmH2O 이하를 목표로 한다\n- 근거·출처: ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and ARDS. N Engl J Med 2000;342:1301 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526 · Fan E et al. An official ATS/ESICM/SCCM clinical practice guideline: mechanical ventilation in adult patients with ARDS. Am J Respir Crit Care Med 2017;195:1253 · 작성자 판독(2026-09-26): 앙와위 AP, 기관내관·비위관·중심정맥관, 양측(우측 우세) 폐문 주위·하폐야 음영, 기흉 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38227053 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The supine portable chest x-ray shows an endotracheal tube, an enteric tube, and central venous catheters with bilateral airspace opacities, denser on the right in the perihilar region and lower zone, and no pneumothorax. With bilateral opacities within a week of the insult, a PaO2/FiO2 ratio of 88/0.8 = 110 on PEEP 8, and normal left ventricular function, he meets the Berlin criteria for moderate ARDS. The current tidal volume of 700 mL is about 10 mL/kg of his predicted body weight (about 70.6 kg for a 175-cm man) and the plateau pressure of 34 cm H2O exceeds 30. Lung-protective ventilation — tidal volume 6 mL/kg of predicted body weight (about 420 mL) with a plateau pressure of 30 cm H2O or less — reduces mortality."
+   },
+   {
+    "k": "원리",
+    "v": "In ARDS only a small part of the lung is aerated — the <b>\"baby lung\"</b>. A tidal volume that would be normal for healthy lungs is delivered into this small compliant region and overdistends it (<b>volutrauma</b>), while collapsed units open and close each breath (<b>atelectrauma</b>); both release inflammatory mediators (<b>biotrauma</b>) that worsen the lung injury and cause multiorgan failure.<br> Lung size is set by <b>height and sex, not weight</b>: an obese patient does not have larger lungs. That is why tidal volume is calculated from <b>predicted body weight</b> (men 50 + 0.91 × [height in cm − 152.4]; for 175 cm ≈ 70.6 kg), not actual weight. The ARDS Network trial showed that 6 mL/kg PBW with a plateau pressure ≤ 30 cm H2O lowered mortality from about 40% to 31% compared with 12 mL/kg.<br> The <b>plateau pressure</b> (measured during an inspiratory hold) reflects alveolar distending pressure; keeping it ≤ 30 cm H2O limits overdistension. Moderate hypercapnia that follows lower tidal volumes is accepted (<b>permissive hypercapnia</b>, pH ≥ 7.25), compensated partly by raising the respiratory rate. PEEP is kept or increased to hold alveoli open; prone positioning is added when PaO2/FiO2 stays below 150."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Setting</th><th style=\"width:37%\">6 mL/kg predicted body weight (answer)</th><th>6 mL/kg actual body weight (closest rival)</th></tr></thead><tbody> <tr><td>Basis</td><td><b>Height and sex → lung size</b></td><td>Total weight, including fat that adds no lung</td></tr> <tr><td>This patient</td><td><b>70.6 kg × 6 ≈ 420 mL</b></td><td>102 kg × 6 ≈ 610 mL (≈ 8.7 mL/kg PBW)</td></tr> <tr><td>Expected plateau pressure</td><td>Likely ≤ 30 cm H2O</td><td>Likely still near or above 30 cm H2O</td></tr> <tr><td>Evidence</td><td>Mortality benefit (ARDSNet)</td><td>Not lung-protective in obesity</td></tr> </tbody></table> <b>The closest rival is 6 mL/kg of actual body weight</b> — the number \"6 mL/kg\" is right, but the denominator is wrong. The dividing line is <b>which weight</b>: the lungs of a 175-cm man are the same size at 70 kg or 102 kg, so the calculation always uses predicted body weight."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Decreasing PEEP to 0 would lower the plateau pressure, but it lets unstable alveoli collapse at end-expiration, worsening shunt and atelectrauma in a patient on FiO2 0.8. PEEP is lowered when there is barotrauma with hemodynamic compromise from high intrathoracic pressure and oxygenation is already adequate.\n(B) Increasing the tidal volume to 10 mL/kg of actual body weight (about 1,020 mL) would raise the plateau pressure further and increase volutrauma; the PaCO2 of 44 mmHg does not call for more ventilation. Larger tidal volumes are used only in patients without lung injury, and even then about 6–8 mL/kg PBW is preferred.\n(C) High-frequency oscillatory ventilation was proposed as the ultimate small-tidal-volume strategy, but trials (OSCILLATE, OSCAR) found no benefit and possible harm in moderate-to-severe ARDS. It is not a routine next step; conventional lung-protective ventilation is tried first and HFOV is reserved for refractory hypoxemia in selected centers.\n(E) Six mL/kg of actual body weight uses the right number with the wrong weight; in this 102-kg man it gives about 610 mL, roughly 8.7 mL/kg of predicted body weight, which still overdistends the small aerated lung. It would be correct only if his actual weight equaled his predicted body weight of about 70 kg."
+   },
+   {
+    "k": "함정",
+    "v": "6 mL/kg 라는 숫자만 외우면 실제 체중으로 계산하는 함정에 빠진다. 폐 크기는 키와 성별이 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "코로나19 급성호흡곤란증후군으로 기계환기 중인 환자에서 흉부 X선의 양측 음영과 PaO2/FiO2 비로 ARDS를 확인하고, 일회호흡량을 실제 체중이 아닌 예측 체중 6 mL/kg 으로 낮추고 고원압 30 cmH2O 이하를 목표로 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and ARDS. N Engl J Med 2000;342:1301 · ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526 · Fan E et al. An official ATS/ESICM/SCCM clinical practice guideline: mechanical ventilation in adult patients with ARDS. Am J Respir Crit Care Med 2017;195:1253 · 작성자 판독(2026-09-26): 앙와위 AP, 기관내관·비위관·중심정맥관, 양측(우측 우세) 폐문 주위·하폐야 음영, 기흉 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38227053 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "양측 음영과 PaO2/FiO2 110 인 ARDS에서 일회호흡량은 예측 체중 6 mL/kg 으로 낮춰 고원압을 30 cmH2O 이하로 만든다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "실제 체중으로 계산하면 이 비만 환자에게 610 mL 가 되어 여전히 폐를 과팽창시킨다 — 예측 체중으로 계산해야 한다",
+   "steps": 3,
+   "chain": [
+    "영상: 양측 폐 음영 + PaO2/FiO2 110 + 정상 좌심실 기능 → 중등도 ARDS",
+    "현재 700 mL ≈ 예측 체중 10 mL/kg, 고원압 34 → 과팽창",
+    "키 175 cm 남자의 예측 체중 약 70.6 kg → 일회호흡량 약 420 mL"
+   ],
+   "key": [
+    {
+     "item": "영상: 양측 폐문 주위·하폐야 음영(우측 우세)",
+     "why": "ARDS 영상 기준(양측 음영)",
+     "also": []
+    },
+    {
+     "item": "PaO2 88 mmHg",
+     "why": "FiO2 0.8 에서 PaO2/FiO2 110 — 중등도",
+     "also": []
+    },
+    {
+     "item": "175 cm (5 ft 9 in) tall and weighs 102 kg",
+     "why": "예측 체중과 실제 체중이 크게 다르다",
+     "also": []
+    },
+    {
+     "item": "The plateau pressure is 34 cm H2O",
+     "why": "30 초과 — 일회호흡량을 줄여야 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 기흉 없음",
+     "why": "압력 손상을 먼저 처리할 상황이 아니다",
+     "also": []
+    },
+    {
+     "item": "normal left ventricular size and function",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "PaCO2 44 mmHg",
+     "why": "환기를 늘릴 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "low-dose norepinephrine infusion",
+     "why": "패혈성 쇼크 동반을 보여 주지만 환기 설정 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 X선의 양측 음영과 PaO2/FiO2 110 으로 중등도 ARDS다. 현재 일회호흡량은 예측 체중 10 mL/kg, 고원압 34 로 과하므로 예측 체중 6 mL/kg(약 420 mL)으로 낮춘다.",
+   "switch": {
+    "choice": "A",
+    "condition": "고원압이 높은 원인이 기흉·혈역학 악화이고 산소화가 충분하다면 PEEP를 낮추는 것을 먼저 고려하게 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0125.png",
+   "caption": "Portable anteroposterior chest radiograph obtained in the supine position, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1578546574492205554195138227053",
+   "asset_id": "TCIA-COVID19_AR-69868454359004",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …38227053"
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0132",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "정신 — 티아지드 병용 뒤 리튬 중독의 치료",
+  "type": "정신 — 티아지드 병용 뒤 리튬 중독의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-25",
+  "vignette": "52세 여자가 하루 동안 점점 처지고 헛소리를 해서 가족에게 이끌려 응급실에 왔다. 20년 전 양극성장애를 진단받고 탄산리튬을 복용하며 안정적으로 지냈다. 3주 전 고혈압으로 히드로클로로티아지드를 시작했고, 5일 전부터 설사와 구토가 있어 잘 먹지 못했다. 체온 37.2°C, 맥박 62회/분, 혈압 104/66 mmHg이다. 이름을 크게 부르면 눈을 떴다가 곧 감고, 양손에 거친 떨림과 사지 근간대경련이 있다. 응급실에서 1분 동안 전신 강직간대발작이 한 번 있었다. 혈청 리튬 4.3 mEq/L(3개월 전 0.8 mEq/L), 나트륨 136 mEq/L, 크레아티닌 2.4 mg/dL(3개월 전 0.8 mg/dL)이다. 심전도에서 동서맥과 QT 연장이 있다. 생리식염수 정맥 수액을 시작하였다.",
+  "question": "추가로 가장 적절한 치료는?",
+  "options": [
+   "혈액투석을 시행한다",
+   "생리식염수 수액만 계속하며 리튬 농도를 추적한다",
+   "활성탄을 경구로 투여한다",
+   "단트롤렌을 정맥 주사한다",
+   "사이프로헵타딘을 경구 투여한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 리튬을 오래 먹던 환자가 티아지드를 시작하고 설사·구토로 탈수된 뒤 의식 저하·거친 떨림·근간대경련·경련이 생겼고 혈중 리튬이 4.3 mEq/L, 크레아티닌이 2.4 mg/dL로 올랐다 — 만성 리튬 중독이다. 리튬은 분자량이 작고 단백결합이 없으며 분포용적이 작아 투석으로 잘 제거된다. EXTRIP 권고에 따라 의식 저하·경련 같은 신경학적 중증 소견이 있으면 농도와 무관하게, 또 콩팥 기능이 떨어져 있고 농도가 4.0 mEq/L를 넘으면 혈액투석을 한다. 수액만으로는 제거가 너무 느리다.\n- 원리: <b>리튬은 콩팥이 나트륨처럼 다루는 이온</b>이다. 사구체에서 거의 다 걸러진 뒤 <b>근위세관에서 나트륨과 함께 약 80 %가 재흡수</b>된다. 몸이 나트륨·체액을 아끼려 할 때 — <b>탈수, 저나트륨 식이, 티아지드(원위세관 나트륨 소실 → 근위세관 재흡수 보상 증가), ACE 억제제·NSAID(사구체여과율 감소)</b> — 리튬도 함께 붙잡혀 농도가 오른다. 티아지드는 리튬 청소율을 약 25 % 줄인다. 이 환자는 티아지드에 설사·구토 탈수가 겹쳐 급성 콩팥손상까지 생겼고, 리튬 배출이 거의 멈췄다.<br> <b>만성 중독</b>은 리튬이 이미 뇌 조직에 쌓여 있어, 같은 혈중 농도라도 급성 과량복용보다 신경 증상이 심하다(거친 떨림·근간대경련·실조·의식 저하·경련). 심장에서는 동결절 기능 장애·QT 연장이 온다. 치료의 핵심은 <b>제거</b>다. 리튬은 작고(분자량 7), 단백결합이 없고, 분포용적이 작아(0.6~0.9 L/kg) <b>혈액투석</b>으로 잘 빠진다.<br> <b>EXTRIP 기준</b> — 권고: 콩팥 기능 저하와 농도 &gt; 4.0 mEq/L, 또는 의식 저하·경련·생명을 위협하는 부정맥(농도와 무관). 제안: 농도 &gt; 5.0, 혼돈, 1.0 미만까지 36시간 넘게 걸릴 때. 활성탄은 리튬 같은 작은 이온과 결합하지 못한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">혈액투석(정답)</th><th>생리식염수 수액만(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>신경학적 중증(의식 저하·경련) 또는 콩팥 기능 저하 + 농도 &gt; 4.0</b></td><td>가벼운 증상, 콩팥 기능 정상, 농도가 낮거나 떨어지는 중</td></tr> <tr><td>제거 속도</td><td><b>리튬 청소율 약 100~150 mL/분</b></td><td>콩팥 청소율 20~40 mL/분 — 급성 콩팥손상이면 더 낮다</td></tr> <tr><td>이 환자</td><td>의식 저하·경련·크레아티닌 2.4·농도 4.3 — 권고 기준 충족</td><td>수액은 계속하되 이것만으로는 부족</td></tr> </tbody></table> <b>가장 가까운 오답은 수액만 계속하는 것</b>이다 — 탈수가 원인이라 수액이 근본 치료처럼 보인다. 갈림길은 <b>신경학적 중증도와 콩팥 기능</b>이다. 의식이 맑고 떨림만 있으며 콩팥 기능이 곧 회복될 환자라면 수액으로 충분하지만, 경련·의식 저하나 콩팥 기능 저하가 있으면 투석으로 빨리 뺀다.\n- 오답 이유:\n  - ② 생리식염수만 쓰는 것은 탈수를 바로잡아 리튬 배출을 늘리므로 모든 환자에게 시작하는 처치다. 그러나 경련·의식 저하가 있고 크레아티닌 2.4 mg/dL로 콩팥 청소율이 낮아 제거가 너무 느리다. 의식이 맑고 가벼운 떨림만 있으며 콩팥 기능이 정상인 농도 2.0 mEq/L 환자라면 정답이 된다.\n  - ③ 활성탄은 많은 약물을 장에서 흡착하지만 리튬 같은 작은 금속 이온은 결합하지 못한다. 서방형 리튬을 대량 삼킨 급성 중독이라면 활성탄 대신 전장관 세척을 고려하게 된다. 리튬과 함께 삼환계 항우울제 같은 흡착되는 약을 1시간 안에 대량 먹었다면 그 약에 대해 쓸 수 있다.\n  - ④ 단트롤렌은 근육 소포체의 칼슘 방출을 막아 악성고열증과 신경이완제악성증후군의 근강직·고열을 치료한다. 이 환자는 고열이 없고 강직이 아니라 떨림·근간대경련이 있어 맞지 않다. 항정신병약을 새로 시작한 뒤 납관 강직·40°C 고열·CK 상승이 생겼다면 고려한다.\n  - ⑤ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군에 쓴다. 리튬은 세로토닌 작용을 높일 수 있지만 이 환자는 고열·빈맥·산동·설사 같은 세로토닌 과잉 양상보다 서맥·의식 저하·높은 리튬 농도가 두드러진다. 리튬에 SSRI를 더한 뒤 수시간 안에 초조·고열·유발성 간대경련이 생겼다면 정답이 된다.\n- 함정: 탈수가 원인이라고 수액만으로 끝내지 않는다. 경련·의식 저하나 콩팥 기능 저하가 있는 리튬 중독은 투석 대상이다.\n- 학습목표: 리튬 복용 중 티아지드 이뇨제를 더한 뒤 위장관 증상·거친 떨림·의식 저하·경련이 생기고 혈중 리튬 농도가 높으며 콩팥 기능이 떨어졌으면 리튬 중독으로 판단하고, 신경학적 중증과 콩팥 기능 저하를 근거로 혈액투석을 고른다\n- 근거·출처: Decker BS et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875 · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. — lithium · Goldfrank's Toxicologic Emergencies, 11th ed. — lithium",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "리튬을 오래 먹던 환자가 티아지드를 시작하고 설사·구토로 탈수된 뒤 의식 저하·거친 떨림·근간대경련·경련이 생겼고 혈중 리튬이 4.3 mEq/L, 크레아티닌이 2.4 mg/dL로 올랐다 — 만성 리튬 중독이다. 리튬은 분자량이 작고 단백결합이 없으며 분포용적이 작아 투석으로 잘 제거된다. EXTRIP 권고에 따라 의식 저하·경련 같은 신경학적 중증 소견이 있으면 농도와 무관하게, 또 콩팥 기능이 떨어져 있고 농도가 4.0 mEq/L를 넘으면 혈액투석을 한다. 수액만으로는 제거가 너무 느리다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>리튬은 콩팥이 나트륨처럼 다루는 이온</b>이다. 사구체에서 거의 다 걸러진 뒤 <b>근위세관에서 나트륨과 함께 약 80 %가 재흡수</b>된다. 몸이 나트륨·체액을 아끼려 할 때 — <b>탈수, 저나트륨 식이, 티아지드(원위세관 나트륨 소실 → 근위세관 재흡수 보상 증가), ACE 억제제·NSAID(사구체여과율 감소)</b> — 리튬도 함께 붙잡혀 농도가 오른다. 티아지드는 리튬 청소율을 약 25 % 줄인다. 이 환자는 티아지드에 설사·구토 탈수가 겹쳐 급성 콩팥손상까지 생겼고, 리튬 배출이 거의 멈췄다.<br> <b>만성 중독</b>은 리튬이 이미 뇌 조직에 쌓여 있어, 같은 혈중 농도라도 급성 과량복용보다 신경 증상이 심하다(거친 떨림·근간대경련·실조·의식 저하·경련). 심장에서는 동결절 기능 장애·QT 연장이 온다. 치료의 핵심은 <b>제거</b>다. 리튬은 작고(분자량 7), 단백결합이 없고, 분포용적이 작아(0.6~0.9 L/kg) <b>혈액투석</b>으로 잘 빠진다.<br> <b>EXTRIP 기준</b> — 권고: 콩팥 기능 저하와 농도 &gt; 4.0 mEq/L, 또는 의식 저하·경련·생명을 위협하는 부정맥(농도와 무관). 제안: 농도 &gt; 5.0, 혼돈, 1.0 미만까지 36시간 넘게 걸릴 때. 활성탄은 리튬 같은 작은 이온과 결합하지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">혈액투석(정답)</th><th>생리식염수 수액만(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>신경학적 중증(의식 저하·경련) 또는 콩팥 기능 저하 + 농도 &gt; 4.0</b></td><td>가벼운 증상, 콩팥 기능 정상, 농도가 낮거나 떨어지는 중</td></tr> <tr><td>제거 속도</td><td><b>리튬 청소율 약 100~150 mL/분</b></td><td>콩팥 청소율 20~40 mL/분 — 급성 콩팥손상이면 더 낮다</td></tr> <tr><td>이 환자</td><td>의식 저하·경련·크레아티닌 2.4·농도 4.3 — 권고 기준 충족</td><td>수액은 계속하되 이것만으로는 부족</td></tr> </tbody></table> <b>가장 가까운 오답은 수액만 계속하는 것</b>이다 — 탈수가 원인이라 수액이 근본 치료처럼 보인다. 갈림길은 <b>신경학적 중증도와 콩팥 기능</b>이다. 의식이 맑고 떨림만 있으며 콩팥 기능이 곧 회복될 환자라면 수액으로 충분하지만, 경련·의식 저하나 콩팥 기능 저하가 있으면 투석으로 빨리 뺀다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 생리식염수만 쓰는 것은 탈수를 바로잡아 리튬 배출을 늘리므로 모든 환자에게 시작하는 처치다. 그러나 경련·의식 저하가 있고 크레아티닌 2.4 mg/dL로 콩팥 청소율이 낮아 제거가 너무 느리다. 의식이 맑고 가벼운 떨림만 있으며 콩팥 기능이 정상인 농도 2.0 mEq/L 환자라면 정답이 된다.\n③ 활성탄은 많은 약물을 장에서 흡착하지만 리튬 같은 작은 금속 이온은 결합하지 못한다. 서방형 리튬을 대량 삼킨 급성 중독이라면 활성탄 대신 전장관 세척을 고려하게 된다. 리튬과 함께 삼환계 항우울제 같은 흡착되는 약을 1시간 안에 대량 먹었다면 그 약에 대해 쓸 수 있다.\n④ 단트롤렌은 근육 소포체의 칼슘 방출을 막아 악성고열증과 신경이완제악성증후군의 근강직·고열을 치료한다. 이 환자는 고열이 없고 강직이 아니라 떨림·근간대경련이 있어 맞지 않다. 항정신병약을 새로 시작한 뒤 납관 강직·40°C 고열·CK 상승이 생겼다면 고려한다.\n⑤ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군에 쓴다. 리튬은 세로토닌 작용을 높일 수 있지만 이 환자는 고열·빈맥·산동·설사 같은 세로토닌 과잉 양상보다 서맥·의식 저하·높은 리튬 농도가 두드러진다. 리튬에 SSRI를 더한 뒤 수시간 안에 초조·고열·유발성 간대경련이 생겼다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "탈수가 원인이라고 수액만으로 끝내지 않는다. 경련·의식 저하나 콩팥 기능 저하가 있는 리튬 중독은 투석 대상이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리튬 복용 중 티아지드 이뇨제를 더한 뒤 위장관 증상·거친 떨림·의식 저하·경련이 생기고 혈중 리튬 농도가 높으며 콩팥 기능이 떨어졌으면 리튬 중독으로 판단하고, 신경학적 중증과 콩팥 기능 저하를 근거로 혈액투석을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875 · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. — lithium · Goldfrank's Toxicologic Emergencies, 11th ed. — lithium"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "티아지드와 탈수로 생긴 만성 리튬 중독에서 의식 저하·경련이 있고 콩팥 기능이 떨어져 농도가 4.0을 넘으면 혈액투석을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "수액만으로는 급성 콩팥손상 환자의 리튬 제거가 너무 느리다 — 신경학적 중증이면 투석 기준을 충족한다",
+   "steps": 3,
+   "chain": [
+    "3주 전 히드로클로로티아지드 + 5일 설사·구토 → 근위세관 리튬 재흡수 증가·급성 콩팥손상",
+    "의식 저하·거친 떨림·근간대경련·경련 + 리튬 4.3 → 만성 리튬 중독(신경학적 중증)",
+    "크레아티닌 2.4 + 농도 > 4.0 + 경련 → EXTRIP 권고 기준 → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "3주 전 고혈압으로 히드로클로로티아지드를 시작",
+     "why": "리튬 청소율을 줄인다",
+     "also": []
+    },
+    {
+     "item": "5일 전부터 설사와 구토",
+     "why": "탈수 — 리튬 재흡수 증가",
+     "also": []
+    },
+    {
+     "item": "혈청 리튬 4.3 mEq/L",
+     "why": "중독 농도, 4.0 초과",
+     "also": []
+    },
+    {
+     "item": "동서맥과 QT 연장",
+     "why": "리튬의 심장 독성",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "전신 강직간대발작이 한 번",
+     "why": "신경학적 중증 — 농도와 무관한 투석 기준",
+     "also": []
+    },
+    {
+     "item": "이름을 크게 부르면 눈을 떴다가 곧 감고",
+     "why": "의식 저하 — 투석 기준",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.4 mg/dL",
+     "why": "콩팥 기능 저하 — 자연 배출이 느리다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "나트륨 136 mEq/L",
+     "why": "정상 — 신성 요붕증·저나트륨혈증은 두드러지지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "티아지드와 설사·구토 탈수로 리튬 배출이 막혀 만성 리튬 중독이 생겼다. 의식 저하·경련에 크레아티닌 2.4, 농도 4.3 이라 EXTRIP 권고 기준을 충족해 혈액투석을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "의식이 맑고 가벼운 떨림만 있으며 콩팥 기능이 정상이고 농도가 2.0 mEq/L 정도였다면 수액과 농도 추적만으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0131",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "약리 — 마크롤라이드 병용 뒤 스타틴 근독성의 기전",
+  "type": "약리 — 마크롤라이드 병용 뒤 스타틴 근독성의 기전",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-25",
+  "vignette": "A 71-year-old man comes to the physician because of 3 days of diffuse muscle aching and weakness that make it difficult to climb stairs. One week ago, he was diagnosed with community-acquired pneumonia and started on oral clarithromycin. He has hyperlipidemia treated with simvastatin 40 mg daily for 6 years without problems and hypertension treated with lisinopril. He does not drink alcohol and has not changed his exercise habits. His temperature is 36.9°C, pulse is 82/min, and blood pressure is 134/80 mmHg. There is symmetric tenderness of the thigh and upper arm muscles, and proximal muscle strength is 4/5. Serum creatine kinase is 14,200 U/L, creatinine is 1.3 mg/dL (baseline 1.0), and TSH is within the reference range. Urinalysis is positive for blood with 0 to 2 erythrocytes per high-power field.",
+  "question": "Which of the following is the most likely mechanism of this patient's condition?",
+  "options": [
+   "Inhibition of hepatic OATP1B1 uptake and glucuronidation of simvastatin",
+   "Induction of CYP3A4 producing a myotoxic simvastatin metabolite",
+   "Displacement of simvastatin from plasma albumin binding sites",
+   "Decreased renal tubular secretion of simvastatin by lisinopril",
+   "Inhibition of hepatic and intestinal CYP3A4 metabolism of simvastatin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Simvastatin, which he had tolerated for years, is a lipophilic prodrug with extensive first-pass metabolism by CYP3A4 in the gut wall and liver. Clarithromycin is a strong mechanism-based CYP3A4 inhibitor, so adding it raises simvastatin (and simvastatin acid) exposure many times over and causes dose-related myotoxicity — here statin myopathy progressing toward rhabdomyolysis (CK > 10 times the upper limit, myoglobinuria with heme-positive urine without red cells, and a rise in creatinine). Simvastatin should be stopped (or the macrolide changed to azithromycin), with IV fluids and monitoring of kidney function.\n- 원리: <b>Why simvastatin, and why CYP3A4?</b> Simvastatin and lovastatin are lipophilic lactone prodrugs whose oral bioavailability is below 5% because <b>CYP3A4 in the enterocytes and hepatocytes</b> removes most of the dose on first pass. Anything that shuts down CYP3A4 therefore multiplies systemic exposure — clarithromycin raises simvastatin exposure roughly 10-fold, itraconazole more than 10-fold, grapefruit juice several-fold. Atorvastatin is partly affected; <b>pravastatin, rosuvastatin, and pitavastatin</b> are not CYP3A4 substrates and are preferred when a CYP3A4 inhibitor is needed.<br> Clarithromycin (and erythromycin) are <b>mechanism-based inhibitors</b>: a nitroso metabolite binds the heme iron of CYP3A4 and inactivates the enzyme, so the effect builds over days and persists until new enzyme is synthesized. Azithromycin lacks this and is the safe macrolide alternative.<br> Higher statin levels in muscle reduce mevalonate-derived products — coenzyme Q10 and prenylated proteins — impairing mitochondrial function and membrane integrity, leading to myalgia, myositis, and rhabdomyolysis. Myoglobin released into the urine is detected by the dipstick heme reaction without red cells on microscopy.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP3A4 inhibition (answer)</th><th>OATP1B1 + glucuronidation inhibition (closest rival)</th></tr></thead><tbody> <tr><td>Classic culprit</td><td><b>Clarithromycin, erythromycin, azole antifungals, HIV protease inhibitors, grapefruit</b></td><td><b>Gemfibrozil</b>, cyclosporine (OATP1B1)</td></tr> <tr><td>Statins most affected</td><td>Simvastatin, lovastatin (&gt; atorvastatin)</td><td>All statins, including rosuvastatin and pravastatin</td></tr> <tr><td>Safer switch</td><td>Pravastatin, rosuvastatin; or azithromycin instead of clarithromycin</td><td>Fenofibrate instead of gemfibrozil</td></tr> </tbody></table> <b>The closest rival is inhibition of OATP1B1 and glucuronidation</b>, the mechanism of the gemfibrozil–statin interaction. Both raise statin levels and cause myopathy. The dividing line is <b>the added drug</b>: a macrolide or azole points to CYP3A4, gemfibrozil points to hepatic uptake and glucuronidation.\n- 오답 이유:\n  - (A) Inhibition of OATP1B1 uptake and glucuronidation explains the gemfibrozil–statin interaction, which also causes rhabdomyolysis and affects even non-CYP3A4 statins. Clarithromycin's main effect on simvastatin is CYP3A4 inhibition. If the new drug had been gemfibrozil added for hypertriglyceridemia, this would be the answer.\n  - (B) Enzyme induction (rifampin, carbamazepine, St. John's wort) speeds simvastatin clearance, lowering its levels and weakening the lipid-lowering effect rather than causing toxicity. Clarithromycin inhibits, not induces, CYP3A4. If his LDL cholesterol had risen after starting rifampin, induction would be the explanation.\n  - (C) Displacement from albumin transiently raises the free fraction, but clearance rises in parallel, so clinically important interactions by this mechanism are rare and usually limited to narrow-therapeutic-index drugs with low extraction. It would be considered only for a highly protein-bound drug such as warfarin or phenytoin when another bound drug is added.\n  - (D) Simvastatin is cleared mainly by hepatic metabolism and biliary excretion, not renal tubular secretion, and lisinopril, which he had taken for years without problems, does not inhibit statin clearance. A renal mechanism would matter for a drug such as methotrexate or metformin when the kidney clearance falls.\n- 함정: 오래 먹던 스타틴에 새로 더한 약을 먼저 본다. 마크롤라이드·아졸이면 CYP3A4, 젬피브로질이면 OATP1B1·글루쿠론산화다.\n- 학습목표: 심바스타틴 복용 중 클래리스로마이신을 더한 뒤 생긴 근육통·CK 상승을 CYP3A4 억제로 스타틴 농도가 오른 약물 상호작용으로 설명하고, 젬피브로질(OATP1B1·글루쿠론산화 억제)·효소 유도 기전과 구별한다\n- 근거·출처: Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — HMG-CoA reductase inhibitors: drug interactions · Neuvonen PJ, Niemi M, Backman JT. Drug interactions with lipid-lowering drugs: mechanisms and clinical relevance. Clin Pharmacol Ther 2006;80:565 · US FDA Drug Safety Communication (2011): new restrictions, contraindications, and dose limitations for Zocor (simvastatin)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Simvastatin, which he had tolerated for years, is a lipophilic prodrug with extensive first-pass metabolism by CYP3A4 in the gut wall and liver. Clarithromycin is a strong mechanism-based CYP3A4 inhibitor, so adding it raises simvastatin (and simvastatin acid) exposure many times over and causes dose-related myotoxicity — here statin myopathy progressing toward rhabdomyolysis (CK > 10 times the upper limit, myoglobinuria with heme-positive urine without red cells, and a rise in creatinine). Simvastatin should be stopped (or the macrolide changed to azithromycin), with IV fluids and monitoring of kidney function."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why simvastatin, and why CYP3A4?</b> Simvastatin and lovastatin are lipophilic lactone prodrugs whose oral bioavailability is below 5% because <b>CYP3A4 in the enterocytes and hepatocytes</b> removes most of the dose on first pass. Anything that shuts down CYP3A4 therefore multiplies systemic exposure — clarithromycin raises simvastatin exposure roughly 10-fold, itraconazole more than 10-fold, grapefruit juice several-fold. Atorvastatin is partly affected; <b>pravastatin, rosuvastatin, and pitavastatin</b> are not CYP3A4 substrates and are preferred when a CYP3A4 inhibitor is needed.<br> Clarithromycin (and erythromycin) are <b>mechanism-based inhibitors</b>: a nitroso metabolite binds the heme iron of CYP3A4 and inactivates the enzyme, so the effect builds over days and persists until new enzyme is synthesized. Azithromycin lacks this and is the safe macrolide alternative.<br> Higher statin levels in muscle reduce mevalonate-derived products — coenzyme Q10 and prenylated proteins — impairing mitochondrial function and membrane integrity, leading to myalgia, myositis, and rhabdomyolysis. Myoglobin released into the urine is detected by the dipstick heme reaction without red cells on microscopy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">CYP3A4 inhibition (answer)</th><th>OATP1B1 + glucuronidation inhibition (closest rival)</th></tr></thead><tbody> <tr><td>Classic culprit</td><td><b>Clarithromycin, erythromycin, azole antifungals, HIV protease inhibitors, grapefruit</b></td><td><b>Gemfibrozil</b>, cyclosporine (OATP1B1)</td></tr> <tr><td>Statins most affected</td><td>Simvastatin, lovastatin (&gt; atorvastatin)</td><td>All statins, including rosuvastatin and pravastatin</td></tr> <tr><td>Safer switch</td><td>Pravastatin, rosuvastatin; or azithromycin instead of clarithromycin</td><td>Fenofibrate instead of gemfibrozil</td></tr> </tbody></table> <b>The closest rival is inhibition of OATP1B1 and glucuronidation</b>, the mechanism of the gemfibrozil–statin interaction. Both raise statin levels and cause myopathy. The dividing line is <b>the added drug</b>: a macrolide or azole points to CYP3A4, gemfibrozil points to hepatic uptake and glucuronidation."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Inhibition of OATP1B1 uptake and glucuronidation explains the gemfibrozil–statin interaction, which also causes rhabdomyolysis and affects even non-CYP3A4 statins. Clarithromycin's main effect on simvastatin is CYP3A4 inhibition. If the new drug had been gemfibrozil added for hypertriglyceridemia, this would be the answer.\n(B) Enzyme induction (rifampin, carbamazepine, St. John's wort) speeds simvastatin clearance, lowering its levels and weakening the lipid-lowering effect rather than causing toxicity. Clarithromycin inhibits, not induces, CYP3A4. If his LDL cholesterol had risen after starting rifampin, induction would be the explanation.\n(C) Displacement from albumin transiently raises the free fraction, but clearance rises in parallel, so clinically important interactions by this mechanism are rare and usually limited to narrow-therapeutic-index drugs with low extraction. It would be considered only for a highly protein-bound drug such as warfarin or phenytoin when another bound drug is added.\n(D) Simvastatin is cleared mainly by hepatic metabolism and biliary excretion, not renal tubular secretion, and lisinopril, which he had taken for years without problems, does not inhibit statin clearance. A renal mechanism would matter for a drug such as methotrexate or metformin when the kidney clearance falls."
+   },
+   {
+    "k": "함정",
+    "v": "오래 먹던 스타틴에 새로 더한 약을 먼저 본다. 마크롤라이드·아졸이면 CYP3A4, 젬피브로질이면 OATP1B1·글루쿠론산화다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심바스타틴 복용 중 클래리스로마이신을 더한 뒤 생긴 근육통·CK 상승을 CYP3A4 억제로 스타틴 농도가 오른 약물 상호작용으로 설명하고, 젬피브로질(OATP1B1·글루쿠론산화 억제)·효소 유도 기전과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — HMG-CoA reductase inhibitors: drug interactions · Neuvonen PJ, Niemi M, Backman JT. Drug interactions with lipid-lowering drugs: mechanisms and clinical relevance. Clin Pharmacol Ther 2006;80:565 · US FDA Drug Safety Communication (2011): new restrictions, contraindications, and dose limitations for Zocor (simvastatin)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "오래 문제없이 먹던 심바스타틴에 클래리스로마이신을 더한 뒤 근육병증이 생겼으므로 CYP3A4 억제로 스타틴 농도가 오른 상호작용이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "OATP1B1·글루쿠론산화 억제는 젬피브로질의 기전이다 — 이 환자에게 더한 약은 CYP3A4 억제제인 클래리스로마이신이다",
+   "steps": 3,
+   "chain": [
+    "CK 14,200 + 근위근 압통·약화 + 적혈구 없는 잠혈 양성 → 스타틴 근육병증(횡문근융해로 진행)",
+    "6년 문제없이 먹던 심바스타틴 + 1주 전 클래리스로마이신 추가 → 약물 상호작용",
+    "심바스타틴은 CYP3A4 기질, 클래리스로마이신은 강한 CYP3A4 억제제 → 스타틴 노출 증가"
+   ],
+   "key": [
+    {
+     "item": "started on oral clarithromycin",
+     "why": "강한 CYP3A4 억제제를 새로 더했다",
+     "also": []
+    },
+    {
+     "item": "simvastatin 40 mg daily for 6 years without problems",
+     "why": "CYP3A4 기질, 새 약 전까지는 안정적",
+     "also": []
+    },
+    {
+     "item": "Serum creatine kinase is 14,200 U/L",
+     "why": "정상 상한 10배 이상 — 근육병증",
+     "also": []
+    },
+    {
+     "item": "positive for blood with 0 to 2 erythrocytes per high-power field",
+     "why": "미오글로빈뇨",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "TSH is within the reference range",
+     "why": "갑상샘저하증 근병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has not changed his exercise habits",
+     "why": "운동성 횡문근융해 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "lisinopril",
+     "why": "오래 먹던 약으로 스타틴 청소율에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "6년간 문제없던 심바스타틴에 클래리스로마이신을 더한 뒤 근육병증·미오글로빈뇨가 생겼다. 클래리스로마이신이 CYP3A4를 억제해 심바스타틴 노출이 크게 늘어난 것이 기전이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "새로 더한 약이 고중성지방혈증에 쓴 젬피브로질이었다면 OATP1B1·글루쿠론산화 억제가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0128",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "류마티스·근골격 — 콩팥이식 환자의 급성 통풍 발작",
+  "type": "류마티스·근골격 — 콩팥이식 환자의 급성 통풍 발작",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-25",
+  "vignette": "66세 남자가 어젯밤부터 오른쪽 엄지발가락이 붓고 아파서 왔다. 이불이 닿기만 해도 아프다고 한다. 8년 전 콩팥이식을 받고 사이클로스포린과 미코페놀산을 복용하고 있으며, 2개월 전 위궤양 출혈로 내시경 지혈술을 받았다. 체온 37.6°C, 맥박 88회/분, 혈압 138/84 mmHg이다. 오른쪽 첫째 발허리발가락관절이 붉고 뜨겁게 부어 있고 누르면 몹시 아프다. 혈청 크레아티닌 1.9 mg/dL(추정 사구체여과율 36 mL/분/1.73m²), 요산 9.4 mg/dL이다. 관절액 백혈구 18,000/mm³이고, 편광현미경에서 음성 복굴절을 보이는 바늘 모양 결정이 백혈구 안에 있으며, 그람염색에서 균이 보이지 않는다.",
+  "question": "이 발작의 치료로 가장 적절한 것은?",
+  "options": [
+   "경구 나프록센을 투여한다",
+   "알로푸리놀만 새로 시작한다",
+   "정맥 반코마이신을 투여한다",
+   "경구 프레드니솔론을 투여한다",
+   "저용량 경구 콜히친을 투여한다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 음성 복굴절 바늘 결정이 백혈구 안에 있고 그람염색 음성이므로 급성 통풍 발작이다. 발작 치료는 콜히친·NSAID·글루코코르티코이드 중 환자의 금기를 따져 고른다. 사이클로스포린은 P-당단백과 CYP3A4를 억제해 콜히친 농도를 크게 올려 근병증·골수억제를 일으키므로 콜히친은 피한다. NSAID는 이식 콩팥의 기능 저하와 2개월 전 위궤양 출혈 때문에 금기다. 남는 선택은 전신 글루코코르티코이드(프레드니솔론 30~40 mg/일, 5~10일)다.\n- 원리: <b>급성 통풍 발작은 요산나트륨 결정을 대식세포가 먹으면서 NLRP3 인플라마좀이 IL-1β를 내보내 생기는 염증</b>이다. 그래서 치료는 요산을 낮추는 약이 아니라 <b>염증을 끄는 약</b> — 콜히친(미세소관 중합 억제로 호중구 이동·인플라마좀 조립 차단), NSAID(COX 억제), 글루코코르티코이드(염증 유전자 전사 억제) — 이다. 세 약의 효과는 비슷해 <b>환자의 금기</b>가 선택을 정한다.<br> <b>콜히친</b>은 CYP3A4로 대사되고 P-당단백으로 세포 밖·담즙으로 배출된다. 사이클로스포린·클래리스로마이신·케토코나졸처럼 둘을 억제하는 약과 함께 쓰면 혈중 농도가 몇 배로 올라 <b>근병증·신경병증·골수억제</b>가 생긴다. 콩팥 기능이 떨어지면 배출도 줄어 위험이 더 커진다.<br> <b>NSAID</b>는 수입세동맥을 넓히는 프로스타글란딘을 막아 사구체여과율을 떨어뜨리는데, 사이클로스포린은 이미 수입세동맥을 수축시키므로 이식 콩팥에 이중 타격이 된다. 최근 궤양 출혈도 금기다. 그래서 이 환자에게는 <b>글루코코르티코이드</b>가 남는다(한 관절이면 관절 안 주사도 선택지). 요산강하제는 발작 치료제가 아니다 — 발작 중에 시작할 수는 있지만 반드시 항염증 치료를 함께 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">경구 프레드니솔론(정답)</th><th>저용량 콜히친(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>염증 유전자 전사 억제</td><td>미세소관 억제 → 호중구 이동·인플라마좀 차단</td></tr> <tr><td>사이클로스포린과 병용</td><td><b>상호작용 문제 없음</b></td><td><b>P-당단백·CYP3A4 억제 → 콜히친 농도 상승, 근병증·골수억제</b></td></tr> <tr><td>콩팥 기능 저하</td><td>용량 조절 불필요</td><td>배출 감소 — 용량 감량 필요, 이식 환자에서 독성 보고 많음</td></tr> <tr><td>주의</td><td>혈당 상승, 단기 사용</td><td>설사, 근육 약화</td></tr> </tbody></table> <b>가장 가까운 오답은 저용량 콜히친</b>이다 — 「저용량」이면 괜찮을 것 같지만 사이클로스포린과의 상호작용은 용량을 줄여도 위험이 크다. 갈림길은 <b>병용 약</b>이다. 사이클로스포린이 없고 콩팥 기능이 괜찮았다면 발작 36시간 안의 저용량 콜히친이 좋은 선택이었다.\n- 오답 이유:\n  - ① 나프록센 같은 NSAID는 급성 통풍에 효과가 확실하다. 하지만 이식 콩팥의 기능 저하, 사이클로스포린의 수입세동맥 수축, 2개월 전 위궤양 출혈이 모두 금기다. 콩팥 기능이 정상이고 위장관 출혈 병력이 없는 젊은 환자였다면 이 선지가 정답이다.\n  - ② 알로푸리놀은 요산을 낮춰 재발을 막는 약이지 발작의 염증을 끄지 못하고, 미코페놀산이 아닌 아자티오프린과 함께면 골수억제가 위험하다. 발작이 가라앉은 뒤 재발이 잦거나 통풍결절이 있을 때 항염증 예방과 함께 시작하는 경우라면 적절하다.\n  - ③ 정맥 반코마이신은 화농관절염에 쓰는 치료로, 면역억제 환자의 붉고 뜨거운 관절에서 반드시 떠올려야 한다. 이 환자는 관절액 백혈구 18,000/mm³·세포 안 요산 결정·그람염색 음성으로 통풍을 지지한다. 관절액 백혈구가 50,000/mm³ 이상이고 그람양성알균이 보였다면 정답이 된다.\n  - ⑤ 저용량 콜히친은 발작 초기(36시간 안)에 효과적이고 부작용이 적어 첫 선택으로 떠올리기 쉽다. 그러나 사이클로스포린이 P-당단백·CYP3A4를 억제해 콜히친 독성(근병증·골수억제)을 일으키고 콩팥 기능도 떨어져 있다. 상호작용 약이 없고 사구체여과율이 정상이었다면 정답이 된다.\n- 함정: 「저용량」 콜히친이면 안전하다고 생각하지 않는다. 사이클로스포린·클래리스로마이신 같은 P-당단백·CYP3A4 억제제와의 병용이 먼저 걸러야 할 금기다.\n- 학습목표: 관절액 음성 복굴절 바늘 결정으로 급성 통풍을 진단하고, 콩팥이식 후 사이클로스포린 복용(콜히친 독성 상호작용)·콩팥 기능 저하·최근 위궤양 출혈(NSAID 금기)을 따져 전신 글루코코르티코이드를 발작 치료로 고른다\n- 근거·출처: FitzGerald JD et al. 2020 American College of Rheumatology guideline for the management of gout. Arthritis Care Res 2020;72:744 · Richette P et al. 2016 updated EULAR evidence-based recommendations for the management of gout. Ann Rheum Dis 2017;76:29 · Terkeltaub RA et al. Novel evidence-based colchicine dose-reduction algorithm to predict and prevent colchicine toxicity in the presence of cytochrome P450 3A4/P-glycoprotein inhibitors. Arthritis Rheum 2011;63:2226",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "음성 복굴절 바늘 결정이 백혈구 안에 있고 그람염색 음성이므로 급성 통풍 발작이다. 발작 치료는 콜히친·NSAID·글루코코르티코이드 중 환자의 금기를 따져 고른다. 사이클로스포린은 P-당단백과 CYP3A4를 억제해 콜히친 농도를 크게 올려 근병증·골수억제를 일으키므로 콜히친은 피한다. NSAID는 이식 콩팥의 기능 저하와 2개월 전 위궤양 출혈 때문에 금기다. 남는 선택은 전신 글루코코르티코이드(프레드니솔론 30~40 mg/일, 5~10일)다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>급성 통풍 발작은 요산나트륨 결정을 대식세포가 먹으면서 NLRP3 인플라마좀이 IL-1β를 내보내 생기는 염증</b>이다. 그래서 치료는 요산을 낮추는 약이 아니라 <b>염증을 끄는 약</b> — 콜히친(미세소관 중합 억제로 호중구 이동·인플라마좀 조립 차단), NSAID(COX 억제), 글루코코르티코이드(염증 유전자 전사 억제) — 이다. 세 약의 효과는 비슷해 <b>환자의 금기</b>가 선택을 정한다.<br> <b>콜히친</b>은 CYP3A4로 대사되고 P-당단백으로 세포 밖·담즙으로 배출된다. 사이클로스포린·클래리스로마이신·케토코나졸처럼 둘을 억제하는 약과 함께 쓰면 혈중 농도가 몇 배로 올라 <b>근병증·신경병증·골수억제</b>가 생긴다. 콩팥 기능이 떨어지면 배출도 줄어 위험이 더 커진다.<br> <b>NSAID</b>는 수입세동맥을 넓히는 프로스타글란딘을 막아 사구체여과율을 떨어뜨리는데, 사이클로스포린은 이미 수입세동맥을 수축시키므로 이식 콩팥에 이중 타격이 된다. 최근 궤양 출혈도 금기다. 그래서 이 환자에게는 <b>글루코코르티코이드</b>가 남는다(한 관절이면 관절 안 주사도 선택지). 요산강하제는 발작 치료제가 아니다 — 발작 중에 시작할 수는 있지만 반드시 항염증 치료를 함께 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">경구 프레드니솔론(정답)</th><th>저용량 콜히친(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>염증 유전자 전사 억제</td><td>미세소관 억제 → 호중구 이동·인플라마좀 차단</td></tr> <tr><td>사이클로스포린과 병용</td><td><b>상호작용 문제 없음</b></td><td><b>P-당단백·CYP3A4 억제 → 콜히친 농도 상승, 근병증·골수억제</b></td></tr> <tr><td>콩팥 기능 저하</td><td>용량 조절 불필요</td><td>배출 감소 — 용량 감량 필요, 이식 환자에서 독성 보고 많음</td></tr> <tr><td>주의</td><td>혈당 상승, 단기 사용</td><td>설사, 근육 약화</td></tr> </tbody></table> <b>가장 가까운 오답은 저용량 콜히친</b>이다 — 「저용량」이면 괜찮을 것 같지만 사이클로스포린과의 상호작용은 용량을 줄여도 위험이 크다. 갈림길은 <b>병용 약</b>이다. 사이클로스포린이 없고 콩팥 기능이 괜찮았다면 발작 36시간 안의 저용량 콜히친이 좋은 선택이었다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 나프록센 같은 NSAID는 급성 통풍에 효과가 확실하다. 하지만 이식 콩팥의 기능 저하, 사이클로스포린의 수입세동맥 수축, 2개월 전 위궤양 출혈이 모두 금기다. 콩팥 기능이 정상이고 위장관 출혈 병력이 없는 젊은 환자였다면 이 선지가 정답이다.\n② 알로푸리놀은 요산을 낮춰 재발을 막는 약이지 발작의 염증을 끄지 못하고, 미코페놀산이 아닌 아자티오프린과 함께면 골수억제가 위험하다. 발작이 가라앉은 뒤 재발이 잦거나 통풍결절이 있을 때 항염증 예방과 함께 시작하는 경우라면 적절하다.\n③ 정맥 반코마이신은 화농관절염에 쓰는 치료로, 면역억제 환자의 붉고 뜨거운 관절에서 반드시 떠올려야 한다. 이 환자는 관절액 백혈구 18,000/mm³·세포 안 요산 결정·그람염색 음성으로 통풍을 지지한다. 관절액 백혈구가 50,000/mm³ 이상이고 그람양성알균이 보였다면 정답이 된다.\n⑤ 저용량 콜히친은 발작 초기(36시간 안)에 효과적이고 부작용이 적어 첫 선택으로 떠올리기 쉽다. 그러나 사이클로스포린이 P-당단백·CYP3A4를 억제해 콜히친 독성(근병증·골수억제)을 일으키고 콩팥 기능도 떨어져 있다. 상호작용 약이 없고 사구체여과율이 정상이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "「저용량」 콜히친이면 안전하다고 생각하지 않는다. 사이클로스포린·클래리스로마이신 같은 P-당단백·CYP3A4 억제제와의 병용이 먼저 걸러야 할 금기다."
+   },
+   {
+    "k": "학습목표",
+    "v": "관절액 음성 복굴절 바늘 결정으로 급성 통풍을 진단하고, 콩팥이식 후 사이클로스포린 복용(콜히친 독성 상호작용)·콩팥 기능 저하·최근 위궤양 출혈(NSAID 금기)을 따져 전신 글루코코르티코이드를 발작 치료로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "FitzGerald JD et al. 2020 American College of Rheumatology guideline for the management of gout. Arthritis Care Res 2020;72:744 · Richette P et al. 2016 updated EULAR evidence-based recommendations for the management of gout. Ann Rheum Dis 2017;76:29 · Terkeltaub RA et al. Novel evidence-based colchicine dose-reduction algorithm to predict and prevent colchicine toxicity in the presence of cytochrome P450 3A4/P-glycoprotein inhibitors. Arthritis Rheum 2011;63:2226"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "급성 통풍 발작에서 사이클로스포린 병용(콜히친 독성)과 이식 콩팥 기능 저하·최근 궤양 출혈(NSAID 금기)이 있으면 전신 글루코코르티코이드를 쓴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "콜히친은 사이클로스포린의 P-당단백·CYP3A4 억제로 농도가 올라 독성이 생긴다 — 저용량이라도 피한다",
+   "steps": 3,
+   "chain": [
+    "세포 안 음성 복굴절 바늘 결정 + 그람염색 음성 → 급성 통풍 발작",
+    "이식 콩팥 기능 저하 + 2개월 전 궤양 출혈 → NSAID 금기",
+    "사이클로스포린 병용 → 콜히친 독성 위험 → 프레드니솔론"
+   ],
+   "key": [
+    {
+     "item": "음성 복굴절을 보이는 바늘 모양 결정이 백혈구 안에",
+     "why": "요산나트륨 결정 — 통풍 확진",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "그람염색에서 균이 보이지 않는다",
+     "why": "화농관절염 가능성을 낮춘다(배양 결과는 확인한다)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "사이클로스포린과 미코페놀산을 복용",
+     "why": "사이클로스포린 — 콜히친 독성 상호작용",
+     "also": []
+    },
+    {
+     "item": "2개월 전 위궤양 출혈",
+     "why": "NSAID 금기",
+     "also": []
+    },
+    {
+     "item": "추정 사구체여과율 36 mL/분/1.73m²",
+     "why": "NSAID 금기, 콜히친 배출 감소",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "요산 9.4 mg/dL",
+     "why": "고요산혈증이 있지만 발작 중 요산 값은 진단·치료 선택을 정하지 않는다",
+     "also": []
+    },
+    {
+     "item": "체온 37.6°C",
+     "why": "통풍 발작에서도 미열이 흔하다 — 화농관절염을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "세포 안 음성 복굴절 바늘 결정으로 급성 통풍 발작이다. 사이클로스포린 때문에 콜히친이, 이식 콩팥 기능 저하와 최근 궤양 출혈 때문에 NSAID가 막혀 경구 프레드니솔론을 쓴다.",
+   "switch": {
+    "choice": "E",
+    "condition": "사이클로스포린을 먹지 않고 콩팥 기능이 정상이며 발작 36시간 안이었다면 저용량 콜히친이 좋은 선택이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0127",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "소화기·간담췌 — 급성 중증 궤양대장염의 첫 치료",
+  "type": "소화기·간담췌 — 급성 중증 궤양대장염의 첫 치료",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-25",
+  "vignette": "A 29-year-old woman comes to the emergency department because of 5 days of worsening bloody diarrhea. She was diagnosed with ulcerative colitis 3 years ago and has been taking oral mesalamine. She now has 9 bloody bowel movements per day with cramping lower abdominal pain and urgency. She has not traveled or taken antibiotics recently. Her temperature is 37.9°C, pulse is 106/min, and blood pressure is 112/70 mmHg. The abdomen is mildly tender in the left lower quadrant without distention, guarding, or rebound tenderness. Hemoglobin is 10.1 g/dL, leukocyte count is 12,400/mm3, albumin is 3.1 g/dL, and C-reactive protein is 48 mg/L. Stool testing for Clostridioides difficile toxin and bacterial culture are negative. An abdominal x-ray shows no colonic dilation.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Oral vancomycin for presumed Clostridioides difficile infection",
+   "Oral budesonide multimatrix and outpatient follow-up",
+   "Hospitalization and intravenous methylprednisolone",
+   "Urgent total colectomy with end ileostomy",
+   "Increase the dose of oral mesalamine and follow up in 1 week"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: She has acute severe ulcerative colitis by the Truelove and Witts criteria: at least 6 bloody stools per day plus at least one sign of systemic toxicity (pulse > 90/min, temperature > 37.8°C, hemoglobin < 10.5 g/dL, or elevated ESR/CRP) — she has all four. Infection has been excluded and there is no toxic megacolon (no colonic dilation) or peritonitis. The first-line treatment is hospitalization with intravenous corticosteroids (methylprednisolone 40–60 mg/day), venous thromboembolism prophylaxis, and response assessment on day 3; if she does not respond, rescue therapy with infliximab or cyclosporine, or colectomy, follows.\n- 원리: <b>Acute severe ulcerative colitis</b> is a medical emergency with a colectomy rate of about 25–30% and a historical mortality that fell dramatically once intravenous corticosteroids were introduced (Truelove 1955). Severity is judged not by endoscopy alone but by the <b>systemic response</b>: frequent bloody stools (≥ 6/day) with tachycardia, fever, anemia, or raised inflammatory markers indicate transmural inflammation and a risk of <b>toxic megacolon</b> and perforation.<br> <b>Why IV steroids and not oral mesalamine or budesonide?</b> Aminosalicylates act topically on the mucosa and are too slow and weak for this degree of inflammation; budesonide MMX has high first-pass metabolism and limited systemic effect by design. Intravenous methylprednisolone gives reliable absorption despite rapid transit and suppresses the inflammatory cascade systemically; about two thirds of patients respond.<br> <b>Day 3 rule</b>: persistent > 8 stools/day, or 3–8 stools with CRP > 45 mg/L on day 3 (Oxford criteria), predicts about 85% colectomy without rescue therapy — so infliximab or cyclosporine is started then. Colectomy up front is reserved for toxic megacolon unresponsive to treatment, perforation, or massive hemorrhage. Before steroids, <i>C. difficile</i> and CMV must be excluded, because steroids worsen these infections.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IV methylprednisolone (answer)</th><th>Urgent colectomy (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>Acute severe UC without complication</b></td><td>Perforation, massive bleeding, toxic megacolon failing medical therapy</td></tr> <tr><td>Abdomen</td><td><b>Mild tenderness, no distention or peritonism</b></td><td>Peritoneal signs or distention</td></tr> <tr><td>X-ray</td><td><b>No colonic dilation</b></td><td>Transverse colon &gt; 6 cm, free air</td></tr> <tr><td>Timing</td><td>First-line, reassess on day 3</td><td>After failure of steroids and rescue therapy (usually day 5–7), or immediately if complicated</td></tr> </tbody></table> <b>The closest rival is urgent colectomy</b>, because the patient is systemically unwell. The dividing line is <b>complication</b>: without dilation, perforation, or hemorrhage, medical therapy comes first; colectomy is for complications or failure of medical rescue.\n- 오답 이유:\n  - (A) Oral vancomycin treats Clostridioides difficile infection, a frequent trigger of flares in patients with inflammatory bowel disease. Her stool toxin test is negative and she has no recent antibiotic exposure. If the toxin assay were positive, oral vancomycin would be started together with management of the colitis.\n  - (B) Oral budesonide multimatrix is designed for colonic release with low systemic exposure and is used to induce remission in mild-to-moderate ulcerative colitis. It is not strong enough for acute severe disease with systemic toxicity. It would fit a patient with 4 to 5 stools per day, normal vital signs, and no anemia.\n  - (D) Urgent total colectomy is definitive and is tempting because she meets criteria for severe disease. However, she has no toxic megacolon, perforation, or massive bleeding, and most patients respond to IV steroids or rescue therapy. It would be correct if the x-ray showed a transverse colon wider than 6 cm with peritoneal signs, or free air.\n  - (E) Increasing oral mesalamine suits mild-to-moderate flares managed as an outpatient. With 9 bloody stools, tachycardia, fever, anemia, and a high CRP, she has severe disease for which oral aminosalicylates are too slow and weak. If she had 4 stools per day without systemic signs, this would be reasonable.\n- 함정: 전신 독성이 있다고 곧바로 수술을 고르지 않는다. 거대결장·천공·대량 출혈이 없으면 정맥 스테로이드가 먼저다.\n- 학습목표: 궤양대장염 환자에서 하루 6회 이상 혈변과 빈맥·발열·빈혈·CRP 상승(Truelove-Witts)으로 급성 중증 궤양대장염을 판단하고, 감염·독성거대결장을 확인한 뒤 입원 정맥 코르티코스테로이드를 첫 치료로 고른다\n- 근거·출처: Truelove SC, Witts LJ. Cortisone in ulcerative colitis; final report on a therapeutic trial. Br Med J 1955;2:1041 · Rubin DT et al. ACG clinical guideline: ulcerative colitis in adults. Am J Gastroenterol 2019;114:384 · Travis SP et al. Predicting outcome in severe ulcerative colitis. Gut 1996;38:905",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "She has acute severe ulcerative colitis by the Truelove and Witts criteria: at least 6 bloody stools per day plus at least one sign of systemic toxicity (pulse > 90/min, temperature > 37.8°C, hemoglobin < 10.5 g/dL, or elevated ESR/CRP) — she has all four. Infection has been excluded and there is no toxic megacolon (no colonic dilation) or peritonitis. The first-line treatment is hospitalization with intravenous corticosteroids (methylprednisolone 40–60 mg/day), venous thromboembolism prophylaxis, and response assessment on day 3; if she does not respond, rescue therapy with infliximab or cyclosporine, or colectomy, follows."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Acute severe ulcerative colitis</b> is a medical emergency with a colectomy rate of about 25–30% and a historical mortality that fell dramatically once intravenous corticosteroids were introduced (Truelove 1955). Severity is judged not by endoscopy alone but by the <b>systemic response</b>: frequent bloody stools (≥ 6/day) with tachycardia, fever, anemia, or raised inflammatory markers indicate transmural inflammation and a risk of <b>toxic megacolon</b> and perforation.<br> <b>Why IV steroids and not oral mesalamine or budesonide?</b> Aminosalicylates act topically on the mucosa and are too slow and weak for this degree of inflammation; budesonide MMX has high first-pass metabolism and limited systemic effect by design. Intravenous methylprednisolone gives reliable absorption despite rapid transit and suppresses the inflammatory cascade systemically; about two thirds of patients respond.<br> <b>Day 3 rule</b>: persistent > 8 stools/day, or 3–8 stools with CRP > 45 mg/L on day 3 (Oxford criteria), predicts about 85% colectomy without rescue therapy — so infliximab or cyclosporine is started then. Colectomy up front is reserved for toxic megacolon unresponsive to treatment, perforation, or massive hemorrhage. Before steroids, <i>C. difficile</i> and CMV must be excluded, because steroids worsen these infections."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IV methylprednisolone (answer)</th><th>Urgent colectomy (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>Acute severe UC without complication</b></td><td>Perforation, massive bleeding, toxic megacolon failing medical therapy</td></tr> <tr><td>Abdomen</td><td><b>Mild tenderness, no distention or peritonism</b></td><td>Peritoneal signs or distention</td></tr> <tr><td>X-ray</td><td><b>No colonic dilation</b></td><td>Transverse colon &gt; 6 cm, free air</td></tr> <tr><td>Timing</td><td>First-line, reassess on day 3</td><td>After failure of steroids and rescue therapy (usually day 5–7), or immediately if complicated</td></tr> </tbody></table> <b>The closest rival is urgent colectomy</b>, because the patient is systemically unwell. The dividing line is <b>complication</b>: without dilation, perforation, or hemorrhage, medical therapy comes first; colectomy is for complications or failure of medical rescue."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral vancomycin treats Clostridioides difficile infection, a frequent trigger of flares in patients with inflammatory bowel disease. Her stool toxin test is negative and she has no recent antibiotic exposure. If the toxin assay were positive, oral vancomycin would be started together with management of the colitis.\n(B) Oral budesonide multimatrix is designed for colonic release with low systemic exposure and is used to induce remission in mild-to-moderate ulcerative colitis. It is not strong enough for acute severe disease with systemic toxicity. It would fit a patient with 4 to 5 stools per day, normal vital signs, and no anemia.\n(D) Urgent total colectomy is definitive and is tempting because she meets criteria for severe disease. However, she has no toxic megacolon, perforation, or massive bleeding, and most patients respond to IV steroids or rescue therapy. It would be correct if the x-ray showed a transverse colon wider than 6 cm with peritoneal signs, or free air.\n(E) Increasing oral mesalamine suits mild-to-moderate flares managed as an outpatient. With 9 bloody stools, tachycardia, fever, anemia, and a high CRP, she has severe disease for which oral aminosalicylates are too slow and weak. If she had 4 stools per day without systemic signs, this would be reasonable."
+   },
+   {
+    "k": "함정",
+    "v": "전신 독성이 있다고 곧바로 수술을 고르지 않는다. 거대결장·천공·대량 출혈이 없으면 정맥 스테로이드가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "궤양대장염 환자에서 하루 6회 이상 혈변과 빈맥·발열·빈혈·CRP 상승(Truelove-Witts)으로 급성 중증 궤양대장염을 판단하고, 감염·독성거대결장을 확인한 뒤 입원 정맥 코르티코스테로이드를 첫 치료로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Truelove SC, Witts LJ. Cortisone in ulcerative colitis; final report on a therapeutic trial. Br Med J 1955;2:1041 · Rubin DT et al. ACG clinical guideline: ulcerative colitis in adults. Am J Gastroenterol 2019;114:384 · Travis SP et al. Predicting outcome in severe ulcerative colitis. Gut 1996;38:905"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "하루 9회 혈변에 빈맥·발열·빈혈·CRP 상승이 있는 급성 중증 궤양대장염이고 감염·거대결장·복막염이 없으므로 입원 정맥 스테로이드가 첫 치료다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "대장 확장·천공·대량 출혈 같은 합병증이 없어 수술이 첫 처치가 아니다",
+   "steps": 2,
+   "chain": [
+    "혈변 9회 + 맥박 106·체온 37.9·Hb 10.1·CRP 48 → Truelove-Witts 급성 중증",
+    "C. difficile 음성·대장 확장 없음·복막 자극 없음 → 합병증 없음 → 정맥 메틸프레드니솔론"
+   ],
+   "key": [
+    {
+     "item": "9 bloody bowel movements per day",
+     "why": "중증 기준(6회 이상)",
+     "also": []
+    },
+    {
+     "item": "pulse is 106/min",
+     "why": "전신 독성 징후",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin is 10.1 g/dL",
+     "why": "전신 독성 징후",
+     "also": []
+    },
+    {
+     "item": "C-reactive protein is 48 mg/L",
+     "why": "전신 독성 징후, 3일째 반응 판정의 기준값",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Clostridioides difficile toxin and bacterial culture are negative",
+     "why": "스테로이드 전 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no colonic dilation",
+     "why": "독성거대결장 가능성을 낮춘다 — 즉시 수술 대상이 아니다",
+     "also": []
+    },
+    {
+     "item": "without distention, guarding, or rebound tenderness",
+     "why": "천공·복막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "has been taking oral mesalamine",
+     "why": "유지 치료 중 악화 — 경구 약 증량으로는 부족하다",
+     "also": []
+    }
+   ],
+   "summary": "하루 9회 혈변과 빈맥·발열·빈혈·CRP 상승으로 급성 중증 궤양대장염이다. 감염과 거대결장·복막염이 없으므로 입원해 정맥 메틸프레드니솔론으로 시작하고 3일째 반응을 본다.",
+   "switch": {
+    "choice": "D",
+    "condition": "복부 X선에서 가로결장이 6 cm 넘게 늘어나고 복막 자극 징후가 있거나 유리 공기가 보였다면 응급 대장절제술이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0126",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "이비인후과 — 자고 일어나 생긴 한쪽 난청",
+  "type": "이비인후과 — 자고 일어나 생긴 한쪽 난청",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-25",
+  "vignette": "45세 남자가 이틀 전 아침에 일어났을 때부터 왼쪽 귀가 먹먹하고 잘 들리지 않아 이비인후과에 왔다. 왼쪽 귀에 '삐' 소리가 계속 나고 가벼운 어지럼이 있었으나 지금은 없다. 감기 증상이나 귀 통증, 이루는 없었고, 큰 소음에 노출된 적도 없다. 고혈압약을 먹고 있다. 이경 검사에서 양쪽 외이도와 고막은 정상이다. 512 Hz 소리굽쇠로 한 Weber 검사에서 소리가 오른쪽으로 치우쳐 들리고, Rinne 검사는 양쪽 모두 양성이다. 순음청력검사에서 왼쪽 귀의 골도·기도 역치가 함께 올라가 있고, 연속된 세 주파수에서 오른쪽보다 35 dB 이상 나쁘다. 고막운동도는 양쪽 A형이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "경구 항바이러스제만 투여한다",
+   "고용량 경구 스테로이드를 투여한다",
+   "경구 항생제와 비충혈제거제를 투여한다",
+   "고막절개술 후 환기관을 삽입한다",
+   "보청기를 맞추고 6개월 뒤 다시 본다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 72시간 안에 생긴 한쪽 난청이고, Weber 검사가 건측(오른쪽)으로 치우치며 Rinne 검사가 양측 양성이어서 왼쪽의 감각신경성 난청이다. 순음청력검사에서 연속 세 주파수 30 dB 이상의 감각신경성 난청이 확인되고 고막·고막운동도가 정상이므로 돌발성 감각신경성 난청이다. 증상 2주 안에 고용량 전신 스테로이드(프레드니솔론 1 mg/kg/일, 최대 60 mg, 1~2주 뒤 감량)를 쓰는 것이 초기 치료다. 청신경집종 같은 후미로 병변을 배제하려고 추후 MRI를 찍는다.\n- 원리: <b>소리굽쇠 검사는 전음성과 감각신경성을 나눈다.</b> Rinne 검사는 한 귀에서 기도(공기)와 골도(뼈)를 비교한다 — 정상과 감각신경성 난청에서는 기도가 더 오래 들려 <b>양성</b>, 전음성 난청에서는 골도가 더 길어 <b>음성</b>이다. Weber 검사는 이마 가운데에 댄 소리굽쇠가 어느 쪽으로 쏠리는지 본다 — 전음성 난청은 주변 소음이 가려지는 <b>아픈 쪽</b>으로, 감각신경성 난청은 달팽이관이 잘 작동하는 <b>건강한 쪽</b>으로 쏠린다.<br> <b>돌발성 감각신경성 난청</b>은 72시간 안에 연속된 세 주파수에서 30 dB 이상 떨어진 감각신경성 난청으로 정의한다. 원인은 대부분 모르지만 바이러스성 달팽이관염· 미세혈관 장애·면역 기전이 거론되고, 달팽이관의 염증과 부종을 줄이려고 <b>스테로이드</b>를 쓴다. 효과는 <b>일찍 쓸수록</b> 크고 2주가 지나면 이득이 크게 준다. 전신 투여가 어렵거나 반응이 없으면 <b>고막 안 스테로이드 주입</b>을 한다.<br> 삼출성 중이염과 헷갈리기 쉽다 — 둘 다 「먹먹하다」로 온다. 그러나 삼출액이 있으면 고막이 흐리고 움직임이 줄어 고막운동도가 <b>B형</b>이 되고, 소리굽쇠 검사가 전음성으로 나온다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">돌발성 감각신경성 난청(정답: 전신 스테로이드)</th><th>삼출성 중이염(가장 가까운 오답: 항생제·비충혈제거제)</th></tr></thead><tbody> <tr><td>Rinne(아픈 귀)</td><td><b>양성</b>(기도 &gt; 골도)</td><td>음성(골도 &gt; 기도)</td></tr> <tr><td>Weber</td><td><b>건강한 귀</b>로 쏠림</td><td>아픈 귀로 쏠림</td></tr> <tr><td>고막·고막운동도</td><td><b>정상, A형</b></td><td>흐린 고막·액체선, B형</td></tr> <tr><td>순음청력</td><td>골도·기도 함께 상승</td><td>골도 정상, 기도만 상승(기도-골도 차이)</td></tr> </tbody></table> <b>가장 가까운 오답은 항생제·비충혈제거제</b>다 — 「귀가 먹먹하다」는 호소가 같다. 갈림길은 <b>전음성인가 감각신경성인가</b>다. 소리굽쇠 검사와 고막운동도로 감각신경성이 확인되면 시간을 다투는 스테로이드 치료로 간다.\n- 오답 이유:\n  - ① 항바이러스제는 바이러스 원인이 거론되어 쓰여 왔지만, 무작위 연구에서 스테로이드에 더해도 효과가 없었고 단독 치료 근거도 없다. 대상포진 소포가 외이도에 보이고 안면마비가 함께 있는 람지헌트증후군이라면 항바이러스제가 스테로이드와 함께 필요하다.\n  - ③ 경구 항생제와 비충혈제거제는 급성 중이염이나 귀인두관 기능장애에 쓴다. 이 환자는 고막과 고막운동도가 정상이고 Rinne 양성·Weber 건측 편위로 감각신경성 난청이다. 고막이 붉게 부풀고 Rinne 음성·Weber 환측 편위였다면 이 선지를 고려한다.\n  - ④ 고막절개술과 환기관 삽입은 3개월 이상 지속된 삼출성 중이염으로 청력 손실이 있을 때 한다. 이 환자는 중이에 액체가 없어(A형) 환기관이 도울 것이 없다. 고막운동도가 B형이고 전음성 난청이 3개월 이상 지속되었다면 정답이 된다.\n  - ⑤ 보청기와 경과 관찰은 회복 가능성이 지난 고정된 감각신경성 난청(노인성·치료 후 잔존 난청)에 맞다. 증상 이틀째인 돌발성 난청은 스테로이드로 회복될 수 있는 기간이다. 스테로이드 치료 뒤 3개월 넘게 난청이 남았다면 이 선지가 맞다.\n- 함정: 「먹먹하다」는 말만 듣고 중이염으로 처치하지 않는다. 소리굽쇠 검사로 감각신경성을 먼저 가려야 스테로이드 시기를 놓치지 않는다.\n- 학습목표: 자고 일어나 생긴 한쪽 난청에서 소리굽쇠 검사(Weber 건측 편위·Rinne 양성)와 순음청력검사로 돌발성 감각신경성 난청을 진단하고, 증상 2주 안의 고용량 전신 스테로이드를 고르며 삼출성 중이염의 처치와 구별한다\n- 근거·출처: Chandrasekhar SS et al. Clinical practice guideline: sudden hearing loss (update). Otolaryngol Head Neck Surg 2019;161(1_suppl):S1 · Cummings Otolaryngology: Head and Neck Surgery, 7th ed. — sudden sensorineural hearing loss",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "72시간 안에 생긴 한쪽 난청이고, Weber 검사가 건측(오른쪽)으로 치우치며 Rinne 검사가 양측 양성이어서 왼쪽의 감각신경성 난청이다. 순음청력검사에서 연속 세 주파수 30 dB 이상의 감각신경성 난청이 확인되고 고막·고막운동도가 정상이므로 돌발성 감각신경성 난청이다. 증상 2주 안에 고용량 전신 스테로이드(프레드니솔론 1 mg/kg/일, 최대 60 mg, 1~2주 뒤 감량)를 쓰는 것이 초기 치료다. 청신경집종 같은 후미로 병변을 배제하려고 추후 MRI를 찍는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>소리굽쇠 검사는 전음성과 감각신경성을 나눈다.</b> Rinne 검사는 한 귀에서 기도(공기)와 골도(뼈)를 비교한다 — 정상과 감각신경성 난청에서는 기도가 더 오래 들려 <b>양성</b>, 전음성 난청에서는 골도가 더 길어 <b>음성</b>이다. Weber 검사는 이마 가운데에 댄 소리굽쇠가 어느 쪽으로 쏠리는지 본다 — 전음성 난청은 주변 소음이 가려지는 <b>아픈 쪽</b>으로, 감각신경성 난청은 달팽이관이 잘 작동하는 <b>건강한 쪽</b>으로 쏠린다.<br> <b>돌발성 감각신경성 난청</b>은 72시간 안에 연속된 세 주파수에서 30 dB 이상 떨어진 감각신경성 난청으로 정의한다. 원인은 대부분 모르지만 바이러스성 달팽이관염· 미세혈관 장애·면역 기전이 거론되고, 달팽이관의 염증과 부종을 줄이려고 <b>스테로이드</b>를 쓴다. 효과는 <b>일찍 쓸수록</b> 크고 2주가 지나면 이득이 크게 준다. 전신 투여가 어렵거나 반응이 없으면 <b>고막 안 스테로이드 주입</b>을 한다.<br> 삼출성 중이염과 헷갈리기 쉽다 — 둘 다 「먹먹하다」로 온다. 그러나 삼출액이 있으면 고막이 흐리고 움직임이 줄어 고막운동도가 <b>B형</b>이 되고, 소리굽쇠 검사가 전음성으로 나온다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">돌발성 감각신경성 난청(정답: 전신 스테로이드)</th><th>삼출성 중이염(가장 가까운 오답: 항생제·비충혈제거제)</th></tr></thead><tbody> <tr><td>Rinne(아픈 귀)</td><td><b>양성</b>(기도 &gt; 골도)</td><td>음성(골도 &gt; 기도)</td></tr> <tr><td>Weber</td><td><b>건강한 귀</b>로 쏠림</td><td>아픈 귀로 쏠림</td></tr> <tr><td>고막·고막운동도</td><td><b>정상, A형</b></td><td>흐린 고막·액체선, B형</td></tr> <tr><td>순음청력</td><td>골도·기도 함께 상승</td><td>골도 정상, 기도만 상승(기도-골도 차이)</td></tr> </tbody></table> <b>가장 가까운 오답은 항생제·비충혈제거제</b>다 — 「귀가 먹먹하다」는 호소가 같다. 갈림길은 <b>전음성인가 감각신경성인가</b>다. 소리굽쇠 검사와 고막운동도로 감각신경성이 확인되면 시간을 다투는 스테로이드 치료로 간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 항바이러스제는 바이러스 원인이 거론되어 쓰여 왔지만, 무작위 연구에서 스테로이드에 더해도 효과가 없었고 단독 치료 근거도 없다. 대상포진 소포가 외이도에 보이고 안면마비가 함께 있는 람지헌트증후군이라면 항바이러스제가 스테로이드와 함께 필요하다.\n③ 경구 항생제와 비충혈제거제는 급성 중이염이나 귀인두관 기능장애에 쓴다. 이 환자는 고막과 고막운동도가 정상이고 Rinne 양성·Weber 건측 편위로 감각신경성 난청이다. 고막이 붉게 부풀고 Rinne 음성·Weber 환측 편위였다면 이 선지를 고려한다.\n④ 고막절개술과 환기관 삽입은 3개월 이상 지속된 삼출성 중이염으로 청력 손실이 있을 때 한다. 이 환자는 중이에 액체가 없어(A형) 환기관이 도울 것이 없다. 고막운동도가 B형이고 전음성 난청이 3개월 이상 지속되었다면 정답이 된다.\n⑤ 보청기와 경과 관찰은 회복 가능성이 지난 고정된 감각신경성 난청(노인성·치료 후 잔존 난청)에 맞다. 증상 이틀째인 돌발성 난청은 스테로이드로 회복될 수 있는 기간이다. 스테로이드 치료 뒤 3개월 넘게 난청이 남았다면 이 선지가 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "「먹먹하다」는 말만 듣고 중이염으로 처치하지 않는다. 소리굽쇠 검사로 감각신경성을 먼저 가려야 스테로이드 시기를 놓치지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자고 일어나 생긴 한쪽 난청에서 소리굽쇠 검사(Weber 건측 편위·Rinne 양성)와 순음청력검사로 돌발성 감각신경성 난청을 진단하고, 증상 2주 안의 고용량 전신 스테로이드를 고르며 삼출성 중이염의 처치와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Chandrasekhar SS et al. Clinical practice guideline: sudden hearing loss (update). Otolaryngol Head Neck Surg 2019;161(1_suppl):S1 · Cummings Otolaryngology: Head and Neck Surgery, 7th ed. — sudden sensorineural hearing loss"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "자고 일어나 생긴 한쪽 난청이 Weber 건측 편위·Rinne 양성·A형 고막운동도로 감각신경성이면 돌발성 난청이므로 2주 안에 고용량 전신 스테로이드를 쓴다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "중이염이면 Rinne 음성·Weber 환측 편위·B형 고막운동도다 — 이 환자는 모두 감각신경성 쪽이다",
+   "steps": 2,
+   "chain": [
+    "Weber 건측(오른쪽) 편위 + Rinne 양측 양성 + A형 → 왼쪽 감각신경성 난청",
+    "72시간 안 발생 + 연속 세 주파수 30 dB 이상 → 돌발성 난청 → 조기 고용량 스테로이드"
+   ],
+   "key": [
+    {
+     "item": "이틀 전 아침에 일어났을 때부터",
+     "why": "72시간 안 발생, 치료 시기 안",
+     "also": []
+    },
+    {
+     "item": "소리가 오른쪽으로 치우쳐",
+     "why": "건측 편위 — 감각신경성",
+     "also": []
+    },
+    {
+     "item": "Rinne 검사는 양쪽 모두 양성",
+     "why": "전음성 난청 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "연속된 세 주파수에서 오른쪽보다 35 dB 이상 나쁘다",
+     "why": "돌발성 난청 정의 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "고막운동도는 양쪽 A형",
+     "why": "중이 삼출 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "큰 소음에 노출된 적도 없다",
+     "why": "소음성 난청 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압약을 먹고 있다",
+     "why": "스테로이드 중 혈압을 살펴야 하지만 치료 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "Weber 건측 편위·Rinne 양성·정상 고막으로 감각신경성이고, 72시간 안에 생긴 30 dB 이상 난청이라 돌발성 난청이다. 2주 안의 고용량 전신 스테로이드가 첫 치료다.",
+   "switch": {
+    "choice": "D",
+    "condition": "고막운동도가 B형이고 전음성 난청이 3개월 넘게 지속되었다면 고막절개술과 환기관 삽입이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0124",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 안과·호흡기·이비인후과·소화기·류마티스근골격·영상판독·소아·약리·정신·피부)",
+  "subtopic": "안과 — 부비동염 뒤 안구운동 제한을 동반한 눈꺼풀 부종",
+  "type": "안과 — 부비동염 뒤 안구운동 제한을 동반한 눈꺼풀 부종",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-25",
+  "vignette": "34세 남자가 3일 전부터 오른쪽 눈꺼풀이 붓고 아파서 응급실에 왔다. 1주 전부터 코막힘과 누런 콧물이 있었고, 어제부터 눈을 움직이면 아프고 물체가 두 개로 보인다고 한다. 당뇨병이나 면역저하 질환은 없다. 체온 38.6°C, 맥박 96회/분, 혈압 124/78 mmHg이다. 오른쪽 위·아래 눈꺼풀이 붉고 단단하게 부어 있고, 오른쪽 안구가 앞으로 돌출되어 있으며 위쪽과 바깥쪽을 볼 때 움직임이 제한된다. 교정시력은 오른눈 0.6, 왼눈 1.0이고, 오른눈에 상대구심동공운동장애는 없다. 백혈구 15,800/mm³, C-반응단백 8.4 mg/dL이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "영상검사 없이 즉시 안와 감압술을 시행한다",
+   "입원하여 정맥 항생제를 시작하고 조영증강 안와 CT를 찍는다",
+   "경구 아목시실린-클라불란산을 처방하고 이틀 뒤 외래에서 본다",
+   "스테로이드 점안액을 처방하고 냉찜질을 하게 한다",
+   "항생제 없이 비충혈제거제만 쓰며 경과를 관찰한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 눈꺼풀 부종만 있으면 안와전(격막앞) 봉와직염이지만, 이 환자는 안구운동 제한·안구운동 시 통증·복시·안구돌출·시력 저하가 있어 감염이 안와격막 뒤로 퍼진 안와 봉와직염이다. 부비동염(특히 사골동)이 가장 흔한 원인이다. 입원해 정맥 광범위 항생제를 시작하고, 골막밑 농양·해면정맥동 혈전증을 확인하려고 조영증강 안와·부비동 CT를 찍는다. 시신경 압박 징후(상대구심동공운동장애)가 없으므로 영상 없이 곧바로 수술할 단계는 아니다.\n- 원리: <b>안와격막</b>은 눈꺼풀판에서 안와 테두리 골막으로 이어지는 섬유막으로, 눈꺼풀의 얕은 조직과 안와 내용물(외안근·지방·시신경)을 나눈다. 감염이 격막 <b>앞</b>에 머물면 눈꺼풀만 붓고 안구는 멀쩡하다 — <b>안와전 봉와직염</b>. 격막 <b>뒤</b>로 넘어가면 외안근과 안와 지방에 염증이 생겨 <b>안구운동 제한·운동 시 통증·복시</b>, 안와 안 부피가 늘어 <b>안구돌출</b>, 시신경이 눌리거나 허혈에 빠지면 <b>시력 저하·색각 저하·상대구심동공운동장애</b>가 나타난다.<br> 사골동과 안와 사이의 뼈(<b>종이판</b>)는 매우 얇고 구멍이 많으며, 안와정맥에는 판막이 없어 부비동 감염이 쉽게 안와와 <b>해면정맥동</b>으로 번진다. 그래서 안와 봉와직염은 실명·해면정맥동 혈전증·뇌농양으로 이어질 수 있는 응급이고, <b>입원·정맥 항생제</b>(부비동 병원체 — 연쇄알균·황색포도알균·혐기균 포함)가 기본이다. <b>조영증강 CT</b>는 골막밑·안와 농양이 있는지를 가려 배농 수술이 필요한지 정한다 — 큰 농양, 시력 저하 진행, 상대구심동공운동장애가 생기면 수술로 넘어간다.\n- 비교: <table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">안와 봉와직염(정답 처치: 입원·정맥 항생제·CT)</th><th>안와전 봉와직염(가장 가까운 오답: 경구 항생제 외래)</th></tr></thead><tbody> <tr><td>안구운동</td><td><b>제한, 움직일 때 통증·복시</b></td><td>정상, 통증 없음</td></tr> <tr><td>안구 위치</td><td><b>돌출</b></td><td>정상</td></tr> <tr><td>시력·동공</td><td>저하될 수 있음, 진행하면 상대구심동공운동장애</td><td>정상</td></tr> <tr><td>전신 증상</td><td>고열·백혈구 증가가 흔함</td><td>미열 또는 없음</td></tr> <tr><td>처치</td><td>입원, 정맥 항생제, 조영증강 CT, 농양이면 배농</td><td>경구 항생제, 외래 추적</td></tr> </tbody></table> <b>가장 가까운 오답은 경구 항생제 외래 치료</b>다. 눈꺼풀 부종·발적이라는 겉모습은 같다. 갈림길은 <b>격막 뒤 징후 — 안구운동·안구돌출·시력</b>이다. 이 셋이 모두 정상이면 경구 치료, 하나라도 있으면 안와 봉와직염으로 입원 치료한다.\n- 오답 이유:\n  - ① 안와 감압술(배농)은 영상에서 큰 골막밑 농양이 확인되거나 항생제에도 시력이 떨어지고 상대구심동공운동장애가 생길 때 한다. 이 환자는 상대구심동공운동장애가 없고 농양 여부도 아직 모른다. CT에서 큰 농양과 시신경 압박 징후가 확인되었다면 정답이 된다.\n  - ③ 경구 아목시실린-클라불란산 외래 치료는 안와전 봉와직염의 표준 치료라 눈꺼풀 부종·발적만 보고 고르기 쉽다. 이 환자는 안구운동 제한·복시·안구돌출·시력 저하가 있어 격막 뒤 감염이다. 안구운동과 시력이 정상이고 눈꺼풀만 부었다면 정답이 된다.\n  - ④ 스테로이드 점안과 냉찜질은 알레르기결막염이나 비감염성 눈꺼풀 부종에 쓰는 처치다. 고열·백혈구 증가·부비동염 병력이 있는 세균 감염에 항생제 없이 스테로이드를 쓰면 감염이 퍼진다. 가려움이 주증상이고 열이 없는 양측 눈꺼풀 부종이라면 고려할 수 있다.\n  - ⑤ 비충혈제거제만 쓰는 경과 관찰은 합병증 없는 급성 바이러스성 부비동염의 대증 치료다. 이미 안와로 번진 세균 감염에는 부족하다. 눈 증상 없이 7일 미만의 콧물·코막힘만 있었다면 이 선지가 맞다.\n- 함정: 눈꺼풀이 부었다는 겉모습만 보고 안와전 봉와직염으로 외래 치료하지 않는다. 안구운동·안구돌출·시력을 먼저 본다.\n- 학습목표: 부비동염 뒤 눈꺼풀 부종에 안구운동 제한·안구운동 시 통증·안구돌출·시력 저하가 있으면 안와(격막뒤) 봉와직염으로 판단하고, 입원·정맥 항생제·조영증강 안와 CT를 고르며 안와전 봉와직염의 외래 경구 치료와 구별한다\n- 근거·출처: American Academy of Ophthalmology. Basic and Clinical Science Course, Section 7: Oculofacial Plastic and Orbital Surgery — orbital cellulitis · Chandler JR, Langenbrunner DJ, Stevens ER. The pathogenesis of orbital complications in acute sinusitis. Laryngoscope 1970;80:1414",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "눈꺼풀 부종만 있으면 안와전(격막앞) 봉와직염이지만, 이 환자는 안구운동 제한·안구운동 시 통증·복시·안구돌출·시력 저하가 있어 감염이 안와격막 뒤로 퍼진 안와 봉와직염이다. 부비동염(특히 사골동)이 가장 흔한 원인이다. 입원해 정맥 광범위 항생제를 시작하고, 골막밑 농양·해면정맥동 혈전증을 확인하려고 조영증강 안와·부비동 CT를 찍는다. 시신경 압박 징후(상대구심동공운동장애)가 없으므로 영상 없이 곧바로 수술할 단계는 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>안와격막</b>은 눈꺼풀판에서 안와 테두리 골막으로 이어지는 섬유막으로, 눈꺼풀의 얕은 조직과 안와 내용물(외안근·지방·시신경)을 나눈다. 감염이 격막 <b>앞</b>에 머물면 눈꺼풀만 붓고 안구는 멀쩡하다 — <b>안와전 봉와직염</b>. 격막 <b>뒤</b>로 넘어가면 외안근과 안와 지방에 염증이 생겨 <b>안구운동 제한·운동 시 통증·복시</b>, 안와 안 부피가 늘어 <b>안구돌출</b>, 시신경이 눌리거나 허혈에 빠지면 <b>시력 저하·색각 저하·상대구심동공운동장애</b>가 나타난다.<br> 사골동과 안와 사이의 뼈(<b>종이판</b>)는 매우 얇고 구멍이 많으며, 안와정맥에는 판막이 없어 부비동 감염이 쉽게 안와와 <b>해면정맥동</b>으로 번진다. 그래서 안와 봉와직염은 실명·해면정맥동 혈전증·뇌농양으로 이어질 수 있는 응급이고, <b>입원·정맥 항생제</b>(부비동 병원체 — 연쇄알균·황색포도알균·혐기균 포함)가 기본이다. <b>조영증강 CT</b>는 골막밑·안와 농양이 있는지를 가려 배농 수술이 필요한지 정한다 — 큰 농양, 시력 저하 진행, 상대구심동공운동장애가 생기면 수술로 넘어간다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">소견</th><th style=\"width:38%\">안와 봉와직염(정답 처치: 입원·정맥 항생제·CT)</th><th>안와전 봉와직염(가장 가까운 오답: 경구 항생제 외래)</th></tr></thead><tbody> <tr><td>안구운동</td><td><b>제한, 움직일 때 통증·복시</b></td><td>정상, 통증 없음</td></tr> <tr><td>안구 위치</td><td><b>돌출</b></td><td>정상</td></tr> <tr><td>시력·동공</td><td>저하될 수 있음, 진행하면 상대구심동공운동장애</td><td>정상</td></tr> <tr><td>전신 증상</td><td>고열·백혈구 증가가 흔함</td><td>미열 또는 없음</td></tr> <tr><td>처치</td><td>입원, 정맥 항생제, 조영증강 CT, 농양이면 배농</td><td>경구 항생제, 외래 추적</td></tr> </tbody></table> <b>가장 가까운 오답은 경구 항생제 외래 치료</b>다. 눈꺼풀 부종·발적이라는 겉모습은 같다. 갈림길은 <b>격막 뒤 징후 — 안구운동·안구돌출·시력</b>이다. 이 셋이 모두 정상이면 경구 치료, 하나라도 있으면 안와 봉와직염으로 입원 치료한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 안와 감압술(배농)은 영상에서 큰 골막밑 농양이 확인되거나 항생제에도 시력이 떨어지고 상대구심동공운동장애가 생길 때 한다. 이 환자는 상대구심동공운동장애가 없고 농양 여부도 아직 모른다. CT에서 큰 농양과 시신경 압박 징후가 확인되었다면 정답이 된다.\n③ 경구 아목시실린-클라불란산 외래 치료는 안와전 봉와직염의 표준 치료라 눈꺼풀 부종·발적만 보고 고르기 쉽다. 이 환자는 안구운동 제한·복시·안구돌출·시력 저하가 있어 격막 뒤 감염이다. 안구운동과 시력이 정상이고 눈꺼풀만 부었다면 정답이 된다.\n④ 스테로이드 점안과 냉찜질은 알레르기결막염이나 비감염성 눈꺼풀 부종에 쓰는 처치다. 고열·백혈구 증가·부비동염 병력이 있는 세균 감염에 항생제 없이 스테로이드를 쓰면 감염이 퍼진다. 가려움이 주증상이고 열이 없는 양측 눈꺼풀 부종이라면 고려할 수 있다.\n⑤ 비충혈제거제만 쓰는 경과 관찰은 합병증 없는 급성 바이러스성 부비동염의 대증 치료다. 이미 안와로 번진 세균 감염에는 부족하다. 눈 증상 없이 7일 미만의 콧물·코막힘만 있었다면 이 선지가 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "눈꺼풀이 부었다는 겉모습만 보고 안와전 봉와직염으로 외래 치료하지 않는다. 안구운동·안구돌출·시력을 먼저 본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "부비동염 뒤 눈꺼풀 부종에 안구운동 제한·안구운동 시 통증·안구돌출·시력 저하가 있으면 안와(격막뒤) 봉와직염으로 판단하고, 입원·정맥 항생제·조영증강 안와 CT를 고르며 안와전 봉와직염의 외래 경구 치료와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American Academy of Ophthalmology. Basic and Clinical Science Course, Section 7: Oculofacial Plastic and Orbital Surgery — orbital cellulitis · Chandler JR, Langenbrunner DJ, Stevens ER. The pathogenesis of orbital complications in acute sinusitis. Laryngoscope 1970;80:1414"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "부비동염 뒤 눈꺼풀 부종에 안구운동 제한·복시·안구돌출·시력 저하가 있으면 안와 봉와직염이므로 입원·정맥 항생제·조영증강 CT가 필요하다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "안와전 봉와직염은 안구운동·안구 위치·시력이 정상이다 — 이 환자는 셋 다 이상하다",
+   "steps": 2,
+   "chain": [
+    "안구운동 제한·복시·안구돌출·시력 저하 → 감염이 안와격막 뒤로 퍼진 안와 봉와직염",
+    "합병증(농양·해면정맥동)을 막고 확인해야 함 → 입원·정맥 항생제·조영증강 CT"
+   ],
+   "key": [
+    {
+     "item": "1주 전부터 코막힘과 누런 콧물",
+     "why": "부비동염이 안와 감염의 출발점",
+     "also": []
+    },
+    {
+     "item": "눈을 움직이면 아프고 물체가 두 개로 보인다",
+     "why": "외안근 침범 — 격막 뒤 징후",
+     "also": []
+    },
+    {
+     "item": "오른쪽 안구가 앞으로 돌출",
+     "why": "안와 안 부피 증가",
+     "also": []
+    },
+    {
+     "item": "교정시력은 오른눈 0.6",
+     "why": "시신경 영향 가능성 — 안와 봉와직염",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "상대구심동공운동장애는 없다",
+     "why": "즉시 감압술보다 항생제·영상이 먼저",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "당뇨병이나 면역저하 질환은 없다",
+     "why": "털곰팡이증 가능성을 낮추지만 처치를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "백혈구 15,800/mm³",
+     "why": "세균 감염을 지지하나 격막 앞뒤를 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "부비동염 뒤 생긴 눈꺼풀 부종에 안구운동 제한·복시·안구돌출·시력 저하가 더해져 안와 봉와직염이다. 입원해 정맥 항생제를 시작하고 조영증강 CT로 농양을 확인한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "안구운동·안구 위치·시력이 모두 정상이고 눈꺼풀 부종·발적만 있었다면 경구 항생제 외래 치료가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0116",
   "exam": "imaging",
   "style": "kmle_style",

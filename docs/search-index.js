@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2906,
+  "total": 2916,
   "byType": {
    "anatomy": 737,
    "kmle": 1131,
+   "imaging": 132,
    "concept": 82,
    "usmle": 162,
    "paper": 655,
-   "imaging": 122,
    "ailab": 14,
    "basic": 3
   },
@@ -46,14 +46,15 @@ window.MEDKOS_INDEX = {
    "Microbiology": 12,
    "Immunology": 9,
    "Internal Medicine": 9,
+   "소화기": 8,
+   "호흡기": 8,
    "병리·조직학": 7,
-   "소화기": 7,
-   "호흡기": 7,
-   "소아과": 6,
+   "소아과": 7,
    "감염": 5,
    "내분비": 5,
    "신경": 5,
    "응급·중환자": 5,
+   "피부과": 5,
    "혈액·종양": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
@@ -62,23 +63,22 @@ window.MEDKOS_INDEX = {
    "신장·비뇨기": 4,
    "예방의학·역학": 4,
    "외과": 4,
-   "피부과": 4,
    "Oncology": 3,
+   "근골격·류마티스": 3,
+   "약리": 3,
+   "정신과": 3,
    "Medical Imaging AI": 2,
-   "근골격·류마티스": 2,
-   "약리": 2,
-   "정신과": 2,
+   "안과": 2,
+   "영상의학": 2,
+   "이비인후과": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "Urology": 1,
-   "안과": 1,
-   "영상의학": 1,
-   "이비인후과": 1
+   "Urology": 1
   },
   "byConfidence": {
-   "high": 1928,
+   "high": 1938,
    "medium": 929,
    "low": 49
   },
@@ -770,6 +770,180 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1131.md",
    "snippet": "81세 남자가 이틀 전부터 반복되는 어지럼과 오늘 아침 잠깐 정신을 잃고 쓰러진 일로 응급실에 왔다. 지금은 식은땀을 흘리고 묻는 말에 대답이 느리다. 고혈압으로 암로디핀만 복용하며 베타차단제·디곡신·비다이하이드로피리딘 칼슘통로차단제는 복용하지 않는다. 흉통은 없다. 도착 직후 찍은 심전도는 그림과 같다. 정맥로를 확보하고 아트로핀 1 mg 을 3–5분 간격으로 총 3 mg 투여했으나 맥박과 혈압은 변하지 않았다. 활력징후와 ",
    "text": "Cardiology Symptomatic Degenerative Complete AV Block Unresponsive to Atropine — Transcutaneous Pacing as Bridge complete-av-block bradycardia atropine-refractory transcutaneous-pacing acls ecg KMLE 2026 / Claude Routine 81세 남자가 이틀 전부터 반복되는 어지럼과 오늘 아침 잠깐 정신을 잃고 쓰러진 일로 응급실에 왔다. 지금은 식은땀을 흘리고 묻는 말에 대답이 느리다. 고혈압으로 암로디핀만 복용하며 베타차단제·디곡신·비다이하이드로피리딘 칼슘통로차단제는 복용하지 않는다. 흉통은 없다. 도착 직후 찍은 심전도는 그림과 같다. 정맥로를 확보하고 아트로핀 1 mg 을 3–5분 간격으로 총 3 mg 투여했으나 맥박과 혈압은 변하지 않았다. 활력징후와 검사 소견은 자료와 같다. 다음 처치로 가장 적절한 것은? A. 경피 심박조율 시작 B. 아트로핀 추가 정맥 투여 C. 영구 심박조율기 즉시 삽입 D. 아미오다론 정맥 투여 E. 동기화 심장율동전환 시행 P파와 QRS가 서로 무관하게 뛰는 완전 방실차단에 저혈압·실신·의식 저하가 동반된 불안정 서맥이다. 아트로핀을 최대량(3 mg)까지 썼으나 반응이 없으므로, 즉시 경피 심박조율(또는 도파민·에피네프린 지속 주입)로 심박을 확보하고 경정맥 임시 심박조율을 거쳐 영구 심박조율기로 이어 간다. 칼륨·트로포닌·TSH 정상과 서맥 유발 약물 부재는 교정 가능한 원인의 가능성을 낮추어 고령의 퇴행성 전도계 질환을 시사한다."
+  },
+  {
+   "id": "imaging-2026-0133",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 변하는 하지 색소 병변의 더모스코피와 생검",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0133.md",
+   "snippet": "55세 여자가 왼쪽 정강이에 있는 갈색 점이 지난 1년 동안 커졌다며 피부과에 왔다. 언니가 먼저 알아차렸고, 가렵거나 피가 난 적은 없다. 피부가 흰 편이고 10대에 물집이 잡힐 정도로 햇볕에 탄 적이 여러 번 있다. 본인과 가족 모두 피부암 병력은 없다. 진찰에서 왼쪽 정강이 앞면에 지름 9 mm 의 편평한 갈색 반점이 있고, 경계가 불규칙하며 색이 고르지 않다. 서혜부 림프절은 만져지지 않는다. 다른 부위의 점들은 작고 ",
+   "text": "피부과 피부 — 변하는 하지 색소 병변의 더모스코피와 생검 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 55세 여자가 왼쪽 정강이에 있는 갈색 점이 지난 1년 동안 커졌다며 피부과에 왔다. 언니가 먼저 알아차렸고, 가렵거나 피가 난 적은 없다. 피부가 흰 편이고 10대에 물집이 잡힐 정도로 햇볕에 탄 적이 여러 번 있다. 본인과 가족 모두 피부암 병력은 없다. 진찰에서 왼쪽 정강이 앞면에 지름 9 mm 의 편평한 갈색 반점이 있고, 경계가 불규칙하며 색이 고르지 않다. 서혜부 림프절은 만져지지 않는다. 다른 부위의 점들은 작고 색이 고르다. 병변의 더모스코피 사진은 그림과 같다. 다음 단계로 가장 적절한 것은? A. 1~3 mm 절제연으로 병변 전체를 절제 생검한다 B. 2 cm 절제연으로 광범위 절제를 한다 C. 액체질소로 냉동치료를 한다 D. 이미퀴모드 크림을 12주 동안 바르게 한다 E. 안심시키고 12개월 뒤 더모스코피를 다시 한다"
+  },
+  {
+   "id": "imaging-2026-0132",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 티아지드 병용 뒤 리튬 중독의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0132.md",
+   "snippet": "52세 여자가 하루 동안 점점 처지고 헛소리를 해서 가족에게 이끌려 응급실에 왔다. 20년 전 양극성장애를 진단받고 탄산리튬을 복용하며 안정적으로 지냈다. 3주 전 고혈압으로 히드로클로로티아지드를 시작했고, 5일 전부터 설사와 구토가 있어 잘 먹지 못했다. 체온 37.2°C, 맥박 62회/분, 혈압 104/66 mmHg이다. 이름을 크게 부르면 눈을 떴다가 곧 감고, 양손에 거친 떨림과 사지 근간대경련이 있다. 응급실에서 1분",
+   "text": "정신과 정신 — 티아지드 병용 뒤 리튬 중독의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 52세 여자가 하루 동안 점점 처지고 헛소리를 해서 가족에게 이끌려 응급실에 왔다. 20년 전 양극성장애를 진단받고 탄산리튬을 복용하며 안정적으로 지냈다. 3주 전 고혈압으로 히드로클로로티아지드를 시작했고, 5일 전부터 설사와 구토가 있어 잘 먹지 못했다. 체온 37.2°C, 맥박 62회/분, 혈압 104/66 mmHg이다. 이름을 크게 부르면 눈을 떴다가 곧 감고, 양손에 거친 떨림과 사지 근간대경련이 있다. 응급실에서 1분 동안 전신 강직간대발작이 한 번 있었다. 혈청 리튬 4.3 mEq/L(3개월 전 0.8 mEq/L), 나트륨 136 mEq/L, 크레아티닌 2.4 mg/dL(3개월 전 0.8 mg/dL)이다. 심전도에서 동서맥과 QT 연장이 있다. 생리식염수 정맥 수액을 시작하였다. 추가로 가장 적절한 치료는? A. 혈액투석을 시행한다 B. 생리식염수 수액만 계속하며 리튬 농도를 추적한다 C. 활성탄을 경구로 투여한다 D. 단트롤렌을 정맥 주사한다 E. 사이프로헵타딘을 경구 투여한다"
+  },
+  {
+   "id": "imaging-2026-0131",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 마크롤라이드 병용 뒤 스타틴 근독성의 기전",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0131.md",
+   "snippet": "A 71 year old man comes to the physician because of 3 days of diffuse muscle aching and weakness that make it difficult to climb stairs. One week ago, he was diagnosed with community acquired pneumonia and started on oral clarithromycin. He",
+   "text": "약리 약리 — 마크롤라이드 병용 뒤 스타틴 근독성의 기전 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 A 71 year old man comes to the physician because of 3 days of diffuse muscle aching and weakness that make it difficult to climb stairs. One week ago, he was diagnosed with community acquired pneumonia and started on oral clarithromycin. He has hyperlipidemia treated with simvastatin 40 mg daily for 6 years without problems and hypertension treated with lisinopril. He does not drink alcohol and has not changed his exercise habits. His temperature is 36.9°C, pulse is 82/min, and blood pressure is 134/80 mmHg. There is symmetric tenderness of the thigh and upper arm muscles, and proximal muscle strength is 4/5. Serum creatine kinase is 14,200 U/L, creatinine is 1.3 mg/dL (baseline 1.0), and TSH is within the reference range. Urinalysis is positive for blood with 0 to 2 erythrocytes per high power field. Which of the following is the most likely mechanism of this patient's condition? A. Inhibition of hepatic OATP1B1 uptake and glucuronidation of simvastatin B. Induction of CYP3A4 producing a myotoxic simvastatin metabolite C. Displacement of simvastatin from plasma albumin binding sites D. Decreased renal tubular secretion of simvastatin by lisinopril E. Inhibition of hepatic and intestinal CYP3A4 metabolism of simvastatin"
+  },
+  {
+   "id": "imaging-2026-0130",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 걸음마 시기 O다리와 구루병 선별",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0130.md",
+   "snippet": "20개월 남아가 두 다리가 바깥으로 휜 것 같다며 부모와 함께 소아청소년과에 왔다. 13개월에 걷기 시작했고 넘어지거나 절뚝이는 일은 없다. 모유 수유를 12개월에 끊었고 지금은 우유와 고기·달걀이 들어간 식사를 잘 먹는다. 키와 몸무게는 모두 50백분위수이며 발달은 정상이다. 진찰에서 양쪽 다리가 대칭적으로 바깥으로 휘어 있고, 발목을 붙이고 섰을 때 양쪽 무릎 사이가 4 cm 벌어진다. 손목이 굵어지거나 갈비연골 이음부가 ",
+   "text": "소아과 소아청소년 — 걸음마 시기 O다리와 구루병 선별 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 20개월 남아가 두 다리가 바깥으로 휜 것 같다며 부모와 함께 소아청소년과에 왔다. 13개월에 걷기 시작했고 넘어지거나 절뚝이는 일은 없다. 모유 수유를 12개월에 끊었고 지금은 우유와 고기·달걀이 들어간 식사를 잘 먹는다. 키와 몸무게는 모두 50백분위수이며 발달은 정상이다. 진찰에서 양쪽 다리가 대칭적으로 바깥으로 휘어 있고, 발목을 붙이고 섰을 때 양쪽 무릎 사이가 4 cm 벌어진다. 손목이 굵어지거나 갈비연골 이음부가 튀어나온 곳은 없다. 혈청 칼슘은 9.6 mg/dL이다. 구루병을 확인하려고 찍은 왼쪽 손목 단순 X선 사진은 그림과 같다. 가장 적절한 처치는? A. 경구 인산염을 보충한다 B. 근위 경골 절골술을 계획한다 C. 안심시키고 6개월 뒤 다시 진찰한다 D. 고용량 비타민 D를 경구로 투여한다 E. 밤에 착용하는 교정 보조기를 처방한다"
+  },
+  {
+   "id": "imaging-2026-0129",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 뇌 MRI 시퀀스와 종괴 효과 읽기",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0129.md",
+   "snippet": "A 68 year old woman is brought to the physician by her daughter because of 3 weeks of progressive weakness of her left arm and leg and headaches that are worse in the morning. She has had two episodes of vomiting this week. She has hyperten",
+   "text": "영상의학 진단검사·영상의학 판독 — 뇌 MRI 시퀀스와 종괴 효과 읽기 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 A 68 year old woman is brought to the physician by her daughter because of 3 weeks of progressive weakness of her left arm and leg and headaches that are worse in the morning. She has had two episodes of vomiting this week. She has hypertension treated with amlodipine. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 146/88 mmHg. She is alert and oriented. Neurologic examination shows 4/5 strength in the left upper and lower extremities with a left pronator drift and a left extensor plantar response. Sensation is intact. Funduscopic examination shows blurred optic disc margins bilaterally. Leukocyte count and serum glucose concentration are within the reference ranges. An axial MRI of the brain is shown. Which of the following is the most accurate interpretation of this image? A. T1 weighted image showing a right hemispheric mass with surrounding edema and leftward midline shift B. T2 weighted image showing a left hemispheric mass with surrounding edema and rightward midline shift C. FLAIR image showing an acute right hemispheric infarct with no mass effect or midline shift D. Diffusion weighted image showing a right subdural hematoma compressing the lateral ventricle E. T2 weighted image showing a right hemispheric mass with surrounding edema and leftward midline shift"
+  },
+  {
+   "id": "imaging-2026-0128",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 콩팥이식 환자의 급성 통풍 발작",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0128.md",
+   "snippet": "66세 남자가 어젯밤부터 오른쪽 엄지발가락이 붓고 아파서 왔다. 이불이 닿기만 해도 아프다고 한다. 8년 전 콩팥이식을 받고 사이클로스포린과 미코페놀산을 복용하고 있으며, 2개월 전 위궤양 출혈로 내시경 지혈술을 받았다. 체온 37.6°C, 맥박 88회/분, 혈압 138/84 mmHg이다. 오른쪽 첫째 발허리발가락관절이 붉고 뜨겁게 부어 있고 누르면 몹시 아프다. 혈청 크레아티닌 1.9 mg/dL(추정 사구체여과율 36 mL/",
+   "text": "근골격·류마티스 류마티스·근골격 — 콩팥이식 환자의 급성 통풍 발작 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 66세 남자가 어젯밤부터 오른쪽 엄지발가락이 붓고 아파서 왔다. 이불이 닿기만 해도 아프다고 한다. 8년 전 콩팥이식을 받고 사이클로스포린과 미코페놀산을 복용하고 있으며, 2개월 전 위궤양 출혈로 내시경 지혈술을 받았다. 체온 37.6°C, 맥박 88회/분, 혈압 138/84 mmHg이다. 오른쪽 첫째 발허리발가락관절이 붉고 뜨겁게 부어 있고 누르면 몹시 아프다. 혈청 크레아티닌 1.9 mg/dL(추정 사구체여과율 36 mL/분/1.73m²), 요산 9.4 mg/dL이다. 관절액 백혈구 18,000/mm³이고, 편광현미경에서 음성 복굴절을 보이는 바늘 모양 결정이 백혈구 안에 있으며, 그람염색에서 균이 보이지 않는다. 이 발작의 치료로 가장 적절한 것은? A. 경구 나프록센을 투여한다 B. 알로푸리놀만 새로 시작한다 C. 정맥 반코마이신을 투여한다 D. 경구 프레드니솔론을 투여한다 E. 저용량 경구 콜히친을 투여한다"
+  },
+  {
+   "id": "imaging-2026-0127",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 급성 중증 궤양대장염의 첫 치료",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0127.md",
+   "snippet": "A 29 year old woman comes to the emergency department because of 5 days of worsening bloody diarrhea. She was diagnosed with ulcerative colitis 3 years ago and has been taking oral mesalamine. She now has 9 bloody bowel movements per day wi",
+   "text": "소화기 소화기·간담췌 — 급성 중증 궤양대장염의 첫 치료 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 A 29 year old woman comes to the emergency department because of 5 days of worsening bloody diarrhea. She was diagnosed with ulcerative colitis 3 years ago and has been taking oral mesalamine. She now has 9 bloody bowel movements per day with cramping lower abdominal pain and urgency. She has not traveled or taken antibiotics recently. Her temperature is 37.9°C, pulse is 106/min, and blood pressure is 112/70 mmHg. The abdomen is mildly tender in the left lower quadrant without distention, guarding, or rebound tenderness. Hemoglobin is 10.1 g/dL, leukocyte count is 12,400/mm3, albumin is 3.1 g/dL, and C reactive protein is 48 mg/L. Stool testing for Clostridioides difficile toxin and bacterial culture are negative. An abdominal x ray shows no colonic dilation. Which of the following is the most appropriate next step in management? A. Oral vancomycin for presumed Clostridioides difficile infection B. Oral budesonide multimatrix and outpatient follow up C. Hospitalization and intravenous methylprednisolone D. Urgent total colectomy with end ileostomy E. Increase the dose of oral mesalamine and follow up in 1 week"
+  },
+  {
+   "id": "imaging-2026-0126",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 자고 일어나 생긴 한쪽 난청",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0126.md",
+   "snippet": "45세 남자가 이틀 전 아침에 일어났을 때부터 왼쪽 귀가 먹먹하고 잘 들리지 않아 이비인후과에 왔다. 왼쪽 귀에 '삐' 소리가 계속 나고 가벼운 어지럼이 있었으나 지금은 없다. 감기 증상이나 귀 통증, 이루는 없었고, 큰 소음에 노출된 적도 없다. 고혈압약을 먹고 있다. 이경 검사에서 양쪽 외이도와 고막은 정상이다. 512 Hz 소리굽쇠로 한 Weber 검사에서 소리가 오른쪽으로 치우쳐 들리고, Rinne 검사는 양쪽 모두 양",
+   "text": "이비인후과 이비인후과 — 자고 일어나 생긴 한쪽 난청 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 45세 남자가 이틀 전 아침에 일어났을 때부터 왼쪽 귀가 먹먹하고 잘 들리지 않아 이비인후과에 왔다. 왼쪽 귀에 '삐' 소리가 계속 나고 가벼운 어지럼이 있었으나 지금은 없다. 감기 증상이나 귀 통증, 이루는 없었고, 큰 소음에 노출된 적도 없다. 고혈압약을 먹고 있다. 이경 검사에서 양쪽 외이도와 고막은 정상이다. 512 Hz 소리굽쇠로 한 Weber 검사에서 소리가 오른쪽으로 치우쳐 들리고, Rinne 검사는 양쪽 모두 양성이다. 순음청력검사에서 왼쪽 귀의 골도·기도 역치가 함께 올라가 있고, 연속된 세 주파수에서 오른쪽보다 35 dB 이상 나쁘다. 고막운동도는 양쪽 A형이다. 가장 적절한 치료는? A. 경구 항바이러스제만 투여한다 B. 고용량 경구 스테로이드를 투여한다 C. 경구 항생제와 비충혈제거제를 투여한다 D. 고막절개술 후 환기관을 삽입한다 E. 보청기를 맞추고 6개월 뒤 다시 본다"
+  },
+  {
+   "id": "imaging-2026-0125",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 기계환기 중인 코로나19 급성호흡곤란증후군의 일회호흡량",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0125.md",
+   "snippet": "A 64 year old man with COVID 19 pneumonia was intubated 12 hours ago in the intensive care unit because of worsening hypoxemia despite high flow nasal cannula oxygen. He is 175 cm (5 ft 9 in) tall and weighs 102 kg (225 lb). Current ventila",
+   "text": "호흡기 호흡기 — 기계환기 중인 코로나19 급성호흡곤란증후군의 일회호흡량 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 A 64 year old man with COVID 19 pneumonia was intubated 12 hours ago in the intensive care unit because of worsening hypoxemia despite high flow nasal cannula oxygen. He is 175 cm (5 ft 9 in) tall and weighs 102 kg (225 lb). Current ventilator settings are volume assist control with a tidal volume of 700 mL, respiratory rate of 18/min, PEEP of 8 cm H2O, and FiO2 of 0.8. The plateau pressure is 34 cm H2O. His temperature is 38.1°C, pulse is 108/min, and blood pressure is 118/70 mmHg on a low dose norepinephrine infusion. Breath sounds are equal bilaterally with diffuse crackles. Arterial blood gas analysis shows pH 7.36, PaCO2 44 mmHg, and PaO2 88 mmHg. Bedside echocardiography shows normal left ventricular size and function. A portable chest x ray is shown. Which of the following is the most appropriate change to the ventilator settings? A. Decrease the PEEP to 0 cm H2O to lower the plateau pressure B. Increase the tidal volume to 10 mL/kg of actual body weight C. Change to high frequency oscillatory ventilation D. Reduce the tidal volume to 6 mL/kg of predicted body weight E. Reduce the tidal volume to 6 mL/kg of actual body weight"
+  },
+  {
+   "id": "imaging-2026-0124",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 부비동염 뒤 안구운동 제한을 동반한 눈꺼풀 부종",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663",
+   "confidence": "high",
+   "date": "2026-09-25",
+   "path": "content/imaging/2026/imaging-2026-0124.md",
+   "snippet": "34세 남자가 3일 전부터 오른쪽 눈꺼풀이 붓고 아파서 응급실에 왔다. 1주 전부터 코막힘과 누런 콧물이 있었고, 어제부터 눈을 움직이면 아프고 물체가 두 개로 보인다고 한다. 당뇨병이나 면역저하 질환은 없다. 체온 38.6°C, 맥박 96회/분, 혈압 124/78 mmHg이다. 오른쪽 위·아래 눈꺼풀이 붉고 단단하게 부어 있고, 오른쪽 안구가 앞으로 돌출되어 있으며 위쪽과 바깥쪽을 볼 때 움직임이 제한된다. 교정시력은 오른눈",
+   "text": "안과 안과 — 부비동염 뒤 안구운동 제한을 동반한 눈꺼풀 부종 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260925T202340Z_일일영상_2026-09-26_10units_10q_4cb1e663 34세 남자가 3일 전부터 오른쪽 눈꺼풀이 붓고 아파서 응급실에 왔다. 1주 전부터 코막힘과 누런 콧물이 있었고, 어제부터 눈을 움직이면 아프고 물체가 두 개로 보인다고 한다. 당뇨병이나 면역저하 질환은 없다. 체온 38.6°C, 맥박 96회/분, 혈압 124/78 mmHg이다. 오른쪽 위·아래 눈꺼풀이 붉고 단단하게 부어 있고, 오른쪽 안구가 앞으로 돌출되어 있으며 위쪽과 바깥쪽을 볼 때 움직임이 제한된다. 교정시력은 오른눈 0.6, 왼눈 1.0이고, 오른눈에 상대구심동공운동장애는 없다. 백혈구 15,800/mm³, C 반응단백 8.4 mg/dL이다. 가장 적절한 처치는? A. 영상검사 없이 즉시 안와 감압술을 시행한다 B. 입원하여 정맥 항생제를 시작하고 조영증강 안와 CT를 찍는다 C. 경구 아목시실린 클라불란산을 처방하고 이틀 뒤 외래에서 본다 D. 스테로이드 점안액을 처방하고 냉찜질을 하게 한다 E. 항생제 없이 비충혈제거제만 쓰며 경과를 관찰한다"
   },
   {
    "id": "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition",
