@@ -276,8 +276,29 @@
    "date": "2026-09-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0175": {
+   "id": "usmle-2026-0175",
+   "exam": "usmle",
+   "subject": "Obstetrics & Gynecology",
+   "step": "Step 2",
+   "type": "Vomiting, Jaundice and a Glucose of 52 at 35 Weeks With Only Borderline Blood Pressure — The Liver That Is Failing Rather Than Just Leaking Enzymes",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is the most likely diagnosis?",
+   "chosen": 0,
+   "chosenText": "HELLP syndrome",
+   "answer": 1,
+   "answerText": "Acute fatty liver of pregnancy",
+   "coreNote": "",
+   "differ": "",
+   "decision": "임신 3분기에 구토·황달·간효소 상승이 있으면서 저혈당·INR 연장·저섬유소원혈증·뇌증 같은 간부전 소견이 앞서면 급성 임신 지방간이다. HELLP 는 미세혈관병성 용혈(분열적혈구·LDH ≥ 600)과 전자간증이 중심이라, 용혈이 없고 혈압·단백뇨가 경미하면 가능성이 낮다. 두 질환 모두 모체 안정 뒤 신속한 분만이 치료다.",
+   "source": "USMLE-style / MedKOS (Williams Obstetrics 26e Ch 58 Hepatic, Biliary, and Pancreatic Disorders; Tran TT, Ahn J, Reau NS. ACG Clinical Guideline: Liver Disease and Pregnancy, Am J Gastroenterol 2016; Ch'ng CL et al. Prospective study of liver dysfunction in pregnancy in Southwest Wales, Gut 2002)",
+   "date": "2026-09-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-25T08:36:58.425Z"
+ "updated": "2026-09-25T08:44:08.321Z"
 }
