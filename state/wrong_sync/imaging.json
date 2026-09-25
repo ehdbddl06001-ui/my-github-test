@@ -307,8 +307,29 @@
    "date": "2026-09-24",
    "device": "android-9buhos",
    "note": ""
+  },
+  "imaging-2026-0115": {
+   "id": "imaging-2026-0115",
+   "exam": "imaging",
+   "subject": "신경",
+   "step": "Step 2",
+   "type": "신경 — 진행성 편마비 고령 환자의 뇌 MRI",
+   "style": "usmle_style",
+   "modality": "MR",
+   "question": "Which of the following is the most likely diagnosis?",
+   "chosen": 3,
+   "chosenText": "Chronic subdural hematoma",
+   "answer": 4,
+   "answerText": "Glioblastoma",
+   "coreNote": "",
+   "differ": "",
+   "decision": "The precontrast T1 image shows an intra-axial right frontal-insular mass with mass effect, and postcontrast images show a thick irregular rim around necrosis. With weeks of progression, no fever, and no primary elsewhere, glioblastoma is most likely; an abscess would have a thin wall and an infectious setting.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260924T202232Z_일일영상_2026-09-25_11units_11q_fd616a9a",
+   "date": "2026-09-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-24T10:48:50.433Z"
+ "updated": "2026-09-25T12:19:54.103Z"
 }
