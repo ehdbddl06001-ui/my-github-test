@@ -255,8 +255,29 @@
    "date": "2026-09-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "usmle-2026-0173": {
+   "id": "usmle-2026-0173",
+   "exam": "usmle",
+   "subject": "Surgery",
+   "step": "Step 2",
+   "type": "Four Days of Left Lower Quadrant Pain and a 5.5-cm Collection Beside the Sigmoid in a Stable Woman — When Antibiotics Alone Are Not Enough and the Knife Is Not Yet Needed",
+   "style": "",
+   "modality": "",
+   "question": "Which of the following is the most appropriate next step in management?",
+   "chosen": 3,
+   "chosenText": "Colonoscopy to exclude an underlying cancer",
+   "answer": 0,
+   "answerText": "CT-guided percutaneous drainage of the collection",
+   "coreNote": "",
+   "differ": "",
+   "decision": "CT 로 확인한 게실염에 3~4 cm 이상 농양이 있으면 항생제 단독으로는 실패가 많아 영상 유도 경피 배농을 더한다. 혈역학적으로 안정되고 유리 공기·범발성 복막염이 없으면 응급 절제는 필요 없고, 수술은 배농 실패나 악화 때 한다. 대장내시경은 회복 후 6~8주에 한다.",
+   "source": "USMLE-style / MedKOS (Hall J et al. The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Management of Left-Sided Colonic Diverticulitis, Dis Colon Rectum 2020; Sartelli M et al. 2020 Update of the WSES Guidelines for the Management of Acute Colonic Diverticulitis in the Emergency Setting, World J Emerg Surg 2020; Sabiston Textbook of Surgery 21e Ch 52 Colon and Rectum)",
+   "date": "2026-09-25",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-25T08:31:34.813Z"
+ "updated": "2026-09-25T08:36:58.425Z"
 }
