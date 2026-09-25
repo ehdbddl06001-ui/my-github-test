@@ -6,7 +6,7 @@
   "title": "Pityriasis versicolor: a systematic review of interventions",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -17,8 +17,47 @@
   ],
   "title": "Results of the Endophthalmitis Vitrectomy Study. A randomized trial of immediate vitrectomy and of intravenous antibiotics for the treatment of postoperative bacterial endophthalmitis",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1001/archopht.1997.01100150488006": {
+  "concepts": [
+   "cn.ophth.crvo.neovascular-glaucoma-risk"
+  ],
+  "title": "Natural history and clinical management of central retinal vein occlusion",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1001/jama.2012.5669": {
+  "concepts": [
+   "cn.em.ards.lung-protective-ventilation"
+  ],
+  "title": "Acute respiratory distress syndrome: the Berlin Definition",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1002/art.41774": {
+  "concepts": [
+   "cn.rheum.giant-cell-arteritis.steroids-before-biopsy"
+  ],
+  "title": "2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1002/art.42624": {
+  "concepts": [
+   "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria"
+  ],
+  "title": "The 2023 ACR/EULAR Antiphospholipid Syndrome Classification Criteria",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1002/jhbp.515": {
   "concepts": [
@@ -26,7 +65,7 @@
   ],
   "title": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos)",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1002/jhbp.516": {
@@ -35,8 +74,45 @@
   ],
   "title": "Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1007/978-3-662-63123-2": {
+  "concepts": [
+   "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia"
+  ],
+  "title": "Inborn Metabolic Diseases: Diagnosis and Treatment, 7th ed.",
+  "doi_pmid": "",
+  "method": "doi",
+  "fingerprint": "registered",
+  "checked_at": "2026-09-25",
+  "baseline": "registered",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1016/S0140-6736(05)71144-2": {
+  "concepts": [
+   "cn.peds.stec-hus.supportive-no-antibiotics"
+  ],
+  "title": "Shiga-toxin-producing Escherichia coli and haemolytic uraemic syndrome",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1016/S0140-6736(16)30272-0": {
+  "concepts": [
+   "cn.psy.smoking-cessation.varenicline-seizure"
+  ],
+  "title": "Neuropsychiatric safety and efficacy of varenicline, bupropion, and nicotine patch in smokers with and without psychiatric disorders (EAGLES)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1016/S0140-6736(17)30066-1": {
   "concepts": [
@@ -45,10 +121,34 @@
   "title": "Fracture fixation in the operative management of hip fractures (FAITH): an international, multicentre, randomised controlled trial",
   "method": "reachability",
   "fingerprint": "reachable",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문과 같음"
+ },
+ "10.1016/S0140-6736(22)01015-7": {
+  "concepts": [
+   "cn.ortho.torus-fracture.splint-no-reduction"
+  ],
+  "title": "Immobilisation of torus fractures of the wrist in children (FORCE): a randomised controlled equivalence trial in the UK",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
   "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1016/j.chest.2021.07.055": {
+  "concepts": [
+   "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
+  ],
+  "title": "Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline and Expert Panel Report",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:35809930\"]",
+  "checked_at": "2026-09-25",
+  "baseline": "[\"ErratumIn:35809930\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1016/j.jaad.2018.11.057": {
   "concepts": [
@@ -57,7 +157,7 @@
   "title": "Joint AAD–NPF guidelines of care for the management and treatment of psoriasis with biologics",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -69,7 +169,7 @@
   "title": "Joint American Academy of Dermatology–National Psoriasis Foundation guidelines of care for the management and treatment of psoriasis with phototherapy",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:31948783\"]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[\"ErratumIn:31948783\"]",
   "status": "ok",
   "note": "기준 지문과 같음"
@@ -81,10 +181,10 @@
   "title": "Joint AAD–NPF guidelines of care for the management of psoriasis with systemic nonbiologic therapies",
   "status": "ok",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
-  "note": "기준 지문 기록",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]"
  },
  "10.1016/j.jacc.2012.07.046": {
@@ -93,12 +193,87 @@
   ],
   "title": "Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol",
   "status": "ok",
-  "checked_at": "2026-09-21",
-  "note": "2026-09-23 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "checked_at": "2026-09-25",
+  "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1016/j.jhep.2020.08.018": {
+  "concepts": [
+   "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa"
+  ],
+  "title": "EASL recommendations on treatment of hepatitis C: Final update of the series",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:36464532\"]",
+  "checked_at": "2026-09-25",
+  "baseline": "[\"ErratumIn:36464532\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1016/j.ophtha.2016.01.058": {
+  "concepts": [
+   "cn.rheum.sle.mild-disease-hydroxychloroquine"
+  ],
+  "title": "Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (2016 Revision)",
+  "status": "unchecked",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+ },
+ "10.1016/j.ophtha.2019.09.029": {
+  "concepts": [
+   "cn.ophth.crvo.neovascular-glaucoma-risk"
+  ],
+  "title": "Retinal Vein Occlusions Preferred Practice Pattern",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1038/s41572-018-0009-4": {
+  "concepts": [
+   "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa"
+  ],
+  "title": "Cryoglobulinaemia",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1056/NEJM200005043421801": {
+  "concepts": [
+   "cn.em.ards.lung-protective-ventilation"
+  ],
+  "title": "Ventilation with lower tidal volumes as compared with traditional tidal volumes for acute lung injury and the acute respiratory distress syndrome",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1056/NEJM200006293422601": {
+  "concepts": [
+   "cn.peds.stec-hus.supportive-no-antibiotics"
+  ],
+  "title": "The risk of the hemolytic-uremic syndrome after antibiotic treatment of Escherichia coli O157:H7 infections",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1056/NEJMoa1302097": {
+  "concepts": [
+   "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
+  ],
+  "title": "Fibrinolysis for Patients with Intermediate-Risk Pulmonary Embolism (PEITHO)",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1056/NEJMoa1313517": {
   "concepts": [
@@ -106,7 +281,7 @@
   ],
   "title": "Letrozole versus Clomiphene for Infertility in the Polycystic Ovary Syndrome (PPCOS II)",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1056/NEJMoa1906190": {
@@ -115,7 +290,7 @@
   ],
   "title": "Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1089/thy.2015.0020": {
@@ -124,8 +299,29 @@
   ],
   "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1093/cid/ciw099": {
+  "concepts": [
+   "cn.peds.stec-hus.supportive-no-antibiotics"
+  ],
+  "title": "Shiga toxin-producing Escherichia coli infection, antibiotics, and risk of developing hemolytic uremic syndrome: a meta-analysis",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1093/eurheartj/ehac237": {
+  "concepts": [
+   "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation"
+  ],
+  "title": "2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:36821743\"]",
+  "checked_at": "2026-09-25",
+  "baseline": "[\"ErratumIn:36821743\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1093/eurheartj/ehac262": {
   "concepts": [
@@ -134,7 +330,7 @@
   "title": "2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음",
@@ -146,12 +342,22 @@
   ],
   "title": "The long QT syndrome: a transatlantic clinical approach to diagnosis and therapy",
   "status": "ok",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[]",
   "baseline": "[]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "10.1093/eurheartj/ehz405": {
+  "concepts": [
+   "cn.pulm.pulmonary-embolism.high-risk-reperfusion",
+   "cn.pulm.pulmonary-embolism.intermediate-high-risk-management"
+  ],
+  "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS)",
+  "status": "unchecked",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
  },
  "10.1097/AOG.0000000000002501": {
   "concepts": [
@@ -159,7 +365,49 @@
   ],
   "title": "ACOG Practice Bulletin No. 190: Gestational Diabetes Mellitus",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1097/AOG.0b013e3181841395": {
+  "concepts": [
+   "cn.obgyn.intrapartum-fhr.nichd-category"
+  ],
+  "title": "The 2008 National Institute of Child Health and Human Development Workshop Report on Electronic Fetal Monitoring: Update on Definitions, Interpretation, and Research Guidelines",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1097/AOG.0b013e3181aef106": {
+  "concepts": [
+   "cn.obgyn.intrapartum-fhr.nichd-category"
+  ],
+  "title": "ACOG Practice Bulletin No. 106: Intrapartum Fetal Heart Rate Monitoring — Nomenclature, Interpretation, and General Management Principles",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1097/AOG.0b013e3182004fa9": {
+  "concepts": [
+   "cn.obgyn.intrapartum-fhr.nichd-category"
+  ],
+  "title": "ACOG Practice Bulletin No. 116: Management of Intrapartum Fetal Heart Rate Tracings",
+  "status": "unchecked",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+ },
+ "10.1097/MPG.0000000000001334": {
+  "concepts": [
+   "cn.peds.biliary-atresia.cholestasis-workup"
+  ],
+  "title": "Guideline for the Evaluation of Cholestatic Jaundice in Infants: Joint Recommendations of the North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition and the European Society for Pediatric Gastroenterology, Hepatology, and Nutrition",
+  "status": "failed",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1097/SLA.0b013e3182a1599b": {
@@ -168,7 +416,73 @@
   ],
   "title": "Acute cholecystitis: early versus delayed cholecystectomy, a multicenter randomized trial (ACDC study, NCT00447304)",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1111/jth.15010": {
+  "concepts": [
+   "cn.peds.stec-hus.supportive-no-antibiotics"
+  ],
+  "title": "ISTH guideline for treatment of thrombotic thrombocytopenic purpura",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1128/CMR.12.2.224": {
+  "concepts": [
+   "cn.derm.ssss.antistaphylococcal-therapy"
+  ],
+  "title": "Clinical, microbial, and biochemical aspects of the exfoliative toxins causing staphylococcal scalded-skin syndrome",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1136/ard-2022-223296": {
+  "concepts": [
+   "cn.rheum.axial-spa.nsaid-failure-biologic"
+  ],
+  "title": "ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.1136/ard-2023-224762": {
+  "concepts": [
+   "cn.rheum.sle.mild-disease-hydroxychloroquine"
+  ],
+  "title": "EULAR recommendations for the management of systemic lupus erythematosus: 2023 update",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1136/thx.2009.121434": {
+  "concepts": [
+   "cn.pulm.community-acquired-pneumonia.curb65-site-of-care"
+  ],
+  "title": "BTS guidelines for the management of community acquired pneumonia in adults: update 2009",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1155/2014/196827": {
+  "concepts": [
+   "cn.ophth.chemical-burn.immediate-irrigation"
+  ],
+  "title": "The ocular surface chemical burns",
+  "status": "failed",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1161/CIR.0000000000000205": {
@@ -177,7 +491,16 @@
   ],
   "title": "Revision of the Jones Criteria for the Diagnosis of Acute Rheumatic Fever in the Era of Doppler Echocardiography: A Scientific Statement From the American Heart Association",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1161/CIR.0000000000000484": {
+  "concepts": [
+   "cn.peds.kawasaki.acute-ivig"
+  ],
+  "title": "Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association",
+  "status": "failed",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1161/CIR.0000000000000549": {
@@ -186,20 +509,63 @@
   ],
   "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
   "status": "ok",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "기준 지문과 같음",
   "method": "pubmed",
   "fingerprint": "[\"ErratumIn:30354425\"]",
   "baseline": "[\"ErratumIn:30354425\"]",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
+ "10.1161/CIR.0000000000000916": {
+  "concepts": [
+   "cn.em.ventricular-fibrillation.immediate-defibrillation"
+  ],
+  "title": "Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1161/CIR.0000000000001063": {
+  "concepts": [
+   "cn.em.ards.lung-protective-ventilation"
+  ],
+  "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1161/CIR.0000000000001106": {
+  "concepts": [
+   "cn.cardio.aortic-dissection.impulse-control-first"
+  ],
+  "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1161/CIR.0000000000001193": {
+  "concepts": [
+   "cn.cardio.atrial-flutter.stable-rate-control-first"
+  ],
+  "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
  "10.1161/CIRCULATIONAHA.109.191959": {
   "concepts": [
+   "cn.peds.rheumatic-fever.acute-eradication",
    "cn.peds.rheumatic-fever.secondary-prophylaxis"
   ],
   "title": "Prevention of Rheumatic Fever and Diagnosis and Treatment of Acute Streptococcal Pharyngitis: A Scientific Statement From the American Heart Association",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.1161/STR.0000000000000366": {
@@ -208,8 +574,62 @@
   ],
   "title": "Management of Central Retinal Artery Occlusion: A Scientific Statement From the American Heart Association",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1164/rccm.202303-0558WS": {
+  "concepts": [
+   "cn.em.ards.lung-protective-ventilation"
+  ],
+  "title": "A New Global Definition of Acute Respiratory Distress Syndrome",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1183/13993003.02426-2016": {
+  "concepts": [
+   "cn.pulm.copd-exacerbation.hypercapnic-failure-niv"
+  ],
+  "title": "Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1210/jc.2008-0125": {
+  "concepts": [
+   "cn.endo.cushing-syndrome.screening-test"
+  ],
+  "title": "The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.1210/jc.2017-00131": {
+  "concepts": [
+   "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk"
+  ],
+  "title": "Functional Hypothalamic Amenorrhea: An Endocrine Society Clinical Practice Guideline",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "10.1530/EJE-13-1020": {
+  "concepts": [
+   "cn.neph.siadh.chronic-mild-fluid-restriction"
+  ],
+  "title": "Clinical practice guideline on diagnosis and treatment of hyponatraemia",
+  "method": "pubmed",
+  "fingerprint": "[\"ErratumIn:Eur J Endocrinol. 2014 Jul;171(1):X1\"]",
+  "checked_at": "2026-09-25",
+  "baseline": "[\"ErratumIn:Eur J Endocrinol. 2014 Jul;171(1):X1\"]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "10.1542/peds.2008-0939": {
   "concepts": [
@@ -221,7 +641,7 @@
   "checked_at": "2026-09-23",
   "baseline": "[]",
   "status": "ok",
-  "note": "기준 지문과 같음",
+  "note": "기준 지문과 같음 · 2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
  },
  "10.1542/peds.2010-3318": {
@@ -231,7 +651,7 @@
   "title": "Neurodiagnostic evaluation of the child with a simple febrile seizure",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음",
@@ -243,7 +663,28 @@
   ],
   "title": "Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Children 2 to 24 Months (Reaffirmed 2016)",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "10.2106/00004623-199308000-00002": {
+  "concepts": [
+   "cn.ortho.scfe.in-situ-fixation"
+  ],
+  "title": "Acute slipped capital femoral epiphysis: the importance of physeal stability",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "10.2337/dc09-9032": {
+  "concepts": [
+   "cn.endo.hhs.initial-fluid-resuscitation"
+  ],
+  "title": "Hyperglycemic crises in adult patients with diabetes (consensus statement)",
+  "status": "failed",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.2337/dc24-S015": {
@@ -252,7 +693,7 @@
   ],
   "title": "15. Management of Diabetes in Pregnancy: Standards of Care in Diabetes—2024",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "10.3390/jof1010013": {
@@ -262,11 +703,23 @@
   "title": "Antifungal treatment for pityriasis versicolor",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
   "status": "ok",
   "note": "기준 지문과 같음",
   "last_error": "HTTPError: HTTP Error 429: Too Many Requests"
+ },
+ "17375516": {
+  "concepts": [
+   "cn.derm.erythema-nodosum.underlying-cause-workup"
+  ],
+  "title": "Erythema nodosum: a sign of systemic disease",
+  "method": "pubmed",
+  "fingerprint": "[]",
+  "checked_at": "2026-09-25",
+  "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문 기록"
  },
  "17849776": {
   "concepts": [
@@ -275,8 +728,29 @@
   "title": "Practice Guideline for the Treatment of Patients With Obsessive-Compulsive Disorder (Guideline Watch 2013)",
   "method": "pubmed",
   "fingerprint": "[]",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "[]",
+  "status": "ok",
+  "note": "기준 지문과 같음"
+ },
+ "20675643": {
+  "concepts": [
+   "cn.ortho.achilles-rupture.thompson-test"
+  ],
+  "title": "Diagnosis and treatment of acute Achilles tendon rupture (AAOS clinical practice guideline)",
+  "status": "unchecked",
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "note": "2026-09-25 확인 못 함(일시 오류, 다음 실행에 다시 본다)"
+ },
+ "bolognia-4": {
+  "concepts": [
+   "cn.derm.regressing-pigmented-lesion.biopsy-first"
+  ],
+  "title": "Dermatology, 4th ed. — Benign epidermal tumors and proliferations",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문 기록"
  },
@@ -287,30 +761,222 @@
   "title": "Psoriasis",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문과 같음"
  },
- "harrison-21": {
+ "goodman-gilman": {
   "concepts": [
-   "cn.cardio.long-qt-syndrome.first-line-drug",
-   "cn.derm.pityriasis-versicolor.treatment",
-   "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning",
-   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a",
-   "cn.neph.hyperkalemia.first-step",
-   "cn.obgyn.pcos-infertility.ovulation-induction",
-   "cn.ophth.crao.arteritic-workup",
-   "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy",
-   "cn.psy.ocd.ssri-trial-optimization"
+   "cn.em.beta-blocker-overdose.glucagon-mechanism"
   ],
-  "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 255: Polymorphic Ventricular Tachycardia and Ventricular Fibrillation",
+  "title": "Goodman & Gilman's The Pharmacological Basis of Therapeutics — adrenergic receptor signaling · beta-blocker toxicity",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "guyton-14": {
+  "concepts": [
+   "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization"
+  ],
+  "title": "Guyton and Hall Textbook of Medical Physiology, 14th ed. — Chapter 77: Thyroid Metabolic Hormones",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "harrison-21": {
+  "concepts": [
+   "cn.allergy.anaphylaxis.im-epinephrine-first",
+   "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest",
+   "cn.cardio.aortic-dissection.impulse-control-first",
+   "cn.cardio.atrial-flutter.stable-rate-control-first",
+   "cn.cardio.long-qt-syndrome.first-line-drug",
+   "cn.cardio.qrs-axis.limb-lead-polarity",
+   "cn.derm.erythema-nodosum.underlying-cause-workup",
+   "cn.derm.pityriasis-versicolor.treatment",
+   "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning",
+   "cn.derm.regressing-pigmented-lesion.biopsy-first",
+   "cn.derm.scabies.treat-with-contacts",
+   "cn.derm.ssss.antistaphylococcal-therapy",
+   "cn.em.ards.lung-protective-ventilation",
+   "cn.em.beta-blocker-overdose.glucagon-mechanism",
+   "cn.em.lithium-toxicity.hemodialysis-indication",
+   "cn.em.ventricular-fibrillation.immediate-defibrillation",
+   "cn.endo.cushing-syndrome.screening-test",
+   "cn.endo.hhs.initial-fluid-resuscitation",
+   "cn.endo.pheochromocytoma.preoperative-alpha-blockade",
+   "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization",
+   "cn.gi.acetaminophen-toxicity.nac-mechanism",
+   "cn.gi.crohn-disease.distribution-histology-diagnosis",
+   "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a",
+   "cn.id.invasive-aspergillosis.angioinvasion-mechanism",
+   "cn.id.legionella-pneumonia.urinary-antigen-diagnosis",
+   "cn.neph.hyperkalemia.first-step",
+   "cn.neph.poststreptococcal-gn.latency-complement-diagnosis",
+   "cn.neph.siadh.chronic-mild-fluid-restriction",
+   "cn.neuro.guillain-barre.respiratory-monitoring-first",
+   "cn.neuro.multiple-sclerosis.dissemination-diagnosis",
+   "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk",
+   "cn.obgyn.pcos-infertility.ovulation-induction",
+   "cn.ophth.chemical-burn.immediate-irrigation",
+   "cn.ophth.crao.arteritic-workup",
+   "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy",
+   "cn.path.hepatic-congestion.zone3-mechanism",
+   "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin",
+   "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes",
+   "cn.peds.rheumatic-fever.acute-eradication",
+   "cn.peds.stec-hus.supportive-no-antibiotics",
+   "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras",
+   "cn.psy.ocd.ssri-trial-optimization",
+   "cn.psy.ptsd.duration-vs-acute-stress",
+   "cn.psy.serotonin-syndrome.cyproheptadine-refractory",
+   "cn.psy.smoking-cessation.varenicline-seizure",
+   "cn.pulm.chest-ct-anatomy.diaphragm-level-structures",
+   "cn.pulm.community-acquired-pneumonia.curb65-site-of-care",
+   "cn.pulm.copd-exacerbation.hypercapnic-failure-niv",
+   "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation",
+   "cn.pulm.pulmonary-embolism.high-risk-reperfusion",
+   "cn.pulm.pulmonary-embolism.intermediate-high-risk-management",
+   "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria",
+   "cn.rheum.axial-spa.nsaid-failure-biologic",
+   "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa",
+   "cn.rheum.giant-cell-arteritis.steroids-before-biopsy",
+   "cn.rheum.iga-vasculitis.diagnosis",
+   "cn.rheum.polyarteritis-nodosa.tissue-diagnosis",
+   "cn.rheum.scleroderma-renal-crisis.ace-inhibitor",
+   "cn.rheum.sle.mild-disease-hydroxychloroquine",
+   "cn.uro.testis-histology.leydig-lh-target"
+  ],
+  "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 353: Anaphylaxis",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문과 같음"
+ },
+ "holcomb-7": {
+  "concepts": [
+   "cn.peds.pyloric-stenosis.preop-resuscitation"
+  ],
+  "title": "Holcomb and Ashcraft's Pediatric Surgery, 7th ed. — Hypertrophic Pyloric Stenosis",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "https://academic.oup.com/qjmed": {
+  "concepts": [
+   "cn.psy.serotonin-syndrome.cyproheptadine-refractory"
+  ],
+  "title": "The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://accessmedicine.mhmedical.com/": {
+  "concepts": [
+   "cn.em.lithium-toxicity.hemodialysis-indication"
+  ],
+  "title": "Basic & Clinical Pharmacology — Antipsychotic Agents & Lithium",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://cjasn.asnjournals.org/": {
+  "concepts": [
+   "cn.em.lithium-toxicity.hemodialysis-indication"
+  ],
+  "title": "Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://goldcopd.org/2024-gold-report/": {
+  "concepts": [
+   "cn.pulm.copd-exacerbation.hypercapnic-failure-niv"
+  ],
+  "title": "Global Strategy for the Diagnosis, Management, and Prevention of COPD — 2024 Report",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://jamanetwork.com/journals/jamaneurology": {
+  "concepts": [
+   "cn.neuro.guillain-barre.respiratory-monitoring-first"
+  ],
+  "title": "Anticipating mechanical ventilation in Guillain-Barré syndrome",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://n.neurology.org": {
+  "concepts": [
+   "cn.neuro.multiple-sclerosis.dissemination-diagnosis"
+  ],
+  "title": "International consensus diagnostic criteria for neuromyelitis optica spectrum disorders",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://pubmed.ncbi.nlm.nih.gov/?term=GATA-3+maintains+the+differentiation+of+the+luminal+cell+fate+in+the+mammary+gland": {
+  "concepts": [
+   "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin"
+  ],
+  "title": "GATA-3 maintains the differentiation of the luminal cell fate in the mammary gland",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://pubmed.ncbi.nlm.nih.gov/?term=Miettinen+GATA3+multispecific+marker+surgical+pathology": {
+  "concepts": [
+   "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin"
+  ],
+  "title": "GATA3: a multispecific but potentially useful marker in surgical pathology — a systematic analysis of 2500 epithelial and nonepithelial tumors",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://screening.iarc.fr/colpochap.php?chap=1": {
+  "concepts": [
+   "cn.obgyn.cervix-transformation-zone.squamous-metaplasia"
+  ],
+  "title": "Colposcopy and Treatment of Cervical Intraepithelial Neoplasia: A Beginners' Manual — Chapter 1: An introduction to the anatomy of the uterine cervix",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.aafp.org/pubs/afp/issues/2010/0801/p258.html": {
+  "concepts": [
+   "cn.ortho.scfe.in-situ-fixation"
+  ],
+  "title": "Slipped capital femoral epiphysis: diagnosis and management",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "https://www.aaos.org/quality/quality-programs/lower-extremity-programs/hip-fractures-in-the-elderly/": {
   "concepts": [
@@ -318,8 +984,41 @@
   ],
   "title": "Management of Hip Fractures in Older Adults — Evidence-Based Clinical Practice Guideline",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag) — 업데이트 확인 필요"
+ },
+ "https://www.acog.org/clinical/clinical-guidance/practice-bulletin": {
+  "concepts": [
+   "cn.obgyn.intrapartum-fhr.nichd-category"
+  ],
+  "title": "ACOG Practice Bulletin No. 146: Management of Late-Term and Postterm Pregnancies",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.ahajournals.org/journal/circ": {
+  "concepts": [
+   "cn.cardio.qrs-axis.limb-lead-polarity"
+  ],
+  "title": "Recommendations for the Standardization and Interpretation of the Electrocardiogram, Part III: Intraventricular Conduction Disturbances",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://www.cdc.gov/scabies/hcp/clinical-care/index.html": {
+  "concepts": [
+   "cn.derm.scabies.treat-with-contacts"
+  ],
+  "title": "Scabies — Clinical Care / Treatment",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
  },
  "https://www.diabetes.or.kr": {
   "concepts": [
@@ -328,10 +1027,10 @@
   "title": "2023 당뇨병 진료지침 — 임신과 당뇨병",
   "method": "reachability",
   "fingerprint": "reachable",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.escrs.org": {
   "concepts": [
@@ -340,7 +1039,19 @@
   "title": "ESCRS Guidelines for Prevention and Treatment of Endophthalmitis Following Cataract Surgery",
   "method": "reachability",
   "fingerprint": "reachable",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문과 같음"
+ },
+ "https://www.hcvguidelines.org": {
+  "concepts": [
+   "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa"
+  ],
+  "title": "HCV Guidance: Recommendations for Testing, Managing, and Treating Hepatitis C",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
   "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
@@ -351,7 +1062,40 @@
   ],
   "title": "International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome 2023",
   "status": "failed",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
+ },
+ "https://www.ncbi.nlm.nih.gov/books/NBK1424/": {
+  "concepts": [
+   "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia"
+  ],
+  "title": "Medium-Chain Acyl-Coenzyme A Dehydrogenase Deficiency",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.ncbi.nlm.nih.gov/books/NBK63952/": {
+  "concepts": [
+   "cn.psy.smoking-cessation.varenicline-seizure"
+  ],
+  "title": "Treating Tobacco Use and Dependence: 2008 Update. Clinical Practice Guideline",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.nejm.org/doi/full/10.1056/NEJMra041867": {
+  "concepts": [
+   "cn.psy.serotonin-syndrome.cyproheptadine-refractory"
+  ],
+  "title": "The serotonin syndrome",
+  "status": "failed",
+  "checked_at": "2026-09-25",
   "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "https://www.nice.org.uk/guidance/ng224": {
@@ -361,10 +1105,91 @@
   "title": "Urinary tract infection in under 16s: diagnosis and management (NG224)",
   "method": "reachability",
   "fingerprint": "reachable",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문과 같음"
+ },
+ "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland": {
+  "concepts": [
+   "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization"
+  ],
+  "title": "TG (thyroglobulin) — Thyroid gland tissue immunohistochemistry",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
   "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast": {
+  "concepts": [
+   "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin"
+  ],
+  "title": "GATA3 — Breast tissue immunohistochemistry",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix": {
+  "concepts": [
+   "cn.obgyn.cervix-transformation-zone.squamous-metaplasia"
+  ],
+  "title": "MUC5B — tissue expression, Cervix",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer": {
+  "concepts": [
+   "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes"
+  ],
+  "title": "CD3E — Testis cancer immunohistochemistry (sample 1299 A-1-5)",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis": {
+  "concepts": [
+   "cn.uro.testis-histology.leydig-lh-target"
+  ],
+  "title": "INSL3 — tissue expression, Testis",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.psychiatry.org/psychiatrists/practice/dsm": {
+  "concepts": [
+   "cn.psy.ptsd.duration-vs-acute-stress"
+  ],
+  "title": "Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR)",
+  "method": "reachability",
+  "fingerprint": "reachable",
+  "checked_at": "2026-09-25",
+  "baseline": "reachable",
+  "status": "ok",
+  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+ },
+ "https://www.thelancet.com/journals/laneur": {
+  "concepts": [
+   "cn.neuro.multiple-sclerosis.dissemination-diagnosis"
+  ],
+  "title": "Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria",
+  "status": "failed",
+  "checked_at": "2026-09-25",
+  "note": "확인 실패(HTTPError: HTTP Error 403: Forbidden) — 업데이트 확인 필요"
  },
  "https://www.thyroid.kr": {
   "concepts": [
@@ -373,10 +1198,10 @@
   "title": "갑상선분화암 진료권고안 2024",
   "method": "reachability",
   "fingerprint": "reachable",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문 기록 — 개정 여부는 알 수 없음(도달만 확인)"
+  "note": "기준 지문과 같음"
  },
  "https://www.ukkidney.org/health-professionals/guidelines/treatment-acute-hyperkalaemia-adults": {
   "concepts": [
@@ -385,22 +1210,98 @@
   "title": "Clinical Practice Guidelines — Treatment of Acute Hyperkalaemia in Adults",
   "method": "pattern",
   "fingerprint": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf",
   "status": "ok",
   "note": "기준 지문과 같음"
  },
+ "marghoob-atlas": {
+  "concepts": [
+   "cn.derm.regressing-pigmented-lesion.biopsy-first"
+  ],
+  "title": "Atlas of Dermoscopy, 2nd ed.",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "moore-coa": {
+  "concepts": [
+   "cn.pulm.chest-ct-anatomy.diaphragm-level-structures"
+  ],
+  "title": "Clinically Oriented Anatomy — Diaphragm (apertures) and posterior mediastinum",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "nelson-21": {
+  "concepts": [
+   "cn.ortho.torus-fracture.splint-no-reduction"
+  ],
+  "title": "Nelson Textbook of Pediatrics, 21st ed. — Common fractures",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "nelson-22": {
+  "concepts": [
+   "cn.peds.kawasaki.acute-ivig",
+   "cn.peds.pyloric-stenosis.preop-resuscitation"
+  ],
+  "title": "Nelson Textbook of Pediatrics, 22nd ed. — Kawasaki Disease",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "robbins-10": {
+  "concepts": [
+   "cn.obgyn.cervix-transformation-zone.squamous-metaplasia",
+   "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin",
+   "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes"
+  ],
+  "title": "Robbins & Cotran Pathologic Basis of Disease, 10th ed. — Chapter 22: The Female Genital Tract (Cervix)",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "robbins-basic-10": {
+  "concepts": [
+   "cn.path.hepatic-congestion.zone3-mechanism"
+  ],
+  "title": "Robbins Basic Pathology, 10th ed. — The Liver and Gallbladder (hepatic zonation, circulatory disorders)",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
  "rockwood-9": {
   "concepts": [
-   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale"
+   "cn.ortho.femoral-neck-fracture.arthroplasty-rationale",
+   "cn.ortho.torus-fracture.splint-no-reduction"
   ],
   "title": "Rockwood and Green's Fractures in Adults, 9th ed. — Femoral Neck Fractures / Intertrochanteric Fractures",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "sabiston-21": {
   "concepts": [
@@ -409,10 +1310,10 @@
   "title": "Sabiston Textbook of Surgery — Thyroid",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  },
  "sabiston-21e": {
   "concepts": [
@@ -421,7 +1322,43 @@
   "title": "Sabiston Textbook of Surgery, 21st ed. — Biliary System (급성 담낭염·총담관결석 절)",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문과 같음"
+ },
+ "webb-thoracic": {
+  "concepts": [
+   "cn.pulm.chest-ct-anatomy.diaphragm-level-structures"
+  ],
+  "title": "Thoracic Imaging: Pulmonary and Cardiovascular Radiology — diaphragm and partial-volume effects at the lung bases",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "who-5-urinary-male": {
+  "concepts": [
+   "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes"
+  ],
+  "title": "WHO Classification of Tumours: Urinary and Male Genital Tumours, 5th ed.",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
+  "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "status": "ok",
+  "note": "기준 지문 기록"
+ },
+ "williams-26": {
+  "concepts": [
+   "cn.obgyn.hydatidiform-mole.diagnosis"
+  ],
+  "title": "Williams Obstetrics, 26th ed. — Gestational Trophoblastic Disease",
+  "method": "manual",
+  "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
   "note": "기준 지문 기록"
@@ -433,9 +1370,9 @@
   "title": "Diabetes Mellitus",
   "method": "manual",
   "fingerprint": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
-  "checked_at": "2026-09-23",
+  "checked_at": "2026-09-25",
   "baseline": "교과서 — 판이 바뀌면 사람이 정리본의 citation·checked_at 을 고친다(자동 확인 대상 아님)",
   "status": "ok",
-  "note": "기준 지문 기록"
+  "note": "기준 지문과 같음"
  }
 }
