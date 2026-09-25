@@ -44,7 +44,17 @@ def source_key(s: dict) -> str:
     return str(s.get("doi") or s.get("pmid") or s.get("url") or s.get("id"))
 
 
+_LAST_NCBI = [0.0]
+NCBI_GAP = 0.4          # NCBI E-utilities 는 키 없이 초당 3건 — 2026-09-25 첫 전수 확인에서 20건이 429 로 「확인 못 함」
+
+
 def fetch(url: str, timeout: int = 20) -> str:
+    if "eutils.ncbi.nlm.nih.gov" in url:
+        import time
+        wait = _LAST_NCBI[0] + NCBI_GAP - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _LAST_NCBI[0] = time.monotonic()
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
@@ -102,6 +112,18 @@ def check_one(s: dict, getter=fetch, doi_pmid: str | None = None) -> tuple[str, 
 
 # 403 = 출판사·기관 사이트의 봇 차단, 302 = 쿠키 리디렉션 루프(urllib 가 멈춘다) — 출처가 바뀌었다는 신호가 아니다
 # (2026-09-25 첫 전수 확인에서 37개가 403 으로 「업데이트 확인 필요」가 될 뻔했다). 사라진 쪽은 404·410 으로 남는다.
+def baseline_shape_ok(method: str, base: str) -> bool:
+    """기준 지문이 지금 확인 방법으로 만든 것인가. 방법이 바뀌면(예: 출판사 url 도달 → DOI 로 찾은 PubMed) 옛 기준과 비교하면
+    내용이 그대로여도 「지문 변경」이 된다(2026-09-25 — reachable → [] 3건이 개정으로 찍혔다)."""
+    if method == "pubmed":
+        return base.startswith("[")
+    if method == "reachability":
+        return base == "reachable"
+    if method == "doi":
+        return base == "registered"
+    return True
+
+
 TRANSIENT_CODES = {302, 403, 408, 425, 429, 500, 502, 503, 504}
 
 
@@ -141,7 +163,11 @@ def run(offline: bool = False, getter=fetch, out: Path = OUT, today: str | None 
             method, fp = check_one(src, getter, doi_pmid)
             rec.update(method=method, fingerprint=fp, checked_at=today)
             base = p.get("baseline")
-            if base is None:
+            if base is not None and not baseline_shape_ok(method, str(base)):
+                rec.update(baseline=fp, status="ok", note=f"확인 방법이 바뀌어({p.get('baseline_method') or '이전 방법'} → {method}) 새 기준 지문 기록",
+                           baseline_method=method)
+                rec.pop("changed_at", None)
+            elif base is None:
                 rec.update(baseline=fp, status="ok", note="기준 지문 기록" + (" — 개정 여부는 알 수 없음(도달만 확인)" if method in ("reachability", "doi") else ""))
                 if method == "pubmed" and "RetractionIn" in fp:
                     rec.update(status="changed", changed_at=today, note="철회(Retraction) 기록이 있다")
