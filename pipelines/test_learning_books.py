@@ -618,7 +618,34 @@ class _FixtureSources(unittest.TestCase):
         self.addCleanup(p.stop)
 
 
+class IdMentions(unittest.TestCase):
+    def test_other_concept_id_becomes_its_title(self):
+        titles = C.concept_titles()
+        cid, title = next(iter(titles.items()))
+        out = C.render_cites(f"이어지는 목표는 <code>{cid}</code> 가 다룬다. 모르는 cn.zz.yy.xx 는 그대로", {"sources": []}, "pdf")
+        self.assertIn(f"「{title}」", out)
+        self.assertNotIn(cid, out)
+        self.assertIn("cn.zz.yy.xx", out)
+
+
 class SourceChecks(_FixtureSources):
+    def test_doi_with_publisher_url_is_checked_by_doi_not_the_site(self):
+        SRC_FIXTURE[0]["cn.x.y.z"]["sources"].append({"id": "u", "doi": "10.1/pub", "url": "https://publisher.example/x",
+                                                      "title": "출판사", "checked_at": "2026-09-18"})
+        self.addCleanup(SRC_FIXTURE[0]["cn.x.y.z"]["sources"].pop)
+
+        def net(url):
+            if "publisher.example" in url:
+                raise AssertionError("출판사 사이트를 열었다")
+            if "esearch" in url:
+                return "<eSearchResult><IdList><Id>7</Id></IdList></eSearchResult>"
+            if "efetch" in url:
+                return "<PubmedArticleSet><PubmedArticle></PubmedArticle></PubmedArticleSet>"
+            return "HYPERKALAEMIA GUIDELINE - JULY 2022 V2.pdf"
+        with tempfile.TemporaryDirectory() as td:
+            r = cs.run(getter=net, out=Path(td) / "sc.json", today="2026-09-25")
+        self.assertEqual((r["10.1/pub"]["status"], r["10.1/pub"]["method"]), ("ok", "pubmed"))
+
     def test_doi_only_source_resolves_to_pubmed_once_then_falls_back_to_doi_org(self):
         SRC_FIXTURE[0]["cn.x.y.z"]["sources"].append({"id": "d", "doi": "10.1/abc", "title": "DOI 출처", "checked_at": "2026-09-18"})
         self.addCleanup(SRC_FIXTURE[0]["cn.x.y.z"]["sources"].pop)
@@ -885,6 +912,8 @@ class TransientSourceErrors(_FixtureSources):
 
     def test_rate_limit_keeps_status_and_does_not_flag_the_book(self):
         from urllib.error import HTTPError
+        self.assertTrue(cs.transient(HTTPError("u", 403, "Forbidden", {}, None)))          # 출판사 봇 차단
+        self.assertFalse(cs.transient(HTTPError("u", 410, "Gone", {}, None)))
         self.assertTrue(cs.transient(HTTPError("u", 429, "Too Many Requests", {}, None)))
         self.assertTrue(cs.transient(TimeoutError()))
         self.assertFalse(cs.transient(HTTPError("u", 404, "Not Found", {}, None)))

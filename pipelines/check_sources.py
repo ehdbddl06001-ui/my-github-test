@@ -79,7 +79,7 @@ def check_one(s: dict, getter=fetch, doi_pmid: str | None = None) -> tuple[str, 
     """(method, fingerprint). 실패하면 예외. doi_pmid = DOI 에서 이미 찾아 둔 PMID(없으면 None → 찾아 본다)."""
     if s.get("pmid"):
         return "pubmed", json.dumps(pubmed_fingerprint(str(s["pmid"]), getter), ensure_ascii=False)
-    if s.get("doi") and not safe_url(s.get("url")):
+    if s.get("doi"):                                   # url 이 같이 있어도 DOI 로 본다 — 출판사 사이트는 봇을 403 으로 막는다
         doi = str(s["doi"]).strip()
         pm = doi_pmid if doi_pmid is not None else pmid_for_doi(doi, getter)
         if pm:
@@ -100,7 +100,9 @@ def check_one(s: dict, getter=fetch, doi_pmid: str | None = None) -> tuple[str, 
     return "reachability", "reachable"
 
 
-TRANSIENT_CODES = {408, 425, 429, 500, 502, 503, 504}
+# 403 = 출판사·기관 사이트의 봇 차단, 302 = 쿠키 리디렉션 루프(urllib 가 멈춘다) — 출처가 바뀌었다는 신호가 아니다
+# (2026-09-25 첫 전수 확인에서 37개가 403 으로 「업데이트 확인 필요」가 될 뻔했다). 사라진 쪽은 404·410 으로 남는다.
+TRANSIENT_CODES = {302, 403, 408, 425, 429, 500, 502, 503, 504}
 
 
 def transient(ex: Exception) -> bool:
@@ -133,7 +135,7 @@ def run(offline: bool = False, getter=fetch, out: Path = OUT, today: str | None 
         try:
             src = e["source"]
             doi_pmid = p.get("doi_pmid") if (src.get("doi") and not src.get("pmid") and "doi_pmid" in p) else None
-            if src.get("doi") and not src.get("pmid") and doi_pmid is None and not safe_url(src.get("url")):
+            if src.get("doi") and not src.get("pmid") and doi_pmid is None:
                 doi_pmid = pmid_for_doi(str(src["doi"]).strip(), getter)
                 rec["doi_pmid"] = doi_pmid                    # 한 번 찾으면 기억(빈 글 = PubMed 에 없음)
             method, fp = check_one(src, getter, doi_pmid)
