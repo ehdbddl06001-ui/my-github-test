@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2924,
+  "total": 2934,
   "byType": {
    "anatomy": 738,
+   "imaging": 142,
    "concept": 83,
    "paper": 661,
    "kmle": 1131,
-   "imaging": 132,
    "usmle": 162,
    "ailab": 14,
    "basic": 3
@@ -38,9 +38,9 @@ window.MEDKOS_INDEX = {
    "General Surgery": 72,
    "Hematology": 69,
    "Laboratory Medicine": 65,
-   "산부인과": 31,
+   "산부인과": 32,
    "Physiology": 19,
-   "순환기": 14,
+   "순환기": 15,
    "Pharmacology": 13,
    "Biochemistry": 12,
    "Microbiology": 12,
@@ -50,19 +50,19 @@ window.MEDKOS_INDEX = {
    "호흡기": 8,
    "병리·조직학": 7,
    "소아과": 7,
-   "감염": 5,
-   "내분비": 5,
-   "신경": 5,
+   "감염": 6,
+   "내분비": 6,
+   "신경": 6,
+   "피부과": 6,
+   "혈액·종양": 6,
+   "신장·비뇨기": 5,
+   "예방의학·역학": 5,
+   "외과": 5,
    "응급·중환자": 5,
-   "피부과": 5,
-   "혈액·종양": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "신장·비뇨기": 4,
-   "예방의학·역학": 4,
-   "외과": 4,
    "Oncology": 3,
    "근골격·류마티스": 3,
    "약리": 3,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 1939,
+   "high": 1949,
    "medium": 936,
    "low": 49
   },
@@ -98,6 +98,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-27.md",
    "snippet": "오늘의 학습 (2026 09 27 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 17일 · Tagging 2까지 22일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-27 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 27 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 17일 · Tagging 2까지 22일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0143",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 층화 분석에서 효과변경과 교란",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0143.md",
+   "snippet": "A 55 year old man who worked in shipyard insulation asks his physician how much smoking adds to his risk of lung cancer. The physician refers to a cohort study of 12,000 men followed for 20 years. Overall, the relative risk of lung cancer f",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 층화 분석에서 효과변경과 교란 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef A 55 year old man who worked in shipyard insulation asks his physician how much smoking adds to his risk of lung cancer. The physician refers to a cohort study of 12,000 men followed for 20 years. Overall, the relative risk of lung cancer for smokers compared with nonsmokers is 9.0. When the analysis is stratified by occupational asbestos exposure, the relative risk for smoking is 5.0 among men without asbestos exposure and 15.0 among men with asbestos exposure. The proportion of smokers is similar in the exposed and unexposed groups. Confidence intervals for the two stratum specific estimates do not overlap. Which of the following best explains the difference between the stratum specific relative risks? A. Random error from small sample size B. Effect modification by asbestos exposure C. Confounding by asbestos exposure D. Selection bias from loss to follow up E. Recall bias in reporting smoking"
+  },
+  {
+   "id": "imaging-2026-0142",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 부신 우연종의 호르몬 평가",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0142.md",
+   "snippet": "54세 여자가 복부 CT에서 우연히 발견된 부신 종괴 때문에 내분비내과 외래에 왔다. 한 달 전 오른쪽 윗배 통증으로 찍은 복부 CT에서 담낭 담석과 함께 왼쪽 부신에 2.4 cm 크기의 경계가 매끈하고 균질한 종괴가 보였고, 비조영 CT 감쇠는 8 HU였다. 두통·가슴 두근거림·땀 흘림 발작은 없었다. 복용하는 약은 없다. 키 162 cm, 몸무게 61 kg이고 혈압 128/80 mmHg, 맥박 76회/분이다. 보름달 얼굴·",
+   "text": "내분비 내분비·대사 — 부신 우연종의 호르몬 평가 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef 54세 여자가 복부 CT에서 우연히 발견된 부신 종괴 때문에 내분비내과 외래에 왔다. 한 달 전 오른쪽 윗배 통증으로 찍은 복부 CT에서 담낭 담석과 함께 왼쪽 부신에 2.4 cm 크기의 경계가 매끈하고 균질한 종괴가 보였고, 비조영 CT 감쇠는 8 HU였다. 두통·가슴 두근거림·땀 흘림 발작은 없었다. 복용하는 약은 없다. 키 162 cm, 몸무게 61 kg이고 혈압 128/80 mmHg, 맥박 76회/분이다. 보름달 얼굴·자색 선조·근위부 근력 약화는 없다. 혈청 나트륨 140 mEq/L, 칼륨 4.2 mEq/L, 공복 혈당 102 mg/dL이다. 다음으로 가장 적절한 검사는? A. 복강경 부신절제술 전 부신 MRI B. 6개월 뒤 비조영 CT 재촬영 C. 양측 부신정맥 채혈 D. 1 mg 야간 덱사메타손 억제검사 E. CT 유도 부신 종괴 생검"
+  },
+  {
+   "id": "imaging-2026-0141",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 양성자펌프억제제 뒤 급성 간질콩팥염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0141.md",
+   "snippet": "A 67 year old man comes to the physician because of fatigue and decreased appetite for 2 weeks. Six weeks ago, he began taking omeprazole for gastroesophageal reflux disease. He has hypertension treated with amlodipine and takes no other me",
+   "text": "신장·비뇨기 신장·비뇨 — 양성자펌프억제제 뒤 급성 간질콩팥염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef A 67 year old man comes to the physician because of fatigue and decreased appetite for 2 weeks. Six weeks ago, he began taking omeprazole for gastroesophageal reflux disease. He has hypertension treated with amlodipine and takes no other medications, including over the counter analgesics. He has no fever, rash, flank pain, or dysuria. His temperature is 37.1°C, pulse is 78/min, and blood pressure is 136/84 mm Hg. There is no edema. Serum creatinine is 2.6 mg/dL (1.0 mg/dL 3 months ago), and serum potassium is 4.8 mEq/L. The blood eosinophil count is 520/mm3. Urinalysis shows 1+ protein, 15–20 WBCs/hpf, 0–2 RBCs/hpf, and WBC casts; there are no RBC casts. A urine culture is negative. Renal ultrasonography shows normal sized kidneys without hydronephrosis. Which of the following is the most appropriate next step in management? A. Begin hemodialysis B. Begin intravenous methylprednisolone and cyclophosphamide C. Discontinue omeprazole D. Begin oral prednisone E. Begin oral ciprofloxacin"
+  },
+  {
+   "id": "imaging-2026-0140",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 중증 Clostridioides difficile 감염의 첫 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0140.md",
+   "snippet": "72세 여자가 입원 중 하루 8회 이상의 물 같은 설사와 아랫배 통증이 생겼다. 6일 전 지역사회획득 폐렴으로 입원하여 세프트리악손과 아지트로마이신을 5일 동안 투여받았다. 이전에 Clostridioides difficile 감염을 앓은 적은 없다. 체온 38.4°C, 맥박 98회/분, 혈압 118/70 mmHg이다. 배는 부드럽고 팽만되어 있지 않으며, 아랫배에 가벼운 압통이 있고 반발통은 없다. 장음은 정상이다. 백혈구 2",
+   "text": "감염 감염 — 중증 Clostridioides difficile 감염의 첫 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef 72세 여자가 입원 중 하루 8회 이상의 물 같은 설사와 아랫배 통증이 생겼다. 6일 전 지역사회획득 폐렴으로 입원하여 세프트리악손과 아지트로마이신을 5일 동안 투여받았다. 이전에 Clostridioides difficile 감염을 앓은 적은 없다. 체온 38.4°C, 맥박 98회/분, 혈압 118/70 mmHg이다. 배는 부드럽고 팽만되어 있지 않으며, 아랫배에 가벼운 압통이 있고 반발통은 없다. 장음은 정상이다. 백혈구 21,300/mm³, 크레아티닌 1.9 mg/dL(입원 시 0.9 mg/dL), 알부민 2.7 g/dL, 젖산 1.3 mmol/L이다. 대변 C. difficile 독소 유전자 검사와 독소 효소면역검사가 모두 양성이다. 복부 X선에서 대장 확장은 없다. 가장 적절한 치료는? A. 경구 반코마이신 B. 경구 메트로니다졸 C. 정맥 반코마이신 D. 고용량 경구 반코마이신과 정맥 메트로니다졸의 병합 E. 대변 미생물 이식"
+  },
+  {
+   "id": "imaging-2026-0139",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 신경 증상을 동반한 비타민 B12 결핍의 치료",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0139.md",
+   "snippet": "A 58 year old woman comes to the physician because of a 4 month history of fatigue and numbness in both feet. Over the past month, she has felt unsteady when walking, especially in the dark. She has hypothyroidism treated with levothyroxine",
+   "text": "혈액·종양 혈액·종양 — 신경 증상을 동반한 비타민 B12 결핍의 치료 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef A 58 year old woman comes to the physician because of a 4 month history of fatigue and numbness in both feet. Over the past month, she has felt unsteady when walking, especially in the dark. She has hypothyroidism treated with levothyroxine. She does not drink alcohol and eats a varied diet including meat. Her pulse is 92/min and blood pressure is 118/72 mm Hg. The conjunctivae are pale. Vibration and position sense are decreased in both feet, the ankle reflexes are absent, and the Romberg sign is positive. Muscle strength is normal. Laboratory studies show a hemoglobin of 9.4 g/dL, mean corpuscular volume of 114 μm3, and hypersegmented neutrophils on a peripheral smear. The serum vitamin B12 is 190 pg/mL (N = 200–900), serum folate is normal, both methylmalonic acid and homocysteine are increased, and antibodies to intrinsic factor are present. Which of the following is the most appropriate treatment? A. Oral ferrous sulfate B. Transfusion of packed red blood cells C. Subcutaneous erythropoietin D. Intramuscular cyanocobalamin E. Oral folic acid"
+  },
+  {
+   "id": "imaging-2026-0138",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 교액이 의심되는 감돈 대퇴탈장",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0138.md",
+   "snippet": "78세 여자가 하루 전부터 오른쪽 사타구니 아래에 아픈 덩어리가 생기고 여러 번 토해서 응급실에 왔다. 몇 달 전부터 오래 서 있으면 같은 자리에 작은 덩어리가 나왔다가 누우면 들어갔다고 한다. 마지막 배변은 이틀 전이고 방귀도 나오지 않는다. 체온 37.9°C, 맥박 104회/분, 혈압 132/78 mmHg이다. 배가 불러 있고 장음이 항진되어 있다. 오른쪽 서혜인대 아래, 치골결절의 가쪽에 3 cm 크기의 단단하고 심한 압",
+   "text": "외과 외과계 — 교액이 의심되는 감돈 대퇴탈장 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef 78세 여자가 하루 전부터 오른쪽 사타구니 아래에 아픈 덩어리가 생기고 여러 번 토해서 응급실에 왔다. 몇 달 전부터 오래 서 있으면 같은 자리에 작은 덩어리가 나왔다가 누우면 들어갔다고 한다. 마지막 배변은 이틀 전이고 방귀도 나오지 않는다. 체온 37.9°C, 맥박 104회/분, 혈압 132/78 mmHg이다. 배가 불러 있고 장음이 항진되어 있다. 오른쪽 서혜인대 아래, 치골결절의 가쪽에 3 cm 크기의 단단하고 심한 압통이 있는 종괴가 있고, 위의 피부가 붉으며 손으로 밀어도 들어가지 않는다. 백혈구 14,200/mm³, 젖산 3.1 mmol/L, 크레아티닌 0.9 mg/dL이다. 누운 자세 복부 X선에서 확장된 소장 고리가 여럿 보이고 대장에는 공기가 거의 없다. 가장 적절한 처치는? A. 진정제를 주고 손으로 탈장 내용물의 정복을 시도한다 B. 금식·비위관 감압을 하며 48시간 경과를 관찰한다 C. 초음파 유도로 종괴를 바늘 흡인한다 D. 증상이 가라앉은 뒤 계획 수술을 예약한다 E. 응급 수술로 탈장을 교정하고 장의 생존성을 확인한다"
+  },
+  {
+   "id": "imaging-2026-0137",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 노인 등의 색소 병변 더모스코피와 기원 세포",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0137.md",
+   "snippet": "A 75 year old man comes to the physician because of a brown lesion on his upper back that his wife noticed several months ago. He is not sure how long it has been present. It occasionally itches when it rubs against his clothing but has nev",
+   "text": "피부과 피부 — 노인 등의 색소 병변 더모스코피와 기원 세포 opendata usmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef A 75 year old man comes to the physician because of a brown lesion on his upper back that his wife noticed several months ago. He is not sure how long it has been present. It occasionally itches when it rubs against his clothing but has never bled. He has hypertension treated with lisinopril and worked outdoors as a farmer for 40 years. Examination shows a 1.4 cm, slightly raised, sharply demarcated brown plaque on the upper back and several smaller tan papules elsewhere on the trunk. There is no cervical or axillary lymphadenopathy. A dermoscopic photograph of the lesion on the back is shown. The lesion is most likely a proliferation of which of the following cell types? A. Melanocytes at the dermoepidermal junction B. Nevus cells nested in the dermis C. Sebaceous gland cells D. Dermal fibroblasts E. Epidermal keratinocytes"
+  },
+  {
+   "id": "imaging-2026-0136",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동의 기저선과 변이도",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0136.md",
+   "snippet": "38주 경산부(35세)가 4시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었고, 이전 분만은 질식분만이었다. 체온 36.8°C, 혈압 118/72 mmHg, 맥박 84회/분이다. 내진에서 자궁경부는 4 cm 열리고 70 % 소실되었으며 양막은 파열되지 않았다. 옥시토신은 쓰지 않았다. 입원 후 시작한 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 이 기록에서 기저 태아심박수와 기",
+   "text": "산부인과 산과 — 분만 중 태아심박동의 기저선과 변이도 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef 38주 경산부(35세)가 4시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었고, 이전 분만은 질식분만이었다. 체온 36.8°C, 혈압 118/72 mmHg, 맥박 84회/분이다. 내진에서 자궁경부는 4 cm 열리고 70 % 소실되었으며 양막은 파열되지 않았다. 옥시토신은 쓰지 않았다. 입원 후 시작한 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 이 기록에서 기저 태아심박수와 기저선 변이도로 가장 적절한 것은? A. 약 125~130회/분, 중등도 변이도 B. 약 125~130회/분, 최소 변이도 C. 약 165~170회/분, 중등도 변이도 D. 약 100~105회/분, 중등도 변이도 E. 약 125~130회/분, 사인파형"
+  },
+  {
+   "id": "imaging-2026-0135",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 수술 전 심전도의 불완전 우각차단",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0135.md",
+   "snippet": "A 60 year old man comes to the clinic for preoperative evaluation before elective right total knee arthroplasty for osteoarthritis. He walks 2 km daily and climbs two flights of stairs without chest pain or dyspnea. He has no history of syn",
+   "text": "순환기 순환기 — 수술 전 심전도의 불완전 우각차단 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef A 60 year old man comes to the clinic for preoperative evaluation before elective right total knee arthroplasty for osteoarthritis. He walks 2 km daily and climbs two flights of stairs without chest pain or dyspnea. He has no history of syncope or palpitations. He has hypertension treated with amlodipine and does not smoke. He is 183 cm (6 ft) tall and weighs 97 kg (214 lb). His pulse is 88/min and blood pressure is 134/82 mm Hg. The lungs are clear. The second heart sound splits during inspiration and becomes single during expiration, and there are no murmurs. A 12 lead electrocardiogram is shown. Which of the following is the most appropriate next step in management? A. Coronary CT angiography B. Proceed with surgery without further cardiac testing C. Transthoracic echocardiography D. Exercise electrocardiographic stress testing E. 24 hour ambulatory electrocardiographic monitoring"
+  },
+  {
+   "id": "imaging-2026-0134",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 조영 후 뇌 MRI 에서 조영제를 알려 주는 구조",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "confidence": "high",
+   "date": "2026-09-26",
+   "path": "content/imaging/2026/imaging-2026-0134.md",
+   "snippet": "28세 남자가 2주 전 처음으로 전신 강직간대발작이 있어 신경과 외래에 왔다. 발작은 1분 정도 지속되었고 발작 뒤 30분 동안 멍했다고 한다. 발열이나 두통은 없었고, 복용하는 약이나 음주력은 없다. 혈압 122/76 mmHg, 맥박 72회/분이다. 신경학적 진찰에서 이상은 없다. 가돌리늄 조영제를 정맥 주사한 뒤 얻은 뇌 MRI T1 강조 축상면 한 장은 그림과 같다. 이 영상에서 조영제가 혈관 안에 들어갔음을 보여 주는 ",
+   "text": "신경 신경 — 조영 후 뇌 MRI 에서 조영제를 알려 주는 구조 opendata kmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef 28세 남자가 2주 전 처음으로 전신 강직간대발작이 있어 신경과 외래에 왔다. 발작은 1분 정도 지속되었고 발작 뒤 30분 동안 멍했다고 한다. 발열이나 두통은 없었고, 복용하는 약이나 음주력은 없다. 혈압 122/76 mmHg, 맥박 72회/분이다. 신경학적 진찰에서 이상은 없다. 가돌리늄 조영제를 정맥 주사한 뒤 얻은 뇌 MRI T1 강조 축상면 한 장은 그림과 같다. 이 영상에서 조영제가 혈관 안에 들어갔음을 보여 주는 소견은? A. 대뇌 백질이 회백질보다 조금 밝게 보인다 B. 두개골 판사이층(골수)이 밝게 보인다 C. 앞뒤 정중선에 있는 위시상정맥동 내강이 밝게 보인다 D. 두피 아래 피하지방이 밝게 보인다 E. 뇌고랑 안의 뇌척수액이 어둡게 보인다"
   },
   {
    "id": "cn.neuro.glioblastoma.ring-enhancing-diagnosis",

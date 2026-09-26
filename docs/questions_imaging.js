@@ -2,6 +2,1386 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0137",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "피부 — 노인 등의 색소 병변 더모스코피와 기원 세포",
+  "type": "피부 — 노인 등의 색소 병변 더모스코피와 기원 세포",
+  "modality": "DERMOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-26",
+  "vignette": "A 75-year-old man comes to the physician because of a brown lesion on his upper back that his wife noticed several months ago. He is not sure how long it has been present. It occasionally itches when it rubs against his clothing but has never bled. He has hypertension treated with lisinopril and worked outdoors as a farmer for 40 years. Examination shows a 1.4-cm, slightly raised, sharply demarcated brown plaque on the upper back and several smaller tan papules elsewhere on the trunk. There is no cervical or axillary lymphadenopathy. A dermoscopic photograph of the lesion on the back is shown.",
+  "question": "The lesion is most likely a proliferation of which of the following cell types?",
+  "options": [
+   "Melanocytes at the dermoepidermal junction",
+   "Nevus cells nested in the dermis",
+   "Sebaceous gland cells",
+   "Dermal fibroblasts",
+   "Epidermal keratinocytes"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Dermoscopy shows a sharply demarcated brown lesion with several round white-yellow milia-like cysts, dark irregular comedo-like openings, and thick finger-like (cerebriform) projections at the periphery, with no pigment network. Milia-like cysts and comedo-like openings are keratin trapped in the thickened epidermis and are the hallmark of seborrheic keratosis, a benign epidermal (non-melanocytic) proliferation that is very common on the trunk of older adults. The brown color comes from melanin passed into these keratinocytes, not from a proliferation of melanocytes; the absence of a pigment network argues against a melanocytic lesion such as melanoma, a junctional or dysplastic nevus, or a dermal nevus.\n- 원리: Dermoscopy first asks one question: <b>is the lesion melanocytic?</b> Melanocytic lesions (nevi, melanoma) usually show a <b>pigment network</b> (melanin along the rete ridges), aggregated globules, or streaks. If none is present, the reader looks for the signatures of non-melanocytic lesions.<br> <b>Seborrheic keratosis</b> is a benign proliferation of basaloid keratinocytes with <b>horn cysts</b> and <b>pseudo-horn cysts</b>. Seen from above, horn cysts inside the epidermis appear as round <b>white-yellow \"milia-like cysts\"</b>, and keratin plugs opening onto the surface appear as <b>dark \"comedo-like openings\"</b>. The folded, papillomatous surface creates <b>fissures and ridges (\"brain-like\" or cerebriform pattern)</b> and thick \"fat fingers,\" and the lesion has a <b>sharp, \"stuck-on\" border</b>.<br> Pigmented basal cell carcinoma lacks a network too but shows <b>arborizing vessels</b>, blue-gray ovoid nests, leaf-like areas, and ulceration. A heavily pigmented seborrheic keratosis can look dark and irregular, which is why the dermoscopic structures — not color alone — decide the diagnosis; if structures are equivocal, the lesion is biopsied.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Keratinocyte proliferation — seborrheic keratosis (answer)</th><th>Junctional melanocyte proliferation — melanoma or nevus (closest rival)</th></tr></thead><tbody> <tr><td>Cell of origin</td><td><b>Keratinocyte (non-melanocytic)</b></td><td>Melanocyte</td></tr> <tr><td>Pigment network</td><td><b>Absent</b></td><td>Atypical — thick, irregular, abruptly ending</td></tr> <tr><td>Key structures</td><td><b>Milia-like cysts, comedo-like openings, cerebriform ridges</b></td><td>Irregular dots/globules, streaks, blue-white veil, regression</td></tr> <tr><td>Border</td><td>Sharp, \"stuck-on\"</td><td>Irregular, may fade into skin</td></tr> </tbody></table> <b>The closest rival is a melanocytic proliferation</b>, because the lesion is large, dark, and irregular in an older sun-exposed man and pigment makes one think of melanocytes. The dividing line is <b>the pigment network and keratin structures</b>: milia-like cysts and comedo-like openings without a network point to a keratinocytic lesion whose pigment is only borrowed melanin.\n- 오답 이유:\n  - (A) Junctional melanocytes proliferate in melanoma and junctional or dysplastic nevi, which show a pigment network, irregular globules or streaks, or a blue-white veil on dermoscopy. It would be correct if an atypical network replaced the milia-like cysts and comedo-like openings.\n  - (B) Nevus cells nested in the dermis form an intradermal nevus, a soft, often skin-colored or light-brown dome with comma vessels and globules. It would be correct for a soft, rubbery facial papule with curved vessels and no keratin structures.\n  - (C) Sebaceous gland cells proliferate in sebaceous hyperplasia or adenoma, a yellowish umbilicated papule with crown vessels, usually on the face. It would be correct for a 3-mm yellow papule on the forehead with a central dell and peripheral vessels.\n  - (D) Dermal fibroblasts proliferate in a dermatofibroma, a firm papule that dimples when pinched and shows a central white patch with a delicate peripheral network. It would be correct for a firm leg papule with a positive dimple sign.\n- 함정: Brown does not mean melanocytic — first look for a pigment network; milia-like cysts and comedo-like openings without a network mark a keratinocytic lesion.\n- 학습목표: 노인 몸통의 갈색 병변에서 더모스코피의 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조와 색소망의 부재로 멜라닌세포가 아닌 표피 각질세포의 양성 증식(지루각화증)임을 읽고 멜라닌세포 병변과 구별한다\n- 근거·출처: Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — seborrheic keratosis; dermoscopy · ISIC Archive ISIC_0001104 — 75 M, posterior trunk, histopathology-confirmed seborrheic keratosis; teacher-only · 작성자 판독(2026-09-27): 경계 뚜렷한 갈색 병변, 좁쌀 모양 낭 여럿, 면포 모양 구멍, 가장자리 굵은 손가락·뇌이랑 모양 구조, 색소망 없음\n\n## 출처\n- ISIC Archive ISIC_0001104 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Dermoscopy shows a sharply demarcated brown lesion with several round white-yellow milia-like cysts, dark irregular comedo-like openings, and thick finger-like (cerebriform) projections at the periphery, with no pigment network. Milia-like cysts and comedo-like openings are keratin trapped in the thickened epidermis and are the hallmark of seborrheic keratosis, a benign epidermal (non-melanocytic) proliferation that is very common on the trunk of older adults. The brown color comes from melanin passed into these keratinocytes, not from a proliferation of melanocytes; the absence of a pigment network argues against a melanocytic lesion such as melanoma, a junctional or dysplastic nevus, or a dermal nevus."
+   },
+   {
+    "k": "원리",
+    "v": "Dermoscopy first asks one question: <b>is the lesion melanocytic?</b> Melanocytic lesions (nevi, melanoma) usually show a <b>pigment network</b> (melanin along the rete ridges), aggregated globules, or streaks. If none is present, the reader looks for the signatures of non-melanocytic lesions.<br> <b>Seborrheic keratosis</b> is a benign proliferation of basaloid keratinocytes with <b>horn cysts</b> and <b>pseudo-horn cysts</b>. Seen from above, horn cysts inside the epidermis appear as round <b>white-yellow \"milia-like cysts\"</b>, and keratin plugs opening onto the surface appear as <b>dark \"comedo-like openings\"</b>. The folded, papillomatous surface creates <b>fissures and ridges (\"brain-like\" or cerebriform pattern)</b> and thick \"fat fingers,\" and the lesion has a <b>sharp, \"stuck-on\" border</b>.<br> Pigmented basal cell carcinoma lacks a network too but shows <b>arborizing vessels</b>, blue-gray ovoid nests, leaf-like areas, and ulceration. A heavily pigmented seborrheic keratosis can look dark and irregular, which is why the dermoscopic structures — not color alone — decide the diagnosis; if structures are equivocal, the lesion is biopsied."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Keratinocyte proliferation — seborrheic keratosis (answer)</th><th>Junctional melanocyte proliferation — melanoma or nevus (closest rival)</th></tr></thead><tbody> <tr><td>Cell of origin</td><td><b>Keratinocyte (non-melanocytic)</b></td><td>Melanocyte</td></tr> <tr><td>Pigment network</td><td><b>Absent</b></td><td>Atypical — thick, irregular, abruptly ending</td></tr> <tr><td>Key structures</td><td><b>Milia-like cysts, comedo-like openings, cerebriform ridges</b></td><td>Irregular dots/globules, streaks, blue-white veil, regression</td></tr> <tr><td>Border</td><td>Sharp, \"stuck-on\"</td><td>Irregular, may fade into skin</td></tr> </tbody></table> <b>The closest rival is a melanocytic proliferation</b>, because the lesion is large, dark, and irregular in an older sun-exposed man and pigment makes one think of melanocytes. The dividing line is <b>the pigment network and keratin structures</b>: milia-like cysts and comedo-like openings without a network point to a keratinocytic lesion whose pigment is only borrowed melanin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Junctional melanocytes proliferate in melanoma and junctional or dysplastic nevi, which show a pigment network, irregular globules or streaks, or a blue-white veil on dermoscopy. It would be correct if an atypical network replaced the milia-like cysts and comedo-like openings.\n(B) Nevus cells nested in the dermis form an intradermal nevus, a soft, often skin-colored or light-brown dome with comma vessels and globules. It would be correct for a soft, rubbery facial papule with curved vessels and no keratin structures.\n(C) Sebaceous gland cells proliferate in sebaceous hyperplasia or adenoma, a yellowish umbilicated papule with crown vessels, usually on the face. It would be correct for a 3-mm yellow papule on the forehead with a central dell and peripheral vessels.\n(D) Dermal fibroblasts proliferate in a dermatofibroma, a firm papule that dimples when pinched and shows a central white patch with a delicate peripheral network. It would be correct for a firm leg papule with a positive dimple sign."
+   },
+   {
+    "k": "함정",
+    "v": "Brown does not mean melanocytic — first look for a pigment network; milia-like cysts and comedo-like openings without a network mark a keratinocytic lesion."
+   },
+   {
+    "k": "학습목표",
+    "v": "노인 몸통의 갈색 병변에서 더모스코피의 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조와 색소망의 부재로 멜라닌세포가 아닌 표피 각질세포의 양성 증식(지루각화증)임을 읽고 멜라닌세포 병변과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — seborrheic keratosis; dermoscopy · ISIC Archive ISIC_0001104 — 75 M, posterior trunk, histopathology-confirmed seborrheic keratosis; teacher-only · 작성자 판독(2026-09-27): 경계 뚜렷한 갈색 병변, 좁쌀 모양 낭 여럿, 면포 모양 구멍, 가장자리 굵은 손가락·뇌이랑 모양 구조, 색소망 없음 ## 출처 ISIC Archive ISIC_0001104 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "색소망 없이 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조가 보이는 노인 몸통의 갈색 병변은 표피 각질세포의 양성 증식(지루각화증)이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "경계부 멜라닌세포 증식(흑색종·모반)은 색소망·소구·줄무늬를 만든다 — 이 병변에는 색소망이 없고 각질 구조가 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 색소망 없음 → 멜라닌세포 병변이 아닐 가능성",
+    "영상: 좁쌀 모양 낭 + 면포 모양 구멍 + 뇌이랑 모양 구조 + 경계 뚜렷 → 지루각화증 → 표피 각질세포 증식"
+   ],
+   "key": [
+    {
+     "item": "영상: 흰색·노란색 좁쌀 모양 낭 여럿",
+     "why": "각질 낭 — 지루각화증",
+     "also": []
+    },
+    {
+     "item": "영상: 짙은 면포 모양 구멍",
+     "why": "각질 마개 — 지루각화증",
+     "also": []
+    },
+    {
+     "item": "영상: 가장자리의 굵은 손가락·뇌이랑 모양 구조",
+     "why": "유두종성 표면",
+     "also": []
+    },
+    {
+     "item": "sharply demarcated brown plaque",
+     "why": "「붙인 듯한」 뚜렷한 경계",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 색소망이 없다",
+     "why": "멜라닌세포 병변(흑색종·이형성 모반) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has never bled",
+     "why": "궤양·출혈이 없어 기저세포암 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "several smaller tan papules elsewhere on the trunk",
+     "why": "여러 개의 지루각화증에 흔하지만 단독으로 진단하지 못한다",
+     "also": []
+    },
+    {
+     "item": "worked outdoors as a farmer for 40 years",
+     "why": "자외선 노출은 흑색종·기저세포암 위험을 높여 오답으로 끌지만 진단은 구조로 한다",
+     "also": []
+    }
+   ],
+   "summary": "노인 등의 갈색 병변이 더모스코피에서 색소망 없이 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조를 보여 지루각화증, 즉 표피 각질세포의 양성 증식이다. 갈색은 각질세포에 옮겨진 멜라닌 때문이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "더모스코피에서 비정형 색소망·불규칙 소구·청백색 베일이 보이고 1년 사이 커졌다면 경계부 멜라닌세포 증식(흑색종)이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0137.jpg",
+   "caption": "Dermoscopic photograph, unaltered apart from scaling (ISIC Archive, CC0 1.0; no cropping or color adjustment)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001104",
+   "asset_id": "ISIC-ISIC_0001104",
+   "text": "ISIC Archive ISIC_0001104 (CC-0)"
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0136",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "산과 — 분만 중 태아심박동의 기저선과 변이도",
+  "type": "산과 — 분만 중 태아심박동의 기저선과 변이도",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-26",
+  "vignette": "38주 경산부(35세)가 4시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었고, 이전 분만은 질식분만이었다. 체온 36.8°C, 혈압 118/72 mmHg, 맥박 84회/분이다. 내진에서 자궁경부는 4 cm 열리고 70 % 소실되었으며 양막은 파열되지 않았다. 옥시토신은 쓰지 않았다. 입원 후 시작한 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다.",
+  "question": "이 기록에서 기저 태아심박수와 기저선 변이도로 가장 적절한 것은?",
+  "options": [
+   "약 125~130회/분, 중등도 변이도",
+   "약 125~130회/분, 최소 변이도",
+   "약 165~170회/분, 중등도 변이도",
+   "약 100~105회/분, 중등도 변이도",
+   "약 125~130회/분, 사인파형"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 10분 구간에서 가속·짧은 하강을 뺀 평균 심박수는 약 125~130회/분으로 정상 범위(110~160)다. 기저선이 한 분 안에서 불규칙하게 오르내리는 진폭(최고점과 최저점 차)은 대부분 6~15회/분으로, 6~25회/분인 중등도 변이도다. 곳곳에 145회/분 전후까지 올라가는 가속이 있고, 규칙적인 사인 모양 진동은 없다. 중등도 변이도는 그 순간 태아 대사성 산증이 없음을 강하게 시사한다.\n- 원리: 전자태아감시 판독은 <b>기저선 → 변이도 → 가속 → 감속 → 추세</b> 순서로 읽는다(NICHD 2008).<br> <b>기저 심박수</b>는 10분 동안 가속·감속·변이도가 큰 구간을 빼고 5회/분 단위로 반올림한 평균이다. 110~160이 정상, 160 초과(10분 이상)는 빈맥 — 산모 발열·융모양막염·태아 저산소의 초기, 110 미만은 서맥이다.<br> <b>기저선 변이도</b>는 기저선이 불규칙하게 오르내리는 폭(최고-최저)이다. 태아 뇌간의 교감·부교감 신경이 1초 단위로 심박수를 조절한 결과라서 <b>변이도가 있다는 것은 중추신경계가 산소를 잘 받고 있다는 뜻</b>이다. 없음(검출 불가) · 최소(≤ 5) · <b>중등도(6~25)</b> · 현저(&gt; 25)로 나눈다. 최소 변이도는 태아 수면(보통 40분 이내), 마약성 진통제·황산마그네슘, 또는 산증에서 나타난다.<br> <b>사인파형</b>은 3~5회/분 주기의 매끈하고 규칙적인 파동(진폭 5~15)으로 변이도가 없는 것과 같으며, 태아 빈혈·심한 저산소를 뜻하는 범주 III 소견이다. 이 기록처럼 파형이 들쭉날쭉하면 사인파형이 아니다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">중등도 변이도(정답)</th><th>최소 변이도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>진폭</td><td><b>6~25회/분</b></td><td>검출되지만 ≤ 5회/분 — 거의 평탄</td></tr> <tr><td>이 기록</td><td><b>대부분 6~15회/분의 불규칙한 오르내림</b></td><td>—</td></tr> <tr><td>의미</td><td>현재 대사성 산증이 없을 가능성이 높다</td><td>수면·약물(마약성 진통제·황산마그네슘) 또는 산증</td></tr> <tr><td>대응</td><td>일상 감시를 이어간다</td><td>원인 확인·자극 검사, 지속되면 범주 II 평가</td></tr> </tbody></table> <b>가장 가까운 오답은 같은 기저선의 최소 변이도</b>다. 기저선 숫자는 맞으므로 갈림길은 <b>오르내림의 폭</b>이다 — 가는 선이 격자 한 칸(10회/분) 안팎으로 계속 흔들리면 중등도, 거의 한 줄로 평탄하면 최소다.\n- 오답 이유:\n  - ② 최소 변이도는 기저선 진폭이 5회/분 이하로 거의 평탄한 기록이다. 이 기록은 6~15회/분으로 계속 흔들리고 가속도 있다. 마약성 진통제를 준 직후 선이 평탄해졌다면 정답이 된다.\n  - ③ 165~170회/분은 태아 빈맥으로, 산모 발열·융모양막염·탈수에서 보인다. 이 기록의 평균은 130 전후이고 145 전후 봉우리는 가속이다. 산모가 38.5°C 이고 기록이 10분 넘게 160 위에 머물렀다면 정답이 된다.\n  - ④ 100~105회/분은 태아 서맥으로, 제대 압박·태반 조기박리·태아 심차단에서 보인다. 이 기록의 20.6분 하강은 짧게 한 번뿐이라 기저선이 아니다. 기록 전체가 105 근처에 머물렀다면 정답이 된다.\n  - ⑤ 사인파형은 3~5회/분 주기의 매끈하고 규칙적인 파동으로 태아 빈혈·중증 저산소를 뜻한다. 이 기록의 흔들림은 불규칙하고 가속이 섞여 있다. 태아모체 출혈이 의심되는 산모에서 규칙적인 물결이 20분 이상 이어졌다면 정답이 된다.\n- 함정: 짧은 하강 하나나 가속 봉우리를 기저선으로 읽지 않는다. 기저선은 10분의 평균이고, 변이도는 오르내림의 폭이다.\n- 학습목표: 분만 중 태아심박동 기록에서 10분 구간의 기저 심박수(110~160회/분)와 기저선 변이도(진폭 6~25회/분 = 중등도)를 직접 읽는다\n- 근거·출처: Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661 · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192 · CTU-UHB Intrapartum CTG Database (PhysioNet, ODC-BY 1.0) record 1312, minutes 20–30 — 35 y, 38 wk, para 1; teacher-only · 작성자 판독(2026-09-27): 기저 약 125~130/분, 변이도 중등도(6~15), 145 전후 가속 여러 번, 20.6분 짧은 하강 1회, 저진폭 수축\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1312 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "10분 구간에서 가속·짧은 하강을 뺀 평균 심박수는 약 125~130회/분으로 정상 범위(110~160)다. 기저선이 한 분 안에서 불규칙하게 오르내리는 진폭(최고점과 최저점 차)은 대부분 6~15회/분으로, 6~25회/분인 중등도 변이도다. 곳곳에 145회/분 전후까지 올라가는 가속이 있고, 규칙적인 사인 모양 진동은 없다. 중등도 변이도는 그 순간 태아 대사성 산증이 없음을 강하게 시사한다."
+   },
+   {
+    "k": "원리",
+    "v": "전자태아감시 판독은 <b>기저선 → 변이도 → 가속 → 감속 → 추세</b> 순서로 읽는다(NICHD 2008).<br> <b>기저 심박수</b>는 10분 동안 가속·감속·변이도가 큰 구간을 빼고 5회/분 단위로 반올림한 평균이다. 110~160이 정상, 160 초과(10분 이상)는 빈맥 — 산모 발열·융모양막염·태아 저산소의 초기, 110 미만은 서맥이다.<br> <b>기저선 변이도</b>는 기저선이 불규칙하게 오르내리는 폭(최고-최저)이다. 태아 뇌간의 교감·부교감 신경이 1초 단위로 심박수를 조절한 결과라서 <b>변이도가 있다는 것은 중추신경계가 산소를 잘 받고 있다는 뜻</b>이다. 없음(검출 불가) · 최소(≤ 5) · <b>중등도(6~25)</b> · 현저(&gt; 25)로 나눈다. 최소 변이도는 태아 수면(보통 40분 이내), 마약성 진통제·황산마그네슘, 또는 산증에서 나타난다.<br> <b>사인파형</b>은 3~5회/분 주기의 매끈하고 규칙적인 파동(진폭 5~15)으로 변이도가 없는 것과 같으며, 태아 빈혈·심한 저산소를 뜻하는 범주 III 소견이다. 이 기록처럼 파형이 들쭉날쭉하면 사인파형이 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">중등도 변이도(정답)</th><th>최소 변이도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>진폭</td><td><b>6~25회/분</b></td><td>검출되지만 ≤ 5회/분 — 거의 평탄</td></tr> <tr><td>이 기록</td><td><b>대부분 6~15회/분의 불규칙한 오르내림</b></td><td>—</td></tr> <tr><td>의미</td><td>현재 대사성 산증이 없을 가능성이 높다</td><td>수면·약물(마약성 진통제·황산마그네슘) 또는 산증</td></tr> <tr><td>대응</td><td>일상 감시를 이어간다</td><td>원인 확인·자극 검사, 지속되면 범주 II 평가</td></tr> </tbody></table> <b>가장 가까운 오답은 같은 기저선의 최소 변이도</b>다. 기저선 숫자는 맞으므로 갈림길은 <b>오르내림의 폭</b>이다 — 가는 선이 격자 한 칸(10회/분) 안팎으로 계속 흔들리면 중등도, 거의 한 줄로 평탄하면 최소다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 최소 변이도는 기저선 진폭이 5회/분 이하로 거의 평탄한 기록이다. 이 기록은 6~15회/분으로 계속 흔들리고 가속도 있다. 마약성 진통제를 준 직후 선이 평탄해졌다면 정답이 된다.\n③ 165~170회/분은 태아 빈맥으로, 산모 발열·융모양막염·탈수에서 보인다. 이 기록의 평균은 130 전후이고 145 전후 봉우리는 가속이다. 산모가 38.5°C 이고 기록이 10분 넘게 160 위에 머물렀다면 정답이 된다.\n④ 100~105회/분은 태아 서맥으로, 제대 압박·태반 조기박리·태아 심차단에서 보인다. 이 기록의 20.6분 하강은 짧게 한 번뿐이라 기저선이 아니다. 기록 전체가 105 근처에 머물렀다면 정답이 된다.\n⑤ 사인파형은 3~5회/분 주기의 매끈하고 규칙적인 파동으로 태아 빈혈·중증 저산소를 뜻한다. 이 기록의 흔들림은 불규칙하고 가속이 섞여 있다. 태아모체 출혈이 의심되는 산모에서 규칙적인 물결이 20분 이상 이어졌다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "짧은 하강 하나나 가속 봉우리를 기저선으로 읽지 않는다. 기저선은 10분의 평균이고, 변이도는 오르내림의 폭이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동 기록에서 10분 구간의 기저 심박수(110~160회/분)와 기저선 변이도(진폭 6~25회/분 = 중등도)를 직접 읽는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661 · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192 · CTU-UHB Intrapartum CTG Database (PhysioNet, ODC-BY 1.0) record 1312, minutes 20–30 — 35 y, 38 wk, para 1; teacher-only · 작성자 판독(2026-09-27): 기저 약 125~130/분, 변이도 중등도(6~15), 145 전후 가속 여러 번, 20.6분 짧은 하강 1회, 저진폭 수축 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1312 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "10분 구간 평균이 125~130회/분이고 기저선이 6~25회/분 폭으로 불규칙하게 흔들리므로 정상 기저선·중등도 변이도다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "오르내림의 폭이 5회/분을 넘는다 — 최소 변이도가 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 가속·짧은 하강을 뺀 10분 평균 약 125~130회/분 → 정상 기저선(110~160)",
+    "영상: 기저선이 6~15회/분 폭으로 불규칙하게 흔들림, 규칙적 물결 없음 → 중등도 변이도"
+   ],
+   "key": [
+    {
+     "item": "영상: 가속과 짧은 하강을 뺀 기저선 약 125~130회/분",
+     "why": "정상 기저선",
+     "also": []
+    },
+    {
+     "item": "영상: 6~15회/분 폭의 불규칙한 오르내림",
+     "why": "중등도 변이도",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 20.6분의 짧은 하강 1회",
+     "why": "한 번의 짧은 하강은 기저선이 아니다 — 서맥 선지를 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 36.8°C",
+     "why": "산모 발열이 없어 태아 빈맥의 흔한 원인이 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "옥시토신은 쓰지 않았다",
+     "why": "과다 수축 가능성이 낮지만 기저선·변이도 판독과는 무관",
+     "also": []
+    },
+    {
+     "item": "자궁경부는 4 cm 열리고 70 % 소실",
+     "why": "활동기 진통의 맥락 — 판독을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "10분 평균 125~130회/분의 정상 기저선에 6~15회/분 폭의 불규칙한 오르내림이 있어 중등도 변이도다. 짧은 하강 하나와 가속 봉우리는 기저선 계산에서 뺀다.",
+   "switch": {
+    "choice": "B",
+    "condition": "마약성 진통제를 정맥 주사한 뒤 기저선이 5회/분 이하 폭으로 거의 평탄해졌다면 최소 변이도가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0136.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 20~30분 구간; 세로 굵은 선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1312_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1312"
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0135",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "순환기 — 수술 전 심전도의 불완전 우각차단",
+  "type": "순환기 — 수술 전 심전도의 불완전 우각차단",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-26",
+  "vignette": "A 60-year-old man comes to the clinic for preoperative evaluation before elective right total knee arthroplasty for osteoarthritis. He walks 2 km daily and climbs two flights of stairs without chest pain or dyspnea. He has no history of syncope or palpitations. He has hypertension treated with amlodipine and does not smoke. He is 183 cm (6 ft) tall and weighs 97 kg (214 lb). His pulse is 88/min and blood pressure is 134/82 mm Hg. The lungs are clear. The second heart sound splits during inspiration and becomes single during expiration, and there are no murmurs. A 12-lead electrocardiogram is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Coronary CT angiography",
+   "Proceed with surgery without further cardiac testing",
+   "Transthoracic echocardiography",
+   "Exercise electrocardiographic stress testing",
+   "24-hour ambulatory electrocardiographic monitoring"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The ECG shows sinus rhythm at about 90/min with an rSR′ pattern in V1, a QRS duration under 120 ms, and a slurred but narrow S wave in leads I and V6 — incomplete right bundle branch block. It is common in healthy adults and carries no added perioperative risk by itself. He has no cardiac symptoms, his functional capacity exceeds 4 METs (two flights of stairs), and the physiologic (not fixed) splitting of S2 without a murmur makes an atrial septal defect unlikely. Knee arthroplasty is an elevated-risk procedure, but a patient with good functional capacity proceeds to surgery without stress testing or imaging.\n- 원리: The right bundle branch is a thin, long fascicle that is easily delayed. When it conducts slowly, the left ventricle depolarizes normally first (the initial r in V1 and the R in V6), and the right ventricle is activated late from the left, adding a <b>terminal rightward and anterior force</b>: a secondary <b>R′ in V1</b> and a <b>slurred S wave in I and V6</b>. If the QRS is ≥ 120 ms it is complete RBBB; if the same pattern has a QRS &lt; 120 ms it is <b>incomplete RBBB</b>.<br> Incomplete RBBB is found in a few percent of healthy adults, more often in tall men and athletes, and it predicts no cardiac event on its own. It matters when it is a <b>clue to right ventricular volume overload</b> — classically an <b>ostium secundum atrial septal defect</b>, which adds a <b>fixed split S2</b>, a systolic flow murmur at the left upper sternal border, and right axis deviation. It also matters when it appears with syncope (Brugada pattern, bifascicular block).<br> Preoperative cardiac testing follows the ACC/AHA stepwise approach: urgent surgery? active cardiac condition? risk of the procedure? and then <b>functional capacity</b>. A patient who can do ≥ 4 METs (climbing two flights of stairs) without symptoms proceeds to surgery; testing is reserved for results that would change management.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Proceed to surgery (answer)</th><th>Transthoracic echocardiography (closest rival)</th></tr></thead><tbody> <tr><td>When indicated</td><td><b>Asymptomatic, ≥ 4 METs, isolated conduction finding</b></td><td>Murmur, dyspnea, heart failure signs, suspected ASD or valve disease</td></tr> <tr><td>S2</td><td><b>Physiologic split (widens on inspiration, single on expiration)</b></td><td>Fixed wide split suggests ASD</td></tr> <tr><td>Murmur</td><td>None</td><td>Pulmonary flow murmur at left upper sternal border</td></tr> <tr><td>Effect on management</td><td>None — surgery proceeds</td><td>Would change management only if structural disease is suspected</td></tr> </tbody></table> <b>The closest rival is echocardiography</b>, because incomplete RBBB is the ECG clue to an atrial septal defect. The dividing line is <b>the S2 and the murmur</b>: physiologic splitting and no murmur make an ASD unlikely, so echocardiography would not change the plan.\n- 오답 이유:\n  - (A) Coronary CT angiography evaluates suspected coronary artery disease in a patient with symptoms and an intermediate pretest probability. He has no angina or dyspnea and good functional capacity. It would be considered for new exertional chest pain in a patient unable to exercise.\n  - (C) Echocardiography is appropriate if incomplete RBBB comes with a fixed split S2, a flow murmur, dyspnea, or signs of right heart overload that suggest an atrial septal defect. Here S2 splits physiologically and there is no murmur, so it would not change management.\n  - (D) Exercise stress testing assesses ischemia when functional capacity is poor or unknown before elevated-risk surgery. This man climbs two flights of stairs without symptoms (> 4 METs). It would be reasonable if he could not do that or had exertional chest pain.\n  - (E) Ambulatory ECG monitoring detects intermittent arrhythmias or conduction block in a patient with palpitations or syncope. He has neither. It would be the next step if incomplete RBBB were accompanied by unexplained syncope.\n- 함정: Incomplete RBBB alone is not a reason to delay surgery or order tests — look for a fixed split S2, a murmur, or syncope before investigating further.\n- 학습목표: 수술 전 심전도에서 불완전 우각차단(V1 rSR′, QRS 120 ms 미만)을 보면, 증상이 없고 운동능력이 4 METs 이상이며 S2 의 고정 분열·심잡음이 없을 때 추가 심장 검사 없이 수술을 진행한다\n- 근거·출처: Thompson A et al. 2024 AHA/ACC guideline for perioperative cardiovascular management for noncardiac surgery. Circulation 2024;150:e351 · Surawicz B et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the ECG, part III: intraventricular conduction disturbances. Circulation 2009;119:e235 · PTB-XL ECG dataset (PhysioNet, CC BY 4.0) record 18334 — 60 M, incomplete right bundle branch block (2 cardiologists); teacher-only · 작성자 판독(2026-09-27): 동리듬 약 90/분, V1 rSR′, QRS 120 ms 미만, I·V6 끌리는 S, ST 변화 없음\n\n## 출처\n- PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18334 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows sinus rhythm at about 90/min with an rSR′ pattern in V1, a QRS duration under 120 ms, and a slurred but narrow S wave in leads I and V6 — incomplete right bundle branch block. It is common in healthy adults and carries no added perioperative risk by itself. He has no cardiac symptoms, his functional capacity exceeds 4 METs (two flights of stairs), and the physiologic (not fixed) splitting of S2 without a murmur makes an atrial septal defect unlikely. Knee arthroplasty is an elevated-risk procedure, but a patient with good functional capacity proceeds to surgery without stress testing or imaging."
+   },
+   {
+    "k": "원리",
+    "v": "The right bundle branch is a thin, long fascicle that is easily delayed. When it conducts slowly, the left ventricle depolarizes normally first (the initial r in V1 and the R in V6), and the right ventricle is activated late from the left, adding a <b>terminal rightward and anterior force</b>: a secondary <b>R′ in V1</b> and a <b>slurred S wave in I and V6</b>. If the QRS is ≥ 120 ms it is complete RBBB; if the same pattern has a QRS &lt; 120 ms it is <b>incomplete RBBB</b>.<br> Incomplete RBBB is found in a few percent of healthy adults, more often in tall men and athletes, and it predicts no cardiac event on its own. It matters when it is a <b>clue to right ventricular volume overload</b> — classically an <b>ostium secundum atrial septal defect</b>, which adds a <b>fixed split S2</b>, a systolic flow murmur at the left upper sternal border, and right axis deviation. It also matters when it appears with syncope (Brugada pattern, bifascicular block).<br> Preoperative cardiac testing follows the ACC/AHA stepwise approach: urgent surgery? active cardiac condition? risk of the procedure? and then <b>functional capacity</b>. A patient who can do ≥ 4 METs (climbing two flights of stairs) without symptoms proceeds to surgery; testing is reserved for results that would change management."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Proceed to surgery (answer)</th><th>Transthoracic echocardiography (closest rival)</th></tr></thead><tbody> <tr><td>When indicated</td><td><b>Asymptomatic, ≥ 4 METs, isolated conduction finding</b></td><td>Murmur, dyspnea, heart failure signs, suspected ASD or valve disease</td></tr> <tr><td>S2</td><td><b>Physiologic split (widens on inspiration, single on expiration)</b></td><td>Fixed wide split suggests ASD</td></tr> <tr><td>Murmur</td><td>None</td><td>Pulmonary flow murmur at left upper sternal border</td></tr> <tr><td>Effect on management</td><td>None — surgery proceeds</td><td>Would change management only if structural disease is suspected</td></tr> </tbody></table> <b>The closest rival is echocardiography</b>, because incomplete RBBB is the ECG clue to an atrial septal defect. The dividing line is <b>the S2 and the murmur</b>: physiologic splitting and no murmur make an ASD unlikely, so echocardiography would not change the plan."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Coronary CT angiography evaluates suspected coronary artery disease in a patient with symptoms and an intermediate pretest probability. He has no angina or dyspnea and good functional capacity. It would be considered for new exertional chest pain in a patient unable to exercise.\n(C) Echocardiography is appropriate if incomplete RBBB comes with a fixed split S2, a flow murmur, dyspnea, or signs of right heart overload that suggest an atrial septal defect. Here S2 splits physiologically and there is no murmur, so it would not change management.\n(D) Exercise stress testing assesses ischemia when functional capacity is poor or unknown before elevated-risk surgery. This man climbs two flights of stairs without symptoms (> 4 METs). It would be reasonable if he could not do that or had exertional chest pain.\n(E) Ambulatory ECG monitoring detects intermittent arrhythmias or conduction block in a patient with palpitations or syncope. He has neither. It would be the next step if incomplete RBBB were accompanied by unexplained syncope."
+   },
+   {
+    "k": "함정",
+    "v": "Incomplete RBBB alone is not a reason to delay surgery or order tests — look for a fixed split S2, a murmur, or syncope before investigating further."
+   },
+   {
+    "k": "학습목표",
+    "v": "수술 전 심전도에서 불완전 우각차단(V1 rSR′, QRS 120 ms 미만)을 보면, 증상이 없고 운동능력이 4 METs 이상이며 S2 의 고정 분열·심잡음이 없을 때 추가 심장 검사 없이 수술을 진행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Thompson A et al. 2024 AHA/ACC guideline for perioperative cardiovascular management for noncardiac surgery. Circulation 2024;150:e351 · Surawicz B et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the ECG, part III: intraventricular conduction disturbances. Circulation 2009;119:e235 · PTB-XL ECG dataset (PhysioNet, CC BY 4.0) record 18334 — 60 M, incomplete right bundle branch block (2 cardiologists); teacher-only · 작성자 판독(2026-09-27): 동리듬 약 90/분, V1 rSR′, QRS 120 ms 미만, I·V6 끌리는 S, ST 변화 없음 ## 출처 PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18334 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "증상이 없고 4 METs 이상이며 S2 가 생리적으로 분열하고 심잡음이 없는 환자의 불완전 우각차단은 추가 검사 없이 수술을 진행한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "심방중격결손을 의심할 고정 분열 S2·유출 심잡음이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: V1 rSR′, QRS 120 ms 미만, I·V6 끌리는 S → 불완전 우각차단",
+    "증상 없음 + 계단 두 층 가능(> 4 METs) + 생리적 S2 분열·심잡음 없음 → 추가 검사 없이 수술"
+   ],
+   "key": [
+    {
+     "item": "영상: V1 rSR′ 과 120 ms 미만의 QRS",
+     "why": "불완전 우각차단",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The second heart sound splits during inspiration and becomes single during expiration",
+     "why": "고정 분열이 아니다 — 심방중격결손 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there are no murmurs",
+     "why": "유출 심잡음·판막 질환 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no history of syncope or palpitations",
+     "why": "전도 장애의 진행·부정맥을 찾을 이유가 적다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "climbs two flights of stairs without chest pain or dyspnea",
+     "why": "4 METs 이상 — 부하검사 불필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He is 183 cm (6 ft) tall",
+     "why": "키 큰 남자에게 흔한 소견이지만 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "위험 인자지만 조절되고 있다",
+     "also": []
+    }
+   ],
+   "summary": "수술 전 심전도의 불완전 우각차단은 흔한 정상 변이다. 증상이 없고 운동능력이 충분하며 S2 가 생리적으로 분열하고 심잡음이 없으면 추가 검사 없이 수술한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "S2 가 호흡과 무관하게 넓게 고정 분열하고 좌측 흉골상연에 수축기 유출 심잡음이 있었다면 경흉부 심초음파가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0135.png",
+   "caption": "12-lead ECG, 25 mm/s and 10 mm/mV, 3×4 layout with lead II rhythm strip (PTB-XL ECG dataset, PhysioNet, CC BY 4.0; plotted from the raw signal)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PTB-XL, a large publicly available electrocardiography dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ptb-xl/1.0.3/LICENSE.txt",
+   "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+   "asset_id": "PTBXL-18334",
+   "text": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18334"
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0134",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "신경 — 조영 후 뇌 MRI 에서 조영제를 알려 주는 구조",
+  "type": "신경 — 조영 후 뇌 MRI 에서 조영제를 알려 주는 구조",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-26",
+  "vignette": "28세 남자가 2주 전 처음으로 전신 강직간대발작이 있어 신경과 외래에 왔다. 발작은 1분 정도 지속되었고 발작 뒤 30분 동안 멍했다고 한다. 발열이나 두통은 없었고, 복용하는 약이나 음주력은 없다. 혈압 122/76 mmHg, 맥박 72회/분이다. 신경학적 진찰에서 이상은 없다. 가돌리늄 조영제를 정맥 주사한 뒤 얻은 뇌 MRI T1 강조 축상면 한 장은 그림과 같다.",
+  "question": "이 영상에서 조영제가 혈관 안에 들어갔음을 보여 주는 소견은?",
+  "options": [
+   "대뇌 백질이 회백질보다 조금 밝게 보인다",
+   "두개골 판사이층(골수)이 밝게 보인다",
+   "앞뒤 정중선에 있는 위시상정맥동 내강이 밝게 보인다",
+   "두피 아래 피하지방이 밝게 보인다",
+   "뇌고랑 안의 뇌척수액이 어둡게 보인다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: T1 강조영상에서 지방(두피 피하지방, 두개골 판사이층의 황색골수)은 조영 여부와 상관없이 밝고, 뇌척수액은 어둡고, 백질은 회백질보다 조금 밝다 — 이것들은 모두 T1 강조영상임을 알려 줄 뿐이다. 조영제 투여를 알려 주는 것은 혈관이다. 이 영상에서 앞쪽과 뒤쪽 정중선의 위시상정맥동 내강과 피질 정맥이 밝게 조영되어 있어 가돌리늄이 혈관 안에 있음을 보여 준다. 뇌 실질에는 혈뇌장벽이 있어 정상에서는 조영되지 않는다.\n- 원리: <b>가돌리늄</b>은 주변 물 양성자의 <b>T1 이완 시간을 줄여</b> T1 강조영상에서 그 자리를 밝게 만든다. 따라서 가돌리늄이 <b>있는 곳만</b> 조영 전보다 밝아진다. 정상에서 가돌리늄이 가는 곳은 <b>혈관 안(정맥동·피질 정맥·맥락얼기)</b>과, 혈뇌장벽이 없는 구조(<b>경막·뇌하수체·맥락얼기·송과체</b>)다. 정상 뇌 실질은 혈뇌장벽 때문에 조영되지 않는다.<br> 반면 <b>지방</b>은 원래 T1 이 짧아 조영 전에도 밝다 — 두피 피하지방, 판사이층의 황색골수, 안와 지방. 그래서 「밝은 지방」은 T1 강조영상이라는 증거일 뿐 조영의 증거가 아니다. <b>뇌척수액</b>은 T1 이 길어 T1 에서 어둡고 T2 에서 밝다 — 시퀀스를 가르는 표지다. 백질이 회백질보다 밝은 것도 수초의 지질 때문인 T1 의 특징이다.<br> 주의할 점: 조영 전 T1 에서도 느린 혈류가 절편에 들어오며 정맥동이 약간 밝게 보일 수 있다(유입 효과). 그래서 실제 판독에서는 조영 전 영상과 나란히 놓고 비교한다. 시험에서는 「정맥동·피질 정맥·맥락얼기·경막이 밝다」를 조영 후 영상의 표지로 읽는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">구조</th><th style=\"width:37%\">위시상정맥동(정답)</th><th>두피 피하지방(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>밝은 이유</td><td><b>혈관 안 가돌리늄이 T1 을 줄임</b></td><td>지방 자체의 짧은 T1</td></tr> <tr><td>조영 전 T1</td><td>어둡거나 회색(유입 효과가 있으면 약간 밝음)</td><td><b>이미 밝다</b></td></tr> <tr><td>조영 후 T1</td><td><b>뚜렷하게 밝아짐</b></td><td>변화 없음</td></tr> <tr><td>알려 주는 것</td><td>조영제 투여</td><td>T1 강조영상(지방억제 없음)</td></tr> </tbody></table> <b>가장 가까운 오답은 피하지방의 고신호</b>다. 둘 다 「밝다」는 겉모습이 같다. 갈림길은 <b>조영 전에도 밝은가</b>다 — 조영 전에도 밝으면 조직 고유 신호, 조영 후에만 밝으면 가돌리늄이다.\n- 오답 이유:\n  - ① 백질이 회백질보다 밝은 것은 수초 지질 때문인 성인 T1 의 정상 대비다. 조영 전 영상에서도 같다. 이 영상이 성인 T1 강조영상인지(영아는 역전) 묻는다면 근거가 된다.\n  - ② 판사이층의 황색골수는 지방이라 조영 없이도 T1 에서 밝다. 골수 전이·골수 침윤으로 이 고신호가 사라졌는지 묻는 문항이라면 이 구조를 본다.\n  - ④ 피하지방은 T1 이 짧아 조영 전후 모두 밝으므로 조영의 증거가 아니라 T1 강조영상의 증거다. 지방억제 T1 조영 후 영상에서 지방이 어둡게 바뀌었는지를 묻는다면 이 구조를 보게 된다.\n  - ⑤ 뇌고랑 뇌척수액이 어두운 것은 T1 강조영상의 특징으로, 조영 여부와 관계없다. 이 영상이 T1 인지 T2 인지를 묻는 문항이었다면 정답이 된다.\n- 함정: T1 에서 밝은 것을 모두 조영으로 읽지 않는다. 지방은 원래 밝다 — 조영의 증거는 혈관(정맥동·피질 정맥)이다.\n- 학습목표: 조영 후 T1 강조 뇌 MRI 에서 지방·판사이층의 고신호는 조영과 무관한 T1 고유 신호이고, 경막 정맥동과 피질 정맥의 고신호가 혈관 안 가돌리늄을 보여 준다는 것을 구별한다\n- 근거·출처: Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — normal enhancing structures · Bushberg JT et al. The Essential Physics of Medical Imaging, 4th ed. — T1 relaxation and gadolinium contrast · TCIA UPENN-GBM collection (CC BY 4.0) — 28 M, axial T1 post-contrast; teacher-only · 작성자 판독(2026-09-27): 두피 지방·판사이층 고신호, CSF 저신호, 백질 > 회백질, 위시상정맥동 앞뒤와 피질 정맥 조영, 이 단면에 종괴 없음\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …35053496 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "T1 강조영상에서 지방(두피 피하지방, 두개골 판사이층의 황색골수)은 조영 여부와 상관없이 밝고, 뇌척수액은 어둡고, 백질은 회백질보다 조금 밝다 — 이것들은 모두 T1 강조영상임을 알려 줄 뿐이다. 조영제 투여를 알려 주는 것은 혈관이다. 이 영상에서 앞쪽과 뒤쪽 정중선의 위시상정맥동 내강과 피질 정맥이 밝게 조영되어 있어 가돌리늄이 혈관 안에 있음을 보여 준다. 뇌 실질에는 혈뇌장벽이 있어 정상에서는 조영되지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>가돌리늄</b>은 주변 물 양성자의 <b>T1 이완 시간을 줄여</b> T1 강조영상에서 그 자리를 밝게 만든다. 따라서 가돌리늄이 <b>있는 곳만</b> 조영 전보다 밝아진다. 정상에서 가돌리늄이 가는 곳은 <b>혈관 안(정맥동·피질 정맥·맥락얼기)</b>과, 혈뇌장벽이 없는 구조(<b>경막·뇌하수체·맥락얼기·송과체</b>)다. 정상 뇌 실질은 혈뇌장벽 때문에 조영되지 않는다.<br> 반면 <b>지방</b>은 원래 T1 이 짧아 조영 전에도 밝다 — 두피 피하지방, 판사이층의 황색골수, 안와 지방. 그래서 「밝은 지방」은 T1 강조영상이라는 증거일 뿐 조영의 증거가 아니다. <b>뇌척수액</b>은 T1 이 길어 T1 에서 어둡고 T2 에서 밝다 — 시퀀스를 가르는 표지다. 백질이 회백질보다 밝은 것도 수초의 지질 때문인 T1 의 특징이다.<br> 주의할 점: 조영 전 T1 에서도 느린 혈류가 절편에 들어오며 정맥동이 약간 밝게 보일 수 있다(유입 효과). 그래서 실제 판독에서는 조영 전 영상과 나란히 놓고 비교한다. 시험에서는 「정맥동·피질 정맥·맥락얼기·경막이 밝다」를 조영 후 영상의 표지로 읽는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">구조</th><th style=\"width:37%\">위시상정맥동(정답)</th><th>두피 피하지방(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>밝은 이유</td><td><b>혈관 안 가돌리늄이 T1 을 줄임</b></td><td>지방 자체의 짧은 T1</td></tr> <tr><td>조영 전 T1</td><td>어둡거나 회색(유입 효과가 있으면 약간 밝음)</td><td><b>이미 밝다</b></td></tr> <tr><td>조영 후 T1</td><td><b>뚜렷하게 밝아짐</b></td><td>변화 없음</td></tr> <tr><td>알려 주는 것</td><td>조영제 투여</td><td>T1 강조영상(지방억제 없음)</td></tr> </tbody></table> <b>가장 가까운 오답은 피하지방의 고신호</b>다. 둘 다 「밝다」는 겉모습이 같다. 갈림길은 <b>조영 전에도 밝은가</b>다 — 조영 전에도 밝으면 조직 고유 신호, 조영 후에만 밝으면 가돌리늄이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 백질이 회백질보다 밝은 것은 수초 지질 때문인 성인 T1 의 정상 대비다. 조영 전 영상에서도 같다. 이 영상이 성인 T1 강조영상인지(영아는 역전) 묻는다면 근거가 된다.\n② 판사이층의 황색골수는 지방이라 조영 없이도 T1 에서 밝다. 골수 전이·골수 침윤으로 이 고신호가 사라졌는지 묻는 문항이라면 이 구조를 본다.\n④ 피하지방은 T1 이 짧아 조영 전후 모두 밝으므로 조영의 증거가 아니라 T1 강조영상의 증거다. 지방억제 T1 조영 후 영상에서 지방이 어둡게 바뀌었는지를 묻는다면 이 구조를 보게 된다.\n⑤ 뇌고랑 뇌척수액이 어두운 것은 T1 강조영상의 특징으로, 조영 여부와 관계없다. 이 영상이 T1 인지 T2 인지를 묻는 문항이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "T1 에서 밝은 것을 모두 조영으로 읽지 않는다. 지방은 원래 밝다 — 조영의 증거는 혈관(정맥동·피질 정맥)이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "조영 후 T1 강조 뇌 MRI 에서 지방·판사이층의 고신호는 조영과 무관한 T1 고유 신호이고, 경막 정맥동과 피질 정맥의 고신호가 혈관 안 가돌리늄을 보여 준다는 것을 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed. — normal enhancing structures · Bushberg JT et al. The Essential Physics of Medical Imaging, 4th ed. — T1 relaxation and gadolinium contrast · TCIA UPENN-GBM collection (CC BY 4.0) — 28 M, axial T1 post-contrast; teacher-only · 작성자 판독(2026-09-27): 두피 지방·판사이층 고신호, CSF 저신호, 백질 > 회백질, 위시상정맥동 앞뒤와 피질 정맥 조영, 이 단면에 종괴 없음 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …35053496 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "T1 조영 후 영상에서 지방의 고신호는 고유 신호이고, 정맥동·피질 정맥의 고신호가 혈관 안 가돌리늄의 증거다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "피하지방은 조영 전에도 밝다 — 조영 후에만 밝아지는 것은 혈관 안 구조다",
+   "steps": 2,
+   "chain": [
+    "영상: 지방 밝음·CSF 어두움·백질 > 회백질 → T1 강조영상(이것만으로는 조영 여부 모름)",
+    "영상: 위시상정맥동 내강과 피질 정맥이 밝다 → 혈관 안 가돌리늄 → 조영 후 영상"
+   ],
+   "key": [
+    {
+     "item": "영상: 앞뒤 정중선의 위시상정맥동 내강이 밝다",
+     "why": "혈관 안 가돌리늄",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 두피 피하지방과 판사이층이 밝다",
+     "why": "지방 고유 신호 — 조영의 증거가 아니다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "영상: 뇌고랑 뇌척수액이 어둡다",
+     "why": "T1 강조영상임을 알려 주지만 조영 여부와는 무관",
+     "also": []
+    },
+    {
+     "item": "가돌리늄 조영제를 정맥 주사한 뒤",
+     "why": "조영 후 영상이라는 사실은 주어졌고, 물음은 어느 구조가 그 증거인지다",
+     "also": []
+    },
+    {
+     "item": "처음으로 전신 강직간대발작",
+     "why": "MRI 를 찍는 임상 맥락 — 답을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "신경학적 진찰에서 이상은 없다",
+     "why": "국소 결손이 없지만 영상 판독 물음과는 무관",
+     "also": []
+    }
+   ],
+   "summary": "T1 강조영상에서 지방은 원래 밝아 조영의 증거가 아니다. 위시상정맥동과 피질 정맥의 고신호가 혈관 안 가돌리늄을 보여 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "이 영상이 T1 강조영상인지 T2 강조영상인지를 물었다면 뇌척수액이 어둡다는 소견이 정답 근거가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0134.png",
+   "caption": "뇌 MRI 축상면 T1 강조영상(가돌리늄 정맥 주사 후), 표준 표시 방향(환자 오른쪽이 보는 사람 왼쪽), 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조정 없음)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.130477720134089679587344462379535053496",
+   "asset_id": "TCIA-UPENN_GBM-13440948752083",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …35053496"
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0143",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 층화 분석에서 효과변경과 교란",
+  "type": "예방의학·역학·보건통계 — 층화 분석에서 효과변경과 교란",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-26",
+  "vignette": "A 55-year-old man who worked in shipyard insulation asks his physician how much smoking adds to his risk of lung cancer. The physician refers to a cohort study of 12,000 men followed for 20 years. Overall, the relative risk of lung cancer for smokers compared with nonsmokers is 9.0. When the analysis is stratified by occupational asbestos exposure, the relative risk for smoking is 5.0 among men without asbestos exposure and 15.0 among men with asbestos exposure. The proportion of smokers is similar in the exposed and unexposed groups. Confidence intervals for the two stratum-specific estimates do not overlap.",
+  "question": "Which of the following best explains the difference between the stratum-specific relative risks?",
+  "options": [
+   "Random error from small sample size",
+   "Effect modification by asbestos exposure",
+   "Confounding by asbestos exposure",
+   "Selection bias from loss to follow-up",
+   "Recall bias in reporting smoking"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The relative risk for smoking differs markedly between the strata (5.0 vs. 15.0) with nonoverlapping confidence intervals, so the effect of smoking on lung cancer depends on asbestos exposure — effect modification (interaction). This is a real biologic finding to report separately for each stratum, not a bias to remove. Confounding by asbestos would require asbestos to be associated with smoking; here the proportion of smokers is similar in both groups, and with confounding the stratum-specific estimates would be similar to each other but different from the crude estimate.\n- 원리: Stratifying by a third variable answers two different questions, and the pattern of the numbers tells which one applies.<br> <b>Confounding</b> is a distortion: the third variable is associated with the exposure <b>and</b> independently with the outcome, and it is not on the causal path. The crude estimate is then a mixture of the exposure's effect and the confounder's effect. After stratification, <b>the stratum-specific estimates are similar to each other but differ from the crude estimate</b>, and the correct summary is an adjusted (e.g., Mantel–Haenszel) estimate.<br> <b>Effect modification</b> is not a bias but a <b>real difference in the effect across groups</b>: the <b>stratum-specific estimates differ from each other</b> beyond chance. Pooling them into one adjusted number would hide the finding, so each stratum is reported separately. Asbestos and smoking are the classic example: their joint effect on lung cancer is roughly multiplicative, because asbestos fibers impair clearance and injure the epithelium exposed to tobacco carcinogens.<br> The two can coexist; one checks first whether stratum estimates differ (a test of homogeneity), and only if they are similar does one ask whether they differ from the crude value.\n- 비교: <table><thead><tr><th style=\"width:26%\">Pattern after stratification</th><th style=\"width:37%\">Effect modification (answer)</th><th>Confounding (closest rival)</th></tr></thead><tbody> <tr><td>Stratum-specific estimates</td><td><b>Differ from each other (5.0 vs. 15.0)</b></td><td>Similar to each other</td></tr> <tr><td>Crude vs. strata</td><td>Crude lies between the strata (9.0)</td><td><b>Crude differs from the similar strata</b></td></tr> <tr><td>Third variable linked to exposure?</td><td>Not required (smoking similar in both groups)</td><td>Required</td></tr> <tr><td>What to report</td><td>Each stratum separately</td><td>One adjusted estimate</td></tr> </tbody></table> <b>The closest rival is confounding</b>, because both are revealed by stratification. The dividing line is <b>whether the strata disagree with each other</b>: differing strata mean effect modification; agreeing strata that differ from the crude value mean confounding.\n- 오답 이유:\n  - (A) Random error is a concern when estimates are imprecise and confidence intervals are wide and overlap. The cohort is large and the intervals do not overlap. It would be correct if the stratum estimates came from a few dozen participants with widely overlapping intervals.\n  - (C) Confounding requires asbestos to be associated with smoking and would produce stratum estimates that agree with each other but differ from the crude value. Here smoking is equally common in both groups and the strata disagree. It would be correct if both strata showed a relative risk near 5.0 while the crude relative risk was 9.0.\n  - (D) Selection bias from loss to follow-up distorts estimates when dropout depends on both exposure and outcome. Nothing in the study suggests differential follow-up, and it would not explain a consistent stratum difference. It would be correct if many smokers who developed symptoms left the cohort early.\n  - (E) Recall bias arises when outcome status affects how exposure is reported, typically in case–control studies. Here smoking was recorded at baseline before lung cancer developed. It would be correct in a case–control study in which patients with cancer recalled past smoking more completely.\n- 함정: Do not call every change after stratification confounding — if the strata disagree with each other, the finding is effect modification.\n- 학습목표: 층화 분석에서 층별 상대위험도가 서로 크게 다르면 효과변경(상호작용)이고, 층별 값은 서로 비슷한데 조율 전 전체 값과 다르면 교란임을 구별한다\n- 근거·출처: Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. — confounding and interaction · Gordis L. Epidemiology, 5th ed. — interaction and confounding · Markowitz SB et al. Asbestos, asbestosis, smoking, and lung cancer: new findings from the North American insulator cohort. Am J Respir Crit Care Med 2013;188:90",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The relative risk for smoking differs markedly between the strata (5.0 vs. 15.0) with nonoverlapping confidence intervals, so the effect of smoking on lung cancer depends on asbestos exposure — effect modification (interaction). This is a real biologic finding to report separately for each stratum, not a bias to remove. Confounding by asbestos would require asbestos to be associated with smoking; here the proportion of smokers is similar in both groups, and with confounding the stratum-specific estimates would be similar to each other but different from the crude estimate."
+   },
+   {
+    "k": "원리",
+    "v": "Stratifying by a third variable answers two different questions, and the pattern of the numbers tells which one applies.<br> <b>Confounding</b> is a distortion: the third variable is associated with the exposure <b>and</b> independently with the outcome, and it is not on the causal path. The crude estimate is then a mixture of the exposure's effect and the confounder's effect. After stratification, <b>the stratum-specific estimates are similar to each other but differ from the crude estimate</b>, and the correct summary is an adjusted (e.g., Mantel–Haenszel) estimate.<br> <b>Effect modification</b> is not a bias but a <b>real difference in the effect across groups</b>: the <b>stratum-specific estimates differ from each other</b> beyond chance. Pooling them into one adjusted number would hide the finding, so each stratum is reported separately. Asbestos and smoking are the classic example: their joint effect on lung cancer is roughly multiplicative, because asbestos fibers impair clearance and injure the epithelium exposed to tobacco carcinogens.<br> The two can coexist; one checks first whether stratum estimates differ (a test of homogeneity), and only if they are similar does one ask whether they differ from the crude value."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Pattern after stratification</th><th style=\"width:37%\">Effect modification (answer)</th><th>Confounding (closest rival)</th></tr></thead><tbody> <tr><td>Stratum-specific estimates</td><td><b>Differ from each other (5.0 vs. 15.0)</b></td><td>Similar to each other</td></tr> <tr><td>Crude vs. strata</td><td>Crude lies between the strata (9.0)</td><td><b>Crude differs from the similar strata</b></td></tr> <tr><td>Third variable linked to exposure?</td><td>Not required (smoking similar in both groups)</td><td>Required</td></tr> <tr><td>What to report</td><td>Each stratum separately</td><td>One adjusted estimate</td></tr> </tbody></table> <b>The closest rival is confounding</b>, because both are revealed by stratification. The dividing line is <b>whether the strata disagree with each other</b>: differing strata mean effect modification; agreeing strata that differ from the crude value mean confounding."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Random error is a concern when estimates are imprecise and confidence intervals are wide and overlap. The cohort is large and the intervals do not overlap. It would be correct if the stratum estimates came from a few dozen participants with widely overlapping intervals.\n(C) Confounding requires asbestos to be associated with smoking and would produce stratum estimates that agree with each other but differ from the crude value. Here smoking is equally common in both groups and the strata disagree. It would be correct if both strata showed a relative risk near 5.0 while the crude relative risk was 9.0.\n(D) Selection bias from loss to follow-up distorts estimates when dropout depends on both exposure and outcome. Nothing in the study suggests differential follow-up, and it would not explain a consistent stratum difference. It would be correct if many smokers who developed symptoms left the cohort early.\n(E) Recall bias arises when outcome status affects how exposure is reported, typically in case–control studies. Here smoking was recorded at baseline before lung cancer developed. It would be correct in a case–control study in which patients with cancer recalled past smoking more completely."
+   },
+   {
+    "k": "함정",
+    "v": "Do not call every change after stratification confounding — if the strata disagree with each other, the finding is effect modification."
+   },
+   {
+    "k": "학습목표",
+    "v": "층화 분석에서 층별 상대위험도가 서로 크게 다르면 효과변경(상호작용)이고, 층별 값은 서로 비슷한데 조율 전 전체 값과 다르면 교란임을 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. — confounding and interaction · Gordis L. Epidemiology, 5th ed. — interaction and confounding · Markowitz SB et al. Asbestos, asbestosis, smoking, and lung cancer: new findings from the North American insulator cohort. Am J Respir Crit Care Med 2013;188:90"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "층별 상대위험도가 5.0 과 15.0 으로 서로 크게 다르고 신뢰구간이 겹치지 않으므로 석면 노출에 의한 효과변경이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "교란이면 층별 값이 서로 비슷하고 전체 값과만 달라야 하며, 석면이 흡연과 관련되어 있어야 한다",
+   "steps": 3,
+   "chain": [
+    "층별 RR 5.0 과 15.0, 신뢰구간 겹치지 않음 → 층끼리 서로 다르다",
+    "흡연자 비율이 두 군에서 비슷 → 석면은 흡연과 관련 없음 → 교란 조건 불충족",
+    "층별 효과가 다름 = 효과변경(상호작용) → 층별로 따로 보고"
+   ],
+   "key": [
+    {
+     "item": "the relative risk for smoking is 5.0 among men without asbestos exposure and 15.0 among men with asbestos exposure",
+     "why": "층별 값이 서로 다르다",
+     "also": []
+    },
+    {
+     "item": "Confidence intervals for the two stratum-specific estimates do not overlap",
+     "why": "우연으로 보기 어렵다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The proportion of smokers is similar in the exposed and unexposed groups",
+     "why": "석면-흡연 연관이 없어 교란 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "a cohort study of 12,000 men followed for 20 years",
+     "why": "전향적 코호트·큰 표본 — 회상 바이어스와 우연 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "the relative risk of lung cancer for smokers compared with nonsmokers is 9.0",
+     "why": "전체 값이 두 층 사이에 있다 — 효과변경에서 흔한 모양",
+     "also": []
+    },
+    {
+     "item": "worked in shipyard insulation",
+     "why": "질문의 맥락 — 석면 노출자임을 알려 주지만 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "층별 상대위험도가 5.0 과 15.0 으로 서로 다르고 신뢰구간이 겹치지 않으며, 석면이 흡연과 관련되지 않아 교란이 아니다. 석면에 의한 효과변경이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "두 층의 상대위험도가 모두 5.0 전후로 비슷하고 석면 노출자에 흡연자가 훨씬 많았다면 석면에 의한 교란이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0142",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "내분비·대사 — 부신 우연종의 호르몬 평가",
+  "type": "내분비·대사 — 부신 우연종의 호르몬 평가",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-26",
+  "vignette": "54세 여자가 복부 CT에서 우연히 발견된 부신 종괴 때문에 내분비내과 외래에 왔다. 한 달 전 오른쪽 윗배 통증으로 찍은 복부 CT에서 담낭 담석과 함께 왼쪽 부신에 2.4 cm 크기의 경계가 매끈하고 균질한 종괴가 보였고, 비조영 CT 감쇠는 8 HU였다. 두통·가슴 두근거림·땀 흘림 발작은 없었다. 복용하는 약은 없다. 키 162 cm, 몸무게 61 kg이고 혈압 128/80 mmHg, 맥박 76회/분이다. 보름달 얼굴·자색 선조·근위부 근력 약화는 없다. 혈청 나트륨 140 mEq/L, 칼륨 4.2 mEq/L, 공복 혈당 102 mg/dL이다.",
+  "question": "다음으로 가장 적절한 검사는?",
+  "options": [
+   "복강경 부신절제술 전 부신 MRI",
+   "6개월 뒤 비조영 CT 재촬영",
+   "양측 부신정맥 채혈",
+   "1 mg 야간 덱사메타손 억제검사",
+   "CT 유도 부신 종괴 생검"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 비조영 CT 감쇠 10 HU 이하이고 4 cm 미만의 균질한 종괴는 지질이 풍부한 양성 선종으로 볼 수 있어 추가 영상 추적이 필요 없다(ESE/ENSAT 2023). 그러나 영상으로는 호르몬 분비를 알 수 없고, 부신 우연종의 가장 흔한 기능 이상은 증상 없는 자율 코르티솔 분비다. 그래서 쿠싱 양상이 없어도 모든 부신 우연종에 1 mg 야간 덱사메타손 억제검사를 한다. 혈압과 칼륨이 정상이라 알도스테론 선별은 필요하지 않다.\n- 원리: 부신 우연종 평가는 두 질문으로 나뉜다 — <b>① 악성인가(영상)</b>, <b>② 호르몬을 내는가(생화학)</b>. 영상은 ①만 답한다.<br> ① <b>비조영 CT 감쇠</b>는 세포 안 지질량을 반영한다. 피질 선종은 지질이 풍부해 <b>10 HU 이하</b>로 낮고, 부신피질암·전이·갈색세포종은 지질이 적어 대개 그보다 높다. <b>10 HU 이하이고 4 cm 미만의 균질한 종괴</b>는 악성 가능성이 매우 낮아 추가 영상이나 추적 CT가 필요 없다(ESE/ENSAT 2023). 갈색세포종 선별도 이런 종괴에서는 생략할 수 있다는 것이 최신 유럽 지침의 입장이다.<br> ② 부신 우연종의 기능 이상 가운데 가장 흔한 것은 <b>경도 자율 코르티솔 분비(MACS)</b>로, 쿠싱 양상 없이 고혈압·당뇨·골다공증·심혈관 위험을 높인다. 선별은 <b>1 mg 야간 덱사메타손 억제검사</b>다: 밤 11시 1 mg 을 먹고 아침 8시 코르티솔이 1.8 μg/dL 이하면 정상 억제, 그보다 높으면 자율 분비다. 정상 뇌하수체-부신 축에서는 덱사메타손이 ACTH를 눌러 코르티솔이 떨어지지만, 선종이 ACTH와 무관하게 코르티솔을 내면 억제되지 않는다.<br> 알도스테론-레닌 비는 <b>고혈압이나 저칼륨혈증</b>이 있을 때 한다. 생검은 부신 종괴 평가에 거의 쓰지 않는다(갈색세포종이면 위험, 선종과 암의 구별도 어렵다).\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1 mg 덱사메타손 억제검사(정답)</th><th>6개월 뒤 CT 재촬영(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>답하는 질문</td><td><b>호르몬을 내는가(자율 코르티솔)</b></td><td>커지는가(악성 가능성)</td></tr> <tr><td>이 환자에게 필요?</td><td><b>필요 — 모든 우연종</b></td><td>불필요 — 8 HU·2.4 cm·균질이면 양성 선종</td></tr> <tr><td>필요해지는 경우</td><td>—</td><td>감쇠 &gt; 10 HU 이거나 불균질한 비결정성 종괴</td></tr> </tbody></table> <b>가장 가까운 오답은 추적 CT</b>다 — 우연종이면 「크기를 지켜본다」고 기억하기 쉽다. 갈림길은 <b>감쇠값</b>이다. 10 HU 이하 균질 종괴는 영상 추적이 필요 없고, 남은 질문은 호르몬 분비뿐이다.\n- 오답 이유:\n  - ① 부신 MRI 는 CT 감쇠가 애매할 때 화학적 이동 영상으로 세포 안 지질을 확인하려고 찍는다. 이 종괴는 이미 8 HU 로 지질이 풍부함이 확인되었고 수술 적응증도 아직 없다. 비조영 감쇠가 18 HU 로 애매했다면 쓸 수 있다.\n  - ② 6개월 뒤 CT 재촬영은 감쇠가 10 HU 를 넘거나 불균질한 비결정성 종괴를 수술하지 않고 지켜볼 때 한다. 8 HU·2.4 cm 균질 종괴는 영상 추적이 필요 없다. 감쇠 25 HU 인 3 cm 종괴였다면 정답이 된다.\n  - ③ 양측 부신정맥 채혈은 원발성 알도스테론증이 확진된 뒤 수술할 쪽을 정하려고 한다. 이 환자는 혈압과 칼륨이 정상이라 알도스테론 선별 대상조차 아니다. 고혈압·저칼륨혈증에 알도스테론-레닌 비가 높고 확진 검사도 양성이었다면 정답이 된다.\n  - ⑤ CT 유도 생검은 부신 종괴가 선종인지 암인지 잘 가르지 못하고, 갈색세포종이면 고혈압 위기를 부를 수 있어 거의 하지 않는다. 폐암 환자에서 부신 전이를 조직으로 확인해야 병기가 바뀌고 갈색세포종이 배제되었다면 고려한다.\n- 함정: 영상이 양성처럼 보여도 호르몬 평가를 건너뛰지 않는다. 증상 없는 자율 코르티솔 분비는 영상으로 알 수 없다.\n- 학습목표: 비조영 CT 감쇠 10 HU 이하·4 cm 미만의 균질한 부신 우연종은 영상 추적이 필요 없는 양성 선종으로 보되, 증상이 없어도 자율 코르티솔 분비를 찾기 위해 1 mg 야간 덱사메타손 억제검사를 한다\n- 근거·출처: Fassnacht M et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas (with ENSAT). Eur J Endocrinol 2023;189:G1 · Williams Textbook of Endocrinology, 14th ed. — adrenal incidentaloma · Sherlock M et al. Adrenal incidentaloma. Endocr Rev 2020;41:775",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "비조영 CT 감쇠 10 HU 이하이고 4 cm 미만의 균질한 종괴는 지질이 풍부한 양성 선종으로 볼 수 있어 추가 영상 추적이 필요 없다(ESE/ENSAT 2023). 그러나 영상으로는 호르몬 분비를 알 수 없고, 부신 우연종의 가장 흔한 기능 이상은 증상 없는 자율 코르티솔 분비다. 그래서 쿠싱 양상이 없어도 모든 부신 우연종에 1 mg 야간 덱사메타손 억제검사를 한다. 혈압과 칼륨이 정상이라 알도스테론 선별은 필요하지 않다."
+   },
+   {
+    "k": "원리",
+    "v": "부신 우연종 평가는 두 질문으로 나뉜다 — <b>① 악성인가(영상)</b>, <b>② 호르몬을 내는가(생화학)</b>. 영상은 ①만 답한다.<br> ① <b>비조영 CT 감쇠</b>는 세포 안 지질량을 반영한다. 피질 선종은 지질이 풍부해 <b>10 HU 이하</b>로 낮고, 부신피질암·전이·갈색세포종은 지질이 적어 대개 그보다 높다. <b>10 HU 이하이고 4 cm 미만의 균질한 종괴</b>는 악성 가능성이 매우 낮아 추가 영상이나 추적 CT가 필요 없다(ESE/ENSAT 2023). 갈색세포종 선별도 이런 종괴에서는 생략할 수 있다는 것이 최신 유럽 지침의 입장이다.<br> ② 부신 우연종의 기능 이상 가운데 가장 흔한 것은 <b>경도 자율 코르티솔 분비(MACS)</b>로, 쿠싱 양상 없이 고혈압·당뇨·골다공증·심혈관 위험을 높인다. 선별은 <b>1 mg 야간 덱사메타손 억제검사</b>다: 밤 11시 1 mg 을 먹고 아침 8시 코르티솔이 1.8 μg/dL 이하면 정상 억제, 그보다 높으면 자율 분비다. 정상 뇌하수체-부신 축에서는 덱사메타손이 ACTH를 눌러 코르티솔이 떨어지지만, 선종이 ACTH와 무관하게 코르티솔을 내면 억제되지 않는다.<br> 알도스테론-레닌 비는 <b>고혈압이나 저칼륨혈증</b>이 있을 때 한다. 생검은 부신 종괴 평가에 거의 쓰지 않는다(갈색세포종이면 위험, 선종과 암의 구별도 어렵다)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">1 mg 덱사메타손 억제검사(정답)</th><th>6개월 뒤 CT 재촬영(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>답하는 질문</td><td><b>호르몬을 내는가(자율 코르티솔)</b></td><td>커지는가(악성 가능성)</td></tr> <tr><td>이 환자에게 필요?</td><td><b>필요 — 모든 우연종</b></td><td>불필요 — 8 HU·2.4 cm·균질이면 양성 선종</td></tr> <tr><td>필요해지는 경우</td><td>—</td><td>감쇠 &gt; 10 HU 이거나 불균질한 비결정성 종괴</td></tr> </tbody></table> <b>가장 가까운 오답은 추적 CT</b>다 — 우연종이면 「크기를 지켜본다」고 기억하기 쉽다. 갈림길은 <b>감쇠값</b>이다. 10 HU 이하 균질 종괴는 영상 추적이 필요 없고, 남은 질문은 호르몬 분비뿐이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 부신 MRI 는 CT 감쇠가 애매할 때 화학적 이동 영상으로 세포 안 지질을 확인하려고 찍는다. 이 종괴는 이미 8 HU 로 지질이 풍부함이 확인되었고 수술 적응증도 아직 없다. 비조영 감쇠가 18 HU 로 애매했다면 쓸 수 있다.\n② 6개월 뒤 CT 재촬영은 감쇠가 10 HU 를 넘거나 불균질한 비결정성 종괴를 수술하지 않고 지켜볼 때 한다. 8 HU·2.4 cm 균질 종괴는 영상 추적이 필요 없다. 감쇠 25 HU 인 3 cm 종괴였다면 정답이 된다.\n③ 양측 부신정맥 채혈은 원발성 알도스테론증이 확진된 뒤 수술할 쪽을 정하려고 한다. 이 환자는 혈압과 칼륨이 정상이라 알도스테론 선별 대상조차 아니다. 고혈압·저칼륨혈증에 알도스테론-레닌 비가 높고 확진 검사도 양성이었다면 정답이 된다.\n⑤ CT 유도 생검은 부신 종괴가 선종인지 암인지 잘 가르지 못하고, 갈색세포종이면 고혈압 위기를 부를 수 있어 거의 하지 않는다. 폐암 환자에서 부신 전이를 조직으로 확인해야 병기가 바뀌고 갈색세포종이 배제되었다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "영상이 양성처럼 보여도 호르몬 평가를 건너뛰지 않는다. 증상 없는 자율 코르티솔 분비는 영상으로 알 수 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "비조영 CT 감쇠 10 HU 이하·4 cm 미만의 균질한 부신 우연종은 영상 추적이 필요 없는 양성 선종으로 보되, 증상이 없어도 자율 코르티솔 분비를 찾기 위해 1 mg 야간 덱사메타손 억제검사를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Fassnacht M et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas (with ENSAT). Eur J Endocrinol 2023;189:G1 · Williams Textbook of Endocrinology, 14th ed. — adrenal incidentaloma · Sherlock M et al. Adrenal incidentaloma. Endocr Rev 2020;41:775"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "비조영 8 HU·2.4 cm 균질한 부신 우연종은 영상으로는 양성이라 추적 영상이 필요 없고, 남은 평가는 1 mg 덱사메타손 억제검사로 자율 코르티솔 분비를 찾는 것이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "10 HU 이하 균질 종괴는 추적 CT 가 필요 없다 — 영상이 답하지 못하는 것은 호르몬 분비다",
+   "steps": 3,
+   "chain": [
+    "비조영 8 HU·2.4 cm·경계 매끈·균질 → 지질 풍부한 양성 선종 → 추가 영상 불필요",
+    "모든 우연종은 호르몬 평가 — 가장 흔한 것은 증상 없는 자율 코르티솔 분비",
+    "혈압·칼륨 정상 → 알도스테론 선별 불필요 → 1 mg 야간 덱사메타손 억제검사"
+   ],
+   "key": [
+    {
+     "item": "비조영 CT 감쇠는 8 HU",
+     "why": "지질 풍부 선종 — 영상 추적 불필요",
+     "also": []
+    },
+    {
+     "item": "2.4 cm 크기의 경계가 매끈하고 균질한 종괴",
+     "why": "4 cm 미만·균질 — 악성 가능성 낮음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈압 128/80 mmHg",
+     "why": "알도스테론 선별 적응증이 없다",
+     "also": []
+    },
+    {
+     "item": "칼륨 4.2 mEq/L",
+     "why": "저칼륨혈증이 없다 — 부신정맥 채혈 대상 아님",
+     "also": []
+    },
+    {
+     "item": "두통·가슴 두근거림·땀 흘림 발작은 없었다",
+     "why": "갈색세포종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "보름달 얼굴·자색 선조·근위부 근력 약화는 없다",
+     "why": "뚜렷한 쿠싱증후군은 없지만 자율 코르티솔 분비를 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "공복 혈당 102 mg/dL",
+     "why": "경도 이상 — 자율 코르티솔 분비와 관련될 수 있으나 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "담낭 담석",
+     "why": "CT 를 찍은 이유 — 부신 평가와 무관",
+     "also": []
+    }
+   ],
+   "summary": "비조영 8 HU·2.4 cm 균질한 부신 우연종은 영상상 양성 선종이라 추적 영상이 필요 없다. 호르몬 평가로 1 mg 야간 덱사메타손 억제검사를 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "비조영 CT 감쇠가 25 HU 인 3 cm 불균질 종괴였고 수술하지 않기로 했다면 6~12개월 뒤 CT 재촬영이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0141",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "신장·비뇨 — 양성자펌프억제제 뒤 급성 간질콩팥염",
+  "type": "신장·비뇨 — 양성자펌프억제제 뒤 급성 간질콩팥염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-26",
+  "vignette": "A 67-year-old man comes to the physician because of fatigue and decreased appetite for 2 weeks. Six weeks ago, he began taking omeprazole for gastroesophageal reflux disease. He has hypertension treated with amlodipine and takes no other medications, including over-the-counter analgesics. He has no fever, rash, flank pain, or dysuria. His temperature is 37.1°C, pulse is 78/min, and blood pressure is 136/84 mm Hg. There is no edema. Serum creatinine is 2.6 mg/dL (1.0 mg/dL 3 months ago), and serum potassium is 4.8 mEq/L. The blood eosinophil count is 520/mm3. Urinalysis shows 1+ protein, 15–20 WBCs/hpf, 0–2 RBCs/hpf, and WBC casts; there are no RBC casts. A urine culture is negative. Renal ultrasonography shows normal-sized kidneys without hydronephrosis.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Begin hemodialysis",
+   "Begin intravenous methylprednisolone and cyclophosphamide",
+   "Discontinue omeprazole",
+   "Begin oral prednisone",
+   "Begin oral ciprofloxacin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: A subacute rise in creatinine weeks after starting omeprazole, sterile pyuria with WBC casts, mild proteinuria, no RBC casts, mild eosinophilia, and normal-sized unobstructed kidneys indicate drug-induced acute interstitial nephritis. Proton pump inhibitors are a leading cause, and the classic triad of fever, rash, and eosinophilia is often absent. The first and most important step is to stop the offending drug. Glucocorticoids are considered if renal function does not improve within several days or if biopsy confirms severe inflammation.\n- 원리: Acute interstitial nephritis (AIN) is an <b>immune reaction in the renal interstitium</b>, most often a delayed-type (T cell–mediated) hypersensitivity to a drug that acts as a hapten. Interstitial edema and infiltration by lymphocytes, macrophages, and eosinophils separate and injure the tubules, so the urine shows <b>tubular and interstitial signs</b>: sterile pyuria, <b>WBC casts</b> (white cells molded in the tubule lumen), and low-grade proteinuria — not the RBC casts of glomerulonephritis.<br> Drugs cause about 70% of AIN: <b>proton pump inhibitors</b>, β-lactams, sulfonamides, rifampin, NSAIDs, and allopurinol. PPI-associated AIN typically develops weeks to months after starting the drug, in older patients, and usually <b>without the fever–rash–eosinophilia triad</b> (present in only about 10%). The same slow onset makes it easy to miss.<br> Because the injury is driven by ongoing exposure to the antigen, <b>withdrawal of the drug</b> is the cornerstone; delayed withdrawal (more than 2–3 weeks) is associated with interstitial fibrosis and incomplete recovery. Glucocorticoids may speed recovery and are commonly given if creatinine does not improve within 3–5 days of stopping the drug, ideally after biopsy confirmation. Cyclophosphamide is reserved for rapidly progressive glomerulonephritis, not AIN.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Discontinue omeprazole (answer)</th><th>Begin oral prednisone (closest rival)</th></tr></thead><tbody> <tr><td>Role</td><td><b>Removes the antigen — required in every case</b></td><td>Adjunct that may speed recovery</td></tr> <tr><td>Timing</td><td><b>Immediately at diagnosis</b></td><td>If no improvement 3–5 days after withdrawal, or severe biopsy findings</td></tr> <tr><td>Evidence</td><td>Delay beyond 2–3 weeks predicts fibrosis</td><td>Observational data only; not a substitute for withdrawal</td></tr> </tbody></table> <b>The closest rival is prednisone</b>, because AIN is an immune process and steroids are discussed in its treatment. The dividing line is <b>sequence</b>: the drug is stopped first; steroids are added only if renal function fails to recover.\n- 오답 이유:\n  - (A) Hemodialysis is indicated for refractory hyperkalemia, acidosis, volume overload, or uremic complications. His potassium is 4.8 mEq/L and he has no edema or uremic symptoms. It would be correct if potassium were 7.0 mEq/L despite medical therapy or if pericarditis were present.\n  - (B) Pulse methylprednisolone with cyclophosphamide treats rapidly progressive glomerulonephritis such as ANCA vasculitis, which produces RBC casts and hematuria. This urinalysis has WBC casts and no RBC casts. It would be correct for a patient with RBC casts, hemoptysis, and positive ANCA.\n  - (D) Oral prednisone is used when creatinine fails to improve within several days after stopping the drug or when biopsy shows extensive interstitial inflammation. Giving it while omeprazole continues leaves the antigen in place. It would be correct if creatinine stayed at 2.6 mg/dL one week after omeprazole was stopped.\n  - (E) Ciprofloxacin treats bacterial pyelonephritis, which also causes pyuria and WBC casts but with fever, flank pain, and a positive urine culture. The culture here is negative and he is afebrile. It would be correct for a febrile patient with flank tenderness and a gram-negative culture.\n- 함정: Do not skip drug withdrawal and jump to immunosuppression — stopping the culprit is the first step in acute interstitial nephritis.\n- 학습목표: 양성자펌프억제제를 시작한 뒤 수주에 걸쳐 크레아티닌이 오르고 요에 백혈구·백혈구 원주가 있으며 배양이 음성이면 약물 유발 급성 간질콩팥염으로 판단하고, 첫 처치로 원인 약물을 끊는다\n- 근거·출처: Perazella MA, Markowitz GS. Drug-induced acute interstitial nephritis. Nat Rev Nephrol 2010;6:461 · Moledina DG, Perazella MA. PPIs and kidney disease: from AIN to CKD. J Nephrol 2016;29:611 · Brenner and Rector's The Kidney, 11th ed. — acute interstitial nephritis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A subacute rise in creatinine weeks after starting omeprazole, sterile pyuria with WBC casts, mild proteinuria, no RBC casts, mild eosinophilia, and normal-sized unobstructed kidneys indicate drug-induced acute interstitial nephritis. Proton pump inhibitors are a leading cause, and the classic triad of fever, rash, and eosinophilia is often absent. The first and most important step is to stop the offending drug. Glucocorticoids are considered if renal function does not improve within several days or if biopsy confirms severe inflammation."
+   },
+   {
+    "k": "원리",
+    "v": "Acute interstitial nephritis (AIN) is an <b>immune reaction in the renal interstitium</b>, most often a delayed-type (T cell–mediated) hypersensitivity to a drug that acts as a hapten. Interstitial edema and infiltration by lymphocytes, macrophages, and eosinophils separate and injure the tubules, so the urine shows <b>tubular and interstitial signs</b>: sterile pyuria, <b>WBC casts</b> (white cells molded in the tubule lumen), and low-grade proteinuria — not the RBC casts of glomerulonephritis.<br> Drugs cause about 70% of AIN: <b>proton pump inhibitors</b>, β-lactams, sulfonamides, rifampin, NSAIDs, and allopurinol. PPI-associated AIN typically develops weeks to months after starting the drug, in older patients, and usually <b>without the fever–rash–eosinophilia triad</b> (present in only about 10%). The same slow onset makes it easy to miss.<br> Because the injury is driven by ongoing exposure to the antigen, <b>withdrawal of the drug</b> is the cornerstone; delayed withdrawal (more than 2–3 weeks) is associated with interstitial fibrosis and incomplete recovery. Glucocorticoids may speed recovery and are commonly given if creatinine does not improve within 3–5 days of stopping the drug, ideally after biopsy confirmation. Cyclophosphamide is reserved for rapidly progressive glomerulonephritis, not AIN."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Discontinue omeprazole (answer)</th><th>Begin oral prednisone (closest rival)</th></tr></thead><tbody> <tr><td>Role</td><td><b>Removes the antigen — required in every case</b></td><td>Adjunct that may speed recovery</td></tr> <tr><td>Timing</td><td><b>Immediately at diagnosis</b></td><td>If no improvement 3–5 days after withdrawal, or severe biopsy findings</td></tr> <tr><td>Evidence</td><td>Delay beyond 2–3 weeks predicts fibrosis</td><td>Observational data only; not a substitute for withdrawal</td></tr> </tbody></table> <b>The closest rival is prednisone</b>, because AIN is an immune process and steroids are discussed in its treatment. The dividing line is <b>sequence</b>: the drug is stopped first; steroids are added only if renal function fails to recover."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hemodialysis is indicated for refractory hyperkalemia, acidosis, volume overload, or uremic complications. His potassium is 4.8 mEq/L and he has no edema or uremic symptoms. It would be correct if potassium were 7.0 mEq/L despite medical therapy or if pericarditis were present.\n(B) Pulse methylprednisolone with cyclophosphamide treats rapidly progressive glomerulonephritis such as ANCA vasculitis, which produces RBC casts and hematuria. This urinalysis has WBC casts and no RBC casts. It would be correct for a patient with RBC casts, hemoptysis, and positive ANCA.\n(D) Oral prednisone is used when creatinine fails to improve within several days after stopping the drug or when biopsy shows extensive interstitial inflammation. Giving it while omeprazole continues leaves the antigen in place. It would be correct if creatinine stayed at 2.6 mg/dL one week after omeprazole was stopped.\n(E) Ciprofloxacin treats bacterial pyelonephritis, which also causes pyuria and WBC casts but with fever, flank pain, and a positive urine culture. The culture here is negative and he is afebrile. It would be correct for a febrile patient with flank tenderness and a gram-negative culture."
+   },
+   {
+    "k": "함정",
+    "v": "Do not skip drug withdrawal and jump to immunosuppression — stopping the culprit is the first step in acute interstitial nephritis."
+   },
+   {
+    "k": "학습목표",
+    "v": "양성자펌프억제제를 시작한 뒤 수주에 걸쳐 크레아티닌이 오르고 요에 백혈구·백혈구 원주가 있으며 배양이 음성이면 약물 유발 급성 간질콩팥염으로 판단하고, 첫 처치로 원인 약물을 끊는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Perazella MA, Markowitz GS. Drug-induced acute interstitial nephritis. Nat Rev Nephrol 2010;6:461 · Moledina DG, Perazella MA. PPIs and kidney disease: from AIN to CKD. J Nephrol 2016;29:611 · Brenner and Rector's The Kidney, 11th ed. — acute interstitial nephritis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "PPI 를 시작한 뒤 수주에 걸친 급성 콩팥손상에 무균 농뇨·백혈구 원주가 있으면 약물 유발 급성 간질콩팥염이므로 먼저 약을 끊는다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "스테로이드는 약을 끊은 뒤에도 회복이 없을 때 더하는 보조 치료다",
+   "steps": 2,
+   "chain": [
+    "오메프라졸 6주 뒤 크레아티닌 1.0 → 2.6 + 백혈구 원주·무균 농뇨·적혈구 원주 없음 → 약물 유발 급성 간질콩팥염",
+    "원인 항원 제거가 우선 → 오메프라졸 중단(스테로이드는 회복 없을 때)"
+   ],
+   "key": [
+    {
+     "item": "Six weeks ago, he began taking omeprazole",
+     "why": "대표적 원인 약물, 수주 뒤 발병",
+     "also": []
+    },
+    {
+     "item": "WBC casts",
+     "why": "간질·세관 염증",
+     "also": []
+    },
+    {
+     "item": "The blood eosinophil count is 520/mm3",
+     "why": "과민 반응을 지지(흔히 없다)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there are no RBC casts",
+     "why": "사구체신염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "A urine culture is negative",
+     "why": "신우신염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "normal-sized kidneys without hydronephrosis",
+     "why": "폐쇄·만성 콩팥병 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "serum potassium is 4.8 mEq/L",
+     "why": "응급 투석 적응증이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has no fever, rash, flank pain, or dysuria",
+     "why": "고전적 삼징후는 PPI 간질콩팥염에서 흔히 없어 진단을 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "오메프라졸 시작 수주 뒤 크레아티닌이 오르고 무균 농뇨·백혈구 원주가 있어 약물 유발 급성 간질콩팥염이다. 먼저 오메프라졸을 끊고, 회복이 없을 때 스테로이드를 고려한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "오메프라졸을 끊고 1주가 지나도 크레아티닌이 2.6 mg/dL 에 머물렀다면 경구 프레드니손이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0140",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "감염 — 중증 Clostridioides difficile 감염의 첫 치료",
+  "type": "감염 — 중증 Clostridioides difficile 감염의 첫 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-26",
+  "vignette": "72세 여자가 입원 중 하루 8회 이상의 물 같은 설사와 아랫배 통증이 생겼다. 6일 전 지역사회획득 폐렴으로 입원하여 세프트리악손과 아지트로마이신을 5일 동안 투여받았다. 이전에 Clostridioides difficile 감염을 앓은 적은 없다. 체온 38.4°C, 맥박 98회/분, 혈압 118/70 mmHg이다. 배는 부드럽고 팽만되어 있지 않으며, 아랫배에 가벼운 압통이 있고 반발통은 없다. 장음은 정상이다. 백혈구 21,300/mm³, 크레아티닌 1.9 mg/dL(입원 시 0.9 mg/dL), 알부민 2.7 g/dL, 젖산 1.3 mmol/L이다. 대변 C. difficile 독소 유전자 검사와 독소 효소면역검사가 모두 양성이다. 복부 X선에서 대장 확장은 없다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "경구 반코마이신",
+   "경구 메트로니다졸",
+   "정맥 반코마이신",
+   "고용량 경구 반코마이신과 정맥 메트로니다졸의 병합",
+   "대변 미생물 이식"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 광범위 항생제 투여 뒤 생긴 하루 3회 이상의 설사에 독소 유전자·독소 효소면역검사가 양성이라 C. difficile 감염이다. 백혈구 15,000/mm³ 이상이고 크레아티닌이 1.5 mg/dL를 넘어 중증이지만, 저혈압·쇼크·장폐색·거대결장이 없어 전격성은 아니다. 첫 발병의 중증 감염은 경구 반코마이신(125 mg 하루 4회, 10일) 또는 피닥소마이신으로 치료한다. 보기 중에서는 경구 반코마이신이 맞다.\n- 원리: <b>C. difficile</b>는 항생제로 정상 장내세균이 줄어든 틈에 증식해 <b>독소 A·B</b>로 대장 점막을 손상시킨다. 치료 약물은 <b>대장 내강에서 높은 농도</b>에 이르러야 한다.<br> <b>경구 반코마이신</b>은 거의 흡수되지 않아 대장 내강에 고농도로 머문다. 반대로 <b>정맥 반코마이신은 장 안으로 분비되지 않아</b> C. difficile 에 효과가 없다. <b>메트로니다졸</b>은 경구로 잘 흡수되어 대장 내강 농도가 낮고, 설사가 줄수록 더 낮아진다 — 그래서 IDSA/SHEA 2017·2021 지침에서 첫 선택에서 빠졌고, 경구 반코마이신·피닥소마이신을 쓸 수 없을 때 경증에서만 대안이다. 정맥 메트로니다졸은 담즙과 염증 대장벽을 통해 내강에 이르므로, <b>장폐색</b>으로 경구 약이 대장까지 가지 못할 때 병합한다.<br> <b>중증도</b>: 비중증(백혈구 ≤ 15,000, 크레아티닌 &lt; 1.5) · <b>중증(백혈구 &gt; 15,000 또는 크레아티닌 &gt; 1.5)</b> · <b>전격성(저혈압·쇼크·장폐색·거대결장)</b>. 전격성이면 고용량 경구(또는 직장) 반코마이신 500 mg 하루 4회에 정맥 메트로니다졸을 더하고 외과 협진을 한다. 대변 미생물 이식은 <b>반복 재발</b>에 쓴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">경구 반코마이신(정답)</th><th>고용량 경구 반코마이신 + 정맥 메트로니다졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>첫 발병 비중증·중증</b></td><td>전격성 — 저혈압·쇼크·장폐색·거대결장</td></tr> <tr><td>이 환자</td><td><b>백혈구 21,300, 크레아티닌 1.9 → 중증</b></td><td>혈압 정상, 장음 정상, 대장 확장 없음 → 전격성 아님</td></tr> <tr><td>용량</td><td>125 mg 하루 4회, 10일</td><td>500 mg 하루 4회 + 메트로니다졸 500 mg 8시간마다 정맥</td></tr> </tbody></table> <b>가장 가까운 오답은 전격성 병합 요법</b>이다 — 백혈구 21,300 과 급성 콩팥손상이 「매우 중하다」는 인상을 주기 때문이다. 갈림길은 <b>순환·장 기능</b>이다. 혈압이 유지되고 장음이 있고 대장 확장이 없으면 중증이어도 단독 경구 반코마이신이다.\n- 오답 이유:\n  - ② 경구 메트로니다졸은 흡수가 잘 되어 대장 내강 농도가 낮아 지침에서 첫 선택에서 빠졌다. 중증에는 효과가 떨어진다. 경구 반코마이신과 피닥소마이신을 모두 쓸 수 없는 비중증 첫 발병이라면 대안이 될 수 있다.\n  - ③ 정맥 반코마이신은 장 내강으로 분비되지 않아 C. difficile 에 효과가 없다 — 경구와 정맥을 혼동하게 만드는 선지다. 이 환자에게 메티실린내성 황색포도알균 균혈증이 함께 있었다면 그 감염에 대해 쓴다.\n  - ④ 고용량 경구 반코마이신과 정맥 메트로니다졸 병합은 저혈압·쇼크·장폐색·거대결장이 있는 전격성 감염의 치료다. 이 환자는 혈압과 장음이 정상이고 대장 확장이 없다. 수축기 혈압 80 mmHg 에 장음이 없고 대장이 7 cm 로 늘어났다면 정답이 된다.\n  - ⑤ 대변 미생물 이식은 두 번 이상 재발한 C. difficile 감염에서 재발을 막으려고 한다. 이 환자는 첫 발병이다. 적절한 치료 뒤 세 번째 재발이었다면 정답이 된다.\n- 함정: 백혈구가 매우 높다고 전격성으로 올리지 않는다. 전격성은 저혈압·쇼크·장폐색·거대결장으로 정의한다.\n- 학습목표: 항생제 치료 뒤 설사가 생긴 환자에서 대변 C. difficile 독소 양성과 백혈구 15,000/mm³ 이상 또는 크레아티닌 1.5 mg/dL 초과로 중증(비전격성)으로 분류하고, 첫 치료로 경구 반코마이신을 고르며 전격성 병합 요법과 구별한다\n- 근거·출처: Johnson S et al. 2021 focused update guidelines on management of Clostridioides difficile infection in adults (IDSA/SHEA). Clin Infect Dis 2021;73:e1029 · McDonald LC et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1 · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. — Clostridioides difficile infection",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "광범위 항생제 투여 뒤 생긴 하루 3회 이상의 설사에 독소 유전자·독소 효소면역검사가 양성이라 C. difficile 감염이다. 백혈구 15,000/mm³ 이상이고 크레아티닌이 1.5 mg/dL를 넘어 중증이지만, 저혈압·쇼크·장폐색·거대결장이 없어 전격성은 아니다. 첫 발병의 중증 감염은 경구 반코마이신(125 mg 하루 4회, 10일) 또는 피닥소마이신으로 치료한다. 보기 중에서는 경구 반코마이신이 맞다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>C. difficile</b>는 항생제로 정상 장내세균이 줄어든 틈에 증식해 <b>독소 A·B</b>로 대장 점막을 손상시킨다. 치료 약물은 <b>대장 내강에서 높은 농도</b>에 이르러야 한다.<br> <b>경구 반코마이신</b>은 거의 흡수되지 않아 대장 내강에 고농도로 머문다. 반대로 <b>정맥 반코마이신은 장 안으로 분비되지 않아</b> C. difficile 에 효과가 없다. <b>메트로니다졸</b>은 경구로 잘 흡수되어 대장 내강 농도가 낮고, 설사가 줄수록 더 낮아진다 — 그래서 IDSA/SHEA 2017·2021 지침에서 첫 선택에서 빠졌고, 경구 반코마이신·피닥소마이신을 쓸 수 없을 때 경증에서만 대안이다. 정맥 메트로니다졸은 담즙과 염증 대장벽을 통해 내강에 이르므로, <b>장폐색</b>으로 경구 약이 대장까지 가지 못할 때 병합한다.<br> <b>중증도</b>: 비중증(백혈구 ≤ 15,000, 크레아티닌 &lt; 1.5) · <b>중증(백혈구 &gt; 15,000 또는 크레아티닌 &gt; 1.5)</b> · <b>전격성(저혈압·쇼크·장폐색·거대결장)</b>. 전격성이면 고용량 경구(또는 직장) 반코마이신 500 mg 하루 4회에 정맥 메트로니다졸을 더하고 외과 협진을 한다. 대변 미생물 이식은 <b>반복 재발</b>에 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">경구 반코마이신(정답)</th><th>고용량 경구 반코마이신 + 정맥 메트로니다졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>첫 발병 비중증·중증</b></td><td>전격성 — 저혈압·쇼크·장폐색·거대결장</td></tr> <tr><td>이 환자</td><td><b>백혈구 21,300, 크레아티닌 1.9 → 중증</b></td><td>혈압 정상, 장음 정상, 대장 확장 없음 → 전격성 아님</td></tr> <tr><td>용량</td><td>125 mg 하루 4회, 10일</td><td>500 mg 하루 4회 + 메트로니다졸 500 mg 8시간마다 정맥</td></tr> </tbody></table> <b>가장 가까운 오답은 전격성 병합 요법</b>이다 — 백혈구 21,300 과 급성 콩팥손상이 「매우 중하다」는 인상을 주기 때문이다. 갈림길은 <b>순환·장 기능</b>이다. 혈압이 유지되고 장음이 있고 대장 확장이 없으면 중증이어도 단독 경구 반코마이신이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 경구 메트로니다졸은 흡수가 잘 되어 대장 내강 농도가 낮아 지침에서 첫 선택에서 빠졌다. 중증에는 효과가 떨어진다. 경구 반코마이신과 피닥소마이신을 모두 쓸 수 없는 비중증 첫 발병이라면 대안이 될 수 있다.\n③ 정맥 반코마이신은 장 내강으로 분비되지 않아 C. difficile 에 효과가 없다 — 경구와 정맥을 혼동하게 만드는 선지다. 이 환자에게 메티실린내성 황색포도알균 균혈증이 함께 있었다면 그 감염에 대해 쓴다.\n④ 고용량 경구 반코마이신과 정맥 메트로니다졸 병합은 저혈압·쇼크·장폐색·거대결장이 있는 전격성 감염의 치료다. 이 환자는 혈압과 장음이 정상이고 대장 확장이 없다. 수축기 혈압 80 mmHg 에 장음이 없고 대장이 7 cm 로 늘어났다면 정답이 된다.\n⑤ 대변 미생물 이식은 두 번 이상 재발한 C. difficile 감염에서 재발을 막으려고 한다. 이 환자는 첫 발병이다. 적절한 치료 뒤 세 번째 재발이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "백혈구가 매우 높다고 전격성으로 올리지 않는다. 전격성은 저혈압·쇼크·장폐색·거대결장으로 정의한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항생제 치료 뒤 설사가 생긴 환자에서 대변 C. difficile 독소 양성과 백혈구 15,000/mm³ 이상 또는 크레아티닌 1.5 mg/dL 초과로 중증(비전격성)으로 분류하고, 첫 치료로 경구 반코마이신을 고르며 전격성 병합 요법과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Johnson S et al. 2021 focused update guidelines on management of Clostridioides difficile infection in adults (IDSA/SHEA). Clin Infect Dis 2021;73:e1029 · McDonald LC et al. Clinical practice guidelines for Clostridium difficile infection in adults and children: 2017 update by IDSA and SHEA. Clin Infect Dis 2018;66:e1 · Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. — Clostridioides difficile infection"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "첫 발병 C. difficile 감염이 백혈구·크레아티닌 기준으로 중증이지만 저혈압·장폐색·거대결장이 없으므로 경구 반코마이신 단독으로 치료한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "전격성은 저혈압·쇼크·장폐색·거대결장으로 정의한다 — 이 환자는 혈압·장음·대장 직경이 정상이다",
+   "steps": 3,
+   "chain": [
+    "세프트리악손 뒤 하루 8회 설사 + 독소 양성 → C. difficile 감염",
+    "백혈구 21,300·크레아티닌 1.9 → 중증, 그러나 혈압·장음 정상·대장 확장 없음 → 전격성 아님",
+    "첫 발병 중증 → 경구 반코마이신(보기 중)"
+   ],
+   "key": [
+    {
+     "item": "세프트리악손과 아지트로마이신을 5일 동안",
+     "why": "장내세균 교란 — 위험 인자",
+     "also": []
+    },
+    {
+     "item": "독소 효소면역검사가 모두 양성",
+     "why": "활동성 독소 — 감염 확진",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈압 118/70 mmHg",
+     "why": "저혈압·쇼크가 없다 — 전격성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "복부 X선에서 대장 확장은 없다",
+     "why": "거대결장이 없다",
+     "also": []
+    },
+    {
+     "item": "장음은 정상이다",
+     "why": "장폐색이 없어 경구 약이 대장에 이른다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "백혈구 21,300/mm³",
+     "why": "중증 기준(> 15,000)",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.9 mg/dL",
+     "why": "중증 기준(> 1.5)",
+     "also": []
+    },
+    {
+     "item": "이전에 Clostridioides difficile 감염을 앓은 적은 없다",
+     "why": "첫 발병 — 미생물 이식 대상 아님",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "알부민 2.7 g/dL",
+     "why": "중증도 예측에 쓰이기도 하나 현재 지침의 분류 기준은 아니다",
+     "also": []
+    }
+   ],
+   "summary": "항생제 뒤 설사에 독소 양성인 첫 발병 C. difficile 감염으로, 백혈구와 크레아티닌이 중증 기준을 넘지만 저혈압·장폐색·거대결장이 없어 전격성은 아니다. 경구 반코마이신으로 치료한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "저혈압이 생기고 장음이 없어지며 복부 X선에서 대장이 크게 늘어났다면 고용량 경구 반코마이신과 정맥 메트로니다졸의 병합이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0139",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "혈액·종양 — 신경 증상을 동반한 비타민 B12 결핍의 치료",
+  "type": "혈액·종양 — 신경 증상을 동반한 비타민 B12 결핍의 치료",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-26",
+  "vignette": "A 58-year-old woman comes to the physician because of a 4-month history of fatigue and numbness in both feet. Over the past month, she has felt unsteady when walking, especially in the dark. She has hypothyroidism treated with levothyroxine. She does not drink alcohol and eats a varied diet including meat. Her pulse is 92/min and blood pressure is 118/72 mm Hg. The conjunctivae are pale. Vibration and position sense are decreased in both feet, the ankle reflexes are absent, and the Romberg sign is positive. Muscle strength is normal. Laboratory studies show a hemoglobin of 9.4 g/dL, mean corpuscular volume of 114 μm3, and hypersegmented neutrophils on a peripheral smear. The serum vitamin B12 is 190 pg/mL (N = 200–900), serum folate is normal, both methylmalonic acid and homocysteine are increased, and antibodies to intrinsic factor are present.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Oral ferrous sulfate",
+   "Transfusion of packed red blood cells",
+   "Subcutaneous erythropoietin",
+   "Intramuscular cyanocobalamin",
+   "Oral folic acid"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Macrocytic anemia with hypersegmented neutrophils, dorsal column signs (loss of vibration and position sense, positive Romberg sign), and elevation of both methylmalonic acid and homocysteine indicate vitamin B12 deficiency, even though the serum B12 is only slightly below normal. Anti–intrinsic factor antibodies and coexisting autoimmune thyroid disease point to pernicious anemia. Because intrinsic factor–mediated absorption is lost and neurologic damage is present, B12 is replaced parenterally (for example, cyanocobalamin 1000 μg intramuscularly daily, then weekly, then monthly for life).\n- 원리: Vitamin B12 is a cofactor for two enzymes. <b>Methionine synthase</b> transfers a methyl group from methyl-tetrahydrofolate to homocysteine; without B12, folate is \"trapped\" as methyl-THF, DNA synthesis slows, and <b>megaloblastic anemia</b> with hypersegmented neutrophils results — and <b>homocysteine rises</b>. <b>Methylmalonyl-CoA mutase</b> converts methylmalonyl-CoA to succinyl-CoA; without B12, <b>methylmalonic acid rises</b> and abnormal fatty acids are incorporated into myelin, causing <b>subacute combined degeneration</b> of the dorsal columns and lateral corticospinal tracts and peripheral neuropathy.<br> Folate deficiency affects only the first pathway: homocysteine rises but <b>methylmalonic acid stays normal</b>, and there is no myelin damage. Giving folic acid to a B12-deficient patient bypasses the folate trap and <b>corrects the anemia while the neurologic lesion progresses</b> — the hematologic improvement masks the deficiency.<br> Serum B12 in the low-normal or borderline range is unreliable; elevated MMA confirms tissue deficiency. In <b>pernicious anemia</b>, autoimmune destruction of parietal cells and antibodies to intrinsic factor prevent ileal absorption, so replacement is lifelong; parenteral B12 is preferred when neurologic signs are present, because nerve recovery depends on rapid repletion.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Intramuscular B12 (answer)</th><th>Oral folic acid (closest rival)</th></tr></thead><tbody> <tr><td>Deficiency treated</td><td><b>B12 — MMA and homocysteine both high</b></td><td>Folate — homocysteine high, MMA normal</td></tr> <tr><td>Anemia</td><td>Corrects</td><td>Corrects (even in B12 deficiency)</td></tr> <tr><td>Neurologic lesion</td><td><b>Halts and may partly reverse</b></td><td>Progresses — may worsen</td></tr> <tr><td>Absorption in pernicious anemia</td><td><b>Bypasses the loss of intrinsic factor</b></td><td>Not relevant</td></tr> </tbody></table> <b>The closest rival is folic acid</b>, because it also fixes a megaloblastic anemia. The dividing line is <b>methylmalonic acid and the neurologic signs</b>: an elevated MMA and dorsal column findings mean B12 deficiency, and folate alone would let the spinal cord damage progress.\n- 오답 이유:\n  - (A) Oral ferrous sulfate treats iron deficiency, which causes a microcytic anemia with low ferritin. This patient's MCV is 114 μm3 with hypersegmented neutrophils. It would be correct for a woman with menorrhagia, MCV 72 μm3, and ferritin 6 ng/mL.\n  - (B) Red cell transfusion is reserved for severe symptomatic anemia with hemodynamic compromise, heart failure, or angina. This patient is stable, and a transfusion would not correct the cause. It would be correct if the hemoglobin were 4.5 g/dL with chest pain and hypotension.\n  - (C) Erythropoietin corrects the anemia of chronic kidney disease, in which erythropoietin production is low and the anemia is normocytic. This patient's anemia is macrocytic and caused by a vitamin deficiency. It would be correct for a dialysis patient with normocytic anemia and replete iron stores.\n  - (E) Oral folic acid treats folate deficiency, in which homocysteine is high but methylmalonic acid is normal and there are no dorsal column signs. Here MMA is high and neurologic signs are present, so folate alone would mask the anemia while the cord lesion progresses. It would be correct for an alcohol-using patient with normal MMA.\n- 함정: A borderline-normal serum B12 does not rule out deficiency — use methylmalonic acid, and never treat a possible B12 deficiency with folate alone.\n- 학습목표: 대적혈구빈혈에 후삭 증상(진동·위치 감각 저하, Romberg 양성)이 있고 메틸말론산·호모시스테인이 모두 높으며 내인자 항체가 양성이면 악성빈혈에 의한 비타민 B12 결핍으로 판단하고, 엽산이 아니라 근육 주사 B12 로 치료한다\n- 근거·출처: Stabler SP. Vitamin B12 deficiency. N Engl J Med 2013;368:149 · Harrison's Principles of Internal Medicine, 21st ed. — megaloblastic anemias · Hunt A, Harrington D, Robinson S. Vitamin B12 deficiency. BMJ 2014;349:g5226",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Macrocytic anemia with hypersegmented neutrophils, dorsal column signs (loss of vibration and position sense, positive Romberg sign), and elevation of both methylmalonic acid and homocysteine indicate vitamin B12 deficiency, even though the serum B12 is only slightly below normal. Anti–intrinsic factor antibodies and coexisting autoimmune thyroid disease point to pernicious anemia. Because intrinsic factor–mediated absorption is lost and neurologic damage is present, B12 is replaced parenterally (for example, cyanocobalamin 1000 μg intramuscularly daily, then weekly, then monthly for life)."
+   },
+   {
+    "k": "원리",
+    "v": "Vitamin B12 is a cofactor for two enzymes. <b>Methionine synthase</b> transfers a methyl group from methyl-tetrahydrofolate to homocysteine; without B12, folate is \"trapped\" as methyl-THF, DNA synthesis slows, and <b>megaloblastic anemia</b> with hypersegmented neutrophils results — and <b>homocysteine rises</b>. <b>Methylmalonyl-CoA mutase</b> converts methylmalonyl-CoA to succinyl-CoA; without B12, <b>methylmalonic acid rises</b> and abnormal fatty acids are incorporated into myelin, causing <b>subacute combined degeneration</b> of the dorsal columns and lateral corticospinal tracts and peripheral neuropathy.<br> Folate deficiency affects only the first pathway: homocysteine rises but <b>methylmalonic acid stays normal</b>, and there is no myelin damage. Giving folic acid to a B12-deficient patient bypasses the folate trap and <b>corrects the anemia while the neurologic lesion progresses</b> — the hematologic improvement masks the deficiency.<br> Serum B12 in the low-normal or borderline range is unreliable; elevated MMA confirms tissue deficiency. In <b>pernicious anemia</b>, autoimmune destruction of parietal cells and antibodies to intrinsic factor prevent ileal absorption, so replacement is lifelong; parenteral B12 is preferred when neurologic signs are present, because nerve recovery depends on rapid repletion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Intramuscular B12 (answer)</th><th>Oral folic acid (closest rival)</th></tr></thead><tbody> <tr><td>Deficiency treated</td><td><b>B12 — MMA and homocysteine both high</b></td><td>Folate — homocysteine high, MMA normal</td></tr> <tr><td>Anemia</td><td>Corrects</td><td>Corrects (even in B12 deficiency)</td></tr> <tr><td>Neurologic lesion</td><td><b>Halts and may partly reverse</b></td><td>Progresses — may worsen</td></tr> <tr><td>Absorption in pernicious anemia</td><td><b>Bypasses the loss of intrinsic factor</b></td><td>Not relevant</td></tr> </tbody></table> <b>The closest rival is folic acid</b>, because it also fixes a megaloblastic anemia. The dividing line is <b>methylmalonic acid and the neurologic signs</b>: an elevated MMA and dorsal column findings mean B12 deficiency, and folate alone would let the spinal cord damage progress."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Oral ferrous sulfate treats iron deficiency, which causes a microcytic anemia with low ferritin. This patient's MCV is 114 μm3 with hypersegmented neutrophils. It would be correct for a woman with menorrhagia, MCV 72 μm3, and ferritin 6 ng/mL.\n(B) Red cell transfusion is reserved for severe symptomatic anemia with hemodynamic compromise, heart failure, or angina. This patient is stable, and a transfusion would not correct the cause. It would be correct if the hemoglobin were 4.5 g/dL with chest pain and hypotension.\n(C) Erythropoietin corrects the anemia of chronic kidney disease, in which erythropoietin production is low and the anemia is normocytic. This patient's anemia is macrocytic and caused by a vitamin deficiency. It would be correct for a dialysis patient with normocytic anemia and replete iron stores.\n(E) Oral folic acid treats folate deficiency, in which homocysteine is high but methylmalonic acid is normal and there are no dorsal column signs. Here MMA is high and neurologic signs are present, so folate alone would mask the anemia while the cord lesion progresses. It would be correct for an alcohol-using patient with normal MMA."
+   },
+   {
+    "k": "함정",
+    "v": "A borderline-normal serum B12 does not rule out deficiency — use methylmalonic acid, and never treat a possible B12 deficiency with folate alone."
+   },
+   {
+    "k": "학습목표",
+    "v": "대적혈구빈혈에 후삭 증상(진동·위치 감각 저하, Romberg 양성)이 있고 메틸말론산·호모시스테인이 모두 높으며 내인자 항체가 양성이면 악성빈혈에 의한 비타민 B12 결핍으로 판단하고, 엽산이 아니라 근육 주사 B12 로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Stabler SP. Vitamin B12 deficiency. N Engl J Med 2013;368:149 · Harrison's Principles of Internal Medicine, 21st ed. — megaloblastic anemias · Hunt A, Harrington D, Robinson S. Vitamin B12 deficiency. BMJ 2014;349:g5226"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "대적혈구빈혈에 후삭 증상과 메틸말론산 상승·내인자 항체가 있으면 악성빈혈의 B12 결핍이므로 근육 주사 B12 로 치료한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "엽산 결핍이면 메틸말론산이 정상이고 신경 증상이 없다 — 엽산만 주면 신경 손상이 진행한다",
+   "steps": 3,
+   "chain": [
+    "MCV 114 + 과분엽 호중구 → 거대적혈모구빈혈",
+    "진동·위치 감각 저하·Romberg 양성 + 메틸말론산·호모시스테인 모두 상승 → B12 결핍(엽산 결핍 아님)",
+    "내인자 항체 양성 → 흡수 경로 소실 + 신경 손상 → 근육 주사 B12"
+   ],
+   "key": [
+    {
+     "item": "mean corpuscular volume of 114 μm3",
+     "why": "대적혈구빈혈",
+     "also": []
+    },
+    {
+     "item": "hypersegmented neutrophils",
+     "why": "거대적혈모구성 변화",
+     "also": []
+    },
+    {
+     "item": "Vibration and position sense are decreased in both feet",
+     "why": "후삭 침범 — B12 결핍",
+     "also": []
+    },
+    {
+     "item": "both methylmalonic acid and homocysteine are increased",
+     "why": "메틸말론산 상승은 B12 결핍에 특이적",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum folate is normal",
+     "why": "엽산 결핍 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "eats a varied diet including meat",
+     "why": "섭취 부족보다 흡수 장애를 시사",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "antibodies to intrinsic factor are present",
+     "why": "흡수 불가 — 비경구 보충",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The serum vitamin B12 is 190 pg/mL",
+     "why": "경계값이라 단독으로는 결핍을 확정하지 못한다",
+     "also": []
+    },
+    {
+     "item": "hypothyroidism treated with levothyroxine",
+     "why": "자가면역 동반 — 악성빈혈을 지지하지만 치료를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "대적혈구빈혈·과분엽 호중구에 후삭 증상과 메틸말론산 상승이 있어 B12 결핍이고, 내인자 항체로 악성빈혈이다. 근육 주사 B12 를 평생 보충한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "메틸말론산이 정상이고 호모시스테인만 높으며 신경 증상이 없는 음주자의 대적혈구빈혈이었다면 경구 엽산이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0138",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 신경·순환기·산과·피부·외과·혈액종양·감염·신장비뇨·내분비·예방의학)",
+  "subtopic": "외과계 — 교액이 의심되는 감돈 대퇴탈장",
+  "type": "외과계 — 교액이 의심되는 감돈 대퇴탈장",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-26",
+  "vignette": "78세 여자가 하루 전부터 오른쪽 사타구니 아래에 아픈 덩어리가 생기고 여러 번 토해서 응급실에 왔다. 몇 달 전부터 오래 서 있으면 같은 자리에 작은 덩어리가 나왔다가 누우면 들어갔다고 한다. 마지막 배변은 이틀 전이고 방귀도 나오지 않는다. 체온 37.9°C, 맥박 104회/분, 혈압 132/78 mmHg이다. 배가 불러 있고 장음이 항진되어 있다. 오른쪽 서혜인대 아래, 치골결절의 가쪽에 3 cm 크기의 단단하고 심한 압통이 있는 종괴가 있고, 위의 피부가 붉으며 손으로 밀어도 들어가지 않는다. 백혈구 14,200/mm³, 젖산 3.1 mmol/L, 크레아티닌 0.9 mg/dL이다. 누운 자세 복부 X선에서 확장된 소장 고리가 여럿 보이고 대장에는 공기가 거의 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "진정제를 주고 손으로 탈장 내용물의 정복을 시도한다",
+   "금식·비위관 감압을 하며 48시간 경과를 관찰한다",
+   "초음파 유도로 종괴를 바늘 흡인한다",
+   "증상이 가라앉은 뒤 계획 수술을 예약한다",
+   "응급 수술로 탈장을 교정하고 장의 생존성을 확인한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 서혜인대 아래·치골결절 가쪽의 종괴는 대퇴탈장의 자리다. 대퇴관은 입구가 좁고 단단해 감돈·교액이 가장 잘 생기는 탈장이다. 이 환자는 환원되지 않는 종괴에 심한 압통·피부 발적, 발열·빈맥·백혈구 증가·젖산 상승, 그리고 소장폐색(구토·배변과 방귀 중단·소장 확장)이 있어 교액(혈류 차단)이 의심된다. 괴사한 장을 복강으로 밀어 넣으면 복막염이 생기므로 도수 정복은 금기이고, 응급 수술로 탈장을 교정하며 장의 생존성을 확인해 필요하면 절제한다.\n- 원리: <b>감돈(incarceration)</b>은 탈장 내용물이 빠진 채 되돌아가지 않는 상태이고, <b>교액(strangulation)</b>은 탈장 목이 내용물의 혈류를 조여 허혈·괴사가 생긴 상태다. 탈장 목이 좁으면 먼저 정맥 환류가 막혀 장벽이 붓고, 부종이 목을 더 조여 동맥 유입까지 막히는 악순환으로 몇 시간 안에 괴사로 넘어간다.<br> <b>대퇴탈장</b>은 서혜인대 아래, 대퇴정맥 안쪽의 대퇴관으로 나온다. 앞은 서혜인대, 안쪽은 열공인대(lacunar ligament), 뒤는 치골근막(Cooper 인대)으로 둘러싸인 <b>좁고 단단한 고리</b>라서 탈장 가운데 감돈·교액 비율이 가장 높고(약 30~40 %가 응급으로 발견), 고령 여자에게 흔하다. 그래서 대퇴탈장은 발견되면 증상이 없어도 수술하는 것이 원칙이다.<br> 교액을 시사하는 소견은 <b>발열·빈맥·백혈구 증가·젖산 상승</b>, 종괴의 <b>심한 압통·피부 발적·변색</b>, 그리고 폐색의 진행이다. 이때 도수 정복(taxis)은 괴사한 장을 복강으로 되돌려 천공·복막염을 부르고, 「덩어리째 정복(reduction en masse)」으로 조임이 풀리지 않은 채 들어갈 수도 있어 금기다. 수술 중 장의 색·연동·장간막 박동을 확인해 생존하지 못하면 절제한다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">응급 수술(정답)</th><th>도수 정복 시도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>교액 의심 — 발열·빈맥·백혈구·젖산 상승, 발적, 폐색</b></td><td>교액 징후 없는 짧은 감돈(보통 서혜 탈장, 수 시간 이내)</td></tr> <tr><td>탈장 종류</td><td><b>대퇴탈장 — 좁은 고리, 교액 위험 가장 큼</b></td><td>입구가 넓은 간접·직접 서혜탈장에서 성공률이 높다</td></tr> <tr><td>위험</td><td>수술 자체의 위험</td><td>괴사 장 정복 → 천공·복막염, 덩어리째 정복</td></tr> <tr><td>이 환자</td><td>교액 징후가 모두 있다</td><td>금기</td></tr> </tbody></table> <b>가장 가까운 오답은 도수 정복</b>이다 — 감돈 탈장의 첫 처치로 배우기 때문이다. 갈림길은 <b>교액 징후의 유무</b>다. 전신 염증·국소 발적·젖산 상승·폐색이 있으면 정복하지 않고 수술한다.\n- 오답 이유:\n  - ① 도수 정복은 교액 징후가 없는 짧은 감돈, 특히 입구가 넓은 서혜탈장에서 진정 후 시도한다. 이 환자는 발열·백혈구·젖산 상승과 발적이 있어 괴사한 장을 밀어 넣을 위험이 크다. 몇 시간 된 압통이 가벼운 서혜탈장이고 전신 징후가 없었다면 정답이 된다.\n  - ② 금식·비위관 감압 관찰은 유착으로 생긴 부분 소장폐색에서 교액 징후가 없을 때의 처치다. 탈장이 원인이고 교액이 의심되면 관찰하는 동안 괴사가 진행한다. 개복 수술 뒤 유착성 폐색이고 발열·압통·젖산 상승이 없었다면 정답이 된다.\n  - ③ 바늘 흡인은 서혜부의 농양이나 림프류 같은 액체 모임에 쓴다. 탈장 속 장을 찌르면 천공된다. 초음파에서 장이 아니라 액체가 찬 림프절 농양으로 확인되었다면 정답이 된다.\n  - ④ 계획 수술 예약은 쉽게 환원되고 압통이 없는 탈장의 처치다. 이 탈장은 환원되지 않고 교액 징후가 있어 기다리면 괴사·천공이 생긴다. 누우면 들어가는 무증상 서혜탈장이었다면 정답이 된다.\n- 함정: 감돈 탈장이라고 무조건 도수 정복부터 하지 않는다. 대퇴탈장·교액 징후가 있으면 바로 수술한다.\n- 학습목표: 고령 여자의 서혜인대 아래 환원되지 않는 압통 종괴에 발열·빈맥·백혈구 증가·젖산 상승·소장폐색이 있으면 교액된 대퇴탈장으로 판단하고, 도수 정복 없이 응급 수술로 장 생존성을 확인한다\n- 근거·출처: Sabiston Textbook of Surgery, 21st ed. — hernias: femoral hernia, incarceration and strangulation · HerniaSurge Group. International guidelines for groin hernia management. Hernia 2018;22:1 · Birindelli A et al. 2017 update of the WSES guidelines for emergency repair of complicated abdominal wall hernias. World J Emerg Surg 2017;12:37",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "서혜인대 아래·치골결절 가쪽의 종괴는 대퇴탈장의 자리다. 대퇴관은 입구가 좁고 단단해 감돈·교액이 가장 잘 생기는 탈장이다. 이 환자는 환원되지 않는 종괴에 심한 압통·피부 발적, 발열·빈맥·백혈구 증가·젖산 상승, 그리고 소장폐색(구토·배변과 방귀 중단·소장 확장)이 있어 교액(혈류 차단)이 의심된다. 괴사한 장을 복강으로 밀어 넣으면 복막염이 생기므로 도수 정복은 금기이고, 응급 수술로 탈장을 교정하며 장의 생존성을 확인해 필요하면 절제한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>감돈(incarceration)</b>은 탈장 내용물이 빠진 채 되돌아가지 않는 상태이고, <b>교액(strangulation)</b>은 탈장 목이 내용물의 혈류를 조여 허혈·괴사가 생긴 상태다. 탈장 목이 좁으면 먼저 정맥 환류가 막혀 장벽이 붓고, 부종이 목을 더 조여 동맥 유입까지 막히는 악순환으로 몇 시간 안에 괴사로 넘어간다.<br> <b>대퇴탈장</b>은 서혜인대 아래, 대퇴정맥 안쪽의 대퇴관으로 나온다. 앞은 서혜인대, 안쪽은 열공인대(lacunar ligament), 뒤는 치골근막(Cooper 인대)으로 둘러싸인 <b>좁고 단단한 고리</b>라서 탈장 가운데 감돈·교액 비율이 가장 높고(약 30~40 %가 응급으로 발견), 고령 여자에게 흔하다. 그래서 대퇴탈장은 발견되면 증상이 없어도 수술하는 것이 원칙이다.<br> 교액을 시사하는 소견은 <b>발열·빈맥·백혈구 증가·젖산 상승</b>, 종괴의 <b>심한 압통·피부 발적·변색</b>, 그리고 폐색의 진행이다. 이때 도수 정복(taxis)은 괴사한 장을 복강으로 되돌려 천공·복막염을 부르고, 「덩어리째 정복(reduction en masse)」으로 조임이 풀리지 않은 채 들어갈 수도 있어 금기다. 수술 중 장의 색·연동·장간막 박동을 확인해 생존하지 못하면 절제한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">응급 수술(정답)</th><th>도수 정복 시도(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>교액 의심 — 발열·빈맥·백혈구·젖산 상승, 발적, 폐색</b></td><td>교액 징후 없는 짧은 감돈(보통 서혜 탈장, 수 시간 이내)</td></tr> <tr><td>탈장 종류</td><td><b>대퇴탈장 — 좁은 고리, 교액 위험 가장 큼</b></td><td>입구가 넓은 간접·직접 서혜탈장에서 성공률이 높다</td></tr> <tr><td>위험</td><td>수술 자체의 위험</td><td>괴사 장 정복 → 천공·복막염, 덩어리째 정복</td></tr> <tr><td>이 환자</td><td>교액 징후가 모두 있다</td><td>금기</td></tr> </tbody></table> <b>가장 가까운 오답은 도수 정복</b>이다 — 감돈 탈장의 첫 처치로 배우기 때문이다. 갈림길은 <b>교액 징후의 유무</b>다. 전신 염증·국소 발적·젖산 상승·폐색이 있으면 정복하지 않고 수술한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 도수 정복은 교액 징후가 없는 짧은 감돈, 특히 입구가 넓은 서혜탈장에서 진정 후 시도한다. 이 환자는 발열·백혈구·젖산 상승과 발적이 있어 괴사한 장을 밀어 넣을 위험이 크다. 몇 시간 된 압통이 가벼운 서혜탈장이고 전신 징후가 없었다면 정답이 된다.\n② 금식·비위관 감압 관찰은 유착으로 생긴 부분 소장폐색에서 교액 징후가 없을 때의 처치다. 탈장이 원인이고 교액이 의심되면 관찰하는 동안 괴사가 진행한다. 개복 수술 뒤 유착성 폐색이고 발열·압통·젖산 상승이 없었다면 정답이 된다.\n③ 바늘 흡인은 서혜부의 농양이나 림프류 같은 액체 모임에 쓴다. 탈장 속 장을 찌르면 천공된다. 초음파에서 장이 아니라 액체가 찬 림프절 농양으로 확인되었다면 정답이 된다.\n④ 계획 수술 예약은 쉽게 환원되고 압통이 없는 탈장의 처치다. 이 탈장은 환원되지 않고 교액 징후가 있어 기다리면 괴사·천공이 생긴다. 누우면 들어가는 무증상 서혜탈장이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "감돈 탈장이라고 무조건 도수 정복부터 하지 않는다. 대퇴탈장·교액 징후가 있으면 바로 수술한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령 여자의 서혜인대 아래 환원되지 않는 압통 종괴에 발열·빈맥·백혈구 증가·젖산 상승·소장폐색이 있으면 교액된 대퇴탈장으로 판단하고, 도수 정복 없이 응급 수술로 장 생존성을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sabiston Textbook of Surgery, 21st ed. — hernias: femoral hernia, incarceration and strangulation · HerniaSurge Group. International guidelines for groin hernia management. Hernia 2018;22:1 · Birindelli A et al. 2017 update of the WSES guidelines for emergency repair of complicated abdominal wall hernias. World J Emerg Surg 2017;12:37"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "서혜인대 아래의 환원되지 않는 압통 종괴에 전신 염증·젖산 상승·소장폐색이 있으면 교액된 대퇴탈장이므로 정복하지 않고 응급 수술한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "교액 징후(발열·빈맥·백혈구·젖산 상승, 발적)가 있으면 도수 정복은 금기다",
+   "steps": 3,
+   "chain": [
+    "서혜인대 아래·치골결절 가쪽의 종괴 → 대퇴탈장",
+    "환원 안 됨 + 발적 + 발열·빈맥·백혈구·젖산 상승 + 소장폐색 → 교액 의심",
+    "교액 의심 → 도수 정복 금기, 응급 수술로 교정·장 생존성 확인"
+   ],
+   "key": [
+    {
+     "item": "오른쪽 서혜인대 아래, 치골결절의 가쪽",
+     "why": "대퇴탈장의 위치",
+     "also": []
+    },
+    {
+     "item": "손으로 밀어도 들어가지 않는다",
+     "why": "감돈",
+     "also": []
+    },
+    {
+     "item": "위의 피부가 붉으며",
+     "why": "교액 의심 국소 소견",
+     "also": []
+    },
+    {
+     "item": "확장된 소장 고리가 여럿 보이고 대장에는 공기가 거의 없다",
+     "why": "기계적 소장폐색",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "젖산 3.1 mmol/L",
+     "why": "장 허혈 가능성 — 정복 금기",
+     "also": []
+    },
+    {
+     "item": "백혈구 14,200/mm³",
+     "why": "전신 염증 — 교액 시사",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "몇 달 전부터 오래 서 있으면 같은 자리에 작은 덩어리",
+     "why": "원래 환원되던 탈장이었다는 배경",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "정상 — 수술 결정을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "고령 여자의 서혜인대 아래 환원되지 않는 압통 종괴는 대퇴탈장이다. 발열·백혈구·젖산 상승과 발적, 소장폐색이 있어 교액이 의심되므로 정복하지 않고 응급 수술한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "몇 시간 된 서혜탈장 감돈이고 압통이 가벼우며 발열·백혈구·젖산 상승이 없었다면 진정 후 도수 정복 시도가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0133",
   "exam": "imaging",
   "style": "kmle_style",
