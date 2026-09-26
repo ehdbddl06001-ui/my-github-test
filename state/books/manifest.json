@@ -367,11 +367,11 @@
    "changes": []
   },
   "산부인과": {
-   "hash": "e3adb73cec8bba321d76",
-   "version": 3,
-   "date": "2026-09-25",
+   "hash": "6f71c74076a5f0aa9e5c",
+   "version": 4,
+   "date": "2026-09-26",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 27,
+   "pages": 29,
    "template_version": 8,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -386,43 +386,53 @@
      "concept_hash": "722229d4eac214e7",
      "concept_version": 3
     },
+    "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
+     "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
+     "page": 10,
+     "concept_hash": "2bd258b0b9896f0f",
+     "concept_version": 1
+    },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
      "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
-     "page": 10,
+     "page": 13,
      "concept_hash": "406336c2a5823d51",
      "concept_version": 2
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
-     "title": "분만 중 태아심박동 기록 — 네 요소를 차례로 읽어 NICHD 범주를 정하고, 범주가 대응을 정한다",
-     "page": 16,
-     "concept_hash": "c2a8ce033c9e738e",
-     "concept_version": 1
+     "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
+     "page": 19,
+     "concept_hash": "7080e1e6901ba795",
+     "concept_version": 2
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "임신 초기 출혈에서 포상기태 알아보기 — 주수보다 큰 자궁, 자궁 안 다낭성 덩이, 주수에 비해 매우 높은 β-hCG",
-     "page": 21,
+     "page": 23,
      "concept_hash": "c5b8eaa590c6cb93",
      "concept_version": 1
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 뒤집혀 나온 자궁목내막 원주상피를 대체하는 것은 편평상피화생(생리), 이형성은 그 뒤에 오는 HPV 병변",
-     "page": 24,
+     "page": 26,
      "concept_hash": "a950f6bc2f3d0aaa",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "59ce3efc7f90be2d759e0594317e28f5",
-    "version": 3,
-    "uploaded": "2026-09-25T13:26:14+09:00"
+    "md5": "ea94e02315a9c8415883d9b100444443",
+    "version": 4,
+    "uploaded": "2026-09-26T09:15:23+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
     "MedKOS_학습서_산부인과_v2_2026-09-25.pdf",
-    "MedKOS_학습서_산부인과_v3_2026-09-25.pdf"
+    "MedKOS_학습서_산부인과_v3_2026-09-25.pdf",
+    "MedKOS_학습서_산부인과_v4_2026-09-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 급성 임신 지방간 — HELLP와는 간부전으로 가른다",
+    "내용 갱신: 분만 중 태아심박동 — 네 요소로 범주, 범주로 대응 (정리본 v1 → v2)"
+   ]
   },
   "정신건강의학과": {
    "hash": "72a56d255f35d7994949",
@@ -471,11 +481,11 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "53f7dd15c9e6278c80df",
-   "version": 4,
-   "date": "2026-09-25",
+   "hash": "f199fc53ce592ac4e34e",
+   "version": 5,
+   "date": "2026-09-26",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 26,
+   "pages": 32,
    "template_version": 8,
    "units": {
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
@@ -490,56 +500,72 @@
      "concept_hash": "19bef6630abdd77f",
      "concept_version": 1
     },
+    "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
+     "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
+     "page": 7,
+     "concept_hash": "33d260aafcb19b4f",
+     "concept_version": 1
+    },
     "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
      "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
-     "page": 7,
+     "page": 10,
      "concept_hash": "3985ff249a8c740e",
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 메토트렉세이트·스테로이드가 듣지 않는다",
-     "page": 9,
+     "page": 12,
      "concept_hash": "1eee06e4540344d6",
      "concept_version": 1
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 연관 크리오글로불린혈증 혈관염 — 원인 바이러스를 없애는 것이 1차 치료이고, 면역억제는 중증 장기 침범에 남긴다",
-     "page": 12,
+     "page": 15,
      "concept_hash": "3b15223f0096fe1e",
      "concept_version": 1
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
-     "page": 17,
+     "page": 20,
      "concept_hash": "f4ba5fbb118eaff2",
      "concept_version": 1
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
-     "page": 20,
+     "page": 23,
      "concept_hash": "89f5f1ed574ac8c3",
      "concept_version": 1
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
-     "page": 23,
+     "page": 26,
      "concept_hash": "ff88f1bc5d89ecc1",
+     "concept_version": 1
+    },
+    "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
+     "title": "티오퓨린 + 알로푸리놀 — 막힌 불활성 출구",
+     "page": 30,
+     "concept_hash": "74b23c533596fc7f",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "c1729ba913cfe6ffc358398a97e6c530",
-    "version": 4,
-    "uploaded": "2026-09-25T14:05:11+09:00"
+    "md5": "d4447a018364475f59c556533d30b1c4",
+    "version": 5,
+    "uploaded": "2026-09-26T09:15:23+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
     "MedKOS_학습서_류마티스내과_v2_2026-09-25.pdf",
     "MedKOS_학습서_류마티스내과_v3_2026-09-25.pdf",
-    "MedKOS_학습서_류마티스내과_v4_2026-09-25.pdf"
+    "MedKOS_학습서_류마티스내과_v4_2026-09-25.pdf",
+    "MedKOS_학습서_류마티스내과_v5_2026-09-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
+    "새 단원: 티오퓨린 + 알로푸리놀 — 막힌 불활성 출구"
+   ]
   },
   "호흡기내과": {
    "hash": "98ef4afc82e7c363801d",
@@ -739,43 +765,46 @@
    "changes": []
   },
   "기초의학": {
-   "hash": "383a97823562e9dff0b7",
-   "version": 1,
-   "date": "2026-09-25",
+   "hash": "4713e3b3143acb40f23b",
+   "version": 2,
+   "date": "2026-09-26",
    "file": "MedKOS_학습서_기초의학.pdf",
    "pages": 6,
    "template_version": 8,
    "units": {
     "cn.biochem.mcad-deficiency.hypoketotic-hypoglycemia": {
-     "title": "MCAD 결핍 — 공복 에너지 전환에서 저케톤성 저혈당까지",
+     "title": "MCAD 결핍 — 케톤 없는 공복 저혈당, C8 이 가른다",
      "page": 1,
-     "concept_hash": "0a3635e6166b23ba",
-     "concept_version": 1
+     "concept_hash": "ec135ad48e9d76a5",
+     "concept_version": 2
     },
     "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras": {
      "title": "사구체 혈역학 — 양측 신동맥협착에서 ACE억제제가 GFR 을 떨어뜨리는 이유",
-     "page": 5,
+     "page": 4,
      "concept_hash": "f51f3060095ca9a8",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1794tdNS1sPYC9DlfZq-FYa68q_CpBmkw",
-    "md5": "08382ab89b9dd5798d97f7b3a15dffec",
-    "version": 1,
-    "uploaded": "2026-09-25T10:27:14+09:00"
+    "md5": "cb395f04786c384ccc1246fa38ff6ec5",
+    "version": 2,
+    "uploaded": "2026-09-26T09:15:23+09:00"
    },
    "archive": [
-    "MedKOS_학습서_기초의학_v1_2026-09-25.pdf"
+    "MedKOS_학습서_기초의학_v1_2026-09-25.pdf",
+    "MedKOS_학습서_기초의학_v2_2026-09-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: MCAD 결핍 — 케톤 없는 공복 저혈당, C8 이 가른다 (정리본 v1 → v2)"
+   ]
   },
   "감염내과": {
-   "hash": "9a37c2dc452ef0259291",
-   "version": 2,
-   "date": "2026-09-25",
+   "hash": "fed6d24a03e686a2db03",
+   "version": 3,
+   "date": "2026-09-26",
    "file": "MedKOS_학습서_감염내과.pdf",
-   "pages": 12,
+   "pages": 14,
    "template_version": 8,
    "units": {
     "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
@@ -796,31 +825,40 @@
      "concept_hash": "97783bc7282b9068",
      "concept_version": 1
     },
+    "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
+     "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
+     "page": 9,
+     "concept_hash": "9ddc1bc38ebec090",
+     "concept_version": 1
+    },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
      "title": "침습성 폐 아스페르길루스증 — 혈관 침습에서 객혈·halo 징후·갈락토만난까지",
-     "page": 9,
+     "page": 11,
      "concept_hash": "23378148e05b8bc9",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "703c32a269622d792b0f6bfce4776f05",
-    "version": 2,
-    "uploaded": "2026-09-25T13:26:14+09:00"
+    "md5": "1bababcec1e76d2104bcf1cf7c679c89",
+    "version": 3,
+    "uploaded": "2026-09-26T09:15:23+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
-    "MedKOS_학습서_감염내과_v2_2026-09-25.pdf"
+    "MedKOS_학습서_감염내과_v2_2026-09-25.pdf",
+    "MedKOS_학습서_감염내과_v3_2026-09-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 세균성 혈관종증 — 카포시육종과 조직으로 가른다"
+   ]
   },
   "소화기내과": {
-   "hash": "748e6640ec1ccfcf9fac",
-   "version": 1,
-   "date": "2026-09-25",
+   "hash": "5822dae92d9ad5f5f729",
+   "version": 2,
+   "date": "2026-09-26",
    "file": "MedKOS_학습서_소화기내과.pdf",
-   "pages": 8,
+   "pages": 11,
    "template_version": 8,
    "units": {
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
@@ -829,29 +867,38 @@
      "concept_hash": "a42f5d1fdb9f489c",
      "concept_version": 1
     },
+    "cn.gs.diverticular-abscess.percutaneous-drainage": {
+     "title": "게실 농양 — 큰 농양·안정이면 경피 배농",
+     "page": 3,
+     "concept_hash": "4fd67dc6c2a8bce7",
+     "concept_version": 1
+    },
     "cn.gi.acetaminophen-toxicity.nac-mechanism": {
      "title": "아세트아미노펜 중독 — NAPQI·글루타티온 고갈과 N-아세틸시스테인의 기전",
-     "page": 3,
+     "page": 6,
      "concept_hash": "b9cedfd4299994bc",
      "concept_version": 1
     },
     "cn.path.hepatic-congestion.zone3-mechanism": {
      "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
-     "page": 5,
+     "page": 9,
      "concept_hash": "244285a159ec50ee",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "6edcf135ac0039c10e0a4f76e3eb4299",
-    "version": 1,
-    "uploaded": "2026-09-25T10:27:14+09:00"
+    "md5": "e59ee1ea1e3fb7dcb9d745abd391e64d",
+    "version": 2,
+    "uploaded": "2026-09-26T09:15:23+09:00"
    },
    "archive": [
-    "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf"
+    "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
+    "MedKOS_학습서_소화기내과_v2_2026-09-26.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 게실 농양 — 큰 농양·안정이면 경피 배농"
+   ]
   },
   "신경과": {
    "hash": "81908a17bbbd00937848",
@@ -915,13 +962,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "958e1f6950f503cfd4664b595d9597a9",
+   "md5": "bf3c3c4fcb0b16db1aebbeee0e507050",
    "version": null,
-   "uploaded": "2026-09-25T14:05:11+09:00"
+   "uploaded": "2026-09-26T09:15:23+09:00"
   }
  },
- "updated": "2026-09-25"
+ "updated": "2026-09-26"
 }
