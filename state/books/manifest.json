@@ -481,11 +481,11 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "f199fc53ce592ac4e34e",
-   "version": 5,
-   "date": "2026-09-26",
+   "hash": "a483a7a9b53503ccca94",
+   "version": 6,
+   "date": "2026-09-27",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 32,
+   "pages": 35,
    "template_version": 8,
    "units": {
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
@@ -519,10 +519,10 @@
      "concept_version": 1
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
-     "title": "HCV 연관 크리오글로불린혈증 혈관염 — 원인 바이러스를 없애는 것이 1차 치료이고, 면역억제는 중증 장기 침범에 남긴다",
+     "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
      "page": 15,
-     "concept_hash": "3b15223f0096fe1e",
-     "concept_version": 1
+     "concept_hash": "53a65a2ca780b873",
+     "concept_version": 2
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
@@ -547,43 +547,50 @@
      "page": 30,
      "concept_hash": "74b23c533596fc7f",
      "concept_version": 1
+    },
+    "cn.rheum.fibromyalgia.exercise-first-treatment": {
+     "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
+     "page": 32,
+     "concept_hash": "0535396d198a7cb2",
+     "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "d4447a018364475f59c556533d30b1c4",
-    "version": 5,
-    "uploaded": "2026-09-26T09:15:23+09:00"
+    "md5": "02e870ba48e26a9a258e87544a0570c3",
+    "version": 6,
+    "uploaded": "2026-09-27T08:55:55+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
     "MedKOS_학습서_류마티스내과_v2_2026-09-25.pdf",
     "MedKOS_학습서_류마티스내과_v3_2026-09-25.pdf",
     "MedKOS_학습서_류마티스내과_v4_2026-09-25.pdf",
-    "MedKOS_학습서_류마티스내과_v5_2026-09-26.pdf"
+    "MedKOS_학습서_류마티스내과_v5_2026-09-26.pdf",
+    "MedKOS_학습서_류마티스내과_v6_2026-09-27.pdf"
    ],
    "changes": [
-    "새 단원: 경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
-    "새 단원: 티오퓨린 + 알로푸리놀 — 막힌 불활성 출구"
+    "내용 갱신: HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다 (정리본 v1 → v2)",
+    "새 단원: 섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다"
    ]
   },
   "호흡기내과": {
-   "hash": "98ef4afc82e7c363801d",
-   "version": 2,
-   "date": "2026-09-25",
+   "hash": "760b570638ab40a029d8",
+   "version": 3,
+   "date": "2026-09-27",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 8,
    "template_version": 8,
    "units": {
     "cn.pulm.chest-ct-anatomy.diaphragm-level-structures": {
-     "title": "폐 바닥·심실 높이 흉부 CT — 가로막 주변 정상 구조를 위치로 읽고, 병변과 가로막 구멍 높이를 가른다",
+     "title": "흉부 CT 가로막 높이 — 구조를 자리로 확정하고 높이를 붙인다",
      "page": 1,
-     "concept_hash": "5b132ef5f6217ffe",
-     "concept_version": 1
+     "concept_hash": "23362f9c1f8731fb",
+     "concept_version": 2
     },
     "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
      "title": "COPD 급성 악화의 급성 고탄산 호흡부전 — 금기가 없으면 비침습적 양압환기가 먼저, 삽관은 금기·실패 때",
-     "page": 5,
+     "page": 4,
      "concept_hash": "ba102a027588b8e6",
      "concept_version": 1
     },
@@ -596,18 +603,17 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "461b47a4acb5a8e21e6a928137c4e1bc",
-    "version": 2,
-    "uploaded": "2026-09-25T10:27:14+09:00"
+    "md5": "a60bd890ed71639e28e68ee184bbf051",
+    "version": 3,
+    "uploaded": "2026-09-27T08:55:55+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
-    "MedKOS_학습서_호흡기내과_v2_2026-09-25.pdf"
+    "MedKOS_학습서_호흡기내과_v2_2026-09-25.pdf",
+    "MedKOS_학습서_호흡기내과_v3_2026-09-27.pdf"
    ],
    "changes": [
-    "새 단원: 폐 바닥·심실 높이 흉부 CT — 가로막 주변 정상 구조를 위치로 읽고, 병변과 가로막 구멍 높이를 가른다",
-    "새 단원: COPD 급성 악화의 급성 고탄산 호흡부전 — 금기가 없으면 비침습적 양압환기가 먼저, 삽관은 금기·실패 때",
-    "빠진 단원(다른 권으로 이동 등): Normotensive Acute Pulmonary Embolism with RV Dysfunction and Elevated Troponin — Next Step"
+    "내용 갱신: 흉부 CT 가로막 높이 — 구조를 자리로 확정하고 높이를 붙인다 (정리본 v1 → v2)"
    ]
   },
   "응급의학과": {
@@ -701,11 +707,11 @@
    "changes": []
   },
   "혈액종양내과": {
-   "hash": "667d9eaf013386779540",
-   "version": 1,
-   "date": "2026-09-25",
+   "hash": "40573b2274b69a6637b5",
+   "version": 2,
+   "date": "2026-09-27",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
-   "pages": 9,
+   "pages": 12,
    "template_version": 8,
    "units": {
     "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes": {
@@ -714,55 +720,68 @@
      "concept_hash": "edb39dd1aa2fd94c",
      "concept_version": 1
     },
+    "cn.neuro.glioblastoma.ring-enhancing-diagnosis": {
+     "title": "교모세포종 — 축내 종괴 + 두꺼운 고리 조영",
+     "page": 5,
+     "concept_hash": "2f5b0a89ad6d100f",
+     "concept_version": 1
+    },
     "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin": {
      "title": "GATA3 — 관강 상피 핵의 계통 전사인자: 「어디서 왔나」를 묻는 표지이지 「어떤 약이 듣나」나 「침윤했나」를 묻는 표지가 아니다",
-     "page": 5,
+     "page": 8,
      "concept_hash": "d40b6ae86d8d3c12",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "18cc03c8d93cd6dc3075e80d0d57b40a",
-    "version": 1,
-    "uploaded": "2026-09-25T10:27:14+09:00"
+    "md5": "822e4dfab6ef04d90c63acb192396dec",
+    "version": 2,
+    "uploaded": "2026-09-27T08:55:55+09:00"
    },
    "archive": [
-    "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf"
+    "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
+    "MedKOS_학습서_혈액종양내과_v2_2026-09-27.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 교모세포종 — 축내 종괴 + 두꺼운 고리 조영"
+   ]
   },
   "알레르기내과": {
-   "hash": "5542a212425a05c40be2",
-   "version": 1,
-   "date": "2026-09-25",
+   "hash": "9e55584999aafcbe8af9",
+   "version": 2,
+   "date": "2026-09-27",
    "file": "MedKOS_학습서_알레르기내과.pdf",
    "pages": 6,
    "template_version": 8,
    "units": {
     "cn.allergy.x-linked-agammaglobulinemia.btk-pre-b-arrest": {
-     "title": "X연관 무감마글로불린혈증 — B세포 성숙 정지에서 감염 양상과 감별까지",
+     "title": "X연관 무감마글로불린혈증 — B세포만 없는 결함",
      "page": 1,
-     "concept_hash": "c2fa911257513c19",
-     "concept_version": 1
+     "concept_hash": "84e59c84d6f9d359",
+     "concept_version": 2
     },
     "cn.allergy.anaphylaxis.im-epinephrine-first": {
-     "title": "아나필락시스 — 첫 약은 근육주사 에피네프린, 항히스타민·스테로이드는 혈역학이 안정된 뒤의 보조",
-     "page": 4,
-     "concept_hash": "126ec7453d66d985",
-     "concept_version": 1
+     "title": "아나필락시스 — 첫 약은 근육주사 에피네프린",
+     "page": 3,
+     "concept_hash": "eb46b1b7ef5b760e",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1iNT7oXGCPWBnpCWxRfhtXCdmfnRd9AoS",
-    "md5": "8c98dbed0ca8cfc917acf4c2ed2ec71b",
-    "version": 1,
-    "uploaded": "2026-09-25T10:27:14+09:00"
+    "md5": "09b199f47bf4d255314d944294ab6049",
+    "version": 2,
+    "uploaded": "2026-09-27T08:55:55+09:00"
    },
    "archive": [
-    "MedKOS_학습서_알레르기내과_v1_2026-09-25.pdf"
+    "MedKOS_학습서_알레르기내과_v1_2026-09-25.pdf",
+    "MedKOS_학습서_알레르기내과_v2_2026-09-27.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: X연관 무감마글로불린혈증 — B세포만 없는 결함 (정리본 v1 → v2)",
+    "내용 갱신: 아나필락시스 — 첫 약은 근육주사 에피네프린 (정리본 v1 → v2)"
+   ]
   },
   "기초의학": {
    "hash": "4713e3b3143acb40f23b",
@@ -962,13 +981,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-26",
+  "date": "2026-09-27",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "bf3c3c4fcb0b16db1aebbeee0e507050",
+   "md5": "6391e0cd1cbb2c824f303c4578e95085",
    "version": null,
-   "uploaded": "2026-09-26T09:15:23+09:00"
+   "uploaded": "2026-09-27T08:55:55+09:00"
   }
  },
- "updated": "2026-09-26"
+ "updated": "2026-09-27"
 }

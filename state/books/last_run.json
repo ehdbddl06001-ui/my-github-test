@@ -1,11 +1,10 @@
 {
- "started": "2026-09-26T09:02:49+09:00",
+ "started": "2026-09-27T08:45:27+09:00",
  "built": [
-  "산부인과",
+  "혈액종양내과",
   "류마티스내과",
-  "감염내과",
-  "소화기내과",
-  "기초의학"
+  "호흡기내과",
+  "알레르기내과"
  ],
  "skipped": [
   "응급의학과",
@@ -15,11 +14,12 @@
   "내분비내과",
   "안과",
   "외과",
+  "산부인과",
   "소아청소년과",
   "정신건강의학과",
-  "혈액종양내과",
-  "호흡기내과",
-  "알레르기내과",
+  "감염내과",
+  "소화기내과",
+  "기초의학",
   "신장내과",
   "신경과",
   "비뇨의학과"
@@ -28,24 +28,24 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "산부인과": [],
+  "혈액종양내과": [],
   "류마티스내과": [],
-  "감염내과": [],
-  "소화기내과": [],
-  "기초의학": []
+  "호흡기내과": [],
+  "알레르기내과": []
  },
  "notes": {
-  "산부인과": [],
+  "혈액종양내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 6쪽 왼쪽 단 아래가 비어 있다(빈 공간 46%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 6쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)"
+  ],
   "류마티스내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 18쪽에 빈 공간이 크다(내용 26%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 18쪽 왼쪽 단 아래가 비어 있다(빈 공간 71%)",
+   "배치 탐색 뒤에도 남은 빈 공간: 18쪽 오른쪽 단 아래가 비어 있다(빈 공간 74%)",
    "배치 탐색 뒤에도 남은 빈 공간: 25쪽 오른쪽 단 아래가 비어 있다(빈 공간 81%)"
   ],
-  "감염내과": [],
-  "소화기내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽에 빈 공간이 크다(내용 44%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 왼쪽 단 아래가 비어 있다(빈 공간 53%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 오른쪽 단 아래가 비어 있다(빈 공간 54%)"
-  ],
-  "기초의학": []
+  "호흡기내과": [],
+  "알레르기내과": []
  },
  "concept_errors": [
   "content/concepts/dermatology/cn.derm.regressing-pigmented-lesion.biopsy-first.md: [WARN] outline 'h76' 는 혈액종양내과 의 자리인데 이 정리본의 과는 피부과 다",
@@ -53,98 +53,79 @@
   "content/concepts/obstetrics-gynecology/cn.obgyn.gestational-diabetes.insulin-indication.md: [WARN] 해리슨 대조 없음 — 슬롯 ob.medical-complications = 해리슨 398장. 그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다"
  ],
  "layout_trials": {
-  "산부인과": {
-   "tried": 96,
+  "혈액종양내과": {
+   "tried": 67,
    "diagram_after_section": {
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 25,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#crit_end": false,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction": 25,
-    "u-cn-obgyn-pcos-infertility-ovulation-induction#crit_end": false,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication": 11,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#crit_end": true,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category": 19,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#crit_end": false
+    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes": 21,
+    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#crit_end": false
    }
   },
   "류마티스내과": {
-   "tried": 188,
+   "tried": 212,
    "diagram_after_section": {
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic": 6,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic#crit_end": false,
     "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa": 18,
-    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#crit_end": true,
+    "u-cn-rheum-cryoglobulinemic-vasculitis-hcv-daa#crit_end": false,
     "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy": 22,
     "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#crit_end": false
    }
   },
-  "감염내과": {
-   "tried": 25,
+  "알레르기내과": {
+   "tried": 24,
    "diagram_after_section": {
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 16,
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#crit_end": true
-   }
-  },
-  "소화기내과": {
-   "tried": 69,
-   "diagram_after_section": {
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage": "full",
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#crit_end": false,
-    "u-cn-path-hepatic-congestion-zone3-mechanism": 21,
-    "u-cn-path-hepatic-congestion-zone3-mechanism#crit_end": false
+    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest": 6,
+    "u-cn-allergy-x-linked-agammaglobulinemia-btk-pre-b-arrest#crit_end": false,
+    "u-cn-allergy-anaphylaxis-im-epinephrine-first": 16,
+    "u-cn-allergy-anaphylaxis-im-epinephrine-first#crit_end": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-09-26T09:15:23+09:00",
+ "finished": "2026-09-27T08:55:55+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "산부인과": {
-    "file": "MedKOS_학습서_산부인과.pdf",
+   "혈액종양내과": {
+    "file": "MedKOS_학습서_혈액종양내과.pdf",
     "status": "uploaded",
-    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
+    "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
     "kept_id": true,
-    "md5": "ea94e02315a9c8415883d9b100444443",
-    "archive": "MedKOS_학습서_산부인과_v4_2026-09-26.pdf"
+    "md5": "822e4dfab6ef04d90c63acb192396dec",
+    "archive": "MedKOS_학습서_혈액종양내과_v2_2026-09-27.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "d4447a018364475f59c556533d30b1c4",
-    "archive": "MedKOS_학습서_류마티스내과_v5_2026-09-26.pdf"
+    "md5": "02e870ba48e26a9a258e87544a0570c3",
+    "archive": "MedKOS_학습서_류마티스내과_v6_2026-09-27.pdf"
    },
-   "감염내과": {
-    "file": "MedKOS_학습서_감염내과.pdf",
+   "호흡기내과": {
+    "file": "MedKOS_학습서_호흡기내과.pdf",
     "status": "uploaded",
-    "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
+    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
     "kept_id": true,
-    "md5": "1bababcec1e76d2104bcf1cf7c679c89",
-    "archive": "MedKOS_학습서_감염내과_v3_2026-09-26.pdf"
+    "md5": "a60bd890ed71639e28e68ee184bbf051",
+    "archive": "MedKOS_학습서_호흡기내과_v3_2026-09-27.pdf"
    },
-   "소화기내과": {
-    "file": "MedKOS_학습서_소화기내과.pdf",
+   "알레르기내과": {
+    "file": "MedKOS_학습서_알레르기내과.pdf",
     "status": "uploaded",
-    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
+    "id": "1iNT7oXGCPWBnpCWxRfhtXCdmfnRd9AoS",
     "kept_id": true,
-    "md5": "e59ee1ea1e3fb7dcb9d745abd391e64d",
-    "archive": "MedKOS_학습서_소화기내과_v2_2026-09-26.pdf"
-   },
-   "기초의학": {
-    "file": "MedKOS_학습서_기초의학.pdf",
-    "status": "uploaded",
-    "id": "1794tdNS1sPYC9DlfZq-FYa68q_CpBmkw",
-    "kept_id": true,
-    "md5": "cb395f04786c384ccc1246fa38ff6ec5",
-    "archive": "MedKOS_학습서_기초의학_v2_2026-09-26.pdf"
+    "md5": "09b199f47bf4d255314d944294ab6049",
+    "archive": "MedKOS_학습서_알레르기내과_v2_2026-09-27.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "bf3c3c4fcb0b16db1aebbeee0e507050"
+    "md5": "6391e0cd1cbb2c824f303c4578e95085"
    }
   },
-  "at": "2026-09-26T09:15:23+09:00"
+  "at": "2026-09-27T08:55:55+09:00"
  }
 }
