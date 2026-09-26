@@ -1659,6 +1659,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.glioblastoma.ring-enhancing-diagnosis",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0115.png",
    "caption": "Axial T1-weighted MRI of the brain before contrast, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",

@@ -25629,6 +25629,1017 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.neuro.glioblastoma.ring-enhancing-diagnosis": {
+  "id": "cn.neuro.glioblastoma.ring-enhancing-diagnosis",
+  "title": "교모세포종 — 축내 종괴 + 두꺼운 고리 조영",
+  "objective": "수주에 걸쳐 진행하는 편측 결손의 고령 환자에서 축내 종괴 효과와 두꺼운 불규칙 고리 조영을 읽어 교모세포종으로 진단한다",
+  "objectiveKind": "진단",
+  "condition": "교모세포종(glioblastoma, IDH-wildtype) vs 만성 경막밑혈종·뇌경색·뇌농양·중추신경계 림프종",
+  "topic": "Hematology-Oncology",
+  "seeAlso": [
+   "Neurology",
+   "Radiology"
+  ],
+  "version": 1,
+  "updated": "2026-09-26",
+  "reviewStatus": "unreviewed",
+  "hash": "2f5b0a89ad6d100f",
+  "summary": [
+   "결론: 수주 진행 결손 + 뇌 실질 안 종괴 효과 + 두꺼운 불규칙 고리 조영·중심 괴사 = 교모세포종.",
+   "시험 단서: 60~70대, 두통·경련·편마비가 수주에 걸쳐 악화, 발열 없음, 몸통 CT 원발암 없음(ring-enhancing mass).",
+   "왜: 빠르게 자라는 종양의 가장자리는 새는 신생혈관으로 조영되고 가운데는 산소가 모자라 괴사한다.",
+   "먼저 병변 자리를 가른다 — 뇌 겉 초승달 저류는 경막밑혈종, 실질 안에서 고랑·뇌실을 누르면 종괴다.",
+   "림프종은 뇌실 주위 균질 조영, 농양은 얇은 매끈한 벽 + 발열 — 스테로이드는 림프종 의심 시 생검 뒤로."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 교모세포종이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li><strong>자리</strong>: 뇌 실질 안에서 고랑을 지우고 같은 쪽 측뇌실을 누른다 → 축내 종괴. 머리뼈 안쪽을 따라가는 초승달 저류가 없으므로 경막밑혈종이 아니다.</li>\n<li><strong>시간</strong>: 편측 증상이 아급성으로 진행한다 — 뇌종양의 전형적 경과다 <sup>[1 90장 p.701]</sup>. 분~시간 만에 최대가 되는 뇌경색과 다르다.</li>\n<li><strong>조영 모양</strong>: 중심 괴사를 둘러싼 고리 조영 + 주위 부종은 교모세포종의 전형 <sup>[1 90장 p.704]</sup>. 두껍고 불규칙한 벽, 발열 없음은 농양보다 종양 쪽이다.</li>\n<li><strong>나머지 배제</strong>: 몸통 CT 에 원발암이 없어 단발 전이 가능성이 낮고, 면역이 정상이며 조영이 균질하지 않아 림프종보다 교모세포종이다.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 새는 신생혈관과 중심 괴사",
+    "deep": false,
+    "html": "<p>교모세포종은 혈액 공급을 앞질러 자란다. 종양이 만든 비정상 신생혈관은 혈액뇌장벽이 깨져 있어 가돌리늄이 새어 나오므로 살아 있는 종양 가장자리가 두껍고 울퉁불퉁한 고리로 조영된다. 가운데는 산소가 모자라 괴사하므로 조영되지 않는다. 종양은 주변 백질로 침윤하고 혈관성 부종이 겹쳐 T1 저신호·T2/FLAIR 고신호가 넓게 퍼지며, 이 고신호 부위에도 침윤한 종양 세포가 있다 <sup>[1 90장 p.704]</sup>. 이 부피가 고랑을 지우고 뇌실을 눌러 두통(아침에 심한 경우가 있음)·경련·국소 결손을 만든다 <sup>[1 90장 p.701]</sup>.</p>"
+   },
+   {
+    "title": "가르는 소견 — 자리·시간·조영 모양",
+    "deep": false,
+    "html": "<ul>\n<li>조영 전 T1 한 장만으로도 <strong>축내 vs 축외</strong>와 <strong>종괴 효과</strong>는 읽을 수 있다. 조영 모양·확산강조영상(diffusion-weighted imaging, DWI)은 축내 병변 사이를 가른다.</li>\n<li>고리 조영은 비특이적이다 — 전이·농양·탈수초·방사선 괴사도 비슷하게 보일 수 있어 임상 맥락(발열, 원발암, 면역 상태)과 함께 읽는다 <sup>[1 90장 p.708]</sup>.</li>\n<li>수막종은 경막에 붙어 조영되고 뇌를 누르지만 침윤하지 않는다 — 축외 종괴다 <sup>[1 90장 p.701]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>조영 MRI 가 우선이고 CT 는 MRI 를 못 하는 환자에게 남긴다 <sup>[1 90장 p.701]</sup>.</li>\n<li>부종으로 인한 증상은 덱사메타손이 빠르게 줄인다. 다만 림프종이 의심되면 생검 전에는 보류한다 <sup>[1 90장 p.702]</sup> <sup>[1 90장 p.705]</sup>.</li>\n<li>경련이 있었던 환자는 항경련제를 쓰고, 경련이 없던 환자에게 장기 예방 투여는 하지 않는다 <sup>[1 90장 p.702]</sup>.</li>\n<li>확진은 조직 검사다. 치료는 최대 안전 절제 뒤 방사선(60 Gy/30회)과 테모졸로마이드 병용, 이어서 보조 테모졸로마이드 6개월이고, 중앙 생존은 14.6~18개월이다 <sup>[1 90장 p.704]</sup>. 65~70세 넘는 고령은 40 Gy/3주 단기 분할 + 테모졸로마이드도 쓴다 <sup>[1 90장 p.704]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 새 근거 · 「교모세포종」의 정의</strong> — 시험 기준: 교모세포종은 IDH 돌연변이가 없는(IDH-wildtype) 등급 4 성상세포 종양으로 한정된다 — 해리슨 21판은 「다음 WHO 개정에서 그렇게 바뀐다」고 적는다 <sup>[1 90장 p.704]</sup> / 다른 기준: 2021 WHO 분류(CNS5)가 이를 시행 — IDH 돌연변이 등급 4 는 「성상세포종, IDH-mutant, 등급 4」 <sup>[3†]</sup> / 왜 다른가: 해리슨 21판 집필이 WHO 2021 발표 전후라 예고형으로 서술 / 시험에서는: KMLE·USMLE 모두 영상·임상 진단은 「glioblastoma」, 분자 분류를 물으면 IDH-wildtype 이 교모세포종이다.</li>\n<li>농양·경막밑혈종·뇌경색의 영상 소견(벽 두께, 확산 제한, 초승달 모양, 이랑 조영)은 해리슨 90장에 없어 대조하지 못했다 — <sup>[2†]</sup> 로 남긴다.</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "진행성 편측 결손 고령 환자의 뇌 병변 감별",
+    "columns": [
+     "질환",
+     "가르는 소견",
+     "임상 맥락"
+    ],
+    "rows": [
+     [
+      "교모세포종(glioblastoma)",
+      "축내, 두꺼운 불규칙 고리 조영 + 중심 괴사 + 주위 부종, T2/FLAIR 고신호에 침윤 세포 <sup>[1 90장 p.704]</sup>",
+      "60~70대, 두통·경련·국소 결손 <sup>[1 90장 p.704]</sup>"
+     ],
+     [
+      "만성 경막밑혈종(chronic subdural hematoma)",
+      "초승달 모양 축외 저류, 머리뼈 안쪽을 따라감 <sup>[2†]</sup>",
+      "고령, 가벼운 머리 외상 뒤 수주 진행"
+     ],
+     [
+      "뇌경색(ischemic infarction)",
+      "동맥 영역에 맞음, 아급성기 이랑 모양 조영 <sup>[2†]</sup>",
+      "분~시간 만에 최대 결손"
+     ],
+     [
+      "뇌농양(pyogenic abscess)",
+      "얇고 매끈한 고리, 중심 확산 제한 <sup>[2†]</sup>",
+      "발열, 부비동·치아 감염, 심내막염"
+     ],
+     [
+      "원발 중추신경계 림프종(PCNSL)",
+      "조밀한 균질 조영, 뇌실 주위·뇌량·바닥핵 <sup>[1 90장 p.705]</sup>",
+      "면역 정상은 고령(중앙 60세), 면역저하에서 다발 <sup>[1 90장 p.705]</sup>"
+     ],
+     [
+      "뇌 전이(brain metastasis)",
+      "회백질 경계, 경계 뚜렷, 고리 또는 균질 조영, 영상만으로는 비특이적 <sup>[1 90장 p.708]</sup>",
+      "원발암(폐가 가장 흔함) — 몸통 영상으로 찾는다"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "만성 경막밑혈종 vs 축내 종괴",
+    "point": "둘 다 고령에서 수주 진행 편마비·인지 저하를 낸다. 경막밑혈종은 머리뼈 안쪽을 따라가는 초승달 모양의 축외 저류이고, 종양은 뇌 실질 안에서 고랑을 지우고 같은 쪽 뇌실을 누른다.",
+    "exception": "영상에 초승달 저류가 보이면 병력과 무관하게 경막밑혈종이 먼저다.",
+    "cites": "<sup>[1 90장 p.701]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "편마비 + 중대뇌동맥 영역 병변 = 뇌경색?",
+    "point": "뇌경색은 분~시간 만에 결손이 최대가 된다. 수주에 걸쳐 진행하고 뇌실을 누르며 고리로 조영되면 종괴다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "고리 조영 = 농양?",
+    "point": "농양도 고리로 조영되지만 벽이 얇고 매끈하며 중심이 확산 제한을 보이고 발열·감염원이 있다. 두꺼운 불규칙 고리 + 발열 없음은 종양 쪽이다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "고령의 악성 축내 종괴 = 림프종?",
+    "point": "면역이 정상인 원발 중추신경계 림프종은 뇌실 주위·뇌량·바닥핵에서 조밀하게 균질 조영된다. 중심 괴사를 둘러싼 고리는 교모세포종 쪽이다.",
+    "exception": "",
+    "cites": "<sup>[1 90장 p.705]</sup>"
+   }
+  ],
+  "diagramNotes": [
+   "고리 조영은 전이·농양·탈수초 병변·방사선 괴사에서도 보인다 — 몸통 CT 로 원발암을 찾아 전이를 줄이고, 발열·감염원으로 농양을 줄인다 <sup>[1 90장 p.708]</sup>.",
+   "림프종이 의심되면 정위 생검 전에 스테로이드를 보류한다 — 림프종 세포를 녹여 진단 조직이 안 나올 수 있다 <sup>[1 90장 p.705]</sup>.",
+   "뇌경색도 아급성기에 조영되지만 이랑 모양이고 동맥 영역에 맞는다 — 수주 동안 뇌실을 누르는 두꺼운 고리는 아니다."
+  ],
+  "criteria": [
+   {
+    "id": "gbm-imaging",
+    "name": "악성 뇌종양의 MRI 모양",
+    "kind": "진단 소견",
+    "population": "뇌종양이 의심되는 환자",
+    "statement": "MRI(가돌리늄 조영)가 우선 검사다. 악성 뇌종양은 원발·전이 모두 조영되고 중심 괴사와 주위 백질 부종을 보이며, 교모세포종은 중심 괴사와 부종을 동반한 고리 조영 종괴로 나타난다 [[harrison-21: 90장 p.701]] [[harrison-21: 90장 p.704]]",
+    "exceptions": "저등급 교종은 대개 조영되지 않는다 — FLAIR 에서 본다 [[harrison-21: 90장 p.701]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "usmle",
+     "kmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 90: Primary and Metastatic Tumors of the Nervous System",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Kasper DL, Longo DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 90장 p.701–708",
+    "checked": "본문 대조(드라이브 장별 문서 90장) — p.701: 편측 증상은 아급성·진행성, 악성 교종의 ~25% 경련, MRI 우선, 악성 뇌종양은 조영·중심 괴사·주위 부종, 수막종은 경막 기반 · p.702: 덱사메타손이 부종을 줄임, 경련이 있었던 환자만 항경련제(장기 예방 없음) · p.704: 교모세포종은 60~70대 두통·경련·국소 결손, 중심 괴사·부종을 동반한 고리 조영 종괴, T2/FLAIR 고신호에 침윤 세포, ~10% IDH 돌연변이, 다음 WHO 개정에서 IDH-wildtype 으로 한정 예정, 최대 안전 절제 뒤 RT 60 Gy/30회 + 테모졸로마이드 → 보조 6개월, 중앙 생존 14.6–18개월 · p.705: 원발 CNS 림프종은 조밀한 조영·뇌실 주위/뇌량/바닥핵, 면역 정상 환자 중앙 60세, 생검 전 스테로이드 보류 · p.708: 전이는 회백질 경계, 고리 또는 균질 조영, 영상은 비특이적(농양 등과 비슷). 농양의 벽 두께·확산 제한, 경막밑혈종 모양, 뇌경색 조영 양상은 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-26",
+    "url": ""
+   },
+   {
+    "id": "osborn-brain",
+    "org": "Osborn AG",
+    "title": "Osborn's Brain: Imaging, Pathology, and Anatomy, 2nd ed.",
+    "kind": "textbook",
+    "citation": "Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy. 2nd ed. Elsevier; 2017",
+    "checked": "원문 미확인 — 문항 해설의 근거 목록에 있는 서지만 옮김(농양·경막밑혈종·뇌경색 영상 소견의 출처 후보)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2017",
+    "checkedAt": "2026-09-26",
+    "url": ""
+   },
+   {
+    "id": "louis-2021",
+    "org": "Louis DN et al (WHO CNS5)",
+    "title": "The 2021 WHO Classification of Tumors of the Central Nervous System: a summary",
+    "kind": "guideline",
+    "citation": "Neuro Oncol 2021;23(8):1231-1251",
+    "checked": "원문 미확인 — 컨테이너가 PubMed·doi.org 를 막음. 서지·DOI·PMID 는 기억으로 적었다(학습서 워크플로가 확인)",
+    "doi": "10.1093/neuonc/noab106",
+    "pmid": "34185076",
+    "verified": "citation",
+    "year": "2021",
+    "checkedAt": "2026-09-26",
+    "url": "https://doi.org/10.1093/neuonc/noab106"
+   }
+  ],
+  "checks": [
+   {
+    "q": "고령 환자의 수주 진행 편마비에서 영상으로 가장 먼저 가를 것은?",
+    "a": "병변이 축외(초승달 저류 = 경막밑혈종)인지 축내(고랑·뇌실을 누르는 실질 종괴)인지."
+   },
+   {
+    "q": "교모세포종의 두꺼운 고리와 중심 비조영 부위는 각각 무엇인가?",
+    "a": "고리 = 새는 신생혈관을 가진 살아 있는 종양, 가운데 = 산소 부족으로 생긴 괴사."
+   },
+   {
+    "q": "고리 조영 종괴에서 농양 쪽으로 기우는 소견은?",
+    "a": "얇고 매끈한 벽, 중심 확산 제한, 발열이나 감염원(부비동·치아·심내막염)."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.neuro.glioblastoma.ring-enhancing-diagnosis#v1",
+    "context": "Changed clue flips the answer — thin smooth ring, fever, dental source",
+    "stem": "A 58-year-old man is brought to the emergency department because of worsening headache and weakness of his right arm over the past 10 days. Three weeks ago he had a lower molar extracted for a painful abscess. He has not been immunosuppressed. His temperature is 38.4°C. Examination shows mild right hemiparesis. Chest, abdomen, and pelvic CT shows no mass. MRI of the brain shows a left frontal intra-axial lesion with surrounding edema and effacement of the adjacent sulci. After gadolinium, the lesion has a thin, smooth rim of enhancement that is thinnest on its ventricular side, and the center shows marked restricted diffusion. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Glioblastoma",
+     "Pyogenic brain abscess",
+     "Primary CNS lymphoma",
+     "Chronic subdural hematoma",
+     "Acute ischemic infarction"
+    ],
+    "answer": 2,
+    "explanation": "The lesion is still intra-axial with mass effect, but three findings now point to infection: fever after a recent dental abscess, a thin smooth rim (thinnest toward the ventricle), and restricted diffusion in the center, which reflects viscous pus [[?osborn-brain]]. Ring enhancement alone does not separate tumor from abscess — Harrison notes that similar-appearing lesions occur with brain abscesses [[harrison-21: 90장 p.708]]. In the original item the ring was thick and irregular around necrosis in an afebrile older man, which favors glioblastoma. Lymphoma enhances densely and homogeneously, and a subdural hematoma is an extra-axial crescent.",
+    "of": "imaging-2026-0115",
+    "changed": "발열·최근 치아 감염을 더하고 고리를 「두꺼운 불규칙」에서 「얇고 매끈, 중심 확산 제한」으로 바꿈 → 답이 교모세포종에서 화농성 뇌농양으로",
+    "flip": true
+   },
+   {
+    "id": "cn.neuro.glioblastoma.ring-enhancing-diagnosis#v2",
+    "context": "Surface details change, answer stays — aphasia and personality change in an older woman",
+    "stem": "A 66-year-old woman is brought to the physician by her daughter, who has noticed over the past 6 weeks that she has become irritable, has trouble finding words, and drops objects from her right hand. She has had headaches on waking for a month. She has no fever and takes no immunosuppressive drugs. Examination shows a nonfluent aphasia and mild right hand weakness. Mammography and CT of the chest, abdomen, and pelvis are normal. MRI of the brain shows a left temporal intra-axial mass with surrounding T2/FLAIR hyperintensity and compression of the left lateral ventricle; there is no extra-axial collection. After gadolinium, the mass has a thick, irregular rim of enhancement around a central nonenhancing area. Which of the following is the most likely diagnosis?",
+    "options": [
+     "Chronic subdural hematoma",
+     "Primary CNS lymphoma",
+     "Glioblastoma",
+     "Pyogenic brain abscess",
+     "Acute ischemic infarction"
+    ],
+    "answer": 3,
+    "explanation": "The deciding clues are unchanged from the original item: weeks of progressive deficit in an older adult, an intra-axial mass with mass effect, a thick irregular ring around central necrosis, no fever, and no primary cancer on body imaging. Glioblastoma typically presents in the sixth and seventh decades with headache, seizures, or focal deficits and appears as a ring-enhancing mass with central necrosis and surrounding edema [[harrison-21: 90장 p.704]]. Aphasia and personality change replace hemiparesis only because the lesion is in the dominant temporal lobe. There is no extra-axial crescent, the course is too slow for infarction, lymphoma would enhance homogeneously, and there is no infectious setting for abscess.",
+    "of": "imaging-2026-0115",
+    "changed": "성별(여자)·나이(66세)·주증상(언어장애·오른쪽 약화, 가족이 성격 변화를 알아챔)·병변 쪽(왼쪽 측두엽)·제시 순서를 바꾸고 「수주 진행, 발열 없음, 축내 종괴 효과, 두꺼운 불규칙 고리 + 중심 괴사, 원발암 없음」은 유지 → 답은 여전히 교모세포종",
+    "flip": false
+   }
+  ],
+  "diagramTitle": "진행성 편측 결손 — 자리·시간·조영으로 가른다",
+  "geo": {
+   "title": "진행성 편측 결손 — 자리·시간·조영으로 가른다",
+   "w": 712.9,
+   "h": 782.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "고령, 수주 진행 편마비·",
+      "두통·경련"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "loc",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "병변이 뇌 실질 안(축내)",
+      "인가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "locinfo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "MRI 로 축외 저류·종괴 효과",
+      "확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 229.0
+    },
+    {
+     "id": "sdh",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "만성 경막밑혈종 — 초승달",
+      "축외 저류"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 336.0
+    },
+    {
+     "id": "onset",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "분~시간 만에 결손이",
+      "최대였나?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 336.0
+    },
+    {
+     "id": "infarct",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "뇌경색 — 동맥 영역에 맞는",
+      "병변"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 443.0
+    },
+    {
+     "id": "enh",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "조영 양상은?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 443.0
+    },
+    {
+     "id": "enhinfo",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "조영 T1·확산강조영상(DWI)",
+      "추가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 575.0
+    },
+    {
+     "id": "abscess",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "뇌농양 — 얇은 벽·중심 확산",
+      "제한·발열"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 163.9,
+     "y": 702.0
+    },
+    {
+     "id": "pcnsl",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "원발 CNS 림프종 — 생검 전",
+      "스테로이드 보류"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 575.0
+    },
+    {
+     "id": "gbm",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "교모세포종 — 두꺼운 불규칙",
+      "고리·중심 괴사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 500.9,
+     "y": 702.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "loc",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "loc",
+     "to": "sdh",
+     "points": [
+      [
+       178.0,
+       166.0
+      ],
+      [
+       178.0,
+       215.0
+      ],
+      [
+       113.0,
+       215.0
+      ],
+      [
+       113.0,
+       322.0
+      ],
+      [
+       81.3,
+       322.0
+      ],
+      [
+       81.3,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "축외 초승달"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 144.6,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "locinfo",
+     "points": [
+      [
+       227.0,
+       166.0
+      ],
+      [
+       227.0,
+       229.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "영상 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 199.1,
+      "y": 190.0
+     }
+    },
+    {
+     "from": "loc",
+     "to": "onset",
+     "points": [
+      [
+       276.0,
+       166.0
+      ],
+      [
+       276.0,
+       215.0
+      ],
+      [
+       341.0,
+       215.0
+      ],
+      [
+       341.0,
+       322.0
+      ],
+      [
+       372.7,
+       322.0
+      ],
+      [
+       372.7,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "축내 종괴 효과"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 235.3,
+      "y": 170.0
+     }
+    },
+    {
+     "from": "locinfo",
+     "to": "sdh",
+     "points": [
+      [
+       194.3,
+       293.0
+      ],
+      [
+       194.3,
+       322.0
+      ],
+      [
+       146.7,
+       322.0
+      ],
+      [
+       146.7,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "축외 저류"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 166.5,
+      "y": 297.0
+     }
+    },
+    {
+     "from": "locinfo",
+     "to": "onset",
+     "points": [
+      [
+       259.7,
+       293.0
+      ],
+      [
+       259.7,
+       322.0
+      ],
+      [
+       307.3,
+       322.0
+      ],
+      [
+       307.3,
+       336.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "축내 병변"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 297.0
+     }
+    },
+    {
+     "from": "onset",
+     "to": "infarct",
+     "points": [
+      [
+       307.3,
+       400.0
+      ],
+      [
+       307.3,
+       429.0
+      ],
+      [
+       227.0,
+       429.0
+      ],
+      [
+       227.0,
+       443.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 297.8,
+      "y": 404.0
+     }
+    },
+    {
+     "from": "onset",
+     "to": "enh",
+     "points": [
+      [
+       372.7,
+       400.0
+      ],
+      [
+       372.7,
+       429.0
+      ],
+      [
+       453.0,
+       429.0
+      ],
+      [
+       453.0,
+       443.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "수주 진행"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 344.8,
+      "y": 404.0
+     }
+    },
+    {
+     "from": "enh",
+     "to": "abscess",
+     "points": [
+      [
+       394.2,
+       490.0
+      ],
+      [
+       394.2,
+       552.0
+      ],
+      [
+       226.0,
+       552.0
+      ],
+      [
+       226.0,
+       688.0
+      ],
+      [
+       229.2,
+       688.0
+      ],
+      [
+       229.2,
+       702.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "얇은 고리·",
+       "발열"
+      ],
+      "w": 62.1,
+      "h": 30,
+      "x": 363.1,
+      "y": 494.0
+     }
+    },
+    {
+     "from": "enh",
+     "to": "pcnsl",
+     "points": [
+      [
+       472.6,
+       490.0
+      ],
+      [
+       472.6,
+       561.0
+      ],
+      [
+       566.0,
+       561.0
+      ],
+      [
+       566.0,
+       575.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "균질·뇌실",
+       "주위"
+      ],
+      "w": 58.4,
+      "h": 30,
+      "x": 443.4,
+      "y": 494.0
+     }
+    },
+    {
+     "from": "enh",
+     "to": "gbm",
+     "points": [
+      [
+       511.8,
+       490.0
+      ],
+      [
+       511.8,
+       552.0
+      ],
+      [
+       680.0,
+       552.0
+      ],
+      [
+       680.0,
+       688.0
+      ],
+      [
+       631.6,
+       688.0
+      ],
+      [
+       631.6,
+       702.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "두꺼운 고리"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 478.4,
+      "y": 527.0
+     }
+    },
+    {
+     "from": "enh",
+     "to": "enhinfo",
+     "points": [
+      [
+       433.4,
+       490.0
+      ],
+      [
+       433.4,
+       561.0
+      ],
+      [
+       340.0,
+       561.0
+      ],
+      [
+       340.0,
+       575.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미시행"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 412.9,
+      "y": 527.0
+     }
+    },
+    {
+     "from": "enhinfo",
+     "to": "gbm",
+     "points": [
+      [
+       372.7,
+       639.0
+      ],
+      [
+       372.7,
+       688.0
+      ],
+      [
+       566.3,
+       688.0
+      ],
+      [
+       566.3,
+       702.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "두꺼운 고리"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 339.3,
+      "y": 663.0
+     }
+    },
+    {
+     "from": "enhinfo",
+     "to": "abscess",
+     "points": [
+      [
+       307.3,
+       639.0
+      ],
+      [
+       307.3,
+       688.0
+      ],
+      [
+       294.5,
+       688.0
+      ],
+      [
+       294.5,
+       702.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중심 확산 제한"
+      ],
+      "w": 81.5,
+      "h": 17,
+      "x": 266.6,
+      "y": 643.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "고령, 수주 진행 편마비·두통·경련",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "병변이 뇌 실질 안(축내)인가?"
+     }
+    ]
+   },
+   {
+    "id": "loc",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "병변이 뇌 실질 안(축내)인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "축외 초승달",
+      "to": 4,
+      "toText": "만성 경막밑혈종 — 초승달 축외 저류"
+     },
+     {
+      "label": "영상 없음",
+      "to": 3,
+      "toText": "MRI 로 축외 저류·종괴 효과 확인"
+     },
+     {
+      "label": "축내 종괴 효과",
+      "to": 5,
+      "toText": "분~시간 만에 결손이 최대였나?"
+     }
+    ]
+   },
+   {
+    "id": "locinfo",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "MRI 로 축외 저류·종괴 효과 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "축외 저류",
+      "to": 4,
+      "toText": "만성 경막밑혈종 — 초승달 축외 저류"
+     },
+     {
+      "label": "축내 병변",
+      "to": 5,
+      "toText": "분~시간 만에 결손이 최대였나?"
+     }
+    ]
+   },
+   {
+    "id": "sdh",
+    "num": 4,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "만성 경막밑혈종 — 초승달 축외 저류",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "onset",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "분~시간 만에 결손이 최대였나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 6,
+      "toText": "뇌경색 — 동맥 영역에 맞는 병변"
+     },
+     {
+      "label": "수주 진행",
+      "to": 7,
+      "toText": "조영 양상은?"
+     }
+    ]
+   },
+   {
+    "id": "infarct",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "뇌경색 — 동맥 영역에 맞는 병변",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "enh",
+    "num": 7,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "조영 양상은?",
+    "note": "",
+    "branches": [
+     {
+      "label": "얇은 고리·발열",
+      "to": 11,
+      "toText": "뇌농양 — 얇은 벽·중심 확산 제한·발열"
+     },
+     {
+      "label": "균질·뇌실 주위",
+      "to": 8,
+      "toText": "원발 CNS 림프종 — 생검 전 스테로이드 보류"
+     },
+     {
+      "label": "두꺼운 고리",
+      "to": 10,
+      "toText": "교모세포종 — 두꺼운 불규칙 고리·중심 괴사"
+     },
+     {
+      "label": "미시행",
+      "to": 9,
+      "toText": "조영 T1·확산강조영상(DWI) 추가"
+     }
+    ]
+   },
+   {
+    "id": "pcnsl",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "원발 CNS 림프종 — 생검 전 스테로이드 보류",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "enhinfo",
+    "num": 9,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "조영 T1·확산강조영상(DWI) 추가",
+    "note": "",
+    "branches": [
+     {
+      "label": "두꺼운 고리",
+      "to": 10,
+      "toText": "교모세포종 — 두꺼운 불규칙 고리·중심 괴사"
+     },
+     {
+      "label": "중심 확산 제한",
+      "to": 11,
+      "toText": "뇌농양 — 얇은 벽·중심 확산 제한·발열"
+     }
+    ]
+   },
+   {
+    "id": "gbm",
+    "num": 10,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "교모세포종 — 두꺼운 불규칙 고리·중심 괴사",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "abscess",
+    "num": 11,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "뇌농양 — 얇은 벽·중심 확산 제한·발열",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0115"
+  ],
+  "hasErrors": false
+ },
  "cn.neuro.guillain-barre.respiratory-monitoring-first": {
   "id": "cn.neuro.guillain-barre.respiratory-monitoring-first",
   "title": "길랑-바레 증후군의 첫 처치 — 활력징후가 안정해도 입원해 폐활량을 재는 것이 먼저다(면역치료는 그 안에서)",

@@ -1,37 +1,37 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-25",
+ "generated": "2026-09-26",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2916,
+  "total": 2923,
   "byType": {
+   "concept": 83,
    "anatomy": 737,
+   "paper": 661,
    "kmle": 1131,
    "imaging": 132,
-   "concept": 82,
    "usmle": 162,
-   "paper": 655,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 737,
-   "Cardiology": 213,
-   "Nephrology": 175,
+   "Cardiology": 214,
+   "Nephrology": 176,
    "Infectious Disease": 156,
-   "Pediatrics": 137,
-   "Hematology-Oncology": 97,
-   "Pathology": 94,
+   "Pediatrics": 138,
+   "Hematology-Oncology": 99,
+   "Pathology": 95,
    "Obstetrics & Gynecology": 93,
    "Psychiatry": 88,
    "Neurology": 86,
    "Rheumatology": 80,
    "Endocrinology": 76,
+   "Surgery": 76,
    "Dermatology": 75,
    "Gastroenterology": 75,
-   "Surgery": 75,
    "Ophthalmology": 74,
    "Orthopedics": 74,
    "Pulmonology": 73,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 936,
    "high": 1938,
-   "medium": 929,
    "low": 49
   },
   "tagCount": 4120
  },
  "docs": [
+  {
+   "id": "cn.neuro.glioblastoma.ring-enhancing-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-26",
+   "path": "content/concepts/neurology/cn.neuro.glioblastoma.ring-enhancing-diagnosis.md",
+   "snippet": "판단 — 왜 교모세포종이 먼저인가 자리 : 뇌 실질 안에서 고랑을 지우고 같은 쪽 측뇌실을 누른다 → 축내 종괴. 머리뼈 안쪽을 따라가는 초승달 저류가 없으므로 경막밑혈종이 아니다. 시간 : 편측 증상이 아급성으로 진행한다 — 뇌종양의 전형적 경과다 [[harrison 21: 90장 p.701]]. 분~시간 만에 최대가 되는 뇌경색과 다르다. 조영 모양 : 중심 괴사를 둘러싼 고리 조영 + 주위 부종은 교모세포종의 전형 [[h",
+   "text": "Hematology-Oncology 판단 — 왜 교모세포종이 먼저인가 자리 : 뇌 실질 안에서 고랑을 지우고 같은 쪽 측뇌실을 누른다 → 축내 종괴. 머리뼈 안쪽을 따라가는 초승달 저류가 없으므로 경막밑혈종이 아니다. 시간 : 편측 증상이 아급성으로 진행한다 — 뇌종양의 전형적 경과다 [[harrison 21: 90장 p.701]]. 분~시간 만에 최대가 되는 뇌경색과 다르다. 조영 모양 : 중심 괴사를 둘러싼 고리 조영 + 주위 부종은 교모세포종의 전형 [[harrison 21: 90장 p.704]]. 두껍고 불규칙한 벽, 발열 없음은 농양보다 종양 쪽이다. 나머지 배제 : 몸통 CT 에 원발암이 없어 단발 전이 가능성이 낮고, 면역이 정상이며 조영이 균질하지 않아 림프종보다 교모세포종이다. 기전 — 새는 신생혈관과 중심 괴사 교모세포종은 혈액 공급을 앞질러 자란다. 종양이 만든 비정상 신생혈관은 혈액뇌장벽이 깨져 있어 가돌리늄이 새어 나오므로 살아 있는 종양 가장자리가 두껍고 울퉁불퉁한 고리로 조영된다. 가운데는 산소가 모자라 괴사하므로 조영되지 않는다. 종양은 주변 백질로 침윤하고 혈관성 부종이 겹쳐 T1 저신호·T2/FLAIR 고신호가 넓게 퍼지며, 이 고신호 부위에도 침윤한 종양 세포가 있다 [[harrison 21: 90장 p.704]]. 이 부피가 고랑을 지우고 뇌실을 눌러 두통(아침에 심한 경우가 있음)·경련·국소 결손을 만든다 [[harrison 21: 90장 p.701]]. 가르는 소견 — 자리·시간·조영 모양 조영 전 T1 한 장만으로도 축내 vs 축외 와 종괴 효과 는 읽을 수 있다. 조영 모양·확산강조영상(diffusion weighted imaging, DWI)은 축내 병변 사이를 가른다. 고리 조영은 비특이적이다 — 전이·농양·탈수초·방사선 괴사도 비슷하게 보일 수 있어 임상 맥락(발열, 원발암, 면역 상태)과 함께 읽는다 [[harrison 21: 90장 p.708]]. 수막종은 경막에 붙어 조영되고 뇌를 누르지만 침윤하지 않는다 — 축외 종괴다 [[harrison 21: 90장 p.701]]. 권고와 예외 조영 MRI 가 우선이고 CT 는 MRI 를 못 하는 환자에게 남긴다 [[harrison 21: 90장 p.701]]. 부종으로 인한 증상은 덱사메타손이 빠르게 줄인다. 다만 림프종이 의심되면 생검 전에는 보류한다 [[harrison 21: 90장 p.702]] [[harrison 21: 90장 p.705]]. 경련이 있었던 환자는 항경련제를 쓰고, 경련이 없던 환자에게 장기 예방 투여는 하지 않는다 [[harrison 21: 90장 p.702]]. 확진은 조직 검사다. 치료는 최대 안전 절제 뒤 방사선(60 Gy/30회)과 테모졸로마이드 병용, 이어서 보조 테모졸로마이드 6개월이고, 중앙 생존은 14.6~18개월이다 [[harrison 21: 90장 p.704]]. 65~70세 넘는 고령은 40 Gy/3주 단기 분할 + 테모졸로마이드도 쓴다 [[harrison 21: 90장 p.704]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 새 근거 · 「교모세포종」의 정의 — 시험 기준: 교모세포종은 IDH 돌연변이가 없는(IDH wildtype) 등급 4 성상세포 종양으로 한정된다 — 해리슨 21판은 「다음 WHO 개정에서 그렇게 바뀐다」고 적는다 [[harrison 21: 90장 p.704]] / 다른 기준: 2021 WHO 분류(CNS5)가 이를 시행 — IDH 돌연변이 등급 4 는 「성상세포종, IDH mutant, 등급 4」 [[?louis 2021]] / 왜 다른가: 해리슨 21판 집필이 WHO 2021 발표 전후라 예고형으로 서술 / 시험에서는: KMLE·USMLE 모두 영상·임상 진단은 「glioblastoma」, 분자 분류를 물으면 IDH wildtype 이 교모세포종이다. 농양·경막밑혈종·뇌경색의 영상 소견(벽 두께, 확산 제한, 초승달 모양, 이랑 조영)은 해리슨 90장에 없어 대조하지 못했다 — [[?osborn brain]] 로 남긴다."
+  },
   {
    "id": "anatomy-daily-2026-09-26",
    "type": "anatomy",
@@ -98,6 +112,108 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-26.md",
    "snippet": "오늘의 학습 (2026 09 26 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 16일 · Tagging 2까지 23일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-26 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 26 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 16일 · Tagging 2까지 23일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0661",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JBJS reviews",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0661_optimal_radial_head_prosthesis_sizing_in_elbow_trauma_a_revi.md",
+   "snippet": "Title Optimal Radial Head Prosthesis Sizing in Elbow Trauma: A Review of Anatomical Principles and Clinical Techniques Authors Alabbasi Khaled K, King Graham J W Journal / DOI JBJS reviews · DOI: e26.00067 · PMID: 42789734 https://pubmed.nc",
+   "text": "Surgery scraped pubmed PubMed / JBJS reviews Title Optimal Radial Head Prosthesis Sizing in Elbow Trauma: A Review of Anatomical Principles and Clinical Techniques Authors Alabbasi Khaled K, King Graham J W Journal / DOI JBJS reviews · DOI: e26.00067 · PMID: 42789734 https://pubmed.ncbi.nlm.nih.gov/42789734/ Abstract » This review synthesizes current evidence and techniques for optimal spherical radial head arthroplasty, focusing on the importance of accurate prosthesis sizing to ensure a successful outcome. » Replication of the native radial head's diameter and height is important. Mismatch can lead to pain, stiffness, capitellar wear, altered joint kinematics, and accelerated arthritis. » For diameter, the minimal outer diameter of the reconstructed native head is the most reliable guide. If comminution prevents this, the capitellar width on computed tomography scans provides a strong correlative measurement. » For height, the prosthesis should align with the proximal edge of the lesser sigmoid notch. Intraoperatively, direct visualization or fluoroscopic assessment of the lateral ulnohumeral joint space is recommended to detect overlengthening. » Diagnosing postoperative sizing errors is challenging. A defined radiographic technique comparing the radial head/neck length with the contralateral elbow on 45° flexion views can help quantify overlengthening. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0660",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0660_asthma_intervention_with_residential_ventilation_and_air_cle.md",
+   "snippet": "Title Asthma Intervention with Residential Ventilation and Air Cleaner (AIRVAC) Study: A 4 arm parallel group randomized controlled trial protocol Authors Kang Insung, Park Semi, Zhang Yidan, McCullough Steven Tanner, LaFavor Tia, Shen Yike",
+   "text": "Pediatrics scraped pubmed PubMed / PloS one Title Asthma Intervention with Residential Ventilation and Air Cleaner (AIRVAC) Study: A 4 arm parallel group randomized controlled trial protocol Authors Kang Insung, Park Semi, Zhang Yidan, McCullough Steven Tanner, LaFavor Tia, Shen Yike, Park June Young Journal / DOI PloS one · DOI: 10.1371/journal.pone.0358221 · PMID: 42789537 https://pubmed.ncbi.nlm.nih.gov/42789537/ Abstract BACKGROUND: Evidence linking exposure to airborne particulate and gaseous pollutants, as well as mold spores, with asthma control and severity is well established. A growing body of literature has demonstrated that ventilation and air filtration can improve indoor air quality (IAQ); however, clinical evidence on their comparative health impacts remains limited. Therefore, this trial aims to evaluate the long term effectiveness of energy recovery ventilators (ERVs) and portable air cleaners (PACs) in reducing indoor air pollutants and mold levels and improving health outcomes in individuals with asthma. Secondary objectives includes associations between housing conditions, occupant behaviors, indoor environmental exposures, and asthma related health outcomes. METHODS: The AIRVAC study is a single blind, placebo controlled, 4 arm, parallel group, randomized controlled trial, with a pre intervention period of up to 1 year and a 1 year post intervention period. Children aged 5 17 years and adults with physician diagnosed asthma will be recruited from more than 80 households across the Dallas Fort Worth (DFW) area in Texas. Following the pre intervention period, each household will be randomized to receive one of four different interventions midway through the study: (1) active ERVs, (2) sham ERVs, (3) active PACs, and (4) sham PACs. Primary health outcomes include asthma control; secondary outcomes include pulmonary function, asthma related quality of life, stress, and sleep quality. Initial housing assessments will be conducted prior to the pre intervention period to characterize occupant behaviors and housing related factors that may contribute to asthma exacerbations and affect ERV installation. Environmental exposures will be assessed by combining measurements of indoor and outdoor air pollutants, including particulate matter (PM), nitrogen dioxide (NO2), carbon monoxide (CO), and volatile organic compounds (VOCs), as well as temperature, relative humidity, and indoor and outdoor mold, using low cost and research grade air quality sensors and mold sampling methods. DISCUSSION: Findings from the AIRVAC study will provide important evidence on the comparative effects of residential ventilation and air cleaning interventions on IAQ, mold, and asthma related health outcomes among children and adults with asthma. The study will also examine the relationships among housing characteristics, occupant behaviors, indoor environmental exposures, and asthma related health outcomes, while providing insights into the operation and performance of residential ventilation and air cleaning interventions in vulnerable households. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0659",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLoS neglected tropical diseases",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0659_flubendazole_reduces_emerging_dracunculus_medinensis_in_dogs.md",
+   "snippet": "Title Flubendazole reduces emerging Dracunculus medinensis in dogs in Chad: Results from a two year study Authors Dupper Amy C, Mackenzie Charles D, Geary Timothy G, Elder Deborah L, Najahi Missaoui Wided, Cleveland Christopher A, Haynes El",
+   "text": "Pathology scraped pubmed PubMed / PLoS neglected tropical diseases Title Flubendazole reduces emerging Dracunculus medinensis in dogs in Chad: Results from a two year study Authors Dupper Amy C, Mackenzie Charles D, Geary Timothy G, Elder Deborah L, Najahi Missaoui Wided, Cleveland Christopher A, Haynes Ellen K, Yabsley Michael J, et al. Journal / DOI PLoS neglected tropical diseases · DOI: 10.1371/journal.pntd.0014763 · PMID: 42789688 https://pubmed.ncbi.nlm.nih.gov/42789688/ Abstract Since being targeted for eradication in the 1980s, global human cases of dracunculiasis (Guinea worm disease; GWD) have been reduced by over 99.9% through interventions aimed at interrupting the life cycle of the causative parasite, Dracunculus medinensis. However, the burden of GWD in dogs is higher than in humans and other monitored mammalian host species, threatening eradication of GWD. Expanding on a previous clinical trial of flubendazole (FLBZ) in dogs in Chad, we conducted a cluster randomized controlled trial in which half of enrolled villages (N = 29) were assigned to receive FLBZ and the other half (N = 27) to receive no treatment. An annual difference in differences analysis revealed that treated villages had 59.3% fewer predicted emerging D. medinensis adult females (95% CI: 53.8% fewer to 69.2% fewer) per village per year during the second year of the study compared to control villages. Analyses examining effects of FLBZ monthly, at the individual dog level, and through histopathology of D. medinensis female reproductive morphology, all support the conclusion that FLBZ inhibits embryogenesis and larval development within the uterus of gravid female worms. Together these data are consistent with a hypothesis that although D. medinensis emerged from individually treated dogs, the L1s released from dogs treated with FLBZ exhibited reduced viability, thus reducing the risk of infection in the next mammalian host. This trial builds the body of knowledge about FLBZ's impacts on D. medinensis in the canine host and provides compelling evidence on the effectiveness of FLBZ in reducing the number of emerging D. medinensis in dogs, which can contribute to the eradication of this parasite. However, additional questions remain regarding the formulation, which need to be addressed in future studies before being deployed at scale. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0658",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0658_daratumumab_plus_bortezomib_lenalidomide_and_dexamethasone_i.md",
+   "snippet": "Title Daratumumab Plus Bortezomib, Lenalidomide, and Dexamethasone in Newly Diagnosed Multiple Myeloma: Transplant Ineligible Subgroup Analysis of CEPHEUS Authors Usmani Saad Z, Facon Thierry, Hungria Vania, Bahlis Nizar J, Venner Christoph",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Daratumumab Plus Bortezomib, Lenalidomide, and Dexamethasone in Newly Diagnosed Multiple Myeloma: Transplant Ineligible Subgroup Analysis of CEPHEUS Authors Usmani Saad Z, Facon Thierry, Hungria Vania, Bahlis Nizar J, Venner Christopher P, Braunstein Marc, Pour Ludek, Marti Josep M, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO 26 00401 · PMID: 42789828 https://pubmed.ncbi.nlm.nih.gov/42789828/ Abstract The phase III CEPHEUS trial (ClinicalTrials.gov identifier: NCT03652064) of patients with transplant ineligible (TIE) or transplant deferred newly diagnosed multiple myeloma (NDMM; N = 395) demonstrated improved overall minimal residual disease (MRD) negativity rates among patients achieving ≥complete response and progression free survival (PFS) with daratumumab plus bortezomib, lenalidomide, and dexamethasone (DVRd) versus VRd. We present efficacy and safety outcomes in the CEPHEUS TIE subgroup (N = 289; DVRd, n = 144; VRd, n = 145). Patients were either age 18 70 years with ≥1 comorbidity likely to negatively affect tolerability of high dose chemotherapy with autologous stem cell transplantation or age ≥70 years. At a median follow up of 58.7 months, the MRD negativity rate (10 5) was 60.4% (DVRd) versus 39.3% (VRd; P = .0004). Rates of sustained MRD negativity (10 5) for ≥12 months (47.2% v 28.3%; P = .0010) and ≥24 months (40.3% v 22.8%; P = .0015) were significantly higher with DVRd. Risk of disease progression or death was 49% lower for DVRd versus VRd (hazard ratio [HR], 0.51 [95% CI, 0.35 to 0.74]; P = .0003). Although immature, overall survival favored DVRd (HR, 0.66 [95% CI, 0.42 to 1.03]). Adverse events were consistent with known safety profiles. This analysis demonstrates that the deep responses achieved with DVRd translate into improved PFS in patients with TIE NDMM, reinforcing DVRd as a standard of care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0657",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney & blood pressure research",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0657_ratio_of_red_blood_cell_distribution_width_to_albumin_level_.md",
+   "snippet": "Title Ratio of red blood cell distribution width to albumin level and mortality outcomes in population with chronic kidney disease Authors Lei Kaixin, An Xinqi, Chen Ao, Lin Liping, Su Baihai, Li Yupei Journal / DOI Kidney & blood pressure ",
+   "text": "Nephrology scraped pubmed PubMed / Kidney & blood pressure research Title Ratio of red blood cell distribution width to albumin level and mortality outcomes in population with chronic kidney disease Authors Lei Kaixin, An Xinqi, Chen Ao, Lin Liping, Su Baihai, Li Yupei Journal / DOI Kidney & blood pressure research · DOI: 10.1159/kbr/adjag012 · PMID: 42789467 https://pubmed.ncbi.nlm.nih.gov/42789467/ Abstract BACKGROUND: Chronic kidney disease (CKD) is one of the major public health issues worldwide. The red blood cell distribution width to albumin ratio (RAR) has emerged as a reliable and accessible marker to reflect inflammation and nutrition, suggesting underlying associations with prognosis in CKD population. METHODS: Using data from the National Health and Nutrition Examination Survey 1999 to 2018 and the National Death Index, 3965 patients with CKD were enrolled in this study. Weighted Cox proportional hazards regression models were employed to investigate the associations of RAR with all cause mortality, cardiovascular disease (CVD) mortality, and cancer mortality. Restricted cubic spline (RCS) analysis was used to detect non linear relationships and threshold effects. Stratified analysis was conducted to evaluate interactions of potential variables. RESULTS: Across the entire follow up period, a total of 1163 fatal events occurred. Weighted Cox analysis revealed RAR was independently associated with all cause mortality (HR, 1.81, 95%CI, 1.60 2.06, P < 0.001), CVD mortality (HR, 1.89, 95%CI, 1.59 2.26, P < 0.001), and cancer mortality (HR, 1,76, 95%CI, 1.46 2.11, P < 0.001). RCS analysis demonstrated non linear relationships for all cause mortality (P for non linear < 0.001) and CVD mortality (P for non linear < 0.001), while a linear relationship was observed for cancer mortality (P for non linear = 0.113). Subgroup analysis identified age, gender, urine albumin to creatinine ratio and poverty income ratio as potential interactive factors. CONCLUSION: These findings suggested that RAR had robust associations with both all cause and cause specific mortality in CKD patients. Future clinical trials are required to elucidate the underlying processes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0656",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-09-25",
+   "path": "content/papers/2026/2026-09-25_paper-2026-0656_remote_vital_sign_monitoring_in_acutely_unwell_hospital_at_h.md",
+   "snippet": "Title Remote Vital Sign Monitoring in Acutely Unwell Hospital at Home Patients: Nonrandomized Feasibility Study Authors Greer Rachel C, Roman Cristian, Shi Mayue, Gooch Benn, Lawson Bethany K, Biggs Christopher, Edwards Clare, Vollam Sarah,",
+   "text": "Cardiology scraped pubmed PubMed / JMIR formative research Title Remote Vital Sign Monitoring in Acutely Unwell Hospital at Home Patients: Nonrandomized Feasibility Study Authors Greer Rachel C, Roman Cristian, Shi Mayue, Gooch Benn, Lawson Bethany K, Biggs Christopher, Edwards Clare, Vollam Sarah, et al. Journal / DOI JMIR formative research · DOI: 10.2196/84233 · PMID: 42789931 https://pubmed.ncbi.nlm.nih.gov/42789931/ Abstract BACKGROUND: Remote vital sign monitoring of acute hospital at home (aHAH) patients is recommended in policy without clear guidance on implementation. While such monitoring has the potential to improve patient care, there is limited evidence for its feasibility and acceptability. OBJECTIVE: This study aimed to evaluate the feasibility and acceptability of using a remote, community based monitoring system using a vital sign wearable patch and pulse oximeter in aHAH patients. METHODS: In this nonrandomized feasibility study, we recruited patients from an aHAH service in Oxford, United Kingdom, between January and October 2024. Eligible patients were aged 18 years and older with an acute illness (lower respiratory tract infection, cellulitis, urinary tract infection, systemic evidence of acute infection, acute kidney injury, or heart failure with acute fluid overload) requiring aHAH care. Pregnant women and those with contraindications to monitoring were excluded. Participants were asked to wear a chest patch to estimate their heart rate and respiratory rate (passive monitoring), and to intermittently check their oxygen saturations, blood pressure, and temperature (active monitoring). Participants were asked to complete a Technology Acceptance Questionnaire. All aHAH patients were screened. Recruitment was nonconsecutive due to the availability of the research team. Participants were monitored for 7 days or until discharge from the aHAH service, whichever was shorter. Fixed time windows were used to assess real time vital sign data coverage during each participant's monitoring period. The primary outcomes were the proportion of 4 hour monitoring windows with a recorded heart rate and 12 hour daytime windows with a recorded oxygen saturation level. Time series analyses and descriptive statistics were used for quantitative data. Content analysis was used to analyze the open ended comments in the questionnaire. RESULTS: In total, 29 participants were recruited and 3 immediately withdrew from the study. Participants were monitored for 4.8 (IQR 2.9 6.2) days on average. Overall, 89% (600/674) of the 4 hour monitoring windows had a heart rate and 75.4% (508/674) had a respiratory rate recorded in real time. For the 12 hour daytime windows, 58.1% (75/129) had an oxygen saturation, 54.3% (70/129) had a blood pressure, and 51.2% (66/129) had a temperature recorded. Data coverage was higher for passive monitoring compared to active monitoring. Most participants who had capacity found the combined monitoring system easy to use and thought it was useful for their health care. CONCLUSIONS: Remote monitoring of vital signs in aHAH patients is feasible. Good data coverage was achieved for the passive monitoring, which did not require specific actions by the participants or their caregivers. Further work is required to ascertain which patients would benefit most from this monitoring. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1162",
