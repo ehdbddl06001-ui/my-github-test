@@ -944,8 +944,29 @@
    "date": "2026-09-23",
    "device": "pc-oc4qm2",
    "note": ""
+  },
+  "kmle-2026-1194": {
+   "id": "kmle-2026-1194",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Proximal Muscle Weakness with a Heliotrope Rash in a Middle-aged Woman",
+   "style": "",
+   "modality": "",
+   "question": "이 환자에게 추가로 시행해야 할 가장 중요한 검사는?",
+   "chosen": 1,
+   "chosenText": "넓적다리 근육 조직검사",
+   "answer": 4,
+   "answerText": "흉부·복부·골반 CT·부인과 검진",
+   "coreNote": "",
+   "differ": "",
+   "decision": "특징적 피부 소견과 근위부 근력 저하, CK 상승은 피부근염이다. 58세·항TIF1-γ 양성·삼킴곤란은 악성 종양 동반 위험을 크게 높이고, 폐질환 관련 항체는 음성이며 호흡기 증상이 없으므로 흉부·복부·골반 CT 와 부인과 검진 등 포괄적 암 선별이 가장 중요하다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-28",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-24T10:54:18.116Z"
+ "updated": "2026-09-27T22:21:19.646Z"
 }
