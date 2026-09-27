@@ -47,7 +47,7 @@ jobs:
 
       - name: Install tools (PDF · 한글 글꼴 · rclone)
         run: |
-          pip install pyyaml markdown pymupdf playwright
+          pip install pyyaml markdown pymupdf playwright pillow   # pillow: 정리본 그림 크기·가로세로 비(2026-09-27)
           python -m playwright install --with-deps chromium
           sudo apt-get install -y fonts-nanum
           curl -fsSL https://rclone.org/install.sh | sudo bash
