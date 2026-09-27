@@ -35,7 +35,7 @@ concurrency:
 jobs:
   books:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 180   # 판형이 바뀌면 20권 전부 다시 만든다(배치 탐색 포함) — 40분에 끊겼다(2026-09-27)
     steps:
       - uses: actions/checkout@v5
         with:
