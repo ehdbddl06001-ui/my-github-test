@@ -1007,8 +1007,29 @@
    "date": "2026-09-28",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1188": {
+   "id": "kmle-2026-1188",
+   "exam": "kmle",
+   "subject": "Pediatrics",
+   "step": "",
+   "type": "Paroxysmal Cough with Apnea in a Young Infant",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 항생제는?",
+   "chosen": 1,
+   "chosenText": "아목시실린",
+   "answer": 0,
+   "answerText": "아지스로마이신",
+   "coreNote": "",
+   "differ": "",
+   "decision": "예방접종 전 3주 영아의 몰아치는 기침·구토·무호흡, 발작 사이 무증상, 림프구 우세 백혈구 증가와 기침하는 어머니는 백일해다. 2개월 미만이므로 날문협착 위험이 있는 에리스로마이신과 핵황달 위험이 있는 TMP-SMX 대신 아지스로마이신을 쓴다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-28",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T22:36:42.724Z"
+ "updated": "2026-09-27T22:42:49.580Z"
 }
