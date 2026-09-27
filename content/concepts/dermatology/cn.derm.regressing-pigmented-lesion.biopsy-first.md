@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Hematology-Oncology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h76           # 기본틀 슬롯 — 해리슨 21판 76장 Cancer of the Skin(흑색종 진단·생검)
 confidence: medium
 review_status: unreviewed
@@ -172,6 +172,26 @@ variants:
     answer: "D"
     explanation: "색이 최근 변했고(E — 변화), 더모스코피에서 회청색 과립과 흉터양 백색 영역이라는 퇴행 구조가 병변의 대부분을 차지한다. 퇴행 흑색종도 같은 그림을 그리므로 더모스코피로 배제할 수 없어 조직검사가 먼저다 [[harrison-21: 76장 p.580]] [[?marghoob-atlas: regression structures]]. 나이·부위·증상이 원래 문항과 달라도 「최근 변화 + 퇴행 구조가 주됨」이라는 결정 단서는 같다. 재검은 이미 변한 병변을 기다리는 선택이고, 냉동·이미퀴모드·스테로이드는 조직을 없애거나 염증을 눌러 진단을 가린다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/isic-isic_0001107.jpg
+  kind: dermoscopy
+  at: 기전에서 소견으로
+  shows: 조직검사로 확진된 편평태선양 각화증(LPLK)의 더모스코피
+  look_for:
+  - 분홍 바탕에 흩어진 옅은 갈색 얼룩
+  - 색이 빠진 흰·분홍 부위와 바탕의 가는 붉은 혈관
+  label: Lichen planus like keratosis — 조직병리 확진
+  label_basis: dataset_expert
+  reference: 이미지마다 조직병리 검사로 확진(ISIC 기록 diagnosis_confirm_type = histopathology)
+  paper: 'Codella NCF 외. Skin lesion analysis toward melanoma detection: a challenge at ISBI 2017. ISBI 2018:168-172'
+  doi: 10.1109/ISBI.2018.8363547
+  credit: ISIC Archive ISIC_0001107 (CC-0)
+  license: CC0 1.0 Universal
+  url: https://www.isic-archive.com/collections?imageId=ISIC_0001107
+  asset: ISIC-ISIC_0001107
+  paper_cited_by: 1935
+  from_question: imaging-2026-0054
 ---
 
 ## 정의

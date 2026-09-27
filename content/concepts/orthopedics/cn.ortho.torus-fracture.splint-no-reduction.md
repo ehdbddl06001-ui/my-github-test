@@ -4,8 +4,8 @@ type: concept
 topic: Orthopedics
 see_also: [Pediatrics, Emergency Medicine]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: ortho.pediatric       # 정형외과 손 슬롯 「소아 정형 — 성장판 손상·고관절 이형성」(해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -182,6 +182,26 @@ variants:
     answer: "B"
     explanation: "측면 사진의 배측 피질 융기와 이어진 손바닥쪽 피질, 전위·각형성·성장판 침범 없음은 융기 골절이다. 나이·기전·사진 방향이 달라도 결정 단서는 같다 — 피질이 압축돼 맞물린 안정 골절이라 정복할 것이 없고, 제거 가능한 부목으로 약 3주 고정한다 [[?nelson-21: Common fractures]]. 정복·핀은 전위된 골절, 6주 석고는 정복 위치를 유지해야 하는 골절, MRI 는 X선이 정상인데 성장판 손상이 의심될 때의 선택이다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/graz-1469_0597634364_01_wri-l1_m006.jpg
+  kind: radiograph
+  at: 기전에서 소견으로
+  shows: 소아 원위 요골 골간단 융기 골절(AO 소아 23-M/2.1), 손목 전후면
+  look_for:
+  - 성장판 바로 위 요골 골간단의 가로 경화선과 피질의 작은 굴곡
+  - 골절선이 반대쪽 피질까지 이어지지 않고 전위가 없다
+  label: pediatric wrist fracture (initial exam) · AO/OTA 소아 분류 23-M/2.1 — 골절 주석 상자 1개
+  label_basis: dataset_expert
+  reference: 소아 손목 X선의 골절·골막반응 등을 전문가가 상자로 주석
+  paper: Nagy E 외. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222
+  doi: 10.1038/s41597-022-01328-z
+  credit: GRAZPEDWRI-DX (figshare, CC BY 4.0)
+  license: Creative Commons Attribution 4.0 International
+  url: https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193
+  asset: GRAZ-1469_0597634364_01_WRI-L1_M006
+  paper_cited_by: 101
+  from_question: imaging-2026-0056
 ---
 
 ## 정의

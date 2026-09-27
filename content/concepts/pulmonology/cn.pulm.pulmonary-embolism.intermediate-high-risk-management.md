@@ -220,6 +220,17 @@ variants:
     answer: "B"
     explanation: "나이·성별·유발 경위·검사 이름이 달라도 결정적 단서는 같다 — 혈압이 유지되고 젖산이 정상이라 고위험이 아니고, 우심실 기능장애 + 트로포닌 상승이라 중간-고위험이다. 첫 처치는 치료 용량 항응고(콩팥 기능이 정상이라 저분자량 헤파린)와 감시이며, 붕괴하면 구제 혈전용해로 넘어간다. 와파린은 효과가 나기까지 5일 이상 걸리고 초기 응고 경향이 있어 단독으로 시작하지 않는다. 필터는 항응고 금기·재발일 때, 수술적 색전제거는 쇼크에서 혈전용해 금기·실패일 때다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 폐색전 CT — 우심실 확장(RV/LV 비)
+  query: '"pulmonary embolism" AND "right ventricular" AND "computed tomography" AND "case report"'
+  caption_terms:
+  - pulmonary embol
+  - right ventric
+  modality: CT
+figures_rejected:
+- asset: PMC-PMC13531219_VisualSummar
+  reason: 그림 요약(도식) — CT 사진이 아니다
 ---
 
 ## 정의

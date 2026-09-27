@@ -4,8 +4,8 @@ type: concept
 topic: Pediatrics
 see_also: [Cardiology, Rheumatology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: peds.cardiac            # 소아과 손 슬롯 「선천 심질환과 가와사키병」(해리슨 대조 대상 아님 — outline.py --harrison)
 confidence: medium
 review_status: unreviewed
@@ -170,6 +170,25 @@ variants:
     answer: "C"
     explanation: "5일 이상 발열에 주요 소견 5개(다형 발진, 손발 부종·홍반, 편측 경부 림프절, 입술 변화, 비화농성 결막충혈)를 갖춘 완전형 가와사키병이고 발열 7일째로 치료 창 안에 있다. 나이·성별·의뢰 경위·제시 순서가 달라도 결정 단서는 같으므로 면역글로불린 2 g/kg 단회 정주와 아스피린이 답이다 [[?aha-kawasaki-2017]]. 관상동맥이 아직 정상이어도 치료는 같다 — 면역글로불린은 동맥류가 생기기 전에 막는 치료다. 항생제는 원인이 세균이 아니고, 아스피린 단독·스테로이드 단독·인플릭시맙은 1차 치료가 아니다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13243305_figure1.jpg
+  kind: ultrasound
+  at: 기전에서 소견으로
+  shows: 가와사키병 — 좌전하행지의 거대 관상동맥류(심초음파)
+  look_for:
+  - 관상동맥이 풍선처럼 늘어난 거대 동맥류
+  - 동맥류 안의 에코(혈전 — 저자 설명)
+  label: 「Giant left anterior descending coronary artery aneurysm with intraluminal thrombus.」 — Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms. Oxford Medical Case Reports
+  doi: 10.1093/omcr/omag086
+  credit: 'Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms. Oxf Med Case Reports. 2026 Jun 8;2026(6):omag086. doi: 10.1093/omcr/omag086 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13243305/
+  asset: PMC-PMC13243305_Figure1
+  privacy_check: 심초음파 — 식별 문자 없음
 ---
 
 ## 정의

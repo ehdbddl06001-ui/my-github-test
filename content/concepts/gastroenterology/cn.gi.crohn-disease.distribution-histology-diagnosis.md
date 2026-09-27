@@ -100,6 +100,16 @@ sources:
     checked_at: 2026-09-23
     checked: "본문 대조(드라이브 326장 문서) — p.2474 궤양성대장염은 직장을 침범하고 근위로 확장하는 점막 질환, 치료 뒤 겉보기 건너뜀이 있어 정상 점막도 생검 · 소장 침범의 90% 에서 말단회장, 크론병은 직장 흔히 보존·건너뛰는 분절 병변, 항문 주위 병변 1/3, 경벽성 과정 · p.2475 조약돌 모양은 크론병의 특징, 장벽 전층의 비건락성 육아종은 특징적이나 점막 생검보다 절제 표본에서 흔함, 궤양성대장염의 주 증상은 설사·직장 출혈·뒤무직·점액 · p.2476 회결장염은 우하복부 통증·설사, 체중감소 흔함 · p.2477 내시경 소견 직장 보존·아프타 궤양·누공·건너뛰는 병변 · p.2479 표 326-6 IBD 모방 감염에 결핵·아메바·예르시니아 · p.2487 항TNF 전 결핵 검사. 장결핵의 건락성 육아종 서술은 이 장에서 찾지 못했다"
     verified: text
+figures_wanted:
+- source: PMC_OA
+  shows: 크론병 — 비건락성 육아종
+  query: '"Crohn" AND granuloma AND (histology OR biopsy) AND "case report"'
+  caption_terms:
+  - granuloma
+  modality: HISTOLOGY_HE
+figures_rejected:
+- asset: PMC-PMC13197015_Figure2
+  reason: 입술 피부 생검(장 밖 크론병)이고 육아종 패널이 약 200 픽셀로 작다
 ---
 
 ## 정의

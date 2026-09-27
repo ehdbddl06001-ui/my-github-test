@@ -235,6 +235,17 @@ variants:
     answer: "C"
     explanation: "영상·국소 징후·전신 염증이 모두 있어 급성 담낭염 확진이고, 백혈구 > 18,000 으로 2등급이다. 혈압·크레아티닌·혈소판이 정상이라 장기부전이 없고, 동반질환·복용약이 없어 수술 위험이 낮으며, 발병 28시간이라 72시간 이내다 — 나이·성별·내원 경위·2등급 근거가 바뀌어도 이 단서들은 그대로라 답은 조기 복강경 담낭절제술이다. 빌리루빈·ALP·총담관 지름이 정상이라 담관 처치는 필요 없고, 6주 뒤 지연 수술은 이환율·재원기간이 더 나쁘며, 배액은 수술 위험이 높은 환자의 선택이다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 급성 담낭염 초음파 — 담낭벽 비후·담석
+  query: '"acute cholecystitis" AND ultrasound AND "case report"'
+  caption_terms:
+  - gallbladder
+  - wall
+  modality: ULTRASOUND
+figures_rejected:
+- asset: PMC-PMC13502476_Figure1
+  reason: 그림 설명이 「급성 담낭염의 초음파 근거 없음」 — 요청 소견의 반대
 ---
 
 ## 정의

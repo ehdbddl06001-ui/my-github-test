@@ -153,6 +153,16 @@ variants:
     answer: "B"
     explanation: "다리 병변·여성·응급실·CT 간 저음영으로 겉모습은 바뀌었지만 결정적 단서 — 호중구 우세 소엽상 혈관 증식 + 은염색 간균, 방추세포 없음, 항산성 음성 — 가 그대로라 세균성 혈관종증이다. 간 병변(자반증)과 고양이 노출은 B. henselae 를 가리킨다. B. bacilliformis 는 안데스 모래파리 매개로 여행력이 없다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 세균성 혈관종증 조직 — 소혈관 증식과 호중구
+  query: '"bacillary angiomatosis" AND ("Warthin-Starry" OR histopathology)'
+  caption_terms:
+  - bacillary angiomatosis
+  modality: HISTOLOGY_HE
+figures_rejected:
+- asset: PMC-PMC11000314_Fig2
+  reason: 항생제 기간 막대그래프 — 조직 사진이 아니다
 ---
 
 ## 판단 — 왜 조직이 먼저인가

@@ -166,6 +166,7 @@ variants:
     answer: "D"
     explanation: "Undetectable insulin and high free fatty acids show that lipolysis is working; normal lactate argues against a gluconeogenic block. The octanoylcarnitine (C8) rise localizes the defect to medium-chain beta-oxidation, so the liver lacks acetyl-CoA for ketogenesis — MCAD deficiency. HMG-CoA lyase deficiency would leave C8 normal and raise C5-OH; CPT I deficiency would not generate medium-chain acylcarnitines."
     kind: application
+figures_none: 검사 수치(케톤·아실카르니틴)로 가르는 대사 질환 — 영상 소견이 없다
 ---
 
 ## 기전 — 공복 에너지 전환에서 저케톤성 저혈당으로

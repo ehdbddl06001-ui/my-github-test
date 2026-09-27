@@ -331,6 +331,7 @@ const LEARN = (() => {
     if (c.summary && c.summary.length) {
       h += `<div class="cn-sum"><div class="cn-sec">빠른 요약</div><ul>${c.summary.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul></div>`;
     }
+    h += figuresHtml(c);
     h += `<div class="cn-dia"><div class="cn-sec">임상 판단 도식${q ? " — 이 사례의 경로" : ""}</div>`
       + `<div class="dia-legend">★ 이 사례가 지난 곳 · ◆ ${L ? "선택한 " + escapeHtml(label(chosenIdx, q)) + " 보기와 " : "오답과 "}갈리는 곳 · ? 문항에 정보 없음 · ○ 미시행 · 굵은 실선 = 이 사례 경로</div>`
       + `<div class="dia-box" role="img" aria-label="${escapeHtml(c.diagramTitle || c.title)}"></div>`
@@ -363,6 +364,27 @@ const LEARN = (() => {
     box.innerHTML = h;
     drawDiagram(box.querySelector(".dia-box"), c, q, splitNode, L ? label(chosenIdx, q) : "", box.querySelector(".dia-text"));
     bindConcept(box, c);
+  }
+  /* ---------- 그림(2026-09-27) — 확실한 라벨만. 소견은 먼저 떠올려 보고 연다(인출) ----------
+     src 는 export 가 docs/ 아래 상대경로만 넘긴다. 글은 모두 escape, 링크는 https 만. */
+  const BASIS = { dataset_expert: "전문가 판정 데이터셋 라벨", published_figure: "동료 심사 논문의 그림 설명" };
+  function figuresHtml(c) {
+    const figs = (c.figures || []).filter((f) => f && /^assets\/figures\/[\w.-]+$/.test(f.src || ""));
+    if (!figs.length) return "";
+    return `<div class="cn-figs"><div class="cn-sec">그림으로 보는 소견 — 먼저 무엇이 보이는지 떠올려 보세요</div>`
+      + figs.map((f, i) => {
+        const link = (u, t) => (/^https:\/\//.test(u || "") ? ` <a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer">${t}</a>` : "");
+        return `<figure class="cn-fig" data-fig="${i}"><img src="${escapeHtml(f.src)}" alt="${escapeHtml(f.shows)}" loading="lazy" />`
+          + `<figcaption><button type="button" class="small" data-fig-open="${i}">소견 보기</button>`
+          + `<div class="fig-ans" hidden><div class="fig-shows">${escapeHtml(f.shows)}</div>`
+          + (f.look && f.look.length ? `<ul class="fig-look">${f.look.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : "")
+          + `<div class="fig-label"><span class="k">데이터 라벨</span>${escapeHtml(f.label)}</div>`
+          + `<div class="muted small">라벨 근거: ${escapeHtml(BASIS[f.basis] || f.basis)} — ${escapeHtml(f.reference)}`
+          + (f.paper ? ` · ${escapeHtml(f.paper)}${f.citedBy ? ` (피인용 ${escapeHtml(String(f.citedBy))}회)` : ""}${link(f.doiUrl, "논문")}` : "")
+          + `<br>「보는 곳」 설명은 모델이 쓴 것으로 검토 전입니다.</div></div>`
+          + `<div class="muted small fig-credit">${escapeHtml(f.credit)} · ${escapeHtml(f.license)}${link(f.url, "원본")}</div>`
+          + `</figcaption></figure>`;
+      }).join("") + `</div>`;
   }
   function nodeText(c, id) {
     const n = (c.geo && c.geo.nodes || []).find((x) => x.id === id);
@@ -508,6 +530,12 @@ const LEARN = (() => {
     }).join("") + `</ul></details>`;
   }
   function bindConcept(box, c) {
+    box.querySelectorAll("button[data-fig-open]").forEach((b) => {
+      b.onclick = () => { const a = b.parentNode.querySelector(".fig-ans"); a.hidden = !a.hidden; b.textContent = a.hidden ? "소견 보기" : "소견 닫기"; };
+    });
+    box.querySelectorAll(".cn-fig img").forEach((img) => {
+      img.onclick = () => { if (typeof openZoom === "function") openZoom(img.getAttribute("src"), img.getAttribute("alt")); };
+    });
     box.querySelectorAll("button[data-ck-open]").forEach((b) => {
       b.onclick = () => { const a = b.parentNode.querySelector(".ck-a"); a.hidden = false; b.hidden = true; };
     });

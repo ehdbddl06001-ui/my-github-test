@@ -149,6 +149,16 @@ variants:
     answer: "C"
     explanation: "초음파로 비대유문협착증이 확진되었고 핍뇨·빈맥·모세혈관 재충혈 지연의 탈수와 저염소·저칼륨 대사알칼리증이 있다. 성별·나이·응급실 내원·검사를 먼저 제시한 순서가 달라도 결정 단서는 같으므로 생리식염수로 순환을 회복하고 소변 확인 뒤 칼륨을 더한다 [[?holcomb-7]]. 수술은 전해질 교정 뒤, 조영검사는 이미 확진이라 불필요하며, 위장관운동촉진제는 기계적 폐쇄에 효과가 없다. 비위관 지속 흡인은 위액 소실을 늘린다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 비대유문협착증 초음파 — 두꺼워진 유문근
+  query: '"hypertrophic pyloric stenosis" AND ultrasound'
+  caption_terms:
+  - pylor
+  modality: ULTRASOUND
+figures_rejected:
+- asset: PMC-PMC13457705_Figure2
+  reason: 복강경 수술 장면 — 진단 초음파가 아니다
 ---
 
 ## 정의

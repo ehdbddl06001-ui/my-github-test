@@ -14,7 +14,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "eb46b1b7ef5b760e",
+  "hash": "f3581044366a9453",
   "summary": [
    "결론: 첫 약은 눕힌 뒤 에피네프린(epinephrine) 1 mg/mL 0.3–0.5 mL 근육주사, 심하면 5–20분 간격 반복.",
    "시험 단서: 약·음식·벌 쏘임 뒤 수 분 안의 두드러기 + 천명·쉰 목소리 또는 저혈압 = 아나필락시스(anaphylaxis).",
@@ -266,6 +266,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "노출 뒤 급성 전신 반응 — 첫 몇 분",
   "geo": {
    "title": "노출 뒤 급성 전신 반응 — 첫 몇 분",
@@ -776,7 +777,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "84e59c84d6f9d359",
+  "hash": "a125ce06dc65beee",
   "summary": [
    "결론: BTK 결함 → pre-B 에서 B 로 못 넘어감 → B세포 <1%·모든 클래스 Ig 저하, T세포·호중구·보체는 정상.",
    "시험 단서: 남아, 생후 6개월 무렵부터 피막 세균 감염 반복, B세포 부재 = XLA(X-linked agammaglobulinemia).",
@@ -989,6 +990,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "영아 반복 세균 감염 — 결함이 어느 칸에 있나",
   "geo": {
    "title": "영아 반복 세균 감염 — 결함이 어느 칸에 있나",
@@ -1642,7 +1644,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "ec135ad48e9d76a5",
+  "hash": "9885dd67e227c0a1",
   "summary": [
    "결론: 공복 뒤 저케톤성 저혈당 + 유리지방산 상승 + 젖산 정상 + 아실카르니틴 C8 상승 = MCAD 결핍.",
    "시험 단서: 3–24개월, 장염·중이염으로 못 먹은 뒤 기면·경련, 케톤 음성(hypoketotic hypoglycemia), 옥타노일카르니틴(C8).",
@@ -1911,6 +1913,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "공복·감염 뒤 저혈당 영유아 — 결손 단계를 좁히는 순서",
   "geo": {
    "title": "공복·감염 뒤 저혈당 영유아 — 결손 단계를 좁히는 순서",
@@ -2564,7 +2567,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "1a329cb0d984a881",
+  "hash": "529c67c586f3f58c",
   "summary": [
    "대동맥은 수축기마다 늘어났다 되돌아가며 높은 박동압과 전단응력을 받는다. 박리는 내막이 찢어져 혈류가 중막의 층 사이로 파고들어 가짜 내강을 만드는 것이고, 박동 흐름이 그 틈을 계속 밀어 넓힌다 [[harrison-21: 280장 p.2104]].",
    "그래서 치료의 표적은 「혈압 숫자」가 아니라 벽을 찢는 힘 — 수축력과 압력 상승 속도(dP/dt)·심박수 — 이다. 저혈압이 없으면 정맥 베타차단제(에스몰롤·메토프롤롤·프로프라놀롤, 또는 라베탈롤)로 심박 약 60회/분을 먼저 만들고, 이어 니트로프루시드로 수축기압 ≤120 mmHg 를 맞춘다 [[harrison-21: 280장 p.2105–2106]].",
@@ -2853,6 +2856,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "급성 흉통에서 박리 의심 — 첫 약물에서 확정 치료까지",
   "geo": {
    "title": "급성 흉통에서 박리 의심 — 첫 약물에서 확정 치료까지",
@@ -3556,10 +3560,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Emergency Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "7d88f85486258f0b",
+  "hash": "09f5852bd25f2c69",
   "summary": [
    "전형적 심방조동은 삼첨판륜을 도는 우심방의 거대 회귀회로다. 회로가 심방 안에서 닫혀 있어 방실결절은 회로의 일부가 아니다 — 방실결절은 심방 신호 중 몇 개를 심실로 보낼지만 정한다 [[harrison-21: 250장 p.1899]].",
    "심방 속도 240–300회/분이 2:1 로 전도되면 심실은 130–150회/분의 규칙적인 빈맥이 되고, 조동파가 T파에 묻혀 PSVT 처럼 보인다. II·III·aVF 의 음성 톱니파가 단서다 [[harrison-21: 250장 p.1899]].",
@@ -3762,6 +3766,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "usmle-2026-0046",
     "changed": "나이·성별(64세 여성)·기저질환(고혈압·당뇨)·내원 경위(정기 진료 중 발견)·제시 순서를 바꾸고, 안정 혈역학·톱니파 2:1 전도·시작 시점 불명은 유지 ⇒ 답은 그대로 심박수 조절",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-00449.png",
+    "kind": "ecg",
+    "at": "기전에서 소견으로",
+    "shows": "심방조동 — 규칙적인 좁은 QRS 빈맥과 하벽 유도의 조동파",
+    "look": [
+     "II·III·aVF 에서 QRS 사이 기저선이 톱니처럼 오르내린다(F파)",
+     "심실 박동은 약 150회/분으로 규칙적 — 2:1 전도를 먼저 의심"
+    ],
+    "label": "atrial flutter (SCP AFLT, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel"
    }
   ],
   "diagramTitle": "규칙적인 좁은 QRS 빈맥 — 심방조동 인식과 첫 처치",
@@ -4363,10 +4389,10 @@ window.MEDKOS_CONCEPTS = {
    "Pediatrics",
    "Emergency Medicine"
   ],
-  "version": 2,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "5b44f8f8efef146f",
+  "hash": "5c8cfcaaadf5062f",
   "summary": [
    "QT 간격은 심실 활동전위의 길이다. 재분극은 주로 두 칼륨 전류(IKr·IKs)가 맡고, 이 중 하나가 약해져도 나머지가 메우는 「재분극 예비력」이 있다 — 선천 QT연장증후군은 이 예비력이 유전적으로 깎인 상태다.",
    "재분극이 길어지면 활동전위 고평부에서 칼슘 통로가 다시 열려 조기후탈분극(EAD)이 생기고, 이것이 방아쇠가 되어 다형 심실빈맥(토르사드 드 푸앵트)이 난다. 실신과 급사는 이 부정맥의 결과다.",
@@ -4791,6 +4817,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-1035",
     "changed": "나이·성별(14세 남자)·유발 상황(달리기 중)·가족력(형의 급사)·제시 순서를 바꾸고 QTc 연장·후천 원인 없음·치료 전 상태는 그대로 → 답은 여전히 비선택 베타차단제",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-00320.png",
+    "kind": "ecg",
+    "at": "검사 — QTc 를 어떻게 재고 어디까지 믿나",
+    "shows": "QT 연장 — 느린 동리듬에서 늦게 끝나는 T파",
+    "look": [
+     "QRS 시작에서 T파 끝까지를 RR 간격과 견준다(심박수 약 55회/분이라 보정 필요)",
+     "T파 끝이 가장 분명한 유도(대개 II·V5)에서 잰다"
+    ],
+    "label": "long QT-interval (SCP LNGQT, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 320",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel"
    }
   ],
   "diagramTitle": "운동 중 실신 + QT 연장 — 후천 원인 배제에서 1차 약물까지",
@@ -5493,10 +5541,10 @@ window.MEDKOS_CONCEPTS = {
    "Pulmonology",
    "Pediatrics"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "81926fa2f82211b6",
+  "hash": "3cfca77aedbf5fea",
   "summary": [
    "사지유도 여섯 개는 같은 심실 탈분극을 전두면의 여섯 방향에서 본다. 탈분극이 유도의 양극 쪽으로 향하면 위로(양성), 음극 쪽으로 향하면 아래로(음성) 그려지고, 유도 축에 수직이면 위아래가 같은 이상성 파형이 된다 [[harrison-21: 240장 p.1825]].",
    "유도 I(0°)과 aVF(+90°)는 서로 수직이라 두 유도의 부호만으로 평균 QRS 벡터가 어느 사분면에 있는지 정해진다. I 음성 + aVF 양성 = +90°~+180°, 우축편위 [[harrison-21: 240장 p.1825]].",
@@ -5784,6 +5832,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0011",
     "changed": "나이·성별(17세 남자 고교 수영선수)·내원 경위(학교 검진)·제시 순서를 바꾸고 「유도 I rS(순면적 음성) + III·aVF 양성, 좁은 QRS」는 유지 → 답은 여전히 우축편위",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-16116.png",
+    "kind": "ecg",
+    "at": "기전에서 소견으로",
+    "shows": "좌후섬유속차단 — QRS 축이 오른쪽으로 치우친 12유도 심전도",
+    "look": [
+     "유도 I·aVL 은 작은 r 뒤 S(rS), II·III·aVF 는 위로 선 R",
+     "먼저 유도 I 과 aVF 의 QRS 순 방향으로 사분면을 정한다"
+    ],
+    "label": "left posterior fascicular block (SCP LPFB, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel"
    }
   ],
   "diagramTitle": "전두면 QRS 축 — 유도 I 에서 시작",
@@ -6599,10 +6669,10 @@ window.MEDKOS_CONCEPTS = {
    "Infectious Disease",
    "Gastroenterology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "1733392df3643ff8",
+  "hash": "bdcdbb3118a0bdbe",
   "summary": [
    "결절홍반은 피하지방 격막의 반응성 염증(격막성 지방층염)이다 — 균이나 종양이 병변 안에 있는 것이 아니라 다른 질환에 대한 면역 반응이다.",
    "모양: 양쪽 정강이 앞의 아프고 붉은 결절, 궤양·흉터 없이 멍 같은 푸른색으로 변하며 가라앉는다. 종아리에 궤양이 생기면 경결홍반 쪽이다.",
@@ -6796,6 +6866,28 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13181270_figure1.jpg",
+    "kind": "photo",
+    "at": "기전에서 소견으로",
+    "shows": "결절홍반 — 양 정강이 앞의 붉은 결절(소아, 셀리악병 동반 증례)",
+    "look": [
+     "정강이 앞쪽에 흩어진 경계가 흐린 붉은 결절 여러 개",
+     "비늘·궤양 없이 피부 아래가 부푼 모양"
+    ],
+    "label": "「Pretibial nodules characteristic of erythema nodosum.」 — Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature. Case Reports in Pediatrics",
+    "doiUrl": "https://doi.org/10.1155/crpe/9684135",
+    "citedBy": null,
+    "credit": "Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature. Case Rep Pediatr. 2026 May 18;2026:9684135. doi: 10.1155/crpe/9684135 (CC BY) — FIGURE 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181270/"
+   }
+  ],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -6814,10 +6906,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Infectious Disease"
   ],
-  "version": 3,
-  "updated": "2026-09-25",
+  "version": 4,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "cbfd918ba85d3998",
+  "hash": "bb17c063897e492a",
   "summary": [
    "결론: 국한·첫 발병은 국소 항진균제, 광범위·재발·국소 실패는 경구 이트라코나졸·플루코나졸.",
    "시험 단서: 몸통 위쪽 비늘 있는 저·과색소 반점 + KOH 짧은 균사·둥근 포자 무리 = 말라세지아(Malassezia).",
@@ -7067,6 +7159,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "",
     "changed": "",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13277293_figure1.jpg",
+    "kind": "photo",
+    "at": "가르는 소견 — 비늘·색·KOH",
+    "shows": "어루러기 — 목·윗가슴의 저색소·과색소 비늘 반점",
+    "look": [
+     "목과 윗가슴에 모이는 작은 원형 반점이 합쳐진 모양",
+     "주변 피부보다 밝거나 어두운 두 가지 색"
+    ],
+    "label": "「Maternal lesions of pityriasis versicolor. Hypo‐ and hyperpigmented, finely scaly macules and patches on the mother's neck, upper trunk, and arms, consistent with active pityriasis versicolor.」 — Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda. Clinical Case Reports",
+    "doiUrl": "https://doi.org/10.1002/ccr3.72762",
+    "citedBy": null,
+    "credit": "Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda. Clin Case Rep. 2026 May 19;14(5):e72762. doi: 10.1002/ccr3.72762 (CC BY) — FIGURE 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13277293/"
    }
   ],
   "diagramTitle": "어루러기 — 진단 확인에서 치료 수준까지",
@@ -7677,7 +7791,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "2c20b0113b468bf0",
+  "hash": "39403d61ecfbb3cc",
   "summary": [
    "전신치료 대상: 체표면적 > 10 %(또는 PASI > 10), 손·발·얼굴·음부·손톱 침범, 국소치료 실패, 삶의 질 저하.",
    "치료 후보는 네 층 — 좁은파장 UVB 광선치료 · 경구 전신제(메토트렉세이트·아시트레틴·사이클로스포린·아프레밀라스트) · 생물학제 · (전신 스테로이드는 판상건선에 쓰지 않음).",
@@ -8069,6 +8183,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "중등증–중증 판상건선 — 환자 조건으로 전신치료 고르기",
   "geo": {
    "title": "중등증–중증 판상건선 — 환자 조건으로 전신치료 고르기",
@@ -8895,10 +9010,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Hematology-Oncology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "87b2bb348d1f7856",
+  "hash": "39bc5744e3b962ff",
   "summary": [
    "정상 피부의 멜라닌은 표피 기저층 멜라닌세포가 만들어 각질형성세포에 넘긴다. 염증이 기저층을 부수면 멜라닌이 진피로 떨어져 멜라닌탐식세포에 담기고, 더모스코피에서 회청색·회갈색 과립(peppering)으로 보인다. 염증이 지나간 자리는 섬유화돼 흉터양 백색 영역이 된다 — 이것이 「퇴행 구조」다 [[?marghoob-atlas: regression structures]].",
    "퇴행은 병변의 종류가 아니라 면역 반응의 흔적이다. 양성 흑자·지루각화증이 태선양 염증으로 퇴행하면 편평태선양 각화증(LPLK)이 되고, 흑색종도 면역 공격으로 부분·완전 퇴행한다 — 둘은 같은 그림을 그린다 [[?bolognia-4: Benign epidermal tumors and proliferations]].",
@@ -9196,6 +9311,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0054",
     "changed": "나이·성별(68세 남자)·부위(등)·내원 경위(아내가 발견)·증상(가려움 대신 색이 회색으로 변함)과 제시 순서를 바꾸고 「최근 변화 + 퇴행 구조가 주됨 + 결절·궤양 없음」은 그대로 → 답은 여전히 조직검사",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/isic-isic_0001107.jpg",
+    "kind": "dermoscopy",
+    "at": "기전에서 소견으로",
+    "shows": "조직검사로 확진된 편평태선양 각화증(LPLK)의 더모스코피",
+    "look": [
+     "분홍 바탕에 흩어진 옅은 갈색 얼룩",
+     "색이 빠진 흰·분홍 부위와 바탕의 가는 붉은 혈관"
+    ],
+    "label": "Lichen planus like keratosis — 조직병리 확진",
+    "basis": "dataset_expert",
+    "reference": "이미지마다 조직병리 검사로 확진(ISIC 기록 diagnosis_confirm_type = histopathology)",
+    "paper": "Codella NCF 외. Skin lesion analysis toward melanoma detection: a challenge at ISBI 2017. ISBI 2018:168-172",
+    "doiUrl": "https://doi.org/10.1109/ISBI.2018.8363547",
+    "citedBy": 1935,
+    "credit": "ISIC Archive ISIC_0001107 (CC-0)",
+    "license": "CC0 1.0 Universal",
+    "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001107"
    }
   ],
   "diagramTitle": "색소 병변 — 생검할까, 지켜볼까",
@@ -9786,7 +9923,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "e4f42be9b4110b88",
+  "hash": "ae66aaaf6725d4df",
   "summary": [
    "옴 진드기(Sarcoptes scabiei var. hominis)의 수정된 암컷이 각질층에 굴을 파고 알을 낳는다. 사람에서 사람으로 주로 직접적이고 오래 지속된 피부 접촉으로 옮고, 숙주 없이는 하루 남짓 만에 죽는다 [[harrison-21: 461장 p.3608]].",
    "가려움과 발진은 진드기와 그 분비물·배설물에 대한 과민반응이다. 첫 감염은 최대 6주까지 증상이 없다가 심한 가려움이 시작되므로, 함께 사는 사람이 지금 가렵지 않아도 이미 감염돼 있을 수 있다 [[harrison-21: 461장 p.3608]].",
@@ -10031,6 +10168,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "밤에 심한 전신 가려움 — 옴 진단에서 치료 범위까지",
   "geo": {
    "title": "밤에 심한 전신 가려움 — 옴 진단에서 치료 범위까지",
@@ -10579,7 +10717,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "443152d0cdbdc311",
+  "hash": "2d830053acf99ce1",
   "summary": [
    "원인: 황색포도알균이 국소 감염 부위(입 주위·코·배꼽·결막 등)에서 표피박리독소(ETA·ETB)를 내고, 독소가 퍼져 멀리 떨어진 피부까지 벗긴다.",
    "독소는 표층 표피의 데스모솜 카데린(데스모글레인 1)을 자르는 단백분해효소 — 갈라지는 층이 과립층이라 얕게 벗겨지고, 점막은 대개 보존된다.",
@@ -10797,6 +10935,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -10816,10 +10955,10 @@ window.MEDKOS_CONCEPTS = {
    "Pulmonology",
    "Cardiology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "4e4a051f1cc40dc0",
+  "hash": "aa78f36a71df2e19",
   "summary": [
    "ARDS 는 폐포-모세혈관 장벽이 손상돼 단백이 많은 부종액이 폐포를 채우는 염증성(투과성) 부종이다. 심부전의 정수압성 부종과 흉부 사진은 비슷할 수 있어, 심장 원인을 객관적으로 배제해야 진단이 선다.",
    "Berlin 기준: 유발 요인·호흡 증상 뒤 1주 안 발병 · 흉수·허탈·결절로 설명되지 않는 양측 음영 · 정수압성 부종이 주원인이 아님 · PEEP ≥ 5 cm H2O 에서 PaO2/FiO2 로 경증(200–300)·중등증(100–200)·중증(≤ 100).",
@@ -11170,6 +11309,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0063",
     "changed": "성별·나이(58세 여자)·유발 사건(약물 과다 복용 뒤 위 내용물 흡인)·제시 순서·수치를 바꾸고 「1주 안 발병·양측 음영·PEEP ≥ 5 에서 PaO2/FiO2 ≤ 100·심장 원인 배제」는 그대로 → 답은 여전히 6 mL/kg PBW·고평부압 ≤ 30",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12928926_figure1-0-0-400-380.jpg",
+    "kind": "radiograph",
+    "at": "기전에서 소견으로",
+    "shows": "흡인 뒤 급성호흡곤란증후군 1일째 흉부 X선 — 양쪽 폐의 미만성 공기공간 음영",
+    "look": [
+     "양쪽 폐야 전체에 퍼진 흐린 공기공간 음영(한쪽에 몰리지 않음)",
+     "기관내관·선이 보이는 기계환기 중 사진"
+    ],
+    "label": "「Sequential CXR illustrating the radiologic course in the postpartum patient. Day 1: diffuse bilateral air-space opacities consistent with chemical pneumonitis/early ARDS. Day 7: near-complete resolution and no tube following extubation on day 7. ARDS = acute respiratory distress syndrome.」 — Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine",
+    "doiUrl": "https://doi.org/10.1097/MD.0000000000047816",
+    "citedBy": null,
+    "credit": "Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1.",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12928926/"
    }
   ],
   "diagramTitle": "양측 폐 음영 + 급성 저산소혈증 — ARDS 인가, 첫 처치는?",
@@ -11814,7 +11975,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "ea6611e1e9621610",
+  "hash": "a95e048e0a086715",
   "summary": [
    "심근에서 노르에피네프린·에피네프린이 베타1 수용체에 붙으면 Gs 단백이 adenylate cyclase 를 켜 cAMP 가 늘고, PKA 가 L형 칼슘통로 등을 인산화해 칼슘 유입이 늘어난다 → 심박수(변시)와 수축력(변력)이 오른다 [[?goodman-gilman]].",
    "베타차단제 중독은 이 사슬의 입구(베타 수용체)를 막아 서맥·방실차단·저혈압을 만든다. 해리슨 표 459-4 는 저혈당·고칼륨·경련도 적고, 프로프라놀롤처럼 막 작용(membrane-active)이 있는 약은 따로 위험하다고 적는다 [[harrison-21: 459장 p.3591]].",
@@ -12013,6 +12174,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "베타차단제 중독 — 서맥·저혈압 치료 순서",
   "geo": {
    "title": "베타차단제 중독 — 서맥·저혈압 치료 순서",
@@ -12685,7 +12847,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "5b25fd940a95ba5d",
+  "hash": "b9e04e11bc071df7",
   "summary": [
    "리튬은 1가 양이온으로 사구체에서 자유롭게 여과된 뒤 근위세뇨관에서 나트륨과 함께 대부분 재흡수된다. 몸이 나트륨을 아끼는 상황(탈수·저염식·티아지드·ACE 억제제·NSAID)은 리튬 재흡수도 늘려 농도를 올린다 [[?katzung]].",
    "티아지드는 원위세뇨관에서 나트륨 재흡수를 막아 가벼운 용적 감소를 만들고, 보상으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 떨어진다(교과서 수치 25~40 %) [[?katzung]]. 용량을 바꾸지 않았는데 새 약 시작 뒤 몇 주 만에 중독이 생기는 이유다.",
@@ -12967,6 +13129,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "리튬 중독 — 투석이냐 식염수냐",
   "geo": {
    "title": "리튬 중독 — 투석이냐 식염수냐",
@@ -13648,10 +13811,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Cardiology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "44085d6b79ca5f7d",
+  "hash": "21a75263238f35e1",
   "summary": [
    "정상 심장은 한 곳에서 시작한 흥분이 차례로 퍼져 심실 전체가 한꺼번에 수축한다. 심실세동은 여러 개의 흥분 파면이 무질서하게 돌아 심근이 제각각 떨기만 하는 상태라 심박출이 0 이 되고, 곧 의식·맥박·호흡이 사라진다.",
    "심정지는 리듬으로 치료를 가른다. 심실세동·무맥 심실빈맥은 「제세동 가능 리듬」이고, 무맥성 전기활동·무수축은 아니다. 제세동이 얼마나 빨리 되느냐가 결과를 정하는 중요한 예측 인자다 [[harrison-21: 306장 p.2262]].",
@@ -13887,6 +14050,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0554",
     "changed": "나이·성별·쓰러진 장소(수영장)·발견 경위와 감시 방법(자동제세동기)을 바꾸고, 무반응·무맥·세동파는 남김 ⇒ 답은 그대로 즉시 비동기 제세동",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13303025_figure3-0-0-322-362.png",
+    "kind": "ecg",
+    "at": "기전에서 소견으로",
+    "shows": "심실세동 — 사지유도에서 모양·간격이 일정하지 않은 무질서한 파형",
+    "look": [
+     "QRS·T 를 구별할 수 없고 진폭·주기가 제각각",
+     "등전위선 없이 이어지는 파형"
+    ],
+    "label": "「Ventricular fibrillation recorded on telemetry and implantable cardioverter-defibrillator (ICD) imaging. (A) Limb-lead electrocardiogram captured during an episode of ventricular fibrillation. (B) Post-procedural imaging showing the implanted ICD.」 — Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Frontiers in Physiology",
+    "doiUrl": "https://doi.org/10.3389/fphys.2026.1808973",
+    "citedBy": null,
+    "credit": "Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303025/"
    }
   ],
   "diagramTitle": "쓰러진 환자 — 리듬 확인에서 첫 전기충격까지",
@@ -14390,7 +14575,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "5f195041169badd3",
+  "hash": "a1b28779cd25bd66",
   "summary": [
    "정상 코르티솔은 아침에 높고 밤에 가장 낮으며(일주기), 외부 글루코코르티코이드(덱사메타손)가 들어오면 CRH·ACTH 가 억제돼 떨어진다(음성되먹임). 쿠싱증후군은 이 두 성질 — 밤의 최저점과 억제성 — 이 사라진 상태다 [[harrison-21: 386장 p.2956]].",
    "그래서 선별검사는 세 가지다: 심야 타액 코르티솔(밤의 최저점이 없어졌는가), 1 mg 야간 덱사메타손 억제검사(억제되지 않는가), 24시간 소변 유리코르티솔(하루 총량이 늘었는가) [[harrison-21: 386장 p.2962]].",
@@ -14632,6 +14817,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "쿠싱 의심 — 선별에서 원인 감별로",
   "geo": {
    "title": "쿠싱 의심 — 선별에서 원인 감별로",
@@ -15225,7 +15411,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "9c0eb21dbefa1875",
+  "hash": "29badd8da8b34347",
   "summary": [
    "인슐린이 상대적으로 모자라면 간의 포도당 생산이 늘고 근육의 사용이 줄어 혈당이 오른다. 콩팥 역치를 넘은 포도당이 물을 끌고 나가(삼투성 이뇨) 혈관내 용적이 빠지고, 물을 마시지 못하는 노인에서는 며칠~몇 주에 걸쳐 탈수와 고삼투가 깊어진다 [[harrison-21: 404장 p.3117]].",
    "HHS 는 혈당 600–1200 mg/dL·삼투질농도 330–380 mOsm/kg·pH >7.3·중탄산 >18·케톤 ± 가 전형이다 — 케톤·산증이 없거나 경미한 것이 DKA 와 다르다 [[harrison-21: 404장 p.3115]].",
@@ -15472,6 +15658,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "고혈당 위기 — 첫 30분의 순서",
   "geo": {
    "title": "고혈당 위기 — 첫 30분의 순서",
@@ -16029,7 +16216,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "8fd44c7b2777e816",
+  "hash": "8c88373f0f796cd8",
   "summary": [
    "노르에피네프린은 주로 혈관의 알파1 수용체로 혈관을 조이고, 에피네프린은 베타1(심박·수축력)과 베타2(골격근 혈관 확장)에도 작용한다. 갈색세포종은 이 호르몬이 발작적으로 쏟아져 두통·발한·심계항진과 고혈압(발작성 또는 지속성)을 만든다 [[harrison-21: 387장 p.2976]].",
    "혈관이 오래 조여 있어 환자는 혈장량이 줄어 있다(용적 수축). 그래서 수술 전 준비는 알파차단제(경구 페녹시벤자민)로 혈관수축을 풀면서 염분·수분을 넉넉히 채워 기립성 저혈압을 막는 것이다 — 목표 혈압은 꾸준히 <160/90 mmHg [[harrison-21: 387장 p.2978–2979]].",
@@ -16237,6 +16424,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "갈색세포종 확진 뒤 수술 전 준비",
   "geo": {
    "title": "갈색세포종 확진 뒤 수술 전 준비",
@@ -16749,10 +16937,10 @@ window.MEDKOS_CONCEPTS = {
    "Pathology",
    "Physiology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "f521f483de387c26",
+  "hash": "04841b58d5640c6d",
   "summary": [
    "갑상샘 여포는 극성이 있는 여포세포가 콜로이드를 둘러싼 구조다. 기저측막(혈관 쪽)이 요오드를 들이고, 정단막(내강 쪽)에서 요오드화가 일어나며, 내강의 콜로이드가 호르몬 전구 단백을 저장한다 [[harrison-21: 382장 p.2926]].",
    "콜로이드의 주성분은 타이로글로불린(Tg, 660 kDa 이량체 당단백)이다. 여포세포가 합성해 내강으로 분비하고, 그 타이로신 잔기가 요오드화·짝지음되어 T4·T3 를 품은 채 저장되었다가 다시 세포로 흡수되어 리소좀에서 분해되며 호르몬을 내놓는다 [[harrison-21: 382장 p.2927–2928]].",
@@ -17032,6 +17220,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0079",
     "changed": "성별·나이(58세 여자)·수술 이유(반대엽 유두암으로 전절제)·묻는 방식(기능 대신 「이 단백질에 대한 설명」)을 바꾸고 「정상 부위 콜로이드 균질 강양성」은 그대로 → 단백질은 여전히 타이로글로불린",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-tg_306_b_1_5.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "갑상샘 티로글로불린 면역염색 — 여포 안 콜로이드가 갈색",
+    "look": [
+     "여포 안을 채운 콜로이드 전체가 갈색",
+     "여포 벽의 상피세포도 양성(병리 주석: 샘세포 high)"
+    ],
+    "label": "Thyroid gland, TG 면역조직화학 — 병리의사 주석(항체·조직 요약) Glandular cells: high",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland"
    }
   ],
   "diagramTitle": "갑상샘 조직 면역조직화학 — 갈색은 어디에 있는가?",
@@ -17634,7 +17844,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "b9cedfd4299994bc",
+  "hash": "e3718f07b2faf51d",
   "summary": [
    "치료 용량의 아세트아미노펜은 대부분 2상 반응(황산·글루쿠론산 포합)으로 무해한 대사물이 되고, 적은 양만 1상 반응(CYP2E1)으로 반응성 대사물 NAPQI 가 된다. NAPQI 는 간의 글루타티온과 결합해 수용성 머캅투르산으로 콩팥에서 배설된다 [[harrison-21: 340장 p.2588]].",
    "과량이면 NAPQI 가 너무 많이 생기거나 글루타티온이 적어(굶주림·만성 음주) 글루타티온이 고갈되고, NAPQI 가 간세포 거대분자와 공유결합(단백 부가물)해 중심소엽(3구역) 괴사를 일으킨다 [[harrison-21: 340장 p.2588]].",
@@ -17837,6 +18047,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "아세트아미노펜 과량 복용 — NAC 판단",
   "geo": {
    "title": "아세트아미노펜 과량 복용 — NAC 판단",
@@ -18308,7 +18519,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "a42f5d1fdb9f489c",
+  "hash": "d06870bc46b9de89",
   "summary": [
    "두 염증성 장질환은 「어디에(분포)·얼마나 깊이(층)·무엇이 보이나(조직)」로 갈린다.",
    "궤양성대장염: 직장에서 시작해 근위로 연속, 점막에 국한, 혈성 설사·뒤무직.",
@@ -18512,6 +18723,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -18533,7 +18745,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "e4add5b6ffea285d",
+  "hash": "d116f66dbcfcf75d",
   "summary": [
    "진단(TG18): 국소 징후(오른쪽 윗배 압통·덩이·Murphy 징후) + 전신 염증(발열·백혈구·CRP) + 영상(담석·담낭벽 비후·주위 액체) 세 가지가 다 있으면 확진이다.",
    "중증도는 「장기부전 → 3등급, 국소 염증 심함(백혈구 > 18,000·촉지 덩이·발병 > 72시간·괴저/농양/기종/담즙성 복막염) → 2등급, 둘 다 없음 → 1등급」 순서로 매긴다.",
@@ -18901,6 +19113,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "급성 담석 담낭염 — 등급 · 장기부전 · 담관 소견 · 수술 위험 · 시점으로 치료 가르기",
   "geo": {
    "title": "급성 담석 담낭염 — 등급 · 장기부전 · 담관 소견 · 수술 위험 · 시점으로 치료 가르기",
@@ -19726,10 +19939,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "General Surgery"
   ],
-  "version": 1,
-  "updated": "2026-09-25",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "4fd67dc6c2a8bce7",
+  "hash": "dd08285d0193dc56",
   "summary": [
    "결론: 안정된 환자의 3 cm 넘는 벽이 뚜렷한 게실 농양은 항생제에 CT 유도 경피 배농을 더한다.",
    "시험 단서: 좌하복부 통증·발열 + CT 결장 옆 테두리 조영 증강 액체(rim-enhancing collection), 유리 공기 없음.",
@@ -19975,6 +20188,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "usmle-2026-0173",
     "changed": "나이·성별(58세 남자), 병력(고혈압·과거 대장내시경 → 이상지질혈증), 배뇨 증상 추가, 농양 위치·크기(결장 옆 5.5 cm → 골반 쪽 6 cm), 검사 제시 순서를 바꾸고 「활력 안정·국소 압통·유리 공기 없음·3 cm 넘는 벽 뚜렷한 농양」은 그대로 → 답은 여전히 CT 유도 경피 배농",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13356615_fig4.jpg",
+    "kind": "ct",
+    "at": "판단 — 왜 경피 배농이 먼저인가",
+    "shows": "게실 질환에 합병한 골반 농양 조영 CT(경피 배농관 삽입 상태)",
+    "look": [
+     "직장 옆 테두리가 조영되는 액체 모임(화살촉)",
+     "배농관이 들어가 있다(저자 설명)"
+    ],
+    "label": "「Admission day 5, Axial CECT in portal venous phase. Cope drainage catheter in situ. Within the pelvis adjacent to the right side of the rectum, there is a 4 × 6 cm abscess and on the left side of the pelvis there is a 2.4 cm abscess (white arrowheads). Uterus–white arrows.」 — Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease. Radiology Case Reports",
+    "doiUrl": "https://doi.org/10.1016/j.radcr.2026.06.017",
+    "citedBy": null,
+    "credit": "Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease. Radiol Case Rep. 2026 Jul 7;21(10):4419–25. doi: 10.1016/j.radcr.2026.06.017 (CC BY) — Fig. 4",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13356615/"
    }
   ],
   "diagramTitle": "게실염 — 농양이 있을 때의 다음 처치",
@@ -20559,7 +20794,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "3d398b249acfc1a5",
+  "hash": "10a1f1373c8db38f",
   "summary": [
    "수술 범위를 정하는 네 인자: 종양 크기(≤1 / 1–4 / >4 cm) · 갑상선외 침범 · 임상적 림프절 전이(cN0 / cN1a 중심구역 / cN1b 측경부) · 원격전이. 세침으로 진단이 끝나면 이 네 가지를 수술 전 초음파로 채운다.",
    "1–4 cm 이고 갑상선 안에 국한·cN0 이면 엽절제도 전절제도 허용(선택). 그러나 >4 cm·육안적 갑상선외 침범·임상적 림프절 전이(cN1)·원격전이 가운데 하나라도 있으면 갑상선 전절제다.",
@@ -20980,6 +21215,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "유두갑상선암 — 수술 전 초음파 소견으로 수술 범위 정하기",
   "geo": {
    "title": "유두갑상선암 — 수술 전 초음파 소견으로 수술 범위 정하기",
@@ -21777,7 +22013,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "9ddc1bc38ebec090",
+  "hash": "83e52451270220ab",
   "summary": [
    "결론: 호중구 섞인 소엽상 모세혈관 증식 + 은염색 간균 무리 = 세균성 혈관종증(Bartonella), 항생제로 낫는다.",
    "시험 단서: CD4 < 100 + 쉽게 피 나는 붉은 자주색 결절 + 발열 + 고양이 긁힘(cat scratch) 또는 몸니·노숙.",
@@ -22018,6 +22254,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "진행성 HIV 의 붉은 자주색 결절 — 조직으로 가르기",
   "geo": {
    "title": "진행성 HIV 의 붉은 자주색 결절 — 조직으로 가르기",
@@ -22553,7 +22790,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "23378148e05b8bc9",
+  "hash": "4251c18e4fab9aaf",
   "summary": [
    "아스페르길루스는 공기 중에 늘 있는 사상균이다. 들이마신 포자는 평소 대식세포와 호중구가 치우는데, 깊은 호중구감소·스테로이드가 길어질수록 그 방어가 빠져 침습성 감염 위험이 커진다 [[harrison-21: 217장 p.1677]].",
    "호중구감소 환자에서는 균사가 폐혈관 벽을 뚫고 들어가는 **혈관 침습형**이 된다 [[harrison-21: 217장 p.1678 Table 217-2]]. 혈관이 막혀 조직이 출혈성 경색을 일으키고, 그 결과가 객혈·흉막성 흉통·흉막 기저 경색이다 [[harrison-21: 217장 p.1679]].",
@@ -22730,6 +22967,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "호중구감소 환자의 폐 결절 — 어떤 균이 혈관을 침습했나",
   "geo": {
    "title": "호중구감소 환자의 폐 결절 — 어떤 균이 혈관을 침습했나",
@@ -23418,7 +23656,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "97783bc7282b9068",
+  "hash": "cbdbcddee235ba1c",
   "summary": [
    "레지오넬라는 원래 물속 아메바 안에서 사는 세균이다. 사람은 오염된 물의 에어로졸(냉각탑·분수·온수 욕조·샤워기)을 들이마셔 우연히 감염되고, 폐포 대식세포 안에서 식작용을 피해 증식한다 [[harrison-21: 159장 p.1250–1251]].",
    "시스테인 같은 특수 영양이 필요해 일반 혈액 한천에서 자라지 않고 BCYE 배지에서 3–5일 걸려 자란다. 객담 그람염색에 호중구는 많은데 균이 안 보이는 것이 이 성질의 결과다 [[harrison-21: 159장 p.1254]].",
@@ -23609,6 +23847,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "급성 폐렴에서 레지오넬라 확진 검사 고르기",
   "geo": {
    "title": "급성 폐렴에서 레지오넬라 확진 검사 고르기",
@@ -24202,7 +24441,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-18",
   "reviewStatus": "unreviewed",
-  "hash": "b5ad717be57d4ab8",
+  "hash": "c1be52d59e148a54",
   "summary": [
    "칼륨은 98% 이상이 세포 안에 있다. 혈청 칼륨은 세포 안팎 분포(인슐린·β2·산염기)와 콩팥 배설(알도스테론·원위부 나트륨 전달·흐름)이 함께 정한다 — 원인도 이 두 축(+채혈 인공물)으로 나뉜다.",
    "심장 독성은 안정막전위가 탈분극되어 생긴다. 심전도 변화는 위험 신호지만 민감하지 않다 — 정상 심전도가 안전을 뜻하지 않는다.",
@@ -24634,6 +24873,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "고칼륨혈증 — 위급도 판단과 치료 순서",
   "geo": {
    "title": "고칼륨혈증 — 위급도 판단과 치료 순서",
@@ -25230,10 +25470,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Pediatrics"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "bee021342c3bd335",
+  "hash": "ea1fc9373fe34f1b",
   "summary": [
    "사구체 모세혈관벽은 적혈구와 알부민을 거르는 장벽이다. 면역복합체가 쌓여 보체가 활성화되고 염증세포가 모이면 벽이 찢어져 적혈구가 새고(혈뇨·적혈구원주), 여과가 줄어 나트륨·수분이 저류된다(고혈압·부종·핍뇨) — 이것이 신염증후군이다.",
    "연쇄구균감염후사구체신염(PSGN)은 신염원성 A군 연쇄구균 감염 뒤 면역 반응이 만들어질 시간이 필요해 인두염 1~3주·농가진 2~6주 뒤에 나타난다 [[harrison-21: 314장 p.2337]].",
@@ -25400,6 +25640,28 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12554364_figure3-240-205-750-564.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "연쇄구균감염후사구체신염 전자현미경 — 상피하 전자밀도 침착(hump)",
+    "look": [
+     "사구체 기저막 바깥(상피 쪽)에 붙은 둥근 전자밀도 덩어리(빨간 화살촉)",
+     "같은 논문 그림의 형광은 C3 과립상 침착"
+    ],
+    "label": "「Renal biopsy findings diagnostic for acute post-streptococcal glomerulonephritis (APSGN). (A) H&E stain showing a cellular crescent (arrow) compressing the glomerular tuft. (B) Periodic acid–Schiff (PAS) stain highlighting the crescent (arrow) and diffuse glomerular hypercellularity. (C) H&E stain demonstrating a prominent neutrophilic infiltrate (arrow) within the glomerulus. (D) Immunofluorescence microscopy revealing strong (3+) granular staining for C3 along capillary loops and in the mesangium. (E, F) Electron photomicrographs showing characteristic subepithelial electron-dense ‘humps’ (red arrows).」 — A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.93307",
+    "citedBy": null,
+    "credit": "A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report. Cureus. 2025 Sep 26;17(9):e93307. doi: 10.7759/cureus.93307 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12554364/"
+   }
+  ],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -25422,7 +25684,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "00ef2995678ae18c",
+  "hash": "0200f60f2fe822a3",
   "summary": [
    "정상에서는 혈장 삼투질농도가 약 285 mOsm/kg 아래로 내려가면 AVP 가 억제되어 콩팥이 묽은 소변으로 자유수를 버린다 [[harrison-21: 53장 p.339]]. SIADH 는 낮은 삼투질농도에서도 AVP(또는 V2 수용체 작용)가 지속돼 자유수를 버리지 못하는 상태다.",
    "그래서 소견은 저삼투 저나트륨혈증 + 부적절하게 진한 소변(요삼투 >100) + 요나트륨 상승 + 부종·탈수 없음이며, 갑상선저하·부신기능저하·이뇨제를 먼저 걸러야 진단된다 [[harrison-21: 53장 p.342–343]]. 소세포폐암은 악성 종양 관련 SIADH 의 75% 를 차지한다.",
@@ -25634,6 +25896,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -25653,10 +25916,10 @@ window.MEDKOS_CONCEPTS = {
    "Neurology",
    "Radiology"
   ],
-  "version": 1,
-  "updated": "2026-09-26",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "2f5b0a89ad6d100f",
+  "hash": "5b471f266cc85db6",
   "summary": [
    "결론: 수주 진행 결손 + 뇌 실질 안 종괴 효과 + 두꺼운 불규칙 고리 조영·중심 괴사 = 교모세포종.",
    "시험 단서: 60~70대, 두통·경련·편마비가 수주에 걸쳐 악화, 발열 없음, 몸통 CT 원발암 없음(ring-enhancing mass).",
@@ -25873,6 +26136,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0115",
     "changed": "성별(여자)·나이(66세)·주증상(언어장애·오른쪽 약화, 가족이 성격 변화를 알아챔)·병변 쪽(왼쪽 측두엽)·제시 순서를 바꾸고 「수주 진행, 발열 없음, 축내 종괴 효과, 두꺼운 불규칙 고리 + 중심 괴사, 원발암 없음」은 유지 → 답은 여전히 교모세포종",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13218906_figure3.jpg",
+    "kind": "mri",
+    "at": "가르는 소견 — 자리·시간·조영 모양",
+    "shows": "교모세포종 MRI — 조영 T1 의 고리 조영증강과 주변 부종(추적에서 커짐)",
+    "look": [
+     "B·D(조영 T1): 벽이 두껍고 고르지 않은 고리 조영증강, 가운데는 조영 안 됨",
+     "A·C(T2·FLAIR): 병변을 둘러싼 넓은 부종"
+    ],
+    "label": "「(A, B) MRI (November 26, 2024). (A) T2 TSE image showing the lesion with surrounding edema (arrow). (B) Contrast-enhanced T1-weighted image showing ring enhancement, with lesion measuring 2.6 cm × 2.2 cm (arrow). (C, D) MRI (January 21, 2025). (C) T2 FLAIR image showing further enlargement of the lesion with markedly increased peritumoral edema (arrow). (D) Contrast-enhanced T1-weighted image showing lesion measuring 2.7 cm × 2.5 cm with persistent ring enhancement (arrow). (E) MRI (September 1, 2025) T2 FLAIR image showing significant tumor progression with lesion measuring 5.0 cm × 8.0 cm after glioblastoma diagnosis (arrow).」 — Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review. Frontiers in Oncology",
+    "doiUrl": "https://doi.org/10.3389/fonc.2026.1837876",
+    "citedBy": null,
+    "credit": "Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review. Front Oncol. 2026 May 15;16:1837876. doi: 10.3389/fonc.2026.1837876 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13218906/"
    }
   ],
   "diagramTitle": "진행성 편측 결손 — 자리·시간·조영으로 가른다",
@@ -26666,7 +26951,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "5af628a646f1c7e2",
+  "hash": "8ceea2f8fc597ffb",
   "summary": [
    "길랑-바레 증후군 = 감염 1–3주 뒤 말초신경·신경근에 대한 자가면역 공격. 수 시간~수일에 걸쳐 오르는 대칭성 이완마비 + 건반사 소실, 감각 증상은 가볍다.",
    "악화기의 목숨을 가르는 것은 진단 확정이 아니라 호흡근·연수 마비와 자율신경 불안정이다. 최대 30 % 가 인공호흡을 필요로 한다.",
@@ -26982,6 +27267,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "길랑-바레 의심 — 첫 처치의 순서",
   "geo": {
    "title": "길랑-바레 의심 — 첫 처치의 순서",
@@ -27367,10 +27653,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Ophthalmology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "ca7a37b69532c9a3",
+  "hash": "06ef77f2beac34eb",
   "summary": [
    "다발경화증 = 중추신경(뇌·척수·시신경) 백질의 자가면역 탈수초. 병변이 여러 곳(공간)에 여러 번(시간) 생긴다 — 이 둘을 보이는 것이 진단이다.",
    "공간적 파종 = 뇌실주위·피질근처·천막하·척수 네 곳 중 두 곳 이상에 T2 병변. 시간적 파종 = 조영증강·비증강 병변의 동시 존재, 추적 MRI 의 새 병변, 또는 두 번째 발작.",
@@ -27634,6 +27920,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0083",
     "changed": "성별·나이(33세 남자)와 증상 종류(시신경염 → 핵간안근마비에 의한 복시, 과거 발작은 한쪽 시력저하), MRI 파종 근거(시간 파종을 조영증강·비증강 병변 동시 존재로)를 바꾸고 「중추신경 병변이 시간·공간으로 흩어짐」은 그대로 → 답은 여전히 다발경화증",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13354747_figure1.jpg",
+    "kind": "mri",
+    "at": "기전에서 소견으로",
+    "shows": "다발경화증 FLAIR — 여러 부위에 흩어진 백질 고신호 병변",
+    "look": [
+     "뇌실 주위·피질 가까이의 고신호 병변 여러 개 — 공간적 다발성",
+     "종괴 효과가 없는 병변"
+    ],
+    "label": "「Brain MRI. Sagittal (A and B) and axial (C and D) fluid‐attenuated inversion recovery (FLAIR) sequences reveal multiple white matter non‐space‐occupying hyperintensities distributed across various regions, including the periventricular, subcortical and juxtacortical regions, brainstem and the cerebellum. The morphological appearance of these hyperintensities, for example, the “Dawson finger” appearance of the periventricular lesions, is consistent with multiple sclerosis.」 — Multiple Sclerosis in a Person With Hirschprung's Disease: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Multiple Sclerosis in a Person With Hirschprung's Disease: A Case Report. Clinical Case Reports",
+    "doiUrl": "https://doi.org/10.1002/ccr3.72984",
+    "citedBy": null,
+    "credit": "Multiple Sclerosis in a Person With Hirschprung's Disease: A Case Report. Clin Case Rep. 2026 Jul 10;14(7):e72984. doi: 10.1002/ccr3.72984 (CC BY) — FIGURE 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13354747/"
    }
   ],
   "diagramTitle": "중추신경 탈수초 의심 — 다발경화증을 진단하는 길",
@@ -28136,7 +28444,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "2bd258b0b9896f0f",
+  "hash": "b5e8475cfea79a62",
   "summary": [
    "결론: 3분기 간효소 상승에 저혈당·INR 연장·섬유소원 저하·뇌증이 앞서면 HELLP 가 아니라 급성 임신 지방간이다.",
    "시험 단서: 35주 전후 구토·상복부 통증·황달·갈증 + 혈당↓·INR↑, 분열적혈구 없음 = AFLP(acute fatty liver).",
@@ -28376,6 +28684,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "임신 3분기 간효소 상승 — 간부전인가, 용혈인가",
   "geo": {
    "title": "임신 3분기 간효소 상승 — 간부전인가, 용혈인가",
@@ -28974,10 +29283,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Pathology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "a950f6bc2f3d0aaa",
+  "hash": "2fdb4e2bcb1e5787",
   "summary": [
    "자궁경부에는 원래 두 상피가 있다 — 질에 이어지는 자궁경부 바깥쪽의 비각화 중층편평상피와, 자궁목관을 덮고 기질로 움푹 들어가 샘(움)을 이루는 단층 원주 점액상피 [[?robbins-10]].",
    "사춘기·임신의 에스트로겐으로 자궁경부가 커지면 원주상피가 자궁경부 바깥쪽으로 뒤집혀 나오고(외번), 산성 질 환경에 노출된 원주상피 밑의 예비세포가 증식해 미성숙 → 성숙 편평상피로 바뀐다. 이것이 편평상피화생이며 생리적 과정이다 [[?iarc-colpo-2003]] [[?robbins-10]].",
@@ -29217,6 +29526,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0049",
     "changed": "나이(19세)·임상 상황(경구피임약 복용 중 질확대경에서 자궁경부 외번)·제시 순서·염색(점액 면역조직화학 → H&E 기술)을 바꾸고 「뒤집혀 나온 원주상피 밑 예비세포가 질서 있게 편평상피로 성숙, 이형성 없음」은 그대로 → 답은 여전히 편평상피화생",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-muc5b_24311_b_9_3.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "자궁경부 MUC5B 면역염색 — 자궁목내막 샘(원주상피)만 양성",
+    "look": [
+     "기질 속 샘의 원주상피만 진한 갈색",
+     "파랗게 대조염색된 기질은 음성"
+    ],
+    "label": "Cervix, MUC5B 면역조직화학 — 병리의사 주석(항체·조직 요약) Glandular cells: high; Squamous epithelial cells: not detected",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix"
    }
   ],
   "diagramTitle": "자궁경부 조직 — 상피를 읽고 변형대의 변화를 가른다",
@@ -29910,7 +30241,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "8929ef24b4c4aab5",
+  "hash": "aac0d8154f4e27c5",
   "summary": [
    "무월경은 먼저 임신을 배제하고 [[harrison-21: 393장 p.3034]], 그다음 「어느 층이 멈췄나(시상하부·뇌하수체·난소·자궁)」와 「에스트로겐이 있나」를 가린다.",
    "에스트로겐이 낮은데 FSH·LH 가 낮거나 정상이면 중추(시상하부·뇌하수체) 원인이다 — 저성선자극호르몬 저성선증 [[harrison-21: 393장 p.3035]]. 프롤락틴은 모두 잰다.",
@@ -30219,6 +30550,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "이차 무월경 — 어느 층, 에스트로겐은 있는가",
   "geo": {
    "title": "이차 무월경 — 어느 층, 에스트로겐은 있는가",
@@ -30927,7 +31259,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "406336c2a5823d51",
+  "hash": "f0800392c526f28f",
   "summary": [
    "진단은 24–28주 선별로 시작한다: 2단계(50 g 선별 1시간 ≥ 140 → 100 g 3시간 부하, Carpenter-Coustan 기준 2개 이상) 또는 1단계(75 g 2시간 부하, IADPSG 기준 1개 이상).",
    "1차 치료는 의학적 영양요법 + 운동 + 자가혈당(하루 4회: 공복 + 매 식후). 목표는 공복 ≤ 95 · 식후 1시간 ≤ 140 · 식후 2시간 ≤ 120 mg/dL.",
@@ -31320,6 +31652,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "임신당뇨병 — 영양·운동 요법 뒤 약물로 올리는 판단과 약 선택",
   "geo": {
    "title": "임신당뇨병 — 영양·운동 요법 뒤 약물로 올리는 판단과 약 선택",
@@ -31967,10 +32300,10 @@ window.MEDKOS_CONCEPTS = {
    "Oncology",
    "Endocrinology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "c5b8eaa590c6cb93",
+  "hash": "4e53a72b7dfb4411",
   "summary": [
    "포상기태는 수정 이상으로 영양막이 과증식하고 융모가 물주머니처럼 부푸는 임신이다. 완전기태는 태아 조직이 없고, 부분기태는 비정상 태아 조직이 함께 있다 [[?williams-26]].",
    "영양막이 과증식하니 β-hCG 가 주수에 비해 지나치게 높고, 그 결과 심한 입덧·조기 전자간증·갑상선기능항진·난포막황체낭이 따라온다. 부푼 융모가 자궁을 채워 자궁이 주수보다 크다 [[?williams-26]].",
@@ -32224,6 +32557,48 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0089",
     "changed": "나이(41세)·내원 경위(분만 경험 있는 여성의 응급실 방문)·제시 순서(검사 먼저)·수치 표기(β-hCG 280,000 mIU/mL)를 바꾸고 「주수보다 큰 자궁·태아 없는 자궁 안 다낭성 덩이·매우 높은 β-hCG·심한 입덧」은 그대로 → 답은 여전히 포상기태",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13401662_figure3.jpg",
+    "kind": "ultrasound",
+    "at": "기전에서 소견으로",
+    "shows": "완전포상기태 질식 초음파 — 자궁강을 채운 소포성 종괴",
+    "look": [
+     "화살표 사이 크기가 다른 작은 무에코 낭이 모인 벌집 모양",
+     "태아·태낭이 보이지 않는다"
+    ],
+    "label": "「Transvaginal ultrasoundTransvaginal ultrasound shows a vesicular mass in the cavum uteri, suggestive of a molar pregnancy, as shown between the arrows.」 — Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.111523",
+    "citedBy": null,
+    "credit": "Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13401662/"
+   },
+   {
+    "id": "f2",
+    "src": "assets/figures/pmc-pmc13090612_figure3.jpg",
+    "kind": "gross",
+    "at": "기전에서 소견으로",
+    "shows": "포상기태 흡인 표본 — 포도송이 같은 수포성 융모",
+    "look": [
+     "투명한 작은 수포가 다발로 모인 모양(수포성 변성 융모)",
+     "초음파의 무에코 낭이 이 수포에 해당한다"
+    ],
+    "label": "「Intra-operative specimen showing products of conception with prominent hydropic villi.The image shows a translucent, grape-like vesicular architecture and characteristic honeycomb appearance.」 — Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.105470",
+    "citedBy": null,
+    "credit": "Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/"
    }
   ],
   "diagramTitle": "임신 초기 질출혈 — 자궁 안에 무엇이 있나",
@@ -32813,7 +33188,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "7080e1e6901ba795",
+  "hash": "b00a685ef0d36b4d",
   "summary": [
    "결론: 범주 I 은 네 조건 모두, III 은 특정 조합, 나머지는 모두 II — 대응은 I 감시 · II 소생술 · III 분만 준비.",
    "시험 단서: 분만 중 전자태아감시(electronic fetal monitoring) 기록 + NICHD 범주·조치 — 기저선을 눈금에 먼저 댄다.",
@@ -33202,6 +33577,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "분만 중 태아심박동 기록 — 범주와 대응",
   "geo": {
    "title": "분만 중 태아심박동 기록 — 범주와 대응",
@@ -33786,7 +34162,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 3,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "722229d4eac214e7",
+  "hash": "1669afc09f58cddb",
   "summary": [
    "불임 평가는 부부 둘 다 끝내고 치료한다 — 배란(황체기 프로게스테론), 난관(자궁난관조영술), 정액검사(WHO 기준) 세 축이 정상인지가 치료 단계를 정한다.",
    "무배란의 다른 원인(갑상선기능저하·고프로락틴혈증)은 배란 유도제보다 먼저 고친다. 비만이면 체중 감량이 자발 배란과 약물 배란 모두를 높인다.",
@@ -34144,6 +34520,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "무배란 불임 — 어느 단계의 치료인가",
   "geo": {
    "title": "무배란 불임 — 어느 단계의 치료인가",
@@ -34682,7 +35059,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "3c66c7ee6648abf8",
+  "hash": "5f48c135378aff47",
   "summary": [
    "안구 화학화상은 시간이 손상을 정한다 — 화학물질이 결막낭에 남아 있는 동안 계속 침투한다.",
    "알칼리는 세포막 지질을 비누화해 액화괴사를 만들고 깊이(각막 기질·전방)까지 파고든다. 산은 단백을 응고시켜 스스로 장벽을 만들어 대개 얕다.",
@@ -34876,6 +35253,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -34898,7 +35276,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "d2e16a47f8018f0c",
+  "hash": "3575615ba208cd1f",
   "summary": [
    "망막중심동맥폐쇄 = 갑작스러운 무통 단안 시력소실 + 상대구심동공결손 + 창백한(우윳빛) 망막과 붉은 중심오목. 이미 막힌 눈의 회복은 드물다.",
    "원인은 둘로 가른다 — 색전(경동맥·대동맥 죽상판, 심장)이 가장 흔하고, 거대세포동맥염에 의한 동맥염성 폐쇄는 드물지만 며칠 안에 반대쪽 눈까지 잃게 한다.",
@@ -35199,6 +35577,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "갑작스러운 무통 단안 시력소실 — 반대쪽 눈을 지키는 첫 검사",
   "geo": {
    "title": "갑작스러운 무통 단안 시력소실 — 반대쪽 눈을 지키는 첫 검사",
@@ -35852,10 +36231,10 @@ window.MEDKOS_CONCEPTS = {
    "Cardiology",
    "Internal Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "60270135bd58579c",
+  "hash": "4f20ab3cbb530db7",
   "summary": [
    "중심망막정맥폐쇄(CRVO)는 사상판 부근에서 중심망막정맥이 혈전으로 막혀 네 사분면 전체에 화염모양 출혈·면화반·정맥 확장·유두부종이 생기는 병이다. 고혈압·고령·녹내장이 위험인자다.",
    "허혈형과 비허혈형으로 나눈다. 시력이 매우 나쁘고(흔히 0.1 이하), 상대구심동공운동장애(RAPD)가 뚜렷하고, 출혈·면화반이 광범위하면 허혈형을 시사한다 [[?aao-rvo-ppp-2019]].",
@@ -36076,6 +36455,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0574",
     "changed": "나이·성별(74세 여자)·위험인자(개방각녹내장·고혈압)·내원 경위(발병 1주 뒤)·제시 순서를 바꾸고 네 사분면 출혈·면화반·정맥 확장·유두부종·RAPD 양성은 그대로 → 답은 여전히 신생혈관녹내장",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13268218_figure1-0-0-372-280.jpg",
+    "kind": "fundus",
+    "at": "기전에서 소견으로",
+    "shows": "중심망막정맥폐쇄 안저 — 네 사분면의 망막 내 출혈과 시신경유두 부종",
+    "look": [
+     "네 사분면 모두에 퍼진 불꽃·점 모양 출혈",
+     "구불구불하게 늘어난 망막 정맥과 부은 시신경유두"
+    ],
+    "label": "「Multimodal imaging of central retinal vein occlusion in a young healthy adult following strenuous exercise. (a) Baseline color fundus image of the right eye showing optic disc edema, dilated and tortuous retinal veins, and widespread intraretinal hemorrhages. (b) Follow-up fundus image demonstrating a significant resolution of retinal hemorrhages and reduction in venous congestion following intravitreal anti-VEGF therapy. (c) Baseline optical coherence tomography (OCT) macula showing marked cystoid macular edema with multiple intraretinal cystic spaces and increased central macular thickness of 823 µm. (d) Follow-up OCT macula demonstrating significant reduction in intraretinal fluid with restoration of foveal contour and improved retinal architecture after treatment.VEGF: vascular endothelial growth factor」 — Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.108935",
+    "citedBy": null,
+    "credit": "Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response. Cureus. 2026 May 15;18(5):e108935. doi: 10.7759/cureus.108935 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13268218/"
    }
   ],
   "diagramTitle": "CRVO 진단 뒤 — 허혈 여부와 추적",
@@ -36635,10 +37036,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Infectious Disease"
   ],
-  "version": 2,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "425f9d164600657a",
+  "hash": "0c93220c2db634d9",
   "summary": [
    "안내염은 눈 속 구조의 세균·바이러스·진균·기생충 감염이다. 내인성(혈행성)은 만성질환·당뇨·면역억제·정맥 카테터·균혈증에서, 외인성은 안구 수술·관통 외상 뒤에 온다.",
    "백내장 수술 뒤 3–7일의 통증·급격한 시력저하·앞방 고름층·유리체 혼탁 = 급성 수술 후 세균 안내염. 수술 직후 24시간 안의 무통 염증(독성 전방 분절 증후군)과 다르다.",
@@ -36970,6 +37371,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-1096",
     "changed": "70세 남자·왼쪽·사흘째·안전수동 50 cm → 63세 여자·오른쪽·닷새째·안전수지 30 cm, 소견 제시 순서 바꿈(빛 감지보다 좋은 시력·급성 수술 후 세균 안내염은 그대로) ⇒ 답은 그대로 유리체천자 + 유리체내 항생제",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13338094_figure1.jpg",
+    "kind": "photo",
+    "at": "기전에서 소견으로",
+    "shows": "백내장 수술 뒤 안내염 — 전방축농(hypopyon)",
+    "look": [
+     "A·B·D: 전방 아래쪽에 고인 노랗거나 흰 층(전방축농)",
+     "각막 위쪽 상처 주위의 침윤과 부종(A)"
+    ],
+    "label": "「Sequential anterior segment photographs demonstrating disease progression and treatment response. (A) Initial presentation showing superior corneal wound infiltrate with surrounding stromal edema and anterior chamber hypopyon. (B) Three days following the first anterior chamber washout with intracameral antibiotics, showing partial improvement. (C) End of second anterior chamber washout demonstrating persistent corneal infiltration. (D) Three days postsecond anterior chamber washout with recurrent hypopyon. (E) Postcorneal biopsy showing a full‐thickness defect at the biopsy site. (F) Posttectonic corneal graft showing a clear graft with well‐opposed wound edges and resolved inflammation.」 — Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report. Case Reports in Ophthalmological Medicine",
+    "doiUrl": "https://doi.org/10.1155/crop/7782331",
+    "citedBy": null,
+    "credit": "Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report. Case Rep Ophthalmol Med. 2026 Jul 6;2026:7782331. doi: 10.1155/crop/7782331 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13338094/"
    }
   ],
   "diagramTitle": "백내장 수술 뒤 통증·시력저하 — 안내염의 치료 선택",
@@ -37520,7 +37943,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "781e23d56f8901e7",
+  "hash": "70288350dedfdcf5",
   "summary": [
    "종아리 세갈래근(비복근·가자미근)은 아킬레스건 하나로 발꿈치뼈에 붙어 발바닥굽힘을 만든다 — 힘줄이 끊기면 근육이 수축해도 발이 움직이지 않는다.",
    "전형: 30~50대, 가끔 운동하는 사람이 점프·출발 때 발을 밀어내다 「누가 뒤에서 찼다」는 느낌. 이후 발끝서기·힘껏 밀기가 안 된다.",
@@ -37705,6 +38128,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -37723,10 +38147,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Geriatrics"
   ],
-  "version": 2,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "393679b821e878e0",
+  "hash": "7b0c9f92379cda54",
   "summary": [
    "엉덩관절 골절은 골절선이 관절낭 안(넙다리뼈목)인지 밖(돌기 사이·돌기 아래)인지로 먼저 가른다. 이 구분이 골두 혈류가 다치는지를 정한다.",
    "골두 혈류의 대부분은 안쪽넙다리휘돌이동맥의 지지대(retinacular) 분지가 관절낭 안 목을 따라 올라가 공급한다. 전위된 목 골절은 이 길을 끊는다.",
@@ -38091,6 +38515,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-1094",
     "changed": "80세 여자·오른쪽·가든 4형·집 안 낙상 → 77세 남자·왼쪽·골두 바로 아래 가든 3형·화장실 낙상, 검사 제시 순서 바꿈(관절낭 안 전위 골절은 그대로) ⇒ 답은 그대로 골두 혈류 차단",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13480871_figure2-0-0-372-330.jpg",
+    "kind": "radiograph",
+    "at": "기전에서 소견으로",
+    "shows": "전위된 대퇴경부(골두하) 골절 — 수술 전 골반 전후면",
+    "look": [
+     "골두 바로 아래에서 경부가 끊기고 원위 골편이 위로 올라감(관절낭 안)",
+     "반대쪽 엉덩관절의 경부 모양과 견준다"
+    ],
+    "label": "「Preoperative (A) and postoperative (B) radiographs of the hip. The preoperative pelvic radiograph shows a displaced subcapital femoral neck fracture, and the postoperative image demonstrates a hemiarthroplasty.」 — The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report. Medicine",
+    "doiUrl": "https://doi.org/10.1097/MD.0000000000050191",
+    "citedBy": null,
+    "credit": "The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report. Medicine (Baltimore). 2026 Aug 14;105(33):e50191. doi: 10.1097/MD.0000000000050191 (CC BY) — Figure 2.",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13480871/"
    }
   ],
   "diagramTitle": "엉덩관절 골절 — 무엇이 수술 방법을 정하나",
@@ -38714,7 +39160,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "32e9bf78d10bd57d",
+  "hash": "7d9a500b2ea00187",
   "summary": [
    "대퇴골두골단분리증(SCFE)은 급성장기(대개 10–16세) 아이에서 약해진 근위 대퇴 성장판(비대층)을 따라 대퇴 목이 앞위로 밀려 올라가고, 골두(골단)는 비구 안에 남아 상대적으로 뒤·아래로 미끄러진 상태다. 비만·남아·내분비 이상(갑상선저하·성장호르몬 치료)이 위험인자다.",
    "통증은 엉덩관절보다 무릎·허벅지로 나타나는 경우가 많다(폐쇄신경 연관통) — 무릎 진찰·X선이 정상이면 엉덩관절을 찍는다. 굽히면 다리가 저절로 바깥으로 돌아가고 안쪽 돌림이 제한된다.",
@@ -38948,6 +39394,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "사춘기 아이의 절뚝임·무릎/엉덩 통증 — SCFE 확인에서 치료까지",
   "geo": {
    "title": "사춘기 아이의 절뚝임·무릎/엉덩 통증 — SCFE 확인에서 치료까지",
@@ -39430,10 +39877,10 @@ window.MEDKOS_CONCEPTS = {
    "Pediatrics",
    "Emergency Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "2c390f02221dfcda",
+  "hash": "4882430c8d00869d",
   "summary": [
    "소아 뼈는 탄성이 크고 골막이 두꺼워, 손을 짚고 넘어질 때(FOOSH) 축 방향 압박이 걸리면 부러져 갈라지기보다 골간단의 얇은 피질이 국소적으로 좌굴한다 — 이것이 융기(torus, buckle) 골절이다.",
    "X선: 한쪽 피질의 매끈한 융기 또는 각진 꺾임 + 골간단을 가로지르는 희미한 경화선, 반대쪽 피질은 이어져 있고 전위·각형성이 없으며 성장판·골단은 정상.",
@@ -39728,6 +40175,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0056",
     "changed": "나이·성별(10세 남아)·기전(자전거에서 넘어짐)·손(오른쪽)·사진 방향(측면에서 배측 피질 융기)과 제시 순서를 바꾸고 「한쪽 피질 융기·반대쪽 피질 연속·전위·각형성·성장판 침범 없음·신경혈관 정상」은 그대로 → 답은 여전히 제거 가능 부목 약 3주",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/graz-1469_0597634364_01_wri-l1_m006.jpg",
+    "kind": "radiograph",
+    "at": "기전에서 소견으로",
+    "shows": "소아 원위 요골 골간단 융기 골절(AO 소아 23-M/2.1), 손목 전후면",
+    "look": [
+     "성장판 바로 위 요골 골간단의 가로 경화선과 피질의 작은 굴곡",
+     "골절선이 반대쪽 피질까지 이어지지 않고 전위가 없다"
+    ],
+    "label": "pediatric wrist fracture (initial exam) · AO/OTA 소아 분류 23-M/2.1 — 골절 주석 상자 1개",
+    "basis": "dataset_expert",
+    "reference": "소아 손목 X선의 골절·골막반응 등을 전문가가 상자로 주석",
+    "paper": "Nagy E 외. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222",
+    "doiUrl": "https://doi.org/10.1038/s41597-022-01328-z",
+    "citedBy": 101,
+    "credit": "GRAZPEDWRI-DX (figshare, CC BY 4.0)",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193"
    }
   ],
   "diagramTitle": "소아 손목 외상 — X선 소견에서 치료로",
@@ -40441,7 +40910,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "244285a159ec50ee",
+  "hash": "58701f202925087e",
   "summary": [
    "간소엽의 혈액은 문맥삼합(간동맥 + 문맥)에서 들어와 굴모세혈관을 지나 중심정맥으로 나간다. 그래서 문맥역 쪽(zone 1)이 산소를 먼저, 중심정맥 쪽(zone 3)이 가장 늦게 받는다 [[?robbins-basic-10]].",
    "우심부전으로 오른 정맥압은 하대정맥 → 간정맥 → 굴모세혈관으로 거꾸로 전달되어 굴모세혈관이 늘어나고 피가 고인다. 중심정맥에 가장 가까운 zone 3 가 이 압력을 먼저 받는다 [[harrison-21: 344장 p.2628]].",
@@ -40680,6 +41149,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "간 손상의 분포로 기전을 읽는다 — 중심정맥 주위면 순환(울혈·허혈)부터",
   "geo": {
    "title": "간 손상의 분포로 기전을 읽는다 — 중심정맥 주위면 순환(울혈·허혈)부터",
@@ -41105,10 +41575,10 @@ window.MEDKOS_CONCEPTS = {
    "Pathology",
    "Urology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "d40b6ae86d8d3c12",
+  "hash": "f32980f315e6ef08",
   "summary": [
    "면역조직화학 표지는 묻는 질문이 다르다: 계통(이 암은 어디서 왔나) · 예측(어떤 치료가 듣나) · 증식(얼마나 빨리 자라나) · 구조(기저막 안에 있나, 넘었나).",
    "GATA3 는 유방 관강 세포 계통을 정하고 유지하는 아연손가락 전사인자라 정상 유방에서 관강 상피 핵만 물들고 근상피·기질은 음성이다 [[?kouros-mehr-2006]]. 요로상피·T 림프구에도 발현된다 [[?miettinen-2014]].",
@@ -41430,6 +41900,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0102",
     "changed": "환자(61세 여성, 겨드랑이 림프절 전이암·유방촬영 음성·ER/HER2 음성)·조직(전이 림프절)·발문 방식(용도 대신 가장 도움이 될 판단)을 바꾸고 「관강형 핵 염색 + 요로상피·T 세포에 발현되는 아연손가락 전사인자」는 그대로 → 답은 여전히 기원(계통) 확인",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-gata3_140542_b_2_4.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "유방 GATA3 면역염색 — 관 상피세포의 핵이 갈색",
+    "look": [
+     "갈색은 세포질이 아니라 핵에만 — 전사인자",
+     "관강 쪽 상피는 양성, 지방·근상피는 음성(병리 주석)"
+    ],
+    "label": "Breast, GATA3 면역조직화학 — 병리의사 주석(항체·조직 요약) Adipocytes: not detected; Glandular cells: high; Myoepithelial cells: not detected",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast"
    }
   ],
   "diagramTitle": "유방 조직 IHC — 이 표지의 용도는?",
@@ -42077,10 +42569,10 @@ window.MEDKOS_CONCEPTS = {
    "Pathology",
    "Nephrology"
   ],
-  "version": 1,
-  "updated": "2026-09-25",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "33d260aafcb19b4f",
+  "hash": "48644d135721933e",
   "summary": [
    "결론: 경피증 신장 위기의 신장 병변은 엽간·궁상 동맥의 동심성 내막 증식(양파 껍질)과 수입 세동맥 섬유소양 괴사다.",
    "시험 단서: 미만성 전신경화증 초기 + 스테로이드 뒤 급성 고혈압·AKI + 분열적혈구(schistocytes), 요침사는 조용하다.",
@@ -42272,6 +42764,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "usmle-2026-0170",
     "changed": "age/sex (38-year-old man), trigger (no steroid; anti-RNA polymerase III positive, early diffuse disease), presentation (seizure, dyspnea) changed; abrupt malignant-range BP + schistocytes + bland sediment kept → answer still concentric intimal thickening",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12127705_figure5.jpg",
+    "kind": "histology",
+    "at": "가르는 소견 — 혈관 병인가 사구체 병인가",
+    "shows": "경피증 신위기 신생검 — 소동맥의 양파 껍질 모양 내막 증식과 막힌 내강",
+    "look": [
+     "오른쪽 위 소동맥: 겹겹이 두꺼워진 내막, 막힌 내강",
+     "왼쪽 위 사구체: 피가 빠진 허혈성 모습"
+    ],
+    "label": "「Hematoxylin and eosin-stained section of the renal biopsyThe glomerulus (top left) shows a bloodless appearance with predominantly closed capillary loops. An artery (top right) exhibits acute injury with onion skinning and a completely occluded lumen. Some glomeruli (mid-right) show thickened capillary loops with punched-out lumina. The interstitium (left center) demonstrates interstitial fibrosis and tubular atrophy. The tubules (bottom right) display acute tubular injury with dilatation and simplified epithelium.」 — Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.83327",
+    "citedBy": null,
+    "credit": "Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy. Cureus. 2025 May 1;17(5):e83327. doi: 10.7759/cureus.83327 (CC BY) — Figure 5",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12127705/"
    }
   ],
   "diagramTitle": "신장 병변 읽기 — 혈관 병인가 사구체 병인가",
@@ -42758,10 +43272,10 @@ window.MEDKOS_CONCEPTS = {
    "Pathology",
    "Urology"
   ],
-  "version": 1,
-  "updated": "2026-09-25",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "edb39dd1aa2fd94c",
+  "hash": "9bb947ab8aa41769",
   "summary": [
    "고환 종양의 95 % 는 생식세포종양(GCT)이고, 기원 세포는 원시 생식세포다. GCT 는 정상피종과 비정상피종(NSGCT)으로 나뉘며 정상피종은 약 50 %, 30대에 흔하다 [[harrison-21: 88장 p.689–690]].",
    "정상피종은 분화하지 않은 원시 생식세포를 닮아 맑은 세포질의 균일한 세포가 섬유 격막으로 나뉜 판을 이루고, 그 격막에 숙주 반응인 T 림프구가 늘 끼어 있다 [[?robbins-10]]. CD3 염색은 이 반응성 림프구만 물들이고 종양세포는 비워 둔다.",
@@ -43065,6 +43579,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0112",
     "changed": "나이 39 → 33세, 증상 경위(외상 후 우연히 발견), 종괴 쪽(왼쪽), 발문 순서(병리 먼저, 표지자 뒤), hCG 값만 바꾸고 「음성인 균일한 맑은 세포 판 + 격막의 CD3 양성 작은 림프구 + AFP 정상」은 그대로 → 답은 여전히 정상피종",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-cd3e_1299_a_1_5.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "정상피종 CD3 면역염색 — 종양 사이 T 림프구만 갈색",
+    "look": [
+     "크고 둥근 종양세포는 음성(파란 핵)",
+     "가는 격막을 따라 모인 작은 갈색 세포 = T 림프구"
+    ],
+    "label": "Testis cancer(표본 진단 Seminoma, NOS), CD3E 면역조직화학",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer"
    }
   ],
   "diagramTitle": "고환 종괴의 면역염색 사진 — 누가 종양인가",
@@ -43563,7 +44099,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "239dd259f6a3c4b6",
+  "hash": "7543a352e2e56e3f",
   "summary": [
    "신생아 황달의 첫 갈림길은 「결합이냐 비결합이냐」다. 생리적·모유 황달·용혈은 비결합형이고, 결합빌리루빈 상승은 어떤 경우에도 생리적이지 않다 — 담즙정체다 [[?naspghan-2017]].",
    "생후 2주(만삭아)가 넘도록 황달이 남으면 분획 빌리루빈을 잰다. 결합빌리루빈 > 1.0 mg/dL 이면 비정상으로 보고 평가한다 [[?naspghan-2017]].",
@@ -43772,6 +44308,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "생후 2주 넘은 황달 — 분획 빌리루빈부터",
   "geo": {
    "title": "생후 2주 넘은 황달 — 분획 빌리루빈부터",
@@ -44286,7 +44823,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-18",
   "reviewStatus": "unreviewed",
-  "hash": "3ae22017a7d1b1c0",
+  "hash": "9c95a903eea48716",
   "summary": [
    "먼저 안정화와 발작 종료를 확인한다. 5분 넘게 이어지면 이 도식이 아니라 경련 지속 처치다.",
    "단순형 = 6~60개월, 15분 미만의 전신발작, 24시간 내 1회, 두개내 감염·대사 이상·무열성 경련 병력 없음.",
@@ -44460,6 +44997,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "열과 함께 발작한 6~60개월 소아 — 추가 검사가 필요한가",
   "geo": {
    "title": "열과 함께 발작한 6~60개월 소아 — 추가 검사가 필요한가",
@@ -45174,7 +45712,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "290355f3ff25744c",
+  "hash": "b7ab61172d5f4fb7",
   "summary": [
    "열성 요로감염은 대개 상부(신우신염)이고, 영아는 요로 구조 이상(수신증·요관 확장·방광요관역류·폐쇄)이 배경에 있을 수 있어 첫 감염 뒤 영상 평가를 한다.",
    "2–24개월의 첫 열성 요로감염은 모두 신장·방광 초음파를 한다 — 비침습·무방사선이며 구조 이상(수신증·요관 확장·이중 집합계·방광 이상)을 찾는다. 시기는 치료 반응이 전형적이면 급성기 뒤 편한 때, 비전형 경과면 급성기에.",
@@ -45510,6 +46048,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "2–24개월 첫 열성 요로감염 — 다음 영상은?",
   "geo": {
    "title": "2–24개월 첫 열성 요로감염 — 다음 영상은?",
@@ -46080,10 +46619,10 @@ window.MEDKOS_CONCEPTS = {
    "Cardiology",
    "Rheumatology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "132bf8fdeb570684",
+  "hash": "ee92ecbb8003c494",
   "summary": [
    "가와사키병은 주로 5세 미만에서 오는 원인 미상의 급성 전신 혈관염이다. 치료하지 않으면 약 25 %에서 관상동맥류가 생기고, 이것이 소아 후천성 심질환의 주된 원인이 된다 [[?aha-kawasaki-2017]].",
    "진단은 5일 이상의 발열 + 주요 소견 5개(양측 비화농성 결막충혈, 입술·구강 변화, 손발 홍반·부종, 다형 발진, 편측 경부 림프절 ≥ 1.5 cm) 중 4개 이상이다. 부족하면 염증 지표·보조 검사·심초음파로 불완전형을 판단한다 [[?aha-kawasaki-2017]].",
@@ -46368,6 +46907,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0962",
     "changed": "나이·성별(20개월 여아), 내원 경위(소아과 의원 의뢰), 소견 제시 순서와 검사 이름을 바꾸고 「5일 이상 발열·주요 소견 5개·발열 10일 이내·치료 전」은 그대로 → 답은 여전히 면역글로불린 정주",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13243305_figure1.jpg",
+    "kind": "ultrasound",
+    "at": "기전에서 소견으로",
+    "shows": "가와사키병 — 좌전하행지의 거대 관상동맥류(심초음파)",
+    "look": [
+     "관상동맥이 풍선처럼 늘어난 거대 동맥류",
+     "동맥류 안의 에코(혈전 — 저자 설명)"
+    ],
+    "label": "「Giant left anterior descending coronary artery aneurysm with intraluminal thrombus.」 — Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms. Oxford Medical Case Reports",
+    "doiUrl": "https://doi.org/10.1093/omcr/omag086",
+    "citedBy": null,
+    "credit": "Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms. Oxf Med Case Reports. 2026 Jun 8;2026(6):omag086. doi: 10.1093/omcr/omag086 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13243305/"
    }
   ],
   "diagramTitle": "가와사키병 급성기 — 무엇을, 언제",
@@ -46914,7 +47475,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "8f3966e1e4dac11d",
+  "hash": "2849cc6d90ae494d",
   "summary": [
    "비대유문협착증은 생후 약 3–6주 영아에서 유문 괄약근이 두꺼워져 위 출구가 막히는 병이다. 담즙이 섞이지 않은 분수 구토와 토한 뒤의 배고픔이 특징이다 [[?nelson-22]].",
    "위산(HCl)만 반복해서 잃으므로 저염소 대사알칼리증이 생기고, 탈수로 알도스테론이 올라 신장이 나트륨을 붙잡는 대가로 칼륨·수소 이온을 내보내 저칼륨과 알칼리증이 더 깊어진다 [[?nelson-22]].",
@@ -47173,6 +47734,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "분수 구토 영아 — 무엇부터",
   "geo": {
    "title": "분수 구토 영아 — 무엇부터",
@@ -47712,7 +48274,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "b070a2142e062df0",
+  "hash": "dd43d74c94e8c08c",
   "summary": [
    "급성 류마티스열은 A군 사슬알균 인두(또는 피부) 감염 뒤 약 3주(1–5주)에 오는 자가면역 반응이다. 균이 아니라 균에 대한 교차 면역이 판막·관절을 친다 [[harrison-21: 359장 p.2767]].",
    "그래도 확진된 모든 환자는 선행 감염을 치료할 만큼의 항생제를 받는다 — 페니실린 V(또는 아목시실린) 10일 경구, 또는 벤자틴 페니실린 G 1회 근육(≤27 kg 60만, 그 외 120만 단위) [[harrison-21: 359장 p.2768]].",
@@ -47990,6 +48552,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "급성 류마티스열 확진 뒤 — 무엇부터, 무엇을 더하나",
   "geo": {
    "title": "급성 류마티스열 확진 뒤 — 무엇부터, 무엇을 더하나",
@@ -48622,7 +49185,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "a37e85fc1c6f6e24",
+  "hash": "24d24f9714103e08",
   "summary": [
    "류마티스열은 A군 사슬알균 인두염 뒤 2–4주에 오는 면역 매개 질환이다. 재발은 새로운 사슬알균 인두 감염 때마다 일어나고, 재발할수록 판막 손상이 누적된다.",
    "1차 예방 = 인두염을 10일 페니실린으로 치료해 첫 발병을 막는 것. 급성기 치료에도 같은 제균 요법이 들어가지만, 그것만으로는 이후 재감염을 막지 못한다.",
@@ -48949,6 +49512,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "급성 류마티스열 — 급성기 뒤 무엇을 얼마나 오래",
   "geo": {
    "title": "급성 류마티스열 — 급성기 뒤 무엇을 얼마나 오래",
@@ -49475,10 +50039,10 @@ window.MEDKOS_CONCEPTS = {
    "Nephrology",
    "Infectious Disease"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "03a47c3ed75ee81f",
+  "hash": "7b68c31a6b78bef1",
   "summary": [
    "시가독소 생성 대장균(O157:H7 등)은 덜 익힌 간 쇠고기·생채소로 들어와 3–4일 잠복 뒤 대장에 붙어 복통과 설사를 일으키고, 설사는 흔히 육안적 혈변으로 바뀐다. 열은 대개 없다 [[harrison-21: 161장 p.1268]].",
    "대장에서 흡수된 시가독소가 혈류를 타고(적혈구가 운반) 신장·뇌의 작은 혈관 내피에 붙는다. 독소 A 소단위가 리보솜을 멈춰 내피가 손상되고 혈전성 미세혈관병증이 생긴다 [[harrison-21: 161장 p.1268]].",
@@ -49723,6 +50287,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "usmle-2026-0030",
     "changed": "나이·성별(7세 남아)·노출원(체험 농장 방문)·제시 순서(핍뇨 먼저 알아챔)를 바꾸고, 혈성 설사 선행·분열적혈구·혈소판감소·급성 신손상·시가독소 확인은 유지 ⇒ 답은 그대로 지지치료",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13416571_figure1.jpg",
+    "kind": "smear",
+    "at": "기전에서 소견으로",
+    "shows": "미세혈관병성 용혈의 말초혈액 — 분열적혈구(schistocyte)",
+    "look": [
+     "화살표: 조각나고 각진 적혈구",
+     "주변의 정상 원판 모양 적혈구와 견준다"
+    ],
+    "label": "「Peripheral blood film showing numerous schistocytes (blue arrows), suggestive of microangiopathic hemolysis (Giemsa stain, ×400)」 — Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.111698",
+    "citedBy": null,
+    "credit": "Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case. Cureus. 2026 Jun 29;18(6):e111698. doi: 10.7759/cureus.111698 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13416571/"
    }
   ],
   "diagramTitle": "혈성 설사 뒤 창백·핍뇨 — 전형적 STEC-HUS 인가, 치료는 무엇인가",
@@ -50260,7 +50846,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-25",
   "reviewStatus": "unreviewed",
-  "hash": "74b23c533596fc7f",
+  "hash": "4bc59158e2b1f0ae",
   "summary": [
    "결론: 티오퓨린을 오래 안정적으로 쓰던 사람이 요산 강하제 추가 뒤 범혈구감소면 알로푸리놀의 크산틴 산화효소 억제다.",
    "시험 단서: 아자티오프린(azathioprine)·6-MP 수년 안정 + 통풍약 추가 수주 뒤 발열·호중구감소 + 요산 저하.",
@@ -50519,6 +51105,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "티오퓨린 복용자의 새 골수 억제 — 원인 약 찾기",
   "geo": {
    "title": "티오퓨린 복용자의 새 골수 억제 — 원인 약 찾기",
@@ -51103,7 +51690,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "f51f3060095ca9a8",
+  "hash": "5096350b55029f17",
   "summary": [
    "GFR 은 사구체 모세혈관압에 달려 있고, 이 압력은 앞문(수입세동맥)과 뒷문(수출세동맥)의 저항이 정한다. 수입세동맥이 넓어지거나 수출세동맥이 좁아지면 모세혈관압이 올라 GFR 이 늘고, 반대면 준다.",
    "신동맥이 좁아져 관류압이 떨어지면 레닌-안지오텐신계가 켜진다 [[harrison-21: 278장 p.2088]]. 안지오텐신II 는 수출세동맥을 상대적으로 더 수축시켜, 들어오는 압력이 낮아도 사구체 모세혈관압과 GFR 을 붙잡아 둔다 — 이때 GFR 은 안지오텐신II 에 「의존」한다.",
@@ -51275,6 +51862,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -51296,7 +51884,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "de8c05f6c280fa6b",
+  "hash": "33a49b83b94cce5d",
   "summary": [
    "강박장애 = 강박 사고(오염·화재 등)와 그 불안을 풀려는 강박 행동(씻기·확인)이 하루 1시간 넘게 기능을 해친다. 병식이 좋은 환자가 많고, 숨기므로 손등 갈라짐 같은 단서로 직접 묻는다.",
    "약물 1차는 SSRI(클로미프라민과 효과가 같고 부작용이 적다). 강박장애는 우울증보다 높은 용량·긴 시간이 필요하다 — 충분 시도 = 최대 내약 용량에서 최소 4–6주를 포함한 8–12주.",
@@ -51648,6 +52236,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "강박장애 — SSRI 를 시작한 뒤 다음 처치",
   "geo": {
    "title": "강박장애 — SSRI 를 시작한 뒤 다음 처치",
@@ -52293,7 +52882,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "b187700e1a6b6c8a",
+  "hash": "7c18de5eda17913b",
   "summary": [
    "외상후스트레스장애 = 실제 또는 위협된 죽음·심한 부상·성폭력에 노출된 뒤 네 증상군(침투·회피·인지·기분의 부정적 변화·각성 변화)이 1개월을 넘게 지속되고 기능을 해친다.",
    "급성스트레스장애는 같은 종류의 반응이 외상 직후에 나타나 한 달 안에 머무는 것이다. 증상이 아니라 시계가 둘을 가른다.",
@@ -52563,6 +53152,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "외상 뒤 불안 — 진단을 가르는 순서",
   "geo": {
    "title": "외상 뒤 불안 — 진단을 가르는 순서",
@@ -53062,7 +53652,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "6ce499f2d471b32a",
+  "hash": "dd9acf2a7e89f882",
   "summary": [
    "세로토닌증후군 = 세로토닌 수용체(주로 5-HT1A·5-HT2)의 과자극. 세 축: 정신 변화(초조·혼동) + 자율신경 항진(고열·빈맥·고혈압·발한·설사·산동) + 신경근 과활성(떨림·클로누스·반사 항진·강직).",
    "원인은 세로토닌 약의 겹침 — SSRI·MAO 억제제·삼환계 + 트라마돌·메페리딘·덱스트로메토르판·트립탄·암페타민 등. 대개 새 약을 더하거나 올린 뒤 하루 안에 온다.",
@@ -53327,6 +53917,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "세로토닌 약 복용 중 고열·초조 — 알아보고 처치하는 순서",
   "geo": {
    "title": "세로토닌 약 복용 중 고열·초조 — 알아보고 처치하는 순서",
@@ -53886,7 +54477,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "fe4724ef6cc5a5c1",
+  "hash": "fec6aab5cea58b2e",
   "summary": [
    "니코틴은 담배 중독의 주성분이다. 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 피우는 횟수·깊이로 니코틴 섭취를 스스로 조절한다 — 그래서 약물은 「금단·갈망을 대신 채우거나 막는」 방식으로 듣는다.",
    "의존 강도는 하루 개비 수와 「기상 30분 안의 첫 담배」로 잰다. 강한 의존일수록 니코틴 대체요법 고용량·병합 또는 효과가 큰 약이 필요하다.",
@@ -54177,6 +54768,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "금연 약물 선택 — 니코틴 대체요법 실패 뒤",
   "geo": {
    "title": "금연 약물 선택 — 니코틴 대체요법 실패 뒤",
@@ -54567,7 +55159,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-26",
   "reviewStatus": "unreviewed",
-  "hash": "23362f9c1f8731fb",
+  "hash": "913a50eb90f1d3c6",
   "summary": [
    "결론: 척추체 왼쪽 앞의 크고 둥근 단면은 하행대동맥(T12), 폐 바닥 앞쪽의 균질한 둥근 음영은 가로막돔과 간이다.",
    "시험 단서: 심실 높이·폐 바닥 축상 CT(폐창), 증상 없는 검진 — 대동맥구멍(aortic hiatus)·가로막돔(hemidiaphragm dome).",
@@ -54886,6 +55478,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "폐 바닥·심실 높이 축상 CT — 이 둥근 음영은 무엇인가?",
   "geo": {
    "title": "폐 바닥·심실 높이 축상 CT — 이 둥근 음영은 무엇인가?",
@@ -55470,7 +56063,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "c70c421a62ed4258",
+  "hash": "265b2310d4446d34",
   "summary": [
    "폐렴의 사망 위험은 감염이 얼마나 전신으로 번져 장기 관류·기능을 흔드는지로 정해진다. CURB-65 는 그 흔들림을 의식(C)·요소(U)·호흡수(R)·혈압(B)·나이(65)의 다섯 가지로 센다 [[harrison-21: 126장 p.1012]].",
    "항목: 혼돈, 요소 > 7 mmol/L(BUN 약 > 19–20 mg/dL), 호흡수 ≥ 30회/분, 수축기 ≤ 90 또는 이완기 ≤ 60 mmHg, 나이 ≥ 65세 — 각 1점 [[harrison-21: 126장 p.1012]].",
@@ -55743,6 +56336,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "지역사회획득폐렴 — 중환자실 기준부터, 그다음 점수와 입원 조건",
   "geo": {
    "title": "지역사회획득폐렴 — 중환자실 기준부터, 그다음 점수와 입원 조건",
@@ -56121,7 +56715,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "ba102a027588b8e6",
+  "hash": "c7ff1c4d6eec9885",
   "summary": [
    "COPD 악화에서는 기도 저항과 동적 과팽창이 늘어 호흡근이 해야 할 일이 커지고, 호흡근이 지치면 폐포 환기가 줄어 PaCO₂ 가 오른다. 문제는 산소화보다 **환기**다.",
    "PaCO₂ 가 10 mmHg 오를 때 pH 는 급성이면 약 0.08, 만성이면 약 0.03 떨어진다. PaCO₂ > 45 mmHg 의 환기부전에 산혈증이 동반되면 급성(만성 위의 급성) 호흡부전이다 [[harrison-21: 292장 p.2186]].",
@@ -56376,6 +56970,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "COPD 악화 — 동맥혈 가스로 환기부전을 가르고, 금기로 NIPPV 와 삽관을 가른다",
   "geo": {
    "title": "COPD 악화 — 동맥혈 가스로 환기부전을 가르고, 금기로 NIPPV 와 삽관을 가른다",
@@ -56913,7 +57508,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "5b3295356748193e",
+  "hash": "53ac21aab5a81883",
   "summary": [
    "폐고혈압은 폐혈관이 개형되어 폐동맥압과 폐혈관저항이 오르는 병이다. 흔한 원인은 좌심질환·폐질환이고, 폐동맥고혈압(PAH)은 폐세동맥 자체의 폐쇄성 동맥병증인 드문 아형이다. 치료하지 않으면 우심부전으로 사망률이 높다 [[harrison-21: 283장 p.2121]].",
    "진찰: 진행하면 목정맥압 상승·다리 부종·복수 같은 우심부전 징후, 두 번째 심음의 폐동맥 성분(P2) 항진, 우측 S3·S4, 삼첨판 역류 잡음 [[harrison-21: 283장 p.2122]].",
@@ -57153,6 +57748,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "폐고혈압 의심 — 심초음파로 선별, 흔한 원인과 CTEPH 를 거른 뒤 우심도자술로 확진·분류",
   "geo": {
    "title": "폐고혈압 의심 — 심초음파로 선별, 흔한 원인과 CTEPH 를 거른 뒤 우심도자술로 확진·분류",
@@ -57536,10 +58132,10 @@ window.MEDKOS_CONCEPTS = {
    "Pulmonology",
    "Emergency Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "67f119b17cad0b6c",
+  "hash": "b2a0e6947e1d0916",
   "summary": [
    "폐동맥이 크게 막히면 우심실 후부하가 갑자기 올라 우심실이 늘어나고, 중격이 좌심실 쪽으로 밀려 좌심실 충만이 줄어 심박출·혈압이 떨어진다 — 폐색전증 쇼크는 「좌심실이 덜 차는」 폐쇄성 쇼크다 [[harrison-21: 279장 p.2094]].",
    "대량(고위험) 폐색전증은 전신 저혈압을 동반하는 5–10 % 다 [[harrison-21: 279장 p.2094]]. 시험 기준의 저혈압은 수축기 < 90 mmHg 15분 이상 또는 승압제가 필요한 경우다 [[?esc-pe-2019]].",
@@ -57786,6 +58382,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0967",
     "changed": "나이·성별(47세 남자)·유발 경위(다리 골절 석고붕대 뒤 3주)·제시 순서를 바꿈, 지속 저혈압 + 우심실 부전 + 금기 없음은 그대로 → 답은 여전히 전신 혈전용해",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12950287_figure3.jpg",
+    "kind": "ct",
+    "at": "기전에서 소견으로",
+    "shows": "안장 폐색전 — CT 폐동맥조영 축상면",
+    "look": [
+     "폐동맥 분지부에 걸친 충만 결손(화살표)",
+     "좌우 폐동맥으로 이어지는 큰 혈전"
+    ],
+    "label": "「CTA axial view of chest demonstrating saddle pulmonary embolism with a large clot burdenBlack arrows point to the thromboembolisms in the pulmonary artery.CTA, computed tomography angiography.」 — Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.102660",
+    "citedBy": null,
+    "credit": "Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient. Cureus. 2026 Jan 30;18(1):e102660. doi: 10.7759/cureus.102660 (CC BY) — Figure 3",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12950287/"
    }
   ],
   "diagramTitle": "확진된 폐색전증 — 혈압이 먼저, 쇼크면 금기를 보고 재관류 수단을 고른다",
@@ -58211,7 +58829,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "e7b340ad0653c7a9",
+  "hash": "9f545e2ebcac9c1b",
   "summary": [
    "폐동맥이 막히면 우심실 후부하가 갑자기 오른다. 우심실이 늘어나며 BNP 가 나오고, 벽 긴장이 우관상동맥 관류를 눌러 미세경색이 생기면 트로포닌이 오른다. 늘어난 우심실이 중격을 좌심실 쪽으로 밀어 좌심실 충만이 줄면 심박출·혈압이 떨어지고 순환 붕괴로 간다 [[harrison-21: 279장 p.2094]].",
    "그래서 위험 분류는 혈압이 먼저다. 저혈압·쇼크(고위험·대량) 5–10 %, 혈압은 정상이지만 우심실 기능장애가 있는 중간 위험(아대량) 20–25 %, 저위험 65–75 %. 우심부전에 트로포닌 상승이 겹치면 악화 위험이 높다 [[harrison-21: 279장 p.2094]].",
@@ -58600,6 +59218,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "확진된 급성 폐색전증 — 혈압으로 먼저 가르고, 안정하면 우심실·트로포닌으로 감시 강도를 정한다",
   "geo": {
    "title": "확진된 급성 폐색전증 — 혈압으로 먼저 가르고, 안정하면 우심실·트로포닌으로 감시 강도를 정한다",
@@ -59194,7 +59813,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "19bef6630abdd77f",
+  "hash": "ed5381b90968663e",
   "summary": [
    "항인지질항체증후군(APS)은 음전하 인지질과 그에 붙는 혈장 단백(β2GPI·프로트롬빈)에 대한 자가항체로 생기는 후천 혈전성향이다. 반복하는 동맥·정맥 혈전과 임신 이환이 특징이며 주로 여성에서, 단독(1차) 또는 SLE 에 동반(2차)된다 [[harrison-21: 357장 p.2749]].",
    "항체가 손상된 내피에 붙어 혈관 안에서 응고를 시작한다. 그런데 루푸스항응고인자는 시험관에서 인지질 의존 응고 반응을 방해해 aPTT 를 늘리고, 정상 혈장을 섞어도 교정되지 않는다 — 시험관의 「항응고」와 몸 안의 혈전은 모순이 아니다 [[harrison-21: 357장 p.2749]].",
@@ -59391,6 +60010,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -59413,7 +60033,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "1eee06e4540344d6",
+  "hash": "1e33c4534dea53e6",
   "summary": [
    "강직척추염·비방사선학적 축성 척추관절염의 약물 치료 첫 단계는 NSAID다. 충분한 용량의 NSAID 로 많은 환자의 통증·강직이 줄어든다.",
    "서로 다른 NSAID 둘에 반응이 불충분한 확진 활동성 질환이면 생물학제 — TNF 억제제 또는 IL-17A 억제제 — 로 간다.",
@@ -59677,6 +60297,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "축성 척추관절염 — NSAID 이후의 다음 단계",
   "geo": {
    "title": "축성 척추관절염 — NSAID 이후의 다음 단계",
@@ -60197,7 +60818,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 2,
   "updated": "2026-09-26",
   "reviewStatus": "unreviewed",
-  "hash": "53a65a2ca780b873",
+  "hash": "3c1861f8ef72944a",
   "summary": [
    "결론: 중증 장기 침범이 없는 HCV 크리오글로불린혈증 혈관염은 직접작용 항바이러스제(DAA)가 1차다.",
    "시험 단서: 하지 촉지 자반 + 비미란성 관절통 + 감각 신경병, 류마티스인자 양성·C4 저하, HCV RNA 양성(mixed cryoglobulinemia).",
@@ -60486,6 +61107,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "촉지 자반·관절통·신경병 — 크리오글로불린혈증 혈관염의 치료 선택",
   "geo": {
    "title": "촉지 자반·관절통·신경병 — 크리오글로불린혈증 혈관염의 치료 선택",
@@ -61054,7 +61676,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "0535396d198a7cb2",
+  "hash": "aff66350ed093694",
   "summary": [
    "결론: 교육·유산소 운동이 기본, 약은 통증+수면이면 아미트립틸린·프레가발린, 통증+우울이면 둘록세틴.",
    "시험 단서: 중년 여성, 3개월 넘은 허리 위아래·양쪽 통증 + 피로·개운치 않은 잠, 검사 정상 = 섬유근육통(fibromyalgia).",
@@ -61279,6 +61901,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "만성 전신 통증 — 섬유근육통 판단에서 치료까지",
   "geo": {
    "title": "만성 전신 통증 — 섬유근육통 판단에서 치료까지",
@@ -61787,7 +62410,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "89f5f1ed574ac8c3",
+  "hash": "8ac8b42d909e5ed1",
   "summary": [
    "거대세포동맥염은 50세 이상에서 경동맥 가지(특히 측두동맥)와 대동맥을 침범하는 육아종성 중·대혈관염이다. 류마티스다발근통이 40–50 % 에서 동반된다.",
    "가장 두려운 합병증은 허혈 시신경병증에 의한 갑작스러운 실명이다. 대부분 그 전에 머리·눈 증상(두통·턱 파행·일과성 시력상실)이 먼저 온다 — 그 신호에서 치료하면 실명을 줄인다.",
@@ -62051,6 +62674,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "50세 이상 새 두통 — 거대세포동맥염 의심의 순서",
   "geo": {
    "title": "50세 이상 새 두통 — 거대세포동맥염 의심의 순서",
@@ -62506,10 +63130,10 @@ window.MEDKOS_CONCEPTS = {
    "Pediatrics",
    "Nephrology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "f4ba5fbb118eaff2",
+  "hash": "6e75ba4f5b92dec3",
   "summary": [
    "IgA혈관염은 IgA 면역복합체가 작은 혈관에 쌓여 생기는 소혈관염으로, 만져지는 자반(엉덩이·하지)·관절통·위장관 증상·사구체신염이 네 기둥이다.",
    "주로 4–7세 소아에서 상기도감염 등 뒤에 온다. 혈소판 수는 정상이고 보체도 정상이다 — 자반은 혈소판이 모자라서가 아니라 혈관벽 염증 때문에 생긴다.",
@@ -62744,6 +63368,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "kmle-2026-0087",
     "changed": "6세 남아·상기도감염·신전면 자반 먼저 → 8세 여아·인두염 2주 뒤·산통성 복통과 혈변을 먼저 제시, 자반은 엉덩이·종아리, 혈뇨 대신 단백뇨 1+ ⇒ 답은 그대로 IgA혈관염",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc12433238_figure1.jpg",
+    "kind": "photo",
+    "at": "기전에서 소견으로",
+    "shows": "IgA 혈관염(헤노흐-쇤라인) 소아의 팔다리 자반",
+    "look": [
+     "팔·손목·다리의 작은 자반(선상·구진)",
+     "혈소판 감소 없이 생기는 자반 — 진단 기준과 함께 본다"
+    ],
+    "label": "「Purpuric cutaneous lesions in a pediatric patient diagnosed with IgA vasculitis (Henoch-Schönlein purpura). A. Scattered linear purpuric lesions on the volar aspect of the left forearm. B. Purpuric erythema on the dorsal aspect of the right wrist. C. Isolated purpuric papules on the extensor aspect of the left forearm. D. Multiple linear and scattered purpuric macules on the left leg. E. Bilateral distribution of the lesions on the lower extremities, predominantly on the anterior aspect. F. Well-demarcated purpuric macule on the dorsum of the right foot.」 — An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.90076",
+    "citedBy": null,
+    "credit": "An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico. Cureus. 2025 Aug 14;17(8):e90076. doi: 10.7759/cureus.90076 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12433238/"
    }
   ],
   "diagramTitle": "소아 자반 — 혈소판에서 시작한다",
@@ -63296,7 +63942,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "ff88f1bc5d89ecc1",
+  "hash": "d7b76191c2ec0df1",
   "summary": [
    "결절다발동맥염은 소·중형 근육성 동맥의 괴사성 혈관염으로 콩팥·내장 동맥을 잘 침범한다. 폐동맥·사구체는 침범하지 않는다(콩팥은 사구체신염이 아니라 동맥염).",
    "허혈이 장기마다 증상을 만든다 — 콩팥(고혈압·신부전), 말초신경(다발단신경병증), 위장관(복통·장경색), 피부(결절·그물울혈반), 고환 통증.",
@@ -63545,6 +64191,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "결절다발동맥염 의심 — 확진 경로",
   "geo": {
    "title": "결절다발동맥염 의심 — 확진 경로",
@@ -63962,7 +64609,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "3985ff249a8c740e",
+  "hash": "bdf8d84e7df7178b",
   "summary": [
    "전신경화증(SSc)의 핵심 손상은 섬유화와 함께 소동맥 혈관병증이다. 콩팥의 궁상·소엽간동맥 내막이 증식해 막히면 신혈류가 줄고, 사구체옆세포가 레닌을 쏟아 안지오텐신II 가 콩팥 혈관을 더 수축시키는 악순환이 가속 고혈압으로 끝난다 [[harrison-21: 360장 p.2782]].",
    "그래서 신위기는 갑작스러운 고혈압(대개 >150/90 mmHg)·진행하는 핍뇨성 급성신손상에, 좁아진 혈관을 지나며 부서진 적혈구(미세혈관병용혈)·중등도 혈소판감소가 동반된다. 약 10% 는 혈압이 정상이며 예후가 나쁘다 [[harrison-21: 360장 p.2782]].",
@@ -64129,6 +64776,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -64152,7 +64800,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "e8aa647f389a83db",
+  "hash": "294baaf4fea6952b",
   "summary": [
    "전신홍반루푸스(SLE)는 자가항체와 면역복합체가 여러 장기에 염증을 일으키는 병이다. 진단은 항핵항체 양성(≥1:80)을 입구로, 임상·면역 소견을 합쳐 확률을 올린다 — 항 dsDNA·항 Sm 은 SLE 에 특이하다 [[harrison-21: 356장 p.2740]].",
    "치료 강도는 항체 수치가 아니라 **장기 침범**이 정한다 — 생명·장기를 위협하는가, 되돌릴 수 있는가, 치료 합병증을 어떻게 줄일까 [[harrison-21: 356장 p.2746]].",
@@ -64440,6 +65088,7 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
+  "figures": [],
   "diagramTitle": "SLE 진단 뒤 첫 치료 — 장기 침범으로 강도를 정한다",
   "geo": {
    "title": "SLE 진단 뒤 첫 치료 — 장기 침범으로 강도를 정한다",
@@ -65088,10 +65737,10 @@ window.MEDKOS_CONCEPTS = {
    "Endocrinology",
    "Pathology"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-27",
   "reviewStatus": "unreviewed",
-  "hash": "8776dc7062f7b98b",
+  "hash": "2164ed11e66555b1",
   "summary": [
    "고환은 두 구획이다 — 세정관 안에서는 세르톨리세포가 생식세포를 둘러싸 정자형성을 돕고, 세정관 사이 간질에서는 간질(Leydig)세포가 테스토스테론을 만든다 [[harrison-21: 391장 p.3006]].",
    "뇌하수체 성선자극호르몬은 표적이 갈린다 — LH 는 주로 간질세포에 작용해 테스토스테론 합성을 자극하고, FSH 는 세르톨리세포에 작용해 정자형성과 인히빈 B 생산을 조절한다 [[harrison-21: 391장 p.3007]].",
@@ -65340,6 +65989,28 @@ window.MEDKOS_CONCEPTS = {
     "of": "imaging-2026-0004",
     "changed": "나이·수술 이유(전립선암 고환절제 → 정계정맥류 수술 중 생검)·염색 대상(펩타이드 호르몬 → 스테로이드 합성 효소)·제시 순서를 바꾸고 「관 안 음성, 관 사이 무리 양성」은 그대로 → 답은 여전히 LH",
     "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/hpa-insl3_59764_a_5_6.jpg",
+    "kind": "histology",
+    "at": "기전에서 소견으로",
+    "shows": "고환 INSL3 면역염색 — 세정관 사이 라이디히세포가 갈색",
+    "look": [
+     "세정관 밖 간질에 무리 지은 큰 세포가 양성",
+     "세정관 안 생식세포·세르톨리세포는 음성"
+    ],
+    "label": "Testis, INSL3 면역조직화학 — 병리의사 주석(항체·조직 요약) Elongated or late spermatids: not detected; Leydig cells: high; Pachytene spermatocytes: not detected; Peritubular cells: not detected; Preleptotene spermatocytes: not detected; Round or early spermatids: not detected; Sertoli cells: not detected; Spermatogonia cells: not detected",
+    "basis": "dataset_expert",
+    "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
+    "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
+    "doiUrl": "https://doi.org/10.1126/science.1260419",
+    "citedBy": 14435,
+    "credit": "Human Protein Atlas, INSL3 / Testis (CC BY 4.0), https://images.proteinatlas.org/28615/59764_A_5_6.jpg",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis"
    }
   ],
   "diagramTitle": "고환 조직 사진 — 염색된 세포와 호르몬 연결",

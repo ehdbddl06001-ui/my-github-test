@@ -893,6 +893,24 @@ class ConceptQueueTest(unittest.TestCase):
         self.qs["q1"].update(type="imaging", distractors={})             # 영상 문항은 빌더 파생물 — 제외
         self.assertEqual(self.cq.build(e)["dist"], [])
 
+    def test_figure_queue_question_then_assess(self):
+        import concept_figures as cf
+        pool = {"PTBXL-1": {"asset_id": "PTBXL-1", "source_id": "PTBXL", "status": "AUTO_READY", "file": "x.png",
+                            "license_name": "CC BY 4.0", "label": {"grade": "A", "primary": "atrial flutter", "primary_code": "AFLT",
+                                                                 "scp_codes": {"AFLT": 100.0}}}}
+        self.qs["img1"] = {"type": "imaging", "objective": "cn.derm.a.b", "attribution": {"asset_id": "PTBXL-1"}}
+        orig = cf.load_pool
+        cf.load_pool = lambda builder=None: pool
+        try:
+            q = self.cq.build([])
+            kinds = [(f["kind"], f["concept"]) for f in q["figure"]]
+            self.assertEqual(kinds[0], ("question", "cn.derm.a.b"))
+            self.assertIn(("assess", "cn.derm.a.b"), kinds)
+            self.concepts["cn.derm.a.b"]["figures_none"] = "그림이 필요 없는 주제"
+            self.assertNotIn(("assess", "cn.derm.a.b"), [(f["kind"], f["concept"]) for f in self.cq.build([])["figure"]])
+        finally:
+            cf.load_pool = orig
+
     def test_correct_answers_do_not_queue(self):
         e = [right("e1", "q2", "cn.derm.c.d", "2026-09-20T01:00:00Z", "2026-09-20")]
         q = self.cq.build(e)
@@ -1030,6 +1048,108 @@ class OutlineFrame(unittest.TestCase):
         gaps = cq._gaps({c["id"]: c}, {}, {})
         neph = next(g for g in gaps if g["book"] == "신장내과")
         self.assertEqual(neph["slot"], "h54")                  # 앞(h51)이 아니라 쓴 자리 다음
+
+
+class ConceptFigures(unittest.TestCase):
+    """정리본 그림(2026-09-27) — 확실한 라벨만 · 라벨은 풀 기록에서 · 공개 저장소에 실을 수 있는 라이선스."""
+
+    def setUp(self):
+        import concept_figures as cf
+        self.cf = cf
+        self.ptbxl = {"asset_id": "PTBXL-1", "source_id": "PTBXL", "status": "AUTO_READY", "file": "PTBXL/x.png", "modality": "ECG",
+                      "license_name": "Creative Commons Attribution 4.0 International",
+                      "gates": {"rights": {"status": "PASS"}, "privacy": {"status": "PASS"}},
+                      "label": {"grade": "A", "primary": "atrial flutter", "primary_code": "AFLT", "scp_codes": {"AFLT": 100.0}}}
+
+    def test_eligibility_accepts_expert_label_and_rejects_author_reads(self):
+        cf = self.cf
+        self.assertEqual(cf.eligibility(self.ptbxl), [])
+        self.assertIn("가능도 100", cf.dataset_label(self.ptbxl))
+        weak = copy.deepcopy(self.ptbxl); weak["label"]["scp_codes"]["AFLT"] = 50.0
+        self.assertTrue(any("가능도" in w for w in cf.eligibility(weak)))
+        lidc = dict(self.ptbxl, source_id="TCIA_LIDC_IDRI")
+        self.assertTrue(any("작성자 판독" in w for w in cf.eligibility(lidc)))
+        nc = dict(self.ptbxl, license_name="CC BY-NC 4.0")
+        self.assertTrue(any("라이선스" in w for w in cf.eligibility(nc)))
+        isic = dict(self.ptbxl, source_id="ISIC", label={"grade": "A", "primary": "Nevus", "confirm_type": "single image expert consensus"})
+        self.assertTrue(any("조직병리" in w for w in cf.eligibility(isic)))
+        gone = dict(self.ptbxl, status="REJECTED")
+        self.assertTrue(any("폐기" in w for w in cf.eligibility(gone)))
+
+    def _fig(self, root, **kw):
+        (root / "docs" / "assets" / "figures").mkdir(parents=True, exist_ok=True)
+        (root / "docs" / "assets" / "figures" / "a.png").write_bytes(b"x")
+        f = {"id": "f1", "file": "docs/assets/figures/a.png", "kind": "ecg", "at": "진단", "shows": "톱니 모양 F파",
+             "look_for": ["II·III·aVF"], "label": "atrial flutter", "label_basis": "dataset_expert", "reference": "전문의 판독",
+             "paper": "Wagner 2020", "doi": "10.1038/x", "credit": "PTB-XL", "license": "CC BY 4.0", "asset": "PTBXL-1"}
+        f.update(kw)
+        return f
+
+    def test_contract(self):
+        cf = self.cf
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            ok = {"figures": [self._fig(root)]}
+            self.assertEqual(cf.validate_figures(ok, ["진단"], root), [])
+            model = {"figures": [self._fig(root, label_basis="model_read")]}
+            self.assertTrue(any("모델 판독" in e for e in cf.validate_figures(model, ["진단"], root)))
+            nopaper = {"figures": [self._fig(root, paper="")]}
+            self.assertTrue(any("데이터 논문" in e for e in cf.validate_figures(nopaper, ["진단"], root)))
+            outside = {"figures": [self._fig(root, file="https://x/y.png")]}
+            self.assertTrue(any("docs/assets/figures" in e for e in cf.validate_figures(outside, ["진단"], root)))
+            wrong_at = {"figures": [self._fig(root, at="없는 절")]}
+            self.assertTrue(any("절이 본문에 없다" in e for e in cf.validate_figures(wrong_at, ["진단"], root)))
+            many = {"figures": [self._fig(root, id=f"f{i}") for i in range(1, 5)]}
+            self.assertTrue(any("3개까지" in e for e in cf.validate_figures(many, ["진단"], root)))
+            both = {"figures": [self._fig(root)], "figures_none": "그림이 필요 없는 주제"}
+            self.assertTrue(any("하나만" in e for e in cf.validate_figures(both, ["진단"], root)))
+
+    def test_request_key_matches_exam_builder(self):
+        # exam-builder opendata/demand.py request_key 와 같은 벡터(PMC 그림 ↔ 요청 연결)
+        self.assertEqual(self.cf.request_key("cn.x.y.z", {"source": "PMC_OA", "query": "q"}), "9b23ada3fb8c")
+
+    def test_wanted_is_fulfilled_only_by_eligible_matching_asset(self):
+        cf = self.cf
+        pool = {"PTBXL-1": self.ptbxl, "PTBXL-2": dict(self.ptbxl, asset_id="PTBXL-2", status="REJECTED")}
+        self.assertEqual(cf.wanted_fulfilled({"source": "PTBXL", "codes": ["AFLT"], "shows": "x"}, pool), ["PTBXL-1"])
+        self.assertEqual(cf.wanted_fulfilled({"source": "PTBXL", "codes": ["AFIB"], "shows": "x"}, pool), [])
+        self.assertEqual(cf.wanted_fulfilled({"source": "ISIC", "codes": ["AFLT"], "shows": "x"}, pool), [])
+
+    def test_set_fm_key_changes_one_key_and_bumps_version(self):
+        cf = self.cf
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "c.md"
+            p.write_text("---\nid: cn.x.y.z\n# 주석은 남는다\nversion: 2\ntitle: \"제목\"\n---\n## 진단\n본문\n", encoding="utf-8")
+            cf.set_fm_key(p, "figures_none", "그림이 필요 없는 주제", bump=False)
+            cf.set_fm_key(p, "figures", [{"id": "f1"}])
+            t = p.read_text(encoding="utf-8")
+            self.assertIn("# 주석은 남는다", t)
+            self.assertIn("version: 3", t)
+            self.assertIn("figures:\n- id: f1", t)
+            cf.set_fm_key(p, "figures_none", None, bump=False)
+            self.assertNotIn("figures_none", p.read_text(encoding="utf-8"))
+            self.assertTrue(p.read_text(encoding="utf-8").endswith("## 진단\n본문\n"))
+
+    def test_figure_sizes_keep_aspect_and_ecg_spans(self):
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "docs" / "assets" / "figures").mkdir(parents=True)
+            Image.new("RGB", (2236, 1385), "white").save(root / "docs/assets/figures/e.png")
+            Image.new("RGB", (800, 1000), "white").save(root / "docs/assets/figures/x.jpg")
+            old = bb.ROOT
+            bb.ROOT = root
+            try:
+                kind, h, info = bb.figure_html(self._fig(root, file="docs/assets/figures/e.png"))
+                self.assertEqual((kind, info["place"]), ("span", "full"))
+                self.assertLessEqual(info["h"], bb.FIG_SPAN_H + 0.1)
+                self.assertIn("데이터 라벨", h)
+                kind, h, info = bb.figure_html(self._fig(root, file="docs/assets/figures/x.jpg", kind="radiograph"))
+                self.assertEqual(kind, "flow")
+                self.assertAlmostEqual(info["w"] / info["h"], 0.8, places=2)
+                self.assertLessEqual(info["h"], bb.FIG_COL_BOX[1] + 0.1)
+            finally:
+                bb.ROOT = old
 
 
 if __name__ == "__main__":

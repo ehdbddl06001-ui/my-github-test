@@ -42,6 +42,20 @@ def _variant(cid: str, v: dict) -> dict:
             "of": str(v.get("of", "") or ""), "changed": str(v.get("changed", "") or ""), "flip": bool(v.get("flip"))}
 
 
+def _figure(f: dict) -> dict | None:
+    """그림(2026-09-27). 파일은 docs/ 아래 상대경로만 — 앱이 그대로 img src 로 쓴다(외부 주소 없음)."""
+    file = str(f.get("file", "") or "")
+    if not file.startswith("docs/assets/figures/") or ".." in file:
+        return None
+    url = safe_url(f.get("url"))
+    doi = str(f.get("doi", "") or "")
+    return {"id": str(f.get("id", "")), "src": file[len("docs/"):], "kind": str(f.get("kind", "")), "at": str(f.get("at", "")),
+            "shows": str(f.get("shows", "")), "look": [str(x) for x in f.get("look_for") or []],
+            "label": str(f.get("label", "")), "basis": str(f.get("label_basis", "")), "reference": str(f.get("reference", "")),
+            "paper": str(f.get("paper", "")), "doiUrl": f"https://doi.org/{doi}" if re.fullmatch(r"10\.\S+", doi) else "",
+            "citedBy": f.get("paper_cited_by"), "credit": str(f.get("credit", "")), "license": str(f.get("license", "")), "url": url}
+
+
 def _web(s, c: dict) -> str:
     """표 칸·혼동 항목 글 → escape · **굵게** · 근거 번호(<sup>). 앱이 한 번 더 허용 태그만 남긴다."""
     return render_cites(re.sub(r"\*\*(.+?)\*\*", lambda m: f"<b>{m.group(1)}</b>", html.escape(str(s or ""), quote=False)), c, "web")
@@ -83,6 +97,7 @@ def build() -> tuple[dict, list[str]]:
             "sources": [_source(s) for s in c.get("sources") or [] if isinstance(s, dict)],
             "checks": [{"q": str(k.get("q", "")), "a": str(k.get("a", ""))} for k in c.get("checks") or [] if isinstance(k, dict)],
             "variants": [_variant(cid, v) for v in c.get("variants") or [] if isinstance(v, dict)],
+            "figures": [_figure(f) for f in c.get("figures") or [] if isinstance(f, dict) and _figure(f)],
             "diagramTitle": str((spec or {}).get("title", "")),
             "geo": c.get("geo"),
             "steps": dd.text_steps(spec) if c.get("geo") else [],

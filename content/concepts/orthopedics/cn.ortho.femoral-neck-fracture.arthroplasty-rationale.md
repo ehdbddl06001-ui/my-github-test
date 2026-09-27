@@ -4,8 +4,8 @@ type: concept
 topic: Orthopedics
 see_also: [Geriatrics]
 date: 2026-09-23
-updated: 2026-09-23
-version: 2
+updated: 2026-09-27
+version: 3
 outline: ortho.lower-limb            # 기본틀 슬롯(content/outline/subjects.yaml) — 정형외과 손 슬롯 「하지 골절과 탈구」(해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -215,6 +215,29 @@ variants:
     answer: "B"
     explanation: "나이·성별·쪽·가든 형(3형)·내원 경위가 바뀌었지만 결정 단서는 같다 — 골절선이 관절낭 안 넙다리뼈목이고 골두가 전위되어 안쪽넙다리휘돌이동맥의 지지대 분지가 끊긴다. 그래서 내고정 뒤 불유합·무혈성괴사·재수술이 흔해 고령의 전위 목 골절은 치환술로 바꾼다. 골다공증은 고정 실패에 기여하는 부수 요인일 뿐(같은 골다공증의 돌기 사이 골절은 내고정한다), 골절선은 관절낭 밖이 아니며 관절면을 지나지도 않는다."
     kind: application
+figures_rejected:
+- asset: FRACATLAS-IMG0002337
+  reason: 데이터 라벨이 「엉덩관절 X선 골절」까지만 — 이 정리본의 핵심인 관절낭 안(경부)·밖(전자간) 구분이 라벨에 없다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13480871_figure2-0-0-372-330.jpg
+  kind: radiograph
+  at: 기전에서 소견으로
+  shows: 전위된 대퇴경부(골두하) 골절 — 수술 전 골반 전후면
+  look_for:
+  - 골두 바로 아래에서 경부가 끊기고 원위 골편이 위로 올라감(관절낭 안)
+  - 반대쪽 엉덩관절의 경부 모양과 견준다
+  label: '「Preoperative (A) and postoperative (B) radiographs of the hip. The preoperative pelvic radiograph shows a displaced subcapital femoral neck fracture, and the postoperative image demonstrates a hemiarthroplasty.」 — The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report. Medicine'
+  doi: 10.1097/MD.0000000000050191
+  credit: 'The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report. Medicine (Baltimore). 2026 Aug 14;105(33):e50191. doi: 10.1097/MD.0000000000050191 (CC BY) — Figure 2.'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13480871/
+  asset: PMC-PMC13480871_Figure2
+  privacy_check: X선 — 식별 문자 없음(R 표지만)
+  crop: 0,0,372,330
 ---
 
 ## 정의

@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Infectious Disease]
 date: 2026-09-18
-updated: 2026-09-25
-version: 3
+updated: 2026-09-27
+version: 4
 outline: h57            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -163,6 +163,25 @@ variants:
     answer: "B"
     explanation: "진단은 같지만 범위가 넓고 재발하며 국소 치료에 실패했다 — 치료 수준을 경구 아졸로 올린다. 경구 테르비나핀·그리세오풀빈은 말라세지아에 효과가 없고, 스테로이드는 악화시킨다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13277293_figure1.jpg
+  kind: photo
+  at: 가르는 소견 — 비늘·색·KOH
+  shows: 어루러기 — 목·윗가슴의 저색소·과색소 비늘 반점
+  look_for:
+  - 목과 윗가슴에 모이는 작은 원형 반점이 합쳐진 모양
+  - 주변 피부보다 밝거나 어두운 두 가지 색
+  label: '「Maternal lesions of pityriasis versicolor. Hypo‐ and hyperpigmented, finely scaly macules and patches on the mother''s neck, upper trunk, and arms, consistent with active pityriasis versicolor.」 — Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda. Clinical Case Reports'
+  doi: 10.1002/ccr3.72762
+  credit: 'Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda. Clin Case Rep. 2026 May 19;14(5):e72762. doi: 10.1002/ccr3.72762 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13277293/
+  asset: PMC-PMC13277293_FIGURE1
+  privacy_check: 목 아래만 — 얼굴 없음
 ---
 
 ## 판단 — 왜 범위·재발이 치료를 바꾸나

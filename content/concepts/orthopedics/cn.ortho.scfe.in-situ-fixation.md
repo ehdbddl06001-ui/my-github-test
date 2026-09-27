@@ -139,6 +139,16 @@ variants:
     answer: "A"
     explanation: "사춘기 비만아, 외상 없는 통증, 굽힘 시 강제 바깥돌림, 클라인 선 이상과 골단 후방 미끄러짐은 대퇴골두골단분리증이고, 걸을 수 있으니 안정형이다 [[?loder-1993]]. 성별·아픈 자리·경위가 달라도 결정 단서가 같으므로 즉시 체중부하를 막고 정복 없이 제자리 나사 고정한다 [[?peck-2010]]. 정복은 무혈성괴사를 부르고, 목발·소염제로 기다리면 미끄러짐이 진행한다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 대퇴골두골단분리증 X선 — 골단이 뒤·아래로 미끄러짐
+  query: '"slipped capital femoral epiphysis" AND radiograph'
+  caption_terms:
+  - slipped
+  modality: XR_MSK
+figures_rejected:
+- asset: PMC-PMC11902969_Figure2
+  reason: 수술 중·핀 고정 뒤 사진 — 미끄러짐 자체를 보여 주지 않는다
 ---
 
 ## 정의

@@ -4,8 +4,8 @@ type: concept
 topic: Hematology-Oncology
 see_also: [Pathology, Urology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h92             # 해리슨 21판 92장 Carcinoma of Unknown Primary — Role of IHC Analysis(혈액종양내과 책)
 confidence: medium
 review_status: unreviewed
@@ -186,6 +186,26 @@ variants:
     answer: "B"
     explanation: "The age, tissue (a lymph node metastasis rather than normal breast), and question wording differ, but the decisive clue is unchanged: a zinc-finger transcription factor of luminal breast epithelium shared with urothelium and T cells is GATA3, a lineage marker. Harrison notes that GATA3 is increasingly used in carcinoma of unknown primary when a breast primary is suspected and is especially useful for triple-negative and metaplastic carcinomas, which lack endocrine markers of mammary origin; in women with isolated axillary adenopathy the pathology should be verified as a breast profile, and breast MRI follows negative mammography and ultrasound [[harrison-21: 92장 p.717–720]]. GATA3 positivity does not choose drugs — trastuzumab and aromatase inhibitors depend on HER2 and hormone-receptor status, both negative here [[harrison-21: 92장 p.720]]."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/hpa-gata3_140542_b_2_4.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 유방 GATA3 면역염색 — 관 상피세포의 핵이 갈색
+  look_for:
+  - 갈색은 세포질이 아니라 핵에만 — 전사인자
+  - 관강 쪽 상피는 양성, 지방·근상피는 음성(병리 주석)
+  label: 'Breast, GATA3 면역조직화학 — 병리의사 주석(항체·조직 요약) Adipocytes: not detected; Glandular cells: high; Myoepithelial cells: not detected'
+  label_basis: dataset_expert
+  reference: 조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)
+  paper: Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419
+  doi: 10.1126/science.1260419
+  credit: Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg
+  license: Creative Commons Attribution 4.0 International
+  url: https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast
+  asset: HPA-GATA3_140542_B_2_4
+  paper_cited_by: 14435
+  from_question: imaging-2026-0102
 ---
 
 ## 정의

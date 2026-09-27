@@ -12,6 +12,7 @@
 | 오답 정리본 쓰기·손질·판형 2로 옮기기 | `/gen-concept`(판형 2 · 본보기 `cn.derm.pityriasis-versicolor.treatment`) | `concept_queue.py --limit N` → `concepts.py`(오류 0) |
 | 과별 PDF 학습서 | 아래 「오답 뒤 학습 흐름」 | `.github/workflows/books.yml`, `build_books.py --only <과> --out <임시>` |
 | 판단 도식 | `decision_diagram.py`(배치는 코드가 정한다) | 노드 글 판단 ≤ 30자 — 안 들어가면 `concepts.py` ERROR |
+| 정리본 그림(심전도·조직·영상) | `/gen-concept` 「[figure]」 — **확실한 라벨만**(전문가 데이터셋 라벨·논문 그림 설명) | `concept_figures.py find/add/want/none/reject/status` · 수확은 exam-builder `opendata demand` |
 | 오픈데이터 영상 문항 | **여기서 만들지 않는다** — 빌더(`exam-builder`)의 `opendata medkos-export` | `content/imaging/`, `export_imaging_web.py` |
 | 해부학(3Q, ~2026-10-19) | `/anatomy-daily` + **`docs/ANATOMY_RULES.md` 먼저** | `docs/ANATOMY_VISUALS.md` |
 | AI·코딩 학습 | `/gen-ailab` `/ai-weekly` `/deepen-week` `/gen-quest` `/ai-mentor` `/ai-debug` | 아래 「실행 로그 루프」 |
@@ -22,7 +23,7 @@
 |---|---|---|---|
 | 매일 하루 KMLE 문항 제작 | 월·수·금 05:00 | 16과목 × 2문항 + 정리본 큐 조금 | `prompts/routine_kmle.md`(얇음 → `/daily-run`) |
 | USMLE 콘텐츠 생성 | 화·목 05:00 | Step 1·2 각 3문항 | `prompts/routine_usmle.md` |
-| 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
+| 오답 정리본 06:00·18:00 | 매일 | 정리본 큐 전부(50분 예산) → `[figure]` → `[restyle]` → `[gap]` | `prompts/routine_concepts.md` |
 | 오픈데이터 영상 세트 | 매일 05:00 | exam-builder → MedKOS 내보내기 | exam-builder 저장소 |
 | anatomy-daily | 매일 05:00(~10-19) | 해부 서브노트 | `/anatomy-daily` |
 

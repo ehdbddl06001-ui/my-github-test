@@ -4,8 +4,8 @@ type: concept
 topic: Pediatrics
 see_also: [Nephrology, Infectious Disease]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: peds.renal      # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 대조 대상 아님(손 슬롯)
 confidence: medium
 review_status: unreviewed
@@ -166,6 +166,25 @@ variants:
     answer: "C"
     explanation: "The deciding clues are unchanged: bloody diarrhea without fever preceding a triad of microangiopathic hemolysis, thrombocytopenia, and acute kidney injury in a child, with Shiga toxin confirmed [[harrison-21: 161장 p.1268]]. Management is supportive — fluids, electrolytes, blood pressure control, and dialysis when indicated. Antibiotics may increase the risk of HUS and plasma exchange has shown no benefit [[harrison-21: 161장 p.1270]]; antimotility agents and prophylactic platelet transfusion are avoided [[?tarr-2005]]."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13416571_figure1.jpg
+  kind: smear
+  at: 기전에서 소견으로
+  shows: 미세혈관병성 용혈의 말초혈액 — 분열적혈구(schistocyte)
+  look_for:
+  - '화살표: 조각나고 각진 적혈구'
+  - 주변의 정상 원판 모양 적혈구와 견준다
+  label: '「Peripheral blood film showing numerous schistocytes (blue arrows), suggestive of microangiopathic hemolysis (Giemsa stain, ×400)」 — Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case. Cureus'
+  doi: 10.7759/cureus.111698
+  credit: 'Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case. Cureus. 2026 Jun 29;18(6):e111698. doi: 10.7759/cureus.111698 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13416571/
+  asset: PMC-PMC13416571_Figure1
+  privacy_check: 현미경 사진 — 식별 정보 없음
 ---
 
 ## 정의

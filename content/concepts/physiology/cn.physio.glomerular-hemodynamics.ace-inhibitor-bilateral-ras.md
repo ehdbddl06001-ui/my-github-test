@@ -89,6 +89,7 @@ variants:
     answer: "C"
     explanation: "The key facts are unchanged: bilateral renal artery stenosis lowers renal perfusion pressure, so GFR depends on angiotensin II constricting the efferent arteriole. An ACE inhibitor removes that support, glomerular capillary pressure falls, and creatinine rises sharply within days [[harrison-21: 278장 p.2088–2090]]. ACE inhibitors do not constrict the afferent arteriole; a bland urinalysis and the timing argue against interstitial nephritis, and atheroemboli typically follow an angiographic procedure rather than drug initiation."
     kind: application
+figures_none: 사구체 혈역학(기전)이 핵심 — 도식이 맞다
 ---
 
 ## 정의

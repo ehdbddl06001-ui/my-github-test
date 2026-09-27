@@ -166,6 +166,17 @@ variants:
     answer: "B"
     explanation: "통증의 시작 부위와 환자 특성은 달라도 이동하는 찢어지는 통증·양팔 혈압차·종격동 확장·허혈 없는 심전도가 박리를 가리키고, 혈압이 높다. 첫 약물은 심박수·수축력을 낮추는 정맥 베타차단제(에스몰롤)이고, 혈관확장제(하이드랄라진) 단독은 반사 빈맥으로 박리를 키운다. 혈전용해·항응고·수액 부하는 모두 해롭다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 대동맥박리 조영 CT — 참강과 가강을 나누는 내막판
+  query: '"aortic dissection" AND "case report" AND ("computed tomography" OR CT)'
+  caption_terms:
+  - dissection
+  - flap
+  modality: CT
+figures_rejected:
+- asset: PMC-PMC13422630_Figure4
+  reason: 의인성 B형 박리에 대동맥내풍선펌프 인공물 — 전형적 박리 소견 교육용으로 혼동을 준다
 ---
 
 ## 정의

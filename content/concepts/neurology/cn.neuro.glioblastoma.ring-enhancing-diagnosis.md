@@ -4,8 +4,8 @@ type: concept
 topic: Hematology-Oncology
 see_also: [Neurology, Radiology]
 date: 2026-09-26
-updated: 2026-09-26
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h90            # 해리슨 21판 90장 Primary and Metastatic Tumors of the Nervous System(혈액종양내과 책)
 confidence: medium
 review_status: unreviewed
@@ -149,6 +149,25 @@ variants:
     answer: "C"
     explanation: "The deciding clues are unchanged from the original item: weeks of progressive deficit in an older adult, an intra-axial mass with mass effect, a thick irregular ring around central necrosis, no fever, and no primary cancer on body imaging. Glioblastoma typically presents in the sixth and seventh decades with headache, seizures, or focal deficits and appears as a ring-enhancing mass with central necrosis and surrounding edema [[harrison-21: 90장 p.704]]. Aphasia and personality change replace hemiparesis only because the lesion is in the dominant temporal lobe. There is no extra-axial crescent, the course is too slow for infarction, lymphoma would enhance homogeneously, and there is no infectious setting for abscess."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13218906_figure3.jpg
+  kind: mri
+  at: 가르는 소견 — 자리·시간·조영 모양
+  shows: 교모세포종 MRI — 조영 T1 의 고리 조영증강과 주변 부종(추적에서 커짐)
+  look_for:
+  - 'B·D(조영 T1): 벽이 두껍고 고르지 않은 고리 조영증강, 가운데는 조영 안 됨'
+  - 'A·C(T2·FLAIR): 병변을 둘러싼 넓은 부종'
+  label: '「(A, B) MRI (November 26, 2024). (A) T2 TSE image showing the lesion with surrounding edema (arrow). (B) Contrast-enhanced T1-weighted image showing ring enhancement, with lesion measuring 2.6 cm × 2.2 cm (arrow). (C, D) MRI (January 21, 2025). (C) T2 FLAIR image showing further enlargement of the lesion with markedly increased peritumoral edema (arrow). (D) Contrast-enhanced T1-weighted image showing lesion measuring 2.7 cm × 2.5 cm with persistent ring enhancement (arrow). (E) MRI (September 1, 2025) T2 FLAIR image showing significant tumor progression with lesion measuring 5.0 cm × 8.0 cm after glioblastoma diagnosis (arrow).」 — Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review. Frontiers in Oncology'
+  doi: 10.3389/fonc.2026.1837876
+  credit: 'Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review. Front Oncol. 2026 May 15;16:1837876. doi: 10.3389/fonc.2026.1837876 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13218906/
+  asset: PMC-PMC13218906_Figure3
+  privacy_check: MRI — 식별 문자 없음
 ---
 
 ## 판단 — 왜 교모세포종이 먼저인가

@@ -134,6 +134,7 @@ variants:
     answer: "C"
     explanation: "The deciding clues are unchanged: a boy with an affected maternal uncle (X-linked pattern), onset after maternal IgG waned, infections limited to encapsulated bacteria, all immunoglobulin classes low, B cells below 1%, and normal T cells. This is X-linked agammaglobulinemia, in which defective BTK blocks the pre-B to B transition [[harrison-21: 351장 p.2716]]. Normal T cells and no opportunistic infections argue against SCID; low IgM argues against CD40L deficiency; normal neutrophil and complement studies argue against CGD and terminal complement deficiency."
     kind: application
+figures_none: B세포 분화가 멈추는 단계(기전)가 핵심 — 판단 도식이 맞고 사진 소견은 단서가 아니다
 ---
 
 ## 기전 — pre-B 세포 수용체 신호에서 B세포 부재로

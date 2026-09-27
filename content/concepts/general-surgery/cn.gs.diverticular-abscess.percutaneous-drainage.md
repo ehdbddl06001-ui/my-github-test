@@ -4,8 +4,8 @@ type: concept
 topic: Gastroenterology
 see_also: [General Surgery]
 date: 2026-09-25
-updated: 2026-09-25
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h328            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 328장 Diverticular Disease
 confidence: medium
 review_status: unreviewed
@@ -169,6 +169,25 @@ variants:
     answer: "D"
     explanation: "겉모습(남자·골반 위치·배뇨 증상·다른 항생제)이 바뀌어도 결정적 단서는 같다 — 안정된 활력, 국소 압통, 유리 공기 없음, 3 cm 를 넘는 벽 뚜렷한 농양. 그래서 항생제에 CT 유도 경피 배농을 더한다. 방광 쪽 증상은 인접 염증으로 설명되고 누공 확인은 급성기 결정이 아니다. 대장내시경은 약 6주 뒤, 응급 절제·세척은 범발성 복막염에서."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13356615_fig4.jpg
+  kind: ct
+  at: 판단 — 왜 경피 배농이 먼저인가
+  shows: 게실 질환에 합병한 골반 농양 조영 CT(경피 배농관 삽입 상태)
+  look_for:
+  - 직장 옆 테두리가 조영되는 액체 모임(화살촉)
+  - 배농관이 들어가 있다(저자 설명)
+  label: 「Admission day 5, Axial CECT in portal venous phase. Cope drainage catheter in situ. Within the pelvis adjacent to the right side of the rectum, there is a 4 × 6 cm abscess and on the left side of the pelvis there is a 2.4 cm abscess (white arrowheads). Uterus–white arrows.」 — Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease. Radiology Case Reports
+  doi: 10.1016/j.radcr.2026.06.017
+  credit: 'Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease. Radiol Case Rep. 2026 Jul 7;21(10):4419–25. doi: 10.1016/j.radcr.2026.06.017 (CC BY) — Fig. 4'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13356615/
+  asset: PMC-PMC13356615_Fig4
+  privacy_check: CT 축상면 — 식별 문자 없음
 ---
 
 ## 판단 — 왜 경피 배농이 먼저인가

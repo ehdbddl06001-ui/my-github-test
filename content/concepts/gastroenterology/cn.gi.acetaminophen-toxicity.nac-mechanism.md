@@ -132,6 +132,7 @@ variants:
     answer: "D"
     explanation: "N-acetylcysteine supplies sulfhydryl donor groups that replete glutathione, which detoxifies NAPQI to mercapturic acid before it binds covalently to hepatocyte proteins. Changing the patient, the setting and the time (6 rather than 10 hours) does not change the key clue — a level above the treatment line with NAC started — so the mechanism answer is the same. Normal aminotransferases early do not exclude injury, which appears 24–48 hours later."
     kind: application
+figures_none: NAPQI·글루타티온 기전과 해독제가 핵심 — 조직 사진은 목표 밖
 ---
 
 ## 정의

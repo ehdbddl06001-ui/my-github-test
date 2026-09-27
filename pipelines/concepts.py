@@ -184,6 +184,9 @@ def validate_concept(meta: dict[str, Any], path: Path | None = None) -> list[str
                                        for x in meta.get("sources") or [] if isinstance(x, dict)):
                 errs.append(f"[WARN] 해리슨 대조 없음 — 슬롯 {slot} = 해리슨 {', '.join(map(str, sl.chapters))}장. "
                             f"그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다")
+    # 그림(2026-09-27) — 확실한 라벨만·출처·라이선스·파일. 규칙은 concept_figures.py
+    from concept_figures import validate_figures
+    errs += validate_figures(meta, [s["title"] for s in sections(str(meta.get("_body", "")))] if "_body" in meta else None)
     rs = meta.get("review_status")
     if rs not in ("unreviewed", "reviewed", "needs_revision"):
         errs.append("review_status 는 unreviewed/reviewed/needs_revision")

@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [Pulmonology, Pediatrics]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h240            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 240장 Electrocardiography
 confidence: medium
 review_status: unreviewed
@@ -165,6 +165,26 @@ variants:
     answer: "C"
     explanation: "Lead I is net negative (r smaller than S) and aVF is net positive, so the mean QRS vector points downward and to the right: +90° to +180°, right axis deviation [[harrison-21: 240장 p.1825]]. The upright lead II does not help, because lead II is positive in both the normal range and right axis deviation. Age, sex, sport, and setting differ from the original item, but the deciding clue — the polarity of leads I and aVF — is the same. Right axis deviation can be a normal variant in young adults, but that is a statement about cause, not about the axis itself [[harrison-21: 240장 p.1826]]."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/ptbxl-16116.png
+  kind: ecg
+  at: 기전에서 소견으로
+  shows: 좌후섬유속차단 — QRS 축이 오른쪽으로 치우친 12유도 심전도
+  look_for:
+  - 유도 I·aVL 은 작은 r 뒤 S(rS), II·III·aVF 는 위로 선 R
+  - 먼저 유도 I 과 aVF 의 QRS 순 방향으로 사분면을 정한다
+  label: left posterior fascicular block (SCP LPFB, 가능도 100)
+  label_basis: dataset_expert
+  reference: 심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만
+  paper: Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154
+  doi: 10.1038/s41597-020-0495-6
+  credit: PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116
+  license: Creative Commons Attribution 4.0 International
+  url: https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel
+  asset: PTBXL-16116
+  paper_cited_by: 1213
+  from_question: imaging-2026-0011
 ---
 
 ## 정의

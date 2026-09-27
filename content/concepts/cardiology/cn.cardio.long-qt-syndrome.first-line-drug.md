@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [Pediatrics, Emergency Medicine]
 date: 2026-09-21
-updated: 2026-09-23
-version: 2
+updated: 2026-09-27
+version: 3
 outline: h255            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -246,6 +246,25 @@ variants:
     answer: "A"
     explanation: "운동 중 전조 없는 반복 실신, 젊은 가족의 급사, 후천 원인이 없는 상태에서 반복 QTc ≥480 ms 는 선천 QT연장증후군이고 넓은 T파·운동 유발은 LQT1 양상이다. 나이·성별·운동 종류가 달라져도 결정 단서(QT 연장 + 교감신경 유발 + 치료 전)가 같으므로 1차는 비선택 베타차단제(나돌롤)다 [[?esc-va-2022]]. 아미오다론·소탈롤은 QT 를 더 늘리고, 메실레틴은 LQT3 에서 베타차단제에 더하는 약이며, 베라파밀은 방실결절 약이라 토르사드를 막지 못한다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/ptbxl-00320.png
+  kind: ecg
+  at: 검사 — QTc 를 어떻게 재고 어디까지 믿나
+  shows: QT 연장 — 느린 동리듬에서 늦게 끝나는 T파
+  look_for:
+  - QRS 시작에서 T파 끝까지를 RR 간격과 견준다(심박수 약 55회/분이라 보정 필요)
+  - T파 끝이 가장 분명한 유도(대개 II·V5)에서 잰다
+  label: long QT-interval (SCP LNGQT, 가능도 100)
+  label_basis: dataset_expert
+  reference: 심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만
+  paper: Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154
+  doi: 10.1038/s41597-020-0495-6
+  credit: PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 320
+  license: Creative Commons Attribution 4.0 International
+  url: https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel
+  asset: PTBXL-00320
+  paper_cited_by: 1213
 ---
 
 ## 정의

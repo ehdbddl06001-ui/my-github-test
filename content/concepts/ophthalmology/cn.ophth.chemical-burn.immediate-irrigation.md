@@ -101,6 +101,7 @@ sources:
     checked_at: 2026-09-23
     checked: "서지만 — 이 컨테이너에서 doi·PubMed 접근이 막혀 대조하지 못함(즉시 세척·pH 목표·알칼리 기전 서술은 미대조)"
     verified: citation
+figures_none: 검사보다 세척이 먼저라는 순서 판단 — 사진이 판단을 돕지 않는다
 ---
 
 ## 정의

@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Rheumatology, Infectious Disease, Gastroenterology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h58            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -99,6 +99,25 @@ sources:
     checked_at: 2026-09-23
     checked: "서지만 — 이 컨테이너에서 PubMed·원문 접근이 막혀 대조하지 못함(특발성 비율·대증치료 서술은 미대조)"
     verified: citation
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13181270_figure1.jpg
+  kind: photo
+  at: 기전에서 소견으로
+  shows: 결절홍반 — 양 정강이 앞의 붉은 결절(소아, 셀리악병 동반 증례)
+  look_for:
+  - 정강이 앞쪽에 흩어진 경계가 흐린 붉은 결절 여러 개
+  - 비늘·궤양 없이 피부 아래가 부푼 모양
+  label: '「Pretibial nodules characteristic of erythema nodosum.」 — Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature. Case Reports in Pediatrics'
+  doi: 10.1155/crpe/9684135
+  credit: 'Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature. Case Rep Pediatr. 2026 May 18;2026:9684135. doi: 10.1155/crpe/9684135 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13181270/
+  asset: PMC-PMC13181270_FIGURE1
+  privacy_check: 양 하퇴부만 — 얼굴·문신·이름 없음
 ---
 
 ## 정의

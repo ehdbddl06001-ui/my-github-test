@@ -4,8 +4,8 @@ type: concept
 topic: Nephrology
 see_also: [Pediatrics]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h314            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -82,6 +82,26 @@ variants:
     answer: "C"
     explanation: "제시 순서와 환자는 달라도 결정 단서 — 인두염 약 2주 뒤의 신염증후군(갈색뇨·적혈구원주·고혈압·부종), C3 감소·C4 정상, ASO 상승 — 는 같으므로 감염후사구체신염이다 [[harrison-21: 314장 p.2337]]. IgA신병증은 감염 직후 혈뇨·정상 C3, 루푸스신염은 C3·C4 가 함께 낮고 전신 증상이 있다, 미세변화는 적혈구원주·고혈압이 없는 신증후군이다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12554364_figure3-240-205-750-564.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 연쇄구균감염후사구체신염 전자현미경 — 상피하 전자밀도 침착(hump)
+  look_for:
+  - 사구체 기저막 바깥(상피 쪽)에 붙은 둥근 전자밀도 덩어리(빨간 화살촉)
+  - 같은 논문 그림의 형광은 C3 과립상 침착
+  label: '「Renal biopsy findings diagnostic for acute post-streptococcal glomerulonephritis (APSGN). (A) H&E stain showing a cellular crescent (arrow) compressing the glomerular tuft. (B) Periodic acid–Schiff (PAS) stain highlighting the crescent (arrow) and diffuse glomerular hypercellularity. (C) H&E stain demonstrating a prominent neutrophilic infiltrate (arrow) within the glomerulus. (D) Immunofluorescence microscopy revealing strong (3+) granular staining for C3 along capillary loops and in the mesangium. (E, F) Electron photomicrographs showing characteristic subepithelial electron-dense ‘humps’ (red arrows).」 — A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report. Cureus'
+  doi: 10.7759/cureus.93307
+  credit: 'A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report. Cureus. 2025 Sep 26;17(9):e93307. doi: 10.7759/cureus.93307 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12554364/
+  asset: PMC-PMC12554364_Figure3
+  privacy_check: 전자현미경 — 식별 정보 없음
+  crop: 240,205,750,564
 ---
 
 ## 정의

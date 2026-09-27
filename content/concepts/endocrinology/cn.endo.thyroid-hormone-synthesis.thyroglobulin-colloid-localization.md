@@ -4,8 +4,8 @@ type: concept
 topic: Endocrinology
 see_also: [Pathology, Physiology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h382            # 해리슨 21판 382장 Thyroid Gland Physiology and Testing(내분비내과 책)
 confidence: medium
 review_status: unreviewed
@@ -155,6 +155,26 @@ variants:
     answer: "B"
     explanation: "환자·수술 이유·묻는 방식이 달라도 결정 단서(정상 부위 콜로이드의 균질 강양성)는 같아 단백질은 타이로글로불린이다. 해리슨은 Tg 측정의 주 용도를 갑상샘암 추적으로 들며, 전절제·방사성요오드 제거 뒤 항-Tg 항체가 없을 때 0.2 ng/mL 미만이어야 하고 측정되면 불완전 제거나 재발을 뜻한다고 쓴다 [[harrison-21: 382장 p.2932]]. 자가면역 갑상샘병에서 주로 측정하는 항체는 항-TPO(A) [[harrison-21: 382장 p.2932]], 방사성요오드 흡수는 NIS(C) [[harrison-21: 382장 p.2927]], 수질암은 칼시토닌(D) [[harrison-21: 382장 p.2926]], 에스트로겐으로 느는 것은 TBG(E) [[harrison-21: 382장 p.2929]]다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/hpa-tg_306_b_1_5.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 갑상샘 티로글로불린 면역염색 — 여포 안 콜로이드가 갈색
+  look_for:
+  - 여포 안을 채운 콜로이드 전체가 갈색
+  - '여포 벽의 상피세포도 양성(병리 주석: 샘세포 high)'
+  label: 'Thyroid gland, TG 면역조직화학 — 병리의사 주석(항체·조직 요약) Glandular cells: high'
+  label_basis: dataset_expert
+  reference: 조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)
+  paper: Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419
+  doi: 10.1126/science.1260419
+  credit: Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg
+  license: Creative Commons Attribution 4.0 International
+  url: https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland
+  asset: HPA-TG_306_B_1_5
+  paper_cited_by: 14435
+  from_question: imaging-2026-0079
 ---
 
 ## 정의
