@@ -3787,7 +3787,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 1213,
     "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel"
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+    "marked": ""
    }
   ],
   "diagramTitle": "규칙적인 좁은 QRS 빈맥 — 심방조동 인식과 첫 처치",
@@ -4838,7 +4839,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 1213,
     "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 320",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel"
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel",
+    "marked": ""
    }
   ],
   "diagramTitle": "운동 중 실신 + QT 연장 — 후천 원인 배제에서 1차 약물까지",
@@ -5853,7 +5855,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 1213,
     "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 16116",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel"
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/16000/#files-panel",
+    "marked": ""
    }
   ],
   "diagramTitle": "전두면 QRS 축 — 유도 I 에서 시작",
@@ -6885,7 +6888,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Celiac Disease Presenting With Erythema Nodosum in a Child: Case Report and Review of the Literature. Case Rep Pediatr. 2026 May 18;2026:9684135. doi: 10.1155/crpe/9684135 (CC BY) — FIGURE 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181270/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181270/",
+    "marked": ""
    }
   ],
   "diagramTitle": "",
@@ -7180,7 +7184,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Early‐Onset Neonatal Pityriasis Versicolor Associated With Maternal Infection: A Case Report From Uganda. Clin Case Rep. 2026 May 19;14(5):e72762. doi: 10.1002/ccr3.72762 (CC BY) — FIGURE 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13277293/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13277293/",
+    "marked": ""
    }
   ],
   "diagramTitle": "어루러기 — 진단 확인에서 치료 수준까지",
@@ -9332,7 +9337,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 1935,
     "credit": "ISIC Archive ISIC_0001107 (CC-0)",
     "license": "CC0 1.0 Universal",
-    "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001107"
+    "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001107",
+    "marked": ""
    }
   ],
   "diagramTitle": "색소 병변 — 생검할까, 지켜볼까",
@@ -11330,7 +11336,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1.",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12928926/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12928926/",
+    "marked": ""
    }
   ],
   "diagramTitle": "양측 폐 음영 + 급성 저산소혈증 — ARDS 인가, 첫 처치는?",
@@ -14071,7 +14078,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303025/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303025/",
+    "marked": ""
    }
   ],
   "diagramTitle": "쓰러진 환자 — 리듬 확인에서 첫 전기충격까지",
@@ -17241,7 +17249,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 14435,
     "credit": "Human Protein Atlas, TG / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/77/306_B_1_5.jpg",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland"
+    "url": "https://www.proteinatlas.org/ENSG00000042832-TG/tissue/Thyroid+gland",
+    "marked": ""
    }
   ],
   "diagramTitle": "갑상샘 조직 면역조직화학 — 갈색은 어디에 있는가?",
@@ -20209,7 +20218,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Colosalpingeal fistula with pneumosalpinx secondary to diverticular disease. Radiol Case Rep. 2026 Jul 7;21(10):4419–25. doi: 10.1016/j.radcr.2026.06.017 (CC BY) — Fig. 4",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13356615/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13356615/",
+    "marked": ""
    }
   ],
   "diagramTitle": "게실염 — 농양이 있을 때의 다음 처치",
@@ -25659,7 +25669,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "A Child With Anuric Acute Kidney Injury With Subsequent Hypertensive Encephalopathy: A Case Report. Cureus. 2025 Sep 26;17(9):e93307. doi: 10.7759/cureus.93307 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12554364/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12554364/",
+    "marked": ""
    }
   ],
   "diagramTitle": "",
@@ -26157,7 +26168,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Primary glioblastoma mimicking brain metastasis in ALK-positive lung adenocarcinoma: a case report and literature review. Front Oncol. 2026 May 15;16:1837876. doi: 10.3389/fonc.2026.1837876 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13218906/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13218906/",
+    "marked": ""
    }
   ],
   "diagramTitle": "진행성 편측 결손 — 자리·시간·조영으로 가른다",
@@ -27941,7 +27953,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Multiple Sclerosis in a Person With Hirschprung's Disease: A Case Report. Clin Case Rep. 2026 Jul 10;14(7):e72984. doi: 10.1002/ccr3.72984 (CC BY) — FIGURE 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13354747/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13354747/",
+    "marked": ""
    }
   ],
   "diagramTitle": "중추신경 탈수초 의심 — 다발경화증을 진단하는 길",
@@ -29547,7 +29560,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 14435,
     "credit": "Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix"
+    "url": "https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix",
+    "marked": ""
    }
   ],
   "diagramTitle": "자궁경부 조직 — 상피를 읽고 변형대의 변화를 가른다",
@@ -32578,7 +32592,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13401662/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13401662/",
+    "marked": ""
    },
    {
     "id": "f2",
@@ -32598,7 +32613,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/",
+    "marked": ""
    }
   ],
   "diagramTitle": "임신 초기 질출혈 — 자궁 안에 무엇이 있나",
@@ -36476,7 +36492,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response. Cureus. 2026 May 15;18(5):e108935. doi: 10.7759/cureus.108935 (CC BY) — Figure 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13268218/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13268218/",
+    "marked": ""
    }
   ],
   "diagramTitle": "CRVO 진단 뒤 — 허혈 여부와 추적",
@@ -37392,7 +37409,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report. Case Rep Ophthalmol Med. 2026 Jul 6;2026:7782331. doi: 10.1155/crop/7782331 (CC BY) — Figure 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13338094/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13338094/",
+    "marked": ""
    }
   ],
   "diagramTitle": "백내장 수술 뒤 통증·시력저하 — 안내염의 치료 선택",
@@ -38536,7 +38554,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "The first report of hypohidrotic ectodermal dysplasia caused by a novel mutation and accompanied with pathological femoral neck fracture: A case report. Medicine (Baltimore). 2026 Aug 14;105(33):e50191. doi: 10.1097/MD.0000000000050191 (CC BY) — Figure 2.",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13480871/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13480871/",
+    "marked": ""
    }
   ],
   "diagramTitle": "엉덩관절 골절 — 무엇이 수술 방법을 정하나",
@@ -40196,7 +40215,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 101,
     "credit": "GRAZPEDWRI-DX (figshare, CC BY 4.0)",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193"
+    "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+    "marked": ""
    }
   ],
   "diagramTitle": "소아 손목 외상 — X선 소견에서 치료로",
@@ -41921,7 +41941,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 14435,
     "credit": "Human Protein Atlas, GATA3 / Breast (CC BY 4.0), https://images.proteinatlas.org/16217/140542_B_2_4.jpg",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast"
+    "url": "https://www.proteinatlas.org/ENSG00000107485-GATA3/tissue/Breast",
+    "marked": ""
    }
   ],
   "diagramTitle": "유방 조직 IHC — 이 표지의 용도는?",
@@ -42785,7 +42806,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy. Cureus. 2025 May 1;17(5):e83327. doi: 10.7759/cureus.83327 (CC BY) — Figure 5",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12127705/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12127705/",
+    "marked": ""
    }
   ],
   "diagramTitle": "신장 병변 읽기 — 혈관 병인가 사구체 병인가",
@@ -43600,7 +43622,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 14435,
     "credit": "Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer"
+    "url": "https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer",
+    "marked": ""
    }
   ],
   "diagramTitle": "고환 종괴의 면역염색 사진 — 누가 종양인가",
@@ -46928,7 +46951,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Delayed diagnosis of incomplete Kawasaki disease in a 3-month-old infant leading to giant coronary aneurysms. Oxf Med Case Reports. 2026 Jun 8;2026(6):omag086. doi: 10.1093/omcr/omag086 (CC BY) — Figure 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13243305/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13243305/",
+    "marked": ""
    }
   ],
   "diagramTitle": "가와사키병 급성기 — 무엇을, 언제",
@@ -50308,7 +50332,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Atypical Hemolytic Uremic Syndrome With Hypocellular Bone Marrow: A Report of a Rare Case. Cureus. 2026 Jun 29;18(6):e111698. doi: 10.7759/cureus.111698 (CC BY) — Figure 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13416571/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13416571/",
+    "marked": ""
    }
   ],
   "diagramTitle": "혈성 설사 뒤 창백·핍뇨 — 전형적 STEC-HUS 인가, 치료는 무엇인가",
@@ -58403,7 +58428,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient. Cureus. 2026 Jan 30;18(1):e102660. doi: 10.7759/cureus.102660 (CC BY) — Figure 3",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12950287/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12950287/",
+    "marked": ""
    }
   ],
   "diagramTitle": "확진된 폐색전증 — 혈압이 먼저, 쇼크면 금기를 보고 재관류 수단을 고른다",
@@ -63389,7 +63415,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": null,
     "credit": "An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico. Cureus. 2025 Aug 14;17(8):e90076. doi: 10.7759/cureus.90076 (CC BY) — Figure 1",
     "license": "CC BY",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12433238/"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12433238/",
+    "marked": ""
    }
   ],
   "diagramTitle": "소아 자반 — 혈소판에서 시작한다",
@@ -66010,7 +66037,8 @@ window.MEDKOS_CONCEPTS = {
     "citedBy": 14435,
     "credit": "Human Protein Atlas, INSL3 / Testis (CC BY 4.0), https://images.proteinatlas.org/28615/59764_A_5_6.jpg",
     "license": "Creative Commons Attribution 4.0 International",
-    "url": "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis"
+    "url": "https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis",
+    "marked": ""
    }
   ],
   "diagramTitle": "고환 조직 사진 — 염색된 세포와 호르몬 연결",

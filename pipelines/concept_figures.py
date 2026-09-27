@@ -89,6 +89,12 @@ FIGURE_SOURCES: dict[str, dict[str, Any]] = {
         "reference": "조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)",
         "paper": "Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419",
         "doi": "10.1126/science.1260419", "cited_by": 14435},
+    # 판독의 윤곽(LIDC XML)으로 고른 슬라이스만(exam-builder `opendata fetch-nodules`, 2026-09-27). 위치로 고른 옛 슬라이스는 제외 그대로.
+    "TCIA_LIDC_IDRI": {
+        "kind": "ct", "basis": "dataset_expert",
+        "reference": "흉부영상의학과 판독의 4명 중 3명 이상이 바로 이 슬라이스에 결절 윤곽을 그렸다(LIDC XML 합의)",
+        "paper": "Armato SG 3rd 외. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): a completed reference database of lung nodules on CT scans. Med Phys 2011;38(2):915-931",
+        "doi": "10.1118/1.3528204", "cited_by": 2481},
     "PMC_OA": {
         "kind": None, "basis": "published_figure",
         "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
@@ -144,8 +150,10 @@ def eligibility(r: dict) -> list[str]:
     L = r.get("label") or {}
     if r.get("status") == "REJECTED":
         why.append("풀에서 폐기된 자산")
-    if src in EXCLUDED_SOURCES:
-        why.append(EXCLUDED_SOURCES[src])
+    ann = L.get("annotation") if isinstance(L.get("annotation"), dict) else {}
+    contour_ok = src == "TCIA_LIDC_IDRI" and ann.get("source") == "LIDC XML" and int(ann.get("readers_on_slice") or 0) >= 3
+    if src in EXCLUDED_SOURCES and not contour_ok:
+        why.append(EXCLUDED_SOURCES[src] + (" — 판독의 윤곽으로 고른 슬라이스(fetch-nodules)만 쓸 수 있다" if src == "TCIA_LIDC_IDRI" else ""))
     elif src not in FIGURE_SOURCES:
         why.append(f"라벨 근거를 확인하지 않은 출처({src})")
     lic = str(r.get("license_name") or "")
@@ -193,6 +201,12 @@ def dataset_label(r: dict) -> str:
         n = len([o for o in L.get("objects") or [] if isinstance(o, dict) and "fract" in str(o.get("name", ""))])
         ao = f" · AO/OTA 소아 분류 {L['ao_classification']}" if L.get("ao_classification") else ""
         return f"{L.get('primary')}{ao}" + (f" — 골절 주석 상자 {n}개" if n else "")
+    if src == "TCIA_LIDC_IDRI":
+        a = L.get("annotation") or {}
+        ch = a.get("characteristics_mean") or {}
+        d = f", 윤곽 긴 지름 약 {a['diameter_mm_est']} mm" if a.get("diameter_mm_est") else ""
+        m = f" · 판독의 악성 의심 점수 평균 {ch['malignancy']}/5(주관 평가 — 병리 확진 아님)" if ch.get("malignancy") else ""
+        return f"{L.get('primary')} — 판독의 {a.get('readers_on_slice')}/4 명이 이 슬라이스에 윤곽{d}{m}"
     if src == "PMC_OA":
         return f"「{str(L.get('caption_full') or '').strip()}」 — {L.get('article_title') or ''}"
     return str(L.get("primary") or "")
@@ -285,7 +299,7 @@ def section_titles(path: Path) -> list[str]:
 
 
 # ── 파일 옮기기 ──────────────────────────────────────────────────────────────
-def copy_image(r: dict, builder: Path, crop: str = "") -> str:
+def copy_image(r: dict, builder: Path, crop: str = "", mark: bool = False) -> str:
     """풀 파일을 docs/assets/figures/ 로(긴 변 MAX_PX 로 줄여). 반환 = 저장소 상대경로(docs/ 기준 아님)."""
     from PIL import Image
     src = builder / "open_assets" / str(r["file"])
@@ -294,6 +308,16 @@ def copy_image(r: dict, builder: Path, crop: str = "") -> str:
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     stem = re.sub(r"[^a-z0-9._-]+", "-", str(r["asset_id"]).lower()).strip("-")
     im = Image.open(src)
+    if mark:                                        # 데이터셋 주석 위치(상자)를 노란 테두리로 — 자르기 전 원본 좌표
+        from PIL import ImageDraw
+        im = im.convert("RGB")
+        d = ImageDraw.Draw(im)
+        wpx = max(2, round(max(im.size) / 300))
+        for o in (r.get("label") or {}).get("objects") or []:
+            if isinstance(o, dict) and o.get("name") != "text":
+                pad = max(4, round(max(im.size) / 90))
+                d.rectangle([o["xmin"] - pad, o["ymin"] - pad, o["xmax"] + pad, o["ymax"] + pad], outline=(255, 200, 0), width=wpx)
+        stem += "-mark"
     if crop:                                        # 여러 패널 그림에서 한 패널만(원본 픽셀) — 자르기만, 늘이기·보정 없음
         x0, y0, x1, y1 = (int(v) for v in crop.split(","))
         im = im.crop((x0, y0, x1, y1))
@@ -310,7 +334,8 @@ def copy_image(r: dict, builder: Path, crop: str = "") -> str:
     return str(out.relative_to(ROOT)).replace("\\", "/")
 
 
-def figure_record(r: dict, file: str, at: str, shows: str, look: list[str], from_q: str = "", privacy: str = "", crop: str = "") -> dict:
+def figure_record(r: dict, file: str, at: str, shows: str, look: list[str], from_q: str = "", privacy: str = "", crop: str = "",
+                  mark: bool = False) -> dict:
     ref = reference_of(r)
     rec = {
         "id": "", "file": file, "kind": kind_of(r), "at": at, "shows": shows, "look_for": look,
@@ -328,6 +353,8 @@ def figure_record(r: dict, file: str, at: str, shows: str, look: list[str], from
         rec["privacy_check"] = privacy
     if crop:
         rec["crop"] = crop
+    if mark:
+        rec["marked"] = "노란 테두리 = 데이터셋 주석 위치(판독의·전문가가 표시한 곳)"
     return rec
 
 
@@ -473,6 +500,7 @@ def main(argv: list[str]) -> int:
     p.add_argument("--look", action="append", required=True); p.add_argument("--from-question", default="")
     p.add_argument("--privacy-checked", default="", help="그림을 직접 보고 확인한 것(얼굴·문신·이름·병원 표지 없음) — 개인정보 게이트가 검토 전인 PMC 그림에 필요")
     p.add_argument("--crop", default="", help="한 패널만 x0,y0,x1,y1(원본 픽셀)")
+    p.add_argument("--mark", action="store_true", help="데이터셋 주석 상자(결절·골절 위치)를 노란 테두리로 표시")
     p = sub.add_parser("want")
     p.add_argument("concept"); p.add_argument("--source", required=True); p.add_argument("--shows", required=True)
     for k in ("codes", "diagnoses", "genes", "tissues"):
@@ -517,8 +545,10 @@ def main(argv: list[str]) -> int:
             print("이미 붙어 있다"); return 0
         if len(figs) >= MAX_FIGURES:
             raise SystemExit(f"그림은 {MAX_FIGURES}개까지")
-        rec = figure_record(r, copy_image(r, builder, a.crop), a.at, a.shows.strip(), [x.strip() for x in a.look], a.from_question,
-                            a.privacy_checked.strip() if _privacy_only(why) else "", a.crop)
+        if a.mark and not any(isinstance(o, dict) and o.get("name") != "text" for o in (r.get("label") or {}).get("objects") or []):
+            raise SystemExit("--mark: 이 자산에는 데이터셋 주석 상자가 없다")
+        rec = figure_record(r, copy_image(r, builder, a.crop, a.mark), a.at, a.shows.strip(), [x.strip() for x in a.look], a.from_question,
+                            a.privacy_checked.strip() if _privacy_only(why) else "", a.crop, a.mark)
         rec["id"] = f"f{max([int(str(f.get('id', 'f0'))[1:] or 0) for f in figs] + [0]) + 1}"
         figs.append(rec)
         set_fm_key(path, "figures", figs)

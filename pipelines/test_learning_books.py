@@ -1104,6 +1104,22 @@ class ConceptFigures(unittest.TestCase):
             both = {"figures": [self._fig(root)], "figures_none": "그림이 필요 없는 주제"}
             self.assertTrue(any("하나만" in e for e in cf.validate_figures(both, ["진단"], root)))
 
+    def test_lidc_only_contour_selected_slices(self):
+        cf = self.cf
+        base = {"asset_id": "L1", "source_id": "TCIA_LIDC_IDRI", "status": "AUTO_READY", "file": "x.png", "modality": "CT",
+                "license_name": "Creative Commons Attribution 3.0 Unported", "gates": {"rights": {"status": "PASS"}, "privacy": {"status": "PASS"}},
+                "label": {"grade": "B", "primary": "chest CT lung window"}}
+        self.assertTrue(any("작성자 판독" in w for w in cf.eligibility(base)))
+        good = copy.deepcopy(base)
+        good["label"] = {"grade": "A", "primary": "pulmonary nodule — solid",
+                         "annotation": {"source": "LIDC XML", "readers_on_slice": 4, "diameter_mm_est": 21.4,
+                                        "characteristics_mean": {"malignancy": 4.25}}}
+        self.assertEqual(cf.eligibility(good), [])
+        self.assertIn("4/4", cf.dataset_label(good))
+        self.assertIn("병리 확진 아님", cf.dataset_label(good))
+        two = copy.deepcopy(good); two["label"]["annotation"]["readers_on_slice"] = 2
+        self.assertTrue(cf.eligibility(two))
+
     def test_request_key_matches_exam_builder(self):
         # exam-builder opendata/demand.py request_key 와 같은 벡터(PMC 그림 ↔ 요청 연결)
         self.assertEqual(self.cf.request_key("cn.x.y.z", {"source": "PMC_OA", "query": "q"}), "9b23ada3fb8c")
