@@ -169,7 +169,8 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   단원 머리(제목·학습 목표·한눈에)는 한 덩어리. 도식은 항목 경계에서만 줄바꿈(`dd.phrase_wrap`)하고, 한 단에서 글자가 너무
   작아지면 **두 단 전체**(`diablock` — 「도식에 담기지 않은 조건·예외」까지 붙여 쪼개지 않음). 검증: 빈 단·고립 제목·도식 크기 +
   **두 단 도식 위·아래 좁은 띠(<20%, 좌→우→다음 쪽으로 오가며 읽힘)**. 배치 탐색은 두 단 도식을 먼저 0.88·0.76배로 줄여 보고
-  (글자 ≥ 5.6pt), 다음에 자리를 옮긴다. 약·약군 이름은 **english(한글)**(단원 첫 등장, 그 뒤 english) — `pipelines/english_terms.py`,
+  (글자 ≥ 5.6pt), 아래 여백(14·28·42 mm)으로 좁은 띠를 다음 쪽으로 넘기거나 한 단으로 바꿔 보고(한 단 ≥ 5.2pt), 다음에 자리를 옮긴다.
+  그림도 같은 절 안 자리 → 0.85·0.75배 축소를 시도한다. 단원 머리는 제목+학습 목표만 붙이고 긴 「한눈에」는 쪽을 넘길 수 있다(판형 11). 약·약군 이름은 **english(한글)**(단원 첫 등장, 그 뒤 english) — `pipelines/english_terms.py`,
   표는 `content/glossary/drugs_ko_en.yaml` → `python pipelines/verify_glossary.py`(약 = RxNorm, 약군 = MeSH 로 확인된 것만
   `verified.json` 에 들어가고 조판은 그것만 쓴다. 새 약 이름은 표에 넣고 확인 — 영어를 지어내지 않는다). 원고는 한글로 둔다.
   판형·도식 배치를 바꾸면 `books_config.yaml template_version` 을 올린다. PDF 에 실리지 않는 학습 기록(메모·열람)만 바뀌면
