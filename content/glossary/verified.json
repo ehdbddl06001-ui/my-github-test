@@ -1,0 +1,488 @@
+{
+ "drugs": {
+  "메토트렉세이트": {
+   "en": "methotrexate",
+   "rxcui": "6851"
+  },
+  "히드록시클로로퀸": {
+   "en": "hydroxychloroquine",
+   "rxcui": "5521"
+  },
+  "하이드록시클로로퀸": {
+   "en": "hydroxychloroquine",
+   "rxcui": "5521"
+  },
+  "리툭시맙": {
+   "en": "rituximab",
+   "rxcui": "121191"
+  },
+  "프레드니손": {
+   "en": "prednisone",
+   "rxcui": "8640"
+  },
+  "프레드니솔론": {
+   "en": "prednisolone",
+   "rxcui": "8638"
+  },
+  "메틸프레드니솔론": {
+   "en": "methylprednisolone",
+   "rxcui": "6902"
+  },
+  "멕실레틴": {
+   "en": "mexiletine",
+   "rxcui": "6926"
+  },
+  "메실레틴": {
+   "en": "mexiletine",
+   "rxcui": "6926"
+  },
+  "설파살라진": {
+   "en": "sulfasalazine",
+   "rxcui": "9524"
+  },
+  "딜티아젬": {
+   "en": "diltiazem",
+   "rxcui": "3443"
+  },
+  "프로프라놀롤": {
+   "en": "propranolol",
+   "rxcui": "8787"
+  },
+  "미코페놀레이트": {
+   "en": "mycophenolate",
+   "rxcui": "265323"
+  },
+  "베라파밀": {
+   "en": "verapamil",
+   "rxcui": "11170"
+  },
+  "아데노신": {
+   "en": "adenosine",
+   "rxcui": "296"
+  },
+  "아미오다론": {
+   "en": "amiodarone",
+   "rxcui": "703"
+  },
+  "토실리주맙": {
+   "en": "tocilizumab",
+   "rxcui": "612865"
+  },
+  "아스피린": {
+   "en": "aspirin",
+   "rxcui": "1191"
+  },
+  "사이클로포스파미드": {
+   "en": "cyclophosphamide",
+   "rxcui": "3002"
+  },
+  "사이클로포스파마이드": {
+   "en": "cyclophosphamide",
+   "rxcui": "3002"
+  },
+  "니트로프루시드": {
+   "en": "nitroprusside",
+   "rxcui": "7476"
+  },
+  "에타너셉트": {
+   "en": "etanercept",
+   "rxcui": "214555"
+  },
+  "메토프롤롤": {
+   "en": "metoprolol",
+   "rxcui": "6918"
+  },
+  "둘록세틴": {
+   "en": "duloxetine",
+   "rxcui": "72625"
+  },
+  "아자티오프린": {
+   "en": "azathioprine",
+   "rxcui": "1256"
+  },
+  "에스몰롤": {
+   "en": "esmolol",
+   "rxcui": "49737"
+  },
+  "라베탈롤": {
+   "en": "labetalol",
+   "rxcui": "6185"
+  },
+  "하이드랄라진": {
+   "en": "hydralazine",
+   "rxcui": "5470"
+  },
+  "히드랄라진": {
+   "en": "hydralazine",
+   "rxcui": "5470"
+  },
+  "아미트립틸린": {
+   "en": "amitriptyline",
+   "rxcui": "704"
+  },
+  "벨리무맙": {
+   "en": "belimumab",
+   "rxcui": "1092437"
+  },
+  "아달리무맙": {
+   "en": "adalimumab",
+   "rxcui": "327361"
+  },
+  "프레가발린": {
+   "en": "pregabalin",
+   "rxcui": "187832"
+  },
+  "밀나시프란": {
+   "en": "milnacipran",
+   "rxcui": "588250"
+  },
+  "아니프롤루맙": {
+   "en": "anifrolumab",
+   "rxcui": "2565265"
+  },
+  "플레카이니드": {
+   "en": "flecainide",
+   "rxcui": "4441"
+  },
+  "나프록센": {
+   "en": "naproxen",
+   "rxcui": "7258"
+  },
+  "트라마돌": {
+   "en": "tramadol",
+   "rxcui": "10689"
+  },
+  "사이클로벤자프린": {
+   "en": "cyclobenzaprine",
+   "rxcui": "21949"
+  },
+  "에쿨리주맙": {
+   "en": "eculizumab",
+   "rxcui": "591781"
+  },
+  "캅토프릴": {
+   "en": "captopril",
+   "rxcui": "1998"
+  },
+  "타크로리무스": {
+   "en": "tacrolimus",
+   "rxcui": "42316"
+  },
+  "알테플라제": {
+   "en": "alteplase",
+   "rxcui": "8410"
+  },
+  "에날라프릴랏": {
+   "en": "enalaprilat",
+   "rxcui": "3829"
+  },
+  "이부틸리드": {
+   "en": "ibutilide",
+   "rxcui": "41289"
+  },
+  "도페틸리드": {
+   "en": "dofetilide",
+   "rxcui": "49247"
+  },
+  "프로파페논": {
+   "en": "propafenone",
+   "rxcui": "8754"
+  },
+  "아테놀롤": {
+   "en": "atenolol",
+   "rxcui": "1202"
+  },
+  "온단세트론": {
+   "en": "ondansetron",
+   "rxcui": "26225"
+  },
+  "프로카인아마이드": {
+   "en": "procainamide",
+   "rxcui": "8700"
+  },
+  "프로카인아미드": {
+   "en": "procainamide",
+   "rxcui": "8700"
+  },
+  "디소피라미드": {
+   "en": "disopyramide",
+   "rxcui": "3541"
+  },
+  "이소프로테레놀": {
+   "en": "isoproterenol",
+   "rxcui": "6054"
+  },
+  "세쿠키누맙": {
+   "en": "secukinumab",
+   "rxcui": "1599788"
+  },
+  "익세키주맙": {
+   "en": "ixekizumab",
+   "rxcui": "1745099"
+  },
+  "인플릭시맙": {
+   "en": "infliximab",
+   "rxcui": "191831"
+  },
+  "이부프로펜": {
+   "en": "ibuprofen",
+   "rxcui": "5640"
+  },
+  "멜록시캄": {
+   "en": "meloxicam",
+   "rxcui": "41493"
+  },
+  "골리무맙": {
+   "en": "golimumab",
+   "rxcui": "819300"
+  },
+  "세르톨리주맙": {
+   "en": "certolizumab pegol",
+   "rxcui": "709271"
+  },
+  "토파시티닙": {
+   "en": "tofacitinib",
+   "rxcui": "1357536"
+  },
+  "우파다시티닙": {
+   "en": "upadacitinib",
+   "rxcui": "2196092"
+  },
+  "알로푸리놀": {
+   "en": "allopurinol",
+   "rxcui": "519"
+  },
+  "셀레콕시브": {
+   "en": "celecoxib",
+   "rxcui": "140587"
+  },
+  "리바비린": {
+   "en": "ribavirin",
+   "rxcui": "9344"
+  },
+  "옥시코돈": {
+   "en": "oxycodone",
+   "rxcui": "7804"
+  },
+  "가바펜틴": {
+   "en": "gabapentin",
+   "rxcui": "25480"
+  },
+  "페니실라민": {
+   "en": "penicillamine",
+   "rxcui": "7975"
+  },
+  "노르에피네프린": {
+   "en": "norepinephrine",
+   "rxcui": "7512"
+  },
+  "헤파린": {
+   "en": "heparin",
+   "rxcui": "235473"
+  },
+  "에녹사파린": {
+   "en": "enoxaparin",
+   "rxcui": "67108"
+  },
+  "와파린": {
+   "en": "warfarin",
+   "rxcui": "11289"
+  },
+  "아세트아미노펜": {
+   "en": "acetaminophen",
+   "rxcui": "161"
+  },
+  "레트로졸": {
+   "en": "letrozole",
+   "rxcui": "72965"
+  },
+  "사이프로헵타딘": {
+   "en": "cyproheptadine",
+   "rxcui": "3013"
+  },
+  "사이클로스포린": {
+   "en": "cyclosporine",
+   "rxcui": "3008"
+  },
+  "클로니딘": {
+   "en": "clonidine",
+   "rxcui": "2599"
+  },
+  "이트라코나졸": {
+   "en": "itraconazole",
+   "rxcui": "28031"
+  },
+  "반코마이신": {
+   "en": "vancomycin",
+   "rxcui": "11124"
+  },
+  "플루코나졸": {
+   "en": "fluconazole",
+   "rxcui": "4450"
+  },
+  "보리코나졸": {
+   "en": "voriconazole",
+   "rxcui": "121243"
+  },
+  "포사코나졸": {
+   "en": "posaconazole",
+   "rxcui": "282446"
+  },
+  "케토코나졸": {
+   "en": "ketoconazole",
+   "rxcui": "6135"
+  },
+  "이사부코나졸": {
+   "en": "isavuconazonium",
+   "rxcui": "1608322"
+  },
+  "옥사실린": {
+   "en": "oxacillin",
+   "rxcui": "7773"
+  },
+  "나프실린": {
+   "en": "nafcillin",
+   "rxcui": "7233"
+  },
+  "에리트로마이신": {
+   "en": "erythromycin",
+   "rxcui": "4053"
+  },
+  "아목시실린": {
+   "en": "amoxicillin",
+   "rxcui": "723"
+  },
+  "클라리트로마이신": {
+   "en": "clarithromycin",
+   "rxcui": "21212"
+  },
+  "디곡신": {
+   "en": "digoxin",
+   "rxcui": "3407"
+  },
+  "에피네프린": {
+   "en": "epinephrine",
+   "rxcui": "3992"
+  },
+  "도부타민": {
+   "en": "dobutamine",
+   "rxcui": "3616"
+  },
+  "도파민": {
+   "en": "dopamine",
+   "rxcui": "3628"
+  },
+  "니트로글리세린": {
+   "en": "nitroglycerin",
+   "rxcui": "4917"
+  },
+  "클로피도그렐": {
+   "en": "clopidogrel",
+   "rxcui": "32968"
+  },
+  "아토르바스타틴": {
+   "en": "atorvastatin",
+   "rxcui": "83367"
+  }
+ },
+ "classes": {
+  "베타차단제": {
+   "en": "beta-blocker",
+   "mesh": "D000319",
+   "mesh_label": "Adrenergic beta-Antagonists"
+  },
+  "칼슘통로차단제": {
+   "en": "calcium channel blocker",
+   "mesh": "D002121",
+   "mesh_label": "Calcium Channel Blockers"
+  },
+  "칼슘차단제": {
+   "en": "calcium channel blocker",
+   "mesh": "D002121",
+   "mesh_label": "Calcium Channel Blockers"
+  },
+  "항말라리아제": {
+   "en": "antimalarial",
+   "mesh": "D000962",
+   "mesh_label": "Antimalarials"
+  },
+  "항부정맥제": {
+   "en": "antiarrhythmic",
+   "mesh": "D000889",
+   "mesh_label": "Anti-Arrhythmia Agents"
+  },
+  "혈전용해제": {
+   "en": "thrombolytic",
+   "mesh": "D005343",
+   "mesh_label": "Fibrinolytic Agents"
+  },
+  "항응고제": {
+   "en": "anticoagulant",
+   "mesh": "D000925",
+   "mesh_label": "Anticoagulants"
+  },
+  "항혈소판제": {
+   "en": "antiplatelet agent",
+   "mesh": "D010975",
+   "mesh_label": "Platelet Aggregation Inhibitors"
+  },
+  "면역억제제": {
+   "en": "immunosuppressant",
+   "mesh": "D007166",
+   "mesh_label": "Immunosuppressive Agents"
+  },
+  "비스테로이드소염제": {
+   "en": "NSAID",
+   "mesh": "D000893",
+   "mesh_label": "Anti-Inflammatory Agents"
+  },
+  "글루코코르티코이드": {
+   "en": "glucocorticoid",
+   "mesh": "D005938",
+   "mesh_label": "Glucocorticoids"
+  },
+  "당질코르티코이드": {
+   "en": "glucocorticoid",
+   "mesh": "D005938",
+   "mesh_label": "Glucocorticoids"
+  },
+  "마크롤라이드": {
+   "en": "macrolide",
+   "mesh": "D018942",
+   "mesh_label": "Macrolides"
+  },
+  "플루오로퀴놀론": {
+   "en": "fluoroquinolone",
+   "mesh": "D024841",
+   "mesh_label": "Fluoroquinolones"
+  },
+  "세팔로스포린": {
+   "en": "cephalosporin",
+   "mesh": "D002511",
+   "mesh_label": "Cephalosporins"
+  },
+  "오피오이드": {
+   "en": "opioid",
+   "mesh": "D000700",
+   "mesh_label": "Analgesics"
+  },
+  "안지오텐신전환효소억제제": {
+   "en": "ACE inhibitor",
+   "mesh": "D000806",
+   "mesh_label": "Angiotensin-Converting Enzyme Inhibitors"
+  },
+  "항정신병약": {
+   "en": "antipsychotic",
+   "mesh": "D014150",
+   "mesh_label": "Antipsychotic Agents"
+  },
+  "혈관확장제": {
+   "en": "vasodilator",
+   "mesh": "D014665",
+   "mesh_label": "Vasodilator Agents"
+  }
+ },
+ "failed": [
+  "drug 페니실린 → penicillin"
+ ]
+}

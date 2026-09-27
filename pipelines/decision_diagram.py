@@ -197,6 +197,107 @@ def wrap(text: str, max_em: float) -> list[str]:
     return [x for x in out if x != ""] or [""]
 
 
+# ── 항목 단위 줄바꿈(학습서, 2026-09-27) ────────────────────────────────
+# 옛 줄바꿈(wrap)은 칸 폭에 닿는 곳에서 끊어 「혈액학 · 장막염)」「(이 도식 / 범위 밖)」처럼 한 항목이 두 줄로 갈렸다.
+# 여기서는 끊는 자리에 값을 매긴다: 쉼표 뒤·연산자(→ + — ±) 앞 = 0, 연산자 뒤·가운뎃점·닫는 괄호 뒤 = 1, 여는 괄호 앞 = 2,
+# 괄호 밖 공백 = 3, 괄호 안 = 6, 글자 중간 = 40. 줄 수를 먼저 줄이고, 끊는 값 + 들쭉날쭉 + 외톨이 줄이 가장 작은 조합을 고른다.
+# 웹(좁은 세로 화면)은 옛 wrap 을 그대로 쓴다 — layout(wrap_fn=phrase_wrap) 으로 고른다.
+_STRONG = (",", ";", ":", "?", ".")
+_OPS = ("→", "+", "—", "±")
+
+
+def _pieces(para: str) -> list[list]:
+    out, cur, depth = [], "", 0
+    for i, c in enumerate(para):
+        cur += c
+        depth += (c in "([") - (c in ")]")
+        nxt = para[i + 1] if i + 1 < len(para) else ""
+        if (c == " " or c in "·/)" or nxt in "→(") and nxt not in "·,.;:)":
+            if not cur.strip():
+                continue
+            s = cur.rstrip()
+            if depth > 0:
+                pen = 6
+            elif s.endswith(_STRONG) or para[i + 1:i + 2] in _OPS:
+                pen = 0
+            elif s.endswith(_OPS):
+                pen = 1
+            elif nxt == "(":
+                pen = 2
+            elif s.endswith("·") or s.endswith(")"):
+                pen = 1
+            else:
+                pen = 3
+            out.append([cur, pen])
+            cur = ""
+    if cur:
+        out.append([cur, 0])
+    return out
+
+
+def phrase_wrap(text: str, max_em: float) -> list[str]:
+    lines: list[str] = []
+    for para in str(text).split("\n"):
+        toks: list[list] = []
+        for tok, pen in _pieces(para):                 # 한 조각이 한 줄보다 길면 글자로 나눈다(값 40)
+            while sum(_cw(c) for c in tok.rstrip()) > max_em:
+                cut, cw = "", 0.0
+                for c in tok:
+                    if cw + _cw(c) > max_em:
+                        break
+                    cut += c
+                    cw += _cw(c)
+                toks.append([cut, 40])
+                tok = tok[len(cut):]
+            toks.append([tok, pen])
+        n = len(toks)
+        if n == 0:
+            continue
+        W = [sum(_cw(c) for c in tk) for tk, _ in toks]
+        best: list = [None] * (n + 1)
+        best[n] = (0.0, [])
+        for i in range(n - 1, -1, -1):
+            w, cand = 0.0, None
+            for j in range(i + 1, n + 1):
+                w += W[j - 1]
+                wr = w - W[j - 1] + sum(_cw(c) for c in toks[j - 1][0].rstrip())
+                if wr > max_em and j > i + 1:
+                    break
+                last = j == n
+                slack = (max_em - wr) / max_em
+                cost = 100 + (0 if last else toks[j - 1][1] * 4) + (0 if last else slack ** 2 * 12)
+                if (i > 0 or not last) and wr < 0.34 * max_em:
+                    cost += 18                          # 외톨이 줄(「생명·」만 한 줄)
+                tot = cost + best[j][0]
+                if cand is None or tot < cand[0]:
+                    cand = (tot, [j] + best[j][1])
+            best[i] = cand
+        i = 0
+        for j in best[0][1]:
+            lines.append("".join(tk for tk, _ in toks[i:j]).strip())
+            i = j
+    return [x for x in lines if x] or [""]
+
+
+def bad_breaks(geo: dict, spec: dict) -> int:
+    """항목 중간(끊는 값 ≥ 3)에서 끊긴 줄 수 — 학습서가 도식 폭을 고르는 기준."""
+    txt = {str(n["id"]): str(n["text"]) for n in spec["nodes"]}
+    bad = 0
+    for n in geo["nodes"]:
+        ends: dict[str, int] = {}
+        for para in txt[n["id"]].split("\n"):
+            acc = ""
+            for tk, pen in _pieces(para):
+                acc += tk
+                ends[acc.strip().replace(" ", "")] = pen
+        run = ""
+        for ln in n["lines"][:-1]:
+            run = (run + " " + ln).strip() if run else ln
+            pen = ends.get(run.replace(" ", ""))
+            bad += 1 if pen is None or pen >= 3 else 0
+    return bad
+
+
 def _tokens(s: str) -> list[str]:
     toks, cur = [], ""
     for c in s:
@@ -291,9 +392,10 @@ def _assign_tracks(pieces: list[dict]) -> int:
     return max(done.values()) + 1 if done else 0
 
 
-def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = "auto", col_gap: int = COL_GAP) -> dict:
+def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = "auto", col_gap: int = COL_GAP, wrap_fn=None) -> dict:
     """노드 좌표·선 경로·라벨 위치. 웹은 기본 폭(좁은 세로 화면), PDF 는 넓은 노드로 높이를 줄여 같은 그래프를 그린다.
     층 사이 높이는 그 틈에 실제로 필요한 만큼(라벨 + 가로선 트랙)만 둔다. rank_gap 에 수를 주면 그 절반이 최소 높이다."""
+    wrap_ = wrap_fn or wrap
     errs = validate(spec)
     if errs:
         raise DiagramError("; ".join(errs))
@@ -317,7 +419,7 @@ def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = "auto", col_g
     max_em = (node_w - 2 * PAD_X) / FONT
     geo_nodes: dict[str, dict] = {}
     for n in ids:
-        lines = wrap(nodes[n]["text"], max_em)
+        lines = wrap_(nodes[n]["text"], max_em)
         geo_nodes[n] = dict(id=n, kind=nodes[n]["kind"], kindLabel=KINDS[nodes[n]["kind"]], lines=lines,
                             w=node_w, h=8 + TOP_LINE + LINE_H * len(lines) + 6)
 
@@ -448,12 +550,12 @@ def layout(spec: dict, node_w: int = NODE_W, rank_gap: int | str = "auto", col_g
             lo = ports[i - 1] + 5 if i > 0 else n_left
             hi = ports[i + 1] - 5 if i + 1 < len(ports) else n_right
             room = max(min(cx - lo, hi - cx) * 2, 40.0) if 0 < i < len(ports) - 1 else max(hi - lo, 40.0)
-            llines = wrap(text, max(4.0, (room - 8) / LABEL_FONT))
+            llines = wrap_(text, max(4.0, (room - 8) / LABEL_FONT))
             if len(llines) > 3:                               # 칸이 너무 좁으면 넓히고 엇갈려 놓는다(글은 자르지 않는다)
                 w_ = room
                 while len(llines) > 2 and w_ < node_w:
                     w_ += 12
-                    llines = wrap(text, max(4.0, (w_ - 8) / LABEL_FONT))
+                    llines = wrap_(text, max(4.0, (w_ - 8) / LABEL_FONT))
             lw = max(sum(_cw(c) for c in ln) for ln in llines) * LABEL_FONT + 8
             lx = min(max(cx - lw / 2, lo), hi - lw) if lw <= hi - lo else cx - lw / 2
             lx = min(max(lx, cx - lw + 6), cx - 6)            # 제 선은 반드시 라벨 안을 지난다

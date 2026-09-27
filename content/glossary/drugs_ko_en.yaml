@@ -1,0 +1,121 @@
+# 한글 약·약군 이름 → 영어. 학습서 조판이 「english(한글)」로 쓴다(pipelines/english_terms.py).
+# 약 = RxNorm 정확 일치, 약군 = MeSH 표목(check)으로 확인한 것만 verified.json 에 들어가고, 조판은 verified.json 만 쓴다.
+# 추가·수정 뒤: python pipelines/verify_glossary.py (NLM RxNav·MeSH API 조회 — 네트워크 필요)
+drugs:
+  메토트렉세이트: methotrexate
+  히드록시클로로퀸: hydroxychloroquine
+  하이드록시클로로퀸: hydroxychloroquine
+  리툭시맙: rituximab
+  프레드니손: prednisone
+  프레드니솔론: prednisolone
+  메틸프레드니솔론: methylprednisolone
+  멕실레틴: mexiletine
+  메실레틴: mexiletine
+  설파살라진: sulfasalazine
+  딜티아젬: diltiazem
+  프로프라놀롤: propranolol
+  미코페놀레이트: mycophenolate
+  베라파밀: verapamil
+  아데노신: adenosine
+  아미오다론: amiodarone
+  토실리주맙: tocilizumab
+  아스피린: aspirin
+  사이클로포스파미드: cyclophosphamide
+  사이클로포스파마이드: cyclophosphamide
+  니트로프루시드: nitroprusside
+  에타너셉트: etanercept
+  메토프롤롤: metoprolol
+  둘록세틴: duloxetine
+  아자티오프린: azathioprine
+  에스몰롤: esmolol
+  라베탈롤: labetalol
+  하이드랄라진: hydralazine
+  히드랄라진: hydralazine
+  아미트립틸린: amitriptyline
+  벨리무맙: belimumab
+  아달리무맙: adalimumab
+  프레가발린: pregabalin
+  밀나시프란: milnacipran
+  아니프롤루맙: anifrolumab
+  플레카이니드: flecainide
+  나프록센: naproxen
+  트라마돌: tramadol
+  사이클로벤자프린: cyclobenzaprine
+  에쿨리주맙: eculizumab
+  캅토프릴: captopril
+  타크로리무스: tacrolimus
+  알테플라제: alteplase
+  에날라프릴랏: enalaprilat
+  이부틸리드: ibutilide
+  도페틸리드: dofetilide
+  프로파페논: propafenone
+  아테놀롤: atenolol
+  온단세트론: ondansetron
+  프로카인아마이드: procainamide
+  프로카인아미드: procainamide
+  디소피라미드: disopyramide
+  이소프로테레놀: isoproterenol
+  세쿠키누맙: secukinumab
+  익세키주맙: ixekizumab
+  인플릭시맙: infliximab
+  이부프로펜: ibuprofen
+  멜록시캄: meloxicam
+  골리무맙: golimumab
+  세르톨리주맙: certolizumab pegol
+  토파시티닙: tofacitinib
+  우파다시티닙: upadacitinib
+  알로푸리놀: allopurinol
+  셀레콕시브: celecoxib
+  리바비린: ribavirin
+  옥시코돈: oxycodone
+  가바펜틴: gabapentin
+  페니실라민: penicillamine
+  노르에피네프린: norepinephrine
+  헤파린: heparin
+  에녹사파린: enoxaparin
+  와파린: warfarin
+  아세트아미노펜: acetaminophen
+  레트로졸: letrozole
+  사이프로헵타딘: cyproheptadine
+  사이클로스포린: cyclosporine
+  클로니딘: clonidine
+  이트라코나졸: itraconazole
+  반코마이신: vancomycin
+  플루코나졸: fluconazole
+  보리코나졸: voriconazole
+  포사코나졸: posaconazole
+  케토코나졸: ketoconazole
+  이사부코나졸: isavuconazonium
+  옥사실린: oxacillin
+  나프실린: nafcillin
+  에리트로마이신: erythromycin
+  아목시실린: amoxicillin
+  클라리트로마이신: clarithromycin
+  페니실린: penicillin
+  디곡신: digoxin
+  에피네프린: epinephrine
+  도부타민: dobutamine
+  도파민: dopamine
+  니트로글리세린: nitroglycerin
+  클로피도그렐: clopidogrel
+  아토르바스타틴: atorvastatin
+classes:
+  베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
+  칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
+  칼슘차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
+  항말라리아제: {en: antimalarial, check: Antimalarials}
+  항부정맥제: {en: antiarrhythmic, check: Anti-Arrhythmia Agents}
+  혈전용해제: {en: thrombolytic, check: Fibrinolytic Agents}
+  항응고제: {en: anticoagulant, check: Anticoagulants}
+  항혈소판제: {en: antiplatelet agent, check: Platelet Aggregation Inhibitors}
+  면역억제제: {en: immunosuppressant, check: Immunosuppressive Agents}
+  비스테로이드소염제: {en: NSAID, check: Anti-Inflammatory Agents, Non-Steroidal}
+  글루코코르티코이드: {en: glucocorticoid, check: Glucocorticoids}
+  당질코르티코이드: {en: glucocorticoid, check: Glucocorticoids}
+  마크롤라이드: {en: macrolide, check: Macrolides}
+  플루오로퀴놀론: {en: fluoroquinolone, check: Fluoroquinolones}
+  세팔로스포린: {en: cephalosporin, check: Cephalosporins}
+  오피오이드: {en: opioid, check: Analgesics, Opioid}
+  안지오텐신전환효소억제제: {en: ACE inhibitor, check: Angiotensin-Converting Enzyme Inhibitors}
+  항정신병약: {en: antipsychotic, check: Antipsychotic Agents}
+  혈관확장제: {en: vasodilator, check: Vasodilator Agents}

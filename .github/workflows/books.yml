@@ -35,7 +35,7 @@ concurrency:
 jobs:
   books:
     runs-on: ubuntu-latest
-    timeout-minutes: 180   # 판형이 바뀌면 20권 전부 다시 만든다(배치 탐색 포함) — 40분에 끊겼다(2026-09-27)
+    timeout-minutes: 340   # 판형이 바뀌면 20권 전부 다시 만든다(배치 탐색 포함) — 40분에 끊겼다(2026-09-27). 세로 2단 판형 10 은 PC 에서 11단원 책 12분
     steps:
       - uses: actions/checkout@v5
         with:
@@ -70,7 +70,7 @@ jobs:
       - name: Tests (코드 — 도식 배치·학습 상태 JS/Python 일치·PDF 렌더·드라이브 보호)
         env:
           PYTHONIOENCODING: utf-8
-        run: python pipelines/test_learning_books.py && python pipelines/test_sync_key.py
+        run: python pipelines/test_learning_books.py && python pipelines/test_sync_key.py && (cd pipelines && python -m unittest test_english_terms)
 
       - name: Content check (실제 정리본·문항 계약 — 실패해도 다른 책은 만든다)
         id: content
