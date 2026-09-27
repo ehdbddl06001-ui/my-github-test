@@ -328,8 +328,29 @@
    "date": "2026-09-25",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0137": {
+   "id": "imaging-2026-0137",
+   "exam": "imaging",
+   "subject": "피부과",
+   "step": "Step 2",
+   "type": "피부 — 노인 등의 색소 병변 더모스코피와 기원 세포",
+   "style": "usmle_style",
+   "modality": "DERMOSCOPY",
+   "question": "The lesion is most likely a proliferation of which of the following cell types?",
+   "chosen": 0,
+   "chosenText": "Melanocytes at the dermoepidermal junction",
+   "answer": 4,
+   "answerText": "Epidermal keratinocytes",
+   "coreNote": "",
+   "differ": "",
+   "decision": "노인 등의 갈색 병변이 더모스코피에서 색소망 없이 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 모양 구조를 보여 지루각화증, 즉 표피 각질세포의 양성 증식이다. 갈색은 각질세포에 옮겨진 멜라닌 때문이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260926T202442Z_일일영상_2026-09-27_10units_10q_7de757ef",
+   "date": "2026-09-27",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-25T12:19:54.103Z"
+ "updated": "2026-09-27T00:40:42.654Z"
 }
