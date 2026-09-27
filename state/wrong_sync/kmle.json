@@ -1028,8 +1028,29 @@
    "date": "2026-09-28",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1186": {
+   "id": "kmle-2026-1186",
+   "exam": "kmle",
+   "subject": "Orthopedics",
+   "step": "",
+   "type": "Knee Pain and Limp in an Obese Adolescent",
+   "style": "",
+   "modality": "",
+   "question": "가장 적절한 치료는?",
+   "chosen": 0,
+   "chosenText": "엉덩관절 수상 석고 고정",
+   "answer": 3,
+   "answerText": "정복 없이 제자리 나사 고정",
+   "coreNote": "",
+   "differ": "",
+   "decision": "비만 청소년의 무릎 연관통, 안쪽돌림 제한과 굽힐 때 강제 바깥돌림, X선의 뼈끝 뒤아래 미끄러짐은 넙다리뼈머리 뼈끝 분리증이다. 목발 없이 걸을 수 있는 안정형이므로 정복 없이 제자리 나사 고정을 한다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-28",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T22:42:49.580Z"
+ "updated": "2026-09-27T22:46:39.347Z"
 }
