@@ -965,8 +965,29 @@
    "date": "2026-09-28",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1193": {
+   "id": "kmle-2026-1193",
+   "exam": "kmle",
+   "subject": "Rheumatology",
+   "step": "",
+   "type": "Acute Monoarthritis of the Knee after Surgery in an Older Adult",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 2,
+   "chosenText": "화농성 관절염",
+   "answer": 0,
+   "answerText": "급성 칼슘피로인산 결정 관절염",
+   "coreNote": "",
+   "differ": "",
+   "decision": "고령자의 수술 뒤 급성 무릎 단관절염에서 관절액의 마름모 모양 약한 양성 복굴절 결정과 반달연골의 선형 석회화는 급성 칼슘피로인산 결정 관절염이다. 그람염색은 음성이지만 화농성 관절염이 함께 있을 수 있어 배양을 확인한다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-28",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T22:21:19.646Z"
+ "updated": "2026-09-27T22:34:43.868Z"
 }
