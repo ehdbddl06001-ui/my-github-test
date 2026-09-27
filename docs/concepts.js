@@ -39881,7 +39881,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-0961"
+   "kmle-2026-0961",
+   "kmle-2026-1186"
   ],
   "hasErrors": false
  },
