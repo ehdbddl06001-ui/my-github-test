@@ -53,7 +53,8 @@ def _figure(f: dict) -> dict | None:
             "shows": str(f.get("shows", "")), "look": [str(x) for x in f.get("look_for") or []],
             "label": str(f.get("label", "")), "basis": str(f.get("label_basis", "")), "reference": str(f.get("reference", "")),
             "paper": str(f.get("paper", "")), "doiUrl": f"https://doi.org/{doi}" if re.fullmatch(r"10\.\S+", doi) else "",
-            "citedBy": f.get("paper_cited_by"), "credit": str(f.get("credit", "")), "license": str(f.get("license", "")), "url": url}
+            "citedBy": f.get("paper_cited_by"), "credit": str(f.get("credit", "")), "license": str(f.get("license", "")), "url": url,
+            "marked": str(f.get("marked", "") or "")}
 
 
 def _web(s, c: dict) -> str:

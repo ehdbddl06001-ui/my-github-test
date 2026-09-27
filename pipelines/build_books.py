@@ -468,7 +468,8 @@ def figure_html(f: dict) -> tuple[str, str, dict]:
            + (f"<ul>{look}</ul>" if look else "")
            + f'<div class="fl"><b>데이터 라벨</b> {esc(f.get("label"))}</div>'
            + f'<div class="fc">라벨 근거: {esc(FIG_BASIS.get(f.get("label_basis"), f.get("label_basis")))} — {esc(f.get("reference"))}{paper}'
-           + f' · 출처 {esc(f.get("credit"))} · {esc(f.get("license"))} · 「보는 곳」은 검토 전 설명</div>')
+           + f' · 출처 {esc(f.get("credit"))} · {esc(f.get("license"))} · 「보는 곳」은 검토 전 설명'
+           + (f' · {esc(f.get("marked"))}' if f.get("marked") else "") + '</div>')
     cls = "fig span" if place == "full" else "fig"
     html_ = (f'<figure class="{cls}"><img src="{path.resolve().as_uri()}" alt="{esc(f.get("shows"))}" '
              f'style="width:{ww:.1f}mm;height:{hh:.1f}mm"><figcaption>{cap}</figcaption></figure>')

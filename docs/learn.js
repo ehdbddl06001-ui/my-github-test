@@ -381,7 +381,7 @@ const LEARN = (() => {
           + `<div class="fig-label"><span class="k">데이터 라벨</span>${escapeHtml(f.label)}</div>`
           + `<div class="muted small">라벨 근거: ${escapeHtml(BASIS[f.basis] || f.basis)} — ${escapeHtml(f.reference)}`
           + (f.paper ? ` · ${escapeHtml(f.paper)}${f.citedBy ? ` (피인용 ${escapeHtml(String(f.citedBy))}회)` : ""}${link(f.doiUrl, "논문")}` : "")
-          + `<br>「보는 곳」 설명은 모델이 쓴 것으로 검토 전입니다.</div></div>`
+          + `<br>「보는 곳」 설명은 모델이 쓴 것으로 검토 전입니다.${f.marked ? " " + escapeHtml(f.marked) : ""}</div></div>`
           + `<div class="muted small fig-credit">${escapeHtml(f.credit)} · ${escapeHtml(f.license)}${link(f.url, "원본")}</div>`
           + `</figcaption></figure>`;
       }).join("") + `</div>`;
