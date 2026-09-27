@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2944,
+  "total": 2954,
   "byType": {
    "anatomy": 739,
+   "imaging": 152,
    "concept": 84,
    "paper": 669,
-   "imaging": 142,
    "kmle": 1131,
    "usmle": 162,
    "ailab": 14,
@@ -38,7 +38,7 @@ window.MEDKOS_INDEX = {
    "General Surgery": 72,
    "Hematology": 69,
    "Laboratory Medicine": 66,
-   "산부인과": 32,
+   "산부인과": 33,
    "Physiology": 19,
    "순환기": 15,
    "Pharmacology": 13,
@@ -46,26 +46,26 @@ window.MEDKOS_INDEX = {
    "Microbiology": 12,
    "Immunology": 9,
    "Internal Medicine": 9,
+   "호흡기": 9,
+   "소아과": 8,
    "소화기": 8,
-   "호흡기": 8,
+   "감염": 7,
+   "내분비": 7,
    "병리·조직학": 7,
-   "소아과": 7,
-   "감염": 6,
-   "내분비": 6,
+   "혈액·종양": 7,
    "신경": 6,
+   "신장·비뇨기": 6,
+   "응급·중환자": 6,
    "피부과": 6,
-   "혈액·종양": 6,
-   "신장·비뇨기": 5,
    "예방의학·역학": 5,
    "외과": 5,
-   "응급·중환자": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "근골격·류마티스": 4,
+   "약리": 4,
    "Oncology": 3,
-   "근골격·류마티스": 3,
-   "약리": 3,
    "정신과": 3,
    "Medical Imaging AI": 2,
    "안과": 2,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 1950,
+   "high": 1960,
    "medium": 945,
    "low": 49
   },
@@ -98,6 +98,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-28.md",
    "snippet": "오늘의 학습 (2026 09 28 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 18일 · Tagging 2까지 21일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-28 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 28 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 18일 · Tagging 2까지 21일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0153",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 항생제 추가 뒤 생긴 초조와 발열",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0153.md",
+   "snippet": "A 47 year old man is hospitalized for a diabetic foot infection with methicillin resistant Staphylococcus aureus osteomyelitis. He has taken sertraline for major depressive disorder for 2 years. On hospital day 3, linezolid is started becau",
+   "text": "약리 약리 — 항생제 추가 뒤 생긴 초조와 발열 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 A 47 year old man is hospitalized for a diabetic foot infection with methicillin resistant Staphylococcus aureus osteomyelitis. He has taken sertraline for major depressive disorder for 2 years. On hospital day 3, linezolid is started because of vancomycin associated acute kidney injury. Thirty six hours later, he becomes agitated and tremulous and has profuse sweating and diarrhea. His temperature is 38.9°C (102°F), pulse is 124/min, and blood pressure is 158/92 mm Hg. The pupils are dilated. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and inducible ocular clonus; muscle tone is increased more in the legs than in the arms. The skin is diaphoretic, and bowel sounds are hyperactive. Which of the following actions of the newly started drug is the most likely cause of these findings? A. Antagonism of dopamine D2 receptors B. Inhibition of cytochrome P450 2D6 C. Blockade of muscarinic acetylcholine receptors D. Activation of skeletal muscle ryanodine receptors E. Inhibition of monoamine oxidase"
+  },
+  {
+   "id": "imaging-2026-0152",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 건강검진에서 발견된 고칼슘혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0152.md",
+   "snippet": "58세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥결석·골절 병력은 없다. 복용하는 약은 없고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 124/78 mmHg 이다. 혈청 칼슘 11.0 mg/dL(참고치 8.5~10.5), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25 히드록시비타민 D 32 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 88 mL",
+   "text": "내분비 내분비·대사 — 건강검진에서 발견된 고칼슘혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 58세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥결석·골절 병력은 없다. 복용하는 약은 없고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 124/78 mmHg 이다. 혈청 칼슘 11.0 mg/dL(참고치 8.5~10.5), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25 히드록시비타민 D 32 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 88 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이고 칼슘/크레아티닌 청소율비는 0.024 이다. 콩팥 초음파에서 결석은 없다. 이중에너지 X선 흡수계측에서 T 점수는 요추 −1.8, 대퇴경부 −1.6, 원위 1/3 요골 −2.7 이다. 가장 적절한 처치는? A. 알렌드로네이트 단독 투여 B. 하루 칼슘 섭취를 400 mg 이하로 제한 C. 부갑상샘절제술 D. 1년마다 혈청 칼슘과 골밀도를 추적 관찰 E. 시나칼세트 투여"
+  },
+  {
+   "id": "imaging-2026-0151",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 영아의 간헐적 보챔과 혈변",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0151.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of episodes of inconsolable crying for 12 hours. During each episode, which lasts a few minutes and recurs every 15 to 20 minutes, he draws his legs up to his abdomen; between",
+   "text": "소아과 소아청소년 — 영아의 간헐적 보챔과 혈변 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 A 9 month old boy is brought to the emergency department because of episodes of inconsolable crying for 12 hours. During each episode, which lasts a few minutes and recurs every 15 to 20 minutes, he draws his legs up to his abdomen; between episodes he is unusually sleepy. He has vomited three times, and his last stool contained blood and mucus. He was previously healthy, and his immunizations are up to date. His temperature is 37.6°C (99.7°F), pulse is 150/min, and blood pressure is 88/54 mm Hg. Capillary refill time is 2 seconds. The abdomen is soft, without guarding, and a sausage shaped mass is palpable in the right upper quadrant. Ultrasonography shows a target sign in the right upper quadrant. Intravenous fluids are started. Which of the following is the most appropriate next step in management? A. Air enema reduction under imaging guidance B. Exploratory laparotomy C. CT scan of the abdomen with contrast D. Upper gastrointestinal series with small bowel follow through E. Observation with serial abdominal examinations"
+  },
+  {
+   "id": "imaging-2026-0150",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 경련을 동반한 저나트륨혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0150.md",
+   "snippet": "74세 여자가 전신 경련으로 응급실에 왔다. 2일 전부터 구역과 두통이 있었고 오늘 아침부터 말이 어눌하고 엉뚱한 대답을 하다가 1분간 전신 경련을 하였다. 3주 전 고혈압으로 히드로클로로티아지드를 시작하였다. 도착 시 경련은 멈췄으나 지남력이 떨어져 있다. 혈압 138/82 mmHg, 맥박 88회/분이다. 점막은 촉촉하고 부종은 없다. 혈청 나트륨 116 mEq/L, 칼륨 3.3 mEq/L, 혈장 삼투압 244 mOsm/kg",
+   "text": "신장·비뇨기 신장·비뇨 — 경련을 동반한 저나트륨혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 74세 여자가 전신 경련으로 응급실에 왔다. 2일 전부터 구역과 두통이 있었고 오늘 아침부터 말이 어눌하고 엉뚱한 대답을 하다가 1분간 전신 경련을 하였다. 3주 전 고혈압으로 히드로클로로티아지드를 시작하였다. 도착 시 경련은 멈췄으나 지남력이 떨어져 있다. 혈압 138/82 mmHg, 맥박 88회/분이다. 점막은 촉촉하고 부종은 없다. 혈청 나트륨 116 mEq/L, 칼륨 3.3 mEq/L, 혈장 삼투압 244 mOsm/kg, 소변 삼투압 410 mOsm/kg, 소변 나트륨 52 mEq/L 이다. 뇌 CT 에서 출혈이나 종괴는 없다. 가장 적절한 처치는? A. 3 % 고장성 식염수 100 mL를 10분에 걸쳐 정주한다 B. 0.9 % 생리식염수를 정주한다 C. 하루 수분 섭취를 1 L 이하로 제한한다 D. 톨밥탄을 경구 투여한다 E. 푸로세미드를 정주한다"
+  },
+  {
+   "id": "imaging-2026-0149",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 생물학제제 시작 전 결핵 선별",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0149.md",
+   "snippet": "A 34 year old woman with Crohn disease comes to the physician for evaluation before starting infliximab therapy. Her disease has not responded to azathioprine. She was born in the Philippines and moved to the United States 10 years ago. She",
+   "text": "감염 감염 — 생물학제제 시작 전 결핵 선별 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 A 34 year old woman with Crohn disease comes to the physician for evaluation before starting infliximab therapy. Her disease has not responded to azathioprine. She was born in the Philippines and moved to the United States 10 years ago. She has no cough, fever, night sweats, or weight loss. Her temperature is 36.8°C (98.2°F), pulse is 76/min, and blood pressure is 114/70 mm Hg. The lungs are clear to auscultation. An interferon γ release assay is positive. HIV testing is negative. Which of the following is the most appropriate next step in management? A. Four drug antituberculous therapy B. Three sputum smears for acid fast bacilli C. Repeat interferon γ release assay in 3 months D. Posteroanterior chest radiography E. Daily rifampin for 4 months"
+  },
+  {
+   "id": "imaging-2026-0148",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 와파린 복용자의 높은 INR",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0148.md",
+   "snippet": "67세 남자가 정기 외래에서 시행한 혈액검사에서 INR 이 높게 나와 왔다. 심방세동으로 와파린 5 mg을 3년째 복용하며 INR 은 2~3 으로 유지되었다. 10일 전 폐렴으로 클래리스로마이신을 처방받아 복용 중이다. 코피·잇몸 출혈·혈뇨·흑색변은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 피부에 멍이나 점상출혈은 없다. 혈색소 13.8 g/dL, 혈소판 215,000/mm³, INR 12.4 이다. ",
+   "text": "혈액·종양 혈액·종양 — 와파린 복용자의 높은 INR opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 67세 남자가 정기 외래에서 시행한 혈액검사에서 INR 이 높게 나와 왔다. 심방세동으로 와파린 5 mg을 3년째 복용하며 INR 은 2~3 으로 유지되었다. 10일 전 폐렴으로 클래리스로마이신을 처방받아 복용 중이다. 코피·잇몸 출혈·혈뇨·흑색변은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 피부에 멍이나 점상출혈은 없다. 혈색소 13.8 g/dL, 혈소판 215,000/mm³, INR 12.4 이다. 가장 적절한 처치는? A. 와파린 용량을 그대로 유지한다 B. 와파린을 중단하고 비타민 K 2.5 mg을 경구 투여한다 C. 와파린을 1~2회 거르고 INR 을 다시 잰다 D. 4인자 프로트롬빈 복합체와 비타민 K 10 mg을 정맥 투여한다 E. 신선동결혈장을 수혈한다"
+  },
+  {
+   "id": "imaging-2026-0147",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 넘어진 뒤 생긴 등 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0147.md",
+   "snippet": "A 56 year old woman comes to the physician because of mid back pain for 3 days after she slipped at home and fell from standing height onto her buttocks. Menopause occurred at the age of 49 years, and she has never taken hormone therapy. Sh",
+   "text": "근골격·류마티스 류마티스·근골격 — 넘어진 뒤 생긴 등 통증 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 A 56 year old woman comes to the physician because of mid back pain for 3 days after she slipped at home and fell from standing height onto her buttocks. Menopause occurred at the age of 49 years, and she has never taken hormone therapy. She does not smoke or drink alcohol and takes no medications. Her BMI is 21 kg/m2. Vital signs are within normal limits. There is tenderness over the thoracolumbar junction. Neurologic examination shows no abnormalities. Serum calcium is 9.4 mg/dL, creatinine is 0.8 mg/dL, alkaline phosphatase is normal, 25 hydroxyvitamin D is 34 ng/mL, and serum protein electrophoresis shows no monoclonal protein. A sagittal MRI of the spine is shown. Dual energy x ray absorptiometry shows a T score of −2.1 at the lumbar spine and −1.9 at the femoral neck. In addition to analgesia, which of the following is the most appropriate pharmacotherapy to reduce her risk of future fractures? A. No pharmacotherapy until repeat densitometry in 2 years B. Oral alendronate C. Calcium and vitamin D supplementation alone D. Intranasal calcitonin E. Estrogen–progestin therapy"
+  },
+  {
+   "id": "imaging-2026-0146",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동 기록과 다음 처치",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0146.md",
+   "snippet": "26세 초산부가 임신 40주에 8시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었다. 2시간 전 양막이 저절로 파열되었고 양수는 맑다. 체온 36.9°C, 혈압 116/74 mmHg, 맥박 88회/분이다. 내진에서 자궁경부는 6 cm 열리고 80 % 소실되었다. 옥시토신은 쓰지 않았다. 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 산모를 옆",
+   "text": "산부인과 산과 — 분만 중 태아심박동 기록과 다음 처치 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 26세 초산부가 임신 40주에 8시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었다. 2시간 전 양막이 저절로 파열되었고 양수는 맑다. 체온 36.9°C, 혈압 116/74 mmHg, 맥박 88회/분이다. 내진에서 자궁경부는 6 cm 열리고 80 % 소실되었다. 옥시토신은 쓰지 않았다. 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다. 다음 처치로 가장 적절한 것은? A. 산모를 옆으로 눕히고 수액을 주입하며 원인을 찾는다 B. 태아 두피 혈액의 pH 를 측정한다 C. 응급 제왕절개를 준비한다 D. 산모에게 해열제와 광범위 항생제를 투여한다 E. 현재의 전자태아감시를 유지하며 분만 진행을 지켜본다"
+  },
+  {
+   "id": "imaging-2026-0145",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자 — 기관삽관한 코로나19 폐렴 환자의 호흡부전",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0145.md",
+   "snippet": "60세 남자가 7일 전부터 발열과 기침이 있었고 4일 전 코로나19 확진을 받았다. 어제부터 숨이 차 응급실에 왔고 산소 공급에도 산소포화도가 85 %로 떨어져 기관삽관 후 중환자실에 입원하였다. 고혈압 외 병력은 없다. 체온 38.3°C, 혈압 112/68 mmHg, 맥박 108회/분이다. 호기말양압 10 cmH2O, 흡입산소분율 0.6 에서 동맥혈 산소분압은 84 mmHg 이다. 심장초음파에서 좌심실 구혈률은 60 %이고 ",
+   "text": "응급·중환자 응급·중환자 — 기관삽관한 코로나19 폐렴 환자의 호흡부전 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 60세 남자가 7일 전부터 발열과 기침이 있었고 4일 전 코로나19 확진을 받았다. 어제부터 숨이 차 응급실에 왔고 산소 공급에도 산소포화도가 85 %로 떨어져 기관삽관 후 중환자실에 입원하였다. 고혈압 외 병력은 없다. 체온 38.3°C, 혈압 112/68 mmHg, 맥박 108회/분이다. 호기말양압 10 cmH2O, 흡입산소분율 0.6 에서 동맥혈 산소분압은 84 mmHg 이다. 심장초음파에서 좌심실 구혈률은 60 %이고 판막 이상은 없다. 이동식 흉부 X선 사진은 그림과 같다. 이 환자의 상태로 가장 적절한 것은? A. 심인성 폐부종 B. 급성호흡곤란증후군 기준에 맞지 않는 한쪽 폐렴 C. 중등도 급성호흡곤란증후군 D. 중증 급성호흡곤란증후군 E. 경증 급성호흡곤란증후군"
+  },
+  {
+   "id": "imaging-2026-0144",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 폐암 선별 CT 에서 발견된 결절",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+   "confidence": "high",
+   "date": "2026-09-27",
+   "path": "content/imaging/2026/imaging-2026-0144.md",
+   "snippet": "A 61 year old woman undergoes her first low dose CT scan of the chest for lung cancer screening. She has a 36 pack year history of cigarette smoking and quit 4 years ago. She has no cough, hemoptysis, or weight loss. She takes no medication",
+   "text": "호흡기 호흡기 — 폐암 선별 CT 에서 발견된 결절 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518 A 61 year old woman undergoes her first low dose CT scan of the chest for lung cancer screening. She has a 36 pack year history of cigarette smoking and quit 4 years ago. She has no cough, hemoptysis, or weight loss. She takes no medications. Her pulse is 78/min, respirations are 14/min, and blood pressure is 128/78 mm Hg. The lungs are clear to auscultation. No previous chest imaging is available for comparison. An axial CT image at the level of the lung apices is shown; the lesion in the left upper lobe measures 21 mm in mean diameter. Which of the following is the most appropriate next step in management? A. Repeat low dose CT scan in 6 months B. Repeat low dose CT scan in 12 months C. Sputum cytology D. Fluorodeoxyglucose PET CT scan E. Repeat low dose CT scan in 3 months"
   },
   {
    "id": "cn.rheum.fibromyalgia.exercise-first-treatment",

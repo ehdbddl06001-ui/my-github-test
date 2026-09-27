@@ -2,6 +2,1364 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0147",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "류마티스·근골격 — 넘어진 뒤 생긴 등 통증",
+  "type": "류마티스·근골격 — 넘어진 뒤 생긴 등 통증",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-27",
+  "vignette": "A 56-year-old woman comes to the physician because of mid-back pain for 3 days after she slipped at home and fell from standing height onto her buttocks. Menopause occurred at the age of 49 years, and she has never taken hormone therapy. She does not smoke or drink alcohol and takes no medications. Her BMI is 21 kg/m2. Vital signs are within normal limits. There is tenderness over the thoracolumbar junction. Neurologic examination shows no abnormalities. Serum calcium is 9.4 mg/dL, creatinine is 0.8 mg/dL, alkaline phosphatase is normal, 25-hydroxyvitamin D is 34 ng/mL, and serum protein electrophoresis shows no monoclonal protein. A sagittal MRI of the spine is shown. Dual-energy x-ray absorptiometry shows a T-score of −2.1 at the lumbar spine and −1.9 at the femoral neck.",
+  "question": "In addition to analgesia, which of the following is the most appropriate pharmacotherapy to reduce her risk of future fractures?",
+  "options": [
+   "No pharmacotherapy until repeat densitometry in 2 years",
+   "Oral alendronate",
+   "Calcium and vitamin D supplementation alone",
+   "Intranasal calcitonin",
+   "Estrogen–progestin therapy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The MRI shows loss of height of a vertebral body at the thoracolumbar junction with a band of high STIR signal (bone marrow edema), indicating an acute compression fracture. It occurred after a fall from standing height, so it is a fragility fracture. In a postmenopausal woman, a low-trauma vertebral or hip fracture establishes the clinical diagnosis of osteoporosis regardless of a T-score in the osteopenic range. Secondary causes (hypercalcemia, renal disease, vitamin D deficiency, myeloma) are not suggested by the laboratory results. First-line therapy is an oral bisphosphonate such as alendronate, which reduces the risk of new vertebral fractures by about half.\n- 원리: <b>Osteoporosis is diagnosed in two ways</b>: a DXA T-score of −2.5 or lower, <b>or a fragility fracture</b> of the spine or hip regardless of bone density (and, in many guidelines, a fracture of the wrist, humerus, or pelvis with osteopenia). Densitometry measures only mineral quantity; bone strength also depends on microarchitecture, turnover, and fall mechanics. A vertebra that collapses after a fall from standing height has already demonstrated that the skeleton is weak, and <b>one vertebral fracture raises the risk of the next vertebral fracture about five-fold</b>, highest in the first year.<br> <b>STIR MRI</b> suppresses fat, so normal marrow is dark and water is bright; a band of high signal within a collapsed vertebra means marrow edema from a <b>recent</b> fracture, whereas an old healed fracture has normal signal. This distinguishes a new fracture from a chronic deformity and helps exclude a tumor (which usually replaces the whole body and the pedicle).<br> <b>Bisphosphonates</b> bind hydroxyapatite and are taken up by osteoclasts during resorption; nitrogen-containing agents inhibit farnesyl pyrophosphate synthase, disrupting osteoclast function and survival. Turnover falls, bone density rises, and vertebral fracture risk falls by roughly 40–70 %. Before starting, secondary causes and vitamin D deficiency are excluded, and calcium and vitamin D are given as adjuncts, not as the treatment.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Alendronate (answer)</th><th>Calcium + vitamin D alone (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>Osteoporosis — including any fragility vertebral fracture</b></td><td>Adjunct to every regimen; sole therapy only for osteopenia at low risk</td></tr> <tr><td>Vertebral fracture reduction</td><td><b>About 40–70 %</b></td><td>No reliable reduction when given alone</td></tr> <tr><td>Effect of T-score −2.1</td><td>Overridden by the fracture</td><td>Would apply only if there were no fracture and low 10-year risk</td></tr> </tbody></table> <b>The closest rival is calcium and vitamin D alone</b>, chosen by those who read the T-score as “only osteopenia.” The dividing line is <b>the fragility fracture</b>: once the spine has fractured from minimal trauma, she has osteoporosis and needs antiresorptive therapy.\n- 오답 이유:\n  - (A) Waiting for repeat densitometry ignores the fracture, which already establishes osteoporosis and signals a high short-term risk of another vertebral fracture. It would be correct only for an asymptomatic woman with mild osteopenia and a low calculated fracture risk.\n  - (C) Calcium and vitamin D alone are appropriate for osteopenia without fracture when the 10-year fracture risk is low. Her fragility vertebral fracture defines osteoporosis despite the T-score. It would be correct if she had a T-score of −1.8 and no fracture.\n  - (D) Intranasal calcitonin has only weak antifracture efficacy and a possible association with malignancy, so it is not used for long-term osteoporosis treatment. It is sometimes given briefly for pain of an acute vertebral fracture, not for fracture prevention.\n  - (E) Estrogen–progestin therapy prevents bone loss but is not first-line for osteoporosis because of the risks of breast cancer and thromboembolism; it is used for younger women with vasomotor symptoms. It would be reasonable for a 50-year-old with hot flashes and osteopenia.\n- 함정: A fragility vertebral fracture diagnoses osteoporosis even when the T-score is above −2.5 — do not let an osteopenic DXA delay treatment.\n- 학습목표: 낮은 외상 뒤 척추 MRI 에서 골수 부종을 동반한 급성 압박골절을 읽고, 폐경 후 여성의 취약 척추골절은 골밀도 T 점수와 관계없이 골다공증으로 진단해 비스포스포네이트로 치료한다\n- 근거·출처: Eastell R et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2019;104:1595 · Camacho PM et al. AACE/ACE clinical practice guidelines for the diagnosis and treatment of postmenopausal osteoporosis — 2020 update. Endocr Pract 2020;26(Suppl 1):1 · PMC Open Access case report (Front Surg 2026;13:1851167, CC BY), Figure 3 panel E — teacher-only · 작성자 판독(2026-09-28): 흉요추 이행부 척추체 높이 감소와 띠 모양 STIR 고신호(골수 부종) — 급성 압박골절, 척수 압박 없음\n\n## 출처\n- Compression fracture of the T12 vertebra combined with diaphragmatic hernia after low-energy trauma: a case report and literature review. Front Surg. 2026 Aug 12;13:1851167. doi: 10.3389/fsurg.2026.1851167 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The MRI shows loss of height of a vertebral body at the thoracolumbar junction with a band of high STIR signal (bone marrow edema), indicating an acute compression fracture. It occurred after a fall from standing height, so it is a fragility fracture. In a postmenopausal woman, a low-trauma vertebral or hip fracture establishes the clinical diagnosis of osteoporosis regardless of a T-score in the osteopenic range. Secondary causes (hypercalcemia, renal disease, vitamin D deficiency, myeloma) are not suggested by the laboratory results. First-line therapy is an oral bisphosphonate such as alendronate, which reduces the risk of new vertebral fractures by about half."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Osteoporosis is diagnosed in two ways</b>: a DXA T-score of −2.5 or lower, <b>or a fragility fracture</b> of the spine or hip regardless of bone density (and, in many guidelines, a fracture of the wrist, humerus, or pelvis with osteopenia). Densitometry measures only mineral quantity; bone strength also depends on microarchitecture, turnover, and fall mechanics. A vertebra that collapses after a fall from standing height has already demonstrated that the skeleton is weak, and <b>one vertebral fracture raises the risk of the next vertebral fracture about five-fold</b>, highest in the first year.<br> <b>STIR MRI</b> suppresses fat, so normal marrow is dark and water is bright; a band of high signal within a collapsed vertebra means marrow edema from a <b>recent</b> fracture, whereas an old healed fracture has normal signal. This distinguishes a new fracture from a chronic deformity and helps exclude a tumor (which usually replaces the whole body and the pedicle).<br> <b>Bisphosphonates</b> bind hydroxyapatite and are taken up by osteoclasts during resorption; nitrogen-containing agents inhibit farnesyl pyrophosphate synthase, disrupting osteoclast function and survival. Turnover falls, bone density rises, and vertebral fracture risk falls by roughly 40–70 %. Before starting, secondary causes and vitamin D deficiency are excluded, and calcium and vitamin D are given as adjuncts, not as the treatment."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Alendronate (answer)</th><th>Calcium + vitamin D alone (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>Osteoporosis — including any fragility vertebral fracture</b></td><td>Adjunct to every regimen; sole therapy only for osteopenia at low risk</td></tr> <tr><td>Vertebral fracture reduction</td><td><b>About 40–70 %</b></td><td>No reliable reduction when given alone</td></tr> <tr><td>Effect of T-score −2.1</td><td>Overridden by the fracture</td><td>Would apply only if there were no fracture and low 10-year risk</td></tr> </tbody></table> <b>The closest rival is calcium and vitamin D alone</b>, chosen by those who read the T-score as “only osteopenia.” The dividing line is <b>the fragility fracture</b>: once the spine has fractured from minimal trauma, she has osteoporosis and needs antiresorptive therapy."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Waiting for repeat densitometry ignores the fracture, which already establishes osteoporosis and signals a high short-term risk of another vertebral fracture. It would be correct only for an asymptomatic woman with mild osteopenia and a low calculated fracture risk.\n(C) Calcium and vitamin D alone are appropriate for osteopenia without fracture when the 10-year fracture risk is low. Her fragility vertebral fracture defines osteoporosis despite the T-score. It would be correct if she had a T-score of −1.8 and no fracture.\n(D) Intranasal calcitonin has only weak antifracture efficacy and a possible association with malignancy, so it is not used for long-term osteoporosis treatment. It is sometimes given briefly for pain of an acute vertebral fracture, not for fracture prevention.\n(E) Estrogen–progestin therapy prevents bone loss but is not first-line for osteoporosis because of the risks of breast cancer and thromboembolism; it is used for younger women with vasomotor symptoms. It would be reasonable for a 50-year-old with hot flashes and osteopenia."
+   },
+   {
+    "k": "함정",
+    "v": "A fragility vertebral fracture diagnoses osteoporosis even when the T-score is above −2.5 — do not let an osteopenic DXA delay treatment."
+   },
+   {
+    "k": "학습목표",
+    "v": "낮은 외상 뒤 척추 MRI 에서 골수 부종을 동반한 급성 압박골절을 읽고, 폐경 후 여성의 취약 척추골절은 골밀도 T 점수와 관계없이 골다공증으로 진단해 비스포스포네이트로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Eastell R et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2019;104:1595 · Camacho PM et al. AACE/ACE clinical practice guidelines for the diagnosis and treatment of postmenopausal osteoporosis — 2020 update. Endocr Pract 2020;26(Suppl 1):1 · PMC Open Access case report (Front Surg 2026;13:1851167, CC BY), Figure 3 panel E — teacher-only · 작성자 판독(2026-09-28): 흉요추 이행부 척추체 높이 감소와 띠 모양 STIR 고신호(골수 부종) — 급성 압박골절, 척수 압박 없음 ## 출처 Compression fracture of the T12 vertebra combined with diaphragmatic hernia after low-energy trauma: a case report and literature review. Front Surg. 2026 Aug 12;13:1851167. doi: 10.3389/fsurg.2026.1851167 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "서 있는 높이에서 넘어져 생긴 급성 척추 압박골절은 취약골절이므로 T 점수 −2.1 이어도 골다공증이며 알렌드로네이트로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "칼슘·비타민 D 단독은 골절 없는 골감소증의 선택이다 — 취약 척추골절이 있으면 골다공증 치료제가 필요하다",
+   "steps": 3,
+   "chain": [
+    "영상: 척추체 높이 감소 + STIR 띠 모양 고신호 → 급성 압박골절",
+    "fell from standing height + 이차 원인 검사 정상 → 취약골절 → T 점수와 관계없이 골다공증",
+    "골다공증 첫 치료 → 경구 비스포스포네이트(알렌드로네이트)"
+   ],
+   "key": [
+    {
+     "item": "영상: 흉요추 이행부 척추체 높이 감소와 띠 모양 고신호",
+     "why": "골수 부종을 동반한 급성 압박골절",
+     "also": []
+    },
+    {
+     "item": "fell from standing height onto her buttocks",
+     "why": "낮은 외상 — 취약골절",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum protein electrophoresis shows no monoclonal protein",
+     "why": "다발골수종에 의한 병적 골절 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum calcium is 9.4 mg/dL",
+     "why": "부갑상샘항진증·악성 고칼슘혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "25-hydroxyvitamin D is 34 ng/mL",
+     "why": "비타민 D 결핍·골연화증 가능성을 낮추고 비스포스포네이트를 바로 시작할 수 있다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "T-score of −2.1 at the lumbar spine and −1.9 at the femoral neck",
+     "why": "골감소증 범위지만 골절이 진단을 대신한다",
+     "also": []
+    },
+    {
+     "item": "Neurologic examination shows no abnormalities",
+     "why": "척수 압박이 없어 수술 적응증이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Menopause occurred at the age of 49 years",
+     "why": "폐경 후 골소실의 맥락 — 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "MRI 에서 골수 부종을 동반한 급성 척추 압박골절이 서 있는 높이의 낙상 뒤 생겼다. 취약골절이므로 T 점수가 −2.1 이어도 골다공증이고 알렌드로네이트로 치료한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "골절이 없고 T 점수 −1.8 에 10년 골절 위험이 낮았다면 칼슘·비타민 D 보충과 생활습관 교정만으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0147.png",
+   "caption": "Sagittal STIR MRI of the thoracolumbar spine; a single panel cropped from a published multi-panel figure, panel letters removed, arrow as in the original (PMC Open Access Subset, CC BY; no resizing of proportions or color change)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13506679/",
+   "asset_id": "PMC-PMC13506679_Figure3_E",
+   "text": "Compression fracture of the T12 vertebra combined with diaphragmatic hernia after low-energy trauma: a case report and literature review. Front Surg. 2026 Aug 12;13:1851167. doi: 10.3389/fsurg.2026.1851167 (CC BY) — Figure 3"
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0146",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "산과 — 분만 중 태아심박동 기록과 다음 처치",
+  "type": "산과 — 분만 중 태아심박동 기록과 다음 처치",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-27",
+  "vignette": "26세 초산부가 임신 40주에 8시간 전부터 규칙적인 진통이 있어 분만실에 입원하였다. 임신 경과 중 특이 소견은 없었다. 2시간 전 양막이 저절로 파열되었고 양수는 맑다. 체온 36.9°C, 혈압 116/74 mmHg, 맥박 88회/분이다. 내진에서 자궁경부는 6 cm 열리고 80 % 소실되었다. 옥시토신은 쓰지 않았다. 전자태아감시의 태아심박동과 자궁수축 기록은 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "산모를 옆으로 눕히고 수액을 주입하며 원인을 찾는다",
+   "태아 두피 혈액의 pH 를 측정한다",
+   "응급 제왕절개를 준비한다",
+   "산모에게 해열제와 광범위 항생제를 투여한다",
+   "현재의 전자태아감시를 유지하며 분만 진행을 지켜본다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 가속·짧은 하강을 뺀 기저 심박수는 약 140~150회/분으로 정상이고, 기저선이 10~20회/분 폭으로 불규칙하게 흔들려 중등도 변이도다. 가속이 여러 번 있고, 35~37분의 180~190회/분 상승은 약 2분 뒤 원래 기저선으로 돌아온 연장 가속(2~10분)이지 기저선 변화(10분 이상)가 아니다. 33.7분의 짧은 하강은 30초 미만으로 한 번뿐이고 후기·가변 감속은 없다. 정상 기저선 + 중등도 변이도 + 반복 감속 없음 = 범주 I 이므로 일상 감시를 이어간다.\n- 원리: NICHD 3단계 분류는 <b>태아 산-염기 상태를 그 시점에서 예측</b>하려는 것이다.<br> <b>범주 I</b>: 기저선 110~160, <b>중등도 변이도</b>, 후기·가변 감속 없음(조기 감속과 가속은 있어도 되고 없어도 됨). 이때 태아가 대사성 산증일 가능성은 매우 낮아 <b>일상 감시</b>만 한다.<br> <b>가속</b>은 태아 움직임에 따라 교감신경이 심박수를 올린 것으로, 32주 이후 15회/분 이상·15초 이상이면 가속이다. 가속이 있으면 그 순간 산증이 없다고 본다. 가속이 <b>2분 이상 10분 미만</b> 이어지면 <b>연장 가속</b>이고, 10분 이상이면 기저선이 바뀐 것으로 본다. 연장 가속은 태아가 계속 움직이거나 자극받을 때 생기며 저산소의 표지가 아니다.<br> <b>범주 II</b>(최소 변이도, 반복 가변 감속, 연장 감속, 가속 없는 빈맥 등)는 원인을 찾고 <b>자궁 내 소생술</b>(산모 체위 변경·수액·자궁수축제 중단·저혈압 교정)을 한다. <b>범주 III</b>(변이도 없음 + 반복 후기·가변 감속·서맥, 또는 사인파형)은 소생술과 함께 신속한 분만을 준비한다.<br> 그래서 이 기록의 180~190 봉우리를 「빈맥」으로 읽으면 범주 II 로 잘못 올라가 불필요한 처치를 하게 된다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">범주 I — 일상 감시(정답)</th><th>범주 II — 자궁 내 소생술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기저선</td><td><b>140~150, 정상</b></td><td>빈맥(10분 이상 160 초과)이거나 서맥</td></tr> <tr><td>변이도</td><td><b>중등도(10~20)</b></td><td>최소이거나 현저</td></tr> <tr><td>180~190 상승</td><td><b>약 2분 뒤 기저선 복귀 — 연장 가속</b></td><td>10분 넘게 지속되면 기저선 변화(빈맥)</td></tr> <tr><td>감속</td><td>짧은 하강 1회, 후기·가변 감속 없음</td><td>반복 가변 감속·연장 감속</td></tr> </tbody></table> <b>가장 가까운 오답은 자궁 내 소생술</b>이다. 180 이 넘는 봉우리를 빈맥으로 읽으면 이것을 고르게 된다. 갈림길은 <b>지속 시간</b> — 2~10분 뒤 원래 기저선으로 돌아오면 연장 가속이고, 10분 넘게 머물러야 기저선 변화다.\n- 오답 이유:\n  - ① 자궁 내 소생술은 범주 II 기록(반복 가변 감속, 연장 감속, 최소 변이도 등)에서 원인을 교정하는 처치다. 이 기록은 범주 I 이다. 수축마다 가변 감속이 반복되었다면 정답이 된다.\n  - ② 태아 두피 혈액 pH 는 범주 II 가 지속되어 산증 여부를 확인해야 할 때 쓰는 검사다(지금은 거의 쓰지 않는다). 가속과 중등도 변이도가 있으면 산증이 아니다. 최소 변이도가 1시간 넘게 이어졌다면 고려한다.\n  - ③ 응급 제왕절개는 범주 III(변이도 없음 + 반복 후기 감속·서맥, 사인파형)이 소생술에도 풀리지 않을 때다. 이 기록은 정상이다. 변이도 없이 반복 후기 감속이 이어졌다면 정답이 된다.\n  - ④ 해열제와 항생제는 산모 발열과 태아 빈맥이 있는 융모양막염에서 쓴다. 산모 체온은 36.9°C 이고 180 봉우리는 약 2분짜리 가속이다. 산모가 38.5°C 이고 기저선이 10분 넘게 170 에 머물렀다면 정답이 된다.\n- 함정: 180 을 넘는 봉우리를 곧바로 빈맥으로 읽지 않는다 — 몇 분 뒤 기저선으로 돌아오면 연장 가속이다.\n- 학습목표: 분만 중 태아심박동에서 정상 기저선·중등도 변이도·가속이 있고 후기·가변 감속이 없으면 2분 남짓의 연장 가속이 있어도 범주 I 로 판정하고 일상 감시를 이어간다\n- 근거·출처: Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661 · ACOG Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol 2010;116:1232 · CTU-UHB Intrapartum CTG Database (PhysioNet, ODC-BY 1.0) record 2033, minutes 30–40 — 26 y, 40 wk, para 0; teacher-only · 작성자 판독(2026-09-28): 기저 140~150/분, 중등도 변이도, 가속 여러 번, 34.8~37분 약 2분 연장 가속, 33.7분 짧은 하강 1회, 후기·가변 감속 없음\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 2033 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "가속·짧은 하강을 뺀 기저 심박수는 약 140~150회/분으로 정상이고, 기저선이 10~20회/분 폭으로 불규칙하게 흔들려 중등도 변이도다. 가속이 여러 번 있고, 35~37분의 180~190회/분 상승은 약 2분 뒤 원래 기저선으로 돌아온 연장 가속(2~10분)이지 기저선 변화(10분 이상)가 아니다. 33.7분의 짧은 하강은 30초 미만으로 한 번뿐이고 후기·가변 감속은 없다. 정상 기저선 + 중등도 변이도 + 반복 감속 없음 = 범주 I 이므로 일상 감시를 이어간다."
+   },
+   {
+    "k": "원리",
+    "v": "NICHD 3단계 분류는 <b>태아 산-염기 상태를 그 시점에서 예측</b>하려는 것이다.<br> <b>범주 I</b>: 기저선 110~160, <b>중등도 변이도</b>, 후기·가변 감속 없음(조기 감속과 가속은 있어도 되고 없어도 됨). 이때 태아가 대사성 산증일 가능성은 매우 낮아 <b>일상 감시</b>만 한다.<br> <b>가속</b>은 태아 움직임에 따라 교감신경이 심박수를 올린 것으로, 32주 이후 15회/분 이상·15초 이상이면 가속이다. 가속이 있으면 그 순간 산증이 없다고 본다. 가속이 <b>2분 이상 10분 미만</b> 이어지면 <b>연장 가속</b>이고, 10분 이상이면 기저선이 바뀐 것으로 본다. 연장 가속은 태아가 계속 움직이거나 자극받을 때 생기며 저산소의 표지가 아니다.<br> <b>범주 II</b>(최소 변이도, 반복 가변 감속, 연장 감속, 가속 없는 빈맥 등)는 원인을 찾고 <b>자궁 내 소생술</b>(산모 체위 변경·수액·자궁수축제 중단·저혈압 교정)을 한다. <b>범주 III</b>(변이도 없음 + 반복 후기·가변 감속·서맥, 또는 사인파형)은 소생술과 함께 신속한 분만을 준비한다.<br> 그래서 이 기록의 180~190 봉우리를 「빈맥」으로 읽으면 범주 II 로 잘못 올라가 불필요한 처치를 하게 된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">범주 I — 일상 감시(정답)</th><th>범주 II — 자궁 내 소생술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기저선</td><td><b>140~150, 정상</b></td><td>빈맥(10분 이상 160 초과)이거나 서맥</td></tr> <tr><td>변이도</td><td><b>중등도(10~20)</b></td><td>최소이거나 현저</td></tr> <tr><td>180~190 상승</td><td><b>약 2분 뒤 기저선 복귀 — 연장 가속</b></td><td>10분 넘게 지속되면 기저선 변화(빈맥)</td></tr> <tr><td>감속</td><td>짧은 하강 1회, 후기·가변 감속 없음</td><td>반복 가변 감속·연장 감속</td></tr> </tbody></table> <b>가장 가까운 오답은 자궁 내 소생술</b>이다. 180 이 넘는 봉우리를 빈맥으로 읽으면 이것을 고르게 된다. 갈림길은 <b>지속 시간</b> — 2~10분 뒤 원래 기저선으로 돌아오면 연장 가속이고, 10분 넘게 머물러야 기저선 변화다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 자궁 내 소생술은 범주 II 기록(반복 가변 감속, 연장 감속, 최소 변이도 등)에서 원인을 교정하는 처치다. 이 기록은 범주 I 이다. 수축마다 가변 감속이 반복되었다면 정답이 된다.\n② 태아 두피 혈액 pH 는 범주 II 가 지속되어 산증 여부를 확인해야 할 때 쓰는 검사다(지금은 거의 쓰지 않는다). 가속과 중등도 변이도가 있으면 산증이 아니다. 최소 변이도가 1시간 넘게 이어졌다면 고려한다.\n③ 응급 제왕절개는 범주 III(변이도 없음 + 반복 후기 감속·서맥, 사인파형)이 소생술에도 풀리지 않을 때다. 이 기록은 정상이다. 변이도 없이 반복 후기 감속이 이어졌다면 정답이 된다.\n④ 해열제와 항생제는 산모 발열과 태아 빈맥이 있는 융모양막염에서 쓴다. 산모 체온은 36.9°C 이고 180 봉우리는 약 2분짜리 가속이다. 산모가 38.5°C 이고 기저선이 10분 넘게 170 에 머물렀다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "180 을 넘는 봉우리를 곧바로 빈맥으로 읽지 않는다 — 몇 분 뒤 기저선으로 돌아오면 연장 가속이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동에서 정상 기저선·중등도 변이도·가속이 있고 후기·가변 감속이 없으면 2분 남짓의 연장 가속이 있어도 범주 I 로 판정하고 일상 감시를 이어간다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Macones GA et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661 · ACOG Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol 2010;116:1232 · CTU-UHB Intrapartum CTG Database (PhysioNet, ODC-BY 1.0) record 2033, minutes 30–40 — 26 y, 40 wk, para 0; teacher-only · 작성자 판독(2026-09-28): 기저 140~150/분, 중등도 변이도, 가속 여러 번, 34.8~37분 약 2분 연장 가속, 33.7분 짧은 하강 1회, 후기·가변 감속 없음 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 2033 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "정상 기저선·중등도 변이도·가속이 있고 반복 감속이 없어 범주 I 이므로 일상 감시를 이어간다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "180~190 상승은 약 2분 뒤 기저선으로 돌아온 연장 가속이다 — 10분 넘게 지속된 빈맥이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: 기저 140~150회/분, 10~20회/분 폭의 불규칙한 흔들림 → 정상 기저선·중등도 변이도",
+    "영상: 35~37분 180~190 상승이 약 2분 뒤 복귀 → 연장 가속(빈맥 아님), 후기·가변 감속 없음",
+    "범주 I → 일상 감시 유지"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저 140~150회/분, 중등도 변이도, 가속 여러 번",
+     "why": "범주 I 의 핵심 요소",
+     "also": []
+    },
+    {
+     "item": "영상: 35~37분 180~190회/분 상승 뒤 기저선 복귀",
+     "why": "연장 가속 — 빈맥 오판을 막는 판단",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 33.7분 30초 미만의 짧은 하강 1회",
+     "why": "반복 감속이 아니다 — 범주 II 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 36.9°C",
+     "why": "산모 발열이 없어 융모양막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "양수는 맑다",
+     "why": "태변 착색 없음",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "옥시토신은 쓰지 않았다",
+     "why": "중단할 자궁수축제가 없다 — 판독을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "자궁경부는 6 cm 열리고 80 % 소실",
+     "why": "활동기 진통 — 처치 결정에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "기저 140~150, 중등도 변이도, 가속이 있고 반복 감속이 없는 범주 I 기록이다. 180 이 넘는 봉우리는 약 2분짜리 연장 가속이라 일상 감시를 이어간다.",
+   "switch": {
+    "choice": "A",
+    "condition": "수축마다 가변 감속이 반복되거나 변이도가 최소로 줄었다면 범주 II 로 체위 변경·수액 등 자궁 내 소생술이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0146.png",
+   "caption": "분만 중 태아심박동(위)과 자궁수축(아래) 기록, 기록 시작 후 30~40분 구간; 세로 굵은 선 = 1분 (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0 — 원자료 4 Hz 그대로, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-2033_30m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 2033"
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0145",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "응급·중환자 — 기관삽관한 코로나19 폐렴 환자의 호흡부전",
+  "type": "응급·중환자 — 기관삽관한 코로나19 폐렴 환자의 호흡부전",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-27",
+  "vignette": "60세 남자가 7일 전부터 발열과 기침이 있었고 4일 전 코로나19 확진을 받았다. 어제부터 숨이 차 응급실에 왔고 산소 공급에도 산소포화도가 85 %로 떨어져 기관삽관 후 중환자실에 입원하였다. 고혈압 외 병력은 없다. 체온 38.3°C, 혈압 112/68 mmHg, 맥박 108회/분이다. 호기말양압 10 cmH2O, 흡입산소분율 0.6 에서 동맥혈 산소분압은 84 mmHg 이다. 심장초음파에서 좌심실 구혈률은 60 %이고 판막 이상은 없다. 이동식 흉부 X선 사진은 그림과 같다.",
+  "question": "이 환자의 상태로 가장 적절한 것은?",
+  "options": [
+   "심인성 폐부종",
+   "급성호흡곤란증후군 기준에 맞지 않는 한쪽 폐렴",
+   "중등도 급성호흡곤란증후군",
+   "중증 급성호흡곤란증후군",
+   "경증 급성호흡곤란증후군"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 흉부 X선에서 양쪽 폐에 미만성 반점상 폐포 음영이 있고(흉수·허탈로 설명되지 않음), 코로나19 폐렴이라는 원인 뒤 1주 안에 호흡부전이 생겼으며, 좌심실 구혈률이 정상이라 심장 원인으로 설명되지 않는다. 호기말양압 10 cmH2O 에서 PaO2/FiO2 = 84/0.6 = 140 으로 100 초과 200 이하이므로 베를린 정의의 중등도 급성호흡곤란증후군이다.\n- 원리: <b>베를린 정의(2012)</b>는 네 가지를 모두 요구한다. ① <b>시간</b> — 알려진 원인(폐렴·흡인·패혈증·외상 등)이나 새로 생긴·악화된 호흡기 증상 뒤 <b>1주 이내</b> ② <b>영상</b> — 흉부 X선이나 CT 에서 흉수·허탈·결절로 설명되지 않는 <b>양측 음영</b> ③ <b>원인</b> — 심부전이나 수액 과다로 완전히 설명되지 않음(위험인자가 없으면 심장초음파 등으로 객관적 확인) ④ <b>산소화</b> — PEEP(또는 CPAP) 5 cmH2O 이상에서 PaO2/FiO2 로 중증도를 매긴다.<br> <b>경증 200 초과~300 이하, 중등도 100 초과~200 이하, 중증 100 이하.</b> PEEP 조건을 두는 이유는 같은 환자라도 PEEP 가 낮으면 허탈된 폐포가 많아 P/F 가 실제보다 나쁘게 나오기 때문이다.<br> 기전은 폐포-모세혈관 장벽의 손상이다. 단백질이 많은 부종액이 폐포를 채우고 표면활성물질이 줄어 폐포가 허탈되며, 환기되지 않는 폐포로 혈류가 계속 가는 <b>단락</b> 때문에 산소를 올려도 PaO2 가 잘 오르지 않는다. 그래서 흉부 X선이 양측 폐포 음영으로 보이고, 심장 압력은 정상이다(정수압성 부종과 다른 점).<br> 중증도는 치료 선택으로 이어진다 — P/F 150 미만이면 엎드린 자세 환기를, 100 이하에서는 ECMO 를 고려한다. 150 기준과 100 기준을 헷갈리지 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">중등도 ARDS(정답)</th><th>중증 ARDS(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>PaO2/FiO2(PEEP ≥ 5)</td><td><b>100 초과 ~ 200 이하</b></td><td>100 이하</td></tr> <tr><td>이 환자</td><td><b>84 / 0.6 = 140</b></td><td>—</td></tr> <tr><td>흔한 혼동</td><td>150 미만이면 엎드린 자세 환기 적응증</td><td>150 은 중증 경계가 아니다</td></tr> <tr><td>사망률(원 코호트)</td><td>약 32 %</td><td>약 45 %</td></tr> </tbody></table> <b>가장 가까운 오답은 중증</b>이다. 엎드린 자세 환기 기준(P/F &lt; 150)을 중증 기준으로 착각하기 쉽다. 갈림길은 <b>100</b> 이다 — PaO2 가 60 이하였다면 P/F 100 으로 중증이 된다.\n- 오답 이유:\n  - ① 심인성 폐부종도 양측 음영과 저산소혈증을 만들지만 좌심실 기능 저하·판막 질환·수액 과다가 있어야 한다. 이 환자는 좌심실 구혈률 60 %에 판막 이상이 없다. 구혈률 25 %에 양측 흉수와 심비대가 있었다면 정답이 된다.\n  - ② 한쪽 폐엽에 국한된 경화라면 양측 음영 기준을 채우지 못한다. 이 사진은 양쪽 폐에 걸친 미만성 음영이다. 음영이 오른쪽 아래엽에만 있었다면 정답이 된다.\n  - ④ 중증은 PEEP 5 이상에서 PaO2/FiO2 가 100 이하일 때다. 이 환자는 140 이다. 같은 흡입산소분율 0.6 에서 PaO2 가 55 mmHg(P/F 92)였다면 정답이 된다.\n  - ⑤ 경증은 PaO2/FiO2 가 200 초과 300 이하일 때다. 이 환자는 140 으로 그보다 나쁘다. 흡입산소분율 0.4 에서 PaO2 가 100 mmHg(P/F 250)였다면 정답이 된다.\n- 함정: 엎드린 자세 환기 기준(P/F < 150)과 중증 ARDS 기준(P/F ≤ 100)을 섞지 않는다. P/F 는 PEEP 5 이상에서 잰다.\n- 학습목표: 급성 호흡부전 환자에서 흉부 X선의 양측 음영, 1주 이내 발생, 심장 원인 배제, PEEP 5 이상에서 PaO2/FiO2 로 베를린 정의의 ARDS 와 그 중증도를 판정한다\n- 근거·출처: ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526 · Guérin C et al. Prone positioning in severe acute respiratory distress syndrome (PROSEVA). N Engl J Med 2013;368:2159 · Harrison's Principles of Internal Medicine, 21st ed. — acute respiratory distress syndrome · 작성자 판독(2026-09-28): 양측 미만성 반점상 폐포 음영(폐문 주위·하폐야 우세), 비위관·중심정맥관, 기흉·대량 흉수 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17145927 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선에서 양쪽 폐에 미만성 반점상 폐포 음영이 있고(흉수·허탈로 설명되지 않음), 코로나19 폐렴이라는 원인 뒤 1주 안에 호흡부전이 생겼으며, 좌심실 구혈률이 정상이라 심장 원인으로 설명되지 않는다. 호기말양압 10 cmH2O 에서 PaO2/FiO2 = 84/0.6 = 140 으로 100 초과 200 이하이므로 베를린 정의의 중등도 급성호흡곤란증후군이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>베를린 정의(2012)</b>는 네 가지를 모두 요구한다. ① <b>시간</b> — 알려진 원인(폐렴·흡인·패혈증·외상 등)이나 새로 생긴·악화된 호흡기 증상 뒤 <b>1주 이내</b> ② <b>영상</b> — 흉부 X선이나 CT 에서 흉수·허탈·결절로 설명되지 않는 <b>양측 음영</b> ③ <b>원인</b> — 심부전이나 수액 과다로 완전히 설명되지 않음(위험인자가 없으면 심장초음파 등으로 객관적 확인) ④ <b>산소화</b> — PEEP(또는 CPAP) 5 cmH2O 이상에서 PaO2/FiO2 로 중증도를 매긴다.<br> <b>경증 200 초과~300 이하, 중등도 100 초과~200 이하, 중증 100 이하.</b> PEEP 조건을 두는 이유는 같은 환자라도 PEEP 가 낮으면 허탈된 폐포가 많아 P/F 가 실제보다 나쁘게 나오기 때문이다.<br> 기전은 폐포-모세혈관 장벽의 손상이다. 단백질이 많은 부종액이 폐포를 채우고 표면활성물질이 줄어 폐포가 허탈되며, 환기되지 않는 폐포로 혈류가 계속 가는 <b>단락</b> 때문에 산소를 올려도 PaO2 가 잘 오르지 않는다. 그래서 흉부 X선이 양측 폐포 음영으로 보이고, 심장 압력은 정상이다(정수압성 부종과 다른 점).<br> 중증도는 치료 선택으로 이어진다 — P/F 150 미만이면 엎드린 자세 환기를, 100 이하에서는 ECMO 를 고려한다. 150 기준과 100 기준을 헷갈리지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">중등도 ARDS(정답)</th><th>중증 ARDS(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>PaO2/FiO2(PEEP ≥ 5)</td><td><b>100 초과 ~ 200 이하</b></td><td>100 이하</td></tr> <tr><td>이 환자</td><td><b>84 / 0.6 = 140</b></td><td>—</td></tr> <tr><td>흔한 혼동</td><td>150 미만이면 엎드린 자세 환기 적응증</td><td>150 은 중증 경계가 아니다</td></tr> <tr><td>사망률(원 코호트)</td><td>약 32 %</td><td>약 45 %</td></tr> </tbody></table> <b>가장 가까운 오답은 중증</b>이다. 엎드린 자세 환기 기준(P/F &lt; 150)을 중증 기준으로 착각하기 쉽다. 갈림길은 <b>100</b> 이다 — PaO2 가 60 이하였다면 P/F 100 으로 중증이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 심인성 폐부종도 양측 음영과 저산소혈증을 만들지만 좌심실 기능 저하·판막 질환·수액 과다가 있어야 한다. 이 환자는 좌심실 구혈률 60 %에 판막 이상이 없다. 구혈률 25 %에 양측 흉수와 심비대가 있었다면 정답이 된다.\n② 한쪽 폐엽에 국한된 경화라면 양측 음영 기준을 채우지 못한다. 이 사진은 양쪽 폐에 걸친 미만성 음영이다. 음영이 오른쪽 아래엽에만 있었다면 정답이 된다.\n④ 중증은 PEEP 5 이상에서 PaO2/FiO2 가 100 이하일 때다. 이 환자는 140 이다. 같은 흡입산소분율 0.6 에서 PaO2 가 55 mmHg(P/F 92)였다면 정답이 된다.\n⑤ 경증은 PaO2/FiO2 가 200 초과 300 이하일 때다. 이 환자는 140 으로 그보다 나쁘다. 흡입산소분율 0.4 에서 PaO2 가 100 mmHg(P/F 250)였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "엎드린 자세 환기 기준(P/F < 150)과 중증 ARDS 기준(P/F ≤ 100)을 섞지 않는다. P/F 는 PEEP 5 이상에서 잰다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 호흡부전 환자에서 흉부 X선의 양측 음영, 1주 이내 발생, 심장 원인 배제, PEEP 5 이상에서 PaO2/FiO2 로 베를린 정의의 ARDS 와 그 중증도를 판정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin Definition. JAMA 2012;307:2526 · Guérin C et al. Prone positioning in severe acute respiratory distress syndrome (PROSEVA). N Engl J Med 2013;368:2159 · Harrison's Principles of Internal Medicine, 21st ed. — acute respiratory distress syndrome · 작성자 판독(2026-09-28): 양측 미만성 반점상 폐포 음영(폐문 주위·하폐야 우세), 비위관·중심정맥관, 기흉·대량 흉수 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17145927 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "양측 음영·1주 이내·심장 원인 배제로 ARDS 이고, PEEP 10 에서 P/F 140 이므로 중등도다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "중증은 P/F 100 이하 — 150 은 엎드린 자세 환기 기준일 뿐이다",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 폐의 미만성 폐포 음영, 흉수·허탈로 설명 안 됨 → 영상 기준 충족",
+    "7일 전 시작한 코로나19 폐렴 + 좌심실 구혈률 60 %·판막 정상 → 시간·원인 기준 충족 → ARDS",
+    "호기말양압 10 에서 84/0.6 = 140 → 100 초과 200 이하 → 중등도"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐에 걸친 미만성 반점상 폐포 음영",
+     "why": "양측 음영 — 베를린 영상 기준",
+     "also": []
+    },
+    {
+     "item": "흡입산소분율 0.6 에서 동맥혈 산소분압은 84 mmHg",
+     "why": "P/F 140 — 중등도",
+     "also": []
+    },
+    {
+     "item": "호기말양압 10 cmH2O",
+     "why": "PEEP ≥ 5 조건 충족 — 중증도 판정이 유효",
+     "also": []
+    },
+    {
+     "item": "7일 전부터 발열과 기침",
+     "why": "원인 뒤 1주 이내 — 시간 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 구혈률은 60 %이고 판막 이상은 없다",
+     "why": "심인성 폐부종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "고혈압 외 병력은 없다",
+     "why": "판정에 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "맥박 108회/분",
+     "why": "발열·저산소에 따른 반응 — 중증도 기준이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "양측 폐포 음영, 코로나19 폐렴 뒤 1주 이내, 정상 좌심실 기능으로 ARDS 기준을 채운다. PEEP 10 에서 P/F 140 이라 중등도다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 조건에서 PaO2 가 55 mmHg 였다면 P/F 92 로 중증 ARDS 가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0145.png",
+   "caption": "이동식 앞뒤(AP) 흉부 X선, 반좌위, 원본 그대로 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1383857950042109128553617145927",
+   "asset_id": "TCIA-COVID19_AR-39870511078857",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …17145927"
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0144",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "호흡기 — 폐암 선별 CT 에서 발견된 결절",
+  "type": "호흡기 — 폐암 선별 CT 에서 발견된 결절",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-27",
+  "vignette": "A 61-year-old woman undergoes her first low-dose CT scan of the chest for lung cancer screening. She has a 36-pack-year history of cigarette smoking and quit 4 years ago. She has no cough, hemoptysis, or weight loss. She takes no medications. Her pulse is 78/min, respirations are 14/min, and blood pressure is 128/78 mm Hg. The lungs are clear to auscultation. No previous chest imaging is available for comparison. An axial CT image at the level of the lung apices is shown; the lesion in the left upper lobe measures 21 mm in mean diameter.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Repeat low-dose CT scan in 6 months",
+   "Repeat low-dose CT scan in 12 months",
+   "Sputum cytology",
+   "Fluorodeoxyglucose PET-CT scan",
+   "Repeat low-dose CT scan in 3 months"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The lesion is a solid nodule — it has soft-tissue attenuation that completely obscures the lung vessels, with a slightly lobulated, irregular margin and no calcification. In a screening CT, a solid nodule of 15 mm or larger is Lung-RADS category 4B, for which the malignancy risk exceeds 15 %; it is evaluated with diagnostic chest CT, PET-CT, and/or tissue sampling rather than by short-interval surveillance. In a 61-year-old former heavy smoker, FDG PET-CT characterizes the nodule and stages the mediastinum before biopsy or resection.\n- 원리: Management of a screen-detected nodule depends on <b>three things read from the image: attenuation, size, and growth</b>.<br> <b>Attenuation</b>: a <b>solid</b> nodule has soft-tissue density that hides the vessels passing through it; a <b>ground-glass</b> nodule raises lung density but vessels remain visible; a <b>part-solid</b> nodule has both. Pure ground-glass nodules are usually slow-growing adenocarcinoma in situ or minimally invasive lesions, so even a 2-cm pure ground-glass nodule is followed with CT (Lung-RADS 2 if &lt; 30 mm). Solid nodules grow faster and carry a size-dependent risk.<br> <b>Size</b> (mean diameter) of a solid nodule at baseline: &lt; 6 mm → annual screening; 6–8 mm → CT in 6 months (Lung-RADS 3); 8–15 mm → CT in 3 months or PET-CT if ≥ 8 mm (4A); <b>≥ 15 mm → 4B, PET-CT and/or tissue sampling</b>. Spiculation, lobulation, and upper-lobe location further raise the probability of cancer.<br> PET-CT exploits the increased glucose uptake of most non-small cell cancers; a false-negative result is possible with small (&lt; 8 mm) or ground-glass lesions, which is why PET is used for solid nodules of this size.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">PET-CT (answer)</th><th>Low-dose CT in 3 months (closest rival)</th></tr></thead><tbody> <tr><td>Solid nodule size</td><td><b>≥ 15 mm (Lung-RADS 4B)</b></td><td>8 to &lt; 15 mm (4A)</td></tr> <tr><td>Malignancy risk</td><td><b>&gt; 15 %</b></td><td>5–15 %</td></tr> <tr><td>Purpose</td><td>Characterize and stage before tissue diagnosis</td><td>Detect growth or resolution (infection)</td></tr> <tr><td>This patient</td><td><b>21 mm, solid, lobulated margin</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is a 3-month CT</b>, which is appropriate for an 8–15 mm solid nodule. The dividing line is <b>15 mm</b>; at 21 mm, waiting delays the diagnosis of a probable cancer. Had the nodule been pure ground glass, a longer interval would be appropriate instead.\n- 오답 이유:\n  - (A) A 6-month low-dose CT is used for a solid nodule of 6 to less than 8 mm (Lung-RADS 3), which has a low probability of cancer. This nodule is much larger. It would be correct for a newly found 7-mm solid nodule.\n  - (B) Returning to annual screening fits a solid nodule smaller than 6 mm or a pure ground-glass nodule smaller than 30 mm. This lesion is solid and obscures the vessels. It would be correct if the 21-mm lesion were a pure ground-glass nodule.\n  - (C) Sputum cytology has low sensitivity, especially for peripheral tumors like this one, and a negative result would not change management. It would be considered only for a central endobronchial lesion in a patient unable to undergo bronchoscopy or biopsy.\n  - (E) A 3-month low-dose CT is the recommendation for a solid nodule of 8 to less than 15 mm (Lung-RADS 4A), looking for growth or resolution of an inflammatory lesion. This nodule is 21 mm. It would be correct if the solid nodule measured 10 mm.\n- 함정: Read attenuation before size: the same 21-mm diameter means annual follow-up for pure ground glass but PET-CT or biopsy for a solid nodule.\n- 학습목표: 폐암 선별 저선량 CT 에서 결절이 고형인지 간유리인지 영상으로 읽고, 15 mm 이상 고형 결절(Lung-RADS 4B)은 단기 추적이 아니라 PET-CT 또는 조직 검사로 평가한다\n- 근거·출처: American College of Radiology. Lung-RADS v2022 assessment categories · MacMahon H et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology 2017;284:228 · Armato SG 3rd et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys 2011;38:915 — teacher-only · 작성자 판독(2026-09-28): 왼쪽 위엽 뒤쪽 약 2 cm 고형 결절, 가장자리 약간 분엽·불규칙, 석회화 없음(4인 판독 윤곽 슬라이스)\n\n## 출처\n- LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …02774757 · LIDC XML 판독 윤곽 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The lesion is a solid nodule — it has soft-tissue attenuation that completely obscures the lung vessels, with a slightly lobulated, irregular margin and no calcification. In a screening CT, a solid nodule of 15 mm or larger is Lung-RADS category 4B, for which the malignancy risk exceeds 15 %; it is evaluated with diagnostic chest CT, PET-CT, and/or tissue sampling rather than by short-interval surveillance. In a 61-year-old former heavy smoker, FDG PET-CT characterizes the nodule and stages the mediastinum before biopsy or resection."
+   },
+   {
+    "k": "원리",
+    "v": "Management of a screen-detected nodule depends on <b>three things read from the image: attenuation, size, and growth</b>.<br> <b>Attenuation</b>: a <b>solid</b> nodule has soft-tissue density that hides the vessels passing through it; a <b>ground-glass</b> nodule raises lung density but vessels remain visible; a <b>part-solid</b> nodule has both. Pure ground-glass nodules are usually slow-growing adenocarcinoma in situ or minimally invasive lesions, so even a 2-cm pure ground-glass nodule is followed with CT (Lung-RADS 2 if &lt; 30 mm). Solid nodules grow faster and carry a size-dependent risk.<br> <b>Size</b> (mean diameter) of a solid nodule at baseline: &lt; 6 mm → annual screening; 6–8 mm → CT in 6 months (Lung-RADS 3); 8–15 mm → CT in 3 months or PET-CT if ≥ 8 mm (4A); <b>≥ 15 mm → 4B, PET-CT and/or tissue sampling</b>. Spiculation, lobulation, and upper-lobe location further raise the probability of cancer.<br> PET-CT exploits the increased glucose uptake of most non-small cell cancers; a false-negative result is possible with small (&lt; 8 mm) or ground-glass lesions, which is why PET is used for solid nodules of this size."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">PET-CT (answer)</th><th>Low-dose CT in 3 months (closest rival)</th></tr></thead><tbody> <tr><td>Solid nodule size</td><td><b>≥ 15 mm (Lung-RADS 4B)</b></td><td>8 to &lt; 15 mm (4A)</td></tr> <tr><td>Malignancy risk</td><td><b>&gt; 15 %</b></td><td>5–15 %</td></tr> <tr><td>Purpose</td><td>Characterize and stage before tissue diagnosis</td><td>Detect growth or resolution (infection)</td></tr> <tr><td>This patient</td><td><b>21 mm, solid, lobulated margin</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is a 3-month CT</b>, which is appropriate for an 8–15 mm solid nodule. The dividing line is <b>15 mm</b>; at 21 mm, waiting delays the diagnosis of a probable cancer. Had the nodule been pure ground glass, a longer interval would be appropriate instead."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A 6-month low-dose CT is used for a solid nodule of 6 to less than 8 mm (Lung-RADS 3), which has a low probability of cancer. This nodule is much larger. It would be correct for a newly found 7-mm solid nodule.\n(B) Returning to annual screening fits a solid nodule smaller than 6 mm or a pure ground-glass nodule smaller than 30 mm. This lesion is solid and obscures the vessels. It would be correct if the 21-mm lesion were a pure ground-glass nodule.\n(C) Sputum cytology has low sensitivity, especially for peripheral tumors like this one, and a negative result would not change management. It would be considered only for a central endobronchial lesion in a patient unable to undergo bronchoscopy or biopsy.\n(E) A 3-month low-dose CT is the recommendation for a solid nodule of 8 to less than 15 mm (Lung-RADS 4A), looking for growth or resolution of an inflammatory lesion. This nodule is 21 mm. It would be correct if the solid nodule measured 10 mm."
+   },
+   {
+    "k": "함정",
+    "v": "Read attenuation before size: the same 21-mm diameter means annual follow-up for pure ground glass but PET-CT or biopsy for a solid nodule."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐암 선별 저선량 CT 에서 결절이 고형인지 간유리인지 영상으로 읽고, 15 mm 이상 고형 결절(Lung-RADS 4B)은 단기 추적이 아니라 PET-CT 또는 조직 검사로 평가한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. Lung-RADS v2022 assessment categories · MacMahon H et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology 2017;284:228 · Armato SG 3rd et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys 2011;38:915 — teacher-only · 작성자 판독(2026-09-28): 왼쪽 위엽 뒤쪽 약 2 cm 고형 결절, 가장자리 약간 분엽·불규칙, 석회화 없음(4인 판독 윤곽 슬라이스) ## 출처 LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …02774757 · LIDC XML 판독 윤곽 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "혈관을 가리는 고형 결절이고 평균 직경이 15 mm 이상이므로 Lung-RADS 4B 로 단기 추적이 아니라 PET-CT 로 평가한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "3개월 추적은 8~15 mm 고형 결절(4A)의 권고이고, 이 결절은 21 mm 다",
+   "steps": 3,
+   "chain": [
+    "영상: 결절이 연조직 음영으로 폐혈관을 완전히 가림 → 고형 결절(간유리 아님)",
+    "고형 + 평균 직경 21 mm(≥ 15 mm) → Lung-RADS 4B, 악성 위험 > 15 %",
+    "4B → 단기 추적이 아니라 PET-CT(및 조직 검사)"
+   ],
+   "key": [
+    {
+     "item": "영상: 폐혈관을 가리는 연조직 음영의 결절, 가장자리 약간 분엽",
+     "why": "고형 결절 — 관리 기준을 정하는 첫 판단",
+     "also": []
+    },
+    {
+     "item": "measures 21 mm in mean diameter",
+     "why": "15 mm 이상 — 4B",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "36-pack-year history of cigarette smoking and quit 4 years ago",
+     "why": "선별 대상이고 사전 확률을 높인다",
+     "also": []
+    },
+    {
+     "item": "No previous chest imaging is available for comparison",
+     "why": "성장 속도로 양성을 판정할 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has no cough, hemoptysis, or weight loss",
+     "why": "무증상 선별 발견 — 관리 기준을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "The lungs are clear to auscultation",
+     "why": "말초 결절은 청진에 나타나지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "혈관을 가리는 21 mm 고형 결절이므로 Lung-RADS 4B 다. 단기 CT 추적이 아니라 PET-CT 로 성격과 병기를 평가한 뒤 조직 진단으로 간다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 21 mm 병변이 혈관이 비쳐 보이는 순수 간유리 결절이었다면 연 1회 선별 CT 로 돌아간다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0144.png",
+   "caption": "Axial chest CT, lung window, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 3.0; converted from DICOM without cropping)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA LIDC-IDRI (Lung Image Database Consortium)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6279.6001.204566802718283633558802774757",
+   "asset_id": "TCIA-LIDC_IDRI-NOD861976288675",
+   "text": "LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …02774757 · LIDC XML 판독 윤곽"
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0153",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "약리 — 항생제 추가 뒤 생긴 초조와 발열",
+  "type": "약리 — 항생제 추가 뒤 생긴 초조와 발열",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-27",
+  "vignette": "A 47-year-old man is hospitalized for a diabetic foot infection with methicillin-resistant Staphylococcus aureus osteomyelitis. He has taken sertraline for major depressive disorder for 2 years. On hospital day 3, linezolid is started because of vancomycin-associated acute kidney injury. Thirty-six hours later, he becomes agitated and tremulous and has profuse sweating and diarrhea. His temperature is 38.9°C (102°F), pulse is 124/min, and blood pressure is 158/92 mm Hg. The pupils are dilated. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and inducible ocular clonus; muscle tone is increased more in the legs than in the arms. The skin is diaphoretic, and bowel sounds are hyperactive.",
+  "question": "Which of the following actions of the newly started drug is the most likely cause of these findings?",
+  "options": [
+   "Antagonism of dopamine D2 receptors",
+   "Inhibition of cytochrome P450 2D6",
+   "Blockade of muscarinic acetylcholine receptors",
+   "Activation of skeletal muscle ryanodine receptors",
+   "Inhibition of monoamine oxidase"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Rapid onset (within 1–2 days) of agitation, diaphoresis, diarrhea, hyperthermia, tachycardia, mydriasis, hyperreflexia, and spontaneous or inducible clonus — worse in the lower extremities — after adding a drug to an SSRI fulfills the Hunter criteria for serotonin syndrome. Besides its antibacterial action on the 50S ribosomal subunit, linezolid is a weak, reversible, nonselective inhibitor of monoamine oxidase A and B. MAO-A normally degrades synaptic serotonin; inhibiting it while an SSRI blocks reuptake causes serotonin to accumulate and overstimulate 5-HT2A receptors.\n- 원리: <b>Serotonin toxicity</b> is a concentration-dependent effect of excess synaptic serotonin, chiefly acting on <b>5-HT2A</b> (hyperthermia, neuromuscular hyperactivity) and 5-HT1A receptors. The most dangerous combinations pair <b>two mechanisms</b> — for example, blocked reuptake (SSRI, SNRI, tramadol, meperidine) with blocked breakdown (<b>MAO inhibitors, including linezolid and methylene blue</b>).<br> Serotonin is metabolized by <b>MAO-A</b> in presynaptic neurons and the gut. Linezolid, an oxazolidinone, structurally resembles older MAO inhibitors and inhibits MAO reversibly; alone it rarely matters, but with an SSRI it can precipitate toxicity within hours to a few days.<br> <b>The Hunter criteria</b> rely on neuromuscular signs: spontaneous clonus; inducible or ocular clonus with agitation or diaphoresis; tremor with hyperreflexia; or hypertonia with temperature above 38°C and ocular or inducible clonus. <b>Clonus and hyperreflexia, worse in the legs</b>, are the key discriminators from other toxidromes. Autonomic signs — mydriasis, diarrhea, hyperactive bowel sounds, diaphoresis, tachycardia — accompany them.<br> Treatment is stopping the serotonergic drugs, benzodiazepines, cooling, and cyproheptadine (a 5-HT2A antagonist) for moderate cases; severe hyperthermia requires sedation, paralysis, and intubation.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Serotonin syndrome — MAO inhibition (answer)</th><th>Neuroleptic malignant syndrome — D2 antagonism (closest rival)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Hours to 1–2 days</b></td><td>Days to weeks</td></tr> <tr><td>Neuromuscular</td><td><b>Clonus, hyperreflexia, legs &gt; arms</b></td><td>“Lead-pipe” rigidity, bradyreflexia</td></tr> <tr><td>Gut and pupils</td><td>Diarrhea, hyperactive bowel sounds, mydriasis</td><td>Normal bowel sounds, normal pupils</td></tr> <tr><td>Culprit</td><td>Serotonergic combination</td><td>Antipsychotic or withdrawal of dopamine agonist</td></tr> </tbody></table> <b>The closest rival is D2 antagonism (NMS)</b>, which also causes fever, autonomic instability, and increased tone. The dividing line is <b>clonus with hyperreflexia and rapid onset</b> versus slow onset with lead-pipe rigidity and diminished reflexes.\n- 오답 이유:\n  - (A) Dopamine D2 antagonism by antipsychotics causes neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity, bradyreflexia, and no clonus. Linezolid has no D2 activity. It would be correct if haloperidol had been started and the patient had diffuse rigidity with depressed reflexes.\n  - (B) CYP2D6 inhibition by drugs such as fluoxetine, paroxetine, or bupropion can raise levels of other serotonergic drugs, but linezolid is not metabolized by or an inhibitor of cytochrome P450 enzymes. It would be correct if fluoxetine had been added to a patient taking tramadol.\n  - (C) Muscarinic blockade causes anticholinergic toxicity — hyperthermia and mydriasis with dry, flushed skin, urinary retention, and absent bowel sounds, without clonus. This patient is sweating with diarrhea. It would be correct after an overdose of diphenhydramine or a tricyclic antidepressant.\n  - (D) Abnormal ryanodine receptor calcium release causes malignant hyperthermia after volatile anesthetics or succinylcholine, with masseter rigidity, rising end-tidal CO2, and rapid temperature rise in the operating room. It would be correct for a patient under sevoflurane anesthesia.\n- 함정: Linezolid is an MAO inhibitor as well as an antibiotic — clonus and hyperreflexia within a day or two of adding it to an SSRI mean serotonin syndrome, not NMS.\n- 학습목표: SSRI 복용자가 리네졸리드를 시작한 뒤 클로누스·과반사·고열·자율신경 항진이 빠르게 생기면 세로토닌 증후군이며, 원인은 리네졸리드의 비선택적 모노아민 산화효소 억제다\n- 근거·출처: Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96:635 · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — oxazolidinones; antidepressant agents",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rapid onset (within 1–2 days) of agitation, diaphoresis, diarrhea, hyperthermia, tachycardia, mydriasis, hyperreflexia, and spontaneous or inducible clonus — worse in the lower extremities — after adding a drug to an SSRI fulfills the Hunter criteria for serotonin syndrome. Besides its antibacterial action on the 50S ribosomal subunit, linezolid is a weak, reversible, nonselective inhibitor of monoamine oxidase A and B. MAO-A normally degrades synaptic serotonin; inhibiting it while an SSRI blocks reuptake causes serotonin to accumulate and overstimulate 5-HT2A receptors."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Serotonin toxicity</b> is a concentration-dependent effect of excess synaptic serotonin, chiefly acting on <b>5-HT2A</b> (hyperthermia, neuromuscular hyperactivity) and 5-HT1A receptors. The most dangerous combinations pair <b>two mechanisms</b> — for example, blocked reuptake (SSRI, SNRI, tramadol, meperidine) with blocked breakdown (<b>MAO inhibitors, including linezolid and methylene blue</b>).<br> Serotonin is metabolized by <b>MAO-A</b> in presynaptic neurons and the gut. Linezolid, an oxazolidinone, structurally resembles older MAO inhibitors and inhibits MAO reversibly; alone it rarely matters, but with an SSRI it can precipitate toxicity within hours to a few days.<br> <b>The Hunter criteria</b> rely on neuromuscular signs: spontaneous clonus; inducible or ocular clonus with agitation or diaphoresis; tremor with hyperreflexia; or hypertonia with temperature above 38°C and ocular or inducible clonus. <b>Clonus and hyperreflexia, worse in the legs</b>, are the key discriminators from other toxidromes. Autonomic signs — mydriasis, diarrhea, hyperactive bowel sounds, diaphoresis, tachycardia — accompany them.<br> Treatment is stopping the serotonergic drugs, benzodiazepines, cooling, and cyproheptadine (a 5-HT2A antagonist) for moderate cases; severe hyperthermia requires sedation, paralysis, and intubation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Serotonin syndrome — MAO inhibition (answer)</th><th>Neuroleptic malignant syndrome — D2 antagonism (closest rival)</th></tr></thead><tbody> <tr><td>Onset</td><td><b>Hours to 1–2 days</b></td><td>Days to weeks</td></tr> <tr><td>Neuromuscular</td><td><b>Clonus, hyperreflexia, legs &gt; arms</b></td><td>“Lead-pipe” rigidity, bradyreflexia</td></tr> <tr><td>Gut and pupils</td><td>Diarrhea, hyperactive bowel sounds, mydriasis</td><td>Normal bowel sounds, normal pupils</td></tr> <tr><td>Culprit</td><td>Serotonergic combination</td><td>Antipsychotic or withdrawal of dopamine agonist</td></tr> </tbody></table> <b>The closest rival is D2 antagonism (NMS)</b>, which also causes fever, autonomic instability, and increased tone. The dividing line is <b>clonus with hyperreflexia and rapid onset</b> versus slow onset with lead-pipe rigidity and diminished reflexes."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dopamine D2 antagonism by antipsychotics causes neuroleptic malignant syndrome, which develops over days with lead-pipe rigidity, bradyreflexia, and no clonus. Linezolid has no D2 activity. It would be correct if haloperidol had been started and the patient had diffuse rigidity with depressed reflexes.\n(B) CYP2D6 inhibition by drugs such as fluoxetine, paroxetine, or bupropion can raise levels of other serotonergic drugs, but linezolid is not metabolized by or an inhibitor of cytochrome P450 enzymes. It would be correct if fluoxetine had been added to a patient taking tramadol.\n(C) Muscarinic blockade causes anticholinergic toxicity — hyperthermia and mydriasis with dry, flushed skin, urinary retention, and absent bowel sounds, without clonus. This patient is sweating with diarrhea. It would be correct after an overdose of diphenhydramine or a tricyclic antidepressant.\n(D) Abnormal ryanodine receptor calcium release causes malignant hyperthermia after volatile anesthetics or succinylcholine, with masseter rigidity, rising end-tidal CO2, and rapid temperature rise in the operating room. It would be correct for a patient under sevoflurane anesthesia."
+   },
+   {
+    "k": "함정",
+    "v": "Linezolid is an MAO inhibitor as well as an antibiotic — clonus and hyperreflexia within a day or two of adding it to an SSRI mean serotonin syndrome, not NMS."
+   },
+   {
+    "k": "학습목표",
+    "v": "SSRI 복용자가 리네졸리드를 시작한 뒤 클로누스·과반사·고열·자율신경 항진이 빠르게 생기면 세로토닌 증후군이며, 원인은 리네졸리드의 비선택적 모노아민 산화효소 억제다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112 · Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96:635 · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — oxazolidinones; antidepressant agents"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "SSRI 복용 중 리네졸리드를 추가한 뒤 하루 반 만에 클로누스·과반사·고열·자율신경 항진이 생겼으므로 세로토닌 증후군이고, 원인은 리네졸리드의 MAO 억제다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "신경이완제 악성 증후군은 수일에 걸쳐 납관 경직과 반사 저하로 오고 클로누스가 없다",
+   "steps": 3,
+   "chain": [
+    "36시간 만의 초조·발한·설사·고열·산동 + 하지 우세 과반사·클로누스 → Hunter 기준 충족 → 세로토닌 증후군",
+    "sertraline(재흡수 차단) + 새 약 linezolid → 두 번째 세로토닌 기전이 필요",
+    "리네졸리드는 비선택적 MAO 억제 → 세로토닌 분해 차단 → 축적"
+   ],
+   "key": [
+    {
+     "item": "sustained ankle clonus and inducible ocular clonus",
+     "why": "세로토닌 증후군의 핵심 신경근 소견",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are 4+ in the lower extremities",
+     "why": "과반사 — 하지 우세",
+     "also": []
+    },
+    {
+     "item": "He has taken sertraline for major depressive disorder for 2 years",
+     "why": "첫 번째 세로토닌 약물",
+     "also": []
+    },
+    {
+     "item": "Thirty-six hours later",
+     "why": "빠른 발병 — NMS 와 구분",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "has profuse sweating and diarrhea",
+     "why": "항콜린성 독성(건조 피부·장음 소실) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "His temperature is 38.9°C",
+     "why": "중등도 이상 — 냉각·벤조디아제핀·시프로헵타딘",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "vancomycin-associated acute kidney injury",
+     "why": "리네졸리드로 바꾼 이유 — 기전 판단과 무관",
+     "also": []
+    }
+   ],
+   "summary": "SSRI 에 리네졸리드를 더한 뒤 36시간 만에 하지 우세 클로누스·과반사·고열·설사가 생긴 세로토닌 증후군이다. 리네졸리드의 비선택적 MAO 억제가 세로토닌 분해를 막은 것이 원인이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "할로페리돌 시작 뒤 수일에 걸쳐 전신 납관 경직과 반사 저하, 크레아틴키나제 상승이 왔다면 D2 길항에 의한 신경이완제 악성 증후군이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0152",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "내분비·대사 — 건강검진에서 발견된 고칼슘혈증",
+  "type": "내분비·대사 — 건강검진에서 발견된 고칼슘혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-27",
+  "vignette": "58세 여자가 건강검진에서 혈청 칼슘이 높다는 말을 듣고 왔다. 증상은 없고 콩팥결석·골절 병력은 없다. 복용하는 약은 없고 가족 중 고칼슘혈증이 있는 사람은 없다. 혈압 124/78 mmHg 이다. 혈청 칼슘 11.0 mg/dL(참고치 8.5~10.5), 인 2.4 mg/dL, 부갑상샘호르몬 98 pg/mL(참고치 15~65), 25-히드록시비타민 D 32 ng/mL, 크레아티닌 0.7 mg/dL(추정 사구체여과율 88 mL/min/1.73 m²)이다. 24시간 소변 칼슘은 260 mg 이고 칼슘/크레아티닌 청소율비는 0.024 이다. 콩팥 초음파에서 결석은 없다. 이중에너지 X선 흡수계측에서 T 점수는 요추 −1.8, 대퇴경부 −1.6, 원위 1/3 요골 −2.7 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "알렌드로네이트 단독 투여",
+   "하루 칼슘 섭취를 400 mg 이하로 제한",
+   "부갑상샘절제술",
+   "1년마다 혈청 칼슘과 골밀도를 추적 관찰",
+   "시나칼세트 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 부갑상샘호르몬이 높은 고칼슘혈증이고 칼슘/크레아티닌 청소율비가 0.02 를 넘어(0.024) 가족성 저칼슘뇨 고칼슘혈증이 아닌 원발부갑상샘항진증이다. 증상은 없지만 원위 1/3 요골의 T 점수가 −2.5 이하(−2.7)여서 제5차 국제 워크숍의 수술 적응증을 채운다. 원위 1/3 요골은 부갑상샘호르몬의 영향을 가장 크게 받는 피질골이다. 따라서 부갑상샘절제술이 가장 적절하다.\n- 원리: 부갑상샘호르몬은 <b>피질골을 더 많이 흡수</b>하고 해면골은 상대적으로 보존한다. 그래서 원발부갑상샘항진증의 골 손실은 <b>원위 1/3 요골(피질골이 대부분)</b>에서 가장 먼저·크게 나타나고, 요추(해면골 위주)는 정상에 가까울 수 있다. 요추·대퇴만 재면 골 침범을 놓친다 — 이 환자가 그렇다.<br> <b>무증상 환자의 수술 적응증</b>(제5차 국제 워크숍, 2022): ① 혈청 칼슘이 정상 상한보다 <b>1 mg/dL 넘게</b> 높음 ② 골 — 요추·고관절·대퇴경부·원위 1/3 요골 중 <b>어느 곳이든 T 점수 −2.5 이하</b>, 또는 척추 골절 ③ 콩팥 — eGFR 60 미만, 콩팥결석·신석회화, 24시간 소변 칼슘 &gt; 300 mg(여) 또는 &gt; 250 mg(남 · 일부 기준 400) ④ <b>나이 50세 미만</b>. 하나만 있어도 수술한다. 경험 많은 외과의의 수술 완치율은 95 % 이상이고, 수술 뒤 골밀도가 오르고 콩팥결석이 줄어든다.<br> <b>가족성 저칼슘뇨 고칼슘혈증(FHH)</b>은 칼슘감지수용체의 기능 저하로 부갑상샘호르몬이 정상~약간 높고 소변 칼슘이 적다. 칼슘/크레아티닌 청소율비가 <b>0.01 미만</b>이면 FHH 를 의심하고, 이 경우 수술해도 좋아지지 않는다. 그래서 수술 전에 반드시 확인한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">부갑상샘절제술(정답)</th><th>추적 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>칼슘</td><td>상한 + 1 초과이거나</td><td>상한 + 1 이하(이 환자 +0.5)</td></tr> <tr><td>골밀도</td><td><b>어느 부위든 T ≤ −2.5 — 원위 요골 −2.7</b></td><td>모든 부위 T &gt; −2.5</td></tr> <tr><td>콩팥</td><td>eGFR &lt; 60·결석·소변 칼슘 과다</td><td>이 환자처럼 모두 정상</td></tr> <tr><td>나이</td><td>50세 미만</td><td>50세 이상(이 환자 58세)</td></tr> </tbody></table> <b>가장 가까운 오답은 추적 관찰</b>이다. 칼슘·콩팥·나이 기준은 모두 비켜 가고 요추·대퇴 T 점수도 −2.5 보다 높아서다. 갈림길은 <b>원위 1/3 요골</b> 하나다 — 부갑상샘호르몬이 먼저 깎는 부위가 기준을 넘었다.\n- 오답 이유:\n  - ① 알렌드로네이트는 골밀도를 올리지만 원인인 부갑상샘호르몬 과다와 고칼슘혈증을 그대로 둔다. 수술이 불가능한 환자의 골 보호에 쓴다. 수술을 거부한 골다공증 환자였다면 선택지가 된다.\n  - ② 칼슘 섭취 제한은 오히려 부갑상샘호르몬 분비를 더 자극하고 골 손실을 늘려 권하지 않는다. 원발부갑상샘항진증에서도 일반 권장량을 유지한다. 어떤 상황에서도 이 질환의 표준 치료가 아니다.\n  - ④ 1년마다 칼슘·골밀도 추적은 수술 적응증이 하나도 없는 무증상 환자의 관리다. 이 환자는 원위 요골 T 점수가 −2.7 로 기준을 넘는다. 원위 요골이 −2.0 이었다면 정답이 된다.\n  - ⑤ 시나칼세트는 칼슘감지수용체를 민감하게 해 칼슘을 낮추지만 골밀도를 올리지 못한다. 수술할 수 없거나 거부한 환자, 부갑상샘암에서 쓴다. 심한 동반 질환으로 수술이 불가능했다면 고려한다.\n- 함정: 요추·대퇴가 −2.5 보다 높아도 원위 1/3 요골을 확인한다 — 부갑상샘호르몬은 피질골을 먼저 깎는다.\n- 학습목표: 무증상 원발부갑상샘항진증에서 어느 부위든 골밀도 T 점수 −2.5 이하(원위 요골 포함)는 수술 적응증이고, 가족성 저칼슘뇨 고칼슘혈증은 칼슘/크레아티닌 청소율비로 배제한다\n- 근거·출처: Bilezikian JP et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res 2022;37:2293 · Wilhelm SM et al. The American Association of Endocrine Surgeons guidelines for definitive management of primary hyperparathyroidism. JAMA Surg 2016;151:959 · Harrison's Principles of Internal Medicine, 21st ed. — disorders of the parathyroid gland and calcium homeostasis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "부갑상샘호르몬이 높은 고칼슘혈증이고 칼슘/크레아티닌 청소율비가 0.02 를 넘어(0.024) 가족성 저칼슘뇨 고칼슘혈증이 아닌 원발부갑상샘항진증이다. 증상은 없지만 원위 1/3 요골의 T 점수가 −2.5 이하(−2.7)여서 제5차 국제 워크숍의 수술 적응증을 채운다. 원위 1/3 요골은 부갑상샘호르몬의 영향을 가장 크게 받는 피질골이다. 따라서 부갑상샘절제술이 가장 적절하다."
+   },
+   {
+    "k": "원리",
+    "v": "부갑상샘호르몬은 <b>피질골을 더 많이 흡수</b>하고 해면골은 상대적으로 보존한다. 그래서 원발부갑상샘항진증의 골 손실은 <b>원위 1/3 요골(피질골이 대부분)</b>에서 가장 먼저·크게 나타나고, 요추(해면골 위주)는 정상에 가까울 수 있다. 요추·대퇴만 재면 골 침범을 놓친다 — 이 환자가 그렇다.<br> <b>무증상 환자의 수술 적응증</b>(제5차 국제 워크숍, 2022): ① 혈청 칼슘이 정상 상한보다 <b>1 mg/dL 넘게</b> 높음 ② 골 — 요추·고관절·대퇴경부·원위 1/3 요골 중 <b>어느 곳이든 T 점수 −2.5 이하</b>, 또는 척추 골절 ③ 콩팥 — eGFR 60 미만, 콩팥결석·신석회화, 24시간 소변 칼슘 &gt; 300 mg(여) 또는 &gt; 250 mg(남 · 일부 기준 400) ④ <b>나이 50세 미만</b>. 하나만 있어도 수술한다. 경험 많은 외과의의 수술 완치율은 95 % 이상이고, 수술 뒤 골밀도가 오르고 콩팥결석이 줄어든다.<br> <b>가족성 저칼슘뇨 고칼슘혈증(FHH)</b>은 칼슘감지수용체의 기능 저하로 부갑상샘호르몬이 정상~약간 높고 소변 칼슘이 적다. 칼슘/크레아티닌 청소율비가 <b>0.01 미만</b>이면 FHH 를 의심하고, 이 경우 수술해도 좋아지지 않는다. 그래서 수술 전에 반드시 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">부갑상샘절제술(정답)</th><th>추적 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>칼슘</td><td>상한 + 1 초과이거나</td><td>상한 + 1 이하(이 환자 +0.5)</td></tr> <tr><td>골밀도</td><td><b>어느 부위든 T ≤ −2.5 — 원위 요골 −2.7</b></td><td>모든 부위 T &gt; −2.5</td></tr> <tr><td>콩팥</td><td>eGFR &lt; 60·결석·소변 칼슘 과다</td><td>이 환자처럼 모두 정상</td></tr> <tr><td>나이</td><td>50세 미만</td><td>50세 이상(이 환자 58세)</td></tr> </tbody></table> <b>가장 가까운 오답은 추적 관찰</b>이다. 칼슘·콩팥·나이 기준은 모두 비켜 가고 요추·대퇴 T 점수도 −2.5 보다 높아서다. 갈림길은 <b>원위 1/3 요골</b> 하나다 — 부갑상샘호르몬이 먼저 깎는 부위가 기준을 넘었다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 알렌드로네이트는 골밀도를 올리지만 원인인 부갑상샘호르몬 과다와 고칼슘혈증을 그대로 둔다. 수술이 불가능한 환자의 골 보호에 쓴다. 수술을 거부한 골다공증 환자였다면 선택지가 된다.\n② 칼슘 섭취 제한은 오히려 부갑상샘호르몬 분비를 더 자극하고 골 손실을 늘려 권하지 않는다. 원발부갑상샘항진증에서도 일반 권장량을 유지한다. 어떤 상황에서도 이 질환의 표준 치료가 아니다.\n④ 1년마다 칼슘·골밀도 추적은 수술 적응증이 하나도 없는 무증상 환자의 관리다. 이 환자는 원위 요골 T 점수가 −2.7 로 기준을 넘는다. 원위 요골이 −2.0 이었다면 정답이 된다.\n⑤ 시나칼세트는 칼슘감지수용체를 민감하게 해 칼슘을 낮추지만 골밀도를 올리지 못한다. 수술할 수 없거나 거부한 환자, 부갑상샘암에서 쓴다. 심한 동반 질환으로 수술이 불가능했다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "요추·대퇴가 −2.5 보다 높아도 원위 1/3 요골을 확인한다 — 부갑상샘호르몬은 피질골을 먼저 깎는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무증상 원발부갑상샘항진증에서 어느 부위든 골밀도 T 점수 −2.5 이하(원위 요골 포함)는 수술 적응증이고, 가족성 저칼슘뇨 고칼슘혈증은 칼슘/크레아티닌 청소율비로 배제한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bilezikian JP et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res 2022;37:2293 · Wilhelm SM et al. The American Association of Endocrine Surgeons guidelines for definitive management of primary hyperparathyroidism. JAMA Surg 2016;151:959 · Harrison's Principles of Internal Medicine, 21st ed. — disorders of the parathyroid gland and calcium homeostasis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "PTH 의존 고칼슘혈증에 FHH 가 배제되었고 원위 1/3 요골 T 점수가 −2.7 로 수술 적응증을 채우므로 부갑상샘절제술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "칼슘·콩팥·나이 기준은 비켜 가지만 원위 1/3 요골 T ≤ −2.5 하나로 수술 적응증이 된다",
+   "steps": 3,
+   "chain": [
+    "칼슘 11.0 + 부갑상샘호르몬 98 → PTH 의존 고칼슘혈증",
+    "칼슘/크레아티닌 청소율비 0.024(> 0.02) → FHH 아님 → 원발부갑상샘항진증",
+    "원위 1/3 요골 T −2.7(≤ −2.5) → 무증상이라도 수술 적응증 → 부갑상샘절제술"
+   ],
+   "key": [
+    {
+     "item": "부갑상샘호르몬 98 pg/mL",
+     "why": "PTH 의존 고칼슘혈증",
+     "also": []
+    },
+    {
+     "item": "원위 1/3 요골 −2.7",
+     "why": "골 기준의 수술 적응증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼슘/크레아티닌 청소율비는 0.024",
+     "why": "FHH 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "25-히드록시비타민 D 32 ng/mL",
+     "why": "비타민 D 결핍에 의한 이차 항진 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 칼슘 11.0 mg/dL",
+     "why": "상한 + 0.5 — 칼슘 기준은 채우지 않는다",
+     "also": []
+    },
+    {
+     "item": "콩팥 초음파에서 결석은 없다",
+     "why": "콩팥 기준은 채우지 않는다",
+     "also": []
+    },
+    {
+     "item": "58세 여자",
+     "why": "50세 이상 — 나이 기준은 채우지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "요추 −1.8, 대퇴경부 −1.6",
+     "why": "해면골 위주라 덜 깎였다 — 이것만 보면 관찰로 오판",
+     "also": []
+    }
+   ],
+   "summary": "PTH 가 높은 고칼슘혈증이고 칼슘/크레아티닌 청소율비 0.024 로 FHH 가 아니다. 무증상이지만 원위 1/3 요골 T 점수 −2.7 이 수술 적응증이라 부갑상샘절제술을 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "원위 1/3 요골 T 점수가 −2.0 이었다면 적응증이 없어 1년마다 칼슘·골밀도 추적 관찰이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0151",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "소아청소년 — 영아의 간헐적 보챔과 혈변",
+  "type": "소아청소년 — 영아의 간헐적 보챔과 혈변",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-27",
+  "vignette": "A 9-month-old boy is brought to the emergency department because of episodes of inconsolable crying for 12 hours. During each episode, which lasts a few minutes and recurs every 15 to 20 minutes, he draws his legs up to his abdomen; between episodes he is unusually sleepy. He has vomited three times, and his last stool contained blood and mucus. He was previously healthy, and his immunizations are up to date. His temperature is 37.6°C (99.7°F), pulse is 150/min, and blood pressure is 88/54 mm Hg. Capillary refill time is 2 seconds. The abdomen is soft, without guarding, and a sausage-shaped mass is palpable in the right upper quadrant. Ultrasonography shows a target sign in the right upper quadrant. Intravenous fluids are started.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Air enema reduction under imaging guidance",
+   "Exploratory laparotomy",
+   "CT scan of the abdomen with contrast",
+   "Upper gastrointestinal series with small bowel follow-through",
+   "Observation with serial abdominal examinations"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Paroxysmal colicky pain with drawing up of the legs, lethargy between episodes, vomiting, bloody mucoid stool, and a sausage-shaped right upper quadrant mass in a 9-month-old indicate ileocolic intussusception, confirmed by the ultrasonographic target sign. He is hemodynamically stable with a soft abdomen, so there is no peritonitis or perforation. After fluid resuscitation, the first-line treatment is nonoperative reduction by air (or saline) enema under fluoroscopic or ultrasonographic guidance, which succeeds in about 80–90 % of cases.\n- 원리: In <b>ileocolic intussusception</b>, a segment of ileum (intussusceptum) telescopes into the colon, usually led by hypertrophied Peyer patches after a viral infection in children 6–36 months old. Peristalsis drags the mesentery with it, causing <b>colicky pain</b> during each wave; compression of the mesenteric veins leads to <b>venous congestion, mucosal sloughing, and “currant jelly” stool</b>, and eventually arterial compromise, necrosis, and perforation. Lethargy between episodes is common and may be the main sign in infants.<br> <b>Ultrasonography</b> is the diagnostic test of choice: concentric rings of bowel wall within bowel form the <b>target (doughnut) sign</b> in cross-section.<br> <b>Enema reduction</b> uses controlled intraluminal pressure from the rectum to push the intussusceptum back through the ileocecal valve. Air is preferred because it is quick and, if perforation occurs, spills gas rather than contrast or feces. Success is lower when symptoms have lasted longer than 24–48 hours or a pathologic lead point (Meckel diverticulum, polyp, lymphoma) is present, and recurrence occurs in about 10 %.<br> <b>Surgery</b> is reserved for peritonitis, perforation (free air), shock that does not respond to fluids, or failed enema reduction, because enema pressure could rupture necrotic bowel.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Air enema reduction (answer)</th><th>Exploratory laparotomy (closest rival)</th></tr></thead><tbody> <tr><td>Abdominal examination</td><td><b>Soft, no guarding</b></td><td>Peritonitis — guarding, rigidity</td></tr> <tr><td>Hemodynamics</td><td><b>Stable after fluids</b></td><td>Shock refractory to fluids</td></tr> <tr><td>Imaging</td><td>Target sign, no free air</td><td>Free air (perforation)</td></tr> <tr><td>Success / role</td><td>About 80–90 %; first line</td><td>After failed enema or when enema is contraindicated</td></tr> </tbody></table> <b>The closest rival is laparotomy</b>, because bloody stool suggests ischemia. The dividing line is <b>peritonitis, perforation, or shock</b>: without them, bloody stool alone does not preclude an enema attempt.\n- 오답 이유:\n  - (B) Exploratory laparotomy is indicated for intussusception with peritonitis, perforation, refractory shock, or failed enema reduction. This infant has a soft abdomen and stable vital signs. It would be correct if the abdomen were rigid and a radiograph showed free air.\n  - (C) CT of the abdomen adds radiation and delay without changing management in a typical case confirmed by ultrasonography. It is reserved for atypical presentations or suspected pathologic lead points in older children. It would be considered in a 10-year-old with recurrent intussusception and weight loss.\n  - (D) An upper GI series with small bowel follow-through evaluates malrotation, obstruction, or mucosal disease of the proximal bowel and cannot reduce an ileocolic intussusception. It would be correct for bilious vomiting in a neonate with suspected malrotation.\n  - (E) Observation is appropriate only for small, transient small-bowel–small-bowel intussusceptions found incidentally on ultrasonography, which often reduce spontaneously. An ileocolic intussusception with bloody stool will progress to ischemia. It would be correct for a short (< 3 cm) small-bowel intussusception without symptoms.\n- 함정: Bloody stool does not by itself mean surgery — without peritonitis, perforation, or refractory shock, enema reduction comes first.\n- 학습목표: 영아의 간헐적 복통·혈변과 초음파 표적 징후로 회결장 장중첩증을 진단하고, 복막염·천공·쇼크가 없으면 수술이 아니라 영상 유도 공기(또는 식염수) 관장 정복을 먼저 한다\n- 근거·출처: Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39(Suppl 2):S140 · Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — intussusception · Edwards EA et al. Intussusception: past, present and future. Pediatr Radiol 2017;47:1101",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Paroxysmal colicky pain with drawing up of the legs, lethargy between episodes, vomiting, bloody mucoid stool, and a sausage-shaped right upper quadrant mass in a 9-month-old indicate ileocolic intussusception, confirmed by the ultrasonographic target sign. He is hemodynamically stable with a soft abdomen, so there is no peritonitis or perforation. After fluid resuscitation, the first-line treatment is nonoperative reduction by air (or saline) enema under fluoroscopic or ultrasonographic guidance, which succeeds in about 80–90 % of cases."
+   },
+   {
+    "k": "원리",
+    "v": "In <b>ileocolic intussusception</b>, a segment of ileum (intussusceptum) telescopes into the colon, usually led by hypertrophied Peyer patches after a viral infection in children 6–36 months old. Peristalsis drags the mesentery with it, causing <b>colicky pain</b> during each wave; compression of the mesenteric veins leads to <b>venous congestion, mucosal sloughing, and “currant jelly” stool</b>, and eventually arterial compromise, necrosis, and perforation. Lethargy between episodes is common and may be the main sign in infants.<br> <b>Ultrasonography</b> is the diagnostic test of choice: concentric rings of bowel wall within bowel form the <b>target (doughnut) sign</b> in cross-section.<br> <b>Enema reduction</b> uses controlled intraluminal pressure from the rectum to push the intussusceptum back through the ileocecal valve. Air is preferred because it is quick and, if perforation occurs, spills gas rather than contrast or feces. Success is lower when symptoms have lasted longer than 24–48 hours or a pathologic lead point (Meckel diverticulum, polyp, lymphoma) is present, and recurrence occurs in about 10 %.<br> <b>Surgery</b> is reserved for peritonitis, perforation (free air), shock that does not respond to fluids, or failed enema reduction, because enema pressure could rupture necrotic bowel."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Air enema reduction (answer)</th><th>Exploratory laparotomy (closest rival)</th></tr></thead><tbody> <tr><td>Abdominal examination</td><td><b>Soft, no guarding</b></td><td>Peritonitis — guarding, rigidity</td></tr> <tr><td>Hemodynamics</td><td><b>Stable after fluids</b></td><td>Shock refractory to fluids</td></tr> <tr><td>Imaging</td><td>Target sign, no free air</td><td>Free air (perforation)</td></tr> <tr><td>Success / role</td><td>About 80–90 %; first line</td><td>After failed enema or when enema is contraindicated</td></tr> </tbody></table> <b>The closest rival is laparotomy</b>, because bloody stool suggests ischemia. The dividing line is <b>peritonitis, perforation, or shock</b>: without them, bloody stool alone does not preclude an enema attempt."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Exploratory laparotomy is indicated for intussusception with peritonitis, perforation, refractory shock, or failed enema reduction. This infant has a soft abdomen and stable vital signs. It would be correct if the abdomen were rigid and a radiograph showed free air.\n(C) CT of the abdomen adds radiation and delay without changing management in a typical case confirmed by ultrasonography. It is reserved for atypical presentations or suspected pathologic lead points in older children. It would be considered in a 10-year-old with recurrent intussusception and weight loss.\n(D) An upper GI series with small bowel follow-through evaluates malrotation, obstruction, or mucosal disease of the proximal bowel and cannot reduce an ileocolic intussusception. It would be correct for bilious vomiting in a neonate with suspected malrotation.\n(E) Observation is appropriate only for small, transient small-bowel–small-bowel intussusceptions found incidentally on ultrasonography, which often reduce spontaneously. An ileocolic intussusception with bloody stool will progress to ischemia. It would be correct for a short (< 3 cm) small-bowel intussusception without symptoms."
+   },
+   {
+    "k": "함정",
+    "v": "Bloody stool does not by itself mean surgery — without peritonitis, perforation, or refractory shock, enema reduction comes first."
+   },
+   {
+    "k": "학습목표",
+    "v": "영아의 간헐적 복통·혈변과 초음파 표적 징후로 회결장 장중첩증을 진단하고, 복막염·천공·쇼크가 없으면 수술이 아니라 영상 유도 공기(또는 식염수) 관장 정복을 먼저 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39(Suppl 2):S140 · Kliegman RM et al. Nelson Textbook of Pediatrics, 21st ed. — intussusception · Edwards EA et al. Intussusception: past, present and future. Pediatr Radiol 2017;47:1101"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "전형적 회결장 장중첩증이고 복막염·천공·쇼크가 없으므로 수액 뒤 공기 관장 정복을 먼저 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "개복은 복막염·천공·교정 안 되는 쇼크·관장 실패 때 — 이 환자는 배가 부드럽고 활력징후가 안정적이다",
+   "steps": 2,
+   "chain": [
+    "주기적 복통·다리 당김·혈변·RUQ 소시지 모양 종괴 + 표적 징후 → 회결장 장중첩증",
+    "배가 부드럽고 guarding 없음, 모세혈관 재충전 2초 → 복막염·쇼크 없음 → 공기 관장 정복"
+   ],
+   "key": [
+    {
+     "item": "he draws his legs up to his abdomen",
+     "why": "주기적 산통 — 장중첩증",
+     "also": []
+    },
+    {
+     "item": "his last stool contained blood and mucus",
+     "why": "정맥 울혈에 의한 점막 손상",
+     "also": []
+    },
+    {
+     "item": "a sausage-shaped mass is palpable in the right upper quadrant",
+     "why": "중첩된 장",
+     "also": []
+    },
+    {
+     "item": "Ultrasonography shows a target sign",
+     "why": "진단 확정",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "The abdomen is soft, without guarding",
+     "why": "복막염 없음 — 관장 금기가 아니다",
+     "also": []
+    },
+    {
+     "item": "Capillary refill time is 2 seconds",
+     "why": "쇼크가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "between episodes he is unusually sleepy",
+     "why": "영아 장중첩증에서 흔한 기면 — 수술 적응증은 아니다",
+     "also": []
+    },
+    {
+     "item": "His temperature is 37.6°C",
+     "why": "미열 — 천공의 근거로 부족하다",
+     "also": []
+    }
+   ],
+   "summary": "주기적 산통·혈변·소시지 모양 종괴·표적 징후로 회결장 장중첩증이다. 배가 부드럽고 쇼크가 없어 수액 뒤 영상 유도 공기 관장 정복을 먼저 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "배가 딱딱하고 단순 X선에서 유리 공기가 보였다면 관장이 금기이고 개복술이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0150",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "신장·비뇨 — 경련을 동반한 저나트륨혈증",
+  "type": "신장·비뇨 — 경련을 동반한 저나트륨혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-27",
+  "vignette": "74세 여자가 전신 경련으로 응급실에 왔다. 2일 전부터 구역과 두통이 있었고 오늘 아침부터 말이 어눌하고 엉뚱한 대답을 하다가 1분간 전신 경련을 하였다. 3주 전 고혈압으로 히드로클로로티아지드를 시작하였다. 도착 시 경련은 멈췄으나 지남력이 떨어져 있다. 혈압 138/82 mmHg, 맥박 88회/분이다. 점막은 촉촉하고 부종은 없다. 혈청 나트륨 116 mEq/L, 칼륨 3.3 mEq/L, 혈장 삼투압 244 mOsm/kg, 소변 삼투압 410 mOsm/kg, 소변 나트륨 52 mEq/L 이다. 뇌 CT 에서 출혈이나 종괴는 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "3 % 고장성 식염수 100 mL를 10분에 걸쳐 정주한다",
+   "0.9 % 생리식염수를 정주한다",
+   "하루 수분 섭취를 1 L 이하로 제한한다",
+   "톨밥탄을 경구 투여한다",
+   "푸로세미드를 정주한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 경련과 의식 변화는 뇌부종에 의한 중증 저나트륨혈증 증상이다. 원인(티아지드)이나 체액 상태를 따지기 전에 3 % 고장성 식염수 100 mL를 10분에 걸쳐 주고, 증상이 계속되면 2회까지 반복해 혈청 나트륨을 4~6 mEq/L 올린다. 그 정도면 뇌부종이 줄어 증상이 멎는다. 삼투성 탈수초를 막으려고 첫 24시간 교정은 10 mEq/L(고위험이면 8) 이하로 제한하고, 히드로클로로티아지드는 중단한다.\n- 원리: 혈청 나트륨이 급격히 떨어지면 세포 밖이 저장성이 되어 <b>물이 뇌세포로 들어가 뇌부종</b>이 생긴다. 두개골 안이라 부피가 늘 곳이 없어 두통·구역 → 혼동 → 경련·혼수·뇌간 탈출로 진행한다. 이때 목표는 원인 교정이 아니라 <b>뇌부종을 빨리 줄이는 것</b>이다.<br> <b>3 % 식염수</b>(513 mEq/L)는 세포 밖 삼투압을 올려 뇌세포에서 물을 끌어낸다. 나트륨을 4~6 mEq/L 만 올려도 두개내압이 의미 있게 떨어진다. 그래서 체액 상태(저·정상·고)와 관계없이 중증 증상이면 먼저 쓴다.<br> 반대로 뇌는 48시간이 지나면 <b>유기 삼투질을 내보내 적응</b>한다. 적응한 뒤 나트륨을 너무 빨리 올리면 이번엔 뇌세포가 쪼그라들며 <b>삼투성 탈수초 증후군</b>(교뇌 중심 수초용해 — 구음장애·삼킴장애·사지마비)이 온다. 저칼륨혈증·알코올·영양실조·간질환·나트륨 120 미만이 위험인자다. 그래서 24시간 교정 한도를 두고, 넘치면 5 % 포도당이나 데스모프레신으로 되돌린다.<br> 티아지드는 원위 곡세관에서 희석 능력을 떨어뜨리고 칼륨을 잃게 하며, 고령 여성에서 시작 후 몇 주 안에 저나트륨혈증을 잘 일으킨다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">3 % 식염수 볼루스(정답)</th><th>0.9 % 생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나트륨 농도</td><td><b>513 mEq/L</b></td><td>154 mEq/L</td></tr> <tr><td>소변 삼투압 410 에서</td><td>나트륨을 확실히 올린다</td><td>소변이 더 진하면 물이 남아 <b>나트륨이 더 떨어질 수 있다</b></td></tr> <tr><td>적응증</td><td><b>경련·혼동 등 중증 증상 — 원인 무관</b></td><td>증상이 경미한 저혈량성 저나트륨혈증</td></tr> <tr><td>속도</td><td>100 mL/10분, 최대 3회</td><td>시간당 수십~100 mL</td></tr> </tbody></table> <b>가장 가까운 오답은 생리식염수</b>다. 티아지드 → 체액 감소 → 생리식염수로 생각하기 쉽다. 갈림길은 <b>증상의 중증도</b>다 — 경련이 있으면 원인 감별보다 고장성 식염수가 먼저다.\n- 오답 이유:\n  - ② 생리식염수는 경미한 증상의 저혈량성 저나트륨혈증에서 체액을 채워 항이뇨호르몬 자극을 끄는 처치다. 경련이 있는 지금은 속도가 느리고, 소변 삼투압이 높으면 오히려 나트륨이 떨어질 수 있다. 경련 없이 구역만 있고 탈수 소견이 뚜렷했다면 정답이 된다.\n  - ③ 수분 제한은 증상이 없거나 경미한 항이뇨호르몬 부적절 분비 증후군의 기본 치료다. 하루 이상 걸려 효과가 나 경련에는 너무 느리다. 무증상 나트륨 128 의 폐암 환자였다면 정답이 된다.\n  - ④ 톨밥탄은 바소프레신 V2 수용체 길항제로 정상 체액량 만성 저나트륨혈증에서 수분 배설을 늘린다. 효과가 늦고 과교정 위험이 있어 급성 중증 증상에는 쓰지 않는다. 수분 제한에 반응하지 않는 무증상 만성 SIADH 에서 고려한다.\n  - ⑤ 푸로세미드는 고용량 고장성 식염수나 체액 과다가 있을 때 수분 배설을 돕는 보조 약물이다. 단독으로는 나트륨을 빠르게 올리지 못한다. 심부전으로 체액이 넘치는 저나트륨혈증에서 수분 제한과 함께 쓴다.\n- 함정: 경련이 있는 저나트륨혈증에서는 원인이 티아지드여도 생리식염수가 아니라 3 % 식염수 볼루스가 먼저다 — 그리고 24시간 10 mEq/L 한도.\n- 학습목표: 경련·혼동 같은 중증 증상이 있는 저나트륨혈증은 원인·체액 상태와 관계없이 3 % 고장성 식염수를 급속 투여하고, 24시간 교정 폭을 10 mmol/L 이하로 제한한다\n- 근거·출처: Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1 · Verbalis JG et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1 · Adrogué HJ, Tucker BM, Madias NE. Diagnosis and management of hyponatremia: a review. JAMA 2022;328:280",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경련과 의식 변화는 뇌부종에 의한 중증 저나트륨혈증 증상이다. 원인(티아지드)이나 체액 상태를 따지기 전에 3 % 고장성 식염수 100 mL를 10분에 걸쳐 주고, 증상이 계속되면 2회까지 반복해 혈청 나트륨을 4~6 mEq/L 올린다. 그 정도면 뇌부종이 줄어 증상이 멎는다. 삼투성 탈수초를 막으려고 첫 24시간 교정은 10 mEq/L(고위험이면 8) 이하로 제한하고, 히드로클로로티아지드는 중단한다."
+   },
+   {
+    "k": "원리",
+    "v": "혈청 나트륨이 급격히 떨어지면 세포 밖이 저장성이 되어 <b>물이 뇌세포로 들어가 뇌부종</b>이 생긴다. 두개골 안이라 부피가 늘 곳이 없어 두통·구역 → 혼동 → 경련·혼수·뇌간 탈출로 진행한다. 이때 목표는 원인 교정이 아니라 <b>뇌부종을 빨리 줄이는 것</b>이다.<br> <b>3 % 식염수</b>(513 mEq/L)는 세포 밖 삼투압을 올려 뇌세포에서 물을 끌어낸다. 나트륨을 4~6 mEq/L 만 올려도 두개내압이 의미 있게 떨어진다. 그래서 체액 상태(저·정상·고)와 관계없이 중증 증상이면 먼저 쓴다.<br> 반대로 뇌는 48시간이 지나면 <b>유기 삼투질을 내보내 적응</b>한다. 적응한 뒤 나트륨을 너무 빨리 올리면 이번엔 뇌세포가 쪼그라들며 <b>삼투성 탈수초 증후군</b>(교뇌 중심 수초용해 — 구음장애·삼킴장애·사지마비)이 온다. 저칼륨혈증·알코올·영양실조·간질환·나트륨 120 미만이 위험인자다. 그래서 24시간 교정 한도를 두고, 넘치면 5 % 포도당이나 데스모프레신으로 되돌린다.<br> 티아지드는 원위 곡세관에서 희석 능력을 떨어뜨리고 칼륨을 잃게 하며, 고령 여성에서 시작 후 몇 주 안에 저나트륨혈증을 잘 일으킨다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">3 % 식염수 볼루스(정답)</th><th>0.9 % 생리식염수(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나트륨 농도</td><td><b>513 mEq/L</b></td><td>154 mEq/L</td></tr> <tr><td>소변 삼투압 410 에서</td><td>나트륨을 확실히 올린다</td><td>소변이 더 진하면 물이 남아 <b>나트륨이 더 떨어질 수 있다</b></td></tr> <tr><td>적응증</td><td><b>경련·혼동 등 중증 증상 — 원인 무관</b></td><td>증상이 경미한 저혈량성 저나트륨혈증</td></tr> <tr><td>속도</td><td>100 mL/10분, 최대 3회</td><td>시간당 수십~100 mL</td></tr> </tbody></table> <b>가장 가까운 오답은 생리식염수</b>다. 티아지드 → 체액 감소 → 생리식염수로 생각하기 쉽다. 갈림길은 <b>증상의 중증도</b>다 — 경련이 있으면 원인 감별보다 고장성 식염수가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 생리식염수는 경미한 증상의 저혈량성 저나트륨혈증에서 체액을 채워 항이뇨호르몬 자극을 끄는 처치다. 경련이 있는 지금은 속도가 느리고, 소변 삼투압이 높으면 오히려 나트륨이 떨어질 수 있다. 경련 없이 구역만 있고 탈수 소견이 뚜렷했다면 정답이 된다.\n③ 수분 제한은 증상이 없거나 경미한 항이뇨호르몬 부적절 분비 증후군의 기본 치료다. 하루 이상 걸려 효과가 나 경련에는 너무 느리다. 무증상 나트륨 128 의 폐암 환자였다면 정답이 된다.\n④ 톨밥탄은 바소프레신 V2 수용체 길항제로 정상 체액량 만성 저나트륨혈증에서 수분 배설을 늘린다. 효과가 늦고 과교정 위험이 있어 급성 중증 증상에는 쓰지 않는다. 수분 제한에 반응하지 않는 무증상 만성 SIADH 에서 고려한다.\n⑤ 푸로세미드는 고용량 고장성 식염수나 체액 과다가 있을 때 수분 배설을 돕는 보조 약물이다. 단독으로는 나트륨을 빠르게 올리지 못한다. 심부전으로 체액이 넘치는 저나트륨혈증에서 수분 제한과 함께 쓴다."
+   },
+   {
+    "k": "함정",
+    "v": "경련이 있는 저나트륨혈증에서는 원인이 티아지드여도 생리식염수가 아니라 3 % 식염수 볼루스가 먼저다 — 그리고 24시간 10 mEq/L 한도."
+   },
+   {
+    "k": "학습목표",
+    "v": "경련·혼동 같은 중증 증상이 있는 저나트륨혈증은 원인·체액 상태와 관계없이 3 % 고장성 식염수를 급속 투여하고, 24시간 교정 폭을 10 mmol/L 이하로 제한한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1 · Verbalis JG et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1 · Adrogué HJ, Tucker BM, Madias NE. Diagnosis and management of hyponatremia: a review. JAMA 2022;328:280"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "경련·혼동이 있는 중증 증상 저나트륨혈증이므로 원인과 관계없이 3 % 고장성 식염수 볼루스를 먼저 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "생리식염수는 경미한 저혈량성에서 — 경련이 있으면 속도가 부족하고 소변 삼투압이 높으면 나트륨을 더 떨어뜨릴 수 있다",
+   "steps": 2,
+   "chain": [
+    "나트륨 116 + 전신 경련·지남력 저하 → 뇌부종에 의한 중증 증상",
+    "중증 증상 → 원인 감별보다 3 % 식염수 100 mL 볼루스(24시간 교정 10 이하)"
+   ],
+   "key": [
+    {
+     "item": "1분간 전신 경련",
+     "why": "중증 증상 — 고장성 식염수의 적응증",
+     "also": []
+    },
+    {
+     "item": "혈청 나트륨 116 mEq/L",
+     "why": "심한 저나트륨혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "뇌 CT 에서 출혈이나 종괴는 없다",
+     "why": "경련의 구조적 원인 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "히드로클로로티아지드를 시작",
+     "why": "원인 — 중단해야 하지만 첫 처치를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "칼륨 3.3 mEq/L",
+     "why": "삼투성 탈수초 위험인자 — 교정 속도를 더 조심",
+     "also": []
+    },
+    {
+     "item": "소변 삼투압 410 mOsm/kg",
+     "why": "생리식염수로는 나트륨이 오르지 않을 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "점막은 촉촉하고 부종은 없다",
+     "why": "체액 상태 — 중증 증상에서는 첫 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "나트륨 116 에 경련과 혼동이 있는 중증 증상 저나트륨혈증이다. 원인이 티아지드여도 3 % 식염수 100 mL 볼루스를 먼저 주고 24시간 교정은 10 mEq/L 이하로 둔다.",
+   "switch": {
+    "choice": "C",
+    "condition": "경련·혼동 없이 나트륨 128 인 무증상 SIADH 였다면 수분 제한이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0149",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "감염 — 생물학제제 시작 전 결핵 선별",
+  "type": "감염 — 생물학제제 시작 전 결핵 선별",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-27",
+  "vignette": "A 34-year-old woman with Crohn disease comes to the physician for evaluation before starting infliximab therapy. Her disease has not responded to azathioprine. She was born in the Philippines and moved to the United States 10 years ago. She has no cough, fever, night sweats, or weight loss. Her temperature is 36.8°C (98.2°F), pulse is 76/min, and blood pressure is 114/70 mm Hg. The lungs are clear to auscultation. An interferon-γ release assay is positive. HIV testing is negative.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Four-drug antituberculous therapy",
+   "Three sputum smears for acid-fast bacilli",
+   "Repeat interferon-γ release assay in 3 months",
+   "Posteroanterior chest radiography",
+   "Daily rifampin for 4 months"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A positive interferon-γ release assay shows infection with Mycobacterium tuberculosis but cannot distinguish latent from active disease. Before latent tuberculosis treatment is started — and before an anti-TNF agent, which greatly increases the risk of reactivation — active tuberculosis must be excluded, first by symptom review and a chest x-ray. Treating active disease with a single drug such as rifampin would select for resistance. If the chest x-ray is normal, latent infection is treated (for example, rifampin for 4 months), ideally beginning at least 1 month before infliximab.\n- 원리: Tuberculosis infection is a spectrum. In <b>latent infection</b>, bacilli are contained within granulomas by T-cell–driven macrophage activation; the bacillary load is small, so <b>one or two drugs</b> suffice to prevent reactivation. In <b>active disease</b>, the load is large enough that spontaneous resistant mutants are almost certainly present, so <b>four drugs</b> are needed; one drug alone would kill susceptible organisms and select the resistant ones.<br> Both the IGRA and the tuberculin skin test measure <b>immune memory</b> to mycobacterial antigens and are positive in both states. Therefore a positive test is always followed by an assessment for active disease: symptoms (cough ≥ 2–3 weeks, fever, night sweats, weight loss) and a <b>chest x-ray</b>. Only if the radiograph shows findings suggestive of tuberculosis (upper-lobe infiltrate, cavity, fibronodular change) or symptoms are present are sputum AFB smears, culture, and nucleic acid amplification done.<br> <b>TNF-α</b> is required for granuloma formation and maintenance; blocking it with infliximab or adalimumab can dissolve granulomas and cause reactivation, often extrapulmonary or disseminated. That is why screening and, when positive, latent treatment precede anti-TNF therapy.\n- 비교: <table><thead><tr><th style=\"width:26%\">Step</th><th style=\"width:37%\">Chest x-ray (answer)</th><th>Rifampin for 4 months (closest rival)</th></tr></thead><tbody> <tr><td>Purpose</td><td><b>Exclude active tuberculosis</b></td><td>Treat latent infection</td></tr> <tr><td>When</td><td><b>Immediately after a positive IGRA</b></td><td>Only after active disease is excluded</td></tr> <tr><td>Risk if skipped</td><td>—</td><td>Monotherapy of undiagnosed active TB → rifampin resistance</td></tr> </tbody></table> <b>The closest rival is 4 months of rifampin</b>, which is indeed the eventual treatment. The dividing line is <b>order</b>: a positive IGRA does not mean latent infection until the chest x-ray (and symptom review) excludes active disease.\n- 오답 이유:\n  - (A) Four-drug therapy is for active tuberculosis, which requires symptoms or radiographic findings and microbiologic confirmation when possible. This patient has neither yet been shown. It would be correct if the chest x-ray showed a cavitary upper-lobe lesion.\n  - (B) Sputum AFB smears are obtained when symptoms or the chest x-ray suggest active pulmonary tuberculosis. In an asymptomatic patient, the radiograph comes first. It would be correct if she had a chronic cough or an upper-lobe infiltrate.\n  - (C) Repeating the IGRA does not help, because a positive result reflects immune memory and would not change; conversion is sought only after a new exposure with an initially negative test. It would be correct for a negative baseline test after a recent household contact.\n  - (E) Four months of rifampin is a preferred regimen for latent tuberculosis, but it is started only after active disease is excluded. Giving one drug to a patient with unrecognized active tuberculosis selects for resistance. It would be correct after a normal chest x-ray.\n- 함정: A positive IGRA cannot tell latent from active tuberculosis — get a chest x-ray before any single-drug latent regimen.\n- 학습목표: TNF-α 억제제 시작 전 인터페론감마 분비검사가 양성이면 잠복결핵 치료를 시작하기 전에 흉부 X선으로 활동성 결핵을 먼저 배제한다\n- 근거·출처: Sterling TR et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep 2020;69(1):1 · Lewinsohn DM et al. Official ATS/IDSA/CDC clinical practice guidelines: diagnosis of tuberculosis in adults and children. Clin Infect Dis 2017;64:111 · Keane J et al. Tuberculosis associated with infliximab, a tumor necrosis factor α–neutralizing agent. N Engl J Med 2001;345:1098",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A positive interferon-γ release assay shows infection with Mycobacterium tuberculosis but cannot distinguish latent from active disease. Before latent tuberculosis treatment is started — and before an anti-TNF agent, which greatly increases the risk of reactivation — active tuberculosis must be excluded, first by symptom review and a chest x-ray. Treating active disease with a single drug such as rifampin would select for resistance. If the chest x-ray is normal, latent infection is treated (for example, rifampin for 4 months), ideally beginning at least 1 month before infliximab."
+   },
+   {
+    "k": "원리",
+    "v": "Tuberculosis infection is a spectrum. In <b>latent infection</b>, bacilli are contained within granulomas by T-cell–driven macrophage activation; the bacillary load is small, so <b>one or two drugs</b> suffice to prevent reactivation. In <b>active disease</b>, the load is large enough that spontaneous resistant mutants are almost certainly present, so <b>four drugs</b> are needed; one drug alone would kill susceptible organisms and select the resistant ones.<br> Both the IGRA and the tuberculin skin test measure <b>immune memory</b> to mycobacterial antigens and are positive in both states. Therefore a positive test is always followed by an assessment for active disease: symptoms (cough ≥ 2–3 weeks, fever, night sweats, weight loss) and a <b>chest x-ray</b>. Only if the radiograph shows findings suggestive of tuberculosis (upper-lobe infiltrate, cavity, fibronodular change) or symptoms are present are sputum AFB smears, culture, and nucleic acid amplification done.<br> <b>TNF-α</b> is required for granuloma formation and maintenance; blocking it with infliximab or adalimumab can dissolve granulomas and cause reactivation, often extrapulmonary or disseminated. That is why screening and, when positive, latent treatment precede anti-TNF therapy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Step</th><th style=\"width:37%\">Chest x-ray (answer)</th><th>Rifampin for 4 months (closest rival)</th></tr></thead><tbody> <tr><td>Purpose</td><td><b>Exclude active tuberculosis</b></td><td>Treat latent infection</td></tr> <tr><td>When</td><td><b>Immediately after a positive IGRA</b></td><td>Only after active disease is excluded</td></tr> <tr><td>Risk if skipped</td><td>—</td><td>Monotherapy of undiagnosed active TB → rifampin resistance</td></tr> </tbody></table> <b>The closest rival is 4 months of rifampin</b>, which is indeed the eventual treatment. The dividing line is <b>order</b>: a positive IGRA does not mean latent infection until the chest x-ray (and symptom review) excludes active disease."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Four-drug therapy is for active tuberculosis, which requires symptoms or radiographic findings and microbiologic confirmation when possible. This patient has neither yet been shown. It would be correct if the chest x-ray showed a cavitary upper-lobe lesion.\n(B) Sputum AFB smears are obtained when symptoms or the chest x-ray suggest active pulmonary tuberculosis. In an asymptomatic patient, the radiograph comes first. It would be correct if she had a chronic cough or an upper-lobe infiltrate.\n(C) Repeating the IGRA does not help, because a positive result reflects immune memory and would not change; conversion is sought only after a new exposure with an initially negative test. It would be correct for a negative baseline test after a recent household contact.\n(E) Four months of rifampin is a preferred regimen for latent tuberculosis, but it is started only after active disease is excluded. Giving one drug to a patient with unrecognized active tuberculosis selects for resistance. It would be correct after a normal chest x-ray."
+   },
+   {
+    "k": "함정",
+    "v": "A positive IGRA cannot tell latent from active tuberculosis — get a chest x-ray before any single-drug latent regimen."
+   },
+   {
+    "k": "학습목표",
+    "v": "TNF-α 억제제 시작 전 인터페론감마 분비검사가 양성이면 잠복결핵 치료를 시작하기 전에 흉부 X선으로 활동성 결핵을 먼저 배제한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sterling TR et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from the National Tuberculosis Controllers Association and CDC, 2020. MMWR Recomm Rep 2020;69(1):1 · Lewinsohn DM et al. Official ATS/IDSA/CDC clinical practice guidelines: diagnosis of tuberculosis in adults and children. Clin Infect Dis 2017;64:111 · Keane J et al. Tuberculosis associated with infliximab, a tumor necrosis factor α–neutralizing agent. N Engl J Med 2001;345:1098"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "인터페론감마 분비검사 양성은 잠복·활동성을 구분하지 못하므로 잠복결핵 치료 전에 흉부 X선으로 활동성 결핵을 배제한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "리팜핀 단독은 활동성 결핵이 배제된 뒤에만 — 순서의 문제다",
+   "steps": 2,
+   "chain": [
+    "IGRA 양성 → 결핵균 감염은 있으나 잠복·활동성 구분 불가",
+    "무증상이라도 단독 약물 전 활동성 배제 필요 → 흉부 X선"
+   ],
+   "key": [
+    {
+     "item": "An interferon-γ release assay is positive",
+     "why": "감염의 증거 — 다음 단계는 활동성 배제",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no cough, fever, night sweats, or weight loss",
+     "why": "활동성 가능성을 낮추지만 흉부 X선을 대신하지 못한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "before starting infliximab therapy",
+     "why": "TNF 억제로 재활성화 위험이 커 선별이 필수",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "born in the Philippines",
+     "why": "결핵 유행 지역 — 양성 결과의 사전 확률을 높이지만 순서를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "HIV testing is negative",
+     "why": "HIV 양성이면 활동성 평가를 더 넓히지만 첫 단계는 같다",
+     "also": []
+    },
+    {
+     "item": "The lungs are clear to auscultation",
+     "why": "청진 정상이 영상 검사를 대신하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "IGRA 양성은 감염만 알려 줄 뿐 잠복·활동성을 가르지 못한다. 무증상이어도 흉부 X선으로 활동성 결핵을 배제한 뒤 잠복결핵 치료를 시작하고 인플릭시맙을 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "흉부 X선에서 위엽 공동이 보이거나 3주 넘는 기침이 있었다면 객담 항산균 도말·배양이 다음 단계다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0148",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·응급·산과·류마티스근골격·혈액종양·감염·신장비뇨·소아·내분비·약리)",
+  "subtopic": "혈액·종양 — 와파린 복용자의 높은 INR",
+  "type": "혈액·종양 — 와파린 복용자의 높은 INR",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-27",
+  "vignette": "67세 남자가 정기 외래에서 시행한 혈액검사에서 INR 이 높게 나와 왔다. 심방세동으로 와파린 5 mg을 3년째 복용하며 INR 은 2~3 으로 유지되었다. 10일 전 폐렴으로 클래리스로마이신을 처방받아 복용 중이다. 코피·잇몸 출혈·혈뇨·흑색변은 없다. 혈압 132/80 mmHg, 맥박 76회/분(불규칙)이다. 피부에 멍이나 점상출혈은 없다. 혈색소 13.8 g/dL, 혈소판 215,000/mm³, INR 12.4 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "와파린 용량을 그대로 유지한다",
+   "와파린을 중단하고 비타민 K 2.5 mg을 경구 투여한다",
+   "와파린을 1~2회 거르고 INR 을 다시 잰다",
+   "4인자 프로트롬빈 복합체와 비타민 K 10 mg을 정맥 투여한다",
+   "신선동결혈장을 수혈한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 출혈이 없고 INR 이 10 을 넘으므로(12.4) 와파린을 중단하고 비타민 K 1~2.5 mg을 경구로 준다. 경구 비타민 K 는 24~48시간에 걸쳐 INR 을 안전하게 낮추고, 소량이라 와파린을 다시 시작할 때 저항을 만들지 않는다. 클래리스로마이신은 CYP3A4 를 억제하고 장내 세균을 바꿔 와파린 효과를 키운 원인이므로 항생제 기간 동안 INR 을 자주 확인한다.\n- 원리: 와파린은 <b>비타민 K 에폭시드 환원효소(VKORC1)</b>를 억제해 환원형 비타민 K 를 고갈시킨다. 그러면 간에서 II·VII·IX·X 인자와 단백 C·S 의 감마-카르복실화가 일어나지 않아 기능 없는 인자가 나온다. 반감기가 가장 짧은 VII 인자가 먼저 떨어져 INR 이 오른다.<br> <b>비타민 K 를 주면</b> 환원효소를 우회해 카르복실화를 되살리므로, 새 인자가 만들어지는 데 시간이 걸린다 — 경구는 24시간 안팎, 정맥은 6~12시간. 그래서 즉시 인자가 필요한 <b>대출혈</b>에는 이미 만들어진 인자를 주는 <b>4인자 프로트롬빈 복합체(PCC)</b>에 정맥 비타민 K 를 함께 쓴다.<br> 출혈이 없을 때는 위험을 비교한다. INR 4.5~10 은 와파린을 거르기만 해도 내려오고, 비타민 K 를 일상적으로 주어도 출혈이 줄지 않는다. <b>INR 10 초과</b>에서는 자연 감소를 기다리는 동안 출혈 위험이 커서 <b>경구 비타민 K 소량</b>을 더한다. 비타민 K 10 mg 같은 고용량은 와파린을 다시 시작할 때 1주 넘게 저항을 만든다.<br> INR 이 갑자기 오른 원인도 찾는다 — 마크롤라이드·플루오로퀴놀론·아졸·메트로니다졸·아미오다론은 대사를 억제하고, 식사량 감소·설사는 비타민 K 섭취·장내 합성을 줄인다.\n- 비교: <table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:37%\">INR &gt; 10, 출혈 없음(정답)</th><th>INR 4.5~10, 출혈 없음(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>와파린</td><td>중단</td><td>1~2회 거름</td></tr> <tr><td>비타민 K</td><td><b>경구 1~2.5 mg</b></td><td>일상적으로 주지 않는다</td></tr> <tr><td>이유</td><td>자연 감소를 기다리는 동안 출혈 위험이 크다</td><td>비타민 K 가 출혈을 줄이지 못하고 재시작 저항만 만든다</td></tr> <tr><td>대출혈이면</td><td colspan=\"2\">4인자 PCC + 비타민 K 5~10 mg 정맥</td></tr> </tbody></table> <b>가장 가까운 오답은 거르기만 하는 것</b>이다. 출혈이 없다는 점은 같고, 갈림길은 <b>INR 10</b> 이다 — 이 환자는 12.4 다.\n- 오답 이유:\n  - ① 와파린을 그대로 유지하는 것은 INR 이 목표 범위를 조금 넘는(3~3.5 정도) 경우 용량을 조정하거나 유지할 때다. INR 12.4 에서는 출혈 위험이 크다. INR 이 3.2 였다면 정답에 가깝다.\n  - ③ 와파린만 거르고 INR 을 다시 재는 것은 출혈 없는 INR 4.5~10 에서 권고된다. 이 환자는 INR 12.4 로 10 을 넘는다. INR 이 6.2 였다면 정답이 된다.\n  - ④ 4인자 프로트롬빈 복합체와 정맥 비타민 K 는 두개내출혈·위장관 대출혈처럼 생명을 위협하는 출혈에서 즉시 인자를 채우는 처치다. 이 환자는 출혈이 없다. 흑색변과 저혈압이 있었다면 정답이 된다.\n  - ⑤ 신선동결혈장도 인자를 채우지만 부피가 크고 효과가 늦으며 수혈 반응 위험이 있어 PCC 가 없을 때의 대안이다. 출혈이 없는 환자에게는 필요 없다. 대출혈인데 PCC 를 구할 수 없다면 고려한다.\n- 함정: 출혈 없는 과다 항응고에서 비타민 K 를 줄지 가르는 기준은 INR 10 이고, 줄 때는 경구 소량이다 — 정맥 10 mg 은 대출혈 때다.\n- 학습목표: 출혈 없이 INR 이 10 을 넘으면 와파린을 중단하고 경구 비타민 K 를 소량 주며, INR 4.5~10 에서는 중단만, 대출혈에서는 4인자 프로트롬빈 복합체와 정맥 비타민 K 를 쓴다\n- 근거·출처: Holbrook A et al. Evidence-based management of anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: ACCP guidelines. Chest 2012;141(2 Suppl):e152S · Tomaselli GF et al. 2020 ACC expert consensus decision pathway on management of bleeding in patients on oral anticoagulants. J Am Coll Cardiol 2020;76:594 · Harrison's Principles of Internal Medicine, 21st ed. — anticoagulant therapy",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "출혈이 없고 INR 이 10 을 넘으므로(12.4) 와파린을 중단하고 비타민 K 1~2.5 mg을 경구로 준다. 경구 비타민 K 는 24~48시간에 걸쳐 INR 을 안전하게 낮추고, 소량이라 와파린을 다시 시작할 때 저항을 만들지 않는다. 클래리스로마이신은 CYP3A4 를 억제하고 장내 세균을 바꿔 와파린 효과를 키운 원인이므로 항생제 기간 동안 INR 을 자주 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "와파린은 <b>비타민 K 에폭시드 환원효소(VKORC1)</b>를 억제해 환원형 비타민 K 를 고갈시킨다. 그러면 간에서 II·VII·IX·X 인자와 단백 C·S 의 감마-카르복실화가 일어나지 않아 기능 없는 인자가 나온다. 반감기가 가장 짧은 VII 인자가 먼저 떨어져 INR 이 오른다.<br> <b>비타민 K 를 주면</b> 환원효소를 우회해 카르복실화를 되살리므로, 새 인자가 만들어지는 데 시간이 걸린다 — 경구는 24시간 안팎, 정맥은 6~12시간. 그래서 즉시 인자가 필요한 <b>대출혈</b>에는 이미 만들어진 인자를 주는 <b>4인자 프로트롬빈 복합체(PCC)</b>에 정맥 비타민 K 를 함께 쓴다.<br> 출혈이 없을 때는 위험을 비교한다. INR 4.5~10 은 와파린을 거르기만 해도 내려오고, 비타민 K 를 일상적으로 주어도 출혈이 줄지 않는다. <b>INR 10 초과</b>에서는 자연 감소를 기다리는 동안 출혈 위험이 커서 <b>경구 비타민 K 소량</b>을 더한다. 비타민 K 10 mg 같은 고용량은 와파린을 다시 시작할 때 1주 넘게 저항을 만든다.<br> INR 이 갑자기 오른 원인도 찾는다 — 마크롤라이드·플루오로퀴놀론·아졸·메트로니다졸·아미오다론은 대사를 억제하고, 식사량 감소·설사는 비타민 K 섭취·장내 합성을 줄인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">상황</th><th style=\"width:37%\">INR &gt; 10, 출혈 없음(정답)</th><th>INR 4.5~10, 출혈 없음(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>와파린</td><td>중단</td><td>1~2회 거름</td></tr> <tr><td>비타민 K</td><td><b>경구 1~2.5 mg</b></td><td>일상적으로 주지 않는다</td></tr> <tr><td>이유</td><td>자연 감소를 기다리는 동안 출혈 위험이 크다</td><td>비타민 K 가 출혈을 줄이지 못하고 재시작 저항만 만든다</td></tr> <tr><td>대출혈이면</td><td colspan=\"2\">4인자 PCC + 비타민 K 5~10 mg 정맥</td></tr> </tbody></table> <b>가장 가까운 오답은 거르기만 하는 것</b>이다. 출혈이 없다는 점은 같고, 갈림길은 <b>INR 10</b> 이다 — 이 환자는 12.4 다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 와파린을 그대로 유지하는 것은 INR 이 목표 범위를 조금 넘는(3~3.5 정도) 경우 용량을 조정하거나 유지할 때다. INR 12.4 에서는 출혈 위험이 크다. INR 이 3.2 였다면 정답에 가깝다.\n③ 와파린만 거르고 INR 을 다시 재는 것은 출혈 없는 INR 4.5~10 에서 권고된다. 이 환자는 INR 12.4 로 10 을 넘는다. INR 이 6.2 였다면 정답이 된다.\n④ 4인자 프로트롬빈 복합체와 정맥 비타민 K 는 두개내출혈·위장관 대출혈처럼 생명을 위협하는 출혈에서 즉시 인자를 채우는 처치다. 이 환자는 출혈이 없다. 흑색변과 저혈압이 있었다면 정답이 된다.\n⑤ 신선동결혈장도 인자를 채우지만 부피가 크고 효과가 늦으며 수혈 반응 위험이 있어 PCC 가 없을 때의 대안이다. 출혈이 없는 환자에게는 필요 없다. 대출혈인데 PCC 를 구할 수 없다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "출혈 없는 과다 항응고에서 비타민 K 를 줄지 가르는 기준은 INR 10 이고, 줄 때는 경구 소량이다 — 정맥 10 mg 은 대출혈 때다."
+   },
+   {
+    "k": "학습목표",
+    "v": "출혈 없이 INR 이 10 을 넘으면 와파린을 중단하고 경구 비타민 K 를 소량 주며, INR 4.5~10 에서는 중단만, 대출혈에서는 4인자 프로트롬빈 복합체와 정맥 비타민 K 를 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Holbrook A et al. Evidence-based management of anticoagulant therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: ACCP guidelines. Chest 2012;141(2 Suppl):e152S · Tomaselli GF et al. 2020 ACC expert consensus decision pathway on management of bleeding in patients on oral anticoagulants. J Am Coll Cardiol 2020;76:594 · Harrison's Principles of Internal Medicine, 21st ed. — anticoagulant therapy"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "출혈이 없고 INR 이 10 을 넘으므로 와파린 중단에 경구 비타민 K 소량을 더한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "INR 4.5~10 이면 거르기만 한다 — 이 환자는 12.4 다",
+   "steps": 2,
+   "chain": [
+    "코피·혈뇨·흑색변 없음, 혈색소 정상 → 출혈 없음 → PCC·혈장 불필요",
+    "INR 12.4(> 10) → 와파린 중단 + 경구 비타민 K 2.5 mg"
+   ],
+   "key": [
+    {
+     "item": "INR 12.4",
+     "why": "10 초과 — 비타민 K 를 더하는 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈색소 13.8 g/dL",
+     "why": "숨은 출혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈소판 215,000/mm³",
+     "why": "혈소판 원인의 출혈 위험은 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "코피·잇몸 출혈·혈뇨·흑색변은 없다",
+     "why": "대출혈이 아니므로 PCC 가 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "클래리스로마이신을 처방받아 복용 중",
+     "why": "INR 상승의 원인 — 처치 선택보다 재발 예방에 쓰인다",
+     "also": []
+    },
+    {
+     "item": "심방세동으로 와파린 5 mg을 3년째 복용",
+     "why": "항응고 적응증 — 나중에 재시작해야 하므로 고용량 비타민 K 를 피하는 이유",
+     "also": []
+    }
+   ],
+   "summary": "출혈이 없고 INR 12.4 로 10 을 넘으므로 와파린을 중단하고 비타민 K 2.5 mg을 경구로 준다. 원인인 클래리스로마이신 기간에는 INR 을 자주 잰다.",
+   "switch": {
+    "choice": "D",
+    "condition": "흑색변과 저혈압이 있는 대출혈이었다면 4인자 프로트롬빈 복합체와 정맥 비타민 K 가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260927T202425Z_일일영상_2026-09-28_10units_10q_2b0e4518",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0137",
   "exam": "imaging",
   "style": "usmle_style",
