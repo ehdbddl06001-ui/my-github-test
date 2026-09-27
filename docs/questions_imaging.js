@@ -1485,6 +1485,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0137.jpg",
    "caption": "Dermoscopic photograph, unaltered apart from scaling (ISIC Archive, CC0 1.0; no cropping or color adjustment)",
@@ -1755,6 +1756,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.incomplete-rbbb.preop-proceed-surgery",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0135.png",
    "caption": "12-lead ECG, 25 mm/s and 10 mm/mV, 3×4 layout with lead II rhythm strip (PTB-XL ECG dataset, PhysioNet, CC BY 4.0; plotted from the raw signal)",

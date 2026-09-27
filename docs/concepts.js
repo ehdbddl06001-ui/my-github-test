@@ -4379,6 +4379,810 @@ window.MEDKOS_CONCEPTS = {
   ],
   "hasErrors": false
  },
+ "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
+  "id": "cn.cardio.incomplete-rbbb.preop-proceed-surgery",
+  "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
+  "objective": "수술 전 심전도의 불완전 우각차단에서 증상·운동능력(4 METs)·S2 분열·심잡음으로 추가 심장 검사 없이 수술할지를 정한다",
+  "objectiveKind": "다음 처치",
+  "condition": "불완전 우각차단(incomplete right bundle branch block)의 수술 전 평가",
+  "topic": "Cardiology",
+  "seeAlso": [
+   "General Surgery"
+  ],
+  "version": 2,
+  "updated": "2026-09-28",
+  "reviewStatus": "unreviewed",
+  "hash": "a9f83809ac2d6f6e",
+  "summary": [
+   "결론: 증상 없고 4 METs 이상, S2 생리적 분열·심잡음 없음이면 불완전 우각차단만으로 검사하지 않고 수술한다.",
+   "시험 단서: 수술 전 심전도 V1 rSR′·QRS < 120 ms(incomplete RBBB) + 계단 두 층을 증상 없이 오른다.",
+   "왜: 검사는 결과가 처치를 바꿀 때만 한다 — 운동능력이 충분하면 비침습 검사가 계획을 바꾸지 않는다.",
+   "검사로 가는 조건: 고정 분열 S2·유출 심잡음(심방중격결손 → 심초음파), 실신·두근거림(→ 심전도 감시)."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 추가 검사 없이 수술이 먼저인가",
+    "deep": false,
+    "html": "<ul>\n<li>수술 전 심장 평가는 단계로 간다: 응급인가 → 급성 관상동맥증후군인가 → 수술·환자 위험(MACE ≥ 1%) → <strong>운동능력</strong> <sup>[1 480장 p.3769–3770]</sup>.</li>\n<li>운동능력이 4 METs 이상(계단 두 층·네 블록)이면 위험이 높은 수술이어도 비침습 심장 검사 없이 수술한다 <sup>[1 480장 p.3769]</sup>. 무릎 관절 치환 같은 정형외과 수술은 중간 위험이다 <sup>[1 480장 p.3772]</sup>.</li>\n<li>불완전 우각차단 하나는 이 단계 어디에도 걸리지 않는다. 검사는 <strong>결과가 처치를 바꿀 때만</strong> 한다.</li>\n<li>검사로 넘어가게 하는 것은 심전도가 아니라 <strong>동반 소견</strong>이다 — 고정 분열 S2·유출 심잡음(구조), 실신·두근거림(리듬).</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 늦게 전도되는 우각에서 rSR′ 로",
+    "deep": false,
+    "html": "<p>우각은 가늘고 길어 전도가 늦어지기 쉽다. 좌심실은 좌각으로 정상 순서대로 먼저 탈분극하고(V1 작은 r, V6 R), 우심실은 늦게 왼쪽에서 건너온 흥분으로 활성화된다. 그래서 QRS 끝에 <strong>오른쪽·앞으로 향하는 힘</strong>이 더해진다 — V1 의 두 번째 R′ 와 I·V6 의 끌리는 S 다 <sup>[1 240장 p.1827]</sup>. QRS 가 120 ms 이상이면 완전, 약 110–120 ms 면 불완전 차단이다 <sup>[1 240장 p.1827]</sup>. 구조 심질환이 없는 사람에서 우각차단은 좌각차단보다 흔하다 <sup>[1 240장 p.1828]</sup>. 반면 이차공 심방중격결손은 우심실 용적 과부하로 불완전·완전 우각차단 모양과 오른쪽 QRS 축을 만든다 <sup>[1 240장 p.1826]</sup> — 그래서 같은 심전도에서 진찰 소견이 둘을 가른다.</p>"
+   },
+   {
+    "title": "선택 — 검사가 필요한 조건",
+    "deep": false,
+    "html": "<ul>\n<li>표가 다음 단계를 정한다. 좌각차단은 관상동맥질환·고혈압 심질환·대동맥판 질환·심근병증의 표지인 경우가 많아 같은 논리로 넘기지 않는다 <sup>[1 240장 p.1828]</sup>.</li>\n<li>부하검사를 해도, 수술 전 관상동맥 재관류는 수술과 무관하게 적응이 있을 때만 한다 <sup>[1 480장 p.3770]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>응급 수술·급성 관상동맥증후군은 이 흐름 밖이다 <sup>[1 480장 p.3770]</sup>.</li>\n<li>해리슨 두 장은 「불완전 우각차단이 그 자체로 수술 전 위험을 높이지 않는다」를 직접 쓰지 않는다 — 이 결론은 운동능력 규칙과 「구조 질환 없는 사람에 흔함」에서 나온다. 2024 AHA/ACC 지침 원문은 열지 못했다[?thompson-2024].</li>\n<li>S2 고정 분열·유출 심잡음의 기전은 이 두 장에서 대조하지 않았다(검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li><strong>Z1 맥락 · 불완전 우각차단의 QRS 폭</strong> — 시험 기준: 불완전 차단은 QRS 약 110–120 ms <sup>[1 240장 p.1827]</sup> / 다른 기준: 문항 해설은 「rSR′ + QRS &lt; 120 ms」로만 적었다(하한 없음) <sup>[2†]</sup> / 왜 다른가: 해리슨은 정상 QRS 상한을 100–110 ms 로 두어 그 위를 불완전 차단으로 부르고, 문항은 완전 차단(≥ 120 ms)과의 경계만 말했다 / 시험에서는: KMLE·USMLE 모두 「V1 rSR′ + QRS &lt; 120 ms = 불완전 우각차단」으로 읽으면 된다 — 답을 가르는 것은 폭이 아니라 동반 소견이다.</li>\n<li><strong>Z2 새 근거 · 수술 전 평가 지침의 판</strong> — 시험 기준: 해리슨 21판 그림 480-1(2014 ACC/AHA 흐름)의 ≥ 4 METs 규칙 <sup>[1 480장 p.3769–3770]</sup> / 다른 기준: 2024 AHA/ACC 지침 <sup>[2†]</sup> — 원문 미대조 / 왜 다른가: 해리슨 21판 뒤에 개정 / 시험에서는: 「증상 없고 계단 두 층 가능 → 검사 없이 수술」은 두 판 모두에서 문항 해설과 같다(개정 세부는 검토 항목).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "수술 전 불완전 우각차단 — 다음 단계를 바꾸는 소견",
+    "columns": [
+     "소견",
+     "다음 단계"
+    ],
+    "rows": [
+     [
+      "증상 없음 + ≥ 4 METs + 생리적 S2 분열·심잡음 없음",
+      "추가 검사 없이 수술 <sup>[1 480장 p.3769]</sup>"
+     ],
+     [
+      "고정 분열 S2 + 좌측 흉골상연 유출 심잡음·우축편위",
+      "경흉부 심초음파 — 심방중격결손 확인 <sup>[1 240장 p.1826]</sup>"
+     ],
+     [
+      "실신·두근거림",
+      "활동 심전도 감시·전도계 평가"
+     ],
+     [
+      "운동능력 &lt; 4 METs 또는 모름 + 위험 높은 수술",
+      "결과가 처치를 바꿀 때만 약물 부하검사 <sup>[1 480장 p.3769–3770]</sup>"
+     ],
+     [
+      "V1–V2 ST 올라감이 동반된 우각차단 모양",
+      "Brugada 양상 감별 <sup>[1 240장 p.1828]</sup>"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "24시간 활동 심전도 감시 vs 수술 진행",
+    "point": "활동 심전도(Holter)는 간헐적 부정맥·전도 차단을 찾는 검사라 두근거림·실신이 있을 때 결과가 처치를 바꾼다. 증상 없는 고정된 불완전 우각차단은 찾을 간헐적 사건이 없다.",
+    "exception": "불완전 우각차단에 설명되지 않는 실신이 겹치면 감시가 다음 단계다.",
+    "cites": ""
+   },
+   {
+    "contrast": "심초음파 vs 수술 진행 — 「우각차단 = 구조 이상?」",
+    "point": "불완전 우각차단은 심방중격결손(우심실 용적 과부하)의 단서일 수 있지만 <sup>[1 240장 p.1826]</sup>, 고정 분열 S2·유출 심잡음이 없으면 가능성이 낮아 심초음파가 계획을 바꾸지 않는다.",
+    "exception": "",
+    "cites": ""
+   },
+   {
+    "contrast": "부하검사 vs 수술 진행 — 「고위험 수술이면 부하검사?」",
+    "point": "위험이 높은 수술이어도 운동능력이 4 METs 이상이면 비침습 검사 없이 수술한다. 부하검사는 운동능력이 낮거나 모를 때, 결과가 처치를 바꿀 때만 <sup>[1 480장 p.3769]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "응급 수술은 이 흐름 없이 진행하고, 급성 관상동맥증후군이 있으면 그 평가·치료가 먼저다 <sup>[1 480장 p.3770]</sup>.",
+   "백내장·일부 내시경·표재 수술처럼 MACE &lt; 1% 인 수술은 운동능력과 무관하게 검사 없이 수술한다 <sup>[1 480장 p.3769]</sup>.",
+   "V1–V2 ST 올라감을 동반한 우각차단 모양은 Brugada 양상으로 따로 본다 <sup>[1 240장 p.1828]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "irbbb-def",
+    "name": "우각차단의 심전도 기준",
+    "kind": "진단 기준",
+    "population": "심실 내 전도 장애",
+    "statement": "완전 차단은 가장 넓은 QRS ≥ 120 ms, 불완전 차단은 약 110–120 ms. 우각차단은 끝 QRS 벡터가 오른쪽·앞으로 — V1 rSR′, V6 qRS [[harrison-21: 240장 p.1827]]",
+    "exceptions": "문항·지침에 따라 불완전 차단을 「QRS < 120 ms 인 rSR′」로만 적기도 한다(아래 시험 쟁점)",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "preop-mets",
+    "name": "수술 전 심장 검사 — 운동능력",
+    "kind": "검사 권고",
+    "population": "위험이 높은(MACE ≥ 1%) 비심장 수술을 앞둔 환자",
+    "statement": "운동능력 ≥ 4 METs(계단 두 층·네 블록 걷기)면 비침습 심장 검사 없이 수술. < 4 METs 이거나 모르면 결과가 처치를 바꿀 때만 약물 부하검사 [[harrison-21: 480장 p.3769]]",
+    "exceptions": "응급 수술은 위험 평가 없이 진행, 급성 관상동맥증후군은 먼저 평가·치료 [[harrison-21: 480장 p.3770]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 480: Medical Evaluation of the Surgical Patient · Chapter 240: Electrocardiography",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 480장 p.3769–3772 · 240장 p.1826–1828",
+    "checked": "드라이브 장 문서로 본문 대조. 480장 p.3769 — 12유도 심전도로 평가 시작, 건강한 환자의 선택 수술엔 검사 불필요, 단계적 위험 평가(MACE < 1% / 상승), ≥ 4 METs 면 추가 비침습 검사 없이 수술, < 4 METs·모름은 결과가 처치를 바꿀 때 약물 부하검사; p.3770 그림 480-1(응급 수술·ACS 단계), 저위험군 일상적 부하검사 권고 안 함; p.3771 표 480-3(계단 두 층·네 블록), 표 480-4(정형외과 수술은 중간 위험). 240장 p.1826 — 이차공 심방중격결손의 우심실 용적 과부하는 흔히 불완전·완전 우각차단 모양 + 오른쪽 QRS 축; p.1827 — 완전 ≥ 120 ms, 불완전 약 110–120 ms, V1 rSR′·V6 qRS; p.1828 — 구조 심질환 없는 사람에서 우각차단이 좌각차단보다 흔함, ASD 같은 선천 질환에서도, Brugada 양상. 우각차단 자체의 수술 전 위험·S2 고정 분열은 이 두 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-28",
+    "url": ""
+   },
+   {
+    "id": "thompson-2024",
+    "org": "AHA/ACC",
+    "title": "2024 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM guideline for perioperative cardiovascular management for noncardiac surgery",
+    "kind": "guideline",
+    "citation": "Thompson A, et al. Circulation 2024;150:e351",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 출판사·PubMed 를 막는다). 문항 해설 근거 목록에서 옮김. DOI 는 기억으로 적었다(학습서 워크플로가 PMID 를 찾아 확인)",
+    "doi": "10.1161/CIR.0000000000001285",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2024",
+    "checkedAt": "2026-09-28",
+    "url": "https://doi.org/10.1161/CIR.0000000000001285"
+   }
+  ],
+  "checks": [
+   {
+    "q": "수술 전 비침습 심장 검사 없이 수술할 수 있는 운동능력 기준은?",
+    "a": "4 METs 이상 — 계단 두 층이나 네 블록을 증상 없이."
+   },
+   {
+    "q": "불완전 우각차단에서 심초음파로 가게 하는 진찰 소견은?",
+    "a": "고정 분열 S2 와 좌측 흉골상연 유출 심잡음 — 이차공 심방중격결손의 우심실 용적 과부하."
+   },
+   {
+    "q": "활동 심전도 감시가 다음 단계가 되는 경우는?",
+    "a": "두근거림·설명되지 않는 실신처럼 간헐적 부정맥·전도 차단을 찾아야 할 증상이 있을 때."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.cardio.incomplete-rbbb.preop-proceed-surgery#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 고정 분열 S2",
+    "stem": "A 58-year-old woman is evaluated before elective left total hip arthroplasty. She walks her dog 3 km every morning and climbs two flights of stairs without chest pain or dyspnea. She has no history of syncope or palpitations. Blood pressure is 128/78 mm Hg and pulse is 76/min. The second heart sound is widely split and does not change with respiration. A grade 2/6 midsystolic murmur is heard at the left upper sternal border. A 12-lead ECG shows sinus rhythm, an rSR′ pattern in V1 with a QRS duration of 110 ms, and a QRS axis of +100°. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Proceed with surgery without further cardiac testing",
+     "Transthoracic echocardiography",
+     "Exercise electrocardiographic stress testing",
+     "24-hour ambulatory electrocardiographic monitoring",
+     "Coronary CT angiography"
+    ],
+    "answer": 2,
+    "explanation": "The ECG is again incomplete RBBB and functional capacity is good, but a fixed split S2 with a pulmonary flow murmur and a rightward axis points to right ventricular volume overload from an ostium secundum atrial septal defect, which Harrison links to an incomplete or complete RBBB pattern with a rightward QRS axis [[harrison-21: 240장 p.1826]]. Echocardiography now can change management. In the original item S2 split physiologically and there was no murmur, so no test would change the plan. Stress testing and coronary CT address ischemia, and ambulatory monitoring addresses symptoms she does not have.",
+    "of": "imaging-2026-0135",
+    "changed": "「S2 생리적 분열·심잡음 없음」을 「S2 가 호흡과 무관하게 넓게 고정 분열 + 좌측 흉골상연 2/6 수축기 유출 심잡음」으로 바꿈 → 추가 검사 없이 수술이 아니라 경흉부 심초음파가 정답",
+    "flip": true
+   },
+   {
+    "id": "cn.cardio.incomplete-rbbb.preop-proceed-surgery#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 담낭절제술 전 평가",
+    "stem": "A 45-year-old man is referred by his surgeon because the preoperative ECG before elective laparoscopic cholecystectomy was read as abnormal. The ECG shows sinus rhythm at 72/min, an rSR′ complex in V1, a QRS duration of 104 ms, and a narrow slurred S wave in leads I and V6. He jogs 5 km three times a week without chest discomfort, dyspnea, palpitations, or light-headedness. He takes no medications. On examination, the second heart sound splits on inspiration and becomes single on expiration, and there are no murmurs, gallops, or edema. Which of the following is the most appropriate next step in management?",
+    "options": [
+     "Transthoracic echocardiography",
+     "24-hour ambulatory electrocardiographic monitoring",
+     "Dobutamine stress echocardiography",
+     "Proceed with surgery without further cardiac testing",
+     "Cardiology referral for electrophysiologic study"
+    ],
+    "answer": 4,
+    "explanation": "The decisive cues are unchanged: an isolated incomplete RBBB, no symptoms, functional capacity well above 4 METs, physiologic S2 splitting, and no murmur. Right bundle branch block is common in people without structural heart disease [[harrison-21: 240장 p.1828]], and patients with ≥ 4 METs proceed to surgery without noninvasive testing [[harrison-21: 480장 p.3769]]. The age, operation, and way exercise capacity is described differ from the original item, but none of them changes the decision.",
+    "of": "imaging-2026-0135",
+    "changed": "나이·성별(45세 남자)·수술 종류(복강경 담낭절제술)·운동능력 표현(주 3회 조깅)·제시 순서를 바꾸고 「증상 없음 + ≥ 4 METs + 생리적 S2 분열·심잡음 없음 + 불완전 우각차단」은 그대로 → 답은 여전히 추가 검사 없이 수술",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/ptbxl-18334.png",
+    "kind": "ecg",
+    "at": "기전 — 늦게 전도되는 우각에서 rSR′ 로",
+    "shows": "불완전 우각차단 — 동리듬, V1 rSR′, 좁은 QRS",
+    "look": [
+     "V1 의 두 번째 양성파(R′)",
+     "I·V6 의 끌리는 S 파"
+    ],
+    "label": "incomplete right bundle branch block (SCP IRBBB, 가능도 100)",
+    "basis": "dataset_expert",
+    "reference": "심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만",
+    "paper": "Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154",
+    "doiUrl": "https://doi.org/10.1038/s41597-020-0495-6",
+    "citedBy": 1213,
+    "credit": "PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 18334",
+    "license": "Creative Commons Attribution 4.0 International",
+    "url": "https://physionet.org/content/ptb-xl/1.0.3/records500/18000/#files-panel",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "수술 전 불완전 우각차단 — 검사할까, 수술할까",
+  "geo": {
+   "title": "수술 전 불완전 우각차단 — 검사할까, 수술할까",
+   "w": 680.0,
+   "h": 559.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "수술 전 심전도 — V1 rSR′,",
+      "QRS < 120 ms"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "symp",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "실신·두근거림·심부전 증상?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "exam",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "고정 분열 S2·유출 심잡음?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "mets",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "4 METs 이상을 증상 없이?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 282.0
+    },
+    {
+     "id": "ask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "계단 두 층·네 블록 걷기를",
+      "묻는다"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 372.0
+    },
+    {
+     "id": "monitor",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "심전도 감시·전도계 평가"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 192.0
+    },
+    {
+     "id": "echo",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "경흉부 심초음파 —",
+      "심방중격결손 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 282.0
+    },
+    {
+     "id": "stress",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "처치가 바뀔 때만 약물",
+      "부하검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 468.0,
+     "y": 479.0
+    },
+    {
+     "id": "go",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "추가 검사 없이 수술"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 479.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "symp",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "symp",
+     "to": "monitor",
+     "points": [
+      [
+       194.3,
+       149.0
+      ],
+      [
+       194.3,
+       178.0
+      ],
+      [
+       114.0,
+       178.0
+      ],
+      [
+       114.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "실신·두근거림"
+      ],
+      "w": 80.4,
+      "h": 17,
+      "x": 154.1,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "symp",
+     "to": "exam",
+     "points": [
+      [
+       259.7,
+       149.0
+      ],
+      [
+       259.7,
+       178.0
+      ],
+      [
+       340.0,
+       178.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "exam",
+     "to": "echo",
+     "points": [
+      [
+       307.3,
+       239.0
+      ],
+      [
+       307.3,
+       268.0
+      ],
+      [
+       227.0,
+       268.0
+      ],
+      [
+       227.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "exam",
+     "to": "mets",
+     "points": [
+      [
+       372.7,
+       239.0
+      ],
+      [
+       372.7,
+       268.0
+      ],
+      [
+       453.0,
+       268.0
+      ],
+      [
+       453.0,
+       282.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 357.7,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "mets",
+     "to": "go",
+     "points": [
+      [
+       404.0,
+       329.0
+      ],
+      [
+       404.0,
+       358.0
+      ],
+      [
+       339.0,
+       358.0
+      ],
+      [
+       339.0,
+       465.0
+      ],
+      [
+       307.3,
+       465.0
+      ],
+      [
+       307.3,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 394.5,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "mets",
+     "to": "stress",
+     "points": [
+      [
+       502.0,
+       329.0
+      ],
+      [
+       502.0,
+       358.0
+      ],
+      [
+       567.0,
+       358.0
+      ],
+      [
+       567.0,
+       465.0
+      ],
+      [
+       598.7,
+       465.0
+      ],
+      [
+       598.7,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 481.5,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "mets",
+     "to": "ask",
+     "points": [
+      [
+       453.0,
+       329.0
+      ],
+      [
+       453.0,
+       372.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 438.0,
+      "y": 333.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "go",
+     "points": [
+      [
+       420.3,
+       436.0
+      ],
+      [
+       420.3,
+       465.0
+      ],
+      [
+       372.7,
+       465.0
+      ],
+      [
+       372.7,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "가능"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 405.3,
+      "y": 440.0
+     }
+    },
+    {
+     "from": "ask",
+     "to": "stress",
+     "points": [
+      [
+       485.7,
+       436.0
+      ],
+      [
+       485.7,
+       465.0
+      ],
+      [
+       533.3,
+       465.0
+      ],
+      [
+       533.3,
+       479.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "불가·모름"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 456.5,
+      "y": 440.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "수술 전 심전도 — V1 rSR′, QRS < 120 ms",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "실신·두근거림·심부전 증상?"
+     }
+    ]
+   },
+   {
+    "id": "symp",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "실신·두근거림·심부전 증상?",
+    "note": "",
+    "branches": [
+     {
+      "label": "실신·두근거림",
+      "to": 3,
+      "toText": "심전도 감시·전도계 평가"
+     },
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "고정 분열 S2·유출 심잡음?"
+     }
+    ]
+   },
+   {
+    "id": "monitor",
+    "num": 3,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "심전도 감시·전도계 평가",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "exam",
+    "num": 4,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "고정 분열 S2·유출 심잡음?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "경흉부 심초음파 — 심방중격결손 확인"
+     },
+     {
+      "label": "없음",
+      "to": 6,
+      "toText": "4 METs 이상을 증상 없이?"
+     }
+    ]
+   },
+   {
+    "id": "echo",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "경흉부 심초음파 — 심방중격결손 확인",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "mets",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "4 METs 이상을 증상 없이?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 8,
+      "toText": "추가 검사 없이 수술"
+     },
+     {
+      "label": "아니오",
+      "to": 9,
+      "toText": "처치가 바뀔 때만 약물 부하검사"
+     },
+     {
+      "label": "모름",
+      "to": 7,
+      "toText": "계단 두 층·네 블록 걷기를 묻는다"
+     }
+    ]
+   },
+   {
+    "id": "ask",
+    "num": 7,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "계단 두 층·네 블록 걷기를 묻는다",
+    "note": "",
+    "branches": [
+     {
+      "label": "가능",
+      "to": 8,
+      "toText": "추가 검사 없이 수술"
+     },
+     {
+      "label": "불가·모름",
+      "to": 9,
+      "toText": "처치가 바뀔 때만 약물 부하검사"
+     }
+    ]
+   },
+   {
+    "id": "go",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "추가 검사 없이 수술",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "stress",
+    "num": 9,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "처치가 바뀔 때만 약물 부하검사",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0135"
+  ],
+  "hasErrors": false
+ },
  "cn.cardio.long-qt-syndrome.first-line-drug": {
   "id": "cn.cardio.long-qt-syndrome.first-line-drug",
   "title": "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지",
@@ -10706,6 +11510,677 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0129"
+  ],
+  "hasErrors": false
+ },
+ "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin": {
+  "id": "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin",
+  "title": "지루각화증 — 갈색이어도 멜라닌세포 병변이 아니다",
+  "objective": "노인 몸통의 갈색 병변에서 더모스코피의 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 구조와 색소망 부재로 표피 각질세포 증식(지루각화증)을 멜라닌세포 병변과 구별한다",
+  "objectiveKind": "진단",
+  "condition": "지루각화증(seborrheic keratosis)",
+  "topic": "Dermatology",
+  "seeAlso": [
+   "Pathology"
+  ],
+  "version": 2,
+  "updated": "2026-09-28",
+  "reviewStatus": "unreviewed",
+  "hash": "d3b281a0a60f5113",
+  "summary": [
+   "결론: 색소망 없이 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 구조가 보이면 표피 각질세포 증식 = 지루각화증.",
+   "시험 단서: 노인 몸통의 경계 뚜렷한 「붙인 듯한(stuck-on)」 갈색 판 + 더모스코피 milia-like cyst·comedo-like opening.",
+   "왜: 갈색은 각질세포가 받은 멜라닌 탓이다 — 멜라닌세포 병변을 가르는 것은 색이 아니라 색소망·소구·줄무늬다.",
+   "구조가 애매하거나 최근 변한 병변은 색만으로 판정하지 않고 생검한다."
+  ],
+  "sections": [
+   {
+    "title": "판단 — 왜 각질세포 증식인가",
+    "deep": false,
+    "html": "<ul>\n<li>더모스코피는 먼저 <strong>멜라닌세포 병변인가</strong>를 묻는다 — 색소망·소구·줄무늬가 그 표지다 <sup>[2†]</sup>. 더모스코피는 육안에 안 보이는 구조를 보여 주며 색소 병변 평가에 특히 유용하다 <sup>[1 56장 p.373]</sup>.</li>\n<li>색소망이 없고 <strong>좁쌀 모양 낭(milia-like cyst)·면포 모양 구멍(comedo-like opening)·뇌이랑 구조</strong>가 있으면 표피 각질세포 증식, 지루각화증이다.</li>\n<li>임상 모양도 맞는다 — 몸통의 기름진 비늘이 붙은 갈색 판, 「붙인 듯한」 모양 <sup>[1 56장 p.370]</sup>.</li>\n</ul>"
+   },
+   {
+    "title": "기전 — 두꺼워진 표피에서 각질 구조로",
+    "deep": false,
+    "html": "<p>지루각화증은 기저세포 모양의 각질세포가 증식해 표피가 위로 두꺼워진 판이다. 두꺼운 표피 안에 갇힌 각질 덩어리(각질 낭)는 위에서 보면 흰·노란 <strong>좁쌀 모양 낭</strong>, 표면으로 열린 각질 마개는 짙은 <strong>면포 모양 구멍</strong>으로 보인다. 주름진 유두종 표면은 틈과 융기를 만들어 <strong>뇌이랑 모양</strong>이 된다. 증식은 표피 위쪽으로만 일어나 경계가 뚜렷하고 「붙인 듯」하다 <sup>[3†]</sup>. 갈색은 증식한 각질세포가 이웃 멜라닌세포로부터 받은 멜라닌이다 — 그래서 색은 짙어도 멜라닌이 표피 능선을 따라 모여 만드는 색소망은 생기지 않는다.</p>"
+   },
+   {
+    "title": "가르는 소견 — 색소망이냐 각질 구조냐",
+    "deep": false,
+    "html": "<ul>\n<li>표가 기원 세포별 소견이다. 색(갈색·검정)은 기원을 가르지 못한다.</li>\n<li><strong>음성 소견의 한계</strong>: 색소망이 없다고 모두 지루각화증은 아니다 — 색소 기저세포암·무색소 흑색종도 색소망이 없다. 각질 구조가 <strong>함께</strong> 있어야 한다.</li>\n<li>노인 몸통의 여러 개 병변·자외선 노출 직업은 흑색종 위험을 떠올리게 하지만 진단은 구조로 한다.</li>\n</ul>"
+   },
+   {
+    "title": "권고와 예외",
+    "deep": false,
+    "html": "<ul>\n<li>구조가 분명하고 변화가 없으면 임상 진단으로 끝나고 치료는 필요 없다. 구조가 애매하거나 최근 변했으면 생검한다(흑색종 ABCDE 의 E) <sup>[1 56장 p.369]</sup>.</li>\n<li>더모스코피 구조의 정의와 지루각화증의 조직 기원은 해리슨 56장에 없어 <sup>[2†]</sup>·<sup>[3†]</sup> 서지만 남겼다(†, 검토 항목).</li>\n</ul>"
+   },
+   {
+    "title": "시험 쟁점 — 충돌·맥락·새 근거",
+    "deep": false,
+    "html": "<ul>\n<li>해당 없음(대조: 해리슨 56장 p.369–373 — 임상 양상·더모스코피 용도만 다루고 어긋난 서술 없음).</li>\n</ul>"
+   }
+  ],
+  "tables": [
+   {
+    "title": "갈색 병변 — 기원 세포와 더모스코피",
+    "columns": [
+     "병변(기원 세포)",
+     "가르는 소견"
+    ],
+    "rows": [
+     [
+      "지루각화증(표피 각질세포)",
+      "좁쌀 모양 낭·면포 모양 구멍·뇌이랑 구조, 색소망 없음, 경계 뚜렷 <sup>[2†]</sup>"
+     ],
+     [
+      "흑색종·경계모반(경계부 멜라닌세포)",
+      "색소망(흑색종은 비정형)·소구·줄무늬·청백색 베일"
+     ],
+     [
+      "진피 모반(진피 모반세포)",
+      "부드러운 돔 구진, 소구·쉼표 모양 혈관"
+     ],
+     [
+      "피부섬유종(진피 섬유모세포)",
+      "단단한 구진, 옆에서 누르면 움푹(dimple) <sup>[1 56장 p.370]</sup>"
+     ],
+     [
+      "피지샘 증식(피지샘 세포)",
+      "얼굴의 노란 배꼽 구진, 왕관 모양 혈관"
+     ]
+    ],
+    "note": ""
+   }
+  ],
+  "pitfalls": [
+   {
+    "contrast": "경계부 멜라닌세포 증식(흑색종·경계모반) vs 각질세포 증식 — 「갈색 = 멜라닌세포?」",
+    "point": "경계부 멜라닌세포 병변은 표피 능선을 따라 멜라닌이 모여 색소망·소구·줄무늬를 만든다. 색소망이 없고 각질 구조(좁쌀 모양 낭·면포 모양 구멍)가 있으면 멜라닌은 각질세포에 옮겨진 것이다 <sup>[2†]</sup>.",
+    "exception": "심하게 색소가 많은 지루각화증은 흑색종처럼 어둡고 불규칙해 보일 수 있다 — 구조가 애매하면 생검한다.",
+    "cites": ""
+   },
+   {
+    "contrast": "진피 모반 vs 지루각화증",
+    "point": "진피 모반은 진피에 둥지를 튼 모반세포로, 부드러운 돔 모양 구진이며 각질 구조가 없다. 지루각화증은 표피가 두꺼워진 판이라 표면이 거칠고 「붙인 듯」하다 <sup>[1 56장 p.369–370]</sup>.",
+    "exception": "",
+    "cites": ""
+   }
+  ],
+  "diagramNotes": [
+   "색소 기저세포암도 색소망이 없지만 나뭇가지 모양 혈관·청회색 난원 둥지·잎 모양 영역·궤양을 보인다 — 각질 구조가 없으면 이쪽을 생각한다 <sup>[2†]</sup>.",
+   "지루각화증의 갈색은 증식한 각질세포에 옮겨진 멜라닌이다 — 멜라닌세포 수가 늘어난 것이 아니다 <sup>[3†]</sup>."
+  ],
+  "criteria": [
+   {
+    "id": "sk-clinical",
+    "name": "지루각화증의 임상 양상",
+    "kind": "진단 기준",
+    "population": "색소성 피부 병변",
+    "statement": "몸통·얼굴·팔다리의 갈색 판, 붙어 있는 기름진 비늘, 「붙인 듯한(stuck-on)」 모양 [[harrison-21: 56장 p.370]]",
+    "exceptions": "더모스코피 구조와 기원 세포는 해리슨에 없다 — [[?argenziano-2003]]·[[?bolognia-4]]",
+    "source": "harrison-21",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   },
+   {
+    "id": "dermoscopy-step1",
+    "name": "더모스코피 1단계 — 멜라닌세포 병변인가",
+    "kind": "진단 기준",
+    "population": "색소성 피부 병변",
+    "statement": "색소망·집합 소구·줄무늬가 있으면 멜라닌세포 병변, 없으면 비멜라닌세포 병변의 특징(지루각화증의 좁쌀 모양 낭·면포 모양 구멍 등)을 찾는다 [[?argenziano-2003]]",
+    "exceptions": "더모스코피는 육안에 안 보이는 구조를 보여 주며 색소 병변 평가에 특히 유용하다 [[harrison-21: 56장 p.373]]",
+    "source": "argenziano-2003",
+    "basis": "current",
+    "exams": [
+     "kmle",
+     "usmle"
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "harrison-21",
+    "org": "McGraw Hill",
+    "title": "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 56: Approach to the Patient with a Skin Disorder",
+    "kind": "textbook",
+    "citation": "Loscalzo J, Fauci AS, Kasper DL, et al (eds). Harrison's Principles of Internal Medicine, 21e. 56장 p.369–373",
+    "checked": "드라이브 장 문서로 본문 대조. p.369 — 흑색종 ABCDE(그림 56-1), 모반은 모반멜라닌세포의 양성 증식으로 모양이 규칙적이고 색이 고름(그림 56-2); p.370 표 56-4 — 지루각화증: 몸통·얼굴·팔다리, 붙어 있는 기름진 비늘의 갈색 판, 「stuck on」; 피부섬유종: 옆에서 누르면 움푹; p.372 그림 56-6 분포(등의 지루각화증); p.373 — 더모스코피는 육안에 안 보이는 구조·색·양상을 보여 주며 색소 병변 평가에 특히 유용. 지루각화증의 기원 세포(각질세포)·더모스코피 구조(좁쌀 모양 낭·면포 모양 구멍)는 이 장에 없다",
+    "doi": "",
+    "pmid": "",
+    "verified": "text",
+    "year": "2022",
+    "checkedAt": "2026-09-28",
+    "url": ""
+   },
+   {
+    "id": "argenziano-2003",
+    "org": "Argenziano G, Soyer HP, et al (합의 회의)",
+    "title": "Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet",
+    "kind": "review",
+    "citation": "J Am Acad Dermatol 2003;48(5):679-693",
+    "checked": "서지만(원문 미대조 — 이 컨테이너는 PubMed·doi.org 를 막는다). 문항 해설 근거 목록에서 옮겼고, DOI 는 기억으로 적었다(학습서 워크플로가 PMID 를 찾아 확인)",
+    "doi": "10.1067/mjd.2003.281",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2003",
+    "checkedAt": "2026-09-28",
+    "url": "https://doi.org/10.1067/mjd.2003.281"
+   },
+   {
+    "id": "bolognia-4",
+    "org": "Elsevier",
+    "title": "Dermatology, 4th ed. — Benign epidermal tumors and proliferations",
+    "kind": "textbook",
+    "citation": "Bolognia JL, Schaffer JV, Cerroni L (eds). Dermatology, 4th ed. — seborrheic keratosis(쪽 미확인)",
+    "checked": "서지만(원문 미대조 — 검토 항목)",
+    "doi": "",
+    "pmid": "",
+    "verified": "citation",
+    "year": "2018",
+    "checkedAt": "2026-09-28",
+    "url": ""
+   }
+  ],
+  "checks": [
+   {
+    "q": "더모스코피에서 색소 병변을 볼 때 가장 먼저 묻는 질문은?",
+    "a": "멜라닌세포 병변인가 — 색소망·소구·줄무늬가 있는가."
+   },
+   {
+    "q": "좁쌀 모양 낭과 면포 모양 구멍은 무엇을 반영하나?",
+    "a": "두꺼워진 표피 안의 각질 낭과 표면으로 열린 각질 마개 — 지루각화증의 표지."
+   },
+   {
+    "q": "지루각화증이 갈색인 이유는?",
+    "a": "증식한 표피 각질세포가 멜라닌을 받았기 때문이다 — 멜라닌세포 증식이 아니다."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin#v1",
+    "context": "단서를 바꿔 답이 바뀌는 변형 — 비정형 색소망",
+    "stem": "A 72-year-old man comes to the physician because his daughter noticed that a brown spot on his upper back has become larger over the past year. It is not painful and has never bled. He worked as a fisherman for 45 years. Examination shows a 1.2-cm, flat, brown-black lesion with an irregular border on the upper back. Dermoscopy shows a thick, irregular pigment network that ends abruptly at the periphery, irregularly distributed dots and globules, and a central blue-white veil. No milia-like cysts or comedo-like openings are seen. The lesion is most likely a proliferation of which of the following cell types?",
+    "options": [
+     "Epidermal keratinocytes",
+     "Melanocytes at the dermoepidermal junction",
+     "Dermal fibroblasts",
+     "Sebaceous gland cells",
+     "Nevus cells nested in the dermis"
+    ],
+    "answer": 2,
+    "explanation": "A pigment network, irregular globules, and a blue-white veil are melanocytic structures, and the lesion has changed in size, one of the ABCDE warning signs [[harrison-21: 56장 p.369]]. This is a proliferation of junctional melanocytes (melanoma until proven otherwise) [[?argenziano-2003]]. In the original item there was no pigment network and there were keratin structures (milia-like cysts, comedo-like openings), so the pigment belonged to keratinocytes.",
+    "of": "imaging-2026-0137",
+    "changed": "「색소망 없음 + 좁쌀 모양 낭·면포 모양 구멍·뇌이랑 구조」를 「비정형 색소망(굵고 불규칙하게 끊김) + 불규칙 소구 + 청백색 베일, 1년 사이 커짐」으로 바꿈 → 각질세포가 아니라 경계부 멜라닌세포 증식(흑색종)이 정답",
+    "flip": true
+   },
+   {
+    "id": "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin#v2",
+    "context": "겉모습만 바꾸고 답은 같은 변형 — 허리의 붙인 듯한 갈색 판",
+    "stem": "A 68-year-old woman comes to the dermatology clinic because a raised brown spot on her lower back catches on her waistband. She has had several similar spots on her trunk for years. She has type 2 diabetes treated with metformin. Examination shows a 1-cm, sharply demarcated, slightly raised brown plaque with a rough, waxy surface that looks stuck on to the skin. Dermoscopy shows multiple round white-yellow milia-like cysts and dark comedo-like openings with no pigment network. The lesion is most likely a proliferation of which of the following cell types?",
+    "options": [
+     "Dermal fibroblasts",
+     "Nevus cells nested in the dermis",
+     "Epidermal keratinocytes",
+     "Melanocytes at the dermoepidermal junction",
+     "Sebaceous gland cells"
+    ],
+    "answer": 3,
+    "explanation": "The decisive cues are unchanged: a sharply demarcated stuck-on brown plaque [[harrison-21: 56장 p.370]] with milia-like cysts and comedo-like openings and no pigment network [[?argenziano-2003]]. That is seborrheic keratosis, a benign proliferation of epidermal keratinocytes. The patient's sex, site, reason for visit, and diabetes differ from the original item but do not change the reading.",
+    "of": "imaging-2026-0137",
+    "changed": "나이·성별(68세 여자)·부위(아래 등→허리)·내원 경위(속옷에 걸려 피부과 방문)·병력(가려움 대신 여러 개)·제시 순서를 바꾸고 「경계 뚜렷한 갈색 판 + 색소망 없음 + 좁쌀 모양 낭·면포 모양 구멍」은 그대로 → 답은 여전히 표피 각질세포",
+    "flip": false
+   }
+  ],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/isic-isic_0001104.jpg",
+    "kind": "dermoscopy",
+    "at": "기전 — 두꺼워진 표피에서 각질 구조로",
+    "shows": "조직검사로 확진된 지루각화증의 더모스코피",
+    "look": [
+     "병변 안의 흰·노란 둥근 좁쌀 모양 낭",
+     "짙은 갈색 면포 모양 구멍",
+     "색소망 없이 가장자리의 굵은 손가락 모양 구조"
+    ],
+    "label": "Seborrheic keratosis — 조직병리 확진",
+    "basis": "dataset_expert",
+    "reference": "이미지마다 조직병리 검사로 확진(ISIC 기록 diagnosis_confirm_type = histopathology)",
+    "paper": "Codella NCF 외. Skin lesion analysis toward melanoma detection: a challenge at ISBI 2017. ISBI 2018:168-172",
+    "doiUrl": "https://doi.org/10.1109/ISBI.2018.8363547",
+    "citedBy": 1935,
+    "credit": "ISIC Archive ISIC_0001104 (CC-0)",
+    "license": "CC0 1.0 Universal",
+    "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001104",
+    "marked": ""
+   }
+  ],
+  "diagramTitle": "갈색 병변 — 더모스코피로 기원 세포 가르기",
+  "geo": {
+   "title": "갈색 병변 — 더모스코피로 기원 세포 가르기",
+   "w": 567.0,
+   "h": 524.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "노인 몸통의 경계 뚜렷한",
+      "갈색 판"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "net",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "색소망·소구·줄무늬가",
+      "있는가?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 230.0
+    },
+    {
+     "id": "look",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "더모스코피로 구조를 본다 —",
+      "색만으로 판정 않음"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 200.6,
+     "y": 123.0
+    },
+    {
+     "id": "mel",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "멜라닌세포 병변 —",
+      "비정형이면 생검"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 337.0
+    },
+    {
+     "id": "horn",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "좁쌀 모양 낭·면포 모양 구멍·",
+      "뇌이랑?"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 337.0
+    },
+    {
+     "id": "sk",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "지루각화증 — 표피 각질세포",
+      "증식"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 444.0
+    },
+    {
+     "id": "bx",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "구조 애매·최근 변화 → 생검"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 355.0,
+     "y": 444.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "net",
+     "points": [
+      [
+       194.3,
+       80.0
+      ],
+      [
+       194.3,
+       109.0
+      ],
+      [
+       184.6,
+       109.0
+      ],
+      [
+       184.6,
+       216.0
+      ],
+      [
+       194.3,
+       216.0
+      ],
+      [
+       194.3,
+       230.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "start",
+     "to": "look",
+     "points": [
+      [
+       259.7,
+       80.0
+      ],
+      [
+       259.7,
+       109.0
+      ],
+      [
+       298.6,
+       109.0
+      ],
+      [
+       298.6,
+       123.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "미시행"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 239.2,
+      "y": 84.0
+     }
+    },
+    {
+     "from": "look",
+     "to": "net",
+     "points": [
+      [
+       298.6,
+       187.0
+      ],
+      [
+       298.6,
+       216.0
+      ],
+      [
+       259.7,
+       216.0
+      ],
+      [
+       259.7,
+       230.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "시행"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 283.6,
+      "y": 191.0
+     }
+    },
+    {
+     "from": "net",
+     "to": "mel",
+     "points": [
+      [
+       194.3,
+       294.0
+      ],
+      [
+       194.3,
+       323.0
+      ],
+      [
+       114.0,
+       323.0
+      ],
+      [
+       114.0,
+       337.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 298.0
+     }
+    },
+    {
+     "from": "net",
+     "to": "horn",
+     "points": [
+      [
+       259.7,
+       294.0
+      ],
+      [
+       259.7,
+       323.0
+      ],
+      [
+       340.0,
+       323.0
+      ],
+      [
+       340.0,
+       337.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 298.0
+     }
+    },
+    {
+     "from": "horn",
+     "to": "sk",
+     "points": [
+      [
+       307.3,
+       401.0
+      ],
+      [
+       307.3,
+       430.0
+      ],
+      [
+       227.0,
+       430.0
+      ],
+      [
+       227.0,
+       444.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 292.3,
+      "y": 405.0
+     }
+    },
+    {
+     "from": "horn",
+     "to": "bx",
+     "points": [
+      [
+       372.7,
+       401.0
+      ],
+      [
+       372.7,
+       430.0
+      ],
+      [
+       453.0,
+       430.0
+      ],
+      [
+       453.0,
+       444.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음·애매"
+      ],
+      "w": 58.4,
+      "h": 17,
+      "x": 343.5,
+      "y": 405.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "노인 몸통의 경계 뚜렷한 갈색 판",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 3,
+      "toText": "색소망·소구·줄무늬가 있는가?"
+     },
+     {
+      "label": "미시행",
+      "to": 2,
+      "toText": "더모스코피로 구조를 본다 — 색만으로 판정 않음"
+     }
+    ]
+   },
+   {
+    "id": "look",
+    "num": 2,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "더모스코피로 구조를 본다 — 색만으로 판정 않음",
+    "note": "",
+    "branches": [
+     {
+      "label": "시행",
+      "to": 3,
+      "toText": "색소망·소구·줄무늬가 있는가?"
+     }
+    ]
+   },
+   {
+    "id": "net",
+    "num": 3,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "색소망·소구·줄무늬가 있는가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 4,
+      "toText": "멜라닌세포 병변 — 비정형이면 생검"
+     },
+     {
+      "label": "없음",
+      "to": 5,
+      "toText": "좁쌀 모양 낭·면포 모양 구멍·뇌이랑?"
+     }
+    ]
+   },
+   {
+    "id": "mel",
+    "num": 4,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "멜라닌세포 병변 — 비정형이면 생검",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "horn",
+    "num": 5,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "좁쌀 모양 낭·면포 모양 구멍·뇌이랑?",
+    "note": "",
+    "branches": [
+     {
+      "label": "있음",
+      "to": 6,
+      "toText": "지루각화증 — 표피 각질세포 증식"
+     },
+     {
+      "label": "없음·애매",
+      "to": 7,
+      "toText": "구조 애매·최근 변화 → 생검"
+     }
+    ]
+   },
+   {
+    "id": "sk",
+    "num": 6,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "지루각화증 — 표피 각질세포 증식",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "bx",
+    "num": 7,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "구조 애매·최근 변화 → 생검",
+    "note": "",
+    "branches": []
+   }
+  ],
+  "questions": [
+   "imaging-2026-0137"
   ],
   "hasErrors": false
  },
