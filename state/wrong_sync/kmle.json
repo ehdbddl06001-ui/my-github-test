@@ -986,8 +986,29 @@
    "date": "2026-09-28",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "kmle-2026-1192": {
+   "id": "kmle-2026-1192",
+   "exam": "kmle",
+   "subject": "Pulmonology",
+   "step": "",
+   "type": "Lymphocytic Exudative Pleural Effusion in a Young Adult",
+   "style": "",
+   "modality": "",
+   "question": "가장 가능성이 높은 진단은?",
+   "chosen": 4,
+   "chosenText": "류마티스 흉막염",
+   "answer": 2,
+   "answerText": "결핵성 흉막염",
+   "coreNote": "",
+   "differ": "",
+   "decision": "Light 기준으로 삼출액이고 림프구가 우세하며 폐 실질 병변이 없어 부폐렴성 삼출 가능성이 낮다. 젊은 비흡연자의 아급성 발열·체중 감소와 ADA 86 U/L, 악성 세포 없음은 결핵성 흉막염을 가리키며, 항산균 도말 음성은 배제 근거가 아니다.",
+   "source": "KMLE 2026 / Claude Routine",
+   "date": "2026-09-28",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T22:34:43.868Z"
+ "updated": "2026-09-27T22:36:42.724Z"
 }
