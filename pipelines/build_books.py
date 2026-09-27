@@ -234,7 +234,7 @@ def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questio
 
 
 # ── 도식: 읽을 수 있는 크기로 한 단 또는 두 단 전체에 맞춘다 ──────────────
-def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0) -> dict:
+def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0, force_col: bool = False) -> dict:
     """한 단 안(우선) 또는 두 단 전체(넓은 도식) — 2026-09-27 해리슨식 세로 2단.
     점수 = 항목 중간 끊김 ×0.4pt + 줄바꿈 ×0.12pt − 글자 크기. 두 단 전체는 흐름을 가르므로 +1.0pt, 양옆이 비면 더 벌점.
     한 단(92 mm)에서는 넓은 도식이 3 pt 까지 작아지거나 항목이 잘려(사용자: 「줄이 바뀌면 보기 불편」) 넓은 도식은 두 단 전체로 간다.
@@ -244,6 +244,8 @@ def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0) -> di
               ("full", (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * MM_PX, H * 0.55, DIA_FULL_FLOOR_PT, 1.0)]
     if force_full:
         places = places[1:]
+    elif force_col:                                # 배치 탐색: 두 단 폭이 밀려 큰 빈칸이 생길 때 한 단으로(글자 ≥ DIA_FLOOR_PT)
+        places = places[:1]
     paras = sum(len(str(x["text"]).split("\n")) for x in spec["nodes"])
     cands = []
     for nw in range(180, 481, 20):
@@ -292,7 +294,9 @@ a{color:inherit; text-decoration:none}
 .legend{font-size:7.6pt; color:var(--muted); margin:0 0 1.5mm}
 
 section.unit{counter-reset:sec}
-.unit-head{break-inside:avoid; margin:3mm 0 1.6mm}
+.unit-head{margin:3mm 0 1.6mm}
+.uhg{break-inside:avoid; break-after:avoid}      /* 제목+학습 목표는 붙이고 한눈에 첫 줄까지 끌고 간다 — 긴 한눈에 때문에 머리 전체가 밀려 단이 비지 않게 */
+.sum li{break-inside:avoid}
 .uh{border-top:2.2pt solid var(--accent); padding-top:1.2mm; margin:0 0 1.2mm}
 .uh h2{font-size:11.6pt; line-height:1.25; margin:0}
 .um{font-size:6.8pt; color:var(--muted); margin-top:0.4mm}
@@ -479,13 +483,14 @@ def criteria_tables(c: dict, anchor: str) -> str:
     return "".join(out)
 
 
-def diagram_html(c: dict, anchor: str, force_full: bool = False, shrink: float = 1.0) -> tuple[str, dict | None]:
+def diagram_html(c: dict, anchor: str, force_full: bool = False, shrink: float = 1.0, pad: float = 0.0,
+                 force_col: bool = False) -> tuple[str, dict | None]:
     """두 단 폭 도식은 「도식에 담기지 않은 조건·예외」까지 한 덩어리(두 단 폭·쪼개지 않음) — 쪽 끝 좁은 틈에서
     좌→우→다음 쪽으로 오가며 읽히던 문제(사용자 2026-09-27)."""
     spec = c.get("diagram")
     if not spec:
         return "", None
-    fit = fit_diagram(spec, force_full, shrink)
+    fit = fit_diagram(spec, force_full, shrink, force_col)
     g, s = fit["geo"], fit["scale"]
     svg = dd.to_svg(g, None, dd.LIGHT)
     fig = (f'<figure class="dia"><figcaption>[도식] {esc(spec.get("title"))}</figcaption>'
@@ -494,11 +499,13 @@ def diagram_html(c: dict, anchor: str, force_full: bool = False, shrink: float =
     nh = ('<div class="dnotes"><h4>도식에 담기지 않은 조건·예외</h4><ul>'
           + "".join(f"<li>{_cell(n, c, anchor)}</li>" for n in notes) + "</ul></div>") if notes else ""
     if fit["place"] == "full":
-        return f'<div class="diablock">{fig}{nh}</div>', fit
+        # pad = 배치 탐색이 넣는 아래 여백 — 도식 아래 좁은 띠(좌→우→다음 쪽)를 다음 쪽으로 넘긴다(빈칸 < 20%)
+        style = f' style="margin-bottom:{2 + pad:.0f}mm"' if pad else ""
+        return f'<div class="diablock"{style}>{fig}{nh}</div>', fit
     return fig + nh, fit
 
 
-def figure_html(f: dict) -> tuple[str, str, dict]:
+def figure_html(f: dict, scale: float = 1.0) -> tuple[str, str, dict]:
     """(배치 종류, HTML, 검증 정보). 모든 그림을 한 단 폭으로 — 그림 위, 설명 아래(해리슨식 2단, 폭이 중간에 바뀌지 않게)."""
     from PIL import Image
     path = ROOT / str(f.get("file", ""))
@@ -510,6 +517,7 @@ def figure_html(f: dict) -> tuple[str, str, dict]:
     if hh > FIG_MAX_H:
         hh = FIG_MAX_H
         ww = hh * ar
+    ww, hh = ww * scale, hh * scale              # 배치 탐색이 쪽 끝에 조금 모자란 그림을 줄인다(0.75배까지, 검증 최소 크기 이상)
     look = "".join(f"<li>{esc(x)}</li>" for x in f.get("look_for") or [])
     cited = f" · 피인용 {f['paper_cited_by']}회" if f.get("paper_cited_by") else ""
     paper = f" · {esc(f.get('paper'))}{cited}" if f.get("paper") else ""
@@ -553,6 +561,7 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
     head = f'<div class="uh" id="{a}"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>'
     if c.get("objective"):
         head += f'<div class="goal"><span class="k">학습 목표</span>{_cell(c["objective"], c, a)}</div>'
+    head = f'<div class="uhg">{head}</div>'
     if c.get("summary"):
         head += '<div class="sum"><b>한눈에</b><ul>' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in c["summary"]) + "</ul></div>"
     h = [f'<section class="unit"><div class="unit-head">{head}</div>']
@@ -604,7 +613,8 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
     if dia_at is None or force_full or dia_at not in choices:
         dia_at = dia_default if dia_default in choices else (choices[-1] if choices else len(blocks))
     info["dia_at"], info["dia_default"], info["dia_choices"] = dia_at, dia_default, choices
-    dh, fit = diagram_html(c, a, force_full, float((fig_pos or {}).get(f"{a}#shrink", 1.0)))
+    fp = fig_pos or {}
+    dh, fit = diagram_html(c, a, force_full, float(fp.get(f"{a}#shrink", 1.0)), float(fp.get(f"{a}#pad", 0)), bool(fp.get(f"{a}#col")))
     sec_of = []
     cur = ""
     for kind, html_ in blocks:
@@ -616,7 +626,7 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
     for f in c.get("figures") or []:
         if not isinstance(f, dict) or not f.get("file") or not (ROOT / str(f["file"])).exists():
             continue
-        kind_, fh, finfo = figure_html(f)
+        kind_, fh, finfo = figure_html(f, float((fig_pos or {}).get(f"{a}#figscale:{f.get('id')}", 1.0)))
         at_title = str(f.get("at") or "")
         idx = [k for k in range(len(blocks)) if sec_of[k] == at_title] or [k for k in range(len(blocks)) if sec_of[k]]
         flows = [k + 1 for k in idx if blocks[k][0] != "head"]
@@ -835,7 +845,9 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
                     errs.append(f"{p.number + 1}쪽 {name} 단 아래가 비어 있다(빈 공간 {gap:.0%})")
         # 두 단 폭 도식 위·아래에 남은 두 단 글 띠가 본문 높이 20% 미만 — 좌→우→다음 쪽으로 오가며 읽힌다(사용자 2026-09-27)
         full_w = (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * 72 / 25.4
-        spans_ = [d["rect"] for d in p.get_drawings() if d.get("rect") is not None and d["rect"].width > 0.8 * full_w and d["rect"].height > 40]
+        # 두 단 폭 덩어리 = 본문 폭 80% 넘는 도형(도식 틀 + 붙은 조건·예외 상자 배경). 가는 가로줄(머리 밑줄)은 뺀다
+        wide_ = [d["rect"] for d in p.get_drawings() if d.get("rect") is not None and d["rect"].width > 0.8 * full_w and d["rect"].height > 3]
+        spans_ = wide_ if any(r.height > 40 for r in wide_) else []
         if spans_ and p.number < doc.page_count - 1:
             y0_, y1_ = min(r.y0 for r in spans_), max(r.y1 for r in spans_)
             hh_ = bottom - top
@@ -849,7 +861,7 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
             notes.append(f"마지막 쪽 내용이 적다({cov:.0%})")
         # 고립된 제목: 소제목 아래 같은 단에 이어지는 글이 없다
         for sp in spans:
-            if any(abs(sp["size"] - hs) < 0.05 for hs in (h3_size, 8.8, 8.6)) and sp["flags"] & 16:
+            if any(abs(sp["size"] - hs) < 0.05 for hs in (h3_size, 8.8, 8.6, 11.6)) and sp["flags"] & 16:
                 c = 0 if (sp["bbox"][0] + sp["bbox"][2]) / 2 < mid else 1
                 below = [o for o in spans if o is not sp and o["bbox"][1] > sp["bbox"][3] - 1
                          and (0 if (o["bbox"][0] + o["bbox"][2]) / 2 < mid else 1) == c]
@@ -1006,19 +1018,22 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                     if layout_err(errs):
                         # 큰 도식이 전체 너비 표 바로 뒤에 오면 쪽 끝의 남은 높이에 못 들어가 다음 쪽으로 밀린다 —
                         # 도식을 다른 절 뒤로 옮겨 가며 빈 공간이 가장 적은 배치를 고른다(단원 내용 순서는 그대로).
-                        best = (len(layout_err(errs)), npg, dict(dia_pos))
+                        best = (len(layout_err(errs)) + 100 * (len(errs) - len(layout_err(errs))), npg, dict(dia_pos))
                         for u in units:
                             info = infos.get(u.anchor) or {}
                             # 그림(2026-09-27): 같은 절 안의 다른 문단 뒤로 옮겨 본다 — 뒤쪽부터(그림이 너무 일찍 와서 단이 비는 일이 많다)
                             for fid, fch in (info.get("fig_choices") or {}).items():
                                 key = f"{u.anchor}#fig:{fid}"
-                                for pos in sorted((q for q in fch if q != info["fig_at"].get(fid)), reverse=True)[:6]:
+                                # 같은 절 안 다른 자리(뒤쪽부터) → 지금 자리에서 줄이기(0.85·0.75배)
+                                fopts = [({key: pos}) for pos in sorted((q for q in fch if q != info["fig_at"].get(fid)), reverse=True)[:6]]
+                                fopts += [{f"{u.anchor}#figscale:{fid}": s} for s in (0.85, 0.75)]
+                                for opt in fopts:
                                     if not layout_err(errs):
                                         break
                                     tried += 1
-                                    trial = dict(best[2], **{key: pos})
+                                    trial = dict(best[2], **opt)
                                     e2, n2, p2, i2, g2 = render_once(trial, passes=1)
-                                    score = (len(layout_err(e2)), g2, trial)
+                                    score = (len(layout_err(e2)) + 100 * (len(e2) - len(layout_err(e2))), g2, trial)
                                     if score[:2] < best[:2]:
                                         best = score
                                     if not layout_err(e2):
@@ -1033,22 +1048,56 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                             order = later + earlier    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
                             per_unit = 0                          # 단원마다 따로 센다 — 앞 단원이 예산을 다 쓰면 뒤 단원은 시도조차 못 했다(2026-09-22)
                             # 두 단 폭 도식은 먼저 지금 자리에서 조금 줄여 본다(쪽 끝에 조금 모자라 밀리거나 좁은 띠가 남는 경우), 그다음 자리 옮기기
-                            shrinks = [(info["dia_at"], f) for f in (0.88, 0.76)] if (info.get("diagram") or {}).get("place") == "full" else []
-                            for pos, shrink in shrinks + [(q, 1.0) for q in order] + [(q, 0.88) for q in order[:4]]:
-                                if (pos == info["dia_at"] and shrink == 1.0) or per_unit >= 16:
+                            # 두 단 폭 도식: ① 아래 여백으로 좁은 띠 넘기기 ② 지금 자리에서 줄이기 ③ 한 단으로 ④ 자리 옮기기
+                            full = (info.get("diagram") or {}).get("place") == "full"
+                            at = info["dia_at"]
+                            opts = []
+                            if full:
+                                opts += [(at, 1.0, pad, False) for pad in (14, 28, 42)]
+                                opts += [(at, f, 0, False) for f in (0.88, 0.76)]
+                                if fit_diagram(u.concept["diagram"], force_col=True)["ok"]:
+                                    opts += [(q, 1.0, 0, True) for q in [at] + order[:3]]
+                            opts += [(q, 1.0, 0, False) for q in order] + [(q, 0.88, 0, False) for q in order[:4]]
+                            for pos, shrink, pad, col in opts:
+                                if (pos == at and shrink == 1.0 and not pad and not col) or per_unit >= 20:
                                     continue
                                 if (info.get("diagram") or {}).get("pt", 99) * shrink < DIA_SHRINK_FLOOR_PT:
                                     continue
                                 per_unit += 1
                                 tried += 1
-                                trial = dict(best[2], **{u.anchor: pos, u.anchor + "#shrink": shrink})
+                                trial = dict(best[2], **{u.anchor: pos, u.anchor + "#shrink": shrink,
+                                                         u.anchor + "#pad": pad, u.anchor + "#col": col})
                                 e2, n2, p2, i2, g2 = render_once(trial, passes=1)
-                                score = (len(layout_err(e2)), g2, trial)
+                                score = (len(layout_err(e2)) + 100 * (len(e2) - len(layout_err(e2))), g2, trial)
                                 if score[:2] < best[:2]:
                                     best = score
                                 if not layout_err(e2):
                                     break
+                        # 마지막: 고른 배치 위에서도 두 단 도식 아래 좁은 띠가 남으면 그 도식 아래 여백으로 넘긴다(자리·축소를 바꾼 뒤라 다시 본다)
                         errs, notes, pm, infos, npg = render_once(best[2])
+                        # 앞 도식의 여백이 뒤 내용을 밀어 뒤 도식에 새 띠를 만들 수 있다 — 책 앞쪽 도식부터 차례로 여백을 정한다
+                        # 판단 기준 = (배치 외 오류, −첫 문제 쪽, 문제 수, 쪽 수): 앞쪽 문제를 뒤로 밀어내며 차례로 정하고, 끝에 원래 배치와 문제 수로 비교한다.
+                        if any("좁은 띠" in e for e in errs):
+                            def pkey(es: list[str], pages: int) -> tuple:
+                                le = layout_err(es)
+                                first = min([int(m.group(1)) for e in le for m in [re.match(r"(\d+)쪽", e)] if m] or [10 ** 6])
+                                return (len(es) - len(le), -first, len(le), pages)
+                            before = (len(layout_err(errs)) + 100 * (len(errs) - len(layout_err(errs))), npg, best[2])
+                            cur = (pkey(errs, npg), dict(best[2]))
+                            for u in units:
+                                if (infos.get(u.anchor, {}).get("diagram") or {}).get("place") != "full":
+                                    continue
+                                for pad in (14, 28, 42):
+                                    tried += 1
+                                    trial = dict(cur[1], **{u.anchor + "#pad": pad})
+                                    e2, n2, p2, i2, g2 = render_once(trial, passes=1)
+                                    if pkey(e2, g2) < cur[0]:
+                                        cur = (pkey(e2, g2), trial)
+                                if cur[0][2] == 0:
+                                    break
+                            if (cur[0][2] + 100 * cur[0][0], cur[0][3]) < before[:2]:
+                                best = (cur[0][2] + 100 * cur[0][0], cur[0][3], cur[1])
+                            errs, notes, pm, infos, npg = render_once(best[2])
                         run.setdefault("layout_trials", {})[title] = {"tried": tried, "diagram_after_section": best[2]}
                         # 어떤 배치로도 없애지 못한 빈 공간은 책 전체를 막지 않고 참고로 남긴다(이전 판형의 책이 계속 남는 편이 더 나쁘다)
                         left = layout_err(errs)
