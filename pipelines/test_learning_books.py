@@ -568,7 +568,27 @@ class Planning(unittest.TestCase):
         out = bb.stack_wide_tables(t)
         self.assertNotIn("<table>", out)
         self.assertIn("<b>h0</b> c0", out)
-        self.assertIn("<table>", bb.stack_wide_tables(t.replace("<th>h5</th>", "").replace("<th>h4</th>", "")))
+        three = bb.stack_wide_tables(t.replace("<th>h5</th>", "").replace("<th>h4</th>", "").replace("<th>h3</th>", ""))
+        self.assertIn('<table class="c3">', three)                            # 한 단 폭 — 3칸까지 표, 칸 수 class 로 글씨 크기
+
+    def test_wide_tables_become_record_tables(self):
+        c = {"sources": []}
+        tb = {"title": "검사", "columns": ["검사", "보여 주는 것", "할 수 없는 것", "자리", "근거"],
+              "rows": [["흉부 X선", "중심 폐동맥 확장이 보이는 긴 설명", "압력을 재지 못한다 — 긴 설명", "초기 평가", "—"]]}
+        h = bb.table_html(tb, c, "u-x")
+        self.assertIn('<table class="rec">', h)                              # 카드 대신 진짜 표(머리줄 + 이름|내용)
+        self.assertIn('<tr class="rh"><th colspan="2"><b>흉부 X선</b></th></tr>', h)
+        self.assertNotIn(">근거</td>", h)                                     # 빈 칸(—)은 줄을 만들지 않는다
+        short = dict(tb, columns=tb["columns"][:3], rows=[r[:3] for r in tb["rows"]])
+        self.assertIn('<table class="c3">', bb.table_html(short, c, "u-x"))
+
+    def test_phrase_wrap_breaks_between_items(self):
+        w = bb.dd.phrase_wrap
+        self.assertEqual(w("중추신경·중증 혈액학 침범 — 고용량/펄스 스테로이드 ± 면역억제제(이 도식 범위 밖)", 17),
+                         ["중추신경·중증 혈액학 침범", "— 고용량/펄스 스테로이드", "± 면역억제제(이 도식 범위 밖)"])
+        self.assertEqual(w("소변검사(단백·적혈구·원주)·크레아티닌·혈구·흉부 영상·신경 증상을 확인한다", 17),
+                         ["소변검사(단백·적혈구·원주)·", "크레아티닌·혈구·흉부 영상·", "신경 증상을 확인한다"])
+        self.assertEqual(w("짧다", 17), ["짧다"])
 
     def test_auto_pitfalls_generalize_without_guessing(self):
         q = {"topic": "Dermatology", "objective": self.c1["id"], "answer": "A",
@@ -596,7 +616,9 @@ class Planning(unittest.TestCase):
         # 9층 사슬(2026-09-24 실패한 대동맥 박리 도식 그대로) — 층 사이를 필요한 만큼만 두면 한 쪽에 읽을 크기로 들어간다
         fit = bb.fit_diagram(TALL)
         self.assertTrue(fit["ok"])
-        self.assertGreaterEqual(fit["scale"], bb.DIAGRAM_MIN_SCALE)
+        self.assertGreaterEqual(fit["pt"], bb.DIA_FLOOR_PT if fit["place"] == "column" else bb.DIA_FULL_FLOOR_PT)
+        small = bb.fit_diagram(TALL, shrink=0.88)
+        self.assertAlmostEqual(small["scale"], round(fit["scale"] * 0.88, 3), places=2)
 
 
 SRC_FIXTURE = ({"cn.x.y.z": {"id": "cn.x.y.z", "sources": [
@@ -799,7 +821,9 @@ class RenderedBook(unittest.TestCase):
             self.assertEqual(r["built"], ["소아청소년과"], r)
             pdf = out / "MedKOS_학습서_소아청소년과.pdf"
             with pymupdf.open(pdf) as d:
-                self.assertGreater(d[0].rect.width, d[0].rect.height)            # A4 가로
+                self.assertLess(d[0].rect.width, d[0].rect.height)               # A4 세로 2단(2026-09-27)
+                man = json.loads((st / "manifest.json").read_text(encoding="utf-8"))
+                self.assertTrue(all(v["page"] >= 2 for v in man["books"]["소아청소년과"]["units"].values()))   # 1쪽 = 목차 쪽만
                 text = " ".join(" ".join(p.get_text().split()) for p in d)
                 self.assertTrue([p.number for p in d if p.search_for("열성경련")])    # 한글 글자 검색
                 self.assertTrue(any(t[0] >= 2 for t in d.get_toc()))               # 책갈피
@@ -1146,7 +1170,7 @@ class ConceptFigures(unittest.TestCase):
             self.assertNotIn("figures_none", p.read_text(encoding="utf-8"))
             self.assertTrue(p.read_text(encoding="utf-8").endswith("## 진단\n본문\n"))
 
-    def test_figure_sizes_keep_aspect_and_ecg_spans(self):
+    def test_figure_sizes_keep_aspect_in_one_column(self):
         from PIL import Image
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
@@ -1157,13 +1181,13 @@ class ConceptFigures(unittest.TestCase):
             bb.ROOT = root
             try:
                 kind, h, info = bb.figure_html(self._fig(root, file="docs/assets/figures/e.png"))
-                self.assertEqual((kind, info["place"]), ("span", "full"))
-                self.assertLessEqual(info["h"], bb.FIG_SPAN_H + 0.1)
+                self.assertEqual((kind, info["place"]), ("flow", "column"))      # 심전도도 한 단 폭(폭이 중간에 바뀌지 않게)
+                self.assertAlmostEqual(info["w"], bb.COLW - 3, places=1)
                 self.assertIn("데이터 라벨", h)
                 kind, h, info = bb.figure_html(self._fig(root, file="docs/assets/figures/x.jpg", kind="radiograph"))
                 self.assertEqual(kind, "flow")
                 self.assertAlmostEqual(info["w"] / info["h"], 0.8, places=2)
-                self.assertLessEqual(info["h"], bb.FIG_COL_BOX[1] + 0.1)
+                self.assertLessEqual(info["h"], bb.FIG_MAX_H + 0.1)
             finally:
                 bb.ROOT = old
 

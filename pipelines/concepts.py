@@ -348,8 +348,8 @@ def diagram_fit_errors(concepts: dict[str, dict]) -> list[str]:
         if c.get("diagram") and not dd.validate(c["diagram"]):
             fit = bb.fit_diagram(c["diagram"])
             if not fit["ok"]:
-                out.append(f"{c.get('path', cid)}: 도식이 읽을 크기로 한 쪽에 들어가지 않는다(배율 {fit['scale']} < "
-                           f"{bb.DIAGRAM_MIN_SCALE}) — 노드 글을 줄이거나(판단 ≤30자) 의미 단위로 나눈다")
+                out.append(f"{c.get('path', cid)}: 도식이 읽을 크기로 한 쪽에 들어가지 않는다(글자 {fit['pt']:.1f}pt < "
+                           f"{bb.DIA_FULL_FLOOR_PT}pt, 두 단 전체 기준) — 노드 글을 줄이거나(판단 ≤30자) 의미 단위로 나눈다")
     return out
 
 

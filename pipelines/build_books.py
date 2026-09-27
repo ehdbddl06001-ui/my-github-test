@@ -40,6 +40,7 @@ from typing import Any
 import yaml
 
 import decision_diagram as dd
+import english_terms as et
 import learning_log as ll
 import outline as ol
 from concepts import BASIS, linked_questions, load_concepts, load_questions, render_cites, safe_url, source_numbers
@@ -52,17 +53,19 @@ KST = timezone(timedelta(hours=9))
 VERIFIED_LABEL = {"text": "본문 대조", "abstract": "초록만 대조†", "citation": "서지만 확인†"}
 
 # 판형 수치(mm·pt). 실제 렌더를 보고 정했다 — 페이지를 줄이려고 본문 글자를 더 줄이지 않는다.
-PAGE = dict(w=297, h=210, mt=9, mb=12, ml=9, mr=9, gap=9)
-BODY_PT, LINE = 10.8, 1.33
+PAGE = dict(w=210, h=297, mt=9, mb=11, ml=10, mr=10, gap=6)       # 2026-09-27 A4 세로 2단(해리슨식) — 아이패드에서 확대해 읽는다
+COLW = (PAGE["w"] - PAGE["ml"] - PAGE["mr"] - PAGE["gap"]) / 2      # 한 단 92 mm — 표·그림은 모두 이 폭 안
+BODY_PT, LINE = 8.4, 1.36
 MM_PX = 96 / 25.4
-DIAGRAM_MIN_SCALE = 0.78          # 13px 노드 글자 → 약 7.6pt 이상
-DIAGRAM_MAX_SCALE = 0.85          # 이보다 키우지 않는다 — 글자는 약 8.3pt 로 충분하고, 도식이 짧을수록 단 사이 빈 공간이 줄어든다
+DIAGRAM_MAX_SCALE = 0.8           # 도식 글자 최대 약 7.8pt(본문 8.4pt 보다 조금 작게)
+DIA_FLOOR_PT = 5.2                # 한 단 도식 글자 하한(작게 두고 확대 — 벡터라 선명)
+DIA_FULL_FLOOR_PT = 6.2           # 두 단 전체 도식 글자 하한
+DIA_SHRINK_FLOOR_PT = 5.6         # 쪽 맞춤 축소의 하한
 CAPTION_PX = 36
 # 그림(2026-09-27) — 한 단 그림은 「그림 왼쪽 · 설명 오른쪽」, 심전도는 두 단 전체(12유도는 폭이 있어야 읽힌다).
 # 크기 상한은 단 높이(189 mm)의 약 35 % — 그림이 단 끝에 못 들어가 다음 단으로 넘어가도 빈 공간이 30 % 기준을 넘지 않게.
-FIG_COL_BOX = (78.0, 66.0)        # 한 단 그림 최대 폭·높이(mm)
-FIG_SPAN_H = 108.0                # 두 단 전체 그림(심전도) 높이(mm)
-FIG_MIN = {"column": (38.0, 30.0), "full": (150.0, 80.0)}    # 인쇄 뒤 이보다 작으면 읽기 어렵다(검증)
+FIG_MAX_H = 80.0                  # 한 단 그림 최대 높이(mm) — 폭은 한 단 전체
+FIG_MIN = {"column": (38.0, 16.0)}    # 인쇄 뒤 이보다 작으면 읽기 어렵다(검증)
 FIG_BASIS = {"dataset_expert": "전문가 판정 데이터셋 라벨", "published_figure": "동료 심사 논문의 그림 설명"}
 
 
@@ -225,100 +228,142 @@ def unit_fingerprint(u: Unit, questions: dict | None = None) -> dict:
 
 
 def volume_hash(title: str, units: list[Unit], pending: list, cfg: dict, questions: dict | None = None) -> str:
-    payload = {"t": title, "tv": cfg.get("template_version"),
+    payload = {"t": title, "tv": cfg.get("template_version"), "gl": et.digest(),
                "units": [(u.key, unit_fingerprint(u, questions)) for u in units]}
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, default=str).encode()).hexdigest()[:20]
 
 
 # ── 도식: 읽을 수 있는 크기로 한 단 또는 두 단 전체에 맞춘다 ──────────────
-def fit_diagram(spec: dict, force_full: bool = False) -> dict:
-    """한 단(우선) 또는 두 단 전체에 읽을 수 있는 배율(≥ DIAGRAM_MIN_SCALE)로 들어가는 배치를 고른다.
-    어디에도 안 들어가면 ok=False — 검증이 「도식을 의미 단위로 나눠라」로 멈춘다(글자를 줄여 욱여넣지 않는다)."""
-    col_w = ((PAGE["w"] - PAGE["ml"] - PAGE["mr"] - PAGE["gap"]) / 2) * MM_PX
-    full_w = (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * MM_PX
-    max_h = (PAGE["h"] - PAGE["mt"] - PAGE["mb"]) * MM_PX - CAPTION_PX - 8
+def fit_diagram(spec: dict, force_full: bool = False, shrink: float = 1.0) -> dict:
+    """한 단 안(우선) 또는 두 단 전체(넓은 도식) — 2026-09-27 해리슨식 세로 2단.
+    점수 = 항목 중간 끊김 ×0.4pt + 줄바꿈 ×0.12pt − 글자 크기. 두 단 전체는 흐름을 가르므로 +1.0pt, 양옆이 비면 더 벌점.
+    한 단(92 mm)에서는 넓은 도식이 3 pt 까지 작아지거나 항목이 잘려(사용자: 「줄이 바뀌면 보기 불편」) 넓은 도식은 두 단 전체로 간다.
+    shrink(<1) = 쪽 맞춤 탐색이 정한 축소(빈칸·좁은 띠를 없애려고, 글자 ≥ DIA_SHRINK_FLOOR_PT)."""
+    H = (PAGE["h"] - PAGE["mt"] - PAGE["mb"]) * MM_PX
+    places = [("column", COLW * MM_PX, H * 0.72, DIA_FLOOR_PT, 0.0),
+              ("full", (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * MM_PX, H * 0.55, DIA_FULL_FLOOR_PT, 1.0)]
+    if force_full:
+        places = places[1:]
+    paras = sum(len(str(x["text"]).split("\n")) for x in spec["nodes"])
     cands = []
-    for place, width in (("column", col_w), ("full", full_w)):
-        for nw in (200, 220, 240, 260, 280, 300, 330, 380):
-            geo = dd.layout(spec, node_w=nw, rank_gap="auto")
-            cands.append(dict(geo=geo, place=place, node_w=nw, scale=round(min(width / geo["w"], max_h / geo["h"], DIAGRAM_MAX_SCALE), 3)))
-    for place in (("full",) if force_full else ("column", "full")):
-        ok = [c for c in cands if c["place"] == place and c["scale"] >= DIAGRAM_MIN_SCALE]
-        if ok:
-            best = max(ok, key=lambda c: (c["scale"], -c["geo"]["h"]))
-            return dict(best, ok=True)
-    return dict(max(cands, key=lambda c: c["scale"]), ok=False)
-
+    for nw in range(180, 481, 20):
+        geo = dd.layout(spec, node_w=nw, rank_gap="auto", wrap_fn=dd.phrase_wrap)
+        bad = dd.bad_breaks(geo, spec)
+        wraps = sum(len(n["lines"]) for n in geo["nodes"]) - paras
+        for place, W, MH, floor, pen in places:
+            s = round(min(W / geo["w"], MH / geo["h"], DIAGRAM_MAX_SCALE), 3)
+            pt = 13 * 0.75 * s
+            used = geo["w"] * s / W                    # 두 단 폭 가운데 도식이 실제로 쓰는 몫 — 좁은 도식을 넓게 깔면 양옆이 빈다
+            pen2 = pen + (5 * max(0.0, 0.85 - used) if place == "full" else 0.0)
+            cands.append(dict(geo=geo, place=place, node_w=nw, scale=s, pt=pt, bad=bad, lines=wraps,
+                              ok=pt >= floor, score=bad * 0.4 + wraps * 0.12 - pt + pen2))
+    ok = [c for c in cands if c["ok"]]
+    best = min(ok, key=lambda c: (c["score"], -c["scale"])) if ok else max(cands, key=lambda c: c["scale"])
+    if shrink < 1.0 and best["pt"] * shrink >= DIA_SHRINK_FLOOR_PT:
+        best = dict(best, scale=round(best["scale"] * shrink, 3), pt=best["pt"] * shrink, shrink=shrink)
+    return dict({k: v for k, v in best.items() if k != "ok"}, ok=bool(ok))
 
 # ── HTML ────────────────────────────────────────────────────────────
 CSS = """
 @font-face{font-family:BookKR; src:url("%(regular)s"); font-weight:400}
 @font-face{font-family:BookKR; src:url("%(bold)s"); font-weight:700}
 @page{size:%(pw)smm %(ph)smm; margin:%(mt)smm %(mr)smm %(mb)smm %(ml)smm}
-html{font-family:BookKR, sans-serif; font-size:%(body)spt; line-height:%(line)s; color:#1b2430}
+:root{--ink:#1d2733; --muted:#5b6778; --accent:#1f5fae; --accent-soft:#eaf1fb; --rule:#cfd7e3; --zebra:#f6f8fb; --warn:#b4610e; --warn-soft:#fff5e8}
+html{font-family:BookKR, sans-serif; font-size:%(body)spt; line-height:%(line)s; color:var(--ink)}
 body{margin:0}
-.cols{column-count:2; column-gap:%(gap)smm}
-.span{column-span:all}
-a{color:#0b57d0; text-decoration:none}
-.bookhead{display:flex; align-items:baseline; gap:4mm; border-bottom:1.2pt solid #1b2430; padding-bottom:1.2mm; margin-bottom:2mm}
-.bookhead h1{font-size:17pt; margin:0}
-.bookhead .bm{font-size:9pt; color:#4a5566}
-.toc{font-size:9.6pt; line-height:1.35; margin:0 0 2mm}
-.toc ol{columns:2; column-gap:%(gap)smm; margin:0; padding:0; list-style:none}
-.toc li{display:flex; gap:2mm; break-inside:avoid; border-bottom:0.3pt dotted #c8d0dc; padding:0.5mm 0}
-.toc a{flex:1}
-.toc .pg{flex:0 0 9mm; text-align:right}
-.toc li.grp{display:block; border:0; margin:1.2mm 0 0.3mm; font-size:8.8pt; color:#4a5768; font-weight:700}
-.legend{font-size:8.6pt; color:#4a5566; margin:0 0 3mm}
-.uh{border-top:1.4pt solid #1b2430; margin-top:4mm; padding-top:1.5mm; margin-bottom:1.5mm; break-after:avoid}
-.uh h2{font-size:14.5pt; line-height:1.28; margin:0}
-.um{font-size:8.6pt; color:#4a5566; margin-top:0.6mm}
+.cols{column-count:2; column-gap:%(gap)smm; column-rule:0.4pt solid #d8dee8}
+.span{column-span:none}
+.diablock{column-span:all; break-inside:avoid; margin:1.5mm 0 2mm}
+.diablock figure.dia{margin:0 0 1mm}
+.diablock .dnotes{margin:0}
+.tocpage{break-after:page}      /* 목차는 따로 한 쪽 — 본문은 다음 쪽 첫머리부터 */
+a{color:inherit; text-decoration:none}
+
+.bookhead{border-bottom:1.4pt solid var(--ink); padding-bottom:1.2mm; margin:0 0 2mm; display:flex; gap:4mm; align-items:baseline}
+.bookhead h1{font-size:16pt; margin:0}
+.bookhead .bm{font-size:8.4pt; color:var(--muted)}
+.toc{font-size:8.8pt; line-height:1.34; margin:2mm 0 2.5mm; columns:2; column-gap:8mm; column-rule:0.4pt solid #d8dee8}
+.toc ol{list-style:none; margin:0; padding:0}
+.toc li{display:flex; align-items:baseline; gap:1.5mm; padding:0.2mm 0; break-inside:avoid}
+.toc li::after{content:""; flex:1 1 auto; border-bottom:0.5pt dotted #9aa6b6; margin:0 1mm; order:2}
+.toc .pg{order:3; flex:0 0 7mm; text-align:right; color:var(--muted)}
+.toc li.grp{display:block; margin:1.6mm 0 0.3mm; font-size:7.8pt; font-weight:700; color:var(--accent)}
+.toc li.grp::after{display:none}
+.legend{font-size:7.6pt; color:var(--muted); margin:0 0 1.5mm}
+
+section.unit{counter-reset:sec}
+.unit-head{break-inside:avoid; margin:3mm 0 1.6mm}
+.uh{border-top:2.2pt solid var(--accent); padding-top:1.2mm; margin:0 0 1.2mm}
+.uh h2{font-size:11.6pt; line-height:1.25; margin:0}
+.um{font-size:6.8pt; color:var(--muted); margin-top:0.4mm}
 .um .flag{color:#b3261e; font-weight:700}
-h3{font-size:11.8pt; line-height:1.3; margin:3.2mm 0 1.1mm; color:#0b3d91; break-after:avoid}
-h3.deep::after{content:" (심화)"; font-size:9pt; color:#4a5566; font-weight:400}
-h4{font-size:11pt; margin:2mm 0 0.6mm; break-after:avoid}
-p{margin:0 0 1.5mm; orphans:2; widows:2}
-ul,ol{margin:0 0 1.5mm; padding-left:4.6mm}
-li{margin:0 0 0.6mm; orphans:2; widows:2}
-.sum{background:#f2f5f9; border-left:0.9mm solid #8aa2bd; padding:1.4mm 2.4mm; margin:0 0 2mm}
-.sum b{font-size:9.6pt; color:#35506e}
-.sum ul{margin:0.6mm 0 0; padding-left:4.2mm}
-.cite{font-size:7.8pt; color:#0b57d0; white-space:nowrap}
-td .cite,.tn .cite{white-space:normal; overflow-wrap:anywhere}
-table{border-collapse:collapse; width:100%%; table-layout:fixed; font-size:9.4pt; line-height:1.28; margin:1mm 0 1mm}
+.goal{background:var(--accent-soft); border-radius:1mm; padding:1mm 1.8mm; margin:0 0 1.2mm; font-size:8.2pt}
+.goal .k{font-weight:700; color:var(--accent); margin-right:1.5mm}
+.sum{border:0.5pt solid var(--rule); border-radius:1mm; padding:1.1mm 1.8mm; margin:0; font-size:8pt}
+.sum > b{display:block; font-size:8pt; color:var(--accent); margin-bottom:0.3mm}
+.sum ul{margin:0; padding-left:3.6mm}
+.sum li{margin:0 0 0.3mm}
+
+h3{counter-increment:sec; font-size:9.6pt; line-height:1.28; margin:2.4mm 0 0.8mm; border-left:0.9mm solid var(--accent); padding-left:1.5mm; break-after:avoid}
+h3::before{content:counter(sec) ". "; color:var(--accent)}
+h3 + *{break-before:avoid}
+h3.deep{border-left-color:#9aa6b6}
+h3.deep::after{content:"  심화"; font-size:7pt; color:var(--muted); font-weight:400}
+h4{font-size:8.8pt; margin:1.4mm 0 0.5mm; break-after:avoid}
+h4.cont{display:none}
+p{margin:0 0 1mm; orphans:2; widows:2}
+ul,ol{margin:0 0 1mm; padding-left:3.8mm}
+li{margin:0 0 0.35mm}
+.cite{font-size:6.2pt; color:#8591a3; vertical-align:0.4pt}
+
+table{border-collapse:collapse; width:100%%; table-layout:fixed; font-size:7.8pt; line-height:1.28; margin:0.6mm 0 0.5mm;
+      border-top:1pt solid var(--ink); border-bottom:1pt solid var(--ink)}
 thead{display:table-header-group}
 tr{break-inside:avoid}
-th{background:#e9eef5; text-align:left; font-weight:700}
-td,th{border:0.45pt solid #aab5c3; padding:0.8mm 1.2mm; vertical-align:top; overflow-wrap:anywhere}
-.tb{margin:1.6mm 0 2.4mm}
-.tb .tt{font-weight:700; font-size:10.2pt; margin:0 0 0.6mm; break-after:avoid}
-.tb .tn{font-size:8.8pt; color:#384556; margin-top:0.6mm}
-.tb .tn .cite{font-size:7.6pt}
-figure.dia{margin:1.6mm 0 1.6mm; break-inside:avoid; text-align:center}
-figure.dia figcaption{font-weight:700; font-size:10pt; text-align:left; margin-bottom:0.8mm}
+th{text-align:left; font-weight:700; color:var(--accent); border-bottom:0.7pt solid var(--ink); padding:0.6mm 1mm}
+td{border-bottom:0.35pt solid var(--rule); padding:0.6mm 1mm; vertical-align:top; overflow-wrap:anywhere}
+tbody tr:nth-child(even) td{background:var(--zebra)}
+.tb{margin:1.4mm 0 1.8mm}
+.tb .tt{font-weight:700; font-size:8.6pt; margin:0 0 0.5mm; break-after:avoid}
+.tb .tt::before{content:"표  "; color:var(--accent)}
+.tb .tn{font-size:7pt; color:var(--muted); margin-top:0.4mm}
+td, th{word-break:keep-all; overflow-wrap:break-word}      /* 한글 낱말 중간(「단 / 서」)에서 끊지 않는다 */
+table.c3{font-size:7.3pt}
+table.c4{font-size:6.9pt}
+table.c2 .cite, table.c3 .cite, table.c4 .cite{font-size:5.9pt}
+table.rec{border:0.8pt solid var(--ink); font-size:7.5pt; line-height:1.3}
+table.rec tr.rh th{background:#e6edf7; color:var(--ink); font-weight:700; border-top:0.8pt solid var(--ink); border-bottom:0.4pt solid var(--rule); padding:0.7mm 1.2mm}
+table.rec tr.rh{break-after:avoid}
+table.rec td{border-bottom:0.35pt solid var(--rule); padding:0.5mm 1.2mm; background:none !important}
+table.rec td.k{color:var(--accent); font-weight:700; white-space:nowrap; background:#f7f9fc !important; border-right:0.4pt solid var(--rule)}
+table.rec .cite{white-space:nowrap; font-size:5.9pt}
+table.rec .tag{font-size:6.4pt; color:var(--muted); font-weight:400}
+
+figure.dia{margin:1.6mm 0; break-inside:avoid; text-align:center; border:0.5pt solid var(--rule); border-radius:1mm; padding:1mm 0 0.8mm; background:#fbfcfe}
+figure.dia figcaption{font-weight:700; font-size:8pt; text-align:left; margin:0 1.5mm 0.6mm; color:var(--accent)}
 figure.dia .svgw{margin:0 auto}
 figure.dia .svgw svg{width:100%%; height:100%%}
-figure.fig{margin:1.6mm 0 2.2mm; break-inside:avoid; display:flex; gap:2.6mm; align-items:flex-start;
-  border-top:0.5pt solid #c8d0dc; border-bottom:0.5pt solid #c8d0dc; padding:1.4mm 0}
-figure.fig img{display:block; flex:0 0 auto; border:0.4pt solid #aab5c3; background:#fff}
-figure.fig figcaption{flex:1 1 auto; font-size:8.8pt; line-height:1.32; min-width:0}
-figure.fig .ft{font-weight:700; font-size:9.6pt; color:#0b3d91; margin-bottom:0.6mm}
-figure.fig ul{margin:0.4mm 0 0.8mm; padding-left:3.8mm}
-figure.fig li{margin:0 0 0.3mm}
-figure.fig .fl{margin:0.4mm 0}
-figure.fig .fl b{color:#35506e}
-figure.fig .fc{font-size:7.6pt; color:#4a5566; overflow-wrap:anywhere}
-.dnotes{font-size:9.8pt; margin:0 0 2mm}
-.dnotes h4{margin-top:0}
-h4.cont{color:#0b3d91; font-size:11pt}
-.pit li{margin-bottom:1mm}
-.pit .ex{color:#384556}
-.refs{font-size:8.7pt; line-height:1.3; padding-left:5mm; margin-bottom:1mm}
-.refs li{margin-bottom:0.8mm}
+.dnotes{font-size:7.8pt; background:#f5f7fa; border-radius:1mm; padding:1mm 1.8mm; margin:0 0 1.4mm}
+.dnotes h4{margin:0 0 0.4mm; font-size:8pt; color:var(--muted)}
+
+figure.fig{margin:1.6mm 0; break-inside:avoid; border:0.5pt solid var(--rule); border-radius:1mm; padding:1.2mm}
+figure.fig img{display:block; margin:0 auto 1mm; background:#fff}
+figure.fig figcaption{font-size:7.6pt; line-height:1.3}
+figure.fig .ft{font-weight:700; font-size:8.2pt; color:var(--accent); margin-bottom:0.4mm}
+figure.fig ul{margin:0.3mm 0 0.6mm; padding-left:3.4mm}
+figure.fig .fl{margin:0.5mm 0}
+figure.fig .fc{font-size:6.6pt; color:var(--muted); overflow-wrap:anywhere}
+
+ul.pit{list-style:none; padding:0; margin:0}
+ul.pit li{background:var(--warn-soft); border-left:0.9mm solid var(--warn); padding:0.8mm 1.6mm; margin:0 0 0.7mm; break-inside:avoid}
+ul.pit li > b:first-child{color:var(--warn)}
+.pit .ex{color:var(--muted)}
+
+.refs{font-size:6.8pt; line-height:1.28; padding-left:4mm; margin:0 0 0.5mm; color:#3d4857}
+.refs li{margin-bottom:0.2mm}
 .refs a{overflow-wrap:anywhere}
-.refnote{font-size:8.2pt; color:#4a5566; margin:0 0 2mm}
-.changes{font-size:9pt}
-.muted{color:#4a5566}
+.refnote{font-size:6.6pt; color:var(--muted); margin:0 0 1mm}
+.muted{color:var(--muted)}
 """
 
 
@@ -327,13 +372,13 @@ def css(fonts: dict) -> str:
                   "mr": PAGE["mr"], "gap": PAGE["gap"], "body": BODY_PT, "line": LINE}
 
 
-def stack_wide_tables(fragment: str, max_cols: int = 4) -> str:
-    """정화된(속성 없는) 본문 HTML 속 표 가운데 열이 많은 것을 행 카드로 바꾼다 — 한 단 폭에서 잘리지 않게."""
+def stack_wide_tables(fragment: str, max_cols: int = 3) -> str:
+    """정화된(속성 없는) 본문 HTML 속 표 — 한 단(92 mm)에 3칸 넘는 표는 행 카드로, 남는 표에는 칸 수 class(글자 크기)를 단다."""
     def conv(m: re.Match) -> str:
         t = m.group(0)
         heads = re.findall(r"<th>(.*?)</th>", t, re.S)
         if len(heads) <= max_cols:
-            return t
+            return t.replace("<table>", f'<table class="c{len(heads)}">', 1)
         out = []
         for r in re.findall(r"<tr>(.*?)</tr>", t, re.S):
             cells = re.findall(r"<td>(.*?)</td>", r, re.S)
@@ -341,7 +386,6 @@ def stack_wide_tables(fragment: str, max_cols: int = 4) -> str:
                 out.append("<p>" + " · ".join(f"<b>{h}</b> {c}" for h, c in zip(heads, cells)) + "</p>")
         return "".join(out)
     return re.sub(r"<table>.*?</table>", conv, fragment, flags=re.S)
-
 
 BLOCK_TAGS = ("p", "ul", "ol", "table", "blockquote", "h3", "h4", "div")
 
@@ -384,83 +428,88 @@ def colgroup(widths: list[float]) -> str:
     return "<colgroup>" + "".join(f'<col style="width:{x}%">' for x in widths) + "</colgroup>"
 
 
+def record_table(title: str, columns: list, rows: list, note_html: str = "") -> str:
+    """칸이 많은 표 → 「항목 머리줄 + 이름|내용 두 칸」 표(한 단 폭). 이름 칸은 한 줄 — 길면 글씨를 줄인다(사용자 2026-09-27)."""
+    keys = [re.sub(r"<[^>]+>", "", str(h)) for h in columns[1:]]
+    em = max((sum(0.3 if ch == " " else (1.0 if ord(ch) >= 0x2E80 else 0.58) for ch in k) for k in keys), default=3.0)
+    ksize = 7.4 if em <= 6.5 else (6.9 if em <= 9 else 6.4)
+    kw = em * ksize * 0.3528 * 1.05 + 2.8            # 글자 폭(em) × 글자 크기(pt→mm) + 좌우 여백
+    body = []
+    for r in rows:
+        head, rest = r[0], r[1:]
+        body.append(f'<tr class="rh"><th colspan="2">{head}</th></tr>')
+        body += [f'<tr><td class="k" style="font-size:{ksize}pt">{esc(h)}</td><td>{v}</td></tr>'
+                 for h, v in zip(columns[1:], rest) if re.sub(r"<[^>]+>", "", str(v)).strip() not in ("", "—")]
+    return (f'<div class="tb rec"><div class="tt">{title}</div><table class="rec"><colgroup><col style="width:{kw:.1f}mm"><col></colgroup>'
+            f'<tbody>{"".join(body)}</tbody></table>{note_html}</div>')
+
+
 def table_html(tb: dict, c: dict, anchor: str) -> str:
-    span = " span" if tb.get("span") == "full" else ""
-    head = colgroup(col_widths(tb.get("columns") or [], tb.get("rows") or [])) + "<thead><tr>" + "".join(f"<th>{esc(h)}</th>" for h in tb.get("columns") or []) + "</tr></thead>"
-    rows = "".join("<tr>" + "".join(f"<td>{_cell(x, c, anchor)}</td>" for x in r) + "</tr>" for r in tb.get("rows") or [])
+    """한 단 폭. 3칸 이하(또는 짧은 4칸)는 표 그대로(칸 수만큼 글씨를 줄인다), 그보다 넓으면 항목 표(record_table)."""
+    cols = tb.get("columns") or []
+    rows_ = tb.get("rows") or []
     note = f'<div class="tn">{_cell(tb["note"], c, anchor)}</div>' if tb.get("note") else ""
-    return (f'<div class="tb{span}"><div class="tt">{esc(tb.get("title"))}</div>'
-            f"<table>{head}<tbody>{rows}</tbody></table>{note}</div>")
+    strip = lambda s: re.sub(r"\[\[[^\]]*\]\]", "", str(s))
+    cells = [len(strip(x)) for r in rows_ for x in r] or [0]
+    if len(cols) <= 3 or (len(cols) == 4 and sum(cells) / len(cells) <= 24):
+        head = colgroup(col_widths(cols, rows_)) + "<thead><tr>" + "".join(f"<th>{esc(h)}</th>" for h in cols) + "</tr></thead>"
+        rows = "".join("<tr>" + "".join(f"<td>{_cell(x, c, anchor)}</td>" for x in r) + "</tr>" for r in rows_)
+        return (f'<div class="tb"><div class="tt">{esc(tb.get("title"))}</div>'
+                f'<table class="c{len(cols)}">{head}<tbody>{rows}</tbody></table>{note}</div>')
+    rows = [[f"<b>{_cell(r[0], c, anchor)}</b>"] + [_cell(x, c, anchor) for x in r[1:]] for r in rows_]
+    return record_table(esc(tb.get("title")), cols, rows, note)
 
 
 def criteria_tables(c: dict, anchor: str) -> str:
-    """기준을 종류별 비교표로. 출처·위치는 근거 번호 칸에. 다른 지침의 기준은 행을 나눠 합치지 않는다."""
+    """기준을 종류별 항목 표로(기준 이름 머리줄 + 대상·내용·예외·근거). 다른 지침의 기준은 항목을 나눠 합치지 않는다."""
     groups: dict[str, list[dict]] = {}
     for cr in c.get("criteria") or []:
         groups.setdefault(str(cr.get("kind", "기준")), []).append(cr)
     out = []
     for kind, crs in groups.items():
-        exams = {tuple(cr.get("exams") or []) for cr in crs}
-        basis = {cr.get("basis") for cr in crs}
-        foot = []
-        if len(exams) == 1:
-            foot.append("적용 시험: " + "·".join(e.upper() for e in next(iter(exams))) if next(iter(exams)) else "")
-        if len(basis) == 1:
-            foot.append("근거 구분: " + BASIS.get(next(iter(basis)), ""))
         rows = []
         for cr in crs:
             loc = f": {cr['locator']}" if cr.get("locator") else ""
             cite = render_cites(esc(f"[[{cr['source']}{loc}]]"), c, "pdf", anchor) if cr.get("source") else ""
-            extra = []
-            if len(exams) > 1:
-                extra.append("·".join(e.upper() for e in cr.get("exams") or []))
-            if len(basis) > 1:
-                extra.append(BASIS.get(cr.get("basis"), ""))
-            rows.append("<tr>" + "".join(f"<td>{x}</td>" for x in (
-                f"<b>{esc(cr.get('name'))}</b>", esc(cr.get("population")), _cell(cr.get("statement"), c, anchor),
-                _cell(cr.get("exceptions") or "—", c, anchor), cite + (f"<br>{esc(' · '.join(extra))}" if extra else ""))) + "</tr>")
-        out.append(f'<div class="tb span"><div class="tt">기준 — {esc(kind)}</div><table>{colgroup([13, 15, 31, 27, 14])}<thead><tr><th>기준</th><th>적용 대상·조건</th>'
-                   f"<th>내용</th><th>예외·한계</th><th>근거</th></tr></thead><tbody>{''.join(rows)}</tbody></table>"
-                   + (f'<div class="tn">{esc(" · ".join(x for x in foot if x))}</div>' if any(foot) else "") + "</div>")
+            ex = "·".join(e.upper() for e in cr.get("exams") or [])
+            tag = f' <span class="tag">{esc(ex)}{" · " + esc(BASIS.get(cr.get("basis"), "")) if cr.get("basis") else ""}</span>'
+            rows.append([f"<b>{esc(cr.get('name'))}</b>{tag}", esc(cr.get("population")), _cell(cr.get("statement"), c, anchor),
+                         _cell(cr.get("exceptions") or "—", c, anchor), cite])
+        out.append(record_table(f"기준 — {esc(kind)}", ["기준", "대상", "내용", "예외", "근거"], rows))
     return "".join(out)
 
 
-def diagram_html(c: dict, anchor: str, force_full: bool = False) -> tuple[str, dict | None]:
+def diagram_html(c: dict, anchor: str, force_full: bool = False, shrink: float = 1.0) -> tuple[str, dict | None]:
+    """두 단 폭 도식은 「도식에 담기지 않은 조건·예외」까지 한 덩어리(두 단 폭·쪼개지 않음) — 쪽 끝 좁은 틈에서
+    좌→우→다음 쪽으로 오가며 읽히던 문제(사용자 2026-09-27)."""
     spec = c.get("diagram")
     if not spec:
         return "", None
-    fit = fit_diagram(spec, force_full)
+    fit = fit_diagram(spec, force_full, shrink)
     g, s = fit["geo"], fit["scale"]
     svg = dd.to_svg(g, None, dd.LIGHT)
-    cls = "dia span" if fit["place"] == "full" else "dia"
-    h = (f'<figure class="{cls}"><figcaption>[도식] {esc(spec.get("title"))}</figcaption>'
-         f'<div class="svgw" style="width:{g["w"] * s:.0f}px;height:{g["h"] * s:.0f}px">{svg}</div></figure>')
+    fig = (f'<figure class="dia"><figcaption>[도식] {esc(spec.get("title"))}</figcaption>'
+           f'<div class="svgw" style="width:{g["w"] * s:.0f}px;height:{g["h"] * s:.0f}px">{svg}</div></figure>')
     notes = c.get("diagram_notes") or []
-    if notes:
-        h += ('<div class="dnotes"><h4>도식에 담기지 않은 조건·예외</h4><ul>'
-              + "".join(f"<li>{_cell(n, c, anchor)}</li>" for n in notes) + "</ul></div>")
-    return h, fit
+    nh = ('<div class="dnotes"><h4>도식에 담기지 않은 조건·예외</h4><ul>'
+          + "".join(f"<li>{_cell(n, c, anchor)}</li>" for n in notes) + "</ul></div>") if notes else ""
+    if fit["place"] == "full":
+        return f'<div class="diablock">{fig}{nh}</div>', fit
+    return fig + nh, fit
 
 
 def figure_html(f: dict) -> tuple[str, str, dict]:
-    """(배치 종류 flow|span, HTML, 검증 정보). 그림 크기는 원본 가로세로 비를 지키며 상자에 맞춘다."""
+    """(배치 종류, HTML, 검증 정보). 모든 그림을 한 단 폭으로 — 그림 위, 설명 아래(해리슨식 2단, 폭이 중간에 바뀌지 않게)."""
     from PIL import Image
     path = ROOT / str(f.get("file", ""))
     with Image.open(path) as im:
         w, h = im.size
     ar = w / h if h else 1.0
-    if f.get("kind") in ("ecg", "ctg") and w >= 1200:   # 가로로 긴 선 그림 — 두 단 전체(해상도가 받쳐 줄 때만 — 작은 그림을 늘리면 흐리다)
-        place = "full"
-        hh = FIG_SPAN_H
-        ww = min(hh * ar, (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * 0.66)
-        hh = ww / ar
-    else:
-        place = "column"
-        ww, hh = FIG_COL_BOX
-        if ww / hh > ar:
-            ww = hh * ar
-        else:
-            hh = ww / ar
+    ww = COLW - 3
+    hh = ww / ar
+    if hh > FIG_MAX_H:
+        hh = FIG_MAX_H
+        ww = hh * ar
     look = "".join(f"<li>{esc(x)}</li>" for x in f.get("look_for") or [])
     cited = f" · 피인용 {f['paper_cited_by']}회" if f.get("paper_cited_by") else ""
     paper = f" · {esc(f.get('paper'))}{cited}" if f.get("paper") else ""
@@ -470,12 +519,10 @@ def figure_html(f: dict) -> tuple[str, str, dict]:
            + f'<div class="fc">라벨 근거: {esc(FIG_BASIS.get(f.get("label_basis"), f.get("label_basis")))} — {esc(f.get("reference"))}{paper}'
            + f' · 출처 {esc(f.get("credit"))} · {esc(f.get("license"))} · 「보는 곳」은 검토 전 설명'
            + (f' · {esc(f.get("marked"))}' if f.get("marked") else "") + '</div>')
-    cls = "fig span" if place == "full" else "fig"
-    html_ = (f'<figure class="{cls}"><img src="{path.resolve().as_uri()}" alt="{esc(f.get("shows"))}" '
+    html_ = (f'<figure class="fig"><img src="{path.resolve().as_uri()}" alt="{esc(f.get("shows"))}" '
              f'style="width:{ww:.1f}mm;height:{hh:.1f}mm"><figcaption>{cap}</figcaption></figure>')
-    return ("span" if place == "full" else "flow"), html_, {"id": f.get("id"), "place": place, "w": ww, "h": hh,
-                                                              "probe": f"[그림] {str(f.get('shows') or '')}"[:14]}
-
+    return "flow", html_, {"id": f.get("id"), "place": "column", "w": ww, "h": hh,
+                           "probe": f"[그림] {str(f.get('shows') or '')}"[:14]}
 
 def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int | str | None = None,
               crit_end: bool = False, fig_pos: dict | None = None) -> tuple[str, dict]:
@@ -495,16 +542,20 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
         pit = ('<h3>혼동하기 쉬운 점</h3><ul class="pit">' + "".join(
             f"<li><b>{esc(p['contrast'])}</b> — {esc(p['point'])}" + (f' <span class="ex">예외: {esc(p["exception"])}</span>' if p["exception"] else "")
             + "</li>" for p in pits) + "</ul>") if pits else ""
-        return (f'<section class="unit"><div class="uh span" id="{a}"><h2>{esc(u.title)}</h2>'
-                f'<div class="um">{esc(book_title)} · 정리본 준비 중 — 문항 해설에서 옮긴 요약, 의학 내용 검토 전</div></div>'
+        return (f'<section class="unit"><div class="unit-head"><div class="uh" id="{a}"><h2>{esc(u.title)}</h2>'
+                f'<div class="um">{esc(book_title)} · 정리본 준비 중 — 문항 해설에서 옮긴 요약, 의학 내용 검토 전</div></div></div>'
                 + "".join(body) + pit + "</section>"), info
     meta = [esc(book_title), f"정리본 v{esc(c.get('version'))}", f"{esc(c.get('updated', c.get('date')))} 갱신"]
     rs = c.get("review_status")
     meta.append("의학 내용 검토 완료" if rs == "reviewed" else "의학 내용 검토 전(형식 검사만)")
     flags = "".join(f' · <span class="flag">⚠ {esc(f)}</span>' for f in u.flags)
-    h = [f'<section class="unit"><div class="uh span" id="{a}"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>']
+    # 제목·학습 목표·한눈에를 한 덩어리로 — 단 끝에 제목만 떨어지지 않게(사용자 2026-09-27)
+    head = f'<div class="uh" id="{a}"><h2>{esc(u.title)}</h2><div class="um">{" · ".join(meta)}{flags}</div></div>'
+    if c.get("objective"):
+        head += f'<div class="goal"><span class="k">학습 목표</span>{_cell(c["objective"], c, a)}</div>'
     if c.get("summary"):
-        h.append('<div class="sum"><b>한눈에 — 전체 관계</b><ul>' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in c["summary"]) + "</ul></div>")
+        head += '<div class="sum"><b>한눈에</b><ul>' + "".join(f"<li>{_cell(x, c, a)}</li>" for x in c["summary"]) + "</ul></div>"
+    h = [f'<section class="unit"><div class="unit-head">{head}</div>']
     secs = c.get("sections") or []
     tables = [t for t in c.get("tables") or [] if isinstance(t, dict)]
     placed: set[str] = set()
@@ -553,7 +604,7 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
     if dia_at is None or force_full or dia_at not in choices:
         dia_at = dia_default if dia_default in choices else (choices[-1] if choices else len(blocks))
     info["dia_at"], info["dia_default"], info["dia_choices"] = dia_at, dia_default, choices
-    dh, fit = diagram_html(c, a, force_full)
+    dh, fit = diagram_html(c, a, force_full, float((fig_pos or {}).get(f"{a}#shrink", 1.0)))
     sec_of = []
     cur = ""
     for kind, html_ in blocks:
@@ -624,11 +675,13 @@ def book_html(title: str, units: list[Unit], cfg: dict, questions: dict, meta: d
             toc += f'<li class="grp">{esc(grp)}</li>'
         toc += f'<li><a href="#{u.anchor}">{esc(u.title)}</a><span class="pg">{pg(u.anchor)}</span></li>'
     h = [f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{esc(title)} — {esc(cfg["title"])} 판 {meta["version"]}</title>'
-         f"<style>{css(fonts)}</style></head><body><main class=\"cols\">",
-         f'<div class="span"><div class="bookhead"><h1>{esc(title)}</h1><span class="bm">{esc(cfg["title"])} · 판 {meta["version"]} · {esc(meta["date"])}</span></div>'
+         f"<style>{css(fonts)}</style></head><body>",
+         # 목차는 따로 한 쪽(두 단 목차) — 본문은 다음 쪽 첫머리부터(사용자 2026-09-27). 두 단 흐름 안에서는 쪽 나눔이 먹지 않아 밖에 둔다.
+         f'<div class="tocpage"><div class="bookhead"><h1>{esc(title)}</h1><span class="bm">{esc(cfg["title"])} · 판 {meta["version"]} · {esc(meta["date"])}</span></div>'
          f'<nav class="toc"><ol>{toc}</ol></nav>'
          + (f'<div class="legend"><b>이번 판의 내용 변경</b> — {esc(" · ".join(changes))}</div>' if changes else "")
-         + '<div class="legend">[n 쪽·절] = 단원 끝 「근거」의 번호와 원문 위치 · † = 원문 본문과 대조하지 않은 근거</div></div>']
+         + '<div class="legend">[n 쪽·절] = 단원 끝 「근거」의 번호와 원문 위치 · † = 원문 본문과 대조하지 않은 근거</div></div>'
+         + '<main class="cols">']
     h += bodies
     h.append("</main></body></html>")
     return "".join(h), infos
@@ -691,8 +744,8 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
     errs, notes = [], []
     doc = pymupdf.open(pdf_path)
     W, H = doc[0].rect.width, doc[0].rect.height
-    if W < H:
-        errs.append("가로 판형이 아니다")
+    if W > H:
+        errs.append("세로 판형이 아니다")
     notemb = {f[3] for p in doc for f in p.get_fonts(full=True) if f[1] in ("n/a", "") and f[2] != "Type3"}
     if notemb:
         errs.append(f"임베드되지 않은 글꼴: {sorted(notemb)}")
@@ -733,7 +786,7 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
             errs.append(f"{what} 문구가 남아 있다({hit}쪽)")
     top, bottom = PAGE["mt"] * 72 / 25.4, H - PAGE["mb"] * 72 / 25.4
     mid = W / 2
-    h3_size = 11.8
+    h3_size = 9.6
     for p in doc:
         spans = [sp for b in p.get_text("dict")["blocks"] if b.get("type") == 0
                  for ln in b.get("lines", []) for sp in ln.get("spans", []) if sp["text"].strip()]
@@ -770,7 +823,7 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
                 tot += cur[1] - cur[0]
             col_cov[c] = tot / (bottom - top)
             cov += col_cov[c] / 2
-        if p.number < doc.page_count - 1:
+        if 0 < p.number < doc.page_count - 1:          # 1쪽 = 목차 쪽(따로 한 쪽이라 여백이 정상)
             if cov < 0.5:
                 errs.append(f"{p.number + 1}쪽에 빈 공간이 크다(내용 {cov:.0%})")
             # 단 아래쪽 빈 공간 — 그 아래에 아무것도(두 단 전체 요소도) 없는 채로 30% 넘게 비었으면 배치 문제다.
@@ -780,11 +833,23 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
                 gap = (bottom - low) / (bottom - top)
                 if gap > 0.3:
                     errs.append(f"{p.number + 1}쪽 {name} 단 아래가 비어 있다(빈 공간 {gap:.0%})")
+        # 두 단 폭 도식 위·아래에 남은 두 단 글 띠가 본문 높이 20% 미만 — 좌→우→다음 쪽으로 오가며 읽힌다(사용자 2026-09-27)
+        full_w = (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * 72 / 25.4
+        spans_ = [d["rect"] for d in p.get_drawings() if d.get("rect") is not None and d["rect"].width > 0.8 * full_w and d["rect"].height > 40]
+        if spans_ and p.number < doc.page_count - 1:
+            y0_, y1_ = min(r.y0 for r in spans_), max(r.y1 for r in spans_)
+            hh_ = bottom - top
+            below_ = [sp for sp in spans if sp["bbox"][1] > y1_ + 2 and sp["bbox"][3] < bottom]
+            above_ = [sp for sp in spans if sp["bbox"][3] < y0_ - 2 and sp["bbox"][1] > top]
+            if below_ and (bottom - y1_) < 0.2 * hh_:
+                errs.append(f"{p.number + 1}쪽 두 단 도식 아래 좁은 띠(빈 공간 아님, {(bottom - y1_) / hh_:.0%}) — 좌우로 오가며 읽힌다")
+            elif above_ and (y0_ - top) < 0.2 * hh_ and any(sp["bbox"][0] > mid for sp in above_):
+                errs.append(f"{p.number + 1}쪽 두 단 도식 위 좁은 띠({(y0_ - top) / hh_:.0%}) — 좌우로 오가며 읽힌다")
         if p.number == doc.page_count - 1 and cov < 0.12:
             notes.append(f"마지막 쪽 내용이 적다({cov:.0%})")
         # 고립된 제목: 소제목 아래 같은 단에 이어지는 글이 없다
         for sp in spans:
-            if any(abs(sp["size"] - hs) < 0.12 for hs in (h3_size, 11.0, 10.2)) and sp["flags"] & 16:
+            if any(abs(sp["size"] - hs) < 0.05 for hs in (h3_size, 8.8, 8.6)) and sp["flags"] & 16:
                 c = 0 if (sp["bbox"][0] + sp["bbox"][2]) / 2 < mid else 1
                 below = [o for o in spans if o is not sp and o["bbox"][1] > sp["bbox"][3] - 1
                          and (0 if (o["bbox"][0] + o["bbox"][2]) / 2 < mid else 1) == c]
@@ -832,9 +897,9 @@ def preview(pdf_path: Path, out_dir: Path, pages: list[int] | None = None, zoom:
 # ── 전체 목차 ───────────────────────────────────────────────────────
 def index_html(books_meta: list[dict], cfg: dict, fonts: dict, date: str) -> str:
     h = [f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{esc(cfg["title"])} 전체 목차</title>'
-         f"<style>{css(fonts)}</style></head><body><main class=\"cols\">"
-         f'<div class="span"><div class="bookhead"><h1>{esc(cfg["title"])} — 전체 목차</h1>'
-         f'<span class="bm">{esc(date)} · 책 {len(books_meta)}권</span></div></div>']
+         f"<style>{css(fonts)}</style></head><body>"
+         f'<div class="bookhead"><h1>{esc(cfg["title"])} — 전체 목차</h1>'
+         f'<span class="bm">{esc(date)} · 책 {len(books_meta)}권</span></div><main class="cols">']
     for b in books_meta:
         h.append(f'<h3>{esc(b["title"])}</h3><p class="refnote">{esc(b["file"])} · 판 {b["version"]} · {b["pages"]}쪽</p><ul>')
         h += [f'<li>{esc(u["title"])} <span class="refnote">{u.get("page") or ""}쪽</span></li>' for u in b["units"]]
@@ -898,7 +963,7 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
             if not force and same and ((out_dir / fname).exists() or uploaded):
                 run["skipped"].append(title)          # 변화 없음(최신본이 로컬 또는 드라이브에 있다)
                 continue
-            todo.append((title, units, hsh, prev, fname))
+            todo.append((title, [et.unit(u) for u in units], hsh, prev, fname))
     if not todo:
         run["result"] = "skipped"
         run["finished"] = now_kst().isoformat(timespec="seconds")
@@ -936,7 +1001,7 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
 
                     dia_pos: dict[str, int] = {}
                     errs, notes, pm, infos, npg = render_once(dia_pos)
-                    layout_err = lambda es: [e for e in es if "빈 공간" in e or "고립된 제목" in e]
+                    layout_err = lambda es: [e for e in es if "빈 공간" in e or "고립된 제목" in e or "좁은 띠" in e]
                     tried = 0
                     if layout_err(errs):
                         # 큰 도식이 전체 너비 표 바로 뒤에 오면 쪽 끝의 남은 높이에 못 들어가 다음 쪽으로 밀린다 —
@@ -965,14 +1030,18 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                             d0 = info["dia_default"]
                             later = sorted(q for q in info["dia_choices"] if q > d0)
                             earlier = sorted((q for q in info["dia_choices"] if q < d0), reverse=True)
-                            order = later + earlier + ["full"]    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
+                            order = later + earlier    # 빈 공간은 대개 도식이 너무 일찍 와서 생긴다 — 뒤쪽부터
                             per_unit = 0                          # 단원마다 따로 센다 — 앞 단원이 예산을 다 쓰면 뒤 단원은 시도조차 못 했다(2026-09-22)
-                            for crit_end, pos in [(False, q) for q in order] + [(True, q) for q in [info["dia_default"]] + order]:
-                                if (pos == info["dia_at"] and not crit_end) or per_unit >= 24:
+                            # 두 단 폭 도식은 먼저 지금 자리에서 조금 줄여 본다(쪽 끝에 조금 모자라 밀리거나 좁은 띠가 남는 경우), 그다음 자리 옮기기
+                            shrinks = [(info["dia_at"], f) for f in (0.88, 0.76)] if (info.get("diagram") or {}).get("place") == "full" else []
+                            for pos, shrink in shrinks + [(q, 1.0) for q in order] + [(q, 0.88) for q in order[:4]]:
+                                if (pos == info["dia_at"] and shrink == 1.0) or per_unit >= 16:
+                                    continue
+                                if (info.get("diagram") or {}).get("pt", 99) * shrink < DIA_SHRINK_FLOOR_PT:
                                     continue
                                 per_unit += 1
                                 tried += 1
-                                trial = dict(best[2], **{u.anchor: pos, u.anchor + "#crit_end": crit_end})
+                                trial = dict(best[2], **{u.anchor: pos, u.anchor + "#shrink": shrink})
                                 e2, n2, p2, i2, g2 = render_once(trial, passes=1)
                                 score = (len(layout_err(e2)), g2, trial)
                                 if score[:2] < best[:2]:
