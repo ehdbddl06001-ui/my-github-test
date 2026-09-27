@@ -1192,7 +1192,7 @@
   "checked_at": "2026-09-27",
   "baseline": "reachable",
   "status": "ok",
-  "note": "기준 지문과 같음 · 2026-09-27 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "2026-09-27 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
   "last_error": "TimeoutError: The read operation timed out"
  },
  "https://jamanetwork.com/journals/jamaneurology": {
@@ -1225,7 +1225,7 @@
   "checked_at": "2026-09-27",
   "baseline": "reachable",
   "status": "ok",
-  "note": "2026-09-27 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "TimeoutError: The read operation timed out"
  },
  "https://pubmed.ncbi.nlm.nih.gov/?term=Miettinen+GATA3+multispecific+marker+surgical+pathology": {
@@ -1238,7 +1238,7 @@
   "checked_at": "2026-09-27",
   "baseline": "reachable",
   "status": "ok",
-  "note": "2026-09-27 확인 못 함(일시 오류, 다음 실행에 다시 본다)",
+  "note": "기준 지문과 같음",
   "last_error": "TimeoutError: The read operation timed out"
  },
  "https://screening.iarc.fr/colpochap.php?chap=1": {
