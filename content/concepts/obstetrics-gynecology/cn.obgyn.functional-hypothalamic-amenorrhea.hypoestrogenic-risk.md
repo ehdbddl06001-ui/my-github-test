@@ -181,6 +181,7 @@ variants:
     answer: "C"
     explanation: "Energy deficit from heavy training and weight loss has suppressed hypothalamic GnRH secretion: estrogen is low with low-to-normal gonadotropins and normal prolactin, and the absent withdrawal bleed confirms an unprimed endometrium [[harrison-21: 393장 p.3035]]. Chronic hypoestrogenism removes the brake on bone resorption during the years when peak bone mass should be accrued, so decreased bone density and stress fractures follow [[harrison-21: 393장 p.3036]]. The age, sport and wording differ from the original, but the deciding clues are the same. Endometrial carcinoma needs unopposed estrogen, thromboembolism rises with estrogen excess, a macroadenoma would usually raise prolactin or cause headache or visual loss, and hyperstimulation is a complication of gonadotropin treatment."
     kind: application
+figures_none: 호르몬 수치와 위험 판단 문제 — 영상 소견이 없다
 ---
 
 ## 정의

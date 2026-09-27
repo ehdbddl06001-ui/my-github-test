@@ -141,6 +141,16 @@ variants:
     answer: "C"
     explanation: "The cause of the high right-sided pressure changed (constrictive pericarditis instead of tricuspid regurgitation), but the clue that decides the answer did not: congestion and necrosis around central veins with portal sparing and no red-cell extravasation (arguing against Budd-Chiari). Zone 3 hepatocytes sit at the end of the sinusoidal flow, so they get the least oxygen, and they are the first to receive the back-pressure transmitted from the IVC and hepatic veins. Kupffer cells are distributed throughout the sinusoids, bile ducts run in portal tracts, arterial blood enters at the portal triad, and there is no sinusoidal valve."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 만성 수동 간울혈 — 육두구 간
+  query: ("nutmeg liver" OR "congestive hepatopathy") AND (histology OR pathology)
+  caption_terms:
+  - nutmeg
+  modality: HISTOLOGY_HE
+figures_rejected:
+- asset: PMC-PMC12197035_Figure2
+  reason: 간정맥 도플러 초음파 — 이 정리본은 조직(zone 3) 기전을 다룬다
 ---
 
 ## 정의

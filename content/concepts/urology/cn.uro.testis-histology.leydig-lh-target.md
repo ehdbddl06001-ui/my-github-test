@@ -4,8 +4,8 @@ type: concept
 topic: Urology
 see_also: [Endocrinology, Pathology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: uro.male-repro        # 비뇨의학과 「남성 생식계와 고환 질환」 = 해리슨 21판 391장
 confidence: medium
 review_status: unreviewed
@@ -148,6 +148,26 @@ variants:
     answer: "C"
     explanation: "Clusters of cells between the tubules with the tubules themselves negative are Leydig cells — the location decides the cell, whatever the marker. In Leydig cells, CYP11A1 forms pregnenolone within the mitochondrion as part of testosterone synthesis, and LH acting on its G protein–coupled receptor drives this pathway through cAMP and StAR [[harrison-21: 391장 p.3007]]. FSH targets Sertoli cells inside the tubules; inhibin B and AMH are Sertoli-cell products, not hormones acting on Leydig cells; prolactin lowers testosterone only indirectly through suppression of gonadotropins [[harrison-21: 391장 p.3012]]."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/hpa-insl3_59764_a_5_6.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 고환 INSL3 면역염색 — 세정관 사이 라이디히세포가 갈색
+  look_for:
+  - 세정관 밖 간질에 무리 지은 큰 세포가 양성
+  - 세정관 안 생식세포·세르톨리세포는 음성
+  label: 'Testis, INSL3 면역조직화학 — 병리의사 주석(항체·조직 요약) Elongated or late spermatids: not detected; Leydig cells: high; Pachytene spermatocytes: not detected; Peritubular cells: not detected; Preleptotene spermatocytes: not detected; Round or early spermatids: not detected; Sertoli cells: not detected; Spermatogonia cells: not detected'
+  label_basis: dataset_expert
+  reference: 조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)
+  paper: Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419
+  doi: 10.1126/science.1260419
+  credit: Human Protein Atlas, INSL3 / Testis (CC BY 4.0), https://images.proteinatlas.org/28615/59764_A_5_6.jpg
+  license: Creative Commons Attribution 4.0 International
+  url: https://www.proteinatlas.org/ENSG00000248099-INSL3/tissue/Testis
+  asset: HPA-INSL3_59764_A_5_6
+  paper_cited_by: 14435
+  from_question: imaging-2026-0004
 ---
 
 ## 정의

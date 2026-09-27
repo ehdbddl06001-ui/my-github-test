@@ -205,6 +205,16 @@ variants:
     answer: "B"
     explanation: "희발월경·고안드로겐 증상·다낭성 난소 형태로 다낭성 난소 증후군이고, 황체기 프로게스테론이 낮아 무배란 불임이다. 나이·증상 표현이 달라도 결정 단서는 같다 — 정액·난관이 정상이고 생활습관 교정을 이미 했으므로 경구 배란 유도 단계이며, 국제 지침은 생아 출생률이 높고 다태가 적은 레트로졸을 1차로 권고한다 [[?pcos-intl-2023]] [[harrison-21: 396장 p.3052]]. 메트포르민은 2차 보조 약, 생식샘자극호르몬·체외수정은 경구 약 실패 뒤의 단계다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 다낭성 난소 초음파 — 가장자리에 늘어선 작은 난포
+  query: '"polycystic ovary" AND ultrasound AND "case report"'
+  caption_terms:
+  - polycystic
+  modality: ULTRASOUND
+figures_rejected:
+- asset: PMC-PMC13485508_Figure1
+  reason: 연구 흐름도 — 초음파 사진이 아니다
 ---
 
 ## 정의

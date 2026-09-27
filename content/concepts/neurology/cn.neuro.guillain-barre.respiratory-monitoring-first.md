@@ -179,6 +179,7 @@ variants:
     answer: "C"
     explanation: "Rapidly ascending areflexic weakness with bilateral facial and bulbar involvement after an infection is Guillain-Barré syndrome. Rapid progression and early facial/bulbar weakness predict the need for ventilation, so normal oxygen saturation and vital signs do not make him safe; the first step is admission with serial FVC/NIF monitoring, with IVIG or plasma exchange started promptly within that setting. Steroids are ineffective, and nerve studies can be normal early and must not delay monitoring."
     kind: application
+figures_none: 호흡 감시(폐활량) 판단이 핵심 — 영상 소견이 없다
 ---
 
 ## 정의

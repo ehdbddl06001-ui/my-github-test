@@ -118,6 +118,13 @@ variants:
     answer: "A"
     explanation: "The deciding clues are unchanged: prolonged profound neutropenia, fever unresponsive to antibacterials, pleuritic pain with hemoptysis, halo nodules, and a positive galactomannan. Aspergillus hyphae are narrow, septate, and branch at about 45 degrees; in neutropenic hosts they invade vessels and cause hemorrhagic infarction, which appears as the ground-glass halo around a nodule [[harrison-21: 217장 p.1679–1680]]. Galactomannan is an Aspergillus cell-wall antigen. A capsule describes Cryptococcus, germ-tube yeast describes Candida albicans, and intracellular dimorphic yeast describes Histoplasma."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 침습성 아스페르길루스증 CT — halo 징후
+  query: '"invasive pulmonary aspergillosis" AND "halo sign"'
+  caption_terms:
+  - halo
+  modality: CT
 ---
 
 ## 정의

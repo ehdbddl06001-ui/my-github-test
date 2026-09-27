@@ -159,6 +159,13 @@ variants:
     answer: "B"
     explanation: "나이·성별·동반 부착부염, 방사선 소견 없이 MRI 로만 보이는 천장관절염(비방사선학적)으로 바뀌었지만 결정 단서는 같다 — 확진된 활동성 축성 척추관절염이 서로 다른 NSAID 두 가지에 반응하지 않았다. 다음은 TNF 억제제(또는 IL-17A 억제제)이며 비방사선학적 질환의 반응도 강직척추염과 비슷하다. 결핵·B형간염 음성이 확인되었다. 메토트렉세이트·경구 스테로이드는 축성 증상에 효과가 확인되지 않았고 설파살라진은 말초관절염용이다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 천장관절염 영상
+  query: '"sacroiliitis" AND "ankylosing spondylitis" AND (radiograph OR MRI)'
+  caption_terms:
+  - sacroiliitis
+  modality: XR_MSK
 ---
 
 ## 정의

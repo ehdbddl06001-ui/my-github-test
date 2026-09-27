@@ -248,6 +248,17 @@ variants:
     answer: "C"
     explanation: "나이·침범 부위·복용 중인 혈압약·내원 경위가 바뀌었지만 결정 단서는 같다 — 국소치료에 실패한 체표면적 > 10 % 판상건선이라 전신치료 대상이고, 임신 계획이 메토트렉세이트·아시트레틴을, 치료 중에도 조절되지 않는 고혈압이 사이클로스포린을 지운다. 전신 스테로이드는 반동 위험으로 쓰지 않으므로, 임신 중에도 안전하고 통원이 가능한 좁은파장 자외선B 광선치료가 남는다(엽산 보충 고려). 관절염이 없어 관절 보호 약을 앞세울 이유도 없다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 경계가 뚜렷한 은백색 비늘 판(판상건선)
+  query: '"plaque psoriasis" AND "case report"'
+  caption_terms:
+  - psoriasis
+  - plaque
+  modality: CLINICAL_PHOTO
+figures_rejected:
+- asset: PMC-PMC13218004_Figure1
+  reason: 얼굴 패널 위주이고 몸통 패널에 가슴 일부가 보인다 — 노출 최소화
 ---
 
 ## 정의

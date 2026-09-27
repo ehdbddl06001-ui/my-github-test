@@ -4,8 +4,8 @@ type: concept
 topic: Ophthalmology
 see_also: [Infectious Disease]
 date: 2026-09-23
-updated: 2026-09-23
-version: 2
+updated: 2026-09-27
+version: 3
 outline: h32            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 32장 Disorders of the Eye
 confidence: medium
 review_status: unreviewed
@@ -197,6 +197,25 @@ variants:
     answer: "A"
     explanation: "나이·성별·눈의 쪽·수술 뒤 날수·정보 제시 순서가 바뀌었지만 결정 단서는 같다 — 백내장 수술 며칠 뒤의 통증·급격한 시력저하·고름층·유리체 혼탁은 급성 수술 후 세균 안내염이고, 시력(안전수지 30 cm)이 빛 감지보다 좋다. EVS 에서 이 군은 천자·주입과 즉시 유리체절제술의 결과가 같아, 유리체 검체를 얻고 유리체내 반코마이신 + 세프타지딤을 주입한 뒤 48–72시간 뒤 재평가한다. 전신·점안 항생제는 유리체 농도가 낮고, 스테로이드 단독은 감염을 치료하지 못한다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13338094_figure1.jpg
+  kind: photo
+  at: 기전에서 소견으로
+  shows: 백내장 수술 뒤 안내염 — 전방축농(hypopyon)
+  look_for:
+  - 'A·B·D: 전방 아래쪽에 고인 노랗거나 흰 층(전방축농)'
+  - 각막 위쪽 상처 주위의 침윤과 부종(A)
+  label: '「Sequential anterior segment photographs demonstrating disease progression and treatment response. (A) Initial presentation showing superior corneal wound infiltrate with surrounding stromal edema and anterior chamber hypopyon. (B) Three days following the first anterior chamber washout with intracameral antibiotics, showing partial improvement. (C) End of second anterior chamber washout demonstrating persistent corneal infiltration. (D) Three days postsecond anterior chamber washout with recurrent hypopyon. (E) Postcorneal biopsy showing a full‐thickness defect at the biopsy site. (F) Posttectonic corneal graft showing a clear graft with well‐opposed wound edges and resolved inflammation.」 — Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report. Case Reports in Ophthalmological Medicine'
+  doi: 10.1155/crop/7782331
+  credit: 'Refractory Staphylococcus hominis Endophthalmitis With Corneal Involvement Following Cataract Surgery: A Case Report. Case Rep Ophthalmol Med. 2026 Jul 6;2026:7782331. doi: 10.1155/crop/7782331 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13338094/
+  asset: PMC-PMC13338094_Figure1
+  privacy_check: 눈 앞부분 사진만 — 얼굴 없음
 ---
 
 ## 정의

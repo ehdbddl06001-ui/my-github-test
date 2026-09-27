@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Pathology, Nephrology]
 date: 2026-09-25
-updated: 2026-09-25
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h360            # 해리슨 21판 360장 Systemic Sclerosis — Renal Crisis 절(류마티스내과 책)
 confidence: medium
 review_status: unreviewed
@@ -140,6 +140,25 @@ variants:
     answer: "D"
     explanation: "성별·나이·유발 요인(스테로이드 대신 항 RNA 중합효소 III 항체와 빠르게 진행하는 초기 미만성 피부 경화)·내원 경위(경련)가 바뀌었지만 결정적 단서 — 수 주 만의 악성 범위 고혈압 + 분열적혈구·혈소판감소 + 적혈구 원주 없는 조용한 요침사·정상 보체 — 는 그대로다. 경피증 신장 위기이고 병변은 소동맥의 동심성 층판상 내막 증식(양파 껍질)이다. 초자양 비후는 수년간의 경도 고혈압 병변, 반달체·IgA 침착은 사구체신염이다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12127705_figure5.jpg
+  kind: histology
+  at: 가르는 소견 — 혈관 병인가 사구체 병인가
+  shows: 경피증 신위기 신생검 — 소동맥의 양파 껍질 모양 내막 증식과 막힌 내강
+  look_for:
+  - '오른쪽 위 소동맥: 겹겹이 두꺼워진 내막, 막힌 내강'
+  - '왼쪽 위 사구체: 피가 빠진 허혈성 모습'
+  label: '「Hematoxylin and eosin-stained section of the renal biopsyThe glomerulus (top left) shows a bloodless appearance with predominantly closed capillary loops. An artery (top right) exhibits acute injury with onion skinning and a completely occluded lumen. Some glomeruli (mid-right) show thickened capillary loops with punched-out lumina. The interstitium (left center) demonstrates interstitial fibrosis and tubular atrophy. The tubules (bottom right) display acute tubular injury with dilatation and simplified epithelium.」 — Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy. Cureus'
+  doi: 10.7759/cureus.83327
+  credit: 'Revealing the Intersection: Scleroderma Renal Crisis Complicating Membranous Nephropathy. Cureus. 2025 May 1;17(5):e83327. doi: 10.7759/cureus.83327 (CC BY) — Figure 5'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12127705/
+  asset: PMC-PMC12127705_Figure5
+  privacy_check: 조직 사진 — 식별 정보 없음
 ---
 
 ## 기전 — 정상 소동맥에서 양파 껍질로

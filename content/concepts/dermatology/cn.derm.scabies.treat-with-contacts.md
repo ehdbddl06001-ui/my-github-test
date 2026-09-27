@@ -138,6 +138,13 @@ variants:
     answer: "C"
     explanation: "나이·거주 형태는 달라도 야간 악화 가려움, 손가락 사이의 굴, 겨드랑이·허리띠 선 병변, 같은 공간의 가려움은 옴이다. 첫 감염은 최대 6주까지 증상이 없으므로 증상 없는 룸메이트도 함께 동시에 치료하고 침구·의류를 처리한다. 스테로이드·항히스타민은 진드기를 죽이지 못하고, 딱지옴 소견은 없어 일반 치료로 충분하다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 옴 — 굴(burrow)과 구진
+  query: '"scabies" AND ("burrow" OR dermoscopy) AND "case report"'
+  caption_terms:
+  - scabies
+  modality: CLINICAL_PHOTO
 ---
 
 ## 정의

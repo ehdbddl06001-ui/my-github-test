@@ -88,6 +88,39 @@ python pipelines/outline.py --harrison <슬롯>     # 대조할 장 · 인쇄쪽
 `discriminator`(둘을 가르는 소견 — 문항 안의 정보로) · `when_right`(이 보기가 정답이 되는 조건, 있으면).
 해설과 모순되면 해설을 고치지 말고 보고에 남긴다(문항 내용 변경은 사람 검토).
 
+## `[figure]` — 정리본 그림(심전도·조직·영상 사진, 2026-09-27 사용자 요청)
+
+그림은 소견을 **보여 줘야** 이해되는 목표에만 싣는다. 사용자 조건 두 가지가 규칙의 뼈대다.
+1. **확실한 라벨만** — ① 전문가가 판정한 데이터셋 라벨(데이터 논문이 있고 여러 연구가 쓴 것: PTB-XL·ISIC 조직확진·IDRiD·
+   FracAtlas·GRAZPEDWRI·AML 형태·태아 표준 단면·HPA) 또는 ② 동료 심사 논문(PMC 오픈액세스, CC BY)의 그림 설명이 그 소견이라고
+   말하는 그림. **모델이 그림을 보고 붙인 판독은 라벨이 아니다.** 슬라이스 단위 라벨이 없는 CT·MRI(LIDC·TCIA 코호트)와
+   작성자가 읽은 태아심박동(CTU)은 쓰지 않는다(`concept_figures.py find --all` 이 이유를 보여 준다).
+2. **이미 모아 둔 풀에서 고른다**(exam-builder `open_assets` — 틀린 영상 문항의 그림도 여기서 왔다). 없으면 요청을 남기고,
+   exam-builder 아침 수확(`opendata demand`, 하루 6건)이 받아 온다.
+
+큐 `[figure]` 세 갈래(이 순서):
+- **question** — 이 목표의 영상 문항 그림이 기준을 통과한다. 그림 파일(`../exam-builder/open_assets/<file>`)을 **열어 보고** 붙인다.
+- **attach** — 요청한 그림이 풀에 들어왔다. 열어 보고 ① 요청한 소견이 그림 설명(라벨)과 그림에 실제로 있는지 ② 얼굴·문신·이름·
+  병원 표지가 없는지 확인한다. 맞으면 `add … --privacy-checked "<무엇을 확인했나>"`(여러 패널이면 `--crop x0,y0,x1,y1` 로 한 패널),
+  아니면 `reject <정리본> <자산> "<이유>"` — 수확이 다음 후보를 받는다.
+- **assess** — 아직 판단 안 한 정리본. `find <영어 소견 말>` 로 풀 후보를 찾아 `add`, 없으면 `want`, 영상 소견이 시험 단서가
+  아닌 목표(수치·순서·약물 선택·기전)는 `none "<이유>"`. **얼굴 사진이 대표 소견인 주제는 싣지 않는다**(none 에 그 이유).
+```
+python pipelines/concept_figures.py find flutter AFLT
+python pipelines/concept_figures.py add <정리본> <자산> --at "<## 절 제목>" --shows "<보여 주는 소견 한 줄>" --look "<보는 곳>" --look "<보는 곳>"
+python pipelines/concept_figures.py want <정리본> --source PTBXL --codes AFLT --shows "…"          # 데이터셋 — 코드로 받는다
+python pipelines/concept_figures.py want <정리본> --source PMC_OA --query '"hyperkalemia" AND "peaked T" AND "case report"' \
+       --caption-terms "peaked" --modality ECG --shows "…"                                         # 논문 그림 — 설명에 이 말이 모두 있어야
+python pipelines/concept_figures.py none <정리본> "<그림이 필요 없는 이유>"
+```
+- **라벨·근거·데이터 논문·출처·라이선스는 스크립트가 풀 기록에서 채운다** — 손으로 쓰지 않는다. `shows` 는 **라벨이 말하는 범위 안에서만**
+  (라벨이 「엉덩관절 골절」이면 「경부 골절」이라고 쓰지 않는다 — 그 구분이 목표면 그 그림은 거절하고 더 구체적인 것을 요청).
+  `look_for` 는 그림에서 **실제로 보이는 것**만 1~3개. 이 설명은 검토 전으로 표시된다.
+- `at` 은 본문 `## 절` 제목 그대로 — 보통 「기전에서 소견으로」나 소견을 설명하는 절. 한 정리본에 그림은 3개까지.
+- 새 정리본(`[note]`)을 쓸 때도 같은 판단을 해 `figures`·`figures_wanted`·`figures_none` 중 하나를 남긴다(다음 실행에 assess 로 다시 안 나오게).
+- 학습서: 사진은 한 단 안 「그림 왼쪽·설명 오른쪽」(최대 78×66 mm), 심전도·태아심박동은 두 단 전체. 캡션 = [그림] 소견 · 보는 곳 ·
+  데이터 라벨 · 라벨 근거와 데이터 논문(피인용 수) · 출처·라이선스. 앱은 그림을 먼저 보여 주고 「소견 보기」로 연다(인출).
+
 ## 시험 쟁점 절 — 시험 답이 갈릴 수 있는 곳은 따로 모은다(2026-09-23)
 
 사용자 지시: 충돌 지점 · 맥락 차이 · 새 연구로 논란인 내용은 본문에 섞지 말고 따로 뺀다. 학교 정리본(의대_정리본_제작 CLAUDE.md

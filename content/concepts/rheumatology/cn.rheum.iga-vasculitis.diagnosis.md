@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Pediatrics, Nephrology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h363            # 해리슨 21판 363장 The Vasculitis Syndromes
 confidence: medium
 review_status: unreviewed
@@ -138,6 +138,25 @@ variants:
     answer: "C"
     explanation: "제시 순서(복통·혈변 먼저)와 나이·성별·콩팥 소견이 바뀌었지만 결정 단서는 같다 — 감염 뒤 정상 혈소판·정상 응고의 만져지는 엉덩이·하지 자반에 관절통·산통성 복통·혈변·단백뇨가 겹치면 IgA혈관염이다. 혈소판·응고가 정상이라 혈소판감소 질환·혈우병이 아니고, 용혈과 급성 콩팥손상이 없다. 심한 복통이 이어지면 장중첩증 합병을 확인한다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12433238_figure1.jpg
+  kind: photo
+  at: 기전에서 소견으로
+  shows: IgA 혈관염(헤노흐-쇤라인) 소아의 팔다리 자반
+  look_for:
+  - 팔·손목·다리의 작은 자반(선상·구진)
+  - 혈소판 감소 없이 생기는 자반 — 진단 기준과 함께 본다
+  label: 「Purpuric cutaneous lesions in a pediatric patient diagnosed with IgA vasculitis (Henoch-Schönlein purpura). A. Scattered linear purpuric lesions on the volar aspect of the left forearm. B. Purpuric erythema on the dorsal aspect of the right wrist. C. Isolated purpuric papules on the extensor aspect of the left forearm. D. Multiple linear and scattered purpuric macules on the left leg. E. Bilateral distribution of the lesions on the lower extremities, predominantly on the anterior aspect. F. Well-demarcated purpuric macule on the dorsum of the right foot.」 — An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico. Cureus
+  doi: 10.7759/cureus.90076
+  credit: 'An Unusual Presentation of Henoch-Schönlein Purpura With Penile Involvement in a 10-Year-Old Boy From Mexico. Cureus. 2025 Aug 14;17(8):e90076. doi: 10.7759/cureus.90076 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12433238/
+  asset: PMC-PMC12433238_Figure1
+  privacy_check: 팔다리만 — 얼굴·이름 없음(병원 팔찌 글자 판독 불가)
 ---
 
 ## 정의

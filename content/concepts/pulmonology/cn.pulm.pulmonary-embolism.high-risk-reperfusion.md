@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [Pulmonology, Emergency Medicine]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h279            # 해리슨 21판 279장 Deep-Venous Thrombosis and Pulmonary Thromboembolism(순환기내과 책)
 confidence: medium
 review_status: unreviewed
@@ -140,6 +140,25 @@ variants:
     answer: "C"
     explanation: "경위·나이가 달라도 결정적 단서는 같다 — 수액·승압제에도 지속되는 저혈압과 우심실 부전은 고위험 폐색전증이고, 출혈 금기가 없으니 헤파린과 함께 알테플라제 전신 혈전용해로 재관류한다. 경구·피하 항응고제는 안정 환자용이고, 필터는 항응고 금기·재발일 때다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12950287_figure3.jpg
+  kind: ct
+  at: 기전에서 소견으로
+  shows: 안장 폐색전 — CT 폐동맥조영 축상면
+  look_for:
+  - 폐동맥 분지부에 걸친 충만 결손(화살표)
+  - 좌우 폐동맥으로 이어지는 큰 혈전
+  label: 「CTA axial view of chest demonstrating saddle pulmonary embolism with a large clot burdenBlack arrows point to the thromboembolisms in the pulmonary artery.CTA, computed tomography angiography.」 — Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient. Cureus
+  doi: 10.7759/cureus.102660
+  credit: 'Syncope as the Sole Manifestation of a Saddle Pulmonary Embolism in a Hemodynamically Stable Patient. Cureus. 2026 Jan 30;18(1):e102660. doi: 10.7759/cureus.102660 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12950287/
+  asset: PMC-PMC12950287_Figure3
+  privacy_check: CT — 식별 문자 없음
 ---
 
 ## 정의

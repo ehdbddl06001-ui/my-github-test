@@ -4,8 +4,8 @@ type: concept
 topic: Obstetrics & Gynecology
 see_also: [Pathology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: gyn.oncology          # 산부인과 손 슬롯 「부인암 — 자궁경부·자궁내막·난소·융모성 질환」(해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -143,6 +143,26 @@ variants:
     answer: "D"
     explanation: "Everted endocervical columnar epithelium exposed to the acidic vaginal environment is replaced by squamous epithelium when the subcolumnar reserve cells proliferate and mature into squamous cells — squamous metaplasia, a physiological process at the transformation zone [[?iarc-colpo-2003]] [[?robbins-10]]. Age, contraceptive use and the H&E description differ from the original item, but the decisive clue is unchanged: columnar epithelium being replaced by orderly maturing squamous cells without atypia. Dysplasia would show nuclear atypia and loss of maturation; microglandular hyperplasia is crowding of endocervical glands; endometriosis requires endometrial glands with endometrial stroma; hyperkeratosis is a keratin layer on existing squamous epithelium."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/hpa-muc5b_24311_b_9_3.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 자궁경부 MUC5B 면역염색 — 자궁목내막 샘(원주상피)만 양성
+  look_for:
+  - 기질 속 샘의 원주상피만 진한 갈색
+  - 파랗게 대조염색된 기질은 음성
+  label: 'Cervix, MUC5B 면역조직화학 — 병리의사 주석(항체·조직 요약) Glandular cells: high; Squamous epithelial cells: not detected'
+  label_basis: dataset_expert
+  reference: 조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)
+  paper: Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419
+  doi: 10.1126/science.1260419
+  credit: Human Protein Atlas, MUC5B / Cervix (CC BY 4.0), https://images.proteinatlas.org/8246/24311_B_9_3.jpg
+  license: Creative Commons Attribution 4.0 International
+  url: https://www.proteinatlas.org/ENSG00000117983-MUC5B/tissue/Cervix
+  asset: HPA-MUC5B_24311_B_9_3
+  paper_cited_by: 14435
+  from_question: imaging-2026-0049
 ---
 
 ## 정의

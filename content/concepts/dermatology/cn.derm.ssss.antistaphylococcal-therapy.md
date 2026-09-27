@@ -111,6 +111,16 @@ sources:
     checked_at: 2026-09-23
     checked: "서지만 — 이 컨테이너에서 doi·PubMed 접근이 막혀 대조하지 못함(데스모글레인 1 표적 서술은 미대조)"
     verified: citation
+figures_wanted:
+- source: PMC_OA
+  shows: 포도알균 열상피부증후군 — 얕게 벗겨지는 피부(얼굴 없는 부위만)
+  query: '"staphylococcal scalded skin syndrome" AND "case report"'
+  caption_terms:
+  - scalded
+  modality: CLINICAL_PHOTO
+figures_rejected:
+- asset: PMC-PMC12738164_Figure2
+  reason: 얼굴(눈 주위) 사진 — 싣지 않는다
 ---
 
 ## 정의

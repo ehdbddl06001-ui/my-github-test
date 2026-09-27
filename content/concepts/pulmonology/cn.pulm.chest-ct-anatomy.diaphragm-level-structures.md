@@ -188,6 +188,10 @@ variants:
     answer: "C"
     explanation: "Smoking history raises the pretest probability of cancer, but it does not change what the image shows. A smooth convex margin, perfect homogeneity, normal surrounding lung and — decisively — continuity with the liver on caudal images identify the top of the right hemidiaphragmatic dome cut by the axial plane, a geometric partial-volume effect rather than a lesion [[?webb-thoracic]]. A carcinoma would remain a separate structure with an irregular edge, atelectasis would show volume loss, an effusion would lie posteriorly, and consolidation would contain air bronchograms."
     kind: application
+figures_wanted:
+- source: TOTALSEGMENTATOR
+  shows: 가로막 높이 흉부 CT에서 구조 위치(전문가 검수 분할)
+  note: '풀의 LIDC 슬라이스는 구조 이름이 작성자 판독이라 기준 밖. 전문가 검수 장기 분할이 있는 CT 데이터셋(예: TotalSegmentator, Wasserthal 2023)을 허용 목록에 등록한 뒤 PC 에서 받는다'
 ---
 
 ## 판단 — 왜 구조를 먼저 확정하고 높이를 붙이나

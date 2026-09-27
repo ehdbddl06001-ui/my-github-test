@@ -239,6 +239,16 @@ variants:
     answer: "C"
     explanation: "수축과 거울처럼 겹치는 완만한 감속은 조기감속으로, 태아 머리 압박에 의한 미주신경 반응이며 범주 I 에 허용된다. 기저 130회/분·변이도 중등도·후기·가변감속 없음이므로 범주 I 이고 일상 감시하며 진통을 지켜본다 [[?nichd-2008]]. 양막이 파열되었더라도 반복 가변감속이 없으면 양수주입의 적응이 아니고, 교정할 이상이 없어 소생술·침습 검사·응급 분만도 필요 없다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 태아심박동 — 자궁수축 뒤에 오는 후기 감속
+  query: '"late deceleration" AND cardiotocography'
+  caption_terms:
+  - late deceleration
+  modality: CTG
+figures_rejected:
+- asset: PMC-PMC12515917_FIGURE4
+  reason: 후기 감속 패널이 약 500×110 픽셀로 작고, 인공지능 분류 논문의 도식 — 임상 기록 예시로 부적합
 ---
 
 ## 판단 — 범주를 읽는 순서와 대응

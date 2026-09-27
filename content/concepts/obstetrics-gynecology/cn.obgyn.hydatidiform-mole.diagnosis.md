@@ -4,8 +4,8 @@ type: concept
 topic: Obstetrics & Gynecology
 see_also: [Oncology, Endocrinology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 3
 outline: gyn.oncology            # 산부인과 손 슬롯 「부인암 — 자궁경부·자궁내막·난소·융모성 질환」(해리슨 대조 대상 아님 — outline.py --harrison)
 confidence: medium
 review_status: unreviewed
@@ -143,6 +143,41 @@ variants:
     answer: "D"
     explanation: "임신 10주인데 자궁저부가 배꼽 높이로 주수보다 크고, 자궁 안이 태아 없는 다낭성 덩이로 차 있으며, β-hCG 가 주수에 비해 매우 높고 심한 입덧이 있다 — 포상기태(완전기태)다 [[?williams-26]]. 나이·경산·응급실 내원·검사를 먼저 제시한 순서가 달라도 세 결정 단서는 같다(고령은 오히려 위험 요인이다). 자궁외임신은 자궁 안이 비고 β-hCG 가 낮으며, 쌍둥이임신은 태아가 둘 보이고, 계류유산·절박유산은 태낭이 보이며 β-hCG 가 이렇게 높지 않다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13401662_figure3.jpg
+  kind: ultrasound
+  at: 기전에서 소견으로
+  shows: 완전포상기태 질식 초음파 — 자궁강을 채운 소포성 종괴
+  look_for:
+  - 화살표 사이 크기가 다른 작은 무에코 낭이 모인 벌집 모양
+  - 태아·태낭이 보이지 않는다
+  label: '「Transvaginal ultrasoundTransvaginal ultrasound shows a vesicular mass in the cavum uteri, suggestive of a molar pregnancy, as shown between the arrows.」 — Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus'
+  doi: 10.7759/cureus.111523
+  credit: 'Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13401662/
+  asset: PMC-PMC13401662_Figure3
+- id: f2
+  file: docs/assets/figures/pmc-pmc13090612_figure3.jpg
+  kind: gross
+  at: 기전에서 소견으로
+  shows: 포상기태 흡인 표본 — 포도송이 같은 수포성 융모
+  look_for:
+  - 투명한 작은 수포가 다발로 모인 모양(수포성 변성 융모)
+  - 초음파의 무에코 낭이 이 수포에 해당한다
+  label: '「Intra-operative specimen showing products of conception with prominent hydropic villi.The image shows a translucent, grape-like vesicular architecture and characteristic honeycomb appearance.」 — Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus'
+  doi: 10.7759/cureus.105470
+  credit: 'Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/
+  asset: PMC-PMC13090612_Figure3
 ---
 
 ## 정의

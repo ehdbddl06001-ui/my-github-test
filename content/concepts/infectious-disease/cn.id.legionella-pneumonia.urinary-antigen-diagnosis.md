@@ -124,6 +124,7 @@ variants:
     answer: "C"
     explanation: "The deciding clues are unchanged: an acute pneumonia after aerosolized warm-water exposure, with diarrhea, neurologic symptoms, hyponatremia, elevated transaminases, and neutrophils without organisms on a sputum that does not grow on routine media [[harrison-21: 159장 p.1251, p.1253]]. The urinary antigen test is the fastest confirmatory test, although it detects only serogroup 1 and a negative result should prompt PCR or BCYE culture [[harrison-21: 159장 p.1255]]. The acute course argues against tuberculosis, galactomannan is for invasive aspergillosis, and cold agglutinins are nonspecific."
     kind: application
+figures_none: 확진 검사(소변 항원) 선택 문제 — 흉부 영상은 비특이적이다
 ---
 
 ## 정의

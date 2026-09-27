@@ -132,6 +132,7 @@ variants:
     answer: "C"
     explanation: "Glucagon binds its own Gs-coupled receptor, activates adenylate cyclase and increases cAMP, so PKA-mediated calcium entry, chronotropy and inotropy recover even though beta-1 receptors remain occupied by metoprolol. Changing the patient, the drug (cardioselective metoprolol instead of propranolol) and the setting does not change the key clue — glucagon reversing beta-blocker-induced bradycardia — so the answer is the same. Calcium-channel opening happens downstream through PKA, not directly."
     kind: application
+figures_none: 글루카곤의 수용체 우회 기전이 핵심 — 서맥 심전도는 비특이적이라 그림이 판단을 돕지 않는다
 ---
 
 ## 정의

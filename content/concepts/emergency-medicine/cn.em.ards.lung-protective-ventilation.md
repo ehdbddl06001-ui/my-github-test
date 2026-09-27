@@ -4,8 +4,8 @@ type: concept
 topic: Emergency Medicine
 see_also: [Pulmonology, Cardiology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h301            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 301장 Acute Respiratory Distress Syndrome(응급의학과 책)
 confidence: medium
 review_status: unreviewed
@@ -214,6 +214,26 @@ variants:
     answer: "C"
     explanation: "Aspiration of gastric contents is a direct cause of ARDS [[harrison-21: 301장 p.2225]]. Onset within a week, new bilateral opacities, a normal ventricle without venous distention, and a PaO2/FiO2 of 80 (72/0.9) on PEEP 12 meet the Berlin definition of severe ARDS [[harrison-21: 301장 p.2226]]. The story changed, but the decisive cues did not, so the answer is still lung-protective ventilation: 6 mL/kg of predicted (not actual) body weight with plateau pressure ≤ 30 cm H2O; the modest hypercapnia is tolerated [[harrison-21: 301장 p.2228–2229]]. Lowering PEEP de-recruits alveoli, and high-frequency oscillation has not been shown to help [[harrison-21: 301장 p.2228]]."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12928926_figure1-0-0-400-380.jpg
+  kind: radiograph
+  at: 기전에서 소견으로
+  shows: 흡인 뒤 급성호흡곤란증후군 1일째 흉부 X선 — 양쪽 폐의 미만성 공기공간 음영
+  look_for:
+  - 양쪽 폐야 전체에 퍼진 흐린 공기공간 음영(한쪽에 몰리지 않음)
+  - 기관내관·선이 보이는 기계환기 중 사진
+  label: '「Sequential CXR illustrating the radiologic course in the postpartum patient. Day 1: diffuse bilateral air-space opacities consistent with chemical pneumonitis/early ARDS. Day 7: near-complete resolution and no tube following extubation on day 7. ARDS = acute respiratory distress syndrome.」 — Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine'
+  doi: 10.1097/MD.0000000000047816
+  credit: 'Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1.'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12928926/
+  asset: PMC-PMC12928926_Figure1
+  privacy_check: 흉부 X선 — 식별 문자 없음(DAY 1 표지만)
+  crop: 0,0,400,380
 ---
 
 ## 정의

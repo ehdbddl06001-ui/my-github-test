@@ -183,6 +183,16 @@ variants:
     answer: "D"
     explanation: "제시 순서와 인물은 달라도 촉지 자반·비미란성 관절통·RF 양성·C4 선택적 저하·크리오글로불린 양성은 HCV 크리오글로불린혈증 혈관염이고, 소변·크레아티닌 정상과 신경·소화관·폐 증상 없음이 중증 장기 침범이 없음을 보여 준다. 따라서 원인 바이러스를 없애는 직접작용 항바이러스제가 1차다. RF 양성이지만 항CCP 음성·미란 없음이라 메토트렉세이트를 쓸 류마티스관절염이 아니며, 스테로이드·리툭시맙·혈장교환은 중증 침범이나 항바이러스제 실패에 남긴다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 크리오글로불린혈증 혈관염 — 하지 촉지 자반
+  query: '"cryoglobulinemic vasculitis" AND purpura AND "case report"'
+  caption_terms:
+  - purpura
+  modality: CLINICAL_PHOTO
+figures_rejected:
+- asset: PMC-PMC13397814_Figure1
+  reason: 쇼그렌 과점도 증례 — 크리오글로불린혈증 혈관염 자반이 아니고 얼굴 패널이 있다
 ---
 
 ## 판단 — 왜 항바이러스제가 먼저인가

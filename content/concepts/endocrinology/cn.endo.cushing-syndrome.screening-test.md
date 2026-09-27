@@ -147,6 +147,16 @@ variants:
     answer: "C"
     explanation: "젊은 남자의 골다공증성 골절·근위부 근병증·쉽게 드는 멍·넓은 보라색 선조는 코르티솔 과잉을 시사하고, 외부 스테로이드는 배제되었다. 먼저 선별검사(심야 타액 코르티솔 — 1 mg DST·24시간 소변 유리코르티솔도 가능)로 코르티솔 과잉을 확인한다. ACTH·뇌하수체 MRI 는 확인 뒤 원인 감별 단계이고, 메타네프린은 카테콜아민 과잉 검사다. 겉모습(나이·성별·골절로 발견)이 바뀌어도 결정적 단서가 같아 답이 같다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 쿠싱증후군의 넓은 자주색 선조(얼굴 없는 부위)
+  query: '"Cushing" AND striae AND "case report"'
+  caption_terms:
+  - striae
+  modality: CLINICAL_PHOTO
+figures_rejected:
+- asset: PMC-PMC12602253_FIGURE1
+  reason: 선조 패널이 약 280×230 픽셀로 작고 얼굴 패널이 있다
 ---
 
 ## 정의

@@ -179,6 +179,16 @@ variants:
     answer: "B"
     explanation: "나이·성별·눈의 쪽·정보 제시 순서가 바뀌었지만 결정 단서는 같다 — 50세 이상의 새 관자놀이 두통·두피 압통·턱 파행·류마티스다발근통 증상·빈혈·혈소판 증가는 거대세포동맥염에 의한 동맥염성 폐쇄를 가리키고, 치료하지 않으면 며칠 안에 반대쪽 눈을 잃을 수 있다. 그래서 적혈구침강속도·C반응단백을 즉시 확인하고, 높으면 생검을 기다리지 않고 고용량 글루코코르티코이드를 시작한다. 경동맥·심장·뇌 영상은 색전 원인 평가로 뒤에 한다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 망막중심동맥폐쇄 — 창백한 망막과 황반의 체리빛 반점
+  query: '"central retinal artery occlusion" AND "cherry-red spot"'
+  caption_terms:
+  - cherry
+  modality: FUNDUS
+figures_rejected:
+- asset: PMC-PMC13373650_Figure1
+  reason: 공막돌륭술 뒤 생긴 비전형 증례의 수술 후 광각 사진 — 체리빛 반점 교육용으로 부적합
 ---
 
 ## 정의

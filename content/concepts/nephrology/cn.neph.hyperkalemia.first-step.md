@@ -228,6 +228,16 @@ variants:
     answer: "B"
     explanation: "칼륨은 중증 범위지만 심전도 변화가 없어 UK KA 기준의 칼슘 적응이 아니다. 중증 고칼륨혈증에는 인슐린+포도당이 권고되고(심전도가 정상이어도 적극 치료 — Harrison), 원인 약물(스피로놀락톤 등)을 멈추고 제거를 이어 간다. 투석은 소변이 나오고 약물 치료를 아직 하지 않은 지금의 첫 처치가 아니며, 1주 뒤 재검은 중증 수치를 방치한다."
     kind: application
+figures_wanted:
+- source: PMC_OA
+  shows: 고칼륨혈증 심전도 — 뾰족한 T파
+  query: '"hyperkalemia" AND "peaked T" AND "case report"'
+  caption_terms:
+  - peaked
+  modality: ECG
+figures_rejected:
+- asset: PMC-PMC13160704_Figure1
+  reason: 그림 설명이 「고칼륨 변화 없음(가성 고칼륨)」 — 요청 소견의 반대
 ---
 
 ## 정상 생리 — 칼륨은 어디에 있고 무엇이 조절하나

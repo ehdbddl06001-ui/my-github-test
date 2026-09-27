@@ -4,8 +4,8 @@ type: concept
 topic: Ophthalmology
 see_also: [Cardiology, Internal Medicine]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: ophth.retina            # 안과 손 슬롯 「망막·시신경」(해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -139,6 +139,26 @@ variants:
     answer: "A"
     explanation: "네 사분면 출혈·정맥 확장·유두부종은 CRVO 이고, 매우 나쁜 시력·뚜렷한 RAPD·많은 면화반은 허혈형을 시사한다 [[?aao-rvo-ppp-2019]]. 허혈 망막의 VEGF 가 홍채·전방각에 신생혈관을 키워 수개월 안에 신생혈관녹내장이 올 수 있어 매달 홍채·전방각을 본다 [[?cvos-1997]]. 지금 안압·홍채가 정상인 것은 안심 근거가 아니다. 나이·성별·동반 녹내장이 달라도 결정 단서는 같다. 동공차단에 의한 급성 폐쇄각녹내장은 기전이 다르다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13268218_figure1-0-0-372-280.jpg
+  kind: fundus
+  at: 기전에서 소견으로
+  shows: 중심망막정맥폐쇄 안저 — 네 사분면의 망막 내 출혈과 시신경유두 부종
+  look_for:
+  - 네 사분면 모두에 퍼진 불꽃·점 모양 출혈
+  - 구불구불하게 늘어난 망막 정맥과 부은 시신경유두
+  label: '「Multimodal imaging of central retinal vein occlusion in a young healthy adult following strenuous exercise. (a) Baseline color fundus image of the right eye showing optic disc edema, dilated and tortuous retinal veins, and widespread intraretinal hemorrhages. (b) Follow-up fundus image demonstrating a significant resolution of retinal hemorrhages and reduction in venous congestion following intravitreal anti-VEGF therapy. (c) Baseline optical coherence tomography (OCT) macula showing marked cystoid macular edema with multiple intraretinal cystic spaces and increased central macular thickness of 823 µm. (d) Follow-up OCT macula demonstrating significant reduction in intraretinal fluid with restoration of foveal contour and improved retinal architecture after treatment.VEGF: vascular endothelial growth factor」 — Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response. Cureus'
+  doi: 10.7759/cureus.108935
+  credit: 'Central Retinal Vein Occlusion in a Young Healthy Man Following Strenuous Exercise: Multimodal Imaging and Treatment Response. Cureus. 2026 May 15;18(5):e108935. doi: 10.7759/cureus.108935 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13268218/
+  asset: PMC-PMC13268218_Figure1
+  privacy_check: 안저 사진 — 식별 문자는 촬영 날짜뿐
+  crop: 0,0,372,280
 ---
 
 ## 정의

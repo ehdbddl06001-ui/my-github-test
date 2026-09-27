@@ -4,8 +4,8 @@ type: concept
 topic: Emergency Medicine
 see_also: [Cardiology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h306            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -137,6 +137,26 @@ variants:
     answer: "C"
     explanation: "환자·장소·발견 경위는 달라도 무반응·무맥·비정상 호흡에 QRS 없는 세동파는 심실세동, 곧 제세동 가능 리듬이다. 즉시 비동기 충격 뒤 곧바로 압박 2분을 한다. 헐떡이는 숨은 정상 호흡이 아니다. 동기화는 인식할 R파가 없어 불가능하고, 에피네프린은 충격 사이의 보조, 아트로핀·조율은 서맥 처치다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13303025_figure3-0-0-322-362.png
+  kind: ecg
+  at: 기전에서 소견으로
+  shows: 심실세동 — 사지유도에서 모양·간격이 일정하지 않은 무질서한 파형
+  look_for:
+  - QRS·T 를 구별할 수 없고 진폭·주기가 제각각
+  - 등전위선 없이 이어지는 파형
+  label: '「Ventricular fibrillation recorded on telemetry and implantable cardioverter-defibrillator (ICD) imaging. (A) Limb-lead electrocardiogram captured during an episode of ventricular fibrillation. (B) Post-procedural imaging showing the implanted ICD.」 — Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Frontiers in Physiology'
+  doi: 10.3389/fphys.2026.1808973
+  credit: 'Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13303025/
+  asset: PMC-PMC13303025_Figure3
+  privacy_check: 심전도 — 환자 정보 문자 없음
+  crop: 0,0,322,362
 ---
 
 ## 정의

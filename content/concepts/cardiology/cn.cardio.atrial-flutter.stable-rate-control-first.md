@@ -4,8 +4,8 @@ type: concept
 topic: Cardiology
 see_also: [Emergency Medicine]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h250            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -137,6 +137,25 @@ variants:
     answer: "B"
     explanation: "The deciding clues are unchanged: stable hemodynamics, sawtooth flutter waves with 2:1 conduction, and an onset that cannot be dated within 48 hours. Rate control with a beta-blocker or nondihydropyridine calcium channel blocker comes first, and anticoagulation must be addressed before any rhythm-control attempt [[harrison-21: 250장 p.1900]]. Adenosine cannot terminate a macroreentrant atrial circuit; cardioversion or pharmacologic conversion without anticoagulation risks embolic stroke; ablation is an elective option for recurrent flutter, not an emergency first step."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/ptbxl-00449.png
+  kind: ecg
+  at: 기전에서 소견으로
+  shows: 심방조동 — 규칙적인 좁은 QRS 빈맥과 하벽 유도의 조동파
+  look_for:
+  - II·III·aVF 에서 QRS 사이 기저선이 톱니처럼 오르내린다(F파)
+  - 심실 박동은 약 150회/분으로 규칙적 — 2:1 전도를 먼저 의심
+  label: atrial flutter (SCP AFLT, 가능도 100)
+  label_basis: dataset_expert
+  reference: 심장내과 전문의의 SCP-ECG 판독을 두 번째 전문의가 검증 — 해당 진술의 가능도 100 인 기록만
+  paper: Wagner P 외. PTB-XL, a large publicly available electrocardiography dataset. Sci Data 2020;7:154
+  doi: 10.1038/s41597-020-0495-6
+  credit: PTB-XL ECG dataset v1.0.3 (PhysioNet, CC BY 4.0) · record 449
+  license: Creative Commons Attribution 4.0 International
+  url: https://physionet.org/content/ptb-xl/1.0.3/records500/00000/#files-panel
+  asset: PTBXL-00449
+  paper_cited_by: 1213
 ---
 
 ## 정의

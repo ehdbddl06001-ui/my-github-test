@@ -4,8 +4,8 @@ type: concept
 topic: Hematology-Oncology
 see_also: [Pathology, Urology]
 date: 2026-09-25
-updated: 2026-09-25
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h88             # 해리슨 21판 88장 Testicular Cancer(혈액종양내과 책)
 confidence: medium
 review_status: unreviewed
@@ -168,6 +168,26 @@ variants:
     answer: "C"
     explanation: "Age, side, how the mass was found, and the order of information changed, but the decisive clues did not: the tumor is the unstained population of uniform clear cells in sheets, and the CD3-positive cells are small reactive T lymphocytes along the septa — the host response of seminoma [[?robbins-10]]. A normal AFP is expected, because seminomas never secrete AFP, and a slight hCG rise comes from syncytiotrophoblastic cells [[harrison-21: 88장 p.690]]. A T-cell lymphoma would show large atypical CD3-positive tumor cells rather than small septal lymphocytes around a CD3-negative tumor; choriocarcinoma has very high hCG, and yolk sac tumor raises AFP."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/hpa-cd3e_1299_a_1_5.jpg
+  kind: histology
+  at: 기전에서 소견으로
+  shows: 정상피종 CD3 면역염색 — 종양 사이 T 림프구만 갈색
+  look_for:
+  - 크고 둥근 종양세포는 음성(파란 핵)
+  - 가는 격막을 따라 모인 작은 갈색 세포 = T 림프구
+  label: Testis cancer(표본 진단 Seminoma, NOS), CD3E 면역조직화학
+  label_basis: dataset_expert
+  reference: 조직 종류·표본 진단 = 표본 기록(병리의사 SNOMED 주석), 세포별 염색 강도 = HPA 병리의사 주석(이 항체·조직의 요약 — 사진 한 장 단위가 아님)
+  paper: Uhlén M 외. Tissue-based map of the human proteome. Science 2015;347:1260419
+  doi: 10.1126/science.1260419
+  credit: Human Protein Atlas, CD3E / Testis cancer (CC BY 4.0), https://images.proteinatlas.org/10/1299_A_1_5.jpg
+  license: Creative Commons Attribution 4.0 International
+  url: https://www.proteinatlas.org/ENSG00000198851-CD3E/cancer/testis+cancer
+  asset: HPA-CD3E_1299_A_1_5
+  paper_cited_by: 14435
+  from_question: imaging-2026-0112
 ---
 
 ## 정의

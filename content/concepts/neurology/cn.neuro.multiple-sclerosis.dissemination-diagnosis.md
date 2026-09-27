@@ -4,8 +4,8 @@ type: concept
 topic: Neurology
 see_also: [Ophthalmology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-27
+version: 2
 outline: h444            # 기본틀 슬롯 — 해리슨 21판 444장 Multiple Sclerosis
 confidence: medium
 review_status: unreviewed
@@ -158,6 +158,25 @@ variants:
     answer: "C"
     explanation: "핵간안근마비(내측세로다발 병변)와 과거 시신경염, 반사 항진은 중추신경 병변이다. 뇌실주위·천막하(뇌교) 두 부위에 병변이 있어 공간적 파종을, 증강·비증강 병변의 동시 존재로 시간적 파종을 보인다 — 다발경화증이다. 환자의 성별·증상 종류가 달라도 결정 단서(중추 병변의 시간·공간 파종)는 같다."
     kind: application
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13354747_figure1.jpg
+  kind: mri
+  at: 기전에서 소견으로
+  shows: 다발경화증 FLAIR — 여러 부위에 흩어진 백질 고신호 병변
+  look_for:
+  - 뇌실 주위·피질 가까이의 고신호 병변 여러 개 — 공간적 다발성
+  - 종괴 효과가 없는 병변
+  label: '「Brain MRI. Sagittal (A and B) and axial (C and D) fluid‐attenuated inversion recovery (FLAIR) sequences reveal multiple white matter non‐space‐occupying hyperintensities distributed across various regions, including the periventricular, subcortical and juxtacortical regions, brainstem and the cerebellum. The morphological appearance of these hyperintensities, for example, the “Dawson finger” appearance of the periventricular lesions, is consistent with multiple sclerosis.」 — Multiple Sclerosis in a Person With Hirschprung''s Disease: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Multiple Sclerosis in a Person With Hirschprung''s Disease: A Case Report. Clinical Case Reports'
+  doi: 10.1002/ccr3.72984
+  credit: 'Multiple Sclerosis in a Person With Hirschprung''s Disease: A Case Report. Clin Case Rep. 2026 Jul 10;14(7):e72984. doi: 10.1002/ccr3.72984 (CC BY) — FIGURE 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13354747/
+  asset: PMC-PMC13354747_FIGURE1
+  privacy_check: MRI — 식별 문자 없음
 ---
 
 ## 정의

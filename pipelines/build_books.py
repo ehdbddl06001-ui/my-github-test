@@ -58,6 +58,12 @@ MM_PX = 96 / 25.4
 DIAGRAM_MIN_SCALE = 0.78          # 13px 노드 글자 → 약 7.6pt 이상
 DIAGRAM_MAX_SCALE = 0.85          # 이보다 키우지 않는다 — 글자는 약 8.3pt 로 충분하고, 도식이 짧을수록 단 사이 빈 공간이 줄어든다
 CAPTION_PX = 36
+# 그림(2026-09-27) — 한 단 그림은 「그림 왼쪽 · 설명 오른쪽」, 심전도는 두 단 전체(12유도는 폭이 있어야 읽힌다).
+# 크기 상한은 단 높이(189 mm)의 약 35 % — 그림이 단 끝에 못 들어가 다음 단으로 넘어가도 빈 공간이 30 % 기준을 넘지 않게.
+FIG_COL_BOX = (78.0, 66.0)        # 한 단 그림 최대 폭·높이(mm)
+FIG_SPAN_H = 108.0                # 두 단 전체 그림(심전도) 높이(mm)
+FIG_MIN = {"column": (38.0, 30.0), "full": (150.0, 80.0)}    # 인쇄 뒤 이보다 작으면 읽기 어렵다(검증)
+FIG_BASIS = {"dataset_expert": "전문가 판정 데이터셋 라벨", "published_figure": "동료 심사 논문의 그림 설명"}
 
 
 def now_kst() -> datetime:
@@ -292,6 +298,16 @@ figure.dia{margin:1.6mm 0 1.6mm; break-inside:avoid; text-align:center}
 figure.dia figcaption{font-weight:700; font-size:10pt; text-align:left; margin-bottom:0.8mm}
 figure.dia .svgw{margin:0 auto}
 figure.dia .svgw svg{width:100%%; height:100%%}
+figure.fig{margin:1.6mm 0 2.2mm; break-inside:avoid; display:flex; gap:2.6mm; align-items:flex-start;
+  border-top:0.5pt solid #c8d0dc; border-bottom:0.5pt solid #c8d0dc; padding:1.4mm 0}
+figure.fig img{display:block; flex:0 0 auto; border:0.4pt solid #aab5c3; background:#fff}
+figure.fig figcaption{flex:1 1 auto; font-size:8.8pt; line-height:1.32; min-width:0}
+figure.fig .ft{font-weight:700; font-size:9.6pt; color:#0b3d91; margin-bottom:0.6mm}
+figure.fig ul{margin:0.4mm 0 0.8mm; padding-left:3.8mm}
+figure.fig li{margin:0 0 0.3mm}
+figure.fig .fl{margin:0.4mm 0}
+figure.fig .fl b{color:#35506e}
+figure.fig .fc{font-size:7.6pt; color:#4a5566; overflow-wrap:anywhere}
 .dnotes{font-size:9.8pt; margin:0 0 2mm}
 .dnotes h4{margin-top:0}
 h4.cont{color:#0b3d91; font-size:11pt}
@@ -426,11 +442,45 @@ def diagram_html(c: dict, anchor: str, force_full: bool = False) -> tuple[str, d
     return h, fit
 
 
+def figure_html(f: dict) -> tuple[str, str, dict]:
+    """(배치 종류 flow|span, HTML, 검증 정보). 그림 크기는 원본 가로세로 비를 지키며 상자에 맞춘다."""
+    from PIL import Image
+    path = ROOT / str(f.get("file", ""))
+    with Image.open(path) as im:
+        w, h = im.size
+    ar = w / h if h else 1.0
+    if f.get("kind") in ("ecg", "ctg") and w >= 1200:   # 가로로 긴 선 그림 — 두 단 전체(해상도가 받쳐 줄 때만 — 작은 그림을 늘리면 흐리다)
+        place = "full"
+        hh = FIG_SPAN_H
+        ww = min(hh * ar, (PAGE["w"] - PAGE["ml"] - PAGE["mr"]) * 0.66)
+        hh = ww / ar
+    else:
+        place = "column"
+        ww, hh = FIG_COL_BOX
+        if ww / hh > ar:
+            ww = hh * ar
+        else:
+            hh = ww / ar
+    look = "".join(f"<li>{esc(x)}</li>" for x in f.get("look_for") or [])
+    cited = f" · 피인용 {f['paper_cited_by']}회" if f.get("paper_cited_by") else ""
+    paper = f" · {esc(f.get('paper'))}{cited}" if f.get("paper") else ""
+    cap = (f'<div class="ft">[그림] {esc(f.get("shows"))}</div>'
+           + (f"<ul>{look}</ul>" if look else "")
+           + f'<div class="fl"><b>데이터 라벨</b> {esc(f.get("label"))}</div>'
+           + f'<div class="fc">라벨 근거: {esc(FIG_BASIS.get(f.get("label_basis"), f.get("label_basis")))} — {esc(f.get("reference"))}{paper}'
+           + f' · 출처 {esc(f.get("credit"))} · {esc(f.get("license"))} · 「보는 곳」은 검토 전 설명</div>')
+    cls = "fig span" if place == "full" else "fig"
+    html_ = (f'<figure class="{cls}"><img src="{path.resolve().as_uri()}" alt="{esc(f.get("shows"))}" '
+             f'style="width:{ww:.1f}mm;height:{hh:.1f}mm"><figcaption>{cap}</figcaption></figure>')
+    return ("span" if place == "full" else "flow"), html_, {"id": f.get("id"), "place": place, "w": ww, "h": hh,
+                                                              "probe": f"[그림] {str(f.get('shows') or '')}"[:14]}
+
+
 def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int | str | None = None,
-              crit_end: bool = False) -> tuple[str, dict]:
+              crit_end: bool = False, fig_pos: dict | None = None) -> tuple[str, dict]:
     """(HTML, 검증용 정보). 학습 활동 기록·문항 번호·내부 ID 는 싣지 않는다."""
     c, a = u.concept, u.anchor
-    info: dict = {"diagram": None, "sections": []}
+    info: dict = {"diagram": None, "sections": [], "figures": [], "fig_choices": {}, "fig_at": {}}
     if not c:            # 정리본 준비 중 — 문항 해설에서 옮긴 요약(검토 전)
         body = []
         for qid in u.questions:
@@ -503,19 +553,40 @@ def unit_html(u: Unit, cfg: dict, questions: dict, book_title: str, dia_at: int 
         dia_at = dia_default if dia_default in choices else (choices[-1] if choices else len(blocks))
     info["dia_at"], info["dia_default"], info["dia_choices"] = dia_at, dia_default, choices
     dh, fit = diagram_html(c, a, force_full)
+    sec_of = []
+    cur = ""
+    for kind, html_ in blocks:
+        if kind == "head":
+            cur = re.sub(r"<[^>]+>", "", html_)
+        sec_of.append(cur)
+    inserts: dict[int, list[tuple[str, str]]] = {}      # k → blocks[k] 앞(= 앞의 k 블록 뒤)에 넣을 것
+    # 그림(2026-09-27): 기본 자리는 `at` 절의 첫 문단 뒤 — 제목과 첫 설명을 읽고 바로 그림을 본다. 배치 탐색이 같은 절 안에서 옮긴다.
+    for f in c.get("figures") or []:
+        if not isinstance(f, dict) or not f.get("file") or not (ROOT / str(f["file"])).exists():
+            continue
+        kind_, fh, finfo = figure_html(f)
+        at_title = str(f.get("at") or "")
+        idx = [k for k in range(len(blocks)) if sec_of[k] == at_title] or [k for k in range(len(blocks)) if sec_of[k]]
+        flows = [k + 1 for k in idx if blocks[k][0] != "head"]
+        fchoices = flows or [max(idx) + 1 if idx else len(blocks)]
+        want = (fig_pos or {}).get(f"{a}#fig:{f.get('id')}")
+        pos = want if want in fchoices else fchoices[0]
+        info["fig_choices"][f.get("id")], info["fig_at"][f.get("id")] = fchoices, pos
+        info["figures"].append(finfo)
+        inserts.setdefault(pos, []).append((kind_, fh))
     if dh:
         # 도식이 한 절의 중간에 끼면, 도식 뒤에서 그 절이 이어진다는 것을 작은 제목으로 알린다(읽는 순서가 끊겨 보이지 않게)
-        sec_of = []
-        cur = ""
-        for kind, html_ in blocks:
-            if kind == "head":
-                cur = re.sub(r"<[^>]+>", "", html_)
-            sec_of.append(cur)
+        items = [("flow" if fit and fit["place"] == "column" else "span", dh)]
         if 0 < dia_at < len(blocks) and blocks[dia_at][0] == "flow" and sec_of[dia_at - 1] == sec_of[dia_at] and sec_of[dia_at]:
-            blocks.insert(dia_at, ("flow", f'<h4 class="cont">{esc(sec_of[dia_at])} — 이어서</h4>'))
-        blocks.insert(dia_at, ("flow" if fit and fit["place"] == "column" else "span", dh))
+            items.append(("flow", f'<h4 class="cont">{esc(sec_of[dia_at])} — 이어서</h4>'))
+        inserts.setdefault(dia_at, []).extend(items)
         info["diagram"] = fit
-    h += [b for _, b in blocks]
+    merged: list[tuple[str, str]] = []
+    for k in range(len(blocks) + 1):
+        merged += inserts.get(k, [])
+        if k < len(blocks):
+            merged.append(blocks[k])
+    h += [b for _, b in merged]
     # 근거
     nums = source_numbers(c)
     h.append("<h3>근거</h3><ol class=\"refs\">")
@@ -542,7 +613,7 @@ def book_html(title: str, units: list[Unit], cfg: dict, questions: dict, meta: d
     bodies = []
     for u in units:
         uh, info = unit_html(u, cfg, questions, title, (dia_pos or {}).get(u.anchor),
-                             bool((dia_pos or {}).get(u.anchor + "#crit_end")))
+                             bool((dia_pos or {}).get(u.anchor + "#crit_end")), dia_pos)
         bodies.append(uh); infos[u.anchor] = info
     pg = lambda k: str(pagemap.get(k, "")) if pagemap else "…"
     toc, grp = "", ""
@@ -675,6 +746,8 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
         items = [(sp["bbox"], sp) for sp in spans] + [((d["rect"].x0, d["rect"].y0, d["rect"].x1, d["rect"].y1), None)
                                                       for d in p.get_drawings() if d.get("rect") is not None
                                                       and not (d["rect"].width < 3 and abs((d["rect"].x0 + d["rect"].x1) / 2 - mid) < 6)]
+        # 그림(래스터)도 내용이다 — 세지 않으면 그림 자리를 빈 공간으로 오판한다(2026-09-27)
+        items += [(tuple(im["bbox"]), None) for im in p.get_image_info()]
         for (x0, y0, x1, y1), _ in items:
             if y1 <= top - 1 or y0 >= bottom + 1:
                 continue
@@ -716,6 +789,17 @@ def validate_pdf(pdf_path: Path, title: str, units: list[Unit], pm: dict[str, in
                          and (0 if (o["bbox"][0] + o["bbox"][2]) / 2 < mid else 1) == c]
                 if not below:
                     errs.append(f"{p.number + 1}쪽 고립된 제목: {sp['text'][:20]!r}")
+    pt = 72 / 25.4
+    for u in units:
+        for fi in infos.get(u.anchor, {}).get("figures") or []:
+            pages = [i for i, t in enumerate(texts) if fi["probe"] in t]
+            if not pages:
+                errs.append(f"그림 설명을 찾지 못했다: {u.title} {fi['probe']}")
+                continue
+            imgs = [im for im in doc[pages[0]].get_image_info()]
+            mw, mh = FIG_MIN[fi["place"]]
+            if not any((im["bbox"][2] - im["bbox"][0]) >= mw * pt * 0.97 and (im["bbox"][3] - im["bbox"][1]) >= mh * pt * 0.97 for im in imgs):
+                errs.append(f"그림이 설명과 같은 쪽에 읽을 크기로 없다({pages[0] + 1}쪽): {u.title} {fi['probe']}")
     for u in units:
         fit = infos.get(u.anchor, {}).get("diagram")
         if not fit:
@@ -859,6 +943,21 @@ def build(cfg: dict, events: list[dict], state_dir: Path, out_dir: Path, force: 
                         best = (len(layout_err(errs)), npg, dict(dia_pos))
                         for u in units:
                             info = infos.get(u.anchor) or {}
+                            # 그림(2026-09-27): 같은 절 안의 다른 문단 뒤로 옮겨 본다 — 뒤쪽부터(그림이 너무 일찍 와서 단이 비는 일이 많다)
+                            for fid, fch in (info.get("fig_choices") or {}).items():
+                                key = f"{u.anchor}#fig:{fid}"
+                                for pos in sorted((q for q in fch if q != info["fig_at"].get(fid)), reverse=True)[:6]:
+                                    if not layout_err(errs):
+                                        break
+                                    tried += 1
+                                    trial = dict(best[2], **{key: pos})
+                                    e2, n2, p2, i2, g2 = render_once(trial, passes=1)
+                                    score = (len(layout_err(e2)), g2, trial)
+                                    if score[:2] < best[:2]:
+                                        best = score
+                                    if not layout_err(e2):
+                                        errs = e2
+                                        break
                             if not info.get("diagram"):
                                 continue
                             # 기본 위치(치료 절 뒤)에 가까운 곳부터 — 흐름 도식이 관련 본문에서 멀어지지 않게

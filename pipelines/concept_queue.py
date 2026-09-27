@@ -22,6 +22,11 @@
            아직 옮기지 않은 정리본. 새 글을 쓰는 게 아니라 **있는 내용을 판형 2 순서·예산으로 다시 배치**한다
            (결론·시험 단서·왜 → 틀린 보기별 pitfalls → 표·도식 → 목표에 맞춘 본문). 오답이 걸린 목표부터,
            그다음 오래된 것부터. note·link·touch 가 비었을 때 gap 보다 먼저 한다.
+  figure — 정리본 그림(2026-09-27 사용자 요청 — 확실한 라벨의 심전도·조직·영상 사진). 세 갈래, 이 순서로:
+           question = 이 목표의 영상 문항 그림이 그림 기준(concept_figures.eligibility)을 통과하는데 아직 안 붙었다
+           attach   = figures_wanted 로 요청한 그림이 풀에 들어왔다(exam-builder 아침 수확 `opendata demand`)
+           assess   = 그림을 붙일지·요청할지·필요 없는지 아직 판단하지 않았다(figures/figures_wanted/figures_none 모두 없음)
+           풀(exam-builder)을 못 찾으면 assess 만 낸다.
   gap    — 오답과 무관하게 **기본틀(content/outline/subjects.yaml)에서 아직 비어 있는 자리**.
            오답 큐가 비었을 때 커리큘럼 순서대로 한 칸씩 채우라고 내놓는다(2026-09-21 추가).
            이미 단원이 있는 책만 대상으로 하고, 그 책의 해리슨 서술 순서에서 앞쪽 빈 슬롯부터 준다.
@@ -121,6 +126,7 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
             e["wrongs"] += s.wrongs
             e["priority"] = max(e["priority"], s.priority)
     gaps = _gaps(concepts, questions, S)
+    figures = _figures(concepts, questions, S)
     restyles = _restyles(concepts, S)
     notes.sort(key=lambda x: (-x["priority"], -x["wrongs"], x["objective"]))
     link_list = sorted(links.values(), key=lambda x: (-x["priority"], -x["wrongs"], x["topic"], x["subtopic"]))
@@ -128,10 +134,10 @@ def build(events: list[dict], wrongnote: dict[str, dict] | None = None) -> dict:
     seen_d: set[str] = set()
     dists = [d for d in dists if not (d["key"] in seen_d or seen_d.add(d["key"]))]
     return {"generated": ll.kst_day(""), "note": notes, "link": link_list, "touch": touches,
-            "variant": variants, "dist": dists, "restyle": restyles, "gap": gaps,
+            "variant": variants, "dist": dists, "restyle": restyles, "figure": figures, "gap": gaps,
             "counts": {"note": len(notes), "link": len(link_list), "touch": len(touches), "gap": len(gaps),
                        "restyle": len(restyles),
-                       "variant": len(variants), "dist": len(dists),
+                       "variant": len(variants), "dist": len(dists), "figure": len(figures),
                        "wrong_objectives_with_note": sum(1 for s in S.values() if s.objective and s.wrongs and s.objective in concepts),
                        "from_wrongnote": len(from_note)}}
 
@@ -207,6 +213,35 @@ def _restyles(concepts: dict, S: dict) -> list[dict]:
     return sorted(out, key=lambda x: (-x["priority"], x["objective"]))
 
 
+def _figures(concepts: dict, questions: dict, S: dict) -> list[dict]:
+    import concept_figures as cf
+    pool = cf.load_pool()
+    prio = {s.objective: s.priority for s in S.values() if s.objective}
+    out: list[dict] = []
+    for cid, c in sorted(concepts.items()):
+        have = {str(f.get("asset")) for f in c.get("figures") or [] if isinstance(f, dict)}
+        full = len(have) >= cf.MAX_FIGURES
+        if pool and not full:
+            for qid, q in sorted(questions.items()):
+                if q.get("objective") != cid or q.get("type") != "imaging":
+                    continue
+                asset = str((q.get("attribution") or {}).get("asset_id") or "")
+                r = pool.get(asset)
+                if r and asset not in have and not cf.eligibility(r):
+                    out.append({"kind": "question", "concept": cid, "qid": qid, "asset": asset,
+                                "label": cf.dataset_label(r), "priority": prio.get(cid, 0)})
+            rej = {str(x.get("asset")) for x in c.get("figures_rejected") or [] if isinstance(x, dict)}
+            for w in c.get("figures_wanted") or []:
+                hits = [x for x in cf.wanted_fulfilled(w, pool, cid, rej) if x not in have]
+                if hits:
+                    out.append({"kind": "attach", "concept": cid, "request": w, "assets": hits[:3], "priority": prio.get(cid, 0)})
+        if not (c.get("figures") or c.get("figures_wanted") or c.get("figures_none")):
+            out.append({"kind": "assess", "concept": cid, "title": str(c.get("title", "")), "priority": prio.get(cid, 0)})
+    rank = {"question": 0, "attach": 1, "assess": 2}
+    out.sort(key=lambda x: (rank[x["kind"]], -x["priority"], x["concept"]))
+    return out
+
+
 def _gaps(concepts: dict, questions: dict, S: dict) -> list[dict]:
     """기본틀에서 빈 슬롯 — 이미 단원이 있는 책만, 그 책의 순서대로 앞에서부터."""
     import yaml
@@ -251,18 +286,18 @@ def main(argv: list[str]) -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     note, link, touch, var, dist, gap = q["note"], q["link"], q["touch"], q["variant"], q["dist"], q["gap"]
-    rs = q["restyle"]
+    rs, fig = q["restyle"], q["figure"]
     if a.limit:
-        note, link, touch, var, dist, gap, rs = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs))
+        note, link, touch, var, dist, gap, rs, fig = (x[:a.limit] for x in (note, link, touch, var, dist, gap, rs, fig))
     if a.json:
-        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "restyle": rs, "gap": gap,
-                          "counts": q["counts"]}, ensure_ascii=False, indent=1))
+        print(json.dumps({"note": note, "link": link, "touch": touch, "variant": var, "dist": dist, "restyle": rs, "figure": fig,
+                          "gap": gap, "counts": q["counts"]}, ensure_ascii=False, indent=1))
         return 0
     if not events and not q["counts"]["from_wrongnote"]:
         print("학습 기록이 없다 — 앱의 「학습 기록 내보내기」가 드라이브 수신함에 들어왔는지 본다(동기화 미설정이면 정상).")
     print(f"정리본 대기(note) {q['counts']['note']}건 · 목표 연결 대기(link) {q['counts']['link']}건 · "
           f"손질 대기(touch) {q['counts']['touch']}건 · 변형 대기(variant) {q['counts']['variant']}건 · "
-          f"오답 보기 설명 대기(dist) {q['counts']['dist']}건 · "
+          f"오답 보기 설명 대기(dist) {q['counts']['dist']}건 · 그림 대기(figure) {q['counts']['figure']}건 · "
           f"이미 정리본이 있는 오답 목표 {q['counts']['wrong_objectives_with_note']}개 · "
           f"오답 목록에서 채운 오답 {q['counts']['from_wrongnote']}건")
     for n in note:
@@ -275,6 +310,13 @@ def main(argv: list[str]) -> int:
         print(f"  [variant] {v['objective']}  문항 {v['qid']} 변형 {v['need']}개 더 · 예정일 {v['due'] or '-'} · 씨앗 {v['seed']}")
     for d in dist:
         print(f"  [dist] {d['qid']} 보기 {d['letter']} 「{str(d['chosen'])[:30]}」 설명 없음 · {d['path']}")
+    for f in fig:
+        if f["kind"] == "question":
+            print(f"  [figure] {f['concept']}  영상 문항 {f['qid']} 의 그림 {f['asset']} 을 붙인다 — 라벨 {str(f['label'])[:50]}")
+        elif f["kind"] == "attach":
+            print(f"  [figure] {f['concept']}  요청한 그림이 풀에 들어옴 {', '.join(f['assets'])} — {f['request'].get('shows', '')}")
+        else:
+            print(f"  [figure] {f['concept']}  그림 판단 필요(붙임·요청·불필요) — {f['title'][:40]}")
     if not note and not link and not touch:
         for r in rs:
             print(f"  [restyle] {r['objective']}  {r['title'][:40]}" + (f" · 오답 우선순위 {r['priority']}" if r["priority"] else "")

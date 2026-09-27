@@ -92,6 +92,7 @@ sources:
     checked_at: 2026-09-23
     checked: "서지만 — 이 컨테이너에서 PubMed·원문 접근이 막혀 대조하지 못함(이학적 진단 기준 네 가지·영상 적응 서술은 미대조. 서지 식별자도 접속해 확인하지 못함 — 검토 항목)"
     verified: citation
+figures_none: 진찰 수기(Thompson 검사)로 판단 — 정지 사진으로 보여 줄 소견이 없다
 ---
 
 ## 정의
