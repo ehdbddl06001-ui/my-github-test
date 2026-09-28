@@ -67367,7 +67367,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-0968"
+   "kmle-2026-0968",
+   "usmle-2026-0180"
   ],
   "hasErrors": false
  },

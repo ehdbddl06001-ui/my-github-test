@@ -2,6 +2,1597 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0165",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "피부 — 허벅지의 붉은 구진, 더모스코피 판독",
+  "type": "피부 — 허벅지의 붉은 구진, 더모스코피 판독",
+  "modality": "DERMOSCOPY",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-28",
+  "vignette": "A 50-year-old woman comes to the physician because of a spot on her thigh that she first noticed 1 year ago. It has not changed in size, but it bled once after she scratched it. She has no personal or family history of skin cancer. She takes no medications. Her pulse is 72/min and blood pressure is 124/78 mm Hg. Examination shows a small, soft, dark red-purple papule that partially blanches with pressure. There is no regional lymphadenopathy. A dermoscopic image of the lesion is shown.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Dermatofibroma",
+   "Seborrheic keratosis",
+   "Cherry angioma",
+   "Nodular melanoma",
+   "Pyogenic granuloma"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Dermoscopy shows multiple sharply demarcated, round to oval red to red-purple compartments (lacunae or lagoons) clustered together, with a central bluish-white area and no pigment network. Red lacunae represent dilated vascular spaces in the upper dermis and are the diagnostic feature of a cherry angioma (capillary hemangioma of adults). The history of a stable, soft, partly blanching red-purple papule fits; the ISIC record is histopathologically confirmed hemangioma.\n- 원리: <b>Dermoscopy colors map to structures</b>: melanin gives black, brown, or blue-gray; <b>blood gives red, purple, or blue-black</b>.<br> A <b>hemangioma</b> (cherry angioma in adults) is a benign proliferation of dilated capillaries in the papillary dermis. Each dilated vascular space, walled off by fibrous septa, appears as a <b>sharply demarcated round or oval red to purple \"lacuna\"</b>. The septa make the lacunae look separated, and thrombosed spaces turn dark purple to black. A <b>whitish or bluish-white veil</b> can appear from fibrosis or overlying hyperkeratosis.<br> <b>Why this is not melanoma</b>: a blue-white veil in melanoma sits over a melanocytic lesion with pigment network, streaks, or irregular dots and globules of brown/black pigment. Here the colored compartments are red-purple lacunae and there is no pigment network — the lesion is vascular, not melanocytic. Partial blanching confirms blood-filled spaces.<br> <b>Pyogenic granuloma</b>, also vascular, grows rapidly over weeks, is friable, and on dermoscopy shows a homogeneous red area with a white collarette and white \"rail\" lines rather than lacunae.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Cherry angioma (answer)</th><th>Nodular melanoma (closest rival)</th></tr></thead><tbody> <tr><td>Key structure</td><td><b>Red to purple lacunae</b></td><td>Blue-black, irregular vessels, blue-white veil</td></tr> <tr><td>Nature</td><td>Vascular — partly blanches</td><td>Melanocytic — does not blanch</td></tr> <tr><td>Course</td><td><b>Stable for 1 year</b></td><td>Rapid growth over months</td></tr> <tr><td>This lesion</td><td><b>Clustered red-purple lacunae, central bluish-white area</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is nodular melanoma</b> because of the dark color and bluish-white area. The dividing line is <b>lacunae (blood) versus pigment structures (melanin)</b>, together with stability over a year.\n- 오답 이유:\n  - (A) Dermatofibroma is a firm papule with a central white scar-like patch and a fine peripheral pigment network, and it dimples when pinched. It would be correct for a firm brown papule on the leg with a positive dimple sign.\n  - (B) Seborrheic keratosis is a stuck-on, warty, brown lesion with milia-like cysts and comedo-like openings. It would be correct for a waxy brown plaque on the trunk of an older adult.\n  - (D) Nodular melanoma can be red, blue, or black and may show a blue-white veil, but it grows rapidly and shows irregular polymorphous vessels and melanin structures, not sharply defined lacunae. It would be correct for a firm, enlarging, non-blanching blue-black nodule appearing over months.\n  - (E) Pyogenic granuloma is a vascular lesion that grows rapidly over weeks, bleeds easily, and shows a homogeneous red area with a white collarette on dermoscopy. It would be correct for a friable red papule on a finger that appeared 3 weeks ago.\n- 함정: A bluish-white area does not make a lesion melanocytic — red to purple lacunae without a pigment network mean a vascular lesion.\n- 학습목표: 더모스코피에서 경계가 뚜렷한 적색~적자색 소엽(열공)을 혈관 증식 병변(혈관종)의 소견으로 읽고, 청백색 구역이 있어도 흑색종과 구분한다\n- 근거·출처: Zaballos P et al. Dermoscopy of solitary angiokeratomas and hemangiomas. Arch Dermatol 2007 (vascular lacunae) · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — vascular neoplasms; dermoscopy · ISIC Archive ISIC_0001129 — histopathology: hemangioma (teacher-only) · 작성자 판독(2026-09-29): 적색~적자색 소엽(열공) 집합, 중심 청백색 구역, 색소망 없음\n\n## 출처\n- ISIC Archive ISIC_0001129 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Dermoscopy shows multiple sharply demarcated, round to oval red to red-purple compartments (lacunae or lagoons) clustered together, with a central bluish-white area and no pigment network. Red lacunae represent dilated vascular spaces in the upper dermis and are the diagnostic feature of a cherry angioma (capillary hemangioma of adults). The history of a stable, soft, partly blanching red-purple papule fits; the ISIC record is histopathologically confirmed hemangioma."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Dermoscopy colors map to structures</b>: melanin gives black, brown, or blue-gray; <b>blood gives red, purple, or blue-black</b>.<br> A <b>hemangioma</b> (cherry angioma in adults) is a benign proliferation of dilated capillaries in the papillary dermis. Each dilated vascular space, walled off by fibrous septa, appears as a <b>sharply demarcated round or oval red to purple \"lacuna\"</b>. The septa make the lacunae look separated, and thrombosed spaces turn dark purple to black. A <b>whitish or bluish-white veil</b> can appear from fibrosis or overlying hyperkeratosis.<br> <b>Why this is not melanoma</b>: a blue-white veil in melanoma sits over a melanocytic lesion with pigment network, streaks, or irregular dots and globules of brown/black pigment. Here the colored compartments are red-purple lacunae and there is no pigment network — the lesion is vascular, not melanocytic. Partial blanching confirms blood-filled spaces.<br> <b>Pyogenic granuloma</b>, also vascular, grows rapidly over weeks, is friable, and on dermoscopy shows a homogeneous red area with a white collarette and white \"rail\" lines rather than lacunae."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Cherry angioma (answer)</th><th>Nodular melanoma (closest rival)</th></tr></thead><tbody> <tr><td>Key structure</td><td><b>Red to purple lacunae</b></td><td>Blue-black, irregular vessels, blue-white veil</td></tr> <tr><td>Nature</td><td>Vascular — partly blanches</td><td>Melanocytic — does not blanch</td></tr> <tr><td>Course</td><td><b>Stable for 1 year</b></td><td>Rapid growth over months</td></tr> <tr><td>This lesion</td><td><b>Clustered red-purple lacunae, central bluish-white area</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is nodular melanoma</b> because of the dark color and bluish-white area. The dividing line is <b>lacunae (blood) versus pigment structures (melanin)</b>, together with stability over a year."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Dermatofibroma is a firm papule with a central white scar-like patch and a fine peripheral pigment network, and it dimples when pinched. It would be correct for a firm brown papule on the leg with a positive dimple sign.\n(B) Seborrheic keratosis is a stuck-on, warty, brown lesion with milia-like cysts and comedo-like openings. It would be correct for a waxy brown plaque on the trunk of an older adult.\n(D) Nodular melanoma can be red, blue, or black and may show a blue-white veil, but it grows rapidly and shows irregular polymorphous vessels and melanin structures, not sharply defined lacunae. It would be correct for a firm, enlarging, non-blanching blue-black nodule appearing over months.\n(E) Pyogenic granuloma is a vascular lesion that grows rapidly over weeks, bleeds easily, and shows a homogeneous red area with a white collarette on dermoscopy. It would be correct for a friable red papule on a finger that appeared 3 weeks ago."
+   },
+   {
+    "k": "함정",
+    "v": "A bluish-white area does not make a lesion melanocytic — red to purple lacunae without a pigment network mean a vascular lesion."
+   },
+   {
+    "k": "학습목표",
+    "v": "더모스코피에서 경계가 뚜렷한 적색~적자색 소엽(열공)을 혈관 증식 병변(혈관종)의 소견으로 읽고, 청백색 구역이 있어도 흑색종과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Zaballos P et al. Dermoscopy of solitary angiokeratomas and hemangiomas. Arch Dermatol 2007 (vascular lacunae) · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — vascular neoplasms; dermoscopy · ISIC Archive ISIC_0001129 — histopathology: hemangioma (teacher-only) · 작성자 판독(2026-09-29): 적색~적자색 소엽(열공) 집합, 중심 청백색 구역, 색소망 없음 ## 출처 ISIC Archive ISIC_0001129 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "경계가 뚜렷한 적색~적자색 열공이 모여 있고 색소망이 없으므로 혈관 병변인 혈관종이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "결절성 흑색종은 멜라닌 구조와 불규칙 혈관을 보이고 빠르게 자라는데, 이 병변은 혈액이 찬 열공이고 1년간 변하지 않았다",
+   "steps": 2,
+   "chain": [
+    "영상: 적색~적자색의 경계 뚜렷한 소엽(열공), 색소망 없음 → 혈관 병변",
+    "1년간 크기 불변·부분 압박 퇴색 + 열공 → 혈관종(흑색종·화농육아종 아님)"
+   ],
+   "key": [
+    {
+     "item": "영상: 경계가 뚜렷한 적색~적자색 소엽(열공)의 집합",
+     "why": "혈관종의 진단적 구조",
+     "also": []
+    },
+    {
+     "item": "partially blanches with pressure",
+     "why": "혈액이 찬 공간",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 중심 청백색 구역",
+     "why": "흑색종을 떠올리게 하지만 색소망이 없어 흑색종 가능성을 높이지 않는다",
+     "also": []
+    },
+    {
+     "item": "It has not changed in size",
+     "why": "결절성 흑색종·화농육아종처럼 빠르게 자라는 병변 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "it bled once after she scratched it",
+     "why": "혈관 병변은 긁으면 쉽게 피가 난다 — 악성의 근거가 아니다",
+     "also": []
+    },
+    {
+     "item": "There is no regional lymphadenopathy",
+     "why": "판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "더모스코피에서 적색~적자색 열공이 모여 있고 색소망이 없다. 1년간 변하지 않은 부분 퇴색 구진이므로 혈관종이며, 청백색 구역만으로 흑색종으로 읽지 않는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "3주 사이 빠르게 자라고 쉽게 피 나는 구진이 균일한 적색 구역과 흰 테두리를 보였다면 화농육아종이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0165.jpg",
+   "caption": "Dermoscopic photograph, unaltered apart from scaling (ISIC Archive, CC0 1.0; no cropping or color adjustment)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0001129",
+   "asset_id": "ISIC-ISIC_0001129",
+   "text": "ISIC Archive ISIC_0001129 (CC-0)"
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0164",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "피부 — 짙어진 다리 색소 반의 더모스코피",
+  "type": "피부 — 짙어진 다리 색소 반의 더모스코피",
+  "modality": "DERMOSCOPY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "25세 여자가 다리의 색소 반점이 최근 6개월 사이 짙어지고 모양이 변한 것 같다고 왔다. 가려움이나 출혈은 없다. 몸의 다른 점은 10개 미만이고 서로 비슷하게 생겼다. 피부암 가족력은 없고 20대 초반에 햇볕 화상을 여러 번 입었다. 병변은 편평하고 만져지는 결절은 없으며 주위 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다.",
+  "question": "이 병변을 절제생검해야 하는 근거가 되는 더모스코피 소견으로 가장 적절한 것은?",
+  "options": [
+   "규칙적인 그물 모양 색소망",
+   "다발성 우윳빛 낭종과 면포 모양 개구부",
+   "중심부 흰 반흔 모양 구역과 섬세한 가장자리 색소망",
+   "비대칭 색소 분포와 중심부 청회색 구조",
+   "대칭으로 배열된 경계 뚜렷한 갈색 소구체"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 사진에서 흑갈색 색소가 한쪽으로 치우쳐 비대칭이고, 가장자리에 불규칙한 돌출과 점이 있으며, 중심부에 청회색·흰색 구조가 있다. 두 축 이상의 비대칭과 청회색 구조(청백색 베일·퇴행 구조)는 흑색종의 경고 소견이고, 최근 변화까지 있으므로 전층 절제생검이 필요하다. 이 증례의 조직 결과는 양성 흑자였다 — 더모스코피로 흑색종을 배제할 수 없어 절제한 전형적인 경우다.\n- 원리: <b>더모스코피는 표피~진피 상부의 색소 위치를 색으로 보여 준다</b>. 멜라닌이 각질층·표피 상부에 있으면 검정, 표피 하부·진피-표피 경계면 갈색, <b>진피에 있으면 틴들 효과로 청회색</b>으로 보인다.<br> <b>청회색 구조가 경고인 이유</b>: 진피에 멜라닌이 있다는 뜻이다. 흑색종 세포가 진피로 침윤하거나(청백색 베일), 면역 반응으로 종양이 퇴행하며 대식세포가 멜라닌을 삼키면(청회색 후추 모양 점·흰 반흔 구역) 생긴다. 양성 모반에서도 청색 모반처럼 균일한 청색은 있지만, <b>비대칭 병변 안의 국소 청회색·흰색</b>은 흑색종을 시사한다.<br> <b>비대칭</b>은 세포 증식이 무질서하다는 표지다. 양성 모반은 색과 구조가 대칭으로 한 가지 패턴을 따른다. 흑색종 판정 알고리즘(ABCD 규칙·7점 체크리스트)은 비대칭·불규칙 줄무늬·불규칙 점/소구체·청백색 베일·퇴행 구조에 점수를 준다.<br> 더모스코피 특이도는 완벽하지 않아 이 증례처럼 흑자·이형성 모반도 이 소견을 보인다. 그래서 결론은 '흑색종 진단'이 아니라 <b>'배제할 수 없으니 전체를 떼어 조직으로 확인'</b>이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비대칭 + 청회색 구조(정답)</th><th>대칭 갈색 소구체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>의미</td><td><b>진피 멜라닌·무질서 증식 — 흑색종 경고</b></td><td>양성 소구체 모반(소아·청년)</td></tr> <tr><td>배열</td><td>한쪽으로 치우친 색·구조</td><td>같은 크기·색의 소구체가 고르게</td></tr> <tr><td>처치</td><td><b>절제생검</b></td><td>경과 관찰</td></tr> <tr><td>이 사진</td><td><b>치우친 흑갈색, 불규칙 가장자리 점, 중심 청회색·흰색</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 대칭 갈색 소구체</b>다. 이 사진에도 가장자리에 점이 있지만 크기·분포가 불규칙하다. 갈림길은 <b>대칭이냐</b>다.\n- 오답 이유:\n  - ① 규칙적인 그물 모양 색소망은 균일한 선과 구멍으로 된 양성 경계 모반의 전형이다. 이 사진에는 규칙적인 그물이 보이지 않는다. 병변 전체가 가늘고 고른 그물로 덮여 있었다면 양성 소견이 된다.\n  - ② 우윳빛 낭종과 면포 모양 개구부는 지루각화증의 소견이다. 이 병변은 편평하고 그런 구조가 없다. 중년 이후 몸통의 볼록한 '붙인 듯한' 병변이었다면 정답이 된다.\n  - ③ 중심부 흰 반흔 구역과 섬세한 가장자리 색소망은 피부섬유종의 전형이다(옆에서 누르면 들어가는 보조개 징후). 이 사진의 중심은 청회색이 섞여 있다. 단단한 구진이 보조개 징후를 보였다면 정답이 된다.\n  - ⑤ 경계가 뚜렷한 갈색 소구체가 대칭으로 고르게 배열되면 소아·청년의 양성 소구체 모반 패턴이다. 이 사진의 점은 크기가 제각각이고 한쪽에 몰려 있다. 같은 크기의 갈색 소구체가 병변 전체에 고르게 있었다면 경과 관찰 소견이 된다.\n- 함정: 더모스코피 경고 소견은 흑색종 '진단'이 아니라 '배제 불가 → 절제생검'의 근거다. 조직이 양성(흑자)으로 나와도 절제 판단은 옳았다.\n- 학습목표: 색소 병변의 더모스코피에서 비대칭 색소 분포와 청회색 구조를 흑색종 경고 소견으로 읽고 절제생검의 근거로 삼는다\n- 근거·출처: Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — dermoscopy; melanoma · ISIC Archive ISIC_0009986 — histopathology: lentigo NOS (teacher-only) · 작성자 판독(2026-09-29): 비대칭 흑갈색 반, 불규칙 가장자리 돌출·점, 중심 청회색·흰색 구조\n\n## 출처\n- ISIC Archive ISIC_0009986 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "사진에서 흑갈색 색소가 한쪽으로 치우쳐 비대칭이고, 가장자리에 불규칙한 돌출과 점이 있으며, 중심부에 청회색·흰색 구조가 있다. 두 축 이상의 비대칭과 청회색 구조(청백색 베일·퇴행 구조)는 흑색종의 경고 소견이고, 최근 변화까지 있으므로 전층 절제생검이 필요하다. 이 증례의 조직 결과는 양성 흑자였다 — 더모스코피로 흑색종을 배제할 수 없어 절제한 전형적인 경우다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>더모스코피는 표피~진피 상부의 색소 위치를 색으로 보여 준다</b>. 멜라닌이 각질층·표피 상부에 있으면 검정, 표피 하부·진피-표피 경계면 갈색, <b>진피에 있으면 틴들 효과로 청회색</b>으로 보인다.<br> <b>청회색 구조가 경고인 이유</b>: 진피에 멜라닌이 있다는 뜻이다. 흑색종 세포가 진피로 침윤하거나(청백색 베일), 면역 반응으로 종양이 퇴행하며 대식세포가 멜라닌을 삼키면(청회색 후추 모양 점·흰 반흔 구역) 생긴다. 양성 모반에서도 청색 모반처럼 균일한 청색은 있지만, <b>비대칭 병변 안의 국소 청회색·흰색</b>은 흑색종을 시사한다.<br> <b>비대칭</b>은 세포 증식이 무질서하다는 표지다. 양성 모반은 색과 구조가 대칭으로 한 가지 패턴을 따른다. 흑색종 판정 알고리즘(ABCD 규칙·7점 체크리스트)은 비대칭·불규칙 줄무늬·불규칙 점/소구체·청백색 베일·퇴행 구조에 점수를 준다.<br> 더모스코피 특이도는 완벽하지 않아 이 증례처럼 흑자·이형성 모반도 이 소견을 보인다. 그래서 결론은 '흑색종 진단'이 아니라 <b>'배제할 수 없으니 전체를 떼어 조직으로 확인'</b>이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비대칭 + 청회색 구조(정답)</th><th>대칭 갈색 소구체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>의미</td><td><b>진피 멜라닌·무질서 증식 — 흑색종 경고</b></td><td>양성 소구체 모반(소아·청년)</td></tr> <tr><td>배열</td><td>한쪽으로 치우친 색·구조</td><td>같은 크기·색의 소구체가 고르게</td></tr> <tr><td>처치</td><td><b>절제생검</b></td><td>경과 관찰</td></tr> <tr><td>이 사진</td><td><b>치우친 흑갈색, 불규칙 가장자리 점, 중심 청회색·흰색</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 대칭 갈색 소구체</b>다. 이 사진에도 가장자리에 점이 있지만 크기·분포가 불규칙하다. 갈림길은 <b>대칭이냐</b>다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 규칙적인 그물 모양 색소망은 균일한 선과 구멍으로 된 양성 경계 모반의 전형이다. 이 사진에는 규칙적인 그물이 보이지 않는다. 병변 전체가 가늘고 고른 그물로 덮여 있었다면 양성 소견이 된다.\n② 우윳빛 낭종과 면포 모양 개구부는 지루각화증의 소견이다. 이 병변은 편평하고 그런 구조가 없다. 중년 이후 몸통의 볼록한 '붙인 듯한' 병변이었다면 정답이 된다.\n③ 중심부 흰 반흔 구역과 섬세한 가장자리 색소망은 피부섬유종의 전형이다(옆에서 누르면 들어가는 보조개 징후). 이 사진의 중심은 청회색이 섞여 있다. 단단한 구진이 보조개 징후를 보였다면 정답이 된다.\n⑤ 경계가 뚜렷한 갈색 소구체가 대칭으로 고르게 배열되면 소아·청년의 양성 소구체 모반 패턴이다. 이 사진의 점은 크기가 제각각이고 한쪽에 몰려 있다. 같은 크기의 갈색 소구체가 병변 전체에 고르게 있었다면 경과 관찰 소견이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "더모스코피 경고 소견은 흑색종 '진단'이 아니라 '배제 불가 → 절제생검'의 근거다. 조직이 양성(흑자)으로 나와도 절제 판단은 옳았다."
+   },
+   {
+    "k": "학습목표",
+    "v": "색소 병변의 더모스코피에서 비대칭 색소 분포와 청회색 구조를 흑색종 경고 소견으로 읽고 절제생검의 근거로 삼는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Argenziano G et al. Dermoscopy of pigmented skin lesions: results of a consensus meeting via the Internet. J Am Acad Dermatol 2003;48:679 · Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. — dermoscopy; melanoma · ISIC Archive ISIC_0009986 — histopathology: lentigo NOS (teacher-only) · 작성자 판독(2026-09-29): 비대칭 흑갈색 반, 불규칙 가장자리 돌출·점, 중심 청회색·흰색 구조 ## 출처 ISIC Archive ISIC_0009986 (CC-0) · CC0 1.0 Universal · https://creativecommons.org/publicdomain/zero/1.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "비대칭 색소 분포와 중심부 청회색 구조는 흑색종을 배제할 수 없는 경고 소견이므로 절제생검의 근거다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "양성 소구체 모반은 같은 크기의 갈색 소구체가 대칭으로 고르게 있는데, 이 병변의 점은 불규칙하고 한쪽으로 치우쳐 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 흑갈색 색소가 한쪽으로 치우치고 가장자리 점이 불규칙 → 비대칭",
+    "영상: 중심부 청회색·흰색 구조 → 진피 멜라닌·퇴행 가능 → 흑색종 배제 불가 → 절제생검"
+   ],
+   "key": [
+    {
+     "item": "영상: 중심부 청회색·흰색 구조",
+     "why": "진피 멜라닌·퇴행 — 경고 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 치우친 흑갈색 색소와 불규칙한 가장자리 점",
+     "why": "비대칭",
+     "also": []
+    },
+    {
+     "item": "최근 6개월 사이 짙어지고 모양이 변한 것 같다",
+     "why": "변화(Evolving)는 독립적 경고",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "몸의 다른 점은 10개 미만이고 서로 비슷하게 생겼다",
+     "why": "이 병변만 다른 '미운 오리 새끼' 여부를 판단하는 배경",
+     "also": []
+    },
+    {
+     "item": "20대 초반에 햇볕 화상을 여러 번 입었다",
+     "why": "흑색종 위험인자",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "주위 림프절은 만져지지 않는다",
+     "why": "병기 추정에 쓰일 뿐 소견 판독과는 무관",
+     "also": []
+    },
+    {
+     "item": "가려움이나 출혈은 없다",
+     "why": "없다고 흑색종이 배제되지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흑갈색 색소가 비대칭이고 중심부에 청회색·흰색 구조가 있다. 흑색종을 배제할 수 없으므로 절제생검의 근거가 되며, 조직 결과가 양성이어도 판단은 같다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 크기의 갈색 소구체가 병변 전체에 대칭으로 고르게 있었다면 양성 소구체 모반으로 경과 관찰한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0164.jpg",
+   "caption": "더모스코피 사진, 원본 그대로 크기 조정만 (ISIC Archive, CC0 1.0 — 크롭·색보정 없음)",
+   "alt": "DERMOSCOPY 영상"
+  },
+  "attribution": {
+   "dataset": "ISIC Archive",
+   "license": "CC0 1.0 Universal",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.isic-archive.com/collections?imageId=ISIC_0009986",
+   "asset_id": "ISIC-ISIC_0009986",
+   "text": "ISIC Archive ISIC_0009986 (CC-0)"
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0161",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "소아청소년 — 넘어진 뒤 손목 통증, X선 판독",
+  "type": "소아청소년 — 넘어진 뒤 손목 통증, X선 판독",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "A 9-year-old girl is brought to the emergency department 1 hour after she fell onto her outstretched right hand while roller-skating. She has pain and swelling of the right wrist and will not move it. She has no other injuries and has been healthy. Her pulse is 104/min and blood pressure is 108/66 mm Hg. Examination shows swelling, mild deformity, and tenderness over the distal forearm about 3 cm proximal to the wrist crease. The radial pulse and capillary refill are normal, and sensation in the median, ulnar, and radial nerve distributions is intact. An anteroposterior x-ray of the right wrist is shown.",
+  "question": "Which of the following best describes the injury of the radius?",
+  "options": [
+   "Complete fracture of the metaphysis",
+   "Greenstick fracture of the metaphysis",
+   "Buckle (torus) fracture of the metaphysis",
+   "Salter-Harris type II physeal fracture",
+   "Plastic (bowing) deformation of the shaft"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The x-ray shows a transverse fracture line across the distal radial metaphysis that passes through both cortices, with a step-off and slight displacement at the ulnar cortex. The radial physis is not involved; the distal ulnar metaphysis also shows a fracture line. A fracture that disrupts both cortices is a complete fracture (AO pediatric classification 23-M/3), not an incomplete buckle or greenstick fracture.\n- 원리: Children's bones are <b>more porous and elastic</b>, with a thick, strong periosteum, and the metaphysis is the weakest region. That is why pediatric forearm fractures form a spectrum from incomplete to complete, and the pattern is read cortex by cortex.<br> <b>Buckle (torus) fracture</b>: axial compression makes the metaphyseal cortex bulge or kink on the compression side; there is no fracture line through either cortex. It is stable.<br> <b>Greenstick fracture</b>: a bending force breaks the <b>tension-side cortex</b>, while the compression-side cortex bends but stays intact.<br> <b>Complete fracture</b>: <b>both cortices are broken</b>; the fragments can translate, angulate, or overlap.<br> <b>Physeal (Salter-Harris) fracture</b>: the line runs through the growth plate — type II exits through the metaphysis leaving a triangular fragment (Thurston-Holland).<br> The distinction drives treatment: buckle fractures need only a removable splint for about 3 weeks, whereas complete fractures need a well-molded cast and follow-up x-rays, and reduction if angulation or displacement exceeds age-dependent limits.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Complete fracture (answer)</th><th>Greenstick fracture (closest rival)</th></tr></thead><tbody> <tr><td>Cortices</td><td><b>Both broken</b></td><td>Tension side broken, compression side bent</td></tr> <tr><td>Displacement</td><td><b>Step-off or translation possible</b></td><td>Angulation without translation</td></tr> <tr><td>AO pediatric code</td><td>M/3</td><td>M/2 (incomplete)</td></tr> <tr><td>This x-ray</td><td><b>Line across the whole metaphysis with ulnar-cortex step-off</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is a greenstick fracture</b>, which also shows a visible fracture line. The dividing line is <b>whether the second cortex is intact</b>. A bulging cortex without any line would point to a buckle fracture instead.\n- 오답 이유:\n  - (B) A greenstick fracture breaks only the tension-side cortex while the opposite cortex bends. Here the line crosses both cortices with a step-off. It would be correct if the fracture line stopped midway and the opposite cortex were bowed but continuous.\n  - (C) A buckle (torus) fracture is a bulge or kink of the metaphyseal cortex from compression, with no line through either cortex. It would be correct if only a small cortical bump were visible on the side of impact.\n  - (D) A Salter-Harris type II fracture passes through the physis and exits through the metaphysis. The radial physis here is intact and the line is proximal to it. It would be correct if the physis were widened with a triangular metaphyseal corner fragment.\n  - (E) Plastic deformation is bowing of the shaft without a visible fracture line, typically in the ulna. Here there is a discrete metaphyseal fracture line. It would be correct if the forearm bones were curved with no line.\n- 함정: Read each cortex: a line through both is complete; one broken cortex with the other bent is greenstick; a bulge without a line is buckle.\n- 학습목표: 소아 원위 요골 골간단 골절을 X선에서 팽륜(torus)·생나무·완전 골절·성장판 골절로 구분한다 — 양쪽 피질이 모두 끊기면 완전 골절이다\n- 근거·출처: Slongo T et al. Development and validation of the AO pediatric comprehensive classification of long bone fractures. J Pediatr Orthop 2006;26:43 · Nagy E et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 — teacher-only · Rockwood and Wilkins' Fractures in Children, 9th ed. — distal radius and ulna fractures · 작성자 판독(2026-09-29): 원위 요골 골간단 완전 골절(양쪽 피질·척측 계단), 원위 척골 골절선, 요골 성장판 침범 없음\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The x-ray shows a transverse fracture line across the distal radial metaphysis that passes through both cortices, with a step-off and slight displacement at the ulnar cortex. The radial physis is not involved; the distal ulnar metaphysis also shows a fracture line. A fracture that disrupts both cortices is a complete fracture (AO pediatric classification 23-M/3), not an incomplete buckle or greenstick fracture."
+   },
+   {
+    "k": "원리",
+    "v": "Children's bones are <b>more porous and elastic</b>, with a thick, strong periosteum, and the metaphysis is the weakest region. That is why pediatric forearm fractures form a spectrum from incomplete to complete, and the pattern is read cortex by cortex.<br> <b>Buckle (torus) fracture</b>: axial compression makes the metaphyseal cortex bulge or kink on the compression side; there is no fracture line through either cortex. It is stable.<br> <b>Greenstick fracture</b>: a bending force breaks the <b>tension-side cortex</b>, while the compression-side cortex bends but stays intact.<br> <b>Complete fracture</b>: <b>both cortices are broken</b>; the fragments can translate, angulate, or overlap.<br> <b>Physeal (Salter-Harris) fracture</b>: the line runs through the growth plate — type II exits through the metaphysis leaving a triangular fragment (Thurston-Holland).<br> The distinction drives treatment: buckle fractures need only a removable splint for about 3 weeks, whereas complete fractures need a well-molded cast and follow-up x-rays, and reduction if angulation or displacement exceeds age-dependent limits."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Complete fracture (answer)</th><th>Greenstick fracture (closest rival)</th></tr></thead><tbody> <tr><td>Cortices</td><td><b>Both broken</b></td><td>Tension side broken, compression side bent</td></tr> <tr><td>Displacement</td><td><b>Step-off or translation possible</b></td><td>Angulation without translation</td></tr> <tr><td>AO pediatric code</td><td>M/3</td><td>M/2 (incomplete)</td></tr> <tr><td>This x-ray</td><td><b>Line across the whole metaphysis with ulnar-cortex step-off</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is a greenstick fracture</b>, which also shows a visible fracture line. The dividing line is <b>whether the second cortex is intact</b>. A bulging cortex without any line would point to a buckle fracture instead."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) A greenstick fracture breaks only the tension-side cortex while the opposite cortex bends. Here the line crosses both cortices with a step-off. It would be correct if the fracture line stopped midway and the opposite cortex were bowed but continuous.\n(C) A buckle (torus) fracture is a bulge or kink of the metaphyseal cortex from compression, with no line through either cortex. It would be correct if only a small cortical bump were visible on the side of impact.\n(D) A Salter-Harris type II fracture passes through the physis and exits through the metaphysis. The radial physis here is intact and the line is proximal to it. It would be correct if the physis were widened with a triangular metaphyseal corner fragment.\n(E) Plastic deformation is bowing of the shaft without a visible fracture line, typically in the ulna. Here there is a discrete metaphyseal fracture line. It would be correct if the forearm bones were curved with no line."
+   },
+   {
+    "k": "함정",
+    "v": "Read each cortex: a line through both is complete; one broken cortex with the other bent is greenstick; a bulge without a line is buckle."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 원위 요골 골간단 골절을 X선에서 팽륜(torus)·생나무·완전 골절·성장판 골절로 구분한다 — 양쪽 피질이 모두 끊기면 완전 골절이다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Slongo T et al. Development and validation of the AO pediatric comprehensive classification of long bone fractures. J Pediatr Orthop 2006;26:43 · Nagy E et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 — teacher-only · Rockwood and Wilkins' Fractures in Children, 9th ed. — distal radius and ulna fractures · 작성자 판독(2026-09-29): 원위 요골 골간단 완전 골절(양쪽 피질·척측 계단), 원위 척골 골절선, 요골 성장판 침범 없음 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "골절선이 원위 요골 골간단의 양쪽 피질을 모두 지나고 척측 피질에 계단이 있으므로 완전 골절이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "생나무 골절은 한쪽 피질만 끊기고 반대쪽은 휘어 이어져 있는데 이 X선은 양쪽 피질이 모두 끊겼다",
+   "steps": 2,
+   "chain": [
+    "영상: 골절선이 성장판 위 골간단에 있음 → 성장판 골절이 아님",
+    "영상: 요측·척측 피질 모두 끊기고 척측에 계단 → 완전 골절(생나무·팽륜 아님)"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 골간단을 가로지르는 골절선이 양쪽 피질을 통과, 척측 피질 계단",
+     "why": "완전 골절의 근거",
+     "also": []
+    },
+    {
+     "item": "about 3 cm proximal to the wrist crease",
+     "why": "골간단 위치와 맞는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 요골 성장판은 온전",
+     "why": "Salter-Harris 골절 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "The radial pulse and capillary refill are normal",
+     "why": "혈관 손상 없음 — 응급 정복 필요성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "sensation in the median, ulnar, and radial nerve distributions is intact",
+     "why": "신경 손상 없음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "fell onto her outstretched right hand",
+     "why": "흔한 기전 — 골절 형태는 X선으로 정한다",
+     "also": []
+    }
+   ],
+   "summary": "원위 요골 골간단의 양쪽 피질을 모두 지나는 골절선과 척측 계단이 보이고 성장판은 온전하다. 생나무·팽륜 골절이 아니라 완전 골절이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "골절선 없이 골간단 피질이 한쪽에서 볼록하게 꺾여만 있었다면 팽륜(torus) 골절이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0161.png",
+   "caption": "Anteroposterior radiograph of the right wrist, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0248_0500364719_01_WRI-R1_F009",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0154",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "병리·조직 — 폐경 후 질 조직검사의 면역조직화학",
+  "type": "병리·조직 — 폐경 후 질 조직검사의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-28",
+  "vignette": "68세 여자가 2주 전부터 성교 후 소량의 질 출혈이 있어 왔다. 12년 전 폐경되었고 호르몬 치료는 받지 않았다. 5년 전 자궁경부 세포검사는 정상이었다. 질경 검사에서 질 위쪽 1/3 뒤벽에 1 cm 크기의 경계가 불분명한 붉은 부위가 있고 자궁경부는 육안으로 정상이다. 질 확대경 유도 조직검사의 헤마톡실린-에오신 염색에서 편평상피 핵의 변화가 위축에 의한 반응성 변화인지 고등급 병변인지 판정이 애매하여 p16 면역조직화학염색을 추가하였다. 질 조직 절편의 염색 결과는 그림과 같다.",
+  "question": "이 결과의 해석으로 가장 적절한 것은?",
+  "options": [
+   "고위험 HPV 연관 고등급 편평상피내병변(VaIN 2–3)이다",
+   "저등급 편평상피내병변(VaIN 1)으로 확진된다",
+   "p16 과발현으로 보아 침윤성 편평세포암이다",
+   "에스트로겐 결핍에 의한 비특이 반점상 양성이다",
+   "고위험 HPV 연관 고등급 병변을 지지하지 않는다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 그림에서 편평상피는 기저층부터 표층까지 헤마톡실린의 청색 핵만 보이고 갈색(DAB) 염색이 없다. 간질도 음성이다. 고위험 HPV 연관 고등급 병변은 p16 이 기저층에서 위로 이어지는 연속된 강한 핵·세포질 염색(block 양성)을 보이므로, 음성 결과는 고등급 병변을 지지하지 않고 위축에 의한 반응성 변화 쪽으로 해석한다.\n- 원리: <b>p16INK4a 가 HPV 표지자가 되는 이유</b>는 세포주기 조절의 되먹임 때문이다. 정상 세포에서 p16 은 CDK4/6 을 억제해 Rb 가 인산화되지 않게 하고, Rb 는 E2F 를 붙잡아 S기 진입을 막는다.<br> <b>고위험 HPV(16·18 등)의 E7</b> 단백은 Rb 에 결합해 분해시킨다. 그러면 E2F 가 풀려 세포가 계속 분열하고, Rb 기능이 사라진 것을 감지한 세포는 p16 을 대량으로 만든다 — 그러나 Rb 가 없으니 p16 은 아무 효과가 없고 쌓이기만 한다. 그래서 <b>형질전환 감염(고등급 병변·암)에서는 p16 이 미만성으로 강하게</b> 염색된다.<br> <b>판정 기준(LAST 2012)</b>: 기저층에서 시작해 상피 아래 1/3 이상까지 <b>연속된 강한 핵+세포질 염색</b>(block 양성)만 양성이다. 음성이거나 조각조각 약한 염색은 고등급 병변을 지지하지 않는다. 저위험 HPV(6·11)의 E7 은 Rb 결합력이 약해 콘딜로마·저등급 병변은 p16 이 음성이거나 반점상이다.<br> 위축된 상피는 핵/세포질 비가 커 H&E 에서 고등급 병변처럼 보이기 쉽다. 바로 이 감별이 p16 염색의 적응증이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">고등급 병변을 지지하지 않음(정답)</th><th>고등급 편평상피내병변(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>p16 양상</td><td><b>음성</b> — 청색 핵만</td><td>기저층부터 연속된 강한 핵·세포질 갈색(block)</td></tr> <tr><td>기전</td><td>Rb 정상 → p16 되먹임 과발현 없음</td><td>고위험 HPV E7 이 Rb 분해 → p16 축적</td></tr> <tr><td>H&E 모방</td><td>위축·미성숙 화생·반응성 변화</td><td>핵 이형성이 상피 위쪽까지</td></tr> <tr><td>이 절편</td><td><b>전층·간질 모두 갈색 없음</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 고등급 병변</b>이다. 갈림길은 <b>연속된 block 염색이 있느냐</b>다. 반점상 약양성도 음성과 같이 해석한다는 점까지 기억하면 어느 쪽으로 물어도 대응된다.\n- 오답 이유:\n  - ① 고등급 편평상피내병변은 p16 이 기저층부터 위로 연속된 강한 block 염색을 보여야 한다. 이 절편은 갈색 염색이 전혀 없다. 기저층부터 상피 절반 이상이 짙은 갈색이었다면 정답이 된다.\n  - ② 저등급 병변은 p16 이 음성일 수 있지만 p16 음성만으로 확진하지 않는다 — H&E 의 코일로사이트·상피 아래 1/3 에 국한된 이형성이 필요하다. 코일로사이트가 뚜렷한 H&E 소견이 함께 주어졌다면 가까워진다.\n  - ③ 침윤암은 H&E 에서 기저막을 넘는 종양 세포 둥지로 진단하고, 고위험 HPV 연관이면 p16 이 미만성 강양성이다. 이 절편은 p16 음성이고 기저막이 유지된다. 간질 속 종양 둥지가 갈색으로 염색되었다면 정답이 된다.\n  - ④ 위축 상피는 대개 p16 음성이고, 드물게 약한 반점상 양성이 나와도 비특이적이다. 그러나 이 절편에는 반점상 갈색 염색조차 없다. 표층 몇몇 세포만 흩어져 갈색이었다면 정답이 된다.\n- 함정: p16 은 '어느 정도 갈색이냐'가 아니라 '기저층부터 연속된 block 이냐'로 판정한다. 음성과 반점상 약양성은 같은 방향으로 해석한다.\n- 학습목표: p16 면역조직화학염색의 미만성 강양성(block) 기준을 알고, 음성 결과를 고위험 HPV 연관 고등급 편평상피내병변을 지지하지 않는 소견으로 해석한다\n- 근거·출처: Darragh TM et al. The Lower Anogenital Squamous Terminology Standardization Project for HPV-associated lesions (LAST). Arch Pathol Lab Med 2012;136:1266 · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. — female genital tract (HPV and p16) · Human Protein Atlas — CDKN2A, vagina (image 1644_B_3_2) — teacher-only · 작성자 판독(2026-09-21·29): 질 중층편평상피 기저층~표층·간질 모두 갈색 없음 = p16 음성\n\n## 출처\n- Human Protein Atlas, CDKN2A / Vagina (CC BY 4.0), https://images.proteinatlas.org/93/1644_B_3_2.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 편평상피는 기저층부터 표층까지 헤마톡실린의 청색 핵만 보이고 갈색(DAB) 염색이 없다. 간질도 음성이다. 고위험 HPV 연관 고등급 병변은 p16 이 기저층에서 위로 이어지는 연속된 강한 핵·세포질 염색(block 양성)을 보이므로, 음성 결과는 고등급 병변을 지지하지 않고 위축에 의한 반응성 변화 쪽으로 해석한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>p16INK4a 가 HPV 표지자가 되는 이유</b>는 세포주기 조절의 되먹임 때문이다. 정상 세포에서 p16 은 CDK4/6 을 억제해 Rb 가 인산화되지 않게 하고, Rb 는 E2F 를 붙잡아 S기 진입을 막는다.<br> <b>고위험 HPV(16·18 등)의 E7</b> 단백은 Rb 에 결합해 분해시킨다. 그러면 E2F 가 풀려 세포가 계속 분열하고, Rb 기능이 사라진 것을 감지한 세포는 p16 을 대량으로 만든다 — 그러나 Rb 가 없으니 p16 은 아무 효과가 없고 쌓이기만 한다. 그래서 <b>형질전환 감염(고등급 병변·암)에서는 p16 이 미만성으로 강하게</b> 염색된다.<br> <b>판정 기준(LAST 2012)</b>: 기저층에서 시작해 상피 아래 1/3 이상까지 <b>연속된 강한 핵+세포질 염색</b>(block 양성)만 양성이다. 음성이거나 조각조각 약한 염색은 고등급 병변을 지지하지 않는다. 저위험 HPV(6·11)의 E7 은 Rb 결합력이 약해 콘딜로마·저등급 병변은 p16 이 음성이거나 반점상이다.<br> 위축된 상피는 핵/세포질 비가 커 H&E 에서 고등급 병변처럼 보이기 쉽다. 바로 이 감별이 p16 염색의 적응증이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">고등급 병변을 지지하지 않음(정답)</th><th>고등급 편평상피내병변(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>p16 양상</td><td><b>음성</b> — 청색 핵만</td><td>기저층부터 연속된 강한 핵·세포질 갈색(block)</td></tr> <tr><td>기전</td><td>Rb 정상 → p16 되먹임 과발현 없음</td><td>고위험 HPV E7 이 Rb 분해 → p16 축적</td></tr> <tr><td>H&E 모방</td><td>위축·미성숙 화생·반응성 변화</td><td>핵 이형성이 상피 위쪽까지</td></tr> <tr><td>이 절편</td><td><b>전층·간질 모두 갈색 없음</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 고등급 병변</b>이다. 갈림길은 <b>연속된 block 염색이 있느냐</b>다. 반점상 약양성도 음성과 같이 해석한다는 점까지 기억하면 어느 쪽으로 물어도 대응된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 고등급 편평상피내병변은 p16 이 기저층부터 위로 연속된 강한 block 염색을 보여야 한다. 이 절편은 갈색 염색이 전혀 없다. 기저층부터 상피 절반 이상이 짙은 갈색이었다면 정답이 된다.\n② 저등급 병변은 p16 이 음성일 수 있지만 p16 음성만으로 확진하지 않는다 — H&E 의 코일로사이트·상피 아래 1/3 에 국한된 이형성이 필요하다. 코일로사이트가 뚜렷한 H&E 소견이 함께 주어졌다면 가까워진다.\n③ 침윤암은 H&E 에서 기저막을 넘는 종양 세포 둥지로 진단하고, 고위험 HPV 연관이면 p16 이 미만성 강양성이다. 이 절편은 p16 음성이고 기저막이 유지된다. 간질 속 종양 둥지가 갈색으로 염색되었다면 정답이 된다.\n④ 위축 상피는 대개 p16 음성이고, 드물게 약한 반점상 양성이 나와도 비특이적이다. 그러나 이 절편에는 반점상 갈색 염색조차 없다. 표층 몇몇 세포만 흩어져 갈색이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "p16 은 '어느 정도 갈색이냐'가 아니라 '기저층부터 연속된 block 이냐'로 판정한다. 음성과 반점상 약양성은 같은 방향으로 해석한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "p16 면역조직화학염색의 미만성 강양성(block) 기준을 알고, 음성 결과를 고위험 HPV 연관 고등급 편평상피내병변을 지지하지 않는 소견으로 해석한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Darragh TM et al. The Lower Anogenital Squamous Terminology Standardization Project for HPV-associated lesions (LAST). Arch Pathol Lab Med 2012;136:1266 · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. — female genital tract (HPV and p16) · Human Protein Atlas — CDKN2A, vagina (image 1644_B_3_2) — teacher-only · 작성자 판독(2026-09-21·29): 질 중층편평상피 기저층~표층·간질 모두 갈색 없음 = p16 음성 ## 출처 Human Protein Atlas, CDKN2A / Vagina (CC BY 4.0), https://images.proteinatlas.org/93/1644_B_3_2.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "p16 이 전층에서 음성이므로 고위험 HPV 연관 고등급 병변(block 양성)을 지지하지 않는다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "고등급 병변은 기저층부터 연속된 강한 block 염색이 필요한데 이 절편에는 갈색 염색이 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 편평상피 기저층~표층과 간질 모두 청색 핵만, 갈색 없음 → p16 음성",
+    "block 양성이 아님 → 고위험 HPV 형질전환 감염(고등급 병변)을 지지하지 않음 → 위축성 반응성 변화 쪽"
+   ],
+   "key": [
+    {
+     "item": "영상: 편평상피 전층과 간질에 갈색(DAB) 염색 없음",
+     "why": "p16 음성 — 해석의 근거",
+     "also": []
+    },
+    {
+     "item": "위축에 의한 반응성 변화인지 고등급 병변인지 판정이 애매하여",
+     "why": "p16 염색의 적응증 — 무엇을 가르려는지 알려 준다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "12년 전 폐경되었고 호르몬 치료는 받지 않았다",
+     "why": "위축 상피의 배경 — 해석 자체는 염색 양상으로 한다",
+     "also": []
+    },
+    {
+     "item": "5년 전 자궁경부 세포검사는 정상이었다",
+     "why": "고위험 HPV 가능성을 없애지는 않는다",
+     "also": []
+    },
+    {
+     "item": "자궁경부는 육안으로 정상이다",
+     "why": "검체가 질이라는 것을 확인할 뿐 판정에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "p16 이 상피 전층에서 음성이다. 고위험 HPV 연관 고등급 병변은 기저층부터 연속된 block 염색을 보이므로 이 결과는 고등급 병변을 지지하지 않는다.",
+   "switch": {
+    "choice": "A",
+    "condition": "기저층부터 상피 절반 이상이 연속된 짙은 갈색으로 염색되었다면 고등급 편평상피내병변이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0154.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000147889-CDKN2A/tissue/Vagina",
+   "asset_id": "HPA-CDKN2A_1644_B_3_2",
+   "text": "Human Protein Atlas, CDKN2A / Vagina (CC BY 4.0), https://images.proteinatlas.org/93/1644_B_3_2.jpg"
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0163",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "예방의학·역학·보건통계 — 양성 검사 뒤 질병 확률",
+  "type": "예방의학·역학·보건통계 — 양성 검사 뒤 질병 확률",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-28",
+  "vignette": "A 64-year-old man comes to the physician because of exertional chest discomfort for 2 months. On the basis of his history and risk factors, the physician estimates the probability that he has obstructive coronary artery disease at 20%. His pulse is 76/min and blood pressure is 138/84 mm Hg. A resting ECG is normal. An exercise stress test is performed, and the result is positive. In a validation study, this test had a sensitivity of 72% and a specificity of 88% for obstructive coronary artery disease.",
+  "question": "Which of the following is the closest estimate of the probability that this patient has obstructive coronary artery disease after the positive test?",
+  "options": [
+   "88%",
+   "60%",
+   "20%",
+   "40%",
+   "72%"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Positive likelihood ratio = sensitivity / (1 − specificity) = 0.72 / 0.12 = 6. Pretest odds = 0.20 / 0.80 = 0.25. Post-test odds = 0.25 × 6 = 1.5. Post-test probability = 1.5 / (1 + 1.5) = 0.60, or 60%.\n- 원리: <b>Why use odds and likelihood ratios?</b> Sensitivity and specificity describe the test in people whose disease status is already known; the clinician needs the reverse — the probability of disease given the result. Bayes' theorem links the two, and it is simplest in <b>odds form</b>: post-test odds = pretest odds × likelihood ratio.<br> <b>Positive LR</b> = probability of a positive result in the diseased (sensitivity) divided by the probability in the non-diseased (1 − specificity). An LR+ of 6 means a positive result is six times more likely in someone with the disease. Because LRs are ratios within the diseased and within the non-diseased, they do not depend on prevalence and can be carried to any patient.<br> <b>Steps</b>: probability → odds (p / (1 − p)); multiply by LR; odds → probability (odds / (1 + odds)). Skipping the conversion — multiplying 20% by 6 — gives 120%, which is impossible, the clue that odds are needed.<br> Check with a 2×2 table of 1,000 patients: 200 diseased → 144 positive; 800 non-diseased → 96 false positives; 144 / 240 = 60%.\n- 비교: <table><thead><tr><th style=\"width:26%\">Quantity</th><th style=\"width:37%\">Post-test probability 60% (answer)</th><th>Sensitivity 72% (closest rival)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>If positive, how likely is disease?</b></td><td>If diseased, how likely is a positive test?</td></tr> <tr><td>Depends on prevalence?</td><td><b>Yes — pretest 20%</b></td><td>No</td></tr> <tr><td>Calculation</td><td>0.25 × 6 = 1.5 → 1.5/2.5</td><td>Given directly</td></tr> </tbody></table> <b>The closest rival is 72%</b>, the sensitivity, which is often mistaken for the positive predictive value. The dividing line is the <b>direction of the conditional probability</b>. With a pretest probability of 50%, the same test would give odds 1 × 6 = 6, or 86%.\n- 오답 이유:\n  - (A) 88% is the specificity, the probability of a negative test in patients without disease; it does not answer this question. It would be correct as the answer to 'what proportion of patients without disease test negative?'\n  - (C) 20% is the pretest probability; a positive test with an LR+ of 6 must raise it. It would be correct only if the test had an LR of 1 (sensitivity equal to 1 − specificity), carrying no information.\n  - (D) 40% results from errors such as adding rather than multiplying, or dividing 1.5 by 3.75. The correct post-test odds of 1.5 convert to 60%. It would be correct if the LR+ were about 2.7.\n  - (E) 72% is the sensitivity — the probability of a positive test among diseased patients, not of disease among positive patients. It would be the post-test probability only if the pretest probability were about 30% with this LR (odds 0.43 × 6 = 2.6 → 72%).\n- 함정: Convert probability to odds before multiplying by the likelihood ratio, and do not confuse sensitivity with the post-test probability.\n- 학습목표: 민감도·특이도로 양성 우도비를 구하고, 사전확률을 오즈로 바꿔 곱한 뒤 다시 확률로 바꿔 검사 후 확률을 계산한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. — assessing the validity and reliability of diagnostic and screening tests · Straus SE et al. Evidence-Based Medicine: How to Practice and Teach EBM, 5th ed. — diagnosis and likelihood ratios",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Positive likelihood ratio = sensitivity / (1 − specificity) = 0.72 / 0.12 = 6. Pretest odds = 0.20 / 0.80 = 0.25. Post-test odds = 0.25 × 6 = 1.5. Post-test probability = 1.5 / (1 + 1.5) = 0.60, or 60%."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why use odds and likelihood ratios?</b> Sensitivity and specificity describe the test in people whose disease status is already known; the clinician needs the reverse — the probability of disease given the result. Bayes' theorem links the two, and it is simplest in <b>odds form</b>: post-test odds = pretest odds × likelihood ratio.<br> <b>Positive LR</b> = probability of a positive result in the diseased (sensitivity) divided by the probability in the non-diseased (1 − specificity). An LR+ of 6 means a positive result is six times more likely in someone with the disease. Because LRs are ratios within the diseased and within the non-diseased, they do not depend on prevalence and can be carried to any patient.<br> <b>Steps</b>: probability → odds (p / (1 − p)); multiply by LR; odds → probability (odds / (1 + odds)). Skipping the conversion — multiplying 20% by 6 — gives 120%, which is impossible, the clue that odds are needed.<br> Check with a 2×2 table of 1,000 patients: 200 diseased → 144 positive; 800 non-diseased → 96 false positives; 144 / 240 = 60%."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Quantity</th><th style=\"width:37%\">Post-test probability 60% (answer)</th><th>Sensitivity 72% (closest rival)</th></tr></thead><tbody> <tr><td>Question answered</td><td><b>If positive, how likely is disease?</b></td><td>If diseased, how likely is a positive test?</td></tr> <tr><td>Depends on prevalence?</td><td><b>Yes — pretest 20%</b></td><td>No</td></tr> <tr><td>Calculation</td><td>0.25 × 6 = 1.5 → 1.5/2.5</td><td>Given directly</td></tr> </tbody></table> <b>The closest rival is 72%</b>, the sensitivity, which is often mistaken for the positive predictive value. The dividing line is the <b>direction of the conditional probability</b>. With a pretest probability of 50%, the same test would give odds 1 × 6 = 6, or 86%."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) 88% is the specificity, the probability of a negative test in patients without disease; it does not answer this question. It would be correct as the answer to 'what proportion of patients without disease test negative?'\n(C) 20% is the pretest probability; a positive test with an LR+ of 6 must raise it. It would be correct only if the test had an LR of 1 (sensitivity equal to 1 − specificity), carrying no information.\n(D) 40% results from errors such as adding rather than multiplying, or dividing 1.5 by 3.75. The correct post-test odds of 1.5 convert to 60%. It would be correct if the LR+ were about 2.7.\n(E) 72% is the sensitivity — the probability of a positive test among diseased patients, not of disease among positive patients. It would be the post-test probability only if the pretest probability were about 30% with this LR (odds 0.43 × 6 = 2.6 → 72%)."
+   },
+   {
+    "k": "함정",
+    "v": "Convert probability to odds before multiplying by the likelihood ratio, and do not confuse sensitivity with the post-test probability."
+   },
+   {
+    "k": "학습목표",
+    "v": "민감도·특이도로 양성 우도비를 구하고, 사전확률을 오즈로 바꿔 곱한 뒤 다시 확률로 바꿔 검사 후 확률을 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. — assessing the validity and reliability of diagnostic and screening tests · Straus SE et al. Evidence-Based Medicine: How to Practice and Teach EBM, 5th ed. — diagnosis and likelihood ratios"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "양성 우도비 6 을 사전 오즈 0.25 에 곱해 검사 후 오즈 1.5 를 구하고 확률 60 %로 바꾼다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "72 %는 민감도(질병이 있을 때 양성일 확률)로, 양성일 때 질병이 있을 확률과 방향이 반대다",
+   "steps": 3,
+   "chain": [
+    "LR+ = 0.72 / (1 − 0.88) = 6",
+    "사전확률 20 % → 사전 오즈 0.25 → × 6 = 검사 후 오즈 1.5",
+    "오즈 1.5 → 확률 1.5 / 2.5 = 60 %"
+   ],
+   "key": [
+    {
+     "item": "estimates the probability that he has obstructive coronary artery disease at 20%",
+     "why": "사전확률",
+     "also": []
+    },
+    {
+     "item": "a sensitivity of 72%",
+     "why": "LR+ 분자",
+     "also": []
+    },
+    {
+     "item": "a specificity of 88%",
+     "why": "LR+ 분모(1 − 특이도)",
+     "also": []
+    },
+    {
+     "item": "the result is positive",
+     "why": "양성 우도비를 쓴다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "A resting ECG is normal",
+     "why": "운동부하검사를 해석할 수 있는 조건일 뿐 계산에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "His pulse is 76/min and blood pressure is 138/84 mm Hg",
+     "why": "계산과 무관",
+     "also": []
+    }
+   ],
+   "summary": "양성 우도비는 0.72/0.12 = 6 이다. 사전 오즈 0.25 에 곱한 1.5 를 확률로 바꾸면 60 %다.",
+   "switch": {
+    "choice": "E",
+    "condition": "사전확률이 30 %였다면 같은 양성 결과 뒤 확률이 약 72 %가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0162",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "정신 — 간경변 환자의 수술 후 섬망",
+  "type": "정신 — 간경변 환자의 수술 후 섬망",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "52세 남자가 대장 수술 3일째 밤부터 안절부절못하고 헛것을 본다고 하여 협진이 의뢰되었다. 20년간 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 알코올 간경변으로 추적 중이다. 의식은 혼돈되어 있고 시간·장소 지남력이 없으며 벽에 벌레가 기어간다고 한다. 체온 38.1 ℃, 혈압 168/100 mmHg, 맥박 124회/분이고 전신에 땀이 나며 손 떨림이 심하다. 복수가 있고 목덜미 강직은 없다. 혈청 알부민 2.6 g/dL, 총빌리루빈 3.4 mg/dL, 프로트롬빈시간 INR 1.9, 혈당 112 mg/dL, 혈청 나트륨 136 mEq/L 이다.",
+  "question": "가장 적절한 약물은?",
+  "options": [
+   "할로페리돌",
+   "락툴로오스",
+   "로라제팜",
+   "디아제팜",
+   "클로르디아제폭사이드"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 마지막 음주 후 약 3~4일에 의식 혼돈·지남력 상실·환시와 함께 발열·고혈압·빈맥·발한·진전이 생긴 알코올 금단 섬망이다. 치료는 벤조디아제핀이며, 간경변(알부민 2.6, 빌리루빈 3.4, INR 1.9)이 있으므로 간의 산화 대사를 거치지 않고 포도당산 결합만으로 제거되어 축적이 적은 로라제팜을 쓴다.\n- 원리: <b>알코올 금단의 기전</b>: 알코올은 GABA-A 수용체를 강화하고 NMDA 수용체를 억제한다. 오래 마시면 뇌는 GABA-A 를 줄이고 NMDA 를 늘려 적응한다. 갑자기 끊으면 억제는 약하고 흥분은 강한 상태가 드러나 <b>교감신경 항진·진전·경련·섬망</b>이 생긴다. 금단 섬망은 대개 마지막 음주 후 <b>48~96시간</b>에 온다.<br> <b>벤조디아제핀이 치료인 이유</b>: 알코올과 같은 GABA-A 수용체를 강화해 빠진 억제를 대신 채운다(교차 내성). 경련과 섬망을 예방·치료하고 사망률을 낮춘다.<br> <b>약 선택은 간이 정한다</b>. 디아제팜·클로르디아제폭사이드는 간의 <b>CYP 산화</b>로 대사되고 활성 대사물(데스메틸디아제팜)이 길게 남아, 간기능이 나쁘면 축적되어 과진정·간성뇌증 악화를 일으킨다. <b>로라제팜·옥사제팜·테마제팜</b>(LOT)은 산화 없이 <b>포도당산 결합</b>만으로 제거되고 활성 대사물이 없어 간경변·고령에서 안전하다.<br> 티아민은 벤조디아제핀과 함께 주되 섬망 자체의 치료는 아니다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">로라제팜(정답)</th><th>디아제팜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대사</td><td><b>포도당산 결합만</b></td><td>CYP 산화 → 활성 대사물</td></tr> <tr><td>반감기</td><td>10~20시간, 활성 대사물 없음</td><td>20~100시간 + 대사물 더 길다</td></tr> <tr><td>좋은 경우</td><td><b>간경변·고령</b></td><td>간기능 정상 — 스스로 서서히 줄어드는 장점</td></tr> <tr><td>이 환자</td><td><b>알부민 2.6·빌리루빈 3.4·INR 1.9·복수</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 디아제팜</b>이다. 간기능이 정상이면 긴 작용이 오히려 반동을 줄여 더 흔히 쓰인다. 갈림길은 <b>간경변</b>이다.\n- 오답 이유:\n  - ① 할로페리돌은 환시·초조를 줄이지만 금단의 GABA 결핍을 채우지 못하고 경련 역치를 낮춘다. 벤조디아제핀을 충분히 준 뒤에도 환각이 남을 때 보조로만 쓴다. 단독 치료로는 정답이 되지 않는다.\n  - ② 락툴로오스는 간성뇌증에서 장내 암모니아를 줄인다. 간성뇌증은 발열·고혈압·빈맥·발한 같은 자율신경 항진이 없고 퍼덕떨림이 특징이다. 활력징후가 정상이고 퍼덕떨림이 있었다면 정답이 된다.\n  - ④ 디아제팜은 긴 작용과 빠른 작용 발현으로 간기능이 정상인 금단 섬망에서 흔히 쓰인다. 그러나 산화 대사와 활성 대사물 때문에 간경변에서 축적된다. 간기능이 정상인 환자였다면 정답이 된다.\n  - ⑤ 클로르디아제폭사이드도 산화 대사되고 활성 대사물이 매우 길게 남아 간경변에서 축적된다. 정맥 주사도 쓰기 어렵다. 간기능 정상인 외래 금단 해독에서 경구로 쓸 때 맞는 선택이다.\n- 함정: 금단 섬망의 약은 벤조디아제핀이고, 간경변이면 LOT(로라제팜·옥사제팜·테마제팜)다. 자율신경 항진이 간성뇌증과 가르는 소견이다.\n- 학습목표: 알코올 금단 섬망을 진단하고, 간기능이 나쁜 환자에서는 산화 대사를 거치지 않는 짧은 작용 벤조디아제핀(로라제팜)을 쓴다\n- 근거·출처: Schuckit MA. Recognition and management of withdrawal delirium (delirium tremens). N Engl J Med 2014;371:2109 · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Synopsis of Psychiatry, 12th ed. — alcohol-related disorders · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — sedative-hypnotic drugs",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "마지막 음주 후 약 3~4일에 의식 혼돈·지남력 상실·환시와 함께 발열·고혈압·빈맥·발한·진전이 생긴 알코올 금단 섬망이다. 치료는 벤조디아제핀이며, 간경변(알부민 2.6, 빌리루빈 3.4, INR 1.9)이 있으므로 간의 산화 대사를 거치지 않고 포도당산 결합만으로 제거되어 축적이 적은 로라제팜을 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>알코올 금단의 기전</b>: 알코올은 GABA-A 수용체를 강화하고 NMDA 수용체를 억제한다. 오래 마시면 뇌는 GABA-A 를 줄이고 NMDA 를 늘려 적응한다. 갑자기 끊으면 억제는 약하고 흥분은 강한 상태가 드러나 <b>교감신경 항진·진전·경련·섬망</b>이 생긴다. 금단 섬망은 대개 마지막 음주 후 <b>48~96시간</b>에 온다.<br> <b>벤조디아제핀이 치료인 이유</b>: 알코올과 같은 GABA-A 수용체를 강화해 빠진 억제를 대신 채운다(교차 내성). 경련과 섬망을 예방·치료하고 사망률을 낮춘다.<br> <b>약 선택은 간이 정한다</b>. 디아제팜·클로르디아제폭사이드는 간의 <b>CYP 산화</b>로 대사되고 활성 대사물(데스메틸디아제팜)이 길게 남아, 간기능이 나쁘면 축적되어 과진정·간성뇌증 악화를 일으킨다. <b>로라제팜·옥사제팜·테마제팜</b>(LOT)은 산화 없이 <b>포도당산 결합</b>만으로 제거되고 활성 대사물이 없어 간경변·고령에서 안전하다.<br> 티아민은 벤조디아제핀과 함께 주되 섬망 자체의 치료는 아니다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">로라제팜(정답)</th><th>디아제팜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대사</td><td><b>포도당산 결합만</b></td><td>CYP 산화 → 활성 대사물</td></tr> <tr><td>반감기</td><td>10~20시간, 활성 대사물 없음</td><td>20~100시간 + 대사물 더 길다</td></tr> <tr><td>좋은 경우</td><td><b>간경변·고령</b></td><td>간기능 정상 — 스스로 서서히 줄어드는 장점</td></tr> <tr><td>이 환자</td><td><b>알부민 2.6·빌리루빈 3.4·INR 1.9·복수</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 디아제팜</b>이다. 간기능이 정상이면 긴 작용이 오히려 반동을 줄여 더 흔히 쓰인다. 갈림길은 <b>간경변</b>이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 할로페리돌은 환시·초조를 줄이지만 금단의 GABA 결핍을 채우지 못하고 경련 역치를 낮춘다. 벤조디아제핀을 충분히 준 뒤에도 환각이 남을 때 보조로만 쓴다. 단독 치료로는 정답이 되지 않는다.\n② 락툴로오스는 간성뇌증에서 장내 암모니아를 줄인다. 간성뇌증은 발열·고혈압·빈맥·발한 같은 자율신경 항진이 없고 퍼덕떨림이 특징이다. 활력징후가 정상이고 퍼덕떨림이 있었다면 정답이 된다.\n④ 디아제팜은 긴 작용과 빠른 작용 발현으로 간기능이 정상인 금단 섬망에서 흔히 쓰인다. 그러나 산화 대사와 활성 대사물 때문에 간경변에서 축적된다. 간기능이 정상인 환자였다면 정답이 된다.\n⑤ 클로르디아제폭사이드도 산화 대사되고 활성 대사물이 매우 길게 남아 간경변에서 축적된다. 정맥 주사도 쓰기 어렵다. 간기능 정상인 외래 금단 해독에서 경구로 쓸 때 맞는 선택이다."
+   },
+   {
+    "k": "함정",
+    "v": "금단 섬망의 약은 벤조디아제핀이고, 간경변이면 LOT(로라제팜·옥사제팜·테마제팜)다. 자율신경 항진이 간성뇌증과 가르는 소견이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "알코올 금단 섬망을 진단하고, 간기능이 나쁜 환자에서는 산화 대사를 거치지 않는 짧은 작용 벤조디아제핀(로라제팜)을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Schuckit MA. Recognition and management of withdrawal delirium (delirium tremens). N Engl J Med 2014;371:2109 · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Synopsis of Psychiatry, 12th ed. — alcohol-related disorders · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. — sedative-hypnotic drugs"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "알코올 금단 섬망이고 간경변이 있으므로 포도당산 결합만으로 제거되는 로라제팜을 쓴다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "디아제팜은 산화 대사와 활성 대사물 때문에 간경변에서 축적되고, 이 환자는 알부민 2.6·빌리루빈 3.4·INR 1.9 다",
+   "steps": 3,
+   "chain": [
+    "입원 전날까지 매일 음주 → 수술 3일째(마지막 음주 후 약 4일) 섬망 + 발열·고혈압·빈맥·발한·진전 → 알코올 금단 섬망",
+    "금단 섬망 → 벤조디아제핀(할로페리돌·락툴로오스 아님)",
+    "알부민 2.6·빌리루빈 3.4·INR 1.9·복수 → 간경변 → 산화 대사 없는 로라제팜"
+   ],
+   "key": [
+    {
+     "item": "입원 전날까지 마셨다",
+     "why": "금단 시점 계산의 기준",
+     "also": []
+    },
+    {
+     "item": "벽에 벌레가 기어간다고 한다",
+     "why": "섬망의 환시",
+     "also": []
+    },
+    {
+     "item": "체온 38.1 ℃, 혈압 168/100 mmHg, 맥박 124회/분",
+     "why": "자율신경 항진 — 간성뇌증과 가른다",
+     "also": []
+    },
+    {
+     "item": "전신에 땀이 나며 손 떨림이 심하다",
+     "why": "금단 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목덜미 강직은 없다",
+     "why": "수막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈당 112 mg/dL",
+     "why": "저혈당 섬망 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "프로트롬빈시간 INR 1.9",
+     "why": "간 합성 기능 저하 — 약 선택",
+     "also": []
+    },
+    {
+     "item": "혈청 알부민 2.6 g/dL",
+     "why": "간경변 중증도",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "마지막 음주 후 약 4일에 자율신경 항진을 동반한 섬망이 온 알코올 금단 섬망이다. 간경변이 있으므로 산화 대사를 거치지 않는 로라제팜을 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "간기능이 정상인 환자였다면 긴 작용의 디아제팜이 흔히 쓰이는 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0160",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "외과계 — 교통사고 뒤 수혈에 반응하지 않는 저혈압",
+  "type": "외과계 — 교통사고 뒤 수혈에 반응하지 않는 저혈압",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "32세 남자가 오토바이를 타다 승용차와 충돌한 뒤 30분 만에 응급실에 실려 왔다. 왼쪽 윗배 통증을 호소한다. 기도는 유지되고 양쪽 호흡음은 대칭이며 흉부 X선에서 기흉·혈흉은 없다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 결정질 용액 1 L 와 적혈구 2단위를 급속 수혈한 뒤에도 혈압은 84/50 mmHg 이다. 왼쪽 윗배에 압통과 반발통이 있다. 골반 X선에서 골절은 없다. 외상초음파(FAST)에서 비장 주위와 간신장 오목에 액체가 고여 있고 심낭 액체는 없다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "수액 치료와 연속 혈색소 측정",
+   "응급 개복술",
+   "복부 조영 CT",
+   "비장동맥 혈관조영 색전술",
+   "진단적 복강세척"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 둔상 뒤 수액·수혈에 반응하지 않는 쇼크(혈압 84/50 mmHg)이고, 흉부 X선·골반 X선에서 흉강·골반 출혈원이 없으며 FAST 에서 복강 내 액체가 확인되었다. 출혈원이 복강 안이고 혈역학적으로 불안정하므로 CT 로 옮기지 않고 응급 개복술로 출혈을 조절한다.\n- 원리: <b>외상 쇼크의 원칙은 '출혈원을 찾아 가장 빨리 막는다'</b>이다. 둔상 환자의 치명적 출혈은 흉강·복강·골반·후복막·긴뼈 골절 다섯 곳에서 생기므로, 1차 평가에서 흉부 X선·골반 X선·FAST 로 이 자리를 빠르게 훑는다.<br> <b>FAST</b>는 간신장 오목(Morison), 비장 주위, 골반, 심낭 네 곳의 자유 액체를 본다. 약 200 mL 이상이면 보이며, 불안정한 환자에서 양성이면 그 액체를 출혈로 간주한다.<br> <b>반응 정도가 경로를 가른다</b>. 초기 수액·수혈 뒤 혈압이 회복되어 유지되면(반응군) CT 로 손상 장기와 등급을 정해 비수술 치료나 색전술을 고려할 수 있다. <b>반응이 없거나 일시적이면</b>(비반응군) CT 실은 '죽음의 터널'이다 — 영상을 찍는 동안 출혈이 계속된다.<br> 그래서 <b>불안정 + FAST 양성 = 개복술</b>이다. 골반 골절에 의한 출혈이라면 골반 고정·전복막 패킹·혈관조영 색전술이 우선이지만, 이 환자는 골반 X선이 정상이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">응급 개복술(정답)</th><th>복부 조영 CT(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>수액·수혈에 반응 없음</b></td><td>반응군 — 혈압 회복·유지</td></tr> <tr><td>목적</td><td>출혈 조절</td><td>손상 장기·등급 확인, 비수술 치료 선택</td></tr> <tr><td>이 환자</td><td><b>1 L + 적혈구 2단위 뒤 84/50, FAST 양성</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 CT</b>다. 비장 손상은 대부분 비수술 치료로 끝나기 때문에 CT 를 먼저 떠올리기 쉽다. 갈림길은 <b>혈역학적 안정</b>이다. 수혈 뒤 혈압이 120/74 mmHg 로 유지되었다면 CT 가 정답이다.\n- 오답 이유:\n  - ① 수액과 연속 혈색소 측정은 안정된 환자의 비수술 치료 중 감시 방법이다. 비반응 쇼크에서 이것만 하면 출혈로 사망한다. 저등급 비장 손상으로 CT 를 찍은 안정된 환자라면 정답이 된다.\n  - ③ 복부 조영 CT 는 혈역학적으로 안정된 둔상 환자에서 손상 장기와 등급을 정해 비수술 치료를 고르는 데 쓴다. 이 환자는 수혈에도 저혈압이다. 수혈 뒤 혈압이 정상으로 유지되었다면 정답이 된다.\n  - ④ 비장동맥 색전술은 안정된 환자에서 CT 상 조영제 유출이나 가성동맥류가 있을 때 비장을 보존하려고 한다. 불안정한 환자를 혈관조영실로 옮기면 출혈 조절이 늦어진다. 안정된 환자의 CT 에서 조영제 유출이 보였다면 정답이 된다.\n  - ⑤ 진단적 복강세척은 복강 내 출혈을 확인하는 검사로 FAST 가 없거나 애매할 때 쓴다. 이미 FAST 가 양성이라 더 알 것이 없다. 초음파를 쓸 수 없는 상황에서 FAST 대신이라면 고려된다.\n- 함정: 비장 손상 대부분이 비수술로 치료된다는 사실은 '안정된' 환자 이야기다. 비반응 쇼크 + FAST 양성이면 CT 실로 가지 않는다.\n- 학습목표: 수액·수혈에 반응하지 않는 둔상 환자에서 FAST 가 양성이면 CT 로 옮기지 않고 응급 개복술로 출혈을 조절한다\n- 근거·출처: American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. — abdominal and pelvic trauma · Coccolini F et al. Splenic trauma: WSES classification and guidelines for adult and pediatric patients. World J Emerg Surg 2017;12:40",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "둔상 뒤 수액·수혈에 반응하지 않는 쇼크(혈압 84/50 mmHg)이고, 흉부 X선·골반 X선에서 흉강·골반 출혈원이 없으며 FAST 에서 복강 내 액체가 확인되었다. 출혈원이 복강 안이고 혈역학적으로 불안정하므로 CT 로 옮기지 않고 응급 개복술로 출혈을 조절한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>외상 쇼크의 원칙은 '출혈원을 찾아 가장 빨리 막는다'</b>이다. 둔상 환자의 치명적 출혈은 흉강·복강·골반·후복막·긴뼈 골절 다섯 곳에서 생기므로, 1차 평가에서 흉부 X선·골반 X선·FAST 로 이 자리를 빠르게 훑는다.<br> <b>FAST</b>는 간신장 오목(Morison), 비장 주위, 골반, 심낭 네 곳의 자유 액체를 본다. 약 200 mL 이상이면 보이며, 불안정한 환자에서 양성이면 그 액체를 출혈로 간주한다.<br> <b>반응 정도가 경로를 가른다</b>. 초기 수액·수혈 뒤 혈압이 회복되어 유지되면(반응군) CT 로 손상 장기와 등급을 정해 비수술 치료나 색전술을 고려할 수 있다. <b>반응이 없거나 일시적이면</b>(비반응군) CT 실은 '죽음의 터널'이다 — 영상을 찍는 동안 출혈이 계속된다.<br> 그래서 <b>불안정 + FAST 양성 = 개복술</b>이다. 골반 골절에 의한 출혈이라면 골반 고정·전복막 패킹·혈관조영 색전술이 우선이지만, 이 환자는 골반 X선이 정상이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">응급 개복술(정답)</th><th>복부 조영 CT(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td><b>수액·수혈에 반응 없음</b></td><td>반응군 — 혈압 회복·유지</td></tr> <tr><td>목적</td><td>출혈 조절</td><td>손상 장기·등급 확인, 비수술 치료 선택</td></tr> <tr><td>이 환자</td><td><b>1 L + 적혈구 2단위 뒤 84/50, FAST 양성</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 CT</b>다. 비장 손상은 대부분 비수술 치료로 끝나기 때문에 CT 를 먼저 떠올리기 쉽다. 갈림길은 <b>혈역학적 안정</b>이다. 수혈 뒤 혈압이 120/74 mmHg 로 유지되었다면 CT 가 정답이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수액과 연속 혈색소 측정은 안정된 환자의 비수술 치료 중 감시 방법이다. 비반응 쇼크에서 이것만 하면 출혈로 사망한다. 저등급 비장 손상으로 CT 를 찍은 안정된 환자라면 정답이 된다.\n③ 복부 조영 CT 는 혈역학적으로 안정된 둔상 환자에서 손상 장기와 등급을 정해 비수술 치료를 고르는 데 쓴다. 이 환자는 수혈에도 저혈압이다. 수혈 뒤 혈압이 정상으로 유지되었다면 정답이 된다.\n④ 비장동맥 색전술은 안정된 환자에서 CT 상 조영제 유출이나 가성동맥류가 있을 때 비장을 보존하려고 한다. 불안정한 환자를 혈관조영실로 옮기면 출혈 조절이 늦어진다. 안정된 환자의 CT 에서 조영제 유출이 보였다면 정답이 된다.\n⑤ 진단적 복강세척은 복강 내 출혈을 확인하는 검사로 FAST 가 없거나 애매할 때 쓴다. 이미 FAST 가 양성이라 더 알 것이 없다. 초음파를 쓸 수 없는 상황에서 FAST 대신이라면 고려된다."
+   },
+   {
+    "k": "함정",
+    "v": "비장 손상 대부분이 비수술로 치료된다는 사실은 '안정된' 환자 이야기다. 비반응 쇼크 + FAST 양성이면 CT 실로 가지 않는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "수액·수혈에 반응하지 않는 둔상 환자에서 FAST 가 양성이면 CT 로 옮기지 않고 응급 개복술로 출혈을 조절한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. — abdominal and pelvic trauma · Coccolini F et al. Splenic trauma: WSES classification and guidelines for adult and pediatric patients. World J Emerg Surg 2017;12:40"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "수액·수혈에 반응하지 않는 쇼크이고 FAST 가 양성이며 다른 출혈원이 없으므로 응급 개복술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "CT 는 수액·수혈 뒤 혈압이 회복된 안정 환자에서만 하고, 이 환자는 84/50 mmHg 로 반응이 없다",
+   "steps": 3,
+   "chain": [
+    "결정질 1 L + 적혈구 2단위 뒤에도 84/50 → 비반응 출혈성 쇼크",
+    "흉부 X선·골반 X선 정상, FAST 에서 비장 주위·간신장 오목 액체 → 출혈원은 복강",
+    "불안정 + 복강 출혈 → CT 없이 응급 개복술"
+   ],
+   "key": [
+    {
+     "item": "결정질 용액 1 L 와 적혈구 2단위를 급속 수혈한 뒤에도 혈압은 84/50 mmHg 이다",
+     "why": "비반응군 — CT 로 가지 않는다",
+     "also": []
+    },
+    {
+     "item": "비장 주위와 간신장 오목에 액체가 고여 있고",
+     "why": "복강 내 출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "골반 X선에서 골절은 없다",
+     "why": "골반 출혈 가능성을 낮춰 색전술·패킹 경로가 아니다",
+     "also": []
+    },
+    {
+     "item": "흉부 X선에서 기흉·혈흉은 없다",
+     "why": "흉강 출혈원 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "심낭 액체는 없다",
+     "why": "심낭 눌림증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "왼쪽 윗배에 압통과 반발통이 있다",
+     "why": "비장 손상을 시사하지만 처치 결정은 혈역학과 FAST 로 한다",
+     "also": []
+    }
+   ],
+   "summary": "수액·수혈에도 저혈압이 지속되는 둔상 환자에서 흉부·골반은 정상이고 FAST 가 양성이다. 출혈원이 복강이고 불안정하므로 CT 없이 응급 개복술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "수혈 뒤 혈압이 120/74 mmHg 로 회복되어 유지되었다면 복부 조영 CT 로 손상 등급을 정하는 것이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0159",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "신경 — 설사 뒤 며칠에 걸쳐 진행하는 다리 근력 약화",
+  "type": "신경 — 설사 뒤 며칠에 걸쳐 진행하는 다리 근력 약화",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "A 34-year-old man comes to the emergency department because of progressive weakness of his legs for 4 days. He first noticed tingling in his toes and fingers, followed by difficulty climbing stairs; since this morning he can walk only with assistance. Three weeks ago he had diarrhea that resolved without treatment. His temperature is 36.9°C (98.4°F), pulse is 88/min, respirations are 16/min, and blood pressure is 128/80 mm Hg. Muscle strength is 3/5 in the hip flexors, 4/5 in the ankle dorsiflexors, and 4/5 in the upper extremities. Deep tendon reflexes are absent in the lower extremities and 1+ in the upper extremities. Vibration sense is mildly decreased in the toes. There is no sensory level. Forced vital capacity is 3.2 L (72% of predicted). Cerebrospinal fluid analysis shows a leukocyte count of 2/mm3 and a protein concentration of 92 mg/dL.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Intravenous immune globulin",
+   "Intravenous methylprednisolone",
+   "Oral prednisone",
+   "Pyridostigmine",
+   "Intravenous acyclovir"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Ascending, symmetric weakness over days after a diarrheal illness, areflexia, distal paresthesias, no sensory level, and albuminocytologic dissociation in the CSF indicate Guillain-Barré syndrome (acute inflammatory demyelinating or axonal polyneuropathy; Campylobacter jejuni is a common trigger). Because he can no longer walk unaided and is within 2 weeks of onset, disease-modifying treatment is indicated: intravenous immune globulin (or plasma exchange, which is equally effective).\n- 원리: <b>Guillain-Barré syndrome</b> is an immune attack on peripheral nerves, often triggered by <b>molecular mimicry</b>: antibodies against <i>Campylobacter jejuni</i> lipooligosaccharide cross-react with gangliosides (such as GM1) on axons or myelin.<br> <b>Clinical logic</b>: peripheral nerve disease causes <b>areflexia</b> (the reflex arc is broken) and distal paresthesias without a sensory level — which separates it from spinal cord compression. Weakness peaks within 4 weeks.<br> <b>CSF</b>: inflamed nerve roots leak protein into the CSF while cells stay normal — <b>albuminocytologic dissociation</b> (protein high, &lt; 10 cells/mm3). It may be normal in the first week.<br> <b>Treatment</b>: IVIG (0.4 g/kg daily for 5 days) or plasma exchange shortens recovery when started within 2 weeks in patients who cannot walk unaided. IVIG is thought to neutralize pathogenic antibodies and block Fc receptors; plasma exchange removes them. <b>Glucocorticoids do not help</b> — randomized trials showed no benefit and possibly slower recovery. Supportive care is equally crucial: serial <b>FVC</b> (intubate near 20 mL/kg), and watch for autonomic instability.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IVIG (answer)</th><th>IV methylprednisolone (closest rival)</th></tr></thead><tbody> <tr><td>Effect in GBS</td><td><b>Faster recovery (equal to plasma exchange)</b></td><td>No benefit in randomized trials</td></tr> <tr><td>Indication</td><td><b>Cannot walk unaided, within 2 (to 4) weeks</b></td><td>Chronic form (CIDP), not acute GBS</td></tr> <tr><td>This patient</td><td><b>Walks only with assistance, day 4</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is methylprednisolone</b> because many immune neuropathies respond to steroids. The dividing line is <b>time course</b>: steroids treat CIDP (progression over more than 8 weeks) but not acute GBS.\n- 오답 이유:\n  - (B) High-dose methylprednisolone seems logical for an immune disease, but trials in acute GBS showed no benefit. It would be correct for chronic inflammatory demyelinating polyneuropathy progressing over more than 8 weeks, or for an acute multiple sclerosis relapse.\n  - (C) Oral prednisone likewise does not improve acute GBS and may slow recovery. It would be appropriate for CIDP after the diagnosis is established by a progressive course longer than 8 weeks.\n  - (D) Pyridostigmine, an acetylcholinesterase inhibitor, treats myasthenia gravis, which causes fatigable ocular and bulbar weakness with preserved reflexes and no sensory symptoms. It would be correct for a patient with ptosis and diplopia that worsen by evening.\n  - (E) Acyclovir treats herpes simplex encephalitis or varicella-zoster infection, which cause fever, altered mental status, and CSF pleocytosis. This CSF has 2 cells/mm3. It would be correct with fever, confusion, and a lymphocytic CSF with temporal lobe changes.\n- 함정: Steroids work in CIDP but not in acute GBS; treat with IVIG or plasma exchange when the patient can no longer walk unaided.\n- 학습목표: 감염 뒤 상행성 대칭 근력 약화·반사 소실·단백세포해리로 길랭-바레 증후군을 진단하고, 보행에 도움이 필요하면 IVIG(또는 혈장교환)로 치료하며 글루코코르티코이드는 쓰지 않는다\n- 근거·출처: van Doorn PA et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30:3646 · Hughes RAC et al. Corticosteroids for Guillain-Barré syndrome. Cochrane Database Syst Rev 2016;10:CD001446 · Harrison's Principles of Internal Medicine, 21st ed. — Guillain-Barré syndrome and other immune-mediated neuropathies",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Ascending, symmetric weakness over days after a diarrheal illness, areflexia, distal paresthesias, no sensory level, and albuminocytologic dissociation in the CSF indicate Guillain-Barré syndrome (acute inflammatory demyelinating or axonal polyneuropathy; Campylobacter jejuni is a common trigger). Because he can no longer walk unaided and is within 2 weeks of onset, disease-modifying treatment is indicated: intravenous immune globulin (or plasma exchange, which is equally effective)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Guillain-Barré syndrome</b> is an immune attack on peripheral nerves, often triggered by <b>molecular mimicry</b>: antibodies against <i>Campylobacter jejuni</i> lipooligosaccharide cross-react with gangliosides (such as GM1) on axons or myelin.<br> <b>Clinical logic</b>: peripheral nerve disease causes <b>areflexia</b> (the reflex arc is broken) and distal paresthesias without a sensory level — which separates it from spinal cord compression. Weakness peaks within 4 weeks.<br> <b>CSF</b>: inflamed nerve roots leak protein into the CSF while cells stay normal — <b>albuminocytologic dissociation</b> (protein high, &lt; 10 cells/mm3). It may be normal in the first week.<br> <b>Treatment</b>: IVIG (0.4 g/kg daily for 5 days) or plasma exchange shortens recovery when started within 2 weeks in patients who cannot walk unaided. IVIG is thought to neutralize pathogenic antibodies and block Fc receptors; plasma exchange removes them. <b>Glucocorticoids do not help</b> — randomized trials showed no benefit and possibly slower recovery. Supportive care is equally crucial: serial <b>FVC</b> (intubate near 20 mL/kg), and watch for autonomic instability."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IVIG (answer)</th><th>IV methylprednisolone (closest rival)</th></tr></thead><tbody> <tr><td>Effect in GBS</td><td><b>Faster recovery (equal to plasma exchange)</b></td><td>No benefit in randomized trials</td></tr> <tr><td>Indication</td><td><b>Cannot walk unaided, within 2 (to 4) weeks</b></td><td>Chronic form (CIDP), not acute GBS</td></tr> <tr><td>This patient</td><td><b>Walks only with assistance, day 4</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is methylprednisolone</b> because many immune neuropathies respond to steroids. The dividing line is <b>time course</b>: steroids treat CIDP (progression over more than 8 weeks) but not acute GBS."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) High-dose methylprednisolone seems logical for an immune disease, but trials in acute GBS showed no benefit. It would be correct for chronic inflammatory demyelinating polyneuropathy progressing over more than 8 weeks, or for an acute multiple sclerosis relapse.\n(C) Oral prednisone likewise does not improve acute GBS and may slow recovery. It would be appropriate for CIDP after the diagnosis is established by a progressive course longer than 8 weeks.\n(D) Pyridostigmine, an acetylcholinesterase inhibitor, treats myasthenia gravis, which causes fatigable ocular and bulbar weakness with preserved reflexes and no sensory symptoms. It would be correct for a patient with ptosis and diplopia that worsen by evening.\n(E) Acyclovir treats herpes simplex encephalitis or varicella-zoster infection, which cause fever, altered mental status, and CSF pleocytosis. This CSF has 2 cells/mm3. It would be correct with fever, confusion, and a lymphocytic CSF with temporal lobe changes."
+   },
+   {
+    "k": "함정",
+    "v": "Steroids work in CIDP but not in acute GBS; treat with IVIG or plasma exchange when the patient can no longer walk unaided."
+   },
+   {
+    "k": "학습목표",
+    "v": "감염 뒤 상행성 대칭 근력 약화·반사 소실·단백세포해리로 길랭-바레 증후군을 진단하고, 보행에 도움이 필요하면 IVIG(또는 혈장교환)로 치료하며 글루코코르티코이드는 쓰지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "van Doorn PA et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30:3646 · Hughes RAC et al. Corticosteroids for Guillain-Barré syndrome. Cochrane Database Syst Rev 2016;10:CD001446 · Harrison's Principles of Internal Medicine, 21st ed. — Guillain-Barré syndrome and other immune-mediated neuropathies"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "설사 3주 뒤 상행성 약화·반사 소실·단백세포해리로 길랭-바레 증후군이고, 도움 없이 걸을 수 없으므로 IVIG 를 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "글루코코르티코이드는 급성 길랭-바레 증후군에서 효과가 없고 만성(CIDP)에서만 쓴다",
+   "steps": 3,
+   "chain": [
+    "설사 3주 뒤 4일에 걸친 상행성 대칭 약화 + 반사 소실 + 감각 수준 없음 → 말초신경병(척수 아님)",
+    "뇌척수액 단백 92·세포 2 → 단백세포해리 → 길랭-바레 증후군",
+    "도움 없이 못 걸음·발병 4일 → 질병 조절 치료 적응 → IVIG(스테로이드 아님)"
+   ],
+   "key": [
+    {
+     "item": "Three weeks ago he had diarrhea",
+     "why": "선행 감염(캄필로박터) — 분자 모방",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are absent in the lower extremities",
+     "why": "말초신경 반사궁 손상",
+     "also": []
+    },
+    {
+     "item": "a protein concentration of 92 mg/dL",
+     "why": "단백세포해리의 한쪽",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "a leukocyte count of 2/mm3",
+     "why": "감염성 수막뇌염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no sensory level",
+     "why": "척수 압박 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "he can walk only with assistance",
+     "why": "치료 적응증 — 도움 없이 못 걸음",
+     "also": []
+    },
+    {
+     "item": "Forced vital capacity is 3.2 L (72% of predicted)",
+     "why": "아직 삽관 기준이 아니지만 연속 측정이 필요",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "설사 뒤 상행성 약화·반사 소실·단백세포해리로 길랭-바레 증후군이다. 도움 없이 걷지 못하므로 IVIG(또는 혈장교환)를 주고, 글루코코르티코이드는 효과가 없다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 증상이 8주 넘게 서서히 진행했다면 만성 염증성 탈수초 다발신경병으로 글루코코르티코이드가 치료가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0158",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "소화기·간담췌 — 선종 절제 뒤 감시 대장내시경",
+  "type": "소화기·간담췌 — 선종 절제 뒤 감시 대장내시경",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-28",
+  "vignette": "58세 남자가 대장암 선별 대장내시경 결과를 들으러 왔다. 가족력에 대장암은 없고 증상은 없다. 장 정결은 우수했고 맹장까지 관찰하였다. S상결장에서 15 mm 크기의 유경성 용종 1개를 올가미로 한 조각으로(일괄) 절제했고, 병리 결과는 고등급 이형성이 없는 관융모선종이며 절제면은 음성이다. 그 밖에 상행결장의 4 mm 과형성 용종 1개를 절제하였다. 혈색소 14.2 g/dL, CEA 1.8 ng/mL 이다.",
+  "question": "다음 대장내시경 시기로 가장 적절한 것은?",
+  "options": [
+   "1년 후",
+   "5년 후",
+   "10년 후",
+   "3년 후",
+   "6개월 후"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 크기 10 mm 이상 또는 융모 성분이 있는 선종은 진행성 선종이다. 장 정결이 우수하고 맹장까지 관찰한 완전한 검사에서 이를 한 조각으로 완전 절제했으므로 다음 감시 대장내시경은 3년 후다. 4 mm 과형성 용종은 감시 간격을 바꾸지 않는다.\n- 원리: <b>감시 간격은 '다음 검사 때 진행성 신생물이 발견될 위험'</b>으로 정한다. 그 위험을 예측하는 것은 처음 발견된 선종의 <b>크기·개수·조직형(융모 성분·고등급 이형성)</b>과 <b>절제 방식</b>이다.<br> <b>진행성 선종</b>(10 mm 이상, 융모 성분 25 % 이상, 고등급 이형성 중 하나)은 이후 진행성 신생물 위험이 높아 <b>3년</b> 뒤 본다. 10 mm 미만 관상선종 1~2개는 위험이 일반인과 비슷해 7~10년, 3~4개는 3~5년, 5~10개는 3년, 10개 이상은 1년(유전성 증후군 평가 포함)이다.<br> <b>절제 방식</b>이 간격을 따로 바꾼다. <b>20 mm 이상을 여러 조각으로(분할) 절제</b>하면 잔존 선종 재발이 흔해 <b>6개월</b> 뒤 절제 부위를 확인한다. 한 조각으로 떼고 절제면이 음성이면 이 이유가 없다.<br> <b>검사의 질</b>도 전제다. 장 정결이 불량하거나 맹장까지 보지 못했으면 간격을 따지기 전에 1년 이내에 다시 한다. 이 환자는 정결 우수·맹장 도달이므로 크기·조직형 기준을 그대로 적용한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">3년 후(정답)</th><th>6개월 후(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조건</td><td><b>진행성 선종을 일괄 완전 절제</b></td><td>20 mm 이상을 분할 절제</td></tr> <tr><td>목적</td><td>새로 생기는 진행성 신생물 감시</td><td>남은 선종 확인(재발 흔함)</td></tr> <tr><td>이 환자</td><td><b>15 mm, 한 조각, 절제면 음성</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 6개월</b>이다. 크고 융모 성분이 있다는 이유로 짧게 잡기 쉽지만, 6개월은 <b>분할 절제</b>의 기준이다. 같은 용종을 25 mm 로 여러 조각 떼었다면 6개월이 정답이 된다.\n- 오답 이유:\n  - ① 1년 간격은 선종이 10개 이상이거나 장 정결이 불량해 검사가 불완전했을 때다. 이 환자는 선종 1개, 정결 우수, 맹장 도달이다. 선종이 12개였다면 정답이 된다.\n  - ② 5년은 10 mm 미만 관상선종 3~4개(3~5년)의 범위다. 진행성 선종은 3년이다. 8 mm 관상선종 3개만 있었다면 정답이 된다.\n  - ③ 10년은 정상 소견이거나 직장·S상결장의 10 mm 미만 과형성 용종만 있을 때다. 진행성 선종이 있으면 해당하지 않는다. 4 mm 과형성 용종만 있었다면 정답이 된다.\n  - ⑤ 6개월 간격은 20 mm 이상 선종을 여러 조각으로 떼어 잔존 선종이 남았을 가능성이 있을 때다. 이 용종은 15 mm 이고 한 조각으로 떼었다. 25 mm 용종을 분할 절제했다면 정답이 된다.\n- 함정: 6개월은 '큰 선종'이 아니라 '20 mm 이상 분할 절제'의 기준이다. 일괄 완전 절제한 진행성 선종은 3년이다.\n- 학습목표: 10 mm 이상 선종(진행성 선종)을 일괄 절제한 뒤 감시 대장내시경 간격이 3년임을 알고, 6개월 간격이 필요한 분할 절제 조건과 구분한다\n- 근거·출처: Gupta S et al. Recommendations for follow-up after colonoscopy and polypectomy: US Multi-Society Task Force on Colorectal Cancer. Gastroenterology 2020;158:1131 · 대한소화기내시경학회 외. 대장용종절제술 후 대장내시경 추적검사 가이드라인(2019 개정)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "크기 10 mm 이상 또는 융모 성분이 있는 선종은 진행성 선종이다. 장 정결이 우수하고 맹장까지 관찰한 완전한 검사에서 이를 한 조각으로 완전 절제했으므로 다음 감시 대장내시경은 3년 후다. 4 mm 과형성 용종은 감시 간격을 바꾸지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>감시 간격은 '다음 검사 때 진행성 신생물이 발견될 위험'</b>으로 정한다. 그 위험을 예측하는 것은 처음 발견된 선종의 <b>크기·개수·조직형(융모 성분·고등급 이형성)</b>과 <b>절제 방식</b>이다.<br> <b>진행성 선종</b>(10 mm 이상, 융모 성분 25 % 이상, 고등급 이형성 중 하나)은 이후 진행성 신생물 위험이 높아 <b>3년</b> 뒤 본다. 10 mm 미만 관상선종 1~2개는 위험이 일반인과 비슷해 7~10년, 3~4개는 3~5년, 5~10개는 3년, 10개 이상은 1년(유전성 증후군 평가 포함)이다.<br> <b>절제 방식</b>이 간격을 따로 바꾼다. <b>20 mm 이상을 여러 조각으로(분할) 절제</b>하면 잔존 선종 재발이 흔해 <b>6개월</b> 뒤 절제 부위를 확인한다. 한 조각으로 떼고 절제면이 음성이면 이 이유가 없다.<br> <b>검사의 질</b>도 전제다. 장 정결이 불량하거나 맹장까지 보지 못했으면 간격을 따지기 전에 1년 이내에 다시 한다. 이 환자는 정결 우수·맹장 도달이므로 크기·조직형 기준을 그대로 적용한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">3년 후(정답)</th><th>6개월 후(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조건</td><td><b>진행성 선종을 일괄 완전 절제</b></td><td>20 mm 이상을 분할 절제</td></tr> <tr><td>목적</td><td>새로 생기는 진행성 신생물 감시</td><td>남은 선종 확인(재발 흔함)</td></tr> <tr><td>이 환자</td><td><b>15 mm, 한 조각, 절제면 음성</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 6개월</b>이다. 크고 융모 성분이 있다는 이유로 짧게 잡기 쉽지만, 6개월은 <b>분할 절제</b>의 기준이다. 같은 용종을 25 mm 로 여러 조각 떼었다면 6개월이 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 1년 간격은 선종이 10개 이상이거나 장 정결이 불량해 검사가 불완전했을 때다. 이 환자는 선종 1개, 정결 우수, 맹장 도달이다. 선종이 12개였다면 정답이 된다.\n② 5년은 10 mm 미만 관상선종 3~4개(3~5년)의 범위다. 진행성 선종은 3년이다. 8 mm 관상선종 3개만 있었다면 정답이 된다.\n③ 10년은 정상 소견이거나 직장·S상결장의 10 mm 미만 과형성 용종만 있을 때다. 진행성 선종이 있으면 해당하지 않는다. 4 mm 과형성 용종만 있었다면 정답이 된다.\n⑤ 6개월 간격은 20 mm 이상 선종을 여러 조각으로 떼어 잔존 선종이 남았을 가능성이 있을 때다. 이 용종은 15 mm 이고 한 조각으로 떼었다. 25 mm 용종을 분할 절제했다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "6개월은 '큰 선종'이 아니라 '20 mm 이상 분할 절제'의 기준이다. 일괄 완전 절제한 진행성 선종은 3년이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "10 mm 이상 선종(진행성 선종)을 일괄 절제한 뒤 감시 대장내시경 간격이 3년임을 알고, 6개월 간격이 필요한 분할 절제 조건과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gupta S et al. Recommendations for follow-up after colonoscopy and polypectomy: US Multi-Society Task Force on Colorectal Cancer. Gastroenterology 2020;158:1131 · 대한소화기내시경학회 외. 대장용종절제술 후 대장내시경 추적검사 가이드라인(2019 개정)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "15 mm 관융모선종(진행성 선종)을 완전한 검사에서 일괄 완전 절제했으므로 다음 감시는 3년 후다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "6개월은 20 mm 이상을 분할 절제했을 때의 기준이고, 이 용종은 15 mm 를 한 조각으로 떼었다",
+   "steps": 3,
+   "chain": [
+    "장 정결 우수·맹장 도달 → 완전한 검사 → 간격 기준 적용 가능",
+    "15 mm·관융모선종 → 진행성 선종 → 3년",
+    "한 조각 절제·절제면 음성 → 6개월 재확인 조건 아님 → 3년"
+   ],
+   "key": [
+    {
+     "item": "15 mm 크기의 유경성 용종 1개",
+     "why": "10 mm 이상 — 진행성 선종",
+     "also": []
+    },
+    {
+     "item": "관융모선종",
+     "why": "융모 성분 — 진행성 선종",
+     "also": []
+    },
+    {
+     "item": "한 조각으로(일괄) 절제",
+     "why": "6개월 재확인이 필요 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "상행결장의 4 mm 과형성 용종 1개",
+     "why": "작은 과형성 용종은 간격을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "장 정결은 우수했고 맹장까지 관찰하였다",
+     "why": "검사가 완전해 간격 기준을 그대로 쓴다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "CEA 1.8 ng/mL",
+     "why": "선별 판단과 무관 — 감시 간격에 쓰지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "완전한 검사에서 15 mm 관융모선종(진행성 선종)을 한 조각으로 완전 절제했다. 분할 절제가 아니므로 6개월이 아니라 3년 후 감시 대장내시경을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 선종이 25 mm 였고 여러 조각으로 떼었다면 6개월 뒤 절제 부위 확인이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0157",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "이비인후과 — 항생제에도 악화하는 인후통과 개구장애",
+  "type": "이비인후과 — 항생제에도 악화하는 인후통과 개구장애",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-28",
+  "vignette": "A 22-year-old man comes to the physician because of a 5-day history of sore throat that has worsened over the past 2 days despite taking oral amoxicillin. He now has severe pain on swallowing, difficulty opening his mouth, and a muffled voice. He has no drooling or noisy breathing. His temperature is 38.6°C (101.5°F), pulse is 98/min, and blood pressure is 124/76 mm Hg. Oxygen saturation is 99% on room air. Examination shows trismus and a fluctuant bulge of the left soft palate above the tonsil with deviation of the uvula to the right. There is tender left cervical lymphadenopathy. The neck is supple, with full range of motion.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous antibiotics alone",
+   "CT scan of the neck with contrast",
+   "Immediate tonsillectomy under general anesthesia",
+   "Oral glucocorticoids alone",
+   "Needle aspiration of the swelling and antibiotics"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Worsening unilateral sore throat despite antibiotics, trismus, a muffled ('hot potato') voice, a fluctuant bulge of the soft palate above the tonsil, and contralateral deviation of the uvula indicate a peritonsillar abscess. The airway is stable, and the diagnosis is clinically clear. Pus must be drained — by needle aspiration or incision and drainage — together with antibiotics that cover streptococci and oral anaerobes.\n- 원리: A <b>peritonsillar abscess</b> forms in the space between the tonsillar capsule and the superior constrictor muscle, usually as a complication of tonsillitis (often polymicrobial: <i>Streptococcus pyogenes</i>, oral anaerobes such as <i>Fusobacterium</i>).<br> The signs follow the anatomy: pus pushes the tonsil and soft palate <b>medially and down</b>, so the <b>uvula deviates to the opposite side</b>; inflammation reaches the medial pterygoid muscle, causing <b>trismus</b>; and the swollen palate changes resonance, giving a <b>muffled voice</b>.<br> <b>Why drainage</b>: antibiotics penetrate an abscess cavity poorly. Peritonsillar <b>cellulitis</b> (no fluctuance, no pus) responds to antibiotics alone, whereas an abscess requires the pus to be removed. Needle aspiration and incision and drainage are similarly effective; the aspirate also confirms the diagnosis.<br> <b>Imaging</b> (contrast CT) is reserved for uncertainty or suspected spread to deeper neck spaces — neck stiffness or limited neck motion, stridor, or failure to improve after drainage.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Drainage + antibiotics (answer)</th><th>Antibiotics alone (closest rival)</th></tr></thead><tbody> <tr><td>Condition</td><td><b>Peritonsillar abscess</b></td><td>Peritonsillar cellulitis</td></tr> <tr><td>Palate</td><td><b>Fluctuant bulge</b>, uvula deviated</td><td>Swollen, erythematous, no fluctuance</td></tr> <tr><td>Trismus</td><td>Common</td><td>Absent or mild</td></tr> <tr><td>This patient</td><td><b>Fluctuance, trismus, uvular deviation, failed oral antibiotics</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is antibiotics alone</b>, which treats cellulitis. The dividing line is <b>fluctuance (pus)</b>. If the neck were stiff or breathing noisy, CT would come first to look for deep neck spread.\n- 오답 이유:\n  - (A) Antibiotics alone treat peritonsillar cellulitis without a pus collection. This patient has a fluctuant bulge and has already worsened on antibiotics. It would be correct if the soft palate were swollen but not fluctuant and there were no trismus.\n  - (B) Contrast CT is used when the diagnosis is uncertain or deep neck infection is suspected. Here the diagnosis is clinical, and the neck is supple with full motion. It would be correct with neck stiffness, torticollis, or a swelling extending below the mandible.\n  - (C) Immediate (quinsy) tonsillectomy is reserved for recurrent abscesses, failure of drainage, or recurrent tonsillitis meeting surgical criteria. It is not the first step for a first episode. It would be considered after a second abscess.\n  - (D) Glucocorticoids may reduce pain and swelling as an adjunct, but alone they do not treat infection or remove pus. They would be only an addition to drainage and antibiotics.\n- 함정: Fluctuance plus trismus and uvular deviation means pus — drain it; CT is for suspected deep spread, not for a clinically obvious abscess.\n- 학습목표: 개구장애·목젖 편위·연구개의 파동성 팽륭으로 편도주위농양을 진단하고, 기도가 안정적이면 바늘흡인(또는 절개배농)과 항생제로 치료한다\n- 근거·출처: Galioto NJ. Peritonsillar abscess. Am Fam Physician 2017;95:501 · Cummings Otolaryngology: Head and Neck Surgery, 7th ed. — pharyngitis and peritonsillar abscess",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Worsening unilateral sore throat despite antibiotics, trismus, a muffled ('hot potato') voice, a fluctuant bulge of the soft palate above the tonsil, and contralateral deviation of the uvula indicate a peritonsillar abscess. The airway is stable, and the diagnosis is clinically clear. Pus must be drained — by needle aspiration or incision and drainage — together with antibiotics that cover streptococci and oral anaerobes."
+   },
+   {
+    "k": "원리",
+    "v": "A <b>peritonsillar abscess</b> forms in the space between the tonsillar capsule and the superior constrictor muscle, usually as a complication of tonsillitis (often polymicrobial: <i>Streptococcus pyogenes</i>, oral anaerobes such as <i>Fusobacterium</i>).<br> The signs follow the anatomy: pus pushes the tonsil and soft palate <b>medially and down</b>, so the <b>uvula deviates to the opposite side</b>; inflammation reaches the medial pterygoid muscle, causing <b>trismus</b>; and the swollen palate changes resonance, giving a <b>muffled voice</b>.<br> <b>Why drainage</b>: antibiotics penetrate an abscess cavity poorly. Peritonsillar <b>cellulitis</b> (no fluctuance, no pus) responds to antibiotics alone, whereas an abscess requires the pus to be removed. Needle aspiration and incision and drainage are similarly effective; the aspirate also confirms the diagnosis.<br> <b>Imaging</b> (contrast CT) is reserved for uncertainty or suspected spread to deeper neck spaces — neck stiffness or limited neck motion, stridor, or failure to improve after drainage."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Drainage + antibiotics (answer)</th><th>Antibiotics alone (closest rival)</th></tr></thead><tbody> <tr><td>Condition</td><td><b>Peritonsillar abscess</b></td><td>Peritonsillar cellulitis</td></tr> <tr><td>Palate</td><td><b>Fluctuant bulge</b>, uvula deviated</td><td>Swollen, erythematous, no fluctuance</td></tr> <tr><td>Trismus</td><td>Common</td><td>Absent or mild</td></tr> <tr><td>This patient</td><td><b>Fluctuance, trismus, uvular deviation, failed oral antibiotics</b></td><td>—</td></tr> </tbody></table> <b>The closest rival is antibiotics alone</b>, which treats cellulitis. The dividing line is <b>fluctuance (pus)</b>. If the neck were stiff or breathing noisy, CT would come first to look for deep neck spread."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Antibiotics alone treat peritonsillar cellulitis without a pus collection. This patient has a fluctuant bulge and has already worsened on antibiotics. It would be correct if the soft palate were swollen but not fluctuant and there were no trismus.\n(B) Contrast CT is used when the diagnosis is uncertain or deep neck infection is suspected. Here the diagnosis is clinical, and the neck is supple with full motion. It would be correct with neck stiffness, torticollis, or a swelling extending below the mandible.\n(C) Immediate (quinsy) tonsillectomy is reserved for recurrent abscesses, failure of drainage, or recurrent tonsillitis meeting surgical criteria. It is not the first step for a first episode. It would be considered after a second abscess.\n(D) Glucocorticoids may reduce pain and swelling as an adjunct, but alone they do not treat infection or remove pus. They would be only an addition to drainage and antibiotics."
+   },
+   {
+    "k": "함정",
+    "v": "Fluctuance plus trismus and uvular deviation means pus — drain it; CT is for suspected deep spread, not for a clinically obvious abscess."
+   },
+   {
+    "k": "학습목표",
+    "v": "개구장애·목젖 편위·연구개의 파동성 팽륭으로 편도주위농양을 진단하고, 기도가 안정적이면 바늘흡인(또는 절개배농)과 항생제로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Galioto NJ. Peritonsillar abscess. Am Fam Physician 2017;95:501 · Cummings Otolaryngology: Head and Neck Surgery, 7th ed. — pharyngitis and peritonsillar abscess"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "파동성 연구개 팽륭·개구장애·목젖 반대쪽 편위로 편도주위농양이므로 바늘흡인과 항생제를 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "항생제 단독은 파동성이 없는 편도주위 봉와직염의 치료이고, 이 환자는 파동성이 있고 경구 항생제에도 악화했다",
+   "steps": 2,
+   "chain": [
+    "항생제에도 악화하는 한쪽 인후통 + 개구장애 + 파동성 팽륭 + 목젖 반대쪽 편위 → 편도주위농양",
+    "기도 안정·목 움직임 정상 → 영상 없이 배농 + 항생제"
+   ],
+   "key": [
+    {
+     "item": "a fluctuant bulge of the left soft palate above the tonsil",
+     "why": "고름이 있다 — 배농 적응증",
+     "also": []
+    },
+    {
+     "item": "deviation of the uvula to the right",
+     "why": "농양의 종괴 효과",
+     "also": []
+    },
+    {
+     "item": "trismus",
+     "why": "내측 익돌근 침범 — 봉와직염보다 농양",
+     "also": []
+    },
+    {
+     "item": "despite taking oral amoxicillin",
+     "why": "항생제 단독으로 부족함을 보여 준다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The neck is supple, with full range of motion",
+     "why": "깊은 목 감염 가능성을 낮춰 CT 가 먼저일 필요가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has no drooling or noisy breathing",
+     "why": "기도가 안정적 — 외래 처치 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "tender left cervical lymphadenopathy",
+     "why": "편도염에 흔한 반응 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "파동성 팽륭·개구장애·목젖 편위로 편도주위농양이다. 기도가 안정적이고 깊은 목 감염 징후가 없으므로 바늘흡인과 항생제로 치료한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "목이 뻣뻣하고 움직임이 제한되었거나 턱밑까지 부어 있었다면 깊은 목 감염을 보려고 조영 CT 가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0156",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "응급·중환자·외상 — 밀폐된 방에서 발견된 두통 환자",
+  "type": "응급·중환자·외상 — 밀폐된 방에서 발견된 두통 환자",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-28",
+  "vignette": "45세 남자가 겨울철 밀폐된 방에서 숯불을 피워 놓고 잠든 뒤 가족에게 발견되어 응급실에 왔다. 발견 당시 두통과 구역을 호소했고 한 차례 구토하였다. 의식은 명료하고 신경학적 검사에서 이상은 없다. 혈압 132/84 mmHg, 맥박 102회/분, 호흡 20회/분, 체온 36.8 ℃이다. 맥박산소측정기의 산소포화도는 99 %이다. 동맥혈가스분석에서 pH 7.36, PaO2 96 mmHg, PaCO2 36 mmHg 이고 일산화탄소헤모글로빈은 18 %이다. 심전도는 동빈맥이고 혈청 트로포닌은 정상이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "하이드록소코발라민 정맥 주사",
+   "비재호흡 마스크로 100 % 산소 투여",
+   "고압산소치료",
+   "비강 캐뉼라로 2 L/분 산소 투여",
+   "메틸렌블루 정맥 주사"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 밀폐된 공간의 숯불, 두통·구역·구토, 일산화탄소헤모글로빈 18 %로 일산화탄소 중독이다. 의식 소실·신경학적 이상·심근 허혈·심한 산증이 없고 일산화탄소헤모글로빈이 25 % 미만이므로 고압산소 적응증이 없다. 비재호흡 마스크로 100 % 산소를 주어 일산화탄소헤모글로빈 반감기를 약 4~5시간에서 약 1시간으로 줄인다.\n- 원리: <b>일산화탄소</b>는 헤모글로빈에 산소보다 약 <b>200배 이상</b> 강하게 결합한다. 결합 자리를 빼앗아 산소 운반량을 줄이고, 남은 헤모글로빈의 산소 해리곡선을 <b>왼쪽으로 이동</b>시켜 조직에 산소를 잘 내주지 못하게 한다. 미토콘드리아 사이토크롬 산화효소도 억제한다.<br> <b>맥박산소측정이 정상으로 보이는 이유</b>: 일반 맥박산소측정기는 두 파장만 써서 일산화탄소헤모글로빈을 산소헤모글로빈으로 읽는다. PaO2 도 녹아 있는 산소만 재므로 정상이다. 그래서 <b>일산화탄소헤모글로빈은 CO-oximetry 로 직접</b> 잰다.<br> <b>치료의 원리는 결합 경쟁</b>이다. 공기에서 반감기는 약 4~5시간, <b>100 % 산소에서 약 1시간</b>, 고압산소(2.5~3기압)에서 약 20분이다. 고압산소는 지연성 신경학적 후유증을 줄이려는 치료로, <b>의식 소실, 신경학적 이상, 심근 허혈, 심한 대사성 산증, 일산화탄소헤모글로빈 25 % 이상(임신부 15 % 이상)</b>에서 고려한다. 이런 소견이 없으면 정상압 100 % 산소를 증상이 없어지고 수치가 정상이 될 때까지 준다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">정상압 100 % 산소(정답)</th><th>고압산소치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>COHb 반감기</td><td><b>약 60분</b></td><td>약 20분</td></tr> <tr><td>적응증</td><td><b>모든 일산화탄소 중독의 기본</b></td><td>의식 소실·신경 이상·심근 허혈·심한 산증·COHb ≥ 25 %(임신 ≥ 15 %)</td></tr> <tr><td>이 환자</td><td><b>의식 명료, 신경학적 정상, 트로포닌 정상, COHb 18 %</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 고압산소</b>다. 갈림길은 <b>중증 표지가 하나라도 있느냐</b>다. 같은 환자가 발견 당시 의식을 잃었거나, 임신부였다면(15 % 이상) 고압산소가 정답이 된다.\n- 오답 이유:\n  - ① 하이드록소코발라민은 시안화물 해독제다. 밀폐 공간 화재 연기 흡입에서 설명되지 않는 심한 젖산증(젖산 8 mmol/L 이상)이 있으면 함께 쓴다. 숯불 중독이고 산증이 없는 이 환자에게는 적응증이 없다.\n  - ③ 고압산소는 의식 소실·신경학적 이상·심근 허혈·심한 산증·일산화탄소헤모글로빈 25 % 이상에서 지연성 신경학적 후유증을 줄이려고 쓴다. 이 환자는 해당 소견이 없다. 발견 당시 의식을 잃었다면 정답이 된다.\n  - ④ 저유량 산소는 흡입산소농도가 약 28 %에 그쳐 일산화탄소를 헤모글로빈에서 빨리 떼어내지 못한다. 산소포화도 99 %는 측정기가 일산화탄소헤모글로빈을 구별하지 못해 생긴 거짓 정상이다. 만성폐쇄폐질환의 가벼운 저산소혈증에서 맞는 처치다.\n  - ⑤ 메틸렌블루는 메트헤모글로빈을 환원하는 해독제다. 일산화탄소헤모글로빈에는 효과가 없다. 다프손·질산염 노출 뒤 메트헤모글로빈 30 % 이상이고 초콜릿색 혈액이 보였다면 정답이 된다.\n- 함정: 맥박산소측정기 99 %와 정상 PaO2 는 일산화탄소 중독을 배제하지 못한다. 고압산소는 중증 표지가 있을 때만이다.\n- 학습목표: 일산화탄소 중독에서 맥박산소측정이 정상으로 보이는 이유를 알고, 고압산소 적응증이 없으면 비재호흡 마스크로 100 % 산소를 준다\n- 근거·출처: Weaver LK. Carbon monoxide poisoning. N Engl J Med 2009;360:1217 · Tintinalli's Emergency Medicine, 9th ed. — carbon monoxide · Harrison's Principles of Internal Medicine, 21st ed. — poisoning and drug overdose",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "밀폐된 공간의 숯불, 두통·구역·구토, 일산화탄소헤모글로빈 18 %로 일산화탄소 중독이다. 의식 소실·신경학적 이상·심근 허혈·심한 산증이 없고 일산화탄소헤모글로빈이 25 % 미만이므로 고압산소 적응증이 없다. 비재호흡 마스크로 100 % 산소를 주어 일산화탄소헤모글로빈 반감기를 약 4~5시간에서 약 1시간으로 줄인다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>일산화탄소</b>는 헤모글로빈에 산소보다 약 <b>200배 이상</b> 강하게 결합한다. 결합 자리를 빼앗아 산소 운반량을 줄이고, 남은 헤모글로빈의 산소 해리곡선을 <b>왼쪽으로 이동</b>시켜 조직에 산소를 잘 내주지 못하게 한다. 미토콘드리아 사이토크롬 산화효소도 억제한다.<br> <b>맥박산소측정이 정상으로 보이는 이유</b>: 일반 맥박산소측정기는 두 파장만 써서 일산화탄소헤모글로빈을 산소헤모글로빈으로 읽는다. PaO2 도 녹아 있는 산소만 재므로 정상이다. 그래서 <b>일산화탄소헤모글로빈은 CO-oximetry 로 직접</b> 잰다.<br> <b>치료의 원리는 결합 경쟁</b>이다. 공기에서 반감기는 약 4~5시간, <b>100 % 산소에서 약 1시간</b>, 고압산소(2.5~3기압)에서 약 20분이다. 고압산소는 지연성 신경학적 후유증을 줄이려는 치료로, <b>의식 소실, 신경학적 이상, 심근 허혈, 심한 대사성 산증, 일산화탄소헤모글로빈 25 % 이상(임신부 15 % 이상)</b>에서 고려한다. 이런 소견이 없으면 정상압 100 % 산소를 증상이 없어지고 수치가 정상이 될 때까지 준다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">정상압 100 % 산소(정답)</th><th>고압산소치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>COHb 반감기</td><td><b>약 60분</b></td><td>약 20분</td></tr> <tr><td>적응증</td><td><b>모든 일산화탄소 중독의 기본</b></td><td>의식 소실·신경 이상·심근 허혈·심한 산증·COHb ≥ 25 %(임신 ≥ 15 %)</td></tr> <tr><td>이 환자</td><td><b>의식 명료, 신경학적 정상, 트로포닌 정상, COHb 18 %</b></td><td>—</td></tr> </tbody></table> <b>가장 가까운 오답은 고압산소</b>다. 갈림길은 <b>중증 표지가 하나라도 있느냐</b>다. 같은 환자가 발견 당시 의식을 잃었거나, 임신부였다면(15 % 이상) 고압산소가 정답이 된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 하이드록소코발라민은 시안화물 해독제다. 밀폐 공간 화재 연기 흡입에서 설명되지 않는 심한 젖산증(젖산 8 mmol/L 이상)이 있으면 함께 쓴다. 숯불 중독이고 산증이 없는 이 환자에게는 적응증이 없다.\n③ 고압산소는 의식 소실·신경학적 이상·심근 허혈·심한 산증·일산화탄소헤모글로빈 25 % 이상에서 지연성 신경학적 후유증을 줄이려고 쓴다. 이 환자는 해당 소견이 없다. 발견 당시 의식을 잃었다면 정답이 된다.\n④ 저유량 산소는 흡입산소농도가 약 28 %에 그쳐 일산화탄소를 헤모글로빈에서 빨리 떼어내지 못한다. 산소포화도 99 %는 측정기가 일산화탄소헤모글로빈을 구별하지 못해 생긴 거짓 정상이다. 만성폐쇄폐질환의 가벼운 저산소혈증에서 맞는 처치다.\n⑤ 메틸렌블루는 메트헤모글로빈을 환원하는 해독제다. 일산화탄소헤모글로빈에는 효과가 없다. 다프손·질산염 노출 뒤 메트헤모글로빈 30 % 이상이고 초콜릿색 혈액이 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "맥박산소측정기 99 %와 정상 PaO2 는 일산화탄소 중독을 배제하지 못한다. 고압산소는 중증 표지가 있을 때만이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "일산화탄소 중독에서 맥박산소측정이 정상으로 보이는 이유를 알고, 고압산소 적응증이 없으면 비재호흡 마스크로 100 % 산소를 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Weaver LK. Carbon monoxide poisoning. N Engl J Med 2009;360:1217 · Tintinalli's Emergency Medicine, 9th ed. — carbon monoxide · Harrison's Principles of Internal Medicine, 21st ed. — poisoning and drug overdose"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "일산화탄소 중독이지만 중증 표지가 없으므로 고압산소가 아니라 비재호흡 마스크 100 % 산소를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "고압산소는 의식 소실·신경학적 이상·심근 허혈·심한 산증·일산화탄소헤모글로빈 25 % 이상에서 쓰는데 이 환자는 하나도 없다",
+   "steps": 2,
+   "chain": [
+    "밀폐된 방의 숯불 + 두통·구역 + 일산화탄소헤모글로빈 18 % → 일산화탄소 중독",
+    "의식 명료·신경학적 정상·트로포닌 정상·pH 7.36·COHb < 25 % → 중증 표지 없음 → 정상압 100 % 산소"
+   ],
+   "key": [
+    {
+     "item": "밀폐된 방에서 숯불을 피워 놓고 잠든 뒤",
+     "why": "노출원",
+     "also": []
+    },
+    {
+     "item": "일산화탄소헤모글로빈은 18 %이다",
+     "why": "진단 — 25 % 미만",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박산소측정기의 산소포화도는 99 %이다",
+     "why": "거짓 정상 — 저유량 산소로 충분하다는 착각을 부른다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하고 신경학적 검사에서 이상은 없다",
+     "why": "고압산소 적응증이 없다",
+     "also": []
+    },
+    {
+     "item": "혈청 트로포닌은 정상이다",
+     "why": "심근 허혈 없음",
+     "also": []
+    },
+    {
+     "item": "pH 7.36",
+     "why": "심한 산증 없음 — 시안화물 동반 가능성도 낮다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체온 36.8 ℃",
+     "why": "판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "숯불 노출과 일산화탄소헤모글로빈 18 %로 일산화탄소 중독이다. 의식 소실·신경 이상·심근 허혈·산증이 없어 고압산소가 아니라 비재호흡 마스크 100 % 산소를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "발견 당시 의식을 잃었거나 일산화탄소헤모글로빈이 30 %였다면 고압산소치료가 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0155",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 병리·호흡기·응급·이비인후·소화기·신경·외과·소아·정신·예방의학·피부)",
+  "subtopic": "호흡기 — 진행된 만성콩팥병 환자의 수술 후 흉통과 호흡곤란",
+  "type": "호흡기 — 진행된 만성콩팥병 환자의 수술 후 흉통과 호흡곤란",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-28",
+  "vignette": "A 58-year-old woman comes to the emergency department because of sudden shortness of breath and right-sided pleuritic chest pain for 6 hours. Ten days ago, she underwent right total knee arthroplasty. She has stage 4 chronic kidney disease due to diabetic nephropathy and is not receiving dialysis; her serum creatinine concentration is 3.4 mg/dL (estimated GFR 16 mL/min/1.73 m2). Her temperature is 37.4°C (99.3°F), pulse is 104/min, respirations are 22/min, and blood pressure is 134/82 mm Hg. Oxygen saturation is 93% on room air. The lungs are clear to auscultation. There is no leg swelling or tenderness. An ECG shows sinus tachycardia. A chest x-ray shows no abnormalities. Anticoagulation with unfractionated heparin is begun.",
+  "question": "Which of the following is the most appropriate next step to confirm the diagnosis?",
+  "options": [
+   "Ventilation-perfusion lung scan",
+   "CT pulmonary angiography",
+   "Serum D-dimer concentration",
+   "Transthoracic echocardiography",
+   "Pulmonary function testing"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Pulmonary embolism is likely: sudden pleuritic pain and dyspnea 10 days after knee arthroplasty, tachycardia, and no better alternative diagnosis (Wells score above 4). CT pulmonary angiography requires iodinated contrast, which risks contrast-associated acute kidney injury in a patient with an eGFR of 16 mL/min/1.73 m2 who is not on dialysis. Because the chest x-ray is normal, a ventilation-perfusion scan will be interpretable and is the preferred confirmatory test.\n- 원리: <b>Choosing the imaging test for suspected PE</b> depends on the pretest probability and on whether the patient can receive contrast.<br> <b>Pretest probability first</b>: when PE is likely (Wells &gt; 4), a normal D-dimer cannot safely exclude it, so imaging is required. After recent surgery D-dimer is almost always elevated anyway.<br> <b>CT pulmonary angiography</b> is the usual test because it is fast and shows alternative diagnoses, but it needs iodinated contrast. With an eGFR below 30 mL/min/1.73 m2 and no dialysis, contrast carries a meaningful risk of acute kidney injury that could push this patient toward dialysis.<br> <b>V/Q scanning</b> uses inhaled and intravenous radiotracers without nephrotoxic contrast. It detects <b>mismatched perfusion defects</b> — ventilated lung that is not perfused. Its weakness is lung disease: consolidation, effusion, or COPD cause matched defects and indeterminate results. That is why a <b>normal chest x-ray</b> is the condition that makes V/Q reliable. A normal perfusion scan essentially excludes PE; a high-probability scan confirms it.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">V/Q scan (answer)</th><th>CT pulmonary angiography (closest rival)</th></tr></thead><tbody> <tr><td>Contrast</td><td><b>None (radiotracer)</b></td><td>Iodinated contrast</td></tr> <tr><td>Best use</td><td><b>eGFR &lt; 30, contrast allergy, pregnancy with normal CXR</b></td><td>Most patients; shows alternative diagnoses</td></tr> <tr><td>Requirement</td><td><b>Normal chest x-ray</b> for interpretability</td><td>Adequate renal function</td></tr> <tr><td>This patient</td><td>eGFR 16, normal chest x-ray</td><td>—</td></tr> </tbody></table> <b>The closest rival is CTPA</b>, the default test. The dividing line is <b>renal function and the chest x-ray</b>: with normal kidneys CTPA wins; with an abnormal chest x-ray V/Q becomes unreliable.\n- 오답 이유:\n  - (B) CT pulmonary angiography is the usual test for suspected PE, but its iodinated contrast risks acute kidney injury at an eGFR of 16 in a patient not on dialysis. It would be correct if her eGFR were 70 or if she were already on maintenance dialysis.\n  - (C) D-dimer is useful only to exclude PE when pretest probability is low or intermediate; after surgery it is almost always elevated. It cannot confirm the diagnosis. It would be correct for a low-risk outpatient with no recent surgery.\n  - (D) Echocardiography may show right ventricular strain and helps in unstable patients who cannot be moved, but a normal study does not exclude PE. It would be correct if she were hypotensive and too unstable for transport.\n  - (E) Pulmonary function testing evaluates chronic airflow or restrictive disease and has no role in acute PE diagnosis. It would be considered months later for unexplained chronic dyspnea.\n- 함정: PE is likely, so D-dimer is useless; the choice between CTPA and V/Q is made by kidney function and whether the chest x-ray is normal.\n- 학습목표: 폐색전증이 의심되나 조영제를 쓰기 어려운 진행된 만성콩팥병 환자에서 흉부 X선이 정상이면 환기-관류 스캔으로 진단한다\n- 근거·출처: Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543 · Harrison's Principles of Internal Medicine, 21st ed. — deep venous thrombosis and pulmonary thromboembolism",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Pulmonary embolism is likely: sudden pleuritic pain and dyspnea 10 days after knee arthroplasty, tachycardia, and no better alternative diagnosis (Wells score above 4). CT pulmonary angiography requires iodinated contrast, which risks contrast-associated acute kidney injury in a patient with an eGFR of 16 mL/min/1.73 m2 who is not on dialysis. Because the chest x-ray is normal, a ventilation-perfusion scan will be interpretable and is the preferred confirmatory test."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Choosing the imaging test for suspected PE</b> depends on the pretest probability and on whether the patient can receive contrast.<br> <b>Pretest probability first</b>: when PE is likely (Wells &gt; 4), a normal D-dimer cannot safely exclude it, so imaging is required. After recent surgery D-dimer is almost always elevated anyway.<br> <b>CT pulmonary angiography</b> is the usual test because it is fast and shows alternative diagnoses, but it needs iodinated contrast. With an eGFR below 30 mL/min/1.73 m2 and no dialysis, contrast carries a meaningful risk of acute kidney injury that could push this patient toward dialysis.<br> <b>V/Q scanning</b> uses inhaled and intravenous radiotracers without nephrotoxic contrast. It detects <b>mismatched perfusion defects</b> — ventilated lung that is not perfused. Its weakness is lung disease: consolidation, effusion, or COPD cause matched defects and indeterminate results. That is why a <b>normal chest x-ray</b> is the condition that makes V/Q reliable. A normal perfusion scan essentially excludes PE; a high-probability scan confirms it."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">V/Q scan (answer)</th><th>CT pulmonary angiography (closest rival)</th></tr></thead><tbody> <tr><td>Contrast</td><td><b>None (radiotracer)</b></td><td>Iodinated contrast</td></tr> <tr><td>Best use</td><td><b>eGFR &lt; 30, contrast allergy, pregnancy with normal CXR</b></td><td>Most patients; shows alternative diagnoses</td></tr> <tr><td>Requirement</td><td><b>Normal chest x-ray</b> for interpretability</td><td>Adequate renal function</td></tr> <tr><td>This patient</td><td>eGFR 16, normal chest x-ray</td><td>—</td></tr> </tbody></table> <b>The closest rival is CTPA</b>, the default test. The dividing line is <b>renal function and the chest x-ray</b>: with normal kidneys CTPA wins; with an abnormal chest x-ray V/Q becomes unreliable."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) CT pulmonary angiography is the usual test for suspected PE, but its iodinated contrast risks acute kidney injury at an eGFR of 16 in a patient not on dialysis. It would be correct if her eGFR were 70 or if she were already on maintenance dialysis.\n(C) D-dimer is useful only to exclude PE when pretest probability is low or intermediate; after surgery it is almost always elevated. It cannot confirm the diagnosis. It would be correct for a low-risk outpatient with no recent surgery.\n(D) Echocardiography may show right ventricular strain and helps in unstable patients who cannot be moved, but a normal study does not exclude PE. It would be correct if she were hypotensive and too unstable for transport.\n(E) Pulmonary function testing evaluates chronic airflow or restrictive disease and has no role in acute PE diagnosis. It would be considered months later for unexplained chronic dyspnea."
+   },
+   {
+    "k": "함정",
+    "v": "PE is likely, so D-dimer is useless; the choice between CTPA and V/Q is made by kidney function and whether the chest x-ray is normal."
+   },
+   {
+    "k": "학습목표",
+    "v": "폐색전증이 의심되나 조영제를 쓰기 어려운 진행된 만성콩팥병 환자에서 흉부 X선이 정상이면 환기-관류 스캔으로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543 · Harrison's Principles of Internal Medicine, 21st ed. — deep venous thrombosis and pulmonary thromboembolism"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "폐색전증 가능성이 높고 조영제를 쓰기 어려운 eGFR 16 이며 흉부 X선이 정상이므로 환기-관류 스캔으로 확진한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "CT 폐동맥조영술은 요오드 조영제가 필요한데 투석 전 eGFR 16 이라 급성 콩팥손상 위험이 크다",
+   "steps": 3,
+   "chain": [
+    "슬관절 치환술 10일 뒤 갑작스러운 흉막성 흉통·호흡곤란·빈맥 → 폐색전증 가능성 높음 → D-dimer 가 아니라 영상",
+    "eGFR 16, 투석 안 함 → 조영제 CT 는 신독성 위험",
+    "흉부 X선 정상 → V/Q 스캔 판독 가능 → V/Q"
+   ],
+   "key": [
+    {
+     "item": "Ten days ago, she underwent right total knee arthroplasty",
+     "why": "강한 위험인자 — 사전확률을 높인다",
+     "also": []
+    },
+    {
+     "item": "estimated GFR 16 mL/min/1.73 m2",
+     "why": "조영제 CT 를 피하게 하는 결정적 정보",
+     "also": []
+    },
+    {
+     "item": "is not receiving dialysis",
+     "why": "투석 중이면 조영제 부담이 달라진다",
+     "also": []
+    },
+    {
+     "item": "A chest x-ray shows no abnormalities",
+     "why": "V/Q 스캔이 판독 가능한 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no leg swelling or tenderness",
+     "why": "하지 정맥 초음파로 대신할 근거가 약하다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Oxygen saturation is 93% on room air",
+     "why": "혈역학적으로 안정 — 영상 검사로 이동 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "An ECG shows sinus tachycardia",
+     "why": "가장 흔한 비특이 소견 — 검사 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "수술 후 폐색전증 가능성이 높다. eGFR 16 이라 조영제 CT 를 피하고, 흉부 X선이 정상이므로 환기-관류 스캔으로 확진한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "콩팥 기능이 정상이었거나 흉부 X선에 경화·흉수가 있었다면 CT 폐동맥조영술이 정답이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+  "qid": "Q0002"
+ },
+ {
   "id": "imaging-2026-0147",
   "exam": "imaging",
   "style": "usmle_style",
