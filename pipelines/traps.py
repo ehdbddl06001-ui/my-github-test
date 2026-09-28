@@ -441,17 +441,22 @@ def split_external(text: str) -> tuple[str, list[str]]:
     return "\n".join(stem), ch
 
 
-def _grams(text: str, n: int = 2) -> collections.Counter:
+def _grams(text: str, ns: tuple[int, ...] = (2, 3)) -> collections.Counter:
     t = re.sub(r"[\W_]+", "", str(text or "").casefold())
-    return collections.Counter(t[i:i + n] for i in range(len(t) - n + 1))
+    c: collections.Counter = collections.Counter()
+    for n in ns:
+        c.update(t[i:i + n] for i in range(len(t) - n + 1))
+    return c
 
 
 def _qtext(m: dict[str, Any]) -> str:
-    return str(m.get("stem", "") or "") + " " + " ".join(_choices(m))
+    """발문 + 활력징후·검사(구조화 자료) + 보기. KMLE·USMLE 는 자료를 필드로 두므로 발문만 보면 외부 문항(자료가 본문에 있음)과
+    어긋난다 — 2026-09-29 비교에서 발문만 쓰면 구획증후군 문항이 12~270위, 자료까지 넣으면 2~16위였다."""
+    return question_text_pool(m) + " " + " ".join(_choices(m))
 
 
 def similar(text: str, questions: dict[str, dict], top: int = 10) -> list[tuple[float, str]]:
-    """글자 두 개 묶음(bigram) TF-IDF 코사인 — 한국어·영어 모두. [(점수, 문항)] 높은 순."""
+    """글자 2·3개 묶음 TF-IDF 코사인(빈도는 1+log) — 한국어·영어 모두. [(점수, 문항)] 높은 순."""
     docs = {qid: _grams(_qtext(m)) for qid, m in questions.items()}
     df: collections.Counter = collections.Counter()
     for g in docs.values():
@@ -459,7 +464,7 @@ def similar(text: str, questions: dict[str, dict], top: int = 10) -> list[tuple[
     n = len(docs) or 1
 
     def vec(c: collections.Counter) -> dict[str, float]:
-        return {k: v * (math.log((n + 1) / (df.get(k, 0) + 1)) + 1) for k, v in c.items()}
+        return {k: (1 + math.log(v)) * (math.log((n + 1) / (df.get(k, 0) + 1)) + 1) for k, v in c.items()}
 
     q = vec(_grams(text))
     qn = math.sqrt(sum(v * v for v in q.values())) or 1.0
@@ -592,7 +597,7 @@ def cmd_similar(root: Path, text: str, top: int, answer: str | None) -> int:
     entries, _, _ = load_registry(root)
     stem, choices = split_external(text)
     solved = solve_records()
-    print(f"비슷한 MedKOS 문항(글자 bigram TF-IDF, 전체 {len(questions)}문항 · 보기 {len(choices)}개 인식)")
+    print(f"비슷한 MedKOS 문항(글자 2·3개 묶음 TF-IDF — 발문·자료·보기, 전체 {len(questions)}문항 · 보기 {len(choices)}개 인식)")
     for score, qid in similar(text, questions, top):
         m = questions[qid]
         ch = _choices(m)
