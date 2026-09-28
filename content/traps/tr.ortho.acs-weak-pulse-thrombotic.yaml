@@ -1,0 +1,118 @@
+# 함정 계열 — 규칙: /gen-kmle 「함정 계열」 · 필드: schemas/frontmatter.md 「함정 계열 등록부」 · 검사: python pipelines/traps.py check
+id: tr.ortho.acs-weak-pulse-thrombotic
+title: "골절 뒤 약해진 원위 맥박 — 혈전·혈관 처치로 끌림"
+status: active
+found: 2026-09-29
+found_note: >-
+  외부 문항과 비교(2026-09-29) — 경골 골절 뒤 부은 종아리에서 발등동맥이 약하게 만져지고 오답이 모두 혈전·혈관 처치인 문항.
+  MedKOS 구획증후군 7문항(kmle-2026-0024·0220·0448·0673·0960·1185, usmle-2026-0126)은 모두 「맥박 촉지」 판이라 이 함정이 없었다.
+  외부 문항 원문은 싣지 않는다.
+exams: [kmle, usmle]
+objectives: [cn.ortho.acute-compartment-syndrome.fasciotomy]
+topics: [Orthopedics, General Surgery, Surgery]
+related: [tr.ortho.acs-palpable-pulse-reassurance]
+cue:
+  text: "골절·고정 뒤 붓고 아픈 다리에서 원위 맥박(발등동맥·뒤정강동맥)이 약하거나 만져지지 않는다"
+  patterns:
+    - '(맥박|동맥)[^.。]{0,15}(약하|약해|약한|희미|만져지지\s*않|촉지되지\s*않|소실)'
+    - '(diminished|weak|faint|decreased|absent|thready)[^.]{0,25}pulse'
+    - 'pulses?[^.]{0,25}(diminished|weak|faint|decreased|absent|not palpable|nonpalpable|1\+)'
+lure:
+  family: "혈전·혈관 폐색으로 보고 하는 처치"
+  examples: ["헤파린·저분자량헤파린", "카테터 혈전용해", "혈관풍선확장술", "혈전·색전제거술", "간헐적 공기압박", "CT 혈관조영술"]
+  patterns:
+    - '헤파린|항응고|혈전\s*용해|풍선|혈전\s*제거|색전\s*제거|공기\s*압박|혈관\s*(조영|재건|우회)'
+    - 'heparin|anticoagula|thromboly|angioplasty|thrombectomy|embolectomy|pneumatic compression|angiograph|revasculari|bypass'
+  min: 2
+truth:
+  family: "구획 감압"
+  answer: "응급 근막절개술"
+  patterns: ['근막\s*절개', 'fasciotomy']
+why: >-
+  구획증후군에서 맥박 소실·느린 재충혈은 늦게 나타나는 징후이고, 가장 먼저 오는 것은 손상에 비해 과도한 통증이다 [[shadgan-2010]].
+  혈전을 녹이거나 막힌 혈관을 여는 처치는 올라간 구획 내압을 낮추지 못한다 — 구획증후군이 진단되면 곧바로 감압한다 [[boast-cs-2025]].
+discriminators:
+  - "통증: 손상에 비해 과도하고 시간이 갈수록 심해지며 진통제에 잘 듣지 않는다 → 구획증후군 [[shadgan-2010]]"
+  - "맥박 소실·느린 재충혈: 구획증후군에서는 늦은 징후이고, 그것이 두드러지면 혈관 손상을 먼저 의심한다 [[shadgan-2010]]"
+  - "급성 동맥 폐색: 1시간 안에 심한 통증·저림·감각 저하·냉감, 원위 맥박 소실·창백·청색증·피부 온도 저하 [[harrison-21: 281장 p.2111]]"
+  - "원인: 색전(심방세동 등)·제자리 혈전·박리·외상 → 동맥 폐색 [[harrison-21: 281장 p.2110]] / 골절·둘레 붕대·석고 → 구획증후군 [[shadgan-2010]]"
+  - "수치: 이완기 혈압 − 구획 내압 ≤ 30 mmHg → 감압 [[shadgan-2010]] [[mcqueen-1996]] — 혈압이 낮으면 같은 구획압에서도 이 차이가 줄어든다"
+  - "CK·근색소 상승은 근육 손상을 반영할 뿐 구획증후군을 특정하지 않는다 [[shadgan-2010]]"
+mirror:
+  when: >-
+    원위 맥박이 약하거나 없는데 판정 소견이 동맥 쪽을 가리킬 때 — 심방세동 등 색전원이 있고 1시간 안에 갑자기 시작한 심한 통증·저림·냉감,
+    원위 맥박 소실·창백·청색증·피부 온도 저하 → 급성 하지 허혈: 헤파린 정주 후 카테터 혈전용해·혈전제거 또는 수술적 혈전색전제거
+    [[harrison-21: 281장 p.2110–2111]]. 외상 뒤 맥박 소실·느린 재충혈이 두드러지면 혈관 손상 평가가 먼저다 [[shadgan-2010]].
+  answer: "헤파린 정주 후 색전제거술"
+write_notes:
+  - "trap 쪽은 맥박을 「약하게 만져진다」로 쓴다 — 맥박 소실·느린 재충혈이 두드러지면 혈관 손상이 먼저라 단일 정답이 흔들린다 [[shadgan-2010]]. 발은 따뜻하게, 재충혈은 정상 범위로, 가능하면 도플러 동맥 신호를 자료로 준다."
+  - "trap 쪽에 구획증후군 단서를 둘 이상 둔다 — 진통제에 듣지 않는 통증·수동 신전 통증·단단한 구획·감각 저하 [[long-2019]]. 이완기 혈압과 구획 내압(차이 ≤ 30)을 자료로 주면 판단이 한 단계 는다."
+  - "mirror 쪽은 trap 과 겉모습(다리 통증 + 약하거나 없는 맥박)을 같게 두고 발생 속도·피부색·온도·색전원으로 가른다. 근막절개술을 오답으로 넣는다."
+  - "간헐적 공기압박은 밖에서 압력을 더한다 — 하지 수술 뒤 구획증후군의 요인으로 거론된다 [[beraldo-2006]]. trap 쪽 오답으로 쓸 수 있다."
+want: {trap: 1, mirror: 1}
+sources:
+  - id: shadgan-2010
+    org: "Can J Surg"
+    title: "Current thinking about acute compartment syndrome of the lower extremity (Shadgan B et al.)"
+    year: 2010
+    kind: review
+    pmid: "20858378"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2947124/"
+    verified: text
+    checked_at: 2026-09-29
+    checked: >-
+      PMC 본문 「Clinical diagnosis of ACS」 — 통증은 손상에 비해 과도·시간이 갈수록 심해지고 진통제에 잘 듣지 않음,
+      맥박 소실·느린 재충혈은 늦은 징후이며 대개 구획증후군보다 혈관 손상을 시사, 이완기 혈압과의 차이 ≤ 30 mmHg 가 가장 널리 쓰는 수술 기준,
+      WBC·ESR·CK·근색소 등 표지자는 구획증후군을 특정하지 못함, 둘레 붕대·석고 = 원인 목록. 「Lower limb fasciotomy」 — 진단되면 긴급 감압.
+  - id: boast-cs-2025
+    org: "British Orthopaedic Association"
+    title: "BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities"
+    year: 2025
+    kind: guideline
+    url: "https://www.boa.ac.uk/resource/boast-10-pdf.html"
+    verified: text
+    checked_at: 2026-09-29
+    checked: >-
+      웹 원문(2014-07 발행 · 2025-07 갱신) — 표준 7(증상·징후가 있으면 둘레 붕대를 피부까지 풀고 거상, 30분 안에 재평가),
+      표준 8(애매하면 매시간 재진찰·구획 내압 측정·상급자 검토), 표준 9(진단되면 즉시 감압), 각주(이완기 혈압 − 구획압 < 30 mmHg = 위험 증가).
+  - id: harrison-21
+    org: "McGraw Hill"
+    title: "Harrison's Principles of Internal Medicine, 21st ed. — Chapter 281 Arterial Diseases of the Extremities"
+    year: 2022
+    kind: textbook
+    citation: "Harrison 21e, ch. 281, pp. 2110–2111"
+    verified: text
+    checked_at: 2026-09-29
+    checked: >-
+      p.2110 급성 하지 허혈 원인(색전 — 심방세동 등, 제자리 혈전, 박리, 외상). p.2111 임상(1시간 안 심한 통증·저림·감각 저하·냉감,
+      원위 맥박 소실·청색증 또는 창백·피부 온도 저하), 치료(헤파린 정주 → 카테터 혈전용해·혈전제거, 수술적 혈전색전제거, 우회술).
+  - id: mcqueen-1996
+    org: "J Bone Joint Surg Br"
+    title: "Compartment monitoring in tibial fractures. The pressure threshold for decompression (McQueen MM, Court-Brown CM)"
+    year: 1996
+    kind: trial
+    pmid: "8898137"
+    verified: abstract
+    checked_at: 2026-09-29
+    checked: "초록 — 경골 간부 골절 116명 앞칸 압력 연속 감시, 이완기 혈압 − 구획압 < 30 mmHg 를 감압 기준으로 권고(놓친 예 없음)."
+  - id: long-2019
+    org: "J Emerg Med"
+    title: "Evaluation and Management of Acute Compartment Syndrome in the Emergency Department (Long B, Koyfman A, Gottlieb M)"
+    year: 2019
+    kind: review
+    pmid: "30685220"
+    doi: "10.1016/j.jemermed.2018.12.021"
+    verified: abstract
+    checked_at: 2026-09-29
+    checked: "초록 — 과도한 통증·저림·수동 신전 통증·구획 긴장·국소 운동/감각 결손·맥박 또는 재충혈 감소, 통증이 가장 이른 소견, 치료는 응급 근막절개."
+  - id: beraldo-2006
+    org: "Dis Colon Rectum"
+    title: "Lower limb acute compartment syndrome after colorectal surgery in prolonged lithotomy position (Beraldo S, Dodds SR)"
+    year: 2006
+    kind: review
+    pmid: "17036205"
+    doi: "10.1007/s10350-006-0712-1"
+    verified: abstract
+    checked_at: 2026-09-29
+    checked: "초록 — 요인으로 심부정맥혈전 예방용 외부 압박을 들고, 순차 압박 장치의 적절한 사용은 논쟁 중이라고 적음."
+review_status: unreviewed

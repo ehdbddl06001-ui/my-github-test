@@ -1,0 +1,80 @@
+# 함정 계열 — 규칙: /gen-kmle 「함정 계열」 · 필드: schemas/frontmatter.md 「함정 계열 등록부」 · 검사: python pipelines/traps.py check
+id: tr.ortho.acs-palpable-pulse-reassurance
+title: "맥박이 만져지는 구획증후군 — 관찰·재평가로 감압을 미룸"
+status: active
+found: 2026-09-29
+found_note: >-
+  MedKOS 구획증후군 문항이 이미 쓰고 있던 계열(「발등동맥 맥박은 만져진다」 + 관찰·진통제·혈관 영상 오답 — kmle-2026-1185 등)을
+  외부 문항 비교(2026-09-29)에서 약한 맥박 계열(tr.ortho.acs-weak-pulse-thrombotic)과 짝으로 등록했다.
+exams: [kmle, usmle]
+objectives: [cn.ortho.acute-compartment-syndrome.fasciotomy]
+topics: [Orthopedics, General Surgery, Surgery]
+related: [tr.ortho.acs-weak-pulse-thrombotic]
+cue:
+  text: "구획증후군 소견이 있는데 원위 맥박이 만져지고 모세혈관 재충혈이 정상이다"
+  patterns:
+    - '(맥박|동맥)[^.。]{0,15}(?<!약하게 )(?<!약하게)(만져진|만져지고|만져지며|촉지된|촉지되고|촉지되며)'
+    - 'pulses?[^.]{0,25}(2\+|(?<!not )(?<!non)palpable|intact)'
+lure:
+  family: "안심하고 감압을 미루는 처치(관찰·재평가·진통제·혈관 영상)"
+  examples: ["진통제를 늘리고 재평가", "다리를 올리고 관찰", "CT 혈관조영술", "구획 내압 측정 후 결정"]
+  patterns:
+    - '관찰|재평가|진통제|거상|높이\s*올|혈관\s*조영|구획\s*(내\s*)?압\s*측정|구획압\s*측정'
+    - 'observ|reassess|re-evaluat|analges|opioid|elevat|angiograph|compartment pressure'
+  min: 2
+truth:
+  family: "구획 감압"
+  answer: "응급 근막절개술"
+  patterns: ['근막\s*절개', 'fasciotomy']
+why: >-
+  맥박 소실·느린 재충혈은 구획증후군의 늦은 징후라 맥박이 만져져도 구획증후군은 배제되지 않는다 [[shadgan-2010]].
+  둘레 붕대를 풀어도 지속되면 진단이고, 진단되면 곧바로 감압한다 — 관찰·진통제·영상은 감압을 늦출 뿐이다 [[boast-cs-2025]].
+discriminators:
+  - "맥박 소실·느린 재충혈은 늦은 징후 — 맥박이 만져진다고 안심하지 않는다 [[shadgan-2010]]"
+  - "통증이 손상에 비해 과도하고 시간이 갈수록 심해지며 진통제에 잘 듣지 않으면 구획증후군 쪽 [[shadgan-2010]]"
+  - "증상·징후가 있으면 둘레 붕대를 피부까지 풀고 30분 안에 다시 본다 — 풀어도 지속되면 진단, 진단되면 즉시 감압 [[boast-cs-2025]]"
+  - "소견이 애매하거나 진찰이 어려우면(의식 저하·부위 마취) 매시간 재진찰과 구획 내압 측정 — 이완기 혈압과의 차이 < 30 mmHg 면 위험 [[boast-cs-2025]] [[mcqueen-1996]]"
+mirror:
+  when: >-
+    구획증후군을 의심하기 시작했지만 둘레 붕대·석고가 아직 감겨 있거나 소견이 애매할 때 — 먼저 붕대·석고를 피부까지 풀고
+    30분 안에 다시 평가하고, 애매하면 매시간 재진찰과 구획 내압 측정을 한다 [[boast-cs-2025]]. 이 단계에서 곧바로 근막절개는 이르다.
+  answer: "석고·붕대를 피부까지 풀고 30분 안에 재평가"
+write_notes:
+  - "trap 쪽은 둘레 붕대·석고를 이미 풀었는데도 통증이 지속된다는 사실을 발문에 둔다 — 그래야 「풀고 재평가」가 오답이 된다(BOAST 표준 7 → 9) [[boast-cs-2025]]."
+  - "다리 높이(거상 vs 심장 높이)로 정답을 가르지 않는다 — BOAST(2025 갱신) 표준 7은 붕대를 풀고 「거상」이라 쓰는데 kmle-2026-1185 해설은 「심장 높이」를 오답 근거로 들었다(출처 확인 필요) [[boast-cs-2025]]."
+  - "mirror 쪽은 붕대·석고가 감긴 초기의 애매한 소견으로 쓰고, 근막절개술을 오답으로 넣는다."
+want: {trap: 1, mirror: 1}
+sources:
+  - id: shadgan-2010
+    org: "Can J Surg"
+    title: "Current thinking about acute compartment syndrome of the lower extremity (Shadgan B et al.)"
+    year: 2010
+    kind: review
+    pmid: "20858378"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2947124/"
+    verified: text
+    checked_at: 2026-09-29
+    checked: >-
+      PMC 본문 「Clinical diagnosis of ACS」 — 통증은 손상에 비해 과도·진통제에 잘 듣지 않음, 맥박 소실·느린 재충혈은 늦은 징후,
+      이완기 혈압과의 차이 ≤ 30 mmHg 가 가장 널리 쓰는 수술 기준. 「Lower limb fasciotomy」 — 진단되면 긴급 감압.
+  - id: boast-cs-2025
+    org: "British Orthopaedic Association"
+    title: "BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities"
+    year: 2025
+    kind: guideline
+    url: "https://www.boa.ac.uk/resource/boast-10-pdf.html"
+    verified: text
+    checked_at: 2026-09-29
+    checked: >-
+      웹 원문(2014-07 발행 · 2025-07 갱신) — 표준 7(증상·징후가 있으면 둘레 붕대를 피부까지 풀고 거상, 30분 안에 재평가),
+      표준 8(애매하면 매시간 재진찰·구획 내압 측정·상급자 검토), 표준 9(진단되면 즉시 감압), 각주(이완기 혈압 − 구획압 < 30 mmHg = 위험 증가).
+  - id: mcqueen-1996
+    org: "J Bone Joint Surg Br"
+    title: "Compartment monitoring in tibial fractures. The pressure threshold for decompression (McQueen MM, Court-Brown CM)"
+    year: 1996
+    kind: trial
+    pmid: "8898137"
+    verified: abstract
+    checked_at: 2026-09-29
+    checked: "초록 — 경골 간부 골절 116명 앞칸 압력 연속 감시, 이완기 혈압 − 구획압 < 30 mmHg 를 감압 기준으로 권고."
+review_status: unreviewed

@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-28",
+ "generated": "2026-09-29",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3045,
+  "total": 3046,
   "byType": {
    "usmle": 168,
+   "kmle": 1164,
    "anatomy": 767,
-   "kmle": 1163,
    "imaging": 164,
    "concept": 90,
    "paper": 676,
@@ -32,8 +32,8 @@ window.MEDKOS_INDEX = {
    "Endocrinology": 78,
    "Surgery": 78,
    "Gastroenterology": 77,
+   "Orthopedics": 77,
    "Ophthalmology": 76,
-   "Orthopedics": 76,
    "Pulmonology": 76,
    "General Surgery": 74,
    "Hematology": 71,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2036,
+   "high": 2037,
    "medium": 960,
    "low": 49
   },
-  "tagCount": 4215
+  "tagCount": 4217
  },
  "docs": [
   {
@@ -222,6 +222,26 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0176.md",
    "snippet": "A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim su",
    "text": "Biochemistry Dark Urine and Jaundice Three Days After an Antibiotic in a Previously Healthy Man G6PD-deficiency hemolytic-anemia oxidative-stress NADPH glutathione pentose-phosphate-pathway Heinz-bodies bite-cells sulfonamide USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 100 Hemolytic Anemias; Luzzatto L, Arese P. Favism and Glucose-6-Phosphate Dehydrogenase Deficiency, N Engl J Med 2018;378:60) A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim sulfamethoxazole. The abscess is healing. He has no history of serious illness, and his hemoglobin concentration was 15.1 g/dL at a physical examination 1 year ago. He takes no other medications. His vital signs are shown. He appears pale, and the sclerae are icteric. The spleen is not palpable. Laboratory studies are shown. A peripheral blood smear shows red blood cells with semicircular bites removed from their edges; a supravital stain shows small dark inclusions attached to the inner red cell membrane. Which of the following best explains why this patient's red blood cells were damaged after he began taking the drug? A. Weak anchoring of the membrane to the spectrin cytoskeleton B. Complement lysis after loss of GPI anchored CD55 and CD59 C. Drug dependent IgG antibodies bound to the red cell surface D. Too little NADPH to keep glutathione in its reduced form E. Too little ATP to run the membrane sodium potassium pump 산화제 약(설파메톡사졸) 시작 2–3일 뒤 갑자기 생긴 용혈이다. 혈색소 8.6·망상적혈구 6.8 %·간접 빌리루빈 상승·LDH 상승·합토글로빈 저하에 요잠혈 3+ 인데 적혈구가 없으니 혈색소뇨(혈관내 용혈)다. 직접 항글로불린 검사 음성은 면역 용혈의 가능성을 낮추고, 물린 세포(bite cell)와 초생체 염색의 막 부착 봉입체(Heinz body, 변성 혈색소)는 산화 손상을 가리킨다. 1년 전 혈색소가 정상이고 비장이 크지 않아 평생 이어지는 막·에너지 결함보다는 산화 스트레스가 올 때만 터지는 효소 결함 = G6PD 결핍이다. G6PD 는 오탄당 인산 경로의 첫 효소로 적혈구의 유일한 NADPH 공급원이다 — NADPH 가 없으면 글루타티온 환원효소가 산화형 글루타티온(GSSG)을 환원형(GSH)으로 되돌리지 못해 과산화수소를 치우지 못하고, 혈색소가 산화·변성돼 막에 달라붙는다(Heinz body). 비장 대식세포가 이것을 뜯어내 물린 세포가 된다."
+  },
+  {
+   "id": "kmle-2026-1215",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Tibial Shaft Fracture with a Diminished Pedal Pulse",
+   "tags": [
+    "acute-compartment-syndrome",
+    "fasciotomy",
+    "tibial-shaft-fracture",
+    "diminished-pulse",
+    "trap-family"
+   ],
+   "source": "KMLE 2026 / Claude (함정 계열 시범)",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/kmle/2026/kmle-2026-1215.md",
+   "snippet": "31세 남자가 공사장에서 떨어진 철근에 오른쪽 종아리를 맞아 경골 몸통 폐쇄 골절로 입원했다. 긴 다리 부목을 대고 수술을 기다리던 중 6시간 뒤부터 종아리 통증이 점점 심해져 정맥 모르핀을 세 번 맞았으나 가라앉지 않았다. 부목의 붕대를 피부까지 풀고 30분이 지났지만 통증은 그대로이다. 종아리 앞쪽이 팽팽하게 부어 단단하고, 발가락을 수동으로 아래로 굽히면 종아리에 극심한 통증을 호소한다. 첫째·둘째 발가락 사이 발등 감각",
+   "text": "Orthopedics Tibial Shaft Fracture with a Diminished Pedal Pulse acute-compartment-syndrome fasciotomy tibial-shaft-fracture diminished-pulse trap-family KMLE 2026 / Claude (함정 계열 시범) 31세 남자가 공사장에서 떨어진 철근에 오른쪽 종아리를 맞아 경골 몸통 폐쇄 골절로 입원했다. 긴 다리 부목을 대고 수술을 기다리던 중 6시간 뒤부터 종아리 통증이 점점 심해져 정맥 모르핀을 세 번 맞았으나 가라앉지 않았다. 부목의 붕대를 피부까지 풀고 30분이 지났지만 통증은 그대로이다. 종아리 앞쪽이 팽팽하게 부어 단단하고, 발가락을 수동으로 아래로 굽히면 종아리에 극심한 통증을 호소한다. 첫째·둘째 발가락 사이 발등 감각이 둔하다. 발은 따뜻하고 모세혈관 재충혈은 2초이며, 발등동맥 맥박은 반대쪽보다 약하게 만져진다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 하지 CT 혈관조영술 B. 간헐적 공기압박 장치 적용 C. 응급 근막절개술 D. 미분획 헤파린 정맥 주입 E. 카테터 유도 혈전용해술 경골 골절 뒤 진통제에 듣지 않는 통증, 수동 신전 통증, 단단한 구획, 깊은종아리신경 영역 감각 저하, 이완기 혈압 58 과 구획 내압 38 의 차이 20 mmHg 는 급성 구획증후군이다. 발등동맥 맥박이 약해진 것은 구획 내압이 오른 뒤의 늦은 징후이고, 발이 따뜻하며 재충혈 2초·도플러 동맥 신호가 들려 동맥 폐색으로 볼 근거가 없다. 붕대를 풀어도 지속되므로 혈전·혈관 처치가 아니라 응급 근막절개술로 감압한다."
   },
   {
    "id": "anatomy-daily-2026-09-29",
