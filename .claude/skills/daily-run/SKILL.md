@@ -21,6 +21,14 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    ```
    여기서 나온 주제는 오늘 생성에서 제외 힌트로 쓴다.
 
+1-b. **함정 계열 큐(KMLE·USMLE 날)** — 문항이 모자란 함정 계열을 오늘 세트에 **먼저** 넣는다(2026-09-29 — 규칙 `/gen-kmle` 「함정 계열」).
+   ```
+   python pipelines/traps.py queue --exam kmle --limit 2      # USMLE 날은 --exam usmle
+   python pipelines/traps.py list --brief                     # 세트의 다른 문항을 설계할 때 볼 계열 목록
+   ```
+   - 항목마다 그 쪽(trap/mirror) 문항 하나를 쓰고 `design.trap: {id, side}` 를 적는다. 세트 개수 안에서 쓰고, `recent_topics` 제외의 예외다.
+   - 큐가 비면 건너뛴다. 보고에 「함정 계열 N문항(계열 id·쪽)」을 남긴다.
+
 2. **생성** — 타입에 맞는 스킬 규칙을 따른다.
    - KMLE/USMLE → `/gen-kmle` 규칙 (USMLE는 `step`·`exam_subject` 필수)
      · **자료 다양성**: 세트에 **심전도 판독 문항 ≥1개**를 넣고 `figure`(합성 `type:ecg`

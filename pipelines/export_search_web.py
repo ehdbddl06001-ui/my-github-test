@@ -62,7 +62,7 @@ def build_record(d: Doc) -> dict:
         "source": m.get("source", "") or "",
         "confidence": m.get("confidence", "") or "",
         "date": str(m.get("date", "") or ""),
-        "path": str(d.path.relative_to(ROOT)),
+        "path": d.path.relative_to(ROOT).as_posix(),   # Windows 에서도 슬래시 — 검색 결과의 GitHub 링크가 이 경로로 만들어진다
         "snippet": clean[:SNIPPET_LEN],
         # 검색 대상 텍스트(제목+주제+태그+본문). 소문자는 브라우저에서 처리.
         # 검색어로도 걸리게 unit 을 넣는다 — "2회차"·"등"으로 그 회차 자료를 모을 수 있다.

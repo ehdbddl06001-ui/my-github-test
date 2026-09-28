@@ -169,6 +169,17 @@ def publish(message: str, branch: str, dry: bool, allow_code: bool,
     if r.returncode:
         return 1
 
+    # 1-a) 함정 계열 등록부(content/traps/)가 바뀌었으면 등록부와 표시한 문항을 함께 본다(2026-09-29).
+    #      패턴 하나가 틀리면 그 계열로 쓴 문항이 모두 린터에서 막히므로 등록부 쪽에서 먼저 멈춘다.
+    if any(p.startswith("content/traps/") for p in content):
+        r = _run([sys.executable, "pipelines/traps.py", "check"])
+        out = (r.stdout or r.stderr or "").strip().splitlines()
+        print(" ", out[-1] if out else "traps.py check")
+        if r.returncode:
+            print("\n".join(out[-40:]))
+            print("→ 함정 계열 등록부 오류 — 고친 뒤 다시 게시한다(`python pipelines/traps.py check`).")
+            return 1
+
     # 1-b) 바뀐 KMLE·USMLE 문항의 형식 린트 — ERROR 면 멈춘다(2026-09-19~ design 누락·문항에 없는 정보 인용 등).
     #      WARN·REVIEW(내용 검토 신호)는 보고만 한다. 영상 카드는 빌더 조립기가 원천에서 검사하므로 여기서 빼고,
     #      지운 파일은 린트할 수 없으니 남아 있는 것만 넘긴다.

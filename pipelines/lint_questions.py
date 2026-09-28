@@ -35,6 +35,7 @@ from typing import Iterable
 from frontmatter import load, Doc, QUESTION_TYPES
 from question_design import format_findings, review_flags
 from concepts import OBJECTIVE_REQUIRED_FROM, load_concepts, question_learning_errors
+from traps import question_findings as trap_findings
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
@@ -227,6 +228,9 @@ def lint_doc(d: Doc) -> list[Finding]:
 
     # 9) 출제 설계·정보 역할(형식) — 2026-09-19 이후 문항은 필수
     for level, code, msg in format_findings(m, d.type):
+        findings.append(Finding(level, code, msg))
+    # 9-b) 함정 계열(design.trap) — 등록부(content/traps/)의 단서·오답 계열·정답 계열과 모양이 맞는가(2026-09-29)
+    for level, code, msg in trap_findings(m, d.type):
         findings.append(Finding(level, code, msg))
     # 10) 내용 검토 신호 — 실패로 치지 않는다
     for code, msg in review_flags(m):

@@ -53,6 +53,7 @@ from pathlib import Path
 import learning_log as ll
 import outline as ol
 from concepts import load_concepts, load_questions
+from traps import trap_tag
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "state" / "concept_queue.json"
@@ -178,9 +179,13 @@ def _variants(s, concept: dict, questions: dict, due: str) -> list[dict]:
         if not q or "#" in str(qid) or have.get(qid, 0) >= 2:
             continue                                  # 사라진 문항·변형 자체의 오답·이미 둘 있음
         d = q.get("design") if isinstance(q.get("design"), dict) else {}
+        tag = trap_tag(q)
+        if tag and tag.get("id"):                     # 함정 계열 문항 — 변형 A 는 그 계열의 반대쪽(2026-09-29)
+            seed = f"design.trap({tag['id']}) → " + ("mirror.when" if tag.get("side") == "trap" else "trap 조건")
+        else:
+            seed = "design.switch" if isinstance(d.get("switch"), dict) else ("design.discriminator" if d.get("discriminator") else "해설")
         out.append({"objective": concept.get("id"), "qid": qid, "exam": str(q.get("type", "")), "have": have.get(qid, 0),
-                    "need": 2 - have.get(qid, 0), "due": due, "priority": s.priority,
-                    "seed": "design.switch" if isinstance(d.get("switch"), dict) else ("design.discriminator" if d.get("discriminator") else "해설")})
+                    "need": 2 - have.get(qid, 0), "due": due, "priority": s.priority, "seed": seed})
     return out
 
 

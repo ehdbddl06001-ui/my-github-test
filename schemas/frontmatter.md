@@ -306,6 +306,7 @@ figure:
 | `design.findings` | 리스트 of `{item, role, why}` | 주요 정보의 역할(≤ 10). `role` ∈ `key`·`rule_out`·`management`·`background`(여러 개 가능, 첫 역할이 주 역할). `item` 은 발문·활력징후·검사에 **있는 표현 그대로**(그림 소견은 `영상:`·`심전도:` 로 시작) |
 | `design.summary` | 문자열 | 핵심 판단 요약 2~3문장 |
 | `design.switch` | `{choice, condition}` | (선택) 어떤 조건이 바뀌면 다른 보기가 더 적절해지는가 |
+| `design.trap` | `{id, side}` | (선택, 2026-09-29) 이 문항이 쓰는 **함정 계열**(`content/traps/<id>.yaml`)과 쪽 — `trap`(단서에 끌리는 lure 계열이 오답, 정답은 truth 계열) · `mirror`(같은 단서인데 lure 계열이 정답). 형식은 `pipelines/traps.py`(린터가 호출)가 등록부와 대조한다. 아래 「함정 계열 등록부」 |
 | `review_status` | `unreviewed`·`reviewed`·`needs_revision` | 사람의 **의학적 내용 검토** 상태. 없으면 unreviewed |
 | `reviewed_by` · `review_note` | 문자열 | `reviewed` 일 때 필수 — 누가 무엇을 어떤 근거로 확인했는지 |
 
@@ -328,6 +329,31 @@ design:
   switch: {choice: B, condition: "목이 뻣뻣하거나 의식이 돌아오지 않으면 요추천자가 필요하다."}
 review_status: unreviewed
 ```
+
+## 함정 계열 등록부 — `content/traps/<id>.yaml` (2026-09-29)
+
+**보기를 가르는 함정**(발문의 한 소견이 보기 한 무리로 끌어당기는데 정답은 다른 무리에 있는 구조)을 계열 하나당 YAML 하나로 둔다.
+Markdown 이 아니라서 색인·검색 번들에는 들어가지 않는다. 문항은 `design.trap` 으로 가리킨다. 검사는 `python pipelines/traps.py check`
+(등록부 + 표시한 문항 — 등록부가 바뀌면 `publish.py` 가 자동으로 돈다). 규칙은 `/gen-kmle` 「함정 계열」.
+
+| 필드 | 형태 | 설명 |
+|---|---|---|
+| `id` | `tr.<과>.<계열>` | 파일 이름과 같다 |
+| `title` · `why` | 문자열 | 계열 이름 · trap 쪽에서 lure 계열이 왜 틀리는가(1~2문장) |
+| `status` | `active`·`retired` | retired 는 큐에 나오지 않고 새 문항에 쓰면 WARN |
+| `found` · `found_note` | 날짜 · 문자열 | 등록일 · 무엇과 비교해 무엇이 없었나(외부 문항 원문은 싣지 않는다) |
+| `exams` | `[kmle, usmle]` | 문항을 둘 시험 — 시험마다 두 쪽을 센다 |
+| `objectives` · `topics` | 목록 | 학습 목표(정리본 id) · 문항 topic — 큐가 목표를 넘기고, 표시 안 된 후보는 이 범위에서만 찾는다 |
+| `cue` | `{text, patterns}` | 끌어당기는 소견 한 줄 + 발문·활력징후·검사에서 찾을 정규식(대소문자 무시, 한·영) |
+| `lure` | `{family, examples, patterns, min}` | 끌려가는 오답 계열 — 보기 글에서 찾을 정규식, trap 쪽 문항에 둘 최소 개수(기본 2) |
+| `truth` | `{family, answer, patterns}` | trap 쪽 정답 계열과 대표 정답(`answer` 가 `patterns` 에 걸려야 한다) |
+| `discriminators` | 문장 목록(≥ 2) | 두 계열을 가르는 소견 — `[[출처id: 쪽]]` 근거 |
+| `mirror` | `{when, answer}` | lure 계열이 정답이 되는 조건과 그때의 정답(`answer` 는 lure 패턴에 걸려야 한다). `want.mirror: 0` 이면 생략 |
+| `write_notes` | 문장 목록 | 그 계열로 문항을 쓸 때 단일 최선의 답을 지키는 조건 |
+| `want` | `{trap: N, mirror: N}` | 시험마다 둘 문항 수(기본 1·1) — 모자라면 `traps.py queue` 에 나온다 |
+| `related` | 계열 id 목록 | 같은 목표의 짝 계열 |
+| `sources` | 목록 | 정리본 `sources` 와 같은 형식(`id·org·title·year·checked_at·checked·verified` + https url·doi·pmid 또는 교과서 citation) — 확인한 것만 |
+| `review_status` | `unreviewed`·`reviewed`·`needs_revision` | reviewed 는 사람의 `reviewed_by`·`review_note` 만 |
 
 ## 오답 뒤 학습 흐름 — 문항 선택 필드 `objective` · `version` · `distractors` · `case_path` (2026-09-18)
 
