@@ -170,3 +170,11 @@
 - 신장내과 판 5 (7쪽, 판형 11): 내용 변경 없음
 - 신경과 판 5 (7쪽, 판형 11): 내용 변경 없음
 - 비뇨의학과 판 4 (4쪽, 판형 11): 내용 변경 없음
+
+## 2026-09-28T08:55:35+09:00
+
+- 피부과 판 8 (13쪽, 판형 11): 새 단원: 지루각화증 — 갈색이어도 멜라닌세포 병변이 아니다
+- 순환기내과 판 10 (22쪽, 판형 11): 새 단원: 수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다; 내용 갱신: 심방조동 — 안정하면 심박수 조절이 먼저다 (정리본 v2 → v3); 내용 갱신: 급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저 (정리본 v1 → v2)
+- 소아청소년과 판 8 (18쪽, 판형 11): 새 단원: Paroxysmal Cough with Apnea in a Young Infant
+- 류마티스내과 판 10 (22쪽, 판형 11): 새 단원: Acute Monoarthritis of the Knee after Surgery in an Older Adult; 새 단원: Proximal Muscle Weakness with a Heliotrope Rash in a Middle-aged Woman
+- 호흡기내과 판 7 (6쪽, 판형 11): 새 단원: Lymphocytic Exudative Pleural Effusion in a Young Adult

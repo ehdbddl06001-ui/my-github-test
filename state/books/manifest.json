@@ -1,61 +1,67 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "74cd28b55196319d7b87",
-   "version": 9,
+   "hash": "658c72f063572d3a6e5e",
+   "version": 10,
    "date": "2026-09-28",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 19,
+   "pages": 22,
    "template_version": 11,
    "units": {
+    "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
+     "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
+     "page": 2,
+     "concept_hash": "a9f83809ac2d6f6e",
+     "concept_version": 2
+    },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — 유도 I 과 aVF 의 극성으로 사분면을 정한다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "3cfca77aedbf5fea",
      "concept_version": 2
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
-     "title": "심방조동 — 톱니파 인식에서 안정형 첫 처치(심박수 조절·항응고 판단)까지",
-     "page": 4,
-     "concept_hash": "09f5852bd25f2c69",
-     "concept_version": 2
+     "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
+     "page": 6,
+     "concept_hash": "d216867dbcd29806",
+     "concept_version": 3
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 재분극 예비력에서 1차 약물 선택까지",
-     "page": 6,
+     "page": 9,
      "concept_hash": "5c8cfcaaadf5062f",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "쇼크를 동반한 고위험(대량) 폐색전증 — 항응고만으로는 부족하고, 금기가 없으면 전신 혈전용해로 재관류한다",
-     "page": 9,
+     "page": 12,
      "concept_hash": "b2a0e6947e1d0916",
      "concept_version": 2
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 12,
+     "page": 15,
      "concept_hash": "9f545e2ebcac9c1b",
      "concept_version": 1
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
-     "title": "급성 대동맥박리 — 벽 전단응력에서 첫 약물(beta-blocker 베타차단제)까지",
-     "page": 15,
-     "concept_hash": "529c67c586f3f58c",
-     "concept_version": 1
+     "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
+     "page": 18,
+     "concept_hash": "791e246e3702eea3",
+     "concept_version": 2
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압의 확진 — 심초음파는 선별, 확진과 분류는 우심도자술의 평균 폐동맥압·쐐기압·폐혈관저항",
-     "page": 18,
+     "page": 21,
      "concept_hash": "53ac21aab5a81883",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "c9e2bebff6a3342478cdc263dc2f16f3",
-    "version": 9,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "e116eaa3367d51fcceeac20a67f896b6",
+    "version": 10,
+    "uploaded": "2026-09-28T09:23:50+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -66,21 +72,32 @@
     "MedKOS_학습서_순환기내과_v6_2026-09-25.pdf",
     "MedKOS_학습서_순환기내과_v7_2026-09-27.pdf",
     "MedKOS_학습서_순환기내과_v8_2026-09-27.pdf",
-    "MedKOS_학습서_순환기내과_v9_2026-09-28.pdf"
+    "MedKOS_학습서_순환기내과_v9_2026-09-28.pdf",
+    "MedKOS_학습서_순환기내과_v10_2026-09-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
+    "내용 갱신: 심방조동 — 안정하면 심박수 조절이 먼저다 (정리본 v2 → v3)",
+    "내용 갱신: 급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저 (정리본 v1 → v2)"
+   ]
   },
   "피부과": {
-   "hash": "7bfbd32b63496db3c524",
-   "version": 7,
+   "hash": "2022d7d23ec977600b52",
+   "version": 8,
    "date": "2026-09-28",
    "file": "MedKOS_학습서_피부과.pdf",
-   "pages": 12,
+   "pages": 13,
    "template_version": 11,
    "units": {
+    "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin": {
+     "title": "지루각화증 — 갈색이어도 멜라닌세포 병변이 아니다",
+     "page": 2,
+     "concept_hash": "d3b281a0a60f5113",
+     "concept_version": 2
+    },
     "cn.derm.pityriasis-versicolor.treatment": {
      "title": "어루러기 — 치료 수준은 범위·재발이 정한다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "bb17c063897e492a",
      "concept_version": 4
     },
@@ -92,28 +109,28 @@
     },
     "cn.derm.erythema-nodosum.underlying-cause-workup": {
      "title": "결절홍반 — 정강이 압통 결절을 보면 피부가 아니라 원인을 찾는다",
-     "page": 6,
+     "page": 7,
      "concept_hash": "bdcdbb3118a0bdbe",
      "concept_version": 2
     },
     "cn.derm.scabies.treat-with-contacts": {
      "title": "옴 — 진드기 과민반응에서 환자·접촉자 동시 치료까지",
-     "page": 7,
+     "page": 8,
      "concept_hash": "ae66aaaf6725d4df",
      "concept_version": 1
     },
     "cn.derm.regressing-pigmented-lesion.biopsy-first": {
      "title": "퇴행 구조가 주된 색소 병변 — 양성으로 보여도 조직검사가 먼저",
-     "page": 9,
+     "page": 10,
      "concept_hash": "39bc5744e3b962ff",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "c0ec83bc0318748f7bf6c9853d9bf562",
-    "version": 7,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "ed5ab3170bb0021a8adff0d76e9db627",
+    "version": 8,
+    "uploaded": "2026-09-28T09:23:50+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -122,9 +139,12 @@
     "MedKOS_학습서_피부과_v4_2026-09-25.pdf",
     "MedKOS_학습서_피부과_v5_2026-09-27.pdf",
     "MedKOS_학습서_피부과_v6_2026-09-27.pdf",
-    "MedKOS_학습서_피부과_v7_2026-09-28.pdf"
+    "MedKOS_학습서_피부과_v7_2026-09-28.pdf",
+    "MedKOS_학습서_피부과_v8_2026-09-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 지루각화증 — 갈색이어도 멜라닌세포 병변이 아니다"
+   ]
   },
   "신장내과": {
    "hash": "0ee8dff82ef6349ef80d",
@@ -169,8 +189,8 @@
    "changes": []
   },
   "소아청소년과": {
-   "hash": "b4dcebc29085fb54ebb7",
-   "version": 7,
+   "hash": "88aae40e7c41071ab5ba",
+   "version": 8,
    "date": "2026-09-28",
    "file": "MedKOS_학습서_소아청소년과.pdf",
    "pages": 18,
@@ -223,13 +243,19 @@
      "page": 17,
      "concept_hash": "9c95a903eea48716",
      "concept_version": 1
+    },
+    "cn.peds.pertussis.infant-macrolide-choice": {
+     "title": "Paroxysmal Cough with Apnea in a Young Infant",
+     "page": 18,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "9987e5d735030cb1649d9277d5de7e02",
-    "version": 7,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "304b8b12e586b9d954b45aebbbc338e0",
+    "version": 8,
+    "uploaded": "2026-09-28T09:23:50+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -238,9 +264,12 @@
     "MedKOS_학습서_소아청소년과_v4_2026-09-25.pdf",
     "MedKOS_학습서_소아청소년과_v5_2026-09-27.pdf",
     "MedKOS_학습서_소아청소년과_v6_2026-09-27.pdf",
-    "MedKOS_학습서_소아청소년과_v7_2026-09-28.pdf"
+    "MedKOS_학습서_소아청소년과_v7_2026-09-28.pdf",
+    "MedKOS_학습서_소아청소년과_v8_2026-09-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: Paroxysmal Cough with Apnea in a Young Infant"
+   ]
   },
   "안과": {
    "hash": "6374cec5de2a143ab1ab",
@@ -495,8 +524,8 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "591006dbf484caa1dc29",
-   "version": 9,
+   "hash": "5a2e4e6565c12fb7f62f",
+   "version": 10,
    "date": "2026-09-28",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 22,
@@ -564,16 +593,28 @@
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 21,
+     "page": 20,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
+    },
+    "cn.rheum.cppd.crystal-diagnosis": {
+     "title": "Acute Monoarthritis of the Knee after Surgery in an Older Adult",
+     "page": 22,
+     "concept_hash": null,
+     "concept_version": null
+    },
+    "cn.rheum.dermatomyositis.malignancy-screening": {
+     "title": "Proximal Muscle Weakness with a Heliotrope Rash in a Middle-aged Woman",
+     "page": 22,
+     "concept_hash": null,
+     "concept_version": null
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "89e4f4507833812324bc1e2bb4a77dfa",
-    "version": 9,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "deb90af09ad92eb3f595acde7ce7eecb",
+    "version": 10,
+    "uploaded": "2026-09-28T09:23:50+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -584,13 +625,17 @@
     "MedKOS_학습서_류마티스내과_v6_2026-09-27.pdf",
     "MedKOS_학습서_류마티스내과_v7_2026-09-27.pdf",
     "MedKOS_학습서_류마티스내과_v8_2026-09-27.pdf",
-    "MedKOS_학습서_류마티스내과_v9_2026-09-28.pdf"
+    "MedKOS_학습서_류마티스내과_v9_2026-09-28.pdf",
+    "MedKOS_학습서_류마티스내과_v10_2026-09-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: Acute Monoarthritis of the Knee after Surgery in an Older Adult",
+    "새 단원: Proximal Muscle Weakness with a Heliotrope Rash in a Middle-aged Woman"
+   ]
   },
   "호흡기내과": {
-   "hash": "aefb5ee2440cb42ce847",
-   "version": 6,
+   "hash": "77e97eb74aa31aff6330",
+   "version": 7,
    "date": "2026-09-28",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 6,
@@ -608,18 +653,24 @@
      "concept_hash": "c7ff1c4d6eec9885",
      "concept_version": 1
     },
+    "cn.pulm.tuberculous-pleurisy.ada-diagnosis": {
+     "title": "Lymphocytic Exudative Pleural Effusion in a Young Adult",
+     "page": 5,
+     "concept_hash": null,
+     "concept_version": null
+    },
     "cn.pulm.early-nsclc.lobectomy-vs-sublobar": {
      "title": "Peripheral 2.5 cm Adenocarcinoma, cT1cN0M0 (IA), Good Lung Function in a 70-year-old — Treatment",
-     "page": 5,
+     "page": 6,
      "concept_hash": null,
      "concept_version": null
     }
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "25b9fad6d7b12ce6f23a0708ab3fa15f",
-    "version": 6,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "ff88a02d885d5003a52d6f0565b04fae",
+    "version": 7,
+    "uploaded": "2026-09-28T09:23:50+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -627,9 +678,12 @@
     "MedKOS_학습서_호흡기내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_호흡기내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_호흡기내과_v5_2026-09-27.pdf",
-    "MedKOS_학습서_호흡기내과_v6_2026-09-28.pdf"
+    "MedKOS_학습서_호흡기내과_v6_2026-09-28.pdf",
+    "MedKOS_학습서_호흡기내과_v7_2026-09-28.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: Lymphocytic Exudative Pleural Effusion in a Young Adult"
+   ]
   },
   "응급의학과": {
    "hash": "ccd5fd487b6bff0d06cf",
@@ -1015,9 +1069,9 @@
   "date": "2026-09-28",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "b728673f148a88b11b43acb1c0e472e5",
+   "md5": "1911380ba85062bd550a2730800ff395",
    "version": null,
-   "uploaded": "2026-09-28T01:51:09+09:00"
+   "uploaded": "2026-09-28T09:23:50+09:00"
   }
  },
  "updated": "2026-09-28"
