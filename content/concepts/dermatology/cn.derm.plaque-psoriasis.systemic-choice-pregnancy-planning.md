@@ -259,6 +259,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13218004_Figure1
   reason: 얼굴 패널 위주이고 몸통 패널에 가슴 일부가 보인다 — 노출 최소화
+- asset: PMC-PMC12696756_Figure2
+  reason: 소견은 맞으나 패널 하나가 226×332 픽셀로 인쇄 기준(250) 미만 — 더 큰 판상건선 사진이 필요
 ---
 
 ## 정의

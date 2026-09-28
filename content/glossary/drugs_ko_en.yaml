@@ -99,6 +99,14 @@ drugs:
   니트로글리세린: nitroglycerin
   클로피도그렐: clopidogrel
   아토르바스타틴: atorvastatin
+  에리스로마이신: erythromycin
+  클래리스로마이신: clarithromycin
+  아지스로마이신: azithromycin
+  세프트리악손: ceftriaxone
+  콜히친: colchicine
+  아나킨라: anakinra
+  암피실린: ampicillin
+  세포탁심: cefotaxime
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}

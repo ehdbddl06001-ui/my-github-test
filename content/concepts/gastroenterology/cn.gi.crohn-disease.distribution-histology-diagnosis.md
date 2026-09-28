@@ -110,6 +110,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13197015_Figure2
   reason: 입술 피부 생검(장 밖 크론병)이고 육아종 패널이 약 200 픽셀로 작다
+- asset: PMC-PMC13317933_Figure6
+  reason: 그림 설명이 크론병이 아니라 장결핵의 육아종성 대장염(항산균 양성) — 라벨이 목표와 다르다
 ---
 
 ## 정의

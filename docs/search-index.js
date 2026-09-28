@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-27",
+ "generated": "2026-09-28",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2988,
+  "total": 2999,
   "byType": {
    "kmle": 1163,
-   "concept": 86,
+   "concept": 90,
    "anatomy": 739,
+   "paper": 676,
    "imaging": 152,
-   "paper": 669,
    "usmle": 162,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 739,
-   "Cardiology": 218,
+   "Cardiology": 219,
    "Nephrology": 179,
-   "Infectious Disease": 159,
-   "Pediatrics": 141,
-   "Hematology-Oncology": 100,
-   "Pathology": 96,
+   "Infectious Disease": 160,
+   "Pediatrics": 143,
+   "Hematology-Oncology": 101,
+   "Pathology": 97,
    "Obstetrics & Gynecology": 95,
    "Psychiatry": 90,
    "Neurology": 88,
-   "Rheumatology": 83,
+   "Rheumatology": 85,
    "Dermatology": 78,
    "Endocrinology": 78,
+   "Surgery": 78,
    "Gastroenterology": 77,
-   "Surgery": 77,
    "Ophthalmology": 76,
    "Orthopedics": 76,
-   "Pulmonology": 75,
+   "Pulmonology": 76,
    "General Surgery": 74,
    "Hematology": 71,
-   "Laboratory Medicine": 66,
+   "Laboratory Medicine": 67,
    "산부인과": 33,
    "Physiology": 19,
    "순환기": 15,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 949,
+   "medium": 960,
    "high": 1990,
    "low": 49
   },
@@ -726,6 +726,62 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Wide-complex Tachycardia after Myocardial Infarction ventricular-tachycardia synchronized-cardioversion unstable-tachycardia acls ecg KMLE 2026 / Claude Routine 68세 남자가 30분 전부터 시작된 두근거림과 어지러움으로 응급실에 왔다. 3년 전 전벽 심근경색으로 스텐트 시술을 받았다. 식은땀을 흘리며 묻는 말에 느리게 대답하고, 가슴이 답답하다고 한다. 경동맥 맥박은 빠르고 약하게 만져진다. 심전도는 그림과 같다. 활력징후와 검사 소견은 자료와 같다. 정맥로를 확보하고 산소를 주었다. 다음 처치로 가장 적절한 것은? A. 아미오다론 정맥 투여 B. 비동기 제세동 C. 동기화 심장율동전환 D. 아데노신 급속 정맥 주사 E. 경정맥 심박조율 심근경색 병력이 있는 환자의 넓은 QRS 빈맥은 심실빈맥으로 간주한다. 맥박이 있으나 저혈압·의식 저하·흉부 불편감이 있는 불안정 빈맥이므로 약물을 기다리지 않고 진정 후 동기화 심장율동전환을 한다."
   },
   {
+   "id": "cn.rheum.dermatomyositis.malignancy-screening",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-28",
+   "path": "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md",
+   "snippet": "판단 — 왜 암 선별이 먼저인가 이 환자는 이미 진단되었다 : 헬리오트로프 발진·고트론 구진은 피부근염 진단적이다 [[harrison 21: 365장 p.2820]]. 다음 검사는 진단을 한 번 더 확인하는 것이 아니라 예후를 바꾸는 것 이어야 한다. 성인 발병 피부근염은 처음 2–3년 안에 약 15 % 에서 암이 발견된다 [[harrison 21: 365장 p.2820]]. 항TIF1 γ·항NXP2 는 그 위험을 더 높인다 ",
+   "text": "Rheumatology 판단 — 왜 암 선별이 먼저인가 이 환자는 이미 진단되었다 : 헬리오트로프 발진·고트론 구진은 피부근염 진단적이다 [[harrison 21: 365장 p.2820]]. 다음 검사는 진단을 한 번 더 확인하는 것이 아니라 예후를 바꾸는 것 이어야 한다. 성인 발병 피부근염은 처음 2–3년 안에 약 15 % 에서 암이 발견된다 [[harrison 21: 365장 p.2820]]. 항TIF1 γ·항NXP2 는 그 위험을 더 높인다 [[harrison 21: 365장 p.2821]]. 폐 쪽 항체(항MDA5·항Jo 1)가 음성이고 호흡기 증상이 없으면 간질성 폐질환 평가가 앞서지 않는다. 기전 — 제1형 인터페론 손상과 종양 연관 피부근염의 근육·피부 손상은 예전에는 모세혈관에 대한 항체·보체 공격으로 설명했지만, 지금은 제1형 인터페론(아마 IFN β) 매개 독성이 주 기전으로 여겨진다 [[harrison 21: 365장 p.2821]]. 조직에서는 근다발 주변 위축과 MxA 발현이 특징이다. 항TIF1 γ 는 종양에서 과발현된 자가항원에 대한 면역반응이 근육·피부로 번진 결과로 설명되며, 그래서 암과 묶인다 — 이 종양 면역 가설은 이 장에서 대조하지 않았다. 가르는 소견 — 항체가 무엇을 먼저 볼지 알려 준다 근력 저하의 근병증 확인에는 CK 가 가장 민감한 표지다(피부근염 70–80 % 상승, CK 가 정상이면 알돌라아제가 오를 수 있다) [[harrison 21: 365장 p.2820]]. 근전도·근육 MRI 는 근병증을 보여 주지만 원인에 특이적이지 않다 [[harrison 21: 365장 p.2821]]. 항체별 연관은 표로 한 번에 본다. 선택 — 항체가 다음 검사를 정한다 항TIF1 γ·항NXP2·고령·삼킴곤란 → 흉부·복부·골반 CT 와 성별·나이에 맞춘 암 검진 [[?imacs 2023]]. 항MDA5·항합성효소 또는 호흡기 증상 → 고해상도 흉부 CT·폐기능이 먼저 [[harrison 21: 365장 p.2822]]. 재평가: 암이 처음에 안 나와도 진단 뒤 수년간 위험이 남아 재선별을 고려한다 [[?imacs 2023]]. 권고와 예외 치료는 고용량 글루코코르티코이드가 1차이고, 심한 근력 저하·간질성 폐질환·심근염이 있으면 이차 약(메토트렉세이트 등)을 함께 시작한다 [[harrison 21: 365장 p.2824]]. 암이 있으면 예후가 암으로 정해진다 — 암이 없을 때 피부근염 5년 생존율은 70–93 % [[harrison 21: 365장 p.2821]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 새 근거 · 암 선별의 범위 — 시험 기준: 성인 피부근염, 특히 항TIF1 γ 양성은 흉부·복부·골반 CT 를 포함한 포괄적 선별 [[?imacs 2023]] / 다른 기준: 해리슨 21판은 암 위험과 항체 연관만 적고 선별 항목을 정하지 않는다 [[harrison 21: 365장 p.2820]] [[harrison 21: 365장 p.2821]] / 왜 다른가: IMACS 국제 지침(2023)은 해리슨 21판(2022) 이후 나왔다 / 시험에서는: KMLE·USMLE 모두 「피부근염 진단 → 암 검사」를 답으로 본다. (심화) 왜 근육 조직검사가 늘 답이 아닌가 근육 조직검사는 근염의 아형(피부근염·다발근염·괴사성 근병증·봉입체근염)을 가르는 데 쓰인다 [[harrison 21: 365장 p.2820]]. 피부근염은 발진과 특이 항체로 아형이 이미 정해지므로 조직검사가 새 정보를 주지 않는다. 반대로 발진이 없는 근위부 근력 저하는 다발근염처럼 보여도 봉입체근염·근이영양증일 수 있어 조직검사가 필수다 — 면역 치료에 반응하지 않는 병을 오래 치료하지 않기 위해서다."
+  },
+  {
+   "id": "cn.rheum.cppd.crystal-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-28",
+   "path": "content/concepts/rheumatology/cn.rheum.cppd.crystal-diagnosis.md",
+   "snippet": "판단 — 왜 가성통풍이 먼저인가 급성 단관절염은 관절천자 로 결정 종류와 감염을 함께 본다 — 치료가 달라서다 [[harrison 21: 372장 p.2862]]. 마름모·막대 모양의 약한 양성(또는 무) 복굴절 결정이 보이면 확진이다 [[harrison 21: 372장 p.2866]]. 반달연골의 선형 석회화는 가능성을 더 높인다. 열·높은 관절액 백혈구는 가성통풍에서도 흔해 감염과 가르는 근거가 못 된다 — 그람염색·배양 ",
+   "text": "Rheumatology 판단 — 왜 가성통풍이 먼저인가 급성 단관절염은 관절천자 로 결정 종류와 감염을 함께 본다 — 치료가 달라서다 [[harrison 21: 372장 p.2862]]. 마름모·막대 모양의 약한 양성(또는 무) 복굴절 결정이 보이면 확진이다 [[harrison 21: 372장 p.2866]]. 반달연골의 선형 석회화는 가능성을 더 높인다. 열·높은 관절액 백혈구는 가성통풍에서도 흔해 감염과 가르는 근거가 못 된다 — 그람염색·배양 이 가른다 [[harrison 21: 372장 p.2866]]. 기전 — 무기 피로인산에서 결정 염증으로 연골 기질의 무기 피로인산이 늘어 칼슘과 결합하면 연골 기질 소포·콜라겐 섬유 위에 CPP 결정이 생긴다 — 통풍의 고요산혈증에 해당하는 과정이다. 피로인산은 주로 세포 밖 ATP 분해에서 오고 ANKH 단백이 ATP 유출을 조절한다 [[harrison 21: 372장 p.2865]]. 나이 든·병든 연골에서 잘 생겨 60세 넘어 10년마다 유병률이 두 배가 되고, 대부분 증상이 없다. 관절 공간으로 결정이 떨어져 나오면 단핵구·호중구가 삼키고 인플라마좀이 활성화되어 급성 염증이 된다 [[harrison 21: 372장 p.2865]]. 수술(특히 부갑상선절제술 뒤 칼슘·마그네슘이 급락)·중병·외상이 결정을 녹여 떨어뜨리는 유발 요인이다 [[harrison 21: 372장 p.2865]] [[harrison 21: 372장 p.2866]]. 가르는 소견 — 결정·영상·배양 결정: CPP 는 세포 안팎·조직 조각·섬유소 덩이·호중구 안에서 보인다 [[harrison 21: 372장 p.2866]]. 요산 결정과 함께 있을 수도 있다. 영상: 섬유연골 반달연골·유리연골 안의 점·선 모양 석회화. 인회석의 관절 주위 석회화와 구별한다 [[harrison 21: 372장 p.2866]]. 정상 혈청 요산은 통풍 배제 근거가 아니다 [[harrison 21: 372장 p.2864]]. 선택 — 진단 뒤 급성기 치료 통풍 발작 치료를 옮겨 쓴다: 얼음·휴식, 관절액 흡인과 관절내 스테로이드, 콜히친, NSAID, 전신 스테로이드. 심한 다관절 발작은 아나킨라 [[harrison 21: 372장 p.2866]]. 재발이 잦으면 매일 콜히친 예방. 통풍의 요산 저하 치료처럼 결정을 없애는 약은 없다 [[harrison 21: 372장 p.2866]]. 재평가: 첫 발작은 통풍보다 오래갈 수 있다(수주~수개월) [[harrison 21: 372장 p.2865]]. 배양이 양성으로 바뀌면 치료를 감염 쪽으로 바꾼다. 권고와 예외 50세 미만이면 대사 원인(부갑상선항진증·혈색소증·저인산효소증·저마그네슘혈증)과 가족력을 찾는다 [[harrison 21: 372장 p.2865]]. 만성 신부전 환자의 연골석회화는 수산칼슘일 수 있다 [[harrison 21: 372장 p.2866]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 372장 p.2862~2867). (심화) 왜 결정이 감염을 배제하지 못하나 세균이 들어간 관절에서는 염증 효소가 연골을 녹이며 이미 침착된 결정을 관절 공간으로 떨어뜨린다. 그래서 감염 관절의 관절액에서도 결정이 보이고, 결정과 균이 함께 염증을 만든다 [[harrison 21: 372장 p.2866]]. 결정을 찾았다고 배양 결과를 기다리지 않는 것이 가장 위험한 실수다 — 화농성 관절염은 수일 안에 연골을 파괴한다."
+  },
+  {
+   "id": "cn.pulm.tuberculous-pleurisy.ada-diagnosis",
+   "type": "concept",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-28",
+   "path": "content/concepts/pulmonology/cn.pulm.tuberculous-pleurisy.ada-diagnosis.md",
+   "snippet": "판단 — 왜 결핵성 흉막염인가 흉수를 보면 먼저 여출액/삼출액 을 가른다 — 삼출액이어야 원인을 찾는 추가 검사가 의미가 있다 [[harrison 21: 294장 p.2198]]. 삼출액이면 세포 분획·포도당·세포검사·배양·결핵 표지를 본다 [[harrison 21: 294장 p.2197]]. 림프구 우세 + ADA 40 IU/L 이면 결핵성 흉막염으로 진단한다 [[harrison 21: 294장 p.2199]]. 결핵이 흔한",
+   "text": "Pulmonology 판단 — 왜 결핵성 흉막염인가 흉수를 보면 먼저 여출액/삼출액 을 가른다 — 삼출액이어야 원인을 찾는 추가 검사가 의미가 있다 [[harrison 21: 294장 p.2198]]. 삼출액이면 세포 분획·포도당·세포검사·배양·결핵 표지를 본다 [[harrison 21: 294장 p.2197]]. 림프구 우세 + ADA 40 IU/L 이면 결핵성 흉막염으로 진단한다 [[harrison 21: 294장 p.2199]]. 결핵이 흔한 곳에서는 결핵이 삼출성 흉수의 가장 흔한 원인이다 — 미국과 다르다 [[harrison 21: 294장 p.2199]]. 기전 — 결핵 단백 과민반응에서 림프구 삼출액으로 결핵성 흉막염은 대개 일차 결핵에 동반되며, 흉막 공간에 들어온 결핵 단백에 대한 과민반응 이 주 기전이다 [[harrison 21: 294장 p.2199]]. 그래서 흉수에는 균이 적고 활성화된 작은 림프구가 가득하다 — 림프구·대식세포 활성의 표지인 ADA 와 IFN γ 가 올라가고, 도말·배양은 자주 음성이다. 흉막 모세혈관 투과성이 늘어 단백이 많은 삼출액이 되고, 발열·체중 감소·흉막성 흉통이 따라온다. 가르는 소견 — 림프구 삼출액에서 무엇을 보나 포도당: < 60 mg/dL 이면 부폐렴성·악성·류마티스 흉막염 쪽 [[harrison 21: 294장 p.2197]] — 정상이면 류마티스 흉막염 가능성이 낮다. 세포검사: 악성 흉수의 진단 방법. 음성이어도 악성이 강하게 의심되면 흉강경 [[harrison 21: 294장 p.2198]]. 결핵 표지가 음성이거나 애매하면 흉수 배양·흉막 침생검·흉강경으로 확진한다 [[harrison 21: 294장 p.2199]]. 선택 — 진단 뒤 치료는 폐결핵과 같다 [[harrison 21: 294장 p.2199]] — 흉수만 있다고 치료 기간을 줄이지 않는다. 재평가: 치료 중 증상·흉수 감소를 보고, 호전이 없으면 진단(악성·림프종)을 다시 의심해 흉막 생검을 고려한다. 권고와 예외 ADA 절단값은 결핵 유병률에 따라 양성예측도가 달라진다 — 결핵이 드문 곳에서 ADA 단독은 거짓 양성이 늘어난다(수치는 대조하지 않았다, 검토 항목). 림프종·류마티스 흉막염·농흉에서도 ADA 가 오를 수 있다는 서술은 이 장에 없어 대조하지 않았다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 결핵성 흉막염은 흔한가 — 시험 기준(KMLE): 한국 같은 결핵 유행 지역에서 젊은 성인의 림프구 삼출액 + ADA 상승 = 결핵성 흉막염 [[?kats tb 2024]] / 다른 기준: 해리슨은 미국에서는 결핵성 흉수가 비교적 드물고 삼출액의 흔한 원인이 세균 폐렴·악성·바이러스·폐색전증이라 적는다 [[harrison 21: 294장 p.2198]] [[harrison 21: 294장 p.2199]] / 왜 다른가: 결핵 유병률 차이 / 시험에서는: KMLE 는 결핵을 먼저, USMLE 는 이민·유행 지역 거주 같은 노출 단서가 있을 때 결핵을 답으로 낸다. (심화) 왜 여출액에서 Light 기준이 틀리나 이뇨제를 쓰는 심부전 환자는 흉수의 물이 먼저 빠져 단백·LDH 농도가 올라가, 원래 여출액인데 Light 기준을 맞출 수 있다(이뇨제 기전 서술은 이 장에 없다 — 검토 항목). 그래서 여출액 원인이 뚜렷하면 혈청과 흉수의 단백 차가 3.1 g/dL 를 넘는지를 보고 여출액으로 되돌린다 [[harrison 21: 294장 p.2198]]. 흉수 NT proBNP 1500 pg/mL 도 심부전 흉수를 거의 확정한다 [[harrison 21: 294장 p.2198]]."
+  },
+  {
+   "id": "cn.peds.pertussis.infant-macrolide-choice",
+   "type": "concept",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-09-28",
+   "path": "content/concepts/pediatrics/cn.peds.pertussis.infant-macrolide-choice.md",
+   "snippet": "판단 — 왜 아지스로마이신이 먼저인가 백일해 치료 약은 마크롤라이드 다 [[harrison 21: 160장 p.1260]]. 베타락탐(아목시실린·세프트리악손)은 백일해 제균에 쓰지 않는다. 같은 마크롤라이드 중에서도 나이 가 약을 가른다 — 1개월 미만은 비대날문협착 위험 때문에 에리스로마이신보다 아지스로마이신 [[?cdc 2005]]. TMP SMX 는 마크롤라이드를 쓸 수 없을 때의 대안일 뿐이고 [[harrison 21:",
+   "text": "Pediatrics 판단 — 왜 아지스로마이신이 먼저인가 백일해 치료 약은 마크롤라이드 다 [[harrison 21: 160장 p.1260]]. 베타락탐(아목시실린·세프트리악손)은 백일해 제균에 쓰지 않는다. 같은 마크롤라이드 중에서도 나이 가 약을 가른다 — 1개월 미만은 비대날문협착 위험 때문에 에리스로마이신보다 아지스로마이신 [[?cdc 2005]]. TMP SMX 는 마크롤라이드를 쓸 수 없을 때의 대안일 뿐이고 [[harrison 21: 160장 p.1260]], 2개월 미만에서는 쓰지 않는다 [[?cdc 2005]]. 기전 — 기도 섬모 부착에서 발작성 기침·림프구 증가로 백일해균은 비인두 섬모 상피에 부착소(섬유상 적혈구응집소·퍼탁틴)와 백일해 독소로 붙어 증식하고, 기관 세포독소 등이 점막을 손상한다. 균은 혈류로 퍼지지 않으며, 림프구 증가 같은 전신 소견은 독소 효과 다 [[harrison 21: 160장 p.1259]]. 카타르기(1–2주, 감기와 구별 안 됨) 뒤 발작기에 한 번의 호기 안에 기침이 5–10번 몰아치고, 기침 뒤 구토·청색증이 오며, 발작 사이에는 정상으로 보인다 [[harrison 21: 160장 p.1259]] [[harrison 21: 160장 p.1260]]. 어린 영아는 흡기 whoop 가 드물고 [[harrison 21: 160장 p.1257]] 대신 무호흡 으로 온다 — 2세 미만 입원아의 27.1 % [[harrison 21: 160장 p.1260]]. 영아 사망은 매우 높은 백혈구 증가와 폐고혈압과 관련된다 [[harrison 21: 160장 p.1259]]. 가르는 소견 — 백일해와 세균폐렴 열은 흔치 않고, 열이 있으면 세균 중복감염을 생각한다 [[harrison 21: 160장 p.1260]]. 림프구 증가는 어린 소아에서 흔하고 다른 감염에서는 드물다 — 청소년·성인에서는 흔치 않다 [[harrison 21: 160장 p.1260]]. 확진은 비인두 흡인물 PCR(빠르고 민감)·배양(특이도 100 %). 배양은 치료 5일 안에 음성이 되므로 음성이 배제 근거가 아니다 [[harrison 21: 160장 p.1260]]. 선택 — 나이가 약을 정한다 약보다 먼저 입원 : 어린 영아는 합병증·사망이 가장 많아 대부분 입원시키고, 조용한 환경으로 발작 자극을 줄인다 [[harrison 21: 160장 p.1260]]. 기침 억제제는 효과가 없고, 베타작용제·스테로이드도 효과가 증명되지 않았다 [[harrison 21: 160장 p.1260]]. 재평가: 제균은 배양 음전으로 확인되지만 기침은 회복기(1–3개월)까지 이어진다 — 기침이 계속된다고 약을 바꾸지 않는다 [[harrison 21: 160장 p.1260]]. 권고와 예외 항생제는 발작기에 주어도 경과를 크게 바꾸지 못한다 — 그래도 전파 차단을 위해 준다 [[harrison 21: 160장 p.1260]]. 나이별 용량과 가족 접촉자 예방 투여는 CDC 원문을 대조하지 못했다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 「TMP SMX 는 대안」의 적용 나이 — 시험 기준: 마크롤라이드 알레르기 때 TMP SMX 가 대안 [[harrison 21: 160장 p.1260]] / 다른 기준: 2개월 미만에서는 핵황달 위험으로 쓰지 않는다 [[?cdc 2005]] / 왜 다른가: 해리슨은 성인 중심 서술이라 나이 제한을 이 장에서 적지 않는다 / 시험에서는: KMLE·USMLE 모두 「2개월 미만 = TMP SMX 금기」로 묻는다. (심화) 왜 에리스로마이신이 날문협착과 이어지나 에리스로마이신은 모틸린 수용체 작용제라 위 배출·유문 근육 수축을 강하게 자극한다. 생후 첫 몇 주에 이 자극이 반복되면 유문 근육 비대가 촉진된다고 설명된다. 아지스로마이신도 같은 위험이 완전히 없다고 볼 수는 없어 투여 뒤 구토가 늘면 날문협착을 생각한다 — 이 연관의 크기는 원문 대조가 필요하다."
+  },
+  {
    "id": "cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin",
    "type": "concept",
    "unit": "",
@@ -766,6 +822,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-09-28.md",
    "snippet": "오늘의 학습 (2026 09 28 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 18일 · Tagging 2까지 21일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-09-28 등·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 28 · t2 new) 다음 수업/시험: 2026 09 28 척주·척수막, 샅·항문삼각·비뇨생식삼각·남녀 바깥생식기관 Tagging 1까지 18일 · Tagging 2까지 21일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0676",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of endovascular therapy : an official journal of the International Society of Endovascular Specialists",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0676_simultaneous_versus_staged_surgery_for_concomitant_abdominal.md",
+   "snippet": "Title Simultaneous Versus Staged Surgery for Concomitant Abdominal Aortic Aneurysm and Gastrointestinal Malignancy: A Systematic Review With Meta Analysis Authors El Kanty Aouatif Erasmia, Kourampi Islam, Giannopoulos Spyridon, Triantafyllo",
+   "text": "Surgery scraped pubmed PubMed / Journal of endovascular therapy : an official journal of the International Society of Endovascular Specialists Title Simultaneous Versus Staged Surgery for Concomitant Abdominal Aortic Aneurysm and Gastrointestinal Malignancy: A Systematic Review With Meta Analysis Authors El Kanty Aouatif Erasmia, Kourampi Islam, Giannopoulos Spyridon, Triantafyllou George, Hasemaki Natasha, Peroulis Michail, Katsargyris Athanasios, Schizas Dimitrios Journal / DOI Journal of endovascular therapy : an official journal of the International Society of Endovascular Specialists · DOI: 10.1177/15266028261487352 · PMID: 42801481 https://pubmed.ncbi.nlm.nih.gov/42801481/ Abstract PURPOSES: To conduct a systematic review of the literature and perform a meta analysis to the concurrent occurrence of abdominal aortic aneurysm (AAA) and gastrointestinal (GI) cancer and compare the perioperative and long term outcomes of simultaneous versus staged treatment strategies. METHODS: A systematic review of the current literature from 1992 to 2025 was performed using PubMed, Embase, and Cochrane Central databases to identify studies reporting surgical treatment of patients with concomitant GI cancer and AAA. RESULTS: Thirty nine (39) articles including 641 patients were detected. Simultaneous surgery was performed in 247 patients, while staged surgery was performed in 394 patients. The average age of patients undergoing simultaneous surgery was 71.8 years (±6.4 years), while those undergoing staged surgery had an average age of 72.2 years (±4.2 years). In the simultaneous surgery group (SSG), 91 patients (36.8%) underwent AAA repair first, with 56 (22.7%) of them being open aortic repair (OAR) and 35 (14.2%) endovascular aneurysm repair (EVAR). The 30 day mortality showed no significant difference between patients treated in 1 or 2 stages. However, the 30 day complication rate was significantly higher in staged surgeries (STG) compared with SSG with an odds ratio of 0.37 (95% CI, 0.20 0.69, P = .011). Moreover, the outcomes did not differ statistically between the EVAR and OAR methods. CONCLUSIONS: Simultaneous and staged approaches to the treatment of concomitant AAA and GI cancer showed no significant differences in short or long term mortality or disease related complications. However, staged procedures were associated with a higher 30 day complication rate, suggesting that simultaneous management may be safer in selected patients, particularly with the use of open repair. Prospective multicenter studies are needed to establish clear treatment guidance for this complex patient population.Clinical ImpactPatients presenting with both an abdominal aortic aneurysm and gastrointestinal malignancy require coordinated decisions about the timing and sequence of treatment. This systematic review and meta analysis aims to optimize the management of this complex population and bring together the available evidence comparing simultaneous and staged approaches. Given the retrospective nature and limited number of comparative studies, the findings should inform individualized, multidisciplinary planning rather than establish a preferred strategy for all patients. Clinicians should consider aneurysm related risk, cancer urgency, patient fitness, and the potential consequences of delaying either treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0675",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0675_combination_therapy_with_furosemide_and_metolazone_as_compar.md",
+   "snippet": "Title Combination therapy with furosemide and metolazone as compared to furosemide alone for treatment of edema in children with nephrotic syndrome: a randomized controlled trial Authors Acharya Smruti, John Joseph, Satapathy Amit Kumar Jou",
+   "text": "Pediatrics scraped pubmed PubMed / European journal of pediatrics Title Combination therapy with furosemide and metolazone as compared to furosemide alone for treatment of edema in children with nephrotic syndrome: a randomized controlled trial Authors Acharya Smruti, John Joseph, Satapathy Amit Kumar Journal / DOI European journal of pediatrics · DOI: 10.1007/s00431 026 07445 w · PMID: 42801339 https://pubmed.ncbi.nlm.nih.gov/42801339/ Abstract UNLABELLED: Nephrotic syndrome (NS) in children often presents with debilitating edema and optimal use of diuretics in presence of hypoalbuminemia is uncertain. Early initiation of a combination diuretic therapy can be efficacious in greater. The primary objective was to compare cumulative urine output over 48 h between children receiving furosemide plus metolazone and those receiving furosemide alone. Children aged 1 14 years with NS presenting with moderate to severe edema were enrolled and randomized into two groups, furosemide plus metolazone and furosemide alone group. The urine volumes and weight were monitored twice daily for 48 h. Serum urea, creatinine, electrolytes, hematocrit, and hospital stay were recorded as secondary outcomes. Fifty children were randomized (25 per group) with comparable baseline characteristics and urine output. Mean urine output over 48 h was 3.13 (± 1.5) ml/kg/h in furosemide plus metolazone group and 2.96 (± 1.32) ml/kg/h in furosemide alone which did not significantly differ between the groups (p 0.05). The change in urine output from baseline was significantly higher in combination group (2.15 ± 1.31 vs 1.44 ± 1.28 ml/kg/h; p = 0.03) in the unadjusted comparison, but it was not statistically significant after adjustment for baseline urine output by ANCOVA. Dyselectrolytemia, percentage of weight loss, and hospital stay were similar in both groups. Sixteen percent of children in the combination group had significant weight loss requiring discontinuation of therapy. CONCLUSION: There was no difference in urine output or weight loss with combination therapy. Given the neutral primary outcome and the need to discontinue therapy in a subset of patients, upfront combination therapy is not recommended based on these findings. However, it should be considered hypothesis generating for further studies in selected group of children. TRIAL REGISTRATION: CTRI/2023/05/052552 dated 12th May 2023. WHAT IS KNOWN: • Combination diuretic therapy has been used in children with refractory edema due to nephrotic syndrome. • Similar combination approaches are employed in other edematous conditions, often resulting in improved diuresis. WHAT IS NEW: • In this randomized controlled trial, combination therapy did not significantly improve urine output compared to controls. There was significantly greater increase in urine output from baseline in the unadjusted comparison. However, when adjusted for baseline urine output, it was no longer statistically significant. • The regimen was not free of adverse events even though no hemodynamically safety issues were observed under strict monitoring; however, findings do not support routine upfront use in unselected children with nephrotic syndrome. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0674",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical ophthalmology (Auckland, N.Z.)",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0674_unilateral_orbital_lymphomas_a_structured_multidisciplinary_.md",
+   "snippet": "Title Unilateral Orbital Lymphomas: A Structured Multidisciplinary Workflow for Diagnosis and Management Authors Romeo Maria Angela, Gaeta Alessandro, Giannaccare Giuseppe, Ferraro Silvia, Ottonelli Giovanni, Manara Sofia, Giannitto Caterin",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Clinical ophthalmology (Auckland, N.Z.) Title Unilateral Orbital Lymphomas: A Structured Multidisciplinary Workflow for Diagnosis and Management Authors Romeo Maria Angela, Gaeta Alessandro, Giannaccare Giuseppe, Ferraro Silvia, Ottonelli Giovanni, Manara Sofia, Giannitto Caterina, Lucia Ada Maria Antonella, et al. Journal / DOI Clinical ophthalmology (Auckland, N.Z.) · DOI: 10.2147/OPTH.S607939 · PMID: 42801227 https://pubmed.ncbi.nlm.nih.gov/42801227/ Abstract PURPOSE: To describe a structured multidisciplinary workflow for the diagnosis and management of unilateral orbital lymphoma and to illustrate its clinical application through representative cases from a tertiary referral practice. Despite advances in orbital imaging and hematopathology, no standardized framework currently integrates clinical assessment, quantitative MRI parameters, immunohistochemical subtyping, and systemic staging into a reproducible diagnostic therapeutic pathway. PATIENTS AND METHODS: A stepwise workflow integrating clinical assessment, MRI with diffusion weighted imaging (DWI) and apparent diffusion coefficient (ADC) measurement, histopathologic confirmation with immunohistochemistry (IHC), and 18F FDG PET/CT staging was developed at a tertiary referral center through multidisciplinary consensus. The workflow was applied to six patients with biopsy confirmed unilateral orbital lymphoma (marginal zone, n=3; follicular, n=2; lymphoplasmacytic, n=1), selected to represent the clinical and radiologic spectrum encountered in practice. RESULTS: The workflow facilitated systematic evaluation across all cases. MRI consistently demonstrated characteristic features: well circumscribed, homogeneously enhancing lesions molding to orbital structures, with mean ADC values of 0.55 0.70 × 10 3 mm2/s, supporting early biopsy decisions. IHC confirmed subtype specific immunophenotypes guiding treatment selection. PET/CT identified systemic involvement in two patients (33%), modifying the therapeutic approach. Localized disease achieved remission with low dose radiotherapy; disseminated cases responded to rituximab based regimens. At a mean follow up of 27 months, all patients were alive, with four achieving a complete response. CONCLUSIONS: The proposed workflow provides a reproducible framework for integrating clinical, radiologic, and histopathologic data in orbital lymphoma evaluation. Systematic application may support diagnostic accuracy, facilitate individualized staging, and inform evidence based treatment selection, although prospective multicenter validation is needed before broader adoption. This methodology complements a recently accepted companion paper on unilateral orbital lesions, together providing a comprehensive resource for orbital disease assessment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0673",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0673_primary_cutaneous_extraskeletal_ewing_sarcoma_of_the_scalp.md",
+   "snippet": "Title Primary cutaneous extraskeletal Ewing sarcoma of the scalp Authors Bouhamdi Chaimae, Baybay Hanane, Hammas Nawal, Douhi Zakia, Soughi Meryem, Elloudi Sara, Mernissi Fatima Zahra Journal / DOI Acta dermatovenerologica Alpina, Pannonica",
+   "text": "Pathology scraped pubmed PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica Title Primary cutaneous extraskeletal Ewing sarcoma of the scalp Authors Bouhamdi Chaimae, Baybay Hanane, Hammas Nawal, Douhi Zakia, Soughi Meryem, Elloudi Sara, Mernissi Fatima Zahra Journal / DOI Acta dermatovenerologica Alpina, Pannonica, et Adriatica · PMID: 42801743 https://pubmed.ncbi.nlm.nih.gov/42801743/ Abstract Primary cutaneous extraskeletal Ewing sarcoma (PCES) is an exceptionally rare variant of the Ewing sarcoma family of tumors, typically arising in the dermis or subcutis without osseous involvement. Due to its clinical mimicry of benign lesions and poorly defined dermoscopic features, early recognition can be challenging. To date, fewer than 20 well documented cases have been reported in the literature. A 21 year old male presented with a subcutaneous scalp mass with a reported 3 year clinical evolution. Dermatologic examination revealed a well circumscribed vascularized lesion, and dermoscopy showed a polymorphous vascular pattern with arborizing and linear vessels, along with rainbow areas. Magnetic resonance imaging showed a non invasive soft tissue mass. Histopathology confirmed a small round blue cell tumor with cluster of differentiation 99 (CD99) expression, and fluorescence in situ hybridization (FISH) analysis demonstrated Ewing sarcoma breakpoint region 1 (EWSR1) rearrangement, confirming PCES. The patient responded well to neoadjuvant chemotherapy and underwent surgical and radiotherapeutic management. This case is one of the very few reported instances of PCES with detailed dermatologic and dermoscopic documentation prior to oncologic intervention. It underscores the critical role of dermatologists in identifying rare soft tissue tumors. Prompt biopsy and molecular confirmation remain essential, and multidisciplinary care is key to improving outcomes in this rare malignancy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0672",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Iranian journal of allergy, asthma, and immunology",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0672_pharmaceutical_care_for_adrenal_crisis_induced_by_sintilimab.md",
+   "snippet": "Title Pharmaceutical Care for Adrenal Crisis Induced by Sintilimab Immunotherapy Authors Ye Senling, Lou Jian, Zhang Xiayan, Luo Songmei, Xie Yanru, Zhu Yanyan Journal / DOI Iranian journal of allergy, asthma, and immunology · DOI: 10.18502",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Iranian journal of allergy, asthma, and immunology Title Pharmaceutical Care for Adrenal Crisis Induced by Sintilimab Immunotherapy Authors Ye Senling, Lou Jian, Zhang Xiayan, Luo Songmei, Xie Yanru, Zhu Yanyan Journal / DOI Iranian journal of allergy, asthma, and immunology · DOI: 10.18502/ijaai.v25i5.22265 · PMID: 42801786 https://pubmed.ncbi.nlm.nih.gov/42801786/ Abstract No abstract. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0671",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Iranian journal of allergy, asthma, and immunology",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0671_efficacy_of_blood_purification_in_paediatric_sepsis_and_its_.md",
+   "snippet": "Title Efficacy of Blood Purification in Paediatric Sepsis and Its Effects on Inflammatory Cytokines: A Systematic Review and Meta analysis Authors Zhou Qiang, Lin Jun Journal / DOI Iranian journal of allergy, asthma, and immunology · DOI: 1",
+   "text": "Infectious Disease scraped pubmed PubMed / Iranian journal of allergy, asthma, and immunology Title Efficacy of Blood Purification in Paediatric Sepsis and Its Effects on Inflammatory Cytokines: A Systematic Review and Meta analysis Authors Zhou Qiang, Lin Jun Journal / DOI Iranian journal of allergy, asthma, and immunology · DOI: 10.18502/ijaai.v25i5.22255 · PMID: 42801776 https://pubmed.ncbi.nlm.nih.gov/42801776/ Abstract Continuous blood purification (CBP) has been widely employed in adult sepsis management. However, given the distinct aetiology and host responses in paediatric sepsis compared to adults, the application of CBP in children remains under researched in high quality systematic studies, particularly regarding its efficacy in clearing inflammatory cytokines. This meta analysis aims to evaluate the therapeutic efficacy of CBP in paediatric sepsis patients and its impact on inflammatory cytokines. This study systematically analysed randomized controlled trials and prospective cohort studies of CBP in paediatric sepsis from January 1990 to October 2025. Studies were retrieved from PubMed, Embase, Cochrane Library, and Web of Science. Outcomes included inflammatory markers and prognostic markers. This meta analysis included 6 studies. Pooled results demonstrated that CBP reduced 28 day mortality (OR = 0.57, 95% CI: 0.30 to 1.07), PICU length of stay (OR = 0.06, 95% CI: 1.55 to 1.43), IL 6 (OR = 0.83, 95% CI: 0.14 to 1.53), CRP (OR = 1.26, 95% CI: 16.51 to 19.03), and TNF α (OR = 1.66, 95% CI: 0.39 to 3.77). CBP reduced the level of inflammatory markers and improved prognosis, which may provide evidence for the use of CBP in paediatric sepsis patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0670",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-09-27",
+   "path": "content/papers/2026/2026-09-27_paper-2026-0670_pulsed_field_ablation_is_associated_with_favorable_outcomes_.md",
+   "snippet": "Title Pulsed Field Ablation Is Associated With Favorable Outcomes After Atrial Fibrillation Ablation: Insights From the Polish National Ablation Registry (POL AR) Authors Urbanek Piotr, Bodalski Robert, Orczykowski Michał, Kowalik Ilona, Gł",
+   "text": "Cardiology scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Pulsed Field Ablation Is Associated With Favorable Outcomes After Atrial Fibrillation Ablation: Insights From the Polish National Ablation Registry (POL AR) Authors Urbanek Piotr, Bodalski Robert, Orczykowski Michał, Kowalik Ilona, Głowniak Andrzej, Ponikowski Piotr, Kowalski Oskar, Derejko Paweł, et al. Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70514 · PMID: 42801701 https://pubmed.ncbi.nlm.nih.gov/42801701/ Abstract BACKGROUND: The Polish National Ablation Registry (POL AR), mandatory for all centers performing catheter ablation and integrated with National Health Fund data, enables prospective analysis of a nationwide cohort with complete inclusion of all consecutive patients. OBJECTIVE: We aimed to assess real world safety profiles and clinical outcomes of atrial fibrillation (AF) ablation modalities radiofrequency (RF), cryoballoon (CRYO), and pulsed field ablation (PFA) and to report the first year PFA experience in Poland. METHODS: All AF ablations in 2023 were prospectively analyzed in POL AR and cross referenced with National Health Fund data. Only centers with complete reporting were included. Patients were grouped by modality. Major complications, unplanned hospitalizations, cardioversions, repeat ablations, and deaths were assessed at 1 year. Multivariate analysis identified independent predictors of outcomes. RESULTS: Twenty eight centers reported 3430 patients (CRYO: 2125; RF: 1098; PFA: 207). Procedure time was longest for RF (median 120 min) versus CRYO (75 min) and PFA (65 min); (p < 0.001). No major complications occurred with PFA. Phrenic nerve injury persisted in 1.51% of CRYO, 0.09% of RF, and 0% of PFA patients (p < 0.001). Pericardial effusion was more frequent after RF (0.91% vs. 0.34% for CRYO + PFA; p = 0.032). Overall complication rates were lowest with PFA (0% vs. RF: 2.19%, CRYO: 2.59%). PFA patients required fewer cardioversions during follow up (p = 0.017). Predictors of poor outcome included age, female sex, left atrium (LA) size, hypertension, and hypertrophic cardiomyopathy (HCM). Favorable outcome was independently associated with higher left ventricular ejection fraction (LVEF), paroxysmal AF, and PFA use (HR 0.70, p = 0.04). CONCLUSION: In the POL AR registry, PFA was independently associated with favorable outcomes after AF ablation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0153",
@@ -4178,8 +4353,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/orthopedics/cn.ortho.scfe.in-situ-fixation.md",
-   "snippet": "정의 대퇴골두골단분리증(SCFE)은 근위 대퇴 성장판을 따라 대퇴 목이 앞위·바깥으로 움직이고 골단(골두)이 상대적으로 뒤·아래로 남는 사춘기 엉덩관절 질환이다. 이 정리본의 목표는 SCFE 를 알아본 뒤 치료를 고르는 것 — 정복하지 않는 제자리 고정과, 비슷해 보이는 보존·정복 치료를 가르는 것이다. 병태생리 정상 성장판은 연골세포가 층을 이루며 길이 성장을 담당하고, 그중 비대층은 세포가 커지고 기질이 적어 기계적으로 가",
-   "text": "Orthopedics 정의 대퇴골두골단분리증(SCFE)은 근위 대퇴 성장판을 따라 대퇴 목이 앞위·바깥으로 움직이고 골단(골두)이 상대적으로 뒤·아래로 남는 사춘기 엉덩관절 질환이다. 이 정리본의 목표는 SCFE 를 알아본 뒤 치료를 고르는 것 — 정복하지 않는 제자리 고정과, 비슷해 보이는 보존·정복 치료를 가르는 것이다. 병태생리 정상 성장판은 연골세포가 층을 이루며 길이 성장을 담당하고, 그중 비대층은 세포가 커지고 기질이 적어 기계적으로 가장 약하다. 사춘기에는 성장판이 넓어지고(성장 급증), 성호르몬이 아직 판을 닫지 않았다. 여기에 체중(비만) 과 대퇴 목의 뒤기울기 가 전단력을 키우면 비대층을 따라 미끄러짐이 생긴다. 갑상선저하증·성장호르몬 치료·신부전(이차성 부갑상선항진)은 성장판을 더 약하게 만든다 [[?peck 2010]]. 골두로 가는 주 혈류는 대퇴 목 뒤위쪽 표면을 따라 올라가 골단으로 들어가는 지대 혈관(내측 대퇴회선동맥 가지)이다. 골단이 뒤로 밀리면 이 혈관이 당겨지고, 여기서 강제로 되돌리면 찢어진다 — 무혈성괴사 가 SCFE 의 가장 나쁜 합병증이며 치료 원칙(정복 금지)을 정한다. 성장판이 열려 있는 한 미끄러짐은 계속될 수 있어, 성장판을 가로지르는 고정으로 진행을 멈춘다. 기전에서 소견으로 무릎·허벅지 통증 — 엉덩관절의 감각이 폐쇄신경을 따라 무릎 안쪽으로 연관된다. 무릎 진찰·X선은 정상. 굽힘 시 강제 바깥돌림(드레만 징후)·안쪽돌림 제한 — 골단이 뒤로 밀려 목이 앞으로 튀어나와 비구 앞 테두리에 걸린다. 절뚝임·바깥돌림 자세 — 걸을 수 있으면 안정형, 못 걸으면 불안정형 [[?loder 1993]]. 염증 지표 정상·발열 없음 — 화농성 관절염·일과성 활막염과 가른다. X선 — 전후상: 성장판이 넓고 흐림, 클라인 선이 골두를 지나지 않음. 측면상: 골단 후방 전위(측면이 더 민감). 감별 일과성 활막염 : 3–10세, 상기도 감염 뒤, X선 정상, 수일 내 호전. 화농성 엉덩관절염 : 발열·체중부하 불가·ESR/CRP·백혈구 상승 — 응급 배액. 레그 칼베 페르테스병 : 4–8세 마른 남아, 골두 괴사·편평화, 성장판 정렬 정상. 무릎 자체 질환(오스굿 슐라터 등) : 무릎에 국소 압통·부종, 엉덩관절 운동 정상. 검사 골반 전후 + 개구리다리 측면 X선(불안정형 의심이면 교차 측면). 10세 미만·비만이 아니거나 키가 작으면 갑상선 기능·성장 관련 검사. X선이 애매한 초기(미끄러짐 전 단계)는 MRI 에서 성장판 부종이 보인다. 치료 1. 진단 즉시 체중부하 금지 (휠체어·목발)와 입원 — 수술 전까지 더 미끄러지지 않게. 2. 제자리 고정 : 캐뉼러 나사 1개를 골단 중심에 성장판을 가로질러 박는다 — 정복하지 않는다 [[?peck 2010]]. 3. 불안정형 : 무혈성괴사 위험이 높아 응급으로 고정한다 [[?loder 1993]]. 의도적 강제 정복은 하지 않는다. 4. 반대쪽 : 추적하며, 고위험군(내분비 이상·어린 나이)은 예방적 고정을 고려한다. 반응 확인·재평가. 수술 뒤 통증 소실과 보행 회복, 성장판이 닫힐 때까지 양쪽 X선 추적(반대쪽 발생·나사 위치), 무혈성괴사·연골용해(관절 간격 좁아짐)를 감시한다. 남은 변형은 대퇴비구 충돌의 원인이 될 수 있어 장기 추적한다. 권고와 예외 「안정형 = 보존 치료」가 아니다. 안정형도 제자리 고정이 표준이다. 체중부하 제한은 수술 전 조치이며 그것만으로 끝내지 않는다. 정복(도수·견인)은 하지 않는다 — 무혈성괴사. 이 슬롯은 정형외과 손 슬롯이라 해리슨 대조 대상이 아니다. Loder 1993·Peck 2010 은 원문을 열지 못해 서지만 남겼다(검토 항목). (심화) 왜 나사 1개인가 나사를 여러 개 박으면 고정력은 크지만 골단 안에서 관절로 뚫고 나갈 위험(관절 침범 → 연골용해)이 커진다. 골단 중심에 한 개를 성장판에 수직으로 넣으면 미끄러짐을 막기에 충분하고, 나사가 성장판을 닫아 추가 미끄러짐을 끝낸다. 대가는 그쪽 다리의 길이 성장이 멈추는 것이지만, SCFE 는 대개 성장 말기에 오므로 다리 길이 차이는 크지 않다. 어린 환자에서 성장을 살리려는 특수 나사 설계도 쓰인다 — 구체 근거는 원문 대조가 필요하다."
+   "snippet": "판단 — 왜 제자리 고정이 먼저인가 SCFE 는 성장판이 열려 있는 한 미끄러짐이 계속될 수 있다 — 성장판을 가로지르는 고정 만 진행을 멈춘다 [[?peck 2010]]. 미끄러진 골단을 되돌리면 골두의 주 혈류를 다쳐 무혈성괴사 가 생긴다 — 그래서 탈구·골절과 달리 정복하지 않는다. 「안정형」은 무혈성괴사 위험이 낮다는 뜻이지 저절로 멈춘다는 뜻이 아니다 [[?loder 1993]]. 체중부하 제한은 수술 전 조치일 뿐이",
+   "text": "Orthopedics 판단 — 왜 제자리 고정이 먼저인가 SCFE 는 성장판이 열려 있는 한 미끄러짐이 계속될 수 있다 — 성장판을 가로지르는 고정 만 진행을 멈춘다 [[?peck 2010]]. 미끄러진 골단을 되돌리면 골두의 주 혈류를 다쳐 무혈성괴사 가 생긴다 — 그래서 탈구·골절과 달리 정복하지 않는다. 「안정형」은 무혈성괴사 위험이 낮다는 뜻이지 저절로 멈춘다는 뜻이 아니다 [[?loder 1993]]. 체중부하 제한은 수술 전 조치일 뿐이다. 기전 — 약한 성장판에서 미끄러짐·무혈성괴사로 정상 성장판은 연골세포가 층을 이루며 길이 성장을 담당하고, 그중 비대층은 세포가 커지고 기질이 적어 기계적으로 가장 약하다. 사춘기에는 성장판이 넓어지고(성장 급증), 성호르몬이 아직 판을 닫지 않았다. 여기에 체중(비만) 과 대퇴 목의 뒤기울기 가 전단력을 키우면 비대층을 따라 미끄러짐이 생긴다. 갑상선저하증·성장호르몬 치료·신부전(이차성 부갑상선항진)은 성장판을 더 약하게 만든다 [[?peck 2010]]. 골두로 가는 주 혈류는 대퇴 목 뒤위쪽 표면을 따라 올라가는 지대 혈관(내측 대퇴회선동맥 가지)이다. 골단이 뒤로 밀리면 이 혈관이 당겨지고, 강제로 되돌리면 찢어진다. 무릎·허벅지 통증 — 엉덩관절의 감각이 폐쇄신경을 따라 무릎 안쪽으로 연관된다. 무릎 진찰·X선은 정상. 굽힘 시 강제 바깥돌림(드레만 징후)·안쪽돌림 제한 — 골단이 뒤로 밀려 목이 앞으로 튀어나와 비구 앞 테두리에 걸린다. 절뚝임·바깥돌림 자세 — 걸을 수 있으면 안정형, 못 걸으면 불안정형 [[?loder 1993]]. 가르는 소견 — 무릎 통증에서 엉덩관절 X선으로 염증 지표 정상·발열 없음은 화농성 관절염·일과성 활막염과 가르는 근거다(감별표). X선: 전후상에서 성장판이 넓고 흐리며 클라인 선이 골두를 지나지 않고, 측면상에서 골단 후방 전위가 보인다(측면이 더 민감). 불안정형 의심이면 개구리다리 대신 교차 측면상. X선이 애매한 초기(미끄러짐 전 단계)는 MRI 에서 성장판 부종이 보인다. 10세 미만·비만이 아니거나 키가 작으면 갑상선 기능·성장 관련 검사. 선택 — 체중부하 금지 뒤 제자리 고정 1. 진단 즉시 체중부하 금지 (휠체어·목발)와 입원 — 수술 전까지 더 미끄러지지 않게. 2. 제자리 고정 : 캐뉼러 나사 1개를 골단 중심에 성장판을 가로질러 박는다 — 정복하지 않는다 [[?peck 2010]]. 3. 불안정형 : 무혈성괴사 위험이 높아 응급으로 고정한다 [[?loder 1993]]. 의도적 강제 정복은 하지 않는다. 4. 반대쪽 : 추적하며, 고위험군(내분비 이상·어린 나이)은 예방적 고정을 고려한다. 반응 확인·재평가. 수술 뒤 통증 소실과 보행 회복, 성장판이 닫힐 때까지 양쪽 X선 추적(반대쪽 발생·나사 위치), 무혈성괴사·연골용해(관절 간격 좁아짐)를 감시한다. 남은 변형은 대퇴비구 충돌의 원인이 될 수 있어 장기 추적한다. 권고와 예외 「안정형 = 보존 치료」가 아니다. 안정형도 제자리 고정이 표준이다. 정복(도수·견인)과 석고 고정은 하지 않는다. 이 슬롯은 정형외과 손 슬롯이라 해리슨 대조 대상이 아니다. Loder 1993·Peck 2010 은 원문을 열지 못해 서지만 남겼다(검토 항목). (심화) 왜 나사 1개인가 나사를 여러 개 박으면 고정력은 크지만 골단 안에서 관절로 뚫고 나갈 위험(관절 침범 → 연골용해)이 커진다. 골단 중심에 한 개를 성장판에 수직으로 넣으면 미끄러짐을 막기에 충분하고, 나사가 성장판을 닫아 추가 미끄러짐을 끝낸다. 대가는 그쪽 다리의 길이 성장이 멈추는 것이지만, SCFE 는 대개 성장 말기에 오므로 다리 길이 차이는 크지 않다. 어린 환자에서 성장을 살리려는 특수 나사 설계도 쓰인다 — 구체 근거는 원문 대조가 필요하다."
   },
   {
    "id": "cn.ortho.femoral-neck-fracture.arthroplasty-rationale",

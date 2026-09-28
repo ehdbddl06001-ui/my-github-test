@@ -121,6 +121,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC12738164_Figure2
   reason: 얼굴(눈 주위) 사진 — 싣지 않는다
+- asset: PMC-PMC11955687_Figure1
+  reason: 모든 패널이 영아의 얼굴·머리 — 얼굴 없는 부위 패널이 없다
 ---
 
 ## 정의

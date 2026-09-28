@@ -533,6 +533,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.pulm.tuberculous-pleurisy.ada-diagnosis",
+  "qversion": 2,
   "distractors": {
    "A": {
     "tempting": "발열·기침·흉막 통증과 삼출액은 폐렴에 동반된 삼출이 가장 흔하다.",
@@ -546,6 +547,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "악성 흉막삼출도 림프구 우세이지만 ADA 가 대개 40 U/L 미만이고 고령·흡연자에서 흔하다. ADA 86 은 결핵을 강하게 시사한다.",
     "discriminator": "ADA 86 · 31세 비흡연자 · 악성 세포 없음.",
     "when_right": "고령 흡연자·ADA 낮음·세포검사 양성.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "류마티스 흉막염도 림프구가 많은 삼출액을 만들 수 있어, 삼출액·림프구 우세만 보면 결합조직병 흉막염이 떠오른다.",
+    "answer_first": "류마티스 흉막염은 류마티스 관절염이 있는 환자에서 흉수 포도당이 매우 낮은 것(< 60, 흔히 < 30)으로 떠올린다. 관절염 병력이 없고 포도당이 78 로 정상이며 ADA 86 은 결핵을 가리킨다.",
+    "discriminator": "흉수 포도당 78 mg/dL · 관절염 병력 없음 · ADA 86.",
+    "when_right": "류마티스 관절염이 오래된 환자의 포도당이 매우 낮은 삼출액.",
     "split": ""
    }
   },
@@ -1194,6 +1202,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.peds.pertussis.infant-macrolide-choice",
+  "qversion": 2,
   "distractors": {
    "D": {
     "tempting": "백일해 치료의 고전적인 마크롤라이드로 배운다.",
@@ -1207,6 +1216,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "설파제는 알부민에 붙은 빌리루빈을 떼어내 핵황달 위험이 있어 2개월 미만에서 금기다. 대안이지 1차 약도 아니다.",
     "discriminator": "생후 3주 · 마크롤라이드 금기 없음.",
     "when_right": "2개월 이상이고 마크롤라이드를 쓸 수 없을 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "영아 호흡기 감염·중이염에 가장 흔히 쓰는 경구 항생제라 기침하는 영아에게 먼저 떠오른다.",
+    "answer_first": "아목시실린은 폐렴구균 폐렴·중이염 약이고 백일해 제균에는 쓰지 않는다. 백일해 치료 약은 마크롤라이드이며 1개월 미만은 아지스로마이신이다.",
+    "discriminator": "발작성 기침·기침 뒤 구토·무호흡 · 림프구 우세 백혈구 증가 · 열 없음·X선 정상.",
+    "when_right": "열·국소 폐렴 침윤이 있는 세균폐렴이나 급성 중이염.",
     "split": ""
    }
   },
@@ -1508,6 +1524,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   },
   "reviewStatus": "unreviewed",
   "objective": "cn.ortho.scfe.in-situ-fixation",
+  "qversion": 2,
   "distractors": {
    "B": {
     "tempting": "미끄러진 뼈를 제자리에 돌려놓고 고정하는 것이 골절 치료의 기본처럼 보인다.",
@@ -1521,6 +1538,13 @@ window.KMLE_CONTENT_QUESTIONS = [
     "answer_first": "넙다리뼈머리 뼈끝 분리증은 진단되면 미끄러짐이 진행하고 불안정형으로 바뀔 수 있어 가능한 한 빨리 고정한다.",
     "discriminator": "X선에서 미끄러짐이 확인되었다.",
     "when_right": "",
+    "split": ""
+   },
+   "A": {
+    "tempting": "어린이 엉덩관절 질환을 석고로 고정하는 방법이 있어, 걸을 수 있는 가벼운 미끄러짐이면 수술 없이 붙잡아 둘 수 있을 것처럼 보인다.",
+    "answer_first": "석고는 관절 바깥에서 자세만 붙잡을 뿐 성장판을 가로질러 고정하지 못해 미끄러짐이 진행할 수 있고 연골 용해 위험이 높다. 미끄러짐을 멈추는 것은 성장판을 가로지르는 나사다.",
+    "discriminator": "「뒤아래쪽으로 미끄러져 있다」 — 성장판에서 미끄러진 상태라 성장판 자체를 고정해야 한다.",
+    "when_right": "어린 소아의 대퇴골 간부 골절처럼 뼈가 스스로 붙는 손상.",
     "split": ""
    }
   },

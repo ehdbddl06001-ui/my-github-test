@@ -5,7 +5,7 @@ topic: Cardiology
 see_also: [Emergency Medicine, Thoracic Surgery]
 date: 2026-09-23
 updated: 2026-09-28
-version: 2
+version: 3
 outline: h280            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -172,17 +172,30 @@ variants:
     answer: "B"
     explanation: "통증의 시작 부위와 환자 특성은 달라도 이동하는 찢어지는 통증·양팔 혈압차·종격동 확장·허혈 없는 심전도가 박리를 가리키고, 혈압이 높다. 첫 약물은 심박수·수축력을 낮추는 정맥 베타차단제(에스몰롤)이고, 혈관확장제(하이드랄라진) 단독은 반사 빈맥으로 박리를 키운다. 혈전용해·항응고·수액 부하는 모두 해롭다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 대동맥박리 조영 CT — 참강과 가강을 나누는 내막판
-  query: '"aortic dissection" AND "case report" AND ("computed tomography" OR CT)'
-  caption_terms:
-  - dissection
-  - flap
-  modality: CT
 figures_rejected:
 - asset: PMC-PMC13422630_Figure4
   reason: 의인성 B형 박리에 대동맥내풍선펌프 인공물 — 전형적 박리 소견 교육용으로 혼동을 준다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13586086_fig4-0-1000-850-1549.jpg
+  kind: ct
+  at: 가르는 소견 — 재관류 치료 전에 박리를 거른다
+  shows: 대동맥박리 조영 CT(가로면) — 내막판이 참강과 가강을 나눈다
+  look_for:
+  - 하행 흉부대동맥 안을 가로지르는 얇은 선(내막판)
+  - 내막판 양쪽으로 조영 정도가 다른 두 내강
+  label: '「a: Post-contrast high-resolution coronal plane of chest CT scan revealing aortic dissection extending from the arch (after the left subclavian artery) to the descending thoracic aorta showing the true lumen (star) and false lumen (big arrow) and the presence of adjoining mural thrombi. b: Post-contrast sagittal chest CT scan of the aortic arch and descending thoracic aorta revealing an intimal flap (small arrow) separating the true (star) and false lumens (big arrow) and the presence of adjoining mural thrombi. c: Post-contrast axial chest CT scan of the descending thoracic aorta revealing an intimal flap (small arrow) separating the true (star) and false lumens (big arrow), and the presence of adjoining mural thrombi. d: Post-contrast axial chest CT of the descending thoracic aorta highlighting the communication ‘entry tear’ (arrow) between the true and false lumens and the presence of adjoining mural thrombi (star)」 — Acute aortic dissection masquerading as large bowel obstruction:
+    a case report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Acute aortic dissection masquerading as large bowel obstruction: a case report. The Egyptian Heart Journal'
+  doi: 10.1186/s43044-026-00775-y
+  credit: 'Acute aortic dissection masquerading as large bowel obstruction: a case report. Egypt Heart J. 2026 Sep 17;78:68. doi: 10.1186/s43044-026-00775-y (CC BY) — Fig. 4'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13586086/
+  asset: PMC-PMC13586086_Fig4
+  privacy_check: 가로면 CT 한 패널만 — 얼굴·이름·병원 표지 없음(다른 패널의 날짜 문자는 잘라냄)
+  crop: 0,1000,850,1549
 ---
 
 ## 판단 — 왜 베타차단제가 먼저인가

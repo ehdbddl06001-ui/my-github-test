@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Infectious Disease, Pediatrics]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-28
+version: 2
 outline: h461            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 461장(외부기생충)
 confidence: medium
 review_status: unreviewed
@@ -138,13 +138,26 @@ variants:
     answer: "C"
     explanation: "나이·거주 형태는 달라도 야간 악화 가려움, 손가락 사이의 굴, 겨드랑이·허리띠 선 병변, 같은 공간의 가려움은 옴이다. 첫 감염은 최대 6주까지 증상이 없으므로 증상 없는 룸메이트도 함께 동시에 치료하고 침구·의류를 처리한다. 스테로이드·항히스타민은 진드기를 죽이지 못하고, 딱지옴 소견은 없어 일반 치료로 충분하다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 옴 — 굴(burrow)과 구진
-  query: '"scabies" AND ("burrow" OR dermoscopy) AND "case report"'
-  caption_terms:
-  - scabies
-  modality: CLINICAL_PHOTO
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12892799_fig1-405-0-794-356.jpg
+  kind: photo
+  at: 기전에서 소견으로
+  shows: 옴 집단 발생 — 팔·손의 구진과 딱지
+  look_for:
+  - 팔 뒤쪽·손에 흩어진 작은 구진
+  - 긁어서 생긴 딱지
+  label: 「Scabies outbreak signs observed among students at Daara Suwaneh Quranic School, Brufut Heights, The Gambia」 — A case report of medical laboratory confirmation of suspected scabies outbreak at Daara Madina Suwaneh, a quranic school located in Brufut Heights, The Gambia, 2025
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: A case report of medical laboratory confirmation of suspected scabies outbreak at Daara Madina Suwaneh, a quranic school located in Brufut Heights, The Gambia, 2025. BMC Infectious Diseases
+  doi: 10.1186/s12879-026-12566-6
+  credit: 'A case report of medical laboratory confirmation of suspected scabies outbreak at Daara Madina Suwaneh, a quranic school located in Brufut Heights, The Gambia, 2025. BMC Infect Dis. 2026 Jan 16;26:313. doi: 10.1186/s12879-026-12566-6 (CC BY) — Fig. 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12892799/
+  asset: PMC-PMC12892799_Fig1
+  privacy_check: 팔 한 패널만 — 얼굴·문신·이름 없음(다른 패널의 차량 번호판은 잘라냄)
+  crop: 405,0,794,356
 ---
 
 ## 정의
