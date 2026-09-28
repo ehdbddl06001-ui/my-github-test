@@ -121,7 +121,7 @@ def collect() -> list[dict]:
     for p in sorted(ASSETS.glob("*.svg")):
         name = p.name
         svg = p.read_text(encoding="utf-8")
-        rel = str(p.relative_to(ROOT))
+        rel = p.relative_to(ROOT).as_posix()
         date = _git_added_date(rel) or datetime.fromtimestamp(
             p.stat().st_mtime, tz=KST).date().isoformat()
         stem = name[:-4]
@@ -140,7 +140,7 @@ def collect() -> list[dict]:
             "unit": unit_label({"session_no": session}) if session else "",
             "title": _title(svg, base),
             "date": date,
-            "bytes": p.stat().st_size,
+            "bytes": len(p.read_bytes().replace(b"\r\n", b"\n")),   # 저장소 기준(LF) 크기 — Windows 체크아웃의 CRLF 로 흔들리지 않게
         })
     # 만든 날짜 최신순, 같은 날은 회차·이름순
     rows.sort(key=lambda r: (r["date"], -(r["session"] or 0), r["base"]), reverse=True)
