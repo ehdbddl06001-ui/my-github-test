@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3005,
+  "total": 3017,
   "byType": {
    "usmle": 168,
    "kmle": 1163,
+   "imaging": 164,
    "concept": 90,
    "anatomy": 739,
    "paper": 676,
-   "imaging": 152,
    "ailab": 14,
    "basic": 3
   },
@@ -46,31 +46,31 @@ window.MEDKOS_INDEX = {
    "Microbiology": 12,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "호흡기": 9,
-   "소아과": 8,
-   "소화기": 8,
+   "호흡기": 10,
+   "소아과": 9,
+   "소화기": 9,
+   "병리·조직학": 8,
+   "피부과": 8,
    "감염": 7,
    "내분비": 7,
-   "병리·조직학": 7,
+   "신경": 7,
+   "응급·중환자": 7,
    "혈액·종양": 7,
-   "신경": 6,
    "신장·비뇨기": 6,
-   "응급·중환자": 6,
-   "피부과": 6,
-   "예방의학·역학": 5,
-   "외과": 5,
+   "예방의학·역학": 6,
+   "외과": 6,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "근골격·류마티스": 4,
    "약리": 4,
+   "정신과": 4,
    "Oncology": 3,
-   "정신과": 3,
+   "이비인후과": 3,
    "Medical Imaging AI": 2,
    "안과": 2,
    "영상의학": 2,
-   "이비인후과": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 1996,
+   "high": 2008,
    "medium": 960,
    "low": 49
   },
@@ -862,6 +862,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1163.md",
    "snippet": "68세 남자가 30분 전부터 시작된 두근거림과 어지러움으로 응급실에 왔다. 3년 전 전벽 심근경색으로 스텐트 시술을 받았다. 식은땀을 흘리며 묻는 말에 느리게 대답하고, 가슴이 답답하다고 한다. 경동맥 맥박은 빠르고 약하게 만져진다. 심전도는 그림과 같다. 활력징후와 검사 소견은 자료와 같다. 정맥로를 확보하고 산소를 주었다. 다음 처치로 가장 적절한 것은? A. 아미오다론 정맥 투여 B. 비동기 제세동 C. 동기화 심장율동전",
    "text": "Cardiology Wide-complex Tachycardia after Myocardial Infarction ventricular-tachycardia synchronized-cardioversion unstable-tachycardia acls ecg KMLE 2026 / Claude Routine 68세 남자가 30분 전부터 시작된 두근거림과 어지러움으로 응급실에 왔다. 3년 전 전벽 심근경색으로 스텐트 시술을 받았다. 식은땀을 흘리며 묻는 말에 느리게 대답하고, 가슴이 답답하다고 한다. 경동맥 맥박은 빠르고 약하게 만져진다. 심전도는 그림과 같다. 활력징후와 검사 소견은 자료와 같다. 정맥로를 확보하고 산소를 주었다. 다음 처치로 가장 적절한 것은? A. 아미오다론 정맥 투여 B. 비동기 제세동 C. 동기화 심장율동전환 D. 아데노신 급속 정맥 주사 E. 경정맥 심박조율 심근경색 병력이 있는 환자의 넓은 QRS 빈맥은 심실빈맥으로 간주한다. 맥박이 있으나 저혈압·의식 저하·흉부 불편감이 있는 불안정 빈맥이므로 약물을 기다리지 않고 진정 후 동기화 심장율동전환을 한다."
+  },
+  {
+   "id": "imaging-2026-0165",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 허벅지의 붉은 구진, 더모스코피 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0165.md",
+   "snippet": "A 50 year old woman comes to the physician because of a spot on her thigh that she first noticed 1 year ago. It has not changed in size, but it bled once after she scratched it. She has no personal or family history of skin cancer. She take",
+   "text": "피부과 피부 — 허벅지의 붉은 구진, 더모스코피 판독 opendata usmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 50 year old woman comes to the physician because of a spot on her thigh that she first noticed 1 year ago. It has not changed in size, but it bled once after she scratched it. She has no personal or family history of skin cancer. She takes no medications. Her pulse is 72/min and blood pressure is 124/78 mm Hg. Examination shows a small, soft, dark red purple papule that partially blanches with pressure. There is no regional lymphadenopathy. A dermoscopic image of the lesion is shown. Which of the following is the most likely diagnosis? A. Dermatofibroma B. Seborrheic keratosis C. Cherry angioma D. Nodular melanoma E. Pyogenic granuloma"
+  },
+  {
+   "id": "imaging-2026-0164",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 짙어진 다리 색소 반의 더모스코피",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dermoscopy"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0164.md",
+   "snippet": "25세 여자가 다리의 색소 반점이 최근 6개월 사이 짙어지고 모양이 변한 것 같다고 왔다. 가려움이나 출혈은 없다. 몸의 다른 점은 10개 미만이고 서로 비슷하게 생겼다. 피부암 가족력은 없고 20대 초반에 햇볕 화상을 여러 번 입었다. 병변은 편평하고 만져지는 결절은 없으며 주위 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 이 병변을 절제생검해야 하는 근거가 되는 더모스코피 소견으로 가장 적절한 것은? ",
+   "text": "피부과 피부 — 짙어진 다리 색소 반의 더모스코피 opendata kmle_style dermoscopy 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 25세 여자가 다리의 색소 반점이 최근 6개월 사이 짙어지고 모양이 변한 것 같다고 왔다. 가려움이나 출혈은 없다. 몸의 다른 점은 10개 미만이고 서로 비슷하게 생겼다. 피부암 가족력은 없고 20대 초반에 햇볕 화상을 여러 번 입었다. 병변은 편평하고 만져지는 결절은 없으며 주위 림프절은 만져지지 않는다. 병변의 더모스코피 사진은 그림과 같다. 이 병변을 절제생검해야 하는 근거가 되는 더모스코피 소견으로 가장 적절한 것은? A. 규칙적인 그물 모양 색소망 B. 다발성 우윳빛 낭종과 면포 모양 개구부 C. 중심부 흰 반흔 모양 구역과 섬세한 가장자리 색소망 D. 비대칭 색소 분포와 중심부 청회색 구조 E. 대칭으로 배열된 경계 뚜렷한 갈색 소구체"
+  },
+  {
+   "id": "imaging-2026-0163",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 양성 검사 뒤 질병 확률",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0163.md",
+   "snippet": "A 64 year old man comes to the physician because of exertional chest discomfort for 2 months. On the basis of his history and risk factors, the physician estimates the probability that he has obstructive coronary artery disease at 20%. His ",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 양성 검사 뒤 질병 확률 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 64 year old man comes to the physician because of exertional chest discomfort for 2 months. On the basis of his history and risk factors, the physician estimates the probability that he has obstructive coronary artery disease at 20%. His pulse is 76/min and blood pressure is 138/84 mm Hg. A resting ECG is normal. An exercise stress test is performed, and the result is positive. In a validation study, this test had a sensitivity of 72% and a specificity of 88% for obstructive coronary artery disease. Which of the following is the closest estimate of the probability that this patient has obstructive coronary artery disease after the positive test? A. 88% B. 60% C. 20% D. 40% E. 72%"
+  },
+  {
+   "id": "imaging-2026-0162",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 간경변 환자의 수술 후 섬망",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0162.md",
+   "snippet": "52세 남자가 대장 수술 3일째 밤부터 안절부절못하고 헛것을 본다고 하여 협진이 의뢰되었다. 20년간 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 알코올 간경변으로 추적 중이다. 의식은 혼돈되어 있고 시간·장소 지남력이 없으며 벽에 벌레가 기어간다고 한다. 체온 38.1 ℃, 혈압 168/100 mmHg, 맥박 124회/분이고 전신에 땀이 나며 손 떨림이 심하다. 복수가 있고 목덜미 강직은 없다. 혈청 알부민 2.6 g/d",
+   "text": "정신과 정신 — 간경변 환자의 수술 후 섬망 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 52세 남자가 대장 수술 3일째 밤부터 안절부절못하고 헛것을 본다고 하여 협진이 의뢰되었다. 20년간 매일 소주 2병을 마셨고 입원 전날까지 마셨다. 알코올 간경변으로 추적 중이다. 의식은 혼돈되어 있고 시간·장소 지남력이 없으며 벽에 벌레가 기어간다고 한다. 체온 38.1 ℃, 혈압 168/100 mmHg, 맥박 124회/분이고 전신에 땀이 나며 손 떨림이 심하다. 복수가 있고 목덜미 강직은 없다. 혈청 알부민 2.6 g/dL, 총빌리루빈 3.4 mg/dL, 프로트롬빈시간 INR 1.9, 혈당 112 mg/dL, 혈청 나트륨 136 mEq/L 이다. 가장 적절한 약물은? A. 할로페리돌 B. 락툴로오스 C. 로라제팜 D. 디아제팜 E. 클로르디아제폭사이드"
+  },
+  {
+   "id": "imaging-2026-0161",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 넘어진 뒤 손목 통증, X선 판독",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0161.md",
+   "snippet": "A 9 year old girl is brought to the emergency department 1 hour after she fell onto her outstretched right hand while roller skating. She has pain and swelling of the right wrist and will not move it. She has no other injuries and has been ",
+   "text": "소아과 소아청소년 — 넘어진 뒤 손목 통증, X선 판독 opendata usmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 9 year old girl is brought to the emergency department 1 hour after she fell onto her outstretched right hand while roller skating. She has pain and swelling of the right wrist and will not move it. She has no other injuries and has been healthy. Her pulse is 104/min and blood pressure is 108/66 mm Hg. Examination shows swelling, mild deformity, and tenderness over the distal forearm about 3 cm proximal to the wrist crease. The radial pulse and capillary refill are normal, and sensation in the median, ulnar, and radial nerve distributions is intact. An anteroposterior x ray of the right wrist is shown. Which of the following best describes the injury of the radius? A. Complete fracture of the metaphysis B. Greenstick fracture of the metaphysis C. Buckle (torus) fracture of the metaphysis D. Salter Harris type II physeal fracture E. Plastic (bowing) deformation of the shaft"
+  },
+  {
+   "id": "imaging-2026-0160",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 교통사고 뒤 수혈에 반응하지 않는 저혈압",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0160.md",
+   "snippet": "32세 남자가 오토바이를 타다 승용차와 충돌한 뒤 30분 만에 응급실에 실려 왔다. 왼쪽 윗배 통증을 호소한다. 기도는 유지되고 양쪽 호흡음은 대칭이며 흉부 X선에서 기흉·혈흉은 없다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 결정질 용액 1 L 와 적혈구 2단위를 급속 수혈한 뒤에도 혈압은 84/50 mmHg 이다. 왼쪽 윗배에 압통과 반발통이 있다. 골반 X선에서 골절은 없다. 외상초음파(FAST",
+   "text": "외과 외과계 — 교통사고 뒤 수혈에 반응하지 않는 저혈압 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 32세 남자가 오토바이를 타다 승용차와 충돌한 뒤 30분 만에 응급실에 실려 왔다. 왼쪽 윗배 통증을 호소한다. 기도는 유지되고 양쪽 호흡음은 대칭이며 흉부 X선에서 기흉·혈흉은 없다. 혈압 78/46 mmHg, 맥박 132회/분, 호흡 26회/분이다. 결정질 용액 1 L 와 적혈구 2단위를 급속 수혈한 뒤에도 혈압은 84/50 mmHg 이다. 왼쪽 윗배에 압통과 반발통이 있다. 골반 X선에서 골절은 없다. 외상초음파(FAST)에서 비장 주위와 간신장 오목에 액체가 고여 있고 심낭 액체는 없다. 가장 적절한 처치는? A. 수액 치료와 연속 혈색소 측정 B. 응급 개복술 C. 복부 조영 CT D. 비장동맥 혈관조영 색전술 E. 진단적 복강세척"
+  },
+  {
+   "id": "imaging-2026-0159",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 설사 뒤 며칠에 걸쳐 진행하는 다리 근력 약화",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0159.md",
+   "snippet": "A 34 year old man comes to the emergency department because of progressive weakness of his legs for 4 days. He first noticed tingling in his toes and fingers, followed by difficulty climbing stairs; since this morning he can walk only with ",
+   "text": "신경 신경 — 설사 뒤 며칠에 걸쳐 진행하는 다리 근력 약화 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 34 year old man comes to the emergency department because of progressive weakness of his legs for 4 days. He first noticed tingling in his toes and fingers, followed by difficulty climbing stairs; since this morning he can walk only with assistance. Three weeks ago he had diarrhea that resolved without treatment. His temperature is 36.9°C (98.4°F), pulse is 88/min, respirations are 16/min, and blood pressure is 128/80 mm Hg. Muscle strength is 3/5 in the hip flexors, 4/5 in the ankle dorsiflexors, and 4/5 in the upper extremities. Deep tendon reflexes are absent in the lower extremities and 1+ in the upper extremities. Vibration sense is mildly decreased in the toes. There is no sensory level. Forced vital capacity is 3.2 L (72% of predicted). Cerebrospinal fluid analysis shows a leukocyte count of 2/mm3 and a protein concentration of 92 mg/dL. Which of the following is the most appropriate pharmacotherapy? A. Intravenous immune globulin B. Intravenous methylprednisolone C. Oral prednisone D. Pyridostigmine E. Intravenous acyclovir"
+  },
+  {
+   "id": "imaging-2026-0158",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 선종 절제 뒤 감시 대장내시경",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0158.md",
+   "snippet": "58세 남자가 대장암 선별 대장내시경 결과를 들으러 왔다. 가족력에 대장암은 없고 증상은 없다. 장 정결은 우수했고 맹장까지 관찰하였다. S상결장에서 15 mm 크기의 유경성 용종 1개를 올가미로 한 조각으로(일괄) 절제했고, 병리 결과는 고등급 이형성이 없는 관융모선종이며 절제면은 음성이다. 그 밖에 상행결장의 4 mm 과형성 용종 1개를 절제하였다. 혈색소 14.2 g/dL, CEA 1.8 ng/mL 이다. 다음 대장내시경",
+   "text": "소화기 소화기·간담췌 — 선종 절제 뒤 감시 대장내시경 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 58세 남자가 대장암 선별 대장내시경 결과를 들으러 왔다. 가족력에 대장암은 없고 증상은 없다. 장 정결은 우수했고 맹장까지 관찰하였다. S상결장에서 15 mm 크기의 유경성 용종 1개를 올가미로 한 조각으로(일괄) 절제했고, 병리 결과는 고등급 이형성이 없는 관융모선종이며 절제면은 음성이다. 그 밖에 상행결장의 4 mm 과형성 용종 1개를 절제하였다. 혈색소 14.2 g/dL, CEA 1.8 ng/mL 이다. 다음 대장내시경 시기로 가장 적절한 것은? A. 1년 후 B. 5년 후 C. 10년 후 D. 3년 후 E. 6개월 후"
+  },
+  {
+   "id": "imaging-2026-0157",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 항생제에도 악화하는 인후통과 개구장애",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0157.md",
+   "snippet": "A 22 year old man comes to the physician because of a 5 day history of sore throat that has worsened over the past 2 days despite taking oral amoxicillin. He now has severe pain on swallowing, difficulty opening his mouth, and a muffled voi",
+   "text": "이비인후과 이비인후과 — 항생제에도 악화하는 인후통과 개구장애 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 22 year old man comes to the physician because of a 5 day history of sore throat that has worsened over the past 2 days despite taking oral amoxicillin. He now has severe pain on swallowing, difficulty opening his mouth, and a muffled voice. He has no drooling or noisy breathing. His temperature is 38.6°C (101.5°F), pulse is 98/min, and blood pressure is 124/76 mm Hg. Oxygen saturation is 99% on room air. Examination shows trismus and a fluctuant bulge of the left soft palate above the tonsil with deviation of the uvula to the right. There is tender left cervical lymphadenopathy. The neck is supple, with full range of motion. Which of the following is the most appropriate next step in management? A. Intravenous antibiotics alone B. CT scan of the neck with contrast C. Immediate tonsillectomy under general anesthesia D. Oral glucocorticoids alone E. Needle aspiration of the swelling and antibiotics"
+  },
+  {
+   "id": "imaging-2026-0156",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 밀폐된 방에서 발견된 두통 환자",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0156.md",
+   "snippet": "45세 남자가 겨울철 밀폐된 방에서 숯불을 피워 놓고 잠든 뒤 가족에게 발견되어 응급실에 왔다. 발견 당시 두통과 구역을 호소했고 한 차례 구토하였다. 의식은 명료하고 신경학적 검사에서 이상은 없다. 혈압 132/84 mmHg, 맥박 102회/분, 호흡 20회/분, 체온 36.8 ℃이다. 맥박산소측정기의 산소포화도는 99 %이다. 동맥혈가스분석에서 pH 7.36, PaO2 96 mmHg, PaCO2 36 mmHg 이고 일산화탄",
+   "text": "응급·중환자 응급·중환자·외상 — 밀폐된 방에서 발견된 두통 환자 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 45세 남자가 겨울철 밀폐된 방에서 숯불을 피워 놓고 잠든 뒤 가족에게 발견되어 응급실에 왔다. 발견 당시 두통과 구역을 호소했고 한 차례 구토하였다. 의식은 명료하고 신경학적 검사에서 이상은 없다. 혈압 132/84 mmHg, 맥박 102회/분, 호흡 20회/분, 체온 36.8 ℃이다. 맥박산소측정기의 산소포화도는 99 %이다. 동맥혈가스분석에서 pH 7.36, PaO2 96 mmHg, PaCO2 36 mmHg 이고 일산화탄소헤모글로빈은 18 %이다. 심전도는 동빈맥이고 혈청 트로포닌은 정상이다. 가장 적절한 처치는? A. 하이드록소코발라민 정맥 주사 B. 비재호흡 마스크로 100 % 산소 투여 C. 고압산소치료 D. 비강 캐뉼라로 2 L/분 산소 투여 E. 메틸렌블루 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0155",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 진행된 만성콩팥병 환자의 수술 후 흉통과 호흡곤란",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0155.md",
+   "snippet": "A 58 year old woman comes to the emergency department because of sudden shortness of breath and right sided pleuritic chest pain for 6 hours. Ten days ago, she underwent right total knee arthroplasty. She has stage 4 chronic kidney disease ",
+   "text": "호흡기 호흡기 — 진행된 만성콩팥병 환자의 수술 후 흉통과 호흡곤란 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a A 58 year old woman comes to the emergency department because of sudden shortness of breath and right sided pleuritic chest pain for 6 hours. Ten days ago, she underwent right total knee arthroplasty. She has stage 4 chronic kidney disease due to diabetic nephropathy and is not receiving dialysis; her serum creatinine concentration is 3.4 mg/dL (estimated GFR 16 mL/min/1.73 m2). Her temperature is 37.4°C (99.3°F), pulse is 104/min, respirations are 22/min, and blood pressure is 134/82 mm Hg. Oxygen saturation is 93% on room air. The lungs are clear to auscultation. There is no leg swelling or tenderness. An ECG shows sinus tachycardia. A chest x ray shows no abnormalities. Anticoagulation with unfractionated heparin is begun. Which of the following is the most appropriate next step to confirm the diagnosis? A. Ventilation perfusion lung scan B. CT pulmonary angiography C. Serum D dimer concentration D. Transthoracic echocardiography E. Pulmonary function testing"
+  },
+  {
+   "id": "imaging-2026-0154",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 폐경 후 질 조직검사의 면역조직화학",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/imaging/2026/imaging-2026-0154.md",
+   "snippet": "68세 여자가 2주 전부터 성교 후 소량의 질 출혈이 있어 왔다. 12년 전 폐경되었고 호르몬 치료는 받지 않았다. 5년 전 자궁경부 세포검사는 정상이었다. 질경 검사에서 질 위쪽 1/3 뒤벽에 1 cm 크기의 경계가 불분명한 붉은 부위가 있고 자궁경부는 육안으로 정상이다. 질 확대경 유도 조직검사의 헤마톡실린 에오신 염색에서 편평상피 핵의 변화가 위축에 의한 반응성 변화인지 고등급 병변인지 판정이 애매하여 p16 면역조직화학",
+   "text": "병리·조직학 병리·조직 — 폐경 후 질 조직검사의 면역조직화학 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260928T202359Z_일일영상_2026-09-29_12units_12q_a255eb2a 68세 여자가 2주 전부터 성교 후 소량의 질 출혈이 있어 왔다. 12년 전 폐경되었고 호르몬 치료는 받지 않았다. 5년 전 자궁경부 세포검사는 정상이었다. 질경 검사에서 질 위쪽 1/3 뒤벽에 1 cm 크기의 경계가 불분명한 붉은 부위가 있고 자궁경부는 육안으로 정상이다. 질 확대경 유도 조직검사의 헤마톡실린 에오신 염색에서 편평상피 핵의 변화가 위축에 의한 반응성 변화인지 고등급 병변인지 판정이 애매하여 p16 면역조직화학염색을 추가하였다. 질 조직 절편의 염색 결과는 그림과 같다. 이 결과의 해석으로 가장 적절한 것은? A. 고위험 HPV 연관 고등급 편평상피내병변(VaIN 2–3)이다 B. 저등급 편평상피내병변(VaIN 1)으로 확진된다 C. p16 과발현으로 보아 침윤성 편평세포암이다 D. 에스트로겐 결핍에 의한 비특이 반점상 양성이다 E. 고위험 HPV 연관 고등급 병변을 지지하지 않는다"
   },
   {
    "id": "cn.rheum.dermatomyositis.malignancy-screening",
