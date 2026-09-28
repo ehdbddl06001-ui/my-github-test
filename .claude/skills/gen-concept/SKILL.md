@@ -74,6 +74,9 @@ python pipelines/outline.py --harrison <슬롯>     # 대조할 장 · 인쇄쪽
   예: 「소변검사·크레아티닌 정상」 → 「단백뇨 3+·크레아티닌 2.1」 ⇒ 정답이 항바이러스제에서 스테로이드+리툭시맙으로.
 - **B. 겉모습을 바꿔도 답은 그대로인 변형**(`flip: false`) — 나이·성별·내원 경위·검사 이름·제시 순서를 바꾸고 결정적 단서는
   남긴다. 이야기가 아니라 **단서**로 풀었는지 본다.
+- 틀린 문항에 `design.trap`(함정 계열, `/gen-kmle` 「함정 계열」)이 있으면 **A 의 씨앗은 그 계열의 반대쪽**이다(큐의 씨앗 칸이
+  `design.trap(…)` 으로 나온다) — trap 쪽 문항이면 등록부 `content/traps/<id>.yaml` 의 `mirror.when`(lure 계열이 정답이 되는 조건),
+  mirror 쪽 문항이면 trap 쪽 조건(`cue` + `truth`). 등록부 `write_notes` 를 지킨다. 변형은 정리본 `variants` 라 `design.trap` 을 달지 않는다.
 - 두 변형 모두 `of: <틀린 문항 id>`, `changed: "<무엇을 바꿨나 → 그래서 답이 어떻게 됐나>"`, `context`(한 줄),
   보기 5개(같은 범주·길이 비슷), `answer`, `explanation`(바뀐 단서가 왜 답을 바꾸는지/왜 안 바꾸는지).
 - 형식은 원래 문항의 시험을 따른다 — KMLE 문항이면 한국어 국시형, USMLE 문항이면 영어 USMLE형(`/gen-kmle` 문항 형식).

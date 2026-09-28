@@ -24,6 +24,7 @@ question_design.py — 문항의 「출제 설계」와 「정보 역할」을 �
         - {item: "혈당", role: [management, background], why: "…"}
       summary: "…"                # 핵심 판단 요약(2~3문장) — 채점 후 해설에 보인다
       switch: {choice: E, condition: "…"}   # 선택: 어떤 조건이 바뀌면 다른 보기가 더 적절해지는가
+      trap: {id: tr.ortho.…, side: trap}   # 선택: 함정 계열(content/traps/) — 형식은 traps.py 가 본다(2026-09-29)
 
   역할(role):
     key         정답을 지지하는 핵심 소견

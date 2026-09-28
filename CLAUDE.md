@@ -9,6 +9,7 @@
 | 하려는 일 | 규칙 | 핵심 명령 · 파일 |
 |---|---|---|
 | KMLE·USMLE 문항 만들기 | `/gen-kmle`(품질 규칙·2026-09-25 감사 규칙), `/daily-run` | `lint_questions.py <파일들>` (ERROR 0 · 세트 mix WARN 해소) |
+| 함정 계열(보기를 가르는 함정) 등록·조회 | `/gen-kmle` 「함정 계열」 — 파악되면 등록하고 루틴이 두 쪽(trap·mirror) 문항을 채운다 | `traps.py similar/list/queue/check`, 등록부 `content/traps/`, 문항 `design.trap` |
 | 오답 정리본 쓰기·손질·판형 2로 옮기기 | `/gen-concept`(판형 2 · 본보기 `cn.derm.pityriasis-versicolor.treatment`) | `concept_queue.py --limit N` → `concepts.py`(오류 0) |
 | 과별 PDF 학습서 | 아래 「오답 뒤 학습 흐름」 | `.github/workflows/books.yml`, `build_books.py --only <과> --out <임시>` |
 | 판단 도식 | `decision_diagram.py`(배치는 코드가 정한다) | 노드 글 판단 ≤ 30자 — 안 들어가면 `concepts.py` ERROR |
@@ -40,6 +41,7 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
 | `python pipelines/test_learning_books.py` | 코드 회귀(도식 배치·학습 상태 JS/Python 일치·PDF·드라이브) — **고정 픽스처만** | books.yml 관문 |
 | `python pipelines/test_content.py` | 실제 정리본·문항 전수(계약·도식 크기) | books.yml 에서 따로 — 실패해도 다른 책은 만든 뒤 작업을 실패로 알림 |
 | `python pipelines/test_question_design.py` | 출제 설계·린트 규칙 | 코드 변경 시 |
+| `python pipelines/traps.py check` | 함정 계열 등록부(패턴·출처)·`design.trap` 표시 문항 | 등록부를 고쳤을 때(publish.py 가 자동) |
 
 코드 시험이 실제 콘텐츠를 읽게 만들지 않는다 — 루틴이 쓴 정리본 하나가 모든 책을 멈춘다(2026-09-23·24 실패).
 
@@ -74,6 +76,8 @@ GitHub Actions: `books.yml`(학습서, cron 06:30 이지만 **실제 발화는 2
 - 질환 카드 → `content/diseases/`  약물 카드 → `content/drugs/`
 - 개념 정리본(학습 목표 단위) → `content/concepts/<과>/cn.<과>.<주제>.<목표>.md` — 웹 오답 뒤 학습 흐름과
   과별 PDF 학습서가 **같은 원본**을 쓴다(`pipelines/concepts.py`). 계약: `schemas/frontmatter.md` concept.
+- 함정 계열 등록부 → `content/traps/<id>.yaml`(YAML 하나 = 계열 하나 — 문항 `design.trap` 이 가리킨다, `/gen-kmle` 「함정 계열」).
+  외부 문항(학교 시험 등) 원문은 넣지 않는다 — 함정의 구조(단서·오답 계열·정답 계열·반대쪽 조건)만.
 - AI·코딩 학습(ailab) → `content/ailab/`  (실습 노트북은 `notebooks/`, Colab+Drive 연동)
 - 오픈데이터 영상 문항(imaging) → `content/imaging/{연도}/` + 영상 `docs/assets/imaging/`.
   · **여기서 직접 만들지 않는다** — exam-builder 의 `opendata medkos-export` 가 세트를 옮긴다

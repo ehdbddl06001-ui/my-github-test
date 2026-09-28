@@ -908,6 +908,15 @@ class ConceptQueueTest(unittest.TestCase):
         self.concepts["cn.derm.a.b"]["variants"] = [{"id": "v1", "of": "q1"}, {"id": "v2", "of": "q1"}]
         self.assertEqual(self.cq.build(e)["variant"], [])
 
+    def test_variant_seed_is_the_other_side_of_a_trap_family(self):
+        """함정 계열 문항(design.trap)을 틀리면 변형 A 의 씨앗은 그 계열의 반대쪽이다(2026-09-29)."""
+        self.qs["q1"].update(type="kmle", choices=["A. 가", "B. 나"], answer="A",
+                             design={"switch": {"choice": "B", "condition": "x"}, "trap": {"id": "tr.t.x", "side": "trap"}})
+        e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20", text="나")]
+        self.assertEqual([v["seed"] for v in self.cq.build(e)["variant"]], ["design.trap(tr.t.x) → mirror.when"])
+        self.qs["q1"]["design"]["trap"] = {"id": "tr.t.x", "side": "mirror"}
+        self.assertEqual([v["seed"] for v in self.cq.build(e)["variant"]], ["design.trap(tr.t.x) → trap 조건"])
+
     def test_dist_queue_only_for_chosen_letter_without_explanation(self):
         self.qs["q1"].update(type="kmle", choices=["A. 가", "B. 나", "C. 다"], answer="A", path="content/kmle/x.md")
         e = [wrong("e1", "q1", "cn.derm.a.b", "2026-09-20T01:00:00Z", "2026-09-20", text="나")]

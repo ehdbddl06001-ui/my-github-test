@@ -148,6 +148,42 @@ ERROR). 영상·심전도 그림의 소견은 `영상:`·`심전도:` 로 시작
 6. **용어 — USMLE 는 검사 이름·값·참고치를 영어·미국 단위로**(린터 ERROR `usmle-labs-korean`).
    KMLE 는 한 세트 안에서 같은 대상을 한 용어로(갑상선/갑상샘, 담관/쓸개관, 아밀라아제/아밀레이스를 섞지 않는다), 백혈구 등 단위는 /μL.
 
+## 함정 계열 — `design.trap` · 등록부 `content/traps/` (2026-09-29 사용자 요청)
+
+「맥박이 약한데 혈전 계열 오답」처럼 **보기를 가르는 함정 계열**이 새로 파악되면 등록해 두고, 문항을 만들 때 그 계열도 쓴다.
+계기 — 외부 문항(경골 골절 뒤 약하게 만져지는 발등동맥 + 오답 넷이 모두 혈전·혈관 처치 → 근막절개)과 비교해 보니
+MedKOS 구획증후군 7문항이 모두 「맥박은 만져진다」 판이었다. 같은 목표를 **같은 함정으로만** 물어 온 것이다.
+
+- **함정 계열** = 발문의 한 소견(`cue`)이 보기 한 무리(`lure` 계열)로 끌어당기는데 정답은 다른 무리(`truth` 계열)에 있는 구조.
+  계열 하나 = `content/traps/<id>.yaml` 하나(`tr.<과>.<계열>`). 필드는 `schemas/frontmatter.md` 「함정 계열 등록부」.
+- **두 쪽을 다 낸다.** `trap` 쪽 = 단서가 있고 오답에 lure 계열이 `lure.min`개 이상, 정답은 truth 계열.
+  `mirror` 쪽 = 같은 단서인데 `mirror.when` 조건이라 **lure 계열이 정답**이고 truth 계열 보기가 오답.
+  trap 쪽만 쌓이면 「맥박이 약해도 혈관 문제는 아니다」 같은 과잉 일반화를 가르친다.
+- 문항에 `design.trap: {id: <계열 id>, side: trap|mirror}` 를 적는다. 린터가 등록부와 대조한다 —
+  **ERROR**: 등록부에 없는 id · 발문·활력징후·검사에 단서 없음 · trap 쪽 정답이 truth 계열이 아님(lure 계열이면 mirror 로) ·
+  lure 계열 오답이 `lure.min` 미만 · mirror 쪽 정답이 lure 계열이 아님 · mirror 쪽 오답에 truth 계열 없음.
+  **WARN**: rival 이 그 쪽에서 끌리는 계열 보기가 아님 · trap 쪽 rival 의 `distractors.<보기>.when_right` 가 비었음(등록부 `mirror.when` 을 적는다).
+- 등록부의 `write_notes` 는 그 계열로 문항을 쓸 때 **단일 최선의 답을 지키는 조건**이다(예: 「trap 쪽은 맥박을 약하게 — 완전 소실이면
+  혈관 손상이 먼저라 답이 흔들린다」). 반드시 읽고 쓴다.
+
+### 세트를 짤 때
+1. `python pipelines/traps.py queue --exam <kmle|usmle> --limit 2` — 문항이 모자란 (계열 × 쪽)을 **오늘 세트에 먼저** 넣는다.
+   세트 개수 안에서, `recent_topics` 제외의 예외다(주제가 겹쳐도 함정이 다르다). 발문은 새로 쓴다 — 등록부 문장이나 기존 문항을 베끼지 않는다.
+   「표시할 수 있는 기존 문항」(design 있음)이 나오면 그 문항이 그 쪽 조건을 모두 갖췄는지 보고 `design.trap` 만 붙여도 된다(`version` 그대로).
+2. 다른 문항을 설계할 때도 `python pipelines/traps.py list --brief` 로 그 목표·주제에 등록된 계열을 보고 **문항이 적은 계열·쪽**을 고른다.
+
+### 새 계열 등록(PC 세션 — 외부 문항 비교·오답 검토에서 파악됐을 때)
+1. 외부 문항을 **저장소 밖** 임시 파일에 두고 `python pipelines/traps.py similar --file <파일> [--answer <번호>]` —
+   비슷한 MedKOS 문항과 그 문항들의 함정 표시·풀이 기록, 등록된 계열과의 대조가 나온다.
+2. 비슷한 문항들과 **단서 · 오답 계열 · 정답 계열**을 나란히 놓는다. 등록된 계열로 설명되면 새로 등록하지 않는다(큐가 문항 수를 채운다).
+3. 새 계열이면 `content/traps/<id>.yaml` — `discriminators`(≥2)·`mirror.when`·`why` 는 **확인한 출처만** `[[출처id: 쪽]]` + `sources`.
+   외부 문항 원문·학교 시험 문장은 싣지 않는다(`found_note` 에는 「무엇과 비교해 무엇이 없었나」만). 같은 목표의 짝 계열은 `related`.
+4. 패턴은 대소문자 무시 정규식이고 한국어·영어를 둘 다 쓴다. `cue.patterns` 는 발문·자료에서, `lure`·`truth` 는 보기 글에서 찾는다.
+   긍정·부정이 갈리는 단서는 서로 걸리지 않게 쓴다(「만져진다」 vs 「만져지지 않는다」). 넓은 말(「약하」 하나)은 다른 문항까지 끌어온다 —
+   앞말을 묶는다(`(맥박|동맥)[^.]{0,15}(약하|…)`).
+5. `python pipelines/traps.py check`(오류 0) → design 이 있는 기존 문항 중 그 쪽 모양인 것에 `design.trap`(`traps.py list` 의 후보) →
+   `publish.py`(콘텐츠 레인 — 등록부가 바뀌면 publish 가 check 를 다시 돈다). `review_status: unreviewed` — 사람만 reviewed.
+
 ## 자료 구조 — 차트형 제시
 frontmatter의 `vitals`·`labs` 를 쓰면 웹이 **박스**로 렌더한다(`schemas/frontmatter.md`).
 - `labs` 에는 참고치(`ref`)를 함께 줘 학습자가 정상·이상을 스스로 가리게 한다. 이상값뿐 아니라 그 상황에서
@@ -230,6 +266,7 @@ python pipelines/review_questions.py --date 2026-09-19 --out review.md
 - [ ] 활력징후 4종 · 에포님 떠먹임 없음 · 보기 동질·평행 · 정답 위치 무작위(순환 아님)
 - [ ] subtopic 에 결론 없음 · 한정어·거울쌍 없음 · management 정보가 바꾸는 보기가 있음 · USMLE 검사명 영어
 - [ ] 오답감별이 보기별 하위 불릿이고, 관련 없는 오답에 억지 이유를 붙이지 않았는가?
+- [ ] 함정 계열 큐 항목이면 `design.trap`(id·쪽)을 적고, 등록부 `write_notes` 를 지켰는가(린터 trap-* ERROR 0)?
 
 ## 본문 구조(사람이 읽는 부분)
 ```
