@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 1406" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="함께 지나는 것 — 다섯 자리 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="654" height="1406" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">함께 지나는 것 — 다섯 자리<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> five crowded places</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 406,260 H 419 V 120 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,260 H 419 V 189 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,260 H 419 V 264 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,260 H 419 V 339 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,260 H 419 V 408 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,511 H 419 V 478 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,511 H 419 V 553 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,690 H 419 V 622 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,690 H 419 V 692 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,690 H 419 V 767 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,950 H 419 V 842 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,950 H 419 V 917 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,950 H 419 V 992 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,950 H 419 V 1067 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1204 H 419 V 1136 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,1204 H 419 V 1206 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1204 H 419 V 1281 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,733 H 219 V 260 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,733 H 219 V 511 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,733 H 219 V 690 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,733 H 219 V 950 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,733 H 219 V 1204 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="714" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="734" fill="#7fd4a8" font-size="12" class="kr">다섯 자리</text>
+  <rect x="232" y="232" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="252" fill="#7fd4a8" font-size="12" class="kr">머리덮개의 층 ★</text>
+  <text x="242" y="267" fill="#5fae87" font-size="9">layers of the scalp</text>
+  <text x="242" y="278" fill="#6f8299" font-size="9">겉에서 속으로</text>
+  <rect x="232" y="484" width="174" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="504" fill="#b49ae0" font-size="12" class="kr">해면정맥굴 ★</text>
+  <text x="242" y="518" fill="#8f79b8" font-size="9">cavernous sinus</text>
+  <text x="242" y="530" fill="#6f8299" font-size="9">안장 양옆의 정맥 그물</text>
+  <rect x="232" y="663" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="683" fill="#7fd4a8" font-size="12" class="kr">눈확 입구와 온힘줄고리 ★</text>
+  <text x="242" y="698" fill="#5fae87" font-size="9">orbital openings &amp; common</text>
+  <text x="242" y="709" fill="#5fae87" font-size="9">tendinous ring</text>
+  <rect x="232" y="928" width="174" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="948" fill="#7fd4a8" font-size="12" class="kr">가로막 구멍 ★</text>
+  <text x="242" y="963" fill="#5fae87" font-size="9">diaphragmatic apertures</text>
+  <rect x="232" y="1182" width="174" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1202" fill="#7fd4a8" font-size="12" class="kr">콩팥문과 싸개 ★</text>
+  <text x="242" y="1217" fill="#5fae87" font-size="9">renal hilum &amp; coverings</text>
+  <rect x="432" y="92" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#7fd4a8" font-size="12" class="kr">피부</text>
+  <text x="442" y="127" fill="#5fae87" font-size="9">skin</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9">머리카락 · 땀샘</text>
+  <rect x="432" y="156" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="176" fill="#e0645f" font-size="12" class="kr">치밀결합조직 ★</text>
+  <text x="442" y="191" fill="#c98a86" font-size="9">dense connective tissue</text>
+  <text x="442" y="202" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">혈관이 붙잡혀</tspan> 오그라들지 못한다 —</text>
+  <text x="442" y="213" fill="#6f8299" font-size="9">찢기면 많이 난다</text>
+  <rect x="432" y="231" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="251" fill="#7fd4a8" font-size="12" class="kr">머리덮개널힘줄 ★</text>
+  <text x="442" y="266" fill="#5fae87" font-size="9">epicranial aponeurosis (galea)</text>
+  <text x="442" y="277" fill="#6f8299" font-size="9">뒤통수이마근의 힘줄판 — 가로로</text>
+  <text x="442" y="288" fill="#6f8299" font-size="9">찢기면 벌어진다</text>
+  <rect x="432" y="306" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="326" fill="#b49ae0" font-size="12" class="kr">성긴결합조직 ★</text>
+  <text x="442" y="341" fill="#8f79b8" font-size="9">loose areolar tissue</text>
+  <text x="442" y="352" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">위험층</tspan> — 도출정맥으로 감염이</text>
+  <text x="442" y="363" fill="#6f8299" font-size="9">머리뼈 안까지</text>
+  <rect x="432" y="381" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="401" fill="#7fd4a8" font-size="12" class="kr">머리뼈막</text>
+  <text x="442" y="416" fill="#5fae87" font-size="9">pericranium</text>
+  <text x="442" y="427" fill="#6f8299" font-size="9">봉합에서 뼈에 단단히 붙는다</text>
+  <rect x="432" y="445" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="465" fill="#9cc3ff" font-size="12" class="kr">가쪽벽 (위→아래) ★</text>
+  <text x="442" y="480" fill="#7f9cc4" font-size="9">lateral wall</text>
+  <text x="442" y="491" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">눈돌림 · 도르래 · 눈신경 ·</tspan></text>
+  <text x="442" y="502" fill="#6f8299" font-size="9">위턱신경</text>
+  <rect x="432" y="520" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="540" fill="#e0645f" font-size="12" class="kr">굴 속 ★</text>
+  <text x="442" y="555" fill="#c98a86" font-size="9">within the sinus</text>
+  <text x="442" y="566" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">속목동맥 + 갓돌림신경</tspan> — VI가</text>
+  <text x="442" y="577" fill="#6f8299" font-size="9">동맥 바로 옆이라 먼저 마비</text>
+  <rect x="432" y="595" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="615" fill="#9cc3ff" font-size="12" class="kr">시각신경관 ★</text>
+  <text x="442" y="630" fill="#7f9cc4" font-size="9">optic canal</text>
+  <text x="442" y="641" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">시각신경 + 눈동맥</tspan></text>
+  <rect x="432" y="659" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="679" fill="#9cc3ff" font-size="12" class="kr">위눈확틈새 — 고리 밖 ★</text>
+  <text x="442" y="694" fill="#7f9cc4" font-size="9">SOF, outside the ring</text>
+  <text x="442" y="705" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">눈물샘 · 이마 · 도르래신경 +</tspan></text>
+  <text x="442" y="716" fill="#6f8299" font-size="9">위눈정맥</text>
+  <rect x="432" y="734" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="754" fill="#9cc3ff" font-size="12" class="kr">위눈확틈새 — 고리 안 ★</text>
+  <text x="442" y="769" fill="#7f9cc4" font-size="9">SOF, within the ring</text>
+  <text x="442" y="780" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">눈돌림 위·아래갈래 · 코섬모체 ·</tspan></text>
+  <text x="442" y="791" fill="#6f8299" font-size="9">갓돌림신경</text>
+  <rect x="432" y="809" width="170" height="66" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="829" fill="#b49ae0" font-size="12" class="kr">대정맥구멍 (T8) ★</text>
+  <text x="442" y="844" fill="#8f79b8" font-size="9">caval opening</text>
+  <text x="442" y="855" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">중심널힘줄</tspan> · 아래대정맥 +</text>
+  <text x="442" y="866" fill="#6f8299" font-size="9">오른가로막신경 가지</text>
+  <rect x="432" y="884" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="904" fill="#9cc3ff" font-size="12" class="kr">식도구멍 (T10) ★</text>
+  <text x="442" y="919" fill="#7f9cc4" font-size="9">esophageal hiatus</text>
+  <text x="442" y="930" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">오른다리 근육섬유</tspan>가 감싼다 · 식도</text>
+  <text x="442" y="941" fill="#6f8299" font-size="9">+ 미주신경줄기</text>
+  <rect x="432" y="959" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="979" fill="#e0645f" font-size="12" class="kr">대동맥구멍 (T12) ★</text>
+  <text x="442" y="994" fill="#c98a86" font-size="9">aortic hiatus</text>
+  <text x="442" y="1005" fill="#6f8299" font-size="9">두 다리와 정중활꼴인대 <tspan fill="#e6edf3" font-weight="700">뒤</tspan> ·</text>
+  <text x="442" y="1016" fill="#6f8299" font-size="9">대동맥 + 가슴림프관 + 홀정맥</text>
+  <rect x="432" y="1034" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1054" fill="#7fd4a8" font-size="12" class="kr">안쪽·가쪽활꼴인대 ★</text>
+  <text x="442" y="1069" fill="#5fae87" font-size="9">medial / lateral arcuate lig.</text>
+  <text x="442" y="1080" fill="#6f8299" font-size="9">안쪽 = 큰허리근 위(교감줄기) ·</text>
+  <text x="442" y="1091" fill="#6f8299" font-size="9">가쪽 = 허리네모근 위(갈비밑신경)</text>
+  <rect x="432" y="1109" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="1129" fill="#b49ae0" font-size="12" class="kr">콩팥문 배열 (앞→뒤) ★</text>
+  <text x="442" y="1144" fill="#8f79b8" font-size="9">hilum, anterior to posterior</text>
+  <text x="442" y="1155" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">정맥 · 동맥 · 깔때기</tspan> (VAP)</text>
+  <rect x="432" y="1173" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1193" fill="#7fd4a8" font-size="12" class="kr">싸개 (속→겉) ★</text>
+  <text x="442" y="1208" fill="#5fae87" font-size="9">coverings, inside out</text>
+  <text x="442" y="1219" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">섬유피막 → 콩팥주위지방 →</tspan></text>
+  <text x="442" y="1230" fill="#6f8299" font-size="9">콩팥근막 → 콩팥곁지방</text>
+  <rect x="432" y="1248" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1268" fill="#7fd4a8" font-size="12" class="kr">부신 ★</text>
+  <text x="442" y="1283" fill="#5fae87" font-size="9">suprarenal gland</text>
+  <text x="442" y="1294" fill="#6f8299" font-size="9">콩팥근막 <tspan fill="#e6edf3" font-weight="700">안</tspan>, 콩팥과는 얇은 막으로</text>
+  <text x="442" y="1305" fill="#6f8299" font-size="9">따로 · 오른쪽 세모 · 왼쪽 반달</text>
+  <line x1="26" y1="1324" x2="628" y2="1324" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1336" fill="#93a4b7" font-size="10.5">머리덮개는 <tspan fill="#e6edf3" font-weight="700">SCALP</tspan> — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막.</text>
+  <text x="26" y="1354" fill="#93a4b7" font-size="10.5">해면정맥굴은 <tspan fill="#e6edf3" font-weight="700">벽에 III·IV·V1·V2, 속에 속목동맥과 VI</tspan> — 속에 있는 VI가 가장 먼저 다친다.</text>
+  <text x="26" y="1372" fill="#93a4b7" font-size="10.5">가로막 구멍은 <tspan fill="#e6edf3" font-weight="700">8 · 10 · 12</tspan> — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12).</text>
+</svg>

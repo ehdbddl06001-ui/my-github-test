@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 2999,
+  "total": 3027,
   "byType": {
+   "anatomy": 767,
    "kmle": 1163,
    "concept": 90,
-   "anatomy": 739,
    "paper": 676,
    "imaging": 152,
    "usmle": 162,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 739,
+   "Anatomy": 767,
    "Cardiology": 219,
    "Nephrology": 179,
    "Infectious Disease": 160,
@@ -78,13 +78,298 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2018,
    "medium": 960,
-   "high": 1990,
    "low": 49
   },
-  "tagCount": 4175
+  "tagCount": 4193
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-29",
+   "type": "anatomy",
+   "unit": "머리·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-29",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/daily/2026-09-29.md",
+   "snippet": "오늘의 학습 (2026 09 29 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 19일 · Tagging 2까지 20일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-29 머리·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 29 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 19일 · Tagging 2까지 20일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0669",
+   "type": "anatomy",
+   "unit": "13회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "콩팥문 배열과 콩팥 싸개",
+   "tags": [
+    "layer-order",
+    "13회차",
+    "콩팥문 배열과 콩팥 싸개",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0669.md",
+   "snippet": "",
+   "text": "Anatomy 콩팥문 배열과 콩팥 싸개 13회차 · 배 layer-order 13회차 콩팥문 배열과 콩팥 싸개 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0668",
+   "type": "anatomy",
+   "unit": "13회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "허리신경얼기 — 큰허리근의 어느 모서리로",
+   "tags": [
+    "relation",
+    "13회차",
+    "허리신경얼기",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0668.md",
+   "snippet": "",
+   "text": "Anatomy 허리신경얼기 — 큰허리근의 어느 모서리로 13회차 · 배 relation 13회차 허리신경얼기 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0667",
+   "type": "anatomy",
+   "unit": "13회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "가로막 구멍 — 높이와 지나는 것",
+   "tags": [
+    "relation",
+    "13회차",
+    "가로막 구멍",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0667.md",
+   "snippet": "",
+   "text": "Anatomy 가로막 구멍 — 높이와 지나는 것 13회차 · 배 relation 13회차 가로막 구멍 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0666",
+   "type": "anatomy",
+   "unit": "13회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "왼콩팥정맥 — 받는 정맥과 지나는 자리",
+   "tags": [
+    "clinical-application",
+    "13회차",
+    "왼콩팥정맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0666.md",
+   "snippet": "",
+   "text": "Anatomy 왼콩팥정맥 — 받는 정맥과 지나는 자리 13회차 · 배 clinical-application 13회차 왼콩팥정맥 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0665",
+   "type": "anatomy",
+   "unit": "13회차 · 배",
+   "topic": "Anatomy",
+   "subtopic": "배대동맥 가지 — 높이와 무리 · 부신동맥 셋",
+   "tags": [
+    "branch-tree",
+    "13회차",
+    "배대동맥 가지",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0665.md",
+   "snippet": "",
+   "text": "Anatomy 배대동맥 가지 — 높이와 무리 · 부신동맥 셋 13회차 · 배 branch-tree 13회차 배대동맥 가지 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0664",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "바깥눈근육 — 신경과 검사 자세",
+   "tags": [
+    "distinction",
+    "13회차",
+    "바깥눈근육",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0664.md",
+   "snippet": "",
+   "text": "Anatomy 바깥눈근육 — 신경과 검사 자세 13회차 · 머리 distinction 13회차 바깥눈근육 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0663",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "섬모체신경절 — 시냅스하는 섬유 (응용과제)",
+   "tags": [
+    "course-tracing",
+    "13회차",
+    "섬모체신경절",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0663.md",
+   "snippet": "",
+   "text": "Anatomy 섬모체신경절 — 시냅스하는 섬유 (응용과제) 13회차 · 머리 course-tracing 13회차 섬모체신경절 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0662",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "온힘줄고리 — 안과 밖",
+   "tags": [
+    "relation",
+    "13회차",
+    "온힘줄고리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0662.md",
+   "snippet": "",
+   "text": "Anatomy 온힘줄고리 — 안과 밖 13회차 · 머리 relation 13회차 온힘줄고리 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0661",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "해면정맥굴 — 벽과 속",
+   "tags": [
+    "relation",
+    "13회차",
+    "해면정맥굴",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0661.md",
+   "snippet": "",
+   "text": "Anatomy 해면정맥굴 — 벽과 속 13회차 · 머리 relation 13회차 해면정맥굴 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0660",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 — 위시상정맥굴에서 속목정맥까지",
+   "tags": [
+    "branch-tree",
+    "13회차",
+    "경막정맥굴",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0660.md",
+   "snippet": "",
+   "text": "Anatomy 경막정맥굴 — 위시상정맥굴에서 속목정맥까지 13회차 · 머리 branch-tree 13회차 경막정맥굴 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0659",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "경막바깥혈종 vs 경막밑혈종",
+   "tags": [
+    "distinction",
+    "13회차",
+    "경막바깥혈종 vs 경막밑혈종",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0659.md",
+   "snippet": "",
+   "text": "Anatomy 경막바깥혈종 vs 경막밑혈종 13회차 · 머리 distinction 13회차 경막바깥혈종 vs 경막밑혈종 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0658",
+   "type": "anatomy",
+   "unit": "13회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "머리덮개 다섯 층 — 순서와 위험층",
+   "tags": [
+    "layer-order",
+    "13회차",
+    "머리덮개 다섯 층",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0658.md",
+   "snippet": "",
+   "text": "Anatomy 머리덮개 다섯 층 — 순서와 위험층 13회차 · 머리 layer-order 13회차 머리덮개 다섯 층 예습시험 태깅 12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s12) + e-Anatomy Head — Scalp and cranium 0:00–28:45 · Head — Orbit 0:00–36:11 · Abdomen — Diaphragm & posterior wall 0:00–11:06"
+  },
+  {
+   "id": "anatomy-2026-0657",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "13회차 서브노트 — 머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽",
+   "tags": [
+    "서브노트",
+    "13회차",
+    "머리덮개",
+    "경막정맥굴",
+    "해면정맥굴",
+    "눈확",
+    "섬모체신경절",
+    "콩팥",
+    "부신",
+    "배대동맥",
+    "아래대정맥",
+    "가로막",
+    "허리신경얼기",
+    "표",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/anatomy/notes/anatomy-2026-0657-s13-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 머리의 정맥은 「경막 두 층 사이」로 흐른다. 경막은 뼈막층과 수막층 두 겹이고, 둘이 갈라진 틈이 경막정맥굴이다. 그래서 동맥성 출혈(경막바깥)과 정맥성 출혈(경막밑)이 층 하나 차이로 모양이 다르다. 2. 눈확은 구멍 두 개로 들어온 것을 한 고리에 모은다. 시각신경관과 위눈확틈새 — 그리고 ==온힘줄고리==의 안이냐 밖이냐 가 태깅에서 묻는 전부다. 3. 배 뒤벽은 대동맥·대정맥 두 ",
+   "text": "Anatomy 13회차 서브노트 — 머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽 13회차 · 머리·배 서브노트 13회차 머리덮개 경막정맥굴 해면정맥굴 눈확 섬모체신경절 콩팥 부신 배대동맥 아래대정맥 가로막 허리신경얼기 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 머리의 정맥은 「경막 두 층 사이」로 흐른다. 경막은 뼈막층과 수막층 두 겹이고, 둘이 갈라진 틈이 경막정맥굴이다. 그래서 동맥성 출혈(경막바깥)과 정맥성 출혈(경막밑)이 층 하나 차이로 모양이 다르다. 2. 눈확은 구멍 두 개로 들어온 것을 한 고리에 모은다. 시각신경관과 위눈확틈새 — 그리고 ==온힘줄고리==의 안이냐 밖이냐 가 태깅에서 묻는 전부다. 3. 배 뒤벽은 대동맥·대정맥 두 줄기와 큰허리근 하나로 정리된다. 대동맥 가지는 앞 홑 · 옆 짝 · 뒤 짝 , 대정맥 가지는 왼쪽이 돌아간다 , 신경은 큰허리근의 어느 모서리로 나오느냐 다. 1. 머리덮개 Scalp !fig docs/assets/anatomy/tree s13 bundle labeled.svg 함께 지나는 것 — 머리덮개 층 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 1) 벗기기 전의 체표 점 점 원어 자리 ==코뿌리점== nasion 이마뼈와 코뼈가 만나는 점 ==미간== glabella 두 눈썹 사이 튀어나온 곳 ==정수리점== bregma 관상봉합 + 시상봉합 이 만나는 점 (신생아의 큰숫구멍) ==시옷점== lambda 시상봉합 + 시옷봉합 이 만나는 점 (작은숫구멍) ==바깥뒤통수뼈융기== ext. occipital protuberance 뒤통수 정중선에서 만져지는 혹 ==관자놀이점== pterion 이마·마루·관자·나비뼈 네 뼈가 H자로 만나는 곳 — 가장 얇다 2) 다섯 층 — SCALP 층 원어 포인트 피부 skin 털주머니·땀샘이 많다 ==치밀결합조직== dense connective tissue 혈관이 섬유에 붙잡혀 오그라들지 못한다 → 찢기면 피가 많이 난다 ==머리덮개널힘줄== epicranial aponeurosis (galea) 뒤통수이마근의 힘줄판 · 위 셋이 한 덩어리 로 움직인다 ==성긴결합조직== loose areolar tissue ==위험층== — 도출정맥이 지나 감염이 경막정맥굴로 번진다 · 머리덮개를 여기서 벗긴다 ==머리뼈막== pericranium 머리뼈 바깥 뼈막 · 봉합에서 단단히 붙는다 [!임상] 널힘줄이 가로로 찢어지면 벌어진다 :: 뒤통수이마근이 앞뒤로 당기므로 가로로 찢긴 상처 는 입을 벌린다. 봉합할 때 널힘줄층을 같이 꿰매야 하는 이유다. 3) 머리덮개뼈 분리 톱은 ==바깥판== (outer table)과 ==판사이층== (diploe)까지만 — 너무 깊으면 경막과 뇌가 다친다. 속판은 끌로 깬다. 뼈를 들어 올리면 드러나는 것이 ==뇌경막== (cranial dura mater)이다. 머리에서는 경막이 뼈에 붙어 있어 경막바깥공간이 정상에서는 없다(척주관과 반대). 2. 뇌막과 경막주름 Meninges & dural folds 1) 뇌경막은 두 겹이다 막 원어 포인트 ==뇌경막 뼈막층== periosteal layer 머리뼈 속면의 실제 뼈막 · 큰구멍에서 끝난다 (척수경막으로 안 간다) ==뇌경막 수막층== meningeal layer 안쪽으로 접혀 경막주름 을 만들고 척수경막으로 이어진다 거미막 arachnoid mater ==거미막과립==이 정맥굴로 튀어나와 뇌척수액을 돌려보낸다 연막 pia mater 뇌 표면에 밀착 두 층이 갈라진 틈 이 ==경막정맥굴== — 벽이 단단해 오그라들지 않고, 판막이 없다 . ==중간뇌막동맥== (middle meningeal a.)은 뼈막층 바깥 , 뼈 속면 홈을 따라간다. [!임상] 경막바깥혈종 vs 경막밑혈종 :: 경막바깥 = 관자놀이점 골절 → ==중간뇌막동맥== 파열 → 뼈와 경막 사이 · 볼록렌즈 · 의식청명기. 경막밑 = 경막과 거미막 사이 · 다리(대뇌)정맥 파열 · 초승달 · 노인·음주자에서 천천히. 2) 경막주름 넷 — 뇌를 칸막이한다 주름 원어 붙는 곳·포인트 ==대뇌낫== falx cerebri 앞 = ==볏돌기==, 뒤 = 소뇌천막 · 위모서리에 위시상, 아래모서리에 아래시상정맥굴 ==소뇌천막== tentorium cerebelli 대뇌와 소뇌 사이 지붕 · 안쪽 자유모서리가 ==천막패임== ==소뇌낫== falx cerebelli 좌우 소뇌반구 사이 · 뒤통수정맥굴을 품는다 ==안장가로막== diaphragma sellae 뇌하수체오목의 뚜껑 · 가운데로 ==뇌하수체줄기== [!주의] 천막패임과 눈돌림신경 :: 뇌가 부으면 갈고리이랑이 ==천막패임==으로 밀려 내려와(갈고리이랑 탈출) 그 옆을 지나는 ==눈돌림신경==을 누른다 → 같은 쪽 동공 확대 가 먼저 온다. 3) 뇌 적출 순서에서 끊는 것 앞에서: ==볏돌기== 양옆 ==벌집뼈 체판== 위의 ==후각망울== 을 들어 올린다 → 시각신경 · 속목동맥 · ==뇌하수체줄기== · ==눈돌림신경== 순으로 자른다. 소뇌천막을 자유모서리를 따라 끊고, 나머지 뇌신경과 척수·척추동맥을 ==큰구멍== 높이에서 자른다. 3. 경막정맥굴 Dural venous sinuses !fig docs/assets/anatomy/tree s13 vessel labeled.svg 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 1) 한 줄로 흐른다 = 위시상정맥굴 → 정맥굴합류 → 가로정맥굴 → 구불정맥굴 → 목정맥구멍 → 속목정맥 굴 원어 자리·받는 것 ==위시상정맥굴== sup. sagittal sinus 대뇌낫 위모서리 · 양옆 ==가쪽정맥주머니== · ==거미막과립== ==아래시상정맥굴== inf. sagittal sinus 대뇌낫 아래 자유모서리 ==곧은정맥굴== straight sinus 대뇌낫과 소뇌천막이 만나는 선 · 아래시상 + 큰대뇌정맥 ==정맥굴합류== confluence of sinuses ==속뒤통수뼈융기== 앞 ==가로정맥굴== transverse sinus 소뇌천막 뒤가쪽 붙는모서리 ==구불정맥굴== sigmoid sinus S자로 꺾여 ==목정맥구멍== → ==위목정맥팽대== ==뒤통수정맥굴== occipital sinus 소뇌낫 안 · 합류로 ==해면정맥굴== cavernous sinus 안장 양옆 · 위눈정맥 을 받는다 ==위바위정맥굴 / 아래바위정맥굴== sup. / inf. petrosal sinus 해면 → 가로·구불 경계 / 해면 → 속목정맥 2) 해면정맥굴 — 속과 벽 자리 구조 가쪽벽 (위→아래) ==눈돌림신경== · ==도르래신경== · ==눈신경(V1)== · ==위턱신경(V2)== 굴 속 ==속목동맥== + ==갓돌림신경== [!임상] 얼굴 위험삼각 :: 윗입술·코 둘레 감염 → 얼굴정맥 → 위눈정맥 (판막 없음) → 해면정맥굴 혈전. 굴 속에 떠 있는 ==갓돌림신경==이 먼저 마비돼 눈이 바깥으로 안 간다 . 4. 머리뼈 바닥의 구멍 Foramina of the cranial base 구멍 원어 지나는 것 ==체판== cribriform plate 후각신경(I) ==시각신경관== optic canal ==시각신경(II) + 눈동맥== ==위눈확틈새== superior orbital fissure III · IV · V1 · VI + 위눈정맥 ==목정맥구멍== jugular foramen IX · X · XI + 구불정맥굴 → 속목정맥 · 아래바위정맥굴 ==혀밑신경관== hypoglossal canal 혀밑신경(XII) ==큰구멍== foramen magnum 숨뇌·척수 · 척추동맥 · 더부신경 척수뿌리 5. 눈꺼풀과 눈물기관 Eyelids & lacrimal apparatus 1) 눈꺼풀의 층과 결막 구조 원어 포인트 ==눈꺼풀틈새== palpebral fissure 위·아래눈꺼풀 사이 · 양끝이 ==안쪽·가쪽눈구석== ==눈둘레근== orbicularis oculi m. 눈을 감는다 · 얼굴신경(VII) ==눈확사이막== orbital septum 눈확모서리의 ==눈확뼈막==에서 눈꺼풀판까지 — 눈확 지방의 앞벽 ==눈꺼풀판== tarsus 눈꺼풀의 뼈대 · ==안쪽·가쪽눈꺼풀인대==로 눈확벽에 붙는다 ==눈꺼풀결막 / 안구결막== palpebral / bulbar conjunctiva 둘이 꺾이는 자리가 ==위·아래결막구석== (fornix) 눈을 뜨는 근육은 ==위눈꺼풀올림근==(눈돌림신경) + 위눈꺼풀판근(교감). 눈돌림신경 마비는 완전 눈꺼풀처짐 , 호너증후군은 가벼운 처짐. 2) 눈물의 길 = 눈물샘 → 결막주머니 → 눈물못 → 눈물유두·눈물점 → 눈물소관 → 눈물주머니 → 코눈물관 → 아래콧길 ==눈물샘== (lacrimal gland)은 눈확 위가쪽 . ==눈물언덕== 옆 ==눈물못==에 고인 눈물을 ==눈물점==이 빨아들인다. ==코눈물관==은 ==아래콧길== (inferior nasal meatus)로 열린다 — 울면 콧물이 나는 이유. 6. 눈확 속의 구조물 Contents of the orbit !fig docs/assets/anatomy/tree s13 nerve labeled.svg 눈확의 신경과 허리신경얼기 1) 위에서 열었을 때 보이는 순서 눈확천장을 깨고 ==눈확뼈막== (periorbita)을 열면 바로 밑에 ==이마신경== 이 정중선 쪽으로 곧게 누워 있다 → 앞으로 ==눈확위신경==(크고 곧게, 눈확위구멍/패임) · ==도르래위신경==(안쪽). 가쪽벽을 따라 ==눈물샘신경== , 안쪽 위로 ==도르래신경== → ==위빗근== . 지방을 걷으면 ==위눈꺼풀올림근== 과 그 밑의 ==위곧은근== , 더 깊이 ==코섬모체신경== 이 ==시각신경== 을 가쪽에서 안쪽으로 넘어간다. 2) 온힘줄고리 — 안이냐 밖이냐 구멍 지나는 것 ==시각신경관== 시각신경 · ==눈동맥== 위눈확틈새 — ==고리 밖== ==눈물샘신경 · 이마신경 · 도르래신경== + 위눈정맥 위눈확틈새 — ==고리 안== ==눈돌림신경 위·아래갈래 · 코섬모체신경 · 갓돌림신경== [!기출] 고리 밖 셋은 「LFT」 :: Lacrimal · Frontal · Trochlear — 고리 밖 . 그래서 이 셋은 눈근육을 마취하는 구후마취(고리 안 주사)에서 살아남는다 — 위빗근만 움직인다 . 3) 눈확의 신경 신경 원어 맡는 것 ==눈돌림신경 위갈래== CN III sup. div. 위곧은근 · 위눈꺼풀올림근 ==눈돌림신경 아래갈래== CN III inf. div. 안쪽곧은근 · 아래곧은근 · 아래빗근 + 섬모체신경절 부교감뿌리 ==도르래신경== CN IV 위빗근 ==갓돌림신경== CN VI 가쪽곧은근 ==코섬모체신경== nasociliary n. ==긴섬모체신경==(각막 감각 · 동공확대근 교감) · ==앞·뒤벌집신경== · ==도르래아래신경== ==짧은섬모체신경== short ciliary nn. 섬모체신경절에서 안구 뒤로 — 동공조임근 · 섬모체근 4) 섬모체신경절 — 응용과제 눈돌림신경 (Edinger–Westphal 핵의 부교감 섬유) └─ 아래갈래 ─ 부교감뿌리 ─→ 섬모체신경절 [시냅스 ○] └─ 짧은섬모체신경 ─→ 동공조임근 (축동) └→ 섬모체근 (가까이 보기 · 조절) 교감 (속목동맥신경얼기) ──────→ 섬모체신경절 [통과 ×] ─→ 동공확대근 감각 (코섬모체신경) ──────────→ 섬모체신경절 [통과 ×] ─→ 각막 · 홍채 [!임상] 동공반사와 조절 :: 빛 → 시각신경 → 중간뇌 → 양쪽 눈돌림신경 → 섬모체신경절 → 동공조임근. 들신경(II) 손상 = 그 눈에 빛을 비추면 두 눈 다 안 줄어든다 · 날신경(III) 손상 = 어느 눈에 비춰도 그 눈만 안 줄어든다. 5) 바깥눈근육 여섯 + 올림근 근육 원어 주 작용(첫눈 위치) 신경 ==위곧은근== superior rectus 올림 · 모음 · 안쪽돌림 III 위갈래 ==아래곧은근== inferior rectus 내림 · 모음 · 가쪽돌림 III 아래갈래 ==안쪽곧은근== medial rectus 모음 III 아래갈래 ==가쪽곧은근== lateral rectus 벌림 ==VI== ==위빗근== superior oblique 내림 · 벌림 · 안쪽돌림 — 도르래를 돌아 뒤가쪽 에 닿는다 ==IV== ==아래빗근== inferior oblique 올림 · 벌림 · 가쪽돌림 — 유일하게 눈확 바닥 앞 에서 일어난다 III 아래갈래 ==위눈꺼풀올림근== levator palpebrae superioris 위눈꺼풀 올림 III 위갈래 [!TIP] 빗근은 이름과 반대 :: ==위빗근==은 눈을 아래로 , ==아래빗근==은 위로 . 임상 검사는 모은 자세 에서 — 위빗근은 \"안쪽으로 보고 아래로\", 도르래신경 마비 환자는 계단 내려가기 가 힘들다. 7. 안구 Eyeball 층 구성 포인트 ==섬유층== fibrous layer ==공막== (sclera) + ==각막== (cornea) ==혈관층 = 포도막== uvea ==맥락막== (검게 보이는 막) · ==섬모체== · ==홍채== ==속층== inner layer ==망막== (retina) — ==황반== 가운데 ==중심오목== · ==시각신경원반== = ==맹점== 방: ==안구앞방== (각막–홍채) · ==안구뒤방== (홍채–수정체) · 수정체 뒤는 ==유리체== . 방수는 섬모체에서 만들어져 뒤방 → 동공 → 앞방 → 홍채각막각의 공막정맥굴로 빠진다. 막히면 녹내장. 8. 콩팥과 부신 Kidney & suprarenal gland 1) 싸개 — 속에서 겉으로 층 원어 포인트 ==섬유피막== fibrous capsule 콩팥에 붙은 얇은 막 ==콩팥주위지방피막== perirenal fat capsule 콩팥근막 안 — 부신까지 함께 싼다 ==콩팥근막== renal fascia (Gerota) 앞·뒤 두 장 · 부신은 따로 칸 ==콩팥곁지방체== pararenal fat body 콩팥근막 밖 , 뒤쪽에 두껍다 2) 콩팥문과 단면 ==콩팥문== 배열 앞 → 뒤 : ==콩팥정맥== · ==콩팥동맥== · ==콩팥깔때기== (VAP). ==덧콩팥동맥==이 흔하다(대동맥에서 따로). 단면: ==겉질== · ==속질==(==콩팥피라밋== 여럿, 사이를 ==콩팥기둥==이 채운다) → 끝이 ==콩팥유두== → ==작은콩팥잔== → ==큰콩팥잔== → ==콩팥깔때기== . 이것들이 들어앉은 오목이 ==콩팥굴== . 3) 부신 오른쪽 왼쪽 모양 세모 (피라밋) 반달 정맥 ==아래대정맥==으로 곧장(짧다) ==왼콩팥정맥==으로 동맥 (셋) ==위부신동맥==(아래가로막동맥) · ==중간부신동맥==(대동맥) · ==아래부신동맥==(콩팥동맥) 좌우 같다 [!주의] 부신 속질의 신경은 신경절이전섬유 :: 부신 속질은 교감신경절 자체 라서, 내장신경의 신경절이전섬유가 곧장 들어간다(중간 시냅스 없음). 9. 배대동맥과 아래대정맥 Abdominal aorta & IVC 1) 배대동맥 가지 — 앞 홑 · 옆 짝 · 뒤 짝 높이 가지 무리 T12 ==아래가로막동맥== (좌우) → 위부신동맥 옆 짝 T12 ==복강동맥== 앞 홑 — 앞창자 L1 ==위창자간막동맥== 앞 홑 — 중간창자 L1 ==중간부신동맥== 옆 짝 L1–L2 ==콩팥동맥== → 아래부신동맥 옆 짝 L2 ==고환·난소동맥== 옆 짝 — 고환은 ==깊은샅굴구멍==, 난소는 ==온엉덩동맥== 앞을 넘어 L3 ==아래창자간막동맥== 앞 홑 — 뒤창자 L1–L4 ==허리동맥== 4쌍 뒤 짝 L4 ==온엉덩동맥== (갈림) + ==정중엉치동맥== 끝가지 2) 아래대정맥 — 왼쪽이 돌아간다 L5 에서 좌우 온엉덩정맥이 합쳐 대동맥 오른쪽 을 오르고, T8 에서 가로막 중심널힘줄을 뚫는다. ==왼콩팥정맥==은 길다 — ==대동맥 앞 · 위창자간막동맥 밑==을 건너며 ==왼생식샘정맥==과 ==왼부신정맥==을 받는다. ==허리정맥== 은 ==오름허리정맥== 으로 세로로 이어져 위로 홀정맥계와 잇는다(대정맥이 막혔을 때 우회로). 대동맥 오른쪽 뒤, 오른다리 옆에 ==가슴림프관팽대== (cisterna chyli, L1–L2) — 가슴림프관이 되어 대동맥구멍으로 올라간다. [!임상] 호두까기(nutcracker) :: 왼콩팥정맥이 위창자간막동맥과 대동맥 사이 에 끼이면 왼콩팥·왼생식샘정맥 압이 올라 혈뇨 · 왼쪽 정계정맥류 가 생긴다. 3) 대동맥 앞의 자율신경얼기 = 복강신경얼기 → 위창자간막신경얼기 → 배대동맥신경얼기 → 아래창자간막신경얼기 → 위아랫배신경얼기 → 아래아랫배신경얼기 모두 같은 이름 동맥의 뿌리 를 감싼다. 위아랫배신경얼기는 대동맥 갈림 아래 , 골반으로 넘어가 아래아랫배(골반)신경얼기가 된다. 10. 가로막 Diaphragm 부분 원어 일어나는 곳 ==복장부분== sternal part 칼돌기 뒤 ==갈비부분== costal part 아래 6개 갈비연골 ==허리부분== lumbar part ==오른다리==(L1–L3) · ==왼다리==(L1–L2) · 안쪽·가쪽활꼴인대 ==중심널힘줄== central tendon 모든 근육섬유가 모이는 힘줄판 구멍·인대 높이 지나는 것 대정맥구멍 ==T8== 아래대정맥 · 오른가로막신경 가지 — 중심널힘줄 에 있어 숨 들이쉴 때 넓어진다 ==식도구멍== ==T10== 식도 · 앞·뒤미주신경줄기 — ==오른다리== 섬유가 조임근처럼 감싼다 ==대동맥구멍== ==T12== 대동맥 · 가슴림프관 · 홀정맥 — 두 다리 뒤 라 숨쉬어도 안 눌린다 ==안쪽활꼴인대== — ==큰허리근== 위를 건넌다 · 교감줄기가 그 뒤로 ==가쪽활꼴인대== — ==허리네모근== 위를 건넌다 · 갈비밑신경·혈관이 그 뒤로 운동 신경은 ==가로막신경== (C3–C5) 하나. 가장자리 감각은 아래 갈비사이신경이 맡는다. 11. 뒤배벽의 근육과 허리신경얼기 Posterior abdominal wall 1) 근육 넷 근육 원어 이는곳 닿는곳 작용 신경 ==큰허리근== psoas major T12–L5 척추뼈몸통·가로돌기 넙다리뼈 ==작은돌기== 엉덩관절 굽힘 L1–L3 앞가지 ==작은허리근== psoas minor T12–L1 몸통 두덩뼈 엉덩두덩융기 약한 몸통 굽힘 · 절반쯤은 없다 L1 ==엉덩근== iliacus 엉덩뼈오목 작은돌기(큰허리근 힘줄과 함께) 엉덩관절 굽힘 ==넙다리신경== ==허리네모근== quadratus lumborum 엉덩뼈능선 뒤 12번 갈비뼈 · L1–L4 가로돌기 옆굽힘 · 12번 갈비뼈 고정 T12–L4 앞가지 2) 허리신경얼기 — 어느 모서리로 나오나 신경 뿌리 큰허리근에서 맡는 것 ==갈비밑신경== T12 (얼기 밖) 가쪽활꼴인대 뒤 배벽 아래 · 엉덩이 위가쪽 피부 ==엉덩아랫배신경== L1 가쪽모서리 두덩 위 피부 · 배벽 근육 ==엉덩고샅신경== L1 가쪽모서리 샅굴 → 음낭/대음순 앞쪽 · 넙다리 안쪽 위 ==음부넙다리신경== L1–L2 ==앞면을 뚫는다== ==음부가지==(깊은샅굴구멍 → 고환올림근) · 넙다리가지(넙다리삼각 피부) ==가쪽넙다리피부신경== L2–L3 가쪽모서리 넙다리 가쪽 피부 ==넙다리신경== L2–L4 가쪽모서리 · 엉덩근과의 고랑 넙다리 앞칸 근육 · 앞안쪽 피부 ==폐쇄신경== L2–L4 ==안쪽모서리== 넙다리 안쪽칸(모음근) 척추뼈몸통 앞가쪽을 ==허리교감줄기== 가 내려간다 — ==허리신경절== 과 척수신경을 잇는 ==교통가지== (흰교통가지는 L1–L2까지만). [!기출] 큰허리근 앞면을 뚫는 신경은? :: ==음부넙다리신경== 하나. 나머지는 가쪽모서리(넷)나 안쪽모서리(폐쇄)로 나온다. 고환올림근반사 의 날신경이 이 신경의 음부가지다(들신경은 엉덩고샅신경). 12. 복막 · 응용과제 Peritoneum & applied tasks 1) 복막 뒤에 있는 것 복막뒤기관: 부신 · 대동맥/대정맥 · 샘창자(2–4부) · 이자(꼬리 빼고) · 오름/내림잘록창자 · 콩팥·요관 · 식도(배부분) · 곧창자 — 이번 회차의 뒤배벽 구조는 전부 복막 뒤 다. ==그물막구멍== (epiploic foramen, Winslow): 앞 = ==간십이지장인대==(온쓸개관 · 고유간동맥 · 간문맥), 뒤 = 아래대정맥, 위 = 간 꼬리엽, 아래 = 샘창자 첫부분. 2) 쓸개이자관과 팽대부 (응용과제 — ERCP · 팽대부 종양 황달) = 온간관 + 쓸개주머니관 → 온쓸개관 → 이자머리 뒤 → 큰이자관과 합류 → 간이자팽대부 → 큰샘창자유두(샘창자 내림부분) ==간이자팽대부== (hepatopancreatic ampulla)는 ==큰샘창자유두== 에서 샘창자 둘째(내림)부분 으로 열리고, Oddi 조임근이 둘러싼다. ERCP 내시경은 입 → 식도 → 위 → 날문 → 샘창자 첫부분 → 내림부분 까지 가서 유두에 관을 꽂는다 — 위 내시경보다 한 구간 더 간다. [!임상] 팽대부 종양과 황달 :: 팽대부가 막히면 쓸개즙과 이자액이 함께 막힌다 → 통증 없는 폐쇄황달 + 만져지는 쓸개(Courvoisier) · 이자관 확장. 온쓸개관 위쪽 만 막히면 이자관은 멀쩡하다 — 영상에서 두 관이 함께 넓어졌는지 (double duct)가 막힌 자리를 가른다. [!TIP] 위 내시경에서 보는 순서 (응용과제) :: 들문 → 바닥 → 몸통(큰굽이의 주름) → 모서리패임 → 날문방 → 날문. 뒤집어 보기(retroflexion)로 들문과 바닥을 다시 본다 — 해부 표본에서 위를 열어 보는 순서와 같다. 13. 근육표 종합 (13회차) 근육 원어 이는곳 닿는곳 작용 신경 뒤통수이마근 occipitofrontalis 위목덜미선 / 머리덮개널힘줄 눈썹 피부 이마 주름 · 눈썹 올림 얼굴신경 눈둘레근 orbicularis oculi 안쪽눈꺼풀인대·눈확모서리 눈꺼풀·눈 둘레 피부 눈 감기 얼굴신경 위눈꺼풀올림근 levator palpebrae superioris 나비뼈 작은날개 위눈꺼풀판·피부 눈 뜨기 ==III 위갈래== 곧은근 넷 recti ==온힘줄고리== 공막 앞쪽 위·아래·안쪽·가쪽 III · 가쪽만 ==VI== 위빗근 superior oblique 나비뼈몸통 도르래 돌아 공막 뒤가쪽 내림 · 벌림 · 안쪽돌림 ==IV== 아래빗근 inferior oblique 눈확 바닥 앞안쪽 공막 뒤가쪽 올림 · 벌림 · 가쪽돌림 III 아래갈래 가로막 diaphragm 칼돌기 · 아래 6 갈비연골 · 다리·활꼴인대 ==중심널힘줄== 들숨 가로막신경 C3–C5 큰허리근 psoas major T12–L5 작은돌기 엉덩관절 굽힘 L1–L3 앞가지 엉덩근 iliacus 엉덩뼈오목 작은돌기 엉덩관절 굽힘 넙다리신경 허리네모근 quadratus lumborum 엉덩뼈능선 12번 갈비뼈 · 가로돌기 옆굽힘 · 갈비 고정 T12–L4 [!암기] 이 회차의 신경 칸은 두 덩어리 :: 머리 = III · IV · VI · VII (눈 뜨기 III · 감기 VII), 배 뒤벽 = L1–L4 앞가지 + 가로막신경 . \"눈 뜨는 건 3, 감는 건 7\"만 바뀌지 않으면 된다. 14. 예습시험 체크리스트 10 (수업당 10문제 대비) 1. 머리덮개 다섯 층 (SCALP)과 위험층 이 위험한 이유 2. 뇌경막 두 층 과 경막정맥굴이 생기는 자리 · 중간뇌막동맥이 지나는 층 3. 경막바깥혈종 vs 경막밑혈종 — 혈관 · 모양 · 관자놀이점 4. 경막주름 넷 과 천막패임이 누르는 신경 5. 경막정맥굴의 흐름 한 줄 (위시상 → … → 속목정맥)과 곧은정맥굴에 들어오는 것 6. 해면정맥굴 가쪽벽 넷 / 굴 속 둘 7. 시각신경관 · 위눈확틈새(고리 안 / 밖 )를 지나는 것 8. 바깥눈근육 여섯의 신경 (LR6 · SO4 · R3)과 섬모체신경절 에서 시냅스하는 섬유 9. 배대동맥 가지를 높이와 무리 (앞 홑 · 옆 짝 · 뒤 짝)로 · 부신동맥 셋의 출처 · 콩팥문 VAP 10. 가로막 구멍 T8 · T10 · T12 와 허리신경얼기 가지가 큰허리근의 어느 모서리 로 나오는지"
+  },
   {
    "id": "kmle-2026-1194",
    "type": "kmle",
@@ -31345,6 +31630,300 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0697",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 아래대정맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0697.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로.",
+   "text": "Anatomy 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 아래대정맥) 13회차 · 머리·배 계보 도해 13회차 혈관 계보(동맥+정맥) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0696",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 배대동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0696.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로.",
+   "text": "Anatomy 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 배대동맥) 13회차 · 머리·배 계보 도해 13회차 혈관 계보(동맥+정맥) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0695",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 머리의 동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0695.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로.",
+   "text": "Anatomy 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 머리의 동맥) 13회차 · 머리·배 계보 도해 13회차 혈관 계보(동맥+정맥) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0694",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 경막정맥굴)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0694.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로.",
+   "text": "Anatomy 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 경막정맥굴) 13회차 · 머리·배 계보 도해 13회차 혈관 계보(동맥+정맥) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0693",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0693.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로.",
+   "text": "Anatomy 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 — 계보 퀴즈판 (13회차 혈관 계보(동맥+정맥) · 종합) 13회차 · 머리·배 계보 도해 13회차 혈관 계보(동맥+정맥) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · §아래대정맥 · §뒤배벽의 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0692",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 뒤배벽의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0692.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로.",
+   "text": "Anatomy 눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 뒤배벽의 신경) 13회차 · 머리·배 계보 도해 13회차 신경 계보 예습시험 태깅 13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0691",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 눈확의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0691.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로.",
+   "text": "Anatomy 눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 눈확의 신경) 13회차 · 머리·배 계보 도해 13회차 신경 계보 예습시험 태깅 13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0690",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0690.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로.",
+   "text": "Anatomy 눈확의 신경과 허리신경얼기 — 계보 퀴즈판 (13회차 신경 계보 · 종합) 13회차 · 머리·배 계보 도해 13회차 신경 계보 예습시험 태깅 13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + 인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0689",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 콩팥문과 싸개)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0689.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 콩팥문과 싸개) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0688",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 가로막 구멍)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0688.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 가로막 구멍) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0687",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 눈확 입구와 온힘줄고리)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0687.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 눈확 입구와 온힘줄고리) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0686",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 해면정맥굴)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0686.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 해면정맥굴) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0685",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 머리덮개의 층)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0685.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 머리덮개의 층) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0684",
+   "type": "anatomy",
+   "unit": "13회차 · 머리·배",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "13회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0684.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 다섯 자리 — 계보 퀴즈판 (13회차 함께 지나는 것(신경혈관다발) · 종합) 13회차 · 머리·배 계보 도해 13회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · §가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s13 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s13 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0642",

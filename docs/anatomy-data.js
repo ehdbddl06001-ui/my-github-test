@@ -10304,6 +10304,328 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0684",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 번호핀 1~23가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 다섯 자리 / 2. 머리덮개의 층 / 3. 해면정맥굴 / 4. 눈확 입구와 온힘줄고리 / 5. 가로막 구멍 / 6. 콩팥문과 싸개 / 7. 피부 / 8. 치밀결합조직 / 9. 머리덮개널힘줄 / 10. 성긴결합조직 / 11. 머리뼈막 / 12. 가쪽벽 (위→아래) / 13. 굴 속 / 14. 시각신경관 / 15. 위눈확틈새 — 고리 밖 / 16. 위눈확틈새 — 고리 안 / 17. 대정맥구멍 (T8) / 18. 식도구멍 (T10) / 19. 대동맥구멍 (T12) / 20. 안쪽·가쪽활꼴인대 / 21. 콩팥문 배열 (앞→뒤) / 22. 싸개 (속→겉) / 23. 부신",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0685",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 **머리덮개의 층** 계통에 해당하는 번호핀 2, 7, 8, 9, 10, 11 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 머리덮개의 층 / 7. 피부 / 8. 치밀결합조직 / 9. 머리덮개널힘줄 / 10. 성긴결합조직 / 11. 머리뼈막",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0686",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 **해면정맥굴** 계통에 해당하는 번호핀 3, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 해면정맥굴 / 12. 가쪽벽 (위→아래) / 13. 굴 속",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0687",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 **눈확 입구와 온힘줄고리** 계통에 해당하는 번호핀 4, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 눈확 입구와 온힘줄고리 / 14. 시각신경관 / 15. 위눈확틈새 — 고리 밖 / 16. 위눈확틈새 — 고리 안",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0688",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 **가로막 구멍** 계통에 해당하는 번호핀 5, 17, 18, 19, 20 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 가로막 구멍 / 17. 대정맥구멍 (T8) / 18. 식도구멍 (T10) / 19. 대동맥구멍 (T12) / 20. 안쪽·가쪽활꼴인대",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0689",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 다섯 자리)에서 **콩팥문과 싸개** 계통에 해당하는 번호핀 6, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 콩팥문과 싸개 / 21. 콩팥문 배열 (앞→뒤) / 22. 싸개 (속→겉) / 23. 부신",
+   "explanation": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다 머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막. 해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다. 가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 다섯 자리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0690",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(눈확의 신경과 허리신경얼기)에서 번호핀 1~30가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 13회차의 신경 / 2. 눈확의 신경 / 3. 뒤배벽의 신경 / 4. 시각신경 / 5. 눈돌림신경 / 6. 도르래신경 / 7. 갓돌림신경 / 8. 눈신경 (V1) / 9. 갈비밑신경 / 10. 엉덩아랫배신경 / 11. 엉덩고샅신경 / 12. 음부넙다리신경 / 13. 가쪽넙다리피부신경 / 14. 넙다리신경 / 15. 폐쇄신경 / 16. 허리교감줄기 / 17. 위갈래 / 18. 아래갈래 / 19. 이마신경 / 20. 눈물샘신경 / 21. 코섬모체신경 / 22. 음부가지 / 23. 넙다리가지 / 24. 허리신경절 · 교통가지 / 25. 섬모체신경절 부교감뿌리 / 26. 눈확위신경 / 27. 도르래위신경 / 28. 긴섬모체신경 / 29. 뒤벌집신경 · 앞벌집신경 / 30. 도르래아래신경",
+   "explanation": "13회차 · 눈확은 뇌신경 넷(II·III·IV·VI)과 V1 가지, 뒤배벽은 L1–L4 앞가지가 큰허리근을 뚫고 나온다 눈근육 신경은 **LR6 · SO4 · 나머지 R3** — 가쪽곧은근=갓돌림, 위빗근=도르래, 나머지 전부 눈돌림. 섬모체신경절에서 **시냅스하는 것은 부교감(눈돌림신경) 하나뿐**이다 — 교감·감각은 그냥 지나간다. 허리신경얼기는 **큰허리근 속에서** 만들어진다 — 가쪽모서리 넷 · 앞면 하나(음부넙다리) · 안쪽모서리 하나(폐쇄). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-nerve",
+     "page": null,
+     "section": "눈확의 신경과 허리신경얼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0691",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(눈확의 신경과 허리신경얼기)에서 **눈확의 신경** 계통에 해당하는 번호핀 2, 4, 5, 6, 7, 8, 17, 18, 19, 20, 21, 25, 26, 27, 28, 29, 30 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 눈확의 신경 / 4. 시각신경 / 5. 눈돌림신경 / 6. 도르래신경 / 7. 갓돌림신경 / 8. 눈신경 (V1) / 17. 위갈래 / 18. 아래갈래 / 19. 이마신경 / 20. 눈물샘신경 / 21. 코섬모체신경 / 25. 섬모체신경절 부교감뿌리 / 26. 눈확위신경 / 27. 도르래위신경 / 28. 긴섬모체신경 / 29. 뒤벌집신경 · 앞벌집신경 / 30. 도르래아래신경",
+   "explanation": "13회차 · 눈확은 뇌신경 넷(II·III·IV·VI)과 V1 가지, 뒤배벽은 L1–L4 앞가지가 큰허리근을 뚫고 나온다 눈근육 신경은 **LR6 · SO4 · 나머지 R3** — 가쪽곧은근=갓돌림, 위빗근=도르래, 나머지 전부 눈돌림. 섬모체신경절에서 **시냅스하는 것은 부교감(눈돌림신경) 하나뿐**이다 — 교감·감각은 그냥 지나간다. 허리신경얼기는 **큰허리근 속에서** 만들어진다 — 가쪽모서리 넷 · 앞면 하나(음부넙다리) · 안쪽모서리 하나(폐쇄). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-nerve",
+     "page": null,
+     "section": "눈확의 신경과 허리신경얼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0692",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(눈확의 신경과 허리신경얼기)에서 **뒤배벽의 신경** 계통에 해당하는 번호핀 3, 9, 10, 11, 12, 13, 14, 15, 16, 22, 23, 24 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 뒤배벽의 신경 / 9. 갈비밑신경 / 10. 엉덩아랫배신경 / 11. 엉덩고샅신경 / 12. 음부넙다리신경 / 13. 가쪽넙다리피부신경 / 14. 넙다리신경 / 15. 폐쇄신경 / 16. 허리교감줄기 / 22. 음부가지 / 23. 넙다리가지 / 24. 허리신경절 · 교통가지",
+   "explanation": "13회차 · 눈확은 뇌신경 넷(II·III·IV·VI)과 V1 가지, 뒤배벽은 L1–L4 앞가지가 큰허리근을 뚫고 나온다 눈근육 신경은 **LR6 · SO4 · 나머지 R3** — 가쪽곧은근=갓돌림, 위빗근=도르래, 나머지 전부 눈돌림. 섬모체신경절에서 **시냅스하는 것은 부교감(눈돌림신경) 하나뿐**이다 — 교감·감각은 그냥 지나간다. 허리신경얼기는 **큰허리근 속에서** 만들어진다 — 가쪽모서리 넷 · 앞면 하나(음부넙다리) · 안쪽모서리 하나(폐쇄). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-nerve",
+     "page": null,
+     "section": "눈확의 신경과 허리신경얼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0693",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥)에서 번호핀 1~37가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 13회차의 혈관 / 2. 경막정맥굴 / 3. 머리의 동맥 / 4. 배대동맥 / 5. 아래대정맥 / 6. 위시상정맥굴 / 7. 아래시상정맥굴 → 곧은정맥굴 / 8. 정맥굴합류 / 9. 해면정맥굴 / 10. 중간뇌막동맥 / 11. 속목동맥 / 12. 앞 홑가지 / 13. 옆 짝가지 / 14. 뒤 짝가지 · 끝가지 / 15. 콩팥정맥 / 16. 오른생식샘정맥 · 오른부신정맥 / 17. 허리정맥 · 오름허리정맥 / 18. 가쪽정맥주머니 / 19. 가로정맥굴 / 20. 위바위정맥굴 / 21. 아래바위정맥굴 / 22. 눈동맥 / 23. 복강동맥 / 24. 위창자간막동맥 / 25. 아래창자간막동맥 / 26. 아래가로막동맥 / 27. 중간부신동맥 / 28. 콩팥동맥 / 29. 고환·난소동맥 / 30. 허리동맥 / 31. 정중엉치동맥 / 32. 온엉덩동맥 / 33. 왼생식샘정맥 · 왼부신정맥 / 34. 구불정맥굴 / 35. 망막중심동맥 / 36. 눈확위동맥 · 도르래위동맥 / 37. 눈물샘동맥",
+   "explanation": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다 정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다. 배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**. 왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-vessel",
+     "page": null,
+     "section": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0694",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥)에서 **경막정맥굴** 계통에 해당하는 번호핀 2, 6, 7, 8, 9, 18, 19, 20, 21, 34 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 경막정맥굴 / 6. 위시상정맥굴 / 7. 아래시상정맥굴 → 곧은정맥굴 / 8. 정맥굴합류 / 9. 해면정맥굴 / 18. 가쪽정맥주머니 / 19. 가로정맥굴 / 20. 위바위정맥굴 / 21. 아래바위정맥굴 / 34. 구불정맥굴",
+   "explanation": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다 정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다. 배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**. 왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-vessel",
+     "page": null,
+     "section": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0695",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥)에서 **머리의 동맥** 계통에 해당하는 번호핀 3, 10, 11, 22, 35, 36, 37 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 머리의 동맥 / 10. 중간뇌막동맥 / 11. 속목동맥 / 22. 눈동맥 / 35. 망막중심동맥 / 36. 눈확위동맥 · 도르래위동맥 / 37. 눈물샘동맥",
+   "explanation": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다 정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다. 배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**. 왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-vessel",
+     "page": null,
+     "section": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0696",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥)에서 **배대동맥** 계통에 해당하는 번호핀 4, 12, 13, 14, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 배대동맥 / 12. 앞 홑가지 / 13. 옆 짝가지 / 14. 뒤 짝가지 · 끝가지 / 23. 복강동맥 / 24. 위창자간막동맥 / 25. 아래창자간막동맥 / 26. 아래가로막동맥 / 27. 중간부신동맥 / 28. 콩팥동맥 / 29. 고환·난소동맥 / 30. 허리동맥 / 31. 정중엉치동맥 / 32. 온엉덩동맥",
+   "explanation": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다 정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다. 배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**. 왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-vessel",
+     "page": null,
+     "section": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0697",
+   "style": "spotter",
+   "session": 13,
+   "region": "multi",
+   "subregion": "s13-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥)에서 **아래대정맥** 계통에 해당하는 번호핀 5, 15, 16, 17, 33 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 아래대정맥 / 15. 콩팥정맥 / 16. 오른생식샘정맥 · 오른부신정맥 / 17. 허리정맥 · 오름허리정맥 / 33. 왼생식샘정맥 · 왼부신정맥",
+   "explanation": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다 정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다. 배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**. 왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s13-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s13-vessel",
+     "page": null,
+     "section": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -12147,6 +12469,302 @@ window.MEDKOS_ANATOMY = {
      "section": "응용과제 — 골반바닥손상·episiotomy"
     }
    ]
+  },
+  {
+   "id": "anatomy-2026-0658",
+   "style": "layer-order",
+   "session": 13,
+   "region": "head",
+   "subregion": "scalp",
+   "examPhase": "tagging-2",
+   "stem": "머리덮개를 **겉에서 속으로** 다섯 층 쓰시오. 그 중 ① 머리덮개를 벗길 때 **갈라 들어가는 층**, ② 감염이 머리뼈 안으로 번지는 **위험층**은 각각 어느 층이며, ②가 위험한 **이유**를 한 줄로 쓰시오.",
+   "choices": null,
+   "answer": "**순서** · ① **피부 (skin)** → ② **치밀결합조직 (dense connective tissue)** → ③ **머리덮개널힘줄 (epicranial aponeurosis)** → ④ **성긴결합조직 (loose areolar tissue)** → ⑤ **머리뼈막 (pericranium)** · **벗기는 층 = 위험층 = ④ 성긴결합조직** · **이유** — 이 층을 지나는 **도출정맥 (emissary v.)** 에 판막이 없어 감염이 **경막정맥굴**까지 번진다",
+   "explanation": "SCALP 앞 세 층(피부·치밀·널힘줄)은 한 덩어리로 붙어 움직인다. 그래서 머리덮개는 ==성긴결합조직==에서 통째로 벗겨지고, 두피 박리 외상도 여기서 일어난다.\n\n같은 층이 위험층인 이유는 ==도출정맥==이다. 머리덮개 정맥과 경막정맥굴을 잇는데 판막이 없어 감염이 안쪽으로 흐를 수 있다.\n\n반대로 ==치밀결합조직==은 혈관이 섬유에 붙잡혀 있어 찢기면 오그라들지 못하고 피가 많이 난다 — '출혈층'과 '위험층'을 바꿔 쓰는 실수가 흔하다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "머리덮개 벗기기 · 머리덮개의 층"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0659",
+   "style": "distinction",
+   "session": 13,
+   "region": "head",
+   "subregion": "cranial-cavity",
+   "examPhase": "tagging-2",
+   "stem": "관자놀이점 부위를 맞은 뒤 잠깐 멀쩡하다가 의식이 나빠진 환자의 CT에서 **볼록렌즈 모양** 혈종이 보인다. ① 찢어진 **혈관 이름**, ② 혈액이 고인 **자리**(어느 구조와 어느 구조 사이), ③ 초승달 모양 혈종과 비교해 **찢어지는 혈관의 종류**가 어떻게 다른지 쓰시오.",
+   "choices": null,
+   "answer": "① **중간뇌막동맥 (middle meningeal a.)** · ② **머리뼈 속면과 뇌경막(뼈막층) 사이** = **경막바깥혈종 (epidural hematoma)** · ③ 초승달 = **경막밑혈종 (subdural hematoma)** — **경막과 거미막 사이**, 찢어지는 것은 **다리정맥(대뇌정맥, bridging/cerebral v.)** 즉 **정맥**이다 (경막바깥 = 동맥 · 경막밑 = 정맥)",
+   "explanation": "==관자놀이점==은 네 뼈가 만나는 가장 얇은 곳이고 그 속면 홈을 ==중간뇌막동맥==이 지난다. 동맥압이 단단히 붙은 경막을 뼈에서 떼어 내며 고이므로 경계가 봉합에서 멈춘 **볼록렌즈**가 된다.\n\n머리에서는 경막 뼈막층이 곧 머리뼈 속면의 뼈막이라 ==경막바깥공간==은 정상에서 없다 — 출혈이 만들어 내는 공간이다(척주관과 반대).\n\n경막밑혈종은 대뇌 표면에서 정맥굴로 건너가는 ==대뇌정맥==이 찢어져 경막 수막층과 거미막 사이로 퍼진다. 정맥압이라 천천히, 봉합을 넘어 **초승달** 모양으로 넓게 퍼진다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "뇌막 · 머리덮개뼈 분리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0660",
+   "style": "branch-tree",
+   "session": 13,
+   "region": "head",
+   "subregion": "cranial-cavity",
+   "examPhase": "tagging-2",
+   "stem": "뇌척수액이 거미막과립을 통해 들어간 정맥혈이 **위시상정맥굴에서 속목정맥까지** 가는 경로를 굴 이름으로 순서대로 쓰시오. 또 **아래시상정맥굴**이 이 경로에 합류하기 전에 거치는 굴과, 굴이 속목정맥이 되는 **머리뼈 구멍**을 쓰시오.",
+   "choices": null,
+   "answer": "**경로** · **위시상정맥굴 (sup. sagittal sinus)** → **정맥굴합류 (confluence of sinuses)** → **가로정맥굴 (transverse sinus)** → **구불정맥굴 (sigmoid sinus)** → **속목정맥 (internal jugular v.)** · **아래시상정맥굴**은 **큰대뇌정맥**과 합쳐 **곧은정맥굴 (straight sinus)** 이 되어 정맥굴합류로 · **구멍** — **목정맥구멍 (jugular foramen)** (그 자리의 부푼 곳이 위목정맥팽대)",
+   "explanation": "경막정맥굴은 ==경막 뼈막층과 수막층 사이==에 있는 판막 없는 정맥 통로다. 큰 줄기는 한 줄이다: 위시상 → 합류 → 가로 → 구불 → 속목정맥.\n\n나머지 굴은 이 줄에 **붙는다**. 대뇌낫 아래모서리의 ==아래시상정맥굴==은 ==곧은정맥굴==을 거쳐 합류로, 소뇌낫의 뒤통수정맥굴도 합류로 간다. 해면정맥굴은 위·아래바위정맥굴로 가로–구불 경계와 속목정맥에 따로 들어간다.\n\n==거미막과립==은 위시상정맥굴과 그 양옆 ==가쪽정맥주머니==로 튀어나와 뇌척수액을 정맥으로 돌려보낸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "경막정맥굴 · 뇌막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0661",
+   "style": "relation",
+   "session": 13,
+   "region": "head",
+   "subregion": "cranial-cavity",
+   "examPhase": "tagging-2",
+   "stem": "코 옆 종기를 짠 뒤 해면정맥굴 혈전이 생긴 환자가 **가장 먼저 한쪽 눈을 바깥으로 돌리지 못했다**. ① 해면정맥굴 **가쪽벽**을 위에서 아래로 지나는 신경 넷, ② **굴 속**을 지나는 구조 둘을 쓰고, ③ 가장 먼저 마비된 신경과 그 이유, ④ 얼굴 감염이 굴로 들어오는 **정맥 경로**를 쓰시오.",
+   "choices": null,
+   "answer": "① **눈돌림신경 (CN III)** → **도르래신경 (CN IV)** → **눈신경 (V1)** → **위턱신경 (V2)** · ② **속목동맥 (internal carotid a.)** + **갓돌림신경 (abducens n., CN VI)** · ③ **갓돌림신경** — 벽에 싸이지 않고 **굴 속 속목동맥 옆**에 떠 있어 가장 먼저 눌린다 → 가쪽곧은근 마비 · ④ 얼굴정맥 → **위눈정맥 (superior ophthalmic v.)** → 해면정맥굴 (판막 없음)",
+   "explanation": "해면정맥굴은 안장 양옆의 정맥 그물이다. 벽에 박힌 신경 넷(III·IV·V1·V2)은 경막에 보호받지만, ==갓돌림신경==은 ==속목동맥==과 함께 굴 **속**을 지나서 혈전·동맥류에 가장 먼저 다친다.\n\n얼굴 '위험삼각'(윗입술·코 둘레) 감염은 얼굴정맥 → ==위눈정맥==(위눈확틈새, 온힘줄고리 밖)으로 거슬러 들어간다. 판막이 없기 때문이다.\n\n벽의 순서는 '위에서 아래로 번호 순' — III, IV, V1, V2 — 로 외우면 된다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "경막정맥굴 · 눈확속의 구조물"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0662",
+   "style": "relation",
+   "session": 13,
+   "region": "head",
+   "subregion": "orbit",
+   "examPhase": "tagging-2",
+   "stem": "위눈확틈새를 지나는 구조 가운데 **온힘줄고리(common tendinous ring) 밖**으로 들어오는 신경은?",
+   "choices": [
+    "A. 코섬모체신경 (nasociliary n.)",
+    "B. 도르래신경 (trochlear n.)",
+    "C. 갓돌림신경 (abducens n.)",
+    "D. 눈돌림신경 아래갈래 (inferior division of oculomotor n.)"
+   ],
+   "answer": "B",
+   "explanation": "위눈확틈새 중 고리 **밖**으로는 ==눈물샘신경 · 이마신경 · 도르래신경==(LFT)과 ==위눈정맥==이, 고리 **안**으로는 ==눈돌림신경 위·아래갈래 · 코섬모체신경 · 갓돌림신경==이 들어온다. 시각신경관(시각신경 + 눈동맥)도 고리 안이다.\n\n보기 A·C·D는 모두 고리 안. 도르래신경은 고리 밖에서 위로 돌아 ==위빗근==에 붙는다 — 그래서 곧은근 원뿔 안에 약을 넣는 구후마취 뒤에도 위빗근만 움직일 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "눈확속의 구조물 · 머리뼈 바닥면"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0663",
+   "style": "course-tracing",
+   "session": 13,
+   "region": "head",
+   "subregion": "orbit",
+   "examPhase": "tagging-2",
+   "stem": "섬모체신경절 부교감 작용(응용과제). ① 섬모체신경절에 **부교감 섬유를 대 주는 뇌신경과 그 갈래**, ② 신경절을 떠나 안구로 가는 **신경 이름**, ③ 그 신경이 맡는 **근육 둘과 작용**을 쓰시오. ④ 같은 신경절을 **시냅스 없이** 지나는 섬유 두 종류와 각각의 표적도 쓰시오.",
+   "choices": null,
+   "answer": "① **눈돌림신경 (CN III) 아래갈래** — 섬모체신경절 부교감뿌리 · ② **짧은섬모체신경 (short ciliary nn.)** · ③ **동공조임근 (sphincter pupillae)** = 축동 · **섬모체근 (ciliary m.)** = 수정체를 두껍게(가까이 보기, 조절) · ④ **교감 섬유**(속목동맥신경얼기) → **동공확대근** / **감각 섬유**(코섬모체신경, V1) → **각막·홍채** — 둘 다 신경절에서 갈아타지 않는다",
+   "explanation": "섬모체신경절은 ==시각신경 가쪽==, 눈확 뒤쪽에 붙은 작은 부교감 신경절이다. 여기서 **갈아타는 것은 부교감뿐**이다.\n\n=> 눈돌림신경 아래갈래 → 섬모체신경절(시냅스) → 짧은섬모체신경 → 동공조임근 · 섬모체근\n\n교감(동공확대근)과 감각(각막)은 신경절을 통과만 하거나 ==긴섬모체신경==(코섬모체신경 가지)으로 따로 들어간다. 그래서 각막반사의 들신경은 V1(코섬모체), 날신경은 VII(눈둘레근)이다.\n\n동공반사: 빛 → II → 중간뇌 → 양쪽 III → 섬모체신경절 → 동공조임근. III 손상 = 그 눈만 안 줄어든다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "눈확속의 구조물"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 13회차",
+     "page": null,
+     "section": "응용과제 — 섬모체신경절 부교감 작용"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0664",
+   "style": "distinction",
+   "session": 13,
+   "region": "head",
+   "subregion": "orbit",
+   "examPhase": "tagging-2",
+   "stem": "바깥눈근육과 그 지배신경의 짝으로 **옳지 않은** 것은?",
+   "choices": [
+    "A. 가쪽곧은근 — 갓돌림신경",
+    "B. 위빗근 — 도르래신경",
+    "C. 아래빗근 — 도르래신경",
+    "D. 위눈꺼풀올림근 — 눈돌림신경 위갈래"
+   ],
+   "answer": "C",
+   "explanation": "==LR6 · SO4 · 나머지 R3== — 가쪽곧은근은 갓돌림신경(VI), 위빗근은 도르래신경(IV), 나머지(위·아래·안쪽곧은근, ==아래빗근==, 위눈꺼풀올림근)는 눈돌림신경(III)이다.\n\n==아래빗근==은 눈돌림신경 **아래갈래**가 맡는다. 같은 아래갈래가 섬모체신경절 부교감뿌리도 낸다. 위눈꺼풀올림근은 위곧은근과 함께 **위갈래**.\n\n빗근은 이름과 반대로 움직인다 — 위빗근은 모은 눈을 **아래로**, 아래빗근은 **위로**.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "눈확속의 구조물 · 눈확 앞모습"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0665",
+   "style": "branch-tree",
+   "session": 13,
+   "region": "abdomen",
+   "subregion": "posterior-abdominal-wall",
+   "examPhase": "tagging-2",
+   "stem": "배대동맥 가지를 **앞 홑가지 · 옆 짝가지 · 뒤 짝가지 · 끝가지**로 나누어 쓰고, 앞 홑가지 셋에는 **척추 높이**를 붙이시오. 또 부신으로 가는 동맥 **셋**이 각각 **어느 동맥에서** 나오는지 쓰시오.",
+   "choices": null,
+   "answer": "**앞 홑가지** · **복강동맥 (celiac trunk) T12** · **위창자간막동맥 (SMA) L1** · **아래창자간막동맥 (IMA) L3** · **옆 짝가지** · **아래가로막동맥 (inf. phrenic a.)** · **중간부신동맥 (middle suprarenal a.)** · **콩팥동맥 (renal a.)** · **고환·난소동맥 (gonadal a.)** · **뒤 짝가지** · **허리동맥 (lumbar aa.) 4쌍** · **끝가지** · **온엉덩동맥 (common iliac a.) L4** + **정중엉치동맥 (median sacral a.)** · **부신동맥 셋** — **위부신동맥 = 아래가로막동맥** · **중간부신동맥 = 배대동맥** · **아래부신동맥 = 콩팥동맥**",
+   "explanation": "배대동맥은 ==T12 대동맥구멍==으로 들어와 ==L4==에서 갈린다. 가지는 방향으로 셋, 높이로 외운다.\n\n- 앞 홑 = 창자 셋(앞·중간·뒤창자): T12 · L1 · L3\n- 옆 짝 = 가로막·부신·콩팥·생식샘 — 위에서 아래 순서 그대로\n- 뒤 짝 = 허리동맥\n\n부신은 **세 층에서** 피를 받는다: 위(아래가로막동맥) · 가운데(대동맥 직접) · 아래(콩팥동맥). 정맥은 반대로 **하나**뿐 — 오른쪽은 아래대정맥, 왼쪽은 왼콩팥정맥.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "콩팥단면(배대동맥 가지) · 뒤배벽의 혈관"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0666",
+   "style": "clinical-application",
+   "session": 13,
+   "region": "abdomen",
+   "subregion": "posterior-abdominal-wall",
+   "examPhase": "tagging-2",
+   "stem": "젊은 남성이 **왼쪽에만** 정계정맥류와 현미경적 혈뇨가 있다. ① 왼생식샘정맥이 들어가는 정맥, ② 그 정맥이 아래대정맥으로 가며 **사이에 끼일 수 있는 두 동맥**, ③ 같은 정맥으로 들어가는 **다른 정맥 하나**를 쓰고, ④ 오른쪽 생식샘정맥은 어디로 가는지 비교하시오.",
+   "choices": null,
+   "answer": "① **왼콩팥정맥 (left renal v.)** · ② **위창자간막동맥 (SMA)** 과 **배대동맥 (abdominal aorta)** 사이 — 호두까기(nutcracker) · ③ **왼부신정맥 (left suprarenal v.)** · ④ **오른생식샘정맥은 아래대정맥으로 곧장** 들어간다(오른부신정맥도 마찬가지)",
+   "explanation": "아래대정맥은 대동맥 **오른쪽**에 있다. 그래서 ==왼콩팥정맥==은 길고, ==대동맥 앞 · 위창자간막동맥 밑==을 건너야 대정맥에 닿는다.\n\n왼쪽 정맥 둘(==왼생식샘정맥==, ==왼부신정맥==)은 이 긴 왼콩팥정맥에 직각으로 들어간다. 두 동맥 사이에서 왼콩팥정맥이 눌리면 그 압력이 왼생식샘정맥으로 전해져 **왼쪽 정계정맥류**와 콩팥 울혈(혈뇨)이 생긴다.\n\n콩팥문에서는 정맥이 **맨 앞**이다(VAP) — 오른콩팥**동맥**이 아래대정맥 **뒤**를 지나는 것과 짝으로 기억한다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "아래대정맥 · 콩팥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0667",
+   "style": "relation",
+   "session": 13,
+   "region": "abdomen",
+   "subregion": "diaphragm",
+   "examPhase": "tagging-2",
+   "stem": "가로막의 **세 큰 구멍**을 높이(T)와 함께 쓰고, 각 구멍을 지나는 구조를 쓰시오. 또 ① **중심널힘줄**에 있는 구멍, ② **오른다리 근육섬유**가 감싸는 구멍, ③ 두 다리 **뒤**에 있어 숨쉬어도 눌리지 않는 구멍이 각각 어느 것인지 밝히시오.",
+   "choices": null,
+   "answer": "**대정맥구멍 (caval opening) T8** — 아래대정맥 · 오른가로막신경 가지 · **식도구멍 (esophageal hiatus) T10** — 식도 · 앞·뒤미주신경줄기 · **대동맥구멍 (aortic hiatus) T12** — 대동맥 · 가슴림프관 · 홀정맥 · ① **대정맥구멍** · ② **식도구멍** · ③ **대동맥구멍**",
+   "explanation": "'I ate(8) 10 eggs at 12' — 대정맥(T8) · 식도(T10) · 대동맥(T12).\n\n자리가 기능을 설명한다. ==대정맥구멍==은 ==중심널힘줄==에 뚫려 있어 들숨에 가로막이 수축하면 오히려 **넓어져** 정맥 귀환을 돕는다. ==식도구멍==은 ==오른다리== 근육섬유가 감싸 들숨 때 식도를 조여 역류를 막는다(아래식도조임근을 돕는다). ==대동맥구멍==은 근육이 아니라 두 다리와 정중활꼴인대 **뒤**라 호흡에 눌리지 않는다.\n\n작은 통로도 짝으로: ==안쪽활꼴인대==(큰허리근 위) 뒤로 교감줄기, ==가쪽활꼴인대==(허리네모근 위) 뒤로 갈비밑신경.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0668",
+   "style": "relation",
+   "session": 13,
+   "region": "abdomen",
+   "subregion": "posterior-abdominal-wall",
+   "examPhase": "tagging-2",
+   "stem": "뒤배벽에서 큰허리근을 들추지 않고 앞에서 보았을 때 **큰허리근 앞면을 뚫고** 나와 그 위를 내려가는 신경은?",
+   "choices": [
+    "A. 넙다리신경 (femoral n.)",
+    "B. 폐쇄신경 (obturator n.)",
+    "C. 음부넙다리신경 (genitofemoral n.)",
+    "D. 가쪽넙다리피부신경 (lateral cutaneous n. of thigh)"
+   ],
+   "answer": "C",
+   "explanation": "허리신경얼기는 ==큰허리근 속==에서 만들어져 나오는 자리가 셋으로 갈린다.\n\n- **가쪽모서리**(넷): 엉덩아랫배 · 엉덩고샅 · 가쪽넙다리피부 · 넙다리신경\n- **앞면**(하나): ==음부넙다리신경== (L1–L2)\n- **안쪽모서리**(하나): ==폐쇄신경== (L2–L4)\n\n음부넙다리신경의 ==음부가지==는 깊은샅굴구멍으로 들어가 **고환올림근**을 맡는다 — 고환올림근반사의 날신경이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "허리신경얼기 · 뒤배벽의 근육"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0669",
+   "style": "layer-order",
+   "session": 13,
+   "region": "abdomen",
+   "subregion": "kidney",
+   "examPhase": "tagging-2",
+   "stem": "뒤배벽에서 콩팥을 꺼낼 때 ① 콩팥을 싸는 층을 **겉에서 속으로** 네 층 쓰고, ② 콩팥문에서 **앞에서 뒤로** 놓인 세 구조를 쓰시오. ③ 콩팥 단면에서 소변이 콩팥유두에서 요관까지 가는 길을 쓰시오.",
+   "choices": null,
+   "answer": "① **콩팥곁지방체 (pararenal fat)** → **콩팥근막 (renal fascia)** → **콩팥주위지방피막 (perirenal fat capsule)** → **섬유피막 (fibrous capsule)** · ② **콩팥정맥 (renal v.)** → **콩팥동맥 (renal a.)** → **콩팥깔때기 (renal pelvis)** (VAP) · ③ **콩팥유두 (renal papilla)** → **작은콩팥잔 (minor calyx)** → **큰콩팥잔 (major calyx)** → **콩팥깔때기** → 요관",
+   "explanation": "콩팥근막은 ==부신까지 함께== 싸지만 부신은 얇은 막으로 따로 칸이 나 있다. 그래서 콩팥이 내려앉아도(유주신) 부신은 제자리에 남는다.\n\n콩팥문의 ==VAP==는 앞에서 뒤로의 순서다. 해부 실습에서는 뒤배벽에서 **앞으로** 들어가므로 정맥이 가장 먼저 보이고, 깔때기는 동맥 뒤에서 찾는다.\n\n단면에서 ==콩팥피라밋==(속질)의 끝이 ==콩팥유두==, 피라밋 사이로 겉질이 내려온 것이 ==콩팥기둥==, 잔·깔때기가 들어앉은 오목이 ==콩팥굴==이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "12차시(0925) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "콩팥 · 콩팥단면"
+    }
+   ]
   }
  ],
  "guides": [
@@ -13180,9 +13798,186 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0657",
+   "session": 13,
+   "title": "13회차 서브노트 — 경막 두 층 사이 · 큰허리근 속",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 머리덮개",
+    "2. 뇌막과 경막주름",
+    "3. 경막정맥굴",
+    "4. 머리뼈 바닥의 구멍",
+    "5. 눈꺼풀과 눈물기관",
+    "6. 눈확 속의 구조물",
+    "7. 안구",
+    "8. 콩팥과 부신",
+    "9. 배대동맥과 아래대정맥",
+    "10. 가로막",
+    "11. 뒤배벽의 근육과 허리신경얼기",
+    "12. 복막 · 응용과제",
+    "13. 근육표 종합 (13회차)",
+    "14. 예습시험 체크리스트 10 (수업당 10문제 대비)"
+   ],
+   "figs": [
+    "tree-s13-bundle-labeled.svg",
+    "tree-s13-nerve-labeled.svg",
+    "tree-s13-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "머리덮개는 SCALP",
+     "full": "Skin · Connective tissue(치밀) · Aponeurosis(널힘줄) · Loose areolar tissue(성긴) · Pericranium(머리뼈막)",
+     "note": "==성긴결합조직== = 위험층 — 도출정맥이 감염을 머리뼈 안으로 끌고 간다"
+    },
+    {
+     "key": "경막바깥혈종은 동맥, 경막밑혈종은 정맥",
+     "full": "바깥 = 중간뇌막동맥(관자놀이점) · 볼록렌즈 · 의식청명기 / 밑 = 다리정맥(대뇌정맥) · 초승달",
+     "note": "==관자놀이점(pterion)== — 뼈가 가장 얇고 그 밑을 중간뇌막동맥이 지난다"
+    },
+    {
+     "key": "정맥굴 한 줄 — 위시상 → 합류 → 가로 → 구불 → 속목",
+     "full": "아래시상 + 큰대뇌정맥 → 곧은정맥굴 → 합류 / 해면 → 위·아래바위정맥굴",
+     "note": "==목정맥구멍==에서 구불정맥굴이 속목정맥이 된다"
+    },
+    {
+     "key": "해면정맥굴 — 벽에 3·4·V1·V2, 속에 ICA와 6",
+     "full": "가쪽벽 위에서 아래로 눈돌림 · 도르래 · 눈신경 · 위턱신경 / 굴 속 속목동맥 + 갓돌림신경",
+     "note": "굴 속에 떠 있는 ==갓돌림신경==이 가장 먼저 마비된다"
+    },
+    {
+     "key": "눈근육 신경 LR6 · SO4 · 나머지 R3",
+     "full": "가쪽곧은근=갓돌림(VI) · 위빗근=도르래(IV) · 나머지 넷 + 위눈꺼풀올림근=눈돌림(III)",
+     "note": "빗근은 이름과 반대로 움직인다 — ==위빗근==은 눈을 아래(안쪽 볼 때)로"
+    },
+    {
+     "key": "섬모체신경절에서 갈아타는 건 부교감뿐",
+     "full": "눈돌림신경 아래갈래 → 섬모체신경절(시냅스) → 짧은섬모체신경 → 동공조임근 · 섬모체근",
+     "note": "응용과제 — 교감(동공확대근)과 감각(각막)은 ==긴섬모체신경==이나 신경절을 그냥 지나간다"
+    },
+    {
+     "key": "가로막 구멍 8 · 10 · 12",
+     "full": "T8 대정맥구멍(중심널힘줄) · T10 식도구멍(오른다리) · T12 대동맥구멍(두 다리 뒤)",
+     "note": "I ate(8) 10 eggs at 12 — 대정맥 · 식도 · 대동맥"
+    },
+    {
+     "key": "콩팥문은 앞에서 VAP",
+     "full": "정맥(Vein) · 동맥(Artery) · 깔때기(Pelvis) — 앞에서 뒤로",
+     "note": "==오른콩팥동맥==은 아래대정맥 **뒤**, ==왼콩팥정맥==은 대동맥 **앞**을 지난다"
+    },
+    {
+     "key": "왼쪽 정맥은 왼콩팥정맥으로 돌아간다",
+     "full": "왼생식샘정맥 · 왼부신정맥 → 왼콩팥정맥 → 아래대정맥 / 오른쪽 둘은 아래대정맥으로 곧장",
+     "note": "그래서 ==왼쪽 정계정맥류==가 흔하고, 왼콩팥정맥이 위창자간막동맥에 끼이면 더 심해진다(nutcracker)"
+    },
+    {
+     "key": "허리신경얼기는 큰허리근 속 — 가쪽 넷 · 앞 하나 · 안쪽 하나",
+     "full": "가쪽모서리 = 엉덩아랫배 · 엉덩고샅 · 가쪽넙다리피부 · 넙다리 / 앞면 = 음부넙다리 / 안쪽모서리 = 폐쇄",
+     "note": "뿌리 순서 I·I·G·L·F·O — L1 · L1 · L1–2 · L2–3 · L2–4 · L2–4"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-09-29",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "head",
+    "abdomen"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0442"
+    ],
+    "branch": [
+     "anatomy-2026-0443"
+    ],
+    "relation": [
+     "anatomy-2026-0001",
+     "anatomy-2026-0003"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0556",
+    "anatomy-2026-0521",
+    "anatomy-2026-0663",
+    "anatomy-2026-0557",
+    "anatomy-2026-0517",
+    "anatomy-2026-0518",
+    "anatomy-2026-0497",
+    "anatomy-2026-0601",
+    "anatomy-2026-0666",
+    "anatomy-2026-0385",
+    "anatomy-2026-0598",
+    "anatomy-2026-0519"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0046",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0040",
+     "anatomy-2026-0047",
+     "anatomy-2026-0362",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039"
+    ],
+    "d-14": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-09-28",
    "phase": "t2-new",
@@ -15867,103 +16662,6 @@ window.MEDKOS_ANATOMY = {
     "relation": [
      "anatomy-2026-0029",
      "anatomy-2026-0030"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0157",
-    "anatomy-2026-0162",
-    "anatomy-2026-0385",
-    "anatomy-2026-0154",
-    "anatomy-2026-0159",
-    "anatomy-2026-0043",
-    "anatomy-2026-0038",
-    "anatomy-2026-0161",
-    "anatomy-2026-0378",
-    "anatomy-2026-0398",
-    "anatomy-2026-0156",
-    "anatomy-2026-0377"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0398",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-3": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0380",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-7": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-14": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0004",
-     "anatomy-2026-0047",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-08-30",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "thorax",
-    "head"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0035"
-    ],
-    "layer": [
-     "anatomy-2026-0029"
-    ],
-    "branch": [
-     "anatomy-2026-0030"
-    ],
-    "relation": [
-     "anatomy-2026-0032",
-     "anatomy-2026-0036"
     ]
    },
    "questions": [

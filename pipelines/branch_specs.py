@@ -1909,4 +1909,210 @@ SPECS: dict[str, dict] = {
                "**중간가쪽(mediolateral)** 절개는 그 위험을 피한다", star=True, terminal=True)]),
     ]),
 },
+
+# ── 13회차 (2026-10-01) 머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽 ──
+"s13-nerve": {
+    "title": "눈확의 신경과 허리신경얼기",
+    "en": "nerves of the orbit & the lumbar plexus",
+    "subtitle": "13회차 · 눈확은 뇌신경 넷(II·III·IV·VI)과 V1 가지, 뒤배벽은 L1–L4 앞가지가 큰허리근을 뚫고 나온다",
+    "kind": "nerve",
+    "source": "13회차 실습주제(머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽) + "
+              "인제스트 섹션 a2-s12 §눈확속의 구조물 · §눈확 앞모습 · §경막정맥굴 · §뒤배벽의 근육 · §허리신경얼기",
+    "footer": [
+        "눈근육 신경은 **LR6 · SO4 · 나머지 R3** — 가쪽곧은근=갓돌림, 위빗근=도르래, 나머지 전부 눈돌림.",
+        "섬모체신경절에서 **시냅스하는 것은 부교감(눈돌림신경) 하나뿐**이다 — 교감·감각은 그냥 지나간다.",
+        "허리신경얼기는 **큰허리근 속에서** 만들어진다 — 가쪽모서리 넷 · 앞면 하나(음부넙다리) · 안쪽모서리 하나(폐쇄).",
+    ],
+    "root": _n("13회차의 신경", children=[
+        _n("눈확의 신경", "nerves of the orbit", "머리뼈 바닥의 구멍 둘(시각신경관 · 위눈확틈새)로 들어온다",
+           star=True, children=[
+            _n("시각신경", "optic n. (CN II)", "**시각신경관**으로 — 눈동맥과 함께 · 뇌막이 싸고 있다",
+               star=True, terminal=True),
+            _n("눈돌림신경", "oculomotor n. (CN III)", "온힘줄고리 **안**으로 들어와 위·아래 두 갈래",
+               star=True, children=[
+                _n("위갈래", "superior division", "위곧은근 · **위눈꺼풀올림근**", star=True, terminal=True),
+                _n("아래갈래", "inferior division", "안쪽곧은근 · 아래곧은근 · 아래빗근",
+                   star=True, children=[
+                    _n("섬모체신경절 부교감뿌리", "parasympathetic root to ciliary ganglion",
+                       "**여기서만 시냅스** → 짧은섬모체신경 → 동공조임근 · 섬모체근(가까이 보기)",
+                       star=True, terminal=True)])]),
+            _n("도르래신경", "trochlear n. (CN IV)", "온힘줄고리 **밖** · 위빗근 하나",
+               star=True, terminal=True),
+            _n("갓돌림신경", "abducens n. (CN VI)", "온힘줄고리 **안** · 가쪽곧은근 하나 — 해면정맥굴 **속**을 지난다",
+               star=True, terminal=True),
+            _n("눈신경 (V1)", "ophthalmic n.", "삼차신경 첫째 가지 · 감각 — 셋으로 갈린다",
+               star=True, children=[
+                _n("이마신경", "frontal n.", "눈확천장 바로 밑 · 가장 먼저 보인다", star=True, children=[
+                    _n("눈확위신경", "supraorbital n.", "더 크고 곧게 · **눈확위구멍/패임**으로 이마 피부",
+                       star=True, terminal=True),
+                    _n("도르래위신경", "supratrochlear n.", "더 안쪽 · 이마 안쪽 피부", terminal=True)]),
+                _n("눈물샘신경", "lacrimal n.", "가쪽벽을 따라 눈물샘으로 — 분비 섬유는 얼굴신경에서 얻어 탄다",
+                   star=True, terminal=True),
+                _n("코섬모체신경", "nasociliary n.", "온힘줄고리 **안** · 시각신경을 넘어 안쪽으로",
+                   star=True, children=[
+                    _n("긴섬모체신경", "long ciliary nn.", "**각막 감각** + 동공확대근 교감 섬유 — 각막반사 들신경",
+                       star=True, terminal=True),
+                    _n("뒤벌집신경 · 앞벌집신경", "post. / ant. ethmoidal nn.", "벌집굴 · 코안 · 코끝 피부", terminal=True),
+                    _n("도르래아래신경", "infratrochlear n.", "안쪽눈구석 피부", terminal=True)])]),
+        ]),
+        _n("뒤배벽의 신경", "nerves of the posterior abdominal wall", "L1–L4 앞가지 — 큰허리근 속에서 얼기를 만든다",
+           star=True, children=[
+            _n("갈비밑신경", "subcostal n. (T12)", "**가쪽활꼴인대 뒤**로 들어와 허리네모근 앞을 지난다",
+               star=True, terminal=True),
+            _n("엉덩아랫배신경", "iliohypogastric n. (L1)", "큰허리근 **가쪽모서리** · 두덩 위 피부",
+               star=True, terminal=True),
+            _n("엉덩고샅신경", "ilioinguinal n. (L1)", "가쪽모서리 · 샅굴을 지나 음낭/대음순 **앞쪽**",
+               star=True, terminal=True),
+            _n("음부넙다리신경", "genitofemoral n. (L1–L2)", "큰허리근 **앞면을 뚫고** 나오는 유일한 가지",
+               star=True, children=[
+                _n("음부가지", "genital br.", "깊은샅굴구멍 → **고환올림근**(고환올림근반사 날신경)",
+                   star=True, terminal=True),
+                _n("넙다리가지", "femoral br.", "넙다리삼각 피부", terminal=True)]),
+            _n("가쪽넙다리피부신경", "lat. cutaneous n. of thigh (L2–L3)",
+               "가쪽모서리 → 위앞엉덩뼈가시 안쪽 · 샅굴인대 밑 — 눌리면 이상감각넙다리통",
+               star=True, terminal=True),
+            _n("넙다리신경", "femoral n. (L2–L4)", "가쪽모서리 · 큰허리근과 엉덩근 **사이 고랑** — 얼기의 가장 큰 가지",
+               star=True, terminal=True),
+            _n("폐쇄신경", "obturator n. (L2–L4)", "큰허리근 **안쪽모서리** → 폐쇄관 · 넙다리 안쪽 칸",
+               star=True, terminal=True),
+            _n("허리교감줄기", "lumbar sympathetic trunk", "척추뼈몸통 앞가쪽 · **안쪽활꼴인대 뒤**로 들어온다",
+               children=[
+                _n("허리신경절 · 교통가지", "lumbar ganglia · rami communicantes",
+                   "흰교통가지는 **L1–L2까지만**", terminal=True)]),
+        ]),
+    ]),
+},
+
+"s13-vessel": {
+    "title": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥",
+    "en": "dural venous sinuses, ophthalmic a., abdominal aorta & IVC",
+    "subtitle": "13회차 · 머리의 정맥은 경막 두 층 사이 굴로 모이고, 뒤배벽에서는 대동맥 가지를 짝/홀·높이로 외운다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein"],
+    "source": "13회차 인제스트 섹션 a2-s12 §뇌막 · §경막정맥굴 · §눈확속의 구조물 · §콩팥단면 · "
+              "§아래대정맥 · §뒤배벽의 혈관",
+    "footer": [
+        "정맥굴의 흐름은 **위시상 → 합류 → 가로 → 구불 → 속목정맥** 한 줄 — 나머지는 이 줄에 붙는다.",
+        "배대동맥 가지는 **앞 홑(복강·위창자간막·아래창자간막) · 옆 짝(가로막·부신·콩팥·생식샘) · 뒤 짝(허리)**.",
+        "왼쪽 생식샘정맥·부신정맥은 **왼콩팥정맥으로**, 오른쪽은 **아래대정맥으로 곧장** 간다.",
+    ],
+    "root": _n("13회차의 혈관", children=[
+        _n("경막정맥굴", "dural venous sinuses", "**경막 뼈막층과 수막층 사이** · 판막이 없다",
+           kind="vein", star=True, children=[
+            _n("위시상정맥굴", "superior sagittal sinus", "대뇌낫 위모서리 · **거미막과립**으로 뇌척수액을 받는다",
+               kind="vein", star=True, children=[
+                _n("가쪽정맥주머니", "lateral lacunae", "굴 양옆 주머니 — 거미막과립이 여기로 튀어나온다",
+                   kind="vein", terminal=True)]),
+            _n("아래시상정맥굴 → 곧은정맥굴", "inf. sagittal → straight sinus",
+               "대뇌낫 아래모서리 → 큰대뇌정맥과 합쳐 대뇌낫·소뇌천막이 만나는 곳을 지난다",
+               kind="vein", star=True, terminal=True),
+            _n("정맥굴합류", "confluence of sinuses", "**속뒤통수뼈융기** — 위시상 · 곧은 · 뒤통수정맥굴이 모인다",
+               kind="vein", star=True, children=[
+                _n("가로정맥굴", "transverse sinus", "소뇌천막 뒤가쪽 모서리", kind="vein", star=True, children=[
+                    _n("구불정맥굴", "sigmoid sinus", "S자 · **목정맥구멍**에서 위목정맥팽대 → 속목정맥",
+                       kind="vein", star=True, terminal=True)])]),
+            _n("해면정맥굴", "cavernous sinus", "안장 양옆 · **위눈정맥**을 받는다(얼굴 위험삼각 감염 경로)",
+               kind="vein", star=True, children=[
+                _n("위바위정맥굴", "sup. petrosal sinus", "→ 가로·구불 경계", kind="vein", terminal=True),
+                _n("아래바위정맥굴", "inf. petrosal sinus", "→ 속목정맥", kind="vein", terminal=True)]),
+        ]),
+        _n("머리의 동맥", "arteries seen in this session", kind="artery", star=True, children=[
+            _n("중간뇌막동맥", "middle meningeal a.", "경막 **바깥** 뼈 홈 · **관자놀이점(pterion)** 밑 — 경막바깥혈종",
+               kind="artery", star=True, terminal=True),
+            _n("속목동맥", "internal carotid a.", "해면정맥굴 **속**을 지난다", kind="artery", star=True, children=[
+                _n("눈동맥", "ophthalmic a.", "**시각신경관**으로 시각신경 아래가쪽을 따라 들어온다",
+                   kind="artery", star=True, children=[
+                    _n("망막중심동맥", "central retinal a.", "시각신경 속으로 — **끝동맥**(막히면 실명)",
+                       kind="artery", star=True, terminal=True),
+                    _n("눈확위동맥 · 도르래위동맥", "supraorbital / supratrochlear aa.", "같은 이름 신경과 나란히 이마로",
+                       kind="artery", terminal=True),
+                    _n("눈물샘동맥", "lacrimal a.", "눈물샘신경과 가쪽벽으로", kind="artery", terminal=True)])]),
+        ]),
+        _n("배대동맥", "abdominal aorta", "**T12 대동맥구멍**으로 들어와 **L4**에서 갈린다",
+           kind="artery", star=True, children=[
+            _n("앞 홑가지", "unpaired visceral", kind="artery", star=True, children=[
+                _n("복강동맥", "celiac trunk (T12)", "앞창자 — 위·간·지라", kind="artery", star=True, terminal=True),
+                _n("위창자간막동맥", "SMA (L1)", "중간창자 · **왼콩팥정맥을 대동맥과 사이에 끼운다**",
+                   kind="artery", star=True, terminal=True),
+                _n("아래창자간막동맥", "IMA (L3)", "뒤창자", kind="artery", star=True, terminal=True)]),
+            _n("옆 짝가지", "paired lateral", kind="artery", star=True, children=[
+                _n("아래가로막동맥", "inf. phrenic a.", "가장 먼저 · **위부신동맥**을 낸다", kind="artery",
+                   star=True, terminal=True),
+                _n("중간부신동맥", "middle suprarenal a.", "대동맥에서 곧장", kind="artery", star=True, terminal=True),
+                _n("콩팥동맥", "renal a. (L1–L2)", "**아래부신동맥**을 낸다 · 오른쪽은 아래대정맥 **뒤**를 지난다 · 덧콩팥동맥 흔함",
+                   kind="artery", star=True, terminal=True),
+                _n("고환·난소동맥", "gonadal a. (L2)", "고환 → 깊은샅굴구멍 / 난소 → 온엉덩동맥 앞을 넘어 골반으로",
+                   kind="artery", terminal=True)]),
+            _n("뒤 짝가지 · 끝가지", "paired parietal & terminal", kind="artery", star=True, children=[
+                _n("허리동맥", "lumbar aa. (4쌍)", "척추뼈몸통 옆", kind="artery", terminal=True),
+                _n("정중엉치동맥", "median sacral a.", "갈림 바로 위 뒤에서 한 줄", kind="artery", terminal=True),
+                _n("온엉덩동맥", "common iliac a.", "→ 바깥엉덩동맥 · 속엉덩동맥", kind="artery", star=True,
+                   terminal=True)]),
+        ]),
+        _n("아래대정맥", "inferior vena cava", "**L5**에서 온엉덩정맥이 합쳐 대동맥 오른쪽을 오르고 **T8** 중심널힘줄을 지난다",
+           kind="vein", star=True, children=[
+            _n("콩팥정맥", "renal vv.", "**왼쪽이 길다** — 대동맥 앞·위창자간막동맥 밑을 지난다",
+               kind="vein", star=True, children=[
+                _n("왼생식샘정맥 · 왼부신정맥", "left gonadal / left suprarenal v.",
+                   "**왼콩팥정맥으로** 들어간다 — 왼쪽 정계정맥류가 흔한 이유", kind="vein", star=True, terminal=True)]),
+            _n("오른생식샘정맥 · 오른부신정맥", "right gonadal / right suprarenal v.", "아래대정맥으로 **곧장**",
+               kind="vein", star=True, terminal=True),
+            _n("허리정맥 · 오름허리정맥", "lumbar / ascending lumbar vv.", "오름허리정맥이 위로 **홀정맥계**와 잇는다",
+               kind="vein", terminal=True),
+        ]),
+    ]),
+},
+
+"s13-bundle": {
+    "title": "함께 지나는 것 — 다섯 자리",
+    "en": "five crowded places",
+    "subtitle": "13회차 · 머리덮개 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 — 순서가 그대로 태깅 문제다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "13회차 인제스트 섹션 a2-s12 §머리덮개의 층 · §뇌막 · §경막정맥굴 · §머리뼈 바닥면 · §눈확속의 구조물 · "
+              "§가로막 · §콩팥 · §콩팥단면 + SESSION_DETAILS 응용과제(섬모체신경절 부교감 작용)",
+    "footer": [
+        "머리덮개는 **SCALP** — 피부 · 치밀결합조직 · 널힘줄 · 성긴결합조직(위험층) · 머리뼈막.",
+        "해면정맥굴은 **벽에 III·IV·V1·V2, 속에 속목동맥과 VI** — 속에 있는 VI가 가장 먼저 다친다.",
+        "가로막 구멍은 **8 · 10 · 12** — 대정맥 · 식도 · 대동맥(I ate 10 eggs at 12).",
+    ],
+    "root": _n("다섯 자리", children=[
+        _n("머리덮개의 층", "layers of the scalp", "겉에서 속으로", star=True, children=[
+            _n("피부", "skin", "머리카락 · 땀샘", terminal=True),
+            _n("치밀결합조직", "dense connective tissue", "**혈관이 붙잡혀** 오그라들지 못한다 — 찢기면 많이 난다",
+               kind="artery", star=True, terminal=True),
+            _n("머리덮개널힘줄", "epicranial aponeurosis (galea)", "뒤통수이마근의 힘줄판 — 가로로 찢기면 벌어진다",
+               star=True, terminal=True),
+            _n("성긴결합조직", "loose areolar tissue", "**위험층** — 도출정맥으로 감염이 머리뼈 안까지",
+               kind="vein", star=True, terminal=True),
+            _n("머리뼈막", "pericranium", "봉합에서 뼈에 단단히 붙는다", terminal=True)]),
+        _n("해면정맥굴", "cavernous sinus", "안장 양옆의 정맥 그물", kind="vein", star=True, children=[
+            _n("가쪽벽 (위→아래)", "lateral wall", "**눈돌림 · 도르래 · 눈신경 · 위턱신경**", kind="nerve",
+               star=True, terminal=True),
+            _n("굴 속", "within the sinus", "**속목동맥 + 갓돌림신경** — VI가 동맥 바로 옆이라 먼저 마비",
+               kind="artery", star=True, terminal=True)]),
+        _n("눈확 입구와 온힘줄고리", "orbital openings & common tendinous ring", star=True, children=[
+            _n("시각신경관", "optic canal", "**시각신경 + 눈동맥**", kind="nerve", star=True, terminal=True),
+            _n("위눈확틈새 — 고리 밖", "SOF, outside the ring", "**눈물샘 · 이마 · 도르래신경 + 위눈정맥**",
+               kind="nerve", star=True, terminal=True),
+            _n("위눈확틈새 — 고리 안", "SOF, within the ring", "**눈돌림 위·아래갈래 · 코섬모체 · 갓돌림신경**",
+               kind="nerve", star=True, terminal=True)]),
+        _n("가로막 구멍", "diaphragmatic apertures", star=True, children=[
+            _n("대정맥구멍 (T8)", "caval opening", "**중심널힘줄** · 아래대정맥 + 오른가로막신경 가지", kind="vein",
+               star=True, terminal=True),
+            _n("식도구멍 (T10)", "esophageal hiatus", "**오른다리 근육섬유**가 감싼다 · 식도 + 미주신경줄기",
+               kind="nerve", star=True, terminal=True),
+            _n("대동맥구멍 (T12)", "aortic hiatus", "두 다리와 정중활꼴인대 **뒤** · 대동맥 + 가슴림프관 + 홀정맥",
+               kind="artery", star=True, terminal=True),
+            _n("안쪽·가쪽활꼴인대", "medial / lateral arcuate lig.", "안쪽 = 큰허리근 위(교감줄기) · 가쪽 = 허리네모근 위(갈비밑신경)",
+               star=True, terminal=True)]),
+        _n("콩팥문과 싸개", "renal hilum & coverings", star=True, children=[
+            _n("콩팥문 배열 (앞→뒤)", "hilum, anterior to posterior", "**정맥 · 동맥 · 깔때기** (VAP)",
+               kind="vein", star=True, terminal=True),
+            _n("싸개 (속→겉)", "coverings, inside out", "**섬유피막 → 콩팥주위지방 → 콩팥근막 → 콩팥곁지방**",
+               star=True, terminal=True),
+            _n("부신", "suprarenal gland", "콩팥근막 **안**, 콩팥과는 얇은 막으로 따로 · 오른쪽 세모 · 왼쪽 반달",
+               star=True, terminal=True)]),
+    ]),
+},
 }
