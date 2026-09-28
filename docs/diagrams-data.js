@@ -2,9 +2,81 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-09-29",
- "count": 104,
- "groups": 54,
+ "count": 110,
+ "groups": 57,
  "items": [
+  {
+   "file": "tree-s13-vessel-labeled.svg",
+   "base": "tree-s13-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥",
+   "date": "2026-09-29",
+   "bytes": 22528
+  },
+  {
+   "file": "tree-s13-vessel-quiz.svg",
+   "base": "tree-s13-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥",
+   "date": "2026-09-29",
+   "bytes": 16987
+  },
+  {
+   "file": "tree-s13-nerve-labeled.svg",
+   "base": "tree-s13-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "눈확의 신경과 허리신경얼기",
+   "date": "2026-09-29",
+   "bytes": 19582
+  },
+  {
+   "file": "tree-s13-nerve-quiz.svg",
+   "base": "tree-s13-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "눈확의 신경과 허리신경얼기",
+   "date": "2026-09-29",
+   "bytes": 14165
+  },
+  {
+   "file": "tree-s13-bundle-labeled.svg",
+   "base": "tree-s13-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "함께 지나는 것",
+   "date": "2026-09-29",
+   "bytes": 14340
+  },
+  {
+   "file": "tree-s13-bundle-quiz.svg",
+   "base": "tree-s13-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 13,
+   "unit": "13회차 · 머리·배",
+   "title": "함께 지나는 것",
+   "date": "2026-09-29",
+   "bytes": 11285
+  },
   {
    "file": "tree-s01-vessel-labeled.svg",
    "base": "tree-s01-vessel",
