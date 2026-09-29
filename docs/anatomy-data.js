@@ -13882,6 +13882,103 @@ window.MEDKOS_ANATOMY = {
  ],
  "daily": [
   {
+   "date": "2026-09-30",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "head",
+    "abdomen"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0442"
+    ],
+    "branch": [
+     "anatomy-2026-0443"
+    ],
+    "relation": [
+     "anatomy-2026-0001",
+     "anatomy-2026-0003"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0556",
+    "anatomy-2026-0521",
+    "anatomy-2026-0663",
+    "anatomy-2026-0557",
+    "anatomy-2026-0517",
+    "anatomy-2026-0518",
+    "anatomy-2026-0497",
+    "anatomy-2026-0601",
+    "anatomy-2026-0666",
+    "anatomy-2026-0385",
+    "anatomy-2026-0598",
+    "anatomy-2026-0519"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0556",
+     "anatomy-2026-0521",
+     "anatomy-2026-0663",
+     "anatomy-2026-0557",
+     "anatomy-2026-0517",
+     "anatomy-2026-0518",
+     "anatomy-2026-0497",
+     "anatomy-2026-0601",
+     "anatomy-2026-0666",
+     "anatomy-2026-0385",
+     "anatomy-2026-0598",
+     "anatomy-2026-0519"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-14": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
    "date": "2026-09-29",
    "phase": "t2-new",
    "examPhase": "tagging-2",
@@ -16633,103 +16730,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0043",
      "anatomy-2026-0015",
      "anatomy-2026-0157",
-     "anatomy-2026-0047",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-08-31",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "thorax",
-    "head"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0035"
-    ],
-    "layer": [
-     "anatomy-2026-0442"
-    ],
-    "branch": [
-     "anatomy-2026-0443"
-    ],
-    "relation": [
-     "anatomy-2026-0029",
-     "anatomy-2026-0030"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0157",
-    "anatomy-2026-0162",
-    "anatomy-2026-0385",
-    "anatomy-2026-0154",
-    "anatomy-2026-0159",
-    "anatomy-2026-0043",
-    "anatomy-2026-0038",
-    "anatomy-2026-0161",
-    "anatomy-2026-0378",
-    "anatomy-2026-0398",
-    "anatomy-2026-0156",
-    "anatomy-2026-0377"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0398",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-3": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0380",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-7": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ],
-    "d-14": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0004",
      "anatomy-2026-0047",
      "anatomy-2026-0045",
      "anatomy-2026-0048",

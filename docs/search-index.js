@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3111,
+  "total": 3112,
   "byType": {
    "kmle": 1216,
+   "anatomy": 768,
    "usmle": 168,
    "paper": 689,
-   "anatomy": 767,
    "imaging": 164,
    "concept": 90,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 767,
+   "Anatomy": 768,
    "Cardiology": 226,
    "Nephrology": 182,
    "Infectious Disease": 163,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2087,
+   "high": 2088,
    "medium": 975,
    "low": 49
   },
@@ -710,6 +710,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1216.md",
    "snippet": "67세 남자가 3시간 전 갑자기 시작된 두근거림으로 119 구급차를 타고 응급실에 왔다. 1시간 전부터 어지럽고 가슴이 답답하다고 하였다. 고혈압으로 암로디핀을 먹고 있으며 이전에 두근거림을 느낀 적은 없다. 최근 발열·설사·흑색변은 없었다. 식은땀을 흘리고, 이름을 불러야 눈을 뜨며 질문에 느리게 답한다. 손발이 차고 축축하며, 양쪽 폐 아래쪽에서 수포음이 들린다. 도착 직후 찍은 심전도는 그림과 같다. 말초 정맥로 두 개를",
    "text": "Cardiology Atrial Fibrillation with Hypotension and Confusion atrial-fibrillation rapid-ventricular-response hemodynamic-instability tachyarrhythmia ecg KMLE 2026 / Claude 67세 남자가 3시간 전 갑자기 시작된 두근거림으로 119 구급차를 타고 응급실에 왔다. 1시간 전부터 어지럽고 가슴이 답답하다고 하였다. 고혈압으로 암로디핀을 먹고 있으며 이전에 두근거림을 느낀 적은 없다. 최근 발열·설사·흑색변은 없었다. 식은땀을 흘리고, 이름을 불러야 눈을 뜨며 질문에 느리게 답한다. 손발이 차고 축축하며, 양쪽 폐 아래쪽에서 수포음이 들린다. 도착 직후 찍은 심전도는 그림과 같다. 말초 정맥로 두 개를 확보하고 산소를 주고 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 딜티아젬 정맥 주사 B. 아미오다론 정맥 주입 C. 헤파린 투여 후 경식도 심초음파 D. 동기화 심율동전환 E. 비동기화 전기 제세동 심전도는 P파 없이 RR 간격이 불규칙한 빠른 심방세동이다. 수축기 혈압 78·의식 저하·차고 축축한 사지·폐부종은 빠른 심실 반응 때문에 생긴 불안정 상태이고, 발열·출혈·설사가 없어 빈맥을 보상성으로 볼 근거가 약하다. 불안정한 빈맥성 부정맥은 약물이나 영상 검사를 기다리지 않고 바로 동기화 심율동전환을 한다."
+  },
+  {
+   "id": "anatomy-daily-2026-09-30",
+   "type": "anatomy",
+   "unit": "머리·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-30",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/anatomy/daily/2026-09-30.md",
+   "snippet": "오늘의 학습 (2026 09 30 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 20일 · Tagging 2까지 19일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-30 머리·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 30 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 20일 · Tagging 2까지 19일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0181",
