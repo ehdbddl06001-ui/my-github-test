@@ -4,8 +4,8 @@ type: concept
 topic: Dermatology
 see_also: [Obstetrics & Gynecology, Rheumatology]
 date: 2026-09-22
-updated: 2026-09-23
-version: 2
+updated: 2026-09-29
+version: 3
 outline: h57            # 기본틀 슬롯(content/outline/subjects.yaml) — Harrison 21e Ch 57 Eczema, Psoriasis, …
 confidence: medium
 review_status: unreviewed
@@ -248,19 +248,31 @@ variants:
     answer: "C"
     explanation: "나이·침범 부위·복용 중인 혈압약·내원 경위가 바뀌었지만 결정 단서는 같다 — 국소치료에 실패한 체표면적 > 10 % 판상건선이라 전신치료 대상이고, 임신 계획이 메토트렉세이트·아시트레틴을, 치료 중에도 조절되지 않는 고혈압이 사이클로스포린을 지운다. 전신 스테로이드는 반동 위험으로 쓰지 않으므로, 임신 중에도 안전하고 통원이 가능한 좁은파장 자외선B 광선치료가 남는다(엽산 보충 고려). 관절염이 없어 관절 보호 약을 앞세울 이유도 없다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 경계가 뚜렷한 은백색 비늘 판(판상건선)
-  query: '"plaque psoriasis" AND "case report"'
-  caption_terms:
-  - psoriasis
-  - plaque
-  modality: CLINICAL_PHOTO
 figures_rejected:
 - asset: PMC-PMC13218004_Figure1
   reason: 얼굴 패널 위주이고 몸통 패널에 가슴 일부가 보인다 — 노출 최소화
 - asset: PMC-PMC12696756_Figure2
   reason: 소견은 맞으나 패널 하나가 226×332 픽셀로 인쇄 기준(250) 미만 — 더 큰 판상건선 사진이 필요
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc10892964_figure1-0-0-497-431.jpg
+  kind: photo
+  at: 소견·중증도 판정
+  shows: 판상건선 악화 — 팔 폄쪽과 몸통에 퍼진 붉은 판
+  look_for:
+  - 팔꿈치·아래팔 폄쪽의 경계가 뚜렷한 붉은 판
+  - 등과 옆구리에 흩어진 작은 붉은 구진·판
+  label: '「(A,B) showing a plaque psoriasis exacerbation of a 56-year-old patient 5 days after the 2nd dose of BNT162b2(Pfizer) vaccination. Every patient is unique with factors that predispose towards a flare. The patient has comorbidities, such as hypercholesterolemia and diabetes, and, therefore, a disturbed metabolic profile, as well as a recent stressful event and a medical history of COVID-19 infection in the past 4 months (infectomics).」 — Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters. Vaccines'
+  doi: 10.3390/vaccines12020178
+  credit: 'Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters. Vaccines (Basel). 2024 Feb 9;12(2):178. doi: 10.3390/vaccines12020178 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10892964/
+  asset: PMC-PMC10892964_Figure1
+  privacy_check: 패널 A만 사용 — 등·팔 뒷면, 얼굴·문신·이름·병원 표지 없음
+  crop: 0,0,497,431
 ---
 
 ## 정의

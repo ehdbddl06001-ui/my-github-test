@@ -5,39 +5,39 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3046,
+  "total": 3079,
   "byType": {
    "usmle": 168,
-   "kmle": 1164,
+   "paper": 689,
+   "kmle": 1184,
    "anatomy": 767,
    "imaging": 164,
    "concept": 90,
-   "paper": 676,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 767,
-   "Cardiology": 219,
-   "Nephrology": 179,
-   "Infectious Disease": 160,
-   "Pediatrics": 144,
-   "Hematology-Oncology": 101,
-   "Pathology": 97,
-   "Obstetrics & Gynecology": 95,
+   "Cardiology": 224,
+   "Nephrology": 180,
+   "Infectious Disease": 161,
+   "Pediatrics": 145,
+   "Obstetrics & Gynecology": 106,
+   "Hematology-Oncology": 102,
+   "Pathology": 99,
    "Psychiatry": 90,
    "Neurology": 89,
    "Rheumatology": 85,
+   "General Surgery": 82,
+   "Endocrinology": 79,
+   "Surgery": 79,
    "Dermatology": 78,
-   "Endocrinology": 78,
-   "Surgery": 78,
    "Gastroenterology": 77,
    "Orthopedics": 77,
    "Ophthalmology": 76,
    "Pulmonology": 76,
-   "General Surgery": 74,
    "Hematology": 71,
-   "Laboratory Medicine": 67,
+   "Laboratory Medicine": 68,
    "산부인과": 33,
    "Physiology": 20,
    "순환기": 15,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2037,
-   "medium": 960,
+   "high": 2056,
+   "medium": 974,
    "low": 49
   },
-  "tagCount": 4217
+  "tagCount": 4289
  },
  "docs": [
   {
@@ -222,6 +222,232 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0176.md",
    "snippet": "A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim su",
    "text": "Biochemistry Dark Urine and Jaundice Three Days After an Antibiotic in a Previously Healthy Man G6PD-deficiency hemolytic-anemia oxidative-stress NADPH glutathione pentose-phosphate-pathway Heinz-bodies bite-cells sulfonamide USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 100 Hemolytic Anemias; Luzzatto L, Arese P. Favism and Glucose-6-Phosphate Dehydrogenase Deficiency, N Engl J Med 2018;378:60) A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim sulfamethoxazole. The abscess is healing. He has no history of serious illness, and his hemoglobin concentration was 15.1 g/dL at a physical examination 1 year ago. He takes no other medications. His vital signs are shown. He appears pale, and the sclerae are icteric. The spleen is not palpable. Laboratory studies are shown. A peripheral blood smear shows red blood cells with semicircular bites removed from their edges; a supravital stain shows small dark inclusions attached to the inner red cell membrane. Which of the following best explains why this patient's red blood cells were damaged after he began taking the drug? A. Weak anchoring of the membrane to the spectrin cytoskeleton B. Complement lysis after loss of GPI anchored CD55 and CD59 C. Drug dependent IgG antibodies bound to the red cell surface D. Too little NADPH to keep glutathione in its reduced form E. Too little ATP to run the membrane sodium potassium pump 산화제 약(설파메톡사졸) 시작 2–3일 뒤 갑자기 생긴 용혈이다. 혈색소 8.6·망상적혈구 6.8 %·간접 빌리루빈 상승·LDH 상승·합토글로빈 저하에 요잠혈 3+ 인데 적혈구가 없으니 혈색소뇨(혈관내 용혈)다. 직접 항글로불린 검사 음성은 면역 용혈의 가능성을 낮추고, 물린 세포(bite cell)와 초생체 염색의 막 부착 봉입체(Heinz body, 변성 혈색소)는 산화 손상을 가리킨다. 1년 전 혈색소가 정상이고 비장이 크지 않아 평생 이어지는 막·에너지 결함보다는 산화 스트레스가 올 때만 터지는 효소 결함 = G6PD 결핍이다. G6PD 는 오탄당 인산 경로의 첫 효소로 적혈구의 유일한 NADPH 공급원이다 — NADPH 가 없으면 글루타티온 환원효소가 산화형 글루타티온(GSSG)을 환원형(GSH)으로 되돌리지 못해 과산화수소를 치우지 못하고, 혈색소가 산화·변성돼 막에 달라붙는다(Heinz body). 비장 대식세포가 이것을 뜯어내 물린 세포가 된다."
+  },
+  {
+   "id": "paper-2026-0689",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0689_landmark_2014_esc_esa_guidelines_on_non_cardiac_surgery_cardiovascula.md",
+   "snippet": "Title 2014 ESC/ESA Guidelines on non cardiac surgery: cardiovascular assessment and management: The Joint Task Force on non cardiac surgery: cardiovascular assessment and management of the European Society of Cardiology (ESC) and the Europe",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2014 ESC/ESA Guidelines on non cardiac surgery: cardiovascular assessment and management: The Joint Task Force on non cardiac surgery: cardiovascular assessment and management of the European Society of Cardiology (ESC) and the European Society of Anaesthesiology (ESA) Authors Kristensen Steen Dalby, Knuuti Juhani, Saraste Antti, Anker Stefan, Bøtker Hans Erik, Hert Stefan De, Ford Ian, Gonzalez Juanatey Jose Ramón, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehu282 · PMID: 25086026 https://pubmed.ncbi.nlm.nih.gov/25086026/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1016회 · RCR 40.84 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0688",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0688_landmark_2017_aha_acc_hrs_guideline_for_management_of_patients_with_v.md",
+   "snippet": "Title 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice G",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society Authors Al Khatib Sana M, Stevenson William G, Ackerman Michael J, Bryant William J, Callans David J, Curtis Anne B, Deal Barbara J, Dickfeld Timm, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2017.10.054 · PMID: 29097296 https://pubmed.ncbi.nlm.nih.gov/29097296/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1055회 · RCR 49.78 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0687",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Stroke",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0687_landmark_guidelines_for_the_primary_prevention_of_stroke_a_statement_.md",
+   "snippet": "Title Guidelines for the primary prevention of stroke: a statement for healthcare professionals from the American Heart Association/American Stroke Association Authors Meschia James F, Bushnell Cheryl, Boden Albala Bernadette, Braun Lynne T",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Stroke Title Guidelines for the primary prevention of stroke: a statement for healthcare professionals from the American Heart Association/American Stroke Association Authors Meschia James F, Bushnell Cheryl, Boden Albala Bernadette, Braun Lynne T, Bravata Dawn M, Chaturvedi Seemant, Creager Mark A, Eckel Robert H, et al. Journal / DOI Stroke · DOI: 10.1161/STR.0000000000000046 · PMID: 25355838 https://pubmed.ncbi.nlm.nih.gov/25355838/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1088회 · RCR 38.92 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The aim of this updated statement is to provide comprehensive and timely evidence based recommendations on the prevention of stroke among individuals who have not previously experienced a stroke or transient ischemic attack. Evidence based recommendations are included for the control of risk factors, interventional approaches to atherosclerotic disease of the cervicocephalic circulation, and antithrombotic treatments for preventing thrombotic and thromboembolic stroke. Further recommendations are provided for genetic and pharmacogenetic testing and for the prevention of stroke in a variety of other specific circumstances, including sickle cell disease and patent foramen ovale. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0686",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Nature reviews. Clinical oncology",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0686_landmark_artificial_intelligence_in_digital_pathology_new_tools_for_d.md",
+   "snippet": "Title Artificial intelligence in digital pathology new tools for diagnosis and precision oncology Authors Bera Kaustav, Schalper Kurt A, Rimm David L, Velcheti Vamsidhar, Madabhushi Anant Journal / DOI Nature reviews. Clinical oncology · DO",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Nature reviews. Clinical oncology Title Artificial intelligence in digital pathology new tools for diagnosis and precision oncology Authors Bera Kaustav, Schalper Kurt A, Rimm David L, Velcheti Vamsidhar, Madabhushi Anant Journal / DOI Nature reviews. Clinical oncology · DOI: 10.1038/s41571 019 0252 y · PMID: 31399699 https://pubmed.ncbi.nlm.nih.gov/31399699/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 1118회 · RCR 46.53 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract In the past decade, advances in precision oncology have resulted in an increased demand for predictive assays that enable the selection and stratification of patients for treatment. The enormous divergence of signalling and transcriptional networks mediating the crosstalk between cancer, stromal and immune cells complicates the development of functionally relevant biomarkers based on a single gene or protein. However, the result of these complex processes can be uniquely captured in the morphometric features of stained tissue specimens. The possibility of digitizing whole slide images of tissue has led to the advent of artificial intelligence (AI) and machine learning tools in digital pathology, which enable mining of subvisual morphometric phenotypes and might, ultimately, improve patient management. In this Perspective, we critically evaluate various AI based computational approaches for digital pathology, focusing on deep neural networks and 'hand crafted' feature based methodologies. We aim to provide a broad framework for incorporating AI and machine learning tools into clinical oncology, with an emphasis on biomarker development. We discuss some of the challenges relating to the use of AI, including the need for well curated validation datasets, regulatory approval and fair reimbursement strategies. Finally, we present potential future opportunities for precision oncology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0685",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Chest",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0685_landmark_perioperative_management_of_antithrombotic_therapy_antithrom.md",
+   "snippet": "Title Perioperative management of antithrombotic therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines Authors Douketis James D, Spyropoulos Al",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Chest Title Perioperative management of antithrombotic therapy: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines Authors Douketis James D, Spyropoulos Alex C, Spencer Frederick A, Mayr Michael, Jaffer Amir K, Eckman Mark H, Dunn Andrew S, Kunz Regina Journal / DOI Chest · DOI: 10.1378/chest.11 2298 · PMID: 22315266 https://pubmed.ncbi.nlm.nih.gov/22315266/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1124회 · RCR 45.21 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: This guideline addresses the management of patients who are receiving anticoagulant or antiplatelet therapy and require an elective surgery or procedure. METHODS: The methods herein follow those discussed in the Methodology for the Development of Antithrombotic Therapy and Prevention of Thrombosis Guidelines. Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines article of this supplement. RESULTS: In patients requiring vitamin K antagonist (VKA) interruption before surgery, we recommend stopping VKAs 5 days before surgery instead of a shorter time before surgery (Grade 1B). In patients with a mechanical heart valve, atrial fibrillation, or VTE at high risk for thromboembolism, we suggest bridging anticoagulation instead of no bridging during VKA interruption (Grade 2C); in patients at low risk, we suggest no bridging instead of bridging (Grade 2C). In patients who require a dental procedure, we suggest continuing VKAs with an oral prohemostatic agent or stopping VKAs 2 to 3 days before the procedure instead of alternative strategies (Grade 2C). In moderate to high risk patients who are receiving acetylsalicylic acid (ASA) and require noncardiac surgery, we suggest continuing ASA around the time of surgery instead of stopping ASA 7 to 10 days before surgery (Grade 2C). In patients with a coronary stent who require surgery, we recommend deferring surgery 6 weeks after bare metal stent placement and 6 months after drug eluting stent placement instead of undertaking surgery within these time periods (Grade 1C); in patients requiring surgery within 6 weeks of bare metal stent placement or within 6 months of drug eluting stent placement, we suggest continuing antiplatelet therapy perioperatively instead of stopping therapy 7 to 10 days before surgery (Grade 2C). CONCLUSIONS: Perioperative antithrombotic management is based on risk assessment for thromboembolism and bleeding, and recommended approaches aim to simplify patient management and minimize adverse clinical outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0684",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JNCI cancer spectrum",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0684_evaluating_a_shared_decision_engagement_system_in_the_nci_co.md",
+   "snippet": "Title Evaluating a shared decision engagement system in the NCI community oncology research program: a multi level RCT Authors Hawley Sarah T, Kidwell Kelley M, Jagsi Reshma, Barber Anne K, Wills Rachel, Chow Selina L, Kour Oudom, Segovia D",
+   "text": "Surgery scraped pubmed PubMed / JNCI cancer spectrum Title Evaluating a shared decision engagement system in the NCI community oncology research program: a multi level RCT Authors Hawley Sarah T, Kidwell Kelley M, Jagsi Reshma, Barber Anne K, Wills Rachel, Chow Selina L, Kour Oudom, Segovia Diana, et al. Journal / DOI JNCI cancer spectrum · DOI: 10.1093/jncics/pkag100 · PMID: 42804742 https://pubmed.ncbi.nlm.nih.gov/42804742/ Abstract BACKGROUND: Improving patient centered care and communication in breast cancer remains challenging in the complex and evolving landscape of breast cancer care delivery. METHODS: The SharES (Alliance A231901CD) trial was carried out in collaboration with the NCI Community Oncology Research Program Alliance Research Base to evaluate a multi level intervention in a crossed design: 1) a patient level randomized intervention of the evidence based iCanDecide online tool with added emotional support enhancements (iCanDecide ESE), intended to promote better information uptake by supporting management of distress associated with a new diagnosis vs. the standard version (iCanDecide S); and 2) a clinic level stepped wedge randomized Clinician Dashboard intervention. Patient reported outcomes assessed 5 weeks after registration were knowledge about breast cancer locoregional treatment (primary outcome), cancer worry and breast cancer self efficacy (key secondary outcomes). We evaluated outcomes using linear mixed models considering the nesting of individuals within clinic across time periods. RESULTS: We enrolled 542 (403 evaluable) patients and 54 clinicians across 25 surgical clinics. The confidence intervals for all outcomes included zero but excluded pre specified clinically important differences in the knowledge score. We found good fidelity to the intervention components and considerable variation in the primary outcome across sites. CONCLUSIONS: The addition of emotional support components to a patient support tool previously found effective is unlikely to result in clinically important improvements in knowledge, cancer worry, or breast cancer self efficacy. The strong engagement of NCORP sites, clinicians and patients with the study and intervention components suggests future cancer care delivery studies could leverage implementation strategies to promote multi level patient centered communication interventions. TRIAL REGISTRATION: ClinicalTrials.gov NCT04549571. Registered on 16 September 2020. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0683",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0683_nine_year_ocular_developmental_outcomes_after_ranibizumab_or.md",
+   "snippet": "Title Nine year ocular developmental outcomes after ranibizumab or laser treatment for zone II retinopathy of prematurity: follow up of a randomized trial cohort Authors Liu Yaling, Tang Jiannan, Zhao Xinyu, Chen Laijiao, Yu Zhen, Luo Xiayu",
+   "text": "Pediatrics scraped pubmed PubMed / European journal of pediatrics Title Nine year ocular developmental outcomes after ranibizumab or laser treatment for zone II retinopathy of prematurity: follow up of a randomized trial cohort Authors Liu Yaling, Tang Jiannan, Zhao Xinyu, Chen Laijiao, Yu Zhen, Luo Xiayuan, Zeng Xianlu, Zheng Mianying, et al. Journal / DOI European journal of pediatrics · DOI: 10.1007/s00431 026 07452 x · PMID: 42803828 https://pubmed.ncbi.nlm.nih.gov/42803828/ Abstract UNLABELLED: The purpose of this study is to describe 9 year ocular developmental outcomes in children previously randomized to intravitreal ranibizumab (IVR) or laser photocoagulation (LP) for zone II treatment requiring retinopathy of prematurity (ROP). In this follow up of a single center randomized trial, infants with stage 2 or 3 ROP with plus disease in zone II were randomized in 2014 to bilateral LP (n = 25) or IVR (n = 25). At school age, 29 children (10 LP, 19 IVR) underwent assessment of best corrected visual acuity, cycloplegic refraction, ocular biometry, anterior segment parameters, spectral domain optical coherence tomography, optical coherence tomography angiography, and full field electroretinography. Eye level comparisons used generalized estimating equations. Mean spherical equivalent did not differ significantly between LP and IVR groups ( 1.22 vs. 1.90 D; mean difference 0.68 D, 95% CI 2.26 to 3.62; p = 0.65), nor did best corrected visual acuity (0.15 vs. 0.21 logMAR; mean difference 0.07, 95% CI 0.27 to 0.13; p = 0.51). Compared with the LP group, the IVR group showed thinner lens thickness (3.52 vs. 3.75 mm, p < 0.001), steeper minimum keratometry (43.8 vs. 42.6 D, p = 0.048), and thinner central internal limiting membrane retinal pigment epithelium thickness (249.2 vs. 286.9 μm, p = 0.005). Selected electroretinography abnormalities also differed between groups. CONCLUSION: In this small 9 year follow up cohort with differential loss to follow up, visual acuity and refractive outcomes were broadly similar after IVR and LP, while selected ocular structural and electrophysiological differences were observed. These preliminary exploratory findings should be interpreted cautiously and do not provide sufficient evidence to recommend one treatment approach over the other on the basis of long term ocular outcomes alone. WHAT IS KNOWN: • Laser photocoagulation and intravitreal anti vascular endothelial growth factor therapy are established treatments for severe retinopathy of prematurity. • Long term ocular developmental and functional outcomes after anti vascular endothelial growth factor treatment remain incompletely defined, particularly beyond early childhood. WHAT IS NEW: • This follow up of a randomized trial cohort provides 9 year multimodal ocular outcome data in children treated with ranibizumab or laser for zone II retinopathy of prematurity. • Visual acuity and refractive outcomes were broadly similar between treatment groups, while selected anterior segment, retinal structural, and electroretinography differences were observed and should be interpreted as exploratory. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0682",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Biomolecules & biomedicine",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0682_adjunctive_screening_and_risk_stratification_performance_of_.md",
+   "snippet": "Title Adjunctive screening and risk stratification performance of neutrophil to lymphocyte ratio for gestational diabetes mellitus: A systematic review and meta analysis Authors Chen Ling, Hu Wei, Zhao Fei, Pan Qian, Li Chunhong, Ju Xiangyu",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Biomolecules & biomedicine Title Adjunctive screening and risk stratification performance of neutrophil to lymphocyte ratio for gestational diabetes mellitus: A systematic review and meta analysis Authors Chen Ling, Hu Wei, Zhao Fei, Pan Qian, Li Chunhong, Ju Xiangyuan, Yao Rennan Journal / DOI Biomolecules & biomedicine · DOI: 10.17305/bb.2026.14713 · PMID: 42804757 https://pubmed.ncbi.nlm.nih.gov/42804757/ Abstract The neutrophil to lymphocyte ratio (NLR) is an inexpensive inflammatory marker with uncertain value for gestational diabetes mellitus (GDM) risk assessment. This systematic review and meta analysis evaluated NLR for first trimester risk stratification and second trimester adjunctive screening of GDM. PubMed, Embase, Web of Science, and the Cochrane Library were searched from inception to April 15, 2026. Risk of bias was assessed using the Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS 2) tool. Sensitivity and specificity were pooled separately by trimester, and summary receiver operating characteristic curves were fitted using the Moses Littenberg method. Eleven studies comprising 12 independent datasets used the oral glucose tolerance test (OGTT) as the reference standard. Pooled sensitivity, specificity, and area under the curve (AUC), with 95% confidence intervals (CIs), were 0.702 (0.660 0.742), 0.426 (0.401 0.452), and 0.694 (0.559 0.828), respectively, in the first trimester and 0.665 (0.632 0.697), 0.644 (0.618 0.670), and 0.798 (0.723 0.873) in the second trimester. At cutoffs ≤ 3.0, exploratory AUC estimates were 0.845 and 0.850, respectively, but subgroup differences were not formally tested. All studies were at high risk of index test bias from post hoc threshold selection, seven used case control designs, and heterogeneity was substantial. NLR may have an adjunctive role in GDM risk assessment but should not replace OGTT or serve as a standalone screening test. No clinical cutoff can be recommended; prospective studies with prespecified thresholds and independent validation cohorts are required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0681",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PLOS digital health",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0681_independent_evaluation_of_machine_learning_and_deep_learning.md",
+   "snippet": "Title Independent evaluation of machine learning and deep learning models for breast cancer detection Authors Deepthi, Nayak Ashalatha, Panicker Rani Oomman Journal / DOI PLOS digital health · DOI: 10.1371/journal.pdig.0001747 · PMID: 42804",
+   "text": "Pathology scraped pubmed PubMed / PLOS digital health Title Independent evaluation of machine learning and deep learning models for breast cancer detection Authors Deepthi, Nayak Ashalatha, Panicker Rani Oomman Journal / DOI PLOS digital health · DOI: 10.1371/journal.pdig.0001747 · PMID: 42804475 https://pubmed.ncbi.nlm.nih.gov/42804475/ Abstract Breast cancer is one of the leading causes of cancer related mortality worldwide, and despite advances in clinical diagnosis, challenges such as inconclusive imaging results and inter observer variability highlight the need for complementary computational approaches to support early and accurate detection. In this study, we provide an overview of several machine learning (ML) and deep learning (DL) algorithms used for breast cancer detection with structured clinical data and imaging data. We applied ML models to structured clinical data which included Wisconsin Breast Cancer Dataset, CSAW CC dataset and SEER database using Random Forest, Decision Tree, Logistic Regression, Gradient Boosting, and Bayesian classifier models. DL models, specifically Convolutional Neural Networks (CNN), ResNet50, VGG16, and DenseNet, were utilized in mammography, histopathology, and ultrasound datasets. The experimental results show that the DL models outperformed ML models in image classification tasks, obtaining accuracy rates of 97.88% for histopathological images and 92.00% for ultrasound data. However, ensemble based and probabilistic ML models achieved strong performance on structured clinical data, with predictive accuracy of up to 98%. All performance metrics are reported with 95% confidence intervals.Model calibration was assessed using the Expected Calibration Error (ECE) and reliability diagrams. Logistic Regression, Gradient Boosting, and Random Forest produced the best calibrated probability estimates among the structured data classifiers, while the transfer learning based deep convolutional architectures were well calibrated on the histopathology imaging datasets. Calibration was comparatively weaker for Decision Tree and Naive Bayes among the structured data classifiers, as well as for the from scratch CNN baseline and some deep learning models evaluated on the smaller BUSI dataset. The results indicate that model performance is significantly influenced by data modality and that artificial intelligence may serve as a valuable computational tool to support clinical breast cancer diagnosis workflow. Further prospective validation using clinical data across diverse patient populations will be essential to confirm the robustness, interpretability, and generalizability of these findings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0680",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Genomics, proteomics & bioinformatics",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0680_defb1_cancer_cell_ifi30_macrophage_crosstalk_drives_immunosu.md",
+   "snippet": "Title DEFB1 + Cancer Cell IFI30+ Macrophage Crosstalk Drives Immunosuppressive Niche in Intrahepatic Cholangiocarcinoma Authors Wang Guoliang, Meng Hang, Li Meng, Fang Xiangdong, Zou Weilong, Qu Hongzhu Journal / DOI Genomics, proteomics & ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Genomics, proteomics & bioinformatics Title DEFB1 + Cancer Cell IFI30+ Macrophage Crosstalk Drives Immunosuppressive Niche in Intrahepatic Cholangiocarcinoma Authors Wang Guoliang, Meng Hang, Li Meng, Fang Xiangdong, Zou Weilong, Qu Hongzhu Journal / DOI Genomics, proteomics & bioinformatics · DOI: 10.1093/gpbjnl/qzag099 · PMID: 42804717 https://pubmed.ncbi.nlm.nih.gov/42804717/ Abstract Intrahepatic cholangiocarcinoma (ICC) is a rare but highly aggressive primary liver malignancy distinguished by a profoundly heterogeneous tumor microenvironment, which underlies its limited response to targeted and immune based therapies. Deciphering the cellular composition and intercellular signaling within this complex ecosystem is critical to understanding ICC progression and to identifying actionable therapeutic targets. Here, we integrated single cell RNA sequencing and spatial transcriptomics to construct a comprehensive cellular and transcriptional atlas of human ICC. Our analyses revealed a continuous trajectory of T cell state transition from activation to exhaustion, with CD8 + proliferating T cells exhibiting two distinct exhaustion programs, namely terminal and progenitor like exhaustion. Notably, DEFB1 + cholangiocytes and IFI30 + macrophages displayed a strong positive correlation across independent ICC cohorts and were found in close spatial proximity within the tumor microenvironment. Mechanistically, their interaction was predicted to involve the TGFB1 TGFBR1 signaling axis, which may contribute to tumor progression and immunotherapy resistance. Together, these findings delineate the cellular architecture and spatial organization of the ICC microenvironment, uncovering a key cholangiocyte macrophage axis that shapes immune dysfunction and offers a potential therapeutic entry point to enhance immunotherapy efficacy in ICC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0679",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA network open",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0679_racial_and_ethnic_disparities_in_medication_adherence_among_.md",
+   "snippet": "Title Racial and Ethnic Disparities in Medication Adherence Among Medicare Advantage Enrollees With Diabetes Authors Essien Utibe R, Roberts Eric T, Ruggiero Dominic A, Tang Jasmyn J, Raghava Sindhu, Ayanian John Z, Tipirneni Renuka Journal",
+   "text": "Nephrology scraped pubmed PubMed / JAMA network open Title Racial and Ethnic Disparities in Medication Adherence Among Medicare Advantage Enrollees With Diabetes Authors Essien Utibe R, Roberts Eric T, Ruggiero Dominic A, Tang Jasmyn J, Raghava Sindhu, Ayanian John Z, Tipirneni Renuka Journal / DOI JAMA network open · DOI: 10.1001/jamanetworkopen.2026.34846 · PMID: 42804695 https://pubmed.ncbi.nlm.nih.gov/42804695/ Abstract IMPORTANCE: Appropriate medication management can prevent adverse outcomes, yet medication nonadherence remains common, including among patients with diabetes. OBJECTIVE: To examine racial and ethnic disparities in medication adherence among Medicare Advantage (MA) enrollees with diabetes and assess factors contributing to these disparities. DESIGN, SETTING, AND PARTICIPANTS: Using the Medicare Master Beneficiary Summary File and MA encounter data, this cohort study included MA enrollees with Part D coverage in 2019 and a documented diabetes diagnosis from January 1, 2017, to December 31, 2018, who filled at least 1 prescription for metformin, insulin, a sodium glucose cotransporter 2 (SGLT2) inhibitor, or a glucagon like peptide 1 receptor agonist (GLP 1 RA) in 2019. Analysis was conducted between December 2024 and November 2025. MAIN OUTCOMES AND MEASURES: Unadjusted and adjusted disparities in adherence (proportion of days covered ≥80%) during 2019 were examined for insulin, metformin, and SGLT2 inhibitors and/or GLP 1 RAs, distinguishing within plan disparities from differences between plans serving proportionately more vs fewer Black or Hispanic enrollees. Oaxaca Blinder decomposition analysis estimated the contribution of covariates to adherence disparities. RESULTS: Among 587 716 total beneficiaries (mean [SD] age, 72.11 [8.85] years), analyses of disparities between Black and White enrollees included 80 586 Black (63.3% female) and 233 505 White (50.9% male) beneficiaries; analyses of disparities between Hispanic and White enrollees included 83 116 Hispanic (53.9% female) and 190 509 White (51.1% male) beneficiaries. In unadjusted analyses, adherence was lower among Black beneficiaries than among White beneficiaries: 9.0 percentage points [pp] for SGLT2 inhibitors and/or GLP 1 RAs, 8.0 pp for insulin, and 10.5 pp for metformin (all P < .001). Adherence was also lower among Hispanic beneficiaries than among White beneficiaries: 8.1 pp for SGLT2 inhibitors and/or GLP 1 RAs, 2.8 pp for insulin, and 3.6 pp for metformin (all P < .001). By medication type, within plan disparities accounted for 74.6% to 85.3% of adherence disparities between Black and White enrollees and 39.1% to 66.1% of disparities between Hispanic and White enrollees. Medicaid or Low Income Subsidy enrollment was associated with reductions in disparities between Black and White enrollees (22.0% for insulin and 32.3% for SGLT2 inhibitors and/or GLP 1 RAs) and Hispanic and White enrollees (63.9% for insulin and 41.3% for SGLT2 inhibitors and/or GLP 1 RAs). CONCLUSIONS AND RELEVANCE: This retrospective cohort study of MA enrollees with diabetes found racial and ethnic disparities in diabetes medication adherence. Disparities in adherence to insulin or SGLT2 inhibitors and/or GLP 1 RAs were partially mitigated by Medicaid and prescription drug subsidies but less so by plan level factors. The findings suggest that additional insurance and community level strategies are needed to improve medication adherence among disadvantaged patients and communities. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0678",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of infectious diseases",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0678_carbapenemase_producing_kluyvera_spp_epidemiology_of_an_evol.md",
+   "snippet": "Title Carbapenemase producing Kluyvera spp.: epidemiology of an evolving species Authors Levi Gabrielle D, Lurie Weinberger Mor N, Schwartz David, Mor Meirav, Benenson Shmuel, Assous Marc V, Ben Zvi Haim, Andremont Antoine, et al. Journal /",
+   "text": "Infectious Disease scraped pubmed PubMed / The Journal of infectious diseases Title Carbapenemase producing Kluyvera spp.: epidemiology of an evolving species Authors Levi Gabrielle D, Lurie Weinberger Mor N, Schwartz David, Mor Meirav, Benenson Shmuel, Assous Marc V, Ben Zvi Haim, Andremont Antoine, et al. Journal / DOI The Journal of infectious diseases · DOI: 10.1093/infdis/jiag468 · PMID: 42804664 https://pubmed.ncbi.nlm.nih.gov/42804664/ Abstract BACKGROUND: Kluyvera spp. are increasingly recognised as significant pathogens in humans. Recent reports of carbapenemase producing (CP) Kluyvera spp. raise a concern that they may be disseminating carbapenemases to other species undetected. Research on CP Kluyvera spp. is scarce, and little is known about their characteristics. METHODS: We aimed to investigate the epidemiology of CP Kluyvera spp. in Israel, characterise their antimicrobial resistance and examine mechanisms of transmission of carbapenemase genes. We performed a retrospective epidemiological analysis of all cases of CP Kluyvera spp. reported to Israel's national surveillance system of carbapenem resistant Enterobacterales from 2008 to 2023. Hospital acquired cases were categorized as sporadic or part of an outbreak. Microbiological characterisation of 22 available isolates included antimicrobial susceptibility testing and whole genome sequencing. RESULTS: There were 146 cases of CP Kluyvera spp. in 2008 2023. 145 were detected in rectal screening samples, and one in a blood culture. The dominant reported species was K. ascorbata (60.3%), followed by K. cryocrescens (24%). The common carbapenemases were KPC (67.1%) and NDM (26.7%). 41.1% of hospital acquired cases were classified as part of an outbreak.All characterised isolates were multidrug resistant and produced at least one carbapenemase. Spread of carbapenemase genes in Kluyvera spp. was plasmid driven by IncC and by Rep A type plasmids. CONCLUSIONS: Cases of CP Kluyvera spp. increased annually. Spread of CP Kluyvera was partially clonal, with both outbreaks and sporadic cases detected. We illustrated that Kluyvera spp. produce a variety of plasmid borne ARGs, including carbapenemases, which could be horizontally transferred to additional bacterial species, revealing the increasing clinical significance of Kluyvera genus. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0677",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0677_2026_aha_acc_acs_asnc_hrs_sca_scct_scmr_svm_guideline_for_pe.md",
+   "snippet": "Title 2026 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice G",
+   "text": "Cardiology scraped pubmed PubMed / Circulation Title 2026 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Writing Committee Members, Thompson Annemarie, Fleischmann Kirsten E, Smilowitz Nathaniel R, de Las Fuentes Lisa, Mukherjee Debabrata, Aggarwal Niti R, Ahmad Faraz S, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000001472 · PMID: 42804570 https://pubmed.ncbi.nlm.nih.gov/42804570/ Abstract AIM: The \"2026 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery\" provides recommendations to guide clinicians in the perioperative cardiovascular evaluation and management of adult patients undergoing noncardiac surgery. METHODS: A comprehensive literature search was conducted from August 2022 to March 2023 to identify clinical studies, reviews, and other evidence conducted on human subjects that were published in English from MEDLINE (through PubMed), EMBASE, the Cochrane Library, the Agency for Healthcare Research and Quality, and other selected databases relevant to this guideline. STRUCTURE: Recommendations from the \"2014 ACC/AHA Guideline on Perioperative Cardiovascular Evaluation and Management of Patients Undergoing Noncardiac Surgery\" have been updated with new evidence consolidated to guide clinicians; clinicians should be advised this guideline supersedes the previously published 2014 guideline. In addition, evidence based management strategies, including pharmacological therapies, perioperative monitoring, and devices, for cardiovascular disease and associated medical conditions, have been developed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1215",
@@ -527,6 +753,447 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0657-s13-subnote.md",
    "snippet": "0. 이 회차의 축 — 세 문장 1. 머리의 정맥은 「경막 두 층 사이」로 흐른다. 경막은 뼈막층과 수막층 두 겹이고, 둘이 갈라진 틈이 경막정맥굴이다. 그래서 동맥성 출혈(경막바깥)과 정맥성 출혈(경막밑)이 층 하나 차이로 모양이 다르다. 2. 눈확은 구멍 두 개로 들어온 것을 한 고리에 모은다. 시각신경관과 위눈확틈새 — 그리고 ==온힘줄고리==의 안이냐 밖이냐 가 태깅에서 묻는 전부다. 3. 배 뒤벽은 대동맥·대정맥 두 ",
    "text": "Anatomy 13회차 서브노트 — 머리덮개·머리뼈 속구조·뇌 적출·눈확 / 부신·콩팥·배대동맥·복막·가로막·뒤배벽 13회차 · 머리·배 서브노트 13회차 머리덮개 경막정맥굴 해면정맥굴 눈확 섬모체신경절 콩팥 부신 배대동맥 아래대정맥 가로막 허리신경얼기 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 머리의 정맥은 「경막 두 층 사이」로 흐른다. 경막은 뼈막층과 수막층 두 겹이고, 둘이 갈라진 틈이 경막정맥굴이다. 그래서 동맥성 출혈(경막바깥)과 정맥성 출혈(경막밑)이 층 하나 차이로 모양이 다르다. 2. 눈확은 구멍 두 개로 들어온 것을 한 고리에 모은다. 시각신경관과 위눈확틈새 — 그리고 ==온힘줄고리==의 안이냐 밖이냐 가 태깅에서 묻는 전부다. 3. 배 뒤벽은 대동맥·대정맥 두 줄기와 큰허리근 하나로 정리된다. 대동맥 가지는 앞 홑 · 옆 짝 · 뒤 짝 , 대정맥 가지는 왼쪽이 돌아간다 , 신경은 큰허리근의 어느 모서리로 나오느냐 다. 1. 머리덮개 Scalp !fig docs/assets/anatomy/tree s13 bundle labeled.svg 함께 지나는 것 — 머리덮개 층 · 해면정맥굴 · 눈확 입구 · 가로막 구멍 · 콩팥문 1) 벗기기 전의 체표 점 점 원어 자리 ==코뿌리점== nasion 이마뼈와 코뼈가 만나는 점 ==미간== glabella 두 눈썹 사이 튀어나온 곳 ==정수리점== bregma 관상봉합 + 시상봉합 이 만나는 점 (신생아의 큰숫구멍) ==시옷점== lambda 시상봉합 + 시옷봉합 이 만나는 점 (작은숫구멍) ==바깥뒤통수뼈융기== ext. occipital protuberance 뒤통수 정중선에서 만져지는 혹 ==관자놀이점== pterion 이마·마루·관자·나비뼈 네 뼈가 H자로 만나는 곳 — 가장 얇다 2) 다섯 층 — SCALP 층 원어 포인트 피부 skin 털주머니·땀샘이 많다 ==치밀결합조직== dense connective tissue 혈관이 섬유에 붙잡혀 오그라들지 못한다 → 찢기면 피가 많이 난다 ==머리덮개널힘줄== epicranial aponeurosis (galea) 뒤통수이마근의 힘줄판 · 위 셋이 한 덩어리 로 움직인다 ==성긴결합조직== loose areolar tissue ==위험층== — 도출정맥이 지나 감염이 경막정맥굴로 번진다 · 머리덮개를 여기서 벗긴다 ==머리뼈막== pericranium 머리뼈 바깥 뼈막 · 봉합에서 단단히 붙는다 [!임상] 널힘줄이 가로로 찢어지면 벌어진다 :: 뒤통수이마근이 앞뒤로 당기므로 가로로 찢긴 상처 는 입을 벌린다. 봉합할 때 널힘줄층을 같이 꿰매야 하는 이유다. 3) 머리덮개뼈 분리 톱은 ==바깥판== (outer table)과 ==판사이층== (diploe)까지만 — 너무 깊으면 경막과 뇌가 다친다. 속판은 끌로 깬다. 뼈를 들어 올리면 드러나는 것이 ==뇌경막== (cranial dura mater)이다. 머리에서는 경막이 뼈에 붙어 있어 경막바깥공간이 정상에서는 없다(척주관과 반대). 2. 뇌막과 경막주름 Meninges & dural folds 1) 뇌경막은 두 겹이다 막 원어 포인트 ==뇌경막 뼈막층== periosteal layer 머리뼈 속면의 실제 뼈막 · 큰구멍에서 끝난다 (척수경막으로 안 간다) ==뇌경막 수막층== meningeal layer 안쪽으로 접혀 경막주름 을 만들고 척수경막으로 이어진다 거미막 arachnoid mater ==거미막과립==이 정맥굴로 튀어나와 뇌척수액을 돌려보낸다 연막 pia mater 뇌 표면에 밀착 두 층이 갈라진 틈 이 ==경막정맥굴== — 벽이 단단해 오그라들지 않고, 판막이 없다 . ==중간뇌막동맥== (middle meningeal a.)은 뼈막층 바깥 , 뼈 속면 홈을 따라간다. [!임상] 경막바깥혈종 vs 경막밑혈종 :: 경막바깥 = 관자놀이점 골절 → ==중간뇌막동맥== 파열 → 뼈와 경막 사이 · 볼록렌즈 · 의식청명기. 경막밑 = 경막과 거미막 사이 · 다리(대뇌)정맥 파열 · 초승달 · 노인·음주자에서 천천히. 2) 경막주름 넷 — 뇌를 칸막이한다 주름 원어 붙는 곳·포인트 ==대뇌낫== falx cerebri 앞 = ==볏돌기==, 뒤 = 소뇌천막 · 위모서리에 위시상, 아래모서리에 아래시상정맥굴 ==소뇌천막== tentorium cerebelli 대뇌와 소뇌 사이 지붕 · 안쪽 자유모서리가 ==천막패임== ==소뇌낫== falx cerebelli 좌우 소뇌반구 사이 · 뒤통수정맥굴을 품는다 ==안장가로막== diaphragma sellae 뇌하수체오목의 뚜껑 · 가운데로 ==뇌하수체줄기== [!주의] 천막패임과 눈돌림신경 :: 뇌가 부으면 갈고리이랑이 ==천막패임==으로 밀려 내려와(갈고리이랑 탈출) 그 옆을 지나는 ==눈돌림신경==을 누른다 → 같은 쪽 동공 확대 가 먼저 온다. 3) 뇌 적출 순서에서 끊는 것 앞에서: ==볏돌기== 양옆 ==벌집뼈 체판== 위의 ==후각망울== 을 들어 올린다 → 시각신경 · 속목동맥 · ==뇌하수체줄기== · ==눈돌림신경== 순으로 자른다. 소뇌천막을 자유모서리를 따라 끊고, 나머지 뇌신경과 척수·척추동맥을 ==큰구멍== 높이에서 자른다. 3. 경막정맥굴 Dural venous sinuses !fig docs/assets/anatomy/tree s13 vessel labeled.svg 경막정맥굴 · 눈동맥 · 배대동맥 · 아래대정맥 1) 한 줄로 흐른다 = 위시상정맥굴 → 정맥굴합류 → 가로정맥굴 → 구불정맥굴 → 목정맥구멍 → 속목정맥 굴 원어 자리·받는 것 ==위시상정맥굴== sup. sagittal sinus 대뇌낫 위모서리 · 양옆 ==가쪽정맥주머니== · ==거미막과립== ==아래시상정맥굴== inf. sagittal sinus 대뇌낫 아래 자유모서리 ==곧은정맥굴== straight sinus 대뇌낫과 소뇌천막이 만나는 선 · 아래시상 + 큰대뇌정맥 ==정맥굴합류== confluence of sinuses ==속뒤통수뼈융기== 앞 ==가로정맥굴== transverse sinus 소뇌천막 뒤가쪽 붙는모서리 ==구불정맥굴== sigmoid sinus S자로 꺾여 ==목정맥구멍== → ==위목정맥팽대== ==뒤통수정맥굴== occipital sinus 소뇌낫 안 · 합류로 ==해면정맥굴== cavernous sinus 안장 양옆 · 위눈정맥 을 받는다 ==위바위정맥굴 / 아래바위정맥굴== sup. / inf. petrosal sinus 해면 → 가로·구불 경계 / 해면 → 속목정맥 2) 해면정맥굴 — 속과 벽 자리 구조 가쪽벽 (위→아래) ==눈돌림신경== · ==도르래신경== · ==눈신경(V1)== · ==위턱신경(V2)== 굴 속 ==속목동맥== + ==갓돌림신경== [!임상] 얼굴 위험삼각 :: 윗입술·코 둘레 감염 → 얼굴정맥 → 위눈정맥 (판막 없음) → 해면정맥굴 혈전. 굴 속에 떠 있는 ==갓돌림신경==이 먼저 마비돼 눈이 바깥으로 안 간다 . 4. 머리뼈 바닥의 구멍 Foramina of the cranial base 구멍 원어 지나는 것 ==체판== cribriform plate 후각신경(I) ==시각신경관== optic canal ==시각신경(II) + 눈동맥== ==위눈확틈새== superior orbital fissure III · IV · V1 · VI + 위눈정맥 ==목정맥구멍== jugular foramen IX · X · XI + 구불정맥굴 → 속목정맥 · 아래바위정맥굴 ==혀밑신경관== hypoglossal canal 혀밑신경(XII) ==큰구멍== foramen magnum 숨뇌·척수 · 척추동맥 · 더부신경 척수뿌리 5. 눈꺼풀과 눈물기관 Eyelids & lacrimal apparatus 1) 눈꺼풀의 층과 결막 구조 원어 포인트 ==눈꺼풀틈새== palpebral fissure 위·아래눈꺼풀 사이 · 양끝이 ==안쪽·가쪽눈구석== ==눈둘레근== orbicularis oculi m. 눈을 감는다 · 얼굴신경(VII) ==눈확사이막== orbital septum 눈확모서리의 ==눈확뼈막==에서 눈꺼풀판까지 — 눈확 지방의 앞벽 ==눈꺼풀판== tarsus 눈꺼풀의 뼈대 · ==안쪽·가쪽눈꺼풀인대==로 눈확벽에 붙는다 ==눈꺼풀결막 / 안구결막== palpebral / bulbar conjunctiva 둘이 꺾이는 자리가 ==위·아래결막구석== (fornix) 눈을 뜨는 근육은 ==위눈꺼풀올림근==(눈돌림신경) + 위눈꺼풀판근(교감). 눈돌림신경 마비는 완전 눈꺼풀처짐 , 호너증후군은 가벼운 처짐. 2) 눈물의 길 = 눈물샘 → 결막주머니 → 눈물못 → 눈물유두·눈물점 → 눈물소관 → 눈물주머니 → 코눈물관 → 아래콧길 ==눈물샘== (lacrimal gland)은 눈확 위가쪽 . ==눈물언덕== 옆 ==눈물못==에 고인 눈물을 ==눈물점==이 빨아들인다. ==코눈물관==은 ==아래콧길== (inferior nasal meatus)로 열린다 — 울면 콧물이 나는 이유. 6. 눈확 속의 구조물 Contents of the orbit !fig docs/assets/anatomy/tree s13 nerve labeled.svg 눈확의 신경과 허리신경얼기 1) 위에서 열었을 때 보이는 순서 눈확천장을 깨고 ==눈확뼈막== (periorbita)을 열면 바로 밑에 ==이마신경== 이 정중선 쪽으로 곧게 누워 있다 → 앞으로 ==눈확위신경==(크고 곧게, 눈확위구멍/패임) · ==도르래위신경==(안쪽). 가쪽벽을 따라 ==눈물샘신경== , 안쪽 위로 ==도르래신경== → ==위빗근== . 지방을 걷으면 ==위눈꺼풀올림근== 과 그 밑의 ==위곧은근== , 더 깊이 ==코섬모체신경== 이 ==시각신경== 을 가쪽에서 안쪽으로 넘어간다. 2) 온힘줄고리 — 안이냐 밖이냐 구멍 지나는 것 ==시각신경관== 시각신경 · ==눈동맥== 위눈확틈새 — ==고리 밖== ==눈물샘신경 · 이마신경 · 도르래신경== + 위눈정맥 위눈확틈새 — ==고리 안== ==눈돌림신경 위·아래갈래 · 코섬모체신경 · 갓돌림신경== [!기출] 고리 밖 셋은 「LFT」 :: Lacrimal · Frontal · Trochlear — 고리 밖 . 그래서 이 셋은 눈근육을 마취하는 구후마취(고리 안 주사)에서 살아남는다 — 위빗근만 움직인다 . 3) 눈확의 신경 신경 원어 맡는 것 ==눈돌림신경 위갈래== CN III sup. div. 위곧은근 · 위눈꺼풀올림근 ==눈돌림신경 아래갈래== CN III inf. div. 안쪽곧은근 · 아래곧은근 · 아래빗근 + 섬모체신경절 부교감뿌리 ==도르래신경== CN IV 위빗근 ==갓돌림신경== CN VI 가쪽곧은근 ==코섬모체신경== nasociliary n. ==긴섬모체신경==(각막 감각 · 동공확대근 교감) · ==앞·뒤벌집신경== · ==도르래아래신경== ==짧은섬모체신경== short ciliary nn. 섬모체신경절에서 안구 뒤로 — 동공조임근 · 섬모체근 4) 섬모체신경절 — 응용과제 눈돌림신경 (Edinger–Westphal 핵의 부교감 섬유) └─ 아래갈래 ─ 부교감뿌리 ─→ 섬모체신경절 [시냅스 ○] └─ 짧은섬모체신경 ─→ 동공조임근 (축동) └→ 섬모체근 (가까이 보기 · 조절) 교감 (속목동맥신경얼기) ──────→ 섬모체신경절 [통과 ×] ─→ 동공확대근 감각 (코섬모체신경) ──────────→ 섬모체신경절 [통과 ×] ─→ 각막 · 홍채 [!임상] 동공반사와 조절 :: 빛 → 시각신경 → 중간뇌 → 양쪽 눈돌림신경 → 섬모체신경절 → 동공조임근. 들신경(II) 손상 = 그 눈에 빛을 비추면 두 눈 다 안 줄어든다 · 날신경(III) 손상 = 어느 눈에 비춰도 그 눈만 안 줄어든다. 5) 바깥눈근육 여섯 + 올림근 근육 원어 주 작용(첫눈 위치) 신경 ==위곧은근== superior rectus 올림 · 모음 · 안쪽돌림 III 위갈래 ==아래곧은근== inferior rectus 내림 · 모음 · 가쪽돌림 III 아래갈래 ==안쪽곧은근== medial rectus 모음 III 아래갈래 ==가쪽곧은근== lateral rectus 벌림 ==VI== ==위빗근== superior oblique 내림 · 벌림 · 안쪽돌림 — 도르래를 돌아 뒤가쪽 에 닿는다 ==IV== ==아래빗근== inferior oblique 올림 · 벌림 · 가쪽돌림 — 유일하게 눈확 바닥 앞 에서 일어난다 III 아래갈래 ==위눈꺼풀올림근== levator palpebrae superioris 위눈꺼풀 올림 III 위갈래 [!TIP] 빗근은 이름과 반대 :: ==위빗근==은 눈을 아래로 , ==아래빗근==은 위로 . 임상 검사는 모은 자세 에서 — 위빗근은 \"안쪽으로 보고 아래로\", 도르래신경 마비 환자는 계단 내려가기 가 힘들다. 7. 안구 Eyeball 층 구성 포인트 ==섬유층== fibrous layer ==공막== (sclera) + ==각막== (cornea) ==혈관층 = 포도막== uvea ==맥락막== (검게 보이는 막) · ==섬모체== · ==홍채== ==속층== inner layer ==망막== (retina) — ==황반== 가운데 ==중심오목== · ==시각신경원반== = ==맹점== 방: ==안구앞방== (각막–홍채) · ==안구뒤방== (홍채–수정체) · 수정체 뒤는 ==유리체== . 방수는 섬모체에서 만들어져 뒤방 → 동공 → 앞방 → 홍채각막각의 공막정맥굴로 빠진다. 막히면 녹내장. 8. 콩팥과 부신 Kidney & suprarenal gland 1) 싸개 — 속에서 겉으로 층 원어 포인트 ==섬유피막== fibrous capsule 콩팥에 붙은 얇은 막 ==콩팥주위지방피막== perirenal fat capsule 콩팥근막 안 — 부신까지 함께 싼다 ==콩팥근막== renal fascia (Gerota) 앞·뒤 두 장 · 부신은 따로 칸 ==콩팥곁지방체== pararenal fat body 콩팥근막 밖 , 뒤쪽에 두껍다 2) 콩팥문과 단면 ==콩팥문== 배열 앞 → 뒤 : ==콩팥정맥== · ==콩팥동맥== · ==콩팥깔때기== (VAP). ==덧콩팥동맥==이 흔하다(대동맥에서 따로). 단면: ==겉질== · ==속질==(==콩팥피라밋== 여럿, 사이를 ==콩팥기둥==이 채운다) → 끝이 ==콩팥유두== → ==작은콩팥잔== → ==큰콩팥잔== → ==콩팥깔때기== . 이것들이 들어앉은 오목이 ==콩팥굴== . 3) 부신 오른쪽 왼쪽 모양 세모 (피라밋) 반달 정맥 ==아래대정맥==으로 곧장(짧다) ==왼콩팥정맥==으로 동맥 (셋) ==위부신동맥==(아래가로막동맥) · ==중간부신동맥==(대동맥) · ==아래부신동맥==(콩팥동맥) 좌우 같다 [!주의] 부신 속질의 신경은 신경절이전섬유 :: 부신 속질은 교감신경절 자체 라서, 내장신경의 신경절이전섬유가 곧장 들어간다(중간 시냅스 없음). 9. 배대동맥과 아래대정맥 Abdominal aorta & IVC 1) 배대동맥 가지 — 앞 홑 · 옆 짝 · 뒤 짝 높이 가지 무리 T12 ==아래가로막동맥== (좌우) → 위부신동맥 옆 짝 T12 ==복강동맥== 앞 홑 — 앞창자 L1 ==위창자간막동맥== 앞 홑 — 중간창자 L1 ==중간부신동맥== 옆 짝 L1–L2 ==콩팥동맥== → 아래부신동맥 옆 짝 L2 ==고환·난소동맥== 옆 짝 — 고환은 ==깊은샅굴구멍==, 난소는 ==온엉덩동맥== 앞을 넘어 L3 ==아래창자간막동맥== 앞 홑 — 뒤창자 L1–L4 ==허리동맥== 4쌍 뒤 짝 L4 ==온엉덩동맥== (갈림) + ==정중엉치동맥== 끝가지 2) 아래대정맥 — 왼쪽이 돌아간다 L5 에서 좌우 온엉덩정맥이 합쳐 대동맥 오른쪽 을 오르고, T8 에서 가로막 중심널힘줄을 뚫는다. ==왼콩팥정맥==은 길다 — ==대동맥 앞 · 위창자간막동맥 밑==을 건너며 ==왼생식샘정맥==과 ==왼부신정맥==을 받는다. ==허리정맥== 은 ==오름허리정맥== 으로 세로로 이어져 위로 홀정맥계와 잇는다(대정맥이 막혔을 때 우회로). 대동맥 오른쪽 뒤, 오른다리 옆에 ==가슴림프관팽대== (cisterna chyli, L1–L2) — 가슴림프관이 되어 대동맥구멍으로 올라간다. [!임상] 호두까기(nutcracker) :: 왼콩팥정맥이 위창자간막동맥과 대동맥 사이 에 끼이면 왼콩팥·왼생식샘정맥 압이 올라 혈뇨 · 왼쪽 정계정맥류 가 생긴다. 3) 대동맥 앞의 자율신경얼기 = 복강신경얼기 → 위창자간막신경얼기 → 배대동맥신경얼기 → 아래창자간막신경얼기 → 위아랫배신경얼기 → 아래아랫배신경얼기 모두 같은 이름 동맥의 뿌리 를 감싼다. 위아랫배신경얼기는 대동맥 갈림 아래 , 골반으로 넘어가 아래아랫배(골반)신경얼기가 된다. 10. 가로막 Diaphragm 부분 원어 일어나는 곳 ==복장부분== sternal part 칼돌기 뒤 ==갈비부분== costal part 아래 6개 갈비연골 ==허리부분== lumbar part ==오른다리==(L1–L3) · ==왼다리==(L1–L2) · 안쪽·가쪽활꼴인대 ==중심널힘줄== central tendon 모든 근육섬유가 모이는 힘줄판 구멍·인대 높이 지나는 것 대정맥구멍 ==T8== 아래대정맥 · 오른가로막신경 가지 — 중심널힘줄 에 있어 숨 들이쉴 때 넓어진다 ==식도구멍== ==T10== 식도 · 앞·뒤미주신경줄기 — ==오른다리== 섬유가 조임근처럼 감싼다 ==대동맥구멍== ==T12== 대동맥 · 가슴림프관 · 홀정맥 — 두 다리 뒤 라 숨쉬어도 안 눌린다 ==안쪽활꼴인대== — ==큰허리근== 위를 건넌다 · 교감줄기가 그 뒤로 ==가쪽활꼴인대== — ==허리네모근== 위를 건넌다 · 갈비밑신경·혈관이 그 뒤로 운동 신경은 ==가로막신경== (C3–C5) 하나. 가장자리 감각은 아래 갈비사이신경이 맡는다. 11. 뒤배벽의 근육과 허리신경얼기 Posterior abdominal wall 1) 근육 넷 근육 원어 이는곳 닿는곳 작용 신경 ==큰허리근== psoas major T12–L5 척추뼈몸통·가로돌기 넙다리뼈 ==작은돌기== 엉덩관절 굽힘 L1–L3 앞가지 ==작은허리근== psoas minor T12–L1 몸통 두덩뼈 엉덩두덩융기 약한 몸통 굽힘 · 절반쯤은 없다 L1 ==엉덩근== iliacus 엉덩뼈오목 작은돌기(큰허리근 힘줄과 함께) 엉덩관절 굽힘 ==넙다리신경== ==허리네모근== quadratus lumborum 엉덩뼈능선 뒤 12번 갈비뼈 · L1–L4 가로돌기 옆굽힘 · 12번 갈비뼈 고정 T12–L4 앞가지 2) 허리신경얼기 — 어느 모서리로 나오나 신경 뿌리 큰허리근에서 맡는 것 ==갈비밑신경== T12 (얼기 밖) 가쪽활꼴인대 뒤 배벽 아래 · 엉덩이 위가쪽 피부 ==엉덩아랫배신경== L1 가쪽모서리 두덩 위 피부 · 배벽 근육 ==엉덩고샅신경== L1 가쪽모서리 샅굴 → 음낭/대음순 앞쪽 · 넙다리 안쪽 위 ==음부넙다리신경== L1–L2 ==앞면을 뚫는다== ==음부가지==(깊은샅굴구멍 → 고환올림근) · 넙다리가지(넙다리삼각 피부) ==가쪽넙다리피부신경== L2–L3 가쪽모서리 넙다리 가쪽 피부 ==넙다리신경== L2–L4 가쪽모서리 · 엉덩근과의 고랑 넙다리 앞칸 근육 · 앞안쪽 피부 ==폐쇄신경== L2–L4 ==안쪽모서리== 넙다리 안쪽칸(모음근) 척추뼈몸통 앞가쪽을 ==허리교감줄기== 가 내려간다 — ==허리신경절== 과 척수신경을 잇는 ==교통가지== (흰교통가지는 L1–L2까지만). [!기출] 큰허리근 앞면을 뚫는 신경은? :: ==음부넙다리신경== 하나. 나머지는 가쪽모서리(넷)나 안쪽모서리(폐쇄)로 나온다. 고환올림근반사 의 날신경이 이 신경의 음부가지다(들신경은 엉덩고샅신경). 12. 복막 · 응용과제 Peritoneum & applied tasks 1) 복막 뒤에 있는 것 복막뒤기관: 부신 · 대동맥/대정맥 · 샘창자(2–4부) · 이자(꼬리 빼고) · 오름/내림잘록창자 · 콩팥·요관 · 식도(배부분) · 곧창자 — 이번 회차의 뒤배벽 구조는 전부 복막 뒤 다. ==그물막구멍== (epiploic foramen, Winslow): 앞 = ==간십이지장인대==(온쓸개관 · 고유간동맥 · 간문맥), 뒤 = 아래대정맥, 위 = 간 꼬리엽, 아래 = 샘창자 첫부분. 2) 쓸개이자관과 팽대부 (응용과제 — ERCP · 팽대부 종양 황달) = 온간관 + 쓸개주머니관 → 온쓸개관 → 이자머리 뒤 → 큰이자관과 합류 → 간이자팽대부 → 큰샘창자유두(샘창자 내림부분) ==간이자팽대부== (hepatopancreatic ampulla)는 ==큰샘창자유두== 에서 샘창자 둘째(내림)부분 으로 열리고, Oddi 조임근이 둘러싼다. ERCP 내시경은 입 → 식도 → 위 → 날문 → 샘창자 첫부분 → 내림부분 까지 가서 유두에 관을 꽂는다 — 위 내시경보다 한 구간 더 간다. [!임상] 팽대부 종양과 황달 :: 팽대부가 막히면 쓸개즙과 이자액이 함께 막힌다 → 통증 없는 폐쇄황달 + 만져지는 쓸개(Courvoisier) · 이자관 확장. 온쓸개관 위쪽 만 막히면 이자관은 멀쩡하다 — 영상에서 두 관이 함께 넓어졌는지 (double duct)가 막힌 자리를 가른다. [!TIP] 위 내시경에서 보는 순서 (응용과제) :: 들문 → 바닥 → 몸통(큰굽이의 주름) → 모서리패임 → 날문방 → 날문. 뒤집어 보기(retroflexion)로 들문과 바닥을 다시 본다 — 해부 표본에서 위를 열어 보는 순서와 같다. 13. 근육표 종합 (13회차) 근육 원어 이는곳 닿는곳 작용 신경 뒤통수이마근 occipitofrontalis 위목덜미선 / 머리덮개널힘줄 눈썹 피부 이마 주름 · 눈썹 올림 얼굴신경 눈둘레근 orbicularis oculi 안쪽눈꺼풀인대·눈확모서리 눈꺼풀·눈 둘레 피부 눈 감기 얼굴신경 위눈꺼풀올림근 levator palpebrae superioris 나비뼈 작은날개 위눈꺼풀판·피부 눈 뜨기 ==III 위갈래== 곧은근 넷 recti ==온힘줄고리== 공막 앞쪽 위·아래·안쪽·가쪽 III · 가쪽만 ==VI== 위빗근 superior oblique 나비뼈몸통 도르래 돌아 공막 뒤가쪽 내림 · 벌림 · 안쪽돌림 ==IV== 아래빗근 inferior oblique 눈확 바닥 앞안쪽 공막 뒤가쪽 올림 · 벌림 · 가쪽돌림 III 아래갈래 가로막 diaphragm 칼돌기 · 아래 6 갈비연골 · 다리·활꼴인대 ==중심널힘줄== 들숨 가로막신경 C3–C5 큰허리근 psoas major T12–L5 작은돌기 엉덩관절 굽힘 L1–L3 앞가지 엉덩근 iliacus 엉덩뼈오목 작은돌기 엉덩관절 굽힘 넙다리신경 허리네모근 quadratus lumborum 엉덩뼈능선 12번 갈비뼈 · 가로돌기 옆굽힘 · 갈비 고정 T12–L4 [!암기] 이 회차의 신경 칸은 두 덩어리 :: 머리 = III · IV · VI · VII (눈 뜨기 III · 감기 VII), 배 뒤벽 = L1–L4 앞가지 + 가로막신경 . \"눈 뜨는 건 3, 감는 건 7\"만 바뀌지 않으면 된다. 14. 예습시험 체크리스트 10 (수업당 10문제 대비) 1. 머리덮개 다섯 층 (SCALP)과 위험층 이 위험한 이유 2. 뇌경막 두 층 과 경막정맥굴이 생기는 자리 · 중간뇌막동맥이 지나는 층 3. 경막바깥혈종 vs 경막밑혈종 — 혈관 · 모양 · 관자놀이점 4. 경막주름 넷 과 천막패임이 누르는 신경 5. 경막정맥굴의 흐름 한 줄 (위시상 → … → 속목정맥)과 곧은정맥굴에 들어오는 것 6. 해면정맥굴 가쪽벽 넷 / 굴 속 둘 7. 시각신경관 · 위눈확틈새(고리 안 / 밖 )를 지나는 것 8. 바깥눈근육 여섯의 신경 (LR6 · SO4 · R3)과 섬모체신경절 에서 시냅스하는 섬유 9. 배대동맥 가지를 높이와 무리 (앞 홑 · 옆 짝 · 뒤 짝)로 · 부신동맥 셋의 출처 · 콩팥문 VAP 10. 가로막 구멍 T8 · T10 · T12 와 허리신경얼기 가지가 큰허리근의 어느 모서리 로 나오는지"
+  },
+  {
+   "id": "kmle-2026-1214",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Recurrent Endometriosis Pain after Surgery",
+   "tags": [
+    "전문의급",
+    "board",
+    "endometriosis",
+    "gnrh-agonist",
+    "add-back-therapy",
+    "progesterone-resistance",
+    "aromatase"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1214.md",
+   "snippet": "31세 여자(산과력 0 0 0 0)가 복강경으로 확인한 골반 자궁내막증의 통증이 다시 생겨 병원에 왔다. 복합 경구피임제를 6개월 연속 복용했으나 월경통과 성교통이 남아 지속 프로게스틴(경구)으로 바꿨지만 9개월 뒤에도 통증이 계속되었다. 이후 복강경으로 병소를 절제했으나 6개월 뒤 통증이 다시 생겼다. 당장 임신 계획은 없다. 골반 초음파에서 3 cm 자궁내막종이 있다. 활력징후는 자료와 같다. 가장 적절한 다음 약물 치료는",
+   "text": "Obstetrics & Gynecology Recurrent Endometriosis Pain after Surgery 전문의급 board endometriosis gnrh-agonist add-back-therapy progesterone-resistance aromatase 전문의급 · 2026-09-28 31세 여자(산과력 0 0 0 0)가 복강경으로 확인한 골반 자궁내막증의 통증이 다시 생겨 병원에 왔다. 복합 경구피임제를 6개월 연속 복용했으나 월경통과 성교통이 남아 지속 프로게스틴(경구)으로 바꿨지만 9개월 뒤에도 통증이 계속되었다. 이후 복강경으로 병소를 절제했으나 6개월 뒤 통증이 다시 생겼다. 당장 임신 계획은 없다. 골반 초음파에서 3 cm 자궁내막종이 있다. 활력징후는 자료와 같다. 가장 적절한 다음 약물 치료는? A. 에스트로겐 보충 B. 복합 경구피임제 재시작 C. 비스테로이드 소염제로 교체 D. GnRH 작용제에 add back 요법 병용 E. 약물 치료 없이 경과 관찰 피임제 · 프로게스틴 · 수술 모두 실패 → GnRH 작용제 + add back."
+  },
+  {
+   "id": "kmle-2026-1213",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Counseling after Preterm Preeclampsia",
+   "tags": [
+    "전문의급",
+    "board",
+    "preeclampsia",
+    "placental-pathology",
+    "maternal-vascular-malperfusion",
+    "low-dose-aspirin",
+    "cardiovascular-risk"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1213.md",
+   "snippet": "29세 여자(산과력 1 0 0 1)가 다음 임신을 계획하며 상담을 원해 왔다. 첫 임신 33주에 중증 전자간증으로 분만하였고 신생아는 주수에 비해 작았다. 태반 병리 보고서에는 태반 무게 310 g(주수 대비 10백분위 미만), 여러 개의 경색(전체 부피의 약 15 %), 태반 뒤 혈종 1개, 융모의 과장된 허혈 변화, 탈락막 기저층 나선동맥에 평활근이 남아 있고 벽이 두꺼움, 막과 융모에 염증 없음이 적혀 있다. 산후 12주",
+   "text": "Obstetrics & Gynecology Counseling after Preterm Preeclampsia 전문의급 board preeclampsia placental-pathology maternal-vascular-malperfusion low-dose-aspirin cardiovascular-risk 전문의급 · 2026-09-28 29세 여자(산과력 1 0 0 1)가 다음 임신을 계획하며 상담을 원해 왔다. 첫 임신 33주에 중증 전자간증으로 분만하였고 신생아는 주수에 비해 작았다. 태반 병리 보고서에는 태반 무게 310 g(주수 대비 10백분위 미만), 여러 개의 경색(전체 부피의 약 15 %), 태반 뒤 혈종 1개, 융모의 과장된 허혈 변화, 탈락막 기저층 나선동맥에 평활근이 남아 있고 벽이 두꺼움, 막과 융모에 염증 없음이 적혀 있다. 산후 12주에 혈압·소변은 정상으로 돌아왔다. 활력징후는 자료와 같다. 가장 적절한 상담 내용은? A. 감염성 태반이므로 다음 임신에 예방적 항생제 B. 다음 임신 12~14주 저용량 아스피린 시작과 장기 심혈관 추적 C. 혈압 정상화로 이후 심혈관 위험은 일반 여성과 같음 D. 저용량 아스피린은 28주 이후에 시작 E. 재발 방지를 위해 다음 임신은 제왕절개 재형성 실패형 태반 병력 → 다음 임신 12~14주 아스피린 + 장기 심혈관 추적."
+  },
+  {
+   "id": "kmle-2026-1212",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Hypertension and Thyrotoxicosis at 16 Weeks",
+   "tags": [
+    "전문의급",
+    "board",
+    "hydatidiform-mole",
+    "early-onset-preeclampsia",
+    "hcg-mediated-hyperthyroidism",
+    "suction-evacuation"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1212.md",
+   "snippet": "43세 여자(산과력 2 0 0 2)가 임신 16주에 두통·심한 구역·두근거림으로 병원에 왔다. 손이 떨리고 자궁은 임신 22주 크기다. 초음파에서 태아는 보이지 않고 자궁강을 채운 고에코 종괴 안에 작은 낭이 무수히 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 프로필티오우라실로 갑상샘 기능을 정상화한 뒤 임신 유지 B. 황산마그네슘 투여 후 프로스타글란딘으로 약물 유도분만 C. 예방적 methotre",
+   "text": "Obstetrics & Gynecology Hypertension and Thyrotoxicosis at 16 Weeks 전문의급 board hydatidiform-mole early-onset-preeclampsia hcg-mediated-hyperthyroidism suction-evacuation 전문의급 · 2026-09-28 43세 여자(산과력 2 0 0 2)가 임신 16주에 두통·심한 구역·두근거림으로 병원에 왔다. 손이 떨리고 자궁은 임신 22주 크기다. 초음파에서 태아는 보이지 않고 자궁강을 채운 고에코 종괴 안에 작은 낭이 무수히 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 프로필티오우라실로 갑상샘 기능을 정상화한 뒤 임신 유지 B. 황산마그네슘 투여 후 프로스타글란딘으로 약물 유도분만 C. 예방적 methotrexate 투여 후 hCG 추적 D. 즉시 자궁절제술로 기태 제거 E. 베타차단제·강압제로 안정화한 뒤 초음파 유도 흡입소파술 20주 전 전자간증 + hCG 갑상샘항진 → 기태 → 안정화 후 흡입소파."
+  },
+  {
+   "id": "kmle-2026-1211",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Cyclic Hemoptysis with a Lung Nodule",
+   "tags": [
+    "전문의급",
+    "board",
+    "endometriosis",
+    "thoracic-endometriosis",
+    "catamenial-hemoptysis",
+    "pathogenesis",
+    "lymphovascular-spread"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "medium",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1211.md",
+   "snippet": "34세 여자(산과력 0 0 0 0)가 1년 동안 월경 시작 이틀 안에만 반복되는 객혈로 병원에 왔다. 흉부 CT에서 오른쪽 폐 하엽 실질에 1.5 cm 결절이 있고 흉막·횡격막 병변은 없다. 골반 진찰과 초음파는 정상이었다. 쐐기 절제한 결절의 현미경 소견에서 폐포 사이에 입방 상피로 덮인 샘과 그 둘레의 작고 둥근 세포성 버팀질, 혈철소 대식세포가 있었다. 활력징후는 자료와 같다. 이 병소의 발생 경로를 가장 잘 설명하는 것",
+   "text": "Obstetrics & Gynecology Cyclic Hemoptysis with a Lung Nodule 전문의급 board endometriosis thoracic-endometriosis catamenial-hemoptysis pathogenesis lymphovascular-spread 전문의급 · 2026-09-28 34세 여자(산과력 0 0 0 0)가 1년 동안 월경 시작 이틀 안에만 반복되는 객혈로 병원에 왔다. 흉부 CT에서 오른쪽 폐 하엽 실질에 1.5 cm 결절이 있고 흉막·횡격막 병변은 없다. 골반 진찰과 초음파는 정상이었다. 쐐기 절제한 결절의 현미경 소견에서 폐포 사이에 입방 상피로 덮인 샘과 그 둘레의 작고 둥근 세포성 버팀질, 혈철소 대식세포가 있었다. 활력징후는 자료와 같다. 이 병소의 발생 경로를 가장 잘 설명하는 것은? A. 월경혈의 난관 역류 후 횡격막 결손을 지난 흉강 착상 B. 복막·흉막 중피의 화생 C. 혈관·림프관을 통한 자궁내막 조직의 파종 D. 뮐러관 잔재의 분화 E. 폐 원발 샘암의 자궁내막모양 분화 폐 실질의 주기성 병소 + 골반 · 흉막 병소 없음 = 혈관 · 림프 파종."
+  },
+  {
+   "id": "kmle-2026-1210",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Early Pregnancy Bleeding with an Adnexal Mass",
+   "tags": [
+    "전문의급",
+    "board",
+    "ectopic-pregnancy",
+    "methotrexate",
+    "pelvic-inflammatory-disease",
+    "yolk-sac",
+    "hemodynamic-stability"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1210.md",
+   "snippet": "30세 여자(산과력 0 0 0 0)가 마지막 월경 5주 5일 뒤 소량의 질출혈과 왼쪽 아랫배의 가벼운 통증으로 병원에 왔다. 5년 전 골반염증질환으로 입원 치료를 받았다. β hCG는 이틀 간격으로 1,180 → 1,260 mIU/mL이다. 질식 초음파에서 자궁 안에 태낭이 없고 자궁내막은 얇으며, 왼쪽 난소와 떨어진 부속기에 2.0 cm 고리 모양 종괴와 그 안의 난황낭이 보이고 태아 심박은 없다. 더글라스와에 소량의 맑은 ",
+   "text": "Obstetrics & Gynecology Early Pregnancy Bleeding with an Adnexal Mass 전문의급 board ectopic-pregnancy methotrexate pelvic-inflammatory-disease yolk-sac hemodynamic-stability 전문의급 · 2026-09-28 30세 여자(산과력 0 0 0 0)가 마지막 월경 5주 5일 뒤 소량의 질출혈과 왼쪽 아랫배의 가벼운 통증으로 병원에 왔다. 5년 전 골반염증질환으로 입원 치료를 받았다. β hCG는 이틀 간격으로 1,180 → 1,260 mIU/mL이다. 질식 초음파에서 자궁 안에 태낭이 없고 자궁내막은 얇으며, 왼쪽 난소와 떨어진 부속기에 2.0 cm 고리 모양 종괴와 그 안의 난황낭이 보이고 태아 심박은 없다. 더글라스와에 소량의 맑은 액체만 있다. 혈구 수치와 간·신장 기능은 정상이고, 수술 없는 치료를 원하며 정해진 날마다 추적 검사를 받으러 올 수 있다. 활력징후는 자료와 같다. 가장 적절한 처치는? A. Methotrexate 전신 투여 B. 복강경 난관절제술 C. 자궁내막 흡입소파술로 융모 유무 확인 D. 48시간 뒤 hCG 재검만 E. 진단적 자궁경 검사 부속기 난황낭(확정) + 안정 · 미파열 → methotrexate."
+  },
+  {
+   "id": "kmle-2026-1209",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Suspected Preeclampsia at 30 Weeks",
+   "tags": [
+    "전문의급",
+    "board",
+    "preeclampsia",
+    "sflt-1",
+    "plgf",
+    "angiogenic-markers",
+    "negative-predictive-value"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1209.md",
+   "snippet": "32세 초산부(산과력 0 0 0 0)가 임신 30주 산전 진찰에서 처음으로 혈압이 높게 측정되었고 가벼운 두통이 있다. 4시간 뒤 다시 잰 혈압은 136/86 mmHg였다. 혈소판·간효소·크레아티닌은 정상이다. 전자간증이 의심되어 혈청 sFlt 1과 PlGF를 측정하였다. 활력징후와 검사 소견은 자료와 같다. 이 결과에 대한 해석으로 가장 적절한 것은? A. 비가 낮으므로 4주 안에 전자간증이 생길 것이 확실하다 B. 비가 3",
+   "text": "Obstetrics & Gynecology Suspected Preeclampsia at 30 Weeks 전문의급 board preeclampsia sflt-1 plgf angiogenic-markers negative-predictive-value 전문의급 · 2026-09-28 32세 초산부(산과력 0 0 0 0)가 임신 30주 산전 진찰에서 처음으로 혈압이 높게 측정되었고 가벼운 두통이 있다. 4시간 뒤 다시 잰 혈압은 136/86 mmHg였다. 혈소판·간효소·크레아티닌은 정상이다. 전자간증이 의심되어 혈청 sFlt 1과 PlGF를 측정하였다. 활력징후와 검사 소견은 자료와 같다. 이 결과에 대한 해석으로 가장 적절한 것은? A. 비가 낮으므로 4주 안에 전자간증이 생길 것이 확실하다 B. 비가 38 이하이므로 태반 나선동맥 재형성이 정상이었음이 증명된다 C. 비가 낮으므로 즉시 분만한다 D. 비는 34주 이후에만 해석할 수 있다 E. 1주 안에 전자간증이 생길 가능성은 매우 낮다 sFlt 1:PlGF ≤38 = 1주 안 전자간증 배제(음성 예측도 ~99 %)."
+  },
+  {
+   "id": "kmle-2026-1208",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Hypertension with Headache and Epigastric Pain at 31 Weeks",
+   "tags": [
+    "전문의급",
+    "board",
+    "preeclampsia",
+    "hellp-syndrome",
+    "magnesium-sulfate",
+    "preterm-delivery",
+    "severe-features"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1208.md",
+   "snippet": "27세 초산부(산과력 0 0 0 0)가 임신 31주 5일에 이틀째 계속되는 두통과 명치 통증으로 병원에 왔다. 임신 전 혈압은 정상이었다. 15분 뒤 다시 잰 혈압은 164/110 mmHg였다. 태아 추정 체중은 8백분위, 비수축검사는 반응성이다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 경구 labetalol로 혈압을 조절하며 34주까지 기대요법 B. 베타메타손 투여 48시간 뒤 분만, 그동안 황산마그",
+   "text": "Obstetrics & Gynecology Hypertension with Headache and Epigastric Pain at 31 Weeks 전문의급 board preeclampsia hellp-syndrome magnesium-sulfate preterm-delivery severe-features 전문의급 · 2026-09-28 27세 초산부(산과력 0 0 0 0)가 임신 31주 5일에 이틀째 계속되는 두통과 명치 통증으로 병원에 왔다. 임신 전 혈압은 정상이었다. 15분 뒤 다시 잰 혈압은 164/110 mmHg였다. 태아 추정 체중은 8백분위, 비수축검사는 반응성이다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 경구 labetalol로 혈압을 조절하며 34주까지 기대요법 B. 베타메타손 투여 48시간 뒤 분만, 그동안 황산마그네슘은 쓰지 않음 C. 황산마그네슘 · 정맥 강압제로 안정화한 뒤 분만 D. 저용량 아스피린 시작 후 외래 추적 E. 혈소판 수혈 후 37주까지 입원 관찰 34주 전이라도 HELLP · 지속 증상이면 MgSO4 · 강압 안정화 후 분만."
+  },
+  {
+   "id": "kmle-2026-1207",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Surveillance after Molar Evacuation",
+   "tags": [
+    "전문의급",
+    "board",
+    "hydatidiform-mole",
+    "partial-mole",
+    "hcg-surveillance",
+    "triploidy",
+    "figo-2025"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1207.md",
+   "snippet": "34세 여자(산과력 1 0 0 1)가 흡입소파 뒤 추적 계획을 상담하러 왔다. 임신 12주에 질출혈로 왔을 때 초음파에서 태반이 크고 여러 개의 작은 낭성 공간을 보였고, 심박이 없는 성장 지연 태아가 있었다. 흡입소파 조직에서 크기가 제각각인 융모 일부가 부어 있었고 영양막 증식은 국소적이었다. p57 면역염색은 융모에서 양성이었고, 짧은 반복서열 유전형 분석에서 부계 대립형질 두 벌과 모계 대립형질 한 벌(69,XXY)이 ",
+   "text": "Obstetrics & Gynecology Surveillance after Molar Evacuation 전문의급 board hydatidiform-mole partial-mole hcg-surveillance triploidy figo-2025 전문의급 · 2026-09-28 34세 여자(산과력 1 0 0 1)가 흡입소파 뒤 추적 계획을 상담하러 왔다. 임신 12주에 질출혈로 왔을 때 초음파에서 태반이 크고 여러 개의 작은 낭성 공간을 보였고, 심박이 없는 성장 지연 태아가 있었다. 흡입소파 조직에서 크기가 제각각인 융모 일부가 부어 있었고 영양막 증식은 국소적이었다. p57 면역염색은 융모에서 양성이었고, 짧은 반복서열 유전형 분석에서 부계 대립형질 두 벌과 모계 대립형질 한 벌(69,XXY)이 확인되었다. 소파 뒤 β hCG는 매주 떨어져 5주째 정상 범위가 되었다. 활력징후는 자료와 같다. 이후 가장 적절한 추적 방법은? A. 정상화 뒤 6개월 동안 매달 hCG를 측정한다 B. 예방적 methotrexate를 한 주기 투여한다 C. 다음 임신 전 자궁절제술을 권한다 D. 정상화 1개월 뒤 hCG를 한 번 더 확인한 뒤 종료한다 E. 정상화되었으므로 더 이상 확인하지 않는다 이부계 삼배체 = 부분포상기태 → 정상화 1개월 뒤 1회 확인."
+  },
+  {
+   "id": "kmle-2026-1206",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Molar Pregnancy Ancillary Testing",
+   "tags": [
+    "전문의급",
+    "board",
+    "hydatidiform-mole",
+    "p57",
+    "genomic-imprinting",
+    "androgenetic",
+    "immunohistochemistry"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1206.md",
+   "snippet": "32세 여자가 임신 9주 계류유산으로 흡입소파술을 받았다. 소파 조직에서 융모 일부가 부어 있고 영양막 증식은 뚜렷하지 않아 현미경만으로는 기태 여부를 가르기 어려웠다. p57 면역염색에서 융모 버팀질세포 핵과 세포영양막 핵은 음성이었고, 같은 절편의 모체 탈락막 버팀질세포 핵과 융모밖 중간영양막 핵은 양성이었다. 활력징후는 자료와 같다. 이 조직의 유전 구성으로 가장 가능성이 높은 것은? A. 부계 단독 이배체(46,XX) ",
+   "text": "Obstetrics & Gynecology Molar Pregnancy Ancillary Testing 전문의급 board hydatidiform-mole p57 genomic-imprinting androgenetic immunohistochemistry 전문의급 · 2026-09-28 32세 여자가 임신 9주 계류유산으로 흡입소파술을 받았다. 소파 조직에서 융모 일부가 부어 있고 영양막 증식은 뚜렷하지 않아 현미경만으로는 기태 여부를 가르기 어려웠다. p57 면역염색에서 융모 버팀질세포 핵과 세포영양막 핵은 음성이었고, 같은 절편의 모체 탈락막 버팀질세포 핵과 융모밖 중간영양막 핵은 양성이었다. 활력징후는 자료와 같다. 이 조직의 유전 구성으로 가장 가능성이 높은 것은? A. 부계 단독 이배체(46,XX) B. 이부계 삼배체(69,XXY) C. 양부모 이배체의 정상 핵형(46,XX) D. 이모계 삼배체(69,XXX) E. 양부모 이배체의 16번 삼염색체(47,XX,+16) 융모 p57 음성(탈락막 양성) = 모계 게놈 없음 = 부계 단독 이배체."
+  },
+  {
+   "id": "kmle-2026-1205",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Post-molar Gestational Trophoblastic Neoplasia",
+   "tags": [
+    "전문의급",
+    "board",
+    "gestational-trophoblastic-neoplasia",
+    "hydatidiform-mole",
+    "figo-score",
+    "hcg-plateau",
+    "methotrexate"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1205.md",
+   "snippet": "31세 여자(산과력 0 0 1 0)가 완전포상기태로 흡입소파술을 받은 뒤 매주 β hCG를 추적하며 외래에 왔다. 소파 6주 뒤부터 측정한 β hCG는 자료와 같다. 질출혈은 소량이고 자궁 크기는 정상이며, 골반 초음파에서 자궁 근층에 2 cm 병변이 있다. 흉부 X선에서 폐에 1.2~1.8 cm 결절 3개가 보이며 뇌·간 영상은 정상이다. 이전 항암 치료는 없다. 활력징후는 자료와 같다. 가장 적절한 판단과 치료는? A. 정",
+   "text": "Obstetrics & Gynecology Post-molar Gestational Trophoblastic Neoplasia 전문의급 board gestational-trophoblastic-neoplasia hydatidiform-mole figo-score hcg-plateau methotrexate 전문의급 · 2026-09-28 31세 여자(산과력 0 0 1 0)가 완전포상기태로 흡입소파술을 받은 뒤 매주 β hCG를 추적하며 외래에 왔다. 소파 6주 뒤부터 측정한 β hCG는 자료와 같다. 질출혈은 소량이고 자궁 크기는 정상이며, 골반 초음파에서 자궁 근층에 2 cm 병변이 있다. 흉부 X선에서 폐에 1.2~1.8 cm 결절 3개가 보이며 뇌·간 영상은 정상이다. 이전 항암 치료는 없다. 활력징후는 자료와 같다. 가장 적절한 판단과 치료는? A. 정상적인 hCG 감소 과정이므로 월 1회 추적한다 B. GTN — FIGO III기 저위험으로 단일제 항암을 시작한다 C. GTN — FIGO III기 고위험으로 EMA CO 다제 항암을 시작한다 D. 잔류 기태 조직이므로 재흡입소파술을 한다 E. GTN — FIGO I기이므로 자궁절제술만 한다 hCG 3주 정체 = GTN · 폐 전이 = III기 · FIGO 점수 3 = 저위험 → 단일제 항암."
+  },
+  {
+   "id": "kmle-2026-1204",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Adjuvant Therapy after Breast-conserving Surgery",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "her2",
+    "fish",
+    "trastuzumab",
+    "cardiotoxicity",
+    "nottingham-grade"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1204.md",
+   "snippet": "50세 여자(폐경 1년)가 오른쪽 유방 2.4 cm 종괴로 유방보존수술과 감시 림프절 생검을 받고 수술 뒤 치료를 상의하러 왔다. 감시 림프절 2개는 전이가 없었다. 병리에서 침윤성 관암종이었고 관 형성은 종양의 5 % 미만, 핵 다형성이 심하며 유사분열이 고배율 10시야당 22개였다. 활력징후와 검사 소견은 자료와 같다. 수술 뒤 전신치료로 가장 적절한 것은? A. 탁산 항암화학요법과 트라스투주맙 동시 투여 1년 B. 안트라",
+   "text": "General Surgery Adjuvant Therapy after Breast-conserving Surgery 전문의급 board breast-cancer her2 fish trastuzumab cardiotoxicity nottingham-grade 전문의급 · 2026-09-28 50세 여자(폐경 1년)가 오른쪽 유방 2.4 cm 종괴로 유방보존수술과 감시 림프절 생검을 받고 수술 뒤 치료를 상의하러 왔다. 감시 림프절 2개는 전이가 없었다. 병리에서 침윤성 관암종이었고 관 형성은 종양의 5 % 미만, 핵 다형성이 심하며 유사분열이 고배율 10시야당 22개였다. 활력징후와 검사 소견은 자료와 같다. 수술 뒤 전신치료로 가장 적절한 것은? A. 탁산 항암화학요법과 트라스투주맙 동시 투여 1년 B. 안트라사이클린과 트라스투주맙 동시 투여 1년 C. 방향화효소억제제 5년 D. 항암화학요법만(항HER2 치료 없음) E. 트라스투주맙 단독 6개월 IHC 2+ → FISH 2.6 = HER2 양성 → 탁산 + 트라스투주맙(동시) 1년."
+  },
+  {
+   "id": "kmle-2026-1203",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Spiculated Breast Lesion on Excision Biopsy",
+   "tags": [
+    "전문의급",
+    "board",
+    "radial-scar",
+    "complex-sclerosing-lesion",
+    "myoepithelial-markers",
+    "p63",
+    "tubular-carcinoma"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1203.md",
+   "snippet": "49세 여자가 검진 유방촬영에서 왼쪽 유방에 가시처럼 뻗는 1.3 cm 별 모양 음영이 보여 절제 생검을 받았다. 병리에서 가운데에 탄력섬유가 섞인 유리질 섬유 핵이 있고 그 안에 작고 모난 샘이 갇혀 있었으며, 가장자리로 갈수록 관이 넓어지고 개화성 상피증식·선증·낭이 방사상으로 배열되어 있었다. p63과 평활근 마이오신 중쇄(SMMHC) 면역염색에서 갇힌 샘을 포함한 모든 샘에 연속된 근상피 테두리가 있었고, 핵 다형성과 ",
+   "text": "General Surgery Spiculated Breast Lesion on Excision Biopsy 전문의급 board radial-scar complex-sclerosing-lesion myoepithelial-markers p63 tubular-carcinoma 전문의급 · 2026-09-28 49세 여자가 검진 유방촬영에서 왼쪽 유방에 가시처럼 뻗는 1.3 cm 별 모양 음영이 보여 절제 생검을 받았다. 병리에서 가운데에 탄력섬유가 섞인 유리질 섬유 핵이 있고 그 안에 작고 모난 샘이 갇혀 있었으며, 가장자리로 갈수록 관이 넓어지고 개화성 상피증식·선증·낭이 방사상으로 배열되어 있었다. p63과 평활근 마이오신 중쇄(SMMHC) 면역염색에서 갇힌 샘을 포함한 모든 샘에 연속된 근상피 테두리가 있었고, 핵 다형성과 괴사는 없었다. 활력징후는 자료와 같다. 가장 적절한 진단은? A. 관상암종 B. 침윤성 관암종(특수형 아님) 1등급 C. 복합경화성병변(방사상 흉터) D. 경화성 선증 E. 섬유종증 별 모양 + 흉터 핵에 갇힌 샘 + 근상피 보존 = 방사상 흉터 — 관상암종과는 근상피 한 조건."
+  },
+  {
+   "id": "kmle-2026-1202",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Gynecomastia in a Young Man",
+   "tags": [
+    "전문의급",
+    "board",
+    "gynecomastia",
+    "hcg",
+    "estradiol",
+    "testicular-germ-cell-tumor",
+    "scrotal-ultrasound"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1202.md",
+   "snippet": "24세 남자가 석 달 사이 왼쪽 유두 아래가 커지고 눌러서 아파 병원에 왔다. 약물·한약·보충제 복용이나 음주·간질환 병력은 없고 체질량지수는 22 kg/㎡이다. 유두 아래 4.5 cm의 원판 모양 단단한 샘조직이 만져지나 피부 고정은 없다. 간기능과 갑상샘자극호르몬은 정상이다. 활력징후와 검사 소견은 자료와 같다. 다음 단계로 가장 적절한 것은? A. 사춘기·청년기 생리적 변화로 보고 6개월 추적 B. 유방촬영과 중심부 침생",
+   "text": "Endocrinology Gynecomastia in a Young Man 전문의급 board gynecomastia hcg estradiol testicular-germ-cell-tumor scrotal-ultrasound 전문의급 · 2026-09-28 24세 남자가 석 달 사이 왼쪽 유두 아래가 커지고 눌러서 아파 병원에 왔다. 약물·한약·보충제 복용이나 음주·간질환 병력은 없고 체질량지수는 22 kg/㎡이다. 유두 아래 4.5 cm의 원판 모양 단단한 샘조직이 만져지나 피부 고정은 없다. 간기능과 갑상샘자극호르몬은 정상이다. 활력징후와 검사 소견은 자료와 같다. 다음 단계로 가장 적절한 것은? A. 사춘기·청년기 생리적 변화로 보고 6개월 추적 B. 유방촬영과 중심부 침생검 C. 타목시펜 20 mg 3개월 투여 D. 양쪽 고환 초음파 E. 말초혈액 핵형 검사 여성형 유방 + 에스트라디올 ↑ · LH 억제 · hCG ↑ → 고환 생식세포종양 찾기 = 고환 초음파."
+  },
+  {
+   "id": "kmle-2026-1201",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Lobular Neoplasia on Breast Biopsy",
+   "tags": [
+    "전문의급",
+    "board",
+    "lobular-carcinoma-in-situ",
+    "e-cadherin",
+    "chemoprevention",
+    "breast-biopsy",
+    "overtreatment"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1201.md",
+   "snippet": "54세 여자(폐경 3년)가 검진 유방촬영의 작은 무리 석회로 입체정위 침생검을 받고 결과 상담을 위해 왔다. 석회는 섬유낭성 변화의 아포크린 낭 안에 있었고, 그와 떨어진 한 소엽의 선방 절반 넘게가 작고 둥글며 단조로운 세포로 꽉 차 부풀어 있었다. 세포 사이 부착이 느슨하고 E cadherin 면역염색은 이 세포들에서 음성이었다. 괴사·다형성·침윤은 없고 근상피 테두리는 보존되어 있었다. 추가 절제 생검에서도 같은 병변만 ",
+   "text": "General Surgery Lobular Neoplasia on Breast Biopsy 전문의급 board lobular-carcinoma-in-situ e-cadherin chemoprevention breast-biopsy overtreatment 전문의급 · 2026-09-28 54세 여자(폐경 3년)가 검진 유방촬영의 작은 무리 석회로 입체정위 침생검을 받고 결과 상담을 위해 왔다. 석회는 섬유낭성 변화의 아포크린 낭 안에 있었고, 그와 떨어진 한 소엽의 선방 절반 넘게가 작고 둥글며 단조로운 세포로 꽉 차 부풀어 있었다. 세포 사이 부착이 느슨하고 E cadherin 면역염색은 이 세포들에서 음성이었다. 괴사·다형성·침윤은 없고 근상피 테두리는 보존되어 있었다. 추가 절제 생검에서도 같은 병변만 있었고 절제연에 병변이 걸쳐 있었다. 활력징후는 자료와 같다. 이후 관리로 가장 적절한 것은? A. 절제연 음성이 될 때까지 재절제 B. 같은 쪽 유방절제술 C. 감시 림프절 생검 D. 전유방 방사선치료 E. 정기 영상 추적과 화학예방 논의 고전형 LCIS = 위험 표지 → 절제연 · 수술 · 방사선이 아니라 추적 + 화학예방."
+  },
+  {
+   "id": "kmle-2026-1200",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Adjuvant Therapy for Early Breast Cancer with Comorbidities",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "aromatase-inhibitor",
+    "tamoxifen",
+    "venous-thromboembolism",
+    "osteoporosis",
+    "bisphosphonate"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1200.md",
+   "snippet": "69세 여자가 유방암 수술 뒤 보조 전신치료를 상의하러 왔다. 오른쪽 유방 0.9 cm 침윤성 관암종으로 유방보존수술·감시 림프절 생검(음성)·방사선치료를 받았다. 종양은 1등급, 에스트로겐수용체 95 %, 프로게스테론수용체 80 %, HER2 면역염색 0이다. 3년 전 다리 깊은정맥혈전증으로 6개월 항응고치료를 받았다. 이번 이중에너지 X선 흡수법에서 요추 T 점수 −2.7, 대퇴경부 −2.3이었다. 활력징후와 검사 소견은 ",
+   "text": "General Surgery Adjuvant Therapy for Early Breast Cancer with Comorbidities 전문의급 board breast-cancer aromatase-inhibitor tamoxifen venous-thromboembolism osteoporosis bisphosphonate 전문의급 · 2026-09-28 69세 여자가 유방암 수술 뒤 보조 전신치료를 상의하러 왔다. 오른쪽 유방 0.9 cm 침윤성 관암종으로 유방보존수술·감시 림프절 생검(음성)·방사선치료를 받았다. 종양은 1등급, 에스트로겐수용체 95 %, 프로게스테론수용체 80 %, HER2 면역염색 0이다. 3년 전 다리 깊은정맥혈전증으로 6개월 항응고치료를 받았다. 이번 이중에너지 X선 흡수법에서 요추 T 점수 −2.7, 대퇴경부 −2.3이었다. 활력징후와 검사 소견은 자료와 같다. 보조 전신치료로 가장 적절한 것은? A. 타목시펜 5년 복용 B. 방향화효소억제제 + 뼈 흡수 억제제 C. 방향화효소억제제, 뼈 치료는 1년 뒤 재평가 D. 항암화학요법 후 타목시펜 E. 정기 추적 관찰 폐경 후 ER+ · 혈전 병력 → AI · 골다공증 동반 → 뼈 흡수 억제제 병용."
+  },
+  {
+   "id": "kmle-2026-1199",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Adjuvant Endocrine Therapy in a Young Woman with Breast Cancer",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "hormone-receptor-positive",
+    "ovarian-suppression",
+    "aromatase-inhibitor",
+    "premenopausal"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1199.md",
+   "snippet": "41세 여자가 유방암 수술과 항암화학요법을 마친 뒤 보조 내분비치료를 상의하러 왔다. 종양은 왼쪽 유방 2.6 cm 침윤성 관암종(에스트로겐수용체 90 %, 프로게스테론수용체 60 %, HER2 음성)이었고 겨드랑이 림프절 3개에 전이가 있었다. 항암 중 멈췄던 월경이 4개월 전부터 다시 규칙적이고, 혈청 에스트라디올은 폐경 전 범위이다. 활력징후는 자료와 같다. 재발 위험이 높다고 판단해 에스트로겐을 가장 강하게 낮추는 보조",
+   "text": "General Surgery Adjuvant Endocrine Therapy in a Young Woman with Breast Cancer 전문의급 board breast-cancer hormone-receptor-positive ovarian-suppression aromatase-inhibitor premenopausal 전문의급 · 2026-09-28 41세 여자가 유방암 수술과 항암화학요법을 마친 뒤 보조 내분비치료를 상의하러 왔다. 종양은 왼쪽 유방 2.6 cm 침윤성 관암종(에스트로겐수용체 90 %, 프로게스테론수용체 60 %, HER2 음성)이었고 겨드랑이 림프절 3개에 전이가 있었다. 항암 중 멈췄던 월경이 4개월 전부터 다시 규칙적이고, 혈청 에스트라디올은 폐경 전 범위이다. 활력징후는 자료와 같다. 재발 위험이 높다고 판단해 에스트로겐을 가장 강하게 낮추는 보조 내분비치료를 하려 한다. 가장 적절한 것은? A. 방향화효소억제제 5년 B. 타목시펜 + 에스트로겐 보충 C. 프로게스틴 경구 투여 D. 폐경이 오면 내분비치료 시작 E. GnRH 작용제 난소 억제 + 방향화효소억제제 폐경 전 · 림프절 양성 ER 양성 → 난소 억제(GnRH 작용제) + 방향화효소억제제."
+  },
+  {
+   "id": "kmle-2026-1198",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "BRCA1 Carrier after Breast Cancer",
+   "tags": [
+    "전문의급",
+    "board",
+    "brca1",
+    "hereditary-breast-ovarian-cancer",
+    "risk-reducing-surgery",
+    "high-grade-serous-carcinoma"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1198.md",
+   "snippet": "38세 여자가 앞으로의 암 위험을 줄이는 방법을 상담하러 왔다. 2년 전 왼쪽 유방의 삼중음성 유방암으로 유방보존수술·항암·방사선치료를 마치고 재발 없이 지낸다. 치료 중 시행한 생식계열 검사에서 BRCA1 병적 변이가 확인되었다. 자녀 둘을 두었고 더 이상 출산 계획이 없다. 어머니는 49세에 난소암으로 사망했다. 경질초음파와 CA 125는 정상이다. 활력징후는 자료와 같다. 앞으로의 위험 감소 전략으로 가장 효과가 크고 권",
+   "text": "Obstetrics & Gynecology BRCA1 Carrier after Breast Cancer 전문의급 board brca1 hereditary-breast-ovarian-cancer risk-reducing-surgery high-grade-serous-carcinoma 전문의급 · 2026-09-28 38세 여자가 앞으로의 암 위험을 줄이는 방법을 상담하러 왔다. 2년 전 왼쪽 유방의 삼중음성 유방암으로 유방보존수술·항암·방사선치료를 마치고 재발 없이 지낸다. 치료 중 시행한 생식계열 검사에서 BRCA1 병적 변이가 확인되었다. 자녀 둘을 두었고 더 이상 출산 계획이 없다. 어머니는 49세에 난소암으로 사망했다. 경질초음파와 CA 125는 정상이다. 활력징후는 자료와 같다. 앞으로의 위험 감소 전략으로 가장 효과가 크고 권할 만한 것은? A. 매년 CA 125·경질초음파 난소 감시 B. 자궁적출술(난소·난관 보존) C. 예방적 양측 난소난관절제술 D. 타목시펜 5년 복용 E. 50세 이후 난소 수술 논의 BRCA1 보인자 · 출산 완료 → 예방적 양측 난소난관절제(난소암 + 유방암 위험 동시 감소)."
+  },
+  {
+   "id": "kmle-2026-1197",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Invasive Lobular Carcinoma with Familial Gastric Cancer",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "lobular-carcinoma",
+    "e-cadherin",
+    "cdh1",
+    "hereditary-diffuse-gastric-cancer"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1197.md",
+   "snippet": "36세 여자가 오른쪽 유방이 넓게 단단해져 병원에 왔다. 침생검에서 작고 균일한 종양세포가 둥지를 만들지 않고 간질 사이로 한 줄씩 늘어서 있었다. E cadherin 면역염색에서 종양세포의 세포막은 염색되지 않았고, 조직 안에 남은 정상 관 상피의 세포막은 갈색으로 염색되었다. 아버지는 42세에 반지세포가 흩어지는 형태의 위암으로, 고모는 30대에 같은 형태의 위암으로 사망했다. 생식계열 유전 검사에서 병적 변이가 확인되었다",
+   "text": "General Surgery Invasive Lobular Carcinoma with Familial Gastric Cancer 전문의급 board breast-cancer lobular-carcinoma e-cadherin cdh1 hereditary-diffuse-gastric-cancer 전문의급 · 2026-09-28 36세 여자가 오른쪽 유방이 넓게 단단해져 병원에 왔다. 침생검에서 작고 균일한 종양세포가 둥지를 만들지 않고 간질 사이로 한 줄씩 늘어서 있었다. E cadherin 면역염색에서 종양세포의 세포막은 염색되지 않았고, 조직 안에 남은 정상 관 상피의 세포막은 갈색으로 염색되었다. 아버지는 42세에 반지세포가 흩어지는 형태의 위암으로, 고모는 30대에 같은 형태의 위암으로 사망했다. 생식계열 유전 검사에서 병적 변이가 확인되었다. 활력징후는 자료와 같다. 이 환자와 변이 보인자 가족에게 가장 우선하여 논의할 예방적 조치는? A. 예방적 위전절제술 B. 예방적 양측 난소난관절제술 C. 대장내시경 매년 D. 갑상샘 초음파 매년 E. 예방적 췌십이지장절제술 소엽암(E cadherin 소실) + 젊은 미만형 위암 가족력 = CDH1 → 예방적 위절제 논의."
+  },
+  {
+   "id": "kmle-2026-1196",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Triple-negative Breast Cancer in a Young Woman",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "triple-negative",
+    "brca1",
+    "germline-testing",
+    "hereditary-cancer"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1196.md",
+   "snippet": "33세 여자가 오른쪽 유방암으로 진단받고 치료 계획을 위해 왔다. 종괴는 1.9 cm이고, 침생검에서 침윤성 관암종 3등급, 에스트로겐수용체 0 %, 프로게스테론수용체 0 %, HER2 면역염색 1+, Ki 67 70 %였다. 부모·형제·이모·고모 모두 암 병력이 없다고 한다. 영상에서 겨드랑이 림프절 종대나 원격 전이 소견은 없다. 활력징후는 자료와 같다. 치료 계획을 세우며 지금 시행할 검사로 가장 적절한 것은? A. HE",
+   "text": "General Surgery Triple-negative Breast Cancer in a Young Woman 전문의급 board breast-cancer triple-negative brca1 germline-testing hereditary-cancer 전문의급 · 2026-09-28 33세 여자가 오른쪽 유방암으로 진단받고 치료 계획을 위해 왔다. 종괴는 1.9 cm이고, 침생검에서 침윤성 관암종 3등급, 에스트로겐수용체 0 %, 프로게스테론수용체 0 %, HER2 면역염색 1+, Ki 67 70 %였다. 부모·형제·이모·고모 모두 암 병력이 없다고 한다. 영상에서 겨드랑이 림프절 종대나 원격 전이 소견은 없다. 활력징후는 자료와 같다. 치료 계획을 세우며 지금 시행할 검사로 가장 적절한 것은? A. HER2 형광제자리부합법(FISH) B. 21 유전자 재발점수 검사 C. 뼈 스캔·흉복부 CT D. 생식계열 BRCA1/2(유전자 패널) 검사 E. 유전 검사 생략(가족력 없음) 삼중음성 + 40세 미만 → 가족력과 무관하게 생식계열 BRCA 검사."
+  },
+  {
+   "id": "kmle-2026-1195",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "HER2-positive Breast Cancer after Neoadjuvant Therapy",
+   "tags": [
+    "전문의급",
+    "board",
+    "breast-cancer",
+    "her2",
+    "neoadjuvant",
+    "residual-disease",
+    "t-dm1",
+    "capecitabine"
+   ],
+   "source": "전문의급 · 2026-09-28",
+   "confidence": "high",
+   "date": "2026-09-28",
+   "path": "content/kmle/2026/kmle-2026-1195.md",
+   "snippet": "37세 여자가 왼쪽 유방암 수술 뒤 전신치료 계획을 위해 왔다. 처음 진단 때 왼쪽 유방에 3.8 cm 종괴와 커진 겨드랑이 림프절 1개가 있었고, 침생검에서 침윤성 관암종, 에스트로겐수용체 0 %, 프로게스테론수용체 0 %였으며, 같은 조직의 HER2 면역염색에서 거의 모든 종양세포의 세포막 전체가 고리 모양으로 진하게 염색되었다. 탁산 기반 항암화학요법과 트라스투주맙·퍼투주맙으로 선행치료 6주기 뒤 유방절제술과 겨드랑이 수",
+   "text": "General Surgery HER2-positive Breast Cancer after Neoadjuvant Therapy 전문의급 board breast-cancer her2 neoadjuvant residual-disease t-dm1 capecitabine 전문의급 · 2026-09-28 37세 여자가 왼쪽 유방암 수술 뒤 전신치료 계획을 위해 왔다. 처음 진단 때 왼쪽 유방에 3.8 cm 종괴와 커진 겨드랑이 림프절 1개가 있었고, 침생검에서 침윤성 관암종, 에스트로겐수용체 0 %, 프로게스테론수용체 0 %였으며, 같은 조직의 HER2 면역염색에서 거의 모든 종양세포의 세포막 전체가 고리 모양으로 진하게 염색되었다. 탁산 기반 항암화학요법과 트라스투주맙·퍼투주맙으로 선행치료 6주기 뒤 유방절제술과 겨드랑이 수술을 받았다. 수술 병리에서 원래 종양 자리에 1.1 cm의 잔여 침윤성 관암종이 있었고, 떼어 낸 겨드랑이 림프절에는 모두 전이가 없었다. 활력징후는 자료와 같다. 수술 뒤 전신치료로 가장 적절한 것은? A. 트라스투주맙 유지로 1년을 채운다 B. T DM1으로 바꾼다 C. 카페시타빈 6개월 D. 타목시펜 5년 E. 정기 추적 관찰 HER2 3+ · 선행치료 뒤 잔여 침윤암 → T DM1(삼중음성이면 카페시타빈)."
   },
   {
    "id": "kmle-2026-1194",
@@ -5088,8 +5755,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/ophthalmology/cn.ophth.chemical-burn.immediate-irrigation.md",
-   "snippet": "정의 안구 화학화상은 산·알칼리가 결막·각막에 닿아 생기는 손상이다. 산업 현장·가정 세정제·시멘트·배터리액이 흔한 원인이며, 노출 뒤 경과 시간과 물질의 성질 이 손상 깊이를 정한다 [[?eslani 2014]]. 병태생리 정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 윤부(각막 결막 경계)의 줄기세포 에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다. 알칼리 ",
-   "text": "Ophthalmology 정의 안구 화학화상은 산·알칼리가 결막·각막에 닿아 생기는 손상이다. 산업 현장·가정 세정제·시멘트·배터리액이 흔한 원인이며, 노출 뒤 경과 시간과 물질의 성질 이 손상 깊이를 정한다 [[?eslani 2014]]. 병태생리 정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 윤부(각막 결막 경계)의 줄기세포 에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다. 알칼리 는 세포막 지질을 비누화해 세포를 녹이며(액화괴사) 장벽 없이 기질·전방까지 들어간다. 기질 콜라겐 손상 → 각막 혼탁, 윤부 허혈 → 줄기세포 소실 → 상피가 재생되지 못한다 [[?eslani 2014]]. 산 은 단백을 응고시켜 표면에 응고층을 만들고, 그 층이 더 깊은 침투를 막는 경우가 많다(불산은 예외) [[?eslani 2014]]. 기전에서 소견으로 결막낭에 남은 화학물질 → 세척 전까지 손상이 계속된다. 「가장 먼저」의 근거. 윤부 허혈(윤부 둘레가 하얗게 창백) → 줄기세포 손상의 신호, 예후가 나쁘다. 각막 상피 결손 → 형광염색 양성, 심하면 기질 혼탁으로 홍채가 안 보인다. 전방 침투 → 안압 상승·포도막염·백내장 같은 뒤따르는 합병증. 감별 경위가 판단을 정한다. 화학물질 노출이 확인되면 감별보다 세척이 먼저다. 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염·포도막염을 가른다. 검사 세척으로 pH 를 정상화한 뒤: 시력, 세극등(형광염색으로 상피 결손 범위, 윤부 허혈 범위, 각막 혼탁), 안압. 이 소견으로 중증도를 매겨 예후와 치료 수준을 정한다 [[?eslani 2014]]. 치료 1. 즉시 세척 — 점안마취 뒤 눈꺼풀을 벌려 생리식염수·링거액 등으로 다량 지속 세척, 결막낭 pH 가 중성이 될 때까지 [[?eslani 2014]]. 수돗물이라도 지체 없이 쓰는 편이 낫다. 2. 눈꺼풀을 뒤집어 남은 입자(시멘트·석회)를 제거한다. 3. 세척 뒤 평가에 따라 항생제 점안(감염 예방), 조절마비제(통증), 안압 조절, 염증 조절(스테로이드는 안과 판단으로 초기에 짧게) [[?eslani 2014]]. 4. 중증(윤부 허혈 넓음)은 안과 수술적 재건(양막 이식 등)까지 이어질 수 있다. 권고와 예외 검사·병력 청취·전원은 세척을 늦출 이유가 아니다. 안연고+안대는 찰과상의 처치이며 세척 뒤의 일이다 [[harrison 21: 32장 p.218]]. (심화) 왜 「pH 중성까지」인가 세척량을 리터로 정하지 않고 pH 로 정하는 것은, 조직 속에 스며든 알칼리가 세척을 멈춘 뒤에도 결막낭으로 다시 스며 나오기 때문이다. 그래서 중성이 된 뒤 잠시 기다려 다시 재고, 다시 오르면 세척을 이어 간다."
+   "snippet": "판단 — 왜 세척이 검사보다 먼저인가 안구 화학화상은 노출 뒤 경과 시간과 물질의 성질 이 손상 깊이를 정한다 [[?eslani 2014]] — 결막낭에 남은 화학물질은 세척 전까지 손상을 계속한다. 그래서 시력·세극등·안압 측정, 병력 청취·전원은 세척을 늦출 이유가 아니다. 이 검사들은 pH 를 정상화한 뒤 중증도를 매기는 단계다. 경위가 판단을 정한다. 화학물질 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염",
+   "text": "Ophthalmology 판단 — 왜 세척이 검사보다 먼저인가 안구 화학화상은 노출 뒤 경과 시간과 물질의 성질 이 손상 깊이를 정한다 [[?eslani 2014]] — 결막낭에 남은 화학물질은 세척 전까지 손상을 계속한다. 그래서 시력·세극등·안압 측정, 병력 청취·전원은 세척을 늦출 이유가 아니다. 이 검사들은 pH 를 정상화한 뒤 중증도를 매기는 단계다. 경위가 판단을 정한다. 화학물질 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염·포도막염을 가른다. 기전 — 결막낭에 남은 화학물질에서 손상으로 정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 윤부(각막 결막 경계, limbus)의 줄기세포 에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다. 알칼리 는 세포막 지질을 비누화해 세포를 녹이며(액화괴사) 장벽 없이 기질·전방까지 들어간다. 기질 콜라겐 손상 → 각막 혼탁, 윤부 허혈 → 줄기세포 소실 → 상피가 재생되지 못한다 [[?eslani 2014]]. 산 은 단백을 응고시켜 표면에 응고층을 만들고, 그 층이 더 깊은 침투를 막는 경우가 많다(불산은 예외) [[?eslani 2014]]. 가르는 소견 — 세척 뒤 중증도 평가 세척으로 pH 를 정상화한 뒤 시력, 세극등(형광염색), 안압으로 중증도를 매겨 예후와 치료 수준을 정한다 [[?eslani 2014]]. 윤부 허혈(윤부 둘레가 하얗게 창백) → 줄기세포 손상의 신호, 예후가 나쁘다. 각막 상피 결손 → 형광염색 양성, 심하면 기질 혼탁으로 홍채가 안 보인다. 전방 침투 → 안압 상승·포도막염·백내장 같은 뒤따르는 합병증. 선택 — 세척하는 법과 그 뒤의 처치 1. 즉시 세척 — 점안마취 뒤 눈꺼풀을 벌려 생리식염수·링거액 등으로 다량 지속 세척, 결막낭 pH 가 중성이 될 때까지 [[?eslani 2014]]. 수돗물이라도 지체 없이 쓰는 편이 낫다. 2. 눈꺼풀을 뒤집어 남은 입자(시멘트·석회)를 제거한다. 3. 세척 뒤 평가에 따라 항생제 점안(감염 예방), 조절마비제(통증), 안압 조절, 염증 조절(스테로이드는 안과 판단으로 초기에 짧게) [[?eslani 2014]]. 4. 중증(윤부 허혈 넓음)은 안과 수술적 재건(양막 이식 등)까지 이어질 수 있다. 권고와 예외 검사·병력 청취·전원은 세척을 늦출 이유가 아니다. 안연고+안대는 찰과상의 처치이며 세척 뒤의 일이다 [[harrison 21: 32장 p.218]]. 해리슨 32장에는 안구 화학화상 서술이 없어 세척 원칙은 해리슨으로 대조하지 못했다(검토 항목). (심화) 왜 「pH 중성까지」인가 세척량을 리터로 정하지 않고 pH 로 정하는 것은, 조직 속에 스며든 알칼리가 세척을 멈춘 뒤에도 결막낭으로 다시 스며 나오기 때문이다. 그래서 중성이 된 뒤 잠시 기다려 다시 재고, 다시 오르면 세척을 이어 간다."
   },
   {
    "id": "cn.obgyn.pcos-infertility.ovulation-induction",
@@ -5480,8 +6147,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/dermatology/cn.derm.erythema-nodosum.underlying-cause-workup.md",
-   "snippet": "정의 결절홍반은 피하지방의 격막(septum) 에 생기는 반응성 염증, 즉 격막성 지방층염이다. 병변 안에 균이나 종양이 있는 것이 아니라, 감염·염증 질환·약물에 대한 면역 반응이 피부에 드러난 것 이다 [[harrison 21: 58장 p.397]]. 병태생리 정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 격막으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반",
-   "text": "Dermatology 정의 결절홍반은 피하지방의 격막(septum) 에 생기는 반응성 염증, 즉 격막성 지방층염이다. 병변 안에 균이나 종양이 있는 것이 아니라, 감염·염증 질환·약물에 대한 면역 반응이 피부에 드러난 것 이다 [[harrison 21: 58장 p.397]]. 병태생리 정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 격막으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반응으로 격막에 염증세포가 모인다. 지방 소엽 자체가 괴사하지 않으므로 궤양이나 흉터 없이 낫는다 — 이것이 다른 지방층염과 가르는 핵심이다 [[harrison 21: 58장 p.397]]. 기전에서 소견으로 깊은 지방층 염증 → 표면은 매끈하고 만지면 단단하고 아픈 결절. 표면 비늘·물집이 없다. 격막 염증이 가라앉으면서 혈색소가 분해 → 붉은색에서 멍 같은 푸른색 으로 바뀐다 [[harrison 21: 58장 p.397]]. 전신 면역 반응 → 원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있다 [[harrison 21: 58장 p.397]]. 그러므로 이런 전신 증상을 「중증 감염」의 근거로 삼아 항생제를 먼저 쓰지 않는다. 감별 경결홍반·결절성 혈관염 : 종아리, 궤양·흉터 가능, 결핵과 연관 [[harrison 21: 58장 p.397]]. 봉와직염 : 한쪽, 경계가 퍼지는 홍반, 결절 여러 개가 양쪽에 대칭으로 생기지 않는다. 루푸스 지방층염 : 뺨·위팔·엉덩이처럼 지방이 많은 자리 [[harrison 21: 58장 p.397]]. 검사 진단은 대개 임상적이다. 검사는 원인을 찾기 위한 것 이다(표 참고). 생검이 필요하면 지방층까지 포함한 깊은 조직을 얻어야 한다 — 표재 생검으로는 지방층염을 볼 수 없다. 치료 원인을 치료하고(연쇄구균이면 항생제, 약물이면 중단), 병변에는 안정·다리 올리기·NSAID 등 대증치료를 한다 [[?schwartz 2007]]. 결절은 대개 수주에 걸쳐 저절로 가라앉는다. 결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다. 권고와 예외 원인 검사를 해도 원인을 못 찾는 특발성이 적지 않다 [[?schwartz 2007]] — 음성이면 대증치료로 경과를 본다. 국소 스테로이드는 원인 검사를 대신하지 않는다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 58장 p.397) (심화) 「다음 단계」 문항의 구조 보기에 치료가 여러 개 섞여 있어도, 결절홍반처럼 다른 병의 신호인 피부 소견 에서는 「원인을 찾는다」가 다음 단계다. 같은 구조가 흑색극세포증(인슐린 저항성·위암), 괴저성 농피증(염증성 장질환)에도 되풀이된다."
+   "snippet": "판단 — 왜 원인 검사가 먼저인가 결절홍반은 감염·염증 질환·약물에 대한 면역 반응이 피부에 드러난 것 이다 — 병변 안에 균이나 종양이 없다 [[harrison 21: 58장 p.397]]. 그래서 병변을 가라앉히는 치료(국소 스테로이드·절제)는 원인을 놓친다. 다음 단계는 원인 검사다(표). 원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있으나, 기저 질환은 배제해야 한다 [[harrison 21: ",
+   "text": "Dermatology 판단 — 왜 원인 검사가 먼저인가 결절홍반은 감염·염증 질환·약물에 대한 면역 반응이 피부에 드러난 것 이다 — 병변 안에 균이나 종양이 없다 [[harrison 21: 58장 p.397]]. 그래서 병변을 가라앉히는 치료(국소 스테로이드·절제)는 원인을 놓친다. 다음 단계는 원인 검사다(표). 원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있으나, 기저 질환은 배제해야 한다 [[harrison 21: 58장 p.397]]. 진단은 대개 임상적이다 — 검사는 원인을 찾기 위한 것 이다. 기전 — 격막 지방층염에서 소견으로 정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 격막(septum) 으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반응으로 격막에 염증세포가 모인다. 지방 소엽 자체가 괴사하지 않으므로 궤양이나 흉터 없이 낫는다 — 다른 지방층염과 가르는 핵심이다 [[harrison 21: 58장 p.397]]. 깊은 지방층 염증 → 표면은 매끈하고 만지면 단단하고 아픈 결절. 표면 비늘·물집이 없다. 염증이 가라앉으면서 혈색소가 분해 → 붉은색에서 멍 같은 푸른색 으로 바뀐다 [[harrison 21: 58장 p.397]]. 가르는 소견 — 위치·궤양·흉터 위치(정강이 vs 종아리)와 경과(궤양·흉터 유무)가 결절홍반과 경결홍반을 가른다(표). 생검이 필요하면 지방층까지 포함한 깊은 조직을 얻어야 한다 — 표재 생검으로는 지방층염을 볼 수 없다. 선택 — 원인을 찾는 검사 원인 무리별로 먼저 할 검사를 고른다(표). 흉부 X선은 사르코이드증(양측 폐문 림프절)과 결핵을 찾는다. 원인을 치료하고(연쇄구균이면 항생제, 약물이면 중단), 병변에는 안정·다리 올리기·NSAID 등 대증치료를 한다 [[?schwartz 2007]]. 결절은 대개 수주에 걸쳐 저절로 가라앉는다. 결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다. 권고와 예외 원인 검사를 해도 원인을 못 찾는 특발성이 적지 않다 [[?schwartz 2007]] — 음성이면 대증치료로 경과를 본다. 국소 스테로이드는 원인 검사를 대신하지 않는다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 58장 p.397) (심화) 다른 병의 신호인 피부 소견 결절홍반처럼 다른 병의 신호인 피부 소견 에서는 원인을 찾는 것이 다음 단계다. 같은 구조가 흑색극세포증(인슐린 저항성·위암), 괴저성 농피증(염증성 장질환)에도 되풀이된다."
   },
   {
    "id": "cn.cardio.qrs-axis.limb-lead-polarity",

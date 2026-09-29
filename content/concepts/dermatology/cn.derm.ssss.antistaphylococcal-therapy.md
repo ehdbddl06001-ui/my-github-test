@@ -4,8 +4,8 @@ type: concept
 topic: Infectious Disease
 see_also: [Dermatology, Pediatrics]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-09-29
+version: 2
 outline: h147           # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 147장 포도알균 감염
 confidence: medium
 review_status: unreviewed
@@ -111,18 +111,30 @@ sources:
     checked_at: 2026-09-23
     checked: "서지만 — 이 컨테이너에서 doi·PubMed 접근이 막혀 대조하지 못함(데스모글레인 1 표적 서술은 미대조)"
     verified: citation
-figures_wanted:
-- source: PMC_OA
-  shows: 포도알균 열상피부증후군 — 얕게 벗겨지는 피부(얼굴 없는 부위만)
-  query: '"staphylococcal scalded skin syndrome" AND "case report"'
-  caption_terms:
-  - scalded
-  modality: CLINICAL_PHOTO
 figures_rejected:
 - asset: PMC-PMC12738164_Figure2
   reason: 얼굴(눈 주위) 사진 — 싣지 않는다
 - asset: PMC-PMC11955687_Figure1
   reason: 모든 패널이 영아의 얼굴·머리 — 얼굴 없는 부위 패널이 없다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc9854745_figure2.jpg
+  kind: photo
+  at: 기전에서 소견으로
+  shows: 물집 지붕 생검 — 각질층과 과립층의 떨어진 가시세포만 있는 얕은 분리
+  look_for:
+  - 물집 지붕을 이루는 각질층 층판(초록 화살표)
+  - 과립층에서 떨어져 나온 가시세포(파란 화살표)
+  label: '「Histology of staphylococcal scalded skin syndrome. Microscopical picture of the snap-frozen blister roof biopsy, showing only horn lamellae of the stratum corneum (green arrow) and some acantholytic epithelial cells (blue arrows) of the granular layer of the epidermis, compatible with SSSS.」 — Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks. Antibiotics'
+  doi: 10.3390/antibiotics12010038
+  credit: 'Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks. Antibiotics (Basel). 2022 Dec 26;12(1):38. doi: 10.3390/antibiotics12010038 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9854745/
+  asset: PMC-PMC9854745_Figure2
+  privacy_check: 조직 사진 — 얼굴·문신·이름·병원 표지 없음
 ---
 
 ## 정의

@@ -7487,8 +7487,8 @@ window.MEDKOS_CONCEPTS = {
  },
  "cn.derm.erythema-nodosum.underlying-cause-workup": {
   "id": "cn.derm.erythema-nodosum.underlying-cause-workup",
-  "title": "결절홍반 — 정강이 압통 결절을 보면 피부가 아니라 원인을 찾는다",
-  "objective": "정강이 앞의 궤양 없는 압통성 붉은 결절을 결절홍반으로 알아보고, 다음 단계가 병변 치료가 아니라 기저 원인(연쇄구균·사르코이드증·염증성 장질환·약물·결핵 등) 검사임을 고른다",
+  "title": "결절홍반 — 정강이 압통 결절은 원인 검사가 먼저",
+  "objective": "정강이 앞의 궤양 없는 압통성 붉은 결절을 결절홍반으로 알아보고, 다음 단계로 기저 원인 검사를 고른다",
   "objectiveKind": "검사 선택",
   "condition": "결절홍반(erythema nodosum)",
   "topic": "Dermatology",
@@ -7497,47 +7497,37 @@ window.MEDKOS_CONCEPTS = {
    "Infectious Disease",
    "Gastroenterology"
   ],
-  "version": 2,
-  "updated": "2026-09-27",
+  "version": 3,
+  "updated": "2026-09-29",
   "reviewStatus": "unreviewed",
-  "hash": "bdcdbb3118a0bdbe",
+  "hash": "817db24b4502cb85",
   "summary": [
-   "결절홍반은 피하지방 격막의 반응성 염증(격막성 지방층염)이다 — 균이나 종양이 병변 안에 있는 것이 아니라 다른 질환에 대한 면역 반응이다.",
-   "모양: 양쪽 정강이 앞의 아프고 붉은 결절, 궤양·흉터 없이 멍 같은 푸른색으로 변하며 가라앉는다. 종아리에 궤양이 생기면 경결홍반 쪽이다.",
-   "원인 질환이 없어도 발열·권태·백혈구 증가·관절통이 올 수 있다 — 그래도 원인은 배제해야 한다.",
-   "그래서 다음 단계는 원인 검사: 인후배양·ASO(연쇄구균), 흉부 X선(사르코이드증·결핵), 복부 증상·대변(염증성 장질환·예르시니아), 약물력(경구피임약·설폰아마이드·페니실린), 임신 여부.",
-   "치료는 원인 치료 + 안정·다리 올리기·NSAID. 국소 스테로이드 단독이나 절제는 원인을 놓친다."
+   "결론: 결절홍반을 보면 다음 단계는 병변 치료가 아니라 기저 원인 검사다.",
+   "시험 단서: 양 정강이 앞의 아프고 붉은 결절, 궤양·흉터 없음, 발열·관절통 ± (erythema nodosum).",
+   "왜: 병변 안에 균·종양이 없는 반응성 격막성 지방층염(septal panniculitis)이라 원인이 병의 본체다.",
+   "원인: 연쇄구균·상기도 감염, 사르코이드증, 염증성 장질환, 약물(경구피임약·설폰아마이드·페니실린), 결핵.",
+   "치료는 원인 치료 + 안정·다리 올리기·NSAID. 감염·결핵 배제 전 전신 스테로이드는 쓰지 않는다."
   ],
   "sections": [
    {
-    "title": "정의",
+    "title": "판단 — 왜 원인 검사가 먼저인가",
     "deep": false,
-    "html": "<p>결절홍반은 피하지방의 <strong>격막(septum)</strong> 에 생기는 반응성 염증, 즉 격막성 지방층염이다. 병변 안에 균이나 종양이 있는 것이 아니라, 감염·염증 질환·약물에 대한 <strong>면역 반응이 피부에 드러난 것</strong>이다 <sup>[1 58장 p.397]</sup>.</p>"
+    "html": "<ul>\n<li>결절홍반은 감염·염증 질환·약물에 대한 <strong>면역 반응이 피부에 드러난 것</strong>이다 — 병변 안에 균이나 종양이 없다 <sup>[1 58장 p.397]</sup>.</li>\n<li>그래서 병변을 가라앉히는 치료(국소 스테로이드·절제)는 원인을 놓친다. 다음 단계는 원인 검사다(표).</li>\n<li>원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있으나, 기저 질환은 배제해야 한다 <sup>[1 58장 p.397]</sup>.</li>\n<li>진단은 대개 임상적이다 — 검사는 <strong>원인을 찾기 위한 것</strong>이다.</li>\n</ul>"
    },
    {
-    "title": "병태생리",
+    "title": "기전 — 격막 지방층염에서 소견으로",
     "deep": false,
-    "html": "<p>정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 격막으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반응으로 격막에 염증세포가 모인다. 지방 소엽 자체가 괴사하지 않으므로 <strong>궤양이나 흉터 없이</strong> 낫는다 — 이것이 다른 지방층염과 가르는 핵심이다 <sup>[1 58장 p.397]</sup>.</p>"
+    "html": "<p>정상 피하지방은 지방 소엽과 그 사이를 나누는 결합조직 <strong>격막(septum)</strong> 으로 이루어진다. 결절홍반에서는 항원(연쇄구균 항원, 약물, 사르코이드증의 면역 활성 등)에 대한 과민 반응으로 격막에 염증세포가 모인다. 지방 소엽 자체가 괴사하지 않으므로 <strong>궤양이나 흉터 없이</strong> 낫는다 — 다른 지방층염과 가르는 핵심이다 <sup>[1 58장 p.397]</sup>.</p>\n<ul>\n<li>깊은 지방층 염증 → 표면은 매끈하고 만지면 단단하고 아픈 결절. 표면 비늘·물집이 없다.</li>\n<li>염증이 가라앉으면서 혈색소가 분해 → 붉은색에서 <strong>멍 같은 푸른색</strong>으로 바뀐다 <sup>[1 58장 p.397]</sup>.</li>\n</ul>"
    },
    {
-    "title": "기전에서 소견으로",
+    "title": "가르는 소견 — 위치·궤양·흉터",
     "deep": false,
-    "html": "<ul>\n<li>깊은 지방층 염증 → 표면은 매끈하고 만지면 단단하고 아픈 결절. 표면 비늘·물집이 없다.</li>\n<li>격막 염증이 가라앉으면서 혈색소가 분해 → 붉은색에서 <strong>멍 같은 푸른색</strong>으로 바뀐다 <sup>[1 58장 p.397]</sup>.</li>\n<li>전신 면역 반응 → 원인 질환이 없어도 발열·권태·백혈구 증가·관절통/관절염이 동반될 수 있다 <sup>[1 58장 p.397]</sup>. 그러므로 이런 전신 증상을 「중증 감염」의 근거로 삼아 항생제를 먼저 쓰지 않는다.</li>\n</ul>"
+    "html": "<ul>\n<li>위치(정강이 vs 종아리)와 경과(궤양·흉터 유무)가 결절홍반과 경결홍반을 가른다(표).</li>\n<li>생검이 필요하면 지방층까지 포함한 깊은 조직을 얻어야 한다 — 표재 생검으로는 지방층염을 볼 수 없다.</li>\n</ul>"
    },
    {
-    "title": "감별",
+    "title": "선택 — 원인을 찾는 검사",
     "deep": false,
-    "html": "<ul>\n<li><strong>경결홍반·결절성 혈관염</strong>: 종아리, 궤양·흉터 가능, 결핵과 연관 <sup>[1 58장 p.397]</sup>.</li>\n<li><strong>봉와직염</strong>: 한쪽, 경계가 퍼지는 홍반, 결절 여러 개가 양쪽에 대칭으로 생기지 않는다.</li>\n<li><strong>루푸스 지방층염</strong>: 뺨·위팔·엉덩이처럼 지방이 많은 자리 <sup>[1 58장 p.397]</sup>.</li>\n</ul>"
-   },
-   {
-    "title": "검사",
-    "deep": false,
-    "html": "<p>진단은 대개 임상적이다. 검사는 <strong>원인을 찾기 위한 것</strong>이다(표 참고). 생검이 필요하면 지방층까지 포함한 깊은 조직을 얻어야 한다 — 표재 생검으로는 지방층염을 볼 수 없다.</p>"
-   },
-   {
-    "title": "치료",
-    "deep": false,
-    "html": "<p>원인을 치료하고(연쇄구균이면 항생제, 약물이면 중단), 병변에는 안정·다리 올리기·NSAID 등 대증치료를 한다 <sup>[2†]</sup>. 결절은 대개 수주에 걸쳐 저절로 가라앉는다. 결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다.</p>"
+    "html": "<ul>\n<li>원인 무리별로 먼저 할 검사를 고른다(표). 흉부 X선은 사르코이드증(양측 폐문 림프절)과 결핵을 찾는다.</li>\n<li>원인을 치료하고(연쇄구균이면 항생제, 약물이면 중단), 병변에는 안정·다리 올리기·NSAID 등 대증치료를 한다 <sup>[2†]</sup>. 결절은 대개 수주에 걸쳐 저절로 가라앉는다.</li>\n<li>결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다.</li>\n</ul>"
    },
    {
     "title": "권고와 예외",
@@ -7550,9 +7540,9 @@ window.MEDKOS_CONCEPTS = {
     "html": "<ul>\n<li>해당 없음(대조: 해리슨 58장 p.397)</li>\n</ul>"
    },
    {
-    "title": "「다음 단계」 문항의 구조",
+    "title": "다른 병의 신호인 피부 소견",
     "deep": true,
-    "html": "<p>보기에 치료가 여러 개 섞여 있어도, 결절홍반처럼 <strong>다른 병의 신호인 피부 소견</strong>에서는 「원인을 찾는다」가 다음 단계다. 같은 구조가 흑색극세포증(인슐린 저항성·위암), 괴저성 농피증(염증성 장질환)에도 되풀이된다.</p>"
+    "html": "<p>결절홍반처럼 <strong>다른 병의 신호인 피부 소견</strong>에서는 원인을 찾는 것이 다음 단계다. 같은 구조가 흑색극세포증(인슐린 저항성·위암), 괴저성 농피증(염증성 장질환)에도 되풀이된다.</p>"
    }
   ],
   "tables": [
@@ -7581,6 +7571,37 @@ window.MEDKOS_CONCEPTS = {
      ]
     ],
     "note": "원인 목록은 해리슨 58장 p.397. 검사 선택은 원인 목록에서 끌어낸 것으로 해리슨이 순서를 정하지 않는다."
+   },
+   {
+    "title": "정강이·다리의 붉은 결절 — 가르는 소견",
+    "columns": [
+     "질환",
+     "가르는 소견",
+     "다음 단계"
+    ],
+    "rows": [
+     [
+      "결절홍반",
+      "양 정강이 앞, 궤양·흉터 없이 멍 색으로 가라앉음 <sup>[1 58장 p.397]</sup>",
+      "원인 검사"
+     ],
+     [
+      "경결홍반·결절성 혈관염",
+      "종아리, 궤양·흉터 가능, 결핵과 연관 <sup>[1 58장 p.397]</sup>",
+      "깊은 생검·결핵 검사"
+     ],
+     [
+      "봉와직염",
+      "한쪽, 경계가 퍼지는 홍반 — 양쪽 대칭 결절이 아님",
+      "감염 치료"
+     ],
+     [
+      "루푸스 지방층염",
+      "뺨·위팔·엉덩이처럼 지방이 많은 자리 <sup>[1 58장 p.397]</sup>",
+      "—"
+     ]
+    ],
+    "note": ""
    }
   ],
   "pitfalls": [
@@ -7595,9 +7616,19 @@ window.MEDKOS_CONCEPTS = {
     "point": "결절홍반은 정강이, 궤양·흉터 없이 낫는다. 경결홍반은 종아리에 흔하고 궤양이 생기거나 흉터가 남으며 결핵균 DNA 와 관련된다 <sup>[1 58장 p.397]</sup>.",
     "exception": "",
     "cites": "<sup>[1]</sup>"
+   },
+   {
+    "contrast": "발열·백혈구 증가 = 중증 감염 → 항생제 먼저?",
+    "point": "원인 질환이 없어도 발열·권태·백혈구 증가·관절통이 동반될 수 있다 <sup>[1 58장 p.397]</sup>. 항생제는 원인(연쇄구균 등)이 확인된 뒤 그 원인에 맞춘다.",
+    "exception": "",
+    "cites": "<sup>[1]</sup>"
    }
   ],
-  "diagramNotes": [],
+  "diagramNotes": [
+   "원인 질환이 없어도 발열·권태·백혈구 증가·관절통이 올 수 있다 — 이를 중증 감염의 근거로 항생제를 먼저 쓰지 않는다.",
+   "생검이 필요하면 지방층까지 포함한 깊은 조직 — 표재 생검으로는 지방층염을 볼 수 없다.",
+   "결핵·감염을 배제하기 전 전신 스테로이드는 쓰지 않는다. 국소 스테로이드는 원인 검사를 대신하지 않는다."
+  ],
   "criteria": [
    {
     "id": "en-cause-first",
@@ -7699,7 +7730,7 @@ window.MEDKOS_CONCEPTS = {
     "id": "f1",
     "src": "assets/figures/pmc-pmc13181270_figure1.jpg",
     "kind": "photo",
-    "at": "기전에서 소견으로",
+    "at": "기전 — 격막 지방층염에서 소견으로",
     "shows": "결절홍반 — 양 정강이 앞의 붉은 결절(소아, 셀리악병 동반 증례)",
     "look": [
      "정강이 앞쪽에 흩어진 경계가 흐린 붉은 결절 여러 개",
@@ -7717,9 +7748,495 @@ window.MEDKOS_CONCEPTS = {
     "marked": ""
    }
   ],
-  "diagramTitle": "",
-  "geo": null,
-  "steps": [],
+  "diagramTitle": "결절홍반 — 알아보기에서 원인 검사까지",
+  "geo": {
+   "title": "결절홍반 — 알아보기에서 원인 검사까지",
+   "w": 567.0,
+   "h": 558.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "양 정강이 앞의 아프고 붉은",
+      "결절"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 16.0
+    },
+    {
+     "id": "site",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "종아리·궤양·흉터가 있나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 102.0
+    },
+    {
+     "id": "siteask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "위치·궤양·흉터 경과를 확인"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 242.0,
+     "y": 192.0
+    },
+    {
+     "id": "ev",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "경결홍반 의심 — 깊은 생검·",
+      "결핵 검사"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 355.0,
+     "y": 302.0
+    },
+    {
+     "id": "workup",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "결절홍반 → 원인 검사(표)"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 302.0
+    },
+    {
+     "id": "cause",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "원인을 찾았나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 388.0
+    },
+    {
+     "id": "treat",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "원인 치료 + 안정·다리",
+      "올리기·NSAID"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 478.0
+    },
+    {
+     "id": "idio",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "특발성 — 대증치료로 경과",
+      "관찰"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 478.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "site",
+     "points": [
+      [
+       340.0,
+       80.0
+      ],
+      [
+       340.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "site",
+     "to": "workup",
+     "points": [
+      [
+       291.0,
+       149.0
+      ],
+      [
+       291.0,
+       178.0
+      ],
+      [
+       226.0,
+       178.0
+      ],
+      [
+       226.0,
+       288.0
+      ],
+      [
+       194.3,
+       288.0
+      ],
+      [
+       194.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "없음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 276.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "site",
+     "to": "ev",
+     "points": [
+      [
+       389.0,
+       149.0
+      ],
+      [
+       389.0,
+       178.0
+      ],
+      [
+       454.0,
+       178.0
+      ],
+      [
+       454.0,
+       288.0
+      ],
+      [
+       485.7,
+       288.0
+      ],
+      [
+       485.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "있음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 374.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "site",
+     "to": "siteask",
+     "points": [
+      [
+       340.0,
+       149.0
+      ],
+      [
+       340.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정보 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 312.1,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "siteask",
+     "to": "workup",
+     "points": [
+      [
+       307.3,
+       239.0
+      ],
+      [
+       307.3,
+       288.0
+      ],
+      [
+       259.7,
+       288.0
+      ],
+      [
+       259.7,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "정강이·궤양 없음"
+      ],
+      "w": 95.1,
+      "h": 17,
+      "x": 259.8,
+      "y": 243.0
+     }
+    },
+    {
+     "from": "siteask",
+     "to": "ev",
+     "points": [
+      [
+       372.7,
+       239.0
+      ],
+      [
+       372.7,
+       288.0
+      ],
+      [
+       420.3,
+       288.0
+      ],
+      [
+       420.3,
+       302.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "종아리·궤양"
+      ],
+      "w": 69.4,
+      "h": 17,
+      "x": 338.0,
+      "y": 263.0
+     }
+    },
+    {
+     "from": "workup",
+     "to": "cause",
+     "points": [
+      [
+       227.0,
+       349.0
+      ],
+      [
+       227.0,
+       388.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "cause",
+     "to": "treat",
+     "points": [
+      [
+       194.3,
+       435.0
+      ],
+      [
+       194.3,
+       464.0
+      ],
+      [
+       114.0,
+       464.0
+      ],
+      [
+       114.0,
+       478.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "찾음"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 179.3,
+      "y": 439.0
+     }
+    },
+    {
+     "from": "cause",
+     "to": "idio",
+     "points": [
+      [
+       259.7,
+       435.0
+      ],
+      [
+       259.7,
+       464.0
+      ],
+      [
+       340.0,
+       464.0
+      ],
+      [
+       340.0,
+       478.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "음성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 244.7,
+      "y": 439.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "양 정강이 앞의 아프고 붉은 결절",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "종아리·궤양·흉터가 있나?"
+     }
+    ]
+   },
+   {
+    "id": "site",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "종아리·궤양·흉터가 있나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "없음",
+      "to": 4,
+      "toText": "결절홍반 → 원인 검사(표)"
+     },
+     {
+      "label": "있음",
+      "to": 5,
+      "toText": "경결홍반 의심 — 깊은 생검·결핵 검사"
+     },
+     {
+      "label": "정보 없음",
+      "to": 3,
+      "toText": "위치·궤양·흉터 경과를 확인"
+     }
+    ]
+   },
+   {
+    "id": "siteask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "위치·궤양·흉터 경과를 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "정강이·궤양 없음",
+      "to": 4,
+      "toText": "결절홍반 → 원인 검사(표)"
+     },
+     {
+      "label": "종아리·궤양",
+      "to": 5,
+      "toText": "경결홍반 의심 — 깊은 생검·결핵 검사"
+     }
+    ]
+   },
+   {
+    "id": "workup",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "결절홍반 → 원인 검사(표)",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "원인을 찾았나?"
+     }
+    ]
+   },
+   {
+    "id": "ev",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "경결홍반 의심 — 깊은 생검·결핵 검사",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "cause",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "원인을 찾았나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "찾음",
+      "to": 7,
+      "toText": "원인 치료 + 안정·다리 올리기·NSAID"
+     },
+     {
+      "label": "음성",
+      "to": 8,
+      "toText": "특발성 — 대증치료로 경과 관찰"
+     }
+    ]
+   },
+   {
+    "id": "treat",
+    "num": 7,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "원인 치료 + 안정·다리 올리기·NSAID",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "idio",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "특발성 — 대증치료로 경과 관찰",
+    "note": "",
+    "branches": []
+   }
+  ],
   "questions": [
    "kmle-2026-0169"
   ],
@@ -8618,10 +9135,10 @@ window.MEDKOS_CONCEPTS = {
    "Obstetrics & Gynecology",
    "Rheumatology"
   ],
-  "version": 2,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-29",
   "reviewStatus": "unreviewed",
-  "hash": "d7353a120fb05e20",
+  "hash": "99cc9e203ea3630f",
   "summary": [
    "전신치료 대상: 체표면적 > 10 %(또는 PASI > 10), 손·발·얼굴·음부·손톱 침범, 국소치료 실패, 삶의 질 저하.",
    "치료 후보는 네 층 — 좁은파장 UVB 광선치료 · 경구 전신제(메토트렉세이트·아시트레틴·사이클로스포린·아프레밀라스트) · 생물학제 · (전신 스테로이드는 판상건선에 쓰지 않음).",
@@ -9013,7 +9530,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc10892964_figure1-0-0-497-431.jpg",
+    "kind": "photo",
+    "at": "소견·중증도 판정",
+    "shows": "판상건선 악화 — 팔 폄쪽과 몸통에 퍼진 붉은 판",
+    "look": [
+     "팔꿈치·아래팔 폄쪽의 경계가 뚜렷한 붉은 판",
+     "등과 옆구리에 흩어진 작은 붉은 구진·판"
+    ],
+    "label": "「(A,B) showing a plaque psoriasis exacerbation of a 56-year-old patient 5 days after the 2nd dose of BNT162b2(Pfizer) vaccination. Every patient is unique with factors that predispose towards a flare. The patient has comorbidities, such as hypercholesterolemia and diabetes, and, therefore, a disturbed metabolic profile, as well as a recent stressful event and a medical history of COVID-19 infection in the past 4 months (infectomics).」 — Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters. Vaccines",
+    "doiUrl": "https://doi.org/10.3390/vaccines12020178",
+    "citedBy": null,
+    "credit": "Plaque Psoriasis Exacerbation and COVID-19 Vaccination: Assessing the Characteristics of the Flare and the Exposome Parameters. Vaccines (Basel). 2024 Feb 9;12(2):178. doi: 10.3390/vaccines12020178 (CC BY) — Figure 1",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10892964/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "중등증–중증 판상건선 — 환자 조건으로 전신치료 고르기",
   "geo": {
    "title": "중등증–중증 판상건선 — 환자 조건으로 전신치료 고르기",
@@ -12238,10 +12777,10 @@ window.MEDKOS_CONCEPTS = {
    "Dermatology",
    "Pediatrics"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-29",
   "reviewStatus": "unreviewed",
-  "hash": "a01bc89d3f055e55",
+  "hash": "398558b3454e1354",
   "summary": [
    "원인: 황색포도알균이 국소 감염 부위(입 주위·코·배꼽·결막 등)에서 표피박리독소(ETA·ETB)를 내고, 독소가 퍼져 멀리 떨어진 피부까지 벗긴다.",
    "독소는 표층 표피의 데스모솜 카데린(데스모글레인 1)을 자르는 단백분해효소 — 갈라지는 층이 과립층이라 얕게 벗겨지고, 점막은 대개 보존된다.",
@@ -12459,7 +12998,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc9854745_figure2.jpg",
+    "kind": "photo",
+    "at": "기전에서 소견으로",
+    "shows": "물집 지붕 생검 — 각질층과 과립층의 떨어진 가시세포만 있는 얕은 분리",
+    "look": [
+     "물집 지붕을 이루는 각질층 층판(초록 화살표)",
+     "과립층에서 떨어져 나온 가시세포(파란 화살표)"
+    ],
+    "label": "「Histology of staphylococcal scalded skin syndrome. Microscopical picture of the snap-frozen blister roof biopsy, showing only horn lamellae of the stratum corneum (green arrow) and some acantholytic epithelial cells (blue arrows) of the granular layer of the epidermis, compatible with SSSS.」 — Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks. Antibiotics",
+    "doiUrl": "https://doi.org/10.3390/antibiotics12010038",
+    "citedBy": null,
+    "credit": "Staphylococcal Scalded Skin Syndrome in Neonates: Case Series and Overview of Outbreaks. Antibiotics (Basel). 2022 Dec 26;12(1):38. doi: 10.3390/antibiotics12010038 (CC BY) — Figure 2",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9854745/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "",
   "geo": null,
   "steps": [],
@@ -20046,7 +20607,7 @@ window.MEDKOS_CONCEPTS = {
   "version": 1,
   "updated": "2026-09-23",
   "reviewStatus": "unreviewed",
-  "hash": "a57a3ea37c6c39af",
+  "hash": "6e387fcb8665462d",
   "summary": [
    "두 염증성 장질환은 「어디에(분포)·얼마나 깊이(층)·무엇이 보이나(조직)」로 갈린다.",
    "궤양성대장염: 직장에서 시작해 근위로 연속, 점막에 국한, 혈성 설사·뒤무직.",
@@ -20269,10 +20830,10 @@ window.MEDKOS_CONCEPTS = {
   "seeAlso": [
    "Gastroenterology"
   ],
-  "version": 2,
-  "updated": "2026-09-23",
+  "version": 3,
+  "updated": "2026-09-29",
   "reviewStatus": "unreviewed",
-  "hash": "d116f66dbcfcf75d",
+  "hash": "0393952167cca1a0",
   "summary": [
    "진단(TG18): 국소 징후(오른쪽 윗배 압통·덩이·Murphy 징후) + 전신 염증(발열·백혈구·CRP) + 영상(담석·담낭벽 비후·주위 액체) 세 가지가 다 있으면 확진이다.",
    "중증도는 「장기부전 → 3등급, 국소 염증 심함(백혈구 > 18,000·촉지 덩이·발병 > 72시간·괴저/농양/기종/담즙성 복막염) → 2등급, 둘 다 없음 → 1등급」 순서로 매긴다.",
@@ -20640,7 +21201,29 @@ window.MEDKOS_CONCEPTS = {
     "flip": false
    }
   ],
-  "figures": [],
+  "figures": [
+   {
+    "id": "f1",
+    "src": "assets/figures/pmc-pmc13150379_figure2-375-0-750-448.jpg",
+    "kind": "ultrasound",
+    "at": "기전에서 소견으로",
+    "shows": "급성 담낭염 초음파 — 두꺼워진 담낭벽(5.7 mm)",
+    "look": [
+     "측정 표시가 놓인 담낭 앞벽의 두께",
+     "측정한 벽 아래의 검은(무에코) 담낭 내강"
+    ],
+    "label": "「Repeat right upper quadrant ultrasound (longitudinal view).(A) A 1.7 cm obstructing gallstone (arrow) within the gallbladder neck. (B) Thickening of the gallbladder wall measuring 5.7 mm (blue arrow). The liver parenchyma demonstrates diffusely increased echogenicity consistent with hepatic steatosis. No focal hepatic lesions are identified.」 — Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge",
+    "basis": "published_figure",
+    "reference": "동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)",
+    "paper": "Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge. Cureus",
+    "doiUrl": "https://doi.org/10.7759/cureus.106560",
+    "citedBy": null,
+    "credit": "Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge. Cureus. 2026 Apr 7;18(4):e106560. doi: 10.7759/cureus.106560 (CC BY) — Figure 2",
+    "license": "CC BY",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13150379/",
+    "marked": ""
+   }
+  ],
   "diagramTitle": "급성 담석 담낭염 — 등급 · 장기부전 · 담관 소견 · 수술 위험 · 시점으로 치료 가르기",
   "geo": {
    "title": "급성 담석 담낭염 — 등급 · 장기부전 · 담관 소견 · 수술 위험 · 시점으로 치료 가르기",
@@ -36582,60 +37165,49 @@ window.MEDKOS_CONCEPTS = {
  },
  "cn.ophth.chemical-burn.immediate-irrigation": {
   "id": "cn.ophth.chemical-burn.immediate-irrigation",
-  "title": "안구 화학화상 — 검사보다 세척이 먼저인 이유",
-  "objective": "알칼리·산이 눈에 들어간 환자에서 시력·안압·세극등 검사나 안연고·안대보다 먼저 즉시 다량 지속 세척(결막낭 pH 중성까지)을 고른다",
+  "title": "안구 화학화상 — 검사보다 세척이 먼저",
+  "objective": "산·알칼리가 눈에 들어간 환자에서 검사·안연고·안대보다 먼저 즉시 다량 지속 세척을 고른다",
   "objectiveKind": "다음 처치",
-  "condition": "안구 화학화상(알칼리)",
+  "condition": "안구 화학화상(ocular chemical burn, 알칼리)",
   "topic": "Ophthalmology",
   "seeAlso": [
    "Emergency Medicine"
   ],
-  "version": 1,
-  "updated": "2026-09-23",
+  "version": 2,
+  "updated": "2026-09-29",
   "reviewStatus": "unreviewed",
-  "hash": "5f48c135378aff47",
+  "hash": "9b74781b3d476ea0",
   "summary": [
-   "안구 화학화상은 시간이 손상을 정한다 — 화학물질이 결막낭에 남아 있는 동안 계속 침투한다.",
-   "알칼리는 세포막 지질을 비누화해 액화괴사를 만들고 깊이(각막 기질·전방)까지 파고든다. 산은 단백을 응고시켜 스스로 장벽을 만들어 대개 얕다.",
-   "그래서 첫 처치는 병력·검사보다 먼저 즉시·다량·지속 세척 — 점안마취 뒤 눈꺼풀을 벌리고 결막낭 pH 가 중성이 될 때까지.",
-   "세척 뒤에야 시력·세극등(각막 상피 결손·윤부 허혈)·안압을 평가하고 등급을 매긴다.",
-   "안연고+안대는 각막 찰과상의 처치다 — 화학화상에서 먼저 쓰면 남은 화학물질을 가둔다."
+   "결론: 화학물질 노출이면 병력·검사보다 먼저 즉시·다량·지속 세척, 결막낭 pH 가 중성이 될 때까지.",
+   "시험 단서: 세정제·시멘트·석회가 튄 직후의 안통·눈물·시야흐림 (ocular chemical burn, alkali).",
+   "왜: 결막낭에 남은 알칼리는 지질을 비누화(액화괴사)하며 검사하는 몇 분 동안에도 깊이 침투한다.",
+   "시력·세극등·안압은 세척으로 pH 를 정상화한 뒤. 안연고+안대는 찰과상 처치 — 먼저 쓰면 화학물질을 가둔다."
   ],
   "sections": [
    {
-    "title": "정의",
+    "title": "판단 — 왜 세척이 검사보다 먼저인가",
     "deep": false,
-    "html": "<p>안구 화학화상은 산·알칼리가 결막·각막에 닿아 생기는 손상이다. 산업 현장·가정 세정제·시멘트·배터리액이 흔한 원인이며, <strong>노출 뒤 경과 시간과 물질의 성질</strong>이 손상 깊이를 정한다 <sup>[2†]</sup>.</p>"
+    "html": "<ul>\n<li>안구 화학화상은 <strong>노출 뒤 경과 시간과 물질의 성질</strong>이 손상 깊이를 정한다 <sup>[2†]</sup> — 결막낭에 남은 화학물질은 세척 전까지 손상을 계속한다.</li>\n<li>그래서 시력·세극등·안압 측정, 병력 청취·전원은 세척을 늦출 이유가 아니다. 이 검사들은 pH 를 정상화한 뒤 중증도를 매기는 단계다.</li>\n<li>경위가 판단을 정한다. 화학물질 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염·포도막염을 가른다.</li>\n</ul>"
    },
    {
-    "title": "병태생리",
+    "title": "기전 — 결막낭에 남은 화학물질에서 손상으로",
     "deep": false,
-    "html": "<p>정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 <strong>윤부(각막-결막 경계)의 줄기세포</strong>에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다.</p>\n<ul>\n<li><strong>알칼리</strong>는 세포막 지질을 비누화해 세포를 녹이며(액화괴사) 장벽 없이 기질·전방까지 들어간다. 기질 콜라겐 손상 → 각막 혼탁, 윤부 허혈 → 줄기세포 소실 → 상피가 재생되지 못한다 <sup>[2†]</sup>.</li>\n<li><strong>산</strong>은 단백을 응고시켜 표면에 응고층을 만들고, 그 층이 더 깊은 침투를 막는 경우가 많다(불산은 예외) <sup>[2†]</sup>.</li>\n</ul>"
+    "html": "<p>정상 각막은 상피·기질·내피로 이루어진 투명 조직이고, 각막 상피는 <strong>윤부(각막-결막 경계, limbus)의 줄기세포</strong>에서 새로 만들어진다. 눈물은 약한 완충 능력만 있어 많은 양의 산·알칼리를 중화하지 못한다.</p>\n<ul>\n<li><strong>알칼리</strong>는 세포막 지질을 비누화해 세포를 녹이며(액화괴사) 장벽 없이 기질·전방까지 들어간다. 기질 콜라겐 손상 → 각막 혼탁, 윤부 허혈 → 줄기세포 소실 → 상피가 재생되지 못한다 <sup>[2†]</sup>.</li>\n<li><strong>산</strong>은 단백을 응고시켜 표면에 응고층을 만들고, 그 층이 더 깊은 침투를 막는 경우가 많다(불산은 예외) <sup>[2†]</sup>.</li>\n</ul>"
    },
    {
-    "title": "기전에서 소견으로",
+    "title": "가르는 소견 — 세척 뒤 중증도 평가",
     "deep": false,
-    "html": "<ul>\n<li>결막낭에 남은 화학물질 → 세척 전까지 손상이 계속된다. 「가장 먼저」의 근거.</li>\n<li>윤부 허혈(윤부 둘레가 하얗게 창백) → 줄기세포 손상의 신호, 예후가 나쁘다.</li>\n<li>각막 상피 결손 → 형광염색 양성, 심하면 기질 혼탁으로 홍채가 안 보인다.</li>\n<li>전방 침투 → 안압 상승·포도막염·백내장 같은 뒤따르는 합병증.</li>\n</ul>"
+    "html": "<p>세척으로 pH 를 정상화한 뒤 시력, 세극등(형광염색), 안압으로 중증도를 매겨 예후와 치료 수준을 정한다 <sup>[2†]</sup>.</p>\n<ul>\n<li>윤부 허혈(윤부 둘레가 하얗게 창백) → 줄기세포 손상의 신호, 예후가 나쁘다.</li>\n<li>각막 상피 결손 → 형광염색 양성, 심하면 기질 혼탁으로 홍채가 안 보인다.</li>\n<li>전방 침투 → 안압 상승·포도막염·백내장 같은 뒤따르는 합병증.</li>\n</ul>"
    },
    {
-    "title": "감별",
-    "deep": false,
-    "html": "<p>경위가 판단을 정한다. 화학물질 노출이 확인되면 감별보다 세척이 먼저다. 노출이 없는 급성 안통·시야흐림이면 급성 폐쇄각녹내장·각막염·포도막염을 가른다.</p>"
-   },
-   {
-    "title": "검사",
-    "deep": false,
-    "html": "<p>세척으로 pH 를 정상화한 뒤: 시력, 세극등(형광염색으로 상피 결손 범위, 윤부 허혈 범위, 각막 혼탁), 안압. 이 소견으로 중증도를 매겨 예후와 치료 수준을 정한다 <sup>[2†]</sup>.</p>"
-   },
-   {
-    "title": "치료",
+    "title": "선택 — 세척하는 법과 그 뒤의 처치",
     "deep": false,
     "html": "<ol>\n<li><strong>즉시 세척</strong> — 점안마취 뒤 눈꺼풀을 벌려 생리식염수·링거액 등으로 다량 지속 세척, 결막낭 pH 가 중성이 될 때까지 <sup>[2†]</sup>. 수돗물이라도 지체 없이 쓰는 편이 낫다.</li>\n<li>눈꺼풀을 뒤집어 남은 입자(시멘트·석회)를 제거한다.</li>\n<li>세척 뒤 평가에 따라 항생제 점안(감염 예방), 조절마비제(통증), 안압 조절, 염증 조절(스테로이드는 안과 판단으로 초기에 짧게) <sup>[2†]</sup>.</li>\n<li>중증(윤부 허혈 넓음)은 안과 수술적 재건(양막 이식 등)까지 이어질 수 있다.</li>\n</ol>"
    },
    {
     "title": "권고와 예외",
     "deep": false,
-    "html": "<ul>\n<li>검사·병력 청취·전원은 세척을 늦출 이유가 아니다.</li>\n<li>안연고+안대는 찰과상의 처치이며 세척 뒤의 일이다 <sup>[1 32장 p.218]</sup>.</li>\n</ul>"
+    "html": "<ul>\n<li>검사·병력 청취·전원은 세척을 늦출 이유가 아니다.</li>\n<li>안연고+안대는 찰과상의 처치이며 세척 뒤의 일이다 <sup>[1 32장 p.218]</sup>.</li>\n<li>해리슨 32장에는 안구 화학화상 서술이 없어 세척 원칙은 해리슨으로 대조하지 못했다(검토 항목).</li>\n</ul>"
    },
    {
     "title": "왜 「pH 중성까지」인가",
@@ -36688,9 +37260,19 @@ window.MEDKOS_CONCEPTS = {
     "point": "해리슨은 각막 상피가 벗겨진 찰과상에 항생제 안연고와 안대를 쓴다고 적지만 <sup>[1 32장 p.218]</sup>, 그것은 이물을 제거·세척한 뒤의 처치다. 화학화상에서 먼저 덮으면 남은 화학물질을 결막낭에 가둔다.",
     "exception": "",
     "cites": "<sup>[1]</sup> <sup>[2†]</sup>"
+   },
+   {
+    "contrast": "세극등 검사·스테로이드 점안 먼저?",
+    "point": "세극등(상피 결손·윤부 허혈)은 중증도를 매기는 단계로 세척 뒤의 일이다. 스테로이드 점안도 세척 뒤 평가에 따라 안과 판단으로 초기에 짧게 쓰는 약이지 첫 처치가 아니다 <sup>[2†]</sup>.",
+    "exception": "",
+    "cites": "<sup>[2†]</sup>"
    }
   ],
-  "diagramNotes": [],
+  "diagramNotes": [
+   "눈꺼풀을 뒤집어 남은 입자(시멘트·석회)를 제거한다.",
+   "pH 가 중성이 된 뒤 잠시 기다려 다시 잰다 — 다시 오르면 세척을 이어 간다.",
+   "안연고+안대·스테로이드 점안은 세척 뒤 평가에 따른 처치다."
+  ],
   "criteria": [
    {
     "id": "chem-irrigate-first",
@@ -36788,9 +37370,541 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "figures": [],
-  "diagramTitle": "",
-  "geo": null,
-  "steps": [],
+  "diagramTitle": "급성 안통 — 화학물질 노출이면 세척부터",
+  "geo": {
+   "title": "급성 안통 — 화학물질 노출이면 세척부터",
+   "w": 454.0,
+   "h": 645.0,
+   "nodes": [
+    {
+     "id": "start",
+     "kind": "start",
+     "kindLabel": "시작",
+     "lines": [
+      "갑작스러운 안통·눈물·",
+      "시야흐림"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 16.0
+    },
+    {
+     "id": "expo",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "산·알칼리가 눈에 들어갔나?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 129.0,
+     "y": 102.0
+    },
+    {
+     "id": "expoask",
+     "kind": "info",
+     "kindLabel": "추가 정보 필요",
+     "lines": [
+      "경위·물질(세정제·시멘트",
+      "등) 확인"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 129.0,
+     "y": 192.0
+    },
+    {
+     "id": "other",
+     "kind": "alert",
+     "kindLabel": "위험·이 도식 범위 밖",
+     "lines": [
+      "노출 없음 — 폐쇄각녹내장 등",
+      "감별"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 242.0,
+     "y": 299.0
+    },
+    {
+     "id": "irrigate",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "점안마취 → 즉시 다량 지속",
+      "세척"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 299.0
+    },
+    {
+     "id": "ph",
+     "kind": "decision",
+     "kindLabel": "판단",
+     "lines": [
+      "결막낭 pH 가 중성인가?"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 16.0,
+     "y": 385.0
+    },
+    {
+     "id": "more",
+     "kind": "step",
+     "kindLabel": "평가·처치",
+     "lines": [
+      "세척을 이어 가며 다시 잰다"
+     ],
+     "w": 196,
+     "h": 47,
+     "x": 87.6,
+     "y": 475.0
+    },
+    {
+     "id": "evaluate",
+     "kind": "end",
+     "kindLabel": "결론",
+     "lines": [
+      "시력·세극등·안압으로",
+      "중증도 평가"
+     ],
+     "w": 196,
+     "h": 64,
+     "x": 16.0,
+     "y": 565.0
+    }
+   ],
+   "edges": [
+    {
+     "from": "start",
+     "to": "expo",
+     "points": [
+      [
+       227.0,
+       80.0
+      ],
+      [
+       227.0,
+       102.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "expo",
+     "to": "irrigate",
+     "points": [
+      [
+       178.0,
+       149.0
+      ],
+      [
+       178.0,
+       178.0
+      ],
+      [
+       113.0,
+       178.0
+      ],
+      [
+       113.0,
+       285.0
+      ],
+      [
+       81.3,
+       285.0
+      ],
+      [
+       81.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "예"
+      ],
+      "w": 19.0,
+      "h": 17,
+      "x": 168.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "expo",
+     "to": "other",
+     "points": [
+      [
+       276.0,
+       149.0
+      ],
+      [
+       276.0,
+       178.0
+      ],
+      [
+       341.0,
+       178.0
+      ],
+      [
+       341.0,
+       285.0
+      ],
+      [
+       372.7,
+       285.0
+      ],
+      [
+       372.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아니오"
+      ],
+      "w": 41.0,
+      "h": 17,
+      "x": 255.5,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "expo",
+     "to": "expoask",
+     "points": [
+      [
+       227.0,
+       149.0
+      ],
+      [
+       227.0,
+       192.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "모름"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 212.0,
+      "y": 153.0
+     }
+    },
+    {
+     "from": "expoask",
+     "to": "irrigate",
+     "points": [
+      [
+       194.3,
+       256.0
+      ],
+      [
+       194.3,
+       285.0
+      ],
+      [
+       146.7,
+       285.0
+      ],
+      [
+       146.7,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "노출 있음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 166.5,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "expoask",
+     "to": "other",
+     "points": [
+      [
+       259.7,
+       256.0
+      ],
+      [
+       259.7,
+       285.0
+      ],
+      [
+       307.3,
+       285.0
+      ],
+      [
+       307.3,
+       299.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "노출 없음"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 231.8,
+      "y": 260.0
+     }
+    },
+    {
+     "from": "irrigate",
+     "to": "ph",
+     "points": [
+      [
+       114.0,
+       363.0
+      ],
+      [
+       114.0,
+       385.0
+      ]
+     ],
+     "label": null
+    },
+    {
+     "from": "ph",
+     "to": "evaluate",
+     "points": [
+      [
+       81.3,
+       432.0
+      ],
+      [
+       81.3,
+       461.0
+      ],
+      [
+       71.6,
+       461.0
+      ],
+      [
+       71.6,
+       551.0
+      ],
+      [
+       81.3,
+       551.0
+      ],
+      [
+       81.3,
+       565.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중성"
+      ],
+      "w": 30.0,
+      "h": 17,
+      "x": 66.3,
+      "y": 436.0
+     }
+    },
+    {
+     "from": "ph",
+     "to": "more",
+     "points": [
+      [
+       146.7,
+       432.0
+      ],
+      [
+       146.7,
+       461.0
+      ],
+      [
+       185.6,
+       461.0
+      ],
+      [
+       185.6,
+       475.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "아직 아님"
+      ],
+      "w": 55.7,
+      "h": 17,
+      "x": 118.8,
+      "y": 436.0
+     }
+    },
+    {
+     "from": "more",
+     "to": "evaluate",
+     "points": [
+      [
+       185.6,
+       522.0
+      ],
+      [
+       185.6,
+       551.0
+      ],
+      [
+       146.7,
+       551.0
+      ],
+      [
+       146.7,
+       565.0
+      ]
+     ],
+     "label": {
+      "lines": [
+       "중성이 되면"
+      ],
+      "w": 66.7,
+      "h": 17,
+      "x": 152.2,
+      "y": 526.0
+     }
+    }
+   ]
+  },
+  "steps": [
+   {
+    "id": "start",
+    "num": 1,
+    "kind": "시작",
+    "marker": "시작",
+    "text": "갑작스러운 안통·눈물·시야흐림",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 2,
+      "toText": "산·알칼리가 눈에 들어갔나?"
+     }
+    ]
+   },
+   {
+    "id": "expo",
+    "num": 2,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "산·알칼리가 눈에 들어갔나?",
+    "note": "",
+    "branches": [
+     {
+      "label": "예",
+      "to": 4,
+      "toText": "점안마취 → 즉시 다량 지속 세척"
+     },
+     {
+      "label": "아니오",
+      "to": 5,
+      "toText": "노출 없음 — 폐쇄각녹내장 등 감별"
+     },
+     {
+      "label": "모름",
+      "to": 3,
+      "toText": "경위·물질(세정제·시멘트 등) 확인"
+     }
+    ]
+   },
+   {
+    "id": "expoask",
+    "num": 3,
+    "kind": "추가 정보 필요",
+    "marker": "추가 정보 필요",
+    "text": "경위·물질(세정제·시멘트 등) 확인",
+    "note": "",
+    "branches": [
+     {
+      "label": "노출 있음",
+      "to": 4,
+      "toText": "점안마취 → 즉시 다량 지속 세척"
+     },
+     {
+      "label": "노출 없음",
+      "to": 5,
+      "toText": "노출 없음 — 폐쇄각녹내장 등 감별"
+     }
+    ]
+   },
+   {
+    "id": "irrigate",
+    "num": 4,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "점안마취 → 즉시 다량 지속 세척",
+    "note": "",
+    "branches": [
+     {
+      "label": "다음",
+      "to": 6,
+      "toText": "결막낭 pH 가 중성인가?"
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "num": 5,
+    "kind": "위험·이 도식 범위 밖",
+    "marker": "위험·이 도식 범위 밖",
+    "text": "노출 없음 — 폐쇄각녹내장 등 감별",
+    "note": "",
+    "branches": []
+   },
+   {
+    "id": "ph",
+    "num": 6,
+    "kind": "판단",
+    "marker": "판단",
+    "text": "결막낭 pH 가 중성인가?",
+    "note": "",
+    "branches": [
+     {
+      "label": "중성",
+      "to": 8,
+      "toText": "시력·세극등·안압으로 중증도 평가"
+     },
+     {
+      "label": "아직 아님",
+      "to": 7,
+      "toText": "세척을 이어 가며 다시 잰다"
+     }
+    ]
+   },
+   {
+    "id": "more",
+    "num": 7,
+    "kind": "평가·처치",
+    "marker": "평가·처치",
+    "text": "세척을 이어 가며 다시 잰다",
+    "note": "",
+    "branches": [
+     {
+      "label": "중성이 되면",
+      "to": 8,
+      "toText": "시력·세극등·안압으로 중증도 평가"
+     }
+    ]
+   },
+   {
+    "id": "evaluate",
+    "num": 8,
+    "kind": "결론",
+    "marker": "결론",
+    "text": "시력·세극등·안압으로 중증도 평가",
+    "note": "",
+    "branches": []
+   }
+  ],
   "questions": [
    "kmle-2026-0093"
   ],

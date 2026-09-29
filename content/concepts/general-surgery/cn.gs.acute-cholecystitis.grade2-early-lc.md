@@ -4,8 +4,8 @@ type: concept
 topic: General Surgery
 see_also: [Gastroenterology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 2
+updated: 2026-09-29
+version: 3
 outline: surg.hepatobiliary   # 기본틀 슬롯(content/outline/subjects.yaml) — 외과 책 「간·담도·췌장 외과」(손 슬롯, 해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -235,17 +235,29 @@ variants:
     answer: "C"
     explanation: "영상·국소 징후·전신 염증이 모두 있어 급성 담낭염 확진이고, 백혈구 > 18,000 으로 2등급이다. 혈압·크레아티닌·혈소판이 정상이라 장기부전이 없고, 동반질환·복용약이 없어 수술 위험이 낮으며, 발병 28시간이라 72시간 이내다 — 나이·성별·내원 경위·2등급 근거가 바뀌어도 이 단서들은 그대로라 답은 조기 복강경 담낭절제술이다. 빌리루빈·ALP·총담관 지름이 정상이라 담관 처치는 필요 없고, 6주 뒤 지연 수술은 이환율·재원기간이 더 나쁘며, 배액은 수술 위험이 높은 환자의 선택이다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 급성 담낭염 초음파 — 담낭벽 비후·담석
-  query: '"acute cholecystitis" AND ultrasound AND "case report"'
-  caption_terms:
-  - gallbladder
-  - wall
-  modality: ULTRASOUND
 figures_rejected:
 - asset: PMC-PMC13502476_Figure1
   reason: 그림 설명이 「급성 담낭염의 초음파 근거 없음」 — 요청 소견의 반대
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13150379_figure2-375-0-750-448.jpg
+  kind: ultrasound
+  at: 기전에서 소견으로
+  shows: 급성 담낭염 초음파 — 두꺼워진 담낭벽(5.7 mm)
+  look_for:
+  - 측정 표시가 놓인 담낭 앞벽의 두께
+  - 측정한 벽 아래의 검은(무에코) 담낭 내강
+  label: '「Repeat right upper quadrant ultrasound (longitudinal view).(A) A 1.7 cm obstructing gallstone (arrow) within the gallbladder neck. (B) Thickening of the gallbladder wall measuring 5.7 mm (blue arrow). The liver parenchyma demonstrates diffusely increased echogenicity consistent with hepatic steatosis. No focal hepatic lesions are identified.」 — Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge. Cureus'
+  doi: 10.7759/cureus.106560
+  credit: 'Recurrent Chest Pain as the Sole Initial Manifestation of Acute Cholecystitis: A Case Report and Diagnostic Challenge. Cureus. 2026 Apr 7;18(4):e106560. doi: 10.7759/cureus.106560 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13150379/
+  asset: PMC-PMC13150379_Figure2
+  privacy_check: 패널 B만 사용 — 초음파 화면에 환자 이름·등록번호·병원명 없음(GB 표기·장비 설정값만)
+  crop: 375,0,750,448
 ---
 
 ## 정의
