@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3079,
+  "total": 3080,
   "byType": {
+   "anatomy": 768,
    "usmle": 168,
    "paper": 689,
    "kmle": 1184,
-   "anatomy": 767,
    "imaging": 164,
    "concept": 90,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 767,
+   "Anatomy": 768,
    "Cardiology": 224,
    "Nephrology": 180,
    "Infectious Disease": 161,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2056,
+   "high": 2057,
    "medium": 974,
    "low": 49
   },
   "tagCount": 4289
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-09-30",
+   "type": "anatomy",
+   "unit": "머리·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-09-30",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/anatomy/daily/2026-09-30.md",
+   "snippet": "오늘의 학습 (2026 09 30 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 20일 · Tagging 2까지 19일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-09-30 머리·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 09 30 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 20일 · Tagging 2까지 19일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0181",
    "type": "usmle",
