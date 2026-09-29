@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3112,
+  "total": 3124,
   "byType": {
    "kmle": 1216,
    "anatomy": 768,
    "usmle": 168,
    "paper": 689,
-   "imaging": 164,
+   "imaging": 176,
    "concept": 90,
    "ailab": 14,
    "basic": 3
@@ -38,39 +38,39 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 78,
    "Hematology": 73,
    "Laboratory Medicine": 68,
-   "산부인과": 33,
+   "산부인과": 34,
    "Physiology": 20,
-   "순환기": 15,
+   "순환기": 16,
    "Biochemistry": 13,
    "Pharmacology": 13,
    "Microbiology": 12,
+   "호흡기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "호흡기": 10,
+   "병리·조직학": 10,
+   "소화기": 10,
    "소아과": 9,
-   "소화기": 9,
-   "병리·조직학": 8,
+   "내분비": 8,
+   "응급·중환자": 8,
    "피부과": 8,
+   "혈액·종양": 8,
    "감염": 7,
-   "내분비": 7,
    "신경": 7,
-   "응급·중환자": 7,
-   "혈액·종양": 7,
    "신장·비뇨기": 6,
    "예방의학·역학": 6,
    "외과": 6,
+   "근골격·류마티스": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "근골격·류마티스": 4,
    "약리": 4,
    "정신과": 4,
    "Oncology": 3,
+   "안과": 3,
+   "영상의학": 3,
    "이비인후과": 3,
    "Medical Imaging AI": 2,
-   "안과": 2,
-   "영상의학": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2088,
+   "high": 2100,
    "medium": 975,
    "low": 49
   },
@@ -1108,6 +1108,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1215.md",
    "snippet": "31세 남자가 공사장에서 떨어진 철근에 오른쪽 종아리를 맞아 경골 몸통 폐쇄 골절로 입원했다. 긴 다리 부목을 대고 수술을 기다리던 중 6시간 뒤부터 종아리 통증이 점점 심해져 정맥 모르핀을 세 번 맞았으나 가라앉지 않았다. 부목의 붕대를 피부까지 풀고 30분이 지났지만 통증은 그대로이다. 종아리 앞쪽이 팽팽하게 부어 단단하고, 발가락을 수동으로 아래로 굽히면 종아리에 극심한 통증을 호소한다. 첫째·둘째 발가락 사이 발등 감각",
    "text": "Orthopedics Tibial Shaft Fracture with a Diminished Pedal Pulse acute-compartment-syndrome fasciotomy tibial-shaft-fracture diminished-pulse trap-family KMLE 2026 / Claude (함정 계열 시범) 31세 남자가 공사장에서 떨어진 철근에 오른쪽 종아리를 맞아 경골 몸통 폐쇄 골절로 입원했다. 긴 다리 부목을 대고 수술을 기다리던 중 6시간 뒤부터 종아리 통증이 점점 심해져 정맥 모르핀을 세 번 맞았으나 가라앉지 않았다. 부목의 붕대를 피부까지 풀고 30분이 지났지만 통증은 그대로이다. 종아리 앞쪽이 팽팽하게 부어 단단하고, 발가락을 수동으로 아래로 굽히면 종아리에 극심한 통증을 호소한다. 첫째·둘째 발가락 사이 발등 감각이 둔하다. 발은 따뜻하고 모세혈관 재충혈은 2초이며, 발등동맥 맥박은 반대쪽보다 약하게 만져진다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 하지 CT 혈관조영술 B. 간헐적 공기압박 장치 적용 C. 응급 근막절개술 D. 미분획 헤파린 정맥 주입 E. 카테터 유도 혈전용해술 경골 골절 뒤 진통제에 듣지 않는 통증, 수동 신전 통증, 단단한 구획, 깊은종아리신경 영역 감각 저하, 이완기 혈압 58 과 구획 내압 38 의 차이 20 mmHg 는 급성 구획증후군이다. 발등동맥 맥박이 약해진 것은 구획 내압이 오른 뒤의 늦은 징후이고, 발이 따뜻하며 재충혈 2초·도플러 동맥 신호가 들려 동맥 폐색으로 볼 근거가 없다. 붕대를 풀어도 지속되므로 혈전·혈관 처치가 아니라 응급 근막절개술로 감압한다."
+  },
+  {
+   "id": "imaging-2026-0177",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 일차알도스테론증의 편측 병변 확인",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0177.md",
+   "snippet": "A 52 year old man comes to the physician for evaluation of hypertension that is poorly controlled despite amlodipine, lisinopril, and chlorthalidone at maximum doses. He has had muscle cramps for 6 months. He wishes to pursue a surgical cur",
+   "text": "내분비 내분비·대사 — 일차알도스테론증의 편측 병변 확인 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 52 year old man comes to the physician for evaluation of hypertension that is poorly controlled despite amlodipine, lisinopril, and chlorthalidone at maximum doses. He has had muscle cramps for 6 months. He wishes to pursue a surgical cure if possible. His pulse is 74/min and blood pressure is 164/98 mm Hg. Serum potassium concentration is 3.0 mEq/L. After spironolactone free preparation and potassium repletion, the plasma aldosterone concentration is 28 ng/dL with suppressed plasma renin activity, and aldosterone remains 14 ng/dL after an intravenous saline infusion test. Adrenal protocol CT shows a 1.2 cm low attenuation nodule in the left adrenal gland and a normal right adrenal gland. Serum cortisol after a 1 mg overnight dexamethasone test is 1.2 μg/dL. Which of the following is the most appropriate next step in management? A. Repeat CT in 12 months B. Iodocholesterol (NP 59) scintigraphy C. Adrenal vein sampling D. Left laparoscopic adrenalectomy E. Spironolactone therapy without further testing"
+  },
+  {
+   "id": "imaging-2026-0176",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 폐경 후 여성의 철결핍빈혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0176.md",
+   "snippet": "62세 여자가 3개월 전부터 계단을 오를 때 숨이 차서 왔다. 12년 전 폐경되었고 질 출혈은 없다. 체중 변화와 복통은 없고 눈에 보이는 혈변이나 흑색변도 없다. 아스피린이나 소염진통제를 복용하지 않고 채식을 하지 않는다. 혈압 126/78 mmHg, 맥박 92회/분이다. 결막이 창백하고 복부 진찰은 정상이다. 혈액 검사에서 혈색소 9.1 g/dL, 평균적혈구용적 71 fL, 적혈구분포폭 18 %, 혈소판 452,000/mm",
+   "text": "혈액·종양 혈액·종양 — 폐경 후 여성의 철결핍빈혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 62세 여자가 3개월 전부터 계단을 오를 때 숨이 차서 왔다. 12년 전 폐경되었고 질 출혈은 없다. 체중 변화와 복통은 없고 눈에 보이는 혈변이나 흑색변도 없다. 아스피린이나 소염진통제를 복용하지 않고 채식을 하지 않는다. 혈압 126/78 mmHg, 맥박 92회/분이다. 결막이 창백하고 복부 진찰은 정상이다. 혈액 검사에서 혈색소 9.1 g/dL, 평균적혈구용적 71 fL, 적혈구분포폭 18 %, 혈소판 452,000/mm³, 페리틴 6 ng/mL 이다. 대변 잠혈 검사는 음성이다. 다음 단계로 가장 적절한 것은? A. 골수 검사 B. 대변 잠혈 검사 반복 C. 상부위장관 내시경과 대장내시경 D. 경구 철분제 투여 후 3개월 뒤 재검 E. 혈색소 전기영동"
+  },
+  {
+   "id": "imaging-2026-0175",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 구토하는 음주자의 혈액가스",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0175.md",
+   "snippet": "44세 남자가 사흘 전부터 술을 많이 마신 뒤 반복해서 토하고 음식을 먹지 못해 왔다. 10년 동안 매일 소주 한 병 이상을 마셨고 당뇨병은 없다. 혈압 102/64 mmHg, 맥박 112회/분, 호흡 22회/분, 체온 36.8℃이다. 점막이 건조하다. 혈액 검사 결과는 다음과 같다. 나트륨 140 mEq/L, 칼륨 3.2 mEq/L, 염화물 90 mEq/L, 혈당 88 mg/dL, 혈액요소질소 30 mg/dL, 크레아티닌 1",
+   "text": "영상의학 진단검사·영상의학 판독 — 구토하는 음주자의 혈액가스 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 44세 남자가 사흘 전부터 술을 많이 마신 뒤 반복해서 토하고 음식을 먹지 못해 왔다. 10년 동안 매일 소주 한 병 이상을 마셨고 당뇨병은 없다. 혈압 102/64 mmHg, 맥박 112회/분, 호흡 22회/분, 체온 36.8℃이다. 점막이 건조하다. 혈액 검사 결과는 다음과 같다. 나트륨 140 mEq/L, 칼륨 3.2 mEq/L, 염화물 90 mEq/L, 혈당 88 mg/dL, 혈액요소질소 30 mg/dL, 크레아티닌 1.2 mg/dL, 알부민 4.0 g/dL, 혈청 베타 하이드록시뷰티르산 증가, 혈중 알코올 음성, 삼투압차 정상. 동맥혈가스 분석에서 pH 7.35, PaCO2 34 mmHg, HCO3 18 mEq/L 이다. 이 환자의 산 염기 장애로 가장 적절한 것은? A. 음이온차 정상 대사산증과 호흡산증 B. 음이온차 증가 대사산증과 대사알칼리증 C. 음이온차 증가 대사산증 단독 D. 음이온차 증가 대사산증과 음이온차 정상 대사산증 E. 음이온차 증가 대사산증과 호흡알칼리증"
+  },
+  {
+   "id": "imaging-2026-0174",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 헬리코박터 제균 치료 뒤 확인 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0174.md",
+   "snippet": "A 45 year old man comes to the physician for follow up after treatment of Helicobacter pylori infection. Six weeks ago, upper endoscopy for epigastric pain showed a 6 mm duodenal ulcer, and biopsy of the gastric antrum was positive for H. p",
+   "text": "소화기 소화기·간담췌 — 헬리코박터 제균 치료 뒤 확인 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 45 year old man comes to the physician for follow up after treatment of Helicobacter pylori infection. Six weeks ago, upper endoscopy for epigastric pain showed a 6 mm duodenal ulcer, and biopsy of the gastric antrum was positive for H. pylori. He completed a 14 day course of bismuth quadruple therapy 5 weeks ago and has continued omeprazole 20 mg daily since then. His epigastric pain has resolved. He takes no other medications. His pulse is 72/min and blood pressure is 124/78 mm Hg. The abdomen is soft and nontender. Hemoglobin concentration is 14.2 g/dL. Which of the following is the most appropriate next step to confirm eradication? A. No testing is needed because symptoms have resolved B. Stop omeprazole for 2 weeks, then perform a urea breath test C. Perform a urea breath test today while continuing omeprazole D. Measure serum anti–H. pylori IgG antibodies E. Repeat upper endoscopy with antral biopsy now"
+  },
+  {
+   "id": "imaging-2026-0173",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 약물 과다 복용 뒤 넓어진 QRS",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0173.md",
+   "snippet": "26세 여자가 1시간 전 아미트립틸린을 다량 복용한 뒤 졸려하여 가족이 데리고 왔다. 우울증으로 아미트립틸린을 복용해 왔다. 혈압 84/50 mmHg, 맥박 128회/분, 호흡 16회/분, 체온 37.9℃이다. 부르면 눈을 뜨고 동공은 산대되어 있으며 피부는 건조하고 장음이 감소해 있다. 심전도에서 동빈맥, QRS 폭 142 ms, aVR 유도에서 끝부분 R파 높이 4 mm 가 보인다. 동맥혈 pH 7.34 이다. 기도를 확보",
+   "text": "응급·중환자 응급·중환자·외상 — 약물 과다 복용 뒤 넓어진 QRS opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 26세 여자가 1시간 전 아미트립틸린을 다량 복용한 뒤 졸려하여 가족이 데리고 왔다. 우울증으로 아미트립틸린을 복용해 왔다. 혈압 84/50 mmHg, 맥박 128회/분, 호흡 16회/분, 체온 37.9℃이다. 부르면 눈을 뜨고 동공은 산대되어 있으며 피부는 건조하고 장음이 감소해 있다. 심전도에서 동빈맥, QRS 폭 142 ms, aVR 유도에서 끝부분 R파 높이 4 mm 가 보인다. 동맥혈 pH 7.34 이다. 기도를 확보하고 생리식염수 1 L 를 빠르게 주입하기 시작했다. 다음으로 가장 적절한 처치는? A. 피조스티그민 정맥 주사 B. 플루마제닐 정맥 주사 C. 프로카인아미드 정맥 주사 D. 활성탄 투여 후 경과 관찰 E. 탄산수소나트륨 정맥 주사"
+  },
+  {
+   "id": "imaging-2026-0172",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 만성폐쇄폐질환 악화의 고탄산혈증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0172.md",
+   "snippet": "A 68 year old man with severe chronic obstructive pulmonary disease is brought to the emergency department because of worsening shortness of breath and increased purulent sputum for 3 days. He uses a tiotropium olodaterol inhaler and has no",
+   "text": "호흡기 호흡기 — 만성폐쇄폐질환 악화의 고탄산혈증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 68 year old man with severe chronic obstructive pulmonary disease is brought to the emergency department because of worsening shortness of breath and increased purulent sputum for 3 days. He uses a tiotropium olodaterol inhaler and has no home oxygen. He is alert and oriented but uses accessory muscles. His temperature is 37.8°C (100°F), pulse is 108/min, respirations are 28/min, and blood pressure is 142/84 mm Hg. Diffuse expiratory wheezes are heard. He receives nebulized albuterol and ipratropium, intravenous methylprednisolone, oral doxycycline, and oxygen by Venturi mask titrated to an oxygen saturation of 90%. One hour later, arterial blood gas analysis shows pH 7.28, PaCO2 68 mm Hg, PaO2 62 mm Hg, and HCO3 31 mEq/L. A chest x ray shows hyperinflation without consolidation. Which of the following is the most appropriate next step in management? A. Endotracheal intubation and mechanical ventilation B. Increase the inspired oxygen to maintain saturation above 96% C. High flow nasal cannula oxygen D. Intravenous aminophylline E. Noninvasive positive pressure ventilation"
+  },
+  {
+   "id": "imaging-2026-0171",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 바이러스 감염 뒤 자세에 따라 달라지는 흉통",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0171.md",
+   "snippet": "32세 남자가 이틀 전부터 가슴 한가운데가 찌르듯 아파서 왔다. 통증은 누우면 심해지고 앉아서 몸을 앞으로 숙이면 나아진다. 1주 전 콧물과 인후통이 있었다. 혈압 124/78 mmHg, 맥박 96회/분, 체온 37.6℃이다. 흉골 왼쪽 가장자리에서 삼성분 마찰음이 들린다. 심전도에서 대부분의 유도에 오목한 ST 분절 상승과 PR 분절 하강이 있고, aVR 에서는 ST 하강과 PR 상승이 있다. 고감도 트로포닌 I 는 정상 범",
+   "text": "순환기 순환기 — 바이러스 감염 뒤 자세에 따라 달라지는 흉통 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 32세 남자가 이틀 전부터 가슴 한가운데가 찌르듯 아파서 왔다. 통증은 누우면 심해지고 앉아서 몸을 앞으로 숙이면 나아진다. 1주 전 콧물과 인후통이 있었다. 혈압 124/78 mmHg, 맥박 96회/분, 체온 37.6℃이다. 흉골 왼쪽 가장자리에서 삼성분 마찰음이 들린다. 심전도에서 대부분의 유도에 오목한 ST 분절 상승과 PR 분절 하강이 있고, aVR 에서는 ST 하강과 PR 상승이 있다. 고감도 트로포닌 I 는 정상 범위이고 심초음파에서 심낭삼출은 소량이며 좌심실 수축 기능은 정상이다. 치료로 가장 적절한 것은? A. 이부프로펜과 콜키신 병용 B. 이부프로펜 단독 투여 C. 프레드니솔론 단독 투여 D. 심낭천자와 심낭 배액 E. 응급 관상동맥중재술"
+  },
+  {
+   "id": "imaging-2026-0170",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 갑자기 한쪽 눈이 안 보이는 고령 환자",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0170.md",
+   "snippet": "A 71 year old man comes to the emergency department because of sudden, painless loss of vision in his right eye that began 90 minutes ago while he was reading. He has hypertension, hyperlipidemia, and a 40 pack year smoking history. He has ",
+   "text": "안과 안과 — 갑자기 한쪽 눈이 안 보이는 고령 환자 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 71 year old man comes to the emergency department because of sudden, painless loss of vision in his right eye that began 90 minutes ago while he was reading. He has hypertension, hyperlipidemia, and a 40 pack year smoking history. He has no headache, jaw claudication, or scalp tenderness. His pulse is 82/min and regular, and blood pressure is 156/90 mm Hg. Visual acuity is counting fingers in the right eye and 20/25 in the left eye. There is a right relative afferent pupillary defect. Fundoscopy of the right eye shows a pale, edematous retina with a cherry red spot at the fovea. Erythrocyte sedimentation rate is 12 mm/h. Which of the following is the most appropriate next step in management? A. Outpatient carotid ultrasonography within 2 weeks B. Immediate referral to a stroke center for brain and vascular imaging C. Ocular massage and observation in the eye clinic D. Intravenous methylprednisolone E. Topical timolol and oral acetazolamide"
+  },
+  {
+   "id": "imaging-2026-0169",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 1기 태아심박동 감속의 원인",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0169.md",
+   "snippet": "A 29 year old woman, gravida 2, para 1, at 39 weeks' gestation is admitted to the labor and delivery unit in active labor. Her pregnancy has been uncomplicated. Membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear. ",
+   "text": "산부인과 산과 — 분만 1기 태아심박동 감속의 원인 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 29 year old woman, gravida 2, para 1, at 39 weeks' gestation is admitted to the labor and delivery unit in active labor. Her pregnancy has been uncomplicated. Membranes ruptured spontaneously 3 hours ago, and the amniotic fluid is clear. Her temperature is 37.0°C (98.6°F), pulse is 88/min, and blood pressure is 118/72 mm Hg. The cervix is 6 cm dilated and 90% effaced, and the fetal head is at 0 station. She has not received epidural analgesia or oxytocin. A 10 minute segment of the continuous external fetal heart rate and uterine activity tracing is shown. Which of the following is the most likely cause of the fetal heart rate decreases? A. Umbilical cord compression B. Uteroplacental insufficiency C. Fetal head compression D. Maternal hypotension E. Fetal anemia"
+  },
+  {
+   "id": "imaging-2026-0168",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 넘어진 소아의 손목 측면 X선과 고정 방법",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0168.md",
+   "snippet": "5세 남아가 2시간 전 놀이터에서 뛰다가 넘어지며 왼손을 짚은 뒤 손목 통증이 있어 왔다. 다른 부위 손상은 없고 과거력은 특이하지 않다. 왼쪽 손목 약간 몸쪽 요골 쪽에 경미한 부종과 압통이 있고 눈에 보이는 변형은 없다. 요골동맥 맥박과 모세혈관 재충전은 정상이고 손가락 감각과 운동도 정상이다. 왼쪽 손목 측면 단순 X선은 그림과 같다. 치료로 가장 적절한 것은? A. 제거 가능한 손목 부목 3주 B. 진정 하 도수 정복 ",
+   "text": "근골격·류마티스 류마티스·근골격 — 넘어진 소아의 손목 측면 X선과 고정 방법 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 5세 남아가 2시간 전 놀이터에서 뛰다가 넘어지며 왼손을 짚은 뒤 손목 통증이 있어 왔다. 다른 부위 손상은 없고 과거력은 특이하지 않다. 왼쪽 손목 약간 몸쪽 요골 쪽에 경미한 부종과 압통이 있고 눈에 보이는 변형은 없다. 요골동맥 맥박과 모세혈관 재충전은 정상이고 손가락 감각과 운동도 정상이다. 왼쪽 손목 측면 단순 X선은 그림과 같다. 치료로 가장 적절한 것은? A. 제거 가능한 손목 부목 3주 B. 진정 하 도수 정복 후 장상지 석고 6주 C. 경피적 K 강선 고정 D. 관혈적 정복 및 금속판 내고정 E. 고정 없이 1주 뒤 X선 재촬영"
+  },
+  {
+   "id": "imaging-2026-0167",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 유방암 조직의 세포막 면역조직화학과 표적치료",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0167.md",
+   "snippet": "A 58 year old woman comes to the physician for follow up after a core needle biopsy of a 3 cm mass in her right breast. She has hypertension treated with amlodipine. She has no history of heart failure. Her pulse is 76/min and blood pressur",
+   "text": "병리·조직학 병리·조직 — 유방암 조직의 세포막 면역조직화학과 표적치료 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 A 58 year old woman comes to the physician for follow up after a core needle biopsy of a 3 cm mass in her right breast. She has hypertension treated with amlodipine. She has no history of heart failure. Her pulse is 76/min and blood pressure is 132/80 mm Hg. Examination shows a firm right breast mass and a palpable, mobile right axillary lymph node. Biopsy shows invasive ductal carcinoma. Estrogen and progesterone receptor stains are negative. A photomicrograph of the tumor stained by immunohistochemistry for a cell surface receptor is shown. Neoadjuvant chemotherapy combined with a monoclonal antibody against this receptor is planned. Which of the following is the most appropriate test before starting the antibody? A. Pure tone audiometry B. Slit lamp eye examination C. Serum TSH measurement D. Transthoracic echocardiography E. Pulmonary function testing"
+  },
+  {
+   "id": "imaging-2026-0166",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 폐경 후 유방암 조직의 호르몬 수용체 면역조직화학",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621",
+   "confidence": "high",
+   "date": "2026-09-29",
+   "path": "content/imaging/2026/imaging-2026-0166.md",
+   "snippet": "68세 여자가 건강검진 유방촬영술에서 왼쪽 유방의 2 cm 종괴가 발견되어 왔다. 16년 전 폐경되었고 골다공증이나 정맥혈전증 병력은 없다. 유방보존수술과 감시림프절 생검을 하였고 병리 결과는 침윤성 관암종, 림프절 전이 없음이었다. 종양 조직의 HER2 면역조직화학염색은 1+였다. 종양 조직 절편의 에스트로겐 수용체 면역조직화학염색 결과는 그림과 같다. 방사선치료 뒤 보조 전신치료로 가장 적절한 것은? A. 타목시펜과 고세렐",
+   "text": "병리·조직학 병리·조직 — 폐경 후 유방암 조직의 호르몬 수용체 면역조직화학 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260929T202534Z_일일영상_2026-09-30_12units_12q_949d1621 68세 여자가 건강검진 유방촬영술에서 왼쪽 유방의 2 cm 종괴가 발견되어 왔다. 16년 전 폐경되었고 골다공증이나 정맥혈전증 병력은 없다. 유방보존수술과 감시림프절 생검을 하였고 병리 결과는 침윤성 관암종, 림프절 전이 없음이었다. 종양 조직의 HER2 면역조직화학염색은 1+였다. 종양 조직 절편의 에스트로겐 수용체 면역조직화학염색 결과는 그림과 같다. 방사선치료 뒤 보조 전신치료로 가장 적절한 것은? A. 타목시펜과 고세렐린 병용 B. 독소루비신과 시클로포스파미드 C. 추가 전신치료 없이 경과 관찰 D. 아나스트로졸 E. 트라스투주맙"
   },
   {
    "id": "anatomy-daily-2026-09-29",
