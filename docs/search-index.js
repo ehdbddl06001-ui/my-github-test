@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-29",
+ "generated": "2026-09-30",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3124,
+  "total": 3135,
   "byType": {
+   "usmle": 174,
    "kmle": 1216,
    "anatomy": 768,
-   "usmle": 168,
-   "paper": 689,
+   "paper": 694,
    "imaging": 176,
    "concept": 90,
    "ailab": 14,
@@ -18,22 +18,22 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 768,
-   "Cardiology": 226,
+   "Cardiology": 227,
    "Nephrology": 182,
-   "Infectious Disease": 163,
+   "Infectious Disease": 164,
    "Pediatrics": 147,
    "Obstetrics & Gynecology": 108,
-   "Hematology-Oncology": 102,
-   "Pathology": 99,
-   "Psychiatry": 92,
+   "Hematology-Oncology": 103,
+   "Pathology": 101,
+   "Psychiatry": 93,
    "Neurology": 91,
    "Rheumatology": 87,
    "General Surgery": 84,
+   "Surgery": 82,
    "Endocrinology": 81,
    "Dermatology": 80,
    "Gastroenterology": 79,
    "Orthopedics": 79,
-   "Surgery": 79,
    "Ophthalmology": 78,
    "Pulmonology": 78,
    "Hematology": 73,
@@ -41,9 +41,9 @@ window.MEDKOS_INDEX = {
    "산부인과": 34,
    "Physiology": 20,
    "순환기": 16,
+   "Pharmacology": 14,
    "Biochemistry": 13,
-   "Pharmacology": 13,
-   "Microbiology": 12,
+   "Microbiology": 13,
    "호흡기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
@@ -78,13 +78,145 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2100,
-   "medium": 975,
+   "high": 2106,
+   "medium": 980,
    "low": 49
   },
-  "tagCount": 4372
+  "tagCount": 4397
  },
  "docs": [
+  {
+   "id": "usmle-2026-0187",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Voices Still Telling Him to Die After Six Observed Weeks of a Second Antipsychotic in a 26-Year-Old With Schizophrenia",
+   "tags": [
+    "schizophrenia",
+    "treatment-resistant-schizophrenia",
+    "clozapine",
+    "suicidality",
+    "antipsychotic-trial",
+    "adherence",
+    "long-acting-injectable"
+   ],
+   "source": "USMLE-style / MedKOS (Keepers GA et al. The American Psychiatric Association Practice Guideline for the Treatment of Patients With Schizophrenia, Third Edition, Am J Psychiatry 2020;177:868; Howes OD et al. Treatment-Resistant Schizophrenia: Treatment Response and Resistance in Psychosis (TRRIP) Working Group Consensus Guidelines, Am J Psychiatry 2017;174:216; Meltzer HY et al. Clozapine treatment for suicidality in schizophrenia: International Suicide Prevention Trial (InterSePT), Arch Gen Psychiatry 2003;60:82)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0187.md",
+   "snippet": "A 26 year old man is evaluated on an inpatient psychiatric unit 6 weeks after he was admitted when police found him standing on the edge of a highway overpass because voices had told him to jump. Schizophrenia was diagnosed 4 years ago. Two",
+   "text": "Psychiatry Voices Still Telling Him to Die After Six Observed Weeks of a Second Antipsychotic in a 26-Year-Old With Schizophrenia schizophrenia treatment-resistant-schizophrenia clozapine suicidality antipsychotic-trial adherence long-acting-injectable USMLE-style / MedKOS (Keepers GA et al. The American Psychiatric Association Practice Guideline for the Treatment of Patients With Schizophrenia, Third Edition, Am J Psychiatry 2020;177:868; Howes OD et al. Treatment-Resistant Schizophrenia: Treatment Response and Resistance in Psychosis (TRRIP) Working Group Consensus Guidelines, Am J Psychiatry 2017;174:216; Meltzer HY et al. Clozapine treatment for suicidality in schizophrenia: International Suicide Prevention Trial (InterSePT), Arch Gen Psychiatry 2003;60:82) A 26 year old man is evaluated on an inpatient psychiatric unit 6 weeks after he was admitted when police found him standing on the edge of a highway overpass because voices had told him to jump. Schizophrenia was diagnosed 4 years ago. Two years ago he took risperidone, 6 mg daily, for 8 weeks with little improvement in his hallucinations. Since admission he has received olanzapine, which was increased to 20 mg daily 6 weeks ago; nurses watch him swallow each dose. He continues to hear voices telling him that he deserves to die and believes that his neighbors are poisoning his food. He has made no attempt to harm himself in the hospital. He does not drink alcohol or use illicit drugs, and urine toxicology screening on admission was negative. He has no history of seizures, neutropenia or heart disease. His vital signs are shown. He is disheveled and guarded, with a flat affect. He says the voices are present right now and that he would \"do what they say\" if he were discharged. There is no insight into his illness. Laboratory studies are shown. An ECG shows normal sinus rhythm with a QTc interval of 418 msec. Which of the following is the most appropriate pharmacotherapy? A. Switch to aripiprazole B. Switch to clozapine C. Add haloperidol to olanzapine D. Switch to long acting injectable paliperidone palmitate E. Add lithium to olanzapine 조현병 환자가 서로 다른 두 항정신병약(risperidone 6 mg 8주, olanzapine 20 mg 6주)을 충분한 용량·기간으로 썼는데도 환청·망상이 남아 있으므로 치료저항성 조현병이다. olanzapine 은 간호사가 복용을 직접 확인했고 혈중 농도도 치료 범위라 복약 불이행·흡수 문제로 설명되지 않는다 — 따라서 장기 지속형 주사제로 바꿀 이유가 없다. 치료저항성 조현병에서 효과가 입증된 유일한 약은 clozapine 이고, 조현병 환자의 자살 시도·자살 행동도 줄인다(InterSePT). 이 환자는 명령 환청에 따라 자살을 시도할 뻔했고 지금도 지속적인 자살 위험이 있어 clozapine 의 적응이 두 겹이다. 경련·호중구 감소 병력이 없고 절대 호중구 수가 정상이라 시작할 수 있으며, 시작 후에는 절대 호중구 수를 정기적으로 추적한다."
+  },
+  {
+   "id": "usmle-2026-0186",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "A Swollen, Painful Calf With Weak Foot Pulses the Morning After Tibial Nailing",
+   "tags": [
+    "compartment-syndrome",
+    "tibial-fracture",
+    "intramedullary-nail",
+    "fasciotomy",
+    "weak-pulse",
+    "delta-pressure",
+    "deep-posterior-compartment"
+   ],
+   "source": "USMLE-style / MedKOS (Shadgan B et al. Current thinking about acute compartment syndrome of the lower extremity, Can J Surg 2010 [PMID 20858378]; McQueen MM, Court-Brown CM. Compartment monitoring in tibial fractures. The pressure threshold for decompression, J Bone Joint Surg Br 1996 [PMID 8898137]; British Orthopaedic Association. BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities, 2014 updated 2025; Harrison's Principles of Internal Medicine 21e Ch 281 Arterial Diseases of the Extremities)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0186.md",
+   "snippet": "A 34 year old woman is evaluated on the orthopedic ward 18 hours after intramedullary nailing of a closed left tibial shaft fracture sustained in a motorcycle collision. After surgery she was given subcutaneous enoxaparin prophylaxis, and i",
+   "text": "Surgery A Swollen, Painful Calf With Weak Foot Pulses the Morning After Tibial Nailing compartment-syndrome tibial-fracture intramedullary-nail fasciotomy weak-pulse delta-pressure deep-posterior-compartment USMLE-style / MedKOS (Shadgan B et al. Current thinking about acute compartment syndrome of the lower extremity, Can J Surg 2010 [PMID 20858378]; McQueen MM, Court-Brown CM. Compartment monitoring in tibial fractures. The pressure threshold for decompression, J Bone Joint Surg Br 1996 [PMID 8898137]; British Orthopaedic Association. BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities, 2014 updated 2025; Harrison's Principles of Internal Medicine 21e Ch 281 Arterial Diseases of the Extremities) A 34 year old woman is evaluated on the orthopedic ward 18 hours after intramedullary nailing of a closed left tibial shaft fracture sustained in a motorcycle collision. After surgery she was given subcutaneous enoxaparin prophylaxis, and intermittent pneumatic compression sleeves were placed on both legs. During the past 5 hours she has had severe, constant pain in the left calf that has steadily increased despite intravenous morphine patient controlled analgesia, and a burning numbness has developed in the sole of the left foot. She is alert and fully oriented. The left calf is swollen and firm and tense to palpation compared with the right. Passive dorsiflexion of the left toes causes severe pain in the calf. Sensation to light touch is decreased over the plantar surface of the left foot. The left dorsalis pedis and posterior tibial pulses are weak (1+), compared with 2+ on the right. The left foot is warm and pink, with a capillary refill time of 2 seconds, and handheld Doppler examination shows triphasic arterial signals at the left ankle. Needle manometry of the deep posterior compartment of the left leg shows a pressure of 46 mm Hg. Her vital signs are shown. Laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Full dose anticoagulation with intravenous heparin B. CT angiography of the left lower extremity C. Catheter directed thrombolysis of the popliteal artery D. Emergency four compartment fasciotomy of the left leg E. Venous duplex ultrasonography of the left leg 경골 간부 골절 고정 다음 날 진통제에 듣지 않고 점점 심해지는 종아리 통증, 발가락 수동 배굴 때의 심한 통증, 단단하게 긴장된 종아리, 발바닥(경골신경 영역) 감각 저하는 깊은 뒤칸을 포함한 급성 구획증후군이다. 발등·뒤정강 동맥 맥박이 약하게(1+) 만져지지만 발이 따뜻하고 분홍빛이며 재충혈 2초, 발목에서 도플러 동맥 신호가 3상이다 — 동맥이 막힌 다리의 창백·냉감·신호 소실이 없으므로 혈전·색전 폐색이 아니라, 올라간 구획 내압이 맥박을 눌러 약하게 만든 것이다. 구획압 46 mm Hg 와 이완기 혈압 68 mm Hg 의 차이는 22 mm Hg 로 30 mm Hg 이하 — 감압 기준에 든다. 혈관 영상·항응고·혈전용해는 올라간 구획 내압을 낮추지 못하고 감압을 늦출 뿐이므로 곧바로 네 구획 근막절개술을 한다(압박 슬리브는 벗긴다)."
+  },
+  {
+   "id": "usmle-2026-0185",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Worsening Forearm Pain Despite a Split Cast and a Strong Radial Pulse Nine Hours After a Both-Bone Fracture",
+   "tags": [
+    "compartment-syndrome",
+    "forearm-fracture",
+    "fasciotomy",
+    "cast",
+    "palpable-pulse",
+    "orthopedic-emergency",
+    "volar-compartment"
+   ],
+   "source": "USMLE-style / MedKOS (British Orthopaedic Association. BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities, 2014 updated 2025; Shadgan B et al. Current thinking about acute compartment syndrome of the lower extremity, Can J Surg 2010 [PMID 20858378]; Long B et al. Evaluation and Management of Acute Compartment Syndrome in the Emergency Department, J Emerg Med 2019 [PMID 30685220])",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0185.md",
+   "snippet": "A 27 year old man is admitted to the hospital after falling from a ladder onto his outstretched right arm. X rays show closed, displaced fractures of the midshaft radius and ulna. The fractures are reduced under sedation, and a padded, circ",
+   "text": "Surgery Worsening Forearm Pain Despite a Split Cast and a Strong Radial Pulse Nine Hours After a Both-Bone Fracture compartment-syndrome forearm-fracture fasciotomy cast palpable-pulse orthopedic-emergency volar-compartment USMLE-style / MedKOS (British Orthopaedic Association. BOASt — Diagnosis and Management of Compartment Syndrome of the Extremities, 2014 updated 2025; Shadgan B et al. Current thinking about acute compartment syndrome of the lower extremity, Can J Surg 2010 [PMID 20858378]; Long B et al. Evaluation and Management of Acute Compartment Syndrome in the Emergency Department, J Emerg Med 2019 [PMID 30685220]) A 27 year old man is admitted to the hospital after falling from a ladder onto his outstretched right arm. X rays show closed, displaced fractures of the midshaft radius and ulna. The fractures are reduced under sedation, and a padded, circumferential long arm cast is applied; surgical fixation is scheduled for the next morning. Nine hours after the cast was applied, he reports increasingly severe, deep, aching pain in the forearm that has not improved after three doses of intravenous hydromorphone during the past 2 hours. The cast and all padding were split down to the skin and the arm was elevated on pillows 45 minutes ago, but the pain has continued to worsen. He is alert and fully oriented. The volar forearm is swollen and feels tense and woody. Passive extension of the fingers causes severe pain in the forearm, and he has decreased sensation to light touch over the palmar tips of the thumb, index and middle fingers. The radial pulse is 2+ and the fingers are warm, with a capillary refill time of less than 2 seconds. His vital signs are shown. Laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Continued elevation of the arm with reassessment in 1 hour B. Measurement of forearm compartment pressures before deciding on surgery C. Emergency fasciotomy of the forearm compartments D. CT angiography of the right upper extremity E. Patient controlled opioid analgesia with hourly neurovascular checks 요골·척골 간부 골절을 둘레 석고로 고정한 뒤 수 시간에 걸쳐 진통제에 듣지 않고 점점 심해지는 깊은 통증, 손가락 수동 신전 때의 심한 통증, 단단하고 팽팽한 손바닥쪽 전완, 정중신경 영역의 감각 저하는 급성 구획증후군의 임상 소견이다. 석고와 솜을 피부까지 가르고 팔을 올려 둔 지 45분이 지났는데도 통증이 계속 심해진다 — 둘레 압박을 푼 뒤에도 지속되는 소견이므로 구획증후군이 진단되었고(BOASt 표준 7 → 9) 곧바로 구획을 감압해야 한다. 요골동맥 맥박이 2+ 이고 손가락이 따뜻하며 모세혈관 재충혈이 정상이라는 사실은 안심 근거가 되지 못한다 — 구획 내압은 모세혈관 관류를 막을 만큼 올라도 큰 동맥 압력보다 훨씬 낮아 맥박은 늦게까지 유지되고, 맥박 소실은 늦은 징후다. 의식이 맑고 진찰이 믿을 만한 환자에서 전형적 소견이 있으면 구획압 측정으로 수술을 미루지 않는다."
+  },
+  {
+   "id": "usmle-2026-0184",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Fever, Dark Urine and Coombs-Negative Hemolysis in an Asplenic Gardener on Nantucket in July",
+   "tags": [
+    "babesiosis",
+    "babesia-microti",
+    "ixodes-scapularis",
+    "asplenia",
+    "hemolytic-anemia",
+    "peripheral-smear",
+    "tick-borne-infection"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 225 Babesiosis; Krause PJ et al. Clinical Practice Guidelines by the IDSA: 2020 Guideline on Diagnosis and Management of Babesiosis, Clin Infect Dis 2021;72:e49; Murray PR et al. Medical Microbiology 9e — Blood and Tissue Protozoa)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0184.md",
+   "snippet": "A 71 year old man comes to the emergency department because of fever, shaking chills, fatigue and dark urine for 5 days. He lives on Nantucket Island, Massachusetts, and spent most of July gardening and walking through tall grass with his d",
+   "text": "Microbiology Fever, Dark Urine and Coombs-Negative Hemolysis in an Asplenic Gardener on Nantucket in July babesiosis babesia-microti ixodes-scapularis asplenia hemolytic-anemia peripheral-smear tick-borne-infection USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 225 Babesiosis; Krause PJ et al. Clinical Practice Guidelines by the IDSA: 2020 Guideline on Diagnosis and Management of Babesiosis, Clin Infect Dis 2021;72:e49; Murray PR et al. Medical Microbiology 9e — Blood and Tissue Protozoa) A 71 year old man comes to the emergency department because of fever, shaking chills, fatigue and dark urine for 5 days. He lives on Nantucket Island, Massachusetts, and spent most of July gardening and walking through tall grass with his dog. He underwent splenectomy 12 years ago after a motor vehicle collision. He has not traveled outside the northeastern United States in the past 10 years and has never received a blood transfusion. He does not recall a tick bite or a rash. His vital signs are shown. He appears fatigued. The sclerae are mildly icteric. There is no rash, lymphadenopathy or neck stiffness. He is alert and fully oriented, and neurologic examination shows no focal findings. Laboratory studies are shown. Urine dipstick is strongly positive for blood, but microscopy shows 0–2 erythrocytes per high power field. Which of the following is most likely to be seen on a Wright Giemsa–stained peripheral blood smear? A. Intraerythrocytic ring forms with occasional tetrads and no pigment B. Basophilic cytoplasmic inclusions within neutrophils C. Numerous fragmented erythrocytes with helmet shapes D. Crescent shaped gametocytes within erythrocytes E. Numerous small, dense spherocytes 발열·오한과 함께 혈관 내 용혈(검은 소변 — 요 잠혈 강양성인데 적혈구는 거의 없는 혈색소뇨, 망상적혈구 증가, 합토글로빈 저하, LDH 상승, 간접 빌리루빈 우세)과 혈소판 감소가 있고 직접 항글로불린 검사는 음성이다. 여름철 매사추세츠 낸터킷 섬에서 풀숲을 다닌 노출(Ixodes scapularis 진드기 — 물린 기억이 없는 경우가 흔하다)과 비장 절제 병력은 Babesia microti 감염의 전형적인 조합이다. 비장이 없으면 감염 적혈구를 걸러내지 못해 원충혈증과 용혈이 심해진다. 말초혈액 도말에서는 적혈구 안의 고리 모양 원충이 보이고, 드물게 네 개가 십자 모양으로 모인 사분체(tetrad, 'Maltese cross')가 보이며, 말라리아와 달리 헤모조인 색소와 생식모세포가 없다. 10년 동안 북동부 밖으로 여행하지 않았으므로 열대열 말라리아의 가능성은 낮다."
+  },
+  {
+   "id": "usmle-2026-0183",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Falling Grades, a Shaky Hand, Drooling and Mild Jaundice in a 19-Year-Old With Coombs-Negative Hemolysis",
+   "tags": [
+    "wilson-disease",
+    "ATP7B",
+    "ceruloplasmin",
+    "urinary-copper",
+    "coombs-negative-hemolysis",
+    "hepatolenticular-degeneration",
+    "movement-disorder"
+   ],
+   "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 18 Liver and Gallbladder — Wilson Disease; Harrison's Principles of Internal Medicine 21e Ch 415 Wilson's Disease; Schilsky ML et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: 2022 Practice Guidance on Wilson disease from the American Association for the Study of Liver Diseases, Hepatology 2022)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0183.md",
+   "snippet": "A 19 year old man is brought to the physician by his parents because of a 6 month history of falling grades, irritability and angry outbursts at home. During the past 2 months his handwriting has become shaky, his speech has become slurred ",
+   "text": "Pathology Falling Grades, a Shaky Hand, Drooling and Mild Jaundice in a 19-Year-Old With Coombs-Negative Hemolysis wilson-disease ATP7B ceruloplasmin urinary-copper coombs-negative-hemolysis hepatolenticular-degeneration movement-disorder USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e Ch 18 Liver and Gallbladder — Wilson Disease; Harrison's Principles of Internal Medicine 21e Ch 415 Wilson's Disease; Schilsky ML et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: 2022 Practice Guidance on Wilson disease from the American Association for the Study of Liver Diseases, Hepatology 2022) A 19 year old man is brought to the physician by his parents because of a 6 month history of falling grades, irritability and angry outbursts at home. During the past 2 months his handwriting has become shaky, his speech has become slurred and he occasionally drools. He does not smoke or drink alcohol and says that he has never used illicit drugs. He takes no medications. There is no family history of liver disease, but his parents are first cousins. His vital signs are shown. He is alert and oriented but laughs inappropriately during the interview. The sclerae are mildly icteric. The liver edge is palpable 2 cm below the right costal margin, and the spleen tip is palpable. There is a coarse tremor of both outstretched arms that worsens when the arms are abducted, and his speech is dysarthric. Muscle tone is increased in both upper extremities. Laboratory studies are shown. Which of the following is most likely to be found on further evaluation? A. High titer anti–smooth muscle antibodies and elevated serum IgG B. Transferrin saturation of 75% and serum ferritin of 1,800 ng/mL C. Positive urine toxicology screen for amphetamines D. Periodic acid–Schiff–positive, diastase resistant globules in periportal hepatocytes E. Low serum ceruloplasmin and increased 24 hour urinary copper excretion 젊은 사람에게 수개월에 걸친 정신 증상(성격 변화·충동성·부적절한 웃음)과 추체외로·소뇌 증상(날갯짓 양상의 굵은 떨림·구음장애·침흘림·근긴장 증가), 그리고 간 질환(황달·간비대·비장 촉지·혈소판 감소·알부민 저하·INR 상승)이 함께 있으면 간과 기저핵을 함께 침범하는 윌슨병(간렌즈핵 변성)을 먼저 생각한다. 부모가 사촌이라는 병력은 상염색체 열성 유전(ATP7B)과 맞는다. 망상적혈구 증가·합토글로빈 저하·LDH 상승·간접 빌리루빈 우세인데 직접 항글로불린 검사가 음성인 용혈은 간세포에서 풀려난 유리 구리가 적혈구를 직접 손상하는 비면역성 용혈로 설명된다. ATP7B 결함으로 구리가 담즙으로 배설되지 못하고 세룰로플라스민에 실리지 못하므로 혈청 세룰로플라스민은 낮고, 넘치는 유리 구리가 소변으로 나가 24시간 소변 구리가 증가한다. 신경 증상이 있는 환자는 세극등 검사에서 거의 모두 각막 가장자리 구리 침착(Kayser Fleischer 고리)을 보인다."
+  },
+  {
+   "id": "usmle-2026-0182",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Two Faints in a Week and a Pulse of 42 in an 81-Year-Old Four Weeks After a Dementia Drug Was Started",
+   "tags": [
+    "donepezil",
+    "cholinesterase-inhibitor",
+    "muscarinic-M2",
+    "sinus-bradycardia",
+    "syncope",
+    "alzheimer-disease",
+    "adverse-drug-effect"
+   ],
+   "source": "USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology 15e Ch 6–7 Cholinoceptor-Activating & Cholinesterase-Inhibiting Drugs; Goodman & Gilman's The Pharmacological Basis of Therapeutics 14e (anticholinesterase agents); Harrison's Principles of Internal Medicine 21e Ch 244 The Bradyarrhythmias: Disorders of the Sinoatrial Node)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/usmle/usmle-2026-0182.md",
+   "snippet": "An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within",
+   "text": "Pharmacology Two Faints in a Week and a Pulse of 42 in an 81-Year-Old Four Weeks After a Dementia Drug Was Started donepezil cholinesterase-inhibitor muscarinic-M2 sinus-bradycardia syncope alzheimer-disease adverse-drug-effect USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology 15e Ch 6–7 Cholinoceptor-Activating & Cholinesterase-Inhibiting Drugs; Goodman & Gilman's The Pharmacological Basis of Therapeutics 14e (anticholinesterase agents); Harrison's Principles of Internal Medicine 21e Ch 244 The Bradyarrhythmias: Disorders of the Sinoatrial Node) An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within a minute and was not confused afterward; there was no tongue biting or incontinence. She has Alzheimer disease, and donepezil was started 4 weeks ago. Since then she has had nausea, two or three loose stools daily and vivid dreams. She has had hypertension treated with amlodipine for 8 years and hypothyroidism treated with levothyroxine; the doses have not changed in the past year. She takes no other medications. Her vital signs are shown; there is no orthostatic change in blood pressure. She is oriented to person and place. The lungs are clear to auscultation. Cardiac examination shows a regular rhythm and no murmurs. There is no peripheral edema. Laboratory studies are shown. An ECG is shown. Which of the following mechanisms most likely explains this patient's episodes of syncope? A. Blockade of L type calcium channels in sinoatrial nodal cells B. Increased acetylcholine acting on M2 receptors in the sinoatrial node C. Fibrotic degeneration of the sinoatrial node and conduction system D. Arteriolar vasodilation reducing cerebral perfusion pressure E. Insufficient thyroid hormone decreasing sinoatrial automaticity 짧은 의식 소실이 두 번 있었고 맥박 42, 심전도는 규칙적인 동서맥이며 기립 혈압 변화가 없다 — 서맥이 뇌 관류를 떨어뜨린 실신이다. 서맥은 4주 전 donepezil(가역적 아세틸콜린에스테라제 억제제)을 시작한 뒤에 생겼고, 같은 시기의 구역·묽은 변·생생한 꿈은 아세틸콜린 증가의 콜린성 부작용이다. 콜린에스테라제 억제제는 중추뿐 아니라 말초에서도 아세틸콜린을 늘려 동방결절의 M2 무스카린 수용체(Gi)를 자극한다 — Gβγ 가 GIRK(IK,ACh) 칼륨 통로를 열어 세포를 과분극시키고 cAMP 저하로 If·L형 칼슘 전류가 줄어 4상 탈분극이 느려진다(음성 변시). 8년째 같은 용량의 amlodipine 은 혈관 선택적 디하이드로피리딘이라 동방결절을 거의 억제하지 않고, TSH 정상은 갑상선 기능 저하에 의한 서맥 가능성을 낮춘다."
+  },
   {
    "id": "kmle-2026-1247",
    "type": "kmle",
@@ -862,6 +994,91 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0176.md",
    "snippet": "A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim su",
    "text": "Biochemistry Dark Urine and Jaundice Three Days After an Antibiotic in a Previously Healthy Man G6PD-deficiency hemolytic-anemia oxidative-stress NADPH glutathione pentose-phosphate-pathway Heinz-bodies bite-cells sulfonamide USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 100 Hemolytic Anemias; Luzzatto L, Arese P. Favism and Glucose-6-Phosphate Dehydrogenase Deficiency, N Engl J Med 2018;378:60) A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim sulfamethoxazole. The abscess is healing. He has no history of serious illness, and his hemoglobin concentration was 15.1 g/dL at a physical examination 1 year ago. He takes no other medications. His vital signs are shown. He appears pale, and the sclerae are icteric. The spleen is not palpable. Laboratory studies are shown. A peripheral blood smear shows red blood cells with semicircular bites removed from their edges; a supravital stain shows small dark inclusions attached to the inner red cell membrane. Which of the following best explains why this patient's red blood cells were damaged after he began taking the drug? A. Weak anchoring of the membrane to the spectrin cytoskeleton B. Complement lysis after loss of GPI anchored CD55 and CD59 C. Drug dependent IgG antibodies bound to the red cell surface D. Too little NADPH to keep glutathione in its reduced form E. Too little ATP to run the membrane sodium potassium pump 산화제 약(설파메톡사졸) 시작 2–3일 뒤 갑자기 생긴 용혈이다. 혈색소 8.6·망상적혈구 6.8 %·간접 빌리루빈 상승·LDH 상승·합토글로빈 저하에 요잠혈 3+ 인데 적혈구가 없으니 혈색소뇨(혈관내 용혈)다. 직접 항글로불린 검사 음성은 면역 용혈의 가능성을 낮추고, 물린 세포(bite cell)와 초생체 염색의 막 부착 봉입체(Heinz body, 변성 혈색소)는 산화 손상을 가리킨다. 1년 전 혈색소가 정상이고 비장이 크지 않아 평생 이어지는 막·에너지 결함보다는 산화 스트레스가 올 때만 터지는 효소 결함 = G6PD 결핍이다. G6PD 는 오탄당 인산 경로의 첫 효소로 적혈구의 유일한 NADPH 공급원이다 — NADPH 가 없으면 글루타티온 환원효소가 산화형 글루타티온(GSSG)을 환원형(GSH)으로 되돌리지 못해 과산화수소를 치우지 못하고, 혈색소가 산화·변성돼 막에 달라붙는다(Heinz body). 비장 대식세포가 이것을 뜯어내 물린 세포가 된다."
+  },
+  {
+   "id": "paper-2026-0694",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Spine",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0694_mode_specific_association_between_tri_cortical_pedicle_screw.md",
+   "snippet": "Title Mode Specific Association Between Tri Cortical Pedicle Screws and Proximal Junctional Kyphosis in Adult Spinal Deformity: A Propensity Score Matched Cohort Study Authors Wu Xinjie, Xie Gongheng, Tang Ziyang, Qin Xiaodong, Bao Hongda, ",
+   "text": "Surgery scraped pubmed PubMed / Spine Title Mode Specific Association Between Tri Cortical Pedicle Screws and Proximal Junctional Kyphosis in Adult Spinal Deformity: A Propensity Score Matched Cohort Study Authors Wu Xinjie, Xie Gongheng, Tang Ziyang, Qin Xiaodong, Bao Hongda, Shi Benlong, Mao Saihu, Qiu Yong, et al. Journal / DOI Spine · DOI: 10.1097/BRS.0000000000005889 · PMID: 42809758 https://pubmed.ncbi.nlm.nih.gov/42809758/ Abstract STUDY DESIGN: Retrospective propensity score matched cohort study. OBJECTIVE: To evaluate the association between tri cortical pedicle screw (TPS) fixation and radiographic proximal junctional kyphosis (PJK) after adult spinal deformity (ASD) surgery and to explore mode specific associations. SUMMARY OF BACKGROUND DATA: PJK is common after long segment fusion for ASD. Binary PJK endpoints may overlook heterogeneous PJK modes. The mode specific association of TPS fixation remains uncertain. METHODS: Adults undergoing long segment posterior fusion with a lower thoracic upper instrumented vertebra (T9 T12) and at least 2 years of follow up were retrospectively identified. Patients were categorized according to TPS use at the upper instrumented vertebra. Propensity score matching was performed to address baseline differences. The primary outcome was radiographic PJK, defined as a ≥10 degree increase in proximal junctional angle from the immediate postoperative radiograph. PJK modes were classified using a published system. Overall and mode specific associations were evaluated using LASSO selected and adjusted logistic regression, bias reduced multinomial regression, and E value sensitivity analysis. RESULTS: Of 304 eligible patients, 189 received conventional pedicle screw fixation and 115 received TPS fixation. Propensity score matching generated 110 pairs. In the matched cohort, radiographic PJK occurred in 8.2% of the TPS group and 27.3% of the Control group (P<0.001). TPS fixation was associated with lower PJK odds in the LASSO selected model (OR, 0.36, 95% CI, 0.14 0.87, P=0.028). Type 2 PJK occurred in 10 Control patients and in no TPS patients. Type 1 and combined Type 3 4 PJK showed no significant association with TPS. The E value for the point estimate was 5.00. CONCLUSIONS: TPS fixation was associated with a lower incidence of radiographic PJK after ASD surgery. Mode specific analysis suggested fewer Type 2 PJK events with TPS fixation, supporting mode specific radiographic assessment and further evaluation of TPS as a proximal fixation strategy. LEVEL OF EVIDENCE: Level III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0693",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0693_advanced_optical_microscopy_for_skin_imaging_from_confocal_t.md",
+   "snippet": "Title Advanced optical microscopy for skin imaging: from confocal to novel techniques Authors Troyanova Slavkova Svetoslava, Slavkov Dimitar, Vasilev Preslav, Troyanova Petranka Journal / DOI Acta dermatovenerologica Alpina, Pannonica, et A",
+   "text": "Pathology scraped pubmed PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica Title Advanced optical microscopy for skin imaging: from confocal to novel techniques Authors Troyanova Slavkova Svetoslava, Slavkov Dimitar, Vasilev Preslav, Troyanova Petranka Journal / DOI Acta dermatovenerologica Alpina, Pannonica, et Adriatica · PMID: 42809767 https://pubmed.ncbi.nlm.nih.gov/42809767/ Abstract Timely and accurate diagnosis of dermatological diseases remains a global challenge, particularly in healthcare systems with limited access to dermatopathology services. Advanced optical microscopy techniques have emerged as powerful tools for non invasive skin imaging, offering real time visualization of microscopic structures with near histological resolution. Reflectance confocal microscopy (RCM) and ex vivo confocal microscopy (EVCM) have achieved significant clinical traction, demonstrating high concordance with conventional histopathology and high diagnostic accuracy for melanocytic lesions and non melanoma skin cancers. In parallel, developments in optical coherence tomography (OCT) and its variants including dynamic OCT and line field confocal OCT (LC OCT) provide complementary morphological and vascular information with greater penetration depth. LC OCT further combines near cellular resolution with simultaneous vertical and horizontal imaging, narrowing the gap between non invasive imaging and histopathology. Emerging multimodal imaging platforms integrating OCT, Raman spectroscopy, photoacoustic tomography, and ultrasound, together with artificial intelligence assisted image analysis, continue to expand the diagnostic capabilities of optical microscopy. Although RCM, EVCM, OCT, and LC OCT are increasingly being incorporated into routine dermatological practice, several emerging technologies remain largely confined to specialized academic centers because of their cost, technical complexity, and limited clinical validation. This narrative review summarizes current evidence on confocal microscopy and related optical imaging technologies for skin diagnostics, emphasizing diagnostic performance, clinical utility, implementation challenges, and future directions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0692",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS applied bio materials",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0692_noninvasive_transdermal_vaccine_platform_using_deep_eutectic.md",
+   "snippet": "Title Noninvasive Transdermal Vaccine Platform Using Deep Eutectic Solvents for Cancer Immunotherapy Authors Fujita Naoaki, Toyofuku Kiyohiro, Wakabayashi Rie, Kawaguchi Yoshirou, Kamiya Noriho, Goto Masahiro Journal / DOI ACS applied bio m",
+   "text": "Hematology-Oncology scraped pubmed PubMed / ACS applied bio materials Title Noninvasive Transdermal Vaccine Platform Using Deep Eutectic Solvents for Cancer Immunotherapy Authors Fujita Naoaki, Toyofuku Kiyohiro, Wakabayashi Rie, Kawaguchi Yoshirou, Kamiya Noriho, Goto Masahiro Journal / DOI ACS applied bio materials · DOI: 10.1021/acsabm.6c00559 · PMID: 42809809 https://pubmed.ncbi.nlm.nih.gov/42809809/ Abstract Cancer immunotherapy has attracted considerable attention since the early 2010s as an alternative to conventional cancer treatments such as surgery, chemotherapy, and radiotherapy. Among these approaches, cancer vaccines exert preventive and therapeutic effects by eliciting immune responses against tumor antigens. However, most cancer vaccines still rely on injection based administration, which is associated with pain, the risk of secondary infection, and an increased burden on healthcare professionals. To address these limitations, we focused on noninvasive and convenient transdermal administration of cancer vaccines. Nevertheless, the transdermal delivery of hydrophilic cancer antigen peptides is considered challenging because the stratum corneum, the outermost layer of the skin, acts as a strong barrier against hydrophilic molecules and molecules with molecular weights greater than 500. To overcome this limitation, we developed a deep eutectic solvent (DES) based formulation for transdermal cancer vaccination. In the present study, an amphiphilic DES composed of choline and oleic acid was prepared. Using this DES, a model cancer antigen peptide (SIINFEKL) was solubilized in an oil based vehicle, yielding a transdermal formulation. Ex vivo studies demonstrated that the DES based formulation exhibited greater skin permeation than a phosphate buffered saline solution and a conventional ionic liquid based formulation. Optimization with ethanol as a cosolvent yielded an advanced formulation that exhibited even higher skin permeation and showed significant tumor growth suppression in vivo. In addition, transepidermal water loss measurements after administration indicated that the advanced formulation caused little to no skin irritation. DES based transdermal delivery systems may provide an effective strategy for overcoming the limitations of conventional injectable formulations. To our knowledge, this is the first report describing DES based vaccine formulation with evaluation of its immunological efficacy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0691",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0691_antimicrobials_in_a_box_a_primer_on_the_risks_of_direct_to_c.md",
+   "snippet": "Title Antimicrobials in a Box: A Primer on the Risks of Direct to Consumer Antimicrobial Preparedness Kits Authors Kufel Wesley D, Gallagher Jason C Journal / DOI Clinical infectious diseases : an official publication of the Infectious Dise",
+   "text": "Infectious Disease scraped pubmed PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America Title Antimicrobials in a Box: A Primer on the Risks of Direct to Consumer Antimicrobial Preparedness Kits Authors Kufel Wesley D, Gallagher Jason C Journal / DOI Clinical infectious diseases : an official publication of the Infectious Diseases Society of America · DOI: 10.1093/cid/ciag614 · PMID: 42809707 https://pubmed.ncbi.nlm.nih.gov/42809707/ Abstract Direct to consumer marketing of \"emergency medical kits\" containing prescription antimicrobials has emerged as a concerning trend in the healthcare marketplace. These kits, available for online purchase following limited medical screening, typically include multiple antimcrobials intended for consumer directed administration of a self diagnosed infection. While promoted as preparedness tools, the availability of such kits raises significant concerns for patient safety, antimicrobial stewardship, and public health. Without appropriate clinical evaluation, diagnostic testing, or individualized dosing guidance, misuse is likely, including inappropriate indications, adverse drug effects, drug drug interactions, incorrect dosing regimens, and unnecessary treatment courses. Furthermore, unsupervised antimicrobial access risks reinforcing misconceptions regarding appropriate antimicrobial use and contributing to antimicrobial resistance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0690",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Revista medica de Chile",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0690_chilean_multidisciplinary_consensus_on_the_use_of_glp_1_rece.md",
+   "snippet": "Title Chilean Multidisciplinary Consensus on the Use of GLP 1 Receptor Agonists: Recommendations Based on the GRADE Methodology Authors Cabrera Sebastián, Walbaum Magdalena, Bórquez Tamara, Fuentes Catalina, Acevedo Mónica, Varleta Paola, B",
+   "text": "Cardiology scraped pubmed PubMed / Revista medica de Chile Title Chilean Multidisciplinary Consensus on the Use of GLP 1 Receptor Agonists: Recommendations Based on the GRADE Methodology Authors Cabrera Sebastián, Walbaum Magdalena, Bórquez Tamara, Fuentes Catalina, Acevedo Mónica, Varleta Paola, Belmar Pamela, Gómez Patricia, et al. Journal / DOI Revista medica de Chile · DOI: 10.4067/s0034 98872026000701070 · PMID: 42809786 https://pubmed.ncbi.nlm.nih.gov/42809786/ Abstract UNLABELLED: Type 2 diabetes (T2DM), obesity, chronic kidney disease (CKD), and heart failure (HF) pose a major public health burden in Chile and Latin America. Glucagon like peptide 1 receptor agonists (GLP 1 RAs) provide glycemic, cardiovascular, renal, and weight loss benefits, extending their therapeutic role beyond glycemic control. AIM: To develop a national consensus, based on GRADE methodology, that synthesizes the best available evidence and adapts it to the Chilean healthcare context, providing practical recommendations for the rational use of GLP 1 RA (GLP 1 receptor agonists). METHODS: A multidisciplinary panel convened by six Chilean scientific societies developed this consensus, using the GRADE (Grading of Recommendations Assessment, Development and Evaluation) framework. A systematic review of randomized trials and meta analyses was conducted. Evidence tables were prepared and critically appraised to support transparent recommendations adapted to the Chilean healthcare context. RESULTS: The panel formulated seven key recommendations: (1) a strong recommendation for GLP 1 RAs in patients with T2DM and CKD; (2) a weak recommendation in CKD without diabetes; (3) a strong recommendation in T2DM with high cardiovascular risk; (4) a weak recommendation over sulfonylureas as add on to metformin; (5) a strong recommendation in HF with preserved ejection fraction (HFpEF) and BMI ≥27; (6) a strong recommendation in obesity with T2DM; and (7) a weak recommendation in obesity without T2DM. CONCLUSIONS: This consensus synthesizes international evidence and contextualizes it to Chile, supporting rational, equitable, and transparent implementation of GLP 1 RAs. These agents are positioned as central tools in the management of the cardiorenal metabolic syndrome, complementing current cost effective therapies and lifestyle interventions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0689",
