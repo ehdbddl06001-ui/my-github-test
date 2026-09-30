@@ -83,9 +83,9 @@
    ]
   },
   "피부과": {
-   "hash": "2f0a237a823a37a03e68",
-   "version": 9,
-   "date": "2026-09-29",
+   "hash": "c7e524b780e9765e5085",
+   "version": 10,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_피부과.pdf",
    "pages": 14,
    "template_version": 11,
@@ -103,35 +103,35 @@
      "concept_version": 4
     },
     "cn.derm.plaque-psoriasis.systemic-choice-pregnancy-planning": {
-     "title": "판상건선 — 전신치료가 필요한 환자에서 임신 계획·고혈압이 약 선택을 어떻게 바꾸는가",
-     "page": 4,
-     "concept_hash": "d7353a120fb05e20",
-     "concept_version": 2
+     "title": "판상건선 — 임신 계획·고혈압이 전신치료를 고른다",
+     "page": 5,
+     "concept_hash": "7724989b663c3b14",
+     "concept_version": 4
     },
     "cn.derm.erythema-nodosum.underlying-cause-workup": {
-     "title": "결절홍반 — 정강이 압통 결절을 보면 피부가 아니라 원인을 찾는다",
-     "page": 7,
-     "concept_hash": "bdcdbb3118a0bdbe",
-     "concept_version": 2
+     "title": "결절홍반 — 정강이 압통 결절은 원인 검사가 먼저",
+     "page": 8,
+     "concept_hash": "817db24b4502cb85",
+     "concept_version": 3
     },
     "cn.derm.scabies.treat-with-contacts": {
-     "title": "옴 — 진드기 과민반응에서 환자·접촉자 동시 치료까지",
-     "page": 8,
-     "concept_hash": "35bbde395322c1b3",
-     "concept_version": 2
+     "title": "옴 — 증상 없는 접촉자까지 동시에 살충제로",
+     "page": 9,
+     "concept_hash": "f952cfb87c7ab5a6",
+     "concept_version": 3
     },
     "cn.derm.regressing-pigmented-lesion.biopsy-first": {
      "title": "퇴행 구조가 주된 색소 병변 — 양성으로 보여도 조직검사가 먼저",
-     "page": 11,
+     "page": 12,
      "concept_hash": "39bc5744e3b962ff",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "fa6ecc19b53ffaaf8c90b1ca9a3bc95f",
-    "version": 9,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "83d385102ef9211e8de1ce8e6210101e",
+    "version": 10,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -142,11 +142,13 @@
     "MedKOS_학습서_피부과_v6_2026-09-27.pdf",
     "MedKOS_학습서_피부과_v7_2026-09-28.pdf",
     "MedKOS_학습서_피부과_v8_2026-09-28.pdf",
-    "MedKOS_학습서_피부과_v9_2026-09-29.pdf"
+    "MedKOS_학습서_피부과_v9_2026-09-29.pdf",
+    "MedKOS_학습서_피부과_v10_2026-09-30.pdf"
    ],
    "changes": [
-    "내용 수정: 판상건선 — 전신치료가 필요한 환자에서 임신 계획·고혈압이 약 선택을 어떻게 바꾸는가",
-    "내용 갱신: 옴 — 진드기 과민반응에서 환자·접촉자 동시 치료까지 (정리본 v1 → v2)"
+    "내용 갱신: 판상건선 — 임신 계획·고혈압이 전신치료를 고른다 (정리본 v2 → v4)",
+    "내용 갱신: 결절홍반 — 정강이 압통 결절은 원인 검사가 먼저 (정리본 v2 → v3)",
+    "내용 갱신: 옴 — 증상 없는 접촉자까지 동시에 살충제로 (정리본 v2 → v3)"
    ]
   },
   "신장내과": {
@@ -276,11 +278,11 @@
    ]
   },
   "안과": {
-   "hash": "6374cec5de2a143ab1ab",
-   "version": 5,
-   "date": "2026-09-28",
+   "hash": "056a306542bde439d522",
+   "version": 6,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_안과.pdf",
-   "pages": 10,
+   "pages": 11,
    "template_version": 11,
    "units": {
     "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
@@ -296,32 +298,35 @@
      "concept_version": 2
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
-     "title": "안구 화학화상 — 검사보다 세척이 먼저인 이유",
+     "title": "안구 화학화상 — 검사보다 세척이 먼저",
      "page": 7,
-     "concept_hash": "5f48c135378aff47",
-     "concept_version": 1
+     "concept_hash": "9b74781b3d476ea0",
+     "concept_version": 2
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
      "title": "허혈성 중심망막정맥폐쇄 뒤 가장 경계할 합병증 — 망막 허혈이 VEGF 를 통해 홍채·전방각 신생혈관을 만들어 신생혈관녹내장으로 간다",
-     "page": 8,
+     "page": 9,
      "concept_hash": "4f20ab3cbb530db7",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "00eafbe5e0d34c59a83717b03271787f",
-    "version": 5,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "79c59fab7d57355b588cec0a7db9c2d9",
+    "version": 6,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
     "MedKOS_학습서_안과_v2_2026-09-25.pdf",
     "MedKOS_학습서_안과_v3_2026-09-27.pdf",
     "MedKOS_학습서_안과_v4_2026-09-27.pdf",
-    "MedKOS_학습서_안과_v5_2026-09-28.pdf"
+    "MedKOS_학습서_안과_v5_2026-09-28.pdf",
+    "MedKOS_학습서_안과_v6_2026-09-30.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 안구 화학화상 — 검사보다 세척이 먼저 (정리본 v1 → v2)"
+   ]
   },
   "정형외과": {
    "hash": "0e580c225b9d87e8409b",
@@ -377,9 +382,9 @@
    ]
   },
   "외과": {
-   "hash": "8ac4594ec101ebfb5a68",
-   "version": 6,
-   "date": "2026-09-28",
+   "hash": "3c82009c1baf5705585e",
+   "version": 7,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_외과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -387,8 +392,8 @@
     "cn.gs.acute-cholecystitis.grade2-early-lc": {
      "title": "급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기",
      "page": 2,
-     "concept_hash": "d116f66dbcfcf75d",
-     "concept_version": 2
+     "concept_hash": "0393952167cca1a0",
+     "concept_version": 3
     },
     "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
      "title": "유두갑상선암 — 크기·갑상선외 침범·림프절 전이(cN0/cN1a/cN1b)로 수술 범위를 정한다",
@@ -399,9 +404,9 @@
    },
    "drive": {
     "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
-    "md5": "56a63ff108767f4916c7a0b1e6e4bc18",
-    "version": 6,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "761c05f6a099361c80407735b715cff7",
+    "version": 7,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_외과_v1_2026-09-23.pdf",
@@ -409,9 +414,12 @@
     "MedKOS_학습서_외과_v3_2026-09-25.pdf",
     "MedKOS_학습서_외과_v4_2026-09-27.pdf",
     "MedKOS_학습서_외과_v5_2026-09-27.pdf",
-    "MedKOS_학습서_외과_v6_2026-09-28.pdf"
+    "MedKOS_학습서_외과_v6_2026-09-28.pdf",
+    "MedKOS_학습서_외과_v7_2026-09-30.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기 (정리본 v2 → v3)"
+   ]
   },
   "산부인과": {
    "hash": "6224abcbd64362c4bc70",
@@ -642,9 +650,9 @@
    ]
   },
   "호흡기내과": {
-   "hash": "96bf0c568f0c08ad09de",
-   "version": 8,
-   "date": "2026-09-29",
+   "hash": "58b7f57bc36c082c4e81",
+   "version": 9,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -676,9 +684,9 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "a1f39591b36ec6a5308c0627d0d9d6a9",
-    "version": 8,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "066196801861e3cc512370bfc0e803e6",
+    "version": 9,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -688,11 +696,10 @@
     "MedKOS_학습서_호흡기내과_v5_2026-09-27.pdf",
     "MedKOS_학습서_호흡기내과_v6_2026-09-28.pdf",
     "MedKOS_학습서_호흡기내과_v7_2026-09-28.pdf",
-    "MedKOS_학습서_호흡기내과_v8_2026-09-29.pdf"
+    "MedKOS_학습서_호흡기내과_v8_2026-09-29.pdf",
+    "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf"
    ],
-   "changes": [
-    "내용 갱신: 결핵성 흉막염 — 림프구 삼출액에 ADA가 높으면 (정리본 vNone → v1)"
-   ]
+   "changes": []
   },
   "응급의학과": {
    "hash": "ccd5fd487b6bff0d06cf",
@@ -905,9 +912,9 @@
    "changes": []
   },
   "감염내과": {
-   "hash": "31f83808f6c01ccb690b",
-   "version": 7,
-   "date": "2026-09-29",
+   "hash": "7699ab859c6962c494dd",
+   "version": 8,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_감염내과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -920,13 +927,13 @@
     },
     "cn.derm.ssss.antistaphylococcal-therapy": {
      "title": "포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다",
-     "page": 3,
-     "concept_hash": "a01bc89d3f055e55",
-     "concept_version": 1
+     "page": 4,
+     "concept_hash": "398558b3454e1354",
+     "concept_version": 2
     },
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": {
      "title": "레지오넬라 폐렴 — 세포 내 세균의 단서에서 확진 검사(소변 항원) 고르기까지",
-     "page": 4,
+     "page": 5,
      "concept_hash": "cbdbcddee235ba1c",
      "concept_version": 1
     },
@@ -945,9 +952,9 @@
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "dbc914591405ca36caf40bf5ecd640d8",
-    "version": 7,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "347fd6affbc56a4266c6414232fb0edf",
+    "version": 8,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -956,16 +963,17 @@
     "MedKOS_학습서_감염내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_감염내과_v5_2026-09-27.pdf",
     "MedKOS_학습서_감염내과_v6_2026-09-28.pdf",
-    "MedKOS_학습서_감염내과_v7_2026-09-29.pdf"
+    "MedKOS_학습서_감염내과_v7_2026-09-29.pdf",
+    "MedKOS_학습서_감염내과_v8_2026-09-30.pdf"
    ],
    "changes": [
-    "내용 수정: 포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다"
+    "내용 갱신: 포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다 (정리본 v1 → v2)"
    ]
   },
   "소화기내과": {
-   "hash": "bfd515958dfacfb7685f",
-   "version": 6,
-   "date": "2026-09-29",
+   "hash": "b1ad7b4a0a500bc29e28",
+   "version": 7,
+   "date": "2026-09-30",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -973,7 +981,7 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "a57a3ea37c6c39af",
+     "concept_hash": "6e387fcb8665462d",
      "concept_version": 1
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
@@ -997,9 +1005,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "28b3fc519807fcfa003e9b6e483fb878",
-    "version": 6,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "329caad1ad8908f7dc50112bf8b35c01",
+    "version": 7,
+    "uploaded": "2026-09-30T09:48:06+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1007,7 +1015,8 @@
     "MedKOS_학습서_소화기내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_소화기내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_소화기내과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_소화기내과_v6_2026-09-29.pdf"
+    "MedKOS_학습서_소화기내과_v6_2026-09-29.pdf",
+    "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf"
    ],
    "changes": [
     "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
@@ -1081,13 +1090,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "752922c4eaa2b0e136e9e0eb8f9b155f",
+   "md5": "04a79255b363305ae701d79aa9525733",
    "version": null,
-   "uploaded": "2026-09-29T10:49:56+09:00"
+   "uploaded": "2026-09-30T09:48:06+09:00"
   }
  },
- "updated": "2026-09-29"
+ "updated": "2026-09-30"
 }
