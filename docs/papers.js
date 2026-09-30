@@ -2,6 +2,112 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0697",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "A Digital System to Assess Mental Health in People With Intellectual Disability (MENTALSED): Protocol for a Development and Pilot Study",
+  "authors": [
+   "Rodríguez-Medina Jairo",
+   "Gonzalez Sanguino Clara",
+   "Betegón Elena",
+   "Ayuso-Lanchares Alba",
+   "Boemo Teresa"
+  ],
+  "journal": "JMIR research protocols",
+  "doi": "10.2196/106072",
+  "pmid": "42814923",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814923/",
+  "pubdate": "2026-09-30",
+  "date": "2026-09-30",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** People with intellectual disabilities have a high prevalence of mental health problems, which are often underdiagnosed and treated late due to difficulties in assessment. The limited availability of validated instruments, communication barriers, and reliance on external informants hinder the early detection of symptoms and the monitoring of their progression.\n\n**OBJECTIVE:** This study describes the protocol for the development and piloting of MENTALSED, a digital assessment system designed for the continuous monitoring of mental health and emotional well-being in people with intellectual disability through ecological momentary assessment using traditional questionnaires supplemented with psychophysiological measures.\n\n**METHODS:** The study uses a mixed methods design, combining quantitative and qualitative procedures. Following a literature review, a survey assessed the needs of direct care professionals. On the basis of these findings, self-report and proxy-report EMA questionnaires were developed. The professional version was evaluated by university experts and direct care professionals. The self-report version was adapted into an easy-to-read format with the support of a focus group of people with intellectual disabilities and subsequently evaluated by individuals with intellectual disabilities and professionals. The questionnaires were implemented on the Avicenna Research platform. Objective psychophysiological measures (heart rate variability via a chest strap and sleep quality and heart rate via a smartwatch) were included. All data are integrated into a custom application displaying 4 well-being dimensions. The subsequent pilot study will involve individuals with intellectual disability and support professionals over a 2-week period in natural settings.\n\n**RESULTS:** The project was funded by the Ministry of Science, Innovation and Universities, the State Research Agency, and the European Regional Development Fund/European Union (grant PID2023-150190OA-I00/MENTAL-SED). The needs assessment and validation phases were conducted between January and May 2025. As of manuscript submission, a total of 91 participants (71 professionals and experts and 20 individuals with intellectual disability) have been recruited and have participated in the development and validation stages. The 2-week pilot study is currently concluding data collection. Data analysis for the pilot phase is expected to begin in October 2026, and the final results are expected to be published in 2027.\n\n**CONCLUSIONS:** MENTALSED is expected to facilitate the early detection of emotional and behavioral changes, improve diagnostic accuracy, and enable the development of evidence-based preventive interventions. The integration of multiple sources of information is expected to help overcome traditional limitations in mental health assessment in this population.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0696",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Electronic profiling of neuronal extracellular vesicles enables early prediction of Parkinson's disease",
+  "authors": [
+   "Chang Tianrui",
+   "Jiang Cheng",
+   "Yan Shijun",
+   "Wustoni Shofarul",
+   "Salvigni Luca",
+   "Almaghrabi Rania",
+   "Hu Michele T",
+   "Tofaris George K",
+   "et al."
+  ],
+  "journal": "Science advances",
+  "doi": "10.1126/sciadv.aee4525",
+  "pmid": "42814818",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814818/",
+  "pubdate": "2026-10-02",
+  "date": "2026-09-30",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Misfolded alpha-Synuclein (α-Syn) accumulation is the defining molecular pathology of Parkinson's disease (PD), yet blood-based assays remain challenged by the high background of peripheral α-Syn originating mainly from red blood cells. Neuronal extracellular vesicles (EVs) circulating in blood offer a biologically enriched source of brain-derived α-Syn proteoforms, but their ultralow abundance has hindered reliable detection. Here, we introduce an organic electrochemical transistor-based multiparametric diagnostic assay that simultaneously detects total, aggregated, and serine-129-phosphorylated α-Syn proteoforms in serum L1CAM+ EVs. The platform achieves low femtomolar sensitivity in buffer and robust analytical performance in clinical specimens. In a cohort of 66 individuals, including prodromal and clinically diagnosed patients with PD, combining the three proteoform readouts distinguished PD from controls with 90.9% accuracy (88.6% sensitivity and 90.9% specificity). By electronically amplifying and resolving multiple neuronal α-Syn signatures in blood, this assay enables a minimally invasive diagnostic tool for early-stage PD and provides a path toward therapeutic intervention during the window when disease-modifying treatments are likely to be most effective.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0695",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Automated Health Care Thematic Analysis Using a Multiagent Large Language Model: Algorithm Development and Evaluation Study",
+  "authors": [
+   "Xu Qidi",
+   "Amjad Nuzha",
+   "Giles Grace",
+   "Cumming Alexa",
+   "Hermesky De'angelo",
+   "Wen Alexander",
+   "Kwak Min Ji",
+   "Kim Yejin"
+  ],
+  "journal": "Journal of medical Internet research",
+  "doi": "10.2196/90872",
+  "pmid": "42814987",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814987/",
+  "pubdate": "2026-09-30",
+  "date": "2026-09-30",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Understanding patients' experiences is essential for advancing patient-centered care, especially in chronic diseases that require ongoing communication. Qualitative thematic analysis is widely used to explore these experiences; however, the process remains labor-intensive, subjective, and difficult to scale.\n\n**OBJECTIVE:** This study aimed to develop and evaluate Collaborative Theme Identification Agents (CoTI), a multiagent large language model framework designed to support manual thematic analysis by rapidly generating supporting excerpts, initial codes, and themes.\n\n**METHODS:** CoTI consists of 3 agents: Instructor, Thematizer, and CodebookGenerator. The Instructor refines instruction prompts, the Thematizer extracts supporting excerpts and generates initial codes for each transcript, and the CodebookGenerator groups similar codes across all transcripts into a codebook with themes. We evaluated CoTI primarily using 12 transcripts of patient with heart failure, with a focus on perceptions of medication intensity. CoTI-generated outputs were compared against the reference standard developed by senior investigators. To explore human-AI interaction in thematic analyses, we further implemented CoTI in a user-facing application.\n\n**RESULTS:** CoTI generated supporting excerpts, initial codes, and themes that were more similar to those of senior investigators than were the outputs of junior investigators, baseline natural language processing models, and other basic large language models. In an exploratory human-AI collaboration experiment, we found that the collaboration between CoTI and junior investigators provided only marginal gains compared to CoTI alone. A possible hypothesis was that junior investigators may overrely on CoTI and limit their independent critical thinking.\n\n**CONCLUSIONS:** CoTI can improve the efficiency of thematic analysis by rapidly generating supporting excerpts, initial codes, and themes for human researchers' review. These findings highlight CoTI's potential as a useful tool for scalable qualitative research.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0694",
   "topic": "Surgery",
   "subtopic": "",
