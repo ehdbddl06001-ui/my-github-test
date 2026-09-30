@@ -1,39 +1,39 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-29",
+ "generated": "2026-09-30",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3124,
+  "total": 3130,
   "byType": {
+   "anatomy": 769,
    "kmle": 1216,
-   "anatomy": 768,
    "usmle": 168,
-   "paper": 689,
+   "paper": 694,
    "imaging": 176,
    "concept": 90,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 768,
-   "Cardiology": 226,
+   "Anatomy": 769,
+   "Cardiology": 227,
    "Nephrology": 182,
-   "Infectious Disease": 163,
+   "Infectious Disease": 164,
    "Pediatrics": 147,
    "Obstetrics & Gynecology": 108,
-   "Hematology-Oncology": 102,
-   "Pathology": 99,
+   "Hematology-Oncology": 103,
+   "Pathology": 100,
    "Psychiatry": 92,
    "Neurology": 91,
    "Rheumatology": 87,
    "General Surgery": 84,
    "Endocrinology": 81,
    "Dermatology": 80,
+   "Surgery": 80,
    "Gastroenterology": 79,
    "Orthopedics": 79,
-   "Surgery": 79,
    "Ophthalmology": 78,
    "Pulmonology": 78,
    "Hematology": 73,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2100,
-   "medium": 975,
+   "high": 2101,
+   "medium": 980,
    "low": 49
   },
   "tagCount": 4372
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-01",
+   "type": "anatomy",
+   "unit": "머리·배",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-01",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/anatomy/daily/2026-10-01.md",
+   "snippet": "오늘의 학습 (2026 10 01 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 21일 · Tagging 2까지 18일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-01 머리·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 01 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 21일 · Tagging 2까지 18일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-1247",
    "type": "kmle",
@@ -862,6 +876,91 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0176.md",
    "snippet": "A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim su",
    "text": "Biochemistry Dark Urine and Jaundice Three Days After an Antibiotic in a Previously Healthy Man G6PD-deficiency hemolytic-anemia oxidative-stress NADPH glutathione pentose-phosphate-pathway Heinz-bodies bite-cells sulfonamide USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e Ch 100 Hemolytic Anemias; Luzzatto L, Arese P. Favism and Glucose-6-Phosphate Dehydrogenase Deficiency, N Engl J Med 2018;378:60) A 25 year old man comes to the emergency department because of fatigue, shortness of breath on exertion and dark brown urine for 1 day. Three days ago, a skin abscess on his thigh was incised and drained, and he began taking trimethoprim sulfamethoxazole. The abscess is healing. He has no history of serious illness, and his hemoglobin concentration was 15.1 g/dL at a physical examination 1 year ago. He takes no other medications. His vital signs are shown. He appears pale, and the sclerae are icteric. The spleen is not palpable. Laboratory studies are shown. A peripheral blood smear shows red blood cells with semicircular bites removed from their edges; a supravital stain shows small dark inclusions attached to the inner red cell membrane. Which of the following best explains why this patient's red blood cells were damaged after he began taking the drug? A. Weak anchoring of the membrane to the spectrin cytoskeleton B. Complement lysis after loss of GPI anchored CD55 and CD59 C. Drug dependent IgG antibodies bound to the red cell surface D. Too little NADPH to keep glutathione in its reduced form E. Too little ATP to run the membrane sodium potassium pump 산화제 약(설파메톡사졸) 시작 2–3일 뒤 갑자기 생긴 용혈이다. 혈색소 8.6·망상적혈구 6.8 %·간접 빌리루빈 상승·LDH 상승·합토글로빈 저하에 요잠혈 3+ 인데 적혈구가 없으니 혈색소뇨(혈관내 용혈)다. 직접 항글로불린 검사 음성은 면역 용혈의 가능성을 낮추고, 물린 세포(bite cell)와 초생체 염색의 막 부착 봉입체(Heinz body, 변성 혈색소)는 산화 손상을 가리킨다. 1년 전 혈색소가 정상이고 비장이 크지 않아 평생 이어지는 막·에너지 결함보다는 산화 스트레스가 올 때만 터지는 효소 결함 = G6PD 결핍이다. G6PD 는 오탄당 인산 경로의 첫 효소로 적혈구의 유일한 NADPH 공급원이다 — NADPH 가 없으면 글루타티온 환원효소가 산화형 글루타티온(GSSG)을 환원형(GSH)으로 되돌리지 못해 과산화수소를 치우지 못하고, 혈색소가 산화·변성돼 막에 달라붙는다(Heinz body). 비장 대식세포가 이것을 뜯어내 물린 세포가 된다."
+  },
+  {
+   "id": "paper-2026-0694",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Spine",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0694_mode_specific_association_between_tri_cortical_pedicle_screw.md",
+   "snippet": "Title Mode Specific Association Between Tri Cortical Pedicle Screws and Proximal Junctional Kyphosis in Adult Spinal Deformity: A Propensity Score Matched Cohort Study Authors Wu Xinjie, Xie Gongheng, Tang Ziyang, Qin Xiaodong, Bao Hongda, ",
+   "text": "Surgery scraped pubmed PubMed / Spine Title Mode Specific Association Between Tri Cortical Pedicle Screws and Proximal Junctional Kyphosis in Adult Spinal Deformity: A Propensity Score Matched Cohort Study Authors Wu Xinjie, Xie Gongheng, Tang Ziyang, Qin Xiaodong, Bao Hongda, Shi Benlong, Mao Saihu, Qiu Yong, et al. Journal / DOI Spine · DOI: 10.1097/BRS.0000000000005889 · PMID: 42809758 https://pubmed.ncbi.nlm.nih.gov/42809758/ Abstract STUDY DESIGN: Retrospective propensity score matched cohort study. OBJECTIVE: To evaluate the association between tri cortical pedicle screw (TPS) fixation and radiographic proximal junctional kyphosis (PJK) after adult spinal deformity (ASD) surgery and to explore mode specific associations. SUMMARY OF BACKGROUND DATA: PJK is common after long segment fusion for ASD. Binary PJK endpoints may overlook heterogeneous PJK modes. The mode specific association of TPS fixation remains uncertain. METHODS: Adults undergoing long segment posterior fusion with a lower thoracic upper instrumented vertebra (T9 T12) and at least 2 years of follow up were retrospectively identified. Patients were categorized according to TPS use at the upper instrumented vertebra. Propensity score matching was performed to address baseline differences. The primary outcome was radiographic PJK, defined as a ≥10 degree increase in proximal junctional angle from the immediate postoperative radiograph. PJK modes were classified using a published system. Overall and mode specific associations were evaluated using LASSO selected and adjusted logistic regression, bias reduced multinomial regression, and E value sensitivity analysis. RESULTS: Of 304 eligible patients, 189 received conventional pedicle screw fixation and 115 received TPS fixation. Propensity score matching generated 110 pairs. In the matched cohort, radiographic PJK occurred in 8.2% of the TPS group and 27.3% of the Control group (P<0.001). TPS fixation was associated with lower PJK odds in the LASSO selected model (OR, 0.36, 95% CI, 0.14 0.87, P=0.028). Type 2 PJK occurred in 10 Control patients and in no TPS patients. Type 1 and combined Type 3 4 PJK showed no significant association with TPS. The E value for the point estimate was 5.00. CONCLUSIONS: TPS fixation was associated with a lower incidence of radiographic PJK after ASD surgery. Mode specific analysis suggested fewer Type 2 PJK events with TPS fixation, supporting mode specific radiographic assessment and further evaluation of TPS as a proximal fixation strategy. LEVEL OF EVIDENCE: Level III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0693",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0693_advanced_optical_microscopy_for_skin_imaging_from_confocal_t.md",
+   "snippet": "Title Advanced optical microscopy for skin imaging: from confocal to novel techniques Authors Troyanova Slavkova Svetoslava, Slavkov Dimitar, Vasilev Preslav, Troyanova Petranka Journal / DOI Acta dermatovenerologica Alpina, Pannonica, et A",
+   "text": "Pathology scraped pubmed PubMed / Acta dermatovenerologica Alpina, Pannonica, et Adriatica Title Advanced optical microscopy for skin imaging: from confocal to novel techniques Authors Troyanova Slavkova Svetoslava, Slavkov Dimitar, Vasilev Preslav, Troyanova Petranka Journal / DOI Acta dermatovenerologica Alpina, Pannonica, et Adriatica · PMID: 42809767 https://pubmed.ncbi.nlm.nih.gov/42809767/ Abstract Timely and accurate diagnosis of dermatological diseases remains a global challenge, particularly in healthcare systems with limited access to dermatopathology services. Advanced optical microscopy techniques have emerged as powerful tools for non invasive skin imaging, offering real time visualization of microscopic structures with near histological resolution. Reflectance confocal microscopy (RCM) and ex vivo confocal microscopy (EVCM) have achieved significant clinical traction, demonstrating high concordance with conventional histopathology and high diagnostic accuracy for melanocytic lesions and non melanoma skin cancers. In parallel, developments in optical coherence tomography (OCT) and its variants including dynamic OCT and line field confocal OCT (LC OCT) provide complementary morphological and vascular information with greater penetration depth. LC OCT further combines near cellular resolution with simultaneous vertical and horizontal imaging, narrowing the gap between non invasive imaging and histopathology. Emerging multimodal imaging platforms integrating OCT, Raman spectroscopy, photoacoustic tomography, and ultrasound, together with artificial intelligence assisted image analysis, continue to expand the diagnostic capabilities of optical microscopy. Although RCM, EVCM, OCT, and LC OCT are increasingly being incorporated into routine dermatological practice, several emerging technologies remain largely confined to specialized academic centers because of their cost, technical complexity, and limited clinical validation. This narrative review summarizes current evidence on confocal microscopy and related optical imaging technologies for skin diagnostics, emphasizing diagnostic performance, clinical utility, implementation challenges, and future directions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0692",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ACS applied bio materials",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0692_noninvasive_transdermal_vaccine_platform_using_deep_eutectic.md",
+   "snippet": "Title Noninvasive Transdermal Vaccine Platform Using Deep Eutectic Solvents for Cancer Immunotherapy Authors Fujita Naoaki, Toyofuku Kiyohiro, Wakabayashi Rie, Kawaguchi Yoshirou, Kamiya Noriho, Goto Masahiro Journal / DOI ACS applied bio m",
+   "text": "Hematology-Oncology scraped pubmed PubMed / ACS applied bio materials Title Noninvasive Transdermal Vaccine Platform Using Deep Eutectic Solvents for Cancer Immunotherapy Authors Fujita Naoaki, Toyofuku Kiyohiro, Wakabayashi Rie, Kawaguchi Yoshirou, Kamiya Noriho, Goto Masahiro Journal / DOI ACS applied bio materials · DOI: 10.1021/acsabm.6c00559 · PMID: 42809809 https://pubmed.ncbi.nlm.nih.gov/42809809/ Abstract Cancer immunotherapy has attracted considerable attention since the early 2010s as an alternative to conventional cancer treatments such as surgery, chemotherapy, and radiotherapy. Among these approaches, cancer vaccines exert preventive and therapeutic effects by eliciting immune responses against tumor antigens. However, most cancer vaccines still rely on injection based administration, which is associated with pain, the risk of secondary infection, and an increased burden on healthcare professionals. To address these limitations, we focused on noninvasive and convenient transdermal administration of cancer vaccines. Nevertheless, the transdermal delivery of hydrophilic cancer antigen peptides is considered challenging because the stratum corneum, the outermost layer of the skin, acts as a strong barrier against hydrophilic molecules and molecules with molecular weights greater than 500. To overcome this limitation, we developed a deep eutectic solvent (DES) based formulation for transdermal cancer vaccination. In the present study, an amphiphilic DES composed of choline and oleic acid was prepared. Using this DES, a model cancer antigen peptide (SIINFEKL) was solubilized in an oil based vehicle, yielding a transdermal formulation. Ex vivo studies demonstrated that the DES based formulation exhibited greater skin permeation than a phosphate buffered saline solution and a conventional ionic liquid based formulation. Optimization with ethanol as a cosolvent yielded an advanced formulation that exhibited even higher skin permeation and showed significant tumor growth suppression in vivo. In addition, transepidermal water loss measurements after administration indicated that the advanced formulation caused little to no skin irritation. DES based transdermal delivery systems may provide an effective strategy for overcoming the limitations of conventional injectable formulations. To our knowledge, this is the first report describing DES based vaccine formulation with evaluation of its immunological efficacy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0691",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0691_antimicrobials_in_a_box_a_primer_on_the_risks_of_direct_to_c.md",
+   "snippet": "Title Antimicrobials in a Box: A Primer on the Risks of Direct to Consumer Antimicrobial Preparedness Kits Authors Kufel Wesley D, Gallagher Jason C Journal / DOI Clinical infectious diseases : an official publication of the Infectious Dise",
+   "text": "Infectious Disease scraped pubmed PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America Title Antimicrobials in a Box: A Primer on the Risks of Direct to Consumer Antimicrobial Preparedness Kits Authors Kufel Wesley D, Gallagher Jason C Journal / DOI Clinical infectious diseases : an official publication of the Infectious Diseases Society of America · DOI: 10.1093/cid/ciag614 · PMID: 42809707 https://pubmed.ncbi.nlm.nih.gov/42809707/ Abstract Direct to consumer marketing of \"emergency medical kits\" containing prescription antimicrobials has emerged as a concerning trend in the healthcare marketplace. These kits, available for online purchase following limited medical screening, typically include multiple antimcrobials intended for consumer directed administration of a self diagnosed infection. While promoted as preparedness tools, the availability of such kits raises significant concerns for patient safety, antimicrobial stewardship, and public health. Without appropriate clinical evaluation, diagnostic testing, or individualized dosing guidance, misuse is likely, including inappropriate indications, adverse drug effects, drug drug interactions, incorrect dosing regimens, and unnecessary treatment courses. Furthermore, unsupervised antimicrobial access risks reinforcing misconceptions regarding appropriate antimicrobial use and contributing to antimicrobial resistance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0690",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Revista medica de Chile",
+   "confidence": "medium",
+   "date": "2026-09-29",
+   "path": "content/papers/2026/2026-09-29_paper-2026-0690_chilean_multidisciplinary_consensus_on_the_use_of_glp_1_rece.md",
+   "snippet": "Title Chilean Multidisciplinary Consensus on the Use of GLP 1 Receptor Agonists: Recommendations Based on the GRADE Methodology Authors Cabrera Sebastián, Walbaum Magdalena, Bórquez Tamara, Fuentes Catalina, Acevedo Mónica, Varleta Paola, B",
+   "text": "Cardiology scraped pubmed PubMed / Revista medica de Chile Title Chilean Multidisciplinary Consensus on the Use of GLP 1 Receptor Agonists: Recommendations Based on the GRADE Methodology Authors Cabrera Sebastián, Walbaum Magdalena, Bórquez Tamara, Fuentes Catalina, Acevedo Mónica, Varleta Paola, Belmar Pamela, Gómez Patricia, et al. Journal / DOI Revista medica de Chile · DOI: 10.4067/s0034 98872026000701070 · PMID: 42809786 https://pubmed.ncbi.nlm.nih.gov/42809786/ Abstract UNLABELLED: Type 2 diabetes (T2DM), obesity, chronic kidney disease (CKD), and heart failure (HF) pose a major public health burden in Chile and Latin America. Glucagon like peptide 1 receptor agonists (GLP 1 RAs) provide glycemic, cardiovascular, renal, and weight loss benefits, extending their therapeutic role beyond glycemic control. AIM: To develop a national consensus, based on GRADE methodology, that synthesizes the best available evidence and adapts it to the Chilean healthcare context, providing practical recommendations for the rational use of GLP 1 RA (GLP 1 receptor agonists). METHODS: A multidisciplinary panel convened by six Chilean scientific societies developed this consensus, using the GRADE (Grading of Recommendations Assessment, Development and Evaluation) framework. A systematic review of randomized trials and meta analyses was conducted. Evidence tables were prepared and critically appraised to support transparent recommendations adapted to the Chilean healthcare context. RESULTS: The panel formulated seven key recommendations: (1) a strong recommendation for GLP 1 RAs in patients with T2DM and CKD; (2) a weak recommendation in CKD without diabetes; (3) a strong recommendation in T2DM with high cardiovascular risk; (4) a weak recommendation over sulfonylureas as add on to metformin; (5) a strong recommendation in HF with preserved ejection fraction (HFpEF) and BMI ≥27; (6) a strong recommendation in obesity with T2DM; and (7) a weak recommendation in obesity without T2DM. CONCLUSIONS: This consensus synthesizes international evidence and contextualizes it to Chile, supporting rational, equitable, and transparent implementation of GLP 1 RAs. These agents are positioned as central tools in the management of the cardiorenal metabolic syndrome, complementing current cost effective therapies and lifestyle interventions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0689",
