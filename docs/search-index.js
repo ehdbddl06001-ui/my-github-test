@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3130,
+  "total": 3142,
   "byType": {
    "anatomy": 769,
    "kmle": 1216,
+   "imaging": 188,
    "usmle": 168,
    "paper": 694,
-   "imaging": 176,
    "concept": 90,
    "ailab": 14,
    "basic": 3
@@ -38,27 +38,27 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 78,
    "Hematology": 73,
    "Laboratory Medicine": 68,
-   "산부인과": 34,
+   "산부인과": 35,
    "Physiology": 20,
-   "순환기": 16,
+   "순환기": 17,
    "Biochemistry": 13,
    "Pharmacology": 13,
    "Microbiology": 12,
-   "호흡기": 11,
+   "병리·조직학": 12,
+   "호흡기": 12,
+   "소화기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "병리·조직학": 10,
-   "소화기": 10,
-   "소아과": 9,
+   "소아과": 10,
+   "감염": 8,
    "내분비": 8,
+   "신경": 8,
    "응급·중환자": 8,
    "피부과": 8,
    "혈액·종양": 8,
-   "감염": 7,
-   "신경": 7,
-   "신장·비뇨기": 6,
-   "예방의학·역학": 6,
-   "외과": 6,
+   "신장·비뇨기": 7,
+   "예방의학·역학": 7,
+   "외과": 7,
    "근골격·류마티스": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2101,
+   "high": 2113,
    "medium": 980,
    "low": 49
   },
@@ -724,6 +724,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1216.md",
    "snippet": "67세 남자가 3시간 전 갑자기 시작된 두근거림으로 119 구급차를 타고 응급실에 왔다. 1시간 전부터 어지럽고 가슴이 답답하다고 하였다. 고혈압으로 암로디핀을 먹고 있으며 이전에 두근거림을 느낀 적은 없다. 최근 발열·설사·흑색변은 없었다. 식은땀을 흘리고, 이름을 불러야 눈을 뜨며 질문에 느리게 답한다. 손발이 차고 축축하며, 양쪽 폐 아래쪽에서 수포음이 들린다. 도착 직후 찍은 심전도는 그림과 같다. 말초 정맥로 두 개를",
    "text": "Cardiology Atrial Fibrillation with Hypotension and Confusion atrial-fibrillation rapid-ventricular-response hemodynamic-instability tachyarrhythmia ecg KMLE 2026 / Claude 67세 남자가 3시간 전 갑자기 시작된 두근거림으로 119 구급차를 타고 응급실에 왔다. 1시간 전부터 어지럽고 가슴이 답답하다고 하였다. 고혈압으로 암로디핀을 먹고 있으며 이전에 두근거림을 느낀 적은 없다. 최근 발열·설사·흑색변은 없었다. 식은땀을 흘리고, 이름을 불러야 눈을 뜨며 질문에 느리게 답한다. 손발이 차고 축축하며, 양쪽 폐 아래쪽에서 수포음이 들린다. 도착 직후 찍은 심전도는 그림과 같다. 말초 정맥로 두 개를 확보하고 산소를 주고 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 딜티아젬 정맥 주사 B. 아미오다론 정맥 주입 C. 헤파린 투여 후 경식도 심초음파 D. 동기화 심율동전환 E. 비동기화 전기 제세동 심전도는 P파 없이 RR 간격이 불규칙한 빠른 심방세동이다. 수축기 혈압 78·의식 저하·차고 축축한 사지·폐부종은 빠른 심실 반응 때문에 생긴 불안정 상태이고, 발열·출혈·설사가 없어 빈맥을 보상성으로 볼 근거가 약하다. 불안정한 빈맥성 부정맥은 약물이나 영상 검사를 기다리지 않고 바로 동기화 심율동전환을 한다."
+  },
+  {
+   "id": "imaging-2026-0189",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 짝지은 환자-대조군 연구의 교차비",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0189.md",
+   "snippet": "A 58 year old man who worked for 20 years in a dye manufacturing plant asks whether his job increased his risk of bladder cancer. His physician reviews a matched case control study of bladder cancer. In that study, each of 200 patients with",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 짝지은 환자-대조군 연구의 교차비 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 58 year old man who worked for 20 years in a dye manufacturing plant asks whether his job increased his risk of bladder cancer. His physician reviews a matched case control study of bladder cancer. In that study, each of 200 patients with newly diagnosed bladder cancer is matched to one control of the same age and sex from the same neighborhood. Occupational exposure to aromatic amines is ascertained for every participant. Among the 200 pairs, both the case and control were exposed in 25 pairs, and neither was exposed in 125 pairs. In 40 pairs, only the case was exposed, and in 10 pairs, only the control was exposed. Which of the following is the most appropriate estimate of the odds ratio for bladder cancer associated with the exposure? A. 0.25 B. 4.0 C. 2.3 D. 1.6 E. 3.2"
+  },
+  {
+   "id": "imaging-2026-0188",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 열이 나는 걸음마 아기의 전신 경련",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0188.md",
+   "snippet": "18개월 남아가 열이 난 지 몇 시간 뒤 전신 강직 간대 경련을 2분 동안 하여 왔다. 경련은 저절로 멈췄고 30분 뒤 평소처럼 놀고 있다. 이틀 전부터 콧물과 기침이 있었다. 예방접종은 모두 맞았고 발달은 정상이며 이전 경련은 없다. 아버지가 어릴 때 열성경련을 한 적이 있다. 체온 39.2℃, 맥박 132회/분, 호흡 28회/분이다. 의식은 명료하고 대천문은 닫혀 있으며 목 경직과 국소 신경학적 이상은 없다. 인두가 붉고 ",
+   "text": "소아과 소아청소년 — 열이 나는 걸음마 아기의 전신 경련 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 18개월 남아가 열이 난 지 몇 시간 뒤 전신 강직 간대 경련을 2분 동안 하여 왔다. 경련은 저절로 멈췄고 30분 뒤 평소처럼 놀고 있다. 이틀 전부터 콧물과 기침이 있었다. 예방접종은 모두 맞았고 발달은 정상이며 이전 경련은 없다. 아버지가 어릴 때 열성경련을 한 적이 있다. 체온 39.2℃, 맥박 132회/분, 호흡 28회/분이다. 의식은 명료하고 대천문은 닫혀 있으며 목 경직과 국소 신경학적 이상은 없다. 인두가 붉고 콧물이 있다. 가장 적절한 처치는? A. 페노바르비탈 장기 복용 B. 보호자 교육과 해열제로 열 조절 C. 요추천자로 뇌척수액 검사 D. 뇌파 검사 E. 뇌 MRI"
+  },
+  {
+   "id": "imaging-2026-0187",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 상기도감염과 동시에 나타난 육안적 혈뇨",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0187.md",
+   "snippet": "A 22 year old man comes to the physician because of cola colored urine for 1 day. Two days ago, he developed a sore throat and runny nose. He had a similar episode of dark urine during a cold 1 year ago that resolved on its own. He takes no",
+   "text": "신장·비뇨기 신장·비뇨 — 상기도감염과 동시에 나타난 육안적 혈뇨 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 22 year old man comes to the physician because of cola colored urine for 1 day. Two days ago, he developed a sore throat and runny nose. He had a similar episode of dark urine during a cold 1 year ago that resolved on its own. He takes no medications. His temperature is 37.6°C, pulse is 78/min, and blood pressure is 128/80 mm Hg. There is no edema. Urinalysis shows 3+ blood, 1+ protein, and 40–50 dysmorphic erythrocytes/hpf with occasional red cell casts. Serum creatinine concentration is 0.9 mg/dL. Serum C3 and C4 concentrations are within the reference ranges. Antistreptolysin O titer is not elevated. A kidney biopsy is performed. Which of the following is the most likely finding on immunofluorescence microscopy? A. Granular subepithelial deposits of IgG and C3 B. Linear deposits of IgG along the glomerular basement membrane C. Absence of immune deposits D. Subendothelial deposits of IgG, IgM, C3, and C1q E. Mesangial deposits of IgA"
+  },
+  {
+   "id": "imaging-2026-0186",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 전염단핵구증 청소년의 운동 복귀",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0186.md",
+   "snippet": "17세 남자가 5일 전부터 열, 심한 인후통, 피로가 있어 왔다. 고등학교 축구 선수로 3일 뒤 경기에 나가고 싶어 한다. 체온 38.4℃, 맥박 94회/분이다. 편도가 커지고 회백색 삼출물이 덮여 있으며 뒤목 림프절이 양쪽으로 커져 있다. 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 호흡곤란이나 삼킴곤란은 없다. 백혈구 11,200/mm³(림프구 62%, 비정형 림프구 18%), AST 84 U/L, ALT 102 U/L 이다",
+   "text": "감염 감염 — 전염단핵구증 청소년의 운동 복귀 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 17세 남자가 5일 전부터 열, 심한 인후통, 피로가 있어 왔다. 고등학교 축구 선수로 3일 뒤 경기에 나가고 싶어 한다. 체온 38.4℃, 맥박 94회/분이다. 편도가 커지고 회백색 삼출물이 덮여 있으며 뒤목 림프절이 양쪽으로 커져 있다. 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 호흡곤란이나 삼킴곤란은 없다. 백혈구 11,200/mm³(림프구 62%, 비정형 림프구 18%), AST 84 U/L, ALT 102 U/L 이다. 이종친화항체 검사는 양성이고 A군 연쇄알균 신속항원검사는 음성이다. 가장 적절한 조치는? A. 아시클로버 경구 투여 B. 프레드니솔론 투여 C. 편도절제술 D. 발병 후 최소 3~4주 접촉 운동 금지 E. 아목시실린 10일 투여"
+  },
+  {
+   "id": "imaging-2026-0185",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 심방세동 환자의 진찰 소견보다 심한 복통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0185.md",
+   "snippet": "A 74 year old woman is brought to the emergency department because of sudden, severe periumbilical abdominal pain that began 3 hours ago. She vomited twice and had one loose bowel movement. She has atrial fibrillation and stopped taking api",
+   "text": "외과 외과계 — 심방세동 환자의 진찰 소견보다 심한 복통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 74 year old woman is brought to the emergency department because of sudden, severe periumbilical abdominal pain that began 3 hours ago. She vomited twice and had one loose bowel movement. She has atrial fibrillation and stopped taking apixaban 2 weeks ago because of the cost. She has hypertension. Her temperature is 37.2°C, pulse is 118/min and irregularly irregular, and blood pressure is 142/86 mm Hg. She is writhing in pain, but the abdomen is soft and only mildly tender, without guarding or rebound. Bowel sounds are hypoactive. Leukocyte count is 16,800/mm3, and serum lactate concentration is 3.4 mmol/L. Serum lipase activity and urinalysis are normal. Which of the following is the most appropriate next step in diagnosis? A. Upright abdominal radiography B. Serum lactate measurement in 6 hours C. CT angiography of the abdomen D. Colonoscopy E. Abdominal ultrasonography"
+  },
+  {
+   "id": "imaging-2026-0184",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 궤양대장염 환자의 담즙정체 간기능 이상",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0184.md",
+   "snippet": "A 34 year old man comes to the physician for follow up of ulcerative colitis diagnosed 6 years ago, which is in remission with mesalamine. He reports mild fatigue and generalized itching for 3 months. He drinks alcohol rarely and takes no o",
+   "text": "소화기 소화기·간담췌 — 궤양대장염 환자의 담즙정체 간기능 이상 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 34 year old man comes to the physician for follow up of ulcerative colitis diagnosed 6 years ago, which is in remission with mesalamine. He reports mild fatigue and generalized itching for 3 months. He drinks alcohol rarely and takes no other medications. His temperature is 36.9°C, pulse is 72/min, and blood pressure is 120/76 mm Hg. Examination shows excoriations on the forearms; there is no jaundice or hepatomegaly. Serum studies show alkaline phosphatase 410 U/L, gamma glutamyltransferase 320 U/L, AST 58 U/L, ALT 64 U/L, and total bilirubin 1.1 mg/dL. Antimitochondrial antibody test is negative. Abdominal ultrasonography shows a normal liver and no gallstones or bile duct dilation. Which of the following is the most appropriate next step in diagnosis? A. Serum IgG4 measurement alone B. Repeat liver tests in 12 months C. Magnetic resonance cholangiopancreatography D. Endoscopic retrograde cholangiopancreatography E. Percutaneous liver biopsy"
+  },
+  {
+   "id": "imaging-2026-0183",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 임신 후반기 무통성 질 출혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0183.md",
+   "snippet": "32세 여자(임신 2회, 출산 1회)가 임신 31주에 갑자기 선홍색 질 출혈이 있어 왔다. 배가 아프거나 자궁이 뭉치는 느낌은 없다. 3년 전 제왕절개로 첫 아이를 낳았고 이번 임신 중 산전 진찰을 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 태아는 둔위로 만져진다. 질경 검사에서 경관에서 흘러나오는 소량의 선홍색 피가 보인다. 태아심박동 감시에서 기저 심박수 145회/분, 변",
+   "text": "산부인과 산과 — 임신 후반기 무통성 질 출혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 32세 여자(임신 2회, 출산 1회)가 임신 31주에 갑자기 선홍색 질 출혈이 있어 왔다. 배가 아프거나 자궁이 뭉치는 느낌은 없다. 3년 전 제왕절개로 첫 아이를 낳았고 이번 임신 중 산전 진찰을 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 태아는 둔위로 만져진다. 질경 검사에서 경관에서 흘러나오는 소량의 선홍색 피가 보인다. 태아심박동 감시에서 기저 심박수 145회/분, 변이도 중등도이고 감속은 없다. 다음으로 가장 적절한 것은? A. 초음파로 태반 위치 확인 B. 손가락 내진으로 경관 개대 확인 C. 옥시토신으로 분만 유도 D. 즉시 응급 제왕절개술 E. 양수천자로 폐성숙도 확인"
+  },
+  {
+   "id": "imaging-2026-0182",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 실신한 고령 환자의 수축기 잡음",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0182.md",
+   "snippet": "76세 남자가 2주 전 계단을 오르다 잠시 의식을 잃고 쓰러진 뒤 왔다. 최근 3개월 동안 걸을 때 가슴이 조이는 느낌이 있었다. 혈압 118/82 mmHg, 맥박 72회/분이다. 흉골 오른쪽 위 모서리에서 목동맥으로 퍼지는 3/6 도의 늦게 최고조에 이르는 수축기 박출 잡음이 들리고 두 번째 심음이 약하다. 목동맥 맥박은 느리게 올라오고 약하다. 심전도는 좌심실비대 소견이다. 경흉부 심초음파에서 대동맥판이 심하게 석회화되었고",
+   "text": "순환기 순환기 — 운동 중 실신한 고령 환자의 수축기 잡음 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 76세 남자가 2주 전 계단을 오르다 잠시 의식을 잃고 쓰러진 뒤 왔다. 최근 3개월 동안 걸을 때 가슴이 조이는 느낌이 있었다. 혈압 118/82 mmHg, 맥박 72회/분이다. 흉골 오른쪽 위 모서리에서 목동맥으로 퍼지는 3/6 도의 늦게 최고조에 이르는 수축기 박출 잡음이 들리고 두 번째 심음이 약하다. 목동맥 맥박은 느리게 올라오고 약하다. 심전도는 좌심실비대 소견이다. 경흉부 심초음파에서 대동맥판이 심하게 석회화되었고 판막 면적 0.7 cm², 평균 압력차 52 mmHg, 좌심실 박출률 60% 였다. 치료로 가장 적절한 것은? A. 풍선 대동맥판성형술 B. 대동맥판 치환술 C. 베타차단제 투여 D. 니트로글리세린 투여 E. 6개월 뒤 심초음파 재검"
+  },
+  {
+   "id": "imaging-2026-0181",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 자궁경부 조직의 증식 표지자 면역조직화학과 추적",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0181.md",
+   "snippet": "34세 여자가 자궁경부 세포검사 이상으로 왔다. 세포검사는 비정형 편평세포(ASC US)였고 고위험 인유두종바이러스(HPV) 검사는 양성(16·18형 음성)이었다. 이전 검진 결과는 모두 정상이었고 흡연하지 않으며 면역저하 질환은 없다. 질확대경검사에서 변형대가 모두 보였고 옅은 아세트산 백색 부위에서 조직검사를 하였다. 헤마톡실린 에오신 염색에서 편평상피는 표층까지 정상적으로 성숙하였다. 자궁경부 조직 절편의 Ki 67 면역",
+   "text": "병리·조직학 병리·조직 — 자궁경부 조직의 증식 표지자 면역조직화학과 추적 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 34세 여자가 자궁경부 세포검사 이상으로 왔다. 세포검사는 비정형 편평세포(ASC US)였고 고위험 인유두종바이러스(HPV) 검사는 양성(16·18형 음성)이었다. 이전 검진 결과는 모두 정상이었고 흡연하지 않으며 면역저하 질환은 없다. 질확대경검사에서 변형대가 모두 보였고 옅은 아세트산 백색 부위에서 조직검사를 하였다. 헤마톡실린 에오신 염색에서 편평상피는 표층까지 정상적으로 성숙하였다. 자궁경부 조직 절편의 Ki 67 면역조직화학염색 결과는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 1년 뒤 HPV 검사 또는 병합검사 B. 고리전기절제술(LEEP) C. 냉동요법 D. 6개월마다 세포검사 3회 E. 자궁절제술"
+  },
+  {
+   "id": "imaging-2026-0180",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 유방암 조직의 세포부착 단백 면역조직화학",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0180.md",
+   "snippet": "49세 여자가 3개월 전부터 왼쪽 유방이 단단해진 느낌이 있어 왔다. 유방촬영술에서는 뚜렷한 종괴 없이 구조 왜곡만 보였고 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 작고 균일한 종양 세포가 간질 사이로 한 줄씩 늘어서 침윤하였고 관 형성은 없었다. 에스트로겐 수용체는 양성, HER2 는 음성이었다. 유방 종양 조직 절편의 E cadherin 면역조직화학염색 결과는 그림과 같다. 가장 가능성이 높은 진",
+   "text": "병리·조직학 병리·조직 — 유방암 조직의 세포부착 단백 면역조직화학 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 49세 여자가 3개월 전부터 왼쪽 유방이 단단해진 느낌이 있어 왔다. 유방촬영술에서는 뚜렷한 종괴 없이 구조 왜곡만 보였고 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 작고 균일한 종양 세포가 간질 사이로 한 줄씩 늘어서 침윤하였고 관 형성은 없었다. 에스트로겐 수용체는 양성, HER2 는 음성이었다. 유방 종양 조직 절편의 E cadherin 면역조직화학염색 결과는 그림과 같다. 가장 가능성이 높은 진단은? A. 수질암종 B. 점액암종 C. 관상피내암종 D. 침윤성 소엽암종 E. 침윤성 관암종"
+  },
+  {
+   "id": "imaging-2026-0179",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 뇌 MRI 에서 뇌척수액 신호의 물리적 근거",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0179.md",
+   "snippet": "A 29 year old man comes to the physician because of daily headaches for 2 months. The headaches are worse in the morning. He has no history of trauma, fever, or visual disturbance. His temperature is 36.8°C, pulse is 70/min, and blood press",
+   "text": "신경 신경 — 뇌 MRI 에서 뇌척수액 신호의 물리적 근거 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 29 year old man comes to the physician because of daily headaches for 2 months. The headaches are worse in the morning. He has no history of trauma, fever, or visual disturbance. His temperature is 36.8°C, pulse is 70/min, and blood pressure is 124/78 mm Hg. Neurologic examination shows no focal deficits, and funduscopic examination is normal. MRI of the brain is obtained, and an axial image at the level of the midbrain is shown. Which of the following physical properties best explains the signal intensity of the cerebrospinal fluid in the sulci and cisterns on this image? A. Long T2 relaxation time of free water B. Short T1 relaxation time of free water C. Paramagnetic effect of gadolinium D. Restricted diffusion of water molecules E. Low proton density of cerebrospinal fluid"
+  },
+  {
+   "id": "imaging-2026-0178",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 쇼크가 풀린 기계환기 급성호흡곤란증후군의 수액 전략",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+   "confidence": "high",
+   "date": "2026-09-30",
+   "path": "content/imaging/2026/imaging-2026-0178.md",
+   "snippet": "A 64 year old man with COVID 19 pneumonia has been intubated and mechanically ventilated in the intensive care unit for 4 days. He required norepinephrine for the first 2 days, but vasopressors were discontinued 48 hours ago. His cumulative",
+   "text": "호흡기 호흡기 — 쇼크가 풀린 기계환기 급성호흡곤란증후군의 수액 전략 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040 A 64 year old man with COVID 19 pneumonia has been intubated and mechanically ventilated in the intensive care unit for 4 days. He required norepinephrine for the first 2 days, but vasopressors were discontinued 48 hours ago. His cumulative fluid balance is positive by 7 L. He is ventilated with a tidal volume of 6 mL/kg predicted body weight and a PEEP of 12 cm H2O; the plateau pressure is 26 cm H2O. His pulse is 88/min, and mean arterial pressure is 78 mm Hg. Arterial blood gas analysis on an FiO2 of 0.5 shows a PaO2 of 90 mm Hg. Serum lactate concentration is 1.2 mmol/L, and serum creatinine concentration is 0.9 mg/dL. A chest radiograph is shown. Which of the following is the most appropriate next step in management? A. Intravenous albumin infusion to raise oncotic pressure B. Maintenance crystalloid infusion at 150 mL/h C. Venovenous extracorporeal membrane oxygenation D. Increase tidal volume to 10 mL/kg predicted body weight E. Intravenous furosemide targeting a negative fluid balance"
   },
   {
    "id": "anatomy-daily-2026-09-30",

@@ -2,6 +2,1573 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0181",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "병리·조직 — 자궁경부 조직의 증식 표지자 면역조직화학과 추적",
+  "type": "병리·조직 — 자궁경부 조직의 증식 표지자 면역조직화학과 추적",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "34세 여자가 자궁경부 세포검사 이상으로 왔다. 세포검사는 비정형 편평세포(ASC-US)였고 고위험 인유두종바이러스(HPV) 검사는 양성(16·18형 음성)이었다. 이전 검진 결과는 모두 정상이었고 흡연하지 않으며 면역저하 질환은 없다. 질확대경검사에서 변형대가 모두 보였고 옅은 아세트산 백색 부위에서 조직검사를 하였다. 헤마톡실린-에오신 염색에서 편평상피는 표층까지 정상적으로 성숙하였다. 자궁경부 조직 절편의 Ki-67 면역조직화학염색 결과는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "1년 뒤 HPV 검사 또는 병합검사",
+   "고리전기절제술(LEEP)",
+   "냉동요법",
+   "6개월마다 세포검사 3회",
+   "자궁절제술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 그림에서 Ki-67 양성 핵은 기저막 위 방기저층 1~2층의 띠에만 있고 중간층·표층은 음성이며 세포가 위로 갈수록 넓어진다 — 증식이 아래쪽에 국한된 정상 성숙이다. 고등급 병변(CIN2·3)이면 증식 세포가 상피 중간층 이상까지 올라온다. ASC-US·HPV 양성에서 조직검사가 CIN2 미만이면 즉시 치료하지 않고 1년 뒤 HPV 기반 검사로 추적한다(ASCCP 2019).\n- 원리: <b>Ki-67 은 무엇을 보여 주나</b>: Ki-67 은 세포주기 G1·S·G2·M 기에 있는 세포의 핵에만 있고 휴지기(G0)에는 없다. 정상 중층편평상피는 기저층·방기저층의 줄기·전구세포만 분열하고, 위로 올라가며 분화해 분열을 멈춘다. 그래서 정상에서는 <b>아래쪽 띠에만</b> 갈색 핵이 있다.<br> <b>이형성에서 무엇이 달라지나</b>: 고위험 HPV 의 E7 이 Rb 를 불활성화하면 분화 중인 세포도 계속 세포주기에 머문다. 그 결과 Ki-67 양성 세포가 상피 두께의 1/3(CIN1)을 넘어 2/3(CIN2)·전층(CIN3)까지 올라오고, p16 이 미만성 강양성이 된다. 즉 <b>증식 세포가 얼마나 위까지 올라왔는가</b>가 등급의 대리 지표다.<br> <b>관리로 이어지는 논리</b>: HPV 감염의 대부분은 1~2년 안에 면역으로 사라지고 저등급 변화도 대부분 저절로 좋아진다. 그래서 CIN2 미만이면 치료로 얻는 이득보다 절제술의 해(조산·경관 협착)가 커서 1년 뒤 HPV 검사로 지켜본다. CIN2 이상일 때 절제술을 한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">1년 뒤 HPV 검사(정답)</th><th>고리전기절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조직 결과</td><td><b>CIN2 미만(정상·CIN1)</b></td><td>CIN2·CIN3(HSIL)</td></tr> <tr><td>Ki-67 분포</td><td><b>방기저층 띠에 국한</b></td><td>중간층 이상·전층</td></tr> <tr><td>근거</td><td>대부분 저절로 소실</td><td>진행 위험이 있어 제거</td></tr> <tr><td>대가</td><td>추적 부담</td><td>조산·경관 협착 위험</td></tr> </tbody></table> 세포검사가 HSIL 이었거나 HPV16 양성이면 위험이 올라가 판단이 달라진다. 이 환자는 ASC-US·16/18 음성·조직 CIN2 미만이라 추적이 맞다.\n- 오답 이유:\n  - ② 고리전기절제술은 조직검사에서 CIN2·CIN3 가 확인되었을 때의 치료다. 증식 세포가 중간층 이상까지 올라왔다면 정답이 되지만, 이 조직은 방기저층에 국한되어 있어 과잉 치료다.\n  - ③ 냉동요법은 변형대가 모두 보이는 CIN2 이상에서 제거술 대신 쓸 수 있는 파괴술이다. 병변 등급이 확인되지 않은 채 조직을 없애는 것이라 CIN2 미만에는 쓰지 않는다.\n  - ④ 6개월 간격 세포검사는 HPV 검사를 쓸 수 없던 옛 추적 방식이다. 지금은 HPV 기반 검사가 민감도가 높아 1년 뒤 HPV 검사가 표준이고, HPV 검사를 할 수 없는 곳에서만 고려한다.\n  - ⑤ 자궁절제술은 CIN 의 일차 치료가 아니며 반복 재발한 고등급 병변에 다른 적응증이 겹칠 때나 고려한다. 34세의 CIN2 미만에는 해당하지 않는다.\n- 함정: HPV 양성이라는 말에 끌려 절제하지 않는다 — 조직이 CIN2 미만이면 추적이다. Ki-67 이 아래쪽에만 있으면 고등급이 아니다.\n- 학습목표: Ki-67 양성 세포가 방기저층에 국한되고 위쪽이 정상 성숙하는 소견을 고등급 병변이 아닌 것으로 읽고, ASC-US·HPV 양성에서 CIN2 미만이면 1년 뒤 재검으로 추적한다\n- 근거·출처: Perkins RB et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis 2020;24:102 · Darragh TM et al. The Lower Anogenital Squamous Terminology Standardization Project (LAST). Arch Pathol Lab Med 2012;136:1266 · Human Protein Atlas — MKI67, cervix (normal), 34세 여 (teacher-only) · 작성자 판독(2026-10-01): Ki-67 양성 핵이 방기저층 1~2층 띠에만, 중간층·표층 음성, 정상 성숙\n\n## 출처\n- Human Protein Atlas, MKI67 / Cervix (CC BY 4.0), https://images.proteinatlas.org/58/155454_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 Ki-67 양성 핵은 기저막 위 방기저층 1~2층의 띠에만 있고 중간층·표층은 음성이며 세포가 위로 갈수록 넓어진다 — 증식이 아래쪽에 국한된 정상 성숙이다. 고등급 병변(CIN2·3)이면 증식 세포가 상피 중간층 이상까지 올라온다. ASC-US·HPV 양성에서 조직검사가 CIN2 미만이면 즉시 치료하지 않고 1년 뒤 HPV 기반 검사로 추적한다(ASCCP 2019)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Ki-67 은 무엇을 보여 주나</b>: Ki-67 은 세포주기 G1·S·G2·M 기에 있는 세포의 핵에만 있고 휴지기(G0)에는 없다. 정상 중층편평상피는 기저층·방기저층의 줄기·전구세포만 분열하고, 위로 올라가며 분화해 분열을 멈춘다. 그래서 정상에서는 <b>아래쪽 띠에만</b> 갈색 핵이 있다.<br> <b>이형성에서 무엇이 달라지나</b>: 고위험 HPV 의 E7 이 Rb 를 불활성화하면 분화 중인 세포도 계속 세포주기에 머문다. 그 결과 Ki-67 양성 세포가 상피 두께의 1/3(CIN1)을 넘어 2/3(CIN2)·전층(CIN3)까지 올라오고, p16 이 미만성 강양성이 된다. 즉 <b>증식 세포가 얼마나 위까지 올라왔는가</b>가 등급의 대리 지표다.<br> <b>관리로 이어지는 논리</b>: HPV 감염의 대부분은 1~2년 안에 면역으로 사라지고 저등급 변화도 대부분 저절로 좋아진다. 그래서 CIN2 미만이면 치료로 얻는 이득보다 절제술의 해(조산·경관 협착)가 커서 1년 뒤 HPV 검사로 지켜본다. CIN2 이상일 때 절제술을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">1년 뒤 HPV 검사(정답)</th><th>고리전기절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>조직 결과</td><td><b>CIN2 미만(정상·CIN1)</b></td><td>CIN2·CIN3(HSIL)</td></tr> <tr><td>Ki-67 분포</td><td><b>방기저층 띠에 국한</b></td><td>중간층 이상·전층</td></tr> <tr><td>근거</td><td>대부분 저절로 소실</td><td>진행 위험이 있어 제거</td></tr> <tr><td>대가</td><td>추적 부담</td><td>조산·경관 협착 위험</td></tr> </tbody></table> 세포검사가 HSIL 이었거나 HPV16 양성이면 위험이 올라가 판단이 달라진다. 이 환자는 ASC-US·16/18 음성·조직 CIN2 미만이라 추적이 맞다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 고리전기절제술은 조직검사에서 CIN2·CIN3 가 확인되었을 때의 치료다. 증식 세포가 중간층 이상까지 올라왔다면 정답이 되지만, 이 조직은 방기저층에 국한되어 있어 과잉 치료다.\n③ 냉동요법은 변형대가 모두 보이는 CIN2 이상에서 제거술 대신 쓸 수 있는 파괴술이다. 병변 등급이 확인되지 않은 채 조직을 없애는 것이라 CIN2 미만에는 쓰지 않는다.\n④ 6개월 간격 세포검사는 HPV 검사를 쓸 수 없던 옛 추적 방식이다. 지금은 HPV 기반 검사가 민감도가 높아 1년 뒤 HPV 검사가 표준이고, HPV 검사를 할 수 없는 곳에서만 고려한다.\n⑤ 자궁절제술은 CIN 의 일차 치료가 아니며 반복 재발한 고등급 병변에 다른 적응증이 겹칠 때나 고려한다. 34세의 CIN2 미만에는 해당하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "HPV 양성이라는 말에 끌려 절제하지 않는다 — 조직이 CIN2 미만이면 추적이다. Ki-67 이 아래쪽에만 있으면 고등급이 아니다."
+   },
+   {
+    "k": "학습목표",
+    "v": "Ki-67 양성 세포가 방기저층에 국한되고 위쪽이 정상 성숙하는 소견을 고등급 병변이 아닌 것으로 읽고, ASC-US·HPV 양성에서 CIN2 미만이면 1년 뒤 재검으로 추적한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Perkins RB et al. 2019 ASCCP Risk-Based Management Consensus Guidelines for Abnormal Cervical Cancer Screening Tests and Cancer Precursors. J Low Genit Tract Dis 2020;24:102 · Darragh TM et al. The Lower Anogenital Squamous Terminology Standardization Project (LAST). Arch Pathol Lab Med 2012;136:1266 · Human Protein Atlas — MKI67, cervix (normal), 34세 여 (teacher-only) · 작성자 판독(2026-10-01): Ki-67 양성 핵이 방기저층 1~2층 띠에만, 중간층·표층 음성, 정상 성숙 ## 출처 Human Protein Atlas, MKI67 / Cervix (CC BY 4.0), https://images.proteinatlas.org/58/155454_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "Ki-67 양성 세포가 방기저층에 국한되고 위쪽이 정상 성숙하므로 CIN2 미만이며, ASC-US·HPV 양성의 CIN2 미만은 1년 뒤 HPV 검사로 추적한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "절제술은 증식 세포가 중간층 이상까지 올라온 CIN2 이상일 때이고 이 조직은 아래쪽에 국한된다",
+   "steps": 3,
+   "chain": [
+    "영상: Ki-67 양성 핵이 방기저층 띠에만 + 표층까지 정상 성숙 → 증식이 아래쪽에 국한",
+    "증식이 아래 1/3 을 넘지 않음 → 고등급 병변(CIN2·3) 아님",
+    "ASC-US·HPV 양성(16/18 음성) + 조직 CIN2 미만 → 1년 뒤 HPV 기반 검사"
+   ],
+   "key": [
+    {
+     "item": "영상: 방기저층 띠에 국한된 Ki-67 양성 핵",
+     "why": "증식 구역이 정상 위치 — 고등급이 아니다",
+     "also": []
+    },
+    {
+     "item": "편평상피는 표층까지 정상적으로 성숙하였다",
+     "why": "이형성의 성숙 장애가 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "변형대가 모두 보였고",
+     "why": "질확대경이 충분해 병변을 놓쳤을 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "비정형 편평세포(ASC-US)",
+     "why": "세포검사가 HSIL 이 아니라 추적 경로에 들어간다",
+     "also": []
+    },
+    {
+     "item": "16·18형 음성",
+     "why": "즉시 치료로 넘어갈 고위험 유형이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "이전 검진 결과는 모두 정상이었고",
+     "why": "위험을 낮추는 배경 — 결정을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "Ki-67 양성 세포가 방기저층에만 있고 표층까지 정상 성숙해 CIN2 미만이다. ASC-US·HPV 양성에서 CIN2 미만이면 1년 뒤 HPV 검사로 추적한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "Ki-67 양성 세포가 상피 전층에 있고 p16 이 미만성 양성인 CIN3 였다면 고리전기절제술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0181.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000148773-MKI67/tissue/Cervix",
+   "asset_id": "HPA-MKI67_155454_B_9_3",
+   "text": "Human Protein Atlas, MKI67 / Cervix (CC BY 4.0), https://images.proteinatlas.org/58/155454_B_9_3.jpg"
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0180",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "병리·조직 — 유방암 조직의 세포부착 단백 면역조직화학",
+  "type": "병리·조직 — 유방암 조직의 세포부착 단백 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-30",
+  "vignette": "49세 여자가 3개월 전부터 왼쪽 유방이 단단해진 느낌이 있어 왔다. 유방촬영술에서는 뚜렷한 종괴 없이 구조 왜곡만 보였고 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 작고 균일한 종양 세포가 간질 사이로 한 줄씩 늘어서 침윤하였고 관 형성은 없었다. 에스트로겐 수용체는 양성, HER2 는 음성이었다. 유방 종양 조직 절편의 E-cadherin 면역조직화학염색 결과는 그림과 같다.",
+  "question": "가장 가능성이 높은 진단은?",
+  "options": [
+   "수질암종",
+   "점액암종",
+   "관상피내암종",
+   "침윤성 소엽암종",
+   "침윤성 관암종"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 그림에서 간질에 흩어져 침윤한 작은 종양 세포들은 세포막 염색이 전혀 없고, 같은 코어의 남아 있는 정상 관·소엽 상피만 세포막이 진한 갈색이다(내부 양성 대조). E-cadherin 소실은 침윤성 소엽암종의 특징이다.\n- 원리: <b>E-cadherin 이 하는 일</b>: E-cadherin(CDH1 유전자)은 상피세포끼리 붙게 하는 칼슘 의존성 부착 단백이다. 세포막에서 이웃 세포의 E-cadherin 과 맞물리고, 안쪽은 카테닌을 통해 액틴 골격에 연결된다. 그래서 정상 상피와 관암종은 세포막이 벌집처럼 갈색으로 그려진다.<br> <b>소엽암종에서 왜 사라지나</b>: 침윤성 소엽암종은 CDH1 의 돌연변이·결실·메틸화로 E-cadherin 이 없어진다. 세포끼리 붙지 못하니 덩어리·관을 만들지 못하고 <b>한 줄로(single file) 흩어져</b> 간질을 파고든다. 이 때문에 만져지는 뚜렷한 종괴보다 단단해진 느낌으로 오고, 유방촬영술에서 종괴 없이 구조 왜곡만 보여 늦게 발견되기 쉽다. 같은 이유로 양측·다발성 경향이 있고, 복막·위장관·난소 같은 특이한 곳으로 전이한다.<br> <b>판독 요령</b>: 음성 판정은 <b>내부 양성 대조</b>(같은 절편의 정상 관)가 염색되었을 때만 믿는다. 정상 관도 음성이면 염색 실패일 수 있다. 생식세포 CDH1 돌연변이는 유전성 미만형 위암과도 연결된다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">침윤성 소엽암종(정답)</th><th>침윤성 관암종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>E-cadherin</td><td><b>소실(음성)</b> — 정상 관만 양성</td><td>세포막 양성</td></tr> <tr><td>조직 배열</td><td>작은 균일 세포의 한 줄 침윤, 관 없음</td><td>관·둥지·덩어리 형성</td></tr> <tr><td>영상</td><td>종괴 없이 구조 왜곡, 과소평가</td><td>침상 종괴</td></tr> <tr><td>임상 경향</td><td>양측·다발성, 복막·위장관 전이</td><td>폐·간·뼈·뇌 전이</td></tr> </tbody></table> 두 종양 모두 ER 양성일 수 있어 호르몬 수용체로는 가를 수 없다. <b>E-cadherin 이 종양 세포에서 빠졌는가</b>가 갈림길이다.\n- 오답 이유:\n  - ① 수질암종은 경계가 좋은 합포체성 큰 세포와 림프구 침윤이 특징이고 흔히 삼중음성이다. ER 양성·한 줄 침윤과 맞지 않으며, 경계가 매끈한 종괴에 삼중음성이었다면 고려한다.\n  - ② 점액암종은 세포 밖 점액 호수 속에 종양 세포 덩어리가 떠 있는 모양이고 고령에 예후가 좋다. 점액 호수가 보였다면 정답이 되지만 이 조직에는 점액이 없다.\n  - ③ 관상피내암종은 기저막을 넘지 않고 관 안에 머문다. 생검에서 간질 침윤이 확인되었고 종양 세포가 관 밖에 흩어져 있어 해당하지 않으며, 침윤이 없었다면 고려한다.\n  - ⑤ 침윤성 관암종은 가장 흔한 유방암이지만 종양 세포가 E-cadherin 세포막 양성이고 관·둥지를 만든다. 종양 세포 막이 갈색으로 염색되었다면 정답이 된다.\n- 함정: ER 양성은 소엽·관 모두 가능하다 — 정상 관만 갈색이고 흩어진 종양 세포가 음성이면 소엽암종이다.\n- 학습목표: E-cadherin 면역조직화학에서 종양 세포는 음성이고 정상 관 상피만 양성인 소견을 읽고 침윤성 소엽암종으로 진단한다\n- 근거·출처: WHO Classification of Tumours Editorial Board. Breast Tumours, 5th ed. Lyon: IARC; 2019 — invasive lobular carcinoma · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — breast carcinoma, lobular carcinoma · Human Protein Atlas — CDH1, breast cancer (lobular carcinoma), 49세 여 (teacher-only) · 작성자 판독(2026-10-01): 간질에 흩어진 종양 세포 막 염색 없음, 잔존 정상 관 세포막 양성\n\n## 출처\n- Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/72855/157193_A_6_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 간질에 흩어져 침윤한 작은 종양 세포들은 세포막 염색이 전혀 없고, 같은 코어의 남아 있는 정상 관·소엽 상피만 세포막이 진한 갈색이다(내부 양성 대조). E-cadherin 소실은 침윤성 소엽암종의 특징이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>E-cadherin 이 하는 일</b>: E-cadherin(CDH1 유전자)은 상피세포끼리 붙게 하는 칼슘 의존성 부착 단백이다. 세포막에서 이웃 세포의 E-cadherin 과 맞물리고, 안쪽은 카테닌을 통해 액틴 골격에 연결된다. 그래서 정상 상피와 관암종은 세포막이 벌집처럼 갈색으로 그려진다.<br> <b>소엽암종에서 왜 사라지나</b>: 침윤성 소엽암종은 CDH1 의 돌연변이·결실·메틸화로 E-cadherin 이 없어진다. 세포끼리 붙지 못하니 덩어리·관을 만들지 못하고 <b>한 줄로(single file) 흩어져</b> 간질을 파고든다. 이 때문에 만져지는 뚜렷한 종괴보다 단단해진 느낌으로 오고, 유방촬영술에서 종괴 없이 구조 왜곡만 보여 늦게 발견되기 쉽다. 같은 이유로 양측·다발성 경향이 있고, 복막·위장관·난소 같은 특이한 곳으로 전이한다.<br> <b>판독 요령</b>: 음성 판정은 <b>내부 양성 대조</b>(같은 절편의 정상 관)가 염색되었을 때만 믿는다. 정상 관도 음성이면 염색 실패일 수 있다. 생식세포 CDH1 돌연변이는 유전성 미만형 위암과도 연결된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">침윤성 소엽암종(정답)</th><th>침윤성 관암종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>E-cadherin</td><td><b>소실(음성)</b> — 정상 관만 양성</td><td>세포막 양성</td></tr> <tr><td>조직 배열</td><td>작은 균일 세포의 한 줄 침윤, 관 없음</td><td>관·둥지·덩어리 형성</td></tr> <tr><td>영상</td><td>종괴 없이 구조 왜곡, 과소평가</td><td>침상 종괴</td></tr> <tr><td>임상 경향</td><td>양측·다발성, 복막·위장관 전이</td><td>폐·간·뼈·뇌 전이</td></tr> </tbody></table> 두 종양 모두 ER 양성일 수 있어 호르몬 수용체로는 가를 수 없다. <b>E-cadherin 이 종양 세포에서 빠졌는가</b>가 갈림길이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수질암종은 경계가 좋은 합포체성 큰 세포와 림프구 침윤이 특징이고 흔히 삼중음성이다. ER 양성·한 줄 침윤과 맞지 않으며, 경계가 매끈한 종괴에 삼중음성이었다면 고려한다.\n② 점액암종은 세포 밖 점액 호수 속에 종양 세포 덩어리가 떠 있는 모양이고 고령에 예후가 좋다. 점액 호수가 보였다면 정답이 되지만 이 조직에는 점액이 없다.\n③ 관상피내암종은 기저막을 넘지 않고 관 안에 머문다. 생검에서 간질 침윤이 확인되었고 종양 세포가 관 밖에 흩어져 있어 해당하지 않으며, 침윤이 없었다면 고려한다.\n⑤ 침윤성 관암종은 가장 흔한 유방암이지만 종양 세포가 E-cadherin 세포막 양성이고 관·둥지를 만든다. 종양 세포 막이 갈색으로 염색되었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "ER 양성은 소엽·관 모두 가능하다 — 정상 관만 갈색이고 흩어진 종양 세포가 음성이면 소엽암종이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "E-cadherin 면역조직화학에서 종양 세포는 음성이고 정상 관 상피만 양성인 소견을 읽고 침윤성 소엽암종으로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "WHO Classification of Tumours Editorial Board. Breast Tumours, 5th ed. Lyon: IARC; 2019 — invasive lobular carcinoma · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — breast carcinoma, lobular carcinoma · Human Protein Atlas — CDH1, breast cancer (lobular carcinoma), 49세 여 (teacher-only) · 작성자 판독(2026-10-01): 간질에 흩어진 종양 세포 막 염색 없음, 잔존 정상 관 세포막 양성 ## 출처 Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/72855/157193_A_6_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "흩어진 종양 세포는 E-cadherin 음성이고 정상 관만 양성이므로 침윤성 소엽암종이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "관암종은 종양 세포 세포막이 E-cadherin 양성이고 관·둥지를 만든다",
+   "steps": 2,
+   "chain": [
+    "영상: 종양 세포 막 염색 없음 + 정상 관 막 양성(내부 대조) → 종양 세포의 E-cadherin 소실",
+    "E-cadherin 소실 + 한 줄 침윤·관 형성 없음 → 침윤성 소엽암종"
+   ],
+   "key": [
+    {
+     "item": "영상: 흩어진 종양 세포의 세포막 염색 없음",
+     "why": "E-cadherin 소실 — 소엽암종의 표지",
+     "also": []
+    },
+    {
+     "item": "영상: 남아 있는 정상 관 상피의 진한 세포막 염색",
+     "why": "내부 양성 대조 — 음성 판정을 믿게 한다",
+     "also": []
+    },
+    {
+     "item": "간질 사이로 한 줄씩 늘어서 침윤",
+     "why": "세포 부착이 없어 생기는 배열",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "관 형성은 없었다",
+     "why": "관암종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "뚜렷한 종괴 없이 구조 왜곡만",
+     "why": "소엽암종에 흔한 영상 소견이지만 단독으로 진단하지 못한다",
+     "also": []
+    },
+    {
+     "item": "에스트로겐 수용체는 양성",
+     "why": "소엽·관 모두 가능 — 감별에 쓰이지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "종양 세포는 E-cadherin 음성이고 정상 관만 양성이다. 한 줄 침윤과 관 형성 없음까지 합치면 침윤성 소엽암종이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "종양 세포 세포막이 벌집 모양으로 갈색이고 관을 만들었다면 침윤성 관암종이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0180.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (cancer IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000039068-CDH1/cancer/breast+cancer",
+   "asset_id": "HPA-CDH1_157193_A_6_7",
+   "text": "Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/72855/157193_A_6_7.jpg"
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0179",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "신경 — 뇌 MRI 에서 뇌척수액 신호의 물리적 근거",
+  "type": "신경 — 뇌 MRI 에서 뇌척수액 신호의 물리적 근거",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-30",
+  "vignette": "A 29-year-old man comes to the physician because of daily headaches for 2 months. The headaches are worse in the morning. He has no history of trauma, fever, or visual disturbance. His temperature is 36.8°C, pulse is 70/min, and blood pressure is 124/78 mm Hg. Neurologic examination shows no focal deficits, and funduscopic examination is normal. MRI of the brain is obtained, and an axial image at the level of the midbrain is shown.",
+  "question": "Which of the following physical properties best explains the signal intensity of the cerebrospinal fluid in the sulci and cisterns on this image?",
+  "options": [
+   "Long T2 relaxation time of free water",
+   "Short T1 relaxation time of free water",
+   "Paramagnetic effect of gadolinium",
+   "Restricted diffusion of water molecules",
+   "Low proton density of cerebrospinal fluid"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The cerebrospinal fluid in the sylvian fissures, basal cisterns, and third ventricle is bright, and gray matter is brighter than white matter — a T2-weighted image. Free water has a long T2 relaxation time, so its transverse magnetization persists and it still gives strong signal at the long echo time used for T2 weighting.\n- 원리: <b>Relaxation times in one sentence each</b>: after the radiofrequency pulse, protons recover longitudinal magnetization with time constant T1 and lose transverse (phase) coherence with time constant T2. Free water has <b>long T1 and long T2</b>; fat has short T1; tissue with many macromolecules (myelin) shortens both.<br> <b>How weighting turns this into brightness</b>: a T2-weighted image uses a long TE (echo time). By then, tissues with short T2 have lost signal, while free water, whose T2 is long, is still coherent — so <b>fluid is bright</b>. A T1-weighted image uses a short TR; tissues with short T1 (fat, gadolinium-enhanced tissue, white matter) have recovered and appear bright, whereas water with long T1 stays dark.<br> <b>Reading the image</b>: CSF bright and gray matter brighter than white matter (myelin shortens T2) → T2. On T1 the pattern reverses (CSF dark, white matter brighter than gray). FLAIR is T2-weighted with an inversion pulse that nulls free water, so CSF becomes dark while edema stays bright.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">T2-weighted (this image)</th><th>T1-weighted (closest rival)</th></tr></thead><tbody> <tr><td>CSF</td><td><b>Bright — long T2 of free water</b></td><td>Dark — long T1 of free water</td></tr> <tr><td>Gray vs white matter</td><td><b>Gray brighter</b></td><td>White brighter</td></tr> <tr><td>Key parameter</td><td>Long TE</td><td>Short TR</td></tr> <tr><td>What else is bright</td><td>Edema, cysts, most lesions</td><td>Fat, gadolinium, methemoglobin</td></tr> </tbody></table> The same free water has both a long T1 and a long T2; which one you \"see\" depends on the weighting. Bright CSF means the long T2 is being displayed.\n- 오답 이유:\n  - (B) Free water has a long T1, not a short one, and appears dark on T1-weighted images. Short T1 produces brightness on T1 images, as with fat or methemoglobin; this option would describe a bright fat signal.\n  - (C) Gadolinium shortens T1 and brightens tissue where the blood-brain barrier is disrupted on T1-weighted images. CSF does not normally enhance, and it would apply only to enhancing lesions or leptomeningeal disease.\n  - (D) Restricted diffusion makes tissue bright on diffusion-weighted imaging, as in acute infarction or abscess. CSF diffuses freely and is dark on DWI, so this would be the answer only for a bright lesion on a DWI sequence.\n  - (E) CSF has a high, not low, proton density because it is almost pure water. Low proton density explains dark signal in cortical bone or air, and it would be correct for those structures.\n- 함정: Bright fluid plus gray matter brighter than white matter means T2 weighting; the physical reason is the long T2 of free water.\n- 학습목표: T2 강조 MRI 에서 뇌척수액이 밝은 이유가 자유수의 긴 T2 이완시간임을 알고, 영상에서 뇌척수액·회색질·백질 신호로 강조 방식을 읽는다\n- 근거·출처: Bitar R et al. MR pulse sequences: what every radiologist wants to know but is afraid to ask. RadioGraphics 2006;26:513 · Harrison's Principles of Internal Medicine, 21st ed. — neuroimaging (MRI principles) · TCIA UPENN-GBM, 29세 남 축상 T2 (teacher-only — 이 단면에 병변 없음) · 작성자 판독(2026-10-01): 가쪽고랑·뇌바닥 수조·셋째뇌실 뇌척수액이 밝고 회색질이 백질보다 밝다\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …48436872 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The cerebrospinal fluid in the sylvian fissures, basal cisterns, and third ventricle is bright, and gray matter is brighter than white matter — a T2-weighted image. Free water has a long T2 relaxation time, so its transverse magnetization persists and it still gives strong signal at the long echo time used for T2 weighting."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Relaxation times in one sentence each</b>: after the radiofrequency pulse, protons recover longitudinal magnetization with time constant T1 and lose transverse (phase) coherence with time constant T2. Free water has <b>long T1 and long T2</b>; fat has short T1; tissue with many macromolecules (myelin) shortens both.<br> <b>How weighting turns this into brightness</b>: a T2-weighted image uses a long TE (echo time). By then, tissues with short T2 have lost signal, while free water, whose T2 is long, is still coherent — so <b>fluid is bright</b>. A T1-weighted image uses a short TR; tissues with short T1 (fat, gadolinium-enhanced tissue, white matter) have recovered and appear bright, whereas water with long T1 stays dark.<br> <b>Reading the image</b>: CSF bright and gray matter brighter than white matter (myelin shortens T2) → T2. On T1 the pattern reverses (CSF dark, white matter brighter than gray). FLAIR is T2-weighted with an inversion pulse that nulls free water, so CSF becomes dark while edema stays bright."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">T2-weighted (this image)</th><th>T1-weighted (closest rival)</th></tr></thead><tbody> <tr><td>CSF</td><td><b>Bright — long T2 of free water</b></td><td>Dark — long T1 of free water</td></tr> <tr><td>Gray vs white matter</td><td><b>Gray brighter</b></td><td>White brighter</td></tr> <tr><td>Key parameter</td><td>Long TE</td><td>Short TR</td></tr> <tr><td>What else is bright</td><td>Edema, cysts, most lesions</td><td>Fat, gadolinium, methemoglobin</td></tr> </tbody></table> The same free water has both a long T1 and a long T2; which one you \"see\" depends on the weighting. Bright CSF means the long T2 is being displayed."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Free water has a long T1, not a short one, and appears dark on T1-weighted images. Short T1 produces brightness on T1 images, as with fat or methemoglobin; this option would describe a bright fat signal.\n(C) Gadolinium shortens T1 and brightens tissue where the blood-brain barrier is disrupted on T1-weighted images. CSF does not normally enhance, and it would apply only to enhancing lesions or leptomeningeal disease.\n(D) Restricted diffusion makes tissue bright on diffusion-weighted imaging, as in acute infarction or abscess. CSF diffuses freely and is dark on DWI, so this would be the answer only for a bright lesion on a DWI sequence.\n(E) CSF has a high, not low, proton density because it is almost pure water. Low proton density explains dark signal in cortical bone or air, and it would be correct for those structures."
+   },
+   {
+    "k": "함정",
+    "v": "Bright fluid plus gray matter brighter than white matter means T2 weighting; the physical reason is the long T2 of free water."
+   },
+   {
+    "k": "학습목표",
+    "v": "T2 강조 MRI 에서 뇌척수액이 밝은 이유가 자유수의 긴 T2 이완시간임을 알고, 영상에서 뇌척수액·회색질·백질 신호로 강조 방식을 읽는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bitar R et al. MR pulse sequences: what every radiologist wants to know but is afraid to ask. RadioGraphics 2006;26:513 · Harrison's Principles of Internal Medicine, 21st ed. — neuroimaging (MRI principles) · TCIA UPENN-GBM, 29세 남 축상 T2 (teacher-only — 이 단면에 병변 없음) · 작성자 판독(2026-10-01): 가쪽고랑·뇌바닥 수조·셋째뇌실 뇌척수액이 밝고 회색질이 백질보다 밝다 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …48436872 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "뇌척수액이 밝고 회색질이 백질보다 밝은 T2 강조 영상이며, 이는 자유수의 T2 이완시간이 길기 때문이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "T1 강조에서는 자유수의 긴 T1 때문에 뇌척수액이 어둡고 백질이 회색질보다 밝다",
+   "steps": 2,
+   "chain": [
+    "영상: 뇌척수액 밝음 + 회색질이 백질보다 밝음 → T2 강조 영상",
+    "T2 강조는 긴 TE 에서도 신호가 남는 조직이 밝다 → 자유수의 긴 T2 이완시간"
+   ],
+   "key": [
+    {
+     "item": "영상: 가쪽고랑과 뇌바닥 수조의 밝은 뇌척수액",
+     "why": "T2 강조의 표지",
+     "also": []
+    },
+    {
+     "item": "영상: 회색질이 백질보다 밝음",
+     "why": "수초가 T2 를 줄인다 — T1 과 반대",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "Neurologic examination shows no focal deficits",
+     "why": "검사 이유 — 물리적 근거를 묻는 물음에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "The headaches are worse in the morning",
+     "why": "MRI 를 찍게 된 임상 맥락",
+     "also": []
+    }
+   ],
+   "summary": "뇌척수액이 밝고 회색질이 백질보다 밝은 T2 강조 영상이다. 자유수는 T2 이완시간이 길어 긴 TE 에서도 신호가 남는다.",
+   "switch": {
+    "choice": "D",
+    "condition": "확산강조영상에서 급성 경색 부위가 밝게 보이는 이유를 물었다면 확산 제한이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0179.png",
+   "caption": "Axial MRI of the brain, standard display orientation (patient's right on the viewer's left) (The Cancer Imaging Archive, CC BY 4.0; converted from DICOM without cropping)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.208276335479948098215085439771748436872",
+   "asset_id": "TCIA-UPENN_GBM-31695523238035",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …48436872"
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0178",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "호흡기 — 쇼크가 풀린 기계환기 급성호흡곤란증후군의 수액 전략",
+  "type": "호흡기 — 쇼크가 풀린 기계환기 급성호흡곤란증후군의 수액 전략",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-30",
+  "vignette": "A 64-year-old man with COVID-19 pneumonia has been intubated and mechanically ventilated in the intensive care unit for 4 days. He required norepinephrine for the first 2 days, but vasopressors were discontinued 48 hours ago. His cumulative fluid balance is positive by 7 L. He is ventilated with a tidal volume of 6 mL/kg predicted body weight and a PEEP of 12 cm H2O; the plateau pressure is 26 cm H2O. His pulse is 88/min, and mean arterial pressure is 78 mm Hg. Arterial blood gas analysis on an FiO2 of 0.5 shows a PaO2 of 90 mm Hg. Serum lactate concentration is 1.2 mmol/L, and serum creatinine concentration is 0.9 mg/dL. A chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous albumin infusion to raise oncotic pressure",
+   "Maintenance crystalloid infusion at 150 mL/h",
+   "Venovenous extracorporeal membrane oxygenation",
+   "Increase tidal volume to 10 mL/kg predicted body weight",
+   "Intravenous furosemide targeting a negative fluid balance"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The radiograph shows an endotracheal tube and diffuse bilateral opacities; with a PaO2/FiO2 ratio of 180 on PEEP 12, this is moderate ARDS. Shock has resolved (off vasopressors 48 hours, normal lactate) and kidney function is normal, while he is 7 L positive. A conservative fluid strategy with diuretics to achieve a negative balance increases ventilator-free days without worsening kidney failure (FACTT).\n- 원리: <b>Why fluid matters in ARDS</b>: ARDS is noncardiogenic pulmonary edema — inflamed alveolar-capillary membranes leak protein-rich fluid even at normal hydrostatic pressure. Because the barrier is damaged, <b>every rise in capillary hydrostatic pressure pushes more fluid into the alveoli</b> than it would in a normal lung. Lowering intravascular volume after resuscitation therefore reduces lung water and improves compliance and oxygenation.<br> <b>Timing is the key</b>: in the shock phase, fluid is needed to restore perfusion. Once shock has resolved (no vasopressors, normal lactate, adequate urine output), the balance should be reversed. The FACTT trial showed that a conservative strategy (diuretics guided by CVP or PAOP) gave about 2.5 more ventilator-free days than a liberal strategy, with no increase in dialysis.<br> <b>What does not work</b>: albumin with furosemide improves oxygenation in hypoproteinemic patients but has no proven mortality benefit and is not routine; ECMO is reserved for severe ARDS (PaO2/FiO2 below about 80 despite optimal ventilation and prone positioning). Larger tidal volumes increase volutrauma and mortality.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Conservative fluid (answer)</th><th>VV-ECMO (closest rival)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Shock resolved, positive balance</b></td><td>Refractory severe hypoxemia</td></tr> <tr><td>Oxygenation threshold</td><td>Any ARDS severity</td><td>PaO2/FiO2 &lt; 80 for hours despite optimal care</td></tr> <tr><td>This patient</td><td><b>PaO2/FiO2 180, off pressors, lactate normal</b></td><td>Not severe enough; prone position not yet needed</td></tr> <tr><td>Risk</td><td>Hypovolemia, electrolyte loss</td><td>Bleeding, thrombosis, cannula complications</td></tr> </tbody></table> ECMO attracts students because the radiograph looks alarming, but the <b>numbers</b> decide: PaO2/FiO2 of 180 is moderate ARDS. The immediate lever is removing excess fluid.\n- 오답 이유:\n  - (A) Albumin with diuretics can improve oxygenation in patients with low serum protein, but it has no proven survival benefit and is not standard; it becomes reasonable only as an adjunct when hypoalbuminemia limits diuresis.\n  - (B) Liberal maintenance fluid was the comparator arm in FACTT and prolonged ventilation. It would be appropriate only if he were still hypotensive or had signs of hypoperfusion such as a rising lactate.\n  - (C) VV-ECMO is for severe ARDS with PaO2/FiO2 below about 80 despite low tidal volume, high PEEP, and prone positioning. With a ratio of 180, it is premature; it would become the answer if hypoxemia were refractory.\n  - (D) Tidal volumes of 10–12 mL/kg increase alveolar overdistension and raised mortality in the ARMA trial. Tidal volume should stay at 4–8 mL/kg with plateau pressure at or below 30 cm H2O, and there is no situation in ARDS where 10 mL/kg is preferred.\n- 함정: The radiograph looks severe, but the question is about phase: shock is over and the lungs are wet — remove fluid.\n- 학습목표: 쇼크가 해소된 급성호흡곤란증후군 환자에서 보존적(음성 균형) 수액 전략이 기계환기 기간을 줄임을 알고 이뇨제로 수액 균형을 음으로 만든다\n- 근거·출처: National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med 2006;354:2564 · Fan E et al. An Official ATS/ESICM/SCCM Clinical Practice Guideline: Mechanical Ventilation in Adult Patients with ARDS. Am J Respir Crit Care Med 2017;195:1253 · TCIA COVID-19-AR, 64세 남 이동식 AP (teacher-only) · 작성자 판독(2026-10-01): 기관 내 관·비위관, 양폐 미만성 음영(아래쪽 우세), 뚜렷한 흉수 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78183425 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows an endotracheal tube and diffuse bilateral opacities; with a PaO2/FiO2 ratio of 180 on PEEP 12, this is moderate ARDS. Shock has resolved (off vasopressors 48 hours, normal lactate) and kidney function is normal, while he is 7 L positive. A conservative fluid strategy with diuretics to achieve a negative balance increases ventilator-free days without worsening kidney failure (FACTT)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why fluid matters in ARDS</b>: ARDS is noncardiogenic pulmonary edema — inflamed alveolar-capillary membranes leak protein-rich fluid even at normal hydrostatic pressure. Because the barrier is damaged, <b>every rise in capillary hydrostatic pressure pushes more fluid into the alveoli</b> than it would in a normal lung. Lowering intravascular volume after resuscitation therefore reduces lung water and improves compliance and oxygenation.<br> <b>Timing is the key</b>: in the shock phase, fluid is needed to restore perfusion. Once shock has resolved (no vasopressors, normal lactate, adequate urine output), the balance should be reversed. The FACTT trial showed that a conservative strategy (diuretics guided by CVP or PAOP) gave about 2.5 more ventilator-free days than a liberal strategy, with no increase in dialysis.<br> <b>What does not work</b>: albumin with furosemide improves oxygenation in hypoproteinemic patients but has no proven mortality benefit and is not routine; ECMO is reserved for severe ARDS (PaO2/FiO2 below about 80 despite optimal ventilation and prone positioning). Larger tidal volumes increase volutrauma and mortality."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Conservative fluid (answer)</th><th>VV-ECMO (closest rival)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Shock resolved, positive balance</b></td><td>Refractory severe hypoxemia</td></tr> <tr><td>Oxygenation threshold</td><td>Any ARDS severity</td><td>PaO2/FiO2 &lt; 80 for hours despite optimal care</td></tr> <tr><td>This patient</td><td><b>PaO2/FiO2 180, off pressors, lactate normal</b></td><td>Not severe enough; prone position not yet needed</td></tr> <tr><td>Risk</td><td>Hypovolemia, electrolyte loss</td><td>Bleeding, thrombosis, cannula complications</td></tr> </tbody></table> ECMO attracts students because the radiograph looks alarming, but the <b>numbers</b> decide: PaO2/FiO2 of 180 is moderate ARDS. The immediate lever is removing excess fluid."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Albumin with diuretics can improve oxygenation in patients with low serum protein, but it has no proven survival benefit and is not standard; it becomes reasonable only as an adjunct when hypoalbuminemia limits diuresis.\n(B) Liberal maintenance fluid was the comparator arm in FACTT and prolonged ventilation. It would be appropriate only if he were still hypotensive or had signs of hypoperfusion such as a rising lactate.\n(C) VV-ECMO is for severe ARDS with PaO2/FiO2 below about 80 despite low tidal volume, high PEEP, and prone positioning. With a ratio of 180, it is premature; it would become the answer if hypoxemia were refractory.\n(D) Tidal volumes of 10–12 mL/kg increase alveolar overdistension and raised mortality in the ARMA trial. Tidal volume should stay at 4–8 mL/kg with plateau pressure at or below 30 cm H2O, and there is no situation in ARDS where 10 mL/kg is preferred."
+   },
+   {
+    "k": "함정",
+    "v": "The radiograph looks severe, but the question is about phase: shock is over and the lungs are wet — remove fluid."
+   },
+   {
+    "k": "학습목표",
+    "v": "쇼크가 해소된 급성호흡곤란증후군 환자에서 보존적(음성 균형) 수액 전략이 기계환기 기간을 줄임을 알고 이뇨제로 수액 균형을 음으로 만든다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med 2006;354:2564 · Fan E et al. An Official ATS/ESICM/SCCM Clinical Practice Guideline: Mechanical Ventilation in Adult Patients with ARDS. Am J Respir Crit Care Med 2017;195:1253 · TCIA COVID-19-AR, 64세 남 이동식 AP (teacher-only) · 작성자 판독(2026-10-01): 기관 내 관·비위관, 양폐 미만성 음영(아래쪽 우세), 뚜렷한 흉수 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78183425 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "양측 미만성 음영의 중등도 ARDS 인데 쇼크가 풀렸고 수액이 7 L 과잉이므로 이뇨제로 음성 균형을 만든다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "ECMO 는 P/F 80 미만의 불응성 중증 ARDS 에 쓰는데 이 환자는 P/F 180 이다",
+   "steps": 3,
+   "chain": [
+    "영상: 기관 내 관 + 양폐 미만성 음영, PaO2 90 / FiO2 0.5 = 180 → 중등도 ARDS",
+    "승압제 48시간 전 중단·젖산 정상 → 쇼크 해소, 소생기에서 회복기로",
+    "누적 수액 +7 L·크레아티닌 정상 → 보존적 수액 전략(이뇨제)"
+   ],
+   "key": [
+    {
+     "item": "영상: 기관 내 관과 양쪽 폐야의 미만성 음영",
+     "why": "ARDS 영상 기준 — 심장 비대나 흉수가 주소견이 아니다",
+     "also": []
+    },
+    {
+     "item": "vasopressors were discontinued 48 hours ago",
+     "why": "쇼크가 끝났다 — 수액을 빼도 되는 시기",
+     "also": []
+    },
+    {
+     "item": "His cumulative fluid balance is positive by 7 L",
+     "why": "제거할 과잉 수액이 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "PaO2 of 90 mm Hg",
+     "why": "FiO2 0.5 와 함께 P/F 180 — ECMO 대상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum lactate concentration is 1.2 mmol/L",
+     "why": "관류 저하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "serum creatinine concentration is 0.9 mg/dL",
+     "why": "이뇨제를 쓸 수 있는 콩팥 기능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the plateau pressure is 26 cm H2O",
+     "why": "폐보호 환기가 이미 지켜지고 있다 — 환기 설정 변경 이유가 없다",
+     "also": []
+    }
+   ],
+   "summary": "P/F 180 의 중등도 ARDS 로 폐보호 환기가 지켜지고 있다. 쇼크가 풀렸고 수액이 7 L 과잉이므로 푸로세미드로 음성 균형을 만든다.",
+   "switch": {
+    "choice": "C",
+    "condition": "엎드린 자세 환기와 최적 PEEP 에도 P/F 가 60 에 머물렀다면 VV-ECMO 가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0178.png",
+   "caption": "Portable anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1250955026471161846160878183425",
+   "asset_id": "TCIA-COVID19_AR-01446302218370",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …78183425"
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0189",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "예방의학·역학·보건통계 — 짝지은 환자-대조군 연구의 교차비",
+  "type": "예방의학·역학·보건통계 — 짝지은 환자-대조군 연구의 교차비",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-09-30",
+  "vignette": "A 58-year-old man who worked for 20 years in a dye manufacturing plant asks whether his job increased his risk of bladder cancer. His physician reviews a matched case-control study of bladder cancer. In that study, each of 200 patients with newly diagnosed bladder cancer is matched to one control of the same age and sex from the same neighborhood. Occupational exposure to aromatic amines is ascertained for every participant. Among the 200 pairs, both the case and control were exposed in 25 pairs, and neither was exposed in 125 pairs. In 40 pairs, only the case was exposed, and in 10 pairs, only the control was exposed.",
+  "question": "Which of the following is the most appropriate estimate of the odds ratio for bladder cancer associated with the exposure?",
+  "options": [
+   "0.25",
+   "4.0",
+   "2.3",
+   "1.6",
+   "3.2"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: In a pair-matched case-control study, only discordant pairs carry information about exposure. The matched odds ratio is the number of pairs in which only the case was exposed divided by the number in which only the control was exposed: 40/10 = 4.0.\n- 원리: <b>Why concordant pairs drop out</b>: matching makes each pair a stratum with one case and one control. When both are exposed or both unexposed, the pair cannot tell us whether exposure is more common in cases — it contributes nothing to the comparison. The Mantel-Haenszel estimate over all pairs therefore reduces to <b>b/c</b>, where b = pairs with only the case exposed and c = pairs with only the control exposed. McNemar's test uses the same discordant cells.<br> <b>Why ignoring the matching gives a different number</b>: if the pairs are broken and a 2×2 table is built from totals, cases exposed = 25 + 40 = 65, controls exposed = 25 + 10 = 35. The crude OR = (65 × 165)/(135 × 35) ≈ 2.3. Because matching factors (age, sex, neighborhood) are related to exposure, the unmatched analysis is biased toward the null. <b>A matched design requires a matched analysis.</b><br> <b>Interpretation</b>: an OR of 4.0 means the odds of aromatic amine exposure were four times higher among cases than their matched controls. With bladder cancer rare, the OR approximates the relative risk.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Matched OR = b/c (answer)</th><th>Crude OR from totals (closest rival)</th></tr></thead><tbody> <tr><td>Uses</td><td><b>Discordant pairs only (40 and 10)</b></td><td>All 400 individuals</td></tr> <tr><td>Calculation</td><td>40 / 10 = <b>4.0</b></td><td>(65 × 165)/(135 × 35) ≈ 2.3</td></tr> <tr><td>Respects matching</td><td>Yes</td><td>No — biased toward 1</td></tr> <tr><td>Test of significance</td><td>McNemar</td><td>Chi-square (inappropriate here)</td></tr> </tbody></table> If the question had described an unmatched case-control study with the same totals, 2.3 would be correct. The word <b>matched</b> changes the formula.\n- 오답 이유:\n  - (A) 0.25 is the inverse ratio 10/40, which would be the answer only if the case and control labels were reversed. Here, pairs with only the case exposed outnumber those with only the control exposed, so the OR is above 1.\n  - (C) 2.3 is the crude odds ratio from collapsing pairs into a single 2×2 table (65×165 / 135×35). It would be correct for an unmatched design, but it ignores the matching and is biased toward the null here.\n  - (D) 1.6 comes from dividing exposed cases by exposed controls (65/35 ≈ 1.9) or other proportions that are not odds ratios. No valid formula for this design yields 1.6; it reflects a confusion between risk ratio and odds ratio.\n  - (E) 3.2 results from mistakenly including a concordant cell, for example (40 + 25)/(10 + 10). Concordant pairs do not contribute to the matched odds ratio and should never enter the numerator or denominator.\n- 함정: The word 'matched' means only discordant pairs count: OR = b/c, not the crude table.\n- 학습목표: 짝지은 환자-대조군 연구에서 교차비를 일치하지 않는 쌍의 비(b/c)로 계산하고, 짝을 무시한 계산과 구별한다\n- 근거·출처: Gordis Epidemiology, 6th ed. — case-control studies, matching · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. — matched-pair analysis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "In a pair-matched case-control study, only discordant pairs carry information about exposure. The matched odds ratio is the number of pairs in which only the case was exposed divided by the number in which only the control was exposed: 40/10 = 4.0."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why concordant pairs drop out</b>: matching makes each pair a stratum with one case and one control. When both are exposed or both unexposed, the pair cannot tell us whether exposure is more common in cases — it contributes nothing to the comparison. The Mantel-Haenszel estimate over all pairs therefore reduces to <b>b/c</b>, where b = pairs with only the case exposed and c = pairs with only the control exposed. McNemar's test uses the same discordant cells.<br> <b>Why ignoring the matching gives a different number</b>: if the pairs are broken and a 2×2 table is built from totals, cases exposed = 25 + 40 = 65, controls exposed = 25 + 10 = 35. The crude OR = (65 × 165)/(135 × 35) ≈ 2.3. Because matching factors (age, sex, neighborhood) are related to exposure, the unmatched analysis is biased toward the null. <b>A matched design requires a matched analysis.</b><br> <b>Interpretation</b>: an OR of 4.0 means the odds of aromatic amine exposure were four times higher among cases than their matched controls. With bladder cancer rare, the OR approximates the relative risk."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Matched OR = b/c (answer)</th><th>Crude OR from totals (closest rival)</th></tr></thead><tbody> <tr><td>Uses</td><td><b>Discordant pairs only (40 and 10)</b></td><td>All 400 individuals</td></tr> <tr><td>Calculation</td><td>40 / 10 = <b>4.0</b></td><td>(65 × 165)/(135 × 35) ≈ 2.3</td></tr> <tr><td>Respects matching</td><td>Yes</td><td>No — biased toward 1</td></tr> <tr><td>Test of significance</td><td>McNemar</td><td>Chi-square (inappropriate here)</td></tr> </tbody></table> If the question had described an unmatched case-control study with the same totals, 2.3 would be correct. The word <b>matched</b> changes the formula."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) 0.25 is the inverse ratio 10/40, which would be the answer only if the case and control labels were reversed. Here, pairs with only the case exposed outnumber those with only the control exposed, so the OR is above 1.\n(C) 2.3 is the crude odds ratio from collapsing pairs into a single 2×2 table (65×165 / 135×35). It would be correct for an unmatched design, but it ignores the matching and is biased toward the null here.\n(D) 1.6 comes from dividing exposed cases by exposed controls (65/35 ≈ 1.9) or other proportions that are not odds ratios. No valid formula for this design yields 1.6; it reflects a confusion between risk ratio and odds ratio.\n(E) 3.2 results from mistakenly including a concordant cell, for example (40 + 25)/(10 + 10). Concordant pairs do not contribute to the matched odds ratio and should never enter the numerator or denominator."
+   },
+   {
+    "k": "함정",
+    "v": "The word 'matched' means only discordant pairs count: OR = b/c, not the crude table."
+   },
+   {
+    "k": "학습목표",
+    "v": "짝지은 환자-대조군 연구에서 교차비를 일치하지 않는 쌍의 비(b/c)로 계산하고, 짝을 무시한 계산과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis Epidemiology, 6th ed. — case-control studies, matching · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. — matched-pair analysis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "짝지은 환자-대조군 연구의 교차비는 일치하지 않는 쌍의 비 40/10 = 4.0 이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "짝을 무시하고 합계로 만든 교차비 2.3 은 비짝지음 설계의 값이고 짝지은 설계에서는 치우친다",
+   "steps": 3,
+   "chain": [
+    "나이·성별·동네로 1:1 짝지음 → 짝지은 분석이 필요",
+    "둘 다 노출(25)·둘 다 비노출(125) 쌍은 정보가 없다 → 일치하지 않는 쌍만 사용",
+    "환자만 노출 40 / 대조만 노출 10 → 교차비 4.0"
+   ],
+   "key": [
+    {
+     "item": "matched to one control of the same age and sex",
+     "why": "짝지은 설계 — b/c 공식을 쓴다",
+     "also": []
+    },
+    {
+     "item": "In 40 pairs, only the case was exposed",
+     "why": "분자 b",
+     "also": []
+    },
+    {
+     "item": "in 10 pairs, only the control was exposed",
+     "why": "분모 c",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "both the case and control were exposed in 25 pairs",
+     "why": "일치 쌍 — 계산에 넣지 않는다(3.2 의 함정)",
+     "also": []
+    },
+    {
+     "item": "neither was exposed in 125 pairs",
+     "why": "일치 쌍 — 계산에 넣지 않는다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "worked for 20 years in a dye manufacturing plant",
+     "why": "질문의 계기 — 계산과 무관",
+     "also": []
+    }
+   ],
+   "summary": "1:1 짝지은 환자-대조군 연구라 일치하지 않는 쌍만 정보가 있다. 환자만 노출 40, 대조만 노출 10 이므로 교차비는 4.0 이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "짝짓지 않은 환자-대조군 연구에서 같은 합계를 얻었다면 교차비 2.3 이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0188",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "소아청소년 — 열이 나는 걸음마 아기의 전신 경련",
+  "type": "소아청소년 — 열이 나는 걸음마 아기의 전신 경련",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "18개월 남아가 열이 난 지 몇 시간 뒤 전신 강직-간대 경련을 2분 동안 하여 왔다. 경련은 저절로 멈췄고 30분 뒤 평소처럼 놀고 있다. 이틀 전부터 콧물과 기침이 있었다. 예방접종은 모두 맞았고 발달은 정상이며 이전 경련은 없다. 아버지가 어릴 때 열성경련을 한 적이 있다. 체온 39.2℃, 맥박 132회/분, 호흡 28회/분이다. 의식은 명료하고 대천문은 닫혀 있으며 목 경직과 국소 신경학적 이상은 없다. 인두가 붉고 콧물이 있다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "페노바르비탈 장기 복용",
+   "보호자 교육과 해열제로 열 조절",
+   "요추천자로 뇌척수액 검사",
+   "뇌파 검사",
+   "뇌 MRI"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 6개월~5세 아이가 열과 함께 15분 미만의 전신 경련을 24시간 안에 한 번 했고, 곧 의식이 돌아왔으며 신경학적 이상이 없다 — 단순 열성경련이다. 예방접종을 마쳤고 수막 자극 징후가 없어 요추천자·뇌파·영상 검사가 필요 없고, 열의 원인(상기도감염)을 치료하며 보호자에게 재발 가능성과 경련 시 대처를 교육한다.\n- 원리: <b>왜 이 나이에만 생기나</b>: 발달 중인 뇌는 흥분성 신경전달이 억제성보다 우세하고 체온 상승에 따른 신경 흥분성 변화에 민감하다. 이 취약성은 5~6세가 지나면 사라진다. 가족력이 있으면 흔하며(유전적 소인), 그 자체로 뇌 손상을 남기지 않는다.<br> <b>단순형과 복합형</b>: 단순 열성경련은 ① 전신성 ② 15분 미만 ③ 24시간 안에 1회다. 하나라도 어긋나면(국소성, 15분 이상, 24시간 내 반복) 복합 열성경련이며, 뇌전증 위험과 추가 평가 필요성이 커진다.<br> <b>검사를 하지 않는 근거</b>: 단순 열성경련에서 뇌파·영상은 진단이나 예후를 바꾸지 않는다(AAP). 요추천자는 수막 자극 징후가 있거나, 12개월 미만인데 Hib·폐렴알균 접종이 불완전하거나, 항생제를 이미 써서 수막염 징후가 가려졌을 때만 한다. 해열제는 아이를 편하게 하지만 <b>재발을 막지는 못한다</b> — 이 점도 교육한다. 재발은 약 1/3 이고, 장기 항경련제는 부작용이 이득보다 커 쓰지 않는다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">교육과 열 조절(정답)</th><th>요추천자(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>6개월~5세</td><td><b>12개월 미만</b>에서 문턱이 낮다</td></tr> <tr><td>접종</td><td><b>Hib·폐렴알균 완료</b></td><td>불완전하거나 모름</td></tr> <tr><td>진찰</td><td>의식 회복·수막 징후 없음</td><td>목 경직·지속되는 의식 저하·대천문 팽윤</td></tr> <tr><td>기타</td><td>—</td><td>항생제 선행 투여로 징후가 가려짐</td></tr> </tbody></table> 가장 끌리는 오답은 <b>요추천자</b>다. 수막염을 놓칠까 걱정되지만, 이 아이는 18개월·접종 완료·의식 회복·목 경직 없음으로 모든 기준에서 필요하지 않다.\n- 오답 이유:\n  - ① 장기 항경련제는 재발을 조금 줄이지만 졸림·행동 문제 같은 부작용이 커서 단순 열성경련에 쓰지 않는다. 재발이 매우 잦고 길어 가족이 크게 불안하면 경련 시 비강·직장 벤조디아제핀을 줄 수 있다.\n  - ③ 요추천자는 수막 자극 징후가 있거나 12개월 미만에서 Hib·폐렴알균 접종이 불완전할 때, 또는 항생제를 먼저 썼을 때 한다. 목 경직이나 의식 저하가 계속되었다면 정답이 된다.\n  - ④ 뇌파는 단순 열성경련 뒤 재발이나 뇌전증을 예측하지 못해 권하지 않는다. 국소 경련이 반복되거나 열 없이 경련했다면 고려한다.\n  - ⑤ 뇌 MRI 는 국소 신경학적 이상, 발달 지연, 소두증 같은 구조 이상 의심이 있을 때 한다. 단순 열성경련에는 필요 없고, 경련 뒤 편마비가 남았다면 적절하다.\n- 함정: 열 나는 아이의 경련에 수막염을 떠올리지만, 18개월·접종 완료·의식 회복·수막 징후 없음이면 단순 열성경련으로 검사가 필요 없다.\n- 학습목표: 단순 열성경련을 진단하고 추가 검사·항경련제 없이 보호자 교육과 열 원인 치료로 관리한다\n- 근거·출처: American Academy of Pediatrics Subcommittee on Febrile Seizures. Febrile seizures: guideline for the neurodiagnostic evaluation of the child with a simple febrile seizure. Pediatrics 2011;127:389 · Nelson Textbook of Pediatrics, 21st ed. — febrile seizures",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "6개월~5세 아이가 열과 함께 15분 미만의 전신 경련을 24시간 안에 한 번 했고, 곧 의식이 돌아왔으며 신경학적 이상이 없다 — 단순 열성경련이다. 예방접종을 마쳤고 수막 자극 징후가 없어 요추천자·뇌파·영상 검사가 필요 없고, 열의 원인(상기도감염)을 치료하며 보호자에게 재발 가능성과 경련 시 대처를 교육한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이 나이에만 생기나</b>: 발달 중인 뇌는 흥분성 신경전달이 억제성보다 우세하고 체온 상승에 따른 신경 흥분성 변화에 민감하다. 이 취약성은 5~6세가 지나면 사라진다. 가족력이 있으면 흔하며(유전적 소인), 그 자체로 뇌 손상을 남기지 않는다.<br> <b>단순형과 복합형</b>: 단순 열성경련은 ① 전신성 ② 15분 미만 ③ 24시간 안에 1회다. 하나라도 어긋나면(국소성, 15분 이상, 24시간 내 반복) 복합 열성경련이며, 뇌전증 위험과 추가 평가 필요성이 커진다.<br> <b>검사를 하지 않는 근거</b>: 단순 열성경련에서 뇌파·영상은 진단이나 예후를 바꾸지 않는다(AAP). 요추천자는 수막 자극 징후가 있거나, 12개월 미만인데 Hib·폐렴알균 접종이 불완전하거나, 항생제를 이미 써서 수막염 징후가 가려졌을 때만 한다. 해열제는 아이를 편하게 하지만 <b>재발을 막지는 못한다</b> — 이 점도 교육한다. 재발은 약 1/3 이고, 장기 항경련제는 부작용이 이득보다 커 쓰지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">교육과 열 조절(정답)</th><th>요추천자(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>6개월~5세</td><td><b>12개월 미만</b>에서 문턱이 낮다</td></tr> <tr><td>접종</td><td><b>Hib·폐렴알균 완료</b></td><td>불완전하거나 모름</td></tr> <tr><td>진찰</td><td>의식 회복·수막 징후 없음</td><td>목 경직·지속되는 의식 저하·대천문 팽윤</td></tr> <tr><td>기타</td><td>—</td><td>항생제 선행 투여로 징후가 가려짐</td></tr> </tbody></table> 가장 끌리는 오답은 <b>요추천자</b>다. 수막염을 놓칠까 걱정되지만, 이 아이는 18개월·접종 완료·의식 회복·목 경직 없음으로 모든 기준에서 필요하지 않다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 장기 항경련제는 재발을 조금 줄이지만 졸림·행동 문제 같은 부작용이 커서 단순 열성경련에 쓰지 않는다. 재발이 매우 잦고 길어 가족이 크게 불안하면 경련 시 비강·직장 벤조디아제핀을 줄 수 있다.\n③ 요추천자는 수막 자극 징후가 있거나 12개월 미만에서 Hib·폐렴알균 접종이 불완전할 때, 또는 항생제를 먼저 썼을 때 한다. 목 경직이나 의식 저하가 계속되었다면 정답이 된다.\n④ 뇌파는 단순 열성경련 뒤 재발이나 뇌전증을 예측하지 못해 권하지 않는다. 국소 경련이 반복되거나 열 없이 경련했다면 고려한다.\n⑤ 뇌 MRI 는 국소 신경학적 이상, 발달 지연, 소두증 같은 구조 이상 의심이 있을 때 한다. 단순 열성경련에는 필요 없고, 경련 뒤 편마비가 남았다면 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "열 나는 아이의 경련에 수막염을 떠올리지만, 18개월·접종 완료·의식 회복·수막 징후 없음이면 단순 열성경련으로 검사가 필요 없다."
+   },
+   {
+    "k": "학습목표",
+    "v": "단순 열성경련을 진단하고 추가 검사·항경련제 없이 보호자 교육과 열 원인 치료로 관리한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American Academy of Pediatrics Subcommittee on Febrile Seizures. Febrile seizures: guideline for the neurodiagnostic evaluation of the child with a simple febrile seizure. Pediatrics 2011;127:389 · Nelson Textbook of Pediatrics, 21st ed. — febrile seizures"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "18개월 아이의 2분짜리 전신 경련 1회 뒤 의식이 회복되었고 수막 징후가 없어 단순 열성경련이므로 검사 없이 교육과 열 조절을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "요추천자는 수막 징후가 있거나 12개월 미만에서 접종이 불완전할 때이고 이 아이는 둘 다 아니다",
+   "steps": 3,
+   "chain": [
+    "18개월 + 발열 + 2분 전신 경련 1회 + 30분 뒤 회복 → 단순 열성경련",
+    "접종 완료 + 목 경직·국소 이상 없음 + 의식 명료 → 수막염 가능성 낮음, 요추천자 불필요",
+    "단순 열성경련은 뇌파·영상·항경련제가 이득이 없다 → 교육과 열 원인 치료"
+   ],
+   "key": [
+    {
+     "item": "전신 강직-간대 경련을 2분 동안",
+     "why": "전신성·15분 미만 — 단순형",
+     "also": []
+    },
+    {
+     "item": "30분 뒤 평소처럼 놀고 있다",
+     "why": "의식 회복 — 중추신경계 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "예방접종은 모두 맞았고",
+     "why": "Hib·폐렴알균 수막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "목 경직과 국소 신경학적 이상은 없다",
+     "why": "수막염·구조 병변 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "아버지가 어릴 때 열성경련을 한 적이 있다",
+     "why": "흔한 가족력 — 처치를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "인두가 붉고 콧물이 있다",
+     "why": "열의 원인 — 상기도감염",
+     "also": []
+    }
+   ],
+   "summary": "18개월 아이가 열과 함께 2분 전신 경련을 한 번 했고 곧 회복했으며 접종 완료·수막 징후가 없다. 단순 열성경련이므로 검사 없이 보호자 교육과 열 조절을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "9개월 아기가 Hib·폐렴알균 접종을 받지 않았고 경련 뒤 처져 있었다면 요추천자가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0187",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "신장·비뇨 — 상기도감염과 동시에 나타난 육안적 혈뇨",
+  "type": "신장·비뇨 — 상기도감염과 동시에 나타난 육안적 혈뇨",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "A 22-year-old man comes to the physician because of cola-colored urine for 1 day. Two days ago, he developed a sore throat and runny nose. He had a similar episode of dark urine during a cold 1 year ago that resolved on its own. He takes no medications. His temperature is 37.6°C, pulse is 78/min, and blood pressure is 128/80 mm Hg. There is no edema. Urinalysis shows 3+ blood, 1+ protein, and 40–50 dysmorphic erythrocytes/hpf with occasional red cell casts. Serum creatinine concentration is 0.9 mg/dL. Serum C3 and C4 concentrations are within the reference ranges. Antistreptolysin O titer is not elevated. A kidney biopsy is performed.",
+  "question": "Which of the following is the most likely finding on immunofluorescence microscopy?",
+  "options": [
+   "Granular subepithelial deposits of IgG and C3",
+   "Linear deposits of IgG along the glomerular basement membrane",
+   "Absence of immune deposits",
+   "Subendothelial deposits of IgG, IgM, C3, and C1q",
+   "Mesangial deposits of IgA"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Gross hematuria beginning within 1–2 days of an upper respiratory infection (synpharyngitic), with a prior identical episode, normal complement, and a normal antistreptolysin O titer, is typical of IgA nephropathy. Immunofluorescence shows dominant IgA deposits in the mesangium.\n- 원리: <b>What drives IgA nephropathy</b>: patients produce galactose-deficient IgA1 (a hinge-region glycosylation defect). Autoantibodies recognize this abnormal IgA1, and the resulting immune complexes lodge in the <b>mesangium</b>, where they activate mesangial cells and the alternative and lectin complement pathways. Because the classical pathway is not consumed systemically, <b>serum C3 and C4 stay normal</b>.<br> <b>Why hematuria follows infection so quickly</b>: mucosal infections stimulate IgA production immediately, so the flare occurs during the infection (within 1–3 days). Post-streptococcal glomerulonephritis, in contrast, requires 1–3 weeks for antibody formation and immune complex deposition, and it lowers C3.<br> <b>Course</b>: episodes recur with each mucosal infection. Prognosis depends on proteinuria, hypertension, and reduced GFR; supportive care with RAS blockade (and SGLT2 inhibitors when proteinuria persists) is the base of treatment. Henoch-Schönlein purpura (IgA vasculitis) is the systemic form with the same kidney lesion.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IgA nephropathy (answer)</th><th>Post-streptococcal GN (closest rival)</th></tr></thead><tbody> <tr><td>Timing after infection</td><td><b>1–3 days (synpharyngitic)</b></td><td>1–3 weeks (pharynx), 3–6 weeks (skin)</td></tr> <tr><td>Complement</td><td><b>Normal C3</b></td><td>Low C3, normalizes by 8 weeks</td></tr> <tr><td>Recurrence</td><td>Repeated episodes</td><td>Rarely recurs</td></tr> <tr><td>Immunofluorescence</td><td>Mesangial IgA</td><td>Granular IgG and C3 (\"starry sky\")</td></tr> <tr><td>Electron microscopy</td><td>Mesangial deposits</td><td>Subepithelial humps</td></tr> </tbody></table> The timing and the complement level separate the two; the recurrence history seals it.\n- 오답 이유:\n  - (A) Granular subepithelial IgG and C3 deposits (humps) are the hallmark of post-streptococcal glomerulonephritis, which appears 1–3 weeks after infection with low C3. It would be the answer if hematuria had begun 2 weeks after pharyngitis with low complement and a high ASO titer.\n  - (B) Linear IgG along the basement membrane indicates anti-GBM disease, which causes rapidly progressive glomerulonephritis often with pulmonary hemorrhage. It would be correct with hemoptysis and rising creatinine.\n  - (C) Absent immune deposits (pauci-immune) characterize ANCA-associated vasculitis, which usually presents with rapidly progressive kidney failure and systemic symptoms. It would fit a positive ANCA with crescentic glomerulonephritis.\n  - (D) Full-house subendothelial deposits including C1q are typical of lupus nephritis, which lowers C3 and C4. It would be correct in a young woman with arthritis, rash, and positive anti-dsDNA antibodies.\n- 함정: Hematuria during the cold, not weeks after it, and normal C3 — IgA nephropathy, not post-streptococcal GN.\n- 학습목표: 상기도감염과 동시에(1~2일 안) 나타난 육안적 혈뇨·정상 보체에서 IgA 신병증을 진단하고 사구체간질의 IgA 침착을 예상한다\n- 근거·출처: KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100:S1 · Harrison's Principles of Internal Medicine, 21st ed. — glomerular diseases (IgA nephropathy)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Gross hematuria beginning within 1–2 days of an upper respiratory infection (synpharyngitic), with a prior identical episode, normal complement, and a normal antistreptolysin O titer, is typical of IgA nephropathy. Immunofluorescence shows dominant IgA deposits in the mesangium."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What drives IgA nephropathy</b>: patients produce galactose-deficient IgA1 (a hinge-region glycosylation defect). Autoantibodies recognize this abnormal IgA1, and the resulting immune complexes lodge in the <b>mesangium</b>, where they activate mesangial cells and the alternative and lectin complement pathways. Because the classical pathway is not consumed systemically, <b>serum C3 and C4 stay normal</b>.<br> <b>Why hematuria follows infection so quickly</b>: mucosal infections stimulate IgA production immediately, so the flare occurs during the infection (within 1–3 days). Post-streptococcal glomerulonephritis, in contrast, requires 1–3 weeks for antibody formation and immune complex deposition, and it lowers C3.<br> <b>Course</b>: episodes recur with each mucosal infection. Prognosis depends on proteinuria, hypertension, and reduced GFR; supportive care with RAS blockade (and SGLT2 inhibitors when proteinuria persists) is the base of treatment. Henoch-Schönlein purpura (IgA vasculitis) is the systemic form with the same kidney lesion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">IgA nephropathy (answer)</th><th>Post-streptococcal GN (closest rival)</th></tr></thead><tbody> <tr><td>Timing after infection</td><td><b>1–3 days (synpharyngitic)</b></td><td>1–3 weeks (pharynx), 3–6 weeks (skin)</td></tr> <tr><td>Complement</td><td><b>Normal C3</b></td><td>Low C3, normalizes by 8 weeks</td></tr> <tr><td>Recurrence</td><td>Repeated episodes</td><td>Rarely recurs</td></tr> <tr><td>Immunofluorescence</td><td>Mesangial IgA</td><td>Granular IgG and C3 (\"starry sky\")</td></tr> <tr><td>Electron microscopy</td><td>Mesangial deposits</td><td>Subepithelial humps</td></tr> </tbody></table> The timing and the complement level separate the two; the recurrence history seals it."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Granular subepithelial IgG and C3 deposits (humps) are the hallmark of post-streptococcal glomerulonephritis, which appears 1–3 weeks after infection with low C3. It would be the answer if hematuria had begun 2 weeks after pharyngitis with low complement and a high ASO titer.\n(B) Linear IgG along the basement membrane indicates anti-GBM disease, which causes rapidly progressive glomerulonephritis often with pulmonary hemorrhage. It would be correct with hemoptysis and rising creatinine.\n(C) Absent immune deposits (pauci-immune) characterize ANCA-associated vasculitis, which usually presents with rapidly progressive kidney failure and systemic symptoms. It would fit a positive ANCA with crescentic glomerulonephritis.\n(D) Full-house subendothelial deposits including C1q are typical of lupus nephritis, which lowers C3 and C4. It would be correct in a young woman with arthritis, rash, and positive anti-dsDNA antibodies."
+   },
+   {
+    "k": "함정",
+    "v": "Hematuria during the cold, not weeks after it, and normal C3 — IgA nephropathy, not post-streptococcal GN."
+   },
+   {
+    "k": "학습목표",
+    "v": "상기도감염과 동시에(1~2일 안) 나타난 육안적 혈뇨·정상 보체에서 IgA 신병증을 진단하고 사구체간질의 IgA 침착을 예상한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100:S1 · Harrison's Principles of Internal Medicine, 21st ed. — glomerular diseases (IgA nephropathy)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "상기도감염 1~2일 만의 육안적 혈뇨·재발·정상 보체·ASO 정상은 IgA 신병증이므로 사구체간질 IgA 침착이 보인다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "연쇄알균 감염후 사구체신염은 감염 1~3주 뒤에 오고 C3 가 낮다",
+   "steps": 3,
+   "chain": [
+    "변형 적혈구 + 적혈구 원주 → 사구체 기원 혈뇨",
+    "감염 2일 만의 발병 + 이전 같은 삽화 + 정상 C3·C4 + ASO 정상 → IgA 신병증",
+    "IgA 신병증 → 사구체간질 IgA 우세 침착"
+   ],
+   "key": [
+    {
+     "item": "Two days ago, he developed a sore throat and runny nose",
+     "why": "감염과 동시 — IgA 신병증의 시간 관계",
+     "also": []
+    },
+    {
+     "item": "He had a similar episode of dark urine during a cold 1 year ago",
+     "why": "재발 — IgA 신병증 쪽",
+     "also": []
+    },
+    {
+     "item": "Serum C3 and C4 concentrations are within the reference ranges",
+     "why": "감염후 사구체신염·루푸스 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "occasional red cell casts",
+     "why": "사구체 기원 혈뇨",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Antistreptolysin O titer is not elevated",
+     "why": "최근 연쇄알균 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine concentration is 0.9 mg/dL",
+     "why": "급속진행성 사구체신염(항GBM·ANCA) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "There is no edema",
+     "why": "신증후군이 아님 — 진단을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "상기도감염 2일 만의 육안적 혈뇨가 되풀이되고 보체와 ASO 가 정상이다. IgA 신병증이므로 면역형광에서 사구체간질 IgA 침착이 보인다.",
+   "switch": {
+    "choice": "A",
+    "condition": "인두염 2주 뒤 혈뇨·부종·고혈압이 생기고 C3 가 낮았다면 상피하 IgG·C3 침착이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0186",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "감염 — 전염단핵구증 청소년의 운동 복귀",
+  "type": "감염 — 전염단핵구증 청소년의 운동 복귀",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "17세 남자가 5일 전부터 열, 심한 인후통, 피로가 있어 왔다. 고등학교 축구 선수로 3일 뒤 경기에 나가고 싶어 한다. 체온 38.4℃, 맥박 94회/분이다. 편도가 커지고 회백색 삼출물이 덮여 있으며 뒤목 림프절이 양쪽으로 커져 있다. 왼쪽 갈비뼈 아래에서 비장 끝이 만져진다. 호흡곤란이나 삼킴곤란은 없다. 백혈구 11,200/mm³(림프구 62%, 비정형 림프구 18%), AST 84 U/L, ALT 102 U/L 이다. 이종친화항체 검사는 양성이고 A군 연쇄알균 신속항원검사는 음성이다.",
+  "question": "가장 적절한 조치는?",
+  "options": [
+   "아시클로버 경구 투여",
+   "프레드니솔론 투여",
+   "편도절제술",
+   "발병 후 최소 3~4주 접촉 운동 금지",
+   "아목시실린 10일 투여"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 열·삼출성 편도염·뒤목 림프절병증·비장비대·비정형 림프구 증가와 이종친화항체 양성은 EB 바이러스 전염단핵구증이다. 치료는 대증요법이고, 비장이 커져 약해진 피막이 외력에 찢어질 수 있어 발병 후 최소 3~4주는 접촉 운동을 금한다.\n- 원리: <b>왜 비장이 위험한가</b>: EB 바이러스는 B 세포를 감염시키고, 이를 없애려는 CD8 T 세포가 폭발적으로 늘어난다(비정형 림프구의 정체). 이 림프구가 비장에 몰려 들어가 비장이 빠르게 커지고 피막이 얇아진다. 비장 파열은 대부분 <b>발병 후 3주 안</b>에 생기고, 그중 상당수는 가벼운 외력이나 저절로 일어난다. 그래서 접촉·충돌 운동은 최소 3~4주, 무거운 운동은 비장비대가 사라질 때까지 미룬다.<br> <b>왜 항생제를 쓰지 않나</b>: 바이러스 질환이라 항생제가 효과가 없다. 특히 아목시실린·암피실린을 쓰면 대부분에서 가려운 반점구진 발진이 생기는데, 이는 약물 알레르기라기보다 감염 중의 일시적 면역 반응이다. A군 연쇄알균 검사 음성이면 더 쓸 이유가 없다.<br> <b>스테로이드와 항바이러스제</b>: 아시클로버는 바이러스 배출을 잠시 줄일 뿐 증상 기간을 줄이지 못한다. 스테로이드는 기도를 막을 만큼 편도가 크거나 자가면역 용혈빈혈·심한 혈소판감소 같은 합병증에만 쓴다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">운동 제한과 대증요법(정답)</th><th>프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>합병증 없는 전염단핵구증 모두</b></td><td>기도 폐쇄 위험·자가면역 합병증</td></tr> <tr><td>목표</td><td>비장 파열 예방</td><td>편도 부종·용혈 억제</td></tr> <tr><td>이 환자</td><td><b>비장비대, 3일 뒤 축구 경기</b></td><td>호흡곤란·삼킴곤란 없음</td></tr> </tbody></table> 심하게 아파 보여 스테로이드에 끌리지만, <b>기도가 위협받는가</b>가 기준이다. 이 환자에게 결정적인 것은 비장과 축구 경기다.\n- 오답 이유:\n  - ① 아시클로버는 EB 바이러스 배출을 일시적으로 줄일 뿐 증상 기간이나 합병증을 줄이지 못해 권하지 않는다. 헤르페스 치은구내염이나 수두였다면 적절하다.\n  - ② 스테로이드는 편도 비대로 기도 폐쇄가 우려되거나 자가면역 용혈빈혈·심한 혈소판감소가 있을 때만 쓴다. 호흡곤란·삼킴곤란이 있었다면 고려한다.\n  - ③ 편도절제술은 반복 세균성 편도염이나 편도 주위 농양 재발에 한다. 급성 전염단핵구증의 치료가 아니며, 1년에 7회 이상 반복되는 편도염이었다면 고려한다.\n  - ⑤ 아목시실린은 A군 연쇄알균 인두염의 치료지만 이 환자는 신속항원검사가 음성이다. 전염단핵구증에 쓰면 대부분 발진이 생기며, 연쇄알균 검사가 양성이었다면 정답이 된다.\n- 함정: 삼출성 편도염에 끌려 항생제를 고르지 않는다 — 이종친화항체 양성·비장비대 운동선수의 핵심은 비장 파열 예방이다.\n- 학습목표: 전염단핵구증 환자는 비장 파열 위험 때문에 발병 후 최소 3~4주 접촉 운동을 금한다는 것을 알고, 불필요한 항생제·스테로이드를 쓰지 않는다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed. — Epstein-Barr virus infections, including infectious mononucleosis · Becker JA, Smith JA. Return to play after infectious mononucleosis. Sports Health 2014;6:232",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "열·삼출성 편도염·뒤목 림프절병증·비장비대·비정형 림프구 증가와 이종친화항체 양성은 EB 바이러스 전염단핵구증이다. 치료는 대증요법이고, 비장이 커져 약해진 피막이 외력에 찢어질 수 있어 발병 후 최소 3~4주는 접촉 운동을 금한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 비장이 위험한가</b>: EB 바이러스는 B 세포를 감염시키고, 이를 없애려는 CD8 T 세포가 폭발적으로 늘어난다(비정형 림프구의 정체). 이 림프구가 비장에 몰려 들어가 비장이 빠르게 커지고 피막이 얇아진다. 비장 파열은 대부분 <b>발병 후 3주 안</b>에 생기고, 그중 상당수는 가벼운 외력이나 저절로 일어난다. 그래서 접촉·충돌 운동은 최소 3~4주, 무거운 운동은 비장비대가 사라질 때까지 미룬다.<br> <b>왜 항생제를 쓰지 않나</b>: 바이러스 질환이라 항생제가 효과가 없다. 특히 아목시실린·암피실린을 쓰면 대부분에서 가려운 반점구진 발진이 생기는데, 이는 약물 알레르기라기보다 감염 중의 일시적 면역 반응이다. A군 연쇄알균 검사 음성이면 더 쓸 이유가 없다.<br> <b>스테로이드와 항바이러스제</b>: 아시클로버는 바이러스 배출을 잠시 줄일 뿐 증상 기간을 줄이지 못한다. 스테로이드는 기도를 막을 만큼 편도가 크거나 자가면역 용혈빈혈·심한 혈소판감소 같은 합병증에만 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">운동 제한과 대증요법(정답)</th><th>프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>합병증 없는 전염단핵구증 모두</b></td><td>기도 폐쇄 위험·자가면역 합병증</td></tr> <tr><td>목표</td><td>비장 파열 예방</td><td>편도 부종·용혈 억제</td></tr> <tr><td>이 환자</td><td><b>비장비대, 3일 뒤 축구 경기</b></td><td>호흡곤란·삼킴곤란 없음</td></tr> </tbody></table> 심하게 아파 보여 스테로이드에 끌리지만, <b>기도가 위협받는가</b>가 기준이다. 이 환자에게 결정적인 것은 비장과 축구 경기다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아시클로버는 EB 바이러스 배출을 일시적으로 줄일 뿐 증상 기간이나 합병증을 줄이지 못해 권하지 않는다. 헤르페스 치은구내염이나 수두였다면 적절하다.\n② 스테로이드는 편도 비대로 기도 폐쇄가 우려되거나 자가면역 용혈빈혈·심한 혈소판감소가 있을 때만 쓴다. 호흡곤란·삼킴곤란이 있었다면 고려한다.\n③ 편도절제술은 반복 세균성 편도염이나 편도 주위 농양 재발에 한다. 급성 전염단핵구증의 치료가 아니며, 1년에 7회 이상 반복되는 편도염이었다면 고려한다.\n⑤ 아목시실린은 A군 연쇄알균 인두염의 치료지만 이 환자는 신속항원검사가 음성이다. 전염단핵구증에 쓰면 대부분 발진이 생기며, 연쇄알균 검사가 양성이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "삼출성 편도염에 끌려 항생제를 고르지 않는다 — 이종친화항체 양성·비장비대 운동선수의 핵심은 비장 파열 예방이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "전염단핵구증 환자는 비장 파열 위험 때문에 발병 후 최소 3~4주 접촉 운동을 금한다는 것을 알고, 불필요한 항생제·스테로이드를 쓰지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed. — Epstein-Barr virus infections, including infectious mononucleosis · Becker JA, Smith JA. Return to play after infectious mononucleosis. Sports Health 2014;6:232"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "이종친화항체 양성의 전염단핵구증에 비장비대가 있는 축구 선수이므로 발병 후 최소 3~4주 접촉 운동을 금한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "스테로이드는 기도 폐쇄 위험이나 자가면역 합병증이 있을 때이고 이 환자는 호흡곤란·삼킴곤란이 없다",
+   "steps": 2,
+   "chain": [
+    "삼출성 편도염 + 뒤목 림프절 + 비장비대 + 비정형 림프구 + 이종친화항체 양성 → EB 바이러스 전염단핵구증",
+    "비장비대 + 접촉 운동 예정 → 비장 파열 예방을 위해 최소 3~4주 운동 금지"
+   ],
+   "key": [
+    {
+     "item": "이종친화항체 검사는 양성",
+     "why": "전염단핵구증 확인",
+     "also": []
+    },
+    {
+     "item": "왼쪽 갈비뼈 아래에서 비장 끝이 만져진다",
+     "why": "비장비대 — 파열 위험",
+     "also": []
+    },
+    {
+     "item": "고등학교 축구 선수로 3일 뒤 경기에 나가고 싶어 한다",
+     "why": "묻는 결정의 핵심 — 접촉 운동",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A군 연쇄알균 신속항원검사는 음성",
+     "why": "세균성 인두염 가능성을 낮춘다 — 항생제 이유가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "호흡곤란이나 삼킴곤란은 없다",
+     "why": "스테로이드 적응증이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "ALT 102 U/L",
+     "why": "전염단핵구증에 흔한 경한 간염 — 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "이종친화항체 양성의 전염단핵구증이고 비장이 커져 있다. 축구 경기를 앞둔 선수이므로 비장 파열을 막으려고 발병 후 최소 3~4주 접촉 운동을 금한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "편도가 맞닿을 만큼 커져 침을 삼키지 못하고 협착음이 들렸다면 프레드니솔론이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0185",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "외과계 — 심방세동 환자의 진찰 소견보다 심한 복통",
+  "type": "외과계 — 심방세동 환자의 진찰 소견보다 심한 복통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "A 74-year-old woman is brought to the emergency department because of sudden, severe periumbilical abdominal pain that began 3 hours ago. She vomited twice and had one loose bowel movement. She has atrial fibrillation and stopped taking apixaban 2 weeks ago because of the cost. She has hypertension. Her temperature is 37.2°C, pulse is 118/min and irregularly irregular, and blood pressure is 142/86 mm Hg. She is writhing in pain, but the abdomen is soft and only mildly tender, without guarding or rebound. Bowel sounds are hypoactive. Leukocyte count is 16,800/mm3, and serum lactate concentration is 3.4 mmol/L. Serum lipase activity and urinalysis are normal.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Upright abdominal radiography",
+   "Serum lactate measurement in 6 hours",
+   "CT angiography of the abdomen",
+   "Colonoscopy",
+   "Abdominal ultrasonography"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Sudden severe pain out of proportion to a benign abdominal examination in a patient with atrial fibrillation who stopped anticoagulation is acute mesenteric ischemia from superior mesenteric artery embolism until proved otherwise. CT angiography is the first-line test; it shows the arterial occlusion and bowel wall changes quickly so that revascularization can be done before transmural infarction.\n- 원리: <b>Why pain is out of proportion</b>: an embolus lodging in the superior mesenteric artery (typically just beyond the middle colic branch) abruptly cuts off mucosal blood supply. Visceral ischemic pain is intense, but the parietal peritoneum is not irritated until the bowel becomes transmurally necrotic. So early on the abdomen is soft — the discrepancy between severe pain and few signs is the diagnostic clue. <b>Guarding and rebound mean infarction has already occurred.</b><br> <b>Why speed matters</b>: mucosa tolerates ischemia for only about 6 hours before irreversible necrosis. Mortality rises sharply with delay; diagnosis within hours changes outcome.<br> <b>Why CT angiography</b>: multidetector CTA has sensitivity and specificity above 90%, is available in minutes, shows the occlusion site (embolus versus thrombosis at the origin), and evaluates bowel viability (wall enhancement, pneumatosis, portal venous gas). Lactate and leukocytosis are supportive but nonspecific and can be normal early. Treatment is anticoagulation with heparin, then endovascular or surgical embolectomy and resection of dead bowel.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">CT angiography (answer)</th><th>Upright abdominal radiography (closest rival)</th></tr></thead><tbody> <tr><td>What it shows</td><td><b>Mesenteric arterial occlusion + bowel viability</b></td><td>Free air, obstruction pattern</td></tr> <tr><td>Early ischemia</td><td>Sensitive</td><td>Usually normal</td></tr> <tr><td>Late findings</td><td>Pneumatosis, portal venous gas</td><td>Thumbprinting, pneumatosis — too late</td></tr> <tr><td>Use</td><td><b>First-line when AMI suspected</b></td><td>Suspected perforation when CT unavailable</td></tr> </tbody></table> A normal plain film is typical early in mesenteric ischemia and gives false reassurance. When the story fits, go straight to CTA.\n- 오답 이유:\n  - (A) Plain radiographs are often normal in early mesenteric ischemia and only become abnormal after infarction. They would be useful to look for free air in suspected perforation with peritonitis.\n  - (B) Waiting to repeat lactate delays diagnosis while bowel dies; lactate rises late and a normal value does not exclude ischemia. Serial lactate is a monitoring tool after diagnosis, not a substitute for imaging.\n  - (D) Colonoscopy may show ischemic colitis in the watershed areas, but it is slow, can worsen ischemia with insufflation, and cannot see the small bowel or the SMA. It would be appropriate for suspected nonocclusive ischemic colitis with bloody diarrhea in a stable patient.\n  - (E) Ultrasonography is the first test for biliary colic or cholecystitis and can show proximal SMA flow, but bowel gas and pain limit it in the emergency setting. It would be correct for suspected gallstone disease with right upper quadrant tenderness.\n- 함정: A soft abdomen does not reassure you when pain is severe and the patient has atrial fibrillation off anticoagulation — get CT angiography now.\n- 학습목표: 심방세동 환자의 진찰 소견에 비해 심한 급성 복통에서 급성 장간막 허혈을 의심하고 CT 혈관조영을 즉시 시행한다\n- 근거·출처: Bala M et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 2022;17:54 · Clair DG, Beach JM. Mesenteric Ischemia. N Engl J Med 2016;374:959",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sudden severe pain out of proportion to a benign abdominal examination in a patient with atrial fibrillation who stopped anticoagulation is acute mesenteric ischemia from superior mesenteric artery embolism until proved otherwise. CT angiography is the first-line test; it shows the arterial occlusion and bowel wall changes quickly so that revascularization can be done before transmural infarction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why pain is out of proportion</b>: an embolus lodging in the superior mesenteric artery (typically just beyond the middle colic branch) abruptly cuts off mucosal blood supply. Visceral ischemic pain is intense, but the parietal peritoneum is not irritated until the bowel becomes transmurally necrotic. So early on the abdomen is soft — the discrepancy between severe pain and few signs is the diagnostic clue. <b>Guarding and rebound mean infarction has already occurred.</b><br> <b>Why speed matters</b>: mucosa tolerates ischemia for only about 6 hours before irreversible necrosis. Mortality rises sharply with delay; diagnosis within hours changes outcome.<br> <b>Why CT angiography</b>: multidetector CTA has sensitivity and specificity above 90%, is available in minutes, shows the occlusion site (embolus versus thrombosis at the origin), and evaluates bowel viability (wall enhancement, pneumatosis, portal venous gas). Lactate and leukocytosis are supportive but nonspecific and can be normal early. Treatment is anticoagulation with heparin, then endovascular or surgical embolectomy and resection of dead bowel."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">CT angiography (answer)</th><th>Upright abdominal radiography (closest rival)</th></tr></thead><tbody> <tr><td>What it shows</td><td><b>Mesenteric arterial occlusion + bowel viability</b></td><td>Free air, obstruction pattern</td></tr> <tr><td>Early ischemia</td><td>Sensitive</td><td>Usually normal</td></tr> <tr><td>Late findings</td><td>Pneumatosis, portal venous gas</td><td>Thumbprinting, pneumatosis — too late</td></tr> <tr><td>Use</td><td><b>First-line when AMI suspected</b></td><td>Suspected perforation when CT unavailable</td></tr> </tbody></table> A normal plain film is typical early in mesenteric ischemia and gives false reassurance. When the story fits, go straight to CTA."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Plain radiographs are often normal in early mesenteric ischemia and only become abnormal after infarction. They would be useful to look for free air in suspected perforation with peritonitis.\n(B) Waiting to repeat lactate delays diagnosis while bowel dies; lactate rises late and a normal value does not exclude ischemia. Serial lactate is a monitoring tool after diagnosis, not a substitute for imaging.\n(D) Colonoscopy may show ischemic colitis in the watershed areas, but it is slow, can worsen ischemia with insufflation, and cannot see the small bowel or the SMA. It would be appropriate for suspected nonocclusive ischemic colitis with bloody diarrhea in a stable patient.\n(E) Ultrasonography is the first test for biliary colic or cholecystitis and can show proximal SMA flow, but bowel gas and pain limit it in the emergency setting. It would be correct for suspected gallstone disease with right upper quadrant tenderness."
+   },
+   {
+    "k": "함정",
+    "v": "A soft abdomen does not reassure you when pain is severe and the patient has atrial fibrillation off anticoagulation — get CT angiography now."
+   },
+   {
+    "k": "학습목표",
+    "v": "심방세동 환자의 진찰 소견에 비해 심한 급성 복통에서 급성 장간막 허혈을 의심하고 CT 혈관조영을 즉시 시행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bala M et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 2022;17:54 · Clair DG, Beach JM. Mesenteric Ischemia. N Engl J Med 2016;374:959"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "항응고제를 끊은 심방세동 환자의 진찰 소견보다 심한 급성 복통은 급성 장간막 허혈이므로 즉시 CT 혈관조영을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "단순 복부 X선은 초기 장간막 허혈에서 대개 정상이라 거짓 안심을 준다",
+   "steps": 2,
+   "chain": [
+    "심방세동 + 항응고제 중단 + 갑작스러운 심한 통증과 부드러운 복부 → 상장간막동맥 색전에 의한 급성 장간막 허혈 의심",
+    "장 괴사 전 재관류가 목표 → 폐색 부위와 장 생존력을 보는 CT 혈관조영"
+   ],
+   "key": [
+    {
+     "item": "stopped taking apixaban 2 weeks ago",
+     "why": "색전 위험이 높아진 상태",
+     "also": []
+    },
+    {
+     "item": "irregularly irregular",
+     "why": "심방세동 — 색전원",
+     "also": []
+    },
+    {
+     "item": "the abdomen is soft and only mildly tender",
+     "why": "통증에 비해 진찰 소견이 약하다 — 초기 허혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum lipase activity and urinalysis are normal",
+     "why": "췌장염·요로결석 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "without guarding or rebound",
+     "why": "아직 전층 괴사 전 — 서둘러야 할 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "serum lactate concentration is 3.4 mmol/L",
+     "why": "허혈을 지지하지만 비특이적 — 정상이어도 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "항응고제를 끊은 심방세동 환자에게 진찰 소견보다 심한 급성 복통이 생겼다. 급성 장간막 허혈을 의심해 즉시 CT 혈관조영으로 폐색과 장 생존력을 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "안정적인 환자가 복통 뒤 혈성 설사를 보이고 CT 에서 비폐쇄성 허혈대장염이 의심되었다면 대장내시경이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0184",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "소화기·간담췌 — 궤양대장염 환자의 담즙정체 간기능 이상",
+  "type": "소화기·간담췌 — 궤양대장염 환자의 담즙정체 간기능 이상",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-09-30",
+  "vignette": "A 34-year-old man comes to the physician for follow-up of ulcerative colitis diagnosed 6 years ago, which is in remission with mesalamine. He reports mild fatigue and generalized itching for 3 months. He drinks alcohol rarely and takes no other medications. His temperature is 36.9°C, pulse is 72/min, and blood pressure is 120/76 mm Hg. Examination shows excoriations on the forearms; there is no jaundice or hepatomegaly. Serum studies show alkaline phosphatase 410 U/L, gamma-glutamyltransferase 320 U/L, AST 58 U/L, ALT 64 U/L, and total bilirubin 1.1 mg/dL. Antimitochondrial antibody test is negative. Abdominal ultrasonography shows a normal liver and no gallstones or bile duct dilation.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Serum IgG4 measurement alone",
+   "Repeat liver tests in 12 months",
+   "Magnetic resonance cholangiopancreatography",
+   "Endoscopic retrograde cholangiopancreatography",
+   "Percutaneous liver biopsy"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: A cholestatic pattern (alkaline phosphatase and GGT far higher than aminotransferases) with pruritus in a man with ulcerative colitis, negative antimitochondrial antibody, and no duct dilation on ultrasonography strongly suggests primary sclerosing cholangitis. MRCP is the noninvasive diagnostic test of choice, showing multifocal strictures and dilations ('beading') of the intrahepatic and extrahepatic ducts.\n- 원리: <b>What PSC is</b>: primary sclerosing cholangitis is chronic, immune-mediated inflammation and <b>concentric \"onion-skin\" fibrosis of medium and large bile ducts</b>, producing alternating strictures and dilations. About 70% of patients have inflammatory bowel disease, usually ulcerative colitis, and most are men in their 30s–40s. Bile flow is obstructed segment by segment, so alkaline phosphatase and GGT rise while bilirubin often stays normal early.<br> <b>Why ultrasonography can be normal</b>: strictures are short and multifocal, so there is no single obstruction to dilate the ducts upstream in a way ultrasound detects. A normal ultrasound therefore does not exclude PSC.<br> <b>Choosing the test</b>: MRCP visualizes the entire biliary tree without radiation or pancreatitis risk and has sensitivity near 85–90%. ERCP, once the gold standard, is now reserved for therapy (dilating a dominant stricture) or brushing cytology for cholangiocarcinoma. Liver biopsy is needed only when MRCP is normal but suspicion remains (small-duct PSC) or to exclude overlap with autoimmune hepatitis. After diagnosis, colonoscopy surveillance every 1–2 years is needed because PSC with UC greatly raises colorectal cancer risk.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">MRCP (answer)</th><th>ERCP (closest rival)</th></tr></thead><tbody> <tr><td>Role</td><td><b>First-line diagnosis</b></td><td>Therapy or tissue sampling</td></tr> <tr><td>Invasiveness</td><td>Noninvasive</td><td>Endoscopic; post-ERCP pancreatitis, cholangitis</td></tr> <tr><td>When chosen</td><td>Suspected PSC</td><td>Dominant stricture, suspected cholangiocarcinoma</td></tr> <tr><td>This patient</td><td><b>Stable, no stricture known yet</b></td><td>No indication for intervention</td></tr> </tbody></table> Both show the \"beaded\" ducts, but only ERCP carries procedure risk. When no intervention is planned, MRCP comes first.\n- 오답 이유:\n  - (A) IgG4 should be measured because IgG4-related sclerosing cholangitis mimics PSC and responds to corticosteroids, but it cannot define the biliary anatomy on its own. It is an adjunct after imaging, not a replacement for cholangiography.\n  - (B) Waiting is inappropriate when alkaline phosphatase is persistently more than twice normal with symptoms. Repeat testing would be reasonable only for a mild, transient elevation without risk factors.\n  - (D) ERCP can show the same beaded ducts but carries a risk of pancreatitis and cholangitis. It is reserved for dilating a dominant stricture or obtaining brushings when cholangiocarcinoma is suspected; it would be correct if a new dominant stricture with rising bilirubin were seen.\n  - (E) Liver biopsy is not needed when cholangiography is diagnostic. It becomes the right choice if MRCP is normal but small-duct PSC or overlap autoimmune hepatitis is suspected.\n- 함정: A normal ultrasound does not exclude PSC — in UC with cholestasis and negative AMA, go to MRCP.\n- 학습목표: 궤양대장염 환자의 담즙정체형 간기능 이상에서 원발성 경화성 담관염을 의심하고 MRCP 를 첫 영상 검사로 고른다\n- 근거·출처: Bowlus CL et al. AASLD practice guidance on primary sclerosing cholangitis and cholangiocarcinoma. Hepatology 2023;77:659 · Harrison's Principles of Internal Medicine, 21st ed. — diseases of the gallbladder and bile ducts (primary sclerosing cholangitis)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A cholestatic pattern (alkaline phosphatase and GGT far higher than aminotransferases) with pruritus in a man with ulcerative colitis, negative antimitochondrial antibody, and no duct dilation on ultrasonography strongly suggests primary sclerosing cholangitis. MRCP is the noninvasive diagnostic test of choice, showing multifocal strictures and dilations ('beading') of the intrahepatic and extrahepatic ducts."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What PSC is</b>: primary sclerosing cholangitis is chronic, immune-mediated inflammation and <b>concentric \"onion-skin\" fibrosis of medium and large bile ducts</b>, producing alternating strictures and dilations. About 70% of patients have inflammatory bowel disease, usually ulcerative colitis, and most are men in their 30s–40s. Bile flow is obstructed segment by segment, so alkaline phosphatase and GGT rise while bilirubin often stays normal early.<br> <b>Why ultrasonography can be normal</b>: strictures are short and multifocal, so there is no single obstruction to dilate the ducts upstream in a way ultrasound detects. A normal ultrasound therefore does not exclude PSC.<br> <b>Choosing the test</b>: MRCP visualizes the entire biliary tree without radiation or pancreatitis risk and has sensitivity near 85–90%. ERCP, once the gold standard, is now reserved for therapy (dilating a dominant stricture) or brushing cytology for cholangiocarcinoma. Liver biopsy is needed only when MRCP is normal but suspicion remains (small-duct PSC) or to exclude overlap with autoimmune hepatitis. After diagnosis, colonoscopy surveillance every 1–2 years is needed because PSC with UC greatly raises colorectal cancer risk."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">MRCP (answer)</th><th>ERCP (closest rival)</th></tr></thead><tbody> <tr><td>Role</td><td><b>First-line diagnosis</b></td><td>Therapy or tissue sampling</td></tr> <tr><td>Invasiveness</td><td>Noninvasive</td><td>Endoscopic; post-ERCP pancreatitis, cholangitis</td></tr> <tr><td>When chosen</td><td>Suspected PSC</td><td>Dominant stricture, suspected cholangiocarcinoma</td></tr> <tr><td>This patient</td><td><b>Stable, no stricture known yet</b></td><td>No indication for intervention</td></tr> </tbody></table> Both show the \"beaded\" ducts, but only ERCP carries procedure risk. When no intervention is planned, MRCP comes first."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) IgG4 should be measured because IgG4-related sclerosing cholangitis mimics PSC and responds to corticosteroids, but it cannot define the biliary anatomy on its own. It is an adjunct after imaging, not a replacement for cholangiography.\n(B) Waiting is inappropriate when alkaline phosphatase is persistently more than twice normal with symptoms. Repeat testing would be reasonable only for a mild, transient elevation without risk factors.\n(D) ERCP can show the same beaded ducts but carries a risk of pancreatitis and cholangitis. It is reserved for dilating a dominant stricture or obtaining brushings when cholangiocarcinoma is suspected; it would be correct if a new dominant stricture with rising bilirubin were seen.\n(E) Liver biopsy is not needed when cholangiography is diagnostic. It becomes the right choice if MRCP is normal but small-duct PSC or overlap autoimmune hepatitis is suspected."
+   },
+   {
+    "k": "함정",
+    "v": "A normal ultrasound does not exclude PSC — in UC with cholestasis and negative AMA, go to MRCP."
+   },
+   {
+    "k": "학습목표",
+    "v": "궤양대장염 환자의 담즙정체형 간기능 이상에서 원발성 경화성 담관염을 의심하고 MRCP 를 첫 영상 검사로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bowlus CL et al. AASLD practice guidance on primary sclerosing cholangitis and cholangiocarcinoma. Hepatology 2023;77:659 · Harrison's Principles of Internal Medicine, 21st ed. — diseases of the gallbladder and bile ducts (primary sclerosing cholangitis)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "궤양대장염 남성의 담즙정체형 간기능 이상·가려움·AMA 음성·초음파 정상은 원발성 경화성 담관염을 시사하므로 MRCP 로 담관을 본다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "ERCP 는 우세 협착 확장이나 세포 검사가 필요할 때의 시술이고 진단만 필요하면 MRCP 가 먼저다",
+   "steps": 3,
+   "chain": [
+    "ALP·GGT 가 아미노전달효소보다 크게 높음 + 가려움 → 담즙정체형",
+    "궤양대장염 남성 + AMA 음성 + 초음파에 담관 확장·담석 없음 → 원발성 경화성 담관염 의심",
+    "진단 목적·중재 적응증 없음 → 비침습적 MRCP"
+   ],
+   "key": [
+    {
+     "item": "ulcerative colitis diagnosed 6 years ago",
+     "why": "원발성 경화성 담관염의 가장 강한 연관 질환",
+     "also": []
+    },
+    {
+     "item": "alkaline phosphatase 410 U/L",
+     "why": "담즙정체형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Antimitochondrial antibody test is negative",
+     "why": "원발성 담즙성 담관염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no gallstones or bile duct dilation",
+     "why": "총담관결석 가능성을 낮춘다 — 그러나 경화성 담관염을 배제하지 못한다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "total bilirubin 1.1 mg/dL",
+     "why": "우세 협착으로 인한 황달이 없다 — ERCP 적응증이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He drinks alcohol rarely",
+     "why": "알코올 간질환 가능성이 낮다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "궤양대장염 남성의 담즙정체형 간기능 이상에 AMA 음성·초음파 정상이면 원발성 경화성 담관염을 의심한다. 중재가 필요 없으므로 비침습적 MRCP 로 진단한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "빌리루빈이 오르고 MRCP 에서 새 우세 협착이 보였다면 ERCP 로 솔 세포검사와 확장술을 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0183",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "산과 — 임신 후반기 무통성 질 출혈",
+  "type": "산과 — 임신 후반기 무통성 질 출혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-30",
+  "vignette": "32세 여자(임신 2회, 출산 1회)가 임신 31주에 갑자기 선홍색 질 출혈이 있어 왔다. 배가 아프거나 자궁이 뭉치는 느낌은 없다. 3년 전 제왕절개로 첫 아이를 낳았고 이번 임신 중 산전 진찰을 받지 않았다. 혈압 116/72 mmHg, 맥박 92회/분이다. 자궁은 부드럽고 압통이 없으며 태아는 둔위로 만져진다. 질경 검사에서 경관에서 흘러나오는 소량의 선홍색 피가 보인다. 태아심박동 감시에서 기저 심박수 145회/분, 변이도 중등도이고 감속은 없다.",
+  "question": "다음으로 가장 적절한 것은?",
+  "options": [
+   "초음파로 태반 위치 확인",
+   "손가락 내진으로 경관 개대 확인",
+   "옥시토신으로 분만 유도",
+   "즉시 응급 제왕절개술",
+   "양수천자로 폐성숙도 확인"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 진통 없는 선홍색 출혈, 부드럽고 압통 없는 자궁, 태아 선진부 이상(둔위), 이전 제왕절개는 전치태반을 시사한다. 산모와 태아가 안정적이므로 손가락 내진 전에 초음파(경복부, 필요하면 질초음파)로 태반 위치를 먼저 확인한다.\n- 원리: <b>왜 전치태반은 아프지 않은가</b>: 전치태반은 태반이 자궁 아래쪽 분절에서 자궁경부 속구멍을 덮거나 가까이 붙은 상태다. 임신 후반기 아래 분절이 늘어나고 경부가 숙화되면 붙어 있던 태반이 떨어져 나가며 모체 혈관에서 피가 난다. 자궁근층에 피가 스미거나 수축을 일으키지 않아 <b>통증 없이 선홍색</b> 피가 나온다. 태반박리가 아프고 자궁이 단단한 것과 대조된다.<br> <b>왜 손가락 내진이 금기인가</b>: 경부 위를 덮은 태반을 손가락으로 건드리면 태반이 더 떨어져 대량 출혈을 일으킬 수 있다. 그래서 태반 위치를 모르는 후반기 출혈에서는 초음파가 먼저다. 질초음파는 탐촉자가 경부에 닿지 않는 각도로 넣어 안전하고 오히려 경복부보다 정확하다.<br> <b>위험 인자</b>: 이전 제왕절개(자궁 흉터), 다산, 고령, 흡연, 다태 임신. 태반이 아래에 있어 태아 머리가 골반에 들어오지 못해 둔위·횡위가 흔하다. 이전 제왕절개 흉터 위의 전치태반은 유착태반 위험이 높아 분만 계획에서 함께 평가한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">전치태반(이 증례)</th><th>태반조기박리</th></tr></thead><tbody> <tr><td>통증</td><td><b>없음</b></td><td>있음, 지속적</td></tr> <tr><td>자궁</td><td><b>부드럽고 압통 없음</b></td><td>단단하고 압통, 잦은 수축</td></tr> <tr><td>출혈</td><td>선홍색, 반복</td><td>검붉은색, 숨은 출혈 가능</td></tr> <tr><td>태아 상태</td><td>대개 안정</td><td>태아 곤란 흔함</td></tr> <tr><td>첫 검사</td><td>초음파 — 내진 금지</td><td>임상 진단, 초음파는 민감도 낮음</td></tr> </tbody></table> 가장 끌리는 오답은 <b>내진</b>이다. 진통 여부를 보려는 습관적 행동이지만 태반 위치를 모르면 먼저 초음파를 한다.\n- 오답 이유:\n  - ② 손가락 내진은 태반 위치를 모르는 임신 후반기 출혈에서 금기다. 경부를 덮은 태반을 건드려 대량 출혈을 부를 수 있고, 초음파로 태반이 경부에서 멀다는 것을 확인한 뒤에만 한다.\n  - ③ 옥시토신 유도는 전치태반이면 질식분만이 불가능해 금기다. 태반이 정상 위치이고 만삭에 분만 적응증이 있을 때 고려한다.\n  - ④ 응급 제왕절개는 출혈이 멈추지 않아 산모가 불안정하거나 태아 곤란이 있을 때 한다. 이 환자는 활력징후와 태아심박동이 안정적이라 기대요법이 가능하고, 대량 출혈이 계속되었다면 정답이 된다.\n  - ⑤ 양수천자로 폐성숙도를 보는 것은 요즘 분만 시기 결정에 거의 쓰지 않으며, 출혈 원인을 확인하기 전에 할 검사가 아니다. 34주 전 분만이 예상되면 폐성숙도 검사 대신 산전 스테로이드를 준다.\n- 함정: 후반기 출혈에서는 진통을 확인하려는 손가락 내진이 가장 위험한 행동이다 — 태반 위치가 먼저다.\n- 학습목표: 임신 후반기 무통성 선홍색 질 출혈에서 전치태반을 먼저 생각하고 손가락 내진 전에 초음파로 태반 위치를 확인한다\n- 근거·출처: ACOG. Obstetric Care Consensus No. 7: Placenta Accreta Spectrum. Obstet Gynecol 2018;132:e259 · Williams Obstetrics, 26th ed. — obstetrical hemorrhage (placenta previa)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "진통 없는 선홍색 출혈, 부드럽고 압통 없는 자궁, 태아 선진부 이상(둔위), 이전 제왕절개는 전치태반을 시사한다. 산모와 태아가 안정적이므로 손가락 내진 전에 초음파(경복부, 필요하면 질초음파)로 태반 위치를 먼저 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전치태반은 아프지 않은가</b>: 전치태반은 태반이 자궁 아래쪽 분절에서 자궁경부 속구멍을 덮거나 가까이 붙은 상태다. 임신 후반기 아래 분절이 늘어나고 경부가 숙화되면 붙어 있던 태반이 떨어져 나가며 모체 혈관에서 피가 난다. 자궁근층에 피가 스미거나 수축을 일으키지 않아 <b>통증 없이 선홍색</b> 피가 나온다. 태반박리가 아프고 자궁이 단단한 것과 대조된다.<br> <b>왜 손가락 내진이 금기인가</b>: 경부 위를 덮은 태반을 손가락으로 건드리면 태반이 더 떨어져 대량 출혈을 일으킬 수 있다. 그래서 태반 위치를 모르는 후반기 출혈에서는 초음파가 먼저다. 질초음파는 탐촉자가 경부에 닿지 않는 각도로 넣어 안전하고 오히려 경복부보다 정확하다.<br> <b>위험 인자</b>: 이전 제왕절개(자궁 흉터), 다산, 고령, 흡연, 다태 임신. 태반이 아래에 있어 태아 머리가 골반에 들어오지 못해 둔위·횡위가 흔하다. 이전 제왕절개 흉터 위의 전치태반은 유착태반 위험이 높아 분만 계획에서 함께 평가한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">전치태반(이 증례)</th><th>태반조기박리</th></tr></thead><tbody> <tr><td>통증</td><td><b>없음</b></td><td>있음, 지속적</td></tr> <tr><td>자궁</td><td><b>부드럽고 압통 없음</b></td><td>단단하고 압통, 잦은 수축</td></tr> <tr><td>출혈</td><td>선홍색, 반복</td><td>검붉은색, 숨은 출혈 가능</td></tr> <tr><td>태아 상태</td><td>대개 안정</td><td>태아 곤란 흔함</td></tr> <tr><td>첫 검사</td><td>초음파 — 내진 금지</td><td>임상 진단, 초음파는 민감도 낮음</td></tr> </tbody></table> 가장 끌리는 오답은 <b>내진</b>이다. 진통 여부를 보려는 습관적 행동이지만 태반 위치를 모르면 먼저 초음파를 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 손가락 내진은 태반 위치를 모르는 임신 후반기 출혈에서 금기다. 경부를 덮은 태반을 건드려 대량 출혈을 부를 수 있고, 초음파로 태반이 경부에서 멀다는 것을 확인한 뒤에만 한다.\n③ 옥시토신 유도는 전치태반이면 질식분만이 불가능해 금기다. 태반이 정상 위치이고 만삭에 분만 적응증이 있을 때 고려한다.\n④ 응급 제왕절개는 출혈이 멈추지 않아 산모가 불안정하거나 태아 곤란이 있을 때 한다. 이 환자는 활력징후와 태아심박동이 안정적이라 기대요법이 가능하고, 대량 출혈이 계속되었다면 정답이 된다.\n⑤ 양수천자로 폐성숙도를 보는 것은 요즘 분만 시기 결정에 거의 쓰지 않으며, 출혈 원인을 확인하기 전에 할 검사가 아니다. 34주 전 분만이 예상되면 폐성숙도 검사 대신 산전 스테로이드를 준다."
+   },
+   {
+    "k": "함정",
+    "v": "후반기 출혈에서는 진통을 확인하려는 손가락 내진이 가장 위험한 행동이다 — 태반 위치가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 후반기 무통성 선홍색 질 출혈에서 전치태반을 먼저 생각하고 손가락 내진 전에 초음파로 태반 위치를 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG. Obstetric Care Consensus No. 7: Placenta Accreta Spectrum. Obstet Gynecol 2018;132:e259 · Williams Obstetrics, 26th ed. — obstetrical hemorrhage (placenta previa)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "무통성 선홍색 출혈·부드러운 자궁·둔위·이전 제왕절개로 전치태반이 의심되고 산모·태아가 안정적이므로 내진 전에 초음파로 태반 위치를 확인한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "손가락 내진은 태반 위치를 모를 때 금기이고 초음파가 먼저다",
+   "steps": 2,
+   "chain": [
+    "무통성 선홍색 출혈 + 부드럽고 압통 없는 자궁 + 둔위 + 이전 제왕절개 → 전치태반 의심",
+    "안정적 산모·태아 + 태반 위치 미확인 → 내진 금지, 초음파로 태반 위치 확인"
+   ],
+   "key": [
+    {
+     "item": "배가 아프거나 자궁이 뭉치는 느낌은 없다",
+     "why": "무통성 — 전치태반 쪽",
+     "also": []
+    },
+    {
+     "item": "자궁은 부드럽고 압통이 없으며",
+     "why": "태반조기박리 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "3년 전 제왕절개로 첫 아이를 낳았고",
+     "why": "전치태반의 위험 인자",
+     "also": []
+    },
+    {
+     "item": "산전 진찰을 받지 않았다",
+     "why": "태반 위치를 모른다 — 초음파가 필요한 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "변이도 중등도이고 감속은 없다",
+     "why": "태아가 안정적 — 응급 분만이 필요하지 않다",
+     "also": []
+    },
+    {
+     "item": "혈압 116/72 mmHg",
+     "why": "산모가 안정적",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "태아는 둔위로 만져진다",
+     "why": "전치태반에 흔한 선진부 이상 — 단독으로 진단하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "진통 없는 선홍색 출혈, 부드러운 자궁, 둔위, 이전 제왕절개로 전치태반이 의심된다. 산모와 태아가 안정적이므로 손가락 내진 전에 초음파로 태반 위치를 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "출혈이 계속되어 혈압이 80/50 mmHg 로 떨어지고 태아 서맥이 생겼다면 응급 제왕절개술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0182",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·신경·병리·순환기·산과·소화기·외과·감염·신장·소아·예방)",
+  "subtopic": "순환기 — 운동 중 실신한 고령 환자의 수축기 잡음",
+  "type": "순환기 — 운동 중 실신한 고령 환자의 수축기 잡음",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-09-30",
+  "vignette": "76세 남자가 2주 전 계단을 오르다 잠시 의식을 잃고 쓰러진 뒤 왔다. 최근 3개월 동안 걸을 때 가슴이 조이는 느낌이 있었다. 혈압 118/82 mmHg, 맥박 72회/분이다. 흉골 오른쪽 위 모서리에서 목동맥으로 퍼지는 3/6 도의 늦게 최고조에 이르는 수축기 박출 잡음이 들리고 두 번째 심음이 약하다. 목동맥 맥박은 느리게 올라오고 약하다. 심전도는 좌심실비대 소견이다. 경흉부 심초음파에서 대동맥판이 심하게 석회화되었고 판막 면적 0.7 cm², 평균 압력차 52 mmHg, 좌심실 박출률 60% 였다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "풍선 대동맥판성형술",
+   "대동맥판 치환술",
+   "베타차단제 투여",
+   "니트로글리세린 투여",
+   "6개월 뒤 심초음파 재검"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 석회화된 대동맥판 협착으로 판막 면적 1.0 cm² 미만·평균 압력차 40 mmHg 이상의 중증이고, 실신과 협심증이 있다. 증상이 있는 중증 대동맥판 협착은 박출률과 관계없이 대동맥판 치환(수술 또는 경피적 TAVI)의 적응증이다.\n- 원리: <b>왜 증상이 나타나면 급한가</b>: 대동맥판 협착은 수십 년 동안 좌심실이 두꺼워지며(압력 과부하에 대한 동심성 비대) 증상 없이 버틴다. 그러나 협심증·실신·심부전이 나타나면 보상이 한계에 이른 것이고, 치료하지 않으면 평균 생존이 각각 약 5·3·2년으로 급격히 짧아진다.<br> <b>증상의 기전</b>: 협심증은 비대한 심근의 산소 요구가 늘고 높은 확장기압이 관상동맥 관류를 누르기 때문이다. 운동 중 실신은 좁은 판막 때문에 심박출량을 늘리지 못하는데 운동하는 근육의 혈관은 확장되어 혈압이 떨어지기 때문이다.<br> <b>약으로 안 되는 이유</b>: 문제는 기계적 폐쇄라서 약이 판막 면적을 넓히지 못한다. 오히려 혈관확장제나 강한 음성 변력제는 고정된 박출에서 혈압을 떨어뜨려 실신을 부를 수 있다. 치환 방법은 나이·수술 위험으로 정하는데, 고령·고위험일수록 경피적 대동맥판 치환(TAVI)을 고른다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">대동맥판 치환(정답)</th><th>심초음파 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>있음(실신·협심증·호흡곤란)</b></td><td>없음</td></tr> <tr><td>중증도</td><td>면적 &lt; 1.0 cm², 평균 압력차 ≥ 40 mmHg</td><td>중증이라도 무증상·박출률 정상</td></tr> <tr><td>박출률</td><td>무관</td><td>50% 미만이면 무증상이라도 치환</td></tr> <tr><td>이 환자</td><td><b>운동 중 실신 + 협심증</b></td><td>—</td></tr> </tbody></table> <b>무증상 중증</b>이면 6~12개월 추적이 기본이지만 <b>증상 한 가지</b>가 생기면 치환으로 넘어간다. 풍선 성형술은 성인 석회화 협착에서 효과가 짧아 치환까지의 다리 역할만 한다.\n- 오답 이유:\n  - ① 풍선 대동맥판성형술은 성인 석회화 협착에서 재협착이 빨라 수술·TAVI 전의 일시적 다리로만 쓴다. 판막이 유연한 소아·청소년 선천성 협착이었다면 일차 치료가 된다.\n  - ③ 베타차단제는 폐쇄성 비대심근병증의 좌심실 유출로 폐쇄를 줄이는 데 쓴다. 대동맥판 협착의 고정된 폐쇄는 줄이지 못하고 박출량을 더 떨어뜨릴 수 있어, 비대심근병증이었다면 적절하다.\n  - ④ 니트로글리세린은 관상동맥질환의 협심증에 쓰지만 중증 대동맥판 협착에서는 전부하를 낮춰 심한 저혈압과 실신을 부를 수 있다. 협착이 없는 안정 협심증이었다면 적절하다.\n  - ⑤ 심초음파 추적은 증상이 없고 박출률이 정상인 중증 대동맥판 협착의 관리다. 이 환자는 실신과 협심증이 있어 추적으로 미루면 사망 위험이 크며, 무증상이었다면 정답이 된다.\n- 함정: 박출률 60% 에 안심하지 않는다 — 증상이 있는 중증 대동맥판 협착은 박출률과 관계없이 치환이다.\n- 학습목표: 증상이 있는 중증 대동맥판 협착은 판막 치환의 적응증임을 알고, 약물이나 추적 관찰로 미루지 않는다\n- 근거·출처: Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72 · Harrison's Principles of Internal Medicine, 21st ed. — aortic valve disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "석회화된 대동맥판 협착으로 판막 면적 1.0 cm² 미만·평균 압력차 40 mmHg 이상의 중증이고, 실신과 협심증이 있다. 증상이 있는 중증 대동맥판 협착은 박출률과 관계없이 대동맥판 치환(수술 또는 경피적 TAVI)의 적응증이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 증상이 나타나면 급한가</b>: 대동맥판 협착은 수십 년 동안 좌심실이 두꺼워지며(압력 과부하에 대한 동심성 비대) 증상 없이 버틴다. 그러나 협심증·실신·심부전이 나타나면 보상이 한계에 이른 것이고, 치료하지 않으면 평균 생존이 각각 약 5·3·2년으로 급격히 짧아진다.<br> <b>증상의 기전</b>: 협심증은 비대한 심근의 산소 요구가 늘고 높은 확장기압이 관상동맥 관류를 누르기 때문이다. 운동 중 실신은 좁은 판막 때문에 심박출량을 늘리지 못하는데 운동하는 근육의 혈관은 확장되어 혈압이 떨어지기 때문이다.<br> <b>약으로 안 되는 이유</b>: 문제는 기계적 폐쇄라서 약이 판막 면적을 넓히지 못한다. 오히려 혈관확장제나 강한 음성 변력제는 고정된 박출에서 혈압을 떨어뜨려 실신을 부를 수 있다. 치환 방법은 나이·수술 위험으로 정하는데, 고령·고위험일수록 경피적 대동맥판 치환(TAVI)을 고른다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">대동맥판 치환(정답)</th><th>심초음파 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>증상</td><td><b>있음(실신·협심증·호흡곤란)</b></td><td>없음</td></tr> <tr><td>중증도</td><td>면적 &lt; 1.0 cm², 평균 압력차 ≥ 40 mmHg</td><td>중증이라도 무증상·박출률 정상</td></tr> <tr><td>박출률</td><td>무관</td><td>50% 미만이면 무증상이라도 치환</td></tr> <tr><td>이 환자</td><td><b>운동 중 실신 + 협심증</b></td><td>—</td></tr> </tbody></table> <b>무증상 중증</b>이면 6~12개월 추적이 기본이지만 <b>증상 한 가지</b>가 생기면 치환으로 넘어간다. 풍선 성형술은 성인 석회화 협착에서 효과가 짧아 치환까지의 다리 역할만 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 풍선 대동맥판성형술은 성인 석회화 협착에서 재협착이 빨라 수술·TAVI 전의 일시적 다리로만 쓴다. 판막이 유연한 소아·청소년 선천성 협착이었다면 일차 치료가 된다.\n③ 베타차단제는 폐쇄성 비대심근병증의 좌심실 유출로 폐쇄를 줄이는 데 쓴다. 대동맥판 협착의 고정된 폐쇄는 줄이지 못하고 박출량을 더 떨어뜨릴 수 있어, 비대심근병증이었다면 적절하다.\n④ 니트로글리세린은 관상동맥질환의 협심증에 쓰지만 중증 대동맥판 협착에서는 전부하를 낮춰 심한 저혈압과 실신을 부를 수 있다. 협착이 없는 안정 협심증이었다면 적절하다.\n⑤ 심초음파 추적은 증상이 없고 박출률이 정상인 중증 대동맥판 협착의 관리다. 이 환자는 실신과 협심증이 있어 추적으로 미루면 사망 위험이 크며, 무증상이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "박출률 60% 에 안심하지 않는다 — 증상이 있는 중증 대동맥판 협착은 박출률과 관계없이 치환이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상이 있는 중증 대동맥판 협착은 판막 치환의 적응증임을 알고, 약물이나 추적 관찰로 미루지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72 · Harrison's Principles of Internal Medicine, 21st ed. — aortic valve disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "판막 면적 0.7 cm²·평균 압력차 52 mmHg 의 중증 대동맥판 협착에 실신과 협심증이 있으므로 대동맥판 치환이 필요하다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "심초음파 추적은 무증상 중증일 때이고 이 환자는 운동 중 실신과 협심증이 있다",
+   "steps": 2,
+   "chain": [
+    "목동맥으로 퍼지는 늦은 최고조 수축기 잡음 + 판막 면적 0.7 cm²·평균 압력차 52 mmHg → 중증 대동맥판 협착",
+    "운동 중 실신 + 협심증 → 증상 있는 중증 → 대동맥판 치환"
+   ],
+   "key": [
+    {
+     "item": "판막 면적 0.7 cm²",
+     "why": "1.0 cm² 미만 — 중증",
+     "also": []
+    },
+    {
+     "item": "평균 압력차 52 mmHg",
+     "why": "40 mmHg 이상 — 중증",
+     "also": []
+    },
+    {
+     "item": "계단을 오르다 잠시 의식을 잃고 쓰러진",
+     "why": "운동 중 실신 — 증상이 있다",
+     "also": []
+    },
+    {
+     "item": "걸을 때 가슴이 조이는 느낌",
+     "why": "협심증 — 증상이 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "좌심실 박출률 60%",
+     "why": "좌심실 기능 저하 가능성을 낮추지만 증상이 있어 치환 결정은 같다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "목동맥 맥박은 느리게 올라오고 약하다",
+     "why": "중증을 시사하는 진찰 소견 — 심초음파가 이미 확정",
+     "also": []
+    }
+   ],
+   "summary": "판막 면적 0.7 cm²·평균 압력차 52 mmHg 의 중증 대동맥판 협착이고 운동 중 실신과 협심증이 있다. 증상이 있는 중증이므로 박출률과 관계없이 대동맥판 치환을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "증상이 없고 운동부하 검사도 정상이며 박출률이 정상이었다면 6개월 뒤 심초음파 추적이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20260930T202141Z_일일영상_2026-10-01_12units_12q_92d36040",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0169",
   "exam": "imaging",
   "style": "usmle_style",
