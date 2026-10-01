@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3185,
+  "total": 3197,
   "byType": {
    "kmle": 1248,
    "concept": 91,
    "anatomy": 770,
    "usmle": 174,
+   "imaging": 200,
    "paper": 697,
-   "imaging": 188,
    "ailab": 14,
    "basic": 3
   },
@@ -38,38 +38,38 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 80,
    "Hematology": 75,
    "Laboratory Medicine": 69,
-   "산부인과": 35,
+   "산부인과": 38,
    "Physiology": 20,
-   "순환기": 17,
+   "순환기": 19,
    "Pharmacology": 14,
    "Biochemistry": 13,
    "Microbiology": 13,
-   "병리·조직학": 12,
-   "호흡기": 12,
+   "병리·조직학": 13,
+   "호흡기": 13,
    "소화기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
    "소아과": 10,
+   "내분비": 9,
    "감염": 8,
-   "내분비": 8,
    "신경": 8,
+   "신장·비뇨기": 8,
    "응급·중환자": 8,
    "피부과": 8,
    "혈액·종양": 8,
-   "신장·비뇨기": 7,
    "예방의학·역학": 7,
    "외과": 7,
    "근골격·류마티스": 5,
+   "약리": 5,
+   "정신과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "약리": 4,
-   "정신과": 4,
+   "이비인후과": 4,
    "Oncology": 3,
    "안과": 3,
    "영상의학": 3,
-   "이비인후과": 3,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2152,
+   "high": 2164,
    "low": 50,
    "medium": 983
   },
-  "tagCount": 4467
+  "tagCount": 4469
  },
  "docs": [
   {
@@ -857,6 +857,214 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0182.md",
    "snippet": "An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within",
    "text": "Pharmacology Two Faints in a Week and a Pulse of 42 in an 81-Year-Old Four Weeks After a Dementia Drug Was Started donepezil cholinesterase-inhibitor muscarinic-M2 sinus-bradycardia syncope alzheimer-disease adverse-drug-effect USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology 15e Ch 6–7 Cholinoceptor-Activating & Cholinesterase-Inhibiting Drugs; Goodman & Gilman's The Pharmacological Basis of Therapeutics 14e (anticholinesterase agents); Harrison's Principles of Internal Medicine 21e Ch 244 The Bradyarrhythmias: Disorders of the Sinoatrial Node) An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within a minute and was not confused afterward; there was no tongue biting or incontinence. She has Alzheimer disease, and donepezil was started 4 weeks ago. Since then she has had nausea, two or three loose stools daily and vivid dreams. She has had hypertension treated with amlodipine for 8 years and hypothyroidism treated with levothyroxine; the doses have not changed in the past year. She takes no other medications. Her vital signs are shown; there is no orthostatic change in blood pressure. She is oriented to person and place. The lungs are clear to auscultation. Cardiac examination shows a regular rhythm and no murmurs. There is no peripheral edema. Laboratory studies are shown. An ECG is shown. Which of the following mechanisms most likely explains this patient's episodes of syncope? A. Blockade of L type calcium channels in sinoatrial nodal cells B. Increased acetylcholine acting on M2 receptors in the sinoatrial node C. Fibrotic degeneration of the sinoatrial node and conduction system D. Arteriolar vasodilation reducing cerebral perfusion pressure E. Insufficient thyroid hormone decreasing sinoatrial automaticity 짧은 의식 소실이 두 번 있었고 맥박 42, 심전도는 규칙적인 동서맥이며 기립 혈압 변화가 없다 — 서맥이 뇌 관류를 떨어뜨린 실신이다. 서맥은 4주 전 donepezil(가역적 아세틸콜린에스테라제 억제제)을 시작한 뒤에 생겼고, 같은 시기의 구역·묽은 변·생생한 꿈은 아세틸콜린 증가의 콜린성 부작용이다. 콜린에스테라제 억제제는 중추뿐 아니라 말초에서도 아세틸콜린을 늘려 동방결절의 M2 무스카린 수용체(Gi)를 자극한다 — Gβγ 가 GIRK(IK,ACh) 칼륨 통로를 열어 세포를 과분극시키고 cAMP 저하로 If·L형 칼슘 전류가 줄어 4상 탈분극이 느려진다(음성 변시). 8년째 같은 용량의 amlodipine 은 혈관 선택적 디하이드로피리딘이라 동방결절을 거의 억제하지 않고, TSH 정상은 갑상선 기능 저하에 의한 서맥 가능성을 낮춘다."
+  },
+  {
+   "id": "imaging-2026-0201",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 자세를 바꿀 때 생기는 짧은 어지럼",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0201.md",
+   "snippet": "A 58 year old woman comes to the physician because of brief episodes of spinning dizziness for 1 week. Each episode lasts less than 1 minute and occurs when she rolls over to the right in bed or looks up to reach a shelf. She has no hearing",
+   "text": "이비인후과 이비인후과 — 자세를 바꿀 때 생기는 짧은 어지럼 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 58 year old woman comes to the physician because of brief episodes of spinning dizziness for 1 week. Each episode lasts less than 1 minute and occurs when she rolls over to the right in bed or looks up to reach a shelf. She has no hearing loss, tinnitus, ear fullness, headache, or weakness. She has hypertension treated with lisinopril. Her blood pressure is 134/82 mm Hg without orthostatic change. Otoscopic examination is normal. Neurologic examination shows no focal findings, and her gait is normal. When she is moved from sitting to supine with the head turned 45 degrees to the right and extended, upbeating torsional nystagmus with the upper pole beating toward the right ear appears after a latency of 5 seconds, lasts 20 seconds, and diminishes with repetition. Which of the following is the most appropriate next step in management? A. Canalith repositioning maneuver B. Oral meclizine for 2 weeks C. MRI of the brain D. Oral prednisone taper E. Intratympanic gentamicin injection"
+  },
+  {
+   "id": "imaging-2026-0200",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 두 가지 항정신병약에 반응하지 않는 조현병",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0200.md",
+   "snippet": "27세 남자가 조현병 치료를 위해 보호자와 함께 왔다. 5년 전 조현병을 진단받았다. 리스페리돈 6 mg/일을 8주, 그다음 올란자핀 20 mg/일을 8주 복용하였고 두 번 모두 혈중 농도로 복약을 확인하였다. 그래도 「이웃이 나를 감시한다」는 피해망상과 자신을 비난하는 환청이 지속되어 지난달 자해 시도를 하였다. 우울 삽화나 물질 사용은 없다. 활력징후는 정상이다. 혈액검사에서 백혈구 7,800/µL, 절대호중구수 4,200",
+   "text": "정신과 정신 — 두 가지 항정신병약에 반응하지 않는 조현병 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 27세 남자가 조현병 치료를 위해 보호자와 함께 왔다. 5년 전 조현병을 진단받았다. 리스페리돈 6 mg/일을 8주, 그다음 올란자핀 20 mg/일을 8주 복용하였고 두 번 모두 혈중 농도로 복약을 확인하였다. 그래도 「이웃이 나를 감시한다」는 피해망상과 자신을 비난하는 환청이 지속되어 지난달 자해 시도를 하였다. 우울 삽화나 물질 사용은 없다. 활력징후는 정상이다. 혈액검사에서 백혈구 7,800/µL, 절대호중구수 4,200/µL 이며 공복혈당과 심전도는 정상이다. 다음 약물로 가장 적절한 것은? A. 할로페리돌 B. 아리피프라졸 C. 탄산리튬 D. 플루옥세틴 E. 클로자핀"
+  },
+  {
+   "id": "imaging-2026-0199",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 전신마취 중 호기말 이산화탄소 급상승",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0199.md",
+   "snippet": "A 24 year old man is undergoing laparoscopic appendectomy under general anesthesia induced with propofol and succinylcholine and maintained with sevoflurane. He has no medical problems and has never had surgery. Forty minutes after inductio",
+   "text": "약리 약리 — 전신마취 중 호기말 이산화탄소 급상승 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 24 year old man is undergoing laparoscopic appendectomy under general anesthesia induced with propofol and succinylcholine and maintained with sevoflurane. He has no medical problems and has never had surgery. Forty minutes after induction, end tidal CO2 rises from 38 to 78 mm Hg despite doubling of minute ventilation. His jaw and limbs are rigid. His pulse is 142/min, blood pressure is 150/90 mm Hg, and temperature is 38.9°C and rising. Arterial blood gas analysis shows a pH of 7.12 and a PaCO2 of 84 mm Hg. Serum potassium concentration is 6.1 mEq/L. Sevoflurane is discontinued. The most appropriate pharmacotherapy for this condition acts by which of the following mechanisms? A. Agonism at central dopamine D2 receptors B. Antagonism at serotonin 5 HT2A receptors C. Competitive antagonism at nicotinic acetylcholine receptors D. Inhibition of cyclooxygenase in the hypothalamus E. Inhibition of calcium release through ryanodine receptors of the sarcoplasmic reticulum"
+  },
+  {
+   "id": "imaging-2026-0198",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 갑상샘중독 위기의 약물 순서",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0198.md",
+   "snippet": "35세 여자가 3일 전부터 생긴 고열, 심한 두근거림, 설사로 왔다. 1년 전 그레이브스병을 진단받았으나 2개월 전 스스로 약을 끊었다. 1주 전 인후염을 앓았다. 체온 39.6 ℃, 혈압 150/62 mmHg, 맥박 148회/분이며 불규칙하다. 의식이 혼미하고 안절부절못한다. 갑상샘은 미만성으로 커져 있고 잡음이 들리며 손떨림이 있다. 혈청 유리 T4 6.8 ng/dL(참고치 0.8~1.8), TSH 0.01 µIU/mL 미",
+   "text": "내분비 내분비·대사 — 갑상샘중독 위기의 약물 순서 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 35세 여자가 3일 전부터 생긴 고열, 심한 두근거림, 설사로 왔다. 1년 전 그레이브스병을 진단받았으나 2개월 전 스스로 약을 끊었다. 1주 전 인후염을 앓았다. 체온 39.6 ℃, 혈압 150/62 mmHg, 맥박 148회/분이며 불규칙하다. 의식이 혼미하고 안절부절못한다. 갑상샘은 미만성으로 커져 있고 잡음이 들리며 손떨림이 있다. 혈청 유리 T4 6.8 ng/dL(참고치 0.8~1.8), TSH 0.01 µIU/mL 미만이다. 심전도에서 빠른 심실 반응의 심방세동이 있다. 정맥 프로프라놀롤 투여를 시작하였다. 요오드 용액을 투여하기 전에 먼저 투여해야 하는 약물은? A. 콜레스티라민 B. 아세트아미노펜 C. 탄산리튬 D. 프로필티오우라실 E. 하이드로코티손"
+  },
+  {
+   "id": "imaging-2026-0197",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 건조 증상과 저칼륨혈증을 동반한 대사산증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0197.md",
+   "snippet": "A 38 year old woman comes to the physician because of fatigue and muscle weakness for 3 weeks. She has had dry eyes and dry mouth for 2 years. She takes no medications and has not had vomiting or diarrhea. Her blood pressure is 112/70 mm Hg",
+   "text": "신장·비뇨기 신장·비뇨 — 건조 증상과 저칼륨혈증을 동반한 대사산증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 38 year old woman comes to the physician because of fatigue and muscle weakness for 3 weeks. She has had dry eyes and dry mouth for 2 years. She takes no medications and has not had vomiting or diarrhea. Her blood pressure is 112/70 mm Hg. Examination shows bilateral parotid enlargement and proximal muscle weakness. Serum studies show: Na+ 139 mEq/L, K+ 2.8 mEq/L, Cl 114 mEq/L, HCO3 14 mEq/L, creatinine 0.8 mg/dL, and glucose 92 mg/dL. Arterial pH is 7.29. Urine studies show pH 6.8; Na+ 40 mEq/L, K+ 35 mEq/L, Cl 50 mEq/L; and no glucose. An x ray of the abdomen shows bilateral medullary nephrocalcinosis. Which of the following is the most likely underlying defect? A. Accumulation of unmeasured organic acids B. Impaired H+ secretion by alpha intercalated cells of the collecting duct C. Impaired bicarbonate reabsorption in the proximal tubule D. Deficiency of aldosterone action in the collecting duct E. Loss of bicarbonate from the gastrointestinal tract"
+  },
+  {
+   "id": "imaging-2026-0196",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 흉수 분석에서 삼출액 판정",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0196.md",
+   "snippet": "58세 남자가 3주 전부터 생긴 기침과 오른쪽 가슴 답답함으로 왔다. 30갑년 흡연자이고 최근 2개월 동안 체중이 4 kg 줄었다. 복용 중인 약은 없다. 체온 37.2 ℃, 혈압 132/80 mmHg, 맥박 88회/분, 호흡수 20회/분이다. 오른쪽 아래 가슴에서 타진상 둔탁음이 있고 호흡음이 감소되어 있다. 흉부 X선에서 오른쪽 중등도 흉수가 있다. 흉수천자 결과는 다음과 같다. 흉수: 단백 3.2 g/dL, LDH 260",
+   "text": "호흡기 호흡기 — 흉수 분석에서 삼출액 판정 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 58세 남자가 3주 전부터 생긴 기침과 오른쪽 가슴 답답함으로 왔다. 30갑년 흡연자이고 최근 2개월 동안 체중이 4 kg 줄었다. 복용 중인 약은 없다. 체온 37.2 ℃, 혈압 132/80 mmHg, 맥박 88회/분, 호흡수 20회/분이다. 오른쪽 아래 가슴에서 타진상 둔탁음이 있고 호흡음이 감소되어 있다. 흉부 X선에서 오른쪽 중등도 흉수가 있다. 흉수천자 결과는 다음과 같다. 흉수: 단백 3.2 g/dL, LDH 260 U/L, 포도당 95 mg/dL, pH 7.40, 백혈구 1,200/µL(림프구 70 %). 혈청: 단백 7.0 g/dL, LDH 300 U/L(정상 상한 250 U/L), 포도당 100 mg/dL. 이 흉수를 삼출액으로 판정하는 근거로 옳은 것은? A. 흉수 백혈구 수 B. 흉수/혈청 LDH 비 C. 흉수/혈청 단백 비 D. 흉수 포도당 농도 E. 흉수 pH"
+  },
+  {
+   "id": "imaging-2026-0195",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 하벽 심근경색에서 질산염 뒤 생긴 저혈압",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0195.md",
+   "snippet": "A 62 year old man is brought to the emergency department 1 hour after the onset of substernal chest pressure and diaphoresis. He has type 2 diabetes mellitus and hypertension. In the ambulance he received aspirin and sublingual nitroglyceri",
+   "text": "순환기 순환기 — 하벽 심근경색에서 질산염 뒤 생긴 저혈압 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 62 year old man is brought to the emergency department 1 hour after the onset of substernal chest pressure and diaphoresis. He has type 2 diabetes mellitus and hypertension. In the ambulance he received aspirin and sublingual nitroglycerin, after which his blood pressure decreased from 112/70 mm Hg to 78/50 mm Hg. On arrival, his pulse is 54/min and respirations are 18/min; oxygen saturation is 97% on room air. Jugular venous pressure is 12 cm H2O and rises with inspiration. The lungs are clear to auscultation. There are no murmurs. An ECG shows ST segment elevation in leads II, III, and aVF and in right precordial lead V4R. The cardiac catheterization laboratory has been activated. Which of the following is the most appropriate immediate intervention? A. Intravenous morphine B. Intravenous metoprolol C. Intravenous 0.9% saline bolus D. Intravenous furosemide E. Intravenous nitroglycerin infusion"
+  },
+  {
+   "id": "imaging-2026-0194",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 기계 승모판 환자의 심방세동 항응고",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0194.md",
+   "snippet": "68세 남자가 정기 진료를 위해 왔다. 10년 전 류마티스 승모판 협착으로 기계 승모판 치환술을 받았고 그 뒤 와파린을 복용하고 있다. 2주 전 두근거림으로 응급실에 갔다가 심방세동을 처음 진단받았다. 환자는 INR 검사가 번거로워 새로 나온 경구 항응고제로 바꾸고 싶어 한다. 출혈 병력은 없다. 혈압 128/76 mmHg, 맥박 82회/분, 불규칙하다. 청진에서 선명한 기계판막 소리가 들린다. 오늘 INR 은 2.9, 혈청 ",
+   "text": "순환기 순환기 — 기계 승모판 환자의 심방세동 항응고 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 68세 남자가 정기 진료를 위해 왔다. 10년 전 류마티스 승모판 협착으로 기계 승모판 치환술을 받았고 그 뒤 와파린을 복용하고 있다. 2주 전 두근거림으로 응급실에 갔다가 심방세동을 처음 진단받았다. 환자는 INR 검사가 번거로워 새로 나온 경구 항응고제로 바꾸고 싶어 한다. 출혈 병력은 없다. 혈압 128/76 mmHg, 맥박 82회/분, 불규칙하다. 청진에서 선명한 기계판막 소리가 들린다. 오늘 INR 은 2.9, 혈청 크레아티닌은 1.0 mg/dL 이다. 경흉부 심초음파에서 인공판막 기능은 정상이다. 항응고 치료로 가장 적절한 것은? A. 다비가트란으로 변경 B. 아스피린 단독으로 변경 C. 리바록사반과 아스피린 병용 D. 와파린 유지 E. 아픽사반으로 변경"
+  },
+  {
+   "id": "imaging-2026-0193",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 폐경 후 큰 난소 낭종의 악성 변화",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "gross"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0193.md",
+   "snippet": "A 65 year old woman comes to the physician because of lower abdominal pain and bloating for 2 months. She has had a 4 kg weight loss during this period. Menopause occurred at age 52 years. Abdominal examination shows a firm mass arising fro",
+   "text": "병리·조직학 병리·조직 — 폐경 후 큰 난소 낭종의 악성 변화 opendata usmle_style gross 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 65 year old woman comes to the physician because of lower abdominal pain and bloating for 2 months. She has had a 4 kg weight loss during this period. Menopause occurred at age 52 years. Abdominal examination shows a firm mass arising from the pelvis. Pelvic ultrasonography shows a 12 cm complex right adnexal mass with a solid nodule in its wall. Serum CA 125 concentration is 48 U/mL (N<35). At laparotomy, the right ovarian cyst ruptures during removal. The opened specimen is shown. Microscopic examination of the solid mural nodule shows an invasive malignant tumor. Which of the following is the most likely type of this malignancy? A. Squamous cell carcinoma B. Adenocarcinoma C. Papillary thyroid carcinoma D. Malignant melanoma E. Carcinoid tumor"
+  },
+  {
+   "id": "imaging-2026-0192",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 빠르게 커지는 외음부 융기 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "clinical_photo"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0192.md",
+   "snippet": "42세 여자가 6개월 전부터 점점 커지는 치구의 혹으로 왔다. 처음에는 쌀알만 한 돌기였는데 최근 2개월 동안 빠르게 커졌고 속옷에 닿으면 피가 묻는다. 통증이나 가려움은 심하지 않다. 흡연하지 않으며 1년 전 자궁경부 세포검사는 정상이었다. 체온 36.7 ℃, 혈압 120/76 mmHg 이다. 치구의 병변은 그림과 같다. 다른 외음부 피부·질·자궁경부 진찰은 정상이고 양쪽 서혜부에 만져지는 림프절은 없다. 다음 단계로 가장 ",
+   "text": "산부인과 부인과 — 빠르게 커지는 외음부 융기 종괴 opendata kmle_style clinical_photo 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 42세 여자가 6개월 전부터 점점 커지는 치구의 혹으로 왔다. 처음에는 쌀알만 한 돌기였는데 최근 2개월 동안 빠르게 커졌고 속옷에 닿으면 피가 묻는다. 통증이나 가려움은 심하지 않다. 흡연하지 않으며 1년 전 자궁경부 세포검사는 정상이었다. 체온 36.7 ℃, 혈압 120/76 mmHg 이다. 치구의 병변은 그림과 같다. 다른 외음부 피부·질·자궁경부 진찰은 정상이고 양쪽 서혜부에 만져지는 림프절은 없다. 다음 단계로 가장 적절한 것은? A. 3개월 뒤 재진찰 B. 병변 조직검사 C. 이미퀴모드 크림 도포 D. 냉동치료 E. 근치적 국소절제술"
+  },
+  {
+   "id": "imaging-2026-0191",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 폐경 후 질 출혈과 난소 종괴",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0191.md",
+   "snippet": "A 65 year old woman comes to the physician because of intermittent vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She also reports new tenderness of both breasts. She has hypertens",
+   "text": "산부인과 부인과 — 폐경 후 질 출혈과 난소 종괴 opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec A 65 year old woman comes to the physician because of intermittent vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She also reports new tenderness of both breasts. She has hypertension controlled with amlodipine. Her BMI is 24 kg/m2. Abdominal examination shows mild lower abdominal fullness. Pelvic examination shows a smooth, mobile, nontender right adnexal mass. There is no hirsutism, voice change, or clitoromegaly. Serum CA 125 concentration is 18 U/mL (N<35). Transvaginal ultrasonography shows a 9 cm, predominantly solid right ovarian mass with small cystic spaces and no ascites. A sagittal T2 weighted MRI of the pelvis is shown. Which of the following is the most likely diagnosis of the ovarian mass? A. Adult granulosa cell tumor B. Sertoli Leydig cell tumor C. High grade serous carcinoma D. Ovarian fibroma E. Dysgerminoma"
+  },
+  {
+   "id": "imaging-2026-0190",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 포상기태 뒤 폐 결절과 상승하는 β-hCG",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "confidence": "high",
+   "date": "2026-10-01",
+   "path": "content/imaging/2026/imaging-2026-0190.md",
+   "snippet": "31세 여자가 포상기태 추적 검사를 위해 왔다. 3개월 전 완전포상기태로 흡입소파술을 받았고 그 뒤 매주 혈청 β hCG 를 측정하였다. 최근 3주 동안 β hCG 는 4,200 → 6,800 → 9,600 mIU/mL 로 계속 올랐다. 질 출혈은 조금 있고 기침·객혈·두통은 없다. 항암치료를 받은 적이 없고 다음 임신을 원한다. 혈압 118/74 mmHg, 맥박 76회/분이다. 질경 검사에서 질 병변은 없다. 질초음파에서 자",
+   "text": "산부인과 산과 — 포상기태 뒤 폐 결절과 상승하는 β-hCG opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec 31세 여자가 포상기태 추적 검사를 위해 왔다. 3개월 전 완전포상기태로 흡입소파술을 받았고 그 뒤 매주 혈청 β hCG 를 측정하였다. 최근 3주 동안 β hCG 는 4,200 → 6,800 → 9,600 mIU/mL 로 계속 올랐다. 질 출혈은 조금 있고 기침·객혈·두통은 없다. 항암치료를 받은 적이 없고 다음 임신을 원한다. 혈압 118/74 mmHg, 맥박 76회/분이다. 질경 검사에서 질 병변은 없다. 질초음파에서 자궁근층에 지름 2 cm 의 혈류가 풍부한 병변이 있다. 뇌 MRI 와 복부 CT 는 정상이고, 흉부 CT 에서 결절은 모두 4개, 가장 큰 것이 1 cm 였다. 흉부 CT 의 한 단면은 그림과 같다. 치료로 가장 적절한 것은? A. 폐 결절 쐐기절제술 B. 두 번째 흡입소파술 C. 메토트렉세이트 단독 항암화학요법 D. EMA CO 복합 항암화학요법 E. 전자궁절제술"
   },
   {
    "id": "anatomy-daily-2026-10-01",

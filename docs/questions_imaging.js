@@ -2,6 +2,1604 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0193",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "병리·조직 — 폐경 후 큰 난소 낭종의 악성 변화",
+  "type": "병리·조직 — 폐경 후 큰 난소 낭종의 악성 변화",
+  "modality": "GROSS",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "A 65-year-old woman comes to the physician because of lower abdominal pain and bloating for 2 months. She has had a 4-kg weight loss during this period. Menopause occurred at age 52 years. Abdominal examination shows a firm mass arising from the pelvis. Pelvic ultrasonography shows a 12-cm complex right adnexal mass with a solid nodule in its wall. Serum CA 125 concentration is 48 U/mL (N<35). At laparotomy, the right ovarian cyst ruptures during removal. The opened specimen is shown. Microscopic examination of the solid mural nodule shows an invasive malignant tumor.",
+  "question": "Which of the following is the most likely type of this malignancy?",
+  "options": [
+   "Squamous cell carcinoma",
+   "Adenocarcinoma",
+   "Papillary thyroid carcinoma",
+   "Malignant melanoma",
+   "Carcinoid tumor"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The opened cyst (star) contains a mass of matted hair with bone fragments (arrow) — a mature cystic teratoma (dermoid cyst). Malignant transformation occurs in about 1–2 % of these tumors, mainly in postmenopausal women with large (>10 cm), rapidly growing cysts with a solid mural component. About 80 % of these malignancies are squamous cell carcinomas, arising from the squamous epithelium that lines the cyst.\n- 원리: <b>What the specimen shows</b>: a mature cystic teratoma is a benign germ cell tumor that differentiates into tissues of all three germ layers, but ectoderm dominates: the cyst wall is lined by <b>keratinizing squamous epithelium with skin adnexa</b> (hair follicles, sebaceous glands), so the lumen fills with sebum and hair. Bone and teeth (mesoderm) often sit in a raised nodule called the Rokitansky protuberance.<br> <b>Why the cancer is usually squamous</b>: malignancy arises from the most abundant tissue — the squamous lining — through the same steps as skin cancer, so about 80 % are squamous cell carcinomas, often in the Rokitansky nodule. Adenocarcinomas, sarcomas, melanomas, and carcinoids together make up the rest.<br> <b>Who is at risk</b>: age over 45, size over 10 cm, rapid growth, a solid enhancing wall nodule, and raised SCC antigen or CA 125. Rupture spills malignant cells and worsens prognosis — hence the attempt to remove these cysts intact.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Squamous cell carcinoma (answer)</th><th>Adenocarcinoma (closest rival)</th></tr></thead><tbody> <tr><td>Origin in the teratoma</td><td><b>Keratinizing squamous lining</b> — the dominant tissue</td><td>Glandular (respiratory or intestinal) elements</td></tr> <tr><td>Frequency among malignant transformations</td><td><b>About 80 %</b></td><td>About 5–10 %</td></tr> <tr><td>Typical marker</td><td>SCC antigen</td><td>CEA, CA 19-9</td></tr> <tr><td>Typical patient</td><td>Postmenopausal, cyst over 10 cm</td><td>Same age group, rarer</td></tr> </tbody></table> Ask \"which tissue is most abundant in a dermoid?\" and the answer follows: the skin-like lining becomes skin-type cancer.\n- 오답 이유:\n  - (B) Adenocarcinoma is the second most common malignant transformation, arising from glandular elements in the teratoma. It would be the answer if the nodule formed glands with mucin and was CEA positive, but it accounts for only a small minority.\n  - (C) Papillary thyroid carcinoma arises in struma ovarii, a teratoma composed mostly of thyroid tissue. It would fit a solid, brownish mass of thyroid follicles, sometimes with hyperthyroidism, rather than a hair-filled cyst.\n  - (D) Melanoma can arise from melanocytes in the teratoma's skin elements, but it is rare. It would be the answer if the nodule were pigmented and S100/SOX10 positive.\n  - (E) Carcinoid tumor arises in teratomas with intestinal or respiratory epithelium and can cause carcinoid syndrome without liver metastases. It fits a small yellow solid nodule with neuroendocrine markers, not an invasive keratinizing tumor.\n- 함정: Name the cyst first from the hair and bone; then the malignancy follows the dominant lining — squamous epithelium.\n- 학습목표: 털·뼈를 담은 성숙낭성기형종을 육안 표본으로 알아보고, 그 악성 변화의 가장 흔한 조직형이 편평세포암임을 안다\n- 근거·출처: Hackethal A et al. Squamous-cell carcinoma in mature cystic teratoma of the ovary: systematic review and analysis of published data. Lancet Oncol 2008;9:1173 · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — germ cell tumors of the ovary · PMC12780604 Figure 2 — 65세 여 증례 보고의 적출 표본 (teacher-only) · 작성자 판독(2026-10-02): 터져 열린 난소 낭종(별)과 털·뼈 조각이 엉킨 덩어리(화살표)\n\n## 출처\n- Unexpected Malignancy: Squamous Cell Carcinoma Arising in an Ovarian Mature Cystic Teratoma Diagnosed Postoperatively. Cureus. 2025 Dec 8;17(12):e98775. doi: 10.7759/cureus.98775 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The opened cyst (star) contains a mass of matted hair with bone fragments (arrow) — a mature cystic teratoma (dermoid cyst). Malignant transformation occurs in about 1–2 % of these tumors, mainly in postmenopausal women with large (>10 cm), rapidly growing cysts with a solid mural component. About 80 % of these malignancies are squamous cell carcinomas, arising from the squamous epithelium that lines the cyst."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What the specimen shows</b>: a mature cystic teratoma is a benign germ cell tumor that differentiates into tissues of all three germ layers, but ectoderm dominates: the cyst wall is lined by <b>keratinizing squamous epithelium with skin adnexa</b> (hair follicles, sebaceous glands), so the lumen fills with sebum and hair. Bone and teeth (mesoderm) often sit in a raised nodule called the Rokitansky protuberance.<br> <b>Why the cancer is usually squamous</b>: malignancy arises from the most abundant tissue — the squamous lining — through the same steps as skin cancer, so about 80 % are squamous cell carcinomas, often in the Rokitansky nodule. Adenocarcinomas, sarcomas, melanomas, and carcinoids together make up the rest.<br> <b>Who is at risk</b>: age over 45, size over 10 cm, rapid growth, a solid enhancing wall nodule, and raised SCC antigen or CA 125. Rupture spills malignant cells and worsens prognosis — hence the attempt to remove these cysts intact."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Squamous cell carcinoma (answer)</th><th>Adenocarcinoma (closest rival)</th></tr></thead><tbody> <tr><td>Origin in the teratoma</td><td><b>Keratinizing squamous lining</b> — the dominant tissue</td><td>Glandular (respiratory or intestinal) elements</td></tr> <tr><td>Frequency among malignant transformations</td><td><b>About 80 %</b></td><td>About 5–10 %</td></tr> <tr><td>Typical marker</td><td>SCC antigen</td><td>CEA, CA 19-9</td></tr> <tr><td>Typical patient</td><td>Postmenopausal, cyst over 10 cm</td><td>Same age group, rarer</td></tr> </tbody></table> Ask \"which tissue is most abundant in a dermoid?\" and the answer follows: the skin-like lining becomes skin-type cancer."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Adenocarcinoma is the second most common malignant transformation, arising from glandular elements in the teratoma. It would be the answer if the nodule formed glands with mucin and was CEA positive, but it accounts for only a small minority.\n(C) Papillary thyroid carcinoma arises in struma ovarii, a teratoma composed mostly of thyroid tissue. It would fit a solid, brownish mass of thyroid follicles, sometimes with hyperthyroidism, rather than a hair-filled cyst.\n(D) Melanoma can arise from melanocytes in the teratoma's skin elements, but it is rare. It would be the answer if the nodule were pigmented and S100/SOX10 positive.\n(E) Carcinoid tumor arises in teratomas with intestinal or respiratory epithelium and can cause carcinoid syndrome without liver metastases. It fits a small yellow solid nodule with neuroendocrine markers, not an invasive keratinizing tumor."
+   },
+   {
+    "k": "함정",
+    "v": "Name the cyst first from the hair and bone; then the malignancy follows the dominant lining — squamous epithelium."
+   },
+   {
+    "k": "학습목표",
+    "v": "털·뼈를 담은 성숙낭성기형종을 육안 표본으로 알아보고, 그 악성 변화의 가장 흔한 조직형이 편평세포암임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hackethal A et al. Squamous-cell carcinoma in mature cystic teratoma of the ovary: systematic review and analysis of published data. Lancet Oncol 2008;9:1173 · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — germ cell tumors of the ovary · PMC12780604 Figure 2 — 65세 여 증례 보고의 적출 표본 (teacher-only) · 작성자 판독(2026-10-02): 터져 열린 난소 낭종(별)과 털·뼈 조각이 엉킨 덩어리(화살표) ## 출처 Unexpected Malignancy: Squamous Cell Carcinoma Arising in an Ovarian Mature Cystic Teratoma Diagnosed Postoperatively. Cureus. 2025 Dec 8;17(12):e98775. doi: 10.7759/cureus.98775 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "털과 뼈를 담은 낭종은 성숙낭성기형종이고, 그 악성 변화는 가장 많은 조직인 편평 내막에서 생겨 편평세포암이 가장 흔하다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "선암은 기형종의 샘 성분에서 드물게 생기고, 편평세포암이 악성 변화의 약 80 % 다",
+   "steps": 2,
+   "chain": [
+    "영상: 열린 낭종 안의 엉킨 털과 뼈 조각 → 성숙낭성기형종",
+    "폐경 후·12 cm·벽 결절의 악성 변화 + 낭종 내막이 각질형 편평상피 → 편평세포암"
+   ],
+   "key": [
+    {
+     "item": "영상: 낭종에서 나온 엉킨 털과 뼈 조각",
+     "why": "세 배엽 조직 — 성숙낭성기형종",
+     "also": []
+    },
+    {
+     "item": "a solid nodule in its wall",
+     "why": "악성 변화가 잘 생기는 자리(로키탄스키 결절)",
+     "also": []
+    },
+    {
+     "item": "12-cm complex right adnexal mass",
+     "why": "10 cm 이상 — 악성 변화의 위험인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "A 65-year-old woman",
+     "why": "45세 이상 — 악성 변화의 위험인자",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum CA 125 concentration is 48 U/mL",
+     "why": "악성 변화에서 오를 수 있지만 조직형을 가르지 못한다",
+     "also": []
+    },
+    {
+     "item": "the right ovarian cyst ruptures during removal",
+     "why": "예후를 나쁘게 하지만 조직형과는 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "털과 뼈가 든 낭종은 성숙낭성기형종이다. 그 악성 변화는 편평 내막에서 생겨 약 80 % 가 편평세포암이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "종괴가 거의 갑상샘 여포 조직으로 이루어진 고형 종괴(난소갑상샘종)였다면 유두갑상샘암이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0193.jpg",
+   "caption": "Photograph of the opened surgical specimen — single-panel figure as published, star and arrow as in the original (PMC Open Access Subset, CC BY; no cropping or color change)",
+   "alt": "GROSS 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12780604/",
+   "asset_id": "PMC-PMC12780604_Figure2",
+   "text": "Unexpected Malignancy: Squamous Cell Carcinoma Arising in an Ovarian Mature Cystic Teratoma Diagnosed Postoperatively. Cureus. 2025 Dec 8;17(12):e98775. doi: 10.7759/cureus.98775 (CC BY) — Figure 2"
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0192",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "부인과 — 빠르게 커지는 외음부 융기 종괴",
+  "type": "부인과 — 빠르게 커지는 외음부 융기 종괴",
+  "modality": "CLINICAL_PHOTO",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-01",
+  "vignette": "42세 여자가 6개월 전부터 점점 커지는 치구의 혹으로 왔다. 처음에는 쌀알만 한 돌기였는데 최근 2개월 동안 빠르게 커졌고 속옷에 닿으면 피가 묻는다. 통증이나 가려움은 심하지 않다. 흡연하지 않으며 1년 전 자궁경부 세포검사는 정상이었다. 체온 36.7 ℃, 혈압 120/76 mmHg 이다. 치구의 병변은 그림과 같다. 다른 외음부 피부·질·자궁경부 진찰은 정상이고 양쪽 서혜부에 만져지는 림프절은 없다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "3개월 뒤 재진찰",
+   "병변 조직검사",
+   "이미퀴모드 크림 도포",
+   "냉동치료",
+   "근치적 국소절제술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 그림은 치구의 지름 3~4 cm 단발성 외장형 종괴로 표면이 울퉁불퉁하고 미란·출혈점이 있다. 빠르게 커지고 접촉 출혈이 있는 단발성 외음부 종괴는 외음부암(대부분 편평세포암)을 배제할 수 없다. 외음부 병변은 모양만으로 양성·악성을 가를 수 없으므로 치료 전에 병변의 대표 부위(가장자리 포함)를 펀치 또는 쐐기 조직검사해 진단과 침윤 깊이를 확인한다.\n- 원리: <b>왜 먼저 조직인가</b>: 외음부의 융기성 병변은 곤지름, 지루각화증, 피부섬유종, 외음부 상피내종양(VIN), 편평세포암이 모두 비슷하게 보일 수 있다. <b>치료가 진단을 지워 버린다</b> — 이미퀴모드·냉동치료로 표면을 없애면 침윤암이었을 때 침윤 깊이를 잴 수 없고 진단이 늦어진다.<br> <b>침윤 깊이가 치료를 정한다</b>: 외음부 편평세포암은 침윤 깊이 1 mm 이하(IA)이면 광범위 국소절제만, 1 mm 를 넘으면 서혜부 림프절 평가(감시림프절 또는 절제)를 더한다. 그래서 진단 생검은 병변 가운데의 괴사 부위가 아니라 <b>정상 피부와의 경계를 포함</b>해 깊이까지 얻도록 하고, 병변 전체를 미리 잘라 내지 않는다(절제연·림프절 계획이 어긋난다).<br> <b>조직검사를 해야 하는 외음부 병변</b>: 빠른 성장, 출혈·궤양, 단발성 비대칭 병변, 색소 변화, 폐경 후 새 병변, 곤지름 치료에 반응하지 않는 경우다. 이 환자는 앞의 세 가지를 모두 가진다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">조직검사(정답)</th><th>이미퀴모드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전제</td><td><b>진단이 확정되지 않은 의심 병변</b></td><td>임상적으로 전형적인 곤지름</td></tr> <tr><td>병변 모양</td><td>단발성·빠른 성장·출혈·궤양</td><td>여러 개의 작은 꽃양배추 모양 사마귀</td></tr> <tr><td>얻는 것</td><td>조직형·침윤 깊이 → 수술 범위 결정</td><td>면역 반응으로 HPV 병변 소실</td></tr> <tr><td>위험</td><td>작은 상처</td><td>암이면 진단 지연·병기 판정 불가</td></tr> </tbody></table> 곤지름처럼 보여도 단발성·출혈·빠른 성장이면 먼저 조직이다. 여러 개의 전형적인 작은 사마귀라면 국소 치료부터 할 수 있다.\n- 오답 이유:\n  - ① 경과 관찰은 작고 변화 없는 전형적 양성 병변(예: 피지낭종)에서나 가능하다. 2개월 사이 빠르게 커지고 출혈하는 병변을 미루면 침윤암의 진단이 늦어진다.\n  - ③ 이미퀴모드는 임상적으로 전형적인 곤지름이나 조직으로 확인된 VIN 에 쓴다. 여러 개의 작은 전형적 사마귀였다면 정답이 되지만, 출혈하는 단발성 종괴에서 진단 없이 쓰면 암을 놓친다.\n  - ④ 냉동치료는 작고 전형적인 곤지름을 파괴하는 방법이다. 조직을 남기지 않아 침윤 깊이를 알 수 없게 되므로, 조직으로 양성이 확인된 작은 병변에서만 적절하다.\n  - ⑤ 근치적 국소절제술은 조직검사로 침윤성 외음부암이 확인된 뒤 침윤 깊이에 따라 서혜부 림프절 처치와 함께 계획하는 치료다. 진단 전에 먼저 하면 절제연과 림프절 계획이 맞지 않는다.\n- 함정: 곤지름처럼 보인다고 바로 바르거나 얼리지 않는다 — 단발성·빠른 성장·출혈은 조직검사의 적응증이다.\n- 학습목표: 빠르게 커지고 출혈하는 외음부 단발성 종괴는 치료 전에 조직검사로 외음부암을 확인해야 함을 안다\n- 근거·출처: ACOG Practice Bulletin No. 224: Management of vulvar intraepithelial neoplasia / NCCN Vulvar Cancer (Squamous Cell Carcinoma) Guidelines 2024 · Olawaiye AB et al. FIGO staging for carcinoma of the vulva: 2021 revision. Int J Gynaecol Obstet 2021;155:43 · PMC12539858 Figure 1 — 42세 여 증례 보고의 임상 사진 (teacher-only) · 작성자 판독(2026-10-02): 치구의 약 3~4 cm 외장형 융기 종괴, 표면 울퉁불퉁·분홍·황백색, 미란·출혈점\n\n## 출처\n- HPV-independent vulvar squamous cell carcinoma: a case report and review of the literature. Einstein (Sao Paulo). 2025 Oct 13;23:eRC1482. doi: 10.31744/einstein_journal/2025RC1482 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림은 치구의 지름 3~4 cm 단발성 외장형 종괴로 표면이 울퉁불퉁하고 미란·출혈점이 있다. 빠르게 커지고 접촉 출혈이 있는 단발성 외음부 종괴는 외음부암(대부분 편평세포암)을 배제할 수 없다. 외음부 병변은 모양만으로 양성·악성을 가를 수 없으므로 치료 전에 병변의 대표 부위(가장자리 포함)를 펀치 또는 쐐기 조직검사해 진단과 침윤 깊이를 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 먼저 조직인가</b>: 외음부의 융기성 병변은 곤지름, 지루각화증, 피부섬유종, 외음부 상피내종양(VIN), 편평세포암이 모두 비슷하게 보일 수 있다. <b>치료가 진단을 지워 버린다</b> — 이미퀴모드·냉동치료로 표면을 없애면 침윤암이었을 때 침윤 깊이를 잴 수 없고 진단이 늦어진다.<br> <b>침윤 깊이가 치료를 정한다</b>: 외음부 편평세포암은 침윤 깊이 1 mm 이하(IA)이면 광범위 국소절제만, 1 mm 를 넘으면 서혜부 림프절 평가(감시림프절 또는 절제)를 더한다. 그래서 진단 생검은 병변 가운데의 괴사 부위가 아니라 <b>정상 피부와의 경계를 포함</b>해 깊이까지 얻도록 하고, 병변 전체를 미리 잘라 내지 않는다(절제연·림프절 계획이 어긋난다).<br> <b>조직검사를 해야 하는 외음부 병변</b>: 빠른 성장, 출혈·궤양, 단발성 비대칭 병변, 색소 변화, 폐경 후 새 병변, 곤지름 치료에 반응하지 않는 경우다. 이 환자는 앞의 세 가지를 모두 가진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">조직검사(정답)</th><th>이미퀴모드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>전제</td><td><b>진단이 확정되지 않은 의심 병변</b></td><td>임상적으로 전형적인 곤지름</td></tr> <tr><td>병변 모양</td><td>단발성·빠른 성장·출혈·궤양</td><td>여러 개의 작은 꽃양배추 모양 사마귀</td></tr> <tr><td>얻는 것</td><td>조직형·침윤 깊이 → 수술 범위 결정</td><td>면역 반응으로 HPV 병변 소실</td></tr> <tr><td>위험</td><td>작은 상처</td><td>암이면 진단 지연·병기 판정 불가</td></tr> </tbody></table> 곤지름처럼 보여도 단발성·출혈·빠른 성장이면 먼저 조직이다. 여러 개의 전형적인 작은 사마귀라면 국소 치료부터 할 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경과 관찰은 작고 변화 없는 전형적 양성 병변(예: 피지낭종)에서나 가능하다. 2개월 사이 빠르게 커지고 출혈하는 병변을 미루면 침윤암의 진단이 늦어진다.\n③ 이미퀴모드는 임상적으로 전형적인 곤지름이나 조직으로 확인된 VIN 에 쓴다. 여러 개의 작은 전형적 사마귀였다면 정답이 되지만, 출혈하는 단발성 종괴에서 진단 없이 쓰면 암을 놓친다.\n④ 냉동치료는 작고 전형적인 곤지름을 파괴하는 방법이다. 조직을 남기지 않아 침윤 깊이를 알 수 없게 되므로, 조직으로 양성이 확인된 작은 병변에서만 적절하다.\n⑤ 근치적 국소절제술은 조직검사로 침윤성 외음부암이 확인된 뒤 침윤 깊이에 따라 서혜부 림프절 처치와 함께 계획하는 치료다. 진단 전에 먼저 하면 절제연과 림프절 계획이 맞지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "곤지름처럼 보인다고 바로 바르거나 얼리지 않는다 — 단발성·빠른 성장·출혈은 조직검사의 적응증이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "빠르게 커지고 출혈하는 외음부 단발성 종괴는 치료 전에 조직검사로 외음부암을 확인해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACOG Practice Bulletin No. 224: Management of vulvar intraepithelial neoplasia / NCCN Vulvar Cancer (Squamous Cell Carcinoma) Guidelines 2024 · Olawaiye AB et al. FIGO staging for carcinoma of the vulva: 2021 revision. Int J Gynaecol Obstet 2021;155:43 · PMC12539858 Figure 1 — 42세 여 증례 보고의 임상 사진 (teacher-only) · 작성자 판독(2026-10-02): 치구의 약 3~4 cm 외장형 융기 종괴, 표면 울퉁불퉁·분홍·황백색, 미란·출혈점 ## 출처 HPV-independent vulvar squamous cell carcinoma: a case report and review of the literature. Einstein (Sao Paulo). 2025 Oct 13;23:eRC1482. doi: 10.31744/einstein_journal/2025RC1482 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "빠르게 커지고 출혈하는 단발성 외음부 종괴는 암을 배제할 수 없으므로 치료 전에 조직검사를 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "이미퀴모드는 전형적인 다발성 곤지름에 쓰고, 단발성·출혈·빠른 성장 병변은 조직이 먼저다",
+   "steps": 2,
+   "chain": [
+    "영상: 3~4 cm 단발성 외장형 종괴, 미란·출혈점 + 2개월 사이 빠른 성장 → 악성 가능성이 있는 병변",
+    "악성을 배제할 수 없는 외음부 병변 → 치료 전 조직검사로 조직형·침윤 깊이 확인"
+   ],
+   "key": [
+    {
+     "item": "영상: 표면이 울퉁불퉁하고 미란·출혈점이 있는 단발성 융기 종괴",
+     "why": "곤지름의 전형적 다발성 모양과 다르다",
+     "also": []
+    },
+    {
+     "item": "최근 2개월 동안 빠르게 커졌고",
+     "why": "조직검사 적응증 — 빠른 성장",
+     "also": []
+    },
+    {
+     "item": "속옷에 닿으면 피가 묻는다",
+     "why": "조직검사 적응증 — 접촉 출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "양쪽 서혜부에 만져지는 림프절은 없다",
+     "why": "병기에는 중요하지만 진단 순서를 바꾸지는 않는다",
+     "also": []
+    },
+    {
+     "item": "1년 전 자궁경부 세포검사는 정상",
+     "why": "HPV 관련 다발 병변의 단서가 없다 — 그래도 조직이 필요하다",
+     "also": []
+    },
+    {
+     "item": "통증이나 가려움은 심하지 않다",
+     "why": "증상이 약하다고 양성이라 할 수 없다",
+     "also": []
+    }
+   ],
+   "summary": "빠르게 커지고 출혈하는 단발성 외음부 종괴라 암을 배제할 수 없다. 치료 전에 경계를 포함한 조직검사로 진단과 침윤 깊이를 확인한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "조직검사 없이도 전형적인 여러 개의 작은 꽃양배추 모양 사마귀였다면 이미퀴모드 도포가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0192.jpg",
+   "caption": "임상 사진 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CLINICAL_PHOTO 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12539858/",
+   "asset_id": "PMC-PMC12539858_Figure1",
+   "text": "HPV-independent vulvar squamous cell carcinoma: a case report and review of the literature. Einstein (Sao Paulo). 2025 Oct 13;23:eRC1482. doi: 10.31744/einstein_journal/2025RC1482 (CC BY) — Figure 1"
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0191",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "부인과 — 폐경 후 질 출혈과 난소 종괴",
+  "type": "부인과 — 폐경 후 질 출혈과 난소 종괴",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "A 65-year-old woman comes to the physician because of intermittent vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She also reports new tenderness of both breasts. She has hypertension controlled with amlodipine. Her BMI is 24 kg/m2. Abdominal examination shows mild lower abdominal fullness. Pelvic examination shows a smooth, mobile, nontender right adnexal mass. There is no hirsutism, voice change, or clitoromegaly. Serum CA 125 concentration is 18 U/mL (N<35). Transvaginal ultrasonography shows a 9-cm, predominantly solid right ovarian mass with small cystic spaces and no ascites. A sagittal T2-weighted MRI of the pelvis is shown.",
+  "question": "Which of the following is the most likely diagnosis of the ovarian mass?",
+  "options": [
+   "Adult granulosa cell tumor",
+   "Sertoli-Leydig cell tumor",
+   "High-grade serous carcinoma",
+   "Ovarian fibroma",
+   "Dysgerminoma"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The MRI shows a markedly thickened, high-signal endometrium surrounded by dark myometrium (arrow) — endometrial proliferation in a woman 14 years after menopause without hormone therapy. Together with breast tenderness and a solid ovarian mass, this points to an estrogen-secreting sex cord–stromal tumor. Adult granulosa cell tumor is the most common estrogen-producing ovarian tumor, typically in perimenopausal and postmenopausal women; up to half have endometrial hyperplasia and some have endometrial carcinoma.\n- 원리: <b>Where the estrogen comes from</b>: granulosa cells normally convert theca-derived androgens to estradiol with aromatase (FSH-driven). A tumor of granulosa cells keeps doing this autonomously, so a postmenopausal woman suddenly has premenopausal-range estradiol. The <b>end organs respond</b>: the endometrium proliferates (hyperplasia, sometimes endometrioid carcinoma — 5–10 %), breasts become tender, and bleeding resumes.<br> <b>Reading the MRI</b>: on T2-weighted images the normal postmenopausal endometrium is a thin bright stripe (a few millimeters). Here it is a thick bright band filling the cavity inside the dark myometrium — the imaging sign of estrogen stimulation. The image therefore tells you what the tumor <b>does</b>, which is what separates it from tumors of similar size and texture.<br> <b>Why the others fail</b>: Sertoli-Leydig tumors make androgens (virilization). Fibromas are hormonally inactive (Meigs syndrome with ascites and effusion). Serous carcinoma is the most common ovarian malignancy at this age but usually has high CA 125 and ascites and does not stimulate the endometrium. Dysgerminoma is a young-woman germ cell tumor (LDH, hCG). Inhibin is the serum marker used to follow granulosa cell tumors after surgery.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Granulosa cell tumor (answer)</th><th>High-grade serous carcinoma (closest rival)</th></tr></thead><tbody> <tr><td>Hormone</td><td><b>Estrogen</b> — endometrial thickening, bleeding, breast tenderness</td><td>None</td></tr> <tr><td>Typical age</td><td>Peri- and postmenopausal (adult type)</td><td>Postmenopausal (60s)</td></tr> <tr><td>Imaging</td><td>Solid or solid-cystic mass, usually unilateral</td><td>Complex bilateral masses, ascites, peritoneal implants</td></tr> <tr><td>Marker</td><td>Inhibin, estradiol</td><td><b>CA 125 high in about 80 % of advanced cases</b></td></tr> </tbody></table> Both occur in 65-year-old women with an adnexal mass. The thick endometrium and normal CA 125 without ascites are what shift the answer from the most common malignancy to the hormonally active one.\n- 오답 이유:\n  - (B) Sertoli-Leydig cell tumors secrete androgens and cause hirsutism, deepening voice, and clitoromegaly, usually in women under 40. It would be the answer if this patient had new virilization instead of estrogen effects.\n  - (C) High-grade serous carcinoma is the most common ovarian malignancy at this age, but it typically presents with ascites, bilateral complex masses, and high CA 125, and it does not produce estrogen; it fits if CA 125 were markedly elevated with ascites.\n  - (D) Ovarian fibroma is a solid hormonally inactive stromal tumor; it can cause ascites and pleural effusion (Meigs syndrome). It would be the answer if the endometrium were thin and there were ascites with a right pleural effusion.\n  - (E) Dysgerminoma is a germ cell tumor of adolescents and young women, often with raised LDH and sometimes hCG. A 65-year-old with estrogen effects is far outside its usual setting; it fits a 20-year-old with a rapidly growing solid mass.\n- 함정: Do not default to the most common ovarian cancer at 65 — the thick endometrium is the clue that the tumor makes estrogen.\n- 학습목표: 에스트로겐을 만드는 난소 과립막세포종이 폐경 후 자궁내막 증식·출혈을 일으킴을 알고, 영상의 두꺼운 내막을 종양의 호르몬 효과로 연결한다\n- 근거·출처: Schumer ST, Cannistra SA. Granulosa cell tumor of the ovary. J Clin Oncol 2003;21:1180 · Williams Gynecology, 4th ed. — ovarian sex cord–stromal tumors · PMC9721141 Figure 2 — 65세 여 증례 보고의 골반 MRI (teacher-only) · 작성자 판독(2026-10-02): 시상면 T2 에서 저신호 근층 안에 두껍고 고신호인 자궁내막(화살표), 방광·직장 정상 위치\n\n## 출처\n- A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The MRI shows a markedly thickened, high-signal endometrium surrounded by dark myometrium (arrow) — endometrial proliferation in a woman 14 years after menopause without hormone therapy. Together with breast tenderness and a solid ovarian mass, this points to an estrogen-secreting sex cord–stromal tumor. Adult granulosa cell tumor is the most common estrogen-producing ovarian tumor, typically in perimenopausal and postmenopausal women; up to half have endometrial hyperplasia and some have endometrial carcinoma."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Where the estrogen comes from</b>: granulosa cells normally convert theca-derived androgens to estradiol with aromatase (FSH-driven). A tumor of granulosa cells keeps doing this autonomously, so a postmenopausal woman suddenly has premenopausal-range estradiol. The <b>end organs respond</b>: the endometrium proliferates (hyperplasia, sometimes endometrioid carcinoma — 5–10 %), breasts become tender, and bleeding resumes.<br> <b>Reading the MRI</b>: on T2-weighted images the normal postmenopausal endometrium is a thin bright stripe (a few millimeters). Here it is a thick bright band filling the cavity inside the dark myometrium — the imaging sign of estrogen stimulation. The image therefore tells you what the tumor <b>does</b>, which is what separates it from tumors of similar size and texture.<br> <b>Why the others fail</b>: Sertoli-Leydig tumors make androgens (virilization). Fibromas are hormonally inactive (Meigs syndrome with ascites and effusion). Serous carcinoma is the most common ovarian malignancy at this age but usually has high CA 125 and ascites and does not stimulate the endometrium. Dysgerminoma is a young-woman germ cell tumor (LDH, hCG). Inhibin is the serum marker used to follow granulosa cell tumors after surgery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Granulosa cell tumor (answer)</th><th>High-grade serous carcinoma (closest rival)</th></tr></thead><tbody> <tr><td>Hormone</td><td><b>Estrogen</b> — endometrial thickening, bleeding, breast tenderness</td><td>None</td></tr> <tr><td>Typical age</td><td>Peri- and postmenopausal (adult type)</td><td>Postmenopausal (60s)</td></tr> <tr><td>Imaging</td><td>Solid or solid-cystic mass, usually unilateral</td><td>Complex bilateral masses, ascites, peritoneal implants</td></tr> <tr><td>Marker</td><td>Inhibin, estradiol</td><td><b>CA 125 high in about 80 % of advanced cases</b></td></tr> </tbody></table> Both occur in 65-year-old women with an adnexal mass. The thick endometrium and normal CA 125 without ascites are what shift the answer from the most common malignancy to the hormonally active one."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Sertoli-Leydig cell tumors secrete androgens and cause hirsutism, deepening voice, and clitoromegaly, usually in women under 40. It would be the answer if this patient had new virilization instead of estrogen effects.\n(C) High-grade serous carcinoma is the most common ovarian malignancy at this age, but it typically presents with ascites, bilateral complex masses, and high CA 125, and it does not produce estrogen; it fits if CA 125 were markedly elevated with ascites.\n(D) Ovarian fibroma is a solid hormonally inactive stromal tumor; it can cause ascites and pleural effusion (Meigs syndrome). It would be the answer if the endometrium were thin and there were ascites with a right pleural effusion.\n(E) Dysgerminoma is a germ cell tumor of adolescents and young women, often with raised LDH and sometimes hCG. A 65-year-old with estrogen effects is far outside its usual setting; it fits a 20-year-old with a rapidly growing solid mass."
+   },
+   {
+    "k": "함정",
+    "v": "Do not default to the most common ovarian cancer at 65 — the thick endometrium is the clue that the tumor makes estrogen."
+   },
+   {
+    "k": "학습목표",
+    "v": "에스트로겐을 만드는 난소 과립막세포종이 폐경 후 자궁내막 증식·출혈을 일으킴을 알고, 영상의 두꺼운 내막을 종양의 호르몬 효과로 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Schumer ST, Cannistra SA. Granulosa cell tumor of the ovary. J Clin Oncol 2003;21:1180 · Williams Gynecology, 4th ed. — ovarian sex cord–stromal tumors · PMC9721141 Figure 2 — 65세 여 증례 보고의 골반 MRI (teacher-only) · 작성자 판독(2026-10-02): 시상면 T2 에서 저신호 근층 안에 두껍고 고신호인 자궁내막(화살표), 방광·직장 정상 위치 ## 출처 A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "호르몬 치료 없는 폐경 14년 차에 내막이 두껍게 증식하고 유방 압통이 있으므로 고형 난소 종괴는 에스트로겐을 만드는 과립막세포종이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "장액성 암은 CA 125 상승·복수가 흔하고 내막을 자극하지 않는다 — 이 환자는 CA 125 정상·복수 없음·두꺼운 내막이다",
+   "steps": 2,
+   "chain": [
+    "영상: 저신호 근층 안의 두껍고 고신호인 자궁내막 + 호르몬 치료 없음 + 유방 압통 → 내인성 에스트로겐 과다",
+    "에스트로겐 과다 + 폐경 후 고형 난소 종괴 → 성인형 과립막세포종"
+   ],
+   "key": [
+    {
+     "item": "영상: 저신호 근층 안에 두껍고 밝은 자궁내막",
+     "why": "폐경 후인데 내막이 증식했다 — 에스트로겐 효과",
+     "also": []
+    },
+    {
+     "item": "she has never taken hormone therapy",
+     "why": "외부 에스트로겐이 아니다 — 종양이 만든다",
+     "also": []
+    },
+    {
+     "item": "new tenderness of both breasts",
+     "why": "또 하나의 에스트로겐 표적기관 반응",
+     "also": []
+    },
+    {
+     "item": "predominantly solid right ovarian mass",
+     "why": "성삭간질 종양에 흔한 고형 종괴",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no hirsutism, voice change, or clitoromegaly",
+     "why": "안드로겐 종양(세르톨리-라이디히) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum CA 125 concentration is 18 U/mL",
+     "why": "진행성 장액성 암 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no ascites",
+     "why": "장액성 암·메이그스 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "hypertension controlled with amlodipine",
+     "why": "흔한 동반 질환 — 감별에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "폐경 후 호르몬 치료 없이 내막이 두껍고 유방 압통이 있어 에스트로겐 과다다. 고형 난소 종괴와 합치면 과립막세포종이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "내막은 얇고 새로 생긴 다모증·목소리 변화·음핵 비대가 있었다면 세르톨리-라이디히세포종이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0191.jpg",
+   "caption": "Sagittal T2-weighted MRI of the pelvis — single-panel figure as published, arrow as in the original (PMC Open Access Subset, CC BY; no cropping or color change)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9721141/",
+   "asset_id": "PMC-PMC9721141_Figure2",
+   "text": "A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 2"
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0190",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "산과 — 포상기태 뒤 폐 결절과 상승하는 β-hCG",
+  "type": "산과 — 포상기태 뒤 폐 결절과 상승하는 β-hCG",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-01",
+  "vignette": "31세 여자가 포상기태 추적 검사를 위해 왔다. 3개월 전 완전포상기태로 흡입소파술을 받았고 그 뒤 매주 혈청 β-hCG 를 측정하였다. 최근 3주 동안 β-hCG 는 4,200 → 6,800 → 9,600 mIU/mL 로 계속 올랐다. 질 출혈은 조금 있고 기침·객혈·두통은 없다. 항암치료를 받은 적이 없고 다음 임신을 원한다. 혈압 118/74 mmHg, 맥박 76회/분이다. 질경 검사에서 질 병변은 없다. 질초음파에서 자궁근층에 지름 2 cm 의 혈류가 풍부한 병변이 있다. 뇌 MRI 와 복부 CT 는 정상이고, 흉부 CT 에서 결절은 모두 4개, 가장 큰 것이 1 cm 였다. 흉부 CT 의 한 단면은 그림과 같다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "폐 결절 쐐기절제술",
+   "두 번째 흡입소파술",
+   "메토트렉세이트 단독 항암화학요법",
+   "EMA-CO 복합 항암화학요법",
+   "전자궁절제술"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 그림에서 양폐에 경계가 매끈한 작은 결절이 여러 개 보인다(화살표) — 포상기태 뒤 β-hCG 가 3주 연속 오르므로 임신영양막종양(GTN)의 폐 전이이며 FIGO III 기다. 치료는 병기가 아니라 WHO 위험점수로 정한다: 나이 40세 미만 0, 선행 임신 포상기태 0, 간격 4개월 미만 0, 치료 전 hCG 10³~10⁴ 1, 최대 종양 3 cm 미만 0, 전이 부위 폐 0, 전이 수 1~4개 1, 이전 항암 실패 0 → 합계 2점, 저위험이다. 저위험 GTN 은 메토트렉세이트(또는 악티노마이신 D) 단독요법이 표준이고 완치율이 거의 100 %다.\n- 원리: <b>왜 조직검사 없이 치료하나</b>: 포상기태 뒤 GTN 은 β-hCG 만으로 진단한다(3주 이상 정체 또는 2주 이상 상승, 융모막암종 조직, 전이). 영양막 조직은 혈관이 매우 풍부해 폐·질 병변을 생검하면 대량 출혈이 날 수 있고, β-hCG 가 종양량을 거의 그대로 반영하는 표지자라서 조직 없이도 치료 반응을 정확히 추적할 수 있다.<br> <b>병기와 위험점수는 하는 일이 다르다</b>: FIGO 병기(I 자궁, II 골반, III 폐, IV 뇌·간 등)는 해부학적 범위를 말하고, WHO 예후점수는 <b>단일 약제에 내성일 가능성</b>을 말한다. 폐는 영양막 세포가 정맥을 타고 가장 먼저 걸리는 곳이라 폐 전이 자체는 0점이다. 점수를 올리는 것은 높은 hCG(10⁵ 이상 4점), 긴 간격(12개월 이상 4점), 뇌·간 전이(4점), 많은 전이 수(8개 초과 4점), 만삭 임신 뒤 발생, 이전 항암 실패다.<br> <b>그래서</b> 0~6점은 메토트렉세이트 단독, 7점 이상은 EMA-CO 같은 복합요법이다. 단독요법이 실패해도 2차 약제로 거의 모두 완치되므로, 처음부터 독성이 큰 복합요법을 쓰지 않는다. 자궁을 남길 수 있어 임신을 원하는 환자에게도 맞다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">메토트렉세이트 단독(정답)</th><th>EMA-CO 복합요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>WHO 점수</td><td><b>0~6점(저위험)</b> — 이 환자 2점</td><td>7점 이상(고위험)</td></tr> <tr><td>전형적 상황</td><td>포상기태 뒤 짧은 간격, hCG 10⁵ 미만, 폐 전이 소수</td><td>만삭 뒤 융모막암종, 뇌·간 전이, hCG 10⁵ 이상</td></tr> <tr><td>독성</td><td>구내염·간효소 상승 정도</td><td>골수억제·탈모·이차 백혈병 위험</td></tr> <tr><td>완치율</td><td>단독 실패 후 2차까지 포함해 거의 100 %</td><td>고위험군에서 약 85~90 %</td></tr> </tbody></table> 「폐 전이 = III 기 = 강한 항암」이라는 연결이 함정이다. III 기라도 점수가 낮으면 단독요법이고, I 기라도 점수가 7 이상이면 복합요법이다.\n- 오답 이유:\n  - ① 폐 결절 절제는 항암에 끝까지 남는 약제 내성 단일 병소를 없애는 구제 수술이다. 첫 치료에서 항암 없이 폐를 절제하면 다른 미세 전이가 남는다.\n  - ② 두 번째 소파술은 자궁강 안 잔여 조직이 원인인 일부 저위험 예에서 논의되지만, 이미 폐 전이가 있는 GTN 의 표준 치료가 아니고 자궁 천공·출혈 위험만 더한다.\n  - ④ EMA-CO 는 WHO 점수 7점 이상 고위험 GTN 의 표준이다. 이 환자가 hCG 10⁵ 이상이거나 전이가 8개를 넘었거나 간·뇌 전이가 있었다면 정답이 된다.\n  - ⑤ 자궁절제술은 임신을 더 원하지 않는 저위험 비전이 GTN 에서 항암 횟수를 줄이려 고려하거나, 조절되지 않는 자궁 출혈·약제 내성 자궁 병변에 쓴다. 임신을 원하고 폐 전이가 있는 이 환자의 일차 치료가 아니다.\n- 함정: 폐 전이를 보고 복합 항암·수술로 가지 않는다 — WHO 점수를 세면 2점, 저위험이다.\n- 학습목표: 포상기태 뒤 β-hCG 가 상승하면 임신영양막종양으로 진단하고, 폐 전이가 있어도 WHO 위험점수가 0~6 이면 메토트렉세이트 단독요법으로 치료한다\n- 근거·출처: Ngan HYS et al. Diagnosis and management of gestational trophoblastic disease: 2021 update. Int J Gynaecol Obstet 2021;155 Suppl 1:86 · NCCN Clinical Practice Guidelines in Oncology: Gestational Trophoblastic Neoplasia (2024) · PMC12133212 Figure 2 — 31세 여 증례 보고의 흉부 CT (teacher-only) · 작성자 판독(2026-10-02): 대동맥궁·기관 분기 높이 폐창에서 양폐에 경계 매끈한 작은 결절 여러 개, 흉수 없음\n\n## 출처\n- Rapid Progression of Molar Pregnancy to Choriocarcinoma With Pulmonary Metastases. Cureus. 2025 May 4;17(5):e83452. doi: 10.7759/cureus.83452 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 양폐에 경계가 매끈한 작은 결절이 여러 개 보인다(화살표) — 포상기태 뒤 β-hCG 가 3주 연속 오르므로 임신영양막종양(GTN)의 폐 전이이며 FIGO III 기다. 치료는 병기가 아니라 WHO 위험점수로 정한다: 나이 40세 미만 0, 선행 임신 포상기태 0, 간격 4개월 미만 0, 치료 전 hCG 10³~10⁴ 1, 최대 종양 3 cm 미만 0, 전이 부위 폐 0, 전이 수 1~4개 1, 이전 항암 실패 0 → 합계 2점, 저위험이다. 저위험 GTN 은 메토트렉세이트(또는 악티노마이신 D) 단독요법이 표준이고 완치율이 거의 100 %다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 조직검사 없이 치료하나</b>: 포상기태 뒤 GTN 은 β-hCG 만으로 진단한다(3주 이상 정체 또는 2주 이상 상승, 융모막암종 조직, 전이). 영양막 조직은 혈관이 매우 풍부해 폐·질 병변을 생검하면 대량 출혈이 날 수 있고, β-hCG 가 종양량을 거의 그대로 반영하는 표지자라서 조직 없이도 치료 반응을 정확히 추적할 수 있다.<br> <b>병기와 위험점수는 하는 일이 다르다</b>: FIGO 병기(I 자궁, II 골반, III 폐, IV 뇌·간 등)는 해부학적 범위를 말하고, WHO 예후점수는 <b>단일 약제에 내성일 가능성</b>을 말한다. 폐는 영양막 세포가 정맥을 타고 가장 먼저 걸리는 곳이라 폐 전이 자체는 0점이다. 점수를 올리는 것은 높은 hCG(10⁵ 이상 4점), 긴 간격(12개월 이상 4점), 뇌·간 전이(4점), 많은 전이 수(8개 초과 4점), 만삭 임신 뒤 발생, 이전 항암 실패다.<br> <b>그래서</b> 0~6점은 메토트렉세이트 단독, 7점 이상은 EMA-CO 같은 복합요법이다. 단독요법이 실패해도 2차 약제로 거의 모두 완치되므로, 처음부터 독성이 큰 복합요법을 쓰지 않는다. 자궁을 남길 수 있어 임신을 원하는 환자에게도 맞다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">메토트렉세이트 단독(정답)</th><th>EMA-CO 복합요법(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>WHO 점수</td><td><b>0~6점(저위험)</b> — 이 환자 2점</td><td>7점 이상(고위험)</td></tr> <tr><td>전형적 상황</td><td>포상기태 뒤 짧은 간격, hCG 10⁵ 미만, 폐 전이 소수</td><td>만삭 뒤 융모막암종, 뇌·간 전이, hCG 10⁵ 이상</td></tr> <tr><td>독성</td><td>구내염·간효소 상승 정도</td><td>골수억제·탈모·이차 백혈병 위험</td></tr> <tr><td>완치율</td><td>단독 실패 후 2차까지 포함해 거의 100 %</td><td>고위험군에서 약 85~90 %</td></tr> </tbody></table> 「폐 전이 = III 기 = 강한 항암」이라는 연결이 함정이다. III 기라도 점수가 낮으면 단독요법이고, I 기라도 점수가 7 이상이면 복합요법이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐 결절 절제는 항암에 끝까지 남는 약제 내성 단일 병소를 없애는 구제 수술이다. 첫 치료에서 항암 없이 폐를 절제하면 다른 미세 전이가 남는다.\n② 두 번째 소파술은 자궁강 안 잔여 조직이 원인인 일부 저위험 예에서 논의되지만, 이미 폐 전이가 있는 GTN 의 표준 치료가 아니고 자궁 천공·출혈 위험만 더한다.\n④ EMA-CO 는 WHO 점수 7점 이상 고위험 GTN 의 표준이다. 이 환자가 hCG 10⁵ 이상이거나 전이가 8개를 넘었거나 간·뇌 전이가 있었다면 정답이 된다.\n⑤ 자궁절제술은 임신을 더 원하지 않는 저위험 비전이 GTN 에서 항암 횟수를 줄이려 고려하거나, 조절되지 않는 자궁 출혈·약제 내성 자궁 병변에 쓴다. 임신을 원하고 폐 전이가 있는 이 환자의 일차 치료가 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "폐 전이를 보고 복합 항암·수술로 가지 않는다 — WHO 점수를 세면 2점, 저위험이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "포상기태 뒤 β-hCG 가 상승하면 임신영양막종양으로 진단하고, 폐 전이가 있어도 WHO 위험점수가 0~6 이면 메토트렉세이트 단독요법으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ngan HYS et al. Diagnosis and management of gestational trophoblastic disease: 2021 update. Int J Gynaecol Obstet 2021;155 Suppl 1:86 · NCCN Clinical Practice Guidelines in Oncology: Gestational Trophoblastic Neoplasia (2024) · PMC12133212 Figure 2 — 31세 여 증례 보고의 흉부 CT (teacher-only) · 작성자 판독(2026-10-02): 대동맥궁·기관 분기 높이 폐창에서 양폐에 경계 매끈한 작은 결절 여러 개, 흉수 없음 ## 출처 Rapid Progression of Molar Pregnancy to Choriocarcinoma With Pulmonary Metastases. Cureus. 2025 May 4;17(5):e83452. doi: 10.7759/cureus.83452 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "포상기태 뒤 β-hCG 상승과 폐 결절로 GTN III 기이지만 WHO 위험점수 2점의 저위험이므로 메토트렉세이트 단독요법이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "EMA-CO 는 WHO 점수 7점 이상일 때인데 이 환자는 hCG 10⁴ 미만·간격 3개월·전이 4개로 2점이다",
+   "steps": 3,
+   "chain": [
+    "영상: 양폐의 작은 결절 여러 개 + 포상기태 뒤 β-hCG 3주 연속 상승 → 임신영양막종양의 폐 전이(FIGO III)",
+    "WHO 점수 — hCG 10³~10⁴ 1점, 전이 4개 1점, 나머지 0점 → 2점, 저위험",
+    "저위험 + 임신 희망 → 메토트렉세이트 단독 항암화학요법"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 폐의 경계가 매끈한 작은 결절 여러 개",
+     "why": "혈행성 폐 전이 — GTN 이 가장 먼저 퍼지는 곳",
+     "also": []
+    },
+    {
+     "item": "4,200 → 6,800 → 9,600 mIU/mL 로 계속 올랐다",
+     "why": "포상기태 뒤 GTN 의 진단 기준이자 위험점수 1점(10³~10⁴)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "뇌 MRI 와 복부 CT 는 정상",
+     "why": "4점짜리 뇌·간 전이 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "3개월 전 완전포상기태",
+     "why": "선행 임신 포상기태·간격 4개월 미만 — 모두 0점",
+     "also": []
+    },
+    {
+     "item": "결절은 모두 4개, 가장 큰 것이 1 cm",
+     "why": "전이 수 1~4개 1점, 크기 3 cm 미만 0점",
+     "also": []
+    },
+    {
+     "item": "항암치료를 받은 적이 없고",
+     "why": "이전 항암 실패 점수 0",
+     "also": []
+    },
+    {
+     "item": "다음 임신을 원한다",
+     "why": "자궁을 남기는 항암 치료를 지지한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "지름 2 cm 의 혈류가 풍부한 병변",
+     "why": "자궁 병소 — 3 cm 미만이라 점수에 더하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "포상기태 뒤 β-hCG 가 오르고 폐에 결절이 있어 GTN III 기다. WHO 점수는 2점으로 저위험이라 메토트렉세이트 단독요법이 맞다.",
+   "switch": {
+    "choice": "D",
+    "condition": "β-hCG 가 15만 mIU/mL 이고 간 전이가 있어 WHO 점수가 7점 이상이었다면 EMA-CO 가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0190.jpg",
+   "caption": "흉부 CT 축상면 폐창 — 출판된 증례 그림 한 컷 그대로, 화살표는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12133212/",
+   "asset_id": "PMC-PMC12133212_Figure2",
+   "text": "Rapid Progression of Molar Pregnancy to Choriocarcinoma With Pulmonary Metastases. Cureus. 2025 May 4;17(5):e83452. doi: 10.7759/cureus.83452 (CC BY) — Figure 2"
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0201",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "이비인후과 — 자세를 바꿀 때 생기는 짧은 어지럼",
+  "type": "이비인후과 — 자세를 바꿀 때 생기는 짧은 어지럼",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-01",
+  "vignette": "A 58-year-old woman comes to the physician because of brief episodes of spinning dizziness for 1 week. Each episode lasts less than 1 minute and occurs when she rolls over to the right in bed or looks up to reach a shelf. She has no hearing loss, tinnitus, ear fullness, headache, or weakness. She has hypertension treated with lisinopril. Her blood pressure is 134/82 mm Hg without orthostatic change. Otoscopic examination is normal. Neurologic examination shows no focal findings, and her gait is normal. When she is moved from sitting to supine with the head turned 45 degrees to the right and extended, upbeating torsional nystagmus with the upper pole beating toward the right ear appears after a latency of 5 seconds, lasts 20 seconds, and diminishes with repetition.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Canalith repositioning maneuver",
+   "Oral meclizine for 2 weeks",
+   "MRI of the brain",
+   "Oral prednisone taper",
+   "Intratympanic gentamicin injection"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Brief positional vertigo with a positive right Dix-Hallpike test — latency, upbeating torsional nystagmus toward the lower (right) ear, duration under 1 minute, and fatigue with repetition — is right posterior canal benign paroxysmal positional vertigo. The treatment is a canalith repositioning (Epley) maneuver, which cures most patients in one or two sessions. Imaging and vestibular suppressants are not needed when the nystagmus is typical and the examination is otherwise normal.\n- 원리: <b>What is loose in the ear</b>: otoconia (calcium carbonate crystals) detach from the utricle and fall into the semicircular canal that sits lowest when lying down — the posterior canal. When the head moves in that canal's plane, the debris slides under gravity and drags endolymph, deflecting the cupula as if the head were still rotating.<br> <b>Why the nystagmus looks this way</b>: the latency is the time the crystals take to start moving; the short duration reflects how quickly they settle; fatigue occurs as they disperse. Stimulating the posterior canal excites the ipsilateral superior oblique and contralateral inferior rectus, producing <b>upbeating and torsional</b> nystagmus toward the lower ear. This exact pattern localizes the canal and the side.<br> <b>Why repositioning works</b>: the Epley maneuver turns the head through a sequence that moves the crystals along the canal and back into the utricle, where they no longer stimulate the cupula. Meclizine only blunts the vestibular signal and delays central compensation. Central positional nystagmus (no latency, no fatigue, pure downbeat or direction-changing, neurologic signs) is what requires MRI.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Peripheral BPPV — repositioning (answer)</th><th>Central positional vertigo — MRI (closest rival)</th></tr></thead><tbody> <tr><td>Latency</td><td><b>Few seconds</b></td><td>None</td></tr> <tr><td>Direction</td><td>Upbeat-torsional toward the lower ear</td><td>Pure downbeat or atypical direction</td></tr> <tr><td>Duration, fatigue</td><td><b>&lt; 1 minute, fatigues</b></td><td>Persists, does not fatigue</td></tr> <tr><td>Other signs</td><td>Normal neurologic examination</td><td>Ataxia, cranial nerve signs, severe headache</td></tr> </tbody></table> When every feature is typical, treat at the bedside. Any atypical feature — especially no fatigue or neurologic findings — moves imaging ahead of the maneuver.\n- 오답 이유:\n  - (B) Meclizine suppresses vestibular input and can ease nausea, but it does not move the canaliths and may slow central compensation. It is reserved for short-term relief of severe nausea during or after the maneuver, not as definitive treatment.\n  - (C) MRI of the brain is indicated for positional nystagmus with central features — no latency, no fatigue, pure downbeat nystagmus, or neurologic signs. With a typical posterior canal pattern and normal examination, imaging adds cost without changing management.\n  - (D) Prednisone is used for idiopathic sudden sensorineural hearing loss and sometimes vestibular neuritis, which causes continuous vertigo for days. It would fit acute persistent vertigo with spontaneous nystagmus, not brief positional episodes.\n  - (E) Intratympanic gentamicin chemically ablates vestibular function and is used for disabling Ménière disease with recurrent vertigo, fluctuating hearing loss, and tinnitus. It fits intractable Ménière disease, not BPPV.\n- 함정: Typical latency, upbeat-torsional direction, and fatigue make it peripheral BPPV — treat with repositioning, not drugs or MRI.\n- 학습목표: 잠복기·피로현상이 있는 회선성 상향 안진의 Dix-Hallpike 양성으로 후반고리관 양성 돌발성 두위현훈을 진단하고 입자정복술로 치료한다\n- 근거·출처: Bhattacharyya N et al. Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update). Otolaryngol Head Neck Surg 2017;156(3 Suppl):S1 · Kim JS, Zee DS. Clinical practice. Benign paroxysmal positional vertigo. N Engl J Med 2014;370:1138",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Brief positional vertigo with a positive right Dix-Hallpike test — latency, upbeating torsional nystagmus toward the lower (right) ear, duration under 1 minute, and fatigue with repetition — is right posterior canal benign paroxysmal positional vertigo. The treatment is a canalith repositioning (Epley) maneuver, which cures most patients in one or two sessions. Imaging and vestibular suppressants are not needed when the nystagmus is typical and the examination is otherwise normal."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What is loose in the ear</b>: otoconia (calcium carbonate crystals) detach from the utricle and fall into the semicircular canal that sits lowest when lying down — the posterior canal. When the head moves in that canal's plane, the debris slides under gravity and drags endolymph, deflecting the cupula as if the head were still rotating.<br> <b>Why the nystagmus looks this way</b>: the latency is the time the crystals take to start moving; the short duration reflects how quickly they settle; fatigue occurs as they disperse. Stimulating the posterior canal excites the ipsilateral superior oblique and contralateral inferior rectus, producing <b>upbeating and torsional</b> nystagmus toward the lower ear. This exact pattern localizes the canal and the side.<br> <b>Why repositioning works</b>: the Epley maneuver turns the head through a sequence that moves the crystals along the canal and back into the utricle, where they no longer stimulate the cupula. Meclizine only blunts the vestibular signal and delays central compensation. Central positional nystagmus (no latency, no fatigue, pure downbeat or direction-changing, neurologic signs) is what requires MRI."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Peripheral BPPV — repositioning (answer)</th><th>Central positional vertigo — MRI (closest rival)</th></tr></thead><tbody> <tr><td>Latency</td><td><b>Few seconds</b></td><td>None</td></tr> <tr><td>Direction</td><td>Upbeat-torsional toward the lower ear</td><td>Pure downbeat or atypical direction</td></tr> <tr><td>Duration, fatigue</td><td><b>&lt; 1 minute, fatigues</b></td><td>Persists, does not fatigue</td></tr> <tr><td>Other signs</td><td>Normal neurologic examination</td><td>Ataxia, cranial nerve signs, severe headache</td></tr> </tbody></table> When every feature is typical, treat at the bedside. Any atypical feature — especially no fatigue or neurologic findings — moves imaging ahead of the maneuver."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Meclizine suppresses vestibular input and can ease nausea, but it does not move the canaliths and may slow central compensation. It is reserved for short-term relief of severe nausea during or after the maneuver, not as definitive treatment.\n(C) MRI of the brain is indicated for positional nystagmus with central features — no latency, no fatigue, pure downbeat nystagmus, or neurologic signs. With a typical posterior canal pattern and normal examination, imaging adds cost without changing management.\n(D) Prednisone is used for idiopathic sudden sensorineural hearing loss and sometimes vestibular neuritis, which causes continuous vertigo for days. It would fit acute persistent vertigo with spontaneous nystagmus, not brief positional episodes.\n(E) Intratympanic gentamicin chemically ablates vestibular function and is used for disabling Ménière disease with recurrent vertigo, fluctuating hearing loss, and tinnitus. It fits intractable Ménière disease, not BPPV."
+   },
+   {
+    "k": "함정",
+    "v": "Typical latency, upbeat-torsional direction, and fatigue make it peripheral BPPV — treat with repositioning, not drugs or MRI."
+   },
+   {
+    "k": "학습목표",
+    "v": "잠복기·피로현상이 있는 회선성 상향 안진의 Dix-Hallpike 양성으로 후반고리관 양성 돌발성 두위현훈을 진단하고 입자정복술로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bhattacharyya N et al. Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update). Otolaryngol Head Neck Surg 2017;156(3 Suppl):S1 · Kim JS, Zee DS. Clinical practice. Benign paroxysmal positional vertigo. N Engl J Med 2014;370:1138"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "잠복기·피로현상·회선성 상향 안진의 전형적 Dix-Hallpike 양성이고 신경학 진찰이 정상이므로 오른쪽 후반고리관 BPPV 로 입자정복술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "뇌 MRI 는 잠복기·피로현상이 없거나 하향 안진·신경학 이상 같은 중추 소견이 있을 때인데 이 환자는 모두 전형적이다",
+   "steps": 2,
+   "chain": [
+    "자세 변화에 1분 미만 회전성 어지럼 + 우측 Dix-Hallpike 에서 잠복기·회선성 상향 안진·피로현상 → 우측 후반고리관 BPPV",
+    "신경학 진찰 정상·청력 증상 없음 → 영상 없이 입자정복술(Epley)"
+   ],
+   "key": [
+    {
+     "item": "after a latency of 5 seconds, lasts 20 seconds, and diminishes with repetition",
+     "why": "말초성 BPPV 의 전형적 시간 특성",
+     "also": []
+    },
+    {
+     "item": "upbeating torsional nystagmus with the upper pole beating toward the right ear",
+     "why": "우측 후반고리관을 가리키는 방향",
+     "also": []
+    },
+    {
+     "item": "occurs when she rolls over to the right in bed or looks up",
+     "why": "자세 유발성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Neurologic examination shows no focal findings, and her gait is normal",
+     "why": "중추성 어지럼 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has no hearing loss, tinnitus, ear fullness",
+     "why": "메니에르병·미로염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without orthostatic change",
+     "why": "기립성 저혈압에 따른 어지럼 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "hypertension treated with lisinopril",
+     "why": "흔한 동반 질환 — 처치에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "잠복기·피로현상이 있는 회선성 상향 안진의 전형적 우측 Dix-Hallpike 양성이고 신경학 진찰이 정상이다. 우측 후반고리관 BPPV 로 입자정복술을 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "잠복기 없이 순수 하향 안진이 피로현상 없이 지속되고 보행 실조가 있었다면 뇌 MRI 가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0200",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "정신 — 두 가지 항정신병약에 반응하지 않는 조현병",
+  "type": "정신 — 두 가지 항정신병약에 반응하지 않는 조현병",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-01",
+  "vignette": "27세 남자가 조현병 치료를 위해 보호자와 함께 왔다. 5년 전 조현병을 진단받았다. 리스페리돈 6 mg/일을 8주, 그다음 올란자핀 20 mg/일을 8주 복용하였고 두 번 모두 혈중 농도로 복약을 확인하였다. 그래도 「이웃이 나를 감시한다」는 피해망상과 자신을 비난하는 환청이 지속되어 지난달 자해 시도를 하였다. 우울 삽화나 물질 사용은 없다. 활력징후는 정상이다. 혈액검사에서 백혈구 7,800/µL, 절대호중구수 4,200/µL 이며 공복혈당과 심전도는 정상이다.",
+  "question": "다음 약물로 가장 적절한 것은?",
+  "options": [
+   "할로페리돌",
+   "아리피프라졸",
+   "탄산리튬",
+   "플루옥세틴",
+   "클로자핀"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 서로 다른 두 항정신병약을 충분한 용량으로 6주 이상, 복약 순응을 확인하고 썼는데도 양성 증상이 남았으므로 치료저항 조현병이다. 클로자핀은 치료저항 조현병에서 효과가 입증된 유일한 약이고 자살 행동도 줄인다. 무과립구증 위험이 있어 시작 전 절대호중구수(1,500/µL 이상)를 확인하고 정기적으로 감시한다.\n- 원리: <b>치료저항을 정하는 조건</b>: ① 서로 다른 항정신병약 두 가지 이상 ② 각각 충분한 용량(클로르프로마진 등가 600 mg 이상) ③ 각각 6주 이상 ④ 복약 순응 확인(혈중 농도·장기지속형 주사) ⑤ 그래도 중등도 이상의 증상이 남는다. 순응을 확인하지 않으면 「가짜 저항」을 클로자핀으로 치료하게 되므로 ④가 중요하다.<br> <b>클로자핀만 다른 이유</b>: 대부분의 항정신병약은 D2 수용체를 60~80 % 막아 효과를 내고, 이 범위에서 반응이 없으면 다른 D2 차단제로 바꿔도 반응률이 낮다(5 % 안팎). 클로자핀은 D2 결합이 약하고 5-HT2A·D4·무스카린·α 수용체 등 여러 수용체에 작용해 <b>D2 차단과 다른 기전</b>으로 약 30~60 % 가 반응한다. 자살 행동을 줄이는 근거(InterSePT)도 있다.<br> <b>대가와 감시</b>: 무과립구증(약 1 %), 심근염(초기 몇 주), 경련, 변비·장폐색, 체중 증가·대사 이상, 침 흘림. 그래서 시작 전 절대호중구수와 기저 심전도·혈당을 보고, 처음 6개월은 매주 호중구수를 확인한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">클로자핀(정답)</th><th>아리피프라졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>치료저항 조현병(두 약 실패 후)</b></td><td>1차 선택 또는 대사 부작용 때문에 바꿀 때</td></tr> <tr><td>기전</td><td>약한 D2 + 여러 수용체</td><td>D2 부분작용제</td></tr> <tr><td>두 약 실패 뒤 반응률</td><td><b>약 30~60 %</b></td><td>5 % 안팎(다른 D2 계열로 바꿨을 때)</td></tr> <tr><td>감시</td><td>절대호중구수 정기 검사</td><td>특별한 혈액 감시 없음</td></tr> </tbody></table> 세 번째 D2 약으로 바꾸고 싶어지지만, 두 약을 제대로 써서 실패했다면 다음은 기전이 다른 클로자핀이다. 자해 시도는 클로자핀을 더 서두를 이유다.\n- 오답 이유:\n  - ① 할로페리돌은 강력한 D2 차단제로 급성 초조나 1차 치료에 쓸 수 있다. 두 약 실패 뒤 세 번째 D2 차단제로 바꾸면 반응률이 낮고 추체외로 부작용이 커서, 클로자핀을 쓸 수 없을 때나 고려한다.\n  - ② 아리피프라졸은 체중·대사 부작용이 적어 1차로 쓰거나 부작용 때문에 바꿀 때 좋은 선택이다. 첫 번째 약이 부작용으로 실패한 경우라면 정답이 되지만, 두 약에 효과가 없는 치료저항에는 반응률이 낮다.\n  - ③ 탄산리튬은 양극성장애의 기분조절제이며 조현정동장애에서 보조로 쓴다. 이 환자는 우울·조증 삽화가 없어 기분 증상이 동반될 때만 의미가 있다.\n  - ④ 플루옥세틴은 항우울제로 조현병의 우울 증상이나 강박 증상이 함께 있을 때 보조로 쓴다. 망상·환청 같은 양성 증상에는 효과가 없어 동반 우울증이 뚜렷할 때만 고려한다.\n- 함정: 세 번째 D2 약으로 바꾸지 않는다 — 두 약을 제대로 써서 실패했으면 클로자핀이다.\n- 학습목표: 두 가지 항정신병약을 충분한 용량·기간 순응하여 써도 반응이 없는 치료저항 조현병에는 클로자핀을 쓴다\n- 근거·출처: Howes OD et al. Treatment-Resistant Schizophrenia: Treatment Response and Resistance in Psychosis (TRRIP) Working Group Consensus Guidelines. Am J Psychiatry 2017;174:216 · Meltzer HY et al. Clozapine treatment for suicidality in schizophrenia: InterSePT. Arch Gen Psychiatry 2003;60:82",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "서로 다른 두 항정신병약을 충분한 용량으로 6주 이상, 복약 순응을 확인하고 썼는데도 양성 증상이 남았으므로 치료저항 조현병이다. 클로자핀은 치료저항 조현병에서 효과가 입증된 유일한 약이고 자살 행동도 줄인다. 무과립구증 위험이 있어 시작 전 절대호중구수(1,500/µL 이상)를 확인하고 정기적으로 감시한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>치료저항을 정하는 조건</b>: ① 서로 다른 항정신병약 두 가지 이상 ② 각각 충분한 용량(클로르프로마진 등가 600 mg 이상) ③ 각각 6주 이상 ④ 복약 순응 확인(혈중 농도·장기지속형 주사) ⑤ 그래도 중등도 이상의 증상이 남는다. 순응을 확인하지 않으면 「가짜 저항」을 클로자핀으로 치료하게 되므로 ④가 중요하다.<br> <b>클로자핀만 다른 이유</b>: 대부분의 항정신병약은 D2 수용체를 60~80 % 막아 효과를 내고, 이 범위에서 반응이 없으면 다른 D2 차단제로 바꿔도 반응률이 낮다(5 % 안팎). 클로자핀은 D2 결합이 약하고 5-HT2A·D4·무스카린·α 수용체 등 여러 수용체에 작용해 <b>D2 차단과 다른 기전</b>으로 약 30~60 % 가 반응한다. 자살 행동을 줄이는 근거(InterSePT)도 있다.<br> <b>대가와 감시</b>: 무과립구증(약 1 %), 심근염(초기 몇 주), 경련, 변비·장폐색, 체중 증가·대사 이상, 침 흘림. 그래서 시작 전 절대호중구수와 기저 심전도·혈당을 보고, 처음 6개월은 매주 호중구수를 확인한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">클로자핀(정답)</th><th>아리피프라졸(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>치료저항 조현병(두 약 실패 후)</b></td><td>1차 선택 또는 대사 부작용 때문에 바꿀 때</td></tr> <tr><td>기전</td><td>약한 D2 + 여러 수용체</td><td>D2 부분작용제</td></tr> <tr><td>두 약 실패 뒤 반응률</td><td><b>약 30~60 %</b></td><td>5 % 안팎(다른 D2 계열로 바꿨을 때)</td></tr> <tr><td>감시</td><td>절대호중구수 정기 검사</td><td>특별한 혈액 감시 없음</td></tr> </tbody></table> 세 번째 D2 약으로 바꾸고 싶어지지만, 두 약을 제대로 써서 실패했다면 다음은 기전이 다른 클로자핀이다. 자해 시도는 클로자핀을 더 서두를 이유다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 할로페리돌은 강력한 D2 차단제로 급성 초조나 1차 치료에 쓸 수 있다. 두 약 실패 뒤 세 번째 D2 차단제로 바꾸면 반응률이 낮고 추체외로 부작용이 커서, 클로자핀을 쓸 수 없을 때나 고려한다.\n② 아리피프라졸은 체중·대사 부작용이 적어 1차로 쓰거나 부작용 때문에 바꿀 때 좋은 선택이다. 첫 번째 약이 부작용으로 실패한 경우라면 정답이 되지만, 두 약에 효과가 없는 치료저항에는 반응률이 낮다.\n③ 탄산리튬은 양극성장애의 기분조절제이며 조현정동장애에서 보조로 쓴다. 이 환자는 우울·조증 삽화가 없어 기분 증상이 동반될 때만 의미가 있다.\n④ 플루옥세틴은 항우울제로 조현병의 우울 증상이나 강박 증상이 함께 있을 때 보조로 쓴다. 망상·환청 같은 양성 증상에는 효과가 없어 동반 우울증이 뚜렷할 때만 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "세 번째 D2 약으로 바꾸지 않는다 — 두 약을 제대로 써서 실패했으면 클로자핀이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "두 가지 항정신병약을 충분한 용량·기간 순응하여 써도 반응이 없는 치료저항 조현병에는 클로자핀을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Howes OD et al. Treatment-Resistant Schizophrenia: Treatment Response and Resistance in Psychosis (TRRIP) Working Group Consensus Guidelines. Am J Psychiatry 2017;174:216 · Meltzer HY et al. Clozapine treatment for suicidality in schizophrenia: InterSePT. Arch Gen Psychiatry 2003;60:82"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "두 가지 항정신병약을 충분한 용량·기간·순응으로 써도 실패한 치료저항 조현병이므로 클로자핀을 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "아리피프라졸은 또 하나의 D2 계열이라 두 약 실패 뒤 반응률이 낮고, 클로자핀은 기전이 다르다",
+   "steps": 2,
+   "chain": [
+    "리스페리돈 6 mg·올란자핀 20 mg 각 8주 + 혈중 농도로 순응 확인 + 증상 지속 → 치료저항 조현병",
+    "치료저항 + 자해 시도 + 절대호중구수 정상 → 클로자핀"
+   ],
+   "key": [
+    {
+     "item": "리스페리돈 6 mg/일을 8주, 그다음 올란자핀 20 mg/일을 8주",
+     "why": "서로 다른 두 약, 충분한 용량·기간",
+     "also": []
+    },
+    {
+     "item": "혈중 농도로 복약을 확인하였다",
+     "why": "가짜 저항(순응 불량) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "우울 삽화나 물질 사용은 없다",
+     "why": "조현정동장애·물질유발 정신병 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "지난달 자해 시도를 하였다",
+     "why": "클로자핀이 자살 행동을 줄인다 — 서두를 이유",
+     "also": []
+    },
+    {
+     "item": "절대호중구수 4,200/µL",
+     "why": "클로자핀 시작 기준(1,500 이상) 충족",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "공복혈당과 심전도는 정상",
+     "why": "기저 검사 — 약 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "서로 다른 두 항정신병약을 충분히, 순응을 확인하며 썼는데도 실패한 치료저항 조현병이다. 자해 시도까지 있어 클로자핀이 맞다.",
+   "switch": {
+    "choice": "B",
+    "condition": "첫 번째 약이 효과가 아니라 체중 증가·고혈당 때문에 중단되었다면 아리피프라졸로 바꾸는 것이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0199",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "약리 — 전신마취 중 호기말 이산화탄소 급상승",
+  "type": "약리 — 전신마취 중 호기말 이산화탄소 급상승",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "A 24-year-old man is undergoing laparoscopic appendectomy under general anesthesia induced with propofol and succinylcholine and maintained with sevoflurane. He has no medical problems and has never had surgery. Forty minutes after induction, end-tidal CO2 rises from 38 to 78 mm Hg despite doubling of minute ventilation. His jaw and limbs are rigid. His pulse is 142/min, blood pressure is 150/90 mm Hg, and temperature is 38.9°C and rising. Arterial blood gas analysis shows a pH of 7.12 and a PaCO2 of 84 mm Hg. Serum potassium concentration is 6.1 mEq/L. Sevoflurane is discontinued.",
+  "question": "The most appropriate pharmacotherapy for this condition acts by which of the following mechanisms?",
+  "options": [
+   "Agonism at central dopamine D2 receptors",
+   "Antagonism at serotonin 5-HT2A receptors",
+   "Competitive antagonism at nicotinic acetylcholine receptors",
+   "Inhibition of cyclooxygenase in the hypothalamus",
+   "Inhibition of calcium release through ryanodine receptors of the sarcoplasmic reticulum"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A sudden rise in end-tidal CO2 despite increased ventilation, muscle rigidity, tachycardia, hyperkalemia, mixed acidosis, and rising temperature after sevoflurane and succinylcholine is malignant hyperthermia. In susceptible patients (usually RYR1 mutations), triggering agents cause uncontrolled Ca2+ release from the sarcoplasmic reticulum. Dantrolene binds the ryanodine receptor (RyR1) and inhibits this Ca2+ release, stopping the hypermetabolic contraction.\n- 원리: <b>The faulty channel</b>: in skeletal muscle, depolarization changes the dihydropyridine receptor, which mechanically opens the ryanodine receptor (RyR1) on the sarcoplasmic reticulum to release Ca2+. Mutant RyR1 (or CACNA1S) channels open excessively when exposed to volatile anesthetics or succinylcholine. Sarcoplasmic Ca2+ floods the cytosol.<br> <b>Why each sign appears</b>: sustained contraction → rigidity (masseter first); ATP consumption to pump Ca2+ back and run actin–myosin → <b>CO2 production rises</b> (the earliest and most specific sign), then heat; ATP depletion breaks the membrane → K+ and myoglobin leak out (hyperkalemia, rhabdomyolysis); lactate from anaerobic metabolism adds a metabolic acidosis to the respiratory one.<br> <b>Why dantrolene works</b>: it acts at the source — it binds RyR1 and reduces Ca2+ release, so contraction and hypermetabolism stop. It does not block the neuromuscular junction, so nondepolarizing blockers cannot reverse the rigidity. Supportive steps: stop triggers, hyperventilate with 100 % O2, cool, treat hyperkalemia (without calcium channel blockers, which interact with dantrolene).\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Malignant hyperthermia — dantrolene (answer)</th><th>Neuroleptic malignant syndrome — bromocriptine (closest rival)</th></tr></thead><tbody> <tr><td>Trigger</td><td><b>Volatile anesthetic, succinylcholine</b></td><td>Dopamine antagonists (antipsychotics)</td></tr> <tr><td>Onset</td><td>Minutes to hours, in the operating room</td><td>Days after starting or raising the dose</td></tr> <tr><td>Earliest sign</td><td><b>Rising end-tidal CO2</b></td><td>Altered mental status, lead-pipe rigidity</td></tr> <tr><td>Site of defect</td><td>Skeletal muscle RyR1</td><td>Central dopamine blockade</td></tr> </tbody></table> Both produce rigidity and fever. The intraoperative setting with anesthetic triggers and soaring CO2 places the problem in the muscle, not the brain.\n- 오답 이유:\n  - (A) Central D2 agonism is the action of bromocriptine, used for neuroleptic malignant syndrome, which follows antipsychotic use over days. It would be the answer if a patient on haloperidol developed fever, rigidity, and confusion on a ward.\n  - (B) 5-HT2A antagonism is the action of cyproheptadine for serotonin syndrome, which shows clonus and hyperreflexia after serotonergic drugs. It fits a patient on an SSRI given linezolid or tramadol, not intraoperative rigidity.\n  - (C) Competitive nicotinic antagonists (nondepolarizing blockers like rocuronium) paralyze at the neuromuscular junction but do not reduce Ca2+ release inside the muscle; rigidity in malignant hyperthermia persists. They are used for intubation and surgical relaxation.\n  - (D) Cyclooxygenase inhibition (antipyretics) lowers a hypothalamic set point raised by prostaglandins in fever. Malignant hyperthermia is heat production in muscle with a normal set point, so antipyretics are ineffective; they fit infection-related fever.\n- 함정: Rigidity plus fever is not always NMS — in the operating room with rising end-tidal CO2 it is malignant hyperthermia, treated at the ryanodine receptor.\n- 학습목표: 휘발성 마취제·숙시닐콜린 뒤 호기말 이산화탄소 급상승·근강직·고칼륨을 악성고열로 알고 단트롤렌의 리아노딘 수용체 억제 기전을 안다\n- 근거·출처: Rosenberg H et al. Malignant hyperthermia: a review. Orphanet J Rare Dis 2015;10:93 · Glahn KPE et al. Recognizing and managing a malignant hyperthermia crisis: guidelines from the European Malignant Hyperthermia Group. Br J Anaesth 2010;105:417",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A sudden rise in end-tidal CO2 despite increased ventilation, muscle rigidity, tachycardia, hyperkalemia, mixed acidosis, and rising temperature after sevoflurane and succinylcholine is malignant hyperthermia. In susceptible patients (usually RYR1 mutations), triggering agents cause uncontrolled Ca2+ release from the sarcoplasmic reticulum. Dantrolene binds the ryanodine receptor (RyR1) and inhibits this Ca2+ release, stopping the hypermetabolic contraction."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The faulty channel</b>: in skeletal muscle, depolarization changes the dihydropyridine receptor, which mechanically opens the ryanodine receptor (RyR1) on the sarcoplasmic reticulum to release Ca2+. Mutant RyR1 (or CACNA1S) channels open excessively when exposed to volatile anesthetics or succinylcholine. Sarcoplasmic Ca2+ floods the cytosol.<br> <b>Why each sign appears</b>: sustained contraction → rigidity (masseter first); ATP consumption to pump Ca2+ back and run actin–myosin → <b>CO2 production rises</b> (the earliest and most specific sign), then heat; ATP depletion breaks the membrane → K+ and myoglobin leak out (hyperkalemia, rhabdomyolysis); lactate from anaerobic metabolism adds a metabolic acidosis to the respiratory one.<br> <b>Why dantrolene works</b>: it acts at the source — it binds RyR1 and reduces Ca2+ release, so contraction and hypermetabolism stop. It does not block the neuromuscular junction, so nondepolarizing blockers cannot reverse the rigidity. Supportive steps: stop triggers, hyperventilate with 100 % O2, cool, treat hyperkalemia (without calcium channel blockers, which interact with dantrolene)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Malignant hyperthermia — dantrolene (answer)</th><th>Neuroleptic malignant syndrome — bromocriptine (closest rival)</th></tr></thead><tbody> <tr><td>Trigger</td><td><b>Volatile anesthetic, succinylcholine</b></td><td>Dopamine antagonists (antipsychotics)</td></tr> <tr><td>Onset</td><td>Minutes to hours, in the operating room</td><td>Days after starting or raising the dose</td></tr> <tr><td>Earliest sign</td><td><b>Rising end-tidal CO2</b></td><td>Altered mental status, lead-pipe rigidity</td></tr> <tr><td>Site of defect</td><td>Skeletal muscle RyR1</td><td>Central dopamine blockade</td></tr> </tbody></table> Both produce rigidity and fever. The intraoperative setting with anesthetic triggers and soaring CO2 places the problem in the muscle, not the brain."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Central D2 agonism is the action of bromocriptine, used for neuroleptic malignant syndrome, which follows antipsychotic use over days. It would be the answer if a patient on haloperidol developed fever, rigidity, and confusion on a ward.\n(B) 5-HT2A antagonism is the action of cyproheptadine for serotonin syndrome, which shows clonus and hyperreflexia after serotonergic drugs. It fits a patient on an SSRI given linezolid or tramadol, not intraoperative rigidity.\n(C) Competitive nicotinic antagonists (nondepolarizing blockers like rocuronium) paralyze at the neuromuscular junction but do not reduce Ca2+ release inside the muscle; rigidity in malignant hyperthermia persists. They are used for intubation and surgical relaxation.\n(D) Cyclooxygenase inhibition (antipyretics) lowers a hypothalamic set point raised by prostaglandins in fever. Malignant hyperthermia is heat production in muscle with a normal set point, so antipyretics are ineffective; they fit infection-related fever."
+   },
+   {
+    "k": "함정",
+    "v": "Rigidity plus fever is not always NMS — in the operating room with rising end-tidal CO2 it is malignant hyperthermia, treated at the ryanodine receptor."
+   },
+   {
+    "k": "학습목표",
+    "v": "휘발성 마취제·숙시닐콜린 뒤 호기말 이산화탄소 급상승·근강직·고칼륨을 악성고열로 알고 단트롤렌의 리아노딘 수용체 억제 기전을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rosenberg H et al. Malignant hyperthermia: a review. Orphanet J Rare Dis 2015;10:93 · Glahn KPE et al. Recognizing and managing a malignant hyperthermia crisis: guidelines from the European Malignant Hyperthermia Group. Br J Anaesth 2010;105:417"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "유발 마취제 뒤 호기말 CO2 급상승·근강직·고칼륨·고열은 악성고열이고, 치료제 단트롤렌은 RyR1 을 통한 Ca2+ 유리를 억제한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "D2 작용제(브로모크립틴)는 항정신병약 뒤 며칠에 걸쳐 오는 신경이완제 악성증후군에 쓴다 — 이 환자는 수술 중 마취제 노출 직후다",
+   "steps": 2,
+   "chain": [
+    "세보플루란·숙시닐콜린 뒤 환기를 늘려도 호기말 CO2 급상승 + 근강직 + 고칼륨 + 고열 → 악성고열",
+    "악성고열의 치료 단트롤렌 → 근소포체 리아노딘 수용체의 Ca2+ 유리 억제"
+   ],
+   "key": [
+    {
+     "item": "end-tidal CO2 rises from 38 to 78 mm Hg despite doubling of minute ventilation",
+     "why": "가장 이르고 특이한 징후 — 근육 대사 항진",
+     "also": []
+    },
+    {
+     "item": "succinylcholine and maintained with sevoflurane",
+     "why": "유발 약물",
+     "also": []
+    },
+    {
+     "item": "His jaw and limbs are rigid",
+     "why": "근소포체 Ca2+ 과다 유리",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Serum potassium concentration is 6.1 mEq/L",
+     "why": "근세포 붕괴 — 고칼륨 치료가 함께 필요",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "temperature is 38.9°C and rising",
+     "why": "늦게 나타나는 징후 — 진단을 기다리게 하는 함정",
+     "also": []
+    },
+    {
+     "item": "He has no medical problems and has never had surgery",
+     "why": "처음 노출이라 이전 반응 병력이 없을 수 있다",
+     "also": []
+    }
+   ],
+   "summary": "유발 마취제 뒤 환기를 늘려도 호기말 CO2 가 치솟고 근강직·고칼륨이 있어 악성고열이다. 단트롤렌이 리아노딘 수용체를 통한 Ca2+ 유리를 억제한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "할로페리돌을 며칠 쓴 뒤 병동에서 고열·납관 강직·의식 변화가 생겼다면 D2 작용제(브로모크립틴)가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0198",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "내분비·대사 — 갑상샘중독 위기의 약물 순서",
+  "type": "내분비·대사 — 갑상샘중독 위기의 약물 순서",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "35세 여자가 3일 전부터 생긴 고열, 심한 두근거림, 설사로 왔다. 1년 전 그레이브스병을 진단받았으나 2개월 전 스스로 약을 끊었다. 1주 전 인후염을 앓았다. 체온 39.6 ℃, 혈압 150/62 mmHg, 맥박 148회/분이며 불규칙하다. 의식이 혼미하고 안절부절못한다. 갑상샘은 미만성으로 커져 있고 잡음이 들리며 손떨림이 있다. 혈청 유리 T4 6.8 ng/dL(참고치 0.8~1.8), TSH 0.01 µIU/mL 미만이다. 심전도에서 빠른 심실 반응의 심방세동이 있다. 정맥 프로프라놀롤 투여를 시작하였다.",
+  "question": "요오드 용액을 투여하기 전에 먼저 투여해야 하는 약물은?",
+  "options": [
+   "콜레스티라민",
+   "아세트아미노펜",
+   "탄산리튬",
+   "프로필티오우라실",
+   "하이드로코티손"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 고열·빈맥·섬망·위장관 증상의 갑상샘중독 위기다. 요오드(루골 용액)는 갑상샘 호르몬 분비를 빠르게 막지만, 합성 차단 없이 먼저 주면 요오드가 새 호르몬의 원료가 되어 갑상샘중독을 더 악화시킬 수 있다(Jod-Basedow). 그래서 티오아마이드(위기에서는 말초 T4→T3 전환도 막는 프로필티오우라실)를 먼저 주고 최소 1시간 뒤 요오드를 준다.\n- 원리: <b>호르몬이 만들어지고 나가는 길</b>: 갑상샘은 요오드를 잡아(NIS) 갑상샘과산화효소(TPO)로 티로글로불린에 붙여 T4·T3 를 만들고 저장했다가 분비한다. 위기 치료는 이 길의 여러 단계를 동시에 막는다 — <b>합성</b>(티오아마이드: TPO 억제), <b>분비</b>(고농도 요오드: Wolff-Chaikoff 효과와 분비 억제), <b>말초 전환</b>(PTU·스테로이드·프로프라놀롤: 5'-탈요오드효소 억제), <b>말초 작용</b>(베타차단제).<br> <b>왜 순서가 있나</b>: 합성이 막히지 않은 상태에서 대량의 요오드를 주면 TPO 가 그것을 원료로 써서 저장 호르몬을 더 늘린다. 먼저 티오아마이드로 TPO 를 막아 두면 요오드는 원료가 되지 못하고 분비 억제 효과만 남는다. 그래서 「티오아마이드 → 1시간 뒤 요오드」다.<br> <b>왜 PTU 인가</b>: 메티마졸이 합성 억제는 더 강하지만, PTU 는 말초에서 T4→T3 전환도 막아 위기 초기에 활성 호르몬을 더 빨리 낮춘다. 간독성 때문에 위기가 지나면 메티마졸로 바꾼다(임신 1분기 제외).\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">프로필티오우라실(정답)</th><th>하이드로코티손(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>막는 단계</td><td><b>합성(TPO)</b> + 말초 T4→T3 전환</td><td>말초 T4→T3 전환 + 상대적 부신기능부전 보충</td></tr> <tr><td>요오드와의 순서</td><td><b>반드시 요오드보다 먼저</b>(1시간 이상)</td><td>순서 제한 없음 — 위기 치료에 함께 쓴다</td></tr> <tr><td>빠뜨리면</td><td>요오드가 새 호르몬 원료가 된다</td><td>저혈압·부신 위기 위험</td></tr> </tbody></table> 하이드로코티손도 위기에서 함께 주는 약이지만 「요오드 전에 먼저」라는 조건을 만족하는 것은 합성을 막는 티오아마이드뿐이다.\n- 오답 이유:\n  - ① 콜레스티라민은 장간순환으로 다시 흡수되는 갑상샘 호르몬을 장에서 붙잡아 농도를 낮추는 보조 약이다. 다른 치료에 반응이 느릴 때 더하며 요오드 전 필수 약이 아니다.\n  - ② 아세트아미노펜은 위기의 고열을 낮추는 해열제다. 아스피린은 단백 결합에서 T4 를 떼어 내어 피하지만, 아세트아미노펜은 함께 써도 되며 순서와는 무관하다.\n  - ③ 탄산리튬은 갑상샘 호르몬 분비를 억제해 티오아마이드를 쓸 수 없는 환자(무과립구증·간독성)에서 대안으로 쓴다. 이 환자는 티오아마이드를 쓸 수 있어 해당하지 않는다.\n  - ⑤ 하이드로코티손은 말초 T4→T3 전환을 줄이고 상대적 부신기능부전을 보충해 위기 치료에 함께 쓴다. 요오드와의 순서 제한은 없고, 저혈압이 지속되는 위기라면 가장 서둘러야 할 약이 된다.\n- 함정: 요오드가 분비를 가장 빨리 막지만 먼저 주면 원료가 된다 — 합성 차단(PTU)이 먼저다.\n- 학습목표: 갑상샘중독 위기에서 요오드는 티오아마이드로 호르몬 합성을 먼저 막은 뒤(1시간 이상) 투여해야 함을 알고 그 이유를 안다\n- 근거·출처: Ross DS et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid 2016;26:1343 · Burch HB, Wartofsky L. Life-threatening thyrotoxicosis. Thyroid storm. Endocrinol Metab Clin North Am 1993;22:263",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "고열·빈맥·섬망·위장관 증상의 갑상샘중독 위기다. 요오드(루골 용액)는 갑상샘 호르몬 분비를 빠르게 막지만, 합성 차단 없이 먼저 주면 요오드가 새 호르몬의 원료가 되어 갑상샘중독을 더 악화시킬 수 있다(Jod-Basedow). 그래서 티오아마이드(위기에서는 말초 T4→T3 전환도 막는 프로필티오우라실)를 먼저 주고 최소 1시간 뒤 요오드를 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>호르몬이 만들어지고 나가는 길</b>: 갑상샘은 요오드를 잡아(NIS) 갑상샘과산화효소(TPO)로 티로글로불린에 붙여 T4·T3 를 만들고 저장했다가 분비한다. 위기 치료는 이 길의 여러 단계를 동시에 막는다 — <b>합성</b>(티오아마이드: TPO 억제), <b>분비</b>(고농도 요오드: Wolff-Chaikoff 효과와 분비 억제), <b>말초 전환</b>(PTU·스테로이드·프로프라놀롤: 5'-탈요오드효소 억제), <b>말초 작용</b>(베타차단제).<br> <b>왜 순서가 있나</b>: 합성이 막히지 않은 상태에서 대량의 요오드를 주면 TPO 가 그것을 원료로 써서 저장 호르몬을 더 늘린다. 먼저 티오아마이드로 TPO 를 막아 두면 요오드는 원료가 되지 못하고 분비 억제 효과만 남는다. 그래서 「티오아마이드 → 1시간 뒤 요오드」다.<br> <b>왜 PTU 인가</b>: 메티마졸이 합성 억제는 더 강하지만, PTU 는 말초에서 T4→T3 전환도 막아 위기 초기에 활성 호르몬을 더 빨리 낮춘다. 간독성 때문에 위기가 지나면 메티마졸로 바꾼다(임신 1분기 제외)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">프로필티오우라실(정답)</th><th>하이드로코티손(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>막는 단계</td><td><b>합성(TPO)</b> + 말초 T4→T3 전환</td><td>말초 T4→T3 전환 + 상대적 부신기능부전 보충</td></tr> <tr><td>요오드와의 순서</td><td><b>반드시 요오드보다 먼저</b>(1시간 이상)</td><td>순서 제한 없음 — 위기 치료에 함께 쓴다</td></tr> <tr><td>빠뜨리면</td><td>요오드가 새 호르몬 원료가 된다</td><td>저혈압·부신 위기 위험</td></tr> </tbody></table> 하이드로코티손도 위기에서 함께 주는 약이지만 「요오드 전에 먼저」라는 조건을 만족하는 것은 합성을 막는 티오아마이드뿐이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 콜레스티라민은 장간순환으로 다시 흡수되는 갑상샘 호르몬을 장에서 붙잡아 농도를 낮추는 보조 약이다. 다른 치료에 반응이 느릴 때 더하며 요오드 전 필수 약이 아니다.\n② 아세트아미노펜은 위기의 고열을 낮추는 해열제다. 아스피린은 단백 결합에서 T4 를 떼어 내어 피하지만, 아세트아미노펜은 함께 써도 되며 순서와는 무관하다.\n③ 탄산리튬은 갑상샘 호르몬 분비를 억제해 티오아마이드를 쓸 수 없는 환자(무과립구증·간독성)에서 대안으로 쓴다. 이 환자는 티오아마이드를 쓸 수 있어 해당하지 않는다.\n⑤ 하이드로코티손은 말초 T4→T3 전환을 줄이고 상대적 부신기능부전을 보충해 위기 치료에 함께 쓴다. 요오드와의 순서 제한은 없고, 저혈압이 지속되는 위기라면 가장 서둘러야 할 약이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "요오드가 분비를 가장 빨리 막지만 먼저 주면 원료가 된다 — 합성 차단(PTU)이 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑상샘중독 위기에서 요오드는 티오아마이드로 호르몬 합성을 먼저 막은 뒤(1시간 이상) 투여해야 함을 알고 그 이유를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ross DS et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid 2016;26:1343 · Burch HB, Wartofsky L. Life-threatening thyrotoxicosis. Thyroid storm. Endocrinol Metab Clin North Am 1993;22:263"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "갑상샘중독 위기에서 요오드는 합성을 막은 뒤에 주어야 하므로 프로필티오우라실을 먼저 투여한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "하이드로코티손도 위기에서 함께 쓰지만 요오드보다 먼저 주어야 하는 순서 제한은 티오아마이드에만 있다",
+   "steps": 2,
+   "chain": [
+    "고열·빈맥·섬망·설사 + 그레이브스병 약 중단 + 유리 T4 상승 → 갑상샘중독 위기",
+    "요오드 전 합성 차단 필요 → 프로필티오우라실 먼저, 1시간 뒤 요오드"
+   ],
+   "key": [
+    {
+     "item": "체온 39.6 ℃",
+     "why": "위기의 고열",
+     "also": []
+    },
+    {
+     "item": "의식이 혼미하고 안절부절못한다",
+     "why": "중추신경 증상 — 위기를 진단하는 중증도",
+     "also": []
+    },
+    {
+     "item": "2개월 전 스스로 약을 끊었다",
+     "why": "치료 중단 — 위기의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "빠른 심실 반응의 심방세동",
+     "why": "베타차단제가 필요한 이유 — 이미 시작했다",
+     "also": []
+    },
+    {
+     "item": "정맥 프로프라놀롤 투여를 시작하였다",
+     "why": "말초 작용 차단은 이미 했다 — 남은 것은 합성 차단",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "1주 전 인후염을 앓았다",
+     "why": "유발 요인 — 치료 순서에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "약을 끊은 그레이브스병 환자의 갑상샘중독 위기다. 요오드가 새 호르몬 원료가 되지 않도록 프로필티오우라실을 먼저 주고 1시간 뒤 요오드를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "티오아마이드로 무과립구증을 겪은 적이 있어 쓸 수 없다면 탄산리튬이 분비 억제 대안이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0197",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "신장·비뇨 — 건조 증상과 저칼륨혈증을 동반한 대사산증",
+  "type": "신장·비뇨 — 건조 증상과 저칼륨혈증을 동반한 대사산증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "A 38-year-old woman comes to the physician because of fatigue and muscle weakness for 3 weeks. She has had dry eyes and dry mouth for 2 years. She takes no medications and has not had vomiting or diarrhea. Her blood pressure is 112/70 mm Hg. Examination shows bilateral parotid enlargement and proximal muscle weakness. Serum studies show: Na+ 139 mEq/L, K+ 2.8 mEq/L, Cl- 114 mEq/L, HCO3- 14 mEq/L, creatinine 0.8 mg/dL, and glucose 92 mg/dL. Arterial pH is 7.29. Urine studies show pH 6.8; Na+ 40 mEq/L, K+ 35 mEq/L, Cl- 50 mEq/L; and no glucose. An x-ray of the abdomen shows bilateral medullary nephrocalcinosis.",
+  "question": "Which of the following is the most likely underlying defect?",
+  "options": [
+   "Accumulation of unmeasured organic acids",
+   "Impaired H+ secretion by alpha-intercalated cells of the collecting duct",
+   "Impaired bicarbonate reabsorption in the proximal tubule",
+   "Deficiency of aldosterone action in the collecting duct",
+   "Loss of bicarbonate from the gastrointestinal tract"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The anion gap is normal (139 − 114 − 14 = 11), so this is a hyperchloremic metabolic acidosis. The urine anion gap is positive (40 + 35 − 50 = +25), meaning ammonium excretion is low — the kidney is the cause, not the gut. A urine pH of 6.8 during systemic acidosis, hypokalemia, and nephrocalcinosis indicate distal (type 1) RTA: the alpha-intercalated cells cannot secrete H+. Sjögren syndrome (dry eyes and mouth, parotid enlargement) is a classic cause through autoimmune injury to the H+-ATPase.\n- 원리: <b>What the distal nephron normally does</b>: alpha-intercalated cells of the collecting duct pump H+ into the urine with an H+-ATPase and H+/K+-ATPase. The H+ is trapped as NH4+ and titratable acid, and the urine pH can fall to about 5. This is the step that adds new bicarbonate to the blood each day.<br> <b>When it fails</b>: H+ cannot be secreted, so the <b>urine pH stays above 5.5 even when the blood is acidic</b>, and NH4+ excretion falls — hence a positive urine anion gap (NH4+ is the unmeasured cation that normally makes Cl- exceed Na+ + K+). Because Na+ is reabsorbed in exchange for K+ instead of H+, K+ is lost (hypokalemia). Chronic acidosis releases calcium phosphate from bone, increases urinary calcium, and lowers urinary citrate (an inhibitor of stones), and the alkaline urine favors calcium phosphate precipitation → nephrocalcinosis and stones.<br> <b>Proximal (type 2) RTA differs</b>: the bicarbonate threshold is low, but once serum HCO3- falls below it, the intact distal nephron acidifies the urine to below 5.5; glycosuria, phosphaturia, or aminoaciduria (Fanconi) often accompany it, and stones are rare.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Distal RTA, type 1 (answer)</th><th>Proximal RTA, type 2 (closest rival)</th></tr></thead><tbody> <tr><td>Urine pH during acidosis</td><td><b>Always &gt; 5.5</b></td><td>&lt; 5.5 once HCO3- is below threshold</td></tr> <tr><td>Serum K+</td><td>Low</td><td>Low</td></tr> <tr><td>Stones / nephrocalcinosis</td><td><b>Common</b> (low citrate, alkaline urine)</td><td>Rare</td></tr> <tr><td>Associated findings</td><td>Sjögren syndrome, amphotericin B</td><td>Fanconi syndrome (glycosuria, phosphaturia), myeloma, tenofovir</td></tr> </tbody></table> Both cause hypokalemic non-anion-gap acidosis. Nephrocalcinosis and a persistently alkaline urine with no glucosuria point distal.\n- 오답 이유:\n  - (A) Unmeasured organic acids such as lactate or ketones raise the serum anion gap. Here the anion gap is normal at 11, so this applies only to high anion gap states like diabetic ketoacidosis.\n  - (C) Impaired proximal bicarbonate reabsorption (type 2 RTA) also causes hypokalemic hyperchloremic acidosis, but the urine can be acidified below pH 5.5 at steady state and stones are rare. It fits a patient with glycosuria and phosphaturia, as in Fanconi syndrome.\n  - (D) Aldosterone deficiency or resistance (type 4 RTA) causes hyperkalemia, not hypokalemia, and urine pH is usually below 5.5. It would be the answer in a diabetic with mild renal impairment and a potassium of 5.8 mEq/L.\n  - (E) Gastrointestinal bicarbonate loss from diarrhea causes a normal anion gap acidosis with a negative urine anion gap because ammonium excretion rises appropriately. It would fit if she had chronic diarrhea and a urine anion gap below zero.\n- 함정: Two RTAs give low K+ — urine pH above 5.5 in acidosis plus nephrocalcinosis says distal; Sjögren is the classic cause.\n- 학습목표: 음이온차 정상 대사산증에서 소변 pH 가 높고 소변 음이온차가 양성이며 신석회화가 있으면 원위 신세관산증(제1형)임을 알고 결손 부위를 안다\n- 근거·출처: Rodríguez Soriano J. Renal tubular acidosis: the clinical entity. J Am Soc Nephrol 2002;13:2160 · Harrison's Principles of Internal Medicine, 21st ed. — acidosis and alkalosis (renal tubular acidosis)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The anion gap is normal (139 − 114 − 14 = 11), so this is a hyperchloremic metabolic acidosis. The urine anion gap is positive (40 + 35 − 50 = +25), meaning ammonium excretion is low — the kidney is the cause, not the gut. A urine pH of 6.8 during systemic acidosis, hypokalemia, and nephrocalcinosis indicate distal (type 1) RTA: the alpha-intercalated cells cannot secrete H+. Sjögren syndrome (dry eyes and mouth, parotid enlargement) is a classic cause through autoimmune injury to the H+-ATPase."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What the distal nephron normally does</b>: alpha-intercalated cells of the collecting duct pump H+ into the urine with an H+-ATPase and H+/K+-ATPase. The H+ is trapped as NH4+ and titratable acid, and the urine pH can fall to about 5. This is the step that adds new bicarbonate to the blood each day.<br> <b>When it fails</b>: H+ cannot be secreted, so the <b>urine pH stays above 5.5 even when the blood is acidic</b>, and NH4+ excretion falls — hence a positive urine anion gap (NH4+ is the unmeasured cation that normally makes Cl- exceed Na+ + K+). Because Na+ is reabsorbed in exchange for K+ instead of H+, K+ is lost (hypokalemia). Chronic acidosis releases calcium phosphate from bone, increases urinary calcium, and lowers urinary citrate (an inhibitor of stones), and the alkaline urine favors calcium phosphate precipitation → nephrocalcinosis and stones.<br> <b>Proximal (type 2) RTA differs</b>: the bicarbonate threshold is low, but once serum HCO3- falls below it, the intact distal nephron acidifies the urine to below 5.5; glycosuria, phosphaturia, or aminoaciduria (Fanconi) often accompany it, and stones are rare."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Distal RTA, type 1 (answer)</th><th>Proximal RTA, type 2 (closest rival)</th></tr></thead><tbody> <tr><td>Urine pH during acidosis</td><td><b>Always &gt; 5.5</b></td><td>&lt; 5.5 once HCO3- is below threshold</td></tr> <tr><td>Serum K+</td><td>Low</td><td>Low</td></tr> <tr><td>Stones / nephrocalcinosis</td><td><b>Common</b> (low citrate, alkaline urine)</td><td>Rare</td></tr> <tr><td>Associated findings</td><td>Sjögren syndrome, amphotericin B</td><td>Fanconi syndrome (glycosuria, phosphaturia), myeloma, tenofovir</td></tr> </tbody></table> Both cause hypokalemic non-anion-gap acidosis. Nephrocalcinosis and a persistently alkaline urine with no glucosuria point distal."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Unmeasured organic acids such as lactate or ketones raise the serum anion gap. Here the anion gap is normal at 11, so this applies only to high anion gap states like diabetic ketoacidosis.\n(C) Impaired proximal bicarbonate reabsorption (type 2 RTA) also causes hypokalemic hyperchloremic acidosis, but the urine can be acidified below pH 5.5 at steady state and stones are rare. It fits a patient with glycosuria and phosphaturia, as in Fanconi syndrome.\n(D) Aldosterone deficiency or resistance (type 4 RTA) causes hyperkalemia, not hypokalemia, and urine pH is usually below 5.5. It would be the answer in a diabetic with mild renal impairment and a potassium of 5.8 mEq/L.\n(E) Gastrointestinal bicarbonate loss from diarrhea causes a normal anion gap acidosis with a negative urine anion gap because ammonium excretion rises appropriately. It would fit if she had chronic diarrhea and a urine anion gap below zero."
+   },
+   {
+    "k": "함정",
+    "v": "Two RTAs give low K+ — urine pH above 5.5 in acidosis plus nephrocalcinosis says distal; Sjögren is the classic cause."
+   },
+   {
+    "k": "학습목표",
+    "v": "음이온차 정상 대사산증에서 소변 pH 가 높고 소변 음이온차가 양성이며 신석회화가 있으면 원위 신세관산증(제1형)임을 알고 결손 부위를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rodríguez Soriano J. Renal tubular acidosis: the clinical entity. J Am Soc Nephrol 2002;13:2160 · Harrison's Principles of Internal Medicine, 21st ed. — acidosis and alkalosis (renal tubular acidosis)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "음이온차 정상 산증에서 소변 음이온차 양성·소변 pH 6.8·저칼륨·신석회화가 있어 원위 신세관의 H+ 분비 장애다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "근위 신세관산증은 정상 상태에서 소변을 pH 5.5 미만으로 산성화하고 신석회화가 드물며 당뇨가 동반된다",
+   "steps": 3,
+   "chain": [
+    "음이온차 139 − 114 − 14 = 11 → 음이온차 정상 대사산증",
+    "소변 음이온차 40 + 35 − 50 = +25 → 암모늄 배설 감소, 콩팥 원인",
+    "소변 pH 6.8 + 저칼륨 + 신석회화 + 쇼그렌 → 원위(제1형) 신세관산증, H+ 분비 장애"
+   ],
+   "key": [
+    {
+     "item": "Urine studies show pH 6.8",
+     "why": "산증인데 소변이 알칼리 — 원위 산성화 실패",
+     "also": []
+    },
+    {
+     "item": "Na+ 40 mEq/L, K+ 35 mEq/L, Cl- 50 mEq/L",
+     "why": "소변 음이온차 양성 — 콩팥 원인",
+     "also": []
+    },
+    {
+     "item": "bilateral medullary nephrocalcinosis",
+     "why": "원위형의 특징 — 근위형에서는 드물다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "K+ 2.8 mEq/L",
+     "why": "고칼륨인 제4형 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has not had vomiting or diarrhea",
+     "why": "위장관 중탄산 손실 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "and no glucose",
+     "why": "판코니 동반 근위형 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "dry eyes and dry mouth for 2 years",
+     "why": "쇼그렌 — 원인 단서이지만 결손 부위 판단은 검사값으로 한다",
+     "also": []
+    }
+   ],
+   "summary": "음이온차 정상 산증에 소변 음이온차 양성, 소변 pH 6.8, 저칼륨, 신석회화가 있다. 쇼그렌에 동반된 원위 신세관산증으로 집합관 H+ 분비 장애다.",
+   "switch": {
+    "choice": "C",
+    "condition": "소변 pH 가 5.2 였고 정상 혈당에서 소변 당과 인산뇨가 있었다면 근위 중탄산 재흡수 장애가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0196",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "호흡기 — 흉수 분석에서 삼출액 판정",
+  "type": "호흡기 — 흉수 분석에서 삼출액 판정",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-01",
+  "vignette": "58세 남자가 3주 전부터 생긴 기침과 오른쪽 가슴 답답함으로 왔다. 30갑년 흡연자이고 최근 2개월 동안 체중이 4 kg 줄었다. 복용 중인 약은 없다. 체온 37.2 ℃, 혈압 132/80 mmHg, 맥박 88회/분, 호흡수 20회/분이다. 오른쪽 아래 가슴에서 타진상 둔탁음이 있고 호흡음이 감소되어 있다. 흉부 X선에서 오른쪽 중등도 흉수가 있다. 흉수천자 결과는 다음과 같다. 흉수: 단백 3.2 g/dL, LDH 260 U/L, 포도당 95 mg/dL, pH 7.40, 백혈구 1,200/µL(림프구 70 %). 혈청: 단백 7.0 g/dL, LDH 300 U/L(정상 상한 250 U/L), 포도당 100 mg/dL.",
+  "question": "이 흉수를 삼출액으로 판정하는 근거로 옳은 것은?",
+  "options": [
+   "흉수 백혈구 수",
+   "흉수/혈청 LDH 비",
+   "흉수/혈청 단백 비",
+   "흉수 포도당 농도",
+   "흉수 pH"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Light 기준은 ① 흉수/혈청 단백 비 > 0.5, ② 흉수/혈청 LDH 비 > 0.6, ③ 흉수 LDH > 혈청 정상 상한의 2/3 중 하나라도 맞으면 삼출액이다. 단백 비는 3.2/7.0 = 0.46 으로 기준 미만이지만 LDH 비는 260/300 = 0.87 로 0.6 을 넘고, 흉수 LDH 260 도 정상 상한 250 의 2/3(약 167)을 넘는다. 따라서 LDH 로 삼출액이다. 포도당·pH·백혈구는 삼출액 안에서 원인을 좁히는 지표이지 삼출·누출을 가르는 기준이 아니다.\n- 원리: <b>삼출과 누출은 무엇이 다른가</b>: 누출액은 정수압 상승(심부전)이나 교질삼투압 감소(간경변·신증후군)로 <b>막은 정상인데</b> 물만 새어 나온 것이라 단백·LDH 가 적다. 삼출액은 염증·종양으로 <b>흉막과 모세혈관의 투과성이 늘어</b> 단백이 빠져나오고, 손상된 세포에서 LDH 가 나온다. 그래서 단백과 LDH 를 혈청과 비교한다.<br> <b>왜 「하나라도」인가</b>: Light 기준은 삼출액을 놓치지 않도록(민감도 약 98 %) 만든 규칙이다. 세 항목이 서로 다른 면(단백 누출, 세포 손상)을 보기 때문에 하나만 맞아도 삼출액으로 판정한다. 대신 이뇨제를 쓴 심부전 환자는 물이 먼저 빠져 누출액이 삼출액처럼 보일 수 있어, 그때는 혈청-흉수 알부민 차이(1.2 g/dL 초과면 누출)로 보정한다.<br> <b>이 환자에서는</b> 이뇨제를 먹지 않으므로 보정이 필요 없고, 림프구 우세 삼출액에 흡연·체중 감소가 겹쳐 악성 흉수와 결핵을 다음으로 감별한다(세포검사, ADA).\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">흉수/혈청 LDH 비(정답)</th><th>흉수/혈청 단백 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td>&gt; 0.6 이면 삼출액</td><td>&gt; 0.5 이면 삼출액</td></tr> <tr><td>이 환자 값</td><td><b>260/300 = 0.87 → 충족</b></td><td>3.2/7.0 = 0.46 → 미충족</td></tr> <tr><td>반영하는 것</td><td>세포 손상·염증</td><td>막 투과성에 따른 단백 누출</td></tr> </tbody></table> 단백 3.2 g/dL 라는 숫자만 보고 「3 g/dL 넘으니 삼출」로 고르지 않는다 — 기준은 절대값이 아니라 혈청에 대한 비다. 하나만 맞아도 삼출액이다.\n- 오답 이유:\n  - ① 흉수 백혈구 수와 분획은 삼출액의 원인(림프구 우세 — 결핵·악성, 호중구 우세 — 세균)을 좁히는 데 쓴다. 누출액에서도 백혈구가 1,000/µL 안팎일 수 있어 판정 기준이 되지 못한다.\n  - ③ 흉수/혈청 단백 비는 0.5 를 넘으면 삼출액 기준이지만 이 환자는 0.46 으로 기준 미만이다. 흉수 단백이 3.6 g/dL 이상이었다면 이 항목도 근거가 되었다.\n  - ④ 흉수 포도당 60 mg/dL 미만은 부폐렴 흉수·류마티스 흉막염·결핵·악성 흉수를 시사하지만 삼출·누출을 가르는 Light 기준이 아니다. 이 환자는 95 로 정상이다.\n  - ⑤ 흉수 pH 7.2 미만은 복잡 부폐렴 흉수에서 흉관 배액의 적응증이 되는 지표다. 삼출 판정 기준이 아니고 이 환자는 7.40 이다.\n- 함정: 단백 비가 0.5 미만이라 누출액으로 끝내지 않는다 — LDH 항목 하나만 맞아도 삼출액이다.\n- 학습목표: Light 기준의 세 항목 중 하나만 맞아도 삼출액임을 알고, 단백 비가 기준 미만이어도 LDH 로 삼출액을 판정한다\n- 근거·출처: Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med 1972;77:507 · Light RW. Clinical practice. Pleural effusion. N Engl J Med 2002;346:1971",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Light 기준은 ① 흉수/혈청 단백 비 > 0.5, ② 흉수/혈청 LDH 비 > 0.6, ③ 흉수 LDH > 혈청 정상 상한의 2/3 중 하나라도 맞으면 삼출액이다. 단백 비는 3.2/7.0 = 0.46 으로 기준 미만이지만 LDH 비는 260/300 = 0.87 로 0.6 을 넘고, 흉수 LDH 260 도 정상 상한 250 의 2/3(약 167)을 넘는다. 따라서 LDH 로 삼출액이다. 포도당·pH·백혈구는 삼출액 안에서 원인을 좁히는 지표이지 삼출·누출을 가르는 기준이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>삼출과 누출은 무엇이 다른가</b>: 누출액은 정수압 상승(심부전)이나 교질삼투압 감소(간경변·신증후군)로 <b>막은 정상인데</b> 물만 새어 나온 것이라 단백·LDH 가 적다. 삼출액은 염증·종양으로 <b>흉막과 모세혈관의 투과성이 늘어</b> 단백이 빠져나오고, 손상된 세포에서 LDH 가 나온다. 그래서 단백과 LDH 를 혈청과 비교한다.<br> <b>왜 「하나라도」인가</b>: Light 기준은 삼출액을 놓치지 않도록(민감도 약 98 %) 만든 규칙이다. 세 항목이 서로 다른 면(단백 누출, 세포 손상)을 보기 때문에 하나만 맞아도 삼출액으로 판정한다. 대신 이뇨제를 쓴 심부전 환자는 물이 먼저 빠져 누출액이 삼출액처럼 보일 수 있어, 그때는 혈청-흉수 알부민 차이(1.2 g/dL 초과면 누출)로 보정한다.<br> <b>이 환자에서는</b> 이뇨제를 먹지 않으므로 보정이 필요 없고, 림프구 우세 삼출액에 흡연·체중 감소가 겹쳐 악성 흉수와 결핵을 다음으로 감별한다(세포검사, ADA)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">흉수/혈청 LDH 비(정답)</th><th>흉수/혈청 단백 비(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>기준</td><td>&gt; 0.6 이면 삼출액</td><td>&gt; 0.5 이면 삼출액</td></tr> <tr><td>이 환자 값</td><td><b>260/300 = 0.87 → 충족</b></td><td>3.2/7.0 = 0.46 → 미충족</td></tr> <tr><td>반영하는 것</td><td>세포 손상·염증</td><td>막 투과성에 따른 단백 누출</td></tr> </tbody></table> 단백 3.2 g/dL 라는 숫자만 보고 「3 g/dL 넘으니 삼출」로 고르지 않는다 — 기준은 절대값이 아니라 혈청에 대한 비다. 하나만 맞아도 삼출액이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 흉수 백혈구 수와 분획은 삼출액의 원인(림프구 우세 — 결핵·악성, 호중구 우세 — 세균)을 좁히는 데 쓴다. 누출액에서도 백혈구가 1,000/µL 안팎일 수 있어 판정 기준이 되지 못한다.\n③ 흉수/혈청 단백 비는 0.5 를 넘으면 삼출액 기준이지만 이 환자는 0.46 으로 기준 미만이다. 흉수 단백이 3.6 g/dL 이상이었다면 이 항목도 근거가 되었다.\n④ 흉수 포도당 60 mg/dL 미만은 부폐렴 흉수·류마티스 흉막염·결핵·악성 흉수를 시사하지만 삼출·누출을 가르는 Light 기준이 아니다. 이 환자는 95 로 정상이다.\n⑤ 흉수 pH 7.2 미만은 복잡 부폐렴 흉수에서 흉관 배액의 적응증이 되는 지표다. 삼출 판정 기준이 아니고 이 환자는 7.40 이다."
+   },
+   {
+    "k": "함정",
+    "v": "단백 비가 0.5 미만이라 누출액으로 끝내지 않는다 — LDH 항목 하나만 맞아도 삼출액이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "Light 기준의 세 항목 중 하나만 맞아도 삼출액임을 알고, 단백 비가 기준 미만이어도 LDH 로 삼출액을 판정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med 1972;77:507 · Light RW. Clinical practice. Pleural effusion. N Engl J Med 2002;346:1971"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "단백 비는 0.46 으로 기준 미만이지만 LDH 비가 0.87 로 0.6 을 넘어 Light 기준상 삼출액이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "단백 비 3.2/7.0 = 0.46 은 0.5 미만이라 근거가 되지 못하고 LDH 비만 기준을 넘는다",
+   "steps": 2,
+   "chain": [
+    "단백 비 0.46(< 0.5), LDH 비 0.87(> 0.6), 흉수 LDH 260(> 167) 계산",
+    "Light 기준 중 하나라도 충족 → LDH 로 삼출액"
+   ],
+   "key": [
+    {
+     "item": "LDH 260 U/L",
+     "why": "LDH 비 0.87·정상 상한의 2/3 초과 — 두 항목 충족",
+     "also": []
+    },
+    {
+     "item": "LDH 300 U/L(정상 상한 250 U/L)",
+     "why": "비와 2/3 기준 계산의 분모",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "단백 3.2 g/dL",
+     "why": "비 0.46 — 단백 항목은 충족하지 않는다",
+     "also": []
+    },
+    {
+     "item": "복용 중인 약은 없다",
+     "why": "이뇨제에 따른 거짓 삼출액 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "포도당 95 mg/dL, pH 7.40",
+     "why": "복잡 부폐렴 흉수가 아님 — 판정 기준과 무관",
+     "also": []
+    },
+    {
+     "item": "백혈구 1,200/µL(림프구 70 %)",
+     "why": "삼출액 안에서 결핵·악성 감별 단서 — 판정 기준은 아니다",
+     "also": []
+    },
+    {
+     "item": "30갑년 흡연자이고 최근 2개월 동안 체중이 4 kg 줄었다",
+     "why": "악성 흉수 의심 — 다음 단계의 단서",
+     "also": []
+    }
+   ],
+   "summary": "단백 비는 0.46 으로 기준 미만이지만 LDH 비가 0.87 로 0.6 을 넘는다. Light 기준은 하나만 맞아도 삼출액이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "흉수 단백이 4.0 g/dL(비 0.57)이었다면 단백 비도 삼출액 근거가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0195",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "순환기 — 하벽 심근경색에서 질산염 뒤 생긴 저혈압",
+  "type": "순환기 — 하벽 심근경색에서 질산염 뒤 생긴 저혈압",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-01",
+  "vignette": "A 62-year-old man is brought to the emergency department 1 hour after the onset of substernal chest pressure and diaphoresis. He has type 2 diabetes mellitus and hypertension. In the ambulance he received aspirin and sublingual nitroglycerin, after which his blood pressure decreased from 112/70 mm Hg to 78/50 mm Hg. On arrival, his pulse is 54/min and respirations are 18/min; oxygen saturation is 97% on room air. Jugular venous pressure is 12 cm H2O and rises with inspiration. The lungs are clear to auscultation. There are no murmurs. An ECG shows ST-segment elevation in leads II, III, and aVF and in right precordial lead V4R. The cardiac catheterization laboratory has been activated.",
+  "question": "Which of the following is the most appropriate immediate intervention?",
+  "options": [
+   "Intravenous morphine",
+   "Intravenous metoprolol",
+   "Intravenous 0.9% saline bolus",
+   "Intravenous furosemide",
+   "Intravenous nitroglycerin infusion"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Inferior STEMI with ST elevation in V4R indicates right ventricular infarction (usually proximal right coronary artery). The infarcted RV cannot pump enough blood to fill the left ventricle, so cardiac output depends on venous return. Elevated JVP with Kussmaul sign and clear lungs plus hypotension after nitroglycerin is the classic triad. The immediate step, while preparing for primary PCI, is a fluid bolus to restore preload; drugs that lower preload are avoided.\n- 원리: <b>Why the RV becomes preload-dependent</b>: the right ventricle is thin-walled and normally generates low pressure. When it is infarcted, it dilates and contracts poorly, so blood crossing the lungs to the left ventricle falls. The LV itself may be fine, but it is <b>underfilled</b> — so systemic pressure drops even though the neck veins are full.<br> <b>Why nitroglycerin unmasked it</b>: nitrates dilate veins and reduce venous return. In a preload-dependent RV, that removes the only thing keeping the stroke volume up, producing abrupt hypotension. Morphine and diuretics do the same.<br> <b>Why the lungs are clear</b>: the problem is upstream of the lungs; the LV is not failing, so there is no pulmonary edema. That combination — high JVP, clear lungs, hypotension — separates RV infarction from LV pump failure (cardiogenic shock with crackles). Bradycardia is common because the RCA supplies the SA and AV nodes. Treatment: fluids (often 250–500 mL boluses), avoid nitrates and diuretics, inotropes (dobutamine) if fluids fail, and urgent reperfusion.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">RV infarction (this patient)</th><th>LV failure — when furosemide fits</th></tr></thead><tbody> <tr><td>Neck veins</td><td>Raised, Kussmaul sign</td><td>Raised or normal</td></tr> <tr><td>Lungs</td><td><b>Clear</b></td><td><b>Crackles, pulmonary edema</b></td></tr> <tr><td>Response to nitrates</td><td>Marked hypotension</td><td>Symptom relief</td></tr> <tr><td>First step</td><td>IV fluid bolus</td><td>Diuretic, vasodilator if BP allows</td></tr> </tbody></table> High JVP tempts students toward diuretics, but the lungs decide: clear lungs mean the left side is underfilled, not overloaded.\n- 오답 이유:\n  - (A) Morphine relieves pain but also dilates veins and blunts sympathetic tone, lowering preload further. It can be used cautiously for severe pain only after blood pressure is restored.\n  - (B) Metoprolol lowers heart rate and contractility; with bradycardia of 54/min and shock it can precipitate collapse. Beta blockers are started later in stable patients without hypotension, heart block, or heart failure.\n  - (D) Furosemide lowers preload and would worsen hypotension in a preload-dependent RV infarct. It becomes appropriate when hypotension is absent and the lungs have crackles from left ventricular failure.\n  - (E) Nitroglycerin already caused the drop in pressure by venodilation. It is used for ongoing ischemic pain or pulmonary edema in LV infarction with adequate blood pressure and no RV involvement.\n- 함정: High JVP is not volume overload here — clear lungs plus nitrate-induced hypotension means the RV needs more preload.\n- 학습목표: 하벽 심근경색에 우심실경색이 겹쳐 전부하에 의존하는 저혈압을 알아보고, 질산염·이뇨제를 피하고 수액을 준다\n- 근거·출처: O'Gara PT et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. Circulation 2013;127:e362 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Inferior STEMI with ST elevation in V4R indicates right ventricular infarction (usually proximal right coronary artery). The infarcted RV cannot pump enough blood to fill the left ventricle, so cardiac output depends on venous return. Elevated JVP with Kussmaul sign and clear lungs plus hypotension after nitroglycerin is the classic triad. The immediate step, while preparing for primary PCI, is a fluid bolus to restore preload; drugs that lower preload are avoided."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the RV becomes preload-dependent</b>: the right ventricle is thin-walled and normally generates low pressure. When it is infarcted, it dilates and contracts poorly, so blood crossing the lungs to the left ventricle falls. The LV itself may be fine, but it is <b>underfilled</b> — so systemic pressure drops even though the neck veins are full.<br> <b>Why nitroglycerin unmasked it</b>: nitrates dilate veins and reduce venous return. In a preload-dependent RV, that removes the only thing keeping the stroke volume up, producing abrupt hypotension. Morphine and diuretics do the same.<br> <b>Why the lungs are clear</b>: the problem is upstream of the lungs; the LV is not failing, so there is no pulmonary edema. That combination — high JVP, clear lungs, hypotension — separates RV infarction from LV pump failure (cardiogenic shock with crackles). Bradycardia is common because the RCA supplies the SA and AV nodes. Treatment: fluids (often 250–500 mL boluses), avoid nitrates and diuretics, inotropes (dobutamine) if fluids fail, and urgent reperfusion."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">RV infarction (this patient)</th><th>LV failure — when furosemide fits</th></tr></thead><tbody> <tr><td>Neck veins</td><td>Raised, Kussmaul sign</td><td>Raised or normal</td></tr> <tr><td>Lungs</td><td><b>Clear</b></td><td><b>Crackles, pulmonary edema</b></td></tr> <tr><td>Response to nitrates</td><td>Marked hypotension</td><td>Symptom relief</td></tr> <tr><td>First step</td><td>IV fluid bolus</td><td>Diuretic, vasodilator if BP allows</td></tr> </tbody></table> High JVP tempts students toward diuretics, but the lungs decide: clear lungs mean the left side is underfilled, not overloaded."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Morphine relieves pain but also dilates veins and blunts sympathetic tone, lowering preload further. It can be used cautiously for severe pain only after blood pressure is restored.\n(B) Metoprolol lowers heart rate and contractility; with bradycardia of 54/min and shock it can precipitate collapse. Beta blockers are started later in stable patients without hypotension, heart block, or heart failure.\n(D) Furosemide lowers preload and would worsen hypotension in a preload-dependent RV infarct. It becomes appropriate when hypotension is absent and the lungs have crackles from left ventricular failure.\n(E) Nitroglycerin already caused the drop in pressure by venodilation. It is used for ongoing ischemic pain or pulmonary edema in LV infarction with adequate blood pressure and no RV involvement."
+   },
+   {
+    "k": "함정",
+    "v": "High JVP is not volume overload here — clear lungs plus nitrate-induced hypotension means the RV needs more preload."
+   },
+   {
+    "k": "학습목표",
+    "v": "하벽 심근경색에 우심실경색이 겹쳐 전부하에 의존하는 저혈압을 알아보고, 질산염·이뇨제를 피하고 수액을 준다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "O'Gara PT et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. Circulation 2013;127:e362 · Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J 2023;44:3720"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "하벽 STEMI 에 V4R 상승·경정맥 확장·맑은 폐·질산염 뒤 저혈압이 있어 전부하 의존 우심실경색이므로 수액을 준다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "푸로세미드는 폐에 수포음이 있는 좌심실 부전에 쓰는데 이 환자는 폐가 맑다",
+   "steps": 3,
+   "chain": [
+    "II·III·aVF + V4R ST 상승 → 우심실을 포함한 하벽 경색",
+    "경정맥 확장·Kussmaul 징후 + 맑은 폐 + 질산염 뒤 저혈압 → 전부하 의존 상태",
+    "전부하 의존 저혈압 → 생리식염수 볼루스, 전부하를 낮추는 약은 피한다"
+   ],
+   "key": [
+    {
+     "item": "ST-segment elevation in leads II, III, and aVF and in right precordial lead V4R",
+     "why": "우심실경색의 심전도 근거",
+     "also": []
+    },
+    {
+     "item": "after which his blood pressure decreased from 112/70 mm Hg to 78/50 mm Hg",
+     "why": "질산염에 따른 저혈압 — 전부하 의존",
+     "also": []
+    },
+    {
+     "item": "Jugular venous pressure is 12 cm H2O and rises with inspiration",
+     "why": "우심부전 — Kussmaul 징후",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The lungs are clear to auscultation",
+     "why": "좌심실 부전·폐부종 가능성을 낮춘다 — 이뇨제 근거가 없다",
+     "also": []
+    },
+    {
+     "item": "There are no murmurs",
+     "why": "유두근 파열·심실중격 파열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "his pulse is 54/min",
+     "why": "우관상동맥 경색의 서맥 — 베타차단제를 피한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "type 2 diabetes mellitus and hypertension",
+     "why": "위험인자 — 즉각 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "하벽 STEMI 에 V4R 상승, 경정맥 확장, 맑은 폐, 질산염 뒤 저혈압이 겹친 우심실경색이다. 재관류를 준비하며 생리식염수로 전부하를 채운다.",
+   "switch": {
+    "choice": "D",
+    "condition": "혈압이 유지되고 양폐에 수포음과 폐부종이 있는 전벽 경색이었다면 푸로세미드가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0194",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·병리·순환기·호흡기·신장·내분비·약리·정신·이비인후과)",
+  "subtopic": "순환기 — 기계 승모판 환자의 심방세동 항응고",
+  "type": "순환기 — 기계 승모판 환자의 심방세동 항응고",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-01",
+  "vignette": "68세 남자가 정기 진료를 위해 왔다. 10년 전 류마티스 승모판 협착으로 기계 승모판 치환술을 받았고 그 뒤 와파린을 복용하고 있다. 2주 전 두근거림으로 응급실에 갔다가 심방세동을 처음 진단받았다. 환자는 INR 검사가 번거로워 새로 나온 경구 항응고제로 바꾸고 싶어 한다. 출혈 병력은 없다. 혈압 128/76 mmHg, 맥박 82회/분, 불규칙하다. 청진에서 선명한 기계판막 소리가 들린다. 오늘 INR 은 2.9, 혈청 크레아티닌은 1.0 mg/dL 이다. 경흉부 심초음파에서 인공판막 기능은 정상이다.",
+  "question": "항응고 치료로 가장 적절한 것은?",
+  "options": [
+   "다비가트란으로 변경",
+   "아스피린 단독으로 변경",
+   "리바록사반과 아스피린 병용",
+   "와파린 유지",
+   "아픽사반으로 변경"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 기계판막이 있으면 심방세동이 생겨도 직접 경구 항응고제(DOAC)는 금기이고 와파린을 유지한다(기계 승모판의 목표 INR 2.5~3.5). 다비가트란은 RE-ALIGN 에서 기계판막 환자의 판막 혈전·뇌졸중과 출혈을 모두 늘렸고, 아픽사반도 On-X 대동맥판 환자 연구(PROACT Xa)가 혈전색전 증가로 조기 중단되었다. 환자의 번거로움은 자가 INR 측정 등으로 해결한다.\n- 원리: <b>왜 기계판막에서는 와파린인가</b>: 기계판막 표면은 혈액이 처음 만나는 이물이라 <b>접촉 활성화 경로</b>(XII 인자 → XI → IX)로 트롬빈이 대량으로 만들어진다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)를 모두 낮춰 이 경로의 여러 단계를 동시에 줄인다. 반면 DOAC 는 Xa 나 트롬빈 하나만 막고, 판막 표면에서 국소적으로 폭발하는 트롬빈 생성을 따라잡지 못해 판막 혈전과 뇌졸중이 늘었다.<br> <b>승모판이 더 위험한 이유</b>: 승모판 위치는 혈류 속도가 느리고 좌심방이 커 정체가 많다. 그래서 같은 기계판막이라도 대동맥판 위치는 INR 2.5(2.0~3.0), 승모판 위치나 위험인자(심방세동 등)가 있으면 3.0(2.5~3.5)을 목표로 한다.<br> <b>그럼 DOAC 는 언제 되나</b>: 생체판막(수술 3개월 이후)과 TAVI 뒤, 그리고 류마티스성 중등도 이상 승모판 협착이 없는 판막 질환의 심방세동에서는 DOAC 를 쓸 수 있다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">와파린 유지(정답)</th><th>아픽사반 변경(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 판막</td><td><b>기계판막</b>, 중등도 이상 류마티스 승모판 협착</td><td>생체판막(3개월 이후)·TAVI·그 밖의 판막 질환</td></tr> <tr><td>근거</td><td>판막 혈전 예방이 입증됨</td><td>기계판막 연구(PROACT Xa)에서 혈전색전 증가로 중단</td></tr> <tr><td>목표</td><td>기계 승모판 INR 2.5~3.5</td><td>고정 용량, 감시 불필요</td></tr> <tr><td>불편 해결</td><td>자가 INR 측정·원격 관리</td><td>—</td></tr> </tbody></table> 「새로 생긴 심방세동 = DOAC」 공식은 기계판막과 중등도 이상 승모판 협착 앞에서 멈춘다. 판막의 종류를 먼저 확인한다.\n- 오답 이유:\n  - ① 다비가트란은 기계판막 환자 연구(RE-ALIGN)에서 판막 혈전·뇌졸중과 출혈이 모두 늘어 조기 중단되었다. 기계판막이 없는 심방세동이라면 쓸 수 있는 약이다.\n  - ② 아스피린 단독은 기계판막의 판막 혈전과 심방세동의 뇌졸중을 모두 막지 못한다. 출혈 위험이 낮은 기계판막 환자에서 와파린에 더하는 보조 약으로만 고려한다.\n  - ③ 리바록사반과 아스피린 병용은 안정형 관상동맥질환에서 연구된 조합이다. 기계판막에서는 리바록사반 자체가 근거가 없고 아스피린을 더하면 출혈만 늘어 어떤 경우에도 대안이 되지 않는다.\n  - ⑤ 아픽사반은 비판막성 심방세동과 생체판막·TAVI 뒤 심방세동에서 와파린을 대신할 수 있다. 이 환자가 생체 승모판을 받은 지 3개월이 지났다면 정답이 될 수 있지만 기계판막에서는 혈전색전이 늘었다.\n- 함정: 새로 생긴 심방세동이라 DOAC 로 가고 싶지만 기계판막이 있으면 와파린뿐이다.\n- 학습목표: 기계판막이 있는 심방세동 환자에게는 직접 경구 항응고제를 쓰지 않고 와파린을 유지함을 안다\n- 근거·출처: Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72 · Eikelboom JW et al. Dabigatran versus warfarin in patients with mechanical heart valves (RE-ALIGN). N Engl J Med 2013;369:1206 · Wang TY et al. Apixaban or Warfarin in Patients with an On-X Mechanical Aortic Valve (PROACT Xa). NEJM Evid 2023;2:EVIDoa2300067",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기계판막이 있으면 심방세동이 생겨도 직접 경구 항응고제(DOAC)는 금기이고 와파린을 유지한다(기계 승모판의 목표 INR 2.5~3.5). 다비가트란은 RE-ALIGN 에서 기계판막 환자의 판막 혈전·뇌졸중과 출혈을 모두 늘렸고, 아픽사반도 On-X 대동맥판 환자 연구(PROACT Xa)가 혈전색전 증가로 조기 중단되었다. 환자의 번거로움은 자가 INR 측정 등으로 해결한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 기계판막에서는 와파린인가</b>: 기계판막 표면은 혈액이 처음 만나는 이물이라 <b>접촉 활성화 경로</b>(XII 인자 → XI → IX)로 트롬빈이 대량으로 만들어진다. 와파린은 비타민 K 의존 인자(II·VII·IX·X)를 모두 낮춰 이 경로의 여러 단계를 동시에 줄인다. 반면 DOAC 는 Xa 나 트롬빈 하나만 막고, 판막 표면에서 국소적으로 폭발하는 트롬빈 생성을 따라잡지 못해 판막 혈전과 뇌졸중이 늘었다.<br> <b>승모판이 더 위험한 이유</b>: 승모판 위치는 혈류 속도가 느리고 좌심방이 커 정체가 많다. 그래서 같은 기계판막이라도 대동맥판 위치는 INR 2.5(2.0~3.0), 승모판 위치나 위험인자(심방세동 등)가 있으면 3.0(2.5~3.5)을 목표로 한다.<br> <b>그럼 DOAC 는 언제 되나</b>: 생체판막(수술 3개월 이후)과 TAVI 뒤, 그리고 류마티스성 중등도 이상 승모판 협착이 없는 판막 질환의 심방세동에서는 DOAC 를 쓸 수 있다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">와파린 유지(정답)</th><th>아픽사반 변경(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상 판막</td><td><b>기계판막</b>, 중등도 이상 류마티스 승모판 협착</td><td>생체판막(3개월 이후)·TAVI·그 밖의 판막 질환</td></tr> <tr><td>근거</td><td>판막 혈전 예방이 입증됨</td><td>기계판막 연구(PROACT Xa)에서 혈전색전 증가로 중단</td></tr> <tr><td>목표</td><td>기계 승모판 INR 2.5~3.5</td><td>고정 용량, 감시 불필요</td></tr> <tr><td>불편 해결</td><td>자가 INR 측정·원격 관리</td><td>—</td></tr> </tbody></table> 「새로 생긴 심방세동 = DOAC」 공식은 기계판막과 중등도 이상 승모판 협착 앞에서 멈춘다. 판막의 종류를 먼저 확인한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 다비가트란은 기계판막 환자 연구(RE-ALIGN)에서 판막 혈전·뇌졸중과 출혈이 모두 늘어 조기 중단되었다. 기계판막이 없는 심방세동이라면 쓸 수 있는 약이다.\n② 아스피린 단독은 기계판막의 판막 혈전과 심방세동의 뇌졸중을 모두 막지 못한다. 출혈 위험이 낮은 기계판막 환자에서 와파린에 더하는 보조 약으로만 고려한다.\n③ 리바록사반과 아스피린 병용은 안정형 관상동맥질환에서 연구된 조합이다. 기계판막에서는 리바록사반 자체가 근거가 없고 아스피린을 더하면 출혈만 늘어 어떤 경우에도 대안이 되지 않는다.\n⑤ 아픽사반은 비판막성 심방세동과 생체판막·TAVI 뒤 심방세동에서 와파린을 대신할 수 있다. 이 환자가 생체 승모판을 받은 지 3개월이 지났다면 정답이 될 수 있지만 기계판막에서는 혈전색전이 늘었다."
+   },
+   {
+    "k": "함정",
+    "v": "새로 생긴 심방세동이라 DOAC 로 가고 싶지만 기계판막이 있으면 와파린뿐이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "기계판막이 있는 심방세동 환자에게는 직접 경구 항응고제를 쓰지 않고 와파린을 유지함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72 · Eikelboom JW et al. Dabigatran versus warfarin in patients with mechanical heart valves (RE-ALIGN). N Engl J Med 2013;369:1206 · Wang TY et al. Apixaban or Warfarin in Patients with an On-X Mechanical Aortic Valve (PROACT Xa). NEJM Evid 2023;2:EVIDoa2300067"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "기계 승모판이 있는 심방세동은 DOAC 금기이므로 와파린을 유지한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "아픽사반은 생체판막·TAVI 뒤 심방세동에서 쓰고 기계판막에서는 혈전색전을 늘렸다",
+   "steps": 2,
+   "chain": [
+    "기계 승모판 치환술 + 새 심방세동 → 판막성 심방세동의 항응고",
+    "기계판막은 DOAC 금기 → 와파린 유지(목표 INR 2.5~3.5)"
+   ],
+   "key": [
+    {
+     "item": "기계 승모판 치환술",
+     "why": "DOAC 금기를 정하는 단 하나의 정보",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "출혈 병력은 없다",
+     "why": "항응고를 줄이거나 바꿀 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "인공판막 기능은 정상",
+     "why": "판막 혈전·기능 이상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "오늘 INR 은 2.9",
+     "why": "목표 범위 안 — 용량 조절도 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "심방세동을 처음 진단받았다",
+     "why": "항응고 필요성은 이미 와파린으로 충족 — 약을 바꿀 이유가 아니다",
+     "also": []
+    },
+    {
+     "item": "INR 검사가 번거로워",
+     "why": "환자 선호 — 자가 측정으로 해결하고 약제 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "기계 승모판이 있는 환자에게 새 심방세동이 생겼다. 기계판막은 DOAC 금기라 와파린을 유지한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "기계판막이 아니라 생체 승모판을 받은 지 1년이 지났다면 아픽사반으로 바꿀 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0181",
   "exam": "imaging",
   "style": "kmle_style",
