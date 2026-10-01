@@ -238,6 +238,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13160704_Figure1
   reason: 그림 설명이 「고칼륨 변화 없음(가성 고칼륨)」 — 요청 소견의 반대
+- asset: PMC-PMC12643610_Figure5
+  reason: 활동전위 위상 모식도다 — 요청한 심전도의 뾰족한 T파가 그림에 없다
 ---
 
 ## 정상 생리 — 칼륨은 어디에 있고 무엇이 조절하나

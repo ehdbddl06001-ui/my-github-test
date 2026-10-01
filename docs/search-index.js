@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-09-30",
+ "generated": "2026-10-01",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3148,
+  "total": 3151,
   "byType": {
    "usmle": 174,
    "anatomy": 769,
+   "paper": 697,
    "kmle": 1216,
    "imaging": 188,
-   "paper": 694,
    "concept": 90,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 769,
-   "Cardiology": 227,
+   "Cardiology": 228,
    "Nephrology": 182,
    "Infectious Disease": 164,
    "Pediatrics": 147,
    "Obstetrics & Gynecology": 108,
    "Hematology-Oncology": 103,
-   "Pathology": 101,
+   "Pathology": 102,
    "Psychiatry": 93,
    "Neurology": 91,
    "Rheumatology": 87,
@@ -37,7 +37,7 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 78,
    "Pulmonology": 78,
    "Hematology": 73,
-   "Laboratory Medicine": 68,
+   "Laboratory Medicine": 69,
    "산부인과": 35,
    "Physiology": 20,
    "순환기": 17,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2119,
-   "medium": 980,
+   "medium": 983,
    "low": 49
   },
   "tagCount": 4397
@@ -230,6 +230,57 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-01.md",
    "snippet": "오늘의 학습 (2026 10 01 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 21일 · Tagging 2까지 18일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-01 머리·배 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 01 · t2 new) 다음 수업/시험: 2026 10 01 머리덮개·머리뼈 속구조·뇌 적출·눈확, 부신·콩팥·배대동맥·복막·가로막·뒤배벽 Tagging 1까지 21일 · Tagging 2까지 18일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0697",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR research protocols",
+   "confidence": "medium",
+   "date": "2026-09-30",
+   "path": "content/papers/2026/2026-09-30_paper-2026-0697_a_digital_system_to_assess_mental_health_in_people_with_inte.md",
+   "snippet": "Title A Digital System to Assess Mental Health in People With Intellectual Disability (MENTALSED): Protocol for a Development and Pilot Study Authors Rodríguez Medina Jairo, Gonzalez Sanguino Clara, Betegón Elena, Ayuso Lanchares Alba, Boem",
+   "text": "Laboratory Medicine scraped pubmed PubMed / JMIR research protocols Title A Digital System to Assess Mental Health in People With Intellectual Disability (MENTALSED): Protocol for a Development and Pilot Study Authors Rodríguez Medina Jairo, Gonzalez Sanguino Clara, Betegón Elena, Ayuso Lanchares Alba, Boemo Teresa Journal / DOI JMIR research protocols · DOI: 10.2196/106072 · PMID: 42814923 https://pubmed.ncbi.nlm.nih.gov/42814923/ Abstract BACKGROUND: People with intellectual disabilities have a high prevalence of mental health problems, which are often underdiagnosed and treated late due to difficulties in assessment. The limited availability of validated instruments, communication barriers, and reliance on external informants hinder the early detection of symptoms and the monitoring of their progression. OBJECTIVE: This study describes the protocol for the development and piloting of MENTALSED, a digital assessment system designed for the continuous monitoring of mental health and emotional well being in people with intellectual disability through ecological momentary assessment using traditional questionnaires supplemented with psychophysiological measures. METHODS: The study uses a mixed methods design, combining quantitative and qualitative procedures. Following a literature review, a survey assessed the needs of direct care professionals. On the basis of these findings, self report and proxy report EMA questionnaires were developed. The professional version was evaluated by university experts and direct care professionals. The self report version was adapted into an easy to read format with the support of a focus group of people with intellectual disabilities and subsequently evaluated by individuals with intellectual disabilities and professionals. The questionnaires were implemented on the Avicenna Research platform. Objective psychophysiological measures (heart rate variability via a chest strap and sleep quality and heart rate via a smartwatch) were included. All data are integrated into a custom application displaying 4 well being dimensions. The subsequent pilot study will involve individuals with intellectual disability and support professionals over a 2 week period in natural settings. RESULTS: The project was funded by the Ministry of Science, Innovation and Universities, the State Research Agency, and the European Regional Development Fund/European Union (grant PID2023 150190OA I00/MENTAL SED). The needs assessment and validation phases were conducted between January and May 2025. As of manuscript submission, a total of 91 participants (71 professionals and experts and 20 individuals with intellectual disability) have been recruited and have participated in the development and validation stages. The 2 week pilot study is currently concluding data collection. Data analysis for the pilot phase is expected to begin in October 2026, and the final results are expected to be published in 2027. CONCLUSIONS: MENTALSED is expected to facilitate the early detection of emotional and behavioral changes, improve diagnostic accuracy, and enable the development of evidence based preventive interventions. The integration of multiple sources of information is expected to help overcome traditional limitations in mental health assessment in this population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0696",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science advances",
+   "confidence": "medium",
+   "date": "2026-09-30",
+   "path": "content/papers/2026/2026-09-30_paper-2026-0696_electronic_profiling_of_neuronal_extracellular_vesicles_enab.md",
+   "snippet": "Title Electronic profiling of neuronal extracellular vesicles enables early prediction of Parkinson's disease Authors Chang Tianrui, Jiang Cheng, Yan Shijun, Wustoni Shofarul, Salvigni Luca, Almaghrabi Rania, Hu Michele T, Tofaris George K,",
+   "text": "Pathology scraped pubmed PubMed / Science advances Title Electronic profiling of neuronal extracellular vesicles enables early prediction of Parkinson's disease Authors Chang Tianrui, Jiang Cheng, Yan Shijun, Wustoni Shofarul, Salvigni Luca, Almaghrabi Rania, Hu Michele T, Tofaris George K, et al. Journal / DOI Science advances · DOI: 10.1126/sciadv.aee4525 · PMID: 42814818 https://pubmed.ncbi.nlm.nih.gov/42814818/ Abstract Misfolded alpha Synuclein (α Syn) accumulation is the defining molecular pathology of Parkinson's disease (PD), yet blood based assays remain challenged by the high background of peripheral α Syn originating mainly from red blood cells. Neuronal extracellular vesicles (EVs) circulating in blood offer a biologically enriched source of brain derived α Syn proteoforms, but their ultralow abundance has hindered reliable detection. Here, we introduce an organic electrochemical transistor based multiparametric diagnostic assay that simultaneously detects total, aggregated, and serine 129 phosphorylated α Syn proteoforms in serum L1CAM+ EVs. The platform achieves low femtomolar sensitivity in buffer and robust analytical performance in clinical specimens. In a cohort of 66 individuals, including prodromal and clinically diagnosed patients with PD, combining the three proteoform readouts distinguished PD from controls with 90.9% accuracy (88.6% sensitivity and 90.9% specificity). By electronically amplifying and resolving multiple neuronal α Syn signatures in blood, this assay enables a minimally invasive diagnostic tool for early stage PD and provides a path toward therapeutic intervention during the window when disease modifying treatments are likely to be most effective. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0695",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medical Internet research",
+   "confidence": "medium",
+   "date": "2026-09-30",
+   "path": "content/papers/2026/2026-09-30_paper-2026-0695_automated_health_care_thematic_analysis_using_a_multiagent_l.md",
+   "snippet": "Title Automated Health Care Thematic Analysis Using a Multiagent Large Language Model: Algorithm Development and Evaluation Study Authors Xu Qidi, Amjad Nuzha, Giles Grace, Cumming Alexa, Hermesky De'angelo, Wen Alexander, Kwak Min Ji, Kim ",
+   "text": "Cardiology scraped pubmed PubMed / Journal of medical Internet research Title Automated Health Care Thematic Analysis Using a Multiagent Large Language Model: Algorithm Development and Evaluation Study Authors Xu Qidi, Amjad Nuzha, Giles Grace, Cumming Alexa, Hermesky De'angelo, Wen Alexander, Kwak Min Ji, Kim Yejin Journal / DOI Journal of medical Internet research · DOI: 10.2196/90872 · PMID: 42814987 https://pubmed.ncbi.nlm.nih.gov/42814987/ Abstract BACKGROUND: Understanding patients' experiences is essential for advancing patient centered care, especially in chronic diseases that require ongoing communication. Qualitative thematic analysis is widely used to explore these experiences; however, the process remains labor intensive, subjective, and difficult to scale. OBJECTIVE: This study aimed to develop and evaluate Collaborative Theme Identification Agents (CoTI), a multiagent large language model framework designed to support manual thematic analysis by rapidly generating supporting excerpts, initial codes, and themes. METHODS: CoTI consists of 3 agents: Instructor, Thematizer, and CodebookGenerator. The Instructor refines instruction prompts, the Thematizer extracts supporting excerpts and generates initial codes for each transcript, and the CodebookGenerator groups similar codes across all transcripts into a codebook with themes. We evaluated CoTI primarily using 12 transcripts of patient with heart failure, with a focus on perceptions of medication intensity. CoTI generated outputs were compared against the reference standard developed by senior investigators. To explore human AI interaction in thematic analyses, we further implemented CoTI in a user facing application. RESULTS: CoTI generated supporting excerpts, initial codes, and themes that were more similar to those of senior investigators than were the outputs of junior investigators, baseline natural language processing models, and other basic large language models. In an exploratory human AI collaboration experiment, we found that the collaboration between CoTI and junior investigators provided only marginal gains compared to CoTI alone. A possible hypothesis was that junior investigators may overrely on CoTI and limit their independent critical thinking. CONCLUSIONS: CoTI can improve the efficiency of thematic analysis by rapidly generating supporting excerpts, initial codes, and themes for human researchers' review. These findings highlight CoTI's potential as a useful tool for scalable qualitative research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1247",
@@ -7350,8 +7401,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/emergency-medicine/cn.em.lithium-toxicity.hemodialysis-indication.md",
-   "snippet": "정의 리튬 중독은 치료 범위(대개 0.6~1.2 mEq/L)가 좁은 리튬이 몸에 쌓여 신경·콩팥·심장 독성이 나타나는 상태다. 급성(한꺼번에 대량 복용), 만성(치료 중 서서히 축적), 급성 만성(복용 중인 사람이 대량 복용)으로 나눈다. 이 정리본의 목표는 약물 상호작용으로 생긴 만성 중독에서 어떤 소견이 식염수 보조를 넘어 응급 혈액투석을 부르는지 를 가르는 것이다. 병태생리 정상 처리. 리튬은 대사되지 않고 거의 전부 콩",
-   "text": "Emergency Medicine 정의 리튬 중독은 치료 범위(대개 0.6~1.2 mEq/L)가 좁은 리튬이 몸에 쌓여 신경·콩팥·심장 독성이 나타나는 상태다. 급성(한꺼번에 대량 복용), 만성(치료 중 서서히 축적), 급성 만성(복용 중인 사람이 대량 복용)으로 나눈다. 이 정리본의 목표는 약물 상호작용으로 생긴 만성 중독에서 어떤 소견이 식염수 보조를 넘어 응급 혈액투석을 부르는지 를 가르는 것이다. 병태생리 정상 처리. 리튬은 대사되지 않고 거의 전부 콩팥으로 나간다. 1가 양이온이라 사구체에서 자유롭게 여과되고, 근위세뇨관에서 나트륨과 같은 길로 대부분 재흡수된다 [[?katzung]]. 그래서 리튬 청소율은 콩팥이 나트륨을 얼마나 아끼느냐에 따라 움직인다. 축적의 기전. 탈수·설사·구토·저염식처럼 몸이 나트륨을 아끼는 상황은 근위세뇨관 재흡수를 늘리고, 리튬도 함께 되돌아온다. 티아지드는 원위세뇨관 Na Cl 공수송체를 막아 가벼운 용적 감소를 만들고, 그 보상으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 떨어진다(교과서 수치 25~40 %) [[?katzung]]. NSAID·ACE 억제제도 사구체 여과·나트륨 처리를 바꿔 같은 방향으로 작용한다 [[?katzung]]. 용량을 바꾸지 않았는데 새 약을 시작한 지 몇 주 만에 중독이 생기는 이유다. 콩팥기능이 떨어지면 배설이 더 줄고, 리튬이 콩팥을 다시 다치게 하는 악순환이 생긴다. 독성의 기전. 리튬은 세포막 이온 수송, adenylate cyclase, Na K ATPase, 신경전달물질 분비를 방해한다 [[harrison 21: 459장 p.3595]]. 뇌 안으로 천천히 들어가고 천천히 나오는 약이라(해리슨은 「느린 분포」 약으로 분류 [[harrison 21: 459장 p.3584]]), 만성 축적에서는 혈청과 뇌가 이미 평형을 이뤄 급성 중독보다 낮은 농도에서 독성이 나타난다 [[harrison 21: 459장 p.3595]]. 중증에서는 뇌병증·운동장애가 오래 또는 영구히 남을 수 있다 [[harrison 21: 459장 p.3595]]. 기전에서 소견으로 신경 : 실조, 무도무정위운동, 뇌병증, 반사항진, 근간대경련, 안진 → 중증은 혼수·경련 [[harrison 21: 459장 p.3595]]. 거친 진전·실조가 치료 중 미세 진전과 다른 점이다. 위장관 : 오심·구토·설사 — 급성 과량에서 먼저 두드러진다 [[harrison 21: 459장 p.3595]]. 콩팥 : 신성 요붕증(다뇨·고나트륨혈증 경향) [[harrison 21: 459장 p.3595]]. 크레아티닌 상승은 원인이자 결과다. 심장 : 서맥·방실차단 [[harrison 21: 459장 p.3585]], 중증에서 부정맥 [[harrison 21: 459장 p.3595]]. 검사 : 혈청 리튬 정량이 처치를 이끈다 [[harrison 21: 459장 p.3586]]. 리튬은 음이온차를 낮출 수 있다 [[harrison 21: 459장 p.3585]]. 한 번의 농도로 끝내지 않는다 — 서방정은 흡수가 늦고, 투석 뒤에는 재분포로 되오른다 [[harrison 21: 459장 p.3587]]. 감별 세로토닌 증후군 : 근간대경련·반사항진이 겹치지만 자율신경 항진(발열·발한·설사·빈맥)과 세로토닌 약 복용이 단서다 [[harrison 21: 459장 p.3595]]. 신경이완제 악성 증후군 : 고열·납관 경직·CK 상승, 항정신병약 복용. 리튬성 신성 요붕증 단독 : 다뇨·고나트륨혈증이 주 소견이고 농도는 정상~경도 상승, 신경독성은 없다. 치료 용량의 부작용 : 미세 자세 진전은 치료 농도에서도 흔하다 — 거친 진전·실조·의식 변화가 중독 쪽 신호다. 검사 혈청 리튬(마지막 복용 시각과 함께), 크레아티닌·요소질소, 나트륨·칼륨, 칼슘, 갑상선 기능, 12유도 심전도. 급성 대량 복용이 의심되면 서방정 여부를 확인하고 몇 시간 간격으로 농도를 반복한다. 해석 한계 : 만성 중독에서는 혈청 농도가 조직 농도를 다 보여 주지 못한다 — 같은 농도라도 급성보다 무겁게 본다 [[harrison 21: 459장 p.3595]]. 치료 1. 모두에게 — 리튬과 원인약(티아지드·NSAID·ACE 억제제) 중단, 정맥 수액(식염수)으로 용적을 채워 근위세뇨관 리튬 재흡수를 줄인다 [[harrison 21: 459장 p.3595]]. 2. 위장관 제거 — 급성 대량 복용이면 전장관 세척 [[harrison 21: 459장 p.3595]]. 활성탄은 리튬을 흡착하지 못한다 [[harrison 21: 459장 p.3588]]. 만성 축적에는 해당하지 않는다. 3. 혈액투석 — 혼수·경련·뇌병증 또는 중증·진행·지속하는 신경근 기능 이상, 급성 과량 뒤 최고 농도 4 mEq/L [[harrison 21: 459장 p.3595]]. 리튬은 분자가 작고 수용성이며 단백결합이 없고 분포용적이 작아 투석에 잘 빠진다 [[harrison 21: 459장 p.3589]]. EXTRIP 은 콩팥기능 저하를 함께 기준에 넣는다 [[?extrip lithium 2015]]. 4. 반응 확인·재평가 — 투석 뒤 몇 시간 간격으로 농도를 다시 잰다. 조직에서 재분포해 되오르면 투석을 반복한다 [[harrison 21: 459장 p.3587]]. 신경 증상은 농도보다 늦게 좋아진다. 회복 뒤 리튬을 다시 쓸지, 쓴다면 상호작용 약을 피하고 용량·농도 감시를 다시 정한다. 권고와 예외 식염수는 모든 리튬 중독의 기본이지만, 중증 신경독성에서는 투석의 대체가 아니다. 만성 중독의 투석 판단은 농도보다 신경 증상 이 이끈다. 숫자 문턱( 4)은 급성 과량의 기준이다 [[harrison 21: 459장 p.3595]]. 활성탄·양이온 교환수지·강제 이뇨는 리튬 제거 수단이 아니다. 티아지드 상호작용의 수치(청소율 25~40 % 감소)와 EXTRIP 세부 문턱은 원문 미대조다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 투석 적응을 무엇으로 적나 — 시험 기준: 의식 저하·경련·중증 신경근 기능 이상이면 농도와 무관하게 혈액투석 [[harrison 21: 459장 p.3595]] / 다른 기준: EXTRIP 은 콩팥기능 저하 + 리튬 4.0, 리튬 5.0, 착란, 36시간 안에 1.0 미만이 어려울 때를 권고·제안으로 나눈다 [[?extrip lithium 2015]]. 해리슨 표는 콩팥기능 기준 없이 「급성 과량 뒤 최고 농도 4」만 숫자로 적는다 / 왜 다른가: 해리슨 표는 요약이고, EXTRIP 은 체외 제거만 다룬 체계적 검토 권고다 / 시험에서는: KMLE · USMLE 모두 「의식 저하·경련 = 투석」은 공통. 숫자 문턱을 묻는다면 급성 과량 4 가 두 자료에 공통인 값이다. Z2 맥락 · 문항 해설 안의 숫자 불일치 — 원래 문항 해설의 「정답 핵심」은 EXTRIP 문턱을 「콩팥기능 저하 + 리튬 2.5 초과」로, 「원리」는 「 4.0」으로 적는다. 이 정리본은 해리슨과 같은 방향인 4.0 을 따랐고, 2.5 는 원문을 보지 못해 쓰지 않았다 [[?extrip lithium 2015]] / 시험에서는: 이 문항은 의식 저하로 이미 투석 적응이라 답은 바뀌지 않는다(문항 해설 수정은 사람 검토). (심화) 왜 만성 중독은 투석 뒤에도 끝나지 않는가 리튬은 혈액에서는 투석으로 빨리 빠지지만, 세포 안·뇌 조직에서는 천천히 나온다. 해리슨은 체외 제거 중에는 혈중 농도가 조직 농도보다 낮아 독성과 어긋날 수 있고, 투석을 멈춘 뒤 조직에서 재분포해 혈중 농도가 되오른다고 리튬을 예로 든다 [[harrison 21: 459장 p.3587]]. 만성 축적은 조직에 쌓인 양이 많아 이 반동이 크다. 그래서 투석은 「한 번에 끝」이 아니라 농도를 다시 재며 반복 여부를 정하는 과정이고, 신경 증상의 회복은 혈청 농도보다 늦다."
+   "snippet": "판단 — 왜 식염수가 아니라 혈액투석인가 정맥 식염수는 모든 리튬 중독의 기본이지만 리튬을 빼는 것은 콩팥이다 — 콩팥기능이 떨어져 있으면 식염수만으로는 농도가 느리게 내려간다. 만성 축적은 뇌와 이미 평형이라 같은 농도에서도 급성보다 독성이 크다 — 투석 판단은 숫자보다 신경 증상 이 이끈다 [[harrison 21: 459장 p.3595]]. 리튬은 작고 수용성이며 단백결합이 없고 분포용적이 작아 투석에 잘 빠진다 [[ha",
+   "text": "Emergency Medicine 판단 — 왜 식염수가 아니라 혈액투석인가 정맥 식염수는 모든 리튬 중독의 기본이지만 리튬을 빼는 것은 콩팥이다 — 콩팥기능이 떨어져 있으면 식염수만으로는 농도가 느리게 내려간다. 만성 축적은 뇌와 이미 평형이라 같은 농도에서도 급성보다 독성이 크다 — 투석 판단은 숫자보다 신경 증상 이 이끈다 [[harrison 21: 459장 p.3595]]. 리튬은 작고 수용성이며 단백결합이 없고 분포용적이 작아 투석에 잘 빠진다 [[harrison 21: 459장 p.3589]]. 활성탄은 흡착하지 못한다 [[harrison 21: 459장 p.3588]]. 경증(의식 명료, 미세 진전·오심만, 콩팥기능 정상)이면 원인약 중단 + 식염수 + 농도 추적이 답이다. 기전 — 나트륨을 아끼면 리튬도 쌓인다 리튬 중독은 치료 범위(대개 0.6~1.2 mEq/L)가 좁은 리튬이 몸에 쌓여 신경·콩팥·심장 독성이 나타나는 상태다. 급성(한꺼번에 대량 복용), 만성(치료 중 서서히 축적), 급성 만성(복용 중인 사람이 대량 복용)으로 나눈다. 이 정리본의 목표는 약물 상호작용으로 생긴 만성 중독에서 어떤 소견이 식염수 보조를 넘어 응급 혈액투석을 부르는지 를 가르는 것이다. 정상 처리. 리튬은 대사되지 않고 거의 전부 콩팥으로 나간다. 1가 양이온이라 사구체에서 자유롭게 여과되고, 근위세뇨관에서 나트륨과 같은 길로 대부분 재흡수된다 [[?katzung]]. 그래서 리튬 청소율은 콩팥이 나트륨을 얼마나 아끼느냐에 따라 움직인다. 축적의 기전. 탈수·설사·구토·저염식처럼 몸이 나트륨을 아끼는 상황은 근위세뇨관 재흡수를 늘리고, 리튬도 함께 되돌아온다. 티아지드는 원위세뇨관 Na Cl 공수송체를 막아 가벼운 용적 감소를 만들고, 그 보상으로 근위세뇨관 재흡수가 늘어 리튬 청소율이 떨어진다(교과서 수치 25~40 %) [[?katzung]]. NSAID·ACE 억제제도 사구체 여과·나트륨 처리를 바꿔 같은 방향으로 작용한다 [[?katzung]]. 용량을 바꾸지 않았는데 새 약을 시작한 지 몇 주 만에 중독이 생기는 이유다. 콩팥기능이 떨어지면 배설이 더 줄고, 리튬이 콩팥을 다시 다치게 하는 악순환이 생긴다. 기전에서 소견으로 독성의 기전. 리튬은 세포막 이온 수송, adenylate cyclase, Na K ATPase, 신경전달물질 분비를 방해한다 [[harrison 21: 459장 p.3595]]. 뇌 안으로 천천히 들어가고 천천히 나오는 약이라(해리슨은 「느린 분포」 약으로 분류 [[harrison 21: 459장 p.3584]]), 만성 축적에서는 혈청과 뇌가 이미 평형을 이뤄 급성 중독보다 낮은 농도에서 독성이 나타난다 [[harrison 21: 459장 p.3595]]. 중증에서는 뇌병증·운동장애가 오래 또는 영구히 남을 수 있다 [[harrison 21: 459장 p.3595]]. 신경 : 실조, 무도무정위운동, 뇌병증, 반사항진, 근간대경련, 안진 → 중증은 혼수·경련 [[harrison 21: 459장 p.3595]]. 거친 진전·실조가 치료 중 미세 진전과 다른 점이다. 위장관 : 오심·구토·설사 — 급성 과량에서 먼저 두드러진다 [[harrison 21: 459장 p.3595]]. 콩팥 : 신성 요붕증(다뇨·고나트륨혈증 경향) [[harrison 21: 459장 p.3595]]. 크레아티닌 상승은 원인이자 결과다. 심장 : 서맥·방실차단 [[harrison 21: 459장 p.3585]], 중증에서 부정맥 [[harrison 21: 459장 p.3595]]. 검사 : 혈청 리튬 정량이 처치를 이끈다 [[harrison 21: 459장 p.3586]]. 리튬은 음이온차를 낮출 수 있다 [[harrison 21: 459장 p.3585]]. 한 번의 농도로 끝내지 않는다 — 서방정은 흡수가 늦고, 투석 뒤에는 재분포로 되오른다 [[harrison 21: 459장 p.3587]]. 가르는 소견 — 비슷한 신경 증상과 검사의 한계 세로토닌 증후군 : 근간대경련·반사항진이 겹치지만 자율신경 항진(발열·발한·설사·빈맥)과 세로토닌 약 복용이 단서다 [[harrison 21: 459장 p.3595]]. 신경이완제 악성 증후군 : 고열·납관 경직·CK 상승, 항정신병약 복용. 리튬성 신성 요붕증 단독 : 다뇨·고나트륨혈증이 주 소견이고 농도는 정상~경도 상승, 신경독성은 없다. 치료 용량의 부작용 : 미세 자세 진전은 치료 농도에서도 흔하다 — 거친 진전·실조·의식 변화가 중독 쪽 신호다. 검사: 혈청 리튬(마지막 복용 시각과 함께), 크레아티닌·요소질소, 나트륨·칼륨, 칼슘, 갑상선 기능, 12유도 심전도. 급성 대량 복용이 의심되면 서방정 여부를 확인하고 몇 시간 간격으로 농도를 반복한다. 해석 한계 : 만성 중독에서는 혈청 농도가 조직 농도를 다 보여 주지 못한다 — 같은 농도라도 급성보다 무겁게 본다 [[harrison 21: 459장 p.3595]]. 선택 — 누구에게 투석하나 1. 모두에게 — 리튬과 원인약(티아지드·NSAID·ACE 억제제) 중단, 정맥 수액(식염수)으로 용적을 채워 근위세뇨관 리튬 재흡수를 줄인다 [[harrison 21: 459장 p.3595]]. 2. 위장관 제거 — 급성 대량 복용이면 전장관 세척 [[harrison 21: 459장 p.3595]]. 활성탄은 리튬을 흡착하지 못한다 [[harrison 21: 459장 p.3588]]. 만성 축적에는 해당하지 않는다. 3. 혈액투석 — 혼수·경련·뇌병증 또는 중증·진행·지속하는 신경근 기능 이상, 급성 과량 뒤 최고 농도 4 mEq/L [[harrison 21: 459장 p.3595]]. 리튬은 분자가 작고 수용성이며 단백결합이 없고 분포용적이 작아 투석에 잘 빠진다 [[harrison 21: 459장 p.3589]]. EXTRIP 은 콩팥기능 저하를 함께 기준에 넣는다 [[?extrip lithium 2015]]. 4. 반응 확인·재평가 — 투석 뒤 몇 시간 간격으로 농도를 다시 잰다. 조직에서 재분포해 되오르면 투석을 반복한다 [[harrison 21: 459장 p.3587]]. 신경 증상은 농도보다 늦게 좋아진다. 회복 뒤 리튬을 다시 쓸지, 쓴다면 상호작용 약을 피하고 용량·농도 감시를 다시 정한다. 권고와 예외 식염수는 모든 리튬 중독의 기본이지만, 중증 신경독성에서는 투석의 대체가 아니다. 만성 중독의 투석 판단은 농도보다 신경 증상 이 이끈다. 숫자 문턱( 4)은 급성 과량의 기준이다 [[harrison 21: 459장 p.3595]]. 활성탄·양이온 교환수지·강제 이뇨는 리튬 제거 수단이 아니다. 티아지드 상호작용의 수치(청소율 25~40 % 감소)와 EXTRIP 세부 문턱은 원문 미대조다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 투석 적응을 무엇으로 적나 — 시험 기준: 의식 저하·경련·중증 신경근 기능 이상이면 농도와 무관하게 혈액투석 [[harrison 21: 459장 p.3595]] / 다른 기준: EXTRIP 은 콩팥기능 저하 + 리튬 4.0, 리튬 5.0, 착란, 36시간 안에 1.0 미만이 어려울 때를 권고·제안으로 나눈다 [[?extrip lithium 2015]]. 해리슨 표는 콩팥기능 기준 없이 「급성 과량 뒤 최고 농도 4」만 숫자로 적는다 / 왜 다른가: 해리슨 표는 요약이고, EXTRIP 은 체외 제거만 다룬 체계적 검토 권고다 / 시험에서는: KMLE · USMLE 모두 「의식 저하·경련 = 투석」은 공통. 숫자 문턱을 묻는다면 급성 과량 4 가 두 자료에 공통인 값이다. Z2 맥락 · 문항 해설 안의 숫자 불일치 — 원래 문항 해설의 「정답 핵심」은 EXTRIP 문턱을 「콩팥기능 저하 + 리튬 2.5 초과」로, 「원리」는 「 4.0」으로 적는다. 이 정리본은 해리슨과 같은 방향인 4.0 을 따랐고, 2.5 는 원문을 보지 못해 쓰지 않았다 [[?extrip lithium 2015]] / 시험에서는: 이 문항은 의식 저하로 이미 투석 적응이라 답은 바뀌지 않는다(문항 해설 수정은 사람 검토). (심화) 왜 만성 중독은 투석 뒤에도 끝나지 않는가 리튬은 혈액에서는 투석으로 빨리 빠지지만, 세포 안·뇌 조직에서는 천천히 나온다. 해리슨은 체외 제거 중에는 혈중 농도가 조직 농도보다 낮아 독성과 어긋날 수 있고, 투석을 멈춘 뒤 조직에서 재분포해 혈중 농도가 되오른다고 리튬을 예로 든다 [[harrison 21: 459장 p.3587]]. 만성 축적은 조직에 쌓인 양이 많아 이 반동이 크다. 그래서 투석은 「한 번에 끝」이 아니라 농도를 다시 재며 반복 여부를 정하는 과정이고, 신경 증상의 회복은 혈청 농도보다 늦다."
   },
   {
    "id": "cn.em.beta-blocker-overdose.glucagon-mechanism",
@@ -7364,8 +7415,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/emergency-medicine/cn.em.beta-blocker-overdose.glucagon-mechanism.md",
-   "snippet": "정의 베타차단제 중독은 베타 수용체 차단이 과도해 서맥·방실차단·저혈압·심인성 쇼크가 생기는 상태다. 약에 따라 심장선택(아테놀롤·메토프롤롤)·비선택(프로프라놀롤·나돌롤)·부분작용(핀돌롤)·알파 차단 겸비(카르베딜롤·라베탈롤)·막 작용(프로프라놀롤·소탈롤·아세부톨롤) 성질이 달라 중독 양상도 다르다 [[harrison 21: 459장 p.3591]]. 병태생리 정상 심근: 카테콜아민 → 베타1 수용체 → Gs → adenyla",
-   "text": "Emergency Medicine 정의 베타차단제 중독은 베타 수용체 차단이 과도해 서맥·방실차단·저혈압·심인성 쇼크가 생기는 상태다. 약에 따라 심장선택(아테놀롤·메토프롤롤)·비선택(프로프라놀롤·나돌롤)·부분작용(핀돌롤)·알파 차단 겸비(카르베딜롤·라베탈롤)·막 작용(프로프라놀롤·소탈롤·아세부톨롤) 성질이 달라 중독 양상도 다르다 [[harrison 21: 459장 p.3591]]. 병태생리 정상 심근: 카테콜아민 → 베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → L형 칼슘통로·포스포람반 인산화 → 칼슘 유입과 근소포체 칼슘 재흡수 증가 → 수축력과 심박수 증가 [[?goodman gilman]]. 베타차단제는 이 사슬의 입구를 막는다. 사슬의 뒤쪽(adenylate cyclase 이후)은 멀쩡하므로, 다른 입구로 들어가거나(글루카곤) 뒤쪽을 직접 거드는(PDE 억제, 칼슘) 방법이 해독의 원리가 된다. 기전에서 소견으로 동결절·방실결절의 cAMP 감소 → 서맥·방실차단(아트로핀은 미주신경만 풀어 반응이 약하다). 심근 cAMP 감소 → 수축력 저하 → 저혈압·심인성 쇼크. 간 글리코겐 분해·포도당신생의 베타 매개 부분이 막힘 → 저혈당. 세포 안으로의 칼륨 이동 감소 → 고칼륨 [[harrison 21: 459장 p.3591]]. 막 작용 약(프로프라놀롤) → 나트륨통로 차단으로 QRS 연장·경련. 소탈롤 → QT 연장·심실빈맥. 서방형·소탈롤은 늦게 나타날 수 있다. 감별 칼슘통로차단제 중독도 서맥·저혈압이지만 고혈당 이 흔하고 저혈압이 주로 혈관저항 감소 때문이다. 디곡신 중독(고칼륨·다양한 부정맥), 클로니딘·아편류(축동·의식 저하)도 서맥·저혈압을 만든다 [[harrison 21: 459장 p.3591]]. 검사 12유도 심전도(PR·QRS·QT), 혈당·칼륨, 복용 약의 이름·제형(서방형 여부)·양. 베타차단제의 혈중 농도는 치료에 쓰지 않는다. 치료 1. 기도·호흡·순환 확보, 수액, 아트로핀. 2. 저혈압·증상성 서맥에 글루카곤 [[harrison 21: 459장 p.3591]]. 3. 아트로핀·이소프로테레놀·도파민·도부타민·에피네프린·노르에피네프린은 때때로 효과가 있다. 4. 난치성: 고용량 인슐린(포도당·칼륨으로 정상 혈당·칼륨 유지), 전기 조율, 기계적 순환 보조 [[harrison 21: 459장 p.3587, p.3591]]. 5. 반응 확인: 심박·혈압·소변량·의식, 혈당·칼륨 반복 측정. 권고와 예외 글루카곤은 구역·구토가 흔하다 — 의식이 떨어진 환자에서는 기도 보호를 먼저 생각한다(용량·지속 주입 속도는 이 정리본에서 대조하지 않았다). 해리슨은 글루카곤을 먼저 적지만, 약제 간 우선순위는 근거 수준이 낮은 영역이다 — 이 정리본의 목표는 「왜 듣는가」의 기전이다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 459장 p.3587, 3591 — 문항의 해설과 어긋난 곳 없음. 수용체 수준의 기전은 해리슨이 다루지 않아 대조 범위 밖) (심화) cAMP 를 올리는 여러 길 표 「심근 cAMP·칼슘을 올리는 길」. 수용체가 막혔을 때의 해독 원리는 세 가지다 — 막힌 입구를 경쟁으로 연다(고용량 작용제), 다른 입구로 같은 사슬에 들어간다(글루카곤), 사슬의 뒤쪽을 거든다(PDE 억제·칼슘). USMLE 기전 문항은 이 셋을 서로의 오답으로 둔다."
+   "snippet": "판단 — 왜 글루카곤은 베타 수용체 없이 듣나 베타차단제는 「베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → 칼슘 유입」 사슬의 입구 만 막는다. 뒤쪽은 멀쩡하다. 글루카곤은 자신의 글루카곤 수용체 (역시 Gs 결합)로 같은 adenylate cyclase 를 켠다 — 「다른 입구, 같은 사슬」 [[?goodman gilman]]. 마지막 단계(L형 칼슘통로를 통한 칼슘 유입)는 같지만 그",
+   "text": "Emergency Medicine 판단 — 왜 글루카곤은 베타 수용체 없이 듣나 베타차단제는 「베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → 칼슘 유입」 사슬의 입구 만 막는다. 뒤쪽은 멀쩡하다. 글루카곤은 자신의 글루카곤 수용체 (역시 Gs 결합)로 같은 adenylate cyclase 를 켠다 — 「다른 입구, 같은 사슬」 [[?goodman gilman]]. 마지막 단계(L형 칼슘통로를 통한 칼슘 유입)는 같지만 그 사이에 2차전달자가 있다 — 「직접 연다」는 사슬의 중간을 지운 서술이다. 밀리논(PDE3 억제)·칼슘염·고용량 작용제는 다른 해독 원리다(표 「심근 cAMP·칼슘을 올리는 길」). 기전 — 베타1 수용체에서 칼슘 유입으로 정상 심근: 카테콜아민 → 베타1 수용체 → Gs → adenylate cyclase → cAMP → PKA → L형 칼슘통로·포스포람반 인산화 → 칼슘 유입과 근소포체 칼슘 재흡수 증가 → 수축력과 심박수 증가 [[?goodman gilman]]. 베타차단제는 이 사슬의 입구를 막는다. 사슬의 뒤쪽(adenylate cyclase 이후)은 멀쩡하므로, 다른 입구로 들어가거나(글루카곤) 뒤쪽을 직접 거드는(PDE 억제, 칼슘) 방법이 해독의 원리가 된다. 약에 따라 심장선택(아테놀롤·메토프롤롤)·비선택(프로프라놀롤·나돌롤)·부분작용(핀돌롤)·알파 차단 겸비(카르베딜롤·라베탈롤)·막 작용(프로프라놀롤·소탈롤·아세부톨롤) 성질이 달라 중독 양상도 다르다 [[harrison 21: 459장 p.3591]]. 기전에서 소견으로 동결절·방실결절의 cAMP 감소 → 서맥·방실차단(아트로핀은 미주신경만 풀어 반응이 약하다). 심근 cAMP 감소 → 수축력 저하 → 저혈압·심인성 쇼크. 간 글리코겐 분해·포도당신생의 베타 매개 부분이 막힘 → 저혈당. 세포 안으로의 칼륨 이동 감소 → 고칼륨 [[harrison 21: 459장 p.3591]]. 막 작용 약(프로프라놀롤) → 나트륨통로 차단으로 QRS 연장·경련. 소탈롤 → QT 연장·심실빈맥. 서방형·소탈롤은 늦게 나타날 수 있다. 가르는 소견 — 다른 서맥·저혈압 중독 칼슘통로차단제 중독도 서맥·저혈압이지만 고혈당 이 흔하고 저혈압이 주로 혈관저항 감소 때문이다. 디곡신 중독(고칼륨·다양한 부정맥), 클로니딘·아편류(축동·의식 저하)도 서맥·저혈압을 만든다 [[harrison 21: 459장 p.3591]]. 검사: 12유도 심전도(PR·QRS·QT), 혈당·칼륨, 복용 약의 이름·제형(서방형 여부)·양. 베타차단제의 혈중 농도는 치료에 쓰지 않는다. 선택 — 해리슨의 치료 순서 1. 기도·호흡·순환 확보, 수액, 아트로핀. 2. 저혈압·증상성 서맥에 글루카곤 [[harrison 21: 459장 p.3591]]. 3. 아트로핀·이소프로테레놀·도파민·도부타민·에피네프린·노르에피네프린은 때때로 효과가 있다. 4. 난치성: 고용량 인슐린(포도당·칼륨으로 정상 혈당·칼륨 유지), 전기 조율, 기계적 순환 보조 [[harrison 21: 459장 p.3587, p.3591]]. 5. 반응 확인: 심박·혈압·소변량·의식, 혈당·칼륨 반복 측정. 권고와 예외 글루카곤은 구역·구토가 흔하다 — 의식이 떨어진 환자에서는 기도 보호를 먼저 생각한다(용량·지속 주입 속도는 이 정리본에서 대조하지 않았다). 해리슨은 글루카곤을 먼저 적지만, 약제 간 우선순위는 근거 수준이 낮은 영역이다 — 이 정리본의 목표는 「왜 듣는가」의 기전이다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 459장 p.3587, 3591 — 문항의 해설과 어긋난 곳 없음. 수용체 수준의 기전은 해리슨이 다루지 않아 대조 범위 밖) (심화) cAMP 를 올리는 여러 길 수용체가 막혔을 때의 해독 원리는 세 가지다 — 막힌 입구를 경쟁으로 연다(고용량 작용제), 다른 입구로 같은 사슬에 들어간다(글루카곤), 사슬의 뒤쪽을 거든다(PDE 억제·칼슘). USMLE 기전 문항은 이 셋을 서로의 오답으로 둔다."
   },
   {
    "id": "cn.em.ards.lung-protective-ventilation",

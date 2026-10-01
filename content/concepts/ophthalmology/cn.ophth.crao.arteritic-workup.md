@@ -4,8 +4,8 @@ type: concept
 topic: Ophthalmology
 see_also: [Rheumatology, Neurology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 2
+updated: 2026-10-01
+version: 3
 outline: h32            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 32장 Disorders of the Eye
 confidence: medium
 review_status: unreviewed
@@ -179,16 +179,29 @@ variants:
     answer: "B"
     explanation: "나이·성별·눈의 쪽·정보 제시 순서가 바뀌었지만 결정 단서는 같다 — 50세 이상의 새 관자놀이 두통·두피 압통·턱 파행·류마티스다발근통 증상·빈혈·혈소판 증가는 거대세포동맥염에 의한 동맥염성 폐쇄를 가리키고, 치료하지 않으면 며칠 안에 반대쪽 눈을 잃을 수 있다. 그래서 적혈구침강속도·C반응단백을 즉시 확인하고, 높으면 생검을 기다리지 않고 고용량 글루코코르티코이드를 시작한다. 경동맥·심장·뇌 영상은 색전 원인 평가로 뒤에 한다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 망막중심동맥폐쇄 — 창백한 망막과 황반의 체리빛 반점
-  query: '"central retinal artery occlusion" AND "cherry-red spot"'
-  caption_terms:
-  - cherry
-  modality: FUNDUS
 figures_rejected:
 - asset: PMC-PMC13373650_Figure1
   reason: 공막돌륭술 뒤 생긴 비전형 증례의 수술 후 광각 사진 — 체리빛 반점 교육용으로 부적합
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc12919356_figure1-0-0-388-394.jpg
+  kind: fundus
+  at: 기전에서 소견으로
+  shows: 망막중심동맥폐쇄 — 창백한 망막과 황반의 체리빛 반점
+  look_for:
+  - 시신경유두 주변·뒤극부 망막이 하얗게 부은 부분(흰 화살촉)
+  - 황반 중심의 붉은 점(가는 흰 화살표)
+  label: '「Findings of fundoscopy. Panel A shows the fundus of the patient’s right eye. There is retinal pallor (white arrowheads, indicating ischaemic inner retinal tissue), a cherry red spot (white thin arrow, reflecting preserved choroidal perfusion at the fovea), and a small area of normally perfused retina inferior to the optic disc due to a patent cilioretinal artery (white block arrow). Panel B shows the fundus of the contralateral, healthy (left) eye with a normally perfused retina and arteriolar narrowing (black arrow, a sign of chronic hypertensive vascular changes).」 — Central retinal artery occlusion in a patient with aortic valve papillary fibroelastoma: a case report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Central retinal artery occlusion in a patient with aortic valve papillary fibroelastoma: a case report. European Heart Journal. Case Reports'
+  doi: 10.1093/ehjcr/ytag048
+  credit: 'Central retinal artery occlusion in a patient with aortic valve papillary fibroelastoma: a case report. Eur Heart J Case Rep. 2026 Jan 25;10(2):ytag048. doi: 10.1093/ehjcr/ytag048 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12919356/
+  asset: PMC-PMC12919356_Figure1
+  privacy_check: 패널 A 안저 사진만 잘라 봄 — 얼굴·문신·이름·병원 표지·글자 없음(패널 문자 A와 화살표만)
+  crop: 0,0,388,394
 ---
 
 ## 정의
