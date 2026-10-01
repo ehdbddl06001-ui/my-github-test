@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3151,
+  "total": 3152,
   "byType": {
+   "anatomy": 770,
    "usmle": 174,
-   "anatomy": 769,
    "paper": 697,
    "kmle": 1216,
    "imaging": 188,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 769,
+   "Anatomy": 770,
    "Cardiology": 228,
    "Nephrology": 182,
    "Infectious Disease": 164,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2119,
+   "high": 2120,
    "medium": 983,
    "low": 49
   },
   "tagCount": 4397
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-02",
+   "type": "anatomy",
+   "unit": "팔·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-02",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/anatomy/daily/2026-10-02.md",
+   "snippet": "오늘의 학습 (2026 10 02 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 22일 · Tagging 2까지 17일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-02 팔·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 02 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 22일 · Tagging 2까지 17일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0187",
    "type": "usmle",
