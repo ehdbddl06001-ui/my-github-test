@@ -1,23 +1,23 @@
 {
- "started": "2026-09-30T09:40:00+09:00",
+ "started": "2026-10-01T09:42:37+09:00",
  "built": [
-  "피부과",
-  "안과",
-  "외과",
-  "호흡기내과",
-  "감염내과",
-  "소화기내과"
+  "응급의학과",
+  "감염내과"
  ],
  "skipped": [
-  "응급의학과",
   "정형외과",
+  "피부과",
   "순환기내과",
   "내분비내과",
+  "안과",
+  "외과",
   "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
   "류마티스내과",
+  "호흡기내과",
+  "소화기내과",
   "알레르기내과",
   "기초의학",
   "신장내과",
@@ -28,24 +28,14 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "피부과": [],
-  "안과": [],
-  "외과": [],
-  "호흡기내과": [],
-  "감염내과": [],
-  "소화기내과": []
+  "응급의학과": [],
+  "감염내과": []
  },
  "notes": {
-  "피부과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 35%)"
-  ],
-  "안과": [],
-  "외과": [],
-  "호흡기내과": [],
+  "응급의학과": [],
   "감염내과": [
-   "마지막 쪽 내용이 적다(3%)"
-  ],
-  "소화기내과": []
+   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 왼쪽 단 아래가 비어 있다(빈 공간 44%)"
+  ]
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -56,145 +46,63 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "피부과": {
-   "tried": 133,
-   "diagram_after_section": {
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin": 12,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#shrink": 1.0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#pad": 0,
-    "u-cn-derm-seborrheic-keratosis-dermoscopy-keratinocyte-origin#col": true,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning": 17,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#shrink": 1.0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#pad": 0,
-    "u-cn-derm-plaque-psoriasis-systemic-choice-pregnancy-planning#col": false,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup": 17,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#shrink": 1.0,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#pad": 14,
-    "u-cn-derm-erythema-nodosum-underlying-cause-workup#col": false,
-    "u-cn-derm-scabies-treat-with-contacts": 12,
-    "u-cn-derm-scabies-treat-with-contacts#shrink": 1.0,
-    "u-cn-derm-scabies-treat-with-contacts#pad": 0,
-    "u-cn-derm-scabies-treat-with-contacts#col": false,
-    "u-cn-derm-regressing-pigmented-lesion-biopsy-first": 17,
-    "u-cn-derm-regressing-pigmented-lesion-biopsy-first#shrink": 0.76,
-    "u-cn-derm-regressing-pigmented-lesion-biopsy-first#pad": 0,
-    "u-cn-derm-regressing-pigmented-lesion-biopsy-first#col": false
-   }
-  },
-  "안과": {
-   "tried": 46,
-   "diagram_after_section": {
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 26,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
-    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
-    "u-cn-ophth-crao-arteritic-workup": 20,
-    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
-    "u-cn-ophth-crao-arteritic-workup#pad": 0,
-    "u-cn-ophth-crao-arteritic-workup#col": false,
-    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 1.0,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 28,
-    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false
-   }
-  },
-  "호흡기내과": {
+  "응급의학과": {
    "tried": 36,
    "diagram_after_section": {
-    "u-cn-pulm-copd-exacerbation-hypercapnic-failure-niv": 16,
-    "u-cn-pulm-copd-exacerbation-hypercapnic-failure-niv#shrink": 1.0,
-    "u-cn-pulm-copd-exacerbation-hypercapnic-failure-niv#pad": 0,
-    "u-cn-pulm-copd-exacerbation-hypercapnic-failure-niv#col": false
+    "u-cn-em-ards-lung-protective-ventilation#fig:f1": 5,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 21,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 1.0,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#pad": 0,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": true
    }
   },
   "감염내과": {
-   "tried": 49,
+   "tried": 103,
    "diagram_after_section": {
     "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 15,
     "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#shrink": 1.0,
     "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#pad": 0,
     "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#col": false,
-    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis": 13,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis": 17,
     "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#shrink": 1.0,
     "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#pad": 0,
     "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#col": true,
-    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation": 14,
-    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#shrink": 1.0,
-    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#pad": 0,
-    "u-cn-id-bacillary-angiomatosis-kaposi-differentiation#col": true
-   }
-  },
-  "소화기내과": {
-   "tried": 6,
-   "diagram_after_section": {
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage": 12,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#shrink": 1.0,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#pad": 28,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#col": false
+    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism": 13,
+    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#shrink": 0.88,
+    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#pad": 0,
+    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-09-30T09:48:06+09:00",
+ "finished": "2026-10-01T09:46:29+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "피부과": {
-    "file": "MedKOS_학습서_피부과.pdf",
+   "응급의학과": {
+    "file": "MedKOS_학습서_응급의학과.pdf",
     "status": "uploaded",
-    "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
+    "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
     "kept_id": true,
-    "md5": "83d385102ef9211e8de1ce8e6210101e",
-    "archive": "MedKOS_학습서_피부과_v10_2026-09-30.pdf"
-   },
-   "안과": {
-    "file": "MedKOS_학습서_안과.pdf",
-    "status": "uploaded",
-    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "kept_id": true,
-    "md5": "79c59fab7d57355b588cec0a7db9c2d9",
-    "archive": "MedKOS_학습서_안과_v6_2026-09-30.pdf"
-   },
-   "외과": {
-    "file": "MedKOS_학습서_외과.pdf",
-    "status": "uploaded",
-    "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
-    "kept_id": true,
-    "md5": "761c05f6a099361c80407735b715cff7",
-    "archive": "MedKOS_학습서_외과_v7_2026-09-30.pdf"
-   },
-   "호흡기내과": {
-    "file": "MedKOS_학습서_호흡기내과.pdf",
-    "status": "uploaded",
-    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "kept_id": true,
-    "md5": "066196801861e3cc512370bfc0e803e6",
-    "archive": "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf"
+    "md5": "664c4ed62859f3016aee7ca717f1942d",
+    "archive": "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf"
    },
    "감염내과": {
     "file": "MedKOS_학습서_감염내과.pdf",
     "status": "uploaded",
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
     "kept_id": true,
-    "md5": "347fd6affbc56a4266c6414232fb0edf",
-    "archive": "MedKOS_학습서_감염내과_v8_2026-09-30.pdf"
-   },
-   "소화기내과": {
-    "file": "MedKOS_학습서_소화기내과.pdf",
-    "status": "uploaded",
-    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "kept_id": true,
-    "md5": "329caad1ad8908f7dc50112bf8b35c01",
-    "archive": "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf"
+    "md5": "272c7bf56057c6bd93d9be5f9580fb19",
+    "archive": "MedKOS_학습서_감염내과_v9_2026-10-01.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "04a79255b363305ae701d79aa9525733"
+    "md5": "843fd801fd73913e5b1891624999d715"
    }
   },
-  "at": "2026-09-30T09:48:06+09:00"
+  "at": "2026-10-01T09:46:29+09:00"
  }
 }

@@ -702,18 +702,18 @@
    "changes": []
   },
   "응급의학과": {
-   "hash": "ccd5fd487b6bff0d06cf",
-   "version": 5,
-   "date": "2026-09-28",
+   "hash": "f5c111aee1625901a6a9",
+   "version": 6,
+   "date": "2026-10-01",
    "file": "MedKOS_학습서_응급의학과.pdf",
    "pages": 12,
    "template_version": 11,
    "units": {
     "cn.em.ards.lung-protective-ventilation": {
-     "title": "급성호흡곤란증후군 — 심장 원인을 배제한 뒤 첫 처치는 저일회호흡량 폐보호 환기",
+     "title": "급성호흡곤란증후군 — 심장 원인 배제 뒤 첫 처치는 폐보호 환기",
      "page": 2,
-     "concept_hash": "aa78f36a71df2e19",
-     "concept_version": 2
+     "concept_hash": "392616f4d7aab47b",
+     "concept_version": 3
     },
     "cn.em.ventricular-fibrillation.immediate-defibrillation": {
      "title": "무맥성 심실세동 — 조직된 전기 활동이 없는 리듬에 즉시 비동기 제세동",
@@ -736,18 +736,21 @@
    },
    "drive": {
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
-    "md5": "2e7b0a92c6e07350030648e9ec7a62eb",
-    "version": 5,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "664c4ed62859f3016aee7ca717f1942d",
+    "version": 6,
+    "uploaded": "2026-10-01T09:46:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_응급의학과_v1_2026-09-25.pdf",
     "MedKOS_학습서_응급의학과_v2_2026-09-25.pdf",
     "MedKOS_학습서_응급의학과_v3_2026-09-27.pdf",
     "MedKOS_학습서_응급의학과_v4_2026-09-27.pdf",
-    "MedKOS_학습서_응급의학과_v5_2026-09-28.pdf"
+    "MedKOS_학습서_응급의학과_v5_2026-09-28.pdf",
+    "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 급성호흡곤란증후군 — 심장 원인 배제 뒤 첫 처치는 폐보호 환기 (정리본 v2 → v3)"
+   ]
   },
   "내분비내과": {
    "hash": "17e2c3e6119b9071df4f",
@@ -912,9 +915,9 @@
    "changes": []
   },
   "감염내과": {
-   "hash": "7699ab859c6962c494dd",
-   "version": 8,
-   "date": "2026-09-30",
+   "hash": "d961575295bc3c61023b",
+   "version": 9,
+   "date": "2026-10-01",
    "file": "MedKOS_학습서_감염내과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -926,35 +929,35 @@
      "concept_version": 1
     },
     "cn.derm.ssss.antistaphylococcal-therapy": {
-     "title": "포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다",
+     "title": "포도알균 열상피부증후군 — 스테로이드 말고 균을 친다",
      "page": 4,
-     "concept_hash": "398558b3454e1354",
-     "concept_version": 2
+     "concept_hash": "ba0ad13482d85bd2",
+     "concept_version": 3
     },
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": {
      "title": "레지오넬라 폐렴 — 세포 내 세균의 단서에서 확진 검사(소변 항원) 고르기까지",
-     "page": 5,
+     "page": 6,
      "concept_hash": "cbdbcddee235ba1c",
      "concept_version": 1
     },
     "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
      "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
-     "page": 6,
+     "page": 7,
      "concept_hash": "83e52451270220ab",
      "concept_version": 1
     },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
      "title": "침습성 폐 아스페르길루스증 — 혈관 침습에서 객혈·halo 징후·갈락토만난까지",
-     "page": 8,
+     "page": 9,
      "concept_hash": "4251c18e4fab9aaf",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "347fd6affbc56a4266c6414232fb0edf",
-    "version": 8,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "272c7bf56057c6bd93d9be5f9580fb19",
+    "version": 9,
+    "uploaded": "2026-10-01T09:46:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -964,10 +967,11 @@
     "MedKOS_학습서_감염내과_v5_2026-09-27.pdf",
     "MedKOS_학습서_감염내과_v6_2026-09-28.pdf",
     "MedKOS_학습서_감염내과_v7_2026-09-29.pdf",
-    "MedKOS_학습서_감염내과_v8_2026-09-30.pdf"
+    "MedKOS_학습서_감염내과_v8_2026-09-30.pdf",
+    "MedKOS_학습서_감염내과_v9_2026-10-01.pdf"
    ],
    "changes": [
-    "내용 갱신: 포도알균 열상피부증후군 — 독소가 벗기는 피부, 치료는 균을 향한다 (정리본 v1 → v2)"
+    "내용 갱신: 포도알균 열상피부증후군 — 스테로이드 말고 균을 친다 (정리본 v2 → v3)"
    ]
   },
   "소화기내과": {
@@ -1090,13 +1094,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "04a79255b363305ae701d79aa9525733",
+   "md5": "843fd801fd73913e5b1891624999d715",
    "version": null,
-   "uploaded": "2026-09-30T09:48:06+09:00"
+   "uploaded": "2026-10-01T09:46:29+09:00"
   }
  },
- "updated": "2026-09-30"
+ "updated": "2026-10-01"
 }
