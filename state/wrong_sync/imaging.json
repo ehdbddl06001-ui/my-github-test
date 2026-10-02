@@ -370,8 +370,29 @@
    "date": "2026-09-27",
    "device": "pc-haprn5",
    "note": ""
+  },
+  "imaging-2026-0193": {
+   "id": "imaging-2026-0193",
+   "exam": "imaging",
+   "subject": "병리·조직학",
+   "step": "Step 2",
+   "type": "병리·조직 — 폐경 후 큰 난소 낭종의 악성 변화",
+   "style": "usmle_style",
+   "modality": "GROSS",
+   "question": "Which of the following is the most likely type of this malignancy?",
+   "chosen": 2,
+   "chosenText": "Papillary thyroid carcinoma",
+   "answer": 0,
+   "answerText": "Squamous cell carcinoma",
+   "coreNote": "",
+   "differ": "",
+   "decision": "털과 뼈가 든 낭종은 성숙낭성기형종이다. 그 악성 변화는 편평 내막에서 생겨 약 80 % 가 편평세포암이다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261001T202600Z_일일영상_2026-10-02_12units_12q_255ecfec",
+   "date": "2026-10-02",
+   "device": "android-9buhos",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-09-27T00:48:57.038Z"
+ "updated": "2026-10-02T12:10:49.626Z"
 }
