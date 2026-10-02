@@ -1,15 +1,16 @@
 {
- "started": "2026-10-01T09:42:37+09:00",
+ "started": "2026-10-02T10:01:38+09:00",
  "built": [
   "응급의학과",
-  "감염내과"
+  "순환기내과",
+  "내분비내과",
+  "안과",
+  "소화기내과",
+  "신장내과"
  ],
  "skipped": [
   "정형외과",
   "피부과",
-  "순환기내과",
-  "내분비내과",
-  "안과",
   "외과",
   "산부인과",
   "소아청소년과",
@@ -17,10 +18,9 @@
   "혈액종양내과",
   "류마티스내과",
   "호흡기내과",
-  "소화기내과",
+  "감염내과",
   "알레르기내과",
   "기초의학",
-  "신장내과",
   "신경과",
   "비뇨의학과"
  ],
@@ -29,16 +29,25 @@
  "previews": [],
  "validation": {
   "응급의학과": [],
-  "감염내과": []
+  "순환기내과": [],
+  "내분비내과": [],
+  "안과": [],
+  "소화기내과": [],
+  "신장내과": []
  },
  "notes": {
   "응급의학과": [],
-  "감염내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 왼쪽 단 아래가 비어 있다(빈 공간 44%)"
-  ]
+  "순환기내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 32%)"
+  ],
+  "내분비내과": [],
+  "안과": [],
+  "소화기내과": [],
+  "신장내과": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
+  "content/concepts/cardiology/cn.cardio.syncope.high-risk-admit.md: [WARN] 해리슨 대조 없음 — 슬롯 h21 = 해리슨 21장. 그 장을 읽고 harrison-21 출처(verified: text)와 [[harrison-21: 장 p.N]] 을 단다",
   "content/concepts/dermatology/cn.derm.regressing-pigmented-lesion.biopsy-first.md: [WARN] outline 'h76' 는 혈액종양내과 의 자리인데 이 정리본의 과는 피부과 다",
   "content/concepts/dermatology/cn.derm.scabies.treat-with-contacts.md: [WARN] outline 'h461' 는 응급의학과 의 자리인데 이 정리본의 과는 피부과 다",
   "content/concepts/dermatology/cn.derm.seborrheic-keratosis.dermoscopy-keratinocyte-origin.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -50,32 +59,89 @@
    "tried": 36,
    "diagram_after_section": {
     "u-cn-em-ards-lung-protective-ventilation#fig:f1": 5,
-    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 21,
+    "u-cn-em-ards-lung-protective-ventilation": 19,
+    "u-cn-em-ards-lung-protective-ventilation#shrink": 1.0,
+    "u-cn-em-ards-lung-protective-ventilation#pad": 0,
+    "u-cn-em-ards-lung-protective-ventilation#col": true,
+    "u-cn-em-ventricular-fibrillation-immediate-defibrillation": 16,
     "u-cn-em-ventricular-fibrillation-immediate-defibrillation#shrink": 1.0,
     "u-cn-em-ventricular-fibrillation-immediate-defibrillation#pad": 0,
     "u-cn-em-ventricular-fibrillation-immediate-defibrillation#col": true
    }
   },
-  "감염내과": {
-   "tried": 103,
+  "순환기내과": {
+   "tried": 198,
    "diagram_after_section": {
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 15,
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#shrink": 1.0,
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#pad": 0,
-    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#col": false,
-    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis": 17,
-    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#shrink": 1.0,
-    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#pad": 0,
-    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#col": true,
-    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism": 13,
-    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#shrink": 0.88,
-    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#pad": 0,
-    "u-cn-id-invasive-aspergillosis-angioinvasion-mechanism#col": false
+    "u-cn-cardio-syncope-high-risk-admit": 13,
+    "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
+    "u-cn-cardio-syncope-high-risk-admit#pad": 14,
+    "u-cn-cardio-syncope-high-risk-admit#col": false,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity": 21,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 0.88,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 15,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 14,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": false,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 1.0,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 14,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management": 14,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#shrink": 1.0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#pad": 0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#col": false
+   }
+  },
+  "내분비내과": {
+   "tried": 18,
+   "diagram_after_section": {
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#figscale:f1": 0.75,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization": 30,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#shrink": 1.0,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#pad": 0,
+    "u-cn-endo-thyroid-hormone-synthesis-thyroglobulin-colloid-localization#col": false
+   }
+  },
+  "안과": {
+   "tried": 48,
+   "diagram_after_section": {
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 27,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
+    "u-cn-ophth-crao-arteritic-workup": 16,
+    "u-cn-ophth-crao-arteritic-workup#shrink": 1.0,
+    "u-cn-ophth-crao-arteritic-workup#pad": 28,
+    "u-cn-ophth-crao-arteritic-workup#col": false,
+    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 1.0,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 28,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#col": false
+   }
+  },
+  "소화기내과": {
+   "tried": 6,
+   "diagram_after_section": {
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage": 12,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#shrink": 1.0,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#pad": 28,
+    "u-cn-gs-diverticular-abscess-percutaneous-drainage#col": false
+   }
+  },
+  "신장내과": {
+   "tried": 4,
+   "diagram_after_section": {
+    "u-cn-neph-hyperkalemia-first-step": 19,
+    "u-cn-neph-hyperkalemia-first-step#shrink": 1.0,
+    "u-cn-neph-hyperkalemia-first-step#pad": 42,
+    "u-cn-neph-hyperkalemia-first-step#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-01T09:46:29+09:00",
+ "finished": "2026-10-02T10:19:04+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -84,25 +150,57 @@
     "status": "uploaded",
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
     "kept_id": true,
-    "md5": "664c4ed62859f3016aee7ca717f1942d",
-    "archive": "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf"
+    "md5": "a7f05f88f5cc9ce9d395b44742c5b99c",
+    "archive": "MedKOS_학습서_응급의학과_v7_2026-10-02.pdf"
    },
-   "감염내과": {
-    "file": "MedKOS_학습서_감염내과.pdf",
+   "순환기내과": {
+    "file": "MedKOS_학습서_순환기내과.pdf",
     "status": "uploaded",
-    "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
+    "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
     "kept_id": true,
-    "md5": "272c7bf56057c6bd93d9be5f9580fb19",
-    "archive": "MedKOS_학습서_감염내과_v9_2026-10-01.pdf"
+    "md5": "42a6775c52c81aaba7505db9fbcc10c9",
+    "archive": "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf"
+   },
+   "내분비내과": {
+    "file": "MedKOS_학습서_내분비내과.pdf",
+    "status": "uploaded",
+    "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
+    "kept_id": true,
+    "md5": "44844e39307dd5e48c5165159c06a50c",
+    "archive": "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf"
+   },
+   "안과": {
+    "file": "MedKOS_학습서_안과.pdf",
+    "status": "uploaded",
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "kept_id": true,
+    "md5": "8039dccc254fd43828afad25f4f28eb2",
+    "archive": "MedKOS_학습서_안과_v7_2026-10-02.pdf"
+   },
+   "소화기내과": {
+    "file": "MedKOS_학습서_소화기내과.pdf",
+    "status": "uploaded",
+    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
+    "kept_id": true,
+    "md5": "0a74781d22037f1967883ed2406738e9",
+    "archive": "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf"
+   },
+   "신장내과": {
+    "file": "MedKOS_학습서_신장내과.pdf",
+    "status": "uploaded",
+    "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
+    "kept_id": true,
+    "md5": "cf00533cb96514070345acd37a2f54f6",
+    "archive": "MedKOS_학습서_신장내과_v6_2026-10-02.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "843fd801fd73913e5b1891624999d715"
+    "md5": "7ecb941f0a2d58f274062a76d632a0a9"
    }
   },
-  "at": "2026-10-01T09:46:29+09:00"
+  "at": "2026-10-02T10:19:04+09:00"
  }
 }

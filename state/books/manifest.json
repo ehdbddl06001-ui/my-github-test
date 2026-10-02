@@ -1,67 +1,73 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "fc3d4a3531255cbd16e9",
-   "version": 11,
-   "date": "2026-09-29",
+   "hash": "65eb4b86d07ebdc5ce82",
+   "version": 12,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_순환기내과.pdf",
-   "pages": 21,
+   "pages": 23,
    "template_version": 11,
    "units": {
+    "cn.cardio.syncope.high-risk-admit": {
+     "title": "실신 — 고위험 소견이 입원을 정한다",
+     "page": 2,
+     "concept_hash": "d33ac4577580f7c7",
+     "concept_version": 1
+    },
     "cn.cardio.incomplete-rbbb.preop-proceed-surgery": {
      "title": "수술 전 불완전 우각차단 — 증상·운동능력이 검사를 정한다",
-     "page": 2,
+     "page": 4,
      "concept_hash": "a9f83809ac2d6f6e",
      "concept_version": 2
     },
     "cn.cardio.qrs-axis.limb-lead-polarity": {
      "title": "평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다",
-     "page": 3,
+     "page": 5,
      "concept_hash": "f0f460ed09a8324f",
      "concept_version": 3
     },
     "cn.cardio.atrial-flutter.stable-rate-control-first": {
      "title": "심방조동 — 안정하면 심박수 조절이 먼저다",
-     "page": 6,
+     "page": 8,
      "concept_hash": "d216867dbcd29806",
      "concept_version": 3
     },
     "cn.cardio.long-qt-syndrome.first-line-drug": {
      "title": "선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제)",
-     "page": 8,
+     "page": 10,
      "concept_hash": "af6969c1b0137725",
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
      "title": "쇼크를 동반한 고위험(대량) 폐색전증 — 항응고만으로는 부족하고, 금기가 없으면 전신 혈전용해로 재관류한다",
-     "page": 11,
+     "page": 13,
      "concept_hash": "b2a0e6947e1d0916",
      "concept_version": 2
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 14,
+     "page": 16,
      "concept_hash": "9f545e2ebcac9c1b",
      "concept_version": 1
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
-     "page": 17,
+     "page": 19,
      "concept_hash": "10f6a275caef5764",
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
      "title": "폐동맥고혈압의 확진 — 심초음파는 선별, 확진과 분류는 우심도자술의 평균 폐동맥압·쐐기압·폐혈관저항",
-     "page": 20,
+     "page": 22,
      "concept_hash": "53ac21aab5a81883",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "072d9af48fd8d9c6312a73f0de2fb4ac",
-    "version": 11,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "42a6775c52c81aaba7505db9fbcc10c9",
+    "version": 12,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -74,12 +80,11 @@
     "MedKOS_학습서_순환기내과_v8_2026-09-27.pdf",
     "MedKOS_학습서_순환기내과_v9_2026-09-28.pdf",
     "MedKOS_학습서_순환기내과_v10_2026-09-28.pdf",
-    "MedKOS_학습서_순환기내과_v11_2026-09-29.pdf"
+    "MedKOS_학습서_순환기내과_v11_2026-09-29.pdf",
+    "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf"
    ],
    "changes": [
-    "내용 갱신: 평균 QRS 전기축 — I·aVF 극성으로 사분면을 정한다 (정리본 v2 → v3)",
-    "내용 갱신: 선천 QT연장증후군 — 1차 약은 비선택 beta-blocker(베타차단제) (정리본 v3 → v4)",
-    "내용 갱신: 급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저 (정리본 v2 → v3)"
+    "새 단원: 실신 — 고위험 소견이 입원을 정한다"
    ]
   },
   "피부과": {
@@ -152,9 +157,9 @@
    ]
   },
   "신장내과": {
-   "hash": "0ee8dff82ef6349ef80d",
-   "version": 5,
-   "date": "2026-09-28",
+   "hash": "3d72c19cb8dbcb6e272d",
+   "version": 6,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -168,7 +173,7 @@
     "cn.neph.hyperkalemia.first-step": {
      "title": "고칼륨혈증 — 생리에서 첫 처치·재평가까지",
      "page": 3,
-     "concept_hash": "c1be52d59e148a54",
+     "concept_hash": "bb9f824c3252423c",
      "concept_version": 2
     },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
@@ -180,18 +185,21 @@
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "fdf2dd7499478b7d615b5eec8dc09fc0",
-    "version": 5,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "cf00533cb96514070345acd37a2f54f6",
+    "version": 6,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
     "MedKOS_학습서_신장내과_v2_2026-09-25.pdf",
     "MedKOS_학습서_신장내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_신장내과_v4_2026-09-27.pdf",
-    "MedKOS_학습서_신장내과_v5_2026-09-28.pdf"
+    "MedKOS_학습서_신장내과_v5_2026-09-28.pdf",
+    "MedKOS_학습서_신장내과_v6_2026-10-02.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 수정: 고칼륨혈증 — 생리에서 첫 처치·재평가까지"
+   ]
   },
   "소아청소년과": {
    "hash": "ad120ed86fb482d81109",
@@ -278,9 +286,9 @@
    ]
   },
   "안과": {
-   "hash": "056a306542bde439d522",
-   "version": 6,
-   "date": "2026-09-30",
+   "hash": "d683340840cc4d817f26",
+   "version": 7,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -294,8 +302,8 @@
     "cn.ophth.crao.arteritic-workup": {
      "title": "망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다",
      "page": 4,
-     "concept_hash": "3575615ba208cd1f",
-     "concept_version": 2
+     "concept_hash": "260f9c8b4b000d93",
+     "concept_version": 3
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
      "title": "안구 화학화상 — 검사보다 세척이 먼저",
@@ -312,9 +320,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "79c59fab7d57355b588cec0a7db9c2d9",
-    "version": 6,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "8039dccc254fd43828afad25f4f28eb2",
+    "version": 7,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -322,10 +330,11 @@
     "MedKOS_학습서_안과_v3_2026-09-27.pdf",
     "MedKOS_학습서_안과_v4_2026-09-27.pdf",
     "MedKOS_학습서_안과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_안과_v6_2026-09-30.pdf"
+    "MedKOS_학습서_안과_v6_2026-09-30.pdf",
+    "MedKOS_학습서_안과_v7_2026-10-02.pdf"
    ],
    "changes": [
-    "내용 갱신: 안구 화학화상 — 검사보다 세척이 먼저 (정리본 v1 → v2)"
+    "내용 갱신: 망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다 (정리본 v2 → v3)"
    ]
   },
   "정형외과": {
@@ -702,11 +711,11 @@
    "changes": []
   },
   "응급의학과": {
-   "hash": "f5c111aee1625901a6a9",
-   "version": 6,
-   "date": "2026-10-01",
+   "hash": "11c06cd6cd725cf92b07",
+   "version": 7,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_응급의학과.pdf",
-   "pages": 12,
+   "pages": 10,
    "template_version": 11,
    "units": {
     "cn.em.ards.lung-protective-ventilation": {
@@ -716,29 +725,29 @@
      "concept_version": 3
     },
     "cn.em.ventricular-fibrillation.immediate-defibrillation": {
-     "title": "무맥성 심실세동 — 조직된 전기 활동이 없는 리듬에 즉시 비동기 제세동",
-     "page": 5,
-     "concept_hash": "21a75263238f35e1",
-     "concept_version": 2
+     "title": "심실세동 — 무맥 세동파에는 즉시 비동기 제세동",
+     "page": 4,
+     "concept_hash": "9044c0b0d7098fef",
+     "concept_version": 3
     },
     "cn.em.lithium-toxicity.hemodialysis-indication": {
-     "title": "리튬 중독 — 티아지드로 쌓인 만성 중독, 식염수에서 멈추지 않고 혈액투석을 고르는 조건",
-     "page": 7,
-     "concept_hash": "b9e04e11bc071df7",
-     "concept_version": 1
+     "title": "리튬 중독 — 만성 축적의 중증 신경독성은 투석을 부른다",
+     "page": 6,
+     "concept_hash": "6867174d94309717",
+     "concept_version": 2
     },
     "cn.em.beta-blocker-overdose.glucagon-mechanism": {
-     "title": "beta-blocker(베타차단제) 중독 — 글루카곤이 막힌 수용체를 우회하는 기전",
-     "page": 10,
-     "concept_hash": "a95e048e0a086715",
-     "concept_version": 1
+     "title": "beta-blocker(베타차단제) 중독 — 글루카곤은 다른 입구로 cAMP를 올린다",
+     "page": 9,
+     "concept_hash": "275a56269847e79d",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
-    "md5": "664c4ed62859f3016aee7ca717f1942d",
-    "version": 6,
-    "uploaded": "2026-10-01T09:46:29+09:00"
+    "md5": "a7f05f88f5cc9ce9d395b44742c5b99c",
+    "version": 7,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_응급의학과_v1_2026-09-25.pdf",
@@ -746,16 +755,19 @@
     "MedKOS_학습서_응급의학과_v3_2026-09-27.pdf",
     "MedKOS_학습서_응급의학과_v4_2026-09-27.pdf",
     "MedKOS_학습서_응급의학과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf"
+    "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf",
+    "MedKOS_학습서_응급의학과_v7_2026-10-02.pdf"
    ],
    "changes": [
-    "내용 갱신: 급성호흡곤란증후군 — 심장 원인 배제 뒤 첫 처치는 폐보호 환기 (정리본 v2 → v3)"
+    "내용 갱신: 심실세동 — 무맥 세동파에는 즉시 비동기 제세동 (정리본 v2 → v3)",
+    "내용 갱신: 리튬 중독 — 만성 축적의 중증 신경독성은 투석을 부른다 (정리본 v1 → v2)",
+    "내용 갱신: beta-blocker(베타차단제) 중독 — 글루카곤은 다른 입구로 cAMP를 올린다 (정리본 v1 → v2)"
    ]
   },
   "내분비내과": {
-   "hash": "17e2c3e6119b9071df4f",
-   "version": 5,
-   "date": "2026-09-28",
+   "hash": "7c05008a845d247bdcd5",
+   "version": 6,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_내분비내과.pdf",
    "pages": 9,
    "template_version": 11,
@@ -767,10 +779,10 @@
      "concept_version": 2
     },
     "cn.endo.cushing-syndrome.screening-test": {
-     "title": "쿠싱증후군 — 코르티솔 특이 소견에서 첫 선별검사까지",
+     "title": "쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터",
      "page": 4,
-     "concept_hash": "a1b28779cd25bd66",
-     "concept_version": 1
+     "concept_hash": "108f0605037f8ad3",
+     "concept_version": 2
     },
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
      "title": "갈색세포종 수술 전 준비 — 알파차단 먼저, 베타차단은 나중",
@@ -780,25 +792,28 @@
     },
     "cn.endo.hhs.initial-fluid-resuscitation": {
      "title": "HHS(고혈당고삼투상태) — 삼투성 이뇨에서 첫 치료(등장식염수)까지",
-     "page": 7,
+     "page": 8,
      "concept_hash": "29badd8da8b34347",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "e731c2b406f3309f289264965773f698",
-    "version": 5,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "44844e39307dd5e48c5165159c06a50c",
+    "version": 6,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
     "MedKOS_학습서_내분비내과_v2_2026-09-25.pdf",
     "MedKOS_학습서_내분비내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_내분비내과_v4_2026-09-27.pdf",
-    "MedKOS_학습서_내분비내과_v5_2026-09-28.pdf"
+    "MedKOS_학습서_내분비내과_v5_2026-09-28.pdf",
+    "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터 (정리본 v1 → v2)"
+   ]
   },
   "혈액종양내과": {
    "hash": "2b3184a0cf22385366c8",
@@ -975,9 +990,9 @@
    ]
   },
   "소화기내과": {
-   "hash": "b1ad7b4a0a500bc29e28",
-   "version": 7,
-   "date": "2026-09-30",
+   "hash": "fe9573928ec55def0aef",
+   "version": 8,
+   "date": "2026-10-02",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -985,7 +1000,7 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "6e387fcb8665462d",
+     "concept_hash": "5949703a7d9aa161",
      "concept_version": 1
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
@@ -1009,9 +1024,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "329caad1ad8908f7dc50112bf8b35c01",
-    "version": 7,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "0a74781d22037f1967883ed2406738e9",
+    "version": 8,
+    "uploaded": "2026-10-02T10:19:04+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1020,7 +1035,8 @@
     "MedKOS_학습서_소화기내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_소화기내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_소화기내과_v6_2026-09-29.pdf",
-    "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf"
+    "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf",
+    "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf"
    ],
    "changes": [
     "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
@@ -1094,13 +1110,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "843fd801fd73913e5b1891624999d715",
+   "md5": "7ecb941f0a2d58f274062a76d632a0a9",
    "version": null,
-   "uploaded": "2026-10-01T09:46:29+09:00"
+   "uploaded": "2026-10-02T10:19:04+09:00"
   }
  },
- "updated": "2026-10-01"
+ "updated": "2026-10-02"
 }
