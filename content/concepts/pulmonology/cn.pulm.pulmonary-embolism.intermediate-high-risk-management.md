@@ -231,6 +231,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13531219_VisualSummar
   reason: 그림 요약(도식) — CT 사진이 아니다
+- asset: PMC-PMC13315614_Fig2
+  reason: 패널이 혈전·폐동맥간 확장만 보여 준다 — 요청 소견인 우심실 확장(RV/LV 비) 단면이 없고 설명에도 RV/LV 계측이 없음
 ---
 
 ## 정의

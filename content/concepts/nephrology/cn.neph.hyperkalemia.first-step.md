@@ -4,8 +4,8 @@ type: concept
 topic: Nephrology
 see_also: [Cardiology, Emergency Medicine]
 date: 2026-09-18
-updated: 2026-09-18
-version: 2
+updated: 2026-10-03
+version: 3
 outline: h53            # 기본틀 슬롯(content/outline/subjects.yaml)
 confidence: medium
 review_status: unreviewed
@@ -228,18 +228,31 @@ variants:
     answer: "B"
     explanation: "칼륨은 중증 범위지만 심전도 변화가 없어 UK KA 기준의 칼슘 적응이 아니다. 중증 고칼륨혈증에는 인슐린+포도당이 권고되고(심전도가 정상이어도 적극 치료 — Harrison), 원인 약물(스피로놀락톤 등)을 멈추고 제거를 이어 간다. 투석은 소변이 나오고 약물 치료를 아직 하지 않은 지금의 첫 처치가 아니며, 1주 뒤 재검은 중증 수치를 방치한다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 고칼륨혈증 심전도 — 뾰족한 T파
-  query: '"hyperkalemia" AND "peaked T" AND "case report"'
-  caption_terms:
-  - peaked
-  modality: ECG
 figures_rejected:
 - asset: PMC-PMC13160704_Figure1
   reason: 그림 설명이 「고칼륨 변화 없음(가성 고칼륨)」 — 요청 소견의 반대
 - asset: PMC-PMC12643610_Figure5
   reason: 활동전위 위상 모식도다 — 요청한 심전도의 뾰족한 T파가 그림에 없다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13581944_figure2-0-60-1600-825.png
+  kind: ecg
+  at: 증상과 심전도가 나타나는 이유
+  shows: 고칼륨혈증 내원 심전도 — 동빈맥과 뾰족한 T파
+  look_for:
+  - V2–V4 의 높고 끝이 뾰족한 T파
+  - 좁은 바닥의 대칭 T파(사지 유도 I·II 도)
+  label: '「Electrocardiography (ECG) findings from admission to day 8.Figure 2A shows the patient''s ECG at presentation, demonstrating sinus tachycardia with a ventricular rate of 106 bpm, a prolonged corrected QT interval of 528 ms, and peaked T waves. Figure 2B shows the patient''s ECG on day 1 of admission after receiving their first session of dialysis. Figure 2C shows the last available ECG taken on day 8 of admission.」 — Recurrent Severe Viral-Induced Rhabdomyolysis Associated With Underlying Genetic Variants in a Young Adult: A Case Report'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Recurrent Severe Viral-Induced Rhabdomyolysis Associated With Underlying Genetic Variants in a Young Adult: A Case Report. Cureus'
+  doi: 10.7759/cureus.114691
+  credit: 'Recurrent Severe Viral-Induced Rhabdomyolysis Associated With Underlying Genetic Variants in a Young Adult: A Case Report. Cureus. 2026 Aug 17;18(8):e114691. doi: 10.7759/cureus.114691 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13581944/
+  asset: PMC-PMC13581944_Figure2
+  privacy_check: 패널 A 만 잘라냄 — 이름·날짜·병원 표지 없음
+  crop: 0,60,1600,825
 ---
 
 ## 정상 생리 — 칼륨은 어디에 있고 무엇이 조절하나

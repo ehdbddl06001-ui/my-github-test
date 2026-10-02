@@ -4,8 +4,8 @@ type: concept
 topic: Orthopedics
 see_also: [Pediatrics, Endocrinology]
 date: 2026-09-23
-updated: 2026-09-28
-version: 3
+updated: 2026-10-03
+version: 4
 outline: ortho.pediatric         # 정형외과 손 슬롯 「소아 정형 — 성장판 손상·고관절 이형성」(해리슨 대조 대상 아님)
 confidence: medium
 review_status: unreviewed
@@ -179,16 +179,28 @@ variants:
     answer: "D"
     explanation: "축구 뒤 악화라는 경위, 오른쪽·허벅지라는 겉모습이 달라도 결정 단서(사춘기 비만, 외상 없음, 굽힐 때 강제 바깥돌림, 뼈끝 뒤아래 미끄러짐, 걸을 수 있는 안정형)는 같다 [[?loder-1993]]. 즉시 체중부하를 막고 정복 없이 제자리 나사로 고정한다 [[?peck-2010]]. 석고는 성장판을 고정하지 못하고, 정복은 무혈성괴사를, 관찰은 미끄러짐 진행을 부른다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 대퇴골두골단분리증 X선 — 골단이 뒤·아래로 미끄러짐
-  query: '"slipped capital femoral epiphysis" AND radiograph'
-  caption_terms:
-  - slipped
-  modality: XR_MSK
 figures_rejected:
 - asset: PMC-PMC11902969_Figure2
   reason: 수술 중·핀 고정 뒤 사진 — 미끄러짐 자체를 보여 주지 않는다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc10626719_fig1.jpg
+  kind: radiograph
+  at: 가르는 소견 — 무릎 통증에서 엉덩관절 X선으로
+  shows: 대퇴골두골단분리증 — 왼쪽 엉덩관절
+  look_for:
+  - 왼쪽(영상 오른쪽) 대퇴골두 골단과 목의 어긋난 정렬
+  - 오른쪽 엉덩관절과 좌우 비교
+  label: 「Slipped capital femoral epiphysis of the left hip」 — Atypical presentations of primary acquired hypothyroidism – a case series
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: Atypical presentations of primary acquired hypothyroidism – a case series. BMC Endocrine Disorders
+  doi: 10.1186/s12902-023-01488-y
+  credit: 'Atypical presentations of primary acquired hypothyroidism – a case series. BMC Endocr Disord. 2023 Nov 6;23:242. doi: 10.1186/s12902-023-01488-y (CC BY) — Fig. 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10626719/
+  asset: PMC-PMC10626719_Fig1
+  privacy_check: 골반 전후 X선만 — 얼굴·이름·병원 표지 없음(모서리 방향 표지뿐)
 ---
 
 ## 판단 — 왜 제자리 고정이 먼저인가

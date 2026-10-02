@@ -159,6 +159,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC13457705_Figure2
   reason: 복강경 수술 장면 — 진단 초음파가 아니다
+- asset: PMC-PMC13424258_Fig2
+  reason: 유문 비대가 아니라 유문근절개술 뒤 성인에게 생긴 췌장암(선암)의 내시경 초음파 — 요청 소견(두꺼워진 유문근)과 다름
 ---
 
 ## 정의

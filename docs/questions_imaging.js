@@ -1692,6 +1692,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0193.jpg",
    "caption": "Photograph of the opened surgical specimen — single-panel figure as published, star and arrow as in the original (PMC Open Access Subset, CC BY; no cropping or color change)",
