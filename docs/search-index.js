@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3200,
+  "total": 3212,
   "byType": {
    "anatomy": 771,
    "kmle": 1248,
+   "imaging": 212,
    "concept": 91,
    "usmle": 174,
    "paper": 699,
-   "imaging": 200,
    "ailab": 14,
    "basic": 3
   },
@@ -38,25 +38,25 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 80,
    "Hematology": 75,
    "Laboratory Medicine": 69,
-   "산부인과": 38,
+   "산부인과": 41,
    "Physiology": 20,
-   "순환기": 19,
+   "순환기": 20,
    "Pharmacology": 14,
+   "호흡기": 14,
    "Biochemistry": 13,
    "Microbiology": 13,
    "병리·조직학": 13,
-   "호흡기": 13,
-   "소화기": 11,
+   "소화기": 12,
    "Immunology": 10,
    "Internal Medicine": 10,
    "소아과": 10,
+   "감염": 9,
    "내분비": 9,
-   "감염": 8,
-   "신경": 8,
-   "신장·비뇨기": 8,
-   "응급·중환자": 8,
+   "신경": 9,
+   "신장·비뇨기": 9,
+   "응급·중환자": 9,
+   "혈액·종양": 9,
    "피부과": 8,
-   "혈액·종양": 8,
    "예방의학·역학": 7,
    "외과": 7,
    "근골격·류마티스": 5,
@@ -66,9 +66,9 @@ window.MEDKOS_INDEX = {
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "안과": 4,
    "이비인후과": 4,
    "Oncology": 3,
-   "안과": 3,
    "영상의학": 3,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2165,
+   "high": 2177,
    "low": 50,
    "medium": 985
   },
-  "tagCount": 4469
+  "tagCount": 4470
  },
  "docs": [
   {
@@ -711,6 +711,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1248.md",
    "snippet": "23세 여자가 출근길 붐비는 지하철에서 20분쯤 서 있다가 쓰러져 응급실에 왔다. 쓰러지기 직전 몸이 더워지고 속이 메스꺼우며 눈앞이 뿌옇게 흐려졌다고 한다. 함께 있던 동료에 따르면 의식을 잃은 시간은 30초 정도였고, 쓰러진 뒤 팔이 몇 번 짧게 떨렸으며, 깨어난 직후 바로 대화가 되었다. 혀를 깨물거나 소변을 지리지 않았고, 깨어났을 때 얼굴이 창백하고 땀에 젖어 있었다. 운동 중이나 누워 있을 때 쓰러진 적은 없고, 2",
    "text": "Cardiology Transient Loss of Consciousness while Standing in a Young Woman syncope ecg 12-lead risk-stratification transient-loss-of-consciousness KMLE 2026 / Claude 23세 여자가 출근길 붐비는 지하철에서 20분쯤 서 있다가 쓰러져 응급실에 왔다. 쓰러지기 직전 몸이 더워지고 속이 메스꺼우며 눈앞이 뿌옇게 흐려졌다고 한다. 함께 있던 동료에 따르면 의식을 잃은 시간은 30초 정도였고, 쓰러진 뒤 팔이 몇 번 짧게 떨렸으며, 깨어난 직후 바로 대화가 되었다. 혀를 깨물거나 소변을 지리지 않았고, 깨어났을 때 얼굴이 창백하고 땀에 젖어 있었다. 운동 중이나 누워 있을 때 쓰러진 적은 없고, 2년 전 채혈 중에도 비슷하게 쓰러질 뻔했다. 가족 중 젊은 나이에 갑자기 사망한 사람은 없고, 복용하는 약은 없다. 심장 청진에서 잡음은 들리지 않고, 쪼그려 앉았다 일어서도 잡음이 생기지 않는다. 신경학적 검사는 정상이다. 12유도 심전도와 활력징후, 검사 소견은 자료와 같다. 가장 가능성이 높은 진단은? A. 기립저혈압 B. 혈관미주신경실신 C. 긴QT증후군 D. 비대심근병증 E. 뇌전증 발작 오래 서 있던 중 열감·메스꺼움·시야 흐림의 전구증상 뒤 짧게 의식을 잃고 곧바로 회복했으며 창백·발한이 있었다면 반사 실신의 전형이다. 12유도 심전도가 정상 동리듬에 간격·ST 이상이 없고, 운동 중·누운 자세 실신과 돌연사 가족력·심잡음이 없어 부정맥·구조 심장 원인의 가능성이 낮다. 깨어나자마자 대화가 되고 혀 깨물기가 없어 뇌전증 발작, 선 자세 3분 뒤 혈압이 유지되어 기립저혈압의 가능성도 낮다."
+  },
+  {
+   "id": "imaging-2026-0213",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 구토하는 당뇨병 환자의 산염기 평가",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0213.md",
+   "snippet": "A 52 year old woman with type 1 diabetes mellitus comes to the emergency department because of repeated vomiting for 3 days and abdominal pain for 1 day. She stopped her insulin because she was not eating. Her pulse is 116/min, respirations",
+   "text": "신장·비뇨기 신장·비뇨 — 구토하는 당뇨병 환자의 산염기 평가 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 52 year old woman with type 1 diabetes mellitus comes to the emergency department because of repeated vomiting for 3 days and abdominal pain for 1 day. She stopped her insulin because she was not eating. Her pulse is 116/min, respirations are 26/min, and blood pressure is 102/64 mm Hg. Her mucous membranes are dry. Serum studies show: Na+ 136 mEq/L, K+ 4.8 mEq/L, Cl 84 mEq/L, HCO3 20 mEq/L, glucose 486 mg/dL, creatinine 1.4 mg/dL, and albumin 4.0 g/dL. Serum β hydroxybutyrate is markedly elevated. Arterial blood gas analysis on room air shows pH 7.36, PCO2 37 mm Hg, and PO2 96 mm Hg. Which of the following best describes her acid base status? A. Anion gap metabolic acidosis and metabolic alkalosis B. Anion gap metabolic acidosis with appropriate respiratory compensation only C. Anion gap and non anion gap metabolic acidosis D. Primary respiratory alkalosis with metabolic compensation E. No acid base disorder"
+  },
+  {
+   "id": "imaging-2026-0212",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 진드기 노출 뒤 방실차단",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0212.md",
+   "snippet": "A 34 year old man comes to the emergency department because of fatigue and light headedness for 3 days. Five weeks ago, he went hiking in Connecticut, and 2 weeks later he noticed an expanding red rash on his thigh that resolved without tre",
+   "text": "감염 감염 — 진드기 노출 뒤 방실차단 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 34 year old man comes to the emergency department because of fatigue and light headedness for 3 days. Five weeks ago, he went hiking in Connecticut, and 2 weeks later he noticed an expanding red rash on his thigh that resolved without treatment. He has had intermittent headaches and muscle aches. He has no history of serious illness and takes no medications. His temperature is 37.6°C, pulse is 52/min, and blood pressure is 118/72 mm Hg. He is alert and oriented. There is no rash, neck stiffness, or facial weakness. Cardiac examination shows a regular rhythm without murmurs. An ECG shows sinus rhythm with a PR interval of 340 ms and narrow QRS complexes. Serum enzyme immunoassay and Western blot for Borrelia burgdorferi IgM are positive. Which of the following is the most appropriate treatment? A. Permanent pacemaker placement B. Oral amoxicillin for 28 days as an outpatient C. No antibiotic therapy and observation D. Hospital admission with intravenous ceftriaxone and cardiac monitoring E. Oral doxycycline for 14 days as an outpatient"
+  },
+  {
+   "id": "imaging-2026-0211",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 벤조디아제핀에 반응하지 않는 경련",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0211.md",
+   "snippet": "30세 남자가 전신 강직간대 경련을 하며 응급실에 실려 왔다. 구급대원에 따르면 15분 전 쓰러진 뒤 경련이 계속되고 있다. 뇌전증으로 라모트리진을 먹고 있었는데 일주일 전 약이 떨어졌다고 한다. 응급실에 도착해 기도를 확보하고 산소를 주었으며 정맥로를 잡았다. 혈압 152/90 mmHg, 맥박 124회/분, 산소포화도 95 %, 체온 37.8°C 이다. 손가락 끝 혈당은 118 mg/dL 이다. 로라제팜 4 mg 을 정맥으로",
+   "text": "신경 신경 — 벤조디아제핀에 반응하지 않는 경련 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 30세 남자가 전신 강직간대 경련을 하며 응급실에 실려 왔다. 구급대원에 따르면 15분 전 쓰러진 뒤 경련이 계속되고 있다. 뇌전증으로 라모트리진을 먹고 있었는데 일주일 전 약이 떨어졌다고 한다. 응급실에 도착해 기도를 확보하고 산소를 주었으며 정맥로를 잡았다. 혈압 152/90 mmHg, 맥박 124회/분, 산소포화도 95 %, 체온 37.8°C 이다. 손가락 끝 혈당은 118 mg/dL 이다. 로라제팜 4 mg 을 정맥으로 주고 5분 뒤 한 번 더 주었으나 경련이 멈추지 않는다. 다음에 투여할 약물로 가장 적절한 것은? A. 로라제팜 4 mg 추가 정맥 투여 B. 프로포폴 지속 주입 C. 50 % 포도당 정맥 투여 D. 카르바마제핀 경구 투여 E. 레베티라세탐 정맥 부하 용량"
+  },
+  {
+   "id": "imaging-2026-0210",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 헬리코박터 제균 확인 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0210.md",
+   "snippet": "A 45 year old man comes to the physician for follow up after treatment of a duodenal ulcer. Two months ago, he had epigastric pain, and upper endoscopy showed a 1 cm duodenal ulcer; biopsy of the gastric antrum was positive for Helicobacter",
+   "text": "소화기 소화기·간담췌 — 헬리코박터 제균 확인 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 45 year old man comes to the physician for follow up after treatment of a duodenal ulcer. Two months ago, he had epigastric pain, and upper endoscopy showed a 1 cm duodenal ulcer; biopsy of the gastric antrum was positive for Helicobacter pylori. He completed 14 days of bismuth quadruple therapy 6 weeks ago and has continued omeprazole 20 mg daily since then. His epigastric pain has resolved. He has no weight loss, dysphagia, melena, or vomiting. He takes no other medications and does not use NSAIDs. His vital signs are within normal limits. Abdominal examination shows no tenderness. Hemoglobin concentration is 14.2 g/dL. Which of the following is the most appropriate next step to confirm eradication? A. No further testing because his symptoms have resolved B. Stop omeprazole for 2 weeks, then perform a urea breath test C. Perform a urea breath test today D. Measure serum IgG antibodies to H. pylori E. Repeat upper endoscopy with rapid urease testing now"
+  },
+  {
+   "id": "imaging-2026-0209",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 넓은 QRS 를 동반한 약물 과다복용",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0209.md",
+   "snippet": "25세 여자가 의식이 떨어져 응급실에 실려 왔다. 우울증으로 아미트립틸린을 처방받아 왔고, 옆에서 빈 약통이 발견되었다. 2시간 전까지는 친구와 문자를 주고받았다. 혈압 84/50 mmHg, 맥박 128회/분, 호흡 14회/분, 체온 37.9°C 이다. 큰 소리에 눈을 뜨지만 곧 다시 잠든다. 동공은 6 mm 로 커져 있고 피부가 건조하며 장음이 줄어 있다. 손가락 끝 혈당은 108 mg/dL 이다. 심전도에서 동빈맥, QRS",
+   "text": "응급·중환자 응급·중환자·외상 — 넓은 QRS 를 동반한 약물 과다복용 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 25세 여자가 의식이 떨어져 응급실에 실려 왔다. 우울증으로 아미트립틸린을 처방받아 왔고, 옆에서 빈 약통이 발견되었다. 2시간 전까지는 친구와 문자를 주고받았다. 혈압 84/50 mmHg, 맥박 128회/분, 호흡 14회/분, 체온 37.9°C 이다. 큰 소리에 눈을 뜨지만 곧 다시 잠든다. 동공은 6 mm 로 커져 있고 피부가 건조하며 장음이 줄어 있다. 손가락 끝 혈당은 108 mg/dL 이다. 심전도에서 동빈맥, QRS 폭 140 ms, aVR 의 끝부분 R 파가 4 mm 이다. 기도를 확보하고 생리식염수를 주기 시작하였다. 다음에 투여할 약물로 가장 적절한 것은? A. 탄산수소나트륨 B. 피조스티그민 C. 플루마제닐 D. 아미오다론 E. 날록손"
+  },
+  {
+   "id": "imaging-2026-0208",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 고탄산혈증을 동반한 만성폐쇄폐질환 급성 악화",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0208.md",
+   "snippet": "72세 남자가 3일 전부터 숨이 차고 누런 가래가 늘어 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 50갑년의 흡연력이 있다. 의식은 명료하고 질문에 바르게 대답하며 가래를 스스로 뱉을 수 있다. 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분, 체온 37.6°C 이다. 보조 호흡근을 쓰며 양쪽 폐에서 호기 천명음이 들린다. 비강 캐뉼라로 산소 2 L/분을 주고 기관지확장제 분무와 전신 스테로이드를 투",
+   "text": "호흡기 호흡기 — 고탄산혈증을 동반한 만성폐쇄폐질환 급성 악화 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 72세 남자가 3일 전부터 숨이 차고 누런 가래가 늘어 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 50갑년의 흡연력이 있다. 의식은 명료하고 질문에 바르게 대답하며 가래를 스스로 뱉을 수 있다. 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분, 체온 37.6°C 이다. 보조 호흡근을 쓰며 양쪽 폐에서 호기 천명음이 들린다. 비강 캐뉼라로 산소 2 L/분을 주고 기관지확장제 분무와 전신 스테로이드를 투여한 1시간 뒤 동맥혈 가스는 pH 7.28, PaCO2 68 mmHg, PaO2 62 mmHg, HCO3 31 mEq/L 이다. 흉부 X선에서 과팽창 외에 폐렴이나 기흉은 없다. 다음 처치로 가장 적절한 것은? A. 탄산수소나트륨을 정맥 투여한다 B. 아미노필린을 정맥 투여한다 C. 비침습적 양압환기를 시작한다 D. 즉시 기관삽관 후 기계환기를 한다 E. 산소를 고유량으로 올린다"
+  },
+  {
+   "id": "imaging-2026-0207",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 바이러스 감염 뒤 자세에 따라 변하는 흉통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0207.md",
+   "snippet": "A 32 year old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down and when he takes a deep breath and is relieved by sitting up and leaning forward. He had a sore throat and runn",
+   "text": "순환기 순환기 — 바이러스 감염 뒤 자세에 따라 변하는 흉통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 32 year old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down and when he takes a deep breath and is relieved by sitting up and leaning forward. He had a sore throat and runny nose 10 days ago. He has no history of serious illness and takes no medications. His temperature is 37.8°C, pulse is 96/min, respirations are 18/min, and blood pressure is 124/78 mm Hg. A scratchy, three component sound is heard at the left lower sternal border with the patient leaning forward. Jugular venous pressure is normal, and there is no pulsus paradoxus. An ECG shows diffuse concave ST segment elevations with PR segment depressions. Serum troponin I concentration is within the reference range. Echocardiography shows a small pericardial effusion and normal ventricular function. Which of the following is the most appropriate pharmacotherapy? A. Furosemide B. Ibuprofen and colchicine C. Prednisone D. Aspirin, clopidogrel, and heparin E. Intravenous ceftriaxone and vancomycin"
+  },
+  {
+   "id": "imaging-2026-0206",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 갑자기 생긴 무통성 단안 시력 상실",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0206.md",
+   "snippet": "68세 남자가 1시간 전 갑자기 오른쪽 눈이 보이지 않아 응급실에 왔다. 통증은 없었고 눈 앞이 커튼처럼 한 번에 어두워졌다. 고혈압과 이상지질혈증으로 약을 먹고 있고 40갑년의 흡연력이 있다. 두통·턱 파행·근육통은 없다. 혈압 162/94 mmHg, 맥박 78회/분, 규칙적이다. 오른쪽 눈 시력은 안전수지이고 상대구심동공운동장애가 있다. 안압은 양쪽 15 mmHg 이다. 안저 검사에서 망막이 전반적으로 하얗게 부어 있고 황",
+   "text": "안과 안과 — 갑자기 생긴 무통성 단안 시력 상실 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 68세 남자가 1시간 전 갑자기 오른쪽 눈이 보이지 않아 응급실에 왔다. 통증은 없었고 눈 앞이 커튼처럼 한 번에 어두워졌다. 고혈압과 이상지질혈증으로 약을 먹고 있고 40갑년의 흡연력이 있다. 두통·턱 파행·근육통은 없다. 혈압 162/94 mmHg, 맥박 78회/분, 규칙적이다. 오른쪽 눈 시력은 안전수지이고 상대구심동공운동장애가 있다. 안압은 양쪽 15 mmHg 이다. 안저 검사에서 망막이 전반적으로 하얗게 부어 있고 황반 중심에 붉은 점이 보이며, 망막 출혈은 없다. 적혈구침강속도 12 mm/h, C 반응 단백 0.2 mg/dL 이다. 가장 적절한 처치는? A. 안압하강제를 점안하고 1주 뒤 다시 본다 B. 유리체강 내 항혈관내피성장인자 주사를 한다 C. 뇌졸중 평가를 위해 응급 뇌 MRI 와 혈관 검사를 한다 D. 고용량 스테로이드를 정맥으로 투여한다 E. 레이저 망막광응고술을 한다"
+  },
+  {
+   "id": "imaging-2026-0205",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 젊은 여성 유방 종괴의 표적치료 전 검사",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0205.md",
+   "snippet": "A 24 year old woman comes to the physician because of a painless lump in her left breast for 2 months. She has no personal history of serious illness. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 112/70 mm Hg. Examinati",
+   "text": "혈액·종양 혈액·종양 — 젊은 여성 유방 종괴의 표적치료 전 검사 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 24 year old woman comes to the physician because of a painless lump in her left breast for 2 months. She has no personal history of serious illness. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 112/70 mm Hg. Examination shows a 3 cm firm, nontender mass in the upper outer quadrant of the left breast and a mobile 1.5 cm left axillary lymph node. Core needle biopsy of the mass shows invasive ductal carcinoma that is estrogen receptor negative and progesterone receptor negative. Staging CT shows no distant metastases. An immunohistochemical stain of the tumor for a growth factor receptor is shown. Neoadjuvant chemotherapy combined with a targeted monoclonal antibody is planned. Which of the following is the most appropriate test to obtain before starting the targeted therapy? A. Pulmonary function testing B. Audiometry C. Ophthalmologic examination D. Bone densitometry E. Echocardiography"
+  },
+  {
+   "id": "imaging-2026-0204",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 혈복강 환자의 복막 조직검사",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_he"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0204.md",
+   "snippet": "36세 여자가 3시간 전 갑자기 시작된 아랫배 통증으로 응급실에 왔다. 몇 년 전부터 월경 때마다 아랫배가 심하게 아프고 성교통이 있었다. 지금은 월경 주기 2일째이다. 혈압 92/58 mmHg, 맥박 112회/분이다. 배 전체에 압통과 반발통이 있다. 소변 hCG 와 혈청 β hCG 는 음성이다. 혈색소 8.6 g/dL 이다. 복부 초음파에서 골반과 간 주위에 다량의 복강 내 액체가 있다. 응급 복강경에서 약 1,500 mL",
+   "text": "산부인과 부인과 — 혈복강 환자의 복막 조직검사 opendata kmle_style histology_he 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 36세 여자가 3시간 전 갑자기 시작된 아랫배 통증으로 응급실에 왔다. 몇 년 전부터 월경 때마다 아랫배가 심하게 아프고 성교통이 있었다. 지금은 월경 주기 2일째이다. 혈압 92/58 mmHg, 맥박 112회/분이다. 배 전체에 압통과 반발통이 있다. 소변 hCG 와 혈청 β hCG 는 음성이다. 혈색소 8.6 g/dL 이다. 복부 초음파에서 골반과 간 주위에 다량의 복강 내 액체가 있다. 응급 복강경에서 약 1,500 mL 의 혈액이 고여 있었고, 양쪽 난소에 초콜릿색 낭종이 있으며, 오른쪽 골반 벽 복막에 출혈하는 갈색 병변이 있었다. 이 병변을 절제한 조직의 헤마톡실린 에오신 염색 소견은 그림과 같다. 진단은? A. 황체 낭종 파열 B. 자궁내막증 C. 난관 자궁외임신 D. 복막 장액성 암종 E. 결핵성 복막염"
+  },
+  {
+   "id": "imaging-2026-0203",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 무월경 뒤 질 출혈과 두근거림",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ultrasound"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0203.md",
+   "snippet": "47세 여자가 3주 동안 계속된 질 출혈과 두근거림으로 병원에 왔다. 마지막 월경은 14주 전이었다. 최근 2주 동안 손이 떨리고 더위를 참기 어려우며 체중이 3 kg 줄었다. 구역과 구토가 심하다. 갑상샘 질환을 앓은 적이 없고 복용하는 약도 없다. 혈압 148/88 mmHg, 맥박 118회/분, 체온 37.2°C 이다. 안구 돌출은 없고 갑상샘은 커져 있지 않으며 압통이 없다. 자궁은 임신 20주 크기로 커져 있다. 혈청 ",
+   "text": "산부인과 산과 — 무월경 뒤 질 출혈과 두근거림 opendata kmle_style ultrasound 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 47세 여자가 3주 동안 계속된 질 출혈과 두근거림으로 병원에 왔다. 마지막 월경은 14주 전이었다. 최근 2주 동안 손이 떨리고 더위를 참기 어려우며 체중이 3 kg 줄었다. 구역과 구토가 심하다. 갑상샘 질환을 앓은 적이 없고 복용하는 약도 없다. 혈압 148/88 mmHg, 맥박 118회/분, 체온 37.2°C 이다. 안구 돌출은 없고 갑상샘은 커져 있지 않으며 압통이 없다. 자궁은 임신 20주 크기로 커져 있다. 혈청 β hCG 850,000 mIU/mL, TSH 0.01 µIU/mL 미만(참고치 0.4~4.0), 유리 T4 3.6 ng/dL(참고치 0.8~1.8) 이다. 질식 초음파는 그림과 같다. 이 환자의 갑상샘기능항진증의 기전으로 가장 적절한 것은? A. hCG 가 갑상샘자극호르몬 수용체를 자극한다 B. 갑상샘자극호르몬 수용체 자극 항체가 생긴다 C. 갑상샘 여포가 파괴되어 저장 호르몬이 새어 나온다 D. 갑상샘 결절이 자율적으로 호르몬을 만든다 E. 뇌하수체 선종이 갑상샘자극호르몬을 분비한다"
+  },
+  {
+   "id": "imaging-2026-0202",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 초산부의 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "confidence": "high",
+   "date": "2026-10-02",
+   "path": "content/imaging/2026/imaging-2026-0202.md",
+   "snippet": "A 28 year old nulligravid woman at 40 weeks' gestation comes to the labor and delivery unit because of regular painful contractions for 6 hours. Her pregnancy has been uncomplicated. Her temperature is 36.9°C, pulse is 88/min, and blood pre",
+   "text": "산부인과 산과 — 분만 중 초산부의 태아심박동 기록 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900 A 28 year old nulligravid woman at 40 weeks' gestation comes to the labor and delivery unit because of regular painful contractions for 6 hours. Her pregnancy has been uncomplicated. Her temperature is 36.9°C, pulse is 88/min, and blood pressure is 118/72 mm Hg. Fetal membranes are intact. On admission, the cervix was 3 cm dilated and 80% effaced with the vertex at 1 station. Four hours later, the cervix is 4 cm dilated, 90% effaced, and the vertex is at 1 station. Estimated fetal weight is 3,300 g. She requests epidural analgesia. A segment of the external fetal heart rate and uterine activity tracing is shown. Which of the following is the most appropriate next step in management? A. Maternal repositioning, oxygen, and an intravenous fluid bolus B. Fetal scalp blood sampling C. Administration of terbutaline D. Continue expectant management of labor E. Cesarean delivery for arrest of dilation"
   },
   {
    "id": "cn.cardio.syncope.high-risk-admit",

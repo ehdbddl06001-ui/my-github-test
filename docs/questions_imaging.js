@@ -2,6 +2,1581 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0205",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "혈액·종양 — 젊은 여성 유방 종괴의 표적치료 전 검사",
+  "type": "혈액·종양 — 젊은 여성 유방 종괴의 표적치료 전 검사",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "A 24-year-old woman comes to the physician because of a painless lump in her left breast for 2 months. She has no personal history of serious illness. Her temperature is 36.8°C, pulse is 76/min, and blood pressure is 112/70 mm Hg. Examination shows a 3-cm firm, nontender mass in the upper outer quadrant of the left breast and a mobile 1.5-cm left axillary lymph node. Core needle biopsy of the mass shows invasive ductal carcinoma that is estrogen receptor-negative and progesterone receptor-negative. Staging CT shows no distant metastases. An immunohistochemical stain of the tumor for a growth factor receptor is shown. Neoadjuvant chemotherapy combined with a targeted monoclonal antibody is planned.",
+  "question": "Which of the following is the most appropriate test to obtain before starting the targeted therapy?",
+  "options": [
+   "Pulmonary function testing",
+   "Audiometry",
+   "Ophthalmologic examination",
+   "Bone densitometry",
+   "Echocardiography"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The stain shows complete, intense brown membrane staining of nearly all tumor cells in the nests, with negative stroma — HER2 immunohistochemistry 3+, i.e., HER2-positive. The targeted antibody is trastuzumab (usually with pertuzumab), which can cause a decline in left ventricular ejection fraction and heart failure. Baseline LVEF by echocardiography (or MUGA) is required before starting, and it is repeated about every 3 months during therapy.\n- 원리: <b>Reading the stain</b>: HER2 (ERBB2) is a transmembrane receptor tyrosine kinase. Overexpression from gene amplification puts so many receptors on the cell surface that the antibody outlines every cell like chicken wire. <b>3+ = complete, intense circumferential membrane staining in &gt; 10 % of tumor cells</b> — positive without further testing; 2+ is equivocal and needs ISH; 0/1+ is negative (1+ and some 2+ now called \"HER2-low\").<br> <b>Why the heart</b>: cardiomyocytes use HER2 (with HER4, activated by neuregulin) as a survival signal under stress. Blocking it impairs repair of myocyte damage, so LVEF falls — typically without myocyte necrosis and often reversible when the drug is stopped (unlike the dose-dependent, irreversible cardiomyopathy of anthracyclines). The risk is highest when trastuzumab follows or accompanies anthracyclines.<br> <b>So</b> baseline LVEF is checked before treatment, and serial monitoring guides holding the drug if LVEF drops ≥ 10 points to below 50 %.\n- 비교: <table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:37%\">Trastuzumab (answer)</th><th>Typical other organ toxicities (rivals)</th></tr></thead><tbody> <tr><td>Main toxicity</td><td><b>LVEF decline / heart failure</b></td><td>Bleomycin — pulmonary fibrosis; cisplatin — ototoxicity</td></tr> <tr><td>Dose relation</td><td>Not cumulative-dose related, often reversible</td><td>Bleomycin cumulative; cisplatin cumulative</td></tr> <tr><td>Baseline test</td><td><b>Echocardiography or MUGA</b></td><td>PFT with DLCO; audiometry</td></tr> <tr><td>Other</td><td>Infusion reactions</td><td>Ethambutol — visual exam; aromatase inhibitors — bone density</td></tr> </tbody></table> Each wrong option is the correct baseline test for a different drug — the stain identifies the target, the target identifies the drug, and the drug identifies the organ at risk.\n- 오답 이유:\n  - (A) Pulmonary function testing with DLCO is the baseline test before bleomycin, which causes dose-related pulmonary fibrosis. It would be the answer for a young man starting BEP chemotherapy for testicular cancer.\n  - (B) Audiometry is obtained before cisplatin because of cumulative sensorineural hearing loss. It fits a patient starting cisplatin-based therapy, such as for head and neck or germ cell tumors.\n  - (C) Ophthalmologic examination is the baseline test before ethambutol (optic neuritis) or hydroxychloroquine (retinopathy). It would be correct if this patient were starting one of those drugs.\n  - (D) Bone densitometry is the baseline before aromatase inhibitors in postmenopausal hormone receptor-positive breast cancer. This tumor is ER/PR-negative and the patient is premenopausal, so it does not apply.\n- 함정: Read the stain as HER2 3+ and connect trastuzumab to the heart — each other option is a baseline test for a different drug.\n- 학습목표: HER2 IHC 3+ 유방암에 트라스투주맙을 쓰기 전 좌심실 박출률을 평가해야 함을 안다(트라스투주맙의 심독성)\n- 근거·출처: Wolff AC et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO–College of American Pathologists guideline update. J Clin Oncol 2023;41:3867 · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer (2024) — HER2-targeted therapy and cardiac monitoring · Human Protein Atlas ERBB2 cancer tissue image (teacher-only) · 작성자 판독(2026-10-03): 종양 둥지의 거의 모든 세포에 완전하고 강한 갈색 세포막 염색(3+ 양상), 간질 음성\n\n## 출처\n- Human Protein Atlas, ERBB2 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/62555/141672_A_4_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The stain shows complete, intense brown membrane staining of nearly all tumor cells in the nests, with negative stroma — HER2 immunohistochemistry 3+, i.e., HER2-positive. The targeted antibody is trastuzumab (usually with pertuzumab), which can cause a decline in left ventricular ejection fraction and heart failure. Baseline LVEF by echocardiography (or MUGA) is required before starting, and it is repeated about every 3 months during therapy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Reading the stain</b>: HER2 (ERBB2) is a transmembrane receptor tyrosine kinase. Overexpression from gene amplification puts so many receptors on the cell surface that the antibody outlines every cell like chicken wire. <b>3+ = complete, intense circumferential membrane staining in &gt; 10 % of tumor cells</b> — positive without further testing; 2+ is equivocal and needs ISH; 0/1+ is negative (1+ and some 2+ now called \"HER2-low\").<br> <b>Why the heart</b>: cardiomyocytes use HER2 (with HER4, activated by neuregulin) as a survival signal under stress. Blocking it impairs repair of myocyte damage, so LVEF falls — typically without myocyte necrosis and often reversible when the drug is stopped (unlike the dose-dependent, irreversible cardiomyopathy of anthracyclines). The risk is highest when trastuzumab follows or accompanies anthracyclines.<br> <b>So</b> baseline LVEF is checked before treatment, and serial monitoring guides holding the drug if LVEF drops ≥ 10 points to below 50 %."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Drug</th><th style=\"width:37%\">Trastuzumab (answer)</th><th>Typical other organ toxicities (rivals)</th></tr></thead><tbody> <tr><td>Main toxicity</td><td><b>LVEF decline / heart failure</b></td><td>Bleomycin — pulmonary fibrosis; cisplatin — ototoxicity</td></tr> <tr><td>Dose relation</td><td>Not cumulative-dose related, often reversible</td><td>Bleomycin cumulative; cisplatin cumulative</td></tr> <tr><td>Baseline test</td><td><b>Echocardiography or MUGA</b></td><td>PFT with DLCO; audiometry</td></tr> <tr><td>Other</td><td>Infusion reactions</td><td>Ethambutol — visual exam; aromatase inhibitors — bone density</td></tr> </tbody></table> Each wrong option is the correct baseline test for a different drug — the stain identifies the target, the target identifies the drug, and the drug identifies the organ at risk."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Pulmonary function testing with DLCO is the baseline test before bleomycin, which causes dose-related pulmonary fibrosis. It would be the answer for a young man starting BEP chemotherapy for testicular cancer.\n(B) Audiometry is obtained before cisplatin because of cumulative sensorineural hearing loss. It fits a patient starting cisplatin-based therapy, such as for head and neck or germ cell tumors.\n(C) Ophthalmologic examination is the baseline test before ethambutol (optic neuritis) or hydroxychloroquine (retinopathy). It would be correct if this patient were starting one of those drugs.\n(D) Bone densitometry is the baseline before aromatase inhibitors in postmenopausal hormone receptor-positive breast cancer. This tumor is ER/PR-negative and the patient is premenopausal, so it does not apply."
+   },
+   {
+    "k": "함정",
+    "v": "Read the stain as HER2 3+ and connect trastuzumab to the heart — each other option is a baseline test for a different drug."
+   },
+   {
+    "k": "학습목표",
+    "v": "HER2 IHC 3+ 유방암에 트라스투주맙을 쓰기 전 좌심실 박출률을 평가해야 함을 안다(트라스투주맙의 심독성)"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Wolff AC et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO–College of American Pathologists guideline update. J Clin Oncol 2023;41:3867 · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer (2024) — HER2-targeted therapy and cardiac monitoring · Human Protein Atlas ERBB2 cancer tissue image (teacher-only) · 작성자 판독(2026-10-03): 종양 둥지의 거의 모든 세포에 완전하고 강한 갈색 세포막 염색(3+ 양상), 간질 음성 ## 출처 Human Protein Atlas, ERBB2 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/62555/141672_A_4_8.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "종양 세포막 전체가 진하게 염색된 HER2 3+ 이므로 트라스투주맙을 쓰고, 그 심독성 때문에 시작 전 심초음파로 좌심실 박출률을 잰다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "폐기능 검사는 블레오마이신의 폐섬유증 감시용이고, 트라스투주맙의 독성은 심근이다",
+   "steps": 3,
+   "chain": [
+    "영상: 거의 모든 종양 세포의 완전하고 강한 세포막 염색 → HER2 3+(양성)",
+    "HER2 양성 → 표적 단일클론항체는 트라스투주맙",
+    "트라스투주맙은 좌심실 박출률 감소를 일으킴 → 시작 전 심초음파"
+   ],
+   "key": [
+    {
+     "item": "영상: 종양 세포의 완전하고 강한 갈색 세포막 염색, 간질 음성",
+     "why": "HER2 IHC 3+",
+     "also": []
+    },
+    {
+     "item": "combined with a targeted monoclonal antibody",
+     "why": "HER2 표적 항체 — 트라스투주맙",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "estrogen receptor-negative and progesterone receptor-negative",
+     "why": "호르몬 치료(골밀도 검사가 필요한 아로마테이스 억제제) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Staging CT shows no distant metastases",
+     "why": "병기 — 검사 선택을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "A 24-year-old woman",
+     "why": "폐경 전 — 골밀도 검사 필요성을 낮춘다",
+     "also": []
+    }
+   ],
+   "summary": "염색은 HER2 3+ 로 트라스투주맙을 쓴다. 트라스투주맙은 좌심실 기능을 떨어뜨리므로 시작 전에 심초음파를 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "표적치료 대신 블레오마이신이 포함된 항암을 시작한다면 폐기능 검사가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0205.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (cancer IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000141736-ERBB2/cancer/breast+cancer",
+   "asset_id": "HPA-ERBB2_141672_A_4_8",
+   "text": "Human Protein Atlas, ERBB2 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/62555/141672_A_4_8.jpg"
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0204",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "부인과 — 혈복강 환자의 복막 조직검사",
+  "type": "부인과 — 혈복강 환자의 복막 조직검사",
+  "modality": "HISTOLOGY_HE",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "36세 여자가 3시간 전 갑자기 시작된 아랫배 통증으로 응급실에 왔다. 몇 년 전부터 월경 때마다 아랫배가 심하게 아프고 성교통이 있었다. 지금은 월경 주기 2일째이다. 혈압 92/58 mmHg, 맥박 112회/분이다. 배 전체에 압통과 반발통이 있다. 소변 hCG 와 혈청 β-hCG 는 음성이다. 혈색소 8.6 g/dL 이다. 복부 초음파에서 골반과 간 주위에 다량의 복강 내 액체가 있다. 응급 복강경에서 약 1,500 mL 의 혈액이 고여 있었고, 양쪽 난소에 초콜릿색 낭종이 있으며, 오른쪽 골반 벽 복막에 출혈하는 갈색 병변이 있었다. 이 병변을 절제한 조직의 헤마톡실린-에오신 염색 소견은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "황체 낭종 파열",
+   "자궁내막증",
+   "난관 자궁외임신",
+   "복막 장액성 암종",
+   "결핵성 복막염"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 그림은 섬유·지방조직 안에 원주상피로 덮인 길쭉한 샘이 있고, 샘 둘레를 세포가 촘촘한 간질이 감싸며 주변에 신선한 출혈이 있다 — 자궁 밖에 자궁내막의 샘과 간질이 함께 있는 자궁내막증이다. 월경통·성교통 병력, 양쪽 난소의 초콜릿 낭종, 월경 중 복막 병변의 출혈이 같은 방향을 가리킨다. hCG 가 음성이고 조직에 융모가 없어 자궁외임신이 아니다.\n- 원리: <b>왜 「샘 + 간질」 두 가지가 다 있어야 하나</b>: 자궁내막증은 기능하는 자궁내막 조직이 자궁 밖에 붙어 자라는 병이다. 진단 기준은 조직에서 <b>자궁내막 샘과 자궁내막 간질</b> 중 두 가지(또는 샘·간질·헤모시데린 탐식세포 중 둘)를 보는 것이다. 샘만 있으면 난관내막증·중피 함입과 구별이 안 되고, 간질이 있어야 「자궁내막」이라 말할 수 있다.<br> <b>왜 피가 나나</b>: 이 조직도 에스트로겐·프로게스테론에 반응해 월경 때 탈락하고 출혈한다. 출혈이 쌓이면 난소의 초콜릿 낭종, 복막의 갈색 병변·섬유화를 만들고, 드물게 병변이나 낭종이 터져 대량 혈복강이 된다. 프로스타글란딘과 염증이 월경통·성교통의 원인이다.<br> <b>그래서</b> 가임기 여성의 혈복강에서 hCG 가 음성이면 자궁외임신에서 벗어나 황체 출혈·자궁내막증 같은 원인을 찾는다. 조직에 융모(영양막에 덮인 돌기)가 있는지가 자궁외임신을 가르는 결정적 소견이다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">자궁내막증(정답)</th><th>자궁외임신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>hCG</td><td><b>음성</b></td><td>양성(혈청 β-hCG 상승)</td></tr> <tr><td>조직</td><td><b>자궁내막 샘 + 간질</b>, 헤모시데린 탐식세포</td><td>융모막 융모와 영양막 세포</td></tr> <tr><td>병력</td><td>월경통·성교통·불임, 월경 때 악화</td><td>무월경 뒤 질 출혈·편측 골반통</td></tr> <tr><td>복강경</td><td>초콜릿 낭종, 갈색·검은 복막 병변</td><td>부푼 난관, 난관 파열</td></tr> </tbody></table> 두 경우 모두 가임기 여성이 혈복강으로 쇼크에 빠질 수 있다. hCG 음성과 조직의 「융모 없는 샘·간질」이 답을 가른다.\n- 오답 이유:\n  - ① 황체 낭종 파열도 hCG 음성 혈복강을 일으키지만 주기 후반(황체기)에 흔하고 조직은 황체화된 과립막세포다. 월경 주기 22일째이고 조직에 황체 세포가 있었다면 정답이다.\n  - ③ 난관 자궁외임신은 가임기 혈복강의 가장 흔한 원인이지만 β-hCG 가 양성이고 조직에 융모가 보여야 한다. hCG 가 양성이고 난관에 융모가 있었다면 정답이 된다.\n  - ④ 복막 장액성 암종은 유두 구조와 이형성이 심한 세포·사종체가 보이고 대개 폐경 후 복수와 CA 125 상승으로 온다. 조직에 핵 이형성이 큰 유두 증식이 있으면 정답이 된다.\n  - ⑤ 결핵성 복막염은 건락괴사를 동반한 육아종과 다발성 복막 결절·복수가 특징이다. 발열·체중감소와 육아종이 조직에서 보였다면 정답이 된다.\n- 함정: 가임기 혈복강이라고 자궁외임신으로 가지 않는다 — hCG 음성, 조직은 융모 없는 자궁내막 샘과 간질이다.\n- 학습목표: 복막 조직에서 자궁내막 샘과 간질이 함께 보이면 자궁내막증으로 진단하고 융모가 없는 점으로 자궁외임신과 구별한다\n- 근거·출처: Zondervan KT, Becker CM, Missmer SA. Endometriosis. N Engl J Med 2020;382:1244 · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — Endometriosis · PMC7504832 Fig. 2 — 36세 여 증례 보고의 복막 조직 (teacher-only) · 작성자 판독(2026-10-03): 섬유지방 조직 안에 원주상피 샘과 둘레의 세포성 간질, 신선 출혈\n\n## 출처\n- Endometriosis-induced massive hemoperitoneum misdiagnosed as ruptured ectopic pregnancy: a case report. J Med Case Rep. 2020 Sep 21;14:160. doi: 10.1186/s13256-020-02486-7 (CC BY) — Fig. 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림은 섬유·지방조직 안에 원주상피로 덮인 길쭉한 샘이 있고, 샘 둘레를 세포가 촘촘한 간질이 감싸며 주변에 신선한 출혈이 있다 — 자궁 밖에 자궁내막의 샘과 간질이 함께 있는 자궁내막증이다. 월경통·성교통 병력, 양쪽 난소의 초콜릿 낭종, 월경 중 복막 병변의 출혈이 같은 방향을 가리킨다. hCG 가 음성이고 조직에 융모가 없어 자궁외임신이 아니다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「샘 + 간질」 두 가지가 다 있어야 하나</b>: 자궁내막증은 기능하는 자궁내막 조직이 자궁 밖에 붙어 자라는 병이다. 진단 기준은 조직에서 <b>자궁내막 샘과 자궁내막 간질</b> 중 두 가지(또는 샘·간질·헤모시데린 탐식세포 중 둘)를 보는 것이다. 샘만 있으면 난관내막증·중피 함입과 구별이 안 되고, 간질이 있어야 「자궁내막」이라 말할 수 있다.<br> <b>왜 피가 나나</b>: 이 조직도 에스트로겐·프로게스테론에 반응해 월경 때 탈락하고 출혈한다. 출혈이 쌓이면 난소의 초콜릿 낭종, 복막의 갈색 병변·섬유화를 만들고, 드물게 병변이나 낭종이 터져 대량 혈복강이 된다. 프로스타글란딘과 염증이 월경통·성교통의 원인이다.<br> <b>그래서</b> 가임기 여성의 혈복강에서 hCG 가 음성이면 자궁외임신에서 벗어나 황체 출혈·자궁내막증 같은 원인을 찾는다. 조직에 융모(영양막에 덮인 돌기)가 있는지가 자궁외임신을 가르는 결정적 소견이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">자궁내막증(정답)</th><th>자궁외임신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>hCG</td><td><b>음성</b></td><td>양성(혈청 β-hCG 상승)</td></tr> <tr><td>조직</td><td><b>자궁내막 샘 + 간질</b>, 헤모시데린 탐식세포</td><td>융모막 융모와 영양막 세포</td></tr> <tr><td>병력</td><td>월경통·성교통·불임, 월경 때 악화</td><td>무월경 뒤 질 출혈·편측 골반통</td></tr> <tr><td>복강경</td><td>초콜릿 낭종, 갈색·검은 복막 병변</td><td>부푼 난관, 난관 파열</td></tr> </tbody></table> 두 경우 모두 가임기 여성이 혈복강으로 쇼크에 빠질 수 있다. hCG 음성과 조직의 「융모 없는 샘·간질」이 답을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 황체 낭종 파열도 hCG 음성 혈복강을 일으키지만 주기 후반(황체기)에 흔하고 조직은 황체화된 과립막세포다. 월경 주기 22일째이고 조직에 황체 세포가 있었다면 정답이다.\n③ 난관 자궁외임신은 가임기 혈복강의 가장 흔한 원인이지만 β-hCG 가 양성이고 조직에 융모가 보여야 한다. hCG 가 양성이고 난관에 융모가 있었다면 정답이 된다.\n④ 복막 장액성 암종은 유두 구조와 이형성이 심한 세포·사종체가 보이고 대개 폐경 후 복수와 CA 125 상승으로 온다. 조직에 핵 이형성이 큰 유두 증식이 있으면 정답이 된다.\n⑤ 결핵성 복막염은 건락괴사를 동반한 육아종과 다발성 복막 결절·복수가 특징이다. 발열·체중감소와 육아종이 조직에서 보였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "가임기 혈복강이라고 자궁외임신으로 가지 않는다 — hCG 음성, 조직은 융모 없는 자궁내막 샘과 간질이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "복막 조직에서 자궁내막 샘과 간질이 함께 보이면 자궁내막증으로 진단하고 융모가 없는 점으로 자궁외임신과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Zondervan KT, Becker CM, Missmer SA. Endometriosis. N Engl J Med 2020;382:1244 · Robbins and Cotran Pathologic Basis of Disease, 10th ed. — Endometriosis · PMC7504832 Fig. 2 — 36세 여 증례 보고의 복막 조직 (teacher-only) · 작성자 판독(2026-10-03): 섬유지방 조직 안에 원주상피 샘과 둘레의 세포성 간질, 신선 출혈 ## 출처 Endometriosis-induced massive hemoperitoneum misdiagnosed as ruptured ectopic pregnancy: a case report. J Med Case Rep. 2020 Sep 21;14:160. doi: 10.1186/s13256-020-02486-7 (CC BY) — Fig. 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "복막 조직에 자궁내막 샘과 간질이 함께 있고 hCG 가 음성이므로 자궁내막증 병변의 출혈이 혈복강의 원인이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "자궁외임신이면 hCG 양성과 조직의 융모가 있어야 하는데 이 환자는 hCG 음성이고 융모가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 섬유지방 조직 안의 원주상피 샘 + 둘레 세포성 간질 + 출혈 → 자궁 밖 자궁내막 조직",
+    "hCG 음성·초콜릿 낭종·월경통 병력 → 자궁외임신이 아닌 자궁내막증"
+   ],
+   "key": [
+    {
+     "item": "영상: 섬유지방 조직 안의 샘과 그 둘레를 감싼 세포성 간질",
+     "why": "자궁내막 샘 + 간질 = 자궁내막증의 진단 기준",
+     "also": []
+    },
+    {
+     "item": "양쪽 난소에 초콜릿색 낭종",
+     "why": "자궁내막종 — 자궁내막증을 지지",
+     "also": []
+    },
+    {
+     "item": "월경 때마다 아랫배가 심하게 아프고 성교통이 있었다",
+     "why": "자궁내막증의 전형적 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "소변 hCG 와 혈청 β-hCG 는 음성이다",
+     "why": "자궁외임신 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "지금은 월경 주기 2일째이다",
+     "why": "황체기에 흔한 황체 낭종 파열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 92/58 mmHg, 맥박 112회/분",
+     "why": "혈복강에 의한 쇼크 — 응급 수술의 근거",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "hCG 음성 혈복강에서 복막 병변 조직이 자궁내막 샘과 간질이다. 월경통·초콜릿 낭종과 함께 자궁내막증이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "β-hCG 가 양성이고 절제 조직에 융모가 보였다면 자궁외임신이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0204.png",
+   "caption": "헤마톡실린-에오신 염색 조직 절편, 원 배율 ×100 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_HE 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7504832/",
+   "asset_id": "PMC-PMC7504832_Fig2",
+   "text": "Endometriosis-induced massive hemoperitoneum misdiagnosed as ruptured ectopic pregnancy: a case report. J Med Case Rep. 2020 Sep 21;14:160. doi: 10.1186/s13256-020-02486-7 (CC BY) — Fig. 2"
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0203",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "산과 — 무월경 뒤 질 출혈과 두근거림",
+  "type": "산과 — 무월경 뒤 질 출혈과 두근거림",
+  "modality": "ULTRASOUND",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "47세 여자가 3주 동안 계속된 질 출혈과 두근거림으로 병원에 왔다. 마지막 월경은 14주 전이었다. 최근 2주 동안 손이 떨리고 더위를 참기 어려우며 체중이 3 kg 줄었다. 구역과 구토가 심하다. 갑상샘 질환을 앓은 적이 없고 복용하는 약도 없다. 혈압 148/88 mmHg, 맥박 118회/분, 체온 37.2°C 이다. 안구 돌출은 없고 갑상샘은 커져 있지 않으며 압통이 없다. 자궁은 임신 20주 크기로 커져 있다. 혈청 β-hCG 850,000 mIU/mL, TSH 0.01 µIU/mL 미만(참고치 0.4~4.0), 유리 T4 3.6 ng/dL(참고치 0.8~1.8) 이다. 질식 초음파는 그림과 같다.",
+  "question": "이 환자의 갑상샘기능항진증의 기전으로 가장 적절한 것은?",
+  "options": [
+   "hCG 가 갑상샘자극호르몬 수용체를 자극한다",
+   "갑상샘자극호르몬 수용체 자극 항체가 생긴다",
+   "갑상샘 여포가 파괴되어 저장 호르몬이 새어 나온다",
+   "갑상샘 결절이 자율적으로 호르몬을 만든다",
+   "뇌하수체 선종이 갑상샘자극호르몬을 분비한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 초음파에서 자궁강을 채운 고에코 종괴 안에 작은 낭성 공간이 벌집처럼 모여 있고(화살표) 태아는 보이지 않는다 — 완전포상기태다. β-hCG 가 85만으로 매우 높고, TSH 는 억제되었는데 유리 T4 가 높으며 안구돌출·갑상샘종이 없다. hCG 는 TSH 와 α 소단위가 같고 β 소단위·수용체 구조가 비슷해, 농도가 아주 높으면 TSH 수용체를 직접 자극한다. 기태 제거 뒤 hCG 가 떨어지면 갑상샘 기능도 정상화된다.\n- 원리: <b>왜 hCG 가 갑상샘을 자극하나</b>: TSH·LH·FSH·hCG 는 모두 같은 α 소단위에 서로 다른 β 소단위가 붙은 당단백 호르몬이다. hCG 의 β 소단위는 TSH β 와 구조가 닮았고, TSH 수용체와 LH/hCG 수용체도 같은 G 단백 결합 수용체 계열이다. 그래서 hCG 는 TSH 수용체에 약하게 결합한다 — 친화도는 TSH 의 수천분의 일이지만, 농도가 수십만 mIU/mL 가 되면 이 약한 결합만으로 갑상샘이 자극된다.<br> <b>정상 임신에서도 같은 일이 작게 일어난다</b>: 임신 10~12주 hCG 정점에 TSH 가 살짝 떨어지는 「임신 일과성 갑상샘중독」이 그것이다. 포상기태는 영양막이 지나치게 증식해 hCG 가 훨씬 높아 임상적 갑상샘기능항진증까지 간다.<br> <b>그래서</b> 갑상샘 자체에는 자가면역 소견(안구돌출·전갑상샘 점액부종·TSI)이 없고, 치료는 원인 제거다 — 흡입소파술 전 β 차단제로 증상을 조절하고(마취 중 갑상샘 폭풍 예방), 기태 제거 뒤 hCG 가 떨어지면 저절로 좋아진다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">hCG 매개(정답)</th><th>그레이브스병(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>자극 물질</td><td><b>hCG</b>(TSH 와 α 소단위 공유)</td><td>TSH 수용체 자극 항체(TSI)</td></tr> <tr><td>갑상샘 밖 소견</td><td>없음</td><td><b>안구돌출·전갑상샘 점액부종</b></td></tr> <tr><td>갑상샘</td><td>대개 커지지 않음</td><td>미만성 갑상샘종·잡음</td></tr> <tr><td>경과</td><td>기태 제거로 hCG 가 떨어지면 정상화</td><td>항갑상샘제·방사성 요오드 필요</td></tr> </tbody></table> 두 경우 모두 TSH 수용체가 자극되어 TSH 가 억제되고 T4 가 오른다. 갈림은 「무엇이 수용체를 누르는가」이고, 그 단서가 hCG 수치·자궁 크기와 자가면역 소견의 유무다.\n- 오답 이유:\n  - ② 갑상샘자극 항체는 그레이브스병의 기전이다. 안구돌출·미만성 갑상샘종·전갑상샘 점액부종이 있고 hCG 가 임신 주수에 맞는 수준이었다면 정답이 된다.\n  - ③ 여포 파괴로 저장 호르몬이 새는 것은 아급성·무통성·산후 갑상샘염의 기전이다. 갑상샘 압통이나 분만 뒤 발생, 방사성 요오드 섭취율 감소가 있으면 정답이 된다.\n  - ④ 자율기능 결절은 독성 결절이나 다결절성 갑상샘종에서 생긴다. 만져지는 결절과 섬광조영의 열결절이 있으면 정답이지만, 이 환자는 갑상샘이 커지지 않았다.\n  - ⑤ TSH 분비 뇌하수체 선종이면 T4 가 높은데도 TSH 가 정상이거나 높다. 이 환자는 TSH 가 억제되어 있어 뇌하수체에서 TSH 가 과잉 분비되는 경우가 아니다.\n- 함정: TSH 억제·T4 상승을 보고 그레이브스병으로 가지 않는다 — 안구돌출·갑상샘종이 없고 hCG 가 85만이다.\n- 학습목표: 완전포상기태의 매우 높은 hCG 가 TSH 수용체를 교차 자극해 갑상샘기능항진증을 일으키는 기전을 설명한다\n- 근거·출처: Hershman JM. Physiological and pathological aspects of the effect of human chorionic gonadotropin on the thyroid. Best Pract Res Clin Endocrinol Metab 2004;18:249 · Williams Obstetrics, 26th ed. — Gestational trophoblastic disease · PMC13401662 Figure 3 — 47세 여 증례 보고의 질식 초음파 (teacher-only) · 작성자 판독(2026-10-03): 자궁강을 채운 고에코 종괴 안의 크기가 다양한 작은 무에코 낭성 공간 다발(벌집 모양), 태아·태낭 없음\n\n## 출처\n- Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 자궁강을 채운 고에코 종괴 안에 작은 낭성 공간이 벌집처럼 모여 있고(화살표) 태아는 보이지 않는다 — 완전포상기태다. β-hCG 가 85만으로 매우 높고, TSH 는 억제되었는데 유리 T4 가 높으며 안구돌출·갑상샘종이 없다. hCG 는 TSH 와 α 소단위가 같고 β 소단위·수용체 구조가 비슷해, 농도가 아주 높으면 TSH 수용체를 직접 자극한다. 기태 제거 뒤 hCG 가 떨어지면 갑상샘 기능도 정상화된다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 hCG 가 갑상샘을 자극하나</b>: TSH·LH·FSH·hCG 는 모두 같은 α 소단위에 서로 다른 β 소단위가 붙은 당단백 호르몬이다. hCG 의 β 소단위는 TSH β 와 구조가 닮았고, TSH 수용체와 LH/hCG 수용체도 같은 G 단백 결합 수용체 계열이다. 그래서 hCG 는 TSH 수용체에 약하게 결합한다 — 친화도는 TSH 의 수천분의 일이지만, 농도가 수십만 mIU/mL 가 되면 이 약한 결합만으로 갑상샘이 자극된다.<br> <b>정상 임신에서도 같은 일이 작게 일어난다</b>: 임신 10~12주 hCG 정점에 TSH 가 살짝 떨어지는 「임신 일과성 갑상샘중독」이 그것이다. 포상기태는 영양막이 지나치게 증식해 hCG 가 훨씬 높아 임상적 갑상샘기능항진증까지 간다.<br> <b>그래서</b> 갑상샘 자체에는 자가면역 소견(안구돌출·전갑상샘 점액부종·TSI)이 없고, 치료는 원인 제거다 — 흡입소파술 전 β 차단제로 증상을 조절하고(마취 중 갑상샘 폭풍 예방), 기태 제거 뒤 hCG 가 떨어지면 저절로 좋아진다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">hCG 매개(정답)</th><th>그레이브스병(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>자극 물질</td><td><b>hCG</b>(TSH 와 α 소단위 공유)</td><td>TSH 수용체 자극 항체(TSI)</td></tr> <tr><td>갑상샘 밖 소견</td><td>없음</td><td><b>안구돌출·전갑상샘 점액부종</b></td></tr> <tr><td>갑상샘</td><td>대개 커지지 않음</td><td>미만성 갑상샘종·잡음</td></tr> <tr><td>경과</td><td>기태 제거로 hCG 가 떨어지면 정상화</td><td>항갑상샘제·방사성 요오드 필요</td></tr> </tbody></table> 두 경우 모두 TSH 수용체가 자극되어 TSH 가 억제되고 T4 가 오른다. 갈림은 「무엇이 수용체를 누르는가」이고, 그 단서가 hCG 수치·자궁 크기와 자가면역 소견의 유무다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 갑상샘자극 항체는 그레이브스병의 기전이다. 안구돌출·미만성 갑상샘종·전갑상샘 점액부종이 있고 hCG 가 임신 주수에 맞는 수준이었다면 정답이 된다.\n③ 여포 파괴로 저장 호르몬이 새는 것은 아급성·무통성·산후 갑상샘염의 기전이다. 갑상샘 압통이나 분만 뒤 발생, 방사성 요오드 섭취율 감소가 있으면 정답이 된다.\n④ 자율기능 결절은 독성 결절이나 다결절성 갑상샘종에서 생긴다. 만져지는 결절과 섬광조영의 열결절이 있으면 정답이지만, 이 환자는 갑상샘이 커지지 않았다.\n⑤ TSH 분비 뇌하수체 선종이면 T4 가 높은데도 TSH 가 정상이거나 높다. 이 환자는 TSH 가 억제되어 있어 뇌하수체에서 TSH 가 과잉 분비되는 경우가 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "TSH 억제·T4 상승을 보고 그레이브스병으로 가지 않는다 — 안구돌출·갑상샘종이 없고 hCG 가 85만이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "완전포상기태의 매우 높은 hCG 가 TSH 수용체를 교차 자극해 갑상샘기능항진증을 일으키는 기전을 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hershman JM. Physiological and pathological aspects of the effect of human chorionic gonadotropin on the thyroid. Best Pract Res Clin Endocrinol Metab 2004;18:249 · Williams Obstetrics, 26th ed. — Gestational trophoblastic disease · PMC13401662 Figure 3 — 47세 여 증례 보고의 질식 초음파 (teacher-only) · 작성자 판독(2026-10-03): 자궁강을 채운 고에코 종괴 안의 크기가 다양한 작은 무에코 낭성 공간 다발(벌집 모양), 태아·태낭 없음 ## 출처 Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "영상의 벌집 모양 자궁 내 종괴와 매우 높은 hCG 로 완전포상기태이고, 자가면역 소견 없는 갑상샘기능항진은 hCG 의 TSH 수용체 교차 자극이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "그레이브스병이면 안구돌출·미만성 갑상샘종이 있어야 하는데 이 환자는 없고 hCG 가 85만이다",
+   "steps": 3,
+   "chain": [
+    "영상: 자궁강의 고에코 종괴 안 작은 낭성 공간 다발, 태아 없음 + β-hCG 850,000 → 완전포상기태",
+    "TSH 억제·유리 T4 상승, 안구돌출·갑상샘종·압통 없음 → 자가면역·갑상샘염 가능성 낮음",
+    "hCG 는 TSH 와 α 소단위를 공유 → 고농도에서 TSH 수용체 자극"
+   ],
+   "key": [
+    {
+     "item": "영상: 자궁강을 채운 종괴 안의 작은 낭성 공간 다발, 태아 없음",
+     "why": "완전포상기태의 소포 모양",
+     "also": []
+    },
+    {
+     "item": "혈청 β-hCG 850,000 mIU/mL",
+     "why": "TSH 수용체를 자극할 만큼 높은 hCG",
+     "also": []
+    },
+    {
+     "item": "TSH 0.01 µIU/mL 미만",
+     "why": "수용체 자극으로 T4 가 오른 뒤 생긴 되먹임 억제",
+     "also": []
+    },
+    {
+     "item": "자궁은 임신 20주 크기로 커져 있다",
+     "why": "14주에 비해 큰 자궁 — 기태의 영양막 과다 증식",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "안구 돌출은 없고 갑상샘은 커져 있지 않으며 압통이 없다",
+     "why": "그레이브스병·아급성 갑상샘염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "구역과 구토가 심하다",
+     "why": "높은 hCG 에 흔한 임신오조 — 기전 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈압 148/88 mmHg",
+     "why": "기태에서 이른 전자간증이 올 수 있지만 이 문항의 기전과는 별개",
+     "also": []
+    }
+   ],
+   "summary": "벌집 모양의 자궁 내 종괴와 85만의 hCG 로 완전포상기태다. 자가면역 소견 없는 갑상샘기능항진은 hCG 가 TSH 수용체를 자극한 결과다.",
+   "switch": {
+    "choice": "B",
+    "condition": "안구돌출과 미만성 갑상샘종이 있고 hCG 가 임신 주수에 맞는 수준이었다면 갑상샘자극 항체가 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0203.jpg",
+   "caption": "질식 초음파 — 출판된 증례 그림 한 컷 그대로, 화살표·측정 표시는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "ULTRASOUND 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13401662/",
+   "asset_id": "PMC-PMC13401662_Figure3",
+   "text": "Complete Molar Pregnancy With Hyperthyroidism, High-Output Heart Failure and Peptoniphilus Species Bacteremia: A Case Report. Cureus. 2026 Jun 25;18(6):e111523. doi: 10.7759/cureus.111523 (CC BY) — Figure 3"
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0202",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "산과 — 분만 중 초산부의 태아심박동 기록",
+  "type": "산과 — 분만 중 초산부의 태아심박동 기록",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-02",
+  "vignette": "A 28-year-old nulligravid woman at 40 weeks' gestation comes to the labor and delivery unit because of regular painful contractions for 6 hours. Her pregnancy has been uncomplicated. Her temperature is 36.9°C, pulse is 88/min, and blood pressure is 118/72 mm Hg. Fetal membranes are intact. On admission, the cervix was 3 cm dilated and 80% effaced with the vertex at -1 station. Four hours later, the cervix is 4 cm dilated, 90% effaced, and the vertex is at -1 station. Estimated fetal weight is 3,300 g. She requests epidural analgesia. A segment of the external fetal heart rate and uterine activity tracing is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Maternal repositioning, oxygen, and an intravenous fluid bolus",
+   "Fetal scalp blood sampling",
+   "Administration of terbutaline",
+   "Continue expectant management of labor",
+   "Cesarean delivery for arrest of dilation"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The tracing shows a baseline of about 140–145/min, moderate variability (amplitude about 6–10/min), and no decelerations, with three contractions in 10 minutes — a Category I tracing without tachysystole. Labor is in the latent phase (< 6 cm), in which progress of 1 cm over 4 hours is not abnormal; a prolonged latent phase in a nullipara is defined as more than 20 hours. With a reassuring fetal status and normal latent-phase progress, expectant management (with epidural analgesia as requested) is appropriate.\n- 원리: <b>Why 6 cm is the line</b>: contemporary labor curves (Zhang, Consortium on Safe Labor) showed that nulliparous women can take more than 6 hours to go from 4 to 5 cm and more than 3 hours from 5 to 6 cm, while after 6 cm dilation accelerates. Active labor is therefore defined as starting at <b>6 cm</b>, and arrest of dilation can be diagnosed only at <b>≥ 6 cm with ruptured membranes</b> and no change for ≥ 4 hours of adequate contractions (or ≥ 6 hours of oxytocin with inadequate contractions).<br> <b>Reading the tracing</b>: baseline 110–160/min, moderate variability (6–25/min), and no late, variable, or prolonged decelerations make it Category I; accelerations are not required. Three contractions in 10 minutes is within the normal ≤ 5 in 10 minutes, so there is no tachysystole to correct.<br> <b>So</b> nothing in the mother or fetus requires intervention: the fetus is well oxygenated, and slow latent-phase progress is normal physiology. Intervening here (cesarean, scalp sampling, tocolysis) adds risk without a target.\n- 비교: <table><thead><tr><th style=\"width:26%\">Criterion</th><th style=\"width:37%\">This patient — continue labor (answer)</th><th>Arrest of dilation — cesarean (closest rival)</th></tr></thead><tbody> <tr><td>Dilation</td><td><b>4 cm (latent phase)</b></td><td>≥ 6 cm (active phase)</td></tr> <tr><td>Membranes</td><td>Intact</td><td>Ruptured</td></tr> <tr><td>Time without change</td><td>Progress 3 → 4 cm in 4 h</td><td>No change ≥ 4 h with adequate contractions, or ≥ 6 h on oxytocin</td></tr> <tr><td>Fetal tracing</td><td>Category I</td><td>Not required to be abnormal — the diagnosis is about labor, not fetal status</td></tr> </tbody></table> Slow is not stopped: arrest is a diagnosis of the active phase only. Before 6 cm, the remedies for a slow latent phase are time, rest, amniotomy, or oxytocin — not cesarean.\n- 오답 이유:\n  - (A) Intrauterine resuscitation (repositioning, fluids, oxygen) treats a Category II tracing with recurrent late or variable decelerations or minimal variability. It fits if the tracing showed recurrent late decelerations, not this Category I pattern.\n  - (B) Fetal scalp blood sampling (rarely used now) assesses acidemia when a tracing is indeterminate, such as minimal variability without accelerations. It has no role with a reassuring Category I tracing and intact membranes.\n  - (C) Terbutaline relaxes the uterus for tachysystole (> 5 contractions in 10 minutes) with fetal heart rate changes, or as a bridge before emergency delivery. It fits if the tracing showed 6–7 contractions in 10 minutes with decelerations.\n  - (E) Cesarean for arrest of dilation requires ≥ 6 cm dilation with ruptured membranes and no cervical change for ≥ 4 hours despite adequate contractions; it would be correct if she stalled at 7 cm for 5 hours after membrane rupture.\n- 함정: Slow cervical change at 4 cm is latent phase — arrest of dilation cannot be diagnosed before 6 cm.\n- 학습목표: 6 cm 미만의 잠복기에서는 진행이 느려도 분만 정지로 보지 않으며, 범주 I 태아심박동이면 기대 관리로 분만을 계속 지켜본다\n- 근거·출처: American College of Obstetricians and Gynecologists, Society for Maternal-Fetal Medicine. Obstetric Care Consensus No. 1: Safe prevention of the primary cesarean delivery. Obstet Gynecol 2014;123:693 (reaffirmed) · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192 · 작성자 판독(2026-10-03): 기록 20~30분 — 기저선 140~145 bpm, 중등도 변이도, 가속·감속 없음, 10분에 수축 3회\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1193 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tracing shows a baseline of about 140–145/min, moderate variability (amplitude about 6–10/min), and no decelerations, with three contractions in 10 minutes — a Category I tracing without tachysystole. Labor is in the latent phase (< 6 cm), in which progress of 1 cm over 4 hours is not abnormal; a prolonged latent phase in a nullipara is defined as more than 20 hours. With a reassuring fetal status and normal latent-phase progress, expectant management (with epidural analgesia as requested) is appropriate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why 6 cm is the line</b>: contemporary labor curves (Zhang, Consortium on Safe Labor) showed that nulliparous women can take more than 6 hours to go from 4 to 5 cm and more than 3 hours from 5 to 6 cm, while after 6 cm dilation accelerates. Active labor is therefore defined as starting at <b>6 cm</b>, and arrest of dilation can be diagnosed only at <b>≥ 6 cm with ruptured membranes</b> and no change for ≥ 4 hours of adequate contractions (or ≥ 6 hours of oxytocin with inadequate contractions).<br> <b>Reading the tracing</b>: baseline 110–160/min, moderate variability (6–25/min), and no late, variable, or prolonged decelerations make it Category I; accelerations are not required. Three contractions in 10 minutes is within the normal ≤ 5 in 10 minutes, so there is no tachysystole to correct.<br> <b>So</b> nothing in the mother or fetus requires intervention: the fetus is well oxygenated, and slow latent-phase progress is normal physiology. Intervening here (cesarean, scalp sampling, tocolysis) adds risk without a target."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Criterion</th><th style=\"width:37%\">This patient — continue labor (answer)</th><th>Arrest of dilation — cesarean (closest rival)</th></tr></thead><tbody> <tr><td>Dilation</td><td><b>4 cm (latent phase)</b></td><td>≥ 6 cm (active phase)</td></tr> <tr><td>Membranes</td><td>Intact</td><td>Ruptured</td></tr> <tr><td>Time without change</td><td>Progress 3 → 4 cm in 4 h</td><td>No change ≥ 4 h with adequate contractions, or ≥ 6 h on oxytocin</td></tr> <tr><td>Fetal tracing</td><td>Category I</td><td>Not required to be abnormal — the diagnosis is about labor, not fetal status</td></tr> </tbody></table> Slow is not stopped: arrest is a diagnosis of the active phase only. Before 6 cm, the remedies for a slow latent phase are time, rest, amniotomy, or oxytocin — not cesarean."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Intrauterine resuscitation (repositioning, fluids, oxygen) treats a Category II tracing with recurrent late or variable decelerations or minimal variability. It fits if the tracing showed recurrent late decelerations, not this Category I pattern.\n(B) Fetal scalp blood sampling (rarely used now) assesses acidemia when a tracing is indeterminate, such as minimal variability without accelerations. It has no role with a reassuring Category I tracing and intact membranes.\n(C) Terbutaline relaxes the uterus for tachysystole (> 5 contractions in 10 minutes) with fetal heart rate changes, or as a bridge before emergency delivery. It fits if the tracing showed 6–7 contractions in 10 minutes with decelerations.\n(E) Cesarean for arrest of dilation requires ≥ 6 cm dilation with ruptured membranes and no cervical change for ≥ 4 hours despite adequate contractions; it would be correct if she stalled at 7 cm for 5 hours after membrane rupture."
+   },
+   {
+    "k": "함정",
+    "v": "Slow cervical change at 4 cm is latent phase — arrest of dilation cannot be diagnosed before 6 cm."
+   },
+   {
+    "k": "학습목표",
+    "v": "6 cm 미만의 잠복기에서는 진행이 느려도 분만 정지로 보지 않으며, 범주 I 태아심박동이면 기대 관리로 분만을 계속 지켜본다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists, Society for Maternal-Fetal Medicine. Obstetric Care Consensus No. 1: Safe prevention of the primary cesarean delivery. Obstet Gynecol 2014;123:693 (reaffirmed) · ACOG Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring. Obstet Gynecol 2009;114:192 · 작성자 판독(2026-10-03): 기록 20~30분 — 기저선 140~145 bpm, 중등도 변이도, 가속·감속 없음, 10분에 수축 3회 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1193 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "4 cm 의 잠복기라 4시간에 1 cm 진행은 분만 정지가 아니고, 기록이 범주 I 이므로 분만을 그대로 지켜본다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "분만 정지는 6 cm 이상·양막 파열·4시간 이상 변화 없음일 때인데 이 환자는 4 cm·양막 유지다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저선 140~145, 중등도 변이도, 감속 없음, 10분 수축 3회 → 범주 I, 과다수축 없음",
+    "4 cm·양막 유지 → 잠복기, 정지 기준 미충족 → 기대 관리"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저선 140~145/min, 중등도 변이도, 감속 없음",
+     "why": "범주 I — 태아 상태가 개입을 요구하지 않는다",
+     "also": []
+    },
+    {
+     "item": "the cervix is 4 cm dilated",
+     "why": "6 cm 미만 — 잠복기",
+     "also": []
+    },
+    {
+     "item": "Fetal membranes are intact",
+     "why": "정지 진단 기준(양막 파열)을 충족하지 않는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 10분에 자궁수축 3회",
+     "why": "과다수축(10분 5회 초과) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Her temperature is 36.9°C",
+     "why": "자궁내 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Estimated fetal weight is 3,300 g",
+     "why": "거대아에 의한 아두골반 불균형 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She requests epidural analgesia",
+     "why": "잠복기에도 줄 수 있다 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "기록은 범주 I 이고 과다수축도 없다. 4 cm 잠복기의 느린 진행은 정상이라 분만 정지가 아니므로 기대 관리를 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "양막이 터진 뒤 7 cm 에서 적절한 수축에도 5시간 동안 변화가 없었다면 제왕절개가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0202.png",
+   "caption": "Intrapartum fetal heart rate (top) and uterine activity (bottom), minutes 20 to 30 of the recording; bold vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1193_20m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1193"
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0213",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "신장·비뇨 — 구토하는 당뇨병 환자의 산염기 평가",
+  "type": "신장·비뇨 — 구토하는 당뇨병 환자의 산염기 평가",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-02",
+  "vignette": "A 52-year-old woman with type 1 diabetes mellitus comes to the emergency department because of repeated vomiting for 3 days and abdominal pain for 1 day. She stopped her insulin because she was not eating. Her pulse is 116/min, respirations are 26/min, and blood pressure is 102/64 mm Hg. Her mucous membranes are dry. Serum studies show: Na+ 136 mEq/L, K+ 4.8 mEq/L, Cl- 84 mEq/L, HCO3- 20 mEq/L, glucose 486 mg/dL, creatinine 1.4 mg/dL, and albumin 4.0 g/dL. Serum β-hydroxybutyrate is markedly elevated. Arterial blood gas analysis on room air shows pH 7.36, PCO2 37 mm Hg, and PO2 96 mm Hg.",
+  "question": "Which of the following best describes her acid-base status?",
+  "options": [
+   "Anion gap metabolic acidosis and metabolic alkalosis",
+   "Anion gap metabolic acidosis with appropriate respiratory compensation only",
+   "Anion gap and non-anion gap metabolic acidosis",
+   "Primary respiratory alkalosis with metabolic compensation",
+   "No acid-base disorder"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The anion gap is 136 − (84 + 20) = 32 mEq/L, so there is an anion gap metabolic acidosis (ketoacidosis). The gap has risen by 20 (32 − 12), which by itself should lower HCO3- from 24 to about 4; instead HCO3- is 20. The bicarbonate is far higher than expected, so a concurrent metabolic alkalosis from vomiting (loss of HCl, hypochloremia, volume contraction) is present. The near-normal pH hides both disorders.\n- 원리: <b>Why the anion gap rises</b>: ketoacids (β-hydroxybutyrate, acetoacetate) are strong acids. Each H+ is buffered by HCO3-, and the leftover unmeasured anion (ketoanion) takes HCO3-'s place, so the gap rises roughly one-for-one with the fall in HCO3- in a pure gap acidosis.<br> <b>The delta–delta logic</b>: compare the change in gap (ΔAG = 32 − 12 = 20) with the change in bicarbonate (ΔHCO3- = 24 − 20 = 4). If ΔAG ≈ ΔHCO3-, the acidosis is pure. If HCO3- is <b>higher</b> than predicted (ratio &gt; 2), something added bicarbonate — a metabolic alkalosis; if lower (ratio &lt; 1), a second, non-gap acidosis took more bicarbonate away. Here the ratio is 20/4 = 5.<br> <b>Where the alkalosis comes from</b>: vomiting removes HCl from the stomach; the parietal cell generates one HCO3- for each H+ secreted, which enters the blood. Volume and chloride depletion then keep the kidney from excreting the excess bicarbonate. Respiratory compensation is checked with Winter's formula: expected PCO2 = 1.5 × 20 + 8 ± 2 = 36–40; 37 is appropriate, so there is no separate respiratory disorder, and the decisive finding is the delta–delta mismatch.\n- 비교: <table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">AG acidosis + metabolic alkalosis (answer)</th><th>Pure AG acidosis with compensation (closest rival)</th></tr></thead><tbody> <tr><td>Anion gap</td><td>32 (ΔAG 20)</td><td>Elevated</td></tr> <tr><td>Expected HCO3-</td><td>About 4 if pure</td><td>Falls by about the same amount as AG rises</td></tr> <tr><td>Measured HCO3-</td><td><b>20 — too high</b></td><td>Matches the rise in AG</td></tr> <tr><td>Chloride, history</td><td><b>Cl- 84, vomiting</b></td><td>Normal chloride</td></tr> </tbody></table> A normal pH does not mean a normal acid–base state. Whenever the gap is high, compute the delta–delta — the bicarbonate tells you if a second metabolic process is hiding.\n- 오답 이유:\n  - (B) Pure anion gap acidosis with compensation would require HCO3- to fall by about as much as the gap rose (to near 4 mEq/L here) with a low pH. It would be correct if HCO3- were 6 mEq/L and pH 7.10.\n  - (C) A coexisting non-gap acidosis lowers HCO3- even more than the gap explains (delta ratio < 1), as with diarrhea or saline-induced hyperchloremia during DKA treatment. It would fit if HCO3- were 2 with Cl- 110.\n  - (D) Primary respiratory alkalosis causes a high pH with low PCO2, and compensation lowers HCO3- modestly without a large anion gap. It would fit anxiety or early salicylate toxicity, not a gap of 32.\n  - (E) A normal pH can mask opposing disorders; the anion gap of 32 by itself proves an acid-base disorder. Only a normal gap, normal HCO3-, and normal PCO2 together would support no disorder.\n- 함정: Do not trust the normal pH — an anion gap of 32 with HCO3- of 20 means a hidden metabolic alkalosis.\n- 학습목표: 음이온차와 델타-델타 비교로 음이온차 대사산증에 겹친 대사알칼리증을 찾아낸다\n- 근거·출처: Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid–base disturbances. N Engl J Med 2014;371:1434 · Kitabchi AE et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The anion gap is 136 − (84 + 20) = 32 mEq/L, so there is an anion gap metabolic acidosis (ketoacidosis). The gap has risen by 20 (32 − 12), which by itself should lower HCO3- from 24 to about 4; instead HCO3- is 20. The bicarbonate is far higher than expected, so a concurrent metabolic alkalosis from vomiting (loss of HCl, hypochloremia, volume contraction) is present. The near-normal pH hides both disorders."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the anion gap rises</b>: ketoacids (β-hydroxybutyrate, acetoacetate) are strong acids. Each H+ is buffered by HCO3-, and the leftover unmeasured anion (ketoanion) takes HCO3-'s place, so the gap rises roughly one-for-one with the fall in HCO3- in a pure gap acidosis.<br> <b>The delta–delta logic</b>: compare the change in gap (ΔAG = 32 − 12 = 20) with the change in bicarbonate (ΔHCO3- = 24 − 20 = 4). If ΔAG ≈ ΔHCO3-, the acidosis is pure. If HCO3- is <b>higher</b> than predicted (ratio &gt; 2), something added bicarbonate — a metabolic alkalosis; if lower (ratio &lt; 1), a second, non-gap acidosis took more bicarbonate away. Here the ratio is 20/4 = 5.<br> <b>Where the alkalosis comes from</b>: vomiting removes HCl from the stomach; the parietal cell generates one HCO3- for each H+ secreted, which enters the blood. Volume and chloride depletion then keep the kidney from excreting the excess bicarbonate. Respiratory compensation is checked with Winter's formula: expected PCO2 = 1.5 × 20 + 8 ± 2 = 36–40; 37 is appropriate, so there is no separate respiratory disorder, and the decisive finding is the delta–delta mismatch."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Measure</th><th style=\"width:37%\">AG acidosis + metabolic alkalosis (answer)</th><th>Pure AG acidosis with compensation (closest rival)</th></tr></thead><tbody> <tr><td>Anion gap</td><td>32 (ΔAG 20)</td><td>Elevated</td></tr> <tr><td>Expected HCO3-</td><td>About 4 if pure</td><td>Falls by about the same amount as AG rises</td></tr> <tr><td>Measured HCO3-</td><td><b>20 — too high</b></td><td>Matches the rise in AG</td></tr> <tr><td>Chloride, history</td><td><b>Cl- 84, vomiting</b></td><td>Normal chloride</td></tr> </tbody></table> A normal pH does not mean a normal acid–base state. Whenever the gap is high, compute the delta–delta — the bicarbonate tells you if a second metabolic process is hiding."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Pure anion gap acidosis with compensation would require HCO3- to fall by about as much as the gap rose (to near 4 mEq/L here) with a low pH. It would be correct if HCO3- were 6 mEq/L and pH 7.10.\n(C) A coexisting non-gap acidosis lowers HCO3- even more than the gap explains (delta ratio < 1), as with diarrhea or saline-induced hyperchloremia during DKA treatment. It would fit if HCO3- were 2 with Cl- 110.\n(D) Primary respiratory alkalosis causes a high pH with low PCO2, and compensation lowers HCO3- modestly without a large anion gap. It would fit anxiety or early salicylate toxicity, not a gap of 32.\n(E) A normal pH can mask opposing disorders; the anion gap of 32 by itself proves an acid-base disorder. Only a normal gap, normal HCO3-, and normal PCO2 together would support no disorder."
+   },
+   {
+    "k": "함정",
+    "v": "Do not trust the normal pH — an anion gap of 32 with HCO3- of 20 means a hidden metabolic alkalosis."
+   },
+   {
+    "k": "학습목표",
+    "v": "음이온차와 델타-델타 비교로 음이온차 대사산증에 겹친 대사알칼리증을 찾아낸다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid–base disturbances. N Engl J Med 2014;371:1434 · Kitabchi AE et al. Hyperglycemic crises in adult patients with diabetes. Diabetes Care 2009;32:1335"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "음이온차 32 로 케톤산증이 있지만 HCO3- 가 예상(약 4)보다 훨씬 높은 20 이므로 구토에 의한 대사알칼리증이 함께 있다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "순수 음이온차 산증이면 HCO3- 가 음이온차 상승만큼 떨어져야 하는데 델타 비가 5 로 크다",
+   "steps": 3,
+   "chain": [
+    "음이온차 = 136 − (84 + 20) = 32 → 음이온차 대사산증(케톤산증)",
+    "ΔAG 20 vs ΔHCO3- 4 → 델타 비 5 → HCO3- 가 너무 높다",
+    "구토·저염소혈증 → 대사알칼리증이 겹쳐 pH 가 정상처럼 보인다"
+   ],
+   "key": [
+    {
+     "item": "Cl- 84 mEq/L",
+     "why": "저염소혈증 — 구토의 HCl 소실",
+     "also": []
+    },
+    {
+     "item": "HCO3- 20 mEq/L",
+     "why": "음이온차 상승에 비해 너무 높다",
+     "also": []
+    },
+    {
+     "item": "Na+ 136 mEq/L",
+     "why": "음이온차 계산",
+     "also": []
+    },
+    {
+     "item": "repeated vomiting for 3 days",
+     "why": "대사알칼리증의 원인",
+     "also": []
+    },
+    {
+     "item": "β-hydroxybutyrate is markedly elevated",
+     "why": "음이온차 산증의 원인 — 케톤산증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "albumin 4.0 g/dL",
+     "why": "저알부민혈증으로 음이온차가 가려졌을 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "pH 7.36, PCO2 37 mm Hg",
+     "why": "정상 pH 는 반대 방향 두 장애가 상쇄된 결과",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "음이온차 32 의 케톤산증인데 HCO3- 가 20 으로 예상보다 훨씬 높다. 구토로 생긴 대사알칼리증이 함께 있다.",
+   "switch": {
+    "choice": "C",
+    "condition": "구토 대신 설사가 있었고 HCO3- 가 2, Cl- 110 이었다면 비음이온차 산증이 겹친 것이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0212",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "감염 — 진드기 노출 뒤 방실차단",
+  "type": "감염 — 진드기 노출 뒤 방실차단",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "A 34-year-old man comes to the emergency department because of fatigue and light-headedness for 3 days. Five weeks ago, he went hiking in Connecticut, and 2 weeks later he noticed an expanding red rash on his thigh that resolved without treatment. He has had intermittent headaches and muscle aches. He has no history of serious illness and takes no medications. His temperature is 37.6°C, pulse is 52/min, and blood pressure is 118/72 mm Hg. He is alert and oriented. There is no rash, neck stiffness, or facial weakness. Cardiac examination shows a regular rhythm without murmurs. An ECG shows sinus rhythm with a PR interval of 340 ms and narrow QRS complexes. Serum enzyme immunoassay and Western blot for Borrelia burgdorferi IgM are positive.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Permanent pacemaker placement",
+   "Oral amoxicillin for 28 days as an outpatient",
+   "No antibiotic therapy and observation",
+   "Hospital admission with intravenous ceftriaxone and cardiac monitoring",
+   "Oral doxycycline for 14 days as an outpatient"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A hike in an endemic area, a resolved expanding rash (erythema migrans), and now positive IgM serology with bradycardia and a PR interval of 340 ms indicate Lyme carditis. First-degree AV block with PR ≥ 300 ms can progress rapidly to complete heart block, so the patient should be admitted for continuous monitoring and treated with intravenous ceftriaxone, switching to oral therapy once the PR interval shortens below 300 ms.\n- 원리: <b>Why the conduction system</b>: Borrelia disseminates hematogenously weeks after the tick bite and has a tropism for connective tissue. In the heart it infiltrates the myocardium and the conduction tissue — especially the AV node — with lymphocytes and macrophages. Inflammation at the node prolongs and blocks conduction, so the hallmark is <b>fluctuating AV block</b> that can move from first degree to complete block within hours.<br> <b>Why 300 ms is the threshold</b>: observational series showed that a PR ≥ 300 ms identifies patients who are likely to progress to high-grade block. Below that, oral doxycycline as an outpatient is adequate; at or above it, monitoring in hospital and IV ceftriaxone (which reaches high levels quickly) are recommended.<br> <b>Why not a permanent pacemaker</b>: the block is inflammatory and almost always resolves with antibiotics within 1–2 weeks. If complete block occurs, a temporary pacemaker bridges the gap; permanent pacing is unnecessary in most cases.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Admit + IV ceftriaxone (answer)</th><th>Outpatient oral doxycycline (closest rival)</th></tr></thead><tbody> <tr><td>Cardiac involvement</td><td><b>PR ≥ 300 ms</b>, 2nd/3rd-degree block, or symptoms</td><td>No carditis, or PR &lt; 300 ms without symptoms</td></tr> <tr><td>Other examples</td><td>Lyme meningitis may also be treated IV</td><td>Erythema migrans, isolated facial palsy, arthritis</td></tr> <tr><td>Monitoring</td><td>Continuous telemetry</td><td>Not needed</td></tr> </tbody></table> Both regimens cure Borrelia. The PR interval decides where and how — because the risk is sudden complete heart block, not antibiotic failure.\n- 오답 이유:\n  - (A) A permanent pacemaker is rarely needed because Lyme AV block resolves with antibiotics; a temporary pacemaker bridges complete block. It would be considered only if high-grade block persisted after a full course of therapy.\n  - (B) Oral amoxicillin for 28 days is used for Lyme arthritis (and doxycycline for 28 days as an alternative). It would be the answer for a knee effusion months after a tick bite, not for carditis with a long PR.\n  - (C) Observation alone is not appropriate because untreated Lyme disease can progress to complete heart block, meningitis, or arthritis. No antibiotics would be reasonable only for a tick bite without infection signs when prophylaxis criteria are not met.\n  - (E) Outpatient oral doxycycline treats erythema migrans, isolated facial palsy, and mild carditis with PR < 300 ms and no symptoms. It would be correct if his PR interval were 220 ms and he were asymptomatic.\n- 함정: A long PR interval in Lyme disease is not benign — PR ≥ 300 ms means admission and IV ceftriaxone.\n- 학습목표: PR 300 ms 이상의 1도 방실차단을 동반한 라임 심장염은 입원해 정맥 세프트리악손으로 치료한다\n- 근거·출처: Lantos PM et al. Clinical Practice Guidelines by IDSA, AAN, and ACR: 2020 guidelines for the prevention, diagnosis, and treatment of Lyme disease. Clin Infect Dis 2021;72:e1 · Yeung C, Baranchuk A. Diagnosis and treatment of Lyme carditis: JACC review topic of the week. J Am Coll Cardiol 2019;73:717",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A hike in an endemic area, a resolved expanding rash (erythema migrans), and now positive IgM serology with bradycardia and a PR interval of 340 ms indicate Lyme carditis. First-degree AV block with PR ≥ 300 ms can progress rapidly to complete heart block, so the patient should be admitted for continuous monitoring and treated with intravenous ceftriaxone, switching to oral therapy once the PR interval shortens below 300 ms."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the conduction system</b>: Borrelia disseminates hematogenously weeks after the tick bite and has a tropism for connective tissue. In the heart it infiltrates the myocardium and the conduction tissue — especially the AV node — with lymphocytes and macrophages. Inflammation at the node prolongs and blocks conduction, so the hallmark is <b>fluctuating AV block</b> that can move from first degree to complete block within hours.<br> <b>Why 300 ms is the threshold</b>: observational series showed that a PR ≥ 300 ms identifies patients who are likely to progress to high-grade block. Below that, oral doxycycline as an outpatient is adequate; at or above it, monitoring in hospital and IV ceftriaxone (which reaches high levels quickly) are recommended.<br> <b>Why not a permanent pacemaker</b>: the block is inflammatory and almost always resolves with antibiotics within 1–2 weeks. If complete block occurs, a temporary pacemaker bridges the gap; permanent pacing is unnecessary in most cases."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">Admit + IV ceftriaxone (answer)</th><th>Outpatient oral doxycycline (closest rival)</th></tr></thead><tbody> <tr><td>Cardiac involvement</td><td><b>PR ≥ 300 ms</b>, 2nd/3rd-degree block, or symptoms</td><td>No carditis, or PR &lt; 300 ms without symptoms</td></tr> <tr><td>Other examples</td><td>Lyme meningitis may also be treated IV</td><td>Erythema migrans, isolated facial palsy, arthritis</td></tr> <tr><td>Monitoring</td><td>Continuous telemetry</td><td>Not needed</td></tr> </tbody></table> Both regimens cure Borrelia. The PR interval decides where and how — because the risk is sudden complete heart block, not antibiotic failure."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A permanent pacemaker is rarely needed because Lyme AV block resolves with antibiotics; a temporary pacemaker bridges complete block. It would be considered only if high-grade block persisted after a full course of therapy.\n(B) Oral amoxicillin for 28 days is used for Lyme arthritis (and doxycycline for 28 days as an alternative). It would be the answer for a knee effusion months after a tick bite, not for carditis with a long PR.\n(C) Observation alone is not appropriate because untreated Lyme disease can progress to complete heart block, meningitis, or arthritis. No antibiotics would be reasonable only for a tick bite without infection signs when prophylaxis criteria are not met.\n(E) Outpatient oral doxycycline treats erythema migrans, isolated facial palsy, and mild carditis with PR < 300 ms and no symptoms. It would be correct if his PR interval were 220 ms and he were asymptomatic."
+   },
+   {
+    "k": "함정",
+    "v": "A long PR interval in Lyme disease is not benign — PR ≥ 300 ms means admission and IV ceftriaxone."
+   },
+   {
+    "k": "학습목표",
+    "v": "PR 300 ms 이상의 1도 방실차단을 동반한 라임 심장염은 입원해 정맥 세프트리악손으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Lantos PM et al. Clinical Practice Guidelines by IDSA, AAN, and ACR: 2020 guidelines for the prevention, diagnosis, and treatment of Lyme disease. Clin Infect Dis 2021;72:e1 · Yeung C, Baranchuk A. Diagnosis and treatment of Lyme carditis: JACC review topic of the week. J Am Coll Cardiol 2019;73:717"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "유행 지역 산행 뒤 이동홍반과 IgM 양성에 PR 340 ms 서맥이 있어 라임 심장염이고, PR 300 ms 이상이라 입원해 정맥 세프트리악손으로 치료한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "경구 독시사이클린 외래 치료는 PR 300 ms 미만·무증상일 때인데 이 환자는 PR 340 ms 에 어지럼이 있다",
+   "steps": 3,
+   "chain": [
+    "코네티컷 산행 + 퍼지는 홍반 + Borrelia IgM 양성 → 파종성 라임병",
+    "서맥 + PR 340 ms → 라임 심장염(방실결절 침범)",
+    "PR ≥ 300 ms → 완전 방실차단 위험 → 입원·감시·정맥 세프트리악손"
+   ],
+   "key": [
+    {
+     "item": "PR interval of 340 ms",
+     "why": "300 ms 이상 — 입원·정맥 치료 기준",
+     "also": []
+    },
+    {
+     "item": "expanding red rash on his thigh",
+     "why": "이동홍반",
+     "also": []
+    },
+    {
+     "item": "hiking in Connecticut",
+     "why": "라임병 유행 지역 노출",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "There is no rash, neck stiffness, or facial weakness",
+     "why": "수막염·안면신경마비 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "pulse is 52/min",
+     "why": "증상성 서맥 — 감시가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "narrow QRS complexes",
+     "why": "차단 부위가 방실결절 — 일시적일 가능성이 높지만 처치는 같다",
+     "also": []
+    }
+   ],
+   "summary": "산행 뒤 이동홍반과 IgM 양성, PR 340 ms 의 서맥은 라임 심장염이다. PR 300 ms 이상이라 입원해 정맥 세프트리악손을 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "PR 이 220 ms 이고 증상이 없었다면 외래 경구 독시사이클린이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0211",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "신경 — 벤조디아제핀에 반응하지 않는 경련",
+  "type": "신경 — 벤조디아제핀에 반응하지 않는 경련",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "30세 남자가 전신 강직간대 경련을 하며 응급실에 실려 왔다. 구급대원에 따르면 15분 전 쓰러진 뒤 경련이 계속되고 있다. 뇌전증으로 라모트리진을 먹고 있었는데 일주일 전 약이 떨어졌다고 한다. 응급실에 도착해 기도를 확보하고 산소를 주었으며 정맥로를 잡았다. 혈압 152/90 mmHg, 맥박 124회/분, 산소포화도 95 %, 체온 37.8°C 이다. 손가락 끝 혈당은 118 mg/dL 이다. 로라제팜 4 mg 을 정맥으로 주고 5분 뒤 한 번 더 주었으나 경련이 멈추지 않는다.",
+  "question": "다음에 투여할 약물로 가장 적절한 것은?",
+  "options": [
+   "로라제팜 4 mg 추가 정맥 투여",
+   "프로포폴 지속 주입",
+   "50 % 포도당 정맥 투여",
+   "카르바마제핀 경구 투여",
+   "레베티라세탐 정맥 부하 용량"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 5분 넘게 지속되는 경련은 경련지속상태다. 1단계 벤조디아제핀(로라제팜 충분 용량 2회)에도 멈추지 않으면 2단계로 정맥 레베티라세탐·포스페니토인·발프로산 중 하나를 부하 용량으로 준다(ESETT 시험에서 세 약의 효과는 비슷했다). 벤조디아제핀을 더 주는 것은 효과가 거의 없고 호흡 억제만 늘린다.\n- 원리: <b>왜 벤조디아제핀이 점점 안 듣나</b>: 경련이 계속되면 신경세포막의 GABA-A 수용체가 세포 안으로 끌려 들어가(내재화) 시냅스 수용체 수가 줄고, 반대로 흥분성 NMDA 수용체는 막으로 더 올라온다. 그래서 GABA-A 를 강화하는 벤조디아제핀은 경련이 길어질수록 효과가 떨어지고, 시간이 지날수록 멈추기 어려워진다 — 「시간이 뇌」다.<br> <b>그래서 단계가 있다</b>: 5분(1단계) 벤조디아제핀 → 20분(2단계) 작용 기전이 다른 정맥 항경련제 — 레베티라세탐(SV2A), 포스페니토인(나트륨 통로), 발프로산(여러 기전) → 40분(3단계, 불응성) 삽관 후 마취제(미다졸람·프로포폴·펜토바르비탈) 지속 주입과 연속 뇌파.<br> <b>원인도 함께</b>: 약을 끊은 것이 이 환자의 유발 원인이다. 저혈당·전해질·중독·감염을 같이 확인하고, 경련이 멎은 뒤에는 평소 약을 다시 시작한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">단계</th><th style=\"width:37%\">2단계 정맥 항경련제(정답)</th><th>3단계 마취제 지속 주입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td><b>벤조디아제핀 충분량 실패 직후</b></td><td>2단계 약물까지 실패한 불응성 경련</td></tr> <tr><td>약물</td><td>레베티라세탐·포스페니토인·발프로산</td><td>미다졸람·프로포폴·펜토바르비탈</td></tr> <tr><td>필요 조건</td><td>정맥로</td><td><b>기관삽관·기계환기·연속 뇌파</b></td></tr> </tbody></table> 「경련이 안 멈춘다 → 마취」로 건너뛰지 않는다. 2단계 약으로 약 절반이 멈추므로, 삽관과 마취의 위험은 그 다음에 진다.\n- 오답 이유:\n  - ① 로라제팜 세 번째 투여는 충분량 2회 뒤에는 효과가 거의 없고 호흡 억제·저혈압만 늘린다. 첫 투여가 0.1 mg/kg 에 못 미치는 적은 양이었다면 한 번 더 주는 것이 적절하다.\n  - ② 프로포폴 지속 주입은 2단계 약물에도 멈추지 않는 불응성 경련지속상태에서 삽관 후 연속 뇌파를 보며 쓴다. 레베티라세탐 부하 뒤에도 경련이 계속되었다면 정답이 된다.\n  - ③ 50 % 포도당은 저혈당이 경련의 원인일 때(대개 티아민과 함께) 준다. 손가락 끝 혈당이 40 mg/dL 였다면 정답이지만 이 환자는 118 mg/dL 로 정상이다.\n  - ④ 카르바마제핀은 정맥 제형이 없어 경련 중인 환자에게 쓸 수 없고 부하가 느리다. 경련이 멎은 뒤 유지 치료를 고를 때나 고려하는 약이다.\n- 함정: 벤조디아제핀 두 번에도 경련이 계속되면 같은 약을 더 주지 않는다 — 기전이 다른 2단계 정맥 약으로 넘어간다.\n- 학습목표: 벤조디아제핀 2회에도 멈추지 않는 경련지속상태에는 2단계 정맥 항경련제(레베티라세탐·포스페니토인·발프로산)를 투여한다\n- 근거·출처: Glauser T et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults. Epilepsy Curr 2016;16:48 · Kapur J et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381:2103",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5분 넘게 지속되는 경련은 경련지속상태다. 1단계 벤조디아제핀(로라제팜 충분 용량 2회)에도 멈추지 않으면 2단계로 정맥 레베티라세탐·포스페니토인·발프로산 중 하나를 부하 용량으로 준다(ESETT 시험에서 세 약의 효과는 비슷했다). 벤조디아제핀을 더 주는 것은 효과가 거의 없고 호흡 억제만 늘린다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 벤조디아제핀이 점점 안 듣나</b>: 경련이 계속되면 신경세포막의 GABA-A 수용체가 세포 안으로 끌려 들어가(내재화) 시냅스 수용체 수가 줄고, 반대로 흥분성 NMDA 수용체는 막으로 더 올라온다. 그래서 GABA-A 를 강화하는 벤조디아제핀은 경련이 길어질수록 효과가 떨어지고, 시간이 지날수록 멈추기 어려워진다 — 「시간이 뇌」다.<br> <b>그래서 단계가 있다</b>: 5분(1단계) 벤조디아제핀 → 20분(2단계) 작용 기전이 다른 정맥 항경련제 — 레베티라세탐(SV2A), 포스페니토인(나트륨 통로), 발프로산(여러 기전) → 40분(3단계, 불응성) 삽관 후 마취제(미다졸람·프로포폴·펜토바르비탈) 지속 주입과 연속 뇌파.<br> <b>원인도 함께</b>: 약을 끊은 것이 이 환자의 유발 원인이다. 저혈당·전해질·중독·감염을 같이 확인하고, 경련이 멎은 뒤에는 평소 약을 다시 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">단계</th><th style=\"width:37%\">2단계 정맥 항경련제(정답)</th><th>3단계 마취제 지속 주입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td><b>벤조디아제핀 충분량 실패 직후</b></td><td>2단계 약물까지 실패한 불응성 경련</td></tr> <tr><td>약물</td><td>레베티라세탐·포스페니토인·발프로산</td><td>미다졸람·프로포폴·펜토바르비탈</td></tr> <tr><td>필요 조건</td><td>정맥로</td><td><b>기관삽관·기계환기·연속 뇌파</b></td></tr> </tbody></table> 「경련이 안 멈춘다 → 마취」로 건너뛰지 않는다. 2단계 약으로 약 절반이 멈추므로, 삽관과 마취의 위험은 그 다음에 진다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 로라제팜 세 번째 투여는 충분량 2회 뒤에는 효과가 거의 없고 호흡 억제·저혈압만 늘린다. 첫 투여가 0.1 mg/kg 에 못 미치는 적은 양이었다면 한 번 더 주는 것이 적절하다.\n② 프로포폴 지속 주입은 2단계 약물에도 멈추지 않는 불응성 경련지속상태에서 삽관 후 연속 뇌파를 보며 쓴다. 레베티라세탐 부하 뒤에도 경련이 계속되었다면 정답이 된다.\n③ 50 % 포도당은 저혈당이 경련의 원인일 때(대개 티아민과 함께) 준다. 손가락 끝 혈당이 40 mg/dL 였다면 정답이지만 이 환자는 118 mg/dL 로 정상이다.\n④ 카르바마제핀은 정맥 제형이 없어 경련 중인 환자에게 쓸 수 없고 부하가 느리다. 경련이 멎은 뒤 유지 치료를 고를 때나 고려하는 약이다."
+   },
+   {
+    "k": "함정",
+    "v": "벤조디아제핀 두 번에도 경련이 계속되면 같은 약을 더 주지 않는다 — 기전이 다른 2단계 정맥 약으로 넘어간다."
+   },
+   {
+    "k": "학습목표",
+    "v": "벤조디아제핀 2회에도 멈추지 않는 경련지속상태에는 2단계 정맥 항경련제(레베티라세탐·포스페니토인·발프로산)를 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Glauser T et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults. Epilepsy Curr 2016;16:48 · Kapur J et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381:2103"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "로라제팜 충분량 2회에도 멈추지 않는 경련지속상태이므로 2단계 정맥 항경련제(레베티라세탐) 부하 용량을 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "프로포폴 지속 주입은 2단계 약물까지 실패한 불응성 경련에서 삽관 뒤에 한다",
+   "steps": 2,
+   "chain": [
+    "5분 넘는 경련 + 로라제팜 2회 실패 → 벤조디아제핀 불응 경련지속상태",
+    "다음 단계 = 기전이 다른 정맥 항경련제 부하 → 레베티라세탐"
+   ],
+   "key": [
+    {
+     "item": "로라제팜 4 mg 을 정맥으로 주고 5분 뒤 한 번 더 주었으나",
+     "why": "1단계 충분량 실패 — 2단계로 넘어간다",
+     "also": []
+    },
+    {
+     "item": "15분 전 쓰러진 뒤 경련이 계속되고 있다",
+     "why": "경련지속상태",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "손가락 끝 혈당은 118 mg/dL",
+     "why": "저혈당 유발 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "산소포화도 95 %",
+     "why": "아직 삽관이 필요할 만큼 호흡이 무너지지 않았다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "일주일 전 약이 떨어졌다고 한다",
+     "why": "유발 원인 — 지금의 약 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "벤조디아제핀 충분량 2회에도 멈추지 않는 경련지속상태다. 2단계 정맥 항경련제인 레베티라세탐을 부하한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "레베티라세탐 부하 뒤에도 경련이 20분 넘게 계속된다면 삽관 뒤 프로포폴 지속 주입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0210",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "소화기·간담췌 — 헬리코박터 제균 확인 검사",
+  "type": "소화기·간담췌 — 헬리코박터 제균 확인 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-02",
+  "vignette": "A 45-year-old man comes to the physician for follow-up after treatment of a duodenal ulcer. Two months ago, he had epigastric pain, and upper endoscopy showed a 1-cm duodenal ulcer; biopsy of the gastric antrum was positive for Helicobacter pylori. He completed 14 days of bismuth quadruple therapy 6 weeks ago and has continued omeprazole 20 mg daily since then. His epigastric pain has resolved. He has no weight loss, dysphagia, melena, or vomiting. He takes no other medications and does not use NSAIDs. His vital signs are within normal limits. Abdominal examination shows no tenderness. Hemoglobin concentration is 14.2 g/dL.",
+  "question": "Which of the following is the most appropriate next step to confirm eradication?",
+  "options": [
+   "No further testing because his symptoms have resolved",
+   "Stop omeprazole for 2 weeks, then perform a urea breath test",
+   "Perform a urea breath test today",
+   "Measure serum IgG antibodies to H. pylori",
+   "Repeat upper endoscopy with rapid urease testing now"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: All patients treated for H. pylori should have eradication confirmed with a test of active infection — the urea breath test or stool antigen test — at least 4 weeks after completing antibiotics (he is at 6 weeks). Proton pump inhibitors suppress the organism and cause false-negative results, so the PPI must be stopped for 2 weeks before testing. An uncomplicated duodenal ulcer whose symptoms resolved does not require repeat endoscopy.\n- 원리: <b>How the breath test works</b>: H. pylori makes large amounts of urease to survive gastric acid by generating ammonia. The patient swallows <sup>13</sup>C- or <sup>14</sup>C-labeled urea; if live organisms are present, urease splits it into ammonia and labeled CO₂, which is absorbed and exhaled. The test therefore detects <b>current, metabolically active</b> infection.<br> <b>Why PPIs and timing matter</b>: PPIs raise gastric pH and push the bacteria into a low-activity coccoid form and toward the proximal stomach, reducing urease activity; bismuth and antibiotics do the same. Testing too soon or on a PPI can give a false-negative result in up to a third of patients — which would wrongly label a persistent infection as cured. Hence ≥ 4 weeks after antibiotics/bismuth and ≥ 2 weeks off PPI (H2 blockers may be used meanwhile).<br> <b>Why not serology</b>: IgG antibodies persist for months to years after cure, so a positive serology cannot distinguish past from current infection.\n- 비교: <table><thead><tr><th style=\"width:26%\">Point</th><th style=\"width:37%\">Stop PPI 2 weeks, then UBT (answer)</th><th>UBT today on omeprazole (closest rival)</th></tr></thead><tbody> <tr><td>Time since antibiotics</td><td>≥ 4 weeks — satisfied (6 weeks)</td><td>Satisfied</td></tr> <tr><td>PPI washout</td><td><b>≥ 2 weeks off PPI</b></td><td>Not done — PPI suppresses urease</td></tr> <tr><td>Risk</td><td>Accurate result</td><td><b>False negative</b> — persistent infection missed</td></tr> </tbody></table> The test choice is right in both; only the preparation differs. A false \"cure\" is the costly error because a persistent infection carries ulcer recurrence and bleeding risk.\n- 오답 이유:\n  - (A) Symptom resolution does not mean eradication; persistent infection is common after treatment failure and predicts ulcer recurrence and bleeding. Testing is recommended for every treated patient.\n  - (C) Testing today would be appropriate if he had stopped omeprazole at least 2 weeks ago. While he is still taking a PPI, urease activity is suppressed and the breath test may be falsely negative.\n  - (D) Serum IgG antibodies remain positive long after successful eradication and cannot confirm cure. Serology is useful only for initial diagnosis in an untreated patient who has not recently taken PPIs or antibiotics.\n  - (E) Repeat endoscopy is indicated to confirm healing of a gastric ulcer (to exclude cancer) or with alarm features. It would be appropriate if the ulcer had been gastric or if he had weight loss or bleeding.\n- 함정: Right test, wrong timing: a breath test on a PPI can be falsely negative — stop the PPI for 2 weeks first.\n- 학습목표: 헬리코박터 제균 확인은 치료 종료 4주 이상, PPI 중단 2주 이상 뒤 요소호기검사로 한다\n- 근거·출처: Chey WD et al. ACG Clinical Guideline: Treatment of Helicobacter pylori infection. Am J Gastroenterol 2024;119:1730 · Malfertheiner P et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. Gut 2022;71:1724",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "All patients treated for H. pylori should have eradication confirmed with a test of active infection — the urea breath test or stool antigen test — at least 4 weeks after completing antibiotics (he is at 6 weeks). Proton pump inhibitors suppress the organism and cause false-negative results, so the PPI must be stopped for 2 weeks before testing. An uncomplicated duodenal ulcer whose symptoms resolved does not require repeat endoscopy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How the breath test works</b>: H. pylori makes large amounts of urease to survive gastric acid by generating ammonia. The patient swallows <sup>13</sup>C- or <sup>14</sup>C-labeled urea; if live organisms are present, urease splits it into ammonia and labeled CO₂, which is absorbed and exhaled. The test therefore detects <b>current, metabolically active</b> infection.<br> <b>Why PPIs and timing matter</b>: PPIs raise gastric pH and push the bacteria into a low-activity coccoid form and toward the proximal stomach, reducing urease activity; bismuth and antibiotics do the same. Testing too soon or on a PPI can give a false-negative result in up to a third of patients — which would wrongly label a persistent infection as cured. Hence ≥ 4 weeks after antibiotics/bismuth and ≥ 2 weeks off PPI (H2 blockers may be used meanwhile).<br> <b>Why not serology</b>: IgG antibodies persist for months to years after cure, so a positive serology cannot distinguish past from current infection."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Point</th><th style=\"width:37%\">Stop PPI 2 weeks, then UBT (answer)</th><th>UBT today on omeprazole (closest rival)</th></tr></thead><tbody> <tr><td>Time since antibiotics</td><td>≥ 4 weeks — satisfied (6 weeks)</td><td>Satisfied</td></tr> <tr><td>PPI washout</td><td><b>≥ 2 weeks off PPI</b></td><td>Not done — PPI suppresses urease</td></tr> <tr><td>Risk</td><td>Accurate result</td><td><b>False negative</b> — persistent infection missed</td></tr> </tbody></table> The test choice is right in both; only the preparation differs. A false \"cure\" is the costly error because a persistent infection carries ulcer recurrence and bleeding risk."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Symptom resolution does not mean eradication; persistent infection is common after treatment failure and predicts ulcer recurrence and bleeding. Testing is recommended for every treated patient.\n(C) Testing today would be appropriate if he had stopped omeprazole at least 2 weeks ago. While he is still taking a PPI, urease activity is suppressed and the breath test may be falsely negative.\n(D) Serum IgG antibodies remain positive long after successful eradication and cannot confirm cure. Serology is useful only for initial diagnosis in an untreated patient who has not recently taken PPIs or antibiotics.\n(E) Repeat endoscopy is indicated to confirm healing of a gastric ulcer (to exclude cancer) or with alarm features. It would be appropriate if the ulcer had been gastric or if he had weight loss or bleeding."
+   },
+   {
+    "k": "함정",
+    "v": "Right test, wrong timing: a breath test on a PPI can be falsely negative — stop the PPI for 2 weeks first."
+   },
+   {
+    "k": "학습목표",
+    "v": "헬리코박터 제균 확인은 치료 종료 4주 이상, PPI 중단 2주 이상 뒤 요소호기검사로 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Chey WD et al. ACG Clinical Guideline: Treatment of Helicobacter pylori infection. Am J Gastroenterol 2024;119:1730 · Malfertheiner P et al. Management of Helicobacter pylori infection: the Maastricht VI/Florence consensus report. Gut 2022;71:1724"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "제균 확인은 활동성 감염 검사(요소호기검사)로 하되, PPI 가 위음성을 만들므로 오메프라졸을 2주 끊은 뒤 시행한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "오늘 바로 하는 요소호기검사는 PPI 복용 중이라 위음성 위험이 있다",
+   "steps": 2,
+   "chain": [
+    "치료 종료 6주 → 4주 기준 충족, 활동성 감염 검사(요소호기검사) 선택",
+    "오메프라졸 복용 중 → 위음성 → 2주 중단 뒤 검사"
+   ],
+   "key": [
+    {
+     "item": "has continued omeprazole 20 mg daily since then",
+     "why": "PPI 가 요소분해효소 활성을 억제 — 위음성",
+     "also": []
+    },
+    {
+     "item": "completed 14 days of bismuth quadruple therapy 6 weeks ago",
+     "why": "치료 종료 뒤 4주 이상 — 검사 시기 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has no weight loss, dysphagia, melena, or vomiting",
+     "why": "경고 증상 — 재내시경 필요성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "1-cm duodenal ulcer",
+     "why": "십이지장 궤양 — 위궤양과 달리 재내시경이 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "His epigastric pain has resolved",
+     "why": "증상 호전은 제균의 증거가 아니다",
+     "also": []
+    },
+    {
+     "item": "does not use NSAIDs",
+     "why": "다른 궤양 원인이 없음 — 확인 방법은 바뀌지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "제균 확인은 활동성 감염을 보는 요소호기검사로 한다. PPI 가 위음성을 만들므로 오메프라졸을 2주 끊고 검사한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "오메프라졸을 이미 3주 전에 끊었다면 오늘 요소호기검사를 하는 것이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0209",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "응급·중환자·외상 — 넓은 QRS 를 동반한 약물 과다복용",
+  "type": "응급·중환자·외상 — 넓은 QRS 를 동반한 약물 과다복용",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-02",
+  "vignette": "25세 여자가 의식이 떨어져 응급실에 실려 왔다. 우울증으로 아미트립틸린을 처방받아 왔고, 옆에서 빈 약통이 발견되었다. 2시간 전까지는 친구와 문자를 주고받았다. 혈압 84/50 mmHg, 맥박 128회/분, 호흡 14회/분, 체온 37.9°C 이다. 큰 소리에 눈을 뜨지만 곧 다시 잠든다. 동공은 6 mm 로 커져 있고 피부가 건조하며 장음이 줄어 있다. 손가락 끝 혈당은 108 mg/dL 이다. 심전도에서 동빈맥, QRS 폭 140 ms, aVR 의 끝부분 R 파가 4 mm 이다. 기도를 확보하고 생리식염수를 주기 시작하였다.",
+  "question": "다음에 투여할 약물로 가장 적절한 것은?",
+  "options": [
+   "탄산수소나트륨",
+   "피조스티그민",
+   "플루마제닐",
+   "아미오다론",
+   "날록손"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 삼환계 항우울제 과다복용으로 항콜린 증상(산동·건조 피부·장음 감소·빈맥·미열), 의식 저하, 저혈압과 QRS 140 ms·aVR 의 큰 R 파가 있다. 넓어진 QRS 는 심근 빠른 나트륨 통로 차단의 표지이고 심실부정맥·경련의 위험을 예고한다. 탄산수소나트륨은 나트륨 부하와 알칼리화로 통로 차단을 줄여 QRS 를 좁히고 혈압을 올린다.\n- 원리: <b>왜 QRS 가 넓어지나</b>: 삼환계 항우울제는 심실 근세포의 빠른 나트륨 통로(Nav1.5)를 막아 0기 탈분극을 늦춘다 — 1A·1C 항부정맥제와 같은 작용이다. 전도가 느려지니 QRS 가 넓어지고, 오른쪽 다발이 특히 민감해 aVR 의 끝부분 R 파가 커진다. QRS 100 ms 이상이면 경련, 160 ms 이상이면 심실부정맥 위험이 높다.<br> <b>왜 탄산수소나트륨인가</b>: 두 가지로 작용한다. ① 세포 밖 나트륨 농도를 높여 막힌 통로를 경쟁적으로 이겨 낸다. ② 혈액을 알칼리화하면 약물이 비이온형으로 바뀌어 통로 결합에서 떨어지고 단백 결합이 늘어난다. 그래서 QRS 가 좁아지고 저혈압·부정맥이 좋아진다(목표 pH 7.45~7.55).<br> <b>함께 기억할 것</b>: 항콜린 독성이 있다고 피조스티그민을 쓰면 서맥·무수축이 올 수 있어 삼환계 중독에서는 금기다. 1A·1C 항부정맥제도 같은 통로를 막아 악화시킨다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">탄산수소나트륨(정답)</th><th>피조스티그민(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>심근 나트륨 통로 차단</b>(QRS 확장)</td><td>무스카린 수용체 차단(항콜린 증후군)</td></tr> <tr><td>적응</td><td>삼환계 중독의 QRS ≥ 100 ms, 저혈압, 부정맥</td><td><b>순수</b> 항콜린 중독(디펜히드라민 등), QRS 정상</td></tr> <tr><td>삼환계에서</td><td>일차 해독 처치</td><td><b>금기</b> — 서맥·무수축 보고</td></tr> </tbody></table> 두 약 모두 「항콜린 증상이 있는 의식 저하」를 떠올리게 한다. QRS 가 넓으면 나트륨 통로가 문제이므로 탄산수소나트륨이고, QRS 가 정상인 순수 항콜린 중독에서만 피조스티그민을 생각한다.\n- 오답 이유:\n  - ② 피조스티그민은 QRS 가 정상인 순수 항콜린 중독(디펜히드라민·아트로핀 등)의 섬망을 되돌린다. 삼환계 중독에서는 서맥·무수축을 일으킬 수 있어 금기이고, QRS 가 정상이었다면 고려할 수 있다.\n  - ③ 플루마제닐은 벤조디아제핀 중독을 되돌리지만, 삼환계를 함께 먹은 환자에게 쓰면 경련 문턱이 떨어져 난치성 경련이 올 수 있다. 벤조디아제핀만 먹은 소아의 우발 섭취라면 적절하다.\n  - ④ 아미오다론은 QT 를 늘리고 나트륨 통로도 일부 막아 삼환계 독성을 악화시킬 수 있다. 중독과 무관한 구조적 심질환의 심실빈맥이라면 쓸 수 있다.\n  - ⑤ 날록손은 아편유사제 중독의 해독제로, 동공이 바늘끝처럼 작고 호흡이 분당 8회 미만으로 억제되었을 때 쓴다. 이 환자는 산동·정상 호흡수라 맞지 않는다.\n- 함정: 항콜린 증상을 보고 피조스티그민으로 가지 않는다 — QRS 가 넓으면 나트륨 통로 차단, 탄산수소나트륨이다.\n- 학습목표: 삼환계 항우울제 중독에서 QRS 가 넓어지면 탄산수소나트륨을 정맥 투여한다\n- 근거·출처: Goldfrank's Toxicologic Emergencies, 11th ed. — Cyclic antidepressants · Bruccoleri RE, Burns MM. A literature review of the use of sodium bicarbonate for the treatment of QRS widening. J Med Toxicol 2016;12:121",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "삼환계 항우울제 과다복용으로 항콜린 증상(산동·건조 피부·장음 감소·빈맥·미열), 의식 저하, 저혈압과 QRS 140 ms·aVR 의 큰 R 파가 있다. 넓어진 QRS 는 심근 빠른 나트륨 통로 차단의 표지이고 심실부정맥·경련의 위험을 예고한다. 탄산수소나트륨은 나트륨 부하와 알칼리화로 통로 차단을 줄여 QRS 를 좁히고 혈압을 올린다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 QRS 가 넓어지나</b>: 삼환계 항우울제는 심실 근세포의 빠른 나트륨 통로(Nav1.5)를 막아 0기 탈분극을 늦춘다 — 1A·1C 항부정맥제와 같은 작용이다. 전도가 느려지니 QRS 가 넓어지고, 오른쪽 다발이 특히 민감해 aVR 의 끝부분 R 파가 커진다. QRS 100 ms 이상이면 경련, 160 ms 이상이면 심실부정맥 위험이 높다.<br> <b>왜 탄산수소나트륨인가</b>: 두 가지로 작용한다. ① 세포 밖 나트륨 농도를 높여 막힌 통로를 경쟁적으로 이겨 낸다. ② 혈액을 알칼리화하면 약물이 비이온형으로 바뀌어 통로 결합에서 떨어지고 단백 결합이 늘어난다. 그래서 QRS 가 좁아지고 저혈압·부정맥이 좋아진다(목표 pH 7.45~7.55).<br> <b>함께 기억할 것</b>: 항콜린 독성이 있다고 피조스티그민을 쓰면 서맥·무수축이 올 수 있어 삼환계 중독에서는 금기다. 1A·1C 항부정맥제도 같은 통로를 막아 악화시킨다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">탄산수소나트륨(정답)</th><th>피조스티그민(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>심근 나트륨 통로 차단</b>(QRS 확장)</td><td>무스카린 수용체 차단(항콜린 증후군)</td></tr> <tr><td>적응</td><td>삼환계 중독의 QRS ≥ 100 ms, 저혈압, 부정맥</td><td><b>순수</b> 항콜린 중독(디펜히드라민 등), QRS 정상</td></tr> <tr><td>삼환계에서</td><td>일차 해독 처치</td><td><b>금기</b> — 서맥·무수축 보고</td></tr> </tbody></table> 두 약 모두 「항콜린 증상이 있는 의식 저하」를 떠올리게 한다. QRS 가 넓으면 나트륨 통로가 문제이므로 탄산수소나트륨이고, QRS 가 정상인 순수 항콜린 중독에서만 피조스티그민을 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 피조스티그민은 QRS 가 정상인 순수 항콜린 중독(디펜히드라민·아트로핀 등)의 섬망을 되돌린다. 삼환계 중독에서는 서맥·무수축을 일으킬 수 있어 금기이고, QRS 가 정상이었다면 고려할 수 있다.\n③ 플루마제닐은 벤조디아제핀 중독을 되돌리지만, 삼환계를 함께 먹은 환자에게 쓰면 경련 문턱이 떨어져 난치성 경련이 올 수 있다. 벤조디아제핀만 먹은 소아의 우발 섭취라면 적절하다.\n④ 아미오다론은 QT 를 늘리고 나트륨 통로도 일부 막아 삼환계 독성을 악화시킬 수 있다. 중독과 무관한 구조적 심질환의 심실빈맥이라면 쓸 수 있다.\n⑤ 날록손은 아편유사제 중독의 해독제로, 동공이 바늘끝처럼 작고 호흡이 분당 8회 미만으로 억제되었을 때 쓴다. 이 환자는 산동·정상 호흡수라 맞지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "항콜린 증상을 보고 피조스티그민으로 가지 않는다 — QRS 가 넓으면 나트륨 통로 차단, 탄산수소나트륨이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "삼환계 항우울제 중독에서 QRS 가 넓어지면 탄산수소나트륨을 정맥 투여한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Goldfrank's Toxicologic Emergencies, 11th ed. — Cyclic antidepressants · Bruccoleri RE, Burns MM. A literature review of the use of sodium bicarbonate for the treatment of QRS widening. J Med Toxicol 2016;12:121"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "삼환계 과다복용에서 QRS 140 ms·aVR 의 큰 R 파는 심근 나트륨 통로 차단이므로 탄산수소나트륨을 투여한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "피조스티그민은 QRS 가 정상인 순수 항콜린 중독에만 쓰고, 삼환계의 넓은 QRS 에서는 금기다",
+   "steps": 2,
+   "chain": [
+    "아미트립틸린 과다복용 + 항콜린 증상 + 저혈압 → 삼환계 중독",
+    "QRS 140 ms·aVR R 파 4 mm → 나트륨 통로 차단 → 탄산수소나트륨"
+   ],
+   "key": [
+    {
+     "item": "QRS 폭 140 ms",
+     "why": "나트륨 통로 차단 — 탄산수소나트륨 적응증",
+     "also": []
+    },
+    {
+     "item": "aVR 의 끝부분 R 파가 4 mm",
+     "why": "삼환계 중독에 특이한 심전도",
+     "also": []
+    },
+    {
+     "item": "동공은 6 mm 로 커져 있고 피부가 건조하며 장음이 줄어 있다",
+     "why": "항콜린 증후군 — 삼환계를 지지",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "호흡 14회/분",
+     "why": "아편유사제 중독 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "손가락 끝 혈당은 108 mg/dL",
+     "why": "저혈당에 의한 의식 저하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 84/50 mmHg",
+     "why": "저혈압도 탄산수소나트륨의 적응증",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "삼환계 과다복용으로 항콜린 증상과 저혈압, QRS 140 ms 가 있다. 나트륨 통로 차단을 줄이는 탄산수소나트륨을 투여한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "디펜히드라민만 먹어 섬망과 항콜린 증상이 있고 QRS 가 정상이었다면 피조스티그민을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0208",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "호흡기 — 고탄산혈증을 동반한 만성폐쇄폐질환 급성 악화",
+  "type": "호흡기 — 고탄산혈증을 동반한 만성폐쇄폐질환 급성 악화",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-02",
+  "vignette": "72세 남자가 3일 전부터 숨이 차고 누런 가래가 늘어 응급실에 왔다. 10년 전 만성폐쇄폐질환을 진단받았고 50갑년의 흡연력이 있다. 의식은 명료하고 질문에 바르게 대답하며 가래를 스스로 뱉을 수 있다. 혈압 138/82 mmHg, 맥박 108회/분, 호흡 28회/분, 체온 37.6°C 이다. 보조 호흡근을 쓰며 양쪽 폐에서 호기 천명음이 들린다. 비강 캐뉼라로 산소 2 L/분을 주고 기관지확장제 분무와 전신 스테로이드를 투여한 1시간 뒤 동맥혈 가스는 pH 7.28, PaCO2 68 mmHg, PaO2 62 mmHg, HCO3- 31 mEq/L 이다. 흉부 X선에서 과팽창 외에 폐렴이나 기흉은 없다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "탄산수소나트륨을 정맥 투여한다",
+   "아미노필린을 정맥 투여한다",
+   "비침습적 양압환기를 시작한다",
+   "즉시 기관삽관 후 기계환기를 한다",
+   "산소를 고유량으로 올린다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: COPD 급성 악화에서 초기 치료 뒤에도 pH 7.28·PaCO2 68 의 급성 호흡산증(HCO3- 31 로 만성 저류 위에 겹침)과 빠른 호흡이 있다. 의식이 명료하고 가래를 뱉을 수 있으며 혈역학이 안정적이어서 비침습적 양압환기(NIV)의 금기가 없다. NIV 는 이 상황에서 기관삽관과 사망률을 줄이는 근거가 가장 강한 처치다.\n- 원리: <b>왜 이산화탄소가 쌓이나</b>: COPD 악화에서는 기도 저항이 커져 호기가 끝나기 전에 다음 숨을 들이쉰다(동적 과팽창). 그러면 내인성 PEEP 이 생겨 숨을 들이쉬려면 먼저 그 압력만큼 근육이 일해야 하고, 평평해진 횡격막은 힘을 못 쓴다. 호흡은 얕고 빨라져 사강 환기 비율이 커지고 PaCO2 가 오른다.<br> <b>NIV 가 하는 일</b>: 흡기 양압(IPAP)이 호흡근의 일을 대신해 일회호흡량을 늘리고, 호기 양압(EPAP)이 내인성 PEEP 을 상쇄해 흡기를 시작하는 부담을 줄인다. 그래서 1~2시간 안에 호흡수가 줄고 pH 가 오르며, 피로가 회복된다.<br> <b>그래서</b> pH 7.35 미만·PaCO2 45 초과의 호흡산증이면 NIV 를 시작한다. 의식 저하로 기도를 보호하지 못하거나, 가래를 뱉지 못하거나, 쇼크·심정지 직전이면 금기이고 그때는 기관삽관이다. 1~2시간 NIV 에도 pH 가 나빠지면 삽관으로 넘어간다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비침습적 양압환기(정답)</th><th>기관삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>pH 7.25~7.35</b> 의 호흡산증, 협조 가능</td><td>pH 7.25 미만이 NIV 로 호전 안 됨, 호흡 정지 직전</td></tr> <tr><td>의식</td><td><b>명료</b> — 기도 보호 가능</td><td>혼수·기도 보호 불가</td></tr> <tr><td>분비물</td><td>스스로 뱉을 수 있음</td><td>다량·배출 불가</td></tr> <tr><td>혈역학</td><td>안정</td><td>쇼크·심한 부정맥</td></tr> </tbody></table> 두 처치 모두 환기를 돕는다. NIV 의 조건(의식·분비물·혈역학)이 충족되는 한 먼저 NIV 를 하고, 실패하거나 조건이 깨질 때 삽관한다.\n- 오답 이유:\n  - ① 탄산수소나트륨은 호흡산증의 원인(환기 부족)을 고치지 못하고 CO2 를 더 만든다. 심한 대사산증(pH 7.1 미만의 산증 + 낮은 HCO3-)에서나 고려한다.\n  - ② 아미노필린은 효과가 작고 부정맥·경련 같은 독성이 커서 COPD 악화의 일상 치료에서 빠졌다. 다른 기관지확장제에 반응하지 않는 경우에만 드물게 쓴다.\n  - ④ 즉시 기관삽관은 의식이 떨어져 기도를 보호하지 못하거나, 호흡 정지·쇼크가 있거나, NIV 1~2시간에도 pH 가 나빠질 때 한다. 이 환자가 혼미하고 pH 7.18 이었다면 정답이 된다.\n  - ⑤ 고유량 산소는 COPD 고탄산혈증 환자의 저산소 호흡 구동 저하·V/Q 불균형 악화·홀데인 효과로 PaCO2 를 더 올린다. 목표는 SpO2 88~92 % 이고, 저산소만 있는 다른 환자라면 적절하다.\n- 함정: PaCO2 가 높다고 바로 삽관하지 않는다 — 의식 명료·가래 배출·혈역학 안정이면 NIV 가 먼저다.\n- 학습목표: 고탄산성 호흡산증(pH 7.25~7.35)을 동반한 COPD 급성 악화에는 비침습적 양압환기를 먼저 시작한다\n- 근거·출처: Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2024 Report — management of exacerbations · Rochwerg B et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J 2017;50:1602426",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "COPD 급성 악화에서 초기 치료 뒤에도 pH 7.28·PaCO2 68 의 급성 호흡산증(HCO3- 31 로 만성 저류 위에 겹침)과 빠른 호흡이 있다. 의식이 명료하고 가래를 뱉을 수 있으며 혈역학이 안정적이어서 비침습적 양압환기(NIV)의 금기가 없다. NIV 는 이 상황에서 기관삽관과 사망률을 줄이는 근거가 가장 강한 처치다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이산화탄소가 쌓이나</b>: COPD 악화에서는 기도 저항이 커져 호기가 끝나기 전에 다음 숨을 들이쉰다(동적 과팽창). 그러면 내인성 PEEP 이 생겨 숨을 들이쉬려면 먼저 그 압력만큼 근육이 일해야 하고, 평평해진 횡격막은 힘을 못 쓴다. 호흡은 얕고 빨라져 사강 환기 비율이 커지고 PaCO2 가 오른다.<br> <b>NIV 가 하는 일</b>: 흡기 양압(IPAP)이 호흡근의 일을 대신해 일회호흡량을 늘리고, 호기 양압(EPAP)이 내인성 PEEP 을 상쇄해 흡기를 시작하는 부담을 줄인다. 그래서 1~2시간 안에 호흡수가 줄고 pH 가 오르며, 피로가 회복된다.<br> <b>그래서</b> pH 7.35 미만·PaCO2 45 초과의 호흡산증이면 NIV 를 시작한다. 의식 저하로 기도를 보호하지 못하거나, 가래를 뱉지 못하거나, 쇼크·심정지 직전이면 금기이고 그때는 기관삽관이다. 1~2시간 NIV 에도 pH 가 나빠지면 삽관으로 넘어간다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비침습적 양압환기(정답)</th><th>기관삽관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>pH 7.25~7.35</b> 의 호흡산증, 협조 가능</td><td>pH 7.25 미만이 NIV 로 호전 안 됨, 호흡 정지 직전</td></tr> <tr><td>의식</td><td><b>명료</b> — 기도 보호 가능</td><td>혼수·기도 보호 불가</td></tr> <tr><td>분비물</td><td>스스로 뱉을 수 있음</td><td>다량·배출 불가</td></tr> <tr><td>혈역학</td><td>안정</td><td>쇼크·심한 부정맥</td></tr> </tbody></table> 두 처치 모두 환기를 돕는다. NIV 의 조건(의식·분비물·혈역학)이 충족되는 한 먼저 NIV 를 하고, 실패하거나 조건이 깨질 때 삽관한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 탄산수소나트륨은 호흡산증의 원인(환기 부족)을 고치지 못하고 CO2 를 더 만든다. 심한 대사산증(pH 7.1 미만의 산증 + 낮은 HCO3-)에서나 고려한다.\n② 아미노필린은 효과가 작고 부정맥·경련 같은 독성이 커서 COPD 악화의 일상 치료에서 빠졌다. 다른 기관지확장제에 반응하지 않는 경우에만 드물게 쓴다.\n④ 즉시 기관삽관은 의식이 떨어져 기도를 보호하지 못하거나, 호흡 정지·쇼크가 있거나, NIV 1~2시간에도 pH 가 나빠질 때 한다. 이 환자가 혼미하고 pH 7.18 이었다면 정답이 된다.\n⑤ 고유량 산소는 COPD 고탄산혈증 환자의 저산소 호흡 구동 저하·V/Q 불균형 악화·홀데인 효과로 PaCO2 를 더 올린다. 목표는 SpO2 88~92 % 이고, 저산소만 있는 다른 환자라면 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "PaCO2 가 높다고 바로 삽관하지 않는다 — 의식 명료·가래 배출·혈역학 안정이면 NIV 가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고탄산성 호흡산증(pH 7.25~7.35)을 동반한 COPD 급성 악화에는 비침습적 양압환기를 먼저 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2024 Report — management of exacerbations · Rochwerg B et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J 2017;50:1602426"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "초기 치료 뒤에도 pH 7.28 의 고탄산성 호흡산증이 있고 의식·가래 배출·혈역학이 유지되므로 비침습적 양압환기를 시작한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "기관삽관은 의식 저하·기도 보호 불가·쇼크나 NIV 실패일 때인데 이 환자는 의식이 명료하다",
+   "steps": 2,
+   "chain": [
+    "COPD 악화 + pH 7.28·PaCO2 68 → 급성 고탄산성 호흡산증, NIV 적응증",
+    "의식 명료·가래 배출·혈역학 안정 → NIV 금기 없음 → NIV 시작"
+   ],
+   "key": [
+    {
+     "item": "pH 7.28, PaCO2 68 mmHg",
+     "why": "NIV 적응증인 급성 호흡산증",
+     "also": []
+    },
+    {
+     "item": "호흡 28회/분",
+     "why": "호흡 노력 증가 — 호흡근 피로",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흉부 X선에서 과팽창 외에 폐렴이나 기흉은 없다",
+     "why": "기흉(NIV 전 배액 필요) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하고 질문에 바르게 대답하며 가래를 스스로 뱉을 수 있다",
+     "why": "NIV 금기가 없다 — 삽관보다 NIV",
+     "also": []
+    },
+    {
+     "item": "혈압 138/82 mmHg",
+     "why": "혈역학 안정 — NIV 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "HCO3- 31 mEq/L",
+     "why": "만성 CO2 저류의 신장 보상 — 급성 악화가 겹쳤음을 보여 줄 뿐",
+     "also": []
+    }
+   ],
+   "summary": "COPD 악화에서 초기 치료 뒤에도 pH 7.28 의 호흡산증이 있다. 의식·가래 배출·혈역학이 유지되어 NIV 를 먼저 시작한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "환자가 혼미해 가래를 뱉지 못하고 pH 가 7.18 로 떨어졌다면 기관삽관이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0207",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "순환기 — 바이러스 감염 뒤 자세에 따라 변하는 흉통",
+  "type": "순환기 — 바이러스 감염 뒤 자세에 따라 변하는 흉통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-02",
+  "vignette": "A 32-year-old man comes to the emergency department because of sharp chest pain for 2 days. The pain is worse when he lies down and when he takes a deep breath and is relieved by sitting up and leaning forward. He had a sore throat and runny nose 10 days ago. He has no history of serious illness and takes no medications. His temperature is 37.8°C, pulse is 96/min, respirations are 18/min, and blood pressure is 124/78 mm Hg. A scratchy, three-component sound is heard at the left lower sternal border with the patient leaning forward. Jugular venous pressure is normal, and there is no pulsus paradoxus. An ECG shows diffuse concave ST-segment elevations with PR-segment depressions. Serum troponin I concentration is within the reference range. Echocardiography shows a small pericardial effusion and normal ventricular function.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Furosemide",
+   "Ibuprofen and colchicine",
+   "Prednisone",
+   "Aspirin, clopidogrel, and heparin",
+   "Intravenous ceftriaxone and vancomycin"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Positional pleuritic chest pain relieved by leaning forward, a pericardial friction rub, diffuse concave ST elevation with PR depression, and a small effusion after a viral illness are acute (idiopathic/viral) pericarditis. There is no tamponade, myocardial involvement, or high-risk feature, so he can be treated as an outpatient with a high-dose NSAID plus colchicine; colchicine for 3 months halves the recurrence rate.\n- 원리: <b>Why the pain and ECG look like this</b>: the parietal pericardium is innervated by the phrenic nerve, so inflammation causes sharp pain that changes with position and breathing; leaning forward lifts the heart off the inflamed posterior pericardium. Inflammation of the epicardial layer injures the superficial myocardium all around the heart, so ST elevation is <b>diffuse</b>, concave, and not in a single coronary territory, and atrial injury depresses the PR segment.<br> <b>Why two drugs</b>: the NSAID treats the pain and inflammation. Colchicine binds tubulin and blocks neutrophil migration and NLRP3 inflammasome activation — the IL-1–driven loop that sustains and re-ignites pericardial inflammation. Adding it reduces persistent symptoms and recurrence (ICAP, COPE trials) roughly by half.<br> <b>Why not steroids first</b>: glucocorticoids relieve symptoms quickly but increase recurrence, probably by allowing viral persistence; they are reserved for contraindications to NSAIDs, autoimmune causes, or pregnancy-related limits.\n- 비교: <table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">NSAID + colchicine (answer)</th><th>Glucocorticoid (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>First line</b> for viral/idiopathic pericarditis</td><td>NSAID contraindication, autoimmune disease, uremic failure of other therapy</td></tr> <tr><td>Effect on recurrence</td><td><b>Reduces</b> (colchicine about 50 %)</td><td><b>Increases</b> recurrence</td></tr> <tr><td>Duration</td><td>NSAID 1–2 weeks with taper; colchicine 3 months</td><td>Slow taper over weeks to months</td></tr> </tbody></table> Both relieve pain; only one lowers the chance that pericarditis comes back. That is why steroids are second line even though they act faster.\n- 오답 이유:\n  - (A) Furosemide treats volume overload in heart failure; it lowers preload and can precipitate collapse in tamponade. It fits a patient with reduced ejection fraction and pulmonary edema, not pericarditis.\n  - (C) Prednisone is used when NSAIDs are contraindicated or the pericarditis is due to systemic autoimmune disease; it increases recurrence in viral pericarditis. It would be correct if he had lupus or a contraindication such as peptic ulcer bleeding.\n  - (D) Dual antiplatelet therapy with heparin treats acute coronary syndrome, where ST elevation is regionally distributed with reciprocal depression and troponin rises; heparin also risks hemopericardium in pericarditis. It fits a STEMI pattern.\n  - (E) Empiric ceftriaxone and vancomycin with drainage treat purulent bacterial pericarditis, which presents with high fever, sepsis, and often tamponade. It would apply if pericardiocentesis showed pus.\n- 함정: Diffuse ST elevation with PR depression and a normal troponin is pericarditis — not ACS, and steroids are not first line.\n- 학습목표: 급성 심낭염의 일차 치료는 NSAID(또는 아스피린)와 콜히친의 병용임을 안다\n- 근거·출처: Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921 · Imazio M et al. A randomized trial of colchicine for acute pericarditis (ICAP). N Engl J Med 2013;369:1522",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Positional pleuritic chest pain relieved by leaning forward, a pericardial friction rub, diffuse concave ST elevation with PR depression, and a small effusion after a viral illness are acute (idiopathic/viral) pericarditis. There is no tamponade, myocardial involvement, or high-risk feature, so he can be treated as an outpatient with a high-dose NSAID plus colchicine; colchicine for 3 months halves the recurrence rate."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the pain and ECG look like this</b>: the parietal pericardium is innervated by the phrenic nerve, so inflammation causes sharp pain that changes with position and breathing; leaning forward lifts the heart off the inflamed posterior pericardium. Inflammation of the epicardial layer injures the superficial myocardium all around the heart, so ST elevation is <b>diffuse</b>, concave, and not in a single coronary territory, and atrial injury depresses the PR segment.<br> <b>Why two drugs</b>: the NSAID treats the pain and inflammation. Colchicine binds tubulin and blocks neutrophil migration and NLRP3 inflammasome activation — the IL-1–driven loop that sustains and re-ignites pericardial inflammation. Adding it reduces persistent symptoms and recurrence (ICAP, COPE trials) roughly by half.<br> <b>Why not steroids first</b>: glucocorticoids relieve symptoms quickly but increase recurrence, probably by allowing viral persistence; they are reserved for contraindications to NSAIDs, autoimmune causes, or pregnancy-related limits."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">Feature</th><th style=\"width:37%\">NSAID + colchicine (answer)</th><th>Glucocorticoid (closest rival)</th></tr></thead><tbody> <tr><td>Indication</td><td><b>First line</b> for viral/idiopathic pericarditis</td><td>NSAID contraindication, autoimmune disease, uremic failure of other therapy</td></tr> <tr><td>Effect on recurrence</td><td><b>Reduces</b> (colchicine about 50 %)</td><td><b>Increases</b> recurrence</td></tr> <tr><td>Duration</td><td>NSAID 1–2 weeks with taper; colchicine 3 months</td><td>Slow taper over weeks to months</td></tr> </tbody></table> Both relieve pain; only one lowers the chance that pericarditis comes back. That is why steroids are second line even though they act faster."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Furosemide treats volume overload in heart failure; it lowers preload and can precipitate collapse in tamponade. It fits a patient with reduced ejection fraction and pulmonary edema, not pericarditis.\n(C) Prednisone is used when NSAIDs are contraindicated or the pericarditis is due to systemic autoimmune disease; it increases recurrence in viral pericarditis. It would be correct if he had lupus or a contraindication such as peptic ulcer bleeding.\n(D) Dual antiplatelet therapy with heparin treats acute coronary syndrome, where ST elevation is regionally distributed with reciprocal depression and troponin rises; heparin also risks hemopericardium in pericarditis. It fits a STEMI pattern.\n(E) Empiric ceftriaxone and vancomycin with drainage treat purulent bacterial pericarditis, which presents with high fever, sepsis, and often tamponade. It would apply if pericardiocentesis showed pus."
+   },
+   {
+    "k": "함정",
+    "v": "Diffuse ST elevation with PR depression and a normal troponin is pericarditis — not ACS, and steroids are not first line."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 심낭염의 일차 치료는 NSAID(또는 아스피린)와 콜히친의 병용임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921 · Imazio M et al. A randomized trial of colchicine for acute pericarditis (ICAP). N Engl J Med 2013;369:1522"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "앞으로 숙이면 나아지는 흉막성 흉통·마찰음·광범위 ST 상승과 PR 하강·정상 트로포닌이므로 급성 심낭염이고 NSAID 와 콜히친으로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "스테로이드는 NSAID 금기나 자가면역 원인일 때만이고 바이러스성에서는 재발을 늘린다",
+   "steps": 2,
+   "chain": [
+    "자세성 흉통 + 마찰음 + 광범위 ST 상승·PR 하강 + 정상 트로포닌 → 바이러스 뒤 급성 심낭염",
+    "고위험 소견 없음 → NSAID + 콜히친"
+   ],
+   "key": [
+    {
+     "item": "relieved by sitting up and leaning forward",
+     "why": "심낭염의 자세성 통증",
+     "also": []
+    },
+    {
+     "item": "diffuse concave ST-segment elevations with PR-segment depressions",
+     "why": "심낭염의 심전도",
+     "also": []
+    },
+    {
+     "item": "scratchy, three-component sound",
+     "why": "심낭 마찰음",
+     "also": []
+    },
+    {
+     "item": "sore throat and runny nose 10 days ago",
+     "why": "바이러스성 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum troponin I concentration is within the reference range",
+     "why": "급성 관상동맥증후군·심근 침범 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "there is no pulsus paradoxus",
+     "why": "심장눌림증 가능성을 낮춘다 — 배액이 필요 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "His temperature is 37.8°C",
+     "why": "38°C 미만 — 고위험 소견이 아니라 외래 치료 가능",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "자세성 흉통·마찰음·광범위 ST 상승과 PR 하강, 정상 트로포닌은 바이러스 뒤 급성 심낭염이다. 일차 치료는 NSAID 와 콜히친이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "루푸스로 인한 심낭염이거나 NSAID 를 쓸 수 없는 위장관 출혈이 있었다면 스테로이드가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0206",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·부인과·혈액종양·안과·순환기·호흡기·응급·소화기·신경·감염·신장)",
+  "subtopic": "안과 — 갑자기 생긴 무통성 단안 시력 상실",
+  "type": "안과 — 갑자기 생긴 무통성 단안 시력 상실",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-02",
+  "vignette": "68세 남자가 1시간 전 갑자기 오른쪽 눈이 보이지 않아 응급실에 왔다. 통증은 없었고 눈 앞이 커튼처럼 한 번에 어두워졌다. 고혈압과 이상지질혈증으로 약을 먹고 있고 40갑년의 흡연력이 있다. 두통·턱 파행·근육통은 없다. 혈압 162/94 mmHg, 맥박 78회/분, 규칙적이다. 오른쪽 눈 시력은 안전수지이고 상대구심동공운동장애가 있다. 안압은 양쪽 15 mmHg 이다. 안저 검사에서 망막이 전반적으로 하얗게 부어 있고 황반 중심에 붉은 점이 보이며, 망막 출혈은 없다. 적혈구침강속도 12 mm/h, C 반응 단백 0.2 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "안압하강제를 점안하고 1주 뒤 다시 본다",
+   "유리체강 내 항혈관내피성장인자 주사를 한다",
+   "뇌졸중 평가를 위해 응급 뇌 MRI 와 혈관 검사를 한다",
+   "고용량 스테로이드를 정맥으로 투여한다",
+   "레이저 망막광응고술을 한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 갑작스러운 무통성 단안 시력 상실, 상대구심동공운동장애, 하얗게 부은 망막과 체리붉은 반점은 중심망막동맥폐쇄다. 대부분 경동맥 죽상판이나 심장에서 온 색전이 원인이고, 같은 색전원이 뇌경색을 일으킬 위험이 첫 몇 주에 높아 「눈의 뇌졸중」으로 다룬다. 거대세포동맥염 증상이 없고 염증 수치가 정상이므로, 즉시 뇌졸중 센터에서 뇌 MRI·경동맥 영상·심전도와 심장 평가를 한다.\n- 원리: <b>왜 망막이 하얗고 중심만 붉은가</b>: 망막 안쪽 2/3 는 중심망막동맥이 먹여 살린다. 동맥이 막히면 신경절세포층이 허혈로 부어 불투명하게 하얘진다. 중심와(황반 중심)에는 신경절세포층이 없어 투명하게 남고, 그 아래 맥락막(별도의 섬모체동맥 혈류)의 붉은색이 비쳐 보인다 — 이것이 체리붉은 반점이다.<br> <b>왜 뇌졸중처럼 다루나</b>: 중심망막동맥은 내경동맥 → 안동맥의 가지라서 뇌로 가는 혈관과 같은 색전원을 공유한다. 실제로 중심망막동맥폐쇄 환자의 상당수가 MRI 에서 무증상 급성 뇌경색을 보이고, 발생 직후 몇 주의 뇌졸중 위험이 높다. 그래서 진료 지침은 즉시 뇌졸중 센터로 보내 뇌 영상·혈관 영상·심장 리듬 평가를 하도록 권한다.<br> <b>먼저 배제할 것</b>: 50세 이상이면 거대세포동맥염(동맥염성)을 생각해 ESR·CRP 를 본다. 두통·턱 파행이 있거나 염증 수치가 높으면 조직검사를 기다리지 않고 스테로이드를 시작한다.\n- 비교: <table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비동맥염성 CRAO — 뇌졸중 평가(정답)</th><th>거대세포동맥염 — 고용량 스테로이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>경동맥·심장 색전, 죽상경화</td><td>혈관벽 육아종성 염증</td></tr> <tr><td>증상</td><td>무통성 갑작스러운 시력 상실</td><td><b>두통·턱 파행·두피 압통·근육통</b></td></tr> <tr><td>검사</td><td><b>ESR·CRP 정상</b></td><td>ESR·CRP 상승</td></tr> <tr><td>위험</td><td>뇌경색</td><td>반대쪽 눈의 실명</td></tr> </tbody></table> 두 경우 모두 고령의 갑작스러운 단안 시력 상실이다. 동맥염 증상과 염증 수치가 처치를 가른다 — 둘 다 없으면 뇌졸중 평가, 있으면 스테로이드가 먼저다.\n- 오답 이유:\n  - ① 안압하강제 점안은 급성 폐쇄각녹내장의 처치인데, 그때는 통증·충혈·높은 안압이 있다. 안압이 15 mmHg 로 정상인 무통성 시력 상실에는 해당하지 않는다.\n  - ② 항혈관내피성장인자 주사는 망막정맥폐쇄나 습성 황반변성의 황반부종 치료다. 망막 출혈이 사방에 퍼진 중심망막정맥폐쇄에 황반부종이 있었다면 정답이 된다.\n  - ④ 고용량 스테로이드는 거대세포동맥염에 의한 동맥염성 폐쇄에서 반대쪽 눈을 지키는 치료다. 두통·턱 파행이 있고 ESR·CRP 가 높았다면 정답이 된다.\n  - ⑤ 레이저 망막광응고술은 망막 허혈 뒤 신생혈관이 생긴 경우(증식당뇨망막병증, 허혈 정맥폐쇄 뒤 신생혈관)에 한다. 몇 주 뒤 홍채·망막 신생혈관이 생겼다면 적절하다.\n- 함정: 체리붉은 반점을 보고 눈만 치료하지 않는다 — 색전원을 찾는 뇌졸중 평가가 먼저다.\n- 학습목표: 중심망막동맥폐쇄는 눈의 뇌졸중이므로 즉시 뇌졸중 평가(뇌 영상·경동맥·심장 색전원)를 한다\n- 근거·출처: Flaxel CJ et al. Retinal and Ophthalmic Artery Occlusions Preferred Practice Pattern. Ophthalmology 2020;127:P259 · Mac Grory B et al. Management of central retinal artery occlusion: a scientific statement from the American Heart Association. Stroke 2021;52:e282",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "갑작스러운 무통성 단안 시력 상실, 상대구심동공운동장애, 하얗게 부은 망막과 체리붉은 반점은 중심망막동맥폐쇄다. 대부분 경동맥 죽상판이나 심장에서 온 색전이 원인이고, 같은 색전원이 뇌경색을 일으킬 위험이 첫 몇 주에 높아 「눈의 뇌졸중」으로 다룬다. 거대세포동맥염 증상이 없고 염증 수치가 정상이므로, 즉시 뇌졸중 센터에서 뇌 MRI·경동맥 영상·심전도와 심장 평가를 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 망막이 하얗고 중심만 붉은가</b>: 망막 안쪽 2/3 는 중심망막동맥이 먹여 살린다. 동맥이 막히면 신경절세포층이 허혈로 부어 불투명하게 하얘진다. 중심와(황반 중심)에는 신경절세포층이 없어 투명하게 남고, 그 아래 맥락막(별도의 섬모체동맥 혈류)의 붉은색이 비쳐 보인다 — 이것이 체리붉은 반점이다.<br> <b>왜 뇌졸중처럼 다루나</b>: 중심망막동맥은 내경동맥 → 안동맥의 가지라서 뇌로 가는 혈관과 같은 색전원을 공유한다. 실제로 중심망막동맥폐쇄 환자의 상당수가 MRI 에서 무증상 급성 뇌경색을 보이고, 발생 직후 몇 주의 뇌졸중 위험이 높다. 그래서 진료 지침은 즉시 뇌졸중 센터로 보내 뇌 영상·혈관 영상·심장 리듬 평가를 하도록 권한다.<br> <b>먼저 배제할 것</b>: 50세 이상이면 거대세포동맥염(동맥염성)을 생각해 ESR·CRP 를 본다. 두통·턱 파행이 있거나 염증 수치가 높으면 조직검사를 기다리지 않고 스테로이드를 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:26%\">항목</th><th style=\"width:37%\">비동맥염성 CRAO — 뇌졸중 평가(정답)</th><th>거대세포동맥염 — 고용량 스테로이드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>경동맥·심장 색전, 죽상경화</td><td>혈관벽 육아종성 염증</td></tr> <tr><td>증상</td><td>무통성 갑작스러운 시력 상실</td><td><b>두통·턱 파행·두피 압통·근육통</b></td></tr> <tr><td>검사</td><td><b>ESR·CRP 정상</b></td><td>ESR·CRP 상승</td></tr> <tr><td>위험</td><td>뇌경색</td><td>반대쪽 눈의 실명</td></tr> </tbody></table> 두 경우 모두 고령의 갑작스러운 단안 시력 상실이다. 동맥염 증상과 염증 수치가 처치를 가른다 — 둘 다 없으면 뇌졸중 평가, 있으면 스테로이드가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 안압하강제 점안은 급성 폐쇄각녹내장의 처치인데, 그때는 통증·충혈·높은 안압이 있다. 안압이 15 mmHg 로 정상인 무통성 시력 상실에는 해당하지 않는다.\n② 항혈관내피성장인자 주사는 망막정맥폐쇄나 습성 황반변성의 황반부종 치료다. 망막 출혈이 사방에 퍼진 중심망막정맥폐쇄에 황반부종이 있었다면 정답이 된다.\n④ 고용량 스테로이드는 거대세포동맥염에 의한 동맥염성 폐쇄에서 반대쪽 눈을 지키는 치료다. 두통·턱 파행이 있고 ESR·CRP 가 높았다면 정답이 된다.\n⑤ 레이저 망막광응고술은 망막 허혈 뒤 신생혈관이 생긴 경우(증식당뇨망막병증, 허혈 정맥폐쇄 뒤 신생혈관)에 한다. 몇 주 뒤 홍채·망막 신생혈관이 생겼다면 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "체리붉은 반점을 보고 눈만 치료하지 않는다 — 색전원을 찾는 뇌졸중 평가가 먼저다."
+   },
+   {
+    "k": "학습목표",
+    "v": "중심망막동맥폐쇄는 눈의 뇌졸중이므로 즉시 뇌졸중 평가(뇌 영상·경동맥·심장 색전원)를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Flaxel CJ et al. Retinal and Ophthalmic Artery Occlusions Preferred Practice Pattern. Ophthalmology 2020;127:P259 · Mac Grory B et al. Management of central retinal artery occlusion: a scientific statement from the American Heart Association. Stroke 2021;52:e282"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "무통성 갑작스러운 단안 시력 상실과 체리붉은 반점은 중심망막동맥폐쇄이고, 동맥염 소견이 없으므로 색전성 뇌졸중에 준해 뇌·혈관 평가를 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "스테로이드는 거대세포동맥염일 때인데 두통·턱 파행이 없고 ESR·CRP 가 정상이다",
+   "steps": 2,
+   "chain": [
+    "갑작스러운 무통성 단안 시력 상실 + 하얀 망막·체리붉은 반점 → 중심망막동맥폐쇄",
+    "동맥염 증상 없음·염증 수치 정상 → 색전성 → 뇌졸중 평가"
+   ],
+   "key": [
+    {
+     "item": "황반 중심에 붉은 점",
+     "why": "체리붉은 반점 — 중심망막동맥폐쇄",
+     "also": []
+    },
+    {
+     "item": "망막이 전반적으로 하얗게 부어 있고",
+     "why": "안쪽 망막 허혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "두통·턱 파행·근육통은 없다",
+     "why": "거대세포동맥염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "적혈구침강속도 12 mm/h, C 반응 단백 0.2 mg/dL",
+     "why": "동맥염성 폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "망막 출혈은 없다",
+     "why": "중심망막정맥폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "안압은 양쪽 15 mmHg",
+     "why": "급성 폐쇄각녹내장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "40갑년의 흡연력",
+     "why": "죽상경화 색전원 — 경동맥 평가의 근거",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "체리붉은 반점을 동반한 갑작스러운 무통성 단안 시력 상실은 중심망막동맥폐쇄다. 동맥염 소견이 없어 색전성으로 보고 즉시 뇌졸중 평가를 한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "턱 파행과 두피 압통이 있고 ESR 이 90 mm/h 였다면 고용량 스테로이드가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0193",
   "exam": "imaging",
   "style": "usmle_style",
