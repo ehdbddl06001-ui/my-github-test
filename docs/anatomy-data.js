@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-10-01",
+ "generated": "2026-10-02",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -13882,6 +13882,103 @@ window.MEDKOS_ANATOMY = {
  ],
  "daily": [
   {
+   "date": "2026-10-03",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "upper-limb",
+    "pelvis-perineum"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0001"
+    ],
+    "layer": [
+     "anatomy-2026-0003"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0035",
+     "anatomy-2026-0002"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0469",
+    "anatomy-2026-0480",
+    "anatomy-2026-0476",
+    "anatomy-2026-0512",
+    "anatomy-2026-0515"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ],
+    "d-3": [
+     "anatomy-2026-0556",
+     "anatomy-2026-0521",
+     "anatomy-2026-0663",
+     "anatomy-2026-0557",
+     "anatomy-2026-0517",
+     "anatomy-2026-0518",
+     "anatomy-2026-0497",
+     "anatomy-2026-0601",
+     "anatomy-2026-0666",
+     "anatomy-2026-0385",
+     "anatomy-2026-0598",
+     "anatomy-2026-0519"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-14": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
    "date": "2026-10-02",
    "phase": "t2-new",
    "examPhase": "tagging-2",
@@ -16609,103 +16706,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0045",
      "anatomy-2026-0050",
      "anatomy-2026-0359"
-    ],
-    "d-7": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0380",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-14": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0157",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-03",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "neck",
-    "lower-limb"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0030"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0037"
-    ],
-    "relation": [
-     "anatomy-2026-0029",
-     "anatomy-2026-0032"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0372",
-    "anatomy-2026-0353",
-    "anatomy-2026-0044",
-    "anatomy-2026-0048",
-    "anatomy-2026-0355",
-    "anatomy-2026-0043",
-    "anatomy-2026-0017",
-    "anatomy-2026-0447",
-    "anatomy-2026-0356",
-    "anatomy-2026-0045",
-    "anatomy-2026-0050",
-    "anatomy-2026-0359"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ],
-    "d-3": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0398",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
     ],
     "d-7": [
      "anatomy-2026-0157",

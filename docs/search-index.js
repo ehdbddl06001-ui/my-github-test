@@ -1,27 +1,27 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-01",
+ "generated": "2026-10-02",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3197,
+  "total": 3200,
   "byType": {
+   "anatomy": 771,
    "kmle": 1248,
    "concept": 91,
-   "anatomy": 770,
    "usmle": 174,
+   "paper": 699,
    "imaging": 200,
-   "paper": 697,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 770,
-   "Cardiology": 231,
+   "Anatomy": 771,
+   "Cardiology": 232,
    "Nephrology": 184,
    "Infectious Disease": 166,
-   "Pediatrics": 149,
+   "Pediatrics": 150,
    "Obstetrics & Gynecology": 110,
    "Hematology-Oncology": 103,
    "Pathology": 102,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2164,
+   "high": 2165,
    "low": 50,
-   "medium": 983
+   "medium": 985
   },
   "tagCount": 4469
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-03",
+   "type": "anatomy",
+   "unit": "팔·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-03",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-03",
+   "path": "content/anatomy/daily/2026-10-03.md",
+   "snippet": "오늘의 학습 (2026 10 03 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 23일 · Tagging 2까지 16일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-03 팔·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 03 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 23일 · Tagging 2까지 16일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-1279",
    "type": "kmle",
@@ -857,6 +871,40 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0182.md",
    "snippet": "An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within",
    "text": "Pharmacology Two Faints in a Week and a Pulse of 42 in an 81-Year-Old Four Weeks After a Dementia Drug Was Started donepezil cholinesterase-inhibitor muscarinic-M2 sinus-bradycardia syncope alzheimer-disease adverse-drug-effect USMLE-style / MedKOS (Katzung BG, Vanderah TW. Basic & Clinical Pharmacology 15e Ch 6–7 Cholinoceptor-Activating & Cholinesterase-Inhibiting Drugs; Goodman & Gilman's The Pharmacological Basis of Therapeutics 14e (anticholinesterase agents); Harrison's Principles of Internal Medicine 21e Ch 244 The Bradyarrhythmias: Disorders of the Sinoatrial Node) An 81 year old woman is brought to the physician by her daughter because she has fainted twice during the past week, once while rising from the dinner table and once while walking to the bathroom. Each time she regained consciousness within a minute and was not confused afterward; there was no tongue biting or incontinence. She has Alzheimer disease, and donepezil was started 4 weeks ago. Since then she has had nausea, two or three loose stools daily and vivid dreams. She has had hypertension treated with amlodipine for 8 years and hypothyroidism treated with levothyroxine; the doses have not changed in the past year. She takes no other medications. Her vital signs are shown; there is no orthostatic change in blood pressure. She is oriented to person and place. The lungs are clear to auscultation. Cardiac examination shows a regular rhythm and no murmurs. There is no peripheral edema. Laboratory studies are shown. An ECG is shown. Which of the following mechanisms most likely explains this patient's episodes of syncope? A. Blockade of L type calcium channels in sinoatrial nodal cells B. Increased acetylcholine acting on M2 receptors in the sinoatrial node C. Fibrotic degeneration of the sinoatrial node and conduction system D. Arteriolar vasodilation reducing cerebral perfusion pressure E. Insufficient thyroid hormone decreasing sinoatrial automaticity 짧은 의식 소실이 두 번 있었고 맥박 42, 심전도는 규칙적인 동서맥이며 기립 혈압 변화가 없다 — 서맥이 뇌 관류를 떨어뜨린 실신이다. 서맥은 4주 전 donepezil(가역적 아세틸콜린에스테라제 억제제)을 시작한 뒤에 생겼고, 같은 시기의 구역·묽은 변·생생한 꿈은 아세틸콜린 증가의 콜린성 부작용이다. 콜린에스테라제 억제제는 중추뿐 아니라 말초에서도 아세틸콜린을 늘려 동방결절의 M2 무스카린 수용체(Gi)를 자극한다 — Gβγ 가 GIRK(IK,ACh) 칼륨 통로를 열어 세포를 과분극시키고 cAMP 저하로 If·L형 칼슘 전류가 줄어 4상 탈분극이 느려진다(음성 변시). 8년째 같은 용량의 amlodipine 은 혈관 선택적 디하이드로피리딘이라 동방결절을 거의 억제하지 않고, TSH 정상은 갑상선 기능 저하에 의한 서맥 가능성을 낮춘다."
+  },
+  {
+   "id": "paper-2026-0699",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer medicine",
+   "confidence": "medium",
+   "date": "2026-10-01",
+   "path": "content/papers/2026/2026-10-01_paper-2026-0699_low_dose_cytarabine_plus_g_csf_induction_in_pediatric_m2_acu.md",
+   "snippet": "Title Low Dose Cytarabine Plus G CSF Induction in Pediatric M2 Acute Myeloid Leukemia: A Multicenter Study Authors Ou Wenxin, Zhu Xiaohua, Lu Jun, Wang Hongsheng, Liao Ning, Liu Yufeng, Jiang Hua, An Qi, et al. Journal / DOI Cancer medicine",
+   "text": "Pediatrics scraped pubmed PubMed / Cancer medicine Title Low Dose Cytarabine Plus G CSF Induction in Pediatric M2 Acute Myeloid Leukemia: A Multicenter Study Authors Ou Wenxin, Zhu Xiaohua, Lu Jun, Wang Hongsheng, Liao Ning, Liu Yufeng, Jiang Hua, An Qi, et al. Journal / DOI Cancer medicine · DOI: 10.1002/cam4.72349 · PMID: 42817041 https://pubmed.ncbi.nlm.nih.gov/42817041/ Abstract This retrospective secondary analysis of the multicenter randomized CALS III AML18 trial evaluated the efficacy and safety of low dose chemotherapy (LDC) compared with standard dose chemotherapy (SDC) in children with M2 acute myeloid leukemia (AML M2). A total of 221 children were included, with 109 in the LDC arm and 112 in the SDC arm. The complete remission (CR)/CR with incomplete recovery (CRi) rates after induction I and II were 67.0% versus 70.5% (p = 0.568) and 84.4% versus 89.3% (p = 0.740), respectively. The 3 year overall survival (OS) rates were 81.2% ± 3.9% and 86.9% ± 3.3% in the LDC and SDC arms, respectively (p = 0.304). The corresponding 3 year relapse free survival (RFS) rates were 82.0% ± 3.8% and 88.1% ± 3.1% (p = 0.205), and the 3 year event free survival (EFS) rates were 62.1% ± 4.8% and 70.8% ± 4.4% (p = 0.218). Among patients with KIT mutations, outcomes were poorer in the LDC arm than in the SDC arm, including 3 year OS (67.1% ± 8.7% vs. 91.5% ± 4.1%, p = 0.011), RFS (70.6% ± 7.8% vs. 87.5% ± 4.8%, p = 0.038), and EFS (49.2% ± 8.7% vs. 81.0% ± 5.7%, p = 0.002). Among patients who developed sepsis, grade 3 5 events were less frequent in the LDC arm than in the SDC arm (33.3% vs. 78.8%, p < 0.001). LDC was also associated with faster neutrophil and platelet recovery, lower transfusion requirements, and reduced treatment costs during induction. No statistically significant differences in remission or survival outcomes were observed between LDC and SDC, while the LDC regimen showed a lower treatment related burden. These findings support further evaluation of LDC as a toxicity sparing induction strategy in selected pediatric patients with AML M2. The poorer outcomes observed among patients with KIT mutations warrant caution when considering treatment de intensification in this subgroup. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0698",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of medical sciences",
+   "confidence": "medium",
+   "date": "2026-10-01",
+   "path": "content/papers/2026/2026-10-01_paper-2026-0698_the_influence_of_recipient_s_pre_existing_diabetes_mellitus_.md",
+   "snippet": "Title The influence of recipient's pre existing diabetes mellitus on outcomes of living donor kidney transplant Authors Shahabuddin Hina, Kiran Zareen, Khan Muhammad Tassaduq, Rasheed Abdur Journal / DOI Pakistan journal of medical sciences",
+   "text": "Cardiology scraped pubmed PubMed / Pakistan journal of medical sciences Title The influence of recipient's pre existing diabetes mellitus on outcomes of living donor kidney transplant Authors Shahabuddin Hina, Kiran Zareen, Khan Muhammad Tassaduq, Rasheed Abdur Journal / DOI Pakistan journal of medical sciences · DOI: 10.12669/pjms.42.9.13651 · PMID: 42819583 https://pubmed.ncbi.nlm.nih.gov/42819583/ Abstract OBJECTIVE: To determine the influence of recipients' pre existing diabetes mellitus on the outcomes of living donor kidney transplantation. METHODOLOGY: This prospective observational cohort study included 202 patients who underwent kidney transplantation between September 2022 and December 2023 at Dow University Hospital, Pakistan, and were stratified into two equal groups: pre existing diabetes and non diabetes. Patients with new onset diabetes after transplantation were excluded. Demographic and clinical data were collected. Outcomes, including one year patient survival and post transplant complications, were assessed and compared. RESULTS: Complications were high in the pre existing diabetes group (57.4% vs. 28.7%, p <0.001). Infections occurred in 46.5% of patients with pre existing diabetes versus 22.8% non DM (p <0.001). Post transplant cardiovascular events were observed in 6.9% of patients in the pre existing DM group, whereas none were observed in the non DM group (p = 0.014). One year patient survival was 88.1% in the pre existing DM group versus 95% in the non DM group (p = 0.075). Graft related complications did not differ significantly between the groups. Multivariate analysis identified pre transplant congestive heart failure (HR = 99.431, [95% CI 7.709 128.441, p <0.001]), pre transplant peripheral vascular disease (HR =7.787, [95% CI 1.197 50.682, p = 0.032]), post transplant cardiovascular events (HR = 7.839, [95% CI 1.423 43.198, p = 0.018]), and post transplant FBS (HR = 1.023, [95% CI 1.001 1.046, p = 0.040]) as independent predictors of mortality. CONCLUSION: Diabetes did not influence one year patient survival and graft specific outcomes but led to frequent post transplant complications. Pre and post transplant cardiovascular disease and elevated post transplant FBS levels were associated with mortality. Therefore, structured pre transplant cardiovascular assessment and optimization, ongoing post transplant cardiovascular surveillance, and strict glycemic control are required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0201",
