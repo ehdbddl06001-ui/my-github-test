@@ -391,8 +391,29 @@
    "date": "2026-10-02",
    "device": "android-9buhos",
    "note": ""
+  },
+  "imaging-2026-0205": {
+   "id": "imaging-2026-0205",
+   "exam": "imaging",
+   "subject": "혈액·종양",
+   "step": "Step 2",
+   "type": "혈액·종양 — 젊은 여성 유방 종괴의 표적치료 전 검사",
+   "style": "usmle_style",
+   "modality": "HISTOLOGY_IHC",
+   "question": "Which of the following is the most appropriate test to obtain before starting the targeted therapy?",
+   "chosen": 3,
+   "chosenText": "Bone densitometry",
+   "answer": 4,
+   "answerText": "Echocardiography",
+   "coreNote": "",
+   "differ": "",
+   "decision": "염색은 HER2 3+ 로 트라스투주맙을 쓴다. 트라스투주맙은 좌심실 기능을 떨어뜨리므로 시작 전에 심초음파를 한다.",
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261002T202147Z_일일영상_2026-10-03_12units_12q_34749900",
+   "date": "2026-10-03",
+   "device": "pc-haprn5",
+   "note": ""
   }
  },
  "removed": {},
- "updated": "2026-10-02T12:10:49.626Z"
+ "updated": "2026-10-03T03:16:40.890Z"
 }
