@@ -113,6 +113,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0205.jpg",
    "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",

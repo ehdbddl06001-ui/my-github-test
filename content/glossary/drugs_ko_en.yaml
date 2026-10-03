@@ -107,6 +107,14 @@ drugs:
   아나킨라: anakinra
   암피실린: ampicillin
   세포탁심: cefotaxime
+  트라스투주맙: trastuzumab
+  퍼투주맙: pertuzumab
+  독소루비신: doxorubicin
+  파클리탁셀: paclitaxel
+  블레오마이신: bleomycin
+  시스플라틴: cisplatin
+  에탐부톨: ethambutol
+  레트로졸: letrozole
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}
@@ -127,3 +135,5 @@ classes:
   안지오텐신전환효소억제제: {en: ACE inhibitor, check: Angiotensin-Converting Enzyme Inhibitors}
   항정신병약: {en: antipsychotic, check: Antipsychotic Agents}
   혈관확장제: {en: vasodilator, check: Vasodilator Agents}
+  아로마테이스억제제: {en: aromatase inhibitor, check: Aromatase Inhibitors}
+  안트라사이클린: {en: anthracycline, check: Anthracyclines}

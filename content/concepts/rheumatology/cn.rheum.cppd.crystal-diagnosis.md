@@ -110,6 +110,9 @@ figures_wanted:
   caption_terms:
   - chondrocalcinosis
   modality: XR_MSK
+figures_rejected:
+- asset: PMC-PMC12915063_FIGURE1
+  reason: 그림 설명이 연골석회화증이 '없음'이라고 말하는 팔꿈치 X선(두 패널) — 무릎 반달연골 석회화 소견이 보이지 않음
 ---
 
 ## 판단 — 왜 가성통풍이 먼저인가

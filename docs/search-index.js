@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-02",
+ "generated": "2026-10-03",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3213,
+  "total": 3222,
   "byType": {
-   "concept": 92,
+   "concept": 93,
    "anatomy": 771,
+   "paper": 707,
    "kmle": 1248,
    "imaging": 212,
    "usmle": 174,
-   "paper": 699,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 771,
-   "Cardiology": 232,
-   "Nephrology": 184,
-   "Infectious Disease": 166,
-   "Pediatrics": 150,
+   "Cardiology": 233,
+   "Nephrology": 185,
+   "Infectious Disease": 167,
+   "Pediatrics": 151,
    "Obstetrics & Gynecology": 111,
-   "Hematology-Oncology": 103,
-   "Pathology": 102,
+   "Hematology-Oncology": 105,
+   "Pathology": 103,
    "Psychiatry": 95,
    "Neurology": 93,
    "Rheumatology": 89,
    "General Surgery": 86,
    "Endocrinology": 83,
+   "Surgery": 83,
    "Dermatology": 82,
-   "Surgery": 82,
    "Gastroenterology": 81,
    "Orthopedics": 81,
    "Ophthalmology": 80,
    "Pulmonology": 80,
    "Hematology": 75,
-   "Laboratory Medicine": 69,
+   "Laboratory Medicine": 70,
    "산부인과": 41,
    "Physiology": 20,
    "순환기": 20,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 986,
+   "medium": 995,
    "high": 2177,
    "low": 50
   },
@@ -100,6 +100,20 @@ window.MEDKOS_INDEX = {
    "text": "Obstetrics & Gynecology 판단 — 왜 편평세포암이 먼저인가 먼저 낭종의 이름을 붙인다: 열린 표본의 엉킨 털·피지·뼈 조각 = 성숙낭성기형종(유피낭종, dermoid cyst). 악성 변화는 그 종양에서 가장 많은 조직 에서 생긴다. 유피낭종의 벽은 피부처럼 각질형 편평상피로 덮여 있어, 악성 변화의 약 80 % 가 편평세포암이다 [[?hackethal 2008]]. 다른 조직형은 그 조직이 주가 될 때 고른다 — 갑상샘 조직이 대부분(난소갑상샘종)이면 유두갑상샘암, 샘·점액이면 선암. 나이(폐경 후)·크기(10 cm 넘음)·벽 결절은 「악성 변화가 있는가」를 시사하고, 조직형은 바꾸지 않는다. 기전 — 세 배엽에서 편평 내막으로 성숙낭성기형종은 생식세포에서 생긴 양성 종양으로 세 배엽 조직을 모두 만들 수 있지만, 외배엽이 우세 하다. 낭종 벽은 각질형 편평상피와 피부 부속기(털집·피지샘)로 덮여 내강에 피지와 털이 찬다. 뼈·치아(중배엽)는 흔히 벽에서 솟은 결절(로키탄스키 결절, Rokitansky protuberance)에 모인다 [[?robbins 10]]. 악성 변화는 피부암과 같은 길을 밟아 이 편평 내막에서 생기며, 흔히 그 결절 자리에 침윤암으로 나타난다 [[?hackethal 2008]]. 가르는 소견 — 어느 조직에서 생겼나 침윤암의 조직 모양이 기원 조직을 말해 준다(표). 각화가 있으면 편평세포암, 샘·점액이면 선암, 갑상샘 여포가 바탕이면 유두갑상샘암. CA 125·SCC 항원은 악성 변화에서 오를 수 있지만 조직형을 정하지 못하고, 정상이어도 악성 변화를 배제하지 않는다 [[?hackethal 2008]]. 권고와 예외 악성 변화는 드물어(약 1–2 %) 대부분의 유피낭종은 양성이다 — 젊은 여성의 작은 유피낭종에서 악성 변화를 먼저 떠올리지 않는다 [[?hackethal 2008]]. 수술 중 파열은 예후를 나쁘게 하므로 낭종을 온전히 꺼낸다. 병기·치료 세부는 이 정리본에서 대조하지 않았다(검토 항목). 근거는 모두 원문 미대조(†)다 — 빈도 수치는 사람 검토가 필요하다."
   },
   {
+   "id": "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo",
+   "type": "concept",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-10-03",
+   "path": "content/concepts/hematology-oncology/cn.onc.her2-breast-cancer.trastuzumab-baseline-echo.md",
+   "snippet": "판단 — 왜 심초음파가 먼저인가 염색이 표적을 정한다: 종양 세포막 전체가 진하게 물드는 HER2 3+ 는 양성이라 항 HER2 항체(트라스투주맙) 대상이다 [[harrison 21: 79장 p.620]]. 약이 위험 장기를 정한다: 트라스투주맙의 주된 독성은 심근 기능 저하라 기저와 치료 중 연속 심초음파가 필요하다 [[harrison 21: 79장 p.621–622]]. ER·PR 음성이면 내분비 치료(아로마테이스 억제제)",
+   "text": "Hematology-Oncology 판단 — 왜 심초음파가 먼저인가 염색이 표적을 정한다: 종양 세포막 전체가 진하게 물드는 HER2 3+ 는 양성이라 항 HER2 항체(트라스투주맙) 대상이다 [[harrison 21: 79장 p.620]]. 약이 위험 장기를 정한다: 트라스투주맙의 주된 독성은 심근 기능 저하라 기저와 치료 중 연속 심초음파가 필요하다 [[harrison 21: 79장 p.621–622]]. ER·PR 음성이면 내분비 치료(아로마테이스 억제제)의 이득이 없어 골밀도 검사가 치료 전 검사로 오지 않는다 [[harrison 21: 79장 p.620]]. 기전 — 수용체 과발현에서 표적치료와 심장까지 HER2(human epidermal growth factor receptor 2, c neu/erbB2)는 세포막 수용체 티로신 키나아제다. 유전자 증폭으로 단백이 과발현되면 세포 표면에 수용체가 많아져 면역조직화학(immunohistochemistry, IHC)에서 세포막 전체가 둘러싸이듯 물든다. 판정은 IHC 단백 과발현이나 FISH(fluorescence in situ hybridization) 유전자 증폭으로 한다 [[harrison 21: 79장 p.620]]. 과발현된 세포 표면 단백이 곧 항체의 표적이라, HER2 양성일 때만 트라스투주맙이 재발·사망 위험을 줄인다 [[harrison 21: 79장 p.620]]. 같은 수용체 경로를 막는 것이 심근 기능을 떨어뜨릴 수 있다 — 증상 있는 심부전은 드물지만 무증상 기능 저하를 잡으려고 박출률을 잰다 [[harrison 21: 79장 p.622]]. 심근세포에서 HER2 신호가 하는 역할의 세부 기전은 해리슨 이 장에 없어 대조하지 않았다. 가르는 소견 — 약이 위험 장기를 정한다 보기의 기저 검사는 모두 어떤 약의 정답이다. 「표적 → 약 → 위험 장기」 순서로 하나만 남긴다. 안트라사이클린과 트라스투주맙은 둘 다 심장이지만 성격이 다르다: 안트라사이클린은 누적 용량 의존 울혈성 심부전, 트라스투주맙은 심근 기능 저하이고 둘을 동시에 주면 더 잦다 [[harrison 21: 79장 p.621]]. 선택 — 언제 쓰지 않거나 심장내과와 보나 심장 이상 병력이 있으면 트라스투주맙을 쓰지 않거나 경험 있는 심장내과와 함께 본다 [[harrison 21: 79장 p.622]]. 치료 중 3개월마다 심초음파, 치료가 끝난 뒤에는 하지 않는다 [[harrison 21: 79장 p.622]]. 트라스투주맙은 탁산과 함께 주는 것이 좋고, 위험이 낮은 T1–2·림프절 음성이면 파클리탁셀+트라스투주맙으로 충분하다. 퍼투주맙을 더하면 수술 전 치료에서 병리적 완전관해가 늘어난다 [[harrison 21: 79장 p.621]]. 권고와 예외 첫 투여 때 주입 관련 알레르기 반응이 있을 수 있으나 대개 다시 생기지 않는다 [[harrison 21: 79장 p.622]]. 박출률이 얼마나 떨어지면 중단·재개하는지(수치 기준)는 이 정리본에서 대조하지 않았다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 79장 p.620–623)"
+  },
+  {
    "id": "anatomy-daily-2026-10-03",
    "type": "anatomy",
    "unit": "팔·골반·회음",
@@ -112,6 +126,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-03.md",
    "snippet": "오늘의 학습 (2026 10 03 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 23일 · Tagging 2까지 16일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-03 팔·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 03 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 23일 · Tagging 2까지 16일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0707",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cochlear implants international",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0707_cochlear_implants_in_adults_outcomes_in_prolonged_auditory_d.md",
+   "snippet": "Title Cochlear implants in adults: outcomes in prolonged auditory deprivation Authors Lopes Marta L, Figueiredo Hugo, Bartolomeu Francisca, Oliveira Graça, Silva André, Alves Marisa, Ramos Daniela, Alves Helena, et al. Journal / DOI Cochlea",
+   "text": "Surgery scraped pubmed PubMed / Cochlear implants international Title Cochlear implants in adults: outcomes in prolonged auditory deprivation Authors Lopes Marta L, Figueiredo Hugo, Bartolomeu Francisca, Oliveira Graça, Silva André, Alves Marisa, Ramos Daniela, Alves Helena, et al. Journal / DOI Cochlear implants international · DOI: 10.1080/14670100.2026.2721064 · PMID: 42826346 https://pubmed.ncbi.nlm.nih.gov/42826346/ Abstract OBJECTIVES: To evaluate outcomes following cochlear implantation (CI) in postlinguistically deaf adults with prolonged auditory deprivation. METHODS: A retrospective analysis was conducted on 95 patients who underwent CI between 2020 and 2022. Inclusion criteria were age ≥18 years. Main outcome measures included the pure tone average across speech frequencies (PTA4), speech perception scores (monosyllabic words and sentences), and the Categories of Auditory Performance II (CAP II). Correlation and regression analyses examined associations between auditory deprivation and postoperative outcomes, adjusting for confounders such as age at implantation and prior hearing aid use. RESULTS: Mean PTA4 improved by 70.8 dB HL, with median 100 word and 100 sentence recognition scores of 82% and 84%, respectively. Patients with ≥30 years of deprivation showed significantly lower CAP II scores (p = 0.015). Linear regression revealed a modest inverse relationship between duration of deafness and tonal gain ( 0.331 dB per year). Among participants under 65 years, prolonged deprivation correlated with reduced tonal gain and CAP II scores, whereas no such effect was observed in older adults. Age at implantation influenced monosyllabic word recognition but not sentence perception. DISCUSSION: Findings indicate that the consequences of auditory deprivation are more pronounced in younger adults, likely reflecting increased vulnerability of central auditory processing when hearing loss occurs earlier in life. CONCLUSION: Cochlear implantation provides substantial benefits across age groups. Prolonged auditory deprivation exerts a greater impact in adults under 65 years, supporting early implantation and continuous auditory stimulation to preserve central auditory processing and optimize long term outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0706",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0706_therapeutic_value_of_continuous_subcutaneous_insulin_infusio.md",
+   "snippet": "Title Therapeutic value of continuous subcutaneous insulin infusion with electrolyte supplementation for pediatric diabetic ketoacidosis Authors Li Wei, Zhang Hongxia, Li Qing, Kong Deqing Journal / DOI European journal of pediatrics · DOI:",
+   "text": "Pediatrics scraped pubmed PubMed / European journal of pediatrics Title Therapeutic value of continuous subcutaneous insulin infusion with electrolyte supplementation for pediatric diabetic ketoacidosis Authors Li Wei, Zhang Hongxia, Li Qing, Kong Deqing Journal / DOI European journal of pediatrics · DOI: 10.1007/s00431 026 07435 y · PMID: 42825942 https://pubmed.ncbi.nlm.nih.gov/42825942/ Abstract BACKGROUND: Pediatric diabetic ketoacidosis (DKA) is life threatening; traditional IV insulin risks hypoglycemia and electrolyte issues. We evaluated the efficacy and safety of continuous subcutaneous insulin infusion (CSII) combined with electrolyte supplementation in DKA. METHODS: Sixty six patients were randomly assigned to the study group (CSII + electrolyte supplementation) or control group (intravenous insulin infusion + electrolyte supplementation). Overall efficacy, time to pH normalization, target blood glucose achievement, urine ketone clearance, levels of BUN, creatinine, potassium, FPG, 2hPG and sodium, inflammatory markers, acid base balance indicators, and adverse reactions were compared. RESULTS: Study group had higher overall efficacy (χ2 = 5.121), shorter time to pH normalization, target blood glucose achievement, and urine ketone clearance (t = 8.023, 7.712, 7.438), lower BUN, creatinine, FPG, 2hPG, sodium, CRP, TNF α, and IL 6 levels (t = 8.893, 15.816, 5.865, 12.267, 4.542, 3.626, 2.615, 5.746), higher serum potassium, CO₂CP, and blood pH levels (t = 9.737, 4.220, 17.78), and lower blood lactate levels (t = 6.922) and adverse reaction rates (χ2 = 4.243) than the control group (all P < 0.05). CONCLUSION: CSII with electrolyte supplementation improves pediatric DKA treatment outcomes by regulating blood glucose and electrolytes, alleviating inflammation and acidosis, and reducing adverse reactions during treatment. WHAT IS KNOWN: • Pediatric diabetic ketoacidosis (DKA) is a life threatening acute complication of diabetes mellitus. • Traditional intravenous insulin infusion is the standard treatment but carries risks of hypoglycemia, hypokalemia, and other electrolyte disturbances. • Electrolyte supplementation is routinely used alongside insulin therapy to correct dehydration and metabolic imbalances in DKA. WHAT IS NEW: • This study provides clinical evidence that continuous subcutaneous insulin infusion (CSII) combined with electrolyte supplementation is more effective than conventional intravenous insulin therapy in pediatric DKA. • CSII based regimen achieved faster pH normalization, blood glucose control, and urine ketone clearance, with better improvements in renal function, inflammatory markers, and acid base balance. • The CSII group also showed lower rates of adverse reactions, suggesting that this approach may offer a safer and more efficient alternative for managing pediatric DKA. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0705",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0705_concordance_of_p16_status_between_us_guided_core_needle_biop.md",
+   "snippet": "Title Concordance of p16 status between US guided core needle biopsy and surgical specimens in oropharyngeal squamous cell carcinoma: A diagnostic accuracy study Authors Lee Dongjun, Choi Young Jun, Song Joon Seon, Lee Yoon Se, Chung Sae Ro",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Medicine Title Concordance of p16 status between US guided core needle biopsy and surgical specimens in oropharyngeal squamous cell carcinoma: A diagnostic accuracy study Authors Lee Dongjun, Choi Young Jun, Song Joon Seon, Lee Yoon Se, Chung Sae Rom, Baek Jung Hwan, Lee Jeong Hyun Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051054 · PMID: 42826333 https://pubmed.ncbi.nlm.nih.gov/42826333/ Abstract With the increasing prevalence of human papillomavirus (HPV) driven oropharyngeal squamous cell carcinoma (OPSCC), there is a need for efficient, minimally invasive methods to evaluate p16 status. This study aimed to assess the concordance of p16 status between ultrasound (US) guided core needle biopsy (CNB) of cervical lymph nodes and surgical specimens, and to describe the numbers of CNB and surgical sessions required to establish the histopathologic diagnosis. This retrospective study included 39 patients diagnosed with OPSCC or head and neck squamous cell carcinoma of unknown primary (SCCUP) at a single tertiary hospital between March 2019 and March 2024. All included patients underwent US guided CNB of cervical lymph nodes and a surgical procedure (biopsy or resection), and had evaluable p16 immunohistochemistry (IHC) results on both specimen types. The concordance rate for p16 status between US guided CNB and surgical specimens was 100.0% (39/39; 95% CI, 91.0 100.0%; 35 p16 positive and 4 p16 negative cases). Sensitivity was 100.0% (35/35; 95% CI, 90.0 100.0%) and specificity was 100.0% (4/4; 95% CI, 39.8 100.0%). In all 39 included patients, a diagnosis of metastatic squamous cell carcinoma and an evaluable p16 result were obtained at the first CNB session. Among the 35 patients with OPSCC, 10 (28.6%) required more than 1 surgical session at the primary tumor site. No immediate complications were observed following US guided CNB. In this cohort, US guided CNB of cervical lymph nodes showed complete observed concordance with surgical specimens for p16 status, and a diagnosis with an evaluable p16 result was obtained at the first CNB session in all patients. Prospective, multicenter validation including more p16 negative cases is required before wider adoption. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0704",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0704_androgen_insensitivity_syndrome_a_case_report.md",
+   "snippet": "Title Androgen insensitivity syndrome: A case report Authors Zhang Yong, Wang Houmei, Xiao Ziwen Journal / DOI Medicine · DOI: 10.1097/MD.0000000000050953 · PMID: 42826332 https://pubmed.ncbi.nlm.nih.gov/42826332/ Abstract RATIONALE: 46, XY",
+   "text": "Pathology scraped pubmed PubMed / Medicine Title Androgen insensitivity syndrome: A case report Authors Zhang Yong, Wang Houmei, Xiao Ziwen Journal / DOI Medicine · DOI: 10.1097/MD.0000000000050953 · PMID: 42826332 https://pubmed.ncbi.nlm.nih.gov/42826332/ Abstract RATIONALE: 46, XY disorder of sex development (46, XY DSD) is relatively rare and frequently missed in clinical practice, necessitating early standardized diagnosis and treatment. Androgen insensitivity syndrome (AIS), a major subtype, should be considered in phenotypic females with suggestive clinical clues. PATIENT CONCERNS: A 29 year old phenotypic female presented with primary amenorrhea and intermittent abdominal pain. Examination revealed normal breast development, sparse pubic hair, and female external genitalia. Pelvic ultrasonography and CT showed an absent uterus and ovaries, with bilateral inguinal masses. DIAGNOSES: The case met the 3 diagnostic criteria for 46, XY DSD: 46,XY karyotype, testicular tissue, and feminized external genitalia. A diagnosis clinically consistent with complete AIS was further supported by the characteristic phenotype female appearance, normal breast development, sparse pubic hair, and absent Müllerian structures. Other etiologies of undervirilization, including 5α reductase deficiency and 17β hydroxysteroid dehydrogenase deficiency, were considered. Genetic confirmation was unavailable, limiting subtype certainty. INTERVENTIONS: Following counseling, the patient underwent laparoscopic bilateral orchiectomy as prophylactic gonadectomy to reduce malignancy risk, together with inguinal hernia repair, followed by postoperative hormone replacement therapy. Postoperative histopathology confirmed testicular tissue with Leydig cell hyperplasia, absent spermatogenic cells, and no malignancy. OUTCOMES: Abdominal pain resolved postoperatively, with improved psychological well being and adaptation to the diagnosis under ongoing endocrine and psychological support. LESSONS: 46, XY DSD is underdiagnosed due to phenotypic variability, reliance on specialized tests, and social biases. AIS should be considered in the differential diagnosis of phenotypic females presenting with primary amenorrhea, developed secondary sexual characteristics, and an absent uterus on ultrasound. However, definitive subtyping requires AR gene sequencing, which was not available in this case. Early diagnosis requires careful assessment of newborn external genitalia, with specialist evaluation prompted by any atypical findings, and hormonal and genetic testing in adolescents with abnormal development. Multidisciplinary care involving gynecologists, endocrinologists, surgeons, geneticists, and mental health professionals is essential for comprehensive management, including psychological support, hormone therapy, and timely prophylactic gonadectomy. Establishing specialized multidisciplinary centers for DSD is also recommended. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0703",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0703_medium_term_cognitive_outcome_in_patients_with_cns_lymphomas.md",
+   "snippet": "Title Medium Term Cognitive Outcome in Patients With CNS Lymphomas Treated With Chimeric Antigen Receptor T Cell Therapy Authors Mersali Sirine, Chapelle Rémy, Ribeiro Monica, Weiss Nicolas, Psimaras Dimitri, Le Guennec Loïc, Birzu Cristina",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Neurology Title Medium Term Cognitive Outcome in Patients With CNS Lymphomas Treated With Chimeric Antigen Receptor T Cell Therapy Authors Mersali Sirine, Chapelle Rémy, Ribeiro Monica, Weiss Nicolas, Psimaras Dimitri, Le Guennec Loïc, Birzu Cristina, Hoang Xuan Khê, et al. Journal / DOI Neurology · DOI: 10.1212/WNL.0000000000218561 · PMID: 42826379 https://pubmed.ncbi.nlm.nih.gov/42826379/ Abstract BACKGROUND AND OBJECTIVES: Chimeric antigen receptor (CAR) T cell therapy has demonstrated promising efficacy results in CNS lymphomas, with reassuring rates of acute neurotoxicity. However, the neurologic outcome of these brain injured patients remains unknown beyond the short term. Our objective was to report on the medium term neurocognitive evolution. METHODS: We retrospectively selected isolated CNS lymphomas treated with CAR T cells (June 2021 April 2024) at Pitié Salpêtrière Hospital who had neuropsychological follow up as part of routine care (various tests evaluating main cognitive domains: language, memory, executive functions, visuospatial abilities, and overall functioning). We collected the results of the various cognitive tests from the patients' medical records at baseline, in the absence of tumoral progression; 6 weeks (W6); 6 months (M6); and 12 months (M12) after CAR T cell therapy. We used paired Student t tests to compare follow up values of neurocognitive variables with their baseline values. The primary outcome was the difference in Montreal Cognitive Assessment (MoCA) scores between baseline and M12. RESULTS: Thirty patients (43% female, 57% male) were included, of whom 21 had neuropsychological assessment up to M12. Their median age was 61 years (range 30 82). At baseline, MoCA score was 23.5 (range 11 29) and 34% 80% of patients had abnormal scores in the main cognitive domains. Nineteen (63%) patients experienced acute neurotoxicity (6 (20%) of grade ≥3). Twenty one patients (70%) maintained or improved their MoCA score at W6, while 9 (30%) worsened theirs. The occurrence and severity of neurotoxicity were significantly associated with these 2 types of initial trajectories (p = 0.003, 95% CI 1.78 1,227.01). There was a significant improvement of MoCA score at M6 (mean 24.7 vs 22.6, p = 0.002, 95% CI 0.92 3.37) and M12 (mean 25.4 vs 22.1, p < 0.001, 95% CI 2.12 4.92) compared with baseline. Language score significantly improved between baseline and M12 (mean Z score of 0.6 vs 0.1; p = 0.02, 95% CI 0.08 0.9). Scores addressing memory, executive functions, visuo spatial functions, and anxiety/depression were stable or improved, although not significantly. DISCUSSION: Midterm neurocognition follow up in patients with CNS lymphoma treated by CAR T cells seems reassuring, with no significant cognitive worsening, and even an improvement in general cognitive functioning, even in patients who experienced severe acute neurotoxicity. These results should be confirmed with longer follow up. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0702",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0702_fgf_23_is_associated_with_increased_risk_of_abdominal_aortic.md",
+   "snippet": "Title FGF 23 is associated with increased risk of abdominal aortic calcification: A Mendelian randomization study with phosphate as a potential mediator Authors Song Lei, Chen Juan, Xue Cheng, Song Chang, Zhu Jinhua, Xu Daoliang Journal / D",
+   "text": "Nephrology scraped pubmed PubMed / Medicine Title FGF 23 is associated with increased risk of abdominal aortic calcification: A Mendelian randomization study with phosphate as a potential mediator Authors Song Lei, Chen Juan, Xue Cheng, Song Chang, Zhu Jinhua, Xu Daoliang Journal / DOI Medicine · DOI: 10.1097/MD.0000000000050966 · PMID: 42826311 https://pubmed.ncbi.nlm.nih.gov/42826311/ Abstract Fibroblast growth factor 23 (FGF23) is involved in the regulation of phosphate metabolism and has been linked to vascular calcification. However, the genetic association between FGF23 and abdominal aortic calcification (AAC) remains unclear. We conducted a bidirectional two sample Mendelian randomization (MR) study to evaluate the association between genetically predicted circulating FGF23 levels and AAC. Univariable MR was performed to assess the primary association, followed by multivariable MR adjusting for serum calcium, 25 hydroxyvitamin D, parathyroid hormone, and chronic kidney disease. In addition, a two step MR mediation analysis was used to assess whether phosphate might mediate this association. Univariable MR analysis suggested a modest association between genetically predicted circulating FGF23 levels and a higher risk of AAC (odds ratio = 1.082, 95% confidence interval = 1.016 1.151, P = .013). This association remained directionally consistent after separate adjustment for serum calcium, 25 hydroxyvitamin D, parathyroid hormone, and chronic kidney disease. In a secondary multivariable Mendelian randomization analysis using an alternative FGF23 genome wide association study, the association was no longer statistically significant after adjustment for phosphate (odds ratio = 1.064, 95% confidence interval = 0.962 1.179, P = .224). Two step MR mediation analysis suggested that serum phosphate may partially mediate the association between FGF23 and AAC, with a marginally significant indirect effect (inverse variance weighted: β = 0.024, P = .049), accounting for approximately 30% of the total effect. Our findings provide suggestive evidence that genetically predicted higher FGF23 levels may be modestly associated with an increased risk of AAC, with serum phosphate potentially acting as a partial mediator. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0701",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of African medicine",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0701_common_pathogens_associated_with_diabetic_charcot_neuroarthr.md",
+   "snippet": "Title Common Pathogens Associated with Diabetic Charcot Neuroarthropathy in the Indian Population: A Retrospective Observational Study Authors Pawar Prashant, Bakshi Supriya Journal / DOI Annals of African medicine · DOI: 10.4103/aam.aam 83",
+   "text": "Infectious Disease scraped pubmed PubMed / Annals of African medicine Title Common Pathogens Associated with Diabetic Charcot Neuroarthropathy in the Indian Population: A Retrospective Observational Study Authors Pawar Prashant, Bakshi Supriya Journal / DOI Annals of African medicine · DOI: 10.4103/aam.aam 83 26 · PMID: 42826376 https://pubmed.ncbi.nlm.nih.gov/42826376/ Abstract BACKGROUND: Diabetic Charcot neuroarthropathy (CN) is a limb threatening complication of long standing diabetes mellitus and is frequently complicated by secondary infection. India specific data on the microbiological spectrum and antimicrobial susceptibility patterns of infections complicating diabetic CN are limited. MATERIALS AND METHODS: This retrospective observational study included 82 adult patients with diabetic CN and associated foot ulcers. Deep tissue or ulcer base samples were collected under aseptic precautions and processed for bacterial culture, organism identification, and antimicrobial susceptibility testing using standard microbiological methods. RESULTS: Culture positivity was observed in 61 (74.4%) cases, with monomicrobial growth in 39 (47.6%) and polymicrobial growth in 18 (22.0%) cases. A total of 96 microbial isolates were identified. Gram negative organisms predominated, accounting for 60/96 (62.5%) bacterial isolates, while Gram positive organisms constituted 34/96 (35.4%). The most frequent isolates were Staphylococcus aureus 24 (25.0%), of which methicillin resistant S. aureus accounted for 9 isolates, representing 37.5% of all S. aureus isolates, followed by Pseudomonasaeruginosa 18 (18.75%), Escherichiacoli 16 (16.67%), and Klebsiellapneumoniae 11 (11.46%). Fungal isolates were infrequent 2 (2.08%). Gram positive organisms showed high sensitivity to linezolid (94.1%) and vancomycin (91.2%), whereas Gram negative organisms were most sensitive to meropenem (80.0%) and piperacillin tazobactam (73.3%). Detailed characterization of extended spectrum β lactamase production and carbapenem resistance was not systematically performed in this retrospective dataset; however, the observed antimicrobial susceptibility patterns suggest the presence of clinically relevant multidrug resistance among Gram negative organisms. CONCLUSION: Infected diabetic CN in this Indian cohort demonstrated a predominance of Gram negative pathogens with substantial polymicrobial infection and antimicrobial resistance. These findings highlight the importance of early, culture guided, and region specific antimicrobial strategies to optimize limb salvage outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0700",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical and experimental hypertension (New York, N.Y. : 1993)",
+   "confidence": "medium",
+   "date": "2026-10-02",
+   "path": "content/papers/2026/2026-10-02_paper-2026-0700_efficacy_and_mechanistic_insights_of_dapagliflozin_in_hypert.md",
+   "snippet": "Title Efficacy and mechanistic insights of dapagliflozin in hypertension management Authors Chen Zhongbo, Chunbin Wang, Zhang Hanmei, Luo Ting, Yan Jinhua Journal / DOI Clinical and experimental hypertension (New York, N.Y. : 1993) · DOI: 1",
+   "text": "Cardiology scraped pubmed PubMed / Clinical and experimental hypertension (New York, N.Y. : 1993) Title Efficacy and mechanistic insights of dapagliflozin in hypertension management Authors Chen Zhongbo, Chunbin Wang, Zhang Hanmei, Luo Ting, Yan Jinhua Journal / DOI Clinical and experimental hypertension (New York, N.Y. : 1993) · DOI: 10.1080/10641963.2026.2731624 · PMID: 42826222 https://pubmed.ncbi.nlm.nih.gov/42826222/ Abstract Hypertension remains one of the leading modifiable risk factors for cardiovascular disease and premature mortality worldwide. Blood pressure (BP) management is particularly challenging in patients with coexisting type 2 diabetes (T2D), chronic kidney disease (CKD), or heart failure (HF). Sodium glucose cotransporter 2 (SGLT2) inhibitors have become an integral component of contemporary cardiorenal therapy and have consistently demonstrated additional BP lowering effects across diverse clinical settings. This narrative review synthesizes the current clinical evidence regarding the antihypertensive effects of dapagliflozin and summarizes the biological mechanisms that may contribute to these effects, including osmotic diuresis and natriuresis, weight reduction, modulation of the sympathetic nervous system, enhanced uric acid excretion, and attenuation of oxidative stress, inflammation, and vascular dysfunction. Across clinical studies, reductions in systolic BP (SBP) generally exceed those in diastolic BP (DBP), although the physiological basis underlying this differential response remains incompletely understood. Dapagliflozin has demonstrated good tolerability and antihypertensive effects in clinical applications, its long term use may be limited by the risk of genital infections. Collectively, the available evidence supports dapagliflozin as a cardiorenal therapeutic agent that may provide additional BP lowering benefits in patients with hypertension and concomitant T2D, CKD, or HF, rather than as a substitute for conventional antihypertensive therapy. Future hypertension focused clinical studies are warranted to further define its role in hypertension management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1279",
