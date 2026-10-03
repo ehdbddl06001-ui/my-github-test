@@ -2,6 +2,1578 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0217",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "소아청소년 — 소파에서 떨어진 뒤 손목 통증",
+  "type": "소아청소년 — 소파에서 떨어진 뒤 손목 통증",
+  "modality": "XR_MSK",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "A 6-year-old boy is brought to the emergency department by his father because of pain in the right wrist. The father says the boy fell off a couch at home last night and has been holding his arm since then. The boy is quiet and answers questions only with nods. He has no history of fractures, and his growth has been normal. His temperature is 36.8°C, pulse is 104/min, and blood pressure is 102/64 mm Hg. Examination shows mild swelling and tenderness of the distal right forearm without deformity. Radial pulse, capillary refill, and sensation in the hand are normal. There are several bruises on the back and buttocks, some purple and some yellow-green. The sclerae are white, and the teeth are normal. An anteroposterior x-ray of the right wrist and forearm is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Obtain an MRI of the wrist to evaluate the growth plates",
+   "Splint the forearm and report suspected physical abuse to child protective services",
+   "Apply a short arm cast and arrange outpatient orthopedic follow-up",
+   "Perform closed reduction under procedural sedation",
+   "Obtain serum calcium, phosphate, and alkaline phosphatase levels before any further evaluation"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The x-ray shows transverse metaphyseal fractures of the distal radius and ulna with periosteal new bone along the shafts and sclerosis at the fracture lines — findings of healing that take at least 7–14 days to appear in a child. A fracture that is weeks old does not fit a fall \"last night,\" and bruises of different colors on protected areas (back, buttocks) add to the concern. The fracture itself is nondisplaced and needs only immobilization, but a history inconsistent with the injury is a mandatory-reporting trigger; physicians must report a reasonable suspicion, not a proven case.\n- 원리: <b>Why periosteal reaction dates a fracture</b>: after a fracture, the periosteum (thick and loosely attached in children) lifts and its osteoprogenitor cells lay down new bone. This subperiosteal new bone first becomes visible on radiographs at about <b>7–14 days</b>; soft callus and sclerosis of the fracture margins follow, and remodeling takes weeks to months. A fresh fracture shows a sharp line with soft-tissue swelling but no periosteal bone.<br> <b>Why that matters here</b>: the most important red flag for abuse is a <b>history that does not explain the injury</b> — wrong mechanism, wrong developmental stage, or wrong timing (delay in seeking care). Bruises on the back, buttocks, ears, or neck (the \"TEN-4\" regions) and bruises of different ages strengthen the concern.<br> <b>So</b> the duty is to protect the child: treat the fracture, ensure safety (often admission), and report. A skeletal survey is mandatory under age 2 and selectively used in older children; the report is not a diagnosis but the trigger for investigation.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Report suspected abuse (answer)</th><th>Cast and routine follow-up (closest rival)</th></tr></thead><tbody> <tr><td>Fracture age on x-ray</td><td><b>Periosteal new bone — ≥ 7–14 days old</b></td><td>Sharp line, no periosteal reaction — hours old</td></tr> <tr><td>Fit with history</td><td>Does not fit \"fell last night\"</td><td>Fits a fall on an outstretched hand</td></tr> <tr><td>Other findings</td><td>Bruises of different ages on back and buttocks</td><td>Bruises only over bony shins or forehead</td></tr> </tbody></table> The same transverse distal forearm fracture is common after accidental falls; it is the mismatch between timing on the x-ray and the story — not the fracture pattern — that changes the next step.\n- 오답 이유:\n  - (A) MRI of the physis is used when a Salter-Harris injury is suspected but not seen on x-ray. It would fit if there were growth-plate tenderness with a normal radiograph; here the fracture and its age are already clear.\n  - (C) Casting with outpatient follow-up is right for a fresh, nondisplaced fracture whose story fits. It would be correct if the film showed a sharp fracture line without periosteal new bone and no other injuries.\n  - (D) Closed reduction is needed for an angulated or displaced forearm fracture beyond acceptable limits for age. It fits if the radius were angulated more than about 15–20 degrees, not for this nondisplaced healing fracture.\n  - (E) Bone mineral tests are part of the evaluation for rickets or metabolic bone disease that can mimic abuse. They would come first if the metaphyses were frayed and cupped or there were multiple fractures without bruising, but not before reporting.\n- 함정: A common distal forearm fracture pattern feels accidental — but periosteal new bone means it is not from last night.\n- 학습목표: 소아 골절의 골막 신생골로 골절 시기를 추정하고, 병력과 맞지 않는 골절과 다른 시기의 멍이 있으면 아동학대를 신고한다\n- 근거·출처: Christian CW; Committee on Child Abuse and Neglect, AAP. The evaluation of suspected child physical abuse. Pediatrics 2015;135:e1337 · Pierce MC, et al. Validation of a clinical decision rule to predict abuse in young children based on bruising characteristics (TEN-4-FACESp). JAMA Netw Open 2021;4:e215832 · Kleinman PK. Diagnostic Imaging of Child Abuse, 3rd ed. — dating of fractures · 작성자 판독(2026-10-04): 원위 요골·척골 골간단 횡 골절, 골막 신생골과 경화(치유 중), 골감소, 전위 경미\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The x-ray shows transverse metaphyseal fractures of the distal radius and ulna with periosteal new bone along the shafts and sclerosis at the fracture lines — findings of healing that take at least 7–14 days to appear in a child. A fracture that is weeks old does not fit a fall \"last night,\" and bruises of different colors on protected areas (back, buttocks) add to the concern. The fracture itself is nondisplaced and needs only immobilization, but a history inconsistent with the injury is a mandatory-reporting trigger; physicians must report a reasonable suspicion, not a proven case."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why periosteal reaction dates a fracture</b>: after a fracture, the periosteum (thick and loosely attached in children) lifts and its osteoprogenitor cells lay down new bone. This subperiosteal new bone first becomes visible on radiographs at about <b>7–14 days</b>; soft callus and sclerosis of the fracture margins follow, and remodeling takes weeks to months. A fresh fracture shows a sharp line with soft-tissue swelling but no periosteal bone.<br> <b>Why that matters here</b>: the most important red flag for abuse is a <b>history that does not explain the injury</b> — wrong mechanism, wrong developmental stage, or wrong timing (delay in seeking care). Bruises on the back, buttocks, ears, or neck (the \"TEN-4\" regions) and bruises of different ages strengthen the concern.<br> <b>So</b> the duty is to protect the child: treat the fracture, ensure safety (often admission), and report. A skeletal survey is mandatory under age 2 and selectively used in older children; the report is not a diagnosis but the trigger for investigation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Report suspected abuse (answer)</th><th>Cast and routine follow-up (closest rival)</th></tr></thead><tbody> <tr><td>Fracture age on x-ray</td><td><b>Periosteal new bone — ≥ 7–14 days old</b></td><td>Sharp line, no periosteal reaction — hours old</td></tr> <tr><td>Fit with history</td><td>Does not fit \"fell last night\"</td><td>Fits a fall on an outstretched hand</td></tr> <tr><td>Other findings</td><td>Bruises of different ages on back and buttocks</td><td>Bruises only over bony shins or forehead</td></tr> </tbody></table> The same transverse distal forearm fracture is common after accidental falls; it is the mismatch between timing on the x-ray and the story — not the fracture pattern — that changes the next step."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) MRI of the physis is used when a Salter-Harris injury is suspected but not seen on x-ray. It would fit if there were growth-plate tenderness with a normal radiograph; here the fracture and its age are already clear.\n(C) Casting with outpatient follow-up is right for a fresh, nondisplaced fracture whose story fits. It would be correct if the film showed a sharp fracture line without periosteal new bone and no other injuries.\n(D) Closed reduction is needed for an angulated or displaced forearm fracture beyond acceptable limits for age. It fits if the radius were angulated more than about 15–20 degrees, not for this nondisplaced healing fracture.\n(E) Bone mineral tests are part of the evaluation for rickets or metabolic bone disease that can mimic abuse. They would come first if the metaphyses were frayed and cupped or there were multiple fractures without bruising, but not before reporting."
+   },
+   {
+    "k": "함정",
+    "v": "A common distal forearm fracture pattern feels accidental — but periosteal new bone means it is not from last night."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 골절의 골막 신생골로 골절 시기를 추정하고, 병력과 맞지 않는 골절과 다른 시기의 멍이 있으면 아동학대를 신고한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Christian CW; Committee on Child Abuse and Neglect, AAP. The evaluation of suspected child physical abuse. Pediatrics 2015;135:e1337 · Pierce MC, et al. Validation of a clinical decision rule to predict abuse in young children based on bruising characteristics (TEN-4-FACESp). JAMA Netw Open 2021;4:e215832 · Kleinman PK. Diagnostic Imaging of Child Abuse, 3rd ed. — dating of fractures · 작성자 판독(2026-10-04): 원위 요골·척골 골간단 횡 골절, 골막 신생골과 경화(치유 중), 골감소, 전위 경미 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "X선의 골막 신생골은 골절이 적어도 1~2주 지났음을 뜻해 「어젯밤 넘어졌다」는 병력과 맞지 않으므로 학대 의심을 신고한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "새 골절이면 골막 반응이 없어야 하는데 이 X선은 이미 치유 중이다",
+   "steps": 3,
+   "chain": [
+    "영상: 원위 요골·척골 골간단 골절선 둘레 골막 신생골·경화 → 치유 중인 골절",
+    "골막 신생골은 7~14일 뒤 보임 → 「어젯밤」 병력과 불일치",
+    "불일치 + 등·엉덩이의 다른 시기 멍 → 고정 후 아동보호기관 신고"
+   ],
+   "key": [
+    {
+     "item": "영상: 골절선 둘레의 골막 신생골과 경화",
+     "why": "골절 시기 — 최소 1~2주",
+     "also": []
+    },
+    {
+     "item": "fell off a couch at home last night",
+     "why": "X선 시기와 맞지 않는 병력",
+     "also": []
+    },
+    {
+     "item": "several bruises on the back and buttocks, some purple and some yellow-green",
+     "why": "보호되는 부위의 다른 시기 멍 — 학대 의심을 높인다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The sclerae are white, and the teeth are normal",
+     "why": "골형성부전증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Radial pulse, capillary refill, and sensation in the hand are normal",
+     "why": "응급 정복·수술이 필요한 신경혈관 손상이 없다",
+     "also": []
+    },
+    {
+     "item": "without deformity",
+     "why": "정복이 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The boy is quiet and answers questions only with nods",
+     "why": "걱정스러운 행동이지만 단독으로는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "X선의 골막 신생골은 1~2주 넘은 골절을 뜻해 「어젯밤」 병력과 맞지 않는다. 다른 시기의 멍까지 있어 고정과 함께 학대 의심을 신고한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "골막 반응이 없는 새 골절이고 다른 멍이 없었다면 석고 고정과 외래 추적이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0217.png",
+   "caption": "Anteroposterior radiograph of the right wrist and distal forearm, unaltered apart from scaling (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-1405_0942669544_01_WRI-R1_M006",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0216",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "신경 — 뇌 MRI 단면 높이와 뇌신경 손상 소견",
+  "type": "신경 — 뇌 MRI 단면 높이와 뇌신경 손상 소견",
+  "modality": "MR",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-03",
+  "vignette": "29세 남자가 3주 전부터 아침에 심해지는 두통으로 신경과에 왔다. 구역은 있으나 구토는 없고 시야 이상도 없다. 과거력과 복용 약은 없다. 혈압 124/78 mmHg, 맥박 72회/분이다. 신경학적 검사에서 뇌신경, 근력, 감각, 협조운동이 모두 정상이고 안저 검사에서 유두부종은 없다. 뇌 자기공명영상의 T2 강조 축상 영상 중 한 단면은 그림과 같으며 이 단면에는 이상 신호가 없다.",
+  "question": "이 단면 높이에서 뇌줄기의 앞(배쪽) 면으로 나오는 뇌신경이 손상되면 나타나는 소견으로 가장 적절한 것은?",
+  "options": [
+   "아래를 볼 때 심해지는 수직 복시",
+   "바깥쪽을 볼 때 심해지는 수평 복시",
+   "같은 쪽 얼굴의 감각 저하",
+   "이마를 포함한 같은 쪽 얼굴 마비",
+   "같은 쪽 눈꺼풀 처짐과 동공 확대"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 단면에는 앞쪽에 두 안구와 시신경이, 가운데에 앞쪽이 갈라진 하트 모양의 뇌줄기가 보인다 — 두 대뇌다리와 그 사이 다리사이오목, 뒤쪽의 가는 중간뇌수도관이 있는 중간뇌 높이다. 중간뇌 배쪽의 다리사이오목으로 나오는 뇌신경은 동안신경(III)이고, 손상되면 눈꺼풀올림근 마비로 눈꺼풀이 처지고 부교감 섬유 손상으로 동공이 커지며 눈이 아래·바깥으로 향한다.\n- 원리: <b>왜 단면 높이가 답을 정하나</b>: 뇌신경은 뇌줄기의 정해진 높이·면에서 나온다. 중간뇌에서는 <b>III 이 배쪽(다리사이오목)</b>으로, <b>IV 는 유일하게 등쪽</b>(아래둔덕 바로 아래)으로 나온다. 다리뇌에서는 V(중간 다리뇌 옆면), 다리뇌-숨뇌 경계에서 VI(앞쪽)·VII·VIII(옆쪽)이 나온다.<br> <b>영상에서 중간뇌 알아보기</b>: 축상 영상에서 중간뇌는 앞쪽이 두 대뇌다리로 갈라진 하트(또는 「미키마우스」) 모양이고, 뒤쪽에 가는 수도관이 있다. 같은 높이에 안구·시신경이 보이는 경우가 많다. 다리뇌는 앞쪽이 둥글고 크며 뒤에 넓은 4뇌실이 있다.<br> <b>동안신경 소견의 근거</b>: III 은 눈꺼풀올림근과 안쪽·위·아래곧은근·아래빗근을 맡고, 겉에 동공수축 부교감 섬유가 붙어 간다. 그래서 압박(동맥류·갈고리이랑 탈출)은 동공부터, 허혈(당뇨)은 동공을 남긴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">동안신경 III(정답)</th><th>도르래신경 IV(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나오는 높이</td><td>중간뇌(위둔덕 높이)</td><td>중간뇌(아래둔덕 아래)</td></tr> <tr><td>나오는 면</td><td><b>배쪽 — 다리사이오목</b></td><td><b>등쪽</b> — 유일하게 뒤로 나와 교차</td></tr> <tr><td>손상 소견</td><td>눈꺼풀 처짐·동공 확대·눈이 아래 바깥</td><td>아래를 볼 때(계단 내려갈 때) 수직 복시, 머리를 반대쪽으로 기울임</td></tr> </tbody></table> 둘 다 중간뇌 신경이라 「높이」만으로는 갈리지 않는다 — 배쪽이냐 등쪽이냐가 경계다. 등쪽 면을 물었다면 IV 가 답이다.\n- 오답 이유:\n  - ① 아래를 볼 때 심해지는 수직 복시는 도르래신경(IV) 손상이다. 같은 중간뇌라도 등쪽 면으로 나오는 신경을 물었다면 정답이 된다.\n  - ② 바깥쪽을 볼 때의 수평 복시는 갓돌림신경(VI) 손상이다. 단면이 다리뇌-숨뇌 경계 높이였고 그 앞쪽 신경을 물었다면 정답이 된다.\n  - ③ 얼굴 감각 저하는 삼차신경(V) 손상이다. 단면이 앞쪽이 둥글고 큰 다리뇌 중간 높이였고 옆면 신경을 물었다면 정답이 된다.\n  - ④ 이마를 포함한 얼굴 마비는 말초성 얼굴신경(VII) 손상이다. 다리뇌-숨뇌 경계 옆쪽(소뇌다리뇌각)에서 나오는 신경을 물었다면 정답이 된다.\n- 함정: 안구가 보이는 단면이라 시신경·눈 운동을 막연히 떠올리지 말고, 뇌줄기 모양으로 높이를 먼저 정한다.\n- 학습목표: 뇌 MRI 축상 단면에서 중간뇌 높이를 알아보고, 그 배쪽에서 나오는 동안신경 손상의 소견을 연결한다\n- 근거·출처: Blumenfeld H. Neuroanatomy through Clinical Cases, 3rd ed. Ch. 12–13 Brainstem and cranial nerves · Haines DE. Neuroanatomy in Clinical Context, 10th ed. — MRI correlations of the midbrain · 작성자 판독(2026-10-04): T2 축상, 중간뇌 높이 — 대뇌다리·다리사이오목·수도관·안구, 이 단면에 병변 없음\n\n## 출처\n- The Cancer Imaging Archive (CC BY 4.0) · series …48436872 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "단면에는 앞쪽에 두 안구와 시신경이, 가운데에 앞쪽이 갈라진 하트 모양의 뇌줄기가 보인다 — 두 대뇌다리와 그 사이 다리사이오목, 뒤쪽의 가는 중간뇌수도관이 있는 중간뇌 높이다. 중간뇌 배쪽의 다리사이오목으로 나오는 뇌신경은 동안신경(III)이고, 손상되면 눈꺼풀올림근 마비로 눈꺼풀이 처지고 부교감 섬유 손상으로 동공이 커지며 눈이 아래·바깥으로 향한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 단면 높이가 답을 정하나</b>: 뇌신경은 뇌줄기의 정해진 높이·면에서 나온다. 중간뇌에서는 <b>III 이 배쪽(다리사이오목)</b>으로, <b>IV 는 유일하게 등쪽</b>(아래둔덕 바로 아래)으로 나온다. 다리뇌에서는 V(중간 다리뇌 옆면), 다리뇌-숨뇌 경계에서 VI(앞쪽)·VII·VIII(옆쪽)이 나온다.<br> <b>영상에서 중간뇌 알아보기</b>: 축상 영상에서 중간뇌는 앞쪽이 두 대뇌다리로 갈라진 하트(또는 「미키마우스」) 모양이고, 뒤쪽에 가는 수도관이 있다. 같은 높이에 안구·시신경이 보이는 경우가 많다. 다리뇌는 앞쪽이 둥글고 크며 뒤에 넓은 4뇌실이 있다.<br> <b>동안신경 소견의 근거</b>: III 은 눈꺼풀올림근과 안쪽·위·아래곧은근·아래빗근을 맡고, 겉에 동공수축 부교감 섬유가 붙어 간다. 그래서 압박(동맥류·갈고리이랑 탈출)은 동공부터, 허혈(당뇨)은 동공을 남긴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">동안신경 III(정답)</th><th>도르래신경 IV(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나오는 높이</td><td>중간뇌(위둔덕 높이)</td><td>중간뇌(아래둔덕 아래)</td></tr> <tr><td>나오는 면</td><td><b>배쪽 — 다리사이오목</b></td><td><b>등쪽</b> — 유일하게 뒤로 나와 교차</td></tr> <tr><td>손상 소견</td><td>눈꺼풀 처짐·동공 확대·눈이 아래 바깥</td><td>아래를 볼 때(계단 내려갈 때) 수직 복시, 머리를 반대쪽으로 기울임</td></tr> </tbody></table> 둘 다 중간뇌 신경이라 「높이」만으로는 갈리지 않는다 — 배쪽이냐 등쪽이냐가 경계다. 등쪽 면을 물었다면 IV 가 답이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아래를 볼 때 심해지는 수직 복시는 도르래신경(IV) 손상이다. 같은 중간뇌라도 등쪽 면으로 나오는 신경을 물었다면 정답이 된다.\n② 바깥쪽을 볼 때의 수평 복시는 갓돌림신경(VI) 손상이다. 단면이 다리뇌-숨뇌 경계 높이였고 그 앞쪽 신경을 물었다면 정답이 된다.\n③ 얼굴 감각 저하는 삼차신경(V) 손상이다. 단면이 앞쪽이 둥글고 큰 다리뇌 중간 높이였고 옆면 신경을 물었다면 정답이 된다.\n④ 이마를 포함한 얼굴 마비는 말초성 얼굴신경(VII) 손상이다. 다리뇌-숨뇌 경계 옆쪽(소뇌다리뇌각)에서 나오는 신경을 물었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "안구가 보이는 단면이라 시신경·눈 운동을 막연히 떠올리지 말고, 뇌줄기 모양으로 높이를 먼저 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "뇌 MRI 축상 단면에서 중간뇌 높이를 알아보고, 그 배쪽에서 나오는 동안신경 손상의 소견을 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Blumenfeld H. Neuroanatomy through Clinical Cases, 3rd ed. Ch. 12–13 Brainstem and cranial nerves · Haines DE. Neuroanatomy in Clinical Context, 10th ed. — MRI correlations of the midbrain · 작성자 판독(2026-10-04): T2 축상, 중간뇌 높이 — 대뇌다리·다리사이오목·수도관·안구, 이 단면에 병변 없음 ## 출처 The Cancer Imaging Archive (CC BY 4.0) · series …48436872 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "단면의 뇌줄기가 앞쪽이 갈라진 하트 모양이고 수도관이 있어 중간뇌이며, 그 배쪽으로 나오는 신경은 동안신경이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "도르래신경도 중간뇌 신경이지만 등쪽으로 나온다 — 물은 것은 배쪽 면이다",
+   "steps": 2,
+   "chain": [
+    "영상: 하트 모양 뇌줄기·다리사이오목·수도관·안구 → 중간뇌 높이",
+    "중간뇌 배쪽(다리사이오목) → 동안신경 → 눈꺼풀 처짐·동공 확대"
+   ],
+   "key": [
+    {
+     "item": "영상: 앞쪽이 두 대뇌다리로 갈라진 하트 모양 뇌줄기와 뒤쪽 가는 수도관",
+     "why": "중간뇌 높이",
+     "also": []
+    },
+    {
+     "item": "뇌줄기의 앞(배쪽) 면으로 나오는",
+     "why": "같은 높이의 IV(등쪽)와 가르는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "이 단면에는 이상 신호가 없다",
+     "why": "병변 판독이 아니라 해부 높이를 묻는다는 신호",
+     "also": []
+    },
+    {
+     "item": "3주 전부터 아침에 심해지는 두통",
+     "why": "영상 검사의 이유 — 답에 영향 없음",
+     "also": []
+    },
+    {
+     "item": "안저 검사에서 유두부종은 없다",
+     "why": "두개내압 상승 단서가 없다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "단면은 중간뇌 높이다. 그 배쪽 다리사이오목으로 나오는 동안신경이 손상되면 눈꺼풀 처짐과 동공 확대가 생긴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 단면에서 뇌줄기 등쪽 면으로 나오는 신경을 물었다면 아래를 볼 때의 수직 복시가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0216.png",
+   "caption": "뇌 MRI 축상 영상, 표준 표시 방향(환자 오른쪽이 보는 사람 왼쪽) (The Cancer Imaging Archive, CC BY 4.0 — DICOM 변환, 크롭 없음)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA UPENN-GBM (University of Pennsylvania glioblastoma, multiparametric MRI)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.208276335479948098215085439771748436872",
+   "asset_id": "TCIA-UPENN_GBM-96078349338169",
+   "text": "The Cancer Imaging Archive (CC BY 4.0) · series …48436872"
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0215",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "부인과 — 자궁경부 선별 뒤 생검 조직의 상피",
+  "type": "부인과 — 자궁경부 선별 뒤 생검 조직의 상피",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-03",
+  "vignette": "40세 여자가 자궁경부암 선별검사 결과를 듣기 위해 산부인과에 왔다. 3년 전 자궁경부 세포검사는 정상이었다. 이번 세포검사에서 비정형 편평세포(ASC-US)가 나왔고 고위험 인유두종바이러스 16형이 양성이었다. 성교 후 출혈이나 이상 질 분비물은 없다. 흡연하지 않는다. 질확대경검사에서 편평원주접합부 전체가 보였고 아세트산을 바른 뒤 하얗게 변하는 부위는 없었다. 질확대경 아래에서 자궁경부 생검을 하였고 이형성은 없었다. 생검 조직에 사이토케라틴 5에 대한 면역조직화학염색을 하였고 결과는 그림과 같다.",
+  "question": "갈색으로 염색된 상피로 가장 적절한 것은?",
+  "options": [
+   "단층원주상피",
+   "이행상피",
+   "거짓중층섬모원주상피",
+   "비각화 중층편평상피",
+   "각화 중층편평상피"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 그림에서 갈색으로 염색된 상피는 여러 층으로 두껍고, 바닥의 작은 기저세포에서 위로 갈수록 세포가 커지고 맑아진 뒤(글리코겐) 표면에서 납작해진다. 납작한 표층 세포에도 핵이 남아 있고 핵이 없는 각질층이 없다 — 비각화 중층편평상피, 곧 외자궁경부 상피다. 아래 간질은 염색되지 않는다.\n- 원리: <b>왜 「비각화」인가</b>: 중층편평상피는 기저층에서 분열한 세포가 위로 밀려 올라가며 분화한다. 피부(각화)에서는 과립층에서 케라토히알린 과립이 생기고 세포가 핵과 소기관을 잃어 <b>핵 없는 각질층</b>이 된다. 자궁경부·질·식도처럼 늘 젖어 있는 표면은 이 마지막 단계를 거치지 않아 <b>표층 세포가 납작해져도 핵이 남는다</b>.<br> <b>왜 중간층이 맑은가</b>: 에스트로겐 영향 아래 외자궁경부 중간층 세포는 글리코겐을 쌓아 세포질이 맑게 보인다. 루골 용액(요오드)으로 갈색이 되는 것도 이 글리코겐 때문이고, 이형성 상피는 글리코겐이 적어 염색되지 않는다.<br> <b>임상 연결</b>: 외자궁경부의 편평상피와 내자궁경관의 원주상피가 만나는 편평원주접합부에서 원주상피가 편평상피로 바뀌는 화생이 일어나며(변형대), HPV 가 미성숙 화생 세포의 기저층에 감염해 대부분의 자궁경부 편평상피 병변이 여기서 생긴다.\n- 비교: <table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비각화 중층편평(정답)</th><th>각화 중층편평(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표층 세포의 핵</td><td><b>남아 있다</b></td><td>없다 — 핵 없는 각질층</td></tr> <tr><td>과립층</td><td>없음</td><td>있음(케라토히알린 과립)</td></tr> <tr><td>대표 부위</td><td>외자궁경부·질·식도·구강 점막</td><td>피부·외음부 피부</td></tr> <tr><td>중간층</td><td>글리코겐으로 맑음(에스트로겐)</td><td>가시세포층</td></tr> </tbody></table> 층이 여러 개라는 것만으로는 둘을 가를 수 없다 — 맨 위 세포에 핵이 있는지가 경계다. 자궁탈출로 오래 밖에 노출된 경부는 각화될 수 있다.\n- 오답 이유:\n  - ① 단층원주상피는 한 층의 키 큰 점액 세포로 내자궁경관을 덮는다. 그림의 염색 상피가 한 층의 원주세포였다면, 곧 내자궁경관 생검이었다면 정답이 된다.\n  - ② 이행상피는 방광·요관을 덮고 표층에 큰 우산세포가 있다. 생검이 방광에서 나왔고 표층에 둥글고 큰 세포가 덮여 있었다면 정답이 된다.\n  - ③ 거짓중층섬모원주상피는 기관·기관지를 덮으며 모든 세포가 바닥막에 닿고 표면에 섬모가 있다. 기관지 생검이었다면 정답이 된다.\n  - ⑤ 각화 중층편평상피는 표면에 핵 없는 각질층과 그 아래 과립층이 있다. 생검이 외음부 피부나 오래 탈출해 마른 자궁경부에서 나왔다면 정답이 된다.\n- 함정: 층이 많고 표면이 납작하다고 각화로 읽지 않는다 — 표층 세포에 핵이 남아 있다.\n- 학습목표: 자궁경부 생검 조직에서 중층편평상피의 층 구조와 표층 핵 유무로 비각화 중층편평상피를 알아본다\n- 근거·출처: Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. 23 Female reproductive system — cervix · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 22 — cervix, transformation zone · Human Protein Atlas, KRT5 / cervix, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-04): 중층편평상피 전층 강한 염색, 중간층 맑음, 표층 세포 핵 유지, 간질 음성\n\n## 출처\n- Human Protein Atlas, KRT5 / Cervix (CC BY 4.0), https://images.proteinatlas.org/27/155113_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 갈색으로 염색된 상피는 여러 층으로 두껍고, 바닥의 작은 기저세포에서 위로 갈수록 세포가 커지고 맑아진 뒤(글리코겐) 표면에서 납작해진다. 납작한 표층 세포에도 핵이 남아 있고 핵이 없는 각질층이 없다 — 비각화 중층편평상피, 곧 외자궁경부 상피다. 아래 간질은 염색되지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「비각화」인가</b>: 중층편평상피는 기저층에서 분열한 세포가 위로 밀려 올라가며 분화한다. 피부(각화)에서는 과립층에서 케라토히알린 과립이 생기고 세포가 핵과 소기관을 잃어 <b>핵 없는 각질층</b>이 된다. 자궁경부·질·식도처럼 늘 젖어 있는 표면은 이 마지막 단계를 거치지 않아 <b>표층 세포가 납작해져도 핵이 남는다</b>.<br> <b>왜 중간층이 맑은가</b>: 에스트로겐 영향 아래 외자궁경부 중간층 세포는 글리코겐을 쌓아 세포질이 맑게 보인다. 루골 용액(요오드)으로 갈색이 되는 것도 이 글리코겐 때문이고, 이형성 상피는 글리코겐이 적어 염색되지 않는다.<br> <b>임상 연결</b>: 외자궁경부의 편평상피와 내자궁경관의 원주상피가 만나는 편평원주접합부에서 원주상피가 편평상피로 바뀌는 화생이 일어나며(변형대), HPV 가 미성숙 화생 세포의 기저층에 감염해 대부분의 자궁경부 편평상피 병변이 여기서 생긴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">항목</th><th style=\"width:38%\">비각화 중층편평(정답)</th><th>각화 중층편평(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표층 세포의 핵</td><td><b>남아 있다</b></td><td>없다 — 핵 없는 각질층</td></tr> <tr><td>과립층</td><td>없음</td><td>있음(케라토히알린 과립)</td></tr> <tr><td>대표 부위</td><td>외자궁경부·질·식도·구강 점막</td><td>피부·외음부 피부</td></tr> <tr><td>중간층</td><td>글리코겐으로 맑음(에스트로겐)</td><td>가시세포층</td></tr> </tbody></table> 층이 여러 개라는 것만으로는 둘을 가를 수 없다 — 맨 위 세포에 핵이 있는지가 경계다. 자궁탈출로 오래 밖에 노출된 경부는 각화될 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 단층원주상피는 한 층의 키 큰 점액 세포로 내자궁경관을 덮는다. 그림의 염색 상피가 한 층의 원주세포였다면, 곧 내자궁경관 생검이었다면 정답이 된다.\n② 이행상피는 방광·요관을 덮고 표층에 큰 우산세포가 있다. 생검이 방광에서 나왔고 표층에 둥글고 큰 세포가 덮여 있었다면 정답이 된다.\n③ 거짓중층섬모원주상피는 기관·기관지를 덮으며 모든 세포가 바닥막에 닿고 표면에 섬모가 있다. 기관지 생검이었다면 정답이 된다.\n⑤ 각화 중층편평상피는 표면에 핵 없는 각질층과 그 아래 과립층이 있다. 생검이 외음부 피부나 오래 탈출해 마른 자궁경부에서 나왔다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "층이 많고 표면이 납작하다고 각화로 읽지 않는다 — 표층 세포에 핵이 남아 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁경부 생검 조직에서 중층편평상피의 층 구조와 표층 핵 유무로 비각화 중층편평상피를 알아본다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. 23 Female reproductive system — cervix · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 22 — cervix, transformation zone · Human Protein Atlas, KRT5 / cervix, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-04): 중층편평상피 전층 강한 염색, 중간층 맑음, 표층 세포 핵 유지, 간질 음성 ## 출처 Human Protein Atlas, KRT5 / Cervix (CC BY 4.0), https://images.proteinatlas.org/27/155113_B_9_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "여러 층의 편평상피인데 표층 세포에 핵이 남고 각질층이 없으므로 비각화 중층편평상피다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "각화 상피라면 표면에 핵 없는 각질층이 있어야 하지만 그림의 표층 세포에는 핵이 남아 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 여러 층, 바닥은 작은 세포, 위로 갈수록 맑고 납작 → 중층편평상피",
+    "영상: 표층 세포 핵 유지, 각질층 없음 → 비각화"
+   ],
+   "key": [
+    {
+     "item": "영상: 여러 층의 상피가 전층에서 갈색으로 염색됨",
+     "why": "중층상피 — 단층원주상피를 배제하는 쪽으로 기운다",
+     "also": []
+    },
+    {
+     "item": "영상: 표층 세포가 납작하지만 핵이 남아 있음",
+     "why": "비각화의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "이형성은 없었다",
+     "why": "상피 구조가 정상 분화를 따른다고 볼 근거",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "편평원주접합부 전체가 보였고",
+     "why": "질확대경 검사가 적절했다는 배경 — 상피 판독을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "고위험 인유두종바이러스 16형이 양성",
+     "why": "생검의 이유일 뿐 염색된 상피의 종류와 무관",
+     "also": []
+    }
+   ],
+   "summary": "염색된 상피는 여러 층의 편평상피이고 표층 세포에 핵이 남아 있다. 외자궁경부의 비각화 중층편평상피다.",
+   "switch": {
+    "choice": "A",
+    "condition": "생검이 내자궁경관에서 나와 한 층의 키 큰 점액 세포만 보였다면 단층원주상피가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0215.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000186081-KRT5/tissue/Cervix",
+   "asset_id": "HPA-KRT5_155113_B_9_3",
+   "text": "Human Protein Atlas, KRT5 / Cervix (CC BY 4.0), https://images.proteinatlas.org/27/155113_B_9_3.jpg"
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0214",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "내분비·대사 — 부신 피질 효소의 면역조직화학과 조절 호르몬",
+  "type": "내분비·대사 — 부신 피질 효소의 면역조직화학과 조절 호르몬",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "A 53-year-old man undergoes radical nephrectomy with en bloc removal of the ipsilateral adrenal gland for a 7-cm mass in the upper pole of the left kidney found on CT during evaluation of hematuria. He has hypertension treated with amlodipine. Before surgery, his blood pressure was 136/84 mm Hg, serum potassium was 4.3 mEq/L, and an overnight 1-mg dexamethasone suppression test showed a morning serum cortisol of 1.2 µg/dL. Pathologic examination shows clear cell renal cell carcinoma confined to the kidney; the adrenal gland is free of tumor. A section of the uninvolved adrenal cortex is stained by immunohistochemistry with an antibody against 11β-hydroxylase, the enzyme that converts 11-deoxycortisol to cortisol, and is shown.",
+  "question": "Secretion of the hormone made by the predominant stained cell population is most directly regulated by which of the following?",
+  "options": [
+   "Angiotensin II from the renin-angiotensin system",
+   "Acetylcholine from preganglionic sympathetic fibers",
+   "Luteinizing hormone from the anterior pituitary",
+   "Atrial natriuretic peptide from cardiac myocytes",
+   "Adrenocorticotropic hormone from the anterior pituitary"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The brown granular staining fills large cells with pale, lipid-laden (vacuolated) cytoplasm arranged in long radial cords — the zona fasciculata — and the more compact cells deeper in the cortex, while the thin layer of small cells just under the capsule (zona glomerulosa) stains weakly or not at all. 11β-Hydroxylase is the last enzyme of cortisol synthesis and is expressed in the fasciculata and reticularis. Cortisol secretion by the fasciculata is driven by ACTH through the MC2 receptor. The normal dexamethasone suppression and normal potassium confirm an intact axis and do not change this physiology.\n- 원리: <b>Why the zones differ</b>: the adrenal cortex is zoned by enzyme expression, not by different cell lineages alone. The <b>zona glomerulosa</b> (thin, subcapsular, small cells in round clusters) expresses <b>aldosterone synthase (CYP11B2)</b> and lacks 17α-hydroxylase; it responds to angiotensin II and plasma K⁺. The <b>zona fasciculata</b> (thickest, large lipid-rich \"spongiocytes\" in straight cords) expresses <b>11β-hydroxylase (CYP11B1)</b> and makes cortisol; the reticularis adds 17,20-lyase activity for androgens.<br> <b>Why ACTH</b>: ACTH binds MC2R on fasciculata cells → cAMP → protein kinase A → acute StAR-mediated cholesterol delivery to mitochondria and chronic induction of steroidogenic enzymes. The lipid droplets that make these cells look clear are the stored cholesterol esters they draw on.<br> <b>So</b> an antibody to the final cortisol enzyme highlights the cord-like clear cells, and the hormone those cells make is controlled by the hypothalamic–pituitary axis, which is why ACTH deficiency atrophies the fasciculata but spares aldosterone.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Zona fasciculata — ACTH (answer)</th><th>Zona glomerulosa — angiotensin II (closest rival)</th></tr></thead><tbody> <tr><td>Position · shape</td><td>Middle, thickest; long straight cords</td><td>Thin, just under the capsule; round clusters</td></tr> <tr><td>Cells</td><td>Large, pale lipid-laden cytoplasm</td><td>Small, little lipid</td></tr> <tr><td>Key terminal enzyme</td><td><b>CYP11B1</b> (11-deoxycortisol → cortisol)</td><td><b>CYP11B2</b> (→ aldosterone)</td></tr> <tr><td>Main regulator</td><td>ACTH (MC2R → cAMP)</td><td>Angiotensin II, plasma K⁺</td></tr> </tbody></table> CYP11B1 and CYP11B2 are 93 % identical, but each zone expresses only one. Read the stained layer first, then name its enzyme and its regulator — not the other way round.\n- 오답 이유:\n  - (A) Angiotensin II (with potassium) drives aldosterone secretion from the zona glomerulosa. It would be correct if the stain marked only the thin subcapsular layer of small cells, as an aldosterone synthase antibody does.\n  - (B) Preganglionic sympathetic acetylcholine stimulates chromaffin cells of the adrenal medulla to release epinephrine. It would be correct if the stained cells were basophilic medullary cells in the center of the gland.\n  - (C) Luteinizing hormone regulates steroid synthesis in testicular Leydig and ovarian theca cells. It would fit if the stain were 17α-hydroxylase in testis, but it does not control normal adrenal cortisol output.\n  - (D) Atrial natriuretic peptide inhibits renin and aldosterone release rather than stimulating any cortical zone. It would matter if the question asked what suppresses glomerulosa secretion during volume expansion.\n- 함정: Seeing \"adrenal\" plus \"hypertension\" and jumping to aldosterone — the stained cells are the lipid-laden cords, not the subcapsular layer.\n- 학습목표: 부신 피질의 띠별 조직 구조와 효소 분포를 읽고, 속상대가 만드는 코르티솔이 ACTH 로 조절됨을 연결한다\n- 근거·출처: Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. 15 The adrenal cortex (zonation and steroidogenic enzymes) · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. 21 Endocrine organs — adrenal gland · Human Protein Atlas, CYP11B1 / adrenal gland, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-04): 지질로 맑은 큰 세포의 긴 세포줄과 안쪽 치밀 세포에 과립상 갈색 염색, 피막 아래 얇은 소형 세포층은 약하거나 음성\n\n## 출처\n- Human Protein Atlas, CYP11B1 / Adrenal gland (CC BY 4.0), https://images.proteinatlas.org/49171/142127_B_5_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown granular staining fills large cells with pale, lipid-laden (vacuolated) cytoplasm arranged in long radial cords — the zona fasciculata — and the more compact cells deeper in the cortex, while the thin layer of small cells just under the capsule (zona glomerulosa) stains weakly or not at all. 11β-Hydroxylase is the last enzyme of cortisol synthesis and is expressed in the fasciculata and reticularis. Cortisol secretion by the fasciculata is driven by ACTH through the MC2 receptor. The normal dexamethasone suppression and normal potassium confirm an intact axis and do not change this physiology."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the zones differ</b>: the adrenal cortex is zoned by enzyme expression, not by different cell lineages alone. The <b>zona glomerulosa</b> (thin, subcapsular, small cells in round clusters) expresses <b>aldosterone synthase (CYP11B2)</b> and lacks 17α-hydroxylase; it responds to angiotensin II and plasma K⁺. The <b>zona fasciculata</b> (thickest, large lipid-rich \"spongiocytes\" in straight cords) expresses <b>11β-hydroxylase (CYP11B1)</b> and makes cortisol; the reticularis adds 17,20-lyase activity for androgens.<br> <b>Why ACTH</b>: ACTH binds MC2R on fasciculata cells → cAMP → protein kinase A → acute StAR-mediated cholesterol delivery to mitochondria and chronic induction of steroidogenic enzymes. The lipid droplets that make these cells look clear are the stored cholesterol esters they draw on.<br> <b>So</b> an antibody to the final cortisol enzyme highlights the cord-like clear cells, and the hormone those cells make is controlled by the hypothalamic–pituitary axis, which is why ACTH deficiency atrophies the fasciculata but spares aldosterone."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Zona fasciculata — ACTH (answer)</th><th>Zona glomerulosa — angiotensin II (closest rival)</th></tr></thead><tbody> <tr><td>Position · shape</td><td>Middle, thickest; long straight cords</td><td>Thin, just under the capsule; round clusters</td></tr> <tr><td>Cells</td><td>Large, pale lipid-laden cytoplasm</td><td>Small, little lipid</td></tr> <tr><td>Key terminal enzyme</td><td><b>CYP11B1</b> (11-deoxycortisol → cortisol)</td><td><b>CYP11B2</b> (→ aldosterone)</td></tr> <tr><td>Main regulator</td><td>ACTH (MC2R → cAMP)</td><td>Angiotensin II, plasma K⁺</td></tr> </tbody></table> CYP11B1 and CYP11B2 are 93 % identical, but each zone expresses only one. Read the stained layer first, then name its enzyme and its regulator — not the other way round."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Angiotensin II (with potassium) drives aldosterone secretion from the zona glomerulosa. It would be correct if the stain marked only the thin subcapsular layer of small cells, as an aldosterone synthase antibody does.\n(B) Preganglionic sympathetic acetylcholine stimulates chromaffin cells of the adrenal medulla to release epinephrine. It would be correct if the stained cells were basophilic medullary cells in the center of the gland.\n(C) Luteinizing hormone regulates steroid synthesis in testicular Leydig and ovarian theca cells. It would fit if the stain were 17α-hydroxylase in testis, but it does not control normal adrenal cortisol output.\n(D) Atrial natriuretic peptide inhibits renin and aldosterone release rather than stimulating any cortical zone. It would matter if the question asked what suppresses glomerulosa secretion during volume expansion."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing \"adrenal\" plus \"hypertension\" and jumping to aldosterone — the stained cells are the lipid-laden cords, not the subcapsular layer."
+   },
+   {
+    "k": "학습목표",
+    "v": "부신 피질의 띠별 조직 구조와 효소 분포를 읽고, 속상대가 만드는 코르티솔이 ACTH 로 조절됨을 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. 15 The adrenal cortex (zonation and steroidogenic enzymes) · Ross MH, Pawlina W. Histology: A Text and Atlas, 8th ed. Ch. 21 Endocrine organs — adrenal gland · Human Protein Atlas, CYP11B1 / adrenal gland, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-04): 지질로 맑은 큰 세포의 긴 세포줄과 안쪽 치밀 세포에 과립상 갈색 염색, 피막 아래 얇은 소형 세포층은 약하거나 음성 ## 출처 Human Protein Atlas, CYP11B1 / Adrenal gland (CC BY 4.0), https://images.proteinatlas.org/49171/142127_B_5_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염색된 세포가 지질로 맑은 긴 세포줄(속상대)이므로 그 세포가 만드는 코르티솔은 ACTH 가 조절한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "안지오텐신 II 가 조절하는 사구대는 피막 바로 아래 얇은 소형 세포층인데, 그 층은 염색이 약하다",
+   "steps": 2,
+   "chain": [
+    "영상: 지질로 맑은 큰 세포의 긴 세포줄이 강하게 염색, 피막 아래 얇은 층은 약함 → 속상대",
+    "속상대의 코르티솔 분비 → 뇌하수체 ACTH(MC2R) 조절"
+   ],
+   "key": [
+    {
+     "item": "영상: 지질로 맑은 큰 세포가 긴 세포줄로 배열된 영역의 과립상 갈색 염색",
+     "why": "속상대 — 코르티솔을 만드는 층",
+     "also": []
+    },
+    {
+     "item": "11β-hydroxylase, the enzyme that converts 11-deoxycortisol to cortisol",
+     "why": "코르티솔 합성 마지막 효소 — 속상대 표지",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 피막 아래 얇은 소형 세포층은 염색이 약함",
+     "why": "사구대(알도스테론) 세포가 주 염색 집단일 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "serum potassium was 4.3 mEq/L",
+     "why": "알도스테론 과잉의 단서가 없다는 배경일 뿐 조절 호르몬을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "morning serum cortisol of 1.2 µg/dL",
+     "why": "축이 정상이라는 배경 — 생리적 조절자는 그대로 ACTH",
+     "also": []
+    },
+    {
+     "item": "hypertension treated with amlodipine",
+     "why": "고혈압이 알도스테론을 떠올리게 하지만 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "염색된 세포는 지질이 많은 긴 세포줄, 곧 속상대다. 속상대의 코르티솔 분비는 ACTH 가 조절한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "알도스테론 합성효소(CYP11B2) 항체로 피막 아래 얇은 층만 염색되었다면 안지오텐신 II 가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0214.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000160882-CYP11B1/tissue/Adrenal+gland",
+   "asset_id": "HPA-CYP11B1_142127_B_5_5",
+   "text": "Human Protein Atlas, CYP11B1 / Adrenal gland (CC BY 4.0), https://images.proteinatlas.org/49171/142127_B_5_5.jpg"
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0225",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 약 중단자가 있는 무작위시험의 상대위험도",
+  "type": "예방의학·역학·보건통계 — 약 중단자가 있는 무작위시험의 상대위험도",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-03",
+  "vignette": "65세 남자가 심혈관질환 예방을 위해 새 지질강하제를 써야 하는지 묻는다. 의사는 이 약의 무작위 대조시험 결과를 검토하였다. 심혈관질환 위험이 높은 성인 2,000명을 약물군 1,000명과 위약군 1,000명으로 무작위 배정하고 5년 동안 추적하였다. 추적 중 약물군 200명이 부작용 등으로 약을 끊었고 위약군에서 약을 끊은 사람은 없었다. 5년 동안 주요 심혈관사건은 약물군 전체 80명(계속 복용한 800명 중 48명, 중단한 200명 중 32명), 위약군 100명에서 생겼다. 추적 실패는 없었다.",
+  "question": "무작위 배정의 장점을 유지하는 분석 원칙에 따른 약물군의 위약군 대비 상대위험도로 가장 적절한 것은?",
+  "options": [
+   "0.80",
+   "0.60",
+   "0.48",
+   "1.60",
+   "0.02"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 무작위 배정의 장점을 유지하는 원칙은 치료의향(intention-to-treat) 분석이다 — 약을 끊었든 아니든 배정된 군 그대로 분석한다. 약물군 위험 = 80/1,000 = 0.08, 위약군 위험 = 100/1,000 = 0.10, 상대위험도 = 0.08/0.10 = 0.80 이다.\n- 원리: <b>왜 배정군 그대로인가</b>: 무작위 배정은 측정했든 안 했든 모든 예후 인자를 두 군에 고르게 나눈다. 그런데 약을 끊는 사람은 무작위가 아니다 — 부작용이 생긴 사람, 더 아픈 사람, 건강 습관이 나쁜 사람이 더 많이 끊는다. 이 예에서 중단자의 사건률은 32/200 = 16 % 로 복용자 48/800 = 6 % 보다 훨씬 높다. 중단자를 빼면 남은 약물군은 처음부터 예후가 좋은 사람들로 채워진다.<br> <b>그래서</b> 순응자만 분석(per-protocol)하면 약물군 위험 48/800 = 0.06, 상대위험도 0.06/0.10 = 0.60 으로 효과가 부풀려진다 — 약 효과와 「순응하는 사람」 효과(건강 순응자 효과)가 섞인다.<br> <b>치료의향 분석의 의미</b>: 「이 약을 처방하기로 했을 때」의 실제 효과를 추정하며, 비순응으로 효과가 희석되어 보수적이다. 우월성 시험의 1차 분석이고, 비열등성 시험에서는 희석이 오히려 비열등 쪽으로 기울게 하므로 순응자 분석도 함께 본다.\n- 비교: <table><thead><tr><th style=\"width:24%\">분석</th><th style=\"width:38%\">치료의향 분석(정답)</th><th>순응자 분석(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약물군 분모·분자</td><td><b>80 / 1,000 = 0.08</b></td><td>48 / 800 = 0.06</td></tr> <tr><td>상대위험도</td><td><b>0.80</b></td><td>0.60</td></tr> <tr><td>무작위 배정</td><td>유지</td><td>깨짐 — 중단자가 예후가 나쁜 사람으로 치우침</td></tr> <tr><td>답하는 질문</td><td>처방 정책의 효과</td><td>끝까지 먹었을 때의 효과(편향 위험)</td></tr> </tbody></table> 같은 자료에서 상대위험감소는 치료의향 20 %, 순응자 40 % 다. 절대위험감소는 0.10 − 0.08 = 0.02(치료필요수 50)이다 — 보기의 0.02 는 상대위험도가 아니라 절대위험감소다.\n- 오답 이유:\n  - ② 0.60 은 끝까지 복용한 800명만 분석한 순응자 분석의 상대위험도(0.06/0.10)다. 「계속 복용한 사람에서의 효과」를 물었다면 정답이 되지만 무작위 배정의 장점은 깨진다.\n  - ③ 0.48 은 복용자 사건 48 을 분모 1,000 으로 나눈 값처럼 분자와 분모를 섞은 계산이다. 중단자의 사건을 빼고 분모는 그대로 둔 잘못된 분석에서 나온다.\n  - ④ 1.60 은 중단자 위험(32/200 = 0.16)을 위약군 위험 0.10 과 비교한 값이다. 「약을 끊은 사람의 위험이 위약군보다 얼마나 높은가」를 물었다면 정답이 된다.\n  - ⑤ 0.02 는 위약군 위험 0.10 에서 약물군 위험 0.08 을 뺀 절대위험감소다. 상대위험도가 아니라 절대위험감소나 치료필요수(1/0.02 = 50)를 물었다면 쓰는 값이다.\n- 함정: 「약을 먹은 사람만 보면 진짜 효과」라는 직관 — 끊은 사람이 예후가 나쁘면 효과가 부풀려진다.\n- 학습목표: 무작위시험에서 배정군 그대로 분석하는 치료의향 분석의 상대위험도를 계산하고, 순응자만 분석하면 왜 편향되는지 설명한다\n- 근거·출처: Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Ch. 10 Randomized trials: some further issues · Gupta SK. Intention-to-treat concept: a review. Perspect Clin Res 2011;2:109",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "무작위 배정의 장점을 유지하는 원칙은 치료의향(intention-to-treat) 분석이다 — 약을 끊었든 아니든 배정된 군 그대로 분석한다. 약물군 위험 = 80/1,000 = 0.08, 위약군 위험 = 100/1,000 = 0.10, 상대위험도 = 0.08/0.10 = 0.80 이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 배정군 그대로인가</b>: 무작위 배정은 측정했든 안 했든 모든 예후 인자를 두 군에 고르게 나눈다. 그런데 약을 끊는 사람은 무작위가 아니다 — 부작용이 생긴 사람, 더 아픈 사람, 건강 습관이 나쁜 사람이 더 많이 끊는다. 이 예에서 중단자의 사건률은 32/200 = 16 % 로 복용자 48/800 = 6 % 보다 훨씬 높다. 중단자를 빼면 남은 약물군은 처음부터 예후가 좋은 사람들로 채워진다.<br> <b>그래서</b> 순응자만 분석(per-protocol)하면 약물군 위험 48/800 = 0.06, 상대위험도 0.06/0.10 = 0.60 으로 효과가 부풀려진다 — 약 효과와 「순응하는 사람」 효과(건강 순응자 효과)가 섞인다.<br> <b>치료의향 분석의 의미</b>: 「이 약을 처방하기로 했을 때」의 실제 효과를 추정하며, 비순응으로 효과가 희석되어 보수적이다. 우월성 시험의 1차 분석이고, 비열등성 시험에서는 희석이 오히려 비열등 쪽으로 기울게 하므로 순응자 분석도 함께 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">분석</th><th style=\"width:38%\">치료의향 분석(정답)</th><th>순응자 분석(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약물군 분모·분자</td><td><b>80 / 1,000 = 0.08</b></td><td>48 / 800 = 0.06</td></tr> <tr><td>상대위험도</td><td><b>0.80</b></td><td>0.60</td></tr> <tr><td>무작위 배정</td><td>유지</td><td>깨짐 — 중단자가 예후가 나쁜 사람으로 치우침</td></tr> <tr><td>답하는 질문</td><td>처방 정책의 효과</td><td>끝까지 먹었을 때의 효과(편향 위험)</td></tr> </tbody></table> 같은 자료에서 상대위험감소는 치료의향 20 %, 순응자 40 % 다. 절대위험감소는 0.10 − 0.08 = 0.02(치료필요수 50)이다 — 보기의 0.02 는 상대위험도가 아니라 절대위험감소다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 0.60 은 끝까지 복용한 800명만 분석한 순응자 분석의 상대위험도(0.06/0.10)다. 「계속 복용한 사람에서의 효과」를 물었다면 정답이 되지만 무작위 배정의 장점은 깨진다.\n③ 0.48 은 복용자 사건 48 을 분모 1,000 으로 나눈 값처럼 분자와 분모를 섞은 계산이다. 중단자의 사건을 빼고 분모는 그대로 둔 잘못된 분석에서 나온다.\n④ 1.60 은 중단자 위험(32/200 = 0.16)을 위약군 위험 0.10 과 비교한 값이다. 「약을 끊은 사람의 위험이 위약군보다 얼마나 높은가」를 물었다면 정답이 된다.\n⑤ 0.02 는 위약군 위험 0.10 에서 약물군 위험 0.08 을 뺀 절대위험감소다. 상대위험도가 아니라 절대위험감소나 치료필요수(1/0.02 = 50)를 물었다면 쓰는 값이다."
+   },
+   {
+    "k": "함정",
+    "v": "「약을 먹은 사람만 보면 진짜 효과」라는 직관 — 끊은 사람이 예후가 나쁘면 효과가 부풀려진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무작위시험에서 배정군 그대로 분석하는 치료의향 분석의 상대위험도를 계산하고, 순응자만 분석하면 왜 편향되는지 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Ch. 10 Randomized trials: some further issues · Gupta SK. Intention-to-treat concept: a review. Perspect Clin Res 2011;2:109"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "무작위 배정을 유지하는 치료의향 분석은 중단자도 배정군에 넣어 약물군 80/1,000 대 위약군 100/1,000 으로 상대위험도 0.80 이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "0.60 은 중단자를 뺀 순응자 분석이라 예후가 나쁜 중단자가 빠져 효과가 부풀려진다",
+   "steps": 3,
+   "chain": [
+    "「무작위 배정의 장점을 유지하는 분석」 → 치료의향 분석",
+    "약물군 80/1,000 = 0.08, 위약군 100/1,000 = 0.10",
+    "상대위험도 = 0.08/0.10 = 0.80"
+   ],
+   "key": [
+    {
+     "item": "약물군 전체 80명",
+     "why": "치료의향 분석의 분자",
+     "also": []
+    },
+    {
+     "item": "위약군 1,000명",
+     "why": "비교군 분모",
+     "also": []
+    },
+    {
+     "item": "무작위 배정의 장점을 유지하는 분석 원칙",
+     "why": "치료의향 분석을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "계속 복용한 800명 중 48명",
+     "why": "순응자 분석으로 끌어가는 숫자 — 쓰면 0.60",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "중단한 200명 중 32명",
+     "why": "중단자의 예후가 나쁘다는 것 — 순응자 분석이 편향되는 이유",
+     "also": []
+    },
+    {
+     "item": "추적 실패는 없었다",
+     "why": "결측 처리 문제가 없어 계산이 단순하다",
+     "also": []
+    }
+   ],
+   "summary": "무작위 배정을 유지하려면 배정군 그대로 분석한다. 약물군 80/1,000 대 위약군 100/1,000 으로 상대위험도는 0.80 이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "끝까지 약을 먹은 사람에서의 효과(순응자 분석)를 물었다면 0.60 이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0224",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "감염 — 항암치료 중 발열성 호중구감소증의 경험적 항생제",
+  "type": "감염 — 항암치료 중 발열성 호중구감소증의 경험적 항생제",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "A 58-year-old man is admitted because of fever 9 days after starting induction chemotherapy for acute myeloid leukemia. He has a tunneled central venous catheter in the right internal jugular vein. He has no cough, abdominal pain, diarrhea, or dysuria. He has no known drug allergies and has never been colonized with resistant organisms. His temperature is 38.6°C, pulse is 102/min, respirations are 18/min, and blood pressure is 124/76 mm Hg. Oxygen saturation is 97% on room air. The catheter exit site and tunnel are not red or tender. The oral mucosa shows mild mucositis without ulcers. Lungs are clear. There is no skin rash or soft-tissue tenderness. Leukocyte count is 300/mm3 with an absolute neutrophil count of 50/mm3. Chest x-ray is normal. Blood cultures are drawn from the catheter and a peripheral vein.",
+  "question": "Which of the following is the most appropriate initial antimicrobial therapy?",
+  "options": [
+   "Intravenous cefepime",
+   "Intravenous cefepime plus vancomycin",
+   "Oral ciprofloxacin plus amoxicillin-clavulanate as an outpatient",
+   "Intravenous meropenem plus liposomal amphotericin B",
+   "Intravenous ceftriaxone"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Fever with an absolute neutrophil count below 500 (here 50) during AML induction is high-risk febrile neutropenia (expected prolonged, profound neutropenia), requiring admission and empirical intravenous monotherapy with an antipseudomonal β-lactam such as cefepime within an hour. Vancomycin is added only for specific indications — hemodynamic instability, suspected catheter-related infection, skin or soft-tissue infection, pneumonia, MRSA colonization, or severe mucositis on fluoroquinolone prophylaxis — none of which is present.\n- 원리: <b>Why gram-negative coverage first</b>: neutropenic patients cannot contain bacteria at mucosal barriers, and gram-negative bacilli — especially <i>Pseudomonas aeruginosa</i> — can kill within hours once bacteremic. The first drug must therefore cover <i>Pseudomonas</i>: cefepime, piperacillin-tazobactam, or a carbapenem as monotherapy.<br> <b>Why not routine vancomycin</b>: gram-positive organisms (coagulase-negative staphylococci, viridans streptococci) are now the most common isolates, but most are indolent, and randomized trials showed no survival benefit from adding vancomycin empirically — only more toxicity and resistance. So vancomycin is reserved for situations where a virulent gram-positive is likely or delay would be dangerous.<br> <b>Why not antifungal now</b>: empirical antifungals are added if fever persists after 4–7 days of broad antibacterials in high-risk patients, because invasive molds emerge later in prolonged neutropenia.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Cefepime alone (answer)</th><th>Cefepime + vancomycin (closest rival)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td><b>Stable</b> (BP 124/76)</td><td>Hypotension or septic shock</td></tr> <tr><td>Catheter</td><td>Exit site and tunnel clean</td><td>Redness, tenderness, or purulence</td></tr> <tr><td>Other triggers</td><td>None</td><td>Pneumonia, skin infection, MRSA colonization, gram-positive in blood culture</td></tr> </tbody></table> Having a catheter is not an indication by itself — suspected catheter infection is. Re-evaluate daily and add vancomycin if any trigger appears.\n- 오답 이유:\n  - (B) Adding vancomycin is right when there is shock, suspected catheter infection, skin or soft-tissue infection, pneumonia, or MRSA colonization. It would be correct if the tunnel were red and tender or his blood pressure were low.\n  - (C) Oral outpatient therapy suits low-risk febrile neutropenia (MASCC ≥ 21, solid tumor, neutropenia expected < 7 days). It fits a well-appearing breast cancer patient after outpatient chemotherapy, not AML induction.\n  - (D) Meropenem with amphotericin is for persistent fever after 4–7 days of antibacterials or suspected invasive fungal infection. It would fit if fever continued on day 6 with new nodules on chest CT.\n  - (E) Ceftriaxone does not cover Pseudomonas aeruginosa, the gram-negative most feared in neutropenia. It would suit community-acquired pneumonia or meningitis in an immunocompetent patient.\n- 함정: A central line in place tempts vancomycin — but a clean exit site and tunnel and stable vital signs do not meet the indications.\n- 학습목표: 고위험 발열성 호중구감소증은 녹농균을 덮는 β-락탐 단독으로 시작하고, 반코마이신은 정해진 적응증이 있을 때만 더한다\n- 근거·출처: Freifeld AG, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by IDSA. Clin Infect Dis 2011;52:e56 · Taplitz RA, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA guideline update. J Clin Oncol 2018;36:1443",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever with an absolute neutrophil count below 500 (here 50) during AML induction is high-risk febrile neutropenia (expected prolonged, profound neutropenia), requiring admission and empirical intravenous monotherapy with an antipseudomonal β-lactam such as cefepime within an hour. Vancomycin is added only for specific indications — hemodynamic instability, suspected catheter-related infection, skin or soft-tissue infection, pneumonia, MRSA colonization, or severe mucositis on fluoroquinolone prophylaxis — none of which is present."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why gram-negative coverage first</b>: neutropenic patients cannot contain bacteria at mucosal barriers, and gram-negative bacilli — especially <i>Pseudomonas aeruginosa</i> — can kill within hours once bacteremic. The first drug must therefore cover <i>Pseudomonas</i>: cefepime, piperacillin-tazobactam, or a carbapenem as monotherapy.<br> <b>Why not routine vancomycin</b>: gram-positive organisms (coagulase-negative staphylococci, viridans streptococci) are now the most common isolates, but most are indolent, and randomized trials showed no survival benefit from adding vancomycin empirically — only more toxicity and resistance. So vancomycin is reserved for situations where a virulent gram-positive is likely or delay would be dangerous.<br> <b>Why not antifungal now</b>: empirical antifungals are added if fever persists after 4–7 days of broad antibacterials in high-risk patients, because invasive molds emerge later in prolonged neutropenia."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Cefepime alone (answer)</th><th>Cefepime + vancomycin (closest rival)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td><b>Stable</b> (BP 124/76)</td><td>Hypotension or septic shock</td></tr> <tr><td>Catheter</td><td>Exit site and tunnel clean</td><td>Redness, tenderness, or purulence</td></tr> <tr><td>Other triggers</td><td>None</td><td>Pneumonia, skin infection, MRSA colonization, gram-positive in blood culture</td></tr> </tbody></table> Having a catheter is not an indication by itself — suspected catheter infection is. Re-evaluate daily and add vancomycin if any trigger appears."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Adding vancomycin is right when there is shock, suspected catheter infection, skin or soft-tissue infection, pneumonia, or MRSA colonization. It would be correct if the tunnel were red and tender or his blood pressure were low.\n(C) Oral outpatient therapy suits low-risk febrile neutropenia (MASCC ≥ 21, solid tumor, neutropenia expected < 7 days). It fits a well-appearing breast cancer patient after outpatient chemotherapy, not AML induction.\n(D) Meropenem with amphotericin is for persistent fever after 4–7 days of antibacterials or suspected invasive fungal infection. It would fit if fever continued on day 6 with new nodules on chest CT.\n(E) Ceftriaxone does not cover Pseudomonas aeruginosa, the gram-negative most feared in neutropenia. It would suit community-acquired pneumonia or meningitis in an immunocompetent patient."
+   },
+   {
+    "k": "함정",
+    "v": "A central line in place tempts vancomycin — but a clean exit site and tunnel and stable vital signs do not meet the indications."
+   },
+   {
+    "k": "학습목표",
+    "v": "고위험 발열성 호중구감소증은 녹농균을 덮는 β-락탐 단독으로 시작하고, 반코마이신은 정해진 적응증이 있을 때만 더한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Freifeld AG, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by IDSA. Clin Infect Dis 2011;52:e56 · Taplitz RA, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO and IDSA guideline update. J Clin Oncol 2018;36:1443"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "급성골수백혈병 유도 중 호중구 50 의 고위험 발열성 호중구감소증이므로 녹농균을 덮는 세페핌 단독으로 시작한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "반코마이신을 더할 적응증(쇼크·카테터 감염 의심·피부연부조직 감염·폐렴·MRSA 집락)이 하나도 없다",
+   "steps": 2,
+   "chain": [
+    "AML 유도 9일째 발열 + 절대호중구 50 → 고위험 발열성 호중구감소증 → 입원·정맥 항생제",
+    "혈역학 안정, 카테터 부위 깨끗, 폐·피부 감염 없음 → 반코마이신 적응증 없음 → 세페핌 단독"
+   ],
+   "key": [
+    {
+     "item": "absolute neutrophil count of 50/mm3",
+     "why": "심한 호중구감소 — 고위험",
+     "also": []
+    },
+    {
+     "item": "induction chemotherapy for acute myeloid leukemia",
+     "why": "오래 지속될 호중구감소 — 외래 경구 치료 대상이 아님",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Chest x-ray is normal",
+     "why": "폐렴 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "The catheter exit site and tunnel are not red or tender",
+     "why": "카테터 감염 의심이 없다 — 반코마이신 불필요",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 124/76 mm Hg",
+     "why": "혈역학 안정",
+     "also": []
+    },
+    {
+     "item": "never been colonized with resistant organisms",
+     "why": "MRSA·VRE 집락이 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "mild mucositis without ulcers",
+     "why": "경미한 점막염 — 단독으로는 반코마이신 적응증이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "AML 유도 중 호중구 50 의 고위험 발열성 호중구감소증이다. 반코마이신 적응증이 없어 세페핌 단독으로 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "카테터 터널이 붉고 아프거나 저혈압이 있었다면 반코마이신을 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0223",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "혈액·종양 — 직접항글로불린 양성 용혈빈혈의 첫 치료",
+  "type": "혈액·종양 — 직접항글로불린 양성 용혈빈혈의 첫 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-03",
+  "vignette": "34세 여자가 2주 동안 심해진 피로와 숨참으로 왔다. 소변이 짙어졌다. 3년 전 전신홍반루푸스를 진단받아 히드록시클로로퀸을 복용하고 있다. 혈압 116/70 mmHg, 맥박 108회/분, 체온 36.9°C 이다. 결막이 창백하고 공막에 황달이 있으며 비장이 왼쪽 갈비뼈 아래 2 cm 에서 만져진다. 혈액검사에서 혈색소 7.2 g/dL, 망상적혈구 12%, 백혈구 5,400/mm3, 혈소판 210,000/mm3, 간접빌리루빈 3.4 mg/dL, 젖산탈수소효소 690 U/L, 합토글로빈 측정 불가로 낮음이다. 말초혈액도말에서 구상적혈구가 많고 분열적혈구는 없다. 직접항글로불린검사는 항 IgG 양성, 항 C3d 음성이다. 가슴 통증과 신경 증상은 없다.",
+  "question": "가장 적절한 첫 치료는?",
+  "options": [
+   "엽산 단독 투여",
+   "프레드니솔론",
+   "비장절제술",
+   "리툭시맙",
+   "혈장교환술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 망상적혈구 증가, 간접빌리루빈·젖산탈수소효소 상승, 합토글로빈 감소는 용혈이고, 직접항글로불린검사 IgG 양성·C3d 음성과 구상적혈구, 비장 비대는 비장에서 IgG 피복 적혈구가 제거되는 온난자가면역 용혈빈혈이다(루푸스에 의한 2차). 첫 치료는 프레드니솔론 1 mg/kg/일이다.\n- 원리: <b>왜 구상적혈구가 생기나</b>: 온난 자가항체(대개 IgG)가 체온에서 적혈구에 붙으면, 비장 대식세포의 Fc 수용체가 항체가 붙은 막 일부를 뜯어낸다. 막이 줄면 부피 대비 표면적이 작아져 적혈구가 둥글게(구상) 되고, 변형이 어려워 비장을 통과하지 못하고 파괴된다 — <b>혈관 밖(비장) 용혈</b>이다.<br> <b>왜 스테로이드가 첫 치료인가</b>: 글루코코르티코이드는 대식세포 Fc 수용체 발현을 줄여 즉시 파괴를 늦추고, 시간이 지나며 자가항체 생산도 줄인다. 70~85 % 가 반응한다. 반응이 없거나 재발하면 리툭시맙이 2차이고, 비장절제는 그 뒤다.<br> <b>같이 기억할 것</b>: 수혈은 생명을 위협하는 빈혈이면 교차시험이 어려워도 미루지 않는다. 용혈 중에는 엽산 소비가 늘어 엽산을 보충하지만 그것만으로는 용혈이 멈추지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">온난 AIHA — 스테로이드(정답)</th><th>2차 치료 — 리툭시맙(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>첫 치료</b></td><td>스테로이드 무반응·의존·재발 시</td></tr> <tr><td>작용</td><td>대식세포 Fc 수용체 억제 → 빠른 효과(1~3주)</td><td>CD20 B세포 제거 → 효과 늦음(수주)</td></tr> <tr><td>예외</td><td>—</td><td>한랭응집소병은 스테로이드 반응이 나빠 첫 치료로 쓰기도 한다</td></tr> </tbody></table> 직접항글로불린검사가 C3d 만 양성(한랭응집소)이었다면 스테로이드가 잘 안 듣는다 — 항 IgG 양성이 스테로이드로 가는 근거다.\n- 오답 이유:\n  - ① 엽산은 용혈로 늘어난 소비를 보충하는 보조 치료다. 원인 치료가 이미 되어 있고 망상적혈구 반응을 유지하려는 상황이라면 함께 줄 수 있지만 단독 치료는 아니다.\n  - ③ 비장절제술은 IgG 피복 적혈구를 제거하는 장소를 없애지만 수술 위험과 감염 위험이 있어 3차에 가깝다. 스테로이드·리툭시맙에 모두 반응하지 않는 재발 환자였다면 고려된다.\n  - ④ 리툭시맙은 자가항체를 만드는 B세포를 줄이는 2차 치료다. 프레드니솔론 3주에도 혈색소가 오르지 않거나 감량 중 재발했다면 정답이 된다.\n  - ⑤ 혈장교환술은 혈전성 혈소판감소 자반증의 치료다. 분열적혈구·혈소판감소·신경 증상이 있고 직접항글로불린검사가 음성이었다면 정답이 된다.\n- 함정: 구상적혈구를 보고 유전구상적혈구증으로 가지 않는다 — 직접항글로불린검사 양성이 자가면역을 말한다.\n- 학습목표: 직접항글로불린검사 IgG 양성의 온난자가면역 용혈빈혈은 글루코코르티코이드로 첫 치료를 한다\n- 근거·출처: Jäger U, et al. Diagnosis and treatment of autoimmune hemolytic anemia in adults: recommendations from the First International Consensus Meeting. Blood Rev 2020;41:100648 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 100 Hemolytic anemias",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "망상적혈구 증가, 간접빌리루빈·젖산탈수소효소 상승, 합토글로빈 감소는 용혈이고, 직접항글로불린검사 IgG 양성·C3d 음성과 구상적혈구, 비장 비대는 비장에서 IgG 피복 적혈구가 제거되는 온난자가면역 용혈빈혈이다(루푸스에 의한 2차). 첫 치료는 프레드니솔론 1 mg/kg/일이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 구상적혈구가 생기나</b>: 온난 자가항체(대개 IgG)가 체온에서 적혈구에 붙으면, 비장 대식세포의 Fc 수용체가 항체가 붙은 막 일부를 뜯어낸다. 막이 줄면 부피 대비 표면적이 작아져 적혈구가 둥글게(구상) 되고, 변형이 어려워 비장을 통과하지 못하고 파괴된다 — <b>혈관 밖(비장) 용혈</b>이다.<br> <b>왜 스테로이드가 첫 치료인가</b>: 글루코코르티코이드는 대식세포 Fc 수용체 발현을 줄여 즉시 파괴를 늦추고, 시간이 지나며 자가항체 생산도 줄인다. 70~85 % 가 반응한다. 반응이 없거나 재발하면 리툭시맙이 2차이고, 비장절제는 그 뒤다.<br> <b>같이 기억할 것</b>: 수혈은 생명을 위협하는 빈혈이면 교차시험이 어려워도 미루지 않는다. 용혈 중에는 엽산 소비가 늘어 엽산을 보충하지만 그것만으로는 용혈이 멈추지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">항목</th><th style=\"width:39%\">온난 AIHA — 스테로이드(정답)</th><th>2차 치료 — 리툭시맙(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td><b>첫 치료</b></td><td>스테로이드 무반응·의존·재발 시</td></tr> <tr><td>작용</td><td>대식세포 Fc 수용체 억제 → 빠른 효과(1~3주)</td><td>CD20 B세포 제거 → 효과 늦음(수주)</td></tr> <tr><td>예외</td><td>—</td><td>한랭응집소병은 스테로이드 반응이 나빠 첫 치료로 쓰기도 한다</td></tr> </tbody></table> 직접항글로불린검사가 C3d 만 양성(한랭응집소)이었다면 스테로이드가 잘 안 듣는다 — 항 IgG 양성이 스테로이드로 가는 근거다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 엽산은 용혈로 늘어난 소비를 보충하는 보조 치료다. 원인 치료가 이미 되어 있고 망상적혈구 반응을 유지하려는 상황이라면 함께 줄 수 있지만 단독 치료는 아니다.\n③ 비장절제술은 IgG 피복 적혈구를 제거하는 장소를 없애지만 수술 위험과 감염 위험이 있어 3차에 가깝다. 스테로이드·리툭시맙에 모두 반응하지 않는 재발 환자였다면 고려된다.\n④ 리툭시맙은 자가항체를 만드는 B세포를 줄이는 2차 치료다. 프레드니솔론 3주에도 혈색소가 오르지 않거나 감량 중 재발했다면 정답이 된다.\n⑤ 혈장교환술은 혈전성 혈소판감소 자반증의 치료다. 분열적혈구·혈소판감소·신경 증상이 있고 직접항글로불린검사가 음성이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "구상적혈구를 보고 유전구상적혈구증으로 가지 않는다 — 직접항글로불린검사 양성이 자가면역을 말한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "직접항글로불린검사 IgG 양성의 온난자가면역 용혈빈혈은 글루코코르티코이드로 첫 치료를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Jäger U, et al. Diagnosis and treatment of autoimmune hemolytic anemia in adults: recommendations from the First International Consensus Meeting. Blood Rev 2020;41:100648 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 100 Hemolytic anemias"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "용혈 지표와 직접항글로불린검사 IgG 양성·구상적혈구로 온난 자가면역 용혈빈혈이므로 첫 치료는 프레드니솔론이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "리툭시맙은 스테로이드에 반응하지 않거나 재발할 때 쓰는 2차 치료다",
+   "steps": 2,
+   "chain": [
+    "망상적혈구 12%, 간접빌리루빈·LDH 상승, 합토글로빈 감소 → 용혈",
+    "직접항글로불린검사 IgG(+)·C3d(−), 구상적혈구 → 온난 AIHA → 프레드니솔론"
+   ],
+   "key": [
+    {
+     "item": "직접항글로불린검사는 항 IgG 양성, 항 C3d 음성",
+     "why": "온난 자가항체 — 스테로이드 반응형",
+     "also": []
+    },
+    {
+     "item": "망상적혈구 12%",
+     "why": "골수가 반응하는 용혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "구상적혈구가 많고 분열적혈구는 없다",
+     "why": "혈전성 미세혈관병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈소판 210,000/mm3",
+     "why": "TTP·에반스 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "가슴 통증과 신경 증상은 없다",
+     "why": "응급 수혈이 꼭 필요한 상태는 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "전신홍반루푸스를 진단받아",
+     "why": "2차 원인 — 첫 치료는 같다",
+     "also": []
+    }
+   ],
+   "summary": "용혈 지표와 직접항글로불린검사 IgG 양성, 구상적혈구로 온난 자가면역 용혈빈혈이다. 첫 치료는 프레드니솔론이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "프레드니솔론 3주에도 혈색소가 오르지 않거나 감량 중 재발했다면 리툭시맙을 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0222",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "소화기·간담췌 — 저혈압을 동반한 급성 담관염",
+  "type": "소화기·간담췌 — 저혈압을 동반한 급성 담관염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "A 74-year-old woman is brought to the emergency department because of fever, chills, and right upper quadrant pain for 1 day. She has had episodes of postprandial right upper quadrant pain for 2 years. Her temperature is 39.3°C, pulse is 118/min, respirations are 22/min, and blood pressure is 84/52 mm Hg. She is oriented but slow to respond. The sclerae are icteric. The abdomen is tender in the right upper quadrant without guarding or rebound. Laboratory studies show a leukocyte count of 19,800/mm3, total bilirubin 5.8 mg/dL, direct bilirubin 4.6 mg/dL, alkaline phosphatase 410 U/L, lipase 52 U/L (N < 60), and creatinine 1.4 mg/dL. Ultrasonography shows gallstones in the gallbladder and a common bile duct of 11 mm with an echogenic focus in its distal part; there is no gallbladder wall thickening or pericholecystic fluid. Intravenous fluids, piperacillin-tazobactam, and norepinephrine are started, and her blood pressure rises to 100/62 mm Hg.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Percutaneous cholecystostomy",
+   "Continue antibiotics and observe for 72 hours",
+   "Urgent endoscopic retrograde cholangiopancreatography",
+   "Magnetic resonance cholangiopancreatography",
+   "Emergency laparoscopic cholecystectomy"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Fever, jaundice, and right upper quadrant pain (Charcot triad) with hypotension and altered mentation (Reynolds pentad) and a dilated common bile duct containing a stone indicate severe acute cholangitis from choledocholithiasis. Antibiotics alone cannot clear pus under pressure in an obstructed duct; source control by biliary drainage is required. ERCP with sphincterotomy and stone extraction or stent placement should be done urgently once she is resuscitated. Cholecystectomy comes later, after the duct is cleared.\n- 원리: <b>Why drainage, not just antibiotics</b>: cholangitis is infection behind an obstruction. As intraductal pressure rises above about 25 cm H2O, bacteria and endotoxin reflux across hepatocyte tight junctions into hepatic veins and lymph (cholangiovenous reflux) — this is why patients become bacteremic and septic quickly. Antibiotics also penetrate poorly into obstructed bile. Relieving the pressure stops the reflux.<br> <b>Why ERCP first</b>: ERCP both confirms and treats — sphincterotomy, stone extraction, or a plastic stent if the patient is too unstable for full clearance. Tokyo Guidelines grade III (organ dysfunction: hypotension needing vasopressors, confusion, renal impairment) call for drainage as soon as the patient is stabilized.<br> <b>Ordering</b>: resuscitate and give antibiotics → drain the duct (ERCP; percutaneous transhepatic drainage if ERCP fails or anatomy prevents it) → cholecystectomy during the same admission once recovered to prevent recurrence.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Urgent ERCP (answer)</th><th>MRCP first (closest rival)</th></tr></thead><tbody> <tr><td>Purpose</td><td><b>Diagnose and drain</b></td><td>Diagnose only</td></tr> <tr><td>When best</td><td>High probability of CBD stone or cholangitis</td><td>Intermediate probability, stable patient</td></tr> <tr><td>This patient</td><td>Dilated CBD with stone seen, septic shock</td><td>Delays source control</td></tr> </tbody></table> MRCP earns its place when it is unclear whether a duct stone exists. When ultrasound already shows a dilated duct with a stone and the patient is in shock, the next study should be the one that also treats.\n- 오답 이유:\n  - (A) Percutaneous cholecystostomy drains the gallbladder for acute cholecystitis in a patient too sick for surgery. It would fit if the ultrasound showed a thick-walled gallbladder with pericholecystic fluid and a normal duct.\n  - (B) Antibiotics with observation suit mild (grade I) cholangitis that improves within 24 hours. It would fit a stable patient without organ dysfunction whose fever and pain resolve quickly; she has septic shock.\n  - (D) MRCP is a noninvasive way to look for duct stones when the probability is intermediate. It would be correct in a stable patient with mildly abnormal liver tests and a normal-caliber duct, but it delays drainage here.\n  - (E) Cholecystectomy removes the gallbladder but leaves the obstructing duct stone, and emergency surgery in septic shock is high risk. It fits acute cholecystitis without duct obstruction, or after the duct is cleared.\n- 함정: Blood pressure improved with fluids and norepinephrine — that is resuscitation, not source control.\n- 학습목표: 저혈압을 동반한 급성 담관염은 수액·항생제와 함께 24시간 안(가능하면 바로) ERCP 로 담관을 감압한다\n- 근거·출처: Miura F, et al. Tokyo Guidelines 2018: initial management of acute biliary infection and flowchart for acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:31 · Buxbaum JL, et al. ASGE guideline on the management of cholangitis. Gastrointest Endosc 2021;94:207",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Fever, jaundice, and right upper quadrant pain (Charcot triad) with hypotension and altered mentation (Reynolds pentad) and a dilated common bile duct containing a stone indicate severe acute cholangitis from choledocholithiasis. Antibiotics alone cannot clear pus under pressure in an obstructed duct; source control by biliary drainage is required. ERCP with sphincterotomy and stone extraction or stent placement should be done urgently once she is resuscitated. Cholecystectomy comes later, after the duct is cleared."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why drainage, not just antibiotics</b>: cholangitis is infection behind an obstruction. As intraductal pressure rises above about 25 cm H2O, bacteria and endotoxin reflux across hepatocyte tight junctions into hepatic veins and lymph (cholangiovenous reflux) — this is why patients become bacteremic and septic quickly. Antibiotics also penetrate poorly into obstructed bile. Relieving the pressure stops the reflux.<br> <b>Why ERCP first</b>: ERCP both confirms and treats — sphincterotomy, stone extraction, or a plastic stent if the patient is too unstable for full clearance. Tokyo Guidelines grade III (organ dysfunction: hypotension needing vasopressors, confusion, renal impairment) call for drainage as soon as the patient is stabilized.<br> <b>Ordering</b>: resuscitate and give antibiotics → drain the duct (ERCP; percutaneous transhepatic drainage if ERCP fails or anatomy prevents it) → cholecystectomy during the same admission once recovered to prevent recurrence."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Urgent ERCP (answer)</th><th>MRCP first (closest rival)</th></tr></thead><tbody> <tr><td>Purpose</td><td><b>Diagnose and drain</b></td><td>Diagnose only</td></tr> <tr><td>When best</td><td>High probability of CBD stone or cholangitis</td><td>Intermediate probability, stable patient</td></tr> <tr><td>This patient</td><td>Dilated CBD with stone seen, septic shock</td><td>Delays source control</td></tr> </tbody></table> MRCP earns its place when it is unclear whether a duct stone exists. When ultrasound already shows a dilated duct with a stone and the patient is in shock, the next study should be the one that also treats."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Percutaneous cholecystostomy drains the gallbladder for acute cholecystitis in a patient too sick for surgery. It would fit if the ultrasound showed a thick-walled gallbladder with pericholecystic fluid and a normal duct.\n(B) Antibiotics with observation suit mild (grade I) cholangitis that improves within 24 hours. It would fit a stable patient without organ dysfunction whose fever and pain resolve quickly; she has septic shock.\n(D) MRCP is a noninvasive way to look for duct stones when the probability is intermediate. It would be correct in a stable patient with mildly abnormal liver tests and a normal-caliber duct, but it delays drainage here.\n(E) Cholecystectomy removes the gallbladder but leaves the obstructing duct stone, and emergency surgery in septic shock is high risk. It fits acute cholecystitis without duct obstruction, or after the duct is cleared."
+   },
+   {
+    "k": "함정",
+    "v": "Blood pressure improved with fluids and norepinephrine — that is resuscitation, not source control."
+   },
+   {
+    "k": "학습목표",
+    "v": "저혈압을 동반한 급성 담관염은 수액·항생제와 함께 24시간 안(가능하면 바로) ERCP 로 담관을 감압한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Miura F, et al. Tokyo Guidelines 2018: initial management of acute biliary infection and flowchart for acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:31 · Buxbaum JL, et al. ASGE guideline on the management of cholangitis. Gastrointest Endosc 2021;94:207"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "샤르코 3징후에 저혈압·의식 둔화가 있고 담관이 확장되어 돌이 보이므로 중증 담관염 — 소생 뒤 바로 ERCP 로 감압한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "MRCP 는 진단만 하고, 이미 초음파로 돌과 확장 담관이 보여 진단이 필요 없다",
+   "steps": 2,
+   "chain": [
+    "발열·황달·우상복부 통증 + 저혈압·의식 둔화 + 확장 담관의 돌 → 중증(3등급) 급성 담관염",
+    "폐쇄 담관의 감염 → 항생제만으로 부족 → 긴급 ERCP 감압"
+   ],
+   "key": [
+    {
+     "item": "common bile duct of 11 mm with an echogenic focus in its distal part",
+     "why": "총담관결석으로 인한 폐쇄",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 84/52 mm Hg",
+     "why": "장기 부전 — 중증 담관염",
+     "also": []
+    },
+    {
+     "item": "total bilirubin 5.8 mg/dL",
+     "why": "담즙 정체",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no gallbladder wall thickening or pericholecystic fluid",
+     "why": "급성 담낭염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "lipase 52 U/L",
+     "why": "담석 췌장염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "her blood pressure rises to 100/62 mm Hg",
+     "why": "소생됨 — 이제 감압할 수 있다",
+     "also": []
+    },
+    {
+     "item": "creatinine 1.4 mg/dL",
+     "why": "신기능 저하 — 중증도 근거",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "샤르코 3징후에 쇼크와 의식 둔화, 확장 담관의 돌이 있어 중증 담관염이다. 소생 뒤 바로 ERCP 로 담관을 감압한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "안정된 환자에서 담관 확장이 없고 간기능 이상만 경미했다면 MRCP 로 먼저 돌을 확인한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0221",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "산과 — 천식·고혈압 산모의 자궁이완 산후출혈",
+  "type": "산과 — 천식·고혈압 산모의 자궁이완 산후출혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "32세 여자(G1P1)가 임신 39주에 질식분만을 한 직후 질 출혈이 계속된다. 임신 36주에 혈압 150/96 mmHg 와 단백뇨로 자간전증을 진단받아 황산마그네슘을 맞고 있다. 어릴 때부터 천식이 있어 흡입 스테로이드를 쓰며 1년 전 천식 발작으로 입원하였다. 태반은 완전히 만출되었고 결손이 없었다. 분만 뒤 30분 동안 출혈량은 약 1,200 mL 이다. 혈압 152/98 mmHg, 맥박 112회/분이다. 자궁은 배꼽 위에서 물렁하게 만져지며 양손 자궁마사지를 하면 잠시 단단해지다가 다시 물러진다. 질과 자궁경부에 열상은 없다. 정맥 옥시토신을 최대 속도로 주입하고 있다.",
+  "question": "다음에 투여할 자궁수축제로 가장 적절한 것은?",
+  "options": [
+   "카보프로스트",
+   "테르부탈린",
+   "니페디핀",
+   "미소프로스톨",
+   "메틸에르고노빈"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 태반이 온전히 나오고 열상이 없으며 자궁이 물렁하고 마사지에 잠시 단단해지는 것은 자궁이완에 의한 산후출혈이다. 옥시토신에도 반응이 부족하면 2차 자궁수축제를 더한다. 메틸에르고노빈은 혈관을 수축시켜 고혈압·자간전증에서 금기이고, 카보프로스트(PGF2α)는 기관지를 수축시켜 천식에서 금기다. 두 금기를 모두 피하는 미소프로스톨(PGE1)이 남는다.\n- 원리: <b>왜 금기가 갈리나</b>: 자궁수축제는 자궁 평활근만 골라 수축시키지 못한다. <b>메틸에르고노빈</b>(맥각 알칼로이드)은 α 아드레날린·세로토닌 수용체를 통해 혈관 평활근도 수축시켜 혈압을 올리므로 고혈압·자간전증·심장병에서 뇌출혈·경련 위험을 키운다. <b>카보프로스트</b>(15-메틸 PGF2α)는 FP 수용체로 기관지 평활근을 수축시켜 천식 환자에서 기관지연축을 일으킨다.<br> <b>미소프로스톨</b>(PGE1 유사체)은 EP 수용체를 통해 자궁을 수축시키고 기관지·혈압에 대한 영향이 적어 두 금기에 모두 걸리지 않는다. 대신 발열·떨림이 흔하고, 효과가 늦게 나타나 옥시토신보다 앞서 쓰지는 않는다.<br> <b>함께 할 일</b>: 트라넥삼산(진단 3시간 안), 수혈 준비, 약물에 반응하지 않으면 자궁내 풍선 압박 → 동맥 색전술·수술로 넘어간다.\n- 비교: <table><thead><tr><th style=\"width:22%\">약물</th><th style=\"width:26%\">수용체·작용</th><th style=\"width:26%\">금기</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>미소프로스톨</b>(정답)</td><td>PGE1 — EP 수용체</td><td>사실상 없음(발열·떨림)</td><td>사용 가능</td></tr> <tr><td>메틸에르고노빈</td><td>α·5-HT — 혈관 수축</td><td><b>고혈압·자간전증</b></td><td>혈압 152/98 — 금기</td></tr> <tr><td>카보프로스트</td><td>PGF2α — 기관지 수축</td><td><b>천식</b></td><td>입원한 천식 — 금기</td></tr> </tbody></table> 두 금기 중 하나만 있었다면 다른 하나가 정답이 될 수 있다 — 고혈압만 있으면 카보프로스트, 천식만 있으면 메틸에르고노빈도 쓸 수 있다.\n- 오답 이유:\n  - ① 카보프로스트는 효과가 좋은 PGF2α 제제지만 기관지를 수축시킨다. 천식이 없는 자간전증 산모였다면 정답이 될 수 있다.\n  - ② 테르부탈린은 β2 작용으로 자궁을 이완시켜 출혈을 악화한다. 자궁 과다수축이나 자궁 내번 정복, 조기진통을 늦출 때 쓰는 약이다.\n  - ③ 니페디핀은 칼슘통로를 막아 자궁을 이완시키며 혈압을 낮춘다. 분만 전 중증 고혈압 조절이나 조기진통 억제를 물었다면 쓸 수 있다.\n  - ⑤ 메틸에르고노빈은 강력한 2차 자궁수축제지만 혈관 수축으로 혈압을 올린다. 혈압이 정상이고 자간전증이 없는 천식 산모였다면 정답이 된다.\n- 함정: 혈압이 높아 카보프로스트로, 천식이 있어 메틸에르고노빈으로 가지 않는다 — 두 금기가 함께 있다.\n- 학습목표: 자궁이완 산후출혈에서 옥시토신 뒤 2차 자궁수축제를 고를 때 고혈압(메틸에르고노빈)과 천식(카보프로스트) 금기를 적용한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 42 Obstetrical hemorrhage",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "태반이 온전히 나오고 열상이 없으며 자궁이 물렁하고 마사지에 잠시 단단해지는 것은 자궁이완에 의한 산후출혈이다. 옥시토신에도 반응이 부족하면 2차 자궁수축제를 더한다. 메틸에르고노빈은 혈관을 수축시켜 고혈압·자간전증에서 금기이고, 카보프로스트(PGF2α)는 기관지를 수축시켜 천식에서 금기다. 두 금기를 모두 피하는 미소프로스톨(PGE1)이 남는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 금기가 갈리나</b>: 자궁수축제는 자궁 평활근만 골라 수축시키지 못한다. <b>메틸에르고노빈</b>(맥각 알칼로이드)은 α 아드레날린·세로토닌 수용체를 통해 혈관 평활근도 수축시켜 혈압을 올리므로 고혈압·자간전증·심장병에서 뇌출혈·경련 위험을 키운다. <b>카보프로스트</b>(15-메틸 PGF2α)는 FP 수용체로 기관지 평활근을 수축시켜 천식 환자에서 기관지연축을 일으킨다.<br> <b>미소프로스톨</b>(PGE1 유사체)은 EP 수용체를 통해 자궁을 수축시키고 기관지·혈압에 대한 영향이 적어 두 금기에 모두 걸리지 않는다. 대신 발열·떨림이 흔하고, 효과가 늦게 나타나 옥시토신보다 앞서 쓰지는 않는다.<br> <b>함께 할 일</b>: 트라넥삼산(진단 3시간 안), 수혈 준비, 약물에 반응하지 않으면 자궁내 풍선 압박 → 동맥 색전술·수술로 넘어간다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">약물</th><th style=\"width:26%\">수용체·작용</th><th style=\"width:26%\">금기</th><th>이 환자</th></tr></thead><tbody> <tr><td><b>미소프로스톨</b>(정답)</td><td>PGE1 — EP 수용체</td><td>사실상 없음(발열·떨림)</td><td>사용 가능</td></tr> <tr><td>메틸에르고노빈</td><td>α·5-HT — 혈관 수축</td><td><b>고혈압·자간전증</b></td><td>혈압 152/98 — 금기</td></tr> <tr><td>카보프로스트</td><td>PGF2α — 기관지 수축</td><td><b>천식</b></td><td>입원한 천식 — 금기</td></tr> </tbody></table> 두 금기 중 하나만 있었다면 다른 하나가 정답이 될 수 있다 — 고혈압만 있으면 카보프로스트, 천식만 있으면 메틸에르고노빈도 쓸 수 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 카보프로스트는 효과가 좋은 PGF2α 제제지만 기관지를 수축시킨다. 천식이 없는 자간전증 산모였다면 정답이 될 수 있다.\n② 테르부탈린은 β2 작용으로 자궁을 이완시켜 출혈을 악화한다. 자궁 과다수축이나 자궁 내번 정복, 조기진통을 늦출 때 쓰는 약이다.\n③ 니페디핀은 칼슘통로를 막아 자궁을 이완시키며 혈압을 낮춘다. 분만 전 중증 고혈압 조절이나 조기진통 억제를 물었다면 쓸 수 있다.\n⑤ 메틸에르고노빈은 강력한 2차 자궁수축제지만 혈관 수축으로 혈압을 올린다. 혈압이 정상이고 자간전증이 없는 천식 산모였다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈압이 높아 카보프로스트로, 천식이 있어 메틸에르고노빈으로 가지 않는다 — 두 금기가 함께 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁이완 산후출혈에서 옥시토신 뒤 2차 자궁수축제를 고를 때 고혈압(메틸에르고노빈)과 천식(카보프로스트) 금기를 적용한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168 · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 42 Obstetrical hemorrhage"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "자궁이완 산후출혈에 옥시토신이 부족하므로 2차 자궁수축제를 더하는데, 자간전증은 메틸에르고노빈을, 천식은 카보프로스트를 막아 미소프로스톨이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "카보프로스트는 PGF2α 로 기관지를 수축시켜 입원력 있는 천식에서 금기다",
+   "steps": 3,
+   "chain": [
+    "태반 완전 만출·열상 없음·물렁한 자궁 → 자궁이완",
+    "옥시토신 최대에도 출혈 → 2차 자궁수축제",
+    "자간전증(메틸에르고노빈 금기) + 천식(카보프로스트 금기) → 미소프로스톨"
+   ],
+   "key": [
+    {
+     "item": "자궁은 배꼽 위에서 물렁하게 만져지며",
+     "why": "자궁이완",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "태반은 완전히 만출되었고 결손이 없었다",
+     "why": "태반 잔류 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "질과 자궁경부에 열상은 없다",
+     "why": "산도 열상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "자간전증을 진단받아",
+     "why": "메틸에르고노빈 금기",
+     "also": []
+    },
+    {
+     "item": "1년 전 천식 발작으로 입원하였다",
+     "why": "카보프로스트 금기",
+     "also": []
+    },
+    {
+     "item": "혈압 152/98 mmHg",
+     "why": "메틸에르고노빈 금기를 확인",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "황산마그네슘을 맞고 있다",
+     "why": "자궁 이완에 조금 기여할 수 있지만 약 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "자궁이완 산후출혈에 옥시토신이 부족해 2차 약을 더한다. 자간전증과 천식이 메틸에르고노빈과 카보프로스트를 막아 미소프로스톨을 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "천식이 없었다면 고혈압 산모에게 카보프로스트를 쓸 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0220",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "호흡기 — 치료 중 졸린 천식 발작 환자의 혈액가스",
+  "type": "호흡기 — 치료 중 졸린 천식 발작 환자의 혈액가스",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-03",
+  "vignette": "A 24-year-old woman with asthma is brought to the emergency department because of shortness of breath that has worsened over 2 days after an upper respiratory infection. Over the past hour, she has received continuous nebulized albuterol, three doses of ipratropium, intravenous methylprednisolone, and 2 g of intravenous magnesium sulfate. She is now drowsy and responds only to loud voice. Her pulse is 132/min, respirations are 10/min, and blood pressure is 128/80 mm Hg. Oxygen saturation is 91% on 4 L/min of oxygen. She speaks only single words. Chest examination shows minimal air movement and faint wheezes. Arterial blood gas analysis on oxygen shows pH 7.24, PaCO2 58 mm Hg, and PaO2 66 mm Hg.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Increase supplemental oxygen to a nonrebreather mask",
+   "Subcutaneous epinephrine and reassessment in 1 hour",
+   "Endotracheal intubation and mechanical ventilation",
+   "Noninvasive positive-pressure ventilation by face mask",
+   "Intravenous aminophylline infusion"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: During a severe asthma attack, hyperventilation should drive PaCO2 below 40 mm Hg. A rising PaCO2 (58) with acidemia, a falling respiratory rate, drowsiness, and a nearly silent chest despite maximal bronchodilator, steroid, and magnesium therapy mean respiratory muscle fatigue and impending arrest. Depressed consciousness also contraindicates noninvasive ventilation. She needs intubation and controlled ventilation.\n- 원리: <b>Why a \"normal\" or high PaCO2 is ominous</b>: in acute asthma, airway obstruction triggers tachypnea and the PaCO2 falls (respiratory alkalosis). As obstruction worsens and the respiratory muscles tire, alveolar ventilation can no longer keep up; PaCO2 first returns to \"normal\" and then rises. A PaCO2 of 40 in an attack is already a warning, and hypercapnia with acidemia is near-arrest physiology.<br> <b>Why a quiet chest is worse</b>: wheeze needs airflow. Faint wheezes with minimal air movement mean too little flow to generate sound, not improvement. Slowing respirations and drowsiness are signs of exhaustion and CO2 narcosis.<br> <b>Why intubate rather than NIV</b>: NIV requires an awake, cooperative patient who protects her airway; drowsiness is a contraindication, and evidence for NIV in asthma is weak. After intubation, use low respiratory rates, long expiratory times, and permissive hypercapnia to avoid dynamic hyperinflation.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intubate (answer)</th><th>Trial of NIV (closest rival)</th></tr></thead><tbody> <tr><td>Consciousness</td><td><b>Drowsy, responds to loud voice</b></td><td>Awake, cooperative, protecting airway</td></tr> <tr><td>Trajectory</td><td>Worsening after maximal therapy, RR falling</td><td>Tiring but improving with treatment</td></tr> <tr><td>Gas</td><td>PaCO2 58, pH 7.24</td><td>Mild hypercapnia, pH ≥ 7.30</td></tr> </tbody></table> NIV is a tool for an alert patient who can cooperate; the falling respiratory rate and drowsiness here move her past that window.\n- 오답 이유:\n  - (A) More oxygen corrects hypoxemia but does nothing for hypoventilation and muscle fatigue. It would be right if the only problem were low saturation with low PaCO2 and an alert patient.\n  - (B) Epinephrine is an option for anaphylaxis or when inhaled therapy cannot be delivered. Waiting an hour would be reasonable only if she were improving; with rising PaCO2 and drowsiness, delay risks arrest.\n  - (D) Noninvasive ventilation may be tried in an alert, cooperative patient with moderate hypercapnia while treatment takes effect. It would be correct if she were fully awake, protecting her airway, and her pH were above about 7.30.\n  - (E) Aminophylline adds little bronchodilation to maximal beta-agonist therapy and causes arrhythmias and seizures. It might be considered only as an adjunct in a refractory but stable patient, not in impending arrest.\n- 함정: Faint wheezes and a slowing respiratory rate look like improvement — with a rising PaCO2 and drowsiness they mean exhaustion.\n- 학습목표: 중증 천식 발작에서 정상화되거나 오르는 PaCO2 와 의식 저하는 임박한 호흡부전이므로 기관삽관한다\n- 근거·출처: Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention, 2024 update — management of exacerbations in acute care settings · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 287 Asthma",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "During a severe asthma attack, hyperventilation should drive PaCO2 below 40 mm Hg. A rising PaCO2 (58) with acidemia, a falling respiratory rate, drowsiness, and a nearly silent chest despite maximal bronchodilator, steroid, and magnesium therapy mean respiratory muscle fatigue and impending arrest. Depressed consciousness also contraindicates noninvasive ventilation. She needs intubation and controlled ventilation."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a \"normal\" or high PaCO2 is ominous</b>: in acute asthma, airway obstruction triggers tachypnea and the PaCO2 falls (respiratory alkalosis). As obstruction worsens and the respiratory muscles tire, alveolar ventilation can no longer keep up; PaCO2 first returns to \"normal\" and then rises. A PaCO2 of 40 in an attack is already a warning, and hypercapnia with acidemia is near-arrest physiology.<br> <b>Why a quiet chest is worse</b>: wheeze needs airflow. Faint wheezes with minimal air movement mean too little flow to generate sound, not improvement. Slowing respirations and drowsiness are signs of exhaustion and CO2 narcosis.<br> <b>Why intubate rather than NIV</b>: NIV requires an awake, cooperative patient who protects her airway; drowsiness is a contraindication, and evidence for NIV in asthma is weak. After intubation, use low respiratory rates, long expiratory times, and permissive hypercapnia to avoid dynamic hyperinflation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intubate (answer)</th><th>Trial of NIV (closest rival)</th></tr></thead><tbody> <tr><td>Consciousness</td><td><b>Drowsy, responds to loud voice</b></td><td>Awake, cooperative, protecting airway</td></tr> <tr><td>Trajectory</td><td>Worsening after maximal therapy, RR falling</td><td>Tiring but improving with treatment</td></tr> <tr><td>Gas</td><td>PaCO2 58, pH 7.24</td><td>Mild hypercapnia, pH ≥ 7.30</td></tr> </tbody></table> NIV is a tool for an alert patient who can cooperate; the falling respiratory rate and drowsiness here move her past that window."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) More oxygen corrects hypoxemia but does nothing for hypoventilation and muscle fatigue. It would be right if the only problem were low saturation with low PaCO2 and an alert patient.\n(B) Epinephrine is an option for anaphylaxis or when inhaled therapy cannot be delivered. Waiting an hour would be reasonable only if she were improving; with rising PaCO2 and drowsiness, delay risks arrest.\n(D) Noninvasive ventilation may be tried in an alert, cooperative patient with moderate hypercapnia while treatment takes effect. It would be correct if she were fully awake, protecting her airway, and her pH were above about 7.30.\n(E) Aminophylline adds little bronchodilation to maximal beta-agonist therapy and causes arrhythmias and seizures. It might be considered only as an adjunct in a refractory but stable patient, not in impending arrest."
+   },
+   {
+    "k": "함정",
+    "v": "Faint wheezes and a slowing respiratory rate look like improvement — with a rising PaCO2 and drowsiness they mean exhaustion."
+   },
+   {
+    "k": "학습목표",
+    "v": "중증 천식 발작에서 정상화되거나 오르는 PaCO2 와 의식 저하는 임박한 호흡부전이므로 기관삽관한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention, 2024 update — management of exacerbations in acute care settings · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 287 Asthma"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "최대 치료에도 PaCO2 가 58 로 오르고 의식이 처지며 호흡수가 줄었으므로 임박한 호흡부전 — 기관삽관한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "비침습 환기는 깨어 있고 협조되는 환자에게만 쓴다 — 이 환자는 졸리다",
+   "steps": 2,
+   "chain": [
+    "천식 발작인데 PaCO2 58·pH 7.24, 호흡수 10회, 조용한 가슴 → 호흡근 피로·임박한 정지",
+    "의식 저하 → 비침습 환기 금기 → 기관삽관"
+   ],
+   "key": [
+    {
+     "item": "PaCO2 58 mm Hg",
+     "why": "발작 중 고탄산혈증 — 환기 실패",
+     "also": []
+    },
+    {
+     "item": "She is now drowsy and responds only to loud voice",
+     "why": "의식 저하 — 비침습 환기 금기",
+     "also": []
+    },
+    {
+     "item": "respirations are 10/min",
+     "why": "호흡수 감소 — 피로",
+     "also": []
+    },
+    {
+     "item": "minimal air movement and faint wheezes",
+     "why": "조용한 가슴 — 기류 감소",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "2 g of intravenous magnesium sulfate",
+     "why": "추가할 약물 치료가 이미 다 쓰였다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "blood pressure is 128/80 mm Hg",
+     "why": "혈압은 유지 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "최대 치료에도 PaCO2 가 오르고 의식이 처지며 가슴이 조용해졌다. 임박한 호흡부전이라 비침습 환기가 아닌 기관삽관이 필요하다.",
+   "switch": {
+    "choice": "D",
+    "condition": "환자가 깨어 있고 협조되며 pH 가 7.30 이상이었다면 비침습 환기를 시도해 볼 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0219",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "순환기 — 하벽 심근경색 뒤 갑자기 생긴 폐부종",
+  "type": "순환기 — 하벽 심근경색 뒤 갑자기 생긴 폐부종",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-03",
+  "vignette": "A 68-year-old man is admitted with an acute inferior ST-elevation myocardial infarction. Because of a 9-hour delay in presentation, he did not undergo primary percutaneous coronary intervention. On hospital day 3, he suddenly develops severe dyspnea while resting in bed. His temperature is 37.1°C, pulse is 118/min, respirations are 30/min, and blood pressure is 86/54 mm Hg. Oxygen saturation is 84% on 6 L/min of oxygen by nasal cannula. Jugular venous pressure is 8 cm H2O. Crackles are heard over both lung fields up to the scapulae. A new grade 2/6 holosystolic murmur is heard best at the apex and radiates to the axilla; no thrill is palpable. Chest x-ray shows bilateral alveolar edema. ECG shows evolving Q waves in leads II, III, and aVF without new ST elevation.",
+  "question": "Which of the following is the most likely cause of this patient's deterioration?",
+  "options": [
+   "Rupture of the posteromedial papillary muscle",
+   "Rupture of the interventricular septum",
+   "Rupture of the left ventricular free wall",
+   "Right ventricular infarction",
+   "Left ventricular aneurysm formation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Sudden pulmonary edema and hypotension 3 days after an inferior MI with a new apical holosystolic murmur radiating to the axilla indicate acute severe mitral regurgitation from papillary muscle rupture. The posteromedial papillary muscle has a single blood supply (usually the posterior descending artery from the right coronary artery), so it is the one that ruptures after inferior infarction. The murmur is often soft because the left ventricle and left atrium rapidly equalize pressure, and there is no thrill.\n- 원리: <b>Why the posteromedial muscle</b>: the anterolateral papillary muscle receives <b>dual supply</b> (LAD diagonals and LCx obtuse marginals), while the posteromedial muscle usually depends on a <b>single artery</b> — the posterior descending artery (right-dominant circulation). An inferior MI therefore can infarct the whole posteromedial muscle, and its necrotic tip tears at days 2–7, when the infarct is softest (macrophage removal of dead myocytes before collagen is laid down).<br> <b>Why the murmur is soft</b>: in acute regurgitation the small, noncompliant left atrium fills to near-ventricular pressure early in systole, so the gradient — and the murmur — collapse. Flash pulmonary edema with a soft or even absent murmur is the clue.<br> <b>Why it matters</b>: diagnosis is confirmed by echocardiography; treatment is afterload reduction (nitroprusside, intra-aortic balloon pump or other mechanical support) as a bridge to <b>emergency mitral surgery</b>.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Papillary muscle rupture (answer)</th><th>Ventricular septal rupture (closest rival)</th></tr></thead><tbody> <tr><td>Murmur location</td><td><b>Apex → axilla</b>, often soft</td><td>Left lower sternal border, harsh, loud</td></tr> <tr><td>Thrill</td><td>Usually absent</td><td><b>Present</b> in about half</td></tr> <tr><td>Dominant picture</td><td>Flash pulmonary edema</td><td>Biventricular failure, right-sided congestion</td></tr> <tr><td>Catheter clue</td><td>Large v waves in wedge tracing</td><td>O2 step-up from right atrium to right ventricle</td></tr> </tbody></table> Both occur 3–5 days after MI with sudden shock and a new holosystolic murmur. Where the murmur is loudest and whether there is a thrill separate them before the echo does.\n- 오답 이유:\n  - (B) Septal rupture gives a harsh holosystolic murmur at the left lower sternal border, often with a thrill and right-sided congestion. It would be correct if the murmur were loudest parasternally with a palpable thrill and an oxygen step-up.\n  - (C) Free-wall rupture causes hemopericardium and tamponade — hypotension, distended neck veins, and pulseless electrical activity, without a new murmur. It fits if he collapsed with high JVP, muffled heart sounds, and no murmur.\n  - (D) Right ventricular infarction accompanies inferior MI and causes hypotension with high JVP but clear lungs. It would fit if the lungs were clear, JVP elevated, and ST elevation present in V4R, rather than pulmonary edema.\n  - (E) A ventricular aneurysm develops over weeks and causes persistent ST elevation, heart failure, mural thrombus, or ventricular arrhythmias. It fits a patient weeks after anterior MI, not a sudden collapse on day 3.\n- 함정: A soft murmur does not mean a minor lesion — acute severe mitral regurgitation is often soft.\n- 학습목표: 하벽 심근경색 뒤 갑작스러운 폐부종과 새 심첨부 전수축기 잡음(진동 없음)을 후내측 유두근 파열로 진단한다\n- 근거·출처: O'Gara PT, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362 · Damluji AA, et al. Mechanical complications of acute myocardial infarction: a scientific statement from the AHA. Circulation 2021;144:e16",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Sudden pulmonary edema and hypotension 3 days after an inferior MI with a new apical holosystolic murmur radiating to the axilla indicate acute severe mitral regurgitation from papillary muscle rupture. The posteromedial papillary muscle has a single blood supply (usually the posterior descending artery from the right coronary artery), so it is the one that ruptures after inferior infarction. The murmur is often soft because the left ventricle and left atrium rapidly equalize pressure, and there is no thrill."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the posteromedial muscle</b>: the anterolateral papillary muscle receives <b>dual supply</b> (LAD diagonals and LCx obtuse marginals), while the posteromedial muscle usually depends on a <b>single artery</b> — the posterior descending artery (right-dominant circulation). An inferior MI therefore can infarct the whole posteromedial muscle, and its necrotic tip tears at days 2–7, when the infarct is softest (macrophage removal of dead myocytes before collagen is laid down).<br> <b>Why the murmur is soft</b>: in acute regurgitation the small, noncompliant left atrium fills to near-ventricular pressure early in systole, so the gradient — and the murmur — collapse. Flash pulmonary edema with a soft or even absent murmur is the clue.<br> <b>Why it matters</b>: diagnosis is confirmed by echocardiography; treatment is afterload reduction (nitroprusside, intra-aortic balloon pump or other mechanical support) as a bridge to <b>emergency mitral surgery</b>."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Papillary muscle rupture (answer)</th><th>Ventricular septal rupture (closest rival)</th></tr></thead><tbody> <tr><td>Murmur location</td><td><b>Apex → axilla</b>, often soft</td><td>Left lower sternal border, harsh, loud</td></tr> <tr><td>Thrill</td><td>Usually absent</td><td><b>Present</b> in about half</td></tr> <tr><td>Dominant picture</td><td>Flash pulmonary edema</td><td>Biventricular failure, right-sided congestion</td></tr> <tr><td>Catheter clue</td><td>Large v waves in wedge tracing</td><td>O2 step-up from right atrium to right ventricle</td></tr> </tbody></table> Both occur 3–5 days after MI with sudden shock and a new holosystolic murmur. Where the murmur is loudest and whether there is a thrill separate them before the echo does."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Septal rupture gives a harsh holosystolic murmur at the left lower sternal border, often with a thrill and right-sided congestion. It would be correct if the murmur were loudest parasternally with a palpable thrill and an oxygen step-up.\n(C) Free-wall rupture causes hemopericardium and tamponade — hypotension, distended neck veins, and pulseless electrical activity, without a new murmur. It fits if he collapsed with high JVP, muffled heart sounds, and no murmur.\n(D) Right ventricular infarction accompanies inferior MI and causes hypotension with high JVP but clear lungs. It would fit if the lungs were clear, JVP elevated, and ST elevation present in V4R, rather than pulmonary edema.\n(E) A ventricular aneurysm develops over weeks and causes persistent ST elevation, heart failure, mural thrombus, or ventricular arrhythmias. It fits a patient weeks after anterior MI, not a sudden collapse on day 3."
+   },
+   {
+    "k": "함정",
+    "v": "A soft murmur does not mean a minor lesion — acute severe mitral regurgitation is often soft."
+   },
+   {
+    "k": "학습목표",
+    "v": "하벽 심근경색 뒤 갑작스러운 폐부종과 새 심첨부 전수축기 잡음(진동 없음)을 후내측 유두근 파열로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "O'Gara PT, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362 · Damluji AA, et al. Mechanical complications of acute myocardial infarction: a scientific statement from the AHA. Circulation 2021;144:e16"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "하벽 경색 3일째 갑작스러운 폐부종·저혈압과 심첨부→겨드랑이로 퍼지는 새 전수축기 잡음(진동 없음)이므로 후내측 유두근 파열이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "사이막 파열은 왼쪽 아래 복장뼈 가장자리의 거친 잡음과 진동이 있고 오른쪽 울혈이 두드러진다",
+   "steps": 2,
+   "chain": [
+    "경색 3일 + 갑작스러운 폐부종·저혈압 + 새 전수축기 잡음 → 기계적 합병증",
+    "심첨부→겨드랑이, 진동 없음, 하벽 경색 → 후내측 유두근 파열(급성 승모판역류)"
+   ],
+   "key": [
+    {
+     "item": "acute inferior ST-elevation myocardial infarction",
+     "why": "단일 혈관(PDA)의 후내측 유두근",
+     "also": []
+    },
+    {
+     "item": "On hospital day 3",
+     "why": "기계적 합병증이 흔한 시기",
+     "also": []
+    },
+    {
+     "item": "heard best at the apex and radiates to the axilla",
+     "why": "승모판역류",
+     "also": []
+    },
+    {
+     "item": "Crackles are heard over both lung fields up to the scapulae",
+     "why": "급성 폐부종",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no thrill is palpable",
+     "why": "사이막 파열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Jugular venous pressure is 8 cm H2O",
+     "why": "눌림증(자유벽 파열)·우심실 경색 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "without new ST elevation",
+     "why": "재경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "하벽 경색 3일째 갑작스러운 폐부종과 심첨부에서 겨드랑이로 퍼지는 진동 없는 새 잡음은 급성 승모판역류, 곧 후내측 유두근 파열이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "잡음이 왼쪽 아래 복장뼈 가장자리에서 가장 크고 진동이 만져지며 오른쪽 울혈이 두드러졌다면 사이막 파열이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0218",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·부인과·신경·소아·순환기·호흡기·산과·소화기·혈액종양·감염·예방의학)",
+  "subtopic": "순환기 — 운동 중 실신한 청소년의 수축기 잡음",
+  "type": "순환기 — 운동 중 실신한 청소년의 수축기 잡음",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-03",
+  "vignette": "17세 남자가 축구 경기 중 쓰러져 의식을 잃었다가 1분 안에 깨어나 응급실에 왔다. 지난 몇 달 동안 운동할 때 숨이 차고 가슴이 답답했다. 삼촌이 30대에 갑자기 사망하였다. 혈압 118/72 mmHg, 맥박 76회/분, 산소포화도 99%이다. 흉부 진찰에서 왼쪽 복장뼈 가장자리에서 3/6 등급의 거친 수축기 잡음이 들리며 목으로는 퍼지지 않는다. 경동맥 맥박은 빠르게 오르고 두 번 솟는다. 심전도에서 왼심실 비대 전압과 아래·옆 유도의 깊고 좁은 Q파가 있다.",
+  "question": "이 잡음을 더 크게 만드는 진찰 수기로 가장 적절한 것은?",
+  "options": [
+   "깊게 숨 들이쉬기",
+   "발살바 수기",
+   "쪼그려 앉기",
+   "누운 자세에서 다리 들어올리기",
+   "손을 꽉 쥐기"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 운동 중 실신, 젊은 나이 돌연사 가족력, 목으로 퍼지지 않는 왼쪽 복장뼈 가장자리 수축기 잡음, 두 번 솟는 경동맥 맥박, 심전도의 왼심실 비대와 깊고 좁은 Q파는 폐쇄성 비후성 심근병증이다. 발살바 수기는 정맥 환류(전부하)를 줄여 왼심실이 작아지고, 비후된 사이막과 앞으로 당겨지는 승모판 앞엽이 더 가까워져 유출로 폐쇄와 잡음이 커진다.\n- 원리: <b>왜 전부하가 줄면 커지나</b>: 비후성 심근병증의 잡음은 판막이 좁아서가 아니라 <b>동적 유출로 폐쇄</b> 때문이다. 수축기에 두꺼운 사이막 옆을 빠르게 지나는 피가 승모판 앞엽을 사이막 쪽으로 끌어당긴다(수축기 앞쪽 운동, SAM). 왼심실 안이 작을수록 사이막과 판엽이 가까워져 폐쇄가 심해진다.<br> <b>그래서</b> 왼심실 크기를 줄이는 조작 — <b>발살바 긴장기, 서기</b>(전부하 감소), 질산염·탈수, 강심 자극 — 은 잡음을 키우고, 크기를 늘리는 조작 — <b>쪼그려 앉기·다리 들기</b>(전부하 증가), <b>손 꽉 쥐기</b>(후부하 증가) — 는 잡음을 줄인다.<br> <b>대동맥판협착과의 차이</b>: 고정된 협착은 지나는 혈류량이 많을수록 잡음이 커져 전부하에 반대로 반응하고, 잡음이 경동맥으로 퍼지며 맥박은 느리고 약하다(지맥·소맥).\n- 비교: <table><thead><tr><th style=\"width:24%\">조작</th><th style=\"width:38%\">비후성 심근병증 잡음</th><th>대동맥판협착 잡음</th></tr></thead><tbody> <tr><td>발살바·서기(전부하 ↓)</td><td><b>커진다</b>(정답)</td><td>작아진다</td></tr> <tr><td>쪼그려 앉기·다리 들기(전부하 ↑)</td><td>작아진다</td><td>커진다</td></tr> <tr><td>손 꽉 쥐기(후부하 ↑)</td><td>작아진다</td><td>작아지거나 변화 적음</td></tr> <tr><td>방사·맥박</td><td>목으로 안 퍼짐, 두 번 솟는 맥박</td><td>경동맥으로 퍼짐, 느리고 약한 맥박</td></tr> </tbody></table> 「심실이 작아지면 커진다」 한 줄만 기억하면 어느 조작을 물어도 답이 나온다. 승모판 탈출증의 딸깍음·잡음도 같은 방향으로 움직인다.\n- 오답 이유:\n  - ① 깊은 들숨은 오른심장 환류를 늘려 오른쪽 잡음(삼첨판역류 등)을 키운다(Carvallo 징후). 오른쪽에서 생긴 잡음을 물었다면 정답이 된다.\n  - ③ 쪼그려 앉기는 정맥 환류와 후부하를 늘려 왼심실을 키우므로 이 잡음은 작아진다. 대동맥판협착이나 승모판역류 잡음을 키우는 조작을 물었다면 정답이 된다.\n  - ④ 다리 들어올리기는 전부하를 늘려 유출로 폐쇄를 줄인다. 대동맥판협착처럼 혈류량에 비례하는 잡음을 더 크게 하는 조작을 물었다면 정답이 된다.\n  - ⑤ 손 꽉 쥐기는 후부하를 높여 왼심실 배출을 막고 크기를 키워 이 잡음은 작아진다. 승모판역류나 심실사이막결손 잡음을 키우는 조작을 물었다면 정답이 된다.\n- 함정: 수축기 잡음이라고 대동맥판협착처럼 쪼그려 앉기로 커진다고 답하지 않는다 — 목으로 퍼지지 않고 맥박이 두 번 솟는다.\n- 학습목표: 비후성 심근병증의 유출로 폐쇄 잡음은 전부하가 줄면(발살바·서기) 커지고 늘면(쪼그려 앉기) 작아진다\n- 근거·출처: Ommen SR, et al. 2020 AHA/ACC guideline for the diagnosis and treatment of patients with hypertrophic cardiomyopathy. Circulation 2020;142:e558 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 239 Approach to the patient with a heart murmur",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "운동 중 실신, 젊은 나이 돌연사 가족력, 목으로 퍼지지 않는 왼쪽 복장뼈 가장자리 수축기 잡음, 두 번 솟는 경동맥 맥박, 심전도의 왼심실 비대와 깊고 좁은 Q파는 폐쇄성 비후성 심근병증이다. 발살바 수기는 정맥 환류(전부하)를 줄여 왼심실이 작아지고, 비후된 사이막과 앞으로 당겨지는 승모판 앞엽이 더 가까워져 유출로 폐쇄와 잡음이 커진다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전부하가 줄면 커지나</b>: 비후성 심근병증의 잡음은 판막이 좁아서가 아니라 <b>동적 유출로 폐쇄</b> 때문이다. 수축기에 두꺼운 사이막 옆을 빠르게 지나는 피가 승모판 앞엽을 사이막 쪽으로 끌어당긴다(수축기 앞쪽 운동, SAM). 왼심실 안이 작을수록 사이막과 판엽이 가까워져 폐쇄가 심해진다.<br> <b>그래서</b> 왼심실 크기를 줄이는 조작 — <b>발살바 긴장기, 서기</b>(전부하 감소), 질산염·탈수, 강심 자극 — 은 잡음을 키우고, 크기를 늘리는 조작 — <b>쪼그려 앉기·다리 들기</b>(전부하 증가), <b>손 꽉 쥐기</b>(후부하 증가) — 는 잡음을 줄인다.<br> <b>대동맥판협착과의 차이</b>: 고정된 협착은 지나는 혈류량이 많을수록 잡음이 커져 전부하에 반대로 반응하고, 잡음이 경동맥으로 퍼지며 맥박은 느리고 약하다(지맥·소맥)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">조작</th><th style=\"width:38%\">비후성 심근병증 잡음</th><th>대동맥판협착 잡음</th></tr></thead><tbody> <tr><td>발살바·서기(전부하 ↓)</td><td><b>커진다</b>(정답)</td><td>작아진다</td></tr> <tr><td>쪼그려 앉기·다리 들기(전부하 ↑)</td><td>작아진다</td><td>커진다</td></tr> <tr><td>손 꽉 쥐기(후부하 ↑)</td><td>작아진다</td><td>작아지거나 변화 적음</td></tr> <tr><td>방사·맥박</td><td>목으로 안 퍼짐, 두 번 솟는 맥박</td><td>경동맥으로 퍼짐, 느리고 약한 맥박</td></tr> </tbody></table> 「심실이 작아지면 커진다」 한 줄만 기억하면 어느 조작을 물어도 답이 나온다. 승모판 탈출증의 딸깍음·잡음도 같은 방향으로 움직인다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 깊은 들숨은 오른심장 환류를 늘려 오른쪽 잡음(삼첨판역류 등)을 키운다(Carvallo 징후). 오른쪽에서 생긴 잡음을 물었다면 정답이 된다.\n③ 쪼그려 앉기는 정맥 환류와 후부하를 늘려 왼심실을 키우므로 이 잡음은 작아진다. 대동맥판협착이나 승모판역류 잡음을 키우는 조작을 물었다면 정답이 된다.\n④ 다리 들어올리기는 전부하를 늘려 유출로 폐쇄를 줄인다. 대동맥판협착처럼 혈류량에 비례하는 잡음을 더 크게 하는 조작을 물었다면 정답이 된다.\n⑤ 손 꽉 쥐기는 후부하를 높여 왼심실 배출을 막고 크기를 키워 이 잡음은 작아진다. 승모판역류나 심실사이막결손 잡음을 키우는 조작을 물었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "수축기 잡음이라고 대동맥판협착처럼 쪼그려 앉기로 커진다고 답하지 않는다 — 목으로 퍼지지 않고 맥박이 두 번 솟는다."
+   },
+   {
+    "k": "학습목표",
+    "v": "비후성 심근병증의 유출로 폐쇄 잡음은 전부하가 줄면(발살바·서기) 커지고 늘면(쪼그려 앉기) 작아진다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ommen SR, et al. 2020 AHA/ACC guideline for the diagnosis and treatment of patients with hypertrophic cardiomyopathy. Circulation 2020;142:e558 · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 239 Approach to the patient with a heart murmur"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "실신·가족력·두 번 솟는 맥박·목으로 안 퍼지는 잡음으로 폐쇄성 비후성 심근병증이고, 전부하를 줄이는 발살바가 잡음을 키운다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "쪼그려 앉기는 전부하를 늘려 대동맥판협착 잡음은 키우지만 비후성 심근병증 잡음은 줄인다",
+   "steps": 2,
+   "chain": [
+    "운동 중 실신 + 젊은 돌연사 가족력 + 목으로 안 퍼지는 잡음 + 두 번 솟는 맥박 → 폐쇄성 비후성 심근병증",
+    "동적 유출로 폐쇄 → 심실이 작아지는 발살바에서 잡음 증가"
+   ],
+   "key": [
+    {
+     "item": "축구 경기 중 쓰러져 의식을 잃었다가",
+     "why": "운동 중 실신 — 유출로 폐쇄·부정맥",
+     "also": []
+    },
+    {
+     "item": "삼촌이 30대에 갑자기 사망하였다",
+     "why": "상염색체 우성 유전성 심근병증 단서",
+     "also": []
+    },
+    {
+     "item": "두 번 솟는다",
+     "why": "이중 맥박 — 수축 중기 폐쇄",
+     "also": []
+    },
+    {
+     "item": "깊고 좁은 Q파",
+     "why": "비후된 사이막의 탈분극",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목으로는 퍼지지 않는다",
+     "why": "대동맥판협착 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "산소포화도 99%",
+     "why": "정상 — 판단에 영향 없음",
+     "also": []
+    }
+   ],
+   "summary": "운동 중 실신, 돌연사 가족력, 목으로 안 퍼지는 잡음과 이중 맥박은 폐쇄성 비후성 심근병증이다. 심실을 작게 만드는 발살바가 잡음을 키운다.",
+   "switch": {
+    "choice": "C",
+    "condition": "잡음이 경동맥으로 퍼지고 맥박이 느리고 약한 고령 환자(대동맥판협착)였다면 쪼그려 앉기가 잡음을 키운다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261003T202431Z_일일영상_2026-10-04_12units_12q_7d74c40f",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0205",
   "exam": "imaging",
   "style": "usmle_style",
