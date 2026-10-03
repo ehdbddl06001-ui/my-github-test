@@ -10626,6 +10626,328 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0711",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(붙잡는 것 — 관절 안정 구조와 골반 복막)에서 번호핀 1~21가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 붙잡는 것 / 2. 어깨관절 안정 구조 / 3. 팔꿉·손목 / 4. 골반 복막 오목 / 5. 골반가로막 / 6. 돌림근띠 / 7. 접시테두리 / 8. 접시위팔인대 · 부리위팔인대 / 9. 위팔가로인대 / 10. 부리빗장인대 / 11. 안쪽곁인대 / 12. 노뼈머리띠인대 / 13. 손목관절 / 14. 곧창자방광오목 / 15. 방광자궁오목 / 16. 곧창자자궁오목 / 17. 자궁넓은인대 / 18. 두덩곧창자근 / 19. 두덩꼬리근 · 엉덩꼬리근 / 20. 꼬리근 / 21. 비뇨생식구멍",
+   "explanation": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다 어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다. 복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다. 골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-bundle",
+     "page": null,
+     "section": "붙잡는 것 — 관절 안정 구조와 골반 복막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0712",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(붙잡는 것 — 관절 안정 구조와 골반 복막)에서 **어깨관절 안정 구조** 계통에 해당하는 번호핀 2, 6, 7, 8, 9, 10 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 어깨관절 안정 구조 / 6. 돌림근띠 / 7. 접시테두리 / 8. 접시위팔인대 · 부리위팔인대 / 9. 위팔가로인대 / 10. 부리빗장인대",
+   "explanation": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다 어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다. 복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다. 골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-bundle",
+     "page": null,
+     "section": "붙잡는 것 — 관절 안정 구조와 골반 복막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0713",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(붙잡는 것 — 관절 안정 구조와 골반 복막)에서 **팔꿉·손목** 계통에 해당하는 번호핀 3, 11, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 팔꿉·손목 / 11. 안쪽곁인대 / 12. 노뼈머리띠인대 / 13. 손목관절",
+   "explanation": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다 어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다. 복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다. 골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-bundle",
+     "page": null,
+     "section": "붙잡는 것 — 관절 안정 구조와 골반 복막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0714",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(붙잡는 것 — 관절 안정 구조와 골반 복막)에서 **골반 복막 오목** 계통에 해당하는 번호핀 4, 14, 15, 16, 17 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 골반 복막 오목 / 14. 곧창자방광오목 / 15. 방광자궁오목 / 16. 곧창자자궁오목 / 17. 자궁넓은인대",
+   "explanation": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다 어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다. 복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다. 골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-bundle",
+     "page": null,
+     "section": "붙잡는 것 — 관절 안정 구조와 골반 복막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0715",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(붙잡는 것 — 관절 안정 구조와 골반 복막)에서 **골반가로막** 계통에 해당하는 번호핀 5, 18, 19, 20, 21 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 골반가로막 / 18. 두덩곧창자근 / 19. 두덩꼬리근 · 엉덩꼬리근 / 20. 꼬리근 / 21. 비뇨생식구멍",
+   "explanation": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다 어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다. 복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다. 골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-bundle",
+     "page": null,
+     "section": "붙잡는 것 — 관절 안정 구조와 골반 복막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0716",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(배뇨·배변의 신경과 관절의 신경)에서 번호핀 1~25가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 14회차의 신경 / 2. 골반 자율신경 / 3. 골반의 몸신경 / 4. 팔 관절의 신경 / 5. 위아랫배신경얼기 / 6. 골반내장신경 / 7. 아래아랫배신경얼기 / 8. 음부신경 / 9. 항문올림근신경 / 10. 폐쇄신경 / 11. 어깨관절 / 12. 팔꿉관절 / 13. 손목관절 / 14. 아랫배신경 / 15. 방광 배뇨근 수축 / 16. 곧창자 수축 · 발기 / 17. 방광신경얼기 / 18. 전립샘신경얼기 → 해면신경 / 19. 가운데·아래곧창자신경얼기 / 20. 아래곧창자신경 / 21. 샅신경 / 22. 음경·음핵등신경 / 23. 겨드랑신경 / 24. 어깨위신경 / 25. 자신경",
+   "explanation": "14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton) **교감은 저장(참기), 부교감은 배출(누기)** — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다. 바깥조임근(요도·항문)은 **음부신경(S2–S4)** — 뜻대로 참는 근육은 몸신경이다. 관절의 신경은 **Hilton 법칙** — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-nerve",
+     "page": null,
+     "section": "배뇨·배변의 신경과 관절의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0717",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(배뇨·배변의 신경과 관절의 신경)에서 **골반 자율신경** 계통에 해당하는 번호핀 2, 5, 6, 7, 14, 15, 16, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 골반 자율신경 / 5. 위아랫배신경얼기 / 6. 골반내장신경 / 7. 아래아랫배신경얼기 / 14. 아랫배신경 / 15. 방광 배뇨근 수축 / 16. 곧창자 수축 · 발기 / 17. 방광신경얼기 / 18. 전립샘신경얼기 → 해면신경 / 19. 가운데·아래곧창자신경얼기",
+   "explanation": "14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton) **교감은 저장(참기), 부교감은 배출(누기)** — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다. 바깥조임근(요도·항문)은 **음부신경(S2–S4)** — 뜻대로 참는 근육은 몸신경이다. 관절의 신경은 **Hilton 법칙** — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-nerve",
+     "page": null,
+     "section": "배뇨·배변의 신경과 관절의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0718",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(배뇨·배변의 신경과 관절의 신경)에서 **골반의 몸신경** 계통에 해당하는 번호핀 3, 8, 9, 10, 20, 21, 22 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 골반의 몸신경 / 8. 음부신경 / 9. 항문올림근신경 / 10. 폐쇄신경 / 20. 아래곧창자신경 / 21. 샅신경 / 22. 음경·음핵등신경",
+   "explanation": "14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton) **교감은 저장(참기), 부교감은 배출(누기)** — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다. 바깥조임근(요도·항문)은 **음부신경(S2–S4)** — 뜻대로 참는 근육은 몸신경이다. 관절의 신경은 **Hilton 법칙** — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-nerve",
+     "page": null,
+     "section": "배뇨·배변의 신경과 관절의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0719",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(배뇨·배변의 신경과 관절의 신경)에서 **팔 관절의 신경** 계통에 해당하는 번호핀 4, 11, 12, 13, 23, 24, 25 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 팔 관절의 신경 / 11. 어깨관절 / 12. 팔꿉관절 / 13. 손목관절 / 23. 겨드랑신경 / 24. 어깨위신경 / 25. 자신경",
+   "explanation": "14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton) **교감은 저장(참기), 부교감은 배출(누기)** — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다. 바깥조임근(요도·항문)은 **음부신경(S2–S4)** — 뜻대로 참는 근육은 몸신경이다. 관절의 신경은 **Hilton 법칙** — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-nerve",
+     "page": null,
+     "section": "배뇨·배변의 신경과 관절의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0720",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리)에서 번호핀 1~27가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 14회차의 혈관 / 2. 속엉덩동맥 / 3. 골반 밖에서 오는 동맥 / 4. 골반의 정맥 / 5. 어깨관절 둘레 / 6. 뒤줄기 / 7. 앞줄기 / 8. 난소동맥 / 9. 위곧창자동맥 / 10. 전립샘정맥얼기 / 11. 곧창자정맥얼기 / 12. 속엉덩정맥 / 13. 앞·뒤위팔휘돌이동맥 / 14. 어깨위동맥 · 어깨휘돌이동맥 / 15. 엉덩허리동맥 / 16. 가쪽엉치동맥 / 17. 위볼기동맥 / 18. 배꼽동맥 / 19. 폐쇄동맥 / 20. 아래방광동맥 · 질동맥 / 21. 자궁동맥 / 22. 가운데곧창자동맥 / 23. 속음부동맥 / 24. 아래볼기동맥 / 25. 척추정맥얼기와 연결 / 26. 위곧창자정맥 / 27. 가운데·아래곧창자정맥",
+   "explanation": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다 뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다. **자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리. 곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-vessel",
+     "page": null,
+     "section": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0721",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리)에서 **속엉덩동맥** 계통에 해당하는 번호핀 2, 6, 7, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 속엉덩동맥 / 6. 뒤줄기 / 7. 앞줄기 / 15. 엉덩허리동맥 / 16. 가쪽엉치동맥 / 17. 위볼기동맥 / 18. 배꼽동맥 / 19. 폐쇄동맥 / 20. 아래방광동맥 · 질동맥 / 21. 자궁동맥 / 22. 가운데곧창자동맥 / 23. 속음부동맥 / 24. 아래볼기동맥",
+   "explanation": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다 뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다. **자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리. 곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-vessel",
+     "page": null,
+     "section": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0722",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리)에서 **골반 밖에서 오는 동맥** 계통에 해당하는 번호핀 3, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 골반 밖에서 오는 동맥 / 8. 난소동맥 / 9. 위곧창자동맥",
+   "explanation": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다 뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다. **자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리. 곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-vessel",
+     "page": null,
+     "section": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0723",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리)에서 **골반의 정맥** 계통에 해당하는 번호핀 4, 10, 11, 12, 25, 26, 27 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 골반의 정맥 / 10. 전립샘정맥얼기 / 11. 곧창자정맥얼기 / 12. 속엉덩정맥 / 25. 척추정맥얼기와 연결 / 26. 위곧창자정맥 / 27. 가운데·아래곧창자정맥",
+   "explanation": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다 뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다. **자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리. 곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-vessel",
+     "page": null,
+     "section": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0724",
+   "style": "spotter",
+   "session": 14,
+   "region": "multi",
+   "subregion": "s14-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리)에서 **어깨관절 둘레** 계통에 해당하는 번호핀 5, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 어깨관절 둘레 / 13. 앞·뒤위팔휘돌이동맥 / 14. 어깨위동맥 · 어깨휘돌이동맥",
+   "explanation": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다 뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다. **자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리. 곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s14-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s14-vessel",
+     "page": null,
+     "section": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -12765,6 +13087,342 @@ window.MEDKOS_ANATOMY = {
      "section": "콩팥 · 콩팥단면"
     }
    ]
+  },
+  {
+   "id": "anatomy-2026-0699",
+   "style": "distinction",
+   "session": 14,
+   "region": "upper-limb",
+   "subregion": "shoulder",
+   "examPhase": "tagging-2",
+   "stem": "봉우리빗장관절을 붙잡는 인대 중 **수직 안정**을 맡는 인대의 이름과, 그 인대를 이루는 **두 부분**(가쪽·안쪽 순)을 쓰시오. 또 봉우리빗장인대만 찢겼을 때와 이 인대까지 끊겼을 때 빗장뼈 끝은 각각 어떻게 되는가?",
+   "choices": null,
+   "answer": "**부리빗장인대 (coracoclavicular lig.)** — 가쪽 **마름인대 (trapezoid lig.)** · 안쪽 **원뿔인대 (conoid lig.)** · 봉우리빗장인대만 = 관절이 어긋나도 빗장뼈가 크게 들리지 않는다 / 부리빗장인대까지 = 빗장뼈 끝이 **계단처럼 솟는다**(고도 분리)",
+   "explanation": "봉우리빗장인대는 관절주머니 위를 보강하는 **수평** 안정, ==부리빗장인대==는 어깨뼈(부리돌기)를 빗장뼈에 매다는 **수직** 안정이다. 마름은 가쪽 마름선, 원뿔은 안쪽 원뿔결절에 붙는다. AC 분리 등급은 부리빗장인대가 살았는지로 가른다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "봉우리빗장관절 (acromioclavicular joint)"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0700",
+   "style": "relation",
+   "session": 14,
+   "region": "upper-limb",
+   "subregion": "shoulder",
+   "examPhase": "tagging-2",
+   "stem": "어깨관절 안정화 구조(응용과제). 위팔뼈머리를 오목에 붙잡는 **정적** 구조 중 ① 얕은 접시오목을 **깊게** 하는 섬유연골, ② 관절주머니 **앞쪽**을 보강하는 세 띠, ③ 결절사이고랑에서 **위팔두갈래근 긴갈래 힘줄**을 붙드는 인대를 쓰시오. ④ 관절안과 **통하는** 윤활주머니도 하나 쓰시오.",
+   "choices": null,
+   "answer": "① **접시테두리 (glenoid labrum)** · ② **접시위팔인대 (glenohumeral ligg.)** 위·중간·아래 · ③ **위팔가로인대 (transverse humeral lig.)** · ④ **어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis)**",
+   "explanation": "어깨는 접시오목이 위팔뼈머리의 일부만 덮는 **가장 움직임이 큰 관절**이라 정적 구조만으로는 부족하고 ==돌림근띠==가 동적으로 붙잡는다. 접시테두리 위쪽에는 위팔두갈래근 긴갈래가 붙어, 찢기면 SLAP 손상이다. 어깨밑근힘줄밑주머니는 관절안과 이어져 관절조영제가 여기로 샌다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "어깨관절"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "응용과제 — 어깨관절 안정화 구조"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0701",
+   "style": "clinical-application",
+   "session": 14,
+   "region": "upper-limb",
+   "subregion": "shoulder",
+   "examPhase": "tagging-2",
+   "stem": "돌림근띠 네 근육을 쓰고, 각각 **닿는 결절과 신경**을 쓰시오. 어깨관절이 가장 흔히 빠지는 **방향**과 그 이유, 그때 다치기 쉬운 **신경**과 그 증상도 쓰시오.",
+   "choices": null,
+   "answer": "**가시위근 (supraspinatus)** 큰결절 위면 · 어깨위신경 / **가시아래근 (infraspinatus)** 큰결절 중간면 · 어깨위신경 / **작은원근 (teres minor)** 큰결절 아래면 · 겨드랑신경 / **어깨밑근 (subscapularis)** **작은결절** · 위·아래어깨밑신경 · 방향 = **앞아래** — 띠가 아래쪽엔 없다 · 신경 = **겨드랑신경 (axillary n.)** — 어깨세모근 마비(벌림 약화) + 어깨 가쪽 피부 감각 소실",
+   "explanation": "SITS 중 ==어깨밑근==만 **작은결절**에 붙어 홀로 안쪽돌림을 한다. 돌림근띠가 위·앞·뒤를 감싸지만 아래가 비어 있어 탈구는 앞아래로 일어나고, 빠진 머리가 **네모공간·수술목**을 지나는 ==겨드랑신경==을 당긴다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "어깨관절"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "응용과제 — 어깨관절 안정화 구조"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0702",
+   "style": "distinction",
+   "session": 14,
+   "region": "upper-limb",
+   "subregion": "elbow",
+   "examPhase": "tagging-2",
+   "stem": "팔꿉관절 표본에서 ① 안쪽위관절융기에서 자뼈로 가며 **밖굽이(valgus)** 힘을 막는 인대, ② 가쪽위관절융기에서 내려와 **노뼈에 직접 붙지 않고** 섞여 들어가는 인대, ③ 노뼈머리를 자뼈 노패임에 **고리**로 감는 인대를 쓰시오. ④ ③과 관련해 아이의 팔을 당길 때 생기는 손상의 이름을 쓰시오.",
+   "choices": null,
+   "answer": "① **안쪽곁인대 (ulnar collateral lig.)** · ② **가쪽곁인대 (radial collateral lig.)** · ③ **노뼈머리띠인대 (anular lig. of radius)** · ④ **노뼈머리 아탈구 (pulled elbow, nursemaid's elbow)**",
+   "explanation": "팔꿉관절은 위팔자·위팔노·==몸쪽노자관절==이 **한 주머니**에 들어 있다. 가쪽곁인대는 ==노뼈머리띠인대==에 섞여서, 노뼈가 그 고리 속에서 엎침·뒤침으로 돌 수 있다. 안쪽곁인대 바로 위 안쪽위관절융기 뒤로 ==자신경==이 지난다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "팔꿉관절"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0703",
+   "style": "relation",
+   "session": 14,
+   "region": "upper-limb",
+   "subregion": "wrist",
+   "examPhase": "tagging-2",
+   "stem": "손목관절(노손목관절)의 **몸쪽 관절면 둘**과 **먼쪽 손목뼈 셋**을 쓰시오. 자뼈는 왜 손목관절에 직접 참여하지 않는가? 먼쪽 셋 중 넘어질 때 가장 잘 부러지고 무혈괴사가 오는 뼈는?",
+   "choices": null,
+   "answer": "몸쪽 = **노뼈 아래끝 + 관절원반 (articular disc)** · 먼쪽 = **손배뼈 (scaphoid) · 반달뼈 (lunate) · 세모뼈 (triquetrum)** · 자뼈는 **관절원반에 가려** 손목뼈에 닿지 않는다 · **손배뼈** — 혈관이 먼쪽에서 들어가 몸쪽 조각이 괴사",
+   "explanation": "==관절원반==(삼각섬유연골)은 먼쪽노자관절과 손목관절을 나눈다. ==손배뼈==는 노뼈와 가장 넓게 닿아 넘어질 때 힘을 받고, 코담배갑 압통이 단서다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "손목관절"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0704",
+   "style": "relation",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "pelvic-peritoneum",
+   "examPhase": "tagging-2",
+   "stem": "골반장기-복막 관계(응용과제). ① 남자 복막안의 **가장 낮은 오목**, ② 여자 복막안의 **가장 낮은 오목**과 그 다른 이름을 쓰시오. ③ 여자에서 ②에 고인 피·고름을 바늘로 뽑을 때 뚫는 자리는 어디인가? ④ 남자 ① 바로 밑(앞)에 만져지는 생식기관 하나를 쓰시오.",
+   "choices": null,
+   "answer": "① **곧창자방광오목 (rectovesical pouch)** · ② **곧창자자궁오목 (rectouterine pouch) = Douglas 오목** · ③ **뒤질천장 (posterior vaginal fornix)** — 복막 한 겹 사이 · ④ **정낭 (seminal vesicle)**",
+   "explanation": "복막은 골반장기의 **꼭대기만** 덮고 장기 사이로 내려앉아 오목을 만든다. 여자는 자궁이 사이에 끼어 방광자궁오목(얕다)·곧창자자궁오목(깊다) 둘이 된다. 서 있거나 누운 자세에서 가장 낮은 이 오목에 복막안 액체가 모인다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "여자골반안 · 남자골반안"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "응용과제 — 골반장기-복막 관계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0705",
+   "style": "distinction",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "female-internal",
+   "examPhase": "tagging-2",
+   "stem": "자궁넓은인대를 이루는 **세 부분**을 쓰고 각각 무엇을 매다는지 쓰시오. 또 난소에 붙는 인대 중 ① 골반벽에서 내려와 **난소동맥**을 싣는 것, ② 난소를 **자궁뿔**에 잇는 것, ③ 자궁뿔에서 **깊은샅굴구멍**으로 가는 것을 쓰시오.",
+   "choices": null,
+   "answer": "**자궁관간막 (mesosalpinx)** = 자궁관 · **난소간막 (mesovarium)** = 난소 · **자궁간막 (mesometrium)** = 나머지(자궁 옆) · ① **난소걸이인대 (suspensory lig. of ovary)** · ② **고유난소인대 (ligament of ovary)** · ③ **자궁원인대 (round lig. of uterus)**",
+   "explanation": "자궁뿔에서는 위에서 아래로 **자궁관 → 고유난소인대 → 자궁원인대**가 나간다. ==난소걸이인대==만 혈관을 싣는다. 자궁간막 바닥에서 ==자궁동맥==이 ==요관== 위를 건넌다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "여자골반안"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "응용과제 — 골반장기-복막 관계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0706",
+   "style": "relation",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "pelvic-wall",
+   "examPhase": "tagging-2",
+   "stem": "골반에서 **요관 위(앞)를 건너는 구조**를 여자와 남자에서 하나씩 쓰시오. 여자 쪽 구조는 어느 동맥의 **어느 줄기**에서 나오며, 수술에서 왜 이 교차가 중요한가?",
+   "choices": null,
+   "answer": "여자 = **자궁동맥 (uterine a.)** · 남자 = **정관 (ductus deferens)** · 자궁동맥은 **속엉덩동맥 앞줄기 (anterior division)** 에서 나온다 · 자궁절제술에서 자궁동맥을 묶을 때 바로 밑 **요관을 함께 묶거나 자를** 위험이 있다(water under the bridge)",
+   "explanation": "==자궁동맥==은 ==자궁넓은인대== 바닥에서 자궁목 가쪽 약 2 cm 지점에 요관 위를 지난다. 남자에서는 정관이 깊은샅굴구멍에서 들어와 요관 위를 넘어 방광 뒤로 간다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "속엉덩동맥"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0707",
+   "style": "branch-tree",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "pelvic-wall",
+   "examPhase": "tagging-2",
+   "stem": "속엉덩동맥 **뒤줄기**의 가지 셋을 쓰고, **앞줄기**의 가지 중 ① 먼쪽이 막혀 안쪽배꼽인대가 되는 동맥과 그 열린 앞부분이 내는 가지, ② 폐쇄신경과 함께 폐쇄관을 지나는 동맥, ③ 궁둥뼈가시를 돌아 샅으로 가는 동맥을 쓰시오. 큰궁둥구멍에서 궁둥구멍근 **위·아래**로 나가는 동맥도 각각 쓰시오.",
+   "choices": null,
+   "answer": "뒤줄기 = **엉덩허리동맥 (iliolumbar a.) · 가쪽엉치동맥 (lateral sacral a.) · 위볼기동맥 (superior gluteal a.)** · ① **배꼽동맥 (umbilical a.)** → **위방광동맥 (superior vesical a.)** · ② **폐쇄동맥 (obturator a.)** · ③ **속음부동맥 (internal pudendal a.)** · 궁둥구멍근 위 = **위볼기동맥** / 아래 = **아래볼기동맥 (inferior gluteal a.)** (+ 속음부동맥)",
+   "explanation": "뒤줄기는 **벽쪽 셋**뿐이고(I Love Sex), 골반장기로 가는 가지는 모두 앞줄기다. 폐쇄동맥은 폐쇄신경 **아래**(NAV — 신경이 위)로 지나며, 바깥엉덩동맥에서 나오는 변이(corona mortis)가 탈장 수술에서 위험하다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "속엉덩동맥"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0708",
+   "style": "course-tracing",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "male-internal",
+   "examPhase": "tagging-2",
+   "stem": "남자 요도를 방광에서 바깥요도구멍까지 **세 부분**으로 쓰고, 가장 **좁은** 부분과 가장 **긴** 부분을 고르시오. 요도전립샘부분 뒤벽의 **요도둔덕**에 열리는 구조 **둘**과, 둔덕 양옆 고랑에 열리는 관을 쓰시오.",
+   "choices": null,
+   "answer": "**요도전립샘부분 (prostatic urethra) → 요도 막부분 (membranous urethra) → 요도 해면체부분 (spongy urethra)** · 좁다 = **막부분** · 길다 = **해면체부분** · 요도둔덕 = **전립샘소실 (prostatic utricle)** + 양옆 **사정관 (ejaculatory duct)** · 고랑(전립샘굴) = **전립샘관 (prostatic ducts)**",
+   "explanation": "요도전립샘부분 뒤벽의 세로 융기가 ==요도능선==, 그 가운데 부푼 곳이 ==요도둔덕==이다. 막부분은 바깥요도조임근이 감싸고 옆에 ==망울요도샘==이 있지만 그 관은 해면체부분으로 열린다. 해면체부분 끝의 넓어진 곳이 ==요도배오목==이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "전립샘 · 요도"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0709",
+   "style": "layer-order",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "pelvic-floor",
+   "examPhase": "tagging-2",
+   "stem": "골반가로막을 이루는 근육을 **앞에서 뒤로** 네 개 쓰시오. 이 중 ① 곧창자 뒤에서 **U자 고리**를 만들어 항문곧창자각을 유지하는 근육, ② **궁둥뼈가시**에서 일어나는 근육을 고르고, ③ 항문올림근이 뼈가 아니라 일어나는 **근막의 띠** 이름과 그 근막을 쓰시오. ④ 요도(여자는 질까지)가 지나는 앞쪽 틈은?",
+   "choices": null,
+   "answer": "**두덩곧창자근 (puborectalis) → 두덩꼬리근 (pubococcygeus) → 엉덩꼬리근 (iliococcygeus) → 꼬리근 (coccygeus)** · ① **두덩곧창자근** · ② **꼬리근** (엉덩꼬리근 뒤끝도 궁둥뼈가시) · ③ **항문올림근힘줄활 (tendinous arch of levator ani)** — **속폐쇄근막 (obturator fascia)** 이 두꺼워진 것 · ④ **비뇨생식구멍 (urogenital hiatus)**",
+   "explanation": "==항문올림근==은 두덩곧창자·두덩꼬리·엉덩꼬리 세 부분이고, 여기에 ==꼬리근==을 더하면 골반가로막이다. 신경은 주로 S4(항문올림근신경)와 음부신경. 분만 손상으로 비뇨생식구멍이 넓어지면 골반장기 탈출과 복압요실금이 온다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "골반가로막"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0710",
+   "style": "clinical-application",
+   "session": 14,
+   "region": "pelvis-perineum",
+   "subregion": "pelvic-nerves",
+   "examPhase": "tagging-2",
+   "stem": "배뇨·배변 기전(응용과제). ① 배뇨근을 **수축**시키는 신경과 척수 높이, ② 저장기에 속요도조임근을 **조이는** 신경과 높이, ③ 바깥요도조임근·바깥항문조임근을 맡는 신경과 높이를 쓰시오. ④ 배변을 **참을 때** 조임근보다 중요한 근육과 그 작용, ⑤ 빗살선 **위·아래** 항문관 점막의 감각 신경과 통증 유무를 쓰시오.",
+   "choices": null,
+   "answer": "① **골반내장신경 (pelvic splanchnic nn.)** — 부교감 **S2–S4** · ② **아랫배신경 (hypogastric nn.)** — 교감 **T11–L2** · ③ **음부신경 (pudendal n.)** — 몸신경 **S2–S4** (바깥항문조임근은 아래곧창자신경 가지) · ④ **두덩곧창자근 (puborectalis)** — 곧창자 뒤 U자 고리로 **항문곧창자각을 좁힌다** · ⑤ 위 = **내장(자율) 신경 — 통증 없음** / 아래 = **음부신경(아래곧창자신경) — 아프다**",
+   "explanation": "**교감 = 저장, 부교감 = 배출, 음부신경 = 뜻대로 참기**. 방광이 차면 골반내장신경 들섬유가 엉치척수로 신호를 보내고, 뇌줄기 배뇨중추가 허락하면 배뇨근이 수축하고 조임근들이 풀린다. 항문관 감각은 빗살선 위가 자율신경이라 내치핵(빗살선 위)은 아프지 않게 피가 나고 외치핵(아래)은 아프다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "14차시(0930) 문용석pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "항문관 · 곧창자"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 14회차",
+     "page": null,
+     "section": "응용과제 — 배뇨·배변 기전"
+    }
+   ]
   }
  ],
  "guides": [
@@ -13878,9 +14536,171 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0698",
+   "session": 14,
+   "title": "14회차 서브노트 — 붙잡는 것과 받치는 것",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 봉우리빗장관절",
+    "2. 어깨관절",
+    "3. 팔꿉관절과 노자관절",
+    "4. 손목관절",
+    "5. 골반 복막",
+    "6. 방광과 요도",
+    "7. 남자 내부생식기관",
+    "8. 여자 내부생식기관",
+    "9. 곧창자와 항문관",
+    "10. 속엉덩동맥",
+    "11. 골반가로막",
+    "12. 응용과제 — 배뇨·배변 기전",
+    "13. 근육표 종합 (14회차)",
+    "14. 예습시험 체크리스트 10 (수업당 10문제 대비)"
+   ],
+   "figs": [
+    "tree-s14-bundle-labeled.svg",
+    "tree-s14-nerve-labeled.svg",
+    "tree-s14-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "돌림근띠는 SITS",
+     "full": "Supraspinatus(가시위) · Infraspinatus(가시아래) · Teres minor(작은원) · Subscapularis(어깨밑)",
+     "note": "큰결절에 위→아래로 S·I·T, ==어깨밑근==만 작은결절 — 그래서 혼자 안쪽돌림"
+    },
+    {
+     "key": "부리빗장인대 — 마름은 가쪽, 원뿔은 안쪽",
+     "full": "trapezoid = 가쪽 · 수평 / conoid = 안쪽 · 수직(원뿔결절)",
+     "note": "봉우리빗장관절이 빠져도 ==부리빗장인대==가 남으면 빗장뼈가 덜 들린다(분리 등급)"
+    },
+    {
+     "key": "자궁동맥은 다리, 요관은 물",
+     "full": "water under the bridge — 요관이 자궁동맥 **밑**을 지난다",
+     "note": "자궁목 가쪽 약 2 cm — ==자궁넓은인대== 바닥에서 교차"
+    },
+    {
+     "key": "교감은 참고(Store), 부교감은 눈다(Pee)",
+     "full": "교감 T11–L2 = 배뇨근 이완 · 속조임근 수축 / 부교감 S2–S4 = 배뇨근 수축 · 속조임근 이완",
+     "note": "S2·3·4 keeps the pee off the floor — ==음부신경==(바깥조임근)도 S2–S4"
+    },
+    {
+     "key": "속엉덩동맥 뒤줄기는 I Love Sex",
+     "full": "Iliolumbar · Lateral sacral · Superior gluteal — 벽쪽 셋",
+     "note": "내장으로 가는 가지는 전부 ==앞줄기=="
+    },
+    {
+     "key": "빗살선 위는 내장, 아래는 몸",
+     "full": "위 = 위곧창자동맥 · 문맥 · 자율신경(통증 없음) · 샘암 / 아래 = 아래곧창자동맥 · 대정맥 · 음부신경(아프다) · 편평상피암",
+     "note": "==빗살선==이 내치핵과 외치핵을 가른다"
+    },
+    {
+     "key": "항문올림근 셋은 앞에서 뒤로 PPI",
+     "full": "Puborectalis(두덩곧창자) · Pubococcygeus(두덩꼬리) · Iliococcygeus(엉덩꼬리) + 꼬리근",
+     "note": "==두덩곧창자근==의 U자 고리가 항문곧창자각을 만든다"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-10-04",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "upper-limb",
+    "pelvis-perineum"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0001"
+    ],
+    "layer": [
+     "anatomy-2026-0003"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0035",
+     "anatomy-2026-0002"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0469",
+    "anatomy-2026-0480",
+    "anatomy-2026-0476",
+    "anatomy-2026-0512",
+    "anatomy-2026-0515"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ],
+    "d-3": [
+     "anatomy-2026-0556",
+     "anatomy-2026-0521",
+     "anatomy-2026-0663",
+     "anatomy-2026-0557",
+     "anatomy-2026-0517",
+     "anatomy-2026-0518",
+     "anatomy-2026-0497",
+     "anatomy-2026-0601",
+     "anatomy-2026-0666",
+     "anatomy-2026-0385",
+     "anatomy-2026-0598",
+     "anatomy-2026-0519"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0656",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0651",
+     "anatomy-2026-0046",
+     "anatomy-2026-0650",
+     "anatomy-2026-0647",
+     "anatomy-2026-0643"
+    ],
+    "d-14": [
+     "anatomy-2026-0469",
+     "anatomy-2026-0471",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515",
+     "anatomy-2026-0468",
+     "anatomy-2026-0497",
+     "anatomy-2026-0470",
+     "anatomy-2026-0480",
+     "anatomy-2026-0516",
+     "anatomy-2026-0514",
+     "anatomy-2026-0517"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-10-03",
    "phase": "t2-new",
@@ -16621,103 +17441,6 @@ window.MEDKOS_ANATOMY = {
      "anatomy-2026-0161",
      "anatomy-2026-0378",
      "anatomy-2026-0398",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-14": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0157",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-04",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "neck",
-    "lower-limb"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0030"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0037"
-    ],
-    "relation": [
-     "anatomy-2026-0446",
-     "anatomy-2026-0447"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0372",
-    "anatomy-2026-0353",
-    "anatomy-2026-0044",
-    "anatomy-2026-0048",
-    "anatomy-2026-0355",
-    "anatomy-2026-0043",
-    "anatomy-2026-0017",
-    "anatomy-2026-0447",
-    "anatomy-2026-0356",
-    "anatomy-2026-0045",
-    "anatomy-2026-0050",
-    "anatomy-2026-0359"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ],
-    "d-3": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ],
-    "d-7": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0380",
      "anatomy-2026-0156",
      "anatomy-2026-0377"
     ],

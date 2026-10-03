@@ -1,10 +1,82 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
- "generated": "2026-10-03",
- "count": 110,
- "groups": 57,
+ "generated": "2026-10-04",
+ "count": 116,
+ "groups": 60,
  "items": [
+  {
+   "file": "tree-s14-vessel-labeled.svg",
+   "base": "tree-s14-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리",
+   "date": "2026-10-04",
+   "bytes": 17176
+  },
+  {
+   "file": "tree-s14-vessel-quiz.svg",
+   "base": "tree-s14-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리",
+   "date": "2026-10-04",
+   "bytes": 12906
+  },
+  {
+   "file": "tree-s14-nerve-labeled.svg",
+   "base": "tree-s14-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "배뇨·배변의 신경과 관절의 신경",
+   "date": "2026-10-04",
+   "bytes": 16697
+  },
+  {
+   "file": "tree-s14-nerve-quiz.svg",
+   "base": "tree-s14-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "배뇨·배변의 신경과 관절의 신경",
+   "date": "2026-10-04",
+   "bytes": 12172
+  },
+  {
+   "file": "tree-s14-bundle-labeled.svg",
+   "base": "tree-s14-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "붙잡는 것",
+   "date": "2026-10-04",
+   "bytes": 13861
+  },
+  {
+   "file": "tree-s14-bundle-quiz.svg",
+   "base": "tree-s14-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 14,
+   "unit": "14회차 · 팔·골반·회음",
+   "title": "붙잡는 것",
+   "date": "2026-10-04",
+   "bytes": 10670
+  },
   {
    "file": "tree-s13-vessel-labeled.svg",
    "base": "tree-s13-vessel",

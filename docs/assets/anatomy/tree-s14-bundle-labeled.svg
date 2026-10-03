@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 1346" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="붙잡는 것 — 관절 안정 구조와 골반 복막 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 14회차 인제스트 섹션 a2-s14 §봉우리빗장관절 · §어깨관절 · §팔꿉관절 · §손목관절 · §남자골반안 · §여자골반안 · §방광 겉모습 · §골반가로막 + SESSION_DETAILS 응용과제(어깨관절 안정화 구조 · 골반장기-복막 관계) -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="654" height="1346" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">붙잡는 것 — 관절 안정 구조와 골반 복막<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> stabilizers &amp; pelvic pouches</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 406,278 H 419 V 125 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,278 H 419 V 200 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,278 H 419 V 282 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,278 H 419 V 365 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,278 H 419 V 440 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,586 H 419 V 515 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,586 H 419 V 590 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,586 H 419 V 665 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,834 H 419 V 734 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,834 H 419 V 798 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,834 H 419 V 868 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,834 H 419 V 943 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1118 H 419 V 1018 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1118 H 419 V 1093 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1118 H 419 V 1162 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1118 H 419 V 1226 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,696 H 219 V 278 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,696 H 219 V 586 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,696 H 219 V 834 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,696 H 219 V 1118 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="678" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="698" fill="#7fd4a8" font-size="12" class="kr">붙잡는 것</text>
+  <rect x="232" y="245" width="174" height="66" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="265" fill="#7fd4a8" font-size="12" class="kr">어깨관절 안정 구조 ★</text>
+  <text x="242" y="280" fill="#5fae87" font-size="9">stabilizers of the glenohumeral</text>
+  <text x="242" y="291" fill="#5fae87" font-size="9">joint</text>
+  <text x="242" y="302" fill="#6f8299" font-size="9">응용과제</text>
+  <rect x="232" y="564" width="174" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="584" fill="#7fd4a8" font-size="12" class="kr">팔꿉·손목 ★</text>
+  <text x="242" y="598" fill="#5fae87" font-size="9">elbow &amp; wrist</text>
+  <rect x="232" y="807" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="827" fill="#7fd4a8" font-size="12" class="kr">골반 복막 오목 ★</text>
+  <text x="242" y="842" fill="#5fae87" font-size="9">pelvic peritoneal pouches</text>
+  <text x="242" y="853" fill="#6f8299" font-size="9">응용과제 — 골반장기-복막 관계</text>
+  <rect x="232" y="1085" width="174" height="66" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1105" fill="#7fd4a8" font-size="12" class="kr">골반가로막 ★</text>
+  <text x="242" y="1120" fill="#5fae87" font-size="9">pelvic diaphragm</text>
+  <text x="242" y="1131" fill="#6f8299" font-size="9">골반 바닥 — 위는 골반안, 아래는</text>
+  <text x="242" y="1142" fill="#6f8299" font-size="9">샅</text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#7fd4a8" font-size="12" class="kr">돌림근띠 ★</text>
+  <text x="442" y="127" fill="#5fae87" font-size="9">rotator cuff (SITS)</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가시위 · 가시아래 · 작은원 ·</tspan></text>
+  <text x="442" y="149" fill="#6f8299" font-size="9">어깨밑근<tspan fill="#e6edf3" font-weight="700"> — 동적 안정</tspan></text>
+  <rect x="432" y="167" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="187" fill="#7fd4a8" font-size="12" class="kr">접시테두리 ★</text>
+  <text x="442" y="202" fill="#5fae87" font-size="9">glenoid labrum</text>
+  <text x="442" y="213" fill="#6f8299" font-size="9">얕은 접시를 깊게 — 위쪽 찢김 =</text>
+  <text x="442" y="224" fill="#6f8299" font-size="9">SLAP</text>
+  <rect x="432" y="242" width="170" height="81" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="262" fill="#7fd4a8" font-size="12" class="kr">접시위팔인대 ·</text>
+  <text x="442" y="277" fill="#7fd4a8" font-size="12" class="kr">부리위팔인대 ★</text>
+  <text x="442" y="292" fill="#5fae87" font-size="9">glenohumeral / coracohumeral</text>
+  <text x="442" y="303" fill="#5fae87" font-size="9">ligg.</text>
+  <text x="442" y="314" fill="#6f8299" font-size="9">앞쪽 주머니를 보강</text>
+  <rect x="432" y="332" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="352" fill="#7fd4a8" font-size="12" class="kr">위팔가로인대 ★</text>
+  <text x="442" y="367" fill="#5fae87" font-size="9">transverse humeral lig.</text>
+  <text x="442" y="378" fill="#6f8299" font-size="9">결절사이고랑 위 — <tspan fill="#e6edf3" font-weight="700">위팔두갈래근</tspan></text>
+  <text x="442" y="389" fill="#6f8299" font-size="9">긴갈래 힘줄<tspan fill="#e6edf3" font-weight="700">을 붙든다</tspan></text>
+  <rect x="432" y="407" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="427" fill="#7fd4a8" font-size="12" class="kr">부리빗장인대 ★</text>
+  <text x="442" y="442" fill="#5fae87" font-size="9">coracoclavicular lig.</text>
+  <text x="442" y="453" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">마름인대(가쪽) + 원뿔인대(안쪽)</tspan></text>
+  <text x="442" y="464" fill="#6f8299" font-size="9">— 어깨가 빗장뼈에 매달린다</text>
+  <rect x="432" y="482" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="502" fill="#7fd4a8" font-size="12" class="kr">안쪽곁인대 ★</text>
+  <text x="442" y="517" fill="#5fae87" font-size="9">ulnar collateral lig.</text>
+  <text x="442" y="528" fill="#6f8299" font-size="9">앞·뒤·가로 세 띠 —</text>
+  <text x="442" y="539" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">밖굽이(valgus)</tspan> 힘을 막는다</text>
+  <rect x="432" y="557" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="577" fill="#7fd4a8" font-size="12" class="kr">노뼈머리띠인대 ★</text>
+  <text x="442" y="592" fill="#5fae87" font-size="9">anular lig. of radius</text>
+  <text x="442" y="603" fill="#6f8299" font-size="9">노뼈머리를 자뼈에 감는다 — 아이</text>
+  <text x="442" y="614" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">노뼈머리 아탈구</tspan></text>
+  <rect x="432" y="632" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="652" fill="#7fd4a8" font-size="12" class="kr">손목관절 ★</text>
+  <text x="442" y="667" fill="#5fae87" font-size="9">radiocarpal joint</text>
+  <text x="442" y="678" fill="#6f8299" font-size="9">노뼈 + 관절원반 ↔ <tspan fill="#e6edf3" font-weight="700">손배 · 반달 ·</tspan></text>
+  <text x="442" y="689" fill="#6f8299" font-size="9">세모뼈</text>
+  <rect x="432" y="707" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="727" fill="#7fd4a8" font-size="12" class="kr">곧창자방광오목 ★</text>
+  <text x="442" y="742" fill="#5fae87" font-size="9">rectovesical pouch (♂)</text>
+  <text x="442" y="753" fill="#6f8299" font-size="9">남자 복막안의 <tspan fill="#e6edf3" font-weight="700">가장 낮은 곳</tspan></text>
+  <rect x="432" y="771" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="791" fill="#7fd4a8" font-size="12" class="kr">방광자궁오목</text>
+  <text x="442" y="806" fill="#5fae87" font-size="9">vesicouterine pouch (♀)</text>
+  <text x="442" y="817" fill="#6f8299" font-size="9">얕다</text>
+  <rect x="432" y="835" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="855" fill="#7fd4a8" font-size="12" class="kr">곧창자자궁오목 ★</text>
+  <text x="442" y="870" fill="#5fae87" font-size="9">rectouterine pouch (♀, Douglas)</text>
+  <text x="442" y="881" fill="#6f8299" font-size="9">여자의 가장 낮은 곳 ·</text>
+  <text x="442" y="892" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">뒤질천장</tspan>으로 천자</text>
+  <rect x="432" y="910" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="930" fill="#7fd4a8" font-size="12" class="kr">자궁넓은인대 ★</text>
+  <text x="442" y="945" fill="#5fae87" font-size="9">broad ligament</text>
+  <text x="442" y="956" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">자궁관간막 · 난소간막 · 자궁간막</tspan></text>
+  <text x="442" y="967" fill="#6f8299" font-size="9">— 바닥에 자궁동맥·요관</text>
+  <rect x="432" y="985" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1005" fill="#7fd4a8" font-size="12" class="kr">두덩곧창자근 ★</text>
+  <text x="442" y="1020" fill="#5fae87" font-size="9">puborectalis</text>
+  <text x="442" y="1031" fill="#6f8299" font-size="9">곧창자를 뒤에서 <tspan fill="#e6edf3" font-weight="700">U자 고리</tspan>로 당긴다</text>
+  <text x="442" y="1042" fill="#6f8299" font-size="9">— 항문곧창자각(배변 참기)</text>
+  <rect x="432" y="1060" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1080" fill="#7fd4a8" font-size="12" class="kr">두덩꼬리근 · 엉덩꼬리근 ★</text>
+  <text x="442" y="1095" fill="#5fae87" font-size="9">pubococcygeus / iliococcygeus</text>
+  <text x="442" y="1106" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">항문올림근힘줄활</tspan>(속폐쇄근막의</text>
+  <text x="442" y="1117" fill="#6f8299" font-size="9">띠)에서 일어난다</text>
+  <rect x="432" y="1135" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1155" fill="#7fd4a8" font-size="12" class="kr">꼬리근 ★</text>
+  <text x="442" y="1170" fill="#5fae87" font-size="9">coccygeus</text>
+  <text x="442" y="1181" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">궁둥뼈가시</tspan> → 엉치뼈·꼬리뼈</text>
+  <rect x="432" y="1199" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1219" fill="#7fd4a8" font-size="12" class="kr">비뇨생식구멍 ★</text>
+  <text x="442" y="1234" fill="#5fae87" font-size="9">urogenital hiatus</text>
+  <text x="442" y="1245" fill="#6f8299" font-size="9">앞쪽 틈 — 요도(+질)가 지난다</text>
+  <line x1="26" y1="1264" x2="628" y2="1264" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1276" fill="#93a4b7" font-size="10.5">어깨관절은 접시가 얕아 <tspan fill="#e6edf3" font-weight="700">돌림근띠(SITS)</tspan>가 붙잡는다 — 아래쪽만 띠가 없어 <tspan fill="#e6edf3" font-weight="700">앞아래로</tspan> 빠진다.</text>
+  <text x="26" y="1294" fill="#93a4b7" font-size="10.5">복막의 가장 낮은 곳: 남 = <tspan fill="#e6edf3" font-weight="700">곧창자방광오목</tspan>, 여 = <tspan fill="#e6edf3" font-weight="700">곧창자자궁오목(Douglas)</tspan> — 고름·피가 고인다.</text>
+  <text x="26" y="1312" fill="#93a4b7" font-size="10.5">골반가로막 = <tspan fill="#e6edf3" font-weight="700">항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근</tspan>.</text>
+</svg>

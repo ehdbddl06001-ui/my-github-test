@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1308" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="배뇨·배변의 신경과 관절의 신경 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 14회차 실습주제(팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막) + 인제스트 섹션 a2-s14 §남자골반안 · §골반가로막 · §곧창자 · §항문관 · §어깨관절 · §팔꿉관절 · §손목관절 + SESSION_DETAILS 응용과제(배뇨·배변 기전) -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1308" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">배뇨·배변의 신경과 관절의 신경<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> continence &amp; articular nerves</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton)</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10">★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,125 H 615 V 125 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,225 H 615 V 194 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,225 H 615 V 264 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,429 H 615 V 339 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,429 H 615 V 432 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,429 H 615 V 528 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,275 H 419 V 125 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,275 H 419 V 225 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,275 H 419 V 429 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,667 H 615 V 605 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,667 H 615 V 674 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,667 H 615 V 738 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,772 H 419 V 667 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,772 H 419 V 808 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,772 H 419 V 883 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,991 H 615 V 958 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,991 H 615 V 1033 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,1108 H 615 V 1108 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1085 H 419 V 991 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1085 H 419 V 1108 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1085 H 419 V 1183 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,694 H 219 V 275 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,694 H 219 V 772 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,694 H 219 V 1085 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <rect x="26" y="676" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
+  <text x="36" y="696" fill="#9cc3ff" font-size="12" class="kr">14회차의 신경</text>
+  <rect x="232" y="242" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="262" fill="#9cc3ff" font-size="12" class="kr">골반 자율신경 ★</text>
+  <text x="242" y="277" fill="#7f9cc4" font-size="9">pelvic autonomic nerves</text>
+  <text x="242" y="288" fill="#6f8299" font-size="9">대동맥 앞 얼기에서 내려와 골반장기</text>
+  <text x="242" y="299" fill="#6f8299" font-size="9">양옆에서 다시 모인다</text>
+  <rect x="232" y="744" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="764" fill="#9cc3ff" font-size="12" class="kr">골반의 몸신경 ★</text>
+  <text x="242" y="779" fill="#7f9cc4" font-size="9">somatic nerves of the pelvis</text>
+  <text x="242" y="790" fill="#6f8299" font-size="9">골반벽·골반가로막·샅</text>
+  <rect x="232" y="1052" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="1072" fill="#9cc3ff" font-size="12" class="kr">팔 관절의 신경 ★</text>
+  <text x="242" y="1087" fill="#7f9cc4" font-size="9">articular nerves of the upper</text>
+  <text x="242" y="1098" fill="#7f9cc4" font-size="9">limb</text>
+  <text x="242" y="1109" fill="#6f8299" font-size="9">Hilton 법칙</text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="112" fill="#9cc3ff" font-size="12" class="kr">위아랫배신경얼기 ★</text>
+  <text x="442" y="127" fill="#7f9cc4" font-size="9">superior hypogastric plexus</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9">대동맥 갈림 아래 · 엉치곶 앞 —</text>
+  <text x="442" y="149" fill="#6f8299" font-size="9">교감 위주</text>
+  <rect x="432" y="192" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="212" fill="#9cc3ff" font-size="12" class="kr">골반내장신경 ★</text>
+  <text x="442" y="227" fill="#7f9cc4" font-size="9">pelvic splanchnic nn. (S2–S4)</text>
+  <text x="442" y="238" fill="#6f8299" font-size="9">엉치신경 <tspan fill="#e6edf3" font-weight="700">앞가지</tspan>에서 — 골반의</text>
+  <text x="442" y="249" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">부교감</tspan></text>
+  <rect x="432" y="396" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="416" fill="#9cc3ff" font-size="12" class="kr">아래아랫배신경얼기 ★</text>
+  <text x="442" y="431" fill="#7f9cc4" font-size="9">inferior hypogastric plexus</text>
+  <text x="442" y="442" fill="#6f8299" font-size="9">곧창자·방광·전립샘/질 <tspan fill="#e6edf3" font-weight="700">양옆</tspan> —</text>
+  <text x="442" y="453" fill="#6f8299" font-size="9">교감+부교감이 섞인다</text>
+  <rect x="432" y="634" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="654" fill="#9cc3ff" font-size="12" class="kr">음부신경 ★</text>
+  <text x="442" y="669" fill="#7f9cc4" font-size="9">pudendal n. (S2–S4)</text>
+  <text x="442" y="680" fill="#6f8299" font-size="9">큰궁둥구멍으로 나가 <tspan fill="#e6edf3" font-weight="700">궁둥뼈가시</tspan>를</text>
+  <text x="442" y="691" fill="#6f8299" font-size="9">돌아 작은궁둥구멍으로 들어온다</text>
+  <rect x="432" y="775" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="795" fill="#9cc3ff" font-size="12" class="kr">항문올림근신경 ★</text>
+  <text x="442" y="810" fill="#7f9cc4" font-size="9">n. to levator ani (S4)</text>
+  <text x="442" y="821" fill="#6f8299" font-size="9">골반가로막 <tspan fill="#e6edf3" font-weight="700">위면</tspan>에서 들어간다 —</text>
+  <text x="442" y="832" fill="#6f8299" font-size="9">배변 때 두덩곧창자근이 풀린다</text>
+  <rect x="432" y="850" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="870" fill="#9cc3ff" font-size="12" class="kr">폐쇄신경 ★</text>
+  <text x="442" y="885" fill="#7f9cc4" font-size="9">obturator n. (L2–L4)</text>
+  <text x="442" y="896" fill="#6f8299" font-size="9">골반 가쪽벽 · 폐쇄동맥 <tspan fill="#e6edf3" font-weight="700">위</tspan>로</text>
+  <text x="442" y="907" fill="#6f8299" font-size="9">폐쇄관을 지난다 — 난소오목 바닥</text>
+  <rect x="432" y="958" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="978" fill="#9cc3ff" font-size="12" class="kr">어깨관절 ★</text>
+  <text x="442" y="993" fill="#7f9cc4" font-size="9">glenohumeral joint</text>
+  <text x="442" y="1004" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">겨드랑신경 · 어깨위신경</tspan> +</text>
+  <text x="442" y="1015" fill="#6f8299" font-size="9">가쪽가슴근신경</text>
+  <rect x="432" y="1075" width="170" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="1095" fill="#9cc3ff" font-size="12" class="kr">팔꿉관절 ★</text>
+  <text x="442" y="1110" fill="#7f9cc4" font-size="9">elbow joint</text>
+  <text x="442" y="1121" fill="#6f8299" font-size="9">근육피부 · 노 · 자 · 정중신경 —</text>
+  <text x="442" y="1132" fill="#6f8299" font-size="9">넷 다</text>
+  <rect x="432" y="1150" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1170" fill="#9cc3ff" font-size="12" class="kr">손목관절 ★</text>
+  <text x="442" y="1185" fill="#7f9cc4" font-size="9">wrist joint</text>
+  <text x="442" y="1196" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">앞뼈사이신경</tspan>(정중) ·</text>
+  <text x="442" y="1207" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">뒤뼈사이신경</tspan>(노)</text>
+  <rect x="628" y="92" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="112" fill="#9cc3ff" font-size="12" class="kr">아랫배신경 ★</text>
+  <text x="638" y="127" fill="#7f9cc4" font-size="9">hypogastric nn.</text>
+  <text x="638" y="138" fill="#6f8299" font-size="9">좌우 한 줄씩 골반으로 —</text>
+  <text x="638" y="149" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">교감(T11–L2)</tspan></text>
+  <rect x="628" y="167" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="187" fill="#9cc3ff" font-size="12" class="kr">방광 배뇨근 수축 ★</text>
+  <text x="638" y="202" fill="#7f9cc4" font-size="9">detrusor contraction</text>
+  <text x="638" y="213" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">배뇨</tspan> — 속조임근은 풀린다</text>
+  <rect x="628" y="231" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="251" fill="#9cc3ff" font-size="12" class="kr">곧창자 수축 · 발기 ★</text>
+  <text x="638" y="266" fill="#7f9cc4" font-size="9">rectal emptying · erection</text>
+  <text x="638" y="277" fill="#6f8299" font-size="9">왼잘록창자굽이 아래 창자도</text>
+  <text x="638" y="288" fill="#6f8299" font-size="9">여기서 부교감을 받는다</text>
+  <rect x="628" y="306" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="326" fill="#9cc3ff" font-size="12" class="kr">방광신경얼기 ★</text>
+  <text x="638" y="341" fill="#7f9cc4" font-size="9">vesical plexus</text>
+  <text x="638" y="352" fill="#6f8299" font-size="9">교감 = 속요도조임근 수축(<tspan fill="#e6edf3" font-weight="700">저장</tspan></text>
+  <text x="638" y="363" fill="#6f8299" font-size="9">· 사정 때 역류 방지<tspan fill="#e6edf3" font-weight="700">)</tspan></text>
+  <rect x="628" y="381" width="160" height="103" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="401" fill="#9cc3ff" font-size="12" class="kr">전립샘신경얼기 →</text>
+  <text x="638" y="416" fill="#9cc3ff" font-size="12" class="kr">해면신경 ★</text>
+  <text x="638" y="431" fill="#7f9cc4" font-size="9">prostatic plexus → cavernous</text>
+  <text x="638" y="442" fill="#7f9cc4" font-size="9">nn.</text>
+  <text x="638" y="453" fill="#6f8299" font-size="9">전립샘 뒤가쪽 —</text>
+  <text x="638" y="464" fill="#6f8299" font-size="9">전립샘절제술에서 다치면</text>
+  <text x="638" y="475" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">발기부전</tspan></text>
+  <rect x="628" y="493" width="160" height="70" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="513" fill="#9cc3ff" font-size="12" class="kr">가운데·아래곧창자신경얼</text>
+  <text x="638" y="528" fill="#9cc3ff" font-size="12" class="kr">기</text>
+  <text x="638" y="543" fill="#7f9cc4" font-size="9">rectal plexuses</text>
+  <text x="638" y="554" fill="#6f8299" font-size="9">곧창자 벽 — 배변 반사의 날신경</text>
+  <rect x="628" y="572" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="592" fill="#9cc3ff" font-size="12" class="kr">아래곧창자신경 ★</text>
+  <text x="638" y="607" fill="#7f9cc4" font-size="9">inf. rectal n.</text>
+  <text x="638" y="618" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">바깥항문조임근</tspan> · 빗살선 아래</text>
+  <text x="638" y="629" fill="#6f8299" font-size="9">항문관 피부(통증 느낌)</text>
+  <rect x="628" y="647" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="667" fill="#9cc3ff" font-size="12" class="kr">샅신경 ★</text>
+  <text x="638" y="682" fill="#7f9cc4" font-size="9">perineal n.</text>
+  <text x="638" y="693" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">바깥요도조임근</tspan> · 샅근육</text>
+  <rect x="628" y="711" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="731" fill="#9cc3ff" font-size="12" class="kr">음경·음핵등신경</text>
+  <text x="638" y="746" fill="#7f9cc4" font-size="9">dorsal n. of penis/clitoris</text>
+  <text x="638" y="757" fill="#6f8299" font-size="9">감각 — 음경 등쪽</text>
+  <rect x="628" y="925" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="945" fill="#9cc3ff" font-size="12" class="kr">겨드랑신경 ★</text>
+  <text x="638" y="960" fill="#7f9cc4" font-size="9">axillary n. (C5–C6)</text>
+  <text x="638" y="971" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">네모공간</tspan> · 수술목을 감는다 —</text>
+  <text x="638" y="982" fill="#6f8299" font-size="9">아래로 빠지는 탈구에서 다친다</text>
+  <rect x="628" y="1000" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="1020" fill="#9cc3ff" font-size="12" class="kr">어깨위신경 ★</text>
+  <text x="638" y="1035" fill="#7f9cc4" font-size="9">suprascapular n. (C5–C6)</text>
+  <text x="638" y="1046" fill="#6f8299" font-size="9">어깨위패임(가로인대 <tspan fill="#e6edf3" font-weight="700">밑</tspan>) →</text>
+  <text x="638" y="1057" fill="#6f8299" font-size="9">가시위·가시아래근</text>
+  <rect x="628" y="1075" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="1095" fill="#9cc3ff" font-size="12" class="kr">자신경 ★</text>
+  <text x="638" y="1110" fill="#7f9cc4" font-size="9">ulnar n. (C8–T1)</text>
+  <text x="638" y="1121" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">안쪽위관절융기 뒤</tspan> 홈 —</text>
+  <text x="638" y="1132" fill="#6f8299" font-size="9">안쪽곁인대 바로 위를 지난다</text>
+  <line x1="26" y1="1226" x2="814" y2="1226" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1238" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3" font-weight="700">교감은 저장(참기), 부교감은 배출(누기)</tspan> — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다.</text>
+  <text x="26" y="1256" fill="#93a4b7" font-size="10.5">바깥조임근(요도·항문)은 <tspan fill="#e6edf3" font-weight="700">음부신경(S2–S4)</tspan> — 뜻대로 참는 근육은 몸신경이다.</text>
+  <text x="26" y="1274" fill="#93a4b7" font-size="10.5">관절의 신경은 <tspan fill="#e6edf3" font-weight="700">Hilton 법칙</tspan> — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다.</text>
+</svg>

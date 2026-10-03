@@ -2115,4 +2115,175 @@ SPECS: dict[str, dict] = {
                star=True, terminal=True)]),
     ]),
 },
+
+# ── 14회차 (2026-10-06) 팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 ──
+"s14-nerve": {
+    "title": "배뇨·배변의 신경과 관절의 신경",
+    "en": "continence & articular nerves",
+    "subtitle": "14회차 · 골반장기는 교감(T11–L2)·부교감(S2–S4)·몸신경(음부, S2–S4) 세 줄로, 관절은 그 위를 지나는 근육의 신경이 맡는다(Hilton)",
+    "kind": "nerve",
+    "source": "14회차 실습주제(팔의 관절 / 골반 복막·골반 절단·남녀 내부생식기관·골반가로막) + "
+              "인제스트 섹션 a2-s14 §남자골반안 · §골반가로막 · §곧창자 · §항문관 · §어깨관절 · §팔꿉관절 · §손목관절 "
+              "+ SESSION_DETAILS 응용과제(배뇨·배변 기전)",
+    "footer": [
+        "**교감은 저장(참기), 부교감은 배출(누기)** — 골반내장신경(S2–S4)이 방광 배뇨근을 짜고 속조임근을 푼다.",
+        "바깥조임근(요도·항문)은 **음부신경(S2–S4)** — 뜻대로 참는 근육은 몸신경이다.",
+        "관절의 신경은 **Hilton 법칙** — 관절을 움직이는 근육의 신경이 관절주머니와 그 위 피부도 맡는다.",
+    ],
+    "root": _n("14회차의 신경", children=[
+        _n("골반 자율신경", "pelvic autonomic nerves", "대동맥 앞 얼기에서 내려와 골반장기 양옆에서 다시 모인다",
+           star=True, children=[
+            _n("위아랫배신경얼기", "superior hypogastric plexus", "대동맥 갈림 아래 · 엉치곶 앞 — 교감 위주",
+               star=True, children=[
+                _n("아랫배신경", "hypogastric nn.", "좌우 한 줄씩 골반으로 — **교감(T11–L2)**",
+                   star=True, terminal=True)]),
+            _n("골반내장신경", "pelvic splanchnic nn. (S2–S4)", "엉치신경 **앞가지**에서 — 골반의 **부교감**",
+               star=True, children=[
+                _n("방광 배뇨근 수축", "detrusor contraction", "**배뇨** — 속조임근은 풀린다", star=True, terminal=True),
+                _n("곧창자 수축 · 발기", "rectal emptying · erection", "왼잘록창자굽이 아래 창자도 여기서 부교감을 받는다",
+                   star=True, terminal=True)]),
+            _n("아래아랫배신경얼기", "inferior hypogastric plexus", "곧창자·방광·전립샘/질 **양옆** — 교감+부교감이 섞인다",
+               star=True, children=[
+                _n("방광신경얼기", "vesical plexus", "교감 = 속요도조임근 수축(**저장 · 사정 때 역류 방지**)",
+                   star=True, terminal=True),
+                _n("전립샘신경얼기 → 해면신경", "prostatic plexus → cavernous nn.",
+                   "전립샘 뒤가쪽 — 전립샘절제술에서 다치면 **발기부전**", star=True, terminal=True),
+                _n("가운데·아래곧창자신경얼기", "rectal plexuses", "곧창자 벽 — 배변 반사의 날신경", terminal=True)]),
+        ]),
+        _n("골반의 몸신경", "somatic nerves of the pelvis", "골반벽·골반가로막·샅", star=True, children=[
+            _n("음부신경", "pudendal n. (S2–S4)", "큰궁둥구멍으로 나가 **궁둥뼈가시**를 돌아 작은궁둥구멍으로 들어온다",
+               star=True, children=[
+                _n("아래곧창자신경", "inf. rectal n.", "**바깥항문조임근** · 빗살선 아래 항문관 피부(통증 느낌)",
+                   star=True, terminal=True),
+                _n("샅신경", "perineal n.", "**바깥요도조임근** · 샅근육", star=True, terminal=True),
+                _n("음경·음핵등신경", "dorsal n. of penis/clitoris", "감각 — 음경 등쪽", terminal=True)]),
+            _n("항문올림근신경", "n. to levator ani (S4)", "골반가로막 **위면**에서 들어간다 — 배변 때 두덩곧창자근이 풀린다",
+               star=True, terminal=True),
+            _n("폐쇄신경", "obturator n. (L2–L4)", "골반 가쪽벽 · 폐쇄동맥 **위**로 폐쇄관을 지난다 — 난소오목 바닥",
+               star=True, terminal=True),
+        ]),
+        _n("팔 관절의 신경", "articular nerves of the upper limb", "Hilton 법칙", star=True, children=[
+            _n("어깨관절", "glenohumeral joint", "**겨드랑신경 · 어깨위신경** + 가쪽가슴근신경", star=True, children=[
+                _n("겨드랑신경", "axillary n. (C5–C6)", "**네모공간** · 수술목을 감는다 — 아래로 빠지는 탈구에서 다친다",
+                   star=True, terminal=True),
+                _n("어깨위신경", "suprascapular n. (C5–C6)", "어깨위패임(가로인대 **밑**) → 가시위·가시아래근",
+                   star=True, terminal=True)]),
+            _n("팔꿉관절", "elbow joint", "근육피부 · 노 · 자 · 정중신경 — 넷 다", star=True, children=[
+                _n("자신경", "ulnar n. (C8–T1)", "**안쪽위관절융기 뒤** 홈 — 안쪽곁인대 바로 위를 지난다",
+                   star=True, terminal=True)]),
+            _n("손목관절", "wrist joint", "**앞뼈사이신경**(정중) · **뒤뼈사이신경**(노)", star=True, terminal=True),
+        ]),
+    ]),
+},
+
+"s14-vessel": {
+    "title": "속엉덩동맥 · 골반의 정맥 · 어깨관절 둘레 고리",
+    "en": "internal iliac a. & pelvic veins",
+    "subtitle": "14회차 · 속엉덩동맥은 뒤줄기(벽쪽) · 앞줄기(내장+벽)로 갈리고, 골반 정맥은 얼기로 모여 속엉덩정맥으로 간다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein"],
+    "source": "14회차 인제스트 섹션 a2-s14 §속엉덩동맥 · §남자골반안 · §여자골반안 · §항문관 · §전립샘 · §어깨관절",
+    "footer": [
+        "뒤줄기는 **벽쪽 셋**(엉덩허리 · 가쪽엉치 · 위볼기) — 골반장기로 가는 가지는 모두 **앞줄기**다.",
+        "**자궁동맥은 요관 위를 건넌다**(water under the bridge) — 자궁절제술에서 요관을 묶는 자리.",
+        "곧창자 정맥은 **위 = 문맥계, 가운데·아래 = 대정맥계** — 문맥고혈압의 곁순환 자리.",
+    ],
+    "root": _n("14회차의 혈관", children=[
+        _n("속엉덩동맥", "internal iliac a.", "온엉덩동맥 갈림(**L5–S1 앞**) → 큰궁둥구멍 위에서 두 줄기",
+           kind="artery", star=True, children=[
+            _n("뒤줄기", "posterior division", "**벽쪽** 가지만", kind="artery", star=True, children=[
+                _n("엉덩허리동맥", "iliolumbar a.", "허리가지 · 엉덩근가지", kind="artery", terminal=True),
+                _n("가쪽엉치동맥", "lateral sacral a.", "앞엉치구멍으로", kind="artery", terminal=True),
+                _n("위볼기동맥", "superior gluteal a.", "**궁둥구멍근 위** 큰궁둥구멍 — 뒤줄기의 가장 큰 가지",
+                   kind="artery", star=True, terminal=True)]),
+            _n("앞줄기", "anterior division", "내장 가지 + 벽쪽 가지", kind="artery", star=True, children=[
+                _n("배꼽동맥", "umbilical a.", "앞부분 = **위방광동맥** · 뒷부분 막힘 = **안쪽배꼽인대**",
+                   kind="artery", star=True, terminal=True),
+                _n("폐쇄동맥", "obturator a.", "폐쇄신경 **아래**로 폐쇄관 — 바깥엉덩동맥 쪽 변이(corona mortis)",
+                   kind="artery", star=True, terminal=True),
+                _n("아래방광동맥 · 질동맥", "inf. vesical a. / vaginal a.", "남 = 방광바닥 · 정낭 · 전립샘 / 여 = 질",
+                   kind="artery", star=True, terminal=True),
+                _n("자궁동맥", "uterine a.", "자궁넓은인대 바닥에서 **요관 위를 건넌다** · 자궁 옆을 꼬불꼬불 오른다",
+                   kind="artery", star=True, terminal=True),
+                _n("가운데곧창자동맥", "middle rectal a.", "곧창자 아래쪽", kind="artery", terminal=True),
+                _n("속음부동맥", "internal pudendal a.", "큰궁둥구멍 → **궁둥뼈가시** → 작은궁둥구멍 → 음부신경관",
+                   kind="artery", star=True, terminal=True),
+                _n("아래볼기동맥", "inferior gluteal a.", "**궁둥구멍근 아래** 큰궁둥구멍", kind="artery",
+                   star=True, terminal=True)]),
+        ]),
+        _n("골반 밖에서 오는 동맥", "arteries entering from above", kind="artery", star=True, children=[
+            _n("난소동맥", "ovarian a.", "배대동맥(L2) → **난소걸이인대** 속으로 내려온다", kind="artery",
+               star=True, terminal=True),
+            _n("위곧창자동맥", "superior rectal a.", "아래창자간막동맥의 끝 — 빗살선 **위** 점막", kind="artery",
+               star=True, terminal=True),
+        ]),
+        _n("골반의 정맥", "pelvic veins", "판막 없는 **얼기**로 모인다", kind="vein", star=True, children=[
+            _n("전립샘정맥얼기", "prostatic venous plexus", "전립샘 앞·가쪽 · 음경등쪽깊은정맥을 받는다 → 방광정맥얼기",
+               kind="vein", star=True, children=[
+                _n("척추정맥얼기와 연결", "→ vertebral venous plexus", "판막이 없어 **전립샘암 척추 전이** 경로",
+                   kind="vein", star=True, terminal=True)]),
+            _n("곧창자정맥얼기", "rectal venous plexus", "속 = 점막밑(치핵) · 바깥", kind="vein", star=True, children=[
+                _n("위곧창자정맥", "superior rectal v.", "→ 아래창자간막정맥 → **문맥**", kind="vein",
+                   star=True, terminal=True),
+                _n("가운데·아래곧창자정맥", "middle / inferior rectal vv.", "→ 속엉덩정맥 · 속음부정맥 → **대정맥**",
+                   kind="vein", star=True, terminal=True)]),
+            _n("속엉덩정맥", "internal iliac v.", "동맥 **뒤안쪽** → 온엉덩정맥", kind="vein", terminal=True),
+        ]),
+        _n("어깨관절 둘레", "around the shoulder joint", kind="artery", star=True, children=[
+            _n("앞·뒤위팔휘돌이동맥", "ant. / post. circumflex humeral aa.",
+               "겨드랑동맥 셋째 부분 · **수술목**을 둘러 고리 — 뒤는 겨드랑신경과 **네모공간**",
+               kind="artery", star=True, terminal=True),
+            _n("어깨위동맥 · 어깨휘돌이동맥", "suprascapular / circumflex scapular aa.",
+               "어깨뼈 둘레 **문합** — 겨드랑동맥이 막혀도 팔로 피가 간다", kind="artery", terminal=True),
+        ]),
+    ]),
+},
+
+"s14-bundle": {
+    "title": "붙잡는 것 — 관절 안정 구조와 골반 복막",
+    "en": "stabilizers & pelvic pouches",
+    "subtitle": "14회차 · 어깨는 근육이, 팔꿉은 인대가 붙잡고, 골반장기는 복막 오목과 골반가로막이 받친다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "14회차 인제스트 섹션 a2-s14 §봉우리빗장관절 · §어깨관절 · §팔꿉관절 · §손목관절 · §남자골반안 · §여자골반안 · "
+              "§방광 겉모습 · §골반가로막 + SESSION_DETAILS 응용과제(어깨관절 안정화 구조 · 골반장기-복막 관계)",
+    "footer": [
+        "어깨관절은 접시가 얕아 **돌림근띠(SITS)**가 붙잡는다 — 아래쪽만 띠가 없어 **앞아래로** 빠진다.",
+        "복막의 가장 낮은 곳: 남 = **곧창자방광오목**, 여 = **곧창자자궁오목(Douglas)** — 고름·피가 고인다.",
+        "골반가로막 = **항문올림근(두덩곧창자 · 두덩꼬리 · 엉덩꼬리) + 꼬리근**.",
+    ],
+    "root": _n("붙잡는 것", children=[
+        _n("어깨관절 안정 구조", "stabilizers of the glenohumeral joint", "응용과제", star=True, children=[
+            _n("돌림근띠", "rotator cuff (SITS)", "**가시위 · 가시아래 · 작은원 · 어깨밑근** — 동적 안정",
+               star=True, terminal=True),
+            _n("접시테두리", "glenoid labrum", "얕은 접시를 깊게 — 위쪽 찢김 = SLAP", star=True, terminal=True),
+            _n("접시위팔인대 · 부리위팔인대", "glenohumeral / coracohumeral ligg.", "앞쪽 주머니를 보강",
+               star=True, terminal=True),
+            _n("위팔가로인대", "transverse humeral lig.", "결절사이고랑 위 — **위팔두갈래근 긴갈래 힘줄**을 붙든다",
+               star=True, terminal=True),
+            _n("부리빗장인대", "coracoclavicular lig.", "**마름인대(가쪽) + 원뿔인대(안쪽)** — 어깨가 빗장뼈에 매달린다",
+               star=True, terminal=True)]),
+        _n("팔꿉·손목", "elbow & wrist", star=True, children=[
+            _n("안쪽곁인대", "ulnar collateral lig.", "앞·뒤·가로 세 띠 — **밖굽이(valgus)** 힘을 막는다",
+               star=True, terminal=True),
+            _n("노뼈머리띠인대", "anular lig. of radius", "노뼈머리를 자뼈에 감는다 — 아이 **노뼈머리 아탈구**",
+               star=True, terminal=True),
+            _n("손목관절", "radiocarpal joint", "노뼈 + 관절원반 ↔ **손배 · 반달 · 세모뼈**",
+               star=True, terminal=True)]),
+        _n("골반 복막 오목", "pelvic peritoneal pouches", "응용과제 — 골반장기-복막 관계", star=True, children=[
+            _n("곧창자방광오목", "rectovesical pouch (♂)", "남자 복막안의 **가장 낮은 곳**", star=True, terminal=True),
+            _n("방광자궁오목", "vesicouterine pouch (♀)", "얕다", terminal=True),
+            _n("곧창자자궁오목", "rectouterine pouch (♀, Douglas)", "여자의 가장 낮은 곳 · **뒤질천장**으로 천자",
+               star=True, terminal=True),
+            _n("자궁넓은인대", "broad ligament", "**자궁관간막 · 난소간막 · 자궁간막** — 바닥에 자궁동맥·요관",
+               star=True, terminal=True)]),
+        _n("골반가로막", "pelvic diaphragm", "골반 바닥 — 위는 골반안, 아래는 샅", star=True, children=[
+            _n("두덩곧창자근", "puborectalis", "곧창자를 뒤에서 **U자 고리**로 당긴다 — 항문곧창자각(배변 참기)",
+               star=True, terminal=True),
+            _n("두덩꼬리근 · 엉덩꼬리근", "pubococcygeus / iliococcygeus",
+               "**항문올림근힘줄활**(속폐쇄근막의 띠)에서 일어난다", star=True, terminal=True),
+            _n("꼬리근", "coccygeus", "**궁둥뼈가시** → 엉치뼈·꼬리뼈", star=True, terminal=True),
+            _n("비뇨생식구멍", "urogenital hiatus", "앞쪽 틈 — 요도(+질)가 지난다", star=True, terminal=True)]),
+    ]),
+},
 }
