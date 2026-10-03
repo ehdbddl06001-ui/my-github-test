@@ -1,9 +1,9 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "65eb4b86d07ebdc5ce82",
-   "version": 12,
-   "date": "2026-10-02",
+   "hash": "d5ff9ec4b8d73ad168f1",
+   "version": 13,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_순환기내과.pdf",
    "pages": 23,
    "template_version": 11,
@@ -47,7 +47,7 @@
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
      "title": "혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때",
      "page": 16,
-     "concept_hash": "9f545e2ebcac9c1b",
+     "concept_hash": "0ef8813b54803472",
      "concept_version": 1
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
@@ -65,9 +65,9 @@
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "42a6775c52c81aaba7505db9fbcc10c9",
-    "version": 12,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "f5a7a1dea36d0e34f86bb8b821a8be3d",
+    "version": 13,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -81,10 +81,11 @@
     "MedKOS_학습서_순환기내과_v9_2026-09-28.pdf",
     "MedKOS_학습서_순환기내과_v10_2026-09-28.pdf",
     "MedKOS_학습서_순환기내과_v11_2026-09-29.pdf",
-    "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf"
+    "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf",
+    "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf"
    ],
    "changes": [
-    "새 단원: 실신 — 고위험 소견이 입원을 정한다"
+    "내용 수정: 혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때"
    ]
   },
   "피부과": {
@@ -157,9 +158,9 @@
    ]
   },
   "신장내과": {
-   "hash": "3d72c19cb8dbcb6e272d",
-   "version": 6,
-   "date": "2026-10-02",
+   "hash": "c12b85a603d9d594b276",
+   "version": 7,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -173,8 +174,8 @@
     "cn.neph.hyperkalemia.first-step": {
      "title": "고칼륨혈증 — 생리에서 첫 처치·재평가까지",
      "page": 3,
-     "concept_hash": "bb9f824c3252423c",
-     "concept_version": 2
+     "concept_hash": "0332368347557e12",
+     "concept_version": 3
     },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
      "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 신염증후군을 가르기",
@@ -185,9 +186,9 @@
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "cf00533cb96514070345acd37a2f54f6",
-    "version": 6,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "ccb07a25e7cb28f769437d0baebef33e",
+    "version": 7,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -195,16 +196,17 @@
     "MedKOS_학습서_신장내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_신장내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_신장내과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_신장내과_v6_2026-10-02.pdf"
+    "MedKOS_학습서_신장내과_v6_2026-10-02.pdf",
+    "MedKOS_학습서_신장내과_v7_2026-10-03.pdf"
    ],
    "changes": [
-    "내용 수정: 고칼륨혈증 — 생리에서 첫 처치·재평가까지"
+    "내용 갱신: 고칼륨혈증 — 생리에서 첫 처치·재평가까지 (정리본 v2 → v3)"
    ]
   },
   "소아청소년과": {
-   "hash": "ad120ed86fb482d81109",
-   "version": 9,
-   "date": "2026-09-29",
+   "hash": "ff9605e0ba64983a4587",
+   "version": 10,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_소아청소년과.pdf",
    "pages": 19,
    "template_version": 11,
@@ -242,7 +244,7 @@
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
      "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
      "page": 13,
-     "concept_hash": "2849cc6d90ae494d",
+     "concept_hash": "fb609b896534da74",
      "concept_version": 1
     },
     "cn.peds.stec-hus.supportive-no-antibiotics": {
@@ -266,9 +268,9 @@
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "602607d4bd25e867e0c0ec83239692bb",
-    "version": 9,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "ad1f4e49fe20a903c95319c64b162bf8",
+    "version": 10,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -279,10 +281,11 @@
     "MedKOS_학습서_소아청소년과_v6_2026-09-27.pdf",
     "MedKOS_학습서_소아청소년과_v7_2026-09-28.pdf",
     "MedKOS_학습서_소아청소년과_v8_2026-09-28.pdf",
-    "MedKOS_학습서_소아청소년과_v9_2026-09-29.pdf"
+    "MedKOS_학습서_소아청소년과_v9_2026-09-29.pdf",
+    "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf"
    ],
    "changes": [
-    "내용 갱신: 영아 백일해 — 약은 macrolide(마크롤라이드), 어린 영아는 아지스로마이신 (정리본 vNone → v1)"
+    "내용 수정: 비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만"
    ]
   },
   "안과": {
@@ -338,9 +341,9 @@
    ]
   },
   "정형외과": {
-   "hash": "0e580c225b9d87e8409b",
-   "version": 8,
-   "date": "2026-09-29",
+   "hash": "656dc532fd284d250f15",
+   "version": 9,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_정형외과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -359,22 +362,22 @@
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 5,
-     "concept_hash": "a38816080dbe74d6",
-     "concept_version": 3
+     "page": 6,
+     "concept_hash": "317c7d0b110d33dc",
+     "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
      "title": "소아 원위 요골 융기(torus) 골절 — 안정 골절이라 정복 없이 짧은 부목 고정",
-     "page": 7,
+     "page": 8,
      "concept_hash": "4882430c8d00869d",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "3d47b4d4cf39d73a6722b078ab07ddfc",
-    "version": 8,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "55c48b399ae49f7b1f5d006f99c50ba3",
+    "version": 9,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -384,10 +387,11 @@
     "MedKOS_학습서_정형외과_v5_2026-09-27.pdf",
     "MedKOS_학습서_정형외과_v6_2026-09-27.pdf",
     "MedKOS_학습서_정형외과_v7_2026-09-28.pdf",
-    "MedKOS_학습서_정형외과_v8_2026-09-29.pdf"
+    "MedKOS_학습서_정형외과_v8_2026-09-29.pdf",
+    "MedKOS_학습서_정형외과_v9_2026-10-03.pdf"
    ],
    "changes": [
-    "내용 갱신: 대퇴골두골단분리증 — 정복 없이 제자리 나사 고정 (정리본 v1 → v3)"
+    "내용 갱신: 대퇴골두골단분리증 — 정복 없이 제자리 나사 고정 (정리본 v3 → v4)"
    ]
   },
   "외과": {
@@ -431,11 +435,11 @@
    ]
   },
   "산부인과": {
-   "hash": "6224abcbd64362c4bc70",
-   "version": 7,
-   "date": "2026-09-28",
+   "hash": "dc3ef8bcc08a7fa4d468",
+   "version": 8,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_산부인과.pdf",
-   "pages": 18,
+   "pages": 20,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
@@ -464,28 +468,34 @@
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 11,
-     "concept_hash": "b00a685ef0d36b4d",
+     "page": 12,
+     "concept_hash": "aa6f1291592f80ae",
+     "concept_version": 3
+    },
+    "cn.path.ovarian-mature-cystic-teratoma.malignant-transformation-type": {
+     "title": "성숙낭성기형종 — 악성 변화는 편평 내막에서",
+     "page": 14,
+     "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
     "cn.obgyn.hydatidiform-mole.diagnosis": {
      "title": "임신 초기 출혈에서 포상기태 알아보기 — 주수보다 큰 자궁, 자궁 안 다낭성 덩이, 주수에 비해 매우 높은 β-hCG",
-     "page": 14,
+     "page": 16,
      "concept_hash": "4e53a72b7dfb4411",
      "concept_version": 3
     },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 뒤집혀 나온 자궁목내막 원주상피를 대체하는 것은 편평상피화생(생리), 이형성은 그 뒤에 오는 HPV 병변",
-     "page": 16,
+     "page": 18,
      "concept_hash": "2fdb4e2bcb1e5787",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "b4a3bd57dd0a365e55e8044aa5d9d70c",
-    "version": 7,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "0974988301bbc06f5290178027db209f",
+    "version": 8,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -494,9 +504,13 @@
     "MedKOS_학습서_산부인과_v4_2026-09-26.pdf",
     "MedKOS_학습서_산부인과_v5_2026-09-27.pdf",
     "MedKOS_학습서_산부인과_v6_2026-09-27.pdf",
-    "MedKOS_학습서_산부인과_v7_2026-09-28.pdf"
+    "MedKOS_학습서_산부인과_v7_2026-09-28.pdf",
+    "MedKOS_학습서_산부인과_v8_2026-10-03.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 분만 중 태아심박동 — 네 요소로 범주, 범주로 대응 (정리본 v2 → v3)",
+    "새 단원: 성숙낭성기형종 — 악성 변화는 편평 내막에서"
+   ]
   },
   "정신건강의학과": {
    "hash": "b834dcba613ea24ae4cd",
@@ -765,9 +779,9 @@
    ]
   },
   "내분비내과": {
-   "hash": "7c05008a845d247bdcd5",
-   "version": 6,
-   "date": "2026-10-02",
+   "hash": "6aee479752204a397f8b",
+   "version": 7,
+   "date": "2026-10-03",
    "file": "MedKOS_학습서_내분비내과.pdf",
    "pages": 9,
    "template_version": 11,
@@ -785,23 +799,23 @@
      "concept_version": 2
     },
     "cn.endo.pheochromocytoma.preoperative-alpha-blockade": {
-     "title": "갈색세포종 수술 전 준비 — 알파차단 먼저, 베타차단은 나중",
+     "title": "갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중",
      "page": 6,
-     "concept_hash": "8c88373f0f796cd8",
-     "concept_version": 1
+     "concept_hash": "99dfbf2fa4afa2fa",
+     "concept_version": 2
     },
     "cn.endo.hhs.initial-fluid-resuscitation": {
-     "title": "HHS(고혈당고삼투상태) — 삼투성 이뇨에서 첫 치료(등장식염수)까지",
-     "page": 8,
-     "concept_hash": "29badd8da8b34347",
-     "concept_version": 1
+     "title": "HHS — 첫 치료는 인슐린이 아니라 등장식염수",
+     "page": 7,
+     "concept_hash": "d67c6e924d21865e",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "44844e39307dd5e48c5165159c06a50c",
-    "version": 6,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "0fff9f5d92038e199ef420b442d76032",
+    "version": 7,
+    "uploaded": "2026-10-03T10:04:44+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
@@ -809,10 +823,12 @@
     "MedKOS_학습서_내분비내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_내분비내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_내분비내과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf"
+    "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf",
+    "MedKOS_학습서_내분비내과_v7_2026-10-03.pdf"
    ],
    "changes": [
-    "내용 갱신: 쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터 (정리본 v1 → v2)"
+    "내용 갱신: 갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중 (정리본 v1 → v2)",
+    "내용 갱신: HHS — 첫 치료는 인슐린이 아니라 등장식염수 (정리본 v1 → v2)"
    ]
   },
   "혈액종양내과": {
@@ -1110,13 +1126,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "7ecb941f0a2d58f274062a76d632a0a9",
+   "md5": "327c9fd932440420472bd83f61befa2b",
    "version": null,
-   "uploaded": "2026-10-02T10:19:04+09:00"
+   "uploaded": "2026-10-03T10:04:44+09:00"
   }
  },
- "updated": "2026-10-02"
+ "updated": "2026-10-03"
 }
