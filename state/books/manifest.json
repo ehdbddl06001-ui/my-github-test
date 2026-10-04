@@ -204,9 +204,9 @@
    ]
   },
   "소아청소년과": {
-   "hash": "ff9605e0ba64983a4587",
-   "version": 10,
-   "date": "2026-10-03",
+   "hash": "b68554bbc312a892f9e9",
+   "version": 11,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_소아청소년과.pdf",
    "pages": 19,
    "template_version": 11,
@@ -244,7 +244,7 @@
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
      "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
      "page": 13,
-     "concept_hash": "fb609b896534da74",
+     "concept_hash": "85cda6084703e5c3",
      "concept_version": 1
     },
     "cn.peds.stec-hus.supportive-no-antibiotics": {
@@ -268,9 +268,9 @@
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "ad1f4e49fe20a903c95319c64b162bf8",
-    "version": 10,
-    "uploaded": "2026-10-03T10:04:44+09:00"
+    "md5": "7cf01e5c38a479f452084404523dece9",
+    "version": 11,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -282,7 +282,8 @@
     "MedKOS_학습서_소아청소년과_v7_2026-09-28.pdf",
     "MedKOS_학습서_소아청소년과_v8_2026-09-28.pdf",
     "MedKOS_학습서_소아청소년과_v9_2026-09-29.pdf",
-    "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf"
+    "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf",
+    "MedKOS_학습서_소아청소년과_v11_2026-10-04.pdf"
    ],
    "changes": [
     "내용 수정: 비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만"
@@ -395,18 +396,18 @@
    ]
   },
   "외과": {
-   "hash": "3c82009c1baf5705585e",
-   "version": 7,
-   "date": "2026-09-30",
+   "hash": "85294d3afe44030a382d",
+   "version": 8,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_외과.pdf",
    "pages": 8,
    "template_version": 11,
    "units": {
     "cn.gs.acute-cholecystitis.grade2-early-lc": {
-     "title": "급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기",
+     "title": "급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다",
      "page": 2,
-     "concept_hash": "0393952167cca1a0",
-     "concept_version": 3
+     "concept_hash": "567fb30e920e7d73",
+     "concept_version": 4
     },
     "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
      "title": "유두갑상선암 — 크기·갑상선외 침범·림프절 전이(cN0/cN1a/cN1b)로 수술 범위를 정한다",
@@ -417,9 +418,9 @@
    },
    "drive": {
     "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
-    "md5": "761c05f6a099361c80407735b715cff7",
-    "version": 7,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "ce98a162e46b80847e42c176213b649f",
+    "version": 8,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_외과_v1_2026-09-23.pdf",
@@ -428,10 +429,11 @@
     "MedKOS_학습서_외과_v4_2026-09-27.pdf",
     "MedKOS_학습서_외과_v5_2026-09-27.pdf",
     "MedKOS_학습서_외과_v6_2026-09-28.pdf",
-    "MedKOS_학습서_외과_v7_2026-09-30.pdf"
+    "MedKOS_학습서_외과_v7_2026-09-30.pdf",
+    "MedKOS_학습서_외과_v8_2026-10-04.pdf"
    ],
    "changes": [
-    "내용 갱신: 급성 담석 담낭염 — 도쿄 가이드라인 등급과 수술 위험으로 조기 담낭절제·배액·담관 처치를 가르기 (정리본 v2 → v3)"
+    "내용 갱신: 급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다 (정리본 v3 → v4)"
    ]
   },
   "산부인과": {
@@ -562,9 +564,9 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "eeda7f983aceee4b4cd6",
-   "version": 11,
-   "date": "2026-09-29",
+   "hash": "0fa0fd719fbb419347e5",
+   "version": 12,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 24,
    "template_version": 11,
@@ -632,7 +634,7 @@
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
      "page": 20,
-     "concept_hash": "6d43f23d8b53627f",
+     "concept_hash": "acb1b105962b942c",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
@@ -650,9 +652,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "37520ce2863ce11f80afcc84149866d6",
-    "version": 11,
-    "uploaded": "2026-09-29T10:49:56+09:00"
+    "md5": "1f908a26fd30493f27edf87aa6b0ce53",
+    "version": 12,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -665,11 +667,11 @@
     "MedKOS_학습서_류마티스내과_v8_2026-09-27.pdf",
     "MedKOS_학습서_류마티스내과_v9_2026-09-28.pdf",
     "MedKOS_학습서_류마티스내과_v10_2026-09-28.pdf",
-    "MedKOS_학습서_류마티스내과_v11_2026-09-29.pdf"
+    "MedKOS_학습서_류마티스내과_v11_2026-09-29.pdf",
+    "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf"
    ],
    "changes": [
-    "내용 갱신: 성인 피부근염 — 진단 뒤 다음 검사는 암 선별 (정리본 vNone → v1)",
-    "내용 갱신: 가성통풍 — 약한 양성 복굴절 마름모 결정 (정리본 vNone → v1)"
+    "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정"
    ]
   },
   "호흡기내과": {
@@ -779,18 +781,18 @@
    ]
   },
   "내분비내과": {
-   "hash": "6aee479752204a397f8b",
-   "version": 7,
-   "date": "2026-10-03",
+   "hash": "d70182cc3178f29d964b",
+   "version": 8,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_내분비내과.pdf",
    "pages": 9,
    "template_version": 11,
    "units": {
     "cn.endo.thyroid-hormone-synthesis.thyroglobulin-colloid-localization": {
-     "title": "갑상샘 여포의 단백질 지도 — 콜로이드를 채우는 것은 타이로글로불린, 막을 따라 선으로 남는 것은 TPO·NIS",
+     "title": "갑상샘 IHC — 콜로이드를 채우면 타이로글로불린",
      "page": 2,
-     "concept_hash": "04841b58d5640c6d",
-     "concept_version": 2
+     "concept_hash": "5c10eeb4d04cd66e",
+     "concept_version": 3
     },
     "cn.endo.cushing-syndrome.screening-test": {
      "title": "쿠싱증후군 — 특이 소견이면 코르티솔 선별검사부터",
@@ -806,16 +808,16 @@
     },
     "cn.endo.hhs.initial-fluid-resuscitation": {
      "title": "HHS — 첫 치료는 인슐린이 아니라 등장식염수",
-     "page": 7,
+     "page": 8,
      "concept_hash": "d67c6e924d21865e",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1U11Wq5DUj1tmgEpmmngQzH4YpOQ99JjM",
-    "md5": "0fff9f5d92038e199ef420b442d76032",
-    "version": 7,
-    "uploaded": "2026-10-03T10:04:44+09:00"
+    "md5": "383278bf3b490130b7eed7d4a30ca31e",
+    "version": 8,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_내분비내과_v1_2026-09-25.pdf",
@@ -824,54 +826,63 @@
     "MedKOS_학습서_내분비내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_내분비내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_내분비내과_v6_2026-10-02.pdf",
-    "MedKOS_학습서_내분비내과_v7_2026-10-03.pdf"
+    "MedKOS_학습서_내분비내과_v7_2026-10-03.pdf",
+    "MedKOS_학습서_내분비내과_v8_2026-10-04.pdf"
    ],
    "changes": [
-    "내용 갱신: 갈색세포종 수술 전 — 알파차단 먼저, 베타는 나중 (정리본 v1 → v2)",
-    "내용 갱신: HHS — 첫 치료는 인슐린이 아니라 등장식염수 (정리본 v1 → v2)"
+    "내용 갱신: 갑상샘 IHC — 콜로이드를 채우면 타이로글로불린 (정리본 v2 → v3)"
    ]
   },
   "혈액종양내과": {
-   "hash": "2b3184a0cf22385366c8",
-   "version": 5,
-   "date": "2026-09-28",
+   "hash": "839df93e5d99cc115057",
+   "version": 6,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
-   "pages": 9,
+   "pages": 10,
    "template_version": 11,
    "units": {
+    "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo": {
+     "title": "HER2 양성 유방암 — 표적치료 전에는 심초음파",
+     "page": 2,
+     "concept_hash": "0e05f02611499a46",
+     "concept_version": 2
+    },
     "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes": {
      "title": "고환 종양 IHC — 「갈색 세포가 종양인가, 종양에 대한 반응인가」: 격막의 CD3 양성 작은 T 림프구 + 음성인 맑은 세포 판 = 정상피종",
-     "page": 2,
+     "page": 3,
      "concept_hash": "9bb947ab8aa41769",
      "concept_version": 2
     },
     "cn.neuro.glioblastoma.ring-enhancing-diagnosis": {
      "title": "교모세포종 — 축내 종괴 + 두꺼운 고리 조영",
-     "page": 4,
+     "page": 6,
      "concept_hash": "5b471f266cc85db6",
      "concept_version": 2
     },
     "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin": {
      "title": "GATA3 — 관강 상피 핵의 계통 전사인자: 「어디서 왔나」를 묻는 표지이지 「어떤 약이 듣나」나 「침윤했나」를 묻는 표지가 아니다",
-     "page": 6,
+     "page": 8,
      "concept_hash": "f32980f315e6ef08",
      "concept_version": 2
     }
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "30a853daea6033e480ade09e06d90ff5",
-    "version": 5,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "0d557ccce1721d19f710b63d27edf1c9",
+    "version": 6,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
     "MedKOS_학습서_혈액종양내과_v2_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v4_2026-09-27.pdf",
-    "MedKOS_학습서_혈액종양내과_v5_2026-09-28.pdf"
+    "MedKOS_학습서_혈액종양내과_v5_2026-09-28.pdf",
+    "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: HER2 양성 유방암 — 표적치료 전에는 심초음파"
+   ]
   },
   "알레르기내과": {
    "hash": "1685b9ce0246e997f38c",
@@ -1006,9 +1017,9 @@
    ]
   },
   "소화기내과": {
-   "hash": "fe9573928ec55def0aef",
-   "version": 8,
-   "date": "2026-10-02",
+   "hash": "7ddb7af1b80cd72b179e",
+   "version": 9,
+   "date": "2026-10-04",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1016,8 +1027,8 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "5949703a7d9aa161",
-     "concept_version": 1
+     "concept_hash": "934af2bf14598c6c",
+     "concept_version": 2
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
      "title": "게실 농양 — 큰 농양·안정이면 경피 배농",
@@ -1026,10 +1037,10 @@
      "concept_version": 2
     },
     "cn.gi.acetaminophen-toxicity.nac-mechanism": {
-     "title": "acetaminophen(아세트아미노펜) 중독 — NAPQI·글루타티온 고갈과 N-아세틸시스테인의 기전",
+     "title": "acetaminophen(아세트아미노펜) 중독 — NAC 는 글루타티온을 다시 채운다",
      "page": 5,
-     "concept_hash": "e3718f07b2faf51d",
-     "concept_version": 1
+     "concept_hash": "3902073767b85dbb",
+     "concept_version": 2
     },
     "cn.path.hepatic-congestion.zone3-mechanism": {
      "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
@@ -1040,9 +1051,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "0a74781d22037f1967883ed2406738e9",
-    "version": 8,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "d9b81a4b96d8d93697b55e02bdad138d",
+    "version": 9,
+    "uploaded": "2026-10-04T09:25:40+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1052,10 +1063,12 @@
     "MedKOS_학습서_소화기내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_소화기내과_v6_2026-09-29.pdf",
     "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf",
-    "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf"
+    "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf",
+    "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf"
    ],
    "changes": [
-    "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
+    "내용 갱신: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기 (정리본 v1 → v2)",
+    "내용 갱신: acetaminophen(아세트아미노펜) 중독 — NAC 는 글루타티온을 다시 채운다 (정리본 v1 → v2)"
    ]
   },
   "신경과": {
@@ -1126,13 +1139,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "327c9fd932440420472bd83f61befa2b",
+   "md5": "fcbcb41f61eb4ff0101e6a11a5745010",
    "version": null,
-   "uploaded": "2026-10-03T10:04:44+09:00"
+   "uploaded": "2026-10-04T09:25:40+09:00"
   }
  },
- "updated": "2026-10-03"
+ "updated": "2026-10-04"
 }
