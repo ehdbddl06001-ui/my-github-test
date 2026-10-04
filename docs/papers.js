@@ -2,6 +2,38 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0715",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Advances in left bundle branch area pacing: current evidence, clinical applications, and future perspectives",
+  "authors": [
+   "Alam Wissam",
+   "Bisson Arnaud",
+   "Fauchier Laurent",
+   "Moini Cyrus"
+  ],
+  "journal": "Expert review of cardiovascular therapy",
+  "doi": "10.1080/14779072.2026.2744007",
+  "pmid": "42829950",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42829950/",
+  "pubdate": "2026-10-04",
+  "date": "2026-10-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**INTRODUCTION:** Left bundle branch area pacing (LBBAP) resynchronizes the left ventricle through the conduction system rather than through a coronary sinus lead, and is increasingly used as an alternative to biventricular pacing (BVP) for cardiac resynchronization therapy (CRT) in heart failure with reduced ejection fraction.\n\n**AREAS COVERED:** Drawing on a search of PubMed, Embase, the Cochrane Library and ClinicalTrials.gov from January 2015 through September 2026, this review covers the anatomical basis of LBBAP, implantation and confirmation of capture, complications, observational and randomized comparisons with BVP, guideline and consensus positions, and emerging technologies from ultra-high-frequency electrocardiography to leadless pacing.\n\n**EXPERT OPINION:** Registries and meta-analyses favor LBBAP, but six randomized trials point in different directions, from inferiority to a large reduction in death or heart failure hospitalization over three years. Where capture type was reported, outcome followed confirmed conduction system capture more closely than randomized allocation, a pattern that is consistent but unproven. Until trials with hard endpoints report capture type, we would place LBBAP first in centers able to document conduction system capture in most of their patients, and keep BVP as the default elsewhere.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0714",
   "topic": "Pediatrics",
   "subtopic": "",
