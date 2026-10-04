@@ -166,6 +166,9 @@ figures_wanted:
   caption_terms:
   - sacroiliitis
   modality: XR_MSK
+figures_rejected:
+- asset: PMC-PMC12869721_Figure1
+  reason: 천장관절 영상이 아니라 ChatGPT 판독 성능의 ROC 곡선 그래프다
 ---
 
 ## 정의
