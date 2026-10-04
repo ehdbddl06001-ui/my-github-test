@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3302,
+  "total": 3314,
   "byType": {
    "kmle": 1280,
    "anatomy": 800,
+   "imaging": 236,
    "paper": 714,
-   "imaging": 224,
    "concept": 93,
    "usmle": 174,
    "ailab": 14,
@@ -38,38 +38,38 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 82,
    "Hematology": 77,
    "Laboratory Medicine": 71,
-   "산부인과": 43,
-   "순환기": 22,
+   "산부인과": 45,
+   "순환기": 23,
    "Physiology": 20,
-   "호흡기": 15,
+   "호흡기": 16,
    "Pharmacology": 14,
+   "소화기": 14,
    "Biochemistry": 13,
    "Microbiology": 13,
    "병리·조직학": 13,
-   "소화기": 13,
-   "소아과": 11,
+   "소아과": 12,
+   "혈액·종양": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
    "감염": 10,
    "내분비": 10,
    "신경": 10,
-   "혈액·종양": 10,
-   "신장·비뇨기": 9,
-   "응급·중환자": 9,
+   "신장·비뇨기": 10,
+   "응급·중환자": 10,
    "예방의학·역학": 8,
+   "외과": 8,
    "피부과": 8,
-   "외과": 7,
+   "약리": 6,
    "근골격·류마티스": 5,
-   "약리": 5,
    "정신과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "안과": 4,
+   "영상의학": 4,
    "이비인후과": 4,
    "Oncology": 3,
-   "영상의학": 3,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2250,
+   "high": 2262,
    "medium": 1002,
    "low": 50
   },
@@ -718,6 +718,214 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-05.md",
    "snippet": "오늘의 학습 (2026 10 05 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 25일 · Tagging 2까지 14일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-05 팔·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 05 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 25일 · Tagging 2까지 14일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0237",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 페니토인 증량 뒤 비선형 약동학",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0237.md",
+   "snippet": "A 42 year old man with focal epilepsy comes for follow up. He has taken phenytoin 300 mg daily for 3 months with good adherence but has had two focal seizures with impaired awareness in the past month. His steady state total serum phenytoin",
+   "text": "약리 약리 — 페니토인 증량 뒤 비선형 약동학 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 42 year old man with focal epilepsy comes for follow up. He has taken phenytoin 300 mg daily for 3 months with good adherence but has had two focal seizures with impaired awareness in the past month. His steady state total serum phenytoin concentration is 8 mg/L, and serum albumin is 4.2 g/dL. He takes no other medications and drinks no alcohol. Physical examination shows no nystagmus or ataxia. The daily dose is increased to 400 mg. Assume that phenytoin elimination follows Michaelis Menten kinetics with a Km of 4 mg/L, that bioavailability and the salt fraction are unchanged, and that adherence remains complete. Which of the following is the closest expected new steady state total serum phenytoin concentration? A. 24 mg/L B. 32 mg/L C. 10.7 mg/L D. 16 mg/L E. 14 mg/L"
+  },
+  {
+   "id": "imaging-2026-0236",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 안정 시 협착음이 있는 크룹",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0236.md",
+   "snippet": "A 2 year old boy is brought to the emergency department at 2 AM because of a barking cough and noisy breathing that began 3 hours ago. He has had a runny nose and low grade fever for 2 days. He has received all recommended vaccinations. He ",
+   "text": "소아과 소아청소년 — 안정 시 협착음이 있는 크룹 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 2 year old boy is brought to the emergency department at 2 AM because of a barking cough and noisy breathing that began 3 hours ago. He has had a runny nose and low grade fever for 2 days. He has received all recommended vaccinations. He is not drooling and is drinking. Temperature is 38.1°C (100.6°F), pulse is 142/min, respirations are 40/min, and oxygen saturation is 96% on room air. He is alert and sitting on his mother's lap. Inspiratory stridor is heard while he is calm, and there are moderate suprasternal and subcostal retractions. Air entry is decreased but equal bilaterally. The pharynx is mildly erythematous without exudate. Which of the following is the most appropriate management? A. Nebulized albuterol B. Intravenous ceftriaxone and lateral neck radiography C. Cool mist humidification alone D. Oral dexamethasone and nebulized epinephrine E. Oral dexamethasone alone"
+  },
+  {
+   "id": "imaging-2026-0235",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 성인 면역혈소판감소증의 첫 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0235.md",
+   "snippet": "32세 여자가 5일 전부터 다리에 붉은 점이 생기고 양치할 때 잇몸에서 피가 조금 나서 병원에 왔다. 코피, 혈뇨, 혈변은 없고 월경량은 평소와 같다. 2주 전 감기를 앓았다. 복용하는 약은 없다. 혈압 118/72 mmHg, 맥박 76회/분, 체온 36.7°C 이다. 양쪽 다리에 점상출혈이 흩어져 있고 입안에 혈포는 없다. 간과 비장, 림프절은 만져지지 않는다. 신경학적 검사는 정상이다. 혈색소 13.2 g/dL, 백혈구 6",
+   "text": "혈액·종양 혈액·종양 — 성인 면역혈소판감소증의 첫 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 32세 여자가 5일 전부터 다리에 붉은 점이 생기고 양치할 때 잇몸에서 피가 조금 나서 병원에 왔다. 코피, 혈뇨, 혈변은 없고 월경량은 평소와 같다. 2주 전 감기를 앓았다. 복용하는 약은 없다. 혈압 118/72 mmHg, 맥박 76회/분, 체온 36.7°C 이다. 양쪽 다리에 점상출혈이 흩어져 있고 입안에 혈포는 없다. 간과 비장, 림프절은 만져지지 않는다. 신경학적 검사는 정상이다. 혈색소 13.2 g/dL, 백혈구 6,800/mm³(백분율 정상), 혈소판 12,000/mm³ 이다. 말초혈액도말에서 큰 혈소판이 보이고 그 외 이상은 없다. 프로트롬빈시간과 활성화부분트롬보플라스틴시간은 정상이다. HIV·C형간염 항체는 음성이다. 임신 반응은 음성이다. 첫 치료로 가장 적절한 것은? A. 정맥 면역글로불린 단독 B. 혈소판 수혈 C. 비장절제술 D. 트롬보포이에틴 수용체 작용제 E. 부신피질호르몬"
+  },
+  {
+   "id": "imaging-2026-0234",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 글루텐을 이미 끊은 환자의 셀리악병 평가",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0234.md",
+   "snippet": "A 34 year old woman comes to the physician because of bloating and loose stools for 1 year and iron deficiency anemia that did not improve with 6 months of oral iron. Three months ago, she started a strict gluten free diet on her own after ",
+   "text": "소화기 소화기·간담췌 — 글루텐을 이미 끊은 환자의 셀리악병 평가 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 34 year old woman comes to the physician because of bloating and loose stools for 1 year and iron deficiency anemia that did not improve with 6 months of oral iron. Three months ago, she started a strict gluten free diet on her own after reading about it online, and her bloating and diarrhea have since resolved. She wants to know whether she has celiac disease. Her sister has type 1 diabetes mellitus. She has no other medical conditions. Vital signs are within normal limits, and BMI is 20 kg/m2. Physical examination shows no abnormalities. Hemoglobin is 10.8 g/dL with a mean corpuscular volume of 74 μm3. Serum IgA tissue transglutaminase antibody is negative, and total serum IgA is normal. She is reluctant to resume eating gluten. Which of the following is the most appropriate next step in evaluation? A. Serum IgG anti gliadin antibody B. Lactose hydrogen breath test C. HLA DQ2 and HLA DQ8 genotyping D. Upper endoscopy with duodenal biopsy now E. Repeat IgA tissue transglutaminase antibody in 3 months"
+  },
+  {
+   "id": "imaging-2026-0233",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 중증 전자간증의 경련 예방",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0233.md",
+   "snippet": "A 31 year old woman, gravida 2, para 1, at 34 weeks' gestation comes to the labor and delivery unit because of a severe headache for 4 hours and seeing spots. Her pregnancy had been uncomplicated, and her blood pressure was 118/74 mm Hg at ",
+   "text": "산부인과 산과 — 중증 전자간증의 경련 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 31 year old woman, gravida 2, para 1, at 34 weeks' gestation comes to the labor and delivery unit because of a severe headache for 4 hours and seeing spots. Her pregnancy had been uncomplicated, and her blood pressure was 118/74 mm Hg at 30 weeks. She takes a prenatal vitamin. Blood pressure is 168/112 mm Hg on two readings 15 minutes apart, pulse is 92/min, and respirations are 16/min. Deep tendon reflexes are 3+ with no clonus. There is no right upper quadrant tenderness. Urine dipstick shows 3+ protein. Platelet count is 162,000/mm3, AST is 32 U/L, and serum creatinine is 0.8 mg/dL. The fetal heart rate tracing is reassuring. Intravenous labetalol is given. In addition, which of the following is the most appropriate pharmacotherapy to prevent seizures? A. Magnesium sulfate B. Phenytoin C. Diazepam D. Levetiracetam E. Nifedipine"
+  },
+  {
+   "id": "imaging-2026-0232",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 다낭난소증후군 불임의 배란 유도",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0232.md",
+   "snippet": "28세 여자가 1년 동안 피임하지 않았는데도 임신이 되지 않아 병원에 왔다. 초경 이후 월경이 불규칙하여 1년에 5회 정도 한다. 얼굴에 여드름이 있고 턱에 굵은 털이 난다. 키 160 cm, 몸무게 79 kg(체질량지수 31 kg/m²)이다. 혈압 124/78 mmHg 이다. 혈청 총 테스토스테론은 약간 높고, 갑상샘자극호르몬과 프로락틴, 17 하이드록시프로게스테론은 정상이다. 공복 혈당 98 mg/dL 이다. 질초음파에서 ",
+   "text": "산부인과 부인과 — 다낭난소증후군 불임의 배란 유도 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 28세 여자가 1년 동안 피임하지 않았는데도 임신이 되지 않아 병원에 왔다. 초경 이후 월경이 불규칙하여 1년에 5회 정도 한다. 얼굴에 여드름이 있고 턱에 굵은 털이 난다. 키 160 cm, 몸무게 79 kg(체질량지수 31 kg/m²)이다. 혈압 124/78 mmHg 이다. 혈청 총 테스토스테론은 약간 높고, 갑상샘자극호르몬과 프로락틴, 17 하이드록시프로게스테론은 정상이다. 공복 혈당 98 mg/dL 이다. 질초음파에서 양쪽 난소에 2~9 mm 난포가 20개 이상 보인다. 자궁난관조영술에서 양쪽 난관이 열려 있고, 남편의 정액검사는 정상이다. 체중 감량과 운동을 지도하였다. 배란을 유도하기 위한 약으로 가장 적절한 것은? A. 레트로졸 B. 클로미펜 C. 메트포르민 D. 복합경구피임약 E. 생식샘자극호르몬 주사"
+  },
+  {
+   "id": "imaging-2026-0231",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 저혈압을 동반한 아나필락시스의 첫 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0231.md",
+   "snippet": "27세 여자가 식당에서 땅콩 소스가 든 음식을 먹고 15분 뒤 온몸이 가렵고 숨이 차서 구급차로 응급실에 왔다. 어릴 때 땅콩을 먹고 두드러기가 난 적이 있다. 복용하는 약은 없다. 혈압 84/50 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.9°C, 산소포화도(실내 공기) 92 % 이다. 의식은 있으나 불안해한다. 몸통과 팔에 넓은 팽진이 있고 입술이 부어 있다. 양쪽 폐에서 호기 천명이 들리고 협착음은 없다.",
+   "text": "응급·중환자 응급·중환자·외상 — 저혈압을 동반한 아나필락시스의 첫 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 27세 여자가 식당에서 땅콩 소스가 든 음식을 먹고 15분 뒤 온몸이 가렵고 숨이 차서 구급차로 응급실에 왔다. 어릴 때 땅콩을 먹고 두드러기가 난 적이 있다. 복용하는 약은 없다. 혈압 84/50 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.9°C, 산소포화도(실내 공기) 92 % 이다. 의식은 있으나 불안해한다. 몸통과 팔에 넓은 팽진이 있고 입술이 부어 있다. 양쪽 폐에서 호기 천명이 들리고 협착음은 없다. 복부에 압통이 없다. 산소를 투여하고 다리를 올린 뒤 정맥로를 확보하였다. 다음으로 가장 먼저 해야 할 처치는? A. 디펜히드라민 50 mg 정맥주사 B. 메틸프레드니솔론 125 mg 정맥주사 C. 살부타몰 분무 흡입 D. 에피네프린 0.5 mg 넓적다리 바깥쪽 근육주사 E. 에피네프린 1 mg 정맥 일시주사"
+  },
+  {
+   "id": "imaging-2026-0230",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 박출률 감소 심부전의 네 번째 약",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0230.md",
+   "snippet": "62세 남자가 박출률 감소 심부전으로 외래에 정기 방문하였다. 2년 전 전벽 심근경색 뒤 진단되었고 사쿠비트릴 발사르탄, 카르베딜롤, 스피로노락톤, 푸로세미드를 최대 내약 용량으로 복용하고 있다. 지금은 평지를 걸을 때는 괜찮지만 계단 두 층을 오르면 숨이 차다. 당뇨병은 없다. 혈압 112/70 mmHg, 맥박 64회/분(규칙적), 체온 36.6°C 이다. 경정맥 확장과 하지 부종은 없고 폐에서 수포음이 들리지 않는다. 심전",
+   "text": "순환기 순환기 — 박출률 감소 심부전의 네 번째 약 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 62세 남자가 박출률 감소 심부전으로 외래에 정기 방문하였다. 2년 전 전벽 심근경색 뒤 진단되었고 사쿠비트릴 발사르탄, 카르베딜롤, 스피로노락톤, 푸로세미드를 최대 내약 용량으로 복용하고 있다. 지금은 평지를 걸을 때는 괜찮지만 계단 두 층을 오르면 숨이 차다. 당뇨병은 없다. 혈압 112/70 mmHg, 맥박 64회/분(규칙적), 체온 36.6°C 이다. 경정맥 확장과 하지 부종은 없고 폐에서 수포음이 들리지 않는다. 심전도는 동리듬이고 QRS 폭은 100 ms 이다. 혈청 칼륨 4.6 mEq/L, 크레아티닌 1.3 mg/dL, 추정 사구체여과율 58 mL/분/1.73 m² 이다. 심장초음파에서 좌심실 박출률은 30 % 이다. 사망률을 낮추기 위해 추가할 약으로 가장 적절한 것은? A. 암로디핀 B. 다파글리플로진 C. 이바브라딘 D. 디곡신 E. 히드랄라진·질산염"
+  },
+  {
+   "id": "imaging-2026-0229",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 유방 종괴 절제 조직의 중간섬유 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0229.md",
+   "snippet": "A 45 year old woman undergoes excision of a 2 cm, mobile, rubbery mass in the upper outer quadrant of the left breast that has been present for 3 years without change in size. She has no family history of breast or ovarian cancer. Mammograp",
+   "text": "외과 외과계 — 유방 종괴 절제 조직의 중간섬유 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 45 year old woman undergoes excision of a 2 cm, mobile, rubbery mass in the upper outer quadrant of the left breast that has been present for 3 years without change in size. She has no family history of breast or ovarian cancer. Mammography showed a well circumscribed oval mass without calcifications, and core needle biopsy showed a fibroadenoma. The excised mass is a fibroadenoma with clear margins. A section of the adjacent normal breast tissue, including lobules, dense collagenous stroma, and fat, is stained by immunohistochemistry with an antibody against an intermediate filament protein and is shown. In a poorly differentiated metastatic tumor of unknown primary site, strong staining for this same class of intermediate filament would most strongly indicate which of the following tumor types? A. Sarcoma B. Melanoma C. Lymphoma D. Glioma E. Carcinoma"
+  },
+  {
+   "id": "imaging-2026-0228",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 전립선비대증 조직의 분비상피와 5α-환원효소 억제제",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0228.md",
+   "snippet": "68세 남자가 2년 동안 점점 심해진 빈뇨, 야간뇨, 약한 소변 줄기로 비뇨의학과에 왔다. 1년 전부터 탐술로신을 복용하여 소변 줄기는 조금 나아졌지만 야간뇨는 하룻밤 3회로 남아 있다. 요폐나 혈뇨는 없었다. 직장수지검사에서 전립선은 고무처럼 단단하고 매끈하게 커져 있으며 결절은 없다. 경직장초음파에서 전립선 부피는 62 mL 이다. 혈청 전립선특이항원(PSA)이 6.2 ng/mL 로 높아 전립선 조직검사를 하였고 악성 세포",
+   "text": "신장·비뇨기 신장·비뇨 — 전립선비대증 조직의 분비상피와 5α-환원효소 억제제 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 68세 남자가 2년 동안 점점 심해진 빈뇨, 야간뇨, 약한 소변 줄기로 비뇨의학과에 왔다. 1년 전부터 탐술로신을 복용하여 소변 줄기는 조금 나아졌지만 야간뇨는 하룻밤 3회로 남아 있다. 요폐나 혈뇨는 없었다. 직장수지검사에서 전립선은 고무처럼 단단하고 매끈하게 커져 있으며 결절은 없다. 경직장초음파에서 전립선 부피는 62 mL 이다. 혈청 전립선특이항원(PSA)이 6.2 ng/mL 로 높아 전립선 조직검사를 하였고 악성 세포는 없었다. 혈청 크레아티닌은 1.0 mg/dL 이다. 조직검사 검체에 PSA 에 대한 면역조직화학염색을 하였고 결과는 그림과 같다. 그림에서 갈색으로 염색된 세포 구획을 줄여 전립선 부피를 줄이기 위해 탐술로신에 더할 약으로 가장 적절한 것은? A. 미라베그론 B. 피나스테리드 C. 실로도신 D. 타다라필 E. 옥시부티닌"
+  },
+  {
+   "id": "imaging-2026-0227",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 흉부 CT 의 표시 창과 종격동 평가",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0227.md",
+   "snippet": "60세 여자가 건강검진에서 흉부 CT 를 받은 뒤 결과를 듣기 위해 호흡기내과에 왔다. 30갑년 흡연자로 2년 전에 끊었다. 기침, 객혈, 체중 감소는 없다. 고혈압으로 암로디핀을 복용한다. 혈압 128/78 mmHg, 맥박 74회/분, 호흡 16회/분, 산소포화도(실내 공기) 97 % 이다. 목과 빗장뼈위 림프절은 만져지지 않는다. 흉부 CT(조영제 없이, 절편 두께 3 mm)의 폐 꼭대기 높이 단면은 그림과 같다. 담당 의",
+   "text": "영상의학 진단검사·영상의학 판독 — 흉부 CT 의 표시 창과 종격동 평가 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 60세 여자가 건강검진에서 흉부 CT 를 받은 뒤 결과를 듣기 위해 호흡기내과에 왔다. 30갑년 흡연자로 2년 전에 끊었다. 기침, 객혈, 체중 감소는 없다. 고혈압으로 암로디핀을 복용한다. 혈압 128/78 mmHg, 맥박 74회/분, 호흡 16회/분, 산소포화도(실내 공기) 97 % 이다. 목과 빗장뼈위 림프절은 만져지지 않는다. 흉부 CT(조영제 없이, 절편 두께 3 mm)의 폐 꼭대기 높이 단면은 그림과 같다. 담당 의사는 같은 검사에서 기관 옆 종격동 림프절의 크기를 평가하려 하였는데 그림의 영상에서는 종격동 구조가 서로 구별되지 않았다. 다음으로 해야 할 것으로 가장 적절한 것은? A. 양전자방출단층촬영(PET CT)을 시행한다 B. 흉부 자기공명영상을 시행한다 C. 같은 영상을 종격동창으로 바꿔 다시 본다 D. 조영제를 주사하고 흉부 CT 를 다시 찍는다 E. 같은 영상을 1 mm 절편으로 다시 재구성한다"
+  },
+  {
+   "id": "imaging-2026-0226",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 양측 폐 음영과 산소에 잘 오르지 않는 저산소혈증의 기전",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+   "confidence": "high",
+   "date": "2026-10-04",
+   "path": "content/imaging/2026/imaging-2026-0226.md",
+   "snippet": "A 64 year old man comes to the emergency department because of fever, cough, and progressive shortness of breath for 6 days. He has hypertension treated with lisinopril. He has never smoked. Temperature is 38.6°C (101.5°F), pulse is 104/min",
+   "text": "호흡기 호흡기 — 양측 폐 음영과 산소에 잘 오르지 않는 저산소혈증의 기전 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537 A 64 year old man comes to the emergency department because of fever, cough, and progressive shortness of breath for 6 days. He has hypertension treated with lisinopril. He has never smoked. Temperature is 38.6°C (101.5°F), pulse is 104/min, respirations are 26/min, and blood pressure is 132/78 mm Hg. Crackles are heard over both lung bases. Hemoglobin concentration is 14.1 g/dL. Arterial blood gas analysis on room air shows pH 7.47, PaCO2 32 mm Hg, and PaO2 54 mm Hg. After 20 minutes of breathing 100% oxygen through a tightly fitted non rebreather mask, PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph is shown. Which of the following is the most likely mechanism of this patient's hypoxemia? A. Perfusion of alveoli that are filled with exudate and not ventilated B. Regional ventilation perfusion mismatch from narrowed airways C. Reduced alveolar ventilation from depressed respiratory drive D. Diffusion limitation across a thickened alveolar capillary membrane E. Reduced partial pressure of oxygen in the inspired air"
   },
   {
    "id": "anatomy-daily-2026-10-04",

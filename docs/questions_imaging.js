@@ -2,6 +2,1594 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0229",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "외과계 — 유방 종괴 절제 조직의 중간섬유 면역조직화학",
+  "type": "외과계 — 유방 종괴 절제 조직의 중간섬유 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-04",
+  "vignette": "A 45-year-old woman undergoes excision of a 2-cm, mobile, rubbery mass in the upper outer quadrant of the left breast that has been present for 3 years without change in size. She has no family history of breast or ovarian cancer. Mammography showed a well-circumscribed oval mass without calcifications, and core needle biopsy showed a fibroadenoma. The excised mass is a fibroadenoma with clear margins. A section of the adjacent normal breast tissue, including lobules, dense collagenous stroma, and fat, is stained by immunohistochemistry with an antibody against an intermediate filament protein and is shown.",
+  "question": "In a poorly differentiated metastatic tumor of unknown primary site, strong staining for this same class of intermediate filament would most strongly indicate which of the following tumor types?",
+  "options": [
+   "Sarcoma",
+   "Melanoma",
+   "Lymphoma",
+   "Glioma",
+   "Carcinoma"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Only the epithelial cells of the lobular acini and ducts are stained; the collagenous stroma, adipocytes, and vessels are negative. An intermediate filament restricted to epithelium is a cytokeratin (here keratin 18, a simple-epithelium keratin of luminal cells). Cytokeratin positivity in an undifferentiated tumor identifies it as a carcinoma.\n- 원리: <b>Why intermediate filaments mark cell lineage</b>: unlike actin and tubulin, which every cell uses, intermediate filaments are encoded by a large gene family whose members are expressed in a <b>tissue-specific</b> way, and tumors usually keep the filament of the cell they came from. Epithelial cells use <b>cytokeratins</b> (keratin 8/18 in simple and glandular epithelia, keratin 5/14 in basal and squamous cells); mesenchymal cells such as fibroblasts, endothelium, and adipocytes use <b>vimentin</b>; muscle uses desmin; astrocytes use GFAP; neurons use neurofilaments.<br> <b>Reading this image</b>: the stain fills the cells lining the small acini and ducts but leaves the surrounding fibroblast-rich collagen and fat empty — the pattern of an epithelium-only filament, not vimentin.<br> <b>Clinical use</b>: in a metastasis that looks like sheets of undifferentiated cells, a first IHC panel of pan-cytokeratin (carcinoma), S-100/SOX10 (melanoma), CD45 (lymphoma), and vimentin/desmin (sarcoma) assigns the lineage before organ-specific markers are chosen.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Cytokeratin → carcinoma (answer)</th><th>Vimentin → sarcoma (closest rival)</th></tr></thead><tbody> <tr><td>Normal cells stained</td><td><b>Epithelium only</b> — acini and ducts</td><td>Fibroblasts, endothelium, adipocytes (stroma)</td></tr> <tr><td>Pattern in this image</td><td>Matches — stroma and fat negative</td><td>Would stain the collagenous stroma and vessels</td></tr> <tr><td>Tumor indicated</td><td>Carcinoma (epithelial origin)</td><td>Sarcoma (mesenchymal origin)</td></tr> </tbody></table> Melanoma and many lymphomas are also vimentin-positive and cytokeratin-negative, so a cytokeratin-positive pattern points to epithelium whichever way the question is asked.\n- 오답 이유:\n  - (A) Sarcomas arise from mesenchymal cells and express vimentin, which would stain the stroma and vessels. This would be correct if the antibody had labeled the fibroblasts and fat rather than the glands.\n  - (B) Melanoma cells express vimentin with S-100, SOX10, and HMB-45, and are typically cytokeratin-negative. It would be the answer if the panel had shown S-100 or SOX10 positivity.\n  - (C) Lymphomas are identified by CD45 (leukocyte common antigen) and lack cytokeratin. It would be correct if the tumor cells had stained for CD45, with the stromal lymphocytes as internal control.\n  - (D) Gliomas express glial fibrillary acidic protein, the intermediate filament of astrocytes. It would be correct if the stain had been GFAP in a brain tumor, not a filament confined to breast epithelium.\n- 함정: Answering \"breast cancer\" from the organ — the question asks what the filament class says about lineage, which the stain pattern (epithelium only) answers.\n- 학습목표: 정상 유방 조직에서 샘상피만 염색되는 중간섬유를 사이토케라틴으로 읽고, 미분화 종양의 기원 판별에 연결한다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 7 Neoplasia (immunohistochemistry and intermediate filaments) · Alberts B, et al. Molecular Biology of the Cell, 7th ed. Ch. 16 The cytoskeleton (intermediate filaments) · Human Protein Atlas, KRT18 / breast, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-05): 소엽 샘꽈리·관 상피의 강한 세포질 염색, 교원질 간질·지방 음성\n\n## 출처\n- Human Protein Atlas, KRT18 / Breast (CC BY 4.0), https://images.proteinatlas.org/8/1730_B_2_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Only the epithelial cells of the lobular acini and ducts are stained; the collagenous stroma, adipocytes, and vessels are negative. An intermediate filament restricted to epithelium is a cytokeratin (here keratin 18, a simple-epithelium keratin of luminal cells). Cytokeratin positivity in an undifferentiated tumor identifies it as a carcinoma."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why intermediate filaments mark cell lineage</b>: unlike actin and tubulin, which every cell uses, intermediate filaments are encoded by a large gene family whose members are expressed in a <b>tissue-specific</b> way, and tumors usually keep the filament of the cell they came from. Epithelial cells use <b>cytokeratins</b> (keratin 8/18 in simple and glandular epithelia, keratin 5/14 in basal and squamous cells); mesenchymal cells such as fibroblasts, endothelium, and adipocytes use <b>vimentin</b>; muscle uses desmin; astrocytes use GFAP; neurons use neurofilaments.<br> <b>Reading this image</b>: the stain fills the cells lining the small acini and ducts but leaves the surrounding fibroblast-rich collagen and fat empty — the pattern of an epithelium-only filament, not vimentin.<br> <b>Clinical use</b>: in a metastasis that looks like sheets of undifferentiated cells, a first IHC panel of pan-cytokeratin (carcinoma), S-100/SOX10 (melanoma), CD45 (lymphoma), and vimentin/desmin (sarcoma) assigns the lineage before organ-specific markers are chosen."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Cytokeratin → carcinoma (answer)</th><th>Vimentin → sarcoma (closest rival)</th></tr></thead><tbody> <tr><td>Normal cells stained</td><td><b>Epithelium only</b> — acini and ducts</td><td>Fibroblasts, endothelium, adipocytes (stroma)</td></tr> <tr><td>Pattern in this image</td><td>Matches — stroma and fat negative</td><td>Would stain the collagenous stroma and vessels</td></tr> <tr><td>Tumor indicated</td><td>Carcinoma (epithelial origin)</td><td>Sarcoma (mesenchymal origin)</td></tr> </tbody></table> Melanoma and many lymphomas are also vimentin-positive and cytokeratin-negative, so a cytokeratin-positive pattern points to epithelium whichever way the question is asked."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Sarcomas arise from mesenchymal cells and express vimentin, which would stain the stroma and vessels. This would be correct if the antibody had labeled the fibroblasts and fat rather than the glands.\n(B) Melanoma cells express vimentin with S-100, SOX10, and HMB-45, and are typically cytokeratin-negative. It would be the answer if the panel had shown S-100 or SOX10 positivity.\n(C) Lymphomas are identified by CD45 (leukocyte common antigen) and lack cytokeratin. It would be correct if the tumor cells had stained for CD45, with the stromal lymphocytes as internal control.\n(D) Gliomas express glial fibrillary acidic protein, the intermediate filament of astrocytes. It would be correct if the stain had been GFAP in a brain tumor, not a filament confined to breast epithelium."
+   },
+   {
+    "k": "함정",
+    "v": "Answering \"breast cancer\" from the organ — the question asks what the filament class says about lineage, which the stain pattern (epithelium only) answers."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 유방 조직에서 샘상피만 염색되는 중간섬유를 사이토케라틴으로 읽고, 미분화 종양의 기원 판별에 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 7 Neoplasia (immunohistochemistry and intermediate filaments) · Alberts B, et al. Molecular Biology of the Cell, 7th ed. Ch. 16 The cytoskeleton (intermediate filaments) · Human Protein Atlas, KRT18 / breast, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-05): 소엽 샘꽈리·관 상피의 강한 세포질 염색, 교원질 간질·지방 음성 ## 출처 Human Protein Atlas, KRT18 / Breast (CC BY 4.0), https://images.proteinatlas.org/8/1730_B_2_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염색이 샘상피에만 있고 간질·지방은 음성이므로 이 중간섬유는 사이토케라틴이고, 미분화 종양에서 양성이면 암종이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "비멘틴이라면 염색되지 않은 교원질 간질·혈관·지방세포가 염색되었어야 한다",
+   "steps": 2,
+   "chain": [
+    "영상: 소엽 샘꽈리·관 상피만 갈색, 간질·지방 음성 → 상피 특이 중간섬유 = 사이토케라틴",
+    "사이토케라틴 양성 미분화 종양 → 상피 기원 = 암종"
+   ],
+   "key": [
+    {
+     "item": "영상: 소엽의 샘꽈리와 관 상피만 강하게 염색, 교원질 간질과 지방은 음성",
+     "why": "상피에만 있는 중간섬유 — 사이토케라틴",
+     "also": []
+    },
+    {
+     "item": "an antibody against an intermediate filament protein",
+     "why": "세포 계열을 가르는 단백 계열임을 알려 준다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "including lobules, dense collagenous stroma, and fat",
+     "why": "간질·지방이 함께 있어 음성 대조가 된다 — 비멘틴 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "core needle biopsy showed a fibroadenoma",
+     "why": "절제 이유일 뿐, 묻는 것은 중간섬유 계열",
+     "also": []
+    },
+    {
+     "item": "no family history of breast or ovarian cancer",
+     "why": "유전 위험 배경 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "염색은 샘상피에만 있고 간질·지방은 비어 있다. 상피의 중간섬유는 사이토케라틴이고, 미분화 종양에서 양성이면 암종을 뜻한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 항체가 상피가 아니라 간질 섬유모세포·혈관·지방을 염색했다면(비멘틴) 육종 쪽을 가리킨다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0229.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000111057-KRT18/tissue/Breast",
+   "asset_id": "HPA-KRT18_1730_B_2_4",
+   "text": "Human Protein Atlas, KRT18 / Breast (CC BY 4.0), https://images.proteinatlas.org/8/1730_B_2_4.jpg"
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0228",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "신장·비뇨 — 전립선비대증 조직의 분비상피와 5α-환원효소 억제제",
+  "type": "신장·비뇨 — 전립선비대증 조직의 분비상피와 5α-환원효소 억제제",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "68세 남자가 2년 동안 점점 심해진 빈뇨, 야간뇨, 약한 소변 줄기로 비뇨의학과에 왔다. 1년 전부터 탐술로신을 복용하여 소변 줄기는 조금 나아졌지만 야간뇨는 하룻밤 3회로 남아 있다. 요폐나 혈뇨는 없었다. 직장수지검사에서 전립선은 고무처럼 단단하고 매끈하게 커져 있으며 결절은 없다. 경직장초음파에서 전립선 부피는 62 mL 이다. 혈청 전립선특이항원(PSA)이 6.2 ng/mL 로 높아 전립선 조직검사를 하였고 악성 세포는 없었다. 혈청 크레아티닌은 1.0 mg/dL 이다. 조직검사 검체에 PSA 에 대한 면역조직화학염색을 하였고 결과는 그림과 같다.",
+  "question": "그림에서 갈색으로 염색된 세포 구획을 줄여 전립선 부피를 줄이기 위해 탐술로신에 더할 약으로 가장 적절한 것은?",
+  "options": [
+   "미라베그론",
+   "피나스테리드",
+   "실로도신",
+   "타다라필",
+   "옥시부티닌"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 그림에서 갈색으로 염색된 것은 유두 모양으로 주름진 샘의 내강 분비상피이고, 샘 사이의 섬유근육 간질과 바닥세포층은 염색되지 않는다. 이 샘상피는 다이하이드로테스토스테론(DHT)에 의존해 자라므로, 5α-환원효소 억제제인 피나스테리드가 6~12개월에 걸쳐 전립선 부피를 약 20~30 % 줄이고 혈청 PSA 를 약 절반으로 낮춘다. 부피가 30~40 mL 를 넘는 비대증에서 알파차단제와 함께 쓰면 요폐와 수술 위험이 준다.\n- 원리: <b>전립선의 두 구획</b>: 전립선비대증은 <b>샘상피</b>와 <b>섬유근육 간질</b>이 함께 늘어난 결절성 증식이다. 샘의 내강 분비상피는 PSA(칼리크레인 3, 정액 응고물을 녹이는 세린 단백분해효소)를 만들어 내강으로 분비하고, 그 바깥의 납작한 바닥세포와 간질의 평활근은 PSA 를 만들지 않는다 — 그래서 그림에서 내강 세포만 갈색이다.<br> <b>왜 피나스테리드인가</b>: 간질 세포의 2형 5α-환원효소가 테스토스테론을 DHT 로 바꾸고, DHT 가 성장인자를 통해 샘상피의 증식과 생존을 유지한다. 이 효소를 막으면 DHT 가 약 70 % 줄어 <b>샘상피가 위축</b>되고 부피와 PSA 가 함께 줄어든다(그래서 복용 중 PSA 는 2배로 보정해 해석한다).<br> <b>알파차단제는 다른 구획</b>을 겨냥한다 — 간질과 방광목 평활근의 α1A 수용체를 막아 긴장을 풀어 며칠 만에 증상을 줄이지만 부피는 줄이지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">피나스테리드(정답)</th><th>실로도신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 구획</td><td><b>샘상피</b>(그림의 갈색 세포) — DHT 의존</td><td>간질·방광목 평활근(염색되지 않은 부분)</td></tr> <tr><td>작용</td><td>2형 5α-환원효소 억제 → DHT 약 70 % 감소</td><td>α1A 수용체 차단 → 평활근 이완</td></tr> <tr><td>전립선 부피 · PSA</td><td>약 20~30 % 감소 · 약 50 % 감소</td><td>변화 없음</td></tr> <tr><td>효과 시점</td><td>6~12개월</td><td>수일</td></tr> </tbody></table> 이미 탐술로신을 쓰는 환자에게 같은 계열의 실로도신을 더해도 부피는 줄지 않는다. 「부피를 줄인다」는 물음은 샘상피를 겨냥하는 약을 고르라는 뜻이다.\n- 오답 이유:\n  - ① 미라베그론은 β3 작용제로 배뇨근을 이완해 과민방광 증상을 줄인다. 항무스카린제를 쓸 수 없는 고령의 저장 증상이라면 정답이 될 수 있다.\n  - ③ 실로도신은 탐술로신과 같은 α1A 차단제로 평활근 긴장만 푼다. 탐술로신을 부작용으로 바꿔야 하는 상황이었다면 대안이 되지만 부피는 줄이지 않는다.\n  - ④ 타다라필은 PDE5 억제로 평활근을 이완해 하부요로증상과 발기부전을 함께 줄인다. 발기부전이 동반되어 두 증상을 함께 다룰 때라면 고를 수 있다.\n  - ⑤ 옥시부티닌은 무스카린 차단으로 방광 과민 증상(절박뇨)을 줄인다. 잔뇨가 적고 절박뇨가 주 증상인 저장 증상이라면 더할 수 있지만 부피는 줄이지 않는다.\n- 함정: 이미 쓰는 알파차단제를 하나 더 고르는 것 — 그림의 갈색 세포(샘상피)를 줄이는 약을 묻고 있다.\n- 학습목표: 전립선 조직에서 PSA 를 만드는 내강 분비상피와 염색되지 않는 섬유근육 간질을 구별하고, 각 구획을 겨냥하는 약을 연결한다\n- 근거·출처: Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. 145 Benign prostatic hyperplasia: etiology, pathophysiology, and natural history; Ch. 146 Medical management · McConnell JD, et al. The long-term effect of doxazosin, finasteride, and combination therapy on the clinical progression of BPH (MTOPS). N Engl J Med 2003;349:2387 (PMID 14681504) · Human Protein Atlas, KLK3 / prostate, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-05): 양성 샘의 내강 분비상피 세포질 염색, 바닥세포층·섬유근육 간질 음성\n\n## 출처\n- Human Protein Atlas, KLK3 / Prostate (CC BY 4.0), https://images.proteinatlas.org/70/200_A_3_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 갈색으로 염색된 것은 유두 모양으로 주름진 샘의 내강 분비상피이고, 샘 사이의 섬유근육 간질과 바닥세포층은 염색되지 않는다. 이 샘상피는 다이하이드로테스토스테론(DHT)에 의존해 자라므로, 5α-환원효소 억제제인 피나스테리드가 6~12개월에 걸쳐 전립선 부피를 약 20~30 % 줄이고 혈청 PSA 를 약 절반으로 낮춘다. 부피가 30~40 mL 를 넘는 비대증에서 알파차단제와 함께 쓰면 요폐와 수술 위험이 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>전립선의 두 구획</b>: 전립선비대증은 <b>샘상피</b>와 <b>섬유근육 간질</b>이 함께 늘어난 결절성 증식이다. 샘의 내강 분비상피는 PSA(칼리크레인 3, 정액 응고물을 녹이는 세린 단백분해효소)를 만들어 내강으로 분비하고, 그 바깥의 납작한 바닥세포와 간질의 평활근은 PSA 를 만들지 않는다 — 그래서 그림에서 내강 세포만 갈색이다.<br> <b>왜 피나스테리드인가</b>: 간질 세포의 2형 5α-환원효소가 테스토스테론을 DHT 로 바꾸고, DHT 가 성장인자를 통해 샘상피의 증식과 생존을 유지한다. 이 효소를 막으면 DHT 가 약 70 % 줄어 <b>샘상피가 위축</b>되고 부피와 PSA 가 함께 줄어든다(그래서 복용 중 PSA 는 2배로 보정해 해석한다).<br> <b>알파차단제는 다른 구획</b>을 겨냥한다 — 간질과 방광목 평활근의 α1A 수용체를 막아 긴장을 풀어 며칠 만에 증상을 줄이지만 부피는 줄이지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">피나스테리드(정답)</th><th>실로도신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적 구획</td><td><b>샘상피</b>(그림의 갈색 세포) — DHT 의존</td><td>간질·방광목 평활근(염색되지 않은 부분)</td></tr> <tr><td>작용</td><td>2형 5α-환원효소 억제 → DHT 약 70 % 감소</td><td>α1A 수용체 차단 → 평활근 이완</td></tr> <tr><td>전립선 부피 · PSA</td><td>약 20~30 % 감소 · 약 50 % 감소</td><td>변화 없음</td></tr> <tr><td>효과 시점</td><td>6~12개월</td><td>수일</td></tr> </tbody></table> 이미 탐술로신을 쓰는 환자에게 같은 계열의 실로도신을 더해도 부피는 줄지 않는다. 「부피를 줄인다」는 물음은 샘상피를 겨냥하는 약을 고르라는 뜻이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 미라베그론은 β3 작용제로 배뇨근을 이완해 과민방광 증상을 줄인다. 항무스카린제를 쓸 수 없는 고령의 저장 증상이라면 정답이 될 수 있다.\n③ 실로도신은 탐술로신과 같은 α1A 차단제로 평활근 긴장만 푼다. 탐술로신을 부작용으로 바꿔야 하는 상황이었다면 대안이 되지만 부피는 줄이지 않는다.\n④ 타다라필은 PDE5 억제로 평활근을 이완해 하부요로증상과 발기부전을 함께 줄인다. 발기부전이 동반되어 두 증상을 함께 다룰 때라면 고를 수 있다.\n⑤ 옥시부티닌은 무스카린 차단으로 방광 과민 증상(절박뇨)을 줄인다. 잔뇨가 적고 절박뇨가 주 증상인 저장 증상이라면 더할 수 있지만 부피는 줄이지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "이미 쓰는 알파차단제를 하나 더 고르는 것 — 그림의 갈색 세포(샘상피)를 줄이는 약을 묻고 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "전립선 조직에서 PSA 를 만드는 내강 분비상피와 염색되지 않는 섬유근육 간질을 구별하고, 각 구획을 겨냥하는 약을 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. 145 Benign prostatic hyperplasia: etiology, pathophysiology, and natural history; Ch. 146 Medical management · McConnell JD, et al. The long-term effect of doxazosin, finasteride, and combination therapy on the clinical progression of BPH (MTOPS). N Engl J Med 2003;349:2387 (PMID 14681504) · Human Protein Atlas, KLK3 / prostate, tissue IHC (CC BY 4.0) · 작성자 판독(2026-10-05): 양성 샘의 내강 분비상피 세포질 염색, 바닥세포층·섬유근육 간질 음성 ## 출처 Human Protein Atlas, KLK3 / Prostate (CC BY 4.0), https://images.proteinatlas.org/70/200_A_3_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "염색된 PSA 생성 세포는 DHT 에 의존하는 샘상피이므로 부피를 줄이려면 5α-환원효소 억제제 피나스테리드를 더한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "실로도신은 염색되지 않은 간질 평활근을 이완할 뿐 샘상피와 부피를 줄이지 않는다",
+   "steps": 2,
+   "chain": [
+    "영상: 내강 분비상피만 갈색, 간질은 음성 → 줄여야 할 구획은 샘상피",
+    "샘상피는 DHT 의존 → 5α-환원효소 억제제(피나스테리드)"
+   ],
+   "key": [
+    {
+     "item": "영상: 샘의 내강 분비상피만 갈색, 섬유근육 간질은 음성",
+     "why": "PSA 를 만드는 샘상피 구획 — 줄일 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "악성 세포는 없었다",
+     "why": "전립선암 가능성을 낮춰 비대증 약물치료로 간다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "전립선 부피는 62 mL",
+     "why": "30~40 mL 이상 — 5α-환원효소 억제제의 적응",
+     "also": []
+    },
+    {
+     "item": "탐술로신을 복용하여",
+     "why": "알파차단제는 이미 쓰고 있다 — 같은 계열 추가는 의미가 적다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 크레아티닌은 1.0 mg/dL",
+     "why": "상부요로 손상이 없어 수술 적응이 아니다",
+     "also": []
+    },
+    {
+     "item": "야간뇨는 하룻밤 3회",
+     "why": "남은 증상 — 약 선택의 계기이지만 구획을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "갈색으로 염색된 세포는 DHT 에 의존하는 샘상피다. 부피 62 mL 의 비대증에서 탐술로신에 피나스테리드를 더하면 부피와 PSA 가 함께 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "부피가 25 mL 로 작고 잔뇨가 적은데 절박뇨가 주 증상이었다면 항무스카린제를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0228.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000142515-KLK3/tissue/Prostate",
+   "asset_id": "HPA-KLK3_200_A_3_5",
+   "text": "Human Protein Atlas, KLK3 / Prostate (CC BY 4.0), https://images.proteinatlas.org/70/200_A_3_5.jpg"
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0227",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "진단검사·영상의학 판독 — 흉부 CT 의 표시 창과 종격동 평가",
+  "type": "진단검사·영상의학 판독 — 흉부 CT 의 표시 창과 종격동 평가",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "60세 여자가 건강검진에서 흉부 CT 를 받은 뒤 결과를 듣기 위해 호흡기내과에 왔다. 30갑년 흡연자로 2년 전에 끊었다. 기침, 객혈, 체중 감소는 없다. 고혈압으로 암로디핀을 복용한다. 혈압 128/78 mmHg, 맥박 74회/분, 호흡 16회/분, 산소포화도(실내 공기) 97 % 이다. 목과 빗장뼈위 림프절은 만져지지 않는다. 흉부 CT(조영제 없이, 절편 두께 3 mm)의 폐 꼭대기 높이 단면은 그림과 같다. 담당 의사는 같은 검사에서 기관 옆 종격동 림프절의 크기를 평가하려 하였는데 그림의 영상에서는 종격동 구조가 서로 구별되지 않았다.",
+  "question": "다음으로 해야 할 것으로 가장 적절한 것은?",
+  "options": [
+   "양전자방출단층촬영(PET-CT)을 시행한다",
+   "흉부 자기공명영상을 시행한다",
+   "같은 영상을 종격동창으로 바꿔 다시 본다",
+   "조영제를 주사하고 흉부 CT 를 다시 찍는다",
+   "같은 영상을 1 mm 절편으로 다시 재구성한다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 그림은 폐창(창 너비 약 1,500 HU, 창 중심 약 −600 HU)으로 표시된 영상이다. 폐실질의 혈관 가지는 잘 보이지만, 지방(−100 HU)·혈관(40 HU 안팎)·림프절(30~50 HU)이 모두 창의 위쪽 끝에 몰려 똑같이 하얗게 보인다. 이미 얻은 CT 자료의 HU 값은 그대로 있으므로, 창 너비를 350~400 HU, 창 중심을 40 HU 안팎으로 바꾼 종격동창으로 다시 보면 방사선을 더 쓰지 않고 지방 속 림프절의 크기를 잴 수 있다.\n- 원리: <b>CT 영상은 숫자다</b>: CT 의 각 화소는 X선 감쇠를 물 0, 공기 −1,000 으로 맞춘 하운스필드 값(HU)을 가진다. 모니터는 256단계 남짓의 회색만 보여 줄 수 있어서, 「어느 HU 범위를 회색으로 펼칠지」를 정하는 것이 <b>창(window)</b>이다 — 창 중심(level) 근처를 가운데 회색으로 두고, 창 너비(width) 밖의 값은 모두 검정이나 흰색으로 잘라 버린다.<br> <b>폐창</b>은 너비가 넓고(약 1,500) 중심이 낮아(약 −600) 공기(−1,000)와 폐조직(−700~−900)의 미세한 차이를 펼쳐 보여 준다. 대신 −150 HU 이상인 지방·근육·혈관·림프절은 모두 흰색 한 덩어리가 된다 — 그림의 종격동처럼.<br> <b>종격동창</b>(너비 350~400, 중심 40)은 지방(−100)과 연부조직(30~60)을 서로 다른 회색으로 펼친다. 창은 표시 설정일 뿐이라 저장된 자료에서 언제든 바꿀 수 있고, 판독의는 같은 검사를 폐창·종격동창·뼈창으로 차례로 본다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">종격동창으로 다시 보기(정답)</th><th>조영증강 CT 재촬영(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td>표시 설정 — 연부조직 HU 가 흰색으로 잘림</td><td>혈관과 연부조직의 HU 가 비슷함</td></tr> <tr><td>추가 방사선 · 조영제</td><td><b>없음</b></td><td>있음 — 방사선 재노출, 조영제 위험</td></tr> <tr><td>이 영상에서</td><td>기관 옆 지방 속 림프절이 회색으로 드러남</td><td>창을 바꾸지 않으면 조영 후에도 하얗게 보임</td></tr> <tr><td>필요한 때</td><td>먼저 — 모든 종격동 평가의 출발점</td><td>종격동창으로 봐도 폐문 혈관과 림프절이 구별되지 않을 때</td></tr> </tbody></table> 종격동 구조가 「안 보이는」 원인이 자료가 아니라 표시라면 고칠 곳도 표시다. 조영제는 창을 맞춘 뒤에도 남는 혈관-림프절 구별 문제에만 답한다.\n- 오답 이유:\n  - ① PET-CT 는 림프절의 대사 활성으로 폐암의 종격동 병기를 평가한다. 폐에 고형 결절이 있어 수술 전 병기 결정이 필요할 때라면 고를 수 있지만, 크기 측정을 위한 첫 단계는 아니다.\n  - ② 흉부 자기공명영상은 흉벽·척추관 침범이나 폐첨부 종양의 상완신경얼기 침범을 볼 때 쓴다. 폐첨부 종양이 신경을 침범했는지 물었다면 고려하지만 종격동 림프절 크기에는 필요 없다.\n  - ④ 조영제를 주사하고 다시 찍으면 혈관과 림프절의 대비는 좋아지지만 방사선과 조영제 위험이 더해진다. 종격동창으로 봐도 폐문 혈관과 림프절이 구별되지 않을 때 정답이 된다.\n  - ⑤ 1 mm 절편 재구성은 작은 결절의 경계·간질 변화를 자세히 보는 데 쓴다. 폐창에서 아주 작은 결절의 모양을 봐야 할 때라면 맞지만, 종격동 연부조직이 하얗게 잘리는 문제는 풀지 못한다.\n- 함정: 종격동이 안 보이니 조영제가 필요하다고 보는 것 — 그림은 폐창이라 연부조직이 흰색으로 잘렸을 뿐이다.\n- 학습목표: 흉부 CT 가 폐창으로 표시되었음을 읽고, 종격동 연부조직을 평가하려면 재촬영이 아니라 창 너비·창 중심을 바꿔야 함을 안다\n- 근거·출처: Webb WR, Brant WE, Major NM. Fundamentals of Body CT, 5th ed. Ch. 1 Introduction to CT (Hounsfield units and window settings) · Brant WE, Helms CA. Fundamentals of Diagnostic Radiology, 5th ed. Ch. 3 CT: principles and windowing · 작성자 판독(2026-10-05): 비조영 흉부 CT 폐창, 폐실질 이상 없음, 종격동 대혈관·연부조직이 균일한 흰색으로 구별되지 않음\n\n## 출처\n- LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림은 폐창(창 너비 약 1,500 HU, 창 중심 약 −600 HU)으로 표시된 영상이다. 폐실질의 혈관 가지는 잘 보이지만, 지방(−100 HU)·혈관(40 HU 안팎)·림프절(30~50 HU)이 모두 창의 위쪽 끝에 몰려 똑같이 하얗게 보인다. 이미 얻은 CT 자료의 HU 값은 그대로 있으므로, 창 너비를 350~400 HU, 창 중심을 40 HU 안팎으로 바꾼 종격동창으로 다시 보면 방사선을 더 쓰지 않고 지방 속 림프절의 크기를 잴 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>CT 영상은 숫자다</b>: CT 의 각 화소는 X선 감쇠를 물 0, 공기 −1,000 으로 맞춘 하운스필드 값(HU)을 가진다. 모니터는 256단계 남짓의 회색만 보여 줄 수 있어서, 「어느 HU 범위를 회색으로 펼칠지」를 정하는 것이 <b>창(window)</b>이다 — 창 중심(level) 근처를 가운데 회색으로 두고, 창 너비(width) 밖의 값은 모두 검정이나 흰색으로 잘라 버린다.<br> <b>폐창</b>은 너비가 넓고(약 1,500) 중심이 낮아(약 −600) 공기(−1,000)와 폐조직(−700~−900)의 미세한 차이를 펼쳐 보여 준다. 대신 −150 HU 이상인 지방·근육·혈관·림프절은 모두 흰색 한 덩어리가 된다 — 그림의 종격동처럼.<br> <b>종격동창</b>(너비 350~400, 중심 40)은 지방(−100)과 연부조직(30~60)을 서로 다른 회색으로 펼친다. 창은 표시 설정일 뿐이라 저장된 자료에서 언제든 바꿀 수 있고, 판독의는 같은 검사를 폐창·종격동창·뼈창으로 차례로 본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">종격동창으로 다시 보기(정답)</th><th>조영증강 CT 재촬영(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해결하는 문제</td><td>표시 설정 — 연부조직 HU 가 흰색으로 잘림</td><td>혈관과 연부조직의 HU 가 비슷함</td></tr> <tr><td>추가 방사선 · 조영제</td><td><b>없음</b></td><td>있음 — 방사선 재노출, 조영제 위험</td></tr> <tr><td>이 영상에서</td><td>기관 옆 지방 속 림프절이 회색으로 드러남</td><td>창을 바꾸지 않으면 조영 후에도 하얗게 보임</td></tr> <tr><td>필요한 때</td><td>먼저 — 모든 종격동 평가의 출발점</td><td>종격동창으로 봐도 폐문 혈관과 림프절이 구별되지 않을 때</td></tr> </tbody></table> 종격동 구조가 「안 보이는」 원인이 자료가 아니라 표시라면 고칠 곳도 표시다. 조영제는 창을 맞춘 뒤에도 남는 혈관-림프절 구별 문제에만 답한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① PET-CT 는 림프절의 대사 활성으로 폐암의 종격동 병기를 평가한다. 폐에 고형 결절이 있어 수술 전 병기 결정이 필요할 때라면 고를 수 있지만, 크기 측정을 위한 첫 단계는 아니다.\n② 흉부 자기공명영상은 흉벽·척추관 침범이나 폐첨부 종양의 상완신경얼기 침범을 볼 때 쓴다. 폐첨부 종양이 신경을 침범했는지 물었다면 고려하지만 종격동 림프절 크기에는 필요 없다.\n④ 조영제를 주사하고 다시 찍으면 혈관과 림프절의 대비는 좋아지지만 방사선과 조영제 위험이 더해진다. 종격동창으로 봐도 폐문 혈관과 림프절이 구별되지 않을 때 정답이 된다.\n⑤ 1 mm 절편 재구성은 작은 결절의 경계·간질 변화를 자세히 보는 데 쓴다. 폐창에서 아주 작은 결절의 모양을 봐야 할 때라면 맞지만, 종격동 연부조직이 하얗게 잘리는 문제는 풀지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "종격동이 안 보이니 조영제가 필요하다고 보는 것 — 그림은 폐창이라 연부조직이 흰색으로 잘렸을 뿐이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 CT 가 폐창으로 표시되었음을 읽고, 종격동 연부조직을 평가하려면 재촬영이 아니라 창 너비·창 중심을 바꿔야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Webb WR, Brant WE, Major NM. Fundamentals of Body CT, 5th ed. Ch. 1 Introduction to CT (Hounsfield units and window settings) · Brant WE, Helms CA. Fundamentals of Diagnostic Radiology, 5th ed. Ch. 3 CT: principles and windowing · 작성자 판독(2026-10-05): 비조영 흉부 CT 폐창, 폐실질 이상 없음, 종격동 대혈관·연부조직이 균일한 흰색으로 구별되지 않음 ## 출처 LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531 · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "그림은 폐창이라 종격동 연부조직이 흰색으로 잘려 있으므로, 같은 자료를 종격동창으로 바꿔 보면 된다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "조영증강 재촬영은 혈관-연부조직 대비 문제를 푸는 것이고, 지금의 문제는 표시 창이 연부조직 HU 를 잘라 버린 것이다",
+   "steps": 2,
+   "chain": [
+    "영상: 폐혈관은 잘 보이고 종격동은 균일한 흰색 → 폐창 표시",
+    "창은 저장 자료의 표시 설정 → 종격동창으로 다시 본다(재촬영 불필요)"
+   ],
+   "key": [
+    {
+     "item": "영상: 폐실질 혈관은 선명하고 종격동 대혈관·연부조직은 모두 균일한 흰색",
+     "why": "폐창으로 표시된 영상이라는 근거",
+     "also": []
+    },
+    {
+     "item": "종격동 구조가 서로 구별되지 않았다",
+     "why": "표시 창의 한계 — 창을 바꿔야 할 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "조영제 없이, 절편 두께 3 mm",
+     "why": "조영 여부는 창 문제와 별개 — 재촬영의 필요를 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "30갑년 흡연자로 2년 전에 끊었다",
+     "why": "CT 를 찍은 이유 — 창 선택과는 무관",
+     "also": []
+    },
+    {
+     "item": "목과 빗장뼈위 림프절은 만져지지 않는다",
+     "why": "임상적 림프절 전이 단서가 없다 — PET-CT 를 서두를 이유가 적다",
+     "also": []
+    },
+    {
+     "item": "기침, 객혈, 체중 감소는 없다",
+     "why": "증상 없음 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "그림은 폐창이라 종격동 연부조직이 모두 흰색으로 잘려 보인다. 같은 자료를 종격동창으로 바꿔 보면 재촬영 없이 림프절을 잴 수 있다.",
+   "switch": {
+    "choice": "D",
+    "condition": "종격동창으로 봐도 폐문 혈관과 림프절이 구별되지 않았다면 조영증강 CT 를 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0227.png",
+   "caption": "흉부 CT 축상면, 폐 꼭대기 높이, 저장된 폐창 설정 그대로, 표준 표시 방향(환자 오른쪽이 보는 사람 왼쪽), 원본 크기 (The Cancer Imaging Archive, CC BY 4.0 — DICOM 변환, 크롭 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA LIDC-IDRI (Lung Image Database Consortium)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6279.6001.130794651720796841292503408531",
+   "asset_id": "TCIA-LIDC_IDRI-85568373935959",
+   "text": "LIDC-IDRI, The Cancer Imaging Archive (CC BY 3.0) · series …03408531"
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0226",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "호흡기 — 양측 폐 음영과 산소에 잘 오르지 않는 저산소혈증의 기전",
+  "type": "호흡기 — 양측 폐 음영과 산소에 잘 오르지 않는 저산소혈증의 기전",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-04",
+  "vignette": "A 64-year-old man comes to the emergency department because of fever, cough, and progressive shortness of breath for 6 days. He has hypertension treated with lisinopril. He has never smoked. Temperature is 38.6°C (101.5°F), pulse is 104/min, respirations are 26/min, and blood pressure is 132/78 mm Hg. Crackles are heard over both lung bases. Hemoglobin concentration is 14.1 g/dL. Arterial blood gas analysis on room air shows pH 7.47, PaCO2 32 mm Hg, and PaO2 54 mm Hg. After 20 minutes of breathing 100% oxygen through a tightly fitted non-rebreather mask, PaO2 is 68 mm Hg. An upright anteroposterior chest radiograph is shown.",
+  "question": "Which of the following is the most likely mechanism of this patient's hypoxemia?",
+  "options": [
+   "Perfusion of alveoli that are filled with exudate and not ventilated",
+   "Regional ventilation-perfusion mismatch from narrowed airways",
+   "Reduced alveolar ventilation from depressed respiratory drive",
+   "Diffusion limitation across a thickened alveolar-capillary membrane",
+   "Reduced partial pressure of oxygen in the inspired air"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows ill-defined hazy and reticular opacities in both lower zones, more on the right — airspace filling. The A-a gradient on room air is about 150 − 32/0.8 − 54 ≈ 56 mm Hg, so hypoventilation and low inspired oxygen are excluded. The decisive clue is that 100% oxygen raises PaO2 only to 68 mm Hg: blood that passes alveoli full of fluid never meets the added oxygen, which is the signature of intrapulmonary shunt.\n- 원리: <b>Why oxygen separates the mechanisms</b>: in low V/Q units and in diffusion limitation, the alveoli are still ventilated. Breathing 100 % O₂ washes out nitrogen and raises alveolar PO₂ to about 670 mm Hg even in poorly ventilated units, so end-capillary blood becomes fully saturated and PaO₂ climbs to several hundred mm Hg.<br> <b>In a shunt</b>, the alveoli are filled with exudate, pus, or edema (pneumonia, ARDS) or collapsed. Their ventilation is zero, so no inspired gas — however rich in oxygen — reaches that blood. Because hemoglobin in the well-ventilated units is already almost fully saturated, those units cannot add much extra O₂ content to compensate. Mixed arterial PaO₂ therefore rises only slightly.<br> <b>Practical rule</b>: a shunt fraction above about 30 % makes PaO₂ almost unresponsive to FiO₂. Treatment must reopen alveoli (PEEP, prone positioning) rather than just raise FiO₂.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intrapulmonary shunt (answer)</th><th>V/Q mismatch (closest rival)</th></tr></thead><tbody> <tr><td>Ventilation of affected units</td><td>Zero — alveoli filled or collapsed</td><td>Reduced but present</td></tr> <tr><td>A-a gradient</td><td>Increased</td><td>Increased</td></tr> <tr><td>Response to 100 % O₂</td><td><b>Poor</b> (here 54 → 68 mm Hg)</td><td>Large — PaO₂ often &gt; 300 mm Hg</td></tr> <tr><td>Typical setting</td><td>Lobar or bilateral airspace disease, ARDS</td><td>Asthma, COPD, pulmonary embolism</td></tr> </tbody></table> Both widen the A-a gradient; only the response to supplemental oxygen tells them apart. An elevated gradient alone never decides it.\n- 오답 이유:\n  - (B) V/Q mismatch from narrowed airways also widens the A-a gradient, but PaO2 rises steeply on 100% oxygen. It would be the answer in an asthma attack with clear lungs and PaO2 above 300 mm Hg on oxygen.\n  - (C) Hypoventilation raises PaCO2 and keeps the A-a gradient normal. It would be correct after an opioid overdose with PaCO2 of 60 mm Hg and a normal gradient, not with PaCO2 of 32 mm Hg here.\n  - (D) Diffusion limitation worsens hypoxemia mainly during exercise and corrects readily with supplemental oxygen. It fits interstitial fibrosis with exertional desaturation, not this poor oxygen response.\n  - (E) Low inspired oxygen lowers PaO2 with a normal A-a gradient, as at high altitude. It would apply if the patient were breathing thin air, not room air at sea level with a gradient near 56 mm Hg.\n- 함정: Choosing V/Q mismatch because it is the commonest cause of hypoxemia — the failure of 100% oxygen to raise PaO2 points to shunt.\n- 학습목표: 양측 폐포 음영과 100 % 산소에 잘 오르지 않는 PaO2 로 폐내 단락에 의한 저산소혈증을 다른 기전과 구별한다\n- 근거·출처: West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Ch. 5 Ventilation-perfusion relationships (shunt and response to 100% O2) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 285 Disturbances of respiratory function · 작성자 판독(2026-10-05): 양측 하폐야(오른쪽 우세)의 경계 불분명한 흐린 음영과 망상 음영 증가, 기흉·대량 흉수 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …62945405 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows ill-defined hazy and reticular opacities in both lower zones, more on the right — airspace filling. The A-a gradient on room air is about 150 − 32/0.8 − 54 ≈ 56 mm Hg, so hypoventilation and low inspired oxygen are excluded. The decisive clue is that 100% oxygen raises PaO2 only to 68 mm Hg: blood that passes alveoli full of fluid never meets the added oxygen, which is the signature of intrapulmonary shunt."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why oxygen separates the mechanisms</b>: in low V/Q units and in diffusion limitation, the alveoli are still ventilated. Breathing 100 % O₂ washes out nitrogen and raises alveolar PO₂ to about 670 mm Hg even in poorly ventilated units, so end-capillary blood becomes fully saturated and PaO₂ climbs to several hundred mm Hg.<br> <b>In a shunt</b>, the alveoli are filled with exudate, pus, or edema (pneumonia, ARDS) or collapsed. Their ventilation is zero, so no inspired gas — however rich in oxygen — reaches that blood. Because hemoglobin in the well-ventilated units is already almost fully saturated, those units cannot add much extra O₂ content to compensate. Mixed arterial PaO₂ therefore rises only slightly.<br> <b>Practical rule</b>: a shunt fraction above about 30 % makes PaO₂ almost unresponsive to FiO₂. Treatment must reopen alveoli (PEEP, prone positioning) rather than just raise FiO₂."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Intrapulmonary shunt (answer)</th><th>V/Q mismatch (closest rival)</th></tr></thead><tbody> <tr><td>Ventilation of affected units</td><td>Zero — alveoli filled or collapsed</td><td>Reduced but present</td></tr> <tr><td>A-a gradient</td><td>Increased</td><td>Increased</td></tr> <tr><td>Response to 100 % O₂</td><td><b>Poor</b> (here 54 → 68 mm Hg)</td><td>Large — PaO₂ often &gt; 300 mm Hg</td></tr> <tr><td>Typical setting</td><td>Lobar or bilateral airspace disease, ARDS</td><td>Asthma, COPD, pulmonary embolism</td></tr> </tbody></table> Both widen the A-a gradient; only the response to supplemental oxygen tells them apart. An elevated gradient alone never decides it."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) V/Q mismatch from narrowed airways also widens the A-a gradient, but PaO2 rises steeply on 100% oxygen. It would be the answer in an asthma attack with clear lungs and PaO2 above 300 mm Hg on oxygen.\n(C) Hypoventilation raises PaCO2 and keeps the A-a gradient normal. It would be correct after an opioid overdose with PaCO2 of 60 mm Hg and a normal gradient, not with PaCO2 of 32 mm Hg here.\n(D) Diffusion limitation worsens hypoxemia mainly during exercise and corrects readily with supplemental oxygen. It fits interstitial fibrosis with exertional desaturation, not this poor oxygen response.\n(E) Low inspired oxygen lowers PaO2 with a normal A-a gradient, as at high altitude. It would apply if the patient were breathing thin air, not room air at sea level with a gradient near 56 mm Hg."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing V/Q mismatch because it is the commonest cause of hypoxemia — the failure of 100% oxygen to raise PaO2 points to shunt."
+   },
+   {
+    "k": "학습목표",
+    "v": "양측 폐포 음영과 100 % 산소에 잘 오르지 않는 PaO2 로 폐내 단락에 의한 저산소혈증을 다른 기전과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. Ch. 5 Ventilation-perfusion relationships (shunt and response to 100% O2) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 285 Disturbances of respiratory function · 작성자 판독(2026-10-05): 양측 하폐야(오른쪽 우세)의 경계 불분명한 흐린 음영과 망상 음영 증가, 기흉·대량 흉수 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …62945405 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "양측 폐포 음영이 있고 100 % 산소에도 PaO2 가 54 에서 68 mm Hg 로만 올랐으므로 저산소혈증의 주 기전은 폐내 단락이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "V/Q 불균형이면 100 % 산소로 PaO2 가 수백 mm Hg 까지 오르는데, 여기서는 68 mm Hg 에 그쳤다",
+   "steps": 3,
+   "chain": [
+    "PaCO2 32, 실내 공기 A-a 차 약 56 mm Hg → 저환기·흡입 산소 저하 아님",
+    "영상: 양측 하폐야 폐포 음영 → 환기되지 않는 폐포에 혈류가 지나감",
+    "100 % 산소에도 PaO2 68 mm Hg → 단락(V/Q 불균형·확산 장애는 산소로 교정됨)"
+   ],
+   "key": [
+    {
+     "item": "영상: 양측 하폐야(오른쪽 우세)의 경계 불분명한 흐린 음영",
+     "why": "폐포가 삼출물로 차 있다 — 단락의 해부학적 근거",
+     "also": []
+    },
+    {
+     "item": "PaO2 is 68 mm Hg",
+     "why": "100 % 산소에 대한 반응이 작다 — 단락의 표지",
+     "also": []
+    },
+    {
+     "item": "Crackles are heard over both lung bases",
+     "why": "양측 폐포 침범의 진찰 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "PaCO2 32 mm Hg",
+     "why": "저환기 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He has never smoked",
+     "why": "만성폐쇄폐질환에 의한 V/Q 불균형 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Hemoglobin concentration is 14.1 g/dL",
+     "why": "빈혈이 아니어서 산소 함량 문제를 따로 고려할 필요가 없다",
+     "also": []
+    }
+   ],
+   "summary": "양측 폐포 음영과 넓은 A-a 차에 100 % 산소에도 PaO2 가 거의 오르지 않는다. 환기되지 않는 폐포를 지나는 혈류, 곧 폐내 단락이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "100 % 산소 뒤 PaO2 가 400 mm Hg 로 올랐다면 V/Q 불균형이 주 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0226.png",
+   "caption": "Upright anteroposterior chest radiograph, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1115694312578954933597862945405",
+   "asset_id": "TCIA-COVID19_AR-80281965984178",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …62945405"
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0237",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "약리 — 페니토인 증량 뒤 비선형 약동학",
+  "type": "약리 — 페니토인 증량 뒤 비선형 약동학",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-04",
+  "vignette": "A 42-year-old man with focal epilepsy comes for follow-up. He has taken phenytoin 300 mg daily for 3 months with good adherence but has had two focal seizures with impaired awareness in the past month. His steady-state total serum phenytoin concentration is 8 mg/L, and serum albumin is 4.2 g/dL. He takes no other medications and drinks no alcohol. Physical examination shows no nystagmus or ataxia. The daily dose is increased to 400 mg. Assume that phenytoin elimination follows Michaelis-Menten kinetics with a Km of 4 mg/L, that bioavailability and the salt fraction are unchanged, and that adherence remains complete.",
+  "question": "Which of the following is the closest expected new steady-state total serum phenytoin concentration?",
+  "options": [
+   "24 mg/L",
+   "32 mg/L",
+   "10.7 mg/L",
+   "16 mg/L",
+   "14 mg/L"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: At steady state, dosing rate = Vmax × C/(Km + C). From the current regimen, 300 = Vmax × 8/(4 + 8), so Vmax = 450 mg/day. At 400 mg/day: 400 = 450 × C/(4 + C) → 400 × 4 + 400C = 450C → C = 1600/50 = 32 mg/L. A 33% dose increase quadruples the concentration, well above the 10–20 mg/L range, so toxicity (nystagmus, ataxia) is expected.\n- 원리: <b>Why phenytoin is not linear</b>: phenytoin is hydroxylated mainly by CYP2C9, and the usual therapeutic concentrations (10–20 mg/L) lie at or above the enzyme's Km. Once the enzyme approaches saturation, elimination can no longer rise in proportion to concentration — it approaches a ceiling, Vmax. Clearance (Vmax/(Km + C)) therefore <b>falls as concentration rises</b>.<br> <b>Consequence</b>: as the dosing rate approaches Vmax, the denominator (Vmax − dose) in C = Km × dose/(Vmax − dose) shrinks toward zero, and the steady-state concentration rises steeply. Here Vmax − dose falls from 150 to 50 mg/day when the dose goes from 300 to 400, so C rises fourfold, from 8 to 32 mg/L.<br> <b>Also slower to reach steady state</b>: because clearance falls at higher concentrations, the time to steady state lengthens, so a level checked a week after a dose change can underestimate where it will end up. Clinically, increments are kept small (25–50 mg/day) once levels approach the therapeutic range.\n- 비교: <table><thead><tr><th style=\"width:22%\">Calculation</th><th style=\"width:39%\">Michaelis-Menten (answer)</th><th>Linear proportion (closest rival)</th></tr></thead><tbody> <tr><td>Assumption</td><td>Clearance falls as C rises (saturable)</td><td>Clearance constant (first-order)</td></tr> <tr><td>Step 1</td><td>300 = Vmax × 8/12 → Vmax = 450 mg/day</td><td>—</td></tr> <tr><td>Step 2</td><td>C = Km × dose/(Vmax − dose) = 4 × 400/50</td><td>C = 8 × 400/300</td></tr> <tr><td>Result</td><td><b>32 mg/L</b> (toxic)</td><td>10.7 mg/L</td></tr> </tbody></table> The linear answer looks safely therapeutic, which is exactly why the error is dangerous; the same arithmetic gives 14 mg/L at 350 mg/day, so a 50-mg step would have been the safer change.\n- 오답 이유:\n  - (A) 24 mg/L would follow if Vmax were higher (about 467 mg/day) or Km larger. It would be correct only with different kinetic parameters than those given in this patient.\n  - (C) 10.7 mg/L assumes concentration rises in proportion to dose (first-order kinetics). It would be correct for a drug eliminated linearly, such as levetiracetam, not for saturable phenytoin.\n  - (D) 16 mg/L is simply double the current level, as if a 33% increase doubled the concentration. It has no kinetic basis here; it would follow only if Vmax were about 600 mg/day.\n  - (E) 14 mg/L is the Michaelis-Menten prediction for 350 mg/day (4 × 350/(450 − 350)). It would be correct if the dose had been raised by only 50 mg/day instead of 100 mg/day.\n- 함정: Scaling the level in proportion to the dose — phenytoin's saturable metabolism makes a small increase produce a disproportionate rise.\n- 학습목표: 미카엘리스-멘텐 식으로 페니토인의 용량 변화에 따른 정상상태 농도를 계산하고, 선형 비례 계산이 왜 틀리는지 설명한다\n- 근거·출처: Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. 2 Pharmacokinetics (Michaelis-Menten elimination) and Ch. 20 Pharmacotherapy of the epilepsies · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 3 Pharmacokinetics & pharmacodynamics (capacity-limited elimination)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "At steady state, dosing rate = Vmax × C/(Km + C). From the current regimen, 300 = Vmax × 8/(4 + 8), so Vmax = 450 mg/day. At 400 mg/day: 400 = 450 × C/(4 + C) → 400 × 4 + 400C = 450C → C = 1600/50 = 32 mg/L. A 33% dose increase quadruples the concentration, well above the 10–20 mg/L range, so toxicity (nystagmus, ataxia) is expected."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why phenytoin is not linear</b>: phenytoin is hydroxylated mainly by CYP2C9, and the usual therapeutic concentrations (10–20 mg/L) lie at or above the enzyme's Km. Once the enzyme approaches saturation, elimination can no longer rise in proportion to concentration — it approaches a ceiling, Vmax. Clearance (Vmax/(Km + C)) therefore <b>falls as concentration rises</b>.<br> <b>Consequence</b>: as the dosing rate approaches Vmax, the denominator (Vmax − dose) in C = Km × dose/(Vmax − dose) shrinks toward zero, and the steady-state concentration rises steeply. Here Vmax − dose falls from 150 to 50 mg/day when the dose goes from 300 to 400, so C rises fourfold, from 8 to 32 mg/L.<br> <b>Also slower to reach steady state</b>: because clearance falls at higher concentrations, the time to steady state lengthens, so a level checked a week after a dose change can underestimate where it will end up. Clinically, increments are kept small (25–50 mg/day) once levels approach the therapeutic range."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Calculation</th><th style=\"width:39%\">Michaelis-Menten (answer)</th><th>Linear proportion (closest rival)</th></tr></thead><tbody> <tr><td>Assumption</td><td>Clearance falls as C rises (saturable)</td><td>Clearance constant (first-order)</td></tr> <tr><td>Step 1</td><td>300 = Vmax × 8/12 → Vmax = 450 mg/day</td><td>—</td></tr> <tr><td>Step 2</td><td>C = Km × dose/(Vmax − dose) = 4 × 400/50</td><td>C = 8 × 400/300</td></tr> <tr><td>Result</td><td><b>32 mg/L</b> (toxic)</td><td>10.7 mg/L</td></tr> </tbody></table> The linear answer looks safely therapeutic, which is exactly why the error is dangerous; the same arithmetic gives 14 mg/L at 350 mg/day, so a 50-mg step would have been the safer change."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) 24 mg/L would follow if Vmax were higher (about 467 mg/day) or Km larger. It would be correct only with different kinetic parameters than those given in this patient.\n(C) 10.7 mg/L assumes concentration rises in proportion to dose (first-order kinetics). It would be correct for a drug eliminated linearly, such as levetiracetam, not for saturable phenytoin.\n(D) 16 mg/L is simply double the current level, as if a 33% increase doubled the concentration. It has no kinetic basis here; it would follow only if Vmax were about 600 mg/day.\n(E) 14 mg/L is the Michaelis-Menten prediction for 350 mg/day (4 × 350/(450 − 350)). It would be correct if the dose had been raised by only 50 mg/day instead of 100 mg/day."
+   },
+   {
+    "k": "함정",
+    "v": "Scaling the level in proportion to the dose — phenytoin's saturable metabolism makes a small increase produce a disproportionate rise."
+   },
+   {
+    "k": "학습목표",
+    "v": "미카엘리스-멘텐 식으로 페니토인의 용량 변화에 따른 정상상태 농도를 계산하고, 선형 비례 계산이 왜 틀리는지 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. 2 Pharmacokinetics (Michaelis-Menten elimination) and Ch. 20 Pharmacotherapy of the epilepsies · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 3 Pharmacokinetics & pharmacodynamics (capacity-limited elimination)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "페니토인은 포화성 대사를 하므로 미카엘리스-멘텐 식으로 Vmax 450 을 구하면 400 mg/day 에서 정상상태 농도는 32 mg/L 이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "10.7 mg/L 은 용량에 비례한다고 본 1차 반응 계산인데, 페니토인은 치료 농도에서 대사 효소가 포화되어 비례하지 않는다",
+   "steps": 3,
+   "chain": [
+    "페니토인 → 미카엘리스-멘텐 소실(Km 4 mg/L 제시)",
+    "300 = Vmax × 8/(4+8) → Vmax = 450 mg/day",
+    "C = 4 × 400/(450−400) = 32 mg/L"
+   ],
+   "key": [
+    {
+     "item": "steady-state total serum phenytoin concentration is 8 mg/L",
+     "why": "Vmax 를 구하는 기준점",
+     "also": []
+    },
+    {
+     "item": "Km of 4 mg/L",
+     "why": "미카엘리스-멘텐 식의 상수",
+     "also": []
+    },
+    {
+     "item": "The daily dose is increased to 400 mg",
+     "why": "새 투여 속도",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum albumin is 4.2 g/dL",
+     "why": "저알부민혈증에 의한 총 농도 보정이 필요 없다",
+     "also": []
+    },
+    {
+     "item": "He takes no other medications",
+     "why": "효소 유도·억제 상호작용 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "two focal seizures with impaired awareness",
+     "why": "증량의 이유 — 계산과는 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "페니토인은 포화성 대사를 한다. 현재 용량과 농도로 Vmax 450 mg/day 를 구하면 400 mg/day 에서 농도는 32 mg/L 로 독성 범위다.",
+   "switch": {
+    "choice": "C",
+    "condition": "1차 반응으로 소실되는 약(예: 레베티라세탐)이었다면 농도는 용량에 비례해 10.7 mg/L 이 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0236",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "소아청소년 — 안정 시 협착음이 있는 크룹",
+  "type": "소아청소년 — 안정 시 협착음이 있는 크룹",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "A 2-year-old boy is brought to the emergency department at 2 AM because of a barking cough and noisy breathing that began 3 hours ago. He has had a runny nose and low-grade fever for 2 days. He has received all recommended vaccinations. He is not drooling and is drinking. Temperature is 38.1°C (100.6°F), pulse is 142/min, respirations are 40/min, and oxygen saturation is 96% on room air. He is alert and sitting on his mother's lap. Inspiratory stridor is heard while he is calm, and there are moderate suprasternal and subcostal retractions. Air entry is decreased but equal bilaterally. The pharynx is mildly erythematous without exudate.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Nebulized albuterol",
+   "Intravenous ceftriaxone and lateral neck radiography",
+   "Cool mist humidification alone",
+   "Oral dexamethasone and nebulized epinephrine",
+   "Oral dexamethasone alone"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: A barking cough with inspiratory stridor after a viral prodrome in a 2-year-old is croup. Stridor at rest with moderate retractions means moderate croup, which needs both dexamethasone (onset in hours, reduces return visits) and nebulized epinephrine (onset in minutes, relieves subglottic edema). He should be observed for 2–4 hours after epinephrine for rebound.\n- 원리: <b>Why the subglottis matters</b>: parainfluenza virus inflames the larynx and trachea, and swelling in the <b>subglottic region</b> — the narrowest part of a child's airway, enclosed by the complete cricoid ring — cannot expand outward. Because resistance rises with the fourth power of the radius falling (Poiseuille), 1 mm of edema in a 4-mm airway sharply raises the work of breathing and produces stridor.<br> <b>Two drugs, two time frames</b>: nebulized epinephrine acts on α-adrenergic receptors in the mucosal vessels within 10–30 minutes, shrinking the edema; its effect wears off in about 2 hours. Dexamethasone reduces the inflammation itself, starting in 2–6 hours and lasting days, which covers the period after epinephrine fades.<br> <b>Severity decides</b>: stridor only with agitation and no retractions is mild croup (dexamethasone alone); stridor at rest with retractions is moderate (both drugs and observation); fatigue, cyanosis, or altered consciousness is severe and impending respiratory failure.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Moderate croup — dexamethasone + epinephrine (answer)</th><th>Mild croup — dexamethasone alone (closest rival)</th></tr></thead><tbody> <tr><td>Stridor</td><td><b>At rest</b></td><td>Only with crying or agitation</td></tr> <tr><td>Retractions</td><td>Moderate suprasternal and subcostal</td><td>None or minimal</td></tr> <tr><td>Treatment</td><td>Dexamethasone + nebulized epinephrine, observe 2–4 h</td><td>Single oral dose of dexamethasone, discharge</td></tr> <tr><td>This child</td><td>Stridor while calm, moderate retractions</td><td>—</td></tr> </tbody></table> Severity is graded by stridor at rest and retractions, not by oxygen saturation, which stays normal until croup is severe.\n- 오답 이유:\n  - (A) Albuterol relaxes bronchial smooth muscle and helps asthma or bronchiolitis wheezing, not subglottic edema. It would fit an expiratory wheeze with prolonged expiration rather than inspiratory stridor.\n  - (B) Ceftriaxone with airway imaging is for suspected epiglottitis or bacterial tracheitis — high fever, toxic appearance, drooling. It would be correct if he were drooling, leaning forward, and appeared toxic.\n  - (C) Humidified air has not been shown to improve croup symptoms in randomized trials. It might be offered for comfort in mild croup at home but is not adequate treatment for stridor at rest.\n  - (E) Dexamethasone alone is enough for mild croup without stridor at rest or retractions. It would be correct if the stridor were heard only when he cried and his chest wall did not retract.\n- 함정: Seeing a normal oxygen saturation and treating it as mild — stridor at rest with retractions is moderate croup regardless of saturation.\n- 학습목표: 안정 시 협착음과 견인이 있는 중등도 크룹에서 덱사메타손과 분무 에피네프린을 함께 쓰고, 경증 크룹 치료와 구별한다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 412 Acute inflammatory upper airway obstruction (croup) · Bjornson CL, Johnson DW. Croup in children. CMAJ 2013;185:1317 (PMID 23939212)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A barking cough with inspiratory stridor after a viral prodrome in a 2-year-old is croup. Stridor at rest with moderate retractions means moderate croup, which needs both dexamethasone (onset in hours, reduces return visits) and nebulized epinephrine (onset in minutes, relieves subglottic edema). He should be observed for 2–4 hours after epinephrine for rebound."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the subglottis matters</b>: parainfluenza virus inflames the larynx and trachea, and swelling in the <b>subglottic region</b> — the narrowest part of a child's airway, enclosed by the complete cricoid ring — cannot expand outward. Because resistance rises with the fourth power of the radius falling (Poiseuille), 1 mm of edema in a 4-mm airway sharply raises the work of breathing and produces stridor.<br> <b>Two drugs, two time frames</b>: nebulized epinephrine acts on α-adrenergic receptors in the mucosal vessels within 10–30 minutes, shrinking the edema; its effect wears off in about 2 hours. Dexamethasone reduces the inflammation itself, starting in 2–6 hours and lasting days, which covers the period after epinephrine fades.<br> <b>Severity decides</b>: stridor only with agitation and no retractions is mild croup (dexamethasone alone); stridor at rest with retractions is moderate (both drugs and observation); fatigue, cyanosis, or altered consciousness is severe and impending respiratory failure."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Moderate croup — dexamethasone + epinephrine (answer)</th><th>Mild croup — dexamethasone alone (closest rival)</th></tr></thead><tbody> <tr><td>Stridor</td><td><b>At rest</b></td><td>Only with crying or agitation</td></tr> <tr><td>Retractions</td><td>Moderate suprasternal and subcostal</td><td>None or minimal</td></tr> <tr><td>Treatment</td><td>Dexamethasone + nebulized epinephrine, observe 2–4 h</td><td>Single oral dose of dexamethasone, discharge</td></tr> <tr><td>This child</td><td>Stridor while calm, moderate retractions</td><td>—</td></tr> </tbody></table> Severity is graded by stridor at rest and retractions, not by oxygen saturation, which stays normal until croup is severe."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Albuterol relaxes bronchial smooth muscle and helps asthma or bronchiolitis wheezing, not subglottic edema. It would fit an expiratory wheeze with prolonged expiration rather than inspiratory stridor.\n(B) Ceftriaxone with airway imaging is for suspected epiglottitis or bacterial tracheitis — high fever, toxic appearance, drooling. It would be correct if he were drooling, leaning forward, and appeared toxic.\n(C) Humidified air has not been shown to improve croup symptoms in randomized trials. It might be offered for comfort in mild croup at home but is not adequate treatment for stridor at rest.\n(E) Dexamethasone alone is enough for mild croup without stridor at rest or retractions. It would be correct if the stridor were heard only when he cried and his chest wall did not retract."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing a normal oxygen saturation and treating it as mild — stridor at rest with retractions is moderate croup regardless of saturation."
+   },
+   {
+    "k": "학습목표",
+    "v": "안정 시 협착음과 견인이 있는 중등도 크룹에서 덱사메타손과 분무 에피네프린을 함께 쓰고, 경증 크룹 치료와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 412 Acute inflammatory upper airway obstruction (croup) · Bjornson CL, Johnson DW. Croup in children. CMAJ 2013;185:1317 (PMID 23939212)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "안정 시 흡기 협착음과 중등도 견인이 있는 중등도 크룹이므로 덱사메타손과 분무 에피네프린을 함께 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "덱사메타손 단독은 협착음이 울 때만 들리고 견인이 없는 경증 크룹의 치료인데, 이 아이는 조용할 때도 협착음이 있다",
+   "steps": 2,
+   "chain": [
+    "바이러스 전구 증상 뒤 개 짖는 기침 + 흡기 협착음, 침 흘림 없음 → 크룹",
+    "안정 시 협착음 + 중등도 견인 → 중등도 → 덱사메타손 + 분무 에피네프린"
+   ],
+   "key": [
+    {
+     "item": "Inspiratory stridor is heard while he is calm",
+     "why": "안정 시 협착음 — 중등도 이상",
+     "also": []
+    },
+    {
+     "item": "moderate suprasternal and subcostal retractions",
+     "why": "중등도 견인 — 에피네프린 적응",
+     "also": []
+    },
+    {
+     "item": "barking cough",
+     "why": "크룹의 특징적 기침",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He is not drooling and is drinking",
+     "why": "후두개염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He has received all recommended vaccinations",
+     "why": "b형 헤모필루스 후두개염 가능성을 더 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "oxygen saturation is 96% on room air",
+     "why": "크룹에서 포화도는 늦게 떨어진다 — 중증도 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "Temperature is 38.1°C",
+     "why": "미열 — 바이러스 감염과 맞고 세균 감염을 시사하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "바이러스 전구 증상 뒤 개 짖는 기침과 흡기 협착음의 크룹이다. 안정 시 협착음과 견인이 있어 덱사메타손과 분무 에피네프린을 함께 준다.",
+   "switch": {
+    "choice": "E",
+    "condition": "협착음이 울 때만 들리고 견인이 없었다면 덱사메타손 단독으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0235",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "혈액·종양 — 성인 면역혈소판감소증의 첫 치료",
+  "type": "혈액·종양 — 성인 면역혈소판감소증의 첫 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "32세 여자가 5일 전부터 다리에 붉은 점이 생기고 양치할 때 잇몸에서 피가 조금 나서 병원에 왔다. 코피, 혈뇨, 혈변은 없고 월경량은 평소와 같다. 2주 전 감기를 앓았다. 복용하는 약은 없다. 혈압 118/72 mmHg, 맥박 76회/분, 체온 36.7°C 이다. 양쪽 다리에 점상출혈이 흩어져 있고 입안에 혈포는 없다. 간과 비장, 림프절은 만져지지 않는다. 신경학적 검사는 정상이다. 혈색소 13.2 g/dL, 백혈구 6,800/mm³(백분율 정상), 혈소판 12,000/mm³ 이다. 말초혈액도말에서 큰 혈소판이 보이고 그 외 이상은 없다. 프로트롬빈시간과 활성화부분트롬보플라스틴시간은 정상이다. HIV·C형간염 항체는 음성이다. 임신 반응은 음성이다.",
+  "question": "첫 치료로 가장 적절한 것은?",
+  "options": [
+   "정맥 면역글로불린 단독",
+   "혈소판 수혈",
+   "비장절제술",
+   "트롬보포이에틴 수용체 작용제",
+   "부신피질호르몬"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 혈소판만 12,000/mm³ 로 줄고 말초혈액도말에 큰 혈소판 외 이상이 없으며 응고검사·다른 혈구가 정상이고 비장종대가 없다 — 이차 원인 검사가 음성인 면역혈소판감소증이다. 혈소판 30,000/mm³ 미만이면 치료하고, 첫 치료는 부신피질호르몬(덱사메타손 40 mg 4일 또는 프레드니손)이다. 점막 출혈이 경미하고 생명을 위협하는 출혈이 없으므로 IVIG 를 단독으로 먼저 쓸 이유는 없다.\n- 원리: <b>병태</b>: 면역혈소판감소증에서는 혈소판 막당단백(GPIIb/IIIa 등)에 대한 IgG 자가항체가 혈소판을 덮고, 비장의 대식세포가 Fc 수용체로 이를 잡아 파괴한다. 같은 항체가 골수 거핵구도 공격해 생산까지 줄인다. 골수는 보상적으로 젊고 큰 혈소판을 내보낸다 — 도말의 큰 혈소판이 이것이다.<br> <b>왜 부신피질호르몬이 첫 치료인가</b>: 대식세포의 Fc 수용체 발현과 탐식을 줄이고 자가항체 생산을 억제해 2~14일에 걸쳐 혈소판을 올린다. 70~80 % 가 반응하고 값이 싸며 경구로 쓸 수 있다.<br> <b>IVIG 의 자리</b>: 대식세포 Fc 수용체를 포화시켜 24~48시간 만에 빠르게 혈소판을 올리지만 효과가 몇 주로 짧고 비싸다. 그래서 심한 점막·내부 출혈, 응급 수술 전처럼 <b>빠른 상승이 꼭 필요할 때</b> 스테로이드에 더한다. 혈소판 수혈은 항체에 곧바로 파괴되어 생명을 위협하는 출혈에서만 IVIG·스테로이드와 함께 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">부신피질호르몬(정답)</th><th>정맥 면역글로불린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>Fc 수용체·탐식 억제 + 자가항체 생산 감소</td><td>대식세포 Fc 수용체 포화(경쟁 차단)</td></tr> <tr><td>반응 시점 · 지속</td><td>2~14일 · 수주~수개월</td><td><b>24~48시간</b> · 2~4주</td></tr> <tr><td>적응</td><td>혈소판 &lt; 30,000 의 첫 치료</td><td>심한 출혈·빠른 상승 필요·스테로이드 금기</td></tr> <tr><td>이 환자</td><td>점상출혈과 경미한 잇몸 출혈</td><td>생명 위협 출혈·혈포 없음 — 단독 첫 치료 아님</td></tr> </tbody></table> 「혈소판이 매우 낮다」만으로 IVIG 가 되지 않는다. 출혈의 심각도와 상승이 필요한 속도가 가른다.\n- 오답 이유:\n  - ① 정맥 면역글로불린은 1~2일 만에 혈소판을 올리지만 효과가 짧고 비싸다. 입안 혈포·위장관 출혈처럼 심한 출혈이 있거나 응급 수술을 앞둔 경우라면 스테로이드와 함께 쓴다.\n  - ② 혈소판 수혈은 자가항체에 곧바로 파괴되어 거의 오르지 않는다. 두개내출혈처럼 생명을 위협하는 출혈에서 IVIG·스테로이드와 함께 쓸 때만 적응이 된다.\n  - ③ 비장절제술은 1차 치료에 반응하지 않거나 재발한 만성 면역혈소판감소증에서 고려한다. 12개월 이상 지속되고 여러 약에 반응하지 않았다면 선택지가 된다.\n  - ④ 트롬보포이에틴 수용체 작용제는 스테로이드에 반응하지 않거나 의존적인 경우의 2차 치료다. 스테로이드를 끊으면 다시 떨어지는 지속성 면역혈소판감소증이라면 정답이 된다.\n- 함정: 혈소판 12,000 이라는 숫자에 놀라 수혈이나 IVIG 를 고르는 것 — 출혈이 경미하면 첫 치료는 스테로이드다.\n- 학습목표: 심한 출혈이 없는 성인 면역혈소판감소증의 첫 치료로 부신피질호르몬을 고르고, IVIG·혈소판 수혈의 적응과 구별한다\n- 근거·출처: Neunert C, et al. American Society of Hematology 2019 guidelines for immune thrombocytopenia. Blood Adv 2019;3:3829 (PMID 31794604) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "혈소판만 12,000/mm³ 로 줄고 말초혈액도말에 큰 혈소판 외 이상이 없으며 응고검사·다른 혈구가 정상이고 비장종대가 없다 — 이차 원인 검사가 음성인 면역혈소판감소증이다. 혈소판 30,000/mm³ 미만이면 치료하고, 첫 치료는 부신피질호르몬(덱사메타손 40 mg 4일 또는 프레드니손)이다. 점막 출혈이 경미하고 생명을 위협하는 출혈이 없으므로 IVIG 를 단독으로 먼저 쓸 이유는 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>병태</b>: 면역혈소판감소증에서는 혈소판 막당단백(GPIIb/IIIa 등)에 대한 IgG 자가항체가 혈소판을 덮고, 비장의 대식세포가 Fc 수용체로 이를 잡아 파괴한다. 같은 항체가 골수 거핵구도 공격해 생산까지 줄인다. 골수는 보상적으로 젊고 큰 혈소판을 내보낸다 — 도말의 큰 혈소판이 이것이다.<br> <b>왜 부신피질호르몬이 첫 치료인가</b>: 대식세포의 Fc 수용체 발현과 탐식을 줄이고 자가항체 생산을 억제해 2~14일에 걸쳐 혈소판을 올린다. 70~80 % 가 반응하고 값이 싸며 경구로 쓸 수 있다.<br> <b>IVIG 의 자리</b>: 대식세포 Fc 수용체를 포화시켜 24~48시간 만에 빠르게 혈소판을 올리지만 효과가 몇 주로 짧고 비싸다. 그래서 심한 점막·내부 출혈, 응급 수술 전처럼 <b>빠른 상승이 꼭 필요할 때</b> 스테로이드에 더한다. 혈소판 수혈은 항체에 곧바로 파괴되어 생명을 위협하는 출혈에서만 IVIG·스테로이드와 함께 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">부신피질호르몬(정답)</th><th>정맥 면역글로불린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>Fc 수용체·탐식 억제 + 자가항체 생산 감소</td><td>대식세포 Fc 수용체 포화(경쟁 차단)</td></tr> <tr><td>반응 시점 · 지속</td><td>2~14일 · 수주~수개월</td><td><b>24~48시간</b> · 2~4주</td></tr> <tr><td>적응</td><td>혈소판 &lt; 30,000 의 첫 치료</td><td>심한 출혈·빠른 상승 필요·스테로이드 금기</td></tr> <tr><td>이 환자</td><td>점상출혈과 경미한 잇몸 출혈</td><td>생명 위협 출혈·혈포 없음 — 단독 첫 치료 아님</td></tr> </tbody></table> 「혈소판이 매우 낮다」만으로 IVIG 가 되지 않는다. 출혈의 심각도와 상승이 필요한 속도가 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정맥 면역글로불린은 1~2일 만에 혈소판을 올리지만 효과가 짧고 비싸다. 입안 혈포·위장관 출혈처럼 심한 출혈이 있거나 응급 수술을 앞둔 경우라면 스테로이드와 함께 쓴다.\n② 혈소판 수혈은 자가항체에 곧바로 파괴되어 거의 오르지 않는다. 두개내출혈처럼 생명을 위협하는 출혈에서 IVIG·스테로이드와 함께 쓸 때만 적응이 된다.\n③ 비장절제술은 1차 치료에 반응하지 않거나 재발한 만성 면역혈소판감소증에서 고려한다. 12개월 이상 지속되고 여러 약에 반응하지 않았다면 선택지가 된다.\n④ 트롬보포이에틴 수용체 작용제는 스테로이드에 반응하지 않거나 의존적인 경우의 2차 치료다. 스테로이드를 끊으면 다시 떨어지는 지속성 면역혈소판감소증이라면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판 12,000 이라는 숫자에 놀라 수혈이나 IVIG 를 고르는 것 — 출혈이 경미하면 첫 치료는 스테로이드다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심한 출혈이 없는 성인 면역혈소판감소증의 첫 치료로 부신피질호르몬을 고르고, IVIG·혈소판 수혈의 적응과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Neunert C, et al. American Society of Hematology 2019 guidelines for immune thrombocytopenia. Blood Adv 2019;3:3829 (PMID 31794604) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "이차 원인이 없는 성인 면역혈소판감소증에서 혈소판 12,000 이지만 출혈이 경미하므로 첫 치료는 부신피질호르몬이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "IVIG 단독은 심한 출혈이나 빠른 상승이 필요할 때인데, 이 환자는 점상출혈과 경미한 잇몸 출혈뿐이고 혈포가 없다",
+   "steps": 3,
+   "chain": [
+    "혈소판만 감소 + 큰 혈소판 + 응고검사 정상 + 비장종대 없음 → 면역혈소판감소증",
+    "HIV·HCV 음성, 약 없음, 임신 아님 → 일차성",
+    "혈소판 < 30,000, 경미한 출혈 → 부신피질호르몬 첫 치료"
+   ],
+   "key": [
+    {
+     "item": "혈소판 12,000/mm³",
+     "why": "30,000 미만 — 치료 적응",
+     "also": []
+    },
+    {
+     "item": "큰 혈소판이 보이고 그 외 이상은 없다",
+     "why": "말초 파괴 + 다른 원인(TTP·백혈병) 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로트롬빈시간과 활성화부분트롬보플라스틴시간은 정상",
+     "why": "파종혈관내응고 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "HIV·C형간염 항체는 음성",
+     "why": "이차성 면역혈소판감소증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "간과 비장, 림프절은 만져지지 않는다",
+     "why": "림프증식질환·비장기능항진 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "입안에 혈포는 없다",
+     "why": "심한 점막 출혈이 아니다 — IVIG 단독이 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "2주 전 감기를 앓았다",
+     "why": "흔한 선행 감염 — 치료 선택은 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "다른 혈구와 응고검사가 정상이고 이차 원인이 없는 면역혈소판감소증이다. 출혈이 경미하므로 첫 치료는 부신피질호르몬이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "입안 혈포나 위장관 출혈처럼 심한 출혈이 있었다면 스테로이드에 IVIG 를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0234",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "소화기·간담췌 — 글루텐을 이미 끊은 환자의 셀리악병 평가",
+  "type": "소화기·간담췌 — 글루텐을 이미 끊은 환자의 셀리악병 평가",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "A 34-year-old woman comes to the physician because of bloating and loose stools for 1 year and iron deficiency anemia that did not improve with 6 months of oral iron. Three months ago, she started a strict gluten-free diet on her own after reading about it online, and her bloating and diarrhea have since resolved. She wants to know whether she has celiac disease. Her sister has type 1 diabetes mellitus. She has no other medical conditions. Vital signs are within normal limits, and BMI is 20 kg/m2. Physical examination shows no abnormalities. Hemoglobin is 10.8 g/dL with a mean corpuscular volume of 74 μm3. Serum IgA tissue transglutaminase antibody is negative, and total serum IgA is normal. She is reluctant to resume eating gluten.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Serum IgG anti-gliadin antibody",
+   "Lactose hydrogen breath test",
+   "HLA-DQ2 and HLA-DQ8 genotyping",
+   "Upper endoscopy with duodenal biopsy now",
+   "Repeat IgA tissue transglutaminase antibody in 3 months"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Serology and duodenal histology both normalize on a gluten-free diet, so the negative tTG-IgA after 3 months off gluten does not exclude celiac disease, and a biopsy now could also be falsely normal. Nearly all patients with celiac disease carry HLA-DQ2 or DQ8, so genotyping is unaffected by diet: a negative result effectively rules out celiac disease and spares her a gluten challenge; a positive result means a gluten challenge followed by serology and biopsy is needed.\n- 원리: <b>Why the usual tests fail here</b>: celiac disease is a T-cell response to gluten peptides deamidated by tissue transglutaminase and presented by <b>HLA-DQ2 or DQ8</b> on antigen-presenting cells. The tTG antibodies and the villous atrophy are both <b>driven by ongoing gluten exposure</b>; once gluten is removed, antibody titers fall over weeks to months and the mucosa begins to heal. Testing on a gluten-free diet therefore loses sensitivity.<br> <b>Why genotyping fits</b>: HLA type is fixed from birth. About 99 % of patients carry DQ2 or DQ8, so the test has a very high <b>negative</b> predictive value. Its positive predictive value is low — 30–40 % of the general population carries one of these alleles — so a positive result only means celiac disease remains possible.<br> <b>Sequence</b>: if DQ2/DQ8 is present, a gluten challenge (about 3–10 g of gluten daily for 2–8 weeks) restores the immune response before serology and duodenal biopsy are repeated.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">HLA-DQ2/DQ8 typing (answer)</th><th>Duodenal biopsy now (closest rival)</th></tr></thead><tbody> <tr><td>Depends on current gluten intake</td><td><b>No</b> — genotype is fixed</td><td>Yes — villi recover on a gluten-free diet</td></tr> <tr><td>Value when negative</td><td>Essentially excludes celiac disease</td><td>Cannot exclude after 3 months without gluten</td></tr> <tr><td>Value when positive</td><td>Low — only says celiac disease is possible</td><td>Diagnostic if gluten is being eaten</td></tr> <tr><td>Fits this patient</td><td>Yes — she refuses a gluten challenge</td><td>Only after a gluten challenge</td></tr> </tbody></table> On a normal diet the order is serology, then biopsy; on a gluten-free diet the order begins with the one test diet cannot change.\n- 오답 이유:\n  - (A) IgG anti-gliadin antibody has poor sensitivity and specificity and falls on a gluten-free diet as well. It is no longer recommended; IgG-based deamidated gliadin tests are used only in IgA deficiency.\n  - (B) A lactose breath test detects lactose malabsorption, which can follow celiac damage but does not diagnose its cause. It would be chosen if dairy-related symptoms persisted after celiac disease were excluded.\n  - (D) Duodenal biopsy is the diagnostic standard only while gluten is being eaten; after 3 months off gluten the villi may have healed. It would be correct if she were still eating gluten or after a gluten challenge.\n  - (E) Repeating tTG-IgA while she stays gluten-free will remain negative regardless of the diagnosis. It would make sense only after a gluten challenge or to monitor adherence in someone already diagnosed.\n- 함정: Going straight to biopsy as the gold standard — on a gluten-free diet both serology and histology can be falsely normal.\n- 학습목표: 이미 글루텐을 끊은 환자에서 셀리악병 혈청·조직검사가 위음성이 됨을 알고, HLA-DQ2/DQ8 검사로 먼저 배제 여부를 판단한다\n- 근거·출처: Rubio-Tapia A, et al. ACG clinical guidelines: diagnosis and management of celiac disease (2023 update). Am J Gastroenterol 2023;118:59 (PMID 36602836) · Feldman M, et al. Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed. Ch. 107 Celiac disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Serology and duodenal histology both normalize on a gluten-free diet, so the negative tTG-IgA after 3 months off gluten does not exclude celiac disease, and a biopsy now could also be falsely normal. Nearly all patients with celiac disease carry HLA-DQ2 or DQ8, so genotyping is unaffected by diet: a negative result effectively rules out celiac disease and spares her a gluten challenge; a positive result means a gluten challenge followed by serology and biopsy is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the usual tests fail here</b>: celiac disease is a T-cell response to gluten peptides deamidated by tissue transglutaminase and presented by <b>HLA-DQ2 or DQ8</b> on antigen-presenting cells. The tTG antibodies and the villous atrophy are both <b>driven by ongoing gluten exposure</b>; once gluten is removed, antibody titers fall over weeks to months and the mucosa begins to heal. Testing on a gluten-free diet therefore loses sensitivity.<br> <b>Why genotyping fits</b>: HLA type is fixed from birth. About 99 % of patients carry DQ2 or DQ8, so the test has a very high <b>negative</b> predictive value. Its positive predictive value is low — 30–40 % of the general population carries one of these alleles — so a positive result only means celiac disease remains possible.<br> <b>Sequence</b>: if DQ2/DQ8 is present, a gluten challenge (about 3–10 g of gluten daily for 2–8 weeks) restores the immune response before serology and duodenal biopsy are repeated."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">HLA-DQ2/DQ8 typing (answer)</th><th>Duodenal biopsy now (closest rival)</th></tr></thead><tbody> <tr><td>Depends on current gluten intake</td><td><b>No</b> — genotype is fixed</td><td>Yes — villi recover on a gluten-free diet</td></tr> <tr><td>Value when negative</td><td>Essentially excludes celiac disease</td><td>Cannot exclude after 3 months without gluten</td></tr> <tr><td>Value when positive</td><td>Low — only says celiac disease is possible</td><td>Diagnostic if gluten is being eaten</td></tr> <tr><td>Fits this patient</td><td>Yes — she refuses a gluten challenge</td><td>Only after a gluten challenge</td></tr> </tbody></table> On a normal diet the order is serology, then biopsy; on a gluten-free diet the order begins with the one test diet cannot change."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) IgG anti-gliadin antibody has poor sensitivity and specificity and falls on a gluten-free diet as well. It is no longer recommended; IgG-based deamidated gliadin tests are used only in IgA deficiency.\n(B) A lactose breath test detects lactose malabsorption, which can follow celiac damage but does not diagnose its cause. It would be chosen if dairy-related symptoms persisted after celiac disease were excluded.\n(D) Duodenal biopsy is the diagnostic standard only while gluten is being eaten; after 3 months off gluten the villi may have healed. It would be correct if she were still eating gluten or after a gluten challenge.\n(E) Repeating tTG-IgA while she stays gluten-free will remain negative regardless of the diagnosis. It would make sense only after a gluten challenge or to monitor adherence in someone already diagnosed."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to biopsy as the gold standard — on a gluten-free diet both serology and histology can be falsely normal."
+   },
+   {
+    "k": "학습목표",
+    "v": "이미 글루텐을 끊은 환자에서 셀리악병 혈청·조직검사가 위음성이 됨을 알고, HLA-DQ2/DQ8 검사로 먼저 배제 여부를 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rubio-Tapia A, et al. ACG clinical guidelines: diagnosis and management of celiac disease (2023 update). Am J Gastroenterol 2023;118:59 (PMID 36602836) · Feldman M, et al. Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed. Ch. 107 Celiac disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "이미 글루텐을 끊어 혈청·조직검사가 위음성일 수 있으므로, 식이와 무관한 HLA-DQ2/DQ8 검사로 먼저 배제 여부를 본다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "십이지장 생검은 글루텐을 먹고 있을 때만 믿을 수 있는데, 이 환자는 3개월째 글루텐을 끊었고 다시 먹기를 꺼린다",
+   "steps": 3,
+   "chain": [
+    "철 결핍 + 복부팽만·설사 + 1형 당뇨 가족력 → 셀리악병 의심",
+    "3개월 글루텐 제한 → tTG-IgA 음성과 생검 모두 위음성 가능",
+    "글루텐 재섭취를 꺼림 → 식이와 무관한 HLA-DQ2/DQ8 검사(음성이면 배제)"
+   ],
+   "key": [
+    {
+     "item": "iron deficiency anemia that did not improve with 6 months of oral iron",
+     "why": "흡수 장애를 시사 — 셀리악병 의심",
+     "also": []
+    },
+    {
+     "item": "started a strict gluten-free diet on her own",
+     "why": "혈청·조직검사를 위음성으로 만든다",
+     "also": []
+    },
+    {
+     "item": "Serum IgA tissue transglutaminase antibody is negative",
+     "why": "식이 때문에 해석할 수 없는 음성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "total serum IgA is normal",
+     "why": "IgA 결핍에 의한 위음성 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She is reluctant to resume eating gluten",
+     "why": "글루텐 재섭취 없이 할 수 있는 검사를 먼저 고른다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Her sister has type 1 diabetes mellitus",
+     "why": "자가면역 가족력 — 의심을 높이지만 검사 순서는 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "이미 글루텐을 끊어 tTG-IgA 와 생검이 위음성일 수 있다. 식이와 무관한 HLA-DQ2/DQ8 검사로 먼저 배제 여부를 본다.",
+   "switch": {
+    "choice": "D",
+    "condition": "환자가 아직 글루텐을 먹고 있고 tTG-IgA 가 양성이었다면 십이지장 생검으로 확진한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0233",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "산과 — 중증 전자간증의 경련 예방",
+  "type": "산과 — 중증 전자간증의 경련 예방",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-04",
+  "vignette": "A 31-year-old woman, gravida 2, para 1, at 34 weeks' gestation comes to the labor and delivery unit because of a severe headache for 4 hours and seeing spots. Her pregnancy had been uncomplicated, and her blood pressure was 118/74 mm Hg at 30 weeks. She takes a prenatal vitamin. Blood pressure is 168/112 mm Hg on two readings 15 minutes apart, pulse is 92/min, and respirations are 16/min. Deep tendon reflexes are 3+ with no clonus. There is no right upper quadrant tenderness. Urine dipstick shows 3+ protein. Platelet count is 162,000/mm3, AST is 32 U/L, and serum creatinine is 0.8 mg/dL. The fetal heart rate tracing is reassuring. Intravenous labetalol is given.",
+  "question": "In addition, which of the following is the most appropriate pharmacotherapy to prevent seizures?",
+  "options": [
+   "Magnesium sulfate",
+   "Phenytoin",
+   "Diazepam",
+   "Levetiracetam",
+   "Nifedipine"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: New-onset hypertension of 168/112 mm Hg with proteinuria after 20 weeks, severe headache, and visual symptoms is preeclampsia with severe features. Magnesium sulfate is the drug of choice to prevent eclamptic seizures; it roughly halves the risk compared with placebo and is more effective than phenytoin or diazepam. Antihypertensive therapy and planned delivery at 34 weeks complete management.\n- 원리: <b>Why magnesium works where antiepileptics fail</b>: eclamptic seizures are not driven by an epileptic focus but by <b>cerebral endothelial dysfunction</b> — loss of autoregulation, vasogenic edema (posterior reversible encephalopathy), and vasospasm in a brain exposed to severe hypertension. Magnesium is an NMDA-receptor antagonist and a physiological calcium antagonist: it relaxes cerebral vascular smooth muscle, stabilizes the blood–brain barrier, and raises the seizure threshold.<br> <b>Evidence</b>: in the MAGPIE trial (about 10,000 women), magnesium sulfate halved eclampsia compared with placebo; in the Collaborative Eclampsia Trial it prevented recurrent seizures far better than phenytoin or diazepam, with lower maternal mortality.<br> <b>Safety</b>: magnesium is renally excreted, so creatinine and urine output are monitored, and reflexes are checked because loss of patellar reflexes (about 7–10 mEq/L) precedes respiratory depression. Calcium gluconate reverses toxicity.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Magnesium sulfate (answer)</th><th>Phenytoin (closest rival)</th></tr></thead><tbody> <tr><td>Target</td><td>Cerebral vasculature and NMDA receptors</td><td>Neuronal Na⁺ channels (epileptic focus)</td></tr> <tr><td>Eclampsia prevention / recurrence</td><td><b>Superior</b> in randomized trials</td><td>Inferior — more recurrent seizures</td></tr> <tr><td>Use in pregnancy hypertension</td><td>First-line for prophylaxis and treatment</td><td>Only if magnesium is contraindicated (e.g., myasthenia gravis)</td></tr> <tr><td>Monitoring</td><td>Reflexes, respirations, urine output</td><td>Levels, cardiac rhythm during infusion</td></tr> </tbody></table> Benzodiazepines can stop a seizure in progress when magnesium is not yet running, but they are not prophylaxis.\n- 오답 이유:\n  - (B) Phenytoin blocks neuronal sodium channels and is less effective than magnesium at preventing eclamptic seizures. It would be chosen if magnesium were contraindicated, as in myasthenia gravis.\n  - (C) Diazepam can terminate an ongoing seizure but causes sedation and neonatal depression and does not prevent eclampsia well. It is a rescue drug if a seizure occurs before magnesium is available.\n  - (D) Levetiracetam is used for epilepsy in pregnancy but has no proven role in preventing eclampsia. It would be appropriate for a patient with a known seizure disorder needing maintenance therapy.\n  - (E) Nifedipine lowers severe blood pressure but does not prevent seizures by itself. It would be the answer if the question asked for an alternative oral antihypertensive to labetalol.\n- 함정: Treating eclampsia prevention like epilepsy and choosing an antiepileptic — magnesium is superior to phenytoin and diazepam.\n- 학습목표: 중증 전자간증에서 경련 예방 약으로 황산마그네슘을 고르고 페니토인·벤조디아제핀과 구별한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Gestational Hypertension and Preeclampsia. ACOG Practice Bulletin No. 222. Obstet Gynecol 2020;135:e237 (PMID 32443079) · Altman D, et al. Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial. Lancet 2002;359:1877 (PMID 12057549)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "New-onset hypertension of 168/112 mm Hg with proteinuria after 20 weeks, severe headache, and visual symptoms is preeclampsia with severe features. Magnesium sulfate is the drug of choice to prevent eclamptic seizures; it roughly halves the risk compared with placebo and is more effective than phenytoin or diazepam. Antihypertensive therapy and planned delivery at 34 weeks complete management."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why magnesium works where antiepileptics fail</b>: eclamptic seizures are not driven by an epileptic focus but by <b>cerebral endothelial dysfunction</b> — loss of autoregulation, vasogenic edema (posterior reversible encephalopathy), and vasospasm in a brain exposed to severe hypertension. Magnesium is an NMDA-receptor antagonist and a physiological calcium antagonist: it relaxes cerebral vascular smooth muscle, stabilizes the blood–brain barrier, and raises the seizure threshold.<br> <b>Evidence</b>: in the MAGPIE trial (about 10,000 women), magnesium sulfate halved eclampsia compared with placebo; in the Collaborative Eclampsia Trial it prevented recurrent seizures far better than phenytoin or diazepam, with lower maternal mortality.<br> <b>Safety</b>: magnesium is renally excreted, so creatinine and urine output are monitored, and reflexes are checked because loss of patellar reflexes (about 7–10 mEq/L) precedes respiratory depression. Calcium gluconate reverses toxicity."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Magnesium sulfate (answer)</th><th>Phenytoin (closest rival)</th></tr></thead><tbody> <tr><td>Target</td><td>Cerebral vasculature and NMDA receptors</td><td>Neuronal Na⁺ channels (epileptic focus)</td></tr> <tr><td>Eclampsia prevention / recurrence</td><td><b>Superior</b> in randomized trials</td><td>Inferior — more recurrent seizures</td></tr> <tr><td>Use in pregnancy hypertension</td><td>First-line for prophylaxis and treatment</td><td>Only if magnesium is contraindicated (e.g., myasthenia gravis)</td></tr> <tr><td>Monitoring</td><td>Reflexes, respirations, urine output</td><td>Levels, cardiac rhythm during infusion</td></tr> </tbody></table> Benzodiazepines can stop a seizure in progress when magnesium is not yet running, but they are not prophylaxis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Phenytoin blocks neuronal sodium channels and is less effective than magnesium at preventing eclamptic seizures. It would be chosen if magnesium were contraindicated, as in myasthenia gravis.\n(C) Diazepam can terminate an ongoing seizure but causes sedation and neonatal depression and does not prevent eclampsia well. It is a rescue drug if a seizure occurs before magnesium is available.\n(D) Levetiracetam is used for epilepsy in pregnancy but has no proven role in preventing eclampsia. It would be appropriate for a patient with a known seizure disorder needing maintenance therapy.\n(E) Nifedipine lowers severe blood pressure but does not prevent seizures by itself. It would be the answer if the question asked for an alternative oral antihypertensive to labetalol."
+   },
+   {
+    "k": "함정",
+    "v": "Treating eclampsia prevention like epilepsy and choosing an antiepileptic — magnesium is superior to phenytoin and diazepam."
+   },
+   {
+    "k": "학습목표",
+    "v": "중증 전자간증에서 경련 예방 약으로 황산마그네슘을 고르고 페니토인·벤조디아제핀과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Gestational Hypertension and Preeclampsia. ACOG Practice Bulletin No. 222. Obstet Gynecol 2020;135:e237 (PMID 32443079) · Altman D, et al. Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial. Lancet 2002;359:1877 (PMID 12057549)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "중증 양상의 전자간증에서 경련을 예방할 약은 황산마그네슘이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "페니토인은 뉴런 나트륨 통로를 막는 항경련제로, 무작위시험에서 자간증 예방·재발 억제가 마그네슘보다 떨어진다",
+   "steps": 2,
+   "chain": [
+    "34주, 168/112 mm Hg + 3+ 단백뇨 + 심한 두통·시각 증상 → 중증 양상의 전자간증",
+    "자간증 예방 → 황산마그네슘(항경련제보다 우월)"
+   ],
+   "key": [
+    {
+     "item": "168/112 mm Hg on two readings 15 minutes apart",
+     "why": "중증 범위 혈압",
+     "also": []
+    },
+    {
+     "item": "Urine dipstick shows 3+ protein",
+     "why": "단백뇨 — 전자간증",
+     "also": []
+    },
+    {
+     "item": "severe headache for 4 hours and seeing spots",
+     "why": "뇌 증상 — 중증 양상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Platelet count is 162,000/mm3",
+     "why": "HELLP 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Deep tendon reflexes are 3+ with no clonus",
+     "why": "마그네슘 감시의 기준선 — 반사 소실이 독성의 첫 신호",
+     "also": []
+    },
+    {
+     "item": "serum creatinine is 0.8 mg/dL",
+     "why": "신기능 정상 — 마그네슘 표준 용량 사용 가능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "The fetal heart rate tracing is reassuring",
+     "why": "응급 분만이 당장 필요하지 않다는 배경",
+     "also": []
+    }
+   ],
+   "summary": "34주 중증 양상의 전자간증이다. 혈압 강하와 함께 경련 예방에는 황산마그네슘을 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "중증근무력증이 있어 마그네슘이 금기였다면 다른 항경련제(페니토인 등)를 쓴다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0232",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "부인과 — 다낭난소증후군 불임의 배란 유도",
+  "type": "부인과 — 다낭난소증후군 불임의 배란 유도",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-04",
+  "vignette": "28세 여자가 1년 동안 피임하지 않았는데도 임신이 되지 않아 병원에 왔다. 초경 이후 월경이 불규칙하여 1년에 5회 정도 한다. 얼굴에 여드름이 있고 턱에 굵은 털이 난다. 키 160 cm, 몸무게 79 kg(체질량지수 31 kg/m²)이다. 혈압 124/78 mmHg 이다. 혈청 총 테스토스테론은 약간 높고, 갑상샘자극호르몬과 프로락틴, 17-하이드록시프로게스테론은 정상이다. 공복 혈당 98 mg/dL 이다. 질초음파에서 양쪽 난소에 2~9 mm 난포가 20개 이상 보인다. 자궁난관조영술에서 양쪽 난관이 열려 있고, 남편의 정액검사는 정상이다. 체중 감량과 운동을 지도하였다.",
+  "question": "배란을 유도하기 위한 약으로 가장 적절한 것은?",
+  "options": [
+   "레트로졸",
+   "클로미펜",
+   "메트포르민",
+   "복합경구피임약",
+   "생식샘자극호르몬 주사"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 희발월경·고안드로겐 징후·다낭 난소로 다낭난소증후군이고, 난관과 정액이 정상인 무배란 불임이다. 생활습관 교정과 함께 쓰는 첫 배란유도제는 아로마타제 억제제 레트로졸이다. 다낭난소증후군 여성에서 클로미펜보다 배란율과 생존아 출산율이 높고(특히 체질량지수 30 이상), 다태임신률은 비슷하다.\n- 원리: <b>왜 배란이 안 되는가</b>: 다낭난소증후군에서는 LH 펄스가 잦아 난포막세포의 안드로겐 생산이 늘고, 인슐린 저항성이 이를 더 키운다. 난포는 FSH 가 부족해 우성 난포로 자라지 못하고 작은 난포가 여럿 머문다.<br> <b>레트로졸의 작동</b>: 아로마타제를 막아 에스트로겐을 일시적으로 낮추면 시상하부가 이를 감지해 FSH 분비를 늘린다. 약의 반감기가 짧아(약 2일) 투여가 끝나면 에스트로겐 음성되먹임이 다시 작동해 <b>대개 하나의 우성 난포</b>만 자라고, 자궁내막과 경관 점액에 대한 항에스트로겐 효과가 남지 않는다.<br> <b>클로미펜과의 차이</b>: 클로미펜은 시상하부의 에스트로겐 수용체를 오래 차단해(반감기 5일 이상, 이성질체는 수 주) 자궁내막을 얇게 하고 경관 점액을 나쁘게 만든다 — 배란이 되어도 착상·임신율이 낮은 이유다. 비만한 다낭난소증후군 여성 750명 무작위시험에서 생존아 출산은 레트로졸 27.5 % 대 클로미펜 19.1 % 였다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">레트로졸(정답)</th><th>클로미펜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>아로마타제 억제 → 에스트로겐↓ → FSH↑</td><td>시상하부 에스트로겐 수용체 차단 → FSH↑</td></tr> <tr><td>반감기</td><td>약 2일 — 말초 항에스트로겐 효과 없음</td><td>5일 이상 — 자궁내막 얇아짐·경관 점액 악화</td></tr> <tr><td>다낭난소증후군 생존아 출산</td><td><b>더 높다</b>(27.5 %)</td><td>낮다(19.1 %)</td></tr> <tr><td>지침상 위치</td><td>첫 배란유도제</td><td>레트로졸을 쓸 수 없을 때</td></tr> </tbody></table> 둘 다 경구 약이고 다태임신률은 비슷하다 — 차이는 말초 항에스트로겐 효과가 남는가에 있다.\n- 오답 이유:\n  - ② 클로미펜도 배란을 유도하지만 다낭난소증후군에서는 레트로졸보다 생존아 출산율이 낮다. 레트로졸을 구할 수 없거나 쓸 수 없는 상황이라면 대안이 된다.\n  - ③ 메트포르민은 인슐린 저항성을 줄여 월경 주기를 일부 회복시키지만 단독 배란유도 효과는 약하다. 내당능장애가 뚜렷할 때 보조로 더하거나 클로미펜 저항에서 함께 쓴다.\n  - ④ 복합경구피임약은 월경 조절·고안드로겐 증상 치료의 첫 약이지만 배란을 억제한다. 지금 임신을 원하지 않는 다낭난소증후군 여성이라면 정답이 된다.\n  - ⑤ 생식샘자극호르몬 주사는 경구 약에 반응하지 않을 때의 2차 치료이고 난소과자극·다태임신 위험이 크다. 레트로졸로 여러 주기 배란이 되지 않았다면 고려한다.\n- 함정: 오래 써 온 클로미펜을 첫 약으로 고르는 것 — 다낭난소증후군에서는 레트로졸의 생존아 출산율이 더 높다.\n- 학습목표: 다낭난소증후군의 무배란 불임에서 생활습관 교정 뒤 첫 배란유도제로 레트로졸을 고르고, 클로미펜과의 차이를 설명한다\n- 근거·출처: Legro RS, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med 2014;371:119 (PMID 25006718) · Teede HJ, et al. Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome. Fertil Steril 2023;120:767 (PMID 37589624)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "희발월경·고안드로겐 징후·다낭 난소로 다낭난소증후군이고, 난관과 정액이 정상인 무배란 불임이다. 생활습관 교정과 함께 쓰는 첫 배란유도제는 아로마타제 억제제 레트로졸이다. 다낭난소증후군 여성에서 클로미펜보다 배란율과 생존아 출산율이 높고(특히 체질량지수 30 이상), 다태임신률은 비슷하다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 배란이 안 되는가</b>: 다낭난소증후군에서는 LH 펄스가 잦아 난포막세포의 안드로겐 생산이 늘고, 인슐린 저항성이 이를 더 키운다. 난포는 FSH 가 부족해 우성 난포로 자라지 못하고 작은 난포가 여럿 머문다.<br> <b>레트로졸의 작동</b>: 아로마타제를 막아 에스트로겐을 일시적으로 낮추면 시상하부가 이를 감지해 FSH 분비를 늘린다. 약의 반감기가 짧아(약 2일) 투여가 끝나면 에스트로겐 음성되먹임이 다시 작동해 <b>대개 하나의 우성 난포</b>만 자라고, 자궁내막과 경관 점액에 대한 항에스트로겐 효과가 남지 않는다.<br> <b>클로미펜과의 차이</b>: 클로미펜은 시상하부의 에스트로겐 수용체를 오래 차단해(반감기 5일 이상, 이성질체는 수 주) 자궁내막을 얇게 하고 경관 점액을 나쁘게 만든다 — 배란이 되어도 착상·임신율이 낮은 이유다. 비만한 다낭난소증후군 여성 750명 무작위시험에서 생존아 출산은 레트로졸 27.5 % 대 클로미펜 19.1 % 였다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">레트로졸(정답)</th><th>클로미펜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>아로마타제 억제 → 에스트로겐↓ → FSH↑</td><td>시상하부 에스트로겐 수용체 차단 → FSH↑</td></tr> <tr><td>반감기</td><td>약 2일 — 말초 항에스트로겐 효과 없음</td><td>5일 이상 — 자궁내막 얇아짐·경관 점액 악화</td></tr> <tr><td>다낭난소증후군 생존아 출산</td><td><b>더 높다</b>(27.5 %)</td><td>낮다(19.1 %)</td></tr> <tr><td>지침상 위치</td><td>첫 배란유도제</td><td>레트로졸을 쓸 수 없을 때</td></tr> </tbody></table> 둘 다 경구 약이고 다태임신률은 비슷하다 — 차이는 말초 항에스트로겐 효과가 남는가에 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 클로미펜도 배란을 유도하지만 다낭난소증후군에서는 레트로졸보다 생존아 출산율이 낮다. 레트로졸을 구할 수 없거나 쓸 수 없는 상황이라면 대안이 된다.\n③ 메트포르민은 인슐린 저항성을 줄여 월경 주기를 일부 회복시키지만 단독 배란유도 효과는 약하다. 내당능장애가 뚜렷할 때 보조로 더하거나 클로미펜 저항에서 함께 쓴다.\n④ 복합경구피임약은 월경 조절·고안드로겐 증상 치료의 첫 약이지만 배란을 억제한다. 지금 임신을 원하지 않는 다낭난소증후군 여성이라면 정답이 된다.\n⑤ 생식샘자극호르몬 주사는 경구 약에 반응하지 않을 때의 2차 치료이고 난소과자극·다태임신 위험이 크다. 레트로졸로 여러 주기 배란이 되지 않았다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "오래 써 온 클로미펜을 첫 약으로 고르는 것 — 다낭난소증후군에서는 레트로졸의 생존아 출산율이 더 높다."
+   },
+   {
+    "k": "학습목표",
+    "v": "다낭난소증후군의 무배란 불임에서 생활습관 교정 뒤 첫 배란유도제로 레트로졸을 고르고, 클로미펜과의 차이를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Legro RS, et al. Letrozole versus clomiphene for infertility in the polycystic ovary syndrome. N Engl J Med 2014;371:119 (PMID 25006718) · Teede HJ, et al. Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome. Fertil Steril 2023;120:767 (PMID 37589624)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "난관·정액이 정상인 다낭난소증후군의 무배란 불임에서 첫 배란유도제는 레트로졸이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "클로미펜은 반감기가 길어 자궁내막·경관 점액에 항에스트로겐 효과가 남아 다낭난소증후군에서 생존아 출산율이 레트로졸보다 낮다",
+   "steps": 3,
+   "chain": [
+    "희발월경 + 고안드로겐 징후 + 다낭 난소, 갑상샘·프로락틴·17-OHP 정상 → 다낭난소증후군",
+    "난관 개통·정액 정상 → 무배란이 불임의 원인 → 배란 유도",
+    "다낭난소증후군의 첫 배란유도제 → 레트로졸(클로미펜보다 생존아 출산 높음)"
+   ],
+   "key": [
+    {
+     "item": "1년에 5회 정도 한다",
+     "why": "희발월경 — 무배란",
+     "also": []
+    },
+    {
+     "item": "2~9 mm 난포가 20개 이상",
+     "why": "다낭 난소 형태",
+     "also": []
+    },
+    {
+     "item": "혈청 총 테스토스테론은 약간 높고",
+     "why": "고안드로겐혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "17-하이드록시프로게스테론은 정상",
+     "why": "비고전형 선천부신과형성 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "양쪽 난관이 열려 있고, 남편의 정액검사는 정상",
+     "why": "난관·남성 요인이 없어 배란 유도로 충분하다",
+     "also": []
+    },
+    {
+     "item": "체질량지수 31 kg/m²",
+     "why": "비만에서 레트로졸의 이득이 더 뚜렷하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "공복 혈당 98 mg/dL",
+     "why": "뚜렷한 당대사 이상이 없어 메트포르민의 필요가 크지 않다",
+     "also": []
+    }
+   ],
+   "summary": "희발월경·고안드로겐·다낭 난소의 다낭난소증후군이고 난관과 정액은 정상이다. 생활습관 교정과 함께 레트로졸로 배란을 유도한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "지금은 임신을 원하지 않고 월경 조절과 여드름 치료가 목적이었다면 복합경구피임약이 첫 약이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0231",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "응급·중환자·외상 — 저혈압을 동반한 아나필락시스의 첫 처치",
+  "type": "응급·중환자·외상 — 저혈압을 동반한 아나필락시스의 첫 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-04",
+  "vignette": "27세 여자가 식당에서 땅콩 소스가 든 음식을 먹고 15분 뒤 온몸이 가렵고 숨이 차서 구급차로 응급실에 왔다. 어릴 때 땅콩을 먹고 두드러기가 난 적이 있다. 복용하는 약은 없다. 혈압 84/50 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.9°C, 산소포화도(실내 공기) 92 % 이다. 의식은 있으나 불안해한다. 몸통과 팔에 넓은 팽진이 있고 입술이 부어 있다. 양쪽 폐에서 호기 천명이 들리고 협착음은 없다. 복부에 압통이 없다. 산소를 투여하고 다리를 올린 뒤 정맥로를 확보하였다.",
+  "question": "다음으로 가장 먼저 해야 할 처치는?",
+  "options": [
+   "디펜히드라민 50 mg 정맥주사",
+   "메틸프레드니솔론 125 mg 정맥주사",
+   "살부타몰 분무 흡입",
+   "에피네프린 0.5 mg 넓적다리 바깥쪽 근육주사",
+   "에피네프린 1 mg 정맥 일시주사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 음식 노출 뒤 수분 안에 피부(팽진·입술 부종)와 호흡(천명)·순환(저혈압) 증상이 생긴 아나필락시스다. 첫 약은 에피네프린이고, 맥박이 있는 환자에게는 1 mg/mL 용액 0.01 mg/kg(성인 최대 0.5 mg)을 넓적다리 바깥쪽에 근육주사한다. 5~15분마다 반복할 수 있고, 반복 근육주사와 수액에도 쇼크가 지속될 때 정맥 지속주입으로 넘어간다.\n- 원리: <b>왜 에피네프린이 먼저인가</b>: 아나필락시스는 비만세포·호염기구에서 히스타민·류코트리엔·트립타제가 한꺼번에 나와 혈관 확장·모세혈관 누출·기관지 수축이 몇 분 안에 진행하는 상태다. 에피네프린은 <b>α1</b> 작용으로 혈관을 수축해 혈압을 올리고 점막 부종을 줄이며, <b>β1</b> 으로 심박출을 늘리고, <b>β2</b> 로 기관지를 넓히면서 비만세포의 추가 탈과립을 막는다 — 세 갈래 병태를 한 약이 동시에 되돌린다.<br> <b>왜 근육주사인가</b>: 넓적다리 바깥쪽 근육은 혈류가 많아 피하주사보다 흡수가 빠르고, 정맥 일시주사보다 최고 농도가 완만해 심실성 부정맥·심근허혈·고혈압 위기 위험이 적다. 1 mg 정맥 일시주사는 <b>심정지</b>의 용량이다.<br> <b>보조 약의 자리</b>: 항히스타민제는 피부 증상만, 스테로이드는 몇 시간 뒤 효과로 저혈압·기도 부종을 되돌리지 못한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">0.5 mg 근육주사(정답)</th><th>1 mg 정맥 일시주사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>맥박이 있는</b> 아나필락시스</td><td>심정지(무맥성)</td></tr> <tr><td>용액 · 용량</td><td>1 mg/mL, 0.01 mg/kg(최대 0.5 mg)</td><td>0.1 mg/mL, 1 mg</td></tr> <tr><td>반복</td><td>5~15분마다</td><td>3~5분마다(심폐소생술 중)</td></tr> <tr><td>위험</td><td>낮음</td><td>맥박 있는 환자에게 주면 심실빈맥·심근허혈·고혈압 위기</td></tr> </tbody></table> 근육주사를 반복해도 쇼크가 남으면 정맥 지속주입(0.05~0.1 µg/kg/분부터)을 감시 아래 시작한다 — 일시주사가 아니다.\n- 오답 이유:\n  - ① 디펜히드라민은 가려움과 두드러기를 줄이지만 저혈압과 기관지 수축을 되돌리지 못한다. 에피네프린 뒤에 남은 피부 증상을 다룰 때 보조로 쓴다.\n  - ② 메틸프레드니솔론은 효과가 몇 시간 뒤에 나타나 급성 쇼크를 되돌리지 못한다. 에피네프린 뒤 천식이 지속되거나 이상성 반응을 걱정할 때 보조로 고려한다.\n  - ③ 살부타몰은 천명만 줄이고 저혈압·후두 부종에는 효과가 없다. 에피네프린을 준 뒤에도 기관지 수축이 남으면 더하는 약이다.\n  - ⑤ 1 mg 정맥 일시주사는 심정지 환자의 용량이다. 이 환자가 맥박을 잃어 심폐소생술을 시작했다면 정답이 되지만, 맥박이 있으면 치명적 부정맥을 부를 수 있다.\n- 함정: 정맥로가 있으니 정맥으로 주자는 생각 — 맥박이 있으면 근육주사가 표준이고 1 mg 정맥 일시주사는 심정지 용량이다.\n- 학습목표: 맥박이 있는 아나필락시스 쇼크에서 첫 처치로 에피네프린 근육주사를 고르고, 심정지 용량 정맥 일시주사와 구별한다\n- 근거·출처: Shaker MS, et al. Anaphylaxis — a 2020 practice parameter update, systematic review, and GRADE analysis. J Allergy Clin Immunol 2020;145:1082 (PMID 32001253) · Walls RM, et al. Rosen's Emergency Medicine, 10th ed. Ch. 106 Allergy, hypersensitivity, and anaphylaxis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "음식 노출 뒤 수분 안에 피부(팽진·입술 부종)와 호흡(천명)·순환(저혈압) 증상이 생긴 아나필락시스다. 첫 약은 에피네프린이고, 맥박이 있는 환자에게는 1 mg/mL 용액 0.01 mg/kg(성인 최대 0.5 mg)을 넓적다리 바깥쪽에 근육주사한다. 5~15분마다 반복할 수 있고, 반복 근육주사와 수액에도 쇼크가 지속될 때 정맥 지속주입으로 넘어간다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 에피네프린이 먼저인가</b>: 아나필락시스는 비만세포·호염기구에서 히스타민·류코트리엔·트립타제가 한꺼번에 나와 혈관 확장·모세혈관 누출·기관지 수축이 몇 분 안에 진행하는 상태다. 에피네프린은 <b>α1</b> 작용으로 혈관을 수축해 혈압을 올리고 점막 부종을 줄이며, <b>β1</b> 으로 심박출을 늘리고, <b>β2</b> 로 기관지를 넓히면서 비만세포의 추가 탈과립을 막는다 — 세 갈래 병태를 한 약이 동시에 되돌린다.<br> <b>왜 근육주사인가</b>: 넓적다리 바깥쪽 근육은 혈류가 많아 피하주사보다 흡수가 빠르고, 정맥 일시주사보다 최고 농도가 완만해 심실성 부정맥·심근허혈·고혈압 위기 위험이 적다. 1 mg 정맥 일시주사는 <b>심정지</b>의 용량이다.<br> <b>보조 약의 자리</b>: 항히스타민제는 피부 증상만, 스테로이드는 몇 시간 뒤 효과로 저혈압·기도 부종을 되돌리지 못한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">0.5 mg 근육주사(정답)</th><th>1 mg 정맥 일시주사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td><b>맥박이 있는</b> 아나필락시스</td><td>심정지(무맥성)</td></tr> <tr><td>용액 · 용량</td><td>1 mg/mL, 0.01 mg/kg(최대 0.5 mg)</td><td>0.1 mg/mL, 1 mg</td></tr> <tr><td>반복</td><td>5~15분마다</td><td>3~5분마다(심폐소생술 중)</td></tr> <tr><td>위험</td><td>낮음</td><td>맥박 있는 환자에게 주면 심실빈맥·심근허혈·고혈압 위기</td></tr> </tbody></table> 근육주사를 반복해도 쇼크가 남으면 정맥 지속주입(0.05~0.1 µg/kg/분부터)을 감시 아래 시작한다 — 일시주사가 아니다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 디펜히드라민은 가려움과 두드러기를 줄이지만 저혈압과 기관지 수축을 되돌리지 못한다. 에피네프린 뒤에 남은 피부 증상을 다룰 때 보조로 쓴다.\n② 메틸프레드니솔론은 효과가 몇 시간 뒤에 나타나 급성 쇼크를 되돌리지 못한다. 에피네프린 뒤 천식이 지속되거나 이상성 반응을 걱정할 때 보조로 고려한다.\n③ 살부타몰은 천명만 줄이고 저혈압·후두 부종에는 효과가 없다. 에피네프린을 준 뒤에도 기관지 수축이 남으면 더하는 약이다.\n⑤ 1 mg 정맥 일시주사는 심정지 환자의 용량이다. 이 환자가 맥박을 잃어 심폐소생술을 시작했다면 정답이 되지만, 맥박이 있으면 치명적 부정맥을 부를 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "정맥로가 있으니 정맥으로 주자는 생각 — 맥박이 있으면 근육주사가 표준이고 1 mg 정맥 일시주사는 심정지 용량이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "맥박이 있는 아나필락시스 쇼크에서 첫 처치로 에피네프린 근육주사를 고르고, 심정지 용량 정맥 일시주사와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Shaker MS, et al. Anaphylaxis — a 2020 practice parameter update, systematic review, and GRADE analysis. J Allergy Clin Immunol 2020;145:1082 (PMID 32001253) · Walls RM, et al. Rosen's Emergency Medicine, 10th ed. Ch. 106 Allergy, hypersensitivity, and anaphylaxis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "맥박이 있는 아나필락시스 쇼크의 첫 처치는 에피네프린 0.5 mg 근육주사다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "1 mg 정맥 일시주사는 맥박이 없는 심정지의 용량인데, 이 환자는 맥박 124회/분으로 의식이 있다",
+   "steps": 2,
+   "chain": [
+    "땅콩 노출 15분 뒤 팽진·입술 부종 + 천명 + 혈압 84/50 → 아나필락시스 쇼크",
+    "맥박 있음 → 에피네프린 0.01 mg/kg(최대 0.5 mg) 근육주사"
+   ],
+   "key": [
+    {
+     "item": "땅콩 소스가 든 음식을 먹고 15분 뒤",
+     "why": "알려진 알레르겐 노출 직후 발병",
+     "also": []
+    },
+    {
+     "item": "혈압 84/50 mmHg",
+     "why": "순환 침범 — 쇼크",
+     "also": []
+    },
+    {
+     "item": "양쪽 폐에서 호기 천명",
+     "why": "호흡 침범",
+     "also": []
+    },
+    {
+     "item": "넓은 팽진이 있고 입술이 부어 있다",
+     "why": "피부·점막 침범",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "맥박 124회/분",
+     "why": "맥박이 있다 — 정맥 일시주사(심정지 용량)가 아니라 근육주사",
+     "also": []
+    },
+    {
+     "item": "협착음은 없다",
+     "why": "당장 기관삽관이 필요한 상기도 폐쇄는 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "정맥로를 확보하였다",
+     "why": "정맥 투여를 유도하는 정보 — 경로 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "땅콩 노출 뒤 피부·호흡·순환 증상이 함께 온 아나필락시스 쇼크다. 맥박이 있으므로 에피네프린 0.5 mg 근육주사가 먼저다.",
+   "switch": {
+    "choice": "E",
+    "condition": "환자가 맥박을 잃어 심폐소생술을 시작했다면 에피네프린 1 mg 정맥 일시주사를 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0230",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·영상 판독·신장비뇨·외과·순환기·응급·부인과·산과·소화기·혈액종양·소아·약리)",
+  "subtopic": "순환기 — 박출률 감소 심부전의 네 번째 약",
+  "type": "순환기 — 박출률 감소 심부전의 네 번째 약",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-04",
+  "vignette": "62세 남자가 박출률 감소 심부전으로 외래에 정기 방문하였다. 2년 전 전벽 심근경색 뒤 진단되었고 사쿠비트릴-발사르탄, 카르베딜롤, 스피로노락톤, 푸로세미드를 최대 내약 용량으로 복용하고 있다. 지금은 평지를 걸을 때는 괜찮지만 계단 두 층을 오르면 숨이 차다. 당뇨병은 없다. 혈압 112/70 mmHg, 맥박 64회/분(규칙적), 체온 36.6°C 이다. 경정맥 확장과 하지 부종은 없고 폐에서 수포음이 들리지 않는다. 심전도는 동리듬이고 QRS 폭은 100 ms 이다. 혈청 칼륨 4.6 mEq/L, 크레아티닌 1.3 mg/dL, 추정 사구체여과율 58 mL/분/1.73 m² 이다. 심장초음파에서 좌심실 박출률은 30 % 이다.",
+  "question": "사망률을 낮추기 위해 추가할 약으로 가장 적절한 것은?",
+  "options": [
+   "암로디핀",
+   "다파글리플로진",
+   "이바브라딘",
+   "디곡신",
+   "히드랄라진·질산염"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: ARNI·베타차단제·MRA 를 쓰는 박출률 30 % 의 증상성 심부전에서 네 번째 기본 약은 SGLT2 억제제다. 당뇨병 유무와 관계없이 심부전 입원과 심혈관 사망을 줄이고, 추정 사구체여과율 58 과 칼륨 4.6 에서도 쓸 수 있다. 맥박 64회/분이라 이바브라딘의 조건(동리듬 70회/분 이상)에 맞지 않는다.\n- 원리: <b>왜 네 가지 기본 약인가</b>: 박출률 감소 심부전의 진행은 레닌-안지오텐신-알도스테론계, 교감신경, 그리고 나트륨 저류·심근 대사 이상이 서로를 키우는 악순환이다. ARNI(사쿠비트릴-발사르탄)는 안지오텐신 II 를 막고 나트륨이뇨펩타이드를 늘리며, 베타차단제는 교감 과다를, MRA 는 알도스테론의 섬유화를 막는다. <b>SGLT2 억제제</b>는 근위세관의 포도당·나트륨 재흡수를 막아 삼투 이뇨·나트륨 이뇨를 일으키고 부하를 줄이며, 혈압·칼륨에 미치는 영향이 작아 다른 세 약과 겹치지 않는다.<br> <b>근거</b>: DAPA-HF·EMPEROR-Reduced 시험에서 당뇨병이 없는 환자에서도 심혈관 사망·심부전 악화가 약 25 % 줄었다. 그래서 지침은 네 약을 모두 가능한 빨리 함께 시작하라고 한다.<br> <b>추가 약의 순서</b>: 네 약을 쓴 뒤에도 동리듬 70회/분 이상이면 이바브라딘, QRS 가 넓으면 심장재동기화치료를 더한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">다파글리플로진(정답)</th><th>이바브라딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>네 가지 기본 약의 하나</td><td>기본 약을 다 쓴 뒤의 추가 약</td></tr> <tr><td>조건</td><td>박출률 ≤ 40 %, eGFR ≥ 20~25</td><td>동리듬, <b>맥박 ≥ 70회/분</b>, 베타차단제 최대량</td></tr> <tr><td>효과</td><td>심혈관 사망 + 심부전 입원 감소</td><td>심부전 입원 감소(사망 감소는 뚜렷하지 않음)</td></tr> <tr><td>이 환자</td><td>해당 — 아직 안 씀</td><td>맥박 64 — 해당 없음</td></tr> </tbody></table> 이바브라딘은 동방결절 If 전류를 막아 맥박만 줄이므로, 이미 맥박이 충분히 낮으면 더할 이득이 없다.\n- 오답 이유:\n  - ① 암로디핀은 박출률 감소 심부전에서 예후를 바꾸지 않는다. 기본 약을 다 쓴 뒤에도 고혈압이나 협심증이 남을 때 안전하게 더할 수 있는 정도다.\n  - ③ 이바브라딘은 베타차단제 최대량에도 동리듬 맥박이 70회/분 이상일 때 더한다. 맥박이 78회/분이었고 SGLT2 억제제까지 쓰고 있었다면 정답이 된다.\n  - ④ 디곡신은 증상과 입원을 줄이지만 사망률은 줄이지 않는다. 기본 약을 모두 쓴 뒤에도 증상이 남거나 심방세동의 맥박 조절이 필요할 때 고려한다.\n  - ⑤ 히드랄라진-질산이소소르비드는 흑인 환자에서 기본 약에 더하거나 ARNI·ACE 억제제를 못 쓸 때 쓴다. 고칼륨혈증·신기능 악화로 ARNI 를 끊어야 했다면 대안이 된다.\n- 함정: 당뇨병이 없으니 SGLT2 억제제는 아니라고 보는 것 — 심부전 이득은 당뇨병과 무관하다.\n- 학습목표: 박출률 감소 심부전에서 ARNI·베타차단제·MRA 에 더해 사망률을 낮추는 SGLT2 억제제를 고르고, 이바브라딘의 조건과 구별한다\n- 근거·출처: Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895 (PMID 35363499) · McMurray JJV, et al. Dapagliflozin in patients with heart failure and reduced ejection fraction (DAPA-HF). N Engl J Med 2019;381:1995 (PMID 31535829)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "ARNI·베타차단제·MRA 를 쓰는 박출률 30 % 의 증상성 심부전에서 네 번째 기본 약은 SGLT2 억제제다. 당뇨병 유무와 관계없이 심부전 입원과 심혈관 사망을 줄이고, 추정 사구체여과율 58 과 칼륨 4.6 에서도 쓸 수 있다. 맥박 64회/분이라 이바브라딘의 조건(동리듬 70회/분 이상)에 맞지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 네 가지 기본 약인가</b>: 박출률 감소 심부전의 진행은 레닌-안지오텐신-알도스테론계, 교감신경, 그리고 나트륨 저류·심근 대사 이상이 서로를 키우는 악순환이다. ARNI(사쿠비트릴-발사르탄)는 안지오텐신 II 를 막고 나트륨이뇨펩타이드를 늘리며, 베타차단제는 교감 과다를, MRA 는 알도스테론의 섬유화를 막는다. <b>SGLT2 억제제</b>는 근위세관의 포도당·나트륨 재흡수를 막아 삼투 이뇨·나트륨 이뇨를 일으키고 부하를 줄이며, 혈압·칼륨에 미치는 영향이 작아 다른 세 약과 겹치지 않는다.<br> <b>근거</b>: DAPA-HF·EMPEROR-Reduced 시험에서 당뇨병이 없는 환자에서도 심혈관 사망·심부전 악화가 약 25 % 줄었다. 그래서 지침은 네 약을 모두 가능한 빨리 함께 시작하라고 한다.<br> <b>추가 약의 순서</b>: 네 약을 쓴 뒤에도 동리듬 70회/분 이상이면 이바브라딘, QRS 가 넓으면 심장재동기화치료를 더한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">다파글리플로진(정답)</th><th>이바브라딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>네 가지 기본 약의 하나</td><td>기본 약을 다 쓴 뒤의 추가 약</td></tr> <tr><td>조건</td><td>박출률 ≤ 40 %, eGFR ≥ 20~25</td><td>동리듬, <b>맥박 ≥ 70회/분</b>, 베타차단제 최대량</td></tr> <tr><td>효과</td><td>심혈관 사망 + 심부전 입원 감소</td><td>심부전 입원 감소(사망 감소는 뚜렷하지 않음)</td></tr> <tr><td>이 환자</td><td>해당 — 아직 안 씀</td><td>맥박 64 — 해당 없음</td></tr> </tbody></table> 이바브라딘은 동방결절 If 전류를 막아 맥박만 줄이므로, 이미 맥박이 충분히 낮으면 더할 이득이 없다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 암로디핀은 박출률 감소 심부전에서 예후를 바꾸지 않는다. 기본 약을 다 쓴 뒤에도 고혈압이나 협심증이 남을 때 안전하게 더할 수 있는 정도다.\n③ 이바브라딘은 베타차단제 최대량에도 동리듬 맥박이 70회/분 이상일 때 더한다. 맥박이 78회/분이었고 SGLT2 억제제까지 쓰고 있었다면 정답이 된다.\n④ 디곡신은 증상과 입원을 줄이지만 사망률은 줄이지 않는다. 기본 약을 모두 쓴 뒤에도 증상이 남거나 심방세동의 맥박 조절이 필요할 때 고려한다.\n⑤ 히드랄라진-질산이소소르비드는 흑인 환자에서 기본 약에 더하거나 ARNI·ACE 억제제를 못 쓸 때 쓴다. 고칼륨혈증·신기능 악화로 ARNI 를 끊어야 했다면 대안이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "당뇨병이 없으니 SGLT2 억제제는 아니라고 보는 것 — 심부전 이득은 당뇨병과 무관하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "박출률 감소 심부전에서 ARNI·베타차단제·MRA 에 더해 사망률을 낮추는 SGLT2 억제제를 고르고, 이바브라딘의 조건과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895 (PMID 35363499) · McMurray JJV, et al. Dapagliflozin in patients with heart failure and reduced ejection fraction (DAPA-HF). N Engl J Med 2019;381:1995 (PMID 31535829)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "ARNI·베타차단제·MRA 를 쓰는 박출률 30 % 심부전에 빠진 네 번째 기본 약은 SGLT2 억제제다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "이바브라딘은 동리듬 맥박 70회/분 이상이 조건인데 이 환자는 64회/분이다",
+   "steps": 2,
+   "chain": [
+    "박출률 30 %, ARNI·베타차단제·MRA 사용 → 네 가지 기본 약 중 SGLT2 억제제가 빠짐",
+    "eGFR 58·칼륨 4.6 → 금기 없음, 맥박 64 → 이바브라딘 조건 아님 → 다파글리플로진"
+   ],
+   "key": [
+    {
+     "item": "좌심실 박출률은 30 %",
+     "why": "박출률 감소 심부전 — 기본 약 네 가지의 적응",
+     "also": []
+    },
+    {
+     "item": "사쿠비트릴-발사르탄, 카르베딜롤, 스피로노락톤, 푸로세미드",
+     "why": "세 가지 기본 약을 쓰고 SGLT2 억제제만 빠졌다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 64회/분(규칙적)",
+     "why": "이바브라딘 적응(70회/분 이상) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "QRS 폭은 100 ms",
+     "why": "심장재동기화치료의 적응이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "추정 사구체여과율 58 mL/분/1.73 m²",
+     "why": "SGLT2 억제제를 쓸 수 있는 신기능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "당뇨병은 없다",
+     "why": "SGLT2 억제제의 심부전 이득과 무관 — 함정이 될 수 있는 배경",
+     "also": []
+    },
+    {
+     "item": "경정맥 확장과 하지 부종은 없고",
+     "why": "울혈이 없어 이뇨제 증량이 필요 없다",
+     "also": []
+    }
+   ],
+   "summary": "박출률 30 % 심부전에서 ARNI·베타차단제·MRA 에 더할 네 번째 기본 약은 SGLT2 억제제다. 맥박 64 라 이바브라딘의 조건이 아니다.",
+   "switch": {
+    "choice": "C",
+    "condition": "SGLT2 억제제까지 쓰는데도 동리듬 맥박이 78회/분이었다면 이바브라딘을 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261004T202627Z_일일영상_2026-10-05_12units_12q_64dfa537",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0217",
   "exam": "imaging",
   "style": "usmle_style",
