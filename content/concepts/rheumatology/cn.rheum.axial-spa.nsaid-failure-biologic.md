@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Ophthalmology, Gastroenterology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-10-05
+version: 2
 outline: h362            # 해리슨 21판 362장 Spondyloarthritis
 confidence: medium
 review_status: unreviewed
@@ -159,16 +159,28 @@ variants:
     answer: "B"
     explanation: "나이·성별·동반 부착부염, 방사선 소견 없이 MRI 로만 보이는 천장관절염(비방사선학적)으로 바뀌었지만 결정 단서는 같다 — 확진된 활동성 축성 척추관절염이 서로 다른 NSAID 두 가지에 반응하지 않았다. 다음은 TNF 억제제(또는 IL-17A 억제제)이며 비방사선학적 질환의 반응도 강직척추염과 비슷하다. 결핵·B형간염 음성이 확인되었다. 메토트렉세이트·경구 스테로이드는 축성 증상에 효과가 확인되지 않았고 설파살라진은 말초관절염용이다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 천장관절염 영상
-  query: '"sacroiliitis" AND "ankylosing spondylitis" AND (radiograph OR MRI)'
-  caption_terms:
-  - sacroiliitis
-  modality: XR_MSK
 figures_rejected:
 - asset: PMC-PMC12869721_Figure1
   reason: 천장관절 영상이 아니라 ChatGPT 판독 성능의 ROC 곡선 그래프다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc13564248_figure2.jpg
+  kind: radiograph
+  at: 기전에서 소견으로
+  shows: 양측 천장관절염의 CT(축 단면)
+  look_for:
+  - 화살표 — 양쪽 천장관절 엉덩뼈 쪽 관절면
+  - 좌우 천장관절면의 불규칙함과 그 옆 뼈의 밝아짐(경화)
+  label: '「CT imaging demonstrated bilateral sacroiliitis. (arrows).」 — Combination Treatment of IL‐17 Inhibitor and JAK Inhibitor in Psoriatic Arthritis: A Case Report and Scoping Review'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Combination Treatment of IL‐17 Inhibitor and JAK Inhibitor in Psoriatic Arthritis: A Case Report and Scoping Review. Immunity, Inflammation and Disease'
+  doi: 10.1002/iid3.70515
+  credit: 'Combination Treatment of IL‐17 Inhibitor and JAK Inhibitor in Psoriatic Arthritis: A Case Report and Scoping Review. Immun Inflamm Dis. 2026 Sep 11;14(9):e70515. doi: 10.1002/iid3.70515 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13564248/
+  asset: PMC-PMC13564248_Figure2
+  privacy_check: 골반 CT 축 단면만 있고 얼굴·문신·이름·병원 표지·문자 없음
 ---
 
 ## 정의

@@ -4,8 +4,8 @@ type: concept
 topic: Pediatrics
 see_also: [General Surgery, Nephrology]
 date: 2026-09-23
-updated: 2026-09-23
-version: 1
+updated: 2026-10-05
+version: 2
 outline: peds.gi            # 소아과 손 슬롯 「소아 소화기 — 구토·설사·복통」(해리슨 대조 대상 아님 — outline.py --harrison)
 confidence: medium
 review_status: unreviewed
@@ -149,13 +149,6 @@ variants:
     answer: "C"
     explanation: "초음파로 비대유문협착증이 확진되었고 핍뇨·빈맥·모세혈관 재충혈 지연의 탈수와 저염소·저칼륨 대사알칼리증이 있다. 성별·나이·응급실 내원·검사를 먼저 제시한 순서가 달라도 결정 단서는 같으므로 생리식염수로 순환을 회복하고 소변 확인 뒤 칼륨을 더한다 [[?holcomb-7]]. 수술은 전해질 교정 뒤, 조영검사는 이미 확진이라 불필요하며, 위장관운동촉진제는 기계적 폐쇄에 효과가 없다. 비위관 지속 흡인은 위액 소실을 늘린다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 비대유문협착증 초음파 — 두꺼워진 유문근
-  query: '"hypertrophic pyloric stenosis" AND ultrasound'
-  caption_terms:
-  - pylor
-  modality: ULTRASOUND
 figures_rejected:
 - asset: PMC-PMC13457705_Figure2
   reason: 복강경 수술 장면 — 진단 초음파가 아니다
@@ -165,6 +158,26 @@ figures_rejected:
   reason: 요청은 초음파의 두꺼워진 유문근인데 이 그림은 상부위장관 조영 검사(string sign)이고 화살표·관이 겹친 비전형 신생아 증례 — 요청 소견과 다름
 - asset: PMC-PMC13038352_Figure1
   reason: 초음파가 아니라 수술 사진이고, 녹용 분말로 생긴 전정부 협착(비대유문협착증 모방) 증례라 라벨이 비대유문협착증이 아니다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc11449378_figure2.jpg
+  kind: ultrasound
+  at: 기전에서 소견으로
+  shows: 비대유문협착증 초음파 — 두꺼워진 유문근과 좁아진 내강(유문근 두께 4.5 mm·길이 15 mm로 계측)
+  look_for:
+  - 세로 실선 계측 — 유문근 두께
+  - 가로 계측선 — 유문관 길이
+  - 가운데 좁아진 내강을 따라 겹친 점막 줄
+  label: '「USG abdomen (Case 1)Thickened pylorus measuring 4.5 mm and a symmetrically thickened and edematous wall of length 15 mm, with luminal narrowing.USG, ultrasound」 — Infantile Hypertrophic Pyloric Stenosis Without Metabolic Alkalosis: A Report of Two Cases'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Infantile Hypertrophic Pyloric Stenosis Without Metabolic Alkalosis: A Report of Two Cases. Cureus'
+  doi: 10.7759/cureus.68548
+  credit: 'Infantile Hypertrophic Pyloric Stenosis Without Metabolic Alkalosis: A Report of Two Cases. Cureus. 2024 Sep 3;16(9):e68548. doi: 10.7759/cureus.68548 (CC BY) — Figure 2'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11449378/
+  asset: PMC-PMC11449378_Figure2
+  privacy_check: 초음파 화면만 있고 얼굴·문신·이름·병원 표지·기록 문자 없음
 ---
 
 ## 정의
