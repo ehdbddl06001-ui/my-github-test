@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3353,
+  "total": 3365,
   "byType": {
    "usmle": 180,
    "anatomy": 832,
    "kmle": 1280,
+   "imaging": 248,
    "paper": 715,
-   "imaging": 236,
    "concept": 93,
    "ailab": 14,
    "basic": 3
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 82,
    "Hematology": 77,
    "Laboratory Medicine": 71,
-   "산부인과": 45,
-   "순환기": 23,
+   "산부인과": 47,
+   "순환기": 24,
    "Physiology": 21,
-   "호흡기": 16,
+   "호흡기": 17,
    "Pharmacology": 15,
+   "소화기": 15,
    "Biochemistry": 14,
-   "소화기": 14,
    "Microbiology": 13,
    "병리·조직학": 13,
-   "소아과": 12,
+   "소아과": 13,
+   "감염": 11,
+   "내분비": 11,
+   "신경": 11,
+   "응급·중환자": 11,
    "혈액·종양": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "감염": 10,
-   "내분비": 10,
-   "신경": 10,
    "신장·비뇨기": 10,
-   "응급·중환자": 10,
    "예방의학·역학": 8,
    "외과": 8,
    "피부과": 8,
-   "약리": 6,
+   "약리": 7,
+   "정신과": 6,
    "근골격·류마티스": 5,
-   "정신과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1007,
-   "high": 2296,
+   "high": 2308,
    "low": 50
   },
   "tagCount": 4561
@@ -1121,6 +1121,214 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1281.md",
    "snippet": "67세 남자가 2시간 전 시작된 가슴 짓누름과 식은땀으로 응급실에 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 앉은 자세에서도 목정맥이 늘어나 있고, 폐 청진에서 수포음은 들리지 않으며 심장 잡음도 없다. 아스피린을 씹어 먹게 했고 일차 관상동맥중재술을 준비하고 있다. 활력징후와 검사 소견은 자료와 같다. 시술실로 옮기기 전 이 환자에게 시행할 처치로 가장 적절한 것은? A. 정맥 니트로글리세린 투여 B. 정맥 푸로세미드",
    "text": "Cardiology Hypotension in Acute Inferior Myocardial Infarction acute-coronary-syndrome stemi hypotension preload ecg KMLE 2026 / Claude 67세 남자가 2시간 전 시작된 가슴 짓누름과 식은땀으로 응급실에 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있다. 앉은 자세에서도 목정맥이 늘어나 있고, 폐 청진에서 수포음은 들리지 않으며 심장 잡음도 없다. 아스피린을 씹어 먹게 했고 일차 관상동맥중재술을 준비하고 있다. 활력징후와 검사 소견은 자료와 같다. 시술실로 옮기기 전 이 환자에게 시행할 처치로 가장 적절한 것은? A. 정맥 니트로글리세린 투여 B. 정맥 푸로세미드 투여 C. 정맥 생리식염수 급속 투여 D. 정맥 모르핀 투여 E. 정맥 도부타민 투여 하벽 유도 ST분절 상승과 트로포닌 상승은 하벽 ST분절상승 심근경색이다. 여기에 저혈압·목정맥 팽대·맑은 폐가 함께 있고 V4R 에서 ST분절이 올라가 있으면 우심실 경색이 동반된 것이다. 우심실 경색은 좌심실 충만이 우심실을 거쳐 오는 전부하에 달려 있으므로, 폐울혈이 없는 저혈압에는 먼저 수액을 부하해 전부하를 올린다. 전부하를 낮추는 질산염·모르핀·이뇨제는 혈압을 더 떨어뜨리고, 강심제는 수액에 반응하지 않을 때 쓴다."
+  },
+  {
+   "id": "imaging-2026-0249",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 항우울제 중단 뒤에도 지속되는 조증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0249.md",
+   "snippet": "A 28 year old woman is brought to the physician by her husband because of 4 weeks of decreased need for sleep, rapid speech, and spending $9,000 on online purchases. She was diagnosed with major depressive disorder 2 months ago and began se",
+   "text": "정신과 정신 — 항우울제 중단 뒤에도 지속되는 조증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 28 year old woman is brought to the physician by her husband because of 4 weeks of decreased need for sleep, rapid speech, and spending $9,000 on online purchases. She was diagnosed with major depressive disorder 2 months ago and began sertraline; her mood improved after 4 weeks of treatment. One week later she began sleeping 3 hours a night without feeling tired, and sertraline was discontinued 3 weeks ago, but her symptoms have continued to worsen since then. She was placed on leave from work after arguing with customers. She does not drink alcohol or use illicit drugs, and urine toxicology screening is negative. Serum thyroid stimulating hormone concentration is 1.8 μU/mL. On mental status examination, she is distractible and has pressured speech and grandiose plans to open three restaurants. She has no hallucinations or delusions of persecution. Which of the following is the most likely diagnosis? A. Cyclothymic disorder B. Schizoaffective disorder, bipolar type C. Bipolar I disorder D. Substance/medication induced bipolar disorder E. Bipolar II disorder"
+  },
+  {
+   "id": "imaging-2026-0248",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 아미오다론 추가 뒤 디곡신 농도 상승의 기전",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0248.md",
+   "snippet": "74세 여자가 1주 전부터 심해진 메스꺼움과 식욕 저하, 사물이 노랗게 보이는 증상으로 내원하였다. 심방세동과 박출률 감소 심부전으로 디곡신 0.125 mg 을 매일 복용해 왔고, 3주 전 빈맥이 반복되어 아미오다론이 추가되었다. 그 밖의 약은 바꾸지 않았다. 혈압 112/68 mmHg, 맥박 48회/분이다. 혈청 칼륨 4.6 mEq/L, 마그네슘 2.1 mg/dL, 크레아티닌 1.0 mg/dL(3주 전 1.0 mg/dL), ",
+   "text": "약리 약리 — 아미오다론 추가 뒤 디곡신 농도 상승의 기전 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 74세 여자가 1주 전부터 심해진 메스꺼움과 식욕 저하, 사물이 노랗게 보이는 증상으로 내원하였다. 심방세동과 박출률 감소 심부전으로 디곡신 0.125 mg 을 매일 복용해 왔고, 3주 전 빈맥이 반복되어 아미오다론이 추가되었다. 그 밖의 약은 바꾸지 않았다. 혈압 112/68 mmHg, 맥박 48회/분이다. 혈청 칼륨 4.6 mEq/L, 마그네슘 2.1 mg/dL, 크레아티닌 1.0 mg/dL(3주 전 1.0 mg/dL), 알부민 4.0 g/dL 이고 혈청 디곡신 농도는 3.1 ng/mL 이다. 디곡신 농도가 오른 기전으로 가장 적절한 것은? A. P 당단백 억제로 디곡신의 배설이 줄었다 B. CYP3A4 억제로 디곡신의 간 대사가 줄었다 C. 사구체 여과율 감소로 디곡신 청소율이 줄었다 D. 알부민 결합 자리에서 디곡신이 밀려났다 E. 장의 세균이 디곡신을 분해하지 못하게 되었다"
+  },
+  {
+   "id": "imaging-2026-0247",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 일차 알도스테론증 확진 뒤 한쪽 부신 결절",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0247.md",
+   "snippet": "A 52 year old man comes for follow up of hypertension. His blood pressure has remained above target despite amlodipine 10 mg daily, lisinopril 40 mg daily, and hydrochlorothiazide 25 mg daily, which he takes reliably. He has no headaches, p",
+   "text": "내분비 내분비·대사 — 일차 알도스테론증 확진 뒤 한쪽 부신 결절 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 52 year old man comes for follow up of hypertension. His blood pressure has remained above target despite amlodipine 10 mg daily, lisinopril 40 mg daily, and hydrochlorothiazide 25 mg daily, which he takes reliably. He has no headaches, palpitations, or weight gain. Blood pressure is 162/98 mm Hg, and pulse is 74/min. BMI is 26 kg/m2. There are no abdominal striae or proximal muscle weakness. Serum potassium is 3.2 mEq/L, and creatinine is 0.9 mg/dL. Plasma aldosterone concentration is 28 ng/dL, and plasma renin activity is 0.2 ng/mL/h. After 3 days of oral sodium loading, 24 hour urinary aldosterone excretion is 18 μg with urinary sodium of 240 mEq. Adrenal CT shows a 1.2 cm, 8 HU nodule in the left adrenal gland and a normal right adrenal gland. He says he would prefer surgery if it could cure his hypertension. Which of the following is the most appropriate next step in management? A. Adrenal iodocholesterol scintigraphy B. Adrenal vein sampling C. Laparoscopic left adrenalectomy D. Repeat adrenal CT in 12 months E. Fine needle aspiration of the left adrenal nodule"
+  },
+  {
+   "id": "imaging-2026-0246",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 신생아의 담즙성 구토",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0246.md",
+   "snippet": "생후 6일 남아가 4시간 전부터 초록색 구토를 반복하여 응급실에 왔다. 재태 39주에 질식분만으로 태어났고 출생 첫날 태변을 보았으며 어제까지 잘 먹었다. 체온 36.9 °C, 맥박 168회/분, 호흡 48회/분이다. 복부는 약간 팽만하지만 부드럽고 덩이는 만져지지 않는다. 직장 수지검사에서 혈변은 없다. 백혈구 11,200/mm³, 나트륨 136 mEq/L, 칼륨 4.5 mEq/L, 젖산 2.4 mmol/L 이다. 단순 복부",
+   "text": "소아과 소아청소년 — 신생아의 담즙성 구토 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 생후 6일 남아가 4시간 전부터 초록색 구토를 반복하여 응급실에 왔다. 재태 39주에 질식분만으로 태어났고 출생 첫날 태변을 보았으며 어제까지 잘 먹었다. 체온 36.9 °C, 맥박 168회/분, 호흡 48회/분이다. 복부는 약간 팽만하지만 부드럽고 덩이는 만져지지 않는다. 직장 수지검사에서 혈변은 없다. 백혈구 11,200/mm³, 나트륨 136 mEq/L, 칼륨 4.5 mEq/L, 젖산 2.4 mmol/L 이다. 단순 복부 X선에서 위와 십이지장 첫 부분이 약간 늘어나 있고 그 아래 장에 공기가 조금 있다. 진단을 위해 다음으로 시행할 검사로 가장 적절한 것은? A. 바륨 대장 조영술 B. 복부 CT C. 직장 흡인 생검 D. 상부위장관 조영술 E. 복부 초음파(유문근 두께 측정)"
+  },
+  {
+   "id": "imaging-2026-0245",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 소파술 뒤 무월경과 소퇴출혈 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0245.md",
+   "snippet": "A 31 year old woman, gravida 2, para 1, comes to the physician because she has not had a menstrual period for 6 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a second trimester preg",
+   "text": "산부인과 부인과 — 소파술 뒤 무월경과 소퇴출혈 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 31 year old woman, gravida 2, para 1, comes to the physician because she has not had a menstrual period for 6 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a second trimester pregnancy loss, followed by endometritis treated with antibiotics. Before that, her menstrual cycles occurred regularly every 28 days. She has no hot flashes, headaches, visual changes, galactorrhea, or change in weight. BMI is 23 kg/m2. Pelvic examination shows a normal sized uterus and no adnexal masses. A urine pregnancy test is negative. Serum prolactin, thyroid stimulating hormone, and follicle stimulating hormone concentrations are within the reference ranges. There is no withdrawal bleeding after a 10 day course of medroxyprogesterone acetate, nor after 21 days of oral estrogen followed by a progestin. Which of the following is the most appropriate next step to confirm the diagnosis? A. MRI of the pituitary gland B. Hysteroscopy C. MRI of the pelvis D. Serum anti Müllerian hormone measurement E. Karyotype analysis"
+  },
+  {
+   "id": "imaging-2026-0244",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 임신부의 가피를 동반한 열성 발진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0244.md",
+   "snippet": "29세 임신부(임신 24주)가 5일 전부터 열과 두통, 근육통이 있어 10월에 내원하였다. 2주 전 밭에서 고구마를 캐는 일을 했다. 체온 39.1 °C, 혈압 112/70 mmHg, 맥박 104회/분이다. 몸통에 반점구진 발진이 있고 왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지가 있으며 그 주위 림프절이 만져진다. 목 경직은 없다. 혈소판 98,000/mm³, AST 88 U/L, ALT 72 U/L, 크레아티닌 0.6 mg",
+   "text": "감염 감염 — 임신부의 가피를 동반한 열성 발진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 29세 임신부(임신 24주)가 5일 전부터 열과 두통, 근육통이 있어 10월에 내원하였다. 2주 전 밭에서 고구마를 캐는 일을 했다. 체온 39.1 °C, 혈압 112/70 mmHg, 맥박 104회/분이다. 몸통에 반점구진 발진이 있고 왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지가 있으며 그 주위 림프절이 만져진다. 목 경직은 없다. 혈소판 98,000/mm³, AST 88 U/L, ALT 72 U/L, 크레아티닌 0.6 mg/dL 이고 소변검사는 정상이다. 태아 심박동은 145회/분이다. 치료로 가장 적절한 것은? A. 세프트리악손 B. 레보플록사신 C. 아지트로마이신 D. 독시사이클린 E. 클로람페니콜"
+  },
+  {
+   "id": "imaging-2026-0243",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 쿰스 음성 용혈과 낮은 알칼리인산분해효소를 동반한 급성 간손상",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0243.md",
+   "snippet": "A 19 year old woman comes to the emergency department because of yellow eyes, fatigue, and dark urine for 5 days. Over the past year, her school performance has declined and her handwriting has become shaky. She takes no medications or supp",
+   "text": "소화기 소화기·간담췌 — 쿰스 음성 용혈과 낮은 알칼리인산분해효소를 동반한 급성 간손상 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 19 year old woman comes to the emergency department because of yellow eyes, fatigue, and dark urine for 5 days. Over the past year, her school performance has declined and her handwriting has become shaky. She takes no medications or supplements and does not drink alcohol. Temperature is 37.0°C (98.6°F), pulse is 96/min, and blood pressure is 112/70 mm Hg. Scleral icterus is present. There is a fine tremor of both hands. The liver edge is not palpable. Laboratory studies show a hemoglobin concentration of 9.1 g/dL, reticulocyte count of 6%, negative direct antiglobulin test, total bilirubin of 14.2 mg/dL, AST of 186 U/L, ALT of 74 U/L, alkaline phosphatase of 22 U/L, and INR of 2.1. Serologic tests for hepatitis A, B, C, and E are negative. Antinuclear and anti smooth muscle antibodies are negative. Serum acetaminophen is undetectable. Which of the following is the most likely diagnosis? A. Hereditary spherocytosis B. Hereditary hemochromatosis C. Budd Chiari syndrome D. Wilson disease E. Autoimmune hepatitis"
+  },
+  {
+   "id": "imaging-2026-0242",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 이마까지 침범한 급성 말초 안면마비의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0242.md",
+   "snippet": "34세 남자가 어제 아침 일어나 보니 오른쪽 얼굴이 처져 있어 내원하였다. 물을 마시면 오른쪽 입가로 흐르고, 증상 전날 오른쪽 귀 뒤가 조금 아팠다고 한다. 혈압 126/80 mmHg, 체온 36.8 °C 이다. 오른쪽 이마에 주름을 지을 수 없고 오른쪽 눈이 완전히 감기지 않는다. 팔다리 근력과 감각, 말하기, 삼키기는 정상이다. 바깥귀길과 귓바퀴에 물집은 없고 고막은 정상이다. 공복 혈당은 92 mg/dL 이다. 치료로 ",
+   "text": "신경 신경 — 이마까지 침범한 급성 말초 안면마비의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 34세 남자가 어제 아침 일어나 보니 오른쪽 얼굴이 처져 있어 내원하였다. 물을 마시면 오른쪽 입가로 흐르고, 증상 전날 오른쪽 귀 뒤가 조금 아팠다고 한다. 혈압 126/80 mmHg, 체온 36.8 °C 이다. 오른쪽 이마에 주름을 지을 수 없고 오른쪽 눈이 완전히 감기지 않는다. 팔다리 근력과 감각, 말하기, 삼키기는 정상이다. 바깥귀길과 귓바퀴에 물집은 없고 고막은 정상이다. 공복 혈당은 92 mg/dL 이다. 치료로 가장 적절한 것은? A. 경구 아시클로비르 단독 B. 정맥 알테플라제 C. 안면신경 감압술 D. 보툴리눔 독소 주사 E. 경구 프레드니솔론"
+  },
+  {
+   "id": "imaging-2026-0241",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 만삭 태반의 조직 절편과 혈류",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0241.md",
+   "snippet": "A 39 year old woman, gravida 2, para 2, delivers a healthy newborn vaginally at term after an uncomplicated pregnancy. She had no hypertension or diabetes, and the prenatal ultrasonographic examinations were normal. The placenta is delivere",
+   "text": "산부인과 산과 — 만삭 태반의 조직 절편과 혈류 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 39 year old woman, gravida 2, para 2, delivers a healthy newborn vaginally at term after an uncomplicated pregnancy. She had no hypertension or diabetes, and the prenatal ultrasonographic examinations were normal. The placenta is delivered intact with a three vessel umbilical cord and is sent for histologic examination as part of a teaching study. A photomicrograph of a section of the placenta stained by immunohistochemistry is shown. The tissue fragments in the section are separated by clear spaces that contain a few scattered red blood cells. In the living placenta, the blood within these spaces is delivered directly by which of the following vessels? A. Maternal spiral arteries B. Umbilical arteries C. Umbilical vein D. Fetal capillaries within the villi E. Maternal uterine veins"
+  },
+  {
+   "id": "imaging-2026-0240",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 감시 중 무맥 심정지의 첫 처치",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0240.md",
+   "snippet": "71세 남자가 반복되는 가슴 불편감으로 입원해 심전도 감시를 받던 중 갑자기 의식을 잃었다. 심방세동으로 전극도자 절제술을 받은 적이 있고 만성폐쇄폐질환이 있다. 의료진이 바로 도착했을 때 반응이 없고 정상 호흡이 없으며 경동맥 맥박이 만져지지 않아 가슴압박을 시작하였다. 정맥로는 이미 확보되어 있다. 수동 제세동기의 패드를 붙이고 가슴압박을 잠시 멈추었을 때 기록된 사지유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것",
+   "text": "응급·중환자 응급·중환자·외상 — 감시 중 무맥 심정지의 첫 처치 opendata kmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 71세 남자가 반복되는 가슴 불편감으로 입원해 심전도 감시를 받던 중 갑자기 의식을 잃었다. 심방세동으로 전극도자 절제술을 받은 적이 있고 만성폐쇄폐질환이 있다. 의료진이 바로 도착했을 때 반응이 없고 정상 호흡이 없으며 경동맥 맥박이 만져지지 않아 가슴압박을 시작하였다. 정맥로는 이미 확보되어 있다. 수동 제세동기의 패드를 붙이고 가슴압박을 잠시 멈추었을 때 기록된 사지유도 심전도는 그림과 같다. 다음 처치로 가장 적절한 것은? A. 동기화 심율동전환 B. 아미오다론 300 mg 정맥 주사 C. 에피네프린 1 mg 정맥 주사 D. 경피 심박조율 E. 비동기 전기충격(제세동)"
+  },
+  {
+   "id": "imaging-2026-0239",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 전신마취 제왕절개 뒤 양측 폐 음영의 원인 감별",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0239.md",
+   "snippet": "A 27 year old woman is transferred to the intensive care unit 6 hours after an emergency cesarean delivery performed under general anesthesia. During induction of anesthesia, gastric contents were seen in the oropharynx before the endotrach",
+   "text": "호흡기 호흡기 — 전신마취 제왕절개 뒤 양측 폐 음영의 원인 감별 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a A 27 year old woman is transferred to the intensive care unit 6 hours after an emergency cesarean delivery performed under general anesthesia. During induction of anesthesia, gastric contents were seen in the oropharynx before the endotracheal tube was placed. Three hours after surgery, she developed severe dyspnea and chest tightness and was reintubated. She received 1 L of crystalloid and no blood products. Temperature is 37.9°C (100.2°F), pulse is 118/min, and blood pressure is 124/76 mm Hg. Crackles are heard over both lung fields. There is no jugular venous distention or peripheral edema. The uterus is firm, and vaginal bleeding is minimal. Platelet count is 228,000/mm3, and plasma fibrinogen concentration is 410 mg/dL. Transthoracic echocardiography shows a left ventricular ejection fraction of 60%. Arterial blood gas analysis during mechanical ventilation with an FiO2 of 1.0 shows a PaO2 of 78 mm Hg. A portable chest x ray obtained after reintubation is shown. Which of the following is the most likely cause of this patient's respiratory failure? A. Chemical pneumonitis from aspirated gastric contents B. Amniotic fluid embolism C. Peripartum cardiomyopathy D. Transfusion related acute lung injury E. Acute pulmonary thromboembolism"
+  },
+  {
+   "id": "imaging-2026-0238",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 무릎 수술 뒤 호흡곤란과 저산소혈증의 다음 검사",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+   "confidence": "high",
+   "date": "2026-10-05",
+   "path": "content/imaging/2026/imaging-2026-0238.md",
+   "snippet": "51세 여자가 2일 전부터 생긴 호흡곤란과 숨을 들이쉴 때 심해지는 오른쪽 가슴 통증으로 응급실에 왔다. 3주 전 오른쪽 무릎 인공관절 치환술을 받은 뒤 대부분 누워 지냈다. 오른쪽 종아리가 붓고 아프다. 기침, 가래, 발열은 없다. 혈압 118/76 mmHg, 맥박 112회/분, 호흡 24회/분, 체온 37.2 °C, 산소포화도(실내 공기) 89 % 이다. 양쪽 폐음은 깨끗하다. 오른쪽 종아리 둘레가 왼쪽보다 3 cm 크다.",
+   "text": "순환기 순환기 — 무릎 수술 뒤 호흡곤란과 저산소혈증의 다음 검사 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a 51세 여자가 2일 전부터 생긴 호흡곤란과 숨을 들이쉴 때 심해지는 오른쪽 가슴 통증으로 응급실에 왔다. 3주 전 오른쪽 무릎 인공관절 치환술을 받은 뒤 대부분 누워 지냈다. 오른쪽 종아리가 붓고 아프다. 기침, 가래, 발열은 없다. 혈압 118/76 mmHg, 맥박 112회/분, 호흡 24회/분, 체온 37.2 °C, 산소포화도(실내 공기) 89 % 이다. 양쪽 폐음은 깨끗하다. 오른쪽 종아리 둘레가 왼쪽보다 3 cm 크다. 혈청 크레아티닌 0.8 mg/dL 이고, 심전도는 동빈맥 외에 이상이 없다. 기립 자세에서 찍은 휴대용 흉부 X선은 그림과 같다. 진단을 위해 다음으로 시행할 검사로 가장 적절한 것은? A. 조영제 없는 고해상도 흉부 CT B. CT 폐동맥조영술 C. 혈장 D 이량체 측정 D. 환기 관류 폐스캔 E. 경흉부 심장초음파"
   },
   {
    "id": "anatomy-daily-2026-10-05",
