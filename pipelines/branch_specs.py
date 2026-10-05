@@ -2286,4 +2286,155 @@ SPECS: dict[str, dict] = {
             _n("비뇨생식구멍", "urogenital hiatus", "앞쪽 틈 — 요도(+질)가 지난다", star=True, terminal=True)]),
     ]),
 },
+# ── 15회차 (2026-10-08) 머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절 ──────────
+"s15-nerve": {
+    "title": "고실·혀·인두·후두의 신경",
+    "en": "ear, tongue, pharynx & larynx",
+    "subtitle": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다",
+    "kind": "nerve",
+    "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + "
+              "인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · "
+              "§후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조",
+    "footer": [
+        "**고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘.",
+        "인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**.",
+        "후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐.",
+    ],
+    "root": _n("15회차의 신경", children=[
+        _n("얼굴신경 — 고실 부분", "facial n. (CN VII) in temporal bone", "속귀길 → 얼굴신경관 → 붓꼭지구멍",
+           star=True, children=[
+            _n("무릎신경절", "geniculate ganglion", "얼굴신경관이 뒤로 꺾이는 곳 — 맛 감각세포체", star=True, children=[
+                _n("큰바위신경", "greater petrosal n.", "**부교감** → 날개입천장신경절 → 눈물샘 · 코·입천장샘",
+                   star=True, terminal=True)]),
+            _n("등자근신경", "n. to stapedius", "등자근 마비 = **소리 과민**(hyperacusis)", terminal=True),
+            _n("고실끈신경", "chorda tympani", "고실을 가로질러 **망치뼈·모루뼈 사이** → 혀신경에 합류",
+               star=True, terminal=True)]),
+        _n("혀의 신경", "nerves of the tongue", "운동 하나 · 감각 셋", star=True, children=[
+            _n("혀신경", "lingual n. (V3)", "**셋째큰어금니** 안쪽 잇몸 바로 밑 — 혀 앞 2/3 일반감각",
+               star=True, children=[
+                _n("턱밑신경절", "submandibular ganglion", "혀신경에 매달린 부교감 신경절 → 턱밑샘 · 혀밑샘",
+                   star=True, terminal=True)]),
+            _n("혀밑신경", "hypoglossal n. (CN XII)", "혀 근육 **전부**(입천장혀근만 미주신경) — 마비 쪽으로 혀가 쏠린다",
+               star=True, terminal=True),
+            _n("혀인두신경 — 혀가지", "glossopharyngeal n. (CN IX)", "혀 **뒤 1/3** 일반감각 + 맛 · 붓인두근",
+               star=True, terminal=True)]),
+        _n("인두신경얼기", "pharyngeal plexus", "중간인두수축근 바깥면", star=True, children=[
+            _n("혀인두신경 인두가지", "pharyngeal br. of CN IX", "**감각** — 구역반사의 들신경", star=True, terminal=True),
+            _n("미주신경 인두가지", "pharyngeal br. of CN X", "**운동** — 인두수축근 · 입천장근 · 입천장혀근",
+               star=True, terminal=True)]),
+        _n("후두의 신경", "laryngeal nerves (CN X)", "성대주름이 감각의 경계", star=True, children=[
+            _n("위후두신경", "superior laryngeal n.", "목뿔뼈 높이에서 둘로", star=True, children=[
+                _n("속후두신경", "internal laryngeal n.", "**방패목뿔막**을 뚫는다 — 성대주름 **위** 점막 감각",
+                   star=True, terminal=True),
+                _n("바깥후두신경", "external laryngeal n.", "**반지방패근** — 성대를 당겨 높은 소리 · 위갑상동맥 곁",
+                   star=True, terminal=True)]),
+            _n("아래후두신경", "inferior laryngeal n.", "되돌이후두신경의 끝 · 반지방패관절 뒤로 들어온다",
+               star=True, children=[
+                _n("뒤반지모뿔근", "posterior cricoarytenoid", "**유일한 성대 벌림근** — 양쪽 마비 = 기도 폐쇄",
+                   star=True, terminal=True),
+                _n("나머지 후두근 · 성대주름 아래 감각", "other intrinsic muscles", "가쪽반지모뿔 · 모뿔 · 방패모뿔(성대근)",
+                   terminal=True)])]),
+        _n("엉덩관절의 신경", "nerves of the hip joint", "Hilton 법칙", children=[
+            _n("폐쇄신경", "obturator n. (L2–L4)", "엉덩관절 + **무릎 안쪽** — 아이의 엉덩관절 병이 무릎 통증으로",
+               star=True, terminal=True)]),
+    ]),
+},
+
+"s15-vessel": {
+    "title": "코·편도·후두의 혈관과 다리 관절의 동맥",
+    "en": "head & joint vessels",
+    "subtitle": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein"],
+    "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · "
+              "§무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법)",
+    "footer": [
+        "코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다.",
+        "편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다.",
+        "어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**.",
+    ],
+    "root": _n("15회차의 혈관", children=[
+        _n("코안의 동맥", "arteries of the nasal cavity", kind="artery", star=True, children=[
+            _n("나비입천장동맥", "sphenopalatine a.", "위턱동맥의 끝 — **뒤 코피**의 주범", kind="artery",
+               star=True, terminal=True),
+            _n("앞·뒤벌집동맥", "ant. / post. ethmoidal aa.", "**눈동맥**(속목동맥계) — 위쪽 코안", kind="artery",
+               terminal=True),
+            _n("Kiesselbach 부위", "Kiesselbach's area", "코중격 **앞아래** — 나비입천장·앞벌집·큰입천장·윗입술동맥 문합",
+               kind="artery", star=True, terminal=True)]),
+        _n("입천장·편도의 혈관", "palate & tonsil", kind="artery", star=True, children=[
+            _n("큰입천장동맥", "greater palatine a.", "큰입천장구멍 → 단단입천장 앞으로 → **앞니관**으로 코중격",
+               kind="artery", star=True, terminal=True),
+            _n("얼굴동맥 편도가지", "tonsillar br. of facial a.", "**위인두수축근**을 뚫고 편도로 — 편도의 주동맥",
+               kind="artery", star=True, terminal=True),
+            _n("편도바깥정맥", "external palatine (paratonsillar) v.", "편도 바깥면 → 인두정맥얼기 — **편도절제 출혈**",
+               kind="vein", star=True, terminal=True)]),
+        _n("후두의 혈관", "laryngeal vessels", kind="artery", star=True, children=[
+            _n("위후두동맥", "superior laryngeal a.", "위갑상동맥 가지 — **속후두신경과 함께 방패목뿔막**을 뚫는다",
+               kind="artery", star=True, terminal=True),
+            _n("아래후두동맥", "inferior laryngeal a.", "아래갑상동맥 가지 — **아래후두신경과 함께**", kind="artery",
+               terminal=True)]),
+        _n("엉덩관절의 동맥", "arteries of the hip joint", kind="artery", star=True, children=[
+            _n("안쪽넙다리휘돌이동맥", "medial circumflex femoral a.", "넙다리뼈 목 뒤 **고리지지띠동맥** — 머리의 주공급",
+               kind="artery", star=True, terminal=True),
+            _n("가쪽넙다리휘돌이동맥", "lateral circumflex femoral a.", "목 앞 — 안쪽 것과 고리를 만든다", kind="artery",
+               terminal=True),
+            _n("폐쇄동맥 절구가지", "acetabular br. of obturator a.", "**폐쇄관** → 절구패임(절구가로인대 밑) → 넙다리뼈머리인대",
+               kind="artery", star=True, terminal=True)]),
+        _n("무릎의 동맥", "genicular anastomosis", "오금동맥의 무릎동맥 다섯 + 넙다리·정강 가지가 **고리**", kind="artery",
+           star=True, children=[
+            _n("위·아래 안쪽·가쪽무릎동맥", "sup. / inf. medial & lateral genicular aa.", "무릎 둘레 네 귀퉁이",
+               kind="artery", star=True, terminal=True),
+            _n("가운데무릎동맥", "middle genicular a.", "**빗오금인대**를 뚫고 들어가 **십자인대**로", kind="artery",
+               star=True, terminal=True)]),
+    ]),
+},
+
+"s15-bundle": {
+    "title": "통로와 칸 — 머리의 길과 다리 관절",
+    "en": "passages & ligaments",
+    "subtitle": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다",
+    "kind": "mixed",
+    "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · "
+              "§십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법)",
+    "footer": [
+        "콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**.",
+        "후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다.",
+        "앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준.",
+    ],
+    "root": _n("통로와 칸", children=[
+        _n("코안 가쪽벽에 열리는 것", "openings of the lateral nasal wall", "응용과제 — 뇌하수체 접근(나비굴 경유)",
+           star=True, children=[
+            _n("나비벌집오목", "sphenoethmoidal recess", "**나비굴구멍** — 경나비굴 뇌하수체 수술의 입구",
+               star=True, terminal=True),
+            _n("반달틈새", "semilunar hiatus", "중간콧길 · **벌집뼈융기**와 **갈고리돌기** 사이 — 위턱굴·이마굴·앞벌집",
+               star=True, terminal=True),
+            _n("아래콧길", "inferior nasal meatus", "**코눈물관** — 울면 콧물이 난다", star=True, terminal=True)]),
+        _n("인두의 세 부분", "parts of the pharynx", "물렁입천장·후두덮개가 경계", star=True, children=[
+            _n("코인두", "nasopharynx", "물렁입천장 위 — **귀관인두구멍** · 인두편도", star=True, terminal=True),
+            _n("입인두", "oropharynx", "**목구멍편도** — 입천장혀활(앞)·입천장인두활(뒤) 사이", star=True, terminal=True),
+            _n("후두인두", "laryngopharynx", "**조롱박오목** — 생선가시가 걸리는 곳", star=True, terminal=True)]),
+        _n("후두안의 칸", "compartments of the laryngeal cavity", "응용과제 — 후두경 영상", star=True, children=[
+            _n("후두안뜰", "laryngeal vestibule", "후두어귀 → 안뜰주름 위", terminal=True),
+            _n("안뜰주름", "vestibular fold", "가성대 — 소리를 내지 않는다", star=True, terminal=True),
+            _n("후두실", "laryngeal ventricle", "두 주름 사이 옆 주머니", star=True, terminal=True),
+            _n("성대주름 · 성대틈새", "vocal fold / rima glottidis", "**성대인대 + 성대근** — 후두에서 가장 좁은 틈",
+               star=True, terminal=True)]),
+        _n("엉덩관절의 인대", "ligaments of the hip joint", star=True, children=[
+            _n("엉덩넙다리인대", "iliofemoral lig.", "**Y인대** · 몸에서 가장 강하다 — 서 있을 때 폄을 막는다",
+               star=True, terminal=True),
+            _n("두덩넙다리인대 · 궁둥넙다리인대", "pubofemoral / ischiofemoral ligg.", "아래앞 · 뒤 — 나선으로 감긴다",
+               terminal=True),
+            _n("절구테두리 · 절구가로인대", "acetabular labrum / transverse acetabular lig.", "절구를 깊게 · 패임을 다리처럼 덮는다",
+               star=True, terminal=True)]),
+        _n("무릎의 인대", "ligaments of the knee", "응용과제 — 십자인대 손상 확인법", star=True, children=[
+            _n("앞십자인대", "anterior cruciate lig.", "정강 앞 → 넙다리 **가쪽관절융기 안쪽면** — **앞당김검사 · Lachman**",
+               star=True, terminal=True),
+            _n("뒤십자인대", "posterior cruciate lig.", "정강 뒤 → 넙다리 **안쪽관절융기 가쪽면** — 뒤당김검사",
+               star=True, terminal=True),
+            _n("안쪽곁인대", "tibial collateral lig.", "**안쪽반달과 붙는다** — 함께 찢긴다(불행 삼징)", star=True, terminal=True),
+            _n("가쪽곁인대", "fibular collateral lig.", "반달과 **떨어진** 끈 — 오금근 힘줄이 사이를 지난다",
+               star=True, terminal=True)]),
+    ]),
+},
 }

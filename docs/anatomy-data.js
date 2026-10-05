@@ -10948,6 +10948,420 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0743",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 번호핀 1~23가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 통로와 칸 / 2. 코안 가쪽벽에 열리는 것 / 3. 인두의 세 부분 / 4. 후두안의 칸 / 5. 엉덩관절의 인대 / 6. 무릎의 인대 / 7. 나비벌집오목 / 8. 반달틈새 / 9. 아래콧길 / 10. 코인두 / 11. 입인두 / 12. 후두인두 / 13. 후두안뜰 / 14. 안뜰주름 / 15. 후두실 / 16. 성대주름 · 성대틈새 / 17. 엉덩넙다리인대 / 18. 두덩넙다리인대 · 궁둥넙다리인대 / 19. 절구테두리 · 절구가로인대 / 20. 앞십자인대 / 21. 뒤십자인대 / 22. 안쪽곁인대 / 23. 가쪽곁인대",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0744",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 **코안 가쪽벽에 열리는 것** 계통에 해당하는 번호핀 2, 7, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 코안 가쪽벽에 열리는 것 / 7. 나비벌집오목 / 8. 반달틈새 / 9. 아래콧길",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0745",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 **인두의 세 부분** 계통에 해당하는 번호핀 3, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 인두의 세 부분 / 10. 코인두 / 11. 입인두 / 12. 후두인두",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0746",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 **후두안의 칸** 계통에 해당하는 번호핀 4, 13, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 후두안의 칸 / 13. 후두안뜰 / 14. 안뜰주름 / 15. 후두실 / 16. 성대주름 · 성대틈새",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0747",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 **엉덩관절의 인대** 계통에 해당하는 번호핀 5, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 엉덩관절의 인대 / 17. 엉덩넙다리인대 / 18. 두덩넙다리인대 · 궁둥넙다리인대 / 19. 절구테두리 · 절구가로인대",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0748",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-bundle",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(통로와 칸 — 머리의 길과 다리 관절)에서 **무릎의 인대** 계통에 해당하는 번호핀 6, 20, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 무릎의 인대 / 20. 앞십자인대 / 21. 뒤십자인대 / 22. 안쪽곁인대 / 23. 가쪽곁인대",
+   "explanation": "15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다 콧길에 열리는 것: 나비벌집오목 = **나비굴** · 위콧길 = **뒤벌집** · 중간콧길(반달틈새) = **이마·위턱·앞벌집** · 아래콧길 = **코눈물관**. 후두안은 **안뜰주름 · 성대주름** 두 쌍으로 세 칸 — 그 사이 옆 주머니가 **후두실**이다. 앞십자인대는 정강뼈가 **앞으로**, 뒤십자인대는 **뒤로** 빠지는 것을 막는다 — 이름은 **정강뼈에 붙는 자리** 기준. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-bundle",
+     "page": null,
+     "section": "통로와 칸 — 머리의 길과 다리 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0749",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 번호핀 1~23가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 15회차의 신경 / 2. 얼굴신경 — 고실 부분 / 3. 혀의 신경 / 4. 인두신경얼기 / 5. 후두의 신경 / 6. 엉덩관절의 신경 / 7. 무릎신경절 / 8. 등자근신경 / 9. 고실끈신경 / 10. 혀신경 / 11. 혀밑신경 / 12. 혀인두신경 — 혀가지 / 13. 혀인두신경 인두가지 / 14. 미주신경 인두가지 / 15. 위후두신경 / 16. 아래후두신경 / 17. 폐쇄신경 / 18. 큰바위신경 / 19. 턱밑신경절 / 20. 속후두신경 / 21. 바깥후두신경 / 22. 뒤반지모뿔근 / 23. 나머지 후두근 · 성대주름 아래 감각",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0750",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 **얼굴신경 — 고실 부분** 계통에 해당하는 번호핀 2, 7, 8, 9, 18 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 얼굴신경 — 고실 부분 / 7. 무릎신경절 / 8. 등자근신경 / 9. 고실끈신경 / 18. 큰바위신경",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0751",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 **혀의 신경** 계통에 해당하는 번호핀 3, 10, 11, 12, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 혀의 신경 / 10. 혀신경 / 11. 혀밑신경 / 12. 혀인두신경 — 혀가지 / 19. 턱밑신경절",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0752",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 **인두신경얼기** 계통에 해당하는 번호핀 4, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 인두신경얼기 / 13. 혀인두신경 인두가지 / 14. 미주신경 인두가지",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0753",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 **후두의 신경** 계통에 해당하는 번호핀 5, 15, 16, 20, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 후두의 신경 / 15. 위후두신경 / 16. 아래후두신경 / 20. 속후두신경 / 21. 바깥후두신경 / 22. 뒤반지모뿔근 / 23. 나머지 후두근 · 성대주름 아래 감각",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0754",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-nerve",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(고실·혀·인두·후두의 신경)에서 **엉덩관절의 신경** 계통에 해당하는 번호핀 6, 17 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 엉덩관절의 신경 / 17. 폐쇄신경",
+   "explanation": "15회차 · 얼굴신경은 고실 벽을 지나며 가지를 내고, 혀는 네 신경이 나누며, 인두·후두는 미주신경이 거의 다 맡는다 **고실끈신경**은 고실을 가로질러(망치뼈·모루뼈 사이) 나가 **혀신경**에 붙는다 — 혀 앞 2/3 맛 + 턱밑·혀밑샘. 인두근·입천장근은 **미주신경**(인두신경얼기) — 예외는 **붓인두근(IX)** · **입천장긴장근(V3)**. 후두근은 **아래후두신경** — 예외는 **반지방패근(바깥후두신경)**. 성대를 여는 근육은 **뒤반지모뿔근** 하나뿐. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-nerve",
+     "page": null,
+     "section": "고실·혀·인두·후두의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0755",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 번호핀 1~19가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 15회차의 혈관 / 2. 코안의 동맥 / 3. 입천장·편도의 혈관 / 4. 후두의 혈관 / 5. 엉덩관절의 동맥 / 6. 무릎의 동맥 / 7. 나비입천장동맥 / 8. 앞·뒤벌집동맥 / 9. Kiesselbach 부위 / 10. 큰입천장동맥 / 11. 얼굴동맥 편도가지 / 12. 편도바깥정맥 / 13. 위후두동맥 / 14. 아래후두동맥 / 15. 안쪽넙다리휘돌이동맥 / 16. 가쪽넙다리휘돌이동맥 / 17. 폐쇄동맥 절구가지 / 18. 위·아래 안쪽·가쪽무릎동맥 / 19. 가운데무릎동맥",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0756",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 **코안의 동맥** 계통에 해당하는 번호핀 2, 7, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 코안의 동맥 / 7. 나비입천장동맥 / 8. 앞·뒤벌집동맥 / 9. Kiesselbach 부위",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0757",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 **입천장·편도의 혈관** 계통에 해당하는 번호핀 3, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 입천장·편도의 혈관 / 10. 큰입천장동맥 / 11. 얼굴동맥 편도가지 / 12. 편도바깥정맥",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0758",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 **후두의 혈관** 계통에 해당하는 번호핀 4, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 후두의 혈관 / 13. 위후두동맥 / 14. 아래후두동맥",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0759",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 **엉덩관절의 동맥** 계통에 해당하는 번호핀 5, 15, 16, 17 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 엉덩관절의 동맥 / 15. 안쪽넙다리휘돌이동맥 / 16. 가쪽넙다리휘돌이동맥 / 17. 폐쇄동맥 절구가지",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0760",
+   "style": "spotter",
+   "session": 15,
+   "region": "multi",
+   "subregion": "s15-vessel",
+   "examPhase": "tagging-2",
+   "stem": "계보 구조도 퀴즈판(코·편도·후두의 혈관과 다리 관절의 동맥)에서 **무릎의 동맥** 계통에 해당하는 번호핀 6, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 무릎의 동맥 / 18. 위·아래 안쪽·가쪽무릎동맥 / 19. 가운데무릎동맥",
+   "explanation": "15회차 · 머리 쪽은 바깥목동맥 가지가, 넙다리뼈머리는 휘돌이동맥이, 무릎은 오금동맥의 무릎동맥 고리가 맡는다 코피의 90 %는 코중격 앞 **Kiesselbach 부위** — 네 동맥이 만나는 문합이다. 편도절제술 뒤 출혈은 동맥보다 **편도바깥정맥**(paratonsillar v.)이 흔하다. 어른 넙다리뼈머리는 **안쪽넙다리휘돌이동맥**이 먹인다 — 목 골절에서 **무혈괴사**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s15-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s15-vessel",
+     "page": null,
+     "section": "코·편도·후두의 혈관과 다리 관절의 동맥"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -13423,6 +13837,342 @@ window.MEDKOS_ANATOMY = {
      "section": "응용과제 — 배뇨·배변 기전"
     }
    ]
+  },
+  {
+   "id": "anatomy-2026-0762",
+   "style": "distinction",
+   "session": 15,
+   "region": "head",
+   "subregion": "nasal-cavity",
+   "examPhase": "tagging-2",
+   "stem": "코중격 시상면에서 중격을 이루는 **뼈 두 개**(위뒤 · 아래뒤)와 **연골 하나**(앞)를 쓰시오. 또 앞 코피가 가장 흔히 나는 중격 부위의 이름은?",
+   "choices": null,
+   "answer": "**벌집뼈수직판 (perpendicular plate of ethmoid)**(위뒤) · **보습뼈 (vomer)**(아래뒤) · **코중격연골 (septal nasal cartilage)**(앞) — 앞 코피 = **Kiesselbach 부위 (Kiesselbach's area)**",
+   "explanation": "중격 바닥은 위턱뼈·입천장뼈 코능선에 얹힌다. 중격 앞아래 점막에서 나비입천장 · 앞벌집 · 큰입천장 · 윗입술동맥이 문합해 ==Kiesselbach 부위==를 이루며, 코피의 대부분이 여기서 난다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "코중격 시상면"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0763",
+   "style": "relation",
+   "session": 15,
+   "region": "head",
+   "subregion": "nasal-cavity",
+   "examPhase": "tagging-2",
+   "stem": "코안 가쪽벽에서 다음이 열리는 자리(콧길·오목 이름)를 각각 쓰시오: (가) 나비굴 (나) 위턱굴 (다) 코눈물관. (나)가 열리는 틈을 위아래에서 경계 짓는 두 구조는?",
+   "choices": null,
+   "answer": "(가) **나비벌집오목 (sphenoethmoidal recess)** (나) **중간콧길 (middle nasal meatus)**의 **반달틈새 (semilunar hiatus)** (다) **아래콧길 (inferior nasal meatus)** — 위 = **벌집뼈융기 (ethmoidal bulla)** · 아래 = **갈고리돌기 (uncinate process)**",
+   "explanation": "중간콧길 반달틈새에는 이마굴 · 위턱굴 · 앞벌집벌집이 열린다. 위콧길에는 뒤벌집벌집, 나비벌집오목에는 나비굴이 열린다. 코선반을 들어 내야 보인다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "코안 가쪽벽"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0764",
+   "style": "relation",
+   "session": 15,
+   "region": "head",
+   "subregion": "oral-cavity",
+   "examPhase": "tagging-2",
+   "stem": "목구멍편도를 앞뒤로 둘러싼 두 점막 주름의 이름과 각 주름 속 근육을 쓰시오. 두 근육 중 **혀 근육으로 분류되면서도 혀밑신경이 아닌** 신경의 지배를 받는 것은 무엇이며 그 신경은?",
+   "choices": null,
+   "answer": "앞 = **입천장혀활 (palatoglossal arch)** — **입천장혀근 (palatoglossus m.)** · 뒤 = **입천장인두활 (palatopharyngeal arch)** — **입천장인두근 (palatopharyngeus m.)** — 입천장혀근 · **미주신경 (vagus n.)**(인두신경얼기)",
+   "explanation": "혀 근육은 모두 혀밑신경인데 입천장혀근만 미주신경이다. 입천장혀활은 입안과 입인두의 경계다. 편도오목 바닥은 위인두수축근이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "입천장 · 목구멍편도"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0765",
+   "style": "clinical-application",
+   "session": 15,
+   "region": "head",
+   "subregion": "oral-cavity",
+   "examPhase": "tagging-2",
+   "stem": "목구멍편도를 떼어 낸 편도오목의 **바닥을 이루는 근육**과, 그 바깥에서 편도절제술 때 다칠 수 있는 **뇌신경**을 쓰시오. 그 신경이 다치면 어떤 증상이 오는가?",
+   "choices": null,
+   "answer": "**위인두수축근 (superior pharyngeal constrictor m.)** — **혀인두신경 (glossopharyngeal n.)** — 같은 쪽 **혀 뒤 1/3의 맛·일반감각 소실**(구역반사 들신경 약화)",
+   "explanation": "편도오목 바닥은 위인두수축근 → 인두결절근막이고, 그 바깥에 혀인두신경과 붓혀근이 지난다. 편도절제 뒤 출혈은 편도바깥정맥이 흔하다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "목구멍편도"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0766",
+   "style": "clinical-application",
+   "session": 15,
+   "region": "head",
+   "subregion": "oral-cavity",
+   "examPhase": "tagging-2",
+   "stem": "셋째큰어금니 발치 뒤 같은 쪽 **혀 앞 2/3의 감각과 맛**이 함께 떨어졌다. 다친 신경과, 이 신경에 실려 맛을 나르는 다른 뇌신경 가지의 이름을 쓰시오. 이 신경에 매달린 부교감 신경절은?",
+   "choices": null,
+   "answer": "**혀신경 (lingual n.)** — **고실끈신경 (chorda tympani)**(얼굴신경) — **턱밑신경절 (submandibular ganglion)**",
+   "explanation": "혀신경(V3)은 셋째큰어금니 안쪽 잇몸 바로 밑을 지난다. 고실끈신경이 혀신경에 합류해 혀 앞 2/3 맛과 턱밑·혀밑샘 부교감을 실어 나르므로 혀신경이 끊기면 감각과 맛이 함께 떨어진다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "혀의 신경 1 · 2"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0767",
+   "style": "course-tracing",
+   "session": 15,
+   "region": "head",
+   "subregion": "middle-ear",
+   "examPhase": "tagging-2",
+   "stem": "고실 안에서 (가) 고막보다 위에 있어 망치뼈머리·모루뼈몸통이 들어 있는 공간 (나) 뒤벽 위에서 꼭지굴로 이어지는 통로의 이름을 쓰시오. 또 고실끈신경은 어느 두 귓속뼈 **사이**를 지나는가?",
+   "choices": null,
+   "answer": "(가) **고실위오목 (epitympanic recess)** (나) **꼭지방어귀 (aditus to mastoid antrum)** — **망치뼈 (malleus)**와 **모루뼈 (incus)** 사이",
+   "explanation": "고실은 고유고실과 고실위오목으로 나뉜다. 중이염이 꼭지방어귀를 따라 꼭지굴로 번지면 꼭지돌기염이 된다. 고실끈신경은 고막 안쪽면을 가로질러 망치뼈 손잡이와 모루뼈 긴다리 사이를 지난다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "고실 열기 · 고실"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0768",
+   "style": "clinical-application",
+   "session": 15,
+   "region": "head",
+   "subregion": "middle-ear",
+   "examPhase": "tagging-2",
+   "stem": "얼굴신경 손상 환자에서 얼굴근 마비에 더해 **같은 쪽 눈물 분비 감소**가 있다. 손상은 어느 신경절보다 몸쪽(위)인가? 그 신경절에서 나가 눈물샘 부교감을 나르는 신경은?",
+   "choices": null,
+   "answer": "**무릎신경절 (geniculate ganglion)** 보다 몸쪽 — **큰바위신경 (greater petrosal n.)**",
+   "explanation": "큰바위신경은 무릎신경절에서 나가 날개입천장신경절을 거쳐 눈물샘으로 간다. 등자근신경 위 손상이면 소리 과민, 고실끈신경 위면 혀 앞 2/3 맛 소실이 더해진다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "고실 열기"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0769",
+   "style": "relation",
+   "session": 15,
+   "region": "neck",
+   "subregion": "pharynx",
+   "examPhase": "tagging-2",
+   "stem": "인두수축근 사이 틈으로 지나는 구조를 쓰시오: (가) 위인두수축근과 중간인두수축근 사이로 들어가는 **근육과 신경** (나) 중간인두수축근과 아래인두수축근 사이(방패목뿔막)를 뚫는 **신경과 동맥**.",
+   "choices": null,
+   "answer": "(가) **붓인두근 (stylopharyngeus m.)** · **혀인두신경 (glossopharyngeal n.)** (나) **속후두신경 (internal laryngeal n.)** · **위후두동맥 (superior laryngeal a.)**",
+   "explanation": "위 수축근 위 틈 = 귀관·입천장올림근, 아래 수축근 아래 = 되돌이후두신경. 붓인두근은 혀인두신경이 지배하는 유일한 근육이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "인두 근육 · 후두절단면"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0770",
+   "style": "spotter",
+   "session": 15,
+   "region": "neck",
+   "subregion": "pharynx",
+   "examPhase": "tagging-2",
+   "stem": "인두를 위에서부터 세 부분으로 나누고, 각 부분에서 태깅에 나오는 대표 구조를 하나씩 쓰시오(코인두 — 귀관이 열리는 구멍 / 입인두 — 두 활 사이 림프조직 / 후두인두 — 후두어귀 양옆의 오목).",
+   "choices": null,
+   "answer": "**코인두 (nasopharynx)** — **귀관인두구멍 (pharyngeal opening of auditory tube)** / **입인두 (oropharynx)** — **목구멍편도 (palatine tonsil)** / **후두인두 (laryngopharynx)** — **조롱박오목 (piriform fossa)**",
+   "explanation": "물렁입천장이 코인두와 입인두를, 후두덮개가 입인두와 후두인두를 가른다. 조롱박오목 점막 밑으로 속후두신경이 지나 이물에 다치기 쉽다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "인두의 구분"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0771",
+   "style": "distinction",
+   "session": 15,
+   "region": "neck",
+   "subregion": "larynx",
+   "examPhase": "tagging-2",
+   "stem": "후두근 중 (가) **아래후두신경이 아닌** 신경의 지배를 받는 근육과 그 신경 (나) 성대를 **벌리는** 유일한 근육을 쓰시오. 양쪽 되돌이후두신경이 끊기면 무슨 일이 생기는가?",
+   "choices": null,
+   "answer": "(가) **반지방패근 (cricothyroid m.)** — **바깥후두신경 (external laryngeal n.)** (나) **뒤반지모뿔근 (posterior cricoarytenoid m.)** — 양쪽 벌림근 마비로 성대가 가운데에 붙어 **기도가 막힌다**",
+   "explanation": "반지방패근은 방패연골을 앞으로 숙여 성대를 긴장시킨다(높은 소리). 나머지 후두근은 모두 아래후두신경(되돌이후두신경의 끝)이 지배한다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "후두 바깥 · 후두 속 자체기원근육"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0772",
+   "style": "layer-order",
+   "session": 15,
+   "region": "neck",
+   "subregion": "larynx",
+   "examPhase": "tagging-2",
+   "stem": "후두 관상절단면에서 **위에서 아래로** 차례대로 쓰시오: 두 쌍의 주름(위 · 아래)과 그 사이 옆 주머니, 아래 주름 밑 공간. 아래 주름의 속심을 이루는 인대와 그 인대가 위 모서리인 막은?",
+   "choices": null,
+   "answer": "**안뜰주름 (vestibular fold)** → **후두실 (laryngeal ventricle)** → **성대주름 (vocal fold)** → **성대문아래공간 (infraglottic cavity)** — **성대인대 (vocal lig.)** · **탄력원뿔 (conus elasticus)**",
+   "explanation": "안뜰주름 위는 후두안뜰이다. 성대주름 사이 틈(성대틈새)이 후두에서 가장 좁다. 성대주름 위 감각은 속후두신경, 아래는 아래후두신경.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "후두 절단면 · 후두 속"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0773",
+   "style": "clinical-application",
+   "session": 15,
+   "region": "lower-limb",
+   "subregion": "knee",
+   "examPhase": "tagging-2",
+   "stem": "앞십자인대가 붙는 **넙다리뼈 쪽 자리**와 막는 정강뼈의 움직임, 그 손상을 확인하는 검사 두 가지를 쓰시오. 무릎 가쪽에서 치였을 때 앞십자인대와 함께 찢기는 두 구조는?",
+   "choices": null,
+   "answer": "**넙다리뼈 가쪽관절융기 안쪽면** — 정강뼈의 **앞쪽** 밀림 — **앞당김검사 (anterior drawer test)** · **Lachman 검사** — **안쪽곁인대 (tibial collateral lig.)** · **안쪽반달 (medial meniscus)**(불행 삼징)",
+   "explanation": "앞십자인대는 정강뼈 앞 융기사이에서 뒤가쪽 위로 간다. 뒤십자인대는 정강뼈 뒤에서 넙다리 안쪽관절융기 가쪽면으로 가며 뒤당김검사·뒤처짐 징후로 본다. 안쪽곁인대는 안쪽반달과 붙어 있어 함께 다친다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "십자인대 · 관절반달"
+    },
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 15회차",
+     "page": null,
+     "section": "머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절"
+    }
+   ]
   }
  ],
  "guides": [
@@ -14601,9 +15351,166 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0761",
+   "session": 15,
+   "title": "15회차 서브노트 — 길을 나누는 것과 관절을 붙잡는 것",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 코중격",
+    "2. 코안 가쪽벽",
+    "3. 입천장과 목구멍편도",
+    "4. 혀의 신경",
+    "5. 가운데귀",
+    "6. 인두의 벽과 근육",
+    "7. 인두의 신경과 구분",
+    "8. 후두의 근육",
+    "9. 후두 안",
+    "10. 엉덩관절",
+    "11. 무릎관절",
+    "12. 응용과제 정리",
+    "13. 근육표 종합 (15회차)",
+    "14. 예습시험 체크리스트 10 (수업당 10문제 대비)"
+   ],
+   "figs": [
+    "tree-s15-bundle-labeled.svg",
+    "tree-s15-nerve-labeled.svg",
+    "tree-s15-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "콧길에 열리는 것 — 위에서 아래로 「나·뒤·이위앞·눈」",
+     "full": "나비벌집오목 = 나비굴 · 위콧길 = 뒤벌집 · 중간콧길 = 이마굴·위턱굴·앞벌집 · 아래콧길 = 코눈물관",
+     "note": "중간콧길의 ==반달틈새==가 가장 많이 받는다 — 벌집뼈융기와 갈고리돌기 사이"
+    },
+    {
+     "key": "인두근은 미주, 예외 둘 — 「붓은 아홉, 긴장은 다섯」",
+     "full": "붓인두근 = 혀인두신경(IX) · 입천장긴장근 = 아래턱신경(V3) · 나머지 인두·입천장근 = 미주신경(X, 인두신경얼기)",
+     "note": "혀 근육은 반대로 ==혀밑신경== — 예외는 입천장혀근(X)"
+    },
+    {
+     "key": "후두근은 아래후두, 예외 하나 — 반지방패근",
+     "full": "반지방패근 = 바깥후두신경 · 나머지 모두 = 아래후두신경(되돌이)",
+     "note": "성대를 여는 근육은 ==뒤반지모뿔근== 하나뿐 — 「뒤가 열어야 숨 쉰다」"
+    },
+    {
+     "key": "고실끈신경은 망치와 모루 사이를 끈처럼",
+     "full": "얼굴신경 → 고실 → 망치뼈·모루뼈 사이 → 바위고실틈새 → 혀신경 합류",
+     "note": "혀 앞 2/3 맛 + ==턱밑신경절== 부교감(턱밑샘·혀밑샘)"
+    },
+    {
+     "key": "십자인대는 정강뼈 기준 — 앞은 앞으로 못 가게",
+     "full": "앞십자인대 = 정강뼈가 앞으로 빠지는 것을 막는다(앞당김·Lachman) · 뒤십자인대 = 뒤로 빠지는 것을 막는다(뒤당김·뒤처짐)",
+     "note": "==안쪽곁인대==는 안쪽반달과 붙고, 가쪽곁인대는 반달과 떨어진다"
+    },
+    {
+     "key": "엉덩관절 인대는 Y가 대장",
+     "full": "엉덩넙다리인대(Y) · 두덩넙다리인대 · 궁둥넙다리인대 — 셋이 나선으로 감겨 폄에서 조인다",
+     "note": "==엉덩넙다리인대==가 서 있을 때 골반이 뒤로 넘어가는 것을 막는다"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [
+  {
+   "date": "2026-10-06",
+   "phase": "t2-new",
+   "examPhase": "tagging-2",
+   "regions": [
+    "upper-limb",
+    "pelvis-perineum"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0001"
+    ],
+    "layer": [
+     "anatomy-2026-0003"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0035",
+     "anatomy-2026-0002"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0471",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0013",
+    "anatomy-2026-0469",
+    "anatomy-2026-0480",
+    "anatomy-2026-0476",
+    "anatomy-2026-0512",
+    "anatomy-2026-0515"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0471",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0469",
+     "anatomy-2026-0480",
+     "anatomy-2026-0476",
+     "anatomy-2026-0512",
+     "anatomy-2026-0515"
+    ],
+    "d-7": [
+     "anatomy-2026-0556",
+     "anatomy-2026-0521",
+     "anatomy-2026-0663",
+     "anatomy-2026-0557",
+     "anatomy-2026-0517",
+     "anatomy-2026-0518",
+     "anatomy-2026-0497",
+     "anatomy-2026-0601",
+     "anatomy-2026-0666",
+     "anatomy-2026-0385",
+     "anatomy-2026-0598",
+     "anatomy-2026-0519"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0046",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0040",
+     "anatomy-2026-0047",
+     "anatomy-2026-0362",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-10-05",
    "phase": "t2-new",
@@ -17269,103 +18176,6 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "date": "2026-09-07",
-   "phase": "t1-prep",
-   "examPhase": "tagging-1",
-   "regions": [
-    "neck",
-    "lower-limb"
-   ],
-   "concepts": {
-    "preview": [
-     "anatomy-2026-0030"
-    ],
-    "layer": [
-     "anatomy-2026-0035"
-    ],
-    "branch": [
-     "anatomy-2026-0037"
-    ],
-    "relation": [
-     "anatomy-2026-0446",
-     "anatomy-2026-0447"
-    ]
-   },
-   "questions": [
-    "anatomy-2026-0372",
-    "anatomy-2026-0353",
-    "anatomy-2026-0044",
-    "anatomy-2026-0048",
-    "anatomy-2026-0355",
-    "anatomy-2026-0043",
-    "anatomy-2026-0017",
-    "anatomy-2026-0447",
-    "anatomy-2026-0356",
-    "anatomy-2026-0045",
-    "anatomy-2026-0050",
-    "anatomy-2026-0359"
-   ],
-   "review": {
-    "d-1": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ],
-    "d-3": [
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0044",
-     "anatomy-2026-0048",
-     "anatomy-2026-0355",
-     "anatomy-2026-0043",
-     "anatomy-2026-0017",
-     "anatomy-2026-0447",
-     "anatomy-2026-0356",
-     "anatomy-2026-0045",
-     "anatomy-2026-0050",
-     "anatomy-2026-0359"
-    ],
-    "d-7": [
-     "anatomy-2026-0157",
-     "anatomy-2026-0162",
-     "anatomy-2026-0385",
-     "anatomy-2026-0154",
-     "anatomy-2026-0159",
-     "anatomy-2026-0043",
-     "anatomy-2026-0038",
-     "anatomy-2026-0161",
-     "anatomy-2026-0378",
-     "anatomy-2026-0398",
-     "anatomy-2026-0156",
-     "anatomy-2026-0377"
-    ],
-    "d-14": [
-     "anatomy-2026-0040",
-     "anatomy-2026-0046",
-     "anatomy-2026-0044",
-     "anatomy-2026-0041",
-     "anatomy-2026-0039",
-     "anatomy-2026-0043",
-     "anatomy-2026-0015",
-     "anatomy-2026-0372",
-     "anatomy-2026-0353",
-     "anatomy-2026-0045",
-     "anatomy-2026-0048",
-     "anatomy-2026-0052"
-    ]
-   },
-   "estMinutes": 35
-  },
-  {
-   "date": "2026-09-06",
    "phase": "t1-prep",
    "examPhase": "tagging-1",
    "regions": [
