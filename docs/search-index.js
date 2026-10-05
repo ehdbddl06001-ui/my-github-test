@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3321,
+  "total": 3353,
   "byType": {
    "usmle": 180,
+   "anatomy": 832,
    "kmle": 1280,
-   "anatomy": 800,
    "paper": 715,
    "imaging": 236,
    "concept": 93,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 800,
+   "Anatomy": 832,
    "Cardiology": 237,
    "Nephrology": 188,
    "Infectious Disease": 170,
@@ -79,10 +79,10 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 1007,
-   "high": 2264,
+   "high": 2296,
    "low": 50
   },
-  "tagCount": 4542
+  "tagCount": 4561
  },
  "docs": [
   {
@@ -216,6 +216,291 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0188.md",
    "snippet": "A 38 year old man with HIV infection and a CD4+ T lymphocyte count of 110/mm³ is hospitalized for Pneumocystis jirovecii pneumonia. On admission, his serum potassium concentration was 4.2 mEq/L and creatinine was 0.9 mg/dL. He has been trea",
    "text": "Pharmacology A Potassium of 6.1 on Day 5 of High-Dose Treatment for Pneumocystis Pneumonia in a Man With HIV trimethoprim hyperkalemia enac amiloride-like principal-cell pneumocystis hiv USMLE-style / MedKOS (Katzung Basic & Clinical Pharmacology — Sulfonamides & Trimethoprim, Diuretics: potassium-sparing agents; Harrison's Principles of Internal Medicine 21e — Fluid and Electrolyte Disturbances: hyperkalemia from drugs that inhibit ENaC) A 38 year old man with HIV infection and a CD4+ T lymphocyte count of 110/mm³ is hospitalized for Pneumocystis jirovecii pneumonia. On admission, his serum potassium concentration was 4.2 mEq/L and creatinine was 0.9 mg/dL. He has been treated for 5 days with high dose intravenous trimethoprim sulfamethoxazole and a tapering course of oral prednisone, and his breathing has improved. Today he reports mild generalized weakness. He takes no other medications; he has not received an ACE inhibitor, an angiotensin receptor blocker, a potassium supplement, a nonsteroidal anti inflammatory drug, or heparin. Thromboprophylaxis is with pneumatic compression devices. There is no hyperpigmentation of the skin or buccal mucosa. Muscle strength is 5/5 throughout. An ECG shows sinus rhythm without conduction abnormalities. His vital signs are shown. Laboratory studies are shown. Which of the following best describes the mechanism of this patient's hyperkalemia? A. Inhibition of aldosterone synthesis in the zona glomerulosa B. Inhibition of renin release from juxtaglomerular cells C. Competitive antagonism of the mineralocorticoid receptor in principal cells D. Blockade of epithelial sodium channels in collecting duct principal cells E. Inhibition of skeletal muscle Na+/K+ ATPase causing potassium efflux 고용량 trimethoprim sulfamethoxazole 5일째 칼륨이 4.2 → 6.1 mEq/L 로 오르고 경한 고염소성 대사산증이 생겼다. 칼륨을 올리는 다른 약(ACEI·ARB·NSAID·헤파린·칼륨 보충)은 없고, 혈압이 정상이며 색소침착이 없고 프레드니손을 쓰고 있어 부신부전 가능성은 낮다. 레닌·알도스테론이 낮지 않으므로 알도스테론 생성·레닌 분비가 막힌 것이 아니라 집합관이 알도스테론에 반응하지 못하는 것이다. trimethoprim 은 amiloride·triamterene 과 구조가 비슷해 주세포 관강막의 상피 나트륨 통로(ENaC)를 막는다 → 나트륨 재흡수가 줄어 관강 음전위가 사라지고 ROMK 를 통한 칼륨 분비가 줄어든다(같은 이유로 수소이온 분비도 줄어 경한 산증)."
+  },
+  {
+   "id": "anatomy-daily-2026-10-06",
+   "type": "anatomy",
+   "unit": "팔·골반·회음",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-06",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/daily/2026-10-06.md",
+   "snippet": "오늘의 학습 (2026 10 06 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 26일 · Tagging 2까지 13일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-06 팔·골반·회음 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 06 · t2 new) 다음 수업/시험: 2026 10 06 팔의 관절, 골반 복막·골반 절단·남녀 내부생식기관·골반가로막 Tagging 1까지 26일 · Tagging 2까지 13일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0773",
+   "type": "anatomy",
+   "unit": "15회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "십자인대의 붙는 곳과 검사",
+   "tags": [
+    "clinical-application",
+    "15회차",
+    "십자인대의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0773.md",
+   "snippet": "문제 앞십자인대가 붙는 넙다리뼈 쪽 자리 와 막는 정강뼈의 움직임, 그 손상을 확인하는 검사 두 가지를 쓰시오. 무릎 가쪽에서 치였을 때 앞십자인대와 함께 찢기는 두 구조는? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 십자인대의 붙는 곳과 검사 15회차 · 다리 clinical-application 15회차 십자인대의 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 앞십자인대가 붙는 넙다리뼈 쪽 자리 와 막는 정강뼈의 움직임, 그 손상을 확인하는 검사 두 가지를 쓰시오. 무릎 가쪽에서 치였을 때 앞십자인대와 함께 찢기는 두 구조는? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0772",
+   "type": "anatomy",
+   "unit": "15회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "후두 안의 칸",
+   "tags": [
+    "layer-order",
+    "15회차",
+    "후두",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0772.md",
+   "snippet": "문제 후두 관상절단면에서 위에서 아래로 차례대로 쓰시오: 두 쌍의 주름(위 · 아래)과 그 사이 옆 주머니, 아래 주름 밑 공간. 아래 주름의 속심을 이루는 인대와 그 인대가 위 모서리인 막은? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 후두 안의 칸 15회차 · 목 layer-order 15회차 후두 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 후두 관상절단면에서 위에서 아래로 차례대로 쓰시오: 두 쌍의 주름(위 · 아래)과 그 사이 옆 주머니, 아래 주름 밑 공간. 아래 주름의 속심을 이루는 인대와 그 인대가 위 모서리인 막은? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0771",
+   "type": "anatomy",
+   "unit": "15회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "후두근의 신경 예외",
+   "tags": [
+    "distinction",
+    "15회차",
+    "후두근의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0771.md",
+   "snippet": "문제 후두근 중 (가) 아래후두신경이 아닌 신경의 지배를 받는 근육과 그 신경 (나) 성대를 벌리는 유일한 근육을 쓰시오. 양쪽 되돌이후두신경이 끊기면 무슨 일이 생기는가? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 후두근의 신경 예외 15회차 · 목 distinction 15회차 후두근의 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 후두근 중 (가) 아래후두신경이 아닌 신경의 지배를 받는 근육과 그 신경 (나) 성대를 벌리는 유일한 근육을 쓰시오. 양쪽 되돌이후두신경이 끊기면 무슨 일이 생기는가? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0770",
+   "type": "anatomy",
+   "unit": "15회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "인두의 세 부분",
+   "tags": [
+    "spotter",
+    "15회차",
+    "인두의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0770.md",
+   "snippet": "문제 인두를 위에서부터 세 부분으로 나누고, 각 부분에서 태깅에 나오는 대표 구조를 하나씩 쓰시오(코인두 — 귀관이 열리는 구멍 / 입인두 — 두 활 사이 림프조직 / 후두인두 — 후두어귀 양옆의 오목). 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 인두의 세 부분 15회차 · 목 spotter 15회차 인두의 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 인두를 위에서부터 세 부분으로 나누고, 각 부분에서 태깅에 나오는 대표 구조를 하나씩 쓰시오(코인두 — 귀관이 열리는 구멍 / 입인두 — 두 활 사이 림프조직 / 후두인두 — 후두어귀 양옆의 오목). 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0769",
+   "type": "anatomy",
+   "unit": "15회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "인두수축근 틈으로 지나는 것",
+   "tags": [
+    "relation",
+    "15회차",
+    "인두수축근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0769.md",
+   "snippet": "문제 인두수축근 사이 틈으로 지나는 구조를 쓰시오: (가) 위인두수축근과 중간인두수축근 사이로 들어가는 근육과 신경 (나) 중간인두수축근과 아래인두수축근 사이(방패목뿔막)를 뚫는 신경과 동맥 . 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 인두수축근 틈으로 지나는 것 15회차 · 목 relation 15회차 인두수축근 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 인두수축근 사이 틈으로 지나는 구조를 쓰시오: (가) 위인두수축근과 중간인두수축근 사이로 들어가는 근육과 신경 (나) 중간인두수축근과 아래인두수축근 사이(방패목뿔막)를 뚫는 신경과 동맥 . 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0768",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴신경 손상 높이",
+   "tags": [
+    "clinical-application",
+    "15회차",
+    "얼굴신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0768.md",
+   "snippet": "문제 얼굴신경 손상 환자에서 얼굴근 마비에 더해 같은 쪽 눈물 분비 감소 가 있다. 손상은 어느 신경절보다 몸쪽(위)인가? 그 신경절에서 나가 눈물샘 부교감을 나르는 신경은? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 얼굴신경 손상 높이 15회차 · 머리 clinical-application 15회차 얼굴신경 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 얼굴신경 손상 환자에서 얼굴근 마비에 더해 같은 쪽 눈물 분비 감소 가 있다. 손상은 어느 신경절보다 몸쪽(위)인가? 그 신경절에서 나가 눈물샘 부교감을 나르는 신경은? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0767",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "고실의 칸과 고실끈신경",
+   "tags": [
+    "course-tracing",
+    "15회차",
+    "고실의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0767.md",
+   "snippet": "문제 고실 안에서 (가) 고막보다 위에 있어 망치뼈머리·모루뼈몸통이 들어 있는 공간 (나) 뒤벽 위에서 꼭지굴로 이어지는 통로의 이름을 쓰시오. 또 고실끈신경은 어느 두 귓속뼈 사이 를 지나는가? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 고실의 칸과 고실끈신경 15회차 · 머리 course-tracing 15회차 고실의 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 고실 안에서 (가) 고막보다 위에 있어 망치뼈머리·모루뼈몸통이 들어 있는 공간 (나) 뒤벽 위에서 꼭지굴로 이어지는 통로의 이름을 쓰시오. 또 고실끈신경은 어느 두 귓속뼈 사이 를 지나는가? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0766",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "혀신경과 셋째큰어금니",
+   "tags": [
+    "clinical-application",
+    "15회차",
+    "혀신경과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0766.md",
+   "snippet": "문제 셋째큰어금니 발치 뒤 같은 쪽 혀 앞 2/3의 감각과 맛 이 함께 떨어졌다. 다친 신경과, 이 신경에 실려 맛을 나르는 다른 뇌신경 가지의 이름을 쓰시오. 이 신경에 매달린 부교감 신경절은? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 혀신경과 셋째큰어금니 15회차 · 머리 clinical-application 15회차 혀신경과 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 셋째큰어금니 발치 뒤 같은 쪽 혀 앞 2/3의 감각과 맛 이 함께 떨어졌다. 다친 신경과, 이 신경에 실려 맛을 나르는 다른 뇌신경 가지의 이름을 쓰시오. 이 신경에 매달린 부교감 신경절은? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0765",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "편도오목 바닥 바깥의 신경",
+   "tags": [
+    "clinical-application",
+    "15회차",
+    "편도오목",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0765.md",
+   "snippet": "문제 목구멍편도를 떼어 낸 편도오목의 바닥을 이루는 근육 과, 그 바깥에서 편도절제술 때 다칠 수 있는 뇌신경 을 쓰시오. 그 신경이 다치면 어떤 증상이 오는가? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 편도오목 바닥 바깥의 신경 15회차 · 머리 clinical-application 15회차 편도오목 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 목구멍편도를 떼어 낸 편도오목의 바닥을 이루는 근육 과, 그 바깥에서 편도절제술 때 다칠 수 있는 뇌신경 을 쓰시오. 그 신경이 다치면 어떤 증상이 오는가? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0764",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입천장활과 그 속 근육",
+   "tags": [
+    "relation",
+    "15회차",
+    "입천장활과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0764.md",
+   "snippet": "문제 목구멍편도를 앞뒤로 둘러싼 두 점막 주름의 이름과 각 주름 속 근육을 쓰시오. 두 근육 중 혀 근육으로 분류되면서도 혀밑신경이 아닌 신경의 지배를 받는 것은 무엇이며 그 신경은? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 입천장활과 그 속 근육 15회차 · 머리 relation 15회차 입천장활과 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 목구멍편도를 앞뒤로 둘러싼 두 점막 주름의 이름과 각 주름 속 근육을 쓰시오. 두 근육 중 혀 근육으로 분류되면서도 혀밑신경이 아닌 신경의 지배를 받는 것은 무엇이며 그 신경은? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0763",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "콧길에 열리는 것",
+   "tags": [
+    "relation",
+    "15회차",
+    "콧길에",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0763.md",
+   "snippet": "문제 코안 가쪽벽에서 다음이 열리는 자리(콧길·오목 이름)를 각각 쓰시오: (가) 나비굴 (나) 위턱굴 (다) 코눈물관. (나)가 열리는 틈을 위아래에서 경계 짓는 두 구조는? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 콧길에 열리는 것 15회차 · 머리 relation 15회차 콧길에 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 코안 가쪽벽에서 다음이 열리는 자리(콧길·오목 이름)를 각각 쓰시오: (가) 나비굴 (나) 위턱굴 (다) 코눈물관. (나)가 열리는 틈을 위아래에서 경계 짓는 두 구조는? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0762",
+   "type": "anatomy",
+   "unit": "15회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "코중격을 이루는 구조",
+   "tags": [
+    "distinction",
+    "15회차",
+    "코중격을",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0762.md",
+   "snippet": "문제 코중격 시상면에서 중격을 이루는 뼈 두 개 (위뒤 · 아래뒤)와 연골 하나 (앞)를 쓰시오. 또 앞 코피가 가장 흔히 나는 중격 부위의 이름은? 정답 및 해설 정답·해설은 frontmatter(answer separated).",
+   "text": "Anatomy 코중격을 이루는 구조 15회차 · 머리 distinction 15회차 코중격을 예습시험 태깅 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive 해부2, a2-s15) + e-Anatomy Head — Sagittal section of head · Oral cavity and tongue · Middle ear · Neck — Pharynx · Larynx · Lower limb — Joints of the lower limb 문제 코중격 시상면에서 중격을 이루는 뼈 두 개 (위뒤 · 아래뒤)와 연골 하나 (앞)를 쓰시오. 또 앞 코피가 가장 흔히 나는 중격 부위의 이름은? 정답 및 해설 정답·해설은 frontmatter(answer separated)."
+  },
+  {
+   "id": "anatomy-2026-0761",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "15회차 서브노트 — 머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절",
+   "tags": [
+    "서브노트",
+    "15회차",
+    "코중격",
+    "반달틈새",
+    "나비굴",
+    "목구멍편도",
+    "혀신경",
+    "고실끈신경",
+    "인두수축근",
+    "후두",
+    "성대주름",
+    "엉덩관절",
+    "십자인대",
+    "반달",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/anatomy/notes/anatomy-2026-0761-s15-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 머리의 길은 벽과 주름으로 칸이 나뉜다. 코안 가쪽벽은 코선반 셋이 콧길을 나누고, 인두는 물렁입천장·후두덮개가 세 부분으로, 후두는 ==안뜰주름==·==성대주름== 두 쌍이 세 칸으로 나눈다. 2. 신경은 「예외」를 외운다. 혀 근육은 혀밑신경(예외 입천장혀근), 인두·입천장근은 미주신경(예외 붓인두근·입천장긴장근), 후두근은 아래후두신경(예외 ==반지방패근==). 3. 다리 관절은 인대",
+   "text": "Anatomy 15회차 서브노트 — 머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절 15회차 · 머리·목·다리 서브노트 15회차 코중격 반달틈새 나비굴 목구멍편도 혀신경 고실끈신경 인두수축근 후두 성대주름 엉덩관절 십자인대 반달 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 머리의 길은 벽과 주름으로 칸이 나뉜다. 코안 가쪽벽은 코선반 셋이 콧길을 나누고, 인두는 물렁입천장·후두덮개가 세 부분으로, 후두는 ==안뜰주름==·==성대주름== 두 쌍이 세 칸으로 나눈다. 2. 신경은 「예외」를 외운다. 혀 근육은 혀밑신경(예외 입천장혀근), 인두·입천장근은 미주신경(예외 붓인두근·입천장긴장근), 후두근은 아래후두신경(예외 ==반지방패근==). 3. 다리 관절은 인대가 붙잡는다. 엉덩관절은 깊은 절구 + ==엉덩넙다리인대==, 무릎은 얕은 관절면을 ==십자인대== 두 개와 곁인대 두 개, 반달 두 개가 보완한다. 1. 코중격 Nasal septum !fig docs/assets/anatomy/tree s15 bundle labeled.svg 통로와 칸 — 콧길에 열리는 것 · 인두 세 부분 · 후두 칸 · 엉덩관절·무릎 인대 구조 원어 포인트 ==벌집뼈수직판== perpendicular plate of ethmoid 중격의 위뒤 뼈 부분 · 위로 체판 ==보습뼈== vomer 중격의 아래뒤 — 뒤콧구멍 사이 ==코중격연골== septal nasal cartilage 앞 부분 — 바깥 코를 받친다 위턱뼈·입천장뼈 코능선 nasal crest 중격 바닥이 얹히는 능선 ==후각신경섬유== olfactory nerve fibers 중격 위쪽 점막 → 체판 구멍 ==앞니관== incisive canal 코안 바닥 → 입천장 앞 — 코입천장신경·큰입천장동맥 ==나비굴== · 나비굴구멍 sphenoidal sinus / aperture 중격 뒤위 — 바로 위가 뇌하수체오목 [!임상] 코피의 자리 :: 코피의 대부분은 중격 앞아래 ==Kiesselbach 부위==(나비입천장 · 앞벌집 · 큰입천장 · 윗입술동맥 문합)에서 난다. 누르면 멎는다. 뒤 코피는 ==나비입천장동맥== — 뒤코패킹이나 결찰. 2. 코안 가쪽벽 Lateral wall of the nasal cavity 콧길 · 오목 원어 열리는 것 ==나비벌집오목== sphenoethmoidal recess 위코선반 위뒤 — ==나비굴구멍== 위콧길 superior meatus 뒤벌집벌집 ==중간콧길== — ==반달틈새== middle meatus — semilunar hiatus 이마굴(이마코관) · ==위턱굴== · 앞벌집벌집 ==아래콧길== inferior meatus ==코눈물관== 반달틈새는 위의 ==벌집뼈융기==(가운데벌집벌집이 부푼 것)와 아래의 ==갈고리돌기== 사이 반달 모양 틈이다. 코선반을 들어 내야 콧길 안쪽의 구멍이 보인다 — 시상절단 실습의 순서. 콧길은 뒤에서 모두 ==뒤콧구멍==으로 코인두와 이어진다. 맨위코선반은 있는 사람만 있다. [!주의] 위턱굴 구멍은 높다 :: 위턱굴 구멍은 굴의 천장 가까이 에 있어 서 있을 때 고름이 잘 안 빠진다 — 누워 반대쪽으로 돌아야 빠진다. 그래서 부비동염이 가장 흔한 굴이다. 3. 입천장과 목구멍편도 Palate & palatine tonsil 구조 원어 포인트 ==입천장널힘줄== palatine aponeurosis 물렁입천장의 뼈대 — 입천장긴장근 힘줄이 퍼진 것 입천장샘 palatine glands 점막 밑 — 물렁입천장이 두꺼운 이유 ==입천장혀활== palatoglossal arch 앞 기둥 — 속에 입천장혀근 · 입안과 입인두의 경계 ==입천장인두활== palatopharyngeal arch 뒤 기둥 — 속에 입천장인두근 ==목구멍편도== palatine tonsil 두 활 사이 편도오목 · 바닥 = 위인두수축근 편도오목 바닥(편도 바깥)은 ==위인두수축근== → ==인두결절근막==, 그 바깥에 ==혀인두신경==과 ==붓혀근==이 지난다. [!임상] 편도절제술 :: 편도 뒤 출혈은 동맥보다 ==편도바깥정맥==이 흔하고, 편도오목 바닥을 깊이 파면 그 바깥의 ==혀인두신경==이 다쳐 혀 뒤 1/3 맛·감각 소실이 온다. 4. 혀의 신경 Nerves of the tongue !fig docs/assets/anatomy/tree s15 nerve labeled.svg 고실·혀·인두·후두의 신경 신경 원어 맡는 것 ==혀신경== lingual n. (V3) 혀 앞 2/3 일반감각 · ==셋째큰어금니== 안쪽 잇몸 바로 밑을 지난다 ==고실끈신경== (혀신경에 실려) chorda tympani (VII) 혀 앞 2/3 맛 + 턱밑·혀밑샘 부교감 ==턱밑신경절== submandibular ganglion 혀신경에 매달린 부교감 신경절 ==혀밑신경== hypoglossal n. (XII) 혀 근육 전부 — 예외 입천장혀근(X) 혀인두신경 glossopharyngeal n. (IX) 혀 뒤 1/3 일반감각 + 맛 혀신경은 턱밑샘관을 가쪽 → 밑 → 안쪽 으로 감아 돈다(관 밑을 지난다). 혀밑신경은 목뿔혀근 바깥면 , 혀신경보다 아래 를 지난다. [!기출] 사랑니 뽑고 혀가 저리다 :: 셋째큰어금니를 뽑을 때 바로 안쪽의 ==혀신경==이 다치면 같은 쪽 혀 앞 2/3의 감각과 맛(고실끈신경이 실려 있으므로)이 함께 떨어진다. [!TIP] 혀를 내밀면 :: ==혀밑신경== 마비 쪽으로 혀끝이 쏠린다 — 반대쪽 턱끝혀근이 밀기 때문이다. 5. 가운데귀 Middle ear (tympanic cavity) 구조 원어 포인트 ==고유고실== tympanic cavity proper 고막 바로 안쪽 ==고실위오목== epitympanic recess 고막보다 위 — 망치뼈머리·모루뼈몸통이 들어 있다 ==꼭지방어귀== aditus to mastoid antrum 뒤벽 위 — 꼭지굴로 이어진다(중이염 → 꼭지돌기염) ==망치뼈== · ==모루뼈== · ==등자뼈== malleus · incus · stapes 고막 → 등자뼈 바닥이 ==안뜰창==(타원창)에 ==고실끈신경== chorda tympani 고막 안쪽면을 가로질러 망치뼈와 모루뼈 사이 를 지난다 ==무릎신경절== geniculate ganglion 안쪽벽 위 — 여기서 ==큰바위신경==이 나간다 고실의 벽: 위 = 고실덮개(가운데머리뼈우묵) · 아래 = 속목정맥 · 앞 = 속목동맥·귀관 · 뒤 = 꼭지방어귀 · 안쪽 = 곶·안뜰창·얼굴신경관 · 가쪽 = 고막. [!임상] 얼굴신경 손상 높이 맞히기 :: 무릎신경절 위 에서 다치면 눈물(큰바위신경)까지 줄고, 등자근신경 위면 소리 과민 , 고실끈신경 위면 혀 앞 맛 소실 이 더해진다. 붓꼭지구멍 밖(Bell 마비 일부)은 얼굴근만 마비된다. 6. 인두의 벽과 근육 Pharyngeal wall & muscles = 바깥 → 안: ==볼인두근막== → 근육층(바깥 돌림층 = 수축근 셋 · 안 세로층 = 붓·입천장·귀관인두근) → ==인두결절근막== → 점막 근육 원어 이는곳 닿는곳 신경 ==위인두수축근== superior constrictor ==날개갈고리== · ==날개아래턱솔기== · 아래턱 인두솔기 · 인두결절 X(인두신경얼기) ==중간인두수축근== middle constrictor 붓목뿔인대 · 목뿔뼈 뿔 인두솔기 X ==아래인두수축근== inferior constrictor 방패연골 · 반지연골 인두솔기 X(+ 바깥·되돌이후두신경) ==붓인두근== stylopharyngeus 붓돌기 인두벽 · 방패연골 IX — 유일 입천장인두근 palatopharyngeus 입천장널힘줄 인두벽 · 방패연골 X ==귀관인두근== salpingopharyngeus 귀관연골 인두벽 X ==날개아래턱솔기==는 위인두수축근과 볼근 이 만나는 솔기 — 입안에서 아래이틀신경 차단의 표지. 수축근 사이 틈: 위 것 위 = 귀관·입천장올림근 · 위–중간 사이 = 붓인두근 · 혀인두신경 · 중간–아래 사이 = 속후두신경 · 위후두동맥 (방패목뿔막) · 아래 것 아래 = 되돌이후두신경 . 인두결절근막은 위인두수축근 위 에서 근육 없이 머리뼈 바닥까지 막벽으로 남는다. [!암기] 수축근 틈 네 칸 :: 위에서부터 「귀관 · 붓인두(IX) · 속후두 · 되돌이」 — 틈마다 무엇이 들어가는지가 태깅 관계형 단골이다. 7. 인두의 신경과 구분 Pharyngeal nerves & parts 부분 원어 경계 · 구조 ==코인두== nasopharynx 물렁입천장 위 — ==귀관인두구멍== · 귀관융기 · 인두편도 ==입인두== oropharynx 물렁입천장 ~ 후두덮개 — ==목구멍편도== · ==목젖== · 혀 뒤 1/3 ==후두인두== laryngopharynx 후두덮개 아래 — ==후두어귀== · ==모뿔후두덮개주름== · ==조롱박오목== 신경 원어 하는 일 ==인두신경얼기== pharyngeal plexus 중간인두수축근 바깥면 — IX(감각) + X(운동) + 교감 혀인두신경 glossopharyngeal n. 인두 감각 — 구역반사 들신경 · 붓인두근 ==미주신경== vagus n. 인두근 운동 — 구역반사 날신경 ==위후두신경== superior laryngeal n. 속(감각)·바깥(반지방패근) 가지 더부신경 · 혀밑신경 accessory / hypoglossal n. 인두 뒤·옆을 지나는 이웃 신경 [!임상] 조롱박오목의 생선가시 :: 삼킨 이물은 ==조롱박오목==에 잘 걸리고, 바로 점막 밑의 ==속후두신경==이 다치면 성대주름 위 감각이 사라져 기침반사 가 약해진다. 8. 후두의 근육 Laryngeal muscles 근육 원어 작용 신경 ==반지방패근== cricothyroid 방패연골을 앞으로 숙여 성대를 당긴다 (높은 소리) — 유일한 바깥 근육 ==바깥후두신경== ==뒤반지모뿔근== posterior cricoarytenoid 모뿔연골 근육돌기를 뒤로 — 성대 벌림 (유일) ==아래후두신경== 가쪽반지모뿔근 lateral cricoarytenoid 성대 모음 아래후두신경 ==가로모뿔근== · ==빗모뿔근== transverse / oblique arytenoid 모뿔연골끼리 당겨 성대 뒤쪽을 닫는다 · 빗은 X자 아래후두신경 ==모뿔후두덮개근== aryepiglottic 빗모뿔근의 연장 — 후두어귀를 좁힌다 아래후두신경 ==방패모뿔근== → ==성대근== thyroarytenoid / vocalis 성대를 느슨하게 · 성대근은 성대인대 곁 미세 조절 아래후두신경 [!기출] 갑상샘 수술의 두 신경 :: 위갑상동맥 곁 ==바깥후두신경== 손상 = 높은 소리를 못 낸다(반지방패근). 아래갑상동맥 곁 ==되돌이후두신경== 손상 = 쉰 목소리, 양쪽 이면 뒤반지모뿔근 마비로 성대가 가운데 붙어 숨이 막힌다 . 9. 후두 안 Laryngeal cavity 구조 원어 포인트 ==방패목뿔막== thyrohyoid membrane ==속후두신경== · ==위후두동맥==이 함께 뚫는다 ==가쪽방패목뿔인대== · ==밀알연골== lateral thyrohyoid lig. / triticeal cartilage 막의 뒤 모서리 — 그 속의 작은 연골 ==반지방패인대== cricothyroid lig. (median) 반지·방패연골 사이 — 응급 기도 확보(반지방패막 절개) 자리 ==탄력원뿔== conus elasticus 반지연골에서 위로 — 위 모서리가 ==성대인대== ==후두안뜰== laryngeal vestibule 후두어귀 ~ 안뜰주름 ==안뜰주름== vestibular fold 가성대 — 성대주름보다 위·가쪽 ==후두실== laryngeal ventricle 두 주름 사이 옆 주머니 ==성대주름== · ==성대틈새== vocal fold / rima glottidis 후두에서 가장 좁은 틈 ==성대문아래공간== infraglottic cavity 성대주름 아래 → 기관 [!TIP] 후두경으로 보면 :: 위에서 내려다보면 흰 성대주름 이 안쪽, 붉은 안뜰주름 이 그 위·가쪽, 둘 사이 어두운 틈이 후두실이다. 앞쪽이 ==앞교차==(앞맞교차), 뒤쪽이 모뿔연골이다(응용과제 — 후두경 영상 비교). 10. 엉덩관절 Hip joint !fig docs/assets/anatomy/tree s15 vessel labeled.svg 코·편도·후두의 혈관과 다리 관절의 동맥 구조 원어 포인트 ==엉덩넙다리인대== iliofemoral lig. Y인대 · 앞 · 몸에서 가장 강하다 — 폄을 막는다 ==두덩넙다리인대== pubofemoral lig. 앞아래 — 벌림을 막는다 ==궁둥넙다리인대== ischiofemoral lig. 뒤 — 안쪽돌림을 막는다 ==절구테두리== acetabular labrum 섬유연골 — 절구를 깊게 ==절구가로인대== transverse acetabular lig. 절구패임을 다리처럼 덮는다 — 밑으로 혈관이 들어간다 ==폐쇄관== · ==폐쇄막== obturator canal / membrane 막 위 틈으로 폐쇄신경·==폐쇄동맥== ==바깥폐쇄근== obturator externus 막 바깥면 → 돌기오목 · 가쪽돌림 · 폐쇄신경 ==큰허리근주머니== psoas bursa 엉덩넙다리인대·두덩넙다리인대 사이 — 관절안과 통하기도 한다 [!임상] 넙다리뼈 목 골절 :: 머리의 피는 ==안쪽넙다리휘돌이동맥==의 고리지지띠 가지가 목을 따라 올라온다. 목이 부러지면 이 가지가 끊겨 머리가 무혈괴사 한다. 넙다리뼈머리인대동맥(폐쇄동맥)은 어른에서 거의 기여하지 못한다. 11. 무릎관절 Knee joint — 응용과제: 십자인대 손상 확인법 구조 원어 포인트 ==앞십자인대== anterior cruciate lig. 정강뼈 앞 융기사이 → 넙다리 가쪽관절융기 안쪽면 — 정강뼈의 앞 밀림을 막는다 ==뒤십자인대== posterior cruciate lig. 정강뼈 뒤 → 넙다리 안쪽관절융기 가쪽면 — 더 굵다 · 뒤 밀림을 막는다 ==안쪽곁인대== tibial collateral lig. 넓은 띠 · 깊은 부분이 ==안쪽반달==과 붙는다 — 밖굽이 힘을 막는다 ==가쪽곁인대== fibular collateral lig. 둥근 끈 → 종아리뼈머리 · 반달과 떨어진다 — 안굽이 힘을 막는다 ==반달== (안쪽 C · 가쪽 O) menisci 안쪽은 크고 C자 · 가쪽은 작고 O자 · 앞쪽을 ==무릎가로인대==가 잇는다 ==빗오금인대== oblique popliteal lig. 반막근 힘줄의 연장 — 뒤 주머니 보강 · ==가운데무릎동맥==이 뚫는다 ==활꼴오금인대== arcuate popliteal lig. 종아리뼈머리에서 — 오금근 위로 활 ==무릎위주머니== suprapatellar bursa 넙다리네갈래근 밑 — 관절안과 통한다 안쪽·==가쪽무릎지지띠== medial / lateral patellar retinacula 넓은근 널힘줄 — 무릎뼈 양옆 [!기출] 불행 삼징(unhappy triad) :: 무릎 가쪽 에서 치이면(밖굽이 + 돌림) ==안쪽곁인대== → 붙어 있는 ==안쪽반달== → ==앞십자인대== 순으로 찢긴다. [!임상] 십자인대 검사 :: 무릎 90° 굽혀 정강뼈를 앞으로 당겨 밀리면 앞십자인대(앞당김검사), 20–30°에서 하면 Lachman (더 예민). 뒤로 밀리거나 굽혀 둔 정강뼈가 처지면(뒤처짐 징후) 뒤십자인대 — 계기판 손상(dashboard injury)에서 다친다. 12. 응용과제 정리 1) 뇌하수체 접근법 — 경나비굴 경로 = 콧구멍 → 코중격(점막 아래 또는 옆) → ==나비벌집오목== → ==나비굴구멍== → ==나비굴== → 안장바닥 → 뇌하수체오목 나비굴 가쪽벽 바로 바깥에 해면정맥굴 (속목동맥 · 갓돌림신경)과 시신경이 있어 가쪽으로 벗어나면 위험하다. 시상절단에서 나비굴과 뇌하수체오목이 얇은 뼈 하나 사이임을 직접 확인한다. 2) 후두경 영상 비교 숨 쉴 때 = ==뒤반지모뿔근==이 성대를 벌려 세모난 ==성대틈새== / 소리 낼 때 = 가쪽반지모뿔근·모뿔근이 닫아 한 줄. 한쪽 되돌이후두신경 마비 = 그쪽 성대가 가운데 근처에 멈춘다(쉰 목소리). 3) 십자인대 손상 확인법 — §11 [임상] 참조 13. 근육표 종합 (15회차) 근육 원어 이는곳 닿는곳 작용 신경 입천장혀근 palatoglossus 입천장널힘줄 혀 가쪽 혀뿌리 올림 · 입인두 좁힘 X (혀근 중 유일) 입천장인두근 palatopharyngeus 입천장널힘줄 인두벽 · 방패연골 삼킬 때 인두·후두 올림 X 입천장긴장근 tensor veli palatini 나비뼈 · 귀관연골 날개갈고리 돌아 널힘줄 물렁입천장 긴장 · 귀관 열기 V3 붓혀근 styloglossus 붓돌기 혀 가쪽 혀 당겨 올림 XII 위인두수축근 superior constrictor 날개갈고리 · 날개아래턱솔기 인두솔기 삼킴 X 붓인두근 stylopharyngeus 붓돌기 인두벽 · 방패연골 인두·후두 올림 IX 반지방패근 cricothyroid 반지연골 앞 방패연골 아래모서리 성대 긴장 바깥후두신경 뒤반지모뿔근 post. cricoarytenoid 반지연골판 뒤 모뿔연골 근육돌기 성대 벌림 아래후두신경 방패모뿔근(성대근) thyroarytenoid (vocalis) 방패연골 안쪽 모뿔연골 성대 이완 아래후두신경 바깥폐쇄근 obturator externus 폐쇄막 바깥면 돌기오목 넙다리 가쪽돌림 폐쇄신경 [!암기] 이 회차의 신경 칸은 「예외」만 :: 혀 = XII(예외 입천장혀근 X) · 인두·입천장 = X(예외 붓인두근 IX · 입천장긴장근 V3) · 후두 = 아래후두(예외 반지방패근 = 바깥후두). 14. 예습시험 체크리스트 10 (수업당 10문제 대비) 1. 코중격을 이루는 뼈 둘 + 연골 하나 와 Kiesselbach 부위 2. 콧길·오목마다 열리는 굴과 관 (반달틈새 · 나비벌집오목 · 아래콧길) 3. 입천장혀활·입천장인두활과 그 속 근육, 편도오목 바닥 바깥의 신경 4. 혀의 신경 넷 (혀 · 고실끈 · 혀밑 · 혀인두)과 셋째큰어금니·턱밑신경절 5. 고실의 칸(고유고실 · 고실위오목 · 꼭지방어귀)과 귓속뼈 셋, 고실끈신경 주행 6. 인두벽 층과 수축근 셋 , 수축근 틈마다 지나는 것 7. 인두의 세 부분 과 경계 구조(귀관인두구멍 · 목구멍편도 · 조롱박오목) 8. 후두근의 신경 — 반지방패근만 바깥후두 , 벌림근은 뒤반지모뿔근 뿐 9. 후두 안의 세 칸 (안뜰 · 후두실 · 성대문아래)과 방패목뿔막을 뚫는 것 10. 엉덩관절 인대 셋(Y인대) · 무릎 십자인대 붙는 곳과 검사 · 불행 삼징"
   },
   {
    "id": "kmle-2026-1312",
@@ -36873,6 +37158,384 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0760",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 무릎의 동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0760.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 무릎의 동맥) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0759",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 엉덩관절의 동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0759.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 엉덩관절의 동맥) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0758",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 후두의 혈관)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0758.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 후두의 혈관) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0757",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 입천장·편도의 혈관)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0757.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 입천장·편도의 혈관) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0756",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 코안의 동맥)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0756.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 코안의 동맥) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0755",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0755.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로.",
+   "text": "Anatomy 코·편도·후두의 혈관과 다리 관절의 동맥 — 계보 퀴즈판 (15회차 혈관 계보(동맥+정맥) · 종합) 15회차 · 머리·목·다리 계보 도해 15회차 혈관 계보(동맥+정맥) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코중격 시상면 · §목구멍편도 · §후두절단면 · §엉덩관절 속구조 · §무릎관절 뒷면 + SESSION_DETAILS 응용과제(뇌하수체 접근법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0754",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 엉덩관절의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0754.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 엉덩관절의 신경) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0753",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 후두의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0753.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 후두의 신경) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0752",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 인두신경얼기)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0752.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 인두신경얼기) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0751",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 혀의 신경)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0751.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 혀의 신경) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0750",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 얼굴신경 — 고실 부분)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0750.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 얼굴신경 — 고실 부분) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0749",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0749.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로.",
+   "text": "Anatomy 고실·혀·인두·후두의 신경 — 계보 퀴즈판 (15회차 신경 계보 · 종합) 15회차 · 머리·목·다리 계보 도해 15회차 신경 계보 예습시험 태깅 15회차 실습주제(머리 시상절단·입안·후두 / 인두·후두 / 다리의 관절) + 인제스트 섹션 a2-s15 §고실열기 · §고실 · §혀의신경1·2 · §목구멍편도 · §인두의 신경 · §후두바깥·후두속 자체기원근육 · §후두절단면 · §엉덩관절 속구조 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0748",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 무릎의 인대)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0748.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 무릎의 인대) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0747",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 엉덩관절의 인대)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0747.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 엉덩관절의 인대) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0746",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 후두안의 칸)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0746.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 후두안의 칸) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0745",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 인두의 세 부분)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0745.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 인두의 세 부분) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0744",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 코안 가쪽벽에 열리는 것)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0744.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 코안 가쪽벽에 열리는 것) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0743",
+   "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 종합)",
+   "tags": [
+    "계보",
+    "도해",
+    "15회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0743.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로.",
+   "text": "Anatomy 통로와 칸 — 머리의 길과 다리 관절 — 계보 퀴즈판 (15회차 함께 지나는 것(신경혈관다발) · 종합) 15회차 · 머리·목·다리 계보 도해 15회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s15 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s15 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0724",

@@ -2,9 +2,81 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-10-06",
- "count": 116,
- "groups": 60,
+ "count": 122,
+ "groups": 63,
  "items": [
+  {
+   "file": "tree-s15-vessel-labeled.svg",
+   "base": "tree-s15-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "코·편도·후두의 혈관과 다리 관절의 동맥",
+   "date": "2026-10-06",
+   "bytes": 12476
+  },
+  {
+   "file": "tree-s15-vessel-quiz.svg",
+   "base": "tree-s15-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "코·편도·후두의 혈관과 다리 관절의 동맥",
+   "date": "2026-10-06",
+   "bytes": 9652
+  },
+  {
+   "file": "tree-s15-nerve-labeled.svg",
+   "base": "tree-s15-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "고실·혀·인두·후두의 신경",
+   "date": "2026-10-06",
+   "bytes": 15294
+  },
+  {
+   "file": "tree-s15-nerve-quiz.svg",
+   "base": "tree-s15-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "고실·혀·인두·후두의 신경",
+   "date": "2026-10-06",
+   "bytes": 11588
+  },
+  {
+   "file": "tree-s15-bundle-labeled.svg",
+   "base": "tree-s15-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "통로와 칸",
+   "date": "2026-10-06",
+   "bytes": 15483
+  },
+  {
+   "file": "tree-s15-bundle-quiz.svg",
+   "base": "tree-s15-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 15,
+   "unit": "15회차 · 머리·목·다리",
+   "title": "통로와 칸",
+   "date": "2026-10-06",
+   "bytes": 11693
+  },
   {
    "file": "tree-s14-vessel-labeled.svg",
    "base": "tree-s14-vessel",
