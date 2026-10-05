@@ -2,6 +2,1594 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0241",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "산과 — 만삭 태반의 조직 절편과 혈류",
+  "type": "산과 — 만삭 태반의 조직 절편과 혈류",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-05",
+  "vignette": "A 39-year-old woman, gravida 2, para 2, delivers a healthy newborn vaginally at term after an uncomplicated pregnancy. She had no hypertension or diabetes, and the prenatal ultrasonographic examinations were normal. The placenta is delivered intact with a three-vessel umbilical cord and is sent for histologic examination as part of a teaching study. A photomicrograph of a section of the placenta stained by immunohistochemistry is shown. The tissue fragments in the section are separated by clear spaces that contain a few scattered red blood cells.",
+  "question": "In the living placenta, the blood within these spaces is delivered directly by which of the following vessels?",
+  "options": [
+   "Maternal spiral arteries",
+   "Umbilical arteries",
+   "Umbilical vein",
+   "Fetal capillaries within the villi",
+   "Maternal uterine veins"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The section shows many small chorionic villi — rounded fragments covered by a trophoblast layer, with fetal capillaries in a loose stroma — floating in clear spaces. Those clear spaces are the intervillous space. The human placenta is hemochorial: maternal blood leaves the remodeled spiral arteries and pours directly into the intervillous space, bathing the trophoblast. Fetal blood never enters this space; it stays inside the villous capillaries.\n- 원리: <b>Two circulations that never mix</b>: fetal blood reaches the placenta through the two umbilical arteries, branches into the stem villi, and runs through capillaries inside the terminal villi. Exchange occurs across the thin villous wall — syncytiotrophoblast, a little stroma, and fetal endothelium. Oxygenated fetal blood returns through the single umbilical vein.<br> <b>Maternal side</b>: in early pregnancy, extravillous trophoblast invades the decidua and replaces the muscle of about 100 spiral arteries, turning them into wide, low-resistance funnels. Maternal blood spurts from these openings into the intervillous space, flows around the villi, and drains back through endometrial (uterine) veins. Because maternal blood touches the chorionic trophoblast directly, the placenta is called hemochorial.<br> <b>Clinical link</b>: failure of spiral artery remodeling leaves narrow, high-resistance vessels and underperfuses the intervillous space — the root of preeclampsia and fetal growth restriction.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Maternal spiral arteries (answer)</th><th>Umbilical arteries (closest rival)</th></tr></thead><tbody> <tr><td>Whose blood</td><td>Mother's, oxygenated</td><td>Fetus's, deoxygenated</td></tr> <tr><td>Where it goes</td><td><b>Into the intervillous space</b> around the villi</td><td>Into capillaries inside the villi</td></tr> <tr><td>In this section</td><td>Clear spaces between villi</td><td>Small vessels within the villous stroma</td></tr> </tbody></table> \"Arteries\" alone does not decide it: the umbilical arteries are arteries too, but their blood stays inside the villi. The space outside the villi belongs to the mother.\n- 오답 이유:\n  - (B) The umbilical arteries carry deoxygenated fetal blood to the placenta, but it runs inside the villous capillaries. They would be the answer if the question asked about the vessels within the villous stroma.\n  - (C) The umbilical vein returns oxygenated blood from the villous capillaries to the fetus. It would be correct if asked which vessel carries the most highly oxygenated blood in the fetal circulation.\n  - (D) Fetal capillaries lie inside the villi, separated from maternal blood by the villous membrane. They would be the answer if the question asked where fetal blood takes up oxygen.\n  - (E) Maternal uterine veins drain blood out of the intervillous space after it has passed around the villi. They would be correct if the question asked how blood leaves the space rather than enters it.\n- 함정: Choosing the umbilical arteries because they are the arteries that reach the placenta — their blood stays inside the villi, not in the spaces between them.\n- 학습목표: 태반 조직 절편에서 융모와 융모사이공간을 구별하고, 융모사이공간의 혈액이 모체 나선동맥에서 직접 들어옴(혈액융모태반)을 안다\n- 근거·출처: Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 5 Implantation and placental development (intervillous space, spiral artery remodeling) · Moore KL, Persaud TVN, Torchia MG. The Developing Human, 11th ed. Ch. 7 Placenta and fetal membranes (placental circulation) · 작성자 판독(2026-10-06): 말단 융모 단면 — 융모 표면 영양막층과 융모 안 태아 모세혈관, 융모 사이의 빈 공간에 적혈구 몇 개\n\n## 출처\n- Human Protein Atlas, PSG1 / Placenta (CC BY 4.0), https://images.proteinatlas.org/46327/114450_A_3_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The section shows many small chorionic villi — rounded fragments covered by a trophoblast layer, with fetal capillaries in a loose stroma — floating in clear spaces. Those clear spaces are the intervillous space. The human placenta is hemochorial: maternal blood leaves the remodeled spiral arteries and pours directly into the intervillous space, bathing the trophoblast. Fetal blood never enters this space; it stays inside the villous capillaries."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two circulations that never mix</b>: fetal blood reaches the placenta through the two umbilical arteries, branches into the stem villi, and runs through capillaries inside the terminal villi. Exchange occurs across the thin villous wall — syncytiotrophoblast, a little stroma, and fetal endothelium. Oxygenated fetal blood returns through the single umbilical vein.<br> <b>Maternal side</b>: in early pregnancy, extravillous trophoblast invades the decidua and replaces the muscle of about 100 spiral arteries, turning them into wide, low-resistance funnels. Maternal blood spurts from these openings into the intervillous space, flows around the villi, and drains back through endometrial (uterine) veins. Because maternal blood touches the chorionic trophoblast directly, the placenta is called hemochorial.<br> <b>Clinical link</b>: failure of spiral artery remodeling leaves narrow, high-resistance vessels and underperfuses the intervillous space — the root of preeclampsia and fetal growth restriction."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Maternal spiral arteries (answer)</th><th>Umbilical arteries (closest rival)</th></tr></thead><tbody> <tr><td>Whose blood</td><td>Mother's, oxygenated</td><td>Fetus's, deoxygenated</td></tr> <tr><td>Where it goes</td><td><b>Into the intervillous space</b> around the villi</td><td>Into capillaries inside the villi</td></tr> <tr><td>In this section</td><td>Clear spaces between villi</td><td>Small vessels within the villous stroma</td></tr> </tbody></table> \"Arteries\" alone does not decide it: the umbilical arteries are arteries too, but their blood stays inside the villi. The space outside the villi belongs to the mother."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) The umbilical arteries carry deoxygenated fetal blood to the placenta, but it runs inside the villous capillaries. They would be the answer if the question asked about the vessels within the villous stroma.\n(C) The umbilical vein returns oxygenated blood from the villous capillaries to the fetus. It would be correct if asked which vessel carries the most highly oxygenated blood in the fetal circulation.\n(D) Fetal capillaries lie inside the villi, separated from maternal blood by the villous membrane. They would be the answer if the question asked where fetal blood takes up oxygen.\n(E) Maternal uterine veins drain blood out of the intervillous space after it has passed around the villi. They would be correct if the question asked how blood leaves the space rather than enters it."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the umbilical arteries because they are the arteries that reach the placenta — their blood stays inside the villi, not in the spaces between them."
+   },
+   {
+    "k": "학습목표",
+    "v": "태반 조직 절편에서 융모와 융모사이공간을 구별하고, 융모사이공간의 혈액이 모체 나선동맥에서 직접 들어옴(혈액융모태반)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 5 Implantation and placental development (intervillous space, spiral artery remodeling) · Moore KL, Persaud TVN, Torchia MG. The Developing Human, 11th ed. Ch. 7 Placenta and fetal membranes (placental circulation) · 작성자 판독(2026-10-06): 말단 융모 단면 — 융모 표면 영양막층과 융모 안 태아 모세혈관, 융모 사이의 빈 공간에 적혈구 몇 개 ## 출처 Human Protein Atlas, PSG1 / Placenta (CC BY 4.0), https://images.proteinatlas.org/46327/114450_A_3_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "절편의 둥근 조직 조각은 융모이고 그 사이 빈 공간은 융모사이공간이므로, 그 혈액은 모체 나선동맥에서 직접 들어온다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "제대동맥의 태아 혈액은 융모 안 모세혈관에만 흐르고, 융모 밖 공간은 모체 혈액이 채운다",
+   "steps": 2,
+   "chain": [
+    "영상: 영양막으로 덮인 둥근 조각 안에 모세혈관 → 융모, 그 사이 빈 공간 → 융모사이공간",
+    "혈액융모태반 → 융모사이공간은 모체 나선동맥이 직접 채운다"
+   ],
+   "key": [
+    {
+     "item": "영상: 영양막으로 덮이고 안에 모세혈관이 있는 작은 둥근 조각들",
+     "why": "말단 융모 — 빈 공간이 융모 밖임을 알려 준다",
+     "also": []
+    },
+    {
+     "item": "separated by clear spaces that contain a few scattered red blood cells",
+     "why": "융모사이공간 — 살아 있을 때 모체 혈액이 차 있던 곳",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "three-vessel umbilical cord",
+     "why": "제대혈관 이상이 없다는 정보일 뿐 융모사이공간의 혈류와는 무관하다",
+     "also": []
+    },
+    {
+     "item": "She had no hypertension or diabetes",
+     "why": "나선동맥 재형성 실패(전자간증)의 단서가 없는 정상 태반",
+     "also": []
+    }
+   ],
+   "summary": "둥근 조직 조각은 태아 모세혈관을 품은 융모이고, 그 사이 빈 공간이 융모사이공간이다. 사람 태반은 혈액융모태반이라 이 공간은 모체 나선동맥의 혈액이 직접 채운다.",
+   "switch": {
+    "choice": "D",
+    "condition": "융모 조각 안쪽의 작은 혈관 속 혈액을 물었다면 태아 모세혈관이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0241.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000231924-PSG1/tissue/Placenta",
+   "asset_id": "HPA-PSG1_114450_A_3_7",
+   "text": "Human Protein Atlas, PSG1 / Placenta (CC BY 4.0), https://images.proteinatlas.org/46327/114450_A_3_7.jpg"
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0240",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "응급·중환자·외상 — 감시 중 무맥 심정지의 첫 처치",
+  "type": "응급·중환자·외상 — 감시 중 무맥 심정지의 첫 처치",
+  "modality": "ECG",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-05",
+  "vignette": "71세 남자가 반복되는 가슴 불편감으로 입원해 심전도 감시를 받던 중 갑자기 의식을 잃었다. 심방세동으로 전극도자 절제술을 받은 적이 있고 만성폐쇄폐질환이 있다. 의료진이 바로 도착했을 때 반응이 없고 정상 호흡이 없으며 경동맥 맥박이 만져지지 않아 가슴압박을 시작하였다. 정맥로는 이미 확보되어 있다. 수동 제세동기의 패드를 붙이고 가슴압박을 잠시 멈추었을 때 기록된 사지유도 심전도는 그림과 같다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "동기화 심율동전환",
+   "아미오다론 300 mg 정맥 주사",
+   "에피네프린 1 mg 정맥 주사",
+   "경피 심박조율",
+   "비동기 전기충격(제세동)"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 심전도에는 P 파·QRS·T 파를 구별할 수 없고 진폭과 모양이 계속 바뀌는 불규칙한 파동만 있다 — 심실세동이다. 맥박이 없는 심실세동은 제세동 가능 리듬이므로, 가슴압박을 하면서 가능한 한 빨리 비동기 전기충격을 주는 것이 첫 처치다. 에피네프린과 아미오다론은 전기충격 뒤에도 리듬이 지속될 때 쓴다.\n- 원리: <b>왜 전기충격이 먼저인가</b>: 심실세동은 심실 근육이 여러 곳에서 제각각 탈분극하는 상태라 심장이 피를 내보내지 못한다. 충분한 전류를 한꺼번에 흘리면 심근 대부분을 동시에 탈분극시켜 무질서한 회로를 끊고, 굴결절 같은 정상 박동원이 다시 주도할 기회를 준다. 성공률은 쓰러진 뒤 1분이 지날 때마다 약 7~10 % 씩 떨어지므로 약물이나 기도 확보보다 앞선다.<br> <b>왜 「비동기」인가</b>: 동기화 심율동전환은 QRS 의 R 파를 감지해 그 순간에 충격을 준다(T 파 위 취약기에 충격을 주어 심실세동을 일으키지 않으려고). 심실세동에는 감지할 R 파가 없으므로 동기화 모드에서는 충격이 나가지 않거나 늦어진다.<br> <b>약물의 자리</b>: 제세동 가능 리듬에서 에피네프린은 2번째 충격 뒤, 아미오다론(300 mg)은 3번째 충격 뒤에도 리듬이 지속될 때 준다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비동기 제세동(정답)</th><th>동기화 심율동전환(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>무맥 심실세동·무맥 심실빈맥</td><td>맥박이 있는 불안정 빈맥(심방세동, 단형 심실빈맥)</td></tr> <tr><td>충격 시점</td><td>버튼을 누르는 즉시</td><td>R 파를 감지한 순간 — T 파 취약기 회피</td></tr> <tr><td>이 환자</td><td>무맥 + 심실세동 → 즉시</td><td>감지할 R 파가 없어 충격이 지연된다</td></tr> </tbody></table> 맥박이 있으면 동기화, 맥박이 없으면 비동기다. 다형 심실빈맥도 동기화가 어려워 비동기로 준다.\n- 오답 이유:\n  - ① 동기화 심율동전환은 맥박이 있으면서 저혈압·의식 저하가 동반된 단형 심실빈맥이나 심방세동에서 R 파에 맞춰 충격을 주는 방법이다. 맥박이 만져졌다면 정답이 된다.\n  - ② 아미오다론 300 mg 은 제세동 가능 리듬에서 세 번째 충격 뒤에도 심실세동이 지속될 때 준다. 이미 세 차례 전기충격을 했다면 다음 처치로 맞다.\n  - ③ 에피네프린 1 mg 은 무수축·무맥 전기활동에서는 즉시, 심실세동에서는 두 번째 충격 뒤에 준다. 심전도가 평탄한 무수축이었다면 정답이다.\n  - ④ 경피 심박조율은 맥박이 있는 증상성 서맥(완전 방실차단 등)에서 아트로핀이 듣지 않을 때 쓴다. 맥박 30회/분의 완전 방실차단이었다면 고려한다.\n- 함정: 동기화 심율동전환을 고르는 것 — 심실세동에는 감지할 R 파가 없어 충격이 늦어진다.\n- 학습목표: 무맥 환자의 심전도에서 심실세동을 읽고, 제세동 가능 리듬의 첫 처치가 비동기 전기충격임을 안다\n- 근거·출처: Panchal AR, et al. 2020 American Heart Association Guidelines for CPR and ECC, Part 3: Adult basic and advanced life support. Circulation 2020;142:S366-S468 (PMID 33081529) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 306 Cardiovascular collapse, cardiac arrest, and sudden cardiac death · Coronary artery spasm with recurrent ventricular fibrillation: case report (PMC13303025) — 71-year-old man, Figure 3A limb-lead ECG during ventricular fibrillation · 작성자 판독(2026-10-06): 사지·증강 유도(50 mm/s) — P·QRS·T 구별 없이 진폭·모양이 계속 바뀌는 불규칙한 파동, 심실세동\n\n## 출처\n- Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심전도에는 P 파·QRS·T 파를 구별할 수 없고 진폭과 모양이 계속 바뀌는 불규칙한 파동만 있다 — 심실세동이다. 맥박이 없는 심실세동은 제세동 가능 리듬이므로, 가슴압박을 하면서 가능한 한 빨리 비동기 전기충격을 주는 것이 첫 처치다. 에피네프린과 아미오다론은 전기충격 뒤에도 리듬이 지속될 때 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전기충격이 먼저인가</b>: 심실세동은 심실 근육이 여러 곳에서 제각각 탈분극하는 상태라 심장이 피를 내보내지 못한다. 충분한 전류를 한꺼번에 흘리면 심근 대부분을 동시에 탈분극시켜 무질서한 회로를 끊고, 굴결절 같은 정상 박동원이 다시 주도할 기회를 준다. 성공률은 쓰러진 뒤 1분이 지날 때마다 약 7~10 % 씩 떨어지므로 약물이나 기도 확보보다 앞선다.<br> <b>왜 「비동기」인가</b>: 동기화 심율동전환은 QRS 의 R 파를 감지해 그 순간에 충격을 준다(T 파 위 취약기에 충격을 주어 심실세동을 일으키지 않으려고). 심실세동에는 감지할 R 파가 없으므로 동기화 모드에서는 충격이 나가지 않거나 늦어진다.<br> <b>약물의 자리</b>: 제세동 가능 리듬에서 에피네프린은 2번째 충격 뒤, 아미오다론(300 mg)은 3번째 충격 뒤에도 리듬이 지속될 때 준다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비동기 제세동(정답)</th><th>동기화 심율동전환(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>무맥 심실세동·무맥 심실빈맥</td><td>맥박이 있는 불안정 빈맥(심방세동, 단형 심실빈맥)</td></tr> <tr><td>충격 시점</td><td>버튼을 누르는 즉시</td><td>R 파를 감지한 순간 — T 파 취약기 회피</td></tr> <tr><td>이 환자</td><td>무맥 + 심실세동 → 즉시</td><td>감지할 R 파가 없어 충격이 지연된다</td></tr> </tbody></table> 맥박이 있으면 동기화, 맥박이 없으면 비동기다. 다형 심실빈맥도 동기화가 어려워 비동기로 준다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 동기화 심율동전환은 맥박이 있으면서 저혈압·의식 저하가 동반된 단형 심실빈맥이나 심방세동에서 R 파에 맞춰 충격을 주는 방법이다. 맥박이 만져졌다면 정답이 된다.\n② 아미오다론 300 mg 은 제세동 가능 리듬에서 세 번째 충격 뒤에도 심실세동이 지속될 때 준다. 이미 세 차례 전기충격을 했다면 다음 처치로 맞다.\n③ 에피네프린 1 mg 은 무수축·무맥 전기활동에서는 즉시, 심실세동에서는 두 번째 충격 뒤에 준다. 심전도가 평탄한 무수축이었다면 정답이다.\n④ 경피 심박조율은 맥박이 있는 증상성 서맥(완전 방실차단 등)에서 아트로핀이 듣지 않을 때 쓴다. 맥박 30회/분의 완전 방실차단이었다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "동기화 심율동전환을 고르는 것 — 심실세동에는 감지할 R 파가 없어 충격이 늦어진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "무맥 환자의 심전도에서 심실세동을 읽고, 제세동 가능 리듬의 첫 처치가 비동기 전기충격임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Panchal AR, et al. 2020 American Heart Association Guidelines for CPR and ECC, Part 3: Adult basic and advanced life support. Circulation 2020;142:S366-S468 (PMID 33081529) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 306 Cardiovascular collapse, cardiac arrest, and sudden cardiac death · Coronary artery spasm with recurrent ventricular fibrillation: case report (PMC13303025) — 71-year-old man, Figure 3A limb-lead ECG during ventricular fibrillation · 작성자 판독(2026-10-06): 사지·증강 유도(50 mm/s) — P·QRS·T 구별 없이 진폭·모양이 계속 바뀌는 불규칙한 파동, 심실세동 ## 출처 Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "무맥·무호흡 환자의 심전도가 심실세동이므로 제세동 가능 리듬이고, 첫 처치는 비동기 전기충격이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "동기화 심율동전환은 맥박이 있는 빈맥에서 R 파에 맞추는 것인데, 이 환자는 맥박이 없고 심실세동이라 R 파가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: P·QRS·T 구별 없는 불규칙한 파동 + 무맥 → 심실세동(제세동 가능 리듬)",
+    "제세동 가능 리듬 → 가슴압박 중 즉시 비동기 전기충격, 약물은 그 뒤"
+   ],
+   "key": [
+    {
+     "item": "영상: P·QRS·T 를 구별할 수 없고 진폭·모양이 계속 바뀌는 파동",
+     "why": "심실세동의 판독 근거",
+     "also": []
+    },
+    {
+     "item": "경동맥 맥박이 만져지지 않아",
+     "why": "무맥 — 동기화가 아니라 비동기 충격의 대상",
+     "also": []
+    },
+    {
+     "item": "반응이 없고 정상 호흡이 없으며",
+     "why": "심정지 확인",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "정맥로는 이미 확보되어 있다",
+     "why": "약물을 줄 수 있어도 제세동 가능 리듬에서는 전기충격이 먼저다",
+     "also": []
+    },
+    {
+     "item": "만성폐쇄폐질환",
+     "why": "소생술 순서에 영향을 주지 않는다",
+     "also": []
+    },
+    {
+     "item": "반복되는 가슴 불편감",
+     "why": "허혈이 원인일 수 있으나 첫 처치는 리듬이 정한다",
+     "also": []
+    }
+   ],
+   "summary": "무맥 환자의 심전도에서 P·QRS·T 없는 불규칙 파동 — 심실세동이다. 제세동 가능 리듬이므로 가슴압박을 이어 가며 즉시 비동기 전기충격을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "심전도가 평탄한 무수축이었다면 전기충격 대신 에피네프린 1 mg 을 즉시 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0240.png",
+   "caption": "사지·증강 유도 심전도, 50 mm/s · 10 mm/mV — 출판된 증례 그림에서 심전도 패널만 크롭, 패널 문자와 기록 설정값은 원 그림의 것 (PMC Open Access Subset, CC BY — 그 밖의 보정 없음)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13303025/",
+   "asset_id": "PMC-PMC13303025_Figure3_a",
+   "text": "Case Report: Recurrent ventricular fibrillation induced by multivessel coronary artery spasm: a case supporting ICD for secondary prevention. Front Physiol. 2026 Jun 12;17:1808973. doi: 10.3389/fphys.2026.1808973 (CC BY) — Figure 3"
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0239",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "호흡기 — 전신마취 제왕절개 뒤 양측 폐 음영의 원인 감별",
+  "type": "호흡기 — 전신마취 제왕절개 뒤 양측 폐 음영의 원인 감별",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-05",
+  "vignette": "A 27-year-old woman is transferred to the intensive care unit 6 hours after an emergency cesarean delivery performed under general anesthesia. During induction of anesthesia, gastric contents were seen in the oropharynx before the endotracheal tube was placed. Three hours after surgery, she developed severe dyspnea and chest tightness and was reintubated. She received 1 L of crystalloid and no blood products. Temperature is 37.9°C (100.2°F), pulse is 118/min, and blood pressure is 124/76 mm Hg. Crackles are heard over both lung fields. There is no jugular venous distention or peripheral edema. The uterus is firm, and vaginal bleeding is minimal. Platelet count is 228,000/mm3, and plasma fibrinogen concentration is 410 mg/dL. Transthoracic echocardiography shows a left ventricular ejection fraction of 60%. Arterial blood gas analysis during mechanical ventilation with an FiO2 of 1.0 shows a PaO2 of 78 mm Hg. A portable chest x-ray obtained after reintubation is shown.",
+  "question": "Which of the following is the most likely cause of this patient's respiratory failure?",
+  "options": [
+   "Chemical pneumonitis from aspirated gastric contents",
+   "Amniotic fluid embolism",
+   "Peripartum cardiomyopathy",
+   "Transfusion-related acute lung injury",
+   "Acute pulmonary thromboembolism"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The radiograph shows diffuse bilateral airspace opacities, worse at the bases, with an endotracheal tube and central line in place. With a PaO2/FiO2 ratio of 78 within hours of a known aspiration event during induction, this is aspiration (chemical) pneumonitis progressing to severe ARDS — Mendelson syndrome. Normal blood pressure, platelets, and fibrinogen argue against amniotic fluid embolism; a normal ejection fraction and no venous congestion argue against a cardiogenic cause; no blood products were given.\n- 원리: <b>Why gastric acid injures the lung so fast</b>: aspirated gastric juice with pH below about 2.5 burns the airway and alveolar epithelium within minutes. A first phase of direct chemical injury is followed 4–6 hours later by neutrophil influx and cytokine release, which disrupts the alveolar-capillary barrier. Protein-rich fluid floods the alveoli, producing bilateral opacities and shunt physiology — the definition of ARDS (acute onset, bilateral opacities not explained by effusion or collapse, PaO2/FiO2 ≤ 300 not fully explained by heart failure).<br> <b>Why pregnancy raises the risk</b>: progesterone relaxes the lower esophageal sphincter, the gravid uterus raises intragastric pressure, and gastric emptying is slow in labor. This is why regional anesthesia, antacid prophylaxis, and rapid-sequence induction with cricoid pressure are standard for cesarean delivery.<br> <b>Antibiotics</b>: the initial injury is sterile; antibiotics are not routinely required unless the patient had bowel obstruction or fails to improve after 48 hours (secondary bacterial pneumonia).\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Aspiration pneumonitis (answer)</th><th>Amniotic fluid embolism (closest rival)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours after a witnessed aspiration</td><td>During labor, delivery, or within 30 min after</td></tr> <tr><td>Hemodynamics</td><td>Stable (here 124/76 mm Hg)</td><td><b>Abrupt hypotension</b>, often cardiac arrest</td></tr> <tr><td>Coagulation</td><td>Normal (fibrinogen 410 mg/dL)</td><td>DIC — fibrinogen falls, uterine bleeding</td></tr> <tr><td>Lungs</td><td>Bilateral opacities, severe hypoxemia</td><td>Hypoxemia, later bilateral opacities</td></tr> </tbody></table> Both cause hypoxemia with bilateral infiltrates after delivery. Shock and coagulopathy in the first minutes point to embolism; a stable patient with a witnessed aspiration points to chemical pneumonitis.\n- 오답 이유:\n  - (B) Amniotic fluid embolism causes sudden hypoxemia, hypotension, and DIC around delivery. It would be the answer if she had collapsed in the operating room with oozing from the incision and a fibrinogen of 90 mg/dL.\n  - (C) Peripartum cardiomyopathy causes pulmonary edema from left ventricular systolic failure late in pregnancy or months postpartum. It would be correct with an ejection fraction of 30% and raised jugular venous pressure.\n  - (D) Transfusion-related acute lung injury produces noncardiogenic edema within 6 hours of a plasma-containing transfusion. It would be the answer if she had received fresh frozen plasma or red cells for hemorrhage.\n  - (E) Pulmonary embolism causes hypoxemia often with a near-normal chest radiograph. It would be favored by unilateral leg swelling and clear lung fields rather than diffuse bilateral airspace opacities.\n- 함정: Choosing amniotic fluid embolism because the respiratory failure followed delivery — stable blood pressure and normal fibrinogen argue against it.\n- 학습목표: 전신마취 제왕절개 뒤 양측 폐 음영과 심한 저산소혈증을 흡인성 화학 폐렴염(멘델슨 증후군)으로 진단하고 양수색전증·주산기 심근병증과 구별한다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 301 Acute respiratory distress syndrome · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 20 Obstetrical anesthesia (aspiration) and Ch. 41 Obstetrical hemorrhage (amniotic fluid embolism) · Short-term corticosteroid therapy in aspiration pneumonitis complicated by ARDS: a case report. Medicine (Baltimore) 2026;105(8):e47816 (PMC12928926) — 27-year-old woman after cesarean delivery under general anesthesia, PaO2/FiO2 78.4 · 작성자 판독(2026-10-06): 기관삽관 상태의 AP 흉부 X선 — 양측 폐야 전반의 미만성 폐포 음영(아래쪽 우세), 기관내관·중심정맥관\n\n## 출처\n- Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows diffuse bilateral airspace opacities, worse at the bases, with an endotracheal tube and central line in place. With a PaO2/FiO2 ratio of 78 within hours of a known aspiration event during induction, this is aspiration (chemical) pneumonitis progressing to severe ARDS — Mendelson syndrome. Normal blood pressure, platelets, and fibrinogen argue against amniotic fluid embolism; a normal ejection fraction and no venous congestion argue against a cardiogenic cause; no blood products were given."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why gastric acid injures the lung so fast</b>: aspirated gastric juice with pH below about 2.5 burns the airway and alveolar epithelium within minutes. A first phase of direct chemical injury is followed 4–6 hours later by neutrophil influx and cytokine release, which disrupts the alveolar-capillary barrier. Protein-rich fluid floods the alveoli, producing bilateral opacities and shunt physiology — the definition of ARDS (acute onset, bilateral opacities not explained by effusion or collapse, PaO2/FiO2 ≤ 300 not fully explained by heart failure).<br> <b>Why pregnancy raises the risk</b>: progesterone relaxes the lower esophageal sphincter, the gravid uterus raises intragastric pressure, and gastric emptying is slow in labor. This is why regional anesthesia, antacid prophylaxis, and rapid-sequence induction with cricoid pressure are standard for cesarean delivery.<br> <b>Antibiotics</b>: the initial injury is sterile; antibiotics are not routinely required unless the patient had bowel obstruction or fails to improve after 48 hours (secondary bacterial pneumonia)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Aspiration pneumonitis (answer)</th><th>Amniotic fluid embolism (closest rival)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours after a witnessed aspiration</td><td>During labor, delivery, or within 30 min after</td></tr> <tr><td>Hemodynamics</td><td>Stable (here 124/76 mm Hg)</td><td><b>Abrupt hypotension</b>, often cardiac arrest</td></tr> <tr><td>Coagulation</td><td>Normal (fibrinogen 410 mg/dL)</td><td>DIC — fibrinogen falls, uterine bleeding</td></tr> <tr><td>Lungs</td><td>Bilateral opacities, severe hypoxemia</td><td>Hypoxemia, later bilateral opacities</td></tr> </tbody></table> Both cause hypoxemia with bilateral infiltrates after delivery. Shock and coagulopathy in the first minutes point to embolism; a stable patient with a witnessed aspiration points to chemical pneumonitis."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Amniotic fluid embolism causes sudden hypoxemia, hypotension, and DIC around delivery. It would be the answer if she had collapsed in the operating room with oozing from the incision and a fibrinogen of 90 mg/dL.\n(C) Peripartum cardiomyopathy causes pulmonary edema from left ventricular systolic failure late in pregnancy or months postpartum. It would be correct with an ejection fraction of 30% and raised jugular venous pressure.\n(D) Transfusion-related acute lung injury produces noncardiogenic edema within 6 hours of a plasma-containing transfusion. It would be the answer if she had received fresh frozen plasma or red cells for hemorrhage.\n(E) Pulmonary embolism causes hypoxemia often with a near-normal chest radiograph. It would be favored by unilateral leg swelling and clear lung fields rather than diffuse bilateral airspace opacities."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing amniotic fluid embolism because the respiratory failure followed delivery — stable blood pressure and normal fibrinogen argue against it."
+   },
+   {
+    "k": "학습목표",
+    "v": "전신마취 제왕절개 뒤 양측 폐 음영과 심한 저산소혈증을 흡인성 화학 폐렴염(멘델슨 증후군)으로 진단하고 양수색전증·주산기 심근병증과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 301 Acute respiratory distress syndrome · Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 20 Obstetrical anesthesia (aspiration) and Ch. 41 Obstetrical hemorrhage (amniotic fluid embolism) · Short-term corticosteroid therapy in aspiration pneumonitis complicated by ARDS: a case report. Medicine (Baltimore) 2026;105(8):e47816 (PMC12928926) — 27-year-old woman after cesarean delivery under general anesthesia, PaO2/FiO2 78.4 · 작성자 판독(2026-10-06): 기관삽관 상태의 AP 흉부 X선 — 양측 폐야 전반의 미만성 폐포 음영(아래쪽 우세), 기관내관·중심정맥관 ## 출처 Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "마취 유도 때 위 내용물 흡인이 있었고 몇 시간 뒤 양측 폐포 음영과 PaO2/FiO2 78 이 생겼으며 혈역학·응고가 정상이므로 흡인성 화학 폐렴염이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "양수색전증은 분만 직후 급격한 저혈압과 DIC(피브리노겐 저하)를 동반하는데, 이 환자는 혈압과 피브리노겐이 정상이다",
+   "steps": 3,
+   "chain": [
+    "영상: 양측 미만성 폐포 음영 + PaO2/FiO2 78 → 중증 ARDS 양상",
+    "구출률 60 %·경정맥 확장 없음 → 심인성 폐부종 아님",
+    "목격된 흡인 + 정상 혈압·피브리노겐 → 양수색전증보다 흡인성 폐렴염"
+   ],
+   "key": [
+    {
+     "item": "영상: 양측 폐야 전반의 미만성 폐포 음영(아래쪽 우세)",
+     "why": "폐포 침범의 범위 — ARDS 기준의 양측 음영",
+     "also": []
+    },
+    {
+     "item": "gastric contents were seen in the oropharynx",
+     "why": "흡인의 직접 근거",
+     "also": []
+    },
+    {
+     "item": "PaO2 of 78 mm Hg",
+     "why": "FiO2 1.0 에서 — PaO2/FiO2 78 로 중증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "left ventricular ejection fraction of 60%",
+     "why": "주산기 심근병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "plasma fibrinogen concentration is 410 mg/dL",
+     "why": "양수색전증의 DIC 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "blood pressure is 124/76 mm Hg",
+     "why": "양수색전증의 심혈관 허탈이 없다",
+     "also": []
+    },
+    {
+     "item": "no blood products",
+     "why": "수혈관련 급성폐손상의 전제가 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Temperature is 37.9°C",
+     "why": "화학 폐렴염에서도 미열은 흔해 세균 폐렴의 근거가 되지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "마취 유도 때 흡인이 목격되었고 몇 시간 뒤 양측 폐포 음영과 PaO2/FiO2 78 이 생겼다. 혈압·응고·심기능이 정상이므로 흡인성 화학 폐렴염에 의한 ARDS 다.",
+   "switch": {
+    "choice": "B",
+    "condition": "수술 중 갑작스러운 저혈압과 수술 부위 출혈, 피브리노겐 90 mg/dL 이 있었다면 양수색전증이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0239.png",
+   "caption": "Portable anteroposterior chest radiograph — one panel cropped from a two-panel published case figure; the panel label is from the original (PMC Open Access Subset, CC BY; no other adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12928926/",
+   "asset_id": "PMC-PMC12928926_Figure1_d1",
+   "text": "Short-term corticosteroid therapy in aspiration pneumonitis complicated by acute respiratory distress syndrome: A case report. Medicine (Baltimore). 2026 Feb 20;105(8):e47816. doi: 10.1097/MD.0000000000047816 (CC BY) — Figure 1."
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0238",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "순환기 — 무릎 수술 뒤 호흡곤란과 저산소혈증의 다음 검사",
+  "type": "순환기 — 무릎 수술 뒤 호흡곤란과 저산소혈증의 다음 검사",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-05",
+  "vignette": "51세 여자가 2일 전부터 생긴 호흡곤란과 숨을 들이쉴 때 심해지는 오른쪽 가슴 통증으로 응급실에 왔다. 3주 전 오른쪽 무릎 인공관절 치환술을 받은 뒤 대부분 누워 지냈다. 오른쪽 종아리가 붓고 아프다. 기침, 가래, 발열은 없다. 혈압 118/76 mmHg, 맥박 112회/분, 호흡 24회/분, 체온 37.2 °C, 산소포화도(실내 공기) 89 % 이다. 양쪽 폐음은 깨끗하다. 오른쪽 종아리 둘레가 왼쪽보다 3 cm 크다. 혈청 크레아티닌 0.8 mg/dL 이고, 심전도는 동빈맥 외에 이상이 없다. 기립 자세에서 찍은 휴대용 흉부 X선은 그림과 같다.",
+  "question": "진단을 위해 다음으로 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "조영제 없는 고해상도 흉부 CT",
+   "CT 폐동맥조영술",
+   "혈장 D-이량체 측정",
+   "환기-관류 폐스캔",
+   "경흉부 심장초음파"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 흉부 X선은 국소 경화·흉수·기흉 없이 거의 깨끗하다. 그런데 실내 공기 산소포화도는 89 % 이다 — 「사진에 비해 심한 저산소혈증」이다. 최근 하지 대수술·부동, 한쪽 종아리 부종(심부정맥혈전증 징후), 빈맥이 있어 Wells 점수는 약 9점으로 폐색전증 가능성이 높다. 가능성이 높으면 D-이량체가 음성이어도 배제할 수 없으므로 바로 CT 폐동맥조영술을 한다. 콩팥 기능이 정상이라 조영제 사용에 걸림이 없다.\n- 원리: <b>검사 전 확률이 검사를 고른다</b>: D-이량체는 민감도가 높고 특이도가 낮은 검사다. 그래서 「음성이면 배제」하는 데에만 쓰고, 그 음성 예측도는 검사 전 확률이 낮을 때만 믿을 수 있다. Wells 점수가 높은(폐색전증 가능성 높음) 환자에서는 D-이량체가 음성이어도 잔여 확률이 커서 영상 검사를 피할 수 없으므로, D-이량체는 시간만 끈다. 게다가 수술 3주 뒤에는 수술 자체로 D-이량체가 오르기 쉬워 양성이어도 의미가 적다.<br> <b>흉부 X선의 역할</b>: 폐색전증의 흉부 X선은 대부분 정상이거나 비특이적이다. 사진을 찍는 이유는 폐렴·기흉·심부전처럼 같은 증상을 내는 다른 병을 낮추는 것이다. <b>깨끗한 사진 + 설명되지 않는 저산소혈증</b>은 오히려 폐혈관 문제(색전)를 가리킨다.<br> <b>CT 폐동맥조영술</b>은 분절 동맥까지의 충만결손을 직접 보여 주고 대안 진단도 함께 본다. 조영제 금기(심한 콩팥 기능 저하·조영제 과민)나 임신에서는 환기-관류 스캔이 대안이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CT 폐동맥조영술(정답)</th><th>D-이량체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>쓰는 상황</td><td>검사 전 확률 높음(Wells &gt; 4) 또는 D-이량체 양성</td><td>검사 전 확률 낮음·중간에서 배제용</td></tr> <tr><td>이 환자</td><td>Wells 약 9점 — 바로 시행</td><td>음성이어도 배제 불가, 수술 3주 뒤라 양성은 무의미</td></tr> <tr><td>답해 주는 것</td><td>색전의 존재·위치, 대안 진단</td><td>「아니다」만 말할 수 있다</td></tr> </tbody></table> 가능성이 낮을 때는 D-이량체 → (양성이면) CT, 가능성이 높을 때는 곧바로 CT 다. 어느 쪽으로 물어도 「검사 전 확률이 먼저」로 정리된다.\n- 오답 이유:\n  - ① 조영제 없는 고해상도 CT 는 간질성 폐질환의 폐실질을 보는 검사라 폐동맥 안의 혈전을 보여 주지 못한다. 만성 호흡곤란과 마른 수포음이 있었다면 선택했을 것이다.\n  - ③ D-이량체는 검사 전 확률이 낮거나 중간인 환자에서 음성일 때 폐색전증을 배제하는 검사다. 수술력·종아리 부종이 없는 저위험 환자였다면 첫 검사로 맞다.\n  - ④ 환기-관류 폐스캔은 조영제를 쓸 수 없을 때(심한 콩팥 기능 저하, 조영제 과민, 임신)의 대안이다. 크레아티닌이 2.5 mg/dL 였다면 이것을 골랐을 것이다.\n  - ⑤ 경흉부 심장초음파는 저혈압이 동반된 고위험 폐색전증에서 CT 로 옮길 수 없을 때 우심실 부하를 보는 데 쓴다. 혈압이 80/50 mmHg 이고 불안정했다면 정답에 가깝다.\n- 함정: D-이량체부터 고르는 것 — 검사 전 확률이 높은 환자에서는 음성이어도 배제하지 못한다.\n- 학습목표: 임상적으로 폐색전증 가능성이 높은 환자에서 흉부 X선이 깨끗하면 D-이량체를 건너뛰고 CT 폐동맥조영술로 확인함을 안다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 279 Deep venous thrombosis and pulmonary thromboembolism · Konstantinides SV, et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543-603 (PMID 31504429) · 작성자 판독(2026-10-06): 기립 AP 휴대용 흉부 X선 — 국소 경화·간유리 음영 없음, 흉수·기흉 없음, 하폐야 기관지혈관 음영만 약간 두드러짐\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94288885 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "흉부 X선은 국소 경화·흉수·기흉 없이 거의 깨끗하다. 그런데 실내 공기 산소포화도는 89 % 이다 — 「사진에 비해 심한 저산소혈증」이다. 최근 하지 대수술·부동, 한쪽 종아리 부종(심부정맥혈전증 징후), 빈맥이 있어 Wells 점수는 약 9점으로 폐색전증 가능성이 높다. 가능성이 높으면 D-이량체가 음성이어도 배제할 수 없으므로 바로 CT 폐동맥조영술을 한다. 콩팥 기능이 정상이라 조영제 사용에 걸림이 없다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>검사 전 확률이 검사를 고른다</b>: D-이량체는 민감도가 높고 특이도가 낮은 검사다. 그래서 「음성이면 배제」하는 데에만 쓰고, 그 음성 예측도는 검사 전 확률이 낮을 때만 믿을 수 있다. Wells 점수가 높은(폐색전증 가능성 높음) 환자에서는 D-이량체가 음성이어도 잔여 확률이 커서 영상 검사를 피할 수 없으므로, D-이량체는 시간만 끈다. 게다가 수술 3주 뒤에는 수술 자체로 D-이량체가 오르기 쉬워 양성이어도 의미가 적다.<br> <b>흉부 X선의 역할</b>: 폐색전증의 흉부 X선은 대부분 정상이거나 비특이적이다. 사진을 찍는 이유는 폐렴·기흉·심부전처럼 같은 증상을 내는 다른 병을 낮추는 것이다. <b>깨끗한 사진 + 설명되지 않는 저산소혈증</b>은 오히려 폐혈관 문제(색전)를 가리킨다.<br> <b>CT 폐동맥조영술</b>은 분절 동맥까지의 충만결손을 직접 보여 주고 대안 진단도 함께 본다. 조영제 금기(심한 콩팥 기능 저하·조영제 과민)나 임신에서는 환기-관류 스캔이 대안이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CT 폐동맥조영술(정답)</th><th>D-이량체(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>쓰는 상황</td><td>검사 전 확률 높음(Wells &gt; 4) 또는 D-이량체 양성</td><td>검사 전 확률 낮음·중간에서 배제용</td></tr> <tr><td>이 환자</td><td>Wells 약 9점 — 바로 시행</td><td>음성이어도 배제 불가, 수술 3주 뒤라 양성은 무의미</td></tr> <tr><td>답해 주는 것</td><td>색전의 존재·위치, 대안 진단</td><td>「아니다」만 말할 수 있다</td></tr> </tbody></table> 가능성이 낮을 때는 D-이량체 → (양성이면) CT, 가능성이 높을 때는 곧바로 CT 다. 어느 쪽으로 물어도 「검사 전 확률이 먼저」로 정리된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 조영제 없는 고해상도 CT 는 간질성 폐질환의 폐실질을 보는 검사라 폐동맥 안의 혈전을 보여 주지 못한다. 만성 호흡곤란과 마른 수포음이 있었다면 선택했을 것이다.\n③ D-이량체는 검사 전 확률이 낮거나 중간인 환자에서 음성일 때 폐색전증을 배제하는 검사다. 수술력·종아리 부종이 없는 저위험 환자였다면 첫 검사로 맞다.\n④ 환기-관류 폐스캔은 조영제를 쓸 수 없을 때(심한 콩팥 기능 저하, 조영제 과민, 임신)의 대안이다. 크레아티닌이 2.5 mg/dL 였다면 이것을 골랐을 것이다.\n⑤ 경흉부 심장초음파는 저혈압이 동반된 고위험 폐색전증에서 CT 로 옮길 수 없을 때 우심실 부하를 보는 데 쓴다. 혈압이 80/50 mmHg 이고 불안정했다면 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "D-이량체부터 고르는 것 — 검사 전 확률이 높은 환자에서는 음성이어도 배제하지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임상적으로 폐색전증 가능성이 높은 환자에서 흉부 X선이 깨끗하면 D-이량체를 건너뛰고 CT 폐동맥조영술로 확인함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 279 Deep venous thrombosis and pulmonary thromboembolism · Konstantinides SV, et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543-603 (PMID 31504429) · 작성자 판독(2026-10-06): 기립 AP 휴대용 흉부 X선 — 국소 경화·간유리 음영 없음, 흉수·기흉 없음, 하폐야 기관지혈관 음영만 약간 두드러짐 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94288885 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "최근 대수술·종아리 부종·빈맥으로 폐색전증 가능성이 높고 흉부 X선이 깨끗하므로 D-이량체 없이 CT 폐동맥조영술로 확인한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "D-이량체는 검사 전 확률이 낮을 때만 배제에 쓸 수 있는데, 이 환자는 Wells 점수가 높아 음성이어도 영상이 필요하다",
+   "steps": 2,
+   "chain": [
+    "무릎 치환술 3주 뒤 부동·한쪽 종아리 부종·빈맥, 깨끗한 흉부 X선 → 폐색전증 가능성 높음",
+    "가능성 높음 + 조영제 금기 없음 → D-이량체를 건너뛰고 CT 폐동맥조영술"
+   ],
+   "key": [
+    {
+     "item": "영상: 국소 경화·흉수·기흉 없이 거의 깨끗한 폐야",
+     "why": "폐렴·기흉 가능성을 낮추고, 사진에 비해 심한 저산소혈증이라는 대비를 만든다",
+     "also": []
+    },
+    {
+     "item": "3주 전 오른쪽 무릎 인공관절 치환술을 받은 뒤 대부분 누워 지냈다",
+     "why": "정맥혈전색전증의 주요 위험인자",
+     "also": []
+    },
+    {
+     "item": "오른쪽 종아리 둘레가 왼쪽보다 3 cm 크다",
+     "why": "심부정맥혈전증 징후 — Wells 점수 3점",
+     "also": []
+    },
+    {
+     "item": "맥박 112회/분",
+     "why": "Wells 점수 1.5점",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "기침, 가래, 발열은 없다",
+     "why": "폐렴 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 크레아티닌 0.8 mg/dL",
+     "why": "조영제를 쓸 수 있어 환기-관류 스캔으로 돌릴 이유가 없다",
+     "also": []
+    },
+    {
+     "item": "혈압 118/76 mmHg",
+     "why": "혈역학적으로 안정해 CT 실로 옮길 수 있다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "대수술 뒤 부동과 종아리 부종, 빈맥, 깨끗한 흉부 X선에 비해 심한 저산소혈증 — 폐색전증 가능성이 높다. 이때는 D-이량체를 건너뛰고 CT 폐동맥조영술로 확인한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "크레아티닌이 2.5 mg/dL 로 조영제를 쓰기 어렵다면 환기-관류 폐스캔이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0238.png",
+   "caption": "기립 자세 AP 휴대용 흉부 X선, 위치 표지는 원본의 것, 크기 조정만 (The Cancer Imaging Archive, CC BY 4.0 — 크롭·창 조절 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1105632433093733421885994288885",
+   "asset_id": "TCIA-COVID19_AR-66130553685175",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …94288885"
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0249",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "정신 — 항우울제 중단 뒤에도 지속되는 조증",
+  "type": "정신 — 항우울제 중단 뒤에도 지속되는 조증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-05",
+  "vignette": "A 28-year-old woman is brought to the physician by her husband because of 4 weeks of decreased need for sleep, rapid speech, and spending $9,000 on online purchases. She was diagnosed with major depressive disorder 2 months ago and began sertraline; her mood improved after 4 weeks of treatment. One week later she began sleeping 3 hours a night without feeling tired, and sertraline was discontinued 3 weeks ago, but her symptoms have continued to worsen since then. She was placed on leave from work after arguing with customers. She does not drink alcohol or use illicit drugs, and urine toxicology screening is negative. Serum thyroid-stimulating hormone concentration is 1.8 μU/mL. On mental status examination, she is distractible and has pressured speech and grandiose plans to open three restaurants. She has no hallucinations or delusions of persecution.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Cyclothymic disorder",
+   "Schizoaffective disorder, bipolar type",
+   "Bipolar I disorder",
+   "Substance/medication-induced bipolar disorder",
+   "Bipolar II disorder"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: She has a full manic syndrome — decreased need for sleep, pressured speech, distractibility, grandiosity, and reckless spending — lasting more than a week with marked occupational impairment. It began during sertraline treatment, but it has persisted and worsened for 3 weeks after the drug was stopped, far beyond sertraline's physiologic effect (half-life about 26 hours). DSM-5 counts a full manic episode that persists beyond the physiologic effect of an antidepressant as sufficient evidence for bipolar I disorder.\n- 원리: <b>The DSM-5 rule</b>: a manic episode that \"emerges during antidepressant treatment but persists at a fully syndromal level beyond the physiological effect of that treatment\" is sufficient evidence for a manic episode and therefore for bipolar I disorder. If the symptoms resolve once the drug is out of the system, the diagnosis is substance/medication-induced bipolar disorder instead.<br> <b>How long is \"beyond the physiological effect\"</b>: sertraline has a half-life of about 26 hours, so it is essentially cleared within about a week (5 half-lives). Symptoms that continue and worsen 3 weeks later are no longer explained by the drug; the antidepressant has unmasked an underlying bipolar diathesis. A young age at first depression, a family history of bipolar disorder, and a rapid switch are other clues.<br> <b>Why it matters</b>: bipolar I disorder needs a mood stabilizer or antipsychotic (lithium, valproate, quetiapine, olanzapine) for the acute episode and maintenance, and future depressions should not be treated with antidepressant monotherapy.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bipolar I disorder (answer)</th><th>Medication-induced bipolar disorder (closest rival)</th></tr></thead><tbody> <tr><td>Onset</td><td>Can begin during antidepressant treatment</td><td>During or soon after exposure</td></tr> <tr><td>After stopping the drug</td><td><b>Persists at full syndromal level</b> beyond the drug's physiologic effect</td><td>Resolves as the drug clears</td></tr> <tr><td>This patient</td><td>Worsening 3 weeks after stopping sertraline</td><td>Would have settled within about a week</td></tr> </tbody></table> Both start on the drug; only the course after stopping separates them. Time off the drug, measured against its half-life, is the discriminator.\n- 오답 이유:\n  - (A) Cyclothymic disorder involves 2 years of fluctuating subthreshold hypomanic and depressive symptoms. It would apply if she had never met full criteria for a major depressive or manic episode.\n  - (B) Schizoaffective disorder requires psychotic symptoms lasting at least 2 weeks without a mood episode. It would be chosen if she had persistent persecutory delusions even after her mood returned to normal.\n  - (D) Substance/medication-induced bipolar disorder applies when manic symptoms are caused by the drug and fade as it is cleared. It would be correct if her symptoms had resolved within a week of stopping sertraline.\n  - (E) Bipolar II disorder requires hypomania — no marked impairment and no hospitalization — plus major depression. It would fit if she had 5 days of elevated mood that did not affect her work.\n- 함정: Blaming the antidepressant because the mania started on sertraline — persistence weeks after the drug cleared makes it bipolar I.\n- 학습목표: 항우울제 치료 중 시작된 조증이 약을 끊은 뒤에도 생리적 효과를 넘어 완전한 증후군으로 지속되면 양극성 I 장애로 진단한다\n- 근거·출처: American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR). Bipolar I disorder, criterion note on antidepressant-emergent mania · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Synopsis of Psychiatry, 12th ed. Ch. 8 Bipolar disorders",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "She has a full manic syndrome — decreased need for sleep, pressured speech, distractibility, grandiosity, and reckless spending — lasting more than a week with marked occupational impairment. It began during sertraline treatment, but it has persisted and worsened for 3 weeks after the drug was stopped, far beyond sertraline's physiologic effect (half-life about 26 hours). DSM-5 counts a full manic episode that persists beyond the physiologic effect of an antidepressant as sufficient evidence for bipolar I disorder."
+   },
+   {
+    "k": "원리",
+    "v": "<b>The DSM-5 rule</b>: a manic episode that \"emerges during antidepressant treatment but persists at a fully syndromal level beyond the physiological effect of that treatment\" is sufficient evidence for a manic episode and therefore for bipolar I disorder. If the symptoms resolve once the drug is out of the system, the diagnosis is substance/medication-induced bipolar disorder instead.<br> <b>How long is \"beyond the physiological effect\"</b>: sertraline has a half-life of about 26 hours, so it is essentially cleared within about a week (5 half-lives). Symptoms that continue and worsen 3 weeks later are no longer explained by the drug; the antidepressant has unmasked an underlying bipolar diathesis. A young age at first depression, a family history of bipolar disorder, and a rapid switch are other clues.<br> <b>Why it matters</b>: bipolar I disorder needs a mood stabilizer or antipsychotic (lithium, valproate, quetiapine, olanzapine) for the acute episode and maintenance, and future depressions should not be treated with antidepressant monotherapy."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bipolar I disorder (answer)</th><th>Medication-induced bipolar disorder (closest rival)</th></tr></thead><tbody> <tr><td>Onset</td><td>Can begin during antidepressant treatment</td><td>During or soon after exposure</td></tr> <tr><td>After stopping the drug</td><td><b>Persists at full syndromal level</b> beyond the drug's physiologic effect</td><td>Resolves as the drug clears</td></tr> <tr><td>This patient</td><td>Worsening 3 weeks after stopping sertraline</td><td>Would have settled within about a week</td></tr> </tbody></table> Both start on the drug; only the course after stopping separates them. Time off the drug, measured against its half-life, is the discriminator."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Cyclothymic disorder involves 2 years of fluctuating subthreshold hypomanic and depressive symptoms. It would apply if she had never met full criteria for a major depressive or manic episode.\n(B) Schizoaffective disorder requires psychotic symptoms lasting at least 2 weeks without a mood episode. It would be chosen if she had persistent persecutory delusions even after her mood returned to normal.\n(D) Substance/medication-induced bipolar disorder applies when manic symptoms are caused by the drug and fade as it is cleared. It would be correct if her symptoms had resolved within a week of stopping sertraline.\n(E) Bipolar II disorder requires hypomania — no marked impairment and no hospitalization — plus major depression. It would fit if she had 5 days of elevated mood that did not affect her work."
+   },
+   {
+    "k": "함정",
+    "v": "Blaming the antidepressant because the mania started on sertraline — persistence weeks after the drug cleared makes it bipolar I."
+   },
+   {
+    "k": "학습목표",
+    "v": "항우울제 치료 중 시작된 조증이 약을 끊은 뒤에도 생리적 효과를 넘어 완전한 증후군으로 지속되면 양극성 I 장애로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR). Bipolar I disorder, criterion note on antidepressant-emergent mania · Sadock BJ, Sadock VA, Ruiz P. Kaplan & Sadock's Synopsis of Psychiatry, 12th ed. Ch. 8 Bipolar disorders"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "서트랄린 치료 중 시작된 조증이 약을 끊고 3주가 지나도 완전한 증후군으로 악화하므로, 약물 유발이 아니라 양극성 I 장애다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "약물 유발 양극성 장애는 약이 몸에서 빠지면 증상이 사라지는데, 이 환자는 반감기의 수십 배가 지나도 지속된다",
+   "steps": 3,
+   "chain": [
+    "수면 욕구 감소·사고 비약·과대성·무분별한 소비 + 직업 기능 손상 → 조증 삽화",
+    "TSH 정상·소변 약물 음성 → 다른 물질·갑상샘 원인 가능성 낮음",
+    "서트랄린 중단 3주 뒤에도 악화 → 약의 생리적 효과를 넘어선 지속 → 양극성 I 장애"
+   ],
+   "key": [
+    {
+     "item": "sertraline was discontinued 3 weeks ago, but her symptoms have continued to worsen",
+     "why": "약의 생리적 효과를 넘어 지속 — 진단을 가른다",
+     "also": []
+    },
+    {
+     "item": "She was placed on leave from work",
+     "why": "현저한 기능 손상 — 경조증이 아니라 조증",
+     "also": []
+    },
+    {
+     "item": "spending $9,000 on online purchases",
+     "why": "무분별한 행동",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "urine toxicology screening is negative",
+     "why": "다른 물질 유발 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum thyroid-stimulating hormone concentration is 1.8",
+     "why": "갑상샘중독 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She has no hallucinations or delusions of persecution",
+     "why": "조현정동장애 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "항우울제 치료 중 조증이 시작되었지만, 약을 끊고 3주가 지나도 기능 손상을 동반한 조증이 악화한다. 약의 생리적 효과를 넘어선 지속이므로 양극성 I 장애다.",
+   "switch": {
+    "choice": "D",
+    "condition": "서트랄린을 끊고 5일 만에 증상이 모두 사라졌다면 약물 유발 양극성 장애다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0248",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "약리 — 아미오다론 추가 뒤 디곡신 농도 상승의 기전",
+  "type": "약리 — 아미오다론 추가 뒤 디곡신 농도 상승의 기전",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "74세 여자가 1주 전부터 심해진 메스꺼움과 식욕 저하, 사물이 노랗게 보이는 증상으로 내원하였다. 심방세동과 박출률 감소 심부전으로 디곡신 0.125 mg 을 매일 복용해 왔고, 3주 전 빈맥이 반복되어 아미오다론이 추가되었다. 그 밖의 약은 바꾸지 않았다. 혈압 112/68 mmHg, 맥박 48회/분이다. 혈청 칼륨 4.6 mEq/L, 마그네슘 2.1 mg/dL, 크레아티닌 1.0 mg/dL(3주 전 1.0 mg/dL), 알부민 4.0 g/dL 이고 혈청 디곡신 농도는 3.1 ng/mL 이다.",
+  "question": "디곡신 농도가 오른 기전으로 가장 적절한 것은?",
+  "options": [
+   "P-당단백 억제로 디곡신의 배설이 줄었다",
+   "CYP3A4 억제로 디곡신의 간 대사가 줄었다",
+   "사구체 여과율 감소로 디곡신 청소율이 줄었다",
+   "알부민 결합 자리에서 디곡신이 밀려났다",
+   "장의 세균이 디곡신을 분해하지 못하게 되었다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 디곡신은 대부분 대사되지 않고 콩팥 세뇨관과 장에서 P-당단백(MDR1) 펌프로 배설된다. 아미오다론은 P-당단백을 억제해 디곡신 청소율을 줄이므로, 병용하면 디곡신 농도가 1~2주에 걸쳐 거의 두 배로 오른다. 크레아티닌이 그대로이므로 사구체 여과율의 변화가 아니다. 그래서 아미오다론을 시작할 때 디곡신 용량을 약 절반으로 줄인다.\n- 원리: <b>디곡신은 「대사」보다 「수송」으로 나간다</b>: 디곡신의 약 60~80 % 는 변하지 않은 채 소변으로 나가는데, 사구체 여과에 더해 근위세뇨관의 P-당단백이 디곡신을 소변 쪽으로 퍼낸다. 장 상피의 P-당단백도 흡수된 디곡신을 다시 장 안으로 내보낸다. 간의 CYP 효소가 디곡신을 대사하는 몫은 작다.<br> <b>P-당단백 억제제</b>(아미오다론, 베라파밀, 퀴니딘, 클래리트로마이신, 이트라코나졸 등)를 함께 쓰면 세뇨관 분비와 장 배출이 줄어 흡수는 늘고 배설은 줄어든다. 아미오다론은 반감기가 길어 효과가 몇 주에 걸쳐 나타나므로, 이 환자처럼 3주 뒤에 중독 증상이 드러나기 쉽다.<br> <b>디곡신 중독</b>: 위장 증상, 황시증, 서맥·방실차단, 심방빈맥과 방실차단의 동반이 특징이다. 저칼륨혈증은 디곡신의 Na⁺/K⁺-ATPase 결합을 늘려 독성을 키우지만 농도 자체를 올리지는 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">P-당단백 억제(정답)</th><th>CYP3A4 억제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>디곡신 소실에서의 비중</td><td><b>주 경로</b> — 세뇨관 분비·장 배출</td><td>작다(디곡신은 거의 대사되지 않음)</td></tr> <tr><td>아미오다론의 작용</td><td>억제 → 디곡신 농도 약 2배</td><td>억제하지만 디곡신에는 영향이 작다</td></tr> <tr><td>CYP3A4 억제가 문제 되는 약</td><td>—</td><td>심바스타틴, 와파린(CYP2C9 도), 시클로스포린</td></tr> </tbody></table> 아미오다론은 P-당단백과 여러 CYP 를 함께 억제한다. 어느 경로로 상호작용하는지는 「상대 약이 어떻게 나가는가」가 정한다.\n- 오답 이유:\n  - ② 아미오다론은 CYP3A4 도 억제하지만 디곡신은 간에서 거의 대사되지 않아 이 경로의 영향이 작다. 상대 약이 심바스타틴이라 근육병증이 생겼다면 정답이 된다.\n  - ③ 사구체 여과율이 줄면 디곡신 청소율이 줄어 농도가 오르지만 이 환자의 크레아티닌은 1.0 mg/dL 로 그대로다. 탈수로 크레아티닌이 2.0 mg/dL 로 올랐다면 정답이다.\n  - ④ 디곡신은 알부민 결합률이 약 25 % 로 낮아 결합 치환으로 농도가 크게 변하지 않는다. 결합률이 높은 와파린이나 페니토인의 상호작용이었다면 의미 있는 기전이다.\n  - ⑤ 장내 세균(Eggerthella lenta)의 디곡신 환원을 항생제가 막으면 일부 환자에서 농도가 오른다. 3주 전 클래리트로마이신을 시작했다면 함께 고려할 기전이다.\n- 함정: 상호작용은 모두 CYP 라고 보는 것 — 디곡신은 대사가 아니라 P-당단백 수송으로 나간다.\n- 학습목표: 아미오다론이 P-당단백을 억제해 디곡신의 신장·장 배설을 줄이므로 병용 시 디곡신 농도가 오름을 안다\n- 근거·출처: Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. 33 Treatment of heart failure (digoxin pharmacokinetics) and Ch. 34 Antiarrhythmic drugs (amiodarone interactions) · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 13 Drugs used in heart failure; Ch. 4 Drug biotransformation (transporters)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "디곡신은 대부분 대사되지 않고 콩팥 세뇨관과 장에서 P-당단백(MDR1) 펌프로 배설된다. 아미오다론은 P-당단백을 억제해 디곡신 청소율을 줄이므로, 병용하면 디곡신 농도가 1~2주에 걸쳐 거의 두 배로 오른다. 크레아티닌이 그대로이므로 사구체 여과율의 변화가 아니다. 그래서 아미오다론을 시작할 때 디곡신 용량을 약 절반으로 줄인다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>디곡신은 「대사」보다 「수송」으로 나간다</b>: 디곡신의 약 60~80 % 는 변하지 않은 채 소변으로 나가는데, 사구체 여과에 더해 근위세뇨관의 P-당단백이 디곡신을 소변 쪽으로 퍼낸다. 장 상피의 P-당단백도 흡수된 디곡신을 다시 장 안으로 내보낸다. 간의 CYP 효소가 디곡신을 대사하는 몫은 작다.<br> <b>P-당단백 억제제</b>(아미오다론, 베라파밀, 퀴니딘, 클래리트로마이신, 이트라코나졸 등)를 함께 쓰면 세뇨관 분비와 장 배출이 줄어 흡수는 늘고 배설은 줄어든다. 아미오다론은 반감기가 길어 효과가 몇 주에 걸쳐 나타나므로, 이 환자처럼 3주 뒤에 중독 증상이 드러나기 쉽다.<br> <b>디곡신 중독</b>: 위장 증상, 황시증, 서맥·방실차단, 심방빈맥과 방실차단의 동반이 특징이다. 저칼륨혈증은 디곡신의 Na⁺/K⁺-ATPase 결합을 늘려 독성을 키우지만 농도 자체를 올리지는 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">P-당단백 억제(정답)</th><th>CYP3A4 억제(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>디곡신 소실에서의 비중</td><td><b>주 경로</b> — 세뇨관 분비·장 배출</td><td>작다(디곡신은 거의 대사되지 않음)</td></tr> <tr><td>아미오다론의 작용</td><td>억제 → 디곡신 농도 약 2배</td><td>억제하지만 디곡신에는 영향이 작다</td></tr> <tr><td>CYP3A4 억제가 문제 되는 약</td><td>—</td><td>심바스타틴, 와파린(CYP2C9 도), 시클로스포린</td></tr> </tbody></table> 아미오다론은 P-당단백과 여러 CYP 를 함께 억제한다. 어느 경로로 상호작용하는지는 「상대 약이 어떻게 나가는가」가 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 아미오다론은 CYP3A4 도 억제하지만 디곡신은 간에서 거의 대사되지 않아 이 경로의 영향이 작다. 상대 약이 심바스타틴이라 근육병증이 생겼다면 정답이 된다.\n③ 사구체 여과율이 줄면 디곡신 청소율이 줄어 농도가 오르지만 이 환자의 크레아티닌은 1.0 mg/dL 로 그대로다. 탈수로 크레아티닌이 2.0 mg/dL 로 올랐다면 정답이다.\n④ 디곡신은 알부민 결합률이 약 25 % 로 낮아 결합 치환으로 농도가 크게 변하지 않는다. 결합률이 높은 와파린이나 페니토인의 상호작용이었다면 의미 있는 기전이다.\n⑤ 장내 세균(Eggerthella lenta)의 디곡신 환원을 항생제가 막으면 일부 환자에서 농도가 오른다. 3주 전 클래리트로마이신을 시작했다면 함께 고려할 기전이다."
+   },
+   {
+    "k": "함정",
+    "v": "상호작용은 모두 CYP 라고 보는 것 — 디곡신은 대사가 아니라 P-당단백 수송으로 나간다."
+   },
+   {
+    "k": "학습목표",
+    "v": "아미오다론이 P-당단백을 억제해 디곡신의 신장·장 배설을 줄이므로 병용 시 디곡신 농도가 오름을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. Ch. 33 Treatment of heart failure (digoxin pharmacokinetics) and Ch. 34 Antiarrhythmic drugs (amiodarone interactions) · Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 13 Drugs used in heart failure; Ch. 4 Drug biotransformation (transporters)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "크레아티닌이 그대로인데 아미오다론 추가 뒤 디곡신 농도가 올랐으므로, 아미오다론의 P-당단백 억제로 디곡신 배설이 줄어든 것이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "아미오다론은 CYP3A4 도 억제하지만 디곡신은 간 대사가 아니라 P-당단백 수송으로 주로 배설된다",
+   "steps": 2,
+   "chain": [
+    "황시증·메스꺼움·서맥 + 농도 3.1 ng/mL → 디곡신 중독, 크레아티닌 불변 → 콩팥 기능 변화 아님",
+    "3주 전 아미오다론 추가 → P-당단백 억제로 세뇨관·장 배설 감소"
+   ],
+   "key": [
+    {
+     "item": "3주 전 빈맥이 반복되어 아미오다론이 추가되었다",
+     "why": "농도 상승 시점과 원인 약",
+     "also": []
+    },
+    {
+     "item": "혈청 디곡신 농도는 3.1 ng/mL",
+     "why": "치료 범위(0.5~0.9 ng/mL)를 넘는 농도",
+     "also": []
+    },
+    {
+     "item": "사물이 노랗게 보이는 증상",
+     "why": "디곡신 중독의 황시증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "크레아티닌 1.0 mg/dL(3주 전 1.0 mg/dL)",
+     "why": "사구체 여과율 감소 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.6 mEq/L",
+     "why": "저칼륨에 의한 독성 증강이 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "맥박 48회/분",
+     "why": "서맥 — 중독의 심장 증상, 해독제 판단에 쓰인다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "알부민 4.0 g/dL",
+     "why": "디곡신은 단백 결합이 낮아 알부민과 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "크레아티닌은 그대로인데 아미오다론을 더한 뒤 디곡신 농도가 3.1 ng/mL 로 올랐다. 디곡신은 P-당단백으로 배설되므로 아미오다론의 P-당단백 억제가 기전이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "같은 기간에 탈수로 크레아티닌이 2.0 mg/dL 로 올랐다면 사구체 여과율 감소가 주 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0247",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "내분비·대사 — 일차 알도스테론증 확진 뒤 한쪽 부신 결절",
+  "type": "내분비·대사 — 일차 알도스테론증 확진 뒤 한쪽 부신 결절",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "A 52-year-old man comes for follow-up of hypertension. His blood pressure has remained above target despite amlodipine 10 mg daily, lisinopril 40 mg daily, and hydrochlorothiazide 25 mg daily, which he takes reliably. He has no headaches, palpitations, or weight gain. Blood pressure is 162/98 mm Hg, and pulse is 74/min. BMI is 26 kg/m2. There are no abdominal striae or proximal muscle weakness. Serum potassium is 3.2 mEq/L, and creatinine is 0.9 mg/dL. Plasma aldosterone concentration is 28 ng/dL, and plasma renin activity is 0.2 ng/mL/h. After 3 days of oral sodium loading, 24-hour urinary aldosterone excretion is 18 μg with urinary sodium of 240 mEq. Adrenal CT shows a 1.2-cm, 8-HU nodule in the left adrenal gland and a normal right adrenal gland. He says he would prefer surgery if it could cure his hypertension.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Adrenal iodocholesterol scintigraphy",
+   "Adrenal vein sampling",
+   "Laparoscopic left adrenalectomy",
+   "Repeat adrenal CT in 12 months",
+   "Fine-needle aspiration of the left adrenal nodule"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Suppressed renin with a high aldosterone, hypokalemia, and failure to suppress aldosterone after sodium loading confirm primary aldosteronism. CT shows a small left adrenal nodule, but in a patient older than 35 years such nodules are often nonfunctioning incidentalomas, and CT predicts the side of aldosterone excess correctly in only about 60% of cases. Because he wants surgery, adrenal vein sampling should confirm lateralization before adrenalectomy.\n- 원리: <b>Why imaging is not enough</b>: about 2–7% of adults have an incidental adrenal nodule, and the frequency rises with age. Primary aldosteronism, in contrast, is caused either by a unilateral aldosterone-producing adenoma (curable by adrenalectomy) or by bilateral hyperplasia (treated with mineralocorticoid antagonists). An aldosteronoma can be too small to see, and a visible nodule can be a nonfunctioning bystander while the contralateral gland or both glands secrete aldosterone. Removing the wrong gland leaves the hypertension and hypokalemia unchanged.<br> <b>How adrenal vein sampling decides</b>: catheters sample blood from both adrenal veins (often under ACTH stimulation). Each aldosterone value is divided by the cortisol value from the same vein to correct for dilution. An aldosterone/cortisol ratio more than about 4 times higher on one side than the other indicates unilateral disease.<br> <b>Who can skip it</b>: guidelines allow going straight to surgery only in patients younger than 35 years with spontaneous hypokalemia, marked aldosterone excess, and a clear unilateral adenoma on CT.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Adrenal vein sampling first (answer)</th><th>Direct adrenalectomy (closest rival)</th></tr></thead><tbody> <tr><td>Age</td><td>≥ 35 years — incidentalomas common</td><td>&lt; 35 years with a clear unilateral adenoma</td></tr> <tr><td>What it proves</td><td>Which side actually secretes aldosterone</td><td>Assumes the visible nodule is the source</td></tr> <tr><td>Risk if skipped</td><td>—</td><td>Wrong gland removed in about 1 in 4 to 1 in 3 cases</td></tr> </tbody></table> CT shows where a nodule is; only venous sampling shows where the aldosterone comes from. Age decides whether that difference matters.\n- 오답 이유:\n  - (A) Iodocholesterol scintigraphy can show functioning adrenal tissue but is insensitive for small adenomas and is rarely available. It would be considered only where adrenal vein sampling cannot be performed.\n  - (C) Laparoscopic left adrenalectomy cures unilateral aldosteronoma but should follow proof of lateralization in patients older than 35 years. It would be appropriate for a 28-year-old with spontaneous hypokalemia and a 1.5-cm left adenoma.\n  - (D) Repeat CT in 12 months is follow-up for a nonfunctioning benign-appearing incidentaloma when hormone tests are negative. It would fit if aldosterone suppressed normally after sodium loading.\n  - (E) Fine-needle aspiration of an adrenal mass is reserved for suspected metastasis after pheochromocytoma is excluded. It would be considered in a patient with known lung cancer and a new heterogeneous adrenal mass.\n- 함정: Removing the gland with the visible nodule — after age 35, the nodule on CT may not be the source of the aldosterone.\n- 학습목표: 일차 알도스테론증이 확진되고 CT 에 한쪽 부신 결절이 있어도 35세 이상이고 수술을 원하면 부신정맥 채혈로 편측성을 확인한다\n- 근거·출처: Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment. An Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:1889-1916 (PMID 26934393) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 386 Disorders of the adrenal cortex",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Suppressed renin with a high aldosterone, hypokalemia, and failure to suppress aldosterone after sodium loading confirm primary aldosteronism. CT shows a small left adrenal nodule, but in a patient older than 35 years such nodules are often nonfunctioning incidentalomas, and CT predicts the side of aldosterone excess correctly in only about 60% of cases. Because he wants surgery, adrenal vein sampling should confirm lateralization before adrenalectomy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why imaging is not enough</b>: about 2–7% of adults have an incidental adrenal nodule, and the frequency rises with age. Primary aldosteronism, in contrast, is caused either by a unilateral aldosterone-producing adenoma (curable by adrenalectomy) or by bilateral hyperplasia (treated with mineralocorticoid antagonists). An aldosteronoma can be too small to see, and a visible nodule can be a nonfunctioning bystander while the contralateral gland or both glands secrete aldosterone. Removing the wrong gland leaves the hypertension and hypokalemia unchanged.<br> <b>How adrenal vein sampling decides</b>: catheters sample blood from both adrenal veins (often under ACTH stimulation). Each aldosterone value is divided by the cortisol value from the same vein to correct for dilution. An aldosterone/cortisol ratio more than about 4 times higher on one side than the other indicates unilateral disease.<br> <b>Who can skip it</b>: guidelines allow going straight to surgery only in patients younger than 35 years with spontaneous hypokalemia, marked aldosterone excess, and a clear unilateral adenoma on CT."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Adrenal vein sampling first (answer)</th><th>Direct adrenalectomy (closest rival)</th></tr></thead><tbody> <tr><td>Age</td><td>≥ 35 years — incidentalomas common</td><td>&lt; 35 years with a clear unilateral adenoma</td></tr> <tr><td>What it proves</td><td>Which side actually secretes aldosterone</td><td>Assumes the visible nodule is the source</td></tr> <tr><td>Risk if skipped</td><td>—</td><td>Wrong gland removed in about 1 in 4 to 1 in 3 cases</td></tr> </tbody></table> CT shows where a nodule is; only venous sampling shows where the aldosterone comes from. Age decides whether that difference matters."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Iodocholesterol scintigraphy can show functioning adrenal tissue but is insensitive for small adenomas and is rarely available. It would be considered only where adrenal vein sampling cannot be performed.\n(C) Laparoscopic left adrenalectomy cures unilateral aldosteronoma but should follow proof of lateralization in patients older than 35 years. It would be appropriate for a 28-year-old with spontaneous hypokalemia and a 1.5-cm left adenoma.\n(D) Repeat CT in 12 months is follow-up for a nonfunctioning benign-appearing incidentaloma when hormone tests are negative. It would fit if aldosterone suppressed normally after sodium loading.\n(E) Fine-needle aspiration of an adrenal mass is reserved for suspected metastasis after pheochromocytoma is excluded. It would be considered in a patient with known lung cancer and a new heterogeneous adrenal mass."
+   },
+   {
+    "k": "함정",
+    "v": "Removing the gland with the visible nodule — after age 35, the nodule on CT may not be the source of the aldosterone."
+   },
+   {
+    "k": "학습목표",
+    "v": "일차 알도스테론증이 확진되고 CT 에 한쪽 부신 결절이 있어도 35세 이상이고 수술을 원하면 부신정맥 채혈로 편측성을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Funder JW, et al. The management of primary aldosteronism: case detection, diagnosis, and treatment. An Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2016;101:1889-1916 (PMID 26934393) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 386 Disorders of the adrenal cortex"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "일차 알도스테론증이 확진되었고 수술을 원하지만 52세라 CT 결절이 비기능성일 수 있으므로 부신정맥 채혈로 편측성을 먼저 확인한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "바로 부신절제는 35세 미만이고 CT 에서 한쪽 선종이 뚜렷할 때만 허용되며, 그 이상 나이에서는 결절이 알도스테론의 원천이 아닐 수 있다",
+   "steps": 3,
+   "chain": [
+    "알도스테론 28·레닌 0.2·저칼륨 → 선별 양성, 염분 부하 뒤 소변 알도스테론 18 μg → 확진",
+    "CT 왼쪽 1.2 cm 결절, 52세 → 비기능성 우연종일 수 있다",
+    "수술을 원함 → 부신정맥 채혈로 편측성 확인 후 수술"
+   ],
+   "key": [
+    {
+     "item": "Plasma aldosterone concentration is 28 ng/dL",
+     "why": "레닌 억제와 함께 선별 양성",
+     "also": []
+    },
+    {
+     "item": "24-hour urinary aldosterone excretion is 18 μg",
+     "why": "염분 부하에도 억제되지 않음 — 확진",
+     "also": []
+    },
+    {
+     "item": "1.2-cm, 8-HU nodule in the left adrenal gland",
+     "why": "양성으로 보이는 작은 결절 — 기능 여부는 모른다",
+     "also": []
+    },
+    {
+     "item": "52-year-old man",
+     "why": "35세 이상 — 우연종 가능성 때문에 부신정맥 채혈이 필요",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no abdominal striae or proximal muscle weakness",
+     "why": "쿠싱 증후군 동반 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no headaches, palpitations",
+     "why": "갈색세포종 단서가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He says he would prefer surgery",
+     "why": "편측성 확인이 의미 있는 이유",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "저칼륨·레닌 억제·염분 부하 뒤 억제되지 않는 알도스테론으로 일차 알도스테론증이 확진되었다. 52세라 CT 결절이 원천이 아닐 수 있으므로 수술 전에 부신정맥 채혈로 편측성을 확인한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "28세에 자발적 저칼륨혈증과 뚜렷한 한쪽 선종이 있었다면 바로 부신절제를 할 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0246",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "소아청소년 — 신생아의 담즙성 구토",
+  "type": "소아청소년 — 신생아의 담즙성 구토",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "생후 6일 남아가 4시간 전부터 초록색 구토를 반복하여 응급실에 왔다. 재태 39주에 질식분만으로 태어났고 출생 첫날 태변을 보았으며 어제까지 잘 먹었다. 체온 36.9 °C, 맥박 168회/분, 호흡 48회/분이다. 복부는 약간 팽만하지만 부드럽고 덩이는 만져지지 않는다. 직장 수지검사에서 혈변은 없다. 백혈구 11,200/mm³, 나트륨 136 mEq/L, 칼륨 4.5 mEq/L, 젖산 2.4 mmol/L 이다. 단순 복부 X선에서 위와 십이지장 첫 부분이 약간 늘어나 있고 그 아래 장에 공기가 조금 있다.",
+  "question": "진단을 위해 다음으로 시행할 검사로 가장 적절한 것은?",
+  "options": [
+   "바륨 대장 조영술",
+   "복부 CT",
+   "직장 흡인 생검",
+   "상부위장관 조영술",
+   "복부 초음파(유문근 두께 측정)"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 태변을 정상적으로 보고 잘 먹던 신생아가 갑자기 담즙성(초록색) 구토를 한다 — 다른 증거가 나올 때까지 장회전이상에 의한 중장염전으로 본다. 복부가 부드럽고 장 공기가 일부 있어도 배제되지 않는다. 혈역학이 유지되는 동안 바로 상부위장관 조영술로 십이지장-공장 이음부(트라이츠 인대)의 위치와 십이지장의 나선(코르크 마개뽑이) 모양을 확인한다. 염전이 의심되면 수술(Ladd 술식)이 늦어지지 않도록 해야 한다.\n- 원리: <b>왜 담즙성 구토가 응급인가</b>: 담즙은 바터팽대부(십이지장 2부)에서 들어오므로, 담즙이 섞인 구토는 그보다 아래쪽 막힘을 뜻한다. 정상 태생기에는 중장이 상장간막동맥을 축으로 반시계 방향으로 270° 돌아 십이지장-공장 이음부가 왼쪽 위에, 맹장이 오른쪽 아래에 고정된다. 회전이 덜 되면 장간막 뿌리가 좁아 중장 전체가 상장간막동맥을 축으로 꼬일 수 있고(중장염전), 몇 시간 안에 소장 전체가 괴사할 수 있다.<br> <b>왜 상부위장관 조영술인가</b>: 십이지장-공장 이음부가 척추 왼쪽 경계·유문 높이에 오지 않으면 회전이상이고, 염전이면 십이지장이 나선형으로 꼬이거나 끊긴다. 민감도가 높고 빨리 할 수 있다. 초음파의 상장간막 동·정맥 위치 역전이나 소용돌이 징후는 도움이 되지만 정상이어도 배제할 수 없다.<br> <b>초기 소견이 가볍다고 안심하지 않는다</b> — 젖산·복부 진찰이 정상인 시기가 장을 살릴 수 있는 시간이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중장염전 — 상부위장관 조영술(정답)</th><th>비후날문협착증 — 유문 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>대개 생후 1개월 안, 특히 첫 주</td><td>생후 3~6주</td></tr> <tr><td>구토</td><td><b>담즙성</b>(초록색)</td><td>비담즙성 분출성 구토</td></tr> <tr><td>막힌 곳</td><td>바터팽대부 아래</td><td>유문(담즙 유입 위)</td></tr> <tr><td>전해질</td><td>초기에는 정상</td><td>저염소 저칼륨 대사알칼리증</td></tr> </tbody></table> 구토 색이 막힌 높이를 알려 준다. 초록색이면 유문 아래이므로 유문을 재는 초음파는 답이 아니다.\n- 오답 이유:\n  - ① 바륨 대장 조영술은 태변 배출이 늦은 신생아의 히르슈슈프룽병·태변마개 증후군에서 이행부를 보는 검사다. 출생 48시간이 지나도록 태변이 없었다면 선택한다.\n  - ② 복부 CT 는 방사선량이 많고 신생아 염전 진단에서 상부위장관 조영술보다 빠르거나 정확하지 않다. 큰 아이의 외상이나 복강 내 종괴를 평가할 때라면 맞는 선택이다.\n  - ③ 직장 흡인 생검은 신경절세포가 없는지 보아 히르슈슈프룽병을 확진하는 검사다. 태변 배출 지연과 복부 팽만, 바륨 조영에서 이행부가 보였다면 다음 단계가 된다.\n  - ⑤ 유문근 두께를 재는 초음파는 생후 3~6주에 비담즙성 분출성 구토와 대사알칼리증이 있는 비후날문협착증의 진단 검사다. 구토가 노란 젖빛이었다면 정답이다.\n- 함정: 복부가 부드럽고 장 공기가 있어 안심하는 것 — 신생아의 담즙성 구토는 중장염전을 배제할 때까지 응급이다.\n- 학습목표: 신생아의 담즙성 구토를 장회전이상·중장염전으로 보고 응급 상부위장관 조영술을 고른다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 356.3 Malrotation · Coran AG, et al. Pediatric Surgery, 7th ed. Ch. 86 Disorders of intestinal rotation and fixation",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "태변을 정상적으로 보고 잘 먹던 신생아가 갑자기 담즙성(초록색) 구토를 한다 — 다른 증거가 나올 때까지 장회전이상에 의한 중장염전으로 본다. 복부가 부드럽고 장 공기가 일부 있어도 배제되지 않는다. 혈역학이 유지되는 동안 바로 상부위장관 조영술로 십이지장-공장 이음부(트라이츠 인대)의 위치와 십이지장의 나선(코르크 마개뽑이) 모양을 확인한다. 염전이 의심되면 수술(Ladd 술식)이 늦어지지 않도록 해야 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 담즙성 구토가 응급인가</b>: 담즙은 바터팽대부(십이지장 2부)에서 들어오므로, 담즙이 섞인 구토는 그보다 아래쪽 막힘을 뜻한다. 정상 태생기에는 중장이 상장간막동맥을 축으로 반시계 방향으로 270° 돌아 십이지장-공장 이음부가 왼쪽 위에, 맹장이 오른쪽 아래에 고정된다. 회전이 덜 되면 장간막 뿌리가 좁아 중장 전체가 상장간막동맥을 축으로 꼬일 수 있고(중장염전), 몇 시간 안에 소장 전체가 괴사할 수 있다.<br> <b>왜 상부위장관 조영술인가</b>: 십이지장-공장 이음부가 척추 왼쪽 경계·유문 높이에 오지 않으면 회전이상이고, 염전이면 십이지장이 나선형으로 꼬이거나 끊긴다. 민감도가 높고 빨리 할 수 있다. 초음파의 상장간막 동·정맥 위치 역전이나 소용돌이 징후는 도움이 되지만 정상이어도 배제할 수 없다.<br> <b>초기 소견이 가볍다고 안심하지 않는다</b> — 젖산·복부 진찰이 정상인 시기가 장을 살릴 수 있는 시간이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중장염전 — 상부위장관 조영술(정답)</th><th>비후날문협착증 — 유문 초음파(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>나이</td><td>대개 생후 1개월 안, 특히 첫 주</td><td>생후 3~6주</td></tr> <tr><td>구토</td><td><b>담즙성</b>(초록색)</td><td>비담즙성 분출성 구토</td></tr> <tr><td>막힌 곳</td><td>바터팽대부 아래</td><td>유문(담즙 유입 위)</td></tr> <tr><td>전해질</td><td>초기에는 정상</td><td>저염소 저칼륨 대사알칼리증</td></tr> </tbody></table> 구토 색이 막힌 높이를 알려 준다. 초록색이면 유문 아래이므로 유문을 재는 초음파는 답이 아니다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 바륨 대장 조영술은 태변 배출이 늦은 신생아의 히르슈슈프룽병·태변마개 증후군에서 이행부를 보는 검사다. 출생 48시간이 지나도록 태변이 없었다면 선택한다.\n② 복부 CT 는 방사선량이 많고 신생아 염전 진단에서 상부위장관 조영술보다 빠르거나 정확하지 않다. 큰 아이의 외상이나 복강 내 종괴를 평가할 때라면 맞는 선택이다.\n③ 직장 흡인 생검은 신경절세포가 없는지 보아 히르슈슈프룽병을 확진하는 검사다. 태변 배출 지연과 복부 팽만, 바륨 조영에서 이행부가 보였다면 다음 단계가 된다.\n⑤ 유문근 두께를 재는 초음파는 생후 3~6주에 비담즙성 분출성 구토와 대사알칼리증이 있는 비후날문협착증의 진단 검사다. 구토가 노란 젖빛이었다면 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "복부가 부드럽고 장 공기가 있어 안심하는 것 — 신생아의 담즙성 구토는 중장염전을 배제할 때까지 응급이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "신생아의 담즙성 구토를 장회전이상·중장염전으로 보고 응급 상부위장관 조영술을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 356.3 Malrotation · Coran AG, et al. Pediatric Surgery, 7th ed. Ch. 86 Disorders of intestinal rotation and fixation"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "태변을 정상적으로 본 생후 6일 신생아의 갑작스러운 담즙성 구토이므로 중장염전을 의심하고 즉시 상부위장관 조영술을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "비후날문협착증은 생후 3~6주에 비담즙성 구토를 하는데, 이 아기는 생후 6일이고 구토가 초록색이다",
+   "steps": 2,
+   "chain": [
+    "생후 6일 + 담즙성 구토 → 바터팽대부 아래 막힘, 중장염전을 먼저 배제",
+    "혈역학 유지 → 응급 상부위장관 조영술로 십이지장-공장 이음부 위치 확인"
+   ],
+   "key": [
+    {
+     "item": "초록색 구토",
+     "why": "담즙성 — 유문 아래 막힘",
+     "also": []
+    },
+    {
+     "item": "생후 6일",
+     "why": "장회전이상 염전의 호발 시기, 날문협착 나이가 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "출생 첫날 태변을 보았으며",
+     "why": "히르슈슈프룽병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "나트륨 136 mEq/L, 칼륨 4.5 mEq/L",
+     "why": "날문협착의 저칼륨 대사알칼리증 양상이 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "젖산 2.4 mmol/L",
+     "why": "아직 장 괴사 전일 수 있다 — 검사를 미루지 않는다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "복부는 약간 팽만하지만 부드럽고",
+     "why": "초기 염전에서 흔해 염전을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "그 아래 장에 공기가 조금 있다",
+     "why": "부분 염전에서도 있을 수 있어 배제 근거가 아니다",
+     "also": []
+    }
+   ],
+   "summary": "잘 먹던 생후 6일 신생아의 갑작스러운 담즙성 구토는 중장염전을 배제할 때까지 응급이다. 바로 상부위장관 조영술로 십이지장-공장 이음부를 확인한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "생후 4주 아기가 비담즙성 분출성 구토와 저염소 대사알칼리증을 보였다면 유문 초음파가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0245",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "부인과 — 소파술 뒤 무월경과 소퇴출혈 검사",
+  "type": "부인과 — 소파술 뒤 무월경과 소퇴출혈 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "A 31-year-old woman, gravida 2, para 1, comes to the physician because she has not had a menstrual period for 6 months. Eight months ago, she underwent dilation and curettage for retained products of conception after a second-trimester pregnancy loss, followed by endometritis treated with antibiotics. Before that, her menstrual cycles occurred regularly every 28 days. She has no hot flashes, headaches, visual changes, galactorrhea, or change in weight. BMI is 23 kg/m2. Pelvic examination shows a normal-sized uterus and no adnexal masses. A urine pregnancy test is negative. Serum prolactin, thyroid-stimulating hormone, and follicle-stimulating hormone concentrations are within the reference ranges. There is no withdrawal bleeding after a 10-day course of medroxyprogesterone acetate, nor after 21 days of oral estrogen followed by a progestin.",
+  "question": "Which of the following is the most appropriate next step to confirm the diagnosis?",
+  "options": [
+   "MRI of the pituitary gland",
+   "Hysteroscopy",
+   "MRI of the pelvis",
+   "Serum anti-Müllerian hormone measurement",
+   "Karyotype analysis"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Failure to bleed even after priming with estrogen and progestin means the endometrium cannot respond or the outflow tract is blocked — the problem is in the uterus, not in the ovary or pituitary. After a curettage of a recently pregnant uterus complicated by infection, intrauterine adhesions (Asherman syndrome) are the likely cause. Hysteroscopy shows the adhesions directly and allows lysis in the same procedure.\n- 원리: <b>What the challenge tests ask</b>: a progestin withdrawal bleed requires an estrogen-primed endometrium and an open outflow tract. No bleed after progestin alone means either too little estrogen (hypothalamic, pituitary, or ovarian failure) or an end-organ problem. Giving estrogen first and then a progestin removes the hormone question: if she still does not bleed, the endometrium or outflow tract is at fault.<br> <b>Why curettage scars the uterus</b>: the endometrium regenerates from its basal layer. Vigorous curettage of a postpartum or post-abortal uterus — when the endometrium is fragile and estrogen is low — can strip the basalis, and infection adds inflammation. The opposing raw surfaces fuse into fibrous adhesions that obliterate the cavity, causing amenorrhea or hypomenorrhea, infertility, and recurrent loss.<br> <b>Normal FSH and prolactin</b> rule out ovarian insufficiency and hyperprolactinemia, so pituitary imaging and AMH add nothing here. Hysteroscopy is both the diagnostic standard and the treatment (adhesiolysis followed by estrogen).\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hysteroscopy (answer)</th><th>Pelvic MRI (closest rival)</th></tr></thead><tbody> <tr><td>What it shows</td><td>Adhesions inside the cavity, directly</td><td>Uterine size, myometrium, adnexa</td></tr> <tr><td>Sensitivity for adhesions</td><td>Diagnostic standard</td><td>Limited for thin filmy adhesions</td></tr> <tr><td>Therapeutic</td><td><b>Yes</b> — adhesiolysis in the same session</td><td>No</td></tr> <tr><td>Best use</td><td>Suspected intrauterine adhesions</td><td>Müllerian anomalies, adenomyosis, fibroid mapping</td></tr> </tbody></table> Once the challenge tests place the lesion inside the uterine cavity, the test that looks into the cavity and treats it wins.\n- 오답 이유:\n  - (A) Pituitary MRI looks for a prolactinoma or other sellar mass. It would be the next step if prolactin were elevated or she had headaches and visual field loss with low gonadotropins.\n  - (C) Pelvic MRI evaluates uterine anatomy, fibroids, and Müllerian anomalies but misses thin intrauterine adhesions. It would be appropriate for primary amenorrhea with suspected uterine agenesis.\n  - (D) Anti-Müllerian hormone reflects ovarian reserve and helps diagnose premature ovarian insufficiency. It would be useful if FSH were elevated with hot flashes, not with a normal FSH and failed estrogen challenge.\n  - (E) Karyotype analysis is used for primary amenorrhea or premature ovarian insufficiency before age 30 (Turner mosaicism, fragile X premutation). It would apply to a 17-year-old who never menstruated with high FSH.\n- 함정: Ordering a hormone or pituitary test after amenorrhea — the failed estrogen-progestin challenge already localizes the problem to the uterus.\n- 학습목표: 소파술 뒤 이차 무월경에서 에스트로겐-프로게스틴 소퇴출혈도 없으면 자궁 유출로 문제(애셔만 증후군)로 보고 자궁경으로 확인한다\n- 근거·출처: Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. 16 Amenorrhea (intrauterine adhesions and the progestin/estrogen challenge) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 392 Menstrual disorders and pelvic pain",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Failure to bleed even after priming with estrogen and progestin means the endometrium cannot respond or the outflow tract is blocked — the problem is in the uterus, not in the ovary or pituitary. After a curettage of a recently pregnant uterus complicated by infection, intrauterine adhesions (Asherman syndrome) are the likely cause. Hysteroscopy shows the adhesions directly and allows lysis in the same procedure."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What the challenge tests ask</b>: a progestin withdrawal bleed requires an estrogen-primed endometrium and an open outflow tract. No bleed after progestin alone means either too little estrogen (hypothalamic, pituitary, or ovarian failure) or an end-organ problem. Giving estrogen first and then a progestin removes the hormone question: if she still does not bleed, the endometrium or outflow tract is at fault.<br> <b>Why curettage scars the uterus</b>: the endometrium regenerates from its basal layer. Vigorous curettage of a postpartum or post-abortal uterus — when the endometrium is fragile and estrogen is low — can strip the basalis, and infection adds inflammation. The opposing raw surfaces fuse into fibrous adhesions that obliterate the cavity, causing amenorrhea or hypomenorrhea, infertility, and recurrent loss.<br> <b>Normal FSH and prolactin</b> rule out ovarian insufficiency and hyperprolactinemia, so pituitary imaging and AMH add nothing here. Hysteroscopy is both the diagnostic standard and the treatment (adhesiolysis followed by estrogen)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hysteroscopy (answer)</th><th>Pelvic MRI (closest rival)</th></tr></thead><tbody> <tr><td>What it shows</td><td>Adhesions inside the cavity, directly</td><td>Uterine size, myometrium, adnexa</td></tr> <tr><td>Sensitivity for adhesions</td><td>Diagnostic standard</td><td>Limited for thin filmy adhesions</td></tr> <tr><td>Therapeutic</td><td><b>Yes</b> — adhesiolysis in the same session</td><td>No</td></tr> <tr><td>Best use</td><td>Suspected intrauterine adhesions</td><td>Müllerian anomalies, adenomyosis, fibroid mapping</td></tr> </tbody></table> Once the challenge tests place the lesion inside the uterine cavity, the test that looks into the cavity and treats it wins."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Pituitary MRI looks for a prolactinoma or other sellar mass. It would be the next step if prolactin were elevated or she had headaches and visual field loss with low gonadotropins.\n(C) Pelvic MRI evaluates uterine anatomy, fibroids, and Müllerian anomalies but misses thin intrauterine adhesions. It would be appropriate for primary amenorrhea with suspected uterine agenesis.\n(D) Anti-Müllerian hormone reflects ovarian reserve and helps diagnose premature ovarian insufficiency. It would be useful if FSH were elevated with hot flashes, not with a normal FSH and failed estrogen challenge.\n(E) Karyotype analysis is used for primary amenorrhea or premature ovarian insufficiency before age 30 (Turner mosaicism, fragile X premutation). It would apply to a 17-year-old who never menstruated with high FSH."
+   },
+   {
+    "k": "함정",
+    "v": "Ordering a hormone or pituitary test after amenorrhea — the failed estrogen-progestin challenge already localizes the problem to the uterus."
+   },
+   {
+    "k": "학습목표",
+    "v": "소파술 뒤 이차 무월경에서 에스트로겐-프로게스틴 소퇴출혈도 없으면 자궁 유출로 문제(애셔만 증후군)로 보고 자궁경으로 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. 16 Amenorrhea (intrauterine adhesions and the progestin/estrogen challenge) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 392 Menstrual disorders and pelvic pain"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "에스트로겐-프로게스틴을 준 뒤에도 소퇴출혈이 없고 감염이 동반된 소파술 병력이 있으므로 자궁강 유착이며, 자궁경으로 확인한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "골반 MRI 는 얇은 자궁강 유착을 잘 보지 못하고 치료를 겸하지 못한다",
+   "steps": 3,
+   "chain": [
+    "임신 음성, 프로락틴·TSH·FSH 정상 → 시상하부·뇌하수체·난소 원인 가능성 낮음",
+    "에스트로겐-프로게스틴 뒤에도 무출혈 → 자궁내막·유출로 문제",
+    "감염 동반 소파술 병력 → 자궁강 유착 → 자궁경"
+   ],
+   "key": [
+    {
+     "item": "dilation and curettage for retained products of conception",
+     "why": "기저층 손상의 원인",
+     "also": []
+    },
+    {
+     "item": "followed by endometritis",
+     "why": "유착 위험을 높인다",
+     "also": []
+    },
+    {
+     "item": "nor after 21 days of oral estrogen followed by a progestin",
+     "why": "자궁 원인으로 국소화",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "follicle-stimulating hormone concentrations are within the reference ranges",
+     "why": "조기 난소부전 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum prolactin",
+     "why": "고프로락틴혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "BMI is 23 kg/m2",
+     "why": "체중 관련 시상하부 무월경 단서가 없다",
+     "also": []
+    }
+   ],
+   "summary": "감염이 동반된 소파술 뒤 무월경이고, 호르몬은 정상이며 에스트로겐-프로게스틴 뒤에도 출혈이 없다. 자궁강 유착(애셔만 증후군)이므로 자궁경으로 확인한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "프로락틴이 높고 두통·시야 결손이 있었다면 뇌하수체 MRI 가 다음 단계다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0244",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "감염 — 임신부의 가피를 동반한 열성 발진",
+  "type": "감염 — 임신부의 가피를 동반한 열성 발진",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "29세 임신부(임신 24주)가 5일 전부터 열과 두통, 근육통이 있어 10월에 내원하였다. 2주 전 밭에서 고구마를 캐는 일을 했다. 체온 39.1 °C, 혈압 112/70 mmHg, 맥박 104회/분이다. 몸통에 반점구진 발진이 있고 왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지가 있으며 그 주위 림프절이 만져진다. 목 경직은 없다. 혈소판 98,000/mm³, AST 88 U/L, ALT 72 U/L, 크레아티닌 0.6 mg/dL 이고 소변검사는 정상이다. 태아 심박동은 145회/분이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "세프트리악손",
+   "레보플록사신",
+   "아지트로마이신",
+   "독시사이클린",
+   "클로람페니콜"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 가을 농작업 뒤의 열·발진·근육통에 겨드랑이의 검은 가피와 국소 림프절 비대, 혈소판 감소와 간효소 상승 — 쯔쯔가무시병이다. 비임신 성인의 1차 약은 독시사이클린이지만, 임신 중기 이후에는 태아 치아 변색·골 성장 영향 우려로 피하고, 임신부에서 효과가 확인된 아지트로마이신을 쓴다.\n- 원리: <b>왜 세포 안으로 들어가는 약이어야 하는가</b>: 쯔쯔가무시병의 원인균 <i>Orientia tsutsugamushi</i> 는 혈관 내피세포 안에서 증식하는 절대 세포내 세균이고, 세포벽에 펩티도글리칸이 거의 없다. 그래서 세포벽 합성을 막는 베타락탐(세프트리악손)은 듣지 않고, 세포 안으로 잘 들어가 리보솜을 막는 테트라사이클린계·마크롤라이드·클로람페니콜·리팜핀이 듣는다.<br> <b>임신에서의 선택</b>: 테트라사이클린은 칼슘과 결합해 발달 중인 치아·뼈에 침착하므로 임신 중기 이후 피한다(치아 착색, 에나멜 형성 저하). 클로람페니콜은 만삭 근처에서 회색아기증후군, 플루오로퀴놀론은 연골 독성 우려와 쯔쯔가무시에 대한 치료 실패 보고가 있다. 아지트로마이신은 국내 임신부 쯔쯔가무시병에서 효과와 안전성이 보고되어 대한감염학회 지침의 임신부 선택약이다.<br> <b>가피</b>: 털진드기 유충이 문 자리의 검은 딱지로, 겨드랑이·사타구니·허리띠 아래처럼 피부가 접히는 곳에 잘 숨어 있어 찾아야 보인다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아지트로마이신(정답)</th><th>독시사이클린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>비임신 성인</td><td>대안(독시사이클린 내성 지역·금기 시)</td><td><b>1차 약</b></td></tr> <tr><td>임신 중기 이후</td><td>선택약 — 태아 안전성 자료 있음</td><td>치아·뼈 침착 우려로 피함</td></tr> <tr><td>작용 부위</td><td>50S 리보솜</td><td>30S 리보솜</td></tr> </tbody></table> 같은 환자가 임신부가 아니었다면 정답은 독시사이클린이다. 「누구인가」가 약을 바꾸는 문항이다.\n- 오답 이유:\n  - ① 세프트리악손은 세포벽 합성을 막는 약이라 세포내 세균인 쯔쯔가무시균에 듣지 않는다. 같은 농작업 노출 뒤 발열이라도 렙토스피라증이었다면 정답이 된다.\n  - ② 레보플록사신은 쯔쯔가무시병에서 치료 실패가 보고되었고 임신 중 연골 독성 우려로 피한다. 비임신 성인의 장티푸스 같은 그람음성균 감염이라면 선택지가 된다.\n  - ④ 독시사이클린은 쯔쯔가무시병의 1차 약이지만 임신 중기 이후 태아 치아·뼈 침착 우려로 피한다. 같은 증상의 비임신 성인이었다면 정답이다.\n  - ⑤ 클로람페니콜도 리케차에 듣지만 골수 억제와 만삭 근처의 회색아기증후군 위험이 있다. 다른 약을 모두 쓸 수 없는 상황에서만 고려하는 대안이다.\n- 함정: 쯔쯔가무시병 = 독시사이클린으로 바로 답하는 것 — 임신부라는 조건이 약을 바꾼다.\n- 학습목표: 임신부의 쯔쯔가무시병에서 독시사이클린 대신 아지트로마이신을 고른다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 187 Rickettsial diseases (scrub typhus) · Kim YS, et al. Scrub typhus during pregnancy and its treatment: a case series and review of the literature. Am J Trop Med Hyg 2006;75:955-959 (PMID 17123995) · 대한감염학회. 항생제 사용 지침 — 쯔쯔가무시증(임신부: 아지트로마이신)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "가을 농작업 뒤의 열·발진·근육통에 겨드랑이의 검은 가피와 국소 림프절 비대, 혈소판 감소와 간효소 상승 — 쯔쯔가무시병이다. 비임신 성인의 1차 약은 독시사이클린이지만, 임신 중기 이후에는 태아 치아 변색·골 성장 영향 우려로 피하고, 임신부에서 효과가 확인된 아지트로마이신을 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 세포 안으로 들어가는 약이어야 하는가</b>: 쯔쯔가무시병의 원인균 <i>Orientia tsutsugamushi</i> 는 혈관 내피세포 안에서 증식하는 절대 세포내 세균이고, 세포벽에 펩티도글리칸이 거의 없다. 그래서 세포벽 합성을 막는 베타락탐(세프트리악손)은 듣지 않고, 세포 안으로 잘 들어가 리보솜을 막는 테트라사이클린계·마크롤라이드·클로람페니콜·리팜핀이 듣는다.<br> <b>임신에서의 선택</b>: 테트라사이클린은 칼슘과 결합해 발달 중인 치아·뼈에 침착하므로 임신 중기 이후 피한다(치아 착색, 에나멜 형성 저하). 클로람페니콜은 만삭 근처에서 회색아기증후군, 플루오로퀴놀론은 연골 독성 우려와 쯔쯔가무시에 대한 치료 실패 보고가 있다. 아지트로마이신은 국내 임신부 쯔쯔가무시병에서 효과와 안전성이 보고되어 대한감염학회 지침의 임신부 선택약이다.<br> <b>가피</b>: 털진드기 유충이 문 자리의 검은 딱지로, 겨드랑이·사타구니·허리띠 아래처럼 피부가 접히는 곳에 잘 숨어 있어 찾아야 보인다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아지트로마이신(정답)</th><th>독시사이클린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>비임신 성인</td><td>대안(독시사이클린 내성 지역·금기 시)</td><td><b>1차 약</b></td></tr> <tr><td>임신 중기 이후</td><td>선택약 — 태아 안전성 자료 있음</td><td>치아·뼈 침착 우려로 피함</td></tr> <tr><td>작용 부위</td><td>50S 리보솜</td><td>30S 리보솜</td></tr> </tbody></table> 같은 환자가 임신부가 아니었다면 정답은 독시사이클린이다. 「누구인가」가 약을 바꾸는 문항이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 세프트리악손은 세포벽 합성을 막는 약이라 세포내 세균인 쯔쯔가무시균에 듣지 않는다. 같은 농작업 노출 뒤 발열이라도 렙토스피라증이었다면 정답이 된다.\n② 레보플록사신은 쯔쯔가무시병에서 치료 실패가 보고되었고 임신 중 연골 독성 우려로 피한다. 비임신 성인의 장티푸스 같은 그람음성균 감염이라면 선택지가 된다.\n④ 독시사이클린은 쯔쯔가무시병의 1차 약이지만 임신 중기 이후 태아 치아·뼈 침착 우려로 피한다. 같은 증상의 비임신 성인이었다면 정답이다.\n⑤ 클로람페니콜도 리케차에 듣지만 골수 억제와 만삭 근처의 회색아기증후군 위험이 있다. 다른 약을 모두 쓸 수 없는 상황에서만 고려하는 대안이다."
+   },
+   {
+    "k": "함정",
+    "v": "쯔쯔가무시병 = 독시사이클린으로 바로 답하는 것 — 임신부라는 조건이 약을 바꾼다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신부의 쯔쯔가무시병에서 독시사이클린 대신 아지트로마이신을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 187 Rickettsial diseases (scrub typhus) · Kim YS, et al. Scrub typhus during pregnancy and its treatment: a case series and review of the literature. Am J Trop Med Hyg 2006;75:955-959 (PMID 17123995) · 대한감염학회. 항생제 사용 지침 — 쯔쯔가무시증(임신부: 아지트로마이신)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "가을 농작업 뒤 열·발진·가피·국소 림프절 비대는 쯔쯔가무시병이고, 임신 24주이므로 독시사이클린 대신 아지트로마이신을 쓴다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "독시사이클린은 비임신 성인의 1차 약이지만 임신 중기 이후 태아 치아·뼈 침착 우려로 피한다",
+   "steps": 2,
+   "chain": [
+    "농작업 노출 + 열·반점구진 발진 + 겨드랑이 검은 가피 → 쯔쯔가무시병",
+    "임신 24주 → 테트라사이클린 회피, 세포내 세균에 듣는 아지트로마이신"
+   ],
+   "key": [
+    {
+     "item": "왼쪽 겨드랑이에 지름 8 mm 의 검은 딱지가 있으며",
+     "why": "쯔쯔가무시병의 가피",
+     "also": []
+    },
+    {
+     "item": "밭에서 고구마를 캐는 일",
+     "why": "가을 털진드기 노출",
+     "also": []
+    },
+    {
+     "item": "혈소판 98,000/mm³",
+     "why": "리케차 감염에서 흔한 혈소판 감소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "크레아티닌 0.6 mg/dL 이고 소변검사는 정상이다",
+     "why": "신증후출혈열·렙토스피라증의 콩팥 침범 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "목 경직은 없다",
+     "why": "수막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "임신 24주",
+     "why": "약 선택을 바꾸는 조건",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "태아 심박동은 145회/분",
+     "why": "태아 상태는 안정적이라 치료 선택에 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "가을 농작업 뒤 열·발진과 겨드랑이의 검은 가피 — 쯔쯔가무시병이다. 임신 24주이므로 독시사이클린 대신 아지트로마이신을 쓴다.",
+   "switch": {
+    "choice": "D",
+    "condition": "같은 증상의 비임신 여성이었다면 독시사이클린이 1차 약이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0243",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "소화기·간담췌 — 쿰스 음성 용혈과 낮은 알칼리인산분해효소를 동반한 급성 간손상",
+  "type": "소화기·간담췌 — 쿰스 음성 용혈과 낮은 알칼리인산분해효소를 동반한 급성 간손상",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-05",
+  "vignette": "A 19-year-old woman comes to the emergency department because of yellow eyes, fatigue, and dark urine for 5 days. Over the past year, her school performance has declined and her handwriting has become shaky. She takes no medications or supplements and does not drink alcohol. Temperature is 37.0°C (98.6°F), pulse is 96/min, and blood pressure is 112/70 mm Hg. Scleral icterus is present. There is a fine tremor of both hands. The liver edge is not palpable. Laboratory studies show a hemoglobin concentration of 9.1 g/dL, reticulocyte count of 6%, negative direct antiglobulin test, total bilirubin of 14.2 mg/dL, AST of 186 U/L, ALT of 74 U/L, alkaline phosphatase of 22 U/L, and INR of 2.1. Serologic tests for hepatitis A, B, C, and E are negative. Antinuclear and anti-smooth muscle antibodies are negative. Serum acetaminophen is undetectable.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Hereditary spherocytosis",
+   "Hereditary hemochromatosis",
+   "Budd-Chiari syndrome",
+   "Wilson disease",
+   "Autoimmune hepatitis"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Acute liver injury with coagulopathy in a young patient, combined with Coombs-negative hemolysis, an unusually low alkaline phosphatase (ALP/bilirubin ratio about 1.5), an AST/ALT ratio above 2, and a year of tremor and declining school performance, is the classic presentation of Wilson disease. Free copper released from necrotic hepatocytes damages red cells, and neuropsychiatric signs reflect copper deposition in the basal ganglia.\n- 원리: <b>Why copper accumulates</b>: ATP7B, a copper-transporting ATPase in hepatocytes, loads copper onto ceruloplasmin and excretes excess copper into bile. Autosomal recessive loss of ATP7B traps copper in the liver. When hepatocytes saturate or die, non-ceruloplasmin-bound copper spills into the blood and is deposited in the brain (putamen, giving tremor and dysarthria), cornea (Kayser-Fleischer rings), and kidney.<br> <b>Why hemolysis and a low ALP</b>: a burst of free copper oxidizes red cell membranes and hemoglobin, causing Coombs-negative hemolysis that raises bilirubin out of proportion to the liver injury. Copper also appears to inhibit alkaline phosphatase, and zinc (its cofactor) may be displaced, so ALP is strikingly low. An ALP/total bilirubin ratio below 4 together with an AST/ALT ratio above 2.2 identifies Wilsonian acute liver failure with high accuracy.<br> <b>Next steps</b>: serum ceruloplasmin, 24-hour urinary copper, slit-lamp examination; acute liver failure from Wilson disease usually needs urgent transplant evaluation.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Wilson disease (answer)</th><th>Autoimmune hepatitis (closest rival)</th></tr></thead><tbody> <tr><td>Hemolysis</td><td><b>Coombs-negative hemolysis</b> common in acute presentation</td><td>Not typical</td></tr> <tr><td>Alkaline phosphatase</td><td>Very low (ALP/bilirubin &lt; 4)</td><td>Normal or mildly raised</td></tr> <tr><td>Neurologic signs</td><td>Tremor, dysarthria, school decline</td><td>None</td></tr> <tr><td>Serology</td><td>Autoantibodies negative</td><td>ANA/anti-smooth muscle usually positive, high IgG</td></tr> </tbody></table> Both affect young women and can present as acute liver failure. Hemolysis, a low ALP, and neurologic signs tilt firmly toward copper.\n- 오답 이유:\n  - (A) Hereditary spherocytosis causes Coombs-negative hemolysis and jaundice but leaves transaminases and INR normal. It would fit if the bilirubin were mostly indirect with a normal INR and splenomegaly.\n  - (B) Hereditary hemochromatosis injures the liver slowly through iron deposition and presents in middle age with diabetes or skin bronzing. It would be the answer in a 50-year-old man with a transferrin saturation of 80%.\n  - (C) Budd-Chiari syndrome causes acute hepatitis with painful hepatomegaly and ascites from hepatic vein thrombosis. It would be chosen if she had right upper quadrant pain, an enlarged tender liver, and ascites.\n  - (E) Autoimmune hepatitis also presents as acute hepatitis in young women but usually with ANA or anti-smooth muscle antibodies and high IgG. It would be favored with positive autoantibodies and no hemolysis or tremor.\n- 함정: Choosing autoimmune hepatitis because of the patient's age and sex — Coombs-negative hemolysis, a very low ALP, and tremor point to copper.\n- 학습목표: 젊은 환자의 급성 간손상에 쿰스 음성 용혈, 낮은 알칼리인산분해효소, 신경 증상이 함께 있으면 윌슨병을 떠올린다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 416 Wilson's disease · Korman JD, et al. Screening for Wilson disease in acute liver failure: a comparison of currently available diagnostic tests. Hepatology 2008;48:1167-1174 (PMID 18798336)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Acute liver injury with coagulopathy in a young patient, combined with Coombs-negative hemolysis, an unusually low alkaline phosphatase (ALP/bilirubin ratio about 1.5), an AST/ALT ratio above 2, and a year of tremor and declining school performance, is the classic presentation of Wilson disease. Free copper released from necrotic hepatocytes damages red cells, and neuropsychiatric signs reflect copper deposition in the basal ganglia."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why copper accumulates</b>: ATP7B, a copper-transporting ATPase in hepatocytes, loads copper onto ceruloplasmin and excretes excess copper into bile. Autosomal recessive loss of ATP7B traps copper in the liver. When hepatocytes saturate or die, non-ceruloplasmin-bound copper spills into the blood and is deposited in the brain (putamen, giving tremor and dysarthria), cornea (Kayser-Fleischer rings), and kidney.<br> <b>Why hemolysis and a low ALP</b>: a burst of free copper oxidizes red cell membranes and hemoglobin, causing Coombs-negative hemolysis that raises bilirubin out of proportion to the liver injury. Copper also appears to inhibit alkaline phosphatase, and zinc (its cofactor) may be displaced, so ALP is strikingly low. An ALP/total bilirubin ratio below 4 together with an AST/ALT ratio above 2.2 identifies Wilsonian acute liver failure with high accuracy.<br> <b>Next steps</b>: serum ceruloplasmin, 24-hour urinary copper, slit-lamp examination; acute liver failure from Wilson disease usually needs urgent transplant evaluation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Wilson disease (answer)</th><th>Autoimmune hepatitis (closest rival)</th></tr></thead><tbody> <tr><td>Hemolysis</td><td><b>Coombs-negative hemolysis</b> common in acute presentation</td><td>Not typical</td></tr> <tr><td>Alkaline phosphatase</td><td>Very low (ALP/bilirubin &lt; 4)</td><td>Normal or mildly raised</td></tr> <tr><td>Neurologic signs</td><td>Tremor, dysarthria, school decline</td><td>None</td></tr> <tr><td>Serology</td><td>Autoantibodies negative</td><td>ANA/anti-smooth muscle usually positive, high IgG</td></tr> </tbody></table> Both affect young women and can present as acute liver failure. Hemolysis, a low ALP, and neurologic signs tilt firmly toward copper."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hereditary spherocytosis causes Coombs-negative hemolysis and jaundice but leaves transaminases and INR normal. It would fit if the bilirubin were mostly indirect with a normal INR and splenomegaly.\n(B) Hereditary hemochromatosis injures the liver slowly through iron deposition and presents in middle age with diabetes or skin bronzing. It would be the answer in a 50-year-old man with a transferrin saturation of 80%.\n(C) Budd-Chiari syndrome causes acute hepatitis with painful hepatomegaly and ascites from hepatic vein thrombosis. It would be chosen if she had right upper quadrant pain, an enlarged tender liver, and ascites.\n(E) Autoimmune hepatitis also presents as acute hepatitis in young women but usually with ANA or anti-smooth muscle antibodies and high IgG. It would be favored with positive autoantibodies and no hemolysis or tremor."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing autoimmune hepatitis because of the patient's age and sex — Coombs-negative hemolysis, a very low ALP, and tremor point to copper."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 환자의 급성 간손상에 쿰스 음성 용혈, 낮은 알칼리인산분해효소, 신경 증상이 함께 있으면 윌슨병을 떠올린다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 416 Wilson's disease · Korman JD, et al. Screening for Wilson disease in acute liver failure: a comparison of currently available diagnostic tests. Hepatology 2008;48:1167-1174 (PMID 18798336)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "젊은 환자의 급성 간손상·응고장애에 쿰스 음성 용혈, 매우 낮은 ALP, AST/ALT > 2, 1년간의 떨림이 있으므로 윌슨병이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "자가면역 간염은 자가항체가 대개 양성이고 용혈·떨림·낮은 ALP 가 없다",
+   "steps": 3,
+   "chain": [
+    "INR 2.1·빌리루빈 14.2 → 급성 간손상, 약물·바이러스 음성",
+    "쿰스 음성 용혈 + ALP 22(ALP/빌리루빈 약 1.5) + AST/ALT > 2 → 구리에 의한 급성 간부전 양상",
+    "1년간의 손떨림·학업 저하 → 기저핵 침범까지 합쳐 윌슨병"
+   ],
+   "key": [
+    {
+     "item": "negative direct antiglobulin test",
+     "why": "쿰스 음성 용혈 — 유리 구리의 적혈구 손상",
+     "also": []
+    },
+    {
+     "item": "alkaline phosphatase of 22 U/L",
+     "why": "급성 간손상에서 이례적으로 낮은 ALP",
+     "also": []
+    },
+    {
+     "item": "her handwriting has become shaky",
+     "why": "기저핵 구리 침착의 신경 증상",
+     "also": []
+    },
+    {
+     "item": "AST of 186 U/L, ALT of 74 U/L",
+     "why": "AST/ALT > 2",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Antinuclear and anti-smooth muscle antibodies are negative",
+     "why": "자가면역 간염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum acetaminophen is undetectable",
+     "why": "아세트아미노펜 간손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "INR of 2.1",
+     "why": "간기능 부전 — 간이식 평가가 필요할 수 있는 중증도",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "젊은 환자의 급성 간손상에 쿰스 음성 용혈, 매우 낮은 ALP, 1년간의 떨림이 겹친다. 자가항체는 음성이므로 윌슨병이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "ANA 1:640·IgG 상승이 있고 용혈·떨림이 없었다면 자가면역 간염이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0242",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·호흡기·응급·산과·신경·소화기·감염·부인과·소아·내분비·약리·정신)",
+  "subtopic": "신경 — 이마까지 침범한 급성 말초 안면마비의 치료",
+  "type": "신경 — 이마까지 침범한 급성 말초 안면마비의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-05",
+  "vignette": "34세 남자가 어제 아침 일어나 보니 오른쪽 얼굴이 처져 있어 내원하였다. 물을 마시면 오른쪽 입가로 흐르고, 증상 전날 오른쪽 귀 뒤가 조금 아팠다고 한다. 혈압 126/80 mmHg, 체온 36.8 °C 이다. 오른쪽 이마에 주름을 지을 수 없고 오른쪽 눈이 완전히 감기지 않는다. 팔다리 근력과 감각, 말하기, 삼키기는 정상이다. 바깥귀길과 귓바퀴에 물집은 없고 고막은 정상이다. 공복 혈당은 92 mg/dL 이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "경구 아시클로비르 단독",
+   "정맥 알테플라제",
+   "안면신경 감압술",
+   "보툴리눔 독소 주사",
+   "경구 프레드니솔론"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 이마 주름까지 잡히지 않는 일측 안면마비가 하룻밤 사이에 생겼고, 다른 신경 결손과 물집이 없다 — 특발성 말초 안면마비(벨마비)다. 증상 시작 72시간 안에 경구 프레드니솔론(예: 60 mg/일 5일 뒤 감량, 총 10일)을 시작하면 완전 회복률이 높아진다. 감기지 않는 눈은 인공눈물과 안대로 각막을 보호한다.\n- 원리: <b>이마가 말초와 중추를 가른다</b>: 얼굴 아래쪽 근육을 맡은 안면신경핵 부분은 반대쪽 운동피질에서만 신호를 받지만, 이마를 맡은 부분은 양쪽 대뇌에서 신호를 받는다. 그래서 뇌졸중처럼 한쪽 피질·피질연수로가 손상되면 이마는 반대쪽 대뇌의 지배로 살아남고, 안면신경핵이나 그 아래 신경 자체가 손상되면 이마까지 마비된다.<br> <b>벨마비의 기전</b>: 안면신경이 측두골 안의 좁은 안면신경관(특히 미로 부분)을 지나는데, 바이러스(주로 단순포진) 재활성화에 의한 염증으로 신경이 부으면 이 관 안에서 눌려 허혈·탈수초가 생긴다. 스테로이드는 이 부종과 염증을 줄여 압박을 덜어 준다. 무작위 시험에서 72시간 안의 프레드니솔론이 9개월 완전 회복률을 높였고, 항바이러스제 단독은 효과가 없었다.<br> <b>람세이 헌트 증후군</b>(귀의 물집, 대상포진)은 예후가 더 나빠 스테로이드에 항바이러스제를 함께 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">경구 프레드니솔론(정답)</th><th>아시클로비르 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>근거</td><td>72시간 안 시작 시 완전 회복률 상승(무작위 시험)</td><td>단독 사용은 위약과 차이 없음</td></tr> <tr><td>표적</td><td>신경관 안의 부종·염증</td><td>바이러스 증식</td></tr> <tr><td>쓰는 상황</td><td>모든 벨마비(금기 없으면)</td><td>귀에 물집 — 람세이 헌트 증후군에서 스테로이드에 추가</td></tr> </tbody></table> 항바이러스제는 스테로이드를 「대신」하지 못한다. 물집이 있거나 마비가 매우 심할 때 「더해」 쓴다.\n- 오답 이유:\n  - ① 아시클로비르 단독은 벨마비에서 위약과 회복률 차이가 없다. 바깥귀길에 물집이 있는 람세이 헌트 증후군이라면 스테로이드와 함께 쓰는 선택지가 된다.\n  - ② 정맥 알테플라제는 4.5시간 안에 온 급성 허혈뇌졸중의 치료다. 이마는 움직이고 입가만 처지는 중추성 마비와 팔 위약이 함께 있었다면 고려했을 것이다.\n  - ③ 안면신경 감압술은 신경전도 검사에서 90 % 이상 변성된 완전 마비에서 일부 기관만 시행하는 수술이다. 2주 뒤 전기 검사에서 심한 변성이 확인되었다면 논의할 수 있다.\n  - ④ 보툴리눔 독소 주사는 회복 뒤 남은 연합운동이나 반측 안면연축을 치료하는 데 쓴다. 수개월 뒤 눈을 감을 때 입꼬리가 함께 당겨진다면 맞는 선택이다.\n- 함정: 안면마비를 바이러스 탓으로만 보고 항바이러스제 단독을 고르는 것 — 회복률을 올리는 것은 스테로이드다.\n- 학습목표: 이마까지 침범한 급성 일측 안면마비를 말초성(벨마비)으로 판단하고 72시간 안의 경구 스테로이드를 고른다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 441 Disorders of the facial nerve and other cranial nerves · Sullivan FM, et al. Early treatment with prednisolone or acyclovir in Bell's palsy. N Engl J Med 2007;357:1598-1607 (PMID 17942873) · Baugh RF, et al. Clinical practice guideline: Bell's palsy. Otolaryngol Head Neck Surg 2013;149(3 Suppl):S1-27 (PMID 24189771)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "이마 주름까지 잡히지 않는 일측 안면마비가 하룻밤 사이에 생겼고, 다른 신경 결손과 물집이 없다 — 특발성 말초 안면마비(벨마비)다. 증상 시작 72시간 안에 경구 프레드니솔론(예: 60 mg/일 5일 뒤 감량, 총 10일)을 시작하면 완전 회복률이 높아진다. 감기지 않는 눈은 인공눈물과 안대로 각막을 보호한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>이마가 말초와 중추를 가른다</b>: 얼굴 아래쪽 근육을 맡은 안면신경핵 부분은 반대쪽 운동피질에서만 신호를 받지만, 이마를 맡은 부분은 양쪽 대뇌에서 신호를 받는다. 그래서 뇌졸중처럼 한쪽 피질·피질연수로가 손상되면 이마는 반대쪽 대뇌의 지배로 살아남고, 안면신경핵이나 그 아래 신경 자체가 손상되면 이마까지 마비된다.<br> <b>벨마비의 기전</b>: 안면신경이 측두골 안의 좁은 안면신경관(특히 미로 부분)을 지나는데, 바이러스(주로 단순포진) 재활성화에 의한 염증으로 신경이 부으면 이 관 안에서 눌려 허혈·탈수초가 생긴다. 스테로이드는 이 부종과 염증을 줄여 압박을 덜어 준다. 무작위 시험에서 72시간 안의 프레드니솔론이 9개월 완전 회복률을 높였고, 항바이러스제 단독은 효과가 없었다.<br> <b>람세이 헌트 증후군</b>(귀의 물집, 대상포진)은 예후가 더 나빠 스테로이드에 항바이러스제를 함께 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">경구 프레드니솔론(정답)</th><th>아시클로비르 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>근거</td><td>72시간 안 시작 시 완전 회복률 상승(무작위 시험)</td><td>단독 사용은 위약과 차이 없음</td></tr> <tr><td>표적</td><td>신경관 안의 부종·염증</td><td>바이러스 증식</td></tr> <tr><td>쓰는 상황</td><td>모든 벨마비(금기 없으면)</td><td>귀에 물집 — 람세이 헌트 증후군에서 스테로이드에 추가</td></tr> </tbody></table> 항바이러스제는 스테로이드를 「대신」하지 못한다. 물집이 있거나 마비가 매우 심할 때 「더해」 쓴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아시클로비르 단독은 벨마비에서 위약과 회복률 차이가 없다. 바깥귀길에 물집이 있는 람세이 헌트 증후군이라면 스테로이드와 함께 쓰는 선택지가 된다.\n② 정맥 알테플라제는 4.5시간 안에 온 급성 허혈뇌졸중의 치료다. 이마는 움직이고 입가만 처지는 중추성 마비와 팔 위약이 함께 있었다면 고려했을 것이다.\n③ 안면신경 감압술은 신경전도 검사에서 90 % 이상 변성된 완전 마비에서 일부 기관만 시행하는 수술이다. 2주 뒤 전기 검사에서 심한 변성이 확인되었다면 논의할 수 있다.\n④ 보툴리눔 독소 주사는 회복 뒤 남은 연합운동이나 반측 안면연축을 치료하는 데 쓴다. 수개월 뒤 눈을 감을 때 입꼬리가 함께 당겨진다면 맞는 선택이다."
+   },
+   {
+    "k": "함정",
+    "v": "안면마비를 바이러스 탓으로만 보고 항바이러스제 단독을 고르는 것 — 회복률을 올리는 것은 스테로이드다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이마까지 침범한 급성 일측 안면마비를 말초성(벨마비)으로 판단하고 72시간 안의 경구 스테로이드를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 441 Disorders of the facial nerve and other cranial nerves · Sullivan FM, et al. Early treatment with prednisolone or acyclovir in Bell's palsy. N Engl J Med 2007;357:1598-1607 (PMID 17942873) · Baugh RF, et al. Clinical practice guideline: Bell's palsy. Otolaryngol Head Neck Surg 2013;149(3 Suppl):S1-27 (PMID 24189771)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "이마까지 침범한 급성 일측 안면마비이고 다른 신경 결손과 물집이 없으므로 벨마비이며, 72시간 안에 경구 프레드니솔론을 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "항바이러스제는 단독으로는 회복률을 높이지 못하고, 물집(람세이 헌트)이 있을 때 스테로이드에 더한다",
+   "steps": 2,
+   "chain": [
+    "이마 주름 불가 + 다른 신경 결손 없음 → 말초성 안면마비, 물집 없음 → 벨마비",
+    "발병 하루 → 72시간 안 경구 프레드니솔론"
+   ],
+   "key": [
+    {
+     "item": "오른쪽 이마에 주름을 지을 수 없고",
+     "why": "이마 침범 — 말초성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "팔다리 근력과 감각, 말하기, 삼키기는 정상이다",
+     "why": "뇌졸중 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "바깥귀길과 귓바퀴에 물집은 없고",
+     "why": "람세이 헌트 증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "어제 아침",
+     "why": "72시간 안 — 스테로이드 효과가 있는 시기",
+     "also": []
+    },
+    {
+     "item": "공복 혈당은 92 mg/dL",
+     "why": "당뇨가 없어 스테로이드 사용에 걸림이 적다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "오른쪽 귀 뒤가 조금 아팠다",
+     "why": "벨마비에 흔한 전구 증상으로 진단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "이마까지 마비된 급성 일측 안면마비에 다른 신경 결손·물집이 없다 — 벨마비다. 72시간 안이므로 경구 프레드니솔론을 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "이마는 움직이고 입가만 처지며 오른팔 위약이 2시간 전 시작되었다면 정맥 알테플라제를 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261005T202534Z_일일영상_2026-10-06_12units_12q_5772b17a",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0229",
   "exam": "imaging",
   "style": "usmle_style",
