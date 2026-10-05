@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 1458" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="통로와 칸 — 머리의 길과 다리 관절 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 15회차 인제스트 섹션 a2-s15 §코안 가쪽벽 · §인두의 구분 · §후두절단면 · §관절주머니와 인대 · §십자인대 · §관절반달 + SESSION_DETAILS 응용과제(후두경 영상 비교 · 십자인대 손상 확인법) -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="654" height="1458" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">통로와 칸 — 머리의 길과 다리 관절<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> passages &amp; ligaments</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">15회차 · 머리는 공기·음식이 지나는 길을 칸으로 나누고, 다리 관절은 인대가 칸 없이 붙잡는다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 406,198 H 419 V 125 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,198 H 419 V 206 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,198 H 419 V 280 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,423 H 419 V 350 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,423 H 419 V 430 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,423 H 419 V 506 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,664 H 419 V 570 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,664 H 419 V 634 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,664 H 419 V 698 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,664 H 419 V 767 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,926 H 419 V 842 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,926 H 419 V 924 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,926 H 419 V 1020 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1216 H 419 V 1108 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1216 H 419 V 1183 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1216 H 419 V 1258 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1216 H 419 V 1333 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,706 H 219 V 198 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,706 H 219 V 423 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,706 H 219 V 664 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,706 H 219 V 926 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,706 H 219 V 1216 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="687" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="707" fill="#7fd4a8" font-size="12" class="kr">통로와 칸</text>
+  <rect x="232" y="160" width="174" height="77" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="180" fill="#7fd4a8" font-size="12" class="kr">코안 가쪽벽에 열리는 것 ★</text>
+  <text x="242" y="195" fill="#5fae87" font-size="9">openings of the lateral nasal</text>
+  <text x="242" y="206" fill="#5fae87" font-size="9">wall</text>
+  <text x="242" y="217" fill="#6f8299" font-size="9">응용과제 — 뇌하수체 접근(나비굴</text>
+  <text x="242" y="228" fill="#6f8299" font-size="9">경유)</text>
+  <rect x="232" y="396" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="416" fill="#7fd4a8" font-size="12" class="kr">인두의 세 부분 ★</text>
+  <text x="242" y="431" fill="#5fae87" font-size="9">parts of the pharynx</text>
+  <text x="242" y="442" fill="#6f8299" font-size="9">물렁입천장·후두덮개가 경계</text>
+  <rect x="232" y="631" width="174" height="66" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="651" fill="#7fd4a8" font-size="12" class="kr">후두안의 칸 ★</text>
+  <text x="242" y="666" fill="#5fae87" font-size="9">compartments of the laryngeal</text>
+  <text x="242" y="677" fill="#5fae87" font-size="9">cavity</text>
+  <text x="242" y="688" fill="#6f8299" font-size="9">응용과제 — 후두경 영상</text>
+  <rect x="232" y="904" width="174" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="924" fill="#7fd4a8" font-size="12" class="kr">엉덩관절의 인대 ★</text>
+  <text x="242" y="940" fill="#5fae87" font-size="9">ligaments of the hip joint</text>
+  <rect x="232" y="1188" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1208" fill="#7fd4a8" font-size="12" class="kr">무릎의 인대 ★</text>
+  <text x="242" y="1224" fill="#5fae87" font-size="9">ligaments of the knee</text>
+  <text x="242" y="1234" fill="#6f8299" font-size="9">응용과제 — 십자인대 손상 확인법</text>
+  <rect x="432" y="92" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#7fd4a8" font-size="12" class="kr">나비벌집오목 ★</text>
+  <text x="442" y="127" fill="#5fae87" font-size="9">sphenoethmoidal recess</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">나비굴구멍</tspan> — 경나비굴 뇌하수체</text>
+  <text x="442" y="149" fill="#6f8299" font-size="9">수술의 입구</text>
+  <rect x="432" y="167" width="170" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="187" fill="#7fd4a8" font-size="12" class="kr">반달틈새 ★</text>
+  <text x="442" y="202" fill="#5fae87" font-size="9">semilunar hiatus</text>
+  <text x="442" y="213" fill="#6f8299" font-size="9">중간콧길 · <tspan fill="#e6edf3" font-weight="700">벌집뼈융기</tspan>와</text>
+  <text x="442" y="224" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">갈고리돌기</tspan> 사이 —</text>
+  <text x="442" y="235" fill="#6f8299" font-size="9">위턱굴·이마굴·앞벌집</text>
+  <rect x="432" y="253" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="273" fill="#7fd4a8" font-size="12" class="kr">아래콧길 ★</text>
+  <text x="442" y="288" fill="#5fae87" font-size="9">inferior nasal meatus</text>
+  <text x="442" y="299" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">코눈물관</tspan> — 울면 콧물이 난다</text>
+  <rect x="432" y="317" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="337" fill="#7fd4a8" font-size="12" class="kr">코인두 ★</text>
+  <text x="442" y="352" fill="#5fae87" font-size="9">nasopharynx</text>
+  <text x="442" y="363" fill="#6f8299" font-size="9">물렁입천장 위 — <tspan fill="#e6edf3" font-weight="700">귀관인두구멍</tspan> ·</text>
+  <text x="442" y="374" fill="#6f8299" font-size="9">인두편도</text>
+  <rect x="432" y="392" width="170" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="412" fill="#7fd4a8" font-size="12" class="kr">입인두 ★</text>
+  <text x="442" y="427" fill="#5fae87" font-size="9">oropharynx</text>
+  <text x="442" y="438" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">목구멍편도</tspan> —</text>
+  <text x="442" y="449" fill="#6f8299" font-size="9">입천장혀활(앞)·입천장인두활(뒤)</text>
+  <text x="442" y="460" fill="#6f8299" font-size="9">사이</text>
+  <rect x="432" y="478" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="498" fill="#7fd4a8" font-size="12" class="kr">후두인두 ★</text>
+  <text x="442" y="513" fill="#5fae87" font-size="9">laryngopharynx</text>
+  <text x="442" y="524" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">조롱박오목</tspan> — 생선가시가 걸리는 곳</text>
+  <rect x="432" y="542" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="562" fill="#7fd4a8" font-size="12" class="kr">후두안뜰</text>
+  <text x="442" y="577" fill="#5fae87" font-size="9">laryngeal vestibule</text>
+  <text x="442" y="588" fill="#6f8299" font-size="9">후두어귀 → 안뜰주름 위</text>
+  <rect x="432" y="606" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="626" fill="#7fd4a8" font-size="12" class="kr">안뜰주름 ★</text>
+  <text x="442" y="641" fill="#5fae87" font-size="9">vestibular fold</text>
+  <text x="442" y="652" fill="#6f8299" font-size="9">가성대 — 소리를 내지 않는다</text>
+  <rect x="432" y="670" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="690" fill="#7fd4a8" font-size="12" class="kr">후두실 ★</text>
+  <text x="442" y="705" fill="#5fae87" font-size="9">laryngeal ventricle</text>
+  <text x="442" y="716" fill="#6f8299" font-size="9">두 주름 사이 옆 주머니</text>
+  <rect x="432" y="734" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="754" fill="#7fd4a8" font-size="12" class="kr">성대주름 · 성대틈새 ★</text>
+  <text x="442" y="769" fill="#5fae87" font-size="9">vocal fold / rima glottidis</text>
+  <text x="442" y="780" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">성대인대 + 성대근</tspan> — 후두에서 가장</text>
+  <text x="442" y="791" fill="#6f8299" font-size="9">좁은 틈</text>
+  <rect x="432" y="809" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="829" fill="#7fd4a8" font-size="12" class="kr">엉덩넙다리인대 ★</text>
+  <text x="442" y="844" fill="#5fae87" font-size="9">iliofemoral lig.</text>
+  <text x="442" y="855" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">Y인대</tspan> · 몸에서 가장 강하다 — 서</text>
+  <text x="442" y="866" fill="#6f8299" font-size="9">있을 때 폄을 막는다</text>
+  <rect x="432" y="884" width="170" height="81" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="904" fill="#7fd4a8" font-size="12" class="kr">두덩넙다리인대 ·</text>
+  <text x="442" y="919" fill="#7fd4a8" font-size="12" class="kr">궁둥넙다리인대</text>
+  <text x="442" y="934" fill="#5fae87" font-size="9">pubofemoral / ischiofemoral</text>
+  <text x="442" y="945" fill="#5fae87" font-size="9">ligg.</text>
+  <text x="442" y="956" fill="#6f8299" font-size="9">아래앞 · 뒤 — 나선으로 감긴다</text>
+  <rect x="432" y="974" width="170" height="92" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="994" fill="#7fd4a8" font-size="12" class="kr">절구테두리 ·</text>
+  <text x="442" y="1009" fill="#7fd4a8" font-size="12" class="kr">절구가로인대 ★</text>
+  <text x="442" y="1024" fill="#5fae87" font-size="9">acetabular labrum / transverse</text>
+  <text x="442" y="1035" fill="#5fae87" font-size="9">acetabular lig.</text>
+  <text x="442" y="1046" fill="#6f8299" font-size="9">절구를 깊게 · 패임을 다리처럼</text>
+  <text x="442" y="1057" fill="#6f8299" font-size="9">덮는다</text>
+  <rect x="432" y="1075" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1095" fill="#7fd4a8" font-size="12" class="kr">앞십자인대 ★</text>
+  <text x="442" y="1110" fill="#5fae87" font-size="9">anterior cruciate lig.</text>
+  <text x="442" y="1121" fill="#6f8299" font-size="9">정강 앞 → 넙다리 <tspan fill="#e6edf3" font-weight="700">가쪽관절융기</tspan></text>
+  <text x="442" y="1132" fill="#6f8299" font-size="9">안쪽면<tspan fill="#e6edf3" font-weight="700"> — </tspan>앞당김검사 · Lachman</text>
+  <rect x="432" y="1150" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1170" fill="#7fd4a8" font-size="12" class="kr">뒤십자인대 ★</text>
+  <text x="442" y="1185" fill="#5fae87" font-size="9">posterior cruciate lig.</text>
+  <text x="442" y="1196" fill="#6f8299" font-size="9">정강 뒤 → 넙다리 <tspan fill="#e6edf3" font-weight="700">안쪽관절융기</tspan></text>
+  <text x="442" y="1207" fill="#6f8299" font-size="9">가쪽면<tspan fill="#e6edf3" font-weight="700"> — 뒤당김검사</tspan></text>
+  <rect x="432" y="1225" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1245" fill="#7fd4a8" font-size="12" class="kr">안쪽곁인대 ★</text>
+  <text x="442" y="1260" fill="#5fae87" font-size="9">tibial collateral lig.</text>
+  <text x="442" y="1271" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">안쪽반달과 붙는다</tspan> — 함께</text>
+  <text x="442" y="1282" fill="#6f8299" font-size="9">찢긴다(불행 삼징)</text>
+  <rect x="432" y="1300" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1320" fill="#7fd4a8" font-size="12" class="kr">가쪽곁인대 ★</text>
+  <text x="442" y="1335" fill="#5fae87" font-size="9">fibular collateral lig.</text>
+  <text x="442" y="1346" fill="#6f8299" font-size="9">반달과 <tspan fill="#e6edf3" font-weight="700">떨어진</tspan> 끈 — 오금근 힘줄이</text>
+  <text x="442" y="1357" fill="#6f8299" font-size="9">사이를 지난다</text>
+  <line x1="26" y1="1376" x2="628" y2="1376" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1388" fill="#93a4b7" font-size="10.5">콧길에 열리는 것: 나비벌집오목 = <tspan fill="#e6edf3" font-weight="700">나비굴</tspan> · 위콧길 = <tspan fill="#e6edf3" font-weight="700">뒤벌집</tspan> · 중간콧길(반달틈새) = <tspan fill="#e6edf3" font-weight="700">이마·위턱·앞벌집</tspan> · 아래콧길 = <tspan fill="#e6edf3" font-weight="700">코눈물관</tspan>.</text>
+  <text x="26" y="1406" fill="#93a4b7" font-size="10.5">후두안은 <tspan fill="#e6edf3" font-weight="700">안뜰주름 · 성대주름</tspan> 두 쌍으로 세 칸 — 그 사이 옆 주머니가 <tspan fill="#e6edf3" font-weight="700">후두실</tspan>이다.</text>
+  <text x="26" y="1424" fill="#93a4b7" font-size="10.5">앞십자인대는 정강뼈가 <tspan fill="#e6edf3" font-weight="700">앞으로</tspan>, 뒤십자인대는 <tspan fill="#e6edf3" font-weight="700">뒤로</tspan> 빠지는 것을 막는다 — 이름은 <tspan fill="#e6edf3" font-weight="700">정강뼈에 붙는 자리</tspan> 기준.</text>
+</svg>
