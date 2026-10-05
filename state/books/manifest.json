@@ -89,9 +89,9 @@
    ]
   },
   "피부과": {
-   "hash": "c7e524b780e9765e5085",
-   "version": 10,
-   "date": "2026-09-30",
+   "hash": "3e1fba47d4f8800ff2d7",
+   "version": 11,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_피부과.pdf",
    "pages": 14,
    "template_version": 11,
@@ -135,9 +135,9 @@
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "83d385102ef9211e8de1ce8e6210101e",
-    "version": 10,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "973557dc2f80e201ecea5d67e0d60ed1",
+    "version": 11,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -149,18 +149,15 @@
     "MedKOS_학습서_피부과_v7_2026-09-28.pdf",
     "MedKOS_학습서_피부과_v8_2026-09-28.pdf",
     "MedKOS_학습서_피부과_v9_2026-09-29.pdf",
-    "MedKOS_학습서_피부과_v10_2026-09-30.pdf"
+    "MedKOS_학습서_피부과_v10_2026-09-30.pdf",
+    "MedKOS_학습서_피부과_v11_2026-10-05.pdf"
    ],
-   "changes": [
-    "내용 갱신: 판상건선 — 임신 계획·고혈압이 전신치료를 고른다 (정리본 v2 → v4)",
-    "내용 갱신: 결절홍반 — 정강이 압통 결절은 원인 검사가 먼저 (정리본 v2 → v3)",
-    "내용 갱신: 옴 — 증상 없는 접촉자까지 동시에 살충제로 (정리본 v2 → v3)"
-   ]
+   "changes": []
   },
   "신장내과": {
-   "hash": "c12b85a603d9d594b276",
-   "version": 7,
-   "date": "2026-10-03",
+   "hash": "3fa01075ae5ab3d127ca",
+   "version": 8,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -178,17 +175,17 @@
      "concept_version": 3
     },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
-     "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 신염증후군을 가르기",
+     "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 가른다",
      "page": 6,
-     "concept_hash": "ea1fc9373fe34f1b",
-     "concept_version": 2
+     "concept_hash": "b659324742ec563f",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "ccb07a25e7cb28f769437d0baebef33e",
-    "version": 7,
-    "uploaded": "2026-10-03T10:04:44+09:00"
+    "md5": "c358e03bc2ac7e83b4b3dd6c4ab22411",
+    "version": 8,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -197,16 +194,17 @@
     "MedKOS_학습서_신장내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_신장내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_신장내과_v6_2026-10-02.pdf",
-    "MedKOS_학습서_신장내과_v7_2026-10-03.pdf"
+    "MedKOS_학습서_신장내과_v7_2026-10-03.pdf",
+    "MedKOS_학습서_신장내과_v8_2026-10-05.pdf"
    ],
    "changes": [
-    "내용 갱신: 고칼륨혈증 — 생리에서 첫 처치·재평가까지 (정리본 v2 → v3)"
+    "내용 갱신: 연쇄구균감염후사구체신염 — 잠복기와 C3로 가른다 (정리본 v2 → v3)"
    ]
   },
   "소아청소년과": {
-   "hash": "b68554bbc312a892f9e9",
-   "version": 11,
-   "date": "2026-10-04",
+   "hash": "7dd558ff7c3cc03ce66e",
+   "version": 12,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_소아청소년과.pdf",
    "pages": 19,
    "template_version": 11,
@@ -244,7 +242,7 @@
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
      "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
      "page": 13,
-     "concept_hash": "85cda6084703e5c3",
+     "concept_hash": "ebb80750e9115b66",
      "concept_version": 1
     },
     "cn.peds.stec-hus.supportive-no-antibiotics": {
@@ -268,9 +266,9 @@
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "7cf01e5c38a479f452084404523dece9",
-    "version": 11,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "f4eabd43c26fc1cbfd4eedbccee8364f",
+    "version": 12,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -283,16 +281,17 @@
     "MedKOS_학습서_소아청소년과_v8_2026-09-28.pdf",
     "MedKOS_학습서_소아청소년과_v9_2026-09-29.pdf",
     "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf",
-    "MedKOS_학습서_소아청소년과_v11_2026-10-04.pdf"
+    "MedKOS_학습서_소아청소년과_v11_2026-10-04.pdf",
+    "MedKOS_학습서_소아청소년과_v12_2026-10-05.pdf"
    ],
    "changes": [
     "내용 수정: 비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만"
    ]
   },
   "안과": {
-   "hash": "d683340840cc4d817f26",
-   "version": 7,
-   "date": "2026-10-02",
+   "hash": "12bbdd1a9beed124b7ef",
+   "version": 8,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_안과.pdf",
    "pages": 11,
    "template_version": 11,
@@ -324,9 +323,9 @@
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "8039dccc254fd43828afad25f4f28eb2",
-    "version": 7,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "33898f889f85bb811e61ee18ccccc57f",
+    "version": 8,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -335,16 +334,15 @@
     "MedKOS_학습서_안과_v4_2026-09-27.pdf",
     "MedKOS_학습서_안과_v5_2026-09-28.pdf",
     "MedKOS_학습서_안과_v6_2026-09-30.pdf",
-    "MedKOS_학습서_안과_v7_2026-10-02.pdf"
+    "MedKOS_학습서_안과_v7_2026-10-02.pdf",
+    "MedKOS_학습서_안과_v8_2026-10-05.pdf"
    ],
-   "changes": [
-    "내용 갱신: 망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다 (정리본 v2 → v3)"
-   ]
+   "changes": []
   },
   "정형외과": {
-   "hash": "656dc532fd284d250f15",
-   "version": 9,
-   "date": "2026-10-03",
+   "hash": "e97cf8ed488ae02be83b",
+   "version": 10,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_정형외과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -376,9 +374,9 @@
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "55c48b399ae49f7b1f5d006f99c50ba3",
-    "version": 9,
-    "uploaded": "2026-10-03T10:04:44+09:00"
+    "md5": "a94929404935ee45f3eac243bcc8e242",
+    "version": 10,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -389,18 +387,17 @@
     "MedKOS_학습서_정형외과_v6_2026-09-27.pdf",
     "MedKOS_학습서_정형외과_v7_2026-09-28.pdf",
     "MedKOS_학습서_정형외과_v8_2026-09-29.pdf",
-    "MedKOS_학습서_정형외과_v9_2026-10-03.pdf"
+    "MedKOS_학습서_정형외과_v9_2026-10-03.pdf",
+    "MedKOS_학습서_정형외과_v10_2026-10-05.pdf"
    ],
-   "changes": [
-    "내용 갱신: 대퇴골두골단분리증 — 정복 없이 제자리 나사 고정 (정리본 v3 → v4)"
-   ]
+   "changes": []
   },
   "외과": {
-   "hash": "85294d3afe44030a382d",
-   "version": 8,
-   "date": "2026-10-04",
+   "hash": "a7ed0aaddc647abafec6",
+   "version": 9,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_외과.pdf",
-   "pages": 8,
+   "pages": 7,
    "template_version": 11,
    "units": {
     "cn.gs.acute-cholecystitis.grade2-early-lc": {
@@ -410,17 +407,17 @@
      "concept_version": 4
     },
     "cn.gs.papillary-thyroid-carcinoma.surgical-extent-n1a": {
-     "title": "유두갑상선암 — 크기·갑상선외 침범·림프절 전이(cN0/cN1a/cN1b)로 수술 범위를 정한다",
-     "page": 5,
-     "concept_hash": "10a1f1373c8db38f",
-     "concept_version": 2
+     "title": "유두갑상선암 — 림프절 전이 구역이 수술 범위를 정한다",
+     "page": 4,
+     "concept_hash": "e1788da43a680182",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1335KMhzaApEdEoziUFPsZh6DBWmEodmN",
-    "md5": "ce98a162e46b80847e42c176213b649f",
-    "version": 8,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "df8a42ece0a516c586a05498ffe6b8c8",
+    "version": 9,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_외과_v1_2026-09-23.pdf",
@@ -430,10 +427,11 @@
     "MedKOS_학습서_외과_v5_2026-09-27.pdf",
     "MedKOS_학습서_외과_v6_2026-09-28.pdf",
     "MedKOS_학습서_외과_v7_2026-09-30.pdf",
-    "MedKOS_학습서_외과_v8_2026-10-04.pdf"
+    "MedKOS_학습서_외과_v8_2026-10-04.pdf",
+    "MedKOS_학습서_외과_v9_2026-10-05.pdf"
    ],
    "changes": [
-    "내용 갱신: 급성 담석 담낭염 — 등급과 수술 위험이 처치를 정한다 (정리본 v3 → v4)"
+    "내용 갱신: 유두갑상선암 — 림프절 전이 구역이 수술 범위를 정한다 (정리본 v2 → v3)"
    ]
   },
   "산부인과": {
@@ -564,9 +562,9 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "0fa0fd719fbb419347e5",
-   "version": 12,
-   "date": "2026-10-04",
+   "hash": "46c6e0f3d89cfb73d112",
+   "version": 13,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_류마티스내과.pdf",
    "pages": 24,
    "template_version": 11,
@@ -598,7 +596,7 @@
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
      "page": 8,
-     "concept_hash": "1e33c4534dea53e6",
+     "concept_hash": "1caa56e1c6b07bf0",
      "concept_version": 1
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
@@ -634,7 +632,7 @@
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
      "page": 20,
-     "concept_hash": "acb1b105962b942c",
+     "concept_hash": "56f1e4018142e4b4",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
@@ -652,9 +650,9 @@
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "1f908a26fd30493f27edf87aa6b0ce53",
-    "version": 12,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "633f155de0eaf4bfd25db5e96880a3f2",
+    "version": 13,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -668,16 +666,18 @@
     "MedKOS_학습서_류마티스내과_v9_2026-09-28.pdf",
     "MedKOS_학습서_류마티스내과_v10_2026-09-28.pdf",
     "MedKOS_학습서_류마티스내과_v11_2026-09-29.pdf",
-    "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf"
+    "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf",
+    "MedKOS_학습서_류마티스내과_v13_2026-10-05.pdf"
    ],
    "changes": [
+    "내용 수정: 축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
     "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정"
    ]
   },
   "호흡기내과": {
-   "hash": "58b7f57bc36c082c4e81",
-   "version": 9,
-   "date": "2026-09-30",
+   "hash": "4f950f14ddee831bdf44",
+   "version": 10,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -709,9 +709,9 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "066196801861e3cc512370bfc0e803e6",
-    "version": 9,
-    "uploaded": "2026-09-30T09:48:06+09:00"
+    "md5": "bad4eaaaab5389829753a45c92c45811",
+    "version": 10,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -722,14 +722,15 @@
     "MedKOS_학습서_호흡기내과_v6_2026-09-28.pdf",
     "MedKOS_학습서_호흡기내과_v7_2026-09-28.pdf",
     "MedKOS_학습서_호흡기내과_v8_2026-09-29.pdf",
-    "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf"
+    "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf",
+    "MedKOS_학습서_호흡기내과_v10_2026-10-05.pdf"
    ],
    "changes": []
   },
   "응급의학과": {
-   "hash": "11c06cd6cd725cf92b07",
-   "version": 7,
-   "date": "2026-10-02",
+   "hash": "73455aa3da3ac0b2c446",
+   "version": 8,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_응급의학과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -761,9 +762,9 @@
    },
    "drive": {
     "id": "1S7N9djypAYSmyZfPYF_aLoSKUw8qRa87",
-    "md5": "a7f05f88f5cc9ce9d395b44742c5b99c",
-    "version": 7,
-    "uploaded": "2026-10-02T10:19:04+09:00"
+    "md5": "d59345fa54a5c003b1fcd725d0cd7146",
+    "version": 8,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_응급의학과_v1_2026-09-25.pdf",
@@ -772,13 +773,10 @@
     "MedKOS_학습서_응급의학과_v4_2026-09-27.pdf",
     "MedKOS_학습서_응급의학과_v5_2026-09-28.pdf",
     "MedKOS_학습서_응급의학과_v6_2026-10-01.pdf",
-    "MedKOS_학습서_응급의학과_v7_2026-10-02.pdf"
+    "MedKOS_학습서_응급의학과_v7_2026-10-02.pdf",
+    "MedKOS_학습서_응급의학과_v8_2026-10-05.pdf"
    ],
-   "changes": [
-    "내용 갱신: 심실세동 — 무맥 세동파에는 즉시 비동기 제세동 (정리본 v2 → v3)",
-    "내용 갱신: 리튬 중독 — 만성 축적의 중증 신경독성은 투석을 부른다 (정리본 v1 → v2)",
-    "내용 갱신: beta-blocker(베타차단제) 중독 — 글루카곤은 다른 입구로 cAMP를 올린다 (정리본 v1 → v2)"
-   ]
+   "changes": []
   },
   "내분비내과": {
    "hash": "d70182cc3178f29d964b",
@@ -957,9 +955,9 @@
    "changes": []
   },
   "감염내과": {
-   "hash": "d961575295bc3c61023b",
-   "version": 9,
-   "date": "2026-10-01",
+   "hash": "76688ef9e3d3f463df27",
+   "version": 10,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_감염내과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -977,10 +975,10 @@
      "concept_version": 3
     },
     "cn.id.legionella-pneumonia.urinary-antigen-diagnosis": {
-     "title": "레지오넬라 폐렴 — 세포 내 세균의 단서에서 확진 검사(소변 항원) 고르기까지",
+     "title": "레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원",
      "page": 6,
-     "concept_hash": "cbdbcddee235ba1c",
-     "concept_version": 1
+     "concept_hash": "eb9d3f84037f6d39",
+     "concept_version": 2
     },
     "cn.id.bacillary-angiomatosis.kaposi-differentiation": {
      "title": "세균성 혈관종증 — 카포시육종과 조직으로 가른다",
@@ -989,17 +987,17 @@
      "concept_version": 1
     },
     "cn.id.invasive-aspergillosis.angioinvasion-mechanism": {
-     "title": "침습성 폐 아스페르길루스증 — 혈관 침습에서 객혈·halo 징후·갈락토만난까지",
+     "title": "침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다",
      "page": 9,
-     "concept_hash": "4251c18e4fab9aaf",
-     "concept_version": 1
+     "concept_hash": "8d2774be6329d172",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "272c7bf56057c6bd93d9be5f9580fb19",
-    "version": 9,
-    "uploaded": "2026-10-01T09:46:29+09:00"
+    "md5": "dbf4b004058765e3fdd2c312a3adaad8",
+    "version": 10,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -1010,16 +1008,18 @@
     "MedKOS_학습서_감염내과_v6_2026-09-28.pdf",
     "MedKOS_학습서_감염내과_v7_2026-09-29.pdf",
     "MedKOS_학습서_감염내과_v8_2026-09-30.pdf",
-    "MedKOS_학습서_감염내과_v9_2026-10-01.pdf"
+    "MedKOS_학습서_감염내과_v9_2026-10-01.pdf",
+    "MedKOS_학습서_감염내과_v10_2026-10-05.pdf"
    ],
    "changes": [
-    "내용 갱신: 포도알균 열상피부증후군 — 스테로이드 말고 균을 친다 (정리본 v2 → v3)"
+    "내용 갱신: 레지오넬라 폐렴 — 급성 단서가 모이면 소변 항원 (정리본 v1 → v2)",
+    "내용 갱신: 침습성 폐 아스페르길루스증 — 혈관 침습이 객혈·halo를 만든다 (정리본 v1 → v2)"
    ]
   },
   "소화기내과": {
-   "hash": "7ddb7af1b80cd72b179e",
-   "version": 9,
-   "date": "2026-10-04",
+   "hash": "019ab2194c168f4a4def",
+   "version": 10,
+   "date": "2026-10-05",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1051,9 +1051,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "d9b81a4b96d8d93697b55e02bdad138d",
-    "version": 9,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "0a99035760663f59d3ea017e2bea7b75",
+    "version": 10,
+    "uploaded": "2026-10-05T09:41:32+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1064,12 +1064,10 @@
     "MedKOS_학습서_소화기내과_v6_2026-09-29.pdf",
     "MedKOS_학습서_소화기내과_v7_2026-09-30.pdf",
     "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf",
-    "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf"
+    "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf",
+    "MedKOS_학습서_소화기내과_v10_2026-10-05.pdf"
    ],
-   "changes": [
-    "내용 갱신: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기 (정리본 v1 → v2)",
-    "내용 갱신: acetaminophen(아세트아미노펜) 중독 — NAC 는 글루타티온을 다시 채운다 (정리본 v1 → v2)"
-   ]
+   "changes": []
   },
   "신경과": {
    "hash": "ec22c9dd8296193308ae",
@@ -1139,13 +1137,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "fcbcb41f61eb4ff0101e6a11a5745010",
+   "md5": "843e34e1550054c743b95d5b7c112d5a",
    "version": null,
-   "uploaded": "2026-10-04T09:25:40+09:00"
+   "uploaded": "2026-10-05T09:41:32+09:00"
   }
  },
- "updated": "2026-10-04"
+ "updated": "2026-10-05"
 }
