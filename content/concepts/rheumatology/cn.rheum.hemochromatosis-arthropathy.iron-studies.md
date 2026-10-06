@@ -122,6 +122,9 @@ figures_wanted:
   caption_terms:
   - metacarpophalangeal
   modality: XR
+figures_rejected:
+- asset: PMC-PMC9498090_Figure5
+  reason: 그림 설명이 류마티스관절염의 절단성 관절염(arthritis mutilans)이다 — 미란·골소실·자쪽 편위이지 혈색소증의 2·3번째 MCP 퇴행성 변화·갈고리 골극이 아니다
 ---
 
 ## 판단 — 왜 2·3번째 MCP 가 철 검사를 부르나
