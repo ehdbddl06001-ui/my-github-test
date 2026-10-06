@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3407,
+  "total": 3419,
   "byType": {
    "kmle": 1312,
    "anatomy": 833,
    "usmle": 180,
    "paper": 723,
+   "imaging": 260,
    "concept": 94,
-   "imaging": 248,
    "ailab": 14,
    "basic": 3
   },
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 84,
    "Hematology": 79,
    "Laboratory Medicine": 72,
-   "산부인과": 47,
-   "순환기": 24,
+   "산부인과": 48,
+   "순환기": 25,
    "Physiology": 21,
    "호흡기": 17,
+   "소화기": 16,
    "Pharmacology": 15,
-   "소화기": 15,
    "Biochemistry": 14,
+   "소아과": 14,
    "Microbiology": 13,
    "병리·조직학": 13,
-   "소아과": 13,
-   "감염": 11,
-   "내분비": 11,
+   "감염": 12,
+   "내분비": 12,
+   "응급·중환자": 12,
+   "혈액·종양": 12,
    "신경": 11,
-   "응급·중환자": 11,
-   "혈액·종양": 11,
+   "신장·비뇨기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "신장·비뇨기": 10,
-   "예방의학·역학": 8,
-   "외과": 8,
+   "예방의학·역학": 9,
+   "외과": 9,
    "피부과": 8,
    "약리": 7,
+   "근골격·류마티스": 6,
    "정신과": 6,
-   "근골격·류마티스": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2339,
+   "high": 2351,
    "medium": 1018,
    "low": 50
   },
@@ -987,6 +987,214 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-10-06_paper-2026-0716_persistent_hypoxemia_despite_decongestion_a_diagnostic_chall.md",
    "snippet": "Title Persistent Hypoxemia Despite Decongestion: A Diagnostic Challenge in Newly Diagnosed Heart Failure Authors Daniel Ryan, Gandhi Shirley, Ashraf Iman, Kiri Gaurav, Reddy Pramod Journal / DOI American journal of therapeutics · DOI: 10.10",
    "text": "Cardiology scraped pubmed PubMed / American journal of therapeutics Title Persistent Hypoxemia Despite Decongestion: A Diagnostic Challenge in Newly Diagnosed Heart Failure Authors Daniel Ryan, Gandhi Shirley, Ashraf Iman, Kiri Gaurav, Reddy Pramod Journal / DOI American journal of therapeutics · DOI: 10.1097/MJT.0000000000002241 · PMID: 42832645 https://pubmed.ncbi.nlm.nih.gov/42832645/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0261",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 무작위 시험 결과를 개인 상담에 적용하기",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0261.md",
+   "snippet": "62세 남자가 건강검진 뒤 새로 나온 콜레스테롤 저하제를 복용해야 하는지 상담하러 왔다. 흡연하지 않고 혈압은 128/80 mmHg 이며, 위험 계산식으로 추정한 그의 5년 심근경색 위험은 4 % 이다. 의사는 50~70세 고위험군 4,000명을 대상으로 한 무작위 대조시험 결과를 참고한다. 이 시험에서 5년간 심근경색 발생률은 위약군 12 %, 치료군 9 % 였고, 이상반응에 의한 투약 중단 비율은 두 군이 비슷하였다. 약의",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 무작위 시험 결과를 개인 상담에 적용하기 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 62세 남자가 건강검진 뒤 새로 나온 콜레스테롤 저하제를 복용해야 하는지 상담하러 왔다. 흡연하지 않고 혈압은 128/80 mmHg 이며, 위험 계산식으로 추정한 그의 5년 심근경색 위험은 4 % 이다. 의사는 50~70세 고위험군 4,000명을 대상으로 한 무작위 대조시험 결과를 참고한다. 이 시험에서 5년간 심근경색 발생률은 위약군 12 %, 치료군 9 % 였고, 이상반응에 의한 투약 중단 비율은 두 군이 비슷하였다. 약의 상대적 효과가 위험 수준과 관계없이 일정하다고 가정할 때, 이 남자와 같은 위험의 사람들에서 5년간 심근경색 1건을 예방하려면 몇 명을 치료해야 하는가? A. 400명 B. 100명 C. 33명 D. 25명 E. 4명"
+  },
+  {
+   "id": "imaging-2026-0260",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 머리 외상 뒤 생긴 다음·다뇨",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0260.md",
+   "snippet": "A 45 year old man comes to the physician because of excessive thirst and urination for 3 weeks. He drinks about 7 L of water daily, preferring ice cold water, and wakes up four times nightly to urinate. Two months ago, he sustained a head i",
+   "text": "내분비 내분비·대사 — 머리 외상 뒤 생긴 다음·다뇨 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 45 year old man comes to the physician because of excessive thirst and urination for 3 weeks. He drinks about 7 L of water daily, preferring ice cold water, and wakes up four times nightly to urinate. Two months ago, he sustained a head injury in a motorcycle collision and was hospitalized for 5 days. He takes no medications and has no history of psychiatric illness. His blood pressure is 124/80 mm Hg, and pulse is 76/min. Physical examination shows no abnormalities. Serum studies show sodium 145 mEq/L, potassium 4.1 mEq/L, calcium 9.2 mg/dL, and glucose 96 mg/dL. Urine osmolality is 110 mOsm/kg H2O. During a supervised water deprivation test, his serum sodium concentration rises to 149 mEq/L and serum osmolality to 304 mOsm/kg H2O after 6 hours, while urine osmolality remains 140 mOsm/kg H2O. One hour after subcutaneous administration of desmopressin, urine osmolality is 420 mOsm/kg H2O. Which of the following is the most likely diagnosis? A. Cerebral salt wasting B. Central diabetes insipidus C. Nephrogenic diabetes insipidus D. Primary polydipsia E. Osmotic diuresis"
+  },
+  {
+   "id": "imaging-2026-0259",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 6주 무월경 뒤 점상 출혈과 하복부 통증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0259.md",
+   "snippet": "A 29 year old woman, gravida 2, para 1, comes to the emergency department because of light vaginal spotting and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Her blood pressure is 118/74 mm Hg, and pu",
+   "text": "산부인과 부인과 — 6주 무월경 뒤 점상 출혈과 하복부 통증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 29 year old woman, gravida 2, para 1, comes to the emergency department because of light vaginal spotting and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Her blood pressure is 118/74 mm Hg, and pulse is 82/min. The abdomen is soft, with mild left lower quadrant tenderness and no rebound. Pelvic examination shows a closed cervical os and mild left adnexal tenderness. Her serum β hCG concentration is 2,400 mIU/mL; 48 hours ago, it was 2,100 mIU/mL. Transvaginal ultrasonography shows no intrauterine gestational sac and a 2.4 cm left adnexal mass without fetal cardiac activity; there is a small amount of fluid in the rectouterine pouch. Hemoglobin concentration is 12.8 g/dL. Serum creatinine concentration and liver aminotransferase activities are within the reference ranges. She has no lung disease, is not breastfeeding, and lives 10 minutes from the hospital and can return for follow up visits. Which of the following is the most appropriate next step in management? A. Intramuscular methotrexate B. Laparoscopic salpingectomy C. Repeat serum β hCG measurement in 48 hours D. Dilation and curettage E. Exploratory laparotomy"
+  },
+  {
+   "id": "imaging-2026-0258",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 두통·혼동과 빈혈·혈소판감소",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0258.md",
+   "snippet": "34세 여자가 2일 전부터 생긴 두통과 혼동으로 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 잘 들었다. 복용 약물은 없고 최근 설사나 헤파린 사용은 없었다. 혈압 138/84 mmHg, 맥박 104회/분, 체온 37.9 °C 이다. 날짜를 잘못 말하고 다리에 점상출혈이 있으며 국소 신경 결손은 없다. 혈색소 7.8 g/dL, 망상적혈구 8 %, 혈소판 14,000/μL, 젖산탈수소효소 1,420 U/L, 간접 빌리루빈 ",
+   "text": "혈액·종양 혈액·종양 — 두통·혼동과 빈혈·혈소판감소 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 34세 여자가 2일 전부터 생긴 두통과 혼동으로 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 잘 들었다. 복용 약물은 없고 최근 설사나 헤파린 사용은 없었다. 혈압 138/84 mmHg, 맥박 104회/분, 체온 37.9 °C 이다. 날짜를 잘못 말하고 다리에 점상출혈이 있으며 국소 신경 결손은 없다. 혈색소 7.8 g/dL, 망상적혈구 8 %, 혈소판 14,000/μL, 젖산탈수소효소 1,420 U/L, 간접 빌리루빈 2.8 mg/dL 이고 합토글로빈은 측정되지 않을 만큼 낮다. 크레아티닌 1.1 mg/dL 이고 프로트롬빈시간·활성화부분트롬보플라스틴시간·피브리노겐은 정상이다. 직접항글로불린검사는 음성이고 말초혈액도말에서 조각적혈구가 고배율 시야마다 여러 개 보인다. ADAMTS13 활성도 검사를 보냈다. 가장 적절한 치료는? A. 아르가트로반 B. 혈장교환술과 글루코코르티코이드 C. 혈소판 수혈 D. 에쿨리주맙 E. 정맥 면역글로불린"
+  },
+  {
+   "id": "imaging-2026-0257",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 환자의 복부 팽만과 미열",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0257.md",
+   "snippet": "58세 남자가 3일 전부터 배가 더 불러오고 미열이 있어 내원하였다. 알코올 간경변으로 스피로노락톤과 푸로세미드를 복용 중이다. 혈압 112/68 mmHg, 맥박 92회/분, 체온 37.8 °C 이다. 복부는 팽만되어 있고 이동탁음이 있으며, 전반적으로 가벼운 압통이 있으나 반발압통은 없다. 의식은 명료하고 퍼덕떨림은 없다. 혈청 빌리루빈 4.6 mg/dL, 알부민 2.6 g/dL, 혈액요소질소 34 mg/dL, 크레아티닌 1",
+   "text": "소화기 소화기·간담췌 — 간경변 환자의 복부 팽만과 미열 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 58세 남자가 3일 전부터 배가 더 불러오고 미열이 있어 내원하였다. 알코올 간경변으로 스피로노락톤과 푸로세미드를 복용 중이다. 혈압 112/68 mmHg, 맥박 92회/분, 체온 37.8 °C 이다. 복부는 팽만되어 있고 이동탁음이 있으며, 전반적으로 가벼운 압통이 있으나 반발압통은 없다. 의식은 명료하고 퍼덕떨림은 없다. 혈청 빌리루빈 4.6 mg/dL, 알부민 2.6 g/dL, 혈액요소질소 34 mg/dL, 크레아티닌 1.4 mg/dL, 국제정상화비율 1.7 이다. 복수천자에서 백혈구 640/μL(호중구 70 %), 복수 총단백 0.9 g/dL, 포도당 92 mg/dL 이고 그람 염색에서 균은 보이지 않았다. 복수와 혈액 배양을 보냈다. 치료로 가장 적절한 것은? A. 대량 복수천자와 알부민 보충 B. 경구 노르플록사신 예방요법 C. 응급 개복술 D. 정맥 세포탁심과 정맥 알부민 E. 정맥 세포탁심 단독"
+  },
+  {
+   "id": "imaging-2026-0256",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 류마티스관절염 환자의 열과 무릎 부종",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0256.md",
+   "snippet": "A 67 year old woman comes to the emergency department because of a 2 day history of pain and swelling of the right knee. She has rheumatoid arthritis treated with methotrexate and prednisone 5 mg daily. Ten days ago, she scratched her right",
+   "text": "근골격·류마티스 류마티스·근골격 — 류마티스관절염 환자의 열과 무릎 부종 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 67 year old woman comes to the emergency department because of a 2 day history of pain and swelling of the right knee. She has rheumatoid arthritis treated with methotrexate and prednisone 5 mg daily. Ten days ago, she scratched her right shin while gardening. Her temperature is 38.4°C, pulse is 102/min, and blood pressure is 128/76 mm Hg. The right knee is warm, swollen, and tender with a large effusion, and active and passive motion are severely limited by pain. No other joints are swollen. Leukocyte count is 15,200/mm3, and serum C reactive protein concentration is 14 mg/dL (N<0.5). Serum uric acid concentration is 7.4 mg/dL. Arthrocentesis yields cloudy fluid with a leukocyte count of 86,000/mm3 (92% neutrophils); Gram stain shows gram positive cocci in clusters, and no crystals are seen on polarized light microscopy. Blood cultures are obtained, and intravenous vancomycin is started. Which of the following is the most appropriate next step in management? A. Drainage of the knee joint B. Oral colchicine therapy C. Higher dose oral prednisone D. Intra articular triamcinolone E. Splinting and observation"
+  },
+  {
+   "id": "imaging-2026-0255",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 더운 날 행군 중 쓰러진 병사",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0255.md",
+   "snippet": "19세 남자가 낮 기온 33 °C 의 여름날 군 행군 훈련 중 쓰러져 응급실에 실려 왔다. 동료에 따르면 쓰러지기 직전 비틀거리며 엉뚱한 말을 하였다. 기저 질환과 복용 약물은 없다. 혈압 98/60 mmHg, 맥박 136회/분, 호흡 28회/분, 직장 체온 41.6 °C, 산소포화도 97 % 이다. 이름을 불러야 눈을 뜨고 묻는 말에 엉뚱하게 대답한다. 피부는 뜨겁고 땀에 젖어 있다. 목 경직은 없고 동공 반응은 정상이다. ",
+   "text": "응급·중환자 응급·중환자·외상 — 더운 날 행군 중 쓰러진 병사 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 19세 남자가 낮 기온 33 °C 의 여름날 군 행군 훈련 중 쓰러져 응급실에 실려 왔다. 동료에 따르면 쓰러지기 직전 비틀거리며 엉뚱한 말을 하였다. 기저 질환과 복용 약물은 없다. 혈압 98/60 mmHg, 맥박 136회/분, 호흡 28회/분, 직장 체온 41.6 °C, 산소포화도 97 % 이다. 이름을 불러야 눈을 뜨고 묻는 말에 엉뚱하게 대답한다. 피부는 뜨겁고 땀에 젖어 있다. 목 경직은 없고 동공 반응은 정상이다. 혈당 104 mg/dL, 혈청 나트륨 141 mEq/L, 크레아티닌 1.6 mg/dL, 크레아틴키나아제 2,800 U/L 이다. 기도를 확인하고 정맥로를 잡은 뒤 가장 먼저 해야 할 처치는? A. 뇌척수액 검사 B. 두부 CT 촬영 C. 찬물 침수 냉각 D. 정맥 아세트아미노펜 투여 E. 정맥 단트롤렌 투여"
+  },
+  {
+   "id": "imaging-2026-0254",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 운동 중 시작된 빠르고 불규칙한 두근거림",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0254.md",
+   "snippet": "A 24 year old man comes to the emergency department because of palpitations that began suddenly 1 hour ago while he was playing basketball. Since adolescence, he has had brief episodes of a racing heartbeat that stopped on their own. He tak",
+   "text": "순환기 순환기 — 운동 중 시작된 빠르고 불규칙한 두근거림 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 24 year old man comes to the emergency department because of palpitations that began suddenly 1 hour ago while he was playing basketball. Since adolescence, he has had brief episodes of a racing heartbeat that stopped on their own. He takes no medications and does not use illicit drugs. His blood pressure is 122/78 mm Hg, pulse is 210/min and irregularly irregular, and respirations are 18/min. Oxygen saturation is 98% on room air. He is alert and oriented. The lungs are clear to auscultation. An ECG shows an irregularly irregular rhythm with QRS complexes of varying width and morphology, some as wide as 160 msec, and no discernible P waves. An ECG obtained 3 years ago showed a short PR interval and a slurred upstroke of the QRS complex. Which of the following is the most appropriate pharmacotherapy? A. Adenosine B. Metoprolol C. Digoxin D. Procainamide E. Diltiazem"
+  },
+  {
+   "id": "imaging-2026-0253",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 넘어지고 3주 뒤 손목 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0253.md",
+   "snippet": "4세 남아가 손목 X선 검사 결과를 듣기 위해 어머니와 함께 외래에 왔다. 3주 전 놀이터에서 손을 짚고 넘어진 뒤 오른쪽 손목이 부어 동네 의원에서 부목을 대었고, 그때 X선 검사는 하지 않았다. 지금은 통증이 거의 없고 손을 잘 쓴다. 가족은 지은 지 50년 된 주택에 살고 있어 어머니는 납 중독을 걱정한다. 성장과 발달은 정상이고 복통이나 변비는 없다. 진찰에서 오른쪽 원위 전완에 가벼운 압통만 있고 변형과 부종은 없다.",
+   "text": "소아과 소아청소년 — 넘어지고 3주 뒤 손목 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 4세 남아가 손목 X선 검사 결과를 듣기 위해 어머니와 함께 외래에 왔다. 3주 전 놀이터에서 손을 짚고 넘어진 뒤 오른쪽 손목이 부어 동네 의원에서 부목을 대었고, 그때 X선 검사는 하지 않았다. 지금은 통증이 거의 없고 손을 잘 쓴다. 가족은 지은 지 50년 된 주택에 살고 있어 어머니는 납 중독을 걱정한다. 성장과 발달은 정상이고 복통이나 변비는 없다. 진찰에서 오른쪽 원위 전완에 가벼운 압통만 있고 변형과 부종은 없다. 혈색소 12.4 g/dL, 평균적혈구용적 80 fL 이다. 오른쪽 손목의 전후면 X선 사진은 그림과 같다. 요골과 척골 원위부에 보이는 가로 경화대에 대한 설명으로 가장 적절한 것은? A. 치유 중인 골절의 가골과 골소주 재형성 B. 납 중독에 의한 골간단 고밀도선 C. 성장 정지선(Park Harris 선) D. 구루병의 골간단 변화 E. 급성 백혈병의 골간단 투과대"
+  },
+  {
+   "id": "imaging-2026-0252",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 전립선 조직의 면역조직화학",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0252.md",
+   "snippet": "A 63 year old man comes to the physician for a follow up examination 2 months after transurethral resection of the prostate for acute urinary retention. Before surgery, he had a weak urinary stream and nocturia three times nightly for 2 yea",
+   "text": "신장·비뇨기 신장·비뇨 — 전립선 조직의 면역조직화학 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 63 year old man comes to the physician for a follow up examination 2 months after transurethral resection of the prostate for acute urinary retention. Before surgery, he had a weak urinary stream and nocturia three times nightly for 2 years. His serum prostate specific antigen concentration was 3.1 ng/mL, and digital rectal examination showed a smooth, symmetrically enlarged prostate without nodules. He now voids well. The resected tissue was reviewed in a teaching study. A photomicrograph of a section of the prostate stained by immunohistochemistry for NKX3.1, a nuclear transcription factor, is shown. The cells with brown stained nuclei are which of the following? A. Basal epithelial cells B. Stromal smooth muscle cells C. Neuroendocrine cells D. Urothelial cells E. Luminal secretory epithelial cells"
+  },
+  {
+   "id": "imaging-2026-0251",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 유방 종양 조직의 면역조직화학과 전이",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0251.md",
+   "snippet": "49세 여자가 2개월 전부터 오른쪽 유방 위바깥쪽이 두꺼워진 느낌이 있어 내원하였다. 통증이나 젖꼭지 분비물은 없고, 가족력은 없다. 진찰에서 경계가 불분명한 3 cm 크기의 단단한 부위가 만져지고 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 뚜렷한 종괴가 보이지 않았고, 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 침윤성 암종이 확인되었으며 에스트로겐 수용체 양성, HER2 음성이다. 유방 종양 ",
+   "text": "외과 외과계 — 유방 종양 조직의 면역조직화학과 전이 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 49세 여자가 2개월 전부터 오른쪽 유방 위바깥쪽이 두꺼워진 느낌이 있어 내원하였다. 통증이나 젖꼭지 분비물은 없고, 가족력은 없다. 진찰에서 경계가 불분명한 3 cm 크기의 단단한 부위가 만져지고 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 뚜렷한 종괴가 보이지 않았고, 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 침윤성 암종이 확인되었으며 에스트로겐 수용체 양성, HER2 음성이다. 유방 종양 조직 절편의 E cadherin 면역조직화학염색 결과는 그림과 같다. 이 종양이 침윤성 관암종에 비해 더 잘 전이하는 부위는? A. 폐 실질 B. 뇌 실질 C. 간 실질 D. 흉막 E. 복막과 위장관"
+  },
+  {
+   "id": "imaging-2026-0250",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 기계환기 중 새 발열과 화농성 분비물",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+   "confidence": "high",
+   "date": "2026-10-06",
+   "path": "content/imaging/2026/imaging-2026-0250.md",
+   "snippet": "A 60 year old man is being treated in the intensive care unit for acute respiratory distress syndrome due to COVID 19 pneumonia. He has been hospitalized for 7 days and was intubated 6 days ago. He has received dexamethasone but no antibiot",
+   "text": "감염 감염 — 기계환기 중 새 발열과 화농성 분비물 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0 A 60 year old man is being treated in the intensive care unit for acute respiratory distress syndrome due to COVID 19 pneumonia. He has been hospitalized for 7 days and was intubated 6 days ago. He has received dexamethasone but no antibiotics during this hospitalization or in the past year. Over the past 24 hours, he has developed a temperature of 38.9°C and increasing amounts of thick yellow tracheal secretions, and the fraction of inspired oxygen needed to keep his oxygen saturation above 92% has increased from 0.4 to 0.6. His blood pressure is 124/72 mm Hg without vasopressors, and pulse is 104/min. Coarse crackles are heard over both lung bases. Leukocyte count is 16,800/mm3; two days ago, it was 9,200/mm3. Serum creatinine concentration is 0.9 mg/dL. In this unit, more than 20% of Staphylococcus aureus isolates are methicillin resistant. A portable chest radiograph is shown. Tracheal aspirate and blood cultures are obtained. Which of the following is the most appropriate empiric antibiotic regimen? A. Ceftriaxone and azithromycin B. Vancomycin and ceftriaxone C. Vancomycin, piperacillin tazobactam, and amikacin D. Vancomycin and piperacillin tazobactam E. Piperacillin tazobactam alone"
   },
   {
    "id": "cn.rheum.hemochromatosis-arthropathy.iron-studies",
