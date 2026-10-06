@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3406,
+  "total": 3407,
   "byType": {
    "kmle": 1312,
+   "anatomy": 833,
    "usmle": 180,
    "paper": 723,
    "concept": 94,
-   "anatomy": 832,
    "imaging": 248,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 832,
+   "Anatomy": 833,
    "Cardiology": 240,
    "Nephrology": 191,
    "Infectious Disease": 173,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2338,
+   "high": 2339,
    "medium": 1018,
    "low": 50
   },
@@ -705,6 +705,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1313.md",
    "snippet": "67세 남자가 숨참과 두근거림으로 응급실에 왔다. 1주 전쯤부터 계단을 오르면 숨이 차고 가슴이 뛰었는데, 정확히 언제부터였는지는 모른다. 흉통·실신은 없고 대화는 또렷하며, 손발은 따뜻하다. 고혈압으로 약을 먹고 있고 뇌졸중·출혈 병력은 없다. 도착 때 찍은 심전도는 그림과 같다. 정맥 딜티아젬으로 심실 박동이 90회/분 안팎으로 조절됐지만 숨참이 남아, 동율동으로 되돌리기로 했다. 도착 때 활력징후와 검사 소견은 자료와 같",
    "text": "Cardiology Regular Narrow-Complex Tachycardia of Uncertain Onset in a Hypertensive Man atrial-flutter cardioversion anticoagulation thromboembolism ecg KMLE 2026 / Claude 67세 남자가 숨참과 두근거림으로 응급실에 왔다. 1주 전쯤부터 계단을 오르면 숨이 차고 가슴이 뛰었는데, 정확히 언제부터였는지는 모른다. 흉통·실신은 없고 대화는 또렷하며, 손발은 따뜻하다. 고혈압으로 약을 먹고 있고 뇌졸중·출혈 병력은 없다. 도착 때 찍은 심전도는 그림과 같다. 정맥 딜티아젬으로 심실 박동이 90회/분 안팎으로 조절됐지만 숨참이 남아, 동율동으로 되돌리기로 했다. 도착 때 활력징후와 검사 소견은 자료와 같다. 다음 처치로 가장 적절한 것은? A. 지금 동기화 전기 충격으로 전환한다 B. 항응고제를 3주 이상 쓴 뒤 전환한다 C. 지금 정맥 이부틸라이드로 전환한다 D. 아스피린을 먹인 뒤 다음 날 전환한다 E. 경흉부 초음파 소견을 근거로 지금 전환한다 심전도의 톱니 모양 조동파와 규칙적인 150회/분 심실 박동은 2:1 전도 심방조동이다. 혈압이 유지되고 흉통·의식 변화·저관류가 없어 응급 전환 대상이 아니다. 시작 시점을 모르면 48시간이 넘었다고 보고, 심방조동도 심방세동과 같이 전환 직후 혈전색전증 위험이 있으므로 항응고제를 3주 이상 쓴 뒤(또는 경식도 심초음파로 좌심방귀 혈전이 없음을 확인한 뒤) 전환하고, 전환 뒤에도 4주 이상 항응고를 이어 간다."
+  },
+  {
+   "id": "anatomy-daily-2026-10-07",
+   "type": "anatomy",
+   "unit": "머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-07",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/anatomy/daily/2026-10-07.md",
+   "snippet": "오늘의 학습 (2026 10 07 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 27일 · Tagging 2까지 12일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-07 머리·목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 07 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 27일 · Tagging 2까지 12일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0193",
