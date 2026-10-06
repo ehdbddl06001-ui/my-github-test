@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3374,
+  "total": 3375,
   "byType": {
+   "anatomy": 833,
    "usmle": 180,
    "paper": 723,
    "concept": 94,
-   "anatomy": 832,
    "kmle": 1280,
    "imaging": 248,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 832,
+   "Anatomy": 833,
    "Cardiology": 238,
    "Nephrology": 189,
    "Infectious Disease": 171,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "high": 2309,
    "medium": 1016,
-   "high": 2308,
    "low": 50
   },
   "tagCount": 4561
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-07",
+   "type": "anatomy",
+   "unit": "머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-07",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/anatomy/daily/2026-10-07.md",
+   "snippet": "오늘의 학습 (2026 10 07 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 27일 · Tagging 2까지 12일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-07 머리·목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 07 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 27일 · Tagging 2까지 12일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0193",
    "type": "usmle",
