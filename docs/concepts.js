@@ -3547,7 +3547,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-0555"
+   "kmle-2026-0555",
+   "kmle-2026-1314"
   ],
   "hasErrors": false
  },
@@ -44205,7 +44206,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "kmle-2026-1096"
+   "kmle-2026-1096",
+   "kmle-2026-1334"
   ],
   "hasErrors": false
  },
@@ -52902,7 +52904,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "kmle-2026-0189",
-   "kmle-2026-0675"
+   "kmle-2026-0675",
+   "kmle-2026-1338"
   ],
   "hasErrors": false
  },
@@ -75459,7 +75462,8 @@ window.MEDKOS_CONCEPTS = {
   "geo": null,
   "steps": [],
   "questions": [
-   "kmle-2026-0081"
+   "kmle-2026-0081",
+   "kmle-2026-1343"
   ],
   "hasErrors": false
  },
