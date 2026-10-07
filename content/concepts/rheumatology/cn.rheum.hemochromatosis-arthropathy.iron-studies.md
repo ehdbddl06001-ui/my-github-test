@@ -125,6 +125,8 @@ figures_wanted:
 figures_rejected:
 - asset: PMC-PMC9498090_Figure5
   reason: 그림 설명이 류마티스관절염의 절단성 관절염(arthritis mutilans)이다 — 미란·골소실·자쪽 편위이지 혈색소증의 2·3번째 MCP 퇴행성 변화·갈고리 골극이 아니다
+- asset: PMC-PMC6514162_Fig3
+  reason: 영상이 아니라 손 통증 진단 흐름도(그림 설명도 지침 알고리듬) — 2·3번째 MCP 골극 X선이 아님
 ---
 
 ## 판단 — 왜 2·3번째 MCP 가 철 검사를 부르나
