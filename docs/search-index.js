@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3441,
+  "total": 3442,
   "byType": {
    "usmle": 186,
+   "anatomy": 834,
    "kmle": 1312,
    "imaging": 268,
    "concept": 95,
-   "anatomy": 833,
    "paper": 730,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 833,
+   "Anatomy": 834,
    "Cardiology": 241,
    "Nephrology": 191,
    "Infectious Disease": 174,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2364,
+   "high": 2365,
    "medium": 1027,
    "low": 50
   },
@@ -216,6 +216,20 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0194.md",
    "snippet": "A 38 year old man is brought to the emergency department by his wife because she found him confused and sweaty at home this morning. Over the past 2 days he has been drinking heavily at a weekend gathering, ate almost nothing and vomited tw",
    "text": "Biochemistry Confusion, Sweating and a Glucose of 38 After a Two-Day Drinking Binge With Almost No Food alcohol-induced-hypoglycemia gluconeogenesis nadh-nad-ratio ethanol-metabolism lactic-acidosis alcoholic-ketoacidosis fasting-metabolism USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e — Hypoglycemia; Lippincott Illustrated Reviews: Biochemistry 8e — Gluconeogenesis and ethanol metabolism) A 38 year old man is brought to the emergency department by his wife because she found him confused and sweaty at home this morning. Over the past 2 days he has been drinking heavily at a weekend gathering, ate almost nothing and vomited twice yesterday. He usually drinks 6 to 8 beers on weekends. He has no history of diabetes, takes no medications, and no one in the household takes insulin or oral diabetes medications. He has had no prior episodes like this. He is disoriented to date and smells of alcohol. The skin is cool and diaphoretic. Extraocular movements are full without nystagmus. The liver edge is palpable 2 cm below the right costal margin; there is no jaundice, spider angiomata or ascites. Blood is drawn on arrival. Within 10 minutes of intravenous thiamine and 50 mL of 50% dextrose he is alert and oriented. His vital signs are shown. Laboratory studies obtained before treatment are shown. Which of the following best explains this patient's hypoglycemia? A. Thiamine deficiency reducing pyruvate dehydrogenase activity B. Ethanol stimulated insulin release from pancreatic beta cells C. Increased hepatic NADH/NAD⁺ ratio limiting gluconeogenesis D. Acetaldehyde inhibition of hepatic glycogen phosphorylase E. Deficiency of hepatic glucose 6 phosphatase activity 혈당 38 인데 인슐린·C 펩타이드가 억제돼 있고 혈당강하제에 노출될 길이 없으므로 인슐린 매개 저혈당이 아니다. 이틀간 거의 먹지 않아 간 글리코겐은 이미 바닥났고(공복 약 24–48시간이면 고갈), 이때 혈당은 포도당신생합성에 달려 있다. 간에서 에탄올이 alcohol dehydrogenase·aldehyde dehydrogenase 로 산화되며 NAD+ 를 NADH 로 바꾸면 NADH/NAD+ 비가 올라가 pyruvate → lactate, oxaloacetate → malate 쪽으로 평형이 밀린다. 포도당신생합성의 기질(pyruvate·oxaloacetate)이 빠져나가 포도당을 만들지 못한다. 같은 NADH 과잉이 lactate 상승과 acetoacetate → β hydroxybutyrate 전환(높은 β OHB)으로도 드러난다 — 음이온 간격 21 의 대사성 산증."
+  },
+  {
+   "id": "anatomy-daily-2026-10-08",
+   "type": "anatomy",
+   "unit": "머리·목·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-08",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/anatomy/daily/2026-10-08.md",
+   "snippet": "오늘의 학습 (2026 10 08 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 28일 · Tagging 2까지 11일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-08 머리·목·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 08 · t2 new) 다음 수업/시험: 2026 10 08 머리 시상절단·입안·후두, 인두·후두, 다리의 관절 Tagging 1까지 28일 · Tagging 2까지 11일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "kmle-2026-1344",
