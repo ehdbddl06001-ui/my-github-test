@@ -440,24 +440,24 @@
    ]
   },
   "산부인과": {
-   "hash": "fdc0ae596f077080bd4f",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "b46b17740237ccb6e3eb",
+   "version": 10,
+   "date": "2026-10-07",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 20,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
-     "title": "기능성 시상하부 무월경 — 에스트로겐이 없는 무월경이라 가장 큰 위험은 골밀도 저하다",
+     "title": "기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다",
      "page": 2,
-     "concept_hash": "aac0d8154f4e27c5",
-     "concept_version": 1
+     "concept_hash": "f00cf86a871d47ab",
+     "concept_version": 2
     },
     "cn.obgyn.pcos-infertility.ovulation-induction": {
-     "title": "다낭성 난소 증후군의 무배란 불임 — 남성·난관 요인을 확인한 뒤 경구 배란 유도(letrozole 레트로졸)부터 단계로 올라간다",
+     "title": "다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다",
      "page": 4,
-     "concept_hash": "1669afc09f58cddb",
-     "concept_version": 3
+     "concept_hash": "1cb909b218723ac8",
+     "concept_version": 4
     },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
@@ -466,14 +466,14 @@
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
-     "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
+     "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
      "page": 9,
-     "concept_hash": "f0800392c526f28f",
-     "concept_version": 2
+     "concept_hash": "54c314318cffecef",
+     "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 12,
+     "page": 11,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
@@ -483,24 +483,24 @@
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
-    "cn.obgyn.hydatidiform-mole.diagnosis": {
-     "title": "임신 초기 출혈에서 포상기태 알아보기 — 주수보다 큰 자궁, 자궁 안 다낭성 덩이, 주수에 비해 매우 높은 β-hCG",
-     "page": 16,
-     "concept_hash": "4e53a72b7dfb4411",
-     "concept_version": 3
-    },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 18,
+     "page": 16,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
+    },
+    "cn.obgyn.hydatidiform-mole.diagnosis": {
+     "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
+     "page": 18,
+     "concept_hash": "327bde2efec5d351",
+     "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "6465e70ecc8bc29d328180e7a17cd874",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "0d8e470af62e9a218ef81e88c53d75f6",
+    "version": 10,
+    "uploaded": "2026-10-07T10:06:56+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -511,10 +511,14 @@
     "MedKOS_학습서_산부인과_v6_2026-09-27.pdf",
     "MedKOS_학습서_산부인과_v7_2026-09-28.pdf",
     "MedKOS_학습서_산부인과_v8_2026-10-03.pdf",
-    "MedKOS_학습서_산부인과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_산부인과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_산부인과_v10_2026-10-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤 (정리본 v2 → v3)"
+    "내용 갱신: 기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다 (정리본 v1 → v2)",
+    "내용 갱신: 다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다 (정리본 v3 → v4)",
+    "내용 갱신: 임신당뇨병 — 반복 초과면 약물로, 약은 인슐린 (정리본 v2 → v3)",
+    "내용 갱신: 포상기태 — 자궁 안이 찼고 β-hCG 가 높다 (정리본 v3 → v4)"
    ]
   },
   "정신건강의학과": {
@@ -567,11 +571,11 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "2da791c12d1ef47ee841",
-   "version": 14,
-   "date": "2026-10-06",
+   "hash": "1705be2a29ab9b2aeccf",
+   "version": 15,
+   "date": "2026-10-07",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 26,
+   "pages": 28,
    "template_version": 11,
    "units": {
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
@@ -637,7 +641,7 @@
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
      "page": 20,
-     "concept_hash": "59334fb04259a416",
+     "concept_hash": "4e4ea3ab8e284daf",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
@@ -655,15 +659,21 @@
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
      "page": 25,
-     "concept_hash": "eaab0f89cab5af95",
+     "concept_hash": "4656d8e5f1586bdb",
+     "concept_version": 1
+    },
+    "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
+     "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
+     "page": 27,
+     "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "391ba55dd79f5ee158d311d4b0361cc7",
-    "version": 14,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "c5942ac677cf754f26e2990203f79a82",
+    "version": 15,
+    "uploaded": "2026-10-07T10:06:56+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -679,12 +689,13 @@
     "MedKOS_학습서_류마티스내과_v11_2026-09-29.pdf",
     "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf",
     "MedKOS_학습서_류마티스내과_v13_2026-10-05.pdf",
-    "MedKOS_학습서_류마티스내과_v14_2026-10-06.pdf"
+    "MedKOS_학습서_류마티스내과_v14_2026-10-06.pdf",
+    "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다 (정리본 v1 → v2)",
     "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정",
-    "새 단원: 혈색소증 관절병증 — 2·3번째 MCP 면 철 검사"
+    "내용 수정: 혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
+    "새 단원: 아픈 어깨 — 수동 운동까지 막히면 유착관절낭염"
    ]
   },
   "호흡기내과": {
@@ -1155,13 +1166,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "a9a3b73265ba457be9d94f379e0ab9ae",
+   "md5": "13fc667801e56c59b16b2885ca124c8b",
    "version": null,
-   "uploaded": "2026-10-06T11:33:41+09:00"
+   "uploaded": "2026-10-07T10:06:56+09:00"
   }
  },
- "updated": "2026-10-06"
+ "updated": "2026-10-07"
 }
