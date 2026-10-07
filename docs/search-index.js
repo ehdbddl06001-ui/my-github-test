@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3427,
+  "total": 3435,
   "byType": {
    "kmle": 1312,
+   "imaging": 268,
    "concept": 95,
    "anatomy": 833,
    "usmle": 180,
    "paper": 730,
-   "imaging": 260,
    "ailab": 14,
    "basic": 3
   },
@@ -38,11 +38,11 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 84,
    "Hematology": 79,
    "Laboratory Medicine": 73,
-   "산부인과": 48,
-   "순환기": 25,
+   "산부인과": 49,
+   "순환기": 26,
    "Physiology": 21,
-   "호흡기": 17,
-   "소화기": 16,
+   "호흡기": 18,
+   "소화기": 17,
    "Pharmacology": 15,
    "Biochemistry": 14,
    "소아과": 14,
@@ -50,17 +50,17 @@ window.MEDKOS_INDEX = {
    "병리·조직학": 13,
    "감염": 12,
    "내분비": 12,
+   "신경": 12,
    "응급·중환자": 12,
    "혈액·종양": 12,
-   "신경": 11,
    "신장·비뇨기": 11,
    "Immunology": 10,
    "Internal Medicine": 10,
-   "예방의학·역학": 9,
+   "예방의학·역학": 10,
    "외과": 9,
-   "피부과": 8,
+   "피부과": 9,
+   "근골격·류마티스": 7,
    "약리": 7,
-   "근골격·류마티스": 6,
    "정신과": 6,
    "Allergy": 4,
    "Emergency Medicine": 4,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2351,
+   "high": 2359,
    "medium": 1026,
    "low": 50
   },
-  "tagCount": 4613
+  "tagCount": 4614
  },
  "docs": [
   {
@@ -705,6 +705,144 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1313.md",
    "snippet": "67세 남자가 숨참과 두근거림으로 응급실에 왔다. 1주 전쯤부터 계단을 오르면 숨이 차고 가슴이 뛰었는데, 정확히 언제부터였는지는 모른다. 흉통·실신은 없고 대화는 또렷하며, 손발은 따뜻하다. 고혈압으로 약을 먹고 있고 뇌졸중·출혈 병력은 없다. 도착 때 찍은 심전도는 그림과 같다. 정맥 딜티아젬으로 심실 박동이 90회/분 안팎으로 조절됐지만 숨참이 남아, 동율동으로 되돌리기로 했다. 도착 때 활력징후와 검사 소견은 자료와 같",
    "text": "Cardiology Regular Narrow-Complex Tachycardia of Uncertain Onset in a Hypertensive Man atrial-flutter cardioversion anticoagulation thromboembolism ecg KMLE 2026 / Claude 67세 남자가 숨참과 두근거림으로 응급실에 왔다. 1주 전쯤부터 계단을 오르면 숨이 차고 가슴이 뛰었는데, 정확히 언제부터였는지는 모른다. 흉통·실신은 없고 대화는 또렷하며, 손발은 따뜻하다. 고혈압으로 약을 먹고 있고 뇌졸중·출혈 병력은 없다. 도착 때 찍은 심전도는 그림과 같다. 정맥 딜티아젬으로 심실 박동이 90회/분 안팎으로 조절됐지만 숨참이 남아, 동율동으로 되돌리기로 했다. 도착 때 활력징후와 검사 소견은 자료와 같다. 다음 처치로 가장 적절한 것은? A. 지금 동기화 전기 충격으로 전환한다 B. 항응고제를 3주 이상 쓴 뒤 전환한다 C. 지금 정맥 이부틸라이드로 전환한다 D. 아스피린을 먹인 뒤 다음 날 전환한다 E. 경흉부 초음파 소견을 근거로 지금 전환한다 심전도의 톱니 모양 조동파와 규칙적인 150회/분 심실 박동은 2:1 전도 심방조동이다. 혈압이 유지되고 흉통·의식 변화·저관류가 없어 응급 전환 대상이 아니다. 시작 시점을 모르면 48시간이 넘었다고 보고, 심방조동도 심방세동과 같이 전환 직후 혈전색전증 위험이 있으므로 항응고제를 3주 이상 쓴 뒤(또는 경식도 심초음파로 좌심방귀 혈전이 없음을 확인한 뒤) 전환하고, 전환 뒤에도 4주 이상 항응고를 이어 간다."
+  },
+  {
+   "id": "imaging-2026-0269",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0269.md",
+   "snippet": "A 64 year old man with chronic obstructive pulmonary disease, who was hospitalized twice last year for exacerbations, asks his physician whether a new inhaled drug would keep him out of the hospital. The physician reviews the only published",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c A 64 year old man with chronic obstructive pulmonary disease, who was hospitalized twice last year for exacerbations, asks his physician whether a new inhaled drug would keep him out of the hospital. The physician reviews the only published trial. This randomized controlled trial evaluates whether a new inhaled drug reduces hospitalization for exacerbation within 1 year in patients with chronic obstructive pulmonary disease. Before the study, the investigators specified that an absolute risk reduction of 5 percentage points or more would be clinically important. A total of 300 patients are enrolled, 150 in each group, and all complete follow up. Hospitalization occurs in 24 patients (16%) receiving the drug and in 33 patients (22%) receiving placebo. The absolute risk reduction is 6 percentage points (95% CI, 2.7 to 14.7; P = 0.18). Adverse events are similar in the two groups. Which of the following is the most appropriate interpretation of these results for counseling this patient? A. The trial shows that the drug is equivalent to placebo within the prespecified margin B. The trial's result is invalid because the P value is greater than 0.05 C. The trial cannot exclude a clinically important benefit and was likely too small to detect one D. The trial shows that the drug has no effect on hospitalization for exacerbation E. The trial shows a clinically important benefit because the point estimate exceeds 5 points"
+  },
+  {
+   "id": "imaging-2026-0268",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간경변 환자의 토혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0268.md",
+   "snippet": "56세 남자가 2시간 전부터 선홍색 피를 두 차례 토하여 응급실에 왔다. 20년간 하루 소주 2병을 마셨고, 2년 전 알코올 간경변으로 진단받았다. 혈압 92/58 mmHg, 맥박 112회/분, 체온 36.6 °C 이다. 의식은 명료하고 공막에 황달이 있으며 배가 불러 있고 이동탁음이 있다. 혈액검사에서 혈색소 8.1 g/dL, 혈소판 68,000/mm³, 프로트롬빈시간 INR 1.6, 총빌리루빈 3.2 mg/dL, 알부민 2",
+   "text": "소화기 소화기·간담췌 — 간경변 환자의 토혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c 56세 남자가 2시간 전부터 선홍색 피를 두 차례 토하여 응급실에 왔다. 20년간 하루 소주 2병을 마셨고, 2년 전 알코올 간경변으로 진단받았다. 혈압 92/58 mmHg, 맥박 112회/분, 체온 36.6 °C 이다. 의식은 명료하고 공막에 황달이 있으며 배가 불러 있고 이동탁음이 있다. 혈액검사에서 혈색소 8.1 g/dL, 혈소판 68,000/mm³, 프로트롬빈시간 INR 1.6, 총빌리루빈 3.2 mg/dL, 알부민 2.7 g/dL, 크레아티닌 1.0 mg/dL 이다. 정맥로 2개를 확보하고 혈색소 7~8 g/dL 를 목표로 수혈하면서 옥트레오타이드 정맥 주입을 시작하였고, 12시간 안에 내시경을 하기로 하였다. 지금 함께 투여해야 할 약으로 가장 적절한 것은? A. 세프트리악손 정맥 주사 B. 프로프라놀롤 경구 투여 C. 트라넥삼산 정맥 주사 D. 비타민 K 정맥 주사 E. 알부민 정맥 주입"
+  },
+  {
+   "id": "imaging-2026-0267",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 두통과 유두부종이 있는 젊은 비만 여성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0267.md",
+   "snippet": "A 27 year old woman comes to the physician because of daily headaches for 2 months. The headaches are diffuse, worse in the morning and when she bends over, and are accompanied by brief episodes of visual dimming when she stands up and by a",
+   "text": "신경 신경 — 두통과 유두부종이 있는 젊은 비만 여성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c A 27 year old woman comes to the physician because of daily headaches for 2 months. The headaches are diffuse, worse in the morning and when she bends over, and are accompanied by brief episodes of visual dimming when she stands up and by a pulsatile whooshing sound in both ears. She has gained 12 kg over the past year. She takes no medications. Her BMI is 36 kg/m2. Blood pressure is 122/80 mm Hg. Visual acuity is 20/20 in both eyes. Funduscopic examination shows bilateral optic disc swelling. Automated perimetry shows enlarged blind spots without other field loss. Neurologic examination shows no other abnormalities. MRI and MR venography of the brain show an empty sella and flattening of the posterior globes, with no mass, hydrocephalus or venous sinus thrombosis. Lumbar puncture in the lateral decubitus position shows an opening pressure of 34 cm H2O; cerebrospinal fluid cell count, protein and glucose concentrations are within the reference ranges. In addition to a weight loss program, which of the following is the most appropriate next step in management? A. Anticoagulation with heparin B. Acetazolamide therapy C. Ventriculoperitoneal shunt placement D. Optic nerve sheath fenestration E. High dose intravenous methylprednisolone"
+  },
+  {
+   "id": "imaging-2026-0266",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0266.md",
+   "snippet": "29세 여자가 1주 전부터 생긴 양쪽 발목 통증과 정강이의 붉은 멍울로 내원하였다. 미열이 있고, 기침이나 호흡곤란은 없다. 복용하는 약은 없고, 결핵 환자와 접촉한 적은 없다. 체온 37.8 °C, 혈압 118/72 mmHg 이다. 양쪽 정강이 앞에 누르면 아픈 2~4 cm 크기의 붉은 피하 결절이 여러 개 있고, 양쪽 발목 관절 주위가 붓고 따뜻하다. 폐음은 정상이다. 흉부 X선에서 양측 폐문 림프절이 대칭으로 커져 있고 ",
+   "text": "호흡기 호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c 29세 여자가 1주 전부터 생긴 양쪽 발목 통증과 정강이의 붉은 멍울로 내원하였다. 미열이 있고, 기침이나 호흡곤란은 없다. 복용하는 약은 없고, 결핵 환자와 접촉한 적은 없다. 체온 37.8 °C, 혈압 118/72 mmHg 이다. 양쪽 정강이 앞에 누르면 아픈 2~4 cm 크기의 붉은 피하 결절이 여러 개 있고, 양쪽 발목 관절 주위가 붓고 따뜻하다. 폐음은 정상이다. 흉부 X선에서 양측 폐문 림프절이 대칭으로 커져 있고 폐 실질은 정상이다. 폐기능검사와 혈청 칼슘은 정상이고, 인터페론감마 분비검사는 음성이다. 치료로 가장 적절한 것은? A. 비스테로이드소염제로 증상을 조절하며 경과를 관찰한다 B. 경구 프레드니솔론을 하루 40 mg 으로 시작한다 C. 이소니아지드 등 항결핵제 4제 요법을 시작한다 D. 메토트렉세이트를 매주 복용하도록 시작한다 E. 종격동 림프절 절제 후 항암화학요법을 시작한다"
+  },
+  {
+   "id": "imaging-2026-0265",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 새벽 안정 시 흉통과 일과성 ST 상승",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0265.md",
+   "snippet": "A 38 year old woman comes to the physician because of recurrent episodes of chest tightness during the past 2 months. The episodes occur between 4 AM and 6 AM while she is at rest, last 5 to 10 minutes, and resolve spontaneously or after su",
+   "text": "순환기 순환기 — 새벽 안정 시 흉통과 일과성 ST 상승 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c A 38 year old woman comes to the physician because of recurrent episodes of chest tightness during the past 2 months. The episodes occur between 4 AM and 6 AM while she is at rest, last 5 to 10 minutes, and resolve spontaneously or after sublingual nitroglycerin. She can climb stairs and jog without symptoms. She has smoked one pack of cigarettes daily for 18 years. She has migraine without aura. Her blood pressure is 124/78 mm Hg, and pulse is 72/min. Physical examination shows no abnormalities. An ECG recorded during an episode in the emergency department last week showed 2 mm ST segment elevations in leads II, III and aVF that returned to baseline within 15 minutes; serum troponin concentrations were within the reference range. Coronary angiography shows no obstructive lesions. In addition to smoking cessation, which of the following is the most appropriate long term pharmacotherapy? A. Propranolol B. Aspirin and clopidogrel C. Ranolazine D. Sumatriptan E. Amlodipine"
+  },
+  {
+   "id": "imaging-2026-0264",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 밤에 심해지는 가려움과 손가락 사이 구진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0264.md",
+   "snippet": "28세 여자가 2주 전부터 생긴 가려움으로 내원하였다. 가려움은 밤에 특히 심하고, 함께 사는 남편도 최근 비슷하게 가렵다고 한다. 3주 전 요양병원에서 간병 일을 시작하였다. 진찰에서 손가락 사이, 손목 굽힘면, 배꼽 주위에 작은 붉은 구진과 찰과상이 있고, 손가락 사이에 회백색의 가늘고 구불구불한 선이 몇 개 보인다. 얼굴과 두피에는 병변이 없다. 이 선의 끝을 긁어 현미경으로 보았더니 진드기 알이 보였다. 치료로 가장 적",
+   "text": "피부과 피부 — 밤에 심해지는 가려움과 손가락 사이 구진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c 28세 여자가 2주 전부터 생긴 가려움으로 내원하였다. 가려움은 밤에 특히 심하고, 함께 사는 남편도 최근 비슷하게 가렵다고 한다. 3주 전 요양병원에서 간병 일을 시작하였다. 진찰에서 손가락 사이, 손목 굽힘면, 배꼽 주위에 작은 붉은 구진과 찰과상이 있고, 손가락 사이에 회백색의 가늘고 구불구불한 선이 몇 개 보인다. 얼굴과 두피에는 병변이 없다. 이 선의 끝을 긁어 현미경으로 보았더니 진드기 알이 보였다. 치료로 가장 적절한 것은? A. 본인만 경구 항히스타민제를 2주 동안 먹고 경과를 지켜본다 B. 본인과 남편이 같은 날 경구 테르비나핀을 2주 동안 복용한다 C. 본인과 남편이 같은 날 퍼메트린을 목 아래 전신에 바르고 1주 뒤 반복한다 D. 본인만 퍼메트린을 병변 부위에 바르고 1주 뒤에 한 번 더 바른다 E. 본인과 남편이 같은 날 강한 국소 스테로이드를 2주 동안 바른다"
+  },
+  {
+   "id": "imaging-2026-0263",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0263.md",
+   "snippet": "14세 남자가 1일 전 농구를 하다 넘어지며 오른손을 뻗어 바닥을 짚은 뒤 생긴 손목 통증으로 내원하였다. 손목을 움직이면 엄지 쪽이 아프다고 한다. 진찰에서 해부학적 코담배갑에 압통이 있고, 엄지를 축 방향으로 밀면 통증이 심해진다. 원위 요골 성장판 부위에는 압통·부종·변형이 없고, 손가락의 감각과 모세혈관 재충만 시간은 정상이다. 오른쪽 손목 전후면 X선은 그림과 같고, 측면 X선에서도 골절선이나 전위는 보이지 않았다. ",
+   "text": "근골격·류마티스 류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c 14세 남자가 1일 전 농구를 하다 넘어지며 오른손을 뻗어 바닥을 짚은 뒤 생긴 손목 통증으로 내원하였다. 손목을 움직이면 엄지 쪽이 아프다고 한다. 진찰에서 해부학적 코담배갑에 압통이 있고, 엄지를 축 방향으로 밀면 통증이 심해진다. 원위 요골 성장판 부위에는 압통·부종·변형이 없고, 손가락의 감각과 모세혈관 재충만 시간은 정상이다. 오른쪽 손목 전후면 X선은 그림과 같고, 측면 X선에서도 골절선이나 전위는 보이지 않았다. 다음 처치로 가장 적절한 것은? A. 주상골 골절로 보고 즉시 관혈적 정복과 내고정을 한다 B. 원위 요골 성장판 손상으로 보고 장상지 석고를 6주 한다 C. 진통제만 처방하고 운동을 바로 다시 하도록 한다 D. 엄지를 포함한 부목으로 고정하고 10~14일 뒤 재촬영한다 E. 탄력붕대를 감고 통증이 남을 때만 다시 오게 한다"
+  },
+  {
+   "id": "imaging-2026-0262",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "gross_photo"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+   "confidence": "high",
+   "date": "2026-10-07",
+   "path": "content/imaging/2026/imaging-2026-0262.md",
+   "snippet": "A 46 year old woman, gravida 4, para 3, comes to the emergency department because of headache and vaginal spotting for 4 days. Her last menstrual period was 13 weeks ago. One year ago, her blood pressure at a routine visit was 118/76 mm Hg.",
+   "text": "산부인과 부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체 opendata usmle_style gross_photo 의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c A 46 year old woman, gravida 4, para 3, comes to the emergency department because of headache and vaginal spotting for 4 days. Her last menstrual period was 13 weeks ago. One year ago, her blood pressure at a routine visit was 118/76 mm Hg. She takes no medications. Today, her blood pressure is 164/106 mm Hg, and pulse is 98/min. The uterus is palpable at the level of the umbilicus. There is no peripheral edema. Urinalysis shows 3+ protein. Serum creatinine concentration is 0.8 mg/dL, and serum thyroid stimulating hormone concentration is within the reference range. Serum beta hCG concentration is markedly increased. Transvaginal ultrasonography shows an intrauterine mass with multiple small cystic spaces. After blood pressure control, suction curettage is performed; a photograph of the evacuated uterine contents is shown. Which of the following is the most likely underlying cause of this patient's hypertension? A. Lupus nephritis B. Hydatidiform mole C. Chronic essential hypertension D. Pheochromocytoma E. Primary aldosteronism"
   },
   {
    "id": "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff",

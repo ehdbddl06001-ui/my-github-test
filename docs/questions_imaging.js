@@ -2,6 +2,1086 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0263",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통",
+  "type": "류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "14세 남자가 1일 전 농구를 하다 넘어지며 오른손을 뻗어 바닥을 짚은 뒤 생긴 손목 통증으로 내원하였다. 손목을 움직이면 엄지 쪽이 아프다고 한다. 진찰에서 해부학적 코담배갑에 압통이 있고, 엄지를 축 방향으로 밀면 통증이 심해진다. 원위 요골 성장판 부위에는 압통·부종·변형이 없고, 손가락의 감각과 모세혈관 재충만 시간은 정상이다. 오른쪽 손목 전후면 X선은 그림과 같고, 측면 X선에서도 골절선이나 전위는 보이지 않았다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "주상골 골절로 보고 즉시 관혈적 정복과 내고정을 한다",
+   "원위 요골 성장판 손상으로 보고 장상지 석고를 6주 한다",
+   "진통제만 처방하고 운동을 바로 다시 하도록 한다",
+   "엄지를 포함한 부목으로 고정하고 10~14일 뒤 재촬영한다",
+   "탄력붕대를 감고 통증이 남을 때만 다시 오게 한다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: X선에서 원위 요골·척골의 성장판은 열려 있고 요골·척골·주상골의 피질은 끊긴 곳이 없으며 전위도 없다. 그러나 손을 뻗어 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 주상골 골절을 의심해야 하고, 주상골 골절은 첫 X선에서 상당수가 보이지 않는다. 그래서 첫 X선이 정상이어도 엄지를 포함한 부목으로 고정하고 10~14일 뒤 다시 찍거나(골절선 주변 흡수로 선이 드러난다) 가능하면 MRI 로 확인한다.\n- 원리: <b>왜 주상골은 놓치면 안 되는가</b>: 주상골의 혈액은 대부분 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 허리(중간부)나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊겨 <b>무혈성 괴사</b>와 <b>불유합</b>이 생기고, 진단이 늦어 고정하지 않은 채 움직이면 그 위험이 커진다. 불유합이 진행하면 손목 관절 전체가 무너지는 관절염(SNAC 손목)으로 이어진다.<br> <b>왜 첫 X선이 정상일 수 있는가</b>: 주상골은 비스듬히 놓인 작은 뼈이고 전위 없는 골절선은 머리카락처럼 가늘어 일반 전후면·측면에서 겹쳐 보이지 않는다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어져 보이므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다.<br> <b>그래서 원칙</b>: 임상적으로 의심되면 정상 X선을 「골절 없음」으로 받아들이지 않는다 — 엄지까지 고정해 주상골의 움직임을 막은 채 재촬영이나 MRI 로 확정한다. 청소년도 성장판이 닫혀 가는 나이라 성인형 주상골 골절이 생긴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잠복 주상골 골절(이 환자)</th><th>원위 요골 성장판 손상(Salter-Harris I형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>압통 위치</td><td>코담배갑, 엄지 축 방향 압박통</td><td>원위 요골 성장판 둘레(손목 등쪽·요측 바로 위)</td></tr> <tr><td>X선</td><td>정상일 수 있음 — 10~14일 뒤 골절선</td><td>정상이거나 성장판이 약간 넓어짐, 뒤에 골막 반응</td></tr> <tr><td>처치</td><td>엄지 포함 부목 → 재촬영 또는 MRI</td><td>단상지 고정 3~4주 뒤 재평가</td></tr> </tbody></table> 두 경우 모두 「X선 정상 + 국소 압통」이면 고정한다. 어디를 누를 때 아픈지가 고정 범위(엄지 포함 여부)와 확인 방법을 정한다.\n- 오답 이유:\n  - ① 즉시 관혈적 정복과 내고정은 X선이나 CT·MRI 에서 전위된(1 mm 이상) 주상골 골절이나 근위부 골절이 확인되었을 때의 치료다. 아직 골절 자체가 확인되지 않았다.\n  - ② 장기간 석고 고정은 원위 요골 성장판 둘레에 압통·부종이 있어 성장판 손상을 의심할 때의 처치다(대개 단상지 3~4주면 충분하다). 이 환자는 성장판 부위가 멀쩡하고 압통이 코담배갑에 있다.\n  - ③ 진통제만 주고 운동에 복귀시키는 것은 압통과 압박통이 모두 없는 가벼운 타박에서만 가능하다. 여기서는 숨은 골절이 움직임으로 불유합이 될 수 있다.\n  - ⑤ 탄력붕대만 감고 증상에 맡기는 것은 코담배갑 압통이 없는 단순 염좌에 맞다. 압통이 없고 축 방향 압박통도 없었다면 이 처치가 적절하다.\n- 함정: 정상 X선을 「골절 없음」으로 읽고 고정하지 않는 것 — 코담배갑 압통이면 X선이 정상이어도 주상골 골절로 보고 고정한다.\n- 학습목표: 코담배갑 압통이 있는데 첫 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영(또는 MRI)함을 안다\n- 근거·출처: Azar FM, Beaty JH. Campbell's Operative Orthopaedics, 14th ed. Ch. Fractures and dislocations of the wrist (scaphoid fractures — occult fracture, immobilization, repeat imaging) · American College of Radiology. ACR Appropriateness Criteria: Acute Hand and Wrist Trauma, 2018 update (suspected scaphoid fracture with normal radiographs) · 작성자 판독(2026-10-08): 14.1세 남 오른쪽 손목 전후면 — 원위 요골·척골 성장판 열림, 요골·척골·주상골 피질 연속, 골절선·전위·연부조직 종창 없음\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 원위 요골·척골의 성장판은 열려 있고 요골·척골·주상골의 피질은 끊긴 곳이 없으며 전위도 없다. 그러나 손을 뻗어 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 주상골 골절을 의심해야 하고, 주상골 골절은 첫 X선에서 상당수가 보이지 않는다. 그래서 첫 X선이 정상이어도 엄지를 포함한 부목으로 고정하고 10~14일 뒤 다시 찍거나(골절선 주변 흡수로 선이 드러난다) 가능하면 MRI 로 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 주상골은 놓치면 안 되는가</b>: 주상골의 혈액은 대부분 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 허리(중간부)나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊겨 <b>무혈성 괴사</b>와 <b>불유합</b>이 생기고, 진단이 늦어 고정하지 않은 채 움직이면 그 위험이 커진다. 불유합이 진행하면 손목 관절 전체가 무너지는 관절염(SNAC 손목)으로 이어진다.<br> <b>왜 첫 X선이 정상일 수 있는가</b>: 주상골은 비스듬히 놓인 작은 뼈이고 전위 없는 골절선은 머리카락처럼 가늘어 일반 전후면·측면에서 겹쳐 보이지 않는다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어져 보이므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다.<br> <b>그래서 원칙</b>: 임상적으로 의심되면 정상 X선을 「골절 없음」으로 받아들이지 않는다 — 엄지까지 고정해 주상골의 움직임을 막은 채 재촬영이나 MRI 로 확정한다. 청소년도 성장판이 닫혀 가는 나이라 성인형 주상골 골절이 생긴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잠복 주상골 골절(이 환자)</th><th>원위 요골 성장판 손상(Salter-Harris I형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>압통 위치</td><td>코담배갑, 엄지 축 방향 압박통</td><td>원위 요골 성장판 둘레(손목 등쪽·요측 바로 위)</td></tr> <tr><td>X선</td><td>정상일 수 있음 — 10~14일 뒤 골절선</td><td>정상이거나 성장판이 약간 넓어짐, 뒤에 골막 반응</td></tr> <tr><td>처치</td><td>엄지 포함 부목 → 재촬영 또는 MRI</td><td>단상지 고정 3~4주 뒤 재평가</td></tr> </tbody></table> 두 경우 모두 「X선 정상 + 국소 압통」이면 고정한다. 어디를 누를 때 아픈지가 고정 범위(엄지 포함 여부)와 확인 방법을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 즉시 관혈적 정복과 내고정은 X선이나 CT·MRI 에서 전위된(1 mm 이상) 주상골 골절이나 근위부 골절이 확인되었을 때의 치료다. 아직 골절 자체가 확인되지 않았다.\n② 장기간 석고 고정은 원위 요골 성장판 둘레에 압통·부종이 있어 성장판 손상을 의심할 때의 처치다(대개 단상지 3~4주면 충분하다). 이 환자는 성장판 부위가 멀쩡하고 압통이 코담배갑에 있다.\n③ 진통제만 주고 운동에 복귀시키는 것은 압통과 압박통이 모두 없는 가벼운 타박에서만 가능하다. 여기서는 숨은 골절이 움직임으로 불유합이 될 수 있다.\n⑤ 탄력붕대만 감고 증상에 맡기는 것은 코담배갑 압통이 없는 단순 염좌에 맞다. 압통이 없고 축 방향 압박통도 없었다면 이 처치가 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "정상 X선을 「골절 없음」으로 읽고 고정하지 않는 것 — 코담배갑 압통이면 X선이 정상이어도 주상골 골절로 보고 고정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "코담배갑 압통이 있는데 첫 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영(또는 MRI)함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Azar FM, Beaty JH. Campbell's Operative Orthopaedics, 14th ed. Ch. Fractures and dislocations of the wrist (scaphoid fractures — occult fracture, immobilization, repeat imaging) · American College of Radiology. ACR Appropriateness Criteria: Acute Hand and Wrist Trauma, 2018 update (suspected scaphoid fracture with normal radiographs) · 작성자 판독(2026-10-08): 14.1세 남 오른쪽 손목 전후면 — 원위 요골·척골 성장판 열림, 요골·척골·주상골 피질 연속, 골절선·전위·연부조직 종창 없음 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "손을 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 X선이 정상이어도 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "압통이 원위 요골 성장판이 아니라 코담배갑에 있다",
+   "steps": 3,
+   "chain": [
+    "손을 뻗어 짚고 넘어짐 + 코담배갑 압통 + 엄지 축 방향 압박통 → 주상골 골절 의심",
+    "영상: 골절선·전위 없음 → 첫 X선에서 안 보이는 잠복 골절일 수 있음",
+    "불유합·무혈성 괴사 위험 → 엄지 포함 고정 후 10~14일 뒤 재촬영"
+   ],
+   "key": [
+    {
+     "item": "영상: 요골·척골·주상골 피질이 연속되고 골절선·전위가 없다",
+     "why": "첫 X선 정상 — 그래도 잠복 골절을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "해부학적 코담배갑에 압통",
+     "why": "주상골 골절의 핵심 진찰 소견",
+     "also": []
+    },
+    {
+     "item": "엄지를 축 방향으로 밀면 통증이 심해진다",
+     "why": "주상골 압박통 — 의심을 높인다",
+     "also": []
+    },
+    {
+     "item": "오른손을 뻗어 바닥을 짚은 뒤",
+     "why": "주상골 골절의 전형적 손상 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "원위 요골 성장판 부위에는 압통·부종·변형이 없고",
+     "why": "성장판 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "손가락의 감각과 모세혈관 재충만 시간은 정상",
+     "why": "신경혈관 손상 없음 — 응급 처치가 필요하지 않다",
+     "also": []
+    },
+    {
+     "item": "14세 남자",
+     "why": "성장판이 아직 열린 나이 — 성장판 손상을 떠올리게 하는 함정",
+     "also": []
+    }
+   ],
+   "summary": "손을 짚고 넘어진 청소년이 코담배갑 압통과 엄지 축 방향 압박통을 보인다. 첫 X선이 정상이어도 잠복 주상골 골절로 보고 엄지를 포함해 고정한 뒤 10~14일 뒤 재촬영한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "압통과 부종이 코담배갑이 아니라 원위 요골 성장판 둘레에 있었다면 성장판 손상으로 보고 고정한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0263.png",
+   "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0663_0857365894_01_WRI-R1_M014",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0262",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체",
+  "type": "부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체",
+  "modality": "GROSS_PHOTO",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "A 46-year-old woman, gravida 4, para 3, comes to the emergency department because of headache and vaginal spotting for 4 days. Her last menstrual period was 13 weeks ago. One year ago, her blood pressure at a routine visit was 118/76 mm Hg. She takes no medications. Today, her blood pressure is 164/106 mm Hg, and pulse is 98/min. The uterus is palpable at the level of the umbilicus. There is no peripheral edema. Urinalysis shows 3+ protein. Serum creatinine concentration is 0.8 mg/dL, and serum thyroid-stimulating hormone concentration is within the reference range. Serum beta-hCG concentration is markedly increased. Transvaginal ultrasonography shows an intrauterine mass with multiple small cystic spaces. After blood pressure control, suction curettage is performed; a photograph of the evacuated uterine contents is shown.",
+  "question": "Which of the following is the most likely underlying cause of this patient's hypertension?",
+  "options": [
+   "Lupus nephritis",
+   "Hydatidiform mole",
+   "Chronic essential hypertension",
+   "Pheochromocytoma",
+   "Primary aldosteronism"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The photograph shows numerous translucent, grape-like vesicles mixed with blood clot and no recognizable fetal tissue — hydropic chorionic villi of a hydatidiform mole. The uterus is much larger than dates (umbilicus at 13 weeks), beta-hCG is markedly increased and ultrasonography shows a multicystic intrauterine mass. Hypertension with proteinuria before 20 weeks of gestation in a woman who was normotensive a year earlier is preeclampsia occurring too early for an ordinary pregnancy; the classic explanation is a molar pregnancy, whose excess abnormal trophoblast drives the placental mechanism of preeclampsia ahead of schedule.\n- 원리: <b>Why preeclampsia usually waits until 20 weeks</b>: preeclampsia begins in the placenta. When cytotrophoblast fails to remodel the spiral arteries, the placenta becomes relatively ischemic and releases antiangiogenic factors such as soluble fms-like tyrosine kinase-1 (sFlt-1) and soluble endoglin. These bind VEGF and PlGF in the maternal circulation, causing endothelial dysfunction — hypertension, glomerular endotheliosis with proteinuria, and cerebral symptoms. Enough placental mass and enough mismatch between demand and supply to raise these factors normally appear only in the second half of pregnancy.<br> <b>Why a mole brings it forward</b>: in a hydatidiform mole the trophoblast proliferates excessively and the villi swell with fluid instead of developing a vascularized placenta. The trophoblastic mass is large early, and the same antiangiogenic imbalance appears in the first trimester. The very high hCG also explains hyperemesis, theca lutein cysts and, occasionally, hyperthyroidism (hCG shares a subunit with TSH).<br> <b>Clinical rule</b>: preeclampsia before 20 weeks should prompt ultrasonography and hCG measurement for molar pregnancy; treatment of the hypertension is supportive, and the definitive treatment is evacuation of the uterus.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hydatidiform mole (correct)</th><th>Chronic essential hypertension (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure before pregnancy</td><td>Normal — 118/76 mm Hg a year earlier</td><td>Elevated before pregnancy or before 20 weeks</td></tr> <tr><td>Proteinuria</td><td>Present (early preeclampsia)</td><td>Absent unless preeclampsia is superimposed, usually after 20 weeks</td></tr> <tr><td>Uterus and hCG</td><td>Large for dates, markedly high hCG, multicystic mass</td><td>Size appropriate for dates, hCG appropriate</td></tr> </tbody></table> Hypertension found before 20 weeks is chronic hypertension unless the pregnancy itself is abnormal; when proteinuria, a large uterus and very high hCG accompany it, the trophoblast is the cause.\n- 오답 이유:\n  - (A) Lupus nephritis can cause hypertension with proteinuria in early pregnancy; it would be favored by rash, arthritis, active urinary sediment and low complement rather than a multicystic uterine mass.\n  - (C) Chronic essential hypertension is the usual cause of hypertension before 20 weeks; it would fit if her blood pressure had already been elevated before pregnancy and there were no proteinuria or large-for-dates uterus.\n  - (D) Pheochromocytoma causes paroxysmal hypertension with headache, sweating and palpitations in any trimester; it would be likely with episodic symptoms, normal hCG for dates and elevated plasma metanephrines.\n  - (E) Primary aldosteronism causes hypertension with hypokalemia and suppressed renin; it would be suspected with low serum potassium and no proteinuria, and it does not enlarge the uterus.\n- 함정: Calling hypertension before 20 weeks chronic hypertension without noticing the normal pre-pregnancy pressure, the proteinuria and the large uterus — early preeclampsia points to a mole.\n- 학습목표: 임신 20주 이전에 생긴 전자간증 양상의 고혈압이 포상기태를 시사함을 알고, 흡입소파 검체의 포도알 모양 소포를 연결한다\n- 근거·출처: Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 13 Gestational trophoblastic disease (clinical findings, early-onset preeclampsia) · ACOG Practice Bulletin No. 222. Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260 (PMID 32443079) · PMC13090612 Figure 3 — case report of a 46-year-old woman (teacher-only) · 작성자 판독(2026-10-08): 흡입소파 자궁 내용물 — 반투명한 포도알 모양 소포가 무수히 섞이고 혈괴 동반, 태아 조직 안 보임\n\n## 출처\n- Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows numerous translucent, grape-like vesicles mixed with blood clot and no recognizable fetal tissue — hydropic chorionic villi of a hydatidiform mole. The uterus is much larger than dates (umbilicus at 13 weeks), beta-hCG is markedly increased and ultrasonography shows a multicystic intrauterine mass. Hypertension with proteinuria before 20 weeks of gestation in a woman who was normotensive a year earlier is preeclampsia occurring too early for an ordinary pregnancy; the classic explanation is a molar pregnancy, whose excess abnormal trophoblast drives the placental mechanism of preeclampsia ahead of schedule."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why preeclampsia usually waits until 20 weeks</b>: preeclampsia begins in the placenta. When cytotrophoblast fails to remodel the spiral arteries, the placenta becomes relatively ischemic and releases antiangiogenic factors such as soluble fms-like tyrosine kinase-1 (sFlt-1) and soluble endoglin. These bind VEGF and PlGF in the maternal circulation, causing endothelial dysfunction — hypertension, glomerular endotheliosis with proteinuria, and cerebral symptoms. Enough placental mass and enough mismatch between demand and supply to raise these factors normally appear only in the second half of pregnancy.<br> <b>Why a mole brings it forward</b>: in a hydatidiform mole the trophoblast proliferates excessively and the villi swell with fluid instead of developing a vascularized placenta. The trophoblastic mass is large early, and the same antiangiogenic imbalance appears in the first trimester. The very high hCG also explains hyperemesis, theca lutein cysts and, occasionally, hyperthyroidism (hCG shares a subunit with TSH).<br> <b>Clinical rule</b>: preeclampsia before 20 weeks should prompt ultrasonography and hCG measurement for molar pregnancy; treatment of the hypertension is supportive, and the definitive treatment is evacuation of the uterus."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hydatidiform mole (correct)</th><th>Chronic essential hypertension (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure before pregnancy</td><td>Normal — 118/76 mm Hg a year earlier</td><td>Elevated before pregnancy or before 20 weeks</td></tr> <tr><td>Proteinuria</td><td>Present (early preeclampsia)</td><td>Absent unless preeclampsia is superimposed, usually after 20 weeks</td></tr> <tr><td>Uterus and hCG</td><td>Large for dates, markedly high hCG, multicystic mass</td><td>Size appropriate for dates, hCG appropriate</td></tr> </tbody></table> Hypertension found before 20 weeks is chronic hypertension unless the pregnancy itself is abnormal; when proteinuria, a large uterus and very high hCG accompany it, the trophoblast is the cause."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Lupus nephritis can cause hypertension with proteinuria in early pregnancy; it would be favored by rash, arthritis, active urinary sediment and low complement rather than a multicystic uterine mass.\n(C) Chronic essential hypertension is the usual cause of hypertension before 20 weeks; it would fit if her blood pressure had already been elevated before pregnancy and there were no proteinuria or large-for-dates uterus.\n(D) Pheochromocytoma causes paroxysmal hypertension with headache, sweating and palpitations in any trimester; it would be likely with episodic symptoms, normal hCG for dates and elevated plasma metanephrines.\n(E) Primary aldosteronism causes hypertension with hypokalemia and suppressed renin; it would be suspected with low serum potassium and no proteinuria, and it does not enlarge the uterus."
+   },
+   {
+    "k": "함정",
+    "v": "Calling hypertension before 20 weeks chronic hypertension without noticing the normal pre-pregnancy pressure, the proteinuria and the large uterus — early preeclampsia points to a mole."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 20주 이전에 생긴 전자간증 양상의 고혈압이 포상기태를 시사함을 알고, 흡입소파 검체의 포도알 모양 소포를 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 13 Gestational trophoblastic disease (clinical findings, early-onset preeclampsia) · ACOG Practice Bulletin No. 222. Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260 (PMID 32443079) · PMC13090612 Figure 3 — case report of a 46-year-old woman (teacher-only) · 작성자 판독(2026-10-08): 흡입소파 자궁 내용물 — 반투명한 포도알 모양 소포가 무수히 섞이고 혈괴 동반, 태아 조직 안 보임 ## 출처 Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "임신 13주에 단백뇨를 동반한 새 고혈압과 주수보다 큰 자궁·높은 hCG 가 있고 검체가 포도알 모양 소포이므로 고혈압의 원인은 포상기태다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "1년 전 혈압이 정상이었고 단백뇨·주수보다 큰 자궁·포도알 모양 소포가 있어 만성 고혈압이 아니다",
+   "steps": 2,
+   "chain": [
+    "임신 13주 단백뇨 동반 새 고혈압 → 20주 이전 전자간증 양상",
+    "주수보다 큰 자궁·높은 hCG·다낭성 자궁 내 종괴·포도알 모양 소포 → 포상기태가 원인"
+   ],
+   "key": [
+    {
+     "item": "영상: 반투명한 포도알 모양 소포가 무수히 섞인 자궁 내용물",
+     "why": "수종성 융모 — 포상기태의 육안 소견",
+     "also": []
+    },
+    {
+     "item": "Her last menstrual period was 13 weeks ago",
+     "why": "20주 이전 — 보통의 전자간증으로는 너무 이르다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis shows 3+ protein",
+     "why": "단순 고혈압이 아니라 전자간증 양상",
+     "also": []
+    },
+    {
+     "item": "The uterus is palpable at the level of the umbilicus",
+     "why": "13주에 배꼽 높이 — 주수보다 큰 자궁",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "her blood pressure at a routine visit was 118/76 mm Hg",
+     "why": "임신 전 정상 혈압 — 만성 고혈압 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine concentration is 0.8 mg/dL",
+     "why": "콩팥 기능 정상 — 진행된 루푸스신염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "serum thyroid-stimulating hormone concentration is within the reference range",
+     "why": "hCG 에 의한 갑상샘중독은 없다 — 원인 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "She takes no medications",
+     "why": "약물성 고혈압 배제용 배경",
+     "also": []
+    }
+   ],
+   "summary": "임신 13주에 단백뇨를 동반한 새 고혈압은 20주 이전 전자간증이다. 주수보다 큰 자궁·높은 hCG·포도알 모양 소포가 원인이 포상기태임을 보여 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "임신 전부터 혈압이 높았고 단백뇨가 없으며 자궁 크기·hCG 가 주수에 맞았다면 만성 고혈압이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0262.jpg",
+   "caption": "Photograph of the evacuated uterine contents in a specimen container — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "GROSS_PHOTO 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/",
+   "asset_id": "PMC-PMC13090612_Figure3",
+   "text": "Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3"
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0269",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석",
+  "type": "예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-07",
+  "vignette": "A 64-year-old man with chronic obstructive pulmonary disease, who was hospitalized twice last year for exacerbations, asks his physician whether a new inhaled drug would keep him out of the hospital. The physician reviews the only published trial. This randomized controlled trial evaluates whether a new inhaled drug reduces hospitalization for exacerbation within 1 year in patients with chronic obstructive pulmonary disease. Before the study, the investigators specified that an absolute risk reduction of 5 percentage points or more would be clinically important. A total of 300 patients are enrolled, 150 in each group, and all complete follow-up. Hospitalization occurs in 24 patients (16%) receiving the drug and in 33 patients (22%) receiving placebo. The absolute risk reduction is 6 percentage points (95% CI, -2.7 to 14.7; P = 0.18). Adverse events are similar in the two groups.",
+  "question": "Which of the following is the most appropriate interpretation of these results for counseling this patient?",
+  "options": [
+   "The trial shows that the drug is equivalent to placebo within the prespecified margin",
+   "The trial's result is invalid because the P value is greater than 0.05",
+   "The trial cannot exclude a clinically important benefit and was likely too small to detect one",
+   "The trial shows that the drug has no effect on hospitalization for exacerbation",
+   "The trial shows a clinically important benefit because the point estimate exceeds 5 points"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The 95% confidence interval for the absolute risk reduction runs from -2.7 to 14.7 percentage points. It includes zero, so the result is not statistically significant, but it also includes values far above the 5-point threshold the investigators called clinically important. The data are therefore compatible both with no benefit (or slight harm) and with a large benefit: absence of evidence is not evidence of absence. With 150 patients per group, the trial had low power to detect a 6-point difference; a larger trial is needed.\n- 원리: <b>What a confidence interval says</b>: the 95% CI is the range of true effects that are reasonably compatible with the data. The P value only asks whether zero lies inside it. A nonsignificant P value with a CI that is <b>wide</b> and reaches clinically important values means the study is inconclusive, not negative.<br> <b>Why this trial was underpowered</b>: to detect a reduction from 22% to 16% with 80% power at α = 0.05, roughly 700 patients per group are needed. With 150 per group, the chance of a type II error (missing a true effect of that size) was large. The width of the CI shows this directly — about ±8.7 points around the estimate.<br> <b>How to claim \"no effect\"</b>: to conclude that a drug does not have an important effect, the whole CI must lie below the clinically important threshold (here, the upper bound would need to be below 5 points). To claim equivalence, the CI must lie within a prespecified margin on both sides. The point estimate alone, however close to or above the threshold, never establishes benefit when the CI includes zero.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Inconclusive, underpowered (correct)</th><th>Evidence of no effect (closest distractor)</th></tr></thead><tbody> <tr><td>Where the CI lies</td><td>Includes zero and values above the 5-point threshold (-2.7 to 14.7)</td><td>Includes zero but the upper bound is below the clinically important threshold</td></tr> <tr><td>What it rules out</td><td>Only large harm</td><td>Any clinically important benefit</td></tr> <tr><td>Next step</td><td>Larger trial or meta-analysis</td><td>Stop pursuing this effect size</td></tr> </tbody></table> Read the CI against two lines — zero and the clinically important difference — before choosing between \"no effect\", \"benefit\" and \"inconclusive\".\n- 오답 이유:\n  - (A) Equivalence would require the whole CI to lie within a prespecified equivalence margin, such as -3 to 3 points; this CI is far wider, and the trial was not designed to show equivalence.\n  - (B) A P value above 0.05 does not invalidate a trial; validity depends on randomization, blinding and follow-up, which appear adequate. A trial with major loss to follow-up or broken allocation would be invalid.\n  - (D) Concluding no effect would be correct only if the entire CI lay below the 5-point threshold, for example -1.0 to 3.5; here the upper bound is 14.7 points, so an important benefit remains possible.\n  - (E) A point estimate above the threshold suggests benefit, but the CI still includes zero and slight harm; benefit would be shown if the lower bound of the CI were above zero, ideally above 5 points.\n- 함정: Reading P > 0.05 as proof of no effect — the CI still includes an effect larger than the clinically important threshold.\n- 학습목표: 통계적으로 유의하지 않은 결과도 신뢰구간이 임상적으로 중요한 효과를 포함하면 효과가 없다고 결론 내릴 수 없음(검정력 부족)을 안다\n- 근거·출처: Altman DG, Bland JM. Absence of evidence is not evidence of absence. BMJ 1995;311:485 (PMID 7647644) · Gordis L. Epidemiology, 5th ed. Ch. Randomized trials — sample size, power and interpretation of negative results",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The 95% confidence interval for the absolute risk reduction runs from -2.7 to 14.7 percentage points. It includes zero, so the result is not statistically significant, but it also includes values far above the 5-point threshold the investigators called clinically important. The data are therefore compatible both with no benefit (or slight harm) and with a large benefit: absence of evidence is not evidence of absence. With 150 patients per group, the trial had low power to detect a 6-point difference; a larger trial is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What a confidence interval says</b>: the 95% CI is the range of true effects that are reasonably compatible with the data. The P value only asks whether zero lies inside it. A nonsignificant P value with a CI that is <b>wide</b> and reaches clinically important values means the study is inconclusive, not negative.<br> <b>Why this trial was underpowered</b>: to detect a reduction from 22% to 16% with 80% power at α = 0.05, roughly 700 patients per group are needed. With 150 per group, the chance of a type II error (missing a true effect of that size) was large. The width of the CI shows this directly — about ±8.7 points around the estimate.<br> <b>How to claim \"no effect\"</b>: to conclude that a drug does not have an important effect, the whole CI must lie below the clinically important threshold (here, the upper bound would need to be below 5 points). To claim equivalence, the CI must lie within a prespecified margin on both sides. The point estimate alone, however close to or above the threshold, never establishes benefit when the CI includes zero."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Inconclusive, underpowered (correct)</th><th>Evidence of no effect (closest distractor)</th></tr></thead><tbody> <tr><td>Where the CI lies</td><td>Includes zero and values above the 5-point threshold (-2.7 to 14.7)</td><td>Includes zero but the upper bound is below the clinically important threshold</td></tr> <tr><td>What it rules out</td><td>Only large harm</td><td>Any clinically important benefit</td></tr> <tr><td>Next step</td><td>Larger trial or meta-analysis</td><td>Stop pursuing this effect size</td></tr> </tbody></table> Read the CI against two lines — zero and the clinically important difference — before choosing between \"no effect\", \"benefit\" and \"inconclusive\"."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Equivalence would require the whole CI to lie within a prespecified equivalence margin, such as -3 to 3 points; this CI is far wider, and the trial was not designed to show equivalence.\n(B) A P value above 0.05 does not invalidate a trial; validity depends on randomization, blinding and follow-up, which appear adequate. A trial with major loss to follow-up or broken allocation would be invalid.\n(D) Concluding no effect would be correct only if the entire CI lay below the 5-point threshold, for example -1.0 to 3.5; here the upper bound is 14.7 points, so an important benefit remains possible.\n(E) A point estimate above the threshold suggests benefit, but the CI still includes zero and slight harm; benefit would be shown if the lower bound of the CI were above zero, ideally above 5 points."
+   },
+   {
+    "k": "함정",
+    "v": "Reading P > 0.05 as proof of no effect — the CI still includes an effect larger than the clinically important threshold."
+   },
+   {
+    "k": "학습목표",
+    "v": "통계적으로 유의하지 않은 결과도 신뢰구간이 임상적으로 중요한 효과를 포함하면 효과가 없다고 결론 내릴 수 없음(검정력 부족)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Altman DG, Bland JM. Absence of evidence is not evidence of absence. BMJ 1995;311:485 (PMID 7647644) · Gordis L. Epidemiology, 5th ed. Ch. Randomized trials — sample size, power and interpretation of negative results"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "절대위험감소의 95 % 신뢰구간이 0 과 임상적으로 중요한 5 %p 를 모두 포함하므로, 효과가 없다고도 있다고도 결론 내릴 수 없고 검정력이 부족했다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "신뢰구간 상한(14.7 %p)이 임상적 중요 기준 5 %p 를 넘어 중요한 이익을 배제하지 못한다",
+   "steps": 3,
+   "chain": [
+    "95 % 신뢰구간 -2.7 ~ 14.7 %p 가 0 을 포함 → 통계적으로 유의하지 않음",
+    "같은 구간이 임상적 중요 기준 5 %p 이상도 포함 → 중요한 이익을 배제하지 못함",
+    "군당 150명·넓은 구간 → 검정력 부족, 결론 불가"
+   ],
+   "key": [
+    {
+     "item": "95% CI, -2.7 to 14.7",
+     "why": "0 과 5 %p 를 모두 포함",
+     "also": []
+    },
+    {
+     "item": "an absolute risk reduction of 5 percentage points or more would be clinically important",
+     "why": "신뢰구간과 비교할 기준선",
+     "also": []
+    },
+    {
+     "item": "150 in each group",
+     "why": "작은 표본 — 검정력 부족의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "P = 0.18",
+     "why": "유의하지 않다 — 그러나 무효과의 증거는 아니다",
+     "also": []
+    },
+    {
+     "item": "all complete follow-up",
+     "why": "추적 소실로 결과가 무효라는 해석의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Adverse events are similar in the two groups",
+     "why": "안전성 정보 — 효과 해석에는 쓰지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "신뢰구간이 0 과 임상적 중요 기준 5 %p 를 모두 포함한다. 유의하지 않지만 효과가 없다는 증거가 아니며, 작은 시험이라 중요한 이익을 배제하지 못한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "95 % 신뢰구간이 -1.0 ~ 3.5 %p 처럼 상한이 5 %p 아래였다면 임상적으로 중요한 효과는 없다고 결론 내릴 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0268",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "소화기·간담췌 — 간경변 환자의 토혈",
+  "type": "소화기·간담췌 — 간경변 환자의 토혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "56세 남자가 2시간 전부터 선홍색 피를 두 차례 토하여 응급실에 왔다. 20년간 하루 소주 2병을 마셨고, 2년 전 알코올 간경변으로 진단받았다. 혈압 92/58 mmHg, 맥박 112회/분, 체온 36.6 °C 이다. 의식은 명료하고 공막에 황달이 있으며 배가 불러 있고 이동탁음이 있다. 혈액검사에서 혈색소 8.1 g/dL, 혈소판 68,000/mm³, 프로트롬빈시간 INR 1.6, 총빌리루빈 3.2 mg/dL, 알부민 2.7 g/dL, 크레아티닌 1.0 mg/dL 이다. 정맥로 2개를 확보하고 혈색소 7~8 g/dL 를 목표로 수혈하면서 옥트레오타이드 정맥 주입을 시작하였고, 12시간 안에 내시경을 하기로 하였다.",
+  "question": "지금 함께 투여해야 할 약으로 가장 적절한 것은?",
+  "options": [
+   "세프트리악손 정맥 주사",
+   "프로프라놀롤 경구 투여",
+   "트라넥삼산 정맥 주사",
+   "비타민 K 정맥 주사",
+   "알부민 정맥 주입"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 알코올 간경변(복수·황달·혈소판감소) 환자의 선홍색 토혈과 저혈압은 정맥류 출혈을 먼저 생각한다. 혈관작용제(옥트레오타이드)·제한적 수혈과 함께, 간경변 환자의 위장관출혈에는 세균 감염(특발세균복막염·균혈증)이 흔하고 재출혈·사망을 늘리므로 예방적 항생제를 바로 투여한다. 진행된 간경변에서는 세프트리악손 1 g/일 정맥 주사를 최대 7일 쓴다. 그 뒤 12시간 안에 내시경 결찰술을 한다.\n- 원리: <b>왜 항생제가 생존을 바꾸는가</b>: 간경변 환자는 장 투과성이 높고 장내세균이 과증식하며 문맥 단락으로 간의 세균 여과가 약하다. 출혈로 장 점막 혈류가 떨어지면 세균 전위(translocation)가 늘어 출혈 환자의 절반 가까이에서 세균 감염이 생긴다. 감염은 내독소·사이토카인으로 문맥압을 더 올리고 지혈을 방해해 <b>조기 재출혈</b>과 사망을 늘린다. 예방적 항생제는 감염·재출혈·사망을 모두 줄인 몇 안 되는 처치다.<br> <b>왜 세프트리악손인가</b>: 원인균은 주로 장내 그람음성막대균이고, 진행된 간경변(복수·황달·영양불량)이나 퀴놀론 예방 중인 환자에서는 퀴놀론 내성이 흔해 3세대 세팔로스포린이 경구 노르플록사신보다 낫다.<br> <b>급성기 β차단제는 왜 안 되는가</b>: 비선택 β차단제는 심박출량과 내장 혈류를 줄여 2차 예방에는 좋지만, 출혈 중인 저혈압 환자에서는 보상성 빈맥을 막아 쇼크를 악화시킨다. 출혈이 멎고 혈역학이 안정된 뒤(대개 2~5일) 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세프트리악손(정답)</th><th>프로프라놀롤(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td>입원 즉시, 내시경 전</td><td>출혈이 멎고 혈역학이 안정된 뒤(2차 예방)</td></tr> <tr><td>효과</td><td>감염·조기 재출혈·사망 감소</td><td>문맥압을 낮춰 장기 재출혈 감소</td></tr> <tr><td>이 환자에서</td><td>복수·황달이 있는 진행 간경변 — 더 필요하다</td><td>혈압 92/58 mmHg, 맥박 112회/분 — 쇼크를 악화시킨다</td></tr> </tbody></table> 두 약 모두 정맥류 출혈 관리에 들어가지만, 급성기에는 항생제, 회복기에는 β차단제다.\n- 오답 이유:\n  - ② 프로프라놀롤은 정맥류 출혈이 멎고 혈역학이 안정된 뒤 결찰술과 함께 재출혈을 막는 2차 예방약이다. 퇴원을 앞둔 안정된 환자라면 정답이다.\n  - ③ 트라넥삼산은 대규모 시험(HALT-IT)에서 위장관출혈의 사망을 줄이지 못하고 혈전 합병증을 늘렸다. 산후출혈·외상 출혈처럼 섬유소용해가 주된 경우라면 쓸 수 있다.\n  - ④ 비타민 K 는 결핍(영양불량·담즙정체·와파린)으로 INR 이 높을 때 교정한다. 간경변의 INR 상승은 합성 장애라 거의 교정되지 않는다 — 와파린 복용자라면 맞다.\n  - ⑤ 알부민은 특발세균복막염에서 항생제와 함께, 또는 대량 복수천자 뒤 콩팥 기능을 지키려고 준다. 복수천자에서 호중구가 250/mm³ 이상이었다면 항생제와 함께 정답이 된다.\n- 함정: 정맥류 출혈에 β차단제를 바로 시작하는 것 — 급성기에는 저혈압을 악화시키고, 지금 필요한 것은 예방적 항생제다.\n- 학습목표: 간경변 환자의 상부위장관출혈에서 혈관작용제와 함께 예방적 항생제(세프트리악손)를 투여하고 급성기에 β차단제를 쓰지 않음을 안다\n- 근거·출처: de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 (PMID 35120736) · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211 (PMID 37870298) · HALT-IT Trial Collaborators. Effects of a high-dose 24-h infusion of tranexamic acid on death and thromboembolic events in patients with acute gastrointestinal bleeding. Lancet 2020;395:1927-1936 (PMID 32563378)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "알코올 간경변(복수·황달·혈소판감소) 환자의 선홍색 토혈과 저혈압은 정맥류 출혈을 먼저 생각한다. 혈관작용제(옥트레오타이드)·제한적 수혈과 함께, 간경변 환자의 위장관출혈에는 세균 감염(특발세균복막염·균혈증)이 흔하고 재출혈·사망을 늘리므로 예방적 항생제를 바로 투여한다. 진행된 간경변에서는 세프트리악손 1 g/일 정맥 주사를 최대 7일 쓴다. 그 뒤 12시간 안에 내시경 결찰술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 항생제가 생존을 바꾸는가</b>: 간경변 환자는 장 투과성이 높고 장내세균이 과증식하며 문맥 단락으로 간의 세균 여과가 약하다. 출혈로 장 점막 혈류가 떨어지면 세균 전위(translocation)가 늘어 출혈 환자의 절반 가까이에서 세균 감염이 생긴다. 감염은 내독소·사이토카인으로 문맥압을 더 올리고 지혈을 방해해 <b>조기 재출혈</b>과 사망을 늘린다. 예방적 항생제는 감염·재출혈·사망을 모두 줄인 몇 안 되는 처치다.<br> <b>왜 세프트리악손인가</b>: 원인균은 주로 장내 그람음성막대균이고, 진행된 간경변(복수·황달·영양불량)이나 퀴놀론 예방 중인 환자에서는 퀴놀론 내성이 흔해 3세대 세팔로스포린이 경구 노르플록사신보다 낫다.<br> <b>급성기 β차단제는 왜 안 되는가</b>: 비선택 β차단제는 심박출량과 내장 혈류를 줄여 2차 예방에는 좋지만, 출혈 중인 저혈압 환자에서는 보상성 빈맥을 막아 쇼크를 악화시킨다. 출혈이 멎고 혈역학이 안정된 뒤(대개 2~5일) 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세프트리악손(정답)</th><th>프로프라놀롤(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td>입원 즉시, 내시경 전</td><td>출혈이 멎고 혈역학이 안정된 뒤(2차 예방)</td></tr> <tr><td>효과</td><td>감염·조기 재출혈·사망 감소</td><td>문맥압을 낮춰 장기 재출혈 감소</td></tr> <tr><td>이 환자에서</td><td>복수·황달이 있는 진행 간경변 — 더 필요하다</td><td>혈압 92/58 mmHg, 맥박 112회/분 — 쇼크를 악화시킨다</td></tr> </tbody></table> 두 약 모두 정맥류 출혈 관리에 들어가지만, 급성기에는 항생제, 회복기에는 β차단제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 프로프라놀롤은 정맥류 출혈이 멎고 혈역학이 안정된 뒤 결찰술과 함께 재출혈을 막는 2차 예방약이다. 퇴원을 앞둔 안정된 환자라면 정답이다.\n③ 트라넥삼산은 대규모 시험(HALT-IT)에서 위장관출혈의 사망을 줄이지 못하고 혈전 합병증을 늘렸다. 산후출혈·외상 출혈처럼 섬유소용해가 주된 경우라면 쓸 수 있다.\n④ 비타민 K 는 결핍(영양불량·담즙정체·와파린)으로 INR 이 높을 때 교정한다. 간경변의 INR 상승은 합성 장애라 거의 교정되지 않는다 — 와파린 복용자라면 맞다.\n⑤ 알부민은 특발세균복막염에서 항생제와 함께, 또는 대량 복수천자 뒤 콩팥 기능을 지키려고 준다. 복수천자에서 호중구가 250/mm³ 이상이었다면 항생제와 함께 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "정맥류 출혈에 β차단제를 바로 시작하는 것 — 급성기에는 저혈압을 악화시키고, 지금 필요한 것은 예방적 항생제다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 상부위장관출혈에서 혈관작용제와 함께 예방적 항생제(세프트리악손)를 투여하고 급성기에 β차단제를 쓰지 않음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 (PMID 35120736) · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211 (PMID 37870298) · HALT-IT Trial Collaborators. Effects of a high-dose 24-h infusion of tranexamic acid on death and thromboembolic events in patients with acute gastrointestinal bleeding. Lancet 2020;395:1927-1936 (PMID 32563378)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "알코올 간경변 환자의 토혈·저혈압은 정맥류 출혈을 우선 생각하고, 혈관작용제·제한 수혈과 함께 감염과 재출혈을 줄이는 예방적 세프트리악손을 바로 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "저혈압·빈맥인 급성 출혈기에는 β차단제가 쇼크를 악화시키므로 쓰지 않는다",
+   "steps": 2,
+   "chain": [
+    "알코올 간경변(복수·황달·혈소판감소) + 선홍색 토혈 + 저혈압 → 정맥류 출혈 의심",
+    "간경변 위장관출혈 → 세균 감염 위험 → 예방적 세프트리악손(β차단제는 안정 뒤)"
+   ],
+   "key": [
+    {
+     "item": "2년 전 알코올 간경변으로 진단받았다",
+     "why": "정맥류 출혈과 감염 위험의 바탕",
+     "also": []
+    },
+    {
+     "item": "선홍색 피를 두 차례 토하여",
+     "why": "상부위장관출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로트롬빈시간 INR 1.6",
+     "why": "합성 장애에 의한 상승 — 비타민 K 로 교정되지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 92/58 mmHg, 맥박 112회/분",
+     "why": "β차단제를 지금 쓰면 안 되는 이유",
+     "also": []
+    },
+    {
+     "item": "이동탁음이 있다",
+     "why": "복수 — 진행 간경변, 세프트리악손을 고르는 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "옥트레오타이드 정맥 주입을 시작하였고",
+     "why": "혈관작용제는 이미 시작 — 남은 빈칸이 항생제",
+     "also": []
+    },
+    {
+     "item": "체온 36.6 °C",
+     "why": "열이 없어도 예방적 항생제를 준다",
+     "also": []
+    }
+   ],
+   "summary": "간경변 환자의 토혈은 정맥류 출혈을 먼저 생각한다. 옥트레오타이드·제한 수혈과 함께 예방적 세프트리악손을 바로 주고, β차단제는 출혈이 멎고 안정된 뒤 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "결찰술 뒤 출혈이 멎고 혈역학이 안정되어 퇴원을 준비하는 시점이라면 프로프라놀롤로 재출혈을 예방한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0267",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "신경 — 두통과 유두부종이 있는 젊은 비만 여성",
+  "type": "신경 — 두통과 유두부종이 있는 젊은 비만 여성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "A 27-year-old woman comes to the physician because of daily headaches for 2 months. The headaches are diffuse, worse in the morning and when she bends over, and are accompanied by brief episodes of visual dimming when she stands up and by a pulsatile whooshing sound in both ears. She has gained 12 kg over the past year. She takes no medications. Her BMI is 36 kg/m2. Blood pressure is 122/80 mm Hg. Visual acuity is 20/20 in both eyes. Funduscopic examination shows bilateral optic disc swelling. Automated perimetry shows enlarged blind spots without other field loss. Neurologic examination shows no other abnormalities. MRI and MR venography of the brain show an empty sella and flattening of the posterior globes, with no mass, hydrocephalus or venous sinus thrombosis. Lumbar puncture in the lateral decubitus position shows an opening pressure of 34 cm H2O; cerebrospinal fluid cell count, protein and glucose concentrations are within the reference ranges.",
+  "question": "In addition to a weight-loss program, which of the following is the most appropriate next step in management?",
+  "options": [
+   "Anticoagulation with heparin",
+   "Acetazolamide therapy",
+   "Ventriculoperitoneal shunt placement",
+   "Optic nerve sheath fenestration",
+   "High-dose intravenous methylprednisolone"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Headache worse when lying or bending, transient visual obscurations, pulsatile tinnitus, bilateral papilledema, an opening pressure of 34 cm H2O with normal CSF composition and neuroimaging without mass, hydrocephalus or venous sinus thrombosis in an obese young woman meet the criteria for idiopathic intracranial hypertension. Vision is preserved (20/20, only enlarged blind spots), so first-line treatment is weight loss and acetazolamide, a carbonic anhydrase inhibitor that reduces CSF production. Surgical procedures are reserved for severe or progressive visual loss despite medical therapy.\n- 원리: <b>What raises the pressure</b>: in idiopathic intracranial hypertension (IIH), CSF absorption into the venous sinuses is impaired and venous sinus pressure is often elevated (transverse sinus narrowing is common), especially in obese women of childbearing age. Raised intracranial pressure is transmitted along the optic nerve sheath, causing axoplasmic stasis — papilledema — and enlargement of the physiologic blind spot. The empty sella and flattened globes on MRI are indirect signs of chronically raised pressure.<br> <b>Why acetazolamide</b>: the choroid plexus secretes CSF using carbonic anhydrase to generate bicarbonate and drive sodium and water movement. Inhibiting the enzyme lowers CSF production by roughly a third; in the IIH Treatment Trial it improved visual field function more than weight loss alone. Side effects are paresthesias, altered taste of carbonated drinks, metabolic acidosis and kidney stones.<br> <b>Why not surgery first</b>: the threat in IIH is permanent optic nerve damage. When acuity and fields are threatened (fulminant IIH or progression despite drugs), CSF diversion, optic nerve sheath fenestration or venous sinus stenting protect vision; with only an enlarged blind spot, their risks outweigh the benefit.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Acetazolamide (correct)</th><th>Ventriculoperitoneal shunt (closest distractor)</th></tr></thead><tbody> <tr><td>Visual status</td><td>Normal acuity, enlarged blind spot only</td><td>Rapidly progressive field or acuity loss, or failure of maximal medical therapy</td></tr> <tr><td>How it lowers pressure</td><td>Less CSF produced by the choroid plexus</td><td>Drains CSF to the peritoneum</td></tr> <tr><td>Main drawbacks</td><td>Paresthesia, acidosis, kidney stones</td><td>Shunt obstruction, infection, overdrainage headache, frequent revisions</td></tr> </tbody></table> The degree of visual loss, not the height of the opening pressure, decides when to move from medical to surgical treatment.\n- 오답 이유:\n  - (A) Heparin anticoagulation treats cerebral venous sinus thrombosis, which can mimic IIH; it would be correct if MR venography had shown a filling defect in a dural sinus.\n  - (C) A ventriculoperitoneal or lumboperitoneal shunt is used when vision is deteriorating rapidly or medical therapy fails; it would be correct if perimetry showed progressive field constriction despite acetazolamide.\n  - (D) Optic nerve sheath fenestration protects the optic nerve when visual loss is the main problem and headache is mild; it would fit worsening fields with acetazolamide intolerance, not preserved vision.\n  - (E) High-dose methylprednisolone treats optic neuritis, which causes painful monocular visual loss with a normal or mildly swollen disc; it does not lower CSF pressure and worsens weight gain.\n- 함정: Jumping to a shunt because the opening pressure is high — management of IIH is driven by visual status, and preserved vision calls for acetazolamide and weight loss.\n- 학습목표: 시야 손실이 경미한 특발두개내고혈압의 첫 치료는 체중 감량과 아세타졸아마이드이고, 수술은 진행하는 시력 손실에 남겨 둠을 안다\n- 근거·출처: Friedman DI, Liu GT, Digre KB. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. Neurology 2013;81:1159-1165 (PMID 23966248) · NORDIC Idiopathic Intracranial Hypertension Study Group. Effect of acetazolamide on visual function in patients with idiopathic intracranial hypertension and mild visual loss: the IIH Treatment Trial. JAMA 2014;311:1641-1651 (PMID 24756514)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Headache worse when lying or bending, transient visual obscurations, pulsatile tinnitus, bilateral papilledema, an opening pressure of 34 cm H2O with normal CSF composition and neuroimaging without mass, hydrocephalus or venous sinus thrombosis in an obese young woman meet the criteria for idiopathic intracranial hypertension. Vision is preserved (20/20, only enlarged blind spots), so first-line treatment is weight loss and acetazolamide, a carbonic anhydrase inhibitor that reduces CSF production. Surgical procedures are reserved for severe or progressive visual loss despite medical therapy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What raises the pressure</b>: in idiopathic intracranial hypertension (IIH), CSF absorption into the venous sinuses is impaired and venous sinus pressure is often elevated (transverse sinus narrowing is common), especially in obese women of childbearing age. Raised intracranial pressure is transmitted along the optic nerve sheath, causing axoplasmic stasis — papilledema — and enlargement of the physiologic blind spot. The empty sella and flattened globes on MRI are indirect signs of chronically raised pressure.<br> <b>Why acetazolamide</b>: the choroid plexus secretes CSF using carbonic anhydrase to generate bicarbonate and drive sodium and water movement. Inhibiting the enzyme lowers CSF production by roughly a third; in the IIH Treatment Trial it improved visual field function more than weight loss alone. Side effects are paresthesias, altered taste of carbonated drinks, metabolic acidosis and kidney stones.<br> <b>Why not surgery first</b>: the threat in IIH is permanent optic nerve damage. When acuity and fields are threatened (fulminant IIH or progression despite drugs), CSF diversion, optic nerve sheath fenestration or venous sinus stenting protect vision; with only an enlarged blind spot, their risks outweigh the benefit."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Acetazolamide (correct)</th><th>Ventriculoperitoneal shunt (closest distractor)</th></tr></thead><tbody> <tr><td>Visual status</td><td>Normal acuity, enlarged blind spot only</td><td>Rapidly progressive field or acuity loss, or failure of maximal medical therapy</td></tr> <tr><td>How it lowers pressure</td><td>Less CSF produced by the choroid plexus</td><td>Drains CSF to the peritoneum</td></tr> <tr><td>Main drawbacks</td><td>Paresthesia, acidosis, kidney stones</td><td>Shunt obstruction, infection, overdrainage headache, frequent revisions</td></tr> </tbody></table> The degree of visual loss, not the height of the opening pressure, decides when to move from medical to surgical treatment."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Heparin anticoagulation treats cerebral venous sinus thrombosis, which can mimic IIH; it would be correct if MR venography had shown a filling defect in a dural sinus.\n(C) A ventriculoperitoneal or lumboperitoneal shunt is used when vision is deteriorating rapidly or medical therapy fails; it would be correct if perimetry showed progressive field constriction despite acetazolamide.\n(D) Optic nerve sheath fenestration protects the optic nerve when visual loss is the main problem and headache is mild; it would fit worsening fields with acetazolamide intolerance, not preserved vision.\n(E) High-dose methylprednisolone treats optic neuritis, which causes painful monocular visual loss with a normal or mildly swollen disc; it does not lower CSF pressure and worsens weight gain."
+   },
+   {
+    "k": "함정",
+    "v": "Jumping to a shunt because the opening pressure is high — management of IIH is driven by visual status, and preserved vision calls for acetazolamide and weight loss."
+   },
+   {
+    "k": "학습목표",
+    "v": "시야 손실이 경미한 특발두개내고혈압의 첫 치료는 체중 감량과 아세타졸아마이드이고, 수술은 진행하는 시력 손실에 남겨 둠을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Friedman DI, Liu GT, Digre KB. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. Neurology 2013;81:1159-1165 (PMID 23966248) · NORDIC Idiopathic Intracranial Hypertension Study Group. Effect of acetazolamide on visual function in patients with idiopathic intracranial hypertension and mild visual loss: the IIH Treatment Trial. JAMA 2014;311:1641-1651 (PMID 24756514)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "비만한 젊은 여성의 두통·일과성 시력 흐림·박동성 이명·유두부종·개방압 34 cmH2O·정상 뇌척수액·정상 영상은 특발두개내고혈압이고, 시력이 보존되어 있어 체중 감량과 아세타졸아마이드로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "시력 20/20 에 맹점 확대뿐이라 수술적 뇌척수액 배액이 필요한 진행성 시력 손실이 없다",
+   "steps": 3,
+   "chain": [
+    "두통·일과성 시력 흐림·박동성 이명 + 양측 유두부종 → 두개내압 상승",
+    "정상 MRI·MRV, 개방압 34 cmH2O, 정상 뇌척수액 조성 → 특발두개내고혈압",
+    "시력 보존(맹점 확대뿐) → 체중 감량 + 아세타졸아마이드, 수술은 보류"
+   ],
+   "key": [
+    {
+     "item": "opening pressure of 34 cm H2O",
+     "why": "두개내압 상승 기준(성인 ≥ 25 cmH2O)",
+     "also": []
+    },
+    {
+     "item": "bilateral optic disc swelling",
+     "why": "유두부종",
+     "also": []
+    },
+    {
+     "item": "empty sella and flattening of the posterior globes",
+     "why": "만성 두개내압 상승의 간접 징후",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no mass, hydrocephalus or venous sinus thrombosis",
+     "why": "이차 원인 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "cerebrospinal fluid cell count, protein and glucose concentrations are within the reference ranges",
+     "why": "수막염·염증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Visual acuity is 20/20 in both eyes",
+     "why": "시력 보존 — 약물치료로 시작",
+     "also": []
+    },
+    {
+     "item": "enlarged blind spots without other field loss",
+     "why": "경미한 시야 변화 — 수술 적응증이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Her BMI is 36 kg/m2",
+     "why": "위험인자 — 체중 감량은 이미 전제",
+     "also": []
+    }
+   ],
+   "summary": "비만한 젊은 여성의 유두부종과 개방압 상승, 정상 뇌척수액·영상은 특발두개내고혈압이다. 시력이 보존되어 체중 감량과 아세타졸아마이드로 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "아세타졸아마이드에도 시야가 빠르게 좁아지거나 시력이 떨어졌다면 뇌척수액 단락술을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0266",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대",
+  "type": "호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "29세 여자가 1주 전부터 생긴 양쪽 발목 통증과 정강이의 붉은 멍울로 내원하였다. 미열이 있고, 기침이나 호흡곤란은 없다. 복용하는 약은 없고, 결핵 환자와 접촉한 적은 없다. 체온 37.8 °C, 혈압 118/72 mmHg 이다. 양쪽 정강이 앞에 누르면 아픈 2~4 cm 크기의 붉은 피하 결절이 여러 개 있고, 양쪽 발목 관절 주위가 붓고 따뜻하다. 폐음은 정상이다. 흉부 X선에서 양측 폐문 림프절이 대칭으로 커져 있고 폐 실질은 정상이다. 폐기능검사와 혈청 칼슘은 정상이고, 인터페론감마 분비검사는 음성이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "비스테로이드소염제로 증상을 조절하며 경과를 관찰한다",
+   "경구 프레드니솔론을 하루 40 mg 으로 시작한다",
+   "이소니아지드 등 항결핵제 4제 요법을 시작한다",
+   "메토트렉세이트를 매주 복용하도록 시작한다",
+   "종격동 림프절 절제 후 항암화학요법을 시작한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 결절홍반, 양측 발목관절 주위염, 양측 대칭성 폐문 림프절 비대에 발열이 겹친 것은 뢰프그렌증후군 — 급성 사르코이드증의 한 형태다. 이 조합은 특이도가 높아 조직검사 없이 임상 진단할 수 있고, 90 % 이상이 1~2년 안에 저절로 좋아진다. 폐기능이 정상이고 고칼슘혈증·장기 침범이 없으므로 NSAID 로 관절통·결절홍반을 조절하며 지켜본다.\n- 원리: <b>사르코이드증과 뢰프그렌증후군</b>: 사르코이드증은 원인 항원에 대한 Th1 반응으로 비건락성 육아종이 생기는 병이다. 대부분 양측 폐문 림프절과 폐에 오고, 피부·눈·심장·신경·콩팥(고칼슘혈증)으로도 간다. 뢰프그렌증후군은 그 <b>급성</b> 표현형으로, 결절홍반(지방층의 지연형 과민반응)·발목관절 주위염·양측 폐문 림프절 비대가 한꺼번에 나타나며 HLA-DRB1*03 과 관련이 있다.<br> <b>왜 조직검사 없이 진단하는가</b>: 세 가지가 함께 있으면 사르코이드증일 확률이 95 % 를 넘는다. 감별할 결핵·림프종은 결절홍반·관절주위염 조합을 잘 만들지 않고, 인터페론감마 분비검사 음성과 대칭성 폐문 비대가 그 가능성을 더 낮춘다. 증상이 오래가거나 비전형적일 때만 기관지내시경 초음파 유도 림프절 흡인(EBUS-TBNA)을 한다.<br> <b>왜 스테로이드를 바로 쓰지 않는가</b>: 사르코이드증의 전신 스테로이드는 <b>장기 기능이 위협받을 때</b>(폐기능 저하·진행하는 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증) 쓴다. 뢰프그렌은 자연 관해가 대부분이라 스테로이드의 부작용과 재발만 늘린다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID 대증치료(정답)</th><th>경구 프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>뢰프그렌증후군, 폐문 림프절만 커진 1기, 폐기능 정상</td><td>폐기능 저하·진행 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증</td></tr> <tr><td>목표</td><td>관절통·결절홍반 증상 조절</td><td>육아종 염증 억제로 장기 기능 보존</td></tr> <tr><td>예후</td><td>90 % 이상 1~2년 안에 자연 관해</td><td>끊으면 재발이 흔하다</td></tr> </tbody></table> 「사르코이드증 = 스테로이드」가 아니다. 장기가 위협받는지를 먼저 보고, 아니면 지켜본다.\n- 오답 이유:\n  - ② 경구 프레드니솔론은 사르코이드증이 폐기능을 떨어뜨리거나 심장·신경·눈을 침범하거나 고칼슘혈증을 일으킬 때 쓴다. 폐기능이 감소했거나 칼슘이 높았다면 정답이다.\n  - ③ 항결핵제 4제는 결핵이 확인되거나 강하게 의심될 때 쓴다. 인터페론감마 분비검사가 양성이고 림프절 흡인에서 건락성 육아종·항산균이 나왔다면 맞다.\n  - ④ 메토트렉세이트는 스테로이드가 필요하지만 끊지 못하거나 부작용이 클 때 쓰는 스테로이드 절약제다. 만성 진행성 사르코이드증의 2차 치료라면 정답이다.\n  - ⑤ 림프절 절제와 항암치료는 림프종처럼 비대칭 종격동 종괴·B 증상·LDH 상승이 있고 조직으로 확진된 경우다. 대칭성 폐문 비대와 결절홍반 조합은 그 가능성을 낮춘다.\n- 함정: 사르코이드증이면 스테로이드를 바로 시작하는 것 — 뢰프그렌은 장기 위협이 없어 NSAID 로 지켜본다.\n- 학습목표: 결절홍반·양측 발목관절염·양측 폐문 림프절 비대(뢰프그렌증후군)는 조직검사 없이 진단하고 NSAID 로 대증치료하며 대부분 저절로 좋아짐을 안다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 367 Sarcoidosis (Löfgren syndrome, indications for treatment) · Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. Eur Respir J 2021;58:2004079 (PMID 34140301)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "결절홍반, 양측 발목관절 주위염, 양측 대칭성 폐문 림프절 비대에 발열이 겹친 것은 뢰프그렌증후군 — 급성 사르코이드증의 한 형태다. 이 조합은 특이도가 높아 조직검사 없이 임상 진단할 수 있고, 90 % 이상이 1~2년 안에 저절로 좋아진다. 폐기능이 정상이고 고칼슘혈증·장기 침범이 없으므로 NSAID 로 관절통·결절홍반을 조절하며 지켜본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>사르코이드증과 뢰프그렌증후군</b>: 사르코이드증은 원인 항원에 대한 Th1 반응으로 비건락성 육아종이 생기는 병이다. 대부분 양측 폐문 림프절과 폐에 오고, 피부·눈·심장·신경·콩팥(고칼슘혈증)으로도 간다. 뢰프그렌증후군은 그 <b>급성</b> 표현형으로, 결절홍반(지방층의 지연형 과민반응)·발목관절 주위염·양측 폐문 림프절 비대가 한꺼번에 나타나며 HLA-DRB1*03 과 관련이 있다.<br> <b>왜 조직검사 없이 진단하는가</b>: 세 가지가 함께 있으면 사르코이드증일 확률이 95 % 를 넘는다. 감별할 결핵·림프종은 결절홍반·관절주위염 조합을 잘 만들지 않고, 인터페론감마 분비검사 음성과 대칭성 폐문 비대가 그 가능성을 더 낮춘다. 증상이 오래가거나 비전형적일 때만 기관지내시경 초음파 유도 림프절 흡인(EBUS-TBNA)을 한다.<br> <b>왜 스테로이드를 바로 쓰지 않는가</b>: 사르코이드증의 전신 스테로이드는 <b>장기 기능이 위협받을 때</b>(폐기능 저하·진행하는 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증) 쓴다. 뢰프그렌은 자연 관해가 대부분이라 스테로이드의 부작용과 재발만 늘린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID 대증치료(정답)</th><th>경구 프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>뢰프그렌증후군, 폐문 림프절만 커진 1기, 폐기능 정상</td><td>폐기능 저하·진행 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증</td></tr> <tr><td>목표</td><td>관절통·결절홍반 증상 조절</td><td>육아종 염증 억제로 장기 기능 보존</td></tr> <tr><td>예후</td><td>90 % 이상 1~2년 안에 자연 관해</td><td>끊으면 재발이 흔하다</td></tr> </tbody></table> 「사르코이드증 = 스테로이드」가 아니다. 장기가 위협받는지를 먼저 보고, 아니면 지켜본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 경구 프레드니솔론은 사르코이드증이 폐기능을 떨어뜨리거나 심장·신경·눈을 침범하거나 고칼슘혈증을 일으킬 때 쓴다. 폐기능이 감소했거나 칼슘이 높았다면 정답이다.\n③ 항결핵제 4제는 결핵이 확인되거나 강하게 의심될 때 쓴다. 인터페론감마 분비검사가 양성이고 림프절 흡인에서 건락성 육아종·항산균이 나왔다면 맞다.\n④ 메토트렉세이트는 스테로이드가 필요하지만 끊지 못하거나 부작용이 클 때 쓰는 스테로이드 절약제다. 만성 진행성 사르코이드증의 2차 치료라면 정답이다.\n⑤ 림프절 절제와 항암치료는 림프종처럼 비대칭 종격동 종괴·B 증상·LDH 상승이 있고 조직으로 확진된 경우다. 대칭성 폐문 비대와 결절홍반 조합은 그 가능성을 낮춘다."
+   },
+   {
+    "k": "함정",
+    "v": "사르코이드증이면 스테로이드를 바로 시작하는 것 — 뢰프그렌은 장기 위협이 없어 NSAID 로 지켜본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "결절홍반·양측 발목관절염·양측 폐문 림프절 비대(뢰프그렌증후군)는 조직검사 없이 진단하고 NSAID 로 대증치료하며 대부분 저절로 좋아짐을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 367 Sarcoidosis (Löfgren syndrome, indications for treatment) · Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. Eur Respir J 2021;58:2004079 (PMID 34140301)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "결절홍반·양측 발목관절 주위염·양측 대칭성 폐문 림프절 비대·발열은 뢰프그렌증후군이고, 폐기능·칼슘이 정상이라 장기 위협이 없으므로 NSAID 로 대증치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "폐기능과 혈청 칼슘이 정상이라 스테로이드를 쓸 장기 위협이 없다",
+   "steps": 3,
+   "chain": [
+    "결절홍반 + 양측 발목관절 주위염 + 양측 대칭성 폐문 림프절 비대 → 뢰프그렌증후군",
+    "인터페론감마 분비검사 음성·대칭성 폐문 비대 → 결핵·림프종 가능성 낮음, 조직검사 없이 진단",
+    "폐기능·칼슘 정상, 장기 침범 없음 → 자연 관해 기대, NSAID 대증치료"
+   ],
+   "key": [
+    {
+     "item": "누르면 아픈 2~4 cm 크기의 붉은 피하 결절",
+     "why": "결절홍반",
+     "also": []
+    },
+    {
+     "item": "양쪽 발목 관절 주위가 붓고 따뜻하다",
+     "why": "발목관절 주위염",
+     "also": []
+    },
+    {
+     "item": "양측 폐문 림프절이 대칭으로 커져 있고",
+     "why": "뢰프그렌의 세 번째 요소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인터페론감마 분비검사는 음성",
+     "why": "결핵 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "폐기능검사와 혈청 칼슘은 정상",
+     "why": "장기 위협이 없어 스테로이드가 필요 없다",
+     "also": []
+    },
+    {
+     "item": "기침이나 호흡곤란은 없다",
+     "why": "폐 증상 없음 — 관찰을 뒷받침",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체온 37.8 °C",
+     "why": "급성 사르코이드증에 흔한 미열 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "결절홍반·발목관절 주위염·양측 폐문 림프절 비대는 뢰프그렌증후군이다. 폐기능과 칼슘이 정상이라 스테로이드 없이 NSAID 로 증상을 조절하며 지켜본다.",
+   "switch": {
+    "choice": "B",
+    "condition": "폐기능이 떨어져 있거나 고칼슘혈증·심장 침범이 있었다면 경구 스테로이드를 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0265",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "순환기 — 새벽 안정 시 흉통과 일과성 ST 상승",
+  "type": "순환기 — 새벽 안정 시 흉통과 일과성 ST 상승",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "A 38-year-old woman comes to the physician because of recurrent episodes of chest tightness during the past 2 months. The episodes occur between 4 AM and 6 AM while she is at rest, last 5 to 10 minutes, and resolve spontaneously or after sublingual nitroglycerin. She can climb stairs and jog without symptoms. She has smoked one pack of cigarettes daily for 18 years. She has migraine without aura. Her blood pressure is 124/78 mm Hg, and pulse is 72/min. Physical examination shows no abnormalities. An ECG recorded during an episode in the emergency department last week showed 2-mm ST-segment elevations in leads II, III and aVF that returned to baseline within 15 minutes; serum troponin concentrations were within the reference range. Coronary angiography shows no obstructive lesions.",
+  "question": "In addition to smoking cessation, which of the following is the most appropriate long-term pharmacotherapy?",
+  "options": [
+   "Propranolol",
+   "Aspirin and clopidogrel",
+   "Ranolazine",
+   "Sumatriptan",
+   "Amlodipine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Chest pain at rest in the early morning with transient ST-segment elevation that resolves with nitroglycerin, normal troponin and no obstructive coronary disease is vasospastic (Prinzmetal) angina. Smoking is its strongest modifiable risk factor. Calcium channel blockers (amlodipine, diltiazem, nifedipine) relax coronary smooth muscle and prevent spasm; they are first-line long-term therapy, with nitrates added for breakthrough episodes.\n- 원리: <b>What happens in vasospastic angina</b>: a segment of an epicardial coronary artery has hyperreactive smooth muscle, often with endothelial dysfunction (less nitric oxide). In the early morning, vagal tone shifts and sympathetic and α-adrenergic activity rise; the segment constricts almost completely, producing transmural ischemia — hence ST <b>elevation</b> rather than depression — that resolves as soon as the spasm relaxes. Between episodes the angiogram is normal or shows only mild plaque, and exertion does not provoke pain because exercise is not the trigger.<br> <b>Why calcium channel blockers</b>: smooth-muscle contraction depends on calcium influx through L-type channels. Blocking it dilates the coronary artery directly and prevents the spasm; this treats the cause, unlike drugs that lower oxygen demand.<br> <b>Why nonselective β-blockers are avoided</b>: blocking β2-mediated vasodilation leaves α-mediated vasoconstriction unopposed and can worsen spasm. Triptans and ergots (for migraine), cocaine and amphetamines also provoke spasm and should be avoided.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Amlodipine (correct)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on coronary tone</td><td>Dilates — prevents spasm</td><td>Removes β2 vasodilation; α constriction unopposed</td></tr> <tr><td>Best indication</td><td>Vasospastic angina at rest with transient ST elevation</td><td>Exertional stable angina from fixed stenosis, migraine prophylaxis</td></tr> <tr><td>Effect on this patient</td><td>Fewer episodes</td><td>May increase frequency and severity</td></tr> </tbody></table> Both drugs reduce angina in fixed coronary stenosis; when the angiogram is normal and pain comes at rest with ST elevation, choose the vasodilator.\n- 오답 이유:\n  - (A) Propranolol suits exertional angina from a fixed stenosis and is also used for migraine prophylaxis; in vasospasm it leaves α-mediated constriction unopposed and can worsen episodes.\n  - (B) Dual antiplatelet therapy is used after acute coronary syndrome from plaque rupture or after stent placement; with no obstructive lesion and normal troponin, there is no thrombus to treat.\n  - (C) Ranolazine is an add-on for chronic stable angina that persists despite β-blockers and calcium channel blockers; it does not prevent coronary spasm and is not first-line here.\n  - (D) Sumatriptan treats migraine attacks but constricts coronary arteries and is contraindicated in vasospastic angina; it would be appropriate only for her migraine if she had no coronary disease.\n- 함정: Choosing a β-blocker as for ordinary angina — in vasospastic angina nonselective β-blockade can worsen spasm.\n- 학습목표: 정상 관상동맥에서 안정 시 일과성 ST 상승을 보이는 혈관연축 협심증의 장기 치료는 칼슘통로차단제이고 비선택 β차단제는 피함을 안다\n- 근거·출처: Libby P, et al. Braunwald's Heart Disease, 12th ed. Ch. Stable ischemic heart disease — variant (Prinzmetal) angina · Beltrame JF, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J 2017;38:2565-2568 (PMID 26245334)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Chest pain at rest in the early morning with transient ST-segment elevation that resolves with nitroglycerin, normal troponin and no obstructive coronary disease is vasospastic (Prinzmetal) angina. Smoking is its strongest modifiable risk factor. Calcium channel blockers (amlodipine, diltiazem, nifedipine) relax coronary smooth muscle and prevent spasm; they are first-line long-term therapy, with nitrates added for breakthrough episodes."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What happens in vasospastic angina</b>: a segment of an epicardial coronary artery has hyperreactive smooth muscle, often with endothelial dysfunction (less nitric oxide). In the early morning, vagal tone shifts and sympathetic and α-adrenergic activity rise; the segment constricts almost completely, producing transmural ischemia — hence ST <b>elevation</b> rather than depression — that resolves as soon as the spasm relaxes. Between episodes the angiogram is normal or shows only mild plaque, and exertion does not provoke pain because exercise is not the trigger.<br> <b>Why calcium channel blockers</b>: smooth-muscle contraction depends on calcium influx through L-type channels. Blocking it dilates the coronary artery directly and prevents the spasm; this treats the cause, unlike drugs that lower oxygen demand.<br> <b>Why nonselective β-blockers are avoided</b>: blocking β2-mediated vasodilation leaves α-mediated vasoconstriction unopposed and can worsen spasm. Triptans and ergots (for migraine), cocaine and amphetamines also provoke spasm and should be avoided."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Amlodipine (correct)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on coronary tone</td><td>Dilates — prevents spasm</td><td>Removes β2 vasodilation; α constriction unopposed</td></tr> <tr><td>Best indication</td><td>Vasospastic angina at rest with transient ST elevation</td><td>Exertional stable angina from fixed stenosis, migraine prophylaxis</td></tr> <tr><td>Effect on this patient</td><td>Fewer episodes</td><td>May increase frequency and severity</td></tr> </tbody></table> Both drugs reduce angina in fixed coronary stenosis; when the angiogram is normal and pain comes at rest with ST elevation, choose the vasodilator."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Propranolol suits exertional angina from a fixed stenosis and is also used for migraine prophylaxis; in vasospasm it leaves α-mediated constriction unopposed and can worsen episodes.\n(B) Dual antiplatelet therapy is used after acute coronary syndrome from plaque rupture or after stent placement; with no obstructive lesion and normal troponin, there is no thrombus to treat.\n(C) Ranolazine is an add-on for chronic stable angina that persists despite β-blockers and calcium channel blockers; it does not prevent coronary spasm and is not first-line here.\n(D) Sumatriptan treats migraine attacks but constricts coronary arteries and is contraindicated in vasospastic angina; it would be appropriate only for her migraine if she had no coronary disease."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a β-blocker as for ordinary angina — in vasospastic angina nonselective β-blockade can worsen spasm."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 관상동맥에서 안정 시 일과성 ST 상승을 보이는 혈관연축 협심증의 장기 치료는 칼슘통로차단제이고 비선택 β차단제는 피함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Libby P, et al. Braunwald's Heart Disease, 12th ed. Ch. Stable ischemic heart disease — variant (Prinzmetal) angina · Beltrame JF, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J 2017;38:2565-2568 (PMID 26245334)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "새벽 안정 시 흉통·일과성 ST 상승·니트로글리세린 반응·정상 트로포닌·폐쇄 병변 없는 관상동맥은 혈관연축 협심증이고 장기 치료는 칼슘통로차단제다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "고정 협착이 없고 안정 시 연축이 원인이라 산소 요구를 줄이는 β차단제가 아니라 혈관을 넓히는 칼슘통로차단제를 쓴다 — 비선택 β차단제는 연축을 악화시킬 수 있다",
+   "steps": 2,
+   "chain": [
+    "새벽 안정 시 흉통 + 일과성 하벽 ST 상승 + 정상 트로포닌 + 정상 관상동맥 → 혈관연축 협심증",
+    "연축 예방 → 칼슘통로차단제, 비선택 β차단제·트립탄은 피함"
+   ],
+   "key": [
+    {
+     "item": "between 4 AM and 6 AM while she is at rest",
+     "why": "새벽 안정 시 발작 — 연축의 전형",
+     "also": []
+    },
+    {
+     "item": "2-mm ST-segment elevations in leads II, III and aVF that returned to baseline within 15 minutes",
+     "why": "일과성 전층 허혈",
+     "also": []
+    },
+    {
+     "item": "Coronary angiography shows no obstructive lesions",
+     "why": "고정 협착 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She can climb stairs and jog without symptoms",
+     "why": "운동성 협심증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "serum troponin concentrations were within the reference range",
+     "why": "심근경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has migraine without aura",
+     "why": "트립탄을 피해야 하고, 편두통 예방에 프로프라놀롤을 떠올리게 하는 함정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has smoked one pack of cigarettes daily for 18 years",
+     "why": "연축의 위험인자 — 금연은 이미 전제",
+     "also": []
+    }
+   ],
+   "summary": "새벽 안정 시 흉통과 일과성 ST 상승, 정상 관상동맥은 혈관연축 협심증이다. 장기 치료는 칼슘통로차단제이고 비선택 β차단제·트립탄은 피한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "운동할 때만 흉통이 생기고 관상동맥에 고정 협착이 있었다면 β차단제가 첫 약이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0264",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "피부 — 밤에 심해지는 가려움과 손가락 사이 구진",
+  "type": "피부 — 밤에 심해지는 가려움과 손가락 사이 구진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "28세 여자가 2주 전부터 생긴 가려움으로 내원하였다. 가려움은 밤에 특히 심하고, 함께 사는 남편도 최근 비슷하게 가렵다고 한다. 3주 전 요양병원에서 간병 일을 시작하였다. 진찰에서 손가락 사이, 손목 굽힘면, 배꼽 주위에 작은 붉은 구진과 찰과상이 있고, 손가락 사이에 회백색의 가늘고 구불구불한 선이 몇 개 보인다. 얼굴과 두피에는 병변이 없다. 이 선의 끝을 긁어 현미경으로 보았더니 진드기 알이 보였다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "본인만 경구 항히스타민제를 2주 동안 먹고 경과를 지켜본다",
+   "본인과 남편이 같은 날 경구 테르비나핀을 2주 동안 복용한다",
+   "본인과 남편이 같은 날 퍼메트린을 목 아래 전신에 바르고 1주 뒤 반복한다",
+   "본인만 퍼메트린을 병변 부위에 바르고 1주 뒤에 한 번 더 바른다",
+   "본인과 남편이 같은 날 강한 국소 스테로이드를 2주 동안 바른다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 밤에 심한 가려움, 손가락 사이·손목·배꼽 주위의 구진, 손가락 사이의 굴(burrow), 가족 내 같은 증상, 긁은 검체의 진드기 알은 옴이다. 옴 진드기는 피부 각질층에 굴을 파고 살며 피부 접촉으로 옮으므로, 환자와 밀접 접촉자를 증상 유무와 관계없이 같은 날 함께 치료한다. 퍼메트린 5 % 크림을 목 아래 전신(병변 없는 곳 포함)에 바르고 8~14시간 뒤 씻으며, 알에서 깬 진드기를 잡으려고 1주 뒤 한 번 더 바른다.\n- 원리: <b>왜 전신·동시 치료인가</b>: 옴 진드기(Sarcoptes scabiei)는 각질층에 굴을 파고 알을 낳는다. 증상(가려움)은 진드기와 배설물에 대한 지연형 과민반응이라 처음 감염 뒤 <b>3~6주</b> 지나야 나타난다. 그래서 가려움이 없는 접촉자도 이미 감염되었을 수 있고, 한 사람만 치료하면 다시 옮아온다(핑퐁 감염). 진드기는 눈에 보이는 병변이 없는 피부에도 있으므로 병변 부위만 바르면 남는다.<br> <b>왜 1주 뒤 반복하는가</b>: 퍼메트린은 진드기의 나트륨 통로를 열린 채로 두어 마비시키지만 알 속 배아에는 잘 듣지 않는다. 알은 3~4일 만에 부화하므로 7일 뒤 다시 발라 새로 나온 진드기를 잡는다.<br> <b>치료 뒤에도 가렵다</b>: 과민반응이 남아 2~4주 가려울 수 있다(옴 후 가려움). 이는 치료 실패가 아니며 항히스타민제·약한 스테로이드로 조절한다. 침구·옷은 60 °C 이상으로 빨거나 72시간 밀봉한다. 간병 일터(요양병원)는 집단 발생 가능성이 있어 알려야 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">본인·접촉자 동시 전신 치료(정답)</th><th>본인만 병변 부위 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>바르는 범위</td><td>목 아래 전신 — 손톱 밑·사타구니까지</td><td>병변 부위만</td></tr> <tr><td>치료 대상</td><td>증상 없는 동거인도 같은 날</td><td>증상이 있는 본인만</td></tr> <tr><td>결과</td><td>재감염 고리를 끊는다</td><td>남은 진드기·남편에게서 재감염</td></tr> </tbody></table> 옴 치료의 실패는 대부분 약이 아니라 범위(전신)와 대상(접촉자)·반복(1주 뒤)을 빠뜨려서 생긴다.\n- 오답 이유:\n  - ① 경구 항히스타민제만으로는 가려움만 줄고 감염은 이어진다. 옴 치료를 마친 뒤 남는 옴 후 가려움에 덧붙여 쓰는 약이라면 맞는 선택이다.\n  - ② 경구 테르비나핀은 피부사상균에 의한 손발톱 백선의 치료다. 긁은 검체에서 진드기 알이 아니라 균사가 보였다면 정답에 가까워진다.\n  - ④ 본인만 병변에 바르면 눈에 안 보이는 부위의 진드기와 남편에게서 다시 옮는다. 혼자 살고 접촉자가 없으며 전신에 바른다면 본인 치료만으로 충분하다.\n  - ⑤ 강한 국소 스테로이드는 습진·접촉피부염의 치료다. 진드기를 죽이지 못하고 오히려 각질층 진드기 수를 늘려 딱지옴을 만들 수 있다 — 검체에 진드기가 없었다면 고려한다.\n- 함정: 본인만 치료하거나 병변 부위만 바르는 것 — 옴은 증상 없는 접촉자까지 같은 날 목 아래 전신으로 치료한다.\n- 학습목표: 옴은 환자와 밀접 접촉자를 동시에 퍼메트린으로 목 아래 전신 치료하고 1주 뒤 반복함을 안다\n- 근거·출처: Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. 178 Scabies, other mites, and pediculosis · Centers for Disease Control and Prevention. Scabies — Clinical Care (treatment of patients and close contacts), 2024",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "밤에 심한 가려움, 손가락 사이·손목·배꼽 주위의 구진, 손가락 사이의 굴(burrow), 가족 내 같은 증상, 긁은 검체의 진드기 알은 옴이다. 옴 진드기는 피부 각질층에 굴을 파고 살며 피부 접촉으로 옮으므로, 환자와 밀접 접촉자를 증상 유무와 관계없이 같은 날 함께 치료한다. 퍼메트린 5 % 크림을 목 아래 전신(병변 없는 곳 포함)에 바르고 8~14시간 뒤 씻으며, 알에서 깬 진드기를 잡으려고 1주 뒤 한 번 더 바른다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전신·동시 치료인가</b>: 옴 진드기(Sarcoptes scabiei)는 각질층에 굴을 파고 알을 낳는다. 증상(가려움)은 진드기와 배설물에 대한 지연형 과민반응이라 처음 감염 뒤 <b>3~6주</b> 지나야 나타난다. 그래서 가려움이 없는 접촉자도 이미 감염되었을 수 있고, 한 사람만 치료하면 다시 옮아온다(핑퐁 감염). 진드기는 눈에 보이는 병변이 없는 피부에도 있으므로 병변 부위만 바르면 남는다.<br> <b>왜 1주 뒤 반복하는가</b>: 퍼메트린은 진드기의 나트륨 통로를 열린 채로 두어 마비시키지만 알 속 배아에는 잘 듣지 않는다. 알은 3~4일 만에 부화하므로 7일 뒤 다시 발라 새로 나온 진드기를 잡는다.<br> <b>치료 뒤에도 가렵다</b>: 과민반응이 남아 2~4주 가려울 수 있다(옴 후 가려움). 이는 치료 실패가 아니며 항히스타민제·약한 스테로이드로 조절한다. 침구·옷은 60 °C 이상으로 빨거나 72시간 밀봉한다. 간병 일터(요양병원)는 집단 발생 가능성이 있어 알려야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">본인·접촉자 동시 전신 치료(정답)</th><th>본인만 병변 부위 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>바르는 범위</td><td>목 아래 전신 — 손톱 밑·사타구니까지</td><td>병변 부위만</td></tr> <tr><td>치료 대상</td><td>증상 없는 동거인도 같은 날</td><td>증상이 있는 본인만</td></tr> <tr><td>결과</td><td>재감염 고리를 끊는다</td><td>남은 진드기·남편에게서 재감염</td></tr> </tbody></table> 옴 치료의 실패는 대부분 약이 아니라 범위(전신)와 대상(접촉자)·반복(1주 뒤)을 빠뜨려서 생긴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 항히스타민제만으로는 가려움만 줄고 감염은 이어진다. 옴 치료를 마친 뒤 남는 옴 후 가려움에 덧붙여 쓰는 약이라면 맞는 선택이다.\n② 경구 테르비나핀은 피부사상균에 의한 손발톱 백선의 치료다. 긁은 검체에서 진드기 알이 아니라 균사가 보였다면 정답에 가까워진다.\n④ 본인만 병변에 바르면 눈에 안 보이는 부위의 진드기와 남편에게서 다시 옮는다. 혼자 살고 접촉자가 없으며 전신에 바른다면 본인 치료만으로 충분하다.\n⑤ 강한 국소 스테로이드는 습진·접촉피부염의 치료다. 진드기를 죽이지 못하고 오히려 각질층 진드기 수를 늘려 딱지옴을 만들 수 있다 — 검체에 진드기가 없었다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "본인만 치료하거나 병변 부위만 바르는 것 — 옴은 증상 없는 접촉자까지 같은 날 목 아래 전신으로 치료한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "옴은 환자와 밀접 접촉자를 동시에 퍼메트린으로 목 아래 전신 치료하고 1주 뒤 반복함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. 178 Scabies, other mites, and pediculosis · Centers for Disease Control and Prevention. Scabies — Clinical Care (treatment of patients and close contacts), 2024"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "밤에 심한 가려움·손가락 사이 굴·가족 내 증상·진드기 알로 옴을 진단하고, 본인과 접촉자를 같은 날 목 아래 전신 퍼메트린으로 치료한 뒤 1주 뒤 반복한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "남편도 가려워 접촉자 동시 치료가 필요하고, 진드기는 병변 없는 피부에도 있어 전신에 바른다",
+   "steps": 2,
+   "chain": [
+    "밤에 심한 가려움 + 손가락 사이 굴 + 진드기 알 → 옴",
+    "접촉 감염·잠복기 → 접촉자와 동시에 목 아래 전신 퍼메트린, 1주 뒤 반복"
+   ],
+   "key": [
+    {
+     "item": "회백색의 가늘고 구불구불한 선",
+     "why": "굴(burrow) — 옴의 특징 병변",
+     "also": []
+    },
+    {
+     "item": "진드기 알이 보였다",
+     "why": "확진",
+     "also": []
+    },
+    {
+     "item": "가려움은 밤에 특히 심하고",
+     "why": "옴의 전형적 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "함께 사는 남편도 최근 비슷하게 가렵다고 한다",
+     "why": "접촉자 동시 치료의 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "요양병원에서 간병 일",
+     "why": "감염원 단서 — 일터 집단 발생 확인이 필요하지만 치료 선택은 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "얼굴과 두피에는 병변이 없다",
+     "why": "성인 옴의 흔한 분포 — 목 아래 도포로 충분함을 뒷받침",
+     "also": []
+    }
+   ],
+   "summary": "밤에 심한 가려움, 손가락 사이 굴, 가족 내 증상과 진드기 알은 옴이다. 본인과 접촉자를 같은 날 목 아래 전신에 퍼메트린으로 치료하고 1주 뒤 반복한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "옴 치료를 제대로 마친 2주 뒤 새 굴 없이 가려움만 남았다면 옴 후 가려움으로 보고 항히스타민제로 조절한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0003"
+ },
+ {
   "id": "imaging-2026-0253",
   "exam": "imaging",
   "style": "kmle_style",
