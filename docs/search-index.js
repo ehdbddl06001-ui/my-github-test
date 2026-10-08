@@ -1,43 +1,43 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-07",
+ "generated": "2026-10-08",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3443,
+  "total": 3451,
   "byType": {
    "usmle": 186,
+   "paper": 738,
    "concept": 96,
    "anatomy": 834,
    "kmle": 1312,
    "imaging": 268,
-   "paper": 730,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 834,
-   "Cardiology": 241,
-   "Nephrology": 191,
-   "Infectious Disease": 174,
-   "Pediatrics": 159,
+   "Cardiology": 242,
+   "Nephrology": 192,
+   "Infectious Disease": 175,
+   "Pediatrics": 160,
    "Obstetrics & Gynecology": 116,
-   "Hematology-Oncology": 108,
-   "Pathology": 106,
+   "Hematology-Oncology": 109,
+   "Pathology": 107,
    "Psychiatry": 99,
    "Neurology": 98,
    "Rheumatology": 96,
    "General Surgery": 90,
+   "Surgery": 88,
    "Endocrinology": 87,
-   "Surgery": 87,
    "Dermatology": 86,
    "Gastroenterology": 85,
    "Orthopedics": 85,
    "Ophthalmology": 84,
    "Pulmonology": 84,
    "Hematology": 79,
-   "Laboratory Medicine": 73,
+   "Laboratory Medicine": 74,
    "산부인과": 49,
    "순환기": 26,
    "Physiology": 21,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2365,
-   "medium": 1028,
+   "medium": 1036,
    "low": 50
   },
   "tagCount": 4633
@@ -216,6 +216,142 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0194.md",
    "snippet": "A 38 year old man is brought to the emergency department by his wife because she found him confused and sweaty at home this morning. Over the past 2 days he has been drinking heavily at a weekend gathering, ate almost nothing and vomited tw",
    "text": "Biochemistry Confusion, Sweating and a Glucose of 38 After a Two-Day Drinking Binge With Almost No Food alcohol-induced-hypoglycemia gluconeogenesis nadh-nad-ratio ethanol-metabolism lactic-acidosis alcoholic-ketoacidosis fasting-metabolism USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e — Hypoglycemia; Lippincott Illustrated Reviews: Biochemistry 8e — Gluconeogenesis and ethanol metabolism) A 38 year old man is brought to the emergency department by his wife because she found him confused and sweaty at home this morning. Over the past 2 days he has been drinking heavily at a weekend gathering, ate almost nothing and vomited twice yesterday. He usually drinks 6 to 8 beers on weekends. He has no history of diabetes, takes no medications, and no one in the household takes insulin or oral diabetes medications. He has had no prior episodes like this. He is disoriented to date and smells of alcohol. The skin is cool and diaphoretic. Extraocular movements are full without nystagmus. The liver edge is palpable 2 cm below the right costal margin; there is no jaundice, spider angiomata or ascites. Blood is drawn on arrival. Within 10 minutes of intravenous thiamine and 50 mL of 50% dextrose he is alert and oriented. His vital signs are shown. Laboratory studies obtained before treatment are shown. Which of the following best explains this patient's hypoglycemia? A. Thiamine deficiency reducing pyruvate dehydrogenase activity B. Ethanol stimulated insulin release from pancreatic beta cells C. Increased hepatic NADH/NAD⁺ ratio limiting gluconeogenesis D. Acetaldehyde inhibition of hepatic glycogen phosphorylase E. Deficiency of hepatic glucose 6 phosphatase activity 혈당 38 인데 인슐린·C 펩타이드가 억제돼 있고 혈당강하제에 노출될 길이 없으므로 인슐린 매개 저혈당이 아니다. 이틀간 거의 먹지 않아 간 글리코겐은 이미 바닥났고(공복 약 24–48시간이면 고갈), 이때 혈당은 포도당신생합성에 달려 있다. 간에서 에탄올이 alcohol dehydrogenase·aldehyde dehydrogenase 로 산화되며 NAD+ 를 NADH 로 바꾸면 NADH/NAD+ 비가 올라가 pyruvate → lactate, oxaloacetate → malate 쪽으로 평형이 밀린다. 포도당신생합성의 기질(pyruvate·oxaloacetate)이 빠져나가 포도당을 만들지 못한다. 같은 NADH 과잉이 lactate 상승과 acetoacetate → β hydroxybutyrate 전환(높은 β OHB)으로도 드러난다 — 음이온 간격 21 의 대사성 산증."
+  },
+  {
+   "id": "paper-2026-0738",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / SICOT-J",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0738_cemented_versus_uncemented_hemiarthroplasty_for_femoral_neck.md",
+   "snippet": "Title Cemented versus uncemented hemiarthroplasty for femoral neck fracture in patients aged 75 years or older: A retrospective cohort study with 3 year follow up Authors Donici Daniel, Jamaleddine Youssef, Chapron Emeline, Coulomb Rémy, Ko",
+   "text": "Surgery scraped pubmed PubMed / SICOT-J Title Cemented versus uncemented hemiarthroplasty for femoral neck fracture in patients aged 75 years or older: A retrospective cohort study with 3 year follow up Authors Donici Daniel, Jamaleddine Youssef, Chapron Emeline, Coulomb Rémy, Kouyoumdjian Pascal Journal / DOI SICOT J · DOI: 10.1051/sicotj/2026080 · PMID: 42842898 https://pubmed.ncbi.nlm.nih.gov/42842898/ Abstract INTRODUCTION: Optimal femoral stem fixation for hemiarthroplasty in older adults with displaced intracapsular fractures remains controversial. Cemented stems may reduce mechanical failure, but cementation carries risks. This study compared mortality and complications after cemented versus uncemented hemiarthroplasty in patients aged 75 years or older. METHODS: We performed a retrospective study of consecutive patients aged 75 years or older who underwent hemiarthroplasty for intracapsular fracture between January 2015 and April 2022. Patients were grouped by stem fixation and followed until death or censoring in December 2025, allowing at least three years of follow up. Outcomes included periprosthetic femoral fracture, dislocation, periprosthetic joint infection, a composite of any complication, and all cause mortality from the early postoperative period to 3 years. Multivariable Cox regression was used for 3 year mortality, and a Fine Gray competing risk model, with death as the competing event, was used for 3 year complications. RESULTS: We included 531 patients (266 cemented, 265 uncemented). Periprosthetic femoral fracture was more frequent with uncemented stems (4.5% vs. 1.5%, p = 0.042), whereas dislocation was more frequent with cemented stems (6.4% vs. 2.6%, p = 0.038). Periprosthetic joint infection and any complication did not differ significantly between groups at 1 or 3 years, and mortality did not differ at any assessed time point (all p 0.05). Cemented fixation was not independently associated with 3 year mortality (HR 0.84, 95% CI 0.66 1.07; p = 0.166) or 3 year any complication (sHR 1.01, 95% CI 0.59 1.74; p = 0.977). Older age, male sex, and ASA class 3 to 4 independently predicted higher 3 year mortality. DISCUSSION: In patients aged 75 years or older, stem fixation was associated with different complication patterns, with more periprosthetic fractures after uncemented fixation and more dislocations after cemented fixation. Despite these differences in specific complications, cemented fixation was not independently associated with 3 year mortality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0737",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA network open",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0737_chatbot_intervention_and_cancer_risk_knowledge_in_adolescent.md",
+   "snippet": "Title Chatbot Intervention and Cancer Risk Knowledge in Adolescents and Young Adults With Cancer Predisposition: A Randomized Clinical Trial Authors Kamihara Junne, Cronin Angel M, Uno Hajime, Horiguchi Miki, Fisher Lauren, Schienda Jaclyn,",
+   "text": "Pediatrics scraped pubmed PubMed / JAMA network open Title Chatbot Intervention and Cancer Risk Knowledge in Adolescents and Young Adults With Cancer Predisposition: A Randomized Clinical Trial Authors Kamihara Junne, Cronin Angel M, Uno Hajime, Horiguchi Miki, Fisher Lauren, Schienda Jaclyn, Vanderwall Rebecca, Snir Moran, et al. Journal / DOI JAMA network open · DOI: 10.1001/jamanetworkopen.2026.35794 · PMID: 42842248 https://pubmed.ncbi.nlm.nih.gov/42842248/ Abstract IMPORTANCE: Adolescents and young adults (AYAs) with hereditary cancer predisposition face high rates of lifetime cancer risk. Models to support their understanding of cancer risk have not been developed. OBJECTIVE: To assess the effect of an electronic chatbot based cancer risk communication tool on AYAs' understanding of cancer risk. DESIGN, SETTING, AND PARTICIPANTS: This randomized clinical trial was conducted at the Dana Farber Cancer Institute, Emory University/Children's Healthcare of Atlanta, University of Chicago, and University of Utah Huntsman Cancer Institute between December 20, 2022, and May 30, 2025 and compared cancer predisposition visits alone vs visits with an electronic chatbot based cancer risk communication tool, AYA Risk Information and Screening Education, using baseline and follow up surveys to assess changes in knowledge of cancer risk by age 30 years and over their lifetime, knowledge of recommended screening, and level of psychological distress. Eligible participants were English speakers aged 12 to 24 years, who had 1 of 9 hereditary cancer predisposition syndromes. The primary analysis was conducted according to the intention to treat principle. Data were analyzed from July 21 to September 3, 2025. INTERVENTION: Chatbot based intervention with cancer risk and recommended screening information tailored to each syndrome. Additional links to resource pages with chat summary content (learn), recommended age based screening (plan), guidance about talking with peers (share), links to support organizations (connect), and coping and bereavement support (grow). MAIN OUTCOMES AND MEASURES: The primary outcome was knowledge of cancer risk. The secondary outcomes were knowledge of recommended screening and level of psychological distress. RESULTS: Of 798 AYAs assessed, 106 AYAs were randomized and enrolled (54 to the intervention group and 52 to the control group). Participants' mean (SD) age was 18.3 (SD, 3.9) years, and 64% (68 of 106) were girls or women. At baseline, 38% of AYAs (20 of 52) in the control group and 52% (28 of 54) of AYAs in the intervention group had accurate knowledge of cancer risk by age 30 years. Following the clinic visit, 37% (19 of 52) of AYAs in the control group and 78% (42 of 54) in the chatbot based intervention group had accurate knowledge, reflecting greater improvement in knowledge of cancer risk by age 30 years (OR, 3.50; 95% CI, 1.45 9.19; P = .005). AYAs in the intervention group had non statistically significant improvements in knowledge of recommended screening (OR, 2.17; 95% CI, 0.85 5.59; P = .11) and reductions in distress compared with AYAs in the control group (distress thermometer, β = 0.50; 95% CI, 1.09 to 0.08; P = .09). CONCLUSIONS AND RELEVANCE: In this randomized clinical trial, use of a chatbot based intervention combined with a cancer predisposition clinic visit improved knowledge of cancer risk by age 30 years over a clinic visit alone, without increasing distress. Combining human interaction in the clinic with personalized, accurate electronic information can support AYAs with cancer predisposition and other serious conditions. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT04323774. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0736",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of glaucoma",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0736_comparison_of_intraocular_pressure_measurements_using_icare_.md",
+   "snippet": "Title Comparison of Intraocular Pressure Measurements Using iCare Rebound Tonometry and Goldmann Applanation Tonometry: A Systematic Review and Meta Analysis Authors Sachdeva Kyran, Al Burak Salem Abu, Mihalache Andrew, Butt Fahad, Butt Abu",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of glaucoma Title Comparison of Intraocular Pressure Measurements Using iCare Rebound Tonometry and Goldmann Applanation Tonometry: A Systematic Review and Meta Analysis Authors Sachdeva Kyran, Al Burak Salem Abu, Mihalache Andrew, Butt Fahad, Butt Abu Bakar, Balas Michael, Mathew David J Journal / DOI Journal of glaucoma · DOI: 10.1097/IJG.0000000000002788 · PMID: 42842846 https://pubmed.ncbi.nlm.nih.gov/42842846/ Abstract PRECIS: This systematic review and meta analysis found iCare rebound tonometry had significantly lower IOP readings compared to GAT across adult populations, with high heterogeneity and low certainty of evidence precluding definitive conclusions regarding iCare and GAT agreement. PURPOSE: This systematic review and meta analysis aimed to comprehensively evaluate the concordance between iCare tonometry and Goldmann applanation tonometry (GAT) for intraocular pressure (IOP) measurement in adult patients commonly encountered in routine clinical practice. METHODS: Ovid MEDLINE, Embase, Web of Science, Scopus, and CENTRAL were searched from January 2015 to October 2025. Included studies quantitatively compared in clinic iCare tonometry with GAT in adults (mean differences, limits of agreement, or intra class correlation coefficient). Three level random effects meta analysis pooled mean difference in IOP measurements for iCare minus GAT. Risk of bias was evaluated using the Quality Assessment for Diagnostic Accuracy Studies 2 checklist. RESULTS: Thirty three studies were included in the systematic review, and 31 studies in the meta analysis. The pooled mean difference for iCare minus GAT IOP measurement in 5,593 eyes was 0.51 mmHg (95% CI 0.96 to 0.06 mmHg, I2=97.65%, P=0.03). Subgroup analysis demonstrated insignificant pooled mean differences (QM(3)=0.26, P=0.86) across the different iCare models, with values of 0.96 mmHg for IC100, 0.64 mmHg for IC200, 0.39 mmHg for TA01i, and 0.36 mmHg for the iCare Pro. Most studies had low or unclear risk of bias and applicability concerns. CONCLUSIONS: iCare tonometry had lower readings than GAT on average, but high heterogeneity and wide limits of agreement suggest that measurements are not directly interchangeable across clinical settings or individual patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0735",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / British journal of neurosurgery",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0735_acute_ring_enhancing_change_in_a_previously_solidly_enhancin.md",
+   "snippet": "Title Acute ring enhancing change in a previously solidly enhancing meningioma Authors Dorby Hamath Asiri, Stan Alexandru, Suttner Nigel Journal / DOI British journal of neurosurgery · DOI: 10.1080/02688697.2026.2743541 · PMID: 42842767 htt",
+   "text": "Pathology scraped pubmed PubMed / British journal of neurosurgery Title Acute ring enhancing change in a previously solidly enhancing meningioma Authors Dorby Hamath Asiri, Stan Alexandru, Suttner Nigel Journal / DOI British journal of neurosurgery · DOI: 10.1080/02688697.2026.2743541 · PMID: 42842767 https://pubmed.ncbi.nlm.nih.gov/42842767/ Abstract BACKGROUND: Meningiomas are typically slow growing, benign extra axial tumours that exhibit stable radiological characteristics over long periods. Although peritumoural oedema and mass effect may develop gradually, acute structural changes with rapid neurological deterioration are unusual, particularly in World Health Organisation (WHO) grade I lesions. Ring enhancement is extremely rare and is often associated with necrosis, haemorrhage, or cyst formation. METHODS: We describe an adult patient with multiple right frontal meningiomas who had been followed radiologically for almost a decade. Serial MRI scans demonstrated stable tumour morphology and slow intermittent growth. Six weeks after her most recent surveillance MRI, she developed new focal neurological symptoms prompting urgent re imaging and subsequent surgical intervention. Imaging findings and histopathology were reviewed in detail. RESULTS: A 72 year old woman presented with an acute onset of left sided tremor, weakness, and mild headache. MRI revealed that the largest meningioma, previously solidly enhancing without surrounding oedema, had developed new ring enhancement with marked vasogenic oedema and mass effect. Other incidental meningiomas were unchanged. Dexamethasone produced partial symptomatic improvement before surgical excision.Histopathology demonstrated a WHO grade I meningothelial meningioma with a broad central zone of infarction and viable tumour only at the periphery, without haemorrhage, cystic change, or brain invasion. No molecular evidence of atypia was identified, including a negative TERT promoter mutation and methylation profiling consistent with \"Meningioma, Subclass Benign 1\". The Ki 67 proliferation index was approximately 3%. CONCLUSION: This case illustrates a rare presentation of acute ring enhancement and substantial peritumoural oedema in an otherwise benign meningioma without identifiable degenerative features. The updated histopathology indicates that spontaneous central infarction, rather than degenerative change or atypical biology, likely accounted for the abrupt radiological and clinical deterioration. Prompt recognition of new neurological symptoms in patients under long term surveillance remains crucial, as rapid changes may reflect evolving tumour biology despite stable prior imaging. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0734",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0734_advances_in_systemic_treatment_of_breast_cancer.md",
+   "snippet": "Title Advances in Systemic Treatment of Breast Cancer Authors Hurvitz Sara Alsterlind Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2500695 · PMID: 42842904 https://pubmed.ncbi.nlm.nih.gov/42842904/ Abstract Systemi",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The New England journal of medicine Title Advances in Systemic Treatment of Breast Cancer Authors Hurvitz Sara Alsterlind Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMra2500695 · PMID: 42842904 https://pubmed.ncbi.nlm.nih.gov/42842904/ Abstract Systemic therapy for breast cancer has evolved rapidly since 2020, driven by the expansion of targeted therapies, antibody drug conjugates, and immunotherapy across biologic subtypes. The integration of tumor molecular profiling and germline testing has enabled increasingly personalized, biomarker guided treatment strategies. In hormone receptor positive, human epidermal growth factor receptor 2 (HER2) negative disease, cyclin dependent kinase 4 and 6 inhibitors remain foundational, whereas phosphatidylinositol 3 kinase pathway inhibitors, oral selective estrogen receptor degraders, and antibody drug conjugates have transformed disease management after endocrine resistance. In HER2 positive disease, antibody drug conjugates particularly trastuzumab deruxtecan have improved outcomes and are being used in earlier lines of therapy, a development that is reshaping treatment paradigms. In triple negative breast cancer, immune checkpoint inhibitors have improved outcomes in both metastatic and early stage disease. Across subtypes, advances in curative therapy increasingly emphasize risk adapted escalation and de escalation of treatment. Ongoing challenges include improving treatment sequencing, identifying predictive biomarkers, integrating emerging tools such as analysis of circulating tumor DNA, and ensuring equitable access to high cost therapies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0733",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of veterinary internal medicine",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0733_palatability_assessment_of_a_commercial_wet_renal_diet_in_he.md",
+   "snippet": "Title Palatability assessment of a commercial wet renal diet in healthy cats: an open label in home exploratory trial Authors Magalhães Tomás Rodrigues, Corbee Ronald Jan, Queiroga Felisbina Luísa, Lourenço Ana Luísa Journal / DOI Journal o",
+   "text": "Nephrology scraped pubmed PubMed / Journal of veterinary internal medicine Title Palatability assessment of a commercial wet renal diet in healthy cats: an open label in home exploratory trial Authors Magalhães Tomás Rodrigues, Corbee Ronald Jan, Queiroga Felisbina Luísa, Lourenço Ana Luísa Journal / DOI Journal of veterinary internal medicine · DOI: 10.1093/jvimsj/aalag234 · PMID: 42842766 https://pubmed.ncbi.nlm.nih.gov/42842766/ Abstract BACKGROUND: Wet renal diets are considered the best option for managing cats with chronic kidney disease (CKD), but their palatability is a recurrent concern. HYPOTHESIS/OBJECTIVES: Assess the palatability of a commercial wet diet formulated for early stage CKD in cats. ANIMALS: Forty two healthy cats privately owned by 31 caregivers. METHODS: An open label in home feeding trial was conducted over three 6 day phases, during which cats were offered the wet renal diet (Phase 1), their usual wet diet (Phase 2), and both diets simultaneously (Phase 3). Time from diet presentation to eating (latency time), food intake, and feeding related behaviors were recorded by caregivers. Analyses included descriptive statistics and mixed effects regression models. RESULTS: Caregivers classified renal diet acceptance as positive for 69.0% (n = 29) of cats, negative for 23.8% (n = 10), and neutral for 7.1% (n = 3). Overall, cats were significantly more likely (P < .001) to be recorded in a higher diet intake category in Phase 2 than in Phase 1, whereas latency time did not differ significantly (P = .07). Based on recorded intake during Phase 3, neither diet was significantly preferred (P = .34), although caregivers perceived a preference for the usual diet in 47.6% (n = 20) of cats and for the renal diet in 45.2% (n = 19). If prescribed, caregivers would offer this therapeutic diet to 78.6% (n = 33) of cats. CONCLUSIONS AND CLINICAL IMPORTANCE: In this short term feeding trial, most healthy cats accepted the renal diet formulated for early stage CKD with no apparent palatability concerns. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0732",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of veterinary internal medicine",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0732_bacterial_aortic_endarteritis_with_sepsis_as_a_rare_complica.md",
+   "snippet": "Title Bacterial aortic endarteritis with sepsis as a rare complication of aortic dissection in a cat Authors Lim Sukjung, Shekelle Kristen L, Groch Katia R, Porter Brian F, Malcolm Elizabeth, Gordon Sonya Journal / DOI Journal of veterinary",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of veterinary internal medicine Title Bacterial aortic endarteritis with sepsis as a rare complication of aortic dissection in a cat Authors Lim Sukjung, Shekelle Kristen L, Groch Katia R, Porter Brian F, Malcolm Elizabeth, Gordon Sonya Journal / DOI Journal of veterinary internal medicine · DOI: 10.1093/jvimsj/aalag243 · PMID: 42842764 https://pubmed.ncbi.nlm.nih.gov/42842764/ Abstract A 14 year old domestic shorthair cat was examined because of respiratory distress. Thoracic radiography showed a prominent aortic arch and no other abnormalities. Echocardiography documented a mobile flap within the ascending aorta creating 2 lumens, consistent with aortic dissection (AD), mild pericardial effusion with tamponade, left ventricular concentric hypertrophy, and normal left atrial size. Systemic hypertension (200 mmHg) was the presumed cause of AD, prompting administration of telmisartan, furosemide, and amlodipine. The cat clinically improved, became normotensive, and was discharged 2 days later. The cat remained well for 4 months, then became lethargic and died. Necropsy showed a 7.6 cm long aortic intimal flap, severe bacterial aortic endarteritis, and evidence of sepsis including multiple organ necrosis, thrombosis, and embolic glomerulonephritis. Bacterial culture of the kidneys yielded mixed bacterial growth including Pasteurella stomatis, presumably the same bacterium identified in the endarteritis lesion. Infective aortic endarteritis can be a fatal complication of AD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0731",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Perfusion",
+   "confidence": "medium",
+   "date": "2026-10-08",
+   "path": "content/papers/2026/2026-10-08_paper-2026-0731_perioperative_feasibility_and_post_discharge_residual_risk_i.md",
+   "snippet": "Title Perioperative feasibility and post discharge residual risk in borderline candidates undergoing durable left ventricular assist device implantation: A single center case series Authors Zhu Wenfang, Liu Guiqing, Liu Liangliang, Chen Yuh",
+   "text": "Cardiology scraped pubmed PubMed / Perfusion Title Perioperative feasibility and post discharge residual risk in borderline candidates undergoing durable left ventricular assist device implantation: A single center case series Authors Zhu Wenfang, Liu Guiqing, Liu Liangliang, Chen Yuhong, Zhang Liang, Xu Jinpeng Journal / DOI Perfusion · DOI: 10.1177/02676591261496760 · PMID: 42842815 https://pubmed.ncbi.nlm.nih.gov/42842815/ Abstract IntroductionSome patients considered for durable left ventricular assist device (LVAD) implantation have borderline features or relative contraindication factors that may lead to deferral or reconsideration of implantation. The relationship between perioperative feasibility and post discharge residual risk in such patients remains incompletely described.MethodsWe retrospectively reviewed borderline LVAD candidates selected from 30 consecutive adults undergoing durable LVAD implantation between October 2024 and September 2025. Patients were included when major preoperative decision concerns influenced implantation planning. Outcomes were successful implantation with survival to first discharge and post discharge residual risk related events.ResultsEleven borderline candidates were included. Median age was 56 years (range, 38 73 years). All patients underwent LVAD implantation and survived to first discharge. Median follow up duration was 13.0 months (range, 2.1 18.0 months). During follow up, death occurred in 2 patients, ischemic stroke or intracranial hemorrhage in 4, and gastrointestinal bleeding in 1.ConclusionsBorderline candidacy features did not preclude LVAD implantation or discharge after individualized perioperative handling. However, post discharge residual risk, especially cerebrovascular vulnerability, anticoagulation exposure, and care management limitations, remained clinically important. LVAD candidacy should be considered as a longitudinal care pathway rather than a perioperative decision alone. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "cn.rheum.autoimmunity.autoantibody-injury-mechanism",
@@ -11784,8 +11920,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/orthopedics/cn.ortho.torus-fracture.splint-no-reduction.md",
-   "snippet": "정의 융기(torus, buckle) 골절은 소아 장골의 골간단에서 압박 쪽 피질이 국소적으로 좌굴해 불룩 솟은 불완전 골절 이다. 원위 요골이 가장 흔한 자리다. 이 정리본의 목표는 진단명 자체보다, X선에서 융기 골절을 읽고 그것이 안정 골절이라 정복·긴 석고·수술 없이 짧은 부목 고정으로 충분함을 고르며, 처치가 달라지는 다른 소아 손목 골절과 가르는 것 이다. 병태생리 정상 소아 뼈 는 성인보다 물·콜라겐이 많고 무기질",
-   "text": "Orthopedics 정의 융기(torus, buckle) 골절은 소아 장골의 골간단에서 압박 쪽 피질이 국소적으로 좌굴해 불룩 솟은 불완전 골절 이다. 원위 요골이 가장 흔한 자리다. 이 정리본의 목표는 진단명 자체보다, X선에서 융기 골절을 읽고 그것이 안정 골절이라 정복·긴 석고·수술 없이 짧은 부목 고정으로 충분함을 고르며, 처치가 달라지는 다른 소아 손목 골절과 가르는 것 이다. 병태생리 정상 소아 뼈 는 성인보다 물·콜라겐이 많고 무기질이 적어 탄성이 크며, 두껍고 튼튼한 골막이 겉을 싼다. 골간단은 단단한 골간 피질이 얇아지며 해면골로 넘어가는 자리라 압박에 약하다. 성장판(골단판)은 골간단과 골단 사이의 연골로, 인대보다 약해 소아 손목 손상의 또 다른 약점이다. 이상이 생기는 기전 : 손을 짚고 넘어지면(FOOSH) 손목을 통해 요골에 축 방향 압박이 걸린다. 성인의 취약한 뼈는 여기서 골절선이 가로질러 부러지지만, 탄성이 큰 소아 뼈는 얇은 골간단 피질이 아코디언처럼 국소적으로 접히며(좌굴) 에너지를 흡수한다. 반대쪽(장력 쪽) 피질은 끊기지 않고 골막도 온전하다. 결과적으로 골절면이 서로 압축돼 맞물린 채 남아, 전위될 수 있는 떨어진 골편이 없다. 이것이 융기 골절이 본질적으로 안정 골절인 이유다. 같은 기전이라도 힘이 더 크거나 방향이 비틀리면 장력 쪽 피질까지 끊긴다 — 한쪽만 끊기고 휘면 생나무 골절, 양쪽이 끊기면 완전 골간단 골절이고, 골절선이 성장판을 지나면 Salter Harris 골절이다. 이들은 각형성·전위가 생기거나 진행할 수 있어 처치가 달라진다 [[?rockwood 9: Fractures of the distal radius and ulna]]. 기전에서 소견으로 손목 통증·원위 요골 압통·경한 부종, 변형 없음 : 피질 좌굴은 골막 안에서 일어나 출혈·부종이 적고, 골편 전위가 없으니 눈에 보이는 변형이 없다. 만져지는 계단 모양 변형은 완전 골절 쪽 신호다. 신경혈관 정상 : 골편이 움직이지 않으니 정중신경·요골동맥을 누를 일이 없다. 이상이 있으면 전위된 골절을 먼저 생각하고 응급 정복이 우선이다. X선 — 피질 융기·꺾임 : 압축된 피질이 바깥으로 불룩하거나 각지게 꺾여 보인다. 측면 사진에서 배측 피질에만 보이는 일이 있어 두 방향을 본다. X선 — 골간단 경화선 : 압축된 해면골 소주가 겹쳐 골간단을 가로지르는 희미한 흰 띠로 보인다. X선 — 반대쪽 피질 연속, 전위·각형성 없음, 성장판·골단 정상 : 안정 골절임을 보여 주는 소견이다. 이것이 치료를 정한다. 정상 X선의 한계 : 골절선이 보이지 않아도 성장판 위 국소 압통이 뚜렷하면 전위 없는 Salter Harris I 형을 배제하지 못한다. 감별 X선에서 「골절이 있다」에서 멈추지 않고 「어떤 골절인가」까지 읽는다 — 표 「소아 원위 요골 손상」이 치료로 이어지는 비교다. 갈림길은 셋이다. ① 반대쪽 피질이 끊겼는가 (융기 vs 생나무·완전 골절), ② 각형성·전위가 나이별 허용 범위를 넘는가 (석고만 vs 정복), ③ 골절선이 성장판을 지나는가 (Salter Harris — 성장 장애 추적). 반복 골절·설명과 맞지 않는 손상·걷기 전 영아의 골절이면 학대를 감별한다. 검사 1. 손목 전후면·측면 X선 — 진단과 치료 결정에 충분하다. 두 방향을 봐야 배측 융기·각형성을 놓치지 않는다. 2. MRI — X선 정상인데 성장판·인대 손상이 임상적으로 의심될 때. 융기 골절이 이미 보이면 치료를 바꾸지 않는다. 3. 추적 X선 — 전형적 융기 골절은 필요 없다 [[?nelson 21: Common fractures]]. 정복하지 않고 석고로 본 생나무·완전 골절은 각형성이 진행하는지 추적한다. 치료 선택 : 전위·각형성·성장판 침범 없는 융기 골절 → 정복 없이 제거 가능한 손목 부목, 약 3주 [[?nelson 21: Common fractures]]. 목적은 골편 고정이 아니라 통증 조절과 보호다. 소아의 왕성한 골막 골형성으로 수 주 안에 유합되고, 미세한 각형성은 성장하며 재형성된다. 하지 않는 것과 이유 : 6주 석고(필요한 기간보다 길다), 도수 정복·장상지 석고(되돌릴 변형이 없고 팔꿈치 강직만 더한다), 핀 고정(적응 없음), MRI(치료를 바꾸지 않음) — 표 「융기 골절에 과한 처치」. 다른 골절이면 : 완전·생나무 골절에서 각형성이 허용 범위를 넘거나 변형이 만져지면 도수 정복 후 석고, 정복이 유지되지 않으면 경피 핀 고정. 개방 골절·불안정 골절은 수술적 처치 [[?rockwood 9: Fractures of the distal radius and ulna]]. 반응 확인·재평가 : 부목을 뗀 뒤 통증이 사라지면 활동을 재개한다. 통증이 지속되거나 새 변형이 생기면 재촬영해 다른 골절(생나무·SH)을 놓쳤는지 본다. X선 정상 + 성장판 압통으로 고정한 경우는 1–2주 뒤 재평가한다. 권고와 예외 「융기 골절 = 안정 골절 = 정복 없음 + 짧은 부목」. 골절의 이름이 아니라 안정성 이 고정 방법과 기간을 정한다. 탄력 붕대만으로도 단단한 고정과 결과가 같다는 무작위 시험(FORCE)이 있다 [[?force 2022]] — 원문을 열지 못해 세부(대상 나이·결과 지표)는 대조하지 못했다(검토 항목). 문항의 정답 기준은 「제거 가능한 부목 약 3주」다. 나이별 허용 각형성 수치는 교과서 원문을 대조하지 못해 넣지 않았다(검토 항목). 이 슬롯(ortho.pediatric)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Nelson·Rockwood 는 서지만 남겼다(†). (심화) 왜 소아 뼈는 「부러지지 않고 접히는가」 뼈는 압박에는 강하고 장력에는 약하다. 성인 피질은 무기질이 많아 단단하지만 부서지기 쉬워, 한계를 넘으면 장력 쪽에서 균열이 시작해 반대편까지 한 번에 가로지른다. 소아 피질은 무기질이 적고 콜라겐·물이 많아 소성 변형(휘어진 채 남는 변형)의 여지가 크고, 두꺼운 골막이 바깥에서 붙잡아 준다. 그래서 같은 압박이 골간단의 얇은 피질을 접는 데서 끝난다 — 융기 골절이다. 힘이 더 크면 장력 쪽만 끊기고 압박 쪽은 휘는 생나무 골절이 되고, 더 크면 완전 골절이 된다. 이 연속선에서 어느 쪽 피질이 살아 있는가 가 안정성, 곧 치료를 정한다."
+   "snippet": "판단 — 왜 정복 없는 짧은 부목이 먼저인가 융기(torus, buckle) 골절은 소아 장골 골간단에서 압박 쪽 피질이 국소적으로 좌굴해 불룩 솟은 불완전 골절 이고, 원위 요골이 가장 흔한 자리다. 피질이 압축돼 맞물려 전위될 골편이 없다 — 안정 골절 이라 정복할 것이 없고, 고정은 통증 조절·보호 목적이다 [[?nelson 21: Common fractures]]. 처치를 바꾸는 것은 「골절이 있다」가 아니라 「어떤 골",
+   "text": "Orthopedics 판단 — 왜 정복 없는 짧은 부목이 먼저인가 융기(torus, buckle) 골절은 소아 장골 골간단에서 압박 쪽 피질이 국소적으로 좌굴해 불룩 솟은 불완전 골절 이고, 원위 요골이 가장 흔한 자리다. 피질이 압축돼 맞물려 전위될 골편이 없다 — 안정 골절 이라 정복할 것이 없고, 고정은 통증 조절·보호 목적이다 [[?nelson 21: Common fractures]]. 처치를 바꾸는 것은 「골절이 있다」가 아니라 「어떤 골절인가」다 — 반대쪽 피질 단절·각형성·성장판 침범이 있으면 다른 골절이다. 정상 X선이어도 성장판 위 압통이 뚜렷하면 Salter Harris I 형을 배제하지 못한다. 기전 — 접히는 소아 뼈에서 안정 골절로 정상 소아 뼈 는 성인보다 물·콜라겐이 많고 무기질이 적어 탄성이 크며, 두껍고 튼튼한 골막이 겉을 싼다. 골간단은 단단한 골간 피질이 얇아지며 해면골로 넘어가는 자리라 압박에 약하다. 성장판(골단판, physis)은 골간단과 골단 사이의 연골로, 인대보다 약해 소아 손목 손상의 또 다른 약점이다. 이상이 생기는 기전 : 손을 짚고 넘어지면(FOOSH) 요골에 축 방향 압박이 걸린다. 성인의 취약한 뼈는 골절선이 가로질러 부러지지만, 탄성이 큰 소아 뼈는 얇은 골간단 피질이 아코디언처럼 국소적으로 접히며(좌굴) 에너지를 흡수한다. 반대쪽(장력 쪽) 피질은 끊기지 않고 골막도 온전하다. 골절면이 압축돼 맞물린 채 남아 떨어진 골편이 없다 — 이것이 안정 골절인 이유다. 같은 기전이라도 힘이 더 크거나 방향이 비틀리면 장력 쪽 피질까지 끊긴다 — 한쪽만 끊기고 휘면 생나무(greenstick) 골절, 양쪽이 끊기면 완전 골간단 골절, 골절선이 성장판을 지나면 Salter Harris 골절이다. 이들은 각형성·전위가 생기거나 진행할 수 있어 처치가 달라진다 [[?rockwood 9: Fractures of the distal radius and ulna]]. 가르는 소견 — 피질·각형성·성장판 손목 통증·원위 요골 압통·경한 부종, 변형 없음 : 피질 좌굴은 골막 안에서 일어나 출혈·부종이 적고, 골편 전위가 없으니 변형이 없다. 만져지는 계단 모양 변형은 완전 골절 쪽 신호다. 신경혈관 정상 : 골편이 움직이지 않으니 정중신경·요골동맥을 누를 일이 없다. 이상이 있으면 전위된 골절을 먼저 생각하고 응급 정복이 우선이다. X선(손목 전후면·측면) — 진단과 치료 결정에 충분하다. 압축된 피질이 바깥으로 불룩하거나 각지게 꺾여 보이고(측면 사진의 배측 피질에만 보이는 일이 있어 두 방향을 본다), 압축된 해면골 소주가 골간단을 가로지르는 희미한 경화선 으로 보인다. 반대쪽 피질 연속, 전위·각형성 없음, 성장판·골단 정상 이 안정 골절임을 보여 주고, 이것이 치료를 정한다. 갈림길 셋 (표): ① 반대쪽 피질이 끊겼는가(융기 vs 생나무·완전 골절) ② 각형성·전위가 나이별 허용 범위를 넘는가(석고만 vs 정복) ③ 골절선이 성장판을 지나는가(Salter Harris — 성장 장애 추적). 정상 X선의 한계 : 골절선이 보이지 않아도 성장판 위 국소 압통이 뚜렷하면 전위 없는 Salter Harris I 형을 배제하지 못한다. MRI 는 X선 정상인데 성장판·인대 손상이 임상적으로 의심될 때 쓰고, 융기 골절이 이미 보이면 치료를 바꾸지 않는다. 반복 골절·설명과 맞지 않는 손상·걷기 전 영아의 골절이면 학대를 감별한다. 선택 — 안정성이 고정 방법과 기간을 정한다 선택 : 전위·각형성·성장판 침범 없는 융기 골절 → 정복 없이 제거 가능한 손목 부목, 약 3주 [[?nelson 21: Common fractures]]. 소아의 왕성한 골막 골형성으로 수 주 안에 유합되고, 미세한 각형성은 성장하며 재형성된다. 전형적 융기 골절은 추적 X선이 필요 없다. 하지 않는 것 : 6주 석고·도수 정복·핀 고정·MRI — 이유는 표 「융기 골절에 과한 처치」. 다른 골절이면 : 완전·생나무 골절에서 각형성이 허용 범위를 넘거나 변형이 만져지면 도수 정복 후 석고, 정복이 유지되지 않으면 경피 핀 고정. 정복 없이 석고로 본 골절은 각형성이 진행하는지 추적 X선으로 본다. 개방·불안정 골절은 수술적 처치 [[?rockwood 9: Fractures of the distal radius and ulna]]. 반응 확인·재평가 : 부목을 뗀 뒤 통증이 사라지면 활동을 재개한다. 통증이 지속되거나 새 변형이 생기면 재촬영해 다른 골절(생나무·SH)을 놓쳤는지 본다. X선 정상 + 성장판 압통으로 고정한 경우는 1–2주 뒤 재평가한다. 권고와 예외 탄력 붕대만으로도 단단한 고정과 결과가 같다는 무작위 시험(FORCE)이 있다 [[?force 2022]] — 원문을 열지 못해 세부(대상 나이·결과 지표)는 대조하지 못했다(검토 항목). 문항의 정답 기준은 「제거 가능한 부목 약 3주」다. 나이별 허용 각형성 수치는 교과서 원문을 대조하지 못해 넣지 않았다(검토 항목). 이 슬롯(ortho.pediatric)은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. Nelson·Rockwood 는 서지만 남겼다(†). (심화) 왜 소아 뼈는 「부러지지 않고 접히는가」 뼈는 압박에는 강하고 장력에는 약하다. 성인 피질은 무기질이 많아 단단하지만 부서지기 쉬워, 한계를 넘으면 장력 쪽에서 균열이 시작해 반대편까지 한 번에 가로지른다. 소아 피질은 무기질이 적고 콜라겐·물이 많아 소성 변형(휘어진 채 남는 변형)의 여지가 크고, 두꺼운 골막이 바깥에서 붙잡아 준다. 그래서 같은 압박이 골간단의 얇은 피질을 접는 데서 끝난다 — 융기 골절이다. 힘이 더 크면 장력 쪽만 끊기고 압박 쪽은 휘는 생나무 골절이 되고, 더 크면 완전 골절이 된다. 이 연속선에서 어느 쪽 피질이 살아 있는가 가 안정성, 곧 치료를 정한다."
   },
   {
    "id": "cn.ortho.scfe.in-situ-fixation",
@@ -11812,8 +11948,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/orthopedics/cn.ortho.femoral-neck-fracture.arthroplasty-rationale.md",
-   "snippet": "정의 엉덩관절 골절은 넙다리뼈 근위부의 골절로, 골절선 위치에 따라 관절낭 안 (넙다리뼈목: 골두 아래·목 중간·목 바닥)과 관절낭 밖 (돌기 사이·돌기 아래)으로 나눈다 [[?rockwood 9]]. 이 정리본의 목표는 진단이 아니라, 고령의 전위된 넙다리뼈목 골절에서 내고정 대신 관절치환술을 고르는 근거가 무엇인지, 그리고 그 근거가 왜 골다공증·나이·관절면이 아니라 골두 혈류인지 설명하는 것 이다. 병태생리 정상 혈류. ",
-   "text": "Orthopedics 정의 엉덩관절 골절은 넙다리뼈 근위부의 골절로, 골절선 위치에 따라 관절낭 안 (넙다리뼈목: 골두 아래·목 중간·목 바닥)과 관절낭 밖 (돌기 사이·돌기 아래)으로 나눈다 [[?rockwood 9]]. 이 정리본의 목표는 진단이 아니라, 고령의 전위된 넙다리뼈목 골절에서 내고정 대신 관절치환술을 고르는 근거가 무엇인지, 그리고 그 근거가 왜 골다공증·나이·관절면이 아니라 골두 혈류인지 설명하는 것 이다. 병태생리 정상 혈류. 넙다리뼈 골두는 뼈 끝이 관절낭 속에 들어 있어 골막이 없고, 혈액은 주로 안쪽넙다리휘돌이동맥에서 나온 지지대(retinacular) 분지가 관절낭 안에서 목의 표면을 따라 올라가 공급한다. 원인대 동맥(둥근인대 동맥)은 성인에서 기여가 작고, 골수강 내 혈류는 골절선에서 끊긴다 [[?rockwood 9]]. 골절이 혈류를 끊는 기전. 골절선이 목을 지나면 지지대 분지가 골절선을 가로지른다. 비전위면 혈관이 늘어나는 정도로 남을 수 있지만, 전위가 크면(가든 3·4형) 혈관이 찢기거나 꼬여 골두가 허혈에 빠진다. 관절낭 안 혈종은 관절낭 압력을 올려 남은 혈류마저 줄인다. 허혈 골두가 붙지 않는 이유. 관절낭 안 골절면은 활액에 씻겨 혈종·가골이 자리 잡지 못하고, 골막이 없어 골막성 가골도 없다. 그래서 내고정으로 뼈를 맞춰 놓아도 불유합 이 흔하고, 붙더라도 허혈 골두가 무너지는 무혈성괴사 가 뒤따르며, 그때마다 재수술이 필요하다 [[?faith 2017]]. 반면 돌기 사이 골절은 관절낭 밖이라 혈류가 보존되고 해면골이 많아 잘 붙는다 — 그래서 골다공증이 있어도 내고정한다. 치환술의 논리. 살지 못할 골두를 붙이려 애쓰기보다 골두를 인공물로 바꾸면 불유합·괴사라는 실패 자체가 사라지고, 수술 다음 날부터 체중부하가 가능해 고령의 와상 합병증(폐렴·욕창·혈전·근력 소실)을 줄인다. 대가는 인공물의 수명·탈구·감염이다 — 젊은 환자에서 같은 선택을 하지 않는 이유다. 기전에서 소견으로 다리 짧아짐·바깥 회전 : 골절 원위부가 근육에 끌려 올라가고 바깥으로 돌아간다. 전위 골절의 전형 소견이며 비전위(감입) 골절은 이 소견이 약할 수 있다. X선 : 골절선 위치(목 vs 돌기 사이)와 전위(가든 분류)를 읽는다. 큰돌기·작은돌기가 온전하고 골절선이 목 중간이면 관절낭 안이다. 보이지 않는 골절은 MRI(또는 CT)로 찾는다. 신경혈관 : 발등동맥 맥박·발가락 감각·운동이 정상인 것은 원위 손상이 없다는 뜻이지 골두 혈류와는 무관하다 — 골두 허혈은 진찰로 알 수 없다. 골밀도 : 골다공증은 골절의 원인이며 재골절 예방 치료의 근거이지만, 수술 방법을 가르는 일차 정보가 아니다. 감별 돌기 사이(관절낭 밖) 골절 : 혈류 보존 → 내고정. 골다공증이 심해도 같다 [[?aaos hip 2021]]. 비전위 목 골절(가든 1·2) : 혈류가 남아 있을 가능성이 있어 내고정(유관나사)을 시도한다. 고령에서도 원칙은 고정이다. 젊은 환자의 전위 목 골절 : 인공물 수명 때문에 응급 정복·내고정으로 골두를 살린다. 혈류 손상의 생물학은 같지만 선택이 다르다. 병적 골절·전이 : 종양이 원인이면 고정보다 치환·광범위 절제가 선호될 수 있다. 검사 골반 전후·엉덩관절 측면 X선이 기본이다. 골절선 위치·전위·분쇄를 읽고, 보이지 않으면 MRI 로 잠재 골절을 찾는다. 수술 전 평가는 내과적 위험(심폐·항응고·섬망 위험)과 수술 전 기능(독립 보행·인지)을 남기는 것이 핵심이다 — 전치환 vs 반치환의 근거가 되고, 조기 수술(24–48시간 안)과 재활 계획의 바탕이 된다 [[?aaos hip 2021]]. 치료 관절낭 밖(돌기 사이·돌기 아래) → 골수강내 금속정 또는 활주 고나사 내고정 [[?aaos hip 2021]] [[?rockwood 9]]. 관절낭 안, 비전위 → 내고정(유관나사 등). 관절낭 안, 전위, 고령 → 관절치환술 [[?aaos hip 2021]] [[?faith 2017]]. 독립 보행·인지 양호·활동적이면 전치환술을 고려하고, 그렇지 않으면 반치환술. HEALTH 시험에서 두 방법의 2년 재수술률은 유의한 차이가 없었고 전치환의 기능 이득은 작았다 [[?health 2019]]. 관절낭 안, 전위, 젊음 → 응급 정복·내고정. 공통 — 내과적 안정화 뒤 되도록 빨리 수술, 즉시 체중부하·조기 보행, 정맥혈전 예방, 섬망 예방, 골다공증 치료와 낙상 평가. 반응 확인·재평가. 치환술 뒤에는 탈구·감염·인공물 주위 골절을, 내고정 뒤에는 X선 추적으로 유합·이차 전위·괴사(수개월–2년)를 본다. 내고정 뒤 불유합·괴사가 오면 구제 치환술로 간다. 권고와 예외 「왜 치환인가」의 답은 골두 혈류다. 골다공증·나이·수술 시간·관절면은 부수 요인이거나 논리가 거꾸로다. 「관절낭 안 vs 밖」을 먼저 보라 — 같은 노인·같은 골다공증이라도 밖이면 고정, 안이고 전위면 치환. 젊으면 살리고, 늙으면 바꾼다 — 인공물 수명이 기준이다. 전치환 vs 반치환은 선호의 문제이지 정답·오답이 아니다. 문항이 「활동적·인지 양호」를 주면 전치환 쪽이다. 이 슬롯은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. AAOS 지침·FAITH·HEALTH·Rockwood 는 원문을 열지 못해 서지만 남겼다(검토 항목) — 수치(재수술률·괴사율)는 적지 않았다. (심화) 왜 비전위 골절은 고령에서도 고정하는가 비전위 골절은 지지대 분지가 늘어났을 뿐 끊기지 않았을 가능성이 크고, 고정이 성공하면 자기 관절을 지킨다 — 치환의 합병증(탈구·감염·인공물 수명)을 피할 수 있다. 실패(이차 전위·괴사)가 오면 그때 치환으로 구제하면 된다. 반면 전위 골절은 고정의 실패 확률이 너무 높아 「먼저 고정, 실패하면 치환」이 고령에서는 재수술·와상이라는 비용을 감당하지 못한다 [[?faith 2017]]. 즉 선택은 「고정 성공 확률 × 실패의 비용」으로 정해지고, 그 확률을 좌우하는 변수가 골두 혈류다."
+   "snippet": "판단 — 왜 관절치환술이 내고정보다 먼저인가 고령의 전위된 넙다리뼈목 골절에서 치환을 고르는 이유는 골두 혈류 다 — 내고정으로 뼈를 맞춰도 살지 못할 골두라 불유합·무혈성괴사·재수술이 흔하다 [[?faith 2017]]. 첫 갈림길은 「관절낭 안 vs 밖」이다. 같은 노인·같은 골다공증이라도 밖(돌기 사이)이면 고정, 안이고 전위면 치환이다 [[?aaos hip 2021]]. 골다공증·나이·수술 시간·관절면은 부수 요인이거나",
+   "text": "Orthopedics 판단 — 왜 관절치환술이 내고정보다 먼저인가 고령의 전위된 넙다리뼈목 골절에서 치환을 고르는 이유는 골두 혈류 다 — 내고정으로 뼈를 맞춰도 살지 못할 골두라 불유합·무혈성괴사·재수술이 흔하다 [[?faith 2017]]. 첫 갈림길은 「관절낭 안 vs 밖」이다. 같은 노인·같은 골다공증이라도 밖(돌기 사이)이면 고정, 안이고 전위면 치환이다 [[?aaos hip 2021]]. 골다공증·나이·수술 시간·관절면은 부수 요인이거나 논리가 거꾸로다(혼동 항목). 젊으면 살리고, 늙으면 바꾼다 — 같은 생물학에서 선택을 가르는 것은 인공물 수명이다. 기전 — 골두 혈류에서 불유합·괴사로 정상 혈류. 넙다리뼈 골두는 관절낭 속에 있어 골막이 없고, 혈액은 주로 안쪽넙다리휘돌이동맥(medial femoral circumflex artery)의 지지대(retinacular) 분지가 관절낭 안에서 목의 표면을 따라 올라가 공급한다. 원인대 동맥(둥근인대 동맥)은 성인에서 기여가 작고, 골수강 내 혈류는 골절선에서 끊긴다 [[?rockwood 9]]. 골절이 혈류를 끊는 기전. 골절선이 목을 지나면 지지대 분지가 골절선을 가로지른다. 비전위면 혈관이 늘어나는 정도로 남을 수 있지만, 전위가 크면(가든 3·4형) 혈관이 찢기거나 꼬여 골두가 허혈에 빠진다. 관절낭 안 혈종은 관절낭 압력을 올려 남은 혈류마저 줄인다. 허혈 골두가 붙지 않는 이유. 관절낭 안 골절면은 활액에 씻겨 혈종·가골이 자리 잡지 못하고, 골막이 없어 골막성 가골도 없다. 그래서 내고정 뒤 불유합 이 흔하고, 붙더라도 허혈 골두가 무너지는 무혈성괴사(avascular necrosis) 가 뒤따르며, 그때마다 재수술이 필요하다 [[?faith 2017]]. 반면 돌기 사이 골절은 관절낭 밖이라 혈류가 보존되고 해면골이 많아 잘 붙는다. 가르는 소견 — 위치·전위·나이 엉덩관절 골절(hip fracture)은 골절선 위치에 따라 관절낭 안 (넙다리뼈목: 골두 아래·목 중간·목 바닥)과 관절낭 밖 (돌기 사이·돌기 아래)으로 나눈다 [[?rockwood 9]]. 다리 짧아짐·바깥 회전 : 골절 원위부가 근육에 끌려 올라가고 바깥으로 돌아간다. 전위 골절의 전형 소견이며 비전위(감입) 골절은 이 소견이 약할 수 있다. X선 : 골반 전후·엉덩관절 측면 X선으로 골절선 위치(목 vs 돌기 사이)와 전위(가든 분류)·분쇄를 읽는다. 큰돌기·작은돌기가 온전하고 골절선이 목 중간이면 관절낭 안이다. 보이지 않는 골절은 MRI(또는 CT)로 찾는다. 신경혈관 : 발등동맥 맥박·발가락 감각·운동이 정상인 것은 원위 손상이 없다는 뜻이지 골두 혈류와는 무관하다 — 골두 허혈은 진찰로 알 수 없다. 골밀도 : 골다공증은 골절의 원인이며 재골절 예방 치료의 근거이지만, 수술 방법을 가르는 일차 정보가 아니다. 비슷하지만 다르게 다루는 경우 : 비전위 목 골절(가든 1·2)은 혈류가 남아 있을 가능성이 있어 고령에서도 내고정(유관나사)을 시도한다. 젊은 환자의 전위 목 골절은 응급 정복·내고정으로 골두를 살린다. 병적 골절·전이는 고정보다 치환·광범위 절제가 선호될 수 있다. 선택 — 골절 위치·전위·나이로 고르는 수술 치환술의 논리. 살지 못할 골두를 붙이려 애쓰기보다 인공물로 바꾸면 불유합·괴사라는 실패 자체가 사라지고, 수술 다음 날부터 체중부하가 가능해 고령의 와상 합병증(폐렴·욕창·혈전·근력 소실)을 줄인다. 대가는 인공물의 수명·탈구·감염이다 — 젊은 환자에서 같은 선택을 하지 않는 이유다. 전치환술(total hip arthroplasty)과 반치환술(hemiarthroplasty)의 선택은 표와 같고, HEALTH 시험에서 두 방법의 2년 재수술률은 유의한 차이가 없었으며 전치환의 기능 이득은 작았다 [[?health 2019]]. 수술 전 평가. 내과적 위험(심폐·항응고·섬망 위험)과 수술 전 기능(독립 보행·인지)을 남긴다 — 전치환 vs 반치환의 근거가 되고, 조기 수술(24–48시간 안)과 재활 계획의 바탕이 된다 [[?aaos hip 2021]]. 공통. 내과적 안정화 뒤 되도록 빨리 수술, 즉시 체중부하·조기 보행, 정맥혈전 예방, 섬망 예방, 골다공증 치료와 낙상 평가. 반응 확인·재평가. 치환술 뒤에는 탈구·감염·인공물 주위 골절을, 내고정 뒤에는 X선 추적으로 유합·이차 전위·괴사(수개월–2년)를 본다. 내고정 뒤 불유합·괴사가 오면 구제 치환술로 간다. 권고와 예외 전치환 vs 반치환은 선호의 문제이지 정답·오답이 아니다. 문항이 「활동적·인지 양호」를 주면 전치환 쪽이다. 비전위 목 골절도 고령에서 내고정 뒤 이차 전위·괴사가 생길 수 있어 치환을 고르는 기관도 있다 — 근거는 원문 미대조. 이 슬롯은 해리슨이 다루지 않는 자리라 해리슨 대조 대상이 아니다. AAOS 지침·FAITH·HEALTH·Rockwood 는 원문을 열지 못해 서지만 남겼다(검토 항목) — 수치(재수술률·괴사율)는 적지 않았다. (심화) 왜 비전위 골절은 고령에서도 고정하는가 비전위 골절은 지지대 분지가 늘어났을 뿐 끊기지 않았을 가능성이 크고, 고정이 성공하면 자기 관절을 지킨다 — 치환의 합병증(탈구·감염·인공물 수명)을 피할 수 있다. 실패(이차 전위·괴사)가 오면 그때 치환으로 구제하면 된다. 반면 전위 골절은 고정의 실패 확률이 너무 높아 「먼저 고정, 실패하면 치환」이 고령에서는 재수술·와상이라는 비용을 감당하지 못한다 [[?faith 2017]]. 즉 선택은 「고정 성공 확률 × 실패의 비용」으로 정해지고, 그 확률을 좌우하는 변수가 골두 혈류다."
   },
   {
    "id": "cn.ortho.achilles-rupture.thompson-test",
