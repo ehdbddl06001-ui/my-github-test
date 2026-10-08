@@ -123,6 +123,7 @@ window.IMAGING_QUESTIONS = [
    }
   },
   "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.scaphoid-fracture.occult-imaging",
   "figureImg": {
    "src": "assets/imaging/imaging-2026-0263.png",
    "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
