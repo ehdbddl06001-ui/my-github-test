@@ -292,24 +292,24 @@
    ]
   },
   "안과": {
-   "hash": "d683340840cc4d817f26",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "94a594dcdbf871adfacd",
+   "version": 10,
+   "date": "2026-10-08",
    "file": "MedKOS_학습서_안과.pdf",
-   "pages": 11,
+   "pages": 10,
    "template_version": 11,
    "units": {
     "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
-     "title": "급성 수술 후 안내염 — 유리체 천자·배양과 유리체내 항생제가 기본이고, 즉시 유리체절제술은 시력이 빛 감지뿐일 때다",
+     "title": "급성 수술 후 안내염 — 시력이 즉시 절제술을 가른다",
      "page": 2,
-     "concept_hash": "0c93220c2db634d9",
-     "concept_version": 3
+     "concept_hash": "99950f7c321bc098",
+     "concept_version": 4
     },
     "cn.ophth.crao.arteritic-workup": {
-     "title": "망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다",
+     "title": "망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다",
      "page": 4,
-     "concept_hash": "260f9c8b4b000d93",
-     "concept_version": 3
+     "concept_hash": "d4640372e89b6ffd",
+     "concept_version": 4
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
      "title": "안구 화학화상 — 검사보다 세척이 먼저",
@@ -318,17 +318,17 @@
      "concept_version": 2
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
-     "title": "허혈성 중심망막정맥폐쇄 뒤 가장 경계할 합병증 — 망막 허혈이 VEGF 를 통해 홍채·전방각 신생혈관을 만들어 신생혈관녹내장으로 간다",
-     "page": 9,
-     "concept_hash": "4f20ab3cbb530db7",
-     "concept_version": 2
+     "title": "중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다",
+     "page": 8,
+     "concept_hash": "bedc5753c750574e",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "317c35beccc2608d3fea671e17bc97dd",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "120d5ffd5d8b95feb277b530aaa454a5",
+    "version": 10,
+    "uploaded": "2026-10-08T10:32:08+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -339,16 +339,21 @@
     "MedKOS_학습서_안과_v6_2026-09-30.pdf",
     "MedKOS_학습서_안과_v7_2026-10-02.pdf",
     "MedKOS_학습서_안과_v8_2026-10-05.pdf",
-    "MedKOS_학습서_안과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_안과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_안과_v10_2026-10-08.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 급성 수술 후 안내염 — 시력이 즉시 절제술을 가른다 (정리본 v3 → v4)",
+    "내용 갱신: 망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다 (정리본 v3 → v4)",
+    "내용 갱신: 중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다 (정리본 v2 → v3)"
+   ]
   },
   "정형외과": {
-   "hash": "656dc532fd284d250f15",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "7b9f56e405e0636c8ff0",
+   "version": 12,
+   "date": "2026-10-08",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 10,
+   "pages": 11,
    "template_version": 11,
    "units": {
     "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
@@ -358,10 +363,10 @@
      "concept_version": 3
     },
     "cn.ortho.achilles-rupture.thompson-test": {
-     "title": "아킬레스건 파열 — 종아리를 쥐어짜 발이 움직이는지 본다",
-     "page": 5,
-     "concept_hash": "70288350dedfdcf5",
-     "concept_version": 1
+     "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
+     "page": 4,
+     "concept_hash": "c55a14c1972e4b5a",
+     "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
@@ -378,9 +383,9 @@
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "bf5072d69da8d78b8a33c8b9fcd76108",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "9cb8de7b5df5430ce0f88b2bde6001a7",
+    "version": 12,
+    "uploaded": "2026-10-08T10:32:08+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -393,9 +398,12 @@
     "MedKOS_학습서_정형외과_v8_2026-09-29.pdf",
     "MedKOS_학습서_정형외과_v9_2026-10-03.pdf",
     "MedKOS_학습서_정형외과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_정형외과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_정형외과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_정형외과_v12_2026-10-08.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다 (정리본 v1 → v2)"
+   ]
   },
   "외과": {
    "hash": "a7ed0aaddc647abafec6",
@@ -571,109 +579,115 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "1705be2a29ab9b2aeccf",
-   "version": 15,
-   "date": "2026-10-07",
+   "hash": "c3be7aa69970955d35d8",
+   "version": 16,
+   "date": "2026-10-08",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 28,
+   "pages": 30,
    "template_version": 11,
    "units": {
+    "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
+     "title": "자가항체 — 표적이 손상 방식을 정한다",
+     "page": 2,
+     "concept_hash": "46e15e652134ed67",
+     "concept_version": 1
+    },
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
      "title": "전신홍반루푸스 — 장기 침범으로 치료 강도를 정하고, 경증은 hydroxychloroquine(히드록시클로로퀸)으로 시작한다",
-     "page": 2,
+     "page": 4,
      "concept_hash": "294baaf4fea6952b",
      "concept_version": 1
     },
     "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
      "title": "항인지질항체증후군 — 혈전·임신 이환과 지속 항체로 진단하기",
-     "page": 4,
+     "page": 6,
      "concept_hash": "ed5381b90968663e",
      "concept_version": 1
     },
     "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
      "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
-     "page": 5,
+     "page": 7,
      "concept_hash": "48644d135721933e",
      "concept_version": 2
     },
     "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
      "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
-     "page": 7,
+     "page": 9,
      "concept_hash": "bdf8d84e7df7178b",
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
-     "page": 8,
+     "page": 10,
      "concept_hash": "f07740b9140fd90e",
      "concept_version": 2
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 10,
+     "page": 12,
      "concept_hash": "3c1861f8ef72944a",
      "concept_version": 2
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
-     "page": 13,
+     "page": 15,
      "concept_hash": "6e75ba4f5b92dec3",
      "concept_version": 2
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
-     "page": 15,
+     "page": 17,
      "concept_hash": "8ac8b42d909e5ed1",
      "concept_version": 1
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
-     "page": 17,
+     "page": 19,
      "concept_hash": "d7b76191c2ec0df1",
      "concept_version": 1
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 18,
+     "page": 20,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 20,
-     "concept_hash": "4e4ea3ab8e284daf",
+     "page": 22,
+     "concept_hash": "0ca1331142c86acb",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 21,
+     "page": 23,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 23,
+     "page": 25,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 25,
-     "concept_hash": "4656d8e5f1586bdb",
+     "page": 27,
+     "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 27,
+     "page": 29,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "c5942ac677cf754f26e2990203f79a82",
-    "version": 15,
-    "uploaded": "2026-10-07T10:06:56+09:00"
+    "md5": "26c2c757d901b03992ead8be1053ead2",
+    "version": 16,
+    "uploaded": "2026-10-08T10:32:08+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -690,12 +704,13 @@
     "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf",
     "MedKOS_학습서_류마티스내과_v13_2026-10-05.pdf",
     "MedKOS_학습서_류마티스내과_v14_2026-10-06.pdf",
-    "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf"
+    "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf",
+    "MedKOS_학습서_류마티스내과_v16_2026-10-08.pdf"
    ],
    "changes": [
+    "새 단원: 자가항체 — 표적이 손상 방식을 정한다",
     "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정",
-    "내용 수정: 혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-    "새 단원: 아픈 어깨 — 수동 운동까지 막히면 유착관절낭염"
+    "내용 수정: 혈색소증 관절병증 — 2·3번째 MCP 면 철 검사"
    ]
   },
   "호흡기내과": {
@@ -1166,13 +1181,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "13fc667801e56c59b16b2885ca124c8b",
+   "md5": "54a671361260fcfff0127e709387bb45",
    "version": null,
-   "uploaded": "2026-10-07T10:06:56+09:00"
+   "uploaded": "2026-10-08T10:32:08+09:00"
   }
  },
- "updated": "2026-10-07"
+ "updated": "2026-10-08"
 }

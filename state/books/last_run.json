@@ -1,17 +1,17 @@
 {
- "started": "2026-10-07T09:53:43+09:00",
+ "started": "2026-10-08T10:11:36+09:00",
  "built": [
-  "산부인과",
+  "정형외과",
+  "안과",
   "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
-  "정형외과",
   "피부과",
   "순환기내과",
   "내분비내과",
-  "안과",
   "외과",
+  "산부인과",
   "소아청소년과",
   "정신건강의학과",
   "혈액종양내과",
@@ -28,11 +28,15 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "산부인과": [],
+  "정형외과": [],
+  "안과": [],
   "류마티스내과": []
  },
  "notes": {
-  "산부인과": [],
+  "정형외과": [
+   "마지막 쪽 내용이 적다(4%)"
+  ],
+  "안과": [],
   "류마티스내과": []
  },
  "concept_errors": [
@@ -46,31 +50,44 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "산부인과": {
-   "tried": 150,
+  "정형외과": {
+   "tried": 48,
    "diagram_after_section": {
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk": 21,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#shrink": 1.0,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#pad": 0,
-    "u-cn-obgyn-functional-hypothalamic-amenorrhea-hypoestrogenic-risk#col": false,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication": 15,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#shrink": 1.0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#pad": 0,
-    "u-cn-obgyn-gestational-diabetes-insulin-indication#col": true,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category": 18,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#shrink": 1.0,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#pad": 28,
-    "u-cn-obgyn-intrapartum-fhr-nichd-category#col": false,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type": 4,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#shrink": 1.0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#pad": 0,
-    "u-cn-path-ovarian-mature-cystic-teratoma-malignant-transformation-type#col": false,
-    "u-cn-obgyn-hydatidiform-mole-diagnosis#figscale:f2": 0.85
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale": 30,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#shrink": 1.0,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#pad": 0,
+    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#col": false,
+    "u-cn-ortho-scfe-in-situ-fixation#figscale:f1": 0.85,
+    "u-cn-ortho-scfe-in-situ-fixation": 16,
+    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
+    "u-cn-ortho-scfe-in-situ-fixation#pad": 14,
+    "u-cn-ortho-scfe-in-situ-fixation#col": false
+   }
+  },
+  "안과": {
+   "tried": 75,
+   "diagram_after_section": {
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy": 10,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#shrink": 1.0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#pad": 0,
+    "u-cn-ophth-postop-endophthalmitis-tap-inject-vs-vitrectomy#col": false,
+    "u-cn-ophth-chemical-burn-immediate-irrigation": 15,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#shrink": 1.0,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#pad": 0,
+    "u-cn-ophth-chemical-burn-immediate-irrigation#col": true,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk": 13,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#shrink": 1.0,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#pad": 0,
+    "u-cn-ophth-crvo-neovascular-glaucoma-risk#col": true
    }
   },
   "류마티스내과": {
-   "tried": 229,
+   "tried": 248,
    "diagram_after_section": {
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 15,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#pad": 14,
+    "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#col": false,
     "u-cn-rheum-sle-mild-disease-hydroxychloroquine": 18,
     "u-cn-rheum-sle-mild-disease-hydroxychloroquine#shrink": 1.0,
     "u-cn-rheum-sle-mild-disease-hydroxychloroquine#pad": 28,
@@ -103,34 +120,42 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-07T10:06:56+09:00",
+ "finished": "2026-10-08T10:32:08+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "산부인과": {
-    "file": "MedKOS_학습서_산부인과.pdf",
+   "정형외과": {
+    "file": "MedKOS_학습서_정형외과.pdf",
     "status": "uploaded",
-    "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
+    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
     "kept_id": true,
-    "md5": "0d8e470af62e9a218ef81e88c53d75f6",
-    "archive": "MedKOS_학습서_산부인과_v10_2026-10-07.pdf"
+    "md5": "9cb8de7b5df5430ce0f88b2bde6001a7",
+    "archive": "MedKOS_학습서_정형외과_v12_2026-10-08.pdf"
+   },
+   "안과": {
+    "file": "MedKOS_학습서_안과.pdf",
+    "status": "uploaded",
+    "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
+    "kept_id": true,
+    "md5": "120d5ffd5d8b95feb277b530aaa454a5",
+    "archive": "MedKOS_학습서_안과_v10_2026-10-08.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "c5942ac677cf754f26e2990203f79a82",
-    "archive": "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf"
+    "md5": "26c2c757d901b03992ead8be1053ead2",
+    "archive": "MedKOS_학습서_류마티스내과_v16_2026-10-08.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "13fc667801e56c59b16b2885ca124c8b"
+    "md5": "54a671361260fcfff0127e709387bb45"
    }
   },
-  "at": "2026-10-07T10:06:56+09:00"
+  "at": "2026-10-08T10:32:08+09:00"
  }
 }
