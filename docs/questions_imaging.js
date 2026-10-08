@@ -2,6 +2,1357 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0273",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음",
+  "type": "응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "13세 남자가 4시간 전 자전거를 타다 넘어져 핸들에 왼쪽 윗배를 부딪힌 뒤 숨이 차서 응급실에 왔다. 혈압 110/70 mmHg, 맥박 118회/분, 호흡 32회/분, 산소포화도 90 %(대기)이다. 왼쪽 가슴의 호흡음이 줄어 있고 그 부위에서 장음이 들린다. 기관은 오른쪽으로 치우쳐 있다. 배는 약간 꺼져 보이고 왼쪽 윗배에 압통이 있다. 혈색소는 13.2 g/dL 이다. 흉부 X선은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "왼쪽 다섯째 갈비사이에 흉관을 넣는다",
+   "왼쪽 둘째 갈비사이에 바늘 감압을 한다",
+   "산소를 주고 6시간 뒤 흉부 X선을 다시 찍는다",
+   "기관지 내시경으로 왼쪽 주기관지를 확인한다",
+   "비위관을 넣어 감압한 뒤 응급 수술로 가로막을 교정한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: X선에서 왼쪽 흉곽 아래·중간에 폐 혈관 음영이 없는 장관 가스 음영이 올라와 있고 왼쪽 가로막 윤곽이 보이지 않으며 종격이 오른쪽으로 밀려 있다. 왼쪽 윗배 둔상 뒤 왼쪽 가슴에서 장음이 들리고 배가 꺼져 보이는 것은 외상성 가로막 탈장이다. 흉관이나 바늘을 넣으면 탈출한 위·대장을 뚫을 수 있으므로 피하고, 비위관으로 위를 감압해 종격 압박을 줄인 뒤 수술(대개 개복)로 장기를 되돌리고 가로막을 봉합한다.\n- 원리: <b>왜 왼쪽인가</b>: 복부 둔상으로 복강 압력이 갑자기 오르면 가장 약한 경계인 가로막이 찢어진다. 오른쪽은 간이 가로막 아래를 받쳐 충격을 흩고 탈출을 막지만, 왼쪽은 위·비장·대장이 바로 아래에 있어 찢어진 틈으로 흉강에 쉽게 밀려 올라간다. 그래서 둔상 가로막 손상은 왼쪽이 훨씬 흔하다.<br> <b>왜 숨이 차고 종격이 밀리는가</b>: 흉강 압력은 음압이라 복강 장기가 계속 빨려 올라온다. 장기가 왼쪽 폐를 누르고 종격을 오른쪽으로 밀어 오른쪽 폐의 환기와 정맥 환류까지 줄인다. 위에 공기가 차면 긴장성 기흉처럼 행동한다(긴장성 위흉).<br> <b>왜 흉관이 위험한가</b>: X선의 공기·액체 음영을 기흉·혈흉으로 오인해 흉관을 넣으면 탈출한 위·대장을 뚫어 흉강이 오염된다. 비위관이 흉강 안에서 말려 보이면 진단이 확정되고, 동시에 위 감압으로 압박을 줄인다. 가로막은 저절로 붙지 않고 장기가 교액될 수 있어 수술로 교정하며, 급성기 둔상에는 동반 복부 장기 손상을 보려고 개복을 흔히 택한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">외상성 가로막 탈장(이 환자)</th><th>혈기흉 — 흉관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>X선</td><td>흉곽 안 장관 가스·가로막 윤곽 소실</td><td>흉막선 바깥 공기·공기-액체 경계, 가로막은 보임</td></tr> <tr><td>청진·복부</td><td>가슴에서 장음, 배가 꺼져 보임</td><td>호흡음 감소만, 장음 없음</td></tr> <tr><td>처치</td><td>비위관 감압 → 수술적 교정</td><td>흉관 삽입</td></tr> </tbody></table> 흉곽 안 공기 음영에 장관의 주름·벽이 보이고 가로막 선이 끊겼으면, 흉관보다 비위관이 먼저다.\n- 오답 이유:\n  - ① 흉관 삽입은 혈흉·기흉의 처치다. 흉막선 바깥의 공기나 공기-액체 경계가 보이고 가로막 윤곽이 유지되었다면 정답이지만, 여기서는 탈출한 장을 뚫을 수 있다.\n  - ② 바늘 감압은 저혈압·목정맥 확장을 동반한 긴장성 기흉의 응급 처치다. 혈관 음영 없는 흉막 공기와 쇼크가 있었다면 적절하지만, 여기서는 위를 뚫을 위험이 있다.\n  - ③ 관찰 후 재촬영은 소견이 애매하고 증상이 없을 때나 고려한다. 저산소혈증·종격 전위가 있는 이 환자에서는 교액과 호흡 악화를 놓친다 — 무증상의 작은 소견이었다면 가능하다.\n  - ④ 기관지 내시경은 지속되는 대량 공기 누출이나 흉관 삽입 뒤에도 펴지지 않는 폐로 기관지 파열이 의심될 때 한다. 피하기종과 지속 공기 누출이 있었다면 정답에 가깝다.\n- 함정: 흉곽 안 공기 음영을 기흉으로 읽고 흉관을 넣는 것 — 가슴에서 장음이 들리고 가로막 윤곽이 없으면 가로막 탈장이다.\n- 학습목표: 복부 둔상 뒤 왼쪽 흉곽의 장관 가스와 가로막 소실로 외상성 가로막 탈장을 알아보고, 흉관을 넣지 않고 위 감압 후 수술함을 안다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (traumatic diaphragmatic injury — nasogastric tube, avoid chest tube) · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. The diaphragm / Ch. Thoracic trauma · PMC12335322 Figure 3 — case report of traumatic diaphragmatic hernia in a 13-year-old boy (teacher-only) · 작성자 판독(2026-10-09): 반좌위 흉부 X선, 왼쪽 흉곽 안 장관 가스·왼쪽 가로막 소실·종격 오른쪽 전위, 오른쪽 폐 반점상 음영\n\n## 출처\n- Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 왼쪽 흉곽 아래·중간에 폐 혈관 음영이 없는 장관 가스 음영이 올라와 있고 왼쪽 가로막 윤곽이 보이지 않으며 종격이 오른쪽으로 밀려 있다. 왼쪽 윗배 둔상 뒤 왼쪽 가슴에서 장음이 들리고 배가 꺼져 보이는 것은 외상성 가로막 탈장이다. 흉관이나 바늘을 넣으면 탈출한 위·대장을 뚫을 수 있으므로 피하고, 비위관으로 위를 감압해 종격 압박을 줄인 뒤 수술(대개 개복)로 장기를 되돌리고 가로막을 봉합한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 왼쪽인가</b>: 복부 둔상으로 복강 압력이 갑자기 오르면 가장 약한 경계인 가로막이 찢어진다. 오른쪽은 간이 가로막 아래를 받쳐 충격을 흩고 탈출을 막지만, 왼쪽은 위·비장·대장이 바로 아래에 있어 찢어진 틈으로 흉강에 쉽게 밀려 올라간다. 그래서 둔상 가로막 손상은 왼쪽이 훨씬 흔하다.<br> <b>왜 숨이 차고 종격이 밀리는가</b>: 흉강 압력은 음압이라 복강 장기가 계속 빨려 올라온다. 장기가 왼쪽 폐를 누르고 종격을 오른쪽으로 밀어 오른쪽 폐의 환기와 정맥 환류까지 줄인다. 위에 공기가 차면 긴장성 기흉처럼 행동한다(긴장성 위흉).<br> <b>왜 흉관이 위험한가</b>: X선의 공기·액체 음영을 기흉·혈흉으로 오인해 흉관을 넣으면 탈출한 위·대장을 뚫어 흉강이 오염된다. 비위관이 흉강 안에서 말려 보이면 진단이 확정되고, 동시에 위 감압으로 압박을 줄인다. 가로막은 저절로 붙지 않고 장기가 교액될 수 있어 수술로 교정하며, 급성기 둔상에는 동반 복부 장기 손상을 보려고 개복을 흔히 택한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">외상성 가로막 탈장(이 환자)</th><th>혈기흉 — 흉관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>X선</td><td>흉곽 안 장관 가스·가로막 윤곽 소실</td><td>흉막선 바깥 공기·공기-액체 경계, 가로막은 보임</td></tr> <tr><td>청진·복부</td><td>가슴에서 장음, 배가 꺼져 보임</td><td>호흡음 감소만, 장음 없음</td></tr> <tr><td>처치</td><td>비위관 감압 → 수술적 교정</td><td>흉관 삽입</td></tr> </tbody></table> 흉곽 안 공기 음영에 장관의 주름·벽이 보이고 가로막 선이 끊겼으면, 흉관보다 비위관이 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 흉관 삽입은 혈흉·기흉의 처치다. 흉막선 바깥의 공기나 공기-액체 경계가 보이고 가로막 윤곽이 유지되었다면 정답이지만, 여기서는 탈출한 장을 뚫을 수 있다.\n② 바늘 감압은 저혈압·목정맥 확장을 동반한 긴장성 기흉의 응급 처치다. 혈관 음영 없는 흉막 공기와 쇼크가 있었다면 적절하지만, 여기서는 위를 뚫을 위험이 있다.\n③ 관찰 후 재촬영은 소견이 애매하고 증상이 없을 때나 고려한다. 저산소혈증·종격 전위가 있는 이 환자에서는 교액과 호흡 악화를 놓친다 — 무증상의 작은 소견이었다면 가능하다.\n④ 기관지 내시경은 지속되는 대량 공기 누출이나 흉관 삽입 뒤에도 펴지지 않는 폐로 기관지 파열이 의심될 때 한다. 피하기종과 지속 공기 누출이 있었다면 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "흉곽 안 공기 음영을 기흉으로 읽고 흉관을 넣는 것 — 가슴에서 장음이 들리고 가로막 윤곽이 없으면 가로막 탈장이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "복부 둔상 뒤 왼쪽 흉곽의 장관 가스와 가로막 소실로 외상성 가로막 탈장을 알아보고, 흉관을 넣지 않고 위 감압 후 수술함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (traumatic diaphragmatic injury — nasogastric tube, avoid chest tube) · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. The diaphragm / Ch. Thoracic trauma · PMC12335322 Figure 3 — case report of traumatic diaphragmatic hernia in a 13-year-old boy (teacher-only) · 작성자 판독(2026-10-09): 반좌위 흉부 X선, 왼쪽 흉곽 안 장관 가스·왼쪽 가로막 소실·종격 오른쪽 전위, 오른쪽 폐 반점상 음영 ## 출처 Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "왼쪽 윗배 둔상 뒤 왼쪽 흉곽의 장관 가스·가로막 소실·가슴의 장음은 외상성 가로막 탈장이므로 흉관을 피하고 비위관 감압 뒤 수술한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "흉곽 안 공기 음영이 장관 모양이고 가로막 윤곽이 없으며 가슴에서 장음이 들린다",
+   "steps": 3,
+   "chain": [
+    "영상: 왼쪽 흉곽 안 장관 가스 + 왼쪽 가로막 윤곽 소실 + 종격 오른쪽 전위",
+    "왼쪽 윗배 둔상·가슴의 장음·꺼진 배 → 외상성 가로막 탈장(기흉이 아님)",
+    "흉관은 탈출한 장을 뚫으므로 피함 → 비위관 감압 뒤 수술적 교정"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 흉곽 안의 장관 가스 음영과 왼쪽 가로막 윤곽 소실",
+     "why": "복강 장기가 흉강으로 올라왔다",
+     "also": []
+    },
+    {
+     "item": "그 부위에서 장음이 들린다",
+     "why": "흉강 안의 장 — 가로막 탈장",
+     "also": []
+    },
+    {
+     "item": "핸들에 왼쪽 윗배를 부딪힌 뒤",
+     "why": "복강 압력 급상승 — 왼쪽 가로막 파열의 기전",
+     "also": []
+    },
+    {
+     "item": "배는 약간 꺼져 보이고",
+     "why": "복강 장기가 빠져나간 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈색소는 13.2 g/dL",
+     "why": "대량 혈흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈압 110/70 mmHg",
+     "why": "쇼크가 없어 긴장성 기흉의 바늘 감압이 급하지 않다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "기관은 오른쪽으로 치우쳐 있다",
+     "why": "종격 압박 — 위 감압과 빠른 교정이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "왼쪽 윗배 둔상 뒤 왼쪽 흉곽 안 장관 가스·가로막 소실·가슴의 장음이 있어 외상성 가로막 탈장이다. 흉관은 장을 뚫으므로 피하고 비위관으로 감압한 뒤 수술로 교정한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "가로막 윤곽이 보이고 흉막선 바깥 공기와 공기-액체 경계(혈기흉)만 있었다면 흉관 삽입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0273.jpg",
+   "caption": "반좌위 전후면 흉부 X선, 글자·좌우 표지는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12335322/",
+   "asset_id": "PMC-PMC12335322_Figure3",
+   "text": "Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0272",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승",
+  "type": "신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "A 39-year-old man comes to the emergency department because of abdominal pain and distension for 3 days. Three days ago, he fell at home after drinking heavily, striking his lower abdomen on the edge of a table. Since then he has passed only small amounts of urine. His temperature is 37.4°C, pulse is 104/min, and blood pressure is 118/74 mm Hg. The abdomen is distended with diffuse tenderness and shifting dullness. There is no blood at the urethral meatus. Serum urea nitrogen concentration is 62 mg/dL, and serum creatinine concentration is 3.4 mg/dL; one year ago, the creatinine concentration was 0.9 mg/dL. Creatinine concentration in fluid obtained by paracentesis is much higher than that in serum. Pelvic radiographs show no fracture. Contrast-enhanced CT of the abdomen and pelvis is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Repeated large-volume paracentesis",
+   "Bilateral percutaneous nephrostomy",
+   "Surgical repair of the bladder",
+   "Urethral catheter drainage alone for 2 weeks",
+   "Hemodialysis"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The CT shows a defect in the dome of the bladder wall with a large amount of free fluid around the bowel loops and in the pelvis. Ascitic fluid with a creatinine concentration far higher than serum is urine. A blow to a full bladder in an intoxicated man ruptures the dome, the weakest part covered by peritoneum, and urine leaks into the peritoneal cavity. The peritoneum reabsorbs urea and creatinine, raising serum values (pseudo-renal failure) even though the kidneys are normal. An intraperitoneal rupture does not heal with catheter drainage alone and requires operative repair.\n- 원리: <b>Why the dome ruptures</b>: when the bladder is full it rises out of the pelvis and its dome, the only part covered by peritoneum and the thinnest, faces the abdominal wall. A sudden rise in pressure from a blow bursts it like a balloon — typically in an intoxicated person whose full bladder and lax abdominal wall offer no protection. Extraperitoneal rupture, by contrast, is caused by pelvic fractures in which bone fragments or ligament shear tear the anterolateral bladder wall below the peritoneal reflection.<br> <b>Why the creatinine rises</b>: the peritoneum is a large semipermeable membrane (the basis of peritoneal dialysis). Urine in the peritoneal cavity allows urea, creatinine and potassium to diffuse back into the blood, so serum concentrations rise and look like acute kidney injury. Ascitic creatinine higher than serum creatinine identifies the fluid as urine, and serum values fall quickly after repair.<br> <b>Why surgery</b>: the dome defect is usually large, urine continues to flow into the peritoneum regardless of a catheter, and urinary ascites causes peritonitis and sepsis. Intraperitoneal rupture is repaired surgically (laparotomy or laparoscopy) with catheter drainage afterward; most uncomplicated extraperitoneal ruptures heal with catheter drainage alone.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Intraperitoneal rupture (this patient)</th><th>Extraperitoneal rupture (closest distractor: catheter alone)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Blow to a full bladder</td><td>Pelvic fracture</td></tr> <tr><td>Site and leak</td><td>Dome; urine among bowel loops, paracolic gutters</td><td>Anterolateral wall; contrast in perivesical space</td></tr> <tr><td>Treatment</td><td>Surgical repair</td><td>Urethral catheter drainage for about 2 weeks</td></tr> </tbody></table> The site of leakage — peritoneal cavity or perivesical tissue — decides the treatment, not the size of the injury on the first look.\n- 오답 이유:\n  - (A) Large-volume paracentesis treats tense ascites of cirrhosis; it would fit if the fluid had a serum-ascites albumin gradient above 1.1 g/dL and creatinine equal to serum, but here urine keeps leaking.\n  - (B) Percutaneous nephrostomy relieves upper-tract obstruction; it would be appropriate for bilateral hydronephrosis from ureteral obstruction, which would not cause urine in the peritoneum.\n  - (D) Catheter drainage alone is the standard treatment for uncomplicated extraperitoneal rupture after pelvic fracture; it would be correct if contrast extravasation were confined to the perivesical space.\n  - (E) Hemodialysis treats true acute kidney injury with refractory hyperkalemia, acidosis or volume overload; here the creatinine is high because urine is reabsorbed from the peritoneum and falls once the leak is repaired.\n- 함정: Reading the raised creatinine as acute kidney injury needing dialysis, or treating the rupture like an extraperitoneal one with a catheter alone.\n- 학습목표: 복강 내 방광 파열을 알아보고, 복막의 소변 재흡수로 생긴 가성 신부전과 수술적 봉합이 필요함을 안다\n- 근거·출처: Morey AF, et al. Urotrauma: AUA guideline. J Urol 2014;192:327-335 (intraperitoneal bladder rupture — surgical repair) · Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. Lower urinary tract trauma · PMC12331415 Figure 1 — case report of intraperitoneal bladder rupture after a ground-level fall (teacher-only) · 작성자 판독(2026-10-09): 복부·골반 관상 CT, 방광 꼭대기 벽 결손과 복강 내 다량 액체, 골반골 골절 없음\n\n## 출처\n- Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a defect in the dome of the bladder wall with a large amount of free fluid around the bowel loops and in the pelvis. Ascitic fluid with a creatinine concentration far higher than serum is urine. A blow to a full bladder in an intoxicated man ruptures the dome, the weakest part covered by peritoneum, and urine leaks into the peritoneal cavity. The peritoneum reabsorbs urea and creatinine, raising serum values (pseudo-renal failure) even though the kidneys are normal. An intraperitoneal rupture does not heal with catheter drainage alone and requires operative repair."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the dome ruptures</b>: when the bladder is full it rises out of the pelvis and its dome, the only part covered by peritoneum and the thinnest, faces the abdominal wall. A sudden rise in pressure from a blow bursts it like a balloon — typically in an intoxicated person whose full bladder and lax abdominal wall offer no protection. Extraperitoneal rupture, by contrast, is caused by pelvic fractures in which bone fragments or ligament shear tear the anterolateral bladder wall below the peritoneal reflection.<br> <b>Why the creatinine rises</b>: the peritoneum is a large semipermeable membrane (the basis of peritoneal dialysis). Urine in the peritoneal cavity allows urea, creatinine and potassium to diffuse back into the blood, so serum concentrations rise and look like acute kidney injury. Ascitic creatinine higher than serum creatinine identifies the fluid as urine, and serum values fall quickly after repair.<br> <b>Why surgery</b>: the dome defect is usually large, urine continues to flow into the peritoneum regardless of a catheter, and urinary ascites causes peritonitis and sepsis. Intraperitoneal rupture is repaired surgically (laparotomy or laparoscopy) with catheter drainage afterward; most uncomplicated extraperitoneal ruptures heal with catheter drainage alone."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Intraperitoneal rupture (this patient)</th><th>Extraperitoneal rupture (closest distractor: catheter alone)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Blow to a full bladder</td><td>Pelvic fracture</td></tr> <tr><td>Site and leak</td><td>Dome; urine among bowel loops, paracolic gutters</td><td>Anterolateral wall; contrast in perivesical space</td></tr> <tr><td>Treatment</td><td>Surgical repair</td><td>Urethral catheter drainage for about 2 weeks</td></tr> </tbody></table> The site of leakage — peritoneal cavity or perivesical tissue — decides the treatment, not the size of the injury on the first look."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Large-volume paracentesis treats tense ascites of cirrhosis; it would fit if the fluid had a serum-ascites albumin gradient above 1.1 g/dL and creatinine equal to serum, but here urine keeps leaking.\n(B) Percutaneous nephrostomy relieves upper-tract obstruction; it would be appropriate for bilateral hydronephrosis from ureteral obstruction, which would not cause urine in the peritoneum.\n(D) Catheter drainage alone is the standard treatment for uncomplicated extraperitoneal rupture after pelvic fracture; it would be correct if contrast extravasation were confined to the perivesical space.\n(E) Hemodialysis treats true acute kidney injury with refractory hyperkalemia, acidosis or volume overload; here the creatinine is high because urine is reabsorbed from the peritoneum and falls once the leak is repaired."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the raised creatinine as acute kidney injury needing dialysis, or treating the rupture like an extraperitoneal one with a catheter alone."
+   },
+   {
+    "k": "학습목표",
+    "v": "복강 내 방광 파열을 알아보고, 복막의 소변 재흡수로 생긴 가성 신부전과 수술적 봉합이 필요함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morey AF, et al. Urotrauma: AUA guideline. J Urol 2014;192:327-335 (intraperitoneal bladder rupture — surgical repair) · Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. Lower urinary tract trauma · PMC12331415 Figure 1 — case report of intraperitoneal bladder rupture after a ground-level fall (teacher-only) · 작성자 판독(2026-10-09): 복부·골반 관상 CT, 방광 꼭대기 벽 결손과 복강 내 다량 액체, 골반골 골절 없음 ## 출처 Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "방광 꼭대기 결손과 복강 내 액체, 혈청보다 높은 복수 크레아티닌은 복강 내 방광 파열이므로 수술로 봉합한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "소변이 방광 주위가 아니라 복강 안(장 고리 사이)에 있고 골반골 골절이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 방광 꼭대기 벽 결손 + 복강 내 다량 액체",
+    "복수 크레아티닌 > 혈청 → 복수는 소변, 혈청 크레아티닌 상승은 복막 재흡수",
+    "복강 내 파열 → 카테터만으로 낫지 않으므로 수술적 봉합"
+   ],
+   "key": [
+    {
+     "item": "영상: 방광 꼭대기 벽의 결손과 장 고리 사이의 다량 액체",
+     "why": "복강 내 방광 파열",
+     "also": []
+    },
+    {
+     "item": "Creatinine concentration in fluid obtained by paracentesis is much higher than that in serum",
+     "why": "복수가 소변이다",
+     "also": []
+    },
+    {
+     "item": "he fell at home after drinking heavily, striking his lower abdomen",
+     "why": "찬 방광에 가해진 둔상 — 꼭대기 파열의 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Pelvic radiographs show no fracture",
+     "why": "골반 골절에 의한 복막외 파열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no blood at the urethral meatus",
+     "why": "요도 손상 가능성을 낮춘다 — 요도 카테터를 넣을 수 있다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "one year ago, the creatinine concentration was 0.9 mg/dL",
+     "why": "원래 콩팥 기능이 정상 — 투석보다 원인 교정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "pulse is 104/min",
+     "why": "통증·복막 자극으로 설명되는 빈맥 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "술 취한 남자가 아랫배를 부딪힌 뒤 복수와 크레아티닌 상승이 생겼다. CT 의 방광 꼭대기 결손과 혈청보다 높은 복수 크레아티닌은 복강 내 방광 파열이므로 수술로 봉합한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "골반 골절이 있고 조영제가 방광 주위 공간에만 새었다면 복막외 파열로 보고 요도 카테터 배액만 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0272.jpg",
+   "caption": "Contrast-enhanced coronal CT of the abdomen and pelvis — single-panel figure as published, arrow as in the original (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12331415/",
+   "asset_id": "PMC-PMC12331415_Figure1",
+   "text": "Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0271",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장",
+  "type": "응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "33세 남자가 2일 전부터 숨이 차고 어지러워 응급실에 왔다. 15일 전 오토바이 사고로 가슴을 부딪혔고, 당시 갈비뼈 골절 외에 특별한 손상이 없어 퇴원하였다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8 °C 이다. 앉은 자세에서 목정맥이 확장되어 있고 심음이 작게 들린다. 들숨 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐의 호흡음은 대칭적이다. 혈색소는 12.8 g/dL 이다. 흉부 CT 는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "정맥 이뇨제 투여",
+   "정맥 혈전용해제 투여",
+   "응급 관상동맥조영술",
+   "초음파 유도 심낭천자",
+   "양쪽 흉관 삽입"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: CT 에서 심장 둘레 전체를 넓은 고리 모양의 액체가 감싸고 있다(대량 심낭 삼출). 저혈압·빈맥·목정맥 확장·작은 심음(Beck 3징후)과 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥이 있어 심장눌림증이다. 흉부 둔상 뒤 몇 주에 걸쳐 심낭 삼출이 천천히 늘어 지연성으로 생길 수 있다. 쇼크를 동반한 심장눌림증은 즉시 심낭천자로 액체를 빼서 압력을 낮춘다.\n- 원리: <b>왜 액체가 심장을 멈추게 하는가</b>: 심낭은 잘 늘어나지 않는 섬유막이다. 액체가 천천히 차면 심낭이 늘어나 꽤 많은 양을 견디지만, 한계를 넘으면 심낭 압력이 급히 올라 심방·심실의 이완기 압력과 같아진다. 그러면 심장이 이완기에 충분히 채워지지 못해 일회박출량이 줄고, 빈맥으로 버티다 저혈압에 이른다.<br> <b>왜 기이맥이 생기는가</b>: 들숨 때 흉강 압력이 낮아져 우심실로 들어오는 혈액이 늘어난다. 심낭이 꽉 차 있으면 우심실은 바깥으로 늘어날 수 없어 심실중격을 왼쪽으로 민다(심실 상호의존). 좌심실 충만이 줄어 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>그래서 처치</b>: 수액은 잠깐 충만압을 올려 버티게 할 뿐이고, 이뇨제·혈관확장제는 충만압을 낮춰 오히려 쇼크를 악화한다. 액체를 빼면 몇십 mL 만으로도 압력이 급히 떨어지므로 초음파 유도 심낭천자가 첫 처치이고, 응고된 혈액이나 계속되는 출혈이면 수술적 심낭 창을 낸다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>혈흉 — 흉관 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 의 주 소견</td><td>심장 둘레 전체의 대량 액체</td><td>한쪽 흉강 아래의 대량 액체, 폐 허탈</td></tr> <tr><td>진찰</td><td>목정맥 확장·작은 심음·기이맥, 호흡음 대칭</td><td>한쪽 호흡음 감소·타진 둔탁, 목정맥은 대개 허탈</td></tr> <tr><td>혈색소</td><td>유지될 수 있음</td><td>출혈로 떨어짐</td></tr> </tbody></table> CT 에 양쪽 소량 흉수가 함께 보여도, 쇼크의 원인은 심장을 감싼 액체다 — 목정맥이 부풀어 있으면 혈액량 부족이 아니라 충만 장애다.\n- 오답 이유:\n  - ① 정맥 이뇨제는 폐부종을 동반한 울혈 심부전에 쓴다. 심장눌림증에서는 충만압을 낮춰 심박출량이 더 떨어지므로, 심낭 삼출 없이 폐부종만 있을 때에야 맞는 선택이다.\n  - ② 혈전용해제는 쇼크를 동반한 고위험 폐색전증의 치료다. CT 폐동맥에 충만 결손이 보이고 심낭 삼출이 없었다면 고려하지만, 외상 뒤 출혈 위험도 크다.\n  - ③ 응급 관상동맥조영술은 ST 분절 상승 심근경색이나 외상성 관상동맥 박리가 의심될 때 한다. 심전도 ST 상승과 국소 벽운동 이상이 있었다면 정답에 가까워진다.\n  - ⑤ 흉관 삽입은 한쪽 호흡음이 줄고 혈색소가 떨어지는 대량 혈흉·긴장성 기흉의 처치다. 이 환자의 흉수는 소량이고 호흡음이 대칭이라 쇼크를 설명하지 못한다.\n- 함정: CT 에 함께 보이는 양쪽 소량 흉수에 끌려 흉관을 넣는 것 — 쇼크와 목정맥 확장의 원인은 심장을 감싼 대량 심낭 삼출이다.\n- 학습목표: 흉부 둔상 뒤 지연성으로 생긴 대량 심낭 삼출과 심장눌림증을 알아보고 심낭천자로 감압함을 안다\n- 근거·출처: Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 (cardiac tamponade — urgent pericardiocentesis) · American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (cardiac tamponade) · PMC12045655 Figure 4 — case report of delayed tamponade after blunt chest trauma (teacher-only) · 작성자 판독(2026-10-09): 흉부 CT 축상, 심장 둘레 전체의 대량 심낭 삼출, 양측 소량 흉수\n\n## 출처\n- Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 심장 둘레 전체를 넓은 고리 모양의 액체가 감싸고 있다(대량 심낭 삼출). 저혈압·빈맥·목정맥 확장·작은 심음(Beck 3징후)과 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥이 있어 심장눌림증이다. 흉부 둔상 뒤 몇 주에 걸쳐 심낭 삼출이 천천히 늘어 지연성으로 생길 수 있다. 쇼크를 동반한 심장눌림증은 즉시 심낭천자로 액체를 빼서 압력을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 액체가 심장을 멈추게 하는가</b>: 심낭은 잘 늘어나지 않는 섬유막이다. 액체가 천천히 차면 심낭이 늘어나 꽤 많은 양을 견디지만, 한계를 넘으면 심낭 압력이 급히 올라 심방·심실의 이완기 압력과 같아진다. 그러면 심장이 이완기에 충분히 채워지지 못해 일회박출량이 줄고, 빈맥으로 버티다 저혈압에 이른다.<br> <b>왜 기이맥이 생기는가</b>: 들숨 때 흉강 압력이 낮아져 우심실로 들어오는 혈액이 늘어난다. 심낭이 꽉 차 있으면 우심실은 바깥으로 늘어날 수 없어 심실중격을 왼쪽으로 민다(심실 상호의존). 좌심실 충만이 줄어 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>그래서 처치</b>: 수액은 잠깐 충만압을 올려 버티게 할 뿐이고, 이뇨제·혈관확장제는 충만압을 낮춰 오히려 쇼크를 악화한다. 액체를 빼면 몇십 mL 만으로도 압력이 급히 떨어지므로 초음파 유도 심낭천자가 첫 처치이고, 응고된 혈액이나 계속되는 출혈이면 수술적 심낭 창을 낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>혈흉 — 흉관 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 의 주 소견</td><td>심장 둘레 전체의 대량 액체</td><td>한쪽 흉강 아래의 대량 액체, 폐 허탈</td></tr> <tr><td>진찰</td><td>목정맥 확장·작은 심음·기이맥, 호흡음 대칭</td><td>한쪽 호흡음 감소·타진 둔탁, 목정맥은 대개 허탈</td></tr> <tr><td>혈색소</td><td>유지될 수 있음</td><td>출혈로 떨어짐</td></tr> </tbody></table> CT 에 양쪽 소량 흉수가 함께 보여도, 쇼크의 원인은 심장을 감싼 액체다 — 목정맥이 부풀어 있으면 혈액량 부족이 아니라 충만 장애다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정맥 이뇨제는 폐부종을 동반한 울혈 심부전에 쓴다. 심장눌림증에서는 충만압을 낮춰 심박출량이 더 떨어지므로, 심낭 삼출 없이 폐부종만 있을 때에야 맞는 선택이다.\n② 혈전용해제는 쇼크를 동반한 고위험 폐색전증의 치료다. CT 폐동맥에 충만 결손이 보이고 심낭 삼출이 없었다면 고려하지만, 외상 뒤 출혈 위험도 크다.\n③ 응급 관상동맥조영술은 ST 분절 상승 심근경색이나 외상성 관상동맥 박리가 의심될 때 한다. 심전도 ST 상승과 국소 벽운동 이상이 있었다면 정답에 가까워진다.\n⑤ 흉관 삽입은 한쪽 호흡음이 줄고 혈색소가 떨어지는 대량 혈흉·긴장성 기흉의 처치다. 이 환자의 흉수는 소량이고 호흡음이 대칭이라 쇼크를 설명하지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "CT 에 함께 보이는 양쪽 소량 흉수에 끌려 흉관을 넣는 것 — 쇼크와 목정맥 확장의 원인은 심장을 감싼 대량 심낭 삼출이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 둔상 뒤 지연성으로 생긴 대량 심낭 삼출과 심장눌림증을 알아보고 심낭천자로 감압함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 (cardiac tamponade — urgent pericardiocentesis) · American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (cardiac tamponade) · PMC12045655 Figure 4 — case report of delayed tamponade after blunt chest trauma (teacher-only) · 작성자 판독(2026-10-09): 흉부 CT 축상, 심장 둘레 전체의 대량 심낭 삼출, 양측 소량 흉수 ## 출처 Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "흉부 둔상 2주 뒤 쇼크·목정맥 확장·작은 심음·기이맥과 CT 의 대량 심낭 삼출은 심장눌림증이므로 즉시 심낭천자로 감압한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "호흡음이 대칭이고 흉수가 소량이며 목정맥이 확장되어 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 심장 둘레 전체의 대량 심낭 삼출 + Beck 3징후·기이맥 → 심장눌림증",
+    "쇼크를 동반 → 즉시 심낭천자로 감압"
+   ],
+   "key": [
+    {
+     "item": "영상: 심장 둘레 전체를 감싸는 넓은 고리 모양 액체",
+     "why": "대량 심낭 삼출",
+     "also": []
+    },
+    {
+     "item": "혈압 82/60 mmHg, 맥박 124회/분",
+     "why": "쇼크 — 즉시 감압이 필요하다",
+     "also": []
+    },
+    {
+     "item": "목정맥이 확장되어 있고 심음이 작게 들린다",
+     "why": "Beck 3징후의 나머지 둘 — 충만 장애",
+     "also": []
+    },
+    {
+     "item": "들숨 때 수축기 혈압이 18 mmHg 떨어진다",
+     "why": "기이맥 — 심장눌림증의 생리",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 폐의 호흡음은 대칭적이다",
+     "why": "대량 혈흉·긴장성 기흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈색소는 12.8 g/dL",
+     "why": "대량 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "15일 전 오토바이 사고로 가슴을 부딪혔고",
+     "why": "지연성 심낭 삼출의 원인 — 처치 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 둔상 2주 뒤 쇼크·목정맥 확장·작은 심음·기이맥이 있고 CT 에서 심장을 감싼 대량 심낭 삼출이 보인다. 심장눌림증이므로 즉시 심낭천자로 감압한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "한쪽 호흡음이 줄고 혈색소가 떨어지며 CT 에서 한쪽 흉강의 대량 액체가 보였다면 흉관 삽입이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0271.jpg",
+   "caption": "흉부 조영증강 CT 축상면 — 출판된 증례 그림 한 컷 그대로, 화살표는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12045655/",
+   "asset_id": "PMC-PMC12045655_Figure4",
+   "text": "Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0270",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도",
+  "type": "순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 78-year-old woman comes to the physician because of progressive shortness of breath on exertion and ankle swelling for 6 months. Two years ago, she underwent surgery for bilateral carpal tunnel syndrome. She has no history of hypertension, and her blood pressure has been 110 to 120/70 mm Hg at previous visits. Today, her blood pressure is 108/68 mm Hg, and pulse is 82/min and irregular. Jugular venous pressure is elevated, and there is 2+ pitting edema of both ankles. No murmur is heard. Serum N-terminal pro-B-type natriuretic peptide concentration is increased. Echocardiography shows a left ventricular wall thickness of 17 mm, a left ventricular ejection fraction of 55%, and biatrial enlargement; the aortic valve opens normally. An ECG is shown.",
+  "question": "Which of the following is the most likely cause of this patient's heart failure?",
+  "options": [
+   "Constrictive pericarditis",
+   "Aortic stenosis",
+   "Transthyretin cardiac amyloidosis",
+   "Hypertensive heart disease",
+   "Hypertrophic cardiomyopathy"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The ECG shows atrial fibrillation (irregularly irregular RR intervals without P waves) and low QRS voltage in all limb leads (each under 5 mm), while echocardiography shows a 17-mm-thick left ventricular wall. A thick wall on echocardiography with low voltage on the ECG is a voltage-mass mismatch: the wall is thick not because myocytes have grown but because something non-conducting has infiltrated it. In an elderly patient with heart failure with preserved ejection fraction, biatrial enlargement and a history of bilateral carpal tunnel syndrome, the most likely infiltrate is transthyretin amyloid.\n- 원리: <b>Why voltage and wall thickness normally move together</b>: QRS voltage is generated by depolarizing myocytes. In pressure-overload hypertrophy (hypertension, aortic stenosis) and in hypertrophic cardiomyopathy each myocyte enlarges, so the wall thickens and the ECG shows high voltage (LVH criteria).<br> <b>Why amyloid breaks the rule</b>: in amyloidosis misfolded protein fibrils are deposited between myocytes. The wall becomes thick and stiff, but the extra mass is electrically silent, and the fibrils also separate and injure the myocytes that remain. The result is a thick wall with low or normal voltage, restrictive filling with preserved ejection fraction, biatrial enlargement and frequent atrial fibrillation.<br> <b>Why transthyretin</b>: wild-type transthyretin amyloid accumulates with age, especially in men but also in elderly women; it is deposited early in the transverse carpal ligament, so bilateral carpal tunnel syndrome often precedes heart failure by years. The diagnosis is made noninvasively with bone-tracer scintigraphy (99mTc-pyrophosphate) after a monoclonal protein is excluded by serum and urine immunofixation and free light chains (to rule out AL amyloid). Tafamidis stabilizes the transthyretin tetramer and reduces mortality.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transthyretin cardiac amyloidosis (correct)</th><th>Hypertensive heart disease (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure history</td><td>Normal or low — 110 to 120/70 mm Hg</td><td>Long-standing hypertension</td></tr> <tr><td>ECG voltage vs wall thickness</td><td>Low voltage despite a 17-mm wall (mismatch)</td><td>High voltage proportional to the thick wall</td></tr> <tr><td>Extracardiac clue</td><td>Bilateral carpal tunnel syndrome</td><td>Hypertensive retinopathy, kidney disease</td></tr> </tbody></table> Whenever the wall is thick, read the voltage: concordant high voltage means myocyte hypertrophy, low voltage means infiltration.\n- 오답 이유:\n  - (A) Constrictive pericarditis also causes preserved ejection fraction and elevated venous pressure, but the wall thickness is normal; it would be favored by prior cardiac surgery or radiation, a thick pericardium and a pericardial knock.\n  - (B) Aortic stenosis causes concentric hypertrophy in the elderly; it would be the answer with a harsh systolic ejection murmur and a calcified valve with reduced opening on echocardiography.\n  - (D) Hypertensive heart disease thickens the wall by myocyte hypertrophy and raises QRS voltage; it would be likely with long-standing hypertension and LVH voltage criteria on the ECG.\n  - (E) Hypertrophic cardiomyopathy usually shows high voltage and deep T-wave inversions with asymmetric septal hypertrophy; it would be favored in a younger patient with a family history and an outflow murmur.\n- 함정: Attributing a thick left ventricle in an elderly patient to hypertension without checking the ECG voltage — low voltage with a thick wall points to amyloid.\n- 학습목표: 좌심실 벽이 두꺼운데 QRS 전위가 낮은 불일치가 침윤성 심근병증(아밀로이드증)을 시사함을 안다\n- 근거·출처: Arbelo E, et al. 2023 ESC Guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503-3626 (cardiac amyloidosis — red flags, diagnostic algorithm) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Amyloidosis; Ch. Cardiomyopathy and myocarditis · Chapman-Shaoxing/Ningbo 12-lead ECG database — expert label AF + low QRS voltage (teacher-only) · 작성자 판독(2026-10-09): 리듬 띠 II 불규칙하게 불규칙한 RR·P 파 없음(약 80회/분), 사지유도 QRS 모두 5 mm 미만, 흉부유도 보존\n\n## 출처\n- Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ecg-arrhythmia/1.0.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows atrial fibrillation (irregularly irregular RR intervals without P waves) and low QRS voltage in all limb leads (each under 5 mm), while echocardiography shows a 17-mm-thick left ventricular wall. A thick wall on echocardiography with low voltage on the ECG is a voltage-mass mismatch: the wall is thick not because myocytes have grown but because something non-conducting has infiltrated it. In an elderly patient with heart failure with preserved ejection fraction, biatrial enlargement and a history of bilateral carpal tunnel syndrome, the most likely infiltrate is transthyretin amyloid."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why voltage and wall thickness normally move together</b>: QRS voltage is generated by depolarizing myocytes. In pressure-overload hypertrophy (hypertension, aortic stenosis) and in hypertrophic cardiomyopathy each myocyte enlarges, so the wall thickens and the ECG shows high voltage (LVH criteria).<br> <b>Why amyloid breaks the rule</b>: in amyloidosis misfolded protein fibrils are deposited between myocytes. The wall becomes thick and stiff, but the extra mass is electrically silent, and the fibrils also separate and injure the myocytes that remain. The result is a thick wall with low or normal voltage, restrictive filling with preserved ejection fraction, biatrial enlargement and frequent atrial fibrillation.<br> <b>Why transthyretin</b>: wild-type transthyretin amyloid accumulates with age, especially in men but also in elderly women; it is deposited early in the transverse carpal ligament, so bilateral carpal tunnel syndrome often precedes heart failure by years. The diagnosis is made noninvasively with bone-tracer scintigraphy (99mTc-pyrophosphate) after a monoclonal protein is excluded by serum and urine immunofixation and free light chains (to rule out AL amyloid). Tafamidis stabilizes the transthyretin tetramer and reduces mortality."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transthyretin cardiac amyloidosis (correct)</th><th>Hypertensive heart disease (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure history</td><td>Normal or low — 110 to 120/70 mm Hg</td><td>Long-standing hypertension</td></tr> <tr><td>ECG voltage vs wall thickness</td><td>Low voltage despite a 17-mm wall (mismatch)</td><td>High voltage proportional to the thick wall</td></tr> <tr><td>Extracardiac clue</td><td>Bilateral carpal tunnel syndrome</td><td>Hypertensive retinopathy, kidney disease</td></tr> </tbody></table> Whenever the wall is thick, read the voltage: concordant high voltage means myocyte hypertrophy, low voltage means infiltration."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Constrictive pericarditis also causes preserved ejection fraction and elevated venous pressure, but the wall thickness is normal; it would be favored by prior cardiac surgery or radiation, a thick pericardium and a pericardial knock.\n(B) Aortic stenosis causes concentric hypertrophy in the elderly; it would be the answer with a harsh systolic ejection murmur and a calcified valve with reduced opening on echocardiography.\n(D) Hypertensive heart disease thickens the wall by myocyte hypertrophy and raises QRS voltage; it would be likely with long-standing hypertension and LVH voltage criteria on the ECG.\n(E) Hypertrophic cardiomyopathy usually shows high voltage and deep T-wave inversions with asymmetric septal hypertrophy; it would be favored in a younger patient with a family history and an outflow murmur."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing a thick left ventricle in an elderly patient to hypertension without checking the ECG voltage — low voltage with a thick wall points to amyloid."
+   },
+   {
+    "k": "학습목표",
+    "v": "좌심실 벽이 두꺼운데 QRS 전위가 낮은 불일치가 침윤성 심근병증(아밀로이드증)을 시사함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Arbelo E, et al. 2023 ESC Guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503-3626 (cardiac amyloidosis — red flags, diagnostic algorithm) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Amyloidosis; Ch. Cardiomyopathy and myocarditis · Chapman-Shaoxing/Ningbo 12-lead ECG database — expert label AF + low QRS voltage (teacher-only) · 작성자 판독(2026-10-09): 리듬 띠 II 불규칙하게 불규칙한 RR·P 파 없음(약 80회/분), 사지유도 QRS 모두 5 mm 미만, 흉부유도 보존 ## 출처 Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ecg-arrhythmia/1.0.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "심초음파에서 좌심실 벽이 17 mm 로 두꺼운데 심전도 사지유도 전위가 낮은 불일치와 양측 손목굴증후군 병력이 있으므로 원인은 트랜스티레틴 심장 아밀로이드증이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "고혈압 병력이 없고 벽이 두꺼운데도 QRS 전위가 낮다",
+   "steps": 3,
+   "chain": [
+    "영상: 심방세동 + 사지유도 저전위",
+    "두꺼운 좌심실 벽(17 mm)과 낮은 전위의 불일치 → 심근 비대가 아니라 침윤",
+    "고령·박출률 보존 심부전·양측 손목굴증후군 → 트랜스티레틴 아밀로이드"
+   ],
+   "key": [
+    {
+     "item": "영상: 사지유도 QRS 가 모두 5 mm 미만이고 RR 간격이 불규칙하게 불규칙하다",
+     "why": "저전위 + 심방세동 — 침윤성 심근병증의 전형",
+     "also": []
+    },
+    {
+     "item": "a left ventricular wall thickness of 17 mm",
+     "why": "두꺼운 벽 — 전위와의 불일치를 만든다",
+     "also": []
+    },
+    {
+     "item": "bilateral carpal tunnel syndrome",
+     "why": "트랜스티레틴 아밀로이드의 심장 외 선행 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no history of hypertension",
+     "why": "고혈압성 심장병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "No murmur is heard",
+     "why": "대동맥판 협착·폐쇄성 비대심근병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "the aortic valve opens normally",
+     "why": "대동맥판 협착 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "a left ventricular ejection fraction of 55%",
+     "why": "박출률 보존 심부전 — 여러 원인에 공통이라 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "고혈압 없는 노인의 박출률 보존 심부전에서 좌심실 벽은 17 mm 로 두꺼운데 심전도는 사지유도 저전위·심방세동이다. 전위와 벽 두께의 불일치와 양측 손목굴증후군이 트랜스티레틴 심장 아밀로이드증을 가리킨다.",
+   "switch": {
+    "choice": "D",
+    "condition": "오래된 고혈압이 있고 심전도가 좌심실 비대 전위 기준을 만족했다면 고혈압성 심장병이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0270.png",
+   "caption": "Standard 12-lead ECG, 25 mm/s and 10 mm/mV, with a lead II rhythm strip — drawn from the original digital signal, no annotation (PhysioNet, CC BY 4.0)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "A large scale 12-lead electrocardiogram database for arrhythmia study v1.0.0 (PhysioNet)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ecg-arrhythmia/1.0.0/",
+   "url": "https://physionet.org/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/038/JS02929.mat",
+   "asset_id": "CHAPMAN-JS02929",
+   "text": "Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0279",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+  "type": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-08",
+  "vignette": "28세 남자가 정신병적 초조로 입원하여 2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤 열이 나고 몸이 굳어 의식이 흐려졌다. 그는 6개월 전부터 우울증으로 세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다. 체온 40.1 °C, 혈압 168/102 mmHg, 맥박 124회/분이다. 땀을 많이 흘리고 말이 어눌하다. 팔다리에 굽히고 펼 때 일정한 저항이 있는 납관 경직이 있고, 심부건반사는 정상이며 간대성 근경련은 없다. 동공 크기는 정상이고 장음은 정상이다. 크레아틴키나아제 18,600 U/L, 백혈구 14,200/mm³, 크레아티닌 1.6 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "세르트랄린만 끊고 할로페리돌은 유지한다",
+   "할로페리돌을 끊고 냉각과 정맥 수액을 준다",
+   "사이프로헵타딘을 경구로 투여한다",
+   "할로페리돌을 늘려 초조를 진정시킨다",
+   "벤즈트로핀을 근육주사한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 강력한 도파민 D2 차단제(할로페리돌) 근육주사 며칠 뒤 고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)과 크레아틴키나아제 상승이 생겨 신경이완제악성증후군이다. 세르트랄린을 먹고 있지만 용량 변화가 없고 간대성 근경련·과반사·산동·장음 항진이 없어 세로토닌증후군은 가능성이 낮다. 첫 처치는 원인약을 끊고 냉각·정맥 수액(횡문근융해로 인한 콩팥 손상 예방) 등 보존 치료를 하는 것이며, 중증이면 단트롤렌·브로모크립틴을 더한다.\n- 원리: <b>왜 도파민 차단이 열과 경직을 만드는가</b>: 시상하부의 도파민 경로는 체온 조절점을, 흑질선조체 경로는 근긴장을 조절한다. D2 수용체가 갑자기 강하게 막히면(고역가 약·근육주사·빠른 증량·탈수) 열 발산이 줄고 근육이 지속적으로 수축한다. 그 근육 수축이 열을 더 만들고 근육 세포를 깨뜨려 크레아틴키나아제가 오르고 미오글로빈이 콩팥을 다치게 한다. 대개 며칠에 걸쳐 서서히 진행한다.<br> <b>세로토닌증후군과 가르는 곳</b>: 세로토닌 과잉은 척수의 5-HT2A 수용체를 자극해 <b>간대성 근경련·과반사(특히 하지)·떨림</b>과 산동·설사·장음 항진을 만들고, 원인약 추가·증량 뒤 수 시간(24시간 안)에 빠르게 생긴다. 반대로 신경이완제악성증후군은 반사가 정상이거나 줄고 근육이 납관처럼 고르게 굳으며 천천히 진행한다. 이 환자는 세르트랄린을 먹지만 변화가 없고 신경학적 소견이 도파민 차단 쪽이다.<br> <b>처치</b>: 원인약을 끊고, 냉각·수액·전해질 교정, 필요하면 중환자실 감시. 경직이 심하고 열이 높으면 근육 내 칼슘 유리를 막는 단트롤렌, 도파민 작용을 되돌리는 브로모크립틴을 더한다. 회복 뒤 2주 이상 지나 저역가 약으로 천천히 다시 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신경이완제악성증후군(이 환자)</th><th>세로토닌증후군 — 사이프로헵타딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기와 속도</td><td>도파민 차단제, 며칠에 걸쳐</td><td>세로토닌 약 추가·증량, 24시간 안</td></tr> <tr><td>근육·반사</td><td>납관 경직, 반사 정상·감소</td><td>간대성 근경련·과반사(하지), 떨림</td></tr> <tr><td>동공·장</td><td>정상</td><td>산동, 장음 항진·설사</td></tr> </tbody></table> 둘 다 고열·자율신경 불안정·의식 변화가 있다 — 반사와 근경련, 그리고 마지막으로 바뀐 약이 원인을 가른다.\n- 오답 이유:\n  - ① 세르트랄린만 끊으면 원인인 할로페리돌이 남는다. 신경학적 소견이 세로토닌증후군 쪽이었다면 세로토닌 약을 끊는 것이 맞다.\n  - ③ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군의 치료다. 세르트랄린을 최근 늘렸거나 트라마돌 등을 더한 뒤 간대성 근경련·과반사·산동이 생겼다면 정답이다.\n  - ④ 할로페리돌을 늘리면 도파민 차단이 심해져 열과 경직, 횡문근융해가 악화된다. 열·경직·CK 상승 없이 초조만 있었다면 진정 목적의 추가 투여를 고려할 수 있다.\n  - ⑤ 벤즈트로핀은 급성 근긴장이상(사경·안구 회전 발작)이나 약물 파킨슨증의 치료다. 열과 CK 상승 없이 국소 근육 수축만 있었다면 맞는 선택이다.\n- 함정: 세르트랄린 복용을 보고 세로토닌증후군으로 사이프로헵타딘을 고르는 것 — 납관 경직·정상 반사·서서히 진행은 신경이완제악성증후군이다.\n- 학습목표: 항정신병약 뒤 고열·납관 경직·의식 변화·CK 상승은 신경이완제악성증후군이며 세로토닌증후군과 신경학적 소견으로 가르고 원인약 중단과 보존 치료가 첫 처치임을 안다\n- 근거·출처: Sadock BJ, et al. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. Ch. Medication-induced movement disorders (neuroleptic malignant syndrome) · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "강력한 도파민 D2 차단제(할로페리돌) 근육주사 며칠 뒤 고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)과 크레아틴키나아제 상승이 생겨 신경이완제악성증후군이다. 세르트랄린을 먹고 있지만 용량 변화가 없고 간대성 근경련·과반사·산동·장음 항진이 없어 세로토닌증후군은 가능성이 낮다. 첫 처치는 원인약을 끊고 냉각·정맥 수액(횡문근융해로 인한 콩팥 손상 예방) 등 보존 치료를 하는 것이며, 중증이면 단트롤렌·브로모크립틴을 더한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 도파민 차단이 열과 경직을 만드는가</b>: 시상하부의 도파민 경로는 체온 조절점을, 흑질선조체 경로는 근긴장을 조절한다. D2 수용체가 갑자기 강하게 막히면(고역가 약·근육주사·빠른 증량·탈수) 열 발산이 줄고 근육이 지속적으로 수축한다. 그 근육 수축이 열을 더 만들고 근육 세포를 깨뜨려 크레아틴키나아제가 오르고 미오글로빈이 콩팥을 다치게 한다. 대개 며칠에 걸쳐 서서히 진행한다.<br> <b>세로토닌증후군과 가르는 곳</b>: 세로토닌 과잉은 척수의 5-HT2A 수용체를 자극해 <b>간대성 근경련·과반사(특히 하지)·떨림</b>과 산동·설사·장음 항진을 만들고, 원인약 추가·증량 뒤 수 시간(24시간 안)에 빠르게 생긴다. 반대로 신경이완제악성증후군은 반사가 정상이거나 줄고 근육이 납관처럼 고르게 굳으며 천천히 진행한다. 이 환자는 세르트랄린을 먹지만 변화가 없고 신경학적 소견이 도파민 차단 쪽이다.<br> <b>처치</b>: 원인약을 끊고, 냉각·수액·전해질 교정, 필요하면 중환자실 감시. 경직이 심하고 열이 높으면 근육 내 칼슘 유리를 막는 단트롤렌, 도파민 작용을 되돌리는 브로모크립틴을 더한다. 회복 뒤 2주 이상 지나 저역가 약으로 천천히 다시 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신경이완제악성증후군(이 환자)</th><th>세로토닌증후군 — 사이프로헵타딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기와 속도</td><td>도파민 차단제, 며칠에 걸쳐</td><td>세로토닌 약 추가·증량, 24시간 안</td></tr> <tr><td>근육·반사</td><td>납관 경직, 반사 정상·감소</td><td>간대성 근경련·과반사(하지), 떨림</td></tr> <tr><td>동공·장</td><td>정상</td><td>산동, 장음 항진·설사</td></tr> </tbody></table> 둘 다 고열·자율신경 불안정·의식 변화가 있다 — 반사와 근경련, 그리고 마지막으로 바뀐 약이 원인을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 세르트랄린만 끊으면 원인인 할로페리돌이 남는다. 신경학적 소견이 세로토닌증후군 쪽이었다면 세로토닌 약을 끊는 것이 맞다.\n③ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군의 치료다. 세르트랄린을 최근 늘렸거나 트라마돌 등을 더한 뒤 간대성 근경련·과반사·산동이 생겼다면 정답이다.\n④ 할로페리돌을 늘리면 도파민 차단이 심해져 열과 경직, 횡문근융해가 악화된다. 열·경직·CK 상승 없이 초조만 있었다면 진정 목적의 추가 투여를 고려할 수 있다.\n⑤ 벤즈트로핀은 급성 근긴장이상(사경·안구 회전 발작)이나 약물 파킨슨증의 치료다. 열과 CK 상승 없이 국소 근육 수축만 있었다면 맞는 선택이다."
+   },
+   {
+    "k": "함정",
+    "v": "세르트랄린 복용을 보고 세로토닌증후군으로 사이프로헵타딘을 고르는 것 — 납관 경직·정상 반사·서서히 진행은 신경이완제악성증후군이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항정신병약 뒤 고열·납관 경직·의식 변화·CK 상승은 신경이완제악성증후군이며 세로토닌증후군과 신경학적 소견으로 가르고 원인약 중단과 보존 치료가 첫 처치임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sadock BJ, et al. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. Ch. Medication-induced movement disorders (neuroleptic malignant syndrome) · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "할로페리돌 근육주사 뒤 고열·납관 경직·의식 변화·자율신경 불안정·CK 상승이 있고 간대성 근경련·과반사가 없으므로 신경이완제악성증후군으로 보고 원인약을 끊고 보존 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "심부건반사 정상·간대성 근경련 없음·납관 경직·세르트랄린 용량 변화 없음",
+   "steps": 3,
+   "chain": [
+    "고열·근육 경직·의식 변화·자율신경 불안정·CK 상승 → 신경이완제악성증후군과 세로토닌증후군의 감별",
+    "도파민 차단제 근육주사 직후·납관 경직·반사 정상·근경련 없음·세르트랄린 변화 없음 → 신경이완제악성증후군",
+    "원인약 중단 + 냉각·수액(횡문근융해 콩팥 손상 예방)"
+   ],
+   "key": [
+    {
+     "item": "2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤",
+     "why": "고역가 D2 차단제 근육주사 — 신경이완제악성증후군의 위험 인자",
+     "also": []
+    },
+    {
+     "item": "납관 경직이 있고",
+     "why": "도파민 차단에 의한 고른 경직",
+     "also": []
+    },
+    {
+     "item": "크레아틴키나아제 18,600 U/L",
+     "why": "근육 괴사 — 신경이완제악성증후군의 특징",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심부건반사는 정상이며 간대성 근경련은 없다",
+     "why": "세로토닌증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "동공 크기는 정상이고 장음은 정상이다",
+     "why": "세로토닌 과잉·항콜린 독성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다",
+     "why": "세로토닌증후군을 떠올리게 하는 함정 — 변화가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 1.6 mg/dL",
+     "why": "횡문근융해 콩팥 손상 — 정맥 수액이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "할로페리돌 근육주사 뒤 고열·납관 경직·의식 변화·자율신경 불안정·CK 상승이 생겼고 반사는 정상이며 근경련이 없다. 세르트랄린을 먹지만 신경이완제악성증후군이므로 원인약을 끊고 냉각·수액으로 보존 치료한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "세르트랄린을 최근 늘린 뒤 수 시간 만에 하지 간대성 근경련·과반사·산동이 생겼다면 세로토닌증후군으로 보고 사이프로헵타딘을 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0278",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자",
+  "type": "내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 54-year-old man with type 2 diabetes mellitus comes to the emergency department because of nausea, vomiting and abdominal pain for 1 day. Three months ago, empagliflozin was added to metformin. Two days ago, he underwent laparoscopic cholecystectomy and has eaten little since. His pulse is 112/min, respirations are 28/min and deep, and blood pressure is 112/70 mm Hg. Laboratory studies show: glucose 196 mg/dL, Na+ 137 mEq/L, Cl- 103 mEq/L, HCO3- 10 mEq/L, K+ 4.6 mEq/L, and serum beta-hydroxybutyrate 6.2 mmol/L (N < 0.6). Arterial pH is 7.14. Serum lactate concentration is 1.4 mmol/L.",
+  "question": "After empagliflozin is discontinued and intravenous isotonic saline is begun, which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous sodium bicarbonate infusion",
+   "Subcutaneous insulin glargine alone",
+   "Intravenous fluids alone",
+   "Intravenous insulin infusion with dextrose-containing fluid",
+   "Withholding insulin until the glucose rises above 250 mg/dL"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The patient has a high anion gap (137 - 103 - 10 = 24) metabolic acidosis with a markedly raised beta-hydroxybutyrate and normal lactate, but his glucose is under 250 mg/dL: euglycemic diabetic ketoacidosis triggered by an SGLT2 inhibitor plus surgery and fasting. Ketoacidosis is stopped by insulin, not by lowering glucose, so a continuous insulin infusion is given and dextrose is added to the fluids to prevent hypoglycemia until the anion gap closes.\n- 원리: <b>Why ketones rise while glucose stays low</b>: SGLT2 inhibitors make the kidney excrete glucose (tens of grams a day), so plasma glucose is held down regardless of insulin. Lower glucose reduces insulin secretion and raises glucagon; SGLT2 inhibitors also act on alpha cells and reduce renal ketone excretion. With a low insulin-to-glucagon ratio, lipolysis supplies fatty acids and the liver turns them into ketones. Fasting, surgery, alcohol and insulin dose reduction tip the balance — and because glucose is only mildly raised, ketoacidosis is recognized late.<br> <b>Why insulin is still the treatment</b>: ketogenesis stops only when insulin suppresses lipolysis and hepatic ketogenesis. The goal of DKA therapy is closure of the anion gap, not a normal glucose. With a starting glucose near 200 mg/dL, insulin alone would cause hypoglycemia, so dextrose (5 to 10%) is infused from the start alongside the insulin.<br> <b>Potassium</b>: insulin drives potassium into cells; with K+ 4.6 mEq/L potassium is added to the fluids as levels fall. The SGLT2 inhibitor is held until the patient eats normally and the acidosis has resolved, and is usually stopped 3 days before planned surgery.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Insulin infusion with dextrose (correct)</th><th>Withholding insulin until glucose rises (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Ketogenesis — closes the anion gap</td><td>Glucose — not the problem here</td></tr> <tr><td>Hypoglycemia</td><td>Prevented by dextrose</td><td>Avoided, but acidosis continues</td></tr> <tr><td>Result</td><td>Gap closes in hours</td><td>Ketoacidosis worsens; glucose may never exceed 250 mg/dL while glycosuria persists</td></tr> </tbody></table> In DKA, glucose tells you how much dextrose to give; the anion gap tells you how long to give insulin.\n- 오답 이유:\n  - (A) Bicarbonate is considered in DKA only for pH below about 6.9 or life-threatening hyperkalemia; at pH 7.14 it adds sodium and risks hypokalemia without speeding recovery.\n  - (B) Subcutaneous basal insulin alone acts slowly and unpredictably in a dehydrated patient; it is used to transition from the infusion once the gap has closed and the patient can eat.\n  - (C) Fluids alone dilute ketones only slightly and do not stop ketogenesis; they would suffice for starvation ketosis with mild acidosis and normal glucose in a patient without diabetes.\n  - (E) Withholding insulin treats the glucose instead of the ketoacidosis; it would be reasonable only if the anion gap were normal and ketones absent, as in simple postoperative hyperglycemia.\n- 함정: Being reassured by a glucose under 250 mg/dL — in an SGLT2 inhibitor user, ketoacidosis with a high anion gap is DKA and needs insulin plus dextrose.\n- 학습목표: SGLT2 억제제 복용자의 혈당이 높지 않은 케톤산증을 알아보고, 포도당을 함께 주며 인슐린을 계속 주입함을 안다\n- 근거·출처: Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275 (euglycemic DKA, SGLT2 inhibitors) · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Type 2 diabetes mellitus (SGLT2 inhibitors — ketoacidosis)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The patient has a high anion gap (137 - 103 - 10 = 24) metabolic acidosis with a markedly raised beta-hydroxybutyrate and normal lactate, but his glucose is under 250 mg/dL: euglycemic diabetic ketoacidosis triggered by an SGLT2 inhibitor plus surgery and fasting. Ketoacidosis is stopped by insulin, not by lowering glucose, so a continuous insulin infusion is given and dextrose is added to the fluids to prevent hypoglycemia until the anion gap closes."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ketones rise while glucose stays low</b>: SGLT2 inhibitors make the kidney excrete glucose (tens of grams a day), so plasma glucose is held down regardless of insulin. Lower glucose reduces insulin secretion and raises glucagon; SGLT2 inhibitors also act on alpha cells and reduce renal ketone excretion. With a low insulin-to-glucagon ratio, lipolysis supplies fatty acids and the liver turns them into ketones. Fasting, surgery, alcohol and insulin dose reduction tip the balance — and because glucose is only mildly raised, ketoacidosis is recognized late.<br> <b>Why insulin is still the treatment</b>: ketogenesis stops only when insulin suppresses lipolysis and hepatic ketogenesis. The goal of DKA therapy is closure of the anion gap, not a normal glucose. With a starting glucose near 200 mg/dL, insulin alone would cause hypoglycemia, so dextrose (5 to 10%) is infused from the start alongside the insulin.<br> <b>Potassium</b>: insulin drives potassium into cells; with K+ 4.6 mEq/L potassium is added to the fluids as levels fall. The SGLT2 inhibitor is held until the patient eats normally and the acidosis has resolved, and is usually stopped 3 days before planned surgery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Insulin infusion with dextrose (correct)</th><th>Withholding insulin until glucose rises (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Ketogenesis — closes the anion gap</td><td>Glucose — not the problem here</td></tr> <tr><td>Hypoglycemia</td><td>Prevented by dextrose</td><td>Avoided, but acidosis continues</td></tr> <tr><td>Result</td><td>Gap closes in hours</td><td>Ketoacidosis worsens; glucose may never exceed 250 mg/dL while glycosuria persists</td></tr> </tbody></table> In DKA, glucose tells you how much dextrose to give; the anion gap tells you how long to give insulin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bicarbonate is considered in DKA only for pH below about 6.9 or life-threatening hyperkalemia; at pH 7.14 it adds sodium and risks hypokalemia without speeding recovery.\n(B) Subcutaneous basal insulin alone acts slowly and unpredictably in a dehydrated patient; it is used to transition from the infusion once the gap has closed and the patient can eat.\n(C) Fluids alone dilute ketones only slightly and do not stop ketogenesis; they would suffice for starvation ketosis with mild acidosis and normal glucose in a patient without diabetes.\n(E) Withholding insulin treats the glucose instead of the ketoacidosis; it would be reasonable only if the anion gap were normal and ketones absent, as in simple postoperative hyperglycemia."
+   },
+   {
+    "k": "함정",
+    "v": "Being reassured by a glucose under 250 mg/dL — in an SGLT2 inhibitor user, ketoacidosis with a high anion gap is DKA and needs insulin plus dextrose."
+   },
+   {
+    "k": "학습목표",
+    "v": "SGLT2 억제제 복용자의 혈당이 높지 않은 케톤산증을 알아보고, 포도당을 함께 주며 인슐린을 계속 주입함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275 (euglycemic DKA, SGLT2 inhibitors) · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Type 2 diabetes mellitus (SGLT2 inhibitors — ketoacidosis)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "SGLT2 억제제 복용자의 수술·금식 뒤 혈당 196 mg/dL 의 고음이온차 케톤산증은 정상혈당 당뇨병케톤산증이므로 포도당을 함께 주며 인슐린을 정맥 주입한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈당은 높지 않지만 음이온차 24·베타하이드록시뷰티르산 6.2 mmol/L 로 케톤산증이 분명하다",
+   "steps": 3,
+   "chain": [
+    "음이온차 24 + 베타하이드록시뷰티르산 상승 + 젖산 정상 → 케톤산증",
+    "SGLT2 억제제·수술·금식 + 혈당 196 mg/dL → 정상혈당 당뇨병케톤산증",
+    "케톤 생성을 멈추려면 인슐린, 저혈당 예방으로 포도당 함께 → 인슐린 주입 + 포도당 수액"
+   ],
+   "key": [
+    {
+     "item": "empagliflozin was added to metformin",
+     "why": "SGLT2 억제제 — 정상혈당 케톤산증의 원인",
+     "also": []
+    },
+    {
+     "item": "beta-hydroxybutyrate 6.2 mmol/L",
+     "why": "케톤산증",
+     "also": []
+    },
+    {
+     "item": "HCO3- 10 mEq/L",
+     "why": "음이온차 24 의 대사산증",
+     "also": []
+    },
+    {
+     "item": "he underwent laparoscopic cholecystectomy and has eaten little since",
+     "why": "유발 인자 — 수술·금식",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum lactate concentration is 1.4 mmol/L",
+     "why": "젖산산증(메트포르민·쇼크) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "glucose 196 mg/dL",
+     "why": "높지 않은 혈당 — 인슐린과 함께 포도당이 필요하다",
+     "also": []
+    },
+    {
+     "item": "K+ 4.6 mEq/L",
+     "why": "인슐린을 시작할 수 있고 곧 칼륨 보충이 필요하다",
+     "also": []
+    },
+    {
+     "item": "Arterial pH is 7.14",
+     "why": "6.9 이상 — 중탄산염이 필요하지 않다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "SGLT2 억제제 복용자가 수술·금식 뒤 혈당 196 mg/dL 인데 음이온차 24·케톤 상승의 산증이 있다. 정상혈당 당뇨병케톤산증이므로 포도당을 함께 주며 인슐린을 정맥 주입한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "동맥혈 pH 가 6.9 미만이었다면 인슐린·수액과 함께 중탄산염 투여를 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0277",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "소아청소년 — 5일 이상 지속되는 발열과 결막 충혈",
+  "type": "소아청소년 — 5일 이상 지속되는 발열과 결막 충혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "3세 남아가 6일 전부터 열이 39~40 °C 로 나서 내원하였다. 해열제를 먹어도 열이 떨어지지 않는다. 진찰에서 양쪽 눈의 결막이 눈곱 없이 충혈되어 있고, 입술이 붉고 갈라져 있으며 혀가 딸기 모양이다. 손발이 붓고 손바닥·발바닥이 붉다. 몸통에 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 림프절이 만져진다. 백혈구 16,800/mm³, 혈색소 10.9 g/dL, 혈소판 452,000/mm³, C-반응단백 9.8 mg/dL, 알부민 3.1 g/dL 이다. 인두 신속항원검사에서 A군 연쇄상구균은 음성이다. 심초음파에서 관상동맥 크기는 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "인플릭시맙 단독",
+   "정맥 면역글로불린과 고용량 아스피린",
+   "경구 아목시실린 10일",
+   "심초음파를 2주 뒤 다시 하고 해열제만 투여",
+   "정맥 메틸프레드니솔론 단독"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 5일 넘게 이어지는 고열에 비화농성 양측 결막 충혈, 입술·구강 변화(딸기 혀), 손발 부종·홍반, 다형 발진, 1.5 cm 넘는 한쪽 목 림프절의 주요 기준 5가지를 모두 갖춰 전형 가와사키병이다. 관상동맥이 아직 정상이어도 발병 10일 안에 정맥 면역글로불린(2 g/kg 1회)을 주면 관상동맥류 발생이 크게 줄어든다. 아스피린을 함께 쓴다.\n- 원리: <b>왜 관상동맥인가</b>: 가와사키병은 중간 크기 동맥을 침범하는 급성 혈관염이다. 호중구에 이어 단핵구·형질세포가 관상동맥 벽에 침윤해 내탄력판과 중막을 파괴하면 벽이 약해져 늘어나 동맥류가 된다. 치료하지 않으면 약 25 % 에서 관상동맥 확장·동맥류가 생기고, 동맥류 안 혈전·협착이 나중에 심근경색과 급사를 일으킨다.<br> <b>왜 10일 안에 면역글로불린인가</b>: 동맥 벽 파괴는 발병 1~2주에 진행한다. 정맥 면역글로불린은 Fc 수용체 차단·염증 사이토카인 억제로 혈관염을 빨리 가라앉혀, 열이 내리고 관상동맥류 발생을 약 25 % 에서 5 % 미만으로 줄인다. 그래서 동맥류가 생기기 전, 진단되는 즉시 준다 — 「관상동맥이 정상이니 기다린다」는 거꾸로 된 논리다.<br> <b>아스피린</b>: 급성기에는 소염 목적으로 중·고용량, 열이 내리면 항혈소판 목적의 저용량(3~5 mg/kg/일)으로 6~8주 쓴다. 이 시기 수두·인플루엔자에 걸리면 라이증후군 위험이 있어 예방접종을 확인한다. 면역글로불린 투여 36시간 뒤에도 열이 나면 2차 면역글로불린이나 스테로이드·인플릭시맙을 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가와사키병(이 환아)</th><th>성홍열 — 아목시실린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>결막</td><td>눈곱 없는 양측 충혈</td><td>대개 없음</td></tr> <tr><td>손발</td><td>부종·홍반, 회복기에 손끝 막 모양 박리</td><td>사포 같은 발진, 손발 부종 없음</td></tr> <tr><td>검사</td><td>A군 연쇄상구균 음성, CRP 높음, 혈소판 증가</td><td>A군 연쇄상구균 양성</td></tr> </tbody></table> 딸기 혀와 발진은 두 병 모두에 있다 — 결막 충혈·손발 변화·인두 검사 음성이 가와사키병으로 기울게 한다.\n- 오답 이유:\n  - ① 인플릭시맙은 면역글로불린 불응 가와사키병에서 쓰는 2차 치료다. 1차 면역글로불린 투여 36시간 뒤에도 열이 계속되었다면 선택지가 된다.\n  - ③ 아목시실린은 A군 연쇄상구균 인두염·성홍열의 치료다. 신속항원검사나 배양이 양성이고 결막 충혈·손발 부종이 없었다면 정답이다.\n  - ④ 해열제만 주고 기다리면 발병 10일 안의 치료 시기를 놓쳐 관상동맥류 위험이 커진다. 열이 5일 미만이고 기준이 부족한 불완전형 의심 단계라면 짧은 추적이 가능하다.\n  - ⑤ 스테로이드 단독은 1차 치료로 권하지 않는다. 면역글로불린을 준 뒤에도 열이 지속되는 불응형이거나 고위험군에서 면역글로불린에 덧붙일 때 쓴다.\n- 함정: 관상동맥이 아직 정상이라 기다리는 것 — 면역글로불린은 동맥류가 생기기 전, 발병 10일 안에 준다.\n- 학습목표: 5일 이상의 발열과 주요 기준 4가지 이상이면 가와사키병으로 진단하고 관상동맥 합병증 예방을 위해 정맥 면역글로불린과 아스피린을 쓴다\n- 근거·출처: McCrindle BW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement from the AHA. Circulation 2017;135:e927-e999 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Kawasaki disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5일 넘게 이어지는 고열에 비화농성 양측 결막 충혈, 입술·구강 변화(딸기 혀), 손발 부종·홍반, 다형 발진, 1.5 cm 넘는 한쪽 목 림프절의 주요 기준 5가지를 모두 갖춰 전형 가와사키병이다. 관상동맥이 아직 정상이어도 발병 10일 안에 정맥 면역글로불린(2 g/kg 1회)을 주면 관상동맥류 발생이 크게 줄어든다. 아스피린을 함께 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 관상동맥인가</b>: 가와사키병은 중간 크기 동맥을 침범하는 급성 혈관염이다. 호중구에 이어 단핵구·형질세포가 관상동맥 벽에 침윤해 내탄력판과 중막을 파괴하면 벽이 약해져 늘어나 동맥류가 된다. 치료하지 않으면 약 25 % 에서 관상동맥 확장·동맥류가 생기고, 동맥류 안 혈전·협착이 나중에 심근경색과 급사를 일으킨다.<br> <b>왜 10일 안에 면역글로불린인가</b>: 동맥 벽 파괴는 발병 1~2주에 진행한다. 정맥 면역글로불린은 Fc 수용체 차단·염증 사이토카인 억제로 혈관염을 빨리 가라앉혀, 열이 내리고 관상동맥류 발생을 약 25 % 에서 5 % 미만으로 줄인다. 그래서 동맥류가 생기기 전, 진단되는 즉시 준다 — 「관상동맥이 정상이니 기다린다」는 거꾸로 된 논리다.<br> <b>아스피린</b>: 급성기에는 소염 목적으로 중·고용량, 열이 내리면 항혈소판 목적의 저용량(3~5 mg/kg/일)으로 6~8주 쓴다. 이 시기 수두·인플루엔자에 걸리면 라이증후군 위험이 있어 예방접종을 확인한다. 면역글로불린 투여 36시간 뒤에도 열이 나면 2차 면역글로불린이나 스테로이드·인플릭시맙을 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가와사키병(이 환아)</th><th>성홍열 — 아목시실린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>결막</td><td>눈곱 없는 양측 충혈</td><td>대개 없음</td></tr> <tr><td>손발</td><td>부종·홍반, 회복기에 손끝 막 모양 박리</td><td>사포 같은 발진, 손발 부종 없음</td></tr> <tr><td>검사</td><td>A군 연쇄상구균 음성, CRP 높음, 혈소판 증가</td><td>A군 연쇄상구균 양성</td></tr> </tbody></table> 딸기 혀와 발진은 두 병 모두에 있다 — 결막 충혈·손발 변화·인두 검사 음성이 가와사키병으로 기울게 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 인플릭시맙은 면역글로불린 불응 가와사키병에서 쓰는 2차 치료다. 1차 면역글로불린 투여 36시간 뒤에도 열이 계속되었다면 선택지가 된다.\n③ 아목시실린은 A군 연쇄상구균 인두염·성홍열의 치료다. 신속항원검사나 배양이 양성이고 결막 충혈·손발 부종이 없었다면 정답이다.\n④ 해열제만 주고 기다리면 발병 10일 안의 치료 시기를 놓쳐 관상동맥류 위험이 커진다. 열이 5일 미만이고 기준이 부족한 불완전형 의심 단계라면 짧은 추적이 가능하다.\n⑤ 스테로이드 단독은 1차 치료로 권하지 않는다. 면역글로불린을 준 뒤에도 열이 지속되는 불응형이거나 고위험군에서 면역글로불린에 덧붙일 때 쓴다."
+   },
+   {
+    "k": "함정",
+    "v": "관상동맥이 아직 정상이라 기다리는 것 — 면역글로불린은 동맥류가 생기기 전, 발병 10일 안에 준다."
+   },
+   {
+    "k": "학습목표",
+    "v": "5일 이상의 발열과 주요 기준 4가지 이상이면 가와사키병으로 진단하고 관상동맥 합병증 예방을 위해 정맥 면역글로불린과 아스피린을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement from the AHA. Circulation 2017;135:e927-e999 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Kawasaki disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "6일 넘는 발열과 주요 기준 5가지를 갖춘 전형 가와사키병이므로 관상동맥이 정상이어도 정맥 면역글로불린과 아스피린을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "눈곱 없는 양측 결막 충혈·손발 부종이 있고 A군 연쇄상구균 신속항원검사가 음성이다",
+   "steps": 2,
+   "chain": [
+    "5일 넘는 발열 + 결막·구강·손발·발진·목 림프절의 주요 기준 5가지 → 전형 가와사키병",
+    "발병 10일 안 → 관상동맥류 예방을 위해 정맥 면역글로불린 + 아스피린"
+   ],
+   "key": [
+    {
+     "item": "6일 전부터 열이 39~40 °C 로 나서",
+     "why": "5일 넘는 발열 — 진단 필수 조건이자 치료 시기",
+     "also": []
+    },
+    {
+     "item": "결막이 눈곱 없이 충혈되어 있고",
+     "why": "주요 기준 — 성홍열·아데노바이러스와 가른다",
+     "also": []
+    },
+    {
+     "item": "손발이 붓고 손바닥·발바닥이 붉다",
+     "why": "주요 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인두 신속항원검사에서 A군 연쇄상구균은 음성이다",
+     "why": "성홍열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "심초음파에서 관상동맥 크기는 정상이다",
+     "why": "정상이어도 치료한다 — 동맥류 예방이 목적이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈소판 452,000/mm³",
+     "why": "가와사키병과 맞지만 진단 기준은 아니다",
+     "also": []
+    },
+    {
+     "item": "알부민 3.1 g/dL",
+     "why": "염증의 보조 소견 — 불완전형 판단에 쓰이며 여기서는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "6일 넘는 고열에 결막 충혈·구강 변화·손발 부종·다형 발진·목 림프절 다섯 기준을 모두 갖춰 전형 가와사키병이다. 관상동맥이 정상이어도 10일 안에 정맥 면역글로불린과 아스피린을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "인두 신속항원검사가 양성이고 결막 충혈·손발 부종이 없었다면 성홍열로 보고 아목시실린을 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0276",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "부인과 — 유방은 발달했지만 음모가 적은 원발 무월경",
+  "type": "부인과 — 유방은 발달했지만 음모가 적은 원발 무월경",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 17-year-old girl is brought to the physician because she has never had a menstrual period. She is 170 cm tall. Breast development is Tanner stage 5, whereas pubic and axillary hair are sparse (Tanner stage 1). Pelvic examination shows normal external female genitalia and a short, blind-ending vagina; the cervix cannot be seen. Bilateral firm masses are palpable in the inguinal canals. Pelvic ultrasonography shows no uterus. Serum follicle-stimulating hormone concentration is within the reference range, luteinizing hormone concentration is mildly increased, and total testosterone concentration is in the normal adult male range.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Müllerian agenesis",
+   "Turner syndrome",
+   "5-alpha-reductase deficiency",
+   "Kallmann syndrome",
+   "Complete androgen insensitivity syndrome"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A patient with primary amenorrhea, fully developed breasts, almost no pubic or axillary hair, a blind-ending vagina, no uterus, inguinal gonads and testosterone in the male range has a 46,XY karyotype with testes whose androgen receptors do not respond: complete androgen insensitivity syndrome. Breasts develop because testosterone is aromatized to estradiol, and the uterus is absent because the testes secrete anti-Müllerian hormone.\n- 원리: <b>Two hormones from the fetal testis</b>: Sertoli cells secrete anti-Müllerian hormone (AMH), which regresses the Müllerian ducts (uterus, fallopian tubes, upper vagina). Leydig cells secrete testosterone, which acts through the androgen receptor to form the Wolffian structures and, after conversion to dihydrotestosterone (DHT), the male external genitalia.<br> <b>What happens when the receptor fails</b>: in complete androgen insensitivity the testes work normally, so AMH removes the uterus and upper vagina. But no tissue can respond to androgen: the external genitalia are female, the Wolffian ducts regress, and pubic and axillary hair (androgen-dependent) barely grows. Because the hypothalamus and pituitary also ignore testosterone, LH rises and drives more testosterone, which aromatase converts to estradiol — producing well-developed breasts and a tall, female body habitus.<br> <b>Management</b>: confirm a 46,XY karyotype; gonadectomy is usually offered after puberty because malignancy risk is low before adulthood and the testes supply estrogen for natural puberty; vaginal dilation can lengthen the vagina. Counseling is central.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Complete androgen insensitivity (correct)</th><th>Müllerian agenesis (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype and gonad</td><td>46,XY, testes (often inguinal)</td><td>46,XX, normal ovaries</td></tr> <tr><td>Pubic and axillary hair</td><td>Sparse or absent</td><td>Normal</td></tr> <tr><td>Testosterone</td><td>Male range</td><td>Female range</td></tr> </tbody></table> Both have breasts, a blind vagina and no uterus; the hair and the testosterone level separate them.\n- 오답 이유:\n  - (A) Müllerian agenesis also presents with primary amenorrhea, breasts and an absent uterus; it would be the answer if pubic hair were normal, ovaries were present and testosterone were in the female range.\n  - (B) Turner syndrome causes primary amenorrhea with short stature, absent breast development and high FSH from streak ovaries; the uterus is present.\n  - (C) 5-alpha-reductase deficiency causes ambiguous genitalia at birth with virilization at puberty and no breast development; it would fit a 46,XY patient with a high testosterone-to-DHT ratio and male pubertal changes.\n  - (D) Kallmann syndrome causes hypogonadotropic hypogonadism with anosmia, absent breast development and low FSH and LH; the uterus is present.\n- 함정: Calling every case of breasts with an absent uterus Müllerian agenesis — sparse pubic hair and male-range testosterone mean androgen insensitivity.\n- 학습목표: 유방은 발달했으나 음모·겨드랑이털이 적고 자궁이 없으며 테스토스테론이 남성 범위인 원발 무월경은 완전 안드로겐 무감응증임을 안다\n- 근거·출처: Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. Amenorrhea; Ch. Anatomic disorders (disorders of sex development) · Taylor HS, et al. Speroff's Clinical Gynecologic Endocrinology and Infertility, 9th ed. Ch. Normal and abnormal sexual development",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A patient with primary amenorrhea, fully developed breasts, almost no pubic or axillary hair, a blind-ending vagina, no uterus, inguinal gonads and testosterone in the male range has a 46,XY karyotype with testes whose androgen receptors do not respond: complete androgen insensitivity syndrome. Breasts develop because testosterone is aromatized to estradiol, and the uterus is absent because the testes secrete anti-Müllerian hormone."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two hormones from the fetal testis</b>: Sertoli cells secrete anti-Müllerian hormone (AMH), which regresses the Müllerian ducts (uterus, fallopian tubes, upper vagina). Leydig cells secrete testosterone, which acts through the androgen receptor to form the Wolffian structures and, after conversion to dihydrotestosterone (DHT), the male external genitalia.<br> <b>What happens when the receptor fails</b>: in complete androgen insensitivity the testes work normally, so AMH removes the uterus and upper vagina. But no tissue can respond to androgen: the external genitalia are female, the Wolffian ducts regress, and pubic and axillary hair (androgen-dependent) barely grows. Because the hypothalamus and pituitary also ignore testosterone, LH rises and drives more testosterone, which aromatase converts to estradiol — producing well-developed breasts and a tall, female body habitus.<br> <b>Management</b>: confirm a 46,XY karyotype; gonadectomy is usually offered after puberty because malignancy risk is low before adulthood and the testes supply estrogen for natural puberty; vaginal dilation can lengthen the vagina. Counseling is central."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Complete androgen insensitivity (correct)</th><th>Müllerian agenesis (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype and gonad</td><td>46,XY, testes (often inguinal)</td><td>46,XX, normal ovaries</td></tr> <tr><td>Pubic and axillary hair</td><td>Sparse or absent</td><td>Normal</td></tr> <tr><td>Testosterone</td><td>Male range</td><td>Female range</td></tr> </tbody></table> Both have breasts, a blind vagina and no uterus; the hair and the testosterone level separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Müllerian agenesis also presents with primary amenorrhea, breasts and an absent uterus; it would be the answer if pubic hair were normal, ovaries were present and testosterone were in the female range.\n(B) Turner syndrome causes primary amenorrhea with short stature, absent breast development and high FSH from streak ovaries; the uterus is present.\n(C) 5-alpha-reductase deficiency causes ambiguous genitalia at birth with virilization at puberty and no breast development; it would fit a 46,XY patient with a high testosterone-to-DHT ratio and male pubertal changes.\n(D) Kallmann syndrome causes hypogonadotropic hypogonadism with anosmia, absent breast development and low FSH and LH; the uterus is present."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every case of breasts with an absent uterus Müllerian agenesis — sparse pubic hair and male-range testosterone mean androgen insensitivity."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방은 발달했으나 음모·겨드랑이털이 적고 자궁이 없으며 테스토스테론이 남성 범위인 원발 무월경은 완전 안드로겐 무감응증임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. Amenorrhea; Ch. Anatomic disorders (disorders of sex development) · Taylor HS, et al. Speroff's Clinical Gynecologic Endocrinology and Infertility, 9th ed. Ch. Normal and abnormal sexual development"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "유방은 발달했지만 음모·겨드랑이털이 거의 없고 자궁이 없으며 서혜부 생식샘과 남성 범위 테스토스테론이 있으므로 완전 안드로겐 무감응증이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "음모·겨드랑이털이 적고 테스토스테론이 남성 범위다",
+   "steps": 3,
+   "chain": [
+    "원발 무월경 + 유방 발달 + 자궁 없음 → 뮐러관 결손(AMH 작용 또는 발생 이상)",
+    "음모·겨드랑이털이 적고 테스토스테론이 남성 범위 → 안드로겐이 있으나 작용하지 않음",
+    "서혜부 생식샘(고환) → 46,XY 완전 안드로겐 무감응증"
+   ],
+   "key": [
+    {
+     "item": "pubic and axillary hair are sparse (Tanner stage 1)",
+     "why": "안드로겐 작용 부재",
+     "also": []
+    },
+    {
+     "item": "total testosterone concentration is in the normal adult male range",
+     "why": "고환이 있고 안드로겐을 만든다",
+     "also": []
+    },
+    {
+     "item": "Bilateral firm masses are palpable in the inguinal canals",
+     "why": "서혜부 고환",
+     "also": []
+    },
+    {
+     "item": "Pelvic ultrasonography shows no uterus",
+     "why": "AMH 작용 — 뮐러관 퇴행",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Breast development is Tanner stage 5",
+     "why": "에스트로겐 결핍(터너·칼만)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She is 170 cm tall",
+     "why": "터너증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "luteinizing hormone concentration is mildly increased",
+     "why": "안드로겐 되먹임 소실 — 진단을 지지하지만 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "원발 무월경에 유방은 발달했으나 음모·겨드랑이털이 거의 없고, 자궁이 없으며 서혜부 생식샘과 남성 범위 테스토스테론이 있다. 고환은 정상이나 안드로겐 수용체가 반응하지 않는 완전 안드로겐 무감응증이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "음모가 정상이고 테스토스테론이 여성 범위이며 난소가 보였다면 뮐러관 무형성이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0275",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "감염 — 고양이에게 물린 손의 예방적 항생제",
+  "type": "감염 — 고양이에게 물린 손의 예방적 항생제",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "A 35-year-old woman comes to the emergency department 6 hours after being bitten on the dorsum of her right hand by her own cat. She is otherwise healthy and takes no medications. Her tetanus immunization is up to date, and the cat is vaccinated against rabies. Her temperature is 36.9°C. Examination shows two small puncture wounds over the third metacarpal with mild surrounding erythema; there is no fluctuance, and range of motion of the fingers is full. The wounds are irrigated. She has no known drug allergies.",
+  "question": "Which of the following is the most appropriate antibiotic for this patient?",
+  "options": [
+   "Amoxicillin-clavulanate",
+   "Cephalexin",
+   "Clindamycin",
+   "Dicloxacillin",
+   "Erythromycin"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Cat bites produce deep, narrow punctures that inoculate oral flora into tendon sheaths and joints and are hard to irrigate; hand wounds and punctures carry the highest infection risk, so prophylaxis is indicated. The main pathogen is Pasteurella multocida (with streptococci, Staphylococcus aureus and anaerobes). Amoxicillin-clavulanate covers all of these and is the first choice for 3 to 5 days.\n- 원리: <b>Why cat bites infect more than dog bites</b>: a cat's teeth are thin and sharp, so they leave small punctures that reach periosteum, tendon sheaths and joints but close quickly over the inoculum. Irrigation cannot reach the depth, and on the hand the closed spaces spread infection rapidly to tenosynovitis or septic arthritis. Roughly a third or more of cat bites become infected without treatment, compared with a much smaller proportion of dog bites.<br> <b>Why Pasteurella shapes the choice</b>: P. multocida, a gram-negative coccobacillus that colonizes the mouths of most cats, causes rapidly developing cellulitis within 24 hours. It is sensitive to penicillin and amoxicillin but resistant to first-generation cephalosporins (cephalexin), antistaphylococcal penicillins (dicloxacillin), clindamycin and often erythromycin. Adding clavulanate restores activity against beta-lactamase-producing S. aureus and oral anaerobes.<br> <b>Penicillin allergy</b>: use doxycycline or trimethoprim-sulfamethoxazole (or a fluoroquinolone) for Pasteurella combined with clindamycin or metronidazole for anaerobes.\n- 비교: <table><thead><tr><th style=\"width:22%\">Agent</th><th style=\"width:39%\">Amoxicillin-clavulanate (correct)</th><th>Cephalexin (closest distractor)</th></tr></thead><tbody> <tr><td>Pasteurella multocida</td><td>Active</td><td>Poor activity</td></tr> <tr><td>Oral anaerobes</td><td>Active (clavulanate)</td><td>Poor activity</td></tr> <tr><td>Best use</td><td>Animal and human bites</td><td>Uncomplicated streptococcal/staphylococcal cellulitis</td></tr> </tbody></table> The bite changes the flora: ordinary cellulitis drugs miss Pasteurella and anaerobes, so a bite needs a beta-lactam/beta-lactamase inhibitor.\n- 오답 이유:\n  - (B) Cephalexin covers streptococci and methicillin-sensitive S. aureus but not Pasteurella or anaerobes; it would be appropriate for nonpurulent cellulitis without a bite.\n  - (C) Clindamycin covers gram-positive organisms and anaerobes but not Pasteurella; in a penicillin-allergic patient it is used together with doxycycline or trimethoprim-sulfamethoxazole.\n  - (D) Dicloxacillin targets beta-lactamase-producing S. aureus but has weak activity against Pasteurella; it would suit a staphylococcal skin infection unrelated to an animal bite.\n  - (E) Erythromycin is unreliable against Pasteurella and anaerobes; it would only be considered for streptococcal infection in a patient who cannot take beta-lactams or tetracyclines.\n- 함정: Choosing a standard cellulitis antibiotic (cephalexin) for a bite — cat-bite flora includes Pasteurella and anaerobes.\n- 학습목표: 고양이에게 물린 손 상처는 Pasteurella 감염 위험이 높아 아목시실린-클라불란산으로 예방함을 안다\n- 근거·출처: Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 (animal bites) · Bennett JE, et al. Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. Ch. Bites; Ch. Pasteurella species",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Cat bites produce deep, narrow punctures that inoculate oral flora into tendon sheaths and joints and are hard to irrigate; hand wounds and punctures carry the highest infection risk, so prophylaxis is indicated. The main pathogen is Pasteurella multocida (with streptococci, Staphylococcus aureus and anaerobes). Amoxicillin-clavulanate covers all of these and is the first choice for 3 to 5 days."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why cat bites infect more than dog bites</b>: a cat's teeth are thin and sharp, so they leave small punctures that reach periosteum, tendon sheaths and joints but close quickly over the inoculum. Irrigation cannot reach the depth, and on the hand the closed spaces spread infection rapidly to tenosynovitis or septic arthritis. Roughly a third or more of cat bites become infected without treatment, compared with a much smaller proportion of dog bites.<br> <b>Why Pasteurella shapes the choice</b>: P. multocida, a gram-negative coccobacillus that colonizes the mouths of most cats, causes rapidly developing cellulitis within 24 hours. It is sensitive to penicillin and amoxicillin but resistant to first-generation cephalosporins (cephalexin), antistaphylococcal penicillins (dicloxacillin), clindamycin and often erythromycin. Adding clavulanate restores activity against beta-lactamase-producing S. aureus and oral anaerobes.<br> <b>Penicillin allergy</b>: use doxycycline or trimethoprim-sulfamethoxazole (or a fluoroquinolone) for Pasteurella combined with clindamycin or metronidazole for anaerobes."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Agent</th><th style=\"width:39%\">Amoxicillin-clavulanate (correct)</th><th>Cephalexin (closest distractor)</th></tr></thead><tbody> <tr><td>Pasteurella multocida</td><td>Active</td><td>Poor activity</td></tr> <tr><td>Oral anaerobes</td><td>Active (clavulanate)</td><td>Poor activity</td></tr> <tr><td>Best use</td><td>Animal and human bites</td><td>Uncomplicated streptococcal/staphylococcal cellulitis</td></tr> </tbody></table> The bite changes the flora: ordinary cellulitis drugs miss Pasteurella and anaerobes, so a bite needs a beta-lactam/beta-lactamase inhibitor."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Cephalexin covers streptococci and methicillin-sensitive S. aureus but not Pasteurella or anaerobes; it would be appropriate for nonpurulent cellulitis without a bite.\n(C) Clindamycin covers gram-positive organisms and anaerobes but not Pasteurella; in a penicillin-allergic patient it is used together with doxycycline or trimethoprim-sulfamethoxazole.\n(D) Dicloxacillin targets beta-lactamase-producing S. aureus but has weak activity against Pasteurella; it would suit a staphylococcal skin infection unrelated to an animal bite.\n(E) Erythromycin is unreliable against Pasteurella and anaerobes; it would only be considered for streptococcal infection in a patient who cannot take beta-lactams or tetracyclines."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a standard cellulitis antibiotic (cephalexin) for a bite — cat-bite flora includes Pasteurella and anaerobes."
+   },
+   {
+    "k": "학습목표",
+    "v": "고양이에게 물린 손 상처는 Pasteurella 감염 위험이 높아 아목시실린-클라불란산으로 예방함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 (animal bites) · Bennett JE, et al. Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. Ch. Bites; Ch. Pasteurella species"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "손등의 고양이 교상은 감염 위험이 높아 예방적 항생제가 필요하고, 주 원인균 Pasteurella 와 혐기균을 덮는 아목시실린-클라불란산이 적절하다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "고양이 구강 균총(Pasteurella·혐기균)은 1세대 세팔로스포린에 잘 듣지 않는다",
+   "steps": 2,
+   "chain": [
+    "손등의 깊은 천자 교상 → 감염 위험이 높아 예방적 항생제 적응",
+    "고양이 구강 균총 Pasteurella·혐기균 → 아목시실린-클라불란산"
+   ],
+   "key": [
+    {
+     "item": "bitten on the dorsum of her right hand by her own cat",
+     "why": "고양이·손 — 감염 위험이 가장 높은 조합",
+     "also": []
+    },
+    {
+     "item": "two small puncture wounds",
+     "why": "깊고 좁은 상처 — 세척으로 균을 못 뺀다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no fluctuance, and range of motion of the fingers is full",
+     "why": "농양·건초염 가능성을 낮춘다 — 수술적 배농이 필요하지 않다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has no known drug allergies",
+     "why": "페니실린 계열을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the cat is vaccinated against rabies",
+     "why": "광견병 예방 결정 — 항생제 선택에는 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "Her tetanus immunization is up to date",
+     "why": "파상풍 예방 결정 — 항생제 선택에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "손등의 고양이 천자 교상은 감염 위험이 높아 예방적 항생제가 필요하다. Pasteurella·혐기균까지 덮는 아목시실린-클라불란산이 첫 선택이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "페니실린 알레르기가 있었다면 Pasteurella 를 덮는 독시사이클린 등에 혐기균용 클린다마이신을 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0274",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진",
+  "type": "피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "42세 여자가 4일 전부터 열이 나고 온몸에 발진이 생겨 내원하였다. 3주 전 뇌전증으로 카바마제핀을 시작하였다. 체온 38.9 °C 이다. 얼굴이 붓고 몸통과 팔다리에 서로 합쳐지는 붉은 반점과 구진이 체표면의 60 % 정도를 덮고 있다. 피부 박리나 물집은 없고 입안 점막은 정상이다. 목과 겨드랑이에 압통이 있는 림프절이 만져진다. 백혈구 13,200/mm³(호산구 18 %), 아스파르테이트아미노전달효소 186 U/L, 알라닌아미노전달효소 242 U/L, 크레아티닌 0.8 mg/dL 이다.",
+  "question": "카바마제핀을 끊는 것과 함께 가장 적절한 치료는?",
+  "options": [
+   "전신 스테로이드 투여",
+   "정맥 면역글로불린 단독 투여",
+   "경구 항히스타민제만 투여",
+   "아목시실린 경험적 투여",
+   "카바마제핀을 반으로 줄여 유지"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 항경련제(카바마제핀)를 시작하고 3주 뒤 생긴 고열·얼굴 부종·넓은 홍반성 발진·림프절병증·호산구증가·간효소 상승은 호산구증가와 전신 증상을 동반한 약물 반응(DRESS)이다. 물집·피부 박리·점막 침범이 없어 스티븐스-존슨증후군과 다르다. 원인약을 즉시 끊고, 간 등 장기 침범이 있으면 전신 스테로이드를 쓰고 몇 주에 걸쳐 천천히 줄인다.\n- 원리: <b>왜 몇 주 뒤에 생기는가</b>: DRESS 는 약물(또는 대사산물)이 HLA 분자에 실려 T 세포를 자극하는 지연형(IV 형) 과민반응이다. 약에 대한 T 세포 클론이 늘어나는 데 시간이 걸려 시작 후 <b>2~8주</b>에 나타난다 — 며칠 만에 생기는 두드러기·약진과 시점이 다르다. 활성화된 T 세포가 IL-5 를 내 호산구가 늘고, 잠복해 있던 HHV-6 등 헤르페스바이러스가 재활성화되어 경과를 길게 끈다.<br> <b>왜 장기가 다치는가</b>: 피부뿐 아니라 간(가장 흔함)·콩팥·폐·심장에 T 세포와 호산구가 침윤한다. 사망은 대개 전격 간염과 심근염에서 오므로 간효소·크레아티닌·심전도를 확인한다.<br> <b>왜 스테로이드를 천천히 줄이는가</b>: 원인약을 끊어도 활성화된 면역 반응이 남아 있어, 장기 침범이 있으면 전신 스테로이드(프레드니솔론 약 0.5~1 mg/kg/일)로 누르고 6~8주 이상에 걸쳐 줄인다. 빨리 끊으면 재발한다. 카바마제핀과 교차 반응하는 방향족 항경련제(페니토인·페노바르비탈)도 피하고 레비티라세탐 등으로 바꾼다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">DRESS(이 환자)</th><th>스티븐스-존슨증후군 — 면역글로불린을 떠올리는 오답</th></tr></thead><tbody> <tr><td>시작 시점</td><td>약 시작 2~8주</td><td>약 시작 4~28일</td></tr> <tr><td>피부·점막</td><td>얼굴 부종, 넓은 홍반, 박리·점막 침범 드묾</td><td>표적 모양 반점, 표피 박리, 두 곳 이상 점막 침범</td></tr> <tr><td>혈액·장기</td><td>호산구증가, 간염, 림프절병증</td><td>호산구증가 드묾</td></tr> </tbody></table> 같은 카바마제핀이라도 점막과 표피가 벗겨지면 SJS/TEN, 얼굴 부종·호산구·간 침범이면 DRESS 다 — 둘 다 원인약 중단이 첫째다.\n- 오답 이유:\n  - ② 정맥 면역글로불린은 스티븐스-존슨증후군·독성표피괴사용해에서 쓰기도 하지만 근거가 엇갈린다. 표피 박리와 두 곳 이상의 점막 침범이 있었다면 그 진단을 먼저 생각한다.\n  - ③ 경구 항히스타민제만으로는 장기 침범을 막지 못한다. 열·호산구증가·간 침범이 없는 가벼운 반점구진 약진이었다면 원인약 중단과 항히스타민제로 충분하다.\n  - ④ 아목시실린은 세균 감염의 치료이며 오히려 약진을 더 일으킬 수 있다. 인후 배양에서 연쇄상구균이 확인된 성홍열이었다면 페니실린 계열이 맞다.\n  - ⑤ 용량을 줄여 유지하면 과민반응이 계속된다. 용량 의존성 부작용(어지럼·복시)이라면 감량이 맞지만 면역 매개 반응은 반드시 끊는다.\n- 함정: 물집이 없으니 가벼운 약진으로 보고 항히스타민제만 주는 것 — 열·얼굴 부종·호산구증가·간 침범이 있으면 DRESS 다.\n- 학습목표: 항경련제 시작 2~8주 뒤 발열·얼굴 부종·발진·호산구증가·간 침범은 DRESS 이며 원인약 중단과 전신 스테로이드로 치료함을 안다\n- 근거·출처: Bolognia JL, et al. Dermatology, 4th ed. Ch. Drug reactions (DRESS — RegiSCAR criteria, systemic corticosteroids) · Kardaun SH, et al. The RegiSCAR scoring system for DRESS. Br J Dermatol 2013;169:1071-1080",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항경련제(카바마제핀)를 시작하고 3주 뒤 생긴 고열·얼굴 부종·넓은 홍반성 발진·림프절병증·호산구증가·간효소 상승은 호산구증가와 전신 증상을 동반한 약물 반응(DRESS)이다. 물집·피부 박리·점막 침범이 없어 스티븐스-존슨증후군과 다르다. 원인약을 즉시 끊고, 간 등 장기 침범이 있으면 전신 스테로이드를 쓰고 몇 주에 걸쳐 천천히 줄인다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 몇 주 뒤에 생기는가</b>: DRESS 는 약물(또는 대사산물)이 HLA 분자에 실려 T 세포를 자극하는 지연형(IV 형) 과민반응이다. 약에 대한 T 세포 클론이 늘어나는 데 시간이 걸려 시작 후 <b>2~8주</b>에 나타난다 — 며칠 만에 생기는 두드러기·약진과 시점이 다르다. 활성화된 T 세포가 IL-5 를 내 호산구가 늘고, 잠복해 있던 HHV-6 등 헤르페스바이러스가 재활성화되어 경과를 길게 끈다.<br> <b>왜 장기가 다치는가</b>: 피부뿐 아니라 간(가장 흔함)·콩팥·폐·심장에 T 세포와 호산구가 침윤한다. 사망은 대개 전격 간염과 심근염에서 오므로 간효소·크레아티닌·심전도를 확인한다.<br> <b>왜 스테로이드를 천천히 줄이는가</b>: 원인약을 끊어도 활성화된 면역 반응이 남아 있어, 장기 침범이 있으면 전신 스테로이드(프레드니솔론 약 0.5~1 mg/kg/일)로 누르고 6~8주 이상에 걸쳐 줄인다. 빨리 끊으면 재발한다. 카바마제핀과 교차 반응하는 방향족 항경련제(페니토인·페노바르비탈)도 피하고 레비티라세탐 등으로 바꾼다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">DRESS(이 환자)</th><th>스티븐스-존슨증후군 — 면역글로불린을 떠올리는 오답</th></tr></thead><tbody> <tr><td>시작 시점</td><td>약 시작 2~8주</td><td>약 시작 4~28일</td></tr> <tr><td>피부·점막</td><td>얼굴 부종, 넓은 홍반, 박리·점막 침범 드묾</td><td>표적 모양 반점, 표피 박리, 두 곳 이상 점막 침범</td></tr> <tr><td>혈액·장기</td><td>호산구증가, 간염, 림프절병증</td><td>호산구증가 드묾</td></tr> </tbody></table> 같은 카바마제핀이라도 점막과 표피가 벗겨지면 SJS/TEN, 얼굴 부종·호산구·간 침범이면 DRESS 다 — 둘 다 원인약 중단이 첫째다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 정맥 면역글로불린은 스티븐스-존슨증후군·독성표피괴사용해에서 쓰기도 하지만 근거가 엇갈린다. 표피 박리와 두 곳 이상의 점막 침범이 있었다면 그 진단을 먼저 생각한다.\n③ 경구 항히스타민제만으로는 장기 침범을 막지 못한다. 열·호산구증가·간 침범이 없는 가벼운 반점구진 약진이었다면 원인약 중단과 항히스타민제로 충분하다.\n④ 아목시실린은 세균 감염의 치료이며 오히려 약진을 더 일으킬 수 있다. 인후 배양에서 연쇄상구균이 확인된 성홍열이었다면 페니실린 계열이 맞다.\n⑤ 용량을 줄여 유지하면 과민반응이 계속된다. 용량 의존성 부작용(어지럼·복시)이라면 감량이 맞지만 면역 매개 반응은 반드시 끊는다."
+   },
+   {
+    "k": "함정",
+    "v": "물집이 없으니 가벼운 약진으로 보고 항히스타민제만 주는 것 — 열·얼굴 부종·호산구증가·간 침범이 있으면 DRESS 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항경련제 시작 2~8주 뒤 발열·얼굴 부종·발진·호산구증가·간 침범은 DRESS 이며 원인약 중단과 전신 스테로이드로 치료함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, et al. Dermatology, 4th ed. Ch. Drug reactions (DRESS — RegiSCAR criteria, systemic corticosteroids) · Kardaun SH, et al. The RegiSCAR scoring system for DRESS. Br J Dermatol 2013;169:1071-1080"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "카바마제핀 시작 3주 뒤 고열·얼굴 부종·넓은 발진·림프절병증·호산구증가·간 침범은 DRESS 이므로 원인약을 끊고 전신 스테로이드를 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "피부 박리·물집·점막 침범이 없고 호산구증가와 간 침범이 있다",
+   "steps": 2,
+   "chain": [
+    "약 시작 3주 + 고열·얼굴 부종·발진·호산구증가·간효소 상승 → DRESS",
+    "간 침범이 있는 DRESS → 원인약 중단 + 전신 스테로이드"
+   ],
+   "key": [
+    {
+     "item": "3주 전 뇌전증으로 카바마제핀을 시작하였다",
+     "why": "DRESS 의 전형적 잠복기와 원인약",
+     "also": []
+    },
+    {
+     "item": "얼굴이 붓고",
+     "why": "DRESS 의 특징적 소견",
+     "also": []
+    },
+    {
+     "item": "호산구 18 %",
+     "why": "호산구증가",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "피부 박리나 물집은 없고 입안 점막은 정상이다",
+     "why": "스티븐스-존슨증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "알라닌아미노전달효소 242 U/L",
+     "why": "간 침범 — 전신 스테로이드가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌 0.8 mg/dL",
+     "why": "콩팥 침범 없음 — 치료 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "카바마제핀 시작 3주 뒤 고열·얼굴 부종·넓은 발진·림프절병증·호산구증가·간효소 상승이 있고 점막·박리는 없다. DRESS 이므로 원인약을 끊고 전신 스테로이드를 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "표피가 벗겨지고 입안·결막 점막이 침범되었다면 스티븐스-존슨증후군으로 보고 면역글로불린 등을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0263",
   "exam": "imaging",
   "style": "kmle_style",

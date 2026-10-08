@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3452,
+  "total": 3462,
   "byType": {
    "anatomy": 835,
    "usmle": 186,
    "paper": 738,
+   "imaging": 278,
    "concept": 96,
    "kmle": 1312,
-   "imaging": 268,
    "ailab": 14,
    "basic": 3
   },
@@ -38,30 +38,30 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 84,
    "Hematology": 79,
    "Laboratory Medicine": 74,
-   "산부인과": 49,
-   "순환기": 26,
+   "산부인과": 50,
+   "순환기": 27,
    "Physiology": 21,
    "호흡기": 18,
    "소화기": 17,
    "Pharmacology": 16,
    "Biochemistry": 15,
+   "소아과": 15,
    "Microbiology": 14,
-   "소아과": 14,
+   "응급·중환자": 14,
+   "감염": 13,
+   "내분비": 13,
    "병리·조직학": 13,
-   "감염": 12,
-   "내분비": 12,
    "신경": 12,
-   "응급·중환자": 12,
+   "신장·비뇨기": 12,
    "혈액·종양": 12,
    "Internal Medicine": 11,
-   "신장·비뇨기": 11,
    "Immunology": 10,
    "예방의학·역학": 10,
+   "피부과": 10,
    "외과": 9,
-   "피부과": 9,
    "근골격·류마티스": 7,
    "약리": 7,
-   "정신과": 6,
+   "정신과": 7,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2366,
+   "high": 2376,
    "medium": 1036,
    "low": 50
   },
@@ -366,6 +366,180 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-10-08_paper-2026-0731_perioperative_feasibility_and_post_discharge_residual_risk_i.md",
    "snippet": "Title Perioperative feasibility and post discharge residual risk in borderline candidates undergoing durable left ventricular assist device implantation: A single center case series Authors Zhu Wenfang, Liu Guiqing, Liu Liangliang, Chen Yuh",
    "text": "Cardiology scraped pubmed PubMed / Perfusion Title Perioperative feasibility and post discharge residual risk in borderline candidates undergoing durable left ventricular assist device implantation: A single center case series Authors Zhu Wenfang, Liu Guiqing, Liu Liangliang, Chen Yuhong, Zhang Liang, Xu Jinpeng Journal / DOI Perfusion · DOI: 10.1177/02676591261496760 · PMID: 42842815 https://pubmed.ncbi.nlm.nih.gov/42842815/ Abstract IntroductionSome patients considered for durable left ventricular assist device (LVAD) implantation have borderline features or relative contraindication factors that may lead to deferral or reconsideration of implantation. The relationship between perioperative feasibility and post discharge residual risk in such patients remains incompletely described.MethodsWe retrospectively reviewed borderline LVAD candidates selected from 30 consecutive adults undergoing durable LVAD implantation between October 2024 and September 2025. Patients were included when major preoperative decision concerns influenced implantation planning. Outcomes were successful implantation with survival to first discharge and post discharge residual risk related events.ResultsEleven borderline candidates were included. Median age was 56 years (range, 38 73 years). All patients underwent LVAD implantation and survived to first discharge. Median follow up duration was 13.0 months (range, 2.1 18.0 months). During follow up, death occurred in 2 patients, ischemic stroke or intracranial hemorrhage in 4, and gastrointestinal bleeding in 1.ConclusionsBorderline candidacy features did not preclude LVAD implantation or discharge after individualized perioperative handling. However, post discharge residual risk, especially cerebrovascular vulnerability, anticoagulation exposure, and care management limitations, remained clinically important. LVAD candidacy should be considered as a longitudinal care pathway rather than a perioperative decision alone. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0279",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0279.md",
+   "snippet": "28세 남자가 정신병적 초조로 입원하여 2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤 열이 나고 몸이 굳어 의식이 흐려졌다. 그는 6개월 전부터 우울증으로 세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다. 체온 40.1 °C, 혈압 168/102 mmHg, 맥박 124회/분이다. 땀을 많이 흘리고 말이 어눌하다. 팔다리에 굽히고 펼 때 일정한 저항이 있는 납관 경직이 있고, 심부건반사는 정상이며 간대성 근경련",
+   "text": "정신과 정신 — 항정신병약 주사 뒤 고열과 근육 경직 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf 28세 남자가 정신병적 초조로 입원하여 2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤 열이 나고 몸이 굳어 의식이 흐려졌다. 그는 6개월 전부터 우울증으로 세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다. 체온 40.1 °C, 혈압 168/102 mmHg, 맥박 124회/분이다. 땀을 많이 흘리고 말이 어눌하다. 팔다리에 굽히고 펼 때 일정한 저항이 있는 납관 경직이 있고, 심부건반사는 정상이며 간대성 근경련은 없다. 동공 크기는 정상이고 장음은 정상이다. 크레아틴키나아제 18,600 U/L, 백혈구 14,200/mm³, 크레아티닌 1.6 mg/dL 이다. 가장 적절한 처치는? A. 세르트랄린만 끊고 할로페리돌은 유지한다 B. 할로페리돌을 끊고 냉각과 정맥 수액을 준다 C. 사이프로헵타딘을 경구로 투여한다 D. 할로페리돌을 늘려 초조를 진정시킨다 E. 벤즈트로핀을 근육주사한다"
+  },
+  {
+   "id": "imaging-2026-0278",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0278.md",
+   "snippet": "A 54 year old man with type 2 diabetes mellitus comes to the emergency department because of nausea, vomiting and abdominal pain for 1 day. Three months ago, empagliflozin was added to metformin. Two days ago, he underwent laparoscopic chol",
+   "text": "내분비 내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf A 54 year old man with type 2 diabetes mellitus comes to the emergency department because of nausea, vomiting and abdominal pain for 1 day. Three months ago, empagliflozin was added to metformin. Two days ago, he underwent laparoscopic cholecystectomy and has eaten little since. His pulse is 112/min, respirations are 28/min and deep, and blood pressure is 112/70 mm Hg. Laboratory studies show: glucose 196 mg/dL, Na+ 137 mEq/L, Cl 103 mEq/L, HCO3 10 mEq/L, K+ 4.6 mEq/L, and serum beta hydroxybutyrate 6.2 mmol/L (N < 0.6). Arterial pH is 7.14. Serum lactate concentration is 1.4 mmol/L. After empagliflozin is discontinued and intravenous isotonic saline is begun, which of the following is the most appropriate next step in management? A. Intravenous sodium bicarbonate infusion B. Subcutaneous insulin glargine alone C. Intravenous fluids alone D. Intravenous insulin infusion with dextrose containing fluid E. Withholding insulin until the glucose rises above 250 mg/dL"
+  },
+  {
+   "id": "imaging-2026-0277",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 5일 이상 지속되는 발열과 결막 충혈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0277.md",
+   "snippet": "3세 남아가 6일 전부터 열이 39~40 °C 로 나서 내원하였다. 해열제를 먹어도 열이 떨어지지 않는다. 진찰에서 양쪽 눈의 결막이 눈곱 없이 충혈되어 있고, 입술이 붉고 갈라져 있으며 혀가 딸기 모양이다. 손발이 붓고 손바닥·발바닥이 붉다. 몸통에 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 림프절이 만져진다. 백혈구 16,800/mm³, 혈색소 10.9 g/dL, 혈소판 452,000/mm³, C 반응단백 9.8 m",
+   "text": "소아과 소아청소년 — 5일 이상 지속되는 발열과 결막 충혈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf 3세 남아가 6일 전부터 열이 39~40 °C 로 나서 내원하였다. 해열제를 먹어도 열이 떨어지지 않는다. 진찰에서 양쪽 눈의 결막이 눈곱 없이 충혈되어 있고, 입술이 붉고 갈라져 있으며 혀가 딸기 모양이다. 손발이 붓고 손바닥·발바닥이 붉다. 몸통에 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 림프절이 만져진다. 백혈구 16,800/mm³, 혈색소 10.9 g/dL, 혈소판 452,000/mm³, C 반응단백 9.8 mg/dL, 알부민 3.1 g/dL 이다. 인두 신속항원검사에서 A군 연쇄상구균은 음성이다. 심초음파에서 관상동맥 크기는 정상이다. 가장 적절한 치료는? A. 인플릭시맙 단독 B. 정맥 면역글로불린과 고용량 아스피린 C. 경구 아목시실린 10일 D. 심초음파를 2주 뒤 다시 하고 해열제만 투여 E. 정맥 메틸프레드니솔론 단독"
+  },
+  {
+   "id": "imaging-2026-0276",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — 유방은 발달했지만 음모가 적은 원발 무월경",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0276.md",
+   "snippet": "A 17 year old girl is brought to the physician because she has never had a menstrual period. She is 170 cm tall. Breast development is Tanner stage 5, whereas pubic and axillary hair are sparse (Tanner stage 1). Pelvic examination shows nor",
+   "text": "산부인과 부인과 — 유방은 발달했지만 음모가 적은 원발 무월경 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf A 17 year old girl is brought to the physician because she has never had a menstrual period. She is 170 cm tall. Breast development is Tanner stage 5, whereas pubic and axillary hair are sparse (Tanner stage 1). Pelvic examination shows normal external female genitalia and a short, blind ending vagina; the cervix cannot be seen. Bilateral firm masses are palpable in the inguinal canals. Pelvic ultrasonography shows no uterus. Serum follicle stimulating hormone concentration is within the reference range, luteinizing hormone concentration is mildly increased, and total testosterone concentration is in the normal adult male range. Which of the following is the most likely diagnosis? A. Müllerian agenesis B. Turner syndrome C. 5 alpha reductase deficiency D. Kallmann syndrome E. Complete androgen insensitivity syndrome"
+  },
+  {
+   "id": "imaging-2026-0275",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 고양이에게 물린 손의 예방적 항생제",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0275.md",
+   "snippet": "A 35 year old woman comes to the emergency department 6 hours after being bitten on the dorsum of her right hand by her own cat. She is otherwise healthy and takes no medications. Her tetanus immunization is up to date, and the cat is vacci",
+   "text": "감염 감염 — 고양이에게 물린 손의 예방적 항생제 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf A 35 year old woman comes to the emergency department 6 hours after being bitten on the dorsum of her right hand by her own cat. She is otherwise healthy and takes no medications. Her tetanus immunization is up to date, and the cat is vaccinated against rabies. Her temperature is 36.9°C. Examination shows two small puncture wounds over the third metacarpal with mild surrounding erythema; there is no fluctuance, and range of motion of the fingers is full. The wounds are irrigated. She has no known drug allergies. Which of the following is the most appropriate antibiotic for this patient? A. Amoxicillin clavulanate B. Cephalexin C. Clindamycin D. Dicloxacillin E. Erythromycin"
+  },
+  {
+   "id": "imaging-2026-0274",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0274.md",
+   "snippet": "42세 여자가 4일 전부터 열이 나고 온몸에 발진이 생겨 내원하였다. 3주 전 뇌전증으로 카바마제핀을 시작하였다. 체온 38.9 °C 이다. 얼굴이 붓고 몸통과 팔다리에 서로 합쳐지는 붉은 반점과 구진이 체표면의 60 % 정도를 덮고 있다. 피부 박리나 물집은 없고 입안 점막은 정상이다. 목과 겨드랑이에 압통이 있는 림프절이 만져진다. 백혈구 13,200/mm³(호산구 18 %), 아스파르테이트아미노전달효소 186 U/L, 알",
+   "text": "피부과 피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf 42세 여자가 4일 전부터 열이 나고 온몸에 발진이 생겨 내원하였다. 3주 전 뇌전증으로 카바마제핀을 시작하였다. 체온 38.9 °C 이다. 얼굴이 붓고 몸통과 팔다리에 서로 합쳐지는 붉은 반점과 구진이 체표면의 60 % 정도를 덮고 있다. 피부 박리나 물집은 없고 입안 점막은 정상이다. 목과 겨드랑이에 압통이 있는 림프절이 만져진다. 백혈구 13,200/mm³(호산구 18 %), 아스파르테이트아미노전달효소 186 U/L, 알라닌아미노전달효소 242 U/L, 크레아티닌 0.8 mg/dL 이다. 카바마제핀을 끊는 것과 함께 가장 적절한 치료는? A. 전신 스테로이드 투여 B. 정맥 면역글로불린 단독 투여 C. 경구 항히스타민제만 투여 D. 아목시실린 경험적 투여 E. 카바마제핀을 반으로 줄여 유지"
+  },
+  {
+   "id": "imaging-2026-0273",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0273.md",
+   "snippet": "13세 남자가 4시간 전 자전거를 타다 넘어져 핸들에 왼쪽 윗배를 부딪힌 뒤 숨이 차서 응급실에 왔다. 혈압 110/70 mmHg, 맥박 118회/분, 호흡 32회/분, 산소포화도 90 %(대기)이다. 왼쪽 가슴의 호흡음이 줄어 있고 그 부위에서 장음이 들린다. 기관은 오른쪽으로 치우쳐 있다. 배는 약간 꺼져 보이고 왼쪽 윗배에 압통이 있다. 혈색소는 13.2 g/dL 이다. 흉부 X선은 그림과 같다. 가장 적절한 처치는? A",
+   "text": "응급·중환자 응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf 13세 남자가 4시간 전 자전거를 타다 넘어져 핸들에 왼쪽 윗배를 부딪힌 뒤 숨이 차서 응급실에 왔다. 혈압 110/70 mmHg, 맥박 118회/분, 호흡 32회/분, 산소포화도 90 %(대기)이다. 왼쪽 가슴의 호흡음이 줄어 있고 그 부위에서 장음이 들린다. 기관은 오른쪽으로 치우쳐 있다. 배는 약간 꺼져 보이고 왼쪽 윗배에 압통이 있다. 혈색소는 13.2 g/dL 이다. 흉부 X선은 그림과 같다. 가장 적절한 처치는? A. 왼쪽 다섯째 갈비사이에 흉관을 넣는다 B. 왼쪽 둘째 갈비사이에 바늘 감압을 한다 C. 산소를 주고 6시간 뒤 흉부 X선을 다시 찍는다 D. 기관지 내시경으로 왼쪽 주기관지를 확인한다 E. 비위관을 넣어 감압한 뒤 응급 수술로 가로막을 교정한다"
+  },
+  {
+   "id": "imaging-2026-0272",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0272.md",
+   "snippet": "A 39 year old man comes to the emergency department because of abdominal pain and distension for 3 days. Three days ago, he fell at home after drinking heavily, striking his lower abdomen on the edge of a table. Since then he has passed onl",
+   "text": "신장·비뇨기 신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf A 39 year old man comes to the emergency department because of abdominal pain and distension for 3 days. Three days ago, he fell at home after drinking heavily, striking his lower abdomen on the edge of a table. Since then he has passed only small amounts of urine. His temperature is 37.4°C, pulse is 104/min, and blood pressure is 118/74 mm Hg. The abdomen is distended with diffuse tenderness and shifting dullness. There is no blood at the urethral meatus. Serum urea nitrogen concentration is 62 mg/dL, and serum creatinine concentration is 3.4 mg/dL; one year ago, the creatinine concentration was 0.9 mg/dL. Creatinine concentration in fluid obtained by paracentesis is much higher than that in serum. Pelvic radiographs show no fracture. Contrast enhanced CT of the abdomen and pelvis is shown. Which of the following is the most appropriate next step in management? A. Repeated large volume paracentesis B. Bilateral percutaneous nephrostomy C. Surgical repair of the bladder D. Urethral catheter drainage alone for 2 weeks E. Hemodialysis"
+  },
+  {
+   "id": "imaging-2026-0271",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0271.md",
+   "snippet": "33세 남자가 2일 전부터 숨이 차고 어지러워 응급실에 왔다. 15일 전 오토바이 사고로 가슴을 부딪혔고, 당시 갈비뼈 골절 외에 특별한 손상이 없어 퇴원하였다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8 °C 이다. 앉은 자세에서 목정맥이 확장되어 있고 심음이 작게 들린다. 들숨 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐의 호흡음은 대칭적이다. 혈색소는 12.8 g/dL 이다. 흉",
+   "text": "응급·중환자 응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf 33세 남자가 2일 전부터 숨이 차고 어지러워 응급실에 왔다. 15일 전 오토바이 사고로 가슴을 부딪혔고, 당시 갈비뼈 골절 외에 특별한 손상이 없어 퇴원하였다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8 °C 이다. 앉은 자세에서 목정맥이 확장되어 있고 심음이 작게 들린다. 들숨 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐의 호흡음은 대칭적이다. 혈색소는 12.8 g/dL 이다. 흉부 CT 는 그림과 같다. 가장 적절한 처치는? A. 정맥 이뇨제 투여 B. 정맥 혈전용해제 투여 C. 응급 관상동맥조영술 D. 초음파 유도 심낭천자 E. 양쪽 흉관 삽입"
+  },
+  {
+   "id": "imaging-2026-0270",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ecg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+   "confidence": "high",
+   "date": "2026-10-08",
+   "path": "content/imaging/2026/imaging-2026-0270.md",
+   "snippet": "A 78 year old woman comes to the physician because of progressive shortness of breath on exertion and ankle swelling for 6 months. Two years ago, she underwent surgery for bilateral carpal tunnel syndrome. She has no history of hypertension",
+   "text": "순환기 순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도 opendata usmle_style ecg 의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf A 78 year old woman comes to the physician because of progressive shortness of breath on exertion and ankle swelling for 6 months. Two years ago, she underwent surgery for bilateral carpal tunnel syndrome. She has no history of hypertension, and her blood pressure has been 110 to 120/70 mm Hg at previous visits. Today, her blood pressure is 108/68 mm Hg, and pulse is 82/min and irregular. Jugular venous pressure is elevated, and there is 2+ pitting edema of both ankles. No murmur is heard. Serum N terminal pro B type natriuretic peptide concentration is increased. Echocardiography shows a left ventricular wall thickness of 17 mm, a left ventricular ejection fraction of 55%, and biatrial enlargement; the aortic valve opens normally. An ECG is shown. Which of the following is the most likely cause of this patient's heart failure? A. Constrictive pericarditis B. Aortic stenosis C. Transthyretin cardiac amyloidosis D. Hypertensive heart disease E. Hypertrophic cardiomyopathy"
   },
   {
    "id": "cn.rheum.autoimmunity.autoantibody-injury-mechanism",
