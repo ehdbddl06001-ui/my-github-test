@@ -2,6 +2,73 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0746",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Enhancing computational thinking in early childhood: A cluster-randomized controlled trial of interactive STEM app intervention and the role of engagement",
+  "authors": [
+   "Wang Yumei",
+   "Liu Shiying"
+  ],
+  "journal": "PloS one",
+  "doi": "10.1371/journal.pone.0353980",
+  "pmid": "42853818",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42853818/",
+  "pubdate": "2026",
+  "date": "2026-10-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "This cluster-randomized controlled trial investigated whether a 12-week interactive STEM app intervention enhances computational thinking skills among young children aged 4-6 years and whether app usage engagement predicts learning outcomes. Ten classrooms from five kindergartens in Northern China were randomly assigned within each kindergarten to an intervention condition (5 classrooms, 125 children) that received structured app-based activities three times weekly or a waitlist control condition (5 classrooms, 125 children) that continued with traditional educational practices. Computational thinking was assessed at pretest and posttest using the TechCheck-K, a validated assessment designed for young children that does not require prior coding knowledge. App usage engagement was quantified through a multidimensional composite index capturing task completion, time on task, persistence, help-seeking efficiency, navigation independence, self-correction, and attendance. After controlling for baseline ability and demographics, children in the intervention group demonstrated significantly greater computational thinking gains than controls, with a small-to-moderate effect size of Cohen's d = 0.39. Within the intervention group, higher engagement significantly predicted superior posttest performance, although the unique variance explained was modest (approximately 1.5% beyond baseline ability and demographic characteristics) and the relationship is specific to the intervention context. These findings provide evidence that interactive STEM apps can enhance early computational thinking development when implemented systematically, and the main intervention effect was robust to mixed-effects sensitivity analyses accounting for clustering at both the kindergarten and classroom levels. Engagement emerged as a statistically significant, though practically modest, predictor of technology-based learning outcomes within the intervention context, underscoring the potential importance of fostering active, persistent interaction with educational technologies without overstating its standalone contribution. Implications for early childhood education practice, app design, and technology integration are discussed.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0745",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Kartagener syndrome with pulmonary mycetoma and recurrent thromboembolism: A case report",
+  "authors": [
+   "Khan Muhammad Asghar",
+   "Tahir Okasha",
+   "Khan Abbas",
+   "Sheraz Maheen",
+   "Reza Khalid",
+   "Javaid Muhammad Hassaan",
+   "Altaf Laleen",
+   "Shehzad Eeman",
+   "et al."
+  ],
+  "journal": "Medicine",
+  "doi": "10.1097/MD.0000000000051057",
+  "pmid": "42854052",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42854052/",
+  "pubdate": "2026-10-09",
+  "date": "2026-10-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**RATIONALE:** Kartagener syndrome, a variant of primary ciliary dyskinesia, is defined by chronic sinusitis, bronchiectasis, and situs inversus. While recurrent infections are seen, a combination of thromboembolic disease, pulmonary mycetoma, cardiac dysfunction, and serological evidence of autoimmune disorders is very uncommon.\n\n**PATIENT CONCERNS:** A 27-year-old man with Kartagener syndrome and situs inversus totalis complaining of worsening dyspnea, chest pain, fever, hemoptysis, and ankle swelling. His past medical history included episodes of deep vein thrombosis, recurrent pulmonary embolism, and chronic productive cough.\n\n**DIAGNOSES:** Radiologic studies showed dextrocardia, a right upper lobe cavitary lesion indicative of pulmonary mycetoma, hepatic congestion, and ascites. The echocardiogram demonstrated severe dysfunction of both left and right ventricles, a thrombus in the right ventricle, mild-moderate pericardial effusion, and an ejection fraction of about 40%. BNP was elevated, and U1-ribonucleoprotein antibodies were positive, implying a probable overlap of autoimmune disease, but diagnostic criteria were not fulfilled.\n\n**INTERVENTIONS:** He was prescribed appropriate heart failure management, anticoagulant therapy, antifungals, and multidisciplinary treatment of other issues.\n\n**OUTCOMES AND LESSONS:** The patient underwent adequate management of his cardiopulmonary, infectious, and thromboembolic complications. The existence of a causal link between these diseases could not be found. This case underscores the need for a multidisciplinary approach in evaluating patients with a combination of congenital and acquired systemic diseases. The association of Kartagener syndrome, pulmonary mycetoma, thromboembolic tendency, right ventricular thrombus formation, cardiac dysfunction, and positive U1-RNP is an unusual combination and calls for proper evaluation.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0744",
   "topic": "Pediatrics",
   "subtopic": "",
