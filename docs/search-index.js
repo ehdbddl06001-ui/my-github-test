@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3495,
+  "total": 3501,
   "byType": {
+   "paper": 744,
    "kmle": 1344,
    "concept": 97,
    "anatomy": 835,
    "usmle": 186,
-   "paper": 738,
    "imaging": 278,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 835,
-   "Cardiology": 244,
-   "Nephrology": 194,
-   "Infectious Disease": 177,
-   "Pediatrics": 162,
+   "Cardiology": 245,
+   "Nephrology": 195,
+   "Infectious Disease": 178,
+   "Pediatrics": 163,
    "Obstetrics & Gynecology": 118,
-   "Hematology-Oncology": 109,
-   "Pathology": 107,
+   "Hematology-Oncology": 110,
+   "Pathology": 108,
    "Psychiatry": 101,
    "Neurology": 100,
    "Rheumatology": 98,
@@ -78,13 +78,115 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
+   "medium": 1043,
    "high": 2408,
-   "medium": 1037,
    "low": 50
   },
   "tagCount": 4660
  },
  "docs": [
+  {
+   "id": "paper-2026-0744",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of behavioral medicine : a publication of the Society of Behavioral Medicine",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0744_moderators_of_design_and_delivery_component_effects_on_engag.md",
+   "snippet": "Title Moderators of design and delivery component effects on engagement with a digital parenting intervention: evidence from a factorial randomized trial in Tanzania Authors Janowski Roselinde, Shenderovich Yulia, Wamoyi Joyce, Stern David,",
+   "text": "Pediatrics scraped pubmed PubMed / Annals of behavioral medicine : a publication of the Society of Behavioral Medicine Title Moderators of design and delivery component effects on engagement with a digital parenting intervention: evidence from a factorial randomized trial in Tanzania Authors Janowski Roselinde, Shenderovich Yulia, Wamoyi Joyce, Stern David, Lachman Jamie M, Melendez Torres G J, Cluver Lucie D Journal / DOI Annals of behavioral medicine : a publication of the Society of Behavioral Medicine · DOI: 10.1093/abm/kaag033 · PMID: 42847385 https://pubmed.ncbi.nlm.nih.gov/42847385/ Abstract BACKGROUND: Digital health interventions are rapidly expanding in low and middle income countries (LMICs), yet little is known about how design and delivery components can be tailored to support engagement across diverse populations. Addressing this gap is critical for effective and equitable implementation. PURPOSE: This study used a factorial experiment, embedded within the Optimization Phase of the Multiphase Optimization Strategy (MOST), to examine whether caregiver characteristics moderated the effects of design and delivery components on engagement with an app based parenting intervention in Tanzania. METHODS: A 2 × 2 × 2 cluster randomized factorial experiment was conducted in Mwanza, Tanzania (16 clusters; 614 caregivers of adolescents). Three components were tested: guidance (guided vs self guided), app design (unstructured vs structured), and digital support (enhanced vs basic). Engagement was operationalized as the number of intervention modules completed, which was tracked automatically via the app. Generalized linear mixed effects models examined moderation by caregiver gender, age, financial stress, food insecurity, positive parenting, child maltreatment, and caregiver depression. RESULTS: Gender, age, positive parenting, and depressive symptoms moderated the effects of specific components on engagement. Women showed significantly higher engagement with the unstructured versus structured app design (incidence rate ratio [IRR] = 1.48, 95% CI, 1.23 1.80), whereas no significant app design differences were observed among men. Older caregivers showed greater engagement under guided delivery (vs self guided; IRR = 1.15, 95% CI, 1.06 1.25) and enhanced digital support (vs basic support; IRR = 1.15, 95% CI, 1.06 1.26). Greater engagement under guided versus self guided delivery was also observed among caregivers reporting more positive parenting practices (IRR = 1.03, 95% CI, 1.02 1.04) and higher depressive symptoms (IRR = 1.06, 95% CI, 1.03 1.09). However, caregivers reporting more positive parenting practices showed lower engagement under enhanced digital support (vs basic support; IRR = 0.96, 95% CI, 0.95 0.98). No moderation effects were observed for financial stress, food insecurity, or child maltreatment. CONCLUSIONS: Tailoring design and delivery components to specific caregiver characteristics may enhance engagement and promote more equitable implementation of digital parenting interventions in LMICs. CLINICAL TRIAL REGISTRATION NUMBER: The trial was pre registered on the Pan African Clinical Trial Registry PACTR202210657553944; https://pactr.samrc.ac.za/TrialDisplay.aspx?TrialID=24051. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0743",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Indian dermatology online journal",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0743_correlation_of_serum_and_tissue_eosinophils_and_immunoglobul.md",
+   "snippet": "Title Correlation of Serum and Tissue Eosinophils and Immunoglobulin E with Disease Severity in Bullous Pemphigoid: A Prospective Observational Study Authors Krishnamoorthy Kanimozhi, Rai Reena, Shanmugasundaram Sakthisankari Journal / DOI ",
+   "text": "Pathology scraped pubmed PubMed / Indian dermatology online journal Title Correlation of Serum and Tissue Eosinophils and Immunoglobulin E with Disease Severity in Bullous Pemphigoid: A Prospective Observational Study Authors Krishnamoorthy Kanimozhi, Rai Reena, Shanmugasundaram Sakthisankari Journal / DOI Indian dermatology online journal · DOI: 10.4103/idoj.idoj 963 25 · PMID: 42849025 https://pubmed.ncbi.nlm.nih.gov/42849025/ Abstract BACKGROUND: Bullous pemphigoid (BP) is a subepidermal autoimmune blistering disorder in which eosinophils and immunoglobulin E (IgE) are implicated in disease pathogenesis and are potential markers of disease activity. AIM AND OBJECTIVE: To evaluate the association of serum and tissue eosinophils and IgE levels with disease severity in BP. PATIENTS AND METHODS: A prospective observational study was conducted from October 2023 to December 2024 at a tertiary care center in South India. Thirty five patients with clinically and histopathologically confirmed BP were included, disease severity was assessed using the bullous pemphigoid disease activity index (BPDAI). Serum eosinophil counts, serum IgE levels, histopathology, and direct immunofluorescence (DIF) findings for IgE deposition at the basement membrane zone (BMZ) were analyzed. RESULTS: Higher disease activity (BPDAI 20/372) was observed in 77% of patients (27/35). Fisher's exact test showed no significant association between higher BPDAI scores and elevated serum eosinophil counts ( 500 cells/μL), elevated serum IgE levels ( 500 IU/mL) or DIF detected IgE deposition at BMZ. However, biopsy evidence of eosinophil predominant inflammatory infiltrates was significantly associated with higher disease activity (odds ratio [OR] =9.638; 95% confidence interval [CI]: 1.613 56.952; P = 0.029). LIMITATIONS: Small sample size, cross sectional analysis, biopsy site variability and immunofluorescence methodology may have limited detection of IgE related associations. Sample size calculation was based on the expected prevalence of IgE reactivity, but the significant association identified in our study involved tissue eosinophilia, for which the study was not specifically powered. CONCLUSION: Eosinophilic infiltration is strongly associated with BP severity, reinforcing its pathogenic role. Although serum IgE was frequently elevated, its correlation with severity was more evident when also detected in tissue. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0742",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0742_immunohistochemistry_for_c_met_hla_class_ii_and_cd68_does_no.md",
+   "snippet": "Title Immunohistochemistry for c MET, HLA class II, and CD68 does not show prognostic value in early stage classic Hodgkin lymphoma patients in the EORTC GELA H9 intergroup randomised trial Authors Martinez Alcala Rodrigo, Visser Lydia, For",
+   "text": "Hematology-Oncology scraped pubmed PubMed / PloS one Title Immunohistochemistry for c MET, HLA class II, and CD68 does not show prognostic value in early stage classic Hodgkin lymphoma patients in the EORTC GELA H9 intergroup randomised trial Authors Martinez Alcala Rodrigo, Visser Lydia, Fortpied Catherine, Fermé Christophe, Henry Amar Michel, Aleman Berthe, Arens Anne, Juul Sidsel, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0360080 · PMID: 42848781 https://pubmed.ncbi.nlm.nih.gov/42848781/ Abstract BACKGROUND: In classic Hodgkin lymphoma (cHL), identifying high risk patients is crucial for tailored treatment. Clinical risk factors are useful, but there is room for improvement. Although many diagnostic tissue based biomarkers have been described to correlate with prognosis, none have achieved the accuracy to be included into daily clinical practice. METHODS: The most promising tissue biomarkers, c MET, HLA class II, and CD68, were tested in early stage cHL for prognostic validation, individually and in combination with each other and established clinical risk factors. All biomarkers were assessed by immunohistochemistry in diagnostic tissue of patients included in the EORTC GELA H9 trial. A case cohort design was used, with progression free survival (PFS) as the primary endpoint (n = 257; 105 PFS events). Hazard ratios (HRs) were estimated using Cox regression models with Barlow weighting to account for the case cohort structure. RESULTS: c MET expression was detected in the tumor cells in 67% (108/162) of evaluable cases, and cell surface expression of HLA class II was observed in 51% (70/137), consistent with earlier studies. CD68 expression was scored as the percentage of tissue surface area stained, with scores above the median (9.4%) designated high. In univariate Cox regression analyses, the HRs for PFS were: 0.752 for c MET (95% confidence interval (CI): 0.456 1.241); 0.854 for HLA class II (95% CI: 0.503 1.448); and 0.864 for CD68 (95% CI: 0.518 1.440). Since none of the biomarkers were significantly associated with PFS in univariate analysis, no further analyses combining the three biomarkers were performed. CONCLUSIONS: Using a rigorous statistical approach, we found that none of the three candidate biomarkers correlated with patient outcomes. While this lack of validation may be explained by trial specific factors, such as risk adapted treatment, the exclusion of advanced stage patients, or challenges in scoring, these biomarkers provide insufficient prognostic value for implementation in clinical practice. REGISTRATION: NCT00005584 (https://clinicaltrials.gov/study/NCT00005584). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0741",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer research",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0741_sodium_glucose_cotransporter_sglt2_supports_metabolic_fitnes.md",
+   "snippet": "Title Sodium Glucose Cotransporter SGLT2 Supports Metabolic Fitness and Ferroptosis Resistance in CAR T Cells to Enhance Activity Against Solid Tumors Authors Gao Yaoxin, Yang Xinbin, Mao Xiaowen, Zhang Luoming, Lv Pengju, Ma Baodong, Qin F",
+   "text": "Nephrology scraped pubmed PubMed / Cancer research Title Sodium Glucose Cotransporter SGLT2 Supports Metabolic Fitness and Ferroptosis Resistance in CAR T Cells to Enhance Activity Against Solid Tumors Authors Gao Yaoxin, Yang Xinbin, Mao Xiaowen, Zhang Luoming, Lv Pengju, Ma Baodong, Qin Fuli, Jin Ranran, et al. Journal / DOI Cancer research · DOI: 10.1158/0008 5472.CAN 26 1157 · PMID: 42848976 https://pubmed.ncbi.nlm.nih.gov/42848976/ Abstract Antitumor T cell function is tightly coupled with cellular metabolism, which is severely compromised by glucose deprivation and elevated sodium chloride (NaCl) in the solid tumor microenvironment (TME). Here, we demonstrated that glucose restriction markedly impaired activation, cytotoxicity, and persistence of CAR T cells while promoting exhaustion, whereas high NaCl partially reversed these defects. Overexpression of the sodium glucose cotransporter SGLT2 in CAR T cells to simultaneously enhance glucose and NaCl uptake led to stronger antitumor activity in multiple solid tumor xenograft models. Mechanistically, SGLT2 overexpression elevated glycolysis and mitochondrial fitness, inhibited ferroptosis, and activated the AKT mTOR pathway. These findings establish a metabolic engineering strategy that boosts glucose utilization in CAR T cells to overcome TME stress and enhance solid tumor control. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0740",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR research protocols",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0740_nurse_led_and_nurse_involved_antimicrobial_stewardship_in_ho.md",
+   "snippet": "Title Nurse Led and Nurse Involved Antimicrobial Stewardship in Hospitals and Primary Care: Protocol for a Mixed Methods Systematic Review and Meta Analysis With Gulf Cooperation Council and Middle East and North Africa Subgroup Analysis Au",
+   "text": "Infectious Disease scraped pubmed PubMed / JMIR research protocols Title Nurse Led and Nurse Involved Antimicrobial Stewardship in Hospitals and Primary Care: Protocol for a Mixed Methods Systematic Review and Meta Analysis With Gulf Cooperation Council and Middle East and North Africa Subgroup Analysis Authors Pandarakutty Suthan, Poku Brenda, Ramasubramaniam Shanthi, Nalubega Sylivia, Mansour Mansour, Varghese Manju, Renganathan Lakshmi, Chandu Vijith, et al. Journal / DOI JMIR research protocols · DOI: 10.2196/96342 · PMID: 42849019 https://pubmed.ncbi.nlm.nih.gov/42849019/ Abstract BACKGROUND: Antimicrobial resistance poses a growing threat to patient safety worldwide. Nurses are central to antimicrobial management; however, their contribution to formal antimicrobial stewardship (AMS) programs remains poorly characterized. To our knowledge, no previous review has combined evidence on the effectiveness and implementation of nurse led and nurse involved AMS interventions, including Gulf Cooperation Council and Middle East and North Africa (GCC/MENA) subgroup analysis. OBJECTIVE: This protocol describes a mixed methods systematic review that aims to determine (1) the effectiveness of nurse led or nurse involved AMS interventions on patient and antimicrobial outcomes in hospital and primary care settings and (2) the barriers and facilitators influencing this implementation using the Consolidated Framework for Implementation Research (CFIR 2.0). METHODS: This review follows the Joanna Briggs Institute convergent, parallel streams mixed methods methodology. Eligible studies report a nurse led or nurse involved AMS intervention among adults receiving antimicrobial therapy in hospital or primary care settings; pediatric only and long term care settings are excluded. Eleven databases will be searched from January 2000 to the calendar month of searching. Two reviewers will independently screen records in 2 rounds, with agreement quantified by Cohen κ (target ≥0.70). The quantitative stream will include randomized, quasi experimental, interrupted time series, and controlled before and after studies, with effect measures matched to outcome type. Risk of bias will be independently assessed using design matched tools. Random effects meta analysis will be the primary approach, with prediction intervals supplementing I² to quantify heterogeneity. The qualitative stream will synthesize implementation data through hybrid deductive inductive CFIR 2.0 thematic synthesis. Both streams will be integrated through a convergent joint display classifying findings as convergent, complementary, expansive, or discordant. Three primary subgroup analyses will compare GCC/MENA vs the rest of the world, hospital vs primary care, and levels of nursing involvement. GRADE (Grading of Recommendations Assessment, Development and Evaluation) will be applied to all primary quantitative outcomes. RESULTS: Database searches, Covidence import, and deduplication were completed in March 2026. Title and abstract screening, including pilot calibration, was completed by June 2026. Full text screening was planned for completion by August 2026, followed by parallel quantitative and qualitative data extraction from August to September 2026. Meta analysis, CFIR thematic synthesis, and GRADE assessment are expected by November 2026, with mixed methods integration planned for November to December 2026. Manuscript writing is planned for January to February 2027, with submission targeted for March 2027. No amendments to the registered protocol have occurred. CONCLUSIONS: This review is intended to provide one of the first meta analytic syntheses of nurse led and nurse involved AMS clinical effectiveness alongside a structured implementation analysis. Findings may inform stewardship program design, nursing education, and health policy, particularly in GCC/MENA settings where nursing AMS evidence is scarce. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0739",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of evaluation in clinical practice",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0739_a_clinical_decision_support_system_for_af_thromboprophylaxis.md",
+   "snippet": "Title A Clinical Decision Support System for AF Thromboprophylaxis: Its Impact on Residents' Learning and Confidence in Clinical Decision Making Authors Ansari Ramin, Mollazadeh Reza, Mafinejad Mahboobeh Khabaz, Safaei Ali Asghar, Rezaei Ei",
+   "text": "Cardiology scraped pubmed PubMed / Journal of evaluation in clinical practice Title A Clinical Decision Support System for AF Thromboprophylaxis: Its Impact on Residents' Learning and Confidence in Clinical Decision Making Authors Ansari Ramin, Mollazadeh Reza, Mafinejad Mahboobeh Khabaz, Safaei Ali Asghar, Rezaei Eisa, Namazi Soha, Mohammadi Keyhan Journal / DOI Journal of evaluation in clinical practice · DOI: 10.1111/jep.70660 · PMID: 42848927 https://pubmed.ncbi.nlm.nih.gov/42848927/ Abstract RATIONALE: Mobile health (mHealth) offers a modern educational approach for delivering behavioural interventions and enhancing healthcare professionals' knowledge, particularly through technology enhanced tools like clinical decision support systems (CDSS). Given the complexity of AF thromboprophylaxis balancing thromboembolic/bleeding risk, comorbidities, considering lab data, and drug interactions such tools are critical, as evidence based thromboprophylaxis reduces both stroke risk and mortality. AIMS AND OBJECTIVES: This study aimed to examine changes in clinical pharmacy and cardiology residents' performance on case based multiple choice questions (MCQs) related to AF thromboprophylaxis and their self reported confidence in their responses following exposure to the ACAFiB CDSS. METHODS: Using a quasi‑experimental pre‑test/post‑test design, the ACAFiB web‑based CDSS was assessed for its potential to assist in improving learning and confidence. Fifteen complex clinical scenarios in multiple‑choice format were used for the pre‑test, and another 15 thematically similar scenarios were used for the post‑test. Thirty‑one residents participated in two exams, 1 week apart. During the pre‑test, participants could search freely, whereas in the post‑test, they were restricted to using only ACAFiB. They also reported their confidence level for each response. RESULTS: Test scores increased from 7.06 ± 2.08 to 10.74 ± 2.11 (p < 0.001; effect size: 1.71), and confidence weighted scores increased from 0.71 ± 10.05 to 17.90 ± 10.52 (p < 0.001; effect size: 1.43) following ACAFiB exposure. These findings indicate improved performance on the case based assessment and higher confidence weighted scores after use of the CDSS. No significant differences were observed between residents based on specialty, residency entry year, or gender. CONCLUSION: In conclusion, this study suggests that the use of the ACAFiB CDSS is associated with improvements in residents' clinical decision making performance and confidence in managing thromboprophylaxis for AF patients. Future studies should evaluate the tool's effectiveness using patient‑centred outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-1376",
    "type": "kmle",
@@ -10829,8 +10931,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-25",
    "path": "content/concepts/pathology/cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes.md",
-   "snippet": "정의 고환 생식세포종양(GCT)은 고환 종양의 95 % 이며, 정상피종과 비정상피종(NSGCT)으로 나뉜다. 정상피종은 조직이 100 % 정상피종일 때만 붙이는 이름이고, 섞이면 NSGCT 로 다룬다 [[harrison 21: 88장 p.689–690]]. 이 정리본의 목표는 치료가 아니라, 면역염색 사진에서 「누가 종양인가」를 가려 정상피종을 진단하고 림프종·NSGCT 와 감별하는 것 이다. 병태생리 정상에서 출발. 정세관 ",
-   "text": "Hematology-Oncology 정의 고환 생식세포종양(GCT)은 고환 종양의 95 % 이며, 정상피종과 비정상피종(NSGCT)으로 나뉜다. 정상피종은 조직이 100 % 정상피종일 때만 붙이는 이름이고, 섞이면 NSGCT 로 다룬다 [[harrison 21: 88장 p.689–690]]. 이 정리본의 목표는 치료가 아니라, 면역염색 사진에서 「누가 종양인가」를 가려 정상피종을 진단하고 림프종·NSGCT 와 감별하는 것 이다. 병태생리 정상에서 출발. 정세관 안의 생식세포는 원시 생식세포에서 나와 정자로 분화하고, 세관 사이 간질에는 Leydig 세포와 혈관·소수의 림프구가 있다. GCT 의 기원 세포는 원시 생식세포이며, 대부분 생식세포 상피내 종양(GCNIS)을 거쳐 생기고 i(12p) 복제수 증가가 흔하다 [[harrison 21: 88장 p.690]]. 무엇으로 분화했나가 모양과 표지자를 정한다. 정상피종은 배아·배아외 조직 어느 쪽으로도 분화하지 않은 원시 생식세포를 닮아 크고 둥글며 글리코겐이 많은 맑은 세포질을 갖고, 섬유 격막으로 나뉜 판을 이룬다. 격막에는 숙주 면역 반응인 T 림프구(때로 육아종)가 거의 늘 있다 [[?robbins 10]]. 난황 구조를 만들지 않으므로 AFP 를 만들지 않고, 합포영양세포가 섞이면 hCG 를 조금 낸다 [[harrison 21: 88장 p.690]]. 반면 배아암종은 가장 미분화한 NSGCT 로 다른 아형으로 분화할 수 있고, 난황낭종양은 AFP, 융모막암은 매우 높은 hCG 를 낸다 [[harrison 21: 88장 p.690]]. 림프종은 다른 뿌리. 고환의 비호지킨 림프종은 생식세포가 아닌 림프구에서 나온 비생식세포종양이며 고령 남성에게 흔하다 [[harrison 21: 88장 p.694]]. 이때는 크고 이형성인 림프구 자체가 종양이다 [[?robbins 10]]. 기전에서 소견으로 통증 없는 단단한 고환 종괴 — GCT 의 전형이지만 실제로는 부종·단단함·불편감으로 오는 경우가 많다. hCG 가 높으면 여성형 유방이 생길 수 있다 [[harrison 21: 88장 p.690]]. 초음파 저에코(다발 가능) 고형 종괴 — 달리 증명될 때까지 악성 [[harrison 21: 88장 p.690]]. CD3 염색에서 격막의 작은 림프구만 갈색, 맑은 종양세포 음성 — 정상피종의 숙주 반응을 그린 것 [[?robbins 10]]. AFP 정상, hCG 경미 상승, LDH 상승 — 정상피종과 맞다. LDH 는 비특이적 종양 부담 표지다 [[harrison 21: 88장 p.690]]. 정상 결과의 한계 : 정상피종 대부분과 NSGCT 의 최대 1/3 은 표지자가 정상이다 — 정상 표지자로 GCT 를 배제하지 않는다 [[harrison 21: 88장 p.690]]. 감별 림프종 : 갈색 세포가 크고 이형성인 판이면 림프종, 작고 격막에 모여 있으면 정상피종의 반응. 나이(고령)·양측성도 림프종 쪽 단서다 [[harrison 21: 88장 p.694]]. 배아암종 : 다형성·샘 구조·괴사·출혈, CD30 양성, AFP·hCG 가 오를 수 있음 [[harrison 21: 88장 p.690]] [[?robbins 10]]. 난황낭종양 : AFP 상승이 핵심. AFP 정상이면 멀어진다 [[harrison 21: 88장 p.690]]. 융모막암 : hCG 가 매우 높고 출혈성. 경미한 hCG 는 정상피종의 합포영양세포로 설명된다 [[harrison 21: 88장 p.690]]. 검사 단단한 고환 종괴는 양쪽 음낭 초음파, 혈청 AFP·hCG·LDH(절제 전후)를 하고, 음낭을 통한 흡인·생검은 종양 파종 위험 때문에 하지 않는다. 진단은 근치적 서혜부 고환절제술 조직으로 하며, 고환 전체를 병리로 보고 경험 있는 병리의가 분류해야 한다 [[harrison 21: 88장 p.690]]. 병기는 복부·골반 CT 와 흉부 X 선으로 정한다 [[harrison 21: 88장 p.691]]. 치료 치료는 정상피종 vs NSGCT 와 병기 두 가지로 정한다 [[harrison 21: 88장 p.691]]. 정상피종은 방사선·항암에 매우 민감하다 [[harrison 21: 88장 p.690]]. 1기 정상피종(약 70 %)은 고환절제 뒤 능동 감시가 가장 흔하고, 보조 carboplatin 1–2주기나 대동맥옆 방사선도 선택지다 [[harrison 21: 88장 p.691]]. 반응 확인·재평가 : 감시 중 신체검사·복부 CT 를 주기적으로 하고, 전이가 생긴 약 15 % 는 방사선이나 항암으로 거의 완치된다. 항암 중에는 표지자가 정상화되는지 본다 [[harrison 21: 88장 p.691]]. 권고와 예외 면역염색은 「어느 세포가 비정상인가」를 먼저 정하고 읽는다 — 물든 세포가 종양이라는 보장은 없다. 정상피종을 가르는 혈청 표지자는 AFP(결코 안 오름)이지 hCG 가 아니다 [[harrison 21: 88장 p.690]]. 조직 형태·면역염색 세부(OCT3/4·CD117·CD30·CD20)는 병리 교과서 출처로 남겼고 원문 미대조다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 고환 림프종의 「고령」 기준 나이 — 시험 기준: 해리슨은 고환 비호지킨 림프종이 50세 넘는 남성에서 가장 흔하다고 쓴다 [[harrison 21: 88장 p.694]] / 다른 기준: 문항 해설·병리 교과서 계열은 「60세 넘는 남성에서 가장 흔한 고환 종양」으로 쓴다 [[?robbins 10]] / 왜 다른가: 해리슨은 림프종이 흔해지는 연령대를, 병리 교과서는 그 연령대에서 모든 고환 종양 중 림프종이 1위라는 점을 말한다 — 기준 모집단이 다르다 / 시험에서는: USMLE — 「older man( 60), bilateral」이면 림프종 · KMLE — 고령 남성의 양측 고환 종괴로 기억하면 된다. (심화) 왜 정상피종에는 림프구가 모이나 정상피종 세포는 원시 생식세포의 성질을 유지해 태생기 항원을 드러내고, 이것이 강한 T 세포 반응을 부른다고 설명된다 [[?robbins 10]]. 이 반응은 너무 일정해서 진단 단서가 되고, 정상피종이 방사선·항암에 매우 민감하며 1기 대부분이 고환절제만으로 완치되는 좋은 예후와 함께 「고환암은 완치 가능한 암의 모델」이라는 말의 한 축을 이룬다 [[harrison 21: 88장 p.689, p.691]]. 반대로 AFP 가 한 번이라도 오르면 조직 어딘가에 난황 분화가 있다는 뜻이라, 사진이 아무리 정상피종 같아도 NSGCT 로 치료가 바뀐다 — 사진과 혈청이 같은 생물학을 다른 창으로 본다는 것을 기억한다."
+   "snippet": "판단 — 왜 정상피종인가 사진에서 먼저 「어느 세포가 비정상인가」를 정한다 — 크고 맑은 상피양 세포 판이 종양이고, CD3 에 갈색인 작고 가지런한 세포는 격막의 숙주 반응 T 림프구다 [[?robbins 10]]. 혈청은 분화를 비춘다: AFP 정상은 정상피종과 맞고(결코 안 오름), hCG 경미 상승은 섞인 합포영양세포로 설명된다 [[harrison 21: 88장 p.690]]. 림프종은 나이(고령)·양측성, 그리고 크고",
+   "text": "Hematology-Oncology 판단 — 왜 정상피종인가 사진에서 먼저 「어느 세포가 비정상인가」를 정한다 — 크고 맑은 상피양 세포 판이 종양이고, CD3 에 갈색인 작고 가지런한 세포는 격막의 숙주 반응 T 림프구다 [[?robbins 10]]. 혈청은 분화를 비춘다: AFP 정상은 정상피종과 맞고(결코 안 오름), hCG 경미 상승은 섞인 합포영양세포로 설명된다 [[harrison 21: 88장 p.690]]. 림프종은 나이(고령)·양측성, 그리고 크고 이형성인 종양세포 자체 가 물드는지로 가른다 [[harrison 21: 88장 p.694]] [[?robbins 10]]. 기전 — 원시 생식세포에서 맑은 세포 판으로 고환 생식세포종양(germ cell tumor, GCT)은 고환 종양의 95 % 이고 정상피종(seminoma)과 비정상피종(nonseminomatous GCT, NSGCT)으로 나뉜다. 정상피종은 조직이 100 % 정상피종일 때만 붙이는 이름이고, 섞이면 NSGCT 로 다룬다 [[harrison 21: 88장 p.689–690]]. 기원 세포는 원시 생식세포로, 대부분 생식세포 상피내 종양(GCNIS)을 거쳐 생기고 i(12p) 복제수 증가가 흔하다 [[harrison 21: 88장 p.690]]. 정상피종은 어느 쪽으로도 분화하지 않은 원시 생식세포를 닮아 크고 둥글며 글리코겐이 많은 맑은 세포질을 갖고, 섬유 격막으로 나뉜 판을 이룬다. 격막에는 숙주 면역 반응인 T 림프구(때로 육아종)가 거의 늘 있다 [[?robbins 10]]. 난황 구조를 만들지 않으므로 AFP 를 만들지 않고, 합포영양세포가 섞이면 hCG 를 조금 낸다. 배아암종은 가장 미분화한 NSGCT 로 다른 아형으로 분화할 수 있고, 난황낭종양은 AFP, 융모막암은 매우 높은 hCG 를 낸다 [[harrison 21: 88장 p.690]]. 고환의 비호지킨 림프종은 생식세포가 아닌 림프구에서 나온 비생식세포종양이며 고령 남성에게 흔하다 [[harrison 21: 88장 p.694]] — 이때는 크고 이형성인 림프구 자체가 종양이다 [[?robbins 10]]. 가르는 소견 — 누가 종양인가 CD3 염색에서 격막의 작은 림프구만 갈색, 맑은 종양세포 음성 — 정상피종의 숙주 반응을 그린 것 [[?robbins 10]]. 갈색 세포가 크고 이형성인 판이면 림프종 쪽이다. 통증 없는 단단한 고환 종괴·초음파 저에코(다발 가능) 고형 종괴 — 달리 증명될 때까지 악성. 실제로는 부종·단단함·불편감으로 오는 경우가 많고, hCG 가 높으면 여성형 유방이 생길 수 있다 [[harrison 21: 88장 p.690]]. AFP 정상, hCG 경미 상승, LDH 상승 — 정상피종과 맞다. LDH 는 비특이적 종양 부담 표지다. 난황낭종양은 AFP 상승이 핵심이고, 융모막암은 hCG 가 매우 높고 출혈성이다 [[harrison 21: 88장 p.690]]. 정상 결과의 한계 : 정상피종 대부분과 NSGCT 의 최대 1/3 은 표지자가 정상이다 — 정상 표지자로 GCT 를 배제하지 않는다 [[harrison 21: 88장 p.690]]. 확진 경로와 그 뒤 단단한 고환 종괴는 양쪽 음낭 초음파, 혈청 AFP·hCG·LDH(절제 전후)를 하고, 음낭을 통한 흡인·생검은 종양 파종 위험 때문에 하지 않는다. 진단은 근치적 서혜부 고환절제술 조직으로 하며, 고환 전체를 경험 있는 병리의가 분류한다 [[harrison 21: 88장 p.690]]. 병기는 복부·골반 CT 와 흉부 X 선으로 정한다 [[harrison 21: 88장 p.691]]. 치료는 정상피종 vs NSGCT 와 병기로 정한다. 정상피종은 방사선·항암에 매우 민감하고 [[harrison 21: 88장 p.690]], 1기 정상피종(약 70 %)은 고환절제 뒤 능동 감시가 가장 흔하며 보조 carboplatin 1–2주기나 대동맥옆 방사선도 선택지다. 감시 중 신체검사·복부 CT 를 주기적으로 하고, 전이가 생긴 약 15 % 는 방사선이나 항암으로 거의 완치된다. 항암 중에는 표지자가 정상화되는지 본다 [[harrison 21: 88장 p.691]]. 권고와 예외 면역염색은 「어느 세포가 비정상인가」를 먼저 정하고 읽는다 — 물든 세포가 종양이라는 보장은 없다. 정상피종을 가르는 혈청 표지자는 AFP(결코 안 오름)이지 hCG 가 아니다 [[harrison 21: 88장 p.690]]. 조직 형태·면역염색 세부(OCT3/4·CD117·CD30·CD20)는 병리 교과서 출처로 남겼고 원문 미대조다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 고환 림프종의 「고령」 기준 나이 — 시험 기준: 해리슨은 고환 비호지킨 림프종이 50세 넘는 남성에서 가장 흔하다고 쓴다 [[harrison 21: 88장 p.694]] / 다른 기준: 문항 해설·병리 교과서 계열은 「60세 넘는 남성에서 가장 흔한 고환 종양」으로 쓴다 [[?robbins 10]] / 왜 다른가: 해리슨은 림프종이 흔해지는 연령대를, 병리 교과서는 그 연령대에서 모든 고환 종양 중 림프종이 1위라는 점을 말한다 — 기준 모집단이 다르다 / 시험에서는: USMLE — 「older man( 60), bilateral」이면 림프종 · KMLE — 고령 남성의 양측 고환 종괴로 기억하면 된다. (심화) 왜 정상피종에는 림프구가 모이나 정상피종 세포는 원시 생식세포의 성질을 유지해 태생기 항원을 드러내고, 이것이 강한 T 세포 반응을 부른다고 설명된다 [[?robbins 10]]. 이 반응은 너무 일정해서 진단 단서가 되고, 정상피종이 방사선·항암에 매우 민감하며 1기 대부분이 고환절제만으로 완치되는 좋은 예후와 함께 「고환암은 완치 가능한 암의 모델」이라는 말의 한 축을 이룬다 [[harrison 21: 88장 p.689, p.691]]. 반대로 AFP 가 한 번이라도 오르면 조직 어딘가에 난황 분화가 있다는 뜻이라, 사진이 아무리 정상피종 같아도 NSGCT 로 치료가 바뀐다 — 사진과 혈청이 같은 생물학을 다른 창으로 본다는 것을 기억한다."
   },
   {
    "id": "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis",
@@ -12671,8 +12773,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/pediatrics/cn.peds.biliary-atresia.cholestasis-workup.md",
-   "snippet": "정의 신생아 담즙정체는 결합(직접)빌리루빈 1.0 mg/dL 로 정의되는 결합고빌리루빈혈증이다 [[?naspghan 2017]]. 담도폐쇄는 간외 담도가 진행성 섬유화로 막히는 영아 질환으로, 담즙정체의 가장 흔하고 가장 시간이 급한 원인이다. 이 정리본의 목표는 지속 황달을 분획으로 가르고, 결합형이면 담도폐쇄 평가를 지체 없이 시작하는 것 이다(카사이수술 자체의 세부는 목표 밖). 병태생리 정상에서 적혈구 분해로 생긴 비결",
-   "text": "Pediatrics 정의 신생아 담즙정체는 결합(직접)빌리루빈 1.0 mg/dL 로 정의되는 결합고빌리루빈혈증이다 [[?naspghan 2017]]. 담도폐쇄는 간외 담도가 진행성 섬유화로 막히는 영아 질환으로, 담즙정체의 가장 흔하고 가장 시간이 급한 원인이다. 이 정리본의 목표는 지속 황달을 분획으로 가르고, 결합형이면 담도폐쇄 평가를 지체 없이 시작하는 것 이다(카사이수술 자체의 세부는 목표 밖). 병태생리 정상에서 적혈구 분해로 생긴 비결합빌리루빈은 알부민에 붙어 간으로 가서 UGT1A1 로 포합(결합)되고, 수용성이 된 결합빌리루빈은 담즙으로 장에 나간다. 장에서 세균이 스테르코빌린을 만들어 변을 노랗게·갈색으로 물들인다. 비결합형 황달 은 「생산이 많거나 포합이 늦은」 문제다 — 신생아의 짧은 적혈구 수명·미숙한 UGT 활성(생리적), 모유 속 인자로 늘어난 장간순환(모유 황달), 용혈. 결합 이후의 배출길은 멀쩡하므로 변은 노랗다. 결합형 황달 은 「포합은 됐는데 나가지 못하는」 문제다. 담도폐쇄에서는 간외 담도가 막혀 결합빌리루빈이 혈액으로 역류한다 → 수용성이라 소변으로 나가 소변이 진해지고 , 장에 담즙이 없어 변이 회백색 이 된다. 담즙 정체가 간세포·담관을 손상시켜 GGT 가 크게 오르고 간이 커지며, 몇 주 안에 섬유화가 진행한다. 기전에서 소견으로 생후 2주 넘게 지속되는 황달 — 생리적 황달이 끝났어야 할 시기. 회백색·크림색 변, 진한 소변 — 담즙이 장에 가지 않고 결합빌리루빈이 소변으로 나간다. 간비대(이후 비장비대) — 담즙정체와 섬유화. GGT 현저 상승, 아미노전달효소 경도 상승 — 담관 손상 양상. 잘 먹고 잘 크는 경우가 많다 — 초기에는 전신 상태가 좋아 안심하기 쉽다. 지용성 비타민 흡수 장애 → 비타민 K 결핍 출혈이 첫 소견일 수 있다. 감별 위 표처럼 먼저 결합형·비결합형을 가른다. 결합형 안에서는 담도폐쇄 외에 담관낭(초음파로 보인다), 알라질 증후군(특징 얼굴·척추·심장), 감염(요로감염·패혈증·TORCH), 대사질환(갈락토스혈증·α1 항트립신 결핍·갑상선저하), 비경구영양 관련 담즙정체를 본다. 담도폐쇄는 시간이 가장 급하므로 다른 원인 평가를 이유로 담도 평가를 미루지 않는다 [[?naspghan 2017]]. 검사 1. 분획 빌리루빈(총·직접) — 모든 2주 이상 지속 황달. 2. 결합형이면: 간기능·GGT·응고(PT/INR)·혈당, 요검사·배양, 갑상선 기능, 대사 선별. 3. 복부 초음파(공복): 담낭이 작거나 없음·삼각끈 징후는 담도폐쇄를 시사, 담관낭 등 다른 구조 이상을 가른다. 정상 초음파가 담도폐쇄를 배제하지는 못한다. 4. 간담도 스캔(장 배출 여부)·간생검(담관 증식·담즙 마개). 5. 수술적(또는 내시경적) 담도조영 — 확진. 치료 담도폐쇄가 확진되면 카사이수술(간문부 공장 문합)로 담즙길을 새로 낸다. 일찍 할수록 담즙 배출 성공률과 자가간 생존이 좋고 [[?naspghan 2017]], 실패하거나 늦으면 간경변으로 진행해 간이식이 필요하다. 수술 전후 지용성 비타민(A·D·E·K) 보충, 중쇄지방 분유 등 영양 지원을 한다. 반응 확인·재평가. 수술 뒤 변 색이 돌아오고 빌리루빈이 수개월 안에 정상화되는지를 본다. 담관염(발열·황달 재발)·문맥고혈압·성장 부진을 추적한다. 권고와 예외 결합빌리루빈 상승은 어떤 나이에도 생리적이지 않다 — 「모유 황달」로 부르기 전에 분획을 잰다. 회백색 변은 그 자체로 즉시 평가 대상이다(연령·전신 상태와 무관). 모유 중단·광선치료는 비결합형 조치이며 담즙정체에서 진단만 늦춘다. 비결합형 모유 황달이면 모유를 계속하는 것이 원칙이다. 이 슬롯은 소아과 손 슬롯이라 해리슨 대조 대상이 아니다. NASPGHAN/ESPGHAN 2017 지침은 원문을 열지 못해 서지만 남겼다(검토 항목). (심화) 왜 시간이 예후인가 담도폐쇄의 간외 담도는 태어날 때 부분적으로 열려 있다가 생후 몇 주 동안 염증·섬유화로 완전히 막히고, 같은 과정이 간내 담도와 간실질로 번진다. 카사이수술은 간문부에 남아 있는 미세 담관을 공장에 이어 담즙을 흘려 보내는 수술이라, 그 미세 담관이 섬유화로 사라지기 전에 해야 한다. 여러 나라가 대변 색 카드 선별을 도입한 이유도 같다 — 부모가 회백색 변을 일찍 알아보면 진단 나이가 앞당겨진다. 수치 문턱(결합빌리루빈 1.0 mg/dL)과 카사이 시기의 구체 값은 지침 원문 대조가 필요하다 [[?naspghan 2017]]."
+   "snippet": "판단 — 왜 간담도 평가가 먼저인가 신생아 황달의 첫 갈림길은 「결합이냐 비결합이냐」다. 분획 빌리루빈 한 번이 조치를 정반대로 가른다. 결합(직접)빌리루빈 1.0 mg/dL 은 담즙정체(cholestasis)이고, 그 가장 흔하고 가장 시간이 급한 원인이 담도폐쇄(biliary atresia)다 [[?naspghan 2017]]. 카사이수술(Kasai portoenterostomy)은 일찍 할수록 담즙 배출·자가간 생존이 좋",
+   "text": "Pediatrics 판단 — 왜 간담도 평가가 먼저인가 신생아 황달의 첫 갈림길은 「결합이냐 비결합이냐」다. 분획 빌리루빈 한 번이 조치를 정반대로 가른다. 결합(직접)빌리루빈 1.0 mg/dL 은 담즙정체(cholestasis)이고, 그 가장 흔하고 가장 시간이 급한 원인이 담도폐쇄(biliary atresia)다 [[?naspghan 2017]]. 카사이수술(Kasai portoenterostomy)은 일찍 할수록 담즙 배출·자가간 생존이 좋다 — 흔히 생후 30–45일(늦어도 60일) 안을 목표로 한다 [[?naspghan 2017]]. 관찰하는 사이 간섬유화가 진행한다. 모유 중단·광선치료는 비결합형 조치라 담즙정체를 고치지 못하고 진단만 늦춘다. 기전 — 포합에서 배출까지 정상에서 적혈구 분해로 생긴 비결합빌리루빈은 알부민에 붙어 간으로 가서 UGT1A1 로 포합(결합)되고, 수용성이 된 결합빌리루빈은 담즙으로 장에 나간다. 장에서 세균이 스테르코빌린을 만들어 변을 노랗게·갈색으로 물들인다. 비결합형 황달 은 「생산이 많거나 포합이 늦은」 문제다 — 짧은 적혈구 수명·미숙한 UGT 활성(생리적), 모유 속 인자로 늘어난 장간순환(모유 황달), 용혈. 배출길은 멀쩡하므로 변은 노랗다. 결합형 황달 은 「포합은 됐는데 나가지 못하는」 문제다. 담도폐쇄에서는 간외 담도가 진행성 섬유화로 막혀 결합빌리루빈이 혈액으로 역류한다 → 수용성이라 소변으로 나가 소변이 진해지고 , 장에 담즙이 없어 변이 회백색 이 된다. 담즙 정체가 간세포·담관을 손상시켜 GGT 가 크게 오르고 간이 커지며, 몇 주 안에 섬유화가 진행한다. 가르는 소견 — 결합형인가 비결합형인가 생후 2주 넘게 지속되는 황달 — 생리적 황달이 끝났어야 할 시기라 분획을 잰다. 회백색·크림색 변, 진한 소변 — 담즙이 장에 가지 않고 결합빌리루빈이 소변으로 나간다. 간비대(이후 비장비대), GGT 현저 상승·아미노전달효소 경도 상승 — 담관 손상 양상. 잘 먹고 잘 크는 경우가 많다 — 초기에는 전신 상태가 좋아 안심하기 쉽다. 지용성 비타민 흡수 장애로 비타민 K 결핍 출혈이 첫 소견일 수 있다. 결합형 안에서는 담도폐쇄 외에 담관낭(초음파로 보인다), 알라질 증후군(특징 얼굴·척추·심장), 감염(요로감염·패혈증·TORCH), 대사질환(갈락토스혈증·α1 항트립신 결핍·갑상선저하), 비경구영양 관련 담즙정체를 본다. 다른 원인 평가를 이유로 담도 평가를 미루지 않는다 [[?naspghan 2017]]. 검사 순서와 그 뒤 1. 분획 빌리루빈(총·직접) — 모든 2주 이상 지속 황달. 2. 결합형이면: 간기능·GGT·응고(PT/INR)·혈당, 요검사·배양, 갑상선 기능, 대사 선별. 3. 복부 초음파(공복): 담낭이 작거나 없음·삼각끈 징후는 담도폐쇄를 시사, 담관낭 등 다른 구조 이상을 가른다. 정상 초음파가 담도폐쇄를 배제하지는 못한다. 4. 간담도 스캔(장 배출 여부)·간생검(담관 증식·담즙 마개). 5. 수술적(또는 내시경적) 담도조영 — 확진. 확진되면 카사이수술로 담즙길을 새로 내고, 실패하거나 늦으면 간경변으로 진행해 간이식이 필요하다. 수술 전후 지용성 비타민(A·D·E·K) 보충, 중쇄지방 분유 등 영양 지원을 한다. 재평가 : 수술 뒤 변 색이 돌아오고 빌리루빈이 수개월 안에 정상화되는지 보고, 담관염(발열·황달 재발)·문맥고혈압·성장 부진을 추적한다. 권고와 예외 결합빌리루빈 상승은 어떤 나이에도 생리적이지 않다 — 「모유 황달」로 부르기 전에 분획을 잰다. 회백색 변은 그 자체로 즉시 평가 대상이다(연령·전신 상태와 무관). 모유 중단·광선치료는 비결합형 조치이며 담즙정체에서 진단만 늦춘다. 비결합형 모유 황달이면 모유를 계속하는 것이 원칙이다. 이 슬롯은 소아과 손 슬롯이라 해리슨 대조 대상이 아니다. NASPGHAN/ESPGHAN 2017 지침은 원문을 열지 못해 서지만 남겼다(검토 항목). (심화) 왜 시간이 예후인가 담도폐쇄의 간외 담도는 태어날 때 부분적으로 열려 있다가 생후 몇 주 동안 염증·섬유화로 완전히 막히고, 같은 과정이 간내 담도와 간실질로 번진다. 카사이수술은 간문부에 남아 있는 미세 담관을 공장에 이어 담즙을 흘려 보내는 수술이라, 그 미세 담관이 섬유화로 사라지기 전에 해야 한다. 여러 나라가 대변 색 카드 선별을 도입한 이유도 같다 — 부모가 회백색 변을 일찍 알아보면 진단 나이가 앞당겨진다. 수치 문턱(결합빌리루빈 1.0 mg/dL)과 카사이 시기의 구체 값은 지침 원문 대조가 필요하다 [[?naspghan 2017]]."
   },
   {
    "id": "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin",
