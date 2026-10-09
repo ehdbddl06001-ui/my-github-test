@@ -349,43 +349,49 @@
    ]
   },
   "정형외과": {
-   "hash": "7b9f56e405e0636c8ff0",
-   "version": 12,
-   "date": "2026-10-08",
+   "hash": "479c770352c012801ac5",
+   "version": 13,
+   "date": "2026-10-09",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 11,
+   "pages": 13,
    "template_version": 11,
    "units": {
-    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
-     "title": "엉덩관절 골절 — 「관절낭 안 vs 밖」이 첫 갈림길이고, 전위된 넙다리뼈목 골절을 고령에서 치환하는 이유는 골두 혈류다",
+    "cn.ortho.scaphoid-fracture.occult-imaging": {
+     "title": "잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
      "page": 2,
-     "concept_hash": "7b0c9f92379cda54",
-     "concept_version": 3
+     "concept_hash": "e3ca64f2f1155187",
+     "concept_version": 2
+    },
+    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
+     "title": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+     "page": 4,
+     "concept_hash": "ffd2be60f94fba93",
+     "concept_version": 4
     },
     "cn.ortho.achilles-rupture.thompson-test": {
      "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
-     "page": 4,
+     "page": 7,
      "concept_hash": "c55a14c1972e4b5a",
      "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 6,
+     "page": 8,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
-     "title": "소아 원위 요골 융기(torus) 골절 — 안정 골절이라 정복 없이 짧은 부목 고정",
-     "page": 8,
-     "concept_hash": "4882430c8d00869d",
-     "concept_version": 2
+     "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
+     "page": 10,
+     "concept_hash": "9b5d855ad7a5d677",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "9cb8de7b5df5430ce0f88b2bde6001a7",
-    "version": 12,
-    "uploaded": "2026-10-08T10:32:08+09:00"
+    "md5": "8ab998404f14db1fd4bb3b817a5e5204",
+    "version": 13,
+    "uploaded": "2026-10-09T10:30:31+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -399,10 +405,13 @@
     "MedKOS_학습서_정형외과_v9_2026-10-03.pdf",
     "MedKOS_학습서_정형외과_v10_2026-10-05.pdf",
     "MedKOS_학습서_정형외과_v11_2026-10-06.pdf",
-    "MedKOS_학습서_정형외과_v12_2026-10-08.pdf"
+    "MedKOS_학습서_정형외과_v12_2026-10-08.pdf",
+    "MedKOS_학습서_정형외과_v13_2026-10-09.pdf"
    ],
    "changes": [
-    "내용 갱신: 아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다 (정리본 v1 → v2)"
+    "새 단원: 잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
+    "내용 갱신: 넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류 (정리본 v3 → v4)",
+    "내용 갱신: 소아 융기 골절 — 안정 골절이라 정복 없이 부목 (정리본 v2 → v3)"
    ]
   },
   "외과": {
@@ -873,11 +882,11 @@
    ]
   },
   "혈액종양내과": {
-   "hash": "839df93e5d99cc115057",
-   "version": 6,
-   "date": "2026-10-04",
+   "hash": "83d743065d2b16d58f98",
+   "version": 7,
+   "date": "2026-10-09",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
-   "pages": 10,
+   "pages": 11,
    "template_version": 11,
    "units": {
     "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo": {
@@ -899,17 +908,17 @@
      "concept_version": 2
     },
     "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin": {
-     "title": "GATA3 — 관강 상피 핵의 계통 전사인자: 「어디서 왔나」를 묻는 표지이지 「어떤 약이 듣나」나 「침윤했나」를 묻는 표지가 아니다",
+     "title": "GATA3 — 기원을 묻는 계통 표지, 치료 예측이 아니다",
      "page": 8,
-     "concept_hash": "f32980f315e6ef08",
-     "concept_version": 2
+     "concept_hash": "7a10c52f9a77086f",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "0d557ccce1721d19f710b63d27edf1c9",
-    "version": 6,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "96dad75ba8d8e80575022227e1507595",
+    "version": 7,
+    "uploaded": "2026-10-09T10:30:31+09:00"
    },
    "archive": [
     "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
@@ -917,10 +926,11 @@
     "MedKOS_학습서_혈액종양내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf"
+    "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf",
+    "MedKOS_학습서_혈액종양내과_v7_2026-10-09.pdf"
    ],
    "changes": [
-    "새 단원: HER2 양성 유방암 — 표적치료 전에는 심초음파"
+    "내용 갱신: GATA3 — 기원을 묻는 계통 표지, 치료 예측이 아니다 (정리본 v2 → v3)"
    ]
   },
   "알레르기내과": {
@@ -1056,9 +1066,9 @@
    "changes": []
   },
   "소화기내과": {
-   "hash": "7ddb7af1b80cd72b179e",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "e3626c571cb67bf6efba",
+   "version": 12,
+   "date": "2026-10-09",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1082,17 +1092,17 @@
      "concept_version": 2
     },
     "cn.path.hepatic-congestion.zone3-mechanism": {
-     "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
+     "title": "육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유",
      "page": 7,
-     "concept_hash": "58701f202925087e",
-     "concept_version": 1
+     "concept_hash": "fd6d4dfc3d309879",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "1e23cd1a1b5a0a18d5177390c59ef261",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "46afd6dea909b72570327726e1ddc7cb",
+    "version": 12,
+    "uploaded": "2026-10-09T10:30:31+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1105,9 +1115,12 @@
     "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf",
     "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf",
     "MedKOS_학습서_소화기내과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유 (정리본 v1 → v2)"
+   ]
   },
   "신경과": {
    "hash": "0af84faeb8d1d31ba6ae",
@@ -1181,13 +1194,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "54a671361260fcfff0127e709387bb45",
+   "md5": "e318b0b374aacea5244dccd0361766b7",
    "version": null,
-   "uploaded": "2026-10-08T10:32:08+09:00"
+   "uploaded": "2026-10-09T10:30:31+09:00"
   }
  },
- "updated": "2026-10-08"
+ "updated": "2026-10-09"
 }
