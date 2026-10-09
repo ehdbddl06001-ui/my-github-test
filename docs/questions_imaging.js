@@ -2,6 +2,1419 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0283",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선",
+  "type": "소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "8세 남아가 트램펄린에서 떨어져 머리 위쪽을 부딪친 뒤 목 통증과 고개가 오른쪽으로 기울어진 채 움직이지 않으려 하여 응급실에 왔다. 의식은 명료하고 팔다리의 근력·감각·반사는 정상이다. 목 뒤쪽 윗부분에 압통이 있다. 중립 자세에서 찍은 측면 경추 X선은 그림과 같고, 양방향 화살표 사이 간격은 6 mm 로 측정되었다.",
+  "question": "손상되었을 가능성이 가장 높은 구조물은?",
+  "options": [
+   "앞세로인대",
+   "목덜미인대",
+   "뒤세로인대",
+   "환추 횡인대",
+   "익상인대"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: X선에서 C1 앞고리 뒷면과 치아돌기 앞면 사이(환추치간격, ADI)가 6 mm 로 넓어져 있다. 이 간격을 일정하게 붙잡아 두는 구조가 치아돌기 뒤를 가로지르는 환추 횡인대다. 소아의 정상 ADI 는 5 mm 이하(성인 3 mm 이하)이므로 6 mm 는 횡인대 손상으로 C1 이 C2 위에서 앞으로 미끄러진 환축추 불안정이다.\n- 원리: <b>무엇이 ADI 를 정하는가</b>: 치아돌기는 C1 앞고리 뒷면에 붙어 회전축 역할을 한다. 그 뒤를 환추 횡인대가 띠처럼 감싸 C1 이 앞으로 미끄러지지 못하게 한다. 횡인대가 끊어지면 고개를 숙일 때 C1 이 앞으로 밀려 ADI 가 넓어지고, 치아돌기가 척수 쪽으로 다가가 척수를 누를 수 있다.<br> <b>왜 소아 기준이 다른가</b>: 소아는 인대가 느슨하고 치아돌기·C1 앞고리의 뼈 형성이 아직 덜 되어 연골 부분이 X선에 보이지 않는다. 그래서 정상 ADI 가 성인(3 mm 이하)보다 넓은 5 mm 이하까지 허용된다. 6 mm 는 소아 기준으로도 넓다.<br> <b>다른 인대는 무엇을 막는가</b>: 익상인대는 치아돌기 끝에서 후두과로 가서 과도한 <b>회전</b>을 막는다 — 손상되면 회전 범위가 커지지만 ADI 는 변하지 않는다. 앞세로인대는 과신전을, 뒤세로인대·목덜미인대는 과굴곡을 제한하며 손상되면 아래 경추의 정렬·추간 간격이 변한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">환추 횡인대(정답)</th><th>익상인대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>C1 양쪽 외측괴 사이, 치아돌기 뒤를 가로지름</td><td>치아돌기 끝 → 양쪽 후두과</td></tr> <tr><td>막는 움직임</td><td>C1 의 앞쪽 미끄러짐</td><td>머리의 과도한 회전·옆굽힘</td></tr> <tr><td>측면 X선</td><td>ADI 확대(소아 5 mm, 성인 3 mm 초과)</td><td>ADI 정상 — CT·MRI 에서 회전 비대칭</td></tr> </tbody></table> 측면 X선에서 앞뒤로 넓어진 간격은 횡인대, 축상 영상에서 돌아간 관계는 익상인대 쪽이다.\n- 오답 이유:\n  - ① 앞세로인대는 과신전을 제한한다. 아래 경추에서 추간판 앞쪽 간격이 벌어지고 척추 앞 연부조직이 부었다면 손상을 의심한다.\n  - ② 목덜미인대는 극돌기 끝을 잇는 뒤쪽 인대로 과굴곡을 제한한다. 극돌기 사이가 부채꼴로 벌어진 측면 X선이었다면 의심한다.\n  - ③ 뒤세로인대는 척추체 뒷면을 따라 과굴곡을 제한한다. 아래 경추에서 척추체 사이가 뒤쪽으로 벌어지고 뒤 관절이 탈구되었다면 의심한다.\n  - ⑤ 익상인대는 머리의 과도한 회전을 막는다. 측면 X선의 ADI 는 정상이고 CT 에서 C1-C2 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 의심한다.\n- 함정: 소아의 ADI 를 성인 기준(3 mm)으로만 외우거나, 고개가 기울어 있다는 이유로 회전을 막는 익상인대를 고르는 것 — 넓어진 ADI 는 횡인대다.\n- 학습목표: 소아 측면 경추 X선에서 환추치간격(ADI) 확대가 환추 횡인대 손상을 뜻함을 알고 소아·성인 정상값의 차이를 안다\n- 근거·출처: Herman MJ, et al. Pediatric cervical spine clearance and injury. In: Rockwood and Wilkins' Fractures in Children, 9th ed. (atlantodental interval up to 5 mm in children) · Standring S, ed. Gray's Anatomy, 42nd ed. Craniovertebral joints — transverse and alar ligaments · PMC11416153 Figure 1 — pediatric case report (teacher-only) · 작성자 판독(2026-10-10): 중립 측면 경추 X선, C1 앞고리 뒷면과 치아돌기 앞면 사이(양방향 화살표)가 넓어짐(원 논문 6 mm)\n\n## 출처\n- Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 C1 앞고리 뒷면과 치아돌기 앞면 사이(환추치간격, ADI)가 6 mm 로 넓어져 있다. 이 간격을 일정하게 붙잡아 두는 구조가 치아돌기 뒤를 가로지르는 환추 횡인대다. 소아의 정상 ADI 는 5 mm 이하(성인 3 mm 이하)이므로 6 mm 는 횡인대 손상으로 C1 이 C2 위에서 앞으로 미끄러진 환축추 불안정이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 ADI 를 정하는가</b>: 치아돌기는 C1 앞고리 뒷면에 붙어 회전축 역할을 한다. 그 뒤를 환추 횡인대가 띠처럼 감싸 C1 이 앞으로 미끄러지지 못하게 한다. 횡인대가 끊어지면 고개를 숙일 때 C1 이 앞으로 밀려 ADI 가 넓어지고, 치아돌기가 척수 쪽으로 다가가 척수를 누를 수 있다.<br> <b>왜 소아 기준이 다른가</b>: 소아는 인대가 느슨하고 치아돌기·C1 앞고리의 뼈 형성이 아직 덜 되어 연골 부분이 X선에 보이지 않는다. 그래서 정상 ADI 가 성인(3 mm 이하)보다 넓은 5 mm 이하까지 허용된다. 6 mm 는 소아 기준으로도 넓다.<br> <b>다른 인대는 무엇을 막는가</b>: 익상인대는 치아돌기 끝에서 후두과로 가서 과도한 <b>회전</b>을 막는다 — 손상되면 회전 범위가 커지지만 ADI 는 변하지 않는다. 앞세로인대는 과신전을, 뒤세로인대·목덜미인대는 과굴곡을 제한하며 손상되면 아래 경추의 정렬·추간 간격이 변한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">환추 횡인대(정답)</th><th>익상인대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>C1 양쪽 외측괴 사이, 치아돌기 뒤를 가로지름</td><td>치아돌기 끝 → 양쪽 후두과</td></tr> <tr><td>막는 움직임</td><td>C1 의 앞쪽 미끄러짐</td><td>머리의 과도한 회전·옆굽힘</td></tr> <tr><td>측면 X선</td><td>ADI 확대(소아 5 mm, 성인 3 mm 초과)</td><td>ADI 정상 — CT·MRI 에서 회전 비대칭</td></tr> </tbody></table> 측면 X선에서 앞뒤로 넓어진 간격은 횡인대, 축상 영상에서 돌아간 관계는 익상인대 쪽이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 앞세로인대는 과신전을 제한한다. 아래 경추에서 추간판 앞쪽 간격이 벌어지고 척추 앞 연부조직이 부었다면 손상을 의심한다.\n② 목덜미인대는 극돌기 끝을 잇는 뒤쪽 인대로 과굴곡을 제한한다. 극돌기 사이가 부채꼴로 벌어진 측면 X선이었다면 의심한다.\n③ 뒤세로인대는 척추체 뒷면을 따라 과굴곡을 제한한다. 아래 경추에서 척추체 사이가 뒤쪽으로 벌어지고 뒤 관절이 탈구되었다면 의심한다.\n⑤ 익상인대는 머리의 과도한 회전을 막는다. 측면 X선의 ADI 는 정상이고 CT 에서 C1-C2 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 의심한다."
+   },
+   {
+    "k": "함정",
+    "v": "소아의 ADI 를 성인 기준(3 mm)으로만 외우거나, 고개가 기울어 있다는 이유로 회전을 막는 익상인대를 고르는 것 — 넓어진 ADI 는 횡인대다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 측면 경추 X선에서 환추치간격(ADI) 확대가 환추 횡인대 손상을 뜻함을 알고 소아·성인 정상값의 차이를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Herman MJ, et al. Pediatric cervical spine clearance and injury. In: Rockwood and Wilkins' Fractures in Children, 9th ed. (atlantodental interval up to 5 mm in children) · Standring S, ed. Gray's Anatomy, 42nd ed. Craniovertebral joints — transverse and alar ligaments · PMC11416153 Figure 1 — pediatric case report (teacher-only) · 작성자 판독(2026-10-10): 중립 측면 경추 X선, C1 앞고리 뒷면과 치아돌기 앞면 사이(양방향 화살표)가 넓어짐(원 논문 6 mm) ## 출처 Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "소아 측면 경추 X선에서 ADI 가 6 mm 로 소아 정상(5 mm 이하)보다 넓으므로 C1 의 앞쪽 미끄러짐을 막는 환추 횡인대가 손상되었다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "측면 X선에서 앞뒤 간격(ADI)이 넓어졌다 — 회전을 막는 익상인대는 ADI 를 바꾸지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: C1 앞고리와 치아돌기 사이 간격 확대(6 mm)",
+    "소아 정상 ADI 5 mm 이하 → 비정상 확대",
+    "ADI 를 붙잡는 구조 = 환추 횡인대"
+   ],
+   "key": [
+    {
+     "item": "영상: C1 앞고리 뒷면과 치아돌기 앞면 사이 간격(양방향 화살표)이 넓어짐",
+     "why": "환추치간격 확대",
+     "also": []
+    },
+    {
+     "item": "양방향 화살표 사이 간격은 6 mm 로 측정되었다",
+     "why": "소아 정상 5 mm 를 넘는다",
+     "also": []
+    },
+    {
+     "item": "8세 남아",
+     "why": "소아 — 정상 기준이 성인과 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "팔다리의 근력·감각·반사는 정상",
+     "why": "척수 압박 징후 없음 — 그래도 고정과 정밀 영상이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고개가 오른쪽으로 기울어진 채",
+     "why": "회전성 손상으로 끌리게 하지만 측면 X선의 앞뒤 간격 확대를 설명하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "8세 아이의 중립 측면 경추 X선에서 환추치간격이 6 mm 로 소아 정상(5 mm 이하)보다 넓다. C1 의 앞쪽 미끄러짐을 막는 환추 횡인대가 손상된 것이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "ADI 는 정상인데 CT 에서 C1-C2 의 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 익상인대 손상을 의심한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0283.png",
+   "caption": "중립 자세 측면 경추 X선, 양방향 화살표와 패널 문자는 원 그림의 것 — 출판된 증례 그림에서 한 패널만 잘라냄 (PMC Open Access Subset, CC BY — 보정 없음)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416153/",
+   "asset_id": "PMC-PMC11416153_Figure1_B",
+   "text": "Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0282",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후",
+  "type": "외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "26세 남자가 오토바이에서 떨어져 오른쪽 옆구리를 부딪친 뒤 3시간 만에 응급실에 왔다. 도착 당시 혈압 96/60 mmHg, 맥박 118회/분 이었고, 정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다. 오른쪽 옆구리에 압통과 멍이 있고 복막 자극 징후는 없다. 육안적 혈뇨가 있다. 혈색소는 도착 시 13.1 g/dL, 6시간 뒤 12.7 g/dL 이다. 동맥기 영상에서 조영제가 혈관 밖으로 새는 소견은 없었다. 복부 조영증강 CT 는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "침상 안정과 연속 혈색소 측정",
+   "응급 개복 콩팥절제술",
+   "콩팥동맥 혈관색전술",
+   "즉시 요관 스텐트 삽입",
+   "경피적 콩팥창냄술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레와 후복막에 넓은 혈종이 있다(고등급 둔상 콩팥 손상). 그러나 정질액 1 L 에 혈압이 회복되어 6시간 동안 유지되고 혈색소도 거의 떨어지지 않았으며 조영제 혈관외 유출이 없다. 혈역학이 안정된 둔상 콩팥 손상은 등급과 관계없이 비수술적 관찰(침상 안정·활력징후·연속 혈색소 측정)이 원칙이다.\n- 원리: <b>왜 수술하지 않는가</b>: 콩팥은 단단한 Gerota 근막 안에 들어 있어, 실질이 갈라져도 주위 혈종이 그 근막 안에서 압력을 높여 출혈을 스스로 누른다(눌림 효과). 이때 개복하면 그 근막이 열려 눌림이 풀리고, 지혈하려다 콩팥을 통째로 떼어 내게 되는 경우가 많다. 그래서 혈역학이 안정되면 고등급 손상도 관찰이 콩팥을 가장 많이 살린다.<br> <b>관찰의 내용</b>: 침상 안정, 활력징후와 혈색소를 연속 측정하고, 육안적 혈뇨가 맑아질 때까지 지켜본다. 소변 누출(요종)은 대부분 저절로 흡수되며, 커지거나 감염되거나 열이 날 때에만 요관 스텐트를 넣는다.<br> <b>개입이 필요한 때</b>: 혈관외 유출(활동성 동맥 출혈)이나 가성동맥류가 보이면 혈관색전술을 한다. 수액·수혈에도 불안정하거나, 팽창하거나 박동하는 혈종이 있거나, 콩팥문 혈관이 뜯겨 나갔으면 수술(대개 콩팥절제술)을 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비수술적 관찰(정답)</th><th>응급 콩팥절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td>수액에 반응해 안정 유지</td><td>수액·수혈에도 불안정</td></tr> <tr><td>CT</td><td>실질 파열·혈종, 혈관외 유출 없음</td><td>콩팥문 혈관 손상, 팽창하는 혈종</td></tr> <tr><td>혈색소 추이</td><td>거의 일정(13.1 → 12.7)</td><td>계속 떨어짐</td></tr> </tbody></table> 손상 등급이 높다는 것만으로는 수술하지 않는다 — 혈역학과 활동성 출혈 여부가 처치를 정한다.\n- 오답 이유:\n  - ② 응급 콩팥절제술은 수액·수혈에도 혈역학이 불안정하거나 콩팥문 혈관이 뜯겨 나간 경우의 처치다. 혈압이 회복되어 유지되는 이 환자에서는 살릴 수 있는 콩팥을 잃게 한다.\n  - ③ 혈관색전술은 CT 에서 조영제가 혈관 밖으로 새거나 가성동맥류가 보이는 활동성 동맥 출혈에 쓴다. 이 환자는 혈관외 유출이 없다.\n  - ④ 요관 스텐트는 소변 누출로 생긴 요종이 커지거나 감염되거나 열이 날 때 넣는다. 처음부터 넣을 필요는 없고 대부분 저절로 흡수된다.\n  - ⑤ 경피적 콩팥창냄술은 요관 폐쇄로 생긴 감염된 수신증을 빼낼 때 쓴다. 손상 직후 혈종이 있는 콩팥에 바늘을 넣을 이유가 없다.\n- 함정: 콩팥이 여러 조각으로 갈라진 CT 를 보고 수술을 고르는 것 — 혈역학이 안정되고 혈관외 유출이 없으면 관찰한다.\n- 학습목표: 혈역학이 안정된 고등급 둔상 콩팥 손상은 활동성 출혈이 없으면 비수술적으로 관찰함을 안다\n- 근거·출처: Morey AF, et al. Urotrauma Guideline 2020: AUA Guideline. J Urol 2021;205:30-35 (renal trauma — nonoperative management of hemodynamically stable patients) · Kitrey ND, et al. EAU Guidelines on Urological Trauma, 2024 ed. (renal trauma) · PMC12718121 Figure 1 — case report of conservatively managed high-grade blunt renal injury (teacher-only) · 작성자 판독(2026-10-10): 조영증강 복부 CT 축상, 오른쪽 콩팥이 여러 조각으로 갈라지고 불균질하게 조영, 콩팥 둘레·후복막 혈종, 왼쪽 콩팥 정상\n\n## 출처\n- Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레와 후복막에 넓은 혈종이 있다(고등급 둔상 콩팥 손상). 그러나 정질액 1 L 에 혈압이 회복되어 6시간 동안 유지되고 혈색소도 거의 떨어지지 않았으며 조영제 혈관외 유출이 없다. 혈역학이 안정된 둔상 콩팥 손상은 등급과 관계없이 비수술적 관찰(침상 안정·활력징후·연속 혈색소 측정)이 원칙이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 수술하지 않는가</b>: 콩팥은 단단한 Gerota 근막 안에 들어 있어, 실질이 갈라져도 주위 혈종이 그 근막 안에서 압력을 높여 출혈을 스스로 누른다(눌림 효과). 이때 개복하면 그 근막이 열려 눌림이 풀리고, 지혈하려다 콩팥을 통째로 떼어 내게 되는 경우가 많다. 그래서 혈역학이 안정되면 고등급 손상도 관찰이 콩팥을 가장 많이 살린다.<br> <b>관찰의 내용</b>: 침상 안정, 활력징후와 혈색소를 연속 측정하고, 육안적 혈뇨가 맑아질 때까지 지켜본다. 소변 누출(요종)은 대부분 저절로 흡수되며, 커지거나 감염되거나 열이 날 때에만 요관 스텐트를 넣는다.<br> <b>개입이 필요한 때</b>: 혈관외 유출(활동성 동맥 출혈)이나 가성동맥류가 보이면 혈관색전술을 한다. 수액·수혈에도 불안정하거나, 팽창하거나 박동하는 혈종이 있거나, 콩팥문 혈관이 뜯겨 나갔으면 수술(대개 콩팥절제술)을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비수술적 관찰(정답)</th><th>응급 콩팥절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td>수액에 반응해 안정 유지</td><td>수액·수혈에도 불안정</td></tr> <tr><td>CT</td><td>실질 파열·혈종, 혈관외 유출 없음</td><td>콩팥문 혈관 손상, 팽창하는 혈종</td></tr> <tr><td>혈색소 추이</td><td>거의 일정(13.1 → 12.7)</td><td>계속 떨어짐</td></tr> </tbody></table> 손상 등급이 높다는 것만으로는 수술하지 않는다 — 혈역학과 활동성 출혈 여부가 처치를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 응급 콩팥절제술은 수액·수혈에도 혈역학이 불안정하거나 콩팥문 혈관이 뜯겨 나간 경우의 처치다. 혈압이 회복되어 유지되는 이 환자에서는 살릴 수 있는 콩팥을 잃게 한다.\n③ 혈관색전술은 CT 에서 조영제가 혈관 밖으로 새거나 가성동맥류가 보이는 활동성 동맥 출혈에 쓴다. 이 환자는 혈관외 유출이 없다.\n④ 요관 스텐트는 소변 누출로 생긴 요종이 커지거나 감염되거나 열이 날 때 넣는다. 처음부터 넣을 필요는 없고 대부분 저절로 흡수된다.\n⑤ 경피적 콩팥창냄술은 요관 폐쇄로 생긴 감염된 수신증을 빼낼 때 쓴다. 손상 직후 혈종이 있는 콩팥에 바늘을 넣을 이유가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "콩팥이 여러 조각으로 갈라진 CT 를 보고 수술을 고르는 것 — 혈역학이 안정되고 혈관외 유출이 없으면 관찰한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈역학이 안정된 고등급 둔상 콩팥 손상은 활동성 출혈이 없으면 비수술적으로 관찰함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morey AF, et al. Urotrauma Guideline 2020: AUA Guideline. J Urol 2021;205:30-35 (renal trauma — nonoperative management of hemodynamically stable patients) · Kitrey ND, et al. EAU Guidelines on Urological Trauma, 2024 ed. (renal trauma) · PMC12718121 Figure 1 — case report of conservatively managed high-grade blunt renal injury (teacher-only) · 작성자 판독(2026-10-10): 조영증강 복부 CT 축상, 오른쪽 콩팥이 여러 조각으로 갈라지고 불균질하게 조영, 콩팥 둘레·후복막 혈종, 왼쪽 콩팥 정상 ## 출처 Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CT 의 고등급 오른쪽 콩팥 손상이 있지만 수액에 반응해 혈역학이 안정되고 혈색소가 유지되며 혈관외 유출이 없으므로 비수술적으로 관찰한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "정질액 1 L 뒤 혈압이 6시간 동안 유지되고 혈색소가 13.1 에서 12.7 g/dL 로 거의 일정하다",
+   "steps": 3,
+   "chain": [
+    "영상: 오른쪽 콩팥 파열과 콩팥 둘레·후복막 혈종 → 고등급 둔상 콩팥 손상",
+    "수액에 반응해 혈역학 안정·혈색소 유지·혈관외 유출 없음 → 활동성 출혈 없음",
+    "등급과 관계없이 비수술적 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레·후복막에 넓은 혈종",
+     "why": "고등급 콩팥 손상 — 수술로 끌리게 하는 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "동맥기 영상에서 조영제가 혈관 밖으로 새는 소견은 없었다",
+     "why": "혈관색전술이 필요한 활동성 출혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "복막 자극 징후는 없다",
+     "why": "개복이 필요한 복강 내 장기 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다",
+     "why": "혈역학 안정 — 비수술적 관찰의 조건",
+     "also": []
+    },
+    {
+     "item": "6시간 뒤 12.7 g/dL",
+     "why": "혈색소가 거의 떨어지지 않음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "육안적 혈뇨가 있다",
+     "why": "콩팥 손상의 정도와 처치 방침을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "CT 에서 오른쪽 콩팥이 갈라지고 후복막 혈종이 있는 고등급 둔상 콩팥 손상이지만, 수액에 반응해 안정되었고 혈색소가 유지되며 혈관외 유출이 없다. 등급과 관계없이 비수술적으로 관찰한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "CT 동맥기에서 조영제가 혈관 밖으로 새는 활동성 출혈이 보이면 콩팥동맥 혈관색전술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0282.jpg",
+   "caption": "조영증강 복부 CT 축상면, R·P 표지와 화살표는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12718121/",
+   "asset_id": "PMC-PMC12718121_Figure1",
+   "text": "Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0281",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증",
+  "type": "외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-09",
+  "vignette": "A 59-year-old man is brought to the emergency department 2 hours after he fell down a flight of stairs and struck his forehead on the floor. He reports pain at the back of his neck. He did not lose consciousness. He has an abrasion on his forehead. Muscle strength, sensation, and deep tendon reflexes are normal in all extremities. Rectal tone is normal. A CT scan of the cervical spine at the level of the second cervical vertebra is shown.",
+  "question": "Which of the following is the most likely mechanism of this injury?",
+  "options": [
+   "Hyperflexion with anterior shear",
+   "Rotation with lateral flexion",
+   "Distraction of the occiput from the atlas",
+   "Hyperextension with axial loading",
+   "Vertical axial compression on the vertex"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The axial CT through C2 shows fracture lines through both sides of the neural arch at its junction with the vertebral body (the pars interarticularis/pedicles), separating the posterior elements from the body. This is a traumatic spondylolisthesis of the axis (hangman fracture). Striking the forehead in a fall drives the head into hyperextension while the body weight loads the spine axially, so the C2 neural arch fails between the C1 lateral masses above and the C3 facets below.\n- 원리: <b>Why the pars of C2 breaks in hyperextension</b>: the C2 pars interarticularis is the thin bridge between the superior articular facet (which carries the head through C1) and the inferior articular facet (which sits on C3). In hyperextension the posterior elements of C1 and C3 squeeze this bridge from above and below, and an axial load adds force. The weakest point — both sides of the neural arch — breaks, and the C2 body may slide forward on C3.<br> <b>Why the cord is usually spared</b>: the fracture separates the arch from the body, so the spinal canal at C2 becomes wider rather than narrower (\"autodecompression\"). The canal at C2 is also the widest in the cervical spine. Most patients, like this one, are neurologically intact.<br> <b>Mechanism names the fracture</b>: a blow to the vertex with a straight neck (diving) compresses C1 between the occipital condyles and C2 and bursts the atlas ring outward (Jefferson fracture). Hyperflexion produces anterior wedge or flexion-teardrop injuries, and distraction of the occiput produces atlanto-occipital dissociation. Treatment of a hangman fracture depends on displacement and angulation: most are stable and heal in a rigid collar or halo.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hangman fracture (correct)</th><th>Jefferson fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Level</td><td>C2 — neural arch (pars/pedicles)</td><td>C1 — anterior and posterior arches of the atlas ring</td></tr> <tr><td>Mechanism</td><td>Hyperextension with axial load (forehead strike)</td><td>Vertical compression on the vertex with the neck straight (diving)</td></tr> <tr><td>Canal</td><td>Widened by separation of arch from body</td><td>Widened as the lateral masses spread outward</td></tr> </tbody></table> Both are usually neurologically silent because they widen the canal — the level of the ring and the direction of the force separate them.\n- 오답 이유:\n  - (A) Hyperflexion with anterior shear causes anterior wedge compression or flexion-teardrop fractures of the vertebral body; it would fit a blow to the back of the head that forced the chin to the chest.\n  - (B) Rotation with lateral flexion produces unilateral facet dislocation or atlantoaxial rotatory subluxation; it would fit a fixed rotated head posture and an asymmetric C1-C2 relationship on CT.\n  - (C) Distraction of the occiput from the atlas is atlanto-occipital dissociation from high-energy deceleration; it would be favored by a widened condyle-C1 interval and usually severe neurologic injury.\n  - (E) Vertical axial compression on the vertex with a straight neck bursts the C1 ring (Jefferson fracture); it would be the answer if the CT showed C1 arch fractures with lateral mass displacement after a diving injury.\n- 함정: Assuming every upper cervical fracture after a fall is a vertical compression (Jefferson) injury — a forehead strike forces hyperextension, which breaks the C2 neural arch.\n- 학습목표: C2 양쪽 신경궁(관절간부·척추경) 골절(Hangman 골절)의 기전이 과신전과 축성 부하임을 알고 신경 손상이 드문 이유를 설명한다\n- 근거·출처: Bucholz RW, et al. Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures and dislocations (traumatic spondylolisthesis of the axis) · Effendi B, et al. Fractures of the ring of the axis: a classification based on the analysis of 131 cases. J Bone Joint Surg Br 1981;63-B:319-327 · PMC11283068 Figure 1 — case report of hangman's fracture (teacher-only) · 작성자 판독(2026-10-10): C2 축상 CT, 양쪽 신경궁과 척추체 경계(척추경·관절간부)의 골절선(원 그림 화살표), 척추관은 넓어짐\n\n## 출처\n- Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The axial CT through C2 shows fracture lines through both sides of the neural arch at its junction with the vertebral body (the pars interarticularis/pedicles), separating the posterior elements from the body. This is a traumatic spondylolisthesis of the axis (hangman fracture). Striking the forehead in a fall drives the head into hyperextension while the body weight loads the spine axially, so the C2 neural arch fails between the C1 lateral masses above and the C3 facets below."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the pars of C2 breaks in hyperextension</b>: the C2 pars interarticularis is the thin bridge between the superior articular facet (which carries the head through C1) and the inferior articular facet (which sits on C3). In hyperextension the posterior elements of C1 and C3 squeeze this bridge from above and below, and an axial load adds force. The weakest point — both sides of the neural arch — breaks, and the C2 body may slide forward on C3.<br> <b>Why the cord is usually spared</b>: the fracture separates the arch from the body, so the spinal canal at C2 becomes wider rather than narrower (\"autodecompression\"). The canal at C2 is also the widest in the cervical spine. Most patients, like this one, are neurologically intact.<br> <b>Mechanism names the fracture</b>: a blow to the vertex with a straight neck (diving) compresses C1 between the occipital condyles and C2 and bursts the atlas ring outward (Jefferson fracture). Hyperflexion produces anterior wedge or flexion-teardrop injuries, and distraction of the occiput produces atlanto-occipital dissociation. Treatment of a hangman fracture depends on displacement and angulation: most are stable and heal in a rigid collar or halo."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hangman fracture (correct)</th><th>Jefferson fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Level</td><td>C2 — neural arch (pars/pedicles)</td><td>C1 — anterior and posterior arches of the atlas ring</td></tr> <tr><td>Mechanism</td><td>Hyperextension with axial load (forehead strike)</td><td>Vertical compression on the vertex with the neck straight (diving)</td></tr> <tr><td>Canal</td><td>Widened by separation of arch from body</td><td>Widened as the lateral masses spread outward</td></tr> </tbody></table> Both are usually neurologically silent because they widen the canal — the level of the ring and the direction of the force separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hyperflexion with anterior shear causes anterior wedge compression or flexion-teardrop fractures of the vertebral body; it would fit a blow to the back of the head that forced the chin to the chest.\n(B) Rotation with lateral flexion produces unilateral facet dislocation or atlantoaxial rotatory subluxation; it would fit a fixed rotated head posture and an asymmetric C1-C2 relationship on CT.\n(C) Distraction of the occiput from the atlas is atlanto-occipital dissociation from high-energy deceleration; it would be favored by a widened condyle-C1 interval and usually severe neurologic injury.\n(E) Vertical axial compression on the vertex with a straight neck bursts the C1 ring (Jefferson fracture); it would be the answer if the CT showed C1 arch fractures with lateral mass displacement after a diving injury."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming every upper cervical fracture after a fall is a vertical compression (Jefferson) injury — a forehead strike forces hyperextension, which breaks the C2 neural arch."
+   },
+   {
+    "k": "학습목표",
+    "v": "C2 양쪽 신경궁(관절간부·척추경) 골절(Hangman 골절)의 기전이 과신전과 축성 부하임을 알고 신경 손상이 드문 이유를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bucholz RW, et al. Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures and dislocations (traumatic spondylolisthesis of the axis) · Effendi B, et al. Fractures of the ring of the axis: a classification based on the analysis of 131 cases. J Bone Joint Surg Br 1981;63-B:319-327 · PMC11283068 Figure 1 — case report of hangman's fracture (teacher-only) · 작성자 판독(2026-10-10): C2 축상 CT, 양쪽 신경궁과 척추체 경계(척추경·관절간부)의 골절선(원 그림 화살표), 척추관은 넓어짐 ## 출처 Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "C2 양쪽 신경궁 골절(Hangman 골절)은 이마를 부딪쳐 목이 과신전된 상태에서 축성 부하가 가해져 생긴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "골절이 C1 고리가 아니라 C2 신경궁에 있고 이마를 부딪친 과신전 기전이다",
+   "steps": 3,
+   "chain": [
+    "영상: C2 축상에서 양쪽 신경궁(척추경·관절간부) 골절 → Hangman 골절",
+    "이마를 바닥에 부딪침 → 목의 과신전 + 몸무게에 의한 축성 부하",
+    "C1 고리 파열(Jefferson, 수직 압박)과 구분 → 과신전·축성 부하"
+   ],
+   "key": [
+    {
+     "item": "영상: C2 축상에서 신경궁이 척추체와 만나는 양쪽 부위의 골절선",
+     "why": "Hangman 골절의 위치",
+     "also": []
+    },
+    {
+     "item": "struck his forehead on the floor",
+     "why": "이마 충격 — 과신전 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "at the level of the second cervical vertebra",
+     "why": "C1 고리 파열(Jefferson) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Muscle strength, sensation, and deep tendon reflexes are normal in all extremities",
+     "why": "척추관이 넓어져 신경 손상이 드문 골절이라 기전 판단에는 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "He did not lose consciousness",
+     "why": "머리 손상 평가에 필요하지만 골절 기전을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "C2 축상 CT 에서 양쪽 신경궁이 척추체와 만나는 곳이 부러진 Hangman 골절이다. 이마를 부딪쳐 목이 과신전되고 축성 부하가 더해진 기전이며, 척추관이 넓어져 신경 손상은 대개 없다.",
+   "switch": {
+    "choice": "E",
+    "condition": "다이빙처럼 목을 곧게 편 채 정수리로 부딪쳐 C1 앞·뒤 고리가 부러졌다면 수직 축성 압박(Jefferson 골절)이 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0281.png",
+   "caption": "Non-contrast axial CT — one panel cropped from a published case figure, arrows as in the original (PMC Open Access Subset, CC BY; no color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11283068/",
+   "asset_id": "PMC-PMC11283068_Figure1_ax",
+   "text": "Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0280",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영",
+  "type": "호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "A 20-year-old man is brought to the emergency department 1 hour after a motorcycle collision because of left-sided chest pain and shortness of breath. His blood pressure is 104/66 mm Hg, pulse is 114/min, respirations are 26/min, and oxygen saturation is 91% on room air. There is tenderness over the left chest wall. Breath sounds are decreased over the left hemithorax, and percussion is dull. The trachea is midline, and the jugular veins are not distended. Heart sounds are clearly heard. Hemoglobin concentration is 11.8 g/dL. A chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Emergency thoracotomy",
+   "Needle decompression of the left chest",
+   "Ultrasound-guided pericardiocentesis",
+   "Flexible bronchoscopy",
+   "Left tube thoracostomy"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The chest x-ray shows nearly uniform opacification of the entire left hemithorax from apex to base, obscuring the left hemidiaphragm and left heart border. After blunt chest trauma, together with decreased breath sounds and dullness to percussion, this is a large hemothorax. The first step is a large-bore chest tube to drain the blood and re-expand the lung; the initial output and the hourly drainage then decide whether thoracotomy is needed.\n- 원리: <b>Why the chest tube is both diagnosis and treatment</b>: blood in the pleural space compresses the lung and is itself a measure of the bleeding. A chest tube re-expands the lung, which improves oxygenation and tamponades bleeding from the lung parenchyma and intercostal vessels; about 85% of blunt hemothoraces need nothing more.<br> <b>When to proceed to thoracotomy</b>: an initial output of 1500 mL or more, continued drainage of 200 mL/h or more for 2 to 4 hours, or persistent instability despite transfusion suggests injury to great vessels, the heart, or the pulmonary hilum and calls for thoracotomy. The decision is therefore made <b>after</b> the tube is placed, from what it drains.<br> <b>Separating tension pneumothorax and tamponade</b>: both impair venous return and distend the neck veins; tension pneumothorax adds hyperresonance and tracheal deviation. This patient has flat neck veins, dullness, and clearly heard heart sounds.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tube thoracostomy (correct)</th><th>Emergency thoracotomy (closest distractor)</th></tr></thead><tbody> <tr><td>When</td><td>First step for nearly every traumatic hemothorax</td><td>Initial drainage of 1500 mL or more, or 200 mL/h or more persisting</td></tr> <tr><td>Hemodynamics</td><td>Responsive or relatively stable</td><td>Unstable despite transfusion</td></tr> <tr><td>Deciding information</td><td>Hemothorax on x-ray and examination</td><td>Chest tube output</td></tr> </tbody></table> The size of the opacity on the x-ray does not decide thoracotomy — the tube goes in first, and the blood it drains decides surgery.\n- 오답 이유:\n  - (A) Emergency thoracotomy is indicated when the chest tube drains 1500 mL or more initially, 200 mL/h or more continues, or shock persists despite transfusion; it is not chosen from the x-ray before a tube is placed.\n  - (B) Needle decompression treats tension pneumothorax with hyperresonance, tracheal deviation, and distended neck veins; dullness with a midline trachea means fluid, not air.\n  - (C) Pericardiocentesis treats cardiac tamponade with distended neck veins, muffled heart sounds, and pulsus paradoxus; this patient's neck veins are flat and heart sounds are clear.\n  - (D) Flexible bronchoscopy evaluates tracheobronchial rupture or mucus-plug atelectasis; it would be considered if a large air leak persisted and the lung failed to re-expand after a chest tube.\n- 함정: Going straight to thoracotomy because the whole hemithorax is white — thoracotomy is decided by chest tube output after drainage.\n- 학습목표: 흉부 둔상 뒤 한쪽 흉곽 전체의 음영·호흡음 감소·타진 둔탁을 대량 혈흉으로 판단하고 첫 처치가 흉관 삽입임을 안다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. 4 Thoracic trauma (massive hemothorax — tube thoracostomy, indications for thoracotomy) · Mowery NT, et al. Practice management guidelines for management of hemothorax and occult pneumothorax. J Trauma 2011;70:510-518 · PMC12633636 Figure 1 — case report of traumatic hemothorax (teacher-only) · 작성자 판독(2026-10-10): 전후면 흉부 X선, 왼쪽 흉곽 전체가 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계 지워짐, 오른쪽 폐 정상, 기관은 대략 가운데\n\n## 출처\n- The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest x-ray shows nearly uniform opacification of the entire left hemithorax from apex to base, obscuring the left hemidiaphragm and left heart border. After blunt chest trauma, together with decreased breath sounds and dullness to percussion, this is a large hemothorax. The first step is a large-bore chest tube to drain the blood and re-expand the lung; the initial output and the hourly drainage then decide whether thoracotomy is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the chest tube is both diagnosis and treatment</b>: blood in the pleural space compresses the lung and is itself a measure of the bleeding. A chest tube re-expands the lung, which improves oxygenation and tamponades bleeding from the lung parenchyma and intercostal vessels; about 85% of blunt hemothoraces need nothing more.<br> <b>When to proceed to thoracotomy</b>: an initial output of 1500 mL or more, continued drainage of 200 mL/h or more for 2 to 4 hours, or persistent instability despite transfusion suggests injury to great vessels, the heart, or the pulmonary hilum and calls for thoracotomy. The decision is therefore made <b>after</b> the tube is placed, from what it drains.<br> <b>Separating tension pneumothorax and tamponade</b>: both impair venous return and distend the neck veins; tension pneumothorax adds hyperresonance and tracheal deviation. This patient has flat neck veins, dullness, and clearly heard heart sounds."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tube thoracostomy (correct)</th><th>Emergency thoracotomy (closest distractor)</th></tr></thead><tbody> <tr><td>When</td><td>First step for nearly every traumatic hemothorax</td><td>Initial drainage of 1500 mL or more, or 200 mL/h or more persisting</td></tr> <tr><td>Hemodynamics</td><td>Responsive or relatively stable</td><td>Unstable despite transfusion</td></tr> <tr><td>Deciding information</td><td>Hemothorax on x-ray and examination</td><td>Chest tube output</td></tr> </tbody></table> The size of the opacity on the x-ray does not decide thoracotomy — the tube goes in first, and the blood it drains decides surgery."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Emergency thoracotomy is indicated when the chest tube drains 1500 mL or more initially, 200 mL/h or more continues, or shock persists despite transfusion; it is not chosen from the x-ray before a tube is placed.\n(B) Needle decompression treats tension pneumothorax with hyperresonance, tracheal deviation, and distended neck veins; dullness with a midline trachea means fluid, not air.\n(C) Pericardiocentesis treats cardiac tamponade with distended neck veins, muffled heart sounds, and pulsus paradoxus; this patient's neck veins are flat and heart sounds are clear.\n(D) Flexible bronchoscopy evaluates tracheobronchial rupture or mucus-plug atelectasis; it would be considered if a large air leak persisted and the lung failed to re-expand after a chest tube."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to thoracotomy because the whole hemithorax is white — thoracotomy is decided by chest tube output after drainage."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 둔상 뒤 한쪽 흉곽 전체의 음영·호흡음 감소·타진 둔탁을 대량 혈흉으로 판단하고 첫 처치가 흉관 삽입임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. 4 Thoracic trauma (massive hemothorax — tube thoracostomy, indications for thoracotomy) · Mowery NT, et al. Practice management guidelines for management of hemothorax and occult pneumothorax. J Trauma 2011;70:510-518 · PMC12633636 Figure 1 — case report of traumatic hemothorax (teacher-only) · 작성자 판독(2026-10-10): 전후면 흉부 X선, 왼쪽 흉곽 전체가 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계 지워짐, 오른쪽 폐 정상, 기관은 대략 가운데 ## 출처 The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "흉부 둔상 뒤 왼쪽 흉곽 전체의 음영과 호흡음 감소·타진 둔탁은 대량 혈흉이므로 먼저 흉관을 넣어 배액하고 배액량으로 개흉술 여부를 정한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "개흉술은 흉관 배액량(처음 1500 mL 이상, 시간당 200 mL 이상)으로 정하며 이 환자는 아직 흉관을 넣지 않았고 혈압이 유지된다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 흉곽 전체 균일한 음영 + 타진 둔탁·호흡음 감소 → 대량 혈흉",
+    "첫 처치는 흉관 삽입, 개흉술은 배액량으로 결정"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 흉곽이 폐첨부터 바닥까지 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계가 지워짐",
+     "why": "흉강의 대량 액체 — 둔상 뒤면 혈흉",
+     "also": []
+    },
+    {
+     "item": "percussion is dull",
+     "why": "공기가 아니라 액체",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The trachea is midline, and the jugular veins are not distended",
+     "why": "긴장성 기흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Heart sounds are clearly heard",
+     "why": "심장눌림증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "His blood pressure is 104/66 mm Hg",
+     "why": "아직 혈압이 유지된다 — 흉관 먼저, 개흉술은 배액량으로",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Hemoglobin concentration is 11.8 g/dL",
+     "why": "급성 출혈 초기에는 혈색소가 아직 덜 떨어져 출혈량을 반영하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 둔상 뒤 왼쪽 흉곽 전체의 균일한 음영·타진 둔탁·호흡음 감소는 대량 혈흉이다. 첫 처치는 흉관 삽입이고, 개흉술은 흉관 배액량을 보고 정한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "흉관에서 처음 1500 mL 이상이 나오거나 시간당 200 mL 이상 계속 나오면 응급 개흉술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0280.jpg",
+   "caption": "Anteroposterior chest x-ray, arrow as in the original — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12633636/",
+   "asset_id": "PMC-PMC12633636_Figure1",
+   "text": "The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0290",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율",
+  "type": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 58-year-old man who works as a hospital quality officer reviews data from a new screening program for pancreatic cancer using annual imaging in adults aged 50 to 75 years. Among patients with pancreatic cancer, the 5-year survival from the date of diagnosis is 24% in those detected by screening and 9% in those diagnosed after symptoms. In both groups, the tumors have similar growth rates on serial imaging, and the median age at death from pancreatic cancer is 68 years. Pancreatic cancer mortality in the screened population is unchanged compared with an unscreened population over 10 years.",
+  "question": "Which of the following best explains the higher 5-year survival in the screened group?",
+  "options": [
+   "Selection bias from healthier volunteers",
+   "Observer bias from unblinded assessment",
+   "Lead-time bias",
+   "Length-time bias",
+   "Overdiagnosis bias"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Screening found the cancers earlier, so the clock for survival started earlier, but the patients died at the same age (median 68 years) and population mortality did not change. The apparent gain in survival measured from diagnosis is only the extra time the patient knew about the disease — lead-time bias.\n- 원리: <b>Why survival from diagnosis can mislead</b>: survival is counted from the date of diagnosis to death. If screening moves the diagnosis earlier without changing the date of death, survival lengthens by exactly that shift (the lead time), even though nobody lives longer. The tell-tale sign is that age at death and disease-specific mortality are unchanged.<br> <b>How the other biases differ</b>: length-time bias arises because periodic screening preferentially detects slow-growing tumors with a long preclinical phase, which carry a better prognosis regardless of treatment; it is suggested when screen-detected tumors grow more slowly. Overdiagnosis is the extreme case — tumors that would never have caused symptoms; it inflates incidence and survival. Volunteer (selection) bias occurs when people who choose screening are healthier.<br> <b>How to avoid them</b>: a randomized trial comparing disease-specific mortality in the whole screened versus unscreened population is not affected by lead time, because mortality is counted from randomization, not from diagnosis.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (correct)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>What screening changes</td><td>Only the date of diagnosis</td><td>Which tumors are found — slow growers</td></tr> <tr><td>Tumor growth rate</td><td>Similar in both groups</td><td>Slower in screen-detected tumors</td></tr> <tr><td>Age at death, mortality</td><td>Unchanged</td><td>May look better because indolent tumors dominate</td></tr> </tbody></table> Same growth rate and same age at death point to lead time; slower growth in the screened group points to length time.\n- 오답 이유:\n  - (A) Selection bias from healthier volunteers would be the answer if those who chose screening had fewer comorbidities and lower all-cause mortality; it is controlled by comparing randomized populations.\n  - (B) Observer bias from unblinded assessment applies to subjective outcomes judged by assessors who know group assignment; death is an objective outcome that is not affected.\n  - (D) Length-time bias comes from screening preferentially finding slow-growing tumors; it would be the answer if the screen-detected tumors grew more slowly on serial imaging than symptom-detected ones.\n  - (E) Overdiagnosis bias would be favored if screening found many small tumors that never progressed and incidence rose sharply while deaths stayed the same; here the tumors grow similarly and patients die of the cancer.\n- 함정: Choosing length-time bias because both concern screening — when growth rates are similar and age at death is unchanged, the only difference is when the diagnosis was made.\n- 학습목표: 선별검사로 진단 시점만 앞당겨져 사망 시점이 같은데 생존 기간이 늘어나 보이는 것이 조기 진단 바이어스(lead-time bias)임을 안다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. Ch. Evaluating the effectiveness of screening programs (lead-time, length-time, overdiagnosis) · Welch HG, Schwartz LM, Woloshin S. Are increasing 5-year survival rates evidence of success against cancer? JAMA 2000;283:2975-2978",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Screening found the cancers earlier, so the clock for survival started earlier, but the patients died at the same age (median 68 years) and population mortality did not change. The apparent gain in survival measured from diagnosis is only the extra time the patient knew about the disease — lead-time bias."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why survival from diagnosis can mislead</b>: survival is counted from the date of diagnosis to death. If screening moves the diagnosis earlier without changing the date of death, survival lengthens by exactly that shift (the lead time), even though nobody lives longer. The tell-tale sign is that age at death and disease-specific mortality are unchanged.<br> <b>How the other biases differ</b>: length-time bias arises because periodic screening preferentially detects slow-growing tumors with a long preclinical phase, which carry a better prognosis regardless of treatment; it is suggested when screen-detected tumors grow more slowly. Overdiagnosis is the extreme case — tumors that would never have caused symptoms; it inflates incidence and survival. Volunteer (selection) bias occurs when people who choose screening are healthier.<br> <b>How to avoid them</b>: a randomized trial comparing disease-specific mortality in the whole screened versus unscreened population is not affected by lead time, because mortality is counted from randomization, not from diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (correct)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>What screening changes</td><td>Only the date of diagnosis</td><td>Which tumors are found — slow growers</td></tr> <tr><td>Tumor growth rate</td><td>Similar in both groups</td><td>Slower in screen-detected tumors</td></tr> <tr><td>Age at death, mortality</td><td>Unchanged</td><td>May look better because indolent tumors dominate</td></tr> </tbody></table> Same growth rate and same age at death point to lead time; slower growth in the screened group points to length time."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Selection bias from healthier volunteers would be the answer if those who chose screening had fewer comorbidities and lower all-cause mortality; it is controlled by comparing randomized populations.\n(B) Observer bias from unblinded assessment applies to subjective outcomes judged by assessors who know group assignment; death is an objective outcome that is not affected.\n(D) Length-time bias comes from screening preferentially finding slow-growing tumors; it would be the answer if the screen-detected tumors grew more slowly on serial imaging than symptom-detected ones.\n(E) Overdiagnosis bias would be favored if screening found many small tumors that never progressed and incidence rose sharply while deaths stayed the same; here the tumors grow similarly and patients die of the cancer."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing length-time bias because both concern screening — when growth rates are similar and age at death is unchanged, the only difference is when the diagnosis was made."
+   },
+   {
+    "k": "학습목표",
+    "v": "선별검사로 진단 시점만 앞당겨져 사망 시점이 같은데 생존 기간이 늘어나 보이는 것이 조기 진단 바이어스(lead-time bias)임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. Ch. Evaluating the effectiveness of screening programs (lead-time, length-time, overdiagnosis) · Welch HG, Schwartz LM, Woloshin S. Are increasing 5-year survival rates evidence of success against cancer? JAMA 2000;283:2975-2978"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "선별검사군의 5년 생존율은 높지만 사망 나이와 인구 사망률이 같고 종양 성장 속도도 같으므로 진단만 앞당겨진 조기 진단 바이어스다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "두 군의 종양 성장 속도가 비슷하고 사망 나이가 같다",
+   "steps": 2,
+   "chain": [
+    "생존율은 늘었지만 사망 나이·인구 사망률 불변 → 진단 시점만 앞당겨짐",
+    "종양 성장 속도 비슷 → 길이 바이어스가 아니라 조기 진단 바이어스"
+   ],
+   "key": [
+    {
+     "item": "the median age at death from pancreatic cancer is 68 years",
+     "why": "두 군 사망 시점이 같다",
+     "also": []
+    },
+    {
+     "item": "Pancreatic cancer mortality in the screened population is unchanged",
+     "why": "실제 이득 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the tumors have similar growth rates on serial imaging",
+     "why": "길이 바이어스 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "who works as a hospital quality officer",
+     "why": "자료를 해석하는 사람의 맥락일 뿐 판단과 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "선별검사군의 5년 생존율이 높지만 두 군의 사망 나이와 인구 사망률이 같고 종양 성장 속도도 비슷하다. 진단 시점만 앞당겨져 생존 기간이 늘어 보이는 조기 진단 바이어스다.",
+   "switch": {
+    "choice": "D",
+    "condition": "선별검사로 발견된 종양이 증상으로 발견된 종양보다 천천히 자랐다면 길이 바이어스(length-time bias)가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0289",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증",
+  "type": "혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "19세 남자가 버킷림프종으로 진단되어 항암치료를 시작하였고 첫 투여 18시간 뒤 소변량이 줄었다. 치료 전 알로퓨리놀을 먹기 시작하였고 정맥 수액을 맞고 있다. 혈압 132/80 mmHg, 맥박 96회/분 이다. 혈청 칼륨 6.1 mEq/L, 요산 14.2 mg/dL, 인 8.4 mg/dL, 칼슘 7.2 mg/dL, 크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL) 이다. 포도당-6-인산탈수소효소 활성은 정상이다. 심전도에서 T 파가 뾰족하다. 정맥 칼슘을 투여하였다.",
+  "question": "이어서 투여할 약물은?",
+  "options": [
+   "프로베네시드",
+   "라스부리카제",
+   "알로퓨리놀 증량",
+   "페북소스타트",
+   "탄산수소나트륨"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 항암치료 직후 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증과 급성 콩팥 손상이 생겨 종양용해증후군이다. 알로퓨리놀은 요산이 새로 만들어지는 것만 막고 이미 오른 요산은 낮추지 못한다. G6PD 결핍이 없으므로 요산을 직접 분해하는 라스부리카제를 준다.\n- 원리: <b>왜 요산이 콩팥을 막는가</b>: 빠르게 자라는 종양(버킷림프종·급성 백혈병)이 항암치료로 한꺼번에 깨지면 세포 안 칼륨·인·핵산이 쏟아진다. 핵산의 퓨린은 잔틴산화효소를 거쳐 요산이 되고, 요산은 산성인 집합관에서 결정으로 가라앉아 세관을 막는다. 인산이 칼슘과 결합해 침착하면서 칼슘은 떨어진다.<br> <b>왜 알로퓨리놀로는 부족한가</b>: 알로퓨리놀·페북소스타트는 잔틴산화효소를 막아 <b>앞으로</b> 만들어질 요산을 줄일 뿐, 이미 혈중에 있는 요산을 없애지 못한다. 라스부리카제는 사람에게 없는 요산산화효소(재조합)로, 요산을 물에 잘 녹는 알란토인으로 바꿔 몇 시간 안에 요산을 낮춘다.<br> <b>주의</b>: 라스부리카제가 요산을 분해할 때 과산화수소가 생겨 G6PD 결핍 환자에서 용혈과 메트헤모글로빈혈증을 일으킨다 — 그래서 투여 전에 G6PD 를 확인한다. 소변 알칼리화는 인산칼슘 침착을 늘려 더는 권하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">라스부리카제(정답)</th><th>알로퓨리놀 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>이미 있는 요산을 알란토인으로 분해</td><td>잔틴산화효소 억제 — 새 요산 생성만 차단</td></tr> <tr><td>효과 속도</td><td>수 시간 안에 요산 감소</td><td>이미 오른 요산은 그대로, 잔틴 축적</td></tr> <tr><td>쓰는 때</td><td>요산이 이미 높거나 고위험 종양</td><td>저·중간 위험의 예방</td></tr> <tr><td>금기</td><td>G6PD 결핍</td><td>—</td></tr> </tbody></table> 예방은 알로퓨리놀, 이미 오른 요산과 콩팥 손상에는 라스부리카제다.\n- 오답 이유:\n  - ① 프로베네시드는 요산 배설을 늘려 콩팥 세관의 요산 부담을 더 키운다. 콩팥 기능이 정상인 만성 통풍의 요산 배설 저하형이라면 쓸 수 있다.\n  - ③ 알로퓨리놀은 잔틴산화효소를 막아 새 요산이 만들어지는 것을 줄이는 예방약이다. 요산이 아직 정상인 저·중간 위험 환자의 항암치료 전 예방이라면 맞는 선택이다.\n  - ④ 페북소스타트도 잔틴산화효소 억제제라 이미 오른 요산을 낮추지 못한다. 알로퓨리놀 과민반응이 있는 환자의 예방이라면 대안이 된다.\n  - ⑤ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 녹지만 인산칼슘이 더 침착해 콩팥 손상이 악화될 수 있다. 고인산혈증이 없는 경우에만 과거에 쓰였다.\n- 함정: 이미 알로퓨리놀을 먹고 있으니 용량을 늘리는 것 — 잔틴산화효소 억제제는 이미 오른 요산을 낮추지 못한다.\n- 학습목표: 항암치료 직후 생긴 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증을 종양용해증후군으로 판단하고 이미 오른 요산에는 라스부리카제를 씀을 안다\n- 근거·출처: Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Cairo MS, et al. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndromes. Br J Haematol 2010;149:578-586",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항암치료 직후 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증과 급성 콩팥 손상이 생겨 종양용해증후군이다. 알로퓨리놀은 요산이 새로 만들어지는 것만 막고 이미 오른 요산은 낮추지 못한다. G6PD 결핍이 없으므로 요산을 직접 분해하는 라스부리카제를 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 요산이 콩팥을 막는가</b>: 빠르게 자라는 종양(버킷림프종·급성 백혈병)이 항암치료로 한꺼번에 깨지면 세포 안 칼륨·인·핵산이 쏟아진다. 핵산의 퓨린은 잔틴산화효소를 거쳐 요산이 되고, 요산은 산성인 집합관에서 결정으로 가라앉아 세관을 막는다. 인산이 칼슘과 결합해 침착하면서 칼슘은 떨어진다.<br> <b>왜 알로퓨리놀로는 부족한가</b>: 알로퓨리놀·페북소스타트는 잔틴산화효소를 막아 <b>앞으로</b> 만들어질 요산을 줄일 뿐, 이미 혈중에 있는 요산을 없애지 못한다. 라스부리카제는 사람에게 없는 요산산화효소(재조합)로, 요산을 물에 잘 녹는 알란토인으로 바꿔 몇 시간 안에 요산을 낮춘다.<br> <b>주의</b>: 라스부리카제가 요산을 분해할 때 과산화수소가 생겨 G6PD 결핍 환자에서 용혈과 메트헤모글로빈혈증을 일으킨다 — 그래서 투여 전에 G6PD 를 확인한다. 소변 알칼리화는 인산칼슘 침착을 늘려 더는 권하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">라스부리카제(정답)</th><th>알로퓨리놀 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>이미 있는 요산을 알란토인으로 분해</td><td>잔틴산화효소 억제 — 새 요산 생성만 차단</td></tr> <tr><td>효과 속도</td><td>수 시간 안에 요산 감소</td><td>이미 오른 요산은 그대로, 잔틴 축적</td></tr> <tr><td>쓰는 때</td><td>요산이 이미 높거나 고위험 종양</td><td>저·중간 위험의 예방</td></tr> <tr><td>금기</td><td>G6PD 결핍</td><td>—</td></tr> </tbody></table> 예방은 알로퓨리놀, 이미 오른 요산과 콩팥 손상에는 라스부리카제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 프로베네시드는 요산 배설을 늘려 콩팥 세관의 요산 부담을 더 키운다. 콩팥 기능이 정상인 만성 통풍의 요산 배설 저하형이라면 쓸 수 있다.\n③ 알로퓨리놀은 잔틴산화효소를 막아 새 요산이 만들어지는 것을 줄이는 예방약이다. 요산이 아직 정상인 저·중간 위험 환자의 항암치료 전 예방이라면 맞는 선택이다.\n④ 페북소스타트도 잔틴산화효소 억제제라 이미 오른 요산을 낮추지 못한다. 알로퓨리놀 과민반응이 있는 환자의 예방이라면 대안이 된다.\n⑤ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 녹지만 인산칼슘이 더 침착해 콩팥 손상이 악화될 수 있다. 고인산혈증이 없는 경우에만 과거에 쓰였다."
+   },
+   {
+    "k": "함정",
+    "v": "이미 알로퓨리놀을 먹고 있으니 용량을 늘리는 것 — 잔틴산화효소 억제제는 이미 오른 요산을 낮추지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항암치료 직후 생긴 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증을 종양용해증후군으로 판단하고 이미 오른 요산에는 라스부리카제를 씀을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Cairo MS, et al. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndromes. Br J Haematol 2010;149:578-586"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "버킷림프종 항암치료 직후 고칼륨·고요산·고인산·저칼슘혈증과 급성 콩팥 손상은 종양용해증후군이므로, G6PD 가 정상이면 이미 오른 요산을 분해하는 라스부리카제를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "요산이 이미 14.2 mg/dL 로 올라 콩팥 손상이 생겼고 알로퓨리놀은 기존 요산을 낮추지 못한다",
+   "steps": 3,
+   "chain": [
+    "항암치료 직후 고칼륨·고요산·고인산·저칼슘 + 크레아티닌 상승 → 종양용해증후군",
+    "이미 오른 요산은 잔틴산화효소 억제로 낮출 수 없음",
+    "G6PD 정상 → 라스부리카제"
+   ],
+   "key": [
+    {
+     "item": "요산 14.2 mg/dL",
+     "why": "이미 오른 요산 — 분해가 필요",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL)",
+     "why": "요산 결정에 의한 급성 콩팥 손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "치료 전 알로퓨리놀을 먹기 시작하였고",
+     "why": "예방약을 이미 쓰고 있는데도 요산이 올랐다 — 증량은 답이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "포도당-6-인산탈수소효소 활성은 정상이다",
+     "why": "라스부리카제 금기(G6PD 결핍) 없음",
+     "also": []
+    },
+    {
+     "item": "심전도에서 T 파가 뾰족하다",
+     "why": "고칼륨혈증 — 칼슘을 먼저 준 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈압 132/80 mmHg",
+     "why": "혈역학은 안정 — 약물 선택을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "버킷림프종 항암치료 18시간 뒤 고칼륨·고요산·고인산·저칼슘혈증과 급성 콩팥 손상이 생긴 종양용해증후군이다. 알로퓨리놀은 기존 요산을 낮추지 못하므로 G6PD 정상을 확인하고 라스부리카제를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "항암치료 전 요산이 정상인 저·중간 위험 환자의 예방이라면 알로퓨리놀이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0288",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "신경 — 흡연자의 근위부 근력 약화와 입마름",
+  "type": "신경 — 흡연자의 근위부 근력 약화와 입마름",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 63-year-old man comes to the physician because of difficulty climbing stairs and rising from a chair for 3 months. He also reports a dry mouth and erectile dysfunction. He has smoked two packs of cigarettes daily for 40 years. He has lost 6 kg during this period. Examination shows mild weakness of the hip flexors and shoulder abductors. Muscle strength in the hip flexors increases after 10 seconds of sustained maximal contraction. Deep tendon reflexes are absent at the knees and ankles but appear briefly after repeated tapping following exercise. Extraocular movements are full, and there is no ptosis.",
+  "question": "Which of the following is the most likely target of the antibodies causing this patient's weakness?",
+  "options": [
+   "Presynaptic voltage-gated calcium channels",
+   "Postsynaptic nicotinic acetylcholine receptors",
+   "Muscle-specific tyrosine kinase",
+   "Presynaptic synaptotagmin cleaved by a toxin",
+   "Voltage-gated potassium channel complex"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Proximal weakness that improves after brief sustained contraction, absent reflexes that reappear after exercise (post-exercise facilitation), and autonomic symptoms (dry mouth, erectile dysfunction) in a heavy smoker with weight loss are Lambert-Eaton myasthenic syndrome. Antibodies against presynaptic P/Q-type voltage-gated calcium channels reduce acetylcholine release; about half of cases are paraneoplastic, most often from small cell lung cancer.\n- 원리: <b>Why exercise helps</b>: acetylcholine release requires calcium entry through presynaptic P/Q-type voltage-gated calcium channels. When antibodies remove some channels, each nerve impulse releases too few quanta and the muscle fiber often fails to reach threshold. During sustained or repeated contraction, calcium accumulates in the nerve terminal, release increases, and strength and reflexes transiently improve (facilitation; on nerve conduction, a large increment after exercise or high-frequency stimulation).<br> <b>Why autonomic symptoms</b>: the same calcium channels release acetylcholine at autonomic ganglia and parasympathetic endings, so dry mouth, constipation, and erectile dysfunction are common. Ocular and bulbar involvement is milder than in myasthenia gravis.<br> <b>Why look for cancer</b>: small cell lung cancer cells express the same channels, and the immune response against the tumor cross-reacts with nerve terminals. A heavy smoker with weight loss needs CT of the chest; treating the tumor often improves the weakness. 3,4-Diaminopyridine prolongs presynaptic depolarization and increases release.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lambert-Eaton syndrome (correct)</th><th>Myasthenia gravis (closest distractor)</th></tr></thead><tbody> <tr><td>Antibody target</td><td>Presynaptic P/Q-type calcium channels</td><td>Postsynaptic acetylcholine receptors</td></tr> <tr><td>With repeated effort</td><td>Strength and reflexes improve briefly</td><td>Weakness worsens (fatigability)</td></tr> <tr><td>Reflexes, autonomic</td><td>Reduced or absent; dry mouth, impotence</td><td>Normal; no autonomic symptoms</td></tr> <tr><td>Eyes</td><td>Mild or spared</td><td>Ptosis, diplopia — often first</td></tr> <tr><td>Associated tumor</td><td>Small cell lung cancer</td><td>Thymoma</td></tr> </tbody></table> Both impair transmission at the same junction — the side of the synapse decides whether use makes it better or worse.\n- 오답 이유:\n  - (B) Postsynaptic acetylcholine receptor antibodies cause myasthenia gravis; it would be the answer with ptosis, diplopia, weakness that worsens with repeated effort, normal reflexes, and no autonomic symptoms.\n  - (C) Muscle-specific tyrosine kinase antibodies cause a form of myasthenia gravis with prominent bulbar, neck, and respiratory weakness; it would fit a younger woman with dysarthria and dysphagia and fatigable weakness.\n  - (D) Synaptotagmin cleavage by toxin describes botulinum toxin (type B cleaves synaptobrevin, type A SNAP-25); botulism would cause acute descending paralysis with dilated pupils after a contaminated food, not a 3-month course.\n  - (E) Voltage-gated potassium channel complex antibodies cause neuromyotonia and limbic encephalitis with muscle twitching, cramps, or memory loss and seizures — hyperexcitability rather than weakness that improves with use.\n- 함정: Choosing the acetylcholine receptor because the weakness is at the neuromuscular junction — strength that improves with sustained effort and absent reflexes point to the presynaptic calcium channel.\n- 학습목표: 근위부 근력 약화·반복 수축 후 호전·반사 감소·자율신경 증상을 Lambert-Eaton 근무력증후군으로 판단하고 시냅스 앞 전압개폐 칼슘통로 항체를 안다\n- 근거·출처: Ropper AH, et al. Adams and Victor's Principles of Neurology, 11th ed. Ch. Myasthenia gravis and related disorders of the neuromuscular junction · Titulaer MJ, Lang B, Verschuuren JJ. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. Lancet Neurol 2011;10:1098-1107",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Proximal weakness that improves after brief sustained contraction, absent reflexes that reappear after exercise (post-exercise facilitation), and autonomic symptoms (dry mouth, erectile dysfunction) in a heavy smoker with weight loss are Lambert-Eaton myasthenic syndrome. Antibodies against presynaptic P/Q-type voltage-gated calcium channels reduce acetylcholine release; about half of cases are paraneoplastic, most often from small cell lung cancer."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why exercise helps</b>: acetylcholine release requires calcium entry through presynaptic P/Q-type voltage-gated calcium channels. When antibodies remove some channels, each nerve impulse releases too few quanta and the muscle fiber often fails to reach threshold. During sustained or repeated contraction, calcium accumulates in the nerve terminal, release increases, and strength and reflexes transiently improve (facilitation; on nerve conduction, a large increment after exercise or high-frequency stimulation).<br> <b>Why autonomic symptoms</b>: the same calcium channels release acetylcholine at autonomic ganglia and parasympathetic endings, so dry mouth, constipation, and erectile dysfunction are common. Ocular and bulbar involvement is milder than in myasthenia gravis.<br> <b>Why look for cancer</b>: small cell lung cancer cells express the same channels, and the immune response against the tumor cross-reacts with nerve terminals. A heavy smoker with weight loss needs CT of the chest; treating the tumor often improves the weakness. 3,4-Diaminopyridine prolongs presynaptic depolarization and increases release."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lambert-Eaton syndrome (correct)</th><th>Myasthenia gravis (closest distractor)</th></tr></thead><tbody> <tr><td>Antibody target</td><td>Presynaptic P/Q-type calcium channels</td><td>Postsynaptic acetylcholine receptors</td></tr> <tr><td>With repeated effort</td><td>Strength and reflexes improve briefly</td><td>Weakness worsens (fatigability)</td></tr> <tr><td>Reflexes, autonomic</td><td>Reduced or absent; dry mouth, impotence</td><td>Normal; no autonomic symptoms</td></tr> <tr><td>Eyes</td><td>Mild or spared</td><td>Ptosis, diplopia — often first</td></tr> <tr><td>Associated tumor</td><td>Small cell lung cancer</td><td>Thymoma</td></tr> </tbody></table> Both impair transmission at the same junction — the side of the synapse decides whether use makes it better or worse."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Postsynaptic acetylcholine receptor antibodies cause myasthenia gravis; it would be the answer with ptosis, diplopia, weakness that worsens with repeated effort, normal reflexes, and no autonomic symptoms.\n(C) Muscle-specific tyrosine kinase antibodies cause a form of myasthenia gravis with prominent bulbar, neck, and respiratory weakness; it would fit a younger woman with dysarthria and dysphagia and fatigable weakness.\n(D) Synaptotagmin cleavage by toxin describes botulinum toxin (type B cleaves synaptobrevin, type A SNAP-25); botulism would cause acute descending paralysis with dilated pupils after a contaminated food, not a 3-month course.\n(E) Voltage-gated potassium channel complex antibodies cause neuromyotonia and limbic encephalitis with muscle twitching, cramps, or memory loss and seizures — hyperexcitability rather than weakness that improves with use."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the acetylcholine receptor because the weakness is at the neuromuscular junction — strength that improves with sustained effort and absent reflexes point to the presynaptic calcium channel."
+   },
+   {
+    "k": "학습목표",
+    "v": "근위부 근력 약화·반복 수축 후 호전·반사 감소·자율신경 증상을 Lambert-Eaton 근무력증후군으로 판단하고 시냅스 앞 전압개폐 칼슘통로 항체를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ropper AH, et al. Adams and Victor's Principles of Neurology, 11th ed. Ch. Myasthenia gravis and related disorders of the neuromuscular junction · Titulaer MJ, Lang B, Verschuuren JJ. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. Lancet Neurol 2011;10:1098-1107"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "근위부 근력 약화가 지속 수축 뒤 좋아지고 반사가 운동 뒤 잠시 나타나며 자율신경 증상이 있으므로 Lambert-Eaton 근무력증후군이고, 항체 표적은 시냅스 앞 전압개폐 칼슘통로다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "지속 수축 뒤 근력 증가·운동 뒤 반사 출현·자율신경 증상·안검하수 없음",
+   "steps": 3,
+   "chain": [
+    "근위부 근력 약화 + 반사 소실 + 입마름·발기부전 → 신경근 접합부 시냅스 앞 장애 의심",
+    "지속 수축 뒤 근력·반사 호전(촉진) → 중증근무력증이 아니라 Lambert-Eaton",
+    "시냅스 앞 P/Q 형 전압개폐 칼슘통로 항체"
+   ],
+   "key": [
+    {
+     "item": "Muscle strength in the hip flexors increases after 10 seconds of sustained maximal contraction",
+     "why": "촉진 현상 — 시냅스 앞 장애",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are absent at the knees and ankles but appear briefly after repeated tapping following exercise",
+     "why": "운동 뒤 반사 출현",
+     "also": []
+    },
+    {
+     "item": "a dry mouth and erectile dysfunction",
+     "why": "자율신경 증상 — 칼슘통로가 자율신경에도 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no ptosis",
+     "why": "중증근무력증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has smoked two packs of cigarettes daily for 40 years",
+     "why": "소세포폐암 동반 — 흉부 CT 로 종양을 찾아야 한다",
+     "also": []
+    },
+    {
+     "item": "He has lost 6 kg during this period",
+     "why": "악성 종양 시사",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "흡연자의 근위부 근력 약화가 지속 수축 뒤 좋아지고 반사가 운동 뒤 잠시 나타나며 입마름·발기부전이 있다. Lambert-Eaton 근무력증후군으로, 시냅스 앞 P/Q 형 전압개폐 칼슘통로에 대한 항체가 원인이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "안검하수와 복시가 먼저 생기고 반복 운동할수록 약해지며 반사와 자율신경이 정상이었다면 시냅스 뒤 아세틸콜린 수용체 항체(중증근무력증)가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0287",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "소화기·간담췌 — 회복된 담석 췌장염의 다음 처치",
+  "type": "소화기·간담췌 — 회복된 담석 췌장염의 다음 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "45세 여자가 기름진 식사 뒤 시작된 명치 통증과 구토로 입원하였다. 입원 당시 혈청 리파아제는 정상 상한의 9배, ALT 168 U/L, 총빌리루빈 1.6 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있고 총담관 지름은 5 mm 였다. 수액과 진통제로 치료하여 3일째 통증이 사라지고 식사를 잘 한다. 체온 36.7 °C, 혈압 118/74 mmHg 이다. 오늘 ALT 52 U/L, 총빌리루빈 0.8 mg/dL, 백혈구 7,800/mm³ 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경피적 담낭 배액술",
+   "이번 입원 중 복강경 담낭절제술",
+   "내시경역행담췌관조영술과 괄약근 절개",
+   "퇴원 후 6주 뒤 담낭절제술",
+   "우르소데옥시콜산 복용 후 퇴원"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 담낭 담석이 있고 리파아제가 정상 상한의 3배를 넘으며 기름진 식사 뒤 명치 통증이 생겨 담석 췌장염이다. 3일째 통증이 사라지고 식사를 하며 간기능·빌리루빈이 정상으로 돌아와 담석이 총담관을 이미 통과했다. 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다.\n- 원리: <b>왜 같은 입원 중인가</b>: 담석 췌장염은 작은 담석이 총담관을 지나 바터팽대부를 잠시 막아 생긴다. 대부분 담석은 저절로 십이지장으로 빠지지만 담낭에는 아직 담석이 남아 있다. 퇴원 뒤 수술을 미루면 수 주 안에 췌장염·담낭염·담관염이 재발하는 비율이 높아(6주 안에 약 20~30 %), 경증이면 회복한 같은 입원 중에 담낭을 떼는 것이 재발과 재입원을 가장 많이 줄인다.<br> <b>ERCP 는 언제인가</b>: 총담관에 담석이 남아 있거나 담관염이 있을 때다 — 발열·황달·빌리루빈 계속 상승·총담관 확장이 지속되면 ERCP 로 담석을 꺼낸다. 이 환자는 빌리루빈과 ALT 가 정상으로 내려갔고 총담관이 넓지 않아 담석이 이미 빠져나갔다.<br> <b>수술을 미루는 경우</b>: 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중증 췌장염은 염증이 가라앉을 때까지(대개 6주 이상) 담낭절제술을 미룬다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">같은 입원 중 담낭절제술(정답)</th><th>ERCP(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td>담낭에 남은 담석 — 재발 방지</td><td>총담관에 남은 담석 제거</td></tr> <tr><td>적응</td><td>경증 담석 췌장염에서 회복</td><td>담관염, 빌리루빈 상승 지속, 총담관 확장</td></tr> <tr><td>이 환자</td><td>통증 소실·간기능 정상화·총담관 5 mm</td><td>해당 소견 없음</td></tr> </tbody></table> 담석이 어디에 남아 있는가로 고른다 — 담낭이면 수술, 총담관이면 ERCP.\n- 오답 이유:\n  - ① 경피적 담낭 배액술은 수술 위험이 매우 큰 중증 급성 담낭염 환자의 임시 처치다. 열·담낭벽 비후·국소 압통이 있는 고령 중환자였다면 고려한다.\n  - ③ ERCP 는 발열·황달을 동반한 담관염이나 빌리루빈이 계속 오르고 총담관이 넓어진 총담관 담석이 남아 있을 때 한다. 간기능이 정상으로 돌아온 이 환자에게는 필요 없다.\n  - ④ 퇴원 후 6주 뒤 수술은 괴사나 액체 저류를 동반한 중증 췌장염에서 염증이 가라앉기를 기다릴 때 고른다. 경증이면 기다리는 동안 재발 위험이 높다.\n  - ⑤ 우르소데옥시콜산은 수술할 수 없는 환자의 작은 콜레스테롤 담석을 녹이려 할 때 쓰지만 효과가 느리고 재발이 흔하다. 수술 위험이 매우 큰 환자라면 고려한다.\n- 함정: 담석 췌장염이라는 말에 ERCP 를 고르는 것 — 담관염이나 남아 있는 총담관 담석이 없으면 ERCP 가 아니라 같은 입원 중 담낭절제술이다.\n- 학습목표: 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 담낭절제술을 함을 알고 ERCP 의 적응증과 구분한다\n- 근거·출처: Tenner S, et al. American College of Gastroenterology Guideline: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437 · da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261-1268",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "담낭 담석이 있고 리파아제가 정상 상한의 3배를 넘으며 기름진 식사 뒤 명치 통증이 생겨 담석 췌장염이다. 3일째 통증이 사라지고 식사를 하며 간기능·빌리루빈이 정상으로 돌아와 담석이 총담관을 이미 통과했다. 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 같은 입원 중인가</b>: 담석 췌장염은 작은 담석이 총담관을 지나 바터팽대부를 잠시 막아 생긴다. 대부분 담석은 저절로 십이지장으로 빠지지만 담낭에는 아직 담석이 남아 있다. 퇴원 뒤 수술을 미루면 수 주 안에 췌장염·담낭염·담관염이 재발하는 비율이 높아(6주 안에 약 20~30 %), 경증이면 회복한 같은 입원 중에 담낭을 떼는 것이 재발과 재입원을 가장 많이 줄인다.<br> <b>ERCP 는 언제인가</b>: 총담관에 담석이 남아 있거나 담관염이 있을 때다 — 발열·황달·빌리루빈 계속 상승·총담관 확장이 지속되면 ERCP 로 담석을 꺼낸다. 이 환자는 빌리루빈과 ALT 가 정상으로 내려갔고 총담관이 넓지 않아 담석이 이미 빠져나갔다.<br> <b>수술을 미루는 경우</b>: 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중증 췌장염은 염증이 가라앉을 때까지(대개 6주 이상) 담낭절제술을 미룬다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">같은 입원 중 담낭절제술(정답)</th><th>ERCP(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td>담낭에 남은 담석 — 재발 방지</td><td>총담관에 남은 담석 제거</td></tr> <tr><td>적응</td><td>경증 담석 췌장염에서 회복</td><td>담관염, 빌리루빈 상승 지속, 총담관 확장</td></tr> <tr><td>이 환자</td><td>통증 소실·간기능 정상화·총담관 5 mm</td><td>해당 소견 없음</td></tr> </tbody></table> 담석이 어디에 남아 있는가로 고른다 — 담낭이면 수술, 총담관이면 ERCP."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경피적 담낭 배액술은 수술 위험이 매우 큰 중증 급성 담낭염 환자의 임시 처치다. 열·담낭벽 비후·국소 압통이 있는 고령 중환자였다면 고려한다.\n③ ERCP 는 발열·황달을 동반한 담관염이나 빌리루빈이 계속 오르고 총담관이 넓어진 총담관 담석이 남아 있을 때 한다. 간기능이 정상으로 돌아온 이 환자에게는 필요 없다.\n④ 퇴원 후 6주 뒤 수술은 괴사나 액체 저류를 동반한 중증 췌장염에서 염증이 가라앉기를 기다릴 때 고른다. 경증이면 기다리는 동안 재발 위험이 높다.\n⑤ 우르소데옥시콜산은 수술할 수 없는 환자의 작은 콜레스테롤 담석을 녹이려 할 때 쓰지만 효과가 느리고 재발이 흔하다. 수술 위험이 매우 큰 환자라면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "담석 췌장염이라는 말에 ERCP 를 고르는 것 — 담관염이나 남아 있는 총담관 담석이 없으면 ERCP 가 아니라 같은 입원 중 담낭절제술이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 담낭절제술을 함을 알고 ERCP 의 적응증과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tenner S, et al. American College of Gastroenterology Guideline: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437 · da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261-1268"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "경증 담석 췌장염에서 회복했고 간기능·빌리루빈이 정상화되어 총담관 담석이 없으므로 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "빌리루빈·ALT 정상화, 총담관 5 mm, 발열 없음 — 담관염·남은 총담관 담석이 없다",
+   "steps": 3,
+   "chain": [
+    "담낭 담석 + 리파아제 3배 이상 + 명치 통증 → 담석 췌장염",
+    "3일째 회복·간기능 정상화·총담관 정상 → 경증, 총담관 담석 이미 통과",
+    "재발 방지 → 같은 입원 중 담낭절제술"
+   ],
+   "key": [
+    {
+     "item": "혈청 리파아제는 정상 상한의 9배",
+     "why": "급성 췌장염 진단",
+     "also": []
+    },
+    {
+     "item": "담낭에 여러 개의 담석이 있고",
+     "why": "담석이 원인 — 담낭에 아직 남아 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "총빌리루빈 0.8 mg/dL",
+     "why": "남은 총담관 담석 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "총담관 지름은 5 mm",
+     "why": "총담관 폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 36.7 °C",
+     "why": "담관염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "3일째 통증이 사라지고 식사를 잘 한다",
+     "why": "경증 — 수술을 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "담낭 담석과 리파아제 상승으로 담석 췌장염이 진단되었고 3일 만에 회복해 간기능이 정상화되었다. 총담관 담석이나 담관염이 없으므로 ERCP 가 아니라 같은 입원 중 복강경 담낭절제술로 재발을 막는다.",
+   "switch": {
+    "choice": "C",
+    "condition": "열과 황달이 있고 빌리루빈이 계속 오르며 총담관이 넓어져 있다면 ERCP 로 총담관 담석을 먼저 꺼낸다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0286",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "이비인후과 — 성인의 한쪽 삼출성 중이염",
+  "type": "이비인후과 — 성인의 한쪽 삼출성 중이염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 48-year-old man comes to the physician because of a sensation of fullness and decreased hearing in his right ear for 2 months. He has had no ear pain, fever, or ear discharge. He has had occasional blood-streaked nasal mucus in the mornings. He emigrated from southern China 20 years ago and has smoked one pack of cigarettes daily for 25 years. Otoscopy shows a dull, retracted right tympanic membrane with an air-fluid level; the left tympanic membrane is normal. The Rinne test is negative on the right, and the Weber test lateralizes to the right. A firm, nontender 2-cm lymph node is palpated high in the right posterior cervical triangle.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Endoscopic examination of the nasopharynx",
+   "Tympanostomy tube placement in the right ear",
+   "Oral amoxicillin for 10 days",
+   "Intranasal corticosteroid spray for 4 weeks",
+   "Audiometry repeated in 3 months"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A unilateral middle ear effusion in an adult, especially with blood-streaked nasal mucus and a firm upper posterior cervical lymph node, should be assumed to be caused by a nasopharyngeal mass obstructing the eustachian tube until proven otherwise. Southern Chinese origin and smoking increase the risk of nasopharyngeal carcinoma. The next step is endoscopic examination of the nasopharynx (with biopsy of any lesion) before treating the ear.\n- 원리: <b>Why the ear is a clue to the nasopharynx</b>: the eustachian tube opens into the lateral wall of the nasopharynx next to the fossa of Rosenmüller, the most common origin of nasopharyngeal carcinoma. A tumor there blocks the tube, middle ear pressure falls, and fluid accumulates — a unilateral serous otitis media with conductive hearing loss (negative Rinne, Weber to the affected side).<br> <b>Why adults are different from children</b>: in children the eustachian tube is short and horizontal and effusions are common after viral infections, usually bilateral. In adults a new unilateral effusion is unusual, so a structural cause must be excluded. The nasopharynx drains first to the retropharyngeal and upper deep cervical (level II and V) nodes, so a firm high posterior neck node is often the presenting sign.<br> <b>Risk factors</b>: Epstein-Barr virus, southern Chinese and Southeast Asian ancestry, salted fish in childhood, and smoking. Diagnosis requires endoscopy with biopsy; MRI stages the tumor. Inserting a tube alone would relieve the ear but delay the diagnosis of cancer.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Nasopharyngoscopy first (correct)</th><th>Tympanostomy tube (closest distractor)</th></tr></thead><tbody> <tr><td>Patient</td><td>Adult, new unilateral effusion</td><td>Child or adult with known benign cause</td></tr> <tr><td>Red flags</td><td>Blood-streaked mucus, neck node, risk ancestry, smoking</td><td>None — persistent effusion after nasopharynx is cleared</td></tr> <tr><td>Goal</td><td>Find and biopsy the cause of tube obstruction</td><td>Relieve persistent conductive loss</td></tr> </tbody></table> A unilateral effusion in an adult is a nasopharyngeal question before it is an ear question.\n- 오답 이유:\n  - (B) Tympanostomy tube placement relieves a persistent effusion with conductive hearing loss; it is appropriate after the nasopharynx has been examined and found normal, or in children with chronic bilateral effusions.\n  - (C) Oral amoxicillin treats acute otitis media with ear pain, fever, and a bulging tympanic membrane; an effusion without signs of infection does not need antibiotics.\n  - (D) Intranasal corticosteroids may help eustachian tube dysfunction from allergic rhinitis; they would be reasonable in a patient with seasonal nasal symptoms and no red flags after a normal nasopharyngeal examination.\n  - (E) Repeating audiometry after watchful waiting suits a child with an effusion after a cold; in an adult with a neck node and blood-streaked mucus, waiting delays a cancer diagnosis.\n- 함정: Treating the ear (tube or antibiotics) because the otoscopic finding is a middle ear effusion — in an adult with a unilateral effusion and a neck node, the cause is sought in the nasopharynx first.\n- 학습목표: 성인의 한쪽 삼출성 중이염은 비인두 종괴(특히 비인두암)를 배제하기 위해 비인두 내시경을 먼저 함을 안다\n- 근거·출처: Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Nasopharyngeal carcinoma · Chen YP, et al. Nasopharyngeal carcinoma. Lancet 2019;394:64-80 · Rosenfeld RM, et al. Clinical practice guideline: otitis media with effusion (update). Otolaryngol Head Neck Surg 2016;154(1 Suppl):S1-S41",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A unilateral middle ear effusion in an adult, especially with blood-streaked nasal mucus and a firm upper posterior cervical lymph node, should be assumed to be caused by a nasopharyngeal mass obstructing the eustachian tube until proven otherwise. Southern Chinese origin and smoking increase the risk of nasopharyngeal carcinoma. The next step is endoscopic examination of the nasopharynx (with biopsy of any lesion) before treating the ear."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the ear is a clue to the nasopharynx</b>: the eustachian tube opens into the lateral wall of the nasopharynx next to the fossa of Rosenmüller, the most common origin of nasopharyngeal carcinoma. A tumor there blocks the tube, middle ear pressure falls, and fluid accumulates — a unilateral serous otitis media with conductive hearing loss (negative Rinne, Weber to the affected side).<br> <b>Why adults are different from children</b>: in children the eustachian tube is short and horizontal and effusions are common after viral infections, usually bilateral. In adults a new unilateral effusion is unusual, so a structural cause must be excluded. The nasopharynx drains first to the retropharyngeal and upper deep cervical (level II and V) nodes, so a firm high posterior neck node is often the presenting sign.<br> <b>Risk factors</b>: Epstein-Barr virus, southern Chinese and Southeast Asian ancestry, salted fish in childhood, and smoking. Diagnosis requires endoscopy with biopsy; MRI stages the tumor. Inserting a tube alone would relieve the ear but delay the diagnosis of cancer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Nasopharyngoscopy first (correct)</th><th>Tympanostomy tube (closest distractor)</th></tr></thead><tbody> <tr><td>Patient</td><td>Adult, new unilateral effusion</td><td>Child or adult with known benign cause</td></tr> <tr><td>Red flags</td><td>Blood-streaked mucus, neck node, risk ancestry, smoking</td><td>None — persistent effusion after nasopharynx is cleared</td></tr> <tr><td>Goal</td><td>Find and biopsy the cause of tube obstruction</td><td>Relieve persistent conductive loss</td></tr> </tbody></table> A unilateral effusion in an adult is a nasopharyngeal question before it is an ear question."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Tympanostomy tube placement relieves a persistent effusion with conductive hearing loss; it is appropriate after the nasopharynx has been examined and found normal, or in children with chronic bilateral effusions.\n(C) Oral amoxicillin treats acute otitis media with ear pain, fever, and a bulging tympanic membrane; an effusion without signs of infection does not need antibiotics.\n(D) Intranasal corticosteroids may help eustachian tube dysfunction from allergic rhinitis; they would be reasonable in a patient with seasonal nasal symptoms and no red flags after a normal nasopharyngeal examination.\n(E) Repeating audiometry after watchful waiting suits a child with an effusion after a cold; in an adult with a neck node and blood-streaked mucus, waiting delays a cancer diagnosis."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the ear (tube or antibiotics) because the otoscopic finding is a middle ear effusion — in an adult with a unilateral effusion and a neck node, the cause is sought in the nasopharynx first."
+   },
+   {
+    "k": "학습목표",
+    "v": "성인의 한쪽 삼출성 중이염은 비인두 종괴(특히 비인두암)를 배제하기 위해 비인두 내시경을 먼저 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Nasopharyngeal carcinoma · Chen YP, et al. Nasopharyngeal carcinoma. Lancet 2019;394:64-80 · Rosenfeld RM, et al. Clinical practice guideline: otitis media with effusion (update). Otolaryngol Head Neck Surg 2016;154(1 Suppl):S1-S41"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "성인의 새로 생긴 한쪽 삼출성 중이염에 피 섞인 콧물과 위쪽 뒤 목 림프절 비대가 있으므로 비인두암을 의심해 비인두 내시경을 먼저 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "성인·한쪽·피 섞인 콧물·단단한 목 림프절",
+   "steps": 3,
+   "chain": [
+    "성인의 한쪽 삼출성 중이염 + 전음성 난청 → 이관 폐쇄",
+    "피 섞인 콧물·위쪽 뒤 목 림프절·남중국 출신·흡연 → 비인두 종괴(비인두암) 의심",
+    "귀 치료보다 비인두 내시경·조직검사가 먼저"
+   ],
+   "key": [
+    {
+     "item": "an air-fluid level",
+     "why": "중이 삼출 — 이관 폐쇄",
+     "also": []
+    },
+    {
+     "item": "the left tympanic membrane is normal",
+     "why": "한쪽만 — 국소 원인을 시사",
+     "also": []
+    },
+    {
+     "item": "occasional blood-streaked nasal mucus",
+     "why": "비인두 종괴의 출혈",
+     "also": []
+    },
+    {
+     "item": "A firm, nontender 2-cm lymph node is palpated high in the right posterior cervical triangle",
+     "why": "비인두암의 첫 림프절 전이 부위",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has had no ear pain, fever, or ear discharge",
+     "why": "급성 중이염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He emigrated from southern China 20 years ago",
+     "why": "위험 인자지만 단독으로 진단을 정하지 않는다",
+     "also": []
+    },
+    {
+     "item": "The Rinne test is negative on the right",
+     "why": "전음성 난청 — 삼출을 확인할 뿐 원인을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "48세 성인의 새로 생긴 한쪽 삼출성 중이염에 피 섞인 콧물과 단단한 위쪽 뒤 목 림프절이 있다. 비인두 종괴가 이관을 막은 것으로 보고 귀를 치료하기 전에 비인두 내시경(조직검사)을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "비인두 내시경이 정상이고 삼출이 3개월 넘게 지속되며 청력 저하가 있다면 환기관 삽입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0285",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전",
+  "type": "병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "24세 남자가 등산 중 손등을 벌에 쏘이고 5분 뒤 쏘인 부위가 붉어지고 부풀어 올라 왔다. 쏘인 부위 둘레 3 cm 에 가려운 팽진과 홍반이 있고, 숨쉬기 불편함·두드러기·입술 부종은 없다. 혈압 124/78 mmHg, 맥박 84회/분 이다. 15분 뒤 부종이 더 커지지 않았고 1시간 뒤 대부분 가라앉았다.",
+  "question": "이 부종이 생긴 주된 기전은?",
+  "options": [
+   "모세혈관 내피세포의 직접 괴사",
+   "림프관 폐쇄에 의한 간질액 정체",
+   "모세혈관 정수압의 상승",
+   "혈장 알부민 감소에 의한 교질삼투압 저하",
+   "후모세혈관 세정맥 내피세포의 수축"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 벌에 쏘인 직후 국소 비만세포가 히스타민을 분비하면 후모세혈관 세정맥의 내피세포가 수축해 세포 사이에 틈이 생기고, 단백질이 풍부한 혈장이 새어 나와 부종(팽진)을 만든다. 이 반응은 수 분 안에 시작해 15~30분 정도 지속되는 즉시·일과성 반응으로, 이 환자처럼 1시간 안에 가라앉는다.\n- 원리: <b>왜 세정맥인가</b>: 히스타민 H1 수용체와 내피세포 사이의 연접이 느슨한 곳이 후모세혈관 세정맥이다. 히스타민이 결합하면 내피세포 안 칼슘이 올라 수축 단백질이 당겨지고, 세포가 오그라들며 세포 사이에 틈이 생긴다. 모세혈관과 세동맥은 이 반응이 약하다.<br> <b>왜 일과성인가</b>: 내피세포 수축은 세포를 죽이지 않는 가역적 변화라, 히스타민이 분해되면 틈이 닫힌다. 그래서 수 분 안에 시작해 15~30분이면 끝난다. 이것이 급성 염증에서 가장 흔한 투과성 증가 기전이다.<br> <b>다른 기전과의 차이</b>: 화상·독소처럼 내피세포가 직접 괴사하면 세동맥·모세혈관·세정맥 모두에서 즉시 시작해 몇 시간에서 며칠 동안 지속된다(즉시·지속성). 정수압 상승(심부전)과 교질삼투압 저하(신증후군·간경변)는 단백질이 적은 여출액을 전신적으로 만든다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내피세포 수축(정답)</th><th>내피세포 직접 손상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>히스타민·브라디키닌·류코트리엔</td><td>화상·세균 독소·물리적 손상</td></tr> <tr><td>부위</td><td>후모세혈관 세정맥</td><td>세동맥·모세혈관·세정맥 모두</td></tr> <tr><td>시간 경과</td><td>즉시 시작, 15~30분 일과성</td><td>즉시 시작, 수 시간~수일 지속</td></tr> </tbody></table> 얼마나 빨리 시작해 얼마나 오래 가는가가 기전을 가른다 — 1시간 안에 가라앉는 팽진은 수축이다.\n- 오답 이유:\n  - ① 내피세포 직접 괴사는 화상·세균 독소에서 생기는 즉시·지속성 투과성 증가다. 부종이 수 시간에서 며칠 동안 지속되고 물집이나 괴사가 동반되었다면 정답이다.\n  - ② 림프관 폐쇄는 유방암 수술 뒤 림프절 절제나 사상충 감염에서 생기는 만성 림프부종이다. 수 주에 걸쳐 단단해지는 부종이었다면 정답이다.\n  - ③ 모세혈관 정수압 상승은 심부전·정맥 혈전처럼 정맥압이 오를 때 생기는 여출액 부종이다. 양쪽 다리가 오목하게 붓는 경우라면 정답이다.\n  - ④ 교질삼투압 저하는 신증후군·간경변의 저알부민혈증에서 생기는 전신 부종이다. 얼굴과 다리가 함께 붓고 알부민이 낮았다면 정답이다.\n- 함정: 벌독을 「손상」으로 보고 내피세포 직접 괴사를 고르는 것 — 수 분 안에 시작해 1시간 안에 가라앉는 팽진은 히스타민에 의한 내피세포 수축이다.\n- 학습목표: 급성 염증의 즉시·일과성 혈관 투과성 증가가 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문임을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 3 Inflammation and repair (increased vascular permeability)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "벌에 쏘인 직후 국소 비만세포가 히스타민을 분비하면 후모세혈관 세정맥의 내피세포가 수축해 세포 사이에 틈이 생기고, 단백질이 풍부한 혈장이 새어 나와 부종(팽진)을 만든다. 이 반응은 수 분 안에 시작해 15~30분 정도 지속되는 즉시·일과성 반응으로, 이 환자처럼 1시간 안에 가라앉는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 세정맥인가</b>: 히스타민 H1 수용체와 내피세포 사이의 연접이 느슨한 곳이 후모세혈관 세정맥이다. 히스타민이 결합하면 내피세포 안 칼슘이 올라 수축 단백질이 당겨지고, 세포가 오그라들며 세포 사이에 틈이 생긴다. 모세혈관과 세동맥은 이 반응이 약하다.<br> <b>왜 일과성인가</b>: 내피세포 수축은 세포를 죽이지 않는 가역적 변화라, 히스타민이 분해되면 틈이 닫힌다. 그래서 수 분 안에 시작해 15~30분이면 끝난다. 이것이 급성 염증에서 가장 흔한 투과성 증가 기전이다.<br> <b>다른 기전과의 차이</b>: 화상·독소처럼 내피세포가 직접 괴사하면 세동맥·모세혈관·세정맥 모두에서 즉시 시작해 몇 시간에서 며칠 동안 지속된다(즉시·지속성). 정수압 상승(심부전)과 교질삼투압 저하(신증후군·간경변)는 단백질이 적은 여출액을 전신적으로 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내피세포 수축(정답)</th><th>내피세포 직접 손상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>히스타민·브라디키닌·류코트리엔</td><td>화상·세균 독소·물리적 손상</td></tr> <tr><td>부위</td><td>후모세혈관 세정맥</td><td>세동맥·모세혈관·세정맥 모두</td></tr> <tr><td>시간 경과</td><td>즉시 시작, 15~30분 일과성</td><td>즉시 시작, 수 시간~수일 지속</td></tr> </tbody></table> 얼마나 빨리 시작해 얼마나 오래 가는가가 기전을 가른다 — 1시간 안에 가라앉는 팽진은 수축이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 내피세포 직접 괴사는 화상·세균 독소에서 생기는 즉시·지속성 투과성 증가다. 부종이 수 시간에서 며칠 동안 지속되고 물집이나 괴사가 동반되었다면 정답이다.\n② 림프관 폐쇄는 유방암 수술 뒤 림프절 절제나 사상충 감염에서 생기는 만성 림프부종이다. 수 주에 걸쳐 단단해지는 부종이었다면 정답이다.\n③ 모세혈관 정수압 상승은 심부전·정맥 혈전처럼 정맥압이 오를 때 생기는 여출액 부종이다. 양쪽 다리가 오목하게 붓는 경우라면 정답이다.\n④ 교질삼투압 저하는 신증후군·간경변의 저알부민혈증에서 생기는 전신 부종이다. 얼굴과 다리가 함께 붓고 알부민이 낮았다면 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "벌독을 「손상」으로 보고 내피세포 직접 괴사를 고르는 것 — 수 분 안에 시작해 1시간 안에 가라앉는 팽진은 히스타민에 의한 내피세포 수축이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 염증의 즉시·일과성 혈관 투과성 증가가 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 3 Inflammation and repair (increased vascular permeability)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "벌에 쏘인 5분 뒤 시작해 1시간 안에 가라앉은 국소 팽진은 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "수 분 안에 시작해 1시간 안에 가라앉은 일과성 경과",
+   "steps": 2,
+   "chain": [
+    "벌에 쏘인 직후 국소 팽진 → 비만세포 히스타민 분비",
+    "즉시 시작·1시간 안에 소실 → 세정맥 내피세포 수축(일과성)"
+   ],
+   "key": [
+    {
+     "item": "쏘이고 5분 뒤",
+     "why": "즉시 반응",
+     "also": []
+    },
+    {
+     "item": "1시간 뒤 대부분 가라앉았다",
+     "why": "일과성 — 내피세포 직접 괴사(지속성) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "가려운 팽진과 홍반",
+     "why": "히스타민 매개 국소 반응",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "숨쉬기 불편함·두드러기·입술 부종은 없다",
+     "why": "아나필락시스가 아님을 보여 주지만 국소 부종의 기전을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈압 124/78 mmHg",
+     "why": "전신 반응 없음 — 기전 판단에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "벌에 쏘인 5분 뒤 생겨 1시간 안에 가라앉은 가려운 팽진은 즉시·일과성 투과성 증가다. 비만세포의 히스타민이 후모세혈관 세정맥 내피세포를 수축시켜 틈을 만든 것이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "뜨거운 물에 데어 부종과 물집이 며칠 동안 지속되었다면 내피세포 직접 손상에 의한 즉시·지속성 투과성 증가가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0284",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "피부 — 고령 환자의 팽팽한 물집과 가려움",
+  "type": "피부 — 고령 환자의 팽팽한 물집과 가려움",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "An 81-year-old woman comes to the physician because of intensely itchy skin for 2 months and blisters on her thighs and abdomen for 2 weeks. Before the blisters appeared, she had red, hive-like itchy plaques on the same areas. She takes linagliptin for type 2 diabetes mellitus. Examination shows multiple tense, fluid-filled bullae 1 to 3 cm in diameter on erythematous and normal-appearing skin of the inner thighs, flexor forearms, and lower abdomen. Gentle lateral pressure on normal-appearing skin does not cause the epidermis to separate. The oral mucosa is normal. A skin biopsy shows a subepidermal blister with eosinophils.",
+  "question": "Which of the following is the most likely finding on direct immunofluorescence of perilesional skin?",
+  "options": [
+   "Granular IgG and C3 along the basement membrane zone",
+   "Perivascular IgA in the superficial dermal vessels",
+   "Linear IgG and C3 along the basement membrane zone",
+   "Intercellular IgG in a net-like pattern within the epidermis",
+   "Granular IgA in the tips of the dermal papillae"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: An elderly patient with a pruritic urticarial phase followed by tense bullae on the flexural trunk and limbs, a negative Nikolsky sign, normal oral mucosa, and a subepidermal blister with eosinophils has bullous pemphigoid. Autoantibodies (IgG) against hemidesmosomal proteins BP180 and BP230 bind along the basement membrane and fix complement, so direct immunofluorescence shows linear IgG and C3 along the basement membrane zone. DPP-4 inhibitors such as linagliptin are a recognized trigger.\n- 원리: <b>Why the blister is tense</b>: in bullous pemphigoid the target is the hemidesmosome (BP180, BP230), which anchors basal keratinocytes to the basement membrane. Antibody binding activates complement and recruits eosinophils and neutrophils, whose proteases cut the dermal-epidermal junction. The split is below the whole epidermis, so the blister roof is full thickness and the blister stays tense and intact; the Nikolsky sign is negative.<br> <b>Why the immunofluorescence pattern is linear</b>: the antigen lies in one continuous plane — the basement membrane zone — so antibodies stack along a single line. In pemphigus vulgaris the antigen (desmoglein 3, desmoglein 1) is on the surface of every keratinocyte, giving a net-like intercellular pattern and a flaccid, suprabasal blister with a positive Nikolsky sign and mucosal erosions.<br> <b>Who gets it</b>: mostly people older than 70 years; neurologic disease and DPP-4 inhibitors increase risk. Itching and urticarial plaques may precede blisters for weeks. Potent topical corticosteroids are first-line treatment.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bullous pemphigoid (correct)</th><th>Pemphigus vulgaris (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Hemidesmosome (BP180/BP230)</td><td>Desmosome (desmoglein 3 ± 1)</td></tr> <tr><td>Blister</td><td>Tense, subepidermal; Nikolsky negative</td><td>Flaccid, suprabasal; Nikolsky positive</td></tr> <tr><td>Mucosa</td><td>Usually spared</td><td>Oral erosions, often first</td></tr> <tr><td>Direct immunofluorescence</td><td>Linear IgG and C3 along the basement membrane</td><td>Intercellular IgG, net-like</td></tr> </tbody></table> Tense blister, deep split, linear line; flaccid blister, shallow split, net pattern.\n- 오답 이유:\n  - (A) Granular IgG and C3 along the basement membrane is seen in the skin of systemic lupus erythematosus (lupus band); it would fit photosensitive rash with systemic features rather than tense bullae.\n  - (B) Perivascular IgA in superficial dermal vessels is IgA vasculitis; it would be the answer with palpable purpura on the legs, arthralgia, and abdominal pain, usually in a child.\n  - (D) Intercellular net-like IgG is the pattern of pemphigus vulgaris; it would be the answer with flaccid blisters, a positive Nikolsky sign, oral erosions, and a suprabasal split with acantholysis.\n  - (E) Granular IgA in the dermal papillae is dermatitis herpetiformis; it would be the answer with grouped, intensely itchy vesicles on the elbows, knees, and buttocks in a patient with celiac disease.\n- 함정: Choosing the pemphigus pattern because blisters plus autoantibodies suggest 'pemphigus' — tense blisters, intact mucosa, and a negative Nikolsky sign mean a subepidermal split and a linear pattern.\n- 학습목표: 고령자의 팽팽한 물집과 음성 Nikolsky 징후를 수포성 유사천포창으로 판단하고 직접 면역형광 소견(기저막의 선형 IgG·C3)을 안다\n- 근거·출처: Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. Bullous pemphigoid · Borradori L, et al. Updated S2K guidelines for the management of bullous pemphigoid initiated by the European Academy of Dermatology and Venereology. J Eur Acad Dermatol Venereol 2022;36:1689-1704",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An elderly patient with a pruritic urticarial phase followed by tense bullae on the flexural trunk and limbs, a negative Nikolsky sign, normal oral mucosa, and a subepidermal blister with eosinophils has bullous pemphigoid. Autoantibodies (IgG) against hemidesmosomal proteins BP180 and BP230 bind along the basement membrane and fix complement, so direct immunofluorescence shows linear IgG and C3 along the basement membrane zone. DPP-4 inhibitors such as linagliptin are a recognized trigger."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the blister is tense</b>: in bullous pemphigoid the target is the hemidesmosome (BP180, BP230), which anchors basal keratinocytes to the basement membrane. Antibody binding activates complement and recruits eosinophils and neutrophils, whose proteases cut the dermal-epidermal junction. The split is below the whole epidermis, so the blister roof is full thickness and the blister stays tense and intact; the Nikolsky sign is negative.<br> <b>Why the immunofluorescence pattern is linear</b>: the antigen lies in one continuous plane — the basement membrane zone — so antibodies stack along a single line. In pemphigus vulgaris the antigen (desmoglein 3, desmoglein 1) is on the surface of every keratinocyte, giving a net-like intercellular pattern and a flaccid, suprabasal blister with a positive Nikolsky sign and mucosal erosions.<br> <b>Who gets it</b>: mostly people older than 70 years; neurologic disease and DPP-4 inhibitors increase risk. Itching and urticarial plaques may precede blisters for weeks. Potent topical corticosteroids are first-line treatment."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bullous pemphigoid (correct)</th><th>Pemphigus vulgaris (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Hemidesmosome (BP180/BP230)</td><td>Desmosome (desmoglein 3 ± 1)</td></tr> <tr><td>Blister</td><td>Tense, subepidermal; Nikolsky negative</td><td>Flaccid, suprabasal; Nikolsky positive</td></tr> <tr><td>Mucosa</td><td>Usually spared</td><td>Oral erosions, often first</td></tr> <tr><td>Direct immunofluorescence</td><td>Linear IgG and C3 along the basement membrane</td><td>Intercellular IgG, net-like</td></tr> </tbody></table> Tense blister, deep split, linear line; flaccid blister, shallow split, net pattern."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Granular IgG and C3 along the basement membrane is seen in the skin of systemic lupus erythematosus (lupus band); it would fit photosensitive rash with systemic features rather than tense bullae.\n(B) Perivascular IgA in superficial dermal vessels is IgA vasculitis; it would be the answer with palpable purpura on the legs, arthralgia, and abdominal pain, usually in a child.\n(D) Intercellular net-like IgG is the pattern of pemphigus vulgaris; it would be the answer with flaccid blisters, a positive Nikolsky sign, oral erosions, and a suprabasal split with acantholysis.\n(E) Granular IgA in the dermal papillae is dermatitis herpetiformis; it would be the answer with grouped, intensely itchy vesicles on the elbows, knees, and buttocks in a patient with celiac disease."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the pemphigus pattern because blisters plus autoantibodies suggest 'pemphigus' — tense blisters, intact mucosa, and a negative Nikolsky sign mean a subepidermal split and a linear pattern."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령자의 팽팽한 물집과 음성 Nikolsky 징후를 수포성 유사천포창으로 판단하고 직접 면역형광 소견(기저막의 선형 IgG·C3)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. Bullous pemphigoid · Borradori L, et al. Updated S2K guidelines for the management of bullous pemphigoid initiated by the European Academy of Dermatology and Venereology. J Eur Acad Dermatol Venereol 2022;36:1689-1704"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "고령자의 가려운 두드러기 같은 판 뒤 팽팽한 물집·음성 Nikolsky 징후·정상 구강 점막·호산구를 동반한 표피하 물집은 수포성 유사천포창이므로 직접 면역형광은 기저막의 선형 IgG·C3 이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "팽팽한 물집, 음성 Nikolsky 징후, 정상 구강 점막, 표피하 분리",
+   "steps": 2,
+   "chain": [
+    "팽팽한 물집·음성 Nikolsky·구강 정상·표피하 물집과 호산구 → 수포성 유사천포창",
+    "반세포연접 항원이 기저막 한 평면에 있음 → 선형 IgG·C3"
+   ],
+   "key": [
+    {
+     "item": "multiple tense, fluid-filled bullae",
+     "why": "표피 전층이 지붕인 표피하 물집",
+     "also": []
+    },
+    {
+     "item": "a subepidermal blister with eosinophils",
+     "why": "수포성 유사천포창의 조직 소견",
+     "also": []
+    },
+    {
+     "item": "red, hive-like itchy plaques",
+     "why": "물집 전 두드러기 단계",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Gentle lateral pressure on normal-appearing skin does not cause the epidermis to separate",
+     "why": "음성 Nikolsky — 심상성 천포창 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The oral mucosa is normal",
+     "why": "점막을 먼저 침범하는 심상성 천포창 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She takes linagliptin",
+     "why": "DPP-4 억제제는 유발 인자지만 면역형광 양상을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "81세의 가려운 두드러기 같은 판에 이어 생긴 팽팽한 물집, 음성 Nikolsky 징후, 정상 구강 점막, 호산구를 동반한 표피하 물집은 수포성 유사천포창이다. 직접 면역형광은 기저막을 따라 선형 IgG·C3 이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "쉽게 터지는 이완성 물집과 구강 미란, 양성 Nikolsky 징후, 기저층 위 분리였다면 심상성 천포창의 그물 모양 세포간 IgG 가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0273",
   "exam": "imaging",
   "style": "kmle_style",

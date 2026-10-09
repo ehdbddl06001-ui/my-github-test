@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3502,
+  "total": 3513,
   "byType": {
    "anatomy": 836,
    "paper": 744,
    "kmle": 1344,
+   "imaging": 289,
    "concept": 97,
    "usmle": 186,
-   "imaging": 278,
    "ailab": 14,
    "basic": 3
   },
@@ -41,34 +41,34 @@ window.MEDKOS_INDEX = {
    "산부인과": 50,
    "순환기": 27,
    "Physiology": 21,
-   "호흡기": 18,
-   "소화기": 17,
+   "호흡기": 19,
+   "소화기": 18,
    "Pharmacology": 16,
+   "소아과": 16,
    "Biochemistry": 15,
-   "소아과": 15,
    "Microbiology": 14,
+   "병리·조직학": 14,
    "응급·중환자": 14,
    "감염": 13,
    "내분비": 13,
-   "병리·조직학": 13,
-   "신경": 12,
+   "신경": 13,
+   "혈액·종양": 13,
    "신장·비뇨기": 12,
-   "혈액·종양": 12,
    "Internal Medicine": 11,
+   "예방의학·역학": 11,
+   "외과": 11,
+   "피부과": 11,
    "Immunology": 10,
-   "예방의학·역학": 10,
-   "피부과": 10,
-   "외과": 9,
    "근골격·류마티스": 7,
    "약리": 7,
    "정신과": 7,
+   "이비인후과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "안과": 4,
    "영상의학": 4,
-   "이비인후과": 4,
    "Oncology": 3,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2409,
+   "high": 2420,
    "medium": 1043,
    "low": 50
   },
@@ -791,6 +791,197 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1345.md",
    "snippet": "66세 남자가 두근거림으로 응급실에 왔다. 최근 6개월 동안 같은 증상으로 세 번 응급실에 왔고, 그중 두 번은 전기적 율동전환으로 동율동으로 돌아왔다. 이후 메토프롤롤을 꾸준히 복용하고 있는데도 다시 재발했다. 고혈압으로 약을 먹고 있고, 넉 달 전부터 아픽사반을 하루도 빠짐없이 복용하고 있다. 가슴 통증·실신·호흡곤란은 없다. 폐 청진은 정상이고 다리 부종은 없다. 오늘 심전도는 그림과 같고, 이전 발작 때의 12유도 심전",
    "text": "Cardiology Recurrent Palpitations with a Regular Tachycardia despite Rate Control atrial-flutter ecg rhythm-control treatment KMLE 2026 / Claude 66세 남자가 두근거림으로 응급실에 왔다. 최근 6개월 동안 같은 증상으로 세 번 응급실에 왔고, 그중 두 번은 전기적 율동전환으로 동율동으로 돌아왔다. 이후 메토프롤롤을 꾸준히 복용하고 있는데도 다시 재발했다. 고혈압으로 약을 먹고 있고, 넉 달 전부터 아픽사반을 하루도 빠짐없이 복용하고 있다. 가슴 통증·실신·호흡곤란은 없다. 폐 청진은 정상이고 다리 부종은 없다. 오늘 심전도는 그림과 같고, 이전 발작 때의 12유도 심전도에서도 하벽 유도에 톱니 모양의 음성 파형이 같은 모양으로 반복되었다. 활력징후와 검사 소견은 자료와 같다. 이번 발작이 정리된 뒤 재발을 막기 위한 치료로 가장 적절한 것은? A. 아미오다론 장기 복용 B. 삼첨판 하대정맥 협부 도자절제술 C. 플레카이니드 장기 복용 D. 디곡신 추가 복용 E. 방실결절 절제술과 영구 심박동기 규칙적인 150회/분 빈맥에 톱니 모양 조동파가 보이는 전형적 심방조동이 율동전환·베타차단제에도 반복된다. 전형적 조동은 삼첨판 하대정맥 협부를 도는 회로라 협부 도자절제술의 성공률이 높고 재발을 막는 1차 치료로 권고된다. 장기 항부정맥제는 효과가 낮고 부작용이 많다."
+  },
+  {
+   "id": "imaging-2026-0290",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0290.md",
+   "snippet": "A 58 year old man who works as a hospital quality officer reviews data from a new screening program for pancreatic cancer using annual imaging in adults aged 50 to 75 years. Among patients with pancreatic cancer, the 5 year survival from th",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce A 58 year old man who works as a hospital quality officer reviews data from a new screening program for pancreatic cancer using annual imaging in adults aged 50 to 75 years. Among patients with pancreatic cancer, the 5 year survival from the date of diagnosis is 24% in those detected by screening and 9% in those diagnosed after symptoms. In both groups, the tumors have similar growth rates on serial imaging, and the median age at death from pancreatic cancer is 68 years. Pancreatic cancer mortality in the screened population is unchanged compared with an unscreened population over 10 years. Which of the following best explains the higher 5 year survival in the screened group? A. Selection bias from healthier volunteers B. Observer bias from unblinded assessment C. Lead time bias D. Length time bias E. Overdiagnosis bias"
+  },
+  {
+   "id": "imaging-2026-0289",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0289.md",
+   "snippet": "19세 남자가 버킷림프종으로 진단되어 항암치료를 시작하였고 첫 투여 18시간 뒤 소변량이 줄었다. 치료 전 알로퓨리놀을 먹기 시작하였고 정맥 수액을 맞고 있다. 혈압 132/80 mmHg, 맥박 96회/분 이다. 혈청 칼륨 6.1 mEq/L, 요산 14.2 mg/dL, 인 8.4 mg/dL, 칼슘 7.2 mg/dL, 크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL) 이다. 포도당 6 인산탈수소효소 활성은 정상이다. 심전",
+   "text": "혈액·종양 혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce 19세 남자가 버킷림프종으로 진단되어 항암치료를 시작하였고 첫 투여 18시간 뒤 소변량이 줄었다. 치료 전 알로퓨리놀을 먹기 시작하였고 정맥 수액을 맞고 있다. 혈압 132/80 mmHg, 맥박 96회/분 이다. 혈청 칼륨 6.1 mEq/L, 요산 14.2 mg/dL, 인 8.4 mg/dL, 칼슘 7.2 mg/dL, 크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL) 이다. 포도당 6 인산탈수소효소 활성은 정상이다. 심전도에서 T 파가 뾰족하다. 정맥 칼슘을 투여하였다. 이어서 투여할 약물은? A. 프로베네시드 B. 라스부리카제 C. 알로퓨리놀 증량 D. 페북소스타트 E. 탄산수소나트륨"
+  },
+  {
+   "id": "imaging-2026-0288",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 흡연자의 근위부 근력 약화와 입마름",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0288.md",
+   "snippet": "A 63 year old man comes to the physician because of difficulty climbing stairs and rising from a chair for 3 months. He also reports a dry mouth and erectile dysfunction. He has smoked two packs of cigarettes daily for 40 years. He has lost",
+   "text": "신경 신경 — 흡연자의 근위부 근력 약화와 입마름 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce A 63 year old man comes to the physician because of difficulty climbing stairs and rising from a chair for 3 months. He also reports a dry mouth and erectile dysfunction. He has smoked two packs of cigarettes daily for 40 years. He has lost 6 kg during this period. Examination shows mild weakness of the hip flexors and shoulder abductors. Muscle strength in the hip flexors increases after 10 seconds of sustained maximal contraction. Deep tendon reflexes are absent at the knees and ankles but appear briefly after repeated tapping following exercise. Extraocular movements are full, and there is no ptosis. Which of the following is the most likely target of the antibodies causing this patient's weakness? A. Presynaptic voltage gated calcium channels B. Postsynaptic nicotinic acetylcholine receptors C. Muscle specific tyrosine kinase D. Presynaptic synaptotagmin cleaved by a toxin E. Voltage gated potassium channel complex"
+  },
+  {
+   "id": "imaging-2026-0287",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 회복된 담석 췌장염의 다음 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0287.md",
+   "snippet": "45세 여자가 기름진 식사 뒤 시작된 명치 통증과 구토로 입원하였다. 입원 당시 혈청 리파아제는 정상 상한의 9배, ALT 168 U/L, 총빌리루빈 1.6 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있고 총담관 지름은 5 mm 였다. 수액과 진통제로 치료하여 3일째 통증이 사라지고 식사를 잘 한다. 체온 36.7 °C, 혈압 118/74 mmHg 이다. 오늘 ALT 52 U/L, 총빌리루빈 0.8 mg/dL",
+   "text": "소화기 소화기·간담췌 — 회복된 담석 췌장염의 다음 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce 45세 여자가 기름진 식사 뒤 시작된 명치 통증과 구토로 입원하였다. 입원 당시 혈청 리파아제는 정상 상한의 9배, ALT 168 U/L, 총빌리루빈 1.6 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있고 총담관 지름은 5 mm 였다. 수액과 진통제로 치료하여 3일째 통증이 사라지고 식사를 잘 한다. 체온 36.7 °C, 혈압 118/74 mmHg 이다. 오늘 ALT 52 U/L, 총빌리루빈 0.8 mg/dL, 백혈구 7,800/mm³ 이다. 가장 적절한 처치는? A. 경피적 담낭 배액술 B. 이번 입원 중 복강경 담낭절제술 C. 내시경역행담췌관조영술과 괄약근 절개 D. 퇴원 후 6주 뒤 담낭절제술 E. 우르소데옥시콜산 복용 후 퇴원"
+  },
+  {
+   "id": "imaging-2026-0286",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 성인의 한쪽 삼출성 중이염",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0286.md",
+   "snippet": "A 48 year old man comes to the physician because of a sensation of fullness and decreased hearing in his right ear for 2 months. He has had no ear pain, fever, or ear discharge. He has had occasional blood streaked nasal mucus in the mornin",
+   "text": "이비인후과 이비인후과 — 성인의 한쪽 삼출성 중이염 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce A 48 year old man comes to the physician because of a sensation of fullness and decreased hearing in his right ear for 2 months. He has had no ear pain, fever, or ear discharge. He has had occasional blood streaked nasal mucus in the mornings. He emigrated from southern China 20 years ago and has smoked one pack of cigarettes daily for 25 years. Otoscopy shows a dull, retracted right tympanic membrane with an air fluid level; the left tympanic membrane is normal. The Rinne test is negative on the right, and the Weber test lateralizes to the right. A firm, nontender 2 cm lymph node is palpated high in the right posterior cervical triangle. Which of the following is the most appropriate next step in management? A. Endoscopic examination of the nasopharynx B. Tympanostomy tube placement in the right ear C. Oral amoxicillin for 10 days D. Intranasal corticosteroid spray for 4 weeks E. Audiometry repeated in 3 months"
+  },
+  {
+   "id": "imaging-2026-0285",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0285.md",
+   "snippet": "24세 남자가 등산 중 손등을 벌에 쏘이고 5분 뒤 쏘인 부위가 붉어지고 부풀어 올라 왔다. 쏘인 부위 둘레 3 cm 에 가려운 팽진과 홍반이 있고, 숨쉬기 불편함·두드러기·입술 부종은 없다. 혈압 124/78 mmHg, 맥박 84회/분 이다. 15분 뒤 부종이 더 커지지 않았고 1시간 뒤 대부분 가라앉았다. 이 부종이 생긴 주된 기전은? A. 모세혈관 내피세포의 직접 괴사 B. 림프관 폐쇄에 의한 간질액 정체 C. 모세혈관 ",
+   "text": "병리·조직학 병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce 24세 남자가 등산 중 손등을 벌에 쏘이고 5분 뒤 쏘인 부위가 붉어지고 부풀어 올라 왔다. 쏘인 부위 둘레 3 cm 에 가려운 팽진과 홍반이 있고, 숨쉬기 불편함·두드러기·입술 부종은 없다. 혈압 124/78 mmHg, 맥박 84회/분 이다. 15분 뒤 부종이 더 커지지 않았고 1시간 뒤 대부분 가라앉았다. 이 부종이 생긴 주된 기전은? A. 모세혈관 내피세포의 직접 괴사 B. 림프관 폐쇄에 의한 간질액 정체 C. 모세혈관 정수압의 상승 D. 혈장 알부민 감소에 의한 교질삼투압 저하 E. 후모세혈관 세정맥 내피세포의 수축"
+  },
+  {
+   "id": "imaging-2026-0284",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 고령 환자의 팽팽한 물집과 가려움",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0284.md",
+   "snippet": "An 81 year old woman comes to the physician because of intensely itchy skin for 2 months and blisters on her thighs and abdomen for 2 weeks. Before the blisters appeared, she had red, hive like itchy plaques on the same areas. She takes lin",
+   "text": "피부과 피부 — 고령 환자의 팽팽한 물집과 가려움 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce An 81 year old woman comes to the physician because of intensely itchy skin for 2 months and blisters on her thighs and abdomen for 2 weeks. Before the blisters appeared, she had red, hive like itchy plaques on the same areas. She takes linagliptin for type 2 diabetes mellitus. Examination shows multiple tense, fluid filled bullae 1 to 3 cm in diameter on erythematous and normal appearing skin of the inner thighs, flexor forearms, and lower abdomen. Gentle lateral pressure on normal appearing skin does not cause the epidermis to separate. The oral mucosa is normal. A skin biopsy shows a subepidermal blister with eosinophils. Which of the following is the most likely finding on direct immunofluorescence of perilesional skin? A. Granular IgG and C3 along the basement membrane zone B. Perivascular IgA in the superficial dermal vessels C. Linear IgG and C3 along the basement membrane zone D. Intercellular IgG in a net like pattern within the epidermis E. Granular IgA in the tips of the dermal papillae"
+  },
+  {
+   "id": "imaging-2026-0283",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0283.md",
+   "snippet": "8세 남아가 트램펄린에서 떨어져 머리 위쪽을 부딪친 뒤 목 통증과 고개가 오른쪽으로 기울어진 채 움직이지 않으려 하여 응급실에 왔다. 의식은 명료하고 팔다리의 근력·감각·반사는 정상이다. 목 뒤쪽 윗부분에 압통이 있다. 중립 자세에서 찍은 측면 경추 X선은 그림과 같고, 양방향 화살표 사이 간격은 6 mm 로 측정되었다. 손상되었을 가능성이 가장 높은 구조물은? A. 앞세로인대 B. 목덜미인대 C. 뒤세로인대 D. 환추 횡인대",
+   "text": "소아과 소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce 8세 남아가 트램펄린에서 떨어져 머리 위쪽을 부딪친 뒤 목 통증과 고개가 오른쪽으로 기울어진 채 움직이지 않으려 하여 응급실에 왔다. 의식은 명료하고 팔다리의 근력·감각·반사는 정상이다. 목 뒤쪽 윗부분에 압통이 있다. 중립 자세에서 찍은 측면 경추 X선은 그림과 같고, 양방향 화살표 사이 간격은 6 mm 로 측정되었다. 손상되었을 가능성이 가장 높은 구조물은? A. 앞세로인대 B. 목덜미인대 C. 뒤세로인대 D. 환추 횡인대 E. 익상인대"
+  },
+  {
+   "id": "imaging-2026-0282",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0282.md",
+   "snippet": "26세 남자가 오토바이에서 떨어져 오른쪽 옆구리를 부딪친 뒤 3시간 만에 응급실에 왔다. 도착 당시 혈압 96/60 mmHg, 맥박 118회/분 이었고, 정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다. 오른쪽 옆구리에 압통과 멍이 있고 복막 자극 징후는 없다. 육안적 혈뇨가 있다. 혈색소는 도착 시 13.1 g/dL, 6시간 뒤 12.7 g/dL 이다. 동맥기 영",
+   "text": "외과 외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce 26세 남자가 오토바이에서 떨어져 오른쪽 옆구리를 부딪친 뒤 3시간 만에 응급실에 왔다. 도착 당시 혈압 96/60 mmHg, 맥박 118회/분 이었고, 정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다. 오른쪽 옆구리에 압통과 멍이 있고 복막 자극 징후는 없다. 육안적 혈뇨가 있다. 혈색소는 도착 시 13.1 g/dL, 6시간 뒤 12.7 g/dL 이다. 동맥기 영상에서 조영제가 혈관 밖으로 새는 소견은 없었다. 복부 조영증강 CT 는 그림과 같다. 가장 적절한 처치는? A. 침상 안정과 연속 혈색소 측정 B. 응급 개복 콩팥절제술 C. 콩팥동맥 혈관색전술 D. 즉시 요관 스텐트 삽입 E. 경피적 콩팥창냄술"
+  },
+  {
+   "id": "imaging-2026-0281",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0281.md",
+   "snippet": "A 59 year old man is brought to the emergency department 2 hours after he fell down a flight of stairs and struck his forehead on the floor. He reports pain at the back of his neck. He did not lose consciousness. He has an abrasion on his f",
+   "text": "외과 외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce A 59 year old man is brought to the emergency department 2 hours after he fell down a flight of stairs and struck his forehead on the floor. He reports pain at the back of his neck. He did not lose consciousness. He has an abrasion on his forehead. Muscle strength, sensation, and deep tendon reflexes are normal in all extremities. Rectal tone is normal. A CT scan of the cervical spine at the level of the second cervical vertebra is shown. Which of the following is the most likely mechanism of this injury? A. Hyperflexion with anterior shear B. Rotation with lateral flexion C. Distraction of the occiput from the atlas D. Hyperextension with axial loading E. Vertical axial compression on the vertex"
+  },
+  {
+   "id": "imaging-2026-0280",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+   "confidence": "high",
+   "date": "2026-10-09",
+   "path": "content/imaging/2026/imaging-2026-0280.md",
+   "snippet": "A 20 year old man is brought to the emergency department 1 hour after a motorcycle collision because of left sided chest pain and shortness of breath. His blood pressure is 104/66 mm Hg, pulse is 114/min, respirations are 26/min, and oxygen",
+   "text": "호흡기 호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce A 20 year old man is brought to the emergency department 1 hour after a motorcycle collision because of left sided chest pain and shortness of breath. His blood pressure is 104/66 mm Hg, pulse is 114/min, respirations are 26/min, and oxygen saturation is 91% on room air. There is tenderness over the left chest wall. Breath sounds are decreased over the left hemithorax, and percussion is dull. The trachea is midline, and the jugular veins are not distended. Heart sounds are clearly heard. Hemoglobin concentration is 11.8 g/dL. A chest x ray is shown. Which of the following is the most appropriate next step in management? A. Emergency thoracotomy B. Needle decompression of the left chest C. Ultrasound guided pericardiocentesis D. Flexible bronchoscopy E. Left tube thoracostomy"
   },
   {
    "id": "cn.ortho.scaphoid-fracture.occult-imaging",
