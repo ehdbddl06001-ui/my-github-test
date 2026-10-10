@@ -1,19 +1,19 @@
 {
- "started": "2026-10-09T10:24:24+09:00",
+ "started": "2026-10-10T10:08:28+09:00",
  "built": [
-  "정형외과",
+  "소아청소년과",
   "혈액종양내과",
   "소화기내과"
  ],
  "skipped": [
   "응급의학과",
+  "정형외과",
   "피부과",
   "순환기내과",
   "내분비내과",
   "안과",
   "외과",
   "산부인과",
-  "소아청소년과",
   "정신건강의학과",
   "류마티스내과",
   "호흡기내과",
@@ -28,16 +28,15 @@
  "retry": [],
  "previews": [],
  "validation": {
-  "정형외과": [],
+  "소아청소년과": [],
   "혈액종양내과": [],
   "소화기내과": []
  },
  "notes": {
-  "정형외과": [
-   "마지막 쪽 내용이 적다(7%)",
-   "배치 탐색 뒤에도 남은 빈 공간: 4쪽 오른쪽 단 아래가 비어 있다(빈 공간 44%)"
+  "소아청소년과": [],
+  "혈액종양내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)"
   ],
-  "혈액종양내과": [],
   "소화기내과": []
  },
  "concept_errors": [
@@ -51,37 +50,55 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
-  "정형외과": {
-   "tried": 106,
+  "소아청소년과": {
+   "tried": 152,
    "diagram_after_section": {
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#fig:f1": 9,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging": 14,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#shrink": 1.0,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#pad": 42,
-    "u-cn-ortho-scaphoid-fracture-occult-imaging#col": false,
-    "u-cn-ortho-femoral-neck-fracture-arthroplasty-rationale#fig:f1": 9,
-    "u-cn-ortho-scfe-in-situ-fixation": 17,
-    "u-cn-ortho-scfe-in-situ-fixation#shrink": 1.0,
-    "u-cn-ortho-scfe-in-situ-fixation#pad": 0,
-    "u-cn-ortho-scfe-in-situ-fixation#col": true
+    "u-cn-peds-biliary-atresia-cholestasis-workup": 16,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#shrink": 1.0,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#pad": 0,
+    "u-cn-peds-biliary-atresia-cholestasis-workup#col": true,
+    "u-cn-peds-pertussis-infant-macrolide-choice": 9,
+    "u-cn-peds-pertussis-infant-macrolide-choice#shrink": 1.0,
+    "u-cn-peds-pertussis-infant-macrolide-choice#pad": 0,
+    "u-cn-peds-pertussis-infant-macrolide-choice#col": false,
+    "u-cn-peds-kawasaki-acute-ivig": 15,
+    "u-cn-peds-kawasaki-acute-ivig#shrink": 1.0,
+    "u-cn-peds-kawasaki-acute-ivig#pad": 0,
+    "u-cn-peds-kawasaki-acute-ivig#col": false,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": 20,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#shrink": 1.0,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#pad": 28,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#col": false,
+    "u-cn-peds-stec-hus-supportive-no-antibiotics": 13,
+    "u-cn-peds-stec-hus-supportive-no-antibiotics#shrink": 1.0,
+    "u-cn-peds-stec-hus-supportive-no-antibiotics#pad": 0,
+    "u-cn-peds-stec-hus-supportive-no-antibiotics#col": true,
+    "u-cn-peds-febrile-uti-imaging-workup": 14,
+    "u-cn-peds-febrile-uti-imaging-workup#shrink": 0.88,
+    "u-cn-peds-febrile-uti-imaging-workup#pad": 0,
+    "u-cn-peds-febrile-uti-imaging-workup#col": false
    }
   },
   "혈액종양내과": {
-   "tried": 68,
+   "tried": 91,
    "diagram_after_section": {
     "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo": 15,
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#shrink": 0.76,
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#pad": 0,
+    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#shrink": 1.0,
+    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#pad": 28,
     "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#col": false,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes": 19,
+    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes": 17,
     "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#shrink": 1.0,
     "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#pad": 0,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#col": false,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis": 11,
+    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#col": true,
+    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis": 7,
     "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#shrink": 1.0,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#pad": 28,
+    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#pad": 0,
     "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#col": false,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#fig:f1": 8
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#fig:f1": 8,
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin": 20,
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#shrink": 1.0,
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#pad": 0,
+    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#col": true
    }
   },
   "소화기내과": {
@@ -103,42 +120,42 @@
   }
  },
  "result": "ok",
- "finished": "2026-10-09T10:30:31+09:00",
+ "finished": "2026-10-10T10:18:43+09:00",
  "upload": {
   "result": "ok",
   "items": {
-   "정형외과": {
-    "file": "MedKOS_학습서_정형외과.pdf",
+   "소아청소년과": {
+    "file": "MedKOS_학습서_소아청소년과.pdf",
     "status": "uploaded",
-    "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
+    "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
     "kept_id": true,
-    "md5": "8ab998404f14db1fd4bb3b817a5e5204",
-    "archive": "MedKOS_학습서_정형외과_v13_2026-10-09.pdf"
+    "md5": "70fee344dd1234c096ba23dc04d5e443",
+    "archive": "MedKOS_학습서_소아청소년과_v14_2026-10-10.pdf"
    },
    "혈액종양내과": {
     "file": "MedKOS_학습서_혈액종양내과.pdf",
     "status": "uploaded",
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
     "kept_id": true,
-    "md5": "96dad75ba8d8e80575022227e1507595",
-    "archive": "MedKOS_학습서_혈액종양내과_v7_2026-10-09.pdf"
+    "md5": "89f8d91c16352d8daafe08a738634326",
+    "archive": "MedKOS_학습서_혈액종양내과_v8_2026-10-10.pdf"
    },
    "소화기내과": {
     "file": "MedKOS_학습서_소화기내과.pdf",
     "status": "uploaded",
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
     "kept_id": true,
-    "md5": "46afd6dea909b72570327726e1ddc7cb",
-    "archive": "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf"
+    "md5": "6880b0df7ac07cba5fbaaf02dd9c3357",
+    "archive": "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "e318b0b374aacea5244dccd0361766b7"
+    "md5": "46985797b4c4b66c489b57a1f9dfd321"
    }
   },
-  "at": "2026-10-09T10:30:31+09:00"
+  "at": "2026-10-10T10:18:43+09:00"
  }
 }

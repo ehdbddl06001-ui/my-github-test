@@ -204,73 +204,73 @@
    ]
   },
   "소아청소년과": {
-   "hash": "dc0884fb9134d9fcaf4f",
-   "version": 13,
-   "date": "2026-10-06",
+   "hash": "d65ccdaf4f0011f394e0",
+   "version": 14,
+   "date": "2026-10-10",
    "file": "MedKOS_학습서_소아청소년과.pdf",
-   "pages": 20,
+   "pages": 19,
    "template_version": 11,
    "units": {
     "cn.peds.biliary-atresia.cholestasis-workup": {
-     "title": "생후 2주 넘은 황달에 결합빌리루빈이 오르면 — 생리적·모유 황달이 아니라 담즙정체다, 담도폐쇄부터 서둘러 확인한다",
+     "title": "신생아 지속 황달 — 결합형이면 담도폐쇄부터 확인",
      "page": 2,
-     "concept_hash": "7543a352e2e56e3f",
-     "concept_version": 1
+     "concept_hash": "ee0b430da635bb8d",
+     "concept_version": 2
     },
     "cn.peds.pertussis.infant-macrolide-choice": {
      "title": "영아 백일해 — 약은 macrolide(마크롤라이드), 어린 영아는 아지스로마이신",
-     "page": 4,
+     "page": 3,
      "concept_hash": "58e6e6074e18e1d7",
      "concept_version": 1
     },
     "cn.peds.kawasaki.acute-ivig": {
-     "title": "가와사키병 급성기 치료 — 발열 10일 안의 고용량 면역글로불린 정주가 중심, aspirin(아스피린)은 병용 보조",
+     "title": "가와사키병 급성기 — 면역글로불린이 중심, aspirin(아스피린)은 보조",
      "page": 5,
-     "concept_hash": "ee92ecbb8003c494",
-     "concept_version": 2
+     "concept_hash": "48e5771f5bda5924",
+     "concept_version": 3
     },
     "cn.peds.rheumatic-fever.acute-eradication": {
      "title": "급성 류마티스열 확진 뒤 반드시 할 치료 — 남은 A군 사슬알균 제균(페니실린)은 모든 환자에게, 항염·스테로이드는 증상 치료",
-     "page": 8,
+     "page": 7,
      "concept_hash": "dd43d74c94e8c08c",
      "concept_version": 1
     },
     "cn.peds.rheumatic-fever.secondary-prophylaxis": {
      "title": "급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다",
-     "page": 10,
+     "page": 9,
      "concept_hash": "24d24f9714103e08",
      "concept_version": 2
     },
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
      "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
-     "page": 13,
+     "page": 12,
      "concept_hash": "d0a8e02323ff5e1c",
      "concept_version": 2
     },
     "cn.peds.stec-hus.supportive-no-antibiotics": {
      "title": "소아 STEC 용혈요독증후군 — 시가독소의 혈관 손상에서 지지치료·항생제 회피까지",
-     "page": 15,
+     "page": 14,
      "concept_hash": "7b68c31a6b78bef1",
      "concept_version": 2
     },
     "cn.peds.febrile-uti.imaging-workup": {
-     "title": "영아의 첫 열성 요로감염 — 영상은 신장·방광 초음파부터, 배뇨방광요도조영술은 조건이 있을 때만",
-     "page": 17,
-     "concept_hash": "b7ab61172d5f4fb7",
-     "concept_version": 2
+     "title": "영아 첫 열성 요로감염 — 영상은 초음파부터, VCUG 는 조건부",
+     "page": 16,
+     "concept_hash": "e128a950c3d54d9f",
+     "concept_version": 3
     },
     "cn.peds.febrile-seizure.workup": {
      "title": "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우",
-     "page": 19,
+     "page": 18,
      "concept_hash": "9c95a903eea48716",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "d320405b4651eef06dac60ff1c7b9657",
-    "version": 13,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "70fee344dd1234c096ba23dc04d5e443",
+    "version": 14,
+    "uploaded": "2026-10-10T10:18:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -285,10 +285,13 @@
     "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf",
     "MedKOS_학습서_소아청소년과_v11_2026-10-04.pdf",
     "MedKOS_학습서_소아청소년과_v12_2026-10-05.pdf",
-    "MedKOS_학습서_소아청소년과_v13_2026-10-06.pdf"
+    "MedKOS_학습서_소아청소년과_v13_2026-10-06.pdf",
+    "MedKOS_학습서_소아청소년과_v14_2026-10-10.pdf"
    ],
    "changes": [
-    "내용 갱신: 비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만 (정리본 v1 → v2)"
+    "내용 갱신: 신생아 지속 황달 — 결합형이면 담도폐쇄부터 확인 (정리본 v1 → v2)",
+    "내용 갱신: 가와사키병 급성기 — 면역글로불린이 중심, aspirin(아스피린)은 보조 (정리본 v2 → v3)",
+    "내용 갱신: 영아 첫 열성 요로감염 — 영상은 초음파부터, VCUG 는 조건부 (정리본 v2 → v3)"
    ]
   },
   "안과": {
@@ -882,11 +885,11 @@
    ]
   },
   "혈액종양내과": {
-   "hash": "83d743065d2b16d58f98",
-   "version": 7,
-   "date": "2026-10-09",
+   "hash": "7050270fb0797ae61db4",
+   "version": 8,
+   "date": "2026-10-10",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
-   "pages": 11,
+   "pages": 10,
    "template_version": 11,
    "units": {
     "cn.onc.her2-breast-cancer.trastuzumab-baseline-echo": {
@@ -896,10 +899,10 @@
      "concept_version": 2
     },
     "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes": {
-     "title": "고환 종양 IHC — 「갈색 세포가 종양인가, 종양에 대한 반응인가」: 격막의 CD3 양성 작은 T 림프구 + 음성인 맑은 세포 판 = 정상피종",
-     "page": 3,
-     "concept_hash": "9bb947ab8aa41769",
-     "concept_version": 2
+     "title": "정상피종 IHC — 갈색 세포가 종양인가 반응인가",
+     "page": 4,
+     "concept_hash": "fe60edf56f216d91",
+     "concept_version": 3
     },
     "cn.neuro.glioblastoma.ring-enhancing-diagnosis": {
      "title": "교모세포종 — 축내 종괴 + 두꺼운 고리 조영",
@@ -916,9 +919,9 @@
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "96dad75ba8d8e80575022227e1507595",
-    "version": 7,
-    "uploaded": "2026-10-09T10:30:31+09:00"
+    "md5": "89f8d91c16352d8daafe08a738634326",
+    "version": 8,
+    "uploaded": "2026-10-10T10:18:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
@@ -927,10 +930,11 @@
     "MedKOS_학습서_혈액종양내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v5_2026-09-28.pdf",
     "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf",
-    "MedKOS_학습서_혈액종양내과_v7_2026-10-09.pdf"
+    "MedKOS_학습서_혈액종양내과_v7_2026-10-09.pdf",
+    "MedKOS_학습서_혈액종양내과_v8_2026-10-10.pdf"
    ],
    "changes": [
-    "내용 갱신: GATA3 — 기원을 묻는 계통 표지, 치료 예측이 아니다 (정리본 v2 → v3)"
+    "내용 갱신: 정상피종 IHC — 갈색 세포가 종양인가 반응인가 (정리본 v2 → v3)"
    ]
   },
   "알레르기내과": {
@@ -1066,9 +1070,9 @@
    "changes": []
   },
   "소화기내과": {
-   "hash": "e3626c571cb67bf6efba",
-   "version": 12,
-   "date": "2026-10-09",
+   "hash": "c60e7fcdda763caa87f3",
+   "version": 13,
+   "date": "2026-10-10",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1076,7 +1080,7 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "934af2bf14598c6c",
+     "concept_hash": "d2ed57caaa2de525",
      "concept_version": 2
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
@@ -1100,9 +1104,9 @@
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "46afd6dea909b72570327726e1ddc7cb",
-    "version": 12,
-    "uploaded": "2026-10-09T10:30:31+09:00"
+    "md5": "6880b0df7ac07cba5fbaaf02dd9c3357",
+    "version": 13,
+    "uploaded": "2026-10-10T10:18:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1116,10 +1120,11 @@
     "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf",
     "MedKOS_학습서_소화기내과_v10_2026-10-05.pdf",
     "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf",
-    "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf"
+    "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf",
+    "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf"
    ],
    "changes": [
-    "내용 갱신: 육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유 (정리본 v1 → v2)"
+    "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
    ]
   },
   "신경과": {
@@ -1194,13 +1199,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "e318b0b374aacea5244dccd0361766b7",
+   "md5": "46985797b4c4b66c489b57a1f9dfd321",
    "version": null,
-   "uploaded": "2026-10-09T10:30:31+09:00"
+   "uploaded": "2026-10-10T10:18:43+09:00"
   }
  },
- "updated": "2026-10-09"
+ "updated": "2026-10-10"
 }
