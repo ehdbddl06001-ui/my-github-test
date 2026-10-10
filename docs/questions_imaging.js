@@ -2,6 +2,1322 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0294",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약",
+  "type": "감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "A 63-year-old man is admitted to the hospital because of fever, dry cough, and progressive shortness of breath for 8 days. He has type 2 diabetes mellitus treated with metformin. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. Temperature is 38.4°C (101.1°F), pulse is 102/min, respirations are 26/min, and blood pressure is 134/80 mm Hg. Oxygen saturation is 88% on room air and rises to 94% with 4 L/min of oxygen by nasal cannula. Crackles are heard at both lung bases. Leukocyte count is 6800/mm3 with lymphocytes 9%. Serum procalcitonin concentration is 0.08 ng/mL (N < 0.1). A portable chest x-ray is shown.",
+  "question": "Which of the following is most likely to reduce this patient's risk of death?",
+  "options": [
+   "Azithromycin",
+   "Lopinavir-ritonavir",
+   "Dexamethasone",
+   "Hydroxychloroquine",
+   "Ivermectin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The chest x-ray shows hazy ground-glass and consolidative opacities in both lower lung zones with low lung volumes — bilateral viral pneumonia. He has confirmed SARS-CoV-2 infection on day 8 of illness and needs supplemental oxygen. In this phase, lung injury is driven mainly by the host inflammatory response, and dexamethasone 6 mg daily for up to 10 days reduced 28-day mortality in patients needing oxygen or mechanical ventilation (RECOVERY trial).\n- 원리: <b>Why a corticosteroid helps in this phase</b>: COVID-19 has an early viral replication phase (first week) and a later inflammatory phase. By the second week, when patients become hypoxemic, viral load is falling, and alveolar damage comes from cytokine release and immune cell infiltration. A corticosteroid dampens this inflammation, so it helps most when the disease is severe enough to need oxygen.<br> <b>Why timing and severity matter</b>: in RECOVERY, dexamethasone lowered mortality in patients on oxygen and most in those on mechanical ventilation, but showed no benefit (and a trend toward harm) in patients not needing oxygen, in whom suppressing immunity during active replication offers no gain.<br> <b>Why the other drugs fail</b>: hydroxychloroquine, ivermectin, lopinavir-ritonavir, and azithromycin each failed to reduce mortality in large randomized trials. Antiviral treatment with remdesivir is most useful early, and immunomodulators such as tocilizumab or baricitinib are added to dexamethasone when oxygen needs rise rapidly.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Dexamethasone (correct)</th><th>Azithromycin (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory lung injury</td><td>Bacterial co-infection (atypical organisms)</td></tr> <tr><td>Mortality in hospitalized COVID-19</td><td>Reduced in patients needing oxygen</td><td>No benefit in randomized trials</td></tr> <tr><td>Clue in this patient</td><td>Day 8, hypoxemia requiring oxygen</td><td>Procalcitonin is low — bacterial co-infection is unlikely</td></tr> </tbody></table> Bilateral opacities with hypoxemia in the second week call for an anti-inflammatory drug; an antibiotic is added only when bacterial infection is suggested.\n- 오답 이유:\n  - (A) Azithromycin would be added if a bacterial co-infection were suggested by a high procalcitonin or lobar consolidation; in RECOVERY it did not reduce mortality from COVID-19 itself.\n  - (B) Lopinavir-ritonavir failed to reduce mortality in hospitalized COVID-19 patients; ritonavir-boosted nirmatrelvir is the protease inhibitor used early in outpatients at high risk, not in this hypoxemic inpatient.\n  - (D) Hydroxychloroquine showed no mortality benefit in hospitalized patients in RECOVERY and other trials; it remains a treatment for lupus and rheumatoid arthritis, not COVID-19.\n  - (E) Ivermectin did not shorten illness or reduce mortality in randomized trials of COVID-19; it is indicated for strongyloidiasis, which should be treated before steroids in patients from endemic areas.\n- 함정: Choosing an antibiotic for bilateral opacities — the low procalcitonin argues against bacterial co-infection, and only a corticosteroid lowers mortality in hypoxemic patients.\n- 학습목표: 산소 보충이 필요한 SARS-CoV-2 폐렴 입원 환자에서 사망률을 낮추는 약이 덱사메타손임을 안다\n- 근거·출처: RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of hospitalized adults with COVID-19 (final version, 2024) · 작성자 판독(2026-10-11): 이동식 반직립 AP 흉부 X선, 양쪽 아래 폐야의 흐린 간유리·경화 음영, 폐용적 작음, 위쪽 폐야 비교적 보존, 기흉 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest x-ray shows hazy ground-glass and consolidative opacities in both lower lung zones with low lung volumes — bilateral viral pneumonia. He has confirmed SARS-CoV-2 infection on day 8 of illness and needs supplemental oxygen. In this phase, lung injury is driven mainly by the host inflammatory response, and dexamethasone 6 mg daily for up to 10 days reduced 28-day mortality in patients needing oxygen or mechanical ventilation (RECOVERY trial)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a corticosteroid helps in this phase</b>: COVID-19 has an early viral replication phase (first week) and a later inflammatory phase. By the second week, when patients become hypoxemic, viral load is falling, and alveolar damage comes from cytokine release and immune cell infiltration. A corticosteroid dampens this inflammation, so it helps most when the disease is severe enough to need oxygen.<br> <b>Why timing and severity matter</b>: in RECOVERY, dexamethasone lowered mortality in patients on oxygen and most in those on mechanical ventilation, but showed no benefit (and a trend toward harm) in patients not needing oxygen, in whom suppressing immunity during active replication offers no gain.<br> <b>Why the other drugs fail</b>: hydroxychloroquine, ivermectin, lopinavir-ritonavir, and azithromycin each failed to reduce mortality in large randomized trials. Antiviral treatment with remdesivir is most useful early, and immunomodulators such as tocilizumab or baricitinib are added to dexamethasone when oxygen needs rise rapidly."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Dexamethasone (correct)</th><th>Azithromycin (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory lung injury</td><td>Bacterial co-infection (atypical organisms)</td></tr> <tr><td>Mortality in hospitalized COVID-19</td><td>Reduced in patients needing oxygen</td><td>No benefit in randomized trials</td></tr> <tr><td>Clue in this patient</td><td>Day 8, hypoxemia requiring oxygen</td><td>Procalcitonin is low — bacterial co-infection is unlikely</td></tr> </tbody></table> Bilateral opacities with hypoxemia in the second week call for an anti-inflammatory drug; an antibiotic is added only when bacterial infection is suggested."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Azithromycin would be added if a bacterial co-infection were suggested by a high procalcitonin or lobar consolidation; in RECOVERY it did not reduce mortality from COVID-19 itself.\n(B) Lopinavir-ritonavir failed to reduce mortality in hospitalized COVID-19 patients; ritonavir-boosted nirmatrelvir is the protease inhibitor used early in outpatients at high risk, not in this hypoxemic inpatient.\n(D) Hydroxychloroquine showed no mortality benefit in hospitalized patients in RECOVERY and other trials; it remains a treatment for lupus and rheumatoid arthritis, not COVID-19.\n(E) Ivermectin did not shorten illness or reduce mortality in randomized trials of COVID-19; it is indicated for strongyloidiasis, which should be treated before steroids in patients from endemic areas."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing an antibiotic for bilateral opacities — the low procalcitonin argues against bacterial co-infection, and only a corticosteroid lowers mortality in hypoxemic patients."
+   },
+   {
+    "k": "학습목표",
+    "v": "산소 보충이 필요한 SARS-CoV-2 폐렴 입원 환자에서 사망률을 낮추는 약이 덱사메타손임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of hospitalized adults with COVID-19 (final version, 2024) · 작성자 판독(2026-10-11): 이동식 반직립 AP 흉부 X선, 양쪽 아래 폐야의 흐린 간유리·경화 음영, 폐용적 작음, 위쪽 폐야 비교적 보존, 기흉 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "SARS-CoV-2 감염 8일째 양쪽 아래 폐야 음영과 산소가 필요한 저산소혈증이 있으므로 사망률을 낮추는 약은 덱사메타손이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "프로칼시토닌이 낮아 세균 동반 감염 가능성이 낮고, 산소 보충이 필요한 염증기다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 아래 폐야의 간유리·경화 음영 + 산소 보충 필요 → 중증 바이러스 폐렴",
+    "발병 2주째 염증기·산소 필요 → 덱사메타손이 사망률을 낮춘다"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래 폐야의 흐린 간유리·경화 음영",
+     "why": "양측 바이러스 폐렴",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum procalcitonin concentration is 0.08 ng/mL",
+     "why": "세균 동반 감염 가능성을 낮춘다 — 항생제 선택지를 밀어낸다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Oxygen saturation is 88% on room air and rises to 94% with 4 L/min of oxygen",
+     "why": "산소가 필요한 단계 — 덱사메타손이 이득을 보인 집단",
+     "also": []
+    },
+    {
+     "item": "progressive shortness of breath for 8 days",
+     "why": "둘째 주 염증기",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "lymphocytes 9%",
+     "why": "코로나19 에 흔한 림프구 감소 — 약 선택을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus treated with metformin",
+     "why": "중증화 위험 요인이며 스테로이드 중 혈당 감시가 필요하지만 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "SARS-CoV-2 폐렴 8일째 양쪽 아래 폐야 음영과 산소가 필요한 저산소혈증이 있다. 이 염증기에 사망률을 낮추는 약은 덱사메타손이며, 프로칼시토닌이 낮아 항생제는 필요 없다.",
+   "switch": {
+    "choice": "A",
+    "condition": "한쪽 엽의 경화와 높은 프로칼시토닌으로 세균 동반 폐렴이 의심되면 항생제(아지트로마이신 포함 요법)를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0294.png",
+   "caption": "Portable semi-upright anteroposterior chest radiograph, position markers as in the original (TCIA, CC BY 4.0; DICOM converted with standard windowing, no cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1593850180013061004871260874921",
+   "asset_id": "TCIA-COVID19_AR-17634541564421",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0293",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위",
+  "type": "소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "55세 남자가 대장암 간 전이로 간 부분절제술을 받았다. 수술 전 간기능 검사는 정상이었고, 음주력과 간질환 병력은 없다. 절제 검체 중 종양에서 떨어진 정상 간 조직으로 약물을 산화시키는 대사 효소에 대한 면역조직화학염색을 하였다. 그림처럼 간세포의 갈색 염색은 소엽의 한 구역에 띠 모양으로 진하고, 그 사이 문맥역 쪽 간세포 띠는 거의 염색되지 않는다.",
+  "question": "이 효소가 진하게 발현되는 소엽 구역에 괴사가 주로 생기는 것은?",
+  "options": [
+   "아세트아미노펜 과다복용",
+   "황린 중독",
+   "자간증",
+   "만성 B형간염의 경계판 괴사",
+   "원발 담즙성 담관염"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 그림의 효소는 간세포에만 발현되고 소엽 안에서 한 구역에 띠 모양으로 진하다. 산화 반응을 하는 시토크롬 P450 효소는 산소 분압이 낮은 중심정맥 주위(3구역) 간세포에 몰려 있고, 문맥역 쪽(1구역)은 약하다. 아세트아미노펜은 이 효소(CYP2E1·CYP3A4 등)가 독성 대사물 NAPQI 로 바꾸므로, 과다복용하면 효소가 많은 3구역에서 글루타티온이 먼저 고갈되어 중심소엽 괴사가 생긴다.\n- 원리: <b>왜 3구역에 대사 효소가 많은가</b>: 혈액은 문맥역(1구역)에서 들어와 동양혈관을 지나 중심정맥(3구역)으로 빠진다. 1구역 간세포는 산소가 풍부해 산화적 대사(포도당신생합성, 요소 생성)를 맡고, 3구역은 산소가 적은 대신 시토크롬 P450 에 의한 약물·독소의 산화, 해당, 지방 합성을 맡는다(대사 구역화). 그래서 그림처럼 CYP 효소 면역염색은 중심정맥 주위에 띠 모양으로 진하다.<br> <b>왜 아세트아미노펜 괴사가 3구역에 생기는가</b>: 치료 용량에서는 대부분 포합(글루쿠론산·황산)되고 일부만 CYP 가 NAPQI 로 산화시켜 글루타티온과 결합해 해독된다. 과량이면 포합이 포화되어 NAPQI 가 많이 생기는데, 효소가 많은 3구역에서 가장 많이 생기고 그곳은 산소도 적어 글루타티온이 먼저 바닥난다. 남은 NAPQI 가 단백질과 결합해 간세포가 죽는다. 같은 이유로 사염화탄소·할로탄 독성과 허혈(쇼크 간)도 3구역에 온다.<br> <b>1구역 손상의 예</b>: 황린·철 중독처럼 독소가 대사 없이 바로 작용하면 처음 닿는 문맥역 쪽이 먼저 죽고, 자간증은 문맥역 둘레에 섬유소 침착과 출혈성 괴사를 일으킨다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아세트아미노펜(정답)</th><th>황린 중독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사 구역</td><td>3구역(중심소엽)</td><td>1구역(문맥역 주위)</td></tr> <tr><td>독성의 원천</td><td>CYP 가 만든 대사물(NAPQI) — 효소가 많은 곳</td><td>독소 자체 — 혈액이 처음 닿는 곳</td></tr> <tr><td>그림과의 관계</td><td>효소가 진한 구역 = 손상 구역</td><td>효소가 거의 없는 구역이 손상</td></tr> </tbody></table> 대사를 거쳐야 독이 되는 물질은 3구역을, 그 자체로 독인 물질과 자간증은 1구역을 먼저 망가뜨린다.\n- 오답 이유:\n  - ② 황린 중독은 대사 없이 직접 독성을 내므로 혈액이 처음 닿는 문맥역 주위(1구역)에 괴사가 생긴다. 효소가 거의 없는 띠 쪽이 손상될 때 답이 된다.\n  - ③ 자간증은 문맥역 주위 동양혈관에 섬유소가 침착되며 1구역에 출혈성 괴사를 일으킨다. 임신 말기 고혈압·단백뇨 환자의 간 손상 구역을 물을 때 답이다.\n  - ④ 만성 B형간염의 경계판 괴사는 문맥역 염증이 경계판을 넘어 들어가며 문맥역 바로 옆 간세포가 죽는 것이다. 대사 효소 분포와는 무관한 면역 손상이다.\n  - ⑤ 원발 담즙성 담관염은 문맥역의 소엽간 담관을 림프구가 파괴하는 질환이다. 간세포 효소가 아니라 담관세포가 표적이며, 이 효소는 담관세포에서 음성이다.\n- 함정: 갈색 띠가 문맥역을 둘러싼다고 여겨 1구역 질환을 고르는 것 — 산화 약물대사 효소는 산소가 적은 중심정맥 주위에 몰려 있다.\n- 학습목표: 간 소엽에서 시토크롬 P450 약물대사 효소가 중심정맥 주위(3구역)에 몰려 있어 아세트아미노펜 독성 대사물에 의한 괴사가 그 구역에 생김을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 18 Liver and Gallbladder (hepatic zonation; drug- and toxin-induced injury — centrilobular necrosis by acetaminophen, periportal injury) · Lee WM. Drug-induced acute liver failure. Clin Liver Dis 2013;17:575-586 · Human Protein Atlas — CYP3A4 liver tissue, hepatocytes high, cholangiocytes not detected (teacher-only) · 작성자 판독(2026-10-11): 간 TMA 코어, 간세포 세포질의 진한 갈색 염색이 넓은 띠를 이루고 그 사이 띠는 거의 음성, 담관세포 음성\n\n## 출처\n- Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림의 효소는 간세포에만 발현되고 소엽 안에서 한 구역에 띠 모양으로 진하다. 산화 반응을 하는 시토크롬 P450 효소는 산소 분압이 낮은 중심정맥 주위(3구역) 간세포에 몰려 있고, 문맥역 쪽(1구역)은 약하다. 아세트아미노펜은 이 효소(CYP2E1·CYP3A4 등)가 독성 대사물 NAPQI 로 바꾸므로, 과다복용하면 효소가 많은 3구역에서 글루타티온이 먼저 고갈되어 중심소엽 괴사가 생긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 3구역에 대사 효소가 많은가</b>: 혈액은 문맥역(1구역)에서 들어와 동양혈관을 지나 중심정맥(3구역)으로 빠진다. 1구역 간세포는 산소가 풍부해 산화적 대사(포도당신생합성, 요소 생성)를 맡고, 3구역은 산소가 적은 대신 시토크롬 P450 에 의한 약물·독소의 산화, 해당, 지방 합성을 맡는다(대사 구역화). 그래서 그림처럼 CYP 효소 면역염색은 중심정맥 주위에 띠 모양으로 진하다.<br> <b>왜 아세트아미노펜 괴사가 3구역에 생기는가</b>: 치료 용량에서는 대부분 포합(글루쿠론산·황산)되고 일부만 CYP 가 NAPQI 로 산화시켜 글루타티온과 결합해 해독된다. 과량이면 포합이 포화되어 NAPQI 가 많이 생기는데, 효소가 많은 3구역에서 가장 많이 생기고 그곳은 산소도 적어 글루타티온이 먼저 바닥난다. 남은 NAPQI 가 단백질과 결합해 간세포가 죽는다. 같은 이유로 사염화탄소·할로탄 독성과 허혈(쇼크 간)도 3구역에 온다.<br> <b>1구역 손상의 예</b>: 황린·철 중독처럼 독소가 대사 없이 바로 작용하면 처음 닿는 문맥역 쪽이 먼저 죽고, 자간증은 문맥역 둘레에 섬유소 침착과 출혈성 괴사를 일으킨다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아세트아미노펜(정답)</th><th>황린 중독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사 구역</td><td>3구역(중심소엽)</td><td>1구역(문맥역 주위)</td></tr> <tr><td>독성의 원천</td><td>CYP 가 만든 대사물(NAPQI) — 효소가 많은 곳</td><td>독소 자체 — 혈액이 처음 닿는 곳</td></tr> <tr><td>그림과의 관계</td><td>효소가 진한 구역 = 손상 구역</td><td>효소가 거의 없는 구역이 손상</td></tr> </tbody></table> 대사를 거쳐야 독이 되는 물질은 3구역을, 그 자체로 독인 물질과 자간증은 1구역을 먼저 망가뜨린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 황린 중독은 대사 없이 직접 독성을 내므로 혈액이 처음 닿는 문맥역 주위(1구역)에 괴사가 생긴다. 효소가 거의 없는 띠 쪽이 손상될 때 답이 된다.\n③ 자간증은 문맥역 주위 동양혈관에 섬유소가 침착되며 1구역에 출혈성 괴사를 일으킨다. 임신 말기 고혈압·단백뇨 환자의 간 손상 구역을 물을 때 답이다.\n④ 만성 B형간염의 경계판 괴사는 문맥역 염증이 경계판을 넘어 들어가며 문맥역 바로 옆 간세포가 죽는 것이다. 대사 효소 분포와는 무관한 면역 손상이다.\n⑤ 원발 담즙성 담관염은 문맥역의 소엽간 담관을 림프구가 파괴하는 질환이다. 간세포 효소가 아니라 담관세포가 표적이며, 이 효소는 담관세포에서 음성이다."
+   },
+   {
+    "k": "함정",
+    "v": "갈색 띠가 문맥역을 둘러싼다고 여겨 1구역 질환을 고르는 것 — 산화 약물대사 효소는 산소가 적은 중심정맥 주위에 몰려 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간 소엽에서 시토크롬 P450 약물대사 효소가 중심정맥 주위(3구역)에 몰려 있어 아세트아미노펜 독성 대사물에 의한 괴사가 그 구역에 생김을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 18 Liver and Gallbladder (hepatic zonation; drug- and toxin-induced injury — centrilobular necrosis by acetaminophen, periportal injury) · Lee WM. Drug-induced acute liver failure. Clin Liver Dis 2013;17:575-586 · Human Protein Atlas — CYP3A4 liver tissue, hepatocytes high, cholangiocytes not detected (teacher-only) · 작성자 판독(2026-10-11): 간 TMA 코어, 간세포 세포질의 진한 갈색 염색이 넓은 띠를 이루고 그 사이 띠는 거의 음성, 담관세포 음성 ## 출처 Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "그림의 산화 약물대사 효소는 간세포에서 소엽의 한 구역(중심정맥 주위)에 띠 모양으로 진하고 문맥역 쪽은 약하므로, 이 효소가 독성 대사물을 만드는 아세트아미노펜 괴사가 그 구역에 생긴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "대사를 거쳐야 독이 되는 아세트아미노펜은 효소가 많은 3구역, 직접 독인 황린은 효소가 거의 없는 1구역을 먼저 손상한다",
+   "steps": 3,
+   "chain": [
+    "영상: 간세포 염색이 소엽 한 구역에 띠로 진하고 문맥역 쪽 띠는 음성 → 대사 구역화",
+    "산화 약물대사 효소는 산소가 적은 3구역(중심정맥 주위)에 몰린다",
+    "효소가 만든 독성 대사물로 괴사하는 아세트아미노펜이 그 구역을 손상"
+   ],
+   "key": [
+    {
+     "item": "영상: 간세포의 갈색 염색이 소엽의 한 구역에 띠 모양으로 진하고 그 사이 띠는 거의 음성",
+     "why": "효소가 구역에 따라 다르게 발현됨",
+     "also": []
+    },
+    {
+     "item": "약물을 산화시키는 대사 효소",
+     "why": "시토크롬 P450 — 3구역 우세",
+     "also": []
+    },
+    {
+     "item": "문맥역 쪽 간세포 띠는 거의 염색되지 않는다",
+     "why": "1구역은 약하다 — 진한 띠는 3구역",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "수술 전 간기능 검사는 정상이었고",
+     "why": "정상 간 조직이라는 맥락 — 답을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "음주력과 간질환 병력은 없다",
+     "why": "효소 유도 요인이 없는 정상 분포라는 배경",
+     "also": []
+    }
+   ],
+   "summary": "간세포에서 산화 약물대사 효소가 소엽의 한 구역에 띠로 진하고 문맥역 쪽은 약하다 — 중심정맥 주위(3구역) 우세 발현이다. 이 효소가 독성 대사물을 만드는 아세트아미노펜 과다복용의 괴사가 그 구역에 생긴다.",
+   "switch": {
+    "choice": "C",
+    "condition": "임신 말기 고혈압·단백뇨 환자의 간에서 문맥역 주위 섬유소 침착과 출혈성 괴사를 묻는다면 자간증이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0293.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000160868-CYP3A4/tissue/Liver",
+   "asset_id": "HPA-CYP3A4_76592_A_8_4",
+   "text": "Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0292",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화",
+  "type": "안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "43세 남자가 왼쪽 눈이 1년 전부터 조금씩 흐려지고 자주 충혈되어 왔다. 다른 병원에서 만성 앞포도막염으로 스테로이드 점안을 여러 차례 받았으나 재발하였다. 10년 동안 금속 연마 작업을 해 왔고, 눈을 다친 기억은 없다. 교정시력은 오른쪽 1.0, 왼쪽 0.4 이다. 왼쪽 홍채는 오른쪽보다 짙은 적갈색이고, 왼쪽 동공은 오른쪽보다 크며 빛반사가 느리다. 왼쪽 수정체 앞낭 아래에 갈색 점들이 흩어져 있다. 안압은 양쪽 16 mmHg 이다. 오른쪽 눈은 정상이다. 안와 높이의 뇌 CT 축상면(뼈 창)은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "안구 구리침착증",
+   "Fuchs 이색성 홍채모양체염",
+   "교감성 안염",
+   "HLA-B27 연관 앞포도막염",
+   "안구 철침착증"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: CT 에서 왼쪽 안구 앞쪽 가장자리에 점 모양의 고음영 이물이 있다. 금속 연마 작업자가 다친 기억 없이 한쪽 눈에 만성·재발성 포도막염을 겪고, 같은 눈의 홍채가 짙은 적갈색으로 변하고 동공이 커지며 수정체 앞낭 아래 갈색 침착이 생긴 것은 안구 안에 남은 철 이물에서 철이온이 녹아 조직에 쌓인 안구 철침착증이다.\n- 원리: <b>왜 철이 눈을 망가뜨리는가</b>: 눈 속에 남은 철 조각은 천천히 산화되어 철이온을 내놓고, 이 철이온은 상피세포(홍채·수정체·섬모체·망막 색소상피)에 쌓여 Fenton 반응으로 활성산소를 만든다. 그래서 홍채가 적갈색으로 짙어지고(이색증), 동공 괄약근이 손상되어 동공이 커지며, 수정체 앞낭 아래에 갈색 점이 생기고, 섬유주에 쌓이면 이차 녹내장, 망막에 쌓이면 시야 좁아짐과 망막전위도의 b파 감소가 온다.<br> <b>왜 다친 기억이 없는가</b>: 망치질·연마 중 튄 작은 금속 조각은 빠른 속도로 각막이나 공막을 뚫고 들어가 상처가 금방 닫힌다. 그래서 「원인 모를 한쪽 포도막염」으로 오랫동안 치료받다가 늦게 발견되는 일이 많다. 금속 이물이 의심되면 CT 로 찾는다(MRI 는 자성 금속이 움직일 수 있어 금기).<br> <b>치료</b>: 망막전위도가 더 나빠지기 전에 유리체절제술로 이물을 빼낸다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안구 철침착증(정답)</th><th>Fuchs 이색성 홍채모양체염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>홍채 색</td><td>침범 눈이 <b>더 짙다</b>(철 침착)</td><td>침범 눈이 <b>더 옅다</b>(기질 위축)</td></tr> <tr><td>CT</td><td>안구 안 금속성 고음영 이물</td><td>이물 없음</td></tr> <tr><td>그 밖의 소견</td><td>동공 확대, 수정체 앞낭 아래 갈색 점</td><td>각막 뒷면 작은 별 모양 침착물, 후낭하 백내장</td></tr> </tbody></table> 두 질환 모두 한쪽 만성 포도막염과 이색증을 일으킨다 — 홍채가 짙어졌는지 옅어졌는지, CT 에 이물이 있는지가 가른다.\n- 오답 이유:\n  - ① 안구 구리침착증은 구리 함량이 높은 이물(황동 등)에서 생기며 각막 Descemet 막의 녹색 고리와 해바라기 백내장이 특징이다. 이 환자처럼 적갈색 홍채와 갈색 침착이면 철이 원인이다.\n  - ② Fuchs 이색성 홍채모양체염도 한쪽 만성 포도막염과 이색증을 보이지만 침범 눈의 홍채가 더 옅어지고 CT 에 이물이 없을 때 진단한다.\n  - ③ 교감성 안염은 한쪽 눈의 관통상 뒤 수주~수개월에 다치지 않은 반대쪽 눈까지 양쪽 육아종성 포도막염이 생길 때 진단한다. 이 환자의 오른쪽 눈은 정상이다.\n  - ④ HLA-B27 연관 앞포도막염은 강직척추염 등과 함께 갑자기 생겼다 낫는 급성 한쪽 포도막염이며, 홍채 색 변화나 안구 내 이물이 있으면 진단하기 어렵다.\n- 함정: 이색증과 한쪽 만성 포도막염만 보고 Fuchs 이색성 홍채모양체염을 고르는 것 — 침범 눈의 홍채가 짙어졌고 CT 에 이물이 있다.\n- 학습목표: 눈 속 철 이물이 오래 남아 생기는 안구 철침착증을 한쪽 만성 포도막염·홍채 색 변화·동공 확대와 CT 의 안구 내 고음영 이물로 진단한다\n- 근거·출처: Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — intraocular foreign bodies: siderosis bulbi, chalcosis · American Academy of Ophthalmology. Basic and Clinical Science Course, Section 9 Uveitis and Ocular Inflammation (Fuchs uveitis syndrome — hypochromic heterochromia) · PMC12888828 Figure 2 — case report of ocular siderosis masquerading as chronic anterior uveitis (teacher-only) · 작성자 판독(2026-10-11): 안와 축상 CT(화면 촬영본), 왼쪽 안구 앞쪽 가장자리에 점 모양 고음영 이물(원 빨간 화살표), 안와벽 골절 없음\n\n## 출처\n- The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 왼쪽 안구 앞쪽 가장자리에 점 모양의 고음영 이물이 있다. 금속 연마 작업자가 다친 기억 없이 한쪽 눈에 만성·재발성 포도막염을 겪고, 같은 눈의 홍채가 짙은 적갈색으로 변하고 동공이 커지며 수정체 앞낭 아래 갈색 침착이 생긴 것은 안구 안에 남은 철 이물에서 철이온이 녹아 조직에 쌓인 안구 철침착증이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 철이 눈을 망가뜨리는가</b>: 눈 속에 남은 철 조각은 천천히 산화되어 철이온을 내놓고, 이 철이온은 상피세포(홍채·수정체·섬모체·망막 색소상피)에 쌓여 Fenton 반응으로 활성산소를 만든다. 그래서 홍채가 적갈색으로 짙어지고(이색증), 동공 괄약근이 손상되어 동공이 커지며, 수정체 앞낭 아래에 갈색 점이 생기고, 섬유주에 쌓이면 이차 녹내장, 망막에 쌓이면 시야 좁아짐과 망막전위도의 b파 감소가 온다.<br> <b>왜 다친 기억이 없는가</b>: 망치질·연마 중 튄 작은 금속 조각은 빠른 속도로 각막이나 공막을 뚫고 들어가 상처가 금방 닫힌다. 그래서 「원인 모를 한쪽 포도막염」으로 오랫동안 치료받다가 늦게 발견되는 일이 많다. 금속 이물이 의심되면 CT 로 찾는다(MRI 는 자성 금속이 움직일 수 있어 금기).<br> <b>치료</b>: 망막전위도가 더 나빠지기 전에 유리체절제술로 이물을 빼낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안구 철침착증(정답)</th><th>Fuchs 이색성 홍채모양체염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>홍채 색</td><td>침범 눈이 <b>더 짙다</b>(철 침착)</td><td>침범 눈이 <b>더 옅다</b>(기질 위축)</td></tr> <tr><td>CT</td><td>안구 안 금속성 고음영 이물</td><td>이물 없음</td></tr> <tr><td>그 밖의 소견</td><td>동공 확대, 수정체 앞낭 아래 갈색 점</td><td>각막 뒷면 작은 별 모양 침착물, 후낭하 백내장</td></tr> </tbody></table> 두 질환 모두 한쪽 만성 포도막염과 이색증을 일으킨다 — 홍채가 짙어졌는지 옅어졌는지, CT 에 이물이 있는지가 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 안구 구리침착증은 구리 함량이 높은 이물(황동 등)에서 생기며 각막 Descemet 막의 녹색 고리와 해바라기 백내장이 특징이다. 이 환자처럼 적갈색 홍채와 갈색 침착이면 철이 원인이다.\n② Fuchs 이색성 홍채모양체염도 한쪽 만성 포도막염과 이색증을 보이지만 침범 눈의 홍채가 더 옅어지고 CT 에 이물이 없을 때 진단한다.\n③ 교감성 안염은 한쪽 눈의 관통상 뒤 수주~수개월에 다치지 않은 반대쪽 눈까지 양쪽 육아종성 포도막염이 생길 때 진단한다. 이 환자의 오른쪽 눈은 정상이다.\n④ HLA-B27 연관 앞포도막염은 강직척추염 등과 함께 갑자기 생겼다 낫는 급성 한쪽 포도막염이며, 홍채 색 변화나 안구 내 이물이 있으면 진단하기 어렵다."
+   },
+   {
+    "k": "함정",
+    "v": "이색증과 한쪽 만성 포도막염만 보고 Fuchs 이색성 홍채모양체염을 고르는 것 — 침범 눈의 홍채가 짙어졌고 CT 에 이물이 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "눈 속 철 이물이 오래 남아 생기는 안구 철침착증을 한쪽 만성 포도막염·홍채 색 변화·동공 확대와 CT 의 안구 내 고음영 이물로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — intraocular foreign bodies: siderosis bulbi, chalcosis · American Academy of Ophthalmology. Basic and Clinical Science Course, Section 9 Uveitis and Ocular Inflammation (Fuchs uveitis syndrome — hypochromic heterochromia) · PMC12888828 Figure 2 — case report of ocular siderosis masquerading as chronic anterior uveitis (teacher-only) · 작성자 판독(2026-10-11): 안와 축상 CT(화면 촬영본), 왼쪽 안구 앞쪽 가장자리에 점 모양 고음영 이물(원 빨간 화살표), 안와벽 골절 없음 ## 출처 The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "금속 연마 작업자의 한쪽 만성 포도막염에 같은 눈의 홍채가 짙어지고 동공이 커졌으며 CT 에 안구 안 고음영 이물이 있으므로 안구 철침착증이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "침범 눈의 홍채가 더 짙은 적갈색이고(Fuchs 는 더 옅다) CT 에 금속성 이물이 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 안구 앞쪽의 점 모양 고음영 이물 → 안구 내 금속 이물",
+    "짙은 적갈색 홍채·동공 확대·수정체 앞낭 아래 갈색 점 → 철 이물에 의한 철침착증"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 안구 앞쪽 가장자리의 점 모양 고음영 이물",
+     "why": "안구 안 금속 이물",
+     "also": []
+    },
+    {
+     "item": "왼쪽 홍채는 오른쪽보다 짙은 적갈색이고",
+     "why": "철 침착에 의한 과색소 이색증",
+     "also": []
+    },
+    {
+     "item": "10년 동안 금속 연마 작업을 해 왔고",
+     "why": "튄 철 조각이 눈에 들어가는 전형적 맥락",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "오른쪽 눈은 정상이다",
+     "why": "양쪽 눈을 침범하는 교감성 안염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "눈을 다친 기억은 없다",
+     "why": "작은 고속 이물은 상처가 금방 닫혀 기억하지 못하는 경우가 많다 — 진단을 배제하지 않는다",
+     "also": []
+    },
+    {
+     "item": "안압은 양쪽 16 mmHg 이다",
+     "why": "아직 이차 녹내장이 없다는 정보일 뿐 진단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "금속 연마 작업자의 왼쪽 눈에 만성·재발성 포도막염, 짙은 적갈색 홍채, 동공 확대, 수정체 앞낭 아래 갈색 침착이 있고 CT 에 안구 안 금속성 이물이 있다. 안구 철침착증이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "침범 눈의 홍채가 더 옅고 각막 뒷면에 작은 별 모양 침착물이 흩어져 있으며 CT 에 이물이 없다면 Fuchs 이색성 홍채모양체염이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0292.jpg",
+   "caption": "안와 축상 CT(뼈 창, 모니터 화면 촬영본), 빨간 화살표와 R·L 표지는 원 그림의 것 — 출판된 증례 그림 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12888828/",
+   "asset_id": "PMC-PMC12888828_Figure2",
+   "text": "The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0291",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압",
+  "type": "순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "An 18-year-old man is brought to the emergency department 1 hour after he was thrown from a motorcycle at high speed. He reports chest and back pain. A left chest tube placed on arrival drained 250 mL of blood, and drainage has since stopped. After 1 L of crystalloid, his blood pressure is 156/94 mm Hg in both arms and pulse is 108/min. Oxygen saturation is 96% on 4 L/min of oxygen by nasal cannula. He is alert, and pulses are palpable and symmetric in all four extremities. Abdominal ultrasonography shows no free fluid. Hemoglobin concentration is 12.9 g/dL and remains unchanged 1 hour later. A contrast-enhanced CT angiogram of the chest is shown. Vascular surgery is consulted.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Intravenous tranexamic acid",
+   "Intravenous esmolol",
+   "Intravenous nitroprusside",
+   "Intravenous hydralazine",
+   "Intravenous norepinephrine"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The CT angiogram shows a thin linear filling defect within the lumen of the proximal descending thoracic aorta (intimal flap) with surrounding periaortic and left paravertebral soft tissue (mediastinal hematoma), plus left pleural fluid. After high-speed blunt trauma this is a blunt thoracic aortic injury distal to the left subclavian artery. While repair is arranged, the first step is anti-impulse therapy: an intravenous beta-blocker such as esmolol to bring the heart rate below about 100/min and the systolic pressure to roughly 100 to 120 mm Hg, which lowers the shear force on the injured wall.\n- 원리: <b>Why lower dP/dt, not only pressure</b>: the injured aortic wall tears further when each ejection strikes it hard and fast. Wall stress depends on both the pressure and the rate at which pressure rises with each beat (dP/dt). A beta-blocker lowers heart rate and contractility, so it reduces dP/dt as well as pressure — this is called anti-impulse therapy. Esmolol is preferred because its very short half-life lets it be stopped at once if bleeding elsewhere makes the patient hypotensive.<br> <b>Why a vasodilator alone is wrong</b>: nitroprusside or hydralazine lowers pressure, but the baroreflex responds with tachycardia and a stronger contraction, which raises dP/dt and can extend the tear. A vasodilator is added only after the beta-blocker has controlled the heart rate.<br> <b>Where it fits in trauma care</b>: anti-impulse therapy is used once hemorrhage elsewhere is controlled and the patient is not hypotensive — here the chest tube drainage stopped, the abdomen has no free fluid, and hemoglobin is stable. Definitive treatment is usually thoracic endovascular aortic repair (TEVAR); open repair is an alternative.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Esmolol first (correct)</th><th>Nitroprusside first (closest distractor)</th></tr></thead><tbody> <tr><td>Heart rate</td><td>Falls (beta-1 blockade)</td><td>Rises (reflex sympathetic response)</td></tr> <tr><td>dP/dt (shear on the tear)</td><td>Falls</td><td>Can rise despite lower pressure</td></tr> <tr><td>Role</td><td>First agent — target HR &lt; 100/min</td><td>Second agent, only after beta-blockade if pressure stays high</td></tr> </tbody></table> Whichever way it is asked, the order is \"rate first, then pressure\": a vasodilator without a beta-blocker is the classic error in aortic injury and aortic dissection.\n- 오답 이유:\n  - (A) Tranexamic acid reduces mortality when given within 3 hours to bleeding trauma patients in hemorrhagic shock; it would be a reasonable adjunct if he were hypotensive from ongoing hemorrhage, but it does not protect the aortic wall.\n  - (C) Nitroprusside is added when systolic pressure remains high after the heart rate is controlled with a beta-blocker; used first, it causes reflex tachycardia that increases shear on the torn aorta.\n  - (D) Hydralazine is a direct arteriolar dilator that provokes marked reflex tachycardia; it would be considered for hypertension in pregnancy, not as the first drug for an aortic wall injury.\n  - (E) Norepinephrine raises pressure and would be used only for vasodilatory shock after hemorrhage is excluded; this patient is hypertensive, and raising pressure would stress the injured aorta.\n- 함정: Choosing a pure vasodilator because the blood pressure is high — the heart rate must be controlled first, or reflex tachycardia increases shear on the tear.\n- 학습목표: 둔상 흉부 대동맥 손상(하행대동맥 내막 피판)에서 수술·혈관내 수복 전 첫 약물 처치가 정맥 베타차단제로 심박수와 혈압을 낮추는 것임을 안다\n- 근거·출처: Fox N, et al. Evaluation and management of blunt traumatic aortic injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2015;78:136-146 · Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 (anti-impulse therapy: beta-blocker first, HR < 60-80, SBP < 120) · PMC13086891 Figure 2 — case report of traumatic thoracic aortic injury after motorcycle trauma (teacher-only) · 작성자 판독(2026-10-11): 조영증강 흉부 CT 축상, 하행대동맥 근위부 내강 안 선상 결손(원 화살표 — 내막 피판), 대동맥 둘레·왼쪽 척추 옆 연부조직 음영, 왼쪽 흉강 뒤쪽 액체와 왼쪽 아래엽 경화\n\n## 출처\n- Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT angiogram shows a thin linear filling defect within the lumen of the proximal descending thoracic aorta (intimal flap) with surrounding periaortic and left paravertebral soft tissue (mediastinal hematoma), plus left pleural fluid. After high-speed blunt trauma this is a blunt thoracic aortic injury distal to the left subclavian artery. While repair is arranged, the first step is anti-impulse therapy: an intravenous beta-blocker such as esmolol to bring the heart rate below about 100/min and the systolic pressure to roughly 100 to 120 mm Hg, which lowers the shear force on the injured wall."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why lower dP/dt, not only pressure</b>: the injured aortic wall tears further when each ejection strikes it hard and fast. Wall stress depends on both the pressure and the rate at which pressure rises with each beat (dP/dt). A beta-blocker lowers heart rate and contractility, so it reduces dP/dt as well as pressure — this is called anti-impulse therapy. Esmolol is preferred because its very short half-life lets it be stopped at once if bleeding elsewhere makes the patient hypotensive.<br> <b>Why a vasodilator alone is wrong</b>: nitroprusside or hydralazine lowers pressure, but the baroreflex responds with tachycardia and a stronger contraction, which raises dP/dt and can extend the tear. A vasodilator is added only after the beta-blocker has controlled the heart rate.<br> <b>Where it fits in trauma care</b>: anti-impulse therapy is used once hemorrhage elsewhere is controlled and the patient is not hypotensive — here the chest tube drainage stopped, the abdomen has no free fluid, and hemoglobin is stable. Definitive treatment is usually thoracic endovascular aortic repair (TEVAR); open repair is an alternative."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Esmolol first (correct)</th><th>Nitroprusside first (closest distractor)</th></tr></thead><tbody> <tr><td>Heart rate</td><td>Falls (beta-1 blockade)</td><td>Rises (reflex sympathetic response)</td></tr> <tr><td>dP/dt (shear on the tear)</td><td>Falls</td><td>Can rise despite lower pressure</td></tr> <tr><td>Role</td><td>First agent — target HR &lt; 100/min</td><td>Second agent, only after beta-blockade if pressure stays high</td></tr> </tbody></table> Whichever way it is asked, the order is \"rate first, then pressure\": a vasodilator without a beta-blocker is the classic error in aortic injury and aortic dissection."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Tranexamic acid reduces mortality when given within 3 hours to bleeding trauma patients in hemorrhagic shock; it would be a reasonable adjunct if he were hypotensive from ongoing hemorrhage, but it does not protect the aortic wall.\n(C) Nitroprusside is added when systolic pressure remains high after the heart rate is controlled with a beta-blocker; used first, it causes reflex tachycardia that increases shear on the torn aorta.\n(D) Hydralazine is a direct arteriolar dilator that provokes marked reflex tachycardia; it would be considered for hypertension in pregnancy, not as the first drug for an aortic wall injury.\n(E) Norepinephrine raises pressure and would be used only for vasodilatory shock after hemorrhage is excluded; this patient is hypertensive, and raising pressure would stress the injured aorta."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a pure vasodilator because the blood pressure is high — the heart rate must be controlled first, or reflex tachycardia increases shear on the tear."
+   },
+   {
+    "k": "학습목표",
+    "v": "둔상 흉부 대동맥 손상(하행대동맥 내막 피판)에서 수술·혈관내 수복 전 첫 약물 처치가 정맥 베타차단제로 심박수와 혈압을 낮추는 것임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Fox N, et al. Evaluation and management of blunt traumatic aortic injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2015;78:136-146 · Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 (anti-impulse therapy: beta-blocker first, HR < 60-80, SBP < 120) · PMC13086891 Figure 2 — case report of traumatic thoracic aortic injury after motorcycle trauma (teacher-only) · 작성자 판독(2026-10-11): 조영증강 흉부 CT 축상, 하행대동맥 근위부 내강 안 선상 결손(원 화살표 — 내막 피판), 대동맥 둘레·왼쪽 척추 옆 연부조직 음영, 왼쪽 흉강 뒤쪽 액체와 왼쪽 아래엽 경화 ## 출처 Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "고속 둔상 뒤 하행대동맥 내막 피판과 종격 혈종은 둔상 흉부 대동맥 손상이고, 다른 출혈이 조절되어 혈압이 높으므로 먼저 정맥 베타차단제로 심박수와 혈압을 낮춘다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "혈관확장제만 먼저 쓰면 반사 빈맥으로 대동맥 벽에 걸리는 힘이 커진다 — 심박수 108/min 을 먼저 낮춰야 한다",
+   "steps": 3,
+   "chain": [
+    "영상: 하행대동맥 내강의 선상 결손과 대동맥 둘레 혈종 → 둔상 흉부 대동맥 손상",
+    "흉관 배액 멈춤·복강 액체 없음·혈색소 유지 → 다른 출혈은 조절, 혈압 156/94 로 높음",
+    "수복 전 첫 약물은 심박수를 먼저 낮추는 정맥 베타차단제(에스몰롤)"
+   ],
+   "key": [
+    {
+     "item": "영상: 하행대동맥 근위부 내강 안의 가는 선상 결손과 대동맥 둘레·왼쪽 척추 옆 연부조직 음영",
+     "why": "내막 피판과 종격 혈종 — 대동맥 손상",
+     "also": []
+    },
+    {
+     "item": "thrown from a motorcycle at high speed",
+     "why": "급감속 기전 — 대동맥 협부 근처 손상의 전형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Abdominal ultrasonography shows no free fluid",
+     "why": "복강 내 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "his blood pressure is 156/94 mm Hg in both arms and pulse is 108/min",
+     "why": "혈압·심박수가 높다 — 낮춰야 할 표적, 심박수 먼저",
+     "also": []
+    },
+    {
+     "item": "drainage has since stopped",
+     "why": "흉강 출혈이 멈춰 저혈압 위험이 낮다 — 베타차단제를 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "pulses are palpable and symmetric in all four extremities",
+     "why": "분지 혈관 침범이 없다는 정보지만 첫 약물 선택을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "고속 오토바이 사고 뒤 CT 에서 하행대동맥 내막 피판과 대동맥 둘레 혈종이 보이는 둔상 흉부 대동맥 손상이다. 다른 출혈이 조절되고 혈압·심박수가 높으므로, 수복 전 첫 약물은 심박수를 먼저 낮추는 정맥 에스몰롤이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "베타차단제로 심박수가 60~80/min 으로 조절된 뒤에도 수축기 혈압이 120 mmHg 를 넘으면 니트로프루시드를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0291.jpg",
+   "caption": "Axial contrast-enhanced CT angiography of the chest, arrow and R/L markers as in the original — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13086891/",
+   "asset_id": "PMC-PMC13086891_Figure2",
+   "text": "Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0300",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승",
+  "type": "신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "72세 여자가 3일 동안 구토와 설사가 있은 뒤 기운이 없어 왔다. 고혈압과 심부전으로 푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다. 혈압 98/60 mmHg(누우면), 앉으면 82/54 mmHg 이고, 맥박 106회/분 이다. 혀가 말라 있고 경정맥은 보이지 않는다. 한 달 전 크레아티닌은 0.9 mg/dL 이었다. 혈액검사에서 혈액요소질소 58 mg/dL, 크레아티닌 2.4 mg/dL, 나트륨 134 mmol/L 이다. 소변 검사에서 비중 1.025, 침사에 과립원주와 적혈구는 없다. 나트륨 분획배설률 2.1 %, 요소 분획배설률 22 % 이다.",
+  "question": "진단은?",
+  "options": [
+   "급성 간질성 신염",
+   "급속 진행 사구체신염",
+   "콩팥후 요로 폐쇄",
+   "콩팥전 급성 콩팥 손상",
+   "급성 세뇨관 괴사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 구토·설사로 체액이 빠진 데다 이뇨제를 먹어 기립성 저혈압·빈맥·마른 혀가 있고, 혈액요소질소/크레아티닌 비가 약 24 로 높으며 소변이 농축(비중 1.025)되고 침사가 깨끗하다. 나트륨 분획배설률 2.1 % 는 푸로세미드가 나트륨 재흡수를 막아 생긴 것이므로 판단에 쓸 수 없다. 이뇨제 영향을 덜 받는 요소 분획배설률이 22 %(35 % 미만)로 낮아 콩팥이 요소를 열심히 재흡수하는 콩팥전 상태다.\n- 원리: <b>분획배설률이 무엇을 보는가</b>: 혈류가 줄면 건강한 세뇨관은 나트륨과 물을 최대한 재흡수하므로 나트륨 분획배설률이 1 % 미만으로 떨어진다. 세뇨관이 죽으면(급성 세뇨관 괴사) 재흡수를 못 해 2 % 를 넘는다. 즉 이 수치는 「세뇨관이 살아서 아끼고 있는가」를 본다.<br> <b>이뇨제가 왜 이 판단을 망치는가</b>: 루프·티아지드 이뇨제는 세뇨관의 나트륨 운반체를 직접 막아, 세뇨관이 멀쩡하고 체액이 부족해도 나트륨을 소변으로 내보낸다. 그래서 이뇨제 복용 환자의 나트륨 분획배설률은 거짓으로 높다.<br> <b>요소는 왜 괜찮은가</b>: 요소는 주로 근위세뇨관에서 물을 따라 수동적으로, 그리고 집합관에서 항이뇨호르몬에 의해 재흡수되므로 루프 이뇨제의 영향을 덜 받는다. 콩팥전 상태에서는 물 재흡수가 늘어 요소 분획배설률이 35 % 미만, 세뇨관 괴사에서는 50 % 이상이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">콩팥전 AKI(정답)</th><th>급성 세뇨관 괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>요소 분획배설률</td><td>35 % 미만(이 환자 22 %)</td><td>50 % 이상</td></tr> <tr><td>소변 침사</td><td>깨끗하거나 투명 원주</td><td>흙갈색 과립원주·세뇨관 상피세포</td></tr> <tr><td>소변 농축</td><td>비중 높음(1.020 이상)</td><td>등장뇨(비중 약 1.010)</td></tr> </tbody></table> 이뇨제를 먹으면 나트륨 분획배설률은 믿지 말고 요소 분획배설률과 침사로 가린다.\n- 오답 이유:\n  - ① 급성 간질성 신염은 새 약(베타락탐·PPI·NSAID) 뒤 발열·발진·호산구증가와 소변 백혈구·백혈구원주가 있을 때 진단한다. 이 환자는 오래 먹던 푸로세미드 외에 새 약이 없고 침사가 깨끗하다.\n  - ② 급속 진행 사구체신염은 혈뇨·적혈구원주·단백뇨와 함께 수일~수주에 걸쳐 콩팥 기능이 떨어질 때 진단한다. 이 환자는 침사에 적혈구가 없다.\n  - ③ 콩팥후 요로 폐쇄는 전립선 비대·골반 종양 등으로 소변이 줄거나 없어지고 초음파에서 수신증이 보일 때 진단한다. 이 환자는 체액 손실의 뚜렷한 원인과 농축뇨가 있다.\n  - ⑤ 급성 세뇨관 괴사는 오래 지속된 허혈이나 신독성 약물 뒤 흙갈색 과립원주, 등장뇨, 요소 분획배설률 50 % 이상일 때 진단한다. 나트륨 분획배설률만 보면 끌리지만 이 환자는 소변이 농축되고 침사가 깨끗하다.\n- 함정: 나트륨 분획배설률 2.1 % 만 보고 급성 세뇨관 괴사를 고르는 것 — 이뇨제를 복용 중이면 요소 분획배설률로 판단한다.\n- 학습목표: 이뇨제를 복용하는 환자에서는 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상일 수 있어 요소 분획배설률로 판단함을 안다\n- 근거·출처: Rennke HG, Denker BM. Renal Pathophysiology: The Essentials, 5th ed. Ch. Acute kidney injury (FENa and diuretics, FEUrea) · Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int 2002;62:2223-2229",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "구토·설사로 체액이 빠진 데다 이뇨제를 먹어 기립성 저혈압·빈맥·마른 혀가 있고, 혈액요소질소/크레아티닌 비가 약 24 로 높으며 소변이 농축(비중 1.025)되고 침사가 깨끗하다. 나트륨 분획배설률 2.1 % 는 푸로세미드가 나트륨 재흡수를 막아 생긴 것이므로 판단에 쓸 수 없다. 이뇨제 영향을 덜 받는 요소 분획배설률이 22 %(35 % 미만)로 낮아 콩팥이 요소를 열심히 재흡수하는 콩팥전 상태다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>분획배설률이 무엇을 보는가</b>: 혈류가 줄면 건강한 세뇨관은 나트륨과 물을 최대한 재흡수하므로 나트륨 분획배설률이 1 % 미만으로 떨어진다. 세뇨관이 죽으면(급성 세뇨관 괴사) 재흡수를 못 해 2 % 를 넘는다. 즉 이 수치는 「세뇨관이 살아서 아끼고 있는가」를 본다.<br> <b>이뇨제가 왜 이 판단을 망치는가</b>: 루프·티아지드 이뇨제는 세뇨관의 나트륨 운반체를 직접 막아, 세뇨관이 멀쩡하고 체액이 부족해도 나트륨을 소변으로 내보낸다. 그래서 이뇨제 복용 환자의 나트륨 분획배설률은 거짓으로 높다.<br> <b>요소는 왜 괜찮은가</b>: 요소는 주로 근위세뇨관에서 물을 따라 수동적으로, 그리고 집합관에서 항이뇨호르몬에 의해 재흡수되므로 루프 이뇨제의 영향을 덜 받는다. 콩팥전 상태에서는 물 재흡수가 늘어 요소 분획배설률이 35 % 미만, 세뇨관 괴사에서는 50 % 이상이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">콩팥전 AKI(정답)</th><th>급성 세뇨관 괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>요소 분획배설률</td><td>35 % 미만(이 환자 22 %)</td><td>50 % 이상</td></tr> <tr><td>소변 침사</td><td>깨끗하거나 투명 원주</td><td>흙갈색 과립원주·세뇨관 상피세포</td></tr> <tr><td>소변 농축</td><td>비중 높음(1.020 이상)</td><td>등장뇨(비중 약 1.010)</td></tr> </tbody></table> 이뇨제를 먹으면 나트륨 분획배설률은 믿지 말고 요소 분획배설률과 침사로 가린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 급성 간질성 신염은 새 약(베타락탐·PPI·NSAID) 뒤 발열·발진·호산구증가와 소변 백혈구·백혈구원주가 있을 때 진단한다. 이 환자는 오래 먹던 푸로세미드 외에 새 약이 없고 침사가 깨끗하다.\n② 급속 진행 사구체신염은 혈뇨·적혈구원주·단백뇨와 함께 수일~수주에 걸쳐 콩팥 기능이 떨어질 때 진단한다. 이 환자는 침사에 적혈구가 없다.\n③ 콩팥후 요로 폐쇄는 전립선 비대·골반 종양 등으로 소변이 줄거나 없어지고 초음파에서 수신증이 보일 때 진단한다. 이 환자는 체액 손실의 뚜렷한 원인과 농축뇨가 있다.\n⑤ 급성 세뇨관 괴사는 오래 지속된 허혈이나 신독성 약물 뒤 흙갈색 과립원주, 등장뇨, 요소 분획배설률 50 % 이상일 때 진단한다. 나트륨 분획배설률만 보면 끌리지만 이 환자는 소변이 농축되고 침사가 깨끗하다."
+   },
+   {
+    "k": "함정",
+    "v": "나트륨 분획배설률 2.1 % 만 보고 급성 세뇨관 괴사를 고르는 것 — 이뇨제를 복용 중이면 요소 분획배설률로 판단한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이뇨제를 복용하는 환자에서는 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상일 수 있어 요소 분획배설률로 판단함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rennke HG, Denker BM. Renal Pathophysiology: The Essentials, 5th ed. Ch. Acute kidney injury (FENa and diuretics, FEUrea) · Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int 2002;62:2223-2229"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "체액 손실과 이뇨제 복용으로 기립성 저혈압이 있고 소변이 농축되고 침사가 깨끗하며 요소 분획배설률이 22 % 로 낮으므로, 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "이뇨제 복용 중 나트륨 분획배설률은 거짓으로 높다 — 요소 분획배설률 22 %, 비중 1.025, 깨끗한 침사가 세뇨관이 살아 있음을 보인다",
+   "steps": 3,
+   "chain": [
+    "구토·설사 + 기립성 저혈압·빈맥·마른 혀 → 체액 부족",
+    "푸로세미드 복용 → 나트륨 분획배설률 2.1 % 는 믿을 수 없다",
+    "요소 분획배설률 22 %·비중 1.025·깨끗한 침사 → 콩팥전 AKI"
+   ],
+   "key": [
+    {
+     "item": "요소 분획배설률 22 %",
+     "why": "35 % 미만 — 콩팥전",
+     "also": []
+    },
+    {
+     "item": "푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다",
+     "why": "나트륨 분획배설률을 거짓으로 높인다",
+     "also": []
+    },
+    {
+     "item": "앉으면 82/54 mmHg",
+     "why": "기립성 저혈압 — 체액 부족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "비중 1.025",
+     "why": "농축뇨 — 세뇨관 괴사(등장뇨) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "침사에 과립원주와 적혈구는 없다",
+     "why": "세뇨관 괴사·사구체신염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "나트륨 분획배설률 2.1 %",
+     "why": "세뇨관 괴사로 끌리게 하는 수치 — 이뇨제 때문에 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "나트륨 134 mmol/L",
+     "why": "체액 손실에 흔한 경미한 저나트륨혈증 — 진단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "구토·설사와 푸로세미드 복용으로 체액이 부족한 72세 여자의 급성 콩팥 손상이다. 이뇨제 때문에 나트륨 분획배설률(2.1 %)은 믿을 수 없고, 요소 분획배설률 22 %·농축뇨·깨끗한 침사가 콩팥전 급성 콩팥 손상을 가리킨다.",
+   "switch": {
+    "choice": "E",
+    "condition": "요소 분획배설률이 55 % 이고 비중 1.010 의 등장뇨에 흙갈색 과립원주가 보였다면 급성 세뇨관 괴사가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0299",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란",
+  "type": "정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-10",
+  "vignette": "A 17-year-old girl with anorexia nervosa, restricting type, is admitted to an inpatient eating disorder unit because her body mass index has fallen to 13.8 kg/m2. Nasogastric feeding is started at 2400 kcal/day on the day of admission. On the third hospital day, she becomes confused, reports muscle weakness and shortness of breath, and has bilateral ankle edema. Pulse is 112/min, respirations are 28/min, and blood pressure is 92/58 mm Hg. Crackles are heard at both lung bases, and the jugular venous pressure is elevated. Serum glucose is 148 mg/dL, sodium 136 mEq/L, and potassium 3.3 mEq/L; on admission, all serum electrolytes had been within normal limits.",
+  "question": "Which of the following serum abnormalities is most likely responsible for her current findings?",
+  "options": [
+   "Hypocalcemia",
+   "Hyponatremia",
+   "Hypophosphatemia",
+   "Hypokalemia",
+   "Hypomagnesemia"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: On day 3 of aggressive refeeding of a severely malnourished patient, she developed confusion, muscle weakness, respiratory difficulty, and heart failure — refeeding syndrome. Carbohydrate stimulates insulin, which drives phosphate into cells for glycolysis and ATP synthesis, while total-body phosphate is already depleted. The resulting hypophosphatemia depletes ATP and 2,3-BPG, causing myocardial and diaphragmatic weakness, heart failure, encephalopathy, and rhabdomyolysis.\n- 원리: <b>Why phosphate falls on refeeding</b>: in starvation, the body runs on fat and ketones, insulin is low, and intracellular phosphate stores are depleted although serum levels stay normal (phosphate leaves cells to maintain serum levels). When carbohydrate is given, insulin rises and drives glucose, phosphate, potassium, and magnesium into cells; phosphate is consumed to make phosphorylated glycolytic intermediates and ATP. Serum phosphate drops sharply, usually within 2 to 4 days.<br> <b>Why the organs fail</b>: without phosphate, cells cannot make ATP, and red cells cannot make 2,3-BPG, so hemoglobin releases oxygen poorly. Cardiac muscle fails (heart failure, arrhythmia), the diaphragm weakens (respiratory failure), skeletal muscle breaks down (rhabdomyolysis), and the brain becomes confused or seizes. Insulin also causes sodium and water retention, which worsens edema.<br> <b>Prevention</b>: in high-risk patients (BMI below 16, little intake for more than 10 days), start feeding at about 10 to 20 kcal/kg/day, check phosphate, potassium, and magnesium daily, supplement them, and give thiamine before feeding.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hypophosphatemia (correct)</th><th>Hypokalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Measured here?</td><td>Not reported — must be inferred</td><td>3.3 mEq/L — only mildly low</td></tr> <tr><td>Typical effects</td><td>Heart failure, diaphragmatic weakness, encephalopathy, rhabdomyolysis</td><td>Arrhythmia, weakness, ileus (usually below 3.0 mEq/L)</td></tr> <tr><td>Explains confusion and heart failure?</td><td>Yes — ATP and 2,3-BPG depletion</td><td>No — mild hypokalemia does not cause pump failure or encephalopathy</td></tr> </tbody></table> In refeeding syndrome, potassium and magnesium also fall, but the defining abnormality that explains cardiorespiratory failure and confusion is low phosphate.\n- 오답 이유:\n  - (A) Hypocalcemia causes perioral numbness, tetany, and Chvostek and Trousseau signs; it would follow severe hypomagnesemia or vitamin D deficiency rather than explaining heart failure on day 3 of refeeding.\n  - (B) Hyponatremia causes confusion and seizures but her sodium is 136 mEq/L; it would be the answer if water intoxication or SIADH had lowered sodium below about 125 mEq/L.\n  - (D) Hypokalemia also occurs with refeeding because insulin shifts potassium into cells, but a potassium of 3.3 mEq/L does not explain heart failure and confusion; it would be favored with arrhythmia or ileus and a potassium below 2.5 mEq/L.\n  - (E) Hypomagnesemia accompanies refeeding and causes tremor, tetany, torsades de pointes, and refractory hypokalemia; it would be favored with prolonged QT and neuromuscular irritability rather than pump failure.\n- 함정: Attributing the findings to the one electrolyte that is reported low (potassium) — the abnormality that explains heart failure and confusion in refeeding syndrome is phosphate, which was not measured.\n- 학습목표: 심한 신경성 식욕부진증의 재급식 초기에 인슐린 분비로 인이 세포 안으로 이동해 생기는 저인산혈증(재급식 증후군)과 그 결과를 안다\n- 근거·출처: Society for Adolescent Health and Medicine. Medical management of restrictive eating disorders in adolescents and young adults. J Adolesc Health 2022;71:648-654 · da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020;35:178-195 · American Psychiatric Association. Practice Guideline for the Treatment of Patients With Eating Disorders, 4th ed. 2023",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On day 3 of aggressive refeeding of a severely malnourished patient, she developed confusion, muscle weakness, respiratory difficulty, and heart failure — refeeding syndrome. Carbohydrate stimulates insulin, which drives phosphate into cells for glycolysis and ATP synthesis, while total-body phosphate is already depleted. The resulting hypophosphatemia depletes ATP and 2,3-BPG, causing myocardial and diaphragmatic weakness, heart failure, encephalopathy, and rhabdomyolysis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why phosphate falls on refeeding</b>: in starvation, the body runs on fat and ketones, insulin is low, and intracellular phosphate stores are depleted although serum levels stay normal (phosphate leaves cells to maintain serum levels). When carbohydrate is given, insulin rises and drives glucose, phosphate, potassium, and magnesium into cells; phosphate is consumed to make phosphorylated glycolytic intermediates and ATP. Serum phosphate drops sharply, usually within 2 to 4 days.<br> <b>Why the organs fail</b>: without phosphate, cells cannot make ATP, and red cells cannot make 2,3-BPG, so hemoglobin releases oxygen poorly. Cardiac muscle fails (heart failure, arrhythmia), the diaphragm weakens (respiratory failure), skeletal muscle breaks down (rhabdomyolysis), and the brain becomes confused or seizes. Insulin also causes sodium and water retention, which worsens edema.<br> <b>Prevention</b>: in high-risk patients (BMI below 16, little intake for more than 10 days), start feeding at about 10 to 20 kcal/kg/day, check phosphate, potassium, and magnesium daily, supplement them, and give thiamine before feeding."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hypophosphatemia (correct)</th><th>Hypokalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Measured here?</td><td>Not reported — must be inferred</td><td>3.3 mEq/L — only mildly low</td></tr> <tr><td>Typical effects</td><td>Heart failure, diaphragmatic weakness, encephalopathy, rhabdomyolysis</td><td>Arrhythmia, weakness, ileus (usually below 3.0 mEq/L)</td></tr> <tr><td>Explains confusion and heart failure?</td><td>Yes — ATP and 2,3-BPG depletion</td><td>No — mild hypokalemia does not cause pump failure or encephalopathy</td></tr> </tbody></table> In refeeding syndrome, potassium and magnesium also fall, but the defining abnormality that explains cardiorespiratory failure and confusion is low phosphate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hypocalcemia causes perioral numbness, tetany, and Chvostek and Trousseau signs; it would follow severe hypomagnesemia or vitamin D deficiency rather than explaining heart failure on day 3 of refeeding.\n(B) Hyponatremia causes confusion and seizures but her sodium is 136 mEq/L; it would be the answer if water intoxication or SIADH had lowered sodium below about 125 mEq/L.\n(D) Hypokalemia also occurs with refeeding because insulin shifts potassium into cells, but a potassium of 3.3 mEq/L does not explain heart failure and confusion; it would be favored with arrhythmia or ileus and a potassium below 2.5 mEq/L.\n(E) Hypomagnesemia accompanies refeeding and causes tremor, tetany, torsades de pointes, and refractory hypokalemia; it would be favored with prolonged QT and neuromuscular irritability rather than pump failure."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing the findings to the one electrolyte that is reported low (potassium) — the abnormality that explains heart failure and confusion in refeeding syndrome is phosphate, which was not measured."
+   },
+   {
+    "k": "학습목표",
+    "v": "심한 신경성 식욕부진증의 재급식 초기에 인슐린 분비로 인이 세포 안으로 이동해 생기는 저인산혈증(재급식 증후군)과 그 결과를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Society for Adolescent Health and Medicine. Medical management of restrictive eating disorders in adolescents and young adults. J Adolesc Health 2022;71:648-654 · da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020;35:178-195 · American Psychiatric Association. Practice Guideline for the Treatment of Patients With Eating Disorders, 4th ed. 2023"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "심한 영양실조 환자를 하루 2400 kcal 로 급히 재급식한 지 3일째 혼돈·근력 약화·호흡곤란·심부전이 생겼으므로 인슐린에 의한 세포 내 인 이동으로 생긴 저인산혈증(재급식 증후군)이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "보고된 칼륨 3.3 은 경미해 심부전·혼돈을 설명하지 못한다 — 측정되지 않은 인이 원인",
+   "steps": 3,
+   "chain": [
+    "BMI 13.8 의 심한 영양실조 + 첫날부터 2400 kcal 재급식 → 재급식 증후군 고위험",
+    "3일째 혼돈·근력 약화·호흡곤란·심부전 → 재급식 증후군 발생",
+    "인슐린으로 인이 세포 안으로 이동 → 저인산혈증이 ATP·2,3-BPG 고갈로 장기 부전"
+   ],
+   "key": [
+    {
+     "item": "body mass index has fallen to 13.8 kg/m2",
+     "why": "재급식 증후군 고위험",
+     "also": []
+    },
+    {
+     "item": "Nasogastric feeding is started at 2400 kcal/day on the day of admission",
+     "why": "너무 빠른 재급식",
+     "also": []
+    },
+    {
+     "item": "On the third hospital day, she becomes confused, reports muscle weakness and shortness of breath",
+     "why": "2~4일째의 전형적 시기와 증상",
+     "also": []
+    },
+    {
+     "item": "the jugular venous pressure is elevated",
+     "why": "심부전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "potassium 3.3 mEq/L",
+     "why": "저칼륨혈증이 장기 부전의 주원인일 가능성을 낮춘다 — 너무 경미",
+     "also": []
+    },
+    {
+     "item": "sodium 136 mEq/L",
+     "why": "저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "on admission, all serum electrolytes had been within normal limits",
+     "why": "굶주림에서 혈중 농도는 정상이어도 몸 전체 인은 고갈되어 있다 — 위험을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "BMI 13.8 인 신경성 식욕부진증 환자를 첫날부터 하루 2400 kcal 로 재급식한 지 3일째 혼돈·근력 약화·호흡곤란·심부전이 생겼다. 인슐린으로 인이 세포 안으로 들어가 생긴 저인산혈증(재급식 증후군)이 원인이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "QT 연장과 다형 심실빈맥, 손발 경련이 두드러지고 칼륨 보충에도 저칼륨혈증이 교정되지 않는다면 저마그네슘혈증이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0298",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "약리 — 협심증 환자의 발기부전 약 복용 뒤 실신",
+  "type": "약리 — 협심증 환자의 발기부전 약 복용 뒤 실신",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "64세 남자가 화장실에서 어지러워 쓰러져 응급실에 왔다. 2년 전 안정형 협심증으로 진단받아 아스피린, 아토르바스타틴, 이소소르비드 일질산염을 복용하고 있다. 오늘 저녁 지인에게서 받은 발기부전 치료제를 처음 먹었고, 1시간 뒤 가슴 답답함이 있어 니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다. 혈압 72/40 mmHg, 맥박 118회/분 이다. 심전도는 동빈맥이며 ST 분절 변화는 없다.",
+  "question": "이 저혈압의 기전으로 가장 적절한 것은?",
+  "options": [
+   "간 CYP3A4 억제로 질산염 혈중 농도 상승",
+   "알파1 아드레날린 수용체 차단에 의한 혈관 확장",
+   "심근 베타1 수용체 차단에 의한 심박출량 감소",
+   "혈관 평활근의 cAMP 분해 억제",
+   "혈관 평활근의 cGMP 분해 억제와 생성 증가가 겹침"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 질산염(이소소르비드 일질산염·니트로글리세린)은 산화질소를 내놓아 구아닐산고리화효소를 활성화해 cGMP 생성을 늘리고, 발기부전 치료제(실데나필 등 PDE5 억제제)는 cGMP 를 분해하는 PDE5 를 막는다. 생성은 늘고 분해는 막혀 혈관 평활근에 cGMP 가 과도하게 쌓이므로 정맥·동맥이 크게 확장되어 심한 저혈압이 생긴다.\n- 원리: <b>cGMP 경로</b>: 산화질소(NO)는 혈관 평활근의 가용성 구아닐산고리화효소를 활성화해 GTP 를 cGMP 로 바꾼다. cGMP 는 단백질인산화효소 G 를 활성화해 세포 안 칼슘을 낮추고 마이오신 경쇄 탈인산화를 일으켜 평활근을 이완시킨다. 이 신호는 PDE5 가 cGMP 를 GMP 로 분해하면서 꺼진다.<br> <b>왜 함께 쓰면 위험한가</b>: 질산염은 「수도꼭지를 여는」 약, PDE5 억제제는 「배수구를 막는」 약이다. 둘을 함께 쓰면 cGMP 가 상승적으로 쌓여 특히 정맥이 크게 확장되고(전부하 감소) 심박출량과 혈압이 떨어진다. 협심증 환자에서는 관상동맥 관류압이 떨어져 심근 허혈이 생길 수 있다.<br> <b>실제 규칙</b>: 실데나필·바데나필 복용 24시간 안, 타다라필 48시간 안에는 질산염을 쓰지 않는다. 저혈압이 생기면 다리 올리기와 수액으로 교정하고, 필요하면 알파 작용제를 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">cGMP 약력학적 상호작용(정답)</th><th>CYP3A4 약동학적 상호작용(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>무엇이 변하나</td><td>같은 신호(cGMP)의 효과가 더해짐</td><td>한 약의 혈중 농도가 변함</td></tr> <tr><td>실제 예</td><td>PDE5 억제제 + 질산염</td><td>클래리스로마이신·리토나비르가 실데나필 농도를 올림</td></tr> <tr><td>시간</td><td>첫 병용 직후에 바로</td><td>억제제를 며칠 쓴 뒤 축적</td></tr> </tbody></table> 질산염은 CYP3A4 로 대사되지 않는다 — 이 상호작용은 농도가 아니라 신호 경로가 겹쳐 생긴다.\n- 오답 이유:\n  - ① CYP3A4 억제에 의한 농도 상승은 리토나비르·클래리스로마이신이 실데나필 농도를 올리는 경우의 기전이다. 질산염은 CYP3A4 로 대사되지 않으며 실데나필은 CYP3A4 억제제가 아니다.\n  - ② 알파1 차단은 독사조신·탐술로신 같은 약이 PDE5 억제제와 함께 기립성 저혈압을 일으킬 때의 기전이다. 이 환자는 알파 차단제를 먹지 않았다.\n  - ③ 베타1 차단에 의한 심박출량 감소라면 맥박이 느려져야 한다. 이 환자는 맥박 118회/분 의 반사 빈맥이 있어 혈관 확장에 의한 저혈압이다.\n  - ④ cAMP 분해 억제는 PDE3 억제제(밀리논·실로스타졸)의 기전으로 강심·혈관 확장을 일으킨다. 실데나필이 막는 PDE5 는 cGMP 특이적이다.\n- 함정: 약물 상호작용이라면 CYP 를 먼저 떠올리는 것 — 질산염과 PDE5 억제제는 같은 cGMP 신호를 양쪽에서 키우는 약력학적 상호작용이다.\n- 학습목표: 질산염 복용 환자가 PDE5 억제제를 함께 쓰면 cGMP 가 과도하게 쌓여 심한 저혈압이 생기는 기전을 안다\n- 근거·출처: Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 12 Vasodilators & the Treatment of Angina Pectoris (nitrate–PDE5 inhibitor interaction) · Gulati M, et al. 2021 AHA/ACC Guideline for the Evaluation and Diagnosis of Chest Pain / 2023 AHA/ACC Chronic Coronary Disease Guideline (nitrates contraindicated within 24-48 h of PDE5 inhibitors)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "질산염(이소소르비드 일질산염·니트로글리세린)은 산화질소를 내놓아 구아닐산고리화효소를 활성화해 cGMP 생성을 늘리고, 발기부전 치료제(실데나필 등 PDE5 억제제)는 cGMP 를 분해하는 PDE5 를 막는다. 생성은 늘고 분해는 막혀 혈관 평활근에 cGMP 가 과도하게 쌓이므로 정맥·동맥이 크게 확장되어 심한 저혈압이 생긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>cGMP 경로</b>: 산화질소(NO)는 혈관 평활근의 가용성 구아닐산고리화효소를 활성화해 GTP 를 cGMP 로 바꾼다. cGMP 는 단백질인산화효소 G 를 활성화해 세포 안 칼슘을 낮추고 마이오신 경쇄 탈인산화를 일으켜 평활근을 이완시킨다. 이 신호는 PDE5 가 cGMP 를 GMP 로 분해하면서 꺼진다.<br> <b>왜 함께 쓰면 위험한가</b>: 질산염은 「수도꼭지를 여는」 약, PDE5 억제제는 「배수구를 막는」 약이다. 둘을 함께 쓰면 cGMP 가 상승적으로 쌓여 특히 정맥이 크게 확장되고(전부하 감소) 심박출량과 혈압이 떨어진다. 협심증 환자에서는 관상동맥 관류압이 떨어져 심근 허혈이 생길 수 있다.<br> <b>실제 규칙</b>: 실데나필·바데나필 복용 24시간 안, 타다라필 48시간 안에는 질산염을 쓰지 않는다. 저혈압이 생기면 다리 올리기와 수액으로 교정하고, 필요하면 알파 작용제를 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">cGMP 약력학적 상호작용(정답)</th><th>CYP3A4 약동학적 상호작용(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>무엇이 변하나</td><td>같은 신호(cGMP)의 효과가 더해짐</td><td>한 약의 혈중 농도가 변함</td></tr> <tr><td>실제 예</td><td>PDE5 억제제 + 질산염</td><td>클래리스로마이신·리토나비르가 실데나필 농도를 올림</td></tr> <tr><td>시간</td><td>첫 병용 직후에 바로</td><td>억제제를 며칠 쓴 뒤 축적</td></tr> </tbody></table> 질산염은 CYP3A4 로 대사되지 않는다 — 이 상호작용은 농도가 아니라 신호 경로가 겹쳐 생긴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① CYP3A4 억제에 의한 농도 상승은 리토나비르·클래리스로마이신이 실데나필 농도를 올리는 경우의 기전이다. 질산염은 CYP3A4 로 대사되지 않으며 실데나필은 CYP3A4 억제제가 아니다.\n② 알파1 차단은 독사조신·탐술로신 같은 약이 PDE5 억제제와 함께 기립성 저혈압을 일으킬 때의 기전이다. 이 환자는 알파 차단제를 먹지 않았다.\n③ 베타1 차단에 의한 심박출량 감소라면 맥박이 느려져야 한다. 이 환자는 맥박 118회/분 의 반사 빈맥이 있어 혈관 확장에 의한 저혈압이다.\n④ cAMP 분해 억제는 PDE3 억제제(밀리논·실로스타졸)의 기전으로 강심·혈관 확장을 일으킨다. 실데나필이 막는 PDE5 는 cGMP 특이적이다."
+   },
+   {
+    "k": "함정",
+    "v": "약물 상호작용이라면 CYP 를 먼저 떠올리는 것 — 질산염과 PDE5 억제제는 같은 cGMP 신호를 양쪽에서 키우는 약력학적 상호작용이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "질산염 복용 환자가 PDE5 억제제를 함께 쓰면 cGMP 가 과도하게 쌓여 심한 저혈압이 생기는 기전을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 12 Vasodilators & the Treatment of Angina Pectoris (nitrate–PDE5 inhibitor interaction) · Gulati M, et al. 2021 AHA/ACC Guideline for the Evaluation and Diagnosis of Chest Pain / 2023 AHA/ACC Chronic Coronary Disease Guideline (nitrates contraindicated within 24-48 h of PDE5 inhibitors)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "질산염 복용 중인 협심증 환자가 발기부전 치료제(PDE5 억제제)를 먹은 뒤 니트로글리세린을 쓰고 저혈압이 생겼으므로 cGMP 생성 증가와 분해 억제가 겹친 것이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "질산염은 CYP3A4 로 대사되지 않고 첫 병용 직후 바로 생겼다 — 농도가 아니라 같은 신호의 상승 작용",
+   "steps": 2,
+   "chain": [
+    "질산염(NO → cGMP 생성↑) + 발기부전 치료제(PDE5 억제 → cGMP 분해↓)",
+    "cGMP 과다 축적 → 정맥·동맥 확장 → 심한 저혈압과 반사 빈맥"
+   ],
+   "key": [
+    {
+     "item": "이소소르비드 일질산염",
+     "why": "NO 공여 — cGMP 생성",
+     "also": []
+    },
+    {
+     "item": "발기부전 치료제를 처음 먹었고",
+     "why": "PDE5 억제 — cGMP 분해 차단",
+     "also": []
+    },
+    {
+     "item": "니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다",
+     "why": "병용 직후 발생",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 118회/분",
+     "why": "베타 차단에 의한 저혈압 가능성을 낮춘다 — 반사 빈맥",
+     "also": []
+    },
+    {
+     "item": "ST 분절 변화는 없다",
+     "why": "급성 심근경색에 의한 쇼크 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "아토르바스타틴",
+     "why": "CYP3A4 기질이지만 이 저혈압과 무관하다 — CYP 오답으로 끌리게 하는 정보",
+     "also": []
+    }
+   ],
+   "summary": "질산염을 쓰는 협심증 환자가 PDE5 억제제를 처음 먹고 니트로글리세린을 쓴 직후 심한 저혈압과 반사 빈맥이 생겼다. cGMP 생성 증가와 분해 억제가 겹친 약력학적 상호작용이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "질산염이 아니라 독사조신 같은 알파1 차단제를 복용하던 환자가 PDE5 억제제 뒤 기립성 저혈압을 보였다면 알파1 차단에 의한 혈관 확장이 더해진 것이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0297",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "소아청소년 — 분출성 구토 영아의 수술 전 처치",
+  "type": "소아청소년 — 분출성 구토 영아의 수술 전 처치",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "A 5-week-old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is eager to feed again immediately after vomiting. He was born at term, and his birth weight was 3.4 kg; today he weighs 3.6 kg. Pulse is 168/min, respirations are 36/min, and temperature is 36.8°C (98.2°F). The anterior fontanelle is slightly sunken, mucous membranes are dry, and capillary refill time is 3 seconds. A firm, mobile, olive-sized mass is palpable in the epigastrium. Serum studies show Na+ 133 mEq/L, K+ 2.9 mEq/L, Cl- 84 mEq/L, and HCO3- 34 mEq/L. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm and a channel length of 19 mm.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous ammonium chloride infusion",
+   "Intravenous 0.9% saline bolus, then dextrose-saline with potassium chloride",
+   "Immediate pyloromyotomy",
+   "Intravenous 0.45% saline without potassium until the infant urinates",
+   "Oral rehydration solution by nasogastric tube"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Nonbilious projectile vomiting at 5 weeks, a palpable olive, and a thickened, elongated pylorus on ultrasonography establish hypertrophic pyloric stenosis. The repeated loss of gastric HCl has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloric stenosis is not a surgical emergency but a medical one: fluid and electrolyte deficits are corrected first with a normal saline bolus and then dextrose-saline with potassium chloride, and pyloromyotomy follows once chloride and bicarbonate have normalized.\n- 원리: <b>Why the alkalosis persists</b>: vomiting removes H+ and Cl-, generating bicarbonate. Normally the kidney would excrete the excess bicarbonate, but volume depletion activates the renin-angiotensin-aldosterone system, so the kidney avidly reabsorbs Na+ — and with too little Cl- available to accompany it, it reabsorbs HCO3- instead and exchanges Na+ for K+ and H+ in the collecting duct (paradoxical aciduria, potassium wasting). The alkalosis is therefore \"chloride-responsive\": only giving Cl- with volume lets the kidney excrete bicarbonate.<br> <b>Why surgery must wait</b>: an alkalotic infant compensates by hypoventilating, and after general anesthesia and opioids this can cause postoperative apnea. Hypokalemia also predisposes to arrhythmias. Surgery is done when serum chloride is about 100 mEq/L or more and bicarbonate is below about 30 mEq/L.<br> <b>Why potassium is given promptly</b>: potassium is added to the maintenance fluid once urine output is confirmed, which in practice is soon after the initial bolus.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Correct fluids first (correct)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours to 1-2 days, until electrolytes normalize</td><td>At once</td></tr> <tr><td>Risk addressed</td><td>Alkalosis, hypokalemia, dehydration</td><td>Obstruction — not immediately life-threatening</td></tr> <tr><td>Threshold for surgery</td><td>Cl- ≥ about 100, HCO3- &lt; about 30 mEq/L</td><td>Ignores the metabolic state — postoperative apnea risk</td></tr> </tbody></table> The pylorus is the diagnosis, but the electrolytes decide the timing: correct with saline and potassium, then operate.\n- 오답 이유:\n  - (A) Ammonium chloride was once used for severe alkalosis unresponsive to saline; saline and potassium chloride correct this alkalosis safely in nearly all infants.\n  - (C) Immediate pyloromyotomy is the definitive treatment once chloride and bicarbonate are corrected; done now, persistent alkalosis raises the risk of postoperative apnea and arrhythmia.\n  - (D) Half-normal saline without potassium supplies too little chloride to correct a chloride-responsive alkalosis and leaves severe hypokalemia untreated; potassium is withheld only until urine output is confirmed.\n  - (E) Oral rehydration by nasogastric tube would suit gastroenteritis with mild dehydration; with a fixed gastric outlet obstruction, fluid placed in the stomach will be vomited.\n- 함정: Going straight to surgery because the diagnosis is clear — the metabolic alkalosis must be corrected first.\n- 학습목표: 비대 날문협착증 영아의 저염소성 저칼륨성 대사 알칼리증을 수술 전에 식염수·칼륨으로 먼저 교정해야 함을 안다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 355.1 Hypertrophic pyloric stenosis · Kamata M, Cartabuke RS, Tobias JD. Perioperative care of infants with pyloric stenosis. Paediatr Anaesth 2015;25:1193-1206",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Nonbilious projectile vomiting at 5 weeks, a palpable olive, and a thickened, elongated pylorus on ultrasonography establish hypertrophic pyloric stenosis. The repeated loss of gastric HCl has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloric stenosis is not a surgical emergency but a medical one: fluid and electrolyte deficits are corrected first with a normal saline bolus and then dextrose-saline with potassium chloride, and pyloromyotomy follows once chloride and bicarbonate have normalized."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the alkalosis persists</b>: vomiting removes H+ and Cl-, generating bicarbonate. Normally the kidney would excrete the excess bicarbonate, but volume depletion activates the renin-angiotensin-aldosterone system, so the kidney avidly reabsorbs Na+ — and with too little Cl- available to accompany it, it reabsorbs HCO3- instead and exchanges Na+ for K+ and H+ in the collecting duct (paradoxical aciduria, potassium wasting). The alkalosis is therefore \"chloride-responsive\": only giving Cl- with volume lets the kidney excrete bicarbonate.<br> <b>Why surgery must wait</b>: an alkalotic infant compensates by hypoventilating, and after general anesthesia and opioids this can cause postoperative apnea. Hypokalemia also predisposes to arrhythmias. Surgery is done when serum chloride is about 100 mEq/L or more and bicarbonate is below about 30 mEq/L.<br> <b>Why potassium is given promptly</b>: potassium is added to the maintenance fluid once urine output is confirmed, which in practice is soon after the initial bolus."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Correct fluids first (correct)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours to 1-2 days, until electrolytes normalize</td><td>At once</td></tr> <tr><td>Risk addressed</td><td>Alkalosis, hypokalemia, dehydration</td><td>Obstruction — not immediately life-threatening</td></tr> <tr><td>Threshold for surgery</td><td>Cl- ≥ about 100, HCO3- &lt; about 30 mEq/L</td><td>Ignores the metabolic state — postoperative apnea risk</td></tr> </tbody></table> The pylorus is the diagnosis, but the electrolytes decide the timing: correct with saline and potassium, then operate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ammonium chloride was once used for severe alkalosis unresponsive to saline; saline and potassium chloride correct this alkalosis safely in nearly all infants.\n(C) Immediate pyloromyotomy is the definitive treatment once chloride and bicarbonate are corrected; done now, persistent alkalosis raises the risk of postoperative apnea and arrhythmia.\n(D) Half-normal saline without potassium supplies too little chloride to correct a chloride-responsive alkalosis and leaves severe hypokalemia untreated; potassium is withheld only until urine output is confirmed.\n(E) Oral rehydration by nasogastric tube would suit gastroenteritis with mild dehydration; with a fixed gastric outlet obstruction, fluid placed in the stomach will be vomited."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to surgery because the diagnosis is clear — the metabolic alkalosis must be corrected first."
+   },
+   {
+    "k": "학습목표",
+    "v": "비대 날문협착증 영아의 저염소성 저칼륨성 대사 알칼리증을 수술 전에 식염수·칼륨으로 먼저 교정해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 355.1 Hypertrophic pyloric stenosis · Kamata M, Cartabuke RS, Tobias JD. Perioperative care of infants with pyloric stenosis. Paediatr Anaesth 2015;25:1193-1206"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "비대 날문협착증에 저염소성 저칼륨성 대사 알칼리증과 탈수가 있으므로 수술 전에 생리식염수와 칼륨으로 먼저 교정한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "염소 84·중탄산 34·칼륨 2.9 로 교정되지 않은 알칼리증 — 수술 후 무호흡 위험",
+   "steps": 3,
+   "chain": [
+    "비담즙성 분출성 구토·올리브 종괴·초음파의 두꺼운 날문 → 비대 날문협착증",
+    "염소 84·칼륨 2.9·중탄산 34·탈수 → 저염소성 저칼륨성 대사 알칼리증",
+    "수술보다 먼저 생리식염수 볼루스와 칼륨을 더한 수액으로 교정"
+   ],
+   "key": [
+    {
+     "item": "A firm, mobile, olive-sized mass is palpable in the epigastrium",
+     "why": "비대된 날문",
+     "also": []
+    },
+    {
+     "item": "a pyloric muscle thickness of 5 mm and a channel length of 19 mm",
+     "why": "진단 기준(≥3 mm, ≥15 mm) 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "nonbilious vomiting",
+     "why": "장회전이상 같은 담즙 구토성 응급 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "K+ 2.9 mEq/L, Cl- 84 mEq/L, and HCO3- 34 mEq/L",
+     "why": "교정이 먼저 필요한 대사 알칼리증",
+     "also": []
+    },
+    {
+     "item": "capillary refill time is 3 seconds",
+     "why": "탈수 — 식염수 볼루스",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He is eager to feed again immediately after vomiting",
+     "why": "배고픈 구토아의 전형적 묘사 — 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "5주 남아의 비담즙성 분출성 구토, 올리브 종괴, 두꺼운 날문은 비대 날문협착증이다. 저염소성 저칼륨성 대사 알칼리증과 탈수가 있어 수술 전에 생리식염수 볼루스와 칼륨을 더한 포도당-식염수로 먼저 교정한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "수액 치료 뒤 염소가 100 mEq/L 이상, 중탄산이 30 mEq/L 미만으로 교정되면 날문근절개술을 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0296",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값",
+  "type": "진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "38세 남자가 명치 통증으로 응급실에 왔다. 하루 전부터 등으로 뻗치는 명치 통증과 구토가 있었다. 의식은 명료하고, 혈압 128/82 mmHg, 맥박 98회/분 이다. 피부 긴장도는 정상이고 부종은 없다. 채혈한 혈액은 우윳빛으로 혼탁하다. 혈액검사에서 나트륨 124 mmol/L(간접 이온선택전극법), 칼륨 4.1 mmol/L, 혈당 112 mg/dL, 혈액요소질소 14 mg/dL, 크레아티닌 0.9 mg/dL, 중성지방 4,800 mg/dL, 리파아제 2,100 U/L(참고치 60 이하)이다. 측정한 혈장 삼투압은 286 mOsm/kg 이다.",
+  "question": "나트륨 결과에 대한 다음 조치로 가장 적절한 것은?",
+  "options": [
+   "수분 섭취 제한",
+   "소변 나트륨과 소변 삼투압 측정",
+   "만니톨 투여 여부 확인",
+   "직접 이온선택전극법으로 나트륨 재측정",
+   "3 % 고장성 식염수 투여"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 중성지방이 4,800 mg/dL 로 매우 높아 혈장의 물이 아닌 부분(지질)이 늘었다. 간접 이온선택전극법은 검체를 희석한 뒤 재므로 혈장 전체 부피 중 물이 차지하는 비율이 정상이라고 가정하고 계산한다 — 지질이 물 자리를 차지하면 나트륨이 낮게 나온다. 실제 혈장 삼투압이 286 mOsm/kg 으로 정상이고 저나트륨혈증 증상도 없으므로 가성저나트륨혈증이며, 희석하지 않는 직접 이온선택전극법(혈액가스 분석기)으로 다시 재면 정상으로 나온다.\n- 원리: <b>왜 지질이 나트륨을 낮게 보이게 하는가</b>: 나트륨은 혈장의 물 속에만 녹아 있다. 정상 혈장은 약 93 % 가 물이고 7 % 가 지질·단백질이다. 간접법은 검체를 일정하게 희석해 재고 「물 93 %」를 전제로 혈장 전체 농도를 환산한다. 중성지방이나 단백질(다발골수종)이 크게 늘어 물 비율이 80 % 로 떨어지면 같은 부피의 혈장에 든 나트륨이 줄어 낮게 계산된다. 직접법은 희석하지 않고 물 속 나트륨 활동도를 바로 재므로 영향을 받지 않는다.<br> <b>삼투압이 왜 정상인가</b>: 삼투압은 물에 녹은 입자 수로 정해지고, 지질은 입자 수에 거의 기여하지 않는다. 그래서 진짜 저나트륨혈증(저삼투압)과 달리 측정 삼투압이 정상이다.<br> <b>저나트륨혈증 접근의 첫 단계</b>: 측정 삼투압을 먼저 본다 — 정상이면 가성(지질·단백질), 높으면 고삼투성(고혈당·만니톨), 낮을 때만 체액량과 소변 검사로 진짜 저나트륨혈증의 원인을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가성저나트륨혈증(정답)</th><th>고삼투성 저나트륨혈증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>측정 삼투압</td><td>정상(280~295)</td><td>높다</td></tr> <tr><td>원인</td><td>지질·단백질이 물 자리를 차지 — 측정 오차</td><td>포도당·만니톨이 세포 안 물을 끌어냄 — 실제 희석</td></tr> <tr><td>직접법 재측정</td><td>정상</td><td>여전히 낮다</td></tr> </tbody></table> 삼투압이 정상이면 검사법을, 높으면 삼투 물질을, 낮으면 체액량과 소변을 본다.\n- 오답 이유:\n  - ① 수분 섭취 제한은 항이뇨호르몬 분비 이상 증후군 같은 정상 체액량의 저삼투성 저나트륨혈증에서 쓰는 처치다. 혈장 삼투압이 정상이면 해당하지 않는다.\n  - ② 소변 나트륨·소변 삼투압은 측정 삼투압이 낮은 진짜 저나트륨혈증에서 원인을 가를 때 잰다. 삼투압이 정상인 이 단계에서는 먼저 측정 오차를 확인한다.\n  - ③ 만니톨 투여 확인은 측정 삼투압이 높고 계산 삼투압과의 차이(삼투압 간극)가 클 때 하는 조치다. 이 환자는 측정 삼투압이 정상이다.\n  - ⑤ 3 % 고장성 식염수는 경련·의식 저하가 있는 진짜(저삼투성) 급성 저나트륨혈증에 쓴다. 측정 오차인 이 환자에게 주면 실제 나트륨이 과도하게 올라간다.\n- 함정: 나트륨 124 만 보고 저나트륨혈증을 치료하거나 원인 검사를 시작하는 것 — 혼탁한 혈장과 정상 삼투압이면 먼저 측정 오차를 의심한다.\n- 학습목표: 고중성지방혈증에서 간접 이온선택전극법으로 잰 저나트륨혈증이 측정 오차(가성저나트륨혈증)이며 혈장 삼투압이 정상임을 근거로 직접법 재측정이 적절함을 안다\n- 근거·출처: Burtis CA, Bruns DE. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics, 8th ed. Ch. Electrolytes (indirect vs direct ion-selective electrodes, electrolyte exclusion effect) · Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 (measured osmolality first)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "중성지방이 4,800 mg/dL 로 매우 높아 혈장의 물이 아닌 부분(지질)이 늘었다. 간접 이온선택전극법은 검체를 희석한 뒤 재므로 혈장 전체 부피 중 물이 차지하는 비율이 정상이라고 가정하고 계산한다 — 지질이 물 자리를 차지하면 나트륨이 낮게 나온다. 실제 혈장 삼투압이 286 mOsm/kg 으로 정상이고 저나트륨혈증 증상도 없으므로 가성저나트륨혈증이며, 희석하지 않는 직접 이온선택전극법(혈액가스 분석기)으로 다시 재면 정상으로 나온다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 지질이 나트륨을 낮게 보이게 하는가</b>: 나트륨은 혈장의 물 속에만 녹아 있다. 정상 혈장은 약 93 % 가 물이고 7 % 가 지질·단백질이다. 간접법은 검체를 일정하게 희석해 재고 「물 93 %」를 전제로 혈장 전체 농도를 환산한다. 중성지방이나 단백질(다발골수종)이 크게 늘어 물 비율이 80 % 로 떨어지면 같은 부피의 혈장에 든 나트륨이 줄어 낮게 계산된다. 직접법은 희석하지 않고 물 속 나트륨 활동도를 바로 재므로 영향을 받지 않는다.<br> <b>삼투압이 왜 정상인가</b>: 삼투압은 물에 녹은 입자 수로 정해지고, 지질은 입자 수에 거의 기여하지 않는다. 그래서 진짜 저나트륨혈증(저삼투압)과 달리 측정 삼투압이 정상이다.<br> <b>저나트륨혈증 접근의 첫 단계</b>: 측정 삼투압을 먼저 본다 — 정상이면 가성(지질·단백질), 높으면 고삼투성(고혈당·만니톨), 낮을 때만 체액량과 소변 검사로 진짜 저나트륨혈증의 원인을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가성저나트륨혈증(정답)</th><th>고삼투성 저나트륨혈증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>측정 삼투압</td><td>정상(280~295)</td><td>높다</td></tr> <tr><td>원인</td><td>지질·단백질이 물 자리를 차지 — 측정 오차</td><td>포도당·만니톨이 세포 안 물을 끌어냄 — 실제 희석</td></tr> <tr><td>직접법 재측정</td><td>정상</td><td>여전히 낮다</td></tr> </tbody></table> 삼투압이 정상이면 검사법을, 높으면 삼투 물질을, 낮으면 체액량과 소변을 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수분 섭취 제한은 항이뇨호르몬 분비 이상 증후군 같은 정상 체액량의 저삼투성 저나트륨혈증에서 쓰는 처치다. 혈장 삼투압이 정상이면 해당하지 않는다.\n② 소변 나트륨·소변 삼투압은 측정 삼투압이 낮은 진짜 저나트륨혈증에서 원인을 가를 때 잰다. 삼투압이 정상인 이 단계에서는 먼저 측정 오차를 확인한다.\n③ 만니톨 투여 확인은 측정 삼투압이 높고 계산 삼투압과의 차이(삼투압 간극)가 클 때 하는 조치다. 이 환자는 측정 삼투압이 정상이다.\n⑤ 3 % 고장성 식염수는 경련·의식 저하가 있는 진짜(저삼투성) 급성 저나트륨혈증에 쓴다. 측정 오차인 이 환자에게 주면 실제 나트륨이 과도하게 올라간다."
+   },
+   {
+    "k": "함정",
+    "v": "나트륨 124 만 보고 저나트륨혈증을 치료하거나 원인 검사를 시작하는 것 — 혼탁한 혈장과 정상 삼투압이면 먼저 측정 오차를 의심한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고중성지방혈증에서 간접 이온선택전극법으로 잰 저나트륨혈증이 측정 오차(가성저나트륨혈증)이며 혈장 삼투압이 정상임을 근거로 직접법 재측정이 적절함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Burtis CA, Bruns DE. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics, 8th ed. Ch. Electrolytes (indirect vs direct ion-selective electrodes, electrolyte exclusion effect) · Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 (measured osmolality first)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "중성지방이 매우 높고 측정 삼투압이 정상이며 증상이 없으므로 간접법의 측정 오차(가성저나트륨혈증)이고, 직접 이온선택전극법으로 다시 잰다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "측정 혈장 삼투압 286 mOsm/kg 이 정상 — 진짜(저삼투성) 저나트륨혈증이 아니다",
+   "steps": 3,
+   "chain": [
+    "나트륨 124 인데 측정 삼투압 286 으로 정상 → 진짜 저나트륨혈증이 아님",
+    "중성지방 4,800 mg/dL 과 간접 이온선택전극법 → 지질에 의한 측정 오차",
+    "희석하지 않는 직접법으로 재측정"
+   ],
+   "key": [
+    {
+     "item": "측정한 혈장 삼투압은 286 mOsm/kg 이다",
+     "why": "정상 삼투압 — 가성저나트륨혈증",
+     "also": []
+    },
+    {
+     "item": "중성지방 4,800 mg/dL",
+     "why": "지질이 혈장 물 비율을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "나트륨 124 mmol/L(간접 이온선택전극법)",
+     "why": "희석 측정법 — 오차가 생기는 방법",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈당 112 mg/dL",
+     "why": "고혈당에 의한 고삼투성 저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하고",
+     "why": "증상이 없다 — 고장성 식염수 대상이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "리파아제 2,100 U/L",
+     "why": "고중성지방혈증성 췌장염 — 원인 질환이지만 나트륨 해석과 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "중성지방 4,800 mg/dL 인 췌장염 환자에서 간접법 나트륨이 124 로 낮지만 측정 삼투압은 286 으로 정상이다. 지질이 혈장 물 자리를 차지해 생긴 가성저나트륨혈증이므로 직접 이온선택전극법으로 다시 잰다.",
+   "switch": {
+    "choice": "B",
+    "condition": "측정 삼투압이 260 mOsm/kg 처럼 낮았다면 진짜 저나트륨혈증이므로 소변 나트륨·삼투압으로 원인을 가린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0295",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사",
+  "type": "류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "A 46-year-old man comes to the physician because of pain and swelling of the right wrist for 2 days. He has had similar episodes in the right knee twice in the past year. He has type 2 diabetes mellitus diagnosed 2 years ago and erectile dysfunction. He does not drink alcohol. Temperature is 37.6°C (99.7°F). The right wrist is warm, swollen, and tender. There is hepatomegaly 3 cm below the right costal margin. Serum alanine aminotransferase activity is 68 U/L, and uric acid concentration is 6.1 mg/dL. Synovial fluid analysis shows a leukocyte count of 18,000/mm3 and rhomboid crystals that are weakly positively birefringent under polarized light; Gram stain is negative. X-rays of the knees show linear calcification of the menisci.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Serum transferrin saturation and ferritin",
+   "24-hour urine uric acid excretion",
+   "Serum rheumatoid factor and anti-CCP antibodies",
+   "HLA-B27 testing",
+   "Serum ceruloplasmin concentration"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis establish calcium pyrophosphate deposition (CPPD) arthritis. CPPD before age 55 should prompt a search for a metabolic cause, and this man also has new diabetes, hypogonadism (erectile dysfunction), hepatomegaly, and a raised ALT — the picture of hereditary hemochromatosis. The next step is serum transferrin saturation and ferritin.\n- 원리: <b>Why iron causes pyrophosphate crystals</b>: in hemochromatosis, iron deposited in articular cartilage and synovium inhibits pyrophosphatase, so inorganic pyrophosphate accumulates and combines with calcium to form crystals. Iron also damages chondrocytes directly. The joint disease may not improve with phlebotomy, but finding the cause prevents cirrhosis, diabetes progression, and cardiomyopathy.<br> <b>Why age matters</b>: CPPD is common after 60 and usually idiopathic. In a patient under about 55, or with polyarticular or florid disease, look for hemochromatosis, hyperparathyroidism, hypomagnesemia, and hypophosphatasia (calcium, magnesium, phosphate, alkaline phosphatase, iron studies).<br> <b>The clue pattern</b>: iron in the pancreas (diabetes), pituitary (hypogonadism), liver (hepatomegaly, raised aminotransferases), skin (bronze color), and heart. Transferrin saturation above 45% is the most sensitive screening test; ferritin reflects the iron load, and HFE genotyping confirms the diagnosis.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD → iron studies (correct)</th><th>Gout → urine uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal</td><td>Rhomboid, weakly <b>positively</b> birefringent</td><td>Needle-shaped, strongly <b>negatively</b> birefringent</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Secondary cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Uric acid overproduction vs underexcretion</td></tr> </tbody></table> The crystal decides which metabolic workup follows — pyrophosphate leads to iron, calcium, and magnesium; urate leads to uric acid handling.\n- 오답 이유:\n  - (B) 24-hour urine uric acid separates overproduction from underexcretion in gout with needle-shaped negatively birefringent crystals; it would be ordered if the fluid had shown urate crystals.\n  - (C) Rheumatoid factor and anti-CCP antibodies would be ordered for symmetric small-joint polyarthritis lasting more than 6 weeks without crystals; this patient has episodic monoarthritis with pyrophosphate crystals.\n  - (D) HLA-B27 testing would be considered for inflammatory back pain or asymmetric lower-limb oligoarthritis with enthesitis (spondyloarthritis); crystals in the fluid explain this arthritis.\n  - (E) Serum ceruloplasmin screens for Wilson disease, which can cause liver disease and occasionally chondrocalcinosis in young people; it would be favored with neuropsychiatric signs or Kayser-Fleischer rings rather than diabetes and hypogonadism.\n- 함정: Treating the crystal arthritis as an isolated joint problem — CPPD in a 46-year-old with diabetes, hypogonadism, and liver disease points to iron overload.\n- 학습목표: 젊은 나이의 칼슘피로인산 결정 관절염과 연골석회화증에서 혈색소침착증을 찾기 위해 철 검사(트랜스페린 포화도·페리틴)를 해야 함을 안다\n- 근거·출처: Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG Clinical Guideline: Hereditary Hemochromatosis. Am J Gastroenterol 2019;114:1202-1218",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis establish calcium pyrophosphate deposition (CPPD) arthritis. CPPD before age 55 should prompt a search for a metabolic cause, and this man also has new diabetes, hypogonadism (erectile dysfunction), hepatomegaly, and a raised ALT — the picture of hereditary hemochromatosis. The next step is serum transferrin saturation and ferritin."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why iron causes pyrophosphate crystals</b>: in hemochromatosis, iron deposited in articular cartilage and synovium inhibits pyrophosphatase, so inorganic pyrophosphate accumulates and combines with calcium to form crystals. Iron also damages chondrocytes directly. The joint disease may not improve with phlebotomy, but finding the cause prevents cirrhosis, diabetes progression, and cardiomyopathy.<br> <b>Why age matters</b>: CPPD is common after 60 and usually idiopathic. In a patient under about 55, or with polyarticular or florid disease, look for hemochromatosis, hyperparathyroidism, hypomagnesemia, and hypophosphatasia (calcium, magnesium, phosphate, alkaline phosphatase, iron studies).<br> <b>The clue pattern</b>: iron in the pancreas (diabetes), pituitary (hypogonadism), liver (hepatomegaly, raised aminotransferases), skin (bronze color), and heart. Transferrin saturation above 45% is the most sensitive screening test; ferritin reflects the iron load, and HFE genotyping confirms the diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD → iron studies (correct)</th><th>Gout → urine uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal</td><td>Rhomboid, weakly <b>positively</b> birefringent</td><td>Needle-shaped, strongly <b>negatively</b> birefringent</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Secondary cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Uric acid overproduction vs underexcretion</td></tr> </tbody></table> The crystal decides which metabolic workup follows — pyrophosphate leads to iron, calcium, and magnesium; urate leads to uric acid handling."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) 24-hour urine uric acid separates overproduction from underexcretion in gout with needle-shaped negatively birefringent crystals; it would be ordered if the fluid had shown urate crystals.\n(C) Rheumatoid factor and anti-CCP antibodies would be ordered for symmetric small-joint polyarthritis lasting more than 6 weeks without crystals; this patient has episodic monoarthritis with pyrophosphate crystals.\n(D) HLA-B27 testing would be considered for inflammatory back pain or asymmetric lower-limb oligoarthritis with enthesitis (spondyloarthritis); crystals in the fluid explain this arthritis.\n(E) Serum ceruloplasmin screens for Wilson disease, which can cause liver disease and occasionally chondrocalcinosis in young people; it would be favored with neuropsychiatric signs or Kayser-Fleischer rings rather than diabetes and hypogonadism."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the crystal arthritis as an isolated joint problem — CPPD in a 46-year-old with diabetes, hypogonadism, and liver disease points to iron overload."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 나이의 칼슘피로인산 결정 관절염과 연골석회화증에서 혈색소침착증을 찾기 위해 철 검사(트랜스페린 포화도·페리틴)를 해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG Clinical Guideline: Hereditary Hemochromatosis. Am J Gastroenterol 2019;114:1202-1218"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "양성 복굴절 마름모꼴 결정과 연골석회화증은 CPPD 이고, 55세 미만에 당뇨·성선저하·간비대가 함께 있으므로 혈색소침착증을 찾는 철 검사가 다음 단계다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "결정이 바늘 모양 음성 복굴절(요산)이 아니라 마름모꼴 약한 양성 복굴절이고 반월판 석회화가 있다",
+   "steps": 3,
+   "chain": [
+    "마름모꼴 약한 양성 복굴절 결정 + 반월판 석회화 → CPPD 관절염",
+    "46세의 CPPD → 이차 원인을 찾아야 한다",
+    "당뇨·발기부전·간비대·ALT 상승 → 혈색소침착증 → 트랜스페린 포화도·페리틴"
+   ],
+   "key": [
+    {
+     "item": "rhomboid crystals that are weakly positively birefringent",
+     "why": "칼슘피로인산 결정",
+     "also": []
+    },
+    {
+     "item": "linear calcification of the menisci",
+     "why": "연골석회화증",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus diagnosed 2 years ago and erectile dysfunction",
+     "why": "췌장·뇌하수체 철 침착을 시사",
+     "also": []
+    },
+    {
+     "item": "hepatomegaly 3 cm below the right costal margin",
+     "why": "간 철 침착",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "uric acid concentration is 6.1 mg/dL",
+     "why": "통풍 가능성을 낮추지만 혈중 요산만으로 통풍을 배제하지는 못한다",
+     "also": []
+    },
+    {
+     "item": "Gram stain is negative",
+     "why": "세균성 관절염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Temperature is 37.6°C",
+     "why": "결정 관절염에서도 미열은 흔하다",
+     "also": []
+    }
+   ],
+   "summary": "마름모꼴 약한 양성 복굴절 결정과 반월판 석회화로 CPPD 관절염이다. 46세에 당뇨·발기부전·간비대·ALT 상승이 함께 있어 혈색소침착증을 의심하고 트랜스페린 포화도와 페리틴을 잰다.",
+   "switch": {
+    "choice": "B",
+    "condition": "관절액에서 바늘 모양의 강한 음성 복굴절 결정이 보이고 요산이 높다면 24시간 소변 요산 배설량으로 과생성·배설 저하를 가린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0283",
   "exam": "imaging",
   "style": "kmle_style",

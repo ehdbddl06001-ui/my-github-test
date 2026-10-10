@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3516,
+  "total": 3526,
   "byType": {
    "anatomy": 837,
+   "imaging": 299,
    "paper": 746,
    "kmle": 1344,
-   "imaging": 289,
    "concept": 97,
    "usmle": 186,
    "ailab": 14,
@@ -39,36 +39,36 @@ window.MEDKOS_INDEX = {
    "Hematology": 81,
    "Laboratory Medicine": 74,
    "산부인과": 50,
-   "순환기": 27,
+   "순환기": 28,
    "Physiology": 21,
+   "소화기": 19,
    "호흡기": 19,
-   "소화기": 18,
+   "소아과": 17,
    "Pharmacology": 16,
-   "소아과": 16,
    "Biochemistry": 15,
    "Microbiology": 14,
+   "감염": 14,
    "병리·조직학": 14,
    "응급·중환자": 14,
-   "감염": 13,
    "내분비": 13,
    "신경": 13,
+   "신장·비뇨기": 13,
    "혈액·종양": 13,
-   "신장·비뇨기": 12,
    "Internal Medicine": 11,
    "예방의학·역학": 11,
    "외과": 11,
    "피부과": 11,
    "Immunology": 10,
-   "근골격·류마티스": 7,
-   "약리": 7,
-   "정신과": 7,
+   "근골격·류마티스": 8,
+   "약리": 8,
+   "정신과": 8,
+   "안과": 5,
+   "영상의학": 5,
    "이비인후과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "안과": 4,
-   "영상의학": 4,
    "Oncology": 3,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2421,
+   "high": 2431,
    "medium": 1045,
    "low": 50
   },
@@ -98,6 +98,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-11.md",
    "snippet": "오늘의 학습 (2026 10 11 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 31일 · Tagging 2까지 8일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-11 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 11 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 31일 · Tagging 2까지 8일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0300",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0300.md",
+   "snippet": "72세 여자가 3일 동안 구토와 설사가 있은 뒤 기운이 없어 왔다. 고혈압과 심부전으로 푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다. 혈압 98/60 mmHg(누우면), 앉으면 82/54 mmHg 이고, 맥박 106회/분 이다. 혀가 말라 있고 경정맥은 보이지 않는다. 한 달 전 크레아티닌은 0.9 mg/dL 이었다. 혈액검사에서 혈액요소질소 58 mg/dL, 크레아티닌 2.4 mg/dL, 나트륨 134 mm",
+   "text": "신장·비뇨기 신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 72세 여자가 3일 동안 구토와 설사가 있은 뒤 기운이 없어 왔다. 고혈압과 심부전으로 푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다. 혈압 98/60 mmHg(누우면), 앉으면 82/54 mmHg 이고, 맥박 106회/분 이다. 혀가 말라 있고 경정맥은 보이지 않는다. 한 달 전 크레아티닌은 0.9 mg/dL 이었다. 혈액검사에서 혈액요소질소 58 mg/dL, 크레아티닌 2.4 mg/dL, 나트륨 134 mmol/L 이다. 소변 검사에서 비중 1.025, 침사에 과립원주와 적혈구는 없다. 나트륨 분획배설률 2.1 %, 요소 분획배설률 22 % 이다. 진단은? A. 급성 간질성 신염 B. 급속 진행 사구체신염 C. 콩팥후 요로 폐쇄 D. 콩팥전 급성 콩팥 손상 E. 급성 세뇨관 괴사"
+  },
+  {
+   "id": "imaging-2026-0299",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0299.md",
+   "snippet": "A 17 year old girl with anorexia nervosa, restricting type, is admitted to an inpatient eating disorder unit because her body mass index has fallen to 13.8 kg/m2. Nasogastric feeding is started at 2400 kcal/day on the day of admission. On t",
+   "text": "정신과 정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 A 17 year old girl with anorexia nervosa, restricting type, is admitted to an inpatient eating disorder unit because her body mass index has fallen to 13.8 kg/m2. Nasogastric feeding is started at 2400 kcal/day on the day of admission. On the third hospital day, she becomes confused, reports muscle weakness and shortness of breath, and has bilateral ankle edema. Pulse is 112/min, respirations are 28/min, and blood pressure is 92/58 mm Hg. Crackles are heard at both lung bases, and the jugular venous pressure is elevated. Serum glucose is 148 mg/dL, sodium 136 mEq/L, and potassium 3.3 mEq/L; on admission, all serum electrolytes had been within normal limits. Which of the following serum abnormalities is most likely responsible for her current findings? A. Hypocalcemia B. Hyponatremia C. Hypophosphatemia D. Hypokalemia E. Hypomagnesemia"
+  },
+  {
+   "id": "imaging-2026-0298",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 협심증 환자의 발기부전 약 복용 뒤 실신",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0298.md",
+   "snippet": "64세 남자가 화장실에서 어지러워 쓰러져 응급실에 왔다. 2년 전 안정형 협심증으로 진단받아 아스피린, 아토르바스타틴, 이소소르비드 일질산염을 복용하고 있다. 오늘 저녁 지인에게서 받은 발기부전 치료제를 처음 먹었고, 1시간 뒤 가슴 답답함이 있어 니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다. 혈압 72/40 mmHg, 맥박 118회/분 이다. 심전도는 동빈맥이며 ST 분절 변화는 없다. 이 저혈압의 기전으로 가장 적절한 것은",
+   "text": "약리 약리 — 협심증 환자의 발기부전 약 복용 뒤 실신 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 64세 남자가 화장실에서 어지러워 쓰러져 응급실에 왔다. 2년 전 안정형 협심증으로 진단받아 아스피린, 아토르바스타틴, 이소소르비드 일질산염을 복용하고 있다. 오늘 저녁 지인에게서 받은 발기부전 치료제를 처음 먹었고, 1시간 뒤 가슴 답답함이 있어 니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다. 혈압 72/40 mmHg, 맥박 118회/분 이다. 심전도는 동빈맥이며 ST 분절 변화는 없다. 이 저혈압의 기전으로 가장 적절한 것은? A. 간 CYP3A4 억제로 질산염 혈중 농도 상승 B. 알파1 아드레날린 수용체 차단에 의한 혈관 확장 C. 심근 베타1 수용체 차단에 의한 심박출량 감소 D. 혈관 평활근의 cAMP 분해 억제 E. 혈관 평활근의 cGMP 분해 억제와 생성 증가가 겹침"
+  },
+  {
+   "id": "imaging-2026-0297",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 분출성 구토 영아의 수술 전 처치",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0297.md",
+   "snippet": "A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is eager to feed again immediately after vomiting. He was born at term, and his birth weight was 3.4 kg; tod",
+   "text": "소아과 소아청소년 — 분출성 구토 영아의 수술 전 처치 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 A 5 week old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is eager to feed again immediately after vomiting. He was born at term, and his birth weight was 3.4 kg; today he weighs 3.6 kg. Pulse is 168/min, respirations are 36/min, and temperature is 36.8°C (98.2°F). The anterior fontanelle is slightly sunken, mucous membranes are dry, and capillary refill time is 3 seconds. A firm, mobile, olive sized mass is palpable in the epigastrium. Serum studies show Na+ 133 mEq/L, K+ 2.9 mEq/L, Cl 84 mEq/L, and HCO3 34 mEq/L. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm and a channel length of 19 mm. Which of the following is the most appropriate next step in management? A. Intravenous ammonium chloride infusion B. Intravenous 0.9% saline bolus, then dextrose saline with potassium chloride C. Immediate pyloromyotomy D. Intravenous 0.45% saline without potassium until the infant urinates E. Oral rehydration solution by nasogastric tube"
+  },
+  {
+   "id": "imaging-2026-0296",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0296.md",
+   "snippet": "38세 남자가 명치 통증으로 응급실에 왔다. 하루 전부터 등으로 뻗치는 명치 통증과 구토가 있었다. 의식은 명료하고, 혈압 128/82 mmHg, 맥박 98회/분 이다. 피부 긴장도는 정상이고 부종은 없다. 채혈한 혈액은 우윳빛으로 혼탁하다. 혈액검사에서 나트륨 124 mmol/L(간접 이온선택전극법), 칼륨 4.1 mmol/L, 혈당 112 mg/dL, 혈액요소질소 14 mg/dL, 크레아티닌 0.9 mg/dL, 중성지방 4",
+   "text": "영상의학 진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 38세 남자가 명치 통증으로 응급실에 왔다. 하루 전부터 등으로 뻗치는 명치 통증과 구토가 있었다. 의식은 명료하고, 혈압 128/82 mmHg, 맥박 98회/분 이다. 피부 긴장도는 정상이고 부종은 없다. 채혈한 혈액은 우윳빛으로 혼탁하다. 혈액검사에서 나트륨 124 mmol/L(간접 이온선택전극법), 칼륨 4.1 mmol/L, 혈당 112 mg/dL, 혈액요소질소 14 mg/dL, 크레아티닌 0.9 mg/dL, 중성지방 4,800 mg/dL, 리파아제 2,100 U/L(참고치 60 이하)이다. 측정한 혈장 삼투압은 286 mOsm/kg 이다. 나트륨 결과에 대한 다음 조치로 가장 적절한 것은? A. 수분 섭취 제한 B. 소변 나트륨과 소변 삼투압 측정 C. 만니톨 투여 여부 확인 D. 직접 이온선택전극법으로 나트륨 재측정 E. 3 % 고장성 식염수 투여"
+  },
+  {
+   "id": "imaging-2026-0295",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0295.md",
+   "snippet": "A 46 year old man comes to the physician because of pain and swelling of the right wrist for 2 days. He has had similar episodes in the right knee twice in the past year. He has type 2 diabetes mellitus diagnosed 2 years ago and erectile dy",
+   "text": "근골격·류마티스 류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 A 46 year old man comes to the physician because of pain and swelling of the right wrist for 2 days. He has had similar episodes in the right knee twice in the past year. He has type 2 diabetes mellitus diagnosed 2 years ago and erectile dysfunction. He does not drink alcohol. Temperature is 37.6°C (99.7°F). The right wrist is warm, swollen, and tender. There is hepatomegaly 3 cm below the right costal margin. Serum alanine aminotransferase activity is 68 U/L, and uric acid concentration is 6.1 mg/dL. Synovial fluid analysis shows a leukocyte count of 18,000/mm3 and rhomboid crystals that are weakly positively birefringent under polarized light; Gram stain is negative. X rays of the knees show linear calcification of the menisci. Which of the following is the most appropriate next step in evaluation? A. Serum transferrin saturation and ferritin B. 24 hour urine uric acid excretion C. Serum rheumatoid factor and anti CCP antibodies D. HLA B27 testing E. Serum ceruloplasmin concentration"
+  },
+  {
+   "id": "imaging-2026-0294",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0294.md",
+   "snippet": "A 63 year old man is admitted to the hospital because of fever, dry cough, and progressive shortness of breath for 8 days. He has type 2 diabetes mellitus treated with metformin. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. T",
+   "text": "감염 감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 A 63 year old man is admitted to the hospital because of fever, dry cough, and progressive shortness of breath for 8 days. He has type 2 diabetes mellitus treated with metformin. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. Temperature is 38.4°C (101.1°F), pulse is 102/min, respirations are 26/min, and blood pressure is 134/80 mm Hg. Oxygen saturation is 88% on room air and rises to 94% with 4 L/min of oxygen by nasal cannula. Crackles are heard at both lung bases. Leukocyte count is 6800/mm3 with lymphocytes 9%. Serum procalcitonin concentration is 0.08 ng/mL (N < 0.1). A portable chest x ray is shown. Which of the following is most likely to reduce this patient's risk of death? A. Azithromycin B. Lopinavir ritonavir C. Dexamethasone D. Hydroxychloroquine E. Ivermectin"
+  },
+  {
+   "id": "imaging-2026-0293",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0293.md",
+   "snippet": "55세 남자가 대장암 간 전이로 간 부분절제술을 받았다. 수술 전 간기능 검사는 정상이었고, 음주력과 간질환 병력은 없다. 절제 검체 중 종양에서 떨어진 정상 간 조직으로 약물을 산화시키는 대사 효소에 대한 면역조직화학염색을 하였다. 그림처럼 간세포의 갈색 염색은 소엽의 한 구역에 띠 모양으로 진하고, 그 사이 문맥역 쪽 간세포 띠는 거의 염색되지 않는다. 이 효소가 진하게 발현되는 소엽 구역에 괴사가 주로 생기는 것은? A.",
+   "text": "소화기 소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 55세 남자가 대장암 간 전이로 간 부분절제술을 받았다. 수술 전 간기능 검사는 정상이었고, 음주력과 간질환 병력은 없다. 절제 검체 중 종양에서 떨어진 정상 간 조직으로 약물을 산화시키는 대사 효소에 대한 면역조직화학염색을 하였다. 그림처럼 간세포의 갈색 염색은 소엽의 한 구역에 띠 모양으로 진하고, 그 사이 문맥역 쪽 간세포 띠는 거의 염색되지 않는다. 이 효소가 진하게 발현되는 소엽 구역에 괴사가 주로 생기는 것은? A. 아세트아미노펜 과다복용 B. 황린 중독 C. 자간증 D. 만성 B형간염의 경계판 괴사 E. 원발 담즙성 담관염"
+  },
+  {
+   "id": "imaging-2026-0292",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0292.md",
+   "snippet": "43세 남자가 왼쪽 눈이 1년 전부터 조금씩 흐려지고 자주 충혈되어 왔다. 다른 병원에서 만성 앞포도막염으로 스테로이드 점안을 여러 차례 받았으나 재발하였다. 10년 동안 금속 연마 작업을 해 왔고, 눈을 다친 기억은 없다. 교정시력은 오른쪽 1.0, 왼쪽 0.4 이다. 왼쪽 홍채는 오른쪽보다 짙은 적갈색이고, 왼쪽 동공은 오른쪽보다 크며 빛반사가 느리다. 왼쪽 수정체 앞낭 아래에 갈색 점들이 흩어져 있다. 안압은 양쪽 16 ",
+   "text": "안과 안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 43세 남자가 왼쪽 눈이 1년 전부터 조금씩 흐려지고 자주 충혈되어 왔다. 다른 병원에서 만성 앞포도막염으로 스테로이드 점안을 여러 차례 받았으나 재발하였다. 10년 동안 금속 연마 작업을 해 왔고, 눈을 다친 기억은 없다. 교정시력은 오른쪽 1.0, 왼쪽 0.4 이다. 왼쪽 홍채는 오른쪽보다 짙은 적갈색이고, 왼쪽 동공은 오른쪽보다 크며 빛반사가 느리다. 왼쪽 수정체 앞낭 아래에 갈색 점들이 흩어져 있다. 안압은 양쪽 16 mmHg 이다. 오른쪽 눈은 정상이다. 안와 높이의 뇌 CT 축상면(뼈 창)은 그림과 같다. 진단은? A. 안구 구리침착증 B. Fuchs 이색성 홍채모양체염 C. 교감성 안염 D. HLA B27 연관 앞포도막염 E. 안구 철침착증"
+  },
+  {
+   "id": "imaging-2026-0291",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+   "confidence": "high",
+   "date": "2026-10-10",
+   "path": "content/imaging/2026/imaging-2026-0291.md",
+   "snippet": "An 18 year old man is brought to the emergency department 1 hour after he was thrown from a motorcycle at high speed. He reports chest and back pain. A left chest tube placed on arrival drained 250 mL of blood, and drainage has since stoppe",
+   "text": "순환기 순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1 An 18 year old man is brought to the emergency department 1 hour after he was thrown from a motorcycle at high speed. He reports chest and back pain. A left chest tube placed on arrival drained 250 mL of blood, and drainage has since stopped. After 1 L of crystalloid, his blood pressure is 156/94 mm Hg in both arms and pulse is 108/min. Oxygen saturation is 96% on 4 L/min of oxygen by nasal cannula. He is alert, and pulses are palpable and symmetric in all four extremities. Abdominal ultrasonography shows no free fluid. Hemoglobin concentration is 12.9 g/dL and remains unchanged 1 hour later. A contrast enhanced CT angiogram of the chest is shown. Vascular surgery is consulted. Which of the following is the most appropriate initial pharmacotherapy? A. Intravenous tranexamic acid B. Intravenous esmolol C. Intravenous nitroprusside D. Intravenous hydralazine E. Intravenous norepinephrine"
   },
   {
    "id": "anatomy-daily-2026-10-10",
