@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3513,
+  "total": 3515,
   "byType": {
    "anatomy": 836,
-   "paper": 744,
+   "paper": 746,
    "kmle": 1344,
    "imaging": 289,
    "concept": 97,
@@ -18,10 +18,10 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 836,
-   "Cardiology": 245,
+   "Cardiology": 246,
    "Nephrology": 195,
    "Infectious Disease": 178,
-   "Pediatrics": 163,
+   "Pediatrics": 164,
    "Obstetrics & Gynecology": 118,
    "Hematology-Oncology": 110,
    "Pathology": 108,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2420,
-   "medium": 1043,
+   "medium": 1045,
    "low": 50
   },
   "tagCount": 4660
@@ -98,6 +98,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-10.md",
    "snippet": "오늘의 학습 (2026 10 10 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 30일 · Tagging 2까지 9일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-10 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 10 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 30일 · Tagging 2까지 9일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0746",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0746_enhancing_computational_thinking_in_early_childhood_a_cluste.md",
+   "snippet": "Title Enhancing computational thinking in early childhood: A cluster randomized controlled trial of interactive STEM app intervention and the role of engagement Authors Wang Yumei, Liu Shiying Journal / DOI PloS one · DOI: 10.1371/journal.p",
+   "text": "Pediatrics scraped pubmed PubMed / PloS one Title Enhancing computational thinking in early childhood: A cluster randomized controlled trial of interactive STEM app intervention and the role of engagement Authors Wang Yumei, Liu Shiying Journal / DOI PloS one · DOI: 10.1371/journal.pone.0353980 · PMID: 42853818 https://pubmed.ncbi.nlm.nih.gov/42853818/ Abstract This cluster randomized controlled trial investigated whether a 12 week interactive STEM app intervention enhances computational thinking skills among young children aged 4 6 years and whether app usage engagement predicts learning outcomes. Ten classrooms from five kindergartens in Northern China were randomly assigned within each kindergarten to an intervention condition (5 classrooms, 125 children) that received structured app based activities three times weekly or a waitlist control condition (5 classrooms, 125 children) that continued with traditional educational practices. Computational thinking was assessed at pretest and posttest using the TechCheck K, a validated assessment designed for young children that does not require prior coding knowledge. App usage engagement was quantified through a multidimensional composite index capturing task completion, time on task, persistence, help seeking efficiency, navigation independence, self correction, and attendance. After controlling for baseline ability and demographics, children in the intervention group demonstrated significantly greater computational thinking gains than controls, with a small to moderate effect size of Cohen's d = 0.39. Within the intervention group, higher engagement significantly predicted superior posttest performance, although the unique variance explained was modest (approximately 1.5% beyond baseline ability and demographic characteristics) and the relationship is specific to the intervention context. These findings provide evidence that interactive STEM apps can enhance early computational thinking development when implemented systematically, and the main intervention effect was robust to mixed effects sensitivity analyses accounting for clustering at both the kindergarten and classroom levels. Engagement emerged as a statistically significant, though practically modest, predictor of technology based learning outcomes within the intervention context, underscoring the potential importance of fostering active, persistent interaction with educational technologies without overstating its standalone contribution. Implications for early childhood education practice, app design, and technology integration are discussed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0745",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicine",
+   "confidence": "medium",
+   "date": "2026-10-09",
+   "path": "content/papers/2026/2026-10-09_paper-2026-0745_kartagener_syndrome_with_pulmonary_mycetoma_and_recurrent_th.md",
+   "snippet": "Title Kartagener syndrome with pulmonary mycetoma and recurrent thromboembolism: A case report Authors Khan Muhammad Asghar, Tahir Okasha, Khan Abbas, Sheraz Maheen, Reza Khalid, Javaid Muhammad Hassaan, Altaf Laleen, Shehzad Eeman, et al. ",
+   "text": "Cardiology scraped pubmed PubMed / Medicine Title Kartagener syndrome with pulmonary mycetoma and recurrent thromboembolism: A case report Authors Khan Muhammad Asghar, Tahir Okasha, Khan Abbas, Sheraz Maheen, Reza Khalid, Javaid Muhammad Hassaan, Altaf Laleen, Shehzad Eeman, et al. Journal / DOI Medicine · DOI: 10.1097/MD.0000000000051057 · PMID: 42854052 https://pubmed.ncbi.nlm.nih.gov/42854052/ Abstract RATIONALE: Kartagener syndrome, a variant of primary ciliary dyskinesia, is defined by chronic sinusitis, bronchiectasis, and situs inversus. While recurrent infections are seen, a combination of thromboembolic disease, pulmonary mycetoma, cardiac dysfunction, and serological evidence of autoimmune disorders is very uncommon. PATIENT CONCERNS: A 27 year old man with Kartagener syndrome and situs inversus totalis complaining of worsening dyspnea, chest pain, fever, hemoptysis, and ankle swelling. His past medical history included episodes of deep vein thrombosis, recurrent pulmonary embolism, and chronic productive cough. DIAGNOSES: Radiologic studies showed dextrocardia, a right upper lobe cavitary lesion indicative of pulmonary mycetoma, hepatic congestion, and ascites. The echocardiogram demonstrated severe dysfunction of both left and right ventricles, a thrombus in the right ventricle, mild moderate pericardial effusion, and an ejection fraction of about 40%. BNP was elevated, and U1 ribonucleoprotein antibodies were positive, implying a probable overlap of autoimmune disease, but diagnostic criteria were not fulfilled. INTERVENTIONS: He was prescribed appropriate heart failure management, anticoagulant therapy, antifungals, and multidisciplinary treatment of other issues. OUTCOMES AND LESSONS: The patient underwent adequate management of his cardiopulmonary, infectious, and thromboembolic complications. The existence of a causal link between these diseases could not be found. This case underscores the need for a multidisciplinary approach in evaluating patients with a combination of congenital and acquired systemic diseases. The association of Kartagener syndrome, pulmonary mycetoma, thromboembolic tendency, right ventricular thrombus formation, cardiac dysfunction, and positive U1 RNP is an unusual combination and calls for proper evaluation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0744",
@@ -12922,8 +12956,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/pediatrics/cn.peds.rheumatic-fever.acute-eradication.md",
-   "snippet": "정의 급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 완전히 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 [[harrison 21: 359장 p.2766]]. 이 정리본의 목표는 진단 뒤 급성기에 무엇을 반드시 하고, 무엇은 증상에 따라 더하는지 를 가르는 것이다. 급성기 뒤 재발 예방(약·간격·기간)은 cn.peds.rheumatic fever.s",
-   "text": "Pediatrics 정의 급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 완전히 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 [[harrison 21: 359장 p.2766]]. 이 정리본의 목표는 진단 뒤 급성기에 무엇을 반드시 하고, 무엇은 증상에 따라 더하는지 를 가르는 것이다. 급성기 뒤 재발 예방(약·간격·기간)은 cn.peds.rheumatic fever.secondary prophylaxis 가 다룬다. 병태생리 정상 면역은 사슬알균 M 단백·N 아세틸글루코사민 탄수화물에 항체와 T 세포를 만들어 균을 없앤다. 감수성이 있는 사람(인구의 약 3–6 %, 유전 소인)에서는 이 반응이 판막 내피·심근·활막·기저핵의 비슷한 구조를 함께 인식한다 — 분자 모방이다. 교차 항체가 판막 내피에 붙어 VCAM 1 을 활성화하고 림프구를 불러들이며, 파괴된 내피에서 나온 라미닌·트로포미오신이 다시 교차 T 세포를 자극해 손상이 넓어진다 [[harrison 21: 359장 p.2767]]. 치료 논리는 여기서 나온다. 손상은 면역이 만들지만 면역을 계속 자극하는 항원(남은 사슬알균) 이 인두나 피부에 있을 수 있으므로, 먼저 그 균을 없앤다(제균). 이미 일어난 염증은 항생제로 되돌릴 수 없어 관절·발열은 항염제로, 심부전은 심부전 치료로 다룬다. 어떤 치료도 RHD 로의 진행을 바꾼다고 증명되지 않았다 [[harrison 21: 359장 p.2768]] — 그래서 급성기 이후 재감염을 막는 2차 예방이 관리의 중심이 된다. 기전에서 소견으로 잠복기 : 선행 감염 뒤 약 3주(1–5주). 무도병·완만한 심염은 최대 6개월 뒤 [[harrison 21: 359장 p.2767]]. 이동성 다발관절염 (60–75 %): 무릎·발목·엉덩·팔꿈치 같은 큰 관절이 몇 시간~며칠 사이 옮겨 가며 붓고 몹시 아프다. 살리실산에 극적으로 반응한다 [[harrison 21: 359장 p.2767–2768]]. 심염 (50–75 %): 승모판 역류가 특징(때로 대동맥판 역류). 심근 염증이 전도로를 건드려 PR 연장·S1 약화가 생긴다 [[harrison 21: 359장 p.2767]]. 선행 감염 증거 : 대부분 인두 배양·신속항원 음성이므로 ASO·anti DNase B 로 확인한다 [[harrison 21: 359장 p.2768]]. 발열·염증 지표 : 대부분에서 상승(ESR·CRP) — 부 기준이자 치료 반응 지표. 감별 관절염이 살리실산 시작 뒤 1–2일 넘게 지속되면 ARF 일 가능성이 낮다 [[harrison 21: 359장 p.2768]]. 소아 특발성 관절염(이동성 아님, 만성), 화농성 관절염(한 관절, 관절액 배양), 바이러스 관절염, 감염성 심내막염(혈액배양 양성, 균이 판막에 있음), 가와사키병(5세 미만, 점막·손발 변화)을 가른다. 해리슨은 검사 표에서 관절액·혈액배양·자가항체·바이러스 혈청을 상황에 따라 추가하라고 적는다 [[harrison 21: 359장 p.2769]]. 검사 항상: 심전도, 심초음파(모든 의심 환자 — 진단과 심염 기준 중증도), 혈구, CRP, 사슬알균 혈청(ASO·anti DNase B). 상황에 따라: 인두·피부 병변 배양, 혈액배양, 관절액, 신기능(NSAID 사용 전) [[harrison 21: 359장 p.2768–2769]]. 치료 1. 제균 — 모든 확진 환자. 페녹시메틸페니실린 500 mg(≤27 kg 250 mg) 하루 2회 또는 아목시실린 50 mg/kg(최대 1 g) 하루 1회 10일, 또는 벤자틴 페니실린 G 120만 단위(≤27 kg 60만) 1회 근육 [[harrison 21: 359장 p.2768]]. 인두 배양 음성이어도 준다. 2. 항염 — 관절염·발열. 진단이 확정된 뒤 아스피린 50–60 mg/kg/일(최대 80–100 mg/kg/일)을 4–5회 나누어, 증상이 가라앉으면(대개 2주 안) 50–60 mg/kg/일로 2–4주 더. 이명·구역이 나오면 줄인다. 나프록센 10–20 mg/kg/일이 대안이다. 심염·무도병에는 효과가 증명되지 않았다 [[harrison 21: 359장 p.2768–2769]]. 3. 심염 — 중증도에 따라. 심부전 치료가 생명을 구할 수 있는 유일한 비대증 치료다. 스테로이드는 논란이지만 심부전을 일으키는 중증 심염에 프레드니솔론 1–2 mg/kg/일(최대 80 mg)을 수일~3주 쓰는 임상의가 많다 [[harrison 21: 359장 p.2769]]. 4. 무도병. 조용한 환경; 중증이면 카바마제핀·발프로산(할로페리돌보다 선호), 중증·난치면 스테로이드 고려 [[harrison 21: 359장 p.2769]]. 반응 확인·재평가. 염증 지표를 1–2주마다 정상화까지(대개 4–6주), 1개월 뒤 심초음파로 심염 진행을 본다. 약을 끊은 뒤 3주 안에 열·관절 증상·염증 지표가 다시 올라도 재발이 아니며 살리실산을 잠깐 다시 쓴다. 퇴원 전 2차 예방·등록·교육 계획을 세운다 [[harrison 21: 359장 p.2769–2770]]. 권고와 예외 제균은 「심염이 있으면」이 아니라 모든 확진 환자에게, 배양 결과와 무관하게. 스테로이드는 제균을 대신하지 못한다 — 중증 심염에서 선택적으로 더할 뿐이다. 살리실산은 진단 확정 뒤 — 먼저 쓰면 이동 양상이 가려져 단관절염처럼 보일 수 있다 [[harrison 21: 359장 p.2768]]. 제균을 벤자틴 1회로 했으면 그것이 2차 예방의 첫 회다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 중증 심염의 스테로이드 — 시험 기준: 심부전을 일으키는 중증 심염에는 스테로이드를 더한다(국시 교과서형 서술) [[harrison 21: 359장 p.2769]] / 다른 기준: 두 메타분석에서 위약·살리실산 대비 심염 결과 개선이 없었고, 해리슨은 사용을 「논란」으로 적는다 [[harrison 21: 359장 p.2769]] / 왜 다른가: 근거 연구가 40년 이상 전이고 현대 약물을 쓰지 않았다 — 효과가 없다는 증명도, 있다는 증명도 약하다 / 시험에서는: KMLE·USMLE 모두 「중증 심염 → 스테로이드 추가」를 고르되, 어떤 경우에도 「스테로이드 단독(제균 없이)」은 오답이다. (심화) 왜 항생제가 이미 생긴 면역 질환에 필요한가 ARF 는 감염 뒤 면역 질환이라 「이제 와서 항생제가 무슨 소용인가」라는 물음이 자연스럽다. 해리슨은 이 점을 분명히 한다 — 어떤 치료도 RHD 진행을 바꾼다고 증명되지 않았고, 심부전 치료 외에는 대증이다 [[harrison 21: 359장 p.2768]]. 그럼에도 제균이 필수인 이유는 두 가지다. ① 인두·피부에 남은 균은 교차 면역을 계속 자극할 항원이자 가족·접촉자에게 옮길 감염원이다. ② 제균은 곧 재발 예방의 출발점이다 — 한 번 감작된 환자는 다음 사슬알균 감염에서 재발 위험이 일반인보다 극적으로 높고, 재발이 판막 손상을 누적시키기 때문이다 [[harrison 21: 359장 p.2770]]. 그래서 급성기 첫 벤자틴 주사와 4주 뒤 두 번째 주사는 하나의 사슬로 이어진다."
+   "snippet": "판단 — 왜 제균이 모든 환자에게 먼저인가 손상은 면역이 만들지만 면역을 계속 자극하는 항원(남은 사슬알균) 이 인두나 피부에 있을 수 있다 — 그래서 확진된 모든 환자가 선행 감염을 치료할 만큼의 페니실린을 받는다 [[harrison 21: 359장 p.2768]]. 이미 일어난 염증은 항생제로 되돌릴 수 없어 관절·발열은 항염제로, 심부전은 심부전 치료로 다룬다. 어떤 치료도 RHD 로의 진행을 바꾼다고 증명되지 않았다 [",
+   "text": "Pediatrics 판단 — 왜 제균이 모든 환자에게 먼저인가 손상은 면역이 만들지만 면역을 계속 자극하는 항원(남은 사슬알균) 이 인두나 피부에 있을 수 있다 — 그래서 확진된 모든 환자가 선행 감염을 치료할 만큼의 페니실린을 받는다 [[harrison 21: 359장 p.2768]]. 이미 일어난 염증은 항생제로 되돌릴 수 없어 관절·발열은 항염제로, 심부전은 심부전 치료로 다룬다. 어떤 치료도 RHD 로의 진행을 바꾼다고 증명되지 않았다 [[harrison 21: 359장 p.2768]]. 스테로이드는 심부전을 일으키는 중증 심염에서 선택적으로 더할 뿐이다 — 제균을 대신하는 자리가 아니다 [[harrison 21: 359장 p.2769]]. 급성기 뒤 재발 예방(약·간격·기간)은 cn.peds.rheumatic fever.secondary prophylaxis 가 다룬다. 기전 — 사슬알균 항원에서 판막·관절 손상으로 급성 류마티스열(ARF)은 A군 사슬알균 감염에 대한 자가면역 반응으로 생기는 다계통 질환이다. 대부분의 증상은 사라지지만 판막 손상(류마티스 심장병, RHD)만은 남는다 [[harrison 21: 359장 p.2766]]. 감수성이 있는 사람(인구의 약 3–6 %, 유전 소인)에서 M 단백·N 아세틸글루코사민에 대한 항체·T 세포가 판막 내피·심근·활막·기저핵의 비슷한 구조를 함께 인식한다 — 분자 모방. 교차 항체가 판막 내피의 VCAM 1 을 활성화해 림프구를 불러들이고, 파괴된 내피의 라미닌·트로포미오신이 다시 교차 T 세포를 자극해 손상이 넓어진다 [[harrison 21: 359장 p.2767]]. 가르는 소견 — 이동성 관절염·선행 감염 증거 잠복기 : 선행 감염 뒤 약 3주(1–5주). 무도병·완만한 심염은 최대 6개월 뒤 [[harrison 21: 359장 p.2767]]. 이동성 다발관절염 (60–75 %): 큰 관절이 몇 시간~며칠 사이 옮겨 가며 붓고 몹시 아프다. 살리실산에 극적으로 반응하고, 1–2일 넘게 지속되면 ARF 일 가능성이 낮다 [[harrison 21: 359장 p.2767–2768]]. 심염 (50–75 %): 승모판 역류가 특징(때로 대동맥판 역류), 전도로 침범으로 PR 연장·S1 약화 [[harrison 21: 359장 p.2767]]. 선행 감염 증거 : 대부분 인두 배양·신속항원 음성 → ASO·anti DNase B 로 확인 [[harrison 21: 359장 p.2768]]. 발열·ESR·CRP 상승은 부 기준이자 치료 반응 지표. 검사 : 항상 심전도·심초음파(모든 의심 환자)·혈구·CRP·사슬알균 혈청. 상황에 따라 인두·피부 배양, 혈액배양, 관절액, 신기능(NSAID 전) [[harrison 21: 359장 p.2768–2769]]. 감별 : 소아 특발성 관절염(이동성 아님, 만성), 화농성 관절염(한 관절, 관절액 배양), 바이러스 관절염, 감염성 심내막염(혈액배양 양성), 가와사키병(5세 미만, 점막·손발 변화) [[harrison 21: 359장 p.2769]]. 선택 — 제균은 모두, 항염·스테로이드는 증상에 따라 1. 제균 — 모든 확진 환자. 페녹시메틸페니실린 500 mg(≤27 kg 250 mg) 하루 2회 또는 아목시실린 50 mg/kg(최대 1 g) 하루 1회 10일, 또는 벤자틴 페니실린 G 120만 단위(≤27 kg 60만) 1회 근육 [[harrison 21: 359장 p.2768]]. 인두 배양 음성이어도 준다. 2. 항염 — 관절염·발열. 진단 확정 뒤 아스피린 50–60 mg/kg/일(최대 80–100 mg/kg/일)을 4–5회 나누어, 증상이 가라앉으면(대개 2주 안) 50–60 mg/kg/일로 2–4주 더. 이명·구역이 나오면 줄인다. 나프록센 10–20 mg/kg/일이 대안. 심염·무도병에는 효과가 증명되지 않았다 [[harrison 21: 359장 p.2768–2769]]. 3. 심염 — 중증도에 따라. 심부전 치료가 생명을 구할 수 있는 유일한 비대증 치료다. 중증 심염에 프레드니솔론 1–2 mg/kg/일(최대 80 mg)을 수일~3주 쓰는 임상의가 많다(논란) [[harrison 21: 359장 p.2769]]. 4. 무도병. 조용한 환경; 중증이면 카바마제핀·발프로산(할로페리돌보다 선호), 중증·난치면 스테로이드 고려 [[harrison 21: 359장 p.2769]]. 재평가. 염증 지표를 1–2주마다 정상화까지(대개 4–6주), 1개월 뒤 심초음파. 약을 끊은 뒤 3주 안에 열·관절 증상·염증 지표가 다시 올라도 재발이 아니며 살리실산을 잠깐 다시 쓴다. 퇴원 전 2차 예방·등록·교육 계획 [[harrison 21: 359장 p.2769–2770]]. 권고와 예외 제균은 「심염이 있으면」이 아니라 모든 확진 환자에게, 배양 결과와 무관하게. 스테로이드는 제균을 대신하지 못한다 — 중증 심염에서 선택적으로 더할 뿐이다. 살리실산은 진단 확정 뒤 — 먼저 쓰면 이동 양상이 가려져 단관절염처럼 보일 수 있다 [[harrison 21: 359장 p.2768]]. 제균을 벤자틴 1회로 했으면 그것이 2차 예방의 첫 회다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 중증 심염의 스테로이드 — 시험 기준: 심부전을 일으키는 중증 심염에는 스테로이드를 더한다(국시 교과서형 서술) [[harrison 21: 359장 p.2769]] / 다른 기준: 두 메타분석에서 위약·살리실산 대비 심염 결과 개선이 없었고, 해리슨은 사용을 「논란」으로 적는다 [[harrison 21: 359장 p.2769]] / 왜 다른가: 근거 연구가 40년 이상 전이고 현대 약물을 쓰지 않았다 — 효과가 없다는 증명도, 있다는 증명도 약하다 / 시험에서는: KMLE·USMLE 모두 「중증 심염 → 스테로이드 추가」를 고르되, 어떤 경우에도 「스테로이드 단독(제균 없이)」은 오답이다. (심화) 왜 항생제가 이미 생긴 면역 질환에 필요한가 ARF 는 감염 뒤 면역 질환이라 「이제 와서 항생제가 무슨 소용인가」라는 물음이 자연스럽다. 해리슨은 이 점을 분명히 한다 — 어떤 치료도 RHD 진행을 바꾼다고 증명되지 않았고, 심부전 치료 외에는 대증이다 [[harrison 21: 359장 p.2768]]. 그럼에도 제균이 필수인 이유는 두 가지다. ① 인두·피부에 남은 균은 교차 면역을 계속 자극할 항원이자 가족·접촉자에게 옮길 감염원이다. ② 제균은 곧 재발 예방의 출발점이다 — 한 번 감작된 환자는 다음 사슬알균 감염에서 재발 위험이 일반인보다 극적으로 높고, 재발이 판막 손상을 누적시키기 때문이다 [[harrison 21: 359장 p.2770]]. 그래서 급성기 첫 벤자틴 주사와 4주 뒤 두 번째 주사는 하나의 사슬로 이어진다."
   },
   {
    "id": "cn.peds.pyloric-stenosis.preop-resuscitation",
@@ -12936,8 +12970,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/pediatrics/cn.peds.pyloric-stenosis.preop-resuscitation.md",
-   "snippet": "정의 비대유문협착증은 위 출구의 유문 괄약근(윤상근)이 두꺼워지고 길어져 위 내용물이 십이지장으로 넘어가지 못하는 영아의 병이다. 대개 생후 3–6주에 나타나고 남아·첫째 아이에서 흔하다 [[?nelson 22]]. 이 정리본의 목표는 진단이 선 뒤 무엇을 가장 먼저 하는지 — 수술보다 수액·전해질 교정이 먼저라는 순서 — 를 가르는 것이다. 병태생리 정상 유문은 위의 연동이 밀어낸 내용물을 조금씩 십이지장으로 보낸다. 유문근",
-   "text": "Pediatrics 정의 비대유문협착증은 위 출구의 유문 괄약근(윤상근)이 두꺼워지고 길어져 위 내용물이 십이지장으로 넘어가지 못하는 영아의 병이다. 대개 생후 3–6주에 나타나고 남아·첫째 아이에서 흔하다 [[?nelson 22]]. 이 정리본의 목표는 진단이 선 뒤 무엇을 가장 먼저 하는지 — 수술보다 수액·전해질 교정이 먼저라는 순서 — 를 가르는 것이다. 병태생리 정상 유문은 위의 연동이 밀어낸 내용물을 조금씩 십이지장으로 보낸다. 유문근이 비대해지면 통로가 좁고 길어져 위가 배출하지 못하고, 강한 연동으로 위 내용물을 거꾸로 뿜어낸다(분수 구토). 막힌 곳이 담즙이 들어오는 십이지장보다 위쪽이라 토물에 담즙이 없다 [[?nelson 22]]. 산염기 이상은 무엇을 잃느냐에서 나온다. 위액은 HCl 이 주성분이라 반복 구토로 수소 이온과 염화물이 빠지고, 그 대신 위벽세포가 혈액으로 내보낸 중탄산염이 남아 저염소 대사알칼리증 이 된다. 탈수로 레닌 알도스테론이 올라가면 신장은 나트륨을 붙잡는 대신 칼륨과 수소 이온을 소변으로 내보낸다 — 그래서 저칼륨 이 오고, 칼륨·염화물이 바닥나면 알칼리증인데도 소변이 산성이 되는 역설적 산성뇨가 나타난다 [[?nelson 22]]. 염화물이 모자라는 한 신장은 중탄산염을 버리지 못하므로, 알칼리증을 푸는 열쇠는 염화물(식염수)과 칼륨을 채우는 것 이다. 기전에서 소견으로 담즙 없는 분수 구토, 토한 뒤 배고파함 : 폐쇄가 위 출구에 있고 영아 자체는 배가 고프다. 체중 감소·핍뇨·함몰 숫구멍·빈맥·BUN 상승 : 수분 소실 — 탈수의 정도가 첫 처치의 긴급도를 정한다. 저염소·저칼륨 대사알칼리증(HCO₃⁻↑, pH↑) : 위 HCl 소실 + 알도스테론 효과. 올리브 모양 덩이·위 연동파 : 비대한 유문근과 막힌 위의 움직임 — 초음파 시대에는 만져지기 전에 진단되는 일이 많다 [[?nelson 22]]. 감별 담즙성 구토면 장회전이상·중장염전을 먼저 배제한다 — 이것이 진짜 외과 응급이다. 위식도역류(힘 없는 역류, 체중 증가 유지), 과식, 선천부신과형성증의 염분 소실형(저나트륨· 고칼륨 ·산증 — 방향이 반대), 감염(요로감염·패혈증)을 가른다 [[?nelson 22]]. 검사 초음파가 1차 진단 검사다 — 유문근 두께·길이 증가와 위 내용 정체를 본다. 조영검사는 초음파가 결론을 내지 못할 때 쓴다(가늘고 긴 유문관, string sign). 전해질·혈액가스·BUN·크레아티닌·혈당으로 탈수와 알칼리증 정도를 잰다 [[?nelson 22]]. 치료 1. 수액·전해질 교정 — 모든 환자, 가장 먼저. 중등도 이상 탈수면 0.9 % 식염수 볼루스(20 mL/kg)로 순환을 회복한다. 이어 포도당이 든 식염수를 유지 속도보다 조금 많이 주고, 소변이 나오면 염화칼륨을 섞는다 [[?holcomb 7]]. 2. 유문근절개술 — 교정 뒤. 복강경 또는 개복으로 비대한 근육층만 세로로 갈라 점막을 부풀게 한다. 수술 뒤 수 시간 안에 수유를 다시 시작한다 [[?holcomb 7]]. 반응 확인·재평가. 소변량 회복과 전해질(염화물·중탄산염·칼륨)을 반복 측정해 기준에 들어오면(대개 24–48시간) 수술한다. 알칼리증이 남은 채 마취하면 호흡 보상(저환기)이 겹쳐 수술 뒤 무호흡이 오므로, 수치가 들어오기 전에는 수술하지 않는다 [[?holcomb 7]]. 권고와 예외 「가장 먼저」는 수액이다 — 비대유문협착증은 내과적 응급이고 외과적 응급이 아니다. 초음파로 확진되면 조영검사는 필요 없다. 초음파가 불확실할 때만 조영검사. 칼륨은 소변 확인 뒤 유지 수액에 섞는다. 비위관은 일상적이지 않다 — 팽만·흡인 위험이 클 때만. (심화) 왜 알칼리증이 마취를 위험하게 하나 대사알칼리증이 있으면 호흡 중추는 이산화탄소를 붙잡아 pH 를 낮추려고 환기를 줄인다. 여기에 마취제·아편유사제의 호흡 억제가 겹치면, 영아의 미숙한 호흡 조절이 버티지 못해 수술 뒤 무호흡이 온다. 또 뇌척수액의 알칼리화는 수 시간 늦게 풀리므로 혈중 수치가 좋아져도 곧바로 안전하지 않다. 그래서 교정은 「수술 직전에 한 번 맞추는 것」이 아니라 충분한 시간을 두고 염화물과 칼륨을 채우는 과정 이다 [[?holcomb 7]]."
+   "snippet": "판단 — 왜 수액·전해질 교정이 먼저인가 비대유문협착증은 내과적 응급(탈수·전해질)이고 외과적 응급이 아니다 — 진단이 섰을 때 「가장 먼저」는 순환 회복이다 [[?holcomb 7]]. 알칼리증이 남은 채 마취하면 호흡 보상(저환기)이 겹쳐 수술 뒤 무호흡이 오고, 저칼륨은 부정맥을 부른다 — 그래서 수술은 교정 뒤다 [[?holcomb 7]]. 초음파로 확진되면 조영검사는 필요 없다. 위장관운동촉진제는 기계적 폐쇄에 무효하",
+   "text": "Pediatrics 판단 — 왜 수액·전해질 교정이 먼저인가 비대유문협착증은 내과적 응급(탈수·전해질)이고 외과적 응급이 아니다 — 진단이 섰을 때 「가장 먼저」는 순환 회복이다 [[?holcomb 7]]. 알칼리증이 남은 채 마취하면 호흡 보상(저환기)이 겹쳐 수술 뒤 무호흡이 오고, 저칼륨은 부정맥을 부른다 — 그래서 수술은 교정 뒤다 [[?holcomb 7]]. 초음파로 확진되면 조영검사는 필요 없다. 위장관운동촉진제는 기계적 폐쇄에 무효하고, 비위관은 위액(HCl) 소실을 늘린다. 기전 — 위산 소실에서 저염소·저칼륨 알칼리증으로 정상 유문은 위 내용물을 조금씩 십이지장으로 보낸다. 유문 괄약근(윤상근)이 두꺼워지고 길어지면 위가 배출하지 못하고 강한 연동으로 거꾸로 뿜어낸다(분수 구토). 막힌 곳이 담즙이 들어오는 곳보다 위라 토물에 담즙이 없다. 대개 생후 3–6주, 남아·첫째 아이에서 흔하다 [[?nelson 22]]. 위액은 HCl 이 주성분 → 수소 이온·염화물이 빠지고 위벽세포가 내보낸 중탄산염이 남아 저염소 대사알칼리증 . 탈수 → 레닌 알도스테론 상승 → 신장이 나트륨을 붙잡는 대가로 칼륨·수소 이온을 버려 저칼륨 , 바닥나면 역설적 산성뇨 [[?nelson 22]]. 염화물이 모자라는 한 신장은 중탄산염을 버리지 못한다 — 알칼리증을 푸는 열쇠는 염화물(식염수)과 칼륨 이다. 가르는 소견 — 담즙·초음파·전해질 방향 담즙 없는 분수 구토, 토한 뒤 배고파함 : 폐쇄가 위 출구에 있고 영아는 배가 고프다. 담즙성이면 장회전이상·중장염전을 먼저 배제한다 — 이것이 진짜 외과 응급이다 [[?nelson 22]]. 초음파가 1차 진단 검사 : 유문근 두께·길이 증가와 위 내용 정체. 결론을 못 내면 조영검사(가늘고 긴 유문관, string sign) [[?nelson 22]]. 체중 감소·핍뇨·함몰 숫구멍·빈맥·BUN 상승 : 탈수의 정도가 첫 처치의 긴급도를 정한다. 전해질·혈액가스·BUN·크레아티닌·혈당으로 잰다. 올리브 모양 덩이·위 연동파 : 초음파 시대에는 만져지기 전에 진단되는 일이 많다 [[?nelson 22]]. 다른 구토와 방향이 다르다: 위식도역류(힘 없는 역류, 체중 증가 유지)·과식·감염(요로감염·패혈증), 선천부신과형성증 염분 소실형은 저나트륨· 고칼륨 ·산증으로 반대 방향이다 [[?nelson 22]]. 선택 — 교정 뒤 유문근절개술 1. 수액·전해질 교정 — 모든 환자, 가장 먼저. 중등도 이상 탈수면 0.9 % 식염수 볼루스(20 mL/kg), 이어 포도당이 든 식염수를 유지 속도보다 조금 많이, 소변이 나오면 염화칼륨 [[?holcomb 7]]. 재평가. 소변량과 염화물·중탄산염·칼륨을 반복 측정해 기준에 들어오면(대개 24–48시간) 수술한다 [[?holcomb 7]]. 2. 유문근절개술 — 교정 뒤. 복강경 또는 개복으로 비대한 근육층만 세로로 갈라 점막을 부풀게 한다. 수술 뒤 수 시간 안에 수유 재개 [[?holcomb 7]]. 권고와 예외 「가장 먼저」는 수액이다 — 전해질이 이미 정상이고 탈수가 없으면 곧바로 수술 일정을 잡는다. 초음파로 확진되면 조영검사는 필요 없다. 초음파가 불확실할 때만 조영검사. 칼륨은 소변 확인 뒤 유지 수액에 섞는다. 비위관은 일상적이지 않다 — 팽만·흡인 위험이 클 때만. (심화) 왜 알칼리증이 마취를 위험하게 하나 대사알칼리증이 있으면 호흡 중추는 이산화탄소를 붙잡아 pH 를 낮추려고 환기를 줄인다. 여기에 마취제·아편유사제의 호흡 억제가 겹치면, 영아의 미숙한 호흡 조절이 버티지 못해 수술 뒤 무호흡이 온다. 또 뇌척수액의 알칼리화는 수 시간 늦게 풀리므로 혈중 수치가 좋아져도 곧바로 안전하지 않다. 그래서 교정은 「수술 직전에 한 번 맞추는 것」이 아니라 충분한 시간을 두고 염화물과 칼륨을 채우는 과정 이다 [[?holcomb 7]]."
   },
   {
    "id": "cn.peds.kawasaki.acute-ivig",
