@@ -1,9 +1,8 @@
 {
- "started": "2026-10-10T10:08:28+09:00",
+ "started": "2026-10-11T09:20:34+09:00",
  "built": [
   "소아청소년과",
-  "혈액종양내과",
-  "소화기내과"
+  "류마티스내과"
  ],
  "skipped": [
   "응급의학과",
@@ -15,9 +14,10 @@
   "외과",
   "산부인과",
   "정신건강의학과",
-  "류마티스내과",
+  "혈액종양내과",
   "호흡기내과",
   "감염내과",
+  "소화기내과",
   "알레르기내과",
   "기초의학",
   "신장내과",
@@ -29,15 +29,11 @@
  "previews": [],
  "validation": {
   "소아청소년과": [],
-  "혈액종양내과": [],
-  "소화기내과": []
+  "류마티스내과": []
  },
  "notes": {
   "소아청소년과": [],
-  "혈액종양내과": [
-   "배치 탐색 뒤에도 남은 빈 공간: 8쪽 오른쪽 단 아래가 비어 있다(빈 공간 42%)"
-  ],
-  "소화기내과": []
+  "류마티스내과": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -51,76 +47,63 @@
  ],
  "layout_trials": {
   "소아청소년과": {
-   "tried": 152,
+   "tried": 117,
    "diagram_after_section": {
     "u-cn-peds-biliary-atresia-cholestasis-workup": 16,
     "u-cn-peds-biliary-atresia-cholestasis-workup#shrink": 1.0,
     "u-cn-peds-biliary-atresia-cholestasis-workup#pad": 0,
     "u-cn-peds-biliary-atresia-cholestasis-workup#col": true,
-    "u-cn-peds-pertussis-infant-macrolide-choice": 9,
+    "u-cn-peds-pertussis-infant-macrolide-choice": 10,
     "u-cn-peds-pertussis-infant-macrolide-choice#shrink": 1.0,
     "u-cn-peds-pertussis-infant-macrolide-choice#pad": 0,
     "u-cn-peds-pertussis-infant-macrolide-choice#col": false,
-    "u-cn-peds-kawasaki-acute-ivig": 15,
-    "u-cn-peds-kawasaki-acute-ivig#shrink": 1.0,
-    "u-cn-peds-kawasaki-acute-ivig#pad": 0,
-    "u-cn-peds-kawasaki-acute-ivig#col": false,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": 20,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis": 15,
     "u-cn-peds-rheumatic-fever-secondary-prophylaxis#shrink": 1.0,
-    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#pad": 28,
+    "u-cn-peds-rheumatic-fever-secondary-prophylaxis#pad": 0,
     "u-cn-peds-rheumatic-fever-secondary-prophylaxis#col": false,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics": 13,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#shrink": 1.0,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#pad": 0,
-    "u-cn-peds-stec-hus-supportive-no-antibiotics#col": true,
-    "u-cn-peds-febrile-uti-imaging-workup": 14,
-    "u-cn-peds-febrile-uti-imaging-workup#shrink": 0.88,
-    "u-cn-peds-febrile-uti-imaging-workup#pad": 0,
-    "u-cn-peds-febrile-uti-imaging-workup#col": false
+    "u-cn-peds-rheumatic-fever-acute-eradication": 20,
+    "u-cn-peds-rheumatic-fever-acute-eradication#shrink": 1.0,
+    "u-cn-peds-rheumatic-fever-acute-eradication#pad": 0,
+    "u-cn-peds-rheumatic-fever-acute-eradication#col": true,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation": 15,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#shrink": 1.0,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#pad": 0,
+    "u-cn-peds-pyloric-stenosis-preop-resuscitation#col": true
    }
   },
-  "혈액종양내과": {
-   "tried": 91,
+  "류마티스내과": {
+   "tried": 272,
    "diagram_after_section": {
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo": 15,
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#shrink": 1.0,
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#pad": 28,
-    "u-cn-onc-her2-breast-cancer-trastuzumab-baseline-echo#col": false,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes": 17,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#shrink": 1.0,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#pad": 0,
-    "u-cn-path-testicular-tumor-ihc-seminoma-septal-lymphocytes#col": true,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis": 7,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#shrink": 1.0,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#pad": 0,
-    "u-cn-neuro-glioblastoma-ring-enhancing-diagnosis#col": false,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#fig:f1": 8,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin": 20,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#shrink": 1.0,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#pad": 0,
-    "u-cn-path-ihc-lineage-markers-gata3-breast-urothelial-origin#col": true
-   }
-  },
-  "소화기내과": {
-   "tried": 56,
-   "diagram_after_section": {
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis": 14,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#shrink": 1.0,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#pad": 0,
-    "u-cn-gi-crohn-disease-distribution-histology-diagnosis#col": true,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage": 12,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#shrink": 1.0,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#pad": 28,
-    "u-cn-gs-diverticular-abscess-percutaneous-drainage#col": false,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism": 11,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#shrink": 1.0,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#pad": 0,
-    "u-cn-gi-acetaminophen-toxicity-nac-mechanism#col": false
+    "u-cn-rheum-sle-mild-disease-hydroxychloroquine": 16,
+    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#shrink": 1.0,
+    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#pad": 0,
+    "u-cn-rheum-sle-mild-disease-hydroxychloroquine#col": false,
+    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor": 9,
+    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#shrink": 1.0,
+    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#pad": 0,
+    "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#col": false,
+    "u-cn-rheum-axial-spa-nsaid-failure-biologic#figscale:f1": 0.85,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy": 18,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#shrink": 1.0,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#pad": 0,
+    "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#col": false,
+    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis": 20,
+    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#shrink": 1.0,
+    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#pad": 0,
+    "u-cn-rheum-polyarteritis-nodosa-tissue-diagnosis#col": false,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition": 9,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#shrink": 1.0,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#pad": 0,
+    "u-cn-pharm-thiopurine-interaction-xanthine-oxidase-inhibition#col": false,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies": 15,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#shrink": 1.0,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#pad": 14,
+    "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-10T10:18:43+09:00",
+ "finished": "2026-10-11T09:45:59+09:00",
  "upload": {
   "result": "ok",
   "items": {
@@ -129,33 +112,25 @@
     "status": "uploaded",
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
     "kept_id": true,
-    "md5": "70fee344dd1234c096ba23dc04d5e443",
-    "archive": "MedKOS_학습서_소아청소년과_v14_2026-10-10.pdf"
+    "md5": "ca37dcd6f95fe806c1d705f2c135c70b",
+    "archive": "MedKOS_학습서_소아청소년과_v15_2026-10-11.pdf"
    },
-   "혈액종양내과": {
-    "file": "MedKOS_학습서_혈액종양내과.pdf",
+   "류마티스내과": {
+    "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
-    "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
+    "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "89f8d91c16352d8daafe08a738634326",
-    "archive": "MedKOS_학습서_혈액종양내과_v8_2026-10-10.pdf"
-   },
-   "소화기내과": {
-    "file": "MedKOS_학습서_소화기내과.pdf",
-    "status": "uploaded",
-    "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "kept_id": true,
-    "md5": "6880b0df7ac07cba5fbaaf02dd9c3357",
-    "archive": "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf"
+    "md5": "ed812208fb2c8eb803a717c010d1476d",
+    "archive": "MedKOS_학습서_류마티스내과_v17_2026-10-11.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "46985797b4c4b66c489b57a1f9dfd321"
+    "md5": "dcbc2a8761cfca246401a77692a3b822"
    }
   },
-  "at": "2026-10-10T10:18:43+09:00"
+  "at": "2026-10-11T09:45:59+09:00"
  }
 }
