@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3565,
+  "total": 3575,
   "byType": {
    "kmle": 1376,
    "anatomy": 838,
+   "imaging": 309,
    "concept": 98,
    "paper": 751,
-   "imaging": 299,
    "usmle": 186,
    "ailab": 14,
    "basic": 3
@@ -38,26 +38,26 @@ window.MEDKOS_INDEX = {
    "Surgery": 88,
    "Hematology": 83,
    "Laboratory Medicine": 75,
-   "산부인과": 50,
-   "순환기": 28,
+   "산부인과": 51,
+   "순환기": 29,
    "Physiology": 21,
-   "소화기": 19,
-   "호흡기": 19,
+   "소화기": 20,
+   "호흡기": 20,
    "소아과": 17,
    "Pharmacology": 16,
    "Biochemistry": 15,
    "Microbiology": 14,
    "감염": 14,
+   "내분비": 14,
    "병리·조직학": 14,
+   "신경": 14,
    "응급·중환자": 14,
-   "내분비": 13,
-   "신경": 13,
+   "혈액·종양": 14,
    "신장·비뇨기": 13,
-   "혈액·종양": 13,
+   "예방의학·역학": 12,
+   "외과": 12,
+   "피부과": 12,
    "Internal Medicine": 11,
-   "예방의학·역학": 11,
-   "외과": 11,
-   "피부과": 11,
    "Immunology": 10,
    "근골격·류마티스": 8,
    "약리": 8,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2463,
+   "high": 2473,
    "medium": 1052,
    "low": 50
   },
-  "tagCount": 4699
+  "tagCount": 4700
  },
  "docs": [
   {
@@ -706,6 +706,180 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-12.md",
    "snippet": "오늘의 학습 (2026 10 12 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 32일 · Tagging 2까지 7일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-12 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 12 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 32일 · Tagging 2까지 7일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "imaging-2026-0310",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학 — 새 치료제 도입 뒤의 질병 빈도 지표",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0310.md",
+   "snippet": "A 52 year old woman who works as a public health officer reviews registry data for a chronic autoimmune disease in her country. For the past decade, the incidence has remained stable at 20 new cases per 100,000 persons per year. Before a ne",
+   "text": "예방의학·역학 예방의학 — 새 치료제 도입 뒤의 질병 빈도 지표 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e A 52 year old woman who works as a public health officer reviews registry data for a chronic autoimmune disease in her country. For the past decade, the incidence has remained stable at 20 new cases per 100,000 persons per year. Before a new disease modifying drug became available, patients lived an average of 4 years after diagnosis. The drug does not cure the disease, but it extends average survival after diagnosis to 10 years, and it is rapidly adopted nationwide. Risk factors for the disease and diagnostic criteria do not change, and the population size remains constant. Which of the following best describes the expected incidence and prevalence once a new steady state is reached? A. Incidence falls; prevalence stays at about 80 per 100,000 B. Incidence rises to 50 per 100,000 per year; prevalence stays at about 80 per 100,000 C. Incidence and prevalence both unchanged because the disease is not cured D. Incidence unchanged; prevalence rises from about 80 to about 200 per 100,000 E. Incidence unchanged; prevalence falls from about 200 to about 80 per 100,000"
+  },
+  {
+   "id": "imaging-2026-0309",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 머리 외상 뒤 다뇨",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0309.md",
+   "snippet": "34세 여자가 3주 전 교통사고로 머리를 다친 뒤부터 소변이 많아지고 목이 말라 하루 6 L 이상 물을 마신다며 왔다. 정신과 약이나 리튬을 먹은 적은 없다. 혈압 118/74 mmHg, 맥박 82회/분이다. 혈청 나트륨 147 mmol/L, 칼륨 4.1 mmol/L, 칼슘 9.2 mg/dL, 포도당 92 mg/dL, 혈장 삼투압 302 mOsm/kg, 소변 삼투압 110 mOsm/kg 이다. 수분 제한 검사에서 체중이 3 %",
+   "text": "내분비 내분비·대사 — 머리 외상 뒤 다뇨 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e 34세 여자가 3주 전 교통사고로 머리를 다친 뒤부터 소변이 많아지고 목이 말라 하루 6 L 이상 물을 마신다며 왔다. 정신과 약이나 리튬을 먹은 적은 없다. 혈압 118/74 mmHg, 맥박 82회/분이다. 혈청 나트륨 147 mmol/L, 칼륨 4.1 mmol/L, 칼슘 9.2 mg/dL, 포도당 92 mg/dL, 혈장 삼투압 302 mOsm/kg, 소변 삼투압 110 mOsm/kg 이다. 수분 제한 검사에서 체중이 3 % 줄고 혈장 삼투압이 308 mOsm/kg 이 될 때까지 소변 삼투압은 130 mOsm/kg 에 머물렀고, 이어서 데스모프레신을 피하 주사하자 2시간 뒤 소변 삼투압이 480 mOsm/kg 으로 올랐다. 가장 적절한 치료는? A. 데스모프레신 투여 B. 히드로클로로티아지드 투여 C. 하루 물 섭취를 1.5 L 로 제한 D. 저염식과 아밀로라이드 투여 E. 3 % 고장성 식염수 투여"
+  },
+  {
+   "id": "imaging-2026-0308",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 목욕 뒤 가려움과 두통",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0308.md",
+   "snippet": "A 58 year old man comes to the physician because of headaches and itching after hot showers for 4 months. He does not smoke and has no history of lung disease or snoring. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure i",
+   "text": "혈액·종양 혈액·종양 — 목욕 뒤 가려움과 두통 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e A 58 year old man comes to the physician because of headaches and itching after hot showers for 4 months. He does not smoke and has no history of lung disease or snoring. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure is 148/90 mm Hg. His face is ruddy. The spleen tip is palpable 3 cm below the left costal margin. Oxygen saturation is 98% on room air. Hemoglobin concentration is 19.4 g/dL, hematocrit is 58%, leukocyte count is 13,200/mm3 with a normal differential and no immature cells, and platelet count is 520,000/mm3. Serum erythropoietin concentration is 2 mU/mL (N = 4 26). Which of the following is the most appropriate next step in diagnosis? A. Testing for the BCR::ABL1 fusion gene B. Overnight polysomnography C. Abdominal CT for an erythropoietin secreting tumor D. Measurement of blood carboxyhemoglobin E. Testing for the JAK2 V617F mutation"
+  },
+  {
+   "id": "imaging-2026-0307",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 일과성 허혈발작 뒤의 처치",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0307.md",
+   "snippet": "68세 남자가 3일 전 15분 동안 오른손에 힘이 빠지고 말이 어눌해졌다가 저절로 완전히 회복되어 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있으며, 하루 1갑씩 40년 동안 담배를 피웠다. 혈압 146/88 mmHg, 맥박 72회/분(규칙적)이다. 신경학적 진찰에서 이상은 없다. 왼쪽 목에서 잡음이 들린다. 뇌 MRI 확산강조영상에서 급성 경색은 없다. 경동맥 초음파와 CT 혈관조영술에서 왼쪽 속목동맥 기시부가 80 % 좁아",
+   "text": "신경 신경 — 일과성 허혈발작 뒤의 처치 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e 68세 남자가 3일 전 15분 동안 오른손에 힘이 빠지고 말이 어눌해졌다가 저절로 완전히 회복되어 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있으며, 하루 1갑씩 40년 동안 담배를 피웠다. 혈압 146/88 mmHg, 맥박 72회/분(규칙적)이다. 신경학적 진찰에서 이상은 없다. 왼쪽 목에서 잡음이 들린다. 뇌 MRI 확산강조영상에서 급성 경색은 없다. 경동맥 초음파와 CT 혈관조영술에서 왼쪽 속목동맥 기시부가 80 % 좁아져 있고 오른쪽 속목동맥은 30 % 좁아져 있다. 24시간 심전도 감시에서 심방세동은 없었다. 아스피린과 고강도 스타틴을 시작하였다. 다음 처치로 가장 적절한 것은? A. 정맥 알테플라제 투여 B. 약물 치료 유지, 6개월 뒤 초음파 추적 C. 양쪽 경동맥 내막절제술 D. 2주 이내 왼쪽 경동맥 내막절제술 E. 와파린 항응고 치료"
+  },
+  {
+   "id": "imaging-2026-0306",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 젊은 남성의 고콜레스테롤혈증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0306.md",
+   "snippet": "A 32 year old man comes to the physician for a routine health maintenance examination. He feels well. His father had a myocardial infarction at the age of 46 years. He does not smoke and exercises regularly. He takes no medications. Blood p",
+   "text": "순환기 순환기 — 젊은 남성의 고콜레스테롤혈증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e A 32 year old man comes to the physician for a routine health maintenance examination. He feels well. His father had a myocardial infarction at the age of 46 years. He does not smoke and exercises regularly. He takes no medications. Blood pressure is 118/74 mm Hg, and BMI is 23 kg/m2. Firm yellow nodules are palpable along both Achilles tendons. Fasting serum studies show total cholesterol 298 mg/dL, LDL cholesterol 224 mg/dL, HDL cholesterol 48 mg/dL, triglycerides 112 mg/dL, glucose 88 mg/dL, and thyroid stimulating hormone 1.8 μU/mL. Urinalysis shows no protein. His estimated 10 year risk of atherosclerotic cardiovascular disease is less than 5%. Which of the following is the most appropriate next step in management? A. Recommend lifestyle changes and repeat the lipid panel in 1 year B. Begin ezetimibe monotherapy C. Begin fenofibrate therapy D. Begin PCSK9 inhibitor monotherapy E. Begin high intensity statin therapy"
+  },
+  {
+   "id": "imaging-2026-0305",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 아토피피부염 아이의 열과 발진",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0305.md",
+   "snippet": "6세 남아가 2일 전부터 얼굴과 목에 생긴 아픈 발진과 열로 왔다. 생후 6개월부터 아토피피부염이 있어 보습제와 국소 스테로이드를 써 왔고, 최근 1주일 동안 목 부위 습진이 심해졌다. 어머니가 3일 전 입술에 물집이 생겼었다. 체온 38.6 °C, 맥박 118회/분이다. 습진이 있던 얼굴과 목에 지름 2~3 mm 의 고르게 생긴 둥글고 움푹 파인 미란이 무리지어 있고 일부는 출혈성 가피로 덮여 있다. 노란 꿀색 가피는 없다.",
+   "text": "피부과 피부 — 아토피피부염 아이의 열과 발진 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e 6세 남아가 2일 전부터 얼굴과 목에 생긴 아픈 발진과 열로 왔다. 생후 6개월부터 아토피피부염이 있어 보습제와 국소 스테로이드를 써 왔고, 최근 1주일 동안 목 부위 습진이 심해졌다. 어머니가 3일 전 입술에 물집이 생겼었다. 체온 38.6 °C, 맥박 118회/분이다. 습진이 있던 얼굴과 목에 지름 2~3 mm 의 고르게 생긴 둥글고 움푹 파인 미란이 무리지어 있고 일부는 출혈성 가피로 덮여 있다. 노란 꿀색 가피는 없다. 눈꺼풀과 결막은 정상이다. 미란 바닥을 긁어 만든 Tzanck 도말에서 다핵거대세포가 보인다. 가장 적절한 치료는? A. 경구 프레드니솔론 투여 B. 국소 무피로신 단독 도포 C. 아시클로버 투여 D. 국소 스테로이드 강도 상향 E. 경구 세팔렉신 단독 투여"
+  },
+  {
+   "id": "imaging-2026-0304",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 젊은 여성의 검진 유방 초음파 종괴",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0304.md",
+   "snippet": "21세 여자가 입사 건강검진에서 시행한 유방 초음파에서 오른쪽 유방의 종괴가 발견되어 왔다. 통증이나 유두 분비물은 없고 스스로 만져 본 적도 없다. 월경은 규칙적이고 복용하는 약은 없다. 가족 중 유방암 환자는 없다. 진찰에서 양쪽 유방의 피부 변화는 없고 뚜렷한 종괴가 만져지지 않으며 겨드랑이 림프절도 만져지지 않는다. 오른쪽 유방 초음파 사진은 그림과 같다. 가장 가능성 높은 진단은? A. 침윤성 유관암종 B. 유관내 유",
+   "text": "외과 외과계 — 젊은 여성의 검진 유방 초음파 종괴 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e 21세 여자가 입사 건강검진에서 시행한 유방 초음파에서 오른쪽 유방의 종괴가 발견되어 왔다. 통증이나 유두 분비물은 없고 스스로 만져 본 적도 없다. 월경은 규칙적이고 복용하는 약은 없다. 가족 중 유방암 환자는 없다. 진찰에서 양쪽 유방의 피부 변화는 없고 뚜렷한 종괴가 만져지지 않으며 겨드랑이 림프절도 만져지지 않는다. 오른쪽 유방 초음파 사진은 그림과 같다. 가장 가능성 높은 진단은? A. 침윤성 유관암종 B. 유관내 유두종 C. 섬유샘종 D. 단순 낭종 E. 엽상종양"
+  },
+  {
+   "id": "imaging-2026-0303",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 췌장 샘꽈리세포의 효소원과 활성화",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0303.md",
+   "snippet": "A 63 year old man undergoes pancreaticoduodenectomy for a 3 cm mass in the head of the pancreas found during evaluation of a 2 year history of recurrent epigastric pain, a 9 kg weight loss, and greasy, foul smelling stools. He has drunk 6 t",
+   "text": "소화기 소화기·간담췌 — 췌장 샘꽈리세포의 효소원과 활성화 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e A 63 year old man undergoes pancreaticoduodenectomy for a 3 cm mass in the head of the pancreas found during evaluation of a 2 year history of recurrent epigastric pain, a 9 kg weight loss, and greasy, foul smelling stools. He has drunk 6 to 8 cans of beer daily for 30 years. CT had shown multiple calcifications throughout the pancreas and a dilated main pancreatic duct. Histologic examination of the resected specimen shows chronic pancreatitis without malignancy. A photomicrograph of a section of the pancreas stained by immunohistochemistry with an antibody against the zymogen whose premature activation within the gland initiates pancreatitis is shown. Which of the following normally converts this protein to its active form? A. Pepsin secreted by gastric chief cells B. Enteropeptidase on the duodenal brush border C. Cholecystokinin released from duodenal I cells D. Hydrochloric acid secreted by gastric parietal cells E. Bile salts released from the gallbladder"
+  },
+  {
+   "id": "imaging-2026-0302",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 분만 중 태아심박동 기록의 판독과 처치",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0302.md",
+   "snippet": "A 38 year old nulliparous woman at 40 weeks' gestation is admitted to the labor and delivery unit in spontaneous labor. Her pregnancy has been uncomplicated. She has not received any analgesic, sedative, or other medication. Temperature is ",
+   "text": "산부인과 산과 — 분만 중 태아심박동 기록의 판독과 처치 opendata usmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e A 38 year old nulliparous woman at 40 weeks' gestation is admitted to the labor and delivery unit in spontaneous labor. Her pregnancy has been uncomplicated. She has not received any analgesic, sedative, or other medication. Temperature is 36.9°C (98.4°F), pulse is 84/min, and blood pressure is 122/76 mm Hg. Contractions are palpable every 2 to 3 minutes. The cervix is 6 cm dilated and 90% effaced, and the fetal vertex is at 0 station; the membranes are intact. Continuous external fetal heart rate monitoring has shown the same pattern for the past 40 minutes; a representative 10 minute segment of the cardiotocogram is shown. Which of the following is the most appropriate next step in management? A. Digital stimulation of the fetal scalp B. Immediate cesarean delivery C. Continued routine monitoring with no other action D. Initiation of oxytocin infusion E. Transcervical amnioinfusion"
+  },
+  {
+   "id": "imaging-2026-0301",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 흉부 둔상 다음 날의 숨참",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+   "confidence": "high",
+   "date": "2026-10-11",
+   "path": "content/imaging/2026/imaging-2026-0301.md",
+   "snippet": "52세 남자가 하루 전 사다리에서 떨어져 오른쪽 가슴을 부딪친 뒤 오른쪽 가슴 통증과 숨참이 점점 심해져 응급실에 왔다. 혈압 128/80 mmHg, 맥박 98회/분, 호흡 22회/분, 체온 36.8 °C, 산소포화도 94 %(실내 공기)이다. 기관은 가운데에 있고 목정맥 확장은 없다. 오른쪽 아래 갈비뼈 부위에 압통이 있고, 오른쪽 위쪽 가슴은 타진에 과공명, 아래쪽은 둔탁하며 오른쪽 호흡음이 감소하였다. 혈색소는 12.1 ",
+   "text": "호흡기 호흡기 — 흉부 둔상 다음 날의 숨참 opendata kmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e 52세 남자가 하루 전 사다리에서 떨어져 오른쪽 가슴을 부딪친 뒤 오른쪽 가슴 통증과 숨참이 점점 심해져 응급실에 왔다. 혈압 128/80 mmHg, 맥박 98회/분, 호흡 22회/분, 체온 36.8 °C, 산소포화도 94 %(실내 공기)이다. 기관은 가운데에 있고 목정맥 확장은 없다. 오른쪽 아래 갈비뼈 부위에 압통이 있고, 오른쪽 위쪽 가슴은 타진에 과공명, 아래쪽은 둔탁하며 오른쪽 호흡음이 감소하였다. 혈색소는 12.1 g/dL 이다. 선 자세에서 찍은 흉부 X선 사진은 그림과 같다. 진단은? A. 오른쪽 폐좌상 B. 오른쪽 혈기흉 C. 오른쪽 단순 혈흉 D. 오른쪽 긴장성 기흉 E. 오른쪽 외상성 가로막 탈장"
   },
   {
    "id": "cn.rheum.rheumatoid-arthritis.methotrexate-anchor",

@@ -2,6 +2,1330 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0304",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "외과계 — 젊은 여성의 검진 유방 초음파 종괴",
+  "type": "외과계 — 젊은 여성의 검진 유방 초음파 종괴",
+  "modality": "US",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-11",
+  "vignette": "21세 여자가 입사 건강검진에서 시행한 유방 초음파에서 오른쪽 유방의 종괴가 발견되어 왔다. 통증이나 유두 분비물은 없고 스스로 만져 본 적도 없다. 월경은 규칙적이고 복용하는 약은 없다. 가족 중 유방암 환자는 없다. 진찰에서 양쪽 유방의 피부 변화는 없고 뚜렷한 종괴가 만져지지 않으며 겨드랑이 림프절도 만져지지 않는다. 오른쪽 유방 초음파 사진은 그림과 같다.",
+  "question": "가장 가능성 높은 진단은?",
+  "options": [
+   "침윤성 유관암종",
+   "유관내 유두종",
+   "섬유샘종",
+   "단순 낭종",
+   "엽상종양"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 초음파에서 피부와 평행한(가로가 세로보다 긴) 작은 타원형 종괴가 있고, 외곽이 매끈하고 명확하며 내부는 균일한 저에코이고 후방 음향 변화가 없다. 무에코가 아닌 고형 종괴이면서 양성 모양(타원·평행·외곽 명확)을 모두 갖추었고, 21세 무증상 여성이므로 섬유샘종이 가장 가능성 높다(BI-RADS 3).\n- 원리: <b>왜 모양이 양성·악성을 가르는가</b>: 섬유샘종은 샘과 기질이 함께 자라는 양성 종양으로 주변 조직을 밀어내며 자란다. 그래서 피막처럼 매끈한 경계를 만들고, 유방 조직의 층을 따라 옆으로 자라 피부와 평행한 타원이 된다. 반대로 암은 주변 조직을 파고들며 자라 경계가 각지거나 침상이 되고, 조직면을 가로질러 세로로 자라 「키가 큰(비평행)」 모양과 뒤쪽 음영(섬유화 반응)을 만든다.<br> <b>왜 낭종이 아닌가</b>: 단순 낭종은 액체라 초음파가 반사 없이 지나가므로 내부가 완전히 검고(무에코) 뒤쪽이 밝아진다(후방 증강). 이 종괴는 내부 에코가 있는 고형이다.<br> <b>처치로 이어지는 의미</b>: 전형적인 섬유샘종 모양(BI-RADS 3)은 악성 가능성이 2 % 이하라 6개월 뒤 추적 초음파로 크기 변화를 보며, 커지거나 환자가 원하면 중심부 바늘생검을 한다. 30세 미만에서는 유방촬영술보다 초음파가 일차 검사다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">섬유샘종(정답)</th><th>엽상종양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>호발 나이</td><td><b>15~35세</b></td><td><b>40~50대</b></td></tr> <tr><td>크기·성장</td><td>대개 2~3 cm 이하, 성장 느리거나 멈춤</td><td>흔히 큼, 몇 주~몇 달 사이 빠르게 커짐</td></tr> <tr><td>초음파</td><td>작은 타원, 균일한 저에코, 외곽 명확</td><td>크고 분엽상, 내부에 갈라진 틈·낭성 공간</td></tr> </tbody></table> 두 질환 모두 경계가 명확한 섬유상피 종양이다 — 나이, 크기, 빠른 성장 여부와 내부 갈라진 틈이 가른다.\n- 오답 이유:\n  - ① 침윤성 유관암종은 경계가 각지거나 침상이고 세로로 긴(비평행) 모양에 뒤쪽 음영을 보일 때 의심한다. 이 종괴는 평행한 타원에 외곽이 명확하다.\n  - ② 유관내 유두종은 피 섞인 유두 분비물과 함께 확장된 유관 안의 고형 결절로 보일 때 의심한다. 이 환자는 분비물이 없고 종괴가 유관 밖에 있다.\n  - ④ 단순 낭종은 내부가 완전히 검은 무에코이고 뒤쪽이 밝아지는 후방 증강이 있을 때 진단하며 40대 폐경 전 여성에 흔하다. 이 종괴는 내부 에코가 있는 고형이다.\n  - ⑤ 엽상종양은 40~50대에서 크고 빠르게 자라며 내부에 갈라진 틈이나 낭성 공간을 보일 때 의심한다. 21세의 작고 균일한 종괴에서는 가능성이 낮다.\n- 함정: 저에코라는 말만 보고 암을 고르는 것 — 모양(타원·평행)과 외곽(명확)이 양성의 표지다.\n- 학습목표: 젊은 여성의 유방 초음파에서 피부와 평행한 타원형·외곽 명확·저에코 고형 종괴를 섬유샘종으로 판단하고 낭종·엽상종양·암과 구분한다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — mass shape, orientation, margin, posterior features · Stavros AT, et al. Solid breast nodules: use of sonography to distinguish between benign and malignant lesions. Radiology 1995;196:123-134 · Pawłowska A, et al. Curated benchmark dataset for ultrasound based breast lesion analysis (BrEaST-Lesions_USG). Sci Data 2024 — case 202, biopsy-confirmed fibroadenoma (teacher-only) · 작성자 판독(2026-10-12): 유방 초음파, 피부와 평행한 작은 타원형 저에코 고형 종괴, 외곽 명확, 후방 음향 변화 없음, 주변 조직 왜곡 없음\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case202 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 피부와 평행한(가로가 세로보다 긴) 작은 타원형 종괴가 있고, 외곽이 매끈하고 명확하며 내부는 균일한 저에코이고 후방 음향 변화가 없다. 무에코가 아닌 고형 종괴이면서 양성 모양(타원·평행·외곽 명확)을 모두 갖추었고, 21세 무증상 여성이므로 섬유샘종이 가장 가능성 높다(BI-RADS 3)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 모양이 양성·악성을 가르는가</b>: 섬유샘종은 샘과 기질이 함께 자라는 양성 종양으로 주변 조직을 밀어내며 자란다. 그래서 피막처럼 매끈한 경계를 만들고, 유방 조직의 층을 따라 옆으로 자라 피부와 평행한 타원이 된다. 반대로 암은 주변 조직을 파고들며 자라 경계가 각지거나 침상이 되고, 조직면을 가로질러 세로로 자라 「키가 큰(비평행)」 모양과 뒤쪽 음영(섬유화 반응)을 만든다.<br> <b>왜 낭종이 아닌가</b>: 단순 낭종은 액체라 초음파가 반사 없이 지나가므로 내부가 완전히 검고(무에코) 뒤쪽이 밝아진다(후방 증강). 이 종괴는 내부 에코가 있는 고형이다.<br> <b>처치로 이어지는 의미</b>: 전형적인 섬유샘종 모양(BI-RADS 3)은 악성 가능성이 2 % 이하라 6개월 뒤 추적 초음파로 크기 변화를 보며, 커지거나 환자가 원하면 중심부 바늘생검을 한다. 30세 미만에서는 유방촬영술보다 초음파가 일차 검사다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">섬유샘종(정답)</th><th>엽상종양(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>호발 나이</td><td><b>15~35세</b></td><td><b>40~50대</b></td></tr> <tr><td>크기·성장</td><td>대개 2~3 cm 이하, 성장 느리거나 멈춤</td><td>흔히 큼, 몇 주~몇 달 사이 빠르게 커짐</td></tr> <tr><td>초음파</td><td>작은 타원, 균일한 저에코, 외곽 명확</td><td>크고 분엽상, 내부에 갈라진 틈·낭성 공간</td></tr> </tbody></table> 두 질환 모두 경계가 명확한 섬유상피 종양이다 — 나이, 크기, 빠른 성장 여부와 내부 갈라진 틈이 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 침윤성 유관암종은 경계가 각지거나 침상이고 세로로 긴(비평행) 모양에 뒤쪽 음영을 보일 때 의심한다. 이 종괴는 평행한 타원에 외곽이 명확하다.\n② 유관내 유두종은 피 섞인 유두 분비물과 함께 확장된 유관 안의 고형 결절로 보일 때 의심한다. 이 환자는 분비물이 없고 종괴가 유관 밖에 있다.\n④ 단순 낭종은 내부가 완전히 검은 무에코이고 뒤쪽이 밝아지는 후방 증강이 있을 때 진단하며 40대 폐경 전 여성에 흔하다. 이 종괴는 내부 에코가 있는 고형이다.\n⑤ 엽상종양은 40~50대에서 크고 빠르게 자라며 내부에 갈라진 틈이나 낭성 공간을 보일 때 의심한다. 21세의 작고 균일한 종괴에서는 가능성이 낮다."
+   },
+   {
+    "k": "함정",
+    "v": "저에코라는 말만 보고 암을 고르는 것 — 모양(타원·평행)과 외곽(명확)이 양성의 표지다."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 여성의 유방 초음파에서 피부와 평행한 타원형·외곽 명확·저에코 고형 종괴를 섬유샘종으로 판단하고 낭종·엽상종양·암과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. Ultrasound — mass shape, orientation, margin, posterior features · Stavros AT, et al. Solid breast nodules: use of sonography to distinguish between benign and malignant lesions. Radiology 1995;196:123-134 · Pawłowska A, et al. Curated benchmark dataset for ultrasound based breast lesion analysis (BrEaST-Lesions_USG). Sci Data 2024 — case 202, biopsy-confirmed fibroadenoma (teacher-only) · 작성자 판독(2026-10-12): 유방 초음파, 피부와 평행한 작은 타원형 저에코 고형 종괴, 외곽 명확, 후방 음향 변화 없음, 주변 조직 왜곡 없음 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case202 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "21세 무증상 여성의 초음파에서 피부와 평행한 작은 타원형 저에코 고형 종괴가 외곽이 명확하고 후방 변화가 없으므로 섬유샘종이다",
+   "rival": [
+    "E",
+    "D"
+   ],
+   "discriminator": "내부 에코가 있는 고형(낭종 아님)이고 작고 균일하며 환자가 21세다(엽상종양은 40대·크고 빠른 성장)",
+   "steps": 2,
+   "chain": [
+    "영상: 무에코가 아닌 고형, 평행한 타원, 외곽 명확, 후방 변화 없음 → 양성 모양의 고형 종괴(BI-RADS 3)",
+    "21세·작고 균일 → 섬유샘종(엽상종양은 40대·크고 빠른 성장)"
+   ],
+   "key": [
+    {
+     "item": "영상: 피부와 평행한 작은 타원형 저에코 고형 종괴, 외곽 명확, 후방 음향 변화 없음",
+     "why": "섬유샘종의 전형적 모양",
+     "also": []
+    },
+    {
+     "item": "21세 여자",
+     "why": "섬유샘종의 호발 나이 — 엽상종양·암의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "유두 분비물은 없고",
+     "why": "유관내 유두종 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "가족 중 유방암 환자는 없다",
+     "why": "위험도 평가 정보 — 영상 진단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "뚜렷한 종괴가 만져지지 않으며",
+     "why": "작은 종괴라 촉진되지 않을 수 있다 — 진단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "21세 무증상 여성의 유방 초음파에서 피부와 평행한 작은 타원형 저에코 고형 종괴가 외곽이 명확하고 후방 변화가 없다. 양성 모양을 모두 갖춘 고형 종괴로 섬유샘종이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "종괴 내부가 완전히 무에코이고 후방 증강이 있었다면 단순 낭종이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0304.png",
+   "caption": "회색조 초음파 한 컷, 표시 없음 (TCIA, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case202",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case202"
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0303",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "소화기·간담췌 — 췌장 샘꽈리세포의 효소원과 활성화",
+  "type": "소화기·간담췌 — 췌장 샘꽈리세포의 효소원과 활성화",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-11",
+  "vignette": "A 63-year-old man undergoes pancreaticoduodenectomy for a 3-cm mass in the head of the pancreas found during evaluation of a 2-year history of recurrent epigastric pain, a 9-kg weight loss, and greasy, foul-smelling stools. He has drunk 6 to 8 cans of beer daily for 30 years. CT had shown multiple calcifications throughout the pancreas and a dilated main pancreatic duct. Histologic examination of the resected specimen shows chronic pancreatitis without malignancy. A photomicrograph of a section of the pancreas stained by immunohistochemistry with an antibody against the zymogen whose premature activation within the gland initiates pancreatitis is shown.",
+  "question": "Which of the following normally converts this protein to its active form?",
+  "options": [
+   "Pepsin secreted by gastric chief cells",
+   "Enteropeptidase on the duodenal brush border",
+   "Cholecystokinin released from duodenal I cells",
+   "Hydrochloric acid secreted by gastric parietal cells",
+   "Bile salts released from the gallbladder"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The brown granular staining fills the cytoplasm of the surviving acinar lobules, while the fibrotic stroma and fat between them stain weakly — the acinar cells make the zymogen trypsinogen. Trypsinogen is first activated in the duodenal lumen by enteropeptidase (enterokinase), a brush-border enzyme of duodenal enterocytes that cleaves off the trypsinogen activation peptide. The resulting trypsin then activates more trypsinogen and the other pancreatic proenzymes (chymotrypsinogen, procarboxypeptidase, proelastase, prophospholipase).\n- 원리: <b>Why the gland stores inactive enzymes</b>: acinar cells pack proteases as inactive zymogens in granules so that they cannot digest the cell that made them. Activation is deliberately placed outside the gland: enteropeptidase sits on the brush border of the duodenum, where food arrives. One cut by enteropeptidase removes the N-terminal activation peptide (TAP), and trypsin then becomes the master switch that activates every other zymogen.<br> <b>Safeguards inside the gland</b>: SPINK1 (pancreatic secretory trypsin inhibitor) binds any trypsin formed by accident, trypsin destroys itself by autolysis, and low intra-acinar calcium keeps trypsinogen from autoactivating. When these fail — <b>PRSS1</b> gain-of-function mutations that resist autolysis, SPINK1 loss-of-function mutations, or alcohol and hypercalcemia that promote activation (cathepsin B colocalizing with zymogens) — trypsin is activated inside the acinar cell and pancreatitis begins.<br> <b>Why this patient has steatorrhea</b>: repeated injury replaces acini with fibrosis and fat, as seen between the stained lobules. Once lipase output falls below about 10% of normal, fat malabsorption appears.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Enteropeptidase (correct)</th><th>Cholecystokinin (closest distractor)</th></tr></thead><tbody> <tr><td>What it is</td><td>Serine protease on the duodenal brush border</td><td>Peptide hormone from duodenal I cells</td></tr> <tr><td>Action on trypsinogen</td><td><b>Cleaves</b> the activation peptide — converts it to trypsin</td><td><b>Stimulates secretion</b> of zymogens from acinar cells</td></tr> <tr><td>Deficiency</td><td>Congenital enteropeptidase deficiency — diarrhea, failure to thrive, hypoproteinemia</td><td>Reduced pancreatic and gallbladder response to meals</td></tr> </tbody></table> Secretion and activation are different steps: hormones (CCK, secretin) control how much is released, and only a protease (enteropeptidase, then trypsin) switches the zymogen on.\n- 오답 이유:\n  - (A) Pepsin is activated by gastric acid and digests proteins in the stomach; it is inactivated in the alkaline duodenum and does not cleave pancreatic zymogens.\n  - (C) Cholecystokinin stimulates acinar cells to secrete zymogens and the gallbladder to contract; it would be the answer to a question about what releases trypsinogen, not what activates it.\n  - (D) Hydrochloric acid activates pepsinogen to pepsin in the stomach and is neutralized by bicarbonate in the duodenum, where trypsinogen activation actually takes place at near-neutral pH.\n  - (E) Bile salts emulsify fat and act as a cofactor that lets colipase anchor lipase to fat droplets; they would be the answer for a question on lipid digestion, not protease activation.\n- 함정: Confusing the hormone that releases the zymogen (cholecystokinin) with the enzyme that activates it (enteropeptidase).\n- 학습목표: 췌장 샘꽈리세포가 분비하는 트립시노겐이 십이지장 솔가장자리의 엔테로펩티데이스로 처음 활성화되고, 트립신이 다른 효소원을 연쇄 활성화함을 안다\n- 근거·출처: Barrett KE, et al. Ganong's Review of Medical Physiology, 26th ed. Ch. Digestion and absorption — pancreatic proteases and enteropeptidase · Whitcomb DC, et al. Hereditary pancreatitis is caused by a mutation in the cationic trypsinogen gene. Nat Genet 1996;14:141-145 · Human Protein Atlas — PRSS1 (serine protease 1, cationic trypsinogen) pancreas tissue image (teacher-only) · 작성자 판독(2026-10-12): 췌장 TMA 코어, 두 곳의 샘꽈리 소엽 세포질이 진한 갈색 과립상으로 염색, 소엽 사이는 넓은 섬유화 기질·지방·부종성 기질로 염색 약함\n\n## 출처\n- Human Protein Atlas, PRSS1 / Pancreas (CC BY 4.0), https://images.proteinatlas.org/25487/58185_A_2_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown granular staining fills the cytoplasm of the surviving acinar lobules, while the fibrotic stroma and fat between them stain weakly — the acinar cells make the zymogen trypsinogen. Trypsinogen is first activated in the duodenal lumen by enteropeptidase (enterokinase), a brush-border enzyme of duodenal enterocytes that cleaves off the trypsinogen activation peptide. The resulting trypsin then activates more trypsinogen and the other pancreatic proenzymes (chymotrypsinogen, procarboxypeptidase, proelastase, prophospholipase)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the gland stores inactive enzymes</b>: acinar cells pack proteases as inactive zymogens in granules so that they cannot digest the cell that made them. Activation is deliberately placed outside the gland: enteropeptidase sits on the brush border of the duodenum, where food arrives. One cut by enteropeptidase removes the N-terminal activation peptide (TAP), and trypsin then becomes the master switch that activates every other zymogen.<br> <b>Safeguards inside the gland</b>: SPINK1 (pancreatic secretory trypsin inhibitor) binds any trypsin formed by accident, trypsin destroys itself by autolysis, and low intra-acinar calcium keeps trypsinogen from autoactivating. When these fail — <b>PRSS1</b> gain-of-function mutations that resist autolysis, SPINK1 loss-of-function mutations, or alcohol and hypercalcemia that promote activation (cathepsin B colocalizing with zymogens) — trypsin is activated inside the acinar cell and pancreatitis begins.<br> <b>Why this patient has steatorrhea</b>: repeated injury replaces acini with fibrosis and fat, as seen between the stained lobules. Once lipase output falls below about 10% of normal, fat malabsorption appears."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Enteropeptidase (correct)</th><th>Cholecystokinin (closest distractor)</th></tr></thead><tbody> <tr><td>What it is</td><td>Serine protease on the duodenal brush border</td><td>Peptide hormone from duodenal I cells</td></tr> <tr><td>Action on trypsinogen</td><td><b>Cleaves</b> the activation peptide — converts it to trypsin</td><td><b>Stimulates secretion</b> of zymogens from acinar cells</td></tr> <tr><td>Deficiency</td><td>Congenital enteropeptidase deficiency — diarrhea, failure to thrive, hypoproteinemia</td><td>Reduced pancreatic and gallbladder response to meals</td></tr> </tbody></table> Secretion and activation are different steps: hormones (CCK, secretin) control how much is released, and only a protease (enteropeptidase, then trypsin) switches the zymogen on."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Pepsin is activated by gastric acid and digests proteins in the stomach; it is inactivated in the alkaline duodenum and does not cleave pancreatic zymogens.\n(C) Cholecystokinin stimulates acinar cells to secrete zymogens and the gallbladder to contract; it would be the answer to a question about what releases trypsinogen, not what activates it.\n(D) Hydrochloric acid activates pepsinogen to pepsin in the stomach and is neutralized by bicarbonate in the duodenum, where trypsinogen activation actually takes place at near-neutral pH.\n(E) Bile salts emulsify fat and act as a cofactor that lets colipase anchor lipase to fat droplets; they would be the answer for a question on lipid digestion, not protease activation."
+   },
+   {
+    "k": "함정",
+    "v": "Confusing the hormone that releases the zymogen (cholecystokinin) with the enzyme that activates it (enteropeptidase)."
+   },
+   {
+    "k": "학습목표",
+    "v": "췌장 샘꽈리세포가 분비하는 트립시노겐이 십이지장 솔가장자리의 엔테로펩티데이스로 처음 활성화되고, 트립신이 다른 효소원을 연쇄 활성화함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Barrett KE, et al. Ganong's Review of Medical Physiology, 26th ed. Ch. Digestion and absorption — pancreatic proteases and enteropeptidase · Whitcomb DC, et al. Hereditary pancreatitis is caused by a mutation in the cationic trypsinogen gene. Nat Genet 1996;14:141-145 · Human Protein Atlas — PRSS1 (serine protease 1, cationic trypsinogen) pancreas tissue image (teacher-only) · 작성자 판독(2026-10-12): 췌장 TMA 코어, 두 곳의 샘꽈리 소엽 세포질이 진한 갈색 과립상으로 염색, 소엽 사이는 넓은 섬유화 기질·지방·부종성 기질로 염색 약함 ## 출처 Human Protein Atlas, PRSS1 / Pancreas (CC BY 4.0), https://images.proteinatlas.org/25487/58185_A_2_3.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염색된 세포는 샘꽈리세포이고 표적은 췌장염을 시작하는 효소원(트립시노겐)이므로, 정상에서 이를 활성화하는 것은 십이지장 솔가장자리의 엔테로펩티데이스다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "콜레시스토키닌은 효소원의 분비를 늘릴 뿐 잘라서 활성화하지 않는다 — 활성화는 단백분해효소의 일이다",
+   "steps": 2,
+   "chain": [
+    "영상: 샘꽈리 소엽 세포질의 진한 갈색 과립 염색 + 췌장염을 시작하는 효소원 → 트립시노겐",
+    "트립시노겐을 처음 활성화하는 것 → 십이지장 솔가장자리의 엔테로펩티데이스"
+   ],
+   "key": [
+    {
+     "item": "영상: 남은 샘꽈리 소엽 세포질의 진한 갈색 과립상 염색, 사이의 섬유화 기질과 지방은 염색 약함",
+     "why": "샘꽈리세포의 효소원 — 만성췌장염으로 소엽이 줄어든 모습",
+     "also": []
+    },
+    {
+     "item": "the zymogen whose premature activation within the gland initiates pancreatitis",
+     "why": "트립시노겐을 가리킨다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "multiple calcifications throughout the pancreas",
+     "why": "만성췌장염의 근거 — 효소 활성화 경로를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "greasy, foul-smelling stools",
+     "why": "외분비 기능 저하 — 묻는 기전과는 별개",
+     "also": []
+    },
+    {
+     "item": "6 to 8 cans of beer daily for 30 years",
+     "why": "알코올성 만성췌장염의 원인 — 정상 활성화 효소를 묻는 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "만성췌장염 절제 검체에서 샘꽈리세포가 췌장염을 시작하는 효소원(트립시노겐)으로 염색되었다. 이 효소원은 정상에서 십이지장 솔가장자리의 엔테로펩티데이스가 처음 활성화하고, 콜레시스토키닌은 분비만 늘린다.",
+   "switch": {
+    "choice": "C",
+    "condition": "물음이 「식사 뒤 이 효소원의 분비를 늘리는 물질」이었다면 콜레시스토키닌이 정답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0303.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000204983-PRSS1/tissue/Pancreas",
+   "asset_id": "HPA-PRSS1_58185_A_2_3",
+   "text": "Human Protein Atlas, PRSS1 / Pancreas (CC BY 4.0), https://images.proteinatlas.org/25487/58185_A_2_3.jpg"
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0302",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "산과 — 분만 중 태아심박동 기록의 판독과 처치",
+  "type": "산과 — 분만 중 태아심박동 기록의 판독과 처치",
+  "modality": "CTG",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-11",
+  "vignette": "A 38-year-old nulliparous woman at 40 weeks' gestation is admitted to the labor and delivery unit in spontaneous labor. Her pregnancy has been uncomplicated. She has not received any analgesic, sedative, or other medication. Temperature is 36.9°C (98.4°F), pulse is 84/min, and blood pressure is 122/76 mm Hg. Contractions are palpable every 2 to 3 minutes. The cervix is 6 cm dilated and 90% effaced, and the fetal vertex is at 0 station; the membranes are intact. Continuous external fetal heart rate monitoring has shown the same pattern for the past 40 minutes; a representative 10-minute segment of the cardiotocogram is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Digital stimulation of the fetal scalp",
+   "Immediate cesarean delivery",
+   "Continued routine monitoring with no other action",
+   "Initiation of oxytocin infusion",
+   "Transcervical amnioinfusion"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The baseline fetal heart rate is about 135 to 155/min (normal), but the amplitude of baseline variability is 5/min or less (minimal variability), and there are no accelerations or decelerations. A tracing with a normal baseline and minimal variability is Category II (indeterminate). Minimal variability may reflect a fetal sleep cycle, drugs, or early hypoxemia; she has received no medications and it has lasted 40 minutes. The next step is fetal scalp stimulation: an acceleration in response makes fetal acidemia unlikely (scalp pH ≥ 7.20), and labor can continue with close monitoring.\n- 원리: <b>Why variability reflects fetal oxygenation</b>: beat-to-beat variability arises from the continuous push and pull of sympathetic and parasympathetic input to the sinoatrial node, which requires a well-oxygenated fetal brainstem. When the brainstem becomes hypoxic and acidotic, this autonomic fine-tuning fades and the line flattens. Moderate variability (6 to 25/min) therefore reliably predicts the absence of metabolic acidemia at that moment.<br> <b>Why minimal variability is not yet an emergency</b>: the same flattening occurs in quiet fetal sleep, which usually lasts 20 to 40 minutes, and after maternal opioids, magnesium, or sedatives. Minimal variability alone is Category II, which calls for evaluation rather than immediate delivery.<br> <b>Why scalp stimulation works</b>: stimulating the fetal scalp produces a sympathetic surge; a fetus that is not acidotic responds with an acceleration (at ≥ 32 weeks, ≥ 15/min for ≥ 15 seconds). An acceleration has a negative predictive value for acidemia similar to a scalp pH ≥ 7.20. No acceleration does not prove acidemia, but it calls for intrauterine resuscitation and preparation for expedited delivery if the tracing does not improve.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">This tracing — Category II (correct: evaluate)</th><th>Category I (distractor: routine monitoring)</th></tr></thead><tbody> <tr><td>Baseline</td><td>110-160/min</td><td>110-160/min</td></tr> <tr><td>Variability amplitude</td><td><b>≤ 5/min (minimal)</b></td><td><b>6-25/min (moderate)</b></td></tr> <tr><td>Accelerations</td><td>Absent</td><td>Present or absent</td></tr> <tr><td>Action</td><td>Evaluate — scalp stimulation, look for reversible causes</td><td>Routine monitoring</td></tr> </tbody></table> Read variability before anything else: moderate variability reassures; minimal variability needs a test of fetal reserve; absent variability with recurrent decelerations (Category III) needs delivery.\n- 오답 이유:\n  - (B) Immediate cesarean delivery is indicated for a Category III tracing — absent variability with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern; this tracing has minimal, not absent, variability and no decelerations.\n  - (C) Routine monitoring alone suits a Category I tracing with moderate variability (6 to 25/min); here variability has stayed at 5/min or less for 40 minutes, so fetal reserve should be tested first.\n  - (D) Oxytocin augmentation is considered for protraction or arrest of active labor once fetal status is reassuring; it increases contraction frequency and could worsen oxygenation of a compromised fetus.\n  - (E) Amnioinfusion is used for recurrent variable decelerations from cord compression, usually after the membranes have ruptured; this tracing has no decelerations and the membranes are intact.\n- 함정: Calling the tracing normal because the baseline is within range and there are no decelerations — the flat line (minimal variability) itself makes it Category II.\n- 학습목표: 분만 중 태아심박동에서 기저선 정상·최소 변이도·가속과 감속 없음을 범주 II 로 읽고, 태아 산증 여부를 가리기 위해 태아 두피 자극으로 가속 반응을 확인한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · American College of Obstetricians and Gynecologists. Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol 2010;116:1232-1240 · Chudáček V, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth 2014;14:16 (CTU-UHB, PhysioNet) · 작성자 판독(2026-10-12): 40~48분 기저 약 135~155회/분, 변이도 진폭 5회/분 이하, 가속 없음, 뚜렷한 감속 없음, 48분 이후 신호 소실 구간, 자궁수축은 낮은 진폭으로 1.5~2분 간격\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1203 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The baseline fetal heart rate is about 135 to 155/min (normal), but the amplitude of baseline variability is 5/min or less (minimal variability), and there are no accelerations or decelerations. A tracing with a normal baseline and minimal variability is Category II (indeterminate). Minimal variability may reflect a fetal sleep cycle, drugs, or early hypoxemia; she has received no medications and it has lasted 40 minutes. The next step is fetal scalp stimulation: an acceleration in response makes fetal acidemia unlikely (scalp pH ≥ 7.20), and labor can continue with close monitoring."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why variability reflects fetal oxygenation</b>: beat-to-beat variability arises from the continuous push and pull of sympathetic and parasympathetic input to the sinoatrial node, which requires a well-oxygenated fetal brainstem. When the brainstem becomes hypoxic and acidotic, this autonomic fine-tuning fades and the line flattens. Moderate variability (6 to 25/min) therefore reliably predicts the absence of metabolic acidemia at that moment.<br> <b>Why minimal variability is not yet an emergency</b>: the same flattening occurs in quiet fetal sleep, which usually lasts 20 to 40 minutes, and after maternal opioids, magnesium, or sedatives. Minimal variability alone is Category II, which calls for evaluation rather than immediate delivery.<br> <b>Why scalp stimulation works</b>: stimulating the fetal scalp produces a sympathetic surge; a fetus that is not acidotic responds with an acceleration (at ≥ 32 weeks, ≥ 15/min for ≥ 15 seconds). An acceleration has a negative predictive value for acidemia similar to a scalp pH ≥ 7.20. No acceleration does not prove acidemia, but it calls for intrauterine resuscitation and preparation for expedited delivery if the tracing does not improve."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">This tracing — Category II (correct: evaluate)</th><th>Category I (distractor: routine monitoring)</th></tr></thead><tbody> <tr><td>Baseline</td><td>110-160/min</td><td>110-160/min</td></tr> <tr><td>Variability amplitude</td><td><b>≤ 5/min (minimal)</b></td><td><b>6-25/min (moderate)</b></td></tr> <tr><td>Accelerations</td><td>Absent</td><td>Present or absent</td></tr> <tr><td>Action</td><td>Evaluate — scalp stimulation, look for reversible causes</td><td>Routine monitoring</td></tr> </tbody></table> Read variability before anything else: moderate variability reassures; minimal variability needs a test of fetal reserve; absent variability with recurrent decelerations (Category III) needs delivery."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Immediate cesarean delivery is indicated for a Category III tracing — absent variability with recurrent late or variable decelerations or bradycardia, or a sinusoidal pattern; this tracing has minimal, not absent, variability and no decelerations.\n(C) Routine monitoring alone suits a Category I tracing with moderate variability (6 to 25/min); here variability has stayed at 5/min or less for 40 minutes, so fetal reserve should be tested first.\n(D) Oxytocin augmentation is considered for protraction or arrest of active labor once fetal status is reassuring; it increases contraction frequency and could worsen oxygenation of a compromised fetus.\n(E) Amnioinfusion is used for recurrent variable decelerations from cord compression, usually after the membranes have ruptured; this tracing has no decelerations and the membranes are intact."
+   },
+   {
+    "k": "함정",
+    "v": "Calling the tracing normal because the baseline is within range and there are no decelerations — the flat line (minimal variability) itself makes it Category II."
+   },
+   {
+    "k": "학습목표",
+    "v": "분만 중 태아심박동에서 기저선 정상·최소 변이도·가속과 감속 없음을 범주 II 로 읽고, 태아 산증 여부를 가리기 위해 태아 두피 자극으로 가속 반응을 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · American College of Obstetricians and Gynecologists. Practice Bulletin No. 116: Management of intrapartum fetal heart rate tracings. Obstet Gynecol 2010;116:1232-1240 · Chudáček V, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth 2014;14:16 (CTU-UHB, PhysioNet) · 작성자 판독(2026-10-12): 40~48분 기저 약 135~155회/분, 변이도 진폭 5회/분 이하, 가속 없음, 뚜렷한 감속 없음, 48분 이후 신호 소실 구간, 자궁수축은 낮은 진폭으로 1.5~2분 간격 ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1203 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "기저선은 정상이지만 변이도가 5회/분 이하로 40분 이어지고 가속이 없는 범주 II 기록이므로, 태아 두피 자극으로 가속 반응을 확인해 산증 여부를 가린다",
+   "rival": [
+    "C",
+    "B"
+   ],
+   "discriminator": "변이도 진폭이 6회/분 이상이면 범주 I(일상 감시), 변이도가 없고 반복 감속이 있으면 범주 III(즉시 분만) — 이 기록은 그 사이다",
+   "steps": 2,
+   "chain": [
+    "영상: 기저 135~155회/분, 변이도 진폭 5회/분 이하, 가속·감속 없음 → 최소 변이도의 범주 II",
+    "약물 투여 없음·40분 지속 → 원인을 가리기 위해 태아 두피 자극으로 가속 반응을 본다"
+   ],
+   "key": [
+    {
+     "item": "영상: 기저 약 135~155회/분, 변이도 진폭 5회/분 이하, 가속 없음, 감속 없음",
+     "why": "최소 변이도 — 범주 II",
+     "also": []
+    },
+    {
+     "item": "the same pattern for the past 40 minutes",
+     "why": "수면 주기만으로 보기엔 길어 평가가 필요하다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has not received any analgesic, sedative, or other medication",
+     "why": "약물에 의한 변이도 감소 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Temperature is 36.9°C",
+     "why": "양수내 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "The cervix is 6 cm dilated",
+     "why": "자궁경부가 완전 개대 전이라 기계 분만은 할 수 없다",
+     "also": []
+    },
+    {
+     "item": "the membranes are intact",
+     "why": "양수주입의 전제(양막 파수)가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "38-year-old nulliparous woman",
+     "why": "고령 초산이지만 기록 판독과 처치를 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "분만 중 태아심박동의 기저선은 정상이나 최소 변이도가 40분 이어지고 가속·감속이 없는 범주 II 기록이다. 약물 원인이 없으므로 태아 두피 자극으로 가속 반응을 확인해 산증 여부를 가린다.",
+   "switch": {
+    "choice": "B",
+    "condition": "변이도가 아예 없고 반복되는 후기 감속이 겹치면(범주 III) 자궁내 소생술과 함께 즉시 분만을 준비한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0302.png",
+   "caption": "Intrapartum fetal heart rate (top) and uterine activity (bottom), minutes 40 to 50 of the recording; bold vertical lines = 1 min (CTU-UHB Intrapartum Cardiotocography Database, PhysioNet, ODC-BY 1.0; 4 Hz raw data, no smoothing)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1203_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1203"
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0301",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "호흡기 — 흉부 둔상 다음 날의 숨참",
+  "type": "호흡기 — 흉부 둔상 다음 날의 숨참",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-11",
+  "vignette": "52세 남자가 하루 전 사다리에서 떨어져 오른쪽 가슴을 부딪친 뒤 오른쪽 가슴 통증과 숨참이 점점 심해져 응급실에 왔다. 혈압 128/80 mmHg, 맥박 98회/분, 호흡 22회/분, 체온 36.8 °C, 산소포화도 94 %(실내 공기)이다. 기관은 가운데에 있고 목정맥 확장은 없다. 오른쪽 아래 갈비뼈 부위에 압통이 있고, 오른쪽 위쪽 가슴은 타진에 과공명, 아래쪽은 둔탁하며 오른쪽 호흡음이 감소하였다. 혈색소는 12.1 g/dL 이다. 선 자세에서 찍은 흉부 X선 사진은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "오른쪽 폐좌상",
+   "오른쪽 혈기흉",
+   "오른쪽 단순 혈흉",
+   "오른쪽 긴장성 기흉",
+   "오른쪽 외상성 가로막 탈장"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 선 자세 흉부 X선에서 오른쪽 흉곽 가운데 높이에 곧고 수평인 공기-액체 경계면이 있고, 그 위 바깥쪽에는 혈관 음영이 없는 공기와 안쪽으로 밀린 장측 흉막선이 보인다. 흉막강 안에 공기와 액체(외상 뒤이므로 피)가 함께 있다는 뜻이므로 오른쪽 혈기흉이다. 타진의 위쪽 과공명·아래쪽 둔탁도 같은 분포를 가리킨다.\n- 원리: <b>왜 경계면이 곧은 수평선이 되는가</b>: 흉막강에 액체만 있으면 폐는 탄성 반동으로 안쪽으로 당기고 액체는 표면장력으로 흉벽을 따라 올라가므로, 선 자세 사진에서 바깥쪽이 높고 안쪽이 낮은 오목한 곡선(메니스커스)이 생긴다. 공기가 함께 들어오면 액체 위의 공간이 공기로 채워져 액체 표면이 흉벽에 끌려 올라가지 않고 중력대로 평평해진다. 그래서 <b>수평 경계면 = 같은 공간 안의 공기 + 액체</b>다.<br> <b>왜 선 자세가 필요한가</b>: 누운 자세 전후 사진에서는 액체가 등 쪽으로 퍼지고 공기는 앞쪽으로 모여 경계면이 X선과 평행하지 않으므로 수평선이 보이지 않는다. 외상 환자의 첫 사진이 누운 자세라면 혈기흉도 한쪽 폐야가 뿌옇게 보이는 것만으로 나타날 수 있다.<br> <b>처치로 이어지는 의미</b>: 혈기흉은 흉관으로 공기와 피를 함께 뺀다. 첫 배액이 1,500 mL 이상이거나 시간당 200 mL 이상이 2~4시간 이어지면 개흉술을 고려한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈기흉(정답)</th><th>단순 혈흉(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>액체 윗면</td><td><b>곧은 수평선</b>(공기-액체 경계면)</td><td>흉벽 쪽으로 올라가는 <b>메니스커스</b></td></tr> <tr><td>흉막선</td><td>안쪽으로 밀린 장측 흉막선이 보인다</td><td>보이지 않는다</td></tr> <tr><td>타진</td><td>위쪽 과공명, 아래쪽 둔탁</td><td>아래쪽 둔탁만</td></tr> </tbody></table> 두 질환 모두 흉관 배액이 첫 처치지만, 사진에서 공기가 함께 있는지는 경계면의 모양이 알려 준다 — 곧으면 공기도 있다.\n- 오답 이유:\n  - ① 폐좌상은 외상 뒤 24~48시간 안에 폐엽 경계와 무관한 폐 실질의 흐린 음영으로 나타나며, 흉막강의 공기나 수평 경계면은 만들지 않는다.\n  - ③ 단순 혈흉은 액체 윗면이 흉벽을 따라 올라가는 오목한 메니스커스이고 흉막선과 폐 바깥 공기가 없을 때 진단한다. 이 사진은 경계면이 곧고 장측 흉막선이 보인다.\n  - ④ 긴장성 기흉은 저혈압·목정맥 확장·기관 편위가 있는 불안정 상태에서 임상적으로 진단해 X선 전에 감압한다. 이 환자는 혈압이 정상이고 기관이 가운데에 있다.\n  - ⑤ 외상성 가로막 탈장은 가로막 윤곽이 사라지고 흉강 안에 장관 가스나 위관 끝이 보일 때 의심하며 대개 왼쪽이다. 이 사진의 공기는 장관 모양이 아니다.\n- 함정: 오른쪽 아래가 하얗다는 것만 보고 단순 혈흉을 고르는 것 — 액체 윗면이 곧은 수평선이고 그 위에 흉막선이 보이면 공기도 함께 있다.\n- 학습목표: 흉부 둔상 뒤 흉부 X선의 곧고 수평인 공기-액체 경계면과 장측 흉막선을 혈기흉으로 읽고, 메니스커스를 보이는 단순 혈흉과 구분한다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Chapter 4 Thoracic trauma (hemothorax, pneumothorax, indications for thoracotomy) · Fraser and Paré's Diagnosis of Diseases of the Chest — pleural effusion meniscus vs air-fluid level in hydropneumothorax · PMC13536977 Figure 2 — case report of delayed hemopneumothorax after blunt chest trauma, 52-year-old man (teacher-only) · 작성자 판독(2026-10-12): 직립 AP 흉부 X선, 오른쪽 흉곽 가운데 높이의 곧고 수평인 공기-액체 경계면, 그 위 바깥쪽의 혈관 음영 없는 공기와 안쪽으로 밀린 장측 흉막선, 오른쪽 가로막 윤곽은 액체에 가려짐, 왼쪽 폐 정상\n\n## 출처\n- Delayed Hemopneumothorax and Multiple Rib Fractures Following Blunt Chest Trauma. Cureus. 2026 Sep 2;18(9):e115642. doi: 10.7759/cureus.115642 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "선 자세 흉부 X선에서 오른쪽 흉곽 가운데 높이에 곧고 수평인 공기-액체 경계면이 있고, 그 위 바깥쪽에는 혈관 음영이 없는 공기와 안쪽으로 밀린 장측 흉막선이 보인다. 흉막강 안에 공기와 액체(외상 뒤이므로 피)가 함께 있다는 뜻이므로 오른쪽 혈기흉이다. 타진의 위쪽 과공명·아래쪽 둔탁도 같은 분포를 가리킨다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 경계면이 곧은 수평선이 되는가</b>: 흉막강에 액체만 있으면 폐는 탄성 반동으로 안쪽으로 당기고 액체는 표면장력으로 흉벽을 따라 올라가므로, 선 자세 사진에서 바깥쪽이 높고 안쪽이 낮은 오목한 곡선(메니스커스)이 생긴다. 공기가 함께 들어오면 액체 위의 공간이 공기로 채워져 액체 표면이 흉벽에 끌려 올라가지 않고 중력대로 평평해진다. 그래서 <b>수평 경계면 = 같은 공간 안의 공기 + 액체</b>다.<br> <b>왜 선 자세가 필요한가</b>: 누운 자세 전후 사진에서는 액체가 등 쪽으로 퍼지고 공기는 앞쪽으로 모여 경계면이 X선과 평행하지 않으므로 수평선이 보이지 않는다. 외상 환자의 첫 사진이 누운 자세라면 혈기흉도 한쪽 폐야가 뿌옇게 보이는 것만으로 나타날 수 있다.<br> <b>처치로 이어지는 의미</b>: 혈기흉은 흉관으로 공기와 피를 함께 뺀다. 첫 배액이 1,500 mL 이상이거나 시간당 200 mL 이상이 2~4시간 이어지면 개흉술을 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈기흉(정답)</th><th>단순 혈흉(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>액체 윗면</td><td><b>곧은 수평선</b>(공기-액체 경계면)</td><td>흉벽 쪽으로 올라가는 <b>메니스커스</b></td></tr> <tr><td>흉막선</td><td>안쪽으로 밀린 장측 흉막선이 보인다</td><td>보이지 않는다</td></tr> <tr><td>타진</td><td>위쪽 과공명, 아래쪽 둔탁</td><td>아래쪽 둔탁만</td></tr> </tbody></table> 두 질환 모두 흉관 배액이 첫 처치지만, 사진에서 공기가 함께 있는지는 경계면의 모양이 알려 준다 — 곧으면 공기도 있다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐좌상은 외상 뒤 24~48시간 안에 폐엽 경계와 무관한 폐 실질의 흐린 음영으로 나타나며, 흉막강의 공기나 수평 경계면은 만들지 않는다.\n③ 단순 혈흉은 액체 윗면이 흉벽을 따라 올라가는 오목한 메니스커스이고 흉막선과 폐 바깥 공기가 없을 때 진단한다. 이 사진은 경계면이 곧고 장측 흉막선이 보인다.\n④ 긴장성 기흉은 저혈압·목정맥 확장·기관 편위가 있는 불안정 상태에서 임상적으로 진단해 X선 전에 감압한다. 이 환자는 혈압이 정상이고 기관이 가운데에 있다.\n⑤ 외상성 가로막 탈장은 가로막 윤곽이 사라지고 흉강 안에 장관 가스나 위관 끝이 보일 때 의심하며 대개 왼쪽이다. 이 사진의 공기는 장관 모양이 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "오른쪽 아래가 하얗다는 것만 보고 단순 혈흉을 고르는 것 — 액체 윗면이 곧은 수평선이고 그 위에 흉막선이 보이면 공기도 함께 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 둔상 뒤 흉부 X선의 곧고 수평인 공기-액체 경계면과 장측 흉막선을 혈기흉으로 읽고, 메니스커스를 보이는 단순 혈흉과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Chapter 4 Thoracic trauma (hemothorax, pneumothorax, indications for thoracotomy) · Fraser and Paré's Diagnosis of Diseases of the Chest — pleural effusion meniscus vs air-fluid level in hydropneumothorax · PMC13536977 Figure 2 — case report of delayed hemopneumothorax after blunt chest trauma, 52-year-old man (teacher-only) · 작성자 판독(2026-10-12): 직립 AP 흉부 X선, 오른쪽 흉곽 가운데 높이의 곧고 수평인 공기-액체 경계면, 그 위 바깥쪽의 혈관 음영 없는 공기와 안쪽으로 밀린 장측 흉막선, 오른쪽 가로막 윤곽은 액체에 가려짐, 왼쪽 폐 정상 ## 출처 Delayed Hemopneumothorax and Multiple Rib Fractures Following Blunt Chest Trauma. Cureus. 2026 Sep 2;18(9):e115642. doi: 10.7759/cureus.115642 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "흉부 둔상 뒤 선 자세 사진에서 오른쪽 흉막강에 곧고 수평인 공기-액체 경계면과 장측 흉막선이 함께 보이므로 혈기흉이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "액체 윗면이 메니스커스가 아니라 곧은 수평선이고 그 위에 장측 흉막선과 혈관 음영 없는 공기가 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 곧고 수평인 공기-액체 경계면 + 장측 흉막선 → 흉막강 안에 공기와 액체가 함께 있다",
+    "흉부 둔상 다음 날 + 혈압 정상·기관 가운데 → 긴장성이 아닌 외상성 혈기흉"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽 흉곽 가운데 높이의 곧고 수평인 공기-액체 경계면",
+     "why": "공기와 액체가 같은 공간에 있다는 표지",
+     "also": []
+    },
+    {
+     "item": "영상: 경계면 위 바깥쪽의 혈관 음영 없는 공기와 안쪽으로 밀린 장측 흉막선",
+     "why": "기흉 성분",
+     "also": []
+    },
+    {
+     "item": "오른쪽 위쪽 가슴은 타진에 과공명, 아래쪽은 둔탁",
+     "why": "위는 공기, 아래는 액체",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "기관은 가운데에 있고 목정맥 확장은 없다",
+     "why": "긴장성 기흉 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "오른쪽 아래 갈비뼈 부위에 압통",
+     "why": "갈비뼈 골절로 흉막이 다친 기전을 뒷받침하지만 진단명을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈색소는 12.1 g/dL",
+     "why": "경미한 감소 — 대량 출혈 여부는 흉관 배액량으로 판단한다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 둔상 다음 날 선 자세 흉부 X선에서 오른쪽에 곧고 수평인 공기-액체 경계면과 장측 흉막선이 보인다. 공기와 피가 함께 있는 혈기흉이며, 메니스커스만 보이는 단순 혈흉과 경계면 모양으로 가른다.",
+   "switch": {
+    "choice": "C",
+    "condition": "흉막선과 위쪽 과공명이 없고 액체 윗면이 흉벽 쪽으로 올라가는 메니스커스였다면 단순 혈흉이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0301.jpg",
+   "caption": "직립 전후 흉부 X선, 흰 화살표와 R 표지는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13536977/",
+   "asset_id": "PMC-PMC13536977_Figure2",
+   "text": "Delayed Hemopneumothorax and Multiple Rib Fractures Following Blunt Chest Trauma. Cureus. 2026 Sep 2;18(9):e115642. doi: 10.7759/cureus.115642 (CC BY) — Figure 2"
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0310",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "예방의학 — 새 치료제 도입 뒤의 질병 빈도 지표",
+  "type": "예방의학 — 새 치료제 도입 뒤의 질병 빈도 지표",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-11",
+  "vignette": "A 52-year-old woman who works as a public health officer reviews registry data for a chronic autoimmune disease in her country. For the past decade, the incidence has remained stable at 20 new cases per 100,000 persons per year. Before a new disease-modifying drug became available, patients lived an average of 4 years after diagnosis. The drug does not cure the disease, but it extends average survival after diagnosis to 10 years, and it is rapidly adopted nationwide. Risk factors for the disease and diagnostic criteria do not change, and the population size remains constant.",
+  "question": "Which of the following best describes the expected incidence and prevalence once a new steady state is reached?",
+  "options": [
+   "Incidence falls; prevalence stays at about 80 per 100,000",
+   "Incidence rises to 50 per 100,000 per year; prevalence stays at about 80 per 100,000",
+   "Incidence and prevalence both unchanged because the disease is not cured",
+   "Incidence unchanged; prevalence rises from about 80 to about 200 per 100,000",
+   "Incidence unchanged; prevalence falls from about 200 to about 80 per 100,000"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: At steady state, prevalence ≈ incidence × average duration of disease (when prevalence is low). Before the drug: 20 per 100,000 per year × 4 years = 80 per 100,000. After the drug: 20 × 10 = 200 per 100,000. Incidence counts only new cases, which depend on risk factors and diagnostic criteria — neither changed — so it stays at 20 per 100,000 per year. A treatment that prolongs life without cure keeps people in the prevalent pool longer, so prevalence rises.\n- 원리: <b>Why prevalence behaves like water in a bathtub</b>: new cases flow in at the incidence rate, and patients leave the pool by cure or death. At steady state, inflow equals outflow, so the number in the tub equals the inflow rate multiplied by how long each person stays: P ≈ I × D (strictly, P/(1 − P) = I × D, which is nearly identical when prevalence is small).<br> <b>What moves each measure</b>: incidence changes only when the rate of new disease changes — new exposures, prevention, screening that detects more cases, or new diagnostic criteria. Prevalence changes with incidence <b>or</b> duration. A cure or rapid death shortens duration and lowers prevalence; a life-prolonging but non-curative therapy lengthens duration and raises prevalence.<br> <b>Why it matters in practice</b>: a rising prevalence after a successful treatment is not evidence that the disease is becoming more common, and it raises the number of patients needing long-term care and drug supply — a planning issue for health services (as with HIV after antiretroviral therapy).\n- 비교: <table><thead><tr><th style=\"width:22%\">Change</th><th style=\"width:39%\">Life-prolonging, non-curative drug (this case)</th><th>Curative drug (distractor pattern)</th></tr></thead><tbody> <tr><td>Incidence</td><td>Unchanged (20/100,000/year)</td><td>Unchanged</td></tr> <tr><td>Duration</td><td>Longer (4 → 10 years)</td><td>Shorter</td></tr> <tr><td>Prevalence</td><td><b>Rises</b> (80 → 200/100,000)</td><td><b>Falls</b></td></tr> </tbody></table> Ask two questions in order: did the rate of new cases change (incidence), and did the time spent sick change (duration)? Prevalence follows their product.\n- 오답 이유:\n  - (A) Incidence falls only when fewer new cases arise — after primary prevention or removal of a risk factor; this drug acts after diagnosis and risk factors are unchanged, so incidence is unaffected.\n  - (B) Incidence would rise with a new exposure, a screening program that detects more cases, or broader diagnostic criteria; none occurred, and longer survival alone raises prevalence, not incidence.\n  - (C) Prevalence stays the same only when both incidence and average duration stay the same; because the drug extends duration without cure, patients remain in the prevalent pool longer and prevalence rises.\n  - (E) A fall in prevalence from 200 to 80 would follow a treatment that shortens disease duration, such as a cure or a rise in early deaths; here the drug lengthens survival from 4 to 10 years.\n- 함정: Assuming that a successful drug must lower prevalence — without cure, longer survival enlarges the pool of people living with the disease.\n- 학습목표: 정상 상태에서 유병률 ≈ 발생률 × 평균 유병 기간임을 알고, 완치 없이 생존만 늘리는 치료가 발생률은 그대로 두고 유병률을 높임을 계산으로 보인다\n- 근거·출처: Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Ch. Measuring the occurrence of disease: morbidity (relationship between incidence, prevalence, and duration) · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Ch. 3 Measures of occurrence (P/(1−P) = I × D at steady state)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "At steady state, prevalence ≈ incidence × average duration of disease (when prevalence is low). Before the drug: 20 per 100,000 per year × 4 years = 80 per 100,000. After the drug: 20 × 10 = 200 per 100,000. Incidence counts only new cases, which depend on risk factors and diagnostic criteria — neither changed — so it stays at 20 per 100,000 per year. A treatment that prolongs life without cure keeps people in the prevalent pool longer, so prevalence rises."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why prevalence behaves like water in a bathtub</b>: new cases flow in at the incidence rate, and patients leave the pool by cure or death. At steady state, inflow equals outflow, so the number in the tub equals the inflow rate multiplied by how long each person stays: P ≈ I × D (strictly, P/(1 − P) = I × D, which is nearly identical when prevalence is small).<br> <b>What moves each measure</b>: incidence changes only when the rate of new disease changes — new exposures, prevention, screening that detects more cases, or new diagnostic criteria. Prevalence changes with incidence <b>or</b> duration. A cure or rapid death shortens duration and lowers prevalence; a life-prolonging but non-curative therapy lengthens duration and raises prevalence.<br> <b>Why it matters in practice</b>: a rising prevalence after a successful treatment is not evidence that the disease is becoming more common, and it raises the number of patients needing long-term care and drug supply — a planning issue for health services (as with HIV after antiretroviral therapy)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Change</th><th style=\"width:39%\">Life-prolonging, non-curative drug (this case)</th><th>Curative drug (distractor pattern)</th></tr></thead><tbody> <tr><td>Incidence</td><td>Unchanged (20/100,000/year)</td><td>Unchanged</td></tr> <tr><td>Duration</td><td>Longer (4 → 10 years)</td><td>Shorter</td></tr> <tr><td>Prevalence</td><td><b>Rises</b> (80 → 200/100,000)</td><td><b>Falls</b></td></tr> </tbody></table> Ask two questions in order: did the rate of new cases change (incidence), and did the time spent sick change (duration)? Prevalence follows their product."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Incidence falls only when fewer new cases arise — after primary prevention or removal of a risk factor; this drug acts after diagnosis and risk factors are unchanged, so incidence is unaffected.\n(B) Incidence would rise with a new exposure, a screening program that detects more cases, or broader diagnostic criteria; none occurred, and longer survival alone raises prevalence, not incidence.\n(C) Prevalence stays the same only when both incidence and average duration stay the same; because the drug extends duration without cure, patients remain in the prevalent pool longer and prevalence rises.\n(E) A fall in prevalence from 200 to 80 would follow a treatment that shortens disease duration, such as a cure or a rise in early deaths; here the drug lengthens survival from 4 to 10 years."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming that a successful drug must lower prevalence — without cure, longer survival enlarges the pool of people living with the disease."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 상태에서 유병률 ≈ 발생률 × 평균 유병 기간임을 알고, 완치 없이 생존만 늘리는 치료가 발생률은 그대로 두고 유병률을 높임을 계산으로 보인다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L, Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Ch. Measuring the occurrence of disease: morbidity (relationship between incidence, prevalence, and duration) · Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd ed. Ch. 3 Measures of occurrence (P/(1−P) = I × D at steady state)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "예후",
+   "decision": "발생률은 그대로 20/10만/년이고 평균 유병 기간이 4년에서 10년으로 늘었으므로, 유병률 ≈ 발생률 × 기간에 따라 80 에서 200/10만으로 오른다",
+   "rival": [
+    "C",
+    "E"
+   ],
+   "discriminator": "완치가 아니라 생존만 늘렸으므로 기간이 길어진다 — 유병률은 발생률과 기간의 곱을 따른다",
+   "steps": 3,
+   "chain": [
+    "위험 요인·진단 기준 불변 → 발생률 20/10만/년 그대로",
+    "완치 없이 평균 생존 4 → 10년 → 유병 기간 증가",
+    "유병률 ≈ 발생률 × 기간 → 20 × 4 = 80 에서 20 × 10 = 200/10만"
+   ],
+   "key": [
+    {
+     "item": "the incidence has remained stable at 20 new cases per 100,000 persons per year",
+     "why": "계산의 첫 인수",
+     "also": []
+    },
+    {
+     "item": "patients lived an average of 4 years after diagnosis",
+     "why": "이전 유병 기간",
+     "also": []
+    },
+    {
+     "item": "it extends average survival after diagnosis to 10 years",
+     "why": "새 유병 기간",
+     "also": []
+    },
+    {
+     "item": "The drug does not cure the disease",
+     "why": "기간이 줄지 않고 늘어난다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Risk factors for the disease and diagnostic criteria do not change",
+     "why": "발생률이 바뀔 이유를 없앤다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "the population size remains constant",
+     "why": "정상 상태 가정을 위한 조건 — 답을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "위험 요인과 진단 기준이 그대로이므로 발생률은 20/10만/년으로 변하지 않는다. 완치 없이 평균 생존이 4년에서 10년으로 늘어 유병률은 발생률 × 기간에 따라 80 에서 200/10만으로 오른다.",
+   "switch": {
+    "choice": "E",
+    "condition": "새 약이 질병을 완치시켜 평균 유병 기간이 1.6년으로 줄었다면 유병률은 약 32/10만으로 내려간다(발생률 불변)"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0309",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "내분비·대사 — 머리 외상 뒤 다뇨",
+  "type": "내분비·대사 — 머리 외상 뒤 다뇨",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-11",
+  "vignette": "34세 여자가 3주 전 교통사고로 머리를 다친 뒤부터 소변이 많아지고 목이 말라 하루 6 L 이상 물을 마신다며 왔다. 정신과 약이나 리튬을 먹은 적은 없다. 혈압 118/74 mmHg, 맥박 82회/분이다. 혈청 나트륨 147 mmol/L, 칼륨 4.1 mmol/L, 칼슘 9.2 mg/dL, 포도당 92 mg/dL, 혈장 삼투압 302 mOsm/kg, 소변 삼투압 110 mOsm/kg 이다. 수분 제한 검사에서 체중이 3 % 줄고 혈장 삼투압이 308 mOsm/kg 이 될 때까지 소변 삼투압은 130 mOsm/kg 에 머물렀고, 이어서 데스모프레신을 피하 주사하자 2시간 뒤 소변 삼투압이 480 mOsm/kg 으로 올랐다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "데스모프레신 투여",
+   "히드로클로로티아지드 투여",
+   "하루 물 섭취를 1.5 L 로 제한",
+   "저염식과 아밀로라이드 투여",
+   "3 % 고장성 식염수 투여"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 머리 외상 뒤 다뇨·다음이 생겼고, 혈장 삼투압이 높은데 소변은 희석되어 있다. 수분 제한으로 혈장 삼투압이 308 mOsm/kg 까지 올라도 소변이 농축되지 않았으나(130 mOsm/kg), 데스모프레신 뒤 소변 삼투압이 480 mOsm/kg 으로 50 % 넘게 올랐다. 콩팥은 바소프레신에 반응하는데 몸이 바소프레신을 만들지 못하는 중추성 요붕증(AVP 결핍)이므로 데스모프레신으로 치료한다.\n- 원리: <b>왜 데스모프레신 반응이 원인을 가르는가</b>: 바소프레신은 시상하부에서 만들어져 뇌하수체 후엽에서 분비되고, 집합관 주세포의 V2 수용체에 붙어 아쿠아포린-2 를 관강 쪽 막으로 올려 물을 재흡수하게 한다. 수분 제한으로 혈장 삼투압이 올라가도 소변이 묽게 남으면 「분비가 없거나」 「콩팥이 반응하지 않는」 것이다. 여기에 합성 V2 작용제인 데스모프레신을 주어 소변이 농축되면 콩팥은 정상이고 분비가 없는 것 — 중추성이다. 농축되지 않으면 수용체·아쿠아포린 쪽 문제인 신성 요붕증이다.<br> <b>왜 머리 외상인가</b>: 외상이 뇌하수체 줄기를 끊거나 시상하부를 다치면 바소프레신 분비 경로가 끊긴다. 외상·수술 뒤 요붕증은 일시적이거나 세 단계(요붕증 → 저장된 호르몬이 새어 나오는 SIADH 기 → 영구 요붕증)로 진행할 수 있어 나트륨을 자주 본다.<br> <b>치료 중 주의</b>: 데스모프레신을 쓰면서 갈증 없이 물을 계속 많이 마시면 저나트륨혈증이 생기므로 갈증에 따라 마시게 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중추성 요붕증(정답)</th><th>신성 요붕증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>수분 제한 뒤 소변</td><td>농축되지 않는다</td><td>농축되지 않는다</td></tr> <tr><td>데스모프레신 뒤 소변 삼투압</td><td><b>50 % 넘게 오른다</b></td><td><b>거의 오르지 않는다(10 % 미만)</b></td></tr> <tr><td>흔한 원인</td><td>머리 외상·뇌하수체 수술·종양·특발성</td><td>리튬·고칼슘혈증·저칼륨혈증·V2 수용체 돌연변이</td></tr> <tr><td>치료</td><td>데스모프레신</td><td>원인 제거, 저염식, 티아자이드(리튬이면 아밀로라이드)</td></tr> </tbody></table> 수분 제한까지는 둘이 같아 보인다 — 데스모프레신에 소변이 반응하는지가 가르고, 반응하면 부족한 호르몬을 채운다.\n- 오답 이유:\n  - ② 히드로클로로티아지드는 신성 요붕증에서 원위 세뇨관의 나트륨 재흡수를 막아 근위부 물 재흡수를 늘리는 치료다. 데스모프레신에 소변이 농축되지 않을 때 맞다.\n  - ③ 물 섭취 제한은 일차 다음증에서 맞다. 일차 다음증은 혈청 나트륨이 낮거나 정상 하한이고 수분 제한만으로 소변이 농축되지만, 이 환자는 나트륨이 높고 농축되지 않았다.\n  - ④ 저염식과 아밀로라이드는 리튬에 의한 신성 요붕증에서 집합관으로 리튬이 들어가는 것을 막는 치료다. 이 환자는 리튬을 먹은 적이 없고 데스모프레신에 반응한다.\n  - ⑤ 3 % 고장성 식염수는 경련이나 의식 저하를 동반한 심한 저나트륨혈증을 빨리 올릴 때 쓴다. 이 환자는 오히려 고나트륨 쪽이라 상태를 악화시킨다.\n- 함정: 수분 제한에 반응하지 않은 것만 보고 신성 요붕증 치료를 고르는 것 — 데스모프레신 뒤 소변 삼투압이 크게 오르면 중추성이다.\n- 학습목표: 수분 제한 뒤에도 소변이 농축되지 않다가 데스모프레신 투여 뒤 소변 삼투압이 50 % 이상 오르면 중추성 요붕증(AVP 결핍)으로 판단하고 데스모프레신으로 치료한다\n- 근거·출처: Christ-Crain M, et al. Diabetes insipidus. Nat Rev Dis Primers 2019;5:54 · Arima H, et al. Changing the name of diabetes insipidus: a position statement of the Working Group for Renaming Diabetes Insipidus. J Clin Endocrinol Metab 2022;108:1-3 (AVP deficiency / AVP resistance)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "머리 외상 뒤 다뇨·다음이 생겼고, 혈장 삼투압이 높은데 소변은 희석되어 있다. 수분 제한으로 혈장 삼투압이 308 mOsm/kg 까지 올라도 소변이 농축되지 않았으나(130 mOsm/kg), 데스모프레신 뒤 소변 삼투압이 480 mOsm/kg 으로 50 % 넘게 올랐다. 콩팥은 바소프레신에 반응하는데 몸이 바소프레신을 만들지 못하는 중추성 요붕증(AVP 결핍)이므로 데스모프레신으로 치료한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 데스모프레신 반응이 원인을 가르는가</b>: 바소프레신은 시상하부에서 만들어져 뇌하수체 후엽에서 분비되고, 집합관 주세포의 V2 수용체에 붙어 아쿠아포린-2 를 관강 쪽 막으로 올려 물을 재흡수하게 한다. 수분 제한으로 혈장 삼투압이 올라가도 소변이 묽게 남으면 「분비가 없거나」 「콩팥이 반응하지 않는」 것이다. 여기에 합성 V2 작용제인 데스모프레신을 주어 소변이 농축되면 콩팥은 정상이고 분비가 없는 것 — 중추성이다. 농축되지 않으면 수용체·아쿠아포린 쪽 문제인 신성 요붕증이다.<br> <b>왜 머리 외상인가</b>: 외상이 뇌하수체 줄기를 끊거나 시상하부를 다치면 바소프레신 분비 경로가 끊긴다. 외상·수술 뒤 요붕증은 일시적이거나 세 단계(요붕증 → 저장된 호르몬이 새어 나오는 SIADH 기 → 영구 요붕증)로 진행할 수 있어 나트륨을 자주 본다.<br> <b>치료 중 주의</b>: 데스모프레신을 쓰면서 갈증 없이 물을 계속 많이 마시면 저나트륨혈증이 생기므로 갈증에 따라 마시게 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">중추성 요붕증(정답)</th><th>신성 요붕증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>수분 제한 뒤 소변</td><td>농축되지 않는다</td><td>농축되지 않는다</td></tr> <tr><td>데스모프레신 뒤 소변 삼투압</td><td><b>50 % 넘게 오른다</b></td><td><b>거의 오르지 않는다(10 % 미만)</b></td></tr> <tr><td>흔한 원인</td><td>머리 외상·뇌하수체 수술·종양·특발성</td><td>리튬·고칼슘혈증·저칼륨혈증·V2 수용체 돌연변이</td></tr> <tr><td>치료</td><td>데스모프레신</td><td>원인 제거, 저염식, 티아자이드(리튬이면 아밀로라이드)</td></tr> </tbody></table> 수분 제한까지는 둘이 같아 보인다 — 데스모프레신에 소변이 반응하는지가 가르고, 반응하면 부족한 호르몬을 채운다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 히드로클로로티아지드는 신성 요붕증에서 원위 세뇨관의 나트륨 재흡수를 막아 근위부 물 재흡수를 늘리는 치료다. 데스모프레신에 소변이 농축되지 않을 때 맞다.\n③ 물 섭취 제한은 일차 다음증에서 맞다. 일차 다음증은 혈청 나트륨이 낮거나 정상 하한이고 수분 제한만으로 소변이 농축되지만, 이 환자는 나트륨이 높고 농축되지 않았다.\n④ 저염식과 아밀로라이드는 리튬에 의한 신성 요붕증에서 집합관으로 리튬이 들어가는 것을 막는 치료다. 이 환자는 리튬을 먹은 적이 없고 데스모프레신에 반응한다.\n⑤ 3 % 고장성 식염수는 경련이나 의식 저하를 동반한 심한 저나트륨혈증을 빨리 올릴 때 쓴다. 이 환자는 오히려 고나트륨 쪽이라 상태를 악화시킨다."
+   },
+   {
+    "k": "함정",
+    "v": "수분 제한에 반응하지 않은 것만 보고 신성 요붕증 치료를 고르는 것 — 데스모프레신 뒤 소변 삼투압이 크게 오르면 중추성이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "수분 제한 뒤에도 소변이 농축되지 않다가 데스모프레신 투여 뒤 소변 삼투압이 50 % 이상 오르면 중추성 요붕증(AVP 결핍)으로 판단하고 데스모프레신으로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Christ-Crain M, et al. Diabetes insipidus. Nat Rev Dis Primers 2019;5:54 · Arima H, et al. Changing the name of diabetes insipidus: a position statement of the Working Group for Renaming Diabetes Insipidus. J Clin Endocrinol Metab 2022;108:1-3 (AVP deficiency / AVP resistance)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "수분 제한 뒤에도 소변이 묽다가 데스모프레신 뒤 소변 삼투압이 50 % 넘게(130 → 480 mOsm/kg) 올랐으므로 머리 외상 뒤 중추성 요붕증이며, 데스모프레신으로 치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "데스모프레신 뒤 소변 삼투압이 130 에서 480 mOsm/kg 으로 크게 올랐다 — 신성이면 거의 오르지 않는다",
+   "steps": 3,
+   "chain": [
+    "다뇨·다음 + 혈장 삼투압 302 에 소변 삼투압 110 → 물을 잡지 못하는 요붕증 계열(일차 다음증은 혈청 나트륨이 높지 않다)",
+    "수분 제한 뒤에도 소변 130 mOsm/kg → 바소프레신 작용 부족",
+    "데스모프레신 뒤 480 mOsm/kg → 콩팥은 반응 = 중추성 → 데스모프레신"
+   ],
+   "key": [
+    {
+     "item": "데스모프레신을 피하 주사하자 2시간 뒤 소변 삼투압이 480 mOsm/kg 으로 올랐다",
+     "why": "콩팥이 반응 — 중추성",
+     "also": []
+    },
+    {
+     "item": "소변 삼투압은 130 mOsm/kg 에 머물렀고",
+     "why": "수분 제한에도 농축되지 않는다 — 요붕증",
+     "also": []
+    },
+    {
+     "item": "교통사고로 머리를 다친 뒤부터",
+     "why": "뇌하수체 줄기·시상하부 손상의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 나트륨 147 mmol/L",
+     "why": "일차 다음증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "정신과 약이나 리튬을 먹은 적은 없다",
+     "why": "리튬에 의한 신성 요붕증·정신과 약 관련 다음증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "칼슘 9.2 mg/dL",
+     "why": "고칼슘혈증에 의한 신성 요붕증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "포도당 92 mg/dL",
+     "why": "당뇨병에 의한 삼투성 이뇨 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "머리 외상 뒤 다뇨·다음과 고삼투압·희석뇨가 있고, 수분 제한에도 소변이 농축되지 않다가 데스모프레신 뒤 소변 삼투압이 크게 올랐다. 중추성 요붕증(AVP 결핍)이므로 데스모프레신으로 치료한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "데스모프레신 뒤에도 소변 삼투압이 130 에서 140 mOsm/kg 정도로만 올랐다면 신성 요붕증으로 보고 원인 교정과 티아자이드를 쓴다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0308",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "혈액·종양 — 목욕 뒤 가려움과 두통",
+  "type": "혈액·종양 — 목욕 뒤 가려움과 두통",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-11",
+  "vignette": "A 58-year-old man comes to the physician because of headaches and itching after hot showers for 4 months. He does not smoke and has no history of lung disease or snoring. Temperature is 36.8°C (98.2°F), pulse is 78/min, and blood pressure is 148/90 mm Hg. His face is ruddy. The spleen tip is palpable 3 cm below the left costal margin. Oxygen saturation is 98% on room air. Hemoglobin concentration is 19.4 g/dL, hematocrit is 58%, leukocyte count is 13,200/mm3 with a normal differential and no immature cells, and platelet count is 520,000/mm3. Serum erythropoietin concentration is 2 mU/mL (N = 4-26).",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Testing for the BCR::ABL1 fusion gene",
+   "Overnight polysomnography",
+   "Abdominal CT for an erythropoietin-secreting tumor",
+   "Measurement of blood carboxyhemoglobin",
+   "Testing for the JAK2 V617F mutation"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: He has erythrocytosis (hemoglobin 19.4 g/dL, hematocrit 58%) with a low serum erythropoietin, plus aquagenic pruritus, splenomegaly, leukocytosis, and thrombocytosis. Low erythropoietin means the red cell production is autonomous rather than driven by hypoxia or a tumor, which points to polycythemia vera. The next step is testing for the JAK2 V617F mutation, present in about 95% of cases (exon 12 mutations in most of the rest).\n- 원리: <b>Why erythropoietin sorts the causes</b>: normally the kidney releases erythropoietin when tissue oxygen delivery falls, and red cells rise in response (secondary erythrocytosis: lung disease, sleep apnea, smoking with carboxyhemoglobin, high altitude) or because a tumor secretes it (renal cell carcinoma, hepatoma, cerebellar hemangioblastoma). In both, erythropoietin is normal or high. In polycythemia vera the marrow makes red cells without needing the hormone, so the excess red cell mass suppresses erythropoietin to low levels.<br> <b>Why JAK2</b>: the erythropoietin receptor signals through the JAK2 kinase. The V617F mutation disables JAK2's inhibitory pseudokinase domain, so the kinase is constantly active and drives proliferation of all myeloid lines — hence the high white cells and platelets, splenomegaly from extramedullary hematopoiesis, and pruritus from basophil and mast cell histamine release after warm water.<br> <b>Why it matters</b>: thrombosis is the main cause of death; phlebotomy to a hematocrit below 45% and low-dose aspirin are first-line treatment.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Polycythemia vera (correct)</th><th>Chronic myeloid leukemia (closest distractor)</th></tr></thead><tbody> <tr><td>Hemoglobin</td><td><b>High</b> (here 19.4 g/dL)</td><td>Normal or low</td></tr> <tr><td>White cells</td><td>Mildly raised, normal differential</td><td><b>Markedly raised</b> with myelocytes and basophilia</td></tr> <tr><td>Typical clue</td><td>Aquagenic pruritus, ruddy face, low erythropoietin</td><td>Massive splenomegaly, fatigue, left-shifted smear</td></tr> <tr><td>Diagnostic test</td><td>JAK2 V617F</td><td>BCR::ABL1 (Philadelphia chromosome)</td></tr> </tbody></table> Both are myeloproliferative neoplasms with splenomegaly; a high hemoglobin with low erythropoietin points to JAK2, whereas a striking leukocytosis with immature granulocytes points to BCR::ABL1.\n- 오답 이유:\n  - (A) BCR::ABL1 testing is the key study for chronic myeloid leukemia, which presents with marked leukocytosis, myelocytes, and basophilia; it would be chosen if the smear were left-shifted and hemoglobin were not elevated.\n  - (B) Polysomnography looks for obstructive sleep apnea, a cause of hypoxic secondary erythrocytosis; it would be appropriate if he snored, were obese, and had a normal or high erythropoietin.\n  - (C) Abdominal CT searches for renal cell carcinoma or hepatoma secreting erythropoietin; it would be ordered if serum erythropoietin were inappropriately high with normal oxygen saturation.\n  - (D) Carboxyhemoglobin measurement detects erythrocytosis from smoking or carbon monoxide exposure, in which erythropoietin is normal or high; he does not smoke and his erythropoietin is low.\n- 함정: Seeing leukocytosis, thrombocytosis, and splenomegaly and testing for BCR::ABL1 — a hemoglobin of 19.4 g/dL with suppressed erythropoietin is polycythemia vera.\n- 학습목표: 혈색소·적혈구용적률이 높고 혈청 에리트로포이에틴이 낮으며 목욕 뒤 가려움·비장비대가 있으면 진성적혈구증가증을 의심해 JAK2 V617F 돌연변이 검사를 한다\n- 근거·출처: Arber DA, et al. International Consensus Classification of myeloid neoplasms and acute leukemias. Blood 2022;140:1200-1228 (polycythemia vera criteria) · Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. Am J Hematol 2023;98:1465-1487",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has erythrocytosis (hemoglobin 19.4 g/dL, hematocrit 58%) with a low serum erythropoietin, plus aquagenic pruritus, splenomegaly, leukocytosis, and thrombocytosis. Low erythropoietin means the red cell production is autonomous rather than driven by hypoxia or a tumor, which points to polycythemia vera. The next step is testing for the JAK2 V617F mutation, present in about 95% of cases (exon 12 mutations in most of the rest)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why erythropoietin sorts the causes</b>: normally the kidney releases erythropoietin when tissue oxygen delivery falls, and red cells rise in response (secondary erythrocytosis: lung disease, sleep apnea, smoking with carboxyhemoglobin, high altitude) or because a tumor secretes it (renal cell carcinoma, hepatoma, cerebellar hemangioblastoma). In both, erythropoietin is normal or high. In polycythemia vera the marrow makes red cells without needing the hormone, so the excess red cell mass suppresses erythropoietin to low levels.<br> <b>Why JAK2</b>: the erythropoietin receptor signals through the JAK2 kinase. The V617F mutation disables JAK2's inhibitory pseudokinase domain, so the kinase is constantly active and drives proliferation of all myeloid lines — hence the high white cells and platelets, splenomegaly from extramedullary hematopoiesis, and pruritus from basophil and mast cell histamine release after warm water.<br> <b>Why it matters</b>: thrombosis is the main cause of death; phlebotomy to a hematocrit below 45% and low-dose aspirin are first-line treatment."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Polycythemia vera (correct)</th><th>Chronic myeloid leukemia (closest distractor)</th></tr></thead><tbody> <tr><td>Hemoglobin</td><td><b>High</b> (here 19.4 g/dL)</td><td>Normal or low</td></tr> <tr><td>White cells</td><td>Mildly raised, normal differential</td><td><b>Markedly raised</b> with myelocytes and basophilia</td></tr> <tr><td>Typical clue</td><td>Aquagenic pruritus, ruddy face, low erythropoietin</td><td>Massive splenomegaly, fatigue, left-shifted smear</td></tr> <tr><td>Diagnostic test</td><td>JAK2 V617F</td><td>BCR::ABL1 (Philadelphia chromosome)</td></tr> </tbody></table> Both are myeloproliferative neoplasms with splenomegaly; a high hemoglobin with low erythropoietin points to JAK2, whereas a striking leukocytosis with immature granulocytes points to BCR::ABL1."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) BCR::ABL1 testing is the key study for chronic myeloid leukemia, which presents with marked leukocytosis, myelocytes, and basophilia; it would be chosen if the smear were left-shifted and hemoglobin were not elevated.\n(B) Polysomnography looks for obstructive sleep apnea, a cause of hypoxic secondary erythrocytosis; it would be appropriate if he snored, were obese, and had a normal or high erythropoietin.\n(C) Abdominal CT searches for renal cell carcinoma or hepatoma secreting erythropoietin; it would be ordered if serum erythropoietin were inappropriately high with normal oxygen saturation.\n(D) Carboxyhemoglobin measurement detects erythrocytosis from smoking or carbon monoxide exposure, in which erythropoietin is normal or high; he does not smoke and his erythropoietin is low."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing leukocytosis, thrombocytosis, and splenomegaly and testing for BCR::ABL1 — a hemoglobin of 19.4 g/dL with suppressed erythropoietin is polycythemia vera."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈색소·적혈구용적률이 높고 혈청 에리트로포이에틴이 낮으며 목욕 뒤 가려움·비장비대가 있으면 진성적혈구증가증을 의심해 JAK2 V617F 돌연변이 검사를 한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Arber DA, et al. International Consensus Classification of myeloid neoplasms and acute leukemias. Blood 2022;140:1200-1228 (polycythemia vera criteria) · Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. Am J Hematol 2023;98:1465-1487"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "혈색소 19.4 g/dL 의 적혈구증가증에 에리트로포이에틴이 낮고 목욕 뒤 가려움·비장비대가 있으므로 진성적혈구증가증이며, 다음 검사는 JAK2 V617F 다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "혈색소가 높고 백혈구 감별계산이 정상이며 미성숙 세포가 없다 — 만성골수백혈병은 혈색소가 정상·낮고 좌방이동이 뚜렷하다",
+   "steps": 3,
+   "chain": [
+    "혈색소 19.4 g/dL·적혈구용적률 58 % → 적혈구증가증",
+    "산소포화도 정상·비흡연 + 에리트로포이에틴 낮음 → 이차성이 아닌 자율적 생산",
+    "목욕 뒤 가려움·비장비대·백혈구·혈소판 증가 → 진성적혈구증가증 → JAK2 V617F"
+   ],
+   "key": [
+    {
+     "item": "Hemoglobin concentration is 19.4 g/dL, hematocrit is 58%",
+     "why": "적혈구증가증",
+     "also": []
+    },
+    {
+     "item": "Serum erythropoietin concentration is 2 mU/mL",
+     "why": "낮다 — 일차성(자율적) 적혈구 생산",
+     "also": []
+    },
+    {
+     "item": "itching after hot showers",
+     "why": "수인성 가려움 — 진성적혈구증가증의 특징",
+     "also": []
+    },
+    {
+     "item": "The spleen tip is palpable 3 cm below the left costal margin",
+     "why": "골수증식종양의 비장비대",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "normal differential and no immature cells",
+     "why": "만성골수백혈병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Oxygen saturation is 98% on room air",
+     "why": "저산소에 의한 이차성 적혈구증가증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He does not smoke and has no history of lung disease or snoring",
+     "why": "흡연·폐질환·수면무호흡의 이차 원인을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "blood pressure is 148/90 mm Hg",
+     "why": "혈액 점도 증가와 함께 올 수 있으나 검사 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "혈색소 19.4 g/dL 의 적혈구증가증에 에리트로포이에틴이 낮고, 수인성 가려움·비장비대·백혈구·혈소판 증가가 있다. 이차 원인이 없으므로 진성적혈구증가증을 의심해 JAK2 V617F 를 검사한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "산소포화도가 정상인데 에리트로포이에틴이 높게 나왔다면 에리트로포이에틴 분비 종양을 찾는 복부 CT 가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0307",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "신경 — 일과성 허혈발작 뒤의 처치",
+  "type": "신경 — 일과성 허혈발작 뒤의 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-11",
+  "vignette": "68세 남자가 3일 전 15분 동안 오른손에 힘이 빠지고 말이 어눌해졌다가 저절로 완전히 회복되어 왔다. 고혈압과 이상지질혈증으로 약을 먹고 있으며, 하루 1갑씩 40년 동안 담배를 피웠다. 혈압 146/88 mmHg, 맥박 72회/분(규칙적)이다. 신경학적 진찰에서 이상은 없다. 왼쪽 목에서 잡음이 들린다. 뇌 MRI 확산강조영상에서 급성 경색은 없다. 경동맥 초음파와 CT 혈관조영술에서 왼쪽 속목동맥 기시부가 80 % 좁아져 있고 오른쪽 속목동맥은 30 % 좁아져 있다. 24시간 심전도 감시에서 심방세동은 없었다. 아스피린과 고강도 스타틴을 시작하였다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "정맥 알테플라제 투여",
+   "약물 치료 유지, 6개월 뒤 초음파 추적",
+   "양쪽 경동맥 내막절제술",
+   "2주 이내 왼쪽 경동맥 내막절제술",
+   "와파린 항응고 치료"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 오른손 힘 빠짐과 말 어눌함(실어증)은 왼쪽 대뇌 반구, 곧 왼쪽 속목동맥 영역의 일과성 허혈발작이다. 같은 쪽 속목동맥이 80 % 좁아져 있으므로 증상이 있는 70~99 % 협착이다. 최선의 약물 치료에 더해 경동맥 내막절제술을 하면 뇌졸중 위험이 크게 줄고, 이득은 증상 뒤 2주 안에 수술할 때 가장 크다.\n- 원리: <b>왜 증상이 있는 협착은 서둘러 수술하는가</b>: 일과성 허혈발작을 일으킨 경동맥 죽상판은 표면이 터지거나 궤양이 생긴 「불안정한」 판으로, 그 위에 생긴 혈전 조각이 다시 날아가 뇌졸중을 일으킬 위험이 처음 며칠~2주에 가장 높다. 그래서 NASCET·ECST 통합 분석에서 증상 뒤 2주 안에 수술하면 5년 동측 뇌졸중의 절대위험 감소가 가장 크고, 12주가 지나면 이득이 크게 줄었다.<br> <b>왜 70~99 % 인가</b>: 협착이 심할수록 흐름이 빨라지고 판이 불안정해 재발 위험이 크다. 70~99 % 협착에서 내막절제술의 절대위험 감소가 16 % 안팎으로 가장 크고, 50~69 % 에서는 이득이 작으며, 50 % 미만에서는 이득이 없다.<br> <b>왜 항응고가 아닌가</b>: 동맥 죽상판의 혈전은 혈소판이 주역이라 항혈소판제가 맞고, 와파린은 심방세동 같은 심장 색전원에서 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">증상 있는 70~99 % 협착(이 환자)</th><th>약물 치료만 하고 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당하는 상황</td><td>같은 쪽 영역의 TIA·경미한 뇌졸중 6개월 이내</td><td>무증상 협착, 증상 있는 50 % 미만 협착</td></tr> <tr><td>내막절제술 이득</td><td>크다 — 2주 안이 가장 크다</td><td>작거나 없다</td></tr> <tr><td>반대쪽 30 % 협착</td><td colspan=\"2\">무증상·경도 — 어느 경우든 수술하지 않는다</td></tr> </tbody></table> 협착률만이 아니라 「증상이 그 혈관 영역에서 났는가」가 먼저다 — 같은 쪽이면 70 % 이상에서 2주 안 수술, 반대쪽 경도 협착은 약물 치료.\n- 오답 이유:\n  - ① 정맥 알테플라제는 발병 4.5시간 안에 장애가 남아 있는 급성 허혈뇌졸중에 쓴다. 이 환자는 증상이 3일 전에 완전히 회복되었고 MRI 에 경색이 없다.\n  - ② 약물 치료만 하며 추적하는 것은 무증상 협착이나 증상이 있어도 협착이 50 % 미만일 때 맞다. 증상 있는 80 % 협착에서는 재발 뇌졸중 위험이 높다.\n  - ③ 반대쪽(오른쪽) 30 % 협착은 무증상의 경도 협착이라 수술 이득이 없다. 양쪽 수술은 수술 위험만 더하고 왼쪽 수술로 충분하다.\n  - ⑤ 와파린 항응고는 심방세동이나 심장 내 혈전처럼 심장에서 온 색전이 원인일 때 쓴다. 이 환자는 24시간 감시에서 심방세동이 없고 원인이 동맥 죽상판이다.\n- 함정: 증상이 이미 회복되었다는 이유로 약물 치료만 하고 추적하는 것 — 일과성 허혈발작 직후 2주가 재발 뇌졸중 위험이 가장 높은 시기다.\n- 학습목표: 증상이 있는 같은 쪽 속목동맥 70~99 % 협착(일과성 허혈발작)은 2주 안에 경동맥 내막절제술을 하는 적응증임을 안다\n- 근거·출처: Rothwell PM, et al. Endarterectomy for symptomatic carotid stenosis in relation to clinical subgroups and timing of surgery. Lancet 2004;363:915-924 · Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack. Stroke 2021;52:e364-e467",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "오른손 힘 빠짐과 말 어눌함(실어증)은 왼쪽 대뇌 반구, 곧 왼쪽 속목동맥 영역의 일과성 허혈발작이다. 같은 쪽 속목동맥이 80 % 좁아져 있으므로 증상이 있는 70~99 % 협착이다. 최선의 약물 치료에 더해 경동맥 내막절제술을 하면 뇌졸중 위험이 크게 줄고, 이득은 증상 뒤 2주 안에 수술할 때 가장 크다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 증상이 있는 협착은 서둘러 수술하는가</b>: 일과성 허혈발작을 일으킨 경동맥 죽상판은 표면이 터지거나 궤양이 생긴 「불안정한」 판으로, 그 위에 생긴 혈전 조각이 다시 날아가 뇌졸중을 일으킬 위험이 처음 며칠~2주에 가장 높다. 그래서 NASCET·ECST 통합 분석에서 증상 뒤 2주 안에 수술하면 5년 동측 뇌졸중의 절대위험 감소가 가장 크고, 12주가 지나면 이득이 크게 줄었다.<br> <b>왜 70~99 % 인가</b>: 협착이 심할수록 흐름이 빨라지고 판이 불안정해 재발 위험이 크다. 70~99 % 협착에서 내막절제술의 절대위험 감소가 16 % 안팎으로 가장 크고, 50~69 % 에서는 이득이 작으며, 50 % 미만에서는 이득이 없다.<br> <b>왜 항응고가 아닌가</b>: 동맥 죽상판의 혈전은 혈소판이 주역이라 항혈소판제가 맞고, 와파린은 심방세동 같은 심장 색전원에서 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">증상 있는 70~99 % 협착(이 환자)</th><th>약물 치료만 하고 추적(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>해당하는 상황</td><td>같은 쪽 영역의 TIA·경미한 뇌졸중 6개월 이내</td><td>무증상 협착, 증상 있는 50 % 미만 협착</td></tr> <tr><td>내막절제술 이득</td><td>크다 — 2주 안이 가장 크다</td><td>작거나 없다</td></tr> <tr><td>반대쪽 30 % 협착</td><td colspan=\"2\">무증상·경도 — 어느 경우든 수술하지 않는다</td></tr> </tbody></table> 협착률만이 아니라 「증상이 그 혈관 영역에서 났는가」가 먼저다 — 같은 쪽이면 70 % 이상에서 2주 안 수술, 반대쪽 경도 협착은 약물 치료."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정맥 알테플라제는 발병 4.5시간 안에 장애가 남아 있는 급성 허혈뇌졸중에 쓴다. 이 환자는 증상이 3일 전에 완전히 회복되었고 MRI 에 경색이 없다.\n② 약물 치료만 하며 추적하는 것은 무증상 협착이나 증상이 있어도 협착이 50 % 미만일 때 맞다. 증상 있는 80 % 협착에서는 재발 뇌졸중 위험이 높다.\n③ 반대쪽(오른쪽) 30 % 협착은 무증상의 경도 협착이라 수술 이득이 없다. 양쪽 수술은 수술 위험만 더하고 왼쪽 수술로 충분하다.\n⑤ 와파린 항응고는 심방세동이나 심장 내 혈전처럼 심장에서 온 색전이 원인일 때 쓴다. 이 환자는 24시간 감시에서 심방세동이 없고 원인이 동맥 죽상판이다."
+   },
+   {
+    "k": "함정",
+    "v": "증상이 이미 회복되었다는 이유로 약물 치료만 하고 추적하는 것 — 일과성 허혈발작 직후 2주가 재발 뇌졸중 위험이 가장 높은 시기다."
+   },
+   {
+    "k": "학습목표",
+    "v": "증상이 있는 같은 쪽 속목동맥 70~99 % 협착(일과성 허혈발작)은 2주 안에 경동맥 내막절제술을 하는 적응증임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rothwell PM, et al. Endarterectomy for symptomatic carotid stenosis in relation to clinical subgroups and timing of surgery. Lancet 2004;363:915-924 · Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack. Stroke 2021;52:e364-e467"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "오른손 힘 빠짐과 실어증은 왼쪽 속목동맥 영역의 일과성 허혈발작이고, 같은 쪽 80 % 협착이 있으므로 2주 안에 왼쪽 경동맥 내막절제술을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "증상이 협착된 같은 쪽 혈관 영역에서 났고 협착이 70 % 이상이다",
+   "steps": 3,
+   "chain": [
+    "오른손 위약 + 말 어눌함 → 왼쪽 반구(왼쪽 속목동맥 영역)의 일과성 허혈발작",
+    "왼쪽 속목동맥 80 % 협착, 심방세동 없음 → 증상 있는 동맥 원인 협착",
+    "증상 있는 70~99 % 협착 → 2주 이내 경동맥 내막절제술"
+   ],
+   "key": [
+    {
+     "item": "15분 동안 오른손에 힘이 빠지고 말이 어눌해졌다가 저절로 완전히 회복",
+     "why": "왼쪽 반구의 일과성 허혈발작",
+     "also": []
+    },
+    {
+     "item": "왼쪽 속목동맥 기시부가 80 % 좁아져",
+     "why": "증상 쪽과 같은 혈관의 고도 협착",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "24시간 심전도 감시에서 심방세동은 없었다",
+     "why": "심장 색전 가능성을 낮춘다 — 항응고 선택지를 밀어낸다",
+     "also": []
+    },
+    {
+     "item": "확산강조영상에서 급성 경색은 없다",
+     "why": "완성된 뇌졸중이 아니며 혈전용해 대상이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "오른쪽 속목동맥은 30 % 좁아져",
+     "why": "무증상 경도 협착 — 수술하지 않는다",
+     "also": []
+    },
+    {
+     "item": "3일 전",
+     "why": "2주 안 — 수술 이득이 가장 큰 시기",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "하루 1갑씩 40년 동안 담배를 피웠다",
+     "why": "죽상경화 위험 요인 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "오른손 힘 빠짐과 말 어눌함은 왼쪽 속목동맥 영역의 일과성 허혈발작이고, 같은 쪽 80 % 협착이 있다. 심방세동이 없는 증상 있는 70~99 % 협착이므로 약물 치료에 더해 2주 안에 왼쪽 경동맥 내막절제술을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "왼쪽 속목동맥 협착이 40 % 였다면 수술 이득이 없어 최선의 약물 치료와 추적이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0306",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "순환기 — 젊은 남성의 고콜레스테롤혈증",
+  "type": "순환기 — 젊은 남성의 고콜레스테롤혈증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-11",
+  "vignette": "A 32-year-old man comes to the physician for a routine health maintenance examination. He feels well. His father had a myocardial infarction at the age of 46 years. He does not smoke and exercises regularly. He takes no medications. Blood pressure is 118/74 mm Hg, and BMI is 23 kg/m2. Firm yellow nodules are palpable along both Achilles tendons. Fasting serum studies show total cholesterol 298 mg/dL, LDL cholesterol 224 mg/dL, HDL cholesterol 48 mg/dL, triglycerides 112 mg/dL, glucose 88 mg/dL, and thyroid-stimulating hormone 1.8 μU/mL. Urinalysis shows no protein. His estimated 10-year risk of atherosclerotic cardiovascular disease is less than 5%.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Recommend lifestyle changes and repeat the lipid panel in 1 year",
+   "Begin ezetimibe monotherapy",
+   "Begin fenofibrate therapy",
+   "Begin PCSK9 inhibitor monotherapy",
+   "Begin high-intensity statin therapy"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: LDL cholesterol of 224 mg/dL with tendon xanthomas and premature coronary disease in his father indicates heterozygous familial hypercholesterolemia. An LDL cholesterol of 190 mg/dL or higher is a statin benefit group on its own: high-intensity statin therapy (atorvastatin 40-80 mg or rosuvastatin 20-40 mg) is started without using a 10-year risk calculator, after secondary causes are excluded (normal TSH, no proteinuria).\n- 원리: <b>Why the risk calculator does not apply</b>: 10-year risk equations were built from population cohorts and weight age heavily, so a 32-year-old scores low even with lifelong very high LDL. Atherosclerosis depends on cumulative LDL exposure (\"LDL-years\"); in familial hypercholesterolemia the LDL receptor (or apoB/PCSK9) defect raises LDL from birth, and untreated men often have coronary events in their 40s. Treating early prevents that cumulative burden.<br> <b>Why high-intensity statin first</b>: statins inhibit HMG-CoA reductase, lowering hepatocyte cholesterol and upregulating the remaining functional LDL receptors. High intensity lowers LDL by about 50% or more. If LDL stays at or above about 100 mg/dL, ezetimibe and then a PCSK9 inhibitor are added.<br> <b>Why exclude secondary causes</b>: hypothyroidism, nephrotic syndrome, cholestasis, and drugs can raise LDL; treating the cause may correct it. Here TSH and the urinalysis are normal, and cascade screening of first-degree relatives is recommended.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">LDL ≥ 190 mg/dL (this patient)</th><th>Low calculated risk without LDL ≥ 190 (distractor)</th></tr></thead><tbody> <tr><td>Use 10-year risk calculator?</td><td><b>No</b> — statin indicated directly</td><td>Yes — guides whether to start a statin</td></tr> <tr><td>Statin intensity</td><td>High intensity</td><td>None, or moderate if risk-enhancing factors</td></tr> <tr><td>Typical clue</td><td>Tendon xanthomas, premature CAD in a parent</td><td>Mildly raised LDL, no xanthomas</td></tr> </tbody></table> Whichever way it is asked: LDL ≥ 190 mg/dL, diabetes aged 40-75, and clinical ASCVD are statin groups that do not wait for a risk score.\n- 오답 이유:\n  - (A) Lifestyle change with repeat testing fits a young adult with mildly raised LDL and low calculated risk; it would be wrong here because an LDL of 190 or higher needs drug therapy regardless of the score.\n  - (B) Ezetimibe monotherapy lowers LDL by only about 20% and is used as an add-on or when statins are not tolerated; it would be chosen if he had documented statin intolerance.\n  - (C) Fenofibrate mainly lowers triglycerides and is used for severe hypertriglyceridemia to prevent pancreatitis; his triglycerides are normal, and fibrates do little for LDL.\n  - (D) A PCSK9 inhibitor is added when LDL remains high despite maximally tolerated statin plus ezetimibe; it would be appropriate after first-line therapy fails, not as initial monotherapy.\n- 함정: Trusting the low 10-year risk estimate in a young patient — an LDL of 190 mg/dL or higher bypasses the calculator.\n- 학습목표: LDL 콜레스테롤 190 mg/dL 이상은 10년 위험 계산과 관계없이 고강도 스타틴의 적응증임을 알고, 이차 원인(갑상샘저하증·신증후군)을 먼저 배제한다\n- 근거·출처: Grundy SM, et al. 2018 AHA/ACC Guideline on the Management of Blood Cholesterol. Circulation 2019;139:e1082-e1143 · Nordestgaard BG, et al. Familial hypercholesterolaemia is underdiagnosed and undertreated in the general population. Eur Heart J 2013;34:3478-3490",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "LDL cholesterol of 224 mg/dL with tendon xanthomas and premature coronary disease in his father indicates heterozygous familial hypercholesterolemia. An LDL cholesterol of 190 mg/dL or higher is a statin benefit group on its own: high-intensity statin therapy (atorvastatin 40-80 mg or rosuvastatin 20-40 mg) is started without using a 10-year risk calculator, after secondary causes are excluded (normal TSH, no proteinuria)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the risk calculator does not apply</b>: 10-year risk equations were built from population cohorts and weight age heavily, so a 32-year-old scores low even with lifelong very high LDL. Atherosclerosis depends on cumulative LDL exposure (\"LDL-years\"); in familial hypercholesterolemia the LDL receptor (or apoB/PCSK9) defect raises LDL from birth, and untreated men often have coronary events in their 40s. Treating early prevents that cumulative burden.<br> <b>Why high-intensity statin first</b>: statins inhibit HMG-CoA reductase, lowering hepatocyte cholesterol and upregulating the remaining functional LDL receptors. High intensity lowers LDL by about 50% or more. If LDL stays at or above about 100 mg/dL, ezetimibe and then a PCSK9 inhibitor are added.<br> <b>Why exclude secondary causes</b>: hypothyroidism, nephrotic syndrome, cholestasis, and drugs can raise LDL; treating the cause may correct it. Here TSH and the urinalysis are normal, and cascade screening of first-degree relatives is recommended."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">LDL ≥ 190 mg/dL (this patient)</th><th>Low calculated risk without LDL ≥ 190 (distractor)</th></tr></thead><tbody> <tr><td>Use 10-year risk calculator?</td><td><b>No</b> — statin indicated directly</td><td>Yes — guides whether to start a statin</td></tr> <tr><td>Statin intensity</td><td>High intensity</td><td>None, or moderate if risk-enhancing factors</td></tr> <tr><td>Typical clue</td><td>Tendon xanthomas, premature CAD in a parent</td><td>Mildly raised LDL, no xanthomas</td></tr> </tbody></table> Whichever way it is asked: LDL ≥ 190 mg/dL, diabetes aged 40-75, and clinical ASCVD are statin groups that do not wait for a risk score."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Lifestyle change with repeat testing fits a young adult with mildly raised LDL and low calculated risk; it would be wrong here because an LDL of 190 or higher needs drug therapy regardless of the score.\n(B) Ezetimibe monotherapy lowers LDL by only about 20% and is used as an add-on or when statins are not tolerated; it would be chosen if he had documented statin intolerance.\n(C) Fenofibrate mainly lowers triglycerides and is used for severe hypertriglyceridemia to prevent pancreatitis; his triglycerides are normal, and fibrates do little for LDL.\n(D) A PCSK9 inhibitor is added when LDL remains high despite maximally tolerated statin plus ezetimibe; it would be appropriate after first-line therapy fails, not as initial monotherapy."
+   },
+   {
+    "k": "함정",
+    "v": "Trusting the low 10-year risk estimate in a young patient — an LDL of 190 mg/dL or higher bypasses the calculator."
+   },
+   {
+    "k": "학습목표",
+    "v": "LDL 콜레스테롤 190 mg/dL 이상은 10년 위험 계산과 관계없이 고강도 스타틴의 적응증임을 알고, 이차 원인(갑상샘저하증·신증후군)을 먼저 배제한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Grundy SM, et al. 2018 AHA/ACC Guideline on the Management of Blood Cholesterol. Circulation 2019;139:e1082-e1143 · Nordestgaard BG, et al. Familial hypercholesterolaemia is underdiagnosed and undertreated in the general population. Eur Heart J 2013;34:3478-3490"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "LDL 224 mg/dL 와 아킬레스건 황색종·아버지의 조기 심근경색은 가족성 고콜레스테롤혈증이며, LDL 190 mg/dL 이상은 위험 계산과 관계없이 고강도 스타틴을 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "10년 위험이 5 % 미만이어도 LDL 190 mg/dL 이상이면 위험 계산식을 쓰지 않는다",
+   "steps": 3,
+   "chain": [
+    "LDL 224 mg/dL + 아킬레스건 황색종 + 아버지 46세 심근경색 → 가족성 고콜레스테롤혈증",
+    "TSH 정상·단백뇨 없음 → 이차 원인 배제",
+    "LDL 190 mg/dL 이상 → 위험 계산 없이 고강도 스타틴"
+   ],
+   "key": [
+    {
+     "item": "LDL cholesterol 224 mg/dL",
+     "why": "190 mg/dL 이상 — 스타틴 직접 적응증",
+     "also": []
+    },
+    {
+     "item": "Firm yellow nodules are palpable along both Achilles tendons",
+     "why": "힘줄 황색종 — 가족성 고콜레스테롤혈증",
+     "also": []
+    },
+    {
+     "item": "His father had a myocardial infarction at the age of 46 years",
+     "why": "조기 관상동맥질환 가족력",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "thyroid-stimulating hormone 1.8 μU/mL",
+     "why": "갑상샘저하증에 의한 이차 고콜레스테롤혈증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis shows no protein",
+     "why": "신증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "10-year risk of atherosclerotic cardiovascular disease is less than 5%",
+     "why": "끌리기 쉬운 정보 — LDL 190 이상에서는 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "triglycerides 112 mg/dL",
+     "why": "정상 — 피브레이트의 적응증이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "LDL 224 mg/dL, 아킬레스건 황색종, 아버지의 46세 심근경색은 가족성 고콜레스테롤혈증이다. 이차 원인이 없고 LDL 이 190 mg/dL 이상이므로 10년 위험이 낮게 나와도 고강도 스타틴을 시작한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "LDL 이 150 mg/dL 이고 황색종·가족력이 없으며 10년 위험이 5 % 미만이었다면 생활습관 교정과 재검이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0305",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·산과·소화기·외과계·피부·순환기·신경·혈액종양·내분비·예방의학)",
+  "subtopic": "피부 — 아토피피부염 아이의 열과 발진",
+  "type": "피부 — 아토피피부염 아이의 열과 발진",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-11",
+  "vignette": "6세 남아가 2일 전부터 얼굴과 목에 생긴 아픈 발진과 열로 왔다. 생후 6개월부터 아토피피부염이 있어 보습제와 국소 스테로이드를 써 왔고, 최근 1주일 동안 목 부위 습진이 심해졌다. 어머니가 3일 전 입술에 물집이 생겼었다. 체온 38.6 °C, 맥박 118회/분이다. 습진이 있던 얼굴과 목에 지름 2~3 mm 의 고르게 생긴 둥글고 움푹 파인 미란이 무리지어 있고 일부는 출혈성 가피로 덮여 있다. 노란 꿀색 가피는 없다. 눈꺼풀과 결막은 정상이다. 미란 바닥을 긁어 만든 Tzanck 도말에서 다핵거대세포가 보인다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "경구 프레드니솔론 투여",
+   "국소 무피로신 단독 도포",
+   "아시클로버 투여",
+   "국소 스테로이드 강도 상향",
+   "경구 세팔렉신 단독 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 아토피피부염 병변 위에 열과 함께 고른 크기의 둥글고 움푹 파인(punched-out) 미란이 무리지어 생기고 출혈성 가피가 덮였으며, Tzanck 도말에서 다핵거대세포가 보인다. 입술 물집이 있던 어머니에게서 옮은 단순포진바이러스가 손상된 피부 장벽을 따라 퍼진 포진상 습진(카포시 수두모양 발진)이다. 피부과 응급으로 즉시 아시클로버(열·전신 증상이 있으면 정맥)를 시작한다.\n- 원리: <b>왜 아토피 피부에서 퍼지는가</b>: 아토피피부염에서는 필라그린 결핍 등으로 각질층 장벽이 무너져 있고, Th2 염증이 피부의 항바이러스 펩타이드(카텔리시딘·디펜신)와 인터페론 반응을 줄인다. 그래서 단순포진바이러스가 한 곳에 머물지 못하고 습진 부위 전체로 빠르게 퍼진다.<br> <b>왜 모양이 고르게 움푹 파이는가</b>: 바이러스는 표피 각질형성세포를 하나씩 감염시켜 거의 같은 시기에 같은 크기의 소수포를 만들고, 이것이 곧 터져 둥글고 움푹 파인 미란과 출혈성 가피가 된다. 세균 이차감염(농가진화)은 꿀색 가피와 고름이 특징이고 모양이 고르지 않다.<br> <b>왜 서둘러야 하는가</b>: 치료하지 않으면 바이러스혈증·각결막염·뇌염과 세균 이차 패혈증으로 생명을 위협한다. 확진을 기다리지 않고 아시클로버를 시작하고, 눈 주위 병변이 있으면 안과 진찰을 한다. 염증이 가라앉을 때까지 국소 스테로이드 강도를 올리지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">포진상 습진(정답)</th><th>세균 이차감염된 습진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>병변 모양</td><td><b>고른 크기</b>의 둥글고 움푹 파인 미란, 출혈성 가피</td><td>크기가 제각각인 진물, <b>노란 꿀색 가피</b>·고름</td></tr> <tr><td>전신 증상</td><td>열·통증이 흔하다</td><td>대개 없거나 가볍다</td></tr> <tr><td>검사</td><td>Tzanck 다핵거대세포, HSV PCR 양성</td><td>그람 양성 알균(황색포도알균)</td></tr> <tr><td>치료</td><td>아시클로버</td><td>세팔렉신 등 항포도알균 항생제</td></tr> </tbody></table> 두 합병증은 함께 올 수 있다 — 꿀색 가피가 겹치면 항생제를 더하지만, 움푹 파인 고른 미란이 보이면 항바이러스제가 먼저다.\n- 오답 이유:\n  - ① 경구 프레드니솔론은 심한 접촉피부염처럼 감염 없는 급성 염증에 쓰며, 단순포진바이러스가 퍼지고 있을 때는 전신 면역억제로 파종을 부추긴다.\n  - ② 국소 무피로신은 좁은 범위의 농가진에 쓰는 항포도알균 연고로, 꿀색 가피가 국한되어 있을 때 맞으며 바이러스 감염에는 효과가 없다.\n  - ④ 국소 스테로이드 강도 상향은 감염 없이 악화된 아토피피부염에 쓰며, 바이러스가 퍼지는 지금은 국소 면역을 더 억제해 병변을 넓힐 수 있다.\n  - ⑤ 경구 세팔렉신은 꿀색 가피와 고름이 있는 황색포도알균 이차감염에 쓰며, 이 환자에게 함께 줄 수는 있어도 단독으로는 바이러스를 치료하지 못한다.\n- 함정: 아토피피부염의 악화로 보고 국소 스테로이드를 올리거나, 감염이라는 것만 보고 항생제를 고르는 것 — 고른 크기의 움푹 파인 미란과 열은 단순포진바이러스다.\n- 학습목표: 아토피피부염 병변 위에 열과 함께 생긴 고른 크기의 움푹 파인 미란·출혈성 가피를 포진상 습진(카포시 수두모양 발진)으로 판단하고 즉시 아시클로버로 치료한다\n- 근거·출처: Bolognia JL, et al. Dermatology, 4th ed. Ch. Atopic dermatitis — eczema herpeticum (Kaposi varicelliform eruption) · Wollenberg A, et al. Predisposing factors and clinical features of eczema herpeticum: a retrospective analysis of 100 cases. J Am Acad Dermatol 2003;49:198-205 · American Academy of Pediatrics. Red Book 2024-2027, Herpes simplex — acyclovir for eczema herpeticum",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "아토피피부염 병변 위에 열과 함께 고른 크기의 둥글고 움푹 파인(punched-out) 미란이 무리지어 생기고 출혈성 가피가 덮였으며, Tzanck 도말에서 다핵거대세포가 보인다. 입술 물집이 있던 어머니에게서 옮은 단순포진바이러스가 손상된 피부 장벽을 따라 퍼진 포진상 습진(카포시 수두모양 발진)이다. 피부과 응급으로 즉시 아시클로버(열·전신 증상이 있으면 정맥)를 시작한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 아토피 피부에서 퍼지는가</b>: 아토피피부염에서는 필라그린 결핍 등으로 각질층 장벽이 무너져 있고, Th2 염증이 피부의 항바이러스 펩타이드(카텔리시딘·디펜신)와 인터페론 반응을 줄인다. 그래서 단순포진바이러스가 한 곳에 머물지 못하고 습진 부위 전체로 빠르게 퍼진다.<br> <b>왜 모양이 고르게 움푹 파이는가</b>: 바이러스는 표피 각질형성세포를 하나씩 감염시켜 거의 같은 시기에 같은 크기의 소수포를 만들고, 이것이 곧 터져 둥글고 움푹 파인 미란과 출혈성 가피가 된다. 세균 이차감염(농가진화)은 꿀색 가피와 고름이 특징이고 모양이 고르지 않다.<br> <b>왜 서둘러야 하는가</b>: 치료하지 않으면 바이러스혈증·각결막염·뇌염과 세균 이차 패혈증으로 생명을 위협한다. 확진을 기다리지 않고 아시클로버를 시작하고, 눈 주위 병변이 있으면 안과 진찰을 한다. 염증이 가라앉을 때까지 국소 스테로이드 강도를 올리지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">포진상 습진(정답)</th><th>세균 이차감염된 습진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>병변 모양</td><td><b>고른 크기</b>의 둥글고 움푹 파인 미란, 출혈성 가피</td><td>크기가 제각각인 진물, <b>노란 꿀색 가피</b>·고름</td></tr> <tr><td>전신 증상</td><td>열·통증이 흔하다</td><td>대개 없거나 가볍다</td></tr> <tr><td>검사</td><td>Tzanck 다핵거대세포, HSV PCR 양성</td><td>그람 양성 알균(황색포도알균)</td></tr> <tr><td>치료</td><td>아시클로버</td><td>세팔렉신 등 항포도알균 항생제</td></tr> </tbody></table> 두 합병증은 함께 올 수 있다 — 꿀색 가피가 겹치면 항생제를 더하지만, 움푹 파인 고른 미란이 보이면 항바이러스제가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 프레드니솔론은 심한 접촉피부염처럼 감염 없는 급성 염증에 쓰며, 단순포진바이러스가 퍼지고 있을 때는 전신 면역억제로 파종을 부추긴다.\n② 국소 무피로신은 좁은 범위의 농가진에 쓰는 항포도알균 연고로, 꿀색 가피가 국한되어 있을 때 맞으며 바이러스 감염에는 효과가 없다.\n④ 국소 스테로이드 강도 상향은 감염 없이 악화된 아토피피부염에 쓰며, 바이러스가 퍼지는 지금은 국소 면역을 더 억제해 병변을 넓힐 수 있다.\n⑤ 경구 세팔렉신은 꿀색 가피와 고름이 있는 황색포도알균 이차감염에 쓰며, 이 환자에게 함께 줄 수는 있어도 단독으로는 바이러스를 치료하지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "아토피피부염의 악화로 보고 국소 스테로이드를 올리거나, 감염이라는 것만 보고 항생제를 고르는 것 — 고른 크기의 움푹 파인 미란과 열은 단순포진바이러스다."
+   },
+   {
+    "k": "학습목표",
+    "v": "아토피피부염 병변 위에 열과 함께 생긴 고른 크기의 움푹 파인 미란·출혈성 가피를 포진상 습진(카포시 수두모양 발진)으로 판단하고 즉시 아시클로버로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, et al. Dermatology, 4th ed. Ch. Atopic dermatitis — eczema herpeticum (Kaposi varicelliform eruption) · Wollenberg A, et al. Predisposing factors and clinical features of eczema herpeticum: a retrospective analysis of 100 cases. J Am Acad Dermatol 2003;49:198-205 · American Academy of Pediatrics. Red Book 2024-2027, Herpes simplex — acyclovir for eczema herpeticum"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "아토피 병변 위에 열과 함께 고른 크기의 움푹 파인 미란과 출혈성 가피가 생기고 Tzanck 양성이므로 포진상 습진이며, 즉시 아시클로버를 준다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "노란 꿀색 가피가 없고 미란이 고른 크기로 움푹 파였으며 Tzanck 도말에서 다핵거대세포가 보인다",
+   "steps": 2,
+   "chain": [
+    "고른 크기의 둥글고 움푹 파인 미란 + 출혈성 가피 + 열 + Tzanck 다핵거대세포 → 포진상 습진",
+    "단순포진바이러스의 파종 → 항바이러스제(아시클로버) 즉시 투여"
+   ],
+   "key": [
+    {
+     "item": "고르게 생긴 둥글고 움푹 파인 미란이 무리지어 있고",
+     "why": "단순포진바이러스 감염의 모양",
+     "also": []
+    },
+    {
+     "item": "Tzanck 도말에서 다핵거대세포가 보인다",
+     "why": "헤르페스 계열 바이러스 감염",
+     "also": []
+    },
+    {
+     "item": "어머니가 3일 전 입술에 물집이 생겼었다",
+     "why": "단순포진바이러스 노출원",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "노란 꿀색 가피는 없다",
+     "why": "세균 이차감염(농가진화) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "체온 38.6 °C",
+     "why": "전신 증상이 있다 — 서둘러 치료하고 정맥 투여를 고려한다",
+     "also": []
+    },
+    {
+     "item": "눈꺼풀과 결막은 정상이다",
+     "why": "눈 침범이 없어 응급 안과 처치는 필요 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "아토피피부염 아이의 습진 부위에 열과 함께 고른 크기의 움푹 파인 미란·출혈성 가피가 생기고 Tzanck 도말이 양성이다. 포진상 습진이므로 확진을 기다리지 않고 아시클로버를 시작한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "미란이 고르지 않고 노란 꿀색 가피와 고름이 덮였으며 Tzanck 가 음성이고 그람 양성 알균이 보였다면 세팔렉신이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261011T202722Z_일일영상_2026-10-12_10units_10q_21cd954e",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0294",
   "exam": "imaging",
   "style": "usmle_style",
