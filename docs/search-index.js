@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-10",
+ "generated": "2026-10-11",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3527,
+  "total": 3532,
   "byType": {
    "concept": 98,
    "anatomy": 837,
+   "paper": 751,
    "imaging": 299,
-   "paper": 746,
    "kmle": 1344,
    "usmle": 186,
    "ailab": 14,
@@ -18,13 +18,13 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 837,
-   "Cardiology": 246,
-   "Nephrology": 195,
-   "Infectious Disease": 178,
+   "Cardiology": 247,
+   "Nephrology": 196,
+   "Infectious Disease": 179,
    "Pediatrics": 164,
    "Obstetrics & Gynecology": 118,
    "Hematology-Oncology": 110,
-   "Pathology": 108,
+   "Pathology": 109,
    "Psychiatry": 101,
    "Neurology": 100,
    "Rheumatology": 99,
@@ -37,7 +37,7 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 86,
    "Pulmonology": 86,
    "Hematology": 81,
-   "Laboratory Medicine": 74,
+   "Laboratory Medicine": 75,
    "산부인과": 50,
    "순환기": 28,
    "Physiology": 21,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "medium": 1046,
+   "medium": 1051,
    "high": 2431,
    "low": 50
   },
@@ -112,6 +112,91 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-11.md",
    "snippet": "오늘의 학습 (2026 10 11 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 31일 · Tagging 2까지 8일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-11 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 11 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 31일 · Tagging 2까지 8일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0751",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BJU international",
+   "confidence": "medium",
+   "date": "2026-10-10",
+   "path": "content/papers/2026/2026-10-10_paper-2026-0751_comparative_accuracy_of_imaging_modalities_for_differentiati.md",
+   "snippet": "Title Comparative accuracy of imaging modalities for differentiating malignant small testicular masses Authors Dua Yajat, Maheshwari Anusha, Perera Marlon, Murphy Declan, Lawrentschuk Nathan, Sathianathen Niranjan Journal / DOI BJU internat",
+   "text": "Laboratory Medicine scraped pubmed PubMed / BJU international Title Comparative accuracy of imaging modalities for differentiating malignant small testicular masses Authors Dua Yajat, Maheshwari Anusha, Perera Marlon, Murphy Declan, Lawrentschuk Nathan, Sathianathen Niranjan Journal / DOI BJU international · DOI: 10.1111/bju.70492 · PMID: 42856056 https://pubmed.ncbi.nlm.nih.gov/42856056/ Abstract OBJECTIVES: To synthesise evidence comparing the diagnostic performance of imaging modalities in differentiating malignant from benign small testicular masses. PATIENTS AND METHODS: A Preferred Reporting Items for Systematic Reviews and Meta Analyses (PRISMA) compliant search of PubMed, Scopus, Cochrane and Web of Science databases up to 6 May 2026 identified 11 studies comprising 707 patients with small testicular masses (predominantly <2 cm) who underwent imaging prior to a histopathological or, where unavailable, a mixed clinical/radiological follow up reference standard. Diagnostic accuracy measures for six modalities (brightness mode [B Mode] ultrasonography [US], colour doppler US [CDUS], contrast enhanced US [CEUS], magnetic resonance imaging [MRI], strain elastography [SE] and strain ratio [SR]) were synthesised using a Bayesian bivariate hierarchical summary receiver operating characteristic model. RESULTS: The CEUS demonstrated the most reliable discriminatory ability with a pooled sensitivity of 91% and pooled specificity of 81%, yielding the highest diagnostic odds ratio of 46. B Mode US remains a valid screening test with the highest sensitivity of 96% but a specificity of only 39%. CDUS showed a pooled sensitivity of 69% and a specificity of 81%. MRI had a pooled sensitivity of 91% and a specificity of 38%. SE demonstrated a pooled sensitivity of 87% and a specificity of 56%. Finally, SR reported the lowest sensitivity at 74% and a specificity of 50%. CEUS demonstrated significantly higher specificity than B Mode US (ratio 1.9, 95% posterior interval [PI] 1.2 4.4) and MRI (ratio 1.8, 95% PI 1.0 5.2). CONCLUSION: The CEUS demonstrates the highest combined sensitivity and specificity for differentiating benign from malignant testicular masses, significantly outperforming conventional B Mode US and MRI in specificity. CEUS represents a compelling decision making tool to support testis sparing strategies and reduce unnecessary orchidectomies for indeterminate small testicular masses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0750",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Head & neck",
+   "confidence": "medium",
+   "date": "2026-10-10",
+   "path": "content/papers/2026/2026-10-10_paper-2026-0750_long_term_outcomes_of_idh2_mutant_sinonasal_carcinomas_compa.md",
+   "snippet": "Title Long Term Outcomes of IDH2 Mutant Sinonasal Carcinomas Compared With IDH2 Wild Type Sinonasal Undifferentiated Carcinoma Authors Scholfield Daniel W, Axiotakis Lucas, Woods Robbie, Tai Katherine, Eagan Alana, Boe Lillian A, Finnegan E",
+   "text": "Pathology scraped pubmed PubMed / Head & neck Title Long Term Outcomes of IDH2 Mutant Sinonasal Carcinomas Compared With IDH2 Wild Type Sinonasal Undifferentiated Carcinoma Authors Scholfield Daniel W, Axiotakis Lucas, Woods Robbie, Tai Katherine, Eagan Alana, Boe Lillian A, Finnegan Emma, Tam Kenric, et al. Journal / DOI Head & neck · DOI: 10.1002/hed.70495 · PMID: 42855994 https://pubmed.ncbi.nlm.nih.gov/42855994/ Abstract BACKGROUND: Sinonasal carcinomas are aggressive and often locally invasive at presentation, with no universally accepted treatment approach. Histopathologic IDH2 mutant status appears to be associated with improved treatment response and survival. However, the clinical significance of histopathologic classification among IDH2 mutant sinonasal carcinomas, as well as that of IDH2 mutation status within SNUC, remains unclear and long term clinical outcome data are limited. METHODS: Records from a prospectively maintained skull base database at a large, tertiary care hospital system from 1986 to 2024 were reviewed. Patients with a diagnosis of SNUC or sinonasal tumor of any histopathology positive for IDH2 R172 mutation were identified. SMARCB1 deficient, SMARCA4 deficient, NUT sinonasal carcinomas, and other small round cell mimickers were excluded. After histopathologic confirmation, 22 IDH2 mutant SNUC, 14 IDH2 mutant non SNUC, and 8 IDH2 wildtype SNUC cases were amenable to comprehensive clinicopathologic data review. A presence of IDH2 R172 and pathogenic TP53 mutations was determined by molecular testing and/or by immunohistochemistry. RESULTS: The median age at diagnosis was 58 years and 61% of patients were male. The majority of patients presented with T4b disease (41% of IDH2 mutant SNUC; 57% of IDH2 mutant non SNUC; 75% of IDH2 wildtype SNUC; p = 0.3). There was no significant difference in the proportion of patients presenting with orbital invasion (55% IDH2 mutant SNUC; 64% IDH2 mutant non SNUC; 75% of IDH2 wildtype SNUC; p = 0.7) or intracranial invasion (82% IDH2 mutant SNUC; 79% IDH2 mutant non SNUC; 75% of IDH2 wildtype SNUC; p = 0.7). On histopathology, there was no significant difference in perineural invasion and margin status between the three subgroups (p 0.6). A greater proportion of IDH2 mutant non SNUCs had TP53 mutations (67%) than IDH2 mutant SNUC (31%) and IDH2 wildtype SNUC (29%) (p = 0.13). Across the cohort, 41% of patients received neoadjuvant chemotherapy, with a partial response by RECIST criteria in 94% of patients across the subgroups. Median follow up was 28 months (IQR 11 64 months). 5 year DSS of 73% in IDH2 mutant SNUC, 75% in IDH2 mutant non SNUC and 80% in IDH2 wildtype SNUC (p = 0.78). 5 year RFS was 53% in IDH2 mutant SNUC, 48% in IDH2 mutant non SNUC and 43% in IDH2 wildtype SNUC (p = 0.78). CONCLUSION: Upfront assessment of IDH2 mutation status in sinonasal carcinoma patients may be warranted to select patients for clinical trials with IDH inhibitors. However, no significant differences in the extent of disease at presentation or response to induction chemotherapy were observed according to histopathologic classification among IDH2 mutant sinonasal carcinomas or IDH2 mutation status within SNUC. Larger series are required to determine the prognostic significance of IDH2 mutation status in sinonasal carcinoma patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0749",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Expert review of cardiovascular therapy",
+   "confidence": "medium",
+   "date": "2026-10-10",
+   "path": "content/papers/2026/2026-10-10_paper-2026-0749_left_ventricular_ejection_fraction_recovery_under_contempora.md",
+   "snippet": "Title Left ventricular ejection fraction recovery under contemporary quadruple guideline directed therapy and the need for ICD/CRT D implantation in HFrEF: a retrospective single center cohort study Authors Ajmi Issameddine, Frings Mathis P",
+   "text": "Nephrology scraped pubmed PubMed / Expert review of cardiovascular therapy Title Left ventricular ejection fraction recovery under contemporary quadruple guideline directed therapy and the need for ICD/CRT D implantation in HFrEF: a retrospective single center cohort study Authors Ajmi Issameddine, Frings Mathis Philipp, Forkmann Mathias, Mahnkopf Christian Journal / DOI Expert review of cardiovascular therapy · DOI: 10.1080/14779072.2026.2748165 · PMID: 42855941 https://pubmed.ncbi.nlm.nih.gov/42855941/ Abstract BACKGROUND: Guidelines advise deferring primary prevention implantable cardioverter defibrillator (ICD) or cardiac resynchronization therapy defibrillator (CRT D) implantation until left ventricular ejection fraction (LVEF) is reassessed after at least three months of medical therapy in heart failure with reduced ejection fraction (HFrEF). Real world data under contemporary quadruple therapy are limited. RESEARCH DESIGN AND METHODS: Retrospective single center cohort of 65 HFrEF patients (Coburg Hospital, Germany; October 2023 December 2024), prescribed beta blocker, angiotensin receptor neprilysin inhibitor, mineralocorticoid receptor antagonist and SGLT2 inhibitor (all four in 92%; doses not recorded). LVEF was measured by echocardiography (TTE) and cardiac magnetic resonance (CMR) at baseline and ~3 months; reader blinding was not documented. Device implantation followed guideline criteria. Patients with severe arrhythmic events were excluded. RESULTS: Twenty nine patients (44.6%) received a device. LVEF rose on TTE (28.0→36.0%) and CMR (26.3→38.5%) (both p < 0.001), mainly without device implantation (TTE +13.0 vs + 1.5 points). Larger baseline left ventricular end diastolic diameter was associated with smaller recovery (β = 0.41, p = 0.006) and device implantation (odds ratio 1.11/mm, 95% CI 1.01 1.22). Adverse events were not recorded. CONCLUSIONS: LVEF recovery was common, and associations are consistent with disease severity. Findings are hypothesis generating; absent dose, arrhythmic outcome and wearable defibrillator data and the selected cohort limit generalizability. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0748",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of intensive care medicine",
+   "confidence": "medium",
+   "date": "2026-10-10",
+   "path": "content/papers/2026/2026-10-10_paper-2026-0748_nailfold_capillaroscopy_reveals_peripheral_microcirculatory_.md",
+   "snippet": "Title Nailfold Capillaroscopy Reveals Peripheral Microcirculatory Trajectories in Septic Shock Authors Inukai Koichi, Tane Shiho, Kittaka Hirotada, Sawano Hirotaka, Ito Yusuke, Morita Masanori Journal / DOI Journal of intensive care medicin",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of intensive care medicine Title Nailfold Capillaroscopy Reveals Peripheral Microcirculatory Trajectories in Septic Shock Authors Inukai Koichi, Tane Shiho, Kittaka Hirotada, Sawano Hirotaka, Ito Yusuke, Morita Masanori Journal / DOI Journal of intensive care medicine · DOI: 10.1177/08850666261496220 · PMID: 42855975 https://pubmed.ncbi.nlm.nih.gov/42855975/ Abstract BackgroundSepsis induced microcirculatory dysfunction may persist despite systemic hemodynamic stabilization, yet longitudinal changes in peripheral microvascular structure and flow during recovery remain insufficiently characterized. We used nailfold capillaroscopy (NFC) to characterize these changes during recovery from septic shock.MethodsIn this prospective two center study, patients with Sepsis 3 septic shock underwent NFC during shock and after clinician confirmed hemodynamic stabilization. Baseline NFC analyses required analyzable initial recordings; longitudinal analyses required paired assessments and survival to reassessment. Mortality was prespecified as the primary outcome. Longitudinal NFC changes and the association between change in red blood cell (RBC) velocity and lactate clearance were prespecified; outcome stratified analyses were post hoc and exploratory.ResultsOf 25 patients meeting clinical eligibility criteria, 21 were enrolled, 19 had analyzable baseline NFC recordings, and 15 had paired assessments; four died before reassessment. Baseline RBC velocity was 0.268 mm/s in survivors and 0.290 mm/s in non survivors (P = 0.653). In the paired cohort, RBC velocity increased from 0.295 to 0.550 mm/s; median within patient change was 0.167 mm/s (95% CI, 0.067 to 0.609; P = 0.1531). The median within patient change in capillary length was 42.1 μm (95% CI, 7.3 to 65.3; P = 0.0125). Median ΔRBC velocity was 0.393 mm/s in survivors and 0.127 mm/s in non survivors; the between group median difference was 0.520 mm/s (95% CI, 0.042 to 1.368; P = 0.0256). The prespecified association between ΔRBC velocity and lactate clearance was positive but imprecise (Spearman's rho = 0.41; 95% CI, 0.15 to 0.77; P = 0.133).ConclusionsNFC captured dynamic and heterogeneous peripheral microcirculatory changes despite systemic hemodynamic stabilization. Increased RBC velocity among survivors suggests that serial NFC may complement conventional macrocirculatory assessment by providing information on microcirculatory recovery. These findings support further prospective evaluation of NFC as a feasible bedside tool for longitudinal microcirculatory monitoring. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0747",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of cardiovascular nursing",
+   "confidence": "medium",
+   "date": "2026-10-10",
+   "path": "content/papers/2026/2026-10-10_paper-2026-0747_six_minute_walk_distance_captures_broader_patient_reported_h.md",
+   "snippet": "Title Six Minute Walk Distance Captures Broader Patient Reported Health Than Peak Oxygen Uptake in Heart Failure Authors Altay Ahmet Burak, Karapolat Hale, Yağız On Arzu Journal / DOI European journal of cardiovascular nursing · DOI: 10.109",
+   "text": "Cardiology scraped pubmed PubMed / European journal of cardiovascular nursing Title Six Minute Walk Distance Captures Broader Patient Reported Health Than Peak Oxygen Uptake in Heart Failure Authors Altay Ahmet Burak, Karapolat Hale, Yağız On Arzu Journal / DOI European journal of cardiovascular nursing · DOI: 10.1093/eurjcn/zvag238 · PMID: 42856066 https://pubmed.ncbi.nlm.nih.gov/42856066/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0300",
@@ -13102,8 +13187,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/psychiatry/cn.psy.ocd.ssri-trial-optimization.md",
-   "snippet": "정의 강박장애는 원치 않게 반복되는 강박 사고와, 그 불안을 풀려고 되풀이하는 강박 행동이 일상 기능을 해치는 병이다. 오염·세균 공포와 손 씻기, 세기, 문을 잠갔는지 확인·재확인이 흔하고, 모든 경우에 강박 활동이 하루 1시간을 넘는다 [[harrison 21: 452장 p.3546]]. 이 정리본의 목표는 진단이 아니라, SSRI 를 시작한 뒤 「언제 무엇으로 넘어가는가」 — 시작 용량 4주 무반응이 왜 증량·유지의 시점",
-   "text": "Psychiatry 정의 강박장애는 원치 않게 반복되는 강박 사고와, 그 불안을 풀려고 되풀이하는 강박 행동이 일상 기능을 해치는 병이다. 오염·세균 공포와 손 씻기, 세기, 문을 잠갔는지 확인·재확인이 흔하고, 모든 경우에 강박 활동이 하루 1시간을 넘는다 [[harrison 21: 452장 p.3546]]. 이 정리본의 목표는 진단이 아니라, SSRI 를 시작한 뒤 「언제 무엇으로 넘어가는가」 — 시작 용량 4주 무반응이 왜 증량·유지의 시점이고 증강·교체·벤조디아제핀의 시점이 아닌지 설명하는 것 이다. 병태생리 강박 행동의 해부학은 안와전두피질·꼬리핵·창백핵 회로로 생각된다. 꼬리핵은 습관·기술 학습의 획득·유지에 관여하며, 강박 행동을 줄이는 데 성공한 치료는 꼬리핵의 대사 활동도 줄인다 [[harrison 21: 452장 p.3546]]. 쌍둥이 연구는 유전 기여를 시사하고, 가족 연구에서 투렛장애와 함께 모이며 둘 다 남성·첫째에서 더 흔하다 [[harrison 21: 452장 p.3546]]. 약이 듣는 기전은 세로토닌 이다. 클로미프라민의 강박장애 효과는 항우울 작용과 무관하고 [[harrison 21: 452장 p.3546]], 세로토닌 재흡수를 막는 약(SSRI·클로미프라민·벤라팍신·둘록세틴)만 효과를 보인다 — 부프로피온 같은 비세로토닌 항우울제에 자리가 없는 이유다. 세로토닌계가 안와전두–선조체 회로를 재조정하는 데는 시간과 용량이 필요해, 강박장애의 반응은 우울증보다 늦고 목표 용량이 높다 — 「충분 시도 = 최대 내약 용량에서 4–6주 포함 8–12주」라는 기준이 여기서 나온다 [[?apa ocd 2007]]. 벤조디아제핀은 GABA 로 불안을 누를 뿐 이 회로를 바꾸지 않는다. 기전에서 소견으로 강박 사고 : 오염·화재·해를 끼칠 것 같은 생각이 침투적으로 반복된다. 환자는 대개 지나치다는 것을 안다(병식 양호) — 망상과 다르다. 강박 행동 : 사고가 일으킨 불안을 풀려는 확인·씻기·세기. 하루 1시간 이상, 기능 저하 [[harrison 21: 452장 p.3546]]. 숨김과 단서 : 부끄러워 숨기므로 손등이 갈라지고 붉거나(씻기), 반점 탈모(뽑기)가 있으면 반복 사고·행동을 직접 묻는다 [[harrison 21: 452장 p.3546]]. 동반 질환 : 우울·다른 불안장애·섭식장애·틱이 흔하다 [[harrison 21: 452장 p.3546]]. 틱·병식 저하는 증강 약 선택에 영향을 준다. 경과 : 평생 유병률 2–3 %, 성인 초기에 서서히 시작, 대개 좋아졌다 나빠졌다 하며 일부는 꾸준히 나빠진다 [[harrison 21: 452장 p.3546]]. 치료 반응의 「음성」 해석 : 시작 용량 4주에 변화가 없다는 것은 정보가 아직 없다는 뜻이지 실패가 아니다 — 판정은 충분 시도 뒤에만 가능하다. 감별 강박성 성격장애 : 완벽주의·경직이 자아동조적이고 침투적 강박 사고·의식 행동이 없다(C군 성격장애) [[harrison 21: 452장 p.3546]]. 범불안장애·공황장애 : 걱정의 내용이 오염·확인 의식으로 구조화되지 않는다. 정신병적 장애 : 병식이 없고 망상·환청. 병식이 나쁜 강박장애와 경계가 흐릴 수 있어 항정신병약 증강 결정에 영향. 틱장애·투렛 : 함께 모이는 경향 [[harrison 21: 452장 p.3546]]. 틱 동반은 항정신병약 증강의 근거. 우울장애 : 반추는 기분 일치적이고 의식 행동이 없다. 동반 시 세로토닌 약을 축으로 유지. 검사 검사실 검사로 진단하지 않는다. 필요한 것은 ① 증상 평가(Y BOCS 같은 척도로 기준선과 반응 추적) ② 현재 약의 용량·기간·순응도·부작용 — 「무반응」을 판정하기 전의 필수 정보 ③ 동반 질환(우울·틱·병식) ④ 약물 상호작용·심전도(클로미프라민 고려 시). 갑상선기능·약물 선별은 이차 원인 배제용이다. 치료 1차. SSRI(플루옥세틴·플루복사민·파록세틴·설트랄린 등) + 노출·반응방지. SSRI 는 클로미프라민과 효과가 같고 부작용이 더 양호하다 [[harrison 21: 452장 p.3546]]. 행동치료·노출·반응방지는 약물만큼의 호전을 가져오며 단계적 노출·일기·강박 행동 지연 기법이 효과적이다 [[harrison 21: 452장 p.3546]]. 충분 시도. 부작용이 없으면 증량한다 — 강박장애의 목표 용량은 우울증보다 높다(해리슨 용량 범위: 플루옥세틴 5–60, 플루복사민 25–300, 파록세틴 40–60, 설트랄린 50–150 mg/일 [[harrison 21: 452장 p.3546]]). 최대 내약 용량에서 4–6주를 포함해 8–12주를 채운 뒤 판정한다 [[?apa ocd 2007]]. 시작 용량 4주 무반응·부작용 없음 = 증량·유지의 시점 이다. 충분 시도 뒤. 약물 단독으로 충분히 좋아지는 환자는 50–60 % 다 [[harrison 21: 452장 p.3546]]. 부분 반응 → 증강(저용량 항정신병약·부스피론 등; 해리슨은 벤조디아제핀도 증강 선택지로 적는다) [[harrison 21: 452장 p.3546]]. 무반응 → 다른 SSRI 또는 클로미프라민 교체. 심한 불응 → 뇌심부자극 [[harrison 21: 452장 p.3546]]. 유지. 반응이 오면 장기 유지가 대개 필요하다 [[harrison 21: 452장 p.3546]]. 반응 확인·재평가. 척도로 4주마다 추적하되 판정은 충분 시도 뒤에. 부작용으로 증량이 막히면 견딜 수 있는 용량에서 기간을 채우고 교체를 고려한다. 권고와 예외 「4주 무반응」은 실패가 아니다 — 용량과 기간이 채워졌는지 먼저 본다. 증강·교체는 충분 시도 뒤의 선택이다. 순서를 건너뛰면 무엇이 안 들었는지 알 수 없다. 벤조디아제핀은 강박 증상을 줄이지 못한다. 해리슨이 치료 저항의 증강 선택지로 언급하는 것 [[harrison 21: 452장 p.3546]]과 「시작 4주째의 다음 처치」는 다른 질문이다 — 차이를 알고 답한다. 부프로피온은 기전상 자리가 없다. 에스시탈로프람은 해리슨의 미국 승인 목록에 없다 [[harrison 21: 452장 p.3546]] — 문항이 에스시탈로프람을 썼다면 「이미 시작한 세로토닌 약을 충분히」라는 논리는 같다. 국내 허가 범위는 확인하지 못했다(검토 항목). APA 지침의 충분 시도 문구는 원문을 열지 못해 서지만 남겼다(검토 항목). (심화) 왜 강박장애는 우울증보다 높은 용량·긴 시간이 필요한가 우울증의 SSRI 반응은 2–4주 안에 시작 용량에서 나타나는 경우가 많지만, 강박장애의 용량–반응 관계는 더 가파르고 반응이 6–12주에 걸쳐 서서히 나타난다. 안와전두–선조체 회로의 세로토닌 수용체 하향 조절과 습관 회로의 재학습이 시간을 요구한다는 설명이 있고, 노출·반응방지가 같은 회로(꼬리핵 대사 감소)를 통해 효과를 낸다는 영상 소견이 이를 뒷받침한다 [[harrison 21: 452장 p.3546]]. 임상적으로 이것은 「너무 빨리 포기하는 것」이 가장 흔한 치료 실패의 원인이라는 뜻이다 — 증강·교체의 근거 연구들도 모두 충분 시도를 채운 환자에서 나왔다 [[?apa ocd 2007]]."
+   "snippet": "판단 — 왜 증량·유지가 먼저인가 강박장애의 SSRI 반응은 우울증보다 늦고 목표 용량이 높다 — 「충분 시도」는 최대 내약 용량에서 4–6주를 포함한 8–12주다 [[?apa ocd 2007]]. 시작 용량 4주 무반응은 정보가 아직 없다는 뜻이지 실패가 아니다. 그래서 부작용이 없으면 다음 처치는 증량해 기간을 채우는 것이고, 노출·반응방지를 병행한다. 증강·교체는 충분 시도 뒤 부분 반응·무반응일 때다. 순서를 건너뛰면 ",
+   "text": "Psychiatry 판단 — 왜 증량·유지가 먼저인가 강박장애의 SSRI 반응은 우울증보다 늦고 목표 용량이 높다 — 「충분 시도」는 최대 내약 용량에서 4–6주를 포함한 8–12주다 [[?apa ocd 2007]]. 시작 용량 4주 무반응은 정보가 아직 없다는 뜻이지 실패가 아니다. 그래서 부작용이 없으면 다음 처치는 증량해 기간을 채우는 것이고, 노출·반응방지를 병행한다. 증강·교체는 충분 시도 뒤 부분 반응·무반응일 때다. 순서를 건너뛰면 무엇이 안 들었는지 알 수 없다. 벤조디아제핀·부프로피온은 순서가 아니라 기전에서 빠진다(표). 기전 — 세로토닌과 안와전두–선조체 회로 강박 행동의 해부학은 안와전두피질·꼬리핵·창백핵 회로로 생각된다. 꼬리핵은 습관 학습에 관여하며, 강박 행동을 줄이는 데 성공한 치료는 꼬리핵의 대사 활동도 줄인다 [[harrison 21: 452장 p.3546]]. 쌍둥이 연구는 유전 기여를 시사하고, 가족 연구에서 투렛장애와 함께 모인다 [[harrison 21: 452장 p.3546]]. 약이 듣는 축은 세로토닌 이다. 클로미프라민의 강박장애 효과는 항우울 작용과 무관하고 [[harrison 21: 452장 p.3546]], 세로토닌 재흡수를 막는 약(SSRI·클로미프라민·벤라팍신·둘록세틴)만 효과를 보인다. 이 회로를 재조정하는 데 시간과 용량이 필요해 충분 시도 기준이 길다. 벤조디아제핀은 GABA 로 불안을 누를 뿐 회로를 바꾸지 않는다. 가르는 소견 — 강박장애인가, 지금 어느 단계인가 강박 사고 : 오염·화재·해를 끼칠 것 같은 생각이 침투적으로 반복되고, 환자는 대개 지나치다는 것을 안다(병식 양호) — 망상과 다르다. 강박 행동 : 사고가 일으킨 불안을 풀려는 확인·씻기·세기, 하루 1시간 이상·기능 저하 [[harrison 21: 452장 p.3546]]. 숨기므로 손등 갈라짐·반점 탈모가 있으면 직접 묻는다. 동반·경과 : 우울·다른 불안장애·섭식장애·틱이 흔하고, 평생 유병률 2–3 %, 성인 초기에 서서히 시작해 대개 좋아졌다 나빠졌다 한다 [[harrison 21: 452장 p.3546]]. 비슷한 상태 : 강박성 성격장애는 완벽주의가 자아동조적이고 침투적 강박 사고·의식 행동이 없다 [[harrison 21: 452장 p.3546]]. 범불안·공황은 걱정이 의식 행동으로 구조화되지 않고, 정신병적 장애는 병식이 없고 망상·환청이 있다. 우울의 반추는 기분 일치적이다. 틱·투렛 동반은 항정신병약 증강의 근거다. 단계 판정에 필요한 것 : 검사실 검사로 진단하지 않는다. 증상 척도(Y BOCS 등)로 기준선과 반응을 추적하고, 현재 약의 용량·기간·순응도·부작용을 먼저 확인한다. 갑상선기능·약물 선별은 이차 원인 배제용, 심전도는 클로미프라민 고려 시. 선택 — 단계와 판정 시점 1차 : SSRI + 노출·반응방지. SSRI 는 클로미프라민과 효과가 같고 부작용이 더 양호하다. 행동치료·노출·반응방지는 약물만큼의 호전을 가져오며 단계적 노출·일기·강박 행동 지연 기법이 효과적이다 [[harrison 21: 452장 p.3546]]. 용량 : 해리슨 범위 — 플루옥세틴 5–60, 플루복사민 25–300, 파록세틴 40–60, 설트랄린 50–150, 클로미프라민 25–250 mg/일 [[harrison 21: 452장 p.3546]]. 재평가 : 척도로 4주마다 추적하되 판정은 충분 시도 뒤에. 부작용으로 증량이 막히면 견딜 수 있는 용량에서 기간을 채우고 교체를 고려한다. 유지 : 반응이 오면 장기 유지가 대개 필요하다 [[harrison 21: 452장 p.3546]]. 권고와 예외 「4주 무반응」은 실패가 아니다 — 용량과 기간이 채워졌는지 먼저 본다. 심한 급성 불안·불면으로 기능이 무너질 때 벤조디아제핀을 단기 보조로 쓰는 것은 별개 판단이다 — 치료 단계를 대신하지 않는다. 동반 우울로 다른 항우울제가 필요해도 강박 증상의 축은 세로토닌 약으로 유지한다. APA 지침의 충분 시도 문구는 원문을 열지 못해 서지만 남겼다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 충돌 · 벤조디아제핀의 자리 — 시험 기준: 시작 용량 4주째의 다음 처치는 SSRI 증량·유지이고 벤조디아제핀은 답이 아니다 [[?apa ocd 2007]] / 다른 기준: 해리슨은 치료 저항 사례에서 부스피론·신경이완제와 함께 벤조디아제핀 증강도 도움이 될 수 있다고 적는다 [[harrison 21: 452장 p.3546]] / 왜 다른가: 해리슨의 서술은 충분 시도를 마친 치료 저항 단계의 이야기다 / 시험에서는: KMLE · USMLE 모두 충분 시도 전이면 증량·유지, 충분 시도 뒤 부분 반응이면 항정신병약 증강을 고른다. Z2 맥락 · 에스시탈로프람 — 시험 기준: 이미 시작한 세로토닌 약을 충분히 쓴다는 논리는 약 이름과 무관하다 / 다른 기준: 에스시탈로프람은 해리슨의 미국 승인 목록에 없다 [[harrison 21: 452장 p.3546]] / 왜 다른가: 나라별 허가 범위의 차이(국내 허가 범위는 확인하지 못했다 — 검토 항목) / 시험에서는: KMLE 문항이 에스시탈로프람을 써도 단계 판단은 같다 · USMLE 는 승인 약 이름으로 나올 가능성이 높다. (심화) 왜 강박장애는 우울증보다 높은 용량·긴 시간이 필요한가 우울증의 SSRI 반응은 2–4주 안에 시작 용량에서 나타나는 경우가 많지만, 강박장애의 용량–반응 관계는 더 가파르고 반응이 6–12주에 걸쳐 서서히 나타난다. 안와전두–선조체 회로의 세로토닌 수용체 하향 조절과 습관 회로의 재학습이 시간을 요구한다는 설명이 있고, 노출·반응방지가 같은 회로(꼬리핵 대사 감소)를 통해 효과를 낸다는 영상 소견이 이를 뒷받침한다 [[harrison 21: 452장 p.3546]]. 임상적으로 이것은 「너무 빨리 포기하는 것」이 가장 흔한 치료 실패의 원인이라는 뜻이다 — 증강·교체의 근거 연구들도 모두 충분 시도를 채운 환자에서 나왔다 [[?apa ocd 2007]]."
   },
   {
    "id": "cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras",
@@ -13116,8 +13201,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/physiology/cn.physio.glomerular-hemodynamics.ace-inhibitor-bilateral-ras.md",
-   "snippet": "정의 사구체 여과율(GFR) 은 사구체 모세혈관압에서 보우만주머니압과 혈장 교질삼투압을 뺀 순여과압과 여과 계수로 정해진다. 이 중 급격히 변하는 것은 모세혈관압이며, 모세혈관압은 앞뒤 세동맥 저항으로 조절된다. 이 정리본의 목표는 양측 신동맥협착(또는 단일 기능 콩팥의 협착)에서 ACE억제제·ARB 가 급성신손상을 일으키는 기전 이다. 병태생리 정상에서 콩팥은 관류압이 넓은 범위에서 변해도 수입세동맥 근원성 반응과 세뇨관 사",
-   "text": "Physiology 정의 사구체 여과율(GFR) 은 사구체 모세혈관압에서 보우만주머니압과 혈장 교질삼투압을 뺀 순여과압과 여과 계수로 정해진다. 이 중 급격히 변하는 것은 모세혈관압이며, 모세혈관압은 앞뒤 세동맥 저항으로 조절된다. 이 정리본의 목표는 양측 신동맥협착(또는 단일 기능 콩팥의 협착)에서 ACE억제제·ARB 가 급성신손상을 일으키는 기전 이다. 병태생리 정상에서 콩팥은 관류압이 넓은 범위에서 변해도 수입세동맥 근원성 반응과 세뇨관 사구체 되먹임으로 GFR 을 일정하게 지킨다(자가조절). 신동맥이 심하게 좁아져 협착 뒤 관류압이 이 범위 아래로 떨어지면, 콩팥은 레닌을 분비해 안지오텐신II 를 만든다 [[harrison 21: 278장 p.2088]]. 안지오텐신II 는 (1) 전신 혈관을 수축시켜 신관류압을 끌어올리고 (2) 수출세동맥을 수입세동맥보다 더 수축시켜 사구체 모세혈관압을 지탱한다. 이 두 번째 효과 때문에 협착 뒤 콩팥의 GFR 은 안지오텐신II 에 의존하게 된다. 기전에서 소견으로 ACE억제제는 안지오텐신II 생성을 막고 ARB 는 수용체를 막아, 수출세동맥이 풀린다. 협착 탓에 들어오는 압력은 낮은데 뒷문까지 열리면 사구체 모세혈관압이 떨어지고 GFR 이 급감한다 — 투약 며칠~1주 안의 크레아티닌 급상승. 이것은 혈역학적 변화이므로 소변검사는 대개 깨끗하고, 약을 끊으면 대개 되돌아간다. 한쪽 협착이면 건강한 반대쪽이 메워 크레아티닌 변화가 작다(세동맥 표). 같은 원리로 캡토프릴 신장스캔은 캡토프릴이 여과압을 떨어뜨려 좌우 관류 차이를 키운다 [[harrison 21: 278장 p.2089]]. 감별 NSAID 유발 : 수입세동맥 쪽 — 프로스타글란딘 매개 확장이 막혀 들어오는 혈류가 준다. 탈수·심부전·간경변에서 잘 생긴다. 급성 세뇨관 괴사·간질신염 : 원주·백혈구·세뇨관 손상 소견이 있다. 신경색·혈전 : 옆구리 통증·발열·백혈구 증가·LDH 극단적 상승 [[harrison 21: 278장 p.2090]]. 콜레스테롤 색전 : 혈관조영·혈관 수술 뒤 1~14일, 그물울혈반·발가락 괴저·일시적 호산구증가 [[harrison 21: 278장 p.2089–2090]]. 검사 혈청 크레아티닌·칼륨을 ACE억제제·ARB 시작 전과 시작 뒤 짧은 간격으로 잰다. 신동맥협착 확인은 도플러 초음파(최고 수축기 속도 200 cm/s 면 의미 있는 협착), CT 혈관조영 등으로 한다 [[harrison 21: 278장 p.2089]]. 치료 ACE억제제·ARB 로 GFR 이 떨어지면 약을 끊거나 줄이고 다른 강압제로 바꾸며, 크레아티닌 회복을 확인한다. 동맥경화성 신동맥협착의 기본 치료는 레닌 안지오텐신계 차단을 포함한 약물 치료·금연·스타틴·아스피린이지만, 이 약으로 GFR 이 떨어지는 것은 혈관 재개통을 고려하는 요인이다 [[harrison 21: 278장 p.2089–2090]]. 권고와 예외 혈압이 조절되고 신기능이 안정적이면 약물 치료와 추적이 재개통과 비슷한 성적을 보였다. 반대로 신기능의 빠른·반복 감소, ACE억제제·ARB 중 GFR 감소, 설명되지 않는 반복 심부전은 재개통을 고려하는 요인이다 [[harrison 21: 278장 p.2089–2090 표 278 2]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 278장 p.2088–2090)"
+   "snippet": "기전 — 협착 뒤 콩팥이 안지오텐신II 에 기대는 이유 사구체 여과율(glomerular filtration rate, GFR) 은 사구체 모세혈관압에서 보우만주머니압과 혈장 교질삼투압을 뺀 순여과압과 여과 계수로 정해진다. 급격히 변하는 것은 모세혈관압이고, 이 압력은 앞문(수입세동맥)과 뒷문(수출세동맥)의 저항이 정한다. 정상 콩팥은 관류압이 넓은 범위에서 변해도 수입세동맥 근원성 반응과 세뇨관 사구체 되먹임으로 GFR 을",
+   "text": "Physiology 기전 — 협착 뒤 콩팥이 안지오텐신II 에 기대는 이유 사구체 여과율(glomerular filtration rate, GFR) 은 사구체 모세혈관압에서 보우만주머니압과 혈장 교질삼투압을 뺀 순여과압과 여과 계수로 정해진다. 급격히 변하는 것은 모세혈관압이고, 이 압력은 앞문(수입세동맥)과 뒷문(수출세동맥)의 저항이 정한다. 정상 콩팥은 관류압이 넓은 범위에서 변해도 수입세동맥 근원성 반응과 세뇨관 사구체 되먹임으로 GFR 을 지킨다(자가조절). 협착 뒤 관류압이 이 범위 아래로 떨어지면 레닌이 나와 안지오텐신II 가 만들어진다 [[harrison 21: 278장 p.2088]]. 안지오텐신II 는 전신 혈관을 수축시켜 신관류압을 올리고, 수출세동맥을 수입세동맥보다 더 수축시켜 모세혈관압을 지탱한다 — 이때 GFR 은 안지오텐신II 에 의존 한다. 기전에서 소견으로 — 며칠 안의 크레아티닌 급상승 ACE억제제는 안지오텐신II 생성을, ARB 는 수용체를 막아 수출세동맥이 풀린다. 들어오는 압력은 낮은데 뒷문까지 열리면 모세혈관압이 떨어지고 GFR 이 급감한다 — 투약 며칠~1주 안의 크레아티닌 급상승. 혈역학적 변화라 소변검사는 대개 깨끗하고, 약을 끊으면 대개 되돌아간다. 양측(또는 기능하는 단일 콩팥) 협착이어야 전체 GFR 이 크게 떨어진다. 한쪽 협착이면 반대쪽이 메워 크레아티닌 변화가 작다. 같은 원리로 캡토프릴 신장스캔은 캡토프릴이 여과압을 떨어뜨려 좌우 관류 차이를 키운다 [[harrison 21: 278장 p.2089]]. 가르는 소견 — 혈역학적 GFR 감소와 다른 손상 NSAID 유발 : 수입세동맥 쪽 — 프로스타글란딘 매개 확장이 막혀 들어오는 혈류가 준다. 탈수·심부전·간경변에서 잘 생긴다. 급성 세뇨관 괴사·간질신염 : 원주·백혈구·세뇨관 손상 소견이 있다. 신경색·혈전 : 옆구리 통증·발열·백혈구 증가·LDH 극단적 상승 [[harrison 21: 278장 p.2090]]. 콜레스테롤 색전 : 혈관조영·혈관 수술 뒤 1~14일, 그물울혈반·발가락 괴저·일시적 호산구증가 [[harrison 21: 278장 p.2089–2090]]. 확인: 혈청 크레아티닌·칼륨을 ACE억제제·ARB 시작 전과 시작 뒤 짧은 간격으로 잰다. 신동맥협착은 도플러 초음파(최고 수축기 속도 200 cm/s 면 의미 있는 협착)·CT 혈관조영 등으로 본다 [[harrison 21: 278장 p.2089]]. 선택 — 약을 끊고 재평가한다 ACE억제제·ARB 로 GFR 이 떨어지면 약을 끊거나 줄이고 다른 강압제로 바꾸며, 크레아티닌 회복을 확인한다. 동맥경화성 신동맥협착의 기본 치료는 레닌 안지오텐신계 차단을 포함한 약물 치료·금연·스타틴·아스피린이지만, 이 약으로 GFR 이 떨어지는 것은 혈관 재개통을 고려하는 요인이다 [[harrison 21: 278장 p.2089–2090]]. 권고와 예외 혈압이 조절되고 신기능이 안정적이면 약물 치료와 추적이 재개통과 비슷한 성적을 보였다. 신기능의 빠른·반복 감소, ACE억제제·ARB 중 GFR 감소, 설명되지 않는 반복 심부전은 재개통을 고려하는 요인이다 [[harrison 21: 278장 p.2089–2090 표 278 2]]. 관류가 떨어진 콩팥(심부전·탈수·간경변)에서는 두 기전이 겹쳐 이뇨제+ACE억제제+NSAID 조합이 특히 위험하다. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 278장 p.2088–2090)"
   },
   {
    "id": "cn.peds.stec-hus.supportive-no-antibiotics",
