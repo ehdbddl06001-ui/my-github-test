@@ -204,73 +204,73 @@
    ]
   },
   "소아청소년과": {
-   "hash": "dc0884fb9134d9fcaf4f",
-   "version": 13,
-   "date": "2026-10-06",
+   "hash": "637354cc7129cfecef79",
+   "version": 15,
+   "date": "2026-10-11",
    "file": "MedKOS_학습서_소아청소년과.pdf",
-   "pages": 20,
+   "pages": 18,
    "template_version": 11,
    "units": {
     "cn.peds.biliary-atresia.cholestasis-workup": {
-     "title": "생후 2주 넘은 황달에 결합빌리루빈이 오르면 — 생리적·모유 황달이 아니라 담즙정체다, 담도폐쇄부터 서둘러 확인한다",
+     "title": "신생아 지속 황달 — 결합형이면 담도폐쇄부터 확인",
      "page": 2,
-     "concept_hash": "7543a352e2e56e3f",
-     "concept_version": 1
+     "concept_hash": "ee0b430da635bb8d",
+     "concept_version": 2
     },
     "cn.peds.pertussis.infant-macrolide-choice": {
      "title": "영아 백일해 — 약은 macrolide(마크롤라이드), 어린 영아는 아지스로마이신",
-     "page": 4,
+     "page": 3,
      "concept_hash": "58e6e6074e18e1d7",
      "concept_version": 1
     },
     "cn.peds.kawasaki.acute-ivig": {
-     "title": "가와사키병 급성기 치료 — 발열 10일 안의 고용량 면역글로불린 정주가 중심, aspirin(아스피린)은 병용 보조",
-     "page": 5,
-     "concept_hash": "ee92ecbb8003c494",
-     "concept_version": 2
-    },
-    "cn.peds.rheumatic-fever.acute-eradication": {
-     "title": "급성 류마티스열 확진 뒤 반드시 할 치료 — 남은 A군 사슬알균 제균(페니실린)은 모든 환자에게, 항염·스테로이드는 증상 치료",
-     "page": 8,
-     "concept_hash": "dd43d74c94e8c08c",
-     "concept_version": 1
+     "title": "가와사키병 급성기 — 면역글로불린이 중심, aspirin(아스피린)은 보조",
+     "page": 4,
+     "concept_hash": "48e5771f5bda5924",
+     "concept_version": 3
     },
     "cn.peds.rheumatic-fever.secondary-prophylaxis": {
-     "title": "급성 류마티스열의 2차 예방 — 급성기 제균으로 끝나지 않고, 벤자틴 페니실린 G 를 4주마다 근육 주사해 재감염 자체를 막는다",
-     "page": 10,
-     "concept_hash": "24d24f9714103e08",
+     "title": "급성 류마티스열 — 급성기 뒤엔 벤자틴 4주마다 재발 예방",
+     "page": 7,
+     "concept_hash": "e3c2cca8af9ef72e",
+     "concept_version": 3
+    },
+    "cn.peds.rheumatic-fever.acute-eradication": {
+     "title": "급성 류마티스열 — 확진되면 모두 페니실린 제균",
+     "page": 9,
+     "concept_hash": "83a7936adf3c2783",
      "concept_version": 2
     },
     "cn.peds.pyloric-stenosis.preop-resuscitation": {
-     "title": "비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만",
-     "page": 13,
-     "concept_hash": "d0a8e02323ff5e1c",
-     "concept_version": 2
+     "title": "비대유문협착증 — 수술보다 수액·전해질 교정이 먼저",
+     "page": 11,
+     "concept_hash": "a0799e91e4f8b1bf",
+     "concept_version": 3
     },
     "cn.peds.stec-hus.supportive-no-antibiotics": {
-     "title": "소아 STEC 용혈요독증후군 — 시가독소의 혈관 손상에서 지지치료·항생제 회피까지",
-     "page": 15,
-     "concept_hash": "7b68c31a6b78bef1",
-     "concept_version": 2
+     "title": "STEC 용혈요독증후군 — 지지치료, 항생제·혈장교환은 안 한다",
+     "page": 12,
+     "concept_hash": "919c1b19a1963a52",
+     "concept_version": 3
     },
     "cn.peds.febrile-uti.imaging-workup": {
-     "title": "영아의 첫 열성 요로감염 — 영상은 신장·방광 초음파부터, 배뇨방광요도조영술은 조건이 있을 때만",
-     "page": 17,
-     "concept_hash": "b7ab61172d5f4fb7",
-     "concept_version": 2
+     "title": "영아 첫 열성 요로감염 — 영상은 초음파부터, VCUG 는 조건부",
+     "page": 15,
+     "concept_hash": "e128a950c3d54d9f",
+     "concept_version": 3
     },
     "cn.peds.febrile-seizure.workup": {
      "title": "열성경련 뒤 — 추가 검사가 필요한 경우와 필요 없는 경우",
-     "page": 19,
+     "page": 17,
      "concept_hash": "9c95a903eea48716",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1LS7tpD1YghoS8oXL3bHjGwtp0umENFev",
-    "md5": "d320405b4651eef06dac60ff1c7b9657",
-    "version": 13,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "ca37dcd6f95fe806c1d705f2c135c70b",
+    "version": 15,
+    "uploaded": "2026-10-11T09:45:59+09:00"
    },
    "archive": [
     "MedKOS_학습서_소아청소년과_v1_2026-09-22.pdf",
@@ -285,31 +285,36 @@
     "MedKOS_학습서_소아청소년과_v10_2026-10-03.pdf",
     "MedKOS_학습서_소아청소년과_v11_2026-10-04.pdf",
     "MedKOS_학습서_소아청소년과_v12_2026-10-05.pdf",
-    "MedKOS_학습서_소아청소년과_v13_2026-10-06.pdf"
+    "MedKOS_학습서_소아청소년과_v13_2026-10-06.pdf",
+    "MedKOS_학습서_소아청소년과_v14_2026-10-10.pdf",
+    "MedKOS_학습서_소아청소년과_v15_2026-10-11.pdf"
    ],
    "changes": [
-    "내용 갱신: 비대유문협착증 — 진단이 서면 수술보다 수액·전해질 교정이 먼저, 조영검사는 초음파가 불확실할 때만 (정리본 v1 → v2)"
+    "내용 갱신: 급성 류마티스열 — 급성기 뒤엔 벤자틴 4주마다 재발 예방 (정리본 v2 → v3)",
+    "내용 갱신: 급성 류마티스열 — 확진되면 모두 페니실린 제균 (정리본 v1 → v2)",
+    "내용 갱신: 비대유문협착증 — 수술보다 수액·전해질 교정이 먼저 (정리본 v2 → v3)",
+    "내용 갱신: STEC 용혈요독증후군 — 지지치료, 항생제·혈장교환은 안 한다 (정리본 v2 → v3)"
    ]
   },
   "안과": {
-   "hash": "d683340840cc4d817f26",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "94a594dcdbf871adfacd",
+   "version": 10,
+   "date": "2026-10-08",
    "file": "MedKOS_학습서_안과.pdf",
-   "pages": 11,
+   "pages": 10,
    "template_version": 11,
    "units": {
     "cn.ophth.postop-endophthalmitis.tap-inject-vs-vitrectomy": {
-     "title": "급성 수술 후 안내염 — 유리체 천자·배양과 유리체내 항생제가 기본이고, 즉시 유리체절제술은 시력이 빛 감지뿐일 때다",
+     "title": "급성 수술 후 안내염 — 시력이 즉시 절제술을 가른다",
      "page": 2,
-     "concept_hash": "0c93220c2db634d9",
-     "concept_version": 3
+     "concept_hash": "99950f7c321bc098",
+     "concept_version": 4
     },
     "cn.ophth.crao.arteritic-workup": {
-     "title": "망막중심동맥폐쇄 — 50세 이상이면 「동맥염성인가」를 먼저 묻고, 염증 지표가 반대쪽 눈을 지킨다",
+     "title": "망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다",
      "page": 4,
-     "concept_hash": "260f9c8b4b000d93",
-     "concept_version": 3
+     "concept_hash": "d4640372e89b6ffd",
+     "concept_version": 4
     },
     "cn.ophth.chemical-burn.immediate-irrigation": {
      "title": "안구 화학화상 — 검사보다 세척이 먼저",
@@ -318,17 +323,17 @@
      "concept_version": 2
     },
     "cn.ophth.crvo.neovascular-glaucoma-risk": {
-     "title": "허혈성 중심망막정맥폐쇄 뒤 가장 경계할 합병증 — 망막 허혈이 VEGF 를 통해 홍채·전방각 신생혈관을 만들어 신생혈관녹내장으로 간다",
-     "page": 9,
-     "concept_hash": "4f20ab3cbb530db7",
-     "concept_version": 2
+     "title": "중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다",
+     "page": 8,
+     "concept_hash": "bedc5753c750574e",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1HMJrh-xHhGTmpwSB3quvZA7vY-KBH8Fm",
-    "md5": "317c35beccc2608d3fea671e17bc97dd",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "120d5ffd5d8b95feb277b530aaa454a5",
+    "version": 10,
+    "uploaded": "2026-10-08T10:32:08+09:00"
    },
    "archive": [
     "MedKOS_학습서_안과_v1_2026-09-23.pdf",
@@ -339,48 +344,59 @@
     "MedKOS_학습서_안과_v6_2026-09-30.pdf",
     "MedKOS_학습서_안과_v7_2026-10-02.pdf",
     "MedKOS_학습서_안과_v8_2026-10-05.pdf",
-    "MedKOS_학습서_안과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_안과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_안과_v10_2026-10-08.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 급성 수술 후 안내염 — 시력이 즉시 절제술을 가른다 (정리본 v3 → v4)",
+    "내용 갱신: 망막중심동맥폐쇄 — 50세 이상은 동맥염부터 가린다 (정리본 v3 → v4)",
+    "내용 갱신: 중심망막정맥폐쇄 — 허혈형 뒤엔 신생혈관녹내장을 본다 (정리본 v2 → v3)"
+   ]
   },
   "정형외과": {
-   "hash": "656dc532fd284d250f15",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "479c770352c012801ac5",
+   "version": 13,
+   "date": "2026-10-09",
    "file": "MedKOS_학습서_정형외과.pdf",
-   "pages": 10,
+   "pages": 13,
    "template_version": 11,
    "units": {
-    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
-     "title": "엉덩관절 골절 — 「관절낭 안 vs 밖」이 첫 갈림길이고, 전위된 넙다리뼈목 골절을 고령에서 치환하는 이유는 골두 혈류다",
+    "cn.ortho.scaphoid-fracture.occult-imaging": {
+     "title": "잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
      "page": 2,
-     "concept_hash": "7b0c9f92379cda54",
-     "concept_version": 3
+     "concept_hash": "e3ca64f2f1155187",
+     "concept_version": 2
+    },
+    "cn.ortho.femoral-neck-fracture.arthroplasty-rationale": {
+     "title": "넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류",
+     "page": 4,
+     "concept_hash": "ffd2be60f94fba93",
+     "concept_version": 4
     },
     "cn.ortho.achilles-rupture.thompson-test": {
-     "title": "아킬레스건 파열 — 종아리를 쥐어짜 발이 움직이는지 본다",
-     "page": 5,
-     "concept_hash": "70288350dedfdcf5",
-     "concept_version": 1
+     "title": "아킬레스건 파열 — 종아리를 쥐어짜 연속성을 본다",
+     "page": 7,
+     "concept_hash": "c55a14c1972e4b5a",
+     "concept_version": 2
     },
     "cn.ortho.scfe.in-situ-fixation": {
      "title": "대퇴골두골단분리증 — 정복 없이 제자리 나사 고정",
-     "page": 6,
+     "page": 8,
      "concept_hash": "317c7d0b110d33dc",
      "concept_version": 4
     },
     "cn.ortho.torus-fracture.splint-no-reduction": {
-     "title": "소아 원위 요골 융기(torus) 골절 — 안정 골절이라 정복 없이 짧은 부목 고정",
-     "page": 8,
-     "concept_hash": "4882430c8d00869d",
-     "concept_version": 2
+     "title": "소아 융기 골절 — 안정 골절이라 정복 없이 부목",
+     "page": 10,
+     "concept_hash": "9b5d855ad7a5d677",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "12qBQstdqUqgLRlJBJ2XqW8W79x6Vbyth",
-    "md5": "bf5072d69da8d78b8a33c8b9fcd76108",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "8ab998404f14db1fd4bb3b817a5e5204",
+    "version": 13,
+    "uploaded": "2026-10-09T10:30:31+09:00"
    },
    "archive": [
     "MedKOS_학습서_정형외과_v1_2026-09-23.pdf",
@@ -393,9 +409,15 @@
     "MedKOS_학습서_정형외과_v8_2026-09-29.pdf",
     "MedKOS_학습서_정형외과_v9_2026-10-03.pdf",
     "MedKOS_학습서_정형외과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_정형외과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_정형외과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_정형외과_v12_2026-10-08.pdf",
+    "MedKOS_학습서_정형외과_v13_2026-10-09.pdf"
    ],
-   "changes": []
+   "changes": [
+    "새 단원: 잠복 주상골 골절 — 정상 X선이어도 엄지 포함 고정",
+    "내용 갱신: 넙다리뼈목 골절 — 고령 전위면 치환, 이유는 골두 혈류 (정리본 v3 → v4)",
+    "내용 갱신: 소아 융기 골절 — 안정 골절이라 정복 없이 부목 (정리본 v2 → v3)"
+   ]
   },
   "외과": {
    "hash": "a7ed0aaddc647abafec6",
@@ -440,24 +462,24 @@
    ]
   },
   "산부인과": {
-   "hash": "fdc0ae596f077080bd4f",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "b46b17740237ccb6e3eb",
+   "version": 10,
+   "date": "2026-10-07",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 20,
    "template_version": 11,
    "units": {
     "cn.obgyn.functional-hypothalamic-amenorrhea.hypoestrogenic-risk": {
-     "title": "기능성 시상하부 무월경 — 에스트로겐이 없는 무월경이라 가장 큰 위험은 골밀도 저하다",
+     "title": "기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다",
      "page": 2,
-     "concept_hash": "aac0d8154f4e27c5",
-     "concept_version": 1
+     "concept_hash": "f00cf86a871d47ab",
+     "concept_version": 2
     },
     "cn.obgyn.pcos-infertility.ovulation-induction": {
-     "title": "다낭성 난소 증후군의 무배란 불임 — 남성·난관 요인을 확인한 뒤 경구 배란 유도(letrozole 레트로졸)부터 단계로 올라간다",
+     "title": "다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다",
      "page": 4,
-     "concept_hash": "1669afc09f58cddb",
-     "concept_version": 3
+     "concept_hash": "1cb909b218723ac8",
+     "concept_version": 4
     },
     "cn.obgyn.acute-fatty-liver-of-pregnancy.hellp-differentiation": {
      "title": "급성 임신 지방간 — HELLP와는 간부전으로 가른다",
@@ -466,14 +488,14 @@
      "concept_version": 1
     },
     "cn.obgyn.gestational-diabetes.insulin-indication": {
-     "title": "임신당뇨병 — 영양·운동 요법 뒤 언제 약물로 올리고, 왜 인슐린인가",
+     "title": "임신당뇨병 — 반복 초과면 약물로, 약은 인슐린",
      "page": 9,
-     "concept_hash": "f0800392c526f28f",
-     "concept_version": 2
+     "concept_hash": "54c314318cffecef",
+     "concept_version": 3
     },
     "cn.obgyn.intrapartum-fhr.nichd-category": {
      "title": "분만 중 태아심박동 — 네 요소로 범주, 범주로 대응",
-     "page": 12,
+     "page": 11,
      "concept_hash": "aa6f1291592f80ae",
      "concept_version": 3
     },
@@ -483,24 +505,24 @@
      "concept_hash": "83dea175de684a0c",
      "concept_version": 2
     },
-    "cn.obgyn.hydatidiform-mole.diagnosis": {
-     "title": "임신 초기 출혈에서 포상기태 알아보기 — 주수보다 큰 자궁, 자궁 안 다낭성 덩이, 주수에 비해 매우 높은 β-hCG",
-     "page": 16,
-     "concept_hash": "4e53a72b7dfb4411",
-     "concept_version": 3
-    },
     "cn.obgyn.cervix-transformation-zone.squamous-metaplasia": {
      "title": "자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤",
-     "page": 18,
+     "page": 16,
      "concept_hash": "4d1b46af8a5765f0",
      "concept_version": 3
+    },
+    "cn.obgyn.hydatidiform-mole.diagnosis": {
+     "title": "포상기태 — 자궁 안이 찼고 β-hCG 가 높다",
+     "page": 18,
+     "concept_hash": "327bde2efec5d351",
+     "concept_version": 4
     }
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "6465e70ecc8bc29d328180e7a17cd874",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "0d8e470af62e9a218ef81e88c53d75f6",
+    "version": 10,
+    "uploaded": "2026-10-07T10:06:56+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -511,10 +533,14 @@
     "MedKOS_학습서_산부인과_v6_2026-09-27.pdf",
     "MedKOS_학습서_산부인과_v7_2026-09-28.pdf",
     "MedKOS_학습서_산부인과_v8_2026-10-03.pdf",
-    "MedKOS_학습서_산부인과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_산부인과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_산부인과_v10_2026-10-07.pdf"
    ],
    "changes": [
-    "내용 갱신: 자궁경부 변형대 — 원주상피 대체는 화생, 이형성은 그 뒤 (정리본 v2 → v3)"
+    "내용 갱신: 기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다 (정리본 v1 → v2)",
+    "내용 갱신: 다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다 (정리본 v3 → v4)",
+    "내용 갱신: 임신당뇨병 — 반복 초과면 약물로, 약은 인슐린 (정리본 v2 → v3)",
+    "내용 갱신: 포상기태 — 자궁 안이 찼고 β-hCG 가 높다 (정리본 v3 → v4)"
    ]
   },
   "정신건강의학과": {
@@ -567,103 +593,121 @@
    "changes": []
   },
   "류마티스내과": {
-   "hash": "2da791c12d1ef47ee841",
-   "version": 14,
-   "date": "2026-10-06",
+   "hash": "115b6fdce028aaa18684",
+   "version": 17,
+   "date": "2026-10-11",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 26,
+   "pages": 32,
    "template_version": 11,
    "units": {
+    "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
+     "title": "자가항체 — 표적이 손상 방식을 정한다",
+     "page": 2,
+     "concept_hash": "46e15e652134ed67",
+     "concept_version": 1
+    },
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
      "title": "전신홍반루푸스 — 장기 침범으로 치료 강도를 정하고, 경증은 hydroxychloroquine(히드록시클로로퀸)으로 시작한다",
-     "page": 2,
+     "page": 3,
      "concept_hash": "294baaf4fea6952b",
      "concept_version": 1
     },
     "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
      "title": "항인지질항체증후군 — 혈전·임신 이환과 지속 항체로 진단하기",
-     "page": 4,
+     "page": 6,
      "concept_hash": "ed5381b90968663e",
+     "concept_version": 1
+    },
+    "cn.rheum.rheumatoid-arthritis.methotrexate-anchor": {
+     "title": "류마티스관절염 — 첫 DMARD 는 methotrexate(메토트렉세이트), 안 되면 병용",
+     "page": 7,
+     "concept_hash": "e560f7fccb4c5872",
      "concept_version": 1
     },
     "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
      "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
-     "page": 5,
+     "page": 9,
      "concept_hash": "48644d135721933e",
      "concept_version": 2
     },
     "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
      "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
-     "page": 7,
+     "page": 11,
      "concept_hash": "bdf8d84e7df7178b",
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
-     "page": 8,
+     "page": 12,
      "concept_hash": "f07740b9140fd90e",
      "concept_version": 2
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 10,
-     "concept_hash": "3c1861f8ef72944a",
-     "concept_version": 2
+     "page": 14,
+     "concept_hash": "0a95671a7fc0c818",
+     "concept_version": 3
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
-     "page": 13,
+     "page": 17,
      "concept_hash": "6e75ba4f5b92dec3",
      "concept_version": 2
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
-     "page": 15,
+     "page": 19,
      "concept_hash": "8ac8b42d909e5ed1",
      "concept_version": 1
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
-     "page": 17,
+     "page": 21,
      "concept_hash": "d7b76191c2ec0df1",
      "concept_version": 1
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 18,
+     "page": 22,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 20,
-     "concept_hash": "59334fb04259a416",
+     "page": 24,
+     "concept_hash": "0ca1331142c86acb",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 21,
+     "page": 25,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 23,
+     "page": 27,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 25,
-     "concept_hash": "eaab0f89cab5af95",
+     "page": 29,
+     "concept_hash": "5bc6f8cdb190f91d",
+     "concept_version": 1
+    },
+    "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
+     "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
+     "page": 31,
+     "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "391ba55dd79f5ee158d311d4b0361cc7",
-    "version": 14,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "ed812208fb2c8eb803a717c010d1476d",
+    "version": 17,
+    "uploaded": "2026-10-11T09:45:59+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -679,12 +723,14 @@
     "MedKOS_학습서_류마티스내과_v11_2026-09-29.pdf",
     "MedKOS_학습서_류마티스내과_v12_2026-10-04.pdf",
     "MedKOS_학습서_류마티스내과_v13_2026-10-05.pdf",
-    "MedKOS_학습서_류마티스내과_v14_2026-10-06.pdf"
+    "MedKOS_학습서_류마티스내과_v14_2026-10-06.pdf",
+    "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf",
+    "MedKOS_학습서_류마티스내과_v16_2026-10-08.pdf",
+    "MedKOS_학습서_류마티스내과_v17_2026-10-11.pdf"
    ],
    "changes": [
-    "내용 갱신: 축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다 (정리본 v1 → v2)",
-    "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정",
-    "새 단원: 혈색소증 관절병증 — 2·3번째 MCP 면 철 검사"
+    "새 단원: 류마티스관절염 — 첫 DMARD 는 methotrexate(메토트렉세이트), 안 되면 병용",
+    "내용 갱신: HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다 (정리본 v2 → v3)"
    ]
   },
   "호흡기내과": {
@@ -847,9 +893,9 @@
    ]
   },
   "혈액종양내과": {
-   "hash": "839df93e5d99cc115057",
-   "version": 6,
-   "date": "2026-10-04",
+   "hash": "7050270fb0797ae61db4",
+   "version": 8,
+   "date": "2026-10-10",
    "file": "MedKOS_학습서_혈액종양내과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -861,10 +907,10 @@
      "concept_version": 2
     },
     "cn.path.testicular-tumor-ihc.seminoma-septal-lymphocytes": {
-     "title": "고환 종양 IHC — 「갈색 세포가 종양인가, 종양에 대한 반응인가」: 격막의 CD3 양성 작은 T 림프구 + 음성인 맑은 세포 판 = 정상피종",
-     "page": 3,
-     "concept_hash": "9bb947ab8aa41769",
-     "concept_version": 2
+     "title": "정상피종 IHC — 갈색 세포가 종양인가 반응인가",
+     "page": 4,
+     "concept_hash": "fe60edf56f216d91",
+     "concept_version": 3
     },
     "cn.neuro.glioblastoma.ring-enhancing-diagnosis": {
      "title": "교모세포종 — 축내 종괴 + 두꺼운 고리 조영",
@@ -873,17 +919,17 @@
      "concept_version": 2
     },
     "cn.path.ihc-lineage-markers.gata3-breast-urothelial-origin": {
-     "title": "GATA3 — 관강 상피 핵의 계통 전사인자: 「어디서 왔나」를 묻는 표지이지 「어떤 약이 듣나」나 「침윤했나」를 묻는 표지가 아니다",
+     "title": "GATA3 — 기원을 묻는 계통 표지, 치료 예측이 아니다",
      "page": 8,
-     "concept_hash": "f32980f315e6ef08",
-     "concept_version": 2
+     "concept_hash": "7a10c52f9a77086f",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1deFd_j5r6G_Z3gOUIDyMxTTPxDRastUS",
-    "md5": "0d557ccce1721d19f710b63d27edf1c9",
-    "version": 6,
-    "uploaded": "2026-10-04T09:25:40+09:00"
+    "md5": "89f8d91c16352d8daafe08a738634326",
+    "version": 8,
+    "uploaded": "2026-10-10T10:18:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_혈액종양내과_v1_2026-09-25.pdf",
@@ -891,10 +937,12 @@
     "MedKOS_학습서_혈액종양내과_v3_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v4_2026-09-27.pdf",
     "MedKOS_학습서_혈액종양내과_v5_2026-09-28.pdf",
-    "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf"
+    "MedKOS_학습서_혈액종양내과_v6_2026-10-04.pdf",
+    "MedKOS_학습서_혈액종양내과_v7_2026-10-09.pdf",
+    "MedKOS_학습서_혈액종양내과_v8_2026-10-10.pdf"
    ],
    "changes": [
-    "새 단원: HER2 양성 유방암 — 표적치료 전에는 심초음파"
+    "내용 갱신: 정상피종 IHC — 갈색 세포가 종양인가 반응인가 (정리본 v2 → v3)"
    ]
   },
   "알레르기내과": {
@@ -1030,9 +1078,9 @@
    "changes": []
   },
   "소화기내과": {
-   "hash": "7ddb7af1b80cd72b179e",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "c60e7fcdda763caa87f3",
+   "version": 13,
+   "date": "2026-10-10",
    "file": "MedKOS_학습서_소화기내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -1040,7 +1088,7 @@
     "cn.gi.crohn-disease.distribution-histology-diagnosis": {
      "title": "크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기",
      "page": 2,
-     "concept_hash": "934af2bf14598c6c",
+     "concept_hash": "d2ed57caaa2de525",
      "concept_version": 2
     },
     "cn.gs.diverticular-abscess.percutaneous-drainage": {
@@ -1056,17 +1104,17 @@
      "concept_version": 2
     },
     "cn.path.hepatic-congestion.zone3-mechanism": {
-     "title": "만성 수동 간울혈(육두구 간) — 왜 중심정맥 주위(zone 3)가 먼저 다치나: 산소는 가장 늦게, 역행 정맥압은 가장 먼저",
+     "title": "육두구 간 — 중심정맥 주위(zone 3)가 먼저 다치는 이유",
      "page": 7,
-     "concept_hash": "58701f202925087e",
-     "concept_version": 1
+     "concept_hash": "fd6d4dfc3d309879",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1SqztTnF-UsEVLXq8-YDs1IDw3swDVXIW",
-    "md5": "1e23cd1a1b5a0a18d5177390c59ef261",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "6880b0df7ac07cba5fbaaf02dd9c3357",
+    "version": 13,
+    "uploaded": "2026-10-10T10:18:43+09:00"
    },
    "archive": [
     "MedKOS_학습서_소화기내과_v1_2026-09-25.pdf",
@@ -1079,9 +1127,13 @@
     "MedKOS_학습서_소화기내과_v8_2026-10-02.pdf",
     "MedKOS_학습서_소화기내과_v9_2026-10-04.pdf",
     "MedKOS_학습서_소화기내과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_소화기내과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_소화기내과_v12_2026-10-09.pdf",
+    "MedKOS_학습서_소화기내과_v13_2026-10-10.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 수정: 크론병 — 분포·깊이·육아종으로 궤양성대장염과 가르기"
+   ]
   },
   "신경과": {
    "hash": "0af84faeb8d1d31ba6ae",
@@ -1155,13 +1207,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-06",
+  "date": "2026-10-11",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "a9a3b73265ba457be9d94f379e0ab9ae",
+   "md5": "dcbc2a8761cfca246401a77692a3b822",
    "version": null,
-   "uploaded": "2026-10-06T11:33:41+09:00"
+   "uploaded": "2026-10-11T09:45:59+09:00"
   }
  },
- "updated": "2026-10-06"
+ "updated": "2026-10-11"
 }

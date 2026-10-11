@@ -2,6 +2,6797 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0294",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약",
+  "type": "감염 — 산소가 필요한 바이러스 폐렴의 사망률을 낮추는 약",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "A 63-year-old man is admitted to the hospital because of fever, dry cough, and progressive shortness of breath for 8 days. He has type 2 diabetes mellitus treated with metformin. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. Temperature is 38.4°C (101.1°F), pulse is 102/min, respirations are 26/min, and blood pressure is 134/80 mm Hg. Oxygen saturation is 88% on room air and rises to 94% with 4 L/min of oxygen by nasal cannula. Crackles are heard at both lung bases. Leukocyte count is 6800/mm3 with lymphocytes 9%. Serum procalcitonin concentration is 0.08 ng/mL (N < 0.1). A portable chest x-ray is shown.",
+  "question": "Which of the following is most likely to reduce this patient's risk of death?",
+  "options": [
+   "Azithromycin",
+   "Lopinavir-ritonavir",
+   "Dexamethasone",
+   "Hydroxychloroquine",
+   "Ivermectin"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The chest x-ray shows hazy ground-glass and consolidative opacities in both lower lung zones with low lung volumes — bilateral viral pneumonia. He has confirmed SARS-CoV-2 infection on day 8 of illness and needs supplemental oxygen. In this phase, lung injury is driven mainly by the host inflammatory response, and dexamethasone 6 mg daily for up to 10 days reduced 28-day mortality in patients needing oxygen or mechanical ventilation (RECOVERY trial).\n- 원리: <b>Why a corticosteroid helps in this phase</b>: COVID-19 has an early viral replication phase (first week) and a later inflammatory phase. By the second week, when patients become hypoxemic, viral load is falling, and alveolar damage comes from cytokine release and immune cell infiltration. A corticosteroid dampens this inflammation, so it helps most when the disease is severe enough to need oxygen.<br> <b>Why timing and severity matter</b>: in RECOVERY, dexamethasone lowered mortality in patients on oxygen and most in those on mechanical ventilation, but showed no benefit (and a trend toward harm) in patients not needing oxygen, in whom suppressing immunity during active replication offers no gain.<br> <b>Why the other drugs fail</b>: hydroxychloroquine, ivermectin, lopinavir-ritonavir, and azithromycin each failed to reduce mortality in large randomized trials. Antiviral treatment with remdesivir is most useful early, and immunomodulators such as tocilizumab or baricitinib are added to dexamethasone when oxygen needs rise rapidly.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Dexamethasone (correct)</th><th>Azithromycin (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory lung injury</td><td>Bacterial co-infection (atypical organisms)</td></tr> <tr><td>Mortality in hospitalized COVID-19</td><td>Reduced in patients needing oxygen</td><td>No benefit in randomized trials</td></tr> <tr><td>Clue in this patient</td><td>Day 8, hypoxemia requiring oxygen</td><td>Procalcitonin is low — bacterial co-infection is unlikely</td></tr> </tbody></table> Bilateral opacities with hypoxemia in the second week call for an anti-inflammatory drug; an antibiotic is added only when bacterial infection is suggested.\n- 오답 이유:\n  - (A) Azithromycin would be added if a bacterial co-infection were suggested by a high procalcitonin or lobar consolidation; in RECOVERY it did not reduce mortality from COVID-19 itself.\n  - (B) Lopinavir-ritonavir failed to reduce mortality in hospitalized COVID-19 patients; ritonavir-boosted nirmatrelvir is the protease inhibitor used early in outpatients at high risk, not in this hypoxemic inpatient.\n  - (D) Hydroxychloroquine showed no mortality benefit in hospitalized patients in RECOVERY and other trials; it remains a treatment for lupus and rheumatoid arthritis, not COVID-19.\n  - (E) Ivermectin did not shorten illness or reduce mortality in randomized trials of COVID-19; it is indicated for strongyloidiasis, which should be treated before steroids in patients from endemic areas.\n- 함정: Choosing an antibiotic for bilateral opacities — the low procalcitonin argues against bacterial co-infection, and only a corticosteroid lowers mortality in hypoxemic patients.\n- 학습목표: 산소 보충이 필요한 SARS-CoV-2 폐렴 입원 환자에서 사망률을 낮추는 약이 덱사메타손임을 안다\n- 근거·출처: RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of hospitalized adults with COVID-19 (final version, 2024) · 작성자 판독(2026-10-11): 이동식 반직립 AP 흉부 X선, 양쪽 아래 폐야의 흐린 간유리·경화 음영, 폐용적 작음, 위쪽 폐야 비교적 보존, 기흉 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest x-ray shows hazy ground-glass and consolidative opacities in both lower lung zones with low lung volumes — bilateral viral pneumonia. He has confirmed SARS-CoV-2 infection on day 8 of illness and needs supplemental oxygen. In this phase, lung injury is driven mainly by the host inflammatory response, and dexamethasone 6 mg daily for up to 10 days reduced 28-day mortality in patients needing oxygen or mechanical ventilation (RECOVERY trial)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a corticosteroid helps in this phase</b>: COVID-19 has an early viral replication phase (first week) and a later inflammatory phase. By the second week, when patients become hypoxemic, viral load is falling, and alveolar damage comes from cytokine release and immune cell infiltration. A corticosteroid dampens this inflammation, so it helps most when the disease is severe enough to need oxygen.<br> <b>Why timing and severity matter</b>: in RECOVERY, dexamethasone lowered mortality in patients on oxygen and most in those on mechanical ventilation, but showed no benefit (and a trend toward harm) in patients not needing oxygen, in whom suppressing immunity during active replication offers no gain.<br> <b>Why the other drugs fail</b>: hydroxychloroquine, ivermectin, lopinavir-ritonavir, and azithromycin each failed to reduce mortality in large randomized trials. Antiviral treatment with remdesivir is most useful early, and immunomodulators such as tocilizumab or baricitinib are added to dexamethasone when oxygen needs rise rapidly."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Dexamethasone (correct)</th><th>Azithromycin (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Host inflammatory lung injury</td><td>Bacterial co-infection (atypical organisms)</td></tr> <tr><td>Mortality in hospitalized COVID-19</td><td>Reduced in patients needing oxygen</td><td>No benefit in randomized trials</td></tr> <tr><td>Clue in this patient</td><td>Day 8, hypoxemia requiring oxygen</td><td>Procalcitonin is low — bacterial co-infection is unlikely</td></tr> </tbody></table> Bilateral opacities with hypoxemia in the second week call for an anti-inflammatory drug; an antibiotic is added only when bacterial infection is suggested."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Azithromycin would be added if a bacterial co-infection were suggested by a high procalcitonin or lobar consolidation; in RECOVERY it did not reduce mortality from COVID-19 itself.\n(B) Lopinavir-ritonavir failed to reduce mortality in hospitalized COVID-19 patients; ritonavir-boosted nirmatrelvir is the protease inhibitor used early in outpatients at high risk, not in this hypoxemic inpatient.\n(D) Hydroxychloroquine showed no mortality benefit in hospitalized patients in RECOVERY and other trials; it remains a treatment for lupus and rheumatoid arthritis, not COVID-19.\n(E) Ivermectin did not shorten illness or reduce mortality in randomized trials of COVID-19; it is indicated for strongyloidiasis, which should be treated before steroids in patients from endemic areas."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing an antibiotic for bilateral opacities — the low procalcitonin argues against bacterial co-infection, and only a corticosteroid lowers mortality in hypoxemic patients."
+   },
+   {
+    "k": "학습목표",
+    "v": "산소 보충이 필요한 SARS-CoV-2 폐렴 입원 환자에서 사망률을 낮추는 약이 덱사메타손임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19. N Engl J Med 2021;384:693-704 · NIH COVID-19 Treatment Guidelines Panel. Therapeutic management of hospitalized adults with COVID-19 (final version, 2024) · 작성자 판독(2026-10-11): 이동식 반직립 AP 흉부 X선, 양쪽 아래 폐야의 흐린 간유리·경화 음영, 폐용적 작음, 위쪽 폐야 비교적 보존, 기흉 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "SARS-CoV-2 감염 8일째 양쪽 아래 폐야 음영과 산소가 필요한 저산소혈증이 있으므로 사망률을 낮추는 약은 덱사메타손이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "프로칼시토닌이 낮아 세균 동반 감염 가능성이 낮고, 산소 보충이 필요한 염증기다",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 아래 폐야의 간유리·경화 음영 + 산소 보충 필요 → 중증 바이러스 폐렴",
+    "발병 2주째 염증기·산소 필요 → 덱사메타손이 사망률을 낮춘다"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래 폐야의 흐린 간유리·경화 음영",
+     "why": "양측 바이러스 폐렴",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum procalcitonin concentration is 0.08 ng/mL",
+     "why": "세균 동반 감염 가능성을 낮춘다 — 항생제 선택지를 밀어낸다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Oxygen saturation is 88% on room air and rises to 94% with 4 L/min of oxygen",
+     "why": "산소가 필요한 단계 — 덱사메타손이 이득을 보인 집단",
+     "also": []
+    },
+    {
+     "item": "progressive shortness of breath for 8 days",
+     "why": "둘째 주 염증기",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "lymphocytes 9%",
+     "why": "코로나19 에 흔한 림프구 감소 — 약 선택을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus treated with metformin",
+     "why": "중증화 위험 요인이며 스테로이드 중 혈당 감시가 필요하지만 답을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "SARS-CoV-2 폐렴 8일째 양쪽 아래 폐야 음영과 산소가 필요한 저산소혈증이 있다. 이 염증기에 사망률을 낮추는 약은 덱사메타손이며, 프로칼시토닌이 낮아 항생제는 필요 없다.",
+   "switch": {
+    "choice": "A",
+    "condition": "한쪽 엽의 경화와 높은 프로칼시토닌으로 세균 동반 폐렴이 의심되면 항생제(아지트로마이신 포함 요법)를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0294.png",
+   "caption": "Portable semi-upright anteroposterior chest radiograph, position markers as in the original (TCIA, CC BY 4.0; DICOM converted with standard windowing, no cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1593850180013061004871260874921",
+   "asset_id": "TCIA-COVID19_AR-17634541564421",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …60874921"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0293",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위",
+  "type": "소화기·간담췌 — 간 소엽 구역에 따른 약물대사 효소 발현과 손상 부위",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "55세 남자가 대장암 간 전이로 간 부분절제술을 받았다. 수술 전 간기능 검사는 정상이었고, 음주력과 간질환 병력은 없다. 절제 검체 중 종양에서 떨어진 정상 간 조직으로 약물을 산화시키는 대사 효소에 대한 면역조직화학염색을 하였다. 그림처럼 간세포의 갈색 염색은 소엽의 한 구역에 띠 모양으로 진하고, 그 사이 문맥역 쪽 간세포 띠는 거의 염색되지 않는다.",
+  "question": "이 효소가 진하게 발현되는 소엽 구역에 괴사가 주로 생기는 것은?",
+  "options": [
+   "아세트아미노펜 과다복용",
+   "황린 중독",
+   "자간증",
+   "만성 B형간염의 경계판 괴사",
+   "원발 담즙성 담관염"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 그림의 효소는 간세포에만 발현되고 소엽 안에서 한 구역에 띠 모양으로 진하다. 산화 반응을 하는 시토크롬 P450 효소는 산소 분압이 낮은 중심정맥 주위(3구역) 간세포에 몰려 있고, 문맥역 쪽(1구역)은 약하다. 아세트아미노펜은 이 효소(CYP2E1·CYP3A4 등)가 독성 대사물 NAPQI 로 바꾸므로, 과다복용하면 효소가 많은 3구역에서 글루타티온이 먼저 고갈되어 중심소엽 괴사가 생긴다.\n- 원리: <b>왜 3구역에 대사 효소가 많은가</b>: 혈액은 문맥역(1구역)에서 들어와 동양혈관을 지나 중심정맥(3구역)으로 빠진다. 1구역 간세포는 산소가 풍부해 산화적 대사(포도당신생합성, 요소 생성)를 맡고, 3구역은 산소가 적은 대신 시토크롬 P450 에 의한 약물·독소의 산화, 해당, 지방 합성을 맡는다(대사 구역화). 그래서 그림처럼 CYP 효소 면역염색은 중심정맥 주위에 띠 모양으로 진하다.<br> <b>왜 아세트아미노펜 괴사가 3구역에 생기는가</b>: 치료 용량에서는 대부분 포합(글루쿠론산·황산)되고 일부만 CYP 가 NAPQI 로 산화시켜 글루타티온과 결합해 해독된다. 과량이면 포합이 포화되어 NAPQI 가 많이 생기는데, 효소가 많은 3구역에서 가장 많이 생기고 그곳은 산소도 적어 글루타티온이 먼저 바닥난다. 남은 NAPQI 가 단백질과 결합해 간세포가 죽는다. 같은 이유로 사염화탄소·할로탄 독성과 허혈(쇼크 간)도 3구역에 온다.<br> <b>1구역 손상의 예</b>: 황린·철 중독처럼 독소가 대사 없이 바로 작용하면 처음 닿는 문맥역 쪽이 먼저 죽고, 자간증은 문맥역 둘레에 섬유소 침착과 출혈성 괴사를 일으킨다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아세트아미노펜(정답)</th><th>황린 중독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사 구역</td><td>3구역(중심소엽)</td><td>1구역(문맥역 주위)</td></tr> <tr><td>독성의 원천</td><td>CYP 가 만든 대사물(NAPQI) — 효소가 많은 곳</td><td>독소 자체 — 혈액이 처음 닿는 곳</td></tr> <tr><td>그림과의 관계</td><td>효소가 진한 구역 = 손상 구역</td><td>효소가 거의 없는 구역이 손상</td></tr> </tbody></table> 대사를 거쳐야 독이 되는 물질은 3구역을, 그 자체로 독인 물질과 자간증은 1구역을 먼저 망가뜨린다.\n- 오답 이유:\n  - ② 황린 중독은 대사 없이 직접 독성을 내므로 혈액이 처음 닿는 문맥역 주위(1구역)에 괴사가 생긴다. 효소가 거의 없는 띠 쪽이 손상될 때 답이 된다.\n  - ③ 자간증은 문맥역 주위 동양혈관에 섬유소가 침착되며 1구역에 출혈성 괴사를 일으킨다. 임신 말기 고혈압·단백뇨 환자의 간 손상 구역을 물을 때 답이다.\n  - ④ 만성 B형간염의 경계판 괴사는 문맥역 염증이 경계판을 넘어 들어가며 문맥역 바로 옆 간세포가 죽는 것이다. 대사 효소 분포와는 무관한 면역 손상이다.\n  - ⑤ 원발 담즙성 담관염은 문맥역의 소엽간 담관을 림프구가 파괴하는 질환이다. 간세포 효소가 아니라 담관세포가 표적이며, 이 효소는 담관세포에서 음성이다.\n- 함정: 갈색 띠가 문맥역을 둘러싼다고 여겨 1구역 질환을 고르는 것 — 산화 약물대사 효소는 산소가 적은 중심정맥 주위에 몰려 있다.\n- 학습목표: 간 소엽에서 시토크롬 P450 약물대사 효소가 중심정맥 주위(3구역)에 몰려 있어 아세트아미노펜 독성 대사물에 의한 괴사가 그 구역에 생김을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 18 Liver and Gallbladder (hepatic zonation; drug- and toxin-induced injury — centrilobular necrosis by acetaminophen, periportal injury) · Lee WM. Drug-induced acute liver failure. Clin Liver Dis 2013;17:575-586 · Human Protein Atlas — CYP3A4 liver tissue, hepatocytes high, cholangiocytes not detected (teacher-only) · 작성자 판독(2026-10-11): 간 TMA 코어, 간세포 세포질의 진한 갈색 염색이 넓은 띠를 이루고 그 사이 띠는 거의 음성, 담관세포 음성\n\n## 출처\n- Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림의 효소는 간세포에만 발현되고 소엽 안에서 한 구역에 띠 모양으로 진하다. 산화 반응을 하는 시토크롬 P450 효소는 산소 분압이 낮은 중심정맥 주위(3구역) 간세포에 몰려 있고, 문맥역 쪽(1구역)은 약하다. 아세트아미노펜은 이 효소(CYP2E1·CYP3A4 등)가 독성 대사물 NAPQI 로 바꾸므로, 과다복용하면 효소가 많은 3구역에서 글루타티온이 먼저 고갈되어 중심소엽 괴사가 생긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 3구역에 대사 효소가 많은가</b>: 혈액은 문맥역(1구역)에서 들어와 동양혈관을 지나 중심정맥(3구역)으로 빠진다. 1구역 간세포는 산소가 풍부해 산화적 대사(포도당신생합성, 요소 생성)를 맡고, 3구역은 산소가 적은 대신 시토크롬 P450 에 의한 약물·독소의 산화, 해당, 지방 합성을 맡는다(대사 구역화). 그래서 그림처럼 CYP 효소 면역염색은 중심정맥 주위에 띠 모양으로 진하다.<br> <b>왜 아세트아미노펜 괴사가 3구역에 생기는가</b>: 치료 용량에서는 대부분 포합(글루쿠론산·황산)되고 일부만 CYP 가 NAPQI 로 산화시켜 글루타티온과 결합해 해독된다. 과량이면 포합이 포화되어 NAPQI 가 많이 생기는데, 효소가 많은 3구역에서 가장 많이 생기고 그곳은 산소도 적어 글루타티온이 먼저 바닥난다. 남은 NAPQI 가 단백질과 결합해 간세포가 죽는다. 같은 이유로 사염화탄소·할로탄 독성과 허혈(쇼크 간)도 3구역에 온다.<br> <b>1구역 손상의 예</b>: 황린·철 중독처럼 독소가 대사 없이 바로 작용하면 처음 닿는 문맥역 쪽이 먼저 죽고, 자간증은 문맥역 둘레에 섬유소 침착과 출혈성 괴사를 일으킨다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아세트아미노펜(정답)</th><th>황린 중독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사 구역</td><td>3구역(중심소엽)</td><td>1구역(문맥역 주위)</td></tr> <tr><td>독성의 원천</td><td>CYP 가 만든 대사물(NAPQI) — 효소가 많은 곳</td><td>독소 자체 — 혈액이 처음 닿는 곳</td></tr> <tr><td>그림과의 관계</td><td>효소가 진한 구역 = 손상 구역</td><td>효소가 거의 없는 구역이 손상</td></tr> </tbody></table> 대사를 거쳐야 독이 되는 물질은 3구역을, 그 자체로 독인 물질과 자간증은 1구역을 먼저 망가뜨린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 황린 중독은 대사 없이 직접 독성을 내므로 혈액이 처음 닿는 문맥역 주위(1구역)에 괴사가 생긴다. 효소가 거의 없는 띠 쪽이 손상될 때 답이 된다.\n③ 자간증은 문맥역 주위 동양혈관에 섬유소가 침착되며 1구역에 출혈성 괴사를 일으킨다. 임신 말기 고혈압·단백뇨 환자의 간 손상 구역을 물을 때 답이다.\n④ 만성 B형간염의 경계판 괴사는 문맥역 염증이 경계판을 넘어 들어가며 문맥역 바로 옆 간세포가 죽는 것이다. 대사 효소 분포와는 무관한 면역 손상이다.\n⑤ 원발 담즙성 담관염은 문맥역의 소엽간 담관을 림프구가 파괴하는 질환이다. 간세포 효소가 아니라 담관세포가 표적이며, 이 효소는 담관세포에서 음성이다."
+   },
+   {
+    "k": "함정",
+    "v": "갈색 띠가 문맥역을 둘러싼다고 여겨 1구역 질환을 고르는 것 — 산화 약물대사 효소는 산소가 적은 중심정맥 주위에 몰려 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간 소엽에서 시토크롬 P450 약물대사 효소가 중심정맥 주위(3구역)에 몰려 있어 아세트아미노펜 독성 대사물에 의한 괴사가 그 구역에 생김을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 18 Liver and Gallbladder (hepatic zonation; drug- and toxin-induced injury — centrilobular necrosis by acetaminophen, periportal injury) · Lee WM. Drug-induced acute liver failure. Clin Liver Dis 2013;17:575-586 · Human Protein Atlas — CYP3A4 liver tissue, hepatocytes high, cholangiocytes not detected (teacher-only) · 작성자 판독(2026-10-11): 간 TMA 코어, 간세포 세포질의 진한 갈색 염색이 넓은 띠를 이루고 그 사이 띠는 거의 음성, 담관세포 음성 ## 출처 Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "그림의 산화 약물대사 효소는 간세포에서 소엽의 한 구역(중심정맥 주위)에 띠 모양으로 진하고 문맥역 쪽은 약하므로, 이 효소가 독성 대사물을 만드는 아세트아미노펜 괴사가 그 구역에 생긴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "대사를 거쳐야 독이 되는 아세트아미노펜은 효소가 많은 3구역, 직접 독인 황린은 효소가 거의 없는 1구역을 먼저 손상한다",
+   "steps": 3,
+   "chain": [
+    "영상: 간세포 염색이 소엽 한 구역에 띠로 진하고 문맥역 쪽 띠는 음성 → 대사 구역화",
+    "산화 약물대사 효소는 산소가 적은 3구역(중심정맥 주위)에 몰린다",
+    "효소가 만든 독성 대사물로 괴사하는 아세트아미노펜이 그 구역을 손상"
+   ],
+   "key": [
+    {
+     "item": "영상: 간세포의 갈색 염색이 소엽의 한 구역에 띠 모양으로 진하고 그 사이 띠는 거의 음성",
+     "why": "효소가 구역에 따라 다르게 발현됨",
+     "also": []
+    },
+    {
+     "item": "약물을 산화시키는 대사 효소",
+     "why": "시토크롬 P450 — 3구역 우세",
+     "also": []
+    },
+    {
+     "item": "문맥역 쪽 간세포 띠는 거의 염색되지 않는다",
+     "why": "1구역은 약하다 — 진한 띠는 3구역",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "수술 전 간기능 검사는 정상이었고",
+     "why": "정상 간 조직이라는 맥락 — 답을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "음주력과 간질환 병력은 없다",
+     "why": "효소 유도 요인이 없는 정상 분포라는 배경",
+     "also": []
+    }
+   ],
+   "summary": "간세포에서 산화 약물대사 효소가 소엽의 한 구역에 띠로 진하고 문맥역 쪽은 약하다 — 중심정맥 주위(3구역) 우세 발현이다. 이 효소가 독성 대사물을 만드는 아세트아미노펜 과다복용의 괴사가 그 구역에 생긴다.",
+   "switch": {
+    "choice": "C",
+    "condition": "임신 말기 고혈압·단백뇨 환자의 간에서 문맥역 주위 섬유소 침착과 출혈성 괴사를 묻는다면 자간증이 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0293.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000160868-CYP3A4/tissue/Liver",
+   "asset_id": "HPA-CYP3A4_76592_A_8_4",
+   "text": "Human Protein Atlas, CYP3A4 / Liver (CC BY 4.0), https://images.proteinatlas.org/33671/76592_A_8_4.jpg"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0292",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화",
+  "type": "안과 — 금속 연마 작업자의 한쪽 만성 포도막염과 홍채 색 변화",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "43세 남자가 왼쪽 눈이 1년 전부터 조금씩 흐려지고 자주 충혈되어 왔다. 다른 병원에서 만성 앞포도막염으로 스테로이드 점안을 여러 차례 받았으나 재발하였다. 10년 동안 금속 연마 작업을 해 왔고, 눈을 다친 기억은 없다. 교정시력은 오른쪽 1.0, 왼쪽 0.4 이다. 왼쪽 홍채는 오른쪽보다 짙은 적갈색이고, 왼쪽 동공은 오른쪽보다 크며 빛반사가 느리다. 왼쪽 수정체 앞낭 아래에 갈색 점들이 흩어져 있다. 안압은 양쪽 16 mmHg 이다. 오른쪽 눈은 정상이다. 안와 높이의 뇌 CT 축상면(뼈 창)은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "안구 구리침착증",
+   "Fuchs 이색성 홍채모양체염",
+   "교감성 안염",
+   "HLA-B27 연관 앞포도막염",
+   "안구 철침착증"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: CT 에서 왼쪽 안구 앞쪽 가장자리에 점 모양의 고음영 이물이 있다. 금속 연마 작업자가 다친 기억 없이 한쪽 눈에 만성·재발성 포도막염을 겪고, 같은 눈의 홍채가 짙은 적갈색으로 변하고 동공이 커지며 수정체 앞낭 아래 갈색 침착이 생긴 것은 안구 안에 남은 철 이물에서 철이온이 녹아 조직에 쌓인 안구 철침착증이다.\n- 원리: <b>왜 철이 눈을 망가뜨리는가</b>: 눈 속에 남은 철 조각은 천천히 산화되어 철이온을 내놓고, 이 철이온은 상피세포(홍채·수정체·섬모체·망막 색소상피)에 쌓여 Fenton 반응으로 활성산소를 만든다. 그래서 홍채가 적갈색으로 짙어지고(이색증), 동공 괄약근이 손상되어 동공이 커지며, 수정체 앞낭 아래에 갈색 점이 생기고, 섬유주에 쌓이면 이차 녹내장, 망막에 쌓이면 시야 좁아짐과 망막전위도의 b파 감소가 온다.<br> <b>왜 다친 기억이 없는가</b>: 망치질·연마 중 튄 작은 금속 조각은 빠른 속도로 각막이나 공막을 뚫고 들어가 상처가 금방 닫힌다. 그래서 「원인 모를 한쪽 포도막염」으로 오랫동안 치료받다가 늦게 발견되는 일이 많다. 금속 이물이 의심되면 CT 로 찾는다(MRI 는 자성 금속이 움직일 수 있어 금기).<br> <b>치료</b>: 망막전위도가 더 나빠지기 전에 유리체절제술로 이물을 빼낸다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안구 철침착증(정답)</th><th>Fuchs 이색성 홍채모양체염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>홍채 색</td><td>침범 눈이 <b>더 짙다</b>(철 침착)</td><td>침범 눈이 <b>더 옅다</b>(기질 위축)</td></tr> <tr><td>CT</td><td>안구 안 금속성 고음영 이물</td><td>이물 없음</td></tr> <tr><td>그 밖의 소견</td><td>동공 확대, 수정체 앞낭 아래 갈색 점</td><td>각막 뒷면 작은 별 모양 침착물, 후낭하 백내장</td></tr> </tbody></table> 두 질환 모두 한쪽 만성 포도막염과 이색증을 일으킨다 — 홍채가 짙어졌는지 옅어졌는지, CT 에 이물이 있는지가 가른다.\n- 오답 이유:\n  - ① 안구 구리침착증은 구리 함량이 높은 이물(황동 등)에서 생기며 각막 Descemet 막의 녹색 고리와 해바라기 백내장이 특징이다. 이 환자처럼 적갈색 홍채와 갈색 침착이면 철이 원인이다.\n  - ② Fuchs 이색성 홍채모양체염도 한쪽 만성 포도막염과 이색증을 보이지만 침범 눈의 홍채가 더 옅어지고 CT 에 이물이 없을 때 진단한다.\n  - ③ 교감성 안염은 한쪽 눈의 관통상 뒤 수주~수개월에 다치지 않은 반대쪽 눈까지 양쪽 육아종성 포도막염이 생길 때 진단한다. 이 환자의 오른쪽 눈은 정상이다.\n  - ④ HLA-B27 연관 앞포도막염은 강직척추염 등과 함께 갑자기 생겼다 낫는 급성 한쪽 포도막염이며, 홍채 색 변화나 안구 내 이물이 있으면 진단하기 어렵다.\n- 함정: 이색증과 한쪽 만성 포도막염만 보고 Fuchs 이색성 홍채모양체염을 고르는 것 — 침범 눈의 홍채가 짙어졌고 CT 에 이물이 있다.\n- 학습목표: 눈 속 철 이물이 오래 남아 생기는 안구 철침착증을 한쪽 만성 포도막염·홍채 색 변화·동공 확대와 CT 의 안구 내 고음영 이물로 진단한다\n- 근거·출처: Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — intraocular foreign bodies: siderosis bulbi, chalcosis · American Academy of Ophthalmology. Basic and Clinical Science Course, Section 9 Uveitis and Ocular Inflammation (Fuchs uveitis syndrome — hypochromic heterochromia) · PMC12888828 Figure 2 — case report of ocular siderosis masquerading as chronic anterior uveitis (teacher-only) · 작성자 판독(2026-10-11): 안와 축상 CT(화면 촬영본), 왼쪽 안구 앞쪽 가장자리에 점 모양 고음영 이물(원 빨간 화살표), 안와벽 골절 없음\n\n## 출처\n- The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 왼쪽 안구 앞쪽 가장자리에 점 모양의 고음영 이물이 있다. 금속 연마 작업자가 다친 기억 없이 한쪽 눈에 만성·재발성 포도막염을 겪고, 같은 눈의 홍채가 짙은 적갈색으로 변하고 동공이 커지며 수정체 앞낭 아래 갈색 침착이 생긴 것은 안구 안에 남은 철 이물에서 철이온이 녹아 조직에 쌓인 안구 철침착증이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 철이 눈을 망가뜨리는가</b>: 눈 속에 남은 철 조각은 천천히 산화되어 철이온을 내놓고, 이 철이온은 상피세포(홍채·수정체·섬모체·망막 색소상피)에 쌓여 Fenton 반응으로 활성산소를 만든다. 그래서 홍채가 적갈색으로 짙어지고(이색증), 동공 괄약근이 손상되어 동공이 커지며, 수정체 앞낭 아래에 갈색 점이 생기고, 섬유주에 쌓이면 이차 녹내장, 망막에 쌓이면 시야 좁아짐과 망막전위도의 b파 감소가 온다.<br> <b>왜 다친 기억이 없는가</b>: 망치질·연마 중 튄 작은 금속 조각은 빠른 속도로 각막이나 공막을 뚫고 들어가 상처가 금방 닫힌다. 그래서 「원인 모를 한쪽 포도막염」으로 오랫동안 치료받다가 늦게 발견되는 일이 많다. 금속 이물이 의심되면 CT 로 찾는다(MRI 는 자성 금속이 움직일 수 있어 금기).<br> <b>치료</b>: 망막전위도가 더 나빠지기 전에 유리체절제술로 이물을 빼낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">안구 철침착증(정답)</th><th>Fuchs 이색성 홍채모양체염(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>홍채 색</td><td>침범 눈이 <b>더 짙다</b>(철 침착)</td><td>침범 눈이 <b>더 옅다</b>(기질 위축)</td></tr> <tr><td>CT</td><td>안구 안 금속성 고음영 이물</td><td>이물 없음</td></tr> <tr><td>그 밖의 소견</td><td>동공 확대, 수정체 앞낭 아래 갈색 점</td><td>각막 뒷면 작은 별 모양 침착물, 후낭하 백내장</td></tr> </tbody></table> 두 질환 모두 한쪽 만성 포도막염과 이색증을 일으킨다 — 홍채가 짙어졌는지 옅어졌는지, CT 에 이물이 있는지가 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 안구 구리침착증은 구리 함량이 높은 이물(황동 등)에서 생기며 각막 Descemet 막의 녹색 고리와 해바라기 백내장이 특징이다. 이 환자처럼 적갈색 홍채와 갈색 침착이면 철이 원인이다.\n② Fuchs 이색성 홍채모양체염도 한쪽 만성 포도막염과 이색증을 보이지만 침범 눈의 홍채가 더 옅어지고 CT 에 이물이 없을 때 진단한다.\n③ 교감성 안염은 한쪽 눈의 관통상 뒤 수주~수개월에 다치지 않은 반대쪽 눈까지 양쪽 육아종성 포도막염이 생길 때 진단한다. 이 환자의 오른쪽 눈은 정상이다.\n④ HLA-B27 연관 앞포도막염은 강직척추염 등과 함께 갑자기 생겼다 낫는 급성 한쪽 포도막염이며, 홍채 색 변화나 안구 내 이물이 있으면 진단하기 어렵다."
+   },
+   {
+    "k": "함정",
+    "v": "이색증과 한쪽 만성 포도막염만 보고 Fuchs 이색성 홍채모양체염을 고르는 것 — 침범 눈의 홍채가 짙어졌고 CT 에 이물이 있다."
+   },
+   {
+    "k": "학습목표",
+    "v": "눈 속 철 이물이 오래 남아 생기는 안구 철침착증을 한쪽 만성 포도막염·홍채 색 변화·동공 확대와 CT 의 안구 내 고음영 이물로 진단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — intraocular foreign bodies: siderosis bulbi, chalcosis · American Academy of Ophthalmology. Basic and Clinical Science Course, Section 9 Uveitis and Ocular Inflammation (Fuchs uveitis syndrome — hypochromic heterochromia) · PMC12888828 Figure 2 — case report of ocular siderosis masquerading as chronic anterior uveitis (teacher-only) · 작성자 판독(2026-10-11): 안와 축상 CT(화면 촬영본), 왼쪽 안구 앞쪽 가장자리에 점 모양 고음영 이물(원 빨간 화살표), 안와벽 골절 없음 ## 출처 The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "금속 연마 작업자의 한쪽 만성 포도막염에 같은 눈의 홍채가 짙어지고 동공이 커졌으며 CT 에 안구 안 고음영 이물이 있으므로 안구 철침착증이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "침범 눈의 홍채가 더 짙은 적갈색이고(Fuchs 는 더 옅다) CT 에 금속성 이물이 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 안구 앞쪽의 점 모양 고음영 이물 → 안구 내 금속 이물",
+    "짙은 적갈색 홍채·동공 확대·수정체 앞낭 아래 갈색 점 → 철 이물에 의한 철침착증"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 안구 앞쪽 가장자리의 점 모양 고음영 이물",
+     "why": "안구 안 금속 이물",
+     "also": []
+    },
+    {
+     "item": "왼쪽 홍채는 오른쪽보다 짙은 적갈색이고",
+     "why": "철 침착에 의한 과색소 이색증",
+     "also": []
+    },
+    {
+     "item": "10년 동안 금속 연마 작업을 해 왔고",
+     "why": "튄 철 조각이 눈에 들어가는 전형적 맥락",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "오른쪽 눈은 정상이다",
+     "why": "양쪽 눈을 침범하는 교감성 안염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "눈을 다친 기억은 없다",
+     "why": "작은 고속 이물은 상처가 금방 닫혀 기억하지 못하는 경우가 많다 — 진단을 배제하지 않는다",
+     "also": []
+    },
+    {
+     "item": "안압은 양쪽 16 mmHg 이다",
+     "why": "아직 이차 녹내장이 없다는 정보일 뿐 진단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "금속 연마 작업자의 왼쪽 눈에 만성·재발성 포도막염, 짙은 적갈색 홍채, 동공 확대, 수정체 앞낭 아래 갈색 침착이 있고 CT 에 안구 안 금속성 이물이 있다. 안구 철침착증이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "침범 눈의 홍채가 더 옅고 각막 뒷면에 작은 별 모양 침착물이 흩어져 있으며 CT 에 이물이 없다면 Fuchs 이색성 홍채모양체염이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0292.jpg",
+   "caption": "안와 축상 CT(뼈 창, 모니터 화면 촬영본), 빨간 화살표와 R·L 표지는 원 그림의 것 — 출판된 증례 그림 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12888828/",
+   "asset_id": "PMC-PMC12888828_Figure2",
+   "text": "The Rusty Eye: Ocular Siderosis Masquerading as Chronic Anterior Uveitis. Cureus. 2026 Jan 11;18(1):e101280. doi: 10.7759/cureus.101280 (CC BY) — Figure 2"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0291",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압",
+  "type": "순환기 — 오토바이 사고 뒤 가슴·등 통증과 높은 혈압",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "An 18-year-old man is brought to the emergency department 1 hour after he was thrown from a motorcycle at high speed. He reports chest and back pain. A left chest tube placed on arrival drained 250 mL of blood, and drainage has since stopped. After 1 L of crystalloid, his blood pressure is 156/94 mm Hg in both arms and pulse is 108/min. Oxygen saturation is 96% on 4 L/min of oxygen by nasal cannula. He is alert, and pulses are palpable and symmetric in all four extremities. Abdominal ultrasonography shows no free fluid. Hemoglobin concentration is 12.9 g/dL and remains unchanged 1 hour later. A contrast-enhanced CT angiogram of the chest is shown. Vascular surgery is consulted.",
+  "question": "Which of the following is the most appropriate initial pharmacotherapy?",
+  "options": [
+   "Intravenous tranexamic acid",
+   "Intravenous esmolol",
+   "Intravenous nitroprusside",
+   "Intravenous hydralazine",
+   "Intravenous norepinephrine"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The CT angiogram shows a thin linear filling defect within the lumen of the proximal descending thoracic aorta (intimal flap) with surrounding periaortic and left paravertebral soft tissue (mediastinal hematoma), plus left pleural fluid. After high-speed blunt trauma this is a blunt thoracic aortic injury distal to the left subclavian artery. While repair is arranged, the first step is anti-impulse therapy: an intravenous beta-blocker such as esmolol to bring the heart rate below about 100/min and the systolic pressure to roughly 100 to 120 mm Hg, which lowers the shear force on the injured wall.\n- 원리: <b>Why lower dP/dt, not only pressure</b>: the injured aortic wall tears further when each ejection strikes it hard and fast. Wall stress depends on both the pressure and the rate at which pressure rises with each beat (dP/dt). A beta-blocker lowers heart rate and contractility, so it reduces dP/dt as well as pressure — this is called anti-impulse therapy. Esmolol is preferred because its very short half-life lets it be stopped at once if bleeding elsewhere makes the patient hypotensive.<br> <b>Why a vasodilator alone is wrong</b>: nitroprusside or hydralazine lowers pressure, but the baroreflex responds with tachycardia and a stronger contraction, which raises dP/dt and can extend the tear. A vasodilator is added only after the beta-blocker has controlled the heart rate.<br> <b>Where it fits in trauma care</b>: anti-impulse therapy is used once hemorrhage elsewhere is controlled and the patient is not hypotensive — here the chest tube drainage stopped, the abdomen has no free fluid, and hemoglobin is stable. Definitive treatment is usually thoracic endovascular aortic repair (TEVAR); open repair is an alternative.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Esmolol first (correct)</th><th>Nitroprusside first (closest distractor)</th></tr></thead><tbody> <tr><td>Heart rate</td><td>Falls (beta-1 blockade)</td><td>Rises (reflex sympathetic response)</td></tr> <tr><td>dP/dt (shear on the tear)</td><td>Falls</td><td>Can rise despite lower pressure</td></tr> <tr><td>Role</td><td>First agent — target HR &lt; 100/min</td><td>Second agent, only after beta-blockade if pressure stays high</td></tr> </tbody></table> Whichever way it is asked, the order is \"rate first, then pressure\": a vasodilator without a beta-blocker is the classic error in aortic injury and aortic dissection.\n- 오답 이유:\n  - (A) Tranexamic acid reduces mortality when given within 3 hours to bleeding trauma patients in hemorrhagic shock; it would be a reasonable adjunct if he were hypotensive from ongoing hemorrhage, but it does not protect the aortic wall.\n  - (C) Nitroprusside is added when systolic pressure remains high after the heart rate is controlled with a beta-blocker; used first, it causes reflex tachycardia that increases shear on the torn aorta.\n  - (D) Hydralazine is a direct arteriolar dilator that provokes marked reflex tachycardia; it would be considered for hypertension in pregnancy, not as the first drug for an aortic wall injury.\n  - (E) Norepinephrine raises pressure and would be used only for vasodilatory shock after hemorrhage is excluded; this patient is hypertensive, and raising pressure would stress the injured aorta.\n- 함정: Choosing a pure vasodilator because the blood pressure is high — the heart rate must be controlled first, or reflex tachycardia increases shear on the tear.\n- 학습목표: 둔상 흉부 대동맥 손상(하행대동맥 내막 피판)에서 수술·혈관내 수복 전 첫 약물 처치가 정맥 베타차단제로 심박수와 혈압을 낮추는 것임을 안다\n- 근거·출처: Fox N, et al. Evaluation and management of blunt traumatic aortic injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2015;78:136-146 · Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 (anti-impulse therapy: beta-blocker first, HR < 60-80, SBP < 120) · PMC13086891 Figure 2 — case report of traumatic thoracic aortic injury after motorcycle trauma (teacher-only) · 작성자 판독(2026-10-11): 조영증강 흉부 CT 축상, 하행대동맥 근위부 내강 안 선상 결손(원 화살표 — 내막 피판), 대동맥 둘레·왼쪽 척추 옆 연부조직 음영, 왼쪽 흉강 뒤쪽 액체와 왼쪽 아래엽 경화\n\n## 출처\n- Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT angiogram shows a thin linear filling defect within the lumen of the proximal descending thoracic aorta (intimal flap) with surrounding periaortic and left paravertebral soft tissue (mediastinal hematoma), plus left pleural fluid. After high-speed blunt trauma this is a blunt thoracic aortic injury distal to the left subclavian artery. While repair is arranged, the first step is anti-impulse therapy: an intravenous beta-blocker such as esmolol to bring the heart rate below about 100/min and the systolic pressure to roughly 100 to 120 mm Hg, which lowers the shear force on the injured wall."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why lower dP/dt, not only pressure</b>: the injured aortic wall tears further when each ejection strikes it hard and fast. Wall stress depends on both the pressure and the rate at which pressure rises with each beat (dP/dt). A beta-blocker lowers heart rate and contractility, so it reduces dP/dt as well as pressure — this is called anti-impulse therapy. Esmolol is preferred because its very short half-life lets it be stopped at once if bleeding elsewhere makes the patient hypotensive.<br> <b>Why a vasodilator alone is wrong</b>: nitroprusside or hydralazine lowers pressure, but the baroreflex responds with tachycardia and a stronger contraction, which raises dP/dt and can extend the tear. A vasodilator is added only after the beta-blocker has controlled the heart rate.<br> <b>Where it fits in trauma care</b>: anti-impulse therapy is used once hemorrhage elsewhere is controlled and the patient is not hypotensive — here the chest tube drainage stopped, the abdomen has no free fluid, and hemoglobin is stable. Definitive treatment is usually thoracic endovascular aortic repair (TEVAR); open repair is an alternative."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Esmolol first (correct)</th><th>Nitroprusside first (closest distractor)</th></tr></thead><tbody> <tr><td>Heart rate</td><td>Falls (beta-1 blockade)</td><td>Rises (reflex sympathetic response)</td></tr> <tr><td>dP/dt (shear on the tear)</td><td>Falls</td><td>Can rise despite lower pressure</td></tr> <tr><td>Role</td><td>First agent — target HR &lt; 100/min</td><td>Second agent, only after beta-blockade if pressure stays high</td></tr> </tbody></table> Whichever way it is asked, the order is \"rate first, then pressure\": a vasodilator without a beta-blocker is the classic error in aortic injury and aortic dissection."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Tranexamic acid reduces mortality when given within 3 hours to bleeding trauma patients in hemorrhagic shock; it would be a reasonable adjunct if he were hypotensive from ongoing hemorrhage, but it does not protect the aortic wall.\n(C) Nitroprusside is added when systolic pressure remains high after the heart rate is controlled with a beta-blocker; used first, it causes reflex tachycardia that increases shear on the torn aorta.\n(D) Hydralazine is a direct arteriolar dilator that provokes marked reflex tachycardia; it would be considered for hypertension in pregnancy, not as the first drug for an aortic wall injury.\n(E) Norepinephrine raises pressure and would be used only for vasodilatory shock after hemorrhage is excluded; this patient is hypertensive, and raising pressure would stress the injured aorta."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a pure vasodilator because the blood pressure is high — the heart rate must be controlled first, or reflex tachycardia increases shear on the tear."
+   },
+   {
+    "k": "학습목표",
+    "v": "둔상 흉부 대동맥 손상(하행대동맥 내막 피판)에서 수술·혈관내 수복 전 첫 약물 처치가 정맥 베타차단제로 심박수와 혈압을 낮추는 것임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Fox N, et al. Evaluation and management of blunt traumatic aortic injury: a practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg 2015;78:136-146 · Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482 (anti-impulse therapy: beta-blocker first, HR < 60-80, SBP < 120) · PMC13086891 Figure 2 — case report of traumatic thoracic aortic injury after motorcycle trauma (teacher-only) · 작성자 판독(2026-10-11): 조영증강 흉부 CT 축상, 하행대동맥 근위부 내강 안 선상 결손(원 화살표 — 내막 피판), 대동맥 둘레·왼쪽 척추 옆 연부조직 음영, 왼쪽 흉강 뒤쪽 액체와 왼쪽 아래엽 경화 ## 출처 Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "고속 둔상 뒤 하행대동맥 내막 피판과 종격 혈종은 둔상 흉부 대동맥 손상이고, 다른 출혈이 조절되어 혈압이 높으므로 먼저 정맥 베타차단제로 심박수와 혈압을 낮춘다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "혈관확장제만 먼저 쓰면 반사 빈맥으로 대동맥 벽에 걸리는 힘이 커진다 — 심박수 108/min 을 먼저 낮춰야 한다",
+   "steps": 3,
+   "chain": [
+    "영상: 하행대동맥 내강의 선상 결손과 대동맥 둘레 혈종 → 둔상 흉부 대동맥 손상",
+    "흉관 배액 멈춤·복강 액체 없음·혈색소 유지 → 다른 출혈은 조절, 혈압 156/94 로 높음",
+    "수복 전 첫 약물은 심박수를 먼저 낮추는 정맥 베타차단제(에스몰롤)"
+   ],
+   "key": [
+    {
+     "item": "영상: 하행대동맥 근위부 내강 안의 가는 선상 결손과 대동맥 둘레·왼쪽 척추 옆 연부조직 음영",
+     "why": "내막 피판과 종격 혈종 — 대동맥 손상",
+     "also": []
+    },
+    {
+     "item": "thrown from a motorcycle at high speed",
+     "why": "급감속 기전 — 대동맥 협부 근처 손상의 전형",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Abdominal ultrasonography shows no free fluid",
+     "why": "복강 내 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "his blood pressure is 156/94 mm Hg in both arms and pulse is 108/min",
+     "why": "혈압·심박수가 높다 — 낮춰야 할 표적, 심박수 먼저",
+     "also": []
+    },
+    {
+     "item": "drainage has since stopped",
+     "why": "흉강 출혈이 멈춰 저혈압 위험이 낮다 — 베타차단제를 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "pulses are palpable and symmetric in all four extremities",
+     "why": "분지 혈관 침범이 없다는 정보지만 첫 약물 선택을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "고속 오토바이 사고 뒤 CT 에서 하행대동맥 내막 피판과 대동맥 둘레 혈종이 보이는 둔상 흉부 대동맥 손상이다. 다른 출혈이 조절되고 혈압·심박수가 높으므로, 수복 전 첫 약물은 심박수를 먼저 낮추는 정맥 에스몰롤이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "베타차단제로 심박수가 60~80/min 으로 조절된 뒤에도 수축기 혈압이 120 mmHg 를 넘으면 니트로프루시드를 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0291.jpg",
+   "caption": "Axial contrast-enhanced CT angiography of the chest, arrow and R/L markers as in the original — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13086891/",
+   "asset_id": "PMC-PMC13086891_Figure2",
+   "text": "Successful Open Surgical Repair of Traumatic Stanford Type B Thoracic Aortic Dissection Following Motorcycle Trauma: A Case Report. Cureus. 2026 Mar 17;18(3):e105408. doi: 10.7759/cureus.105408 (CC BY) — Figure 2"
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0300",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승",
+  "type": "신장·비뇨 — 이뇨제 복용 중 구토·설사 뒤 크레아티닌 상승",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "72세 여자가 3일 동안 구토와 설사가 있은 뒤 기운이 없어 왔다. 고혈압과 심부전으로 푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다. 혈압 98/60 mmHg(누우면), 앉으면 82/54 mmHg 이고, 맥박 106회/분 이다. 혀가 말라 있고 경정맥은 보이지 않는다. 한 달 전 크레아티닌은 0.9 mg/dL 이었다. 혈액검사에서 혈액요소질소 58 mg/dL, 크레아티닌 2.4 mg/dL, 나트륨 134 mmol/L 이다. 소변 검사에서 비중 1.025, 침사에 과립원주와 적혈구는 없다. 나트륨 분획배설률 2.1 %, 요소 분획배설률 22 % 이다.",
+  "question": "진단은?",
+  "options": [
+   "급성 간질성 신염",
+   "급속 진행 사구체신염",
+   "콩팥후 요로 폐쇄",
+   "콩팥전 급성 콩팥 손상",
+   "급성 세뇨관 괴사"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 구토·설사로 체액이 빠진 데다 이뇨제를 먹어 기립성 저혈압·빈맥·마른 혀가 있고, 혈액요소질소/크레아티닌 비가 약 24 로 높으며 소변이 농축(비중 1.025)되고 침사가 깨끗하다. 나트륨 분획배설률 2.1 % 는 푸로세미드가 나트륨 재흡수를 막아 생긴 것이므로 판단에 쓸 수 없다. 이뇨제 영향을 덜 받는 요소 분획배설률이 22 %(35 % 미만)로 낮아 콩팥이 요소를 열심히 재흡수하는 콩팥전 상태다.\n- 원리: <b>분획배설률이 무엇을 보는가</b>: 혈류가 줄면 건강한 세뇨관은 나트륨과 물을 최대한 재흡수하므로 나트륨 분획배설률이 1 % 미만으로 떨어진다. 세뇨관이 죽으면(급성 세뇨관 괴사) 재흡수를 못 해 2 % 를 넘는다. 즉 이 수치는 「세뇨관이 살아서 아끼고 있는가」를 본다.<br> <b>이뇨제가 왜 이 판단을 망치는가</b>: 루프·티아지드 이뇨제는 세뇨관의 나트륨 운반체를 직접 막아, 세뇨관이 멀쩡하고 체액이 부족해도 나트륨을 소변으로 내보낸다. 그래서 이뇨제 복용 환자의 나트륨 분획배설률은 거짓으로 높다.<br> <b>요소는 왜 괜찮은가</b>: 요소는 주로 근위세뇨관에서 물을 따라 수동적으로, 그리고 집합관에서 항이뇨호르몬에 의해 재흡수되므로 루프 이뇨제의 영향을 덜 받는다. 콩팥전 상태에서는 물 재흡수가 늘어 요소 분획배설률이 35 % 미만, 세뇨관 괴사에서는 50 % 이상이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">콩팥전 AKI(정답)</th><th>급성 세뇨관 괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>요소 분획배설률</td><td>35 % 미만(이 환자 22 %)</td><td>50 % 이상</td></tr> <tr><td>소변 침사</td><td>깨끗하거나 투명 원주</td><td>흙갈색 과립원주·세뇨관 상피세포</td></tr> <tr><td>소변 농축</td><td>비중 높음(1.020 이상)</td><td>등장뇨(비중 약 1.010)</td></tr> </tbody></table> 이뇨제를 먹으면 나트륨 분획배설률은 믿지 말고 요소 분획배설률과 침사로 가린다.\n- 오답 이유:\n  - ① 급성 간질성 신염은 새 약(베타락탐·PPI·NSAID) 뒤 발열·발진·호산구증가와 소변 백혈구·백혈구원주가 있을 때 진단한다. 이 환자는 오래 먹던 푸로세미드 외에 새 약이 없고 침사가 깨끗하다.\n  - ② 급속 진행 사구체신염은 혈뇨·적혈구원주·단백뇨와 함께 수일~수주에 걸쳐 콩팥 기능이 떨어질 때 진단한다. 이 환자는 침사에 적혈구가 없다.\n  - ③ 콩팥후 요로 폐쇄는 전립선 비대·골반 종양 등으로 소변이 줄거나 없어지고 초음파에서 수신증이 보일 때 진단한다. 이 환자는 체액 손실의 뚜렷한 원인과 농축뇨가 있다.\n  - ⑤ 급성 세뇨관 괴사는 오래 지속된 허혈이나 신독성 약물 뒤 흙갈색 과립원주, 등장뇨, 요소 분획배설률 50 % 이상일 때 진단한다. 나트륨 분획배설률만 보면 끌리지만 이 환자는 소변이 농축되고 침사가 깨끗하다.\n- 함정: 나트륨 분획배설률 2.1 % 만 보고 급성 세뇨관 괴사를 고르는 것 — 이뇨제를 복용 중이면 요소 분획배설률로 판단한다.\n- 학습목표: 이뇨제를 복용하는 환자에서는 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상일 수 있어 요소 분획배설률로 판단함을 안다\n- 근거·출처: Rennke HG, Denker BM. Renal Pathophysiology: The Essentials, 5th ed. Ch. Acute kidney injury (FENa and diuretics, FEUrea) · Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int 2002;62:2223-2229",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "구토·설사로 체액이 빠진 데다 이뇨제를 먹어 기립성 저혈압·빈맥·마른 혀가 있고, 혈액요소질소/크레아티닌 비가 약 24 로 높으며 소변이 농축(비중 1.025)되고 침사가 깨끗하다. 나트륨 분획배설률 2.1 % 는 푸로세미드가 나트륨 재흡수를 막아 생긴 것이므로 판단에 쓸 수 없다. 이뇨제 영향을 덜 받는 요소 분획배설률이 22 %(35 % 미만)로 낮아 콩팥이 요소를 열심히 재흡수하는 콩팥전 상태다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>분획배설률이 무엇을 보는가</b>: 혈류가 줄면 건강한 세뇨관은 나트륨과 물을 최대한 재흡수하므로 나트륨 분획배설률이 1 % 미만으로 떨어진다. 세뇨관이 죽으면(급성 세뇨관 괴사) 재흡수를 못 해 2 % 를 넘는다. 즉 이 수치는 「세뇨관이 살아서 아끼고 있는가」를 본다.<br> <b>이뇨제가 왜 이 판단을 망치는가</b>: 루프·티아지드 이뇨제는 세뇨관의 나트륨 운반체를 직접 막아, 세뇨관이 멀쩡하고 체액이 부족해도 나트륨을 소변으로 내보낸다. 그래서 이뇨제 복용 환자의 나트륨 분획배설률은 거짓으로 높다.<br> <b>요소는 왜 괜찮은가</b>: 요소는 주로 근위세뇨관에서 물을 따라 수동적으로, 그리고 집합관에서 항이뇨호르몬에 의해 재흡수되므로 루프 이뇨제의 영향을 덜 받는다. 콩팥전 상태에서는 물 재흡수가 늘어 요소 분획배설률이 35 % 미만, 세뇨관 괴사에서는 50 % 이상이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">콩팥전 AKI(정답)</th><th>급성 세뇨관 괴사(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>요소 분획배설률</td><td>35 % 미만(이 환자 22 %)</td><td>50 % 이상</td></tr> <tr><td>소변 침사</td><td>깨끗하거나 투명 원주</td><td>흙갈색 과립원주·세뇨관 상피세포</td></tr> <tr><td>소변 농축</td><td>비중 높음(1.020 이상)</td><td>등장뇨(비중 약 1.010)</td></tr> </tbody></table> 이뇨제를 먹으면 나트륨 분획배설률은 믿지 말고 요소 분획배설률과 침사로 가린다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 급성 간질성 신염은 새 약(베타락탐·PPI·NSAID) 뒤 발열·발진·호산구증가와 소변 백혈구·백혈구원주가 있을 때 진단한다. 이 환자는 오래 먹던 푸로세미드 외에 새 약이 없고 침사가 깨끗하다.\n② 급속 진행 사구체신염은 혈뇨·적혈구원주·단백뇨와 함께 수일~수주에 걸쳐 콩팥 기능이 떨어질 때 진단한다. 이 환자는 침사에 적혈구가 없다.\n③ 콩팥후 요로 폐쇄는 전립선 비대·골반 종양 등으로 소변이 줄거나 없어지고 초음파에서 수신증이 보일 때 진단한다. 이 환자는 체액 손실의 뚜렷한 원인과 농축뇨가 있다.\n⑤ 급성 세뇨관 괴사는 오래 지속된 허혈이나 신독성 약물 뒤 흙갈색 과립원주, 등장뇨, 요소 분획배설률 50 % 이상일 때 진단한다. 나트륨 분획배설률만 보면 끌리지만 이 환자는 소변이 농축되고 침사가 깨끗하다."
+   },
+   {
+    "k": "함정",
+    "v": "나트륨 분획배설률 2.1 % 만 보고 급성 세뇨관 괴사를 고르는 것 — 이뇨제를 복용 중이면 요소 분획배설률로 판단한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이뇨제를 복용하는 환자에서는 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상일 수 있어 요소 분획배설률로 판단함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rennke HG, Denker BM. Renal Pathophysiology: The Essentials, 5th ed. Ch. Acute kidney injury (FENa and diuretics, FEUrea) · Carvounis CP, Nisar S, Guro-Razuman S. Significance of the fractional excretion of urea in the differential diagnosis of acute renal failure. Kidney Int 2002;62:2223-2229"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "체액 손실과 이뇨제 복용으로 기립성 저혈압이 있고 소변이 농축되고 침사가 깨끗하며 요소 분획배설률이 22 % 로 낮으므로, 나트륨 분획배설률이 높아도 콩팥전 급성 콩팥 손상이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "이뇨제 복용 중 나트륨 분획배설률은 거짓으로 높다 — 요소 분획배설률 22 %, 비중 1.025, 깨끗한 침사가 세뇨관이 살아 있음을 보인다",
+   "steps": 3,
+   "chain": [
+    "구토·설사 + 기립성 저혈압·빈맥·마른 혀 → 체액 부족",
+    "푸로세미드 복용 → 나트륨 분획배설률 2.1 % 는 믿을 수 없다",
+    "요소 분획배설률 22 %·비중 1.025·깨끗한 침사 → 콩팥전 AKI"
+   ],
+   "key": [
+    {
+     "item": "요소 분획배설률 22 %",
+     "why": "35 % 미만 — 콩팥전",
+     "also": []
+    },
+    {
+     "item": "푸로세미드 40 mg 을 매일 복용하며, 어제 아침에도 먹었다",
+     "why": "나트륨 분획배설률을 거짓으로 높인다",
+     "also": []
+    },
+    {
+     "item": "앉으면 82/54 mmHg",
+     "why": "기립성 저혈압 — 체액 부족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "비중 1.025",
+     "why": "농축뇨 — 세뇨관 괴사(등장뇨) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "침사에 과립원주와 적혈구는 없다",
+     "why": "세뇨관 괴사·사구체신염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "나트륨 분획배설률 2.1 %",
+     "why": "세뇨관 괴사로 끌리게 하는 수치 — 이뇨제 때문에 판단에 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "나트륨 134 mmol/L",
+     "why": "체액 손실에 흔한 경미한 저나트륨혈증 — 진단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "구토·설사와 푸로세미드 복용으로 체액이 부족한 72세 여자의 급성 콩팥 손상이다. 이뇨제 때문에 나트륨 분획배설률(2.1 %)은 믿을 수 없고, 요소 분획배설률 22 %·농축뇨·깨끗한 침사가 콩팥전 급성 콩팥 손상을 가리킨다.",
+   "switch": {
+    "choice": "E",
+    "condition": "요소 분획배설률이 55 % 이고 비중 1.010 의 등장뇨에 흙갈색 과립원주가 보였다면 급성 세뇨관 괴사가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0299",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란",
+  "type": "정신 — 신경성 식욕부진증 재급식 사흘째의 혼돈과 호흡곤란",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-10",
+  "vignette": "A 17-year-old girl with anorexia nervosa, restricting type, is admitted to an inpatient eating disorder unit because her body mass index has fallen to 13.8 kg/m2. Nasogastric feeding is started at 2400 kcal/day on the day of admission. On the third hospital day, she becomes confused, reports muscle weakness and shortness of breath, and has bilateral ankle edema. Pulse is 112/min, respirations are 28/min, and blood pressure is 92/58 mm Hg. Crackles are heard at both lung bases, and the jugular venous pressure is elevated. Serum glucose is 148 mg/dL, sodium 136 mEq/L, and potassium 3.3 mEq/L; on admission, all serum electrolytes had been within normal limits.",
+  "question": "Which of the following serum abnormalities is most likely responsible for her current findings?",
+  "options": [
+   "Hypocalcemia",
+   "Hyponatremia",
+   "Hypophosphatemia",
+   "Hypokalemia",
+   "Hypomagnesemia"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: On day 3 of aggressive refeeding of a severely malnourished patient, she developed confusion, muscle weakness, respiratory difficulty, and heart failure — refeeding syndrome. Carbohydrate stimulates insulin, which drives phosphate into cells for glycolysis and ATP synthesis, while total-body phosphate is already depleted. The resulting hypophosphatemia depletes ATP and 2,3-BPG, causing myocardial and diaphragmatic weakness, heart failure, encephalopathy, and rhabdomyolysis.\n- 원리: <b>Why phosphate falls on refeeding</b>: in starvation, the body runs on fat and ketones, insulin is low, and intracellular phosphate stores are depleted although serum levels stay normal (phosphate leaves cells to maintain serum levels). When carbohydrate is given, insulin rises and drives glucose, phosphate, potassium, and magnesium into cells; phosphate is consumed to make phosphorylated glycolytic intermediates and ATP. Serum phosphate drops sharply, usually within 2 to 4 days.<br> <b>Why the organs fail</b>: without phosphate, cells cannot make ATP, and red cells cannot make 2,3-BPG, so hemoglobin releases oxygen poorly. Cardiac muscle fails (heart failure, arrhythmia), the diaphragm weakens (respiratory failure), skeletal muscle breaks down (rhabdomyolysis), and the brain becomes confused or seizes. Insulin also causes sodium and water retention, which worsens edema.<br> <b>Prevention</b>: in high-risk patients (BMI below 16, little intake for more than 10 days), start feeding at about 10 to 20 kcal/kg/day, check phosphate, potassium, and magnesium daily, supplement them, and give thiamine before feeding.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hypophosphatemia (correct)</th><th>Hypokalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Measured here?</td><td>Not reported — must be inferred</td><td>3.3 mEq/L — only mildly low</td></tr> <tr><td>Typical effects</td><td>Heart failure, diaphragmatic weakness, encephalopathy, rhabdomyolysis</td><td>Arrhythmia, weakness, ileus (usually below 3.0 mEq/L)</td></tr> <tr><td>Explains confusion and heart failure?</td><td>Yes — ATP and 2,3-BPG depletion</td><td>No — mild hypokalemia does not cause pump failure or encephalopathy</td></tr> </tbody></table> In refeeding syndrome, potassium and magnesium also fall, but the defining abnormality that explains cardiorespiratory failure and confusion is low phosphate.\n- 오답 이유:\n  - (A) Hypocalcemia causes perioral numbness, tetany, and Chvostek and Trousseau signs; it would follow severe hypomagnesemia or vitamin D deficiency rather than explaining heart failure on day 3 of refeeding.\n  - (B) Hyponatremia causes confusion and seizures but her sodium is 136 mEq/L; it would be the answer if water intoxication or SIADH had lowered sodium below about 125 mEq/L.\n  - (D) Hypokalemia also occurs with refeeding because insulin shifts potassium into cells, but a potassium of 3.3 mEq/L does not explain heart failure and confusion; it would be favored with arrhythmia or ileus and a potassium below 2.5 mEq/L.\n  - (E) Hypomagnesemia accompanies refeeding and causes tremor, tetany, torsades de pointes, and refractory hypokalemia; it would be favored with prolonged QT and neuromuscular irritability rather than pump failure.\n- 함정: Attributing the findings to the one electrolyte that is reported low (potassium) — the abnormality that explains heart failure and confusion in refeeding syndrome is phosphate, which was not measured.\n- 학습목표: 심한 신경성 식욕부진증의 재급식 초기에 인슐린 분비로 인이 세포 안으로 이동해 생기는 저인산혈증(재급식 증후군)과 그 결과를 안다\n- 근거·출처: Society for Adolescent Health and Medicine. Medical management of restrictive eating disorders in adolescents and young adults. J Adolesc Health 2022;71:648-654 · da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020;35:178-195 · American Psychiatric Association. Practice Guideline for the Treatment of Patients With Eating Disorders, 4th ed. 2023",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "On day 3 of aggressive refeeding of a severely malnourished patient, she developed confusion, muscle weakness, respiratory difficulty, and heart failure — refeeding syndrome. Carbohydrate stimulates insulin, which drives phosphate into cells for glycolysis and ATP synthesis, while total-body phosphate is already depleted. The resulting hypophosphatemia depletes ATP and 2,3-BPG, causing myocardial and diaphragmatic weakness, heart failure, encephalopathy, and rhabdomyolysis."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why phosphate falls on refeeding</b>: in starvation, the body runs on fat and ketones, insulin is low, and intracellular phosphate stores are depleted although serum levels stay normal (phosphate leaves cells to maintain serum levels). When carbohydrate is given, insulin rises and drives glucose, phosphate, potassium, and magnesium into cells; phosphate is consumed to make phosphorylated glycolytic intermediates and ATP. Serum phosphate drops sharply, usually within 2 to 4 days.<br> <b>Why the organs fail</b>: without phosphate, cells cannot make ATP, and red cells cannot make 2,3-BPG, so hemoglobin releases oxygen poorly. Cardiac muscle fails (heart failure, arrhythmia), the diaphragm weakens (respiratory failure), skeletal muscle breaks down (rhabdomyolysis), and the brain becomes confused or seizes. Insulin also causes sodium and water retention, which worsens edema.<br> <b>Prevention</b>: in high-risk patients (BMI below 16, little intake for more than 10 days), start feeding at about 10 to 20 kcal/kg/day, check phosphate, potassium, and magnesium daily, supplement them, and give thiamine before feeding."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hypophosphatemia (correct)</th><th>Hypokalemia (closest distractor)</th></tr></thead><tbody> <tr><td>Measured here?</td><td>Not reported — must be inferred</td><td>3.3 mEq/L — only mildly low</td></tr> <tr><td>Typical effects</td><td>Heart failure, diaphragmatic weakness, encephalopathy, rhabdomyolysis</td><td>Arrhythmia, weakness, ileus (usually below 3.0 mEq/L)</td></tr> <tr><td>Explains confusion and heart failure?</td><td>Yes — ATP and 2,3-BPG depletion</td><td>No — mild hypokalemia does not cause pump failure or encephalopathy</td></tr> </tbody></table> In refeeding syndrome, potassium and magnesium also fall, but the defining abnormality that explains cardiorespiratory failure and confusion is low phosphate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hypocalcemia causes perioral numbness, tetany, and Chvostek and Trousseau signs; it would follow severe hypomagnesemia or vitamin D deficiency rather than explaining heart failure on day 3 of refeeding.\n(B) Hyponatremia causes confusion and seizures but her sodium is 136 mEq/L; it would be the answer if water intoxication or SIADH had lowered sodium below about 125 mEq/L.\n(D) Hypokalemia also occurs with refeeding because insulin shifts potassium into cells, but a potassium of 3.3 mEq/L does not explain heart failure and confusion; it would be favored with arrhythmia or ileus and a potassium below 2.5 mEq/L.\n(E) Hypomagnesemia accompanies refeeding and causes tremor, tetany, torsades de pointes, and refractory hypokalemia; it would be favored with prolonged QT and neuromuscular irritability rather than pump failure."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing the findings to the one electrolyte that is reported low (potassium) — the abnormality that explains heart failure and confusion in refeeding syndrome is phosphate, which was not measured."
+   },
+   {
+    "k": "학습목표",
+    "v": "심한 신경성 식욕부진증의 재급식 초기에 인슐린 분비로 인이 세포 안으로 이동해 생기는 저인산혈증(재급식 증후군)과 그 결과를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Society for Adolescent Health and Medicine. Medical management of restrictive eating disorders in adolescents and young adults. J Adolesc Health 2022;71:648-654 · da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. Nutr Clin Pract 2020;35:178-195 · American Psychiatric Association. Practice Guideline for the Treatment of Patients With Eating Disorders, 4th ed. 2023"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "심한 영양실조 환자를 하루 2400 kcal 로 급히 재급식한 지 3일째 혼돈·근력 약화·호흡곤란·심부전이 생겼으므로 인슐린에 의한 세포 내 인 이동으로 생긴 저인산혈증(재급식 증후군)이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "보고된 칼륨 3.3 은 경미해 심부전·혼돈을 설명하지 못한다 — 측정되지 않은 인이 원인",
+   "steps": 3,
+   "chain": [
+    "BMI 13.8 의 심한 영양실조 + 첫날부터 2400 kcal 재급식 → 재급식 증후군 고위험",
+    "3일째 혼돈·근력 약화·호흡곤란·심부전 → 재급식 증후군 발생",
+    "인슐린으로 인이 세포 안으로 이동 → 저인산혈증이 ATP·2,3-BPG 고갈로 장기 부전"
+   ],
+   "key": [
+    {
+     "item": "body mass index has fallen to 13.8 kg/m2",
+     "why": "재급식 증후군 고위험",
+     "also": []
+    },
+    {
+     "item": "Nasogastric feeding is started at 2400 kcal/day on the day of admission",
+     "why": "너무 빠른 재급식",
+     "also": []
+    },
+    {
+     "item": "On the third hospital day, she becomes confused, reports muscle weakness and shortness of breath",
+     "why": "2~4일째의 전형적 시기와 증상",
+     "also": []
+    },
+    {
+     "item": "the jugular venous pressure is elevated",
+     "why": "심부전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "potassium 3.3 mEq/L",
+     "why": "저칼륨혈증이 장기 부전의 주원인일 가능성을 낮춘다 — 너무 경미",
+     "also": []
+    },
+    {
+     "item": "sodium 136 mEq/L",
+     "why": "저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "on admission, all serum electrolytes had been within normal limits",
+     "why": "굶주림에서 혈중 농도는 정상이어도 몸 전체 인은 고갈되어 있다 — 위험을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "BMI 13.8 인 신경성 식욕부진증 환자를 첫날부터 하루 2400 kcal 로 재급식한 지 3일째 혼돈·근력 약화·호흡곤란·심부전이 생겼다. 인슐린으로 인이 세포 안으로 들어가 생긴 저인산혈증(재급식 증후군)이 원인이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "QT 연장과 다형 심실빈맥, 손발 경련이 두드러지고 칼륨 보충에도 저칼륨혈증이 교정되지 않는다면 저마그네슘혈증이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0298",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "약리 — 협심증 환자의 발기부전 약 복용 뒤 실신",
+  "type": "약리 — 협심증 환자의 발기부전 약 복용 뒤 실신",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "64세 남자가 화장실에서 어지러워 쓰러져 응급실에 왔다. 2년 전 안정형 협심증으로 진단받아 아스피린, 아토르바스타틴, 이소소르비드 일질산염을 복용하고 있다. 오늘 저녁 지인에게서 받은 발기부전 치료제를 처음 먹었고, 1시간 뒤 가슴 답답함이 있어 니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다. 혈압 72/40 mmHg, 맥박 118회/분 이다. 심전도는 동빈맥이며 ST 분절 변화는 없다.",
+  "question": "이 저혈압의 기전으로 가장 적절한 것은?",
+  "options": [
+   "간 CYP3A4 억제로 질산염 혈중 농도 상승",
+   "알파1 아드레날린 수용체 차단에 의한 혈관 확장",
+   "심근 베타1 수용체 차단에 의한 심박출량 감소",
+   "혈관 평활근의 cAMP 분해 억제",
+   "혈관 평활근의 cGMP 분해 억제와 생성 증가가 겹침"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 질산염(이소소르비드 일질산염·니트로글리세린)은 산화질소를 내놓아 구아닐산고리화효소를 활성화해 cGMP 생성을 늘리고, 발기부전 치료제(실데나필 등 PDE5 억제제)는 cGMP 를 분해하는 PDE5 를 막는다. 생성은 늘고 분해는 막혀 혈관 평활근에 cGMP 가 과도하게 쌓이므로 정맥·동맥이 크게 확장되어 심한 저혈압이 생긴다.\n- 원리: <b>cGMP 경로</b>: 산화질소(NO)는 혈관 평활근의 가용성 구아닐산고리화효소를 활성화해 GTP 를 cGMP 로 바꾼다. cGMP 는 단백질인산화효소 G 를 활성화해 세포 안 칼슘을 낮추고 마이오신 경쇄 탈인산화를 일으켜 평활근을 이완시킨다. 이 신호는 PDE5 가 cGMP 를 GMP 로 분해하면서 꺼진다.<br> <b>왜 함께 쓰면 위험한가</b>: 질산염은 「수도꼭지를 여는」 약, PDE5 억제제는 「배수구를 막는」 약이다. 둘을 함께 쓰면 cGMP 가 상승적으로 쌓여 특히 정맥이 크게 확장되고(전부하 감소) 심박출량과 혈압이 떨어진다. 협심증 환자에서는 관상동맥 관류압이 떨어져 심근 허혈이 생길 수 있다.<br> <b>실제 규칙</b>: 실데나필·바데나필 복용 24시간 안, 타다라필 48시간 안에는 질산염을 쓰지 않는다. 저혈압이 생기면 다리 올리기와 수액으로 교정하고, 필요하면 알파 작용제를 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">cGMP 약력학적 상호작용(정답)</th><th>CYP3A4 약동학적 상호작용(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>무엇이 변하나</td><td>같은 신호(cGMP)의 효과가 더해짐</td><td>한 약의 혈중 농도가 변함</td></tr> <tr><td>실제 예</td><td>PDE5 억제제 + 질산염</td><td>클래리스로마이신·리토나비르가 실데나필 농도를 올림</td></tr> <tr><td>시간</td><td>첫 병용 직후에 바로</td><td>억제제를 며칠 쓴 뒤 축적</td></tr> </tbody></table> 질산염은 CYP3A4 로 대사되지 않는다 — 이 상호작용은 농도가 아니라 신호 경로가 겹쳐 생긴다.\n- 오답 이유:\n  - ① CYP3A4 억제에 의한 농도 상승은 리토나비르·클래리스로마이신이 실데나필 농도를 올리는 경우의 기전이다. 질산염은 CYP3A4 로 대사되지 않으며 실데나필은 CYP3A4 억제제가 아니다.\n  - ② 알파1 차단은 독사조신·탐술로신 같은 약이 PDE5 억제제와 함께 기립성 저혈압을 일으킬 때의 기전이다. 이 환자는 알파 차단제를 먹지 않았다.\n  - ③ 베타1 차단에 의한 심박출량 감소라면 맥박이 느려져야 한다. 이 환자는 맥박 118회/분 의 반사 빈맥이 있어 혈관 확장에 의한 저혈압이다.\n  - ④ cAMP 분해 억제는 PDE3 억제제(밀리논·실로스타졸)의 기전으로 강심·혈관 확장을 일으킨다. 실데나필이 막는 PDE5 는 cGMP 특이적이다.\n- 함정: 약물 상호작용이라면 CYP 를 먼저 떠올리는 것 — 질산염과 PDE5 억제제는 같은 cGMP 신호를 양쪽에서 키우는 약력학적 상호작용이다.\n- 학습목표: 질산염 복용 환자가 PDE5 억제제를 함께 쓰면 cGMP 가 과도하게 쌓여 심한 저혈압이 생기는 기전을 안다\n- 근거·출처: Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 12 Vasodilators & the Treatment of Angina Pectoris (nitrate–PDE5 inhibitor interaction) · Gulati M, et al. 2021 AHA/ACC Guideline for the Evaluation and Diagnosis of Chest Pain / 2023 AHA/ACC Chronic Coronary Disease Guideline (nitrates contraindicated within 24-48 h of PDE5 inhibitors)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "질산염(이소소르비드 일질산염·니트로글리세린)은 산화질소를 내놓아 구아닐산고리화효소를 활성화해 cGMP 생성을 늘리고, 발기부전 치료제(실데나필 등 PDE5 억제제)는 cGMP 를 분해하는 PDE5 를 막는다. 생성은 늘고 분해는 막혀 혈관 평활근에 cGMP 가 과도하게 쌓이므로 정맥·동맥이 크게 확장되어 심한 저혈압이 생긴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>cGMP 경로</b>: 산화질소(NO)는 혈관 평활근의 가용성 구아닐산고리화효소를 활성화해 GTP 를 cGMP 로 바꾼다. cGMP 는 단백질인산화효소 G 를 활성화해 세포 안 칼슘을 낮추고 마이오신 경쇄 탈인산화를 일으켜 평활근을 이완시킨다. 이 신호는 PDE5 가 cGMP 를 GMP 로 분해하면서 꺼진다.<br> <b>왜 함께 쓰면 위험한가</b>: 질산염은 「수도꼭지를 여는」 약, PDE5 억제제는 「배수구를 막는」 약이다. 둘을 함께 쓰면 cGMP 가 상승적으로 쌓여 특히 정맥이 크게 확장되고(전부하 감소) 심박출량과 혈압이 떨어진다. 협심증 환자에서는 관상동맥 관류압이 떨어져 심근 허혈이 생길 수 있다.<br> <b>실제 규칙</b>: 실데나필·바데나필 복용 24시간 안, 타다라필 48시간 안에는 질산염을 쓰지 않는다. 저혈압이 생기면 다리 올리기와 수액으로 교정하고, 필요하면 알파 작용제를 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">cGMP 약력학적 상호작용(정답)</th><th>CYP3A4 약동학적 상호작용(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>무엇이 변하나</td><td>같은 신호(cGMP)의 효과가 더해짐</td><td>한 약의 혈중 농도가 변함</td></tr> <tr><td>실제 예</td><td>PDE5 억제제 + 질산염</td><td>클래리스로마이신·리토나비르가 실데나필 농도를 올림</td></tr> <tr><td>시간</td><td>첫 병용 직후에 바로</td><td>억제제를 며칠 쓴 뒤 축적</td></tr> </tbody></table> 질산염은 CYP3A4 로 대사되지 않는다 — 이 상호작용은 농도가 아니라 신호 경로가 겹쳐 생긴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① CYP3A4 억제에 의한 농도 상승은 리토나비르·클래리스로마이신이 실데나필 농도를 올리는 경우의 기전이다. 질산염은 CYP3A4 로 대사되지 않으며 실데나필은 CYP3A4 억제제가 아니다.\n② 알파1 차단은 독사조신·탐술로신 같은 약이 PDE5 억제제와 함께 기립성 저혈압을 일으킬 때의 기전이다. 이 환자는 알파 차단제를 먹지 않았다.\n③ 베타1 차단에 의한 심박출량 감소라면 맥박이 느려져야 한다. 이 환자는 맥박 118회/분 의 반사 빈맥이 있어 혈관 확장에 의한 저혈압이다.\n④ cAMP 분해 억제는 PDE3 억제제(밀리논·실로스타졸)의 기전으로 강심·혈관 확장을 일으킨다. 실데나필이 막는 PDE5 는 cGMP 특이적이다."
+   },
+   {
+    "k": "함정",
+    "v": "약물 상호작용이라면 CYP 를 먼저 떠올리는 것 — 질산염과 PDE5 억제제는 같은 cGMP 신호를 양쪽에서 키우는 약력학적 상호작용이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "질산염 복용 환자가 PDE5 억제제를 함께 쓰면 cGMP 가 과도하게 쌓여 심한 저혈압이 생기는 기전을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Katzung BG, Vanderah TW. Basic & Clinical Pharmacology, 15th ed. Ch. 12 Vasodilators & the Treatment of Angina Pectoris (nitrate–PDE5 inhibitor interaction) · Gulati M, et al. 2021 AHA/ACC Guideline for the Evaluation and Diagnosis of Chest Pain / 2023 AHA/ACC Chronic Coronary Disease Guideline (nitrates contraindicated within 24-48 h of PDE5 inhibitors)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "질산염 복용 중인 협심증 환자가 발기부전 치료제(PDE5 억제제)를 먹은 뒤 니트로글리세린을 쓰고 저혈압이 생겼으므로 cGMP 생성 증가와 분해 억제가 겹친 것이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "질산염은 CYP3A4 로 대사되지 않고 첫 병용 직후 바로 생겼다 — 농도가 아니라 같은 신호의 상승 작용",
+   "steps": 2,
+   "chain": [
+    "질산염(NO → cGMP 생성↑) + 발기부전 치료제(PDE5 억제 → cGMP 분해↓)",
+    "cGMP 과다 축적 → 정맥·동맥 확장 → 심한 저혈압과 반사 빈맥"
+   ],
+   "key": [
+    {
+     "item": "이소소르비드 일질산염",
+     "why": "NO 공여 — cGMP 생성",
+     "also": []
+    },
+    {
+     "item": "발기부전 치료제를 처음 먹었고",
+     "why": "PDE5 억제 — cGMP 분해 차단",
+     "also": []
+    },
+    {
+     "item": "니트로글리세린을 혀 밑에 넣은 직후 쓰러졌다",
+     "why": "병용 직후 발생",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 118회/분",
+     "why": "베타 차단에 의한 저혈압 가능성을 낮춘다 — 반사 빈맥",
+     "also": []
+    },
+    {
+     "item": "ST 분절 변화는 없다",
+     "why": "급성 심근경색에 의한 쇼크 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "아토르바스타틴",
+     "why": "CYP3A4 기질이지만 이 저혈압과 무관하다 — CYP 오답으로 끌리게 하는 정보",
+     "also": []
+    }
+   ],
+   "summary": "질산염을 쓰는 협심증 환자가 PDE5 억제제를 처음 먹고 니트로글리세린을 쓴 직후 심한 저혈압과 반사 빈맥이 생겼다. cGMP 생성 증가와 분해 억제가 겹친 약력학적 상호작용이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "질산염이 아니라 독사조신 같은 알파1 차단제를 복용하던 환자가 PDE5 억제제 뒤 기립성 저혈압을 보였다면 알파1 차단에 의한 혈관 확장이 더해진 것이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0297",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "소아청소년 — 분출성 구토 영아의 수술 전 처치",
+  "type": "소아청소년 — 분출성 구토 영아의 수술 전 처치",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "A 5-week-old boy is brought to the emergency department because of forceful, nonbilious vomiting after every feeding for 4 days. He is eager to feed again immediately after vomiting. He was born at term, and his birth weight was 3.4 kg; today he weighs 3.6 kg. Pulse is 168/min, respirations are 36/min, and temperature is 36.8°C (98.2°F). The anterior fontanelle is slightly sunken, mucous membranes are dry, and capillary refill time is 3 seconds. A firm, mobile, olive-sized mass is palpable in the epigastrium. Serum studies show Na+ 133 mEq/L, K+ 2.9 mEq/L, Cl- 84 mEq/L, and HCO3- 34 mEq/L. Abdominal ultrasonography shows a pyloric muscle thickness of 5 mm and a channel length of 19 mm.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous ammonium chloride infusion",
+   "Intravenous 0.9% saline bolus, then dextrose-saline with potassium chloride",
+   "Immediate pyloromyotomy",
+   "Intravenous 0.45% saline without potassium until the infant urinates",
+   "Oral rehydration solution by nasogastric tube"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Nonbilious projectile vomiting at 5 weeks, a palpable olive, and a thickened, elongated pylorus on ultrasonography establish hypertrophic pyloric stenosis. The repeated loss of gastric HCl has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloric stenosis is not a surgical emergency but a medical one: fluid and electrolyte deficits are corrected first with a normal saline bolus and then dextrose-saline with potassium chloride, and pyloromyotomy follows once chloride and bicarbonate have normalized.\n- 원리: <b>Why the alkalosis persists</b>: vomiting removes H+ and Cl-, generating bicarbonate. Normally the kidney would excrete the excess bicarbonate, but volume depletion activates the renin-angiotensin-aldosterone system, so the kidney avidly reabsorbs Na+ — and with too little Cl- available to accompany it, it reabsorbs HCO3- instead and exchanges Na+ for K+ and H+ in the collecting duct (paradoxical aciduria, potassium wasting). The alkalosis is therefore \"chloride-responsive\": only giving Cl- with volume lets the kidney excrete bicarbonate.<br> <b>Why surgery must wait</b>: an alkalotic infant compensates by hypoventilating, and after general anesthesia and opioids this can cause postoperative apnea. Hypokalemia also predisposes to arrhythmias. Surgery is done when serum chloride is about 100 mEq/L or more and bicarbonate is below about 30 mEq/L.<br> <b>Why potassium is given promptly</b>: potassium is added to the maintenance fluid once urine output is confirmed, which in practice is soon after the initial bolus.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Correct fluids first (correct)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours to 1-2 days, until electrolytes normalize</td><td>At once</td></tr> <tr><td>Risk addressed</td><td>Alkalosis, hypokalemia, dehydration</td><td>Obstruction — not immediately life-threatening</td></tr> <tr><td>Threshold for surgery</td><td>Cl- ≥ about 100, HCO3- &lt; about 30 mEq/L</td><td>Ignores the metabolic state — postoperative apnea risk</td></tr> </tbody></table> The pylorus is the diagnosis, but the electrolytes decide the timing: correct with saline and potassium, then operate.\n- 오답 이유:\n  - (A) Ammonium chloride was once used for severe alkalosis unresponsive to saline; saline and potassium chloride correct this alkalosis safely in nearly all infants.\n  - (C) Immediate pyloromyotomy is the definitive treatment once chloride and bicarbonate are corrected; done now, persistent alkalosis raises the risk of postoperative apnea and arrhythmia.\n  - (D) Half-normal saline without potassium supplies too little chloride to correct a chloride-responsive alkalosis and leaves severe hypokalemia untreated; potassium is withheld only until urine output is confirmed.\n  - (E) Oral rehydration by nasogastric tube would suit gastroenteritis with mild dehydration; with a fixed gastric outlet obstruction, fluid placed in the stomach will be vomited.\n- 함정: Going straight to surgery because the diagnosis is clear — the metabolic alkalosis must be corrected first.\n- 학습목표: 비대 날문협착증 영아의 저염소성 저칼륨성 대사 알칼리증을 수술 전에 식염수·칼륨으로 먼저 교정해야 함을 안다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 355.1 Hypertrophic pyloric stenosis · Kamata M, Cartabuke RS, Tobias JD. Perioperative care of infants with pyloric stenosis. Paediatr Anaesth 2015;25:1193-1206",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Nonbilious projectile vomiting at 5 weeks, a palpable olive, and a thickened, elongated pylorus on ultrasonography establish hypertrophic pyloric stenosis. The repeated loss of gastric HCl has produced hypochloremic, hypokalemic metabolic alkalosis with dehydration. Pyloric stenosis is not a surgical emergency but a medical one: fluid and electrolyte deficits are corrected first with a normal saline bolus and then dextrose-saline with potassium chloride, and pyloromyotomy follows once chloride and bicarbonate have normalized."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the alkalosis persists</b>: vomiting removes H+ and Cl-, generating bicarbonate. Normally the kidney would excrete the excess bicarbonate, but volume depletion activates the renin-angiotensin-aldosterone system, so the kidney avidly reabsorbs Na+ — and with too little Cl- available to accompany it, it reabsorbs HCO3- instead and exchanges Na+ for K+ and H+ in the collecting duct (paradoxical aciduria, potassium wasting). The alkalosis is therefore \"chloride-responsive\": only giving Cl- with volume lets the kidney excrete bicarbonate.<br> <b>Why surgery must wait</b>: an alkalotic infant compensates by hypoventilating, and after general anesthesia and opioids this can cause postoperative apnea. Hypokalemia also predisposes to arrhythmias. Surgery is done when serum chloride is about 100 mEq/L or more and bicarbonate is below about 30 mEq/L.<br> <b>Why potassium is given promptly</b>: potassium is added to the maintenance fluid once urine output is confirmed, which in practice is soon after the initial bolus."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Correct fluids first (correct)</th><th>Immediate pyloromyotomy (closest distractor)</th></tr></thead><tbody> <tr><td>Timing</td><td>Hours to 1-2 days, until electrolytes normalize</td><td>At once</td></tr> <tr><td>Risk addressed</td><td>Alkalosis, hypokalemia, dehydration</td><td>Obstruction — not immediately life-threatening</td></tr> <tr><td>Threshold for surgery</td><td>Cl- ≥ about 100, HCO3- &lt; about 30 mEq/L</td><td>Ignores the metabolic state — postoperative apnea risk</td></tr> </tbody></table> The pylorus is the diagnosis, but the electrolytes decide the timing: correct with saline and potassium, then operate."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ammonium chloride was once used for severe alkalosis unresponsive to saline; saline and potassium chloride correct this alkalosis safely in nearly all infants.\n(C) Immediate pyloromyotomy is the definitive treatment once chloride and bicarbonate are corrected; done now, persistent alkalosis raises the risk of postoperative apnea and arrhythmia.\n(D) Half-normal saline without potassium supplies too little chloride to correct a chloride-responsive alkalosis and leaves severe hypokalemia untreated; potassium is withheld only until urine output is confirmed.\n(E) Oral rehydration by nasogastric tube would suit gastroenteritis with mild dehydration; with a fixed gastric outlet obstruction, fluid placed in the stomach will be vomited."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to surgery because the diagnosis is clear — the metabolic alkalosis must be corrected first."
+   },
+   {
+    "k": "학습목표",
+    "v": "비대 날문협착증 영아의 저염소성 저칼륨성 대사 알칼리증을 수술 전에 식염수·칼륨으로 먼저 교정해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 355.1 Hypertrophic pyloric stenosis · Kamata M, Cartabuke RS, Tobias JD. Perioperative care of infants with pyloric stenosis. Paediatr Anaesth 2015;25:1193-1206"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "비대 날문협착증에 저염소성 저칼륨성 대사 알칼리증과 탈수가 있으므로 수술 전에 생리식염수와 칼륨으로 먼저 교정한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "염소 84·중탄산 34·칼륨 2.9 로 교정되지 않은 알칼리증 — 수술 후 무호흡 위험",
+   "steps": 3,
+   "chain": [
+    "비담즙성 분출성 구토·올리브 종괴·초음파의 두꺼운 날문 → 비대 날문협착증",
+    "염소 84·칼륨 2.9·중탄산 34·탈수 → 저염소성 저칼륨성 대사 알칼리증",
+    "수술보다 먼저 생리식염수 볼루스와 칼륨을 더한 수액으로 교정"
+   ],
+   "key": [
+    {
+     "item": "A firm, mobile, olive-sized mass is palpable in the epigastrium",
+     "why": "비대된 날문",
+     "also": []
+    },
+    {
+     "item": "a pyloric muscle thickness of 5 mm and a channel length of 19 mm",
+     "why": "진단 기준(≥3 mm, ≥15 mm) 충족",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "nonbilious vomiting",
+     "why": "장회전이상 같은 담즙 구토성 응급 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "K+ 2.9 mEq/L, Cl- 84 mEq/L, and HCO3- 34 mEq/L",
+     "why": "교정이 먼저 필요한 대사 알칼리증",
+     "also": []
+    },
+    {
+     "item": "capillary refill time is 3 seconds",
+     "why": "탈수 — 식염수 볼루스",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He is eager to feed again immediately after vomiting",
+     "why": "배고픈 구토아의 전형적 묘사 — 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "5주 남아의 비담즙성 분출성 구토, 올리브 종괴, 두꺼운 날문은 비대 날문협착증이다. 저염소성 저칼륨성 대사 알칼리증과 탈수가 있어 수술 전에 생리식염수 볼루스와 칼륨을 더한 포도당-식염수로 먼저 교정한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "수액 치료 뒤 염소가 100 mEq/L 이상, 중탄산이 30 mEq/L 미만으로 교정되면 날문근절개술을 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0296",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값",
+  "type": "진단검사 — 고중성지방혈증 환자의 저나트륨혈증 측정값",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-10",
+  "vignette": "38세 남자가 명치 통증으로 응급실에 왔다. 하루 전부터 등으로 뻗치는 명치 통증과 구토가 있었다. 의식은 명료하고, 혈압 128/82 mmHg, 맥박 98회/분 이다. 피부 긴장도는 정상이고 부종은 없다. 채혈한 혈액은 우윳빛으로 혼탁하다. 혈액검사에서 나트륨 124 mmol/L(간접 이온선택전극법), 칼륨 4.1 mmol/L, 혈당 112 mg/dL, 혈액요소질소 14 mg/dL, 크레아티닌 0.9 mg/dL, 중성지방 4,800 mg/dL, 리파아제 2,100 U/L(참고치 60 이하)이다. 측정한 혈장 삼투압은 286 mOsm/kg 이다.",
+  "question": "나트륨 결과에 대한 다음 조치로 가장 적절한 것은?",
+  "options": [
+   "수분 섭취 제한",
+   "소변 나트륨과 소변 삼투압 측정",
+   "만니톨 투여 여부 확인",
+   "직접 이온선택전극법으로 나트륨 재측정",
+   "3 % 고장성 식염수 투여"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 중성지방이 4,800 mg/dL 로 매우 높아 혈장의 물이 아닌 부분(지질)이 늘었다. 간접 이온선택전극법은 검체를 희석한 뒤 재므로 혈장 전체 부피 중 물이 차지하는 비율이 정상이라고 가정하고 계산한다 — 지질이 물 자리를 차지하면 나트륨이 낮게 나온다. 실제 혈장 삼투압이 286 mOsm/kg 으로 정상이고 저나트륨혈증 증상도 없으므로 가성저나트륨혈증이며, 희석하지 않는 직접 이온선택전극법(혈액가스 분석기)으로 다시 재면 정상으로 나온다.\n- 원리: <b>왜 지질이 나트륨을 낮게 보이게 하는가</b>: 나트륨은 혈장의 물 속에만 녹아 있다. 정상 혈장은 약 93 % 가 물이고 7 % 가 지질·단백질이다. 간접법은 검체를 일정하게 희석해 재고 「물 93 %」를 전제로 혈장 전체 농도를 환산한다. 중성지방이나 단백질(다발골수종)이 크게 늘어 물 비율이 80 % 로 떨어지면 같은 부피의 혈장에 든 나트륨이 줄어 낮게 계산된다. 직접법은 희석하지 않고 물 속 나트륨 활동도를 바로 재므로 영향을 받지 않는다.<br> <b>삼투압이 왜 정상인가</b>: 삼투압은 물에 녹은 입자 수로 정해지고, 지질은 입자 수에 거의 기여하지 않는다. 그래서 진짜 저나트륨혈증(저삼투압)과 달리 측정 삼투압이 정상이다.<br> <b>저나트륨혈증 접근의 첫 단계</b>: 측정 삼투압을 먼저 본다 — 정상이면 가성(지질·단백질), 높으면 고삼투성(고혈당·만니톨), 낮을 때만 체액량과 소변 검사로 진짜 저나트륨혈증의 원인을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가성저나트륨혈증(정답)</th><th>고삼투성 저나트륨혈증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>측정 삼투압</td><td>정상(280~295)</td><td>높다</td></tr> <tr><td>원인</td><td>지질·단백질이 물 자리를 차지 — 측정 오차</td><td>포도당·만니톨이 세포 안 물을 끌어냄 — 실제 희석</td></tr> <tr><td>직접법 재측정</td><td>정상</td><td>여전히 낮다</td></tr> </tbody></table> 삼투압이 정상이면 검사법을, 높으면 삼투 물질을, 낮으면 체액량과 소변을 본다.\n- 오답 이유:\n  - ① 수분 섭취 제한은 항이뇨호르몬 분비 이상 증후군 같은 정상 체액량의 저삼투성 저나트륨혈증에서 쓰는 처치다. 혈장 삼투압이 정상이면 해당하지 않는다.\n  - ② 소변 나트륨·소변 삼투압은 측정 삼투압이 낮은 진짜 저나트륨혈증에서 원인을 가를 때 잰다. 삼투압이 정상인 이 단계에서는 먼저 측정 오차를 확인한다.\n  - ③ 만니톨 투여 확인은 측정 삼투압이 높고 계산 삼투압과의 차이(삼투압 간극)가 클 때 하는 조치다. 이 환자는 측정 삼투압이 정상이다.\n  - ⑤ 3 % 고장성 식염수는 경련·의식 저하가 있는 진짜(저삼투성) 급성 저나트륨혈증에 쓴다. 측정 오차인 이 환자에게 주면 실제 나트륨이 과도하게 올라간다.\n- 함정: 나트륨 124 만 보고 저나트륨혈증을 치료하거나 원인 검사를 시작하는 것 — 혼탁한 혈장과 정상 삼투압이면 먼저 측정 오차를 의심한다.\n- 학습목표: 고중성지방혈증에서 간접 이온선택전극법으로 잰 저나트륨혈증이 측정 오차(가성저나트륨혈증)이며 혈장 삼투압이 정상임을 근거로 직접법 재측정이 적절함을 안다\n- 근거·출처: Burtis CA, Bruns DE. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics, 8th ed. Ch. Electrolytes (indirect vs direct ion-selective electrodes, electrolyte exclusion effect) · Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 (measured osmolality first)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "중성지방이 4,800 mg/dL 로 매우 높아 혈장의 물이 아닌 부분(지질)이 늘었다. 간접 이온선택전극법은 검체를 희석한 뒤 재므로 혈장 전체 부피 중 물이 차지하는 비율이 정상이라고 가정하고 계산한다 — 지질이 물 자리를 차지하면 나트륨이 낮게 나온다. 실제 혈장 삼투압이 286 mOsm/kg 으로 정상이고 저나트륨혈증 증상도 없으므로 가성저나트륨혈증이며, 희석하지 않는 직접 이온선택전극법(혈액가스 분석기)으로 다시 재면 정상으로 나온다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 지질이 나트륨을 낮게 보이게 하는가</b>: 나트륨은 혈장의 물 속에만 녹아 있다. 정상 혈장은 약 93 % 가 물이고 7 % 가 지질·단백질이다. 간접법은 검체를 일정하게 희석해 재고 「물 93 %」를 전제로 혈장 전체 농도를 환산한다. 중성지방이나 단백질(다발골수종)이 크게 늘어 물 비율이 80 % 로 떨어지면 같은 부피의 혈장에 든 나트륨이 줄어 낮게 계산된다. 직접법은 희석하지 않고 물 속 나트륨 활동도를 바로 재므로 영향을 받지 않는다.<br> <b>삼투압이 왜 정상인가</b>: 삼투압은 물에 녹은 입자 수로 정해지고, 지질은 입자 수에 거의 기여하지 않는다. 그래서 진짜 저나트륨혈증(저삼투압)과 달리 측정 삼투압이 정상이다.<br> <b>저나트륨혈증 접근의 첫 단계</b>: 측정 삼투압을 먼저 본다 — 정상이면 가성(지질·단백질), 높으면 고삼투성(고혈당·만니톨), 낮을 때만 체액량과 소변 검사로 진짜 저나트륨혈증의 원인을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가성저나트륨혈증(정답)</th><th>고삼투성 저나트륨혈증(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>측정 삼투압</td><td>정상(280~295)</td><td>높다</td></tr> <tr><td>원인</td><td>지질·단백질이 물 자리를 차지 — 측정 오차</td><td>포도당·만니톨이 세포 안 물을 끌어냄 — 실제 희석</td></tr> <tr><td>직접법 재측정</td><td>정상</td><td>여전히 낮다</td></tr> </tbody></table> 삼투압이 정상이면 검사법을, 높으면 삼투 물질을, 낮으면 체액량과 소변을 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 수분 섭취 제한은 항이뇨호르몬 분비 이상 증후군 같은 정상 체액량의 저삼투성 저나트륨혈증에서 쓰는 처치다. 혈장 삼투압이 정상이면 해당하지 않는다.\n② 소변 나트륨·소변 삼투압은 측정 삼투압이 낮은 진짜 저나트륨혈증에서 원인을 가를 때 잰다. 삼투압이 정상인 이 단계에서는 먼저 측정 오차를 확인한다.\n③ 만니톨 투여 확인은 측정 삼투압이 높고 계산 삼투압과의 차이(삼투압 간극)가 클 때 하는 조치다. 이 환자는 측정 삼투압이 정상이다.\n⑤ 3 % 고장성 식염수는 경련·의식 저하가 있는 진짜(저삼투성) 급성 저나트륨혈증에 쓴다. 측정 오차인 이 환자에게 주면 실제 나트륨이 과도하게 올라간다."
+   },
+   {
+    "k": "함정",
+    "v": "나트륨 124 만 보고 저나트륨혈증을 치료하거나 원인 검사를 시작하는 것 — 혼탁한 혈장과 정상 삼투압이면 먼저 측정 오차를 의심한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "고중성지방혈증에서 간접 이온선택전극법으로 잰 저나트륨혈증이 측정 오차(가성저나트륨혈증)이며 혈장 삼투압이 정상임을 근거로 직접법 재측정이 적절함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Burtis CA, Bruns DE. Tietz Fundamentals of Clinical Chemistry and Molecular Diagnostics, 8th ed. Ch. Electrolytes (indirect vs direct ion-selective electrodes, electrolyte exclusion effect) · Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-G47 (measured osmolality first)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "중성지방이 매우 높고 측정 삼투압이 정상이며 증상이 없으므로 간접법의 측정 오차(가성저나트륨혈증)이고, 직접 이온선택전극법으로 다시 잰다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "측정 혈장 삼투압 286 mOsm/kg 이 정상 — 진짜(저삼투성) 저나트륨혈증이 아니다",
+   "steps": 3,
+   "chain": [
+    "나트륨 124 인데 측정 삼투압 286 으로 정상 → 진짜 저나트륨혈증이 아님",
+    "중성지방 4,800 mg/dL 과 간접 이온선택전극법 → 지질에 의한 측정 오차",
+    "희석하지 않는 직접법으로 재측정"
+   ],
+   "key": [
+    {
+     "item": "측정한 혈장 삼투압은 286 mOsm/kg 이다",
+     "why": "정상 삼투압 — 가성저나트륨혈증",
+     "also": []
+    },
+    {
+     "item": "중성지방 4,800 mg/dL",
+     "why": "지질이 혈장 물 비율을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "나트륨 124 mmol/L(간접 이온선택전극법)",
+     "why": "희석 측정법 — 오차가 생기는 방법",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈당 112 mg/dL",
+     "why": "고혈당에 의한 고삼투성 저나트륨혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "의식은 명료하고",
+     "why": "증상이 없다 — 고장성 식염수 대상이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "리파아제 2,100 U/L",
+     "why": "고중성지방혈증성 췌장염 — 원인 질환이지만 나트륨 해석과 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "중성지방 4,800 mg/dL 인 췌장염 환자에서 간접법 나트륨이 124 로 낮지만 측정 삼투압은 286 으로 정상이다. 지질이 혈장 물 자리를 차지해 생긴 가성저나트륨혈증이므로 직접 이온선택전극법으로 다시 잰다.",
+   "switch": {
+    "choice": "B",
+    "condition": "측정 삼투압이 260 mOsm/kg 처럼 낮았다면 진짜 저나트륨혈증이므로 소변 나트륨·삼투압으로 원인을 가린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0295",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·안과·소화기·감염·류마티스·진단검사·소아·약리·정신·신장)",
+  "subtopic": "류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사",
+  "type": "류마티스·근골격 — 연골석회화증을 동반한 급성 손목 관절염의 원인 검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-10",
+  "vignette": "A 46-year-old man comes to the physician because of pain and swelling of the right wrist for 2 days. He has had similar episodes in the right knee twice in the past year. He has type 2 diabetes mellitus diagnosed 2 years ago and erectile dysfunction. He does not drink alcohol. Temperature is 37.6°C (99.7°F). The right wrist is warm, swollen, and tender. There is hepatomegaly 3 cm below the right costal margin. Serum alanine aminotransferase activity is 68 U/L, and uric acid concentration is 6.1 mg/dL. Synovial fluid analysis shows a leukocyte count of 18,000/mm3 and rhomboid crystals that are weakly positively birefringent under polarized light; Gram stain is negative. X-rays of the knees show linear calcification of the menisci.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Serum transferrin saturation and ferritin",
+   "24-hour urine uric acid excretion",
+   "Serum rheumatoid factor and anti-CCP antibodies",
+   "HLA-B27 testing",
+   "Serum ceruloplasmin concentration"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis establish calcium pyrophosphate deposition (CPPD) arthritis. CPPD before age 55 should prompt a search for a metabolic cause, and this man also has new diabetes, hypogonadism (erectile dysfunction), hepatomegaly, and a raised ALT — the picture of hereditary hemochromatosis. The next step is serum transferrin saturation and ferritin.\n- 원리: <b>Why iron causes pyrophosphate crystals</b>: in hemochromatosis, iron deposited in articular cartilage and synovium inhibits pyrophosphatase, so inorganic pyrophosphate accumulates and combines with calcium to form crystals. Iron also damages chondrocytes directly. The joint disease may not improve with phlebotomy, but finding the cause prevents cirrhosis, diabetes progression, and cardiomyopathy.<br> <b>Why age matters</b>: CPPD is common after 60 and usually idiopathic. In a patient under about 55, or with polyarticular or florid disease, look for hemochromatosis, hyperparathyroidism, hypomagnesemia, and hypophosphatasia (calcium, magnesium, phosphate, alkaline phosphatase, iron studies).<br> <b>The clue pattern</b>: iron in the pancreas (diabetes), pituitary (hypogonadism), liver (hepatomegaly, raised aminotransferases), skin (bronze color), and heart. Transferrin saturation above 45% is the most sensitive screening test; ferritin reflects the iron load, and HFE genotyping confirms the diagnosis.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD → iron studies (correct)</th><th>Gout → urine uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal</td><td>Rhomboid, weakly <b>positively</b> birefringent</td><td>Needle-shaped, strongly <b>negatively</b> birefringent</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Secondary cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Uric acid overproduction vs underexcretion</td></tr> </tbody></table> The crystal decides which metabolic workup follows — pyrophosphate leads to iron, calcium, and magnesium; urate leads to uric acid handling.\n- 오답 이유:\n  - (B) 24-hour urine uric acid separates overproduction from underexcretion in gout with needle-shaped negatively birefringent crystals; it would be ordered if the fluid had shown urate crystals.\n  - (C) Rheumatoid factor and anti-CCP antibodies would be ordered for symmetric small-joint polyarthritis lasting more than 6 weeks without crystals; this patient has episodic monoarthritis with pyrophosphate crystals.\n  - (D) HLA-B27 testing would be considered for inflammatory back pain or asymmetric lower-limb oligoarthritis with enthesitis (spondyloarthritis); crystals in the fluid explain this arthritis.\n  - (E) Serum ceruloplasmin screens for Wilson disease, which can cause liver disease and occasionally chondrocalcinosis in young people; it would be favored with neuropsychiatric signs or Kayser-Fleischer rings rather than diabetes and hypogonadism.\n- 함정: Treating the crystal arthritis as an isolated joint problem — CPPD in a 46-year-old with diabetes, hypogonadism, and liver disease points to iron overload.\n- 학습목표: 젊은 나이의 칼슘피로인산 결정 관절염과 연골석회화증에서 혈색소침착증을 찾기 위해 철 검사(트랜스페린 포화도·페리틴)를 해야 함을 안다\n- 근거·출처: Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG Clinical Guideline: Hereditary Hemochromatosis. Am J Gastroenterol 2019;114:1202-1218",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rhomboid, weakly positively birefringent crystals with meniscal chondrocalcinosis establish calcium pyrophosphate deposition (CPPD) arthritis. CPPD before age 55 should prompt a search for a metabolic cause, and this man also has new diabetes, hypogonadism (erectile dysfunction), hepatomegaly, and a raised ALT — the picture of hereditary hemochromatosis. The next step is serum transferrin saturation and ferritin."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why iron causes pyrophosphate crystals</b>: in hemochromatosis, iron deposited in articular cartilage and synovium inhibits pyrophosphatase, so inorganic pyrophosphate accumulates and combines with calcium to form crystals. Iron also damages chondrocytes directly. The joint disease may not improve with phlebotomy, but finding the cause prevents cirrhosis, diabetes progression, and cardiomyopathy.<br> <b>Why age matters</b>: CPPD is common after 60 and usually idiopathic. In a patient under about 55, or with polyarticular or florid disease, look for hemochromatosis, hyperparathyroidism, hypomagnesemia, and hypophosphatasia (calcium, magnesium, phosphate, alkaline phosphatase, iron studies).<br> <b>The clue pattern</b>: iron in the pancreas (diabetes), pituitary (hypogonadism), liver (hepatomegaly, raised aminotransferases), skin (bronze color), and heart. Transferrin saturation above 45% is the most sensitive screening test; ferritin reflects the iron load, and HFE genotyping confirms the diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">CPPD → iron studies (correct)</th><th>Gout → urine uric acid (closest distractor)</th></tr></thead><tbody> <tr><td>Crystal</td><td>Rhomboid, weakly <b>positively</b> birefringent</td><td>Needle-shaped, strongly <b>negatively</b> birefringent</td></tr> <tr><td>X-ray</td><td>Chondrocalcinosis of menisci</td><td>Punched-out erosions with overhanging edges</td></tr> <tr><td>Secondary cause to seek</td><td>Hemochromatosis, hyperparathyroidism, low Mg</td><td>Uric acid overproduction vs underexcretion</td></tr> </tbody></table> The crystal decides which metabolic workup follows — pyrophosphate leads to iron, calcium, and magnesium; urate leads to uric acid handling."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) 24-hour urine uric acid separates overproduction from underexcretion in gout with needle-shaped negatively birefringent crystals; it would be ordered if the fluid had shown urate crystals.\n(C) Rheumatoid factor and anti-CCP antibodies would be ordered for symmetric small-joint polyarthritis lasting more than 6 weeks without crystals; this patient has episodic monoarthritis with pyrophosphate crystals.\n(D) HLA-B27 testing would be considered for inflammatory back pain or asymmetric lower-limb oligoarthritis with enthesitis (spondyloarthritis); crystals in the fluid explain this arthritis.\n(E) Serum ceruloplasmin screens for Wilson disease, which can cause liver disease and occasionally chondrocalcinosis in young people; it would be favored with neuropsychiatric signs or Kayser-Fleischer rings rather than diabetes and hypogonadism."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the crystal arthritis as an isolated joint problem — CPPD in a 46-year-old with diabetes, hypogonadism, and liver disease points to iron overload."
+   },
+   {
+    "k": "학습목표",
+    "v": "젊은 나이의 칼슘피로인산 결정 관절염과 연골석회화증에서 혈색소침착증을 찾기 위해 철 검사(트랜스페린 포화도·페리틴)를 해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. N Engl J Med 2016;374:2575-2584 · Kowdley KV, et al. ACG Clinical Guideline: Hereditary Hemochromatosis. Am J Gastroenterol 2019;114:1202-1218"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "양성 복굴절 마름모꼴 결정과 연골석회화증은 CPPD 이고, 55세 미만에 당뇨·성선저하·간비대가 함께 있으므로 혈색소침착증을 찾는 철 검사가 다음 단계다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "결정이 바늘 모양 음성 복굴절(요산)이 아니라 마름모꼴 약한 양성 복굴절이고 반월판 석회화가 있다",
+   "steps": 3,
+   "chain": [
+    "마름모꼴 약한 양성 복굴절 결정 + 반월판 석회화 → CPPD 관절염",
+    "46세의 CPPD → 이차 원인을 찾아야 한다",
+    "당뇨·발기부전·간비대·ALT 상승 → 혈색소침착증 → 트랜스페린 포화도·페리틴"
+   ],
+   "key": [
+    {
+     "item": "rhomboid crystals that are weakly positively birefringent",
+     "why": "칼슘피로인산 결정",
+     "also": []
+    },
+    {
+     "item": "linear calcification of the menisci",
+     "why": "연골석회화증",
+     "also": []
+    },
+    {
+     "item": "type 2 diabetes mellitus diagnosed 2 years ago and erectile dysfunction",
+     "why": "췌장·뇌하수체 철 침착을 시사",
+     "also": []
+    },
+    {
+     "item": "hepatomegaly 3 cm below the right costal margin",
+     "why": "간 철 침착",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "uric acid concentration is 6.1 mg/dL",
+     "why": "통풍 가능성을 낮추지만 혈중 요산만으로 통풍을 배제하지는 못한다",
+     "also": []
+    },
+    {
+     "item": "Gram stain is negative",
+     "why": "세균성 관절염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Temperature is 37.6°C",
+     "why": "결정 관절염에서도 미열은 흔하다",
+     "also": []
+    }
+   ],
+   "summary": "마름모꼴 약한 양성 복굴절 결정과 반월판 석회화로 CPPD 관절염이다. 46세에 당뇨·발기부전·간비대·ALT 상승이 함께 있어 혈색소침착증을 의심하고 트랜스페린 포화도와 페리틴을 잰다.",
+   "switch": {
+    "choice": "B",
+    "condition": "관절액에서 바늘 모양의 강한 음성 복굴절 결정이 보이고 요산이 높다면 24시간 소변 요산 배설량으로 과생성·배설 저하를 가린다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261010T202105Z_일일영상_2026-10-11_10units_10q_479230a1",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0283",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선",
+  "type": "소아청소년 — 넘어진 뒤 고개가 기울어진 아이의 경추 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "8세 남아가 트램펄린에서 떨어져 머리 위쪽을 부딪친 뒤 목 통증과 고개가 오른쪽으로 기울어진 채 움직이지 않으려 하여 응급실에 왔다. 의식은 명료하고 팔다리의 근력·감각·반사는 정상이다. 목 뒤쪽 윗부분에 압통이 있다. 중립 자세에서 찍은 측면 경추 X선은 그림과 같고, 양방향 화살표 사이 간격은 6 mm 로 측정되었다.",
+  "question": "손상되었을 가능성이 가장 높은 구조물은?",
+  "options": [
+   "앞세로인대",
+   "목덜미인대",
+   "뒤세로인대",
+   "환추 횡인대",
+   "익상인대"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: X선에서 C1 앞고리 뒷면과 치아돌기 앞면 사이(환추치간격, ADI)가 6 mm 로 넓어져 있다. 이 간격을 일정하게 붙잡아 두는 구조가 치아돌기 뒤를 가로지르는 환추 횡인대다. 소아의 정상 ADI 는 5 mm 이하(성인 3 mm 이하)이므로 6 mm 는 횡인대 손상으로 C1 이 C2 위에서 앞으로 미끄러진 환축추 불안정이다.\n- 원리: <b>무엇이 ADI 를 정하는가</b>: 치아돌기는 C1 앞고리 뒷면에 붙어 회전축 역할을 한다. 그 뒤를 환추 횡인대가 띠처럼 감싸 C1 이 앞으로 미끄러지지 못하게 한다. 횡인대가 끊어지면 고개를 숙일 때 C1 이 앞으로 밀려 ADI 가 넓어지고, 치아돌기가 척수 쪽으로 다가가 척수를 누를 수 있다.<br> <b>왜 소아 기준이 다른가</b>: 소아는 인대가 느슨하고 치아돌기·C1 앞고리의 뼈 형성이 아직 덜 되어 연골 부분이 X선에 보이지 않는다. 그래서 정상 ADI 가 성인(3 mm 이하)보다 넓은 5 mm 이하까지 허용된다. 6 mm 는 소아 기준으로도 넓다.<br> <b>다른 인대는 무엇을 막는가</b>: 익상인대는 치아돌기 끝에서 후두과로 가서 과도한 <b>회전</b>을 막는다 — 손상되면 회전 범위가 커지지만 ADI 는 변하지 않는다. 앞세로인대는 과신전을, 뒤세로인대·목덜미인대는 과굴곡을 제한하며 손상되면 아래 경추의 정렬·추간 간격이 변한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">환추 횡인대(정답)</th><th>익상인대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>C1 양쪽 외측괴 사이, 치아돌기 뒤를 가로지름</td><td>치아돌기 끝 → 양쪽 후두과</td></tr> <tr><td>막는 움직임</td><td>C1 의 앞쪽 미끄러짐</td><td>머리의 과도한 회전·옆굽힘</td></tr> <tr><td>측면 X선</td><td>ADI 확대(소아 5 mm, 성인 3 mm 초과)</td><td>ADI 정상 — CT·MRI 에서 회전 비대칭</td></tr> </tbody></table> 측면 X선에서 앞뒤로 넓어진 간격은 횡인대, 축상 영상에서 돌아간 관계는 익상인대 쪽이다.\n- 오답 이유:\n  - ① 앞세로인대는 과신전을 제한한다. 아래 경추에서 추간판 앞쪽 간격이 벌어지고 척추 앞 연부조직이 부었다면 손상을 의심한다.\n  - ② 목덜미인대는 극돌기 끝을 잇는 뒤쪽 인대로 과굴곡을 제한한다. 극돌기 사이가 부채꼴로 벌어진 측면 X선이었다면 의심한다.\n  - ③ 뒤세로인대는 척추체 뒷면을 따라 과굴곡을 제한한다. 아래 경추에서 척추체 사이가 뒤쪽으로 벌어지고 뒤 관절이 탈구되었다면 의심한다.\n  - ⑤ 익상인대는 머리의 과도한 회전을 막는다. 측면 X선의 ADI 는 정상이고 CT 에서 C1-C2 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 의심한다.\n- 함정: 소아의 ADI 를 성인 기준(3 mm)으로만 외우거나, 고개가 기울어 있다는 이유로 회전을 막는 익상인대를 고르는 것 — 넓어진 ADI 는 횡인대다.\n- 학습목표: 소아 측면 경추 X선에서 환추치간격(ADI) 확대가 환추 횡인대 손상을 뜻함을 알고 소아·성인 정상값의 차이를 안다\n- 근거·출처: Herman MJ, et al. Pediatric cervical spine clearance and injury. In: Rockwood and Wilkins' Fractures in Children, 9th ed. (atlantodental interval up to 5 mm in children) · Standring S, ed. Gray's Anatomy, 42nd ed. Craniovertebral joints — transverse and alar ligaments · PMC11416153 Figure 1 — pediatric case report (teacher-only) · 작성자 판독(2026-10-10): 중립 측면 경추 X선, C1 앞고리 뒷면과 치아돌기 앞면 사이(양방향 화살표)가 넓어짐(원 논문 6 mm)\n\n## 출처\n- Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 C1 앞고리 뒷면과 치아돌기 앞면 사이(환추치간격, ADI)가 6 mm 로 넓어져 있다. 이 간격을 일정하게 붙잡아 두는 구조가 치아돌기 뒤를 가로지르는 환추 횡인대다. 소아의 정상 ADI 는 5 mm 이하(성인 3 mm 이하)이므로 6 mm 는 횡인대 손상으로 C1 이 C2 위에서 앞으로 미끄러진 환축추 불안정이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>무엇이 ADI 를 정하는가</b>: 치아돌기는 C1 앞고리 뒷면에 붙어 회전축 역할을 한다. 그 뒤를 환추 횡인대가 띠처럼 감싸 C1 이 앞으로 미끄러지지 못하게 한다. 횡인대가 끊어지면 고개를 숙일 때 C1 이 앞으로 밀려 ADI 가 넓어지고, 치아돌기가 척수 쪽으로 다가가 척수를 누를 수 있다.<br> <b>왜 소아 기준이 다른가</b>: 소아는 인대가 느슨하고 치아돌기·C1 앞고리의 뼈 형성이 아직 덜 되어 연골 부분이 X선에 보이지 않는다. 그래서 정상 ADI 가 성인(3 mm 이하)보다 넓은 5 mm 이하까지 허용된다. 6 mm 는 소아 기준으로도 넓다.<br> <b>다른 인대는 무엇을 막는가</b>: 익상인대는 치아돌기 끝에서 후두과로 가서 과도한 <b>회전</b>을 막는다 — 손상되면 회전 범위가 커지지만 ADI 는 변하지 않는다. 앞세로인대는 과신전을, 뒤세로인대·목덜미인대는 과굴곡을 제한하며 손상되면 아래 경추의 정렬·추간 간격이 변한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">환추 횡인대(정답)</th><th>익상인대(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>C1 양쪽 외측괴 사이, 치아돌기 뒤를 가로지름</td><td>치아돌기 끝 → 양쪽 후두과</td></tr> <tr><td>막는 움직임</td><td>C1 의 앞쪽 미끄러짐</td><td>머리의 과도한 회전·옆굽힘</td></tr> <tr><td>측면 X선</td><td>ADI 확대(소아 5 mm, 성인 3 mm 초과)</td><td>ADI 정상 — CT·MRI 에서 회전 비대칭</td></tr> </tbody></table> 측면 X선에서 앞뒤로 넓어진 간격은 횡인대, 축상 영상에서 돌아간 관계는 익상인대 쪽이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 앞세로인대는 과신전을 제한한다. 아래 경추에서 추간판 앞쪽 간격이 벌어지고 척추 앞 연부조직이 부었다면 손상을 의심한다.\n② 목덜미인대는 극돌기 끝을 잇는 뒤쪽 인대로 과굴곡을 제한한다. 극돌기 사이가 부채꼴로 벌어진 측면 X선이었다면 의심한다.\n③ 뒤세로인대는 척추체 뒷면을 따라 과굴곡을 제한한다. 아래 경추에서 척추체 사이가 뒤쪽으로 벌어지고 뒤 관절이 탈구되었다면 의심한다.\n⑤ 익상인대는 머리의 과도한 회전을 막는다. 측면 X선의 ADI 는 정상이고 CT 에서 C1-C2 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 의심한다."
+   },
+   {
+    "k": "함정",
+    "v": "소아의 ADI 를 성인 기준(3 mm)으로만 외우거나, 고개가 기울어 있다는 이유로 회전을 막는 익상인대를 고르는 것 — 넓어진 ADI 는 횡인대다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 측면 경추 X선에서 환추치간격(ADI) 확대가 환추 횡인대 손상을 뜻함을 알고 소아·성인 정상값의 차이를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Herman MJ, et al. Pediatric cervical spine clearance and injury. In: Rockwood and Wilkins' Fractures in Children, 9th ed. (atlantodental interval up to 5 mm in children) · Standring S, ed. Gray's Anatomy, 42nd ed. Craniovertebral joints — transverse and alar ligaments · PMC11416153 Figure 1 — pediatric case report (teacher-only) · 작성자 판독(2026-10-10): 중립 측면 경추 X선, C1 앞고리 뒷면과 치아돌기 앞면 사이(양방향 화살표)가 넓어짐(원 논문 6 mm) ## 출처 Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "소아 측면 경추 X선에서 ADI 가 6 mm 로 소아 정상(5 mm 이하)보다 넓으므로 C1 의 앞쪽 미끄러짐을 막는 환추 횡인대가 손상되었다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "측면 X선에서 앞뒤 간격(ADI)이 넓어졌다 — 회전을 막는 익상인대는 ADI 를 바꾸지 않는다",
+   "steps": 3,
+   "chain": [
+    "영상: C1 앞고리와 치아돌기 사이 간격 확대(6 mm)",
+    "소아 정상 ADI 5 mm 이하 → 비정상 확대",
+    "ADI 를 붙잡는 구조 = 환추 횡인대"
+   ],
+   "key": [
+    {
+     "item": "영상: C1 앞고리 뒷면과 치아돌기 앞면 사이 간격(양방향 화살표)이 넓어짐",
+     "why": "환추치간격 확대",
+     "also": []
+    },
+    {
+     "item": "양방향 화살표 사이 간격은 6 mm 로 측정되었다",
+     "why": "소아 정상 5 mm 를 넘는다",
+     "also": []
+    },
+    {
+     "item": "8세 남아",
+     "why": "소아 — 정상 기준이 성인과 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "팔다리의 근력·감각·반사는 정상",
+     "why": "척수 압박 징후 없음 — 그래도 고정과 정밀 영상이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "고개가 오른쪽으로 기울어진 채",
+     "why": "회전성 손상으로 끌리게 하지만 측면 X선의 앞뒤 간격 확대를 설명하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "8세 아이의 중립 측면 경추 X선에서 환추치간격이 6 mm 로 소아 정상(5 mm 이하)보다 넓다. C1 의 앞쪽 미끄러짐을 막는 환추 횡인대가 손상된 것이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "ADI 는 정상인데 CT 에서 C1-C2 의 회전 비대칭이나 치아돌기 끝 견열 골편이 보였다면 익상인대 손상을 의심한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0283.png",
+   "caption": "중립 자세 측면 경추 X선, 양방향 화살표와 패널 문자는 원 그림의 것 — 출판된 증례 그림에서 한 패널만 잘라냄 (PMC Open Access Subset, CC BY — 보정 없음)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416153/",
+   "asset_id": "PMC-PMC11416153_Figure1_B",
+   "text": "Successful Non-operative Management of Unstable Jefferson Fracture With Transverse Atlantal Ligament Injury (Dickman Type I and IIb) in a Pediatric Patient: A Case Report. Cureus. 2024 Aug 22;16(8):e67522. doi: 10.7759/cureus.67522 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0282",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후",
+  "type": "외과계 — 옆구리 둔상 뒤 육안적 혈뇨와 안정된 활력징후",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "26세 남자가 오토바이에서 떨어져 오른쪽 옆구리를 부딪친 뒤 3시간 만에 응급실에 왔다. 도착 당시 혈압 96/60 mmHg, 맥박 118회/분 이었고, 정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다. 오른쪽 옆구리에 압통과 멍이 있고 복막 자극 징후는 없다. 육안적 혈뇨가 있다. 혈색소는 도착 시 13.1 g/dL, 6시간 뒤 12.7 g/dL 이다. 동맥기 영상에서 조영제가 혈관 밖으로 새는 소견은 없었다. 복부 조영증강 CT 는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "침상 안정과 연속 혈색소 측정",
+   "응급 개복 콩팥절제술",
+   "콩팥동맥 혈관색전술",
+   "즉시 요관 스텐트 삽입",
+   "경피적 콩팥창냄술"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레와 후복막에 넓은 혈종이 있다(고등급 둔상 콩팥 손상). 그러나 정질액 1 L 에 혈압이 회복되어 6시간 동안 유지되고 혈색소도 거의 떨어지지 않았으며 조영제 혈관외 유출이 없다. 혈역학이 안정된 둔상 콩팥 손상은 등급과 관계없이 비수술적 관찰(침상 안정·활력징후·연속 혈색소 측정)이 원칙이다.\n- 원리: <b>왜 수술하지 않는가</b>: 콩팥은 단단한 Gerota 근막 안에 들어 있어, 실질이 갈라져도 주위 혈종이 그 근막 안에서 압력을 높여 출혈을 스스로 누른다(눌림 효과). 이때 개복하면 그 근막이 열려 눌림이 풀리고, 지혈하려다 콩팥을 통째로 떼어 내게 되는 경우가 많다. 그래서 혈역학이 안정되면 고등급 손상도 관찰이 콩팥을 가장 많이 살린다.<br> <b>관찰의 내용</b>: 침상 안정, 활력징후와 혈색소를 연속 측정하고, 육안적 혈뇨가 맑아질 때까지 지켜본다. 소변 누출(요종)은 대부분 저절로 흡수되며, 커지거나 감염되거나 열이 날 때에만 요관 스텐트를 넣는다.<br> <b>개입이 필요한 때</b>: 혈관외 유출(활동성 동맥 출혈)이나 가성동맥류가 보이면 혈관색전술을 한다. 수액·수혈에도 불안정하거나, 팽창하거나 박동하는 혈종이 있거나, 콩팥문 혈관이 뜯겨 나갔으면 수술(대개 콩팥절제술)을 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비수술적 관찰(정답)</th><th>응급 콩팥절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td>수액에 반응해 안정 유지</td><td>수액·수혈에도 불안정</td></tr> <tr><td>CT</td><td>실질 파열·혈종, 혈관외 유출 없음</td><td>콩팥문 혈관 손상, 팽창하는 혈종</td></tr> <tr><td>혈색소 추이</td><td>거의 일정(13.1 → 12.7)</td><td>계속 떨어짐</td></tr> </tbody></table> 손상 등급이 높다는 것만으로는 수술하지 않는다 — 혈역학과 활동성 출혈 여부가 처치를 정한다.\n- 오답 이유:\n  - ② 응급 콩팥절제술은 수액·수혈에도 혈역학이 불안정하거나 콩팥문 혈관이 뜯겨 나간 경우의 처치다. 혈압이 회복되어 유지되는 이 환자에서는 살릴 수 있는 콩팥을 잃게 한다.\n  - ③ 혈관색전술은 CT 에서 조영제가 혈관 밖으로 새거나 가성동맥류가 보이는 활동성 동맥 출혈에 쓴다. 이 환자는 혈관외 유출이 없다.\n  - ④ 요관 스텐트는 소변 누출로 생긴 요종이 커지거나 감염되거나 열이 날 때 넣는다. 처음부터 넣을 필요는 없고 대부분 저절로 흡수된다.\n  - ⑤ 경피적 콩팥창냄술은 요관 폐쇄로 생긴 감염된 수신증을 빼낼 때 쓴다. 손상 직후 혈종이 있는 콩팥에 바늘을 넣을 이유가 없다.\n- 함정: 콩팥이 여러 조각으로 갈라진 CT 를 보고 수술을 고르는 것 — 혈역학이 안정되고 혈관외 유출이 없으면 관찰한다.\n- 학습목표: 혈역학이 안정된 고등급 둔상 콩팥 손상은 활동성 출혈이 없으면 비수술적으로 관찰함을 안다\n- 근거·출처: Morey AF, et al. Urotrauma Guideline 2020: AUA Guideline. J Urol 2021;205:30-35 (renal trauma — nonoperative management of hemodynamically stable patients) · Kitrey ND, et al. EAU Guidelines on Urological Trauma, 2024 ed. (renal trauma) · PMC12718121 Figure 1 — case report of conservatively managed high-grade blunt renal injury (teacher-only) · 작성자 판독(2026-10-10): 조영증강 복부 CT 축상, 오른쪽 콩팥이 여러 조각으로 갈라지고 불균질하게 조영, 콩팥 둘레·후복막 혈종, 왼쪽 콩팥 정상\n\n## 출처\n- Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레와 후복막에 넓은 혈종이 있다(고등급 둔상 콩팥 손상). 그러나 정질액 1 L 에 혈압이 회복되어 6시간 동안 유지되고 혈색소도 거의 떨어지지 않았으며 조영제 혈관외 유출이 없다. 혈역학이 안정된 둔상 콩팥 손상은 등급과 관계없이 비수술적 관찰(침상 안정·활력징후·연속 혈색소 측정)이 원칙이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 수술하지 않는가</b>: 콩팥은 단단한 Gerota 근막 안에 들어 있어, 실질이 갈라져도 주위 혈종이 그 근막 안에서 압력을 높여 출혈을 스스로 누른다(눌림 효과). 이때 개복하면 그 근막이 열려 눌림이 풀리고, 지혈하려다 콩팥을 통째로 떼어 내게 되는 경우가 많다. 그래서 혈역학이 안정되면 고등급 손상도 관찰이 콩팥을 가장 많이 살린다.<br> <b>관찰의 내용</b>: 침상 안정, 활력징후와 혈색소를 연속 측정하고, 육안적 혈뇨가 맑아질 때까지 지켜본다. 소변 누출(요종)은 대부분 저절로 흡수되며, 커지거나 감염되거나 열이 날 때에만 요관 스텐트를 넣는다.<br> <b>개입이 필요한 때</b>: 혈관외 유출(활동성 동맥 출혈)이나 가성동맥류가 보이면 혈관색전술을 한다. 수액·수혈에도 불안정하거나, 팽창하거나 박동하는 혈종이 있거나, 콩팥문 혈관이 뜯겨 나갔으면 수술(대개 콩팥절제술)을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비수술적 관찰(정답)</th><th>응급 콩팥절제술(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>혈역학</td><td>수액에 반응해 안정 유지</td><td>수액·수혈에도 불안정</td></tr> <tr><td>CT</td><td>실질 파열·혈종, 혈관외 유출 없음</td><td>콩팥문 혈관 손상, 팽창하는 혈종</td></tr> <tr><td>혈색소 추이</td><td>거의 일정(13.1 → 12.7)</td><td>계속 떨어짐</td></tr> </tbody></table> 손상 등급이 높다는 것만으로는 수술하지 않는다 — 혈역학과 활동성 출혈 여부가 처치를 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 응급 콩팥절제술은 수액·수혈에도 혈역학이 불안정하거나 콩팥문 혈관이 뜯겨 나간 경우의 처치다. 혈압이 회복되어 유지되는 이 환자에서는 살릴 수 있는 콩팥을 잃게 한다.\n③ 혈관색전술은 CT 에서 조영제가 혈관 밖으로 새거나 가성동맥류가 보이는 활동성 동맥 출혈에 쓴다. 이 환자는 혈관외 유출이 없다.\n④ 요관 스텐트는 소변 누출로 생긴 요종이 커지거나 감염되거나 열이 날 때 넣는다. 처음부터 넣을 필요는 없고 대부분 저절로 흡수된다.\n⑤ 경피적 콩팥창냄술은 요관 폐쇄로 생긴 감염된 수신증을 빼낼 때 쓴다. 손상 직후 혈종이 있는 콩팥에 바늘을 넣을 이유가 없다."
+   },
+   {
+    "k": "함정",
+    "v": "콩팥이 여러 조각으로 갈라진 CT 를 보고 수술을 고르는 것 — 혈역학이 안정되고 혈관외 유출이 없으면 관찰한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈역학이 안정된 고등급 둔상 콩팥 손상은 활동성 출혈이 없으면 비수술적으로 관찰함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morey AF, et al. Urotrauma Guideline 2020: AUA Guideline. J Urol 2021;205:30-35 (renal trauma — nonoperative management of hemodynamically stable patients) · Kitrey ND, et al. EAU Guidelines on Urological Trauma, 2024 ed. (renal trauma) · PMC12718121 Figure 1 — case report of conservatively managed high-grade blunt renal injury (teacher-only) · 작성자 판독(2026-10-10): 조영증강 복부 CT 축상, 오른쪽 콩팥이 여러 조각으로 갈라지고 불균질하게 조영, 콩팥 둘레·후복막 혈종, 왼쪽 콩팥 정상 ## 출처 Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "CT 의 고등급 오른쪽 콩팥 손상이 있지만 수액에 반응해 혈역학이 안정되고 혈색소가 유지되며 혈관외 유출이 없으므로 비수술적으로 관찰한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "정질액 1 L 뒤 혈압이 6시간 동안 유지되고 혈색소가 13.1 에서 12.7 g/dL 로 거의 일정하다",
+   "steps": 3,
+   "chain": [
+    "영상: 오른쪽 콩팥 파열과 콩팥 둘레·후복막 혈종 → 고등급 둔상 콩팥 손상",
+    "수액에 반응해 혈역학 안정·혈색소 유지·혈관외 유출 없음 → 활동성 출혈 없음",
+    "등급과 관계없이 비수술적 관찰"
+   ],
+   "key": [
+    {
+     "item": "영상: 오른쪽 콩팥이 여러 조각으로 갈라지고 콩팥 둘레·후복막에 넓은 혈종",
+     "why": "고등급 콩팥 손상 — 수술로 끌리게 하는 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "동맥기 영상에서 조영제가 혈관 밖으로 새는 소견은 없었다",
+     "why": "혈관색전술이 필요한 활동성 출혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "복막 자극 징후는 없다",
+     "why": "개복이 필요한 복강 내 장기 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "정질액 1 L 를 주입한 뒤 혈압 122/76 mmHg, 맥박 92회/분 으로 회복되어 6시간 동안 유지되었다",
+     "why": "혈역학 안정 — 비수술적 관찰의 조건",
+     "also": []
+    },
+    {
+     "item": "6시간 뒤 12.7 g/dL",
+     "why": "혈색소가 거의 떨어지지 않음",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "육안적 혈뇨가 있다",
+     "why": "콩팥 손상의 정도와 처치 방침을 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "CT 에서 오른쪽 콩팥이 갈라지고 후복막 혈종이 있는 고등급 둔상 콩팥 손상이지만, 수액에 반응해 안정되었고 혈색소가 유지되며 혈관외 유출이 없다. 등급과 관계없이 비수술적으로 관찰한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "CT 동맥기에서 조영제가 혈관 밖으로 새는 활동성 출혈이 보이면 콩팥동맥 혈관색전술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0282.jpg",
+   "caption": "조영증강 복부 CT 축상면, R·P 표지와 화살표는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12718121/",
+   "asset_id": "PMC-PMC12718121_Figure1",
+   "text": "Conservatively Managed Grade V Blunt Renal Injury. Cureus. 2025 Nov 20;17(11):e97369. doi: 10.7759/cureus.97369 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0281",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증",
+  "type": "외과계 — 계단에서 넘어져 이마를 부딪친 뒤 목 통증",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-09",
+  "vignette": "A 59-year-old man is brought to the emergency department 2 hours after he fell down a flight of stairs and struck his forehead on the floor. He reports pain at the back of his neck. He did not lose consciousness. He has an abrasion on his forehead. Muscle strength, sensation, and deep tendon reflexes are normal in all extremities. Rectal tone is normal. A CT scan of the cervical spine at the level of the second cervical vertebra is shown.",
+  "question": "Which of the following is the most likely mechanism of this injury?",
+  "options": [
+   "Hyperflexion with anterior shear",
+   "Rotation with lateral flexion",
+   "Distraction of the occiput from the atlas",
+   "Hyperextension with axial loading",
+   "Vertical axial compression on the vertex"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The axial CT through C2 shows fracture lines through both sides of the neural arch at its junction with the vertebral body (the pars interarticularis/pedicles), separating the posterior elements from the body. This is a traumatic spondylolisthesis of the axis (hangman fracture). Striking the forehead in a fall drives the head into hyperextension while the body weight loads the spine axially, so the C2 neural arch fails between the C1 lateral masses above and the C3 facets below.\n- 원리: <b>Why the pars of C2 breaks in hyperextension</b>: the C2 pars interarticularis is the thin bridge between the superior articular facet (which carries the head through C1) and the inferior articular facet (which sits on C3). In hyperextension the posterior elements of C1 and C3 squeeze this bridge from above and below, and an axial load adds force. The weakest point — both sides of the neural arch — breaks, and the C2 body may slide forward on C3.<br> <b>Why the cord is usually spared</b>: the fracture separates the arch from the body, so the spinal canal at C2 becomes wider rather than narrower (\"autodecompression\"). The canal at C2 is also the widest in the cervical spine. Most patients, like this one, are neurologically intact.<br> <b>Mechanism names the fracture</b>: a blow to the vertex with a straight neck (diving) compresses C1 between the occipital condyles and C2 and bursts the atlas ring outward (Jefferson fracture). Hyperflexion produces anterior wedge or flexion-teardrop injuries, and distraction of the occiput produces atlanto-occipital dissociation. Treatment of a hangman fracture depends on displacement and angulation: most are stable and heal in a rigid collar or halo.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hangman fracture (correct)</th><th>Jefferson fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Level</td><td>C2 — neural arch (pars/pedicles)</td><td>C1 — anterior and posterior arches of the atlas ring</td></tr> <tr><td>Mechanism</td><td>Hyperextension with axial load (forehead strike)</td><td>Vertical compression on the vertex with the neck straight (diving)</td></tr> <tr><td>Canal</td><td>Widened by separation of arch from body</td><td>Widened as the lateral masses spread outward</td></tr> </tbody></table> Both are usually neurologically silent because they widen the canal — the level of the ring and the direction of the force separate them.\n- 오답 이유:\n  - (A) Hyperflexion with anterior shear causes anterior wedge compression or flexion-teardrop fractures of the vertebral body; it would fit a blow to the back of the head that forced the chin to the chest.\n  - (B) Rotation with lateral flexion produces unilateral facet dislocation or atlantoaxial rotatory subluxation; it would fit a fixed rotated head posture and an asymmetric C1-C2 relationship on CT.\n  - (C) Distraction of the occiput from the atlas is atlanto-occipital dissociation from high-energy deceleration; it would be favored by a widened condyle-C1 interval and usually severe neurologic injury.\n  - (E) Vertical axial compression on the vertex with a straight neck bursts the C1 ring (Jefferson fracture); it would be the answer if the CT showed C1 arch fractures with lateral mass displacement after a diving injury.\n- 함정: Assuming every upper cervical fracture after a fall is a vertical compression (Jefferson) injury — a forehead strike forces hyperextension, which breaks the C2 neural arch.\n- 학습목표: C2 양쪽 신경궁(관절간부·척추경) 골절(Hangman 골절)의 기전이 과신전과 축성 부하임을 알고 신경 손상이 드문 이유를 설명한다\n- 근거·출처: Bucholz RW, et al. Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures and dislocations (traumatic spondylolisthesis of the axis) · Effendi B, et al. Fractures of the ring of the axis: a classification based on the analysis of 131 cases. J Bone Joint Surg Br 1981;63-B:319-327 · PMC11283068 Figure 1 — case report of hangman's fracture (teacher-only) · 작성자 판독(2026-10-10): C2 축상 CT, 양쪽 신경궁과 척추체 경계(척추경·관절간부)의 골절선(원 그림 화살표), 척추관은 넓어짐\n\n## 출처\n- Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The axial CT through C2 shows fracture lines through both sides of the neural arch at its junction with the vertebral body (the pars interarticularis/pedicles), separating the posterior elements from the body. This is a traumatic spondylolisthesis of the axis (hangman fracture). Striking the forehead in a fall drives the head into hyperextension while the body weight loads the spine axially, so the C2 neural arch fails between the C1 lateral masses above and the C3 facets below."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the pars of C2 breaks in hyperextension</b>: the C2 pars interarticularis is the thin bridge between the superior articular facet (which carries the head through C1) and the inferior articular facet (which sits on C3). In hyperextension the posterior elements of C1 and C3 squeeze this bridge from above and below, and an axial load adds force. The weakest point — both sides of the neural arch — breaks, and the C2 body may slide forward on C3.<br> <b>Why the cord is usually spared</b>: the fracture separates the arch from the body, so the spinal canal at C2 becomes wider rather than narrower (\"autodecompression\"). The canal at C2 is also the widest in the cervical spine. Most patients, like this one, are neurologically intact.<br> <b>Mechanism names the fracture</b>: a blow to the vertex with a straight neck (diving) compresses C1 between the occipital condyles and C2 and bursts the atlas ring outward (Jefferson fracture). Hyperflexion produces anterior wedge or flexion-teardrop injuries, and distraction of the occiput produces atlanto-occipital dissociation. Treatment of a hangman fracture depends on displacement and angulation: most are stable and heal in a rigid collar or halo."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hangman fracture (correct)</th><th>Jefferson fracture (closest distractor)</th></tr></thead><tbody> <tr><td>Level</td><td>C2 — neural arch (pars/pedicles)</td><td>C1 — anterior and posterior arches of the atlas ring</td></tr> <tr><td>Mechanism</td><td>Hyperextension with axial load (forehead strike)</td><td>Vertical compression on the vertex with the neck straight (diving)</td></tr> <tr><td>Canal</td><td>Widened by separation of arch from body</td><td>Widened as the lateral masses spread outward</td></tr> </tbody></table> Both are usually neurologically silent because they widen the canal — the level of the ring and the direction of the force separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hyperflexion with anterior shear causes anterior wedge compression or flexion-teardrop fractures of the vertebral body; it would fit a blow to the back of the head that forced the chin to the chest.\n(B) Rotation with lateral flexion produces unilateral facet dislocation or atlantoaxial rotatory subluxation; it would fit a fixed rotated head posture and an asymmetric C1-C2 relationship on CT.\n(C) Distraction of the occiput from the atlas is atlanto-occipital dissociation from high-energy deceleration; it would be favored by a widened condyle-C1 interval and usually severe neurologic injury.\n(E) Vertical axial compression on the vertex with a straight neck bursts the C1 ring (Jefferson fracture); it would be the answer if the CT showed C1 arch fractures with lateral mass displacement after a diving injury."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming every upper cervical fracture after a fall is a vertical compression (Jefferson) injury — a forehead strike forces hyperextension, which breaks the C2 neural arch."
+   },
+   {
+    "k": "학습목표",
+    "v": "C2 양쪽 신경궁(관절간부·척추경) 골절(Hangman 골절)의 기전이 과신전과 축성 부하임을 알고 신경 손상이 드문 이유를 설명한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bucholz RW, et al. Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures and dislocations (traumatic spondylolisthesis of the axis) · Effendi B, et al. Fractures of the ring of the axis: a classification based on the analysis of 131 cases. J Bone Joint Surg Br 1981;63-B:319-327 · PMC11283068 Figure 1 — case report of hangman's fracture (teacher-only) · 작성자 판독(2026-10-10): C2 축상 CT, 양쪽 신경궁과 척추체 경계(척추경·관절간부)의 골절선(원 그림 화살표), 척추관은 넓어짐 ## 출처 Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "C2 양쪽 신경궁 골절(Hangman 골절)은 이마를 부딪쳐 목이 과신전된 상태에서 축성 부하가 가해져 생긴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "골절이 C1 고리가 아니라 C2 신경궁에 있고 이마를 부딪친 과신전 기전이다",
+   "steps": 3,
+   "chain": [
+    "영상: C2 축상에서 양쪽 신경궁(척추경·관절간부) 골절 → Hangman 골절",
+    "이마를 바닥에 부딪침 → 목의 과신전 + 몸무게에 의한 축성 부하",
+    "C1 고리 파열(Jefferson, 수직 압박)과 구분 → 과신전·축성 부하"
+   ],
+   "key": [
+    {
+     "item": "영상: C2 축상에서 신경궁이 척추체와 만나는 양쪽 부위의 골절선",
+     "why": "Hangman 골절의 위치",
+     "also": []
+    },
+    {
+     "item": "struck his forehead on the floor",
+     "why": "이마 충격 — 과신전 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "at the level of the second cervical vertebra",
+     "why": "C1 고리 파열(Jefferson) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Muscle strength, sensation, and deep tendon reflexes are normal in all extremities",
+     "why": "척추관이 넓어져 신경 손상이 드문 골절이라 기전 판단에는 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "He did not lose consciousness",
+     "why": "머리 손상 평가에 필요하지만 골절 기전을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "C2 축상 CT 에서 양쪽 신경궁이 척추체와 만나는 곳이 부러진 Hangman 골절이다. 이마를 부딪쳐 목이 과신전되고 축성 부하가 더해진 기전이며, 척추관이 넓어져 신경 손상은 대개 없다.",
+   "switch": {
+    "choice": "E",
+    "condition": "다이빙처럼 목을 곧게 편 채 정수리로 부딪쳐 C1 앞·뒤 고리가 부러졌다면 수직 축성 압박(Jefferson 골절)이 기전이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0281.png",
+   "caption": "Non-contrast axial CT — one panel cropped from a published case figure, arrows as in the original (PMC Open Access Subset, CC BY; no color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11283068/",
+   "asset_id": "PMC-PMC11283068_Figure1_ax",
+   "text": "Don’t Hang Around, It Could Be Incidental: A Case Report of Hangman’s Fracture and Review of the Literature. Cureus. 2024 Jun 27;16(6):e63285. doi: 10.7759/cureus.63285 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0280",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영",
+  "type": "호흡기 — 오토바이 사고 뒤 왼쪽 흉곽 전체의 음영",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "A 20-year-old man is brought to the emergency department 1 hour after a motorcycle collision because of left-sided chest pain and shortness of breath. His blood pressure is 104/66 mm Hg, pulse is 114/min, respirations are 26/min, and oxygen saturation is 91% on room air. There is tenderness over the left chest wall. Breath sounds are decreased over the left hemithorax, and percussion is dull. The trachea is midline, and the jugular veins are not distended. Heart sounds are clearly heard. Hemoglobin concentration is 11.8 g/dL. A chest x-ray is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Emergency thoracotomy",
+   "Needle decompression of the left chest",
+   "Ultrasound-guided pericardiocentesis",
+   "Flexible bronchoscopy",
+   "Left tube thoracostomy"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The chest x-ray shows nearly uniform opacification of the entire left hemithorax from apex to base, obscuring the left hemidiaphragm and left heart border. After blunt chest trauma, together with decreased breath sounds and dullness to percussion, this is a large hemothorax. The first step is a large-bore chest tube to drain the blood and re-expand the lung; the initial output and the hourly drainage then decide whether thoracotomy is needed.\n- 원리: <b>Why the chest tube is both diagnosis and treatment</b>: blood in the pleural space compresses the lung and is itself a measure of the bleeding. A chest tube re-expands the lung, which improves oxygenation and tamponades bleeding from the lung parenchyma and intercostal vessels; about 85% of blunt hemothoraces need nothing more.<br> <b>When to proceed to thoracotomy</b>: an initial output of 1500 mL or more, continued drainage of 200 mL/h or more for 2 to 4 hours, or persistent instability despite transfusion suggests injury to great vessels, the heart, or the pulmonary hilum and calls for thoracotomy. The decision is therefore made <b>after</b> the tube is placed, from what it drains.<br> <b>Separating tension pneumothorax and tamponade</b>: both impair venous return and distend the neck veins; tension pneumothorax adds hyperresonance and tracheal deviation. This patient has flat neck veins, dullness, and clearly heard heart sounds.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tube thoracostomy (correct)</th><th>Emergency thoracotomy (closest distractor)</th></tr></thead><tbody> <tr><td>When</td><td>First step for nearly every traumatic hemothorax</td><td>Initial drainage of 1500 mL or more, or 200 mL/h or more persisting</td></tr> <tr><td>Hemodynamics</td><td>Responsive or relatively stable</td><td>Unstable despite transfusion</td></tr> <tr><td>Deciding information</td><td>Hemothorax on x-ray and examination</td><td>Chest tube output</td></tr> </tbody></table> The size of the opacity on the x-ray does not decide thoracotomy — the tube goes in first, and the blood it drains decides surgery.\n- 오답 이유:\n  - (A) Emergency thoracotomy is indicated when the chest tube drains 1500 mL or more initially, 200 mL/h or more continues, or shock persists despite transfusion; it is not chosen from the x-ray before a tube is placed.\n  - (B) Needle decompression treats tension pneumothorax with hyperresonance, tracheal deviation, and distended neck veins; dullness with a midline trachea means fluid, not air.\n  - (C) Pericardiocentesis treats cardiac tamponade with distended neck veins, muffled heart sounds, and pulsus paradoxus; this patient's neck veins are flat and heart sounds are clear.\n  - (D) Flexible bronchoscopy evaluates tracheobronchial rupture or mucus-plug atelectasis; it would be considered if a large air leak persisted and the lung failed to re-expand after a chest tube.\n- 함정: Going straight to thoracotomy because the whole hemithorax is white — thoracotomy is decided by chest tube output after drainage.\n- 학습목표: 흉부 둔상 뒤 한쪽 흉곽 전체의 음영·호흡음 감소·타진 둔탁을 대량 혈흉으로 판단하고 첫 처치가 흉관 삽입임을 안다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. 4 Thoracic trauma (massive hemothorax — tube thoracostomy, indications for thoracotomy) · Mowery NT, et al. Practice management guidelines for management of hemothorax and occult pneumothorax. J Trauma 2011;70:510-518 · PMC12633636 Figure 1 — case report of traumatic hemothorax (teacher-only) · 작성자 판독(2026-10-10): 전후면 흉부 X선, 왼쪽 흉곽 전체가 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계 지워짐, 오른쪽 폐 정상, 기관은 대략 가운데\n\n## 출처\n- The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest x-ray shows nearly uniform opacification of the entire left hemithorax from apex to base, obscuring the left hemidiaphragm and left heart border. After blunt chest trauma, together with decreased breath sounds and dullness to percussion, this is a large hemothorax. The first step is a large-bore chest tube to drain the blood and re-expand the lung; the initial output and the hourly drainage then decide whether thoracotomy is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the chest tube is both diagnosis and treatment</b>: blood in the pleural space compresses the lung and is itself a measure of the bleeding. A chest tube re-expands the lung, which improves oxygenation and tamponades bleeding from the lung parenchyma and intercostal vessels; about 85% of blunt hemothoraces need nothing more.<br> <b>When to proceed to thoracotomy</b>: an initial output of 1500 mL or more, continued drainage of 200 mL/h or more for 2 to 4 hours, or persistent instability despite transfusion suggests injury to great vessels, the heart, or the pulmonary hilum and calls for thoracotomy. The decision is therefore made <b>after</b> the tube is placed, from what it drains.<br> <b>Separating tension pneumothorax and tamponade</b>: both impair venous return and distend the neck veins; tension pneumothorax adds hyperresonance and tracheal deviation. This patient has flat neck veins, dullness, and clearly heard heart sounds."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tube thoracostomy (correct)</th><th>Emergency thoracotomy (closest distractor)</th></tr></thead><tbody> <tr><td>When</td><td>First step for nearly every traumatic hemothorax</td><td>Initial drainage of 1500 mL or more, or 200 mL/h or more persisting</td></tr> <tr><td>Hemodynamics</td><td>Responsive or relatively stable</td><td>Unstable despite transfusion</td></tr> <tr><td>Deciding information</td><td>Hemothorax on x-ray and examination</td><td>Chest tube output</td></tr> </tbody></table> The size of the opacity on the x-ray does not decide thoracotomy — the tube goes in first, and the blood it drains decides surgery."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Emergency thoracotomy is indicated when the chest tube drains 1500 mL or more initially, 200 mL/h or more continues, or shock persists despite transfusion; it is not chosen from the x-ray before a tube is placed.\n(B) Needle decompression treats tension pneumothorax with hyperresonance, tracheal deviation, and distended neck veins; dullness with a midline trachea means fluid, not air.\n(C) Pericardiocentesis treats cardiac tamponade with distended neck veins, muffled heart sounds, and pulsus paradoxus; this patient's neck veins are flat and heart sounds are clear.\n(D) Flexible bronchoscopy evaluates tracheobronchial rupture or mucus-plug atelectasis; it would be considered if a large air leak persisted and the lung failed to re-expand after a chest tube."
+   },
+   {
+    "k": "함정",
+    "v": "Going straight to thoracotomy because the whole hemithorax is white — thoracotomy is decided by chest tube output after drainage."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 둔상 뒤 한쪽 흉곽 전체의 음영·호흡음 감소·타진 둔탁을 대량 혈흉으로 판단하고 첫 처치가 흉관 삽입임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. 4 Thoracic trauma (massive hemothorax — tube thoracostomy, indications for thoracotomy) · Mowery NT, et al. Practice management guidelines for management of hemothorax and occult pneumothorax. J Trauma 2011;70:510-518 · PMC12633636 Figure 1 — case report of traumatic hemothorax (teacher-only) · 작성자 판독(2026-10-10): 전후면 흉부 X선, 왼쪽 흉곽 전체가 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계 지워짐, 오른쪽 폐 정상, 기관은 대략 가운데 ## 출처 The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "흉부 둔상 뒤 왼쪽 흉곽 전체의 음영과 호흡음 감소·타진 둔탁은 대량 혈흉이므로 먼저 흉관을 넣어 배액하고 배액량으로 개흉술 여부를 정한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "개흉술은 흉관 배액량(처음 1500 mL 이상, 시간당 200 mL 이상)으로 정하며 이 환자는 아직 흉관을 넣지 않았고 혈압이 유지된다",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 흉곽 전체 균일한 음영 + 타진 둔탁·호흡음 감소 → 대량 혈흉",
+    "첫 처치는 흉관 삽입, 개흉술은 배액량으로 결정"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 흉곽이 폐첨부터 바닥까지 균일하게 하얗고 왼쪽 가로막·심장 왼쪽 경계가 지워짐",
+     "why": "흉강의 대량 액체 — 둔상 뒤면 혈흉",
+     "also": []
+    },
+    {
+     "item": "percussion is dull",
+     "why": "공기가 아니라 액체",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The trachea is midline, and the jugular veins are not distended",
+     "why": "긴장성 기흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Heart sounds are clearly heard",
+     "why": "심장눌림증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "His blood pressure is 104/66 mm Hg",
+     "why": "아직 혈압이 유지된다 — 흉관 먼저, 개흉술은 배액량으로",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Hemoglobin concentration is 11.8 g/dL",
+     "why": "급성 출혈 초기에는 혈색소가 아직 덜 떨어져 출혈량을 반영하지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 둔상 뒤 왼쪽 흉곽 전체의 균일한 음영·타진 둔탁·호흡음 감소는 대량 혈흉이다. 첫 처치는 흉관 삽입이고, 개흉술은 흉관 배액량을 보고 정한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "흉관에서 처음 1500 mL 이상이 나오거나 시간당 200 mL 이상 계속 나오면 응급 개흉술이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0280.jpg",
+   "caption": "Anteroposterior chest x-ray, arrow as in the original — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12633636/",
+   "asset_id": "PMC-PMC12633636_Figure1",
+   "text": "The Paradox of Relief: Recognizing and Managing Re-expansion Pulmonary Edema Following Traumatic Hemothorax. Cureus. 2025 Oct 21;17(10):e95061. doi: 10.7759/cureus.95061 (CC BY) — Figure 1"
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0290",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율",
+  "type": "예방의학·역학·보건통계 — 선별검사 뒤 늘어난 5년 생존율",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 58-year-old man who works as a hospital quality officer reviews data from a new screening program for pancreatic cancer using annual imaging in adults aged 50 to 75 years. Among patients with pancreatic cancer, the 5-year survival from the date of diagnosis is 24% in those detected by screening and 9% in those diagnosed after symptoms. In both groups, the tumors have similar growth rates on serial imaging, and the median age at death from pancreatic cancer is 68 years. Pancreatic cancer mortality in the screened population is unchanged compared with an unscreened population over 10 years.",
+  "question": "Which of the following best explains the higher 5-year survival in the screened group?",
+  "options": [
+   "Selection bias from healthier volunteers",
+   "Observer bias from unblinded assessment",
+   "Lead-time bias",
+   "Length-time bias",
+   "Overdiagnosis bias"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Screening found the cancers earlier, so the clock for survival started earlier, but the patients died at the same age (median 68 years) and population mortality did not change. The apparent gain in survival measured from diagnosis is only the extra time the patient knew about the disease — lead-time bias.\n- 원리: <b>Why survival from diagnosis can mislead</b>: survival is counted from the date of diagnosis to death. If screening moves the diagnosis earlier without changing the date of death, survival lengthens by exactly that shift (the lead time), even though nobody lives longer. The tell-tale sign is that age at death and disease-specific mortality are unchanged.<br> <b>How the other biases differ</b>: length-time bias arises because periodic screening preferentially detects slow-growing tumors with a long preclinical phase, which carry a better prognosis regardless of treatment; it is suggested when screen-detected tumors grow more slowly. Overdiagnosis is the extreme case — tumors that would never have caused symptoms; it inflates incidence and survival. Volunteer (selection) bias occurs when people who choose screening are healthier.<br> <b>How to avoid them</b>: a randomized trial comparing disease-specific mortality in the whole screened versus unscreened population is not affected by lead time, because mortality is counted from randomization, not from diagnosis.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (correct)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>What screening changes</td><td>Only the date of diagnosis</td><td>Which tumors are found — slow growers</td></tr> <tr><td>Tumor growth rate</td><td>Similar in both groups</td><td>Slower in screen-detected tumors</td></tr> <tr><td>Age at death, mortality</td><td>Unchanged</td><td>May look better because indolent tumors dominate</td></tr> </tbody></table> Same growth rate and same age at death point to lead time; slower growth in the screened group points to length time.\n- 오답 이유:\n  - (A) Selection bias from healthier volunteers would be the answer if those who chose screening had fewer comorbidities and lower all-cause mortality; it is controlled by comparing randomized populations.\n  - (B) Observer bias from unblinded assessment applies to subjective outcomes judged by assessors who know group assignment; death is an objective outcome that is not affected.\n  - (D) Length-time bias comes from screening preferentially finding slow-growing tumors; it would be the answer if the screen-detected tumors grew more slowly on serial imaging than symptom-detected ones.\n  - (E) Overdiagnosis bias would be favored if screening found many small tumors that never progressed and incidence rose sharply while deaths stayed the same; here the tumors grow similarly and patients die of the cancer.\n- 함정: Choosing length-time bias because both concern screening — when growth rates are similar and age at death is unchanged, the only difference is when the diagnosis was made.\n- 학습목표: 선별검사로 진단 시점만 앞당겨져 사망 시점이 같은데 생존 기간이 늘어나 보이는 것이 조기 진단 바이어스(lead-time bias)임을 안다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. Ch. Evaluating the effectiveness of screening programs (lead-time, length-time, overdiagnosis) · Welch HG, Schwartz LM, Woloshin S. Are increasing 5-year survival rates evidence of success against cancer? JAMA 2000;283:2975-2978",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Screening found the cancers earlier, so the clock for survival started earlier, but the patients died at the same age (median 68 years) and population mortality did not change. The apparent gain in survival measured from diagnosis is only the extra time the patient knew about the disease — lead-time bias."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why survival from diagnosis can mislead</b>: survival is counted from the date of diagnosis to death. If screening moves the diagnosis earlier without changing the date of death, survival lengthens by exactly that shift (the lead time), even though nobody lives longer. The tell-tale sign is that age at death and disease-specific mortality are unchanged.<br> <b>How the other biases differ</b>: length-time bias arises because periodic screening preferentially detects slow-growing tumors with a long preclinical phase, which carry a better prognosis regardless of treatment; it is suggested when screen-detected tumors grow more slowly. Overdiagnosis is the extreme case — tumors that would never have caused symptoms; it inflates incidence and survival. Volunteer (selection) bias occurs when people who choose screening are healthier.<br> <b>How to avoid them</b>: a randomized trial comparing disease-specific mortality in the whole screened versus unscreened population is not affected by lead time, because mortality is counted from randomization, not from diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lead-time bias (correct)</th><th>Length-time bias (closest distractor)</th></tr></thead><tbody> <tr><td>What screening changes</td><td>Only the date of diagnosis</td><td>Which tumors are found — slow growers</td></tr> <tr><td>Tumor growth rate</td><td>Similar in both groups</td><td>Slower in screen-detected tumors</td></tr> <tr><td>Age at death, mortality</td><td>Unchanged</td><td>May look better because indolent tumors dominate</td></tr> </tbody></table> Same growth rate and same age at death point to lead time; slower growth in the screened group points to length time."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Selection bias from healthier volunteers would be the answer if those who chose screening had fewer comorbidities and lower all-cause mortality; it is controlled by comparing randomized populations.\n(B) Observer bias from unblinded assessment applies to subjective outcomes judged by assessors who know group assignment; death is an objective outcome that is not affected.\n(D) Length-time bias comes from screening preferentially finding slow-growing tumors; it would be the answer if the screen-detected tumors grew more slowly on serial imaging than symptom-detected ones.\n(E) Overdiagnosis bias would be favored if screening found many small tumors that never progressed and incidence rose sharply while deaths stayed the same; here the tumors grow similarly and patients die of the cancer."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing length-time bias because both concern screening — when growth rates are similar and age at death is unchanged, the only difference is when the diagnosis was made."
+   },
+   {
+    "k": "학습목표",
+    "v": "선별검사로 진단 시점만 앞당겨져 사망 시점이 같은데 생존 기간이 늘어나 보이는 것이 조기 진단 바이어스(lead-time bias)임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. Ch. Evaluating the effectiveness of screening programs (lead-time, length-time, overdiagnosis) · Welch HG, Schwartz LM, Woloshin S. Are increasing 5-year survival rates evidence of success against cancer? JAMA 2000;283:2975-2978"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "선별검사군의 5년 생존율은 높지만 사망 나이와 인구 사망률이 같고 종양 성장 속도도 같으므로 진단만 앞당겨진 조기 진단 바이어스다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "두 군의 종양 성장 속도가 비슷하고 사망 나이가 같다",
+   "steps": 2,
+   "chain": [
+    "생존율은 늘었지만 사망 나이·인구 사망률 불변 → 진단 시점만 앞당겨짐",
+    "종양 성장 속도 비슷 → 길이 바이어스가 아니라 조기 진단 바이어스"
+   ],
+   "key": [
+    {
+     "item": "the median age at death from pancreatic cancer is 68 years",
+     "why": "두 군 사망 시점이 같다",
+     "also": []
+    },
+    {
+     "item": "Pancreatic cancer mortality in the screened population is unchanged",
+     "why": "실제 이득 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the tumors have similar growth rates on serial imaging",
+     "why": "길이 바이어스 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "who works as a hospital quality officer",
+     "why": "자료를 해석하는 사람의 맥락일 뿐 판단과 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "선별검사군의 5년 생존율이 높지만 두 군의 사망 나이와 인구 사망률이 같고 종양 성장 속도도 비슷하다. 진단 시점만 앞당겨져 생존 기간이 늘어 보이는 조기 진단 바이어스다.",
+   "switch": {
+    "choice": "D",
+    "condition": "선별검사로 발견된 종양이 증상으로 발견된 종양보다 천천히 자랐다면 길이 바이어스(length-time bias)가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0289",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증",
+  "type": "혈액·종양 — 항암치료 첫날 생긴 고칼륨혈증과 고요산혈증",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "19세 남자가 버킷림프종으로 진단되어 항암치료를 시작하였고 첫 투여 18시간 뒤 소변량이 줄었다. 치료 전 알로퓨리놀을 먹기 시작하였고 정맥 수액을 맞고 있다. 혈압 132/80 mmHg, 맥박 96회/분 이다. 혈청 칼륨 6.1 mEq/L, 요산 14.2 mg/dL, 인 8.4 mg/dL, 칼슘 7.2 mg/dL, 크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL) 이다. 포도당-6-인산탈수소효소 활성은 정상이다. 심전도에서 T 파가 뾰족하다. 정맥 칼슘을 투여하였다.",
+  "question": "이어서 투여할 약물은?",
+  "options": [
+   "프로베네시드",
+   "라스부리카제",
+   "알로퓨리놀 증량",
+   "페북소스타트",
+   "탄산수소나트륨"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 항암치료 직후 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증과 급성 콩팥 손상이 생겨 종양용해증후군이다. 알로퓨리놀은 요산이 새로 만들어지는 것만 막고 이미 오른 요산은 낮추지 못한다. G6PD 결핍이 없으므로 요산을 직접 분해하는 라스부리카제를 준다.\n- 원리: <b>왜 요산이 콩팥을 막는가</b>: 빠르게 자라는 종양(버킷림프종·급성 백혈병)이 항암치료로 한꺼번에 깨지면 세포 안 칼륨·인·핵산이 쏟아진다. 핵산의 퓨린은 잔틴산화효소를 거쳐 요산이 되고, 요산은 산성인 집합관에서 결정으로 가라앉아 세관을 막는다. 인산이 칼슘과 결합해 침착하면서 칼슘은 떨어진다.<br> <b>왜 알로퓨리놀로는 부족한가</b>: 알로퓨리놀·페북소스타트는 잔틴산화효소를 막아 <b>앞으로</b> 만들어질 요산을 줄일 뿐, 이미 혈중에 있는 요산을 없애지 못한다. 라스부리카제는 사람에게 없는 요산산화효소(재조합)로, 요산을 물에 잘 녹는 알란토인으로 바꿔 몇 시간 안에 요산을 낮춘다.<br> <b>주의</b>: 라스부리카제가 요산을 분해할 때 과산화수소가 생겨 G6PD 결핍 환자에서 용혈과 메트헤모글로빈혈증을 일으킨다 — 그래서 투여 전에 G6PD 를 확인한다. 소변 알칼리화는 인산칼슘 침착을 늘려 더는 권하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">라스부리카제(정답)</th><th>알로퓨리놀 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>이미 있는 요산을 알란토인으로 분해</td><td>잔틴산화효소 억제 — 새 요산 생성만 차단</td></tr> <tr><td>효과 속도</td><td>수 시간 안에 요산 감소</td><td>이미 오른 요산은 그대로, 잔틴 축적</td></tr> <tr><td>쓰는 때</td><td>요산이 이미 높거나 고위험 종양</td><td>저·중간 위험의 예방</td></tr> <tr><td>금기</td><td>G6PD 결핍</td><td>—</td></tr> </tbody></table> 예방은 알로퓨리놀, 이미 오른 요산과 콩팥 손상에는 라스부리카제다.\n- 오답 이유:\n  - ① 프로베네시드는 요산 배설을 늘려 콩팥 세관의 요산 부담을 더 키운다. 콩팥 기능이 정상인 만성 통풍의 요산 배설 저하형이라면 쓸 수 있다.\n  - ③ 알로퓨리놀은 잔틴산화효소를 막아 새 요산이 만들어지는 것을 줄이는 예방약이다. 요산이 아직 정상인 저·중간 위험 환자의 항암치료 전 예방이라면 맞는 선택이다.\n  - ④ 페북소스타트도 잔틴산화효소 억제제라 이미 오른 요산을 낮추지 못한다. 알로퓨리놀 과민반응이 있는 환자의 예방이라면 대안이 된다.\n  - ⑤ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 녹지만 인산칼슘이 더 침착해 콩팥 손상이 악화될 수 있다. 고인산혈증이 없는 경우에만 과거에 쓰였다.\n- 함정: 이미 알로퓨리놀을 먹고 있으니 용량을 늘리는 것 — 잔틴산화효소 억제제는 이미 오른 요산을 낮추지 못한다.\n- 학습목표: 항암치료 직후 생긴 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증을 종양용해증후군으로 판단하고 이미 오른 요산에는 라스부리카제를 씀을 안다\n- 근거·출처: Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Cairo MS, et al. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndromes. Br J Haematol 2010;149:578-586",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항암치료 직후 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증과 급성 콩팥 손상이 생겨 종양용해증후군이다. 알로퓨리놀은 요산이 새로 만들어지는 것만 막고 이미 오른 요산은 낮추지 못한다. G6PD 결핍이 없으므로 요산을 직접 분해하는 라스부리카제를 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 요산이 콩팥을 막는가</b>: 빠르게 자라는 종양(버킷림프종·급성 백혈병)이 항암치료로 한꺼번에 깨지면 세포 안 칼륨·인·핵산이 쏟아진다. 핵산의 퓨린은 잔틴산화효소를 거쳐 요산이 되고, 요산은 산성인 집합관에서 결정으로 가라앉아 세관을 막는다. 인산이 칼슘과 결합해 침착하면서 칼슘은 떨어진다.<br> <b>왜 알로퓨리놀로는 부족한가</b>: 알로퓨리놀·페북소스타트는 잔틴산화효소를 막아 <b>앞으로</b> 만들어질 요산을 줄일 뿐, 이미 혈중에 있는 요산을 없애지 못한다. 라스부리카제는 사람에게 없는 요산산화효소(재조합)로, 요산을 물에 잘 녹는 알란토인으로 바꿔 몇 시간 안에 요산을 낮춘다.<br> <b>주의</b>: 라스부리카제가 요산을 분해할 때 과산화수소가 생겨 G6PD 결핍 환자에서 용혈과 메트헤모글로빈혈증을 일으킨다 — 그래서 투여 전에 G6PD 를 확인한다. 소변 알칼리화는 인산칼슘 침착을 늘려 더는 권하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">라스부리카제(정답)</th><th>알로퓨리놀 증량(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>작용</td><td>이미 있는 요산을 알란토인으로 분해</td><td>잔틴산화효소 억제 — 새 요산 생성만 차단</td></tr> <tr><td>효과 속도</td><td>수 시간 안에 요산 감소</td><td>이미 오른 요산은 그대로, 잔틴 축적</td></tr> <tr><td>쓰는 때</td><td>요산이 이미 높거나 고위험 종양</td><td>저·중간 위험의 예방</td></tr> <tr><td>금기</td><td>G6PD 결핍</td><td>—</td></tr> </tbody></table> 예방은 알로퓨리놀, 이미 오른 요산과 콩팥 손상에는 라스부리카제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 프로베네시드는 요산 배설을 늘려 콩팥 세관의 요산 부담을 더 키운다. 콩팥 기능이 정상인 만성 통풍의 요산 배설 저하형이라면 쓸 수 있다.\n③ 알로퓨리놀은 잔틴산화효소를 막아 새 요산이 만들어지는 것을 줄이는 예방약이다. 요산이 아직 정상인 저·중간 위험 환자의 항암치료 전 예방이라면 맞는 선택이다.\n④ 페북소스타트도 잔틴산화효소 억제제라 이미 오른 요산을 낮추지 못한다. 알로퓨리놀 과민반응이 있는 환자의 예방이라면 대안이 된다.\n⑤ 탄산수소나트륨으로 소변을 알칼리화하면 요산은 녹지만 인산칼슘이 더 침착해 콩팥 손상이 악화될 수 있다. 고인산혈증이 없는 경우에만 과거에 쓰였다."
+   },
+   {
+    "k": "함정",
+    "v": "이미 알로퓨리놀을 먹고 있으니 용량을 늘리는 것 — 잔틴산화효소 억제제는 이미 오른 요산을 낮추지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항암치료 직후 생긴 고칼륨혈증·고요산혈증·고인산혈증·저칼슘혈증을 종양용해증후군으로 판단하고 이미 오른 요산에는 라스부리카제를 씀을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Howard SC, Jones DP, Pui CH. The tumor lysis syndrome. N Engl J Med 2011;364:1844-1854 · Cairo MS, et al. Recommendations for the evaluation of risk and prophylaxis of tumour lysis syndromes. Br J Haematol 2010;149:578-586"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "버킷림프종 항암치료 직후 고칼륨·고요산·고인산·저칼슘혈증과 급성 콩팥 손상은 종양용해증후군이므로, G6PD 가 정상이면 이미 오른 요산을 분해하는 라스부리카제를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "요산이 이미 14.2 mg/dL 로 올라 콩팥 손상이 생겼고 알로퓨리놀은 기존 요산을 낮추지 못한다",
+   "steps": 3,
+   "chain": [
+    "항암치료 직후 고칼륨·고요산·고인산·저칼슘 + 크레아티닌 상승 → 종양용해증후군",
+    "이미 오른 요산은 잔틴산화효소 억제로 낮출 수 없음",
+    "G6PD 정상 → 라스부리카제"
+   ],
+   "key": [
+    {
+     "item": "요산 14.2 mg/dL",
+     "why": "이미 오른 요산 — 분해가 필요",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 2.3 mg/dL(치료 전 0.9 mg/dL)",
+     "why": "요산 결정에 의한 급성 콩팥 손상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "치료 전 알로퓨리놀을 먹기 시작하였고",
+     "why": "예방약을 이미 쓰고 있는데도 요산이 올랐다 — 증량은 답이 아니다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "포도당-6-인산탈수소효소 활성은 정상이다",
+     "why": "라스부리카제 금기(G6PD 결핍) 없음",
+     "also": []
+    },
+    {
+     "item": "심전도에서 T 파가 뾰족하다",
+     "why": "고칼륨혈증 — 칼슘을 먼저 준 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈압 132/80 mmHg",
+     "why": "혈역학은 안정 — 약물 선택을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "버킷림프종 항암치료 18시간 뒤 고칼륨·고요산·고인산·저칼슘혈증과 급성 콩팥 손상이 생긴 종양용해증후군이다. 알로퓨리놀은 기존 요산을 낮추지 못하므로 G6PD 정상을 확인하고 라스부리카제를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "항암치료 전 요산이 정상인 저·중간 위험 환자의 예방이라면 알로퓨리놀이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0288",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "신경 — 흡연자의 근위부 근력 약화와 입마름",
+  "type": "신경 — 흡연자의 근위부 근력 약화와 입마름",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 63-year-old man comes to the physician because of difficulty climbing stairs and rising from a chair for 3 months. He also reports a dry mouth and erectile dysfunction. He has smoked two packs of cigarettes daily for 40 years. He has lost 6 kg during this period. Examination shows mild weakness of the hip flexors and shoulder abductors. Muscle strength in the hip flexors increases after 10 seconds of sustained maximal contraction. Deep tendon reflexes are absent at the knees and ankles but appear briefly after repeated tapping following exercise. Extraocular movements are full, and there is no ptosis.",
+  "question": "Which of the following is the most likely target of the antibodies causing this patient's weakness?",
+  "options": [
+   "Presynaptic voltage-gated calcium channels",
+   "Postsynaptic nicotinic acetylcholine receptors",
+   "Muscle-specific tyrosine kinase",
+   "Presynaptic synaptotagmin cleaved by a toxin",
+   "Voltage-gated potassium channel complex"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Proximal weakness that improves after brief sustained contraction, absent reflexes that reappear after exercise (post-exercise facilitation), and autonomic symptoms (dry mouth, erectile dysfunction) in a heavy smoker with weight loss are Lambert-Eaton myasthenic syndrome. Antibodies against presynaptic P/Q-type voltage-gated calcium channels reduce acetylcholine release; about half of cases are paraneoplastic, most often from small cell lung cancer.\n- 원리: <b>Why exercise helps</b>: acetylcholine release requires calcium entry through presynaptic P/Q-type voltage-gated calcium channels. When antibodies remove some channels, each nerve impulse releases too few quanta and the muscle fiber often fails to reach threshold. During sustained or repeated contraction, calcium accumulates in the nerve terminal, release increases, and strength and reflexes transiently improve (facilitation; on nerve conduction, a large increment after exercise or high-frequency stimulation).<br> <b>Why autonomic symptoms</b>: the same calcium channels release acetylcholine at autonomic ganglia and parasympathetic endings, so dry mouth, constipation, and erectile dysfunction are common. Ocular and bulbar involvement is milder than in myasthenia gravis.<br> <b>Why look for cancer</b>: small cell lung cancer cells express the same channels, and the immune response against the tumor cross-reacts with nerve terminals. A heavy smoker with weight loss needs CT of the chest; treating the tumor often improves the weakness. 3,4-Diaminopyridine prolongs presynaptic depolarization and increases release.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lambert-Eaton syndrome (correct)</th><th>Myasthenia gravis (closest distractor)</th></tr></thead><tbody> <tr><td>Antibody target</td><td>Presynaptic P/Q-type calcium channels</td><td>Postsynaptic acetylcholine receptors</td></tr> <tr><td>With repeated effort</td><td>Strength and reflexes improve briefly</td><td>Weakness worsens (fatigability)</td></tr> <tr><td>Reflexes, autonomic</td><td>Reduced or absent; dry mouth, impotence</td><td>Normal; no autonomic symptoms</td></tr> <tr><td>Eyes</td><td>Mild or spared</td><td>Ptosis, diplopia — often first</td></tr> <tr><td>Associated tumor</td><td>Small cell lung cancer</td><td>Thymoma</td></tr> </tbody></table> Both impair transmission at the same junction — the side of the synapse decides whether use makes it better or worse.\n- 오답 이유:\n  - (B) Postsynaptic acetylcholine receptor antibodies cause myasthenia gravis; it would be the answer with ptosis, diplopia, weakness that worsens with repeated effort, normal reflexes, and no autonomic symptoms.\n  - (C) Muscle-specific tyrosine kinase antibodies cause a form of myasthenia gravis with prominent bulbar, neck, and respiratory weakness; it would fit a younger woman with dysarthria and dysphagia and fatigable weakness.\n  - (D) Synaptotagmin cleavage by toxin describes botulinum toxin (type B cleaves synaptobrevin, type A SNAP-25); botulism would cause acute descending paralysis with dilated pupils after a contaminated food, not a 3-month course.\n  - (E) Voltage-gated potassium channel complex antibodies cause neuromyotonia and limbic encephalitis with muscle twitching, cramps, or memory loss and seizures — hyperexcitability rather than weakness that improves with use.\n- 함정: Choosing the acetylcholine receptor because the weakness is at the neuromuscular junction — strength that improves with sustained effort and absent reflexes point to the presynaptic calcium channel.\n- 학습목표: 근위부 근력 약화·반복 수축 후 호전·반사 감소·자율신경 증상을 Lambert-Eaton 근무력증후군으로 판단하고 시냅스 앞 전압개폐 칼슘통로 항체를 안다\n- 근거·출처: Ropper AH, et al. Adams and Victor's Principles of Neurology, 11th ed. Ch. Myasthenia gravis and related disorders of the neuromuscular junction · Titulaer MJ, Lang B, Verschuuren JJ. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. Lancet Neurol 2011;10:1098-1107",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Proximal weakness that improves after brief sustained contraction, absent reflexes that reappear after exercise (post-exercise facilitation), and autonomic symptoms (dry mouth, erectile dysfunction) in a heavy smoker with weight loss are Lambert-Eaton myasthenic syndrome. Antibodies against presynaptic P/Q-type voltage-gated calcium channels reduce acetylcholine release; about half of cases are paraneoplastic, most often from small cell lung cancer."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why exercise helps</b>: acetylcholine release requires calcium entry through presynaptic P/Q-type voltage-gated calcium channels. When antibodies remove some channels, each nerve impulse releases too few quanta and the muscle fiber often fails to reach threshold. During sustained or repeated contraction, calcium accumulates in the nerve terminal, release increases, and strength and reflexes transiently improve (facilitation; on nerve conduction, a large increment after exercise or high-frequency stimulation).<br> <b>Why autonomic symptoms</b>: the same calcium channels release acetylcholine at autonomic ganglia and parasympathetic endings, so dry mouth, constipation, and erectile dysfunction are common. Ocular and bulbar involvement is milder than in myasthenia gravis.<br> <b>Why look for cancer</b>: small cell lung cancer cells express the same channels, and the immune response against the tumor cross-reacts with nerve terminals. A heavy smoker with weight loss needs CT of the chest; treating the tumor often improves the weakness. 3,4-Diaminopyridine prolongs presynaptic depolarization and increases release."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Lambert-Eaton syndrome (correct)</th><th>Myasthenia gravis (closest distractor)</th></tr></thead><tbody> <tr><td>Antibody target</td><td>Presynaptic P/Q-type calcium channels</td><td>Postsynaptic acetylcholine receptors</td></tr> <tr><td>With repeated effort</td><td>Strength and reflexes improve briefly</td><td>Weakness worsens (fatigability)</td></tr> <tr><td>Reflexes, autonomic</td><td>Reduced or absent; dry mouth, impotence</td><td>Normal; no autonomic symptoms</td></tr> <tr><td>Eyes</td><td>Mild or spared</td><td>Ptosis, diplopia — often first</td></tr> <tr><td>Associated tumor</td><td>Small cell lung cancer</td><td>Thymoma</td></tr> </tbody></table> Both impair transmission at the same junction — the side of the synapse decides whether use makes it better or worse."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Postsynaptic acetylcholine receptor antibodies cause myasthenia gravis; it would be the answer with ptosis, diplopia, weakness that worsens with repeated effort, normal reflexes, and no autonomic symptoms.\n(C) Muscle-specific tyrosine kinase antibodies cause a form of myasthenia gravis with prominent bulbar, neck, and respiratory weakness; it would fit a younger woman with dysarthria and dysphagia and fatigable weakness.\n(D) Synaptotagmin cleavage by toxin describes botulinum toxin (type B cleaves synaptobrevin, type A SNAP-25); botulism would cause acute descending paralysis with dilated pupils after a contaminated food, not a 3-month course.\n(E) Voltage-gated potassium channel complex antibodies cause neuromyotonia and limbic encephalitis with muscle twitching, cramps, or memory loss and seizures — hyperexcitability rather than weakness that improves with use."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the acetylcholine receptor because the weakness is at the neuromuscular junction — strength that improves with sustained effort and absent reflexes point to the presynaptic calcium channel."
+   },
+   {
+    "k": "학습목표",
+    "v": "근위부 근력 약화·반복 수축 후 호전·반사 감소·자율신경 증상을 Lambert-Eaton 근무력증후군으로 판단하고 시냅스 앞 전압개폐 칼슘통로 항체를 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ropper AH, et al. Adams and Victor's Principles of Neurology, 11th ed. Ch. Myasthenia gravis and related disorders of the neuromuscular junction · Titulaer MJ, Lang B, Verschuuren JJ. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. Lancet Neurol 2011;10:1098-1107"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "근위부 근력 약화가 지속 수축 뒤 좋아지고 반사가 운동 뒤 잠시 나타나며 자율신경 증상이 있으므로 Lambert-Eaton 근무력증후군이고, 항체 표적은 시냅스 앞 전압개폐 칼슘통로다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "지속 수축 뒤 근력 증가·운동 뒤 반사 출현·자율신경 증상·안검하수 없음",
+   "steps": 3,
+   "chain": [
+    "근위부 근력 약화 + 반사 소실 + 입마름·발기부전 → 신경근 접합부 시냅스 앞 장애 의심",
+    "지속 수축 뒤 근력·반사 호전(촉진) → 중증근무력증이 아니라 Lambert-Eaton",
+    "시냅스 앞 P/Q 형 전압개폐 칼슘통로 항체"
+   ],
+   "key": [
+    {
+     "item": "Muscle strength in the hip flexors increases after 10 seconds of sustained maximal contraction",
+     "why": "촉진 현상 — 시냅스 앞 장애",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are absent at the knees and ankles but appear briefly after repeated tapping following exercise",
+     "why": "운동 뒤 반사 출현",
+     "also": []
+    },
+    {
+     "item": "a dry mouth and erectile dysfunction",
+     "why": "자율신경 증상 — 칼슘통로가 자율신경에도 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no ptosis",
+     "why": "중증근무력증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has smoked two packs of cigarettes daily for 40 years",
+     "why": "소세포폐암 동반 — 흉부 CT 로 종양을 찾아야 한다",
+     "also": []
+    },
+    {
+     "item": "He has lost 6 kg during this period",
+     "why": "악성 종양 시사",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "흡연자의 근위부 근력 약화가 지속 수축 뒤 좋아지고 반사가 운동 뒤 잠시 나타나며 입마름·발기부전이 있다. Lambert-Eaton 근무력증후군으로, 시냅스 앞 P/Q 형 전압개폐 칼슘통로에 대한 항체가 원인이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "안검하수와 복시가 먼저 생기고 반복 운동할수록 약해지며 반사와 자율신경이 정상이었다면 시냅스 뒤 아세틸콜린 수용체 항체(중증근무력증)가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0287",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "소화기·간담췌 — 회복된 담석 췌장염의 다음 처치",
+  "type": "소화기·간담췌 — 회복된 담석 췌장염의 다음 처치",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "45세 여자가 기름진 식사 뒤 시작된 명치 통증과 구토로 입원하였다. 입원 당시 혈청 리파아제는 정상 상한의 9배, ALT 168 U/L, 총빌리루빈 1.6 mg/dL 이었고, 복부 초음파에서 담낭에 여러 개의 담석이 있고 총담관 지름은 5 mm 였다. 수액과 진통제로 치료하여 3일째 통증이 사라지고 식사를 잘 한다. 체온 36.7 °C, 혈압 118/74 mmHg 이다. 오늘 ALT 52 U/L, 총빌리루빈 0.8 mg/dL, 백혈구 7,800/mm³ 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경피적 담낭 배액술",
+   "이번 입원 중 복강경 담낭절제술",
+   "내시경역행담췌관조영술과 괄약근 절개",
+   "퇴원 후 6주 뒤 담낭절제술",
+   "우르소데옥시콜산 복용 후 퇴원"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 담낭 담석이 있고 리파아제가 정상 상한의 3배를 넘으며 기름진 식사 뒤 명치 통증이 생겨 담석 췌장염이다. 3일째 통증이 사라지고 식사를 하며 간기능·빌리루빈이 정상으로 돌아와 담석이 총담관을 이미 통과했다. 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다.\n- 원리: <b>왜 같은 입원 중인가</b>: 담석 췌장염은 작은 담석이 총담관을 지나 바터팽대부를 잠시 막아 생긴다. 대부분 담석은 저절로 십이지장으로 빠지지만 담낭에는 아직 담석이 남아 있다. 퇴원 뒤 수술을 미루면 수 주 안에 췌장염·담낭염·담관염이 재발하는 비율이 높아(6주 안에 약 20~30 %), 경증이면 회복한 같은 입원 중에 담낭을 떼는 것이 재발과 재입원을 가장 많이 줄인다.<br> <b>ERCP 는 언제인가</b>: 총담관에 담석이 남아 있거나 담관염이 있을 때다 — 발열·황달·빌리루빈 계속 상승·총담관 확장이 지속되면 ERCP 로 담석을 꺼낸다. 이 환자는 빌리루빈과 ALT 가 정상으로 내려갔고 총담관이 넓지 않아 담석이 이미 빠져나갔다.<br> <b>수술을 미루는 경우</b>: 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중증 췌장염은 염증이 가라앉을 때까지(대개 6주 이상) 담낭절제술을 미룬다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">같은 입원 중 담낭절제술(정답)</th><th>ERCP(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td>담낭에 남은 담석 — 재발 방지</td><td>총담관에 남은 담석 제거</td></tr> <tr><td>적응</td><td>경증 담석 췌장염에서 회복</td><td>담관염, 빌리루빈 상승 지속, 총담관 확장</td></tr> <tr><td>이 환자</td><td>통증 소실·간기능 정상화·총담관 5 mm</td><td>해당 소견 없음</td></tr> </tbody></table> 담석이 어디에 남아 있는가로 고른다 — 담낭이면 수술, 총담관이면 ERCP.\n- 오답 이유:\n  - ① 경피적 담낭 배액술은 수술 위험이 매우 큰 중증 급성 담낭염 환자의 임시 처치다. 열·담낭벽 비후·국소 압통이 있는 고령 중환자였다면 고려한다.\n  - ③ ERCP 는 발열·황달을 동반한 담관염이나 빌리루빈이 계속 오르고 총담관이 넓어진 총담관 담석이 남아 있을 때 한다. 간기능이 정상으로 돌아온 이 환자에게는 필요 없다.\n  - ④ 퇴원 후 6주 뒤 수술은 괴사나 액체 저류를 동반한 중증 췌장염에서 염증이 가라앉기를 기다릴 때 고른다. 경증이면 기다리는 동안 재발 위험이 높다.\n  - ⑤ 우르소데옥시콜산은 수술할 수 없는 환자의 작은 콜레스테롤 담석을 녹이려 할 때 쓰지만 효과가 느리고 재발이 흔하다. 수술 위험이 매우 큰 환자라면 고려한다.\n- 함정: 담석 췌장염이라는 말에 ERCP 를 고르는 것 — 담관염이나 남아 있는 총담관 담석이 없으면 ERCP 가 아니라 같은 입원 중 담낭절제술이다.\n- 학습목표: 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 담낭절제술을 함을 알고 ERCP 의 적응증과 구분한다\n- 근거·출처: Tenner S, et al. American College of Gastroenterology Guideline: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437 · da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261-1268",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "담낭 담석이 있고 리파아제가 정상 상한의 3배를 넘으며 기름진 식사 뒤 명치 통증이 생겨 담석 췌장염이다. 3일째 통증이 사라지고 식사를 하며 간기능·빌리루빈이 정상으로 돌아와 담석이 총담관을 이미 통과했다. 경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 같은 입원 중인가</b>: 담석 췌장염은 작은 담석이 총담관을 지나 바터팽대부를 잠시 막아 생긴다. 대부분 담석은 저절로 십이지장으로 빠지지만 담낭에는 아직 담석이 남아 있다. 퇴원 뒤 수술을 미루면 수 주 안에 췌장염·담낭염·담관염이 재발하는 비율이 높아(6주 안에 약 20~30 %), 경증이면 회복한 같은 입원 중에 담낭을 떼는 것이 재발과 재입원을 가장 많이 줄인다.<br> <b>ERCP 는 언제인가</b>: 총담관에 담석이 남아 있거나 담관염이 있을 때다 — 발열·황달·빌리루빈 계속 상승·총담관 확장이 지속되면 ERCP 로 담석을 꺼낸다. 이 환자는 빌리루빈과 ALT 가 정상으로 내려갔고 총담관이 넓지 않아 담석이 이미 빠져나갔다.<br> <b>수술을 미루는 경우</b>: 괴사성 췌장염이나 췌장 주위 액체 저류가 있는 중증 췌장염은 염증이 가라앉을 때까지(대개 6주 이상) 담낭절제술을 미룬다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">같은 입원 중 담낭절제술(정답)</th><th>ERCP(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>목적</td><td>담낭에 남은 담석 — 재발 방지</td><td>총담관에 남은 담석 제거</td></tr> <tr><td>적응</td><td>경증 담석 췌장염에서 회복</td><td>담관염, 빌리루빈 상승 지속, 총담관 확장</td></tr> <tr><td>이 환자</td><td>통증 소실·간기능 정상화·총담관 5 mm</td><td>해당 소견 없음</td></tr> </tbody></table> 담석이 어디에 남아 있는가로 고른다 — 담낭이면 수술, 총담관이면 ERCP."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경피적 담낭 배액술은 수술 위험이 매우 큰 중증 급성 담낭염 환자의 임시 처치다. 열·담낭벽 비후·국소 압통이 있는 고령 중환자였다면 고려한다.\n③ ERCP 는 발열·황달을 동반한 담관염이나 빌리루빈이 계속 오르고 총담관이 넓어진 총담관 담석이 남아 있을 때 한다. 간기능이 정상으로 돌아온 이 환자에게는 필요 없다.\n④ 퇴원 후 6주 뒤 수술은 괴사나 액체 저류를 동반한 중증 췌장염에서 염증이 가라앉기를 기다릴 때 고른다. 경증이면 기다리는 동안 재발 위험이 높다.\n⑤ 우르소데옥시콜산은 수술할 수 없는 환자의 작은 콜레스테롤 담석을 녹이려 할 때 쓰지만 효과가 느리고 재발이 흔하다. 수술 위험이 매우 큰 환자라면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "담석 췌장염이라는 말에 ERCP 를 고르는 것 — 담관염이나 남아 있는 총담관 담석이 없으면 ERCP 가 아니라 같은 입원 중 담낭절제술이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경증 담석 췌장염에서 회복하면 재발을 막기 위해 같은 입원 중 담낭절제술을 함을 알고 ERCP 의 적응증과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tenner S, et al. American College of Gastroenterology Guideline: Management of Acute Pancreatitis. Am J Gastroenterol 2024;119:419-437 · da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO): a multicentre randomised controlled trial. Lancet 2015;386:1261-1268"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "경증 담석 췌장염에서 회복했고 간기능·빌리루빈이 정상화되어 총담관 담석이 없으므로 재발을 막기 위해 같은 입원 중 복강경 담낭절제술을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "빌리루빈·ALT 정상화, 총담관 5 mm, 발열 없음 — 담관염·남은 총담관 담석이 없다",
+   "steps": 3,
+   "chain": [
+    "담낭 담석 + 리파아제 3배 이상 + 명치 통증 → 담석 췌장염",
+    "3일째 회복·간기능 정상화·총담관 정상 → 경증, 총담관 담석 이미 통과",
+    "재발 방지 → 같은 입원 중 담낭절제술"
+   ],
+   "key": [
+    {
+     "item": "혈청 리파아제는 정상 상한의 9배",
+     "why": "급성 췌장염 진단",
+     "also": []
+    },
+    {
+     "item": "담낭에 여러 개의 담석이 있고",
+     "why": "담석이 원인 — 담낭에 아직 남아 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "총빌리루빈 0.8 mg/dL",
+     "why": "남은 총담관 담석 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "총담관 지름은 5 mm",
+     "why": "총담관 폐쇄 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "체온 36.7 °C",
+     "why": "담관염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "3일째 통증이 사라지고 식사를 잘 한다",
+     "why": "경증 — 수술을 미룰 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "담낭 담석과 리파아제 상승으로 담석 췌장염이 진단되었고 3일 만에 회복해 간기능이 정상화되었다. 총담관 담석이나 담관염이 없으므로 ERCP 가 아니라 같은 입원 중 복강경 담낭절제술로 재발을 막는다.",
+   "switch": {
+    "choice": "C",
+    "condition": "열과 황달이 있고 빌리루빈이 계속 오르며 총담관이 넓어져 있다면 ERCP 로 총담관 담석을 먼저 꺼낸다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0286",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "이비인후과 — 성인의 한쪽 삼출성 중이염",
+  "type": "이비인후과 — 성인의 한쪽 삼출성 중이염",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-09",
+  "vignette": "A 48-year-old man comes to the physician because of a sensation of fullness and decreased hearing in his right ear for 2 months. He has had no ear pain, fever, or ear discharge. He has had occasional blood-streaked nasal mucus in the mornings. He emigrated from southern China 20 years ago and has smoked one pack of cigarettes daily for 25 years. Otoscopy shows a dull, retracted right tympanic membrane with an air-fluid level; the left tympanic membrane is normal. The Rinne test is negative on the right, and the Weber test lateralizes to the right. A firm, nontender 2-cm lymph node is palpated high in the right posterior cervical triangle.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Endoscopic examination of the nasopharynx",
+   "Tympanostomy tube placement in the right ear",
+   "Oral amoxicillin for 10 days",
+   "Intranasal corticosteroid spray for 4 weeks",
+   "Audiometry repeated in 3 months"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A unilateral middle ear effusion in an adult, especially with blood-streaked nasal mucus and a firm upper posterior cervical lymph node, should be assumed to be caused by a nasopharyngeal mass obstructing the eustachian tube until proven otherwise. Southern Chinese origin and smoking increase the risk of nasopharyngeal carcinoma. The next step is endoscopic examination of the nasopharynx (with biopsy of any lesion) before treating the ear.\n- 원리: <b>Why the ear is a clue to the nasopharynx</b>: the eustachian tube opens into the lateral wall of the nasopharynx next to the fossa of Rosenmüller, the most common origin of nasopharyngeal carcinoma. A tumor there blocks the tube, middle ear pressure falls, and fluid accumulates — a unilateral serous otitis media with conductive hearing loss (negative Rinne, Weber to the affected side).<br> <b>Why adults are different from children</b>: in children the eustachian tube is short and horizontal and effusions are common after viral infections, usually bilateral. In adults a new unilateral effusion is unusual, so a structural cause must be excluded. The nasopharynx drains first to the retropharyngeal and upper deep cervical (level II and V) nodes, so a firm high posterior neck node is often the presenting sign.<br> <b>Risk factors</b>: Epstein-Barr virus, southern Chinese and Southeast Asian ancestry, salted fish in childhood, and smoking. Diagnosis requires endoscopy with biopsy; MRI stages the tumor. Inserting a tube alone would relieve the ear but delay the diagnosis of cancer.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Nasopharyngoscopy first (correct)</th><th>Tympanostomy tube (closest distractor)</th></tr></thead><tbody> <tr><td>Patient</td><td>Adult, new unilateral effusion</td><td>Child or adult with known benign cause</td></tr> <tr><td>Red flags</td><td>Blood-streaked mucus, neck node, risk ancestry, smoking</td><td>None — persistent effusion after nasopharynx is cleared</td></tr> <tr><td>Goal</td><td>Find and biopsy the cause of tube obstruction</td><td>Relieve persistent conductive loss</td></tr> </tbody></table> A unilateral effusion in an adult is a nasopharyngeal question before it is an ear question.\n- 오답 이유:\n  - (B) Tympanostomy tube placement relieves a persistent effusion with conductive hearing loss; it is appropriate after the nasopharynx has been examined and found normal, or in children with chronic bilateral effusions.\n  - (C) Oral amoxicillin treats acute otitis media with ear pain, fever, and a bulging tympanic membrane; an effusion without signs of infection does not need antibiotics.\n  - (D) Intranasal corticosteroids may help eustachian tube dysfunction from allergic rhinitis; they would be reasonable in a patient with seasonal nasal symptoms and no red flags after a normal nasopharyngeal examination.\n  - (E) Repeating audiometry after watchful waiting suits a child with an effusion after a cold; in an adult with a neck node and blood-streaked mucus, waiting delays a cancer diagnosis.\n- 함정: Treating the ear (tube or antibiotics) because the otoscopic finding is a middle ear effusion — in an adult with a unilateral effusion and a neck node, the cause is sought in the nasopharynx first.\n- 학습목표: 성인의 한쪽 삼출성 중이염은 비인두 종괴(특히 비인두암)를 배제하기 위해 비인두 내시경을 먼저 함을 안다\n- 근거·출처: Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Nasopharyngeal carcinoma · Chen YP, et al. Nasopharyngeal carcinoma. Lancet 2019;394:64-80 · Rosenfeld RM, et al. Clinical practice guideline: otitis media with effusion (update). Otolaryngol Head Neck Surg 2016;154(1 Suppl):S1-S41",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A unilateral middle ear effusion in an adult, especially with blood-streaked nasal mucus and a firm upper posterior cervical lymph node, should be assumed to be caused by a nasopharyngeal mass obstructing the eustachian tube until proven otherwise. Southern Chinese origin and smoking increase the risk of nasopharyngeal carcinoma. The next step is endoscopic examination of the nasopharynx (with biopsy of any lesion) before treating the ear."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the ear is a clue to the nasopharynx</b>: the eustachian tube opens into the lateral wall of the nasopharynx next to the fossa of Rosenmüller, the most common origin of nasopharyngeal carcinoma. A tumor there blocks the tube, middle ear pressure falls, and fluid accumulates — a unilateral serous otitis media with conductive hearing loss (negative Rinne, Weber to the affected side).<br> <b>Why adults are different from children</b>: in children the eustachian tube is short and horizontal and effusions are common after viral infections, usually bilateral. In adults a new unilateral effusion is unusual, so a structural cause must be excluded. The nasopharynx drains first to the retropharyngeal and upper deep cervical (level II and V) nodes, so a firm high posterior neck node is often the presenting sign.<br> <b>Risk factors</b>: Epstein-Barr virus, southern Chinese and Southeast Asian ancestry, salted fish in childhood, and smoking. Diagnosis requires endoscopy with biopsy; MRI stages the tumor. Inserting a tube alone would relieve the ear but delay the diagnosis of cancer."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Nasopharyngoscopy first (correct)</th><th>Tympanostomy tube (closest distractor)</th></tr></thead><tbody> <tr><td>Patient</td><td>Adult, new unilateral effusion</td><td>Child or adult with known benign cause</td></tr> <tr><td>Red flags</td><td>Blood-streaked mucus, neck node, risk ancestry, smoking</td><td>None — persistent effusion after nasopharynx is cleared</td></tr> <tr><td>Goal</td><td>Find and biopsy the cause of tube obstruction</td><td>Relieve persistent conductive loss</td></tr> </tbody></table> A unilateral effusion in an adult is a nasopharyngeal question before it is an ear question."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Tympanostomy tube placement relieves a persistent effusion with conductive hearing loss; it is appropriate after the nasopharynx has been examined and found normal, or in children with chronic bilateral effusions.\n(C) Oral amoxicillin treats acute otitis media with ear pain, fever, and a bulging tympanic membrane; an effusion without signs of infection does not need antibiotics.\n(D) Intranasal corticosteroids may help eustachian tube dysfunction from allergic rhinitis; they would be reasonable in a patient with seasonal nasal symptoms and no red flags after a normal nasopharyngeal examination.\n(E) Repeating audiometry after watchful waiting suits a child with an effusion after a cold; in an adult with a neck node and blood-streaked mucus, waiting delays a cancer diagnosis."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the ear (tube or antibiotics) because the otoscopic finding is a middle ear effusion — in an adult with a unilateral effusion and a neck node, the cause is sought in the nasopharynx first."
+   },
+   {
+    "k": "학습목표",
+    "v": "성인의 한쪽 삼출성 중이염은 비인두 종괴(특히 비인두암)를 배제하기 위해 비인두 내시경을 먼저 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Flint PW, et al. Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Nasopharyngeal carcinoma · Chen YP, et al. Nasopharyngeal carcinoma. Lancet 2019;394:64-80 · Rosenfeld RM, et al. Clinical practice guideline: otitis media with effusion (update). Otolaryngol Head Neck Surg 2016;154(1 Suppl):S1-S41"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "성인의 새로 생긴 한쪽 삼출성 중이염에 피 섞인 콧물과 위쪽 뒤 목 림프절 비대가 있으므로 비인두암을 의심해 비인두 내시경을 먼저 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "성인·한쪽·피 섞인 콧물·단단한 목 림프절",
+   "steps": 3,
+   "chain": [
+    "성인의 한쪽 삼출성 중이염 + 전음성 난청 → 이관 폐쇄",
+    "피 섞인 콧물·위쪽 뒤 목 림프절·남중국 출신·흡연 → 비인두 종괴(비인두암) 의심",
+    "귀 치료보다 비인두 내시경·조직검사가 먼저"
+   ],
+   "key": [
+    {
+     "item": "an air-fluid level",
+     "why": "중이 삼출 — 이관 폐쇄",
+     "also": []
+    },
+    {
+     "item": "the left tympanic membrane is normal",
+     "why": "한쪽만 — 국소 원인을 시사",
+     "also": []
+    },
+    {
+     "item": "occasional blood-streaked nasal mucus",
+     "why": "비인두 종괴의 출혈",
+     "also": []
+    },
+    {
+     "item": "A firm, nontender 2-cm lymph node is palpated high in the right posterior cervical triangle",
+     "why": "비인두암의 첫 림프절 전이 부위",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has had no ear pain, fever, or ear discharge",
+     "why": "급성 중이염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He emigrated from southern China 20 years ago",
+     "why": "위험 인자지만 단독으로 진단을 정하지 않는다",
+     "also": []
+    },
+    {
+     "item": "The Rinne test is negative on the right",
+     "why": "전음성 난청 — 삼출을 확인할 뿐 원인을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "48세 성인의 새로 생긴 한쪽 삼출성 중이염에 피 섞인 콧물과 단단한 위쪽 뒤 목 림프절이 있다. 비인두 종괴가 이관을 막은 것으로 보고 귀를 치료하기 전에 비인두 내시경(조직검사)을 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "비인두 내시경이 정상이고 삼출이 3개월 넘게 지속되며 청력 저하가 있다면 환기관 삽입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0285",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전",
+  "type": "병리·조직 — 벌에 쏘인 직후 생긴 부종의 기전",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "24세 남자가 등산 중 손등을 벌에 쏘이고 5분 뒤 쏘인 부위가 붉어지고 부풀어 올라 왔다. 쏘인 부위 둘레 3 cm 에 가려운 팽진과 홍반이 있고, 숨쉬기 불편함·두드러기·입술 부종은 없다. 혈압 124/78 mmHg, 맥박 84회/분 이다. 15분 뒤 부종이 더 커지지 않았고 1시간 뒤 대부분 가라앉았다.",
+  "question": "이 부종이 생긴 주된 기전은?",
+  "options": [
+   "모세혈관 내피세포의 직접 괴사",
+   "림프관 폐쇄에 의한 간질액 정체",
+   "모세혈관 정수압의 상승",
+   "혈장 알부민 감소에 의한 교질삼투압 저하",
+   "후모세혈관 세정맥 내피세포의 수축"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 벌에 쏘인 직후 국소 비만세포가 히스타민을 분비하면 후모세혈관 세정맥의 내피세포가 수축해 세포 사이에 틈이 생기고, 단백질이 풍부한 혈장이 새어 나와 부종(팽진)을 만든다. 이 반응은 수 분 안에 시작해 15~30분 정도 지속되는 즉시·일과성 반응으로, 이 환자처럼 1시간 안에 가라앉는다.\n- 원리: <b>왜 세정맥인가</b>: 히스타민 H1 수용체와 내피세포 사이의 연접이 느슨한 곳이 후모세혈관 세정맥이다. 히스타민이 결합하면 내피세포 안 칼슘이 올라 수축 단백질이 당겨지고, 세포가 오그라들며 세포 사이에 틈이 생긴다. 모세혈관과 세동맥은 이 반응이 약하다.<br> <b>왜 일과성인가</b>: 내피세포 수축은 세포를 죽이지 않는 가역적 변화라, 히스타민이 분해되면 틈이 닫힌다. 그래서 수 분 안에 시작해 15~30분이면 끝난다. 이것이 급성 염증에서 가장 흔한 투과성 증가 기전이다.<br> <b>다른 기전과의 차이</b>: 화상·독소처럼 내피세포가 직접 괴사하면 세동맥·모세혈관·세정맥 모두에서 즉시 시작해 몇 시간에서 며칠 동안 지속된다(즉시·지속성). 정수압 상승(심부전)과 교질삼투압 저하(신증후군·간경변)는 단백질이 적은 여출액을 전신적으로 만든다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내피세포 수축(정답)</th><th>내피세포 직접 손상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>히스타민·브라디키닌·류코트리엔</td><td>화상·세균 독소·물리적 손상</td></tr> <tr><td>부위</td><td>후모세혈관 세정맥</td><td>세동맥·모세혈관·세정맥 모두</td></tr> <tr><td>시간 경과</td><td>즉시 시작, 15~30분 일과성</td><td>즉시 시작, 수 시간~수일 지속</td></tr> </tbody></table> 얼마나 빨리 시작해 얼마나 오래 가는가가 기전을 가른다 — 1시간 안에 가라앉는 팽진은 수축이다.\n- 오답 이유:\n  - ① 내피세포 직접 괴사는 화상·세균 독소에서 생기는 즉시·지속성 투과성 증가다. 부종이 수 시간에서 며칠 동안 지속되고 물집이나 괴사가 동반되었다면 정답이다.\n  - ② 림프관 폐쇄는 유방암 수술 뒤 림프절 절제나 사상충 감염에서 생기는 만성 림프부종이다. 수 주에 걸쳐 단단해지는 부종이었다면 정답이다.\n  - ③ 모세혈관 정수압 상승은 심부전·정맥 혈전처럼 정맥압이 오를 때 생기는 여출액 부종이다. 양쪽 다리가 오목하게 붓는 경우라면 정답이다.\n  - ④ 교질삼투압 저하는 신증후군·간경변의 저알부민혈증에서 생기는 전신 부종이다. 얼굴과 다리가 함께 붓고 알부민이 낮았다면 정답이다.\n- 함정: 벌독을 「손상」으로 보고 내피세포 직접 괴사를 고르는 것 — 수 분 안에 시작해 1시간 안에 가라앉는 팽진은 히스타민에 의한 내피세포 수축이다.\n- 학습목표: 급성 염증의 즉시·일과성 혈관 투과성 증가가 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문임을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 3 Inflammation and repair (increased vascular permeability)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "벌에 쏘인 직후 국소 비만세포가 히스타민을 분비하면 후모세혈관 세정맥의 내피세포가 수축해 세포 사이에 틈이 생기고, 단백질이 풍부한 혈장이 새어 나와 부종(팽진)을 만든다. 이 반응은 수 분 안에 시작해 15~30분 정도 지속되는 즉시·일과성 반응으로, 이 환자처럼 1시간 안에 가라앉는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 세정맥인가</b>: 히스타민 H1 수용체와 내피세포 사이의 연접이 느슨한 곳이 후모세혈관 세정맥이다. 히스타민이 결합하면 내피세포 안 칼슘이 올라 수축 단백질이 당겨지고, 세포가 오그라들며 세포 사이에 틈이 생긴다. 모세혈관과 세동맥은 이 반응이 약하다.<br> <b>왜 일과성인가</b>: 내피세포 수축은 세포를 죽이지 않는 가역적 변화라, 히스타민이 분해되면 틈이 닫힌다. 그래서 수 분 안에 시작해 15~30분이면 끝난다. 이것이 급성 염증에서 가장 흔한 투과성 증가 기전이다.<br> <b>다른 기전과의 차이</b>: 화상·독소처럼 내피세포가 직접 괴사하면 세동맥·모세혈관·세정맥 모두에서 즉시 시작해 몇 시간에서 며칠 동안 지속된다(즉시·지속성). 정수압 상승(심부전)과 교질삼투압 저하(신증후군·간경변)는 단백질이 적은 여출액을 전신적으로 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">내피세포 수축(정답)</th><th>내피세포 직접 손상(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>원인</td><td>히스타민·브라디키닌·류코트리엔</td><td>화상·세균 독소·물리적 손상</td></tr> <tr><td>부위</td><td>후모세혈관 세정맥</td><td>세동맥·모세혈관·세정맥 모두</td></tr> <tr><td>시간 경과</td><td>즉시 시작, 15~30분 일과성</td><td>즉시 시작, 수 시간~수일 지속</td></tr> </tbody></table> 얼마나 빨리 시작해 얼마나 오래 가는가가 기전을 가른다 — 1시간 안에 가라앉는 팽진은 수축이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 내피세포 직접 괴사는 화상·세균 독소에서 생기는 즉시·지속성 투과성 증가다. 부종이 수 시간에서 며칠 동안 지속되고 물집이나 괴사가 동반되었다면 정답이다.\n② 림프관 폐쇄는 유방암 수술 뒤 림프절 절제나 사상충 감염에서 생기는 만성 림프부종이다. 수 주에 걸쳐 단단해지는 부종이었다면 정답이다.\n③ 모세혈관 정수압 상승은 심부전·정맥 혈전처럼 정맥압이 오를 때 생기는 여출액 부종이다. 양쪽 다리가 오목하게 붓는 경우라면 정답이다.\n④ 교질삼투압 저하는 신증후군·간경변의 저알부민혈증에서 생기는 전신 부종이다. 얼굴과 다리가 함께 붓고 알부민이 낮았다면 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "벌독을 「손상」으로 보고 내피세포 직접 괴사를 고르는 것 — 수 분 안에 시작해 1시간 안에 가라앉는 팽진은 히스타민에 의한 내피세포 수축이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "급성 염증의 즉시·일과성 혈관 투과성 증가가 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 3 Inflammation and repair (increased vascular permeability)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "벌에 쏘인 5분 뒤 시작해 1시간 안에 가라앉은 국소 팽진은 히스타민에 의한 후모세혈관 세정맥 내피세포 수축 때문이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "수 분 안에 시작해 1시간 안에 가라앉은 일과성 경과",
+   "steps": 2,
+   "chain": [
+    "벌에 쏘인 직후 국소 팽진 → 비만세포 히스타민 분비",
+    "즉시 시작·1시간 안에 소실 → 세정맥 내피세포 수축(일과성)"
+   ],
+   "key": [
+    {
+     "item": "쏘이고 5분 뒤",
+     "why": "즉시 반응",
+     "also": []
+    },
+    {
+     "item": "1시간 뒤 대부분 가라앉았다",
+     "why": "일과성 — 내피세포 직접 괴사(지속성) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "가려운 팽진과 홍반",
+     "why": "히스타민 매개 국소 반응",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "숨쉬기 불편함·두드러기·입술 부종은 없다",
+     "why": "아나필락시스가 아님을 보여 주지만 국소 부종의 기전을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "혈압 124/78 mmHg",
+     "why": "전신 반응 없음 — 기전 판단에는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "벌에 쏘인 5분 뒤 생겨 1시간 안에 가라앉은 가려운 팽진은 즉시·일과성 투과성 증가다. 비만세포의 히스타민이 후모세혈관 세정맥 내피세포를 수축시켜 틈을 만든 것이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "뜨거운 물에 데어 부종과 물집이 며칠 동안 지속되었다면 내피세포 직접 손상에 의한 즉시·지속성 투과성 증가가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0284",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 호흡기·외과계·소아·피부·병리·이비인후과·소화기·신경·혈액·예방의학)",
+  "subtopic": "피부 — 고령 환자의 팽팽한 물집과 가려움",
+  "type": "피부 — 고령 환자의 팽팽한 물집과 가려움",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-09",
+  "vignette": "An 81-year-old woman comes to the physician because of intensely itchy skin for 2 months and blisters on her thighs and abdomen for 2 weeks. Before the blisters appeared, she had red, hive-like itchy plaques on the same areas. She takes linagliptin for type 2 diabetes mellitus. Examination shows multiple tense, fluid-filled bullae 1 to 3 cm in diameter on erythematous and normal-appearing skin of the inner thighs, flexor forearms, and lower abdomen. Gentle lateral pressure on normal-appearing skin does not cause the epidermis to separate. The oral mucosa is normal. A skin biopsy shows a subepidermal blister with eosinophils.",
+  "question": "Which of the following is the most likely finding on direct immunofluorescence of perilesional skin?",
+  "options": [
+   "Granular IgG and C3 along the basement membrane zone",
+   "Perivascular IgA in the superficial dermal vessels",
+   "Linear IgG and C3 along the basement membrane zone",
+   "Intercellular IgG in a net-like pattern within the epidermis",
+   "Granular IgA in the tips of the dermal papillae"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: An elderly patient with a pruritic urticarial phase followed by tense bullae on the flexural trunk and limbs, a negative Nikolsky sign, normal oral mucosa, and a subepidermal blister with eosinophils has bullous pemphigoid. Autoantibodies (IgG) against hemidesmosomal proteins BP180 and BP230 bind along the basement membrane and fix complement, so direct immunofluorescence shows linear IgG and C3 along the basement membrane zone. DPP-4 inhibitors such as linagliptin are a recognized trigger.\n- 원리: <b>Why the blister is tense</b>: in bullous pemphigoid the target is the hemidesmosome (BP180, BP230), which anchors basal keratinocytes to the basement membrane. Antibody binding activates complement and recruits eosinophils and neutrophils, whose proteases cut the dermal-epidermal junction. The split is below the whole epidermis, so the blister roof is full thickness and the blister stays tense and intact; the Nikolsky sign is negative.<br> <b>Why the immunofluorescence pattern is linear</b>: the antigen lies in one continuous plane — the basement membrane zone — so antibodies stack along a single line. In pemphigus vulgaris the antigen (desmoglein 3, desmoglein 1) is on the surface of every keratinocyte, giving a net-like intercellular pattern and a flaccid, suprabasal blister with a positive Nikolsky sign and mucosal erosions.<br> <b>Who gets it</b>: mostly people older than 70 years; neurologic disease and DPP-4 inhibitors increase risk. Itching and urticarial plaques may precede blisters for weeks. Potent topical corticosteroids are first-line treatment.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bullous pemphigoid (correct)</th><th>Pemphigus vulgaris (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Hemidesmosome (BP180/BP230)</td><td>Desmosome (desmoglein 3 ± 1)</td></tr> <tr><td>Blister</td><td>Tense, subepidermal; Nikolsky negative</td><td>Flaccid, suprabasal; Nikolsky positive</td></tr> <tr><td>Mucosa</td><td>Usually spared</td><td>Oral erosions, often first</td></tr> <tr><td>Direct immunofluorescence</td><td>Linear IgG and C3 along the basement membrane</td><td>Intercellular IgG, net-like</td></tr> </tbody></table> Tense blister, deep split, linear line; flaccid blister, shallow split, net pattern.\n- 오답 이유:\n  - (A) Granular IgG and C3 along the basement membrane is seen in the skin of systemic lupus erythematosus (lupus band); it would fit photosensitive rash with systemic features rather than tense bullae.\n  - (B) Perivascular IgA in superficial dermal vessels is IgA vasculitis; it would be the answer with palpable purpura on the legs, arthralgia, and abdominal pain, usually in a child.\n  - (D) Intercellular net-like IgG is the pattern of pemphigus vulgaris; it would be the answer with flaccid blisters, a positive Nikolsky sign, oral erosions, and a suprabasal split with acantholysis.\n  - (E) Granular IgA in the dermal papillae is dermatitis herpetiformis; it would be the answer with grouped, intensely itchy vesicles on the elbows, knees, and buttocks in a patient with celiac disease.\n- 함정: Choosing the pemphigus pattern because blisters plus autoantibodies suggest 'pemphigus' — tense blisters, intact mucosa, and a negative Nikolsky sign mean a subepidermal split and a linear pattern.\n- 학습목표: 고령자의 팽팽한 물집과 음성 Nikolsky 징후를 수포성 유사천포창으로 판단하고 직접 면역형광 소견(기저막의 선형 IgG·C3)을 안다\n- 근거·출처: Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. Bullous pemphigoid · Borradori L, et al. Updated S2K guidelines for the management of bullous pemphigoid initiated by the European Academy of Dermatology and Venereology. J Eur Acad Dermatol Venereol 2022;36:1689-1704",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An elderly patient with a pruritic urticarial phase followed by tense bullae on the flexural trunk and limbs, a negative Nikolsky sign, normal oral mucosa, and a subepidermal blister with eosinophils has bullous pemphigoid. Autoantibodies (IgG) against hemidesmosomal proteins BP180 and BP230 bind along the basement membrane and fix complement, so direct immunofluorescence shows linear IgG and C3 along the basement membrane zone. DPP-4 inhibitors such as linagliptin are a recognized trigger."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the blister is tense</b>: in bullous pemphigoid the target is the hemidesmosome (BP180, BP230), which anchors basal keratinocytes to the basement membrane. Antibody binding activates complement and recruits eosinophils and neutrophils, whose proteases cut the dermal-epidermal junction. The split is below the whole epidermis, so the blister roof is full thickness and the blister stays tense and intact; the Nikolsky sign is negative.<br> <b>Why the immunofluorescence pattern is linear</b>: the antigen lies in one continuous plane — the basement membrane zone — so antibodies stack along a single line. In pemphigus vulgaris the antigen (desmoglein 3, desmoglein 1) is on the surface of every keratinocyte, giving a net-like intercellular pattern and a flaccid, suprabasal blister with a positive Nikolsky sign and mucosal erosions.<br> <b>Who gets it</b>: mostly people older than 70 years; neurologic disease and DPP-4 inhibitors increase risk. Itching and urticarial plaques may precede blisters for weeks. Potent topical corticosteroids are first-line treatment."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Bullous pemphigoid (correct)</th><th>Pemphigus vulgaris (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Hemidesmosome (BP180/BP230)</td><td>Desmosome (desmoglein 3 ± 1)</td></tr> <tr><td>Blister</td><td>Tense, subepidermal; Nikolsky negative</td><td>Flaccid, suprabasal; Nikolsky positive</td></tr> <tr><td>Mucosa</td><td>Usually spared</td><td>Oral erosions, often first</td></tr> <tr><td>Direct immunofluorescence</td><td>Linear IgG and C3 along the basement membrane</td><td>Intercellular IgG, net-like</td></tr> </tbody></table> Tense blister, deep split, linear line; flaccid blister, shallow split, net pattern."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Granular IgG and C3 along the basement membrane is seen in the skin of systemic lupus erythematosus (lupus band); it would fit photosensitive rash with systemic features rather than tense bullae.\n(B) Perivascular IgA in superficial dermal vessels is IgA vasculitis; it would be the answer with palpable purpura on the legs, arthralgia, and abdominal pain, usually in a child.\n(D) Intercellular net-like IgG is the pattern of pemphigus vulgaris; it would be the answer with flaccid blisters, a positive Nikolsky sign, oral erosions, and a suprabasal split with acantholysis.\n(E) Granular IgA in the dermal papillae is dermatitis herpetiformis; it would be the answer with grouped, intensely itchy vesicles on the elbows, knees, and buttocks in a patient with celiac disease."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the pemphigus pattern because blisters plus autoantibodies suggest 'pemphigus' — tense blisters, intact mucosa, and a negative Nikolsky sign mean a subepidermal split and a linear pattern."
+   },
+   {
+    "k": "학습목표",
+    "v": "고령자의 팽팽한 물집과 음성 Nikolsky 징후를 수포성 유사천포창으로 판단하고 직접 면역형광 소견(기저막의 선형 IgG·C3)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. Bullous pemphigoid · Borradori L, et al. Updated S2K guidelines for the management of bullous pemphigoid initiated by the European Academy of Dermatology and Venereology. J Eur Acad Dermatol Venereol 2022;36:1689-1704"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "고령자의 가려운 두드러기 같은 판 뒤 팽팽한 물집·음성 Nikolsky 징후·정상 구강 점막·호산구를 동반한 표피하 물집은 수포성 유사천포창이므로 직접 면역형광은 기저막의 선형 IgG·C3 이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "팽팽한 물집, 음성 Nikolsky 징후, 정상 구강 점막, 표피하 분리",
+   "steps": 2,
+   "chain": [
+    "팽팽한 물집·음성 Nikolsky·구강 정상·표피하 물집과 호산구 → 수포성 유사천포창",
+    "반세포연접 항원이 기저막 한 평면에 있음 → 선형 IgG·C3"
+   ],
+   "key": [
+    {
+     "item": "multiple tense, fluid-filled bullae",
+     "why": "표피 전층이 지붕인 표피하 물집",
+     "also": []
+    },
+    {
+     "item": "a subepidermal blister with eosinophils",
+     "why": "수포성 유사천포창의 조직 소견",
+     "also": []
+    },
+    {
+     "item": "red, hive-like itchy plaques",
+     "why": "물집 전 두드러기 단계",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Gentle lateral pressure on normal-appearing skin does not cause the epidermis to separate",
+     "why": "음성 Nikolsky — 심상성 천포창 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The oral mucosa is normal",
+     "why": "점막을 먼저 침범하는 심상성 천포창 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "She takes linagliptin",
+     "why": "DPP-4 억제제는 유발 인자지만 면역형광 양상을 정하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "81세의 가려운 두드러기 같은 판에 이어 생긴 팽팽한 물집, 음성 Nikolsky 징후, 정상 구강 점막, 호산구를 동반한 표피하 물집은 수포성 유사천포창이다. 직접 면역형광은 기저막을 따라 선형 IgG·C3 이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "쉽게 터지는 이완성 물집과 구강 미란, 양성 Nikolsky 징후, 기저층 위 분리였다면 심상성 천포창의 그물 모양 세포간 IgG 가 답이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261009T202242Z_일일영상_2026-10-10_11units_11q_ef77b4ce",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0273",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음",
+  "type": "응급·중환자·외상 — 복부 둔상 뒤 왼쪽 흉곽의 장음",
+  "modality": "DX",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "13세 남자가 4시간 전 자전거를 타다 넘어져 핸들에 왼쪽 윗배를 부딪힌 뒤 숨이 차서 응급실에 왔다. 혈압 110/70 mmHg, 맥박 118회/분, 호흡 32회/분, 산소포화도 90 %(대기)이다. 왼쪽 가슴의 호흡음이 줄어 있고 그 부위에서 장음이 들린다. 기관은 오른쪽으로 치우쳐 있다. 배는 약간 꺼져 보이고 왼쪽 윗배에 압통이 있다. 혈색소는 13.2 g/dL 이다. 흉부 X선은 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "왼쪽 다섯째 갈비사이에 흉관을 넣는다",
+   "왼쪽 둘째 갈비사이에 바늘 감압을 한다",
+   "산소를 주고 6시간 뒤 흉부 X선을 다시 찍는다",
+   "기관지 내시경으로 왼쪽 주기관지를 확인한다",
+   "비위관을 넣어 감압한 뒤 응급 수술로 가로막을 교정한다"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: X선에서 왼쪽 흉곽 아래·중간에 폐 혈관 음영이 없는 장관 가스 음영이 올라와 있고 왼쪽 가로막 윤곽이 보이지 않으며 종격이 오른쪽으로 밀려 있다. 왼쪽 윗배 둔상 뒤 왼쪽 가슴에서 장음이 들리고 배가 꺼져 보이는 것은 외상성 가로막 탈장이다. 흉관이나 바늘을 넣으면 탈출한 위·대장을 뚫을 수 있으므로 피하고, 비위관으로 위를 감압해 종격 압박을 줄인 뒤 수술(대개 개복)로 장기를 되돌리고 가로막을 봉합한다.\n- 원리: <b>왜 왼쪽인가</b>: 복부 둔상으로 복강 압력이 갑자기 오르면 가장 약한 경계인 가로막이 찢어진다. 오른쪽은 간이 가로막 아래를 받쳐 충격을 흩고 탈출을 막지만, 왼쪽은 위·비장·대장이 바로 아래에 있어 찢어진 틈으로 흉강에 쉽게 밀려 올라간다. 그래서 둔상 가로막 손상은 왼쪽이 훨씬 흔하다.<br> <b>왜 숨이 차고 종격이 밀리는가</b>: 흉강 압력은 음압이라 복강 장기가 계속 빨려 올라온다. 장기가 왼쪽 폐를 누르고 종격을 오른쪽으로 밀어 오른쪽 폐의 환기와 정맥 환류까지 줄인다. 위에 공기가 차면 긴장성 기흉처럼 행동한다(긴장성 위흉).<br> <b>왜 흉관이 위험한가</b>: X선의 공기·액체 음영을 기흉·혈흉으로 오인해 흉관을 넣으면 탈출한 위·대장을 뚫어 흉강이 오염된다. 비위관이 흉강 안에서 말려 보이면 진단이 확정되고, 동시에 위 감압으로 압박을 줄인다. 가로막은 저절로 붙지 않고 장기가 교액될 수 있어 수술로 교정하며, 급성기 둔상에는 동반 복부 장기 손상을 보려고 개복을 흔히 택한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">외상성 가로막 탈장(이 환자)</th><th>혈기흉 — 흉관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>X선</td><td>흉곽 안 장관 가스·가로막 윤곽 소실</td><td>흉막선 바깥 공기·공기-액체 경계, 가로막은 보임</td></tr> <tr><td>청진·복부</td><td>가슴에서 장음, 배가 꺼져 보임</td><td>호흡음 감소만, 장음 없음</td></tr> <tr><td>처치</td><td>비위관 감압 → 수술적 교정</td><td>흉관 삽입</td></tr> </tbody></table> 흉곽 안 공기 음영에 장관의 주름·벽이 보이고 가로막 선이 끊겼으면, 흉관보다 비위관이 먼저다.\n- 오답 이유:\n  - ① 흉관 삽입은 혈흉·기흉의 처치다. 흉막선 바깥의 공기나 공기-액체 경계가 보이고 가로막 윤곽이 유지되었다면 정답이지만, 여기서는 탈출한 장을 뚫을 수 있다.\n  - ② 바늘 감압은 저혈압·목정맥 확장을 동반한 긴장성 기흉의 응급 처치다. 혈관 음영 없는 흉막 공기와 쇼크가 있었다면 적절하지만, 여기서는 위를 뚫을 위험이 있다.\n  - ③ 관찰 후 재촬영은 소견이 애매하고 증상이 없을 때나 고려한다. 저산소혈증·종격 전위가 있는 이 환자에서는 교액과 호흡 악화를 놓친다 — 무증상의 작은 소견이었다면 가능하다.\n  - ④ 기관지 내시경은 지속되는 대량 공기 누출이나 흉관 삽입 뒤에도 펴지지 않는 폐로 기관지 파열이 의심될 때 한다. 피하기종과 지속 공기 누출이 있었다면 정답에 가깝다.\n- 함정: 흉곽 안 공기 음영을 기흉으로 읽고 흉관을 넣는 것 — 가슴에서 장음이 들리고 가로막 윤곽이 없으면 가로막 탈장이다.\n- 학습목표: 복부 둔상 뒤 왼쪽 흉곽의 장관 가스와 가로막 소실로 외상성 가로막 탈장을 알아보고, 흉관을 넣지 않고 위 감압 후 수술함을 안다\n- 근거·출처: American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (traumatic diaphragmatic injury — nasogastric tube, avoid chest tube) · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. The diaphragm / Ch. Thoracic trauma · PMC12335322 Figure 3 — case report of traumatic diaphragmatic hernia in a 13-year-old boy (teacher-only) · 작성자 판독(2026-10-09): 반좌위 흉부 X선, 왼쪽 흉곽 안 장관 가스·왼쪽 가로막 소실·종격 오른쪽 전위, 오른쪽 폐 반점상 음영\n\n## 출처\n- Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 왼쪽 흉곽 아래·중간에 폐 혈관 음영이 없는 장관 가스 음영이 올라와 있고 왼쪽 가로막 윤곽이 보이지 않으며 종격이 오른쪽으로 밀려 있다. 왼쪽 윗배 둔상 뒤 왼쪽 가슴에서 장음이 들리고 배가 꺼져 보이는 것은 외상성 가로막 탈장이다. 흉관이나 바늘을 넣으면 탈출한 위·대장을 뚫을 수 있으므로 피하고, 비위관으로 위를 감압해 종격 압박을 줄인 뒤 수술(대개 개복)로 장기를 되돌리고 가로막을 봉합한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 왼쪽인가</b>: 복부 둔상으로 복강 압력이 갑자기 오르면 가장 약한 경계인 가로막이 찢어진다. 오른쪽은 간이 가로막 아래를 받쳐 충격을 흩고 탈출을 막지만, 왼쪽은 위·비장·대장이 바로 아래에 있어 찢어진 틈으로 흉강에 쉽게 밀려 올라간다. 그래서 둔상 가로막 손상은 왼쪽이 훨씬 흔하다.<br> <b>왜 숨이 차고 종격이 밀리는가</b>: 흉강 압력은 음압이라 복강 장기가 계속 빨려 올라온다. 장기가 왼쪽 폐를 누르고 종격을 오른쪽으로 밀어 오른쪽 폐의 환기와 정맥 환류까지 줄인다. 위에 공기가 차면 긴장성 기흉처럼 행동한다(긴장성 위흉).<br> <b>왜 흉관이 위험한가</b>: X선의 공기·액체 음영을 기흉·혈흉으로 오인해 흉관을 넣으면 탈출한 위·대장을 뚫어 흉강이 오염된다. 비위관이 흉강 안에서 말려 보이면 진단이 확정되고, 동시에 위 감압으로 압박을 줄인다. 가로막은 저절로 붙지 않고 장기가 교액될 수 있어 수술로 교정하며, 급성기 둔상에는 동반 복부 장기 손상을 보려고 개복을 흔히 택한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">외상성 가로막 탈장(이 환자)</th><th>혈기흉 — 흉관(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>X선</td><td>흉곽 안 장관 가스·가로막 윤곽 소실</td><td>흉막선 바깥 공기·공기-액체 경계, 가로막은 보임</td></tr> <tr><td>청진·복부</td><td>가슴에서 장음, 배가 꺼져 보임</td><td>호흡음 감소만, 장음 없음</td></tr> <tr><td>처치</td><td>비위관 감압 → 수술적 교정</td><td>흉관 삽입</td></tr> </tbody></table> 흉곽 안 공기 음영에 장관의 주름·벽이 보이고 가로막 선이 끊겼으면, 흉관보다 비위관이 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 흉관 삽입은 혈흉·기흉의 처치다. 흉막선 바깥의 공기나 공기-액체 경계가 보이고 가로막 윤곽이 유지되었다면 정답이지만, 여기서는 탈출한 장을 뚫을 수 있다.\n② 바늘 감압은 저혈압·목정맥 확장을 동반한 긴장성 기흉의 응급 처치다. 혈관 음영 없는 흉막 공기와 쇼크가 있었다면 적절하지만, 여기서는 위를 뚫을 위험이 있다.\n③ 관찰 후 재촬영은 소견이 애매하고 증상이 없을 때나 고려한다. 저산소혈증·종격 전위가 있는 이 환자에서는 교액과 호흡 악화를 놓친다 — 무증상의 작은 소견이었다면 가능하다.\n④ 기관지 내시경은 지속되는 대량 공기 누출이나 흉관 삽입 뒤에도 펴지지 않는 폐로 기관지 파열이 의심될 때 한다. 피하기종과 지속 공기 누출이 있었다면 정답에 가깝다."
+   },
+   {
+    "k": "함정",
+    "v": "흉곽 안 공기 음영을 기흉으로 읽고 흉관을 넣는 것 — 가슴에서 장음이 들리고 가로막 윤곽이 없으면 가로막 탈장이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "복부 둔상 뒤 왼쪽 흉곽의 장관 가스와 가로막 소실로 외상성 가로막 탈장을 알아보고, 흉관을 넣지 않고 위 감압 후 수술함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (traumatic diaphragmatic injury — nasogastric tube, avoid chest tube) · Townsend CM, et al. Sabiston Textbook of Surgery, 21st ed. Ch. The diaphragm / Ch. Thoracic trauma · PMC12335322 Figure 3 — case report of traumatic diaphragmatic hernia in a 13-year-old boy (teacher-only) · 작성자 판독(2026-10-09): 반좌위 흉부 X선, 왼쪽 흉곽 안 장관 가스·왼쪽 가로막 소실·종격 오른쪽 전위, 오른쪽 폐 반점상 음영 ## 출처 Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "왼쪽 윗배 둔상 뒤 왼쪽 흉곽의 장관 가스·가로막 소실·가슴의 장음은 외상성 가로막 탈장이므로 흉관을 피하고 비위관 감압 뒤 수술한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "흉곽 안 공기 음영이 장관 모양이고 가로막 윤곽이 없으며 가슴에서 장음이 들린다",
+   "steps": 3,
+   "chain": [
+    "영상: 왼쪽 흉곽 안 장관 가스 + 왼쪽 가로막 윤곽 소실 + 종격 오른쪽 전위",
+    "왼쪽 윗배 둔상·가슴의 장음·꺼진 배 → 외상성 가로막 탈장(기흉이 아님)",
+    "흉관은 탈출한 장을 뚫으므로 피함 → 비위관 감압 뒤 수술적 교정"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 흉곽 안의 장관 가스 음영과 왼쪽 가로막 윤곽 소실",
+     "why": "복강 장기가 흉강으로 올라왔다",
+     "also": []
+    },
+    {
+     "item": "그 부위에서 장음이 들린다",
+     "why": "흉강 안의 장 — 가로막 탈장",
+     "also": []
+    },
+    {
+     "item": "핸들에 왼쪽 윗배를 부딪힌 뒤",
+     "why": "복강 압력 급상승 — 왼쪽 가로막 파열의 기전",
+     "also": []
+    },
+    {
+     "item": "배는 약간 꺼져 보이고",
+     "why": "복강 장기가 빠져나간 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈색소는 13.2 g/dL",
+     "why": "대량 혈흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈압 110/70 mmHg",
+     "why": "쇼크가 없어 긴장성 기흉의 바늘 감압이 급하지 않다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "기관은 오른쪽으로 치우쳐 있다",
+     "why": "종격 압박 — 위 감압과 빠른 교정이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "왼쪽 윗배 둔상 뒤 왼쪽 흉곽 안 장관 가스·가로막 소실·가슴의 장음이 있어 외상성 가로막 탈장이다. 흉관은 장을 뚫으므로 피하고 비위관으로 감압한 뒤 수술로 교정한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "가로막 윤곽이 보이고 흉막선 바깥 공기와 공기-액체 경계(혈기흉)만 있었다면 흉관 삽입이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0273.jpg",
+   "caption": "반좌위 전후면 흉부 X선, 글자·좌우 표지는 원 그림의 것 — 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12335322/",
+   "asset_id": "PMC-PMC12335322_Figure3",
+   "text": "Point-of-Care Ultrasound for Traumatic Diaphragmatic Hernia in a Low- and Middle-Income Country: A Case Report. Cureus. 2025 Jul 9;17(7):e87630. doi: 10.7759/cureus.87630 (CC BY) — Figure 3"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0272",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승",
+  "type": "신장·비뇨 — 넘어진 뒤 복수와 크레아티닌 상승",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "A 39-year-old man comes to the emergency department because of abdominal pain and distension for 3 days. Three days ago, he fell at home after drinking heavily, striking his lower abdomen on the edge of a table. Since then he has passed only small amounts of urine. His temperature is 37.4°C, pulse is 104/min, and blood pressure is 118/74 mm Hg. The abdomen is distended with diffuse tenderness and shifting dullness. There is no blood at the urethral meatus. Serum urea nitrogen concentration is 62 mg/dL, and serum creatinine concentration is 3.4 mg/dL; one year ago, the creatinine concentration was 0.9 mg/dL. Creatinine concentration in fluid obtained by paracentesis is much higher than that in serum. Pelvic radiographs show no fracture. Contrast-enhanced CT of the abdomen and pelvis is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Repeated large-volume paracentesis",
+   "Bilateral percutaneous nephrostomy",
+   "Surgical repair of the bladder",
+   "Urethral catheter drainage alone for 2 weeks",
+   "Hemodialysis"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The CT shows a defect in the dome of the bladder wall with a large amount of free fluid around the bowel loops and in the pelvis. Ascitic fluid with a creatinine concentration far higher than serum is urine. A blow to a full bladder in an intoxicated man ruptures the dome, the weakest part covered by peritoneum, and urine leaks into the peritoneal cavity. The peritoneum reabsorbs urea and creatinine, raising serum values (pseudo-renal failure) even though the kidneys are normal. An intraperitoneal rupture does not heal with catheter drainage alone and requires operative repair.\n- 원리: <b>Why the dome ruptures</b>: when the bladder is full it rises out of the pelvis and its dome, the only part covered by peritoneum and the thinnest, faces the abdominal wall. A sudden rise in pressure from a blow bursts it like a balloon — typically in an intoxicated person whose full bladder and lax abdominal wall offer no protection. Extraperitoneal rupture, by contrast, is caused by pelvic fractures in which bone fragments or ligament shear tear the anterolateral bladder wall below the peritoneal reflection.<br> <b>Why the creatinine rises</b>: the peritoneum is a large semipermeable membrane (the basis of peritoneal dialysis). Urine in the peritoneal cavity allows urea, creatinine and potassium to diffuse back into the blood, so serum concentrations rise and look like acute kidney injury. Ascitic creatinine higher than serum creatinine identifies the fluid as urine, and serum values fall quickly after repair.<br> <b>Why surgery</b>: the dome defect is usually large, urine continues to flow into the peritoneum regardless of a catheter, and urinary ascites causes peritonitis and sepsis. Intraperitoneal rupture is repaired surgically (laparotomy or laparoscopy) with catheter drainage afterward; most uncomplicated extraperitoneal ruptures heal with catheter drainage alone.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Intraperitoneal rupture (this patient)</th><th>Extraperitoneal rupture (closest distractor: catheter alone)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Blow to a full bladder</td><td>Pelvic fracture</td></tr> <tr><td>Site and leak</td><td>Dome; urine among bowel loops, paracolic gutters</td><td>Anterolateral wall; contrast in perivesical space</td></tr> <tr><td>Treatment</td><td>Surgical repair</td><td>Urethral catheter drainage for about 2 weeks</td></tr> </tbody></table> The site of leakage — peritoneal cavity or perivesical tissue — decides the treatment, not the size of the injury on the first look.\n- 오답 이유:\n  - (A) Large-volume paracentesis treats tense ascites of cirrhosis; it would fit if the fluid had a serum-ascites albumin gradient above 1.1 g/dL and creatinine equal to serum, but here urine keeps leaking.\n  - (B) Percutaneous nephrostomy relieves upper-tract obstruction; it would be appropriate for bilateral hydronephrosis from ureteral obstruction, which would not cause urine in the peritoneum.\n  - (D) Catheter drainage alone is the standard treatment for uncomplicated extraperitoneal rupture after pelvic fracture; it would be correct if contrast extravasation were confined to the perivesical space.\n  - (E) Hemodialysis treats true acute kidney injury with refractory hyperkalemia, acidosis or volume overload; here the creatinine is high because urine is reabsorbed from the peritoneum and falls once the leak is repaired.\n- 함정: Reading the raised creatinine as acute kidney injury needing dialysis, or treating the rupture like an extraperitoneal one with a catheter alone.\n- 학습목표: 복강 내 방광 파열을 알아보고, 복막의 소변 재흡수로 생긴 가성 신부전과 수술적 봉합이 필요함을 안다\n- 근거·출처: Morey AF, et al. Urotrauma: AUA guideline. J Urol 2014;192:327-335 (intraperitoneal bladder rupture — surgical repair) · Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. Lower urinary tract trauma · PMC12331415 Figure 1 — case report of intraperitoneal bladder rupture after a ground-level fall (teacher-only) · 작성자 판독(2026-10-09): 복부·골반 관상 CT, 방광 꼭대기 벽 결손과 복강 내 다량 액체, 골반골 골절 없음\n\n## 출처\n- Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a defect in the dome of the bladder wall with a large amount of free fluid around the bowel loops and in the pelvis. Ascitic fluid with a creatinine concentration far higher than serum is urine. A blow to a full bladder in an intoxicated man ruptures the dome, the weakest part covered by peritoneum, and urine leaks into the peritoneal cavity. The peritoneum reabsorbs urea and creatinine, raising serum values (pseudo-renal failure) even though the kidneys are normal. An intraperitoneal rupture does not heal with catheter drainage alone and requires operative repair."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the dome ruptures</b>: when the bladder is full it rises out of the pelvis and its dome, the only part covered by peritoneum and the thinnest, faces the abdominal wall. A sudden rise in pressure from a blow bursts it like a balloon — typically in an intoxicated person whose full bladder and lax abdominal wall offer no protection. Extraperitoneal rupture, by contrast, is caused by pelvic fractures in which bone fragments or ligament shear tear the anterolateral bladder wall below the peritoneal reflection.<br> <b>Why the creatinine rises</b>: the peritoneum is a large semipermeable membrane (the basis of peritoneal dialysis). Urine in the peritoneal cavity allows urea, creatinine and potassium to diffuse back into the blood, so serum concentrations rise and look like acute kidney injury. Ascitic creatinine higher than serum creatinine identifies the fluid as urine, and serum values fall quickly after repair.<br> <b>Why surgery</b>: the dome defect is usually large, urine continues to flow into the peritoneum regardless of a catheter, and urinary ascites causes peritonitis and sepsis. Intraperitoneal rupture is repaired surgically (laparotomy or laparoscopy) with catheter drainage afterward; most uncomplicated extraperitoneal ruptures heal with catheter drainage alone."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Intraperitoneal rupture (this patient)</th><th>Extraperitoneal rupture (closest distractor: catheter alone)</th></tr></thead><tbody> <tr><td>Mechanism</td><td>Blow to a full bladder</td><td>Pelvic fracture</td></tr> <tr><td>Site and leak</td><td>Dome; urine among bowel loops, paracolic gutters</td><td>Anterolateral wall; contrast in perivesical space</td></tr> <tr><td>Treatment</td><td>Surgical repair</td><td>Urethral catheter drainage for about 2 weeks</td></tr> </tbody></table> The site of leakage — peritoneal cavity or perivesical tissue — decides the treatment, not the size of the injury on the first look."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Large-volume paracentesis treats tense ascites of cirrhosis; it would fit if the fluid had a serum-ascites albumin gradient above 1.1 g/dL and creatinine equal to serum, but here urine keeps leaking.\n(B) Percutaneous nephrostomy relieves upper-tract obstruction; it would be appropriate for bilateral hydronephrosis from ureteral obstruction, which would not cause urine in the peritoneum.\n(D) Catheter drainage alone is the standard treatment for uncomplicated extraperitoneal rupture after pelvic fracture; it would be correct if contrast extravasation were confined to the perivesical space.\n(E) Hemodialysis treats true acute kidney injury with refractory hyperkalemia, acidosis or volume overload; here the creatinine is high because urine is reabsorbed from the peritoneum and falls once the leak is repaired."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the raised creatinine as acute kidney injury needing dialysis, or treating the rupture like an extraperitoneal one with a catheter alone."
+   },
+   {
+    "k": "학습목표",
+    "v": "복강 내 방광 파열을 알아보고, 복막의 소변 재흡수로 생긴 가성 신부전과 수술적 봉합이 필요함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morey AF, et al. Urotrauma: AUA guideline. J Urol 2014;192:327-335 (intraperitoneal bladder rupture — surgical repair) · Partin AW, et al. Campbell-Walsh-Wein Urology, 12th ed. Ch. Lower urinary tract trauma · PMC12331415 Figure 1 — case report of intraperitoneal bladder rupture after a ground-level fall (teacher-only) · 작성자 판독(2026-10-09): 복부·골반 관상 CT, 방광 꼭대기 벽 결손과 복강 내 다량 액체, 골반골 골절 없음 ## 출처 Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "방광 꼭대기 결손과 복강 내 액체, 혈청보다 높은 복수 크레아티닌은 복강 내 방광 파열이므로 수술로 봉합한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "소변이 방광 주위가 아니라 복강 안(장 고리 사이)에 있고 골반골 골절이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 방광 꼭대기 벽 결손 + 복강 내 다량 액체",
+    "복수 크레아티닌 > 혈청 → 복수는 소변, 혈청 크레아티닌 상승은 복막 재흡수",
+    "복강 내 파열 → 카테터만으로 낫지 않으므로 수술적 봉합"
+   ],
+   "key": [
+    {
+     "item": "영상: 방광 꼭대기 벽의 결손과 장 고리 사이의 다량 액체",
+     "why": "복강 내 방광 파열",
+     "also": []
+    },
+    {
+     "item": "Creatinine concentration in fluid obtained by paracentesis is much higher than that in serum",
+     "why": "복수가 소변이다",
+     "also": []
+    },
+    {
+     "item": "he fell at home after drinking heavily, striking his lower abdomen",
+     "why": "찬 방광에 가해진 둔상 — 꼭대기 파열의 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Pelvic radiographs show no fracture",
+     "why": "골반 골절에 의한 복막외 파열 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There is no blood at the urethral meatus",
+     "why": "요도 손상 가능성을 낮춘다 — 요도 카테터를 넣을 수 있다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "one year ago, the creatinine concentration was 0.9 mg/dL",
+     "why": "원래 콩팥 기능이 정상 — 투석보다 원인 교정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "pulse is 104/min",
+     "why": "통증·복막 자극으로 설명되는 빈맥 — 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "술 취한 남자가 아랫배를 부딪힌 뒤 복수와 크레아티닌 상승이 생겼다. CT 의 방광 꼭대기 결손과 혈청보다 높은 복수 크레아티닌은 복강 내 방광 파열이므로 수술로 봉합한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "골반 골절이 있고 조영제가 방광 주위 공간에만 새었다면 복막외 파열로 보고 요도 카테터 배액만 한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0272.jpg",
+   "caption": "Contrast-enhanced coronal CT of the abdomen and pelvis — single-panel figure as published, arrow as in the original (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12331415/",
+   "asset_id": "PMC-PMC12331415_Figure1",
+   "text": "Traumatic Intraperitoneal Bladder Rupture Presenting With Massive Ascites and Acute Kidney Injury Following a Ground-Level Fall. Cureus. 2025 Jul 8;17(7):e87550. doi: 10.7759/cureus.87550 (CC BY) — Figure 1"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0271",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장",
+  "type": "응급·중환자·외상 — 흉부 둔상 2주 뒤 생긴 저혈압과 경정맥 확장",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "33세 남자가 2일 전부터 숨이 차고 어지러워 응급실에 왔다. 15일 전 오토바이 사고로 가슴을 부딪혔고, 당시 갈비뼈 골절 외에 특별한 손상이 없어 퇴원하였다. 혈압 82/60 mmHg, 맥박 124회/분, 호흡 28회/분, 체온 36.8 °C 이다. 앉은 자세에서 목정맥이 확장되어 있고 심음이 작게 들린다. 들숨 때 수축기 혈압이 18 mmHg 떨어진다. 양쪽 폐의 호흡음은 대칭적이다. 혈색소는 12.8 g/dL 이다. 흉부 CT 는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "정맥 이뇨제 투여",
+   "정맥 혈전용해제 투여",
+   "응급 관상동맥조영술",
+   "초음파 유도 심낭천자",
+   "양쪽 흉관 삽입"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: CT 에서 심장 둘레 전체를 넓은 고리 모양의 액체가 감싸고 있다(대량 심낭 삼출). 저혈압·빈맥·목정맥 확장·작은 심음(Beck 3징후)과 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥이 있어 심장눌림증이다. 흉부 둔상 뒤 몇 주에 걸쳐 심낭 삼출이 천천히 늘어 지연성으로 생길 수 있다. 쇼크를 동반한 심장눌림증은 즉시 심낭천자로 액체를 빼서 압력을 낮춘다.\n- 원리: <b>왜 액체가 심장을 멈추게 하는가</b>: 심낭은 잘 늘어나지 않는 섬유막이다. 액체가 천천히 차면 심낭이 늘어나 꽤 많은 양을 견디지만, 한계를 넘으면 심낭 압력이 급히 올라 심방·심실의 이완기 압력과 같아진다. 그러면 심장이 이완기에 충분히 채워지지 못해 일회박출량이 줄고, 빈맥으로 버티다 저혈압에 이른다.<br> <b>왜 기이맥이 생기는가</b>: 들숨 때 흉강 압력이 낮아져 우심실로 들어오는 혈액이 늘어난다. 심낭이 꽉 차 있으면 우심실은 바깥으로 늘어날 수 없어 심실중격을 왼쪽으로 민다(심실 상호의존). 좌심실 충만이 줄어 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>그래서 처치</b>: 수액은 잠깐 충만압을 올려 버티게 할 뿐이고, 이뇨제·혈관확장제는 충만압을 낮춰 오히려 쇼크를 악화한다. 액체를 빼면 몇십 mL 만으로도 압력이 급히 떨어지므로 초음파 유도 심낭천자가 첫 처치이고, 응고된 혈액이나 계속되는 출혈이면 수술적 심낭 창을 낸다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>혈흉 — 흉관 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 의 주 소견</td><td>심장 둘레 전체의 대량 액체</td><td>한쪽 흉강 아래의 대량 액체, 폐 허탈</td></tr> <tr><td>진찰</td><td>목정맥 확장·작은 심음·기이맥, 호흡음 대칭</td><td>한쪽 호흡음 감소·타진 둔탁, 목정맥은 대개 허탈</td></tr> <tr><td>혈색소</td><td>유지될 수 있음</td><td>출혈로 떨어짐</td></tr> </tbody></table> CT 에 양쪽 소량 흉수가 함께 보여도, 쇼크의 원인은 심장을 감싼 액체다 — 목정맥이 부풀어 있으면 혈액량 부족이 아니라 충만 장애다.\n- 오답 이유:\n  - ① 정맥 이뇨제는 폐부종을 동반한 울혈 심부전에 쓴다. 심장눌림증에서는 충만압을 낮춰 심박출량이 더 떨어지므로, 심낭 삼출 없이 폐부종만 있을 때에야 맞는 선택이다.\n  - ② 혈전용해제는 쇼크를 동반한 고위험 폐색전증의 치료다. CT 폐동맥에 충만 결손이 보이고 심낭 삼출이 없었다면 고려하지만, 외상 뒤 출혈 위험도 크다.\n  - ③ 응급 관상동맥조영술은 ST 분절 상승 심근경색이나 외상성 관상동맥 박리가 의심될 때 한다. 심전도 ST 상승과 국소 벽운동 이상이 있었다면 정답에 가까워진다.\n  - ⑤ 흉관 삽입은 한쪽 호흡음이 줄고 혈색소가 떨어지는 대량 혈흉·긴장성 기흉의 처치다. 이 환자의 흉수는 소량이고 호흡음이 대칭이라 쇼크를 설명하지 못한다.\n- 함정: CT 에 함께 보이는 양쪽 소량 흉수에 끌려 흉관을 넣는 것 — 쇼크와 목정맥 확장의 원인은 심장을 감싼 대량 심낭 삼출이다.\n- 학습목표: 흉부 둔상 뒤 지연성으로 생긴 대량 심낭 삼출과 심장눌림증을 알아보고 심낭천자로 감압함을 안다\n- 근거·출처: Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 (cardiac tamponade — urgent pericardiocentesis) · American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (cardiac tamponade) · PMC12045655 Figure 4 — case report of delayed tamponade after blunt chest trauma (teacher-only) · 작성자 판독(2026-10-09): 흉부 CT 축상, 심장 둘레 전체의 대량 심낭 삼출, 양측 소량 흉수\n\n## 출처\n- Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 심장 둘레 전체를 넓은 고리 모양의 액체가 감싸고 있다(대량 심낭 삼출). 저혈압·빈맥·목정맥 확장·작은 심음(Beck 3징후)과 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어지는 기이맥이 있어 심장눌림증이다. 흉부 둔상 뒤 몇 주에 걸쳐 심낭 삼출이 천천히 늘어 지연성으로 생길 수 있다. 쇼크를 동반한 심장눌림증은 즉시 심낭천자로 액체를 빼서 압력을 낮춘다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 액체가 심장을 멈추게 하는가</b>: 심낭은 잘 늘어나지 않는 섬유막이다. 액체가 천천히 차면 심낭이 늘어나 꽤 많은 양을 견디지만, 한계를 넘으면 심낭 압력이 급히 올라 심방·심실의 이완기 압력과 같아진다. 그러면 심장이 이완기에 충분히 채워지지 못해 일회박출량이 줄고, 빈맥으로 버티다 저혈압에 이른다.<br> <b>왜 기이맥이 생기는가</b>: 들숨 때 흉강 압력이 낮아져 우심실로 들어오는 혈액이 늘어난다. 심낭이 꽉 차 있으면 우심실은 바깥으로 늘어날 수 없어 심실중격을 왼쪽으로 민다(심실 상호의존). 좌심실 충만이 줄어 들숨 때 수축기 혈압이 10 mmHg 넘게 떨어진다.<br> <b>그래서 처치</b>: 수액은 잠깐 충만압을 올려 버티게 할 뿐이고, 이뇨제·혈관확장제는 충만압을 낮춰 오히려 쇼크를 악화한다. 액체를 빼면 몇십 mL 만으로도 압력이 급히 떨어지므로 초음파 유도 심낭천자가 첫 처치이고, 응고된 혈액이나 계속되는 출혈이면 수술적 심낭 창을 낸다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">심장눌림증 — 심낭천자(정답)</th><th>혈흉 — 흉관 삽입(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>CT 의 주 소견</td><td>심장 둘레 전체의 대량 액체</td><td>한쪽 흉강 아래의 대량 액체, 폐 허탈</td></tr> <tr><td>진찰</td><td>목정맥 확장·작은 심음·기이맥, 호흡음 대칭</td><td>한쪽 호흡음 감소·타진 둔탁, 목정맥은 대개 허탈</td></tr> <tr><td>혈색소</td><td>유지될 수 있음</td><td>출혈로 떨어짐</td></tr> </tbody></table> CT 에 양쪽 소량 흉수가 함께 보여도, 쇼크의 원인은 심장을 감싼 액체다 — 목정맥이 부풀어 있으면 혈액량 부족이 아니라 충만 장애다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 정맥 이뇨제는 폐부종을 동반한 울혈 심부전에 쓴다. 심장눌림증에서는 충만압을 낮춰 심박출량이 더 떨어지므로, 심낭 삼출 없이 폐부종만 있을 때에야 맞는 선택이다.\n② 혈전용해제는 쇼크를 동반한 고위험 폐색전증의 치료다. CT 폐동맥에 충만 결손이 보이고 심낭 삼출이 없었다면 고려하지만, 외상 뒤 출혈 위험도 크다.\n③ 응급 관상동맥조영술은 ST 분절 상승 심근경색이나 외상성 관상동맥 박리가 의심될 때 한다. 심전도 ST 상승과 국소 벽운동 이상이 있었다면 정답에 가까워진다.\n⑤ 흉관 삽입은 한쪽 호흡음이 줄고 혈색소가 떨어지는 대량 혈흉·긴장성 기흉의 처치다. 이 환자의 흉수는 소량이고 호흡음이 대칭이라 쇼크를 설명하지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "CT 에 함께 보이는 양쪽 소량 흉수에 끌려 흉관을 넣는 것 — 쇼크와 목정맥 확장의 원인은 심장을 감싼 대량 심낭 삼출이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "흉부 둔상 뒤 지연성으로 생긴 대량 심낭 삼출과 심장눌림증을 알아보고 심낭천자로 감압함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Adler Y, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964 (cardiac tamponade — urgent pericardiocentesis) · American College of Surgeons. ATLS Advanced Trauma Life Support, 10th ed. Ch. Thoracic trauma (cardiac tamponade) · PMC12045655 Figure 4 — case report of delayed tamponade after blunt chest trauma (teacher-only) · 작성자 판독(2026-10-09): 흉부 CT 축상, 심장 둘레 전체의 대량 심낭 삼출, 양측 소량 흉수 ## 출처 Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "흉부 둔상 2주 뒤 쇼크·목정맥 확장·작은 심음·기이맥과 CT 의 대량 심낭 삼출은 심장눌림증이므로 즉시 심낭천자로 감압한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "호흡음이 대칭이고 흉수가 소량이며 목정맥이 확장되어 있다",
+   "steps": 2,
+   "chain": [
+    "영상: 심장 둘레 전체의 대량 심낭 삼출 + Beck 3징후·기이맥 → 심장눌림증",
+    "쇼크를 동반 → 즉시 심낭천자로 감압"
+   ],
+   "key": [
+    {
+     "item": "영상: 심장 둘레 전체를 감싸는 넓은 고리 모양 액체",
+     "why": "대량 심낭 삼출",
+     "also": []
+    },
+    {
+     "item": "혈압 82/60 mmHg, 맥박 124회/분",
+     "why": "쇼크 — 즉시 감압이 필요하다",
+     "also": []
+    },
+    {
+     "item": "목정맥이 확장되어 있고 심음이 작게 들린다",
+     "why": "Beck 3징후의 나머지 둘 — 충만 장애",
+     "also": []
+    },
+    {
+     "item": "들숨 때 수축기 혈압이 18 mmHg 떨어진다",
+     "why": "기이맥 — 심장눌림증의 생리",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "양쪽 폐의 호흡음은 대칭적이다",
+     "why": "대량 혈흉·긴장성 기흉 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈색소는 12.8 g/dL",
+     "why": "대량 출혈 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "15일 전 오토바이 사고로 가슴을 부딪혔고",
+     "why": "지연성 심낭 삼출의 원인 — 처치 선택을 바꾸지는 않는다",
+     "also": []
+    }
+   ],
+   "summary": "흉부 둔상 2주 뒤 쇼크·목정맥 확장·작은 심음·기이맥이 있고 CT 에서 심장을 감싼 대량 심낭 삼출이 보인다. 심장눌림증이므로 즉시 심낭천자로 감압한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "한쪽 호흡음이 줄고 혈색소가 떨어지며 CT 에서 한쪽 흉강의 대량 액체가 보였다면 흉관 삽입이 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0271.jpg",
+   "caption": "흉부 조영증강 CT 축상면 — 출판된 증례 그림 한 컷 그대로, 화살표는 원 그림의 것 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12045655/",
+   "asset_id": "PMC-PMC12045655_Figure4",
+   "text": "Life-Threatening Delayed Pericardial Tamponade Following Blunt Chest Trauma. Cureus. 2025 Apr 1;17(4):e81578. doi: 10.7759/cureus.81578 (CC BY) — Figure 4"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0270",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도",
+  "type": "순환기 — 숨이 차고 발목이 붓는 고령 여성의 심전도",
+  "modality": "ECG",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 78-year-old woman comes to the physician because of progressive shortness of breath on exertion and ankle swelling for 6 months. Two years ago, she underwent surgery for bilateral carpal tunnel syndrome. She has no history of hypertension, and her blood pressure has been 110 to 120/70 mm Hg at previous visits. Today, her blood pressure is 108/68 mm Hg, and pulse is 82/min and irregular. Jugular venous pressure is elevated, and there is 2+ pitting edema of both ankles. No murmur is heard. Serum N-terminal pro-B-type natriuretic peptide concentration is increased. Echocardiography shows a left ventricular wall thickness of 17 mm, a left ventricular ejection fraction of 55%, and biatrial enlargement; the aortic valve opens normally. An ECG is shown.",
+  "question": "Which of the following is the most likely cause of this patient's heart failure?",
+  "options": [
+   "Constrictive pericarditis",
+   "Aortic stenosis",
+   "Transthyretin cardiac amyloidosis",
+   "Hypertensive heart disease",
+   "Hypertrophic cardiomyopathy"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The ECG shows atrial fibrillation (irregularly irregular RR intervals without P waves) and low QRS voltage in all limb leads (each under 5 mm), while echocardiography shows a 17-mm-thick left ventricular wall. A thick wall on echocardiography with low voltage on the ECG is a voltage-mass mismatch: the wall is thick not because myocytes have grown but because something non-conducting has infiltrated it. In an elderly patient with heart failure with preserved ejection fraction, biatrial enlargement and a history of bilateral carpal tunnel syndrome, the most likely infiltrate is transthyretin amyloid.\n- 원리: <b>Why voltage and wall thickness normally move together</b>: QRS voltage is generated by depolarizing myocytes. In pressure-overload hypertrophy (hypertension, aortic stenosis) and in hypertrophic cardiomyopathy each myocyte enlarges, so the wall thickens and the ECG shows high voltage (LVH criteria).<br> <b>Why amyloid breaks the rule</b>: in amyloidosis misfolded protein fibrils are deposited between myocytes. The wall becomes thick and stiff, but the extra mass is electrically silent, and the fibrils also separate and injure the myocytes that remain. The result is a thick wall with low or normal voltage, restrictive filling with preserved ejection fraction, biatrial enlargement and frequent atrial fibrillation.<br> <b>Why transthyretin</b>: wild-type transthyretin amyloid accumulates with age, especially in men but also in elderly women; it is deposited early in the transverse carpal ligament, so bilateral carpal tunnel syndrome often precedes heart failure by years. The diagnosis is made noninvasively with bone-tracer scintigraphy (99mTc-pyrophosphate) after a monoclonal protein is excluded by serum and urine immunofixation and free light chains (to rule out AL amyloid). Tafamidis stabilizes the transthyretin tetramer and reduces mortality.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transthyretin cardiac amyloidosis (correct)</th><th>Hypertensive heart disease (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure history</td><td>Normal or low — 110 to 120/70 mm Hg</td><td>Long-standing hypertension</td></tr> <tr><td>ECG voltage vs wall thickness</td><td>Low voltage despite a 17-mm wall (mismatch)</td><td>High voltage proportional to the thick wall</td></tr> <tr><td>Extracardiac clue</td><td>Bilateral carpal tunnel syndrome</td><td>Hypertensive retinopathy, kidney disease</td></tr> </tbody></table> Whenever the wall is thick, read the voltage: concordant high voltage means myocyte hypertrophy, low voltage means infiltration.\n- 오답 이유:\n  - (A) Constrictive pericarditis also causes preserved ejection fraction and elevated venous pressure, but the wall thickness is normal; it would be favored by prior cardiac surgery or radiation, a thick pericardium and a pericardial knock.\n  - (B) Aortic stenosis causes concentric hypertrophy in the elderly; it would be the answer with a harsh systolic ejection murmur and a calcified valve with reduced opening on echocardiography.\n  - (D) Hypertensive heart disease thickens the wall by myocyte hypertrophy and raises QRS voltage; it would be likely with long-standing hypertension and LVH voltage criteria on the ECG.\n  - (E) Hypertrophic cardiomyopathy usually shows high voltage and deep T-wave inversions with asymmetric septal hypertrophy; it would be favored in a younger patient with a family history and an outflow murmur.\n- 함정: Attributing a thick left ventricle in an elderly patient to hypertension without checking the ECG voltage — low voltage with a thick wall points to amyloid.\n- 학습목표: 좌심실 벽이 두꺼운데 QRS 전위가 낮은 불일치가 침윤성 심근병증(아밀로이드증)을 시사함을 안다\n- 근거·출처: Arbelo E, et al. 2023 ESC Guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503-3626 (cardiac amyloidosis — red flags, diagnostic algorithm) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Amyloidosis; Ch. Cardiomyopathy and myocarditis · Chapman-Shaoxing/Ningbo 12-lead ECG database — expert label AF + low QRS voltage (teacher-only) · 작성자 판독(2026-10-09): 리듬 띠 II 불규칙하게 불규칙한 RR·P 파 없음(약 80회/분), 사지유도 QRS 모두 5 mm 미만, 흉부유도 보존\n\n## 출처\n- Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ecg-arrhythmia/1.0.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The ECG shows atrial fibrillation (irregularly irregular RR intervals without P waves) and low QRS voltage in all limb leads (each under 5 mm), while echocardiography shows a 17-mm-thick left ventricular wall. A thick wall on echocardiography with low voltage on the ECG is a voltage-mass mismatch: the wall is thick not because myocytes have grown but because something non-conducting has infiltrated it. In an elderly patient with heart failure with preserved ejection fraction, biatrial enlargement and a history of bilateral carpal tunnel syndrome, the most likely infiltrate is transthyretin amyloid."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why voltage and wall thickness normally move together</b>: QRS voltage is generated by depolarizing myocytes. In pressure-overload hypertrophy (hypertension, aortic stenosis) and in hypertrophic cardiomyopathy each myocyte enlarges, so the wall thickens and the ECG shows high voltage (LVH criteria).<br> <b>Why amyloid breaks the rule</b>: in amyloidosis misfolded protein fibrils are deposited between myocytes. The wall becomes thick and stiff, but the extra mass is electrically silent, and the fibrils also separate and injure the myocytes that remain. The result is a thick wall with low or normal voltage, restrictive filling with preserved ejection fraction, biatrial enlargement and frequent atrial fibrillation.<br> <b>Why transthyretin</b>: wild-type transthyretin amyloid accumulates with age, especially in men but also in elderly women; it is deposited early in the transverse carpal ligament, so bilateral carpal tunnel syndrome often precedes heart failure by years. The diagnosis is made noninvasively with bone-tracer scintigraphy (99mTc-pyrophosphate) after a monoclonal protein is excluded by serum and urine immunofixation and free light chains (to rule out AL amyloid). Tafamidis stabilizes the transthyretin tetramer and reduces mortality."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transthyretin cardiac amyloidosis (correct)</th><th>Hypertensive heart disease (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure history</td><td>Normal or low — 110 to 120/70 mm Hg</td><td>Long-standing hypertension</td></tr> <tr><td>ECG voltage vs wall thickness</td><td>Low voltage despite a 17-mm wall (mismatch)</td><td>High voltage proportional to the thick wall</td></tr> <tr><td>Extracardiac clue</td><td>Bilateral carpal tunnel syndrome</td><td>Hypertensive retinopathy, kidney disease</td></tr> </tbody></table> Whenever the wall is thick, read the voltage: concordant high voltage means myocyte hypertrophy, low voltage means infiltration."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Constrictive pericarditis also causes preserved ejection fraction and elevated venous pressure, but the wall thickness is normal; it would be favored by prior cardiac surgery or radiation, a thick pericardium and a pericardial knock.\n(B) Aortic stenosis causes concentric hypertrophy in the elderly; it would be the answer with a harsh systolic ejection murmur and a calcified valve with reduced opening on echocardiography.\n(D) Hypertensive heart disease thickens the wall by myocyte hypertrophy and raises QRS voltage; it would be likely with long-standing hypertension and LVH voltage criteria on the ECG.\n(E) Hypertrophic cardiomyopathy usually shows high voltage and deep T-wave inversions with asymmetric septal hypertrophy; it would be favored in a younger patient with a family history and an outflow murmur."
+   },
+   {
+    "k": "함정",
+    "v": "Attributing a thick left ventricle in an elderly patient to hypertension without checking the ECG voltage — low voltage with a thick wall points to amyloid."
+   },
+   {
+    "k": "학습목표",
+    "v": "좌심실 벽이 두꺼운데 QRS 전위가 낮은 불일치가 침윤성 심근병증(아밀로이드증)을 시사함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Arbelo E, et al. 2023 ESC Guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503-3626 (cardiac amyloidosis — red flags, diagnostic algorithm) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. Amyloidosis; Ch. Cardiomyopathy and myocarditis · Chapman-Shaoxing/Ningbo 12-lead ECG database — expert label AF + low QRS voltage (teacher-only) · 작성자 판독(2026-10-09): 리듬 띠 II 불규칙하게 불규칙한 RR·P 파 없음(약 80회/분), 사지유도 QRS 모두 5 mm 미만, 흉부유도 보존 ## 출처 Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929 · Creative Commons Attribution 4.0 International · https://physionet.org/content/ecg-arrhythmia/1.0.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "심초음파에서 좌심실 벽이 17 mm 로 두꺼운데 심전도 사지유도 전위가 낮은 불일치와 양측 손목굴증후군 병력이 있으므로 원인은 트랜스티레틴 심장 아밀로이드증이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "고혈압 병력이 없고 벽이 두꺼운데도 QRS 전위가 낮다",
+   "steps": 3,
+   "chain": [
+    "영상: 심방세동 + 사지유도 저전위",
+    "두꺼운 좌심실 벽(17 mm)과 낮은 전위의 불일치 → 심근 비대가 아니라 침윤",
+    "고령·박출률 보존 심부전·양측 손목굴증후군 → 트랜스티레틴 아밀로이드"
+   ],
+   "key": [
+    {
+     "item": "영상: 사지유도 QRS 가 모두 5 mm 미만이고 RR 간격이 불규칙하게 불규칙하다",
+     "why": "저전위 + 심방세동 — 침윤성 심근병증의 전형",
+     "also": []
+    },
+    {
+     "item": "a left ventricular wall thickness of 17 mm",
+     "why": "두꺼운 벽 — 전위와의 불일치를 만든다",
+     "also": []
+    },
+    {
+     "item": "bilateral carpal tunnel syndrome",
+     "why": "트랜스티레틴 아밀로이드의 심장 외 선행 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She has no history of hypertension",
+     "why": "고혈압성 심장병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "No murmur is heard",
+     "why": "대동맥판 협착·폐쇄성 비대심근병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "the aortic valve opens normally",
+     "why": "대동맥판 협착 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "a left ventricular ejection fraction of 55%",
+     "why": "박출률 보존 심부전 — 여러 원인에 공통이라 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "고혈압 없는 노인의 박출률 보존 심부전에서 좌심실 벽은 17 mm 로 두꺼운데 심전도는 사지유도 저전위·심방세동이다. 전위와 벽 두께의 불일치와 양측 손목굴증후군이 트랜스티레틴 심장 아밀로이드증을 가리킨다.",
+   "switch": {
+    "choice": "D",
+    "condition": "오래된 고혈압이 있고 심전도가 좌심실 비대 전위 기준을 만족했다면 고혈압성 심장병이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0270.png",
+   "caption": "Standard 12-lead ECG, 25 mm/s and 10 mm/mV, with a lead II rhythm strip — drawn from the original digital signal, no annotation (PhysioNet, CC BY 4.0)",
+   "alt": "ECG 영상"
+  },
+  "attribution": {
+   "dataset": "A large scale 12-lead electrocardiogram database for arrhythmia study v1.0.0 (PhysioNet)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://physionet.org/content/ecg-arrhythmia/1.0.0/",
+   "url": "https://physionet.org/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/038/JS02929.mat",
+   "asset_id": "CHAPMAN-JS02929",
+   "text": "Chapman-Shaoxing/Ningbo 12-lead ECG database (PhysioNet, CC BY 4.0) · record JS02929"
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0279",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+  "type": "정신 — 항정신병약 주사 뒤 고열과 근육 경직",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-08",
+  "vignette": "28세 남자가 정신병적 초조로 입원하여 2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤 열이 나고 몸이 굳어 의식이 흐려졌다. 그는 6개월 전부터 우울증으로 세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다. 체온 40.1 °C, 혈압 168/102 mmHg, 맥박 124회/분이다. 땀을 많이 흘리고 말이 어눌하다. 팔다리에 굽히고 펼 때 일정한 저항이 있는 납관 경직이 있고, 심부건반사는 정상이며 간대성 근경련은 없다. 동공 크기는 정상이고 장음은 정상이다. 크레아틴키나아제 18,600 U/L, 백혈구 14,200/mm³, 크레아티닌 1.6 mg/dL 이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "세르트랄린만 끊고 할로페리돌은 유지한다",
+   "할로페리돌을 끊고 냉각과 정맥 수액을 준다",
+   "사이프로헵타딘을 경구로 투여한다",
+   "할로페리돌을 늘려 초조를 진정시킨다",
+   "벤즈트로핀을 근육주사한다"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 강력한 도파민 D2 차단제(할로페리돌) 근육주사 며칠 뒤 고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)과 크레아틴키나아제 상승이 생겨 신경이완제악성증후군이다. 세르트랄린을 먹고 있지만 용량 변화가 없고 간대성 근경련·과반사·산동·장음 항진이 없어 세로토닌증후군은 가능성이 낮다. 첫 처치는 원인약을 끊고 냉각·정맥 수액(횡문근융해로 인한 콩팥 손상 예방) 등 보존 치료를 하는 것이며, 중증이면 단트롤렌·브로모크립틴을 더한다.\n- 원리: <b>왜 도파민 차단이 열과 경직을 만드는가</b>: 시상하부의 도파민 경로는 체온 조절점을, 흑질선조체 경로는 근긴장을 조절한다. D2 수용체가 갑자기 강하게 막히면(고역가 약·근육주사·빠른 증량·탈수) 열 발산이 줄고 근육이 지속적으로 수축한다. 그 근육 수축이 열을 더 만들고 근육 세포를 깨뜨려 크레아틴키나아제가 오르고 미오글로빈이 콩팥을 다치게 한다. 대개 며칠에 걸쳐 서서히 진행한다.<br> <b>세로토닌증후군과 가르는 곳</b>: 세로토닌 과잉은 척수의 5-HT2A 수용체를 자극해 <b>간대성 근경련·과반사(특히 하지)·떨림</b>과 산동·설사·장음 항진을 만들고, 원인약 추가·증량 뒤 수 시간(24시간 안)에 빠르게 생긴다. 반대로 신경이완제악성증후군은 반사가 정상이거나 줄고 근육이 납관처럼 고르게 굳으며 천천히 진행한다. 이 환자는 세르트랄린을 먹지만 변화가 없고 신경학적 소견이 도파민 차단 쪽이다.<br> <b>처치</b>: 원인약을 끊고, 냉각·수액·전해질 교정, 필요하면 중환자실 감시. 경직이 심하고 열이 높으면 근육 내 칼슘 유리를 막는 단트롤렌, 도파민 작용을 되돌리는 브로모크립틴을 더한다. 회복 뒤 2주 이상 지나 저역가 약으로 천천히 다시 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신경이완제악성증후군(이 환자)</th><th>세로토닌증후군 — 사이프로헵타딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기와 속도</td><td>도파민 차단제, 며칠에 걸쳐</td><td>세로토닌 약 추가·증량, 24시간 안</td></tr> <tr><td>근육·반사</td><td>납관 경직, 반사 정상·감소</td><td>간대성 근경련·과반사(하지), 떨림</td></tr> <tr><td>동공·장</td><td>정상</td><td>산동, 장음 항진·설사</td></tr> </tbody></table> 둘 다 고열·자율신경 불안정·의식 변화가 있다 — 반사와 근경련, 그리고 마지막으로 바뀐 약이 원인을 가른다.\n- 오답 이유:\n  - ① 세르트랄린만 끊으면 원인인 할로페리돌이 남는다. 신경학적 소견이 세로토닌증후군 쪽이었다면 세로토닌 약을 끊는 것이 맞다.\n  - ③ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군의 치료다. 세르트랄린을 최근 늘렸거나 트라마돌 등을 더한 뒤 간대성 근경련·과반사·산동이 생겼다면 정답이다.\n  - ④ 할로페리돌을 늘리면 도파민 차단이 심해져 열과 경직, 횡문근융해가 악화된다. 열·경직·CK 상승 없이 초조만 있었다면 진정 목적의 추가 투여를 고려할 수 있다.\n  - ⑤ 벤즈트로핀은 급성 근긴장이상(사경·안구 회전 발작)이나 약물 파킨슨증의 치료다. 열과 CK 상승 없이 국소 근육 수축만 있었다면 맞는 선택이다.\n- 함정: 세르트랄린 복용을 보고 세로토닌증후군으로 사이프로헵타딘을 고르는 것 — 납관 경직·정상 반사·서서히 진행은 신경이완제악성증후군이다.\n- 학습목표: 항정신병약 뒤 고열·납관 경직·의식 변화·CK 상승은 신경이완제악성증후군이며 세로토닌증후군과 신경학적 소견으로 가르고 원인약 중단과 보존 치료가 첫 처치임을 안다\n- 근거·출처: Sadock BJ, et al. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. Ch. Medication-induced movement disorders (neuroleptic malignant syndrome) · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "강력한 도파민 D2 차단제(할로페리돌) 근육주사 며칠 뒤 고열·납관 경직·의식 변화·자율신경 불안정(고혈압·빈맥·발한)과 크레아틴키나아제 상승이 생겨 신경이완제악성증후군이다. 세르트랄린을 먹고 있지만 용량 변화가 없고 간대성 근경련·과반사·산동·장음 항진이 없어 세로토닌증후군은 가능성이 낮다. 첫 처치는 원인약을 끊고 냉각·정맥 수액(횡문근융해로 인한 콩팥 손상 예방) 등 보존 치료를 하는 것이며, 중증이면 단트롤렌·브로모크립틴을 더한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 도파민 차단이 열과 경직을 만드는가</b>: 시상하부의 도파민 경로는 체온 조절점을, 흑질선조체 경로는 근긴장을 조절한다. D2 수용체가 갑자기 강하게 막히면(고역가 약·근육주사·빠른 증량·탈수) 열 발산이 줄고 근육이 지속적으로 수축한다. 그 근육 수축이 열을 더 만들고 근육 세포를 깨뜨려 크레아틴키나아제가 오르고 미오글로빈이 콩팥을 다치게 한다. 대개 며칠에 걸쳐 서서히 진행한다.<br> <b>세로토닌증후군과 가르는 곳</b>: 세로토닌 과잉은 척수의 5-HT2A 수용체를 자극해 <b>간대성 근경련·과반사(특히 하지)·떨림</b>과 산동·설사·장음 항진을 만들고, 원인약 추가·증량 뒤 수 시간(24시간 안)에 빠르게 생긴다. 반대로 신경이완제악성증후군은 반사가 정상이거나 줄고 근육이 납관처럼 고르게 굳으며 천천히 진행한다. 이 환자는 세르트랄린을 먹지만 변화가 없고 신경학적 소견이 도파민 차단 쪽이다.<br> <b>처치</b>: 원인약을 끊고, 냉각·수액·전해질 교정, 필요하면 중환자실 감시. 경직이 심하고 열이 높으면 근육 내 칼슘 유리를 막는 단트롤렌, 도파민 작용을 되돌리는 브로모크립틴을 더한다. 회복 뒤 2주 이상 지나 저역가 약으로 천천히 다시 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">신경이완제악성증후군(이 환자)</th><th>세로토닌증후군 — 사이프로헵타딘(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>계기와 속도</td><td>도파민 차단제, 며칠에 걸쳐</td><td>세로토닌 약 추가·증량, 24시간 안</td></tr> <tr><td>근육·반사</td><td>납관 경직, 반사 정상·감소</td><td>간대성 근경련·과반사(하지), 떨림</td></tr> <tr><td>동공·장</td><td>정상</td><td>산동, 장음 항진·설사</td></tr> </tbody></table> 둘 다 고열·자율신경 불안정·의식 변화가 있다 — 반사와 근경련, 그리고 마지막으로 바뀐 약이 원인을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 세르트랄린만 끊으면 원인인 할로페리돌이 남는다. 신경학적 소견이 세로토닌증후군 쪽이었다면 세로토닌 약을 끊는 것이 맞다.\n③ 사이프로헵타딘은 세로토닌 수용체 길항제로 세로토닌증후군의 치료다. 세르트랄린을 최근 늘렸거나 트라마돌 등을 더한 뒤 간대성 근경련·과반사·산동이 생겼다면 정답이다.\n④ 할로페리돌을 늘리면 도파민 차단이 심해져 열과 경직, 횡문근융해가 악화된다. 열·경직·CK 상승 없이 초조만 있었다면 진정 목적의 추가 투여를 고려할 수 있다.\n⑤ 벤즈트로핀은 급성 근긴장이상(사경·안구 회전 발작)이나 약물 파킨슨증의 치료다. 열과 CK 상승 없이 국소 근육 수축만 있었다면 맞는 선택이다."
+   },
+   {
+    "k": "함정",
+    "v": "세르트랄린 복용을 보고 세로토닌증후군으로 사이프로헵타딘을 고르는 것 — 납관 경직·정상 반사·서서히 진행은 신경이완제악성증후군이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항정신병약 뒤 고열·납관 경직·의식 변화·CK 상승은 신경이완제악성증후군이며 세로토닌증후군과 신경학적 소견으로 가르고 원인약 중단과 보존 치료가 첫 처치임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sadock BJ, et al. Kaplan & Sadock's Comprehensive Textbook of Psychiatry, 10th ed. Ch. Medication-induced movement disorders (neuroleptic malignant syndrome) · Strawn JR, Keck PE, Caroff SN. Neuroleptic malignant syndrome. Am J Psychiatry 2007;164:870-876 · Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "감별",
+   "decision": "할로페리돌 근육주사 뒤 고열·납관 경직·의식 변화·자율신경 불안정·CK 상승이 있고 간대성 근경련·과반사가 없으므로 신경이완제악성증후군으로 보고 원인약을 끊고 보존 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "심부건반사 정상·간대성 근경련 없음·납관 경직·세르트랄린 용량 변화 없음",
+   "steps": 3,
+   "chain": [
+    "고열·근육 경직·의식 변화·자율신경 불안정·CK 상승 → 신경이완제악성증후군과 세로토닌증후군의 감별",
+    "도파민 차단제 근육주사 직후·납관 경직·반사 정상·근경련 없음·세르트랄린 변화 없음 → 신경이완제악성증후군",
+    "원인약 중단 + 냉각·수액(횡문근융해 콩팥 손상 예방)"
+   ],
+   "key": [
+    {
+     "item": "2일 동안 할로페리돌을 근육주사로 여러 번 맞은 뒤",
+     "why": "고역가 D2 차단제 근육주사 — 신경이완제악성증후군의 위험 인자",
+     "also": []
+    },
+    {
+     "item": "납관 경직이 있고",
+     "why": "도파민 차단에 의한 고른 경직",
+     "also": []
+    },
+    {
+     "item": "크레아틴키나아제 18,600 U/L",
+     "why": "근육 괴사 — 신경이완제악성증후군의 특징",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "심부건반사는 정상이며 간대성 근경련은 없다",
+     "why": "세로토닌증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "동공 크기는 정상이고 장음은 정상이다",
+     "why": "세로토닌 과잉·항콜린 독성 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "세르트랄린 50 mg 을 먹고 있으며 최근 용량 변화는 없다",
+     "why": "세로토닌증후군을 떠올리게 하는 함정 — 변화가 없다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 1.6 mg/dL",
+     "why": "횡문근융해 콩팥 손상 — 정맥 수액이 필요하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "할로페리돌 근육주사 뒤 고열·납관 경직·의식 변화·자율신경 불안정·CK 상승이 생겼고 반사는 정상이며 근경련이 없다. 세르트랄린을 먹지만 신경이완제악성증후군이므로 원인약을 끊고 냉각·수액으로 보존 치료한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "세르트랄린을 최근 늘린 뒤 수 시간 만에 하지 간대성 근경련·과반사·산동이 생겼다면 세로토닌증후군으로 보고 사이프로헵타딘을 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0278",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자",
+  "type": "내분비·대사 — 담낭절제술 뒤 구토와 깊은 호흡을 보이는 당뇨병 환자",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 54-year-old man with type 2 diabetes mellitus comes to the emergency department because of nausea, vomiting and abdominal pain for 1 day. Three months ago, empagliflozin was added to metformin. Two days ago, he underwent laparoscopic cholecystectomy and has eaten little since. His pulse is 112/min, respirations are 28/min and deep, and blood pressure is 112/70 mm Hg. Laboratory studies show: glucose 196 mg/dL, Na+ 137 mEq/L, Cl- 103 mEq/L, HCO3- 10 mEq/L, K+ 4.6 mEq/L, and serum beta-hydroxybutyrate 6.2 mmol/L (N < 0.6). Arterial pH is 7.14. Serum lactate concentration is 1.4 mmol/L.",
+  "question": "After empagliflozin is discontinued and intravenous isotonic saline is begun, which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous sodium bicarbonate infusion",
+   "Subcutaneous insulin glargine alone",
+   "Intravenous fluids alone",
+   "Intravenous insulin infusion with dextrose-containing fluid",
+   "Withholding insulin until the glucose rises above 250 mg/dL"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The patient has a high anion gap (137 - 103 - 10 = 24) metabolic acidosis with a markedly raised beta-hydroxybutyrate and normal lactate, but his glucose is under 250 mg/dL: euglycemic diabetic ketoacidosis triggered by an SGLT2 inhibitor plus surgery and fasting. Ketoacidosis is stopped by insulin, not by lowering glucose, so a continuous insulin infusion is given and dextrose is added to the fluids to prevent hypoglycemia until the anion gap closes.\n- 원리: <b>Why ketones rise while glucose stays low</b>: SGLT2 inhibitors make the kidney excrete glucose (tens of grams a day), so plasma glucose is held down regardless of insulin. Lower glucose reduces insulin secretion and raises glucagon; SGLT2 inhibitors also act on alpha cells and reduce renal ketone excretion. With a low insulin-to-glucagon ratio, lipolysis supplies fatty acids and the liver turns them into ketones. Fasting, surgery, alcohol and insulin dose reduction tip the balance — and because glucose is only mildly raised, ketoacidosis is recognized late.<br> <b>Why insulin is still the treatment</b>: ketogenesis stops only when insulin suppresses lipolysis and hepatic ketogenesis. The goal of DKA therapy is closure of the anion gap, not a normal glucose. With a starting glucose near 200 mg/dL, insulin alone would cause hypoglycemia, so dextrose (5 to 10%) is infused from the start alongside the insulin.<br> <b>Potassium</b>: insulin drives potassium into cells; with K+ 4.6 mEq/L potassium is added to the fluids as levels fall. The SGLT2 inhibitor is held until the patient eats normally and the acidosis has resolved, and is usually stopped 3 days before planned surgery.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Insulin infusion with dextrose (correct)</th><th>Withholding insulin until glucose rises (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Ketogenesis — closes the anion gap</td><td>Glucose — not the problem here</td></tr> <tr><td>Hypoglycemia</td><td>Prevented by dextrose</td><td>Avoided, but acidosis continues</td></tr> <tr><td>Result</td><td>Gap closes in hours</td><td>Ketoacidosis worsens; glucose may never exceed 250 mg/dL while glycosuria persists</td></tr> </tbody></table> In DKA, glucose tells you how much dextrose to give; the anion gap tells you how long to give insulin.\n- 오답 이유:\n  - (A) Bicarbonate is considered in DKA only for pH below about 6.9 or life-threatening hyperkalemia; at pH 7.14 it adds sodium and risks hypokalemia without speeding recovery.\n  - (B) Subcutaneous basal insulin alone acts slowly and unpredictably in a dehydrated patient; it is used to transition from the infusion once the gap has closed and the patient can eat.\n  - (C) Fluids alone dilute ketones only slightly and do not stop ketogenesis; they would suffice for starvation ketosis with mild acidosis and normal glucose in a patient without diabetes.\n  - (E) Withholding insulin treats the glucose instead of the ketoacidosis; it would be reasonable only if the anion gap were normal and ketones absent, as in simple postoperative hyperglycemia.\n- 함정: Being reassured by a glucose under 250 mg/dL — in an SGLT2 inhibitor user, ketoacidosis with a high anion gap is DKA and needs insulin plus dextrose.\n- 학습목표: SGLT2 억제제 복용자의 혈당이 높지 않은 케톤산증을 알아보고, 포도당을 함께 주며 인슐린을 계속 주입함을 안다\n- 근거·출처: Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275 (euglycemic DKA, SGLT2 inhibitors) · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Type 2 diabetes mellitus (SGLT2 inhibitors — ketoacidosis)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The patient has a high anion gap (137 - 103 - 10 = 24) metabolic acidosis with a markedly raised beta-hydroxybutyrate and normal lactate, but his glucose is under 250 mg/dL: euglycemic diabetic ketoacidosis triggered by an SGLT2 inhibitor plus surgery and fasting. Ketoacidosis is stopped by insulin, not by lowering glucose, so a continuous insulin infusion is given and dextrose is added to the fluids to prevent hypoglycemia until the anion gap closes."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why ketones rise while glucose stays low</b>: SGLT2 inhibitors make the kidney excrete glucose (tens of grams a day), so plasma glucose is held down regardless of insulin. Lower glucose reduces insulin secretion and raises glucagon; SGLT2 inhibitors also act on alpha cells and reduce renal ketone excretion. With a low insulin-to-glucagon ratio, lipolysis supplies fatty acids and the liver turns them into ketones. Fasting, surgery, alcohol and insulin dose reduction tip the balance — and because glucose is only mildly raised, ketoacidosis is recognized late.<br> <b>Why insulin is still the treatment</b>: ketogenesis stops only when insulin suppresses lipolysis and hepatic ketogenesis. The goal of DKA therapy is closure of the anion gap, not a normal glucose. With a starting glucose near 200 mg/dL, insulin alone would cause hypoglycemia, so dextrose (5 to 10%) is infused from the start alongside the insulin.<br> <b>Potassium</b>: insulin drives potassium into cells; with K+ 4.6 mEq/L potassium is added to the fluids as levels fall. The SGLT2 inhibitor is held until the patient eats normally and the acidosis has resolved, and is usually stopped 3 days before planned surgery."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Insulin infusion with dextrose (correct)</th><th>Withholding insulin until glucose rises (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>Ketogenesis — closes the anion gap</td><td>Glucose — not the problem here</td></tr> <tr><td>Hypoglycemia</td><td>Prevented by dextrose</td><td>Avoided, but acidosis continues</td></tr> <tr><td>Result</td><td>Gap closes in hours</td><td>Ketoacidosis worsens; glucose may never exceed 250 mg/dL while glycosuria persists</td></tr> </tbody></table> In DKA, glucose tells you how much dextrose to give; the anion gap tells you how long to give insulin."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bicarbonate is considered in DKA only for pH below about 6.9 or life-threatening hyperkalemia; at pH 7.14 it adds sodium and risks hypokalemia without speeding recovery.\n(B) Subcutaneous basal insulin alone acts slowly and unpredictably in a dehydrated patient; it is used to transition from the infusion once the gap has closed and the patient can eat.\n(C) Fluids alone dilute ketones only slightly and do not stop ketogenesis; they would suffice for starvation ketosis with mild acidosis and normal glucose in a patient without diabetes.\n(E) Withholding insulin treats the glucose instead of the ketoacidosis; it would be reasonable only if the anion gap were normal and ketones absent, as in simple postoperative hyperglycemia."
+   },
+   {
+    "k": "함정",
+    "v": "Being reassured by a glucose under 250 mg/dL — in an SGLT2 inhibitor user, ketoacidosis with a high anion gap is DKA and needs insulin plus dextrose."
+   },
+   {
+    "k": "학습목표",
+    "v": "SGLT2 억제제 복용자의 혈당이 높지 않은 케톤산증을 알아보고, 포도당을 함께 주며 인슐린을 계속 주입함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. Diabetes Care 2024;47:1257-1275 (euglycemic DKA, SGLT2 inhibitors) · Melmed S, et al. Williams Textbook of Endocrinology, 14th ed. Ch. Type 2 diabetes mellitus (SGLT2 inhibitors — ketoacidosis)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "SGLT2 억제제 복용자의 수술·금식 뒤 혈당 196 mg/dL 의 고음이온차 케톤산증은 정상혈당 당뇨병케톤산증이므로 포도당을 함께 주며 인슐린을 정맥 주입한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "혈당은 높지 않지만 음이온차 24·베타하이드록시뷰티르산 6.2 mmol/L 로 케톤산증이 분명하다",
+   "steps": 3,
+   "chain": [
+    "음이온차 24 + 베타하이드록시뷰티르산 상승 + 젖산 정상 → 케톤산증",
+    "SGLT2 억제제·수술·금식 + 혈당 196 mg/dL → 정상혈당 당뇨병케톤산증",
+    "케톤 생성을 멈추려면 인슐린, 저혈당 예방으로 포도당 함께 → 인슐린 주입 + 포도당 수액"
+   ],
+   "key": [
+    {
+     "item": "empagliflozin was added to metformin",
+     "why": "SGLT2 억제제 — 정상혈당 케톤산증의 원인",
+     "also": []
+    },
+    {
+     "item": "beta-hydroxybutyrate 6.2 mmol/L",
+     "why": "케톤산증",
+     "also": []
+    },
+    {
+     "item": "HCO3- 10 mEq/L",
+     "why": "음이온차 24 의 대사산증",
+     "also": []
+    },
+    {
+     "item": "he underwent laparoscopic cholecystectomy and has eaten little since",
+     "why": "유발 인자 — 수술·금식",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum lactate concentration is 1.4 mmol/L",
+     "why": "젖산산증(메트포르민·쇼크) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "glucose 196 mg/dL",
+     "why": "높지 않은 혈당 — 인슐린과 함께 포도당이 필요하다",
+     "also": []
+    },
+    {
+     "item": "K+ 4.6 mEq/L",
+     "why": "인슐린을 시작할 수 있고 곧 칼륨 보충이 필요하다",
+     "also": []
+    },
+    {
+     "item": "Arterial pH is 7.14",
+     "why": "6.9 이상 — 중탄산염이 필요하지 않다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "SGLT2 억제제 복용자가 수술·금식 뒤 혈당 196 mg/dL 인데 음이온차 24·케톤 상승의 산증이 있다. 정상혈당 당뇨병케톤산증이므로 포도당을 함께 주며 인슐린을 정맥 주입한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "동맥혈 pH 가 6.9 미만이었다면 인슐린·수액과 함께 중탄산염 투여를 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0277",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "소아청소년 — 5일 이상 지속되는 발열과 결막 충혈",
+  "type": "소아청소년 — 5일 이상 지속되는 발열과 결막 충혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "3세 남아가 6일 전부터 열이 39~40 °C 로 나서 내원하였다. 해열제를 먹어도 열이 떨어지지 않는다. 진찰에서 양쪽 눈의 결막이 눈곱 없이 충혈되어 있고, 입술이 붉고 갈라져 있으며 혀가 딸기 모양이다. 손발이 붓고 손바닥·발바닥이 붉다. 몸통에 다형 발진이 있다. 오른쪽 목에 지름 2 cm 의 림프절이 만져진다. 백혈구 16,800/mm³, 혈색소 10.9 g/dL, 혈소판 452,000/mm³, C-반응단백 9.8 mg/dL, 알부민 3.1 g/dL 이다. 인두 신속항원검사에서 A군 연쇄상구균은 음성이다. 심초음파에서 관상동맥 크기는 정상이다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "인플릭시맙 단독",
+   "정맥 면역글로불린과 고용량 아스피린",
+   "경구 아목시실린 10일",
+   "심초음파를 2주 뒤 다시 하고 해열제만 투여",
+   "정맥 메틸프레드니솔론 단독"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 5일 넘게 이어지는 고열에 비화농성 양측 결막 충혈, 입술·구강 변화(딸기 혀), 손발 부종·홍반, 다형 발진, 1.5 cm 넘는 한쪽 목 림프절의 주요 기준 5가지를 모두 갖춰 전형 가와사키병이다. 관상동맥이 아직 정상이어도 발병 10일 안에 정맥 면역글로불린(2 g/kg 1회)을 주면 관상동맥류 발생이 크게 줄어든다. 아스피린을 함께 쓴다.\n- 원리: <b>왜 관상동맥인가</b>: 가와사키병은 중간 크기 동맥을 침범하는 급성 혈관염이다. 호중구에 이어 단핵구·형질세포가 관상동맥 벽에 침윤해 내탄력판과 중막을 파괴하면 벽이 약해져 늘어나 동맥류가 된다. 치료하지 않으면 약 25 % 에서 관상동맥 확장·동맥류가 생기고, 동맥류 안 혈전·협착이 나중에 심근경색과 급사를 일으킨다.<br> <b>왜 10일 안에 면역글로불린인가</b>: 동맥 벽 파괴는 발병 1~2주에 진행한다. 정맥 면역글로불린은 Fc 수용체 차단·염증 사이토카인 억제로 혈관염을 빨리 가라앉혀, 열이 내리고 관상동맥류 발생을 약 25 % 에서 5 % 미만으로 줄인다. 그래서 동맥류가 생기기 전, 진단되는 즉시 준다 — 「관상동맥이 정상이니 기다린다」는 거꾸로 된 논리다.<br> <b>아스피린</b>: 급성기에는 소염 목적으로 중·고용량, 열이 내리면 항혈소판 목적의 저용량(3~5 mg/kg/일)으로 6~8주 쓴다. 이 시기 수두·인플루엔자에 걸리면 라이증후군 위험이 있어 예방접종을 확인한다. 면역글로불린 투여 36시간 뒤에도 열이 나면 2차 면역글로불린이나 스테로이드·인플릭시맙을 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가와사키병(이 환아)</th><th>성홍열 — 아목시실린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>결막</td><td>눈곱 없는 양측 충혈</td><td>대개 없음</td></tr> <tr><td>손발</td><td>부종·홍반, 회복기에 손끝 막 모양 박리</td><td>사포 같은 발진, 손발 부종 없음</td></tr> <tr><td>검사</td><td>A군 연쇄상구균 음성, CRP 높음, 혈소판 증가</td><td>A군 연쇄상구균 양성</td></tr> </tbody></table> 딸기 혀와 발진은 두 병 모두에 있다 — 결막 충혈·손발 변화·인두 검사 음성이 가와사키병으로 기울게 한다.\n- 오답 이유:\n  - ① 인플릭시맙은 면역글로불린 불응 가와사키병에서 쓰는 2차 치료다. 1차 면역글로불린 투여 36시간 뒤에도 열이 계속되었다면 선택지가 된다.\n  - ③ 아목시실린은 A군 연쇄상구균 인두염·성홍열의 치료다. 신속항원검사나 배양이 양성이고 결막 충혈·손발 부종이 없었다면 정답이다.\n  - ④ 해열제만 주고 기다리면 발병 10일 안의 치료 시기를 놓쳐 관상동맥류 위험이 커진다. 열이 5일 미만이고 기준이 부족한 불완전형 의심 단계라면 짧은 추적이 가능하다.\n  - ⑤ 스테로이드 단독은 1차 치료로 권하지 않는다. 면역글로불린을 준 뒤에도 열이 지속되는 불응형이거나 고위험군에서 면역글로불린에 덧붙일 때 쓴다.\n- 함정: 관상동맥이 아직 정상이라 기다리는 것 — 면역글로불린은 동맥류가 생기기 전, 발병 10일 안에 준다.\n- 학습목표: 5일 이상의 발열과 주요 기준 4가지 이상이면 가와사키병으로 진단하고 관상동맥 합병증 예방을 위해 정맥 면역글로불린과 아스피린을 쓴다\n- 근거·출처: McCrindle BW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement from the AHA. Circulation 2017;135:e927-e999 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Kawasaki disease",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5일 넘게 이어지는 고열에 비화농성 양측 결막 충혈, 입술·구강 변화(딸기 혀), 손발 부종·홍반, 다형 발진, 1.5 cm 넘는 한쪽 목 림프절의 주요 기준 5가지를 모두 갖춰 전형 가와사키병이다. 관상동맥이 아직 정상이어도 발병 10일 안에 정맥 면역글로불린(2 g/kg 1회)을 주면 관상동맥류 발생이 크게 줄어든다. 아스피린을 함께 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 관상동맥인가</b>: 가와사키병은 중간 크기 동맥을 침범하는 급성 혈관염이다. 호중구에 이어 단핵구·형질세포가 관상동맥 벽에 침윤해 내탄력판과 중막을 파괴하면 벽이 약해져 늘어나 동맥류가 된다. 치료하지 않으면 약 25 % 에서 관상동맥 확장·동맥류가 생기고, 동맥류 안 혈전·협착이 나중에 심근경색과 급사를 일으킨다.<br> <b>왜 10일 안에 면역글로불린인가</b>: 동맥 벽 파괴는 발병 1~2주에 진행한다. 정맥 면역글로불린은 Fc 수용체 차단·염증 사이토카인 억제로 혈관염을 빨리 가라앉혀, 열이 내리고 관상동맥류 발생을 약 25 % 에서 5 % 미만으로 줄인다. 그래서 동맥류가 생기기 전, 진단되는 즉시 준다 — 「관상동맥이 정상이니 기다린다」는 거꾸로 된 논리다.<br> <b>아스피린</b>: 급성기에는 소염 목적으로 중·고용량, 열이 내리면 항혈소판 목적의 저용량(3~5 mg/kg/일)으로 6~8주 쓴다. 이 시기 수두·인플루엔자에 걸리면 라이증후군 위험이 있어 예방접종을 확인한다. 면역글로불린 투여 36시간 뒤에도 열이 나면 2차 면역글로불린이나 스테로이드·인플릭시맙을 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">가와사키병(이 환아)</th><th>성홍열 — 아목시실린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>결막</td><td>눈곱 없는 양측 충혈</td><td>대개 없음</td></tr> <tr><td>손발</td><td>부종·홍반, 회복기에 손끝 막 모양 박리</td><td>사포 같은 발진, 손발 부종 없음</td></tr> <tr><td>검사</td><td>A군 연쇄상구균 음성, CRP 높음, 혈소판 증가</td><td>A군 연쇄상구균 양성</td></tr> </tbody></table> 딸기 혀와 발진은 두 병 모두에 있다 — 결막 충혈·손발 변화·인두 검사 음성이 가와사키병으로 기울게 한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 인플릭시맙은 면역글로불린 불응 가와사키병에서 쓰는 2차 치료다. 1차 면역글로불린 투여 36시간 뒤에도 열이 계속되었다면 선택지가 된다.\n③ 아목시실린은 A군 연쇄상구균 인두염·성홍열의 치료다. 신속항원검사나 배양이 양성이고 결막 충혈·손발 부종이 없었다면 정답이다.\n④ 해열제만 주고 기다리면 발병 10일 안의 치료 시기를 놓쳐 관상동맥류 위험이 커진다. 열이 5일 미만이고 기준이 부족한 불완전형 의심 단계라면 짧은 추적이 가능하다.\n⑤ 스테로이드 단독은 1차 치료로 권하지 않는다. 면역글로불린을 준 뒤에도 열이 지속되는 불응형이거나 고위험군에서 면역글로불린에 덧붙일 때 쓴다."
+   },
+   {
+    "k": "함정",
+    "v": "관상동맥이 아직 정상이라 기다리는 것 — 면역글로불린은 동맥류가 생기기 전, 발병 10일 안에 준다."
+   },
+   {
+    "k": "학습목표",
+    "v": "5일 이상의 발열과 주요 기준 4가지 이상이면 가와사키병으로 진단하고 관상동맥 합병증 예방을 위해 정맥 면역글로불린과 아스피린을 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McCrindle BW, et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement from the AHA. Circulation 2017;135:e927-e999 · Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. Kawasaki disease"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "6일 넘는 발열과 주요 기준 5가지를 갖춘 전형 가와사키병이므로 관상동맥이 정상이어도 정맥 면역글로불린과 아스피린을 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "눈곱 없는 양측 결막 충혈·손발 부종이 있고 A군 연쇄상구균 신속항원검사가 음성이다",
+   "steps": 2,
+   "chain": [
+    "5일 넘는 발열 + 결막·구강·손발·발진·목 림프절의 주요 기준 5가지 → 전형 가와사키병",
+    "발병 10일 안 → 관상동맥류 예방을 위해 정맥 면역글로불린 + 아스피린"
+   ],
+   "key": [
+    {
+     "item": "6일 전부터 열이 39~40 °C 로 나서",
+     "why": "5일 넘는 발열 — 진단 필수 조건이자 치료 시기",
+     "also": []
+    },
+    {
+     "item": "결막이 눈곱 없이 충혈되어 있고",
+     "why": "주요 기준 — 성홍열·아데노바이러스와 가른다",
+     "also": []
+    },
+    {
+     "item": "손발이 붓고 손바닥·발바닥이 붉다",
+     "why": "주요 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인두 신속항원검사에서 A군 연쇄상구균은 음성이다",
+     "why": "성홍열 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "심초음파에서 관상동맥 크기는 정상이다",
+     "why": "정상이어도 치료한다 — 동맥류 예방이 목적이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈소판 452,000/mm³",
+     "why": "가와사키병과 맞지만 진단 기준은 아니다",
+     "also": []
+    },
+    {
+     "item": "알부민 3.1 g/dL",
+     "why": "염증의 보조 소견 — 불완전형 판단에 쓰이며 여기서는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "6일 넘는 고열에 결막 충혈·구강 변화·손발 부종·다형 발진·목 림프절 다섯 기준을 모두 갖춰 전형 가와사키병이다. 관상동맥이 정상이어도 10일 안에 정맥 면역글로불린과 아스피린을 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "인두 신속항원검사가 양성이고 결막 충혈·손발 부종이 없었다면 성홍열로 보고 아목시실린을 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0276",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "부인과 — 유방은 발달했지만 음모가 적은 원발 무월경",
+  "type": "부인과 — 유방은 발달했지만 음모가 적은 원발 무월경",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-08",
+  "vignette": "A 17-year-old girl is brought to the physician because she has never had a menstrual period. She is 170 cm tall. Breast development is Tanner stage 5, whereas pubic and axillary hair are sparse (Tanner stage 1). Pelvic examination shows normal external female genitalia and a short, blind-ending vagina; the cervix cannot be seen. Bilateral firm masses are palpable in the inguinal canals. Pelvic ultrasonography shows no uterus. Serum follicle-stimulating hormone concentration is within the reference range, luteinizing hormone concentration is mildly increased, and total testosterone concentration is in the normal adult male range.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Müllerian agenesis",
+   "Turner syndrome",
+   "5-alpha-reductase deficiency",
+   "Kallmann syndrome",
+   "Complete androgen insensitivity syndrome"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: A patient with primary amenorrhea, fully developed breasts, almost no pubic or axillary hair, a blind-ending vagina, no uterus, inguinal gonads and testosterone in the male range has a 46,XY karyotype with testes whose androgen receptors do not respond: complete androgen insensitivity syndrome. Breasts develop because testosterone is aromatized to estradiol, and the uterus is absent because the testes secrete anti-Müllerian hormone.\n- 원리: <b>Two hormones from the fetal testis</b>: Sertoli cells secrete anti-Müllerian hormone (AMH), which regresses the Müllerian ducts (uterus, fallopian tubes, upper vagina). Leydig cells secrete testosterone, which acts through the androgen receptor to form the Wolffian structures and, after conversion to dihydrotestosterone (DHT), the male external genitalia.<br> <b>What happens when the receptor fails</b>: in complete androgen insensitivity the testes work normally, so AMH removes the uterus and upper vagina. But no tissue can respond to androgen: the external genitalia are female, the Wolffian ducts regress, and pubic and axillary hair (androgen-dependent) barely grows. Because the hypothalamus and pituitary also ignore testosterone, LH rises and drives more testosterone, which aromatase converts to estradiol — producing well-developed breasts and a tall, female body habitus.<br> <b>Management</b>: confirm a 46,XY karyotype; gonadectomy is usually offered after puberty because malignancy risk is low before adulthood and the testes supply estrogen for natural puberty; vaginal dilation can lengthen the vagina. Counseling is central.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Complete androgen insensitivity (correct)</th><th>Müllerian agenesis (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype and gonad</td><td>46,XY, testes (often inguinal)</td><td>46,XX, normal ovaries</td></tr> <tr><td>Pubic and axillary hair</td><td>Sparse or absent</td><td>Normal</td></tr> <tr><td>Testosterone</td><td>Male range</td><td>Female range</td></tr> </tbody></table> Both have breasts, a blind vagina and no uterus; the hair and the testosterone level separate them.\n- 오답 이유:\n  - (A) Müllerian agenesis also presents with primary amenorrhea, breasts and an absent uterus; it would be the answer if pubic hair were normal, ovaries were present and testosterone were in the female range.\n  - (B) Turner syndrome causes primary amenorrhea with short stature, absent breast development and high FSH from streak ovaries; the uterus is present.\n  - (C) 5-alpha-reductase deficiency causes ambiguous genitalia at birth with virilization at puberty and no breast development; it would fit a 46,XY patient with a high testosterone-to-DHT ratio and male pubertal changes.\n  - (D) Kallmann syndrome causes hypogonadotropic hypogonadism with anosmia, absent breast development and low FSH and LH; the uterus is present.\n- 함정: Calling every case of breasts with an absent uterus Müllerian agenesis — sparse pubic hair and male-range testosterone mean androgen insensitivity.\n- 학습목표: 유방은 발달했으나 음모·겨드랑이털이 적고 자궁이 없으며 테스토스테론이 남성 범위인 원발 무월경은 완전 안드로겐 무감응증임을 안다\n- 근거·출처: Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. Amenorrhea; Ch. Anatomic disorders (disorders of sex development) · Taylor HS, et al. Speroff's Clinical Gynecologic Endocrinology and Infertility, 9th ed. Ch. Normal and abnormal sexual development",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A patient with primary amenorrhea, fully developed breasts, almost no pubic or axillary hair, a blind-ending vagina, no uterus, inguinal gonads and testosterone in the male range has a 46,XY karyotype with testes whose androgen receptors do not respond: complete androgen insensitivity syndrome. Breasts develop because testosterone is aromatized to estradiol, and the uterus is absent because the testes secrete anti-Müllerian hormone."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two hormones from the fetal testis</b>: Sertoli cells secrete anti-Müllerian hormone (AMH), which regresses the Müllerian ducts (uterus, fallopian tubes, upper vagina). Leydig cells secrete testosterone, which acts through the androgen receptor to form the Wolffian structures and, after conversion to dihydrotestosterone (DHT), the male external genitalia.<br> <b>What happens when the receptor fails</b>: in complete androgen insensitivity the testes work normally, so AMH removes the uterus and upper vagina. But no tissue can respond to androgen: the external genitalia are female, the Wolffian ducts regress, and pubic and axillary hair (androgen-dependent) barely grows. Because the hypothalamus and pituitary also ignore testosterone, LH rises and drives more testosterone, which aromatase converts to estradiol — producing well-developed breasts and a tall, female body habitus.<br> <b>Management</b>: confirm a 46,XY karyotype; gonadectomy is usually offered after puberty because malignancy risk is low before adulthood and the testes supply estrogen for natural puberty; vaginal dilation can lengthen the vagina. Counseling is central."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Complete androgen insensitivity (correct)</th><th>Müllerian agenesis (closest distractor)</th></tr></thead><tbody> <tr><td>Karyotype and gonad</td><td>46,XY, testes (often inguinal)</td><td>46,XX, normal ovaries</td></tr> <tr><td>Pubic and axillary hair</td><td>Sparse or absent</td><td>Normal</td></tr> <tr><td>Testosterone</td><td>Male range</td><td>Female range</td></tr> </tbody></table> Both have breasts, a blind vagina and no uterus; the hair and the testosterone level separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Müllerian agenesis also presents with primary amenorrhea, breasts and an absent uterus; it would be the answer if pubic hair were normal, ovaries were present and testosterone were in the female range.\n(B) Turner syndrome causes primary amenorrhea with short stature, absent breast development and high FSH from streak ovaries; the uterus is present.\n(C) 5-alpha-reductase deficiency causes ambiguous genitalia at birth with virilization at puberty and no breast development; it would fit a 46,XY patient with a high testosterone-to-DHT ratio and male pubertal changes.\n(D) Kallmann syndrome causes hypogonadotropic hypogonadism with anosmia, absent breast development and low FSH and LH; the uterus is present."
+   },
+   {
+    "k": "함정",
+    "v": "Calling every case of breasts with an absent uterus Müllerian agenesis — sparse pubic hair and male-range testosterone mean androgen insensitivity."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방은 발달했으나 음모·겨드랑이털이 적고 자궁이 없으며 테스토스테론이 남성 범위인 원발 무월경은 완전 안드로겐 무감응증임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Hoffman BL, et al. Williams Gynecology, 4th ed. Ch. Amenorrhea; Ch. Anatomic disorders (disorders of sex development) · Taylor HS, et al. Speroff's Clinical Gynecologic Endocrinology and Infertility, 9th ed. Ch. Normal and abnormal sexual development"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "유방은 발달했지만 음모·겨드랑이털이 거의 없고 자궁이 없으며 서혜부 생식샘과 남성 범위 테스토스테론이 있으므로 완전 안드로겐 무감응증이다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "음모·겨드랑이털이 적고 테스토스테론이 남성 범위다",
+   "steps": 3,
+   "chain": [
+    "원발 무월경 + 유방 발달 + 자궁 없음 → 뮐러관 결손(AMH 작용 또는 발생 이상)",
+    "음모·겨드랑이털이 적고 테스토스테론이 남성 범위 → 안드로겐이 있으나 작용하지 않음",
+    "서혜부 생식샘(고환) → 46,XY 완전 안드로겐 무감응증"
+   ],
+   "key": [
+    {
+     "item": "pubic and axillary hair are sparse (Tanner stage 1)",
+     "why": "안드로겐 작용 부재",
+     "also": []
+    },
+    {
+     "item": "total testosterone concentration is in the normal adult male range",
+     "why": "고환이 있고 안드로겐을 만든다",
+     "also": []
+    },
+    {
+     "item": "Bilateral firm masses are palpable in the inguinal canals",
+     "why": "서혜부 고환",
+     "also": []
+    },
+    {
+     "item": "Pelvic ultrasonography shows no uterus",
+     "why": "AMH 작용 — 뮐러관 퇴행",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Breast development is Tanner stage 5",
+     "why": "에스트로겐 결핍(터너·칼만)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She is 170 cm tall",
+     "why": "터너증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "luteinizing hormone concentration is mildly increased",
+     "why": "안드로겐 되먹임 소실 — 진단을 지지하지만 단독으로는 가르지 못한다",
+     "also": []
+    }
+   ],
+   "summary": "원발 무월경에 유방은 발달했으나 음모·겨드랑이털이 거의 없고, 자궁이 없으며 서혜부 생식샘과 남성 범위 테스토스테론이 있다. 고환은 정상이나 안드로겐 수용체가 반응하지 않는 완전 안드로겐 무감응증이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "음모가 정상이고 테스토스테론이 여성 범위이며 난소가 보였다면 뮐러관 무형성이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0275",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "감염 — 고양이에게 물린 손의 예방적 항생제",
+  "type": "감염 — 고양이에게 물린 손의 예방적 항생제",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "A 35-year-old woman comes to the emergency department 6 hours after being bitten on the dorsum of her right hand by her own cat. She is otherwise healthy and takes no medications. Her tetanus immunization is up to date, and the cat is vaccinated against rabies. Her temperature is 36.9°C. Examination shows two small puncture wounds over the third metacarpal with mild surrounding erythema; there is no fluctuance, and range of motion of the fingers is full. The wounds are irrigated. She has no known drug allergies.",
+  "question": "Which of the following is the most appropriate antibiotic for this patient?",
+  "options": [
+   "Amoxicillin-clavulanate",
+   "Cephalexin",
+   "Clindamycin",
+   "Dicloxacillin",
+   "Erythromycin"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: Cat bites produce deep, narrow punctures that inoculate oral flora into tendon sheaths and joints and are hard to irrigate; hand wounds and punctures carry the highest infection risk, so prophylaxis is indicated. The main pathogen is Pasteurella multocida (with streptococci, Staphylococcus aureus and anaerobes). Amoxicillin-clavulanate covers all of these and is the first choice for 3 to 5 days.\n- 원리: <b>Why cat bites infect more than dog bites</b>: a cat's teeth are thin and sharp, so they leave small punctures that reach periosteum, tendon sheaths and joints but close quickly over the inoculum. Irrigation cannot reach the depth, and on the hand the closed spaces spread infection rapidly to tenosynovitis or septic arthritis. Roughly a third or more of cat bites become infected without treatment, compared with a much smaller proportion of dog bites.<br> <b>Why Pasteurella shapes the choice</b>: P. multocida, a gram-negative coccobacillus that colonizes the mouths of most cats, causes rapidly developing cellulitis within 24 hours. It is sensitive to penicillin and amoxicillin but resistant to first-generation cephalosporins (cephalexin), antistaphylococcal penicillins (dicloxacillin), clindamycin and often erythromycin. Adding clavulanate restores activity against beta-lactamase-producing S. aureus and oral anaerobes.<br> <b>Penicillin allergy</b>: use doxycycline or trimethoprim-sulfamethoxazole (or a fluoroquinolone) for Pasteurella combined with clindamycin or metronidazole for anaerobes.\n- 비교: <table><thead><tr><th style=\"width:22%\">Agent</th><th style=\"width:39%\">Amoxicillin-clavulanate (correct)</th><th>Cephalexin (closest distractor)</th></tr></thead><tbody> <tr><td>Pasteurella multocida</td><td>Active</td><td>Poor activity</td></tr> <tr><td>Oral anaerobes</td><td>Active (clavulanate)</td><td>Poor activity</td></tr> <tr><td>Best use</td><td>Animal and human bites</td><td>Uncomplicated streptococcal/staphylococcal cellulitis</td></tr> </tbody></table> The bite changes the flora: ordinary cellulitis drugs miss Pasteurella and anaerobes, so a bite needs a beta-lactam/beta-lactamase inhibitor.\n- 오답 이유:\n  - (B) Cephalexin covers streptococci and methicillin-sensitive S. aureus but not Pasteurella or anaerobes; it would be appropriate for nonpurulent cellulitis without a bite.\n  - (C) Clindamycin covers gram-positive organisms and anaerobes but not Pasteurella; in a penicillin-allergic patient it is used together with doxycycline or trimethoprim-sulfamethoxazole.\n  - (D) Dicloxacillin targets beta-lactamase-producing S. aureus but has weak activity against Pasteurella; it would suit a staphylococcal skin infection unrelated to an animal bite.\n  - (E) Erythromycin is unreliable against Pasteurella and anaerobes; it would only be considered for streptococcal infection in a patient who cannot take beta-lactams or tetracyclines.\n- 함정: Choosing a standard cellulitis antibiotic (cephalexin) for a bite — cat-bite flora includes Pasteurella and anaerobes.\n- 학습목표: 고양이에게 물린 손 상처는 Pasteurella 감염 위험이 높아 아목시실린-클라불란산으로 예방함을 안다\n- 근거·출처: Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 (animal bites) · Bennett JE, et al. Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. Ch. Bites; Ch. Pasteurella species",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Cat bites produce deep, narrow punctures that inoculate oral flora into tendon sheaths and joints and are hard to irrigate; hand wounds and punctures carry the highest infection risk, so prophylaxis is indicated. The main pathogen is Pasteurella multocida (with streptococci, Staphylococcus aureus and anaerobes). Amoxicillin-clavulanate covers all of these and is the first choice for 3 to 5 days."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why cat bites infect more than dog bites</b>: a cat's teeth are thin and sharp, so they leave small punctures that reach periosteum, tendon sheaths and joints but close quickly over the inoculum. Irrigation cannot reach the depth, and on the hand the closed spaces spread infection rapidly to tenosynovitis or septic arthritis. Roughly a third or more of cat bites become infected without treatment, compared with a much smaller proportion of dog bites.<br> <b>Why Pasteurella shapes the choice</b>: P. multocida, a gram-negative coccobacillus that colonizes the mouths of most cats, causes rapidly developing cellulitis within 24 hours. It is sensitive to penicillin and amoxicillin but resistant to first-generation cephalosporins (cephalexin), antistaphylococcal penicillins (dicloxacillin), clindamycin and often erythromycin. Adding clavulanate restores activity against beta-lactamase-producing S. aureus and oral anaerobes.<br> <b>Penicillin allergy</b>: use doxycycline or trimethoprim-sulfamethoxazole (or a fluoroquinolone) for Pasteurella combined with clindamycin or metronidazole for anaerobes."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Agent</th><th style=\"width:39%\">Amoxicillin-clavulanate (correct)</th><th>Cephalexin (closest distractor)</th></tr></thead><tbody> <tr><td>Pasteurella multocida</td><td>Active</td><td>Poor activity</td></tr> <tr><td>Oral anaerobes</td><td>Active (clavulanate)</td><td>Poor activity</td></tr> <tr><td>Best use</td><td>Animal and human bites</td><td>Uncomplicated streptococcal/staphylococcal cellulitis</td></tr> </tbody></table> The bite changes the flora: ordinary cellulitis drugs miss Pasteurella and anaerobes, so a bite needs a beta-lactam/beta-lactamase inhibitor."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Cephalexin covers streptococci and methicillin-sensitive S. aureus but not Pasteurella or anaerobes; it would be appropriate for nonpurulent cellulitis without a bite.\n(C) Clindamycin covers gram-positive organisms and anaerobes but not Pasteurella; in a penicillin-allergic patient it is used together with doxycycline or trimethoprim-sulfamethoxazole.\n(D) Dicloxacillin targets beta-lactamase-producing S. aureus but has weak activity against Pasteurella; it would suit a staphylococcal skin infection unrelated to an animal bite.\n(E) Erythromycin is unreliable against Pasteurella and anaerobes; it would only be considered for streptococcal infection in a patient who cannot take beta-lactams or tetracyclines."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a standard cellulitis antibiotic (cephalexin) for a bite — cat-bite flora includes Pasteurella and anaerobes."
+   },
+   {
+    "k": "학습목표",
+    "v": "고양이에게 물린 손 상처는 Pasteurella 감염 위험이 높아 아목시실린-클라불란산으로 예방함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. Clin Infect Dis 2014;59:e10-e52 (animal bites) · Bennett JE, et al. Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases, 9th ed. Ch. Bites; Ch. Pasteurella species"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "손등의 고양이 교상은 감염 위험이 높아 예방적 항생제가 필요하고, 주 원인균 Pasteurella 와 혐기균을 덮는 아목시실린-클라불란산이 적절하다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "고양이 구강 균총(Pasteurella·혐기균)은 1세대 세팔로스포린에 잘 듣지 않는다",
+   "steps": 2,
+   "chain": [
+    "손등의 깊은 천자 교상 → 감염 위험이 높아 예방적 항생제 적응",
+    "고양이 구강 균총 Pasteurella·혐기균 → 아목시실린-클라불란산"
+   ],
+   "key": [
+    {
+     "item": "bitten on the dorsum of her right hand by her own cat",
+     "why": "고양이·손 — 감염 위험이 가장 높은 조합",
+     "also": []
+    },
+    {
+     "item": "two small puncture wounds",
+     "why": "깊고 좁은 상처 — 세척으로 균을 못 뺀다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no fluctuance, and range of motion of the fingers is full",
+     "why": "농양·건초염 가능성을 낮춘다 — 수술적 배농이 필요하지 않다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has no known drug allergies",
+     "why": "페니실린 계열을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "the cat is vaccinated against rabies",
+     "why": "광견병 예방 결정 — 항생제 선택에는 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "Her tetanus immunization is up to date",
+     "why": "파상풍 예방 결정 — 항생제 선택에는 영향이 없다",
+     "also": []
+    }
+   ],
+   "summary": "손등의 고양이 천자 교상은 감염 위험이 높아 예방적 항생제가 필요하다. Pasteurella·혐기균까지 덮는 아목시실린-클라불란산이 첫 선택이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "페니실린 알레르기가 있었다면 Pasteurella 를 덮는 독시사이클린 등에 혐기균용 클린다마이신을 더한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0274",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 순환기·응급·신장비뇨·피부·감염·부인과·소아·내분비·정신)",
+  "subtopic": "피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진",
+  "type": "피부 — 항경련제 시작 3주 뒤 발열·얼굴 부종·발진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-08",
+  "vignette": "42세 여자가 4일 전부터 열이 나고 온몸에 발진이 생겨 내원하였다. 3주 전 뇌전증으로 카바마제핀을 시작하였다. 체온 38.9 °C 이다. 얼굴이 붓고 몸통과 팔다리에 서로 합쳐지는 붉은 반점과 구진이 체표면의 60 % 정도를 덮고 있다. 피부 박리나 물집은 없고 입안 점막은 정상이다. 목과 겨드랑이에 압통이 있는 림프절이 만져진다. 백혈구 13,200/mm³(호산구 18 %), 아스파르테이트아미노전달효소 186 U/L, 알라닌아미노전달효소 242 U/L, 크레아티닌 0.8 mg/dL 이다.",
+  "question": "카바마제핀을 끊는 것과 함께 가장 적절한 치료는?",
+  "options": [
+   "전신 스테로이드 투여",
+   "정맥 면역글로불린 단독 투여",
+   "경구 항히스타민제만 투여",
+   "아목시실린 경험적 투여",
+   "카바마제핀을 반으로 줄여 유지"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 항경련제(카바마제핀)를 시작하고 3주 뒤 생긴 고열·얼굴 부종·넓은 홍반성 발진·림프절병증·호산구증가·간효소 상승은 호산구증가와 전신 증상을 동반한 약물 반응(DRESS)이다. 물집·피부 박리·점막 침범이 없어 스티븐스-존슨증후군과 다르다. 원인약을 즉시 끊고, 간 등 장기 침범이 있으면 전신 스테로이드를 쓰고 몇 주에 걸쳐 천천히 줄인다.\n- 원리: <b>왜 몇 주 뒤에 생기는가</b>: DRESS 는 약물(또는 대사산물)이 HLA 분자에 실려 T 세포를 자극하는 지연형(IV 형) 과민반응이다. 약에 대한 T 세포 클론이 늘어나는 데 시간이 걸려 시작 후 <b>2~8주</b>에 나타난다 — 며칠 만에 생기는 두드러기·약진과 시점이 다르다. 활성화된 T 세포가 IL-5 를 내 호산구가 늘고, 잠복해 있던 HHV-6 등 헤르페스바이러스가 재활성화되어 경과를 길게 끈다.<br> <b>왜 장기가 다치는가</b>: 피부뿐 아니라 간(가장 흔함)·콩팥·폐·심장에 T 세포와 호산구가 침윤한다. 사망은 대개 전격 간염과 심근염에서 오므로 간효소·크레아티닌·심전도를 확인한다.<br> <b>왜 스테로이드를 천천히 줄이는가</b>: 원인약을 끊어도 활성화된 면역 반응이 남아 있어, 장기 침범이 있으면 전신 스테로이드(프레드니솔론 약 0.5~1 mg/kg/일)로 누르고 6~8주 이상에 걸쳐 줄인다. 빨리 끊으면 재발한다. 카바마제핀과 교차 반응하는 방향족 항경련제(페니토인·페노바르비탈)도 피하고 레비티라세탐 등으로 바꾼다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">DRESS(이 환자)</th><th>스티븐스-존슨증후군 — 면역글로불린을 떠올리는 오답</th></tr></thead><tbody> <tr><td>시작 시점</td><td>약 시작 2~8주</td><td>약 시작 4~28일</td></tr> <tr><td>피부·점막</td><td>얼굴 부종, 넓은 홍반, 박리·점막 침범 드묾</td><td>표적 모양 반점, 표피 박리, 두 곳 이상 점막 침범</td></tr> <tr><td>혈액·장기</td><td>호산구증가, 간염, 림프절병증</td><td>호산구증가 드묾</td></tr> </tbody></table> 같은 카바마제핀이라도 점막과 표피가 벗겨지면 SJS/TEN, 얼굴 부종·호산구·간 침범이면 DRESS 다 — 둘 다 원인약 중단이 첫째다.\n- 오답 이유:\n  - ② 정맥 면역글로불린은 스티븐스-존슨증후군·독성표피괴사용해에서 쓰기도 하지만 근거가 엇갈린다. 표피 박리와 두 곳 이상의 점막 침범이 있었다면 그 진단을 먼저 생각한다.\n  - ③ 경구 항히스타민제만으로는 장기 침범을 막지 못한다. 열·호산구증가·간 침범이 없는 가벼운 반점구진 약진이었다면 원인약 중단과 항히스타민제로 충분하다.\n  - ④ 아목시실린은 세균 감염의 치료이며 오히려 약진을 더 일으킬 수 있다. 인후 배양에서 연쇄상구균이 확인된 성홍열이었다면 페니실린 계열이 맞다.\n  - ⑤ 용량을 줄여 유지하면 과민반응이 계속된다. 용량 의존성 부작용(어지럼·복시)이라면 감량이 맞지만 면역 매개 반응은 반드시 끊는다.\n- 함정: 물집이 없으니 가벼운 약진으로 보고 항히스타민제만 주는 것 — 열·얼굴 부종·호산구증가·간 침범이 있으면 DRESS 다.\n- 학습목표: 항경련제 시작 2~8주 뒤 발열·얼굴 부종·발진·호산구증가·간 침범은 DRESS 이며 원인약 중단과 전신 스테로이드로 치료함을 안다\n- 근거·출처: Bolognia JL, et al. Dermatology, 4th ed. Ch. Drug reactions (DRESS — RegiSCAR criteria, systemic corticosteroids) · Kardaun SH, et al. The RegiSCAR scoring system for DRESS. Br J Dermatol 2013;169:1071-1080",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항경련제(카바마제핀)를 시작하고 3주 뒤 생긴 고열·얼굴 부종·넓은 홍반성 발진·림프절병증·호산구증가·간효소 상승은 호산구증가와 전신 증상을 동반한 약물 반응(DRESS)이다. 물집·피부 박리·점막 침범이 없어 스티븐스-존슨증후군과 다르다. 원인약을 즉시 끊고, 간 등 장기 침범이 있으면 전신 스테로이드를 쓰고 몇 주에 걸쳐 천천히 줄인다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 몇 주 뒤에 생기는가</b>: DRESS 는 약물(또는 대사산물)이 HLA 분자에 실려 T 세포를 자극하는 지연형(IV 형) 과민반응이다. 약에 대한 T 세포 클론이 늘어나는 데 시간이 걸려 시작 후 <b>2~8주</b>에 나타난다 — 며칠 만에 생기는 두드러기·약진과 시점이 다르다. 활성화된 T 세포가 IL-5 를 내 호산구가 늘고, 잠복해 있던 HHV-6 등 헤르페스바이러스가 재활성화되어 경과를 길게 끈다.<br> <b>왜 장기가 다치는가</b>: 피부뿐 아니라 간(가장 흔함)·콩팥·폐·심장에 T 세포와 호산구가 침윤한다. 사망은 대개 전격 간염과 심근염에서 오므로 간효소·크레아티닌·심전도를 확인한다.<br> <b>왜 스테로이드를 천천히 줄이는가</b>: 원인약을 끊어도 활성화된 면역 반응이 남아 있어, 장기 침범이 있으면 전신 스테로이드(프레드니솔론 약 0.5~1 mg/kg/일)로 누르고 6~8주 이상에 걸쳐 줄인다. 빨리 끊으면 재발한다. 카바마제핀과 교차 반응하는 방향족 항경련제(페니토인·페노바르비탈)도 피하고 레비티라세탐 등으로 바꾼다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">DRESS(이 환자)</th><th>스티븐스-존슨증후군 — 면역글로불린을 떠올리는 오답</th></tr></thead><tbody> <tr><td>시작 시점</td><td>약 시작 2~8주</td><td>약 시작 4~28일</td></tr> <tr><td>피부·점막</td><td>얼굴 부종, 넓은 홍반, 박리·점막 침범 드묾</td><td>표적 모양 반점, 표피 박리, 두 곳 이상 점막 침범</td></tr> <tr><td>혈액·장기</td><td>호산구증가, 간염, 림프절병증</td><td>호산구증가 드묾</td></tr> </tbody></table> 같은 카바마제핀이라도 점막과 표피가 벗겨지면 SJS/TEN, 얼굴 부종·호산구·간 침범이면 DRESS 다 — 둘 다 원인약 중단이 첫째다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 정맥 면역글로불린은 스티븐스-존슨증후군·독성표피괴사용해에서 쓰기도 하지만 근거가 엇갈린다. 표피 박리와 두 곳 이상의 점막 침범이 있었다면 그 진단을 먼저 생각한다.\n③ 경구 항히스타민제만으로는 장기 침범을 막지 못한다. 열·호산구증가·간 침범이 없는 가벼운 반점구진 약진이었다면 원인약 중단과 항히스타민제로 충분하다.\n④ 아목시실린은 세균 감염의 치료이며 오히려 약진을 더 일으킬 수 있다. 인후 배양에서 연쇄상구균이 확인된 성홍열이었다면 페니실린 계열이 맞다.\n⑤ 용량을 줄여 유지하면 과민반응이 계속된다. 용량 의존성 부작용(어지럼·복시)이라면 감량이 맞지만 면역 매개 반응은 반드시 끊는다."
+   },
+   {
+    "k": "함정",
+    "v": "물집이 없으니 가벼운 약진으로 보고 항히스타민제만 주는 것 — 열·얼굴 부종·호산구증가·간 침범이 있으면 DRESS 다."
+   },
+   {
+    "k": "학습목표",
+    "v": "항경련제 시작 2~8주 뒤 발열·얼굴 부종·발진·호산구증가·간 침범은 DRESS 이며 원인약 중단과 전신 스테로이드로 치료함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, et al. Dermatology, 4th ed. Ch. Drug reactions (DRESS — RegiSCAR criteria, systemic corticosteroids) · Kardaun SH, et al. The RegiSCAR scoring system for DRESS. Br J Dermatol 2013;169:1071-1080"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "카바마제핀 시작 3주 뒤 고열·얼굴 부종·넓은 발진·림프절병증·호산구증가·간 침범은 DRESS 이므로 원인약을 끊고 전신 스테로이드를 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "피부 박리·물집·점막 침범이 없고 호산구증가와 간 침범이 있다",
+   "steps": 2,
+   "chain": [
+    "약 시작 3주 + 고열·얼굴 부종·발진·호산구증가·간효소 상승 → DRESS",
+    "간 침범이 있는 DRESS → 원인약 중단 + 전신 스테로이드"
+   ],
+   "key": [
+    {
+     "item": "3주 전 뇌전증으로 카바마제핀을 시작하였다",
+     "why": "DRESS 의 전형적 잠복기와 원인약",
+     "also": []
+    },
+    {
+     "item": "얼굴이 붓고",
+     "why": "DRESS 의 특징적 소견",
+     "also": []
+    },
+    {
+     "item": "호산구 18 %",
+     "why": "호산구증가",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "피부 박리나 물집은 없고 입안 점막은 정상이다",
+     "why": "스티븐스-존슨증후군 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "알라닌아미노전달효소 242 U/L",
+     "why": "간 침범 — 전신 스테로이드가 필요하다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "크레아티닌 0.8 mg/dL",
+     "why": "콩팥 침범 없음 — 치료 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "카바마제핀 시작 3주 뒤 고열·얼굴 부종·넓은 발진·림프절병증·호산구증가·간효소 상승이 있고 점막·박리는 없다. DRESS 이므로 원인약을 끊고 전신 스테로이드를 쓴다.",
+   "switch": {
+    "choice": "B",
+    "condition": "표피가 벗겨지고 입안·결막 점막이 침범되었다면 스티븐스-존슨증후군으로 보고 면역글로불린 등을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261008T202154Z_일일영상_2026-10-09_10units_10q_902094cf",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0263",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통",
+  "type": "류마티스·근골격 — 손을 짚고 넘어진 청소년의 코담배갑 압통",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "14세 남자가 1일 전 농구를 하다 넘어지며 오른손을 뻗어 바닥을 짚은 뒤 생긴 손목 통증으로 내원하였다. 손목을 움직이면 엄지 쪽이 아프다고 한다. 진찰에서 해부학적 코담배갑에 압통이 있고, 엄지를 축 방향으로 밀면 통증이 심해진다. 원위 요골 성장판 부위에는 압통·부종·변형이 없고, 손가락의 감각과 모세혈관 재충만 시간은 정상이다. 오른쪽 손목 전후면 X선은 그림과 같고, 측면 X선에서도 골절선이나 전위는 보이지 않았다.",
+  "question": "다음 처치로 가장 적절한 것은?",
+  "options": [
+   "주상골 골절로 보고 즉시 관혈적 정복과 내고정을 한다",
+   "원위 요골 성장판 손상으로 보고 장상지 석고를 6주 한다",
+   "진통제만 처방하고 운동을 바로 다시 하도록 한다",
+   "엄지를 포함한 부목으로 고정하고 10~14일 뒤 재촬영한다",
+   "탄력붕대를 감고 통증이 남을 때만 다시 오게 한다"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: X선에서 원위 요골·척골의 성장판은 열려 있고 요골·척골·주상골의 피질은 끊긴 곳이 없으며 전위도 없다. 그러나 손을 뻗어 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 주상골 골절을 의심해야 하고, 주상골 골절은 첫 X선에서 상당수가 보이지 않는다. 그래서 첫 X선이 정상이어도 엄지를 포함한 부목으로 고정하고 10~14일 뒤 다시 찍거나(골절선 주변 흡수로 선이 드러난다) 가능하면 MRI 로 확인한다.\n- 원리: <b>왜 주상골은 놓치면 안 되는가</b>: 주상골의 혈액은 대부분 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 허리(중간부)나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊겨 <b>무혈성 괴사</b>와 <b>불유합</b>이 생기고, 진단이 늦어 고정하지 않은 채 움직이면 그 위험이 커진다. 불유합이 진행하면 손목 관절 전체가 무너지는 관절염(SNAC 손목)으로 이어진다.<br> <b>왜 첫 X선이 정상일 수 있는가</b>: 주상골은 비스듬히 놓인 작은 뼈이고 전위 없는 골절선은 머리카락처럼 가늘어 일반 전후면·측면에서 겹쳐 보이지 않는다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어져 보이므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다.<br> <b>그래서 원칙</b>: 임상적으로 의심되면 정상 X선을 「골절 없음」으로 받아들이지 않는다 — 엄지까지 고정해 주상골의 움직임을 막은 채 재촬영이나 MRI 로 확정한다. 청소년도 성장판이 닫혀 가는 나이라 성인형 주상골 골절이 생긴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잠복 주상골 골절(이 환자)</th><th>원위 요골 성장판 손상(Salter-Harris I형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>압통 위치</td><td>코담배갑, 엄지 축 방향 압박통</td><td>원위 요골 성장판 둘레(손목 등쪽·요측 바로 위)</td></tr> <tr><td>X선</td><td>정상일 수 있음 — 10~14일 뒤 골절선</td><td>정상이거나 성장판이 약간 넓어짐, 뒤에 골막 반응</td></tr> <tr><td>처치</td><td>엄지 포함 부목 → 재촬영 또는 MRI</td><td>단상지 고정 3~4주 뒤 재평가</td></tr> </tbody></table> 두 경우 모두 「X선 정상 + 국소 압통」이면 고정한다. 어디를 누를 때 아픈지가 고정 범위(엄지 포함 여부)와 확인 방법을 정한다.\n- 오답 이유:\n  - ① 즉시 관혈적 정복과 내고정은 X선이나 CT·MRI 에서 전위된(1 mm 이상) 주상골 골절이나 근위부 골절이 확인되었을 때의 치료다. 아직 골절 자체가 확인되지 않았다.\n  - ② 장기간 석고 고정은 원위 요골 성장판 둘레에 압통·부종이 있어 성장판 손상을 의심할 때의 처치다(대개 단상지 3~4주면 충분하다). 이 환자는 성장판 부위가 멀쩡하고 압통이 코담배갑에 있다.\n  - ③ 진통제만 주고 운동에 복귀시키는 것은 압통과 압박통이 모두 없는 가벼운 타박에서만 가능하다. 여기서는 숨은 골절이 움직임으로 불유합이 될 수 있다.\n  - ⑤ 탄력붕대만 감고 증상에 맡기는 것은 코담배갑 압통이 없는 단순 염좌에 맞다. 압통이 없고 축 방향 압박통도 없었다면 이 처치가 적절하다.\n- 함정: 정상 X선을 「골절 없음」으로 읽고 고정하지 않는 것 — 코담배갑 압통이면 X선이 정상이어도 주상골 골절로 보고 고정한다.\n- 학습목표: 코담배갑 압통이 있는데 첫 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영(또는 MRI)함을 안다\n- 근거·출처: Azar FM, Beaty JH. Campbell's Operative Orthopaedics, 14th ed. Ch. Fractures and dislocations of the wrist (scaphoid fractures — occult fracture, immobilization, repeat imaging) · American College of Radiology. ACR Appropriateness Criteria: Acute Hand and Wrist Trauma, 2018 update (suspected scaphoid fracture with normal radiographs) · 작성자 판독(2026-10-08): 14.1세 남 오른쪽 손목 전후면 — 원위 요골·척골 성장판 열림, 요골·척골·주상골 피질 연속, 골절선·전위·연부조직 종창 없음\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 원위 요골·척골의 성장판은 열려 있고 요골·척골·주상골의 피질은 끊긴 곳이 없으며 전위도 없다. 그러나 손을 뻗어 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 주상골 골절을 의심해야 하고, 주상골 골절은 첫 X선에서 상당수가 보이지 않는다. 그래서 첫 X선이 정상이어도 엄지를 포함한 부목으로 고정하고 10~14일 뒤 다시 찍거나(골절선 주변 흡수로 선이 드러난다) 가능하면 MRI 로 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 주상골은 놓치면 안 되는가</b>: 주상골의 혈액은 대부분 원위부(결절 쪽)에서 들어와 근위부로 거꾸로 흐른다. 허리(중간부)나 근위부가 부러지면 근위 조각으로 가는 혈류가 끊겨 <b>무혈성 괴사</b>와 <b>불유합</b>이 생기고, 진단이 늦어 고정하지 않은 채 움직이면 그 위험이 커진다. 불유합이 진행하면 손목 관절 전체가 무너지는 관절염(SNAC 손목)으로 이어진다.<br> <b>왜 첫 X선이 정상일 수 있는가</b>: 주상골은 비스듬히 놓인 작은 뼈이고 전위 없는 골절선은 머리카락처럼 가늘어 일반 전후면·측면에서 겹쳐 보이지 않는다. 1~2주 지나면 골절선 가장자리가 흡수되어 넓어져 보이므로 재촬영에서 드러난다. MRI 는 첫날에도 골수 부종으로 골절을 보여 준다.<br> <b>그래서 원칙</b>: 임상적으로 의심되면 정상 X선을 「골절 없음」으로 받아들이지 않는다 — 엄지까지 고정해 주상골의 움직임을 막은 채 재촬영이나 MRI 로 확정한다. 청소년도 성장판이 닫혀 가는 나이라 성인형 주상골 골절이 생긴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">잠복 주상골 골절(이 환자)</th><th>원위 요골 성장판 손상(Salter-Harris I형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>압통 위치</td><td>코담배갑, 엄지 축 방향 압박통</td><td>원위 요골 성장판 둘레(손목 등쪽·요측 바로 위)</td></tr> <tr><td>X선</td><td>정상일 수 있음 — 10~14일 뒤 골절선</td><td>정상이거나 성장판이 약간 넓어짐, 뒤에 골막 반응</td></tr> <tr><td>처치</td><td>엄지 포함 부목 → 재촬영 또는 MRI</td><td>단상지 고정 3~4주 뒤 재평가</td></tr> </tbody></table> 두 경우 모두 「X선 정상 + 국소 압통」이면 고정한다. 어디를 누를 때 아픈지가 고정 범위(엄지 포함 여부)와 확인 방법을 정한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 즉시 관혈적 정복과 내고정은 X선이나 CT·MRI 에서 전위된(1 mm 이상) 주상골 골절이나 근위부 골절이 확인되었을 때의 치료다. 아직 골절 자체가 확인되지 않았다.\n② 장기간 석고 고정은 원위 요골 성장판 둘레에 압통·부종이 있어 성장판 손상을 의심할 때의 처치다(대개 단상지 3~4주면 충분하다). 이 환자는 성장판 부위가 멀쩡하고 압통이 코담배갑에 있다.\n③ 진통제만 주고 운동에 복귀시키는 것은 압통과 압박통이 모두 없는 가벼운 타박에서만 가능하다. 여기서는 숨은 골절이 움직임으로 불유합이 될 수 있다.\n⑤ 탄력붕대만 감고 증상에 맡기는 것은 코담배갑 압통이 없는 단순 염좌에 맞다. 압통이 없고 축 방향 압박통도 없었다면 이 처치가 적절하다."
+   },
+   {
+    "k": "함정",
+    "v": "정상 X선을 「골절 없음」으로 읽고 고정하지 않는 것 — 코담배갑 압통이면 X선이 정상이어도 주상골 골절로 보고 고정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "코담배갑 압통이 있는데 첫 X선이 정상이면 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영(또는 MRI)함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Azar FM, Beaty JH. Campbell's Operative Orthopaedics, 14th ed. Ch. Fractures and dislocations of the wrist (scaphoid fractures — occult fracture, immobilization, repeat imaging) · American College of Radiology. ACR Appropriateness Criteria: Acute Hand and Wrist Trauma, 2018 update (suspected scaphoid fracture with normal radiographs) · 작성자 판독(2026-10-08): 14.1세 남 오른쪽 손목 전후면 — 원위 요골·척골 성장판 열림, 요골·척골·주상골 피질 연속, 골절선·전위·연부조직 종창 없음 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "손을 짚고 넘어진 뒤 코담배갑 압통과 엄지 축 방향 압박통이 있으면 X선이 정상이어도 잠복 주상골 골절로 보고 엄지 포함 부목 고정 뒤 재촬영한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "압통이 원위 요골 성장판이 아니라 코담배갑에 있다",
+   "steps": 3,
+   "chain": [
+    "손을 뻗어 짚고 넘어짐 + 코담배갑 압통 + 엄지 축 방향 압박통 → 주상골 골절 의심",
+    "영상: 골절선·전위 없음 → 첫 X선에서 안 보이는 잠복 골절일 수 있음",
+    "불유합·무혈성 괴사 위험 → 엄지 포함 고정 후 10~14일 뒤 재촬영"
+   ],
+   "key": [
+    {
+     "item": "영상: 요골·척골·주상골 피질이 연속되고 골절선·전위가 없다",
+     "why": "첫 X선 정상 — 그래도 잠복 골절을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "해부학적 코담배갑에 압통",
+     "why": "주상골 골절의 핵심 진찰 소견",
+     "also": []
+    },
+    {
+     "item": "엄지를 축 방향으로 밀면 통증이 심해진다",
+     "why": "주상골 압박통 — 의심을 높인다",
+     "also": []
+    },
+    {
+     "item": "오른손을 뻗어 바닥을 짚은 뒤",
+     "why": "주상골 골절의 전형적 손상 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "원위 요골 성장판 부위에는 압통·부종·변형이 없고",
+     "why": "성장판 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "손가락의 감각과 모세혈관 재충만 시간은 정상",
+     "why": "신경혈관 손상 없음 — 응급 처치가 필요하지 않다",
+     "also": []
+    },
+    {
+     "item": "14세 남자",
+     "why": "성장판이 아직 열린 나이 — 성장판 손상을 떠올리게 하는 함정",
+     "also": []
+    }
+   ],
+   "summary": "손을 짚고 넘어진 청소년이 코담배갑 압통과 엄지 축 방향 압박통을 보인다. 첫 X선이 정상이어도 잠복 주상골 골절로 보고 엄지를 포함해 고정한 뒤 10~14일 뒤 재촬영한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "압통과 부종이 코담배갑이 아니라 원위 요골 성장판 둘레에 있었다면 성장판 손상으로 보고 고정한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.ortho.scaphoid-fracture.occult-imaging",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0263.png",
+   "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0663_0857365894_01_WRI-R1_M014",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0262",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체",
+  "type": "부인과 — 임신 1삼분기에 시작된 고혈압과 흡입소파 검체",
+  "modality": "GROSS_PHOTO",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "A 46-year-old woman, gravida 4, para 3, comes to the emergency department because of headache and vaginal spotting for 4 days. Her last menstrual period was 13 weeks ago. One year ago, her blood pressure at a routine visit was 118/76 mm Hg. She takes no medications. Today, her blood pressure is 164/106 mm Hg, and pulse is 98/min. The uterus is palpable at the level of the umbilicus. There is no peripheral edema. Urinalysis shows 3+ protein. Serum creatinine concentration is 0.8 mg/dL, and serum thyroid-stimulating hormone concentration is within the reference range. Serum beta-hCG concentration is markedly increased. Transvaginal ultrasonography shows an intrauterine mass with multiple small cystic spaces. After blood pressure control, suction curettage is performed; a photograph of the evacuated uterine contents is shown.",
+  "question": "Which of the following is the most likely underlying cause of this patient's hypertension?",
+  "options": [
+   "Lupus nephritis",
+   "Hydatidiform mole",
+   "Chronic essential hypertension",
+   "Pheochromocytoma",
+   "Primary aldosteronism"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: The photograph shows numerous translucent, grape-like vesicles mixed with blood clot and no recognizable fetal tissue — hydropic chorionic villi of a hydatidiform mole. The uterus is much larger than dates (umbilicus at 13 weeks), beta-hCG is markedly increased and ultrasonography shows a multicystic intrauterine mass. Hypertension with proteinuria before 20 weeks of gestation in a woman who was normotensive a year earlier is preeclampsia occurring too early for an ordinary pregnancy; the classic explanation is a molar pregnancy, whose excess abnormal trophoblast drives the placental mechanism of preeclampsia ahead of schedule.\n- 원리: <b>Why preeclampsia usually waits until 20 weeks</b>: preeclampsia begins in the placenta. When cytotrophoblast fails to remodel the spiral arteries, the placenta becomes relatively ischemic and releases antiangiogenic factors such as soluble fms-like tyrosine kinase-1 (sFlt-1) and soluble endoglin. These bind VEGF and PlGF in the maternal circulation, causing endothelial dysfunction — hypertension, glomerular endotheliosis with proteinuria, and cerebral symptoms. Enough placental mass and enough mismatch between demand and supply to raise these factors normally appear only in the second half of pregnancy.<br> <b>Why a mole brings it forward</b>: in a hydatidiform mole the trophoblast proliferates excessively and the villi swell with fluid instead of developing a vascularized placenta. The trophoblastic mass is large early, and the same antiangiogenic imbalance appears in the first trimester. The very high hCG also explains hyperemesis, theca lutein cysts and, occasionally, hyperthyroidism (hCG shares a subunit with TSH).<br> <b>Clinical rule</b>: preeclampsia before 20 weeks should prompt ultrasonography and hCG measurement for molar pregnancy; treatment of the hypertension is supportive, and the definitive treatment is evacuation of the uterus.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hydatidiform mole (correct)</th><th>Chronic essential hypertension (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure before pregnancy</td><td>Normal — 118/76 mm Hg a year earlier</td><td>Elevated before pregnancy or before 20 weeks</td></tr> <tr><td>Proteinuria</td><td>Present (early preeclampsia)</td><td>Absent unless preeclampsia is superimposed, usually after 20 weeks</td></tr> <tr><td>Uterus and hCG</td><td>Large for dates, markedly high hCG, multicystic mass</td><td>Size appropriate for dates, hCG appropriate</td></tr> </tbody></table> Hypertension found before 20 weeks is chronic hypertension unless the pregnancy itself is abnormal; when proteinuria, a large uterus and very high hCG accompany it, the trophoblast is the cause.\n- 오답 이유:\n  - (A) Lupus nephritis can cause hypertension with proteinuria in early pregnancy; it would be favored by rash, arthritis, active urinary sediment and low complement rather than a multicystic uterine mass.\n  - (C) Chronic essential hypertension is the usual cause of hypertension before 20 weeks; it would fit if her blood pressure had already been elevated before pregnancy and there were no proteinuria or large-for-dates uterus.\n  - (D) Pheochromocytoma causes paroxysmal hypertension with headache, sweating and palpitations in any trimester; it would be likely with episodic symptoms, normal hCG for dates and elevated plasma metanephrines.\n  - (E) Primary aldosteronism causes hypertension with hypokalemia and suppressed renin; it would be suspected with low serum potassium and no proteinuria, and it does not enlarge the uterus.\n- 함정: Calling hypertension before 20 weeks chronic hypertension without noticing the normal pre-pregnancy pressure, the proteinuria and the large uterus — early preeclampsia points to a mole.\n- 학습목표: 임신 20주 이전에 생긴 전자간증 양상의 고혈압이 포상기태를 시사함을 알고, 흡입소파 검체의 포도알 모양 소포를 연결한다\n- 근거·출처: Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 13 Gestational trophoblastic disease (clinical findings, early-onset preeclampsia) · ACOG Practice Bulletin No. 222. Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260 (PMID 32443079) · PMC13090612 Figure 3 — case report of a 46-year-old woman (teacher-only) · 작성자 판독(2026-10-08): 흡입소파 자궁 내용물 — 반투명한 포도알 모양 소포가 무수히 섞이고 혈괴 동반, 태아 조직 안 보임\n\n## 출처\n- Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The photograph shows numerous translucent, grape-like vesicles mixed with blood clot and no recognizable fetal tissue — hydropic chorionic villi of a hydatidiform mole. The uterus is much larger than dates (umbilicus at 13 weeks), beta-hCG is markedly increased and ultrasonography shows a multicystic intrauterine mass. Hypertension with proteinuria before 20 weeks of gestation in a woman who was normotensive a year earlier is preeclampsia occurring too early for an ordinary pregnancy; the classic explanation is a molar pregnancy, whose excess abnormal trophoblast drives the placental mechanism of preeclampsia ahead of schedule."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why preeclampsia usually waits until 20 weeks</b>: preeclampsia begins in the placenta. When cytotrophoblast fails to remodel the spiral arteries, the placenta becomes relatively ischemic and releases antiangiogenic factors such as soluble fms-like tyrosine kinase-1 (sFlt-1) and soluble endoglin. These bind VEGF and PlGF in the maternal circulation, causing endothelial dysfunction — hypertension, glomerular endotheliosis with proteinuria, and cerebral symptoms. Enough placental mass and enough mismatch between demand and supply to raise these factors normally appear only in the second half of pregnancy.<br> <b>Why a mole brings it forward</b>: in a hydatidiform mole the trophoblast proliferates excessively and the villi swell with fluid instead of developing a vascularized placenta. The trophoblastic mass is large early, and the same antiangiogenic imbalance appears in the first trimester. The very high hCG also explains hyperemesis, theca lutein cysts and, occasionally, hyperthyroidism (hCG shares a subunit with TSH).<br> <b>Clinical rule</b>: preeclampsia before 20 weeks should prompt ultrasonography and hCG measurement for molar pregnancy; treatment of the hypertension is supportive, and the definitive treatment is evacuation of the uterus."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hydatidiform mole (correct)</th><th>Chronic essential hypertension (closest distractor)</th></tr></thead><tbody> <tr><td>Blood pressure before pregnancy</td><td>Normal — 118/76 mm Hg a year earlier</td><td>Elevated before pregnancy or before 20 weeks</td></tr> <tr><td>Proteinuria</td><td>Present (early preeclampsia)</td><td>Absent unless preeclampsia is superimposed, usually after 20 weeks</td></tr> <tr><td>Uterus and hCG</td><td>Large for dates, markedly high hCG, multicystic mass</td><td>Size appropriate for dates, hCG appropriate</td></tr> </tbody></table> Hypertension found before 20 weeks is chronic hypertension unless the pregnancy itself is abnormal; when proteinuria, a large uterus and very high hCG accompany it, the trophoblast is the cause."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Lupus nephritis can cause hypertension with proteinuria in early pregnancy; it would be favored by rash, arthritis, active urinary sediment and low complement rather than a multicystic uterine mass.\n(C) Chronic essential hypertension is the usual cause of hypertension before 20 weeks; it would fit if her blood pressure had already been elevated before pregnancy and there were no proteinuria or large-for-dates uterus.\n(D) Pheochromocytoma causes paroxysmal hypertension with headache, sweating and palpitations in any trimester; it would be likely with episodic symptoms, normal hCG for dates and elevated plasma metanephrines.\n(E) Primary aldosteronism causes hypertension with hypokalemia and suppressed renin; it would be suspected with low serum potassium and no proteinuria, and it does not enlarge the uterus."
+   },
+   {
+    "k": "함정",
+    "v": "Calling hypertension before 20 weeks chronic hypertension without noticing the normal pre-pregnancy pressure, the proteinuria and the large uterus — early preeclampsia points to a mole."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 20주 이전에 생긴 전자간증 양상의 고혈압이 포상기태를 시사함을 알고, 흡입소파 검체의 포도알 모양 소포를 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cunningham FG, et al. Williams Obstetrics, 26th ed. Ch. 13 Gestational trophoblastic disease (clinical findings, early-onset preeclampsia) · ACOG Practice Bulletin No. 222. Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260 (PMID 32443079) · PMC13090612 Figure 3 — case report of a 46-year-old woman (teacher-only) · 작성자 판독(2026-10-08): 흡입소파 자궁 내용물 — 반투명한 포도알 모양 소포가 무수히 섞이고 혈괴 동반, 태아 조직 안 보임 ## 출처 Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "임신 13주에 단백뇨를 동반한 새 고혈압과 주수보다 큰 자궁·높은 hCG 가 있고 검체가 포도알 모양 소포이므로 고혈압의 원인은 포상기태다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "1년 전 혈압이 정상이었고 단백뇨·주수보다 큰 자궁·포도알 모양 소포가 있어 만성 고혈압이 아니다",
+   "steps": 2,
+   "chain": [
+    "임신 13주 단백뇨 동반 새 고혈압 → 20주 이전 전자간증 양상",
+    "주수보다 큰 자궁·높은 hCG·다낭성 자궁 내 종괴·포도알 모양 소포 → 포상기태가 원인"
+   ],
+   "key": [
+    {
+     "item": "영상: 반투명한 포도알 모양 소포가 무수히 섞인 자궁 내용물",
+     "why": "수종성 융모 — 포상기태의 육안 소견",
+     "also": []
+    },
+    {
+     "item": "Her last menstrual period was 13 weeks ago",
+     "why": "20주 이전 — 보통의 전자간증으로는 너무 이르다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis shows 3+ protein",
+     "why": "단순 고혈압이 아니라 전자간증 양상",
+     "also": []
+    },
+    {
+     "item": "The uterus is palpable at the level of the umbilicus",
+     "why": "13주에 배꼽 높이 — 주수보다 큰 자궁",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "her blood pressure at a routine visit was 118/76 mm Hg",
+     "why": "임신 전 정상 혈압 — 만성 고혈압 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine concentration is 0.8 mg/dL",
+     "why": "콩팥 기능 정상 — 진행된 루푸스신염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "serum thyroid-stimulating hormone concentration is within the reference range",
+     "why": "hCG 에 의한 갑상샘중독은 없다 — 원인 판단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "She takes no medications",
+     "why": "약물성 고혈압 배제용 배경",
+     "also": []
+    }
+   ],
+   "summary": "임신 13주에 단백뇨를 동반한 새 고혈압은 20주 이전 전자간증이다. 주수보다 큰 자궁·높은 hCG·포도알 모양 소포가 원인이 포상기태임을 보여 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "임신 전부터 혈압이 높았고 단백뇨가 없으며 자궁 크기·hCG 가 주수에 맞았다면 만성 고혈압이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0262.jpg",
+   "caption": "Photograph of the evacuated uterine contents in a specimen container — single-panel figure as published (PMC Open Access Subset, CC BY; no cropping or color adjustment)",
+   "alt": "GROSS_PHOTO 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090612/",
+   "asset_id": "PMC-PMC13090612_Figure3",
+   "text": "Preeclampsia as the Presenting Symptom in Molar Pregnancy: A Case Report. Cureus. 2026 Mar 18;18(3):e105470. doi: 10.7759/cureus.105470 (CC BY) — Figure 3"
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0269",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석",
+  "type": "예방의학·역학·보건통계 — 유의하지 않은 시험 결과의 신뢰구간 해석",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-07",
+  "vignette": "A 64-year-old man with chronic obstructive pulmonary disease, who was hospitalized twice last year for exacerbations, asks his physician whether a new inhaled drug would keep him out of the hospital. The physician reviews the only published trial. This randomized controlled trial evaluates whether a new inhaled drug reduces hospitalization for exacerbation within 1 year in patients with chronic obstructive pulmonary disease. Before the study, the investigators specified that an absolute risk reduction of 5 percentage points or more would be clinically important. A total of 300 patients are enrolled, 150 in each group, and all complete follow-up. Hospitalization occurs in 24 patients (16%) receiving the drug and in 33 patients (22%) receiving placebo. The absolute risk reduction is 6 percentage points (95% CI, -2.7 to 14.7; P = 0.18). Adverse events are similar in the two groups.",
+  "question": "Which of the following is the most appropriate interpretation of these results for counseling this patient?",
+  "options": [
+   "The trial shows that the drug is equivalent to placebo within the prespecified margin",
+   "The trial's result is invalid because the P value is greater than 0.05",
+   "The trial cannot exclude a clinically important benefit and was likely too small to detect one",
+   "The trial shows that the drug has no effect on hospitalization for exacerbation",
+   "The trial shows a clinically important benefit because the point estimate exceeds 5 points"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The 95% confidence interval for the absolute risk reduction runs from -2.7 to 14.7 percentage points. It includes zero, so the result is not statistically significant, but it also includes values far above the 5-point threshold the investigators called clinically important. The data are therefore compatible both with no benefit (or slight harm) and with a large benefit: absence of evidence is not evidence of absence. With 150 patients per group, the trial had low power to detect a 6-point difference; a larger trial is needed.\n- 원리: <b>What a confidence interval says</b>: the 95% CI is the range of true effects that are reasonably compatible with the data. The P value only asks whether zero lies inside it. A nonsignificant P value with a CI that is <b>wide</b> and reaches clinically important values means the study is inconclusive, not negative.<br> <b>Why this trial was underpowered</b>: to detect a reduction from 22% to 16% with 80% power at α = 0.05, roughly 700 patients per group are needed. With 150 per group, the chance of a type II error (missing a true effect of that size) was large. The width of the CI shows this directly — about ±8.7 points around the estimate.<br> <b>How to claim \"no effect\"</b>: to conclude that a drug does not have an important effect, the whole CI must lie below the clinically important threshold (here, the upper bound would need to be below 5 points). To claim equivalence, the CI must lie within a prespecified margin on both sides. The point estimate alone, however close to or above the threshold, never establishes benefit when the CI includes zero.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Inconclusive, underpowered (correct)</th><th>Evidence of no effect (closest distractor)</th></tr></thead><tbody> <tr><td>Where the CI lies</td><td>Includes zero and values above the 5-point threshold (-2.7 to 14.7)</td><td>Includes zero but the upper bound is below the clinically important threshold</td></tr> <tr><td>What it rules out</td><td>Only large harm</td><td>Any clinically important benefit</td></tr> <tr><td>Next step</td><td>Larger trial or meta-analysis</td><td>Stop pursuing this effect size</td></tr> </tbody></table> Read the CI against two lines — zero and the clinically important difference — before choosing between \"no effect\", \"benefit\" and \"inconclusive\".\n- 오답 이유:\n  - (A) Equivalence would require the whole CI to lie within a prespecified equivalence margin, such as -3 to 3 points; this CI is far wider, and the trial was not designed to show equivalence.\n  - (B) A P value above 0.05 does not invalidate a trial; validity depends on randomization, blinding and follow-up, which appear adequate. A trial with major loss to follow-up or broken allocation would be invalid.\n  - (D) Concluding no effect would be correct only if the entire CI lay below the 5-point threshold, for example -1.0 to 3.5; here the upper bound is 14.7 points, so an important benefit remains possible.\n  - (E) A point estimate above the threshold suggests benefit, but the CI still includes zero and slight harm; benefit would be shown if the lower bound of the CI were above zero, ideally above 5 points.\n- 함정: Reading P > 0.05 as proof of no effect — the CI still includes an effect larger than the clinically important threshold.\n- 학습목표: 통계적으로 유의하지 않은 결과도 신뢰구간이 임상적으로 중요한 효과를 포함하면 효과가 없다고 결론 내릴 수 없음(검정력 부족)을 안다\n- 근거·출처: Altman DG, Bland JM. Absence of evidence is not evidence of absence. BMJ 1995;311:485 (PMID 7647644) · Gordis L. Epidemiology, 5th ed. Ch. Randomized trials — sample size, power and interpretation of negative results",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The 95% confidence interval for the absolute risk reduction runs from -2.7 to 14.7 percentage points. It includes zero, so the result is not statistically significant, but it also includes values far above the 5-point threshold the investigators called clinically important. The data are therefore compatible both with no benefit (or slight harm) and with a large benefit: absence of evidence is not evidence of absence. With 150 patients per group, the trial had low power to detect a 6-point difference; a larger trial is needed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What a confidence interval says</b>: the 95% CI is the range of true effects that are reasonably compatible with the data. The P value only asks whether zero lies inside it. A nonsignificant P value with a CI that is <b>wide</b> and reaches clinically important values means the study is inconclusive, not negative.<br> <b>Why this trial was underpowered</b>: to detect a reduction from 22% to 16% with 80% power at α = 0.05, roughly 700 patients per group are needed. With 150 per group, the chance of a type II error (missing a true effect of that size) was large. The width of the CI shows this directly — about ±8.7 points around the estimate.<br> <b>How to claim \"no effect\"</b>: to conclude that a drug does not have an important effect, the whole CI must lie below the clinically important threshold (here, the upper bound would need to be below 5 points). To claim equivalence, the CI must lie within a prespecified margin on both sides. The point estimate alone, however close to or above the threshold, never establishes benefit when the CI includes zero."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Inconclusive, underpowered (correct)</th><th>Evidence of no effect (closest distractor)</th></tr></thead><tbody> <tr><td>Where the CI lies</td><td>Includes zero and values above the 5-point threshold (-2.7 to 14.7)</td><td>Includes zero but the upper bound is below the clinically important threshold</td></tr> <tr><td>What it rules out</td><td>Only large harm</td><td>Any clinically important benefit</td></tr> <tr><td>Next step</td><td>Larger trial or meta-analysis</td><td>Stop pursuing this effect size</td></tr> </tbody></table> Read the CI against two lines — zero and the clinically important difference — before choosing between \"no effect\", \"benefit\" and \"inconclusive\"."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Equivalence would require the whole CI to lie within a prespecified equivalence margin, such as -3 to 3 points; this CI is far wider, and the trial was not designed to show equivalence.\n(B) A P value above 0.05 does not invalidate a trial; validity depends on randomization, blinding and follow-up, which appear adequate. A trial with major loss to follow-up or broken allocation would be invalid.\n(D) Concluding no effect would be correct only if the entire CI lay below the 5-point threshold, for example -1.0 to 3.5; here the upper bound is 14.7 points, so an important benefit remains possible.\n(E) A point estimate above the threshold suggests benefit, but the CI still includes zero and slight harm; benefit would be shown if the lower bound of the CI were above zero, ideally above 5 points."
+   },
+   {
+    "k": "함정",
+    "v": "Reading P > 0.05 as proof of no effect — the CI still includes an effect larger than the clinically important threshold."
+   },
+   {
+    "k": "학습목표",
+    "v": "통계적으로 유의하지 않은 결과도 신뢰구간이 임상적으로 중요한 효과를 포함하면 효과가 없다고 결론 내릴 수 없음(검정력 부족)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Altman DG, Bland JM. Absence of evidence is not evidence of absence. BMJ 1995;311:485 (PMID 7647644) · Gordis L. Epidemiology, 5th ed. Ch. Randomized trials — sample size, power and interpretation of negative results"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "절대위험감소의 95 % 신뢰구간이 0 과 임상적으로 중요한 5 %p 를 모두 포함하므로, 효과가 없다고도 있다고도 결론 내릴 수 없고 검정력이 부족했다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "신뢰구간 상한(14.7 %p)이 임상적 중요 기준 5 %p 를 넘어 중요한 이익을 배제하지 못한다",
+   "steps": 3,
+   "chain": [
+    "95 % 신뢰구간 -2.7 ~ 14.7 %p 가 0 을 포함 → 통계적으로 유의하지 않음",
+    "같은 구간이 임상적 중요 기준 5 %p 이상도 포함 → 중요한 이익을 배제하지 못함",
+    "군당 150명·넓은 구간 → 검정력 부족, 결론 불가"
+   ],
+   "key": [
+    {
+     "item": "95% CI, -2.7 to 14.7",
+     "why": "0 과 5 %p 를 모두 포함",
+     "also": []
+    },
+    {
+     "item": "an absolute risk reduction of 5 percentage points or more would be clinically important",
+     "why": "신뢰구간과 비교할 기준선",
+     "also": []
+    },
+    {
+     "item": "150 in each group",
+     "why": "작은 표본 — 검정력 부족의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "P = 0.18",
+     "why": "유의하지 않다 — 그러나 무효과의 증거는 아니다",
+     "also": []
+    },
+    {
+     "item": "all complete follow-up",
+     "why": "추적 소실로 결과가 무효라는 해석의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Adverse events are similar in the two groups",
+     "why": "안전성 정보 — 효과 해석에는 쓰지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "신뢰구간이 0 과 임상적 중요 기준 5 %p 를 모두 포함한다. 유의하지 않지만 효과가 없다는 증거가 아니며, 작은 시험이라 중요한 이익을 배제하지 못한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "95 % 신뢰구간이 -1.0 ~ 3.5 %p 처럼 상한이 5 %p 아래였다면 임상적으로 중요한 효과는 없다고 결론 내릴 수 있다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0268",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "소화기·간담췌 — 간경변 환자의 토혈",
+  "type": "소화기·간담췌 — 간경변 환자의 토혈",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "56세 남자가 2시간 전부터 선홍색 피를 두 차례 토하여 응급실에 왔다. 20년간 하루 소주 2병을 마셨고, 2년 전 알코올 간경변으로 진단받았다. 혈압 92/58 mmHg, 맥박 112회/분, 체온 36.6 °C 이다. 의식은 명료하고 공막에 황달이 있으며 배가 불러 있고 이동탁음이 있다. 혈액검사에서 혈색소 8.1 g/dL, 혈소판 68,000/mm³, 프로트롬빈시간 INR 1.6, 총빌리루빈 3.2 mg/dL, 알부민 2.7 g/dL, 크레아티닌 1.0 mg/dL 이다. 정맥로 2개를 확보하고 혈색소 7~8 g/dL 를 목표로 수혈하면서 옥트레오타이드 정맥 주입을 시작하였고, 12시간 안에 내시경을 하기로 하였다.",
+  "question": "지금 함께 투여해야 할 약으로 가장 적절한 것은?",
+  "options": [
+   "세프트리악손 정맥 주사",
+   "프로프라놀롤 경구 투여",
+   "트라넥삼산 정맥 주사",
+   "비타민 K 정맥 주사",
+   "알부민 정맥 주입"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 알코올 간경변(복수·황달·혈소판감소) 환자의 선홍색 토혈과 저혈압은 정맥류 출혈을 먼저 생각한다. 혈관작용제(옥트레오타이드)·제한적 수혈과 함께, 간경변 환자의 위장관출혈에는 세균 감염(특발세균복막염·균혈증)이 흔하고 재출혈·사망을 늘리므로 예방적 항생제를 바로 투여한다. 진행된 간경변에서는 세프트리악손 1 g/일 정맥 주사를 최대 7일 쓴다. 그 뒤 12시간 안에 내시경 결찰술을 한다.\n- 원리: <b>왜 항생제가 생존을 바꾸는가</b>: 간경변 환자는 장 투과성이 높고 장내세균이 과증식하며 문맥 단락으로 간의 세균 여과가 약하다. 출혈로 장 점막 혈류가 떨어지면 세균 전위(translocation)가 늘어 출혈 환자의 절반 가까이에서 세균 감염이 생긴다. 감염은 내독소·사이토카인으로 문맥압을 더 올리고 지혈을 방해해 <b>조기 재출혈</b>과 사망을 늘린다. 예방적 항생제는 감염·재출혈·사망을 모두 줄인 몇 안 되는 처치다.<br> <b>왜 세프트리악손인가</b>: 원인균은 주로 장내 그람음성막대균이고, 진행된 간경변(복수·황달·영양불량)이나 퀴놀론 예방 중인 환자에서는 퀴놀론 내성이 흔해 3세대 세팔로스포린이 경구 노르플록사신보다 낫다.<br> <b>급성기 β차단제는 왜 안 되는가</b>: 비선택 β차단제는 심박출량과 내장 혈류를 줄여 2차 예방에는 좋지만, 출혈 중인 저혈압 환자에서는 보상성 빈맥을 막아 쇼크를 악화시킨다. 출혈이 멎고 혈역학이 안정된 뒤(대개 2~5일) 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세프트리악손(정답)</th><th>프로프라놀롤(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td>입원 즉시, 내시경 전</td><td>출혈이 멎고 혈역학이 안정된 뒤(2차 예방)</td></tr> <tr><td>효과</td><td>감염·조기 재출혈·사망 감소</td><td>문맥압을 낮춰 장기 재출혈 감소</td></tr> <tr><td>이 환자에서</td><td>복수·황달이 있는 진행 간경변 — 더 필요하다</td><td>혈압 92/58 mmHg, 맥박 112회/분 — 쇼크를 악화시킨다</td></tr> </tbody></table> 두 약 모두 정맥류 출혈 관리에 들어가지만, 급성기에는 항생제, 회복기에는 β차단제다.\n- 오답 이유:\n  - ② 프로프라놀롤은 정맥류 출혈이 멎고 혈역학이 안정된 뒤 결찰술과 함께 재출혈을 막는 2차 예방약이다. 퇴원을 앞둔 안정된 환자라면 정답이다.\n  - ③ 트라넥삼산은 대규모 시험(HALT-IT)에서 위장관출혈의 사망을 줄이지 못하고 혈전 합병증을 늘렸다. 산후출혈·외상 출혈처럼 섬유소용해가 주된 경우라면 쓸 수 있다.\n  - ④ 비타민 K 는 결핍(영양불량·담즙정체·와파린)으로 INR 이 높을 때 교정한다. 간경변의 INR 상승은 합성 장애라 거의 교정되지 않는다 — 와파린 복용자라면 맞다.\n  - ⑤ 알부민은 특발세균복막염에서 항생제와 함께, 또는 대량 복수천자 뒤 콩팥 기능을 지키려고 준다. 복수천자에서 호중구가 250/mm³ 이상이었다면 항생제와 함께 정답이 된다.\n- 함정: 정맥류 출혈에 β차단제를 바로 시작하는 것 — 급성기에는 저혈압을 악화시키고, 지금 필요한 것은 예방적 항생제다.\n- 학습목표: 간경변 환자의 상부위장관출혈에서 혈관작용제와 함께 예방적 항생제(세프트리악손)를 투여하고 급성기에 β차단제를 쓰지 않음을 안다\n- 근거·출처: de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 (PMID 35120736) · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211 (PMID 37870298) · HALT-IT Trial Collaborators. Effects of a high-dose 24-h infusion of tranexamic acid on death and thromboembolic events in patients with acute gastrointestinal bleeding. Lancet 2020;395:1927-1936 (PMID 32563378)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "알코올 간경변(복수·황달·혈소판감소) 환자의 선홍색 토혈과 저혈압은 정맥류 출혈을 먼저 생각한다. 혈관작용제(옥트레오타이드)·제한적 수혈과 함께, 간경변 환자의 위장관출혈에는 세균 감염(특발세균복막염·균혈증)이 흔하고 재출혈·사망을 늘리므로 예방적 항생제를 바로 투여한다. 진행된 간경변에서는 세프트리악손 1 g/일 정맥 주사를 최대 7일 쓴다. 그 뒤 12시간 안에 내시경 결찰술을 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 항생제가 생존을 바꾸는가</b>: 간경변 환자는 장 투과성이 높고 장내세균이 과증식하며 문맥 단락으로 간의 세균 여과가 약하다. 출혈로 장 점막 혈류가 떨어지면 세균 전위(translocation)가 늘어 출혈 환자의 절반 가까이에서 세균 감염이 생긴다. 감염은 내독소·사이토카인으로 문맥압을 더 올리고 지혈을 방해해 <b>조기 재출혈</b>과 사망을 늘린다. 예방적 항생제는 감염·재출혈·사망을 모두 줄인 몇 안 되는 처치다.<br> <b>왜 세프트리악손인가</b>: 원인균은 주로 장내 그람음성막대균이고, 진행된 간경변(복수·황달·영양불량)이나 퀴놀론 예방 중인 환자에서는 퀴놀론 내성이 흔해 3세대 세팔로스포린이 경구 노르플록사신보다 낫다.<br> <b>급성기 β차단제는 왜 안 되는가</b>: 비선택 β차단제는 심박출량과 내장 혈류를 줄여 2차 예방에는 좋지만, 출혈 중인 저혈압 환자에서는 보상성 빈맥을 막아 쇼크를 악화시킨다. 출혈이 멎고 혈역학이 안정된 뒤(대개 2~5일) 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세프트리악손(정답)</th><th>프로프라놀롤(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>시점</td><td>입원 즉시, 내시경 전</td><td>출혈이 멎고 혈역학이 안정된 뒤(2차 예방)</td></tr> <tr><td>효과</td><td>감염·조기 재출혈·사망 감소</td><td>문맥압을 낮춰 장기 재출혈 감소</td></tr> <tr><td>이 환자에서</td><td>복수·황달이 있는 진행 간경변 — 더 필요하다</td><td>혈압 92/58 mmHg, 맥박 112회/분 — 쇼크를 악화시킨다</td></tr> </tbody></table> 두 약 모두 정맥류 출혈 관리에 들어가지만, 급성기에는 항생제, 회복기에는 β차단제다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 프로프라놀롤은 정맥류 출혈이 멎고 혈역학이 안정된 뒤 결찰술과 함께 재출혈을 막는 2차 예방약이다. 퇴원을 앞둔 안정된 환자라면 정답이다.\n③ 트라넥삼산은 대규모 시험(HALT-IT)에서 위장관출혈의 사망을 줄이지 못하고 혈전 합병증을 늘렸다. 산후출혈·외상 출혈처럼 섬유소용해가 주된 경우라면 쓸 수 있다.\n④ 비타민 K 는 결핍(영양불량·담즙정체·와파린)으로 INR 이 높을 때 교정한다. 간경변의 INR 상승은 합성 장애라 거의 교정되지 않는다 — 와파린 복용자라면 맞다.\n⑤ 알부민은 특발세균복막염에서 항생제와 함께, 또는 대량 복수천자 뒤 콩팥 기능을 지키려고 준다. 복수천자에서 호중구가 250/mm³ 이상이었다면 항생제와 함께 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "정맥류 출혈에 β차단제를 바로 시작하는 것 — 급성기에는 저혈압을 악화시키고, 지금 필요한 것은 예방적 항생제다."
+   },
+   {
+    "k": "학습목표",
+    "v": "간경변 환자의 상부위장관출혈에서 혈관작용제와 함께 예방적 항생제(세프트리악손)를 투여하고 급성기에 β차단제를 쓰지 않음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "de Franchis R, et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol 2022;76:959-974 (PMID 35120736) · Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. Hepatology 2024;79:1180-1211 (PMID 37870298) · HALT-IT Trial Collaborators. Effects of a high-dose 24-h infusion of tranexamic acid on death and thromboembolic events in patients with acute gastrointestinal bleeding. Lancet 2020;395:1927-1936 (PMID 32563378)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "알코올 간경변 환자의 토혈·저혈압은 정맥류 출혈을 우선 생각하고, 혈관작용제·제한 수혈과 함께 감염과 재출혈을 줄이는 예방적 세프트리악손을 바로 준다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "저혈압·빈맥인 급성 출혈기에는 β차단제가 쇼크를 악화시키므로 쓰지 않는다",
+   "steps": 2,
+   "chain": [
+    "알코올 간경변(복수·황달·혈소판감소) + 선홍색 토혈 + 저혈압 → 정맥류 출혈 의심",
+    "간경변 위장관출혈 → 세균 감염 위험 → 예방적 세프트리악손(β차단제는 안정 뒤)"
+   ],
+   "key": [
+    {
+     "item": "2년 전 알코올 간경변으로 진단받았다",
+     "why": "정맥류 출혈과 감염 위험의 바탕",
+     "also": []
+    },
+    {
+     "item": "선홍색 피를 두 차례 토하여",
+     "why": "상부위장관출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로트롬빈시간 INR 1.6",
+     "why": "합성 장애에 의한 상승 — 비타민 K 로 교정되지 않는다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈압 92/58 mmHg, 맥박 112회/분",
+     "why": "β차단제를 지금 쓰면 안 되는 이유",
+     "also": []
+    },
+    {
+     "item": "이동탁음이 있다",
+     "why": "복수 — 진행 간경변, 세프트리악손을 고르는 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "옥트레오타이드 정맥 주입을 시작하였고",
+     "why": "혈관작용제는 이미 시작 — 남은 빈칸이 항생제",
+     "also": []
+    },
+    {
+     "item": "체온 36.6 °C",
+     "why": "열이 없어도 예방적 항생제를 준다",
+     "also": []
+    }
+   ],
+   "summary": "간경변 환자의 토혈은 정맥류 출혈을 먼저 생각한다. 옥트레오타이드·제한 수혈과 함께 예방적 세프트리악손을 바로 주고, β차단제는 출혈이 멎고 안정된 뒤 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "결찰술 뒤 출혈이 멎고 혈역학이 안정되어 퇴원을 준비하는 시점이라면 프로프라놀롤로 재출혈을 예방한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0267",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "신경 — 두통과 유두부종이 있는 젊은 비만 여성",
+  "type": "신경 — 두통과 유두부종이 있는 젊은 비만 여성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "A 27-year-old woman comes to the physician because of daily headaches for 2 months. The headaches are diffuse, worse in the morning and when she bends over, and are accompanied by brief episodes of visual dimming when she stands up and by a pulsatile whooshing sound in both ears. She has gained 12 kg over the past year. She takes no medications. Her BMI is 36 kg/m2. Blood pressure is 122/80 mm Hg. Visual acuity is 20/20 in both eyes. Funduscopic examination shows bilateral optic disc swelling. Automated perimetry shows enlarged blind spots without other field loss. Neurologic examination shows no other abnormalities. MRI and MR venography of the brain show an empty sella and flattening of the posterior globes, with no mass, hydrocephalus or venous sinus thrombosis. Lumbar puncture in the lateral decubitus position shows an opening pressure of 34 cm H2O; cerebrospinal fluid cell count, protein and glucose concentrations are within the reference ranges.",
+  "question": "In addition to a weight-loss program, which of the following is the most appropriate next step in management?",
+  "options": [
+   "Anticoagulation with heparin",
+   "Acetazolamide therapy",
+   "Ventriculoperitoneal shunt placement",
+   "Optic nerve sheath fenestration",
+   "High-dose intravenous methylprednisolone"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Headache worse when lying or bending, transient visual obscurations, pulsatile tinnitus, bilateral papilledema, an opening pressure of 34 cm H2O with normal CSF composition and neuroimaging without mass, hydrocephalus or venous sinus thrombosis in an obese young woman meet the criteria for idiopathic intracranial hypertension. Vision is preserved (20/20, only enlarged blind spots), so first-line treatment is weight loss and acetazolamide, a carbonic anhydrase inhibitor that reduces CSF production. Surgical procedures are reserved for severe or progressive visual loss despite medical therapy.\n- 원리: <b>What raises the pressure</b>: in idiopathic intracranial hypertension (IIH), CSF absorption into the venous sinuses is impaired and venous sinus pressure is often elevated (transverse sinus narrowing is common), especially in obese women of childbearing age. Raised intracranial pressure is transmitted along the optic nerve sheath, causing axoplasmic stasis — papilledema — and enlargement of the physiologic blind spot. The empty sella and flattened globes on MRI are indirect signs of chronically raised pressure.<br> <b>Why acetazolamide</b>: the choroid plexus secretes CSF using carbonic anhydrase to generate bicarbonate and drive sodium and water movement. Inhibiting the enzyme lowers CSF production by roughly a third; in the IIH Treatment Trial it improved visual field function more than weight loss alone. Side effects are paresthesias, altered taste of carbonated drinks, metabolic acidosis and kidney stones.<br> <b>Why not surgery first</b>: the threat in IIH is permanent optic nerve damage. When acuity and fields are threatened (fulminant IIH or progression despite drugs), CSF diversion, optic nerve sheath fenestration or venous sinus stenting protect vision; with only an enlarged blind spot, their risks outweigh the benefit.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Acetazolamide (correct)</th><th>Ventriculoperitoneal shunt (closest distractor)</th></tr></thead><tbody> <tr><td>Visual status</td><td>Normal acuity, enlarged blind spot only</td><td>Rapidly progressive field or acuity loss, or failure of maximal medical therapy</td></tr> <tr><td>How it lowers pressure</td><td>Less CSF produced by the choroid plexus</td><td>Drains CSF to the peritoneum</td></tr> <tr><td>Main drawbacks</td><td>Paresthesia, acidosis, kidney stones</td><td>Shunt obstruction, infection, overdrainage headache, frequent revisions</td></tr> </tbody></table> The degree of visual loss, not the height of the opening pressure, decides when to move from medical to surgical treatment.\n- 오답 이유:\n  - (A) Heparin anticoagulation treats cerebral venous sinus thrombosis, which can mimic IIH; it would be correct if MR venography had shown a filling defect in a dural sinus.\n  - (C) A ventriculoperitoneal or lumboperitoneal shunt is used when vision is deteriorating rapidly or medical therapy fails; it would be correct if perimetry showed progressive field constriction despite acetazolamide.\n  - (D) Optic nerve sheath fenestration protects the optic nerve when visual loss is the main problem and headache is mild; it would fit worsening fields with acetazolamide intolerance, not preserved vision.\n  - (E) High-dose methylprednisolone treats optic neuritis, which causes painful monocular visual loss with a normal or mildly swollen disc; it does not lower CSF pressure and worsens weight gain.\n- 함정: Jumping to a shunt because the opening pressure is high — management of IIH is driven by visual status, and preserved vision calls for acetazolamide and weight loss.\n- 학습목표: 시야 손실이 경미한 특발두개내고혈압의 첫 치료는 체중 감량과 아세타졸아마이드이고, 수술은 진행하는 시력 손실에 남겨 둠을 안다\n- 근거·출처: Friedman DI, Liu GT, Digre KB. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. Neurology 2013;81:1159-1165 (PMID 23966248) · NORDIC Idiopathic Intracranial Hypertension Study Group. Effect of acetazolamide on visual function in patients with idiopathic intracranial hypertension and mild visual loss: the IIH Treatment Trial. JAMA 2014;311:1641-1651 (PMID 24756514)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Headache worse when lying or bending, transient visual obscurations, pulsatile tinnitus, bilateral papilledema, an opening pressure of 34 cm H2O with normal CSF composition and neuroimaging without mass, hydrocephalus or venous sinus thrombosis in an obese young woman meet the criteria for idiopathic intracranial hypertension. Vision is preserved (20/20, only enlarged blind spots), so first-line treatment is weight loss and acetazolamide, a carbonic anhydrase inhibitor that reduces CSF production. Surgical procedures are reserved for severe or progressive visual loss despite medical therapy."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What raises the pressure</b>: in idiopathic intracranial hypertension (IIH), CSF absorption into the venous sinuses is impaired and venous sinus pressure is often elevated (transverse sinus narrowing is common), especially in obese women of childbearing age. Raised intracranial pressure is transmitted along the optic nerve sheath, causing axoplasmic stasis — papilledema — and enlargement of the physiologic blind spot. The empty sella and flattened globes on MRI are indirect signs of chronically raised pressure.<br> <b>Why acetazolamide</b>: the choroid plexus secretes CSF using carbonic anhydrase to generate bicarbonate and drive sodium and water movement. Inhibiting the enzyme lowers CSF production by roughly a third; in the IIH Treatment Trial it improved visual field function more than weight loss alone. Side effects are paresthesias, altered taste of carbonated drinks, metabolic acidosis and kidney stones.<br> <b>Why not surgery first</b>: the threat in IIH is permanent optic nerve damage. When acuity and fields are threatened (fulminant IIH or progression despite drugs), CSF diversion, optic nerve sheath fenestration or venous sinus stenting protect vision; with only an enlarged blind spot, their risks outweigh the benefit."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Acetazolamide (correct)</th><th>Ventriculoperitoneal shunt (closest distractor)</th></tr></thead><tbody> <tr><td>Visual status</td><td>Normal acuity, enlarged blind spot only</td><td>Rapidly progressive field or acuity loss, or failure of maximal medical therapy</td></tr> <tr><td>How it lowers pressure</td><td>Less CSF produced by the choroid plexus</td><td>Drains CSF to the peritoneum</td></tr> <tr><td>Main drawbacks</td><td>Paresthesia, acidosis, kidney stones</td><td>Shunt obstruction, infection, overdrainage headache, frequent revisions</td></tr> </tbody></table> The degree of visual loss, not the height of the opening pressure, decides when to move from medical to surgical treatment."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Heparin anticoagulation treats cerebral venous sinus thrombosis, which can mimic IIH; it would be correct if MR venography had shown a filling defect in a dural sinus.\n(C) A ventriculoperitoneal or lumboperitoneal shunt is used when vision is deteriorating rapidly or medical therapy fails; it would be correct if perimetry showed progressive field constriction despite acetazolamide.\n(D) Optic nerve sheath fenestration protects the optic nerve when visual loss is the main problem and headache is mild; it would fit worsening fields with acetazolamide intolerance, not preserved vision.\n(E) High-dose methylprednisolone treats optic neuritis, which causes painful monocular visual loss with a normal or mildly swollen disc; it does not lower CSF pressure and worsens weight gain."
+   },
+   {
+    "k": "함정",
+    "v": "Jumping to a shunt because the opening pressure is high — management of IIH is driven by visual status, and preserved vision calls for acetazolamide and weight loss."
+   },
+   {
+    "k": "학습목표",
+    "v": "시야 손실이 경미한 특발두개내고혈압의 첫 치료는 체중 감량과 아세타졸아마이드이고, 수술은 진행하는 시력 손실에 남겨 둠을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Friedman DI, Liu GT, Digre KB. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. Neurology 2013;81:1159-1165 (PMID 23966248) · NORDIC Idiopathic Intracranial Hypertension Study Group. Effect of acetazolamide on visual function in patients with idiopathic intracranial hypertension and mild visual loss: the IIH Treatment Trial. JAMA 2014;311:1641-1651 (PMID 24756514)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "비만한 젊은 여성의 두통·일과성 시력 흐림·박동성 이명·유두부종·개방압 34 cmH2O·정상 뇌척수액·정상 영상은 특발두개내고혈압이고, 시력이 보존되어 있어 체중 감량과 아세타졸아마이드로 치료한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "시력 20/20 에 맹점 확대뿐이라 수술적 뇌척수액 배액이 필요한 진행성 시력 손실이 없다",
+   "steps": 3,
+   "chain": [
+    "두통·일과성 시력 흐림·박동성 이명 + 양측 유두부종 → 두개내압 상승",
+    "정상 MRI·MRV, 개방압 34 cmH2O, 정상 뇌척수액 조성 → 특발두개내고혈압",
+    "시력 보존(맹점 확대뿐) → 체중 감량 + 아세타졸아마이드, 수술은 보류"
+   ],
+   "key": [
+    {
+     "item": "opening pressure of 34 cm H2O",
+     "why": "두개내압 상승 기준(성인 ≥ 25 cmH2O)",
+     "also": []
+    },
+    {
+     "item": "bilateral optic disc swelling",
+     "why": "유두부종",
+     "also": []
+    },
+    {
+     "item": "empty sella and flattening of the posterior globes",
+     "why": "만성 두개내압 상승의 간접 징후",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no mass, hydrocephalus or venous sinus thrombosis",
+     "why": "이차 원인 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "cerebrospinal fluid cell count, protein and glucose concentrations are within the reference ranges",
+     "why": "수막염·염증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Visual acuity is 20/20 in both eyes",
+     "why": "시력 보존 — 약물치료로 시작",
+     "also": []
+    },
+    {
+     "item": "enlarged blind spots without other field loss",
+     "why": "경미한 시야 변화 — 수술 적응증이 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Her BMI is 36 kg/m2",
+     "why": "위험인자 — 체중 감량은 이미 전제",
+     "also": []
+    }
+   ],
+   "summary": "비만한 젊은 여성의 유두부종과 개방압 상승, 정상 뇌척수액·영상은 특발두개내고혈압이다. 시력이 보존되어 체중 감량과 아세타졸아마이드로 시작한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "아세타졸아마이드에도 시야가 빠르게 좁아지거나 시력이 떨어졌다면 뇌척수액 단락술을 고려한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0266",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대",
+  "type": "호흡기 — 결절홍반·발목관절염과 양측 폐문 림프절 비대",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-07",
+  "vignette": "29세 여자가 1주 전부터 생긴 양쪽 발목 통증과 정강이의 붉은 멍울로 내원하였다. 미열이 있고, 기침이나 호흡곤란은 없다. 복용하는 약은 없고, 결핵 환자와 접촉한 적은 없다. 체온 37.8 °C, 혈압 118/72 mmHg 이다. 양쪽 정강이 앞에 누르면 아픈 2~4 cm 크기의 붉은 피하 결절이 여러 개 있고, 양쪽 발목 관절 주위가 붓고 따뜻하다. 폐음은 정상이다. 흉부 X선에서 양측 폐문 림프절이 대칭으로 커져 있고 폐 실질은 정상이다. 폐기능검사와 혈청 칼슘은 정상이고, 인터페론감마 분비검사는 음성이다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "비스테로이드소염제로 증상을 조절하며 경과를 관찰한다",
+   "경구 프레드니솔론을 하루 40 mg 으로 시작한다",
+   "이소니아지드 등 항결핵제 4제 요법을 시작한다",
+   "메토트렉세이트를 매주 복용하도록 시작한다",
+   "종격동 림프절 절제 후 항암화학요법을 시작한다"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 결절홍반, 양측 발목관절 주위염, 양측 대칭성 폐문 림프절 비대에 발열이 겹친 것은 뢰프그렌증후군 — 급성 사르코이드증의 한 형태다. 이 조합은 특이도가 높아 조직검사 없이 임상 진단할 수 있고, 90 % 이상이 1~2년 안에 저절로 좋아진다. 폐기능이 정상이고 고칼슘혈증·장기 침범이 없으므로 NSAID 로 관절통·결절홍반을 조절하며 지켜본다.\n- 원리: <b>사르코이드증과 뢰프그렌증후군</b>: 사르코이드증은 원인 항원에 대한 Th1 반응으로 비건락성 육아종이 생기는 병이다. 대부분 양측 폐문 림프절과 폐에 오고, 피부·눈·심장·신경·콩팥(고칼슘혈증)으로도 간다. 뢰프그렌증후군은 그 <b>급성</b> 표현형으로, 결절홍반(지방층의 지연형 과민반응)·발목관절 주위염·양측 폐문 림프절 비대가 한꺼번에 나타나며 HLA-DRB1*03 과 관련이 있다.<br> <b>왜 조직검사 없이 진단하는가</b>: 세 가지가 함께 있으면 사르코이드증일 확률이 95 % 를 넘는다. 감별할 결핵·림프종은 결절홍반·관절주위염 조합을 잘 만들지 않고, 인터페론감마 분비검사 음성과 대칭성 폐문 비대가 그 가능성을 더 낮춘다. 증상이 오래가거나 비전형적일 때만 기관지내시경 초음파 유도 림프절 흡인(EBUS-TBNA)을 한다.<br> <b>왜 스테로이드를 바로 쓰지 않는가</b>: 사르코이드증의 전신 스테로이드는 <b>장기 기능이 위협받을 때</b>(폐기능 저하·진행하는 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증) 쓴다. 뢰프그렌은 자연 관해가 대부분이라 스테로이드의 부작용과 재발만 늘린다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID 대증치료(정답)</th><th>경구 프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>뢰프그렌증후군, 폐문 림프절만 커진 1기, 폐기능 정상</td><td>폐기능 저하·진행 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증</td></tr> <tr><td>목표</td><td>관절통·결절홍반 증상 조절</td><td>육아종 염증 억제로 장기 기능 보존</td></tr> <tr><td>예후</td><td>90 % 이상 1~2년 안에 자연 관해</td><td>끊으면 재발이 흔하다</td></tr> </tbody></table> 「사르코이드증 = 스테로이드」가 아니다. 장기가 위협받는지를 먼저 보고, 아니면 지켜본다.\n- 오답 이유:\n  - ② 경구 프레드니솔론은 사르코이드증이 폐기능을 떨어뜨리거나 심장·신경·눈을 침범하거나 고칼슘혈증을 일으킬 때 쓴다. 폐기능이 감소했거나 칼슘이 높았다면 정답이다.\n  - ③ 항결핵제 4제는 결핵이 확인되거나 강하게 의심될 때 쓴다. 인터페론감마 분비검사가 양성이고 림프절 흡인에서 건락성 육아종·항산균이 나왔다면 맞다.\n  - ④ 메토트렉세이트는 스테로이드가 필요하지만 끊지 못하거나 부작용이 클 때 쓰는 스테로이드 절약제다. 만성 진행성 사르코이드증의 2차 치료라면 정답이다.\n  - ⑤ 림프절 절제와 항암치료는 림프종처럼 비대칭 종격동 종괴·B 증상·LDH 상승이 있고 조직으로 확진된 경우다. 대칭성 폐문 비대와 결절홍반 조합은 그 가능성을 낮춘다.\n- 함정: 사르코이드증이면 스테로이드를 바로 시작하는 것 — 뢰프그렌은 장기 위협이 없어 NSAID 로 지켜본다.\n- 학습목표: 결절홍반·양측 발목관절염·양측 폐문 림프절 비대(뢰프그렌증후군)는 조직검사 없이 진단하고 NSAID 로 대증치료하며 대부분 저절로 좋아짐을 안다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 367 Sarcoidosis (Löfgren syndrome, indications for treatment) · Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. Eur Respir J 2021;58:2004079 (PMID 34140301)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "결절홍반, 양측 발목관절 주위염, 양측 대칭성 폐문 림프절 비대에 발열이 겹친 것은 뢰프그렌증후군 — 급성 사르코이드증의 한 형태다. 이 조합은 특이도가 높아 조직검사 없이 임상 진단할 수 있고, 90 % 이상이 1~2년 안에 저절로 좋아진다. 폐기능이 정상이고 고칼슘혈증·장기 침범이 없으므로 NSAID 로 관절통·결절홍반을 조절하며 지켜본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>사르코이드증과 뢰프그렌증후군</b>: 사르코이드증은 원인 항원에 대한 Th1 반응으로 비건락성 육아종이 생기는 병이다. 대부분 양측 폐문 림프절과 폐에 오고, 피부·눈·심장·신경·콩팥(고칼슘혈증)으로도 간다. 뢰프그렌증후군은 그 <b>급성</b> 표현형으로, 결절홍반(지방층의 지연형 과민반응)·발목관절 주위염·양측 폐문 림프절 비대가 한꺼번에 나타나며 HLA-DRB1*03 과 관련이 있다.<br> <b>왜 조직검사 없이 진단하는가</b>: 세 가지가 함께 있으면 사르코이드증일 확률이 95 % 를 넘는다. 감별할 결핵·림프종은 결절홍반·관절주위염 조합을 잘 만들지 않고, 인터페론감마 분비검사 음성과 대칭성 폐문 비대가 그 가능성을 더 낮춘다. 증상이 오래가거나 비전형적일 때만 기관지내시경 초음파 유도 림프절 흡인(EBUS-TBNA)을 한다.<br> <b>왜 스테로이드를 바로 쓰지 않는가</b>: 사르코이드증의 전신 스테로이드는 <b>장기 기능이 위협받을 때</b>(폐기능 저하·진행하는 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증) 쓴다. 뢰프그렌은 자연 관해가 대부분이라 스테로이드의 부작용과 재발만 늘린다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">NSAID 대증치료(정답)</th><th>경구 프레드니솔론(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>뢰프그렌증후군, 폐문 림프절만 커진 1기, 폐기능 정상</td><td>폐기능 저하·진행 폐 침윤, 심장·신경·눈 침범, 고칼슘혈증</td></tr> <tr><td>목표</td><td>관절통·결절홍반 증상 조절</td><td>육아종 염증 억제로 장기 기능 보존</td></tr> <tr><td>예후</td><td>90 % 이상 1~2년 안에 자연 관해</td><td>끊으면 재발이 흔하다</td></tr> </tbody></table> 「사르코이드증 = 스테로이드」가 아니다. 장기가 위협받는지를 먼저 보고, 아니면 지켜본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 경구 프레드니솔론은 사르코이드증이 폐기능을 떨어뜨리거나 심장·신경·눈을 침범하거나 고칼슘혈증을 일으킬 때 쓴다. 폐기능이 감소했거나 칼슘이 높았다면 정답이다.\n③ 항결핵제 4제는 결핵이 확인되거나 강하게 의심될 때 쓴다. 인터페론감마 분비검사가 양성이고 림프절 흡인에서 건락성 육아종·항산균이 나왔다면 맞다.\n④ 메토트렉세이트는 스테로이드가 필요하지만 끊지 못하거나 부작용이 클 때 쓰는 스테로이드 절약제다. 만성 진행성 사르코이드증의 2차 치료라면 정답이다.\n⑤ 림프절 절제와 항암치료는 림프종처럼 비대칭 종격동 종괴·B 증상·LDH 상승이 있고 조직으로 확진된 경우다. 대칭성 폐문 비대와 결절홍반 조합은 그 가능성을 낮춘다."
+   },
+   {
+    "k": "함정",
+    "v": "사르코이드증이면 스테로이드를 바로 시작하는 것 — 뢰프그렌은 장기 위협이 없어 NSAID 로 지켜본다."
+   },
+   {
+    "k": "학습목표",
+    "v": "결절홍반·양측 발목관절염·양측 폐문 림프절 비대(뢰프그렌증후군)는 조직검사 없이 진단하고 NSAID 로 대증치료하며 대부분 저절로 좋아짐을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 367 Sarcoidosis (Löfgren syndrome, indications for treatment) · Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. Eur Respir J 2021;58:2004079 (PMID 34140301)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "결절홍반·양측 발목관절 주위염·양측 대칭성 폐문 림프절 비대·발열은 뢰프그렌증후군이고, 폐기능·칼슘이 정상이라 장기 위협이 없으므로 NSAID 로 대증치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "폐기능과 혈청 칼슘이 정상이라 스테로이드를 쓸 장기 위협이 없다",
+   "steps": 3,
+   "chain": [
+    "결절홍반 + 양측 발목관절 주위염 + 양측 대칭성 폐문 림프절 비대 → 뢰프그렌증후군",
+    "인터페론감마 분비검사 음성·대칭성 폐문 비대 → 결핵·림프종 가능성 낮음, 조직검사 없이 진단",
+    "폐기능·칼슘 정상, 장기 침범 없음 → 자연 관해 기대, NSAID 대증치료"
+   ],
+   "key": [
+    {
+     "item": "누르면 아픈 2~4 cm 크기의 붉은 피하 결절",
+     "why": "결절홍반",
+     "also": []
+    },
+    {
+     "item": "양쪽 발목 관절 주위가 붓고 따뜻하다",
+     "why": "발목관절 주위염",
+     "also": []
+    },
+    {
+     "item": "양측 폐문 림프절이 대칭으로 커져 있고",
+     "why": "뢰프그렌의 세 번째 요소",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "인터페론감마 분비검사는 음성",
+     "why": "결핵 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "폐기능검사와 혈청 칼슘은 정상",
+     "why": "장기 위협이 없어 스테로이드가 필요 없다",
+     "also": []
+    },
+    {
+     "item": "기침이나 호흡곤란은 없다",
+     "why": "폐 증상 없음 — 관찰을 뒷받침",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체온 37.8 °C",
+     "why": "급성 사르코이드증에 흔한 미열 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "결절홍반·발목관절 주위염·양측 폐문 림프절 비대는 뢰프그렌증후군이다. 폐기능과 칼슘이 정상이라 스테로이드 없이 NSAID 로 증상을 조절하며 지켜본다.",
+   "switch": {
+    "choice": "B",
+    "condition": "폐기능이 떨어져 있거나 고칼슘혈증·심장 침범이 있었다면 경구 스테로이드를 시작한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0005"
+ },
+ {
+  "id": "imaging-2026-0265",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "순환기 — 새벽 안정 시 흉통과 일과성 ST 상승",
+  "type": "순환기 — 새벽 안정 시 흉통과 일과성 ST 상승",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "A 38-year-old woman comes to the physician because of recurrent episodes of chest tightness during the past 2 months. The episodes occur between 4 AM and 6 AM while she is at rest, last 5 to 10 minutes, and resolve spontaneously or after sublingual nitroglycerin. She can climb stairs and jog without symptoms. She has smoked one pack of cigarettes daily for 18 years. She has migraine without aura. Her blood pressure is 124/78 mm Hg, and pulse is 72/min. Physical examination shows no abnormalities. An ECG recorded during an episode in the emergency department last week showed 2-mm ST-segment elevations in leads II, III and aVF that returned to baseline within 15 minutes; serum troponin concentrations were within the reference range. Coronary angiography shows no obstructive lesions.",
+  "question": "In addition to smoking cessation, which of the following is the most appropriate long-term pharmacotherapy?",
+  "options": [
+   "Propranolol",
+   "Aspirin and clopidogrel",
+   "Ranolazine",
+   "Sumatriptan",
+   "Amlodipine"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Chest pain at rest in the early morning with transient ST-segment elevation that resolves with nitroglycerin, normal troponin and no obstructive coronary disease is vasospastic (Prinzmetal) angina. Smoking is its strongest modifiable risk factor. Calcium channel blockers (amlodipine, diltiazem, nifedipine) relax coronary smooth muscle and prevent spasm; they are first-line long-term therapy, with nitrates added for breakthrough episodes.\n- 원리: <b>What happens in vasospastic angina</b>: a segment of an epicardial coronary artery has hyperreactive smooth muscle, often with endothelial dysfunction (less nitric oxide). In the early morning, vagal tone shifts and sympathetic and α-adrenergic activity rise; the segment constricts almost completely, producing transmural ischemia — hence ST <b>elevation</b> rather than depression — that resolves as soon as the spasm relaxes. Between episodes the angiogram is normal or shows only mild plaque, and exertion does not provoke pain because exercise is not the trigger.<br> <b>Why calcium channel blockers</b>: smooth-muscle contraction depends on calcium influx through L-type channels. Blocking it dilates the coronary artery directly and prevents the spasm; this treats the cause, unlike drugs that lower oxygen demand.<br> <b>Why nonselective β-blockers are avoided</b>: blocking β2-mediated vasodilation leaves α-mediated vasoconstriction unopposed and can worsen spasm. Triptans and ergots (for migraine), cocaine and amphetamines also provoke spasm and should be avoided.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Amlodipine (correct)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on coronary tone</td><td>Dilates — prevents spasm</td><td>Removes β2 vasodilation; α constriction unopposed</td></tr> <tr><td>Best indication</td><td>Vasospastic angina at rest with transient ST elevation</td><td>Exertional stable angina from fixed stenosis, migraine prophylaxis</td></tr> <tr><td>Effect on this patient</td><td>Fewer episodes</td><td>May increase frequency and severity</td></tr> </tbody></table> Both drugs reduce angina in fixed coronary stenosis; when the angiogram is normal and pain comes at rest with ST elevation, choose the vasodilator.\n- 오답 이유:\n  - (A) Propranolol suits exertional angina from a fixed stenosis and is also used for migraine prophylaxis; in vasospasm it leaves α-mediated constriction unopposed and can worsen episodes.\n  - (B) Dual antiplatelet therapy is used after acute coronary syndrome from plaque rupture or after stent placement; with no obstructive lesion and normal troponin, there is no thrombus to treat.\n  - (C) Ranolazine is an add-on for chronic stable angina that persists despite β-blockers and calcium channel blockers; it does not prevent coronary spasm and is not first-line here.\n  - (D) Sumatriptan treats migraine attacks but constricts coronary arteries and is contraindicated in vasospastic angina; it would be appropriate only for her migraine if she had no coronary disease.\n- 함정: Choosing a β-blocker as for ordinary angina — in vasospastic angina nonselective β-blockade can worsen spasm.\n- 학습목표: 정상 관상동맥에서 안정 시 일과성 ST 상승을 보이는 혈관연축 협심증의 장기 치료는 칼슘통로차단제이고 비선택 β차단제는 피함을 안다\n- 근거·출처: Libby P, et al. Braunwald's Heart Disease, 12th ed. Ch. Stable ischemic heart disease — variant (Prinzmetal) angina · Beltrame JF, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J 2017;38:2565-2568 (PMID 26245334)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Chest pain at rest in the early morning with transient ST-segment elevation that resolves with nitroglycerin, normal troponin and no obstructive coronary disease is vasospastic (Prinzmetal) angina. Smoking is its strongest modifiable risk factor. Calcium channel blockers (amlodipine, diltiazem, nifedipine) relax coronary smooth muscle and prevent spasm; they are first-line long-term therapy, with nitrates added for breakthrough episodes."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What happens in vasospastic angina</b>: a segment of an epicardial coronary artery has hyperreactive smooth muscle, often with endothelial dysfunction (less nitric oxide). In the early morning, vagal tone shifts and sympathetic and α-adrenergic activity rise; the segment constricts almost completely, producing transmural ischemia — hence ST <b>elevation</b> rather than depression — that resolves as soon as the spasm relaxes. Between episodes the angiogram is normal or shows only mild plaque, and exertion does not provoke pain because exercise is not the trigger.<br> <b>Why calcium channel blockers</b>: smooth-muscle contraction depends on calcium influx through L-type channels. Blocking it dilates the coronary artery directly and prevents the spasm; this treats the cause, unlike drugs that lower oxygen demand.<br> <b>Why nonselective β-blockers are avoided</b>: blocking β2-mediated vasodilation leaves α-mediated vasoconstriction unopposed and can worsen spasm. Triptans and ergots (for migraine), cocaine and amphetamines also provoke spasm and should be avoided."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Amlodipine (correct)</th><th>Propranolol (closest distractor)</th></tr></thead><tbody> <tr><td>Effect on coronary tone</td><td>Dilates — prevents spasm</td><td>Removes β2 vasodilation; α constriction unopposed</td></tr> <tr><td>Best indication</td><td>Vasospastic angina at rest with transient ST elevation</td><td>Exertional stable angina from fixed stenosis, migraine prophylaxis</td></tr> <tr><td>Effect on this patient</td><td>Fewer episodes</td><td>May increase frequency and severity</td></tr> </tbody></table> Both drugs reduce angina in fixed coronary stenosis; when the angiogram is normal and pain comes at rest with ST elevation, choose the vasodilator."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Propranolol suits exertional angina from a fixed stenosis and is also used for migraine prophylaxis; in vasospasm it leaves α-mediated constriction unopposed and can worsen episodes.\n(B) Dual antiplatelet therapy is used after acute coronary syndrome from plaque rupture or after stent placement; with no obstructive lesion and normal troponin, there is no thrombus to treat.\n(C) Ranolazine is an add-on for chronic stable angina that persists despite β-blockers and calcium channel blockers; it does not prevent coronary spasm and is not first-line here.\n(D) Sumatriptan treats migraine attacks but constricts coronary arteries and is contraindicated in vasospastic angina; it would be appropriate only for her migraine if she had no coronary disease."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing a β-blocker as for ordinary angina — in vasospastic angina nonselective β-blockade can worsen spasm."
+   },
+   {
+    "k": "학습목표",
+    "v": "정상 관상동맥에서 안정 시 일과성 ST 상승을 보이는 혈관연축 협심증의 장기 치료는 칼슘통로차단제이고 비선택 β차단제는 피함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Libby P, et al. Braunwald's Heart Disease, 12th ed. Ch. Stable ischemic heart disease — variant (Prinzmetal) angina · Beltrame JF, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J 2017;38:2565-2568 (PMID 26245334)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "새벽 안정 시 흉통·일과성 ST 상승·니트로글리세린 반응·정상 트로포닌·폐쇄 병변 없는 관상동맥은 혈관연축 협심증이고 장기 치료는 칼슘통로차단제다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "고정 협착이 없고 안정 시 연축이 원인이라 산소 요구를 줄이는 β차단제가 아니라 혈관을 넓히는 칼슘통로차단제를 쓴다 — 비선택 β차단제는 연축을 악화시킬 수 있다",
+   "steps": 2,
+   "chain": [
+    "새벽 안정 시 흉통 + 일과성 하벽 ST 상승 + 정상 트로포닌 + 정상 관상동맥 → 혈관연축 협심증",
+    "연축 예방 → 칼슘통로차단제, 비선택 β차단제·트립탄은 피함"
+   ],
+   "key": [
+    {
+     "item": "between 4 AM and 6 AM while she is at rest",
+     "why": "새벽 안정 시 발작 — 연축의 전형",
+     "also": []
+    },
+    {
+     "item": "2-mm ST-segment elevations in leads II, III and aVF that returned to baseline within 15 minutes",
+     "why": "일과성 전층 허혈",
+     "also": []
+    },
+    {
+     "item": "Coronary angiography shows no obstructive lesions",
+     "why": "고정 협착 없음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "She can climb stairs and jog without symptoms",
+     "why": "운동성 협심증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "serum troponin concentrations were within the reference range",
+     "why": "심근경색 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has migraine without aura",
+     "why": "트립탄을 피해야 하고, 편두통 예방에 프로프라놀롤을 떠올리게 하는 함정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has smoked one pack of cigarettes daily for 18 years",
+     "why": "연축의 위험인자 — 금연은 이미 전제",
+     "also": []
+    }
+   ],
+   "summary": "새벽 안정 시 흉통과 일과성 ST 상승, 정상 관상동맥은 혈관연축 협심증이다. 장기 치료는 칼슘통로차단제이고 비선택 β차단제·트립탄은 피한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "운동할 때만 흉통이 생기고 관상동맥에 고정 협착이 있었다면 β차단제가 첫 약이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0264",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 부인과·류마티스근골격·피부·순환기·호흡기·신경·소화기·예방)",
+  "subtopic": "피부 — 밤에 심해지는 가려움과 손가락 사이 구진",
+  "type": "피부 — 밤에 심해지는 가려움과 손가락 사이 구진",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-07",
+  "vignette": "28세 여자가 2주 전부터 생긴 가려움으로 내원하였다. 가려움은 밤에 특히 심하고, 함께 사는 남편도 최근 비슷하게 가렵다고 한다. 3주 전 요양병원에서 간병 일을 시작하였다. 진찰에서 손가락 사이, 손목 굽힘면, 배꼽 주위에 작은 붉은 구진과 찰과상이 있고, 손가락 사이에 회백색의 가늘고 구불구불한 선이 몇 개 보인다. 얼굴과 두피에는 병변이 없다. 이 선의 끝을 긁어 현미경으로 보았더니 진드기 알이 보였다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "본인만 경구 항히스타민제를 2주 동안 먹고 경과를 지켜본다",
+   "본인과 남편이 같은 날 경구 테르비나핀을 2주 동안 복용한다",
+   "본인과 남편이 같은 날 퍼메트린을 목 아래 전신에 바르고 1주 뒤 반복한다",
+   "본인만 퍼메트린을 병변 부위에 바르고 1주 뒤에 한 번 더 바른다",
+   "본인과 남편이 같은 날 강한 국소 스테로이드를 2주 동안 바른다"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 밤에 심한 가려움, 손가락 사이·손목·배꼽 주위의 구진, 손가락 사이의 굴(burrow), 가족 내 같은 증상, 긁은 검체의 진드기 알은 옴이다. 옴 진드기는 피부 각질층에 굴을 파고 살며 피부 접촉으로 옮으므로, 환자와 밀접 접촉자를 증상 유무와 관계없이 같은 날 함께 치료한다. 퍼메트린 5 % 크림을 목 아래 전신(병변 없는 곳 포함)에 바르고 8~14시간 뒤 씻으며, 알에서 깬 진드기를 잡으려고 1주 뒤 한 번 더 바른다.\n- 원리: <b>왜 전신·동시 치료인가</b>: 옴 진드기(Sarcoptes scabiei)는 각질층에 굴을 파고 알을 낳는다. 증상(가려움)은 진드기와 배설물에 대한 지연형 과민반응이라 처음 감염 뒤 <b>3~6주</b> 지나야 나타난다. 그래서 가려움이 없는 접촉자도 이미 감염되었을 수 있고, 한 사람만 치료하면 다시 옮아온다(핑퐁 감염). 진드기는 눈에 보이는 병변이 없는 피부에도 있으므로 병변 부위만 바르면 남는다.<br> <b>왜 1주 뒤 반복하는가</b>: 퍼메트린은 진드기의 나트륨 통로를 열린 채로 두어 마비시키지만 알 속 배아에는 잘 듣지 않는다. 알은 3~4일 만에 부화하므로 7일 뒤 다시 발라 새로 나온 진드기를 잡는다.<br> <b>치료 뒤에도 가렵다</b>: 과민반응이 남아 2~4주 가려울 수 있다(옴 후 가려움). 이는 치료 실패가 아니며 항히스타민제·약한 스테로이드로 조절한다. 침구·옷은 60 °C 이상으로 빨거나 72시간 밀봉한다. 간병 일터(요양병원)는 집단 발생 가능성이 있어 알려야 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">본인·접촉자 동시 전신 치료(정답)</th><th>본인만 병변 부위 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>바르는 범위</td><td>목 아래 전신 — 손톱 밑·사타구니까지</td><td>병변 부위만</td></tr> <tr><td>치료 대상</td><td>증상 없는 동거인도 같은 날</td><td>증상이 있는 본인만</td></tr> <tr><td>결과</td><td>재감염 고리를 끊는다</td><td>남은 진드기·남편에게서 재감염</td></tr> </tbody></table> 옴 치료의 실패는 대부분 약이 아니라 범위(전신)와 대상(접촉자)·반복(1주 뒤)을 빠뜨려서 생긴다.\n- 오답 이유:\n  - ① 경구 항히스타민제만으로는 가려움만 줄고 감염은 이어진다. 옴 치료를 마친 뒤 남는 옴 후 가려움에 덧붙여 쓰는 약이라면 맞는 선택이다.\n  - ② 경구 테르비나핀은 피부사상균에 의한 손발톱 백선의 치료다. 긁은 검체에서 진드기 알이 아니라 균사가 보였다면 정답에 가까워진다.\n  - ④ 본인만 병변에 바르면 눈에 안 보이는 부위의 진드기와 남편에게서 다시 옮는다. 혼자 살고 접촉자가 없으며 전신에 바른다면 본인 치료만으로 충분하다.\n  - ⑤ 강한 국소 스테로이드는 습진·접촉피부염의 치료다. 진드기를 죽이지 못하고 오히려 각질층 진드기 수를 늘려 딱지옴을 만들 수 있다 — 검체에 진드기가 없었다면 고려한다.\n- 함정: 본인만 치료하거나 병변 부위만 바르는 것 — 옴은 증상 없는 접촉자까지 같은 날 목 아래 전신으로 치료한다.\n- 학습목표: 옴은 환자와 밀접 접촉자를 동시에 퍼메트린으로 목 아래 전신 치료하고 1주 뒤 반복함을 안다\n- 근거·출처: Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. 178 Scabies, other mites, and pediculosis · Centers for Disease Control and Prevention. Scabies — Clinical Care (treatment of patients and close contacts), 2024",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "밤에 심한 가려움, 손가락 사이·손목·배꼽 주위의 구진, 손가락 사이의 굴(burrow), 가족 내 같은 증상, 긁은 검체의 진드기 알은 옴이다. 옴 진드기는 피부 각질층에 굴을 파고 살며 피부 접촉으로 옮으므로, 환자와 밀접 접촉자를 증상 유무와 관계없이 같은 날 함께 치료한다. 퍼메트린 5 % 크림을 목 아래 전신(병변 없는 곳 포함)에 바르고 8~14시간 뒤 씻으며, 알에서 깬 진드기를 잡으려고 1주 뒤 한 번 더 바른다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 전신·동시 치료인가</b>: 옴 진드기(Sarcoptes scabiei)는 각질층에 굴을 파고 알을 낳는다. 증상(가려움)은 진드기와 배설물에 대한 지연형 과민반응이라 처음 감염 뒤 <b>3~6주</b> 지나야 나타난다. 그래서 가려움이 없는 접촉자도 이미 감염되었을 수 있고, 한 사람만 치료하면 다시 옮아온다(핑퐁 감염). 진드기는 눈에 보이는 병변이 없는 피부에도 있으므로 병변 부위만 바르면 남는다.<br> <b>왜 1주 뒤 반복하는가</b>: 퍼메트린은 진드기의 나트륨 통로를 열린 채로 두어 마비시키지만 알 속 배아에는 잘 듣지 않는다. 알은 3~4일 만에 부화하므로 7일 뒤 다시 발라 새로 나온 진드기를 잡는다.<br> <b>치료 뒤에도 가렵다</b>: 과민반응이 남아 2~4주 가려울 수 있다(옴 후 가려움). 이는 치료 실패가 아니며 항히스타민제·약한 스테로이드로 조절한다. 침구·옷은 60 °C 이상으로 빨거나 72시간 밀봉한다. 간병 일터(요양병원)는 집단 발생 가능성이 있어 알려야 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">본인·접촉자 동시 전신 치료(정답)</th><th>본인만 병변 부위 치료(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>바르는 범위</td><td>목 아래 전신 — 손톱 밑·사타구니까지</td><td>병변 부위만</td></tr> <tr><td>치료 대상</td><td>증상 없는 동거인도 같은 날</td><td>증상이 있는 본인만</td></tr> <tr><td>결과</td><td>재감염 고리를 끊는다</td><td>남은 진드기·남편에게서 재감염</td></tr> </tbody></table> 옴 치료의 실패는 대부분 약이 아니라 범위(전신)와 대상(접촉자)·반복(1주 뒤)을 빠뜨려서 생긴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 항히스타민제만으로는 가려움만 줄고 감염은 이어진다. 옴 치료를 마친 뒤 남는 옴 후 가려움에 덧붙여 쓰는 약이라면 맞는 선택이다.\n② 경구 테르비나핀은 피부사상균에 의한 손발톱 백선의 치료다. 긁은 검체에서 진드기 알이 아니라 균사가 보였다면 정답에 가까워진다.\n④ 본인만 병변에 바르면 눈에 안 보이는 부위의 진드기와 남편에게서 다시 옮는다. 혼자 살고 접촉자가 없으며 전신에 바른다면 본인 치료만으로 충분하다.\n⑤ 강한 국소 스테로이드는 습진·접촉피부염의 치료다. 진드기를 죽이지 못하고 오히려 각질층 진드기 수를 늘려 딱지옴을 만들 수 있다 — 검체에 진드기가 없었다면 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "본인만 치료하거나 병변 부위만 바르는 것 — 옴은 증상 없는 접촉자까지 같은 날 목 아래 전신으로 치료한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "옴은 환자와 밀접 접촉자를 동시에 퍼메트린으로 목 아래 전신 치료하고 1주 뒤 반복함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kang S, et al. Fitzpatrick's Dermatology, 9th ed. Ch. 178 Scabies, other mites, and pediculosis · Centers for Disease Control and Prevention. Scabies — Clinical Care (treatment of patients and close contacts), 2024"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "밤에 심한 가려움·손가락 사이 굴·가족 내 증상·진드기 알로 옴을 진단하고, 본인과 접촉자를 같은 날 목 아래 전신 퍼메트린으로 치료한 뒤 1주 뒤 반복한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "남편도 가려워 접촉자 동시 치료가 필요하고, 진드기는 병변 없는 피부에도 있어 전신에 바른다",
+   "steps": 2,
+   "chain": [
+    "밤에 심한 가려움 + 손가락 사이 굴 + 진드기 알 → 옴",
+    "접촉 감염·잠복기 → 접촉자와 동시에 목 아래 전신 퍼메트린, 1주 뒤 반복"
+   ],
+   "key": [
+    {
+     "item": "회백색의 가늘고 구불구불한 선",
+     "why": "굴(burrow) — 옴의 특징 병변",
+     "also": []
+    },
+    {
+     "item": "진드기 알이 보였다",
+     "why": "확진",
+     "also": []
+    },
+    {
+     "item": "가려움은 밤에 특히 심하고",
+     "why": "옴의 전형적 증상",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "함께 사는 남편도 최근 비슷하게 가렵다고 한다",
+     "why": "접촉자 동시 치료의 근거",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "요양병원에서 간병 일",
+     "why": "감염원 단서 — 일터 집단 발생 확인이 필요하지만 치료 선택은 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "얼굴과 두피에는 병변이 없다",
+     "why": "성인 옴의 흔한 분포 — 목 아래 도포로 충분함을 뒷받침",
+     "also": []
+    }
+   ],
+   "summary": "밤에 심한 가려움, 손가락 사이 굴, 가족 내 증상과 진드기 알은 옴이다. 본인과 접촉자를 같은 날 목 아래 전신에 퍼메트린으로 치료하고 1주 뒤 반복한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "옴 치료를 제대로 마친 2주 뒤 새 굴 없이 가려움만 남았다면 옴 후 가려움으로 보고 항히스타민제로 조절한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261007T202226Z_일일영상_2026-10-08_8units_8q_59667b4c",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0253",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "소아청소년 — 넘어지고 3주 뒤 손목 X선",
+  "type": "소아청소년 — 넘어지고 3주 뒤 손목 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-06",
+  "vignette": "4세 남아가 손목 X선 검사 결과를 듣기 위해 어머니와 함께 외래에 왔다. 3주 전 놀이터에서 손을 짚고 넘어진 뒤 오른쪽 손목이 부어 동네 의원에서 부목을 대었고, 그때 X선 검사는 하지 않았다. 지금은 통증이 거의 없고 손을 잘 쓴다. 가족은 지은 지 50년 된 주택에 살고 있어 어머니는 납 중독을 걱정한다. 성장과 발달은 정상이고 복통이나 변비는 없다. 진찰에서 오른쪽 원위 전완에 가벼운 압통만 있고 변형과 부종은 없다. 혈색소 12.4 g/dL, 평균적혈구용적 80 fL 이다. 오른쪽 손목의 전후면 X선 사진은 그림과 같다.",
+  "question": "요골과 척골 원위부에 보이는 가로 경화대에 대한 설명으로 가장 적절한 것은?",
+  "options": [
+   "치유 중인 골절의 가골과 골소주 재형성",
+   "납 중독에 의한 골간단 고밀도선",
+   "성장 정지선(Park-Harris 선)",
+   "구루병의 골간단 변화",
+   "급성 백혈병의 골간단 투과대"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: X선에서 원위 요골과 척골의 골간단, 성장판에서 조금 떨어진 같은 높이에 불규칙한 가로 경화대가 있고 요골 피질이 살짝 융기해 있다. 성장판 바로 옆이 아니라 손을 짚었던 손상 부위에, 양쪽 뼈가 같은 높이로, 테두리가 고르지 않게 보이는 것은 3주 된 골간단 골절이 가골과 새 골소주로 메워지며 단단해지는 모습이다. 처음에는 보이지 않던 골절도 2~3주 뒤 이렇게 경화대로 드러난다. 전위·각형성이 없으므로 추가 고정 없이 경과를 본다.\n- 원리: <b>골절은 왜 3주 뒤 하얗게 보이나</b>: 소아의 골간단 골절(융기·불완전 골절)은 처음 X선에서 피질이 살짝 꺾일 뿐 잘 안 보이기도 한다. 1~2주가 지나면 골절선 주변에 연골성·섬유성 가골이 생기고, 이것이 무기질화되면서 새 골소주가 골절면을 가로질러 쌓인다. 압박된 골소주와 새 뼈가 겹치는 자리가 「가로 경화대」로 보이고, 피질 바깥으로 골막 신생골이 덧붙으면 피질이 융기한다.<br> <b>골간단 고밀도선의 다른 원인</b>: 납은 성장판 바로 옆의 임시석회화대에서 칼슘 대신 침착되고 연골 흡수를 방해해, <b>성장판에 맞닿은 넓고 고른 띠</b>를 <b>여러 관절에 대칭으로</b>(무릎에서 가장 잘 보임) 만든다. 성장 정지선은 질병·영양 결핍으로 성장이 잠시 멈췄다 다시 시작한 흔적으로, 성장판과 평행한 얇고 매끈한 선이 양쪽에 대칭으로 여러 개 생긴다. 둘 다 피질 융기나 국소 압통이 없다.<br> <b>위치·모양·대칭</b>이 해석의 열쇠다 — 한쪽 손상 부위에 불규칙하게 있으면 골절 치유, 성장판에 붙어 대칭이면 대사·중독성 띠다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">치유 중인 골절(정답)</th><th>납 중독선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>손상 부위 골간단, 성장판에서 떨어질 수 있음</td><td>성장판에 맞닿은 임시석회화대</td></tr> <tr><td>모양</td><td>불규칙, 피질 융기·골막 반응 동반</td><td>넓고 고른 띠, 피질 정상</td></tr> <tr><td>분포</td><td>다친 쪽 한 부위</td><td>여러 관절에 대칭(무릎 가장 뚜렷)</td></tr> <tr><td>동반 소견</td><td>외상력, 국소 압통</td><td>소적혈구빈혈, 복통·변비, 발달 지연</td></tr> </tbody></table> 납 노출이 걱정되면 영상이 아니라 혈중 납 농도로 확인한다. 이 아이의 경화대는 외상 부위에 국한된 불규칙한 띠라 골절 치유로 설명된다.\n- 오답 이유:\n  - ② 납 중독선은 성장판에 맞닿은 고르고 넓은 띠가 여러 관절에 대칭으로 나타난다. 무릎 X선에서도 같은 띠가 보이고 소적혈구빈혈이 있었다면 정답이 된다.\n  - ③ 성장 정지선은 성장판과 평행한 얇고 매끈한 선이 양쪽 뼈에 대칭으로 여러 개 생긴다. 중병을 앓고 회복한 아이의 양쪽 다리에 평행선이 있다면 이것이다.\n  - ④ 구루병은 성장판이 넓어지고 골간단 끝이 컵 모양으로 패며 술처럼 흐트러진다(경화가 아니라 무기질화 저하). O다리와 알칼리인산분해효소 상승이 있었다면 맞다.\n  - ⑤ 급성 백혈병의 골간단 띠는 성장판 아래의 가로 투과대(검은 띠)로, 뼈 통증·창백·혈구 감소와 함께 나타난다. 하얀 경화대가 아니라 검은 띠였다면 떠올린다.\n- 함정: 어머니의 걱정(오래된 집)에 끌려 납 중독선을 고르는 것 — 납 띠는 성장판에 붙어 대칭으로 생기고, 손상 부위의 불규칙한 경화대는 골절 치유다.\n- 학습목표: 소아 손목 X선의 골간단 가로 경화대를 치유 중인 골절과 납 중독선·성장 정지선으로 구별한다\n- 근거·출처: Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 703 Common fractures (torus and greenstick fractures, healing) · Ch. 739 Lead poisoning (radiographic lead lines) · 작성자 판독(2026-10-07): 원위 요골·척골 골간단의 불규칙한 가로 경화대와 요골 피질 융기 — 치유 중 골절, 전위·각형성 없음\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "X선에서 원위 요골과 척골의 골간단, 성장판에서 조금 떨어진 같은 높이에 불규칙한 가로 경화대가 있고 요골 피질이 살짝 융기해 있다. 성장판 바로 옆이 아니라 손을 짚었던 손상 부위에, 양쪽 뼈가 같은 높이로, 테두리가 고르지 않게 보이는 것은 3주 된 골간단 골절이 가골과 새 골소주로 메워지며 단단해지는 모습이다. 처음에는 보이지 않던 골절도 2~3주 뒤 이렇게 경화대로 드러난다. 전위·각형성이 없으므로 추가 고정 없이 경과를 본다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>골절은 왜 3주 뒤 하얗게 보이나</b>: 소아의 골간단 골절(융기·불완전 골절)은 처음 X선에서 피질이 살짝 꺾일 뿐 잘 안 보이기도 한다. 1~2주가 지나면 골절선 주변에 연골성·섬유성 가골이 생기고, 이것이 무기질화되면서 새 골소주가 골절면을 가로질러 쌓인다. 압박된 골소주와 새 뼈가 겹치는 자리가 「가로 경화대」로 보이고, 피질 바깥으로 골막 신생골이 덧붙으면 피질이 융기한다.<br> <b>골간단 고밀도선의 다른 원인</b>: 납은 성장판 바로 옆의 임시석회화대에서 칼슘 대신 침착되고 연골 흡수를 방해해, <b>성장판에 맞닿은 넓고 고른 띠</b>를 <b>여러 관절에 대칭으로</b>(무릎에서 가장 잘 보임) 만든다. 성장 정지선은 질병·영양 결핍으로 성장이 잠시 멈췄다 다시 시작한 흔적으로, 성장판과 평행한 얇고 매끈한 선이 양쪽에 대칭으로 여러 개 생긴다. 둘 다 피질 융기나 국소 압통이 없다.<br> <b>위치·모양·대칭</b>이 해석의 열쇠다 — 한쪽 손상 부위에 불규칙하게 있으면 골절 치유, 성장판에 붙어 대칭이면 대사·중독성 띠다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">치유 중인 골절(정답)</th><th>납 중독선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>위치</td><td>손상 부위 골간단, 성장판에서 떨어질 수 있음</td><td>성장판에 맞닿은 임시석회화대</td></tr> <tr><td>모양</td><td>불규칙, 피질 융기·골막 반응 동반</td><td>넓고 고른 띠, 피질 정상</td></tr> <tr><td>분포</td><td>다친 쪽 한 부위</td><td>여러 관절에 대칭(무릎 가장 뚜렷)</td></tr> <tr><td>동반 소견</td><td>외상력, 국소 압통</td><td>소적혈구빈혈, 복통·변비, 발달 지연</td></tr> </tbody></table> 납 노출이 걱정되면 영상이 아니라 혈중 납 농도로 확인한다. 이 아이의 경화대는 외상 부위에 국한된 불규칙한 띠라 골절 치유로 설명된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 납 중독선은 성장판에 맞닿은 고르고 넓은 띠가 여러 관절에 대칭으로 나타난다. 무릎 X선에서도 같은 띠가 보이고 소적혈구빈혈이 있었다면 정답이 된다.\n③ 성장 정지선은 성장판과 평행한 얇고 매끈한 선이 양쪽 뼈에 대칭으로 여러 개 생긴다. 중병을 앓고 회복한 아이의 양쪽 다리에 평행선이 있다면 이것이다.\n④ 구루병은 성장판이 넓어지고 골간단 끝이 컵 모양으로 패며 술처럼 흐트러진다(경화가 아니라 무기질화 저하). O다리와 알칼리인산분해효소 상승이 있었다면 맞다.\n⑤ 급성 백혈병의 골간단 띠는 성장판 아래의 가로 투과대(검은 띠)로, 뼈 통증·창백·혈구 감소와 함께 나타난다. 하얀 경화대가 아니라 검은 띠였다면 떠올린다."
+   },
+   {
+    "k": "함정",
+    "v": "어머니의 걱정(오래된 집)에 끌려 납 중독선을 고르는 것 — 납 띠는 성장판에 붙어 대칭으로 생기고, 손상 부위의 불규칙한 경화대는 골절 치유다."
+   },
+   {
+    "k": "학습목표",
+    "v": "소아 손목 X선의 골간단 가로 경화대를 치유 중인 골절과 납 중독선·성장 정지선으로 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kliegman RM, et al. Nelson Textbook of Pediatrics, 21st ed. Ch. 703 Common fractures (torus and greenstick fractures, healing) · Ch. 739 Lead poisoning (radiographic lead lines) · 작성자 판독(2026-10-07): 원위 요골·척골 골간단의 불규칙한 가로 경화대와 요골 피질 융기 — 치유 중 골절, 전위·각형성 없음 ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "외상 부위의 원위 요골·척골 골간단에 불규칙한 가로 경화대와 피질 융기가 있으므로, 대칭성 대사·중독성 띠가 아니라 3주 된 골절의 치유 소견이다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "납 중독선은 성장판에 맞닿은 고른 띠가 여러 관절에 대칭으로 생기고 피질 융기가 없다",
+   "steps": 2,
+   "chain": [
+    "영상: 성장판에서 조금 떨어진 골간단의 불규칙한 가로 경화대 + 피질 융기, 다친 쪽에 국한",
+    "3주 전 손을 짚고 넘어짐 + 국소 압통 → 가골·골소주 재형성(치유 중 골절)"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골·척골 골간단의 불규칙한 가로 경화대와 요골 피질의 작은 융기",
+     "why": "손상 부위에 국한된 불규칙한 경화 — 골절 치유",
+     "also": []
+    },
+    {
+     "item": "3주 전 놀이터에서 손을 짚고 넘어진 뒤",
+     "why": "치유 경화가 보이기 시작하는 시기와 맞는다",
+     "also": []
+    },
+    {
+     "item": "오른쪽 원위 전완에 가벼운 압통만 있고",
+     "why": "국소 압통 — 손상 부위",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "지은 지 50년 된 주택",
+     "why": "납 노출 가능성이 있지만, 영상 소견의 위치·모양이 납 띠와 다르다",
+     "also": []
+    },
+    {
+     "item": "평균적혈구용적 80 fL",
+     "why": "소적혈구빈혈이 없어 납 중독 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "복통이나 변비는 없다",
+     "why": "납 중독의 위장관 증상이 없다",
+     "also": []
+    },
+    {
+     "item": "성장과 발달은 정상",
+     "why": "구루병·만성 질환 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "다친 쪽 원위 요골·척골 골간단에만 불규칙한 가로 경화대와 피질 융기가 있다. 3주 전 외상과 국소 압통을 함께 보면 치유 중인 골절이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "양쪽 손목과 무릎 X선 모두에서 성장판에 맞닿은 고르고 넓은 하얀 띠가 보이고 소적혈구빈혈이 있었다면 납 중독선이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0253.png",
+   "caption": "오른쪽 손목·원위 전완 전후면 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0657_0603279340_05_WRI-R1_M004",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0252",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "신장·비뇨 — 전립선 조직의 면역조직화학",
+  "type": "신장·비뇨 — 전립선 조직의 면역조직화학",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-06",
+  "vignette": "A 63-year-old man comes to the physician for a follow-up examination 2 months after transurethral resection of the prostate for acute urinary retention. Before surgery, he had a weak urinary stream and nocturia three times nightly for 2 years. His serum prostate-specific antigen concentration was 3.1 ng/mL, and digital rectal examination showed a smooth, symmetrically enlarged prostate without nodules. He now voids well. The resected tissue was reviewed in a teaching study. A photomicrograph of a section of the prostate stained by immunohistochemistry for NKX3.1, a nuclear transcription factor, is shown.",
+  "question": "The cells with brown-stained nuclei are which of the following?",
+  "options": [
+   "Basal epithelial cells",
+   "Stromal smooth muscle cells",
+   "Neuroendocrine cells",
+   "Urothelial cells",
+   "Luminal secretory epithelial cells"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The section shows benign prostatic glands set in fibromuscular stroma. The brown nuclei form a continuous row lining the gland lumens; beneath them is a flattened, unstained cell layer, and the stroma is unstained. The stained cells are the luminal secretory epithelial cells, which express NKX3.1 (an androgen-regulated homeobox transcription factor) and produce prostate-specific antigen and acid phosphatase. The unstained cells along the basement membrane are basal cells.\n- 원리: <b>A two-layered gland</b>: each benign prostatic gland has an inner layer of tall columnar luminal (secretory) cells and an outer layer of flat basal cells resting on the basement membrane, surrounded by smooth muscle–rich stroma. A few scattered neuroendocrine cells sit among the luminal cells. Luminal cells carry the androgen receptor and make PSA, prostatic acid phosphatase and NKX3.1; basal cells express p63 and high-molecular-weight cytokeratin (34βE12) and lack PSA.<br> <b>Why the layers matter clinically</b>: prostatic adenocarcinoma is a proliferation of luminal-type cells without a basal layer. On a needle biopsy, the absence of basal cells — shown by loss of p63/HMWCK staining, often together with AMACR overexpression — supports cancer, whereas a retained basal layer favors benign mimics such as atrophy or adenosis.<br> <b>Why NKX3.1 is useful</b>: because it is nearly restricted to prostatic luminal epithelium and is retained in most prostate cancers, a nuclear NKX3.1 stain helps prove prostatic origin in a metastasis of unknown primary, even when PSA staining is weak after androgen deprivation.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Luminal secretory cells (correct)</th><th>Basal cells (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Line the lumen, tall columnar</td><td>Flat layer on the basement membrane, beneath the luminal cells</td></tr> <tr><td>Markers</td><td>NKX3.1, PSA, androgen receptor</td><td>p63, high-molecular-weight cytokeratin</td></tr> <tr><td>In adenocarcinoma</td><td>Proliferate (the cancer cell type)</td><td>Lost — their absence supports cancer</td></tr> </tbody></table> A nuclear stain lining the lumen means luminal cells; a stain hugging the basement membrane (p63) means basal cells, and its loss is the clue to carcinoma.\n- 오답 이유:\n  - (A) Basal cells form the flat outer layer beneath the luminal cells and are stained by p63 or high-molecular-weight cytokeratin, not NKX3.1. They would be the answer if the stain were p63.\n  - (B) Stromal smooth muscle cells surround the glands and stain with desmin or smooth muscle actin. They would be correct if the brown signal filled the spindle cells between the glands.\n  - (C) Neuroendocrine cells are scattered singly among luminal cells and stain with chromogranin or synaptophysin; they would fit a stain showing only rare isolated positive cells.\n  - (D) Urothelial cells line the prostatic urethra and large periurethral ducts and stain with GATA3 and p63; they would fit a multilayered surface epithelium rather than small glands.\n- 함정: Assuming the stained row must be the basal layer because it is the 'edge' of the gland — the brown nuclei face the lumen, and the basal cells beneath them are unstained.\n- 학습목표: 전립선 샘이 내강 분비상피와 바닥세포의 두 층으로 이루어지고, NKX3.1 은 내강 분비상피 핵을 표지하며 암에서는 바닥세포가 소실됨을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 21 The lower urinary tract and male genital system — prostate (glandular architecture, adenocarcinoma lacking basal cells) · Human Protein Atlas — NKX3-1 antibody staining in normal prostate tissue microarray (teacher-only) · 작성자 판독(2026-10-07): 양성 샘 내강 분비상피의 핵 양성, 그 아래 납작한 바닥세포와 섬유근육 간질은 음성\n\n## 출처\n- Human Protein Atlas, NKX3-1 / Prostate (CC BY 4.0), https://images.proteinatlas.org/78571/165671_A_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The section shows benign prostatic glands set in fibromuscular stroma. The brown nuclei form a continuous row lining the gland lumens; beneath them is a flattened, unstained cell layer, and the stroma is unstained. The stained cells are the luminal secretory epithelial cells, which express NKX3.1 (an androgen-regulated homeobox transcription factor) and produce prostate-specific antigen and acid phosphatase. The unstained cells along the basement membrane are basal cells."
+   },
+   {
+    "k": "원리",
+    "v": "<b>A two-layered gland</b>: each benign prostatic gland has an inner layer of tall columnar luminal (secretory) cells and an outer layer of flat basal cells resting on the basement membrane, surrounded by smooth muscle–rich stroma. A few scattered neuroendocrine cells sit among the luminal cells. Luminal cells carry the androgen receptor and make PSA, prostatic acid phosphatase and NKX3.1; basal cells express p63 and high-molecular-weight cytokeratin (34βE12) and lack PSA.<br> <b>Why the layers matter clinically</b>: prostatic adenocarcinoma is a proliferation of luminal-type cells without a basal layer. On a needle biopsy, the absence of basal cells — shown by loss of p63/HMWCK staining, often together with AMACR overexpression — supports cancer, whereas a retained basal layer favors benign mimics such as atrophy or adenosis.<br> <b>Why NKX3.1 is useful</b>: because it is nearly restricted to prostatic luminal epithelium and is retained in most prostate cancers, a nuclear NKX3.1 stain helps prove prostatic origin in a metastasis of unknown primary, even when PSA staining is weak after androgen deprivation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Luminal secretory cells (correct)</th><th>Basal cells (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Line the lumen, tall columnar</td><td>Flat layer on the basement membrane, beneath the luminal cells</td></tr> <tr><td>Markers</td><td>NKX3.1, PSA, androgen receptor</td><td>p63, high-molecular-weight cytokeratin</td></tr> <tr><td>In adenocarcinoma</td><td>Proliferate (the cancer cell type)</td><td>Lost — their absence supports cancer</td></tr> </tbody></table> A nuclear stain lining the lumen means luminal cells; a stain hugging the basement membrane (p63) means basal cells, and its loss is the clue to carcinoma."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Basal cells form the flat outer layer beneath the luminal cells and are stained by p63 or high-molecular-weight cytokeratin, not NKX3.1. They would be the answer if the stain were p63.\n(B) Stromal smooth muscle cells surround the glands and stain with desmin or smooth muscle actin. They would be correct if the brown signal filled the spindle cells between the glands.\n(C) Neuroendocrine cells are scattered singly among luminal cells and stain with chromogranin or synaptophysin; they would fit a stain showing only rare isolated positive cells.\n(D) Urothelial cells line the prostatic urethra and large periurethral ducts and stain with GATA3 and p63; they would fit a multilayered surface epithelium rather than small glands."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming the stained row must be the basal layer because it is the 'edge' of the gland — the brown nuclei face the lumen, and the basal cells beneath them are unstained."
+   },
+   {
+    "k": "학습목표",
+    "v": "전립선 샘이 내강 분비상피와 바닥세포의 두 층으로 이루어지고, NKX3.1 은 내강 분비상피 핵을 표지하며 암에서는 바닥세포가 소실됨을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 21 The lower urinary tract and male genital system — prostate (glandular architecture, adenocarcinoma lacking basal cells) · Human Protein Atlas — NKX3-1 antibody staining in normal prostate tissue microarray (teacher-only) · 작성자 판독(2026-10-07): 양성 샘 내강 분비상피의 핵 양성, 그 아래 납작한 바닥세포와 섬유근육 간질은 음성 ## 출처 Human Protein Atlas, NKX3-1 / Prostate (CC BY 4.0), https://images.proteinatlas.org/78571/165671_A_1_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "갈색 핵이 샘 내강을 따라 한 줄로 늘어서고 그 아래 납작한 세포는 음성이므로, 염색된 세포는 NKX3.1 을 발현하는 내강 분비상피다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "바닥세포는 내강 세포 아래 기저막에 붙은 납작한 층으로 p63 에 염색되고 NKX3.1 에는 음성이다",
+   "steps": 2,
+   "chain": [
+    "영상: 갈색 핵이 샘 내강 쪽 원주세포에만 있고 그 아래 납작한 층·간질은 음성",
+    "내강 쪽 원주세포 + 핵 전사인자 NKX3.1 → 내강 분비상피(PSA 생성)"
+   ],
+   "key": [
+    {
+     "item": "영상: 샘 내강을 따라 늘어선 원주세포의 핵만 갈색, 그 아래 납작한 세포층과 간질은 음성",
+     "why": "염색 세포의 위치가 답을 정한다",
+     "also": []
+    },
+    {
+     "item": "a nuclear transcription factor",
+     "why": "핵 염색 — 세포질 표지자가 아님을 알려 준다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "smooth, symmetrically enlarged prostate without nodules",
+     "why": "암을 시사하는 소견이 없다 — 양성 샘의 두 층 구조를 보는 사진",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "prostate-specific antigen concentration was 3.1 ng/mL",
+     "why": "비대증 범위의 PSA — 판단에 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "transurethral resection of the prostate",
+     "why": "검체 출처를 알려 주는 배경",
+     "also": []
+    }
+   ],
+   "summary": "갈색 핵이 샘 내강을 따라 늘어서고 그 아래 납작한 바닥세포는 음성이다. NKX3.1 은 내강 분비상피(PSA 생성 세포)의 핵 전사인자다.",
+   "switch": {
+    "choice": "A",
+    "condition": "같은 절편을 p63 으로 염색해 기저막 쪽 납작한 세포의 핵만 갈색이었다면 바닥세포다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0252.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000167034-NKX3-1/tissue/Prostate",
+   "asset_id": "HPA-NKX3-1_165671_A_1_5",
+   "text": "Human Protein Atlas, NKX3-1 / Prostate (CC BY 4.0), https://images.proteinatlas.org/78571/165671_A_1_5.jpg"
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0251",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "외과계 — 유방 종양 조직의 면역조직화학과 전이",
+  "type": "외과계 — 유방 종양 조직의 면역조직화학과 전이",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "49세 여자가 2개월 전부터 오른쪽 유방 위바깥쪽이 두꺼워진 느낌이 있어 내원하였다. 통증이나 젖꼭지 분비물은 없고, 가족력은 없다. 진찰에서 경계가 불분명한 3 cm 크기의 단단한 부위가 만져지고 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 뚜렷한 종괴가 보이지 않았고, 초음파에서 경계가 불분명한 저에코 병변이 있었다. 중심부바늘생검에서 침윤성 암종이 확인되었으며 에스트로겐 수용체 양성, HER2 음성이다. 유방 종양 조직 절편의 E-cadherin 면역조직화학염색 결과는 그림과 같다.",
+  "question": "이 종양이 침윤성 관암종에 비해 더 잘 전이하는 부위는?",
+  "options": [
+   "폐 실질",
+   "뇌 실질",
+   "간 실질",
+   "흉막",
+   "복막과 위장관"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 그림에서 남아 있는 정상 관·소엽 상피는 세포막이 진한 갈색으로 염색되어(내부 양성 대조) 염색이 제대로 되었음을 보여 주고, 간질 사이로 흩어져 침윤한 종양 세포는 세포막 염색이 없다 — E-cadherin 소실, 즉 침윤성 소엽암종이다. 촬영에서 종괴가 뚜렷하지 않은 것도 소엽암의 특징이다. 소엽암종은 관암종에 비해 복막·후복막, 위장관, 난소, 수막으로 잘 퍼지고, 폐·뇌 실질 전이는 상대적으로 적다.\n- 원리: <b>E-cadherin 과 세포의 응집</b>: E-cadherin 은 상피세포끼리 붙잡는 부착연접의 칼슘 의존성 막단백이다. 침윤성 소엽암종은 그 유전자(CDH1)의 돌연변이·결실로 이 단백이 없어져, 종양 세포가 서로 떨어진 채 한 줄 또는 낱개로 간질을 파고든다. 그래서 덩어리(종괴)를 만들지 않아 유방촬영에서 잘 안 보이고, 만져도 경계가 불분명하다.<br> <b>왜 전이 장소가 다른가</b>: 응집하지 않는 세포는 장막면을 따라 얇게 퍼지기 쉽다. 그래서 소엽암은 복막에 판처럼 깔리거나 위·대장 벽을 따라 스며들어(위암의 선위염형 침윤처럼) 장폐색·수신증으로 나타나고, 난소(크루켄베르크형)·수막에도 간다. 관암종은 응집된 덩어리로 혈행 전이하여 폐·간·뇌 실질에 결절을 만든다. 뼈는 두 조직형 모두 흔하다.<br> <b>임상적 의미</b>: 소엽암 병력이 있는 환자의 새 복부 증상은 위장관 전이를 먼저 의심하고, 위 생검에서 반지세포 모양 세포가 보이면 원발 위암과 구별하려고 ER·GATA3 염색을 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">침윤성 소엽암종(이 종양)</th><th>침윤성 관암종(가장 흔한 조직형)</th></tr></thead><tbody> <tr><td>E-cadherin</td><td>소실 — 세포가 흩어져 한 줄로 침윤</td><td>보존 — 관·덩어리 형성</td></tr> <tr><td>영상</td><td>종괴 없이 구조 왜곡·비대칭, 다발성·양측성 많음</td><td>가시 돋친 종괴·미세석회화</td></tr> <tr><td>잘 가는 전이 장소</td><td>복막·후복막, 위장관, 난소, 수막, 뼈</td><td>폐·간·뇌 실질, 뼈</td></tr> </tbody></table> 같은 유방암이라도 「응집하는가」가 전이 양상을 가른다. 장막면을 타고 번지는 곳은 소엽암, 실질 결절은 관암으로 정리하면 어느 방향으로 물어도 대응된다.\n- 오답 이유:\n  - ① 폐 실질 결절 전이는 응집된 종양 덩어리가 혈행으로 퍼지는 침윤성 관암종에서 더 흔하다. 종양 세포의 세포막이 E-cadherin 에 진하게 염색되었다면 정답에 가깝다.\n  - ② 뇌 실질 전이는 관암종, 특히 HER2 양성·삼중음성 유방암에서 흔하다. 이 종양은 HER2 음성 소엽암이라 실질보다 수막 쪽으로 가는 경향이 있다.\n  - ③ 간 실질의 결절성 전이는 관암종에서 더 흔하다. 소엽암도 간에 갈 수 있지만, 관암종보다 「더 잘 가는」 곳은 아니다 — E-cadherin 이 보존된 종양이라면 맞다.\n  - ④ 흉막 전이와 악성 흉수는 관암종에서도 흔해 두 조직형을 가르는 특징이 아니다. 관암종의 흉벽 국소 재발이 흉막으로 번진 경우라면 떠올릴 수 있다.\n- 함정: 소엽암을 진단하고도 유방암 일반의 전이 장소(폐·간·뇌)를 고르는 것 — 응집하지 않는 소엽암은 장막면(복막·위장관)을 따라 퍼진다.\n- 학습목표: E-cadherin 이 소실된 침윤성 소엽암종이 관암종과 달리 복막·위장관·난소로 잘 전이함을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 23 The breast — invasive lobular carcinoma (CDH1 loss, discohesive growth, metastatic pattern) · Human Protein Atlas — CDH1 antibody staining in breast cancer tissue microarray (teacher-only) · 작성자 판독(2026-10-07): 정상 관·소엽은 세포막 양성(내부 대조), 간질로 흩어져 침윤한 종양 세포는 음성 — E-cadherin 소실\n\n## 출처\n- Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/87/158147_A_6_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림에서 남아 있는 정상 관·소엽 상피는 세포막이 진한 갈색으로 염색되어(내부 양성 대조) 염색이 제대로 되었음을 보여 주고, 간질 사이로 흩어져 침윤한 종양 세포는 세포막 염색이 없다 — E-cadherin 소실, 즉 침윤성 소엽암종이다. 촬영에서 종괴가 뚜렷하지 않은 것도 소엽암의 특징이다. 소엽암종은 관암종에 비해 복막·후복막, 위장관, 난소, 수막으로 잘 퍼지고, 폐·뇌 실질 전이는 상대적으로 적다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>E-cadherin 과 세포의 응집</b>: E-cadherin 은 상피세포끼리 붙잡는 부착연접의 칼슘 의존성 막단백이다. 침윤성 소엽암종은 그 유전자(CDH1)의 돌연변이·결실로 이 단백이 없어져, 종양 세포가 서로 떨어진 채 한 줄 또는 낱개로 간질을 파고든다. 그래서 덩어리(종괴)를 만들지 않아 유방촬영에서 잘 안 보이고, 만져도 경계가 불분명하다.<br> <b>왜 전이 장소가 다른가</b>: 응집하지 않는 세포는 장막면을 따라 얇게 퍼지기 쉽다. 그래서 소엽암은 복막에 판처럼 깔리거나 위·대장 벽을 따라 스며들어(위암의 선위염형 침윤처럼) 장폐색·수신증으로 나타나고, 난소(크루켄베르크형)·수막에도 간다. 관암종은 응집된 덩어리로 혈행 전이하여 폐·간·뇌 실질에 결절을 만든다. 뼈는 두 조직형 모두 흔하다.<br> <b>임상적 의미</b>: 소엽암 병력이 있는 환자의 새 복부 증상은 위장관 전이를 먼저 의심하고, 위 생검에서 반지세포 모양 세포가 보이면 원발 위암과 구별하려고 ER·GATA3 염색을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">침윤성 소엽암종(이 종양)</th><th>침윤성 관암종(가장 흔한 조직형)</th></tr></thead><tbody> <tr><td>E-cadherin</td><td>소실 — 세포가 흩어져 한 줄로 침윤</td><td>보존 — 관·덩어리 형성</td></tr> <tr><td>영상</td><td>종괴 없이 구조 왜곡·비대칭, 다발성·양측성 많음</td><td>가시 돋친 종괴·미세석회화</td></tr> <tr><td>잘 가는 전이 장소</td><td>복막·후복막, 위장관, 난소, 수막, 뼈</td><td>폐·간·뇌 실질, 뼈</td></tr> </tbody></table> 같은 유방암이라도 「응집하는가」가 전이 양상을 가른다. 장막면을 타고 번지는 곳은 소엽암, 실질 결절은 관암으로 정리하면 어느 방향으로 물어도 대응된다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 폐 실질 결절 전이는 응집된 종양 덩어리가 혈행으로 퍼지는 침윤성 관암종에서 더 흔하다. 종양 세포의 세포막이 E-cadherin 에 진하게 염색되었다면 정답에 가깝다.\n② 뇌 실질 전이는 관암종, 특히 HER2 양성·삼중음성 유방암에서 흔하다. 이 종양은 HER2 음성 소엽암이라 실질보다 수막 쪽으로 가는 경향이 있다.\n③ 간 실질의 결절성 전이는 관암종에서 더 흔하다. 소엽암도 간에 갈 수 있지만, 관암종보다 「더 잘 가는」 곳은 아니다 — E-cadherin 이 보존된 종양이라면 맞다.\n④ 흉막 전이와 악성 흉수는 관암종에서도 흔해 두 조직형을 가르는 특징이 아니다. 관암종의 흉벽 국소 재발이 흉막으로 번진 경우라면 떠올릴 수 있다."
+   },
+   {
+    "k": "함정",
+    "v": "소엽암을 진단하고도 유방암 일반의 전이 장소(폐·간·뇌)를 고르는 것 — 응집하지 않는 소엽암은 장막면(복막·위장관)을 따라 퍼진다."
+   },
+   {
+    "k": "학습목표",
+    "v": "E-cadherin 이 소실된 침윤성 소엽암종이 관암종과 달리 복막·위장관·난소로 잘 전이함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 23 The breast — invasive lobular carcinoma (CDH1 loss, discohesive growth, metastatic pattern) · Human Protein Atlas — CDH1 antibody staining in breast cancer tissue microarray (teacher-only) · 작성자 판독(2026-10-07): 정상 관·소엽은 세포막 양성(내부 대조), 간질로 흩어져 침윤한 종양 세포는 음성 — E-cadherin 소실 ## 출처 Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/87/158147_A_6_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "예후",
+   "decision": "정상 관은 양성인데 침윤 종양 세포만 E-cadherin 이 소실되어 침윤성 소엽암종이고, 응집하지 않는 소엽암은 관암종보다 복막·위장관으로 잘 전이한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "폐 실질 결절 전이는 응집된 덩어리로 혈행 전이하는 관암종의 양상이고, 소엽암은 장막면을 따라 퍼진다",
+   "steps": 2,
+   "chain": [
+    "정상 관은 세포막 양성(대조) + 흩어져 침윤한 종양 세포는 음성 → E-cadherin 소실 → 침윤성 소엽암종",
+    "세포 응집 소실 → 장막면을 따라 퍼짐 → 복막·위장관 전이가 관암종보다 흔함"
+   ],
+   "key": [
+    {
+     "item": "영상: 정상 관·소엽 상피는 세포막 갈색 양성, 간질로 흩어진 종양 세포는 음성",
+     "why": "내부 대조가 있는 E-cadherin 소실 — 소엽암",
+     "also": []
+    },
+    {
+     "item": "유방촬영술에서 뚜렷한 종괴가 보이지 않았고",
+     "why": "응집하지 않아 종괴를 만들지 않는 소엽암의 특징",
+     "also": []
+    },
+    {
+     "item": "경계가 불분명한 3 cm 크기의 단단한 부위",
+     "why": "경계가 불분명한 두꺼워짐 — 소엽암에 흔하다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "에스트로겐 수용체 양성, HER2 음성",
+     "why": "소엽암 대부분이 이렇지만 관암종에도 흔해 조직형을 가르지 못한다",
+     "also": []
+    },
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "병기 정보 — 전이 장소의 경향은 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "가족력은 없다",
+     "why": "유전성 위암·소엽암(CDH1 생식세포 변이) 가능성을 낮출 뿐 판단과 무관하다",
+     "also": []
+    }
+   ],
+   "summary": "정상 관은 E-cadherin 양성이고 침윤 종양 세포만 음성이다 — 침윤성 소엽암종이다. 세포가 응집하지 않아 장막면을 따라 퍼지므로 관암종보다 복막·위장관 전이가 흔하다.",
+   "switch": {
+    "choice": "A",
+    "condition": "종양 세포의 세포막이 정상 관처럼 E-cadherin 에 진하게 염색되었다면(관암종) 폐 실질 전이가 상대적으로 더 흔한 쪽이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0251.jpg",
+   "caption": "조직 마이크로어레이 코어의 면역조직화학염색(DAB 갈색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (cancer IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000039068-CDH1/cancer/breast+cancer",
+   "asset_id": "HPA-CDH1_158147_A_6_7",
+   "text": "Human Protein Atlas, CDH1 / Breast cancer (CC BY 4.0), https://images.proteinatlas.org/87/158147_A_6_7.jpg"
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0250",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "감염 — 기계환기 중 새 발열과 화농성 분비물",
+  "type": "감염 — 기계환기 중 새 발열과 화농성 분비물",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "A 60-year-old man is being treated in the intensive care unit for acute respiratory distress syndrome due to COVID-19 pneumonia. He has been hospitalized for 7 days and was intubated 6 days ago. He has received dexamethasone but no antibiotics during this hospitalization or in the past year. Over the past 24 hours, he has developed a temperature of 38.9°C and increasing amounts of thick yellow tracheal secretions, and the fraction of inspired oxygen needed to keep his oxygen saturation above 92% has increased from 0.4 to 0.6. His blood pressure is 124/72 mm Hg without vasopressors, and pulse is 104/min. Coarse crackles are heard over both lung bases. Leukocyte count is 16,800/mm3; two days ago, it was 9,200/mm3. Serum creatinine concentration is 0.9 mg/dL. In this unit, more than 20% of Staphylococcus aureus isolates are methicillin-resistant. A portable chest radiograph is shown. Tracheal aspirate and blood cultures are obtained.",
+  "question": "Which of the following is the most appropriate empiric antibiotic regimen?",
+  "options": [
+   "Ceftriaxone and azithromycin",
+   "Vancomycin and ceftriaxone",
+   "Vancomycin, piperacillin-tazobactam, and amikacin",
+   "Vancomycin and piperacillin-tazobactam",
+   "Piperacillin-tazobactam alone"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The radiograph shows diffuse bilateral reticular and patchy airspace opacities with multiple monitoring lines. After more than 48 hours of mechanical ventilation, he has a new fever, purulent secretions, worsening oxygenation and a rising leukocyte count — ventilator-associated pneumonia (VAP). He has two risk factors for multidrug-resistant (MDR) VAP listed in the IDSA/ATS guideline: five or more days of hospitalization before the onset of VAP and ARDS preceding VAP. Empiric therapy should therefore cover methicillin-resistant S aureus (vancomycin; the unit MRSA rate above 20% is a second reason) and Pseudomonas aeruginosa with two antipseudomonal agents from different classes (piperacillin-tazobactam plus amikacin), then be narrowed once cultures return.\n- 원리: <b>Why VAP needs broader coverage than community pneumonia</b>: after several days in hospital, the oropharynx and the endotracheal tube become colonized by hospital flora — S aureus (including MRSA), P aeruginosa, Enterobacterales and Acinetobacter. Secretions pooling above the cuff are micro-aspirated along the tube, so the pathogens of VAP are those of the unit, not those of the community.<br> <b>Why two antipseudomonal drugs</b>: the goal of the empiric regimen is that at least one drug is active against the organism. When the risk of resistance is high, a second antipseudomonal agent from a different class (a β-lactam plus an aminoglycoside or a fluoroquinolone) raises the chance that the first 48–72 hours are covered. It is not for synergy and is stopped once susceptibilities are known.<br> <b>MDR risk factors (IDSA/ATS 2016)</b>: IV antibiotics in the past 90 days, septic shock at VAP onset, ARDS preceding VAP, ≥ 5 days of hospitalization before VAP, and acute renal replacement therapy. Without any of them, and in a unit with low resistance, one antipseudomonal agent (with or without an MRSA agent) is enough.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Vancomycin + piperacillin-tazobactam + amikacin (correct)</th><th>Vancomycin + piperacillin-tazobactam (closest distractor)</th></tr></thead><tbody> <tr><td>Antipseudomonal agents</td><td>Two, from different classes</td><td>One</td></tr> <tr><td>Who gets it</td><td>Any MDR risk factor (here: ≥ 5 days in hospital, preceding ARDS) or high unit gram-negative resistance</td><td>No MDR risk factor but unit MRSA &gt; 10–20%</td></tr> <tr><td>After cultures</td><td>De-escalate to one active drug</td><td>Narrow or stop vancomycin if MRSA is not grown</td></tr> </tbody></table> Both regimens cover MRSA; the difference is whether the patient's risk of resistant gram-negative organisms justifies a second antipseudomonal drug for the first days.\n- 오답 이유:\n  - (A) Ceftriaxone and azithromycin is a regimen for community-acquired pneumonia requiring admission; it misses MRSA and P aeruginosa and would be chosen only for pneumonia present at hospital arrival.\n  - (B) Vancomycin with ceftriaxone covers MRSA and pneumococcus but not P aeruginosa; it would suit meningitis or community pneumonia with MRSA risk, not pneumonia acquired on a ventilator.\n  - (D) Vancomycin with piperacillin-tazobactam alone is appropriate when MRSA coverage is needed but there is no risk factor for MDR gram-negative organisms, for example VAP on day 3 in a patient without preceding ARDS.\n  - (E) Piperacillin-tazobactam alone fits early VAP in a unit where MRSA is uncommon and the patient has no MDR risk factors; here both MRSA and gram-negative resistance must be covered.\n- 함정: Stopping at vancomycin plus one antipseudomonal drug — the days in hospital and the preceding ARDS are the MDR risk factors that call for a second gram-negative agent.\n- 학습목표: 인공호흡기 관련 폐렴에서 다제내성 위험인자(입원 5일 이상, 선행 ARDS)가 있으면 MRSA 약제와 계열이 다른 항녹농균제 2개로 경험적 치료를 시작함을 안다\n- 근거·출처: Kalil AC, et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: 2016 clinical practice guidelines by the IDSA and ATS. Clin Infect Dis 2016;63:e61-e111 (PMID 27418577) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 126 Pneumonia (health care-associated and ventilator-associated pneumonia) · 작성자 판독(2026-10-07): 반기립 AP 휴대용 흉부 X선 — 양측 미만성 망상·반점상 공기공간 음영, 오른쪽 카테터·감시선 다수, 기흉 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …48424473 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows diffuse bilateral reticular and patchy airspace opacities with multiple monitoring lines. After more than 48 hours of mechanical ventilation, he has a new fever, purulent secretions, worsening oxygenation and a rising leukocyte count — ventilator-associated pneumonia (VAP). He has two risk factors for multidrug-resistant (MDR) VAP listed in the IDSA/ATS guideline: five or more days of hospitalization before the onset of VAP and ARDS preceding VAP. Empiric therapy should therefore cover methicillin-resistant S aureus (vancomycin; the unit MRSA rate above 20% is a second reason) and Pseudomonas aeruginosa with two antipseudomonal agents from different classes (piperacillin-tazobactam plus amikacin), then be narrowed once cultures return."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why VAP needs broader coverage than community pneumonia</b>: after several days in hospital, the oropharynx and the endotracheal tube become colonized by hospital flora — S aureus (including MRSA), P aeruginosa, Enterobacterales and Acinetobacter. Secretions pooling above the cuff are micro-aspirated along the tube, so the pathogens of VAP are those of the unit, not those of the community.<br> <b>Why two antipseudomonal drugs</b>: the goal of the empiric regimen is that at least one drug is active against the organism. When the risk of resistance is high, a second antipseudomonal agent from a different class (a β-lactam plus an aminoglycoside or a fluoroquinolone) raises the chance that the first 48–72 hours are covered. It is not for synergy and is stopped once susceptibilities are known.<br> <b>MDR risk factors (IDSA/ATS 2016)</b>: IV antibiotics in the past 90 days, septic shock at VAP onset, ARDS preceding VAP, ≥ 5 days of hospitalization before VAP, and acute renal replacement therapy. Without any of them, and in a unit with low resistance, one antipseudomonal agent (with or without an MRSA agent) is enough."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Vancomycin + piperacillin-tazobactam + amikacin (correct)</th><th>Vancomycin + piperacillin-tazobactam (closest distractor)</th></tr></thead><tbody> <tr><td>Antipseudomonal agents</td><td>Two, from different classes</td><td>One</td></tr> <tr><td>Who gets it</td><td>Any MDR risk factor (here: ≥ 5 days in hospital, preceding ARDS) or high unit gram-negative resistance</td><td>No MDR risk factor but unit MRSA &gt; 10–20%</td></tr> <tr><td>After cultures</td><td>De-escalate to one active drug</td><td>Narrow or stop vancomycin if MRSA is not grown</td></tr> </tbody></table> Both regimens cover MRSA; the difference is whether the patient's risk of resistant gram-negative organisms justifies a second antipseudomonal drug for the first days."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Ceftriaxone and azithromycin is a regimen for community-acquired pneumonia requiring admission; it misses MRSA and P aeruginosa and would be chosen only for pneumonia present at hospital arrival.\n(B) Vancomycin with ceftriaxone covers MRSA and pneumococcus but not P aeruginosa; it would suit meningitis or community pneumonia with MRSA risk, not pneumonia acquired on a ventilator.\n(D) Vancomycin with piperacillin-tazobactam alone is appropriate when MRSA coverage is needed but there is no risk factor for MDR gram-negative organisms, for example VAP on day 3 in a patient without preceding ARDS.\n(E) Piperacillin-tazobactam alone fits early VAP in a unit where MRSA is uncommon and the patient has no MDR risk factors; here both MRSA and gram-negative resistance must be covered."
+   },
+   {
+    "k": "함정",
+    "v": "Stopping at vancomycin plus one antipseudomonal drug — the days in hospital and the preceding ARDS are the MDR risk factors that call for a second gram-negative agent."
+   },
+   {
+    "k": "학습목표",
+    "v": "인공호흡기 관련 폐렴에서 다제내성 위험인자(입원 5일 이상, 선행 ARDS)가 있으면 MRSA 약제와 계열이 다른 항녹농균제 2개로 경험적 치료를 시작함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kalil AC, et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: 2016 clinical practice guidelines by the IDSA and ATS. Clin Infect Dis 2016;63:e61-e111 (PMID 27418577) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 126 Pneumonia (health care-associated and ventilator-associated pneumonia) · 작성자 판독(2026-10-07): 반기립 AP 휴대용 흉부 X선 — 양측 미만성 망상·반점상 공기공간 음영, 오른쪽 카테터·감시선 다수, 기흉 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …48424473 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "기계환기 48시간 뒤 새 발열·화농성 분비물·산소화 악화가 있는 VAP 이고, 입원 5일 이상과 선행 ARDS 라는 다제내성 위험인자가 있으므로 MRSA 약제에 계열이 다른 항녹농균제 2개를 더한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "다제내성 위험인자(입원 ≥ 5일, 선행 ARDS)가 있어 항녹농균제를 하나가 아니라 계열이 다른 둘로 시작한다",
+   "steps": 3,
+   "chain": [
+    "기계환기 6일째 새 발열·화농성 분비물·FiO2 증가·백혈구 증가 + 양측 음영 → 인공호흡기 관련 폐렴",
+    "입원 7일·선행 ARDS → 다제내성 위험인자, 병동 MRSA > 20 % → MRSA 약제 필요",
+    "다제내성 위험 → 계열이 다른 항녹농균제 2개 + 반코마이신"
+   ],
+   "key": [
+    {
+     "item": "영상: 양측 폐야의 미만성 망상·반점상 공기공간 음영",
+     "why": "폐렴을 뒷받침하는 폐 음영 — 다만 ARDS 음영과 겹쳐 단독으로는 가르지 못한다",
+     "also": []
+    },
+    {
+     "item": "increasing amounts of thick yellow tracheal secretions",
+     "why": "화농성 분비물 — VAP 의 임상 기준",
+     "also": []
+    },
+    {
+     "item": "has increased from 0.4 to 0.6",
+     "why": "산소화 악화",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no antibiotics during this hospitalization or in the past year",
+     "why": "90일 안 정맥 항생제라는 다른 위험인자는 없다 — 그래도 위의 두 인자로 충분하다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "He has been hospitalized for 7 days",
+     "why": "입원 5일 이상 — 다제내성 위험인자",
+     "also": []
+    },
+    {
+     "item": "acute respiratory distress syndrome due to COVID-19 pneumonia",
+     "why": "선행 ARDS — 다제내성 위험인자",
+     "also": []
+    },
+    {
+     "item": "more than 20% of Staphylococcus aureus isolates are methicillin-resistant",
+     "why": "MRSA 약제를 넣는 근거",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine concentration is 0.9 mg/dL",
+     "why": "아미노글리코사이드·반코마이신 사용에 걸림이 적다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "without vasopressors",
+     "why": "패혈쇼크는 아니다 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "기계환기 중 새 발열·화농성 분비물·산소화 악화가 생긴 VAP 다. 입원 5일 이상과 선행 ARDS 가 다제내성 위험인자이므로 반코마이신에 계열이 다른 항녹농균제 2개(피페라실린-타조박탐 + 아미카신)를 더한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "입원 3일째 생긴 VAP 이고 선행 ARDS 가 없었다면(다제내성 위험인자 없음) 반코마이신 + 피페라실린-타조박탐이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0250.png",
+   "caption": "Semi-upright portable anteroposterior chest radiograph; the position text and side marker are from the original, unaltered apart from scaling (The Cancer Imaging Archive, CC BY 4.0; no cropping or window adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1349304327283795849723748424473",
+   "asset_id": "TCIA-COVID19_AR-13020343361282",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …48424473"
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0261",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "예방의학·역학·보건통계 — 무작위 시험 결과를 개인 상담에 적용하기",
+  "type": "예방의학·역학·보건통계 — 무작위 시험 결과를 개인 상담에 적용하기",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-06",
+  "vignette": "62세 남자가 건강검진 뒤 새로 나온 콜레스테롤 저하제를 복용해야 하는지 상담하러 왔다. 흡연하지 않고 혈압은 128/80 mmHg 이며, 위험 계산식으로 추정한 그의 5년 심근경색 위험은 4 % 이다. 의사는 50~70세 고위험군 4,000명을 대상으로 한 무작위 대조시험 결과를 참고한다. 이 시험에서 5년간 심근경색 발생률은 위약군 12 %, 치료군 9 % 였고, 이상반응에 의한 투약 중단 비율은 두 군이 비슷하였다.",
+  "question": "약의 상대적 효과가 위험 수준과 관계없이 일정하다고 가정할 때, 이 남자와 같은 위험의 사람들에서 5년간 심근경색 1건을 예방하려면 몇 명을 치료해야 하는가?",
+  "options": [
+   "400명",
+   "100명",
+   "33명",
+   "25명",
+   "4명"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 시험의 상대위험 = 9 % / 12 % = 0.75 이므로 상대위험감소(RRR)는 25 % 다. 상대적 효과가 일정하다고 가정하면, 기저 위험 4 % 인 이 남자의 위험은 4 % × 0.75 = 3 % 로 줄어 절대위험감소(ARR)는 1 %p 다. 치료 필요 수(NNT) = 1 / ARR = 1 / 0.01 = 100명이다. 시험 집단의 NNT(1 / 0.03 ≈ 33명)를 그대로 옮기면 저위험 개인의 이득을 3배 과대평가한다.\n- 원리: <b>상대적 효과는 옮겨지고, 절대적 효과는 다시 계산한다</b>: 약의 효과는 대개 「위험을 몇 % 줄이는가」(상대위험감소)로 집단 사이에 비교적 일정하게 유지된다. 그러나 환자가 실제로 얻는 이득은 「원래 위험에서 몇 %p 가 빠지는가」(절대위험감소)이고, 이는 기저 위험 × 상대위험감소다. 그래서 같은 약이라도 고위험군에서는 NNT 가 작고, 저위험군에서는 NNT 가 크다.<br> <b>계산 순서</b>: ① 시험에서 상대위험 RR = 치료군 위험 / 대조군 위험 → RRR = 1 − RR. ② 대상자의 기저 위험 × RRR = ARR. ③ NNT = 1 / ARR(비율로 계산, 기간을 함께 적는다). 위해 쪽도 같다 — 이상반응의 절대위험증가로 NNH 를 구해 NNT 와 견준다.<br> <b>왜 중요한가</b>: 시험 논문의 NNT 는 그 시험 집단의 위험에서만 맞다. 1차 예방처럼 위험이 낮은 사람에게 그대로 옮기면 이득을 과대평가해 과잉 치료를 권하게 된다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">이 남자(기저 위험 4 %)</th><th>시험 집단(기저 위험 12 %) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>상대위험감소</td><td>25 %(시험에서 가져옴)</td><td>25 %</td></tr> <tr><td>절대위험감소</td><td>4 % × 0.25 = 1 %p</td><td>12 % − 9 % = 3 %p</td></tr> <tr><td>NNT(5년)</td><td>1 / 0.01 = 100명</td><td>1 / 0.03 ≈ 33명</td></tr> </tbody></table> 상대위험감소는 같아도 기저 위험이 1/3 이면 절대 이득도 1/3, NNT 는 3배가 된다. 어떤 집단의 NNT 인지 먼저 묻는 습관이 답을 가른다.\n- 오답 이유:\n  - ① 400명은 1 %p 에 다시 상대위험감소 25 % 를 곱해(0.25 %p) 두 번 줄인 값이다. 기저 위험이 1 % 인 사람이었다면 ARR 0.25 %p 로 정답이 된다.\n  - ③ 33명은 시험 집단(기저 위험 12 %)의 절대위험감소 3 %p 로 계산한 NNT 다. 이 남자의 5년 위험이 시험 대조군과 같은 12 % 였다면 정답이다.\n  - ④ 25명은 기저 위험 4 % 를 그대로 절대위험감소로 착각해 1 / 0.04 로 계산한 값이다. 약이 위험을 100 % 없애 준다면(상대위험감소 100 %) 맞는 수치다.\n  - ⑤ 4명은 상대위험감소 25 % 의 역수(1 / 0.25)로, 절대 차이가 아니라 상대 차이를 넣은 오류다. 기저 위험이 100 % 인 사건이라면 이 값이 된다.\n- 함정: 논문에 적힌 시험 집단의 NNT(33명)를 그대로 쓰는 것 — 기저 위험이 다른 개인에게는 상대위험감소만 옮기고 절대위험감소를 다시 계산한다.\n- 학습목표: 시험의 상대위험감소를 기저 위험이 다른 개인에게 적용해 절대위험감소와 치료 필요 수(NNT)를 계산한다\n- 근거·출처: Laupacis A, Sackett DL, Roberts RS. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med 1988;318:1728-1733 (PMID 3374545) · Gordis L. Epidemiology, 5th ed. Ch. 10 More on randomized trials (absolute and relative risk reduction, number needed to treat)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "시험의 상대위험 = 9 % / 12 % = 0.75 이므로 상대위험감소(RRR)는 25 % 다. 상대적 효과가 일정하다고 가정하면, 기저 위험 4 % 인 이 남자의 위험은 4 % × 0.75 = 3 % 로 줄어 절대위험감소(ARR)는 1 %p 다. 치료 필요 수(NNT) = 1 / ARR = 1 / 0.01 = 100명이다. 시험 집단의 NNT(1 / 0.03 ≈ 33명)를 그대로 옮기면 저위험 개인의 이득을 3배 과대평가한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>상대적 효과는 옮겨지고, 절대적 효과는 다시 계산한다</b>: 약의 효과는 대개 「위험을 몇 % 줄이는가」(상대위험감소)로 집단 사이에 비교적 일정하게 유지된다. 그러나 환자가 실제로 얻는 이득은 「원래 위험에서 몇 %p 가 빠지는가」(절대위험감소)이고, 이는 기저 위험 × 상대위험감소다. 그래서 같은 약이라도 고위험군에서는 NNT 가 작고, 저위험군에서는 NNT 가 크다.<br> <b>계산 순서</b>: ① 시험에서 상대위험 RR = 치료군 위험 / 대조군 위험 → RRR = 1 − RR. ② 대상자의 기저 위험 × RRR = ARR. ③ NNT = 1 / ARR(비율로 계산, 기간을 함께 적는다). 위해 쪽도 같다 — 이상반응의 절대위험증가로 NNH 를 구해 NNT 와 견준다.<br> <b>왜 중요한가</b>: 시험 논문의 NNT 는 그 시험 집단의 위험에서만 맞다. 1차 예방처럼 위험이 낮은 사람에게 그대로 옮기면 이득을 과대평가해 과잉 치료를 권하게 된다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">이 남자(기저 위험 4 %)</th><th>시험 집단(기저 위험 12 %) — 가장 가까운 오답</th></tr></thead><tbody> <tr><td>상대위험감소</td><td>25 %(시험에서 가져옴)</td><td>25 %</td></tr> <tr><td>절대위험감소</td><td>4 % × 0.25 = 1 %p</td><td>12 % − 9 % = 3 %p</td></tr> <tr><td>NNT(5년)</td><td>1 / 0.01 = 100명</td><td>1 / 0.03 ≈ 33명</td></tr> </tbody></table> 상대위험감소는 같아도 기저 위험이 1/3 이면 절대 이득도 1/3, NNT 는 3배가 된다. 어떤 집단의 NNT 인지 먼저 묻는 습관이 답을 가른다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 400명은 1 %p 에 다시 상대위험감소 25 % 를 곱해(0.25 %p) 두 번 줄인 값이다. 기저 위험이 1 % 인 사람이었다면 ARR 0.25 %p 로 정답이 된다.\n③ 33명은 시험 집단(기저 위험 12 %)의 절대위험감소 3 %p 로 계산한 NNT 다. 이 남자의 5년 위험이 시험 대조군과 같은 12 % 였다면 정답이다.\n④ 25명은 기저 위험 4 % 를 그대로 절대위험감소로 착각해 1 / 0.04 로 계산한 값이다. 약이 위험을 100 % 없애 준다면(상대위험감소 100 %) 맞는 수치다.\n⑤ 4명은 상대위험감소 25 % 의 역수(1 / 0.25)로, 절대 차이가 아니라 상대 차이를 넣은 오류다. 기저 위험이 100 % 인 사건이라면 이 값이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "논문에 적힌 시험 집단의 NNT(33명)를 그대로 쓰는 것 — 기저 위험이 다른 개인에게는 상대위험감소만 옮기고 절대위험감소를 다시 계산한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "시험의 상대위험감소를 기저 위험이 다른 개인에게 적용해 절대위험감소와 치료 필요 수(NNT)를 계산한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Laupacis A, Sackett DL, Roberts RS. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med 1988;318:1728-1733 (PMID 3374545) · Gordis L. Epidemiology, 5th ed. Ch. 10 More on randomized trials (absolute and relative risk reduction, number needed to treat)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "시험의 상대위험감소 25 % 를 기저 위험 4 % 에 적용하면 절대위험감소 1 %p 로 NNT 100명이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "33명은 기저 위험 12 % 인 시험 집단의 NNT 다 — 이 남자의 위험은 4 % 다",
+   "steps": 3,
+   "chain": [
+    "시험 RR = 9 / 12 = 0.75 → 상대위험감소 25 %",
+    "이 남자의 기저 위험 4 % × 25 % → 절대위험감소 1 %p",
+    "NNT = 1 / 0.01 = 100명(5년)"
+   ],
+   "key": [
+    {
+     "item": "5년 심근경색 위험은 4 % 이다",
+     "why": "절대위험감소를 계산할 기저 위험",
+     "also": []
+    },
+    {
+     "item": "위약군 12 %, 치료군 9 %",
+     "why": "상대위험감소 25 % 의 근거",
+     "also": []
+    },
+    {
+     "item": "약의 상대적 효과가 위험 수준과 관계없이 일정하다고 가정할 때",
+     "why": "상대위험감소를 옮길 수 있는 조건",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "이상반응에 의한 투약 중단 비율은 두 군이 비슷하였다",
+     "why": "위해 쪽 정보 — NNT 계산에는 쓰지 않는다",
+     "also": []
+    },
+    {
+     "item": "흡연하지 않고 혈압은 128/80 mmHg",
+     "why": "이미 위험 계산식에 반영되었다",
+     "also": []
+    },
+    {
+     "item": "고위험군 4,000명",
+     "why": "시험 규모 — 계산에 쓰이지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "시험의 상대위험감소는 25 % 다. 기저 위험 4 % 인 이 남자에게 적용하면 절대위험감소 1 %p, NNT 는 100명이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "이 남자의 5년 위험이 시험 대조군과 같은 12 % 였다면 NNT 는 약 33명이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0012"
+ },
+ {
+  "id": "imaging-2026-0260",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "내분비·대사 — 머리 외상 뒤 생긴 다음·다뇨",
+  "type": "내분비·대사 — 머리 외상 뒤 생긴 다음·다뇨",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "A 45-year-old man comes to the physician because of excessive thirst and urination for 3 weeks. He drinks about 7 L of water daily, preferring ice-cold water, and wakes up four times nightly to urinate. Two months ago, he sustained a head injury in a motorcycle collision and was hospitalized for 5 days. He takes no medications and has no history of psychiatric illness. His blood pressure is 124/80 mm Hg, and pulse is 76/min. Physical examination shows no abnormalities. Serum studies show sodium 145 mEq/L, potassium 4.1 mEq/L, calcium 9.2 mg/dL, and glucose 96 mg/dL. Urine osmolality is 110 mOsm/kg H2O. During a supervised water deprivation test, his serum sodium concentration rises to 149 mEq/L and serum osmolality to 304 mOsm/kg H2O after 6 hours, while urine osmolality remains 140 mOsm/kg H2O. One hour after subcutaneous administration of desmopressin, urine osmolality is 420 mOsm/kg H2O.",
+  "question": "Which of the following is the most likely diagnosis?",
+  "options": [
+   "Cerebral salt wasting",
+   "Central diabetes insipidus",
+   "Nephrogenic diabetes insipidus",
+   "Primary polydipsia",
+   "Osmotic diuresis"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Polyuria with dilute urine (110 mOsm/kg), a high-normal serum sodium, failure to concentrate urine despite a serum osmolality above 300 mOsm/kg during water deprivation, and a rise in urine osmolality from 140 to 420 mOsm/kg (200%) after desmopressin indicate that the kidney can respond to vasopressin but none is being secreted — central diabetes insipidus (now called arginine vasopressin deficiency), here after head trauma damaging the posterior pituitary or stalk. The preference for ice-cold water is typical of central DI.\n- 원리: <b>What the test asks</b>: water deprivation raises plasma osmolality; in a healthy person this releases vasopressin (AVP) from the posterior pituitary, which inserts aquaporin-2 channels into collecting-duct cells and concentrates urine above 600–800 mOsm/kg. If urine stays dilute while plasma osmolality exceeds about 295–300 mOsm/kg, either AVP is missing (central) or the kidney cannot respond (nephrogenic). Giving desmopressin, a V2-receptor agonist, then separates the two: a rise of more than 50% means the receptor works and the hormone was missing.<br> <b>Why head trauma</b>: AVP is made in hypothalamic nuclei and carried down the pituitary stalk; shearing or edema of the stalk interrupts its delivery. Post-traumatic central DI can be transient or permanent.<br> <b>Primary polydipsia</b> is the opposite problem: excessive drinking lowers plasma osmolality (low-normal serum sodium) and suppresses AVP; with deprivation, AVP is released and urine concentrates at least partly before desmopressin is given.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Central DI (correct)</th><th>Nephrogenic DI (closest distractor)</th></tr></thead><tbody> <tr><td>Defect</td><td>No AVP secretion</td><td>Collecting duct unresponsive to AVP (V2 receptor or aquaporin-2)</td></tr> <tr><td>Urine after deprivation</td><td>Stays dilute</td><td>Stays dilute</td></tr> <tr><td>Response to desmopressin</td><td>Urine osmolality rises &gt; 50% (here 140 → 420)</td><td>Little or no rise (&lt; 10–50%)</td></tr> <tr><td>Typical causes</td><td>Head trauma, pituitary surgery, tumors, infiltrative disease</td><td>Lithium, hypercalcemia, hypokalemia, X-linked V2 mutation</td></tr> </tbody></table> Deprivation shows whether urine can be concentrated at all; desmopressin then shows which side — brain or kidney — is at fault.\n- 오답 이유:\n  - (A) Cerebral salt wasting after brain injury causes renal sodium loss with hyponatremia and volume depletion, not dilute polyuria with hypernatremia; it would fit a serum sodium of 128 mEq/L.\n  - (C) Nephrogenic diabetes insipidus also fails to concentrate urine during deprivation, but desmopressin causes little rise. It would be correct if urine osmolality went from 140 to only 160 mOsm/kg, as with lithium therapy.\n  - (D) Primary polydipsia causes dilute polyuria with a low-normal serum sodium, and urine concentrates during deprivation. It would fit a serum sodium of 134 mEq/L and urine osmolality reaching 600 mOsm/kg before desmopressin.\n  - (E) Osmotic diuresis produces polyuria with urine osmolality near or above plasma, from glucose, mannitol or urea. It would be correct with a glucose level of 450 mg/dL and urine osmolality of 350 mOsm/kg.\n- 함정: Seeing failure to concentrate during deprivation and stopping at 'diabetes insipidus' without reading the desmopressin response — a 200% rise places the defect in vasopressin secretion, not the kidney.\n- 학습목표: 수분 제한 검사에서 소변을 농축하지 못하다가 데스모프레신에 소변 삼투질농도가 50 % 넘게 오르면 중추성 요붕증(AVP 결핍)으로 판단한다\n- 근거·출처: Christ-Crain M, et al. Diabetes insipidus. Nat Rev Dis Primers 2019;5:54 (PMID 31395885) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 381 Disorders of the neurohypophysis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Polyuria with dilute urine (110 mOsm/kg), a high-normal serum sodium, failure to concentrate urine despite a serum osmolality above 300 mOsm/kg during water deprivation, and a rise in urine osmolality from 140 to 420 mOsm/kg (200%) after desmopressin indicate that the kidney can respond to vasopressin but none is being secreted — central diabetes insipidus (now called arginine vasopressin deficiency), here after head trauma damaging the posterior pituitary or stalk. The preference for ice-cold water is typical of central DI."
+   },
+   {
+    "k": "원리",
+    "v": "<b>What the test asks</b>: water deprivation raises plasma osmolality; in a healthy person this releases vasopressin (AVP) from the posterior pituitary, which inserts aquaporin-2 channels into collecting-duct cells and concentrates urine above 600–800 mOsm/kg. If urine stays dilute while plasma osmolality exceeds about 295–300 mOsm/kg, either AVP is missing (central) or the kidney cannot respond (nephrogenic). Giving desmopressin, a V2-receptor agonist, then separates the two: a rise of more than 50% means the receptor works and the hormone was missing.<br> <b>Why head trauma</b>: AVP is made in hypothalamic nuclei and carried down the pituitary stalk; shearing or edema of the stalk interrupts its delivery. Post-traumatic central DI can be transient or permanent.<br> <b>Primary polydipsia</b> is the opposite problem: excessive drinking lowers plasma osmolality (low-normal serum sodium) and suppresses AVP; with deprivation, AVP is released and urine concentrates at least partly before desmopressin is given."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Central DI (correct)</th><th>Nephrogenic DI (closest distractor)</th></tr></thead><tbody> <tr><td>Defect</td><td>No AVP secretion</td><td>Collecting duct unresponsive to AVP (V2 receptor or aquaporin-2)</td></tr> <tr><td>Urine after deprivation</td><td>Stays dilute</td><td>Stays dilute</td></tr> <tr><td>Response to desmopressin</td><td>Urine osmolality rises &gt; 50% (here 140 → 420)</td><td>Little or no rise (&lt; 10–50%)</td></tr> <tr><td>Typical causes</td><td>Head trauma, pituitary surgery, tumors, infiltrative disease</td><td>Lithium, hypercalcemia, hypokalemia, X-linked V2 mutation</td></tr> </tbody></table> Deprivation shows whether urine can be concentrated at all; desmopressin then shows which side — brain or kidney — is at fault."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Cerebral salt wasting after brain injury causes renal sodium loss with hyponatremia and volume depletion, not dilute polyuria with hypernatremia; it would fit a serum sodium of 128 mEq/L.\n(C) Nephrogenic diabetes insipidus also fails to concentrate urine during deprivation, but desmopressin causes little rise. It would be correct if urine osmolality went from 140 to only 160 mOsm/kg, as with lithium therapy.\n(D) Primary polydipsia causes dilute polyuria with a low-normal serum sodium, and urine concentrates during deprivation. It would fit a serum sodium of 134 mEq/L and urine osmolality reaching 600 mOsm/kg before desmopressin.\n(E) Osmotic diuresis produces polyuria with urine osmolality near or above plasma, from glucose, mannitol or urea. It would be correct with a glucose level of 450 mg/dL and urine osmolality of 350 mOsm/kg."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing failure to concentrate during deprivation and stopping at 'diabetes insipidus' without reading the desmopressin response — a 200% rise places the defect in vasopressin secretion, not the kidney."
+   },
+   {
+    "k": "학습목표",
+    "v": "수분 제한 검사에서 소변을 농축하지 못하다가 데스모프레신에 소변 삼투질농도가 50 % 넘게 오르면 중추성 요붕증(AVP 결핍)으로 판단한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Christ-Crain M, et al. Diabetes insipidus. Nat Rev Dis Primers 2019;5:54 (PMID 31395885) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 381 Disorders of the neurohypophysis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "수분 제한으로 혈장 삼투질농도가 300 을 넘어도 소변이 묽다가 데스모프레신에 소변 삼투질농도가 200 % 오르므로 중추성 요붕증이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "신성 요붕증은 데스모프레신을 줘도 소변 삼투질농도가 거의 오르지 않는다",
+   "steps": 3,
+   "chain": [
+    "다뇨 + 묽은 소변(110) + 혈청 나트륨 145 → 요붕증 또는 일차 다음증",
+    "수분 제한으로 혈장 삼투질농도 304 인데 소변 140 → 농축 실패(요붕증, 일차 다음증 가능성 낮음)",
+    "데스모프레신 뒤 140 → 420(200 % 상승) → 콩팥은 반응 — 중추성 요붕증"
+   ],
+   "key": [
+    {
+     "item": "urine osmolality remains 140 mOsm/kg H2O",
+     "why": "혈장이 농축됐는데도 소변을 농축하지 못한다",
+     "also": []
+    },
+    {
+     "item": "urine osmolality is 420 mOsm/kg H2O",
+     "why": "데스모프레신에 크게 반응 — 중추성",
+     "also": []
+    },
+    {
+     "item": "he sustained a head injury in a motorcycle collision",
+     "why": "뇌하수체 줄기 손상의 원인",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "sodium 145 mEq/L",
+     "why": "높은 정상 — 일차 다음증(낮은 정상) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "glucose 96 mg/dL",
+     "why": "삼투성 이뇨 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "calcium 9.2 mg/dL",
+     "why": "고칼슘혈증에 의한 신성 요붕증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He takes no medications",
+     "why": "리튬에 의한 신성 요붕증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "preferring ice-cold water",
+     "why": "중추성 요붕증에 흔한 특징이지만 진단적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "수분 제한으로 혈장 삼투질농도가 304 까지 올라도 소변이 140 으로 묽다가 데스모프레신에 420 으로 오른다. 콩팥은 반응하고 호르몬이 없는 것이므로 머리 외상 뒤 중추성 요붕증이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "데스모프레신 뒤에도 소변 삼투질농도가 160 mOsm/kg 에 그치고 리튬을 복용 중이었다면 신성 요붕증이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0011"
+ },
+ {
+  "id": "imaging-2026-0259",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "부인과 — 6주 무월경 뒤 점상 출혈과 하복부 통증",
+  "type": "부인과 — 6주 무월경 뒤 점상 출혈과 하복부 통증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "A 29-year-old woman, gravida 2, para 1, comes to the emergency department because of light vaginal spotting and mild left lower abdominal pain for 2 days. Her last menstrual period was 6 weeks ago. Her blood pressure is 118/74 mm Hg, and pulse is 82/min. The abdomen is soft, with mild left lower quadrant tenderness and no rebound. Pelvic examination shows a closed cervical os and mild left adnexal tenderness. Her serum β-hCG concentration is 2,400 mIU/mL; 48 hours ago, it was 2,100 mIU/mL. Transvaginal ultrasonography shows no intrauterine gestational sac and a 2.4-cm left adnexal mass without fetal cardiac activity; there is a small amount of fluid in the rectouterine pouch. Hemoglobin concentration is 12.8 g/dL. Serum creatinine concentration and liver aminotransferase activities are within the reference ranges. She has no lung disease, is not breastfeeding, and lives 10 minutes from the hospital and can return for follow-up visits.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intramuscular methotrexate",
+   "Laparoscopic salpingectomy",
+   "Repeat serum β-hCG measurement in 48 hours",
+   "Dilation and curettage",
+   "Exploratory laparotomy"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A β-hCG of 2,400 mIU/mL — above the discriminatory zone at which an intrauterine sac should be visible transvaginally — with an empty uterus and an adnexal mass is an ectopic (tubal) pregnancy. The β-hCG rose only 14% in 48 hours, far below what a viable intrauterine pregnancy shows, which supports the diagnosis. She is hemodynamically stable, the mass is small (< 3.5 cm) without cardiac activity, β-hCG is below 5,000 mIU/mL, there is only a small amount of free fluid, laboratory tests are normal, and she can be followed reliably. She is an ideal candidate for single-dose intramuscular methotrexate, followed by β-hCG on days 4 and 7 (expect a ≥ 15% fall between them).\n- 원리: <b>How methotrexate ends a tubal pregnancy</b>: methotrexate inhibits dihydrofolate reductase, depleting tetrahydrofolate needed for purine and thymidine synthesis. Rapidly dividing trophoblast is especially sensitive, so the pregnancy stops growing and is resorbed without opening the tube. Success depends on how much trophoblast there is: rates exceed 90% when β-hCG is below 1,000–2,000 and fall to about 80% or less above 5,000 mIU/mL or when cardiac activity is present.<br> <b>Who should not get it</b>: rupture or hemodynamic instability, intrauterine pregnancy, breastfeeding, immunodeficiency, active lung or peptic ulcer disease, hepatic or renal dysfunction, blood dyscrasias, or inability to return for follow-up — because failure or rupture can be fatal if missed.<br> <b>Why not wait</b>: expectant management is reserved for β-hCG that is low (usually < 1,500–2,000) and already falling; a rising level means active trophoblast.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Methotrexate (correct)</th><th>Laparoscopic salpingectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td>Stable, no signs of rupture</td><td>Unstable, ruptured, or large hemoperitoneum</td></tr> <tr><td>Size and activity</td><td>Mass &lt; 3.5 cm, no cardiac activity</td><td>Larger mass or fetal heartbeat</td></tr> <tr><td>β-hCG and follow-up</td><td>&lt; 5,000 mIU/mL, reliable follow-up</td><td>Very high β-hCG, contraindication to methotrexate, or unreliable follow-up</td></tr> </tbody></table> Both are correct treatments of ectopic pregnancy; the patient's stability, mass size, β-hCG level and ability to return decide which one applies.\n- 오답 이유:\n  - (B) Laparoscopic salpingectomy is the treatment for ruptured or unstable ectopic pregnancy, or when methotrexate is contraindicated. It would be correct with a 4.5-cm mass with fetal cardiac activity or a hemoperitoneum.\n  - (C) Repeating β-hCG in 48 hours is appropriate for a pregnancy of unknown location when the level is below the discriminatory zone and no adnexal mass is seen. Here the diagnosis is already made.\n  - (D) Dilation and curettage helps distinguish a failed intrauterine pregnancy from an ectopic when the location is unclear and the pregnancy is undesired; with an adnexal mass and an empty uterus it only delays treatment.\n  - (E) Exploratory laparotomy is chosen for a hemodynamically unstable patient with suspected rupture when laparoscopy is not feasible; it would be correct with hypotension and a large hemoperitoneum.\n- 함정: Choosing surgery because 'ectopic pregnancy = operation', or waiting because she looks well — a stable, small, unruptured ectopic with β-hCG below 5,000 and reliable follow-up is treated medically.\n- 학습목표: 혈역학적으로 안정된 미파열 난관임신에서 β-hCG < 5,000, 종괴 < 3.5 cm, 태아 심박 없음, 추적 가능하면 메토트렉세이트 근주를 선택한다\n- 근거·출처: American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol 2018;131:e91-e103 (PMID 29470343) · Barnhart KT. Clinical practice. Ectopic pregnancy. N Engl J Med 2009;361:379-387 (PMID 19625718)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A β-hCG of 2,400 mIU/mL — above the discriminatory zone at which an intrauterine sac should be visible transvaginally — with an empty uterus and an adnexal mass is an ectopic (tubal) pregnancy. The β-hCG rose only 14% in 48 hours, far below what a viable intrauterine pregnancy shows, which supports the diagnosis. She is hemodynamically stable, the mass is small (< 3.5 cm) without cardiac activity, β-hCG is below 5,000 mIU/mL, there is only a small amount of free fluid, laboratory tests are normal, and she can be followed reliably. She is an ideal candidate for single-dose intramuscular methotrexate, followed by β-hCG on days 4 and 7 (expect a ≥ 15% fall between them)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>How methotrexate ends a tubal pregnancy</b>: methotrexate inhibits dihydrofolate reductase, depleting tetrahydrofolate needed for purine and thymidine synthesis. Rapidly dividing trophoblast is especially sensitive, so the pregnancy stops growing and is resorbed without opening the tube. Success depends on how much trophoblast there is: rates exceed 90% when β-hCG is below 1,000–2,000 and fall to about 80% or less above 5,000 mIU/mL or when cardiac activity is present.<br> <b>Who should not get it</b>: rupture or hemodynamic instability, intrauterine pregnancy, breastfeeding, immunodeficiency, active lung or peptic ulcer disease, hepatic or renal dysfunction, blood dyscrasias, or inability to return for follow-up — because failure or rupture can be fatal if missed.<br> <b>Why not wait</b>: expectant management is reserved for β-hCG that is low (usually < 1,500–2,000) and already falling; a rising level means active trophoblast."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Methotrexate (correct)</th><th>Laparoscopic salpingectomy (closest distractor)</th></tr></thead><tbody> <tr><td>Hemodynamics</td><td>Stable, no signs of rupture</td><td>Unstable, ruptured, or large hemoperitoneum</td></tr> <tr><td>Size and activity</td><td>Mass &lt; 3.5 cm, no cardiac activity</td><td>Larger mass or fetal heartbeat</td></tr> <tr><td>β-hCG and follow-up</td><td>&lt; 5,000 mIU/mL, reliable follow-up</td><td>Very high β-hCG, contraindication to methotrexate, or unreliable follow-up</td></tr> </tbody></table> Both are correct treatments of ectopic pregnancy; the patient's stability, mass size, β-hCG level and ability to return decide which one applies."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Laparoscopic salpingectomy is the treatment for ruptured or unstable ectopic pregnancy, or when methotrexate is contraindicated. It would be correct with a 4.5-cm mass with fetal cardiac activity or a hemoperitoneum.\n(C) Repeating β-hCG in 48 hours is appropriate for a pregnancy of unknown location when the level is below the discriminatory zone and no adnexal mass is seen. Here the diagnosis is already made.\n(D) Dilation and curettage helps distinguish a failed intrauterine pregnancy from an ectopic when the location is unclear and the pregnancy is undesired; with an adnexal mass and an empty uterus it only delays treatment.\n(E) Exploratory laparotomy is chosen for a hemodynamically unstable patient with suspected rupture when laparoscopy is not feasible; it would be correct with hypotension and a large hemoperitoneum."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing surgery because 'ectopic pregnancy = operation', or waiting because she looks well — a stable, small, unruptured ectopic with β-hCG below 5,000 and reliable follow-up is treated medically."
+   },
+   {
+    "k": "학습목표",
+    "v": "혈역학적으로 안정된 미파열 난관임신에서 β-hCG < 5,000, 종괴 < 3.5 cm, 태아 심박 없음, 추적 가능하면 메토트렉세이트 근주를 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol 2018;131:e91-e103 (PMID 29470343) · Barnhart KT. Clinical practice. Ectopic pregnancy. N Engl J Med 2009;361:379-387 (PMID 19625718)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "판별 구간을 넘는 β-hCG 에 자궁 안 임신낭이 없고 부속기 종괴가 있어 난관임신이며, 안정·미파열·종괴 < 3.5 cm·심박 없음·β-hCG < 5,000·추적 가능하므로 메토트렉세이트 근주를 고른다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "복강경 난관절제는 파열·불안정·큰 종괴·심박 동반·메토트렉세이트 금기일 때이고, 이 환자는 그 어느 것도 없다",
+   "steps": 3,
+   "chain": [
+    "β-hCG 2,400(판별 구간 초과) + 자궁 안 임신낭 없음 + 부속기 종괴 → 난관임신",
+    "혈압·맥박 안정, 반발압통 없음, 소량 체액 → 미파열",
+    "종괴 2.4 cm·심박 없음·β-hCG < 5,000·간·콩팥 정상·추적 가능 → 메토트렉세이트"
+   ],
+   "key": [
+    {
+     "item": "no intrauterine gestational sac and a 2.4-cm left adnexal mass without fetal cardiac activity",
+     "why": "난관임신 진단과 약물 치료 조건(크기·심박)",
+     "also": []
+    },
+    {
+     "item": "Her serum β-hCG concentration is 2,400 mIU/mL",
+     "why": "판별 구간 초과, 5,000 미만",
+     "also": []
+    },
+    {
+     "item": "48 hours ago, it was 2,100 mIU/mL",
+     "why": "상승폭이 작다 — 정상 자궁내 임신답지 않고, 대기요법 대상도 아니다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "Her blood pressure is 118/74 mm Hg, and pulse is 82/min",
+     "why": "혈역학적으로 안정",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine concentration and liver aminotransferase activities are within the reference ranges",
+     "why": "메토트렉세이트 금기 없음",
+     "also": []
+    },
+    {
+     "item": "can return for follow-up visits",
+     "why": "추적 가능 — 약물 치료의 필수 조건",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "a small amount of fluid in the rectouterine pouch",
+     "why": "소량 체액은 미파열에서도 흔해 수술 적응이 되지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "판별 구간을 넘는 β-hCG 에 자궁이 비어 있고 2.4 cm 부속기 종괴가 있다 — 난관임신이다. 안정·미파열·심박 없음·β-hCG < 5,000·추적 가능하므로 메토트렉세이트 근주다.",
+   "switch": {
+    "choice": "B",
+    "condition": "종괴가 4.5 cm 이고 태아 심박이 보이거나 혈압이 85/50 mmHg 로 떨어졌다면 수술(난관절제)이 맞다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0258",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "혈액·종양 — 두통·혼동과 빈혈·혈소판감소",
+  "type": "혈액·종양 — 두통·혼동과 빈혈·혈소판감소",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "34세 여자가 2일 전부터 생긴 두통과 혼동으로 응급실에 왔다. 1주 전부터 피곤하고 다리에 멍이 잘 들었다. 복용 약물은 없고 최근 설사나 헤파린 사용은 없었다. 혈압 138/84 mmHg, 맥박 104회/분, 체온 37.9 °C 이다. 날짜를 잘못 말하고 다리에 점상출혈이 있으며 국소 신경 결손은 없다. 혈색소 7.8 g/dL, 망상적혈구 8 %, 혈소판 14,000/μL, 젖산탈수소효소 1,420 U/L, 간접 빌리루빈 2.8 mg/dL 이고 합토글로빈은 측정되지 않을 만큼 낮다. 크레아티닌 1.1 mg/dL 이고 프로트롬빈시간·활성화부분트롬보플라스틴시간·피브리노겐은 정상이다. 직접항글로불린검사는 음성이고 말초혈액도말에서 조각적혈구가 고배율 시야마다 여러 개 보인다. ADAMTS13 활성도 검사를 보냈다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "아르가트로반",
+   "혈장교환술과 글루코코르티코이드",
+   "혈소판 수혈",
+   "에쿨리주맙",
+   "정맥 면역글로불린"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 쿰스 음성 용혈(LDH·간접 빌리루빈 상승, 합토글로빈 감소, 망상적혈구 증가)에 조각적혈구가 있어 미세혈관병 용혈빈혈이고, 혈소판이 14,000/μL 로 매우 낮으며, 혼동이 있다. 응고검사가 정상이라 파종혈관내응고가 아니고, 크레아티닌이 거의 정상이다 — 혈전혈소판감소자색반병(TTP)이 가장 가능성 높다(PLASMIC 점수 높음). 치료하지 않으면 사망률이 90 % 에 이르므로 ADAMTS13 결과를 기다리지 않고 혈장교환술과 글루코코르티코이드를 시작한다(카플라시주맙 추가 가능).\n- 원리: <b>ADAMTS13 과 TTP</b>: 혈관내피에서 분비되는 폰빌레브란트인자(VWF)는 처음에 아주 큰 다량체로 나오고, 혈장 단백분해효소 ADAMTS13 이 이를 잘라 크기를 줄인다. 후천성 TTP 는 ADAMTS13 에 대한 자가항체로 효소 활성이 10 % 미만으로 떨어진 상태다. 잘리지 않은 초대형 VWF 가 미세혈관의 높은 전단력에서 혈소판을 붙잡아 혈소판 혈전을 만들고, 그 사이를 지나는 적혈구가 찢어져 조각적혈구가 된다. 응고 인자를 쓰지 않으므로 PT·aPTT·피브리노겐은 정상이다.<br> <b>혈장교환술이 하는 일</b>: 환자 혈장을 빼내 자가항체와 초대형 VWF 를 제거하고, 신선동결혈장으로 바꿔 넣어 ADAMTS13 효소를 보충한다. 스테로이드(와 리툭시맙)는 항체 생성을 억제하고, 카플라시주맙은 VWF-혈소판 결합을 막아 혈전 형성을 바로 멈춘다.<br> <b>혈소판 수혈을 피하는 이유</b>: 수혈한 혈소판이 새 미세혈전의 재료가 되어 뇌·심장 허혈을 악화시킬 수 있어, 생명을 위협하는 출혈이나 시술이 아니면 하지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈장교환술 + 스테로이드(정답)</th><th>혈소판 수혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td>ADAMTS13 자가항체 제거·효소 보충</td><td>혈소판 수 자체</td></tr> <tr><td>TTP 에서 효과</td><td>사망률 90 % → 10~20 %</td><td>미세혈전 악화 가능 — 출혈 시에만</td></tr> <tr><td>쓰는 상황</td><td>쿰스 음성 MAHA + 혈소판감소, 응고검사 정상</td><td>저생성성 혈소판감소의 출혈, 시술 전</td></tr> </tbody></table> 혈소판이 낮다고 혈소판을 넣는 것은 「소비」가 원인일 때 오히려 해롭다. 원인(초대형 VWF)을 없애는 것이 치료다.\n- 오답 이유:\n  - ① 아르가트로반은 헤파린 유발 혈소판감소증의 대체 항응고제다. 헤파린 사용 5~10일 뒤 혈소판이 절반 넘게 줄고 혈전이 생겼다면 정답이 된다.\n  - ③ 혈소판 수혈은 골수 생성 저하(항암치료 뒤 등)로 혈소판이 낮고 출혈이 있을 때 쓴다. 이 환자가 TTP 치료 중 뇌출혈을 일으켰다면 제한적으로 고려할 수 있다.\n  - ④ 에쿨리주맙은 보체 조절 이상에 의한 비전형 용혈요독증후군의 치료다. 크레아티닌이 4 mg/dL 로 콩팥 손상이 두드러지고 ADAMTS13 활성이 정상으로 나왔다면 정답이다.\n  - ⑤ 정맥 면역글로불린은 출혈이 있거나 빨리 혈소판을 올려야 하는 면역혈소판감소증에 쓴다. 빈혈·용혈 없이 혈소판만 낮고 도말이 정상이었다면 맞다.\n- 함정: 혈소판 14,000/μL 와 점상출혈에 끌려 혈소판 수혈을 고르는 것 — TTP 에서 혈소판은 미세혈전으로 「소비」되고 있어 수혈은 해롭다.\n- 학습목표: 쿰스 음성 미세혈관병 용혈 + 심한 혈소판감소 + 신경 증상(정상 응고검사)을 혈전혈소판감소자색반병으로 판단하고 ADAMTS13 결과를 기다리지 않고 혈장교환술을 시작한다\n- 근거·출처: Joly BS, Coppo P, Veyradier A. Thrombotic thrombocytopenic purpura. Blood 2017;129:2836-2846 (PMID 28416507) · Zheng XL, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496-2502 (PMID 32914526) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall (thrombotic microangiopathies)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "쿰스 음성 용혈(LDH·간접 빌리루빈 상승, 합토글로빈 감소, 망상적혈구 증가)에 조각적혈구가 있어 미세혈관병 용혈빈혈이고, 혈소판이 14,000/μL 로 매우 낮으며, 혼동이 있다. 응고검사가 정상이라 파종혈관내응고가 아니고, 크레아티닌이 거의 정상이다 — 혈전혈소판감소자색반병(TTP)이 가장 가능성 높다(PLASMIC 점수 높음). 치료하지 않으면 사망률이 90 % 에 이르므로 ADAMTS13 결과를 기다리지 않고 혈장교환술과 글루코코르티코이드를 시작한다(카플라시주맙 추가 가능)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>ADAMTS13 과 TTP</b>: 혈관내피에서 분비되는 폰빌레브란트인자(VWF)는 처음에 아주 큰 다량체로 나오고, 혈장 단백분해효소 ADAMTS13 이 이를 잘라 크기를 줄인다. 후천성 TTP 는 ADAMTS13 에 대한 자가항체로 효소 활성이 10 % 미만으로 떨어진 상태다. 잘리지 않은 초대형 VWF 가 미세혈관의 높은 전단력에서 혈소판을 붙잡아 혈소판 혈전을 만들고, 그 사이를 지나는 적혈구가 찢어져 조각적혈구가 된다. 응고 인자를 쓰지 않으므로 PT·aPTT·피브리노겐은 정상이다.<br> <b>혈장교환술이 하는 일</b>: 환자 혈장을 빼내 자가항체와 초대형 VWF 를 제거하고, 신선동결혈장으로 바꿔 넣어 ADAMTS13 효소를 보충한다. 스테로이드(와 리툭시맙)는 항체 생성을 억제하고, 카플라시주맙은 VWF-혈소판 결합을 막아 혈전 형성을 바로 멈춘다.<br> <b>혈소판 수혈을 피하는 이유</b>: 수혈한 혈소판이 새 미세혈전의 재료가 되어 뇌·심장 허혈을 악화시킬 수 있어, 생명을 위협하는 출혈이나 시술이 아니면 하지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈장교환술 + 스테로이드(정답)</th><th>혈소판 수혈(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td>ADAMTS13 자가항체 제거·효소 보충</td><td>혈소판 수 자체</td></tr> <tr><td>TTP 에서 효과</td><td>사망률 90 % → 10~20 %</td><td>미세혈전 악화 가능 — 출혈 시에만</td></tr> <tr><td>쓰는 상황</td><td>쿰스 음성 MAHA + 혈소판감소, 응고검사 정상</td><td>저생성성 혈소판감소의 출혈, 시술 전</td></tr> </tbody></table> 혈소판이 낮다고 혈소판을 넣는 것은 「소비」가 원인일 때 오히려 해롭다. 원인(초대형 VWF)을 없애는 것이 치료다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아르가트로반은 헤파린 유발 혈소판감소증의 대체 항응고제다. 헤파린 사용 5~10일 뒤 혈소판이 절반 넘게 줄고 혈전이 생겼다면 정답이 된다.\n③ 혈소판 수혈은 골수 생성 저하(항암치료 뒤 등)로 혈소판이 낮고 출혈이 있을 때 쓴다. 이 환자가 TTP 치료 중 뇌출혈을 일으켰다면 제한적으로 고려할 수 있다.\n④ 에쿨리주맙은 보체 조절 이상에 의한 비전형 용혈요독증후군의 치료다. 크레아티닌이 4 mg/dL 로 콩팥 손상이 두드러지고 ADAMTS13 활성이 정상으로 나왔다면 정답이다.\n⑤ 정맥 면역글로불린은 출혈이 있거나 빨리 혈소판을 올려야 하는 면역혈소판감소증에 쓴다. 빈혈·용혈 없이 혈소판만 낮고 도말이 정상이었다면 맞다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판 14,000/μL 와 점상출혈에 끌려 혈소판 수혈을 고르는 것 — TTP 에서 혈소판은 미세혈전으로 「소비」되고 있어 수혈은 해롭다."
+   },
+   {
+    "k": "학습목표",
+    "v": "쿰스 음성 미세혈관병 용혈 + 심한 혈소판감소 + 신경 증상(정상 응고검사)을 혈전혈소판감소자색반병으로 판단하고 ADAMTS13 결과를 기다리지 않고 혈장교환술을 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Joly BS, Coppo P, Veyradier A. Thrombotic thrombocytopenic purpura. Blood 2017;129:2836-2846 (PMID 28416507) · Zheng XL, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. J Thromb Haemost 2020;18:2496-2502 (PMID 32914526) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall (thrombotic microangiopathies)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "쿰스 음성 미세혈관병 용혈 + 심한 혈소판감소 + 혼동에 응고검사가 정상이므로 TTP 이고, ADAMTS13 결과를 기다리지 않고 혈장교환술과 스테로이드를 시작한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "TTP 의 혈소판감소는 미세혈전으로 인한 소비라 수혈이 혈전을 악화시킬 수 있다",
+   "steps": 3,
+   "chain": [
+    "LDH·간접 빌리루빈↑, 합토글로빈↓, 망상적혈구↑ + 쿰스 음성 + 조각적혈구 → 미세혈관병 용혈빈혈",
+    "혈소판 14,000 + 혼동 + 응고검사 정상 + 크레아티닌 거의 정상 → TTP(파종혈관내응고·용혈요독증후군 가능성 낮음)",
+    "TTP 의심 → ADAMTS13 결과 전 혈장교환술 + 글루코코르티코이드"
+   ],
+   "key": [
+    {
+     "item": "조각적혈구가 고배율 시야마다 여러 개 보인다",
+     "why": "미세혈관병 용혈",
+     "also": []
+    },
+    {
+     "item": "직접항글로불린검사는 음성",
+     "why": "자가면역 용혈빈혈 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈소판 14,000/μL",
+     "why": "심한 혈소판감소 — TTP 에서 흔히 3만 미만",
+     "also": []
+    },
+    {
+     "item": "두통과 혼동",
+     "why": "신경 증상 — 뇌 미세혈전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "프로트롬빈시간·활성화부분트롬보플라스틴시간·피브리노겐은 정상",
+     "why": "파종혈관내응고 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.1 mg/dL",
+     "why": "콩팥 손상이 두드러진 용혈요독증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "최근 설사나 헤파린 사용은 없었다",
+     "why": "STEC 용혈요독증후군·HIT 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "체온 37.9 °C",
+     "why": "미열 — 고전적 5징후의 하나지만 진단에 필수는 아니다",
+     "also": []
+    }
+   ],
+   "summary": "쿰스 음성 용혈에 조각적혈구, 혈소판 14,000/μL, 혼동이 있고 응고검사와 콩팥 기능은 거의 정상이다 — TTP 다. ADAMTS13 결과를 기다리지 않고 혈장교환술과 스테로이드를 시작한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "크레아티닌이 4.2 mg/dL 로 콩팥 손상이 두드러지고 ADAMTS13 활성이 60 % 로 정상이었다면 비전형 용혈요독증후군으로 에쿨리주맙을 쓴다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0257",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "소화기·간담췌 — 간경변 환자의 복부 팽만과 미열",
+  "type": "소화기·간담췌 — 간경변 환자의 복부 팽만과 미열",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-06",
+  "vignette": "58세 남자가 3일 전부터 배가 더 불러오고 미열이 있어 내원하였다. 알코올 간경변으로 스피로노락톤과 푸로세미드를 복용 중이다. 혈압 112/68 mmHg, 맥박 92회/분, 체온 37.8 °C 이다. 복부는 팽만되어 있고 이동탁음이 있으며, 전반적으로 가벼운 압통이 있으나 반발압통은 없다. 의식은 명료하고 퍼덕떨림은 없다. 혈청 빌리루빈 4.6 mg/dL, 알부민 2.6 g/dL, 혈액요소질소 34 mg/dL, 크레아티닌 1.4 mg/dL, 국제정상화비율 1.7 이다. 복수천자에서 백혈구 640/μL(호중구 70 %), 복수 총단백 0.9 g/dL, 포도당 92 mg/dL 이고 그람 염색에서 균은 보이지 않았다. 복수와 혈액 배양을 보냈다.",
+  "question": "치료로 가장 적절한 것은?",
+  "options": [
+   "대량 복수천자와 알부민 보충",
+   "경구 노르플록사신 예방요법",
+   "응급 개복술",
+   "정맥 세포탁심과 정맥 알부민",
+   "정맥 세포탁심 단독"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 복수 호중구가 640 × 0.70 = 448/μL 로 250/μL 이상이다 — 그람 염색이 음성이어도 자발세균복막염(SBP)으로 바로 치료한다. 복수 총단백이 1 g/dL 미만, 포도당이 정상이라 이차성 복막염을 시사하지 않는다. 혈청 빌리루빈 4.6 mg/dL(> 4), 크레아티닌 1.4 mg/dL(> 1)·혈액요소질소 34 mg/dL(> 30)로 간신증후군 고위험군이므로, 3세대 세팔로스포린(세포탁심)과 함께 알부민을 1일째 1.5 g/kg, 3일째 1 g/kg 정맥 투여한다. 이뇨제는 중단한다.\n- 원리: <b>SBP 가 콩팥을 망가뜨리는 경로</b>: 간경변 환자는 내장 혈관이 확장되어(일산화질소 과다) 유효 동맥혈량이 늘 모자란 상태다. 복막 감염이 생기면 사이토카인이 혈관 확장을 더 키워 유효 혈량이 급격히 줄고, 레닌-안지오텐신·교감신경이 콩팥 혈관을 수축시켜 사구체여과율이 떨어진다 — 간신증후군이다. SBP 환자의 약 30 % 가 콩팥 손상을 겪고, 이것이 사망의 가장 강력한 예측인자다.<br> <b>알부민이 하는 일</b>: 알부민은 혈관 안에 수분을 붙잡아 유효 동맥혈량을 늘리고, 내독소·사이토카인을 결합하는 작용도 있다. 무작위 시험에서 세포탁심에 알부민을 더하면 콩팥 손상이 33 % → 10 %, 사망이 29 % → 10 % 로 줄었다. 이 이득은 빌리루빈 > 4 mg/dL 또는 크레아티닌 > 1 mg/dL·BUN > 30 mg/dL 인 고위험군에서 뚜렷하다.<br> <b>진단 기준</b>: 복수 호중구 ≥ 250/μL 면 배양을 기다리지 않고 치료한다. 총단백 > 1 g/dL, 포도당 < 50 mg/dL, LDH 상승 중 둘 이상이거나 여러 균이 보이면 장 천공에 의한 이차성 복막염을 찾는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세포탁심 + 알부민(정답)</th><th>세포탁심 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>SBP + 빌리루빈 &gt; 4 또는 크레아티닌 &gt; 1·BUN &gt; 30</td><td>위 기준이 없는 저위험 SBP</td></tr> <tr><td>이 환자</td><td>빌리루빈 4.6, 크레아티닌 1.4, BUN 34 — 고위험</td><td>콩팥 손상·사망 위험을 남긴다</td></tr> <tr><td>알부민 용량</td><td>1일째 1.5 g/kg, 3일째 1 g/kg</td><td>—</td></tr> </tbody></table> SBP 치료는 「균을 잡는 것」과 「콩팥을 지키는 것」의 두 축이다. 고위험 수치가 하나라도 있으면 알부민을 더한다.\n- 오답 이유:\n  - ① 대량 복수천자와 알부민 보충은 감염이 없는 긴장성 복수의 증상 완화법이다. 복수 호중구가 250/μL 미만이고 숨이 찰 정도의 복수였다면 맞지만, SBP 에서는 항생제가 먼저다.\n  - ② 경구 노르플록사신은 SBP 를 겪은 뒤의 이차 예방이나 복수 단백이 낮은 고위험 환자의 일차 예방이다. 치료가 끝난 뒤 퇴원할 때라면 이 선택지가 맞다.\n  - ③ 응급 개복술은 이차성 복막염(장 천공)에서 한다. 복수 총단백 > 1 g/dL, 포도당 < 50 mg/dL, 여러 균이 보이고 복부 CT 에 유리 공기가 있었다면 정답이다.\n  - ⑤ 세포탁심 단독은 빌리루빈 4 mg/dL 이하, 크레아티닌 1 mg/dL 이하인 저위험 SBP 에서 쓸 수 있다. 콩팥 기능과 빌리루빈이 정상이었다면 정답이 된다.\n- 함정: SBP 진단과 세포탁심까지만 고르고 멈추는 것 — 빌리루빈 4.6, 크레아티닌 1.4 는 알부민을 더해야 하는 고위험 기준이다.\n- 학습목표: 자발세균복막염에서 혈청 빌리루빈 > 4 mg/dL 또는 크레아티닌 > 1 mg/dL·BUN > 30 mg/dL 이면 항생제에 알부민을 더해 간신증후군을 예방한다\n- 근거·출처: Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med 1999;341:403-409 (PMID 10432325) · Biggins SW, et al. Diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome: 2021 practice guidance by the AASLD. Hepatology 2021;74:1014-1048 (PMID 33942342)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "복수 호중구가 640 × 0.70 = 448/μL 로 250/μL 이상이다 — 그람 염색이 음성이어도 자발세균복막염(SBP)으로 바로 치료한다. 복수 총단백이 1 g/dL 미만, 포도당이 정상이라 이차성 복막염을 시사하지 않는다. 혈청 빌리루빈 4.6 mg/dL(> 4), 크레아티닌 1.4 mg/dL(> 1)·혈액요소질소 34 mg/dL(> 30)로 간신증후군 고위험군이므로, 3세대 세팔로스포린(세포탁심)과 함께 알부민을 1일째 1.5 g/kg, 3일째 1 g/kg 정맥 투여한다. 이뇨제는 중단한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>SBP 가 콩팥을 망가뜨리는 경로</b>: 간경변 환자는 내장 혈관이 확장되어(일산화질소 과다) 유효 동맥혈량이 늘 모자란 상태다. 복막 감염이 생기면 사이토카인이 혈관 확장을 더 키워 유효 혈량이 급격히 줄고, 레닌-안지오텐신·교감신경이 콩팥 혈관을 수축시켜 사구체여과율이 떨어진다 — 간신증후군이다. SBP 환자의 약 30 % 가 콩팥 손상을 겪고, 이것이 사망의 가장 강력한 예측인자다.<br> <b>알부민이 하는 일</b>: 알부민은 혈관 안에 수분을 붙잡아 유효 동맥혈량을 늘리고, 내독소·사이토카인을 결합하는 작용도 있다. 무작위 시험에서 세포탁심에 알부민을 더하면 콩팥 손상이 33 % → 10 %, 사망이 29 % → 10 % 로 줄었다. 이 이득은 빌리루빈 > 4 mg/dL 또는 크레아티닌 > 1 mg/dL·BUN > 30 mg/dL 인 고위험군에서 뚜렷하다.<br> <b>진단 기준</b>: 복수 호중구 ≥ 250/μL 면 배양을 기다리지 않고 치료한다. 총단백 > 1 g/dL, 포도당 < 50 mg/dL, LDH 상승 중 둘 이상이거나 여러 균이 보이면 장 천공에 의한 이차성 복막염을 찾는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">세포탁심 + 알부민(정답)</th><th>세포탁심 단독(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>SBP + 빌리루빈 &gt; 4 또는 크레아티닌 &gt; 1·BUN &gt; 30</td><td>위 기준이 없는 저위험 SBP</td></tr> <tr><td>이 환자</td><td>빌리루빈 4.6, 크레아티닌 1.4, BUN 34 — 고위험</td><td>콩팥 손상·사망 위험을 남긴다</td></tr> <tr><td>알부민 용량</td><td>1일째 1.5 g/kg, 3일째 1 g/kg</td><td>—</td></tr> </tbody></table> SBP 치료는 「균을 잡는 것」과 「콩팥을 지키는 것」의 두 축이다. 고위험 수치가 하나라도 있으면 알부민을 더한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 대량 복수천자와 알부민 보충은 감염이 없는 긴장성 복수의 증상 완화법이다. 복수 호중구가 250/μL 미만이고 숨이 찰 정도의 복수였다면 맞지만, SBP 에서는 항생제가 먼저다.\n② 경구 노르플록사신은 SBP 를 겪은 뒤의 이차 예방이나 복수 단백이 낮은 고위험 환자의 일차 예방이다. 치료가 끝난 뒤 퇴원할 때라면 이 선택지가 맞다.\n③ 응급 개복술은 이차성 복막염(장 천공)에서 한다. 복수 총단백 > 1 g/dL, 포도당 < 50 mg/dL, 여러 균이 보이고 복부 CT 에 유리 공기가 있었다면 정답이다.\n⑤ 세포탁심 단독은 빌리루빈 4 mg/dL 이하, 크레아티닌 1 mg/dL 이하인 저위험 SBP 에서 쓸 수 있다. 콩팥 기능과 빌리루빈이 정상이었다면 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "SBP 진단과 세포탁심까지만 고르고 멈추는 것 — 빌리루빈 4.6, 크레아티닌 1.4 는 알부민을 더해야 하는 고위험 기준이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자발세균복막염에서 혈청 빌리루빈 > 4 mg/dL 또는 크레아티닌 > 1 mg/dL·BUN > 30 mg/dL 이면 항생제에 알부민을 더해 간신증후군을 예방한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in patients with cirrhosis and spontaneous bacterial peritonitis. N Engl J Med 1999;341:403-409 (PMID 10432325) · Biggins SW, et al. Diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome: 2021 practice guidance by the AASLD. Hepatology 2021;74:1014-1048 (PMID 33942342)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "복수 호중구 448/μL 로 SBP 이고, 빌리루빈 > 4·크레아티닌 > 1·BUN > 30 의 고위험군이므로 세포탁심에 알부민을 더한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "빌리루빈 4.6, 크레아티닌 1.4, BUN 34 가 간신증후군 고위험 기준이라 항생제 단독으로는 부족하다",
+   "steps": 3,
+   "chain": [
+    "복수 백혈구 640 × 호중구 70 % = 448/μL ≥ 250 → SBP",
+    "총단백 0.9 g/dL·포도당 정상·단일 감염 양상 → 이차성 복막염 가능성 낮음",
+    "빌리루빈 4.6·크레아티닌 1.4·BUN 34 → 간신증후군 고위험 → 세포탁심 + 알부민"
+   ],
+   "key": [
+    {
+     "item": "백혈구 640/μL(호중구 70 %)",
+     "why": "호중구 448/μL — SBP 진단 기준",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "복수 총단백 0.9 g/dL",
+     "why": "이차성 복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "포도당 92 mg/dL",
+     "why": "이차성 복막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "반발압통은 없다",
+     "why": "장 천공 복막염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 빌리루빈 4.6 mg/dL",
+     "why": "> 4 — 알부민 추가 기준",
+     "also": []
+    },
+    {
+     "item": "크레아티닌 1.4 mg/dL",
+     "why": "> 1 — 알부민 추가 기준",
+     "also": []
+    },
+    {
+     "item": "혈액요소질소 34 mg/dL",
+     "why": "> 30 — 알부민 추가 기준",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "그람 염색에서 균은 보이지 않았다",
+     "why": "SBP 는 균 농도가 낮아 그람 염색이 대부분 음성이다 — 진단을 배제하지 않는다",
+     "also": []
+    },
+    {
+     "item": "퍼덕떨림은 없다",
+     "why": "간성뇌증이 없다 — 치료 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "복수 호중구 448/μL 로 SBP 다. 빌리루빈 4.6, 크레아티닌 1.4, BUN 34 로 간신증후군 고위험이므로 세포탁심에 알부민(1일째 1.5 g/kg, 3일째 1 g/kg)을 더한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "빌리루빈 1.8 mg/dL, 크레아티닌 0.8 mg/dL, BUN 14 mg/dL 였다면 세포탁심 단독으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0256",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "류마티스·근골격 — 류마티스관절염 환자의 열과 무릎 부종",
+  "type": "류마티스·근골격 — 류마티스관절염 환자의 열과 무릎 부종",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-06",
+  "vignette": "A 67-year-old woman comes to the emergency department because of a 2-day history of pain and swelling of the right knee. She has rheumatoid arthritis treated with methotrexate and prednisone 5 mg daily. Ten days ago, she scratched her right shin while gardening. Her temperature is 38.4°C, pulse is 102/min, and blood pressure is 128/76 mm Hg. The right knee is warm, swollen, and tender with a large effusion, and active and passive motion are severely limited by pain. No other joints are swollen. Leukocyte count is 15,200/mm3, and serum C-reactive protein concentration is 14 mg/dL (N<0.5). Serum uric acid concentration is 7.4 mg/dL. Arthrocentesis yields cloudy fluid with a leukocyte count of 86,000/mm3 (92% neutrophils); Gram stain shows gram-positive cocci in clusters, and no crystals are seen on polarized light microscopy. Blood cultures are obtained, and intravenous vancomycin is started.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Drainage of the knee joint",
+   "Oral colchicine therapy",
+   "Higher-dose oral prednisone",
+   "Intra-articular triamcinolone",
+   "Splinting and observation"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: A hot, swollen knee with fever, synovial fluid leukocytes 86,000/mm3 with 92% neutrophils, and gram-positive cocci in clusters on Gram stain is septic arthritis, most likely Staphylococcus aureus entering through the skin break in an immunosuppressed patient with rheumatoid arthritis. Treatment has two parts: intravenous antibiotics (vancomycin until susceptibilities return) and removal of the purulent fluid — repeated needle aspiration, or arthroscopic lavage when the effusion is large, loculated or does not clear. Pus in a joint destroys cartilage within days, and antibiotics alone do not sterilize it.\n- 원리: <b>Why drainage is not optional</b>: bacteria in the joint trigger a massive neutrophil influx. Neutrophil proteases and cytokines (IL-1, TNF) degrade cartilage proteoglycans within 24–48 hours, and the pressure of a tense effusion impairs synovial blood flow. Antibiotics penetrate the synovium well but cannot clear thick pus or the enzymes already released, so the joint must be emptied — like an abscess.<br> <b>Who is at risk</b>: rheumatoid arthritis is the strongest joint-level risk factor (damaged synovium plus immunosuppression), and S aureus is the leading organism. A low-grade fever and modest symptoms are common under glucocorticoids, so a single inflamed joint in a patient with RA is septic until proven otherwise.<br> <b>Crystals do not exclude infection</b>: gout and septic arthritis can coexist, and a mildly raised serum urate is nonspecific. A synovial leukocyte count above 50,000/mm3 with organisms on Gram stain decides the matter.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Joint drainage + antibiotics (correct)</th><th>Colchicine (closest distractor)</th></tr></thead><tbody> <tr><td>Diagnosis treated</td><td>Septic arthritis — organisms on Gram stain, WBC 86,000</td><td>Acute gout — needle-shaped negatively birefringent crystals</td></tr> <tr><td>Synovial fluid here</td><td>Gram-positive cocci, no crystals</td><td>Would need intracellular urate crystals</td></tr> <tr><td>Risk of the wrong choice</td><td>—</td><td>Untreated pus destroys cartilage in days</td></tr> </tbody></table> A raised serum urate tempts toward gout, but synovial fluid decides: organisms mean infection and drainage, crystals without organisms mean gout.\n- 오답 이유:\n  - (B) Colchicine treats acute gout flares. It would be correct if polarized microscopy showed needle-shaped negatively birefringent crystals and the Gram stain and culture were negative.\n  - (C) Raising prednisone treats a rheumatoid flare, which is polyarticular and has synovial leukocytes usually below 50,000/mm3; with organisms on Gram stain it would worsen the infection.\n  - (D) Intra-articular triamcinolone relieves a noninfected inflammatory or osteoarthritic effusion. It is contraindicated with bacteria in the joint and would fit only a sterile, crystal-negative RA effusion.\n  - (E) Splinting with observation suits a minor sprain or traumatic effusion without fever. In septic arthritis, waiting 72 hours with pus in the joint risks permanent cartilage loss and sepsis.\n- 함정: Being drawn to gout by the uric acid level, or to an RA flare by the history — the Gram stain shows bacteria, and the joint must be drained.\n- 학습목표: 화농관절염은 항생제와 함께 관절 배농(반복 천자 또는 관절경 세척)이 필수임을 안다\n- 근거·출처: Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 136 Infectious arthritis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A hot, swollen knee with fever, synovial fluid leukocytes 86,000/mm3 with 92% neutrophils, and gram-positive cocci in clusters on Gram stain is septic arthritis, most likely Staphylococcus aureus entering through the skin break in an immunosuppressed patient with rheumatoid arthritis. Treatment has two parts: intravenous antibiotics (vancomycin until susceptibilities return) and removal of the purulent fluid — repeated needle aspiration, or arthroscopic lavage when the effusion is large, loculated or does not clear. Pus in a joint destroys cartilage within days, and antibiotics alone do not sterilize it."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why drainage is not optional</b>: bacteria in the joint trigger a massive neutrophil influx. Neutrophil proteases and cytokines (IL-1, TNF) degrade cartilage proteoglycans within 24–48 hours, and the pressure of a tense effusion impairs synovial blood flow. Antibiotics penetrate the synovium well but cannot clear thick pus or the enzymes already released, so the joint must be emptied — like an abscess.<br> <b>Who is at risk</b>: rheumatoid arthritis is the strongest joint-level risk factor (damaged synovium plus immunosuppression), and S aureus is the leading organism. A low-grade fever and modest symptoms are common under glucocorticoids, so a single inflamed joint in a patient with RA is septic until proven otherwise.<br> <b>Crystals do not exclude infection</b>: gout and septic arthritis can coexist, and a mildly raised serum urate is nonspecific. A synovial leukocyte count above 50,000/mm3 with organisms on Gram stain decides the matter."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Joint drainage + antibiotics (correct)</th><th>Colchicine (closest distractor)</th></tr></thead><tbody> <tr><td>Diagnosis treated</td><td>Septic arthritis — organisms on Gram stain, WBC 86,000</td><td>Acute gout — needle-shaped negatively birefringent crystals</td></tr> <tr><td>Synovial fluid here</td><td>Gram-positive cocci, no crystals</td><td>Would need intracellular urate crystals</td></tr> <tr><td>Risk of the wrong choice</td><td>—</td><td>Untreated pus destroys cartilage in days</td></tr> </tbody></table> A raised serum urate tempts toward gout, but synovial fluid decides: organisms mean infection and drainage, crystals without organisms mean gout."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Colchicine treats acute gout flares. It would be correct if polarized microscopy showed needle-shaped negatively birefringent crystals and the Gram stain and culture were negative.\n(C) Raising prednisone treats a rheumatoid flare, which is polyarticular and has synovial leukocytes usually below 50,000/mm3; with organisms on Gram stain it would worsen the infection.\n(D) Intra-articular triamcinolone relieves a noninfected inflammatory or osteoarthritic effusion. It is contraindicated with bacteria in the joint and would fit only a sterile, crystal-negative RA effusion.\n(E) Splinting with observation suits a minor sprain or traumatic effusion without fever. In septic arthritis, waiting 72 hours with pus in the joint risks permanent cartilage loss and sepsis."
+   },
+   {
+    "k": "함정",
+    "v": "Being drawn to gout by the uric acid level, or to an RA flare by the history — the Gram stain shows bacteria, and the joint must be drained."
+   },
+   {
+    "k": "학습목표",
+    "v": "화농관절염은 항생제와 함께 관절 배농(반복 천자 또는 관절경 세척)이 필수임을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 136 Infectious arthritis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "면역억제 RA 환자의 뜨겁고 부은 단관절에 관절액 백혈구 86,000/mm3 와 그람양성 알균이 있으므로 화농관절염이며, 항생제와 함께 관절 배농을 한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "결정이 없고 그람 염색에서 균이 보인다 — 통풍이 아니라 감염이며, 혈청 요산 상승은 비특이적이다",
+   "steps": 2,
+   "chain": [
+    "발열 + 단관절 삼출 + 관절액 백혈구 86,000/mm3(호중구 92 %) + 그람양성 알균 → 화농관절염",
+    "고름이 찬 관절 → 정맥 항생제와 함께 배농(반복 천자 또는 관절경 세척)"
+   ],
+   "key": [
+    {
+     "item": "gram-positive cocci in clusters",
+     "why": "세균 확인 — 황색포도알균을 시사",
+     "also": []
+    },
+    {
+     "item": "a leukocyte count of 86,000/mm3 (92% neutrophils)",
+     "why": "50,000 초과 — 화농관절염 범위",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no crystals are seen on polarized light microscopy",
+     "why": "통풍 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "No other joints are swollen",
+     "why": "다관절성 RA 악화 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "methotrexate and prednisone 5 mg daily",
+     "why": "면역억제 — 화농관절염 위험을 높이고 증상을 가린다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Serum uric acid concentration is 7.4 mg/dL",
+     "why": "비특이적 — 진단을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "she scratched her right shin while gardening",
+     "why": "황색포도알균의 침입 경로로 그럴듯하지만 판단의 핵심은 아니다",
+     "also": []
+    }
+   ],
+   "summary": "면역억제 RA 환자의 단관절에 관절액 백혈구 86,000/mm3 와 그람양성 알균이 있다 — 화농관절염이다. 항생제만으로는 부족하고 관절 배농을 함께 한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "관절액에 음성 복굴절의 바늘 모양 결정이 보이고 그람 염색·배양이 음성이었다면 콜히친으로 통풍 발작을 치료한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0255",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "응급·중환자·외상 — 더운 날 행군 중 쓰러진 병사",
+  "type": "응급·중환자·외상 — 더운 날 행군 중 쓰러진 병사",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-06",
+  "vignette": "19세 남자가 낮 기온 33 °C 의 여름날 군 행군 훈련 중 쓰러져 응급실에 실려 왔다. 동료에 따르면 쓰러지기 직전 비틀거리며 엉뚱한 말을 하였다. 기저 질환과 복용 약물은 없다. 혈압 98/60 mmHg, 맥박 136회/분, 호흡 28회/분, 직장 체온 41.6 °C, 산소포화도 97 % 이다. 이름을 불러야 눈을 뜨고 묻는 말에 엉뚱하게 대답한다. 피부는 뜨겁고 땀에 젖어 있다. 목 경직은 없고 동공 반응은 정상이다. 혈당 104 mg/dL, 혈청 나트륨 141 mEq/L, 크레아티닌 1.6 mg/dL, 크레아틴키나아제 2,800 U/L 이다.",
+  "question": "기도를 확인하고 정맥로를 잡은 뒤 가장 먼저 해야 할 처치는?",
+  "options": [
+   "뇌척수액 검사",
+   "두부 CT 촬영",
+   "찬물 침수 냉각",
+   "정맥 아세트아미노펜 투여",
+   "정맥 단트롤렌 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 더운 날 격한 운동 중 쓰러졌고, 직장 체온 41.6 °C 와 의식 변화(혼동·엉뚱한 대답)가 함께 있다 — 운동성 열사병이다. 젊은 운동성 열사병은 피부가 땀에 젖어 있는 경우가 많아 「땀이 나면 열사병이 아니다」라는 생각은 틀린다. 사망과 장기 손상은 고체온이 지속된 시간에 비례하므로, 가장 먼저 찬물(얼음물) 침수로 30분 안에 39 °C 이하까지 낮추고(냉각 속도 분당 0.15 °C 이상) 39 °C 근처에서 멈춘다. 횡문근융해(CK 상승)와 콩팥 손상은 수액으로 함께 관리한다.\n- 원리: <b>열사병은 체온조절 「실패」다</b>: 발열은 시상하부의 설정점이 올라가 몸이 일부러 체온을 높이는 상태라 해열제(설정점을 낮추는 약)가 듣는다. 열사병은 설정점은 정상인데 열 생산과 흡수가 발산을 넘어서 체온이 밀려 올라간 상태다. 그래서 아세트아미노펜·NSAID 는 효과가 없고, 몸 밖에서 열을 직접 빼야 한다.<br> <b>왜 시간이 생명인가</b>: 40.5 °C 를 넘으면 세포 단백이 변성되고 장 점막 장벽이 깨져 내독소가 들어오며, 전신 염증·파종혈관내응고·간손상·횡문근융해·급성 콩팥 손상이 이어진다. 손상 정도는 「몇 도였나」보다 「얼마나 오래 높았나」로 정해진다. 찬물 침수는 물의 높은 열전도율로 가장 빠르게 열을 빼는 방법이고, 현장 또는 도착 즉시 시작해 「먼저 식히고 나중에 옮긴다」.<br> <b>운동성 vs 고전적</b>: 운동성 열사병은 젊은 사람이 격한 운동 중 생기고 땀이 남아 있는 경우가 많다. 고전적 열사병은 노인·만성 질환자가 폭염에 며칠 노출되어 생기고 피부가 마른 경우가 많아, 침수가 어려우면 증발 냉각(물 분무 + 선풍기)을 쓴다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">찬물 침수 냉각(정답)</th><th>아세트아미노펜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td>몸에 쌓인 열을 직접 뺀다</td><td>시상하부 설정점을 낮춘다</td></tr> <tr><td>열사병에서 효과</td><td>분당 0.15~0.35 °C 냉각 — 생존율을 좌우</td><td>설정점이 정상이라 효과 없음, 간손상 악화 우려</td></tr> <tr><td>쓰는 상황</td><td>직장 체온 &gt; 40 °C + 의식 변화</td><td>감염에 의한 발열</td></tr> </tbody></table> 「열이 높다 → 해열제」는 발열에서만 맞다. 설정점이 정상인 고체온(열사병·악성고열·신경이완제악성증후군)은 원인에 맞는 물리적·특이적 치료가 먼저다.\n- 오답 이유:\n  - ① 뇌척수액 검사는 발열과 의식 변화에 목 경직이 있어 수막염이 의심될 때 한다. 운동과 무관하게 발열·두통·목 경직이 서서히 왔다면 고려하지만 냉각을 미루면 안 된다.\n  - ② 두부 CT 는 의식 변화에 외상·국소 신경 결손이 있을 때 출혈을 찾는 검사다. 쓰러지며 머리를 부딪히고 동공이 짝짝이였다면 냉각 후 바로 시행할 수 있다.\n  - ④ 아세트아미노펜은 시상하부 설정점이 올라간 감염성 발열에서 체온을 낮춘다. 폐렴으로 39 °C 열이 나는 환자였다면 맞지만, 열사병에서는 효과가 없고 간손상을 더할 수 있다.\n  - ⑤ 단트롤렌은 흡입마취제·석시닐콜린 뒤의 악성고열에서 근육의 칼슘 방출을 막는다. 수술 중 호기말 이산화탄소가 급상승하며 근육이 굳었다면 정답이다.\n- 함정: 체온이 높다고 해열제를 고르거나, 땀이 나니 열사병이 아니라고 보는 것 — 운동성 열사병은 땀이 남아 있어도 즉시 찬물 침수다.\n- 학습목표: 운동성 열사병(직장 체온 40 °C 초과 + 중추신경 기능 이상)을 알아보고 즉시 찬물 침수로 체온을 낮춘다\n- 근거·출처: Epstein Y, Yanovich R. Heatstroke. N Engl J Med 2019;380:2449-2459 (PMID 31216400) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 465 Heat-related illness",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "더운 날 격한 운동 중 쓰러졌고, 직장 체온 41.6 °C 와 의식 변화(혼동·엉뚱한 대답)가 함께 있다 — 운동성 열사병이다. 젊은 운동성 열사병은 피부가 땀에 젖어 있는 경우가 많아 「땀이 나면 열사병이 아니다」라는 생각은 틀린다. 사망과 장기 손상은 고체온이 지속된 시간에 비례하므로, 가장 먼저 찬물(얼음물) 침수로 30분 안에 39 °C 이하까지 낮추고(냉각 속도 분당 0.15 °C 이상) 39 °C 근처에서 멈춘다. 횡문근융해(CK 상승)와 콩팥 손상은 수액으로 함께 관리한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>열사병은 체온조절 「실패」다</b>: 발열은 시상하부의 설정점이 올라가 몸이 일부러 체온을 높이는 상태라 해열제(설정점을 낮추는 약)가 듣는다. 열사병은 설정점은 정상인데 열 생산과 흡수가 발산을 넘어서 체온이 밀려 올라간 상태다. 그래서 아세트아미노펜·NSAID 는 효과가 없고, 몸 밖에서 열을 직접 빼야 한다.<br> <b>왜 시간이 생명인가</b>: 40.5 °C 를 넘으면 세포 단백이 변성되고 장 점막 장벽이 깨져 내독소가 들어오며, 전신 염증·파종혈관내응고·간손상·횡문근융해·급성 콩팥 손상이 이어진다. 손상 정도는 「몇 도였나」보다 「얼마나 오래 높았나」로 정해진다. 찬물 침수는 물의 높은 열전도율로 가장 빠르게 열을 빼는 방법이고, 현장 또는 도착 즉시 시작해 「먼저 식히고 나중에 옮긴다」.<br> <b>운동성 vs 고전적</b>: 운동성 열사병은 젊은 사람이 격한 운동 중 생기고 땀이 남아 있는 경우가 많다. 고전적 열사병은 노인·만성 질환자가 폭염에 며칠 노출되어 생기고 피부가 마른 경우가 많아, 침수가 어려우면 증발 냉각(물 분무 + 선풍기)을 쓴다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">찬물 침수 냉각(정답)</th><th>아세트아미노펜(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td>몸에 쌓인 열을 직접 뺀다</td><td>시상하부 설정점을 낮춘다</td></tr> <tr><td>열사병에서 효과</td><td>분당 0.15~0.35 °C 냉각 — 생존율을 좌우</td><td>설정점이 정상이라 효과 없음, 간손상 악화 우려</td></tr> <tr><td>쓰는 상황</td><td>직장 체온 &gt; 40 °C + 의식 변화</td><td>감염에 의한 발열</td></tr> </tbody></table> 「열이 높다 → 해열제」는 발열에서만 맞다. 설정점이 정상인 고체온(열사병·악성고열·신경이완제악성증후군)은 원인에 맞는 물리적·특이적 치료가 먼저다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 뇌척수액 검사는 발열과 의식 변화에 목 경직이 있어 수막염이 의심될 때 한다. 운동과 무관하게 발열·두통·목 경직이 서서히 왔다면 고려하지만 냉각을 미루면 안 된다.\n② 두부 CT 는 의식 변화에 외상·국소 신경 결손이 있을 때 출혈을 찾는 검사다. 쓰러지며 머리를 부딪히고 동공이 짝짝이였다면 냉각 후 바로 시행할 수 있다.\n④ 아세트아미노펜은 시상하부 설정점이 올라간 감염성 발열에서 체온을 낮춘다. 폐렴으로 39 °C 열이 나는 환자였다면 맞지만, 열사병에서는 효과가 없고 간손상을 더할 수 있다.\n⑤ 단트롤렌은 흡입마취제·석시닐콜린 뒤의 악성고열에서 근육의 칼슘 방출을 막는다. 수술 중 호기말 이산화탄소가 급상승하며 근육이 굳었다면 정답이다."
+   },
+   {
+    "k": "함정",
+    "v": "체온이 높다고 해열제를 고르거나, 땀이 나니 열사병이 아니라고 보는 것 — 운동성 열사병은 땀이 남아 있어도 즉시 찬물 침수다."
+   },
+   {
+    "k": "학습목표",
+    "v": "운동성 열사병(직장 체온 40 °C 초과 + 중추신경 기능 이상)을 알아보고 즉시 찬물 침수로 체온을 낮춘다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Epstein Y, Yanovich R. Heatstroke. N Engl J Med 2019;380:2449-2459 (PMID 31216400) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 465 Heat-related illness"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "더운 날 격한 운동 중 쓰러지고 직장 체온 41.6 °C 에 의식 변화가 있으므로 운동성 열사병이며, 해열제가 아니라 즉시 찬물 침수로 체온을 낮춘다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "열사병은 설정점이 정상인 고체온이라 설정점을 낮추는 해열제가 듣지 않는다",
+   "steps": 2,
+   "chain": [
+    "직장 체온 41.6 °C + 혼동·엉뚱한 대답 + 더운 날 행군 → 운동성 열사병",
+    "설정점 정상 고체온 → 해열제 무효, 즉시 찬물 침수 냉각"
+   ],
+   "key": [
+    {
+     "item": "직장 체온 41.6 °C",
+     "why": "40 °C 초과 중심체온",
+     "also": []
+    },
+    {
+     "item": "묻는 말에 엉뚱하게 대답한다",
+     "why": "중추신경 기능 이상 — 열탈진과 가르는 소견",
+     "also": []
+    },
+    {
+     "item": "군 행군 훈련 중 쓰러져",
+     "why": "운동성 열사병의 전형적 상황",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "목 경직은 없고",
+     "why": "수막염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "기저 질환과 복용 약물은 없다",
+     "why": "신경이완제악성증후군·세로토닌증후군 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "혈당 104 mg/dL",
+     "why": "저혈당에 의한 의식 변화를 배제할 근거",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아틴키나아제 2,800 U/L",
+     "why": "횡문근융해 동반 — 냉각 뒤 수액 관리",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "피부는 뜨겁고 땀에 젖어 있다",
+     "why": "운동성 열사병에서 흔해 진단을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "더운 날 행군 중 쓰러지고 직장 체온 41.6 °C 에 의식 변화가 있다 — 운동성 열사병이다. 설정점이 정상이라 해열제는 듣지 않으므로 즉시 찬물 침수로 식힌다.",
+   "switch": {
+    "choice": "E",
+    "condition": "같은 고체온이 흡입마취 중 호기말 이산화탄소 급상승·근육 강직과 함께 생겼다면 단트롤렌이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0254",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 감염·외과·신장비뇨·소아·순환기·응급·류마티스·소화기·혈액·부인과·내분비·예방)",
+  "subtopic": "순환기 — 운동 중 시작된 빠르고 불규칙한 두근거림",
+  "type": "순환기 — 운동 중 시작된 빠르고 불규칙한 두근거림",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-06",
+  "vignette": "A 24-year-old man comes to the emergency department because of palpitations that began suddenly 1 hour ago while he was playing basketball. Since adolescence, he has had brief episodes of a racing heartbeat that stopped on their own. He takes no medications and does not use illicit drugs. His blood pressure is 122/78 mm Hg, pulse is 210/min and irregularly irregular, and respirations are 18/min. Oxygen saturation is 98% on room air. He is alert and oriented. The lungs are clear to auscultation. An ECG shows an irregularly irregular rhythm with QRS complexes of varying width and morphology, some as wide as 160 msec, and no discernible P waves. An ECG obtained 3 years ago showed a short PR interval and a slurred upstroke of the QRS complex.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Adenosine",
+   "Metoprolol",
+   "Digoxin",
+   "Procainamide",
+   "Diltiazem"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: An irregularly irregular, very fast rhythm with QRS complexes that keep changing width and shape, in a young man whose baseline ECG showed a short PR interval and a delta wave, is atrial fibrillation conducting down an accessory pathway (preexcited atrial fibrillation in Wolff-Parkinson-White syndrome). He is hemodynamically stable, so pharmacologic conversion or pathway slowing is appropriate: intravenous procainamide (or ibutilide) prolongs the refractory period of the accessory pathway. Drugs that block the atrioventricular node are contraindicated because they divert more impulses down the pathway and can precipitate ventricular fibrillation. If he becomes unstable, synchronized cardioversion is performed.\n- 원리: <b>Two roads to the ventricles</b>: normally every atrial impulse passes through the AV node, whose decremental conduction filters the 400–600 impulses/min of atrial fibrillation down to a manageable ventricular rate. An accessory pathway (bundle of Kent) conducts without decrement, so in atrial fibrillation the ventricles can be driven at 250–300/min. Each beat is a different fusion of pathway and nodal conduction, which is why the QRS width and shape keep changing.<br> <b>Why AV nodal blockers are dangerous</b>: adenosine, calcium channel blockers, β-blockers and digoxin slow or block the AV node. That removes the competing nodal route (and the retrograde concealed conduction that partly protects the pathway), so even more impulses go down the accessory pathway; digoxin and verapamil may also shorten the pathway's refractory period. The ventricular rate rises and can degenerate into ventricular fibrillation.<br> <b>What to give</b>: procainamide (class Ia) or ibutilide slows conduction and prolongs refractoriness in the accessory pathway and atrial tissue, slowing the ventricular rate and often converting the rhythm. Definitive treatment is catheter ablation of the pathway.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Procainamide (correct)</th><th>Diltiazem (closest distractor)</th></tr></thead><tbody> <tr><td>Site of action</td><td>Accessory pathway and atrial myocardium</td><td>AV node only</td></tr> <tr><td>Effect in preexcited AF</td><td>Slows pathway conduction, may convert</td><td>Diverts impulses to the pathway — faster rate, risk of VF</td></tr> <tr><td>Where it fits</td><td>Stable irregular wide-complex tachycardia with preexcitation</td><td>Ordinary AF with narrow QRS</td></tr> </tbody></table> Narrow, irregular QRS: slow the AV node. Wide, irregular, ever-changing QRS in a patient with preexcitation: leave the node alone and treat the pathway (or cardiovert if unstable).\n- 오답 이유:\n  - (A) Adenosine terminates orthodromic AV reentrant tachycardia, a regular narrow-complex rhythm in WPW. It would be appropriate if the rhythm were regular at 190/min with narrow QRS complexes.\n  - (B) Metoprolol slows AV nodal conduction and is used for rate control of atrial fibrillation with normal conduction; in preexcited AF it can accelerate pathway conduction and is avoided.\n  - (C) Digoxin controls rate in atrial fibrillation with heart failure, but it may shorten the accessory pathway's refractory period; it is contraindicated here and would only fit narrow-complex AF.\n  - (E) Diltiazem is first-line rate control for ordinary atrial fibrillation with narrow QRS complexes. Without preexcitation on the old ECG and with uniform narrow complexes, it would be correct.\n- 함정: Treating the irregularly irregular rhythm as ordinary atrial fibrillation and reaching for an AV nodal blocker — varying wide QRS complexes plus a prior delta wave mean the pathway is conducting.\n- 학습목표: 조기흥분 증후군의 심방세동(불규칙한 넓은 QRS 빈맥)에서 방실결절 차단제를 피하고 혈역학적으로 안정하면 프로카인아마이드를 쓴다\n- 근거·출처: Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1-e156 (PMID 38033089) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 247 Supraventricular tachyarrhythmias (preexcitation syndromes)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "An irregularly irregular, very fast rhythm with QRS complexes that keep changing width and shape, in a young man whose baseline ECG showed a short PR interval and a delta wave, is atrial fibrillation conducting down an accessory pathway (preexcited atrial fibrillation in Wolff-Parkinson-White syndrome). He is hemodynamically stable, so pharmacologic conversion or pathway slowing is appropriate: intravenous procainamide (or ibutilide) prolongs the refractory period of the accessory pathway. Drugs that block the atrioventricular node are contraindicated because they divert more impulses down the pathway and can precipitate ventricular fibrillation. If he becomes unstable, synchronized cardioversion is performed."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Two roads to the ventricles</b>: normally every atrial impulse passes through the AV node, whose decremental conduction filters the 400–600 impulses/min of atrial fibrillation down to a manageable ventricular rate. An accessory pathway (bundle of Kent) conducts without decrement, so in atrial fibrillation the ventricles can be driven at 250–300/min. Each beat is a different fusion of pathway and nodal conduction, which is why the QRS width and shape keep changing.<br> <b>Why AV nodal blockers are dangerous</b>: adenosine, calcium channel blockers, β-blockers and digoxin slow or block the AV node. That removes the competing nodal route (and the retrograde concealed conduction that partly protects the pathway), so even more impulses go down the accessory pathway; digoxin and verapamil may also shorten the pathway's refractory period. The ventricular rate rises and can degenerate into ventricular fibrillation.<br> <b>What to give</b>: procainamide (class Ia) or ibutilide slows conduction and prolongs refractoriness in the accessory pathway and atrial tissue, slowing the ventricular rate and often converting the rhythm. Definitive treatment is catheter ablation of the pathway."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Procainamide (correct)</th><th>Diltiazem (closest distractor)</th></tr></thead><tbody> <tr><td>Site of action</td><td>Accessory pathway and atrial myocardium</td><td>AV node only</td></tr> <tr><td>Effect in preexcited AF</td><td>Slows pathway conduction, may convert</td><td>Diverts impulses to the pathway — faster rate, risk of VF</td></tr> <tr><td>Where it fits</td><td>Stable irregular wide-complex tachycardia with preexcitation</td><td>Ordinary AF with narrow QRS</td></tr> </tbody></table> Narrow, irregular QRS: slow the AV node. Wide, irregular, ever-changing QRS in a patient with preexcitation: leave the node alone and treat the pathway (or cardiovert if unstable)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Adenosine terminates orthodromic AV reentrant tachycardia, a regular narrow-complex rhythm in WPW. It would be appropriate if the rhythm were regular at 190/min with narrow QRS complexes.\n(B) Metoprolol slows AV nodal conduction and is used for rate control of atrial fibrillation with normal conduction; in preexcited AF it can accelerate pathway conduction and is avoided.\n(C) Digoxin controls rate in atrial fibrillation with heart failure, but it may shorten the accessory pathway's refractory period; it is contraindicated here and would only fit narrow-complex AF.\n(E) Diltiazem is first-line rate control for ordinary atrial fibrillation with narrow QRS complexes. Without preexcitation on the old ECG and with uniform narrow complexes, it would be correct."
+   },
+   {
+    "k": "함정",
+    "v": "Treating the irregularly irregular rhythm as ordinary atrial fibrillation and reaching for an AV nodal blocker — varying wide QRS complexes plus a prior delta wave mean the pathway is conducting."
+   },
+   {
+    "k": "학습목표",
+    "v": "조기흥분 증후군의 심방세동(불규칙한 넓은 QRS 빈맥)에서 방실결절 차단제를 피하고 혈역학적으로 안정하면 프로카인아마이드를 쓴다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1-e156 (PMID 38033089) · Loscalzo J, et al. Harrison's Principles of Internal Medicine, 21st ed. Ch. 247 Supraventricular tachyarrhythmias (preexcitation syndromes)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "불규칙하고 폭과 모양이 계속 바뀌는 넓은 QRS 빈맥에 과거 델타파가 있으므로 조기흥분 심방세동이고, 안정 상태이므로 방실결절 차단제가 아니라 프로카인아마이드를 쓴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "방실결절만 막는 딜티아젬은 부전도로로 흥분을 몰아 심실세동을 유발할 수 있다 — 좁은 QRS 의 일반 심방세동에서만 쓴다",
+   "steps": 3,
+   "chain": [
+    "불규칙하게 불규칙한 210회/분 + 폭·모양이 바뀌는 넓은 QRS → 부전도로를 타는 심방세동",
+    "과거 짧은 PR·QRS 상승부의 완만한 기울기(델타파) → WPW 증후군",
+    "혈압 안정 → 방실결절 차단제 금기, 프로카인아마이드(불안정하면 동기화 전기충격)"
+   ],
+   "key": [
+    {
+     "item": "QRS complexes of varying width and morphology",
+     "why": "박동마다 부전도로·결절 융합이 달라진다 — 조기흥분 심방세동",
+     "also": []
+    },
+    {
+     "item": "irregularly irregular",
+     "why": "심방세동의 리듬",
+     "also": []
+    },
+    {
+     "item": "a short PR interval and a slurred upstroke of the QRS complex",
+     "why": "델타파 — 부전도로의 증거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "does not use illicit drugs",
+     "why": "약물 유발 빈맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "His blood pressure is 122/78 mm Hg",
+     "why": "안정 — 약물 치료를 고를 수 있다",
+     "also": []
+    },
+    {
+     "item": "He is alert and oriented",
+     "why": "불안정 징후가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "폭과 모양이 계속 바뀌는 불규칙한 넓은 QRS 빈맥에 과거 델타파가 있다 — 조기흥분 심방세동이다. 혈역학적으로 안정하므로 방실결절 차단제를 피하고 프로카인아마이드를 쓴다.",
+   "switch": {
+    "choice": "E",
+    "condition": "과거 심전도가 정상이고 QRS 가 균일하게 좁은 불규칙 빈맥이었다면 딜티아젬으로 심박수를 조절한다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261006T202627Z_일일영상_2026-10-07_12units_12q_e63eeba0",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0241",
   "exam": "imaging",
   "style": "usmle_style",

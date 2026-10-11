@@ -115,6 +115,11 @@ drugs:
   시스플라틴: cisplatin
   에탐부톨: ethambutol
   레트로졸: letrozole
+  엽산: folic acid
+  레플루노마이드: leflunomide
+  트리암시놀론: triamcinolone
+  아바타셉트: abatacept
+
 classes:
   베타차단제: {en: beta-blocker, check: Adrenergic beta-Antagonists}
   칼슘통로차단제: {en: calcium channel blocker, check: Calcium Channel Blockers}

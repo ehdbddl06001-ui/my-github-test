@@ -4,8 +4,8 @@ type: concept
 topic: Rheumatology
 see_also: [Gastroenterology, Nephrology, Neurology]
 date: 2026-09-23
-updated: 2026-09-26
-version: 2
+updated: 2026-10-10
+version: 3
 outline: h363            # 기본틀 슬롯(content/outline/subjects.yaml) — 해리슨 21판 363장 The Vasculitis Syndromes
 confidence: medium
 review_status: unreviewed
@@ -183,16 +183,29 @@ variants:
     answer: "D"
     explanation: "제시 순서와 인물은 달라도 촉지 자반·비미란성 관절통·RF 양성·C4 선택적 저하·크리오글로불린 양성은 HCV 크리오글로불린혈증 혈관염이고, 소변·크레아티닌 정상과 신경·소화관·폐 증상 없음이 중증 장기 침범이 없음을 보여 준다. 따라서 원인 바이러스를 없애는 직접작용 항바이러스제가 1차다. RF 양성이지만 항CCP 음성·미란 없음이라 메토트렉세이트를 쓸 류마티스관절염이 아니며, 스테로이드·리툭시맙·혈장교환은 중증 침범이나 항바이러스제 실패에 남긴다."
     kind: application
-figures_wanted:
-- source: PMC_OA
-  shows: 크리오글로불린혈증 혈관염 — 하지 촉지 자반
-  query: '"cryoglobulinemic vasculitis" AND purpura AND "case report"'
-  caption_terms:
-  - purpura
-  modality: CLINICAL_PHOTO
 figures_rejected:
 - asset: PMC-PMC13397814_Figure1
   reason: 쇼그렌 과점도 증례 — 크리오글로불린혈증 혈관염 자반이 아니고 얼굴 패널이 있다
+figures:
+- id: f1
+  file: docs/assets/figures/pmc-pmc11284083_figure1-4-32-312-448.jpg
+  kind: photo
+  at: 기전 — 면역복합체에서 소견으로
+  shows: 크리오글로불린혈증 혈관염의 하지 촉지 자반(palpable purpura)
+  look_for:
+  - 양쪽 정강이·발등에 흩어진 붉은 자줏빛 반점과 작은 융합 반
+  - 몸쪽보다 발목·발 쪽에 더 많은 분포
+  label: '「Clinical manifestations of cryoglobulinemic vasculitis in our patient. (A) Lower limbs palpable purpura. (B) Raynaud’s phenomenon and purpuric rash.」 — Cryoglobulinemic vasculitis triggered by Staphylococcus aureus endocarditis with chronic hepatitis C virus co-infection: a case report and literature review'
+  label_basis: published_figure
+  reference: 동료 심사 논문의 그림 설명(저자가 그 소견이라고 쓴 그림)
+  paper: 'Cryoglobulinemic vasculitis triggered by Staphylococcus aureus endocarditis with chronic hepatitis C virus co-infection: a case report and literature review. Frontiers in Immunology'
+  doi: 10.3389/fimmu.2024.1385086
+  credit: 'Cryoglobulinemic vasculitis triggered by Staphylococcus aureus endocarditis with chronic hepatitis C virus co-infection: a case report and literature review. Front Immunol. 2024 Jul 15;15:1385086. doi: 10.3389/fimmu.2024.1385086 (CC BY) — Figure 1'
+  license: CC BY
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11284083/
+  asset: PMC-PMC11284083_Figure1
+  privacy_check: 패널 A(양 하지)만 잘라 냄 — 얼굴·문신·이름표·병원 표지 없음, 패널 문자 A 제외
+  crop: 4,32,312,448
 ---
 
 ## 판단 — 왜 항바이러스제가 먼저인가
