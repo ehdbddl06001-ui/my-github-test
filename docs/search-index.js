@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3589,
+  "total": 3599,
   "byType": {
    "usmle": 192,
+   "imaging": 319,
    "anatomy": 839,
    "kmle": 1376,
    "concept": 99,
    "paper": 757,
-   "imaging": 309,
    "ailab": 14,
    "basic": 3
   },
@@ -38,31 +38,31 @@ window.MEDKOS_INDEX = {
    "Pulmonology": 88,
    "Hematology": 83,
    "Laboratory Medicine": 76,
-   "산부인과": 51,
-   "순환기": 29,
+   "산부인과": 52,
+   "순환기": 30,
    "Physiology": 22,
+   "호흡기": 21,
    "소화기": 20,
-   "호흡기": 20,
-   "소아과": 17,
+   "소아과": 18,
    "Pharmacology": 16,
    "Biochemistry": 15,
+   "감염": 15,
+   "내분비": 15,
+   "혈액·종양": 15,
    "Microbiology": 14,
-   "감염": 14,
-   "내분비": 14,
    "병리·조직학": 14,
    "신경": 14,
+   "신장·비뇨기": 14,
    "응급·중환자": 14,
-   "혈액·종양": 14,
-   "신장·비뇨기": 13,
+   "피부과": 13,
    "예방의학·역학": 12,
    "외과": 12,
-   "피부과": 12,
    "Immunology": 11,
    "Internal Medicine": 11,
    "근골격·류마티스": 8,
    "약리": 8,
    "정신과": 8,
-   "안과": 5,
+   "안과": 6,
    "영상의학": 5,
    "이비인후과": 5,
    "Allergy": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2480,
+   "high": 2490,
    "medium": 1059,
    "low": 50
   },
@@ -213,6 +213,180 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0200.md",
    "snippet": "A 31 year old man comes to the physician because of fever, joint pain and a rash for 2 days. He was diagnosed with severe aplastic anemia 3 weeks ago. Ten days ago he began treatment with equine antithymocyte globulin, given intravenously o",
    "text": "Immunology Fever, Joint Pain and a Rash Along the Edges of the Hands and Feet Ten Days After Starting Treatment for Aplastic Anemia serum-sickness type-iii-hypersensitivity immune-complex antithymocyte-globulin hypocomplementemia aplastic-anemia USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Immune complex-mediated (type III) hypersensitivity; Harrison's Principles of Internal Medicine 21e — Aplastic anemia: antithymocyte globulin) A 31 year old man comes to the physician because of fever, joint pain and a rash for 2 days. He was diagnosed with severe aplastic anemia 3 weeks ago. Ten days ago he began treatment with equine antithymocyte globulin, given intravenously once daily for 4 days, together with oral cyclosporine. During the first infusion he had chills and a fever that resolved within 3 hours; the remaining infusions were uneventful. He now has aching in his knees, wrists and fingers and a mildly itchy rash on his hands and feet. He has had no wheezing, lip swelling or lightheadedness. He takes no other medications. Examination shows erythematous, partly purpuric macules and wheals in a band along the sides of both hands and feet where the palmar and plantar skin meets the dorsal skin. Both wrists and knees are tender with small effusions. There are tender, mobile 1 cm lymph nodes in both axillae. The lungs are clear to auscultation. His vital signs are shown. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's current condition? A. Antigen specific IgE cross linked on mast cells, triggering rapid degranulation B. Drug specific CD8+ T cells killing keratinocytes and synovial lining cells C. Antigen–antibody complexes deposited in vessel walls, activating complement D. Cytokine release from lymphocytes lysed by the infused antibody preparation E. IgG bound to equine protein adsorbed onto platelets, causing their clearance 말에서 얻은 이종 단백(equine antithymocyte globulin)을 맞은 지 10일째에 발열·다발 관절통·손발 가장자리 띠 모양 두드러기/자반성 발진·림프절 비대·단백뇨가 생겼다 — 혈청병(serum sickness)이다. 숙주가 이종 단백에 대한 IgG 를 만드는 데 1–2주가 걸리고, 아직 혈중에 남은 항원이 많을 때(항원 과잉) 생긴 작은 면역 복합체가 혈관벽·관절막·사구체에 쌓여 보체를 활성화한다(제3형 과민반응). C3·C4 저하는 보체가 고전 경로로 소모되고 있다는 근거다. 첫 주입 때의 오한·발열은 T 세포 용해에 따른 사이토카인 방출로 그날 끝났고, 지금의 증상과는 시점·양상이 다르다."
+  },
+  {
+   "id": "imaging-2026-0320",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 반복되는 저혈당으로 쓰러진 간호사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0320.md",
+   "snippet": "A 34 year old woman who works as an intensive care unit nurse is brought to the emergency department after she was found confused at home; her fingerstick glucose was 32 mg/dL, and she recovered within minutes after intravenous dextrose. Sh",
+   "text": "내분비 내분비·대사 — 반복되는 저혈당으로 쓰러진 간호사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e A 34 year old woman who works as an intensive care unit nurse is brought to the emergency department after she was found confused at home; her fingerstick glucose was 32 mg/dL, and she recovered within minutes after intravenous dextrose. She has had three similar episodes in the past 2 months. She has no history of diabetes mellitus and says she takes no medications. Her mother has type 2 diabetes mellitus treated with glipizide and insulin glargine. Blood pressure is 118/74 mm Hg and pulse is 88/min. BMI is 23 kg/m2. Examination is normal. During a supervised fast, symptoms of hypoglycemia occur at 14 hours. Laboratory studies at that time show: glucose 38 mg/dL, insulin 48 µU/mL (N < 3 when glucose < 55 mg/dL), C peptide 0.1 ng/mL (N 0.6 if insulin mediated), proinsulin 2 pmol/L (N 5 if insulin mediated), and beta hydroxybutyrate 0.1 mmol/L. A screen for sulfonylureas and meglitinides is negative. Which of the following is the most likely cause of this patient's hypoglycemia? A. Insulin secreting pancreatic islet cell tumor B. Surreptitious ingestion of a sulfonylurea C. Autoantibodies against the insulin receptor D. Primary adrenal insufficiency E. Surreptitious administration of exogenous insulin"
+  },
+  {
+   "id": "imaging-2026-0319",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 콧물 뒤 숨이 빨라진 영아",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0319.md",
+   "snippet": "5개월 남아가 3일 전부터 콧물과 기침이 있었고 하루 전부터 숨을 빨리 쉬어 왔다. 수유량은 평소의 약 80 % 이고 하루 6번 기저귀가 젖었다. 3세 형이 감기에 걸려 있다. 만삭으로 태어났고 지금까지 건강하였다. 체온 37.9 °C, 맥박 148회/분, 호흡 52회/분, 산소포화도 95 %(실내 공기)이다. 맑은 콧물이 많고 가벼운 갈비뼈 사이 함몰이 있으며, 양쪽 폐에서 호기 천명과 미세 수포음이 들린다. 처지지 않고 잘",
+   "text": "소아과 소아청소년 — 콧물 뒤 숨이 빨라진 영아 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e 5개월 남아가 3일 전부터 콧물과 기침이 있었고 하루 전부터 숨을 빨리 쉬어 왔다. 수유량은 평소의 약 80 % 이고 하루 6번 기저귀가 젖었다. 3세 형이 감기에 걸려 있다. 만삭으로 태어났고 지금까지 건강하였다. 체온 37.9 °C, 맥박 148회/분, 호흡 52회/분, 산소포화도 95 %(실내 공기)이다. 맑은 콧물이 많고 가벼운 갈비뼈 사이 함몰이 있으며, 양쪽 폐에서 호기 천명과 미세 수포음이 들린다. 처지지 않고 잘 운다. 가장 적절한 처치는? A. 경구 덱사메타손 투여 B. 경구 아목시실린 투여 C. 흉부 물리치료 D. 코 흡인과 수분 섭취 유지 E. 분무 살부타몰 흡입"
+  },
+  {
+   "id": "imaging-2026-0318",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 두 달 동안 다리가 부은 중년 남성",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0318.md",
+   "snippet": "A 56 year old man comes to the physician because of swelling of both legs for 2 months. He has gained 6 kg during this period. He has no history of serious illness and takes no medications. He does not use nonsteroidal anti inflammatory dru",
+   "text": "신장·비뇨기 신장·비뇨 — 두 달 동안 다리가 부은 중년 남성 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e A 56 year old man comes to the physician because of swelling of both legs for 2 months. He has gained 6 kg during this period. He has no history of serious illness and takes no medications. He does not use nonsteroidal anti inflammatory drugs. Blood pressure is 128/78 mm Hg. There is 3+ pitting edema of the lower extremities. Serum albumin is 2.1 g/dL, cholesterol is 340 mg/dL, and creatinine is 0.9 mg/dL. Urinalysis shows 4+ protein and no blood; urine microscopy shows oval fat bodies and no red blood cells. A 24 hour urine collection contains 9.2 g of protein. Serum C3 and C4 are normal. Tests for hepatitis B surface antigen, hepatitis C antibody, HIV, and antinuclear antibodies are negative. Age appropriate cancer screening is up to date and normal. Which of the following serum findings is most likely in this patient? A. Antistreptolysin O antibodies B. Antibodies to phospholipase A2 receptor C. Antibodies to the alpha 3 chain of type IV collagen D. Antineutrophil cytoplasmic antibodies with myeloperoxidase specificity E. Elevated serum free light chains with an abnormal kappa to lambda ratio"
+  },
+  {
+   "id": "imaging-2026-0317",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 발진 환자와 접촉한 임신부",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0317.md",
+   "snippet": "31세 여자가 임신 16주에 산전 진찰을 받으러 왔다. 3일 전 직장 동료의 집에서 2시간 동안 머물렀는데, 그 집의 5세 아이가 다음 날 열·기침·결막염 뒤에 얼굴에서 시작해 몸으로 퍼지는 반점구진 발진이 생겨 홍역으로 확진되었다. 본인은 증상이 없다. 어릴 때 예방접종 기록이 없고 홍역을 앓은 기억도 없다. 체온 36.7 °C 이다. 오늘 시행한 홍역 IgG 항체는 음성이다. 가장 적절한 처치는? A. 경구 리바비린 투여 ",
+   "text": "감염 감염 — 발진 환자와 접촉한 임신부 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e 31세 여자가 임신 16주에 산전 진찰을 받으러 왔다. 3일 전 직장 동료의 집에서 2시간 동안 머물렀는데, 그 집의 5세 아이가 다음 날 열·기침·결막염 뒤에 얼굴에서 시작해 몸으로 퍼지는 반점구진 발진이 생겨 홍역으로 확진되었다. 본인은 증상이 없다. 어릴 때 예방접종 기록이 없고 홍역을 앓은 기억도 없다. 체온 36.7 °C 이다. 오늘 시행한 홍역 IgG 항체는 음성이다. 가장 적절한 처치는? A. 경구 리바비린 투여 B. 증상이 생길 때까지 경과 관찰 C. 정맥 면역글로불린 투여 D. MMR 백신 접종 E. 경구 비타민 A 투여"
+  },
+  {
+   "id": "imaging-2026-0316",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 운동 뒤 무릎이 부은 청년의 출혈 경향",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0316.md",
+   "snippet": "A 19 year old man comes to the physician because of swelling and pain of the right knee for 1 day after playing soccer; he does not recall a direct injury. He had prolonged bleeding after a tooth extraction at age 12 years and a large thigh",
+   "text": "혈액·종양 혈액·종양 — 운동 뒤 무릎이 부은 청년의 출혈 경향 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e A 19 year old man comes to the physician because of swelling and pain of the right knee for 1 day after playing soccer; he does not recall a direct injury. He had prolonged bleeding after a tooth extraction at age 12 years and a large thigh hematoma after a fall at age 15 years. He takes no medications. His maternal uncle had similar joint problems. The right knee is warm, swollen, and tense, with a palpable effusion. There are no petechiae. Platelet count is 260,000/mm3, prothrombin time is 12 seconds (INR 1.0), activated partial thromboplastin time is 68 seconds (N 25 35), and bleeding time is normal. The prolonged aPTT corrects to 33 seconds after mixing with an equal volume of normal plasma. Which of the following is the most likely underlying cause of this patient's condition? A. Antiphospholipid antibodies (lupus anticoagulant) B. Deficiency of vitamin K dependent clotting factors C. Deficiency of factor VIII D. Deficiency of von Willebrand factor E. Deficiency of factor VII"
+  },
+  {
+   "id": "imaging-2026-0315",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 고령 환자의 이마 물집과 통증",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0315.md",
+   "snippet": "72세 여자가 2일 전부터 생긴 오른쪽 이마의 물집과 화끈거리는 통증으로 왔다. 4일 전부터 같은 부위가 따끔거렸다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.4 °C 이다. 오른쪽 이마와 윗눈꺼풀, 두피 앞쪽에 붉은 바탕 위의 무리 지은 소수포가 정중선을 넘지 않고 띠 모양으로 분포하며, 오른쪽 코끝에도 소수포가 2개 있다. 시력은 양쪽 0.8 이고 결막은 약간 충혈되었다. 가장 적절한 처치는? A. 대상포진 백신 접종 ",
+   "text": "피부과 피부 — 고령 환자의 이마 물집과 통증 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e 72세 여자가 2일 전부터 생긴 오른쪽 이마의 물집과 화끈거리는 통증으로 왔다. 4일 전부터 같은 부위가 따끔거렸다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.4 °C 이다. 오른쪽 이마와 윗눈꺼풀, 두피 앞쪽에 붉은 바탕 위의 무리 지은 소수포가 정중선을 넘지 않고 띠 모양으로 분포하며, 오른쪽 코끝에도 소수포가 2개 있다. 시력은 양쪽 0.8 이고 결막은 약간 충혈되었다. 가장 적절한 처치는? A. 대상포진 백신 접종 B. 경구 발라시클로버 투여와 안과 진찰 의뢰 C. 경구 발라시클로버 투여만 하고 경과 관찰 D. 국소 아시클로버 연고 도포와 경과 관찰 E. 경구 프레드니솔론 단독 투여"
+  },
+  {
+   "id": "imaging-2026-0314",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 고유량 산소가 필요한 고령 환자의 입원 처치",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0314.md",
+   "snippet": "A 76 year old woman is admitted to the intensive care unit with COVID 19 pneumonia confirmed by RT PCR, 6 days after the onset of fever and cough. She requires high flow nasal cannula oxygen at 50 L/min with an FiO2 of 0.6 to keep oxygen sa",
+   "text": "호흡기 호흡기 — 고유량 산소가 필요한 고령 환자의 입원 처치 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e A 76 year old woman is admitted to the intensive care unit with COVID 19 pneumonia confirmed by RT PCR, 6 days after the onset of fever and cough. She requires high flow nasal cannula oxygen at 50 L/min with an FiO2 of 0.6 to keep oxygen saturation at 92%. She is receiving dexamethasone. A right internal jugular central venous catheter and a nasogastric feeding tube have been placed. Blood pressure is 128/70 mm Hg and pulse is 96/min. She has no history of bleeding, and there is no clinical evidence of deep venous thrombosis. Hemoglobin is 11.8 g/dL, platelet count is 210,000/mm3, creatinine is 0.9 mg/dL, and D dimer is 2.4 µg/mL (N < 0.5). A portable chest radiograph is shown. Which of the following is the most appropriate approach to prevention of venous thromboembolism in this patient? A. Therapeutic dose low molecular weight heparin B. Low dose aspirin C. Intermittent pneumatic compression devices alone D. Prophylactic inferior vena cava filter placement E. Prophylactic dose low molecular weight heparin"
+  },
+  {
+   "id": "imaging-2026-0313",
+   "type": "imaging",
+   "unit": "",
+   "topic": "순환기",
+   "subtopic": "순환기 — 박출률 감소 심부전 환자의 심장 조직 염색과 약",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0313.md",
+   "snippet": "62세 남자가 3개월 전 진단된 박출률 감소 심부전으로 외래에 왔다. 왼심실 박출률은 30 % 이고, 에날라프릴·비소프롤롤·스피로놀락톤을 최대 내약 용량으로 먹고 있다. 계단 한 층을 오르면 숨이 차다. 혈압 112/70 mmHg, 맥박 64회/분이다. 혈청 칼륨 4.6 mEq/L, 크레아티닌 1.1 mg/dL 이다. 같은 연령대 심장근육 조직 절편에 한 단백질에 대한 면역조직화학염색을 하였더니 그림과 같았다. 그림에서 염색된",
+   "text": "순환기 순환기 — 박출률 감소 심부전 환자의 심장 조직 염색과 약 opendata kmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e 62세 남자가 3개월 전 진단된 박출률 감소 심부전으로 외래에 왔다. 왼심실 박출률은 30 % 이고, 에날라프릴·비소프롤롤·스피로놀락톤을 최대 내약 용량으로 먹고 있다. 계단 한 층을 오르면 숨이 차다. 혈압 112/70 mmHg, 맥박 64회/분이다. 혈청 칼륨 4.6 mEq/L, 크레아티닌 1.1 mg/dL 이다. 같은 연령대 심장근육 조직 절편에 한 단백질에 대한 면역조직화학염색을 하였더니 그림과 같았다. 그림에서 염색된 물질의 분해를 막아 혈중 농도를 높이는 약은? A. 사쿠비트릴 B. 발사르탄 C. 이바브라딘 D. 디곡신 E. 하이드랄라진"
+  },
+  {
+   "id": "imaging-2026-0312",
+   "type": "imaging",
+   "unit": "",
+   "topic": "안과",
+   "subtopic": "안과 — 교통사고로 얼굴을 부딪친 뒤 눈 주위 부종",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0312.md",
+   "snippet": "A 60 year old woman is brought to the emergency department 1 hour after a motor vehicle collision in which her face struck the steering wheel. She reports pain and swelling around the left eye. Blood pressure is 134/82 mm Hg and pulse is 92",
+   "text": "안과 안과 — 교통사고로 얼굴을 부딪친 뒤 눈 주위 부종 opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e A 60 year old woman is brought to the emergency department 1 hour after a motor vehicle collision in which her face struck the steering wheel. She reports pain and swelling around the left eye. Blood pressure is 134/82 mm Hg and pulse is 92/min. There is marked swelling and ecchymosis of the left eyelids. Visual acuity is 20/25 in both eyes. The pupils are equal and reactive to light, with no relative afferent pupillary defect. Intraocular pressure is 17 mm Hg in the left eye. A coronal CT scan of the facial bones is shown. Further examination of this patient is most likely to show which of the following? A. Decreased sensation over the left cheek and upper lip B. Decreased sensation over the left forehead and scalp C. Left ptosis with a fixed, dilated pupil and complete ophthalmoplegia D. Clear watery nasal discharge that increases on leaning forward E. Loss of taste over the left anterior two thirds of the tongue"
+  },
+  {
+   "id": "imaging-2026-0311",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "산과 — 양막 파열 뒤 분만 중 태아심박동 기록",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ctg"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0311.md",
+   "snippet": "27세 초산부가 임신 40주에 진통으로 입원하였다. 임신 경과는 정상이었다. 입원 6시간째 자궁경부는 7 cm 열렸고 2시간 전 자연적으로 양막이 터져 맑은 양수가 나왔다. 체온 36.8 °C, 혈압 118/72 mmHg, 맥박 88회/분이다. 진통은 손으로 만져 2~3분 간격이다. 외부 자궁수축 탐촉자가 미끄러져 자궁활동은 기록되지 않았다. 지속 태아심박동 감시 기록의 10분 구간은 그림과 같다. 반복되는 감속의 기전으로 가",
+   "text": "산부인과 산과 — 양막 파열 뒤 분만 중 태아심박동 기록 opendata kmle_style ctg 의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e 27세 초산부가 임신 40주에 진통으로 입원하였다. 임신 경과는 정상이었다. 입원 6시간째 자궁경부는 7 cm 열렸고 2시간 전 자연적으로 양막이 터져 맑은 양수가 나왔다. 체온 36.8 °C, 혈압 118/72 mmHg, 맥박 88회/분이다. 진통은 손으로 만져 2~3분 간격이다. 외부 자궁수축 탐촉자가 미끄러져 자궁활동은 기록되지 않았다. 지속 태아심박동 감시 기록의 10분 구간은 그림과 같다. 반복되는 감속의 기전으로 가장 적절한 것은? A. 자궁태반 관류 저하 B. 태아 빈혈 C. 태아 수면 주기 D. 탯줄 압박 E. 태아 머리 압박"
   },
   {
    "id": "anatomy-daily-2026-10-13",
