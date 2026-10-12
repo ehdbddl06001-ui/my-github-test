@@ -20480,5 +20480,1079 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0200",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "Fever, Joint Pain and a Rash Along the Edges of the Hands and Feet Ten Days After Starting Treatment for Aplastic Anemia",
+  "type": "Fever, Joint Pain and a Rash Along the Edges of the Hands and Feet Ten Days After Starting Treatment for Aplastic Anemia",
+  "difficulty": 3,
+  "created": "2026-10-13",
+  "vignette": "A 31-year-old man comes to the physician because of fever, joint pain and a rash for 2 days. He was diagnosed with severe aplastic anemia 3 weeks ago. Ten days ago he began treatment with equine antithymocyte globulin, given intravenously once daily for 4 days, together with oral cyclosporine. During the first infusion he had chills and a fever that resolved within 3 hours; the remaining infusions were uneventful. He now has aching in his knees, wrists and fingers and a mildly itchy rash on his hands and feet. He has had no wheezing, lip swelling or lightheadedness. He takes no other medications. Examination shows erythematous, partly purpuric macules and wheals in a band along the sides of both hands and feet where the palmar and plantar skin meets the dorsal skin. Both wrists and knees are tender with small effusions. There are tender, mobile 1-cm lymph nodes in both axillae. The lungs are clear to auscultation. His vital signs are shown. Laboratory results are shown.",
+  "question": "Which of the following is the most likely mechanism of this patient's current condition?",
+  "options": [
+   "Antigen-specific IgE cross-linked on mast cells, triggering rapid degranulation",
+   "Drug-specific CD8+ T cells killing keratinocytes and synovial lining cells",
+   "Antigen–antibody complexes deposited in vessel walls, activating complement",
+   "Cytokine release from lymphocytes lysed by the infused antibody preparation",
+   "IgG bound to equine protein adsorbed onto platelets, causing their clearance"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 2단계 추론. ① 말 단백(equine antithymocyte globulin) 시작 10일 뒤 발열·다발 관절통·손발 가장자리 띠 모양 발진·림프절 비대·단백뇨 → 혈청병. ② 숙주 IgG 가 생기는 7–14일 무렵 혈중에 남은 항원과 항원 과잉 상태의 작은 면역 복합체를 만들어 혈관벽·관절막·사구체에 쌓이고 보체를 활성화한다 — C3·C4 저하가 그 흔적이다(제3형 과민반응).\n- 오답감별:\n  - (A) 제1형은 감작된 사람에서 노출 수 분–수 시간 안의 두드러기·천명·저혈압이다. 첫 노출 10일 뒤이고 천명·혈관부종·어지럼이 없으며 보체 저하·단백뇨를 설명하지 못한다.\n  - (B) 제4형(약물 특이 T 세포)은 피부 박리·점막 침범이나 장기 침범(간염 등)으로 나타나고 보체를 소모하지 않는다.\n  - (D) 사이토카인 방출은 첫 주입 때의 오한·발열로 3시간 안에 끝났다 — 지금 증상과 시점이 다르다.\n  - (E) 제2형 면역성 혈소판 파괴를 떠올릴 수 있지만 혈소판 감소는 재생불량빈혈 자체로 이미 있었고, 관절통·발진·단백뇨·보체 저하를 설명하지 못한다.\n- 임상핵심: 이종 단백·키메라 항체 7–14일 뒤 발열 + 관절통 + 발진 + 단백뇨 + C3·C4 저하 = 혈청병(제3형, 면역 복합체).\n- 출처: Robbins & Cotran 10e(Type III hypersensitivity); Harrison's 21e(Aplastic anemia — antithymocyte globulin).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 말 단백(equine antithymocyte globulin) 시작 10일 뒤 발열·다발 관절통·손발 가장자리 띠 모양 발진·림프절 비대·단백뇨 → 혈청병. ② 숙주 IgG 가 생기는 7–14일 무렵 혈중에 남은 항원과 항원 과잉 상태의 작은 면역 복합체를 만들어 혈관벽·관절막·사구체에 쌓이고 보체를 활성화한다 — C3·C4 저하가 그 흔적이다(제3형 과민반응)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 제1형은 감작된 사람에서 노출 수 분–수 시간 안의 두드러기·천명·저혈압이다. 첫 노출 10일 뒤이고 천명·혈관부종·어지럼이 없으며 보체 저하·단백뇨를 설명하지 못한다.\n(B) 제4형(약물 특이 T 세포)은 피부 박리·점막 침범이나 장기 침범(간염 등)으로 나타나고 보체를 소모하지 않는다.\n(D) 사이토카인 방출은 첫 주입 때의 오한·발열로 3시간 안에 끝났다 — 지금 증상과 시점이 다르다.\n(E) 제2형 면역성 혈소판 파괴를 떠올릴 수 있지만 혈소판 감소는 재생불량빈혈 자체로 이미 있었고, 관절통·발진·단백뇨·보체 저하를 설명하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "이종 단백·키메라 항체 7–14일 뒤 발열 + 관절통 + 발진 + 단백뇨 + C3·C4 저하 = 혈청병(제3형, 면역 복합체)."
+   },
+   {
+    "k": "출처",
+    "v": "Robbins & Cotran 10e(Type III hypersensitivity); Harrison's 21e(Aplastic anemia — antithymocyte globulin)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Immune complex-mediated (type III) hypersensitivity; Harrison's Principles of Internal Medicine 21e — Aplastic anemia: antithymocyte globulin)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "118/72 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "104 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "38.4 °C (101.1 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "2,100 /mm3",
+    "ref": "4,500–11,000 /mm3"
+   },
+   {
+    "name": "Platelet count",
+    "value": "24,000 /mm3",
+    "ref": "150,000–400,000 /mm3"
+   },
+   {
+    "name": "Erythrocyte sedimentation rate",
+    "value": "72 mm/h",
+    "ref": "0–15 mm/h"
+   },
+   {
+    "name": "Serum C3",
+    "value": "48 mg/dL",
+    "ref": "90–180 mg/dL"
+   },
+   {
+    "name": "Serum C4",
+    "value": "5 mg/dL",
+    "ref": "10–40 mg/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "1.0 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Urine protein",
+    "value": "2+",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "약·이종 단백 뒤 반응 — 시점과 기전\n─────────────────────────────────────────────\n수 분–수 시간 · 두드러기·천명·저혈압        → 제1형(IgE·비만세포)\n첫 주입 수 시간 · 발열·오한, 보체 정상      → 사이토카인 방출(주입 반응)\n1–3주 · 혈구 감소(항체가 세포 표면 항원에)  → 제2형\n7–14일 · 발열·관절통·발진·단백뇨, C3·C4 ↓  → 제3형(면역 복합체) = 혈청병\n수일–수주 · 피부 박리·장기 침범            → 제4형(T 세포)\n─────────────────────────────────────────────\n각주: 혈청병은 원인 단백을 끊으면 수일–수주에 스스로 가라앉고, 증상 조절에 항히스타민·NSAID, 심하면 스테로이드를 쓴다.\n",
+   "참고문헌": [
+    "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. — Immune complex-mediated (type III) hypersensitivity: serum sickness",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. — Aplastic anemia (antithymocyte globulin)"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "이종 단백 주입 7–14일 뒤 발열·관절통·발진·림프절 비대·단백뇨와 C3·C4 저하가 오면 항원 과잉 상태의 면역 복합체가 조직에 쌓여 보체를 활성화하는 제3형 과민반응(혈청병)이다.",
+   "rival": [
+    "D",
+    "A"
+   ],
+   "discriminator": "사이토카인 방출(D)은 첫 주입 수 시간 안에 생겨 그날 사라졌고 보체 소모·단백뇨를 만들지 않는다. IgE 매개 반응(A)은 노출 수 분–수 시간 안의 두드러기·천명·저혈압이고, 10일 뒤 관절통·보체 저하·단백뇨는 설명하지 못한다.",
+   "steps": 2,
+   "chain": [
+    "equine antithymocyte globulin 시작 10일 뒤 + 발열·다발 관절통·손발 가장자리 발진·림프절 비대·단백뇨 → 혈청병",
+    "C3·C4 저하 + 항체 생성에 걸리는 시간(7–14일) → 항원 과잉 면역 복합체가 혈관벽에 쌓여 보체 활성화(제3형)"
+   ],
+   "key": [
+    {
+     "item": "Ten days ago he began treatment with equine antithymocyte globulin",
+     "why": "이종(말) 단백 노출 뒤 항체가 생길 만한 시간 — 혈청병의 시간표",
+     "also": []
+    },
+    {
+     "item": "in a band along the sides of both hands and feet where the palmar and plantar skin meets the dorsal skin",
+     "why": "혈청병에 특징적인 손발 가장자리 띠 모양 발진",
+     "also": []
+    },
+    {
+     "item": "Serum C3",
+     "why": "저하 — 면역 복합체가 보체를 소모",
+     "also": []
+    },
+    {
+     "item": "Serum C4",
+     "why": "저하 — 고전 경로(항체 매개) 활성화",
+     "also": []
+    },
+    {
+     "item": "Urine protein",
+     "why": "2+ — 사구체에 면역 복합체가 쌓인 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "During the first infusion he had chills and a fever that resolved within 3 hours",
+     "why": "그때의 사이토카인 방출 반응은 이미 끝났다 — 지금 증상의 기전(D)이 아님을 시점으로 보여 준다",
+     "also": []
+    },
+    {
+     "item": "He has had no wheezing, lip swelling or lightheadedness",
+     "why": "천명·혈관부종·저혈압 없음 — IgE 매개 반응(A) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Platelet count",
+     "why": "재생불량빈혈 자체로 낮다 — 새로 생긴 면역성 혈소판 파괴(E)의 근거로 쓰지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "말 단백을 맞고 10일 뒤 발열·관절통·손발 가장자리 발진·림프절 비대·단백뇨가 생기고 C3·C4 가 낮다. 숙주 IgG 가 아직 남은 이종 항원과 작은 면역 복합체를 만들어 혈관벽·관절·사구체에 쌓이고 보체를 활성화하는 제3형 과민반응이다.",
+   "switch": {
+    "choice": "A",
+    "condition": "주입 시작 수 분 안에 두드러기·천명·혈압 저하가 생겼다면 미리 감작된 IgE 가 비만세포에서 교차결합한 제1형 반응(아나필락시스)이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.immuno.serum-sickness.immune-complex-mechanism",
+  "distractors": {
+   "D": {
+    "tempting": "antithymocyte globulin 은 주입 때 발열·오한을 흔히 일으키고, 이 환자도 실제로 그런 반응을 겪었다.",
+    "answer_first": "그 반응은 주입한 항체가 T 세포를 용해하며 사이토카인이 쏟아지는 첫 주입 반응이라 수 시간 안에 생기고 사라진다. 10일 뒤 다시 나타난 관절통·발진·단백뇨와 C3·C4 저하는 보체를 소모하는 면역 복합체 질환의 모양이다.",
+    "discriminator": "시점(첫 주입 3시간 안에 소실 vs 10일째) · C3·C4 저하 · 단백뇨.",
+    "when_right": "주입 도중이나 직후 수 시간 안에 발열·오한·저혈압이 생기고 보체가 정상일 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "이종 단백에 대한 반응이고 두드러기 모양 발진이 있으며 가렵다.",
+    "answer_first": "IgE 매개 반응은 이미 감작된 사람에서 노출 수 분–수 시간 안에 오고 천명·혈관부종·저혈압이 동반된다. 이 환자는 첫 노출이고 10일이 지났으며, 관절통·단백뇨·보체 저하는 제1형으로 설명되지 않는다.",
+    "discriminator": "「He has had no wheezing, lip swelling or lightheadedness」 · 10일이라는 시간 · C3·C4 저하.",
+    "when_right": "주입 직후 두드러기·천명·혈압 저하가 생겼을 때(아나필락시스).",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0201",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pathology",
+  "subject_file": "Pathology",
+  "subtopic": "Fainting While Sprinting at Basketball Practice in a 16-Year-Old Whose Uncle Died Suddenly at 28",
+  "type": "Fainting While Sprinting at Basketball Practice in a 16-Year-Old Whose Uncle Died Suddenly at 28",
+  "difficulty": 3,
+  "created": "2026-10-13",
+  "vignette": "A 16-year-old boy is brought to the emergency department after he fainted while sprinting at basketball practice. He regained consciousness within 1 minute without confusion. Over the past 6 months he has twice felt lightheaded and short of breath during hard exercise. He has had no fever, cough or flu-like illness in the past 2 months. He takes no medications or supplements and does not use drugs. His paternal uncle died suddenly at age 28 while jogging. His vital signs are shown. There is a harsh grade 3/6 crescendo-decrescendo systolic murmur heard best at the left lower sternal border that does not radiate to the carotid arteries. The murmur becomes louder when he stands from a squat and softer with sustained handgrip. The carotid upstroke is brisk. An ECG shows sinus rhythm with high-voltage QRS complexes, deep narrow Q waves in leads I, aVL, V5 and V6, and upright T waves in V1 through V3. Echocardiography shows an interventricular septum 25 mm thick and a posterior left ventricular wall 11 mm thick, with forward motion of the anterior mitral leaflet during systole; right ventricular size and function are normal. Laboratory results are shown.",
+  "question": "If a sample of the thickened septum were examined microscopically, which of the following would most likely be seen?",
+  "options": [
+   "Enlarged, haphazardly branching myocytes with interstitial fibrosis",
+   "Right ventricular myocytes replaced by fat and fibrous tissue",
+   "A lymphocytic infiltrate surrounding foci of myocyte necrosis",
+   "Amorphous extracellular deposits separating normal-sized myocytes",
+   "Myocytes distended by cytoplasmic vacuoles filled with glycogen"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 2단계 추론. ① 운동 중 실신 + 28세 삼촌의 돌연사 + 일어서면 커지고 손을 쥐면 작아지는 수축기 잡음 + 중격 25 mm·후벽 11 mm 비대칭 비대 + 승모판 수축기 전방 운동 → 비후성 심근병증. ② 근절 단백 유전자 돌연변이의 조직상은 비대한 심근세포가 제멋대로 갈라지고 얽힌 배열(myocyte disarray) + 사이질 섬유화다 — 우심실·T 파·트로포닌이 정상이고 선행 질환이 없어 다른 젊은 돌연사 원인의 가능성은 낮다.\n- 오답감별:\n  - (B) 부정맥 유발 우심실 심근병증도 젊은 운동 중 실신·돌연사를 일으키지만 우심실 확장·기능 저하·V1–V3 T 파 역위가 나온다. 이 환자는 우심실이 정상이고 T 파가 서 있다.\n  - (C) 심근염의 조직상이다. 선행 바이러스 질환이 없고 트로포닌이 정상이다.\n  - (D) 아밀로이드 침착은 고령에서 두꺼운 벽과 저전압 QRS 로 오는데, 이 환자는 16세이고 QRS 전압이 높다.\n  - (E) 글리코겐 공포는 Pompe 병(영아 근긴장 저하·거대심장)에서 보이며 이 환자의 나이·임상상과 맞지 않는다.\n- 임상핵심: 운동 중 실신 + 전부하를 줄이면 커지는 잡음 + 비대칭 중격 비대 = 비후성 심근병증 → 조직은 심근세포 배열 이상 + 사이질 섬유화.\n- 출처: Robbins & Cotran 10e(Hypertrophic cardiomyopathy); 2020 AHA/ACC HCM Guideline.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 운동 중 실신 + 28세 삼촌의 돌연사 + 일어서면 커지고 손을 쥐면 작아지는 수축기 잡음 + 중격 25 mm·후벽 11 mm 비대칭 비대 + 승모판 수축기 전방 운동 → 비후성 심근병증. ② 근절 단백 유전자 돌연변이의 조직상은 비대한 심근세포가 제멋대로 갈라지고 얽힌 배열(myocyte disarray) + 사이질 섬유화다 — 우심실·T 파·트로포닌이 정상이고 선행 질환이 없어 다른 젊은 돌연사 원인의 가능성은 낮다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 부정맥 유발 우심실 심근병증도 젊은 운동 중 실신·돌연사를 일으키지만 우심실 확장·기능 저하·V1–V3 T 파 역위가 나온다. 이 환자는 우심실이 정상이고 T 파가 서 있다.\n(C) 심근염의 조직상이다. 선행 바이러스 질환이 없고 트로포닌이 정상이다.\n(D) 아밀로이드 침착은 고령에서 두꺼운 벽과 저전압 QRS 로 오는데, 이 환자는 16세이고 QRS 전압이 높다.\n(E) 글리코겐 공포는 Pompe 병(영아 근긴장 저하·거대심장)에서 보이며 이 환자의 나이·임상상과 맞지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "운동 중 실신 + 전부하를 줄이면 커지는 잡음 + 비대칭 중격 비대 = 비후성 심근병증 → 조직은 심근세포 배열 이상 + 사이질 섬유화."
+   },
+   {
+    "k": "출처",
+    "v": "Robbins & Cotran 10e(Hypertrophic cardiomyopathy); 2020 AHA/ACC HCM Guideline."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Cardiomyopathies: hypertrophic cardiomyopathy; 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Hypertrophic Cardiomyopathy)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "116/68 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "70 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Troponin I",
+    "value": "<0.01 ng/mL",
+    "ref": "<0.04 ng/mL"
+   },
+   {
+    "name": "Potassium",
+    "value": "4.1 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Glucose",
+    "value": "94 mg/dL",
+    "ref": "70–100 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "젊은 사람의 운동 중 실신·돌연사 — 심근 조직상\n─────────────────────────────────────────────\n비후성 심근병증  : 비대칭 중격 비대 · 승모판 수축기 전방 운동 → 심근세포 배열 이상 + 사이질 섬유화\n우심실 심근병증  : 우심실 확장 · V1–V3 T 역위 · 엡실론 파 → 우심실 심근의 지방·섬유 치환\n심근염          : 바이러스 질환 뒤 · 트로포닌 ↑ → 림프구 침윤 + 심근 괴사\n아밀로이드증     : 고령 · 저전압 QRS · 두꺼운 벽 → 세포 밖 무정형 침착(콩고레드 사과 녹색 복굴절)\nPompe 병        : 영아 · 근긴장 저하 · 거대심장 → 글리코겐이 찬 공포\n─────────────────────────────────────────────\n각주: 비후성 심근병증의 잡음은 전부하·후부하가 줄면(일어서기·Valsalva) 커지고, 늘면(쪼그려 앉기·손 쥐기) 작아진다.\n",
+   "참고문헌": [
+    "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. — Cardiomyopathies: hypertrophic cardiomyopathy",
+    "Ommen SR et al. 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Patients With Hypertrophic Cardiomyopathy. Circulation. 2020;142:e558-e631."
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "운동 중 실신 + 돌연사 가족력 + 전부하를 줄이면 커지는 수축기 잡음 + 비대칭 중격 비대·승모판 수축기 전방 운동이면 비후성 심근병증이고, 조직은 근섬유 배열 이상과 사이질 섬유화다.",
+   "rival": [
+    "B",
+    "C"
+   ],
+   "discriminator": "부정맥 유발 우심실 심근병증(B)은 우심실 확장·기능 저하와 V1–V3 T 파 역위가 나오는데, 이 환자는 우심실이 정상이고 V1–V3 T 파가 바로 서 있으며 좌심실 중격이 두껍다. 심근염(C)은 최근 바이러스 질환·트로포닌 상승이 맞물리는데 둘 다 없다.",
+   "steps": 2,
+   "chain": [
+    "운동 중 실신 + 젊은 돌연사 가족력 + 서면 커지고 손을 쥐면 작아지는 잡음 + 중격 25 mm·후벽 11 mm·승모판 수축기 전방 운동 → 비후성 심근병증",
+    "우심실 정상·V1–V3 T 파 정상·트로포닌 정상·최근 질환 없음 → 다른 젊은 돌연사 원인의 가능성 낮음 → 근절 돌연변이의 조직상 = 심근세포 배열 이상 + 사이질 섬유화"
+   ],
+   "key": [
+    {
+     "item": "The murmur becomes louder when he stands from a squat and softer with sustained handgrip",
+     "why": "전부하가 줄면 커지는 역동적 유출로 폐쇄 — 대동맥판 협착과 반대 방향",
+     "also": []
+    },
+    {
+     "item": "Echocardiography shows an interventricular septum 25 mm thick and a posterior left ventricular wall 11 mm thick",
+     "why": "비대칭 중격 비대",
+     "also": []
+    },
+    {
+     "item": "forward motion of the anterior mitral leaflet during systole",
+     "why": "승모판 수축기 전방 운동 — 유출로 폐쇄의 기전",
+     "also": []
+    },
+    {
+     "item": "His paternal uncle died suddenly at age 28 while jogging",
+     "why": "상염색체 우성 근절 돌연변이를 시사하는 가족력",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "right ventricular size and function are normal",
+     "why": "부정맥 유발 우심실 심근병증(B) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "upright T waves in V1 through V3",
+     "why": "우심실 심근병증의 우측 전흉부 T 파 역위가 없다",
+     "also": []
+    },
+    {
+     "item": "He has had no fever, cough or flu-like illness in the past 2 months",
+     "why": "바이러스 심근염(C)의 선행 질환이 없다",
+     "also": []
+    },
+    {
+     "item": "Troponin I",
+     "why": "정상 — 진행 중인 심근 괴사(심근염·경색)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The carotid upstroke is brisk",
+     "why": "대동맥판 협착의 느리고 약한 맥과 다르다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [],
+   "summary": "운동 중 실신과 젊은 돌연사 가족력, 전부하를 줄이면 커지는 잡음, 비대칭 중격 비대와 승모판 수축기 전방 운동은 비후성 심근병증이다. 우심실·T 파·트로포닌이 정상이라 다른 젊은 돌연사 원인은 가능성이 낮고, 조직은 비대한 심근세포의 배열 이상과 사이질 섬유화다.",
+   "switch": {
+    "choice": "B",
+    "condition": "우심실이 확장되고 기능이 떨어지며 V1–V3 T 파 역위·엡실론 파가 있고 좌심실 벽이 정상 두께라면 부정맥 유발 우심실 심근병증 — 우심실 심근이 지방·섬유 조직으로 바뀐다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.path.hypertrophic-cardiomyopathy.myocyte-disarray",
+  "distractors": {
+   "B": {
+    "tempting": "젊은 운동선수의 운동 중 실신·돌연사 가족력은 부정맥 유발 우심실 심근병증에서도 나온다.",
+    "answer_first": "그 질환은 우심실 심근이 지방·섬유로 바뀌어 우심실이 확장되고 기능이 떨어지며 V1–V3 T 파 역위가 나온다. 이 환자는 우심실이 정상이고 T 파가 서 있으며, 두꺼운 것은 좌심실 중격이다.",
+    "discriminator": "「right ventricular size and function are normal」 · 「upright T waves in V1 through V3」 · 중격 25 mm.",
+    "when_right": "우심실 확장·국소 운동 이상과 V1–V3 T 파 역위·엡실론 파가 있을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "젊은 사람의 운동 중 실신과 심근 이상은 바이러스 심근염에서도 볼 수 있다.",
+    "answer_first": "심근염은 최근 바이러스 질환 뒤 흉통·심부전·부정맥으로 오고 트로포닌이 오른다. 이 환자는 선행 질환이 없고 트로포닌이 정상이며, 6개월에 걸친 운동 시 증상·비대칭 중격 비대·가족력은 유전 심근병증을 가리킨다.",
+    "discriminator": "「He has had no fever, cough or flu-like illness」 · 「Troponin I: <0.01 ng/mL」 · 비대칭 중격 비대.",
+    "when_right": "바이러스 질환 1–2주 뒤 흉통·트로포닌 상승·심실 기능 저하가 새로 생겼을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0202",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "A Regular Pulse of 150 That Halves for a Few Seconds During Pressure on the Right Side of the Neck",
+  "type": "A Regular Pulse of 150 That Halves for a Few Seconds During Pressure on the Right Side of the Neck",
+  "difficulty": 4,
+  "created": "2026-10-13",
+  "vignette": "A 67-year-old man comes to the emergency department because of palpitations that began suddenly 3 hours ago. He has mild exertional dyspnea but no chest pain or lightheadedness. He has chronic obstructive pulmonary disease and hypertension. Medications include tiotropium and amlodipine. His vital signs are shown. He is alert. There are no carotid bruits. The lungs have scattered expiratory wheezes. The ECG obtained on arrival is shown. Laboratory results are shown. While the ECG is recorded continuously, firm pressure is applied over the right carotid sinus for 5 seconds. During the pressure, the ventricular rate abruptly falls to 75/min and regular sawtooth atrial waves at 300/min become clearly visible between the QRS complexes; the atrial rate does not change. Within seconds of releasing the pressure, the ventricular rate returns to 150/min.",
+  "question": "Which of the following best explains the transient fall in the ventricular rate?",
+  "options": [
+   "Decreased carotid sinus stretch, lowering sympathetic outflow to the ventricles",
+   "Increased vagal tone slowing conduction around the right atrial reentry loop",
+   "Interruption of a reentry circuit that uses the AV node as one of its limbs",
+   "Increased glossopharyngeal afferent firing, raising vagal output to the AV node",
+   "Direct mechanical compression of the vagus nerve, depolarizing the SA node"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 3단계 추론. ① 갑자기 시작된 규칙적 좁은 QRS 150회/분 + 압박 중 드러난 300회/분 톱니파 → 2:1 전도 심방조동(압박 중 4:1). ② 경동맥동 압박은 압수용체가 벽 신장으로 감지해 설인신경 afferent 발화가 늘고 고립로핵을 거쳐 미주신경 원심 출력이 늘어난다. ③ 심방 박동수는 그대로이고 압박을 풀자 원래대로 돌아왔다 → 회로가 아니라 방실결절 전도만 아세틸콜린으로 늦어져 신호가 더 많이 걸러졌다.\n- 오답감별:\n  - (A) 압박은 경동맥동을 늘린 것처럼 감지되어 발화를 늘린다 — 방향이 반대다. 또 심실 박동수는 심실 교감 출력이 아니라 방실결절이 정한다.\n  - (B) 미주신경 효과가 우심방 회로를 늦췄다면 톱니파 속도가 바뀌어야 한다. 심방은 300회/분 그대로였다.\n  - (C) 방실결절을 쓰는 회귀 빈맥이라면 압박으로 빈맥이 멈추고 동율동이 나와야 한다. 여기서는 조동파가 계속되다가 원래 박동수로 돌아왔다.\n  - (E) 반사는 압수용체 → 설인신경 → 뇌간을 거친다. 미주신경 자극은 동결절을 과분극시켜 느리게 하지 탈분극시키지 않고, 이 환자의 박동수는 동결절이 정하지도 않는다.\n- 임상핵심: 미주신경 수기 중 심방파 속도는 그대로인데 심실 박동수만 잠시 떨어지면 방실결절 밖 회로(조동·심방빈맥) — 반사는 경동맥동 → CN IX → 고립로핵 → CN X → 방실결절.\n- 출처: Guyton and Hall 14e(Baroreceptor reflex); Harrison's 21e(Atrial flutter, vagal maneuvers).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 갑자기 시작된 규칙적 좁은 QRS 150회/분 + 압박 중 드러난 300회/분 톱니파 → 2:1 전도 심방조동(압박 중 4:1). ② 경동맥동 압박은 압수용체가 벽 신장으로 감지해 설인신경 afferent 발화가 늘고 고립로핵을 거쳐 미주신경 원심 출력이 늘어난다. ③ 심방 박동수는 그대로이고 압박을 풀자 원래대로 돌아왔다 → 회로가 아니라 방실결절 전도만 아세틸콜린으로 늦어져 신호가 더 많이 걸러졌다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 압박은 경동맥동을 늘린 것처럼 감지되어 발화를 늘린다 — 방향이 반대다. 또 심실 박동수는 심실 교감 출력이 아니라 방실결절이 정한다.\n(B) 미주신경 효과가 우심방 회로를 늦췄다면 톱니파 속도가 바뀌어야 한다. 심방은 300회/분 그대로였다.\n(C) 방실결절을 쓰는 회귀 빈맥이라면 압박으로 빈맥이 멈추고 동율동이 나와야 한다. 여기서는 조동파가 계속되다가 원래 박동수로 돌아왔다.\n(E) 반사는 압수용체 → 설인신경 → 뇌간을 거친다. 미주신경 자극은 동결절을 과분극시켜 느리게 하지 탈분극시키지 않고, 이 환자의 박동수는 동결절이 정하지도 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "미주신경 수기 중 심방파 속도는 그대로인데 심실 박동수만 잠시 떨어지면 방실결절 밖 회로(조동·심방빈맥) — 반사는 경동맥동 → CN IX → 고립로핵 → CN X → 방실결절."
+   },
+   {
+    "k": "출처",
+    "v": "Guyton and Hall 14e(Baroreceptor reflex); Harrison's 21e(Atrial flutter, vagal maneuvers)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Guyton and Hall Textbook of Medical Physiology 14e — Nervous regulation of the circulation: baroreceptor reflex; Harrison's Principles of Internal Medicine 21e — Supraventricular tachyarrhythmias: atrial flutter)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "128/80 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "150 /min, regular"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Potassium",
+    "value": "4.2 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Thyroid-stimulating hormone",
+    "value": "1.9 μU/mL",
+    "ref": "0.5–5.0 μU/mL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "규칙적 좁은 QRS 빈맥에 미주신경 수기(경동맥동 마사지·Valsalva)·아데노신을 했을 때\n─────────────────────────────────────────────\n갑자기 멈추고 동율동 → 방실결절을 쓰는 회귀(AVNRT·AVRT)\n잠시 느려지며 톱니파(300/분) 노출 후 복귀 → 심방조동(방실결절 밖 회로)\n잠시 느려지며 P 파 노출 후 복귀 → 심방빈맥\n서서히 느려졌다 서서히 회복 → 동빈맥\n─────────────────────────────────────────────\n반사 경로: 경동맥동 신장 ↑ → 설인신경(CN IX) → 고립로핵 → 미주신경(CN X) 원심 ↑ · 교감 ↓\n대동맥궁 압수용체는 미주신경으로 들어간다.\n",
+   "참고문헌": [
+    "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. 14th ed. — Nervous regulation of the circulation: baroreceptor arterial pressure control system",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. — Supraventricular tachyarrhythmias (atrial flutter; vagal maneuvers)"
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "경동맥동 압박 중 심방 박동수는 그대로인데 심실 박동수만 잠시 반이 되었으면, 압수용체 → 설인신경 → 고립로핵 → 미주신경 출력 증가가 방실결절 전도를 늦춘 것이다.",
+   "rival": [
+    "B",
+    "C"
+   ],
+   "discriminator": "미주신경이 조동 회로 자체를 늦췄다면(B) 심방파의 속도가 바뀌어야 하는데 300회/분 그대로다. 방실결절을 통과하는 회귀성 빈맥(C)이라면 압박으로 빈맥이 멈추고 동율동으로 돌아오지, 조동파가 드러난 뒤 원래 박동수로 되돌아오지 않는다.",
+   "steps": 3,
+   "chain": [
+    "갑작스러운 규칙적 좁은 QRS 150회/분 + 압박 중 300회/분 톱니 심방파 → 2:1 전도 심방조동(압박 중 4:1)",
+    "경동맥동 압박 = 벽 신장처럼 감지 → 설인신경 afferent 발화 증가 → 고립로핵 → 미주신경 원심 출력 증가",
+    "심방 박동수 불변 + 압박을 풀자 원래 박동수로 복귀 → 회로(심방)가 아니라 방실결절 전도만 늦어졌다"
+   ],
+   "key": [
+    {
+     "item": "심전도: 규칙적인 좁은 QRS 빈맥 150회/분, QRS 사이의 톱니 모양 심방파",
+     "why": "2:1 전도 심방조동의 전형적 심실 박동수",
+     "also": []
+    },
+    {
+     "item": "the ventricular rate abruptly falls to 75/min and regular sawtooth atrial waves at 300/min become clearly visible",
+     "why": "방실 전도 비율만 4:1 로 바뀌었다",
+     "also": []
+    },
+    {
+     "item": "the atrial rate does not change",
+     "why": "회로 자체는 영향받지 않았다 — 효과는 방실결절에서 일어났다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Within seconds of releasing the pressure, the ventricular rate returns to 150/min",
+     "why": "빈맥이 멈추지 않았다 — 방실결절을 쓰는 회귀성 빈맥(C)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "There are no carotid bruits",
+     "why": "경동맥동 마사지를 할 수 있는 전제(잡음이 있으면 색전 위험으로 피한다)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Thyroid-stimulating hormone",
+     "why": "정상 — 갑상선중독이 유발 원인일 가능성을 낮추지만 기전 판단에는 영향이 적다",
+     "also": []
+    },
+    {
+     "item": "He has chronic obstructive pulmonary disease and hypertension",
+     "why": "심방조동의 흔한 배경(우심방 부하) — 기전 선택에는 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "경동맥동 압박 중 심방 박동수 300회/분은 그대로이고 심실 박동수만 150에서 75로 떨어졌다가 풀자 돌아왔다. 압박은 압수용체 발화를 늘려 설인신경·고립로핵을 거쳐 미주신경 출력을 높이고, 그 아세틸콜린이 방실결절 전도를 늦춰 조동 신호를 더 많이 걸러 낸 것이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "압박 중 빈맥이 갑자기 멈추고 동율동으로 돌아왔다면 방실결절을 회로의 한 갈래로 쓰는 회귀성 빈맥(AVNRT·AVRT)이 차단된 것이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.physio.carotid-sinus-massage.av-nodal-vagal-slowing",
+  "distractors": {
+   "B": {
+    "tempting": "미주신경 자극이 심장을 느리게 한다는 것은 맞고, 조동은 우심방 회귀 회로다.",
+    "answer_first": "미주신경 효과가 회로를 늦췄다면 톱니파의 속도가 바뀌어야 한다. 심방은 300회/분 그대로이고 심실만 반으로 줄었다 — 회로 밖의 방실결절에서 걸러지는 신호가 늘었을 뿐이다.",
+    "discriminator": "「the atrial rate does not change」 — 심방 박동수 불변, 심실 박동수만 감소.",
+    "when_right": "심방 박동수 자체가 함께 느려지는 경우 — 동빈맥이 미주신경 자극으로 서서히 느려질 때처럼 박동원이 미주신경 지배를 받을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "규칙적인 좁은 QRS 빈맥에 경동맥동 마사지를 하는 가장 흔한 이유는 방실결절 회귀 빈맥을 끊기 위해서다.",
+    "answer_first": "방실결절이 회로의 일부라면 압박으로 회로가 끊겨 빈맥이 멈추고 동율동이 나와야 한다. 여기서는 톱니파가 드러난 채 계속되다가 압박을 풀자 원래 박동수로 돌아왔다.",
+    "discriminator": "「Within seconds of releasing the pressure, the ventricular rate returns to 150/min」 · 압박 중에도 300회/분 심방파 지속.",
+    "when_right": "압박 중 빈맥이 갑자기 멈추고 동율동으로 전환될 때(AVNRT·AVRT).",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG flutter · 150 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,90.0 0.6,90.4 1.2,90.8 1.8,91.2 2.4,91.5 3.0,91.9 3.6,92.3 4.2,92.7 4.8,93.1 5.4,93.5 6.0,93.8 6.6,94.2 7.2,94.6 7.8,95.0 8.4,95.4 9.0,95.8 9.6,96.1 10.2,96.5 10.8,96.9 11.4,97.3 12.0,97.7 12.6,98.1 13.2,98.4 13.8,98.8 14.4,99.2 15.0,80.4 15.6,80.8 16.2,81.2 16.8,81.6 17.4,81.9 18.0,82.3 18.6,82.7 19.2,83.1 19.8,83.5 20.4,83.9 21.0,84.2 21.6,84.6 22.2,85.0 22.8,85.4 23.4,85.8 24.0,86.2 24.6,86.5 25.2,86.9 25.8,87.3 26.4,87.7 27.0,88.1 27.6,88.5 28.2,88.8 28.8,89.2 29.4,89.6 30.0,90.0 30.6,90.4 31.2,90.8 31.8,91.2 32.4,91.5 33.0,91.9 33.6,92.3 34.2,92.7 34.8,93.1 35.4,93.5 36.0,93.8 36.6,94.2 37.2,94.6 37.8,95.0 38.4,95.4 39.0,95.8 39.6,96.1 40.2,96.5 40.8,96.9 41.4,97.3 42.0,97.7 42.6,98.1 43.2,98.4 43.8,98.8 44.4,99.2 45.0,80.4 45.6,80.8 46.2,81.2 46.8,81.6 47.4,81.9 48.0,82.3 48.6,82.7 49.2,83.1 49.8,83.5 50.4,83.9 51.0,84.2 51.6,84.6 52.2,85.0 52.8,85.4 53.4,86.0 54.0,86.9 54.6,88.1 55.2,89.1 55.8,88.4 56.4,84.9 57.0,77.9 57.6,67.4 58.2,54.4 58.8,41.0 59.4,30.7 60.0,27.3 60.6,32.1 61.2,43.9 61.8,59.2 62.4,74.5 63.0,87.0 63.6,95.8 64.2,100.8 64.8,102.8 65.4,102.5 66.0,100.9 66.6,99.0 67.2,97.4 67.8,96.5 68.4,96.0 69.0,96.0 69.6,96.2 70.2,96.6 70.8,96.9 71.4,97.3 72.0,97.7 72.6,98.1 73.2,98.4 73.8,98.8 74.4,99.2 75.0,80.4 75.6,80.8 76.2,81.2 76.8,81.5 77.4,81.9 78.0,82.3 78.6,82.7 79.2,83.1 79.8,83.5 80.4,83.8 81.0,84.2 81.6,84.6 82.2,85.0 82.8,85.3 83.4,85.7 84.0,86.0 84.6,86.4 85.2,86.7 85.8,87.0 86.4,87.3 87.0,87.6 87.6,87.9 88.2,88.1 88.8,88.3 89.4,88.5 90.0,88.6 90.6,88.7 91.2,88.7 91.8,88.7 92.4,88.6 93.0,88.5 93.6,88.3 94.2,88.0 94.8,87.7 95.4,87.3 96.0,86.9 96.6,86.5 97.2,86.0 97.8,85.5 98.4,85.0 99.0,84.4 99.6,83.9 100.2,83.5 100.8,83.1 101.4,82.7 102.0,82.5 102.6,82.3 103.2,82.2 103.8,82.3 104.4,82.5 105.0,63.6 105.6,64.1 106.2,64.6 106.8,65.3 107.4,66.2 108.0,67.1 108.6,68.1 109.2,69.2 109.8,70.4 110.4,71.7 111.0,72.9 111.6,74.2 112.2,75.5 112.8,76.8 113.4,78.3 114.0,80.0 114.6,82.0 115.2,83.7 115.8,83.8 116.4,80.9 117.0,74.4 117.6,64.5 118.2,51.9 118.8,38.9 119.4,29.0 120.0,25.8 120.6,30.9 121.2,42.9 121.8,58.5 122.4,73.9 123.0,86.5 123.6,95.4 124.2,100.5 124.8,102.6 125.4,102.3 126.0,100.8 126.6,98.9 127.2,97.4 127.8,96.5 128.4,96.0 129.0,96.0 129.6,96.2 130.2,96.6 130.8,96.9 131.4,97.3 132.0,97.7 132.6,98.1 133.2,98.4 133.8,98.8 134.4,99.2 135.0,80.4 135.6,80.8 136.2,81.2 136.8,81.5 137.4,81.9 138.0,82.3 138.6,82.7 139.2,83.1 139.8,83.5 140.4,83.8 141.0,84.2 141.6,84.6 142.2,85.0 142.8,85.3 143.4,85.7 144.0,86.0 144.6,86.4 145.2,86.7 145.8,87.0 146.4,87.3 147.0,87.6 147.6,87.9 148.2,88.1 148.8,88.3 149.4,88.5 150.0,88.6 150.6,88.7 151.2,88.7 151.8,88.7 152.4,88.6 153.0,88.5 153.6,88.3 154.2,88.0 154.8,87.7 155.4,87.3 156.0,86.9 156.6,86.5 157.2,86.0 157.8,85.5 158.4,85.0 159.0,84.4 159.6,83.9 160.2,83.5 160.8,83.1 161.4,82.7 162.0,82.5 162.6,82.3 163.2,82.2 163.8,82.3 164.4,82.5 165.0,63.6 165.6,64.1 166.2,64.6 166.8,65.3 167.4,66.2 168.0,67.1 168.6,68.1 169.2,69.2 169.8,70.4 170.4,71.7 171.0,72.9 171.6,74.2 172.2,75.5 172.8,76.8 173.4,78.3 174.0,80.0 174.6,82.0 175.2,83.7 175.8,83.8 176.4,80.9 177.0,74.4 177.6,64.5 178.2,51.9 178.8,38.9 179.4,29.0 180.0,25.8 180.6,30.9 181.2,42.9 181.8,58.5 182.4,73.9 183.0,86.5 183.6,95.4 184.2,100.5 184.8,102.6 185.4,102.3 186.0,100.8 186.6,98.9 187.2,97.4 187.8,96.5 188.4,96.0 189.0,96.0 189.6,96.2 190.2,96.6 190.8,96.9 191.4,97.3 192.0,97.7 192.6,98.1 193.2,98.4 193.8,98.8 194.4,99.2 195.0,80.4 195.6,80.8 196.2,81.2 196.8,81.5 197.4,81.9 198.0,82.3 198.6,82.7 199.2,83.1 199.8,83.5 200.4,83.8 201.0,84.2 201.6,84.6 202.2,85.0 202.8,85.3 203.4,85.7 204.0,86.0 204.6,86.4 205.2,86.7 205.8,87.0 206.4,87.3 207.0,87.6 207.6,87.9 208.2,88.1 208.8,88.3 209.4,88.5 210.0,88.6 210.6,88.7 211.2,88.7 211.8,88.7 212.4,88.6 213.0,88.5 213.6,88.3 214.2,88.0 214.8,87.7 215.4,87.3 216.0,86.9 216.6,86.5 217.2,86.0 217.8,85.5 218.4,85.0 219.0,84.4 219.6,83.9 220.2,83.5 220.8,83.1 221.4,82.7 222.0,82.5 222.6,82.3 223.2,82.2 223.8,82.3 224.4,82.5 225.0,63.6 225.6,64.1 226.2,64.6 226.8,65.3 227.4,66.2 228.0,67.1 228.6,68.1 229.2,69.2 229.8,70.4 230.4,71.7 231.0,72.9 231.6,74.2 232.2,75.5 232.8,76.8 233.4,78.3 234.0,80.0 234.6,82.0 235.2,83.7 235.8,83.8 236.4,80.9 237.0,74.4 237.6,64.5 238.2,51.9 238.8,38.9 239.4,29.0 240.0,25.8 240.6,30.9 241.2,42.9 241.8,58.5 242.4,73.9 243.0,86.5 243.6,95.4 244.2,100.5 244.8,102.6 245.4,102.3 246.0,100.8 246.6,98.9 247.2,97.4 247.8,96.5 248.4,96.0 249.0,96.0 249.6,96.2 250.2,96.6 250.8,96.9 251.4,97.3 252.0,97.7 252.6,98.1 253.2,98.4 253.8,98.8 254.4,99.2 255.0,80.4 255.6,80.8 256.2,81.2 256.8,81.5 257.4,81.9 258.0,82.3 258.6,82.7 259.2,83.1 259.8,83.5 260.4,83.8 261.0,84.2 261.6,84.6 262.2,85.0 262.8,85.3 263.4,85.7 264.0,86.0 264.6,86.4 265.2,86.7 265.8,87.0 266.4,87.3 267.0,87.6 267.6,87.9 268.2,88.1 268.8,88.3 269.4,88.5 270.0,88.6 270.6,88.7 271.2,88.7 271.8,88.7 272.4,88.6 273.0,88.5 273.6,88.3 274.2,88.0 274.8,87.7 275.4,87.3 276.0,86.9 276.6,86.5 277.2,86.0 277.8,85.5 278.4,85.0 279.0,84.4 279.6,83.9 280.2,83.5 280.8,83.1 281.4,82.7 282.0,82.5 282.6,82.3 283.2,82.2 283.8,82.3 284.4,82.5 285.0,63.6 285.6,64.1 286.2,64.6 286.8,65.3 287.4,66.2 288.0,67.1 288.6,68.1 289.2,69.2 289.8,70.4 290.4,71.7 291.0,72.9 291.6,74.2 292.2,75.5 292.8,76.8 293.4,78.3 294.0,80.0 294.6,82.0 295.2,83.7 295.8,83.8 296.4,80.9 297.0,74.4 297.6,64.5 298.2,51.9 298.8,38.9 299.4,29.0 300.0,25.8 300.6,30.9 301.2,42.9 301.8,58.5 302.4,73.9 303.0,86.5 303.6,95.4 304.2,100.5 304.8,102.6 305.4,102.3 306.0,100.8 306.6,98.9 307.2,97.4 307.8,96.5 308.4,96.0 309.0,96.0 309.6,96.2 310.2,96.6 310.8,96.9 311.4,97.3 312.0,97.7 312.6,98.1 313.2,98.4 313.8,98.8 314.4,99.2 315.0,80.4 315.6,80.8 316.2,81.2 316.8,81.5 317.4,81.9 318.0,82.3 318.6,82.7 319.2,83.1 319.8,83.5 320.4,83.8 321.0,84.2 321.6,84.6 322.2,85.0 322.8,85.3 323.4,85.7 324.0,86.0 324.6,86.4 325.2,86.7 325.8,87.0 326.4,87.3 327.0,87.6 327.6,87.9 328.2,88.1 328.8,88.3 329.4,88.5 330.0,88.6 330.6,88.7 331.2,88.7 331.8,88.7 332.4,88.6 333.0,88.5 333.6,88.3 334.2,88.0 334.8,87.7 335.4,87.3 336.0,86.9 336.6,86.5 337.2,86.0 337.8,85.5 338.4,85.0 339.0,84.4 339.6,83.9 340.2,83.5 340.8,83.1 341.4,82.7 342.0,82.5 342.6,82.3 343.2,82.2 343.8,82.3 344.4,82.5 345.0,63.6 345.6,64.1 346.2,64.6 346.8,65.3 347.4,66.2 348.0,67.1 348.6,68.1 349.2,69.2 349.8,70.4 350.4,71.7 351.0,72.9 351.6,74.2 352.2,75.5 352.8,76.8 353.4,78.3 354.0,80.0 354.6,82.0 355.2,83.7 355.8,83.8 356.4,80.9 357.0,74.4 357.6,64.5 358.2,51.9 358.8,38.9 359.4,29.0 360.0,25.8 360.6,30.9 361.2,42.9 361.8,58.5 362.4,73.9 363.0,86.5 363.6,95.4 364.2,100.5 364.8,102.6 365.4,102.3 366.0,100.8 366.6,98.9 367.2,97.4 367.8,96.5 368.4,96.0 369.0,96.0 369.6,96.2 370.2,96.6 370.8,96.9 371.4,97.3 372.0,97.7 372.6,98.1 373.2,98.4 373.8,98.8 374.4,99.2 375.0,80.4 375.6,80.8 376.2,81.2 376.8,81.5 377.4,81.9 378.0,82.3 378.6,82.7 379.2,83.1 379.8,83.5 380.4,83.8 381.0,84.2 381.6,84.6 382.2,85.0 382.8,85.3 383.4,85.7 384.0,86.0 384.6,86.4 385.2,86.7 385.8,87.0 386.4,87.3 387.0,87.6 387.6,87.9 388.2,88.1 388.8,88.3 389.4,88.5 390.0,88.6 390.6,88.7 391.2,88.7 391.8,88.7 392.4,88.6 393.0,88.5 393.6,88.3 394.2,88.0 394.8,87.7 395.4,87.3 396.0,86.9 396.6,86.5 397.2,86.0 397.8,85.5 398.4,85.0 399.0,84.4 399.6,83.9 400.2,83.5 400.8,83.1 401.4,82.7 402.0,82.5 402.6,82.3 403.2,82.2 403.8,82.3 404.4,82.5 405.0,63.6 405.6,64.1 406.2,64.6 406.8,65.3 407.4,66.2 408.0,67.1 408.6,68.1 409.2,69.2 409.8,70.4 410.4,71.7 411.0,72.9 411.6,74.2 412.2,75.5 412.8,76.8 413.4,78.3 414.0,80.0 414.6,82.0 415.2,83.7 415.8,83.8 416.4,80.9 417.0,74.4 417.6,64.5 418.2,51.9 418.8,38.9 419.4,29.0 420.0,25.8 420.6,30.9 421.2,42.9 421.8,58.5 422.4,73.9 423.0,86.5 423.6,95.4 424.2,100.5 424.8,102.6 425.4,102.3 426.0,100.8 426.6,98.9 427.2,97.4 427.8,96.5 428.4,96.0 429.0,96.0 429.6,96.2 430.2,96.6 430.8,96.9 431.4,97.3 432.0,97.7 432.6,98.1 433.2,98.4 433.8,98.8 434.4,99.2 435.0,80.4 435.6,80.8 436.2,81.2 436.8,81.5 437.4,81.9 438.0,82.3 438.6,82.7 439.2,83.1 439.8,83.5 440.4,83.8 441.0,84.2 441.6,84.6 442.2,85.0 442.8,85.3 443.4,85.7 444.0,86.0 444.6,86.4 445.2,86.7 445.8,87.0 446.4,87.3 447.0,87.6 447.6,87.9 448.2,88.1 448.8,88.3 449.4,88.5 450.0,88.6 450.6,88.7 451.2,88.7 451.8,88.7 452.4,88.6 453.0,88.5 453.6,88.3 454.2,88.0 454.8,87.7 455.4,87.3 456.0,86.9 456.6,86.5 457.2,86.0 457.8,85.5 458.4,85.0 459.0,84.4 459.6,83.9 460.2,83.5 460.8,83.1 461.4,82.7 462.0,82.5 462.6,82.3 463.2,82.2 463.8,82.3 464.4,82.5 465.0,63.6 465.6,64.1 466.2,64.6 466.8,65.3 467.4,66.2 468.0,67.1 468.6,68.1 469.2,69.2 469.8,70.4 470.4,71.7 471.0,72.9 471.6,74.2 472.2,75.5 472.8,76.8 473.4,78.3 474.0,80.0 474.6,82.0 475.2,83.7 475.8,83.8 476.4,80.9 477.0,74.4 477.6,64.5 478.2,51.9 478.8,38.9 479.4,29.0 480.0,25.8 480.6,30.9 481.2,42.9 481.8,58.5 482.4,73.9 483.0,86.5 483.6,95.4 484.2,100.5 484.8,102.6 485.4,102.3 486.0,100.8 486.6,98.9 487.2,97.4 487.8,96.5 488.4,96.0 489.0,96.0 489.6,96.2 490.2,96.6 490.8,96.9 491.4,97.3 492.0,97.7 492.6,98.1 493.2,98.4 493.8,98.8 494.4,99.2 495.0,80.4 495.6,80.8 496.2,81.2 496.8,81.5 497.4,81.9 498.0,82.3 498.6,82.7 499.2,83.1 499.8,83.5 500.4,83.8 501.0,84.2 501.6,84.6 502.2,85.0 502.8,85.3 503.4,85.7 504.0,86.0 504.6,86.4 505.2,86.7 505.8,87.0 506.4,87.3 507.0,87.6 507.6,87.9 508.2,88.1 508.8,88.3 509.4,88.5 510.0,88.6 510.6,88.7 511.2,88.7 511.8,88.7 512.4,88.6 513.0,88.5 513.6,88.3 514.2,88.0 514.8,87.7 515.4,87.3 516.0,86.9 516.6,86.5 517.2,86.0 517.8,85.5 518.4,85.0 519.0,84.4 519.6,83.9 520.2,83.5 520.8,83.1 521.4,82.7 522.0,82.5 522.6,82.3 523.2,82.2 523.8,82.3 524.4,82.5 525.0,63.6 525.6,64.1 526.2,64.6 526.8,65.3 527.4,66.2 528.0,67.1 528.6,68.1 529.2,69.2 529.8,70.4 530.4,71.7 531.0,72.9 531.6,74.2 532.2,75.5 532.8,76.8 533.4,78.3 534.0,80.0 534.6,82.0 535.2,83.7 535.8,83.8 536.4,80.9 537.0,74.4 537.6,64.5 538.2,51.9 538.8,38.9 539.4,29.0 540.0,25.8 540.6,30.9 541.2,42.9 541.8,58.5 542.4,73.9 543.0,86.5 543.6,95.4 544.2,100.5 544.8,102.6 545.4,102.3 546.0,100.8 546.6,98.9 547.2,97.4 547.8,96.5 548.4,96.0 549.0,96.0 549.6,96.2 550.2,96.6 550.8,96.9 551.4,97.3 552.0,97.7 552.6,98.1 553.2,98.4 553.8,98.8 554.4,99.2 555.0,80.4 555.6,80.8 556.2,81.2 556.8,81.5 557.4,81.9 558.0,82.3 558.6,82.7 559.2,83.1 559.8,83.5 560.4,83.8 561.0,84.2 561.6,84.6 562.2,85.0 562.8,85.3 563.4,85.7 564.0,86.0 564.6,86.4 565.2,86.7 565.8,87.0 566.4,87.3 567.0,87.6 567.6,87.9 568.2,88.1 568.8,88.3 569.4,88.5 570.0,88.6 570.6,88.7 571.2,88.7 571.8,88.7 572.4,88.6 573.0,88.5 573.6,88.3 574.2,88.0 574.8,87.7 575.4,87.3 576.0,86.9 576.6,86.5 577.2,86.0 577.8,85.5 578.4,85.0 579.0,84.4 579.6,83.9 580.2,83.5 580.8,83.1 581.4,82.7 582.0,82.5 582.6,82.3 583.2,82.2 583.8,82.3 584.4,82.5 585.0,63.6 585.6,64.1 586.2,64.6 586.8,65.3 587.4,66.2 588.0,67.1 588.6,68.1 589.2,69.2 589.8,70.4 590.4,71.7 591.0,72.9 591.6,74.2 592.2,75.5 592.8,76.8 593.4,78.3 594.0,80.0 594.6,82.0 595.2,83.7 595.8,83.8 596.4,80.9 597.0,74.4 597.6,64.5 598.2,51.9 598.8,38.9 599.4,29.0 600.0,25.8 600.6,30.9 601.2,42.9 601.8,58.5 602.4,73.9 603.0,86.5 603.6,95.4 604.2,100.5 604.8,102.6 605.4,102.3 606.0,100.8 606.6,98.9 607.2,97.4 607.8,96.5 608.4,96.0 609.0,96.0 609.6,96.2 610.2,96.6 610.8,96.9 611.4,97.3 612.0,97.7 612.6,98.1 613.2,98.4 613.8,98.8 614.4,99.2 615.0,80.4 615.6,80.8 616.2,81.2 616.8,81.5 617.4,81.9 618.0,82.3 618.6,82.7 619.2,83.1 619.8,83.5 620.4,83.8 621.0,84.2 621.6,84.6 622.2,85.0 622.8,85.3 623.4,85.7 624.0,86.0 624.6,86.4 625.2,86.7 625.8,87.0 626.4,87.3 627.0,87.6 627.6,87.9 628.2,88.1 628.8,88.3 629.4,88.5 630.0,88.6 630.6,88.7 631.2,88.7 631.8,88.7 632.4,88.6 633.0,88.5 633.6,88.3 634.2,88.0 634.8,87.7 635.4,87.3 636.0,86.9 636.6,86.5 637.2,86.0 637.8,85.5 638.4,85.0 639.0,84.4 639.6,83.9 640.2,83.5 640.8,83.1 641.4,82.7 642.0,82.5 642.6,82.3 643.2,82.2 643.8,82.3 644.4,82.5 645.0,63.6 645.6,64.1 646.2,64.6 646.8,65.3 647.4,66.2 648.0,67.1 648.6,68.1 649.2,69.2 649.8,70.4 650.4,71.7 651.0,72.9 651.6,74.2 652.2,75.5 652.8,76.8 653.4,78.3 654.0,80.0 654.6,82.0 655.2,83.7 655.8,83.8 656.4,80.9 657.0,74.4 657.6,64.5 658.2,51.9 658.8,38.9 659.4,29.0 660.0,25.8 660.6,30.9 661.2,42.9 661.8,58.5 662.4,73.9 663.0,86.5 663.6,95.4 664.2,100.5 664.8,102.6 665.4,102.3 666.0,100.8 666.6,98.9 667.2,97.4 667.8,96.5 668.4,96.0 669.0,96.0 669.6,96.2 670.2,96.6 670.8,96.9 671.4,97.3 672.0,97.7 672.6,98.1 673.2,98.4 673.8,98.8 674.4,99.2 675.0,80.4 675.6,80.8 676.2,81.2 676.8,81.5 677.4,81.9 678.0,82.3 678.6,82.7 679.2,83.1 679.8,83.5 680.4,83.8 681.0,84.2 681.6,84.6 682.2,85.0 682.8,85.3 683.4,85.7 684.0,86.0 684.6,86.4 685.2,86.7 685.8,87.0 686.4,87.3 687.0,87.6 687.6,87.9 688.2,88.1 688.8,88.3 689.4,88.5 690.0,88.6 690.6,88.7 691.2,88.7 691.8,88.7 692.4,88.6 693.0,88.5 693.6,88.3 694.2,88.0 694.8,87.7 695.4,87.3 696.0,86.9 696.6,86.5 697.2,86.0 697.8,85.5 698.4,85.0 699.0,84.4 699.6,83.9 700.2,83.5 700.8,83.1 701.4,82.7 702.0,82.5 702.6,82.3 703.2,82.2 703.8,82.3 704.4,82.5 705.0,63.6 705.6,64.1 706.2,64.6 706.8,65.3 707.4,66.2 708.0,67.1 708.6,68.1 709.2,69.2 709.8,70.4 710.4,71.7 711.0,72.9 711.6,74.2 712.2,75.5 712.8,76.8 713.4,78.3 714.0,80.0 714.6,82.0 715.2,83.7 715.8,83.8 716.4,80.9 717.0,74.4 717.6,64.5 718.2,51.9 718.8,38.9 719.4,29.0 720.0,25.8 720.6,30.9 721.2,42.9 721.8,58.5 722.4,73.9 723.0,86.5 723.6,95.4 724.2,100.5 724.8,102.6 725.4,102.3 726.0,100.8 726.6,98.9 727.2,97.4 727.8,96.5 728.4,96.0 729.0,96.0 729.6,96.2 730.2,96.6 730.8,96.9 731.4,97.3 732.0,97.7 732.6,98.1 733.2,98.4 733.8,98.8 734.4,99.2 735.0,80.4 735.6,80.8 736.2,81.2 736.8,81.5 737.4,81.9 738.0,82.3 738.6,82.7 739.2,83.1 739.8,83.5 740.4,83.8 741.0,84.2 741.6,84.6 742.2,85.0 742.8,85.3 743.4,85.7 744.0,86.0 744.6,86.4 745.2,86.7 745.8,87.0 746.4,87.3 747.0,87.6 747.6,87.9 748.2,88.1 748.8,88.3 749.4,88.5 750.0,88.6 750.6,88.7 751.2,88.7 751.8,88.7 752.4,88.6 753.0,88.5 753.6,88.3 754.2,88.0 754.8,87.7 755.4,87.3 756.0,86.9 756.6,86.5 757.2,86.0 757.8,85.5 758.4,85.0 759.0,84.4 759.6,83.9 760.2,83.5 760.8,83.1 761.4,82.7 762.0,82.5 762.6,82.3 763.2,82.2 763.8,82.3 764.4,82.5 765.0,63.6 765.6,64.1 766.2,64.6 766.8,65.3 767.4,66.2 768.0,67.1 768.6,68.1 769.2,69.2 769.8,70.4 770.4,71.7 771.0,72.9 771.6,74.2 772.2,75.5 772.8,76.8 773.4,78.3 774.0,80.0 774.6,82.0 775.2,83.7 775.8,83.8 776.4,80.9 777.0,74.4 777.6,64.5 778.2,51.9 778.8,38.9 779.4,29.0 780.0,25.8 780.6,30.9 781.2,42.9 781.8,58.5 782.4,73.9 783.0,86.5 783.6,95.4 784.2,100.5 784.8,102.6 785.4,102.3 786.0,100.8 786.6,98.9 787.2,97.4 787.8,96.5 788.4,96.0 789.0,96.0 789.6,96.2 790.2,96.6 790.8,96.9 791.4,97.3 792.0,97.7 792.6,98.1 793.2,98.4 793.8,98.8 794.4,99.2 795.0,80.4 795.6,80.8 796.2,81.2 796.8,81.5 797.4,81.9 798.0,82.3 798.6,82.7 799.2,83.1 799.8,83.5 800.4,83.8 801.0,84.2 801.6,84.6 802.2,85.0 802.8,85.3 803.4,85.7 804.0,86.0 804.6,86.4 805.2,86.7 805.8,87.0 806.4,87.3 807.0,87.6 807.6,87.9 808.2,88.1 808.8,88.3 809.4,88.5 810.0,88.6 810.6,88.7 811.2,88.7 811.8,88.7 812.4,88.6 813.0,88.5 813.6,88.3 814.2,88.0 814.8,87.7 815.4,87.3 816.0,86.9 816.6,86.5 817.2,86.0 817.8,85.5 818.4,85.0 819.0,84.4 819.6,83.9 820.2,83.5 820.8,83.1 821.4,82.7 822.0,82.5 822.6,82.3 823.2,82.2 823.8,82.3 824.4,82.5 825.0,63.6 825.6,64.1 826.2,64.6 826.8,65.3 827.4,66.2 828.0,67.1 828.6,68.1 829.2,69.2 829.8,70.4 830.4,71.7 831.0,72.9 831.6,74.2 832.2,75.5 832.8,76.8 833.4,78.3 834.0,80.0 834.6,82.0 835.2,83.7 835.8,83.8 836.4,80.9 837.0,74.4 837.6,64.5 838.2,51.9 838.8,38.9 839.4,29.0 840.0,25.8 840.6,30.9 841.2,42.9 841.8,58.5 842.4,73.9 843.0,86.5 843.6,95.4 844.2,100.5 844.8,102.6 845.4,102.3 846.0,100.8 846.6,98.9 847.2,97.4 847.8,96.5 848.4,96.0 849.0,96.0 849.6,96.2 850.2,96.6 850.8,96.9 851.4,97.3 852.0,97.7 852.6,98.1 853.2,98.4 853.8,98.8 854.4,99.2 855.0,80.4 855.6,80.8 856.2,81.2 856.8,81.5 857.4,81.9 858.0,82.3 858.6,82.7 859.2,83.1 859.8,83.5 860.4,83.8 861.0,84.2 861.6,84.6 862.2,85.0 862.8,85.3 863.4,85.7 864.0,86.0 864.6,86.4 865.2,86.7 865.8,87.0 866.4,87.3 867.0,87.6 867.6,87.9 868.2,88.1 868.8,88.3 869.4,88.5 870.0,88.6 870.6,88.7 871.2,88.7 871.8,88.7 872.4,88.6 873.0,88.5 873.6,88.3 874.2,88.0 874.8,87.7 875.4,87.3 876.0,86.9 876.6,86.5 877.2,86.0 877.8,85.5 878.4,85.0 879.0,84.4 879.6,83.9 880.2,83.5 880.8,83.1 881.4,82.7 882.0,82.5 882.6,82.3 883.2,82.2 883.8,82.3 884.4,82.5 885.0,63.6 885.6,64.1 886.2,64.6 886.8,65.3 887.4,66.2 888.0,67.1 888.6,68.1 889.2,69.2 889.8,70.4 890.4,71.7 891.0,72.9 891.6,74.2 892.2,75.5 892.8,76.8 893.4,78.0 894.0,79.3 894.6,80.4 895.2,81.6 895.8,82.6 896.4,83.7 897.0,84.6 897.6,85.5 898.2,86.4 898.8,87.2 899.4,87.9 900.0,88.6\"/><text class=\"cap\" x=\"4\" y=\"193\">flutter · 150 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0203",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Two Days of a Tight, Swollen Belly and No Flatus in an 81-Year-Old Nursing Home Resident With Parkinson Disease",
+  "type": "Two Days of a Tight, Swollen Belly and No Flatus in an 81-Year-Old Nursing Home Resident With Parkinson Disease",
+  "difficulty": 4,
+  "created": "2026-10-13",
+  "vignette": "An 81-year-old man is brought to the emergency department from his nursing home because of progressive abdominal distention, crampy abdominal pain and no passage of stool or flatus for 2 days. He vomited once this morning. He has Parkinson disease and long-standing constipation treated with senna. Medications also include carbidopa-levodopa. He had an episode of abdominal distention 1 year ago that resolved on its own after a soapsuds enema. His vital signs are shown. He appears uncomfortable but is alert. The abdomen is markedly distended and tympanic, with mild diffuse tenderness; there is no guarding or rebound tenderness. Bowel sounds are high-pitched. Rectal examination shows an empty rectum without blood. Supine and upright abdominal x-rays show a massively dilated, inverted U-shaped loop of colon without haustra that arises from the left lower quadrant and extends toward the right upper quadrant; the cecum and ascending colon are not dilated. There is no free intraperitoneal air. Laboratory results are shown. Intravenous fluids are started and a nasogastric tube is placed.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Emergency sigmoid resection with end colostomy",
+   "Flexible sigmoidoscopic detorsion with a rectal tube",
+   "Intravenous neostigmine with cardiac monitoring",
+   "Emergency right hemicolectomy with ileocolic anastomosis",
+   "Serial abdominal examinations with repeat x-rays in 12 hours"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계 추론. ① 좌하복부에서 일어나 우상복부로 뻗는 팽대 주름 없는 거꾸로 된 U자 고리 + 맹장 비확장 → S상결장 염전. ② 근육 강직·반발통 없음, 백혈구·젖산 정상, 유리 공기 없음 → 괴사·천공 근거 없음. ③ 그러면 굴곡 S상결장경으로 꼬임을 풀고 점막을 확인한 뒤 직장관을 둔다 — 재발이 흔하므로(1년 전 일화) 같은 입원 중 계획 절제로 이어간다.\n- 오답감별:\n  - (A) 결국 절제가 필요하다는 생각에 끌리지만, 응급 절제·결장루는 복막염·천공·괴사 점막·내시경 실패 때다. 지금은 그런 근거가 없어 감압 뒤 준비된 수술을 한다.\n  - (C) 파킨슨병·요양원 고령은 결장 가성폐색을 떠올리게 하지만, 그 x선은 맹장·우측 결장 위주의 미만 확장이다. 꼬인 고리의 기계적 폐색에는 네오스티그민을 쓰지 않는다.\n  - (D) 맹장 염전의 수술이다. 확장 고리가 좌하복부에서 일어나고 맹장은 확장되지 않았다.\n  - (E) 꼬임이 계속되면 허혈·괴사로 진행하므로 감압 없이 지켜보는 것은 늦다.\n- 임상핵심: 괴사 근거 없는 S상결장 염전 → 내시경 꼬임 풀기 + 직장관 → 같은 입원 중 계획 절제. 복막염·유리 공기·괴사 점막이면 응급 절제.\n- 출처: ASCRS Colonic Volvulus and Acute Colonic Pseudo-Obstruction Guideline 2021; Sabiston 21e(Volvulus).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 좌하복부에서 일어나 우상복부로 뻗는 팽대 주름 없는 거꾸로 된 U자 고리 + 맹장 비확장 → S상결장 염전. ② 근육 강직·반발통 없음, 백혈구·젖산 정상, 유리 공기 없음 → 괴사·천공 근거 없음. ③ 그러면 굴곡 S상결장경으로 꼬임을 풀고 점막을 확인한 뒤 직장관을 둔다 — 재발이 흔하므로(1년 전 일화) 같은 입원 중 계획 절제로 이어간다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 결국 절제가 필요하다는 생각에 끌리지만, 응급 절제·결장루는 복막염·천공·괴사 점막·내시경 실패 때다. 지금은 그런 근거가 없어 감압 뒤 준비된 수술을 한다.\n(C) 파킨슨병·요양원 고령은 결장 가성폐색을 떠올리게 하지만, 그 x선은 맹장·우측 결장 위주의 미만 확장이다. 꼬인 고리의 기계적 폐색에는 네오스티그민을 쓰지 않는다.\n(D) 맹장 염전의 수술이다. 확장 고리가 좌하복부에서 일어나고 맹장은 확장되지 않았다.\n(E) 꼬임이 계속되면 허혈·괴사로 진행하므로 감압 없이 지켜보는 것은 늦다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "괴사 근거 없는 S상결장 염전 → 내시경 꼬임 풀기 + 직장관 → 같은 입원 중 계획 절제. 복막염·유리 공기·괴사 점막이면 응급 절제."
+   },
+   {
+    "k": "출처",
+    "v": "ASCRS Colonic Volvulus and Acute Colonic Pseudo-Obstruction Guideline 2021; Sabiston 21e(Volvulus)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (ASCRS Clinical Practice Guidelines for the Management of Colonic Volvulus and Acute Colonic Pseudo-Obstruction, 2021; Sabiston Textbook of Surgery 21e — Colon and rectum: volvulus)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "134/78 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "96 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "37.3 °C (99.1 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "9,600 /mm3",
+    "ref": "4,500–11,000 /mm3"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "12.8 g/dL",
+    "ref": "13.5–17.5 g/dL"
+   },
+   {
+    "name": "Sodium",
+    "value": "138 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Potassium",
+    "value": "3.6 mEq/L",
+    "ref": "3.5–5.0 mEq/L"
+   },
+   {
+    "name": "Creatinine",
+    "value": "1.1 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Lactate",
+    "value": "1.3 mmol/L",
+    "ref": "0.5–2.2 mmol/L"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "고령 환자의 대장 확장 — x선 모양과 첫 처치\n─────────────────────────────────────────────\nS상결장 염전 : 좌하복부에서 일어나는 거꾸로 된 U자(커피콩) 고리\n  ├ 괴사·천공 근거 없음 → 굴곡 S상결장경 꼬임 풀기 + 직장관 → 같은 입원 중 계획 절제\n  └ 복막염·유리 공기·괴사 점막 → 응급 S상결장 절제(말단 결장루)\n맹장 염전   : 우하복부에서 좌상복부로 향하는 확장 고리 → 수술(우측 결장 절제), 내시경 감압은 권하지 않음\n결장 가성폐색 : 맹장·우측 결장 위주 미만 확장, 기계적 폐색 없음 → 보존 치료 → 네오스티그민 → 내시경 감압\n─────────────────────────────────────────────\n",
+   "참고문헌": [
+    "Alavi K et al. The American Society of Colon and Rectal Surgeons Clinical Practice Guidelines for the Management of Colonic Volvulus and Acute Colonic Pseudo-Obstruction. Dis Colon Rectum. 2021;64(9):1046-1057.",
+    "Townsend CM et al. Sabiston Textbook of Surgery. 21st ed. — Colon and rectum: volvulus"
+   ]
+  },
+  "design": {
+   "target": "다음 처치",
+   "decision": "x선에서 좌하복부에서 일어나는 커피콩 모양 고리로 S상결장 염전이고, 복막염·젖산 상승·유리 공기가 없어 괴사 근거가 없으면 응급 절제가 아니라 내시경 감압·꼬임 풀기(+직장관)가 먼저다.",
+   "rival": [
+    "A",
+    "C"
+   ],
+   "discriminator": "응급 절제(A)는 복막염·유리 공기·젖산 상승이나 내시경에서 검거나 괴사한 점막이 보일 때다 — 이 환자는 그런 근거가 없다. 네오스티그민(C)은 기계적 폐색 없는 결장 가성폐색(맹장·우측 결장 위주의 미만 확장)용인데, 이 x선은 S상결장의 꼬인 고리이고 맹장이 확장되지 않았다.",
+   "steps": 3,
+   "chain": [
+    "복부 팽만 + 배변·방귀 없음 + 좌하복부에서 우상복부로 뻗는 거꾸로 된 U자 고리, 맹장 비확장 → S상결장 염전(가성폐색·맹장 염전 가능성 낮음)",
+    "복막 자극 징후 없음 + 백혈구·젖산 정상 + 유리 공기 없음 → 괴사·천공 근거 없음",
+    "괴사 없는 S상결장 염전 → 굴곡 S상결장경으로 꼬임 풀기 + 직장관(이후 같은 입원 중 계획 절제)"
+   ],
+   "key": [
+    {
+     "item": "a massively dilated, inverted U-shaped loop of colon without haustra that arises from the left lower quadrant and extends toward the right upper quadrant",
+     "why": "S상결장 염전의 커피콩 징후",
+     "also": []
+    },
+    {
+     "item": "He had an episode of abdominal distention 1 year ago that resolved on its own after a soapsuds enema",
+     "why": "재발성 염전 — 감압 뒤 계획 절제가 필요한 이유",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "the cecum and ascending colon are not dilated",
+     "why": "맹장 염전(D)·결장 가성폐색(C)의 우측 결장 위주 확장 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "there is no guarding or rebound tenderness",
+     "why": "복막염 없음 — 응급 절제(A)가 아니라 내시경 감압을 먼저 할 수 있다",
+     "also": []
+    },
+    {
+     "item": "There is no free intraperitoneal air",
+     "why": "천공 근거 없음 — 내시경 금기가 아니다",
+     "also": []
+    },
+    {
+     "item": "Lactate",
+     "why": "정상 — 장 허혈·괴사의 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "He has Parkinson disease and long-standing constipation",
+     "why": "S상결장 염전과 결장 가성폐색 둘 다의 위험 인자 — x선이 둘을 가른다",
+     "also": []
+    },
+    {
+     "item": "Hemoglobin",
+     "why": "경도 저하 — 고령의 만성 소견으로 처치 선택을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "x선의 좌하복부에서 일어나는 커피콩 모양 고리와 비확장 맹장은 S상결장 염전이다. 복막염·유리 공기·젖산 상승이 없어 괴사 근거가 없으므로 굴곡 S상결장경으로 꼬임을 풀고 직장관을 남기는 것이 다음 처치이며, 재발이 흔해 이후 계획 절제를 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "반발통·근육 강직이 있거나 유리 공기·젖산 상승이 있거나, 내시경에서 점막이 검게 괴사해 있으면 내시경 꼬임 풀기를 하지 않고 응급 S상결장 절제·말단 결장루를 한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.gs.sigmoid-volvulus.endoscopic-detorsion",
+  "distractors": {
+   "A": {
+    "tempting": "염전은 결국 S상결장 절제가 필요하고 재발 병력도 있어 바로 수술하는 것이 확실해 보인다.",
+    "answer_first": "괴사·천공 근거가 없는 S상결장 염전은 내시경으로 먼저 꼬임을 풀어 장을 감압하고 수액·전해질을 교정한 뒤 같은 입원 중에 준비된 절제(가능하면 일차 문합)를 한다. 응급 절제·결장루는 괴사·천공·내시경 실패 때다.",
+    "discriminator": "「there is no guarding or rebound tenderness」 · 「There is no free intraperitoneal air」 · 젖산 1.3.",
+    "when_right": "복막염·유리 공기·젖산 상승이 있거나 내시경에서 괴사한 점막이 보이거나 내시경으로 꼬임이 풀리지 않을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "요양원의 고령 파킨슨병 환자는 결장 가성폐색(Ogilvie 증후군)의 전형적인 환자군이고, 네오스티그민이 그 치료다.",
+    "answer_first": "가성폐색은 기계적 폐색 없이 맹장·우측 결장 위주로 미만하게 늘어난다. 이 x선은 좌하복부에서 일어나는 하나의 꼬인 고리이고 맹장은 확장되지 않았다 — 기계적 폐색에 네오스티그민은 쓰지 않는다.",
+    "discriminator": "「the cecum and ascending colon are not dilated」 · 거꾸로 된 U자 고리.",
+    "when_right": "x선에서 맹장·우측 결장이 미만하게 늘어나고(맹장 지름 >12 cm 위험) 기계적 폐색이 배제되었으며 보존 치료에 반응하지 않을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0204",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Fever, a Tender Uterus and Foul-Smelling Lochia on the Second Day After a Cesarean Delivery Following a Long Labor",
+  "type": "Fever, a Tender Uterus and Foul-Smelling Lochia on the Second Day After a Cesarean Delivery Following a Long Labor",
+  "difficulty": 4,
+  "created": "2026-10-13",
+  "vignette": "A 27-year-old woman, gravida 1, para 1, develops a fever on the second day after a cesarean delivery. She labored for 22 hours with membranes ruptured for 19 hours and had multiple vaginal examinations and an intrauterine pressure catheter before cesarean delivery was performed for arrest of dilation. She received intravenous cefazolin and azithromycin before the skin incision. She now has lower abdominal pain and chills. She is breastfeeding and has no known drug allergies. Her vital signs are shown. The breasts are soft and nontender without erythema. The lungs are clear to auscultation. The uterine fundus is at the umbilicus and is tender to palpation. The lochia is foul-smelling. The Pfannenstiel incision is clean and dry without erythema, induration or drainage. There is no costovertebral angle tenderness. The calves are nontender and of equal size. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Oral amoxicillin and clavulanate",
+   "Intravenous cefazolin and azithromycin",
+   "Oral nitrofurantoin",
+   "Oral dicloxacillin",
+   "Intravenous clindamycin and gentamicin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 제왕절개 2일째 발열 + 자궁저부 압통 + 악취 오로 → 산후 자궁내막염. ② 유방·절개창·소변검사·늑골척추각·종아리가 정상 → 다른 산후 발열 원인의 가능성 낮음. ③ 긴 진통·파수·내진 뒤 제왕절개의 자궁내막염은 혐기균 포함 다균 감염 → 정맥 clindamycin + gentamicin(크레아티닌 정상, 수유 중 사용 가능), 열이 내리고 24–48시간 증상이 없을 때까지.\n- 오답감별:\n  - (A) 경구 amoxicillin-clavulanate 는 혐기균을 덮지만, 제왕절개 뒤 고열·빈맥의 입원 중 자궁내막염은 정맥 치료가 표준이다.\n  - (B) 절개 전 예방 요법이다 — 이미 맞았는데 감염이 생겼고, 혐기균을 충분히 덮지 못한다.\n  - (C) 방광염 약이다. 소변 백혈구 에스테라아제·아질산염이 음성이고 늑골척추각 압통이 없다.\n  - (D) 포도알균 유방염 약이다. 유방이 부드럽고 압통·발적이 없으며, 유방염은 대개 2–3주째에 온다.\n- 임상핵심: 진통 중 제왕절개 뒤 발열 + 자궁 압통 + 악취 오로 = 자궁내막염 → 정맥 clindamycin + gentamicin.\n- 출처: Williams Obstetrics 26e(Puerperal infection); Cochrane 2015(Antibiotic regimens for postpartum endometritis).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 제왕절개 2일째 발열 + 자궁저부 압통 + 악취 오로 → 산후 자궁내막염. ② 유방·절개창·소변검사·늑골척추각·종아리가 정상 → 다른 산후 발열 원인의 가능성 낮음. ③ 긴 진통·파수·내진 뒤 제왕절개의 자궁내막염은 혐기균 포함 다균 감염 → 정맥 clindamycin + gentamicin(크레아티닌 정상, 수유 중 사용 가능), 열이 내리고 24–48시간 증상이 없을 때까지."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 경구 amoxicillin-clavulanate 는 혐기균을 덮지만, 제왕절개 뒤 고열·빈맥의 입원 중 자궁내막염은 정맥 치료가 표준이다.\n(B) 절개 전 예방 요법이다 — 이미 맞았는데 감염이 생겼고, 혐기균을 충분히 덮지 못한다.\n(C) 방광염 약이다. 소변 백혈구 에스테라아제·아질산염이 음성이고 늑골척추각 압통이 없다.\n(D) 포도알균 유방염 약이다. 유방이 부드럽고 압통·발적이 없으며, 유방염은 대개 2–3주째에 온다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "진통 중 제왕절개 뒤 발열 + 자궁 압통 + 악취 오로 = 자궁내막염 → 정맥 clindamycin + gentamicin."
+   },
+   {
+    "k": "출처",
+    "v": "Williams Obstetrics 26e(Puerperal infection); Cochrane 2015(Antibiotic regimens for postpartum endometritis)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Williams Obstetrics 26e — Puerperal infection: uterine infection; Mackeen AD et al. Antibiotic regimens for postpartum endometritis. Cochrane Database Syst Rev. 2015)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "116/70 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "108 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "38.9 °C (102.0 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "17,600 /mm3",
+    "ref": "4,500–11,000 /mm3"
+   },
+   {
+    "name": "Hemoglobin",
+    "value": "10.4 g/dL",
+    "ref": "12.0–16.0 g/dL"
+   },
+   {
+    "name": "Serum creatinine",
+    "value": "0.7 mg/dL",
+    "ref": "0.6–1.2 mg/dL"
+   },
+   {
+    "name": "Urinalysis — leukocyte esterase",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urinalysis — nitrite",
+    "value": "Negative",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "산후 발열 — 부위와 첫 항생제\n─────────────────────────────────────────────\n자궁내막염(1–3일, 자궁 압통·악취 오로)   → 정맥 clindamycin + gentamicin(열 내린 뒤 24–48시간까지)\n  └ 48–72시간에도 열이 지속 → ampicillin 추가·농양·혈전정맥염 영상 확인\n창상 감염(4–7일, 절개창 발적·배액)       → 배농 ± 포도알균 항생제\n요로 감염(소변 이상·늑골척추각 압통)     → 소변 배양에 맞춘 항생제\n유방염(2–3주, 한쪽 유방 발적·압통)       → dicloxacillin·cephalexin, 수유 지속\n─────────────────────────────────────────────\n",
+   "참고문헌": [
+    "Cunningham FG et al. Williams Obstetrics. 26th ed. — Puerperal infection: uterine infection",
+    "Mackeen AD, Packard RE, Ota E, Speer L. Antibiotic regimens for postpartum endometritis. Cochrane Database Syst Rev. 2015;(2):CD001067."
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "진통 중 제왕절개 뒤 발열·자궁저부 압통·악취 오로면 자궁내막염이고, 혐기균을 포함한 다균 감염이라 경구약·예방 요법이 아니라 정맥 clindamycin + gentamicin 이다.",
+   "rival": [
+    "B",
+    "A"
+   ],
+   "discriminator": "cefazolin + azithromycin(B)은 절개 전 예방 요법이고 이미 맞았는데도 감염이 생겼다 — 혐기균(Bacteroides 등)을 충분히 덮지 못한다. 경구 amoxicillin-clavulanate(A)는 퇴원 뒤 경증에서 고려할 수는 있지만, 제왕절개 뒤 38.9 °C·빈맥의 자궁내막염은 정맥 치료가 표준이다.",
+   "steps": 3,
+   "chain": [
+    "제왕절개 2일째 발열 + 자궁저부 압통 + 악취 오로 → 산후 자궁내막염",
+    "유방·절개창·소변검사·늑골척추각·종아리 정상 → 유방염·창상 감염·요로 감염·혈전 가능성 낮음",
+    "긴 진통·파수 뒤 제왕절개 + 고열·빈맥 → 혐기균 포함 다균 감염 → 정맥 clindamycin + gentamicin(크레아티닌 정상, 수유 가능)"
+   ],
+   "key": [
+    {
+     "item": "The uterine fundus is at the umbilicus and is tender to palpation",
+     "why": "자궁 압통 — 자궁내막염의 핵심 소견",
+     "also": []
+    },
+    {
+     "item": "The lochia is foul-smelling",
+     "why": "혐기균 감염을 시사",
+     "also": []
+    },
+    {
+     "item": "She labored for 22 hours with membranes ruptured for 19 hours and had multiple vaginal examinations and an intrauterine pressure catheter",
+     "why": "자궁내막염의 가장 큰 위험 인자들",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The breasts are soft and nontender without erythema",
+     "why": "유방염(D) 가능성을 낮춘다(시기도 2일째로 이르다)",
+     "also": []
+    },
+    {
+     "item": "The Pfannenstiel incision is clean and dry without erythema, induration or drainage",
+     "why": "창상 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Urinalysis — nitrite",
+     "why": "음성 — 방광염(C)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She received intravenous cefazolin and azithromycin before the skin incision",
+     "why": "예방 요법을 받고도 감염 — 같은 약(B)을 반복하는 것은 답이 아니다",
+     "also": []
+    },
+    {
+     "item": "Serum creatinine",
+     "why": "정상 — gentamicin 을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Leukocyte count",
+     "why": "산후에는 정상에서도 백혈구가 오를 수 있어 단독으로는 결정적이지 않다",
+     "also": []
+    }
+   ],
+   "summary": "진통 중 제왕절개 2일째 고열·빈맥에 자궁저부 압통과 악취 오로가 있고 다른 감염 부위 소견은 정상이다 — 자궁내막염이다. 혐기균을 포함한 다균 감염이라 정맥 clindamycin + gentamicin 을 쓰며, 이미 맞은 예방 요법이나 경구약으로는 부족하다.",
+   "switch": {
+    "choice": "D",
+    "condition": "산후 2–3주에 한쪽 유방이 붉고 단단하며 아프고 열이 나면 유방염 — 포도알균을 덮는 dicloxacillin(또는 cephalexin)을 쓰며 수유를 계속한다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.obgyn.postpartum-endometritis.clindamycin-gentamicin",
+  "distractors": {
+   "B": {
+    "tempting": "수술 전에 쓴 항생제라 이 수술의 균을 덮는다고 생각하기 쉽다.",
+    "answer_first": "cefazolin + azithromycin 은 절개 전 예방 요법이고 그걸 맞고도 감염이 생겼다. 자궁내막염은 혐기균(Bacteroides 등)을 포함한 다균 감염이라 혐기균을 잘 덮는 clindamycin 과 그람음성균을 덮는 gentamicin 을 함께 쓴다.",
+    "discriminator": "「She received intravenous cefazolin and azithromycin before the skin incision」 · 악취 오로(혐기균).",
+    "when_right": "진통 중 제왕절개 직전의 감염 예방 — 치료가 아니라 예방일 때.",
+    "split": ""
+   },
+   "A": {
+    "tempting": "amoxicillin-clavulanate 는 혐기균까지 덮고, 수유 중에도 안전한 경구약이다.",
+    "answer_first": "제왕절개 뒤 고열·빈맥이 있는 입원 중 자궁내막염은 정맥 치료가 표준이다. 정맥 치료로 열이 내리고 24–48시간 증상이 없으면 경구 항생제로 이어 갈 필요도 대개 없다.",
+    "discriminator": "「Temperature: 38.9 °C」 · 「Pulse: 108 /min」 · 진통 중 제왕절개 직후 입원 중.",
+    "when_right": "질식 분만 뒤 퇴원한 산모의 경증 자궁내막염처럼 전신 증상이 가벼워 외래 치료가 가능할 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0205",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Children in the Living Room That No One Else Can See, Good and Bad Days of Confusion and a Shuffling Gait in a 74-Year-Old",
+  "type": "Children in the Living Room That No One Else Can See, Good and Bad Days of Confusion and a Shuffling Gait in a 74-Year-Old",
+  "difficulty": 4,
+  "created": "2026-10-13",
+  "vignette": "A 74-year-old man is brought to the physician by his wife because of worsening memory and confusion over the past 14 months. On some days he is alert and follows conversations; on others he stares into space for long periods and cannot follow a television program. Several times a week he sees small children and a dog in the living room who are not there; he describes them in detail and is not frightened by them. For about 6 years his wife has noticed that he shouts and punches in his sleep as if fighting someone. He has fallen twice in the past 3 months. He takes no medications. He drinks one glass of wine weekly. His vital signs are shown. He is oriented to person and place but not to date. He scores 19/30 on the Montreal Cognitive Assessment, with the greatest difficulty copying a cube, drawing a clock and keeping attention on serial subtractions; delayed recall is relatively preserved. His face is expressionless. There is mild cogwheel rigidity of both arms and slowness of finger tapping without tremor. His gait is slow and shuffling. MRI of the brain shows mild generalized atrophy without infarcts or disproportionate hippocampal loss. Laboratory results are shown. His wife asks whether a medication could help his thinking and the visions.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Haloperidol",
+   "Rivastigmine",
+   "Carbidopa-levodopa",
+   "Risperidone",
+   "Clonazepam"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계 추론. ① 인지·각성 변동 + 반복되는 구체적 환시 + 6년 전부터의 꿈 행동화(REM 수면 행동장애) + 떨림 없는 파킨슨증 → 루이소체 치매. ② 루이소체 치매는 D2 차단제에 심하게 과민하고, 도파민 약은 환시를 악화시킨다 → 항정신병약·levodopa 는 인지·환시 치료로 부적절. ③ 피질 콜린 결손이 심해 콜린에스테라아제 억제제(rivastigmine) 가 인지와 환시를 함께 개선한다.\n- 오답감별:\n  - (A) haloperidol 은 강한 D2 차단제라 루이소체 치매에서 심한 경직·의식 저하·신경이완제 악성 증후군 유사 반응을 일으킬 수 있다.\n  - (C) levodopa 는 파킨슨증을 겨냥하지만 환시·혼동을 악화시킬 수 있고, 지금 원하는 것은 인지·환시 조절이다.\n  - (D) 비정형 항정신병약도 D2 차단에 따른 과민 반응 위험이 있고, 괴롭지 않은 환시에는 필요하지 않다.\n  - (E) clonazepam 은 REM 수면 행동장애에 쓰이기도 하지만 인지·환시를 개선하지 못하고 낙상(이미 2회)·혼동을 늘린다.\n- 임상핵심: 변동 + 환시 + REM 수면 행동장애 + 파킨슨증 = 루이소체 치매 → 콜린에스테라아제 억제제 1차, D2 차단제는 피한다.\n- 출처: DLB Consortium 4th consensus report(Neurology 2017); Harrison's 21e(Dementia with Lewy bodies).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 인지·각성 변동 + 반복되는 구체적 환시 + 6년 전부터의 꿈 행동화(REM 수면 행동장애) + 떨림 없는 파킨슨증 → 루이소체 치매. ② 루이소체 치매는 D2 차단제에 심하게 과민하고, 도파민 약은 환시를 악화시킨다 → 항정신병약·levodopa 는 인지·환시 치료로 부적절. ③ 피질 콜린 결손이 심해 콜린에스테라아제 억제제(rivastigmine) 가 인지와 환시를 함께 개선한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) haloperidol 은 강한 D2 차단제라 루이소체 치매에서 심한 경직·의식 저하·신경이완제 악성 증후군 유사 반응을 일으킬 수 있다.\n(C) levodopa 는 파킨슨증을 겨냥하지만 환시·혼동을 악화시킬 수 있고, 지금 원하는 것은 인지·환시 조절이다.\n(D) 비정형 항정신병약도 D2 차단에 따른 과민 반응 위험이 있고, 괴롭지 않은 환시에는 필요하지 않다.\n(E) clonazepam 은 REM 수면 행동장애에 쓰이기도 하지만 인지·환시를 개선하지 못하고 낙상(이미 2회)·혼동을 늘린다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "변동 + 환시 + REM 수면 행동장애 + 파킨슨증 = 루이소체 치매 → 콜린에스테라아제 억제제 1차, D2 차단제는 피한다."
+   },
+   {
+    "k": "출처",
+    "v": "DLB Consortium 4th consensus report(Neurology 2017); Harrison's 21e(Dementia with Lewy bodies)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (McKeith IG et al. Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium. Neurology. 2017;89:88-100; Harrison's Principles of Internal Medicine 21e — Dementia: dementia with Lewy bodies)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "138/82 mm Hg (supine), 130/78 mm Hg (standing)"
+   },
+   {
+    "name": "Pulse",
+    "value": "72 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "14 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "36.7 °C (98.1 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Thyroid-stimulating hormone",
+    "value": "2.2 μU/mL",
+    "ref": "0.5–5.0 μU/mL"
+   },
+   {
+    "name": "Vitamin B12",
+    "value": "520 pg/mL",
+    "ref": "200–900 pg/mL"
+   },
+   {
+    "name": "Sodium",
+    "value": "139 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Calcium",
+    "value": "9.4 mg/dL",
+    "ref": "8.6–10.2 mg/dL"
+   },
+   {
+    "name": "Glucose",
+    "value": "98 mg/dL",
+    "ref": "70–100 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "루이소체 치매 — 진단 특징과 약\n─────────────────────────────────────────────\n핵심 특징: 인지·각성 변동 · 반복되는 구체적 환시 · REM 수면 행동장애 · 파킨슨증\n  (진행성 치매 + 핵심 2개 이상 = probable)\n인지·환시      → 콜린에스테라아제 억제제(rivastigmine·donepezil) 1차\n괴롭고 위험한 정신병 → 콜린에스테라아제 억제제 먼저, 그래도 필요하면 저용량 quetiapine·clozapine 신중히\nD2 차단제(haloperidol·risperidone) → 피한다(심한 신경이완제 과민 반응)\n운동 증상      → 저용량 levodopa 를 신중히(환시 악화 감시)\nREM 수면 행동장애 → 침실 안전 조치 · melatonin(clonazepam 은 낙상·혼동 위험)\n─────────────────────────────────────────────\n",
+   "참고문헌": [
+    "McKeith IG et al. Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium. Neurology. 2017;89(1):88-100.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. — Dementia: dementia with Lewy bodies"
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "변동하는 인지·환시·REM 수면 행동장애·파킨슨증이 함께 있으면 루이소체 치매이고, 인지와 환시를 함께 다루는 1차 약은 콜린에스테라아제 억제제다 — D2 차단제는 심한 과민 반응 위험으로 피한다.",
+   "rival": [
+    "D",
+    "C"
+   ],
+   "discriminator": "risperidone(D)은 환시를 겨냥하는 듯하지만 루이소체 치매의 신경이완제 과민성 때문에 심한 경직·의식 저하를 일으킬 수 있고, 환시는 괴롭지 않아 항정신병약이 필요한 상황도 아니다. carbidopa-levodopa(C)는 파킨슨증을 겨냥하지만 환시를 악화시키고, 보호자가 원하는 것은 인지·환시 조절이다.",
+   "steps": 3,
+   "chain": [
+    "날마다 달라지는 각성·주의 + 반복되는 구체적 환시 + 수년 전부터의 꿈 행동화 + 떨림 없는 파킨슨증 → 루이소체 치매",
+    "루이소체 치매의 신경이완제 과민성 + 도파민 약의 환시 악화 → D2 차단제·levodopa 는 인지·환시 치료로 부적절",
+    "피질 콜린 결손이 심함 → 콜린에스테라아제 억제제(rivastigmine)가 인지와 환시를 함께 개선"
+   ],
+   "key": [
+    {
+     "item": "On some days he is alert and follows conversations; on others he stares into space for long periods",
+     "why": "인지·각성의 변동 — 핵심 특징",
+     "also": []
+    },
+    {
+     "item": "Several times a week he sees small children and a dog in the living room who are not there",
+     "why": "반복되는 구체적 환시 — 핵심 특징",
+     "also": []
+    },
+    {
+     "item": "he shouts and punches in his sleep as if fighting someone",
+     "why": "REM 수면 행동장애 — 인지 저하보다 수년 앞서는 핵심 특징",
+     "also": []
+    },
+    {
+     "item": "There is mild cogwheel rigidity of both arms and slowness of finger tapping without tremor",
+     "why": "자발 파킨슨증 — 핵심 특징",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "delayed recall is relatively preserved",
+     "why": "기억 저장 장애가 먼저인 알츠하이머병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "MRI of the brain shows mild generalized atrophy without infarcts or disproportionate hippocampal loss",
+     "why": "혈관성 치매·알츠하이머병의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He takes no medications",
+     "why": "약물 유발 섬망·파킨슨증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Thyroid-stimulating hormone",
+     "why": "정상 — 갑상선 기능 저하에 의한 가역적 인지 저하 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "he describes them in detail and is not frightened by them",
+     "why": "괴롭지 않은 환시 — 항정신병약(A·D)을 쓸 이유가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "변동하는 인지, 괴롭지 않은 구체적 환시, 수년 앞선 꿈 행동화, 떨림 없는 파킨슨증이 모두 있어 루이소체 치매다. 신경이완제 과민성과 도파민 약의 환시 악화 때문에 D2 차단제·levodopa 대신, 인지와 환시를 함께 개선하는 콜린에스테라아제 억제제(rivastigmine)를 쓴다.",
+   "switch": {
+    "choice": "C",
+    "condition": "인지·환시가 아니라 넘어짐·서동 같은 운동 증상이 일상 기능을 크게 떨어뜨리는 것이 주된 문제라면 저용량 carbidopa-levodopa 를 조심스럽게 시도할 수 있다(환시 악화를 지켜보며)."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.psy.lewy-body-dementia.cholinesterase-inhibitor",
+  "distractors": {
+   "D": {
+    "tempting": "환시는 정신병 증상이고, 노인에게는 비정형 항정신병약이 덜 위험하다고 배웠다.",
+    "answer_first": "루이소체 치매는 D2 차단에 심하게 과민해, 비정형 약도 경직 악화·의식 저하·신경이완제 악성 증후군 유사 반응을 일으킬 수 있다. 게다가 이 환자의 환시는 괴롭지 않아 항정신병약이 필요한 상황이 아니고, 콜린에스테라아제 억제제가 환시도 줄인다.",
+    "discriminator": "「he describes them in detail and is not frightened by them」 · 파킨슨증·REM 수면 행동장애가 함께 있음.",
+    "when_right": "루이소체 치매가 아닌 환자에서 괴롭고 위험한 정신병 증상이 있을 때(노인 치매 환자의 사망 위험 경고를 감수하고 최저 용량으로).",
+    "split": ""
+   },
+   "C": {
+    "tempting": "경직·서동·끌리는 걸음은 파킨슨증이고, 파킨슨증에는 levodopa 를 쓴다.",
+    "answer_first": "levodopa 는 운동 증상만 겨냥하고 환시·혼동을 악화시킬 수 있다. 보호자가 묻는 것은 생각과 환시이고, 그 둘을 함께 개선하는 약은 콜린에스테라아제 억제제다.",
+    "discriminator": "환시가 이미 있음 · 「His wife asks whether a medication could help his thinking and the visions」.",
+    "when_right": "운동 증상이 주된 기능 장애일 때 저용량으로 조심스럽게(환시 악화를 감시하며).",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];
