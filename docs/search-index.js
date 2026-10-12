@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3576,
+  "total": 3582,
   "byType": {
    "kmle": 1376,
    "concept": 99,
    "anatomy": 838,
+   "paper": 757,
    "imaging": 309,
-   "paper": 751,
    "usmle": 186,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 838,
-   "Cardiology": 249,
+   "Cardiology": 250,
    "Nephrology": 198,
-   "Infectious Disease": 181,
+   "Infectious Disease": 182,
    "Pediatrics": 166,
    "Obstetrics & Gynecology": 120,
-   "Hematology-Oncology": 110,
-   "Pathology": 109,
+   "Hematology-Oncology": 111,
+   "Pathology": 110,
    "Psychiatry": 103,
    "Neurology": 102,
    "Rheumatology": 102,
@@ -33,11 +33,11 @@ window.MEDKOS_INDEX = {
    "Dermatology": 90,
    "Orthopedics": 90,
    "Gastroenterology": 89,
+   "Surgery": 89,
    "Ophthalmology": 88,
    "Pulmonology": 88,
-   "Surgery": 88,
    "Hematology": 83,
-   "Laboratory Medicine": 75,
+   "Laboratory Medicine": 76,
    "산부인과": 51,
    "순환기": 29,
    "Physiology": 21,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2473,
-   "medium": 1053,
+   "medium": 1059,
    "low": 50
   },
   "tagCount": 4700
@@ -720,6 +720,108 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-12.md",
    "snippet": "오늘의 학습 (2026 10 12 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 32일 · Tagging 2까지 7일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-12 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 12 · t2 new) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 32일 · Tagging 2까지 7일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0757",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cardiovascular electrophysiology",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0757_procedural_outcomes_of_leadless_pacemaker_extraction_and_ret.md",
+   "snippet": "Title Procedural Outcomes of Leadless Pacemaker Extraction and Retrieval: A Systematic Review and Meta Analysis With Descriptive Synthesis of Post Implant Management Authors Wehbeh Bahaa El Deen, Akoum Atef, Elbahloul Mohammed A, Youssef Jo",
+   "text": "Surgery scraped pubmed PubMed / Journal of cardiovascular electrophysiology Title Procedural Outcomes of Leadless Pacemaker Extraction and Retrieval: A Systematic Review and Meta Analysis With Descriptive Synthesis of Post Implant Management Authors Wehbeh Bahaa El Deen, Akoum Atef, Elbahloul Mohammed A, Youssef Joe, El Chami Mikhael F Journal / DOI Journal of cardiovascular electrophysiology · DOI: 10.1111/jce.70531 · PMID: 42860017 https://pubmed.ncbi.nlm.nih.gov/42860017/ Abstract INTRODUCTION: Leadless pacemakers reduce lead and pocket related complications, but pooled evidence on the procedural outcomes of their extraction and retrieval remains limited. METHODS AND RESULTS: A systematic review and meta analysis (PROSPERO CRD420261397097) evaluated leadless pacemaker extraction or retrieval. The primary analysis pooled independent full text studies reporting at least three attempted removals using a random effects binomial normal generalized linear mixed model. Outcomes were procedural success and major retrieval related procedural events. Eight studies contributed 303 removal attempts to the primary success analysis, and six studies contributed 293 subjects or procedures to the safety analysis. Pooled procedural success was 89.1% (95% CI, 85.1% to 92.2%), and major retrieval related procedural events occurred in 3.8% (95% CI, 2.1% to 6.7%); between study heterogeneity was not detected for either outcome. Sensitivity estimates for major events ranged from 3.3% to 4.1%. Reported dwell time before removal ranged from intraprocedural retrieval to 9 years. A secondary descriptive synthesis of 96 clinical publications and five cohorts with complete denominators characterized post implant management without cross study pooling. CONCLUSION: Leadless pacemaker removal was successful in approximately nine of 10 attempts, while qualifying major retrieval related events occurred in approximately four of 100 safety denominators. The certainty of evidence was very low. Post implant management patterns varied across cohorts and could not be pooled. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0756",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0756_diaphragmatic_rapid_shallow_breathing_index_versus_diaphragm.md",
+   "snippet": "Title Diaphragmatic Rapid Shallow Breathing Index Versus Diaphragmatic Thickness Fraction for Predicting Weaning Success in Mechanically Ventilated Patients Authors Baloda Ritu, Chhikara Monica, Shiva Sahil, Puhal Sudha, Rani Anju, Bhatti N",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Cureus Title Diaphragmatic Rapid Shallow Breathing Index Versus Diaphragmatic Thickness Fraction for Predicting Weaning Success in Mechanically Ventilated Patients Authors Baloda Ritu, Chhikara Monica, Shiva Sahil, Puhal Sudha, Rani Anju, Bhatti Neena Journal / DOI Cureus · DOI: 10.7759/cureus.116038 · PMID: 42859749 https://pubmed.ncbi.nlm.nih.gov/42859749/ Abstract Introduction Timely liberation from mechanical ventilation is a central goal of critical care. This study aimed to compare two point of care ultrasound indices, the diaphragmatic rapid shallow breathing index (D RSBI) and the diaphragmatic thickness fraction (DTF), in predicting successful weaning among mechanically ventilated adults. Methods In this prospective, single center diagnostic accuracy study, 44 adults who were mechanically ventilated for more than 48 hours but fewer than seven days and who met the readiness criteria for a spontaneous breathing trial (SBT) underwent diaphragm and lung ultrasound before the trial. Weaning outcomes were categorized using the Weaning according to a New Definition (WIND) framework; successful weaning (simple or difficult categories, n = 36) was the reference standard, whereas prolonged weaning (n = 8) was considered the adverse outcome. Diagnostic performance was assessed at operating thresholds and by receiver operating characteristic (ROC) analysis, and the two indices were compared using the DeLong test (SPSS Statistics v23 (IBM Corp., Armonk, NY); MedCalc (Ostend, Belgium)). Results At a threshold of 1.2 breaths/min/mm, the D RSBI showed strong diagnostic performance for successful weaning, with a sensitivity of 94.44% and specificity of 100% (area under the curve (AUC): 0.99, 95% confidence interval (CI): 0.97 1.00). The DTF discriminated poorly (sensitivity: 61.11%, specificity: 62.50%; AUC: 0.65, 95% CI: 0.42 0.88). The D RSBI AUC was significantly higher than that of the DTF (DeLong p = 0.004). Notably, all eight patients with prolonged/failed weaning were also the eight most severely ill patients according to the Acute Physiology and Chronic Health Evaluation II score (APACHE II score, 13 21 vs. ≤ 10 in every patient who succeeded), and the direction of association for both indices was opposite to that reported in previous literature. Conclusions In this cohort, a D RSBI ≥ 1.2 was strongly associated with successful weaning and outperformed the DTF. However, weaning outcome was completely determined by illness severity in this cohort, and the direction of the associations for both indices was inverted relative to prior studies. Therefore, these findings must be interpreted with caution and require validation in larger, multicenter cohorts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0755",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of surgical case reports",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0755_bone_missile_injury_with_an_intact_host_femur_after_high_ene.md",
+   "snippet": "Title Bone missile injury with an intact host femur after high energy road traffic trauma: a case report Authors Baguma Ezekiel, Jjuuko Mark, Kabazzi Paul, Ezati Daniel, Mulepo Phillip, Muwanguzi Peter Journal / DOI Journal of surgical case",
+   "text": "Pathology scraped pubmed PubMed / Journal of surgical case reports Title Bone missile injury with an intact host femur after high energy road traffic trauma: a case report Authors Baguma Ezekiel, Jjuuko Mark, Kabazzi Paul, Ezati Daniel, Mulepo Phillip, Muwanguzi Peter Journal / DOI Journal of surgical case reports · DOI: 10.1093/jscr/rjag903 · PMID: 42859837 https://pubmed.ncbi.nlm.nih.gov/42859837/ Abstract A 28 year old woman presented with local wound infection two weeks after sustaining an anterior thigh laceration in a high energy motorbike crash that killed the co riding motorcyclist. X ray revealed a non identifiable radio opaque fragment and computed tomography identified a bony foreign body deep in the thigh adjacent to the femoral vessels, with the host femur intact. A 6 x 3 cm fragment of cortical bone was removed at surgery. Histopathology and genetic studies to confirm its origin were not feasible in this resource limited setting, but an intact host femur suggested it originated from the deceased rider. The wound healed by secondary intention, HIV and hepatitis serology were negative at 6 weeks. This case highlights the unusual occurrence of a bone missile and the importance of early advanced imaging and prompt post exposure prophylaxis following high energy, multi victim trauma. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0754",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ARP rheumatology",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0754_pd_1_inhibitor_associated_sicca_syndrome_mimicking_sj_gren_s.md",
+   "snippet": "Title PD 1 inhibitor associated Sicca syndrome mimicking Sjögren's disease successfully managed without immunotherapy withdrawal Authors André Filipa Canhão, Teixeira João, Saraiva André, Amaral João Luís, Calvão Joana, Coutinho Inês, Couti",
+   "text": "Hematology-Oncology scraped pubmed PubMed / ARP rheumatology Title PD 1 inhibitor associated Sicca syndrome mimicking Sjögren's disease successfully managed without immunotherapy withdrawal Authors André Filipa Canhão, Teixeira João, Saraiva André, Amaral João Luís, Calvão Joana, Coutinho Inês, Coutinho Margarida Journal / DOI ARP rheumatology · PMID: 42859986 https://pubmed.ncbi.nlm.nih.gov/42859986/ Abstract Immune checkpoint inhibitors (ICIs) are increasingly associated with a broad spectrum of immune related adverse events (irAEs), including rheumatic manifestations. We report a case of ICI associated sicca syndrome (ICI S) mimicking Sjögren's disease, with a brief literature review. The patient was a 70 year old man with BRAF mutated metastatic melanoma who developed inflammatory arthralgias followed by parotid and submandibular enlargement, severe xerostomia, and xerophthalmia, during pembrolizumab therapy. Treatment was withheld and low dose glucocorticoids (GC) initiated, with rapid improvement of joint symptoms and gland swelling, although marked xerostomia persisted. The diagnostic work up revealed elevated inflammatory markers and positive antinuclear antibodies (ANA), with negative anti SSA/SSB. Salivary gland ultrasound showed grade 3 changes (OMERACT) and PET CT confirmed bilateral sialadenitis. Minor salivary gland biopsy demonstrated T cell predominant lymphocytic infiltrate without CD20+ B cells, supporting an ICI S rather than primary Sjögren's disease. Pembrolizumab rechallenge triggered a flare of sialadenitis and arthritis, controlled with GC reintroduction plus hydroxychloroquine and supportive measures. This case provides educational insights into the diagnostic differentiation between ICI S and primary Sjögren's disease, supporting early recognition and appropriate management without compromising oncologic treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0753",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ARP rheumatology",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0753_trends_outcomes_and_disparities_in_hospitalizations_among_pa.md",
+   "snippet": "Title Trends, outcomes, and disparities in hospitalizations among patients with Sjögren's syndrome: a national inpatient sample analysis (2016 2020) Authors Pathak Shaivya Journal / DOI ARP rheumatology · PMID: 42859985 https://pubmed.ncbi.",
+   "text": "Infectious Disease scraped pubmed PubMed / ARP rheumatology Title Trends, outcomes, and disparities in hospitalizations among patients with Sjögren's syndrome: a national inpatient sample analysis (2016 2020) Authors Pathak Shaivya Journal / DOI ARP rheumatology · PMID: 42859985 https://pubmed.ncbi.nlm.nih.gov/42859985/ Abstract AIMS: Sjögren's syndrome (SS) is a systemic autoimmune disease with poorly characterized hospitalization outcomes in the United States. We aimed to characterize hospitalization trends, comorbidity profiles, organ specific manifestations, predictors of in hospital mortality, and racial, socioeconomic, and hospital level disparities among SS associated hospitalizations using the NIS 2016 2020 dataset. METHODS: Retrospective cross sectional analysis of the NIS (2016 2020). Adults with SS (ICD 10 CM M35.00 M35.0C) were identified across 40 diagnosis fields and matched 3:1 with non autoimmune controls by age, sex, and year. Survey weighted analyses included bivariate comparisons, Elixhauser comorbidity profiling, organ specific phenotyping, nested multivariable logistic regression for mortality predictors, and adjusted disparities analyses using predictive margins. RESULTS: Among 272,630 weighted SS associated hospitalizations (91.4% female, mean age 64.2 years), extraglandular manifestations were documented in 33.8%. Despite a significantly higher baseline comorbidity burden compared with 817,890 matched control hospitalizations, SS associated admissions exhibited paradoxically lower crude in hospital mortality (2.13% vs. 2.59%, p<0.001). However, within the SS cohort, acute complications were associated with substantial mortality risk in the fully adjusted model: independent predictors included mechanical ventilation (OR 21.08), sepsis (OR 2.80), stroke (OR 2.78), malignancy (OR 2.46), and interstitial lung disease (OR 2.10). Significant disparities persisted after multivariable adjustment: Asian/Pacific Islander hospitalizations had higher mortality odds (OR 1.67, p=0.002) and incurred $22,643 more in adjusted charges compared with White hospitalizations. Self pay or uninsured status was associated with doubled mortality odds (OR 2.01, p<0.001). CONCLUSIONS: Enhanced clinical phenotyping underscores that Sjögren's syndrome is a complex, multisystem disease with a substantial inpatient burden. While SS associated hospitalizations present with high baseline comorbidities, in hospital mortality is strongly associated with acute complications, particularly respiratory failure, sepsis, stroke, and interstitial lung disease. Future clinical pathways should prioritize vigilant management of these vulnerabilities while addressing the structural and socioeconomic disparities associated with unequal outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0752",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-10-11",
+   "path": "content/papers/2026/2026-10-11_paper-2026-0752_prominent_v_waves_augment_right_ventricular_afterload_indepe.md",
+   "snippet": "Title Prominent V Waves Augment Right Ventricular Afterload Independent of the Lung Vessels in Heart Failure: Implications for Clinical Assessment of Pulmonary Vascular Disease Authors Chaikijurajai Thanat, Reddy Yogesh N V, Harada Tomonari",
+   "text": "Cardiology scraped pubmed PubMed / Circulation Title Prominent V Waves Augment Right Ventricular Afterload Independent of the Lung Vessels in Heart Failure: Implications for Clinical Assessment of Pulmonary Vascular Disease Authors Chaikijurajai Thanat, Reddy Yogesh N V, Harada Tomonari, Naser Jwan A, Kazui Sho, Akashi Naoyuki, Okuno Takahiro, Ghanbari Fahime, et al. Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.126.081799 · PMID: 42860037 https://pubmed.ncbi.nlm.nih.gov/42860037/ Abstract BACKGROUND: Left atrial (LA) stiffening augments the LA V wave, pressurizing the pulmonary artery (PA) out of proportion to left ventricular end diastolic pressure. We characterized the pathophysiologic, diagnostic, and clinical implications of LA stiffening, as defined by prominent V waves, in heart failure with preserved ejection fraction. METHODS: In this retrospective cohort study, patients with heart failure with preserved ejection fraction and less than moderate mitral regurgitation at rest underwent invasive hemodynamic exercise testing. Patients with heightened operant LA stiffening were defined by the PA wedge pressure (PAWP) V wave exceeding mean PAWP by ≥10 mm Hg. A previously used formula for V wave corrected PAWP was validated against the PAWP waveform pressure time area to explore impact of the V wave on transpulmonary pressure gradients. Clinical, echocardiographic, hemodynamic, and outcome data were compared for patients with and without prominent V waves. RESULTS: Compared with patients without prominent V waves (n=844, 79%), those with prominent V waves (n=225, 21%) were older and more likely to be women, with more severe LA myopathy, evidenced by greater LA volume index (42.2±15.0 versus 32.5±13.0 mL/m2, P<0.001), lower LA reservoir strain (16.4±7.5% versus 23.2±8.3%, P<0.001), more atrial fibrillation (61.3% versus 22.9%, P<0.001), and increased operant LA reservoir stiffness (0.59±0.25 versus 0.23±0.24 mm Hg/mL, P<0.001). Patients with prominent V waves had markedly higher PA systolic pressure than those without (54±16 versus 38±12 mm Hg, P<0.001) despite no difference in end diastolic PAWP PA pressure gradient (3±5 versus 3±4 mm Hg, P=0.950). Incorporating the V wave into PAWP improved correlation between directly measured PAWP pressure time integral compared with mid A wave PAWP (R2=0.96 versus R2=0.86, P<0.001 for comparison). In patients with prominent V waves, the prevalence of combined pre and postcapillary pulmonary hypertension decreased from 60.2% to 29.3% after V wave correction for the transpulmonary pressure gradients. Despite similar corrected pulmonary vascular resistances in patients with and without prominent V waves, apparent PA compliance was much lower in patients with prominent V waves (3.03±1.56 versus 4.90±2.27 mL/mm Hg, P<0.001), augmenting right ventricular afterload, and these changes were coupled with more severe right ventricular dysfunction, tricuspid regurgitation, blunted cardiopulmonary exercise reserve, and increased risk of hospitalization for heart failure or death in patients with versus without prominent V waves (adjusted hazard ratio, 2.09 [95% CI, 1.53 2.86]; P<0.001). CONCLUSIONS: More than 1 in 5 patients with heart failure with preserved ejection fraction display prominent V waves in excess of end diastolic PAWP. This augments right ventricular afterload due to backward transmission of the V wave, contributing to right heart failure that is independent of the pulmonary vasculature. Failure to account for the V wave during hemodynamic assessment overestimates the severity of pulmonary vascular disease present. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0310",
@@ -13927,8 +14029,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/pulmonology/cn.pulm.community-acquired-pneumonia.curb65-site-of-care.md",
-   "snippet": "정의 지역사회획득폐렴 은 병원 밖에서 생긴 폐 실질 감염이다. 이 정리본의 목표는 원인균이나 항생제 종류가 아니라 어디서 치료할지 — 외래·일반 병동·중환자실 — 를 정하는 것이다. 입원 비용은 외래의 약 20배이지만, 중환자실 입실이 늦으면 사망률이 오른다 [[harrison 21: 126장 p.1012]]. 병태생리 정상 폐는 기침·점액섬모 청소·폐포 대식세포로 들어온 균을 치운다. 균이 이 방어를 넘으면 폐포에 염증 삼출",
-   "text": "Infectious Disease 정의 지역사회획득폐렴 은 병원 밖에서 생긴 폐 실질 감염이다. 이 정리본의 목표는 원인균이나 항생제 종류가 아니라 어디서 치료할지 — 외래·일반 병동·중환자실 — 를 정하는 것이다. 입원 비용은 외래의 약 20배이지만, 중환자실 입실이 늦으면 사망률이 오른다 [[harrison 21: 126장 p.1012]]. 병태생리 정상 폐는 기침·점액섬모 청소·폐포 대식세포로 들어온 균을 치운다. 균이 이 방어를 넘으면 폐포에 염증 삼출물이 차(폐경화) 가스 교환이 떨어진다. 염증이 전신으로 번지면 혈관이 확장되고 새어 혈압이 떨어지며(B), 콩팥 관류가 줄어 요소가 오르고(U), 뇌 관류·대사 장애로 혼돈이 오고(C), 저산소혈증과 대사성 산증을 보상하려 호흡이 빨라진다(R). 나이(65)는 같은 감염에서도 예비력이 적다는 뜻이다. CURB 65 는 이 장기 반응 을 세는 점수라, 병변 크기보다 전신 영향을 본다. 기전에서 소견으로 저혈압(수축기 ≤ 90 또는 이완기 ≤ 60) : 패혈증성 혈관 확장·혈관 누출. BUN 상승 : 관류 저하·탈수로 인한 신전성 질소혈증. 빈호흡 ≥ 30 : 저산소혈증·산증 보상, 폐 탄성 저하. 혼돈 : 뇌 관류 저하·패혈증 뇌병증. 의식 명료·단일 폐엽 : 안심 소견이 아니다 — 다른 항목이 채워지면 중증이다. 감별 — 점수를 빠짐없이 센다 CURB 65 항목 표의 다섯 항목을 하나씩 모두 센다 [[harrison 21: 126장 p.1012]]. 흔한 실수는 한 항목(의식 명료)만 보고 가볍게 판단하는 것, 그리고 BUN mg/dL 을 요소 mmol/L 기준과 맞추지 않는 것이다. 이어서 점수와 별개의 입원 조건(포화도 < 92 %·경구 불가·순응 불가)과 중환자실 기준(주·부기준)을 확인한다 [[harrison 21: 126장 p.1012]]. PSI 는 20개 변수로 5등급(사망 0.1–29.2 %)을 매겨 저위험군을 더 정확히 가르지만 계산이 번거롭다. 1–2등급은 외래, 3등급은 관찰 병상이 이상적이다 [[harrison 21: 126장 p.1012]]. 검사 활력징후·의식·대기 산소포화도 : 점수와 입원 조건. BUN·전해질·혈구(백혈구·혈소판) : 요소 항목과 부기준(BUN ≥ 20, 백혈구 < 4,000, 혈소판 < 100,000). 동맥혈 가스(PaO₂/FiO₂) : 부기준 ≤ 250. 흉부 X선 : 확진과 다엽 침윤(부기준) [[harrison 21: 126장 p.1012]]. 치료 — 장소와 첫 항생제 모든 경우 항생제는 가능한 한 빨리 시작한다 [[harrison 21: 126장 p.1013]]. 초기 치료는 가장 흔한 원인균을 덮는 경험적 치료다. 치료 장소 표를 따른다. 입원 환자는 전통적으로 정맥으로 시작하고, 흡수가 좋은 약은 선택된 환자에게 처음부터 경구로 줄 수 있다 [[harrison 21: 126장 p.1015]]. 재평가: 입원 뒤에도 혈압·호흡수·산소 요구·의식을 반복해 본다. 병동에서 악화해 옮긴 환자는 처음부터 중환자실에서 본 환자보다 사망률이 높다 [[harrison 21: 126장 p.1013]]. 권고와 예외 점수가 입원을 가리켜도 나이만으로 1–2점이면 외래가 가능할 수 있다 [[harrison 21: 126장 p.1012]]. 점수가 0점이어도 포화도 < 92 %·경구 불가·순응 불가면 입원한다 [[harrison 21: 126장 p.1012]]. CURB 65 는 중환자실 판단에 쓰지 않는다 — 주·부기준으로 [[harrison 21: 126장 p.1012]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 1점과 2점의 자리 — 시험 기준: 0–1점 외래, ≥ 2점 입원, ≥ 3점 중증(원 문항 해설) [[?bts cap 2009]] / 다른 기준: 해리슨은 0점 외래, 1–2점 입원(나이 탓이면 예외), ≥ 3점 사망 22 % 로 중환자실이 필요할 수 있다고 적는다 [[harrison 21: 126장 p.1012]] / 왜 다른가: 점수 경계에서 입원을 얼마나 넓게 잡는지가 출처마다 다르다 / 시험에서는: 3점은 두 기준 모두 입원이라 답이 같다. 1점 문항이 나오면 KMLE 는 BTS 식(외래 고려)으로, 해리슨 기반 USMLE 해설은 「나이 외 항목이면 입원」으로 갈릴 수 있으니 나머지 조건(포화도·복용)을 함께 본다. (심화) 왜 PSI 가 더 정확한데 CURB 65 를 쓰나 PSI 는 동반 질환·검사값을 포함한 20개 변수로 저위험군을 더 잘 골라내 입원을 줄이지만, 응급실에서 바로 계산하기 어렵다. CURB 65 는 침상에서 다섯 가지만 세면 된다 — 대신 둘 다 중환자실 필요를 정확히 가르지 못하므로, 중환자실은 주·부기준이라는 별도 도구로 결정한다 [[harrison 21: 126장 p.1012]]."
+   "snippet": "판단 — 왜 입원·정맥 항생제가 먼저인가 의식 명료는 다섯 항목 중 하나가 0점이라는 뜻일 뿐이다. 나이 ≥ 65·요소 상승·저혈압이 겹치면 3점, 30일 사망 22 % 다 [[harrison 21: 126장 p.1012]]. 1–2점은 입원(점수가 나이 때문뿐이면 예외), ≥ 3점은 중환자실이 필요할 수 있다 — 3점 환자를 외래로 보내지 않는다 [[harrison 21: 126장 p.1012]]. 장소와 상관없이 항생제는 ",
+   "text": "Infectious Disease 판단 — 왜 입원·정맥 항생제가 먼저인가 의식 명료는 다섯 항목 중 하나가 0점이라는 뜻일 뿐이다. 나이 ≥ 65·요소 상승·저혈압이 겹치면 3점, 30일 사망 22 % 다 [[harrison 21: 126장 p.1012]]. 1–2점은 입원(점수가 나이 때문뿐이면 예외), ≥ 3점은 중환자실이 필요할 수 있다 — 3점 환자를 외래로 보내지 않는다 [[harrison 21: 126장 p.1012]]. 장소와 상관없이 항생제는 가능한 한 빨리 시작한다. 초기 치료는 흔한 원인균을 덮는 경험적 치료다 [[harrison 21: 126장 p.1013]]. 입원 비용은 외래의 약 20배이지만, 중환자실 입실이 늦으면 사망률이 오른다 [[harrison 21: 126장 p.1012]] — 경계선 환자는 높은 쪽으로. 기전 — 폐 감염에서 장기 반응으로 정상 폐는 기침·점액섬모 청소·폐포 대식세포로 들어온 균을 치운다. 균이 이 방어를 넘으면 폐포에 염증 삼출물이 차(폐경화, consolidation) 가스 교환이 떨어진다. 염증이 전신으로 번지면 CURB 65 의 각 항목이 생긴다. 저혈압(B) : 패혈증성 혈관 확장·혈관 누출. 요소 상승(U) : 관류 저하·탈수로 인한 신전성 질소혈증. 혼돈(C) : 뇌 관류 저하·패혈증 뇌병증. 빈호흡 ≥ 30(R) : 저산소혈증·산증 보상, 폐 탄성 저하. 나이(65) : 같은 감염에서도 예비력이 적다. 그래서 CURB 65 는 병변 크기보다 전신 영향 을 본다 — 의식 명료·단일 폐엽은 안심 소견이 아니다. 가르는 소견 — 점수를 빠짐없이 센다 다섯 항목을 하나씩 모두 센다 [[harrison 21: 126장 p.1012]]. 흔한 실수는 한 항목(의식 명료)만 보고 가볍게 판단하는 것, 그리고 BUN mg/dL 을 요소 mmol/L 기준과 맞추지 않는 것이다. 이어서 점수와 별개의 입원 조건(포화도 < 92 %·경구 불가·순응 불가)과 중환자실 기준(주·부기준)을 확인한다 [[harrison 21: 126장 p.1012]]. 필요한 검사: 활력징후·의식·대기 산소포화도(점수·입원 조건), BUN·전해질·혈구(요소 항목과 부기준 BUN ≥ 20·백혈구 < 4,000·혈소판 < 100,000), 동맥혈 가스(부기준 PaO₂/FiO₂ ≤ 250), 흉부 X선(확진과 다엽 침윤) [[harrison 21: 126장 p.1012]]. 다엽 침윤은 CURB 65 항목이 아니라 중환자실 부기준이다. PSI 는 20개 변수로 5등급(사망 0.1–29.2 %)을 매겨 저위험군을 더 정확히 가르지만 계산이 번거롭다. 1–2등급은 외래, 3등급은 관찰 병상이 이상적이다 [[harrison 21: 126장 p.1012]]. 선택 — 장소와 첫 항생제 입원 환자는 전통적으로 정맥으로 시작하고, 흡수가 좋은 약은 선택된 환자에게 처음부터 경구로 줄 수 있다 [[harrison 21: 126장 p.1015]]. 재평가: 입원 뒤에도 혈압·호흡수·산소 요구·의식을 반복해 본다. 병동에서 악화해 옮긴 환자는 처음부터 중환자실에서 본 환자보다 사망률이 높다 [[harrison 21: 126장 p.1013]]. 권고와 예외 점수가 입원을 가리켜도 나이만으로 1–2점이면 외래가 가능할 수 있다 [[harrison 21: 126장 p.1012]]. 점수가 0점이어도 포화도 < 92 %·경구 불가·순응 불가면 입원한다 [[harrison 21: 126장 p.1012]]. CURB 65 는 중환자실 판단에 쓰지 않는다 — 주·부기준으로 [[harrison 21: 126장 p.1012]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 1점과 2점의 자리 — 시험 기준: 0–1점 외래, ≥ 2점 입원, ≥ 3점 중증(원 문항 해설) [[?bts cap 2009]] / 다른 기준: 해리슨은 0점 외래, 1–2점 입원(나이 탓이면 예외), ≥ 3점 사망 22 % 로 중환자실이 필요할 수 있다고 적는다 [[harrison 21: 126장 p.1012]] / 왜 다른가: 점수 경계에서 입원을 얼마나 넓게 잡는지가 출처마다 다르다 / 시험에서는: 3점은 두 기준 모두 입원이라 답이 같다. 1점 문항이 나오면 KMLE 는 BTS 식(외래 고려)으로, 해리슨 기반 USMLE 해설은 「나이 외 항목이면 입원」으로 갈릴 수 있으니 나머지 조건(포화도·복용)을 함께 본다. (심화) 왜 PSI 가 더 정확한데 CURB 65 를 쓰나 PSI 는 동반 질환·검사값을 포함한 20개 변수로 저위험군을 더 잘 골라내 입원을 줄이지만, 응급실에서 바로 계산하기 어렵다. CURB 65 는 침상에서 다섯 가지만 세면 된다 — 대신 둘 다 중환자실 필요를 정확히 가르지 못하므로, 중환자실은 주·부기준이라는 별도 도구로 결정한다 [[harrison 21: 126장 p.1012]]."
   },
   {
    "id": "cn.pulm.chest-ct-anatomy.diaphragm-level-structures",
@@ -13955,8 +14057,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/psychiatry/cn.psy.smoking-cessation.varenicline-seizure.md",
-   "snippet": "정의 니코틴 의존(담배 사용 장애)은 니코틴을 주성분으로 하는 중독으로, 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 흡연의 빈도·강도를 조절해 니코틴 섭취를 스스로 맞춘다 [[harrison 21: 454장 p.3563]]. 연기의 다른 성분과 행동 습관도 중독의 세기를 더한다 [[harrison 21: 454장 p.3563]]. 이 정리본의 목표는 금연 약물 목록이 아니라, 니코틴 대체요법에 실패한 고의존 흡연자에서 다",
-   "text": "Psychiatry 정의 니코틴 의존(담배 사용 장애)은 니코틴을 주성분으로 하는 중독으로, 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 흡연의 빈도·강도를 조절해 니코틴 섭취를 스스로 맞춘다 [[harrison 21: 454장 p.3563]]. 연기의 다른 성분과 행동 습관도 중독의 세기를 더한다 [[harrison 21: 454장 p.3563]]. 이 정리본의 목표는 금연 약물 목록이 아니라, 니코틴 대체요법에 실패한 고의존 흡연자에서 다음 약을 고를 때 「1차 약물 → 이 환자에게 지울 약」 순서로 판단하는 것 — 경련 병력이 부프로피온을 지우고 바레니클린을 남기는 이유를 설명하는 것이다. 병태생리 니코틴은 뇌의 니코틴 아세틸콜린 수용체(주로 α4β2)에 붙어 중변연계 도파민 분비를 늘려 보상을 만든다. 반복 노출로 수용체가 적응하면 혈중 니코틴이 떨어질 때 갈망·짜증·불안·집중력 저하 같은 금단이 생기고, 흡연자는 이를 피하려고 섭취량을 조절한다 [[harrison 21: 454장 p.3563]]. 궐련 연기는 산성이라 입안 흡수가 적어 폐 깊이 들이마셔야 충분한 니코틴을 얻는다 — 빠르고 강한 폐 흡수가 중독성과 폐·심장 질환을 함께 키운다 [[harrison 21: 454장 p.3563]]. 약이 듣는 방식은 세 가지다. ① 니코틴 대체요법 은 연기 없이 니코틴을 공급해 금단을 채운다 — 패치는 느리고 일정하게, 껌·사탕·흡입제는 급성 갈망에 빠르게. ② 바레니클린 은 같은 수용체의 부분작용제라 적은 도파민 분비로 금단을 누르면서, 담배를 피워도 니코틴이 수용체에 덜 붙어 보상이 줄어든다(성공 배수 3.1로 가장 크다 [[harrison 21: 454장 p.3566]]). ③ 부프로피온 은 도파민·노르에피네프린 재흡수를 막는 항우울제로 금단·갈망을 줄인다. 부프로피온의 약점은 경련 역치 저하 다 — 용량이 오를수록 경련 위험이 커져 경련 병력이 있는 환자에게는 금기다 [[?uspshs 2008]]. 기전에서 소견으로 의존 강도 : 하루 개비 수와 기상 30분 이내 첫 담배가 중독 강도의 유용한 척도다 [[harrison 21: 454장 p.3566]]. 기상 5분 안의 흡연은 밤사이 떨어진 니코틴을 곧바로 채워야 하는 강한 신체 의존을 뜻한다. 금단 증상 : 갈망·짜증·불안 — 니코틴 대체요법 중에도 이것이 견디기 어려우면 같은 약의 반복보다 다른 방식이 필요하다는 신호다. 호기 일산화탄소 : 현재 흡연을 객관적으로 확인하고 금연 뒤 추적에 쓰지만 약 선택을 바꾸지 않는다. 경과 : 금연은 대개 여러 번의 시도 끝에 성공한다. 절반 넘게 한 해에 금연을 시도하지만 6개월 유지는 6 %, 2년 유지는 3 % 뿐이다 [[harrison 21: 454장 p.3566]]. 실패는 치료 실패가 아니라 다음 시도에 쓸 정보다. 감별 약물 선택에서 「감별」은 이 환자에게 지울 약을 가려내는 일 이다. 경련 병력·섭식장애·알코올/벤조디아제핀 급성 중단 → 부프로피온 금기 [[?uspshs 2008]]. 뇌전증이 약으로 조절돼 있어도 병력 자체가 금기다. 우울 증상 병력 → 항우울제가 더 효과적이다 [[harrison 21: 454장 p.3566]]. 금기가 없으면 부프로피온 쪽으로 기운다. 심혈관 질환 → 흡연 자체가 가장 큰 위험이다. 금연하면 두 번째 관상동맥 사건 위험이 6–12개월 안에 줄어든다 [[harrison 21: 454장 p.3564]]. 중증 신부전 → 바레니클린은 신배설이라 감량한다 [[?uspshs 2008]]. 삼환계(노르트립틸린) → 2차 약물이며 경련 역치를 낮추고 심전도·항콜린 부작용이 있다. 검사 금연 약물 선택에 필수 검사실 검사는 없다. 필요한 정보는 ① 흡연량·기상 후 첫 담배 시간·과거 금연 시도와 쓴 약의 종류·용량·기간 ② 경련·섭식장애·음주·벤조디아제핀 사용 ③ 우울·자살 생각 ④ 신기능(바레니클린 용량) ⑤ 복용약 — 흡연은 CYP450 을 유도하므로 금연 뒤 테오필린·클로자핀·올란자핀·와파린 등의 농도가 변할 수 있다 [[harrison 21: 454장 p.3564]]. 호기 일산화탄소는 흡연 확인·금연 추적용이다. 치료 원칙. 받아들이는 모든 흡연자에게 약물(대개 니코틴 패치 또는 바레니클린)을 권하고 상담을 함께한다 [[harrison 21: 454장 p.3566]]. 금연일은 방문 당일이 아니라 몇 주 안으로 협의하고 그 무렵 추적 연락을 잡는다 [[harrison 21: 454장 p.3566]]. 조언·약물·상담을 합치면 성공이 거의 세 배가 된다 [[harrison 21: 454장 p.3566]]. 1차 약물. 니코틴 대체요법(3–6개월, 고의존은 고용량) · 부프로피온(300 mg/일 분할, 최대 6개월) · 바레니클린(0.5 mg → 8일째 1 mg 하루 두 번, 최대 6개월). 항우울제·바레니클린은 금연일 1–2주 전에 시작한다 [[harrison 21: 454장 p.3566]]. 니코틴 대체요법과 항우울제 병용, 패치 + 급성 갈망 때 껌·사탕도 성공률을 높인다 [[harrison 21: 454장 p.3566]]. 니코틴 대체요법 실패 뒤. 매 시도마다 다른 형태의 도움을 쓰게 한다 [[harrison 21: 454장 p.3566]]. 비니코틴 1차 약물 둘 가운데 금기를 먼저 지운다 — 경련 병력이면 부프로피온을 지우고 바레니클린 을 쓴다. 단독 효과도 바레니클린이 가장 크다(3.1) [[harrison 21: 454장 p.3566]]. 2차 약물. 클로니딘·노르트립틸린은 1차 약물에 실패했거나 쓸 수 없는 환자에게 남겨 둔다 [[harrison 21: 454장 p.3566]]. 반응 확인·재평가. 금연일 무렵 추적 연락, 이후 흡연 여부(필요하면 호기 일산화탄소)·금단·부작용(바레니클린 — 오심·꿈 이상)을 확인한다. 실패하면 비난하지 않고 다른 형태의 도움으로 다시 시도한다 [[harrison 21: 454장 p.3566]]. 짧은 사용에 실패한 사람에게는 더 긴 유지 치료도 유용하다 [[harrison 21: 454장 p.3566]]. 권고와 예외 1차 약물 목록을 떠올린 뒤 「이 환자에게 지울 약」을 먼저 찾는다 — 경련 병력 → 부프로피온·노르트립틸린 제외. 니코틴 대체요법 하나의 실패는 1차 약물 전체의 실패가 아니다 — 2차(클로니딘·노르트립틸린)로 건너뛰지 않는다. 우울 증상 병력이 있고 경련 위험이 없으면 부프로피온이 유리하다 [[harrison 21: 454장 p.3566]]. 약은 반드시 상담·금연일 협의·추적과 함께 쓴다 [[harrison 21: 454장 p.3566]]. 부프로피온 경련 금기와 바레니클린의 신부전 감량은 해리슨이 아닌 지침·허가 정보의 서술이며 원문을 대조하지 못했다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 부프로피온 경련 금기의 출처 — 시험 기준: 경련 질환 병력이면 발작이 조절돼 있어도 부프로피온 금기 [[?uspshs 2008]] / 다른 기준: 해리슨 454장은 부프로피온을 1차 약물(성공 배수 2.0)로만 적고 금기를 언급하지 않는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 해리슨 장은 약물의 자리만 요약하고 금기는 허가 정보·지침에 맡긴다 / 시험에서는: KMLE · USMLE 모두 「경련 병력 → 부프로피온 금기」를 정답 논리로 쓴다. Z2 충돌 · 니코틴 대체요법 실패 뒤 증량인가 교체인가 — 시험 기준: 충분한 기간 실패했으면 기전이 다른 약(바레니클린) 또는 병합으로 바꾼다 [[harrison 21: 454장 p.3566]] / 다른 기준: 해리슨은 고의존 흡연자에게 니코틴 대체요법 고용량을, 짧은 사용에 실패한 사람에게 장기 유지를 「유용한 전략」으로도 적는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 고용량·장기 유지는 첫 시도의 설계·짧은 사용 실패에 대한 조언이고, 충분한 기간 반복 실패에는 「매 시도마다 다른 형태의 도움」이 앞선다 / 시험에서는: KMLE · USMLE 모두 두 번 충분히 실패 + 다른 1차 약물 가능 → 바레니클린. Z3 새 근거 · 바레니클린의 정신신경 안전성 — 시험 기준: 정신질환 병력만으로 바레니클린을 피하지 않는다 [[?eagles 2016]] / 다른 기준: 해리슨 454장은 이 문제를 다루지 않는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 과거 미국 FDA 박스 경고가 EAGLES 시험 뒤 삭제됐다는 서술은 이 컨테이너에서 원문을 대조하지 못했다 / 시험에서는: KMLE · USMLE 모두 옛 문항에서 「우울·자살 병력 → 바레니클린 주의」가 나올 수 있으니 발문의 기저 정신질환 여부를 확인한다(검토 항목). (심화) 부분작용제가 금연에 유리한 이유 완전작용제인 니코틴은 수용체를 강하게 자극해 큰 도파민 분비를 만들고, 혈중 농도가 떨어지면 금단이 온다. 부분작용제인 바레니클린은 수용체에 높은 친화도로 붙어 중간 정도의 자극 을 계속 주므로 금단·갈망이 줄고, 동시에 수용체 자리를 차지해 담배를 피워도 니코틴이 추가 보상을 만들지 못한다 — 「피워도 별로」라는 경험이 재발 고리를 끊는다. 이 두 작용 덕분에 바레니클린의 성공 배수(3.1)가 단일 니코틴 제제나 부프로피온(약 2)보다 크다 [[harrison 21: 454장 p.3566]]. 경련 역치에 영향을 주는 도파민·노르에피네프린 재흡수 억제 기전이 없다는 점이 뇌전증 환자에서 바레니클린을 남기는 약리적 이유이기도 하다."
+   "snippet": "판단 — 왜 바레니클린이 먼저인가 니코틴 대체요법을 충분히 쓰고도 실패했다면 매 시도마다 다른 형태의 도움 을 쓴다 [[harrison 21: 454장 p.3566]] — 같은 약 증량보다 기전이 다른 1차 약물로 바꾼다. 남은 비니코틴 1차 약물은 부프로피온과 바레니클린이다. 둘을 가르는 것은 효과보다 이 환자의 금기 다. 부프로피온은 경련 역치를 낮춰 경련 질환 병력에서 발작이 조절돼 있어도 금기다 [[?uspshs 200",
+   "text": "Psychiatry 판단 — 왜 바레니클린이 먼저인가 니코틴 대체요법을 충분히 쓰고도 실패했다면 매 시도마다 다른 형태의 도움 을 쓴다 [[harrison 21: 454장 p.3566]] — 같은 약 증량보다 기전이 다른 1차 약물로 바꾼다. 남은 비니코틴 1차 약물은 부프로피온과 바레니클린이다. 둘을 가르는 것은 효과보다 이 환자의 금기 다. 부프로피온은 경련 역치를 낮춰 경련 질환 병력에서 발작이 조절돼 있어도 금기다 [[?uspshs 2008]]. 바레니클린은 경련 금기가 없고 단독 성공 배수도 가장 크다(3.1) [[harrison 21: 454장 p.3566]]. 니코틴 대체요법 하나의 실패는 1차 약물 전체의 실패가 아니다 — 2차(클로니딘·노르트립틸린)로 건너뛰지 않는다 [[harrison 21: 454장 p.3566]]. 기전 — 니코틴 보상에서 금단·갈망으로 니코틴은 담배 중독의 주성분이다. 흡연자는 원하는 정신작용을 얻고 금단을 피하려고 흡연의 빈도·깊이로 섭취량을 스스로 맞추며, 연기의 다른 성분과 행동 습관이 중독을 더한다 [[harrison 21: 454장 p.3563]]. 니코틴은 니코틴 아세틸콜린 수용체(주로 α4β2)에 붙어 중변연계 도파민 분비를 늘려 보상을 만들고, 수용체가 적응하면 혈중 니코틴이 떨어질 때 갈망·짜증·불안·집중력 저하가 생긴다. 궐련 연기는 산성이라 입안 흡수가 적어 폐 깊이 들이마셔야 하고, 빠른 폐 흡수가 중독성과 폐·심장 질환을 함께 키운다 [[harrison 21: 454장 p.3563]]. 니코틴 대체요법(nicotine replacement therapy)은 연기 없이 니코틴을 공급해 금단을 채운다 — 패치는 느리고 일정하게, 껌·사탕·흡입제는 급성 갈망에 빠르게. 바레니클린은 같은 수용체의 부분작용제(partial agonist)라 적은 도파민 분비로 금단을 누르고, 담배를 피워도 보상이 줄어든다. 부프로피온은 도파민·노르에피네프린 재흡수 억제 항우울제로 금단·갈망을 줄이지만, 용량이 오를수록 경련 위험이 커진다 [[?uspshs 2008]]. 가르는 소견 — 의존 강도와 지울 약 의존 강도 : 하루 개비 수와 기상 30분 이내 첫 담배가 유용한 척도다 [[harrison 21: 454장 p.3566]]. 기상 직후 흡연은 밤사이 떨어진 니코틴을 곧바로 채워야 하는 강한 신체 의존을 뜻한다 — 고용량·병합 또는 효과가 큰 약이 필요하다. 지울 약을 찾는 정보 : 경련·섭식장애·알코올/벤조디아제핀 급성 중단 → 부프로피온 금기 [[?uspshs 2008]]. 중증 신부전 → 바레니클린 감량 [[?uspshs 2008]]. 우울 증상 병력 → 항우울제가 더 효과적이다 [[harrison 21: 454장 p.3566]]. 이전 시도 : 쓴 약의 종류·용량·기간·순응도. 금연은 대개 여러 번의 시도 끝에 성공한다 — 절반 넘게 한 해에 시도하지만 6개월 유지는 6 %, 2년 유지는 3 %뿐이다 [[harrison 21: 454장 p.3566]]. 실패는 다음 시도에 쓸 정보다. 해석 한계 : 필수 검사실 검사는 없다. 호기 일산화탄소는 현재 흡연 확인·금연 추적용이며 약 선택을 바꾸지 않는다. 복용약 : 흡연은 CYP450 을 유도한다 — 금연 뒤 테오필린·클로자핀·올란자핀·와파린 등의 농도가 변할 수 있다 [[harrison 21: 454장 p.3564]]. 선택 — 1차 약물에서 2차 약물까지 받아들이는 모든 흡연자에게 약물(대개 니코틴 패치 또는 바레니클린)을 권하고 상담을 함께한다. 금연일은 몇 주 안으로 협의하고 그 무렵 추적 연락을 잡는다 [[harrison 21: 454장 p.3566]]. 1차 용법: 니코틴 대체요법 3–6개월(고의존은 고용량) · 부프로피온 300 mg/일 분할, 최대 6개월 · 바레니클린 0.5 mg → 8일째 1 mg 하루 두 번, 최대 6개월. 항우울제·바레니클린은 금연일 1–2주 전에 시작한다 [[harrison 21: 454장 p.3566]]. 니코틴 대체요법 + 항우울제, 패치 + 급성 갈망 때 껌·사탕 병합도 성공률을 높인다 [[harrison 21: 454장 p.3566]]. 2차(클로니딘·노르트립틸린)는 1차 약물에 실패했거나 쓸 수 없는 환자에게 남겨 둔다 [[harrison 21: 454장 p.3566]]. 재평가: 금연일 무렵 추적 연락, 이후 흡연 여부·금단·부작용(바레니클린 — 오심·꿈 이상)을 확인한다. 실패하면 다른 형태의 도움으로 다시 시도하고, 짧은 사용에 실패한 사람에게는 더 긴 유지 치료도 유용하다 [[harrison 21: 454장 p.3566]]. 권고와 예외 조언·약물·상담을 합치면 성공이 거의 세 배가 된다 [[harrison 21: 454장 p.3566]] — 약은 상담·금연일 협의·추적과 함께 쓴다. 경련 위험이 없고 우울 증상 병력이 있으면 부프로피온이 유리하다 [[harrison 21: 454장 p.3566]]. 심혈관 질환자에게는 흡연 자체가 가장 큰 위험이다 — 금연하면 두 번째 관상동맥 사건 위험이 6–12개월 안에 줄어든다 [[harrison 21: 454장 p.3564]]. 부프로피온 경련 금기와 바레니클린의 신부전 감량은 해리슨이 아닌 지침·허가 정보의 서술이며 원문을 대조하지 못했다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 부프로피온 경련 금기의 출처 — 시험 기준: 경련 질환 병력이면 발작이 조절돼 있어도 부프로피온 금기 [[?uspshs 2008]] / 다른 기준: 해리슨 454장은 부프로피온을 1차 약물(성공 배수 2.0)로만 적고 금기를 언급하지 않는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 해리슨 장은 약물의 자리만 요약하고 금기는 허가 정보·지침에 맡긴다 / 시험에서는: KMLE · USMLE 모두 「경련 병력 → 부프로피온 금기」를 정답 논리로 쓴다. Z2 충돌 · 니코틴 대체요법 실패 뒤 증량인가 교체인가 — 시험 기준: 충분한 기간 실패했으면 기전이 다른 약(바레니클린) 또는 병합으로 바꾼다 [[harrison 21: 454장 p.3566]] / 다른 기준: 해리슨은 고의존 흡연자에게 니코틴 대체요법 고용량을, 짧은 사용에 실패한 사람에게 장기 유지를 「유용한 전략」으로도 적는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 고용량·장기 유지는 첫 시도의 설계·짧은 사용 실패에 대한 조언이고, 충분한 기간 반복 실패에는 「매 시도마다 다른 형태의 도움」이 앞선다 / 시험에서는: KMLE · USMLE 모두 두 번 충분히 실패 + 다른 1차 약물 가능 → 바레니클린. Z3 새 근거 · 바레니클린의 정신신경 안전성 — 시험 기준: 정신질환 병력만으로 바레니클린을 피하지 않는다 [[?eagles 2016]] / 다른 기준: 해리슨 454장은 이 문제를 다루지 않는다 [[harrison 21: 454장 p.3566]] / 왜 다른가: 과거 미국 FDA 박스 경고가 EAGLES 시험 뒤 삭제됐다는 서술은 이 컨테이너에서 원문을 대조하지 못했다 / 시험에서는: KMLE · USMLE 모두 옛 문항에서 「우울·자살 병력 → 바레니클린 주의」가 나올 수 있으니 발문의 기저 정신질환 여부를 확인한다(검토 항목). (심화) 부분작용제가 금연에 유리한 이유 완전작용제인 니코틴은 수용체를 강하게 자극해 큰 도파민 분비를 만들고, 혈중 농도가 떨어지면 금단이 온다. 부분작용제인 바레니클린은 수용체에 높은 친화도로 붙어 중간 정도의 자극 을 계속 주므로 금단·갈망이 줄고, 동시에 수용체 자리를 차지해 담배를 피워도 니코틴이 추가 보상을 만들지 못한다 — 「피워도 별로」라는 경험이 재발 고리를 끊는다. 이 두 작용 덕분에 바레니클린의 성공 배수(3.1)가 단일 니코틴 제제나 부프로피온(약 2)보다 크다 [[harrison 21: 454장 p.3566]]. 경련 역치에 영향을 주는 도파민·노르에피네프린 재흡수 억제 기전이 없다는 점이 뇌전증 환자에서 바레니클린을 남기는 약리적 이유이기도 하다."
   },
   {
    "id": "cn.psy.serotonin-syndrome.cyproheptadine-refractory",
