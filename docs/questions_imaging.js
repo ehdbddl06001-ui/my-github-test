@@ -2,6 +2,1332 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0314",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "호흡기 — 고유량 산소가 필요한 고령 환자의 입원 처치",
+  "type": "호흡기 — 고유량 산소가 필요한 고령 환자의 입원 처치",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "A 76-year-old woman is admitted to the intensive care unit with COVID-19 pneumonia confirmed by RT-PCR, 6 days after the onset of fever and cough. She requires high-flow nasal cannula oxygen at 50 L/min with an FiO2 of 0.6 to keep oxygen saturation at 92%. She is receiving dexamethasone. A right internal jugular central venous catheter and a nasogastric feeding tube have been placed. Blood pressure is 128/70 mm Hg and pulse is 96/min. She has no history of bleeding, and there is no clinical evidence of deep venous thrombosis. Hemoglobin is 11.8 g/dL, platelet count is 210,000/mm3, creatinine is 0.9 mg/dL, and D-dimer is 2.4 µg/mL (N < 0.5). A portable chest radiograph is shown.",
+  "question": "Which of the following is the most appropriate approach to prevention of venous thromboembolism in this patient?",
+  "options": [
+   "Therapeutic-dose low-molecular-weight heparin",
+   "Low-dose aspirin",
+   "Intermittent pneumatic compression devices alone",
+   "Prophylactic inferior vena cava filter placement",
+   "Prophylactic-dose low-molecular-weight heparin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: The radiograph shows bilateral patchy opacities predominating in the lower and peripheral lungs, consistent with COVID-19 pneumonia; she needs high-flow oxygen in the ICU, so she is critically ill. Hospitalized patients with COVID-19 have a high risk of venous thromboembolism, and without bleeding risk or thrombocytopenia every patient should receive pharmacologic prophylaxis. In critically ill patients, randomized trials found no benefit and more bleeding with therapeutic-dose heparin, so prophylactic-dose low-molecular-weight heparin is recommended even when D-dimer is elevated.\n- 원리: <b>Why COVID-19 raises clotting risk</b>: SARS-CoV-2 infection injures endothelium, activates monocytes and neutrophils (tissue factor, neutrophil extracellular traps), and raises fibrinogen, factor VIII, and von Willebrand factor; add immobility, central venous catheters, and critical illness, and venous thromboembolism becomes common. D-dimer rises as a marker of this activation and of lung microthrombi, not necessarily of a deep venous clot.<br> <b>Why the dose depends on severity</b>: in non-critically ill patients on conventional oxygen, therapeutic-dose heparin reduced progression to organ support, probably by limiting microvascular thrombosis early. Once patients need high-flow oxygen, ventilation, or vasopressors, thrombosis is already established and inflammation dominates; therapeutic-dose heparin then did not improve survival or organ-support-free days and increased major bleeding. Hence prophylactic dosing in the ICU.<br> <b>Practical points</b>: low-molecular-weight heparin is preferred over unfractionated heparin when renal function allows; mechanical devices are reserved for patients with contraindications to anticoagulation; therapeutic anticoagulation is given only for confirmed or strongly suspected thrombosis.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prophylactic dose (correct here)</th><th>Therapeutic dose (closest distractor)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Critically ill</b> — high-flow oxygen, ventilation, vasopressors, ICU</td><td><b>Non-critically ill</b> on conventional oxygen with elevated D-dimer and low bleeding risk</td></tr> <tr><td>Evidence</td><td>Therapeutic dose gave no benefit and more bleeding in ICU trials</td><td>Fewer patients needed organ support in ward trials</td></tr> <tr><td>Also indicated for</td><td>—</td><td>Confirmed DVT or pulmonary embolism at any severity</td></tr> </tbody></table> Decide by severity at the moment of choosing: on the ward with ordinary oxygen and high D-dimer, therapeutic dose may help; in the ICU on high-flow oxygen, use prophylactic dose.\n- 오답 이유:\n  - (A) Therapeutic-dose heparin fits a non-critically ill patient on conventional low-flow oxygen with elevated D-dimer and low bleeding risk, or a confirmed thrombosis; in the ICU it adds bleeding without benefit.\n  - (B) Aspirin is used for arterial thrombosis prevention and in some orthopedic protocols, but trials in hospitalized COVID-19 patients showed no reduction in mortality, and it is not adequate venous prophylaxis.\n  - (C) Pneumatic compression alone is chosen when anticoagulants are contraindicated, such as active bleeding or platelets below 25,000/mm3; this patient has no such contraindication.\n  - (D) An inferior vena cava filter is considered for a patient with acute proximal DVT or PE who cannot receive anticoagulation; it is not used for primary prevention.\n- 함정: Choosing therapeutic dose because D-dimer is high — in critically ill COVID-19 patients the elevated D-dimer does not justify therapeutic anticoagulation.\n- 학습목표: 고유량 산소가 필요한 중환자실 코로나19 폐렴(양쪽 아래·바깥쪽 음영)에서 출혈 위험이 없으면 예방 용량 저분자량헤파린으로 정맥혈전색전증을 예방하고, 치료 용량은 중증 환자에서 이득이 없음을 안다\n- 근거·출처: National Institutes of Health. COVID-19 Treatment Guidelines — Antithrombotic therapy in patients with COVID-19 (prophylactic dose for critically ill, therapeutic dose for selected non-critically ill patients) · REMAP-CAP, ACTIV-4a, ATTACC Investigators. Therapeutic anticoagulation with heparin in critically ill patients with Covid-19. N Engl J Med 2021;385:777-789 · ATTACC, ACTIV-4a, REMAP-CAP Investigators. Therapeutic anticoagulation with heparin in noncritically ill patients with Covid-19. N Engl J Med 2021;385:790-802 · 작성자 판독(2026-10-12, 10-13 재확인): 이동식 반직립 AP 흉부 X선, 양쪽 아래·바깥쪽 우세의 반점 모양 간유리·망상 음영, 왼쪽 아래 폐야 더 진함, 폐용적 작음, 오른쪽 중심정맥 도관·위관·심전도 전극\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …55898679 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The radiograph shows bilateral patchy opacities predominating in the lower and peripheral lungs, consistent with COVID-19 pneumonia; she needs high-flow oxygen in the ICU, so she is critically ill. Hospitalized patients with COVID-19 have a high risk of venous thromboembolism, and without bleeding risk or thrombocytopenia every patient should receive pharmacologic prophylaxis. In critically ill patients, randomized trials found no benefit and more bleeding with therapeutic-dose heparin, so prophylactic-dose low-molecular-weight heparin is recommended even when D-dimer is elevated."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why COVID-19 raises clotting risk</b>: SARS-CoV-2 infection injures endothelium, activates monocytes and neutrophils (tissue factor, neutrophil extracellular traps), and raises fibrinogen, factor VIII, and von Willebrand factor; add immobility, central venous catheters, and critical illness, and venous thromboembolism becomes common. D-dimer rises as a marker of this activation and of lung microthrombi, not necessarily of a deep venous clot.<br> <b>Why the dose depends on severity</b>: in non-critically ill patients on conventional oxygen, therapeutic-dose heparin reduced progression to organ support, probably by limiting microvascular thrombosis early. Once patients need high-flow oxygen, ventilation, or vasopressors, thrombosis is already established and inflammation dominates; therapeutic-dose heparin then did not improve survival or organ-support-free days and increased major bleeding. Hence prophylactic dosing in the ICU.<br> <b>Practical points</b>: low-molecular-weight heparin is preferred over unfractionated heparin when renal function allows; mechanical devices are reserved for patients with contraindications to anticoagulation; therapeutic anticoagulation is given only for confirmed or strongly suspected thrombosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Prophylactic dose (correct here)</th><th>Therapeutic dose (closest distractor)</th></tr></thead><tbody> <tr><td>Who</td><td><b>Critically ill</b> — high-flow oxygen, ventilation, vasopressors, ICU</td><td><b>Non-critically ill</b> on conventional oxygen with elevated D-dimer and low bleeding risk</td></tr> <tr><td>Evidence</td><td>Therapeutic dose gave no benefit and more bleeding in ICU trials</td><td>Fewer patients needed organ support in ward trials</td></tr> <tr><td>Also indicated for</td><td>—</td><td>Confirmed DVT or pulmonary embolism at any severity</td></tr> </tbody></table> Decide by severity at the moment of choosing: on the ward with ordinary oxygen and high D-dimer, therapeutic dose may help; in the ICU on high-flow oxygen, use prophylactic dose."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Therapeutic-dose heparin fits a non-critically ill patient on conventional low-flow oxygen with elevated D-dimer and low bleeding risk, or a confirmed thrombosis; in the ICU it adds bleeding without benefit.\n(B) Aspirin is used for arterial thrombosis prevention and in some orthopedic protocols, but trials in hospitalized COVID-19 patients showed no reduction in mortality, and it is not adequate venous prophylaxis.\n(C) Pneumatic compression alone is chosen when anticoagulants are contraindicated, such as active bleeding or platelets below 25,000/mm3; this patient has no such contraindication.\n(D) An inferior vena cava filter is considered for a patient with acute proximal DVT or PE who cannot receive anticoagulation; it is not used for primary prevention."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing therapeutic dose because D-dimer is high — in critically ill COVID-19 patients the elevated D-dimer does not justify therapeutic anticoagulation."
+   },
+   {
+    "k": "학습목표",
+    "v": "고유량 산소가 필요한 중환자실 코로나19 폐렴(양쪽 아래·바깥쪽 음영)에서 출혈 위험이 없으면 예방 용량 저분자량헤파린으로 정맥혈전색전증을 예방하고, 치료 용량은 중증 환자에서 이득이 없음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "National Institutes of Health. COVID-19 Treatment Guidelines — Antithrombotic therapy in patients with COVID-19 (prophylactic dose for critically ill, therapeutic dose for selected non-critically ill patients) · REMAP-CAP, ACTIV-4a, ATTACC Investigators. Therapeutic anticoagulation with heparin in critically ill patients with Covid-19. N Engl J Med 2021;385:777-789 · ATTACC, ACTIV-4a, REMAP-CAP Investigators. Therapeutic anticoagulation with heparin in noncritically ill patients with Covid-19. N Engl J Med 2021;385:790-802 · 작성자 판독(2026-10-12, 10-13 재확인): 이동식 반직립 AP 흉부 X선, 양쪽 아래·바깥쪽 우세의 반점 모양 간유리·망상 음영, 왼쪽 아래 폐야 더 진함, 폐용적 작음, 오른쪽 중심정맥 도관·위관·심전도 전극 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …55898679 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "고유량 산소가 필요한 중환자실 코로나19 폐렴 환자는 출혈 위험이 없으면 예방 용량 저분자량헤파린을 쓰고, D-이합체가 높아도 치료 용량은 이득이 없다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "중증도 — 고유량 산소·중환자실이면 예방 용량, 일반 병동 저유량 산소면 치료 용량을 고려",
+   "steps": 2,
+   "chain": [
+    "영상: 양쪽 아래·바깥쪽 반점 음영 + 고유량 산소 + 중환자실 → 중증(critically ill) 코로나19 폐렴",
+    "출혈 위험·혈소판감소 없음 + 혈전 진단 없음 → 예방 용량 저분자량헤파린"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 아래·바깥쪽 우세의 반점 모양 음영",
+     "why": "양쪽 폐렴 — 중증 코로나19 폐렴과 맞는다",
+     "also": []
+    },
+    {
+     "item": "high-flow nasal cannula oxygen at 50 L/min with an FiO2 of 0.6",
+     "why": "중증(critically ill) 기준 — 치료 용량의 이득이 없다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no clinical evidence of deep venous thrombosis",
+     "why": "치료 용량이 필요한 확진 혈전 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "She has no history of bleeding",
+     "why": "약물 예방의 금기가 없다",
+     "also": []
+    },
+    {
+     "item": "platelet count is 210,000/mm3",
+     "why": "혈소판감소가 없어 헤파린을 쓸 수 있다",
+     "also": []
+    },
+    {
+     "item": "creatinine is 0.9 mg/dL",
+     "why": "저분자량헤파린을 쓸 수 있는 신기능",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "D-dimer is 2.4 µg/mL",
+     "why": "높지만 중증 환자에서는 용량 결정을 바꾸지 않는다 — 함정",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 폐렴으로 고유량 산소가 필요한 중환자실 코로나19 환자다. 출혈 위험이 없으므로 예방 용량 저분자량헤파린을 쓰며, D-이합체가 높아도 중증 환자에서 치료 용량은 이득 없이 출혈만 늘린다.",
+   "switch": {
+    "choice": "A",
+    "condition": "일반 병동에서 저유량 비강 산소만 필요하고 D-이합체가 높으며 출혈 위험이 낮았다면 치료 용량 헤파린이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0314.png",
+   "caption": "Portable semi-upright anteroposterior chest radiograph; text markers are from the original image (TCIA, CC BY 4.0 — no cropping or adjustment)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1432256249313301365922955898679",
+   "asset_id": "TCIA-COVID19_AR-82422231416527",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …55898679"
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0313",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "순환기",
+  "subject_file": "순환기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "순환기 — 박출률 감소 심부전 환자의 심장 조직 염색과 약",
+  "type": "순환기 — 박출률 감소 심부전 환자의 심장 조직 염색과 약",
+  "modality": "HISTOLOGY_IHC",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "62세 남자가 3개월 전 진단된 박출률 감소 심부전으로 외래에 왔다. 왼심실 박출률은 30 % 이고, 에날라프릴·비소프롤롤·스피로놀락톤을 최대 내약 용량으로 먹고 있다. 계단 한 층을 오르면 숨이 차다. 혈압 112/70 mmHg, 맥박 64회/분이다. 혈청 칼륨 4.6 mEq/L, 크레아티닌 1.1 mg/dL 이다. 같은 연령대 심장근육 조직 절편에 한 단백질에 대한 면역조직화학염색을 하였더니 그림과 같았다.",
+  "question": "그림에서 염색된 물질의 분해를 막아 혈중 농도를 높이는 약은?",
+  "options": [
+   "사쿠비트릴",
+   "발사르탄",
+   "이바브라딘",
+   "디곡신",
+   "하이드랄라진"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 심근세포의 핵 주위 세포질에 굵은 갈색 과립이 모여 염색되었다. 수축 단백질처럼 근원섬유 전체에 고르게 퍼지거나 사이원반에 줄지어 있지 않고, 핵 곁의 분비 과립에 저장된 모양이다. 심근세포가 과립에 저장했다가 벽이 늘어나면 분비하는 펩타이드는 심방나트륨이뇨펩타이드(ANP)이고, ANP 는 네프릴라이신이 분해한다. 네프릴라이신 억제제 사쿠비트릴이 이 펩타이드의 농도를 높이며, 발사르탄과 합친 제제(ARNI)로 에날라프릴을 대신한다.\n- 원리: <b>왜 과립으로 보이는가</b>: 심근세포는 내분비 기능도 가진다. 특히 심방 근육세포는 골지체가 발달한 핵 주위에 ANP 를 담은 분비 과립을 쌓아 두었다가, 심방 벽이 늘어나면 내보낸다. 그래서 면역조직화학염색에서 핵 곁에 모인 갈색 점(과립)으로 보인다. 근수축 단백질(트로포닌·액틴)은 가로무늬를 따라 세포 전체에 고르게, 연결 단백질은 세포 끝 사이원반에 선으로 염색된다.<br> <b>왜 분해를 막으면 좋은가</b>: 나트륨이뇨펩타이드는 cGMP 를 올려 혈관을 넓히고 나트륨 배설을 늘리며 레닌·알도스테론·교감신경을 억제한다 — 심부전에서 RAAS 와 반대 방향의 보상이다. 네프릴라이신은 이 펩타이드를 분해하므로 억제하면 그 이로운 작용이 커진다.<br> <b>왜 ARB 와 함께 써야 하는가</b>: 네프릴라이신은 안지오텐신 II 와 브라디키닌도 분해한다. 단독으로 억제하면 안지오텐신 II 가 늘어 효과가 상쇄되므로 발사르탄과 묶어 쓰고, ACE 억제제와 함께 쓰면 브라디키닌이 쌓여 혈관부종이 생기므로 에날라프릴을 끊고 36시간 뒤에 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">사쿠비트릴(정답)</th><th>발사르탄(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>네프릴라이신</b>(중성 엔도펩티데이스)</td><td><b>AT1 수용체</b></td></tr> <tr><td>나트륨이뇨펩타이드 농도</td><td>분해가 줄어 <b>오른다</b></td><td>직접 바꾸지 않는다</td></tr> <tr><td>단독 사용</td><td>하지 않는다 — 안지오텐신 II 도 늘어나므로 ARB 와 합제</td><td>ACE 억제제를 못 견딜 때 단독 사용</td></tr> <tr><td>ACE 억제제와 병용</td><td>금기 — 36시간 간격(혈관부종)</td><td>권장하지 않는다(고칼륨·신기능 저하)</td></tr> </tbody></table> 합제(사쿠비트릴/발사르탄)의 두 성분 중 펩타이드 농도를 올리는 쪽은 사쿠비트릴이다. 사쿠비트릴 복용 중에는 BNP 가 함께 올라가므로 심부전 추적에는 NT-proBNP 를 쓴다.\n- 오답 이유:\n  - ② 발사르탄은 AT1 수용체를 막아 안지오텐신 II 작용을 줄이는 약이며, 질문이 RAAS 를 막는 약이나 ACE 억제제 기침 때 대체약을 물을 때 정답이 된다.\n  - ③ 이바브라딘은 동방결절의 funny 전류를 막아 심박수만 낮추는 약으로, 베타차단제 최대 용량에도 동리듬 맥박이 70회/분 이상일 때 추가한다.\n  - ④ 디곡신은 Na⁺/K⁺-ATPase 를 억제해 수축력을 높이고 방실결절을 늦추는 약이며, 최적 치료에도 증상이 남거나 심방세동 맥박 조절이 필요할 때 쓴다.\n  - ⑤ 하이드랄라진은 세동맥을 직접 넓히는 약으로, 질산염과 함께 흑인 환자나 ACE 억제제·ARB·ARNI 를 쓸 수 없는 환자에게 쓸 때 정답이 된다.\n- 함정: 합제 이름(사쿠비트릴/발사르탄)만 기억해 발사르탄을 고르는 것 — 펩타이드 분해를 막는 성분은 사쿠비트릴이다.\n- 학습목표: 심근세포 핵 주위 세포질의 과립상 염색을 저장 분비 과립의 나트륨이뇨펩타이드로 읽고, 그 분해 효소(네프릴라이신)를 억제하는 사쿠비트릴과 연결한다\n- 근거·출처: Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032 (ARNI in HFrEF, 36-hour washout from ACE inhibitor) · McMurray JJV, et al. Angiotensin-neprilysin inhibition versus enalapril in heart failure (PARADIGM-HF). N Engl J Med 2014;371:993-1004 · Katzung BG. Basic & Clinical Pharmacology, 15th ed. Ch. Drugs used in heart failure — sacubitril/valsartan, natriuretic peptides · Human Protein Atlas — NPPA, heart muscle (cardiomyocytes, granular cytoplasmic staining; teacher-only) · 작성자 판독(2026-10-13): 심장근육 TMA 코어, 심근세포 핵 주위 세포질의 굵은 갈색 과립상 염색(구역에 따라 강약), 섬유 기질·지방·혈관 음성\n\n## 출처\n- Human Protein Atlas, NPPA / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/58269/133550_B_4_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "심근세포의 핵 주위 세포질에 굵은 갈색 과립이 모여 염색되었다. 수축 단백질처럼 근원섬유 전체에 고르게 퍼지거나 사이원반에 줄지어 있지 않고, 핵 곁의 분비 과립에 저장된 모양이다. 심근세포가 과립에 저장했다가 벽이 늘어나면 분비하는 펩타이드는 심방나트륨이뇨펩타이드(ANP)이고, ANP 는 네프릴라이신이 분해한다. 네프릴라이신 억제제 사쿠비트릴이 이 펩타이드의 농도를 높이며, 발사르탄과 합친 제제(ARNI)로 에날라프릴을 대신한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 과립으로 보이는가</b>: 심근세포는 내분비 기능도 가진다. 특히 심방 근육세포는 골지체가 발달한 핵 주위에 ANP 를 담은 분비 과립을 쌓아 두었다가, 심방 벽이 늘어나면 내보낸다. 그래서 면역조직화학염색에서 핵 곁에 모인 갈색 점(과립)으로 보인다. 근수축 단백질(트로포닌·액틴)은 가로무늬를 따라 세포 전체에 고르게, 연결 단백질은 세포 끝 사이원반에 선으로 염색된다.<br> <b>왜 분해를 막으면 좋은가</b>: 나트륨이뇨펩타이드는 cGMP 를 올려 혈관을 넓히고 나트륨 배설을 늘리며 레닌·알도스테론·교감신경을 억제한다 — 심부전에서 RAAS 와 반대 방향의 보상이다. 네프릴라이신은 이 펩타이드를 분해하므로 억제하면 그 이로운 작용이 커진다.<br> <b>왜 ARB 와 함께 써야 하는가</b>: 네프릴라이신은 안지오텐신 II 와 브라디키닌도 분해한다. 단독으로 억제하면 안지오텐신 II 가 늘어 효과가 상쇄되므로 발사르탄과 묶어 쓰고, ACE 억제제와 함께 쓰면 브라디키닌이 쌓여 혈관부종이 생기므로 에날라프릴을 끊고 36시간 뒤에 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">사쿠비트릴(정답)</th><th>발사르탄(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>표적</td><td><b>네프릴라이신</b>(중성 엔도펩티데이스)</td><td><b>AT1 수용체</b></td></tr> <tr><td>나트륨이뇨펩타이드 농도</td><td>분해가 줄어 <b>오른다</b></td><td>직접 바꾸지 않는다</td></tr> <tr><td>단독 사용</td><td>하지 않는다 — 안지오텐신 II 도 늘어나므로 ARB 와 합제</td><td>ACE 억제제를 못 견딜 때 단독 사용</td></tr> <tr><td>ACE 억제제와 병용</td><td>금기 — 36시간 간격(혈관부종)</td><td>권장하지 않는다(고칼륨·신기능 저하)</td></tr> </tbody></table> 합제(사쿠비트릴/발사르탄)의 두 성분 중 펩타이드 농도를 올리는 쪽은 사쿠비트릴이다. 사쿠비트릴 복용 중에는 BNP 가 함께 올라가므로 심부전 추적에는 NT-proBNP 를 쓴다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 발사르탄은 AT1 수용체를 막아 안지오텐신 II 작용을 줄이는 약이며, 질문이 RAAS 를 막는 약이나 ACE 억제제 기침 때 대체약을 물을 때 정답이 된다.\n③ 이바브라딘은 동방결절의 funny 전류를 막아 심박수만 낮추는 약으로, 베타차단제 최대 용량에도 동리듬 맥박이 70회/분 이상일 때 추가한다.\n④ 디곡신은 Na⁺/K⁺-ATPase 를 억제해 수축력을 높이고 방실결절을 늦추는 약이며, 최적 치료에도 증상이 남거나 심방세동 맥박 조절이 필요할 때 쓴다.\n⑤ 하이드랄라진은 세동맥을 직접 넓히는 약으로, 질산염과 함께 흑인 환자나 ACE 억제제·ARB·ARNI 를 쓸 수 없는 환자에게 쓸 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "합제 이름(사쿠비트릴/발사르탄)만 기억해 발사르탄을 고르는 것 — 펩타이드 분해를 막는 성분은 사쿠비트릴이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심근세포 핵 주위 세포질의 과립상 염색을 저장 분비 과립의 나트륨이뇨펩타이드로 읽고, 그 분해 효소(네프릴라이신)를 억제하는 사쿠비트릴과 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032 (ARNI in HFrEF, 36-hour washout from ACE inhibitor) · McMurray JJV, et al. Angiotensin-neprilysin inhibition versus enalapril in heart failure (PARADIGM-HF). N Engl J Med 2014;371:993-1004 · Katzung BG. Basic & Clinical Pharmacology, 15th ed. Ch. Drugs used in heart failure — sacubitril/valsartan, natriuretic peptides · Human Protein Atlas — NPPA, heart muscle (cardiomyocytes, granular cytoplasmic staining; teacher-only) · 작성자 판독(2026-10-13): 심장근육 TMA 코어, 심근세포 핵 주위 세포질의 굵은 갈색 과립상 염색(구역에 따라 강약), 섬유 기질·지방·혈관 음성 ## 출처 Human Protein Atlas, NPPA / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/58269/133550_B_4_6.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "심근세포 핵 주위의 과립상 염색은 저장 분비 과립의 나트륨이뇨펩타이드(ANP)이고, 그 분해 효소 네프릴라이신을 억제하는 사쿠비트릴이 농도를 높인다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "합제의 두 성분 중 펩타이드 분해를 막는 것은 사쿠비트릴이고, 발사르탄은 AT1 수용체만 막는다",
+   "steps": 2,
+   "chain": [
+    "영상: 심근세포 핵 주위 세포질의 과립상 갈색 염색 → 분비 과립에 저장된 나트륨이뇨펩타이드(ANP)",
+    "ANP 는 네프릴라이신이 분해 → 네프릴라이신 억제제 사쿠비트릴이 농도를 높인다"
+   ],
+   "key": [
+    {
+     "item": "영상: 심근세포 핵 주위 세포질의 굵은 갈색 과립상 염색",
+     "why": "분비 과립 — 수축·연결 단백질의 고른/선상 염색과 다르다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "맥박 64회/분",
+     "why": "이바브라딘 추가 기준(70회/분 이상)에 못 미친다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "에날라프릴·비소프롤롤·스피로놀락톤을 최대 내약 용량으로 먹고 있다",
+     "why": "ARNI 로 바꾸려면 에날라프릴을 끊고 36시간 기다린다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "박출률 감소 심부전",
+     "why": "임상 맥락 — 정답은 염색된 물질의 대사 경로가 가른다",
+     "also": []
+    },
+    {
+     "item": "혈청 칼륨 4.6 mEq/L",
+     "why": "RAAS 차단제 사용 중 확인할 값이지만 답을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "심근세포 핵 곁에 과립상으로 모인 염색은 분비 과립에 저장된 나트륨이뇨펩타이드다. 이 펩타이드는 네프릴라이신이 분해하므로 사쿠비트릴이 농도를 높이고, 합제의 다른 성분인 발사르탄은 AT1 수용체를 막을 뿐이다.",
+   "switch": {
+    "choice": "B",
+    "condition": "질문이 「안지오텐신 II 의 AT1 수용체 결합을 막는 약」이었다면 발사르탄이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0313.jpg",
+   "caption": "조직미세배열 코어의 면역조직화학염색(DAB 갈색 발색, 헤마톡실린 대조염색), 원 배율 (Human Protein Atlas, CC BY 4.0 — 크롭·보정 없음)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000175206-NPPA/tissue/Heart+muscle",
+   "asset_id": "HPA-NPPA_133550_B_4_6",
+   "text": "Human Protein Atlas, NPPA / Heart muscle (CC BY 4.0), https://images.proteinatlas.org/58269/133550_B_4_6.jpg"
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0312",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "안과",
+  "subject_file": "안과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "안과 — 교통사고로 얼굴을 부딪친 뒤 눈 주위 부종",
+  "type": "안과 — 교통사고로 얼굴을 부딪친 뒤 눈 주위 부종",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "A 60-year-old woman is brought to the emergency department 1 hour after a motor vehicle collision in which her face struck the steering wheel. She reports pain and swelling around the left eye. Blood pressure is 134/82 mm Hg and pulse is 92/min. There is marked swelling and ecchymosis of the left eyelids. Visual acuity is 20/25 in both eyes. The pupils are equal and reactive to light, with no relative afferent pupillary defect. Intraocular pressure is 17 mm Hg in the left eye. A coronal CT scan of the facial bones is shown.",
+  "question": "Further examination of this patient is most likely to show which of the following?",
+  "options": [
+   "Decreased sensation over the left cheek and upper lip",
+   "Decreased sensation over the left forehead and scalp",
+   "Left ptosis with a fixed, dilated pupil and complete ophthalmoplegia",
+   "Clear watery nasal discharge that increases on leaning forward",
+   "Loss of taste over the left anterior two-thirds of the tongue"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The coronal CT shows a comminuted fracture of the left orbital floor with bone fragments displaced into the left maxillary sinus (arrows), which is completely opacified by blood; the right maxillary sinus is aerated. The infraorbital nerve (a branch of V2) runs in a groove and canal in the orbital floor, so a floor (blowout) fracture commonly injures it, causing numbness of the cheek, side of the nose, upper lip, and upper gingiva.\n- 원리: <b>Why the orbital floor breaks</b>: a blow to the orbit raises intraorbital pressure, and the force is released through the thinnest walls — the floor over the maxillary sinus (especially medial to the infraorbital canal) and the medial wall (lamina papyracea). The stronger orbital rim may remain intact, hence the term blowout fracture.<br> <b>Why the cheek goes numb</b>: the infraorbital nerve, the terminal branch of the maxillary division (V2), travels forward in the infraorbital groove and canal within the orbital floor and exits at the infraorbital foramen to supply the lower eyelid, cheek, lateral nose, and upper lip. A fracture line through the floor stretches or compresses the nerve, and hypesthesia in this distribution is one of the most common findings with floor fractures.<br> <b>What else to look for</b>: entrapment of the inferior rectus or surrounding fat causes limited upward gaze and vertical diplopia (urgent in children with a trapdoor fracture and oculocardiac reflex); enophthalmos may develop as swelling subsides. Vision, pupils, and intraocular pressure are checked first to exclude globe rupture, traumatic optic neuropathy, and orbital compartment syndrome.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Orbital floor fracture (correct)</th><th>Superior orbital rim/roof injury (closest distractor)</th></tr></thead><tbody> <tr><td>Nerve at risk</td><td><b>Infraorbital nerve (V2)</b> in the floor</td><td><b>Supraorbital nerve (V1)</b> at the superior rim</td></tr> <tr><td>Numb area</td><td>Cheek, lateral nose, upper lip, upper teeth</td><td>Forehead and anterior scalp</td></tr> <tr><td>Sinus finding on CT</td><td>Blood in the maxillary sinus beneath the orbit</td><td>Blood in the frontal sinus, possible intracranial air</td></tr> </tbody></table> Match the fractured wall to the nerve that runs in it: floor → infraorbital (V2), roof and superior rim → supraorbital (V1), superior orbital fissure → CN III, IV, V1, VI.\n- 오답 이유:\n  - (B) Forehead and scalp numbness is caused by injury to the supraorbital nerve (V1) and is expected with a superior orbital rim or roof fracture, not a floor fracture into the maxillary sinus.\n  - (C) Ptosis, a fixed dilated pupil, and complete ophthalmoplegia indicate superior orbital fissure syndrome or orbital apex injury involving CN III, IV, and VI; the reactive pupils and posterior orbit make it unlikely here.\n  - (D) Positional clear rhinorrhea suggests cerebrospinal fluid leak from a fracture of the cribriform plate or frontal sinus posterior wall; this CT shows a floor fracture into the maxillary sinus with intact anterior skull base.\n  - (E) Loss of taste on the anterior two-thirds of the tongue indicates injury to the chorda tympani branch of the facial nerve, as in a temporal bone fracture, which is not related to the orbit.\n- 함정: Thinking of the orbit as supplied by V1 alone — the floor carries the infraorbital nerve, a branch of V2, so cheek and upper lip numbness accompany floor fractures.\n- 학습목표: 안면골 관상 CT 에서 안와바닥 골절과 위턱굴 혈액을 읽고, 안와바닥 아래 고랑을 지나는 눈확아래신경 손상(뺨·윗입술 감각저하)을 예측한다\n- 근거·출처: Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — orbital floor blowout fracture (infraorbital nerve anesthesia, diplopia, enophthalmos) · Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy, 8th ed. Ch. Head — orbit, maxillary nerve and infraorbital canal · PMC13286041 Figure 2 — case report, 60-year-old woman after a motor vehicle collision (teacher-only) · 작성자 판독(2026-10-13): 관상 CT 뼈 창, 왼쪽 안와바닥 분절 골절과 위턱굴로 내려앉은 골편(원 그림 빨간 화살표), 왼쪽 위턱굴 전체 혼탁, 오른쪽 위턱굴 공기, 안와 지붕·사골판 이상 소견 없음\n\n## 출처\n- Emergency Lateral Canthotomy for Orbital Compartment Syndrome After a Motor Vehicle Collision at a Nontrauma Hospital. Cureus. 2026 May 23;18(5):e109510. doi: 10.7759/cureus.109510 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The coronal CT shows a comminuted fracture of the left orbital floor with bone fragments displaced into the left maxillary sinus (arrows), which is completely opacified by blood; the right maxillary sinus is aerated. The infraorbital nerve (a branch of V2) runs in a groove and canal in the orbital floor, so a floor (blowout) fracture commonly injures it, causing numbness of the cheek, side of the nose, upper lip, and upper gingiva."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the orbital floor breaks</b>: a blow to the orbit raises intraorbital pressure, and the force is released through the thinnest walls — the floor over the maxillary sinus (especially medial to the infraorbital canal) and the medial wall (lamina papyracea). The stronger orbital rim may remain intact, hence the term blowout fracture.<br> <b>Why the cheek goes numb</b>: the infraorbital nerve, the terminal branch of the maxillary division (V2), travels forward in the infraorbital groove and canal within the orbital floor and exits at the infraorbital foramen to supply the lower eyelid, cheek, lateral nose, and upper lip. A fracture line through the floor stretches or compresses the nerve, and hypesthesia in this distribution is one of the most common findings with floor fractures.<br> <b>What else to look for</b>: entrapment of the inferior rectus or surrounding fat causes limited upward gaze and vertical diplopia (urgent in children with a trapdoor fracture and oculocardiac reflex); enophthalmos may develop as swelling subsides. Vision, pupils, and intraocular pressure are checked first to exclude globe rupture, traumatic optic neuropathy, and orbital compartment syndrome."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Orbital floor fracture (correct)</th><th>Superior orbital rim/roof injury (closest distractor)</th></tr></thead><tbody> <tr><td>Nerve at risk</td><td><b>Infraorbital nerve (V2)</b> in the floor</td><td><b>Supraorbital nerve (V1)</b> at the superior rim</td></tr> <tr><td>Numb area</td><td>Cheek, lateral nose, upper lip, upper teeth</td><td>Forehead and anterior scalp</td></tr> <tr><td>Sinus finding on CT</td><td>Blood in the maxillary sinus beneath the orbit</td><td>Blood in the frontal sinus, possible intracranial air</td></tr> </tbody></table> Match the fractured wall to the nerve that runs in it: floor → infraorbital (V2), roof and superior rim → supraorbital (V1), superior orbital fissure → CN III, IV, V1, VI."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Forehead and scalp numbness is caused by injury to the supraorbital nerve (V1) and is expected with a superior orbital rim or roof fracture, not a floor fracture into the maxillary sinus.\n(C) Ptosis, a fixed dilated pupil, and complete ophthalmoplegia indicate superior orbital fissure syndrome or orbital apex injury involving CN III, IV, and VI; the reactive pupils and posterior orbit make it unlikely here.\n(D) Positional clear rhinorrhea suggests cerebrospinal fluid leak from a fracture of the cribriform plate or frontal sinus posterior wall; this CT shows a floor fracture into the maxillary sinus with intact anterior skull base.\n(E) Loss of taste on the anterior two-thirds of the tongue indicates injury to the chorda tympani branch of the facial nerve, as in a temporal bone fracture, which is not related to the orbit."
+   },
+   {
+    "k": "함정",
+    "v": "Thinking of the orbit as supplied by V1 alone — the floor carries the infraorbital nerve, a branch of V2, so cheek and upper lip numbness accompany floor fractures."
+   },
+   {
+    "k": "학습목표",
+    "v": "안면골 관상 CT 에서 안와바닥 골절과 위턱굴 혈액을 읽고, 안와바닥 아래 고랑을 지나는 눈확아래신경 손상(뺨·윗입술 감각저하)을 예측한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kanski's Clinical Ophthalmology, 9th ed. Ch. Trauma — orbital floor blowout fracture (infraorbital nerve anesthesia, diplopia, enophthalmos) · Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy, 8th ed. Ch. Head — orbit, maxillary nerve and infraorbital canal · PMC13286041 Figure 2 — case report, 60-year-old woman after a motor vehicle collision (teacher-only) · 작성자 판독(2026-10-13): 관상 CT 뼈 창, 왼쪽 안와바닥 분절 골절과 위턱굴로 내려앉은 골편(원 그림 빨간 화살표), 왼쪽 위턱굴 전체 혼탁, 오른쪽 위턱굴 공기, 안와 지붕·사골판 이상 소견 없음 ## 출처 Emergency Lateral Canthotomy for Orbital Compartment Syndrome After a Motor Vehicle Collision at a Nontrauma Hospital. Cureus. 2026 May 23;18(5):e109510. doi: 10.7759/cureus.109510 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "관상 CT 에서 왼쪽 안와바닥이 부서져 위턱굴로 내려앉았으므로, 안와바닥을 지나는 눈확아래신경(V2) 손상으로 뺨·윗입술 감각저하가 가장 흔히 동반된다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "골절이 안와 지붕·위테두리가 아니라 위턱굴 위의 바닥에 있다 — 눈확위신경(V1)이 아니라 눈확아래신경(V2) 영역",
+   "steps": 2,
+   "chain": [
+    "영상: 왼쪽 안와바닥 분절 골절 + 위턱굴로 내려앉은 골편 + 위턱굴 혈액 → 안와바닥 파열골절",
+    "안와바닥에는 눈확아래신경(V2)이 지난다 → 뺨·윗입술 감각저하"
+   ],
+   "key": [
+    {
+     "item": "영상: 왼쪽 안와바닥의 분절 골절과 위턱굴로 내려앉은 골편",
+     "why": "골절된 벽이 바닥임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "영상: 왼쪽 위턱굴 전체 혼탁",
+     "why": "바닥 골절에 동반된 위턱굴 출혈",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The pupils are equal and reactive to light, with no relative afferent pupillary defect",
+     "why": "외상성 시신경병증·안와첨단 손상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Intraocular pressure is 17 mm Hg in the left eye",
+     "why": "안와구획증후군 가능성을 낮춘다 — 응급 외측 눈구석절개는 필요 없다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "Visual acuity is 20/25 in both eyes",
+     "why": "안구 파열·시신경 손상 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "her face struck the steering wheel",
+     "why": "안와 둔상의 기전 — 어느 벽이 부러졌는지는 영상이 알려 준다",
+     "also": []
+    }
+   ],
+   "summary": "관상 CT 에서 왼쪽 안와바닥이 부서져 골편이 위턱굴로 내려앉았고 위턱굴은 피로 차 있다. 바닥을 지나는 눈확아래신경(V2) 손상으로 뺨·윗입술 감각저하가 동반되며, 이마 감각저하(V1)는 위테두리·지붕 골절에서 온다.",
+   "switch": {
+    "choice": "B",
+    "condition": "CT 에서 골절이 안와 위테두리와 이마굴 앞벽에 있었다면 이마·두피 감각저하(눈확위신경)가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0312.jpg",
+   "caption": "Coronal CT of the facial bones, bone window; red arrows are from the original figure (PMC Open Access Subset, CC BY — no cropping or adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13286041/",
+   "asset_id": "PMC-PMC13286041_Figure2",
+   "text": "Emergency Lateral Canthotomy for Orbital Compartment Syndrome After a Motor Vehicle Collision at a Nontrauma Hospital. Cureus. 2026 May 23;18(5):e109510. doi: 10.7759/cureus.109510 (CC BY) — Figure 2"
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0311",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "산과 — 양막 파열 뒤 분만 중 태아심박동 기록",
+  "type": "산과 — 양막 파열 뒤 분만 중 태아심박동 기록",
+  "modality": "CTG",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "27세 초산부가 임신 40주에 진통으로 입원하였다. 임신 경과는 정상이었다. 입원 6시간째 자궁경부는 7 cm 열렸고 2시간 전 자연적으로 양막이 터져 맑은 양수가 나왔다. 체온 36.8 °C, 혈압 118/72 mmHg, 맥박 88회/분이다. 진통은 손으로 만져 2~3분 간격이다. 외부 자궁수축 탐촉자가 미끄러져 자궁활동은 기록되지 않았다. 지속 태아심박동 감시 기록의 10분 구간은 그림과 같다.",
+  "question": "반복되는 감속의 기전으로 가장 적절한 것은?",
+  "options": [
+   "자궁태반 관류 저하",
+   "태아 빈혈",
+   "태아 수면 주기",
+   "탯줄 압박",
+   "태아 머리 압박"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 기저 태아심박동은 약 140회/분이다. 감속은 몇 초 만에 80~95회/분까지 떨어졌다가(시작에서 최저점까지 30초 미만) 다시 급격히 회복하는 V·U 모양이고, 46분 이후 거의 매분 반복된다. 이처럼 하강이 급격한 감속은 자궁수축과의 시간 관계와 무관하게 변이감속으로 정의하며, 양막이 터진 뒤 탯줄이 눌려 생기는 반사 반응이다.\n- 원리: <b>왜 모양만으로 갈리는가</b>: 감속의 종류는 원인 반사의 속도가 다르기 때문에 하강 속도로 나뉜다. 탯줄이 눌리면 먼저 얇은 벽의 정맥이 막혀 태아 혈액량이 줄고, 이어 동맥이 막히면 태아 말초저항이 갑자기 올라 압수용체가 미주신경을 통해 <b>몇 초 만에</b> 심박을 떨어뜨린다. 압박이 풀리면 같은 속도로 돌아온다 — 그래서 급격한 하강·급격한 회복(변이감속)이다.<br> <b>만기감속은 왜 느린가</b>: 자궁수축 때 융모사이 공간의 혈류가 줄면 태아 혈중 산소가 서서히 떨어지고, 화학수용체 반사와 심근 저산소가 뒤따라 작동하므로 하강이 30초 이상에 걸쳐 완만하고 수축 최고점보다 늦게 최저점이 온다.<br> <b>처치로 이어지는 의미</b>: 반복되는 변이감속은 산모 체위 변경, 옥시토신 감량, 양막이 터졌다면 양수주입으로 탯줄 압박을 줄인다. 감속 사이 변이도가 유지되면 아직 산증이 진행하지 않았다는 뜻이고, 변이도가 사라지면 범주 III 로 서둘러 분만한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">변이감속(정답 — 탯줄 압박)</th><th>만기감속(가장 가까운 오답 — 자궁태반 관류 저하)</th></tr></thead><tbody> <tr><td>시작 → 최저점</td><td><b>30초 미만</b>(급격)</td><td><b>30초 이상</b>(완만)</td></tr> <tr><td>자궁수축과의 관계</td><td>일정하지 않다 — 수축 기록 없이도 판정 가능</td><td>수축 최고점보다 늦게 최저점, 수축이 끝난 뒤 회복</td></tr> <tr><td>모양</td><td>V·U·W 모양, 깊이가 제각각</td><td>매번 비슷한 얕고 둥근 모양</td></tr> <tr><td>반사 경로</td><td>압수용체 → 미주신경</td><td>화학수용체·심근 저산소</td></tr> </tbody></table> 수축 기록이 없을 때 만기·조기감속은 판정할 수 없지만, 변이감속은 하강 속도만으로 판정할 수 있다 — 30초가 경계다.\n- 오답 이유:\n  - ① 자궁태반 관류 저하는 만기감속의 기전으로, 매 수축마다 완만하게 내려가 수축 최고점보다 늦게 최저점에 이르는 감속일 때 정답이 된다.\n  - ② 태아 빈혈은 사인파형의 원인으로, 진폭이 고른 매끄러운 물결이 분당 3~5회 반복되고 변이도와 가속이 없을 때 정답이 된다.\n  - ③ 태아 수면 주기는 20~40분 동안 변이도가 최소로 줄어드는 원인이며, 감속을 만들지 않으므로 감속이 없는 평평한 기록일 때 정답이 된다.\n  - ⑤ 태아 머리 압박은 조기감속의 기전으로, 수축과 거울상으로 완만하게(30초 이상) 내려갔다가 수축이 끝나면 회복하는 얕은 감속일 때 정답이 된다.\n- 함정: 자궁수축이 기록되지 않았으니 감속을 판정할 수 없다고 보거나, 깊은 감속을 모두 만기감속으로 여기는 것 — 변이감속은 하강 속도만으로 정의된다.\n- 학습목표: 자궁수축 기록이 없어도 감속의 모양(시작에서 최저점까지 30초 미만의 급격한 하강과 회복)으로 변이감속을 읽고, 그 기전을 탯줄 압박으로 연결한다\n- 근거·출처: American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · Macones GA, et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661-666 · Chudáček V, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth 2014;14:16 (CTU-UHB, PhysioNet) · 작성자 판독(2026-10-13): 기저 약 140회/분, 40.7·41.5·44.2분과 46분 이후 거의 매분 반복되는 급격한 V·U 모양 감속(최저 80~95회/분, 44.2분 감속 약 50초), 감속 사이 변이도 5~10회/분, 자궁활동 채널 평탄(미기록)\n\n## 출처\n- CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1359 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "기저 태아심박동은 약 140회/분이다. 감속은 몇 초 만에 80~95회/분까지 떨어졌다가(시작에서 최저점까지 30초 미만) 다시 급격히 회복하는 V·U 모양이고, 46분 이후 거의 매분 반복된다. 이처럼 하강이 급격한 감속은 자궁수축과의 시간 관계와 무관하게 변이감속으로 정의하며, 양막이 터진 뒤 탯줄이 눌려 생기는 반사 반응이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 모양만으로 갈리는가</b>: 감속의 종류는 원인 반사의 속도가 다르기 때문에 하강 속도로 나뉜다. 탯줄이 눌리면 먼저 얇은 벽의 정맥이 막혀 태아 혈액량이 줄고, 이어 동맥이 막히면 태아 말초저항이 갑자기 올라 압수용체가 미주신경을 통해 <b>몇 초 만에</b> 심박을 떨어뜨린다. 압박이 풀리면 같은 속도로 돌아온다 — 그래서 급격한 하강·급격한 회복(변이감속)이다.<br> <b>만기감속은 왜 느린가</b>: 자궁수축 때 융모사이 공간의 혈류가 줄면 태아 혈중 산소가 서서히 떨어지고, 화학수용체 반사와 심근 저산소가 뒤따라 작동하므로 하강이 30초 이상에 걸쳐 완만하고 수축 최고점보다 늦게 최저점이 온다.<br> <b>처치로 이어지는 의미</b>: 반복되는 변이감속은 산모 체위 변경, 옥시토신 감량, 양막이 터졌다면 양수주입으로 탯줄 압박을 줄인다. 감속 사이 변이도가 유지되면 아직 산증이 진행하지 않았다는 뜻이고, 변이도가 사라지면 범주 III 로 서둘러 분만한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">변이감속(정답 — 탯줄 압박)</th><th>만기감속(가장 가까운 오답 — 자궁태반 관류 저하)</th></tr></thead><tbody> <tr><td>시작 → 최저점</td><td><b>30초 미만</b>(급격)</td><td><b>30초 이상</b>(완만)</td></tr> <tr><td>자궁수축과의 관계</td><td>일정하지 않다 — 수축 기록 없이도 판정 가능</td><td>수축 최고점보다 늦게 최저점, 수축이 끝난 뒤 회복</td></tr> <tr><td>모양</td><td>V·U·W 모양, 깊이가 제각각</td><td>매번 비슷한 얕고 둥근 모양</td></tr> <tr><td>반사 경로</td><td>압수용체 → 미주신경</td><td>화학수용체·심근 저산소</td></tr> </tbody></table> 수축 기록이 없을 때 만기·조기감속은 판정할 수 없지만, 변이감속은 하강 속도만으로 판정할 수 있다 — 30초가 경계다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 자궁태반 관류 저하는 만기감속의 기전으로, 매 수축마다 완만하게 내려가 수축 최고점보다 늦게 최저점에 이르는 감속일 때 정답이 된다.\n② 태아 빈혈은 사인파형의 원인으로, 진폭이 고른 매끄러운 물결이 분당 3~5회 반복되고 변이도와 가속이 없을 때 정답이 된다.\n③ 태아 수면 주기는 20~40분 동안 변이도가 최소로 줄어드는 원인이며, 감속을 만들지 않으므로 감속이 없는 평평한 기록일 때 정답이 된다.\n⑤ 태아 머리 압박은 조기감속의 기전으로, 수축과 거울상으로 완만하게(30초 이상) 내려갔다가 수축이 끝나면 회복하는 얕은 감속일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "자궁수축이 기록되지 않았으니 감속을 판정할 수 없다고 보거나, 깊은 감속을 모두 만기감속으로 여기는 것 — 변이감속은 하강 속도만으로 정의된다."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁수축 기록이 없어도 감속의 모양(시작에서 최저점까지 30초 미만의 급격한 하강과 회복)으로 변이감속을 읽고, 그 기전을 탯줄 압박으로 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, and general management principles. Obstet Gynecol 2009;114:192-202 · Macones GA, et al. The 2008 NICHD workshop report on electronic fetal monitoring. Obstet Gynecol 2008;112:661-666 · Chudáček V, et al. Open access intrapartum CTG database. BMC Pregnancy Childbirth 2014;14:16 (CTU-UHB, PhysioNet) · 작성자 판독(2026-10-13): 기저 약 140회/분, 40.7·41.5·44.2분과 46분 이후 거의 매분 반복되는 급격한 V·U 모양 감속(최저 80~95회/분, 44.2분 감속 약 50초), 감속 사이 변이도 5~10회/분, 자궁활동 채널 평탄(미기록) ## 출처 CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1359 · Open Data Commons Attribution License v1.0 · https://opendatacommons.org/licenses/by/1-0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "감속이 시작에서 최저점까지 30초 미만으로 급격하게 떨어지고 회복하므로 변이감속이며, 변이감속은 탯줄 압박에 대한 압수용체·미주신경 반사다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "하강이 완만(30초 이상)하지 않고 몇 초 만에 떨어진다 — 만기감속이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 시작에서 최저점까지 30초 미만의 급격한 하강과 회복이 반복 → 변이감속",
+    "변이감속 + 양막이 터진 상태 → 탯줄 압박의 미주신경 반사"
+   ],
+   "key": [
+    {
+     "item": "영상: 몇 초 만에 80~95회/분까지 떨어졌다가 급격히 회복하는 V·U 모양 감속",
+     "why": "변이감속의 정의(시작→최저점 30초 미만)",
+     "also": []
+    },
+    {
+     "item": "2시간 전 자연적으로 양막이 터져",
+     "why": "양수가 줄어 탯줄이 눌리기 쉬운 상태",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "외부 자궁수축 탐촉자가 미끄러져 자궁활동은 기록되지 않았다",
+     "why": "수축과의 시간 관계로 만기·조기감속을 판정할 근거가 없다 — 모양으로 판정한다",
+     "also": []
+    },
+    {
+     "item": "체온 36.8 °C",
+     "why": "산모 발열로 인한 태아빈맥 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "맑은 양수",
+     "why": "태변 착색이 없다는 정보지만 감속의 종류를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "수축 기록이 없지만 감속이 몇 초 만에 떨어지고 급격히 회복하므로 변이감속이다. 양막이 터진 뒤 탯줄이 눌려 생기는 미주신경 반사이며, 완만한 하강의 만기감속(자궁태반 관류 저하)과 하강 속도로 가른다.",
+   "switch": {
+    "choice": "A",
+    "condition": "감속이 매 수축마다 30초 이상에 걸쳐 완만히 내려가 수축 최고점보다 늦게 최저점에 이르렀다면 자궁태반 관류 저하(만기감속)가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0311.png",
+   "caption": "분만 중 태아심박동(위)과 자궁활동(아래), 기록 40~50분 구간, 굵은 세로선 = 1분 (PhysioNet CTU-UHB, ODC-BY 1.0 — 4 Hz 원자료, 평활화 없음)",
+   "alt": "CTG 영상"
+  },
+  "attribution": {
+   "dataset": "CTU-UHB Intrapartum Cardiotocography Database",
+   "license": "Open Data Commons Attribution License v1.0",
+   "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+   "url": "https://physionet.org/content/ctu-uhb-ctgdb/1.0.0/",
+   "asset_id": "CTU-1359_40m",
+   "text": "CTU-UHB Intrapartum Cardiotocography Database (PhysioNet, ODC-BY 1.0) · record 1359"
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0320",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "내분비·대사 — 반복되는 저혈당으로 쓰러진 간호사",
+  "type": "내분비·대사 — 반복되는 저혈당으로 쓰러진 간호사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-13",
+  "vignette": "A 34-year-old woman who works as an intensive care unit nurse is brought to the emergency department after she was found confused at home; her fingerstick glucose was 32 mg/dL, and she recovered within minutes after intravenous dextrose. She has had three similar episodes in the past 2 months. She has no history of diabetes mellitus and says she takes no medications. Her mother has type 2 diabetes mellitus treated with glipizide and insulin glargine. Blood pressure is 118/74 mm Hg and pulse is 88/min. BMI is 23 kg/m2. Examination is normal. During a supervised fast, symptoms of hypoglycemia occur at 14 hours. Laboratory studies at that time show: glucose 38 mg/dL, insulin 48 µU/mL (N < 3 when glucose < 55 mg/dL), C-peptide 0.1 ng/mL (N > 0.6 if insulin-mediated), proinsulin 2 pmol/L (N > 5 if insulin-mediated), and beta-hydroxybutyrate 0.1 mmol/L. A screen for sulfonylureas and meglitinides is negative.",
+  "question": "Which of the following is the most likely cause of this patient's hypoglycemia?",
+  "options": [
+   "Insulin-secreting pancreatic islet cell tumor",
+   "Surreptitious ingestion of a sulfonylurea",
+   "Autoantibodies against the insulin receptor",
+   "Primary adrenal insufficiency",
+   "Surreptitious administration of exogenous insulin"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: During the fast she has hypoglycemia with an inappropriately high insulin level and suppressed beta-hydroxybutyrate, so the hypoglycemia is insulin-mediated. The pancreas releases insulin and C-peptide in equal amounts after cleaving proinsulin, so endogenous hyperinsulinism (insulinoma or sulfonylurea) raises C-peptide and proinsulin. Here C-peptide and proinsulin are suppressed and the sulfonylurea screen is negative, which means the insulin came from outside: surreptitious insulin injection, made plausible by her access to insulin at work and at home.\n- 원리: <b>Why C-peptide separates the source</b>: beta cells make proinsulin and cleave it into insulin and C-peptide, secreting them in a 1:1 molar ratio. Commercial insulin contains no C-peptide. Injected insulin lowers glucose and also suppresses the patient's own beta cells, so C-peptide and proinsulin fall while insulin is high — a combination that only exogenous insulin produces.<br> <b>Why ketones matter</b>: insulin inhibits lipolysis and ketogenesis, so insulin-mediated hypoglycemia shows low beta-hydroxybutyrate (< 2.7 mmol/L); non-insulin causes (adrenal insufficiency, starvation) give high ketones. This is the first branch point.<br> <b>Why the drug screen is still needed</b>: sulfonylureas and meglitinides close beta-cell K-ATP channels, so they raise insulin, C-peptide, and proinsulin exactly like an insulinoma; only a drug screen separates them. Insulin autoantibodies (insulin autoimmune syndrome) bind and later release insulin, giving very high insulin with variably elevated C-peptide and positive antibodies, usually postprandially.\n- 비교: <table><thead><tr><th style=\"width:24%\">Finding at hypoglycemia</th><th style=\"width:38%\">Exogenous insulin (correct)</th><th>Insulinoma (closest distractor)</th></tr></thead><tbody> <tr><td>Insulin</td><td>High (often very high)</td><td>High</td></tr> <tr><td>C-peptide</td><td><b>Low</b> (&lt; 0.2 ng/mL)</td><td><b>High</b> (≥ 0.6 ng/mL)</td></tr> <tr><td>Proinsulin</td><td>Low</td><td>High (≥ 5 pmol/L)</td></tr> <tr><td>Sulfonylurea screen</td><td>Negative</td><td>Negative (positive only with drug ingestion)</td></tr> </tbody></table> Read in order: ketones low → insulin-mediated; then C-peptide — low means injected insulin, high means the pancreas (tumor or sulfonylurea, separated by the drug screen).\n- 오답 이유:\n  - (A) An insulinoma produces fasting hypoglycemia with high insulin, high C-peptide (≥ 0.6 ng/mL), high proinsulin, and a negative drug screen; it would be the answer if C-peptide were elevated.\n  - (B) Sulfonylurea ingestion raises insulin and C-peptide and proinsulin together because it stimulates the beta cell; it becomes the answer with elevated C-peptide and a positive drug screen.\n  - (C) Insulin receptor antibodies (type B insulin resistance) usually cause severe insulin resistance with acanthosis nigricans in autoimmune disease; hypoglycemia occurs with suppressed insulin and C-peptide levels.\n  - (D) Primary adrenal insufficiency causes hypoglycemia with low insulin and high ketones, with hyperpigmentation, hypotension, and hyponatremia with hyperkalemia — none of which is present.\n- 함정: Seeing a high insulin level and choosing insulinoma — without a matching rise in C-peptide and proinsulin, the insulin did not come from her pancreas.\n- 학습목표: 공복 저혈당에서 인슐린이 높고 C-펩타이드·프로인슐린이 낮으며 설폰요소 선별이 음성이면 외인성 인슐린 투여로 판단하고, 인슐린종·설폰요소 복용과 구분한다\n- 근거·출처: Cryer PE, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2009;94:709-728 · Williams Textbook of Endocrinology, 14th ed. Ch. Hypoglycemia — diagnostic criteria for insulin-mediated hypoglycemia during a 72-hour fast · Harrison's Principles of Internal Medicine, 21st ed. Ch. Hypoglycemia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "During the fast she has hypoglycemia with an inappropriately high insulin level and suppressed beta-hydroxybutyrate, so the hypoglycemia is insulin-mediated. The pancreas releases insulin and C-peptide in equal amounts after cleaving proinsulin, so endogenous hyperinsulinism (insulinoma or sulfonylurea) raises C-peptide and proinsulin. Here C-peptide and proinsulin are suppressed and the sulfonylurea screen is negative, which means the insulin came from outside: surreptitious insulin injection, made plausible by her access to insulin at work and at home."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why C-peptide separates the source</b>: beta cells make proinsulin and cleave it into insulin and C-peptide, secreting them in a 1:1 molar ratio. Commercial insulin contains no C-peptide. Injected insulin lowers glucose and also suppresses the patient's own beta cells, so C-peptide and proinsulin fall while insulin is high — a combination that only exogenous insulin produces.<br> <b>Why ketones matter</b>: insulin inhibits lipolysis and ketogenesis, so insulin-mediated hypoglycemia shows low beta-hydroxybutyrate (< 2.7 mmol/L); non-insulin causes (adrenal insufficiency, starvation) give high ketones. This is the first branch point.<br> <b>Why the drug screen is still needed</b>: sulfonylureas and meglitinides close beta-cell K-ATP channels, so they raise insulin, C-peptide, and proinsulin exactly like an insulinoma; only a drug screen separates them. Insulin autoantibodies (insulin autoimmune syndrome) bind and later release insulin, giving very high insulin with variably elevated C-peptide and positive antibodies, usually postprandially."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Finding at hypoglycemia</th><th style=\"width:38%\">Exogenous insulin (correct)</th><th>Insulinoma (closest distractor)</th></tr></thead><tbody> <tr><td>Insulin</td><td>High (often very high)</td><td>High</td></tr> <tr><td>C-peptide</td><td><b>Low</b> (&lt; 0.2 ng/mL)</td><td><b>High</b> (≥ 0.6 ng/mL)</td></tr> <tr><td>Proinsulin</td><td>Low</td><td>High (≥ 5 pmol/L)</td></tr> <tr><td>Sulfonylurea screen</td><td>Negative</td><td>Negative (positive only with drug ingestion)</td></tr> </tbody></table> Read in order: ketones low → insulin-mediated; then C-peptide — low means injected insulin, high means the pancreas (tumor or sulfonylurea, separated by the drug screen)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) An insulinoma produces fasting hypoglycemia with high insulin, high C-peptide (≥ 0.6 ng/mL), high proinsulin, and a negative drug screen; it would be the answer if C-peptide were elevated.\n(B) Sulfonylurea ingestion raises insulin and C-peptide and proinsulin together because it stimulates the beta cell; it becomes the answer with elevated C-peptide and a positive drug screen.\n(C) Insulin receptor antibodies (type B insulin resistance) usually cause severe insulin resistance with acanthosis nigricans in autoimmune disease; hypoglycemia occurs with suppressed insulin and C-peptide levels.\n(D) Primary adrenal insufficiency causes hypoglycemia with low insulin and high ketones, with hyperpigmentation, hypotension, and hyponatremia with hyperkalemia — none of which is present."
+   },
+   {
+    "k": "함정",
+    "v": "Seeing a high insulin level and choosing insulinoma — without a matching rise in C-peptide and proinsulin, the insulin did not come from her pancreas."
+   },
+   {
+    "k": "학습목표",
+    "v": "공복 저혈당에서 인슐린이 높고 C-펩타이드·프로인슐린이 낮으며 설폰요소 선별이 음성이면 외인성 인슐린 투여로 판단하고, 인슐린종·설폰요소 복용과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cryer PE, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2009;94:709-728 · Williams Textbook of Endocrinology, 14th ed. Ch. Hypoglycemia — diagnostic criteria for insulin-mediated hypoglycemia during a 72-hour fast · Harrison's Principles of Internal Medicine, 21st ed. Ch. Hypoglycemia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "공복 저혈당 때 인슐린은 높은데 케톤이 억제되어 인슐린 매개이고, C-펩타이드·프로인슐린이 낮고 설폰요소 선별이 음성이므로 외인성 인슐린 투여다",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "C-펩타이드 0.1 ng/mL·프로인슐린 2 pmol/L — 췌장이 만든 인슐린이 아니다",
+   "steps": 3,
+   "chain": [
+    "혈당 38 + 인슐린 48 + 베타하이드록시뷰티르산 0.1 → 인슐린 매개 저혈당",
+    "C-펩타이드·프로인슐린 억제 → 췌장 밖에서 들어온 인슐린",
+    "설폰요소·메글리티나이드 선별 음성 + 인슐린에 접근 가능 → 외인성 인슐린 몰래 투여"
+   ],
+   "key": [
+    {
+     "item": "insulin 48 µU/mL",
+     "why": "저혈당인데 인슐린이 억제되지 않았다",
+     "also": []
+    },
+    {
+     "item": "beta-hydroxybutyrate 0.1 mmol/L",
+     "why": "인슐린이 케톤 생성을 막고 있다 — 인슐린 매개",
+     "also": []
+    },
+    {
+     "item": "C-peptide 0.1 ng/mL",
+     "why": "내인성 분비가 아니다",
+     "also": []
+    },
+    {
+     "item": "proinsulin 2 pmol/L",
+     "why": "베타세포가 억제되어 있다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "A screen for sulfonylureas and meglitinides is negative",
+     "why": "설폰요소 복용 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Blood pressure is 118/74 mm Hg",
+     "why": "부신 기능 부전의 저혈압이 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "works as an intensive care unit nurse",
+     "why": "인슐린 접근성 — 동기를 뒷받침하지만 검사가 답을 가른다",
+     "also": []
+    },
+    {
+     "item": "Her mother has type 2 diabetes mellitus treated with glipizide and insulin glargine",
+     "why": "두 약 모두 접근 가능 — 어느 것인지는 C-펩타이드와 약물 선별이 가른다",
+     "also": []
+    }
+   ],
+   "summary": "공복 저혈당 때 인슐린이 높고 케톤이 억제되어 인슐린 매개 저혈당이다. C-펩타이드와 프로인슐린이 낮고 설폰요소 선별이 음성이므로 외인성 인슐린 투여이며, 둘 다 높은 인슐린종·설폰요소 복용과 C-펩타이드로 가른다.",
+   "switch": {
+    "choice": "A",
+    "condition": "C-펩타이드가 0.9 ng/mL, 프로인슐린이 12 pmol/L 로 높고 약물 선별이 음성이었다면 인슐린종이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0319",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "소아청소년 — 콧물 뒤 숨이 빨라진 영아",
+  "type": "소아청소년 — 콧물 뒤 숨이 빨라진 영아",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "5개월 남아가 3일 전부터 콧물과 기침이 있었고 하루 전부터 숨을 빨리 쉬어 왔다. 수유량은 평소의 약 80 % 이고 하루 6번 기저귀가 젖었다. 3세 형이 감기에 걸려 있다. 만삭으로 태어났고 지금까지 건강하였다. 체온 37.9 °C, 맥박 148회/분, 호흡 52회/분, 산소포화도 95 %(실내 공기)이다. 맑은 콧물이 많고 가벼운 갈비뼈 사이 함몰이 있으며, 양쪽 폐에서 호기 천명과 미세 수포음이 들린다. 처지지 않고 잘 운다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경구 덱사메타손 투여",
+   "경구 아목시실린 투여",
+   "흉부 물리치료",
+   "코 흡인과 수분 섭취 유지",
+   "분무 살부타몰 흡입"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 5개월 영아가 감기 증상 뒤 빠른 호흡, 호기 천명과 양쪽 미세 수포음을 보여 세기관지염(대개 RSV)이다. 산소포화도 95 % 이고 수유가 유지되며 처지지 않으므로 중증이 아니다. 세기관지염의 치료는 코 흡인으로 콧물을 빼고 수분을 유지하는 보존적 처치이며, 산소포화도가 90 % 아래로 떨어지거나 수유가 안 되면 입원해 산소·수액을 준다.\n- 원리: <b>왜 기관지확장제가 듣지 않는가</b>: 세기관지염의 기도 좁아짐은 평활근 수축이 아니라 바이러스가 세기관지 상피를 괴사시켜 생긴 점액·탈락 상피·부종이 지름 2 mm 이하의 작은 기도를 막아서 생긴다. 막힌 것은 근육이 아니라 찌꺼기이므로 β2 작용제로 근육을 풀어도 길이 열리지 않는다. 같은 이유로 천식의 기도 염증을 줄이는 스테로이드도 입원·경과를 바꾸지 못했다.<br> <b>왜 코 흡인이 도움이 되는가</b>: 영아는 주로 코로 숨쉬고 수유 중에도 코로 숨을 쉬어야 하므로, 콧물이 차면 호흡 노력이 늘고 수유가 줄어 탈수가 생긴다. 코를 흡인하면 숨쉬기와 먹기가 함께 나아진다.<br> <b>언제 입원하는가</b>: 지속적인 산소포화도 90 % 미만, 수유량 50 % 미만이나 탈수, 무호흡, 심한 함몰·처짐, 12주 미만·미숙아·심폐 질환 같은 고위험 영아.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">영아 세기관지염(정답 — 보존적 처치)</th><th>천식 악화(가장 가까운 오답 — 살부타몰)</th></tr></thead><tbody> <tr><td>나이·병력</td><td>2세 미만, <b>첫</b> 천명, 감기 뒤</td><td>반복되는 천명, 아토피 병력</td></tr> <tr><td>기도 좁아짐의 원인</td><td><b>점액·탈락 상피·부종</b>(작은 기도 막힘)</td><td><b>평활근 수축</b>과 염증</td></tr> <tr><td>청진</td><td>천명 + 미세 수포음</td><td>천명 위주</td></tr> <tr><td>살부타몰 반응</td><td>일상적 효과 없음</td><td>빠르게 좋아진다</td></tr> </tbody></table> 첫 천명을 보이는 2세 미만 영아에게 흡입제를 습관적으로 시작하지 않는다 — 반복되는 천명과 기관지확장제 반응이 확인될 때 천식을 생각한다.\n- 오답 이유:\n  - ① 경구 덱사메타손은 크룹(쉰 목소리·개 짖는 기침·흡기 협착음)이나 천식 악화에 정답이 되며, 세기관지염에서는 입원율이나 경과를 바꾸지 못했다.\n  - ② 경구 아목시실린은 급성 중이염이나 고열·국소 경화 소견이 있는 세균성 폐렴에서 정답이 되며, 바이러스성 세기관지염에는 쓰지 않는다.\n  - ③ 흉부 물리치료는 낭성섬유증이나 신경근 질환처럼 객담 배출이 안 되는 경우에 쓰이며, 세기관지염에서는 입원 기간·산소 요구를 줄이지 못했다.\n  - ⑤ 분무 살부타몰은 반복되는 천명과 아토피가 있는 소아의 천식 악화에서 평활근을 풀어 정답이 되지만, 첫 천명의 영아 세기관지염에는 일상적으로 권하지 않는다.\n- 함정: 천명이 들린다는 이유로 기관지확장제나 스테로이드를 고르는 것 — 영아 세기관지염의 좁아짐은 근육 수축이 아니라 점액과 탈락 상피 때문이다.\n- 학습목표: 콧물 뒤 천명·수포음과 호흡곤란을 보이는 영아 세기관지염에서 산소포화도·수유가 유지되면 보존적 처치(코 흡인·수분 유지)만 하고, 기관지확장제·스테로이드·항생제는 일상적으로 쓰지 않는다\n- 근거·출처: Ralston SL, et al. Clinical practice guideline: the diagnosis, management, and prevention of bronchiolitis. Pediatrics 2014;134:e1474-e1502 · Nelson Textbook of Pediatrics, 22nd ed. Ch. Wheezing, bronchiolitis, and bronchitis · Florin TA, Plint AC, Zorc JJ. Viral bronchiolitis. Lancet 2017;389:211-224",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "5개월 영아가 감기 증상 뒤 빠른 호흡, 호기 천명과 양쪽 미세 수포음을 보여 세기관지염(대개 RSV)이다. 산소포화도 95 % 이고 수유가 유지되며 처지지 않으므로 중증이 아니다. 세기관지염의 치료는 코 흡인으로 콧물을 빼고 수분을 유지하는 보존적 처치이며, 산소포화도가 90 % 아래로 떨어지거나 수유가 안 되면 입원해 산소·수액을 준다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 기관지확장제가 듣지 않는가</b>: 세기관지염의 기도 좁아짐은 평활근 수축이 아니라 바이러스가 세기관지 상피를 괴사시켜 생긴 점액·탈락 상피·부종이 지름 2 mm 이하의 작은 기도를 막아서 생긴다. 막힌 것은 근육이 아니라 찌꺼기이므로 β2 작용제로 근육을 풀어도 길이 열리지 않는다. 같은 이유로 천식의 기도 염증을 줄이는 스테로이드도 입원·경과를 바꾸지 못했다.<br> <b>왜 코 흡인이 도움이 되는가</b>: 영아는 주로 코로 숨쉬고 수유 중에도 코로 숨을 쉬어야 하므로, 콧물이 차면 호흡 노력이 늘고 수유가 줄어 탈수가 생긴다. 코를 흡인하면 숨쉬기와 먹기가 함께 나아진다.<br> <b>언제 입원하는가</b>: 지속적인 산소포화도 90 % 미만, 수유량 50 % 미만이나 탈수, 무호흡, 심한 함몰·처짐, 12주 미만·미숙아·심폐 질환 같은 고위험 영아."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">영아 세기관지염(정답 — 보존적 처치)</th><th>천식 악화(가장 가까운 오답 — 살부타몰)</th></tr></thead><tbody> <tr><td>나이·병력</td><td>2세 미만, <b>첫</b> 천명, 감기 뒤</td><td>반복되는 천명, 아토피 병력</td></tr> <tr><td>기도 좁아짐의 원인</td><td><b>점액·탈락 상피·부종</b>(작은 기도 막힘)</td><td><b>평활근 수축</b>과 염증</td></tr> <tr><td>청진</td><td>천명 + 미세 수포음</td><td>천명 위주</td></tr> <tr><td>살부타몰 반응</td><td>일상적 효과 없음</td><td>빠르게 좋아진다</td></tr> </tbody></table> 첫 천명을 보이는 2세 미만 영아에게 흡입제를 습관적으로 시작하지 않는다 — 반복되는 천명과 기관지확장제 반응이 확인될 때 천식을 생각한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 덱사메타손은 크룹(쉰 목소리·개 짖는 기침·흡기 협착음)이나 천식 악화에 정답이 되며, 세기관지염에서는 입원율이나 경과를 바꾸지 못했다.\n② 경구 아목시실린은 급성 중이염이나 고열·국소 경화 소견이 있는 세균성 폐렴에서 정답이 되며, 바이러스성 세기관지염에는 쓰지 않는다.\n③ 흉부 물리치료는 낭성섬유증이나 신경근 질환처럼 객담 배출이 안 되는 경우에 쓰이며, 세기관지염에서는 입원 기간·산소 요구를 줄이지 못했다.\n⑤ 분무 살부타몰은 반복되는 천명과 아토피가 있는 소아의 천식 악화에서 평활근을 풀어 정답이 되지만, 첫 천명의 영아 세기관지염에는 일상적으로 권하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "천명이 들린다는 이유로 기관지확장제나 스테로이드를 고르는 것 — 영아 세기관지염의 좁아짐은 근육 수축이 아니라 점액과 탈락 상피 때문이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "콧물 뒤 천명·수포음과 호흡곤란을 보이는 영아 세기관지염에서 산소포화도·수유가 유지되면 보존적 처치(코 흡인·수분 유지)만 하고, 기관지확장제·스테로이드·항생제는 일상적으로 쓰지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ralston SL, et al. Clinical practice guideline: the diagnosis, management, and prevention of bronchiolitis. Pediatrics 2014;134:e1474-e1502 · Nelson Textbook of Pediatrics, 22nd ed. Ch. Wheezing, bronchiolitis, and bronchitis · Florin TA, Plint AC, Zorc JJ. Viral bronchiolitis. Lancet 2017;389:211-224"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "감기 뒤 빠른 호흡·천명·미세 수포음을 보이는 5개월 영아는 세기관지염이고, 산소포화도와 수유가 유지되므로 코 흡인과 수분 유지 같은 보존적 처치만 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "첫 천명의 2세 미만 영아 — 기도 좁아짐이 평활근이 아니라 점액·탈락 상피 때문이라 기관지확장제가 일상적으로 듣지 않는다",
+   "steps": 2,
+   "chain": [
+    "5개월 + 감기 뒤 빠른 호흡 + 호기 천명·양쪽 미세 수포음 → 세기관지염",
+    "산소포화도 95 % + 수유 80 % + 처지지 않음 → 외래 보존적 처치"
+   ],
+   "key": [
+    {
+     "item": "양쪽 폐에서 호기 천명과 미세 수포음",
+     "why": "세기관지염의 청진 소견",
+     "also": []
+    },
+    {
+     "item": "3일 전부터 콧물과 기침",
+     "why": "바이러스성 상기도 감염이 먼저 왔다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "산소포화도 95 %(실내 공기)",
+     "why": "입원 기준(90 % 미만)에 해당하지 않는다",
+     "also": []
+    },
+    {
+     "item": "수유량은 평소의 약 80 %",
+     "why": "탈수 위험이 낮아 외래 처치가 가능하다",
+     "also": []
+    },
+    {
+     "item": "만삭으로 태어났고",
+     "why": "고위험(미숙아) 영아가 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "체온 37.9 °C",
+     "why": "미열은 세기관지염에 흔하며 세균 감염을 뜻하지 않는다",
+     "also": []
+    },
+    {
+     "item": "3세 형이 감기에 걸려 있다",
+     "why": "감염원 — 진단을 뒷받침하지만 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "5개월 영아가 감기 뒤 빠른 호흡과 천명·미세 수포음을 보여 세기관지염이다. 산소포화도 95 % 에 수유가 유지되므로 코 흡인과 수분 유지만 하고, 기관지확장제·스테로이드·항생제는 일상적으로 쓰지 않는다.",
+   "switch": {
+    "choice": "E",
+    "condition": "반복되는 천명과 아토피피부염이 있는 3세 아이가 기관지확장제에 반응한 적이 있었다면 분무 살부타몰이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0318",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "신장·비뇨 — 두 달 동안 다리가 부은 중년 남성",
+  "type": "신장·비뇨 — 두 달 동안 다리가 부은 중년 남성",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "A 56-year-old man comes to the physician because of swelling of both legs for 2 months. He has gained 6 kg during this period. He has no history of serious illness and takes no medications. He does not use nonsteroidal anti-inflammatory drugs. Blood pressure is 128/78 mm Hg. There is 3+ pitting edema of the lower extremities. Serum albumin is 2.1 g/dL, cholesterol is 340 mg/dL, and creatinine is 0.9 mg/dL. Urinalysis shows 4+ protein and no blood; urine microscopy shows oval fat bodies and no red blood cells. A 24-hour urine collection contains 9.2 g of protein. Serum C3 and C4 are normal. Tests for hepatitis B surface antigen, hepatitis C antibody, HIV, and antinuclear antibodies are negative. Age-appropriate cancer screening is up to date and normal.",
+  "question": "Which of the following serum findings is most likely in this patient?",
+  "options": [
+   "Antistreptolysin O antibodies",
+   "Antibodies to phospholipase A2 receptor",
+   "Antibodies to the alpha-3 chain of type IV collagen",
+   "Antineutrophil cytoplasmic antibodies with myeloperoxidase specificity",
+   "Elevated serum free light chains with an abnormal kappa-to-lambda ratio"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: He has the nephrotic syndrome (proteinuria 9.2 g/day, albumin 2.1 g/dL, hyperlipidemia, edema) with a bland urine sediment, normal blood pressure, normal creatinine, and normal complement. In an adult without hepatitis B or C, HIV, lupus, drugs, or cancer, the most common cause is primary membranous nephropathy, in which about 70 to 80% of patients have circulating autoantibodies to the podocyte phospholipase A2 receptor (PLA2R).\n- 원리: <b>Why the antibody causes nephrotic, not nephritic, disease</b>: PLA2R is a protein on the foot processes of podocytes. Anti-PLA2R IgG (mainly IgG4) binds it in place, forming immune deposits on the outer (subepithelial) side of the glomerular basement membrane. Because the deposits face the urinary space, away from circulating leukocytes, complement damages the podocytes and the filtration barrier without recruiting inflammatory cells — so heavy proteinuria develops without red cell casts or hypocomplementemia.<br> <b>What the biopsy shows</b>: thickened capillary loops on light microscopy, spikes of new basement membrane between deposits on silver stain, granular IgG and C3 along the capillary walls, and subepithelial electron-dense deposits.<br> <b>Why the antibody matters clinically</b>: a positive anti-PLA2R in a patient with nephrotic syndrome and preserved renal function supports the diagnosis even without biopsy, and the titer tracks disease activity — falling before remission and rising before relapse — which guides immunosuppression (for example rituximab). Secondary causes (hepatitis B, lupus class V, solid tumors, NSAIDs, gold) must still be excluded, as was done here.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Primary membranous nephropathy (correct)</th><th>Anti-GBM disease (closest distractor by antibody)</th></tr></thead><tbody> <tr><td>Antigen</td><td><b>PLA2R</b> on podocytes</td><td><b>α3 chain of type IV collagen</b> in the GBM</td></tr> <tr><td>Deposit pattern</td><td>Granular, subepithelial</td><td>Linear along the GBM</td></tr> <tr><td>Syndrome</td><td>Nephrotic — bland sediment, normal creatinine early</td><td>Nephritic — red cell casts, rapidly rising creatinine, hemoptysis</td></tr> </tbody></table> Both are antibodies against a glomerular antigen; where the antigen sits decides the syndrome — the podocyte side causes protein leak, the basement membrane facing the blood causes inflammation.\n- 오답 이유:\n  - (A) Antistreptolysin O antibodies support poststreptococcal glomerulonephritis, presenting 1 to 3 weeks after pharyngitis with hematuria, hypertension, and low C3.\n  - (C) Anti-type IV collagen (anti-GBM) antibodies are expected in rapidly progressive glomerulonephritis with red cell casts, rising creatinine, and sometimes pulmonary hemorrhage, not a bland nephrotic presentation.\n  - (D) MPO-ANCA is found in microscopic polyangiitis with pauci-immune crescentic glomerulonephritis, hematuria, and rapidly declining renal function, often with systemic vasculitis.\n  - (E) An abnormal free light chain ratio supports AL amyloidosis, which also causes nephrotic syndrome in older adults; it becomes the answer with macroglossia, cardiomyopathy, neuropathy, or a monoclonal protein.\n- 함정: Choosing the light chain test because older adults with nephrotic syndrome raise concern for amyloidosis — without systemic features and with normal cancer screening, primary membranous nephropathy is far more common.\n- 학습목표: 성인 신증후군에서 혈뇨·고혈압·보체 이상이 없고 이차 원인이 배제되면 원발성 막성 신병증을 의심하고, 포스포리파아제 A2 수용체 항체를 그 표지로 안다\n- 근거·출처: Ronco P, et al. Membranous nephropathy. Nat Rev Dis Primers 2021;7:69 · Beck LH Jr, et al. M-type phospholipase A2 receptor as target antigen in idiopathic membranous nephropathy. N Engl J Med 2009;361:11-21 · KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276 (membranous nephropathy, anti-PLA2R)",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "He has the nephrotic syndrome (proteinuria 9.2 g/day, albumin 2.1 g/dL, hyperlipidemia, edema) with a bland urine sediment, normal blood pressure, normal creatinine, and normal complement. In an adult without hepatitis B or C, HIV, lupus, drugs, or cancer, the most common cause is primary membranous nephropathy, in which about 70 to 80% of patients have circulating autoantibodies to the podocyte phospholipase A2 receptor (PLA2R)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the antibody causes nephrotic, not nephritic, disease</b>: PLA2R is a protein on the foot processes of podocytes. Anti-PLA2R IgG (mainly IgG4) binds it in place, forming immune deposits on the outer (subepithelial) side of the glomerular basement membrane. Because the deposits face the urinary space, away from circulating leukocytes, complement damages the podocytes and the filtration barrier without recruiting inflammatory cells — so heavy proteinuria develops without red cell casts or hypocomplementemia.<br> <b>What the biopsy shows</b>: thickened capillary loops on light microscopy, spikes of new basement membrane between deposits on silver stain, granular IgG and C3 along the capillary walls, and subepithelial electron-dense deposits.<br> <b>Why the antibody matters clinically</b>: a positive anti-PLA2R in a patient with nephrotic syndrome and preserved renal function supports the diagnosis even without biopsy, and the titer tracks disease activity — falling before remission and rising before relapse — which guides immunosuppression (for example rituximab). Secondary causes (hepatitis B, lupus class V, solid tumors, NSAIDs, gold) must still be excluded, as was done here."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Primary membranous nephropathy (correct)</th><th>Anti-GBM disease (closest distractor by antibody)</th></tr></thead><tbody> <tr><td>Antigen</td><td><b>PLA2R</b> on podocytes</td><td><b>α3 chain of type IV collagen</b> in the GBM</td></tr> <tr><td>Deposit pattern</td><td>Granular, subepithelial</td><td>Linear along the GBM</td></tr> <tr><td>Syndrome</td><td>Nephrotic — bland sediment, normal creatinine early</td><td>Nephritic — red cell casts, rapidly rising creatinine, hemoptysis</td></tr> </tbody></table> Both are antibodies against a glomerular antigen; where the antigen sits decides the syndrome — the podocyte side causes protein leak, the basement membrane facing the blood causes inflammation."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Antistreptolysin O antibodies support poststreptococcal glomerulonephritis, presenting 1 to 3 weeks after pharyngitis with hematuria, hypertension, and low C3.\n(C) Anti-type IV collagen (anti-GBM) antibodies are expected in rapidly progressive glomerulonephritis with red cell casts, rising creatinine, and sometimes pulmonary hemorrhage, not a bland nephrotic presentation.\n(D) MPO-ANCA is found in microscopic polyangiitis with pauci-immune crescentic glomerulonephritis, hematuria, and rapidly declining renal function, often with systemic vasculitis.\n(E) An abnormal free light chain ratio supports AL amyloidosis, which also causes nephrotic syndrome in older adults; it becomes the answer with macroglossia, cardiomyopathy, neuropathy, or a monoclonal protein."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the light chain test because older adults with nephrotic syndrome raise concern for amyloidosis — without systemic features and with normal cancer screening, primary membranous nephropathy is far more common."
+   },
+   {
+    "k": "학습목표",
+    "v": "성인 신증후군에서 혈뇨·고혈압·보체 이상이 없고 이차 원인이 배제되면 원발성 막성 신병증을 의심하고, 포스포리파아제 A2 수용체 항체를 그 표지로 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Ronco P, et al. Membranous nephropathy. Nat Rev Dis Primers 2021;7:69 · Beck LH Jr, et al. M-type phospholipase A2 receptor as target antigen in idiopathic membranous nephropathy. N Engl J Med 2009;361:11-21 · KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276 (membranous nephropathy, anti-PLA2R)"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "혈뇨·고혈압·보체 이상이 없는 성인 신증후군에서 간염·HIV·루푸스·약물·암이 배제되었으므로 원발성 막성 신병증이며, 그 표지는 PLA2R 항체다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "전신 증상·단클론 단백 단서가 없고 암 선별이 정상 — 아밀로이드증보다 원발성 막성 신병증이 훨씬 흔하다",
+   "steps": 3,
+   "chain": [
+    "단백뇨 9.2 g/일 + 알부민 2.1 + 고지혈증 + 부종 + 적혈구 없는 요침사 → 신증후군",
+    "성인 + 보체 정상 + 이차 원인(B·C형 간염, HIV, 루푸스, NSAID, 암) 음성 → 원발성 막성 신병증",
+    "원발성 막성 신병증의 70~80 % → 포도세포 PLA2R 자가항체"
+   ],
+   "key": [
+    {
+     "item": "A 24-hour urine collection contains 9.2 g of protein",
+     "why": "신증후군 범위 단백뇨",
+     "also": []
+    },
+    {
+     "item": "urine microscopy shows oval fat bodies and no red blood cells",
+     "why": "신증후군의 비염증성 요침사 — 신염 계열 오답을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum C3 and C4 are normal",
+     "why": "연쇄알균 감염 후 사구체신염·루푸스 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Tests for hepatitis B surface antigen, hepatitis C antibody, HIV, and antinuclear antibodies are negative",
+     "why": "이차성 막성 신병증 원인을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Age-appropriate cancer screening is up to date and normal",
+     "why": "암 관련 막성 신병증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He does not use nonsteroidal anti-inflammatory drugs",
+     "why": "약물 유발 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "creatinine is 0.9 mg/dL",
+     "why": "급속진행 사구체신염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Blood pressure is 128/78 mm Hg",
+     "why": "정상 — 신염 증후군이 아니라는 보조 정보",
+     "also": []
+    }
+   ],
+   "summary": "성인 신증후군에 적혈구 없는 요침사·정상 보체·정상 크레아티닌이고 이차 원인이 모두 음성이다. 원발성 막성 신병증이며 70~80 % 에서 PLA2R 자가항체가 있다.",
+   "switch": {
+    "choice": "E",
+    "condition": "큰 혀·심근병증·말초신경병증이나 혈청 단클론 단백이 있었다면 유리 경쇄 비율 이상(AL 아밀로이드증)이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0317",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "감염 — 발진 환자와 접촉한 임신부",
+  "type": "감염 — 발진 환자와 접촉한 임신부",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "31세 여자가 임신 16주에 산전 진찰을 받으러 왔다. 3일 전 직장 동료의 집에서 2시간 동안 머물렀는데, 그 집의 5세 아이가 다음 날 열·기침·결막염 뒤에 얼굴에서 시작해 몸으로 퍼지는 반점구진 발진이 생겨 홍역으로 확진되었다. 본인은 증상이 없다. 어릴 때 예방접종 기록이 없고 홍역을 앓은 기억도 없다. 체온 36.7 °C 이다. 오늘 시행한 홍역 IgG 항체는 음성이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "경구 리바비린 투여",
+   "증상이 생길 때까지 경과 관찰",
+   "정맥 면역글로불린 투여",
+   "MMR 백신 접종",
+   "경구 비타민 A 투여"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 홍역 IgG 가 음성인 감수성 임신부가 확진 환자와 밀접 접촉하였다. 노출 72시간 안이라도 MMR 은 생백신이라 임신 중 금기이므로, 노출 6일 안에 정맥 면역글로불린(400 mg/kg)을 주어 발병을 막거나 경과를 가볍게 한다. 임신 중 홍역은 폐렴·조산·태아 사망 위험이 높다.\n- 원리: <b>왜 두 가지 시간 창이 있는가</b>: 홍역 바이러스는 호흡기로 들어와 림프조직에서 증식한 뒤 약 1주에 걸쳐 바이러스혈증을 일으킨다. 백신 바이러스는 야생형보다 빨리 면역을 일으키므로 노출 <b>72시간 안</b>에 접종하면 발병 전에 면역이 생긴다. 이미 만들어진 항체(면역글로불린)는 즉시 중화 작용을 하므로 잠복기 중반인 <b>6일 안</b>까지 효과가 있다.<br> <b>왜 임신부는 백신을 못 맞는가</b>: MMR 은 약독화 생백신이라 이론적으로 태아 감염 위험이 있어 임신 중 금기다(실제 태아 손상 보고는 없다). 그래서 감수성 임신부·심한 면역저하자·12개월 미만 영아는 면역글로불린이 노출 후 예방의 유일한 수단이다. 임신부와 면역저하자는 혈중 농도를 충분히 올리기 위해 정맥 제제를 쓴다.<br> <b>그 뒤</b>: 면역글로불린을 맞아도 노출 뒤 21일(면역글로불린을 맞으면 28일)까지 증상을 관찰하고, 분만 뒤에 MMR 을 접종한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">면역글로불린(정답)</th><th>MMR 백신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>노출 뒤 시간 창</td><td><b>6일 안</b></td><td><b>72시간 안</b></td></tr> <tr><td>대상</td><td>임신부·심한 면역저하자·12개월 미만 영아</td><td>면역 없는 건강한 12개월 이상 비임신자</td></tr> <tr><td>임신 중</td><td>사용 가능(정맥 제제)</td><td><b>금기</b>(생백신)</td></tr> <tr><td>장기 면역</td><td>남기지 않는다 — 분만 뒤 MMR</td><td>남긴다</td></tr> </tbody></table> 노출 후 예방은 「누구인가」로 먼저 고른다 — 임신부면 시간과 관계없이 면역글로불린, 비임신 성인이면 72시간 안 MMR.\n- 오답 이유:\n  - ① 리바비린은 면역저하자의 중증 홍역 폐렴에 시험적으로 쓰일 수 있으나 임신 중 기형유발로 금기이고 노출 후 예방 효과도 없다.\n  - ② 경과 관찰은 2회 접종 기록이나 홍역 IgG 양성처럼 면역 근거가 있는 노출자에게 적절하며, 항체 음성 임신부에게는 예방 기회를 놓친다.\n  - ④ MMR 백신은 면역이 없는 비임신 성인이나 12개월 이상 소아가 노출 72시간 안에 왔을 때 노출 후 예방으로 정답이 된다. 임신 중에는 생백신이라 금기다.\n  - ⑤ 비타민 A 는 홍역에 이미 걸린 소아(특히 영양결핍 지역)의 합병증과 사망을 줄이는 보조 치료이며, 증상 없는 노출자의 발병을 막지 못한다.\n- 함정: 노출 72시간 안이라는 숫자만 보고 MMR 을 고르는 것 — 임신부에게 생백신은 금기이므로 면역글로불린이 유일한 노출 후 예방이다.\n- 학습목표: 홍역 면역 근거가 없는 임신부가 홍역 환자에 노출되면 생백신(MMR)은 금기이므로 노출 6일 안에 정맥 면역글로불린으로 노출 후 예방한다\n- 근거·출처: McLean HQ, et al. Prevention of measles, rubella, congenital rubella syndrome, and mumps, 2013: summary recommendations of the ACIP. MMWR Recomm Rep 2013;62(RR-04):1-34 · American Academy of Pediatrics. Red Book 2024-2027, Measles — postexposure prophylaxis (MMR within 72 hours, IG within 6 days, IGIV 400 mg/kg for pregnant women) · 질병관리청. 홍역 관리지침(2024) — 노출자 관리와 면역글로불린 투여",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "홍역 IgG 가 음성인 감수성 임신부가 확진 환자와 밀접 접촉하였다. 노출 72시간 안이라도 MMR 은 생백신이라 임신 중 금기이므로, 노출 6일 안에 정맥 면역글로불린(400 mg/kg)을 주어 발병을 막거나 경과를 가볍게 한다. 임신 중 홍역은 폐렴·조산·태아 사망 위험이 높다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 두 가지 시간 창이 있는가</b>: 홍역 바이러스는 호흡기로 들어와 림프조직에서 증식한 뒤 약 1주에 걸쳐 바이러스혈증을 일으킨다. 백신 바이러스는 야생형보다 빨리 면역을 일으키므로 노출 <b>72시간 안</b>에 접종하면 발병 전에 면역이 생긴다. 이미 만들어진 항체(면역글로불린)는 즉시 중화 작용을 하므로 잠복기 중반인 <b>6일 안</b>까지 효과가 있다.<br> <b>왜 임신부는 백신을 못 맞는가</b>: MMR 은 약독화 생백신이라 이론적으로 태아 감염 위험이 있어 임신 중 금기다(실제 태아 손상 보고는 없다). 그래서 감수성 임신부·심한 면역저하자·12개월 미만 영아는 면역글로불린이 노출 후 예방의 유일한 수단이다. 임신부와 면역저하자는 혈중 농도를 충분히 올리기 위해 정맥 제제를 쓴다.<br> <b>그 뒤</b>: 면역글로불린을 맞아도 노출 뒤 21일(면역글로불린을 맞으면 28일)까지 증상을 관찰하고, 분만 뒤에 MMR 을 접종한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">면역글로불린(정답)</th><th>MMR 백신(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>노출 뒤 시간 창</td><td><b>6일 안</b></td><td><b>72시간 안</b></td></tr> <tr><td>대상</td><td>임신부·심한 면역저하자·12개월 미만 영아</td><td>면역 없는 건강한 12개월 이상 비임신자</td></tr> <tr><td>임신 중</td><td>사용 가능(정맥 제제)</td><td><b>금기</b>(생백신)</td></tr> <tr><td>장기 면역</td><td>남기지 않는다 — 분만 뒤 MMR</td><td>남긴다</td></tr> </tbody></table> 노출 후 예방은 「누구인가」로 먼저 고른다 — 임신부면 시간과 관계없이 면역글로불린, 비임신 성인이면 72시간 안 MMR."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 리바비린은 면역저하자의 중증 홍역 폐렴에 시험적으로 쓰일 수 있으나 임신 중 기형유발로 금기이고 노출 후 예방 효과도 없다.\n② 경과 관찰은 2회 접종 기록이나 홍역 IgG 양성처럼 면역 근거가 있는 노출자에게 적절하며, 항체 음성 임신부에게는 예방 기회를 놓친다.\n④ MMR 백신은 면역이 없는 비임신 성인이나 12개월 이상 소아가 노출 72시간 안에 왔을 때 노출 후 예방으로 정답이 된다. 임신 중에는 생백신이라 금기다.\n⑤ 비타민 A 는 홍역에 이미 걸린 소아(특히 영양결핍 지역)의 합병증과 사망을 줄이는 보조 치료이며, 증상 없는 노출자의 발병을 막지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "노출 72시간 안이라는 숫자만 보고 MMR 을 고르는 것 — 임신부에게 생백신은 금기이므로 면역글로불린이 유일한 노출 후 예방이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "홍역 면역 근거가 없는 임신부가 홍역 환자에 노출되면 생백신(MMR)은 금기이므로 노출 6일 안에 정맥 면역글로불린으로 노출 후 예방한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "McLean HQ, et al. Prevention of measles, rubella, congenital rubella syndrome, and mumps, 2013: summary recommendations of the ACIP. MMWR Recomm Rep 2013;62(RR-04):1-34 · American Academy of Pediatrics. Red Book 2024-2027, Measles — postexposure prophylaxis (MMR within 72 hours, IG within 6 days, IGIV 400 mg/kg for pregnant women) · 질병관리청. 홍역 관리지침(2024) — 노출자 관리와 면역글로불린 투여"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "홍역 항체가 없는 임신부가 확진 환자에 노출되었으므로, 생백신 MMR 은 금기이고 노출 6일 안의 정맥 면역글로불린이 노출 후 예방이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "임신 16주 — 생백신 금기",
+   "steps": 2,
+   "chain": [
+    "접종·이환력 없음 + 홍역 IgG 음성 + 확진 환자와 밀접 접촉 → 감수성 노출자",
+    "임신 중 생백신 금기 + 노출 3일째(6일 안) → 정맥 면역글로불린"
+   ],
+   "key": [
+    {
+     "item": "오늘 시행한 홍역 IgG 항체는 음성이다",
+     "why": "감수성 — 예방이 필요하다",
+     "also": []
+    },
+    {
+     "item": "임신 16주",
+     "why": "생백신 금기 — 백신 대신 면역글로불린",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "홍역으로 확진되었다",
+     "why": "확정된 노출원",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "3일 전",
+     "why": "면역글로불린의 시간 창(6일) 안",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "본인은 증상이 없다",
+     "why": "아직 발병 전 — 노출 후 예방의 대상",
+     "also": []
+    }
+   ],
+   "summary": "홍역 항체가 없는 임신 16주 여성이 3일 전 확진 환자와 밀접 접촉하였다. MMR 은 생백신이라 금기이므로 노출 6일 안에 정맥 면역글로불린을 준다.",
+   "switch": {
+    "choice": "D",
+    "condition": "임신부가 아닌 항체 음성 성인이 노출 72시간 안에 왔다면 MMR 백신이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0316",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "혈액·종양 — 운동 뒤 무릎이 부은 청년의 출혈 경향",
+  "type": "혈액·종양 — 운동 뒤 무릎이 부은 청년의 출혈 경향",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "A 19-year-old man comes to the physician because of swelling and pain of the right knee for 1 day after playing soccer; he does not recall a direct injury. He had prolonged bleeding after a tooth extraction at age 12 years and a large thigh hematoma after a fall at age 15 years. He takes no medications. His maternal uncle had similar joint problems. The right knee is warm, swollen, and tense, with a palpable effusion. There are no petechiae. Platelet count is 260,000/mm3, prothrombin time is 12 seconds (INR 1.0), activated partial thromboplastin time is 68 seconds (N 25-35), and bleeding time is normal. The prolonged aPTT corrects to 33 seconds after mixing with an equal volume of normal plasma.",
+  "question": "Which of the following is the most likely underlying cause of this patient's condition?",
+  "options": [
+   "Antiphospholipid antibodies (lupus anticoagulant)",
+   "Deficiency of vitamin K-dependent clotting factors",
+   "Deficiency of factor VIII",
+   "Deficiency of von Willebrand factor",
+   "Deficiency of factor VII"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Spontaneous hemarthrosis and deep muscle hematoma are bleeding of the coagulation (secondary hemostasis) type. The isolated prolonged aPTT with normal PT points to the intrinsic pathway (factors VIII, IX, XI, XII), correction on mixing indicates a factor deficiency rather than an inhibitor, and the normal bleeding time with no petechiae argues against a platelet or von Willebrand defect. With an affected maternal uncle (X-linked inheritance), the most likely cause is factor VIII deficiency, hemophilia A.\n- 원리: <b>Why the bleeding pattern localizes the defect</b>: platelets and von Willebrand factor form the primary plug within seconds; failure causes immediate mucocutaneous bleeding — petechiae, gum and nose bleeding, menorrhagia. Coagulation factors make the fibrin that stabilizes the plug; when they are missing, a plug forms but falls apart, so bleeding starts late and goes deep, into joints and muscles. Hemarthrosis is therefore the signature of a coagulation-factor deficiency.<br> <b>Why the mixing study separates deficiency from inhibitor</b>: normal plasma supplies at least 50% of every factor, enough to normalize the clotting time. If the aPTT corrects, a factor was simply missing; if it stays prolonged, something in the patient's plasma (an anti-factor VIII antibody or lupus anticoagulant) blocks the normal factors too.<br> <b>Why factor VIII is the most likely</b>: hemophilia A is about five times more common than hemophilia B (factor IX); both are X-linked and appear in boys through maternal relatives. Specific factor assays confirm the diagnosis and grade severity (< 1% severe, 1-5% moderate, > 5-40% mild).\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hemophilia A (correct)</th><th>von Willebrand disease (closest distractor)</th></tr></thead><tbody> <tr><td>Bleeding type</td><td><b>Deep</b> — joints, muscles, delayed bleeding</td><td><b>Mucocutaneous</b> — nose, gums, menorrhagia</td></tr> <tr><td>Inheritance</td><td>X-linked recessive — affected males, maternal relatives</td><td>Usually autosomal dominant — both sexes</td></tr> <tr><td>aPTT</td><td>Prolonged, corrects on mixing</td><td>Normal or mildly prolonged (low factor VIII)</td></tr> <tr><td>Bleeding time / PFA-100</td><td><b>Normal</b></td><td><b>Prolonged</b></td></tr> </tbody></table> von Willebrand factor carries factor VIII, so vWD can also prolong the aPTT; the normal bleeding time and joint bleeding point to a primary factor VIII deficiency.\n- 오답 이유:\n  - (A) Lupus anticoagulant prolongs the aPTT but does not correct on mixing, and it causes thrombosis and pregnancy loss rather than joint bleeding.\n  - (B) Vitamin K deficiency or warfarin lowers factors II, VII, IX, and X and prolongs the PT first; it fits a patient with malabsorption or anticoagulant use and an elevated INR.\n  - (D) Von Willebrand factor deficiency is the answer when mucocutaneous bleeding predominates with a prolonged bleeding time or abnormal platelet function test, often in women and with autosomal dominant inheritance.\n  - (E) Factor VII deficiency is suggested by an isolated prolonged PT with a normal aPTT, because factor VII acts only in the extrinsic pathway; here the PT is normal.\n- 함정: Choosing von Willebrand disease because it is the most common inherited bleeding disorder — joint bleeding, X-linked family history, and a normal bleeding time point to hemophilia.\n- 학습목표: 관절 출혈과 근육 출혈, 혼합 검사로 교정되는 단독 aPTT 연장, 정상 출혈 시간에서 내인 경로 인자(VIII) 결핍을 진단하고 폰빌레브란트병과 구분한다\n- 근거·출처: Srivastava A, et al. WFH Guidelines for the Management of Hemophilia, 3rd edition. Haemophilia 2020;26 Suppl 6:1-158 · Harrison's Principles of Internal Medicine, 21st ed. Ch. Coagulation disorders — hemophilia A and B, mixing studies · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Hematopoietic and lymphoid systems — bleeding disorders related to defective coagulation factors",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Spontaneous hemarthrosis and deep muscle hematoma are bleeding of the coagulation (secondary hemostasis) type. The isolated prolonged aPTT with normal PT points to the intrinsic pathway (factors VIII, IX, XI, XII), correction on mixing indicates a factor deficiency rather than an inhibitor, and the normal bleeding time with no petechiae argues against a platelet or von Willebrand defect. With an affected maternal uncle (X-linked inheritance), the most likely cause is factor VIII deficiency, hemophilia A."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the bleeding pattern localizes the defect</b>: platelets and von Willebrand factor form the primary plug within seconds; failure causes immediate mucocutaneous bleeding — petechiae, gum and nose bleeding, menorrhagia. Coagulation factors make the fibrin that stabilizes the plug; when they are missing, a plug forms but falls apart, so bleeding starts late and goes deep, into joints and muscles. Hemarthrosis is therefore the signature of a coagulation-factor deficiency.<br> <b>Why the mixing study separates deficiency from inhibitor</b>: normal plasma supplies at least 50% of every factor, enough to normalize the clotting time. If the aPTT corrects, a factor was simply missing; if it stays prolonged, something in the patient's plasma (an anti-factor VIII antibody or lupus anticoagulant) blocks the normal factors too.<br> <b>Why factor VIII is the most likely</b>: hemophilia A is about five times more common than hemophilia B (factor IX); both are X-linked and appear in boys through maternal relatives. Specific factor assays confirm the diagnosis and grade severity (< 1% severe, 1-5% moderate, > 5-40% mild)."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Hemophilia A (correct)</th><th>von Willebrand disease (closest distractor)</th></tr></thead><tbody> <tr><td>Bleeding type</td><td><b>Deep</b> — joints, muscles, delayed bleeding</td><td><b>Mucocutaneous</b> — nose, gums, menorrhagia</td></tr> <tr><td>Inheritance</td><td>X-linked recessive — affected males, maternal relatives</td><td>Usually autosomal dominant — both sexes</td></tr> <tr><td>aPTT</td><td>Prolonged, corrects on mixing</td><td>Normal or mildly prolonged (low factor VIII)</td></tr> <tr><td>Bleeding time / PFA-100</td><td><b>Normal</b></td><td><b>Prolonged</b></td></tr> </tbody></table> von Willebrand factor carries factor VIII, so vWD can also prolong the aPTT; the normal bleeding time and joint bleeding point to a primary factor VIII deficiency."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Lupus anticoagulant prolongs the aPTT but does not correct on mixing, and it causes thrombosis and pregnancy loss rather than joint bleeding.\n(B) Vitamin K deficiency or warfarin lowers factors II, VII, IX, and X and prolongs the PT first; it fits a patient with malabsorption or anticoagulant use and an elevated INR.\n(D) Von Willebrand factor deficiency is the answer when mucocutaneous bleeding predominates with a prolonged bleeding time or abnormal platelet function test, often in women and with autosomal dominant inheritance.\n(E) Factor VII deficiency is suggested by an isolated prolonged PT with a normal aPTT, because factor VII acts only in the extrinsic pathway; here the PT is normal."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing von Willebrand disease because it is the most common inherited bleeding disorder — joint bleeding, X-linked family history, and a normal bleeding time point to hemophilia."
+   },
+   {
+    "k": "학습목표",
+    "v": "관절 출혈과 근육 출혈, 혼합 검사로 교정되는 단독 aPTT 연장, 정상 출혈 시간에서 내인 경로 인자(VIII) 결핍을 진단하고 폰빌레브란트병과 구분한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Srivastava A, et al. WFH Guidelines for the Management of Hemophilia, 3rd edition. Haemophilia 2020;26 Suppl 6:1-158 · Harrison's Principles of Internal Medicine, 21st ed. Ch. Coagulation disorders — hemophilia A and B, mixing studies · Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. Hematopoietic and lymphoid systems — bleeding disorders related to defective coagulation factors"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "관절·근육 출혈, 단독 aPTT 연장이 혼합 검사로 교정되고 출혈 시간이 정상이며 외삼촌에게 같은 병이 있으므로 VIII 인자 결핍(혈우병 A)이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "출혈 시간 정상·점상출혈 없음·깊은 관절 출혈 — 일차 지혈(폰빌레브란트 인자) 이상이 아니다",
+   "steps": 3,
+   "chain": [
+    "관절혈증·깊은 근육 혈종 → 응고 인자 결핍형 출혈",
+    "PT 정상·aPTT 연장 + 혼합 검사로 교정 → 내인 경로 인자 결핍(억제물질 아님)",
+    "출혈 시간 정상 + 외삼촌(X연관) → VIII 인자 결핍(혈우병 A)"
+   ],
+   "key": [
+    {
+     "item": "activated partial thromboplastin time is 68 seconds",
+     "why": "내인 경로 이상",
+     "also": []
+    },
+    {
+     "item": "corrects to 33 seconds after mixing",
+     "why": "억제물질이 아니라 인자 결핍",
+     "also": []
+    },
+    {
+     "item": "His maternal uncle had similar joint problems",
+     "why": "X연관 열성 유전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "bleeding time is normal",
+     "why": "혈소판·폰빌레브란트 인자 이상 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "prothrombin time is 12 seconds",
+     "why": "외인 경로(VII)·비타민 K 결핍 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "There are no petechiae",
+     "why": "일차 지혈 이상의 피부 출혈이 없다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "he does not recall a direct injury",
+     "why": "자발 관절혈증을 시사하지만 단독으로 결핍 인자를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "관절혈증과 깊은 근육 혈종, 단독 aPTT 연장이 혼합 검사로 교정되고 출혈 시간이 정상이며 외삼촌에게 같은 병이 있다. X연관 VIII 인자 결핍(혈우병 A)이며, 점막 출혈과 출혈 시간 연장을 보이는 폰빌레브란트병과 구분된다.",
+   "switch": {
+    "choice": "A",
+    "condition": "혼합 검사 뒤에도 aPTT 가 교정되지 않고 출혈 대신 반복 유산·정맥 혈전이 있었다면 루푸스 항응고인자가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0315",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 산과·안과·순환기·호흡기·피부·혈액종양·감염·신장비뇨·소아·내분비)",
+  "subtopic": "피부 — 고령 환자의 이마 물집과 통증",
+  "type": "피부 — 고령 환자의 이마 물집과 통증",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "72세 여자가 2일 전부터 생긴 오른쪽 이마의 물집과 화끈거리는 통증으로 왔다. 4일 전부터 같은 부위가 따끔거렸다. 고혈압으로 암로디핀을 먹고 있다. 체온 37.4 °C 이다. 오른쪽 이마와 윗눈꺼풀, 두피 앞쪽에 붉은 바탕 위의 무리 지은 소수포가 정중선을 넘지 않고 띠 모양으로 분포하며, 오른쪽 코끝에도 소수포가 2개 있다. 시력은 양쪽 0.8 이고 결막은 약간 충혈되었다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "대상포진 백신 접종",
+   "경구 발라시클로버 투여와 안과 진찰 의뢰",
+   "경구 발라시클로버 투여만 하고 경과 관찰",
+   "국소 아시클로버 연고 도포와 경과 관찰",
+   "경구 프레드니솔론 단독 투여"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 한쪽 이마·윗눈꺼풀·두피 앞쪽에 정중선을 넘지 않는 띠 모양의 무리 지은 소수포는 삼차신경 눈신경(V1)의 대상포진이다. 코끝의 소수포(허친슨 징후)는 눈 안까지 분포하는 코섬모체신경 침범을 뜻하므로 눈 합병증 위험이 높다. 발진 72시간 안이므로 경구 발라시클로버를 시작하고, 결막 충혈이 있으니 안과에서 각막·포도막을 확인해야 한다.\n- 원리: <b>왜 코끝이 중요한가</b>: 눈신경(V1)은 이마신경·눈물샘신경·코섬모체신경으로 갈린다. 코섬모체신경은 각막·홍채·섬모체로 가는 가지를 내고, 마지막 가지(바깥코신경)가 코끝과 콧등 피부를 맡는다. 그래서 코끝에 수포가 생기면(허친슨 징후) 같은 신경의 눈 속 가지도 바이러스에 침범되었을 가능성이 높고, 각막염·포도막염·급성 망막괴사로 시력을 잃을 수 있다.<br> <b>왜 72시간인가</b>: 수두-대상포진바이러스는 감각신경절에서 재활성화되어 신경을 따라 피부로 내려온다. 바이러스 복제가 활발한 초기에 항바이러스제를 시작해야 새 병변·급성 통증·눈 합병증이 줄어든다. 72시간이 지났어도 새 수포가 생기거나 눈 침범이 있으면 시작한다.<br> <b>왜 국소제로는 부족한가</b>: 병변은 신경절에서 피부까지 신경 전체의 감염이므로 피부에 바르는 약으로는 신경절과 눈 속 가지에 닿지 않는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">눈신경 대상포진 + 허친슨 징후(정답)</th><th>눈 침범 단서가 없는 몸통 대상포진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>항바이러스제</td><td>72시간 안 경구 발라시클로버</td><td>50세 이상·72시간 안이면 경구 발라시클로버</td></tr> <tr><td>안과 진찰</td><td><b>필수</b> — 각막염·포도막염·망막괴사 확인</td><td>필요 없다</td></tr> <tr><td>눈 합병증 위험</td><td>코끝 침범 시 크게 높다</td><td>없다</td></tr> </tbody></table> 같은 항바이러스제라도 V1 대상포진, 특히 코끝·결막 충혈이 있으면 안과 진찰을 더한다 — 항바이러스제만으로 끝내지 않는다.\n- 오답 이유:\n  - ① 대상포진 백신은 50세 이상에서 재발 예방을 위해 급성 병변이 가라앉은 뒤 접종하며, 활동성 대상포진의 치료로는 쓰지 않는다.\n  - ③ 경구 발라시클로버만 주고 관찰하는 것은 눈 침범 단서(허친슨 징후·결막 충혈)가 없는 몸통이나 사지의 대상포진일 때 적절하다.\n  - ④ 국소 아시클로버 연고는 입술 단순포진의 증상 단축에 쓰이며, 신경절에서 시작된 대상포진의 신경·눈 속 침범은 막지 못해 단독 치료가 될 수 없다.\n  - ⑤ 경구 프레드니솔론은 항바이러스제와 함께 급성 통증이나 람지헌트 증후군의 안면마비에 보조로 고려할 수 있으나 단독으로는 바이러스 확산을 부추긴다.\n- 함정: 항바이러스제를 골랐다는 데서 멈추는 것 — 코끝 수포(허친슨 징후)와 결막 충혈은 안과 진찰을 함께 요구한다.\n- 학습목표: 이마와 코끝에 걸친 띠 모양 수포를 눈신경(V1) 대상포진과 허친슨 징후로 판단하고, 72시간 안의 항바이러스제와 안과 진찰을 함께 시행한다\n- 근거·출처: Cohen JI. Herpes zoster. N Engl J Med 2013;369:255-263 · Liesegang TJ. Herpes zoster ophthalmicus: natural history, risk factors, clinical presentation, and morbidity. Ophthalmology 2008;115(2 Suppl):S3-12 · Bolognia JL, et al. Dermatology, 4th ed. Ch. Varicella-zoster virus infections — Hutchinson sign",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "한쪽 이마·윗눈꺼풀·두피 앞쪽에 정중선을 넘지 않는 띠 모양의 무리 지은 소수포는 삼차신경 눈신경(V1)의 대상포진이다. 코끝의 소수포(허친슨 징후)는 눈 안까지 분포하는 코섬모체신경 침범을 뜻하므로 눈 합병증 위험이 높다. 발진 72시간 안이므로 경구 발라시클로버를 시작하고, 결막 충혈이 있으니 안과에서 각막·포도막을 확인해야 한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 코끝이 중요한가</b>: 눈신경(V1)은 이마신경·눈물샘신경·코섬모체신경으로 갈린다. 코섬모체신경은 각막·홍채·섬모체로 가는 가지를 내고, 마지막 가지(바깥코신경)가 코끝과 콧등 피부를 맡는다. 그래서 코끝에 수포가 생기면(허친슨 징후) 같은 신경의 눈 속 가지도 바이러스에 침범되었을 가능성이 높고, 각막염·포도막염·급성 망막괴사로 시력을 잃을 수 있다.<br> <b>왜 72시간인가</b>: 수두-대상포진바이러스는 감각신경절에서 재활성화되어 신경을 따라 피부로 내려온다. 바이러스 복제가 활발한 초기에 항바이러스제를 시작해야 새 병변·급성 통증·눈 합병증이 줄어든다. 72시간이 지났어도 새 수포가 생기거나 눈 침범이 있으면 시작한다.<br> <b>왜 국소제로는 부족한가</b>: 병변은 신경절에서 피부까지 신경 전체의 감염이므로 피부에 바르는 약으로는 신경절과 눈 속 가지에 닿지 않는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">눈신경 대상포진 + 허친슨 징후(정답)</th><th>눈 침범 단서가 없는 몸통 대상포진(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>항바이러스제</td><td>72시간 안 경구 발라시클로버</td><td>50세 이상·72시간 안이면 경구 발라시클로버</td></tr> <tr><td>안과 진찰</td><td><b>필수</b> — 각막염·포도막염·망막괴사 확인</td><td>필요 없다</td></tr> <tr><td>눈 합병증 위험</td><td>코끝 침범 시 크게 높다</td><td>없다</td></tr> </tbody></table> 같은 항바이러스제라도 V1 대상포진, 특히 코끝·결막 충혈이 있으면 안과 진찰을 더한다 — 항바이러스제만으로 끝내지 않는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 대상포진 백신은 50세 이상에서 재발 예방을 위해 급성 병변이 가라앉은 뒤 접종하며, 활동성 대상포진의 치료로는 쓰지 않는다.\n③ 경구 발라시클로버만 주고 관찰하는 것은 눈 침범 단서(허친슨 징후·결막 충혈)가 없는 몸통이나 사지의 대상포진일 때 적절하다.\n④ 국소 아시클로버 연고는 입술 단순포진의 증상 단축에 쓰이며, 신경절에서 시작된 대상포진의 신경·눈 속 침범은 막지 못해 단독 치료가 될 수 없다.\n⑤ 경구 프레드니솔론은 항바이러스제와 함께 급성 통증이나 람지헌트 증후군의 안면마비에 보조로 고려할 수 있으나 단독으로는 바이러스 확산을 부추긴다."
+   },
+   {
+    "k": "함정",
+    "v": "항바이러스제를 골랐다는 데서 멈추는 것 — 코끝 수포(허친슨 징후)와 결막 충혈은 안과 진찰을 함께 요구한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "이마와 코끝에 걸친 띠 모양 수포를 눈신경(V1) 대상포진과 허친슨 징후로 판단하고, 72시간 안의 항바이러스제와 안과 진찰을 함께 시행한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cohen JI. Herpes zoster. N Engl J Med 2013;369:255-263 · Liesegang TJ. Herpes zoster ophthalmicus: natural history, risk factors, clinical presentation, and morbidity. Ophthalmology 2008;115(2 Suppl):S3-12 · Bolognia JL, et al. Dermatology, 4th ed. Ch. Varicella-zoster virus infections — Hutchinson sign"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "한쪽 이마·윗눈꺼풀의 띠 모양 소수포는 눈신경 대상포진이고 코끝 소수포(허친슨 징후)와 결막 충혈이 있으므로, 72시간 안의 경구 항바이러스제에 안과 진찰을 더한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "코끝 소수포와 결막 충혈 — 눈 속 가지(코섬모체신경) 침범의 단서",
+   "steps": 2,
+   "chain": [
+    "오른쪽 이마·윗눈꺼풀·두피의 정중선을 넘지 않는 띠 모양 소수포 → 눈신경(V1) 대상포진",
+    "코끝 소수포(허친슨 징후) + 결막 충혈 → 눈 침범 위험 → 항바이러스제 + 안과 진찰"
+   ],
+   "key": [
+    {
+     "item": "정중선을 넘지 않고 띠 모양으로 분포",
+     "why": "한 피부분절 — 대상포진",
+     "also": []
+    },
+    {
+     "item": "오른쪽 코끝에도 소수포가 2개 있다",
+     "why": "허친슨 징후 — 코섬모체신경 침범",
+     "also": []
+    },
+    {
+     "item": "결막은 약간 충혈되었다",
+     "why": "눈 침범 가능성 — 안과 진찰이 필요하다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "2일 전부터 생긴",
+     "why": "발진 72시간 안 — 항바이러스제의 이득이 크다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "시력은 양쪽 0.8",
+     "why": "아직 시력 저하는 없지만 눈 침범을 배제하지 못한다",
+     "also": []
+    },
+    {
+     "item": "고혈압으로 암로디핀을 먹고 있다",
+     "why": "치료 선택에 영향을 주지 않는 배경",
+     "also": []
+    }
+   ],
+   "summary": "한쪽 이마·윗눈꺼풀의 띠 모양 소수포는 눈신경 대상포진이고, 코끝 소수포(허친슨 징후)와 결막 충혈은 눈 속 침범을 시사한다. 72시간 안이므로 경구 발라시클로버를 시작하고 안과 진찰을 함께 의뢰한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "병변이 몸통 한쪽 피부분절에만 있고 얼굴·눈 침범 단서가 없었다면 경구 발라시클로버만으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0304",
   "exam": "imaging",
   "style": "kmle_style",
