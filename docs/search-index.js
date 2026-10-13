@@ -5,19 +5,19 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3635,
+  "total": 3636,
   "byType": {
    "kmle": 1408,
+   "anatomy": 840,
    "usmle": 192,
    "paper": 760,
    "imaging": 319,
    "concept": 100,
-   "anatomy": 839,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 839,
+   "Anatomy": 840,
    "Cardiology": 253,
    "Nephrology": 201,
    "Infectious Disease": 184,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2520,
+   "high": 2521,
    "medium": 1065,
    "low": 50
   },
@@ -694,6 +694,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1409.md",
    "snippet": "72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년",
    "text": "Cardiology Abrupt Fainting without Warning in an Older Man with an Abnormal Baseline ECG syncope ecg bifascicular-block conduction-disease diagnosis KMLE 2026 / Claude 72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년 동안 비슷하게 갑자기 주저앉은 적이 한 번 있었다. 진찰에서 의식은 명료하고 신경학적 결손은 없으며 심잡음은 들리지 않는다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 활력징후와 검사 소견은 자료와 같다. 실신의 원인으로 가장 가능성이 높은 것은? A. 미주신경성 실신 B. 기립성 저혈압 C. 대동맥판 협착에 의한 실신 D. 단형 심실빈맥 E. 간헐적 고도 방실차단 심전도는 동율동에 넓은 QRS, V1의 rSR′ 모양과 좌축편위로 완전우각차단과 좌전섬유속차단이 함께 있는 이섬유속차단이다. 전조 없이 앉은 자세에서 갑자기 쓰러져 다친 실신은 부정맥성 실신을 시사한다. 기립 혈압·심장초음파가 정상이어서 기립성 저혈압·구조적 심질환(대동맥판 협착, 반흔 관련 심실빈맥)의 가능성은 낮으므로, 남은 전도계로 간헐적으로 생기는 고도 방실차단이 가장 가능성이 높다."
+  },
+  {
+   "id": "anatomy-daily-2026-10-14",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-14",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/anatomy/daily/2026-10-14.md",
+   "snippet": "오늘의 학습 (2026 10 14 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 34일 · Tagging 2까지 5일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-14 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 14 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 34일 · Tagging 2까지 5일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0205",
