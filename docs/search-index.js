@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3636,
+  "total": 3646,
   "byType": {
    "kmle": 1408,
    "anatomy": 840,
    "usmle": 192,
    "paper": 760,
-   "imaging": 319,
+   "imaging": 329,
    "concept": 100,
    "ailab": 14,
    "basic": 3
@@ -38,32 +38,32 @@ window.MEDKOS_INDEX = {
    "Surgery": 90,
    "Hematology": 85,
    "Laboratory Medicine": 77,
-   "산부인과": 52,
+   "산부인과": 53,
    "순환기": 30,
    "Physiology": 22,
    "호흡기": 21,
    "소화기": 20,
-   "소아과": 18,
+   "소아과": 19,
    "Pharmacology": 16,
+   "내분비": 16,
+   "혈액·종양": 16,
    "Biochemistry": 15,
    "감염": 15,
-   "내분비": 15,
-   "혈액·종양": 15,
+   "신경": 15,
+   "신장·비뇨기": 15,
+   "응급·중환자": 15,
    "Microbiology": 14,
    "병리·조직학": 14,
-   "신경": 14,
-   "신장·비뇨기": 14,
-   "응급·중환자": 14,
    "피부과": 13,
    "예방의학·역학": 12,
    "외과": 12,
    "Immunology": 11,
    "Internal Medicine": 11,
-   "근골격·류마티스": 8,
-   "약리": 8,
+   "근골격·류마티스": 9,
+   "약리": 9,
    "정신과": 8,
    "안과": 6,
-   "영상의학": 5,
+   "영상의학": 6,
    "이비인후과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2521,
+   "high": 2531,
    "medium": 1065,
    "low": 50
   },
@@ -888,6 +888,180 @@ window.MEDKOS_INDEX = {
    "path": "content/papers/2026/2026-10-13_paper-2026-0758_acute_effects_of_impella_5_5_on_biventricular_filling_and_pr.md",
    "snippet": "Title Acute Effects of Impella 5.5 on Biventricular Filling and Pressure Volume Area in Patients With Heart Failure Associated Cardiogenic Shock Authors Everett Kay D, Jain Pankaj, Lee Aaron, Miyashita Satoshi, Esposito Michele, Reyelt Lara",
    "text": "Cardiology scraped pubmed PubMed / ASAIO journal (American Society for Artificial Internal Organs : 1992) Title Acute Effects of Impella 5.5 on Biventricular Filling and Pressure Volume Area in Patients With Heart Failure Associated Cardiogenic Shock Authors Everett Kay D, Jain Pankaj, Lee Aaron, Miyashita Satoshi, Esposito Michele, Reyelt Lara, Said Christian, Barland Katherine, et al. Journal / DOI ASAIO journal (American Society for Artificial Internal Organs : 1992) · DOI: 10.1097/MAT.0000000000002876 · PMID: 42863115 https://pubmed.ncbi.nlm.nih.gov/42863115/ Abstract Use of Impella 5.5 in patients with decompensated heart failure associated cardiogenic shock (ADHF CS) is increasing as a bridge to advanced therapies. The effects of maximal trans valvular unloading on biventricular filling and pressure volume area (PVA) in ADHF CS are poorly understood. Nine patients with medically refractory ADHF CS underwent Impella 5.5 placement with simultaneous invasive arterial, venous, and biventricular pressure volume loop analysis. Acutely after Impella 5.5 activation, cardiac output (3.4 ± 0.5 vs. 5.0 ± 0.7 L/min, p = 0.0011), diastolic (67.2 ± 8.0 vs. 80.7 ± 9.7 mm Hg, p = 0.0044) and mean arterial pressures (77.9 ± 7.1 vs. 86.9 ± 10.4 mm Hg, p = 0.029) increased, compared to baseline. Left ventricular end diastolic pressure (24.1 ± 6.7 vs. 16.8 ± 5.4 mm Hg, p = 0.0027), volume (262.1 ± 103.9 vs. 231.5 ± 104.3 ml, p = 0.0036), and PVA (21,913 ± 7,055 vs. 18,357 ± 7,758 mmHg·ml, p = 0.013) decreased. Right ventricular end diastolic (12.4 ± 4.6 vs. 9.1 ± 3.8 mm Hg, p = 3.8E 5) and end systolic pressure (42.1 ± 11.9 vs. 34.4 ± 11.1 mm Hg, p = 0.030) and PVA (6,303 ± 3,851 vs. 4,437 ± 2,473 mm Hg·ml, p = 0.027) also decreased. These findings suggest that maximal left ventricular unloading can acutely reduce biventricular filling pressures and PVA in patients with ADHF CS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "imaging-2026-0330",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 만성 콩팥병·클래리스로마이신 복용 중 급성 통풍",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0330.md",
+   "snippet": "A 71 year old man comes to the physician because of severe pain and swelling of the right first metatarsophalangeal joint that began suddenly overnight. He has hypertension, atrial fibrillation, and chronic kidney disease. Current medicatio",
+   "text": "근골격·류마티스 류마티스·근골격 — 만성 콩팥병·클래리스로마이신 복용 중 급성 통풍 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db A 71 year old man comes to the physician because of severe pain and swelling of the right first metatarsophalangeal joint that began suddenly overnight. He has hypertension, atrial fibrillation, and chronic kidney disease. Current medications are apixaban, metoprolol, and amlodipine; 3 days ago, he started clarithromycin for community acquired pneumonia. Temperature is 37.6°C, blood pressure is 138/82 mm Hg, and pulse is 76/min. The right first metatarsophalangeal joint is red, warm, swollen, and exquisitely tender. Serum creatinine is 2.3 mg/dL (eGFR 27 mL/min/1.73 m2), and serum uric acid is 8.9 mg/dL. Arthrocentesis yields cloudy fluid with 18,000 leukocytes/mm3, negative Gram stain, and needle shaped, negatively birefringent crystals. Which of the following is the most appropriate pharmacotherapy? A. Oral colchicine B. Oral indomethacin C. Oral allopurinol D. Intravenous pegloticase E. Oral prednisone"
+  },
+  {
+   "id": "imaging-2026-0329",
+   "type": "imaging",
+   "unit": "",
+   "topic": "약리",
+   "subtopic": "약리 — 관상동맥 스텐트 뒤 클로피도그렐 복용 중 스텐트 혈전증",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0329.md",
+   "snippet": "A 58 year old man is brought to the emergency department 30 minutes after the onset of crushing substernal chest pain. Six weeks ago, he underwent placement of a drug eluting stent in the proximal left anterior descending artery for an ante",
+   "text": "약리 약리 — 관상동맥 스텐트 뒤 클로피도그렐 복용 중 스텐트 혈전증 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db A 58 year old man is brought to the emergency department 30 minutes after the onset of crushing substernal chest pain. Six weeks ago, he underwent placement of a drug eluting stent in the proximal left anterior descending artery for an anterior ST elevation myocardial infarction. Since then, he has taken aspirin 81 mg and clopidogrel 75 mg daily, and his wife confirms that he has not missed doses. He also takes atorvastatin and lisinopril. Blood pressure is 102/64 mm Hg and pulse is 104/min. ECG shows ST segment elevation in leads V1 through V4. Emergency coronary angiography shows thrombotic occlusion within the stent with no edge dissection or stent underexpansion. Genotyping shows that he is homozygous for the CYP2C19 2 allele. Which of the following best explains the failure of therapy in this patient? A. Inhibition of clopidogrel absorption by atorvastatin B. Decreased formation of the active thiol metabolite of clopidogrel C. Increased hepatic clearance of the active metabolite of clopidogrel D. Mutation of the platelet P2Y12 receptor preventing drug binding E. Accelerated hydrolysis of aspirin by plasma esterases"
+  },
+  {
+   "id": "imaging-2026-0328",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 증상 없는 고칼슘혈증과 낮은 소변 칼슘",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0328.md",
+   "snippet": "38세 여자가 건강검진에서 고칼슘혈증이 발견되어 왔다. 증상은 없고 결석·골절 병력이 없다. 약이나 보충제는 먹지 않는다. 아버지도 「칼슘이 높다」는 말을 들었으나 치료받지 않았다. 혈압 118/74 mmHg 이다. 혈청 칼슘 10.9 mg/dL, 인 2.9 mg/dL, 알부민 4.3 g/dL, 크레아티닌 0.7 mg/dL, 마그네슘 2.4 mg/dL, 부갑상샘호르몬 72 pg/mL(참고치 15~65), 25 하이드록시비타민 ",
+   "text": "내분비 내분비·대사 — 증상 없는 고칼슘혈증과 낮은 소변 칼슘 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db 38세 여자가 건강검진에서 고칼슘혈증이 발견되어 왔다. 증상은 없고 결석·골절 병력이 없다. 약이나 보충제는 먹지 않는다. 아버지도 「칼슘이 높다」는 말을 들었으나 치료받지 않았다. 혈압 118/74 mmHg 이다. 혈청 칼슘 10.9 mg/dL, 인 2.9 mg/dL, 알부민 4.3 g/dL, 크레아티닌 0.7 mg/dL, 마그네슘 2.4 mg/dL, 부갑상샘호르몬 72 pg/mL(참고치 15~65), 25 하이드록시비타민 D 32 ng/mL 이다. 24시간 소변 칼슘은 60 mg 이고, 칼슘/크레아티닌 청소율 비는 0.006 이다. 대퇴골·요추 골밀도는 정상이다. 가장 적절한 처치는? A. 부갑상샘절제술 B. 시나칼셋 투여 C. 알렌드로네이트 투여 D. 하이드로클로로티아지드 투여 E. 경과 관찰"
+  },
+  {
+   "id": "imaging-2026-0327",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 반복되는 칼슘 결석과 24시간 소변 검사",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0327.md",
+   "snippet": "42세 남자가 3년 동안 세 번째 왼쪽 옆구리 산통으로 왔다. 이전에 배출된 결석은 칼슘 옥살산 결석이었다. 만성 설사나 장 수술 병력은 없고 약은 먹지 않는다. 하루 물 2.5 L 를 마신다. 혈압 126/80 mmHg 이다. 혈청 칼슘 9.4 mg/dL, 칼륨 4.1 mEq/L, 중탄산 25 mEq/L, 요산 5.8 mg/dL, 부갑상샘호르몬 38 pg/mL 이다. 24시간 소변 검사에서 소변량 2.4 L, 칼슘 210 m",
+   "text": "신장·비뇨기 신장·비뇨 — 반복되는 칼슘 결석과 24시간 소변 검사 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db 42세 남자가 3년 동안 세 번째 왼쪽 옆구리 산통으로 왔다. 이전에 배출된 결석은 칼슘 옥살산 결석이었다. 만성 설사나 장 수술 병력은 없고 약은 먹지 않는다. 하루 물 2.5 L 를 마신다. 혈압 126/80 mmHg 이다. 혈청 칼슘 9.4 mg/dL, 칼륨 4.1 mEq/L, 중탄산 25 mEq/L, 요산 5.8 mg/dL, 부갑상샘호르몬 38 pg/mL 이다. 24시간 소변 검사에서 소변량 2.4 L, 칼슘 210 mg, 옥살산 32 mg, 요산 560 mg, 구연산 180 mg(참고치 450 mg), 나트륨 140 mEq 이다. 재발을 막기 위해 가장 적절한 약은? A. 알로퓨리놀 B. 탄산칼슘 C. 아세타졸아마이드 D. 구연산칼륨 E. 하이드로클로로티아지드"
+  },
+  {
+   "id": "imaging-2026-0326",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 무릎 인공관절 수술 뒤 헤파린 7일째 혈소판 감소",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0326.md",
+   "snippet": "68세 여자가 오른쪽 무릎 인공관절 치환술 뒤 입원 7일째 왼쪽 종아리가 붓고 아프다. 수술 다음 날부터 미분획 헤파린을 피하주사로 맞고 있다. 혈압 132/80 mmHg, 맥박 88회/분, 체온 36.9 °C 이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 굵다. 수술 전 혈소판 수는 260,000/mm³ 였고 오늘은 98,000/mm³ 이다. 혈색소 11.2 g/dL, 프로트롬빈시간 INR 1.0, 혈청 크레아티닌 0.8 m",
+   "text": "혈액·종양 혈액·종양 — 무릎 인공관절 수술 뒤 헤파린 7일째 혈소판 감소 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db 68세 여자가 오른쪽 무릎 인공관절 치환술 뒤 입원 7일째 왼쪽 종아리가 붓고 아프다. 수술 다음 날부터 미분획 헤파린을 피하주사로 맞고 있다. 혈압 132/80 mmHg, 맥박 88회/분, 체온 36.9 °C 이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 굵다. 수술 전 혈소판 수는 260,000/mm³ 였고 오늘은 98,000/mm³ 이다. 혈색소 11.2 g/dL, 프로트롬빈시간 INR 1.0, 혈청 크레아티닌 0.8 mg/dL 이다. 하지 정맥 초음파에서 왼쪽 오금정맥에 혈전이 있다. 헤파린을 끊은 뒤 가장 적절한 처치는? A. 하대정맥 필터 삽입 B. 아르가트로반 정맥 투여 C. 에녹사파린 피하 주사 D. 와파린 경구 투여 시작 E. 혈소판 수혈"
+  },
+  {
+   "id": "imaging-2026-0325",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 설사 2주 뒤 올라오는 양쪽 다리 힘 빠짐",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0325.md",
+   "snippet": "A 34 year old man comes to the emergency department because of weakness of both legs that began 4 days ago and has progressed so that he now has difficulty climbing stairs. He also has tingling in his feet and hands. Two weeks ago, he had a",
+   "text": "신경 신경 — 설사 2주 뒤 올라오는 양쪽 다리 힘 빠짐 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db A 34 year old man comes to the emergency department because of weakness of both legs that began 4 days ago and has progressed so that he now has difficulty climbing stairs. He also has tingling in his feet and hands. Two weeks ago, he had a 3 day episode of watery diarrhea that resolved without treatment. Temperature is 37.0°C, blood pressure is 128/78 mm Hg, pulse is 84/min, and respirations are 16/min. Muscle strength is 3/5 in the hip flexors and 4/5 in the ankle dorsiflexors bilaterally; strength in the upper extremities is 5/5. Deep tendon reflexes are absent in the lower extremities and decreased in the upper extremities. Sensation to vibration is mildly decreased in the toes. Forced vital capacity is 3.6 L (80% of predicted). Cerebrospinal fluid analysis shows a leukocyte count of 2/mm3 and a protein concentration of 110 mg/dL. Which of the following is the most appropriate treatment? A. Intravenous acyclovir B. Oral prednisone C. Intravenous immune globulin D. Intravenous methylprednisolone E. Oral pyridostigmine"
+  },
+  {
+   "id": "imaging-2026-0324",
+   "type": "imaging",
+   "unit": "",
+   "topic": "산부인과",
+   "subtopic": "부인과 — BRCA1 보인자의 위험감소 난관난소절제 검체",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0324.md",
+   "snippet": "A 59 year old woman with a known pathogenic germline BRCA1 variant undergoes elective risk reducing laparoscopic bilateral salpingo oophorectomy. She is postmenopausal and has no symptoms. Pelvic examination and transvaginal ultrasonography",
+   "text": "산부인과 부인과 — BRCA1 보인자의 위험감소 난관난소절제 검체 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db A 59 year old woman with a known pathogenic germline BRCA1 variant undergoes elective risk reducing laparoscopic bilateral salpingo oophorectomy. She is postmenopausal and has no symptoms. Pelvic examination and transvaginal ultrasonography were normal before surgery, and serum CA 125 concentration was 14 U/mL. A photomicrograph of a section of the fallopian tube stained by immunohistochemistry for a nuclear transcription factor is shown. The stained epithelial cells are considered the cell of origin of which of the following neoplasms in women with this variant? A. Clear cell carcinoma B. Mucinous carcinoma C. Adult granulosa cell tumor D. High grade serous carcinoma E. Endometrioid carcinoma"
+  },
+  {
+   "id": "imaging-2026-0323",
+   "type": "imaging",
+   "unit": "",
+   "topic": "영상의학",
+   "subtopic": "진단검사·영상의학 판독 — 치밀유방 여성의 만져지는 종괴와 유방 MRI",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "mr"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0323.md",
+   "snippet": "A 43 year old woman comes to the physician because of a lump in her breast that she noticed 4 weeks ago. She has no nipple discharge or pain. Her last menstrual period was 2 weeks ago. Her mother had breast cancer at the age of 61 years. Ex",
+   "text": "영상의학 진단검사·영상의학 판독 — 치밀유방 여성의 만져지는 종괴와 유방 MRI opendata usmle_style mr 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db A 43 year old woman comes to the physician because of a lump in her breast that she noticed 4 weeks ago. She has no nipple discharge or pain. Her last menstrual period was 2 weeks ago. Her mother had breast cancer at the age of 61 years. Examination shows a firm, mobile, nontender 2 cm mass; there is no skin change or axillary lymphadenopathy. Mammography shows heterogeneously dense breast tissue without a definite mass or calcifications, and targeted ultrasonography is inconclusive. A maximum intensity projection image from dynamic contrast enhanced breast MRI is shown. Which of the following is the most appropriate next step in management? A. Modified radical mastectomy B. Tamoxifen chemoprevention C. Image guided core needle biopsy D. Repeat breast MRI in 6 months E. Routine annual screening mammography"
+  },
+  {
+   "id": "imaging-2026-0322",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소아과",
+   "subtopic": "소아청소년 — 자전거에서 떨어진 청소년의 손목 측면 X선",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "xr_msk"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0322.md",
+   "snippet": "13세 남자가 자전거에서 떨어지며 오른손을 짚은 뒤 손목 통증으로 왔다. 다른 병력은 없다. 원위 요골 등쪽이 붓고 누르면 아프다. 손가락의 감각과 혈액순환은 정상이다. 오른쪽 손목 측면 단순 X선은 그림과 같다. 이 골절선이 주로 지나는 성장판의 층은? A. 비대층 B. 휴지층 C. 증식층 D. 일차 해면골 E. 골단의 이차 골화중심",
+   "text": "소아과 소아청소년 — 자전거에서 떨어진 청소년의 손목 측면 X선 opendata kmle_style xr_msk 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db 13세 남자가 자전거에서 떨어지며 오른손을 짚은 뒤 손목 통증으로 왔다. 다른 병력은 없다. 원위 요골 등쪽이 붓고 누르면 아프다. 손가락의 감각과 혈액순환은 정상이다. 오른쪽 손목 측면 단순 X선은 그림과 같다. 이 골절선이 주로 지나는 성장판의 층은? A. 비대층 B. 휴지층 C. 증식층 D. 일차 해면골 E. 골단의 이차 골화중심"
+  },
+  {
+   "id": "imaging-2026-0321",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 넘어져 턱을 부딪친 초고령 여성의 목 통증",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+   "confidence": "high",
+   "date": "2026-10-13",
+   "path": "content/imaging/2026/imaging-2026-0321.md",
+   "snippet": "85세 여자가 침대 옆에서 넘어져 턱을 바닥에 부딪친 뒤 목 뒤쪽 통증으로 응급실에 왔다. 고혈압과 골다공증으로 약을 먹고 있다. 혈압 148/84 mmHg, 맥박 82회/분이다. 의식은 명료하고 위쪽 목뼈 뒤쪽에 압통이 있으며 고개를 돌리지 못한다. 팔다리의 근력과 감각, 힘줄반사는 정상이다. 경추 CT 정중시상 재구성 영상은 그림과 같다. 진단은? A. 치아돌기 기저부 골절 B. 치아돌기 끝부분 골절 C. C2 몸통으로 뻗",
+   "text": "응급·중환자 응급·중환자·외상 — 넘어져 턱을 부딪친 초고령 여성의 목 통증 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db 85세 여자가 침대 옆에서 넘어져 턱을 바닥에 부딪친 뒤 목 뒤쪽 통증으로 응급실에 왔다. 고혈압과 골다공증으로 약을 먹고 있다. 혈압 148/84 mmHg, 맥박 82회/분이다. 의식은 명료하고 위쪽 목뼈 뒤쪽에 압통이 있으며 고개를 돌리지 못한다. 팔다리의 근력과 감각, 힘줄반사는 정상이다. 경추 CT 정중시상 재구성 영상은 그림과 같다. 진단은? A. 치아돌기 기저부 골절 B. 치아돌기 끝부분 골절 C. C2 몸통으로 뻗은 치아돌기 골절 D. C2 양쪽 관절간부 골절 E. 환추 앞고리 골절"
   },
   {
    "id": "imaging-2026-0320",

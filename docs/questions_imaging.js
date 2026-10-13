@@ -2,6 +2,524 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0324",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "산부인과",
+  "subject_file": "산부인과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "부인과 — BRCA1 보인자의 위험감소 난관난소절제 검체",
+  "type": "부인과 — BRCA1 보인자의 위험감소 난관난소절제 검체",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "A 59-year-old woman with a known pathogenic germline BRCA1 variant undergoes elective risk-reducing laparoscopic bilateral salpingo-oophorectomy. She is postmenopausal and has no symptoms. Pelvic examination and transvaginal ultrasonography were normal before surgery, and serum CA-125 concentration was 14 U/mL. A photomicrograph of a section of the fallopian tube stained by immunohistochemistry for a nuclear transcription factor is shown.",
+  "question": "The stained epithelial cells are considered the cell of origin of which of the following neoplasms in women with this variant?",
+  "options": [
+   "Clear cell carcinoma",
+   "Mucinous carcinoma",
+   "Adult granulosa cell tumor",
+   "High-grade serous carcinoma",
+   "Endometrioid carcinoma"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The tubal plicae are lined by columnar epithelium whose nuclei stain brown, mostly in the nonciliated (secretory) cells, while the stroma, smooth muscle, and vessels are negative. These Müllerian secretory cells of the distal fallopian tube are now considered the origin of most high-grade serous carcinomas of the 'ovary' and peritoneum: a TP53-mutated serous tubal intraepithelial carcinoma (STIC) arises in the fimbria and sheds onto the ovary and peritoneum. This is why risk-reducing surgery in BRCA carriers removes the tubes with the ovaries and the fimbriae are examined completely (SEE-FIM protocol).\n- 원리: <b>Why the tube, not the ovary</b>: the ovary has no native Müllerian epithelium — its surface is a modified mesothelium. When pathologists sectioned the entire fimbriae of prophylactic specimens from BRCA carriers, they found early carcinomas (STIC) and TP53 'signatures' in tubal secretory cells, not in the ovarian surface. These lesions share the same TP53 mutation as the accompanying high-grade serous carcinoma, showing that the cancer starts in the tube and spreads to the ovary and peritoneum.<br> <b>Why secretory cells</b>: Müllerian secretory cells express PAX8 (a nuclear transcription factor), whereas ciliated cells express markers of ciliogenesis. High-grade serous carcinoma, like its precursor, is PAX8-positive and WT1-positive with aberrant p53, which helps to distinguish it from mesothelioma (PAX8-negative) or metastatic carcinoma from other organs.<br> <b>Why BRCA matters</b>: BRCA1/2 loss impairs homologous recombination repair; in tubal secretory cells exposed to repeated ovulatory inflammation, TP53 mutation follows and drives rapid progression. Hence carriers are offered salpingo-oophorectomy at 35–40 years (BRCA1) or 40–45 years (BRCA2), and PARP inhibitors exploit the same repair defect in established tumors.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">High-grade serous carcinoma (correct)</th><th>Endometrioid / clear cell carcinoma (closest distractors)</th></tr></thead><tbody> <tr><td>Precursor</td><td><b>STIC in tubal secretory cells</b></td><td><b>Endometriosis</b> (atypical endometriosis)</td></tr> <tr><td>Key molecular change</td><td>TP53 mutation in nearly all; BRCA1/2</td><td>ARID1A, PTEN, PIK3CA; Lynch syndrome (mismatch repair)</td></tr> <tr><td>Hereditary link</td><td>BRCA1/2 carriers</td><td>Lynch syndrome</td></tr> <tr><td>Behavior</td><td>Advanced stage at diagnosis, peritoneal spread</td><td>Often early stage, ovarian mass in endometriosis</td></tr> </tbody></table> Both serous and endometrioid tumors are PAX8-positive Müllerian carcinomas — the precursor lesion and the hereditary syndrome, not PAX8 alone, separate them.\n- 오답 이유:\n  - (A) Clear cell carcinoma also arises in endometriosis, typically in an endometriotic cyst of a younger Asian woman, and would be correct if the precursor shown were atypical endometriosis rather than tubal epithelium.\n  - (B) Mucinous carcinoma usually arises from a mucinous borderline tumor or teratoma with intestinal-type epithelium and KRAS mutation, and is PAX8-negative, so it is not derived from tubal secretory cells.\n  - (C) Adult granulosa cell tumor is a sex cord–stromal tumor with FOXL2 mutation that secretes estrogen and inhibin; it arises from ovarian stromal cells, not from tubal epithelium.\n  - (E) Endometrioid carcinoma arises from endometriosis and is associated with Lynch syndrome and ARID1A or PTEN mutations; it would be correct if the specimen showed ovarian endometriosis with atypia.\n- 함정: Assuming 'ovarian' cancer starts in the ovarian surface — in BRCA carriers most high-grade serous carcinomas begin as STIC in the secretory cells of the distal fallopian tube.\n- 학습목표: 난관 점막의 핵 염색 상피(Müller관 분비세포)를 읽고, 이 세포가 고등급 장액성 암종의 기원(STIC)이므로 BRCA 보인자의 위험감소 수술에 난관을 포함함을 안다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The female genital tract — serous tumors, STIC and tubal origin · Piek JM, et al. Dysplastic changes in prophylactically removed Fallopian tubes of women predisposed to developing ovarian cancer. J Pathol 2001;195:451-456 · NCCN Clinical Practice Guidelines in Oncology: Genetic/Familial High-Risk Assessment — Breast, Ovarian, and Pancreatic (risk-reducing salpingo-oophorectomy timing) · Human Protein Atlas — PAX8, fallopian tube (glandular cells, nuclear; teacher-only) · 작성자 판독(2026-10-14): 난관 TMA 코어, 난관 주름 원주상피의 핵 염색(분비세포 우세, 일부 음성), 기질·평활근·혈관 음성\n\n## 출처\n- Human Protein Atlas, PAX8 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/55097/120596_A_7_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The tubal plicae are lined by columnar epithelium whose nuclei stain brown, mostly in the nonciliated (secretory) cells, while the stroma, smooth muscle, and vessels are negative. These Müllerian secretory cells of the distal fallopian tube are now considered the origin of most high-grade serous carcinomas of the 'ovary' and peritoneum: a TP53-mutated serous tubal intraepithelial carcinoma (STIC) arises in the fimbria and sheds onto the ovary and peritoneum. This is why risk-reducing surgery in BRCA carriers removes the tubes with the ovaries and the fimbriae are examined completely (SEE-FIM protocol)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the tube, not the ovary</b>: the ovary has no native Müllerian epithelium — its surface is a modified mesothelium. When pathologists sectioned the entire fimbriae of prophylactic specimens from BRCA carriers, they found early carcinomas (STIC) and TP53 'signatures' in tubal secretory cells, not in the ovarian surface. These lesions share the same TP53 mutation as the accompanying high-grade serous carcinoma, showing that the cancer starts in the tube and spreads to the ovary and peritoneum.<br> <b>Why secretory cells</b>: Müllerian secretory cells express PAX8 (a nuclear transcription factor), whereas ciliated cells express markers of ciliogenesis. High-grade serous carcinoma, like its precursor, is PAX8-positive and WT1-positive with aberrant p53, which helps to distinguish it from mesothelioma (PAX8-negative) or metastatic carcinoma from other organs.<br> <b>Why BRCA matters</b>: BRCA1/2 loss impairs homologous recombination repair; in tubal secretory cells exposed to repeated ovulatory inflammation, TP53 mutation follows and drives rapid progression. Hence carriers are offered salpingo-oophorectomy at 35–40 years (BRCA1) or 40–45 years (BRCA2), and PARP inhibitors exploit the same repair defect in established tumors."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">High-grade serous carcinoma (correct)</th><th>Endometrioid / clear cell carcinoma (closest distractors)</th></tr></thead><tbody> <tr><td>Precursor</td><td><b>STIC in tubal secretory cells</b></td><td><b>Endometriosis</b> (atypical endometriosis)</td></tr> <tr><td>Key molecular change</td><td>TP53 mutation in nearly all; BRCA1/2</td><td>ARID1A, PTEN, PIK3CA; Lynch syndrome (mismatch repair)</td></tr> <tr><td>Hereditary link</td><td>BRCA1/2 carriers</td><td>Lynch syndrome</td></tr> <tr><td>Behavior</td><td>Advanced stage at diagnosis, peritoneal spread</td><td>Often early stage, ovarian mass in endometriosis</td></tr> </tbody></table> Both serous and endometrioid tumors are PAX8-positive Müllerian carcinomas — the precursor lesion and the hereditary syndrome, not PAX8 alone, separate them."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Clear cell carcinoma also arises in endometriosis, typically in an endometriotic cyst of a younger Asian woman, and would be correct if the precursor shown were atypical endometriosis rather than tubal epithelium.\n(B) Mucinous carcinoma usually arises from a mucinous borderline tumor or teratoma with intestinal-type epithelium and KRAS mutation, and is PAX8-negative, so it is not derived from tubal secretory cells.\n(C) Adult granulosa cell tumor is a sex cord–stromal tumor with FOXL2 mutation that secretes estrogen and inhibin; it arises from ovarian stromal cells, not from tubal epithelium.\n(E) Endometrioid carcinoma arises from endometriosis and is associated with Lynch syndrome and ARID1A or PTEN mutations; it would be correct if the specimen showed ovarian endometriosis with atypia."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming 'ovarian' cancer starts in the ovarian surface — in BRCA carriers most high-grade serous carcinomas begin as STIC in the secretory cells of the distal fallopian tube."
+   },
+   {
+    "k": "학습목표",
+    "v": "난관 점막의 핵 염색 상피(Müller관 분비세포)를 읽고, 이 세포가 고등급 장액성 암종의 기원(STIC)이므로 BRCA 보인자의 위험감소 수술에 난관을 포함함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. The female genital tract — serous tumors, STIC and tubal origin · Piek JM, et al. Dysplastic changes in prophylactically removed Fallopian tubes of women predisposed to developing ovarian cancer. J Pathol 2001;195:451-456 · NCCN Clinical Practice Guidelines in Oncology: Genetic/Familial High-Risk Assessment — Breast, Ovarian, and Pancreatic (risk-reducing salpingo-oophorectomy timing) · Human Protein Atlas — PAX8, fallopian tube (glandular cells, nuclear; teacher-only) · 작성자 판독(2026-10-14): 난관 TMA 코어, 난관 주름 원주상피의 핵 염색(분비세포 우세, 일부 음성), 기질·평활근·혈관 음성 ## 출처 Human Protein Atlas, PAX8 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/55097/120596_A_7_7.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "난관 점막의 핵 염색 원주상피는 Müller관 분비세포이고, BRCA 보인자의 고등급 장액성 암종은 이 세포의 STIC 에서 시작한다",
+   "rival": [
+    "E",
+    "A"
+   ],
+   "discriminator": "자궁내막양·투명세포 암종의 전구병변은 자궁내막증이고 Lynch 증후군과 연관된다 — 난관 분비세포·BRCA 가 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 난관 주름 원주상피의 핵 염색(분비세포), 기질·평활근 음성 → 난관 Müller관 분비세포",
+    "난관 분비세포의 STIC + BRCA1 보인자 → 고등급 장액성 암종의 기원"
+   ],
+   "key": [
+    {
+     "item": "영상: 난관 주름 원주상피의 핵 갈색 염색, 기질·평활근·혈관 음성",
+     "why": "염색된 세포가 난관 상피(분비세포)임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "pathogenic germline BRCA1 variant",
+     "why": "고등급 장액성 암종의 유전 위험",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "risk-reducing laparoscopic bilateral salpingo-oophorectomy",
+     "why": "난관까지 떼는 이유가 바로 이 기원이다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "serum CA-125 concentration was 14 U/mL",
+     "why": "정상 — 기원을 묻는 질문에 영향이 없다",
+     "also": []
+    },
+    {
+     "item": "She is postmenopausal",
+     "why": "과립막세포종의 에스트로겐 증상도 없지만 답을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "난관 점막의 핵 염색 원주상피는 Müller관 분비세포이며, BRCA 보인자의 고등급 장액성 암종은 이 세포의 STIC 에서 시작해 난소·복막으로 퍼진다. 자궁내막양·투명세포 암종은 자궁내막증에서 생기고 Lynch 증후군과 연관된다.",
+   "switch": {
+    "choice": "E",
+    "condition": "검체에서 난소 자궁내막증 낭종과 비정형 자궁내막증이 보이고 환자가 Lynch 증후군 보인자였다면 자궁내막양 암종이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0324.jpg",
+   "caption": "Tissue microarray core, immunohistochemistry (brown DAB chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0 — no cropping or adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000125618-PAX8/tissue/Fallopian+tube",
+   "asset_id": "HPA-PAX8_120596_A_7_7",
+   "text": "Human Protein Atlas, PAX8 / Fallopian tube (CC BY 4.0), https://images.proteinatlas.org/55097/120596_A_7_7.jpg"
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0323",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "영상의학",
+  "subject_file": "영상의학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "진단검사·영상의학 판독 — 치밀유방 여성의 만져지는 종괴와 유방 MRI",
+  "type": "진단검사·영상의학 판독 — 치밀유방 여성의 만져지는 종괴와 유방 MRI",
+  "modality": "MR",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "A 43-year-old woman comes to the physician because of a lump in her breast that she noticed 4 weeks ago. She has no nipple discharge or pain. Her last menstrual period was 2 weeks ago. Her mother had breast cancer at the age of 61 years. Examination shows a firm, mobile, nontender 2-cm mass; there is no skin change or axillary lymphadenopathy. Mammography shows heterogeneously dense breast tissue without a definite mass or calcifications, and targeted ultrasonography is inconclusive. A maximum intensity projection image from dynamic contrast-enhanced breast MRI is shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Modified radical mastectomy",
+   "Tamoxifen chemoprevention",
+   "Image-guided core needle biopsy",
+   "Repeat breast MRI in 6 months",
+   "Routine annual screening mammography"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The subtraction MIP shows a round, intensely enhancing mass in the anterior breast whose rim is brighter than its center (rim enhancement), with increased vessels around it. Rim enhancement of a mass is among the MRI features with the highest positive predictive value for malignancy (BI-RADS 4–5), and a palpable mass must be sampled. The next step is tissue diagnosis by image-guided core needle biopsy (second-look ultrasonography-guided or MRI-guided).\n- 원리: <b>Why MRI enhancement matters</b>: invasive cancers induce new, leaky, tortuous vessels (angiogenesis driven by VEGF). After gadolinium injection, contrast floods the tumor early, and because the actively growing, well-perfused tumor cells lie at the periphery while the center may be fibrotic or necrotic, the edge enhances more than the center — rim enhancement. The same angiogenesis increases the number of vessels feeding the mass, seen on MIP as increased ipsilateral vascularity.<br> <b>Why tissue, not follow-up</b>: MRI is very sensitive but only moderately specific; morphology (irregular shape, spiculated margin, rim or heterogeneous internal enhancement) and kinetics (rapid washout) raise suspicion. A mass with suspicious features is BI-RADS 4 or 5, which requires biopsy; short-interval follow-up is reserved for BI-RADS 3 findings with a ≤ 2 % malignancy risk. A palpable mass that imaging cannot clearly explain as benign also needs tissue.<br> <b>Why core rather than surgery first</b>: a core needle biopsy gives histology, grade, and receptor status (ER, PR, HER2) so that surgery or neoadjuvant therapy can be planned; definitive surgery is never performed without a tissue diagnosis.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Suspicious mass → biopsy (correct)</th><th>Probably benign → 6-month MRI (closest distractor)</th></tr></thead><tbody> <tr><td>Internal enhancement</td><td><b>Rim</b> or heterogeneous</td><td>Homogeneous, or nonenhancing dark internal septations (fibroadenoma)</td></tr> <tr><td>Shape and margin</td><td>Irregular, spiculated, or rim-enhancing round mass</td><td>Oval, circumscribed</td></tr> <tr><td>Surrounding vessels</td><td>Increased ipsilateral vascularity</td><td>Symmetric</td></tr> <tr><td>BI-RADS and action</td><td>4–5 — tissue diagnosis</td><td>3 — short-interval follow-up (≤ 2 % risk)</td></tr> </tbody></table> A round shape alone does not make a mass benign; the internal enhancement pattern decides, and a palpable mass always needs a definite explanation.\n- 오답 이유:\n  - (A) Mastectomy may be part of treatment after cancer is proven, but surgery is planned only after core biopsy confirms the histologic type and receptor status, and breast conservation may still be possible.\n  - (B) Tamoxifen chemoprevention is offered to women without cancer whose calculated 5-year risk is elevated; it is not a response to a suspicious mass, which must first be biopsied.\n  - (D) Repeat MRI in 6 months is appropriate for a BI-RADS 3 lesion, such as an oval circumscribed mass with homogeneous enhancement or dark internal septations that is not palpable.\n  - (E) Routine annual screening would be correct only if the palpable lump were fully explained by a benign finding such as a simple cyst on ultrasonography and MRI showed no suspicious enhancement.\n- 함정: Calling a round, mobile mass in a 43-year-old benign — rim enhancement on MRI is a suspicious feature, and a palpable mass needs tissue regardless of shape.\n- 학습목표: 유방 MRI 감산 MIP 에서 테두리 조영증강 종괴와 주변 혈관 증가를 악성을 시사하는 소견으로 읽고, 다음 단계로 영상 유도 중심부 바늘생검을 고른다\n- 근거·출처: American College of Radiology. ACR BI-RADS Atlas, 5th ed. Breast MRI lexicon — mass internal enhancement (rim enhancement) and assessment categories · Mann RM, Cho N, Moy L. Breast MRI: state of the art. Radiology 2019;292:520-536 · TCIA TCGA-BRCA collection — preoperative breast MRI (teacher-only) · 작성자 판독(2026-10-14): 유방 MRI 동적 조영 감산 MIP, 유방 앞쪽의 둥근 강한 조영증강 종괴, 가장자리가 더 밝은 테두리 조영, 주변 혈관 증가\n\n## 출처\n- The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0DZ · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The subtraction MIP shows a round, intensely enhancing mass in the anterior breast whose rim is brighter than its center (rim enhancement), with increased vessels around it. Rim enhancement of a mass is among the MRI features with the highest positive predictive value for malignancy (BI-RADS 4–5), and a palpable mass must be sampled. The next step is tissue diagnosis by image-guided core needle biopsy (second-look ultrasonography-guided or MRI-guided)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why MRI enhancement matters</b>: invasive cancers induce new, leaky, tortuous vessels (angiogenesis driven by VEGF). After gadolinium injection, contrast floods the tumor early, and because the actively growing, well-perfused tumor cells lie at the periphery while the center may be fibrotic or necrotic, the edge enhances more than the center — rim enhancement. The same angiogenesis increases the number of vessels feeding the mass, seen on MIP as increased ipsilateral vascularity.<br> <b>Why tissue, not follow-up</b>: MRI is very sensitive but only moderately specific; morphology (irregular shape, spiculated margin, rim or heterogeneous internal enhancement) and kinetics (rapid washout) raise suspicion. A mass with suspicious features is BI-RADS 4 or 5, which requires biopsy; short-interval follow-up is reserved for BI-RADS 3 findings with a ≤ 2 % malignancy risk. A palpable mass that imaging cannot clearly explain as benign also needs tissue.<br> <b>Why core rather than surgery first</b>: a core needle biopsy gives histology, grade, and receptor status (ER, PR, HER2) so that surgery or neoadjuvant therapy can be planned; definitive surgery is never performed without a tissue diagnosis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Suspicious mass → biopsy (correct)</th><th>Probably benign → 6-month MRI (closest distractor)</th></tr></thead><tbody> <tr><td>Internal enhancement</td><td><b>Rim</b> or heterogeneous</td><td>Homogeneous, or nonenhancing dark internal septations (fibroadenoma)</td></tr> <tr><td>Shape and margin</td><td>Irregular, spiculated, or rim-enhancing round mass</td><td>Oval, circumscribed</td></tr> <tr><td>Surrounding vessels</td><td>Increased ipsilateral vascularity</td><td>Symmetric</td></tr> <tr><td>BI-RADS and action</td><td>4–5 — tissue diagnosis</td><td>3 — short-interval follow-up (≤ 2 % risk)</td></tr> </tbody></table> A round shape alone does not make a mass benign; the internal enhancement pattern decides, and a palpable mass always needs a definite explanation."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Mastectomy may be part of treatment after cancer is proven, but surgery is planned only after core biopsy confirms the histologic type and receptor status, and breast conservation may still be possible.\n(B) Tamoxifen chemoprevention is offered to women without cancer whose calculated 5-year risk is elevated; it is not a response to a suspicious mass, which must first be biopsied.\n(D) Repeat MRI in 6 months is appropriate for a BI-RADS 3 lesion, such as an oval circumscribed mass with homogeneous enhancement or dark internal septations that is not palpable.\n(E) Routine annual screening would be correct only if the palpable lump were fully explained by a benign finding such as a simple cyst on ultrasonography and MRI showed no suspicious enhancement."
+   },
+   {
+    "k": "함정",
+    "v": "Calling a round, mobile mass in a 43-year-old benign — rim enhancement on MRI is a suspicious feature, and a palpable mass needs tissue regardless of shape."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방 MRI 감산 MIP 에서 테두리 조영증강 종괴와 주변 혈관 증가를 악성을 시사하는 소견으로 읽고, 다음 단계로 영상 유도 중심부 바늘생검을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "American College of Radiology. ACR BI-RADS Atlas, 5th ed. Breast MRI lexicon — mass internal enhancement (rim enhancement) and assessment categories · Mann RM, Cho N, Moy L. Breast MRI: state of the art. Radiology 2019;292:520-536 · TCIA TCGA-BRCA collection — preoperative breast MRI (teacher-only) · 작성자 판독(2026-10-14): 유방 MRI 동적 조영 감산 MIP, 유방 앞쪽의 둥근 강한 조영증강 종괴, 가장자리가 더 밝은 테두리 조영, 주변 혈관 증가 ## 출처 The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0DZ · Creative Commons Attribution 3.0 Unported · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "만져지는 종괴가 MRI 에서 테두리 조영증강과 주변 혈관 증가를 보여 악성 의심(BI-RADS 4–5)이므로 영상 유도 중심부 바늘생검으로 조직 진단을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "둥근 모양이지만 내부 조영이 테두리형이다 — 6개월 추적(BI-RADS 3)의 균질 조영·어두운 격막이 아니다",
+   "steps": 3,
+   "chain": [
+    "영상: 둥근 강한 조영증강 종괴, 가장자리가 중심보다 밝은 테두리 조영, 주변 혈관 증가",
+    "테두리 조영 + 혈관 증가 → 악성 의심(BI-RADS 4–5), 추적 관찰 대상이 아니다",
+    "만져지는 의심 종괴 → 수술·치료 전에 영상 유도 중심부 바늘생검으로 조직 진단"
+   ],
+   "key": [
+    {
+     "item": "영상: 가장자리가 중심보다 밝은 테두리 조영증강 종괴",
+     "why": "악성의 양성예측도가 높은 내부 조영 양상",
+     "also": []
+    },
+    {
+     "item": "영상: 종괴 주변 혈관 증가",
+     "why": "종양 혈관신생을 시사",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "there is no skin change or axillary lymphadenopathy",
+     "why": "국소 진행 소견이 없다 — 생검 결과로 수술 범위를 정한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "firm, mobile, nontender 2-cm mass",
+     "why": "움직이는 종괴라도 양성을 보장하지 않는다 — 영상 소견이 가른다",
+     "also": []
+    },
+    {
+     "item": "Her mother had breast cancer at the age of 61 years",
+     "why": "위험을 약간 올리지만 다음 단계를 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "Mammography shows heterogeneously dense breast tissue without a definite mass or calcifications",
+     "why": "치밀유방이라 유방촬영이 종괴를 가린다 — 음성이 안심 근거가 아니다",
+     "also": []
+    }
+   ],
+   "summary": "유방 MRI 에서 테두리 조영증강과 주변 혈관 증가를 보이는 종괴는 악성 의심(BI-RADS 4–5)이다. 만져지는 의심 종괴는 영상 유도 중심부 바늘생검으로 조직 진단을 하며, 6개월 추적은 균질 조영의 BI-RADS 3 병변에만 해당한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "만져지지 않는 타원형·경계 명확한 종괴가 균질하게 조영되고 어두운 내부 격막을 보였다면(BI-RADS 3) 6개월 뒤 MRI 재검이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0323.png",
+   "caption": "Dynamic contrast-enhanced breast MRI, subtraction maximum intensity projection of the affected breast (TCIA, CC BY — no cropping or adjustment)",
+   "alt": "MR 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA TCGA-BRCA (The Cancer Genome Atlas 유방암 — 수술 전 MRI · 유방촬영)",
+   "license": "Creative Commons Attribution 3.0 Unported",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.6450.4002.224581018865288380792704955785",
+   "asset_id": "TCIA-TCGA-BRCA-A0DZ-MIP",
+   "text": "The Cancer Imaging Archive (CC BY 3.0) · TCGA-BH-A0DZ"
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0322",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소아과",
+  "subject_file": "소아과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "소아청소년 — 자전거에서 떨어진 청소년의 손목 측면 X선",
+  "type": "소아청소년 — 자전거에서 떨어진 청소년의 손목 측면 X선",
+  "modality": "XR_MSK",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "13세 남자가 자전거에서 떨어지며 오른손을 짚은 뒤 손목 통증으로 왔다. 다른 병력은 없다. 원위 요골 등쪽이 붓고 누르면 아프다. 손가락의 감각과 혈액순환은 정상이다. 오른쪽 손목 측면 단순 X선은 그림과 같다.",
+  "question": "이 골절선이 주로 지나는 성장판의 층은?",
+  "options": [
+   "비대층",
+   "휴지층",
+   "증식층",
+   "일차 해면골",
+   "골단의 이차 골화중심"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 측면 사진에서 원위 요골 성장판을 따라 골단이 등쪽으로 조금 밀렸고, 골간단 등쪽에 작은 삼각형 골편이 붙어 있다(방형회내근 지방선도 볼록하다). 성장판을 지나 골간단 골편을 남기는 골절은 Salter-Harris II형이다. 성장판을 지나는 골절선은 연골세포가 커지고 기질이 적은 비대층을 따라 가며, 줄기세포가 있는 휴지층·증식층은 골단 쪽에 남는다.\n- 원리: <b>왜 비대층이 가장 약한가</b>: 성장판은 골단 쪽부터 휴지층 → 증식층 → 비대층 → 석회화 → 일차 해면골 순서로 쌓여 있다. 휴지층과 증식층은 세포 사이 기질(Ⅱ형 콜라겐·프로테오글리칸)이 풍부해 질기고, 일차 해면골은 이미 석회화된 뼈다. 그 사이 비대층은 연골세포가 부풀어 세포가 차지하는 부피가 크고 기질이 얇으며 아직 석회화되지 않아, 비틀림·전단력이 들어오면 여기서 갈라진다.<br> <b>왜 예후가 좋은가</b>: Salter-Harris I·II형은 골절선이 비대층을 지나므로 성장을 만드는 휴지층·증식층이 골단에 붙은 채 혈류도 유지된다. 그래서 대개 닫힌 정복과 석고 고정으로 성장 장애 없이 붙는다. 반대로 골절선이 성장판을 수직으로 가로지르는 III·IV형이나 짓눌리는 V형은 증식층이 끊기거나 눌려 골다리(bony bar)가 생기고 성장 정지·각 변형이 올 수 있다.<br> <b>II형의 골간단 골편(Thurston-Holland 조각)</b>은 골막이 온전한 쪽에 남는다 — 정복할 때 그 골막 경첩을 이용한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비대층(정답)</th><th>증식층(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 모양</td><td>부풀어 커진 연골세포, 세포 사이 기질 얇음</td><td>납작한 연골세포가 동전처럼 세로로 쌓임</td></tr> <tr><td>기계적 강도</td><td><b>가장 약하다</b> — 석회화 전이고 기질이 적다</td><td>기질이 많아 질기다</td></tr> <tr><td>손상 시 결과</td><td>I·II형 골절선이 지나도 성장 능력은 골단에 남는다</td><td>손상되면 성장 정지(III·IV·V형, 연골무형성증의 FGFR3 작용 부위)</td></tr> </tbody></table> 「성장판 골절은 어디서 갈라지나」는 비대층, 「성장을 만드는 곳은 어디인가」는 증식층으로 짝지어 기억한다.\n- 오답 이유:\n  - ② 휴지층은 골단 쪽 맨 위의 줄기 연골세포 층으로, 골단 혈관이 끊겨 성장판 전체가 멈추는 기전이나 성장판의 시작층을 물을 때 정답이 된다.\n  - ③ 증식층은 연골세포가 세로로 쌓이며 길이 성장을 만드는 층으로, 연골무형성증(FGFR3)이나 성장 호르몬 작용 부위를 물을 때 정답이 된다.\n  - ④ 일차 해면골은 석회화 연골 위에 뼈가 얹히는 층으로, 괴혈병의 골간단 미세골절이나 구루병의 석회화 장애 부위를 물을 때 정답이 된다.\n  - ⑤ 골단의 이차 골화중심은 성장판 위쪽 골단 뼈로, 골절선이 성장판을 가로질러 골단과 관절면까지 들어가는 Salter-Harris III·IV형일 때 손상 부위가 된다.\n- 함정: 성장판 골절이면 성장을 만드는 증식층이 다친다고 보는 것 — I·II형은 가장 약한 비대층을 지나 증식층을 남기므로 예후가 좋다.\n- 학습목표: 손목 측면 X선에서 원위 요골 성장판을 지나 골간단 골편을 남긴 골절을 읽고, 성장판 골절선이 지나는 비대층(가장 약한 층)과 예후를 연결한다\n- 근거·출처: Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587-622 · Rockwood and Wilkins' Fractures in Children, 9th ed. Ch. Physeal fractures — physeal anatomy and zone of hypertrophy · Nagy E, et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · 작성자 판독(2026-10-14): 오른쪽 손목 측면 X선, 원위 요골 성장판을 따라 지나는 골절과 배측 골간단의 작은 삼각형 골편, 골단의 경미한 배측 전위, 방형회내근 지방선 융기(전문의 주석 23r-E/2.1)\n\n## 출처\n- GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "측면 사진에서 원위 요골 성장판을 따라 골단이 등쪽으로 조금 밀렸고, 골간단 등쪽에 작은 삼각형 골편이 붙어 있다(방형회내근 지방선도 볼록하다). 성장판을 지나 골간단 골편을 남기는 골절은 Salter-Harris II형이다. 성장판을 지나는 골절선은 연골세포가 커지고 기질이 적은 비대층을 따라 가며, 줄기세포가 있는 휴지층·증식층은 골단 쪽에 남는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 비대층이 가장 약한가</b>: 성장판은 골단 쪽부터 휴지층 → 증식층 → 비대층 → 석회화 → 일차 해면골 순서로 쌓여 있다. 휴지층과 증식층은 세포 사이 기질(Ⅱ형 콜라겐·프로테오글리칸)이 풍부해 질기고, 일차 해면골은 이미 석회화된 뼈다. 그 사이 비대층은 연골세포가 부풀어 세포가 차지하는 부피가 크고 기질이 얇으며 아직 석회화되지 않아, 비틀림·전단력이 들어오면 여기서 갈라진다.<br> <b>왜 예후가 좋은가</b>: Salter-Harris I·II형은 골절선이 비대층을 지나므로 성장을 만드는 휴지층·증식층이 골단에 붙은 채 혈류도 유지된다. 그래서 대개 닫힌 정복과 석고 고정으로 성장 장애 없이 붙는다. 반대로 골절선이 성장판을 수직으로 가로지르는 III·IV형이나 짓눌리는 V형은 증식층이 끊기거나 눌려 골다리(bony bar)가 생기고 성장 정지·각 변형이 올 수 있다.<br> <b>II형의 골간단 골편(Thurston-Holland 조각)</b>은 골막이 온전한 쪽에 남는다 — 정복할 때 그 골막 경첩을 이용한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">비대층(정답)</th><th>증식층(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>세포 모양</td><td>부풀어 커진 연골세포, 세포 사이 기질 얇음</td><td>납작한 연골세포가 동전처럼 세로로 쌓임</td></tr> <tr><td>기계적 강도</td><td><b>가장 약하다</b> — 석회화 전이고 기질이 적다</td><td>기질이 많아 질기다</td></tr> <tr><td>손상 시 결과</td><td>I·II형 골절선이 지나도 성장 능력은 골단에 남는다</td><td>손상되면 성장 정지(III·IV·V형, 연골무형성증의 FGFR3 작용 부위)</td></tr> </tbody></table> 「성장판 골절은 어디서 갈라지나」는 비대층, 「성장을 만드는 곳은 어디인가」는 증식층으로 짝지어 기억한다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 휴지층은 골단 쪽 맨 위의 줄기 연골세포 층으로, 골단 혈관이 끊겨 성장판 전체가 멈추는 기전이나 성장판의 시작층을 물을 때 정답이 된다.\n③ 증식층은 연골세포가 세로로 쌓이며 길이 성장을 만드는 층으로, 연골무형성증(FGFR3)이나 성장 호르몬 작용 부위를 물을 때 정답이 된다.\n④ 일차 해면골은 석회화 연골 위에 뼈가 얹히는 층으로, 괴혈병의 골간단 미세골절이나 구루병의 석회화 장애 부위를 물을 때 정답이 된다.\n⑤ 골단의 이차 골화중심은 성장판 위쪽 골단 뼈로, 골절선이 성장판을 가로질러 골단과 관절면까지 들어가는 Salter-Harris III·IV형일 때 손상 부위가 된다."
+   },
+   {
+    "k": "함정",
+    "v": "성장판 골절이면 성장을 만드는 증식층이 다친다고 보는 것 — I·II형은 가장 약한 비대층을 지나 증식층을 남기므로 예후가 좋다."
+   },
+   {
+    "k": "학습목표",
+    "v": "손목 측면 X선에서 원위 요골 성장판을 지나 골간단 골편을 남긴 골절을 읽고, 성장판 골절선이 지나는 비대층(가장 약한 층)과 예후를 연결한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am 1963;45:587-622 · Rockwood and Wilkins' Fractures in Children, 9th ed. Ch. Physeal fractures — physeal anatomy and zone of hypertrophy · Nagy E, et al. A pediatric wrist trauma X-ray dataset (GRAZPEDWRI-DX) for machine learning. Sci Data 2022;9:222 · 작성자 판독(2026-10-14): 오른쪽 손목 측면 X선, 원위 요골 성장판을 따라 지나는 골절과 배측 골간단의 작은 삼각형 골편, 골단의 경미한 배측 전위, 방형회내근 지방선 융기(전문의 주석 23r-E/2.1) ## 출처 GRAZPEDWRI-DX (figshare, CC BY 4.0) · Creative Commons Attribution 4.0 International · https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "성장판을 따라 지나며 골간단 골편을 남긴 Salter-Harris II형 골절이고, 성장판 골절선은 가장 약한 비대층을 지난다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "I·II형 골절선은 성장을 만드는 증식층이 아니라 기질이 얇은 비대층을 따라 간다",
+   "steps": 2,
+   "chain": [
+    "영상: 원위 요골 성장판을 따라 골단이 등쪽으로 밀리고 등쪽 골간단에 삼각형 골편 → Salter-Harris II형",
+    "성장판을 지나는 골절선은 석회화 전·기질이 얇은 비대층을 따라 간다 → 비대층"
+   ],
+   "key": [
+    {
+     "item": "영상: 원위 요골 성장판을 따라 골단이 등쪽으로 조금 밀림",
+     "why": "골절선이 성장판을 지난다",
+     "also": []
+    },
+    {
+     "item": "영상: 골간단 등쪽의 작은 삼각형 골편",
+     "why": "II형의 골간단 골편 — 골단·관절면으로는 들어가지 않았다",
+     "also": []
+    },
+    {
+     "item": "원위 요골 등쪽이 붓고 누르면 아프다",
+     "why": "골절 위치와 맞는다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "13세 남자",
+     "why": "성장판이 열린 나이 — 성장판 골절이 가능하다",
+     "also": []
+    },
+    {
+     "item": "손가락의 감각과 혈액순환은 정상이다",
+     "why": "신경혈관 손상은 없지만 층을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "측면 X선에서 원위 요골 성장판을 따라 골단이 밀리고 등쪽 골간단에 골편이 남은 Salter-Harris II형 골절이다. 성장판 골절선은 기질이 얇고 석회화 전인 비대층을 지나므로 증식층이 남아 예후가 좋다.",
+   "switch": {
+    "choice": "E",
+    "condition": "골절선이 성장판에서 꺾여 골단과 관절면까지 들어갔다면(III·IV형) 골단의 이차 골화중심이 손상 부위로 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0322.png",
+   "caption": "오른쪽 손목 측면 단순 X선, 위치 표지는 원본의 것, 크기 조정만 (GRAZPEDWRI-DX, figshare, CC BY 4.0)",
+   "alt": "XR_MSK 영상"
+  },
+  "attribution": {
+   "dataset": "GRAZPEDWRI-DX: pediatric wrist trauma X-ray dataset",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193",
+   "asset_id": "GRAZ-0712_0206898023_02_WRI-R2_M013",
+   "text": "GRAZPEDWRI-DX (figshare, CC BY 4.0)"
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0321",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "응급·중환자·외상 — 넘어져 턱을 부딪친 초고령 여성의 목 통증",
+  "type": "응급·중환자·외상 — 넘어져 턱을 부딪친 초고령 여성의 목 통증",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "85세 여자가 침대 옆에서 넘어져 턱을 바닥에 부딪친 뒤 목 뒤쪽 통증으로 응급실에 왔다. 고혈압과 골다공증으로 약을 먹고 있다. 혈압 148/84 mmHg, 맥박 82회/분이다. 의식은 명료하고 위쪽 목뼈 뒤쪽에 압통이 있으며 고개를 돌리지 못한다. 팔다리의 근력과 감각, 힘줄반사는 정상이다. 경추 CT 정중시상 재구성 영상은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "치아돌기 기저부 골절",
+   "치아돌기 끝부분 골절",
+   "C2 몸통으로 뻗은 치아돌기 골절",
+   "C2 양쪽 관절간부 골절",
+   "환추 앞고리 골절"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 정중시상 CT 에서 치아돌기가 C2 몸통과 만나는 기저부(잘록한 목)를 가로지르는 골절선이 있고, 치아돌기 골편이 앞아래로 밀리며 뒤로 꺾였다(화살표). 골절선 아래 C2 몸통의 피질과 해면골은 이어져 있어 몸통으로 뻗지 않는다. 기저부 골절은 Anderson-D'Alonzo II형이며, 고령자가 넘어져 목이 과신전·과굴곡되어 생기는 가장 흔한 경추 골절이다.\n- 원리: <b>왜 고령자는 치아돌기가 부러지는가</b>: 젊은 사람은 고에너지 외상에서 아래 목뼈가 다치지만, 골다공증과 퇴행성 경추증으로 아래 목뼈가 굳은 고령자는 낮은 곳에서 넘어지는 힘이 움직임이 남은 위쪽 목뼈(C1–C2)에 몰린다. 턱이나 이마를 부딪치면 머리가 뒤로 젖혀지며 환추가 치아돌기를 밀어 가장 가는 기저부가 부러진다.<br> <b>왜 기저부(II형)가 문제인가</b>: 치아돌기 기저부는 해면골이 적고 혈관이 끝에서 내려오는 분수계라 뼈가 잘 붙지 않는다. 그래서 II형은 불유합이 흔하고(전위 5 mm 이상·후방 전위·고령·흡연이 위험인자), 수술(앞 나사 고정 또는 C1–C2 후방 유합)을 고려한다. III형은 골절선이 C2 몸통의 넓은 해면골로 들어가 보조기로도 잘 붙고, I형(끝부분 견열)은 안정 골절이지만 후두–환추 불안정과 동반되는지 본다.<br> <b>신경학적 이상이 없어도</b>: 이 높이의 척수관은 넓어 신경 손상 없이 오는 경우가 많다 — 진찰이 정상이라도 위쪽 목뼈 압통과 운동 제한이 있으면 CT 를 찍는다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">치아돌기 기저부 골절(II형, 정답)</th><th>C2 몸통으로 뻗은 골절(III형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>골절선 위치</td><td>치아돌기와 몸통의 경계(잘록한 목)</td><td>C2 몸통 해면골 안으로 들어가 위 관절면까지</td></tr> <tr><td>뼈가 붙는 정도</td><td><b>불유합이 흔하다</b> — 해면골이 적고 혈류 분수계</td><td>넓은 해면골이라 <b>잘 붙는다</b></td></tr> <tr><td>흔한 치료</td><td>전위·고령이면 수술 고려, 아니면 단단한 보조기</td><td>대개 보조기(경성 목보조기·할로)</td></tr> </tbody></table> 시상면에서 골절선 아래 C2 몸통 피질이 이어져 있으면 II형, 골절선이 몸통 속으로 들어가면 III형이다.\n- 오답 이유:\n  - ② 치아돌기 끝부분 골절(I형)은 날개인대가 붙는 끝이 작게 떨어져 나간 견열 골절로, 골절선이 치아돌기 꼭대기에만 있을 때 정답이 된다.\n  - ③ C2 몸통으로 뻗은 골절(III형)은 골절선이 기저부 아래 C2 몸통 해면골 속으로 들어가 위 관절면까지 이어질 때 정답이 된다.\n  - ④ C2 양쪽 관절간부 골절(행맨 골절)은 과신전과 축성 부하로 C2 신경궁이 부러져 C2 몸통이 C3 위로 앞으로 미끄러질 때 정답이며, 치아돌기는 온전하다.\n  - ⑤ 환추 앞고리 골절은 축성 부하로 C1 고리가 터지는 제퍼슨형 골절에서 보이며, 축상면 CT 에서 C1 고리가 여러 곳 끊기고 외측괴가 벌어질 때 정답이 된다.\n- 함정: 골절선이 C2 몸통 위에 있으니 III형이라고 보는 것 — 몸통 피질이 이어져 있으면 기저부(II형)이고, II형이 불유합이 가장 흔하다.\n- 학습목표: 경추 정중시상 CT 에서 치아돌기 기저부 골절(II형)을 읽고, C2 몸통으로 뻗는 III형·C2 신경궁 골절(행맨 골절)과 구별한다\n- 근거·출처: Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am 1974;56:1663-1674 · Tintinalli's Emergency Medicine, 9th ed. Ch. Spine trauma — odontoid fractures in the elderly · PMC7837991 Figure 1C — case report, traumatic atlantoaxial subluxation with type IIA dens fracture (교사용) · 작성자 판독(2026-10-14): 정중시상 CT 뼈창, 치아돌기 기저부를 지나는 분쇄 골절, 치아돌기 골편의 전하방 전위·후만 각형성(화살표), C2 몸통 보존\n\n## 출처\n- Traumatic atlantoaxial anteroinferior subluxation with dens and Hangman fractures: A case report. Medicine (Baltimore). 2021 Jan 22;100(3):e24396. doi: 10.1097/MD.0000000000024396 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "정중시상 CT 에서 치아돌기가 C2 몸통과 만나는 기저부(잘록한 목)를 가로지르는 골절선이 있고, 치아돌기 골편이 앞아래로 밀리며 뒤로 꺾였다(화살표). 골절선 아래 C2 몸통의 피질과 해면골은 이어져 있어 몸통으로 뻗지 않는다. 기저부 골절은 Anderson-D'Alonzo II형이며, 고령자가 넘어져 목이 과신전·과굴곡되어 생기는 가장 흔한 경추 골절이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 고령자는 치아돌기가 부러지는가</b>: 젊은 사람은 고에너지 외상에서 아래 목뼈가 다치지만, 골다공증과 퇴행성 경추증으로 아래 목뼈가 굳은 고령자는 낮은 곳에서 넘어지는 힘이 움직임이 남은 위쪽 목뼈(C1–C2)에 몰린다. 턱이나 이마를 부딪치면 머리가 뒤로 젖혀지며 환추가 치아돌기를 밀어 가장 가는 기저부가 부러진다.<br> <b>왜 기저부(II형)가 문제인가</b>: 치아돌기 기저부는 해면골이 적고 혈관이 끝에서 내려오는 분수계라 뼈가 잘 붙지 않는다. 그래서 II형은 불유합이 흔하고(전위 5 mm 이상·후방 전위·고령·흡연이 위험인자), 수술(앞 나사 고정 또는 C1–C2 후방 유합)을 고려한다. III형은 골절선이 C2 몸통의 넓은 해면골로 들어가 보조기로도 잘 붙고, I형(끝부분 견열)은 안정 골절이지만 후두–환추 불안정과 동반되는지 본다.<br> <b>신경학적 이상이 없어도</b>: 이 높이의 척수관은 넓어 신경 손상 없이 오는 경우가 많다 — 진찰이 정상이라도 위쪽 목뼈 압통과 운동 제한이 있으면 CT 를 찍는다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">치아돌기 기저부 골절(II형, 정답)</th><th>C2 몸통으로 뻗은 골절(III형, 가장 가까운 오답)</th></tr></thead><tbody> <tr><td>골절선 위치</td><td>치아돌기와 몸통의 경계(잘록한 목)</td><td>C2 몸통 해면골 안으로 들어가 위 관절면까지</td></tr> <tr><td>뼈가 붙는 정도</td><td><b>불유합이 흔하다</b> — 해면골이 적고 혈류 분수계</td><td>넓은 해면골이라 <b>잘 붙는다</b></td></tr> <tr><td>흔한 치료</td><td>전위·고령이면 수술 고려, 아니면 단단한 보조기</td><td>대개 보조기(경성 목보조기·할로)</td></tr> </tbody></table> 시상면에서 골절선 아래 C2 몸통 피질이 이어져 있으면 II형, 골절선이 몸통 속으로 들어가면 III형이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 치아돌기 끝부분 골절(I형)은 날개인대가 붙는 끝이 작게 떨어져 나간 견열 골절로, 골절선이 치아돌기 꼭대기에만 있을 때 정답이 된다.\n③ C2 몸통으로 뻗은 골절(III형)은 골절선이 기저부 아래 C2 몸통 해면골 속으로 들어가 위 관절면까지 이어질 때 정답이 된다.\n④ C2 양쪽 관절간부 골절(행맨 골절)은 과신전과 축성 부하로 C2 신경궁이 부러져 C2 몸통이 C3 위로 앞으로 미끄러질 때 정답이며, 치아돌기는 온전하다.\n⑤ 환추 앞고리 골절은 축성 부하로 C1 고리가 터지는 제퍼슨형 골절에서 보이며, 축상면 CT 에서 C1 고리가 여러 곳 끊기고 외측괴가 벌어질 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "골절선이 C2 몸통 위에 있으니 III형이라고 보는 것 — 몸통 피질이 이어져 있으면 기저부(II형)이고, II형이 불유합이 가장 흔하다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경추 정중시상 CT 에서 치아돌기 기저부 골절(II형)을 읽고, C2 몸통으로 뻗는 III형·C2 신경궁 골절(행맨 골절)과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am 1974;56:1663-1674 · Tintinalli's Emergency Medicine, 9th ed. Ch. Spine trauma — odontoid fractures in the elderly · PMC7837991 Figure 1C — case report, traumatic atlantoaxial subluxation with type IIA dens fracture (교사용) · 작성자 판독(2026-10-14): 정중시상 CT 뼈창, 치아돌기 기저부를 지나는 분쇄 골절, 치아돌기 골편의 전하방 전위·후만 각형성(화살표), C2 몸통 보존 ## 출처 Traumatic atlantoaxial anteroinferior subluxation with dens and Hangman fractures: A case report. Medicine (Baltimore). 2021 Jan 22;100(3):e24396. doi: 10.1097/MD.0000000000024396 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "골절선이 치아돌기와 C2 몸통의 경계를 지나고 몸통은 보존되었으므로 치아돌기 기저부 골절(II형)이다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "골절선 아래 C2 몸통의 피질이 이어져 있다 — 몸통으로 뻗는 III형이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 치아돌기 기저부를 가로지르는 골절선과 앞아래로 밀린 치아돌기 골편 → 치아돌기 골절",
+    "골절선 아래 C2 몸통 피질 보존 → 몸통으로 뻗지 않은 기저부 골절(II형)"
+   ],
+   "key": [
+    {
+     "item": "영상: 치아돌기 기저부를 가로지르는 골절선과 앞아래로 밀린 치아돌기 골편",
+     "why": "골절 위치가 치아돌기의 잘록한 목이다",
+     "also": []
+    },
+    {
+     "item": "영상: 골절선 아래 C2 몸통 피질과 해면골이 이어져 있음",
+     "why": "III형과 가르는 소견",
+     "also": []
+    },
+    {
+     "item": "턱을 바닥에 부딪친",
+     "why": "과신전 기전 — 위쪽 목뼈 손상을 의심하게 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "85세 여자",
+     "why": "고령자 치아돌기 골절의 전형적 연령 — 유형은 영상이 가른다",
+     "also": []
+    },
+    {
+     "item": "골다공증",
+     "why": "저에너지 골절의 바탕 — 유형을 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "팔다리의 근력과 감각, 힘줄반사는 정상이다",
+     "why": "신경 손상이 없어도 이 높이 골절은 흔하다 — 진단을 배제하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "정중시상 CT 에서 치아돌기 기저부를 가로지르는 골절선이 있고 골편이 앞아래로 밀렸으며 C2 몸통은 보존되었다. 고령자의 치아돌기 기저부 골절(II형)이며, 몸통으로 뻗는 III형과는 몸통 피질의 연속성으로 가른다.",
+   "switch": {
+    "choice": "C",
+    "condition": "골절선이 기저부 아래로 내려가 C2 몸통 해면골과 위 관절면까지 들어갔다면 C2 몸통으로 뻗은 골절(III형)이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0321.png",
+   "caption": "경추 정중시상 CT 뼈창, 원 그림의 한 패널 — 화살표·패널 문자는 원 그림의 것 (PMC Open Access Subset, CC BY — 보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7837991/",
+   "asset_id": "PMC-PMC7837991_Figure1_C",
+   "text": "Traumatic atlantoaxial anteroinferior subluxation with dens and Hangman fractures: A case report. Medicine (Baltimore). 2021 Jan 22;100(3):e24396. doi: 10.1097/MD.0000000000024396 (CC BY) — Figure 1"
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0001"
+ },
+ {
   "id": "imaging-2026-0314",
   "exam": "imaging",
   "style": "usmle_style",
@@ -527,6 +1045,793 @@ window.IMAGING_QUESTIONS = [
   },
   "run_id": "20261012T202427Z_일일영상_2026-10-13_10units_10q_9703e49e",
   "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0330",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "류마티스·근골격 — 만성 콩팥병·클래리스로마이신 복용 중 급성 통풍",
+  "type": "류마티스·근골격 — 만성 콩팥병·클래리스로마이신 복용 중 급성 통풍",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "A 71-year-old man comes to the physician because of severe pain and swelling of the right first metatarsophalangeal joint that began suddenly overnight. He has hypertension, atrial fibrillation, and chronic kidney disease. Current medications are apixaban, metoprolol, and amlodipine; 3 days ago, he started clarithromycin for community-acquired pneumonia. Temperature is 37.6°C, blood pressure is 138/82 mm Hg, and pulse is 76/min. The right first metatarsophalangeal joint is red, warm, swollen, and exquisitely tender. Serum creatinine is 2.3 mg/dL (eGFR 27 mL/min/1.73 m2), and serum uric acid is 8.9 mg/dL. Arthrocentesis yields cloudy fluid with 18,000 leukocytes/mm3, negative Gram stain, and needle-shaped, negatively birefringent crystals.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Oral colchicine",
+   "Oral indomethacin",
+   "Oral allopurinol",
+   "Intravenous pegloticase",
+   "Oral prednisone"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Negatively birefringent needle-shaped crystals confirm acute gout. NSAIDs are inappropriate because of eGFR 27 and apixaban (bleeding and further renal injury). Colchicine is contraindicated because he has renal impairment and is taking clarithromycin, a strong CYP3A4 and P-glycoprotein inhibitor that can raise colchicine levels to fatal toxicity. A short course of oral glucocorticoid (prednisone) is the safest effective treatment; intra-articular injection is an alternative for a single joint.\n- 원리: <b>Why the flare happens</b>: monosodium urate crystals are phagocytosed by macrophages and activate the NLRP3 inflammasome, releasing interleukin-1β, which recruits neutrophils — the intense, self-limited neutrophilic synovitis of gout. All three first-line flare drugs (NSAIDs, colchicine, glucocorticoids) blunt this inflammation; none lowers urate.<br> <b>Why colchicine is dangerous here</b>: colchicine binds tubulin and stops neutrophil migration, but it has a narrow therapeutic index. It is cleared by CYP3A4 metabolism and P-glycoprotein efflux in the gut, liver, and kidney. Clarithromycin inhibits both, and reduced renal function removes the other exit; together they cause colchicine accumulation with diarrhea, myopathy, bone marrow suppression, and multiorgan failure. Labels contraindicate colchicine with strong CYP3A4/P-gp inhibitors in patients with renal or hepatic impairment.<br> <b>Why NSAIDs are also out</b>: NSAIDs block renal prostaglandins that maintain afferent arteriolar dilation in chronic kidney disease, risking acute kidney injury, and they add to the bleeding risk of anticoagulation. Glucocorticoids have neither problem; their short-term risks (hyperglycemia, fluid retention) are manageable.<br> <b>Urate lowering</b> (allopurinol) is indicated later because of recurrent risk, but is begun with prophylaxis rather than as treatment of the inflamed joint.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Oral prednisone (correct)</th><th>Oral colchicine (closest distractor)</th></tr></thead><tbody> <tr><td>Clearance</td><td>Hepatic; no dose change in CKD</td><td><b>CYP3A4 + P-gp</b> and renal excretion</td></tr> <tr><td>Clarithromycin</td><td>No dangerous interaction</td><td><b>Contraindicated</b> with renal impairment — fatal toxicity reported</td></tr> <tr><td>eGFR 27</td><td>Usable</td><td>Dose-limit; avoid repeat courses within 14 days</td></tr> <tr><td>Main short-term risk</td><td>Hyperglycemia, fluid retention</td><td>Diarrhea, myopathy, marrow suppression</td></tr> </tbody></table> Colchicine alone in stage 4 CKD can be used at reduced dose; it is the added strong CYP3A4/P-gp inhibitor that makes it contraindicated.\n- 오답 이유:\n  - (A) Low-dose colchicine would be correct for an early flare in a patient with normal renal function who is not taking strong CYP3A4 or P-glycoprotein inhibitors such as clarithromycin or cyclosporine.\n  - (B) Indomethacin would be correct for a flare in a younger patient with normal kidney function, no anticoagulant, and no peptic ulcer disease or heart failure.\n  - (C) Allopurinol lowers serum urate for long-term prevention and is started with flare prophylaxis; it does not relieve an acute flare, so it would be correct only as the long-term management question.\n  - (D) Pegloticase is reserved for severe chronic tophaceous gout refractory to oral urate-lowering drugs and is not a treatment for an acute flare.\n- 함정: Choosing colchicine because it is gout-specific — with renal impairment and a strong CYP3A4/P-gp inhibitor such as clarithromycin, colchicine toxicity can be fatal.\n- 학습목표: 만성 콩팥병·항응고제·강한 CYP3A4/P-gp 억제제 복용 중인 급성 통풍에서 NSAID 와 콜히친을 피하고 경구 글루코코르티코이드로 치료한다\n- 근거·출처: FitzGerald JD, et al. 2020 American College of Rheumatology guideline for the management of gout. Arthritis Care Res 2020;72:744-760 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 372 Gout and other crystal-associated arthropathies · Hung IF, et al. Fatal interaction between clarithromycin and colchicine in patients with renal insufficiency: a retrospective study. Clin Infect Dis 2005;41:291-300",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Negatively birefringent needle-shaped crystals confirm acute gout. NSAIDs are inappropriate because of eGFR 27 and apixaban (bleeding and further renal injury). Colchicine is contraindicated because he has renal impairment and is taking clarithromycin, a strong CYP3A4 and P-glycoprotein inhibitor that can raise colchicine levels to fatal toxicity. A short course of oral glucocorticoid (prednisone) is the safest effective treatment; intra-articular injection is an alternative for a single joint."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the flare happens</b>: monosodium urate crystals are phagocytosed by macrophages and activate the NLRP3 inflammasome, releasing interleukin-1β, which recruits neutrophils — the intense, self-limited neutrophilic synovitis of gout. All three first-line flare drugs (NSAIDs, colchicine, glucocorticoids) blunt this inflammation; none lowers urate.<br> <b>Why colchicine is dangerous here</b>: colchicine binds tubulin and stops neutrophil migration, but it has a narrow therapeutic index. It is cleared by CYP3A4 metabolism and P-glycoprotein efflux in the gut, liver, and kidney. Clarithromycin inhibits both, and reduced renal function removes the other exit; together they cause colchicine accumulation with diarrhea, myopathy, bone marrow suppression, and multiorgan failure. Labels contraindicate colchicine with strong CYP3A4/P-gp inhibitors in patients with renal or hepatic impairment.<br> <b>Why NSAIDs are also out</b>: NSAIDs block renal prostaglandins that maintain afferent arteriolar dilation in chronic kidney disease, risking acute kidney injury, and they add to the bleeding risk of anticoagulation. Glucocorticoids have neither problem; their short-term risks (hyperglycemia, fluid retention) are manageable.<br> <b>Urate lowering</b> (allopurinol) is indicated later because of recurrent risk, but is begun with prophylaxis rather than as treatment of the inflamed joint."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Oral prednisone (correct)</th><th>Oral colchicine (closest distractor)</th></tr></thead><tbody> <tr><td>Clearance</td><td>Hepatic; no dose change in CKD</td><td><b>CYP3A4 + P-gp</b> and renal excretion</td></tr> <tr><td>Clarithromycin</td><td>No dangerous interaction</td><td><b>Contraindicated</b> with renal impairment — fatal toxicity reported</td></tr> <tr><td>eGFR 27</td><td>Usable</td><td>Dose-limit; avoid repeat courses within 14 days</td></tr> <tr><td>Main short-term risk</td><td>Hyperglycemia, fluid retention</td><td>Diarrhea, myopathy, marrow suppression</td></tr> </tbody></table> Colchicine alone in stage 4 CKD can be used at reduced dose; it is the added strong CYP3A4/P-gp inhibitor that makes it contraindicated."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Low-dose colchicine would be correct for an early flare in a patient with normal renal function who is not taking strong CYP3A4 or P-glycoprotein inhibitors such as clarithromycin or cyclosporine.\n(B) Indomethacin would be correct for a flare in a younger patient with normal kidney function, no anticoagulant, and no peptic ulcer disease or heart failure.\n(C) Allopurinol lowers serum urate for long-term prevention and is started with flare prophylaxis; it does not relieve an acute flare, so it would be correct only as the long-term management question.\n(D) Pegloticase is reserved for severe chronic tophaceous gout refractory to oral urate-lowering drugs and is not a treatment for an acute flare."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing colchicine because it is gout-specific — with renal impairment and a strong CYP3A4/P-gp inhibitor such as clarithromycin, colchicine toxicity can be fatal."
+   },
+   {
+    "k": "학습목표",
+    "v": "만성 콩팥병·항응고제·강한 CYP3A4/P-gp 억제제 복용 중인 급성 통풍에서 NSAID 와 콜히친을 피하고 경구 글루코코르티코이드로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "FitzGerald JD, et al. 2020 American College of Rheumatology guideline for the management of gout. Arthritis Care Res 2020;72:744-760 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 372 Gout and other crystal-associated arthropathies · Hung IF, et al. Fatal interaction between clarithromycin and colchicine in patients with renal insufficiency: a retrospective study. Clin Infect Dis 2005;41:291-300"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "음성 복굴절 바늘 결정으로 급성 통풍이고, eGFR 27·아픽사반으로 NSAID 를, 신기능 저하 + 클래리스로마이신으로 콜히친을 피해야 하므로 경구 프레드니손을 쓴다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "클래리스로마이신(강한 CYP3A4·P-gp 억제제) + 신기능 저하 — 콜히친 금기",
+   "steps": 3,
+   "chain": [
+    "관절액의 바늘 모양 음성 복굴절 결정 + 그람 염색 음성 → 급성 통풍",
+    "eGFR 27 + 아픽사반 → NSAID 금기, 신기능 저하 + 클래리스로마이신 → 콜히친 금기",
+    "남는 첫 치료 → 경구 글루코코르티코이드(프레드니손)"
+   ],
+   "key": [
+    {
+     "item": "needle-shaped, negatively birefringent crystals",
+     "why": "요산나트륨 결정 — 통풍 확진",
+     "also": []
+    },
+    {
+     "item": "he started clarithromycin",
+     "why": "강한 CYP3A4·P-gp 억제 — 콜히친 독성",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "negative Gram stain",
+     "why": "화농관절염 가능성을 낮춘다(배양은 확인)",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Serum creatinine is 2.3 mg/dL (eGFR 27 mL/min/1.73 m2)",
+     "why": "NSAID 금기, 콜히친 배설 감소",
+     "also": []
+    },
+    {
+     "item": "apixaban",
+     "why": "NSAID 와 함께 출혈 위험",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "serum uric acid is 8.9 mg/dL",
+     "why": "급성기 요산은 진단·치료 선택을 가르지 않는다 — 장기 요산 강하의 근거",
+     "also": []
+    },
+    {
+     "item": "Temperature is 37.6°C",
+     "why": "통풍 발작에서도 미열이 흔하다",
+     "also": []
+    }
+   ],
+   "summary": "음성 복굴절 바늘 결정으로 급성 통풍이다. eGFR 27 과 아픽사반 때문에 NSAID 를, 신기능 저하와 클래리스로마이신 때문에 콜히친을 피해야 하므로 경구 프레드니손이 가장 적절하다.",
+   "switch": {
+    "choice": "A",
+    "condition": "신기능이 정상이고 클래리스로마이신을 먹지 않았다면 발작 초기의 저용량 콜히친이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0329",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "약리",
+  "subject_file": "약리",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "약리 — 관상동맥 스텐트 뒤 클로피도그렐 복용 중 스텐트 혈전증",
+  "type": "약리 — 관상동맥 스텐트 뒤 클로피도그렐 복용 중 스텐트 혈전증",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-13",
+  "vignette": "A 58-year-old man is brought to the emergency department 30 minutes after the onset of crushing substernal chest pain. Six weeks ago, he underwent placement of a drug-eluting stent in the proximal left anterior descending artery for an anterior ST-elevation myocardial infarction. Since then, he has taken aspirin 81 mg and clopidogrel 75 mg daily, and his wife confirms that he has not missed doses. He also takes atorvastatin and lisinopril. Blood pressure is 102/64 mm Hg and pulse is 104/min. ECG shows ST-segment elevation in leads V1 through V4. Emergency coronary angiography shows thrombotic occlusion within the stent with no edge dissection or stent underexpansion. Genotyping shows that he is homozygous for the CYP2C19*2 allele.",
+  "question": "Which of the following best explains the failure of therapy in this patient?",
+  "options": [
+   "Inhibition of clopidogrel absorption by atorvastatin",
+   "Decreased formation of the active thiol metabolite of clopidogrel",
+   "Increased hepatic clearance of the active metabolite of clopidogrel",
+   "Mutation of the platelet P2Y12 receptor preventing drug binding",
+   "Accelerated hydrolysis of aspirin by plasma esterases"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Clopidogrel is an inactive prodrug; about 85% is hydrolyzed by carboxylesterase to an inactive acid, and the remainder must be oxidized by hepatic cytochrome P450 enzymes — chiefly CYP2C19 — in two steps to the active thiol metabolite that irreversibly blocks the platelet P2Y12 receptor. CYP2C19*2 is a loss-of-function allele; homozygous poor metabolizers form much less active metabolite, platelet inhibition is inadequate, and the risk of stent thrombosis is increased despite adherence.\n- 원리: <b>Why clopidogrel depends on the liver</b>: thienopyridines (clopidogrel, prasugrel) are prodrugs. Clopidogrel faces two competing pathways: most of the absorbed dose is wasted by carboxylesterase-1 hydrolysis, and only a small fraction undergoes two sequential CYP oxidations (CYP2C19 contributes to both steps) to a reactive thiol that forms a disulfide bond with the P2Y12 ADP receptor, inhibiting the platelet for its whole 7–10-day life.<br> <b>Why the genotype matters</b>: CYP2C19*2 (a splice defect) and *3 (a premature stop codon) abolish enzyme activity. Poor metabolizers (two loss-of-function alleles; about 2% of White and up to 15% of East Asian people) have substantially lower active metabolite levels, higher on-treatment platelet reactivity, and more stent thrombosis after PCI. This is why the FDA label carries a boxed warning.<br> <b>Why the alternatives work</b>: prasugrel is also a prodrug, but its activation needs only one CYP step through several enzymes (CYP3A4, CYP2B6) and is not CYP2C19-dependent; ticagrelor is a direct-acting, reversible P2Y12 antagonist that needs no activation. Guidelines recommend one of these for known poor metabolizers after acute coronary syndrome and PCI.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Reduced activation (correct)</th><th>Increased clearance of active metabolite (closest distractor)</th></tr></thead><tbody> <tr><td>Step affected</td><td><b>Formation</b> of the thiol by CYP2C19</td><td>Elimination after formation</td></tr> <tr><td>Genetic basis</td><td>CYP2C19 *2/*3 loss-of-function — poor metabolizer</td><td>No such mechanism; the thiol binds covalently and is short-lived regardless</td></tr> <tr><td>Opposite phenotype</td><td>CYP2C19*17 (ultrarapid) → more active drug, more bleeding</td><td>—</td></tr> <tr><td>Drug interaction that mimics it</td><td>CYP2C19 inhibitors (omeprazole, fluconazole) reduce activation</td><td>CYP inducers would increase activation, not clearance failure</td></tr> </tbody></table> A loss-of-function allele lowers drug effect only when the enzyme makes the active form; for drugs inactivated by the enzyme, the same allele raises toxicity.\n- 오답 이유:\n  - (A) Atorvastatin is a CYP3A4 substrate and was once suspected of competing with clopidogrel activation in vitro, but clinical studies showed no meaningful effect, and it does not block intestinal absorption.\n  - (C) Increased clearance of the active metabolite would explain failure only if an enzyme inactivated the formed thiol; loss-of-function CYP2C19 alleles reduce formation, and the thiol binds the receptor irreversibly.\n  - (D) A P2Y12 receptor mutation preventing binding would cause resistance to all P2Y12 inhibitors, including ticagrelor; the genotype here involves the activating enzyme, not the receptor.\n  - (E) Aspirin is deacetylated to salicylate, but its effect comes from rapid irreversible COX-1 acetylation before hydrolysis; aspirin failure would be suspected with nonadherence or concurrent ibuprofen use.\n- 함정: Thinking a loss-of-function metabolizing enzyme always raises drug levels and effect — clopidogrel is a prodrug, so poor CYP2C19 metabolizers get less active drug.\n- 학습목표: 클로피도그렐이 CYP2C19 로 활성화되는 전구약물임을 알고, 기능 소실 대립유전자 동형접합에서 활성 대사물이 부족해 스텐트 혈전증이 생기는 기전과 대안(티카그렐러·프라수그렐)을 안다\n- 근거·출처: Katzung BG. Basic & Clinical Pharmacology, 15th ed. Ch. Drugs used in disorders of coagulation — clopidogrel activation and CYP2C19 · Mega JL, et al. Cytochrome P-450 polymorphisms and response to clopidogrel. N Engl J Med 2009;360:354-362 · Lee CR, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. Clin Pharmacol Ther 2022;112:959-967",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Clopidogrel is an inactive prodrug; about 85% is hydrolyzed by carboxylesterase to an inactive acid, and the remainder must be oxidized by hepatic cytochrome P450 enzymes — chiefly CYP2C19 — in two steps to the active thiol metabolite that irreversibly blocks the platelet P2Y12 receptor. CYP2C19*2 is a loss-of-function allele; homozygous poor metabolizers form much less active metabolite, platelet inhibition is inadequate, and the risk of stent thrombosis is increased despite adherence."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why clopidogrel depends on the liver</b>: thienopyridines (clopidogrel, prasugrel) are prodrugs. Clopidogrel faces two competing pathways: most of the absorbed dose is wasted by carboxylesterase-1 hydrolysis, and only a small fraction undergoes two sequential CYP oxidations (CYP2C19 contributes to both steps) to a reactive thiol that forms a disulfide bond with the P2Y12 ADP receptor, inhibiting the platelet for its whole 7–10-day life.<br> <b>Why the genotype matters</b>: CYP2C19*2 (a splice defect) and *3 (a premature stop codon) abolish enzyme activity. Poor metabolizers (two loss-of-function alleles; about 2% of White and up to 15% of East Asian people) have substantially lower active metabolite levels, higher on-treatment platelet reactivity, and more stent thrombosis after PCI. This is why the FDA label carries a boxed warning.<br> <b>Why the alternatives work</b>: prasugrel is also a prodrug, but its activation needs only one CYP step through several enzymes (CYP3A4, CYP2B6) and is not CYP2C19-dependent; ticagrelor is a direct-acting, reversible P2Y12 antagonist that needs no activation. Guidelines recommend one of these for known poor metabolizers after acute coronary syndrome and PCI."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Reduced activation (correct)</th><th>Increased clearance of active metabolite (closest distractor)</th></tr></thead><tbody> <tr><td>Step affected</td><td><b>Formation</b> of the thiol by CYP2C19</td><td>Elimination after formation</td></tr> <tr><td>Genetic basis</td><td>CYP2C19 *2/*3 loss-of-function — poor metabolizer</td><td>No such mechanism; the thiol binds covalently and is short-lived regardless</td></tr> <tr><td>Opposite phenotype</td><td>CYP2C19*17 (ultrarapid) → more active drug, more bleeding</td><td>—</td></tr> <tr><td>Drug interaction that mimics it</td><td>CYP2C19 inhibitors (omeprazole, fluconazole) reduce activation</td><td>CYP inducers would increase activation, not clearance failure</td></tr> </tbody></table> A loss-of-function allele lowers drug effect only when the enzyme makes the active form; for drugs inactivated by the enzyme, the same allele raises toxicity."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Atorvastatin is a CYP3A4 substrate and was once suspected of competing with clopidogrel activation in vitro, but clinical studies showed no meaningful effect, and it does not block intestinal absorption.\n(C) Increased clearance of the active metabolite would explain failure only if an enzyme inactivated the formed thiol; loss-of-function CYP2C19 alleles reduce formation, and the thiol binds the receptor irreversibly.\n(D) A P2Y12 receptor mutation preventing binding would cause resistance to all P2Y12 inhibitors, including ticagrelor; the genotype here involves the activating enzyme, not the receptor.\n(E) Aspirin is deacetylated to salicylate, but its effect comes from rapid irreversible COX-1 acetylation before hydrolysis; aspirin failure would be suspected with nonadherence or concurrent ibuprofen use."
+   },
+   {
+    "k": "함정",
+    "v": "Thinking a loss-of-function metabolizing enzyme always raises drug levels and effect — clopidogrel is a prodrug, so poor CYP2C19 metabolizers get less active drug."
+   },
+   {
+    "k": "학습목표",
+    "v": "클로피도그렐이 CYP2C19 로 활성화되는 전구약물임을 알고, 기능 소실 대립유전자 동형접합에서 활성 대사물이 부족해 스텐트 혈전증이 생기는 기전과 대안(티카그렐러·프라수그렐)을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Katzung BG. Basic & Clinical Pharmacology, 15th ed. Ch. Drugs used in disorders of coagulation — clopidogrel activation and CYP2C19 · Mega JL, et al. Cytochrome P-450 polymorphisms and response to clopidogrel. N Engl J Med 2009;360:354-362 · Lee CR, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. Clin Pharmacol Ther 2022;112:959-967"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "클로피도그렐은 CYP2C19 로 활성화되는 전구약물이므로 CYP2C19*2 동형접합에서는 활성 티올 대사물 생성이 줄어 혈소판 억제가 부족하다",
+   "rival": [
+    "C",
+    "D"
+   ],
+   "discriminator": "유전형이 수용체가 아니라 활성화 효소에 있고, 기능 소실 효소는 활성형 생성을 줄인다",
+   "steps": 3,
+   "chain": [
+    "복약을 지켰는데 스텐트 안 혈전 폐쇄, 기계적 원인(박리·확장 부족) 없음 → 약물 효과 부족",
+    "클로피도그렐은 간 CYP2C19 로 두 단계 산화되어야 하는 전구약물",
+    "CYP2C19*2 동형접합(기능 소실) → 활성 티올 대사물 생성 감소 → P2Y12 억제 부족"
+   ],
+   "key": [
+    {
+     "item": "homozygous for the CYP2C19*2 allele",
+     "why": "기능 소실 대립유전자 두 개 — 대사 불량자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "his wife confirms that he has not missed doses",
+     "why": "복약 불이행 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no edge dissection or stent underexpansion",
+     "why": "기계적 스텐트 실패 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "He also takes atorvastatin and lisinopril",
+     "why": "아토르바스타틴 상호작용은 임상적으로 의미가 없다 — 끌려가기 쉬운 정보",
+     "also": []
+    },
+    {
+     "item": "Six weeks ago, he underwent placement of a drug-eluting stent",
+     "why": "아급성 스텐트 혈전증 시기 — 기전은 유전형이 가른다",
+     "also": []
+    }
+   ],
+   "summary": "복약을 지켰고 기계적 원인이 없는 스텐트 혈전증에서 CYP2C19*2 동형접합은 클로피도그렐 활성화 실패를 뜻한다. 클로피도그렐은 CYP2C19 로 활성 티올이 되는 전구약물이라 대사 불량자는 활성형이 부족하며, 대안은 활성화가 필요 없는 티카그렐러나 CYP2C19 비의존 프라수그렐이다.",
+   "switch": {
+    "choice": "D",
+    "condition": "티카그렐러로 바꾼 뒤에도 혈소판 P2Y12 반응성이 전혀 억제되지 않았다면 수용체 자체의 이상이 더 적절한 설명이다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0328",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "내분비·대사 — 증상 없는 고칼슘혈증과 낮은 소변 칼슘",
+  "type": "내분비·대사 — 증상 없는 고칼슘혈증과 낮은 소변 칼슘",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "38세 여자가 건강검진에서 고칼슘혈증이 발견되어 왔다. 증상은 없고 결석·골절 병력이 없다. 약이나 보충제는 먹지 않는다. 아버지도 「칼슘이 높다」는 말을 들었으나 치료받지 않았다. 혈압 118/74 mmHg 이다. 혈청 칼슘 10.9 mg/dL, 인 2.9 mg/dL, 알부민 4.3 g/dL, 크레아티닌 0.7 mg/dL, 마그네슘 2.4 mg/dL, 부갑상샘호르몬 72 pg/mL(참고치 15~65), 25-하이드록시비타민 D 32 ng/mL 이다. 24시간 소변 칼슘은 60 mg 이고, 칼슘/크레아티닌 청소율 비는 0.006 이다. 대퇴골·요추 골밀도는 정상이다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "부갑상샘절제술",
+   "시나칼셋 투여",
+   "알렌드로네이트 투여",
+   "하이드로클로로티아지드 투여",
+   "경과 관찰"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 경한 고칼슘혈증과 정상 상한을 조금 넘는 PTH 는 일차 부갑상샘기능항진증과 비슷하지만, 24시간 소변 칼슘이 60 mg 이고 칼슘/크레아티닌 청소율 비가 0.006 으로 0.01 미만이며 마그네슘이 약간 높고 아버지도 고칼슘혈증이다. 칼슘감지수용체(CaSR) 기능 소실 변이의 가족성 저칼슘뇨 고칼슘혈증(FHH)이다. 양성 질환이고 부갑상샘절제술로 교정되지 않으므로 경과 관찰한다.\n- 원리: <b>왜 칼슘이 높은데 PTH 가 억제되지 않는가</b>: 부갑상샘 세포는 칼슘감지수용체(CaSR, G 단백 결합 수용체)로 혈중 칼슘을 읽어 PTH 분비를 줄인다. FHH 에서는 CaSR 한쪽 대립유전자가 기능을 잃어(상염색체 우성) 칼슘을 「낮게」 읽으므로, 정상보다 높은 칼슘에서야 PTH 가 멈춘다 — 조절 기준점이 위로 옮겨진 것이다. 그래서 칼슘은 경하게 높고 PTH 는 정상이거나 약간 높다.<br> <b>왜 소변 칼슘이 낮은가</b>: 콩팥 헨레고리 굵은 오름가지에도 CaSR 이 있어 칼슘이 높으면 칼슘 재흡수를 줄인다. 이 수용체도 둔해져 고칼슘혈증인데도 칼슘을 계속 재흡수하므로 소변 칼슘이 낮다. 일차 부갑상샘기능항진증은 여과 칼슘이 많아 소변 칼슘이 정상~높다. 칼슘/크레아티닌 청소율 비 < 0.01 이 FHH 를, > 0.02 가 일차 부갑상샘기능항진증을 시사한다.<br> <b>왜 수술하지 않는가</b>: 네 개 샘 모두가 같은 수용체 결함을 가지므로 일부를 떼어도 기준점이 그대로라 고칼슘혈증이 남는다. 합병증(결석·골다공증)이 거의 없는 양성 질환이라 진단을 확인하고(CASR 유전자 검사·가족 검사) 지켜본다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">FHH(정답 — 경과 관찰)</th><th>일차 부갑상샘기능항진증(가장 가까운 오답 — 수술)</th></tr></thead><tbody> <tr><td>칼슘/크레아티닌 청소율 비</td><td><b>< 0.01</b></td><td><b>> 0.02</b></td></tr> <tr><td>24시간 소변 칼슘</td><td>낮다(< 100 mg)</td><td>정상~높다</td></tr> <tr><td>가족력·발견 나이</td><td>상염색체 우성, 어려서부터</td><td>대개 산발성, 중년 이후</td></tr> <tr><td>합병증</td><td>거의 없다</td><td>결석·골다공증·신기능 저하</td></tr> <tr><td>부갑상샘절제술</td><td>효과 없다</td><td>근치 치료</td></tr> </tbody></table> 비타민 D 결핍·티아지드·저칼슘 식사도 소변 칼슘을 낮추므로, 비 계산 전에 이것들을 먼저 교정·확인한다(이 환자는 비타민 D 32 로 충분하다).\n- 오답 이유:\n  - ① 부갑상샘절제술은 일차 부갑상샘기능항진증에서 칼슘이 정상 상한보다 1 mg/dL 넘게 높거나 결석·골다공증·50세 미만이고 소변 칼슘이 정상~높을 때 정답이 된다.\n  - ② 시나칼셋은 CaSR 감수성을 높여 PTH 를 낮추는 약으로, 수술할 수 없는 일차 부갑상샘기능항진증이나 투석 환자의 이차 부갑상샘기능항진증일 때 쓴다.\n  - ③ 알렌드로네이트는 골흡수를 억제하는 약으로, 골밀도가 골다공증 범위인 환자나 수술을 미루는 일차 부갑상샘기능항진증 환자의 골 보호에 쓸 때 정답이 된다.\n  - ④ 하이드로클로로티아지드는 소변 칼슘을 줄여 고칼슘뇨성 결석을 막는 약이며, 고칼슘혈증을 악화시키므로 소변 칼슘이 높은 정상칼슘혈증 결석 환자일 때만 정답이 된다.\n- 함정: 칼슘과 PTH 가 함께 높으니 일차 부갑상샘기능항진증으로 보고 수술을 고르는 것 — 소변 칼슘이 낮으면 FHH 를 먼저 배제한다.\n- 학습목표: 경한 고칼슘혈증·약간 높은 PTH 에서 칼슘/크레아티닌 청소율 비 < 0.01 이면 가족성 저칼슘뇨 고칼슘혈증으로 진단하고 부갑상샘절제술을 하지 않는다\n- 근거·출처: Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res 2022;37:2293-2314 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 410 Disorders of the parathyroid gland and calcium homeostasis — familial hypocalciuric hypercalcemia · Lee JY, Shoback DM. Familial hypocalciuric hypercalcemia and related disorders. Best Pract Res Clin Endocrinol Metab 2018;32:609-619",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "경한 고칼슘혈증과 정상 상한을 조금 넘는 PTH 는 일차 부갑상샘기능항진증과 비슷하지만, 24시간 소변 칼슘이 60 mg 이고 칼슘/크레아티닌 청소율 비가 0.006 으로 0.01 미만이며 마그네슘이 약간 높고 아버지도 고칼슘혈증이다. 칼슘감지수용체(CaSR) 기능 소실 변이의 가족성 저칼슘뇨 고칼슘혈증(FHH)이다. 양성 질환이고 부갑상샘절제술로 교정되지 않으므로 경과 관찰한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 칼슘이 높은데 PTH 가 억제되지 않는가</b>: 부갑상샘 세포는 칼슘감지수용체(CaSR, G 단백 결합 수용체)로 혈중 칼슘을 읽어 PTH 분비를 줄인다. FHH 에서는 CaSR 한쪽 대립유전자가 기능을 잃어(상염색체 우성) 칼슘을 「낮게」 읽으므로, 정상보다 높은 칼슘에서야 PTH 가 멈춘다 — 조절 기준점이 위로 옮겨진 것이다. 그래서 칼슘은 경하게 높고 PTH 는 정상이거나 약간 높다.<br> <b>왜 소변 칼슘이 낮은가</b>: 콩팥 헨레고리 굵은 오름가지에도 CaSR 이 있어 칼슘이 높으면 칼슘 재흡수를 줄인다. 이 수용체도 둔해져 고칼슘혈증인데도 칼슘을 계속 재흡수하므로 소변 칼슘이 낮다. 일차 부갑상샘기능항진증은 여과 칼슘이 많아 소변 칼슘이 정상~높다. 칼슘/크레아티닌 청소율 비 < 0.01 이 FHH 를, > 0.02 가 일차 부갑상샘기능항진증을 시사한다.<br> <b>왜 수술하지 않는가</b>: 네 개 샘 모두가 같은 수용체 결함을 가지므로 일부를 떼어도 기준점이 그대로라 고칼슘혈증이 남는다. 합병증(결석·골다공증)이 거의 없는 양성 질환이라 진단을 확인하고(CASR 유전자 검사·가족 검사) 지켜본다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">FHH(정답 — 경과 관찰)</th><th>일차 부갑상샘기능항진증(가장 가까운 오답 — 수술)</th></tr></thead><tbody> <tr><td>칼슘/크레아티닌 청소율 비</td><td><b>< 0.01</b></td><td><b>> 0.02</b></td></tr> <tr><td>24시간 소변 칼슘</td><td>낮다(< 100 mg)</td><td>정상~높다</td></tr> <tr><td>가족력·발견 나이</td><td>상염색체 우성, 어려서부터</td><td>대개 산발성, 중년 이후</td></tr> <tr><td>합병증</td><td>거의 없다</td><td>결석·골다공증·신기능 저하</td></tr> <tr><td>부갑상샘절제술</td><td>효과 없다</td><td>근치 치료</td></tr> </tbody></table> 비타민 D 결핍·티아지드·저칼슘 식사도 소변 칼슘을 낮추므로, 비 계산 전에 이것들을 먼저 교정·확인한다(이 환자는 비타민 D 32 로 충분하다)."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 부갑상샘절제술은 일차 부갑상샘기능항진증에서 칼슘이 정상 상한보다 1 mg/dL 넘게 높거나 결석·골다공증·50세 미만이고 소변 칼슘이 정상~높을 때 정답이 된다.\n② 시나칼셋은 CaSR 감수성을 높여 PTH 를 낮추는 약으로, 수술할 수 없는 일차 부갑상샘기능항진증이나 투석 환자의 이차 부갑상샘기능항진증일 때 쓴다.\n③ 알렌드로네이트는 골흡수를 억제하는 약으로, 골밀도가 골다공증 범위인 환자나 수술을 미루는 일차 부갑상샘기능항진증 환자의 골 보호에 쓸 때 정답이 된다.\n④ 하이드로클로로티아지드는 소변 칼슘을 줄여 고칼슘뇨성 결석을 막는 약이며, 고칼슘혈증을 악화시키므로 소변 칼슘이 높은 정상칼슘혈증 결석 환자일 때만 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "칼슘과 PTH 가 함께 높으니 일차 부갑상샘기능항진증으로 보고 수술을 고르는 것 — 소변 칼슘이 낮으면 FHH 를 먼저 배제한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "경한 고칼슘혈증·약간 높은 PTH 에서 칼슘/크레아티닌 청소율 비 < 0.01 이면 가족성 저칼슘뇨 고칼슘혈증으로 진단하고 부갑상샘절제술을 하지 않는다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. J Bone Miner Res 2022;37:2293-2314 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 410 Disorders of the parathyroid gland and calcium homeostasis — familial hypocalciuric hypercalcemia · Lee JY, Shoback DM. Familial hypocalciuric hypercalcemia and related disorders. Best Pract Res Clin Endocrinol Metab 2018;32:609-619"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "경한 고칼슘혈증·약간 높은 PTH 이지만 칼슘/크레아티닌 청소율 비가 0.006 이고 가족력이 있어 FHH 이므로 수술하지 않고 지켜본다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "칼슘/크레아티닌 청소율 비 0.006(< 0.01)과 24시간 소변 칼슘 60 mg — 일차 부갑상샘기능항진증은 소변 칼슘이 정상~높다",
+   "steps": 3,
+   "chain": [
+    "혈청 칼슘 10.9 + 부갑상샘호르몬 72 → PTH 매개 고칼슘혈증(일차 부갑상샘기능항진증 또는 FHH)",
+    "칼슘/크레아티닌 청소율 비 0.006 + 아버지의 고칼슘혈증 + 비타민 D 충분 → FHH",
+    "FHH 는 양성이고 부갑상샘절제술로 교정되지 않는다 → 경과 관찰"
+   ],
+   "key": [
+    {
+     "item": "칼슘/크레아티닌 청소율 비는 0.006",
+     "why": "0.01 미만 — FHH",
+     "also": []
+    },
+    {
+     "item": "24시간 소변 칼슘은 60 mg",
+     "why": "고칼슘혈증인데 소변 칼슘이 낮다",
+     "also": []
+    },
+    {
+     "item": "아버지도 「칼슘이 높다」는 말을 들었으나 치료받지 않았다",
+     "why": "상염색체 우성 유전",
+     "also": []
+    },
+    {
+     "item": "마그네슘 2.4 mg/dL",
+     "why": "FHH 에서 흔한 경한 고마그네슘혈증",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "25-하이드록시비타민 D 32 ng/mL",
+     "why": "비타민 D 결핍으로 소변 칼슘이 낮아졌을 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "약이나 보충제는 먹지 않는다",
+     "why": "티아지드·리튬에 의한 고칼슘혈증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "대퇴골·요추 골밀도는 정상이다",
+     "why": "골다공증 치료 근거가 없다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "경한 고칼슘혈증과 약간 높은 PTH 이지만 소변 칼슘이 낮아 칼슘/크레아티닌 청소율 비가 0.01 미만이고 가족력이 있어 FHH 다. 양성 질환이고 수술로 교정되지 않으므로 경과 관찰하며, 소변 칼슘이 정상~높은 일차 부갑상샘기능항진증과 이 비로 가른다.",
+   "switch": {
+    "choice": "A",
+    "condition": "칼슘/크레아티닌 청소율 비가 0.025 이고 신장결석 병력이 있었다면 부갑상샘절제술이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0327",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "신장·비뇨 — 반복되는 칼슘 결석과 24시간 소변 검사",
+  "type": "신장·비뇨 — 반복되는 칼슘 결석과 24시간 소변 검사",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-13",
+  "vignette": "42세 남자가 3년 동안 세 번째 왼쪽 옆구리 산통으로 왔다. 이전에 배출된 결석은 칼슘 옥살산 결석이었다. 만성 설사나 장 수술 병력은 없고 약은 먹지 않는다. 하루 물 2.5 L 를 마신다. 혈압 126/80 mmHg 이다. 혈청 칼슘 9.4 mg/dL, 칼륨 4.1 mEq/L, 중탄산 25 mEq/L, 요산 5.8 mg/dL, 부갑상샘호르몬 38 pg/mL 이다. 24시간 소변 검사에서 소변량 2.4 L, 칼슘 210 mg, 옥살산 32 mg, 요산 560 mg, 구연산 180 mg(참고치 > 450 mg), 나트륨 140 mEq 이다.",
+  "question": "재발을 막기 위해 가장 적절한 약은?",
+  "options": [
+   "알로퓨리놀",
+   "탄산칼슘",
+   "아세타졸아마이드",
+   "구연산칼륨",
+   "하이드로클로로티아지드"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 24시간 소변에서 칼슘(210 mg, 300 mg 미만)·옥살산·요산·나트륨·소변량은 정상 범위이고, 구연산만 180 mg 으로 낮다. 저구연산뇨가 유일한 위험인자인 반복 칼슘 옥살산 결석이므로, 소변 구연산을 올리는 구연산칼륨이 가장 적절하다. 구연산은 소변 칼슘과 결합해 녹는 복합체를 만들고 결정이 자라고 엉기는 것을 막는다.\n- 원리: <b>왜 구연산이 결석을 막는가</b>: 구연산은 소변 칼슘과 결합해 물에 잘 녹는 칼슘–구연산 복합체를 만들어 옥살산과 결합할 자유 칼슘을 줄이고, 이미 생긴 칼슘 옥살산 결정 표면에 붙어 결정이 자라고 엉기는 것을 막는다. 그래서 칼슘 배설이 정상이라도 구연산이 낮으면 결석이 생긴다.<br> <b>왜 구연산이 낮아지는가</b>: 근위세관은 여과된 구연산을 재흡수해 세포 안에서 대사(중탄산 생성)한다. 세포 안이 산성으로 기울면(대사산증, 저칼륨혈증, 고단백 식사, 원위 신세관산증, 설사) 재흡수와 대사가 늘어 소변 구연산이 줄어든다.<br> <b>왜 칼륨 염인가</b>: 구연산칼륨은 흡수된 뒤 대사되어 알칼리 부하가 되므로 근위세관 구연산 재흡수를 줄여 소변 구연산을 올리고 소변 pH 를 높인다(요산 결석 예방에도 쓴다). 나트륨 염은 나트륨이 칼슘 배설을 늘리므로 피한다. 모든 결석 환자의 기본은 하루 소변 2.5 L 이상, 나트륨·동물성 단백 제한, 정상 칼슘 섭취다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">구연산칼륨(정답)</th><th>하이드로클로로티아지드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>교정하는 이상</td><td><b>저구연산뇨</b>(남 < 450 mg/일)</td><td><b>고칼슘뇨</b>(남 > 300 mg/일)</td></tr> <tr><td>기전</td><td>알칼리 부하 → 근위세관 구연산 재흡수 감소</td><td>원위세관 Na⁺-Cl⁻ 공수송체 억제 → 칼슘 재흡수 증가</td></tr> <tr><td>이 환자</td><td>구연산 180 mg — 해당</td><td>칼슘 210 mg — 정상이라 해당 없음</td></tr> </tbody></table> 24시간 소변에서 벗어난 값이 무엇인지가 약을 정한다 — 칼슘이 높으면 티아지드, 구연산이 낮으면 구연산칼륨, 요산이 높으면 알로퓨리놀.\n- 오답 이유:\n  - ① 알로퓨리놀은 요산 생성을 줄이는 약으로, 칼슘 옥살산 결석 환자의 24시간 소변 요산이 800 mg 을 넘는 고요산뇨이거나 요산 결석일 때 정답이 된다.\n  - ② 탄산칼슘을 식사와 함께 먹으면 장에서 옥살산과 결합해 흡수를 줄이므로, 짧은 장·염증장질환으로 소변 옥살산이 높은 장성 고옥살산뇨일 때 정답이 된다.\n  - ③ 아세타졸아마이드는 근위세관 탄산탈수효소를 막아 대사산증을 만들고 소변 구연산을 오히려 줄이므로, 결석을 만드는 약이며 시스틴·요산 결석 예방에도 쓰지 않는다.\n  - ⑤ 하이드로클로로티아지드는 원위세관 칼슘 재흡수를 늘려 소변 칼슘을 줄이므로, 24시간 소변 칼슘이 300 mg 을 넘는 특발성 고칼슘뇨일 때 정답이 된다.\n- 함정: 칼슘 결석이면 무조건 티아지드를 고르는 것 — 소변 칼슘이 정상이고 구연산만 낮으면 구연산칼륨이다.\n- 학습목표: 반복 칼슘 결석 환자의 24시간 소변에서 저구연산뇨를 찾아 구연산칼륨으로 예방하고, 고칼슘뇨에 쓰는 티아지드와 구별한다\n- 근거·출처: Pearle MS, et al. Medical management of kidney stones: AUA guideline. J Urol 2014;192:316-324 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 318 Nephrolithiasis · Barcelo P, et al. Randomized double-blind study of potassium citrate in idiopathic hypocitraturic calcium nephrolithiasis. J Urol 1993;150:1761-1764",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "24시간 소변에서 칼슘(210 mg, 300 mg 미만)·옥살산·요산·나트륨·소변량은 정상 범위이고, 구연산만 180 mg 으로 낮다. 저구연산뇨가 유일한 위험인자인 반복 칼슘 옥살산 결석이므로, 소변 구연산을 올리는 구연산칼륨이 가장 적절하다. 구연산은 소변 칼슘과 결합해 녹는 복합체를 만들고 결정이 자라고 엉기는 것을 막는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 구연산이 결석을 막는가</b>: 구연산은 소변 칼슘과 결합해 물에 잘 녹는 칼슘–구연산 복합체를 만들어 옥살산과 결합할 자유 칼슘을 줄이고, 이미 생긴 칼슘 옥살산 결정 표면에 붙어 결정이 자라고 엉기는 것을 막는다. 그래서 칼슘 배설이 정상이라도 구연산이 낮으면 결석이 생긴다.<br> <b>왜 구연산이 낮아지는가</b>: 근위세관은 여과된 구연산을 재흡수해 세포 안에서 대사(중탄산 생성)한다. 세포 안이 산성으로 기울면(대사산증, 저칼륨혈증, 고단백 식사, 원위 신세관산증, 설사) 재흡수와 대사가 늘어 소변 구연산이 줄어든다.<br> <b>왜 칼륨 염인가</b>: 구연산칼륨은 흡수된 뒤 대사되어 알칼리 부하가 되므로 근위세관 구연산 재흡수를 줄여 소변 구연산을 올리고 소변 pH 를 높인다(요산 결석 예방에도 쓴다). 나트륨 염은 나트륨이 칼슘 배설을 늘리므로 피한다. 모든 결석 환자의 기본은 하루 소변 2.5 L 이상, 나트륨·동물성 단백 제한, 정상 칼슘 섭취다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">구연산칼륨(정답)</th><th>하이드로클로로티아지드(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>교정하는 이상</td><td><b>저구연산뇨</b>(남 < 450 mg/일)</td><td><b>고칼슘뇨</b>(남 > 300 mg/일)</td></tr> <tr><td>기전</td><td>알칼리 부하 → 근위세관 구연산 재흡수 감소</td><td>원위세관 Na⁺-Cl⁻ 공수송체 억제 → 칼슘 재흡수 증가</td></tr> <tr><td>이 환자</td><td>구연산 180 mg — 해당</td><td>칼슘 210 mg — 정상이라 해당 없음</td></tr> </tbody></table> 24시간 소변에서 벗어난 값이 무엇인지가 약을 정한다 — 칼슘이 높으면 티아지드, 구연산이 낮으면 구연산칼륨, 요산이 높으면 알로퓨리놀."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 알로퓨리놀은 요산 생성을 줄이는 약으로, 칼슘 옥살산 결석 환자의 24시간 소변 요산이 800 mg 을 넘는 고요산뇨이거나 요산 결석일 때 정답이 된다.\n② 탄산칼슘을 식사와 함께 먹으면 장에서 옥살산과 결합해 흡수를 줄이므로, 짧은 장·염증장질환으로 소변 옥살산이 높은 장성 고옥살산뇨일 때 정답이 된다.\n③ 아세타졸아마이드는 근위세관 탄산탈수효소를 막아 대사산증을 만들고 소변 구연산을 오히려 줄이므로, 결석을 만드는 약이며 시스틴·요산 결석 예방에도 쓰지 않는다.\n⑤ 하이드로클로로티아지드는 원위세관 칼슘 재흡수를 늘려 소변 칼슘을 줄이므로, 24시간 소변 칼슘이 300 mg 을 넘는 특발성 고칼슘뇨일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "칼슘 결석이면 무조건 티아지드를 고르는 것 — 소변 칼슘이 정상이고 구연산만 낮으면 구연산칼륨이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "반복 칼슘 결석 환자의 24시간 소변에서 저구연산뇨를 찾아 구연산칼륨으로 예방하고, 고칼슘뇨에 쓰는 티아지드와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Pearle MS, et al. Medical management of kidney stones: AUA guideline. J Urol 2014;192:316-324 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 318 Nephrolithiasis · Barcelo P, et al. Randomized double-blind study of potassium citrate in idiopathic hypocitraturic calcium nephrolithiasis. J Urol 1993;150:1761-1764"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "24시간 소변에서 구연산만 낮고 칼슘·옥살산·요산은 정상이므로 저구연산뇨를 교정하는 구연산칼륨을 쓴다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "24시간 소변 칼슘 210 mg 은 정상이다 — 티아지드가 교정할 고칼슘뇨가 없다",
+   "steps": 3,
+   "chain": [
+    "반복 칼슘 옥살산 결석 → 24시간 소변으로 위험인자를 찾는다",
+    "칼슘 210·옥살산 32·요산 560·나트륨 140 정상, 구연산 180 으로 낮음 → 저구연산뇨",
+    "저구연산뇨 → 알칼리 부하로 소변 구연산을 올리는 구연산칼륨"
+   ],
+   "key": [
+    {
+     "item": "구연산 180 mg(참고치 > 450 mg)",
+     "why": "유일하게 벗어난 위험인자",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "칼슘 210 mg",
+     "why": "고칼슘뇨가 아니다 — 티아지드의 근거가 없다",
+     "also": []
+    },
+    {
+     "item": "요산 560 mg",
+     "why": "고요산뇨가 아니다 — 알로퓨리놀의 근거가 없다",
+     "also": []
+    },
+    {
+     "item": "옥살산 32 mg",
+     "why": "장성 고옥살산뇨가 아니다",
+     "also": []
+    },
+    {
+     "item": "부갑상샘호르몬 38 pg/mL",
+     "why": "일차 부갑상샘기능항진증 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "중탄산 25 mEq/L",
+     "why": "뚜렷한 대사산증·원위 신세관산증은 없다 — 특발성 저구연산뇨",
+     "also": []
+    },
+    {
+     "item": "하루 물 2.5 L 를 마신다",
+     "why": "소변량은 이미 충분하다",
+     "also": []
+    }
+   ],
+   "summary": "반복 칼슘 옥살산 결석 환자의 24시간 소변에서 칼슘·옥살산·요산은 정상이고 구연산만 낮다. 저구연산뇨를 교정하는 구연산칼륨을 쓰며, 티아지드는 소변 칼슘이 높을 때의 약이다.",
+   "switch": {
+    "choice": "E",
+    "condition": "24시간 소변 칼슘이 380 mg 으로 높고 구연산이 정상이었다면 하이드로클로로티아지드가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0326",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "혈액·종양 — 무릎 인공관절 수술 뒤 헤파린 7일째 혈소판 감소",
+  "type": "혈액·종양 — 무릎 인공관절 수술 뒤 헤파린 7일째 혈소판 감소",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "68세 여자가 오른쪽 무릎 인공관절 치환술 뒤 입원 7일째 왼쪽 종아리가 붓고 아프다. 수술 다음 날부터 미분획 헤파린을 피하주사로 맞고 있다. 혈압 132/80 mmHg, 맥박 88회/분, 체온 36.9 °C 이다. 왼쪽 종아리 둘레가 오른쪽보다 3 cm 굵다. 수술 전 혈소판 수는 260,000/mm³ 였고 오늘은 98,000/mm³ 이다. 혈색소 11.2 g/dL, 프로트롬빈시간 INR 1.0, 혈청 크레아티닌 0.8 mg/dL 이다. 하지 정맥 초음파에서 왼쪽 오금정맥에 혈전이 있다.",
+  "question": "헤파린을 끊은 뒤 가장 적절한 처치는?",
+  "options": [
+   "하대정맥 필터 삽입",
+   "아르가트로반 정맥 투여",
+   "에녹사파린 피하 주사",
+   "와파린 경구 투여 시작",
+   "혈소판 수혈"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 헤파린 시작 6일째에 혈소판이 260,000 에서 98,000/mm³ 로 60 % 넘게 줄었고 새 심부정맥혈전증이 생겼다. 다른 원인이 없으므로 헤파린 유발 혈소판감소증(HIT, 4T 점수 높음)을 의심한다. 헤파린을 모두 끊고, 혈소판 수와 상관없이 비헤파린 항응고제(아르가트로반 정맥 투여, 또는 폰다파리눅스·직접 경구 항응고제)를 바로 시작하면서 PF4/헤파린 항체 검사를 보낸다.\n- 원리: <b>왜 혈소판이 줄면서 혈전이 생기는가</b>: 헤파린은 혈소판 α-과립에서 나온 PF4 와 결합해 새 항원을 만들고, 5~10일 뒤 이 복합체에 대한 IgG 가 생긴다. IgG–PF4–헤파린 면역복합체가 혈소판 FcγRIIa 수용체를 묶어 혈소판을 활성화하므로 혈소판은 소모되어 줄고, 활성화된 혈소판이 내놓는 미세입자와 트롬빈 생성 때문에 정맥·동맥 혈전이 생긴다 — 출혈이 아니라 혈전이 문제인 혈소판감소증이다.<br> <b>왜 항응고를 멈추면 안 되는가</b>: 헤파린만 끊으면 이미 활성화된 응고가 계속되어 혈전 위험이 30~50 % 에 이른다. 그래서 혈전이 없어도 치료 용량의 비헤파린 항응고제를 쓴다. 아르가트로반은 간에서 대사되는 직접 트롬빈 억제제라 신기능과 상관없이 쓸 수 있다.<br> <b>와파린을 서두르면 안 되는 이유</b>: 와파린은 반감기가 짧은 단백 C 를 먼저 떨어뜨려 일시적 과응고를 만들고, HIT 에서는 사지 괴사(정맥성 괴저)를 일으킨다. 혈소판이 150,000/mm³ 이상 회복된 뒤 겹쳐서 시작한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아르가트로반(정답)</th><th>에녹사파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약의 종류</td><td>직접 트롬빈 억제제 — 헤파린 구조 없음</td><td>저분자량 헤파린 — 헤파린 사슬</td></tr> <tr><td>HIT 항체와 교차반응</td><td><b>없다</b></td><td><b>있다</b>(대부분 PF4 복합체 형성) — 금기</td></tr> <tr><td>배설</td><td>간 대사 — 신부전에도 사용</td><td>신장 배설</td></tr> </tbody></table> 저분자량 헤파린도 PF4 와 결합하므로 HIT 에서는 쓸 수 없다. 「헤파린을 끊는다」는 저분자량 헤파린과 헤파린 세척액까지 모두 끊는다는 뜻이다.\n- 오답 이유:\n  - ① 하대정맥 필터는 항응고를 할 수 없는 급성 근위 심부정맥혈전증(활동성 출혈)일 때 쓰며, HIT 에서는 항응고를 대신하지 못하고 오히려 혈전을 늘린다.\n  - ③ 에녹사파린은 심부정맥혈전증 치료의 표준 약이지만 HIT 항체와 교차반응하므로, 혈소판 감소가 헤파린과 무관한 원인(희석·패혈증)일 때만 정답이 된다.\n  - ④ 와파린은 장기 항응고에 쓰지만 HIT 급성기에 단독으로 시작하면 단백 C 가 먼저 떨어져 정맥성 괴저가 생기므로, 혈소판이 150,000 이상 회복된 뒤 겹쳐 시작한다.\n  - ⑤ 혈소판 수혈은 HIT 에서 혈전을 악화시킬 수 있어 피하며, 활동성 대량 출혈이나 고위험 시술 직전처럼 출혈이 문제일 때만 고려한다.\n- 함정: 혈소판이 줄었으니 항응고를 멈추거나 혈소판을 수혈하는 것 — HIT 는 혈전성 질환이므로 비헤파린 항응고제를 바로 시작한다.\n- 학습목표: 헤파린 시작 5~10일 뒤 혈소판이 50 % 이상 줄고 혈전이 생기면 헤파린 유발 혈소판감소증을 의심해 헤파린을 끊고 비헤파린 항응고제(아르가트로반)를 시작한다\n- 근거·출처: Cuker A, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360-3392 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall — heparin-induced thrombocytopenia · Warkentin TE. Heparin-induced thrombocytopenia: pathogenesis and management. Br J Haematol 2003;121:535-555",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "헤파린 시작 6일째에 혈소판이 260,000 에서 98,000/mm³ 로 60 % 넘게 줄었고 새 심부정맥혈전증이 생겼다. 다른 원인이 없으므로 헤파린 유발 혈소판감소증(HIT, 4T 점수 높음)을 의심한다. 헤파린을 모두 끊고, 혈소판 수와 상관없이 비헤파린 항응고제(아르가트로반 정맥 투여, 또는 폰다파리눅스·직접 경구 항응고제)를 바로 시작하면서 PF4/헤파린 항체 검사를 보낸다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 혈소판이 줄면서 혈전이 생기는가</b>: 헤파린은 혈소판 α-과립에서 나온 PF4 와 결합해 새 항원을 만들고, 5~10일 뒤 이 복합체에 대한 IgG 가 생긴다. IgG–PF4–헤파린 면역복합체가 혈소판 FcγRIIa 수용체를 묶어 혈소판을 활성화하므로 혈소판은 소모되어 줄고, 활성화된 혈소판이 내놓는 미세입자와 트롬빈 생성 때문에 정맥·동맥 혈전이 생긴다 — 출혈이 아니라 혈전이 문제인 혈소판감소증이다.<br> <b>왜 항응고를 멈추면 안 되는가</b>: 헤파린만 끊으면 이미 활성화된 응고가 계속되어 혈전 위험이 30~50 % 에 이른다. 그래서 혈전이 없어도 치료 용량의 비헤파린 항응고제를 쓴다. 아르가트로반은 간에서 대사되는 직접 트롬빈 억제제라 신기능과 상관없이 쓸 수 있다.<br> <b>와파린을 서두르면 안 되는 이유</b>: 와파린은 반감기가 짧은 단백 C 를 먼저 떨어뜨려 일시적 과응고를 만들고, HIT 에서는 사지 괴사(정맥성 괴저)를 일으킨다. 혈소판이 150,000/mm³ 이상 회복된 뒤 겹쳐서 시작한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">아르가트로반(정답)</th><th>에녹사파린(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>약의 종류</td><td>직접 트롬빈 억제제 — 헤파린 구조 없음</td><td>저분자량 헤파린 — 헤파린 사슬</td></tr> <tr><td>HIT 항체와 교차반응</td><td><b>없다</b></td><td><b>있다</b>(대부분 PF4 복합체 형성) — 금기</td></tr> <tr><td>배설</td><td>간 대사 — 신부전에도 사용</td><td>신장 배설</td></tr> </tbody></table> 저분자량 헤파린도 PF4 와 결합하므로 HIT 에서는 쓸 수 없다. 「헤파린을 끊는다」는 저분자량 헤파린과 헤파린 세척액까지 모두 끊는다는 뜻이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 하대정맥 필터는 항응고를 할 수 없는 급성 근위 심부정맥혈전증(활동성 출혈)일 때 쓰며, HIT 에서는 항응고를 대신하지 못하고 오히려 혈전을 늘린다.\n③ 에녹사파린은 심부정맥혈전증 치료의 표준 약이지만 HIT 항체와 교차반응하므로, 혈소판 감소가 헤파린과 무관한 원인(희석·패혈증)일 때만 정답이 된다.\n④ 와파린은 장기 항응고에 쓰지만 HIT 급성기에 단독으로 시작하면 단백 C 가 먼저 떨어져 정맥성 괴저가 생기므로, 혈소판이 150,000 이상 회복된 뒤 겹쳐 시작한다.\n⑤ 혈소판 수혈은 HIT 에서 혈전을 악화시킬 수 있어 피하며, 활동성 대량 출혈이나 고위험 시술 직전처럼 출혈이 문제일 때만 고려한다."
+   },
+   {
+    "k": "함정",
+    "v": "혈소판이 줄었으니 항응고를 멈추거나 혈소판을 수혈하는 것 — HIT 는 혈전성 질환이므로 비헤파린 항응고제를 바로 시작한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "헤파린 시작 5~10일 뒤 혈소판이 50 % 이상 줄고 혈전이 생기면 헤파린 유발 혈소판감소증을 의심해 헤파린을 끊고 비헤파린 항응고제(아르가트로반)를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cuker A, et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360-3392 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 115 Disorders of platelets and vessel wall — heparin-induced thrombocytopenia · Warkentin TE. Heparin-induced thrombocytopenia: pathogenesis and management. Br J Haematol 2003;121:535-555"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "헤파린 6일째 혈소판이 50 % 넘게 줄고 새 혈전이 생겼으므로 HIT 이며, 헤파린을 끊고 교차반응이 없는 아르가트로반으로 항응고한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "저분자량 헤파린도 PF4 와 결합해 HIT 항체와 교차반응한다",
+   "steps": 2,
+   "chain": [
+    "헤파린 6일째 혈소판 260,000 → 98,000 + 새 오금정맥 혈전 → 헤파린 유발 혈소판감소증",
+    "HIT 는 혈전성 → 헤파린 계열(저분자량 포함)을 빼고 비헤파린 항응고제(아르가트로반)"
+   ],
+   "key": [
+    {
+     "item": "수술 다음 날부터 미분획 헤파린",
+     "why": "5~10일 전 헤파린 노출 — 시기가 맞는다",
+     "also": []
+    },
+    {
+     "item": "수술 전 혈소판 수는 260,000/mm³ 였고 오늘은 98,000/mm³",
+     "why": "50 % 이상 감소",
+     "also": []
+    },
+    {
+     "item": "왼쪽 오금정맥에 혈전",
+     "why": "혈전 동반 — HIT 의 특징",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "체온 36.9 °C",
+     "why": "패혈증으로 인한 혈소판 소모 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "프로트롬빈시간 INR 1.0",
+     "why": "파종성 혈관내응고 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "혈청 크레아티닌 0.8 mg/dL",
+     "why": "신기능이 정상이라 폰다파리눅스·직접 경구 항응고제도 가능하다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "헤파린 6일째 혈소판이 60 % 넘게 줄고 새 심부정맥혈전증이 생겨 HIT 를 의심한다. 헤파린을 모두 끊고 교차반응이 없는 아르가트로반으로 항응고하며, 저분자량 헤파린은 같은 항체와 반응해 쓸 수 없다.",
+   "switch": {
+    "choice": "C",
+    "condition": "혈소판 감소가 수술 직후 1~2일 안에 30 % 정도였고 이후 회복 중이었다면(수술 후 희석·소모) 에녹사파린 치료가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0325",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·소아·영상판독·부인과·신경·혈액종양·신장비뇨·내분비·약리·근골격)",
+  "subtopic": "신경 — 설사 2주 뒤 올라오는 양쪽 다리 힘 빠짐",
+  "type": "신경 — 설사 2주 뒤 올라오는 양쪽 다리 힘 빠짐",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-13",
+  "vignette": "A 34-year-old man comes to the emergency department because of weakness of both legs that began 4 days ago and has progressed so that he now has difficulty climbing stairs. He also has tingling in his feet and hands. Two weeks ago, he had a 3-day episode of watery diarrhea that resolved without treatment. Temperature is 37.0°C, blood pressure is 128/78 mm Hg, pulse is 84/min, and respirations are 16/min. Muscle strength is 3/5 in the hip flexors and 4/5 in the ankle dorsiflexors bilaterally; strength in the upper extremities is 5/5. Deep tendon reflexes are absent in the lower extremities and decreased in the upper extremities. Sensation to vibration is mildly decreased in the toes. Forced vital capacity is 3.6 L (80% of predicted). Cerebrospinal fluid analysis shows a leukocyte count of 2/mm3 and a protein concentration of 110 mg/dL.",
+  "question": "Which of the following is the most appropriate treatment?",
+  "options": [
+   "Intravenous acyclovir",
+   "Oral prednisone",
+   "Intravenous immune globulin",
+   "Intravenous methylprednisolone",
+   "Oral pyridostigmine"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: Rapidly progressive, symmetric, ascending weakness with areflexia and distal paresthesias 2 weeks after diarrhea (Campylobacter jejuni) is Guillain-Barré syndrome. CSF shows albuminocytologic dissociation (high protein, normal cell count). He cannot climb stairs, so disease-modifying treatment is indicated: intravenous immune globulin (or plasma exchange), both of which speed recovery; corticosteroids are ineffective.\n- 원리: <b>Why the nerve fails</b>: in Guillain-Barré syndrome, antibodies raised against an infection (classically Campylobacter jejuni lipooligosaccharide) cross-react with gangliosides on peripheral nerve myelin or axolemma — molecular mimicry. Complement is activated, macrophages strip myelin at the nodes of Ranvier, and conduction slows or blocks. The longest fibers are affected first, so weakness ascends from the legs, and loss of afferent conduction abolishes reflexes early.<br> <b>Why protein rises without cells</b>: inflammation of the spinal nerve roots increases permeability of the blood–nerve barrier, letting protein into the CSF, whereas the process is not a meningeal infection, so cells stay normal. Protein may be normal in the first week, so a normal early CSF does not exclude the disease.<br> <b>Why IVIG or plasma exchange, not steroids</b>: plasma exchange removes the pathogenic antibodies and complement; IVIG neutralizes antibodies, blocks Fc receptors, and inhibits complement. Randomized trials showed both shorten time to walking when started within 2 weeks, while corticosteroids alone did not help. Combining them adds no benefit. Monitoring of forced vital capacity and autonomic function is essential because respiratory failure and arrhythmias are the main causes of death.\n- 비교: <table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Guillain-Barré → IVIG (correct)</th><th>CIDP → corticosteroids (closest distractor)</th></tr></thead><tbody> <tr><td>Time to nadir</td><td><b>Less than 4 weeks</b> (here 4 days)</td><td><b>More than 8 weeks</b>, progressive or relapsing</td></tr> <tr><td>Antecedent infection</td><td>Common (diarrhea, respiratory)</td><td>Uncommon</td></tr> <tr><td>CSF</td><td>High protein, normal cells</td><td>High protein, normal cells</td></tr> <tr><td>Steroids</td><td><b>Ineffective</b></td><td><b>Effective</b> (with IVIG or plasma exchange)</td></tr> </tbody></table> The CSF looks the same; the time course decides — acute (< 4 weeks) means IVIG or plasma exchange, chronic (> 8 weeks) allows steroids.\n- 오답 이유:\n  - (A) Acyclovir is the treatment for herpes simplex encephalitis or VZV infection, which would be correct with fever, altered mental status, and CSF lymphocytic pleocytosis.\n  - (B) Oral prednisone is effective for chronic inflammatory demyelinating polyneuropathy, which would be correct if weakness had progressed over more than 8 weeks or relapsed.\n  - (D) Intravenous methylprednisolone is used for acute exacerbations of multiple sclerosis or for CIDP, but in acute Guillain-Barré syndrome trials showed no benefit from corticosteroids.\n  - (E) Pyridostigmine improves neuromuscular transmission in myasthenia gravis, which would be correct with fatigable ptosis, diplopia, and preserved reflexes rather than areflexia and sensory symptoms.\n- 함정: Choosing corticosteroids for an inflammatory neuropathy — steroids help CIDP but not acute Guillain-Barré syndrome, where IVIG or plasma exchange is the therapy.\n- 학습목표: 설사 뒤 상행성 대칭 근력 약화·반사 소실·뇌척수액 단백-세포 해리로 길랭-바레 증후군을 진단하고, 치료는 정맥 면역글로불린 또는 혈장교환이며 스테로이드는 효과가 없음을 안다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed. Ch. 447 Guillain-Barré syndrome and other immune-mediated neuropathies · Hughes RA, et al. Immunotherapy for Guillain-Barré syndrome: a systematic review. Brain 2007;130:2245-2257 · Willison HJ, Jacobs BC, van Doorn PA. Guillain-Barré syndrome. Lancet 2016;388:717-727",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Rapidly progressive, symmetric, ascending weakness with areflexia and distal paresthesias 2 weeks after diarrhea (Campylobacter jejuni) is Guillain-Barré syndrome. CSF shows albuminocytologic dissociation (high protein, normal cell count). He cannot climb stairs, so disease-modifying treatment is indicated: intravenous immune globulin (or plasma exchange), both of which speed recovery; corticosteroids are ineffective."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the nerve fails</b>: in Guillain-Barré syndrome, antibodies raised against an infection (classically Campylobacter jejuni lipooligosaccharide) cross-react with gangliosides on peripheral nerve myelin or axolemma — molecular mimicry. Complement is activated, macrophages strip myelin at the nodes of Ranvier, and conduction slows or blocks. The longest fibers are affected first, so weakness ascends from the legs, and loss of afferent conduction abolishes reflexes early.<br> <b>Why protein rises without cells</b>: inflammation of the spinal nerve roots increases permeability of the blood–nerve barrier, letting protein into the CSF, whereas the process is not a meningeal infection, so cells stay normal. Protein may be normal in the first week, so a normal early CSF does not exclude the disease.<br> <b>Why IVIG or plasma exchange, not steroids</b>: plasma exchange removes the pathogenic antibodies and complement; IVIG neutralizes antibodies, blocks Fc receptors, and inhibits complement. Randomized trials showed both shorten time to walking when started within 2 weeks, while corticosteroids alone did not help. Combining them adds no benefit. Monitoring of forced vital capacity and autonomic function is essential because respiratory failure and arrhythmias are the main causes of death."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:24%\">Feature</th><th style=\"width:38%\">Guillain-Barré → IVIG (correct)</th><th>CIDP → corticosteroids (closest distractor)</th></tr></thead><tbody> <tr><td>Time to nadir</td><td><b>Less than 4 weeks</b> (here 4 days)</td><td><b>More than 8 weeks</b>, progressive or relapsing</td></tr> <tr><td>Antecedent infection</td><td>Common (diarrhea, respiratory)</td><td>Uncommon</td></tr> <tr><td>CSF</td><td>High protein, normal cells</td><td>High protein, normal cells</td></tr> <tr><td>Steroids</td><td><b>Ineffective</b></td><td><b>Effective</b> (with IVIG or plasma exchange)</td></tr> </tbody></table> The CSF looks the same; the time course decides — acute (< 4 weeks) means IVIG or plasma exchange, chronic (> 8 weeks) allows steroids."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Acyclovir is the treatment for herpes simplex encephalitis or VZV infection, which would be correct with fever, altered mental status, and CSF lymphocytic pleocytosis.\n(B) Oral prednisone is effective for chronic inflammatory demyelinating polyneuropathy, which would be correct if weakness had progressed over more than 8 weeks or relapsed.\n(D) Intravenous methylprednisolone is used for acute exacerbations of multiple sclerosis or for CIDP, but in acute Guillain-Barré syndrome trials showed no benefit from corticosteroids.\n(E) Pyridostigmine improves neuromuscular transmission in myasthenia gravis, which would be correct with fatigable ptosis, diplopia, and preserved reflexes rather than areflexia and sensory symptoms."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing corticosteroids for an inflammatory neuropathy — steroids help CIDP but not acute Guillain-Barré syndrome, where IVIG or plasma exchange is the therapy."
+   },
+   {
+    "k": "학습목표",
+    "v": "설사 뒤 상행성 대칭 근력 약화·반사 소실·뇌척수액 단백-세포 해리로 길랭-바레 증후군을 진단하고, 치료는 정맥 면역글로불린 또는 혈장교환이며 스테로이드는 효과가 없음을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed. Ch. 447 Guillain-Barré syndrome and other immune-mediated neuropathies · Hughes RA, et al. Immunotherapy for Guillain-Barré syndrome: a systematic review. Brain 2007;130:2245-2257 · Willison HJ, Jacobs BC, van Doorn PA. Guillain-Barré syndrome. Lancet 2016;388:717-727"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "설사 2주 뒤 상행성 대칭 근력 약화·반사 소실·단백-세포 해리로 길랭-바레 증후군이고, 걷기가 어려우므로 정맥 면역글로불린으로 치료한다",
+   "rival": [
+    "D",
+    "B"
+   ],
+   "discriminator": "4일 만에 진행한 급성 경과 — 스테로이드가 듣는 만성(8주 이상) CIDP 가 아니다",
+   "steps": 2,
+   "chain": [
+    "설사 2주 뒤 4일 동안 상행성 대칭 약화 + 반사 소실 + 뇌척수액 단백 110·세포 2 → 길랭-바레 증후군",
+    "계단을 못 오를 정도의 약화 → 정맥 면역글로불린(또는 혈장교환), 스테로이드는 효과 없음"
+   ],
+   "key": [
+    {
+     "item": "Two weeks ago, he had a 3-day episode of watery diarrhea",
+     "why": "선행 감염(캠필로박터) — 분자 모방",
+     "also": []
+    },
+    {
+     "item": "Deep tendon reflexes are absent in the lower extremities",
+     "why": "말초 탈수초의 이른 소견",
+     "also": []
+    },
+    {
+     "item": "a leukocyte count of 2/mm3 and a protein concentration of 110 mg/dL",
+     "why": "단백-세포 해리",
+     "also": []
+    },
+    {
+     "item": "began 4 days ago",
+     "why": "급성 경과 — CIDP 와 가른다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Temperature is 37.0°C",
+     "why": "중추신경 감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "Forced vital capacity is 3.6 L (80% of predicted)",
+     "why": "아직 기관삽관 기준이 아니지만 반복 측정해야 한다",
+     "also": []
+    }
+   ],
+   "background": [],
+   "summary": "설사 2주 뒤 4일 동안 진행한 상행성 대칭 약화·반사 소실과 단백-세포 해리는 길랭-바레 증후군이다. 걷기 어려운 환자는 정맥 면역글로불린이나 혈장교환으로 치료하고, 스테로이드는 만성 경과인 CIDP 에서만 듣는다.",
+   "switch": {
+    "choice": "B",
+    "condition": "같은 소견이 8주 넘게 서서히 진행하거나 재발했다면(CIDP) 경구 프레드니손이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261013T202627Z_일일영상_2026-10-14_10units_10q_e402d0db",
+  "qid": "Q0005"
  },
  {
   "id": "imaging-2026-0320",
