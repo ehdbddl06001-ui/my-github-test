@@ -1,25 +1,25 @@
 {
- "started": "2026-10-12T09:43:38+09:00",
+ "started": "2026-10-13T11:41:40+09:00",
  "built": [
+  "순환기내과",
   "정신건강의학과",
   "류마티스내과",
-  "기초의학"
+  "호흡기내과",
+  "감염내과"
  ],
  "skipped": [
   "응급의학과",
   "정형외과",
   "피부과",
-  "순환기내과",
   "내분비내과",
   "안과",
   "외과",
   "산부인과",
   "소아청소년과",
   "혈액종양내과",
-  "호흡기내과",
-  "감염내과",
   "소화기내과",
   "알레르기내과",
+  "기초의학",
   "신장내과",
   "신경과",
   "비뇨의학과"
@@ -28,16 +28,22 @@
  "retry": [],
  "previews": [],
  "validation": {
+  "순환기내과": [],
   "정신건강의학과": [],
   "류마티스내과": [],
-  "기초의학": []
+  "호흡기내과": [],
+  "감염내과": []
  },
  "notes": {
+  "순환기내과": [
+   "배치 탐색 뒤에도 남은 빈 공간: 2쪽 오른쪽 단 아래가 비어 있다(빈 공간 32%)"
+  ],
   "정신건강의학과": [
    "배치 탐색 뒤에도 남은 빈 공간: 3쪽 두 단 도식 위 좁은 띠(5%) — 좌우로 오가며 읽힌다"
   ],
   "류마티스내과": [],
-  "기초의학": []
+  "호흡기내과": [],
+  "감염내과": []
  },
  "concept_errors": [
   "content/concepts/cardiology/cn.cardio.incomplete-rbbb.preop-proceed-surgery.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)",
@@ -50,6 +56,31 @@
   "content/concepts/rheumatology/cn.rheum.dermatomyositis.malignancy-screening.md: [WARN] sources[2] 는 DOI 만 있다 — PubMed 에 있으면 pmid 를 붙인다(개정·철회 추적은 PMID 로 한다. 컨테이너가 PubMed 를 막으면 그대로 둔다 — 학습서 워크플로가 DOI 로 PMID 를 찾아 본다)"
  ],
  "layout_trials": {
+  "순환기내과": {
+   "tried": 198,
+   "diagram_after_section": {
+    "u-cn-cardio-syncope-high-risk-admit": 13,
+    "u-cn-cardio-syncope-high-risk-admit#shrink": 1.0,
+    "u-cn-cardio-syncope-high-risk-admit#pad": 14,
+    "u-cn-cardio-syncope-high-risk-admit#col": false,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity": 21,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#shrink": 0.88,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#pad": 0,
+    "u-cn-cardio-qrs-axis-limb-lead-polarity#col": false,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first": 15,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#shrink": 1.0,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#pad": 14,
+    "u-cn-cardio-atrial-flutter-stable-rate-control-first#col": false,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug": 18,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#shrink": 1.0,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#pad": 14,
+    "u-cn-cardio-long-qt-syndrome-first-line-drug#col": false,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management": 14,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#shrink": 1.0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#pad": 0,
+    "u-cn-pulm-pulmonary-embolism-intermediate-high-risk-management#col": false
+   }
+  },
   "정신건강의학과": {
    "tried": 89,
    "diagram_after_section": {
@@ -57,14 +88,14 @@
     "u-cn-psy-ocd-ssri-trial-optimization#shrink": 1.0,
     "u-cn-psy-ocd-ssri-trial-optimization#pad": 14,
     "u-cn-psy-ocd-ssri-trial-optimization#col": false,
-    "u-cn-psy-smoking-cessation-varenicline-seizure": 20,
-    "u-cn-psy-smoking-cessation-varenicline-seizure#shrink": 1.0,
-    "u-cn-psy-smoking-cessation-varenicline-seizure#pad": 0,
-    "u-cn-psy-smoking-cessation-varenicline-seizure#col": true
+    "u-cn-psy-ptsd-duration-vs-acute-stress": 18,
+    "u-cn-psy-ptsd-duration-vs-acute-stress#shrink": 1.0,
+    "u-cn-psy-ptsd-duration-vs-acute-stress#pad": 0,
+    "u-cn-psy-ptsd-duration-vs-acute-stress#col": true
    }
   },
   "류마티스내과": {
-   "tried": 292,
+   "tried": 312,
    "diagram_after_section": {
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism": 19,
     "u-cn-rheum-autoimmunity-autoantibody-injury-mechanism#shrink": 1.0,
@@ -79,6 +110,10 @@
     "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#pad": 0,
     "u-cn-rheum-rheumatoid-arthritis-methotrexate-anchor#col": false,
     "u-cn-path-scleroderma-renal-crisis-hyperplastic-arteriolosclerosis#figscale:f1": 0.75,
+    "u-cn-rheum-sjogren-sicca-workup": 13,
+    "u-cn-rheum-sjogren-sicca-workup#shrink": 1.0,
+    "u-cn-rheum-sjogren-sicca-workup#pad": 42,
+    "u-cn-rheum-sjogren-sicca-workup#col": false,
     "u-cn-rheum-axial-spa-nsaid-failure-biologic#figscale:f1": 0.85,
     "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy": 18,
     "u-cn-rheum-giant-cell-arteritis-steroids-before-biopsy#shrink": 1.0,
@@ -98,53 +133,86 @@
     "u-cn-rheum-hemochromatosis-arthropathy-iron-studies#col": false
    }
   },
-  "기초의학": {
-   "tried": 10,
+  "호흡기내과": {
+   "tried": 3,
    "diagram_after_section": {
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia": 9,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#shrink": 1.0,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#pad": 0,
-    "u-cn-biochem-mcad-deficiency-hypoketotic-hypoglycemia#col": false
+    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures": 16,
+    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#shrink": 1.0,
+    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#pad": 14,
+    "u-cn-pulm-chest-ct-anatomy-diaphragm-level-structures#col": false
+   }
+  },
+  "감염내과": {
+   "tried": 57,
+   "diagram_after_section": {
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care": 17,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#shrink": 1.0,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#pad": 14,
+    "u-cn-pulm-community-acquired-pneumonia-curb65-site-of-care#col": false,
+    "u-cn-derm-ssss-antistaphylococcal-therapy": 4,
+    "u-cn-derm-ssss-antistaphylococcal-therapy#shrink": 1.0,
+    "u-cn-derm-ssss-antistaphylococcal-therapy#pad": 0,
+    "u-cn-derm-ssss-antistaphylococcal-therapy#col": false,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis": 21,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#shrink": 1.0,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#pad": 0,
+    "u-cn-id-legionella-pneumonia-urinary-antigen-diagnosis#col": false
    }
   }
  },
  "result": "ok",
- "finished": "2026-10-12T10:09:23+09:00",
+ "finished": "2026-10-13T12:08:38+09:00",
  "upload": {
   "result": "ok",
   "items": {
+   "순환기내과": {
+    "file": "MedKOS_학습서_순환기내과.pdf",
+    "status": "uploaded",
+    "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
+    "kept_id": true,
+    "md5": "917757f273558bf416a6aba28dbb626b",
+    "archive": "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf"
+   },
    "정신건강의학과": {
     "file": "MedKOS_학습서_정신건강의학과.pdf",
     "status": "uploaded",
     "id": "1ZQToBsTHL2kPkoAh0qBCglJGTuVQnQ5o",
     "kept_id": true,
-    "md5": "2a12a3a0d90af5c0fac47c670edf2224",
-    "archive": "MedKOS_학습서_정신건강의학과_v7_2026-10-12.pdf"
+    "md5": "9e577452fde75039fe44bcc2970188d6",
+    "archive": "MedKOS_학습서_정신건강의학과_v8_2026-10-13.pdf"
    },
    "류마티스내과": {
     "file": "MedKOS_학습서_류마티스내과.pdf",
     "status": "uploaded",
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
     "kept_id": true,
-    "md5": "7f1b1b10de8fb49afc7fc85953be15d3",
-    "archive": "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf"
+    "md5": "55201295593875e0a34603e360e94e3a",
+    "archive": "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf"
    },
-   "기초의학": {
-    "file": "MedKOS_학습서_기초의학.pdf",
+   "호흡기내과": {
+    "file": "MedKOS_학습서_호흡기내과.pdf",
     "status": "uploaded",
-    "id": "1794tdNS1sPYC9DlfZq-FYa68q_CpBmkw",
+    "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
     "kept_id": true,
-    "md5": "5cd9a3a1771e0198a2cf045992900fcb",
-    "archive": "MedKOS_학습서_기초의학_v6_2026-10-12.pdf"
+    "md5": "17d2cec68fc15d3c9d779587a430f26a",
+    "archive": "MedKOS_학습서_호흡기내과_v12_2026-10-13.pdf"
+   },
+   "감염내과": {
+    "file": "MedKOS_학습서_감염내과.pdf",
+    "status": "uploaded",
+    "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
+    "kept_id": true,
+    "md5": "0ee7e17fa08420fb74f4cae53c0eb4aa",
+    "archive": "MedKOS_학습서_감염내과_v12_2026-10-13.pdf"
    },
    "__index__": {
     "file": "MedKOS_학습서_전체목차.pdf",
     "status": "uploaded",
     "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
     "kept_id": true,
-    "md5": "4ffb52100cdc4f619b6aa5250bdc94ec"
+    "md5": "f124d9bca1595384ec206604c54f9d56"
    }
   },
-  "at": "2026-10-12T10:09:23+09:00"
+  "at": "2026-10-13T12:08:38+09:00"
  }
 }

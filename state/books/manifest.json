@@ -1,9 +1,9 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "d5ff9ec4b8d73ad168f1",
-   "version": 13,
-   "date": "2026-10-03",
+   "hash": "7760bc2210f7e01ac1da",
+   "version": 14,
+   "date": "2026-10-13",
    "file": "MedKOS_학습서_순환기내과.pdf",
    "pages": 23,
    "template_version": 11,
@@ -57,17 +57,17 @@
      "concept_version": 3
     },
     "cn.pulm.pulmonary-arterial-hypertension.rhc-confirmation": {
-     "title": "폐동맥고혈압의 확진 — 심초음파는 선별, 확진과 분류는 우심도자술의 평균 폐동맥압·쐐기압·폐혈관저항",
+     "title": "폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별",
      "page": 22,
-     "concept_hash": "53ac21aab5a81883",
-     "concept_version": 1
+     "concept_hash": "9b72a39bd6fda6ef",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "f5a7a1dea36d0e34f86bb8b821a8be3d",
-    "version": 13,
-    "uploaded": "2026-10-03T10:04:44+09:00"
+    "md5": "917757f273558bf416a6aba28dbb626b",
+    "version": 14,
+    "uploaded": "2026-10-13T12:08:38+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -82,10 +82,11 @@
     "MedKOS_학습서_순환기내과_v10_2026-09-28.pdf",
     "MedKOS_학습서_순환기내과_v11_2026-09-29.pdf",
     "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf",
-    "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf"
+    "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf",
+    "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf"
    ],
    "changes": [
-    "내용 수정: 혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때"
+    "내용 갱신: 폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별 (정리본 v1 → v2)"
    ]
   },
   "피부과": {
@@ -544,9 +545,9 @@
    ]
   },
   "정신건강의학과": {
-   "hash": "4e16d7f9b598fd0d65a7",
-   "version": 7,
-   "date": "2026-10-12",
+   "hash": "4d5f6427dd4678b06a03",
+   "version": 8,
+   "date": "2026-10-13",
    "file": "MedKOS_학습서_정신건강의학과.pdf",
    "pages": 10,
    "template_version": 11,
@@ -570,17 +571,17 @@
      "concept_version": 2
     },
     "cn.psy.smoking-cessation.varenicline-seizure": {
-     "title": "금연 약물 선택 — 니코틴 대체요법에 실패한 고의존 흡연자, 뇌전증이 있으면 부프로피온을 지우고 바레니클린을 고른다",
+     "title": "금연 약물 — 경련 병력이면 부프로피온 대신 바레니클린",
      "page": 8,
-     "concept_hash": "fec6aab5cea58b2e",
-     "concept_version": 1
+     "concept_hash": "5c621a47c975afbd",
+     "concept_version": 2
     }
    },
    "drive": {
     "id": "1ZQToBsTHL2kPkoAh0qBCglJGTuVQnQ5o",
-    "md5": "2a12a3a0d90af5c0fac47c670edf2224",
-    "version": 7,
-    "uploaded": "2026-10-12T10:09:23+09:00"
+    "md5": "9e577452fde75039fe44bcc2970188d6",
+    "version": 8,
+    "uploaded": "2026-10-13T12:08:38+09:00"
    },
    "archive": [
     "MedKOS_학습서_정신건강의학과_v1_2026-09-23.pdf",
@@ -589,20 +590,19 @@
     "MedKOS_학습서_정신건강의학과_v4_2026-09-27.pdf",
     "MedKOS_학습서_정신건강의학과_v5_2026-09-27.pdf",
     "MedKOS_학습서_정신건강의학과_v6_2026-09-28.pdf",
-    "MedKOS_학습서_정신건강의학과_v7_2026-10-12.pdf"
+    "MedKOS_학습서_정신건강의학과_v7_2026-10-12.pdf",
+    "MedKOS_학습서_정신건강의학과_v8_2026-10-13.pdf"
    ],
    "changes": [
-    "내용 갱신: 강박장애 — SSRI 시작 용량 4주 무반응은 증량·유지가 먼저 (정리본 v2 → v3)",
-    "내용 갱신: 세로토닌증후군 — 초기 처치 불응이면 cyproheptadine(사이프로헵타딘) (정리본 v1 → v2)",
-    "내용 갱신: 외상후스트레스장애 — 같은 증상군을 「한 달」로 가른다 (정리본 v1 → v2)"
+    "내용 갱신: 금연 약물 — 경련 병력이면 부프로피온 대신 바레니클린 (정리본 v1 → v2)"
    ]
   },
   "류마티스내과": {
-   "hash": "fc6f0bbd82fc4ff1ccc7",
-   "version": 18,
-   "date": "2026-10-12",
+   "hash": "1bd57eb6e45c6822506e",
+   "version": 19,
+   "date": "2026-10-13",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 34,
+   "pages": 36,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -647,78 +647,84 @@
      "concept_hash": "bdf8d84e7df7178b",
      "concept_version": 1
     },
+    "cn.rheum.sjogren.sicca-workup": {
+     "title": "쇼그렌증후군 — 건조 증상은 항체·생검으로 가린다",
+     "page": 14,
+     "concept_hash": "bfcc1d0468d1fa47",
+     "concept_version": 1
+    },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
-     "page": 14,
+     "page": 16,
      "concept_hash": "f07740b9140fd90e",
      "concept_version": 2
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 16,
+     "page": 18,
      "concept_hash": "0a95671a7fc0c818",
      "concept_version": 3
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
      "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
-     "page": 19,
+     "page": 21,
      "concept_hash": "6e75ba4f5b92dec3",
      "concept_version": 2
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
      "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
-     "page": 21,
+     "page": 23,
      "concept_hash": "8ac8b42d909e5ed1",
      "concept_version": 1
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
      "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
-     "page": 23,
+     "page": 25,
      "concept_hash": "d7b76191c2ec0df1",
      "concept_version": 1
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 24,
+     "page": 26,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 26,
+     "page": 28,
      "concept_hash": "0ca1331142c86acb",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 27,
+     "page": 29,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 29,
+     "page": 31,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 31,
+     "page": 33,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 33,
+     "page": 35,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "7f1b1b10de8fb49afc7fc85953be15d3",
-    "version": 18,
-    "uploaded": "2026-10-12T10:09:23+09:00"
+    "md5": "55201295593875e0a34603e360e94e3a",
+    "version": 19,
+    "uploaded": "2026-10-13T12:08:38+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -738,16 +744,17 @@
     "MedKOS_학습서_류마티스내과_v15_2026-10-07.pdf",
     "MedKOS_학습서_류마티스내과_v16_2026-10-08.pdf",
     "MedKOS_학습서_류마티스내과_v17_2026-10-11.pdf",
-    "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf"
+    "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf",
+    "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf"
    ],
    "changes": [
-    "새 단원: 급성 류마티스열 — 존스 기준으로 진단한다"
+    "새 단원: 쇼그렌증후군 — 건조 증상은 항체·생검으로 가린다"
    ]
   },
   "호흡기내과": {
-   "hash": "58b7f57bc36c082c4e81",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "c55175cf5787f11cb312",
+   "version": 12,
+   "date": "2026-10-13",
    "file": "MedKOS_학습서_호흡기내과.pdf",
    "pages": 7,
    "template_version": 11,
@@ -759,10 +766,10 @@
      "concept_version": 2
     },
     "cn.pulm.copd-exacerbation.hypercapnic-failure-niv": {
-     "title": "COPD 급성 악화의 급성 고탄산 호흡부전 — 금기가 없으면 비침습적 양압환기가 먼저, 삽관은 금기·실패 때",
+     "title": "COPD 악화 고탄산 호흡부전 — 금기 없으면 NIPPV 먼저",
      "page": 4,
-     "concept_hash": "c7ff1c4d6eec9885",
-     "concept_version": 1
+     "concept_hash": "a821eb5cab2cbf9f",
+     "concept_version": 2
     },
     "cn.pulm.tuberculous-pleurisy.ada-diagnosis": {
      "title": "결핵성 흉막염 — 림프구 삼출액에 ADA가 높으면",
@@ -779,9 +786,9 @@
    },
    "drive": {
     "id": "1kfbGXSybqpdUuWUkM5tpLZdukpx0hXzV",
-    "md5": "4126fa6cb86f5e70e3612d0c6b153188",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "17d2cec68fc15d3c9d779587a430f26a",
+    "version": 12,
+    "uploaded": "2026-10-13T12:08:38+09:00"
    },
    "archive": [
     "MedKOS_학습서_호흡기내과_v1_2026-09-23.pdf",
@@ -794,9 +801,12 @@
     "MedKOS_학습서_호흡기내과_v8_2026-09-29.pdf",
     "MedKOS_학습서_호흡기내과_v9_2026-09-30.pdf",
     "MedKOS_학습서_호흡기내과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_호흡기내과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_호흡기내과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_호흡기내과_v12_2026-10-13.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: COPD 악화 고탄산 호흡부전 — 금기 없으면 NIPPV 먼저 (정리본 v1 → v2)"
+   ]
   },
   "응급의학과": {
    "hash": "11c06cd6cd725cf92b07",
@@ -1032,18 +1042,18 @@
    ]
   },
   "감염내과": {
-   "hash": "63185842d07cd8704525",
-   "version": 11,
-   "date": "2026-10-06",
+   "hash": "d3784e512116bf554ec8",
+   "version": 12,
+   "date": "2026-10-13",
    "file": "MedKOS_학습서_감염내과.pdf",
    "pages": 10,
    "template_version": 11,
    "units": {
     "cn.pulm.community-acquired-pneumonia.curb65-site-of-care": {
-     "title": "지역사회획득폐렴의 치료 장소 — CURB-65 다섯 항목을 모두 세고, 점수와 산소·복용·순응으로 외래·입원·중환자실을 가른다",
+     "title": "지역사회획득폐렴 — CURB-65 를 다 세어 치료 장소를 정한다",
      "page": 2,
-     "concept_hash": "265b2310d4446d34",
-     "concept_version": 1
+     "concept_hash": "dc4a42d9bf24ee8c",
+     "concept_version": 2
     },
     "cn.derm.ssss.antistaphylococcal-therapy": {
      "title": "포도알균 열상피부증후군 — 스테로이드 말고 균을 친다",
@@ -1072,9 +1082,9 @@
    },
    "drive": {
     "id": "17y_t3MJ8FEmptH1TKsbhSbqOS8o6o0II",
-    "md5": "b4705a4b0cf7e2a790981e7ab29fa135",
-    "version": 11,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "0ee7e17fa08420fb74f4cae53c0eb4aa",
+    "version": 12,
+    "uploaded": "2026-10-13T12:08:38+09:00"
    },
    "archive": [
     "MedKOS_학습서_감염내과_v1_2026-09-25.pdf",
@@ -1087,9 +1097,12 @@
     "MedKOS_학습서_감염내과_v8_2026-09-30.pdf",
     "MedKOS_학습서_감염내과_v9_2026-10-01.pdf",
     "MedKOS_학습서_감염내과_v10_2026-10-05.pdf",
-    "MedKOS_학습서_감염내과_v11_2026-10-06.pdf"
+    "MedKOS_학습서_감염내과_v11_2026-10-06.pdf",
+    "MedKOS_학습서_감염내과_v12_2026-10-13.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 지역사회획득폐렴 — CURB-65 를 다 세어 치료 장소를 정한다 (정리본 v1 → v2)"
+   ]
   },
   "소화기내과": {
    "hash": "c60e7fcdda763caa87f3",
@@ -1221,13 +1234,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "4ffb52100cdc4f619b6aa5250bdc94ec",
+   "md5": "f124d9bca1595384ec206604c54f9d56",
    "version": null,
-   "uploaded": "2026-10-12T10:09:23+09:00"
+   "uploaded": "2026-10-13T12:08:38+09:00"
   }
  },
- "updated": "2026-10-12"
+ "updated": "2026-10-13"
 }
