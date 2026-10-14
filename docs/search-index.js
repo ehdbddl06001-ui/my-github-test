@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3647,
+  "total": 3654,
   "byType": {
    "kmle": 1408,
    "concept": 101,
    "anatomy": 840,
    "usmle": 192,
-   "paper": 760,
+   "paper": 767,
    "imaging": 329,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 840,
-   "Cardiology": 253,
-   "Nephrology": 201,
-   "Infectious Disease": 184,
-   "Pediatrics": 168,
+   "Cardiology": 254,
+   "Nephrology": 202,
+   "Infectious Disease": 185,
+   "Pediatrics": 169,
    "Obstetrics & Gynecology": 123,
-   "Hematology-Oncology": 111,
-   "Pathology": 111,
+   "Hematology-Oncology": 112,
+   "Pathology": 112,
    "Psychiatry": 106,
    "Rheumatology": 106,
    "Neurology": 104,
@@ -33,9 +33,9 @@ window.MEDKOS_INDEX = {
    "Dermatology": 92,
    "Orthopedics": 92,
    "Gastroenterology": 91,
+   "Surgery": 91,
    "Ophthalmology": 90,
    "Pulmonology": 90,
-   "Surgery": 90,
    "Hematology": 85,
    "Laboratory Medicine": 77,
    "산부인과": 53,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2531,
-   "medium": 1066,
+   "medium": 1073,
    "low": 50
   },
   "tagCount": 4762
@@ -851,6 +851,125 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0200.md",
    "snippet": "A 31 year old man comes to the physician because of fever, joint pain and a rash for 2 days. He was diagnosed with severe aplastic anemia 3 weeks ago. Ten days ago he began treatment with equine antithymocyte globulin, given intravenously o",
    "text": "Immunology Fever, Joint Pain and a Rash Along the Edges of the Hands and Feet Ten Days After Starting Treatment for Aplastic Anemia serum-sickness type-iii-hypersensitivity immune-complex antithymocyte-globulin hypocomplementemia aplastic-anemia USMLE-style / MedKOS (Robbins & Cotran Pathologic Basis of Disease 10e — Immune complex-mediated (type III) hypersensitivity; Harrison's Principles of Internal Medicine 21e — Aplastic anemia: antithymocyte globulin) A 31 year old man comes to the physician because of fever, joint pain and a rash for 2 days. He was diagnosed with severe aplastic anemia 3 weeks ago. Ten days ago he began treatment with equine antithymocyte globulin, given intravenously once daily for 4 days, together with oral cyclosporine. During the first infusion he had chills and a fever that resolved within 3 hours; the remaining infusions were uneventful. He now has aching in his knees, wrists and fingers and a mildly itchy rash on his hands and feet. He has had no wheezing, lip swelling or lightheadedness. He takes no other medications. Examination shows erythematous, partly purpuric macules and wheals in a band along the sides of both hands and feet where the palmar and plantar skin meets the dorsal skin. Both wrists and knees are tender with small effusions. There are tender, mobile 1 cm lymph nodes in both axillae. The lungs are clear to auscultation. His vital signs are shown. Laboratory results are shown. Which of the following is the most likely mechanism of this patient's current condition? A. Antigen specific IgE cross linked on mast cells, triggering rapid degranulation B. Drug specific CD8+ T cells killing keratinocytes and synovial lining cells C. Antigen–antibody complexes deposited in vessel walls, activating complement D. Cytokine release from lymphocytes lysed by the infused antibody preparation E. IgG bound to equine protein adsorbed onto platelets, causing their clearance 말에서 얻은 이종 단백(equine antithymocyte globulin)을 맞은 지 10일째에 발열·다발 관절통·손발 가장자리 띠 모양 두드러기/자반성 발진·림프절 비대·단백뇨가 생겼다 — 혈청병(serum sickness)이다. 숙주가 이종 단백에 대한 IgG 를 만드는 데 1–2주가 걸리고, 아직 혈중에 남은 항원이 많을 때(항원 과잉) 생긴 작은 면역 복합체가 혈관벽·관절막·사구체에 쌓여 보체를 활성화한다(제3형 과민반응). C3·C4 저하는 보체가 고전 경로로 소모되고 있다는 근거다. 첫 주입 때의 오한·발열은 T 세포 용해에 따른 사이토카인 방출로 그날 끝났고, 지금의 증상과는 시점·양상이 다르다."
+  },
+  {
+   "id": "paper-2026-0767",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0767_outcomes_of_the_surgical_management_of_clinodactyly_a_system.md",
+   "snippet": "Title Outcomes of the Surgical Management of Clinodactyly: A Systematic Review Authors Devetzis Konstantinos, Beni Rebecca, McGhee James, Hei To Emily Yeg, Lam Wee Leon, Horwitz Maxim D Journal / DOI The Journal of hand surgery · DOI: 10.10",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Outcomes of the Surgical Management of Clinodactyly: A Systematic Review Authors Devetzis Konstantinos, Beni Rebecca, McGhee James, Hei To Emily Yeg, Lam Wee Leon, Horwitz Maxim D Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.08.014 · PMID: 42867435 https://pubmed.ncbi.nlm.nih.gov/42867435/ Abstract PURPOSE: This systematic review evaluated outcomes of surgical management for congenital clinodactyly, focusing on physiolysis and osteotomy. METHODS: A systematic review was conducted in accordance with Preferred Reporting Items for Systematic Reviews and Meta Analyses 2020 guidelines, registered on the International Prospective register of Systematic Reviews (PROSPERO). MEDLINE and EMBASE were searched for studies reporting operative management of congenital clinodactyly published up to December 2025. Data extraction and bias assessment (Newcastle Ottawa Scale) were performed independently by two reviewers. Outcomes were analyzed descriptively. RESULTS: Of 818 studies screened, 8 were included, comprising 119 patients (165 digits). Physiolysis was performed in 76% of cases and osteotomy in 24%. The mean age of the physiolysis group was 6.1 years (0.6 12.3) and 7.2 years (0.6 16.4) for the osteotomy group. Mean preoperative angulation was 41°, improving to 21° after surgery. All techniques demonstrated angular improvement; however, no clear criteria exist for guiding the choice of procedure alongside disparity in the threshold for surgical intervention, with some studies quoting 20° to 25° as an indication. The overall complication rate was 7.3%, and reoperation was required in 9% of cases; reoperations were most frequently following physiolysis. Outcome reporting was inconsistent, with variable definitions of success and limited distinction between clinical and radiological measures. There were no studies using validated patient reported outcome measures; limited qualitative feedback suggested generally high levels of patient or parental satisfaction despite residual deformity. CONCLUSIONS: Both techniques achieve reduction in angulation; however, standardized indications and robust outcome measures are needed to guide practice. Outcome reporting was heterogeneous, and most notably, there is a complete absence of validated patient reported outcome measures across all included studies, despite generally high reported satisfaction, representing a major gap in patient centered outcome assessment. TYPE OF STUDY/LEVEL OF EVIDENCE: Therapeutic IIIa. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0766",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of cardiac anaesthesia",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0766_comparison_of_effectiveness_of_caudal_dexmedetomidine_vs_cau.md",
+   "snippet": "Title Comparison of Effectiveness of Caudal Dexmedetomidine vs. Caudal Fentanyl with Bupivacaine during Pediatric Cardiac Surgery with regards to Hemodynamic Fluctuations and Postoperative Pain Authors Manwani Roshani Nitin, Wadaskar Dhawal",
+   "text": "Pediatrics scraped pubmed PubMed / Annals of cardiac anaesthesia Title Comparison of Effectiveness of Caudal Dexmedetomidine vs. Caudal Fentanyl with Bupivacaine during Pediatric Cardiac Surgery with regards to Hemodynamic Fluctuations and Postoperative Pain Authors Manwani Roshani Nitin, Wadaskar Dhawal, Panbude Prasad, Mankhair Shrilekh, Kanakam Shilpa Journal / DOI Annals of cardiac anaesthesia · DOI: 10.4103/aca.aca 42 25 · PMID: 42862676 https://pubmed.ncbi.nlm.nih.gov/42862676/ Abstract BACKGROUND: Optimum analgesia, reflecting into attenuation of stress response, is pertinent in pediatric cardiac surgery. Narcotics are still the mainstay in providing analgesia, and they are a common adjunct in caudal epidural analgesia. Unwanted effects of narcotics warrant a constant search for nonopioid analgesics. OBJECTIVE: To compare dexmedetomidine vs. fentanyl as an adjuvant in caudal anesthesia in pediatric cardiac surgery. MATERIALS AND METHODS: Sixty patients, 1 to 8 years of age, with acyanotic congenital heart disease were divided into two groups randomly: group A received caudal dexmedetomidine 0.5 µg/kg with 2 mg/kg bupivacaine diluted to 1.6 ml/kg with normal saline. Group B received caudal fentanyl 1 µg/kg with 2 mg/kg bupivacaine diluted to 1.6 ml/kg with normal saline. RESULTS: Stress response assessed by surge in heart rate and blood pressure after induction was significantly lower in group A (Dexmedetomidine group). The mean time to successful discontinuation of mechanical ventilation was significantly lower in the dexmedetomidine group (1.2 ± 0.4 vs. 1.73 ± 0.58 h). Children in the dexmedetomidine group had lower FLACC pain scores at 4 hours postextubation (2.93 ± 1.04 vs. 3.83 ± 0.83), implying better pain control. The time to need for rescue analgesia was longer in the dexmedetomidine group (6.1 ± 1.21 vs. 3.96 ± 0.96 h). CONCLUSION: Caudal dexmedetomidine gave better control of hemodynamic parameters when compared with fentanyl and was associated with earlier extubation postoperatively. It also has superior and prolonged analgesia compared to caudal fentanyl as an adjunct. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0765",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0765_flow_cytometry_in_the_diagnosis_and_monitoring_of_lymphoma_b.md",
+   "snippet": "Title Flow cytometry in the diagnosis and monitoring of lymphoma based on urine samples: a case report Authors Wang Shuaiyan, Luo Yanping, Mo Hongmei Journal / DOI Laboratory medicine · DOI: 10.1093/labmed/lmag077 · PMID: 42867405 https://p",
+   "text": "Pathology scraped pubmed PubMed / Laboratory medicine Title Flow cytometry in the diagnosis and monitoring of lymphoma based on urine samples: a case report Authors Wang Shuaiyan, Luo Yanping, Mo Hongmei Journal / DOI Laboratory medicine · DOI: 10.1093/labmed/lmag077 · PMID: 42867405 https://pubmed.ncbi.nlm.nih.gov/42867405/ Abstract INTRODUCTION: Diffuse large B cell lymphoma rarely presents primarily with urinary symptoms, making noninvasive diagnosis challenging. We report a case in which urine flow cytometry substantially aided diagnosis and monitoring. METHODS: A 67 year old man presenting with gross hematuria and painful urination underwent cystoscopy with biopsy and urine flow cytometry. B cell immunophenotyping was performed using a targeted CD marker panel, and residual disease was tracked longitudinally after chemotherapy. RESULTS: Histopathology suggested aggressive B cell lymphoma. Urine flow cytometry identified an abnormal mature B cell population (20.36% of nucleated cells) expressing CD45, CD19, CD20, CD10, FMC7, and λ, confirming a CD5 negative/CD10 positive phenotype. Following treatment with rituximab, cyclophosphamide, doxorubicin, vincristine, and prednisone, the percentage of abnormal urinary B cells declined to 0.41% at 2 weeks, 0.18% at 1 month, and 0% at 3 months, coinciding with partial clinical remission. DISCUSSION: Urine flow cytometry is a highly accessible, noninvasive, and effective tool. It provides critical diagnostic value and quantitative monitoring utility for hematologic malignancies involving the urinary tract and should complement not replace histopathology and urine cytology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0764",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of immunology (Baltimore, Md. : 1950)",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0764_crispr_cas9_screen_identifies_eif4g2_as_a_regulator_of_cd8_t.md",
+   "snippet": "Title CRISPR Cas9 screen identifies eIF4G2 as a regulator of CD8+ T cell dysfunction Authors Holcomb Erin A, Jiang Long, Pearson Ashley N, James Jadyn, Tate Akshay, Wang Zhuwen, Dasgupta Anwesha, Clauwaert Jim, et al. Journal / DOI Journal ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of immunology (Baltimore, Md. : 1950) Title CRISPR Cas9 screen identifies eIF4G2 as a regulator of CD8+ T cell dysfunction Authors Holcomb Erin A, Jiang Long, Pearson Ashley N, James Jadyn, Tate Akshay, Wang Zhuwen, Dasgupta Anwesha, Clauwaert Jim, et al. Journal / DOI Journal of immunology (Baltimore, Md. : 1950) · DOI: 10.1093/jimmun/vkag187 · PMID: 42867411 https://pubmed.ncbi.nlm.nih.gov/42867411/ Abstract CD8+ T cells directly target and kill cancer cells and are required for effective antitumor immunity. However, CD8+ T cells may become dysfunctional when exposed to chronic antigen stimulation during cancer. Dysfunction is characterized by reduced proliferation, increased expression of inhibitory receptors, and impaired effector function, yet the genetic mechanisms controlling dysfunction remain poorly understood. Therefore, we developed a murine ex vivo chronic stimulation model that recapitulates features of CD8+ T cell dysfunction observed within the tumor microenvironment. By coupling this system with genome wide CRISPR Cas9 loss of function screening, we discovered that the progression of murine CD8+ T cells to a dysfunctional state required eIF4G2, a noncanonical mRNA translation factor. Deletion of eIF4G2 restored CD8+ T cell survival and proliferation during chronic stimulation conditions in vitro. Transcriptomic, proteomic, and flow cytometric analyses revealed that eIF4G2 deletion shifts CD8+ T cell phenotype from a dysfunctional state to a proliferative state. eIF4G2 depletion reduced oxidative stress, lipid peroxidation, and accumulation of misfolded protein aggresomes during chronic in vitro stimulation. Finally, eIF4G2 depleted cells mediated enhanced tumor control in a murine model of melanoma. These data suggest that targeting eIF4G2 may promote CD8+ T cell resilience and improve therapeutic antitumor immunity. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0763",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical chemistry and laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0763_an_age_stratified_semiquantitative_urine_acr_triage_strategy.md",
+   "snippet": "Title An age stratified semiquantitative urine ACR triage strategy for quantitative confirmation: a retrospective diagnostic accuracy study with temporal validation Authors Núñez Pérez Marina, Mondéjar Rufino, Garcés Santos Margarita, Vilor",
+   "text": "Nephrology scraped pubmed PubMed / Clinical chemistry and laboratory medicine Title An age stratified semiquantitative urine ACR triage strategy for quantitative confirmation: a retrospective diagnostic accuracy study with temporal validation Authors Núñez Pérez Marina, Mondéjar Rufino, Garcés Santos Margarita, Viloria Peñas María Del Mar Journal / DOI Clinical chemistry and laboratory medicine · DOI: 10.1515/cclm 2026 1298 · PMID: 42867215 https://pubmed.ncbi.nlm.nih.gov/42867215/ Abstract OBJECTIVES: Early detection of albuminuria is important for identifying individuals at risk of chronic kidney disease (CKD) progression. Semiquantitative urine albumin to creatinine ratio (ACR) strips may serve as an initial laboratory screening or triage tool. However, screening strategies generally apply a single fixed threshold, regardless of patient age. Because CKD prevalence increases with age, a single cut off does not account for differences in pre test probability across age groups, potentially resulting in different trade offs between quantitative confirmation and false negative classification. We evaluated an age adjusted threshold approach to improve diagnostic safety while reducing the number of quantitative ACR confirmations required. METHODS: Semiquantitative ACR strip results (UC 3500, Sysmex) and quantitative ACR values (Alinity c, Abbott) were collected and analyzed. Diagnostic performance indicators for ACR strip testing were evaluated across different decision thresholds in the overall population and among age groups (18 44, 45 64 and ≥65 years), using quantitative ACR measurement as the reference standard. RESULTS: Selected thresholds were 30, 30, and 15 mg/g creatinine for the 18 44, 45 64, and ≥65 year age groups with false omission rates (FOR) of 1.36 %, 3.97 % and 4.47 %, respectively. Overall, the age stratified strategy yielded a sensitivity of 85.60 %, a NPV of 96.44 % and a FOR of 3.56 %, while avoiding 65.16 % of quantitative ACR measurements. CONCLUSIONS: In this retrospective simulation, an age stratified reflex testing strategy provided a balance between reducing quantitative ACR measurements and limiting the residual probability of ACR ≥30 mg/g creatinine following a negative semiquantitative result. The strategy used more sensitive thresholds in older patients, in whom albuminuria prevalence was higher, while allowing a greater reduction in quantitative testing in younger groups. These findings were reproducible in a temporal internal validation cohort but require external and local validation before implementation in other laboratories. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0762",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical microbiology",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0762_performance_evaluation_of_antimicrobial_susceptibility_testi.md",
+   "snippet": "Title Performance evaluation of antimicrobial susceptibility testing devices across CLSI, EUCAST, ISO, FDA, and EMA frameworks: implications for breakpoint application Authors Shindikar Amol, Mahesh Radhakrishnan, Periasamy Hariharan, Vaidy",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of clinical microbiology Title Performance evaluation of antimicrobial susceptibility testing devices across CLSI, EUCAST, ISO, FDA, and EMA frameworks: implications for breakpoint application Authors Shindikar Amol, Mahesh Radhakrishnan, Periasamy Hariharan, Vaidya Suyog Journal / DOI Journal of clinical microbiology · DOI: 10.1128/jcm.00643 26 · PMID: 42867468 https://pubmed.ncbi.nlm.nih.gov/42867468/ Abstract Broth microdilution (BMD) remains the reference standard for determining minimum inhibitory concentrations (MICs) in antimicrobial susceptibility testing (AST). However, most routine laboratories rely on surrogate methods, including disk diffusion and commercial MIC generating systems, whose results must correlate with those of reference BMD prior to clinical use. Evaluation criteria differ across standards development organizations (SDOs) and regulatory authorities, potentially affecting clinical interpretation, particularly in low and middle income countries (LMICs). This mini review compares evaluation frameworks from major SDOs the Clinical and Laboratory Standards Institute (CLSI), the European Committee on Antimicrobial Susceptibility Testing (EUCAST), and the International Organization for Standardization (ISO) and regulatory frameworks, including the U.S. Food and Drug Administration (FDA) and the European In Vitro Diagnostic Regulation (IVDR). Key performance metrics, including essential agreement, categorical agreement, error rates, reproducibility, and bias, were analyzed, alongside differences in breakpoint setting and device approval pathways. Implications for clinical microbiology and antimicrobial stewardship were considered, with explicit emphasis on challenges faced in LMIC settings. Substantial heterogeneity exists across frameworks. CLSI and FDA emphasize breakpoint dependent categorical agreement and error rates, whereas ISO prioritizes analytical measures such as essential agreement and bias without categorical errors. EUCAST broadly aligns with ISO analytically while separately maintaining responsibility for breakpoint setting. These differences can yield discordant device assessments, especially after breakpoint revisions. Surrogate MICs often correlate with BMD near breakpoints but may show systematic bias across MIC ranges, not fully captured by essential agreement alone, with important implications for LMIC laboratories. Divergent frameworks influence susceptibility interpretation, resistance surveillance, and antimicrobial stewardship, particularly in LMICs. Greater harmonization and awareness of methodological limitations are essential to ensure reliable AST reporting and support global antimicrobial resistance efforts across LMIC healthcare systems. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0761",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical endocrinology and metabolism",
+   "confidence": "medium",
+   "date": "2026-10-13",
+   "path": "content/papers/2026/2026-10-13_paper-2026-0761_effects_of_tirzepatide_gip_glp_1_dual_receptor_agonist_on_ca.md",
+   "snippet": "Title Effects of tirzepatide (GIP/GLP 1 dual receptor agonist) on cardiorenal biomarkers and functional capacity in heart failure: a systematic review and meta analysis Authors Eisa Naseem, Khoury Mira Journal / DOI The Journal of clinical ",
+   "text": "Cardiology scraped pubmed PubMed / The Journal of clinical endocrinology and metabolism Title Effects of tirzepatide (GIP/GLP 1 dual receptor agonist) on cardiorenal biomarkers and functional capacity in heart failure: a systematic review and meta analysis Authors Eisa Naseem, Khoury Mira Journal / DOI The Journal of clinical endocrinology and metabolism · DOI: 10.1210/clinem/dgag284 · PMID: 42867450 https://pubmed.ncbi.nlm.nih.gov/42867450/ Abstract BACKGROUND: Tirzepatide, a dual glucose dependent insulinotropic polypeptide (GIP) and glucagon like peptide 1 (GLP 1) receptor agonist, has demonstrated clinical benefits in heart failure with preserved ejection fraction (HFpEF) and obesity. However, its effects on cardiorenal biomarkers and functional capacity have not been comprehensively synthesized. We hypothesized that tirzepatide produces significant reductions in cardiorenal biomarkers and improvements in functional capacity compared to placebo or standard of care. METHODS: This systematic review and meta analysis (PROSPERO: CRD42026137255) searched PubMed, Embase, CENTRAL, Web of Science, and Scopus from inception to April 17, 2026, without restrictions. Randomized controlled trials and prospective observational studies reporting NT proBNP, high sensitivity C reactive protein (hsCRP), Kansas City Cardiomyopathy Questionnaire Clinical Summary Score (KCCQ CSS), 6 minute walk test (6 MWT), or renal outcomes with tirzepatide vs placebo or standard of care were included. Data were pooled using random effects models with Hartung Knapp Sidik Jonkman adjustment. RESULTS: Seven studies (5 RCTs, 2 observational; 5406 participants) were included. Tirzepatide significantly reduced hsCRP by 34.3% (95% CI: 38.4% to 30.1%; P < .0001; I2 = 0.0%; 6 studies) and NT proBNP by 17.6% (95% CI: 26.7% to 8.5%; P = .0001; I2 = 58.1%; 3 studies). In the SUMMIT trial, KCCQ CSS improved by 5.1 points (P < .001) and 6 MWT by 15.8 m (P = .004). Single trial data demonstrated estimated glomerular filtration rate (eGFR) preservation (+2.90 mL/min/1.73 m2/year; 95% CI: 0.94 to 4.86) and urine albumin to creatinine ratio reduction ( 25.0%; 95% CI: 36.0% to 13.0%). CONCLUSION: Tirzepatide produces consistent anti inflammatory effects and significant natriuretic peptide reductions, supported by moderate Grading of Recommendations Assessment, Development and Evaluation certainty. Evidence for functional and renal outcomes remains limited to single trial analyses and should be considered hypothesis generating pending larger dedicated heart failure trials. PROSPERO REGISTRATION: CRD42026137255. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0760",
@@ -15097,8 +15216,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/rheumatology/cn.rheum.iga-vasculitis.diagnosis.md",
-   "snippet": "정의 IgA혈관염(헤노흐 쇤라인)은 만져지는 자반(주로 엉덩이·하지)·관절통·위장관 증상·사구체신염을 특징으로 하는 소혈관염이다. 주로 4–7세 소아에서 생기나 영아·성인에도 생기고, 남녀비 1.5:1, 봄에 많다 [[harrison 21: 363장 p.2813]]. 이 정리본의 목표는 자반을 보고 IgA혈관염을 다른 소아 자반과 가르는 것 이다. 병태생리 상기도감염·약·음식·곤충 물림·예방접종 같은 자극 뒤 IgA 가 든 면",
-   "text": "Rheumatology 정의 IgA혈관염(헤노흐 쇤라인)은 만져지는 자반(주로 엉덩이·하지)·관절통·위장관 증상·사구체신염을 특징으로 하는 소혈관염이다. 주로 4–7세 소아에서 생기나 영아·성인에도 생기고, 남녀비 1.5:1, 봄에 많다 [[harrison 21: 363장 p.2813]]. 이 정리본의 목표는 자반을 보고 IgA혈관염을 다른 소아 자반과 가르는 것 이다. 병태생리 상기도감염·약·음식·곤충 물림·예방접종 같은 자극 뒤 IgA 가 든 면역복합체가 작은 혈관벽에 쌓인다 [[harrison 21: 363장 p.2814]]. 면역복합체가 보체·호중구를 불러 혈관벽이 염증으로 새면 적혈구가 피부로 빠져나가고, 염증 세포와 부종 때문에 자반이 만져진다 . 이 자반은 혈소판이 모자라서 생긴 출혈이 아니므로 혈소판 수는 정상이다 [[harrison 21: 363장 p.2814]]. 같은 기전이 장벽(산통·혈변), 관절 주변(관절통), 사구체(IgA 침착 사구체신염)에서 일어난다. 기전에서 소견으로 소아에서 만져지는 자반은 거의 모든 환자에 있고, 대부분 관절염 없는 다발관절통이다 [[harrison 21: 363장 p.2814]]. 위장관 침범 약 70 %: 산통성 복통·구역·구토·설사/변비, 흔히 혈변·점액변, 장중첩증 가능 [[harrison 21: 363장 p.2814]]. 콩팥 침범 10–50 %: 단백뇨·현미경적 혈뇨, 대부분 적혈구 원주, 대개 저절로 사라진다 [[harrison 21: 363장 p.2814]]. 검사: 가벼운 백혈구증가, 정상 혈소판, 정상 보체, IgA 절반에서 상승 [[harrison 21: 363장 p.2814]]. 감별 표 참조. 핵심은 혈소판 수와 자반의 성격 이다. 혈소판이 줄었으면 IgA혈관염이 아니라 혈소판 감소 원인(면역혈소판감소증·용혈요독증후군·백혈병·파종혈관내응고)을 찾는다. 아파 보이고 자반이 빠르게 번지면 수막알균혈증 같은 패혈증을 먼저 배제한다. 검사 진단은 임상으로 한다 [[harrison 21: 363장 p.2814]]. 혈구(혈소판)·응고·소변·크레아티닌은 감별과 콩팥 평가에 필요하다. 피부 생검: IgA·C3 침착 백혈구파괴혈관염 확인. 신장 생검: 진단에는 거의 불필요, 예후 정보 [[harrison 21: 363장 p.2814]]. 치료 예후가 매우 좋고 많은 환자가 치료 없이 회복한다 [[harrison 21: 363장 p.2814]]. 필요하면 프레드니손 1 mg/kg/일로 부종·관절통·복통을 던다. 피부·콩팥 질환이나 병의 기간·재발에는 이득이 증명되지 않았다 [[harrison 21: 363장 p.2814]]. 급속진행 사구체신염에는 스테로이드+다른 면역억제제가 증례 수준에서 보고되었다 [[harrison 21: 363장 p.2814]]. 재평가 : 자반이 사라진 뒤에도 소변·혈압을 추적한다. 재발 10–40 %, 소아의 1–5 % 가 말기 신부전 [[harrison 21: 363장 p.2814]]. 권고와 예외 정상 혈소판 + 만져지는 하지 자반 + 관절·배·콩팥 = IgA혈관염(임상 진단). 생검은 애매할 때(피부) 또는 예후가 필요할 때(콩팥). 성인은 피부·관절로 시작이 많고 콩팥 경과가 은밀할 수 있다 [[harrison 21: 363장 p.2814]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 363장 p.2813~2814) (심화) 자반이 만져지는가 — 출혈의 두 가지 기전 피부 출혈은 「그릇이 새는가(혈관염)」와 「마개가 모자란가(혈소판·응고)」 둘 중 하나다. 그릇이 새면 염증 세포와 부종이 함께 있어 도드라지고, 중력을 받는 하지·엉덩이에 모인다. 마개가 모자라면 염증 없이 피만 새어 평평한 점상출혈이 된다. 그래서 혈소판 수 하나와 손끝의 촉감이 감별의 대부분을 해낸다."
+   "snippet": "판단 — 왜 혈소판 수와 자반의 촉감이 먼저인가 피부 출혈은 「그릇이 새는가(혈관염)」와 「마개가 모자란가(혈소판·응고)」 둘 중 하나다 — 혈소판 수가 그 갈림길이다. 혈소판이 정상이고 자반이 만져지며 관절·배·콩팥이 함께 침범되면 IgA혈관염(헤노흐 쇤라인, Henoch Schönlein purpura)을 임상으로 진단한다 [[harrison 21: 363장 p.2814]]. 혈소판이 줄었으면 IgA혈관염이 아니라 혈소판 ",
+   "text": "Rheumatology 판단 — 왜 혈소판 수와 자반의 촉감이 먼저인가 피부 출혈은 「그릇이 새는가(혈관염)」와 「마개가 모자란가(혈소판·응고)」 둘 중 하나다 — 혈소판 수가 그 갈림길이다. 혈소판이 정상이고 자반이 만져지며 관절·배·콩팥이 함께 침범되면 IgA혈관염(헤노흐 쇤라인, Henoch Schönlein purpura)을 임상으로 진단한다 [[harrison 21: 363장 p.2814]]. 혈소판이 줄었으면 IgA혈관염이 아니라 혈소판 감소 원인(면역혈소판감소증·용혈요독증후군·백혈병·파종혈관내응고)을 찾는다. 아파 보이고 자반이 빠르게 번지면 수막알균혈증 같은 패혈증을 먼저 배제한다. 기전 — IgA 면역복합체에서 만져지는 자반으로 IgA혈관염은 만져지는 자반(주로 엉덩이·하지)·관절통·위장관 증상·사구체신염을 특징으로 하는 소혈관염이다. 주로 4–7세 소아에서 생기나 영아·성인에도 생기고, 남녀비 1.5:1, 봄에 많다 [[harrison 21: 363장 p.2813]]. 상기도감염·약·음식·곤충 물림·예방접종 같은 자극 뒤 IgA 가 든 면역복합체가 작은 혈관벽에 쌓인다 [[harrison 21: 363장 p.2814]]. 면역복합체가 보체·호중구를 불러 혈관벽이 염증으로 새면 적혈구가 피부로 빠져나가고, 염증 세포와 부종 때문에 자반이 만져진다 . 이 자반은 혈소판이 모자라서 생긴 출혈이 아니므로 혈소판 수는 정상이다 [[harrison 21: 363장 p.2814]]. 같은 기전이 장벽(산통·혈변), 관절 주변(관절통), 사구체(IgA 침착 사구체신염)에서 일어난다. 가르는 소견 — 혈소판 수와 자반의 촉감 소아에서 만져지는 자반은 거의 모든 환자에 있고, 대부분 관절염 없는 다발관절통이다 [[harrison 21: 363장 p.2814]]. 위장관 침범 약 70 %: 산통성 복통·구역·구토·설사/변비, 흔히 혈변·점액변, 장중첩증 가능 [[harrison 21: 363장 p.2814]]. 콩팥 침범 10–50 %: 단백뇨·현미경적 혈뇨, 대부분 적혈구 원주, 대개 저절로 사라진다 [[harrison 21: 363장 p.2814]]. 검사: 가벼운 백혈구증가, 정상 혈소판, 정상 보체, IgA 절반에서 상승 [[harrison 21: 363장 p.2814]]. 혈구(혈소판)·응고·소변·크레아티닌은 감별과 콩팥 평가에 필요하다. 진단은 임상으로 한다. 피부 생검은 IgA·C3 침착 백혈구파괴혈관염 확인용, 신장 생검은 진단에 거의 불필요하고 예후 정보를 준다 [[harrison 21: 363장 p.2814]]. 경과와 추적 — 콩팥을 놓치지 않는다 예후가 매우 좋고 많은 환자가 치료 없이 회복한다 [[harrison 21: 363장 p.2814]]. 필요하면 프레드니손 1 mg/kg/일로 부종·관절통·복통을 던다. 피부·콩팥 질환이나 병의 기간·재발에는 이득이 증명되지 않았다 [[harrison 21: 363장 p.2814]]. 급속진행 사구체신염에는 스테로이드+다른 면역억제제가 증례 수준에서 보고되었다 [[harrison 21: 363장 p.2814]]. 재평가 : 자반이 사라진 뒤에도 소변·혈압을 추적한다. 재발 10–40 %, 소아의 1–5 % 가 말기 신부전 [[harrison 21: 363장 p.2814]]. 권고와 예외 정상 혈소판 + 만져지는 하지 자반 + 관절·배·콩팥 = IgA혈관염(임상 진단). 생검은 애매할 때(피부) 또는 예후가 필요할 때(콩팥). 성인은 피부·관절로 시작이 많고 콩팥 경과가 은밀할 수 있다 [[harrison 21: 363장 p.2814]]. 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 363장 p.2813~2814) (심화) 자반이 만져지는가 — 출혈의 두 가지 기전 피부 출혈은 「그릇이 새는가(혈관염)」와 「마개가 모자란가(혈소판·응고)」 둘 중 하나다. 그릇이 새면 염증 세포와 부종이 함께 있어 도드라지고, 중력을 받는 하지·엉덩이에 모인다. 마개가 모자라면 염증 없이 피만 새어 평평한 점상출혈이 된다. 그래서 혈소판 수 하나와 손끝의 촉감이 감별의 대부분을 해낸다."
   },
   {
    "id": "cn.rheum.giant-cell-arteritis.steroids-before-biopsy",
@@ -15111,8 +15230,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/rheumatology/cn.rheum.giant-cell-arteritis.steroids-before-biopsy.md",
-   "snippet": "정의 거대세포동맥염(측두동맥염)은 중·대동맥의 염증으로 경동맥 가지, 특히 측두동맥을 잘 침범하지만 대동맥과 그 큰 가지까지 앓는 전신 혈관염이다. 거의 50세 초과에서만 생기고 여성에 많다. 류마티스다발근통이 40–50 % 에서 함께 있고, 단독 류마티스다발근통 환자의 10–20 % 가 나중에 거대세포동맥염으로 간다 [[harrison 21: 363장 p.2811]]. 이 정리본의 목표는 의심되는 순간의 치료 순서 다. 병태",
-   "text": "Rheumatology 정의 거대세포동맥염(측두동맥염)은 중·대동맥의 염증으로 경동맥 가지, 특히 측두동맥을 잘 침범하지만 대동맥과 그 큰 가지까지 앓는 전신 혈관염이다. 거의 50세 초과에서만 생기고 여성에 많다. 류마티스다발근통이 40–50 % 에서 함께 있고, 단독 류마티스다발근통 환자의 10–20 % 가 나중에 거대세포동맥염으로 간다 [[harrison 21: 363장 p.2811]]. 이 정리본의 목표는 의심되는 순간의 치료 순서 다. 병태생리 외막의 영양혈관으로 들어온 CD4 T 세포가 활성화되어 대식세포를 부르고, 혈관벽 전층에 단핵구 침윤과 거대세포가 생기며 내막이 증식하고 내탄력판이 끊어진다 [[harrison 21: 363장 p.2811]]. 내막 증식으로 내강이 좁아지면 그 혈관이 먹이는 조직이 허혈에 빠진다 — 씹는 근육(턱 파행), 두피, 그리고 시신경(후모양체동맥)이다. 시신경 허혈은 몇 시간·며칠 안에 비가역적 실명으로 굳을 수 있어, 염증을 빨리 가라앉히는 것이 치료의 첫째 목표가 된다 [[harrison 21: 363장 p.2812]]. 기전에서 소견으로 새 두통, 압통·비후·결절이 있는 측두동맥(초기 박동, 나중 폐쇄), 두피 통증, 턱·혀 파행 [[harrison 21: 363장 p.2812]]. 전신 염증: 발열·권태·체중 감소·류마티스다발근통. 검사실: ESR/CRP 상승, 정색소성 빈혈, ALP 상승 [[harrison 21: 363장 p.2812]]. 허혈 시신경병증 → 갑작스러운 실명. 대부분 그 전에 머리·눈 증상이 먼저 있다 [[harrison 21: 363장 p.2812]]. 일과성 시력상실·복시는 경고 신호다. 대혈관 침범(최대 1/3): 팔 파행, 맥박 감소·잡음, 흉부대동맥류 [[harrison 21: 363장 p.2812]]. 감별 단독 류마티스다발근통 : 근위부 강직·통증과 ESR/CRP 상승이 있지만 두개 증상이 없고 저용량 프레드니손(10–20 mg/일)에 빠르게 반응한다 [[harrison 21: 363장 p.2812]]. 비동맥염성 허혈 시신경병증·색전성 망막동맥 폐쇄 : 염증 지표가 정상이고 전신 증상이 없다 — cn.ophth.crao.arteritic workup 참조. 다카야스동맥염 : 젊은 여성, 대동맥궁과 그 가지 [[harrison 21: 363장 p.2813]]. 검사 측두동맥 생검이 확진이지만 병변이 띄엄띄엄 있어 음성일 수 있다 — 3–5 cm 절편·연속 절편 [[harrison 21: 363장 p.2812]]. 측두동맥 초음파(halo)는 진단에 도움이 되어 점점 많이 쓰인다 [[harrison 21: 363장 p.2812]]. 어떤 진단 검사도 치료 시작 조건이 아니다 — 생검은 치료 약 14일 뒤에도 혈관염을 보인다 [[harrison 21: 363장 p.2812]]. 치료 1. 즉시 프레드니손 40–60 mg/일, 약 1개월 뒤 서서히 감량 [[harrison 21: 363장 p.2812]]. 2. 눈 징후·증상이 있으면 메틸프레드니솔론 1,000 mg/일 3일을 고려해 남은 시력을 지킨다 [[harrison 21: 363장 p.2812]]. 3. 금기가 없으면 아스피린 81 mg/일을 더한다 [[harrison 21: 363장 p.2812]]. 4. 스테로이드 독성·재발 위험이 크면 토실리주맙(스테로이드와 함께), 그것도 어려우면 메토트렉세이트 [[harrison 21: 363장 p.2812]]. 5. 재평가 : 증상과 ESR/CRP 로 감량 속도를 정한다. 대부분 2년 이상, 감량 중 60–85 % 가 재발한다. 토실리주맙을 쓰면 ESR/CRP 로 활성도를 볼 수 없다 [[harrison 21: 363장 p.2812]]. 권고와 예외 의심 → 치료 → 확진의 순서. 생검은 반드시 하되 치료 뒤 2주 안에. 눈 증상이 있으면 정주 펄스를 고려한다. 토실리주맙·메토트렉세이트·아스피린은 어느 것도 스테로이드를 대신하지 않는다. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 아스피린의 위치 — 시험 기준: 아스피린은 단독 치료가 아니고 스테로이드에 더하는 보조다 [[harrison 21: 363장 p.2812]] / 다른 기준: 해리슨은 금기가 없으면 81 mg 을 「더해야 한다」고 쓰지만; 다른 지침(ACR 2021)의 권고 강도는 원문을 보지 못했다 [[?acr vf gca 2021]] / 왜 다른가: 두개 허혈 감소 자료가 관찰 연구 중심이라 권고 강도를 다르게 읽는다 / 시험에서는: KMLE · USMLE 모두 「아스피린 단독」은 오답, 스테로이드가 첫 치료. (심화) 왜 확진 전에 치료해도 되는가 확진 전 치료를 망설이는 이유는 「치료가 진단을 지운다」는 걱정이다. 거대세포동맥염에서는 그 걱정이 작다 — 혈관벽의 육아종성 염증은 스테로이드 뒤에도 약 2주 남는다 [[harrison 21: 363장 p.2812]]. 반면 기다리는 비용은 비가역적 실명이다. 되돌릴 수 없는 손해(실명)와 되돌릴 수 있는 손해(며칠의 불필요한 스테로이드, 생검 음성이면 끊으면 된다)를 비교하면 순서가 정해진다."
+   "snippet": "판단 — 왜 고용량 글루코코르티코이드가 먼저인가 의심 → 치료 → 확진의 순서다. 어떤 진단 검사도 치료 시작 조건이 아니다 [[harrison 21: 363장 p.2812]]. 기다리는 비용은 비가역적 실명이다 — 허혈 시신경병증은 몇 시간·며칠 안에 굳을 수 있다 [[harrison 21: 363장 p.2812]]. 치료가 진단을 지우지 않는다 — 측두동맥 생검은 글루코코르티코이드 약 14일 뒤에도 혈관염을 보인다 [[ha",
+   "text": "Rheumatology 판단 — 왜 고용량 글루코코르티코이드가 먼저인가 의심 → 치료 → 확진의 순서다. 어떤 진단 검사도 치료 시작 조건이 아니다 [[harrison 21: 363장 p.2812]]. 기다리는 비용은 비가역적 실명이다 — 허혈 시신경병증은 몇 시간·며칠 안에 굳을 수 있다 [[harrison 21: 363장 p.2812]]. 치료가 진단을 지우지 않는다 — 측두동맥 생검은 글루코코르티코이드 약 14일 뒤에도 혈관염을 보인다 [[harrison 21: 363장 p.2812]]. 생검은 반드시 하되 치료 뒤 2주 안에. 일과성 시력상실·복시는 지나간 증상이 아니라 실명 전조다 — 대부분의 실명 전에 머리·눈 증상이 먼저 있다 [[harrison 21: 363장 p.2812]]. 기전 — 혈관벽 염증에서 실명까지 거대세포동맥염(측두동맥염, giant cell arteritis)은 중·대동맥의 염증으로 경동맥 가지, 특히 측두동맥을 잘 침범하지만 대동맥과 그 큰 가지까지 앓는 전신 혈관염이다. 거의 50세 초과에서만 생기고 여성에 많다. 류마티스다발근통(polymyalgia rheumatica)이 40–50 % 에서 함께 있고, 단독 류마티스다발근통 환자의 10–20 % 가 나중에 거대세포동맥염으로 간다 [[harrison 21: 363장 p.2811]]. 외막의 영양혈관으로 들어온 CD4 T 세포가 활성화되어 대식세포를 부르고, 혈관벽 전층에 단핵구 침윤과 거대세포가 생기며 내막이 증식하고 내탄력판이 끊어진다 [[harrison 21: 363장 p.2811]]. 내막 증식으로 내강이 좁아지면 그 혈관이 먹이는 조직이 허혈에 빠진다 — 씹는 근육(턱 파행), 두피, 그리고 시신경(후모양체동맥)이다. 시신경 허혈은 비가역적 실명으로 굳을 수 있어, 염증을 빨리 가라앉히는 것이 치료의 첫째 목표가 된다 [[harrison 21: 363장 p.2812]]. 가르는 소견 — 두개 허혈 단서가 있는가 두개 소견: 새 두통, 압통·비후·결절이 있는 측두동맥(초기 박동, 나중 폐쇄), 두피 통증, 턱·혀 파행 [[harrison 21: 363장 p.2812]]. 전신 염증: 발열·권태·체중 감소·류마티스다발근통. 검사실: ESR/CRP 상승, 정색소성 빈혈, ALP 상승 [[harrison 21: 363장 p.2812]]. 대혈관 침범(최대 1/3): 팔 파행, 맥박 감소·잡음, 흉부대동맥류 [[harrison 21: 363장 p.2812]]. 측두동맥 생검이 확진이지만 병변이 띄엄띄엄 있어 음성일 수 있다 — 3–5 cm 절편·연속 절편. 측두동맥 초음파(halo)는 진단에 도움이 되어 점점 많이 쓰인다 [[harrison 21: 363장 p.2812]]. 선택 — 스테로이드가 먼저, 나머지는 더하는 약 1. 즉시 프레드니손 40–60 mg/일, 약 1개월 뒤 서서히 감량 [[harrison 21: 363장 p.2812]]. 2. 눈 징후·증상이 있으면 메틸프레드니솔론 1,000 mg/일 3일을 고려해 남은 시력을 지킨다 [[harrison 21: 363장 p.2812]]. 3. 금기가 없으면 아스피린 81 mg/일을 더한다 [[harrison 21: 363장 p.2812]]. 4. 스테로이드 독성·재발 위험이 크면 토실리주맙(스테로이드와 함께), 그것도 어려우면 메토트렉세이트 [[harrison 21: 363장 p.2812]]. 5. 재평가 : 증상과 ESR/CRP 로 감량 속도를 정한다. 대부분 2년 이상, 감량 중 60–85 % 가 재발한다. 토실리주맙을 쓰면 ESR/CRP 로 활성도를 볼 수 없다 [[harrison 21: 363장 p.2812]]. 권고와 예외 눈 증상이 있으면 정주 펄스를 고려한다. 토실리주맙·메토트렉세이트·아스피린은 어느 것도 스테로이드를 대신하지 않는다. 스테로이드에 대한 극적인 반응은 진단을 뒷받침할 뿐 생검을 대신하지 않는다 [[harrison 21: 363장 p.2812]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 아스피린의 위치 — 시험 기준: 아스피린은 단독 치료가 아니고 스테로이드에 더하는 보조다 [[harrison 21: 363장 p.2812]] / 다른 기준: 해리슨은 금기가 없으면 81 mg 을 「더해야 한다」고 쓰지만; 다른 지침(ACR 2021)의 권고 강도는 원문을 보지 못했다 [[?acr vf gca 2021]] / 왜 다른가: 두개 허혈 감소 자료가 관찰 연구 중심이라 권고 강도를 다르게 읽는다 / 시험에서는: KMLE · USMLE 모두 「아스피린 단독」은 오답, 스테로이드가 첫 치료. (심화) 왜 확진 전에 치료해도 되는가 확진 전 치료를 망설이는 이유는 「치료가 진단을 지운다」는 걱정이다. 거대세포동맥염에서는 그 걱정이 작다 — 혈관벽의 육아종성 염증은 스테로이드 뒤에도 약 2주 남는다 [[harrison 21: 363장 p.2812]]. 반면 기다리는 비용은 비가역적 실명이다. 되돌릴 수 없는 손해(실명)와 되돌릴 수 있는 손해(며칠의 불필요한 스테로이드, 생검 음성이면 끊으면 된다)를 비교하면 순서가 정해진다."
   },
   {
    "id": "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa",
