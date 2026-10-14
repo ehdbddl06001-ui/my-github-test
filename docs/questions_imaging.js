@@ -2,6 +2,1307 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0334",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직",
+  "type": "병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직",
+  "modality": "HISTOLOGY_HE",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "A 65-year-old woman comes to the physician because of vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She has hypertension and type 2 diabetes mellitus. Her BMI is 33 kg/m2. Pelvic examination shows blood in the vaginal vault and a mobile, nontender right adnexal mass. Transvaginal ultrasonography shows a thickened endometrial stripe and a 9-cm solid right ovarian mass. A photomicrograph of an endometrial biopsy specimen stained with hematoxylin and eosin is shown.",
+  "question": "Which of the following is the most likely mechanism underlying this endometrial lesion?",
+  "options": [
+   "Excess progesterone from a luteinized ovarian tumor",
+   "Ectopic endometrial glands within the myometrium",
+   "Estrogen stimulation unopposed by progesterone",
+   "TP53 mutation arising in atrophic endometrium",
+   "Integration of high-risk HPV E6 and E7 genes"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: The biopsy shows crowded, back-to-back tubular glands lined by stratified columnar cells with elongated nuclei and very little intervening stroma — an endometrioid-type glandular proliferation, without the papillae, slit-like spaces, and severe nuclear pleomorphism of serous carcinoma. Endometrioid (type I) lesions arise from prolonged estrogen stimulation without progesterone; here obesity (aromatase in adipose tissue) and a solid ovarian mass in a postmenopausal woman (classically an estrogen-secreting granulosa cell tumor) both supply estrogen.\n- 원리: <b>Why estrogen without progesterone causes glandular crowding</b>: estrogen drives endometrial gland proliferation through estrogen receptors; progesterone normally opposes it by converting the endometrium to a secretory, nonproliferating state and by inducing enzymes that inactivate estradiol. After menopause there is no ovulation and no progesterone, so any ongoing estrogen source acts unopposed. Glands multiply faster than stroma, become crowded, and accumulate mutations (PTEN loss, PIK3CA, KRAS, mismatch-repair defects), progressing from hyperplasia to atypical hyperplasia and endometrioid carcinoma.<br> <b>Where the estrogen comes from here</b>: adipose tissue aromatizes androstenedione to estrone, so obesity, diabetes, and hypertension are the classic type I risk profile. A solid ovarian mass in an older woman adds a granulosa cell tumor, which secretes estrogen (and inhibin) and is found with endometrial hyperplasia or carcinoma in a substantial minority of cases.<br> <b>Type II contrast</b>: serous carcinoma arises in thin, atrophic endometrium of older, often thin women, is driven by TP53 mutation, and does not depend on estrogen.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Endometrioid, type I (answer)</th><th>Serous, type II (closest distractor)</th></tr></thead><tbody> <tr><td>Driver</td><td><b>Unopposed estrogen</b>; PTEN, PIK3CA, KRAS, mismatch repair</td><td>TP53 mutation; estrogen-independent</td></tr> <tr><td>Background endometrium</td><td>Hyperplasia</td><td>Atrophy; precursor serous intraepithelial carcinoma</td></tr> <tr><td>Histology</td><td>Crowded tubular glands, stratified columnar cells, mild–moderate atypia</td><td>Papillae and slit-like spaces, marked nuclear pleomorphism</td></tr> <tr><td>Typical patient</td><td>Obese, diabetic, estrogen-secreting tumor</td><td>Older, thin; aggressive course</td></tr> </tbody></table> Gland-forming lesion plus an estrogen source → unopposed estrogen; papillary high-grade lesion in atrophic endometrium → TP53.\n- 오답 이유:\n  - (A) Excess progesterone would produce a secretory or decidualized, nonproliferative endometrium; it is the treatment for hyperplasia rather than its cause.\n  - (B) Ectopic glands within the myometrium describe adenomyosis, which would be correct for an enlarged, tender uterus with heavy painful menses in a premenopausal woman.\n  - (D) TP53 mutation would be correct if the biopsy showed papillary and slit-like architecture with severely pleomorphic nuclei arising from a thin, atrophic endometrium (serous carcinoma).\n  - (E) High-risk HPV integration would be correct for a lesion of the endocervix or ectocervix, such as usual-type endocervical adenocarcinoma, with block-like p16 staining.\n- 함정: Choosing TP53 because the patient is older and postmenopausal — the gland-forming histology and the estrogen sources (obesity, solid ovarian tumor) point to the estrogen-driven type I pathway.\n- 학습목표: 자궁내막 조직에서 밀집한 관상 샘과 층을 이룬 원주상피(자궁내막모양 샘 증식)를 읽고, 비만·에스트로겐 분비 난소 종양과 연결해 길항되지 않는 에스트로겐 자극 기전을 고른다\n- 근거·출처: Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 22 The female genital tract — endometrial carcinoma types I and II · WHO Classification of Tumours Editorial Board. Female Genital Tumours, 5th ed. 2020 — endometrioid carcinoma; adult granulosa cell tumour · PMC9721141 Figure 7 — case report, synchronous endometrial carcinoma and ovarian granulosa cell tumor (교사용) · 작성자 판독(2026-10-15): H&E, 서로 붙은 듯 밀집한 관상 샘, 길쭉한 핵이 여러 층으로 쌓인 원주상피, 샘 사이 간질 적음(자궁내막모양 샘 증식)\n\n## 출처\n- A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 7 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The biopsy shows crowded, back-to-back tubular glands lined by stratified columnar cells with elongated nuclei and very little intervening stroma — an endometrioid-type glandular proliferation, without the papillae, slit-like spaces, and severe nuclear pleomorphism of serous carcinoma. Endometrioid (type I) lesions arise from prolonged estrogen stimulation without progesterone; here obesity (aromatase in adipose tissue) and a solid ovarian mass in a postmenopausal woman (classically an estrogen-secreting granulosa cell tumor) both supply estrogen."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why estrogen without progesterone causes glandular crowding</b>: estrogen drives endometrial gland proliferation through estrogen receptors; progesterone normally opposes it by converting the endometrium to a secretory, nonproliferating state and by inducing enzymes that inactivate estradiol. After menopause there is no ovulation and no progesterone, so any ongoing estrogen source acts unopposed. Glands multiply faster than stroma, become crowded, and accumulate mutations (PTEN loss, PIK3CA, KRAS, mismatch-repair defects), progressing from hyperplasia to atypical hyperplasia and endometrioid carcinoma.<br> <b>Where the estrogen comes from here</b>: adipose tissue aromatizes androstenedione to estrone, so obesity, diabetes, and hypertension are the classic type I risk profile. A solid ovarian mass in an older woman adds a granulosa cell tumor, which secretes estrogen (and inhibin) and is found with endometrial hyperplasia or carcinoma in a substantial minority of cases.<br> <b>Type II contrast</b>: serous carcinoma arises in thin, atrophic endometrium of older, often thin women, is driven by TP53 mutation, and does not depend on estrogen."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Endometrioid, type I (answer)</th><th>Serous, type II (closest distractor)</th></tr></thead><tbody> <tr><td>Driver</td><td><b>Unopposed estrogen</b>; PTEN, PIK3CA, KRAS, mismatch repair</td><td>TP53 mutation; estrogen-independent</td></tr> <tr><td>Background endometrium</td><td>Hyperplasia</td><td>Atrophy; precursor serous intraepithelial carcinoma</td></tr> <tr><td>Histology</td><td>Crowded tubular glands, stratified columnar cells, mild–moderate atypia</td><td>Papillae and slit-like spaces, marked nuclear pleomorphism</td></tr> <tr><td>Typical patient</td><td>Obese, diabetic, estrogen-secreting tumor</td><td>Older, thin; aggressive course</td></tr> </tbody></table> Gland-forming lesion plus an estrogen source → unopposed estrogen; papillary high-grade lesion in atrophic endometrium → TP53."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Excess progesterone would produce a secretory or decidualized, nonproliferative endometrium; it is the treatment for hyperplasia rather than its cause.\n(B) Ectopic glands within the myometrium describe adenomyosis, which would be correct for an enlarged, tender uterus with heavy painful menses in a premenopausal woman.\n(D) TP53 mutation would be correct if the biopsy showed papillary and slit-like architecture with severely pleomorphic nuclei arising from a thin, atrophic endometrium (serous carcinoma).\n(E) High-risk HPV integration would be correct for a lesion of the endocervix or ectocervix, such as usual-type endocervical adenocarcinoma, with block-like p16 staining."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing TP53 because the patient is older and postmenopausal — the gland-forming histology and the estrogen sources (obesity, solid ovarian tumor) point to the estrogen-driven type I pathway."
+   },
+   {
+    "k": "학습목표",
+    "v": "자궁내막 조직에서 밀집한 관상 샘과 층을 이룬 원주상피(자궁내막모양 샘 증식)를 읽고, 비만·에스트로겐 분비 난소 종양과 연결해 길항되지 않는 에스트로겐 자극 기전을 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed. Ch. 22 The female genital tract — endometrial carcinoma types I and II · WHO Classification of Tumours Editorial Board. Female Genital Tumours, 5th ed. 2020 — endometrioid carcinoma; adult granulosa cell tumour · PMC9721141 Figure 7 — case report, synchronous endometrial carcinoma and ovarian granulosa cell tumor (교사용) · 작성자 판독(2026-10-15): H&E, 서로 붙은 듯 밀집한 관상 샘, 길쭉한 핵이 여러 층으로 쌓인 원주상피, 샘 사이 간질 적음(자궁내막모양 샘 증식) ## 출처 A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 7 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "밀집한 관상 샘의 자궁내막모양 병변과 비만·난소 고형 종괴(에스트로겐 공급원)를 합쳐 길항되지 않는 에스트로겐 자극 기전을 고른다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "샘을 만드는 자궁내막모양 조직 + 에스트로겐 공급원 — 장액성의 유두·고도 핵 다형성이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 밀집한 관상 샘, 층을 이룬 원주상피, 적은 간질 → 자궁내막모양(제1형) 샘 병변",
+    "BMI 33 kg/m2(지방조직 방향화효소)와 폐경 후 9 cm 고형 난소 종괴(에스트로겐 분비 과립막세포종) → 에스트로겐 공급원",
+    "프로게스테론 없는 폐경 후 에스트로겐 → 길항되지 않는 에스트로겐 자극"
+   ],
+   "key": [
+    {
+     "item": "영상: 서로 붙은 듯 밀집한 관상 샘과 층을 이룬 원주상피",
+     "why": "자궁내막모양 샘 증식",
+     "also": []
+    },
+    {
+     "item": "9-cm solid right ovarian mass",
+     "why": "폐경 후 에스트로겐 분비 종양(과립막세포종)을 시사",
+     "also": []
+    },
+    {
+     "item": "Her BMI is 33 kg/m2",
+     "why": "지방조직의 방향화효소 — 에스트론 공급",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 유두·틈새 모양 공간과 고도 핵 다형성이 없음",
+     "why": "장액성(TP53) 경로 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "she has never taken hormone therapy",
+     "why": "외인성 에스트로겐이 원인일 가능성을 낮춘다 — 내인성 공급원을 찾게 한다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "hypertension and type 2 diabetes mellitus",
+     "why": "제1형 위험 묶음 — 그 자체로 기전을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "자궁내막 조직은 밀집한 관상 샘의 자궁내막모양 병변이고, 비만과 폐경 후 고형 난소 종괴가 에스트로겐을 공급한다. 프로게스테론으로 길항되지 않는 에스트로겐 자극이 기전이며, 위축 내막의 TP53 경로(장액성)와 구별한다.",
+   "switch": {
+    "choice": "D",
+    "condition": "조직이 유두·틈새 모양 공간과 고도 핵 다형성을 보이고 얇은 위축 내막에서 생겼다면 TP53 돌연변이가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0334.jpg",
+   "caption": "Photomicrograph, hematoxylin and eosin; black arrows are from the original figure (PMC Open Access Subset, CC BY — no cropping or adjustment)",
+   "alt": "HISTOLOGY_HE 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9721141/",
+   "asset_id": "PMC-PMC9721141_Figure7",
+   "text": "A Rare Case of Granulosa Cell Tumor Associated With Endometrial Carcinoma - A Case Report. Cureus. 2022 Nov 5;14(11):e31122. doi: 10.7759/cureus.31122 (CC BY) — Figure 7"
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0333",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "외과",
+  "subject_file": "외과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파",
+  "type": "외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "65세 여자가 2개월 전 샤워하다 오른쪽 유방에서 만져지는 멍울을 발견하고 왔다. 통증과 유두 분비물은 없다. 52세에 폐경되었고 호르몬 치료를 받은 적은 없다. 어머니가 70세에 유방암 진단을 받았다. 오른쪽 유방 위바깥쪽에 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지며, 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 부위에 경계가 불분명한 종괴가 보였다. 같은 부위의 유방 초음파는 그림과 같다.",
+  "question": "다음 단계로 가장 적절한 것은?",
+  "options": [
+   "타목시펜 복용 후 추적",
+   "초음파 유도 중심부 바늘생검",
+   "6개월 뒤 추적 초음파",
+   "세침흡인으로 내용물 배액",
+   "조직 진단 없이 유방전절제술"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 초음파에서 종괴는 저에코이고 경계가 불규칙하며 각이 지고, 뒤쪽으로 음향 그림자가 진다 — 악성을 강하게 시사하는 소견(BI-RADS 4C~5)이다. 촉진·유방촬영 소견도 같은 방향이다. 다음 단계는 치료를 정하기 전 조직 진단으로, 초음파 유도 중심부 바늘생검으로 조직형·호르몬 수용체·HER2 를 확인한다.\n- 원리: <b>왜 이 모양이 악성을 시사하는가</b>: 침윤암은 주변 조직으로 불규칙하게 파고들며 섬유성 반응(desmoplasia)을 일으킨다. 그래서 경계가 각지거나 침상으로 뻗고, 단단한 섬유 조직이 초음파를 흡수·산란시켜 뒤쪽에 음향 그림자를 만든다. 반대로 섬유샘종처럼 밀어내며 자라는 양성 종양은 타원형·평행·경계가 매끈하고 그림자가 없다.<br> <b>왜 중심부 바늘생검인가</b>: BI-RADS 4·5 는 조직 진단이 필요한 범주다. 중심부 바늘생검은 조직 구조를 보존해 침윤 여부와 조직형을 가르고, 같은 검체로 ER·PR·HER2·Ki-67 을 측정해 수술 전 항암치료 여부와 수술 범위를 정한다. 세침흡인은 세포만 얻어 침윤과 상피내암을 구별하지 못한다.<br> <b>추적이 되는 범주</b>: BI-RADS 3(타원형·평행·경계 매끈 — 악성 가능성 2 % 이하)일 때만 6개월 추적을 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">악성 의심 종괴(정답 — 중심부 바늘생검)</th><th>양성 가능성 높은 종괴(가장 가까운 오답 — 6개월 추적)</th></tr></thead><tbody> <tr><td>모양·방향</td><td>불규칙, 비평행(키가 큼)</td><td>타원형, 피부와 평행</td></tr> <tr><td>경계</td><td>각지거나 침상·불분명</td><td>매끈하고 뚜렷함</td></tr> <tr><td>뒤쪽 소견</td><td><b>음향 그림자</b> — 섬유성 반응</td><td>변화 없음 또는 약한 증강</td></tr> <tr><td>BI-RADS·처치</td><td>4~5 → 조직 진단</td><td>3 → 6개월 추적(악성 ≤ 2 %)</td></tr> </tbody></table> 모양·경계·뒤쪽 그림자 중 하나라도 악성 쪽이면 추적이 아니라 생검이다.\n- 오답 이유:\n  - ① 타목시펜은 조직 검사로 호르몬 수용체 양성 유방암을 확인한 뒤 보조 치료로, 또는 고위험 여성의 화학적 예방으로 쓸 때 정답이 된다.\n  - ③ 6개월 뒤 추적 초음파는 타원형·평행·경계가 매끈한 BI-RADS 3 종괴처럼 악성 가능성이 2 % 이하일 때 정답이 된다.\n  - ④ 세침흡인 배액은 초음파에서 속이 무에코이고 뒤쪽 증강이 있는 단순 낭종이 아프거나 커서 증상이 있을 때 정답이 된다.\n  - ⑤ 유방전절제술은 중심부 생검으로 침윤암을 확인하고 병기·수용체 결과로 수술 범위를 정한 뒤에 하며, 조직 진단 없이 하지 않는다.\n- 함정: 만져지는 단단한 종괴이니 곧바로 수술한다고 보는 것 — 치료 계획(수술 전 항암 여부·수술 범위)은 중심부 생검의 조직형·수용체로 정한다.\n- 학습목표: 유방 초음파에서 불규칙·각진 경계와 뒤쪽 음향 그림자를 가진 저에코 종괴를 악성 의심(BI-RADS 4~5)으로 읽고, 수술 전 영상 유도 중심부 바늘생검을 선택한다\n- 근거·출처: ACR BI-RADS Atlas, 5th ed. Ultrasound — mass shape, orientation, margin, posterior features; assessment categories · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer Screening and Diagnosis, v.2024 · Pawłowska A, et al. Curated benchmark dataset for ultrasound based breast lesion analysis (BrEaST). Sci Data 2024;11:148 · 작성자 판독(2026-10-15): 유방 초음파, 불규칙하고 각진 저에코 종괴, 경계 불분명, 뒤쪽 음향 그림자\n\n## 출처\n- BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case149 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 종괴는 저에코이고 경계가 불규칙하며 각이 지고, 뒤쪽으로 음향 그림자가 진다 — 악성을 강하게 시사하는 소견(BI-RADS 4C~5)이다. 촉진·유방촬영 소견도 같은 방향이다. 다음 단계는 치료를 정하기 전 조직 진단으로, 초음파 유도 중심부 바늘생검으로 조직형·호르몬 수용체·HER2 를 확인한다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 이 모양이 악성을 시사하는가</b>: 침윤암은 주변 조직으로 불규칙하게 파고들며 섬유성 반응(desmoplasia)을 일으킨다. 그래서 경계가 각지거나 침상으로 뻗고, 단단한 섬유 조직이 초음파를 흡수·산란시켜 뒤쪽에 음향 그림자를 만든다. 반대로 섬유샘종처럼 밀어내며 자라는 양성 종양은 타원형·평행·경계가 매끈하고 그림자가 없다.<br> <b>왜 중심부 바늘생검인가</b>: BI-RADS 4·5 는 조직 진단이 필요한 범주다. 중심부 바늘생검은 조직 구조를 보존해 침윤 여부와 조직형을 가르고, 같은 검체로 ER·PR·HER2·Ki-67 을 측정해 수술 전 항암치료 여부와 수술 범위를 정한다. 세침흡인은 세포만 얻어 침윤과 상피내암을 구별하지 못한다.<br> <b>추적이 되는 범주</b>: BI-RADS 3(타원형·평행·경계 매끈 — 악성 가능성 2 % 이하)일 때만 6개월 추적을 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">악성 의심 종괴(정답 — 중심부 바늘생검)</th><th>양성 가능성 높은 종괴(가장 가까운 오답 — 6개월 추적)</th></tr></thead><tbody> <tr><td>모양·방향</td><td>불규칙, 비평행(키가 큼)</td><td>타원형, 피부와 평행</td></tr> <tr><td>경계</td><td>각지거나 침상·불분명</td><td>매끈하고 뚜렷함</td></tr> <tr><td>뒤쪽 소견</td><td><b>음향 그림자</b> — 섬유성 반응</td><td>변화 없음 또는 약한 증강</td></tr> <tr><td>BI-RADS·처치</td><td>4~5 → 조직 진단</td><td>3 → 6개월 추적(악성 ≤ 2 %)</td></tr> </tbody></table> 모양·경계·뒤쪽 그림자 중 하나라도 악성 쪽이면 추적이 아니라 생검이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 타목시펜은 조직 검사로 호르몬 수용체 양성 유방암을 확인한 뒤 보조 치료로, 또는 고위험 여성의 화학적 예방으로 쓸 때 정답이 된다.\n③ 6개월 뒤 추적 초음파는 타원형·평행·경계가 매끈한 BI-RADS 3 종괴처럼 악성 가능성이 2 % 이하일 때 정답이 된다.\n④ 세침흡인 배액은 초음파에서 속이 무에코이고 뒤쪽 증강이 있는 단순 낭종이 아프거나 커서 증상이 있을 때 정답이 된다.\n⑤ 유방전절제술은 중심부 생검으로 침윤암을 확인하고 병기·수용체 결과로 수술 범위를 정한 뒤에 하며, 조직 진단 없이 하지 않는다."
+   },
+   {
+    "k": "함정",
+    "v": "만져지는 단단한 종괴이니 곧바로 수술한다고 보는 것 — 치료 계획(수술 전 항암 여부·수술 범위)은 중심부 생검의 조직형·수용체로 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "유방 초음파에서 불규칙·각진 경계와 뒤쪽 음향 그림자를 가진 저에코 종괴를 악성 의심(BI-RADS 4~5)으로 읽고, 수술 전 영상 유도 중심부 바늘생검을 선택한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "ACR BI-RADS Atlas, 5th ed. Ultrasound — mass shape, orientation, margin, posterior features; assessment categories · NCCN Clinical Practice Guidelines in Oncology: Breast Cancer Screening and Diagnosis, v.2024 · Pawłowska A, et al. Curated benchmark dataset for ultrasound based breast lesion analysis (BrEaST). Sci Data 2024;11:148 · 작성자 판독(2026-10-15): 유방 초음파, 불규칙하고 각진 저에코 종괴, 경계 불분명, 뒤쪽 음향 그림자 ## 출처 BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case149 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "불규칙·각진 경계와 뒤쪽 음향 그림자를 가진 저에코 종괴는 악성 의심(BI-RADS 4~5)이므로 초음파 유도 중심부 바늘생검을 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "모양·경계·뒤쪽 그림자가 모두 악성 쪽 — BI-RADS 3 의 추적 대상이 아니다",
+   "steps": 2,
+   "chain": [
+    "영상: 불규칙·각진 경계의 저에코 종괴 + 뒤쪽 음향 그림자 → 악성 의심(BI-RADS 4~5)",
+    "BI-RADS 4~5 → 치료 전 조직 진단, 초음파 유도 중심부 바늘생검"
+   ],
+   "key": [
+    {
+     "item": "영상: 불규칙하고 각진 경계의 저에코 종괴",
+     "why": "침윤성 성장의 모양",
+     "also": []
+    },
+    {
+     "item": "영상: 뒤쪽 음향 그림자",
+     "why": "섬유성 반응 — 악성 쪽 소견",
+     "also": []
+    },
+    {
+     "item": "단단하고 잘 움직이지 않는 종괴",
+     "why": "촉진 소견도 악성 쪽",
+     "also": []
+    },
+    {
+     "item": "경계가 불분명한 종괴",
+     "why": "유방촬영과 초음파가 일치",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "어머니가 70세에 유방암 진단을 받았다",
+     "why": "위험 요인이지만 검사 선택은 영상 범주가 정한다",
+     "also": []
+    },
+    {
+     "item": "겨드랑이 림프절은 만져지지 않는다",
+     "why": "병기에 영향 — 생검 결정을 바꾸지 않는다",
+     "also": []
+    },
+    {
+     "item": "호르몬 치료를 받은 적은 없다",
+     "why": "위험 평가 정보 — 판단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "초음파의 종괴는 불규칙·각진 경계와 뒤쪽 음향 그림자를 보여 악성 의심(BI-RADS 4~5)이다. 추적이나 곧바로 수술이 아니라 초음파 유도 중심부 바늘생검으로 조직 진단을 먼저 한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "종괴가 타원형·평행·경계가 매끈하고 뒤쪽 그림자가 없는 BI-RADS 3 이었다면 6개월 뒤 추적 초음파가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0333.png",
+   "caption": "유방 초음파 회색조 영상, 원본 그대로 (TCIA, CC BY 4.0 — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA BrEaST-Lesions-USG (curated breast ultrasound, Poland 2019–2022)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+   "asset_id": "TCIA-BREAST-USG-case149",
+   "text": "BrEaST-Lesions-USG, The Cancer Imaging Archive (CC BY 4.0) · case149"
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0332",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신장·비뇨기",
+  "subject_file": "신장·비뇨기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파",
+  "type": "신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파",
+  "modality": "US",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "14세 남자가 1시간 전 축구 경기 중 공에 오른쪽 음낭을 세게 맞은 뒤 심한 통증과 부기로 응급실에 왔다. 구역은 있으나 구토는 없다. 다른 병력은 없다. 혈압 118/72 mmHg, 맥박 96회/분, 체온 36.8 ℃ 이다. 오른쪽 음낭이 붓고 멍이 들었으며 고환을 누르면 매우 아프다. 고환올림근반사는 양쪽 모두 있다. 소변검사는 정상이다. 오른쪽 고환의 회색조·색 도플러 초음파는 그림과 같다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "도수 정복으로 고환 비틀림 풀기",
+   "경구 항생제 투여와 외래 추적",
+   "1주 뒤 초음파 재검",
+   "응급 음낭 수술 탐색과 백막 봉합",
+   "얼음찜질·진통제·음낭 거상 후 외래 추적"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: 초음파에서 고환 위쪽의 백막(고환을 싸는 하얀 고에코 막)이 국소적으로 끊겨 있고(화살표) 고환 실질의 에코가 불균질하다 — 고환 파열이다. 실질 안 혈류는 남아 있어 비틀림은 아니다. 고환 파열은 72시간 안에 수술로 탐색해 괴사한 세관을 제거하고 백막을 봉합해야 고환을 살릴 확률이 높다.\n- 원리: <b>왜 백막이 끊기면 수술인가</b>: 백막은 고환 실질(정세관)을 싸서 압력을 버티는 질긴 섬유막이다. 둔상으로 이 막이 터지면 정세관이 밖으로 빠져나오고 실질 안 압력이 올라 허혈·괴사가 진행되며, 노출된 정세관 항원이 면역계에 드러나 항정자 항체가 생길 수도 있다. 그래서 백막 끊김이 보이면 혈류가 남아 있더라도 빨리(대개 72시간 안) 탐색해 괴사 조직을 제거하고 백막을 봉합한다 — 이렇게 하면 고환 보존율이 80~90 % 이고, 늦어지면 고환절제율이 크게 오른다.<br> <b>보존 치료가 되는 경우</b>: 백막이 온전하고 고환 안 작은 혈종이나 음낭벽 부종·작은 혈류고환초(hematocele)만 있으면 얼음찜질·진통·거상으로 지켜본다.<br> <b>비틀림을 먼저 생각하는 이유와 가르는 근거</b>: 외상 뒤에도 비틀림이 생길 수 있다. 그러나 도플러에서 실질 혈류가 보이고 고환올림근반사가 있으면 비틀림 가능성은 낮다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고환 파열(정답 — 수술 탐색)</th><th>백막이 온전한 고환 타박(가장 가까운 오답 — 보존 치료)</th></tr></thead><tbody> <tr><td>백막</td><td><b>국소 끊김</b>, 고환 윤곽이 불규칙</td><td>고에코 선이 끊김 없이 이어짐</td></tr> <tr><td>실질 에코</td><td>불균질(출혈·괴사), 실질이 막 밖으로 빠져나올 수 있음</td><td>대체로 균질, 작은 실질 안 혈종만</td></tr> <tr><td>처치</td><td>72시간 안 탐색·괴사 조직 제거·백막 봉합</td><td>얼음찜질·진통제·음낭 거상, 추적 초음파</td></tr> </tbody></table> 초음파의 질문은 「백막이 이어져 있는가」 하나다 — 끊겼으면 수술, 이어져 있으면 보존이다.\n- 오답 이유:\n  - ① 도수 정복은 갑작스런 통증과 함께 도플러에서 고환 혈류가 없고 고환올림근반사가 없어 비틀림이 의심되는데 수술이 바로 어려울 때 임시로 시도한다.\n  - ② 경구 항생제는 외상 없이 서서히 시작된 통증과 배뇨 증상, 부고환 혈류 증가가 있는 부고환염일 때 정답이 된다.\n  - ③ 1주 뒤 초음파 재검은 백막이 온전한 작은 실질 혈종을 보존 치료하며 크기 변화를 확인할 때 쓰는 추적 방법이다.\n  - ⑤ 얼음찜질·진통제·음낭 거상은 백막이 온전하고 작은 고환 안 혈종이나 음낭벽 부종만 있는 타박일 때 정답이 된다.\n- 함정: 혈류가 남아 있으니 수술이 필요 없다고 보는 것 — 혈류는 비틀림을 가르는 근거이고, 수술 여부는 백막의 끊김이 정한다.\n- 학습목표: 음낭 둔상 뒤 고환 초음파에서 백막의 끊김과 불균질한 실질을 읽고, 혈류가 남아 있어 비틀림이 아님을 확인한 뒤 응급 수술 탐색을 결정한다\n- 근거·출처: Morey AF, et al. Urotrauma guideline 2020: AUA guideline. J Urol 2021;205:30-35 · Campbell-Walsh-Wein Urology, 12th ed. Ch. Genital and lower urinary tract trauma — testicular rupture · PMC11804949 Figure 2 — testicular rupture, gray-scale and color Doppler (교사용) · 작성자 판독(2026-10-15): 오른쪽 고환 회색조+색 도플러 종단면, 고환 위쪽 백막의 국소 끊김(흰 화살표), 실질 에코 불균질, 실질 안 혈류는 남아 있음\n\n## 출처\n- Testicular Rupture: Clinical, Sonographic, and Surgical Correlation in an Adolescent Patient. Cureus. 2025 Feb 7;17(2):e78688. doi: 10.7759/cureus.78688 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "초음파에서 고환 위쪽의 백막(고환을 싸는 하얀 고에코 막)이 국소적으로 끊겨 있고(화살표) 고환 실질의 에코가 불균질하다 — 고환 파열이다. 실질 안 혈류는 남아 있어 비틀림은 아니다. 고환 파열은 72시간 안에 수술로 탐색해 괴사한 세관을 제거하고 백막을 봉합해야 고환을 살릴 확률이 높다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 백막이 끊기면 수술인가</b>: 백막은 고환 실질(정세관)을 싸서 압력을 버티는 질긴 섬유막이다. 둔상으로 이 막이 터지면 정세관이 밖으로 빠져나오고 실질 안 압력이 올라 허혈·괴사가 진행되며, 노출된 정세관 항원이 면역계에 드러나 항정자 항체가 생길 수도 있다. 그래서 백막 끊김이 보이면 혈류가 남아 있더라도 빨리(대개 72시간 안) 탐색해 괴사 조직을 제거하고 백막을 봉합한다 — 이렇게 하면 고환 보존율이 80~90 % 이고, 늦어지면 고환절제율이 크게 오른다.<br> <b>보존 치료가 되는 경우</b>: 백막이 온전하고 고환 안 작은 혈종이나 음낭벽 부종·작은 혈류고환초(hematocele)만 있으면 얼음찜질·진통·거상으로 지켜본다.<br> <b>비틀림을 먼저 생각하는 이유와 가르는 근거</b>: 외상 뒤에도 비틀림이 생길 수 있다. 그러나 도플러에서 실질 혈류가 보이고 고환올림근반사가 있으면 비틀림 가능성은 낮다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고환 파열(정답 — 수술 탐색)</th><th>백막이 온전한 고환 타박(가장 가까운 오답 — 보존 치료)</th></tr></thead><tbody> <tr><td>백막</td><td><b>국소 끊김</b>, 고환 윤곽이 불규칙</td><td>고에코 선이 끊김 없이 이어짐</td></tr> <tr><td>실질 에코</td><td>불균질(출혈·괴사), 실질이 막 밖으로 빠져나올 수 있음</td><td>대체로 균질, 작은 실질 안 혈종만</td></tr> <tr><td>처치</td><td>72시간 안 탐색·괴사 조직 제거·백막 봉합</td><td>얼음찜질·진통제·음낭 거상, 추적 초음파</td></tr> </tbody></table> 초음파의 질문은 「백막이 이어져 있는가」 하나다 — 끊겼으면 수술, 이어져 있으면 보존이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 도수 정복은 갑작스런 통증과 함께 도플러에서 고환 혈류가 없고 고환올림근반사가 없어 비틀림이 의심되는데 수술이 바로 어려울 때 임시로 시도한다.\n② 경구 항생제는 외상 없이 서서히 시작된 통증과 배뇨 증상, 부고환 혈류 증가가 있는 부고환염일 때 정답이 된다.\n③ 1주 뒤 초음파 재검은 백막이 온전한 작은 실질 혈종을 보존 치료하며 크기 변화를 확인할 때 쓰는 추적 방법이다.\n⑤ 얼음찜질·진통제·음낭 거상은 백막이 온전하고 작은 고환 안 혈종이나 음낭벽 부종만 있는 타박일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "혈류가 남아 있으니 수술이 필요 없다고 보는 것 — 혈류는 비틀림을 가르는 근거이고, 수술 여부는 백막의 끊김이 정한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "음낭 둔상 뒤 고환 초음파에서 백막의 끊김과 불균질한 실질을 읽고, 혈류가 남아 있어 비틀림이 아님을 확인한 뒤 응급 수술 탐색을 결정한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Morey AF, et al. Urotrauma guideline 2020: AUA guideline. J Urol 2021;205:30-35 · Campbell-Walsh-Wein Urology, 12th ed. Ch. Genital and lower urinary tract trauma — testicular rupture · PMC11804949 Figure 2 — testicular rupture, gray-scale and color Doppler (교사용) · 작성자 판독(2026-10-15): 오른쪽 고환 회색조+색 도플러 종단면, 고환 위쪽 백막의 국소 끊김(흰 화살표), 실질 에코 불균질, 실질 안 혈류는 남아 있음 ## 출처 Testicular Rupture: Clinical, Sonographic, and Surgical Correlation in an Adolescent Patient. Cureus. 2025 Feb 7;17(2):e78688. doi: 10.7759/cureus.78688 (CC BY) — Figure 2 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "백막이 끊기고 실질이 불균질한 고환 파열이므로 혈류가 남아 있어도 응급 수술 탐색과 백막 봉합을 한다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "백막의 연속성 — 끊김이 보이면 보존 치료가 아니라 수술이다",
+   "steps": 2,
+   "chain": [
+    "영상: 고환 위쪽 백막의 국소 끊김 + 불균질한 실질 에코, 혈류는 남아 있음 → 고환 파열(비틀림 아님)",
+    "고환 파열 → 72시간 안 응급 수술 탐색과 백막 봉합"
+   ],
+   "key": [
+    {
+     "item": "영상: 고환 위쪽 백막의 국소 끊김(화살표)",
+     "why": "고환 파열의 직접 소견",
+     "also": []
+    },
+    {
+     "item": "영상: 고환 실질 에코가 불균질함",
+     "why": "실질 출혈·괴사",
+     "also": []
+    },
+    {
+     "item": "공에 오른쪽 음낭을 세게 맞은 뒤",
+     "why": "둔상 기전",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 실질 안 색 도플러 혈류가 남아 있음",
+     "why": "고환 비틀림 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "고환올림근반사는 양쪽 모두 있다",
+     "why": "비틀림 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "소변검사는 정상이다",
+     "why": "부고환염·요로감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "맥박 96회/분",
+     "why": "통증에 따른 빈맥 — 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "음낭 둔상 뒤 초음파에서 백막이 끊기고 실질이 불균질하다. 혈류가 남아 있어 비틀림은 아니며, 고환 파열이므로 응급 수술 탐색과 백막 봉합이 가장 적절하다.",
+   "switch": {
+    "choice": "E",
+    "condition": "백막이 끊김 없이 이어지고 작은 고환 안 혈종이나 음낭벽 부종만 있었다면 얼음찜질·진통제·거상의 보존 치료가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0332.jpg",
+   "caption": "오른쪽 고환 회색조·색 도플러 종단 초음파, 화살표와 기계 표시는 원본의 것 (PMC Open Access Subset, CC BY — 자르기·보정 없음)",
+   "alt": "US 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11804949/",
+   "asset_id": "PMC-PMC11804949_Figure2",
+   "text": "Testicular Rupture: Clinical, Sonographic, and Surgical Correlation in an Adolescent Patient. Cureus. 2025 Feb 7;17(2):e78688. doi: 10.7759/cureus.78688 (CC BY) — Figure 2"
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0331",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT",
+  "type": "응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT",
+  "modality": "CT",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-14",
+  "vignette": "A 30-year-old man is brought to the emergency department 1 hour after a motorcycle collision in which he was thrown forward and struck his head on the road. He reports severe pain at the back of the upper neck and supports his head with both hands. Blood pressure is 132/80 mm Hg, and pulse is 94/min. He is alert and oriented. There is midline tenderness over the upper cervical spine. Muscle strength, sensation, and deep tendon reflexes are normal in all four limbs. A midsagittal CT scan of the cervical spine is shown.",
+  "question": "Disruption of which of the following structures is most likely responsible for these findings?",
+  "options": [
+   "Transverse ligament of the atlas",
+   "Alar ligaments",
+   "Tectorial membrane",
+   "Anterior longitudinal ligament",
+   "Ligamentum flavum"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The CT shows a markedly widened gap between the posterior cortex of the anterior arch of C1 and the anterior cortex of the dens (double-headed arrow) — an increased atlantodental interval — without a fracture line through the dens or C2 body. The transverse ligament of the atlas is the structure that holds the dens against the anterior arch; when it tears, C1 slides forward on C2 and the interval widens (normal in adults ≤3 mm).\n- 원리: <b>Why the atlantodental interval measures the transverse ligament</b>: the dens sits in an osseoligamentous ring formed in front by the anterior arch of C1 and behind by the transverse ligament, which runs between the two lateral masses. The ligament is the primary restraint against anterior translation of C1 on C2 during flexion. If it ruptures, nothing stops the atlas from sliding forward, so the space between the anterior arch and the dens opens up — in adults more than 3 mm suggests injury, and more than 5 mm suggests the secondary restraints (alar ligaments) have also failed.<br> <b>Why this matters clinically</b>: the forward-sliding ring narrows the canal behind the dens, so the cord can be compressed even when the patient is neurologically intact at presentation. A purely ligamentous (Dickman type I) tear does not heal reliably with an orthosis and usually needs C1–C2 fusion, whereas an avulsion of the ligament insertion (type II) may heal with immobilization.<br> <b>Reading order</b>: on a midsagittal image first check the dens and C2 body for a fracture, then the atlantodental interval, then the basion–dens relationship for craniocervical dissociation.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transverse ligament tear (answer)</th><th>Alar ligament injury (closest distractor)</th></tr></thead><tbody> <tr><td>Normal function</td><td>Holds the dens against the anterior arch of C1 — limits anterior translation</td><td>Connects the dens tip to the occipital condyles — limits rotation and lateral bending</td></tr> <tr><td>Key CT sign</td><td><b>Widened atlantodental interval</b> (&gt;3 mm in adults)</td><td>Atlantodental interval near normal; asymmetric dens–lateral mass spaces or rotatory fixation</td></tr> <tr><td>Typical consequence</td><td>Anterior atlantoaxial instability; risk of cord compression behind the dens</td><td>Excess C1–C2 rotation; isolated avulsion of the dens tip (type I odontoid fracture)</td></tr> </tbody></table> A widened gap in front of the dens points to the transverse ligament; rotation without a widened gap points to the alar ligaments.\n- 오답 이유:\n  - (B) Alar ligament injury would be correct if the CT showed rotatory malalignment of C1 on C2 or an avulsed dens tip with a near-normal atlantodental interval.\n  - (C) Tectorial membrane disruption would be correct in atlanto-occipital dissociation, in which the basion is distracted away from the dens tip while the atlantodental interval is normal.\n  - (D) Anterior longitudinal ligament rupture would be correct in a hyperextension injury with widening of the anterior disc space and prevertebral soft-tissue swelling in the subaxial spine.\n  - (E) Ligamentum flavum injury is uncommon; it would be the answer to a question about thickened ligament causing posterior canal narrowing in degenerative cervical stenosis.\n- 함정: Looking only for a fracture and calling the CT normal because the dens and C2 body are intact — the abnormality is the widened space in front of the dens.\n- 학습목표: 경추 정중시상 CT 에서 넓어진 환추-치아 간격을 읽고 환추 가로인대 파열과 연결하며, 날개인대·덮개막 손상과 구별한다\n- 근거·출처: Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery 1996;38:44-50 · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures — atlantoaxial instability and the atlantodental interval · PMC11778602 Figure 1 — case report, C1–C2 diastasis with transverse ligament rupture (교사용) · 작성자 판독(2026-10-15): 정중시상 CT 뼈창, C1 앞고리와 치아돌기 앞 피질 사이 간격이 뚜렷이 넓어짐(양방향 화살표), 치아돌기·C2 몸통 골절선 없음\n\n## 출처\n- Atlantoaxial Subluxation Related to Axial Spondylarthritis: A Case-Based Systematic Review. Mediterr J Rheumatol. 2024 Dec 31;35(4):563–72. doi: 10.31138/mjr.070624.asr (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The CT shows a markedly widened gap between the posterior cortex of the anterior arch of C1 and the anterior cortex of the dens (double-headed arrow) — an increased atlantodental interval — without a fracture line through the dens or C2 body. The transverse ligament of the atlas is the structure that holds the dens against the anterior arch; when it tears, C1 slides forward on C2 and the interval widens (normal in adults ≤3 mm)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the atlantodental interval measures the transverse ligament</b>: the dens sits in an osseoligamentous ring formed in front by the anterior arch of C1 and behind by the transverse ligament, which runs between the two lateral masses. The ligament is the primary restraint against anterior translation of C1 on C2 during flexion. If it ruptures, nothing stops the atlas from sliding forward, so the space between the anterior arch and the dens opens up — in adults more than 3 mm suggests injury, and more than 5 mm suggests the secondary restraints (alar ligaments) have also failed.<br> <b>Why this matters clinically</b>: the forward-sliding ring narrows the canal behind the dens, so the cord can be compressed even when the patient is neurologically intact at presentation. A purely ligamentous (Dickman type I) tear does not heal reliably with an orthosis and usually needs C1–C2 fusion, whereas an avulsion of the ligament insertion (type II) may heal with immobilization.<br> <b>Reading order</b>: on a midsagittal image first check the dens and C2 body for a fracture, then the atlantodental interval, then the basion–dens relationship for craniocervical dissociation."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Transverse ligament tear (answer)</th><th>Alar ligament injury (closest distractor)</th></tr></thead><tbody> <tr><td>Normal function</td><td>Holds the dens against the anterior arch of C1 — limits anterior translation</td><td>Connects the dens tip to the occipital condyles — limits rotation and lateral bending</td></tr> <tr><td>Key CT sign</td><td><b>Widened atlantodental interval</b> (&gt;3 mm in adults)</td><td>Atlantodental interval near normal; asymmetric dens–lateral mass spaces or rotatory fixation</td></tr> <tr><td>Typical consequence</td><td>Anterior atlantoaxial instability; risk of cord compression behind the dens</td><td>Excess C1–C2 rotation; isolated avulsion of the dens tip (type I odontoid fracture)</td></tr> </tbody></table> A widened gap in front of the dens points to the transverse ligament; rotation without a widened gap points to the alar ligaments."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) Alar ligament injury would be correct if the CT showed rotatory malalignment of C1 on C2 or an avulsed dens tip with a near-normal atlantodental interval.\n(C) Tectorial membrane disruption would be correct in atlanto-occipital dissociation, in which the basion is distracted away from the dens tip while the atlantodental interval is normal.\n(D) Anterior longitudinal ligament rupture would be correct in a hyperextension injury with widening of the anterior disc space and prevertebral soft-tissue swelling in the subaxial spine.\n(E) Ligamentum flavum injury is uncommon; it would be the answer to a question about thickened ligament causing posterior canal narrowing in degenerative cervical stenosis."
+   },
+   {
+    "k": "함정",
+    "v": "Looking only for a fracture and calling the CT normal because the dens and C2 body are intact — the abnormality is the widened space in front of the dens."
+   },
+   {
+    "k": "학습목표",
+    "v": "경추 정중시상 CT 에서 넓어진 환추-치아 간격을 읽고 환추 가로인대 파열과 연결하며, 날개인대·덮개막 손상과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Dickman CA, Greene KA, Sonntag VK. Injuries involving the transverse atlantal ligament: classification and treatment guidelines based upon experience with 39 injuries. Neurosurgery 1996;38:44-50 · Rockwood and Green's Fractures in Adults, 9th ed. Ch. Cervical spine fractures — atlantoaxial instability and the atlantodental interval · PMC11778602 Figure 1 — case report, C1–C2 diastasis with transverse ligament rupture (교사용) · 작성자 판독(2026-10-15): 정중시상 CT 뼈창, C1 앞고리와 치아돌기 앞 피질 사이 간격이 뚜렷이 넓어짐(양방향 화살표), 치아돌기·C2 몸통 골절선 없음 ## 출처 Atlantoaxial Subluxation Related to Axial Spondylarthritis: A Case-Based Systematic Review. Mediterr J Rheumatol. 2024 Dec 31;35(4):563–72. doi: 10.31138/mjr.070624.asr (CC BY) — Figure 1. · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "치아돌기 골절 없이 환추-치아 간격이 크게 넓어졌으므로 치아돌기를 C1 앞고리에 붙들어 두는 환추 가로인대가 끊어졌다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "넓어진 것은 치아돌기 앞의 간격이다 — 날개인대 손상은 회전 불안정이고 이 간격은 거의 정상이다",
+   "steps": 2,
+   "chain": [
+    "영상: C1 앞고리와 치아돌기 사이 간격이 크게 넓어지고 치아돌기·C2 골절선 없음 → 환추-치아 간격 증가(인대 손상)",
+    "치아돌기를 C1 앞고리에 붙들어 두는 구조 → 환추 가로인대 파열"
+   ],
+   "key": [
+    {
+     "item": "영상: C1 앞고리와 치아돌기 앞 피질 사이 간격이 크게 넓어짐(양방향 화살표)",
+     "why": "환추-치아 간격 증가 — 가로인대 기능 상실",
+     "also": []
+    },
+    {
+     "item": "midline tenderness over the upper cervical spine",
+     "why": "CT 가 필요한 위쪽 목뼈 손상의 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "영상: 치아돌기와 C2 몸통에 골절선 없음",
+     "why": "치아돌기 골절에 의한 불안정 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "thrown forward and struck his head",
+     "why": "고에너지 굴곡 손상 — 위쪽 목뼈 손상을 의심하게 하지만 구조를 가르지 않는다",
+     "also": []
+    },
+    {
+     "item": "Muscle strength, sensation, and deep tendon reflexes are normal in all four limbs",
+     "why": "신경 손상이 없어도 인대 손상은 배제되지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "정중시상 CT 에서 치아돌기 골절 없이 C1 앞고리와 치아돌기 사이가 크게 벌어졌다. 치아돌기를 앞고리에 붙들어 두는 환추 가로인대 파열이며, 회전을 제한하는 날개인대 손상과는 이 간격으로 가른다.",
+   "switch": {
+    "choice": "C",
+    "condition": "환추-치아 간격은 정상이고 기저점(basion)이 치아돌기 끝에서 위로 멀어졌다면 덮개막 손상(환추후두 해리)이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0331.png",
+   "caption": "Midsagittal CT of the cervical spine, bone window; the double-headed arrow is from the original figure (PMC Open Access Subset, CC BY — no cropping or adjustment)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778602/",
+   "asset_id": "PMC-PMC11778602_Figure1",
+   "text": "Atlantoaxial Subluxation Related to Axial Spondylarthritis: A Case-Based Systematic Review. Mediterr J Rheumatol. 2024 Dec 31;35(4):563–72. doi: 10.31138/mjr.070624.asr (CC BY) — Figure 1."
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0340",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "예방의학·역학",
+  "subject_file": "예방의학·역학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미",
+  "type": "예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-14",
+  "vignette": "A 45-year-old woman asks her physician about a new blood test for a cancer that has a prevalence of 1% among women of her age in the general population. In a validation study, the test had a sensitivity of 90% and a specificity of 95%. She has no symptoms and no family history of cancer. Physical examination shows no abnormalities. She undergoes the test, and the result is positive.",
+  "question": "Which of the following is closest to the probability that she has the cancer?",
+  "options": [
+   "99.9%",
+   "15%",
+   "47%",
+   "90%",
+   "95%"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: Take 10,000 women: 100 have the cancer and 9,900 do not. The test detects 90 of the 100 (true positives) and is falsely positive in 5% of the 9,900, or 495 women. Of 585 positive results, 90 are true, so the positive predictive value is 90/585 ≈ 15%.\n- 원리: <b>Why a good test can give a weak positive</b>: sensitivity and specificity describe the test within people already known to have or not have the disease; predictive values describe what a result means for the person in front of you, and they depend on how common the disease is. When prevalence is 1%, the healthy group is 99 times larger than the diseased group, so even a 5% false-positive rate generates far more false positives (495) than the 90 true positives.<br> <b>Bayes' theorem in odds form</b>: pretest odds 1:99 × positive likelihood ratio (sensitivity/(1 − specificity) = 0.90/0.05 = 18) = posttest odds 18:99 ≈ 0.18, which is a probability of 0.18/1.18 ≈ 15%.<br> <b>What changes it</b>: raising prevalence (testing a high-risk group) or raising specificity raises the positive predictive value; sensitivity mainly governs the negative predictive value. That is why screening tests with modest PPV are followed by a more specific confirmatory test.\n- 비교: <table><thead><tr><th style=\"width:22%\">Measure</th><th style=\"width:39%\">Positive predictive value (answer, ≈15%)</th><th>Sensitivity (closest distractor, 90%)</th></tr></thead><tbody> <tr><td>Question it answers</td><td>Given a positive test, how likely is disease?</td><td>Given disease, how likely is a positive test?</td></tr> <tr><td>Formula</td><td>TP / (TP + FP) = 90 / 585</td><td>TP / (TP + FN) = 90 / 100</td></tr> <tr><td>Depends on prevalence?</td><td><b>Yes</b> — falls as prevalence falls</td><td>No — a property of the test</td></tr> </tbody></table> A patient with a positive result is asking about PPV; the test brochure reports sensitivity.\n- 오답 이유:\n  - (A) 99.9% is the negative predictive value (9,405 of 9,415 negatives are truly disease-free) and would be correct if her result had been negative.\n  - (C) 47% would be the PPV if prevalence were about 5% (450 true vs 475 false positives per 10,000), as in a higher-risk population.\n  - (D) 90% is the sensitivity — the probability of a positive test among women who have the cancer — and would be correct if the question asked that.\n  - (E) 95% is the specificity — the probability of a negative test among women without the cancer — and would answer that question instead.\n- 함정: Equating the test's 90% sensitivity with the chance that a positive patient has the disease — at 1% prevalence false positives outnumber true positives.\n- 학습목표: 유병률·민감도·특이도로 양성예측도를 계산하고, 유병률이 낮으면 특이도가 높아도 양성예측도가 낮음을 이해한다\n- 근거·출처: Gordis L. Epidemiology, 6th ed. Ch. Assessing the validity and reliability of diagnostic and screening tests · Grimes DA, Schulz KF. Uses and abuses of screening tests. Lancet 2002;359:881-884",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Take 10,000 women: 100 have the cancer and 9,900 do not. The test detects 90 of the 100 (true positives) and is falsely positive in 5% of the 9,900, or 495 women. Of 585 positive results, 90 are true, so the positive predictive value is 90/585 ≈ 15%."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why a good test can give a weak positive</b>: sensitivity and specificity describe the test within people already known to have or not have the disease; predictive values describe what a result means for the person in front of you, and they depend on how common the disease is. When prevalence is 1%, the healthy group is 99 times larger than the diseased group, so even a 5% false-positive rate generates far more false positives (495) than the 90 true positives.<br> <b>Bayes' theorem in odds form</b>: pretest odds 1:99 × positive likelihood ratio (sensitivity/(1 − specificity) = 0.90/0.05 = 18) = posttest odds 18:99 ≈ 0.18, which is a probability of 0.18/1.18 ≈ 15%.<br> <b>What changes it</b>: raising prevalence (testing a high-risk group) or raising specificity raises the positive predictive value; sensitivity mainly governs the negative predictive value. That is why screening tests with modest PPV are followed by a more specific confirmatory test."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Measure</th><th style=\"width:39%\">Positive predictive value (answer, ≈15%)</th><th>Sensitivity (closest distractor, 90%)</th></tr></thead><tbody> <tr><td>Question it answers</td><td>Given a positive test, how likely is disease?</td><td>Given disease, how likely is a positive test?</td></tr> <tr><td>Formula</td><td>TP / (TP + FP) = 90 / 585</td><td>TP / (TP + FN) = 90 / 100</td></tr> <tr><td>Depends on prevalence?</td><td><b>Yes</b> — falls as prevalence falls</td><td>No — a property of the test</td></tr> </tbody></table> A patient with a positive result is asking about PPV; the test brochure reports sensitivity."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) 99.9% is the negative predictive value (9,405 of 9,415 negatives are truly disease-free) and would be correct if her result had been negative.\n(C) 47% would be the PPV if prevalence were about 5% (450 true vs 475 false positives per 10,000), as in a higher-risk population.\n(D) 90% is the sensitivity — the probability of a positive test among women who have the cancer — and would be correct if the question asked that.\n(E) 95% is the specificity — the probability of a negative test among women without the cancer — and would answer that question instead."
+   },
+   {
+    "k": "함정",
+    "v": "Equating the test's 90% sensitivity with the chance that a positive patient has the disease — at 1% prevalence false positives outnumber true positives."
+   },
+   {
+    "k": "학습목표",
+    "v": "유병률·민감도·특이도로 양성예측도를 계산하고, 유병률이 낮으면 특이도가 높아도 양성예측도가 낮음을 이해한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Gordis L. Epidemiology, 6th ed. Ch. Assessing the validity and reliability of diagnostic and screening tests · Grimes DA, Schulz KF. Uses and abuses of screening tests. Lancet 2002;359:881-884"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "유병률 1 %, 민감도 90 %, 특이도 95 % 로 진양성 90·위양성 495 를 세면 양성예측도는 약 15 % 다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "민감도는 질병이 있을 때 양성일 확률이고, 묻는 것은 양성일 때 질병이 있을 확률(양성예측도)이다",
+   "steps": 3,
+   "chain": [
+    "묻는 값 = 양성 결과일 때 질병 확률 → 양성예측도",
+    "1만 명 중 환자 100(진양성 90), 비환자 9,900(위양성 495) → 양성 585",
+    "90 / 585 ≈ 15 %"
+   ],
+   "key": [
+    {
+     "item": "prevalence of 1%",
+     "why": "양성예측도를 낮추는 핵심 값",
+     "also": []
+    },
+    {
+     "item": "sensitivity of 90%",
+     "why": "진양성 수 계산 — 그 자체가 답은 아니다",
+     "also": []
+    },
+    {
+     "item": "specificity of 95%",
+     "why": "위양성 수 계산",
+     "also": []
+    },
+    {
+     "item": "the result is positive",
+     "why": "양성예측도를 묻는다는 근거",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "She has no symptoms and no family history of cancer",
+     "why": "사전 확률이 집단 유병률과 같다고 보게 한다",
+     "also": []
+    }
+   ],
+   "summary": "유병률 1 % 에서 1만 명당 진양성 90, 위양성 495 이므로 양성예측도는 90/585 ≈ 15 % 다. 특이도가 높아도 유병률이 낮으면 위양성이 진양성보다 많다.",
+   "switch": {
+    "choice": "C",
+    "condition": "고위험 집단이라 유병률이 약 5 % 였다면 양성예측도는 약 47 % 가 된다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0339",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "감염",
+  "subject_file": "감염",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방",
+  "type": "감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "A 26-year-old woman at 20 weeks' gestation comes to the physician 1 day after her roommate was hospitalized with meningitis. The roommate's cerebrospinal fluid culture grew gram-negative diplococci identified as Neisseria meningitidis. The patient has shared an apartment and meals with her roommate during the past week. She feels well. She has no history of serious illness and takes only a prenatal vitamin. She has no known drug allergies. Temperature is 36.8°C. Physical examination shows no abnormalities; there is no rash or neck stiffness.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Single oral dose of ciprofloxacin",
+   "Oral rifampin twice daily for 2 days",
+   "Meningococcal vaccination without antibiotics",
+   "Observation with return if fever develops",
+   "Single intramuscular dose of ceftriaxone"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: Living in the same household and sharing meals during the week before the index patient's illness makes her a close contact, so she needs chemoprophylaxis now, regardless of vaccination status. Ciprofloxacin and rifampin are standard for nonpregnant adults, but in pregnancy a single intramuscular dose of ceftriaxone is the recommended agent.\n- 원리: <b>Why close contacts need antibiotics immediately</b>: Neisseria meningitidis spreads by respiratory droplets and oral secretions. Household contacts have a risk of invasive disease several hundred times that of the general population, mostly within the first days to weeks. Prophylaxis eradicates nasopharyngeal carriage, so it should be given as soon as possible (ideally within 24 hours of identifying the index case); waiting for symptoms defeats its purpose because meningococcemia can kill within hours.<br> <b>Why the agent depends on pregnancy</b>: three drugs eradicate carriage — rifampin, ciprofloxacin, and ceftriaxone. Rifampin is a potent CYP450 inducer and is not recommended in pregnancy; fluoroquinolones are generally avoided in pregnancy when an alternative exists. A single 250-mg intramuscular dose of ceftriaxone is effective and safe in pregnancy, so it is the agent of choice here.<br> <b>Vaccination</b>: vaccine may be added in an outbreak of a vaccine-preventable serogroup, but it takes 7–14 days to produce protection and does not replace chemoprophylaxis.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Ceftriaxone IM (answer)</th><th>Ciprofloxacin PO (closest distractor)</th></tr></thead><tbody> <tr><td>Dose</td><td>Single 250-mg IM injection</td><td>Single 500-mg oral dose</td></tr> <tr><td>Pregnancy</td><td><b>Recommended</b></td><td>Generally avoided — alternative exists</td></tr> <tr><td>Best use</td><td>Pregnant contacts; contacts who cannot take oral drugs</td><td>Nonpregnant adults (check local ciprofloxacin resistance)</td></tr> </tbody></table> For a nonpregnant adult, ciprofloxacin or rifampin is fine; pregnancy shifts the choice to ceftriaxone.\n- 오답 이유:\n  - (A) A single oral dose of ciprofloxacin would be correct for a nonpregnant adult close contact in an area without ciprofloxacin-resistant meningococci.\n  - (B) Rifampin for 2 days would be correct for a child or a nonpregnant adult contact; it is avoided in pregnancy and interacts with hormonal contraceptives.\n  - (C) Vaccination alone would not protect her in time; vaccine is added to chemoprophylaxis only during an outbreak caused by a vaccine-covered serogroup.\n  - (D) Observation would be appropriate only for a casual contact without exposure to oral secretions, such as a coworker in the same building.\n- 함정: Choosing ciprofloxacin because a single oral dose is convenient — in pregnancy ceftriaxone is the recommended prophylactic agent.\n- 학습목표: 수막알균 환자의 밀접 접촉자에게 화학적 예방이 필요함을 판단하고, 임신부에게는 시프로플록사신·리팜핀 대신 세프트리악손 근육주사를 고른다\n- 근거·출처: Centers for Disease Control and Prevention. Meningococcal disease: chemoprophylaxis recommendations for close contacts (Pink Book, 14th ed. 2021) · McNamara LA, et al. Meningococcal vaccination: recommendations of the Advisory Committee on Immunization Practices, United States, 2020. MMWR Recomm Rep 2020;69(9):1-41",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Living in the same household and sharing meals during the week before the index patient's illness makes her a close contact, so she needs chemoprophylaxis now, regardless of vaccination status. Ciprofloxacin and rifampin are standard for nonpregnant adults, but in pregnancy a single intramuscular dose of ceftriaxone is the recommended agent."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why close contacts need antibiotics immediately</b>: Neisseria meningitidis spreads by respiratory droplets and oral secretions. Household contacts have a risk of invasive disease several hundred times that of the general population, mostly within the first days to weeks. Prophylaxis eradicates nasopharyngeal carriage, so it should be given as soon as possible (ideally within 24 hours of identifying the index case); waiting for symptoms defeats its purpose because meningococcemia can kill within hours.<br> <b>Why the agent depends on pregnancy</b>: three drugs eradicate carriage — rifampin, ciprofloxacin, and ceftriaxone. Rifampin is a potent CYP450 inducer and is not recommended in pregnancy; fluoroquinolones are generally avoided in pregnancy when an alternative exists. A single 250-mg intramuscular dose of ceftriaxone is effective and safe in pregnancy, so it is the agent of choice here.<br> <b>Vaccination</b>: vaccine may be added in an outbreak of a vaccine-preventable serogroup, but it takes 7–14 days to produce protection and does not replace chemoprophylaxis."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Ceftriaxone IM (answer)</th><th>Ciprofloxacin PO (closest distractor)</th></tr></thead><tbody> <tr><td>Dose</td><td>Single 250-mg IM injection</td><td>Single 500-mg oral dose</td></tr> <tr><td>Pregnancy</td><td><b>Recommended</b></td><td>Generally avoided — alternative exists</td></tr> <tr><td>Best use</td><td>Pregnant contacts; contacts who cannot take oral drugs</td><td>Nonpregnant adults (check local ciprofloxacin resistance)</td></tr> </tbody></table> For a nonpregnant adult, ciprofloxacin or rifampin is fine; pregnancy shifts the choice to ceftriaxone."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) A single oral dose of ciprofloxacin would be correct for a nonpregnant adult close contact in an area without ciprofloxacin-resistant meningococci.\n(B) Rifampin for 2 days would be correct for a child or a nonpregnant adult contact; it is avoided in pregnancy and interacts with hormonal contraceptives.\n(C) Vaccination alone would not protect her in time; vaccine is added to chemoprophylaxis only during an outbreak caused by a vaccine-covered serogroup.\n(D) Observation would be appropriate only for a casual contact without exposure to oral secretions, such as a coworker in the same building."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing ciprofloxacin because a single oral dose is convenient — in pregnancy ceftriaxone is the recommended prophylactic agent."
+   },
+   {
+    "k": "학습목표",
+    "v": "수막알균 환자의 밀접 접촉자에게 화학적 예방이 필요함을 판단하고, 임신부에게는 시프로플록사신·리팜핀 대신 세프트리악손 근육주사를 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Centers for Disease Control and Prevention. Meningococcal disease: chemoprophylaxis recommendations for close contacts (Pink Book, 14th ed. 2021) · McNamara LA, et al. Meningococcal vaccination: recommendations of the Advisory Committee on Immunization Practices, United States, 2020. MMWR Recomm Rep 2020;69(9):1-41"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "같은 집에서 지낸 밀접 접촉자이므로 지금 화학적 예방을 하고, 임신 중이므로 세프트리악손 근육주사 1회를 고른다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "임신 20주 — 시프로플록사신·리팜핀은 피하고 세프트리악손을 쓴다",
+   "steps": 2,
+   "chain": [
+    "같은 집에서 식사를 함께한 접촉 → 밀접 접촉자, 증상이 없어도 즉시 화학적 예방",
+    "임신 20주 → 시프로플록사신·리팜핀 대신 세프트리악손 근육주사 1회"
+   ],
+   "key": [
+    {
+     "item": "shared an apartment and meals with her roommate",
+     "why": "밀접 접촉자 — 예방 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no rash or neck stiffness",
+     "why": "이미 발병했을 가능성을 낮춘다 — 치료가 아니라 예방",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "20 weeks' gestation",
+     "why": "약 선택을 세프트리악손으로 바꾼다",
+     "also": []
+    },
+    {
+     "item": "She has no known drug allergies",
+     "why": "세프트리악손을 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She feels well",
+     "why": "증상이 없어도 예방은 필요 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "같은 집에서 지낸 밀접 접촉자라 증상이 없어도 즉시 화학적 예방이 필요하다. 임신 중이므로 시프로플록사신·리팜핀이 아니라 세프트리악손 근육주사 1회가 가장 적절하다.",
+   "switch": {
+    "choice": "A",
+    "condition": "임신하지 않은 성인 밀접 접촉자였다면(시프로플록사신 내성 지역이 아니면) 시프로플록사신 1회 경구 투여가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0338",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사",
+  "type": "소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "A 42-year-old woman comes to the physician because of difficulty swallowing both solids and liquids for 1 year. She often regurgitates undigested food at night and has lost 5 kg. She has no heartburn, Raynaud phenomenon, or skin tightening. She was born in and has always lived in the United States. Vital signs are within normal limits. Physical examination shows no abnormalities. Upper endoscopy shows retained food in a dilated esophagus and no mass at the gastroesophageal junction. High-resolution esophageal manometry shows incomplete relaxation of the lower esophageal sphincter and absent peristalsis in the esophageal body.",
+  "question": "Which of the following is the most likely underlying cause of this patient's condition?",
+  "options": [
+   "Eosinophilic infiltration of the esophageal mucosa",
+   "Destruction of ganglion cells by Trypanosoma cruzi",
+   "Tumor infiltration at the gastroesophageal junction",
+   "Loss of inhibitory neurons in the myenteric plexus",
+   "Smooth muscle atrophy and fibrosis of the distal esophagus"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: Dysphagia to both solids and liquids from the start, nocturnal regurgitation of undigested food, a dilated esophagus with retained food, and manometry showing incomplete lower esophageal sphincter (LES) relaxation with absent peristalsis define achalasia. Primary achalasia results from loss of inhibitory (nitric oxide– and VIP-releasing) neurons in the myenteric (Auerbach) plexus, so the LES cannot relax and peristalsis is lost.\n- 원리: <b>Why losing inhibitory neurons closes the sphincter</b>: the LES has intrinsic tone from its smooth muscle and excitatory cholinergic input. Swallowing normally triggers inhibitory myenteric neurons that release nitric oxide and vasoactive intestinal peptide, relaxing the sphincter so the bolus can pass. In achalasia, an inflammatory (probably autoimmune, possibly virus-triggered) process destroys these inhibitory neurons; the excitatory input remains, so the LES fails to relax and its resting pressure is often high.<br> <b>Why peristalsis disappears</b>: coordinated peristalsis also depends on a gradient of inhibitory neural activity along the esophageal body — the latency of inhibition increases distally, producing a sequential wave. Without inhibitory neurons, contractions are absent or simultaneous.<br> <b>Why solids and liquids from the start</b>: the obstruction is functional and complete at every swallow, unlike a mechanical stricture or tumor, which first blocks solids. Pseudoachalasia from a cardia tumor must be excluded, especially in older patients with rapid weight loss.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Achalasia (answer)</th><th>Systemic sclerosis esophagus (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Loss of inhibitory myenteric neurons</b> (NO, VIP)</td><td>Smooth muscle atrophy and fibrosis</td></tr> <tr><td>LES</td><td>Fails to relax; resting pressure normal or high</td><td>Low pressure — incompetent</td></tr> <tr><td>Main symptom</td><td>Dysphagia to solids and liquids, regurgitation</td><td>Severe reflux (heartburn), strictures</td></tr> <tr><td>Associated findings</td><td>Dilated esophagus, bird-beak narrowing</td><td>Raynaud phenomenon, skin thickening</td></tr> </tbody></table> Both lose peristalsis; the sphincter separates them — non-relaxing in achalasia, wide open in scleroderma.\n- 오답 이유:\n  - (A) Eosinophilic infiltration would be correct in eosinophilic esophagitis, typically a young atopic man with food impaction and rings or furrows on endoscopy but normal LES relaxation.\n  - (B) Trypanosoma cruzi destruction of ganglion cells would be correct for Chagas disease in a patient from rural Latin America, often with cardiomyopathy or megacolon.\n  - (C) Tumor infiltration at the junction would be correct for pseudoachalasia in an older patient with rapid weight loss and a mass at the cardia on endoscopy or endoscopic ultrasonography.\n  - (E) Smooth muscle atrophy and fibrosis would be correct in systemic sclerosis, with heartburn, Raynaud phenomenon, skin tightening, and a hypotensive rather than non-relaxing LES.\n- 함정: Choosing systemic sclerosis because peristalsis is absent — both lose peristalsis, but achalasia has a non-relaxing LES while scleroderma has a weak, open LES with reflux.\n- 학습목표: 고형식·액체 모두의 연하곤란과 식도 내압검사(하부식도괄약근 이완 장애·연동 소실)로 이완불능증을 진단하고, 근육층 신경얼기의 억제 신경세포 소실을 기전으로 고르며 전신경화증·샤가스병과 구별한다\n- 근거·출처: Vaezi MF, et al. ACG clinical guidelines: diagnosis and management of achalasia. Am J Gastroenterol 2020;115:1393-1411 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 323 Diseases of the esophagus — achalasia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "Dysphagia to both solids and liquids from the start, nocturnal regurgitation of undigested food, a dilated esophagus with retained food, and manometry showing incomplete lower esophageal sphincter (LES) relaxation with absent peristalsis define achalasia. Primary achalasia results from loss of inhibitory (nitric oxide– and VIP-releasing) neurons in the myenteric (Auerbach) plexus, so the LES cannot relax and peristalsis is lost."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why losing inhibitory neurons closes the sphincter</b>: the LES has intrinsic tone from its smooth muscle and excitatory cholinergic input. Swallowing normally triggers inhibitory myenteric neurons that release nitric oxide and vasoactive intestinal peptide, relaxing the sphincter so the bolus can pass. In achalasia, an inflammatory (probably autoimmune, possibly virus-triggered) process destroys these inhibitory neurons; the excitatory input remains, so the LES fails to relax and its resting pressure is often high.<br> <b>Why peristalsis disappears</b>: coordinated peristalsis also depends on a gradient of inhibitory neural activity along the esophageal body — the latency of inhibition increases distally, producing a sequential wave. Without inhibitory neurons, contractions are absent or simultaneous.<br> <b>Why solids and liquids from the start</b>: the obstruction is functional and complete at every swallow, unlike a mechanical stricture or tumor, which first blocks solids. Pseudoachalasia from a cardia tumor must be excluded, especially in older patients with rapid weight loss."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Achalasia (answer)</th><th>Systemic sclerosis esophagus (closest distractor)</th></tr></thead><tbody> <tr><td>Mechanism</td><td><b>Loss of inhibitory myenteric neurons</b> (NO, VIP)</td><td>Smooth muscle atrophy and fibrosis</td></tr> <tr><td>LES</td><td>Fails to relax; resting pressure normal or high</td><td>Low pressure — incompetent</td></tr> <tr><td>Main symptom</td><td>Dysphagia to solids and liquids, regurgitation</td><td>Severe reflux (heartburn), strictures</td></tr> <tr><td>Associated findings</td><td>Dilated esophagus, bird-beak narrowing</td><td>Raynaud phenomenon, skin thickening</td></tr> </tbody></table> Both lose peristalsis; the sphincter separates them — non-relaxing in achalasia, wide open in scleroderma."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Eosinophilic infiltration would be correct in eosinophilic esophagitis, typically a young atopic man with food impaction and rings or furrows on endoscopy but normal LES relaxation.\n(B) Trypanosoma cruzi destruction of ganglion cells would be correct for Chagas disease in a patient from rural Latin America, often with cardiomyopathy or megacolon.\n(C) Tumor infiltration at the junction would be correct for pseudoachalasia in an older patient with rapid weight loss and a mass at the cardia on endoscopy or endoscopic ultrasonography.\n(E) Smooth muscle atrophy and fibrosis would be correct in systemic sclerosis, with heartburn, Raynaud phenomenon, skin tightening, and a hypotensive rather than non-relaxing LES."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing systemic sclerosis because peristalsis is absent — both lose peristalsis, but achalasia has a non-relaxing LES while scleroderma has a weak, open LES with reflux."
+   },
+   {
+    "k": "학습목표",
+    "v": "고형식·액체 모두의 연하곤란과 식도 내압검사(하부식도괄약근 이완 장애·연동 소실)로 이완불능증을 진단하고, 근육층 신경얼기의 억제 신경세포 소실을 기전으로 고르며 전신경화증·샤가스병과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Vaezi MF, et al. ACG clinical guidelines: diagnosis and management of achalasia. Am J Gastroenterol 2020;115:1393-1411 · Harrison's Principles of Internal Medicine, 21st ed. Ch. 323 Diseases of the esophagus — achalasia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "고형식·액체 연하곤란과 하부식도괄약근 이완 장애·연동 소실로 이완불능증이며, 근육층 신경얼기 억제 신경세포 소실이 기전이다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "하부식도괄약근이 이완하지 못한다 — 전신경화증은 괄약근 압력이 낮아 역류가 주 증상이다",
+   "steps": 3,
+   "chain": [
+    "고형식과 액체 모두의 연하곤란 + 소화 안 된 음식 역류 + 확장된 식도의 음식 저류 → 운동 장애형 연하곤란",
+    "내압검사: 하부식도괄약근 불완전 이완 + 연동 소실, 종괴 없음·여행력 없음 → 일차 이완불능증",
+    "일차 이완불능증의 기전 → 근육층 신경얼기의 억제(NO·VIP) 신경세포 소실"
+   ],
+   "key": [
+    {
+     "item": "incomplete relaxation of the lower esophageal sphincter",
+     "why": "이완불능증의 정의 소견",
+     "also": []
+    },
+    {
+     "item": "absent peristalsis in the esophageal body",
+     "why": "억제 신경 기울기 소실",
+     "also": []
+    },
+    {
+     "item": "difficulty swallowing both solids and liquids",
+     "why": "처음부터 기능적 폐쇄",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "no heartburn, Raynaud phenomenon, or skin tightening",
+     "why": "전신경화증 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "She was born in and has always lived in the United States",
+     "why": "샤가스병 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "no mass at the gastroesophageal junction",
+     "why": "가성 이완불능증(종양) 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "has lost 5 kg",
+     "why": "섭취 감소 — 종양도 떠올리게 하지만 내시경이 낮춘다",
+     "also": []
+    }
+   ],
+   "summary": "고형식·액체 모두의 연하곤란, 음식 역류, 하부식도괄약근 불완전 이완과 연동 소실로 일차 이완불능증이다. 근육층 신경얼기의 억제 신경세포 소실이 기전이며, 괄약근이 약해지는 전신경화증과 구별한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "환자가 라틴아메리카 농촌 출신이고 심근병증이나 거대결장이 함께 있었다면 크루스파동편모충에 의한 샤가스병이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0337",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "이비인후과",
+  "subject_file": "이비인후과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "이비인후과 — 항생제에도 심해지는 인두통과 개구장애",
+  "type": "이비인후과 — 항생제에도 심해지는 인두통과 개구장애",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-14",
+  "vignette": "24세 남자가 5일 전부터 목이 아프고 이틀 전부터 침을 삼키기 어려워 왔다. 사흘 전 의원에서 경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다. 체온 38.6 ℃, 맥박 104회/분, 호흡 18회/분, 산소포화도 98 % 이다. 목소리가 입에 무언가를 문 듯 먹먹하고, 입을 2 cm 밖에 벌리지 못한다. 왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다. 흡기 시 협착음은 없고 침을 흘리지 않으며 목을 움직이는 데 제한은 없다. 왼쪽 위목 림프절이 커져 있고 누르면 아프다.",
+  "question": "가장 적절한 처치는?",
+  "options": [
+   "다른 경구 항생제로 바꾸어 외래 추적",
+   "응급 기관절개술",
+   "고용량 스테로이드 단독 투여",
+   "경부 림프절 절제 생검",
+   "바늘흡인 또는 절개배농과 항생제"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 항생제에도 나빠지는 인두통, 먹먹한 목소리, 개구장애, 한쪽 연구개 팽윤과 반대쪽으로 밀린 목젖은 편도주위농양이다. 협착음·침흘림이 없어 기도는 안정적이다. 고름이 고인 농양은 항생제만으로 잘 낫지 않으므로 바늘흡인 또는 절개배농으로 고름을 빼고 항생제(연쇄알균·혐기균을 덮는 암피실린-설박탐 등)를 함께 쓴다.\n- 원리: <b>왜 한쪽으로만 부풀고 목젖이 밀리는가</b>: 편도주위농양은 구개편도의 피막과 상인두수축근 사이의 느슨한 공간에 고름이 고인 것이다. 이 공간은 한쪽 편도를 둘러싸므로 고름이 차면 그쪽 연구개가 앞·안쪽으로 밀려 나오고 목젖이 반대쪽으로 기운다. 고름의 염증이 바로 옆 내측 익돌근으로 퍼지면 근육이 경련해 입을 벌리지 못한다(개구장애) — 단순 편도염에는 개구장애가 거의 없다.<br> <b>왜 배농이 필요한가</b>: 농양은 혈류가 없는 고름 덩어리라 항생제가 잘 들어가지 못한다. 바늘흡인이나 절개로 고름을 빼야 열과 통증이 빨리 줄고, 방치하면 고름이 부인두·후인두 공간을 따라 종격동으로 내려가거나 기도를 막을 수 있다.<br> <b>기도를 먼저 본다</b>: 흡기 협착음·침흘림·누운 자세를 못 견딤이 있으면 기도 확보가 먼저다. 이 환자는 그런 징후가 없어 배농이 다음 단계다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">편도주위농양(정답 — 배농 + 항생제)</th><th>편도주위염·단순 편도염(가장 가까운 오답 — 항생제 외래 추적)</th></tr></thead><tbody> <tr><td>개구장애</td><td><b>있다</b> — 내측 익돌근 자극</td><td>없거나 경미</td></tr> <tr><td>목젖·연구개</td><td>한쪽 연구개 팽윤, 목젖 반대쪽 편위</td><td>양쪽 편도 발적·삼출, 목젖 중앙</td></tr> <tr><td>항생제 반응</td><td>항생제에도 악화</td><td>대개 48~72시간 안 호전</td></tr> <tr><td>처치</td><td>바늘흡인·절개배농 + 항생제</td><td>경구 항생제·진통제</td></tr> </tbody></table> 개구장애와 목젖 편위가 함께 있으면 고름이 고였다고 보고 뺀다.\n- 오답 이유:\n  - ① 다른 경구 항생제로 바꾸는 것은 개구장애와 목젖 편위 없이 양쪽 편도에 삼출물만 있는 연쇄알균 편도염에서 첫 항생제가 맞지 않았을 때 고려한다.\n  - ② 응급 기관절개술은 흡기 협착음·침흘림·청색증처럼 기도가 막히고 기관삽관이 불가능할 때 정답이 된다.\n  - ③ 스테로이드는 배농·항생제에 보조로 통증과 부기를 줄이는 데 쓸 수 있으나, 고름이 고인 농양을 단독으로 치료하지 못한다.\n  - ④ 경부 림프절 절제 생검은 열 없이 수주 넘게 커지는 단단하고 아프지 않은 림프절로 림프종·전이암이 의심될 때 정답이 된다.\n- 함정: 이미 항생제를 먹고 있으니 항생제만 바꾸면 된다고 보는 것 — 개구장애·목젖 편위는 고름이 고였다는 뜻이고, 고름은 빼야 한다.\n- 학습목표: 한쪽 연구개 팽윤·목젖 편위·개구장애로 편도주위농양을 진단하고, 기도가 안정적이면 바늘흡인 또는 절개배농과 항생제로 치료한다\n- 근거·출처: Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Pharyngitis and peritonsillar infections · Galioto NJ. Peritonsillar abscess. Am Fam Physician 2017;95:501-506",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항생제에도 나빠지는 인두통, 먹먹한 목소리, 개구장애, 한쪽 연구개 팽윤과 반대쪽으로 밀린 목젖은 편도주위농양이다. 협착음·침흘림이 없어 기도는 안정적이다. 고름이 고인 농양은 항생제만으로 잘 낫지 않으므로 바늘흡인 또는 절개배농으로 고름을 빼고 항생제(연쇄알균·혐기균을 덮는 암피실린-설박탐 등)를 함께 쓴다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 한쪽으로만 부풀고 목젖이 밀리는가</b>: 편도주위농양은 구개편도의 피막과 상인두수축근 사이의 느슨한 공간에 고름이 고인 것이다. 이 공간은 한쪽 편도를 둘러싸므로 고름이 차면 그쪽 연구개가 앞·안쪽으로 밀려 나오고 목젖이 반대쪽으로 기운다. 고름의 염증이 바로 옆 내측 익돌근으로 퍼지면 근육이 경련해 입을 벌리지 못한다(개구장애) — 단순 편도염에는 개구장애가 거의 없다.<br> <b>왜 배농이 필요한가</b>: 농양은 혈류가 없는 고름 덩어리라 항생제가 잘 들어가지 못한다. 바늘흡인이나 절개로 고름을 빼야 열과 통증이 빨리 줄고, 방치하면 고름이 부인두·후인두 공간을 따라 종격동으로 내려가거나 기도를 막을 수 있다.<br> <b>기도를 먼저 본다</b>: 흡기 협착음·침흘림·누운 자세를 못 견딤이 있으면 기도 확보가 먼저다. 이 환자는 그런 징후가 없어 배농이 다음 단계다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">편도주위농양(정답 — 배농 + 항생제)</th><th>편도주위염·단순 편도염(가장 가까운 오답 — 항생제 외래 추적)</th></tr></thead><tbody> <tr><td>개구장애</td><td><b>있다</b> — 내측 익돌근 자극</td><td>없거나 경미</td></tr> <tr><td>목젖·연구개</td><td>한쪽 연구개 팽윤, 목젖 반대쪽 편위</td><td>양쪽 편도 발적·삼출, 목젖 중앙</td></tr> <tr><td>항생제 반응</td><td>항생제에도 악화</td><td>대개 48~72시간 안 호전</td></tr> <tr><td>처치</td><td>바늘흡인·절개배농 + 항생제</td><td>경구 항생제·진통제</td></tr> </tbody></table> 개구장애와 목젖 편위가 함께 있으면 고름이 고였다고 보고 뺀다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 다른 경구 항생제로 바꾸는 것은 개구장애와 목젖 편위 없이 양쪽 편도에 삼출물만 있는 연쇄알균 편도염에서 첫 항생제가 맞지 않았을 때 고려한다.\n② 응급 기관절개술은 흡기 협착음·침흘림·청색증처럼 기도가 막히고 기관삽관이 불가능할 때 정답이 된다.\n③ 스테로이드는 배농·항생제에 보조로 통증과 부기를 줄이는 데 쓸 수 있으나, 고름이 고인 농양을 단독으로 치료하지 못한다.\n④ 경부 림프절 절제 생검은 열 없이 수주 넘게 커지는 단단하고 아프지 않은 림프절로 림프종·전이암이 의심될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "이미 항생제를 먹고 있으니 항생제만 바꾸면 된다고 보는 것 — 개구장애·목젖 편위는 고름이 고였다는 뜻이고, 고름은 빼야 한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "한쪽 연구개 팽윤·목젖 편위·개구장애로 편도주위농양을 진단하고, 기도가 안정적이면 바늘흡인 또는 절개배농과 항생제로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Cummings Otolaryngology: Head and Neck Surgery, 7th ed. Ch. Pharyngitis and peritonsillar infections · Galioto NJ. Peritonsillar abscess. Am Fam Physician 2017;95:501-506"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "개구장애·한쪽 연구개 팽윤·목젖 편위로 편도주위농양이고, 기도가 안정적이므로 바늘흡인 또는 절개배농과 항생제를 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "개구장애와 목젖 편위 — 단순 편도염이 아니라 고름이 고인 농양이다",
+   "steps": 2,
+   "chain": [
+    "항생제에도 악화하는 인두통 + 개구장애 + 한쪽 연구개 팽윤과 목젖 편위 → 편도주위농양",
+    "협착음·침흘림 없음(기도 안정) → 바늘흡인 또는 절개배농과 항생제"
+   ],
+   "key": [
+    {
+     "item": "입을 2 cm 밖에 벌리지 못한다",
+     "why": "개구장애 — 농양을 시사",
+     "also": []
+    },
+    {
+     "item": "왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다",
+     "why": "한쪽 편도주위 공간의 고름",
+     "also": []
+    },
+    {
+     "item": "경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다",
+     "why": "항생제 단독 실패 — 배농 필요",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "흡기 시 협착음은 없고 침을 흘리지 않으며",
+     "why": "기도 폐쇄·후두개염 가능성을 낮추고 응급 기도 확보가 필요 없음을 보여 준다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "목을 움직이는 데 제한은 없다",
+     "why": "후인두농양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "왼쪽 위목 림프절이 커져 있고 누르면 아프다",
+     "why": "반응성 림프절 — 생검 대상이 아니다",
+     "also": []
+    },
+    {
+     "item": "산소포화도 98 %",
+     "why": "산소화 정상 — 처치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "항생제에도 악화하는 인두통에 개구장애·한쪽 연구개 팽윤·목젖 편위가 있어 편도주위농양이다. 기도가 안정적이므로 바늘흡인 또는 절개배농과 항생제가 가장 적절하다.",
+   "switch": {
+    "choice": "B",
+    "condition": "흡기 협착음과 침흘림이 있고 기관삽관이 불가능할 만큼 기도가 막혔다면 응급 외과적 기도 확보가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0336",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료",
+  "type": "호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-14",
+  "vignette": "45세 남자가 6주 동안 기침과 가래가 계속되고 밤에 땀이 나며 체중이 4 kg 줄어 왔다. 결핵 치료를 받은 적은 없고, HIV 검사는 음성이다. 체온 37.8 ℃, 맥박 88회/분, 호흡 18회/분, 산소포화도 96 % 이다. 오른쪽 위 폐야에서 수포음이 들린다. 흉부 X선에서 오른쪽 위엽에 공동을 동반한 경화가 있다. 가래 항산균 도말은 양성이고, 가래 결핵균 핵산증폭검사에서 결핵균이 검출되었으며 리팜핀 내성 유전자는 검출되지 않았다. 간기능검사와 시력 검사는 정상이다(보기의 H 는 이소니아지드, R 은 리팜핀, Z 는 피라진아마이드, E 는 에탐부톨).",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "HREZ 2개월 후 HR 4개월",
+   "이소니아지드 단독 9개월",
+   "리팜핀 단독 4개월",
+   "베다퀼린 포함 다제내성 요법",
+   "HRE 9개월(피라진아마이드 제외)"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: 공동을 동반한 위엽 경화, 항산균 도말 양성, 핵산증폭검사 양성은 활동성 폐결핵이고, 리팜핀 내성 유전자가 없으므로 약제 감수성 결핵의 표준 요법 — 이소니아지드·리팜핀·피라진아마이드·에탐부톨 2개월(집중기) 뒤 이소니아지드·리팜핀 4개월(유지기) — 을 쓴다. 감수성 결과가 나오면 에탐부톨을 끊을 수 있다.\n- 원리: <b>왜 4제로 시작하는가</b>: 공동 속에는 결핵균이 10^8 개 이상 있어, 약 하나에 자연 내성인 돌연변이 균(이소니아지드 약 10^6 분의 1, 리팜핀 약 10^8 분의 1)이 이미 섞여 있다. 한 가지 약만 쓰면 그 돌연변이가 살아남아 내성 결핵이 된다. 서로 다른 표적의 약을 함께 쓰면 두 약에 동시에 내성인 균은 거의 없다. 감수성 결과가 나오기 전이므로 이소니아지드 내성에 대비해 에탐부톨을 더한다.<br> <b>왜 피라진아마이드가 6개월을 가능하게 하는가</b>: 피라진아마이드는 산성 환경(대식세포 안·염증 부위)에서 천천히 분열하는 균을 죽여 치료 기간을 9개월에서 6개월로 줄인다. 처음 2개월만 쓰면 충분하다.<br> <b>잠복결핵과의 차이</b>: 균 수가 적은 잠복결핵은 단일 약(이소니아지드 9개월, 리팜핀 4개월)이나 2제 3개월로 충분하지만, 활동성 결핵에 단일 약을 쓰면 내성을 만든다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">활동성 감수성 결핵(정답 — HREZ 2개월 + HR 4개월)</th><th>잠복결핵(가장 가까운 오답 — 이소니아지드 9개월)</th></tr></thead><tbody> <tr><td>균 수</td><td>공동 안 10^8 개 이상 — 자연 내성 돌연변이 포함</td><td>적다 — 단일 약으로 충분</td></tr> <tr><td>증상·영상</td><td>기침·발열·체중 감소, 공동성 경화</td><td>증상 없음, 흉부 X선 정상</td></tr> <tr><td>미생물 검사</td><td><b>도말·핵산증폭 양성</b></td><td>음성(투베르쿨린·IGRA 만 양성)</td></tr> <tr><td>치료</td><td>4제 2개월 + 2제 4개월</td><td>이소니아지드 9개월, 리팜핀 4개월 등 단일·2제</td></tr> </tbody></table> 균이 검출되면 활동성 결핵의 다제 요법, 감염 표지만 양성이고 균이 없으면 잠복결핵 치료다.\n- 오답 이유:\n  - ② 이소니아지드 단독 9개월은 증상과 흉부 X선 이상 없이 IGRA 나 투베르쿨린 검사만 양성인 잠복결핵일 때 정답이 된다.\n  - ③ 리팜핀 단독 4개월은 이소니아지드를 쓰기 어려운 잠복결핵(이소니아지드 내성 접촉자 등)일 때 정답이 된다.\n  - ④ 베다퀼린·리네졸리드·레보플록사신 요법은 핵산증폭검사에서 리팜핀 내성이 검출된 다제내성 결핵일 때 정답이 된다.\n  - ⑤ 이소니아지드·리팜핀·에탐부톨 9개월은 간독성·통풍 등으로 피라진아마이드를 쓸 수 없는 약제 감수성 결핵일 때 정답이 된다.\n- 함정: 결핵이니 이소니아지드 9개월을 고르는 것 — 그것은 균이 없는 잠복결핵의 치료이고, 균이 검출된 활동성 결핵에 단일 약을 쓰면 내성을 만든다.\n- 학습목표: 리팜핀 내성이 검출되지 않은 활동성 폐결핵에 표준 4제 초기 2개월 + 2제 유지 4개월 요법을 고르고, 잠복결핵 치료와 구별한다\n- 근거·출처: 질병관리청. 결핵 진료지침 제5판(2024) — 약제 감수성 결핵의 표준 치료 · Nahid P, et al. Official ATS/CDC/IDSA clinical practice guidelines: treatment of drug-susceptible tuberculosis. Clin Infect Dis 2016;63:e147-e195",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "공동을 동반한 위엽 경화, 항산균 도말 양성, 핵산증폭검사 양성은 활동성 폐결핵이고, 리팜핀 내성 유전자가 없으므로 약제 감수성 결핵의 표준 요법 — 이소니아지드·리팜핀·피라진아마이드·에탐부톨 2개월(집중기) 뒤 이소니아지드·리팜핀 4개월(유지기) — 을 쓴다. 감수성 결과가 나오면 에탐부톨을 끊을 수 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 4제로 시작하는가</b>: 공동 속에는 결핵균이 10^8 개 이상 있어, 약 하나에 자연 내성인 돌연변이 균(이소니아지드 약 10^6 분의 1, 리팜핀 약 10^8 분의 1)이 이미 섞여 있다. 한 가지 약만 쓰면 그 돌연변이가 살아남아 내성 결핵이 된다. 서로 다른 표적의 약을 함께 쓰면 두 약에 동시에 내성인 균은 거의 없다. 감수성 결과가 나오기 전이므로 이소니아지드 내성에 대비해 에탐부톨을 더한다.<br> <b>왜 피라진아마이드가 6개월을 가능하게 하는가</b>: 피라진아마이드는 산성 환경(대식세포 안·염증 부위)에서 천천히 분열하는 균을 죽여 치료 기간을 9개월에서 6개월로 줄인다. 처음 2개월만 쓰면 충분하다.<br> <b>잠복결핵과의 차이</b>: 균 수가 적은 잠복결핵은 단일 약(이소니아지드 9개월, 리팜핀 4개월)이나 2제 3개월로 충분하지만, 활동성 결핵에 단일 약을 쓰면 내성을 만든다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">활동성 감수성 결핵(정답 — HREZ 2개월 + HR 4개월)</th><th>잠복결핵(가장 가까운 오답 — 이소니아지드 9개월)</th></tr></thead><tbody> <tr><td>균 수</td><td>공동 안 10^8 개 이상 — 자연 내성 돌연변이 포함</td><td>적다 — 단일 약으로 충분</td></tr> <tr><td>증상·영상</td><td>기침·발열·체중 감소, 공동성 경화</td><td>증상 없음, 흉부 X선 정상</td></tr> <tr><td>미생물 검사</td><td><b>도말·핵산증폭 양성</b></td><td>음성(투베르쿨린·IGRA 만 양성)</td></tr> <tr><td>치료</td><td>4제 2개월 + 2제 4개월</td><td>이소니아지드 9개월, 리팜핀 4개월 등 단일·2제</td></tr> </tbody></table> 균이 검출되면 활동성 결핵의 다제 요법, 감염 표지만 양성이고 균이 없으면 잠복결핵 치료다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 이소니아지드 단독 9개월은 증상과 흉부 X선 이상 없이 IGRA 나 투베르쿨린 검사만 양성인 잠복결핵일 때 정답이 된다.\n③ 리팜핀 단독 4개월은 이소니아지드를 쓰기 어려운 잠복결핵(이소니아지드 내성 접촉자 등)일 때 정답이 된다.\n④ 베다퀼린·리네졸리드·레보플록사신 요법은 핵산증폭검사에서 리팜핀 내성이 검출된 다제내성 결핵일 때 정답이 된다.\n⑤ 이소니아지드·리팜핀·에탐부톨 9개월은 간독성·통풍 등으로 피라진아마이드를 쓸 수 없는 약제 감수성 결핵일 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "결핵이니 이소니아지드 9개월을 고르는 것 — 그것은 균이 없는 잠복결핵의 치료이고, 균이 검출된 활동성 결핵에 단일 약을 쓰면 내성을 만든다."
+   },
+   {
+    "k": "학습목표",
+    "v": "리팜핀 내성이 검출되지 않은 활동성 폐결핵에 표준 4제 초기 2개월 + 2제 유지 4개월 요법을 고르고, 잠복결핵 치료와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "질병관리청. 결핵 진료지침 제5판(2024) — 약제 감수성 결핵의 표준 치료 · Nahid P, et al. Official ATS/CDC/IDSA clinical practice guidelines: treatment of drug-susceptible tuberculosis. Clin Infect Dis 2016;63:e147-e195"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "균이 검출되고 리팜핀 내성이 없는 활동성 폐결핵이므로 4제 2개월 + 2제 4개월의 표준 요법을 쓴다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "도말·핵산증폭 양성과 공동 — 활동성 결핵이라 잠복결핵의 단일 약 요법이 아니다",
+   "steps": 2,
+   "chain": [
+    "공동성 경화 + 항산균 도말 양성 + 핵산증폭 양성 → 활동성 폐결핵",
+    "리팜핀 내성 유전자 미검출 → 약제 감수성 표준 요법 2HREZ/4HR"
+   ],
+   "key": [
+    {
+     "item": "가래 항산균 도말은 양성",
+     "why": "활동성 결핵 — 잠복결핵이 아니다",
+     "also": []
+    },
+    {
+     "item": "공동을 동반한 경화",
+     "why": "균 수가 많은 활동성 병변",
+     "also": []
+    },
+    {
+     "item": "리팜핀 내성 유전자는 검출되지 않았다",
+     "why": "다제내성 요법이 아니라 표준 요법",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "간기능검사와 시력 검사는 정상이다",
+     "why": "이소니아지드·리팜핀·피라진아마이드(간독성)와 에탐부톨(시신경염)을 쓸 수 있다",
+     "also": []
+    },
+    {
+     "item": "결핵 치료를 받은 적은 없고",
+     "why": "재치료 결핵의 내성 위험이 낮다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "HIV 검사는 음성이다",
+     "why": "HIV 동반이면 약물 상호작용을 고려하지만 기본 요법은 같다",
+     "also": []
+    }
+   ],
+   "summary": "공동성 경화와 도말·핵산증폭 양성으로 활동성 폐결핵이며 리팜핀 내성 유전자가 없다. 이소니아지드·리팜핀·피라진아마이드·에탐부톨 2개월 뒤 이소니아지드·리팜핀 4개월의 표준 요법이 가장 적절하다.",
+   "switch": {
+    "choice": "D",
+    "condition": "핵산증폭검사에서 리팜핀 내성 유전자가 검출되었다면 베다퀼린·리네졸리드·레보플록사신을 포함한 다제내성 결핵 요법이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0335",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 응급·신장비뇨·외과계·병리·피부·호흡기·이비인후·소화기·감염·예방의학)",
+  "subtopic": "피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점",
+  "type": "피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-14",
+  "vignette": "22세 남자가 3개월 전부터 가슴과 등에 생긴 하얀 반점으로 왔다. 가려움은 거의 없고, 여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다. 다른 병력은 없다. 가슴 위쪽과 등에 경계가 뚜렷한 저색소 반점이 여러 개 합쳐져 있고, 긁으면 고운 비늘이 일어난다. 우드등 검사에서 노란빛을 띤 형광을 보인다. 비늘의 수산화칼륨(KOH) 검사에서 짧은 균사와 둥근 효모가 함께 보인다.",
+  "question": "가장 적절한 치료는?",
+  "options": [
+   "경구 아시클로버 복용",
+   "협대역 자외선B 광선치료",
+   "케토코나졸 샴푸 또는 크림 국소 도포",
+   "경구 테르비나핀 6주 복용",
+   "국소 스테로이드 연고 도포"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 땀이 많은 계절에 가슴·등에 생긴 비늘 있는 저색소 반점, 우드등의 노란 형광, KOH 의 짧은 균사와 둥근 효모(「스파게티와 미트볼」)는 말라세지아에 의한 어루러기다. 범위가 넓지 않으면 케토코나졸 같은 국소 아졸 항진균제(샴푸·크림)나 셀레늄 황화물이 첫 치료다.\n- 원리: <b>왜 하얗게 되는가</b>: 말라세지아는 피부 지질을 먹고 사는 친지성 효모로, 덥고 땀이 많을 때 균사형으로 바뀌어 각질층에서 늘어난다. 이 효모가 만드는 아젤라산 같은 디카르복실산이 멜라닌세포의 티로시나아제를 억제해 색소 생성이 줄어든다 — 멜라닌세포가 없어진 것이 아니다. 그래서 치료 뒤 균은 바로 없어져도 색이 돌아오는 데 수개월이 걸린다.<br> <b>왜 국소 아졸인가</b>: 균이 각질층에만 있어 바르는 약이 잘 닿고, 아졸은 에르고스테롤 합성(라노스테롤 14α-탈메틸화효소)을 막는다. 범위가 넓거나 자주 재발하면 경구 이트라코나졸·플루코나졸을 쓴다. 경구 테르비나핀은 각질층으로 잘 분비되지 않아 말라세지아에 효과가 낮다.<br> <b>재발</b>: 말라세지아는 정상 상재균이라 재발이 흔하다 — 여름 전 주기적 국소 치료로 예방한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">어루러기(정답 — 국소 아졸)</th><th>백반증(가장 가까운 오답 — 자외선B 광선치료)</th></tr></thead><tbody> <tr><td>색</td><td>저색소(옅어짐) 또는 과색소</td><td>탈색소(우유처럼 완전히 하얌)</td></tr> <tr><td>비늘</td><td><b>긁으면 고운 비늘</b></td><td>비늘 없음</td></tr> <tr><td>우드등·KOH</td><td>노란 형광 · 짧은 균사와 효모</td><td>밝은 청백색 강조 · KOH 음성</td></tr> <tr><td>기전</td><td>효모 대사물이 멜라닌 생성 억제</td><td>자가면역으로 멜라닌세포 소실</td></tr> </tbody></table> 비늘과 KOH 양성은 어루러기, 비늘 없는 완전 탈색은 백반증이다.\n- 오답 이유:\n  - ① 경구 아시클로버는 피부분절을 따라 아프게 물집이 모여 생기는 대상포진이나 단순포진일 때 정답이 된다.\n  - ② 협대역 자외선B 광선치료는 비늘 없이 완전히 탈색된 반점이 퍼지는 백반증이나 넓은 건선일 때 정답이 된다.\n  - ④ 경구 테르비나핀은 피부사상균에 의한 손발톱 진균증이나 넓은 몸백선일 때 정답이 되며, 말라세지아에는 효과가 낮다.\n  - ⑤ 국소 스테로이드는 습진이나 건선처럼 염증이 주된 병변에 쓰며, 진균 감염에 바르면 오히려 균이 늘어난다.\n- 함정: 하얀 반점이니 백반증으로 보고 광선치료를 고르는 것 — 비늘과 KOH 의 효모·균사가 있으면 어루러기다.\n- 학습목표: 비늘 있는 저색소 반점과 KOH 검사의 짧은 균사·효모로 어루러기를 진단하고, 국소 아졸 항진균제로 치료하며 백반증과 구별한다\n- 근거·출처: Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Ch. 77 Fungal diseases — pityriasis versicolor · Gupta AK, Foley KA. Antifungal treatment for pityriasis versicolor. J Fungi 2015;1:13-29",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "땀이 많은 계절에 가슴·등에 생긴 비늘 있는 저색소 반점, 우드등의 노란 형광, KOH 의 짧은 균사와 둥근 효모(「스파게티와 미트볼」)는 말라세지아에 의한 어루러기다. 범위가 넓지 않으면 케토코나졸 같은 국소 아졸 항진균제(샴푸·크림)나 셀레늄 황화물이 첫 치료다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 하얗게 되는가</b>: 말라세지아는 피부 지질을 먹고 사는 친지성 효모로, 덥고 땀이 많을 때 균사형으로 바뀌어 각질층에서 늘어난다. 이 효모가 만드는 아젤라산 같은 디카르복실산이 멜라닌세포의 티로시나아제를 억제해 색소 생성이 줄어든다 — 멜라닌세포가 없어진 것이 아니다. 그래서 치료 뒤 균은 바로 없어져도 색이 돌아오는 데 수개월이 걸린다.<br> <b>왜 국소 아졸인가</b>: 균이 각질층에만 있어 바르는 약이 잘 닿고, 아졸은 에르고스테롤 합성(라노스테롤 14α-탈메틸화효소)을 막는다. 범위가 넓거나 자주 재발하면 경구 이트라코나졸·플루코나졸을 쓴다. 경구 테르비나핀은 각질층으로 잘 분비되지 않아 말라세지아에 효과가 낮다.<br> <b>재발</b>: 말라세지아는 정상 상재균이라 재발이 흔하다 — 여름 전 주기적 국소 치료로 예방한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">어루러기(정답 — 국소 아졸)</th><th>백반증(가장 가까운 오답 — 자외선B 광선치료)</th></tr></thead><tbody> <tr><td>색</td><td>저색소(옅어짐) 또는 과색소</td><td>탈색소(우유처럼 완전히 하얌)</td></tr> <tr><td>비늘</td><td><b>긁으면 고운 비늘</b></td><td>비늘 없음</td></tr> <tr><td>우드등·KOH</td><td>노란 형광 · 짧은 균사와 효모</td><td>밝은 청백색 강조 · KOH 음성</td></tr> <tr><td>기전</td><td>효모 대사물이 멜라닌 생성 억제</td><td>자가면역으로 멜라닌세포 소실</td></tr> </tbody></table> 비늘과 KOH 양성은 어루러기, 비늘 없는 완전 탈색은 백반증이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 경구 아시클로버는 피부분절을 따라 아프게 물집이 모여 생기는 대상포진이나 단순포진일 때 정답이 된다.\n② 협대역 자외선B 광선치료는 비늘 없이 완전히 탈색된 반점이 퍼지는 백반증이나 넓은 건선일 때 정답이 된다.\n④ 경구 테르비나핀은 피부사상균에 의한 손발톱 진균증이나 넓은 몸백선일 때 정답이 되며, 말라세지아에는 효과가 낮다.\n⑤ 국소 스테로이드는 습진이나 건선처럼 염증이 주된 병변에 쓰며, 진균 감염에 바르면 오히려 균이 늘어난다."
+   },
+   {
+    "k": "함정",
+    "v": "하얀 반점이니 백반증으로 보고 광선치료를 고르는 것 — 비늘과 KOH 의 효모·균사가 있으면 어루러기다."
+   },
+   {
+    "k": "학습목표",
+    "v": "비늘 있는 저색소 반점과 KOH 검사의 짧은 균사·효모로 어루러기를 진단하고, 국소 아졸 항진균제로 치료하며 백반증과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 4th ed. Ch. 77 Fungal diseases — pityriasis versicolor · Gupta AK, Foley KA. Antifungal treatment for pityriasis versicolor. J Fungi 2015;1:13-29"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "비늘 있는 저색소 반점과 KOH 의 짧은 균사·효모로 어루러기이므로 국소 아졸 항진균제로 치료한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "긁으면 일어나는 비늘과 KOH 양성 — 백반증은 비늘이 없고 KOH 음성이다",
+   "steps": 2,
+   "chain": [
+    "비늘 있는 저색소 반점 + 우드등 노란 형광 + KOH 짧은 균사와 둥근 효모 → 어루러기(말라세지아)",
+    "범위가 넓지 않은 어루러기 → 국소 아졸 항진균제"
+   ],
+   "key": [
+    {
+     "item": "짧은 균사와 둥근 효모가 함께 보인다",
+     "why": "말라세지아의 전형 소견",
+     "also": []
+    },
+    {
+     "item": "긁으면 고운 비늘이 일어난다",
+     "why": "백반증과 가르는 소견",
+     "also": []
+    },
+    {
+     "item": "노란빛을 띤 형광",
+     "why": "말라세지아 대사물의 형광",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다",
+     "why": "덥고 습한 환경이 악화 요인 — 진단을 지지하나 결정적이지 않다",
+     "also": []
+    },
+    {
+     "item": "가려움은 거의 없고",
+     "why": "어루러기는 가려움이 적다 — 판단을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "땀이 많은 계절의 비늘 있는 저색소 반점, 우드등 노란 형광, KOH 의 짧은 균사·효모로 어루러기다. 국소 아졸 항진균제가 첫 치료이며, 비늘 없는 완전 탈색의 백반증과 구별한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "반점에 비늘이 없고 완전히 탈색되었으며 KOH 가 음성이었다면 백반증으로 보고 협대역 자외선B 광선치료가 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0324",
   "exam": "imaging",
   "style": "usmle_style",

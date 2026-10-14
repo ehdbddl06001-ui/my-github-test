@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3655,
+  "total": 3665,
   "byType": {
    "anatomy": 841,
    "kmle": 1408,
+   "imaging": 339,
    "concept": 101,
    "usmle": 192,
    "paper": 767,
-   "imaging": 329,
    "ailab": 14,
    "basic": 3
   },
@@ -41,22 +41,22 @@ window.MEDKOS_INDEX = {
    "산부인과": 53,
    "순환기": 30,
    "Physiology": 22,
-   "호흡기": 21,
-   "소화기": 20,
+   "호흡기": 22,
+   "소화기": 21,
    "소아과": 19,
    "Pharmacology": 16,
+   "감염": 16,
    "내분비": 16,
+   "신장·비뇨기": 16,
+   "응급·중환자": 16,
    "혈액·종양": 16,
    "Biochemistry": 15,
-   "감염": 15,
+   "병리·조직학": 15,
    "신경": 15,
-   "신장·비뇨기": 15,
-   "응급·중환자": 15,
    "Microbiology": 14,
-   "병리·조직학": 14,
-   "피부과": 13,
-   "예방의학·역학": 12,
-   "외과": 12,
+   "피부과": 14,
+   "예방의학·역학": 13,
+   "외과": 13,
    "Immunology": 11,
    "Internal Medicine": 11,
    "근골격·류마티스": 9,
@@ -64,7 +64,7 @@ window.MEDKOS_INDEX = {
    "정신과": 8,
    "안과": 6,
    "영상의학": 6,
-   "이비인후과": 5,
+   "이비인후과": 6,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2532,
+   "high": 2542,
    "medium": 1073,
    "low": 50
   },
@@ -708,6 +708,180 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1409.md",
    "snippet": "72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년",
    "text": "Cardiology Abrupt Fainting without Warning in an Older Man with an Abnormal Baseline ECG syncope ecg bifascicular-block conduction-disease diagnosis KMLE 2026 / Claude 72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년 동안 비슷하게 갑자기 주저앉은 적이 한 번 있었다. 진찰에서 의식은 명료하고 신경학적 결손은 없으며 심잡음은 들리지 않는다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 활력징후와 검사 소견은 자료와 같다. 실신의 원인으로 가장 가능성이 높은 것은? A. 미주신경성 실신 B. 기립성 저혈압 C. 대동맥판 협착에 의한 실신 D. 단형 심실빈맥 E. 간헐적 고도 방실차단 심전도는 동율동에 넓은 QRS, V1의 rSR′ 모양과 좌축편위로 완전우각차단과 좌전섬유속차단이 함께 있는 이섬유속차단이다. 전조 없이 앉은 자세에서 갑자기 쓰러져 다친 실신은 부정맥성 실신을 시사한다. 기립 혈압·심장초음파가 정상이어서 기립성 저혈압·구조적 심질환(대동맥판 협착, 반흔 관련 심실빈맥)의 가능성은 낮으므로, 남은 전도계로 간헐적으로 생기는 고도 방실차단이 가장 가능성이 높다."
+  },
+  {
+   "id": "imaging-2026-0340",
+   "type": "imaging",
+   "unit": "",
+   "topic": "예방의학·역학",
+   "subtopic": "예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0340.md",
+   "snippet": "A 45 year old woman asks her physician about a new blood test for a cancer that has a prevalence of 1% among women of her age in the general population. In a validation study, the test had a sensitivity of 90% and a specificity of 95%. She ",
+   "text": "예방의학·역학 예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 45 year old woman asks her physician about a new blood test for a cancer that has a prevalence of 1% among women of her age in the general population. In a validation study, the test had a sensitivity of 90% and a specificity of 95%. She has no symptoms and no family history of cancer. Physical examination shows no abnormalities. She undergoes the test, and the result is positive. Which of the following is closest to the probability that she has the cancer? A. 99.9% B. 15% C. 47% D. 90% E. 95%"
+  },
+  {
+   "id": "imaging-2026-0339",
+   "type": "imaging",
+   "unit": "",
+   "topic": "감염",
+   "subtopic": "감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0339.md",
+   "snippet": "A 26 year old woman at 20 weeks' gestation comes to the physician 1 day after her roommate was hospitalized with meningitis. The roommate's cerebrospinal fluid culture grew gram negative diplococci identified as Neisseria meningitidis. The ",
+   "text": "감염 감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 26 year old woman at 20 weeks' gestation comes to the physician 1 day after her roommate was hospitalized with meningitis. The roommate's cerebrospinal fluid culture grew gram negative diplococci identified as Neisseria meningitidis. The patient has shared an apartment and meals with her roommate during the past week. She feels well. She has no history of serious illness and takes only a prenatal vitamin. She has no known drug allergies. Temperature is 36.8°C. Physical examination shows no abnormalities; there is no rash or neck stiffness. Which of the following is the most appropriate next step in management? A. Single oral dose of ciprofloxacin B. Oral rifampin twice daily for 2 days C. Meningococcal vaccination without antibiotics D. Observation with return if fever develops E. Single intramuscular dose of ceftriaxone"
+  },
+  {
+   "id": "imaging-2026-0338",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0338.md",
+   "snippet": "A 42 year old woman comes to the physician because of difficulty swallowing both solids and liquids for 1 year. She often regurgitates undigested food at night and has lost 5 kg. She has no heartburn, Raynaud phenomenon, or skin tightening.",
+   "text": "소화기 소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 42 year old woman comes to the physician because of difficulty swallowing both solids and liquids for 1 year. She often regurgitates undigested food at night and has lost 5 kg. She has no heartburn, Raynaud phenomenon, or skin tightening. She was born in and has always lived in the United States. Vital signs are within normal limits. Physical examination shows no abnormalities. Upper endoscopy shows retained food in a dilated esophagus and no mass at the gastroesophageal junction. High resolution esophageal manometry shows incomplete relaxation of the lower esophageal sphincter and absent peristalsis in the esophageal body. Which of the following is the most likely underlying cause of this patient's condition? A. Eosinophilic infiltration of the esophageal mucosa B. Destruction of ganglion cells by Trypanosoma cruzi C. Tumor infiltration at the gastroesophageal junction D. Loss of inhibitory neurons in the myenteric plexus E. Smooth muscle atrophy and fibrosis of the distal esophagus"
+  },
+  {
+   "id": "imaging-2026-0337",
+   "type": "imaging",
+   "unit": "",
+   "topic": "이비인후과",
+   "subtopic": "이비인후과 — 항생제에도 심해지는 인두통과 개구장애",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0337.md",
+   "snippet": "24세 남자가 5일 전부터 목이 아프고 이틀 전부터 침을 삼키기 어려워 왔다. 사흘 전 의원에서 경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다. 체온 38.6 ℃, 맥박 104회/분, 호흡 18회/분, 산소포화도 98 % 이다. 목소리가 입에 무언가를 문 듯 먹먹하고, 입을 2 cm 밖에 벌리지 못한다. 왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다. 흡기 시 협착음은 없고 침을 흘리지 않으며 목을 움직이는 데 ",
+   "text": "이비인후과 이비인후과 — 항생제에도 심해지는 인두통과 개구장애 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 24세 남자가 5일 전부터 목이 아프고 이틀 전부터 침을 삼키기 어려워 왔다. 사흘 전 의원에서 경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다. 체온 38.6 ℃, 맥박 104회/분, 호흡 18회/분, 산소포화도 98 % 이다. 목소리가 입에 무언가를 문 듯 먹먹하고, 입을 2 cm 밖에 벌리지 못한다. 왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다. 흡기 시 협착음은 없고 침을 흘리지 않으며 목을 움직이는 데 제한은 없다. 왼쪽 위목 림프절이 커져 있고 누르면 아프다. 가장 적절한 처치는? A. 다른 경구 항생제로 바꾸어 외래 추적 B. 응급 기관절개술 C. 고용량 스테로이드 단독 투여 D. 경부 림프절 절제 생검 E. 바늘흡인 또는 절개배농과 항생제"
+  },
+  {
+   "id": "imaging-2026-0336",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0336.md",
+   "snippet": "45세 남자가 6주 동안 기침과 가래가 계속되고 밤에 땀이 나며 체중이 4 kg 줄어 왔다. 결핵 치료를 받은 적은 없고, HIV 검사는 음성이다. 체온 37.8 ℃, 맥박 88회/분, 호흡 18회/분, 산소포화도 96 % 이다. 오른쪽 위 폐야에서 수포음이 들린다. 흉부 X선에서 오른쪽 위엽에 공동을 동반한 경화가 있다. 가래 항산균 도말은 양성이고, 가래 결핵균 핵산증폭검사에서 결핵균이 검출되었으며 리팜핀 내성 유전자는 검",
+   "text": "호흡기 호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 45세 남자가 6주 동안 기침과 가래가 계속되고 밤에 땀이 나며 체중이 4 kg 줄어 왔다. 결핵 치료를 받은 적은 없고, HIV 검사는 음성이다. 체온 37.8 ℃, 맥박 88회/분, 호흡 18회/분, 산소포화도 96 % 이다. 오른쪽 위 폐야에서 수포음이 들린다. 흉부 X선에서 오른쪽 위엽에 공동을 동반한 경화가 있다. 가래 항산균 도말은 양성이고, 가래 결핵균 핵산증폭검사에서 결핵균이 검출되었으며 리팜핀 내성 유전자는 검출되지 않았다. 간기능검사와 시력 검사는 정상이다(보기의 H 는 이소니아지드, R 은 리팜핀, Z 는 피라진아마이드, E 는 에탐부톨). 가장 적절한 치료는? A. HREZ 2개월 후 HR 4개월 B. 이소니아지드 단독 9개월 C. 리팜핀 단독 4개월 D. 베다퀼린 포함 다제내성 요법 E. HRE 9개월(피라진아마이드 제외)"
+  },
+  {
+   "id": "imaging-2026-0335",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0335.md",
+   "snippet": "22세 남자가 3개월 전부터 가슴과 등에 생긴 하얀 반점으로 왔다. 가려움은 거의 없고, 여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다. 다른 병력은 없다. 가슴 위쪽과 등에 경계가 뚜렷한 저색소 반점이 여러 개 합쳐져 있고, 긁으면 고운 비늘이 일어난다. 우드등 검사에서 노란빛을 띤 형광을 보인다. 비늘의 수산화칼륨(KOH) 검사에서 짧은 균사와 둥근 효모가 함께 보인다. 가장 적절한 치료는? A. 경구 아시클로버 복용 ",
+   "text": "피부과 피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 22세 남자가 3개월 전부터 가슴과 등에 생긴 하얀 반점으로 왔다. 가려움은 거의 없고, 여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다. 다른 병력은 없다. 가슴 위쪽과 등에 경계가 뚜렷한 저색소 반점이 여러 개 합쳐져 있고, 긁으면 고운 비늘이 일어난다. 우드등 검사에서 노란빛을 띤 형광을 보인다. 비늘의 수산화칼륨(KOH) 검사에서 짧은 균사와 둥근 효모가 함께 보인다. 가장 적절한 치료는? A. 경구 아시클로버 복용 B. 협대역 자외선B 광선치료 C. 케토코나졸 샴푸 또는 크림 국소 도포 D. 경구 테르비나핀 6주 복용 E. 국소 스테로이드 연고 도포"
+  },
+  {
+   "id": "imaging-2026-0334",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_he"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0334.md",
+   "snippet": "A 65 year old woman comes to the physician because of vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She has hypertension and type 2 diabetes mellitus. Her BMI is 33 kg/m2. Pelvic ",
+   "text": "병리·조직학 병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직 opendata usmle_style histology_he 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 65 year old woman comes to the physician because of vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She has hypertension and type 2 diabetes mellitus. Her BMI is 33 kg/m2. Pelvic examination shows blood in the vaginal vault and a mobile, nontender right adnexal mass. Transvaginal ultrasonography shows a thickened endometrial stripe and a 9 cm solid right ovarian mass. A photomicrograph of an endometrial biopsy specimen stained with hematoxylin and eosin is shown. Which of the following is the most likely mechanism underlying this endometrial lesion? A. Excess progesterone from a luteinized ovarian tumor B. Ectopic endometrial glands within the myometrium C. Estrogen stimulation unopposed by progesterone D. TP53 mutation arising in atrophic endometrium E. Integration of high risk HPV E6 and E7 genes"
+  },
+  {
+   "id": "imaging-2026-0333",
+   "type": "imaging",
+   "unit": "",
+   "topic": "외과",
+   "subtopic": "외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0333.md",
+   "snippet": "65세 여자가 2개월 전 샤워하다 오른쪽 유방에서 만져지는 멍울을 발견하고 왔다. 통증과 유두 분비물은 없다. 52세에 폐경되었고 호르몬 치료를 받은 적은 없다. 어머니가 70세에 유방암 진단을 받았다. 오른쪽 유방 위바깥쪽에 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지며, 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 부위에 경계가 불분명한 종괴가 보였다. 같은 부위의 유방 초음파는 그림과 같다. 다음 ",
+   "text": "외과 외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 65세 여자가 2개월 전 샤워하다 오른쪽 유방에서 만져지는 멍울을 발견하고 왔다. 통증과 유두 분비물은 없다. 52세에 폐경되었고 호르몬 치료를 받은 적은 없다. 어머니가 70세에 유방암 진단을 받았다. 오른쪽 유방 위바깥쪽에 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지며, 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 부위에 경계가 불분명한 종괴가 보였다. 같은 부위의 유방 초음파는 그림과 같다. 다음 단계로 가장 적절한 것은? A. 타목시펜 복용 후 추적 B. 초음파 유도 중심부 바늘생검 C. 6개월 뒤 추적 초음파 D. 세침흡인으로 내용물 배액 E. 조직 진단 없이 유방전절제술"
+  },
+  {
+   "id": "imaging-2026-0332",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신장·비뇨기",
+   "subtopic": "신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "us"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0332.md",
+   "snippet": "14세 남자가 1시간 전 축구 경기 중 공에 오른쪽 음낭을 세게 맞은 뒤 심한 통증과 부기로 응급실에 왔다. 구역은 있으나 구토는 없다. 다른 병력은 없다. 혈압 118/72 mmHg, 맥박 96회/분, 체온 36.8 ℃ 이다. 오른쪽 음낭이 붓고 멍이 들었으며 고환을 누르면 매우 아프다. 고환올림근반사는 양쪽 모두 있다. 소변검사는 정상이다. 오른쪽 고환의 회색조·색 도플러 초음파는 그림과 같다. 가장 적절한 처치는? A. ",
+   "text": "신장·비뇨기 신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 14세 남자가 1시간 전 축구 경기 중 공에 오른쪽 음낭을 세게 맞은 뒤 심한 통증과 부기로 응급실에 왔다. 구역은 있으나 구토는 없다. 다른 병력은 없다. 혈압 118/72 mmHg, 맥박 96회/분, 체온 36.8 ℃ 이다. 오른쪽 음낭이 붓고 멍이 들었으며 고환을 누르면 매우 아프다. 고환올림근반사는 양쪽 모두 있다. 소변검사는 정상이다. 오른쪽 고환의 회색조·색 도플러 초음파는 그림과 같다. 가장 적절한 처치는? A. 도수 정복으로 고환 비틀림 풀기 B. 경구 항생제 투여와 외래 추적 C. 1주 뒤 초음파 재검 D. 응급 음낭 수술 탐색과 백막 봉합 E. 얼음찜질·진통제·음낭 거상 후 외래 추적"
+  },
+  {
+   "id": "imaging-2026-0331",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
+   "confidence": "high",
+   "date": "2026-10-14",
+   "path": "content/imaging/2026/imaging-2026-0331.md",
+   "snippet": "A 30 year old man is brought to the emergency department 1 hour after a motorcycle collision in which he was thrown forward and struck his head on the road. He reports severe pain at the back of the upper neck and supports his head with bot",
+   "text": "응급·중환자 응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 30 year old man is brought to the emergency department 1 hour after a motorcycle collision in which he was thrown forward and struck his head on the road. He reports severe pain at the back of the upper neck and supports his head with both hands. Blood pressure is 132/80 mm Hg, and pulse is 94/min. He is alert and oriented. There is midline tenderness over the upper cervical spine. Muscle strength, sensation, and deep tendon reflexes are normal in all four limbs. A midsagittal CT scan of the cervical spine is shown. Disruption of which of the following structures is most likely responsible for these findings? A. Transverse ligament of the atlas B. Alar ligaments C. Tectorial membrane D. Anterior longitudinal ligament E. Ligamentum flavum"
   },
   {
    "id": "cn.rheum.behcet.clinical-diagnosis",
