@@ -1,9 +1,9 @@
 {
  "books": {
   "순환기내과": {
-   "hash": "7760bc2210f7e01ac1da",
-   "version": 14,
-   "date": "2026-10-13",
+   "hash": "7c1dab9e328062613b6c",
+   "version": 15,
+   "date": "2026-10-14",
    "file": "MedKOS_학습서_순환기내과.pdf",
    "pages": 23,
    "template_version": 11,
@@ -39,16 +39,16 @@
      "concept_version": 4
     },
     "cn.pulm.pulmonary-embolism.high-risk-reperfusion": {
-     "title": "쇼크를 동반한 고위험(대량) 폐색전증 — 항응고만으로는 부족하고, 금기가 없으면 전신 혈전용해로 재관류한다",
+     "title": "고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해",
      "page": 13,
-     "concept_hash": "b2a0e6947e1d0916",
-     "concept_version": 2
+     "concept_hash": "86dbd2fd99302a03",
+     "concept_version": 3
     },
     "cn.pulm.pulmonary-embolism.intermediate-high-risk-management": {
-     "title": "혈압이 유지되는 급성 폐색전증 — 우심실 부담·트로포닌 상승(중간-고위험)에서 항응고 + 감시가 먼저, 혈전용해는 붕괴 때",
-     "page": 16,
-     "concept_hash": "0ef8813b54803472",
-     "concept_version": 1
+     "title": "중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때",
+     "page": 15,
+     "concept_hash": "4e8173c6e4c8359f",
+     "concept_version": 2
     },
     "cn.cardio.aortic-dissection.impulse-control-first": {
      "title": "급성 대동맥박리 — 혈압보다 심박수·수축력을 먼저",
@@ -65,9 +65,9 @@
    },
    "drive": {
     "id": "1eX1bVIdhZd-3tuc0WERiiWTWmegXu78n",
-    "md5": "917757f273558bf416a6aba28dbb626b",
-    "version": 14,
-    "uploaded": "2026-10-13T12:08:38+09:00"
+    "md5": "863005f440fe299fcd6217392dd7b59a",
+    "version": 15,
+    "uploaded": "2026-10-14T10:32:03+09:00"
    },
    "archive": [
     "MedKOS_학습서_순환기내과_v1_2026-09-21.pdf",
@@ -83,10 +83,12 @@
     "MedKOS_학습서_순환기내과_v11_2026-09-29.pdf",
     "MedKOS_학습서_순환기내과_v12_2026-10-02.pdf",
     "MedKOS_학습서_순환기내과_v13_2026-10-03.pdf",
-    "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf"
+    "MedKOS_학습서_순환기내과_v14_2026-10-13.pdf",
+    "MedKOS_학습서_순환기내과_v15_2026-10-14.pdf"
    ],
    "changes": [
-    "내용 갱신: 폐동맥고혈압 — 확진은 우심도자술, 심초음파는 선별 (정리본 v1 → v2)"
+    "내용 갱신: 고위험 폐색전증 — 쇼크면 금기 확인 뒤 전신 혈전용해 (정리본 v2 → v3)",
+    "내용 갱신: 중간-고위험 폐색전증 — 항응고·감시가 먼저, 혈전용해는 붕괴 때 (정리본 v1 → v2)"
    ]
   },
   "피부과": {
@@ -463,9 +465,9 @@
    ]
   },
   "산부인과": {
-   "hash": "b46b17740237ccb6e3eb",
-   "version": 10,
-   "date": "2026-10-07",
+   "hash": "e9c6d4c649d4a2bc49d1",
+   "version": 11,
+   "date": "2026-10-14",
    "file": "MedKOS_학습서_산부인과.pdf",
    "pages": 20,
    "template_version": 11,
@@ -521,9 +523,9 @@
    },
    "drive": {
     "id": "1ZcYVITkpTWEk8WTWSawn_IS-QxbuiTfL",
-    "md5": "0d8e470af62e9a218ef81e88c53d75f6",
-    "version": 10,
-    "uploaded": "2026-10-07T10:06:56+09:00"
+    "md5": "4d0095d831278b5be3de09c73523b85a",
+    "version": 11,
+    "uploaded": "2026-10-14T10:32:03+09:00"
    },
    "archive": [
     "MedKOS_학습서_산부인과_v1_2026-09-23.pdf",
@@ -535,14 +537,10 @@
     "MedKOS_학습서_산부인과_v7_2026-09-28.pdf",
     "MedKOS_학습서_산부인과_v8_2026-10-03.pdf",
     "MedKOS_학습서_산부인과_v9_2026-10-06.pdf",
-    "MedKOS_학습서_산부인과_v10_2026-10-07.pdf"
+    "MedKOS_학습서_산부인과_v10_2026-10-07.pdf",
+    "MedKOS_학습서_산부인과_v11_2026-10-14.pdf"
    ],
-   "changes": [
-    "내용 갱신: 기능성 시상하부 무월경 — 에스트로겐이 없어 위험은 뼈다 (정리본 v1 → v2)",
-    "내용 갱신: 다낭성 난소 증후군 불임 — letrozole(레트로졸)부터 단계로 올린다 (정리본 v3 → v4)",
-    "내용 갱신: 임신당뇨병 — 반복 초과면 약물로, 약은 인슐린 (정리본 v2 → v3)",
-    "내용 갱신: 포상기태 — 자궁 안이 찼고 β-hCG 가 높다 (정리본 v3 → v4)"
-   ]
+   "changes": []
   },
   "정신건강의학과": {
    "hash": "4d5f6427dd4678b06a03",
@@ -598,11 +596,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "1bd57eb6e45c6822506e",
-   "version": 19,
-   "date": "2026-10-13",
+   "hash": "03732c0f83fa97335458",
+   "version": 20,
+   "date": "2026-10-14",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 36,
+   "pages": 37,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -618,14 +616,14 @@
      "concept_version": 1
     },
     "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
-     "title": "항인지질항체증후군 — 혈전·임신 이환과 지속 항체로 진단하기",
+     "title": "항인지질항체증후군 — 혈전·임신 이환에 지속 항체",
      "page": 6,
-     "concept_hash": "ed5381b90968663e",
-     "concept_version": 1
+     "concept_hash": "f692b5ff2c9aacac",
+     "concept_version": 2
     },
     "cn.rheum.rheumatoid-arthritis.methotrexate-anchor": {
      "title": "류마티스관절염 — 첫 DMARD 는 methotrexate(메토트렉세이트), 안 되면 병용",
-     "page": 7,
+     "page": 8,
      "concept_hash": "e560f7fccb4c5872",
      "concept_version": 1
     },
@@ -637,7 +635,7 @@
     },
     "cn.path.scleroderma-renal-crisis.hyperplastic-arteriolosclerosis": {
      "title": "경피증 신장 위기 — 병변은 사구체가 아닌 소동맥",
-     "page": 11,
+     "page": 12,
      "concept_hash": "48644d135721933e",
      "concept_version": 2
     },
@@ -654,10 +652,10 @@
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
-     "title": "축성 척추관절염 — NSAID 두 가지가 실패하면 다음은 TNF·IL-17 억제제, 척추에는 methotrexate(메토트렉세이트)·스테로이드가 듣지 않는다",
+     "title": "축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제",
      "page": 16,
-     "concept_hash": "f07740b9140fd90e",
-     "concept_version": 2
+     "concept_hash": "1924d396b0fdfb26",
+     "concept_version": 3
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
@@ -683,48 +681,54 @@
      "concept_hash": "d7b76191c2ec0df1",
      "concept_version": 1
     },
+    "cn.rheum.behcet.clinical-diagnosis": {
+     "title": "베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단",
+     "page": 27,
+     "concept_hash": "30b6e60570924c5a",
+     "concept_version": 1
+    },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 26,
+     "page": 28,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 28,
+     "page": 30,
      "concept_hash": "0ca1331142c86acb",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 29,
+     "page": 31,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 31,
+     "page": 33,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 33,
+     "page": 35,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 35,
+     "page": 36,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "55201295593875e0a34603e360e94e3a",
-    "version": 19,
-    "uploaded": "2026-10-13T12:08:38+09:00"
+    "md5": "3a6f91f0a490db53862e17a4ac3ce499",
+    "version": 20,
+    "uploaded": "2026-10-14T10:32:03+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -745,10 +749,13 @@
     "MedKOS_학습서_류마티스내과_v16_2026-10-08.pdf",
     "MedKOS_학습서_류마티스내과_v17_2026-10-11.pdf",
     "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf",
-    "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf"
+    "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf",
+    "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf"
    ],
    "changes": [
-    "새 단원: 쇼그렌증후군 — 건조 증상은 항체·생검으로 가린다"
+    "내용 갱신: 항인지질항체증후군 — 혈전·임신 이환에 지속 항체 (정리본 v1 → v2)",
+    "내용 갱신: 축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제 (정리본 v2 → v3)",
+    "새 단원: 베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단"
    ]
   },
   "호흡기내과": {
@@ -1234,13 +1241,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "f124d9bca1595384ec206604c54f9d56",
+   "md5": "4a980504fdde7cd1bb057f4ce817d282",
    "version": null,
-   "uploaded": "2026-10-13T12:08:38+09:00"
+   "uploaded": "2026-10-14T10:32:03+09:00"
   }
  },
- "updated": "2026-10-13"
+ "updated": "2026-10-14"
 }
