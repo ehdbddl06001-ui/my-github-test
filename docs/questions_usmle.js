@@ -21554,5 +21554,1059 @@ window.USMLE_QUESTIONS = [
    }
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0206",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant",
+  "type": "Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant",
+  "difficulty": 4,
+  "created": "2026-10-15",
+  "vignette": "A 67-year-old man who is hospitalized for methicillin-resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancomycin for 3 days; because his serum creatinine rose, the antibiotic was changed 2 days ago, and he has since received a different oral antibiotic. He has taken sertraline 100 mg daily for major depressive disorder for 2 years and takes no other medications. His vital signs are shown. He is restless and diaphoretic, and he is oriented to person only. The pupils are 6 mm and reactive. The mucous membranes are moist and the bowel sounds are hyperactive. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and are 3+ in the upper extremities. There is intermittent slow horizontal eye movement from side to side. Muscle tone is increased in the legs; there is no lead-pipe rigidity of the arms. Laboratory results are shown.",
+  "question": "Which of the following actions of the most recently added drug best explains this patient's current condition?",
+  "options": [
+   "Inhibition of hepatic CYP2D6 metabolism of sertraline",
+   "Blockade of central dopamine D2 receptors",
+   "Inhibition of monoamine oxidase",
+   "Blockade of central muscarinic receptors",
+   "Inhibition of mitochondrial protein synthesis"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 3단계 추론. ① 초조·발한·설사·산동 + 하지 우세 반사항진·지속 발목 간대·안구 간대 + 고열 → 세로토닌 증후군(납관 경직 없음, 점막 촉촉·장음 항진). ② sertraline 을 2년간 문제없이 먹다가, 신기능 저하로 반코마이신을 대신한 경구 MRSA 폐렴 약을 시작한 지 2일 → linezolid 와의 상호작용. ③ linezolid 는 비선택 MAO 억제제라 세로토닌 분해를 줄이고, SSRI 의 재흡수 차단과 겹쳐 세로토닌이 과잉된다.\n- 오답감별:\n  - (A) CYP2D6 억제는 fluoxetine·paroxetine 등의 상호작용 기전이다. linezolid 는 CYP 를 거의 억제하지 않는다.\n  - (B) D2 차단은 신경이완제 악성 증후군의 기전 — 납관 경직·서동·반사 저하가 특징이고 간대·설사가 없다. 이 환자는 D2 차단제를 받지 않았다.\n  - (D) 무스카린 차단은 항콜린 독성 — 피부·점막 건조, 장음 감소가 특징인데 이 환자는 발한·설사·장음 항진이다.\n  - (E) 미토콘드리아 단백 합성 억제는 linezolid 의 실제 작용이지만 장기 투여 때의 젖산산증·골수억제·말초·시신경병증을 설명한다 — 2일 만의 간대·반사항진은 아니다.\n- 임상핵심: SSRI 복용자 + linezolid(또는 methylene blue) → 세로토닌 증후군. 기전은 CYP 가 아니라 MAO 억제. 하지 우세 간대가 단서다.\n- 출처: Boyer & Shannon, NEJM 2005(serotonin syndrome); FDA Drug Safety Communication 2011(linezolid); Katzung(Oxazolidinones).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 초조·발한·설사·산동 + 하지 우세 반사항진·지속 발목 간대·안구 간대 + 고열 → 세로토닌 증후군(납관 경직 없음, 점막 촉촉·장음 항진). ② sertraline 을 2년간 문제없이 먹다가, 신기능 저하로 반코마이신을 대신한 경구 MRSA 폐렴 약을 시작한 지 2일 → linezolid 와의 상호작용. ③ linezolid 는 비선택 MAO 억제제라 세로토닌 분해를 줄이고, SSRI 의 재흡수 차단과 겹쳐 세로토닌이 과잉된다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) CYP2D6 억제는 fluoxetine·paroxetine 등의 상호작용 기전이다. linezolid 는 CYP 를 거의 억제하지 않는다.\n(B) D2 차단은 신경이완제 악성 증후군의 기전 — 납관 경직·서동·반사 저하가 특징이고 간대·설사가 없다. 이 환자는 D2 차단제를 받지 않았다.\n(D) 무스카린 차단은 항콜린 독성 — 피부·점막 건조, 장음 감소가 특징인데 이 환자는 발한·설사·장음 항진이다.\n(E) 미토콘드리아 단백 합성 억제는 linezolid 의 실제 작용이지만 장기 투여 때의 젖산산증·골수억제·말초·시신경병증을 설명한다 — 2일 만의 간대·반사항진은 아니다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "SSRI 복용자 + linezolid(또는 methylene blue) → 세로토닌 증후군. 기전은 CYP 가 아니라 MAO 억제. 하지 우세 간대가 단서다."
+   },
+   {
+    "k": "출처",
+    "v": "Boyer & Shannon, NEJM 2005(serotonin syndrome); FDA Drug Safety Communication 2011(linezolid); Katzung(Oxazolidinones)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352:1112-1120; Katzung's Basic & Clinical Pharmacology — Oxazolidinones; FDA Drug Safety Communication 2011: serotonin syndrome with linezolid and serotonergic psychiatric drugs)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "38.9 °C (102.0 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "124 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "158/92 mm Hg"
+   },
+   {
+    "name": "Respirations",
+    "value": "20 /min"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Creatine kinase",
+    "value": "310 U/L",
+    "ref": "25–200 U/L"
+   },
+   {
+    "name": "Leukocyte count",
+    "value": "13,800 /mm³",
+    "ref": "4,500–11,000 /mm³"
+   },
+   {
+    "name": "Sodium",
+    "value": "138 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Creatinine",
+    "value": "1.4 mg/dL (2.1 mg/dL three days ago)",
+    "ref": "0.7–1.3 mg/dL"
+   },
+   {
+    "name": "Glucose",
+    "value": "112 mg/dL",
+    "ref": "70–100 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "고열 + 의식 변화 + 근육 이상 — 약물 독성 감별\n─────────────────────────────────────────────\n세로토닌 증후군   세로토닌 약 추가·증량 뒤 수 시간   간대(하지↑)·반사항진·산동·설사·발한\n신경이완제 악성 증후군 D2 차단제 뒤 수일          납관 경직·서동·반사 저하·CK 매우 높음\n항콜린 독성      항콜린 약                     건조한 피부·점막, 장음↓, 요저류, 반사 정상\n악성 고열       흡입 마취제·succinylcholine      수술 중 고탄산·경직\n─────────────────────────────────────────────\nMAO 억제 작용이 있는 「숨은」 약: linezolid · methylene blue · selegiline·rasagiline\n",
+   "참고문헌": [
+    "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352(11):1112-1120.",
+    "FDA Drug Safety Communication (2011): Serious CNS reactions possible when linezolid is given to patients taking serotonergic psychiatric medications.",
+    "Katzung BG et al. Basic & Clinical Pharmacology — Oxazolidinones (linezolid)."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "SSRI 복용자에게 새 항생제 뒤 하지 우세 간대·반사항진·고열·설사가 생기면 세로토닌 증후군이고, 반코마이신 대신 쓰는 경구 MRSA 약(linezolid)의 MAO 억제가 원인이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "A(CYP2D6 억제)는 fluoxetine·paroxetine·ciprofloxacin 같은 약의 상호작용 기전이지만 linezolid 는 CYP 를 거의 억제하지 않는다 — 세로토닌 분해 효소(MAO) 자체를 막는다. B(D2 차단)는 신경이완제 악성 증후군으로, 서서히 생기는 납관 경직·서동·반사 저하가 특징이고 간대·설사·산동이 없다.",
+   "steps": 3,
+   "chain": [
+    "초조·발한·설사·산동 + 하지 우세 반사항진·지속 발목 간대·안구 간대 + 고열 → 세로토닌 증후군(납관 경직 없음 → 신경이완제 악성 증후군 아님, 점막 촉촉·장음 항진 → 항콜린 독성 아님)",
+    "sertraline 장기 복용 + 신기능 저하로 반코마이신을 바꾼 경구 MRSA 폐렴 약 2일 → linezolid 와의 상호작용",
+    "linezolid = 비선택 MAO 억제 → 세로토닌 분해 감소 + SSRI 재흡수 차단 → 세로토닌 과잉"
+   ],
+   "key": [
+    {
+     "item": "Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus",
+     "why": "하지 우세 반사항진·간대 — 세로토닌 증후군의 가장 특이한 소견(Hunter 기준)",
+     "also": []
+    },
+    {
+     "item": "There is intermittent slow horizontal eye movement from side to side",
+     "why": "안구 간대 — 세로토닌 증후군",
+     "also": []
+    },
+    {
+     "item": "He has taken sertraline 100 mg daily for major depressive disorder for 2 years",
+     "why": "세로토닌 작용 약 장기 복용 — 2년간 문제없다가 새 약 뒤 발병",
+     "also": []
+    },
+    {
+     "item": "because his serum creatinine rose, the antibiotic was changed 2 days ago",
+     "why": "신기능 저하로 반코마이신을 대신하는 경구 MRSA 약 = linezolid, 시점이 맞음",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no lead-pipe rigidity of the arms",
+     "why": "신경이완제 악성 증후군(B)의 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "The mucous membranes are moist and the bowel sounds are hyperactive",
+     "why": "항콜린 독성(D: 건조·장음 감소)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Creatine kinase",
+     "why": "경미한 상승 — 근육 과활동으로 설명되며 신경이완제 악성 증후군만큼 높지 않다",
+     "also": []
+    }
+   ],
+   "summary": "SSRI 를 2년간 먹던 환자가 신기능 때문에 반코마이신을 경구 MRSA 약으로 바꾼 뒤 이틀 만에 하지 우세 간대·반사항진·고열·설사가 생겼다. 그 약은 linezolid 이고, 비선택 MAO 억제로 세로토닌 분해를 막아 SSRI 와 함께 세로토닌 증후군을 일으킨다.",
+   "switch": {
+    "choice": "A",
+    "condition": "새로 더한 약이 fluoxetine·paroxetine·bupropion 처럼 CYP2D6 를 강하게 억제하는 약이고, 기존 약이 CYP2D6 로 대사되는 세로토닌 작용 약이라면 대사 억제가 더 그럴듯한 기전이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.pharm.linezolid-serotonin-syndrome.mao-inhibition-mechanism",
+  "distractors": {
+   "A": {
+    "tempting": "약을 더한 뒤 기존 약의 독성이 나타나면 간 대사 효소 억제로 농도가 오른 것이라고 먼저 떠올린다.",
+    "answer_first": "linezolid 는 CYP 효소를 거의 억제하지 않는다. sertraline 농도를 올리는 것이 아니라, 세로토닌을 분해하는 MAO 를 막아 시냅스의 세로토닌을 늘린다.",
+    "discriminator": "새 약 = 반코마이신을 대신한 경구 MRSA 약(linezolid) — CYP 억제제가 아니라 MAO 억제제.",
+    "when_right": "더한 약이 fluoxetine·paroxetine·bupropion·ciprofloxacin(1A2) 같은 CYP 억제제이고 기존 약이 그 효소로 대사될 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "고열·초조·근긴장 증가·CK 상승은 신경이완제 악성 증후군처럼 보인다.",
+    "answer_first": "신경이완제 악성 증후군은 D2 차단제 뒤 며칠에 걸쳐 납관 경직·서동·반사 저하로 오고, 간대·안구 간대·설사·산동이 없다. 이 환자는 D2 차단제를 받지 않았고 하지 우세 간대가 뚜렷하다.",
+    "discriminator": "「sustained ankle clonus」 · 「no lead-pipe rigidity of the arms」 · 설사·산동.",
+    "when_right": "항정신병약·metoclopramide 를 시작한 뒤 서서히 납관 경직·의식 저하·고열·매우 높은 CK 가 생기고 간대가 없을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0207",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Vomiting, Jaundice, a Big Liver and Cloudy Lenses in a 6-Day-Old Breastfed Girl With Gram-Negative Sepsis",
+  "type": "Vomiting, Jaundice, a Big Liver and Cloudy Lenses in a 6-Day-Old Breastfed Girl With Gram-Negative Sepsis",
+  "difficulty": 4,
+  "created": "2026-10-15",
+  "vignette": "A 6-day-old girl is brought to the emergency department because of poor feeding, vomiting after most feeds and increasing sleepiness for 2 days. She was born at term after an uncomplicated pregnancy and vaginal delivery and has been exclusively breastfed since birth. Her newborn screening results are not yet available. Her vital signs are shown. She is lethargic and jaundiced. The anterior fontanelle is flat. The liver edge is palpable 4 cm below the right costal margin. Examination of the red reflex shows a central oil-droplet opacity in both lenses. Laboratory results are shown. Blood cultures grow Escherichia coli.",
+  "question": "Which of the following is most directly responsible for the lens findings in this patient?",
+  "options": [
+   "Accumulation of galactitol",
+   "Accumulation of galactose 1-phosphate",
+   "Accumulation of sorbitol",
+   "Accumulation of fructose 1-phosphate",
+   "Accumulation of glucose 6-phosphate"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 3단계 추론. ① 모유 수유 며칠 뒤 구토·처짐·황달·간비대·응고장애 + 대장균 패혈증 → 고전 갈락토스혈증(GALT 결핍). ② 소변 포도당 효소 검사 음성 + 구리 환원 검사 양성 → 포도당이 아닌 환원당(갈락토스). ③ 쌓인 갈락토스가 알도스 환원효소에 의해 갈락티톨로 바뀌어 수정체에 갇히고, 삼투로 물을 끌어들여 백내장을 만든다.\n- 오답감별:\n  - (B) 갈락토스 1-인산은 GALT 결핍에서 쌓여 간·신장·뇌 손상을 일으키지만, 백내장은 갈락토스 1-인산이 쌓이지 않는 갈락토키나제 결핍에서도 생긴다 — 수정체의 직접 원인이 아니다.\n  - (C) 소르비톨은 고혈당일 때 같은 효소가 포도당에서 만드는 당알코올(당뇨 백내장). 이 환자는 저혈당이다.\n  - (D) 과당 1-인산은 유전성 과당 불내성(알돌라제 B 결핍)에서 쌓인다 — 과일·자당을 먹기 시작한 뒤 발병하며, 모유만 먹는 신생아에서는 생기지 않는다.\n  - (E) 포도당 6-인산은 폰 기르케병에서 쌓여 공복 저혈당·젖산증·간비대를 만들지만 백내장·대장균 패혈증과는 관련이 없다.\n- 임상핵심: 백내장 = 알도스 환원효소가 만든 당알코올(갈락토스 → 갈락티톨, 포도당 → 소르비톨)의 삼투 작용. 갈락토스 1-인산은 간·신장·뇌 독성.\n- 출처: Lippincott Biochemistry(galactose metabolism); Nelson Textbook of Pediatrics(galactose defects); GeneReviews(Classic galactosemia).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 모유 수유 며칠 뒤 구토·처짐·황달·간비대·응고장애 + 대장균 패혈증 → 고전 갈락토스혈증(GALT 결핍). ② 소변 포도당 효소 검사 음성 + 구리 환원 검사 양성 → 포도당이 아닌 환원당(갈락토스). ③ 쌓인 갈락토스가 알도스 환원효소에 의해 갈락티톨로 바뀌어 수정체에 갇히고, 삼투로 물을 끌어들여 백내장을 만든다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 갈락토스 1-인산은 GALT 결핍에서 쌓여 간·신장·뇌 손상을 일으키지만, 백내장은 갈락토스 1-인산이 쌓이지 않는 갈락토키나제 결핍에서도 생긴다 — 수정체의 직접 원인이 아니다.\n(C) 소르비톨은 고혈당일 때 같은 효소가 포도당에서 만드는 당알코올(당뇨 백내장). 이 환자는 저혈당이다.\n(D) 과당 1-인산은 유전성 과당 불내성(알돌라제 B 결핍)에서 쌓인다 — 과일·자당을 먹기 시작한 뒤 발병하며, 모유만 먹는 신생아에서는 생기지 않는다.\n(E) 포도당 6-인산은 폰 기르케병에서 쌓여 공복 저혈당·젖산증·간비대를 만들지만 백내장·대장균 패혈증과는 관련이 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "백내장 = 알도스 환원효소가 만든 당알코올(갈락토스 → 갈락티톨, 포도당 → 소르비톨)의 삼투 작용. 갈락토스 1-인산은 간·신장·뇌 독성."
+   },
+   {
+    "k": "출처",
+    "v": "Lippincott Biochemistry(galactose metabolism); Nelson Textbook of Pediatrics(galactose defects); GeneReviews(Classic galactosemia)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry — Metabolism of monosaccharides: galactose; Nelson Textbook of Pediatrics — Defects in galactose metabolism; Berry GT. Classic galactosemia and clinical variant galactosemia. GeneReviews)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "38.3 °C (100.9 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "172 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "50 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "66/40 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Glucose",
+    "value": "44 mg/dL",
+    "ref": "50–90 mg/dL (neonate)"
+   },
+   {
+    "name": "Total bilirubin",
+    "value": "17.6 mg/dL",
+    "ref": "<12 mg/dL (day 6)"
+   },
+   {
+    "name": "Direct bilirubin",
+    "value": "2.8 mg/dL",
+    "ref": "<1.0 mg/dL"
+   },
+   {
+    "name": "AST",
+    "value": "152 U/L",
+    "ref": "<80 U/L"
+   },
+   {
+    "name": "ALT",
+    "value": "126 U/L",
+    "ref": "<60 U/L"
+   },
+   {
+    "name": "Prothrombin time",
+    "value": "19 sec",
+    "ref": "11–15 sec"
+   },
+   {
+    "name": "Urine dipstick, glucose",
+    "value": "Negative",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urine reducing substances (copper reduction test)",
+    "value": "Positive",
+    "ref": "Negative"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "갈락토스 대사 결핍 비교\n─────────────────────────────────────────────\n              고전 갈락토스혈증(GALT)     갈락토키나제 결핍\n쌓이는 것       갈락토스·갈락토스 1-인산·갈락티톨  갈락토스·갈락티톨\n백내장         있음(갈락티톨)            있음(갈락티톨)\n간·신장·뇌·패혈증  있음(갈락토스 1-인산)       없음\n치료          유당·갈락토스 제거(콩 분유)    유당 제거\n─────────────────────────────────────────────\n소변: 포도당 효소 검사 음성 + 구리 환원 검사 양성 = 비포도당 환원당\n",
+   "참고문헌": [
+    "Ferrier DR. Lippincott Illustrated Reviews: Biochemistry — Galactose metabolism.",
+    "Kliegman RM et al. Nelson Textbook of Pediatrics — Defects in galactose metabolism.",
+    "Berry GT. Classic galactosemia and clinical variant galactosemia. GeneReviews (University of Washington)."
+   ]
+  },
+  "design": {
+   "target": "기전",
+   "decision": "모유 수유 신생아의 구토·황달·간비대·대장균 패혈증·소변 비포도당 환원당은 고전 갈락토스혈증이고, 백내장은 알도스 환원효소가 만든 갈락티톨의 삼투 작용 때문이다.",
+   "rival": [
+    "B",
+    "C"
+   ],
+   "discriminator": "갈락토스 1-인산(B)은 GALT 결핍에서 실제로 쌓이고 간·신장·뇌 독성을 일으키지만, 백내장은 갈락토키나제 결핍처럼 갈락토스 1-인산이 쌓이지 않아도 생긴다 — 수정체 혼탁의 직접 원인은 갈락티톨이다. 소르비톨(C)은 같은 효소가 포도당에서 만드는 당알코올로 고혈당(당뇨병)에서 백내장을 일으키지만, 이 환자는 저혈당이다.",
+   "steps": 3,
+   "chain": [
+    "모유 수유 며칠 뒤 구토·처짐·황달·간비대·응고장애 + 대장균 패혈증 → 갈락토스 대사 이상(고전 갈락토스혈증)",
+    "소변 포도당 효소 검사 음성 + 구리 환원 검사 양성 → 포도당이 아닌 환원당(갈락토스)이 소변에 나옴",
+    "쌓인 갈락토스 → 알도스 환원효소 → 갈락티톨이 수정체에 갇혀 삼투성 부종 → 백내장"
+   ],
+   "key": [
+    {
+     "item": "has been exclusively breastfed since birth",
+     "why": "유당(갈락토스) 노출 — 수유 시작 뒤 며칠 만의 발병",
+     "also": []
+    },
+    {
+     "item": "Blood cultures grow Escherichia coli",
+     "why": "갈락토스혈증 신생아의 대장균 패혈증은 특징적 동반 소견",
+     "also": []
+    },
+    {
+     "item": "Examination of the red reflex shows a central oil-droplet opacity in both lenses",
+     "why": "갈락토스혈증의 기름방울 모양 백내장 — 묻는 대상",
+     "also": []
+    },
+    {
+     "item": "Urine reducing substances (copper reduction test)",
+     "why": "양성 + 포도당 효소 검사 음성 → 비포도당 환원당(갈락토스)",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Glucose",
+     "why": "저혈당 — 고혈당에서 소르비톨이 쌓이는 당뇨 백내장(C) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "has been exclusively breastfed since birth",
+     "why": "과일·자당 노출이 없어 유전성 과당 불내성(D)의 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "Her newborn screening results are not yet available",
+     "why": "신생아 선별 결과 전에 발병하는 것이 고전 갈락토스혈증의 흔한 경과",
+     "also": []
+    }
+   ],
+   "summary": "모유 수유 며칠 뒤 구토·황달·간비대·응고장애와 대장균 패혈증이 오고 소변에 포도당이 아닌 환원당이 나오면 고전 갈락토스혈증이다. 간·신장·뇌 독성은 갈락토스 1-인산 때문이지만, 백내장은 알도스 환원효소가 만든 갈락티톨이 수정체에 갇혀 삼투로 물을 끌어들이기 때문이다.",
+   "switch": {
+    "choice": "C",
+    "condition": "고혈당이 오래 이어진 당뇨병 환자의 백내장이라면, 같은 알도스 환원효소가 포도당에서 만든 소르비톨이 직접 원인이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.biochem.classic-galactosemia.galactitol-cataract-mechanism",
+  "distractors": {
+   "B": {
+    "tempting": "GALT 가 막히면 바로 앞 기질인 갈락토스 1-인산이 쌓이고, 그것이 갈락토스혈증 손상의 주범이라고 배웠다.",
+    "answer_first": "갈락토스 1-인산은 간·신장·뇌 손상을 설명하지만, 수정체 혼탁은 갈락토스가 알도스 환원효소로 바뀐 갈락티톨의 삼투 작용이다. 갈락토스 1-인산이 쌓이지 않는 갈락토키나제 결핍에서도 백내장이 생기는 이유다.",
+    "discriminator": "묻는 것이 간이 아니라 「lens findings」 — 수정체 손상은 당알코올(갈락티톨) 축적.",
+    "when_right": "질문이 고전 갈락토스혈증의 간부전·신세관 손상·지적 장애의 원인 대사물을 물을 때.",
+    "split": ""
+   },
+   "C": {
+    "tempting": "백내장 기전으로 알도스 환원효소 → 소르비톨 축적을 먼저 외운다.",
+    "answer_first": "소르비톨은 고혈당일 때 포도당에서 만들어진다. 이 환자는 저혈당이고 쌓인 당은 갈락토스이므로, 같은 효소가 만든 당알코올은 갈락티톨이다.",
+    "discriminator": "「Glucose 44 mg/dL」 · 소변 포도당 음성·환원당 양성.",
+    "when_right": "조절되지 않는 당뇨병 환자의 백내장·신경병증 기전을 물을 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0208",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Fever, Shock and Blood-Filled Blisters on One Leg the Day After a Restaurant Meal in a Man With Cirrhosis",
+  "type": "Fever, Shock and Blood-Filled Blisters on One Leg the Day After a Restaurant Meal in a Man With Cirrhosis",
+  "difficulty": 3,
+  "created": "2026-10-15",
+  "vignette": "A 58-year-old man is brought to the emergency department because of fever, shaking chills and severe pain and swelling of the left lower leg for 18 hours. He has alcohol-related cirrhosis. The evening before his symptoms began, he ate a dozen raw oysters at a seafood restaurant on the Gulf Coast of Texas. He has had no vomiting or diarrhea. He has not had any skin injury and has not been swimming or wading. His vital signs are shown. He is confused. The sclerae are icteric and there is shifting dullness of the abdomen. The left lower leg is swollen, dusky red and exquisitely tender from the ankle to the knee, with several large bullae filled with dark, blood-tinged fluid. There is no crepitus. Laboratory results are shown. A Gram stain of fluid aspirated from one of the bullae shows gram-negative rods, and blood cultures are pending.",
+  "question": "Which of the following is the most likely causative organism?",
+  "options": [
+   "Streptococcus pyogenes",
+   "Vibrio parahaemolyticus",
+   "Clostridium perfringens",
+   "Vibrio vulnificus",
+   "Listeria monocytogenes"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 2단계 추론. ① 수포액 그람 염색 = 그람 음성 막대균 → 그람 양성균(연쇄상구균·클로스트리디움·리스테리아) 가능성이 낮다. ② 간경변 + 날굴 섭취 다음 날 + 장염 없음 + 패혈성 쇼크·출혈성 수포 → Vibrio vulnificus 1차 패혈증. 간질환·철 과부하 환자에서 치명률이 높다.\n- 오답감별:\n  - (A) A군 연쇄상구균은 괴사성 근막염의 대표 균이지만 그람 양성 알균이고 대개 피부 상처 뒤에 생긴다.\n  - (B) V. parahaemolyticus 는 날해산물 뒤 설사·복통의 장염을 일으킨다 — 이 환자는 장 증상이 없고 패혈증·출혈성 수포가 있다.\n  - (C) C. perfringens 는 오염된 깊은 상처 뒤 가스 괴저를 일으키는 그람 양성 막대균이다 — 상처도 없고 그람 음성이다.\n  - (E) Listeria 는 간경변 같은 면역 저하자에서 균혈증·수막염을 일으키지만 그람 양성 막대균이고 출혈성 수포를 만들지 않는다.\n- 임상핵심: 간경변·철 과부하 + 날굴(또는 바닷물 상처) + 출혈성 수포 + 패혈성 쇼크 = Vibrio vulnificus.\n- 출처: Harrison's 21e(Non-cholera Vibrio infections); CDC Vibrio — clinical information.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 수포액 그람 염색 = 그람 음성 막대균 → 그람 양성균(연쇄상구균·클로스트리디움·리스테리아) 가능성이 낮다. ② 간경변 + 날굴 섭취 다음 날 + 장염 없음 + 패혈성 쇼크·출혈성 수포 → Vibrio vulnificus 1차 패혈증. 간질환·철 과부하 환자에서 치명률이 높다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) A군 연쇄상구균은 괴사성 근막염의 대표 균이지만 그람 양성 알균이고 대개 피부 상처 뒤에 생긴다.\n(B) V. parahaemolyticus 는 날해산물 뒤 설사·복통의 장염을 일으킨다 — 이 환자는 장 증상이 없고 패혈증·출혈성 수포가 있다.\n(C) C. perfringens 는 오염된 깊은 상처 뒤 가스 괴저를 일으키는 그람 양성 막대균이다 — 상처도 없고 그람 음성이다.\n(E) Listeria 는 간경변 같은 면역 저하자에서 균혈증·수막염을 일으키지만 그람 양성 막대균이고 출혈성 수포를 만들지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "간경변·철 과부하 + 날굴(또는 바닷물 상처) + 출혈성 수포 + 패혈성 쇼크 = Vibrio vulnificus."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's 21e(Non-cholera Vibrio infections); CDC Vibrio — clinical information."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e — Infections due to non-cholera Vibrio species: V. vulnificus; CDC. Vibrio species causing vibriosis — clinical information)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "39.4 °C (102.9 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "126 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "82/48 mm Hg"
+   },
+   {
+    "name": "Respirations",
+    "value": "24 /min"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Leukocyte count",
+    "value": "3,200 /mm³",
+    "ref": "4,500–11,000 /mm³"
+   },
+   {
+    "name": "Platelet count",
+    "value": "58,000 /mm³",
+    "ref": "150,000–400,000 /mm³"
+   },
+   {
+    "name": "Creatinine",
+    "value": "2.2 mg/dL",
+    "ref": "0.7–1.3 mg/dL"
+   },
+   {
+    "name": "Total bilirubin",
+    "value": "3.4 mg/dL",
+    "ref": "0.1–1.0 mg/dL"
+   },
+   {
+    "name": "Lactate",
+    "value": "5.4 mmol/L",
+    "ref": "0.5–2.2 mmol/L"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "출혈성 수포 + 연조직 감염 + 쇼크 — 원인균 단서\n─────────────────────────────────────────────\nV. vulnificus     간경변·철 과부하 + 날굴(1차 패혈증) 또는 바닷물 상처   그람 음성 막대(굽음)\nA군 연쇄상구균    피부 상처·수두 뒤, 건강한 사람도                      그람 양성 사슬알균\nC. perfringens    오염된 깊은 상처·수술 뒤, 염발음                       그람 양성 큰 막대\nAeromonas         민물 상처                                              그람 음성 막대\n─────────────────────────────────────────────\nV. parahaemolyticus = 날해산물 뒤 장염(주로 자기 제한)\n",
+   "참고문헌": [
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. — Infections due to non-cholera Vibrio species.",
+    "Centers for Disease Control and Prevention. Vibrio species causing vibriosis — information for health professionals."
+   ]
+  },
+  "design": {
+   "target": "진단",
+   "decision": "간경변 환자가 날굴을 먹고 하루 만에 장염 없이 패혈성 쇼크와 출혈성 수포가 생기고 그람 음성 막대균이 보이면 Vibrio vulnificus 1차 패혈증이다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "A(S. pyogenes)·C(C. perfringens)도 출혈성 수포를 동반한 괴사성 연조직 감염을 일으키지만 그람 양성균이고, 상처 없이 날굴 섭취 뒤 생긴 점과 맞지 않는다. B(V. parahaemolyticus)는 날해산물 노출은 같지만 설사·복통의 장염이 주 증상이고 간경변 환자의 패혈증·수포는 드물다.",
+   "steps": 2,
+   "chain": [
+    "수포액 그람 음성 막대균 → 그람 양성균(S. pyogenes·C. perfringens·Listeria) 가능성 낮음",
+    "간경변 + 날굴 섭취 다음 날 + 장염 없음 + 패혈성 쇼크·출혈성 수포 → V. vulnificus 1차 패혈증(V. parahaemolyticus 장염 아님)"
+   ],
+   "key": [
+    {
+     "item": "He has alcohol-related cirrhosis",
+     "why": "간질환·철 과부하 = V. vulnificus 중증 감염의 가장 중요한 위험 인자",
+     "also": []
+    },
+    {
+     "item": "he ate a dozen raw oysters at a seafood restaurant on the Gulf Coast of Texas",
+     "why": "날굴(따뜻한 바다) — V. vulnificus 의 주된 경로",
+     "also": []
+    },
+    {
+     "item": "with several large bullae filled with dark, blood-tinged fluid",
+     "why": "출혈성 수포 — 혈행성 V. vulnificus 피부 병변의 특징",
+     "also": []
+    },
+    {
+     "item": "A Gram stain of fluid aspirated from one of the bullae shows gram-negative rods",
+     "why": "그람 음성 — 연쇄상구균·클로스트리디움·리스테리아 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "He has not had any skin injury and has not been swimming or wading",
+     "why": "상처 감염이 아니라 섭취 뒤 1차 패혈증 — 피부 병변은 혈행성",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "He has had no vomiting or diarrhea",
+     "why": "V. parahaemolyticus 장염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "There is no crepitus",
+     "why": "가스 괴저(C)에서 흔하지만 없다고 괴사성 감염 자체를 배제하지는 못한다",
+     "also": []
+    }
+   ],
+   "summary": "간경변 환자가 날굴을 먹은 다음 날 장염 없이 패혈성 쇼크와 출혈성 수포가 생겼고 수포액에서 그람 음성 막대균이 보인다. 그람 염색이 연쇄상구균·클로스트리디움을 낮추고, 위험 인자와 노출이 비브리오 장염이 아닌 Vibrio vulnificus 1차 패혈증을 가리킨다.",
+   "switch": {
+    "choice": "A",
+    "condition": "수포액 그람 염색이 사슬 모양 그람 양성 알균이고 피부 상처 뒤 생긴 괴사성 근막염이라면 S. pyogenes 가 원인이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.id.vibrio-vulnificus.oyster-cirrhosis-diagnosis",
+  "distractors": {
+   "A": {
+    "tempting": "통증이 심하고 붓고 수포가 생기는 다리 감염 + 쇼크는 괴사성 근막염이고, 괴사성 근막염의 대표 균은 A군 연쇄상구균이다.",
+    "answer_first": "S. pyogenes 는 그람 양성 알균이다. 이 환자의 수포액은 그람 음성 막대균이고, 상처가 아니라 날굴 섭취 뒤 간경변 환자에게 생긴 패혈증이다.",
+    "discriminator": "「gram-negative rods」 · 날굴 + 간경변 · 상처 없음.",
+    "when_right": "피부 상처·수두 뒤 괴사성 근막염에서 그람 양성 사슬알균이 보이고 간질환·해산물 노출이 없을 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "날해산물을 먹은 뒤 생긴 감염이면 V. parahaemolyticus 가 먼저 떠오른다.",
+    "answer_first": "V. parahaemolyticus 는 날해산물 뒤 설사·복통의 자기 제한성 장염을 일으킨다. 간경변 환자에서 장 증상 없이 패혈증·출혈성 수포를 만드는 비브리오는 V. vulnificus 다.",
+    "discriminator": "「He has had no vomiting or diarrhea」 · 출혈성 수포 · 간경변.",
+    "when_right": "날해산물을 먹은 건강한 사람이 하루 안에 물 설사·복통을 보이고 저절로 좋아질 때.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0209",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "Three Weeks of Palpitations and Exertional Dyspnea With a Diastolic Rumble in a 44-Year-Old Woman Who Had Fever and Joint Pains as a Child",
+  "type": "Three Weeks of Palpitations and Exertional Dyspnea With a Diastolic Rumble in a 44-Year-Old Woman Who Had Fever and Joint Pains as a Child",
+  "difficulty": 4,
+  "created": "2026-10-15",
+  "vignette": "A 44-year-old woman comes to the physician because of palpitations and shortness of breath when climbing stairs for 3 weeks. She emigrated from rural Guatemala 12 years ago. As a child she had several weeks of fever and painful, swollen knees and ankles that moved from joint to joint; she was not treated. She has no history of hypertension, diabetes, stroke or heart failure, and she takes no medications. Her vital signs are shown; oxygen saturation is 97% on room air. The first heart sound is loud. At the apex there is an early diastolic opening snap followed by a low-pitched diastolic rumble that is heard best in the left lateral decubitus position. The lungs are clear and there is no peripheral edema. An ECG is shown. Transthoracic echocardiography shows thickened mitral leaflets with commissural fusion, a mitral valve area of 1.1 cm², an enlarged left atrium without thrombus and a left ventricular ejection fraction of 60%. Laboratory results are shown. Metoprolol is started and her heart rate decreases to 78/min.",
+  "question": "Which of the following is the most appropriate long-term therapy to prevent thromboembolism in this patient?",
+  "options": [
+   "Apixaban, 5 mg twice daily",
+   "Warfarin, target INR 2.0–3.0",
+   "Aspirin and clopidogrel",
+   "Low-dose aspirin",
+   "No antithrombotic therapy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계 추론. ① 심전도: P파 없는 불규칙하게 불규칙한 리듬 → 심방세동. ② 어릴 때 이동성 다발 관절염 + 큰 S1·열림음·확장기 우르릉 + 교련 융합·판막 면적 1.1 cm² → 중등도 이상 류마티스 승모판 협착. ③ 승모판 협착 동반 심방세동은 CHA2DS2-VASc 와 무관하게 항응고하고, 중등도 이상 류마티스 승모판 협착에는 DOAC 근거가 없어 warfarin 을 쓴다.\n- 오답감별:\n  - (A) apixaban 은 비판막성 심방세동에서 warfarin 보다 우선이지만, 중등도 이상 승모판 협착은 DOAC 의 대상이 아니다(INVICTUS — rivaroxaban 이 비타민 K 길항제보다 열등).\n  - (C) 이중 항혈소판은 심방세동 뇌졸중 예방에서 항응고보다 효과가 떨어지고 출혈은 비슷하게 늘린다.\n  - (D) aspirin 단독은 심방세동 뇌졸중 예방 효과가 거의 없어 권하지 않는다.\n  - (E) CHA2DS2-VASc 1점(여성)만 보면 그럴듯하지만, 승모판 협착 동반 심방세동은 점수와 관계없이 항응고 대상이다.\n- 임상핵심: 심방세동 + 중등도 이상 승모판 협착(또는 기계 판막) → 점수와 무관하게 warfarin. 나머지 판막 질환은 비판막성처럼 DOAC.\n- 출처: 2023 ACC/AHA/ACCP/HRS AF guideline; 2020 ACC/AHA valvular heart disease guideline; INVICTUS(NEJM 2022).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 심전도: P파 없는 불규칙하게 불규칙한 리듬 → 심방세동. ② 어릴 때 이동성 다발 관절염 + 큰 S1·열림음·확장기 우르릉 + 교련 융합·판막 면적 1.1 cm² → 중등도 이상 류마티스 승모판 협착. ③ 승모판 협착 동반 심방세동은 CHA2DS2-VASc 와 무관하게 항응고하고, 중등도 이상 류마티스 승모판 협착에는 DOAC 근거가 없어 warfarin 을 쓴다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) apixaban 은 비판막성 심방세동에서 warfarin 보다 우선이지만, 중등도 이상 승모판 협착은 DOAC 의 대상이 아니다(INVICTUS — rivaroxaban 이 비타민 K 길항제보다 열등).\n(C) 이중 항혈소판은 심방세동 뇌졸중 예방에서 항응고보다 효과가 떨어지고 출혈은 비슷하게 늘린다.\n(D) aspirin 단독은 심방세동 뇌졸중 예방 효과가 거의 없어 권하지 않는다.\n(E) CHA2DS2-VASc 1점(여성)만 보면 그럴듯하지만, 승모판 협착 동반 심방세동은 점수와 관계없이 항응고 대상이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "심방세동 + 중등도 이상 승모판 협착(또는 기계 판막) → 점수와 무관하게 warfarin. 나머지 판막 질환은 비판막성처럼 DOAC."
+   },
+   {
+    "k": "출처",
+    "v": "2023 ACC/AHA/ACCP/HRS AF guideline; 2020 ACC/AHA valvular heart disease guideline; INVICTUS(NEJM 2022)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149:e1-e156; Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation. 2021;143:e72-e227; Connolly SJ et al. Rivaroxaban in rheumatic heart disease-associated atrial fibrillation (INVICTUS). N Engl J Med. 2022;387:978-988)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "118/74 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "104 /min, irregularly irregular"
+   },
+   {
+    "name": "Respirations",
+    "value": "18 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "36.8 °C (98.2 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Hemoglobin",
+    "value": "13.1 g/dL",
+    "ref": "12.0–16.0 g/dL"
+   },
+   {
+    "name": "Platelet count",
+    "value": "246,000 /mm³",
+    "ref": "150,000–400,000 /mm³"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.8 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   },
+   {
+    "name": "Thyroid-stimulating hormone",
+    "value": "1.9 μU/mL",
+    "ref": "0.5–5.0 μU/mL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "심방세동 항응고 — 판막 질환에 따라\n─────────────────────────────────────────────\n중등도 이상 류마티스 승모판 협착  → warfarin(점수 무관, DOAC 아님)\n기계 판막                     → warfarin(DOAC 금기 — dabigatran RE-ALIGN)\n그 밖의 판막 질환·생체 판막       → 비판막성처럼: CHA2DS2-VASc 에 따라 DOAC 우선\n비판막성                       → 남 ≥2·여 ≥3: 항응고 권고(DOAC 우선)\n─────────────────────────────────────────────\naspirin·이중 항혈소판은 뇌졸중 예방 효과가 부족하고 출혈은 늘린다\n",
+   "참고문헌": [
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149:e1-e156.",
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation. 2021;143:e72-e227.",
+    "Connolly SJ et al. Rivaroxaban in Rheumatic Heart Disease-Associated Atrial Fibrillation. N Engl J Med. 2022;387:978-988."
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "중등도 이상 류마티스 승모판 협착에 생긴 심방세동은 CHA2DS2-VASc 와 무관하게 항응고가 필요하고, DOAC 이 아니라 warfarin 을 쓴다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "apixaban(A)은 비판막성 심방세동의 1차 항응고제지만 중등도 이상 승모판 협착(과 기계 판막)은 DOAC 의 대상이 아니다. 「항혈전 치료 없음」(E)은 CHA2DS2-VASc 1점(여성)만 보면 그럴듯하지만, 승모판 협착 동반 심방세동은 점수와 관계없이 항응고 대상이다.",
+   "steps": 3,
+   "chain": [
+    "심전도: P파 없는 불규칙하게 불규칙한 리듬 → 심방세동",
+    "어릴 때 이동성 다발 관절염 + 열림음·확장기 우르릉 + 교련 융합·판막 면적 1.1 cm² → 중등도 이상 류마티스 승모판 협착",
+    "승모판 협착 동반 심방세동 → 점수와 무관하게 항응고 + DOAC 근거 없음 → warfarin"
+   ],
+   "key": [
+    {
+     "item": "심전도: P파 없이 불규칙하게 불규칙한 QRS 간격",
+     "why": "심방세동",
+     "also": []
+    },
+    {
+     "item": "As a child she had several weeks of fever and painful, swollen knees and ankles that moved from joint to joint",
+     "why": "급성 류마티스열 병력 — 류마티스 판막 질환",
+     "also": []
+    },
+    {
+     "item": "At the apex there is an early diastolic opening snap followed by a low-pitched diastolic rumble",
+     "why": "승모판 협착의 청진 소견",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "a mitral valve area of 1.1 cm²",
+     "why": "판막 면적 ≤1.5 cm² = 중등도 이상 — DOAC 이 아닌 warfarin 의 근거",
+     "also": []
+    },
+    {
+     "item": "She has no history of hypertension, diabetes, stroke or heart failure",
+     "why": "CHA2DS2-VASc 1점(여성) — 판막성 심방세동에서는 이 점수로 항응고를 정하지 않는다(E 의 함정)",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "an enlarged left atrium without thrombus",
+     "why": "혈전이 보이지 않아도 승모판 협착 동반 심방세동은 항응고 대상",
+     "also": []
+    },
+    {
+     "item": "Creatinine",
+     "why": "신기능 정상 — DOAC 금기 때문이 아니라 판막 질환 때문에 warfarin 을 고른다",
+     "also": []
+    }
+   ],
+   "summary": "심전도는 심방세동이고, 류마티스열 병력·열림음·확장기 우르릉·판막 면적 1.1 cm² 는 중등도 이상 류마티스 승모판 협착이다. 이 조합은 CHA2DS2-VASc 점수와 무관하게 항응고가 필요하고, DOAC 근거가 없어 warfarin 을 쓴다.",
+   "switch": {
+    "choice": "A",
+    "condition": "승모판 협착이 없거나 경도이고 생체 판막·다른 판막 질환만 있는 심방세동이라면 apixaban 같은 DOAC 이 warfarin 보다 우선이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.cardio.af-mitral-stenosis.warfarin-not-doac",
+  "distractors": {
+   "A": {
+    "tempting": "심방세동 항응고는 출혈이 적은 DOAC 이 warfarin 보다 우선이라고 배웠다.",
+    "answer_first": "DOAC 우선 원칙은 비판막성 심방세동에 해당한다. 중등도 이상 류마티스 승모판 협착은 DOAC 시험에서 빠졌고, INVICTUS 에서 rivaroxaban 이 비타민 K 길항제보다 나빠 지침이 warfarin 을 권한다.",
+    "discriminator": "「a mitral valve area of 1.1 cm²」 · 교련 융합 · 류마티스열 병력.",
+    "when_right": "판막 질환이 없거나 경도 승모판 협착 미만의 판막 질환·생체 판막만 있는 심방세동.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "CHA2DS2-VASc 가 여성 1점뿐이라 항응고를 하지 않아도 된다고 계산한다.",
+    "answer_first": "CHA2DS2-VASc 는 비판막성 심방세동용이다. 승모판 협착 동반 심방세동은 좌심방 혈류 정체가 심해 점수와 관계없이 항응고한다.",
+    "discriminator": "승모판 협착(열림음·확장기 우르릉·판막 면적 1.1 cm²) 동반.",
+    "when_right": "판막 질환이 없고 CHA2DS2-VASc 가 남성 0점·여성 1점인 심방세동.",
+    "split": ""
+   }
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG afib · 104 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,88.8 0.6,88.5 1.2,88.2 1.8,88.0 2.4,88.0 3.0,88.1 3.6,88.2 4.2,88.4 4.8,88.7 5.4,89.0 6.0,89.2 6.6,89.5 7.2,89.7 7.8,89.9 8.4,90.1 9.0,90.2 9.6,90.2 10.2,90.2 10.8,90.2 11.4,90.2 12.0,90.2 12.6,90.3 13.2,90.3 13.8,90.4 14.4,90.5 15.0,90.7 15.6,90.9 16.2,91.1 16.8,91.3 17.4,91.4 18.0,91.6 18.6,91.6 19.2,91.6 19.8,91.5 20.4,91.3 21.0,90.9 21.6,90.6 22.2,90.1 22.8,89.6 23.4,89.1 24.0,88.6 24.6,88.1 25.2,87.7 25.8,87.4 26.4,87.2 27.0,87.2 27.6,87.3 28.2,87.6 28.8,87.9 29.4,88.4 30.0,89.0 30.6,89.7 31.2,90.3 31.8,91.0 32.4,91.6 33.0,92.1 33.6,92.5 34.2,92.7 34.8,92.9 35.4,92.8 36.0,92.7 36.6,92.4 37.2,92.0 37.8,91.5 38.4,91.0 39.0,90.4 39.6,89.9 40.2,89.4 40.8,89.0 41.4,88.6 42.0,88.4 42.6,88.3 43.2,88.2 43.8,88.3 44.4,88.4 45.0,88.7 45.6,89.2 46.2,90.2 46.8,91.2 47.4,91.4 48.0,89.4 48.6,84.0 49.2,75.1 49.8,62.9 50.4,48.9 51.0,36.1 51.6,28.3 52.2,28.2 52.8,36.2 53.4,49.9 54.0,65.3 54.6,79.3 55.2,89.9 55.8,96.8 56.4,100.2 57.0,100.8 57.6,99.7 58.2,97.7 58.8,95.6 59.4,94.0 60.0,92.9 60.6,92.1 61.2,91.6 61.8,91.1 62.4,90.7 63.0,90.2 63.6,89.6 64.2,89.0 64.8,88.5 65.4,88.0 66.0,87.6 66.6,87.3 67.2,87.1 67.8,87.1 68.4,87.2 69.0,87.5 69.6,87.9 70.2,88.4 70.8,89.0 71.4,89.6 72.0,90.3 72.6,90.9 73.2,91.5 73.8,92.0 74.4,92.3 75.0,92.6 75.6,92.6 76.2,92.6 76.8,92.4 77.4,92.0 78.0,91.6 78.6,91.0 79.2,90.4 79.8,89.8 80.4,89.1 81.0,88.5 81.6,87.8 82.2,87.3 82.8,86.7 83.4,86.3 84.0,85.8 84.6,85.4 85.2,84.9 85.8,84.5 86.4,84.0 87.0,83.5 87.6,82.8 88.2,82.2 88.8,81.4 89.4,80.6 90.0,79.7 90.6,78.8 91.2,77.9 91.8,77.0 92.4,76.2 93.0,75.5 93.6,74.8 94.2,74.3 94.8,74.0 95.4,73.8 96.0,73.8 96.6,74.0 97.2,74.3 97.8,74.7 98.4,75.3 99.0,75.9 99.6,76.5 100.2,77.2 100.8,77.8 101.4,78.4 102.0,78.9 102.6,79.4 103.2,79.8 103.8,80.2 104.4,80.5 105.0,80.8 105.6,81.1 106.2,81.4 106.8,81.8 107.4,82.2 108.0,82.7 108.6,83.3 109.2,84.0 109.8,84.7 110.4,85.6 111.0,86.5 111.6,87.4 112.2,88.3 112.8,89.2 113.4,90.1 114.0,90.8 114.6,91.4 115.2,91.9 115.8,92.2 116.4,92.4 117.0,92.4 117.6,92.3 118.2,92.0 118.8,91.7 119.4,91.3 120.0,90.9 120.6,90.4 121.2,90.0 121.8,89.6 122.4,89.3 123.0,89.0 123.6,88.9 124.2,88.8 124.8,88.8 125.4,88.8 126.0,88.9 126.6,89.0 127.2,89.1 127.8,89.3 128.4,89.4 129.0,89.4 129.6,89.5 130.2,89.5 130.8,89.4 131.4,89.4 132.0,89.4 132.6,89.3 133.2,89.3 133.8,89.4 134.4,89.5 135.0,89.6 135.6,89.9 136.2,90.1 136.8,90.5 137.4,90.8 138.0,91.2 138.6,91.5 139.2,91.8 139.8,92.1 140.4,92.2 141.0,92.3 141.6,92.2 142.2,92.1 142.8,91.7 143.4,91.3 144.0,90.8 144.6,90.2 145.2,89.6 145.8,89.0 146.4,88.4 147.0,87.9 147.6,87.5 148.2,87.2 148.8,87.0 149.4,87.0 150.0,87.2 150.6,87.5 151.2,87.9 151.8,88.4 152.4,89.0 153.0,89.6 153.6,90.3 154.2,90.9 154.8,91.4 155.4,91.8 156.0,92.2 156.6,92.4 157.2,92.5 157.8,92.4 158.4,92.3 159.0,92.0 159.6,91.7 160.2,91.3 160.8,90.9 161.4,90.5 162.0,90.1 162.6,89.7 163.2,89.5 163.8,89.4 164.4,89.5 165.0,90.1 165.6,91.0 166.2,91.1 166.8,89.1 167.4,83.9 168.0,75.1 168.6,63.0 169.2,49.1 169.8,36.2 170.4,27.9 171.0,27.4 171.6,34.9 172.2,48.2 172.8,63.4 173.4,77.4 174.0,88.0 174.6,94.9 175.2,98.4 175.8,99.1 176.4,98.0 177.0,96.2 177.6,94.4 178.2,93.0 178.8,92.3 179.4,92.1 180.0,92.2 180.6,92.3 181.2,92.5 181.8,92.5 182.4,92.4 183.0,92.2 183.6,91.9 184.2,91.4 184.8,90.9 185.4,90.3 186.0,89.6 186.6,89.0 187.2,88.4 187.8,87.9 188.4,87.5 189.0,87.2 189.6,87.0 190.2,87.0 190.8,87.2 191.4,87.4 192.0,87.9 192.6,88.4 193.2,88.9 193.8,89.5 194.4,90.1 195.0,90.6 195.6,91.1 196.2,91.5 196.8,91.7 197.4,91.8 198.0,91.8 198.6,91.6 199.2,91.2 199.8,90.8 200.4,90.3 201.0,89.6 201.6,89.0 202.2,88.2 202.8,87.5 203.4,86.7 204.0,86.0 204.6,85.2 205.2,84.5 205.8,83.7 206.4,82.9 207.0,82.1 207.6,81.3 208.2,80.5 208.8,79.6 209.4,78.7 210.0,77.8 210.6,76.8 211.2,75.9 211.8,75.0 212.4,74.2 213.0,73.4 213.6,72.8 214.2,72.4 214.8,72.1 215.4,72.1 216.0,72.2 216.6,72.6 217.2,73.2 217.8,73.9 218.4,74.9 219.0,75.9 219.6,77.1 220.2,78.2 220.8,79.4 221.4,80.6 222.0,81.6 222.6,82.6 223.2,83.4 223.8,84.1 224.4,84.6 225.0,84.9 225.6,85.1 226.2,85.2 226.8,85.2 227.4,85.2 228.0,85.2 228.6,85.1 229.2,85.2 229.8,85.3 230.4,85.5 231.0,85.8 231.6,86.2 232.2,86.7 232.8,87.2 233.4,87.9 234.0,88.6 234.6,89.3 235.2,89.9 235.8,90.5 236.4,91.0 237.0,91.5 237.6,91.8 238.2,92.0 238.8,92.1 239.4,92.0 240.0,91.9 240.6,91.7 241.2,91.4 241.8,91.1 242.4,90.8 243.0,90.5 243.6,90.2 244.2,90.0 244.8,89.9 245.4,89.7 246.0,89.7 246.6,89.9 247.2,90.4 247.8,91.3 248.4,91.8 249.0,90.8 249.6,86.8 250.2,79.2 250.8,68.2 251.4,54.6 252.0,40.7 252.6,30.0 253.2,26.1 253.8,30.5 254.4,41.9 255.0,56.8 255.6,71.7 256.2,83.9 256.8,92.4 257.4,97.3 258.0,99.2 258.6,98.9 259.2,97.4 259.8,95.7 260.4,94.2 261.0,93.3 261.6,92.9 262.2,92.8 262.8,92.8 263.4,92.8 264.0,92.7 264.6,92.4 265.2,92.0 265.8,91.6 266.4,91.0 267.0,90.3 267.6,89.7 268.2,89.0 268.8,88.4 269.4,87.9 270.0,87.5 270.6,87.2 271.2,87.1 271.8,87.1 272.4,87.3 273.0,87.6 273.6,88.0 274.2,88.5 274.8,89.0 275.4,89.5 276.0,90.1 276.6,90.5 277.2,90.9 277.8,91.2 278.4,91.4 279.0,91.5 279.6,91.5 280.2,91.3 280.8,91.0 281.4,90.7 282.0,90.3 282.6,89.8 283.2,89.3 283.8,88.8 284.4,88.2 285.0,87.7 285.6,87.1 286.2,86.5 286.8,85.9 287.4,85.3 288.0,84.6 288.6,83.8 289.2,83.0 289.8,82.1 290.4,81.2 291.0,80.1 291.6,79.1 292.2,78.0 292.8,76.8 293.4,75.8 294.0,74.7 294.6,73.8 295.2,73.0 295.8,72.4 296.4,72.0 297.0,71.8 297.6,71.9 298.2,72.2 298.8,72.8 299.4,73.8 300.0,75.4 300.6,77.2 301.2,78.1 301.8,76.5 302.4,71.6 303.0,63.2 303.6,51.6 304.2,38.5 304.8,26.9 305.4,20.8 306.0,22.5 306.6,31.9 307.2,46.2 307.8,61.7 308.4,75.1 309.0,85.1 309.6,91.2 310.2,93.9 310.8,94.1 311.4,92.7 312.0,90.8 312.6,89.0 313.2,87.9 313.8,87.4 314.4,87.5 315.0,87.9 315.6,88.5 316.2,89.1 316.8,89.7 317.4,90.2 318.0,90.7 318.6,91.1 319.2,91.3 319.8,91.5 320.4,91.5 321.0,91.5 321.6,91.4 322.2,91.3 322.8,91.1 323.4,90.9 324.0,90.7 324.6,90.5 325.2,90.4 325.8,90.3 326.4,90.2 327.0,90.2 327.6,90.2 328.2,90.2 328.8,90.2 329.4,90.1 330.0,90.0 330.6,89.9 331.2,89.7 331.8,89.4 332.4,89.1 333.0,88.7 333.6,88.3 334.2,87.8 334.8,87.3 335.4,86.9 336.0,86.4 336.6,86.0 337.2,85.7 337.8,85.4 338.4,85.2 339.0,85.0 339.6,84.9 340.2,84.7 340.8,84.6 341.4,84.4 342.0,84.1 342.6,83.8 343.2,83.3 343.8,82.7 344.4,81.9 345.0,81.1 345.6,80.1 346.2,79.0 346.8,77.8 347.4,76.6 348.0,75.4 348.6,74.3 349.2,73.3 349.8,72.4 350.4,71.7 351.0,71.2 351.6,71.0 352.2,71.1 352.8,71.4 353.4,71.9 354.0,72.7 354.6,73.7 355.2,74.8 355.8,76.1 356.4,77.4 357.0,78.8 357.6,80.2 358.2,81.5 358.8,82.7 359.4,83.8 360.0,84.8 360.6,85.7 361.2,86.4 361.8,87.0 362.4,87.5 363.0,87.9 363.6,88.3 364.2,88.5 364.8,88.8 365.4,89.0 366.0,89.2 366.6,89.5 367.2,89.7 367.8,89.8 368.4,90.0 369.0,90.2 369.6,90.2 370.2,90.3 370.8,90.3 371.4,90.2 372.0,90.0 372.6,89.8 373.2,89.5 373.8,89.2 374.4,88.9 375.0,88.5 375.6,88.2 376.2,88.0 376.8,87.8 377.4,87.8 378.0,87.8 378.6,88.0 379.2,88.3 379.8,88.7 380.4,89.2 381.0,89.8 381.6,90.4 382.2,91.0 382.8,91.6 383.4,92.1 384.0,92.5 384.6,92.8 385.2,93.0 385.8,93.0 386.4,92.8 387.0,92.5 387.6,92.1 388.2,91.6 388.8,91.0 389.4,90.4 390.0,89.7 390.6,89.1 391.2,88.6 391.8,88.1 392.4,87.8 393.0,87.6 393.6,87.5 394.2,87.5 394.8,87.7 395.4,88.0 396.0,88.3 396.6,88.7 397.2,89.1 397.8,89.6 398.4,90.0 399.0,90.3 399.6,90.6 400.2,90.8 400.8,91.0 401.4,91.0 402.0,91.0 402.6,91.0 403.2,90.9 403.8,90.8 404.4,90.7 405.0,90.7 405.6,90.6 406.2,90.6 406.8,90.6 407.4,90.6 408.0,90.7 408.6,90.8 409.2,90.8 409.8,90.9 410.4,90.9 411.0,90.8 411.6,90.7 412.2,90.5 412.8,90.2 413.4,90.0 414.0,89.8 414.6,89.9 415.2,90.3 415.8,90.5 416.4,89.3 417.0,85.2 417.6,77.8 418.2,67.0 418.8,53.7 419.4,40.1 420.0,29.6 420.6,25.9 421.2,30.5 421.8,42.3 422.4,57.9 423.0,73.4 423.6,86.3 424.2,95.3 424.8,100.6 425.4,102.5 426.0,102.0 426.6,100.1 427.2,97.7 427.8,95.4 428.4,93.6 429.0,92.3 429.6,91.3 430.2,90.5 430.8,89.8 431.4,89.2 432.0,88.7 432.6,88.2 433.2,87.9 433.8,87.7 434.4,87.6 435.0,87.7 435.6,87.9 436.2,88.1 436.8,88.4 437.4,88.8 438.0,89.2 438.6,89.5 439.2,89.9 439.8,90.2 440.4,90.4 441.0,90.6 441.6,90.7 442.2,90.7 442.8,90.7 443.4,90.6 444.0,90.6 444.6,90.5 445.2,90.4 445.8,90.3 446.4,90.3 447.0,90.3 447.6,90.2 448.2,90.2 448.8,90.2 449.4,90.1 450.0,90.0 450.6,89.7 451.2,89.4 451.8,89.0 452.4,88.4 453.0,87.8 453.6,86.9 454.2,86.0 454.8,84.9 455.4,83.8 456.0,82.6 456.6,81.4 457.2,80.2 457.8,79.0 458.4,78.0 459.0,77.0 459.6,76.2 460.2,75.5 460.8,75.0 461.4,74.7 462.0,74.5 462.6,74.5 463.2,74.6 463.8,74.8 464.4,75.1 465.0,75.4 465.6,75.7 466.2,76.1 466.8,76.4 467.4,76.7 468.0,77.0 468.6,77.3 469.2,77.5 469.8,77.7 470.4,77.9 471.0,78.2 471.6,78.5 472.2,78.8 472.8,79.2 473.4,79.7 474.0,80.3 474.6,81.0 475.2,81.7 475.8,82.5 476.4,83.4 477.0,84.2 477.6,85.1 478.2,85.9 478.8,86.7 479.4,87.4 480.0,88.1 480.6,88.6 481.2,89.0 481.8,89.4 482.4,89.7 483.0,89.8 483.6,90.0 484.2,90.0 484.8,90.1 485.4,90.2 486.0,90.2 486.6,90.3 487.2,90.4 487.8,90.6 488.4,90.8 489.0,91.0 489.6,91.1 490.2,91.3 490.8,91.4 491.4,91.4 492.0,91.4 492.6,91.3 493.2,91.1 493.8,90.8 494.4,90.5 495.0,90.1 495.6,89.6 496.2,89.1 496.8,88.6 497.4,88.2 498.0,87.8 498.6,87.5 499.2,87.3 499.8,87.3 500.4,87.4 501.0,87.6 501.6,88.0 502.2,88.5 502.8,89.0 503.4,89.7 504.0,90.3 504.6,91.0 505.2,91.6 505.8,92.1 506.4,92.5 507.0,92.8 507.6,92.9 508.2,92.9 508.8,92.7 509.4,92.4 510.0,92.0 510.6,91.5 511.2,91.0 511.8,90.4 512.4,89.9 513.0,89.3 513.6,88.9 514.2,88.5 514.8,88.3 515.4,88.1 516.0,88.1 516.6,88.1 517.2,88.3 517.8,88.5 518.4,88.7 519.0,89.0 519.6,89.3 520.2,89.5 520.8,89.7 521.4,89.9 522.0,90.0 522.6,90.1 523.2,90.1 523.8,90.1 524.4,90.1 525.0,90.1 525.6,90.1 526.2,90.2 526.8,90.3 527.4,90.4 528.0,90.5 528.6,90.7 529.2,90.9 529.8,91.1 530.4,91.4 531.0,91.8 531.6,92.4 532.2,93.3 532.8,93.8 533.4,92.6 534.0,88.3 534.6,80.4 535.2,69.0 535.8,55.0 536.4,40.7 537.0,29.8 537.6,25.8 538.2,30.2 538.8,41.4 539.4,56.2 540.0,70.8 540.6,82.7 541.2,91.1 541.8,95.8 542.4,97.6 543.0,97.4 543.6,96.0 544.2,94.3 544.8,93.1 545.4,92.4 546.0,92.2 546.6,92.3 547.2,92.5 547.8,92.7 548.4,92.8 549.0,92.8 549.6,92.6 550.2,92.3 550.8,91.9 551.4,91.5 552.0,91.0 552.6,90.4 553.2,89.9 553.8,89.4 554.4,89.0 555.0,88.7 555.6,88.5 556.2,88.3 556.8,88.3 557.4,88.4 558.0,88.5 558.6,88.6 559.2,88.8 559.8,89.0 560.4,89.2 561.0,89.4 561.6,89.5 562.2,89.6 562.8,89.6 563.4,89.5 564.0,89.5 564.6,89.4 565.2,89.2 565.8,89.1 566.4,88.9 567.0,88.8 567.6,88.7 568.2,88.5 568.8,88.4 569.4,88.2 570.0,88.0 570.6,87.8 571.2,87.5 571.8,87.0 572.4,86.5 573.0,85.8 573.6,85.0 574.2,84.0 574.8,82.8 575.4,81.6 576.0,80.2 576.6,78.8 577.2,77.4 577.8,76.0 578.4,74.6 579.0,73.4 579.6,72.3 580.2,71.5 580.8,70.9 581.4,70.5 582.0,70.5 582.6,70.7 583.2,71.2 583.8,71.9 584.4,72.8 585.0,73.9 585.6,75.1 586.2,76.4 586.8,77.7 587.4,79.0 588.0,80.2 588.6,81.3 589.2,82.3 589.8,83.2 590.4,83.9 591.0,84.5 591.6,85.0 592.2,85.3 592.8,85.6 593.4,85.8 594.0,86.0 594.6,86.1 595.2,86.3 595.8,86.4 596.4,86.6 597.0,86.9 597.6,87.2 598.2,87.5 598.8,87.8 599.4,88.1 600.0,88.4 600.6,88.7 601.2,89.0 601.8,89.2 602.4,89.3 603.0,89.4 603.6,89.5 604.2,89.5 604.8,89.5 605.4,89.5 606.0,89.5 606.6,89.6 607.2,89.6 607.8,89.8 608.4,89.9 609.0,90.2 609.6,90.5 610.2,90.8 610.8,91.1 611.4,91.4 612.0,91.7 612.6,92.0 613.2,92.1 613.8,92.2 614.4,92.1 615.0,91.9 615.6,91.7 616.2,91.3 616.8,90.8 617.4,90.2 618.0,89.6 618.6,89.0 619.2,88.4 619.8,87.9 620.4,87.5 621.0,87.2 621.6,87.0 622.2,87.1 622.8,87.3 623.4,87.8 624.0,88.9 624.6,90.2 625.2,91.0 625.8,89.8 626.4,85.5 627.0,77.5 627.6,66.2 628.2,52.8 628.8,40.0 629.4,31.5 630.0,30.4 630.6,37.4 631.2,50.2 631.8,65.2 632.4,79.0 633.0,89.6 633.6,96.3 634.2,99.4 634.8,99.7 635.4,98.1 636.0,95.7 636.6,93.2 637.2,91.3 637.8,90.0 638.4,89.4 639.0,89.1 639.6,89.1 640.2,89.1 640.8,89.2 641.4,89.3 642.0,89.4 642.6,89.4 643.2,89.4 643.8,89.4 644.4,89.4 645.0,89.3 645.6,89.3 646.2,89.2 646.8,89.2 647.4,89.3 648.0,89.4 648.6,89.6 649.2,89.8 649.8,90.1 650.4,90.4 651.0,90.8 651.6,91.2 652.2,91.5 652.8,91.8 653.4,92.0 654.0,92.2 654.6,92.2 655.2,92.1 655.8,91.8 656.4,91.4 657.0,90.8 657.6,90.2 658.2,89.4 658.8,88.6 659.4,87.8 660.0,86.9 660.6,86.1 661.2,85.3 661.8,84.5 662.4,83.9 663.0,83.4 663.6,82.9 664.2,82.6 664.8,82.3 665.4,82.0 666.0,81.8 666.6,81.6 667.2,81.3 667.8,81.0 668.4,80.7 669.0,80.2 669.6,79.7 670.2,79.0 670.8,78.3 671.4,77.6 672.0,76.8 672.6,76.0 673.2,75.3 673.8,74.6 674.4,74.1 675.0,73.7 675.6,73.4 676.2,73.3 676.8,73.4 677.4,73.7 678.0,74.2 678.6,74.8 679.2,75.6 679.8,76.4 680.4,77.3 681.0,78.3 681.6,79.2 682.2,80.2 682.8,81.1 683.4,81.9 684.0,82.7 684.6,83.4 685.2,84.0 685.8,84.6 686.4,85.1 687.0,85.7 687.6,86.2 688.2,86.7 688.8,87.2 689.4,87.8 690.0,88.3 690.6,88.9 691.2,89.6 691.8,90.2 692.4,90.7 693.0,91.3 693.6,91.7 694.2,92.1 694.8,92.3 695.4,92.4 696.0,92.3 696.6,92.2 697.2,91.8 697.8,91.4 698.4,90.9 699.0,90.3 699.6,89.6 700.2,89.0 700.8,88.4 701.4,87.9 702.0,87.5 702.6,87.2 703.2,87.0 703.8,87.0 704.4,87.2 705.0,87.5 705.6,87.9 706.2,88.4 706.8,89.0 707.4,89.6 708.0,90.2 708.6,90.8 709.2,91.3 709.8,91.7 710.4,92.0 711.0,92.2 711.6,92.2 712.2,92.2 712.8,92.0 713.4,91.8 714.0,91.5 714.6,91.1 715.2,90.8 715.8,90.5 716.4,90.2 717.0,89.9 717.6,89.7 718.2,89.6 718.8,89.5 719.4,89.5 720.0,89.5 720.6,89.5 721.2,89.6 721.8,89.9 722.4,90.5 723.0,91.3 723.6,91.5 724.2,89.6 724.8,84.6 725.4,76.0 726.0,64.0 726.6,50.1 727.2,36.7 727.8,27.8 728.4,26.4 729.0,33.3 729.6,46.4 730.2,61.9 730.8,76.5 731.4,88.0 732.0,95.7 732.6,99.8 733.2,101.1 733.8,100.3 734.4,98.6 735.0,96.6 735.6,95.0 736.2,93.9 736.8,93.1 737.4,92.6 738.0,92.1 738.6,91.5 739.2,91.0 739.8,90.3 740.4,89.7 741.0,89.0 741.6,88.4 742.2,87.9 742.8,87.5 743.4,87.2 744.0,87.1 744.6,87.1 745.2,87.2 745.8,87.5 746.4,88.0 747.0,88.4 747.6,89.0 748.2,89.6 748.8,90.1 749.4,90.7 750.0,91.1 750.6,91.5 751.2,91.7 751.8,91.8 752.4,91.9 753.0,91.8 753.6,91.6 754.2,91.3 754.8,90.9 755.4,90.5 756.0,90.1 756.6,89.7 757.2,89.3 757.8,88.8 758.4,88.4 759.0,88.0 759.6,87.6 760.2,87.1 760.8,86.7 761.4,86.1 762.0,85.5 762.6,84.9 763.2,84.1 763.8,83.3 764.4,82.3 765.0,81.3 765.6,80.2 766.2,79.1 766.8,78.0 767.4,77.0 768.0,76.0 768.6,75.1 769.2,74.3 769.8,73.8 770.4,73.3 771.0,73.1 771.6,73.1 772.2,73.3 772.8,73.6 773.4,74.1 774.0,74.7 774.6,75.5 775.2,76.2 775.8,77.0 776.4,77.7 777.0,78.4 777.6,79.1 778.2,79.7 778.8,80.2 779.4,80.8 780.0,81.6 780.6,82.7 781.2,83.5 781.8,82.5 782.4,78.5 783.0,71.1 783.6,60.3 784.2,47.2 784.8,34.0 785.4,24.4 786.0,21.8 786.6,27.6 787.2,40.3 787.8,56.2 788.4,71.7 789.0,84.4 789.6,93.2 790.2,98.3 790.8,100.2 791.4,99.8 792.0,98.1 792.6,96.1 793.2,94.2 793.8,92.9 794.4,92.1 795.0,91.5 795.6,91.2 796.2,91.0 796.8,90.7 797.4,90.5 798.0,90.3 798.6,90.2 799.2,90.1 799.8,90.1 800.4,90.1 801.0,90.1 801.6,90.1 802.2,90.1 802.8,90.0 803.4,90.0 804.0,89.8 804.6,89.7 805.2,89.5 805.8,89.3 806.4,89.0 807.0,88.7 807.6,88.5 808.2,88.3 808.8,88.1 809.4,88.0 810.0,88.0 810.6,88.1 811.2,88.3 811.8,88.6 812.4,89.0 813.0,89.4 813.6,89.8 814.2,90.2 814.8,90.5 815.4,90.8 816.0,91.0 816.6,90.9 817.2,90.8 817.8,90.4 818.4,89.8 819.0,89.0 819.6,88.0 820.2,86.9 820.8,85.6 821.4,84.2 822.0,82.7 822.6,81.2 823.2,79.8 823.8,78.4 824.4,77.1 825.0,76.0 825.6,75.0 826.2,74.2 826.8,73.5 827.4,73.1 828.0,72.8 828.6,72.8 829.2,72.8 829.8,73.0 830.4,73.3 831.0,73.7 831.6,74.2 832.2,74.7 832.8,75.2 833.4,75.7 834.0,76.3 834.6,76.9 835.2,77.6 835.8,78.2 836.4,78.9 837.0,79.6 837.6,80.3 838.2,81.1 838.8,81.9 839.4,82.7 840.0,83.5 840.6,84.3 841.2,85.0 841.8,85.7 842.4,86.4 843.0,86.9 843.6,87.4 844.2,87.7 844.8,88.0 845.4,88.1 846.0,88.1 846.6,88.1 847.2,88.0 847.8,87.9 848.4,87.7 849.0,87.6 849.6,87.6 850.2,87.6 850.8,87.7 851.4,87.9 852.0,88.3 852.6,88.7 853.2,89.2 853.8,89.8 854.4,90.4 855.0,91.0 855.6,91.5 856.2,92.0 856.8,92.5 857.4,92.8 858.0,92.9 858.6,93.0 859.2,92.8 859.8,92.5 860.4,92.1 861.0,91.6 861.6,91.0 862.2,90.4 862.8,89.7 863.4,89.1 864.0,88.5 864.6,88.1 865.2,87.7 865.8,87.5 866.4,87.4 867.0,87.4 867.6,87.6 868.2,87.9 868.8,88.2 869.4,88.6 870.0,89.1 870.6,89.6 871.2,90.0 871.8,90.4 872.4,90.7 873.0,91.0 873.6,91.1 874.2,91.2 874.8,91.2 875.4,91.2 876.0,91.1 876.6,91.0 877.2,90.9 877.8,90.7 878.4,90.6 879.0,90.6 879.6,90.5 880.2,90.5 880.8,90.6 881.4,90.6 882.0,90.6 882.6,90.7 883.2,90.7 883.8,90.7 884.4,90.8 885.0,91.2 885.6,91.8 886.2,92.0 886.8,90.4 887.4,85.8 888.0,77.7 888.6,66.2 889.2,52.3 889.8,38.4 890.4,28.1 891.0,25.0 891.6,30.3 892.2,42.5 892.8,57.9 893.4,73.0 894.0,85.3 894.6,93.9 895.2,98.8 895.8,100.7 896.4,100.4 897.0,98.9 897.6,97.1 898.2,95.5 898.8,94.3 899.4,93.6 900.0,93.1\"/><text class=\"cap\" x=\"4\" y=\"193\">afib · 104 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0210",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "A Throbbing One-Sided Headache With Vomiting Like Her Usual Attacks in a 52-Year-Old With a Coronary Stent",
+  "type": "A Throbbing One-Sided Headache With Vomiting Like Her Usual Attacks in a 52-Year-Old With a Coronary Stent",
+  "difficulty": 4,
+  "created": "2026-10-15",
+  "vignette": "A 52-year-old woman comes to the emergency department because of a throbbing left-sided headache that began 7 hours ago and built up over about an hour. She has nausea, has vomited three times and finds light and noise unbearable. She has had similar headaches two or three times a year since her 20s; they usually resolve after she sleeps, but this one has not. She took ibuprofen 3 hours ago and vomited shortly afterward. Two years ago, she underwent placement of a drug-eluting stent in the left anterior descending artery for exertional angina; she has had no chest pain since. Her medications are aspirin, atorvastatin and metoprolol. Her vital signs are shown. She is lying still in a darkened room with her eyes closed. The neck is supple. Funduscopic examination shows sharp optic disc margins. Cranial nerves, strength, sensation, reflexes and coordination are normal, and her gait is normal. An ECG shows sinus rhythm with no ST-segment changes. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate pharmacotherapy?",
+  "options": [
+   "Subcutaneous sumatriptan",
+   "Intravenous morphine",
+   "Intravenous dihydroergotamine",
+   "Oral butalbital-acetaminophen-caffeine",
+   "Intravenous metoclopramide"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 1시간에 걸쳐 시작 + 20대부터 같은 양상 반복 + 경부 강직 없음·정상 유두·정상 신경 진찰 → 평소의 편두통 발작. ② 관상동맥 스텐트(관상동맥 질환) → 트립탄·맥각 금기. ③ 구토로 경구 약 실패 + 아편유사제·butalbital 은 권고되지 않음 → 정맥 metoclopramide(구역과 두통을 함께 줄인다).\n- 오답감별:\n  - (A) sumatriptan 은 5-HT1B 작용으로 관상동맥을 수축시켜 관상동맥 질환에서 금기다.\n  - (B) morphine 은 편두통에서 도파민 길항제보다 효과가 떨어지고 재방문·약물 과용 두통을 늘려 1차로 쓰지 않는다.\n  - (C) dihydroergotamine 은 강한 혈관 수축 작용이 있어 관상동맥 질환에서 금기다.\n  - (D) butalbital 복합제는 경구라 구토 중에 맞지 않고, 약물 과용 두통·의존 위험으로 권하지 않는다.\n- 임상핵심: 편두통 + 관상동맥·뇌혈관 질환 → 트립탄·맥각 금기 → 정맥 도파민 길항제(metoclopramide·prochlorperazine). 아편유사제는 피한다.\n- 출처: AHS evidence assessment of parenteral migraine therapies(Headache 2016); AHS consensus statement(Headache 2021); Harrison's 21e(Migraine).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 1시간에 걸쳐 시작 + 20대부터 같은 양상 반복 + 경부 강직 없음·정상 유두·정상 신경 진찰 → 평소의 편두통 발작. ② 관상동맥 스텐트(관상동맥 질환) → 트립탄·맥각 금기. ③ 구토로 경구 약 실패 + 아편유사제·butalbital 은 권고되지 않음 → 정맥 metoclopramide(구역과 두통을 함께 줄인다)."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) sumatriptan 은 5-HT1B 작용으로 관상동맥을 수축시켜 관상동맥 질환에서 금기다.\n(B) morphine 은 편두통에서 도파민 길항제보다 효과가 떨어지고 재방문·약물 과용 두통을 늘려 1차로 쓰지 않는다.\n(C) dihydroergotamine 은 강한 혈관 수축 작용이 있어 관상동맥 질환에서 금기다.\n(D) butalbital 복합제는 경구라 구토 중에 맞지 않고, 약물 과용 두통·의존 위험으로 권하지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "편두통 + 관상동맥·뇌혈관 질환 → 트립탄·맥각 금기 → 정맥 도파민 길항제(metoclopramide·prochlorperazine). 아편유사제는 피한다."
+   },
+   {
+    "k": "출처",
+    "v": "AHS evidence assessment of parenteral migraine therapies(Headache 2016); AHS consensus statement(Headache 2021); Harrison's 21e(Migraine)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Orr SL et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache. 2016;56:911-940; Ailani J et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. Headache. 2021;61:1021-1039; Harrison's Principles of Internal Medicine 21e — Migraine)",
+  "vitals": [
+   {
+    "name": "Blood pressure",
+    "value": "134/82 mm Hg"
+   },
+   {
+    "name": "Pulse",
+    "value": "66 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "16 /min"
+   },
+   {
+    "name": "Temperature",
+    "value": "36.9 °C (98.4 °F)"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Sodium",
+    "value": "139 mEq/L",
+    "ref": "136–145 mEq/L"
+   },
+   {
+    "name": "Glucose",
+    "value": "104 mg/dL",
+    "ref": "70–100 mg/dL"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.9 mg/dL",
+    "ref": "0.6–1.1 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "응급실 편두통 — 주사 약 선택(AHS 2016)\n─────────────────────────────────────────────\n1차: 정맥 metoclopramide · 정맥 prochlorperazine · 피하 sumatriptan\n재발 예방: dexamethasone 정맥(추가)\n혈관 수축 약 금기: 관상동맥·뇌혈관·말초혈관 질환, 조절 안 되는 고혈압\n  → 트립탄·dihydroergotamine 피하고 도파민 길항제·ketorolac\n피한다: 아편유사제·butalbital 복합제(효과↓, 재방문·약물 과용 두통↑)\n─────────────────────────────────────────────\n벼락 두통·새로운 양상·국소 결손·유두 부종·발열 → 이차 두통 먼저 평가\n",
+   "참고문헌": [
+    "Orr SL et al. Management of Adults With Acute Migraine in the Emergency Department: The American Headache Society Evidence Assessment of Parenteral Pharmacotherapies. Headache. 2016;56(6):911-940.",
+    "Ailani J et al. The American Headache Society Consensus Statement: Update on integrating new migraine treatments into clinical practice. Headache. 2021;61(7):1021-1039.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine. 21st ed. — Migraine."
+   ]
+  },
+  "design": {
+   "target": "치료",
+   "decision": "평소와 같은 편두통 발작에 구토가 있어 주사 치료가 필요하고, 관상동맥 질환 때문에 트립탄·맥각은 금기이며 아편유사제는 권하지 않으므로 정맥 metoclopramide 를 쓴다.",
+   "rival": [
+    "A",
+    "B"
+   ],
+   "discriminator": "sumatriptan(A)은 편두통 특이 약이라 끌리지만 5-HT1B 작용으로 관상동맥을 수축시켜 관상동맥 질환(스텐트)에서 금기다. morphine(B)은 강한 진통제라 끌리지만 응급실 편두통에서 효과가 떨어지고 재방문과 의존을 늘려 AHS 가 피하도록 권한다.",
+   "steps": 3,
+   "chain": [
+    "1시간에 걸쳐 시작 + 20대부터 같은 양상 반복 + 경부 강직 없음·정상 유두·정상 신경 진찰 → 평소의 편두통 발작",
+    "관상동맥 스텐트(관상동맥 질환) → 혈관 수축 약(트립탄·맥각) 금기",
+    "구토로 경구 약 실패 + 아편유사제·butalbital 은 권고되지 않음 → 정맥 도파민 길항제(metoclopramide)"
+   ],
+   "key": [
+    {
+     "item": "a throbbing left-sided headache that began 7 hours ago and built up over about an hour",
+     "why": "서서히 시작한 한쪽 박동성 두통 — 벼락 두통이 아님",
+     "also": []
+    },
+    {
+     "item": "She has had similar headaches two or three times a year since her 20s",
+     "why": "같은 양상의 반복 — 평소 편두통 발작",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "The neck is supple",
+     "why": "거미막하 출혈·수막염 가능성을 낮춘다(배제는 아님)",
+     "also": []
+    },
+    {
+     "item": "Funduscopic examination shows sharp optic disc margins",
+     "why": "두개내압 상승 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Cranial nerves, strength, sensation, reflexes and coordination are normal",
+     "why": "국소 신경 결손 없음 — 응급 영상이 필요한 이차 두통 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "she underwent placement of a drug-eluting stent in the left anterior descending artery for exertional angina",
+     "why": "관상동맥 질환 — 트립탄(A)·맥각(C) 금기",
+     "also": []
+    },
+    {
+     "item": "She took ibuprofen 3 hours ago and vomited shortly afterward",
+     "why": "경구 약 실패·구토 — 경구 butalbital(D)이 부적절하고 항구토 작용이 있는 주사 약이 유리",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "An ECG shows sinus rhythm with no ST-segment changes",
+     "why": "현재 허혈 소견이 없어도 관상동맥 질환 자체가 트립탄 금기다",
+     "also": []
+    }
+   ],
+   "summary": "서서히 시작해 수십 년간 같은 양상으로 반복된 한쪽 박동성 두통에 경부 강직·유두 부종·신경 결손이 없어 평소의 편두통 발작이다. 관상동맥 스텐트가 있어 트립탄·맥각은 금기이고 아편유사제·butalbital 은 권하지 않으므로, 구역도 함께 줄이는 정맥 metoclopramide 가 가장 적절하다.",
+   "switch": {
+    "choice": "A",
+    "condition": "관상동맥 질환·뇌졸중·조절 안 되는 고혈압 같은 혈관 질환이 없는 환자라면 피하 sumatriptan 도 응급실 편두통의 1차 선택이다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.neuro.migraine.acute-treatment-vascular-contraindication",
+  "distractors": {
+   "A": {
+    "tempting": "편두통 급성기 특이 약은 트립탄이고, 구토가 있으면 피하 주사로 주면 된다.",
+    "answer_first": "트립탄은 5-HT1B 작용으로 관상동맥을 수축시켜 관상동맥 질환·뇌졸중·말초혈관 질환에서 금기다. 이 환자는 관상동맥 스텐트를 넣었다.",
+    "discriminator": "「placement of a drug-eluting stent in the left anterior descending artery」.",
+    "when_right": "혈관 질환이 없는 편두통 환자가 구토 때문에 경구 약을 못 먹을 때.",
+    "split": ""
+   },
+   "B": {
+    "tempting": "구토할 만큼 심한 통증이니 강한 진통제가 가장 확실하다.",
+    "answer_first": "아편유사제는 응급실 편두통에서 metoclopramide 같은 도파민 길항제보다 효과가 떨어지고 재방문·약물 과용 두통·의존을 늘려 1차로 쓰지 않는다.",
+    "discriminator": "평소와 같은 편두통 발작 — 편두통에 효과가 입증된 비혈관수축 약(도파민 길항제)이 있음.",
+    "when_right": "다른 모든 약이 금기이거나 실패한 드문 경우의 마지막 선택.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0211",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Follow-Up Three Days After a High Fever With Cloudy Catheter Urine in a 9-Month-Old Girl Who Is Now Afebrile",
+  "type": "Follow-Up Three Days After a High Fever With Cloudy Catheter Urine in a 9-Month-Old Girl Who Is Now Afebrile",
+  "difficulty": 4,
+  "created": "2026-10-15",
+  "vignette": "A 9-month-old girl is brought to the physician for a follow-up examination. Three days ago, she was evaluated in the emergency department for a temperature of 39.6 °C (103.3 °F) and irritability without cough, rhinorrhea or diarrhea; urinalysis and urine culture of a catheterized specimen were obtained, and oral cefixime was started. Her fever resolved within 36 hours, and she is now feeding well and playing normally. This is her first illness with fever other than colds. She was born at term, and a prenatal ultrasonography at 20 weeks' gestation showed normal kidneys. She has a soft stool every day. Her vital signs are shown. She appears well. The abdomen is soft without a palpable mass. The external genitalia are normal, and there is no sacral dimple or tuft of hair over the lower back. Laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in evaluation?",
+  "options": [
+   "Voiding cystourethrography",
+   "Renal and bladder ultrasonography",
+   "Technetium 99m-labeled DMSA renal scan",
+   "CT of the abdomen and pelvis with contrast",
+   "No imaging unless a second febrile UTI occurs"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 3단계 추론. ① 고열 + 도뇨 소변 농뇨·아질산염 양성 + 대장균 >100,000 CFU/mL → 2~24개월 영아의 첫 열성 요로감염. ② 36시간 안에 해열 → 치료 반응이 좋아 급성기 영상은 필요 없다. ③ AAP 지침: 첫 열성 요로감염 영아 모두 신장·방광 초음파(산전 초음파로 대신 못 함), 배뇨 방광요도조영술은 초음파 이상이나 재발 때.\n- 오답감별:\n  - (A) 배뇨 방광요도조영술은 역류를 직접 보지만 첫 열성 요로감염 뒤 일상적으로 하지 않는다 — 초음파 이상·재발 때 한다.\n  - (C) DMSA 스캔은 급성 신우신염·신장 흉터를 보는 연구·특수 상황용 검사로, 첫 감염 뒤 일상 평가에 권하지 않는다.\n  - (D) 조영 CT 는 치료에 반응하지 않는 신장 농양 등이 의심될 때의 검사다 — 빠르게 회복했고 방사선·조영제 부담이 크다.\n  - (E) 정상 산전 초음파와 빠른 회복에 끌리지만, 지침은 첫 열성 요로감염 영아 모두에게 신장·방광 초음파를 권한다.\n- 임상핵심: 2~24개월 첫 열성 요로감염 → 신장·방광 초음파 모두. 배뇨 방광요도조영술은 초음파 이상 또는 재발 때.\n- 출처: AAP Clinical Practice Guideline — initial UTI in febrile infants 2–24 months(Pediatrics 2011; reaffirmed 2016).",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 고열 + 도뇨 소변 농뇨·아질산염 양성 + 대장균 >100,000 CFU/mL → 2~24개월 영아의 첫 열성 요로감염. ② 36시간 안에 해열 → 치료 반응이 좋아 급성기 영상은 필요 없다. ③ AAP 지침: 첫 열성 요로감염 영아 모두 신장·방광 초음파(산전 초음파로 대신 못 함), 배뇨 방광요도조영술은 초음파 이상이나 재발 때."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 배뇨 방광요도조영술은 역류를 직접 보지만 첫 열성 요로감염 뒤 일상적으로 하지 않는다 — 초음파 이상·재발 때 한다.\n(C) DMSA 스캔은 급성 신우신염·신장 흉터를 보는 연구·특수 상황용 검사로, 첫 감염 뒤 일상 평가에 권하지 않는다.\n(D) 조영 CT 는 치료에 반응하지 않는 신장 농양 등이 의심될 때의 검사다 — 빠르게 회복했고 방사선·조영제 부담이 크다.\n(E) 정상 산전 초음파와 빠른 회복에 끌리지만, 지침은 첫 열성 요로감염 영아 모두에게 신장·방광 초음파를 권한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "2~24개월 첫 열성 요로감염 → 신장·방광 초음파 모두. 배뇨 방광요도조영술은 초음파 이상 또는 재발 때."
+   },
+   {
+    "k": "출처",
+    "v": "AAP Clinical Practice Guideline — initial UTI in febrile infants 2–24 months(Pediatrics 2011; reaffirmed 2016)."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (Subcommittee on Urinary Tract Infection, Steering Committee on Quality Improvement and Management. Urinary tract infection: clinical practice guideline for the diagnosis and management of the initial UTI in febrile infants and children 2 to 24 months. Pediatrics. 2011;128:595-610; reaffirmed 2016)",
+  "vitals": [
+   {
+    "name": "Temperature",
+    "value": "37.0 °C (98.6 °F)"
+   },
+   {
+    "name": "Pulse",
+    "value": "118 /min"
+   },
+   {
+    "name": "Respirations",
+    "value": "30 /min"
+   },
+   {
+    "name": "Blood pressure",
+    "value": "92/56 mm Hg"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Urinalysis (catheter, 3 days ago): leukocyte esterase",
+    "value": "Positive",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urinalysis (catheter, 3 days ago): nitrite",
+    "value": "Positive",
+    "ref": "Negative"
+   },
+   {
+    "name": "Urinalysis (catheter, 3 days ago): leukocytes",
+    "value": "50–100 /hpf",
+    "ref": "<5 /hpf"
+   },
+   {
+    "name": "Urine culture (catheter, 3 days ago)",
+    "value": ">100,000 CFU/mL Escherichia coli, susceptible to cefixime",
+    "ref": "No growth"
+   },
+   {
+    "name": "Creatinine",
+    "value": "0.3 mg/dL",
+    "ref": "0.2–0.4 mg/dL"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "2~24개월 첫 열성 요로감염 — 영상(AAP 2011, 2016 재확인)\n─────────────────────────────────────────────\n모두           → 신장·방광 초음파(산전 초음파로 대신 못 함)\n배뇨 방광요도조영술 → 첫 감염 뒤 일상적으로 하지 않음\n                초음파에서 수신증·흉터·고도 역류·폐쇄 시사 → 시행\n                열성 요로감염 재발 → 시행\n급성기 영상     → 48시간 안에 반응이 없거나 비전형 경과일 때\n─────────────────────────────────────────────\n재발하면 바로 의료진에게 — 다음 열성 질환에서 48시간 안 소변 검사\n",
+   "참고문헌": [
+    "Subcommittee on Urinary Tract Infection, Steering Committee on Quality Improvement and Management. Urinary tract infection: clinical practice guideline for the diagnosis and management of the initial UTI in febrile infants and children 2 to 24 months. Pediatrics. 2011;128(3):595-610.",
+    "Subcommittee on Urinary Tract Infection. Reaffirmation of AAP Clinical Practice Guideline: the diagnosis and management of the initial urinary tract infection in febrile infants and young children 2-24 months of age. Pediatrics. 2016;138(6):e20163026."
+   ]
+  },
+  "design": {
+   "target": "검사 선택",
+   "decision": "2~24개월 영아의 첫 열성 요로감염이 치료에 잘 반응했으면 다음 검사는 신장·방광 초음파이고, 배뇨 방광요도조영술은 초음파 이상이나 재발 때만 한다.",
+   "rival": [
+    "A",
+    "E"
+   ],
+   "discriminator": "배뇨 방광요도조영술(A)은 방광요관 역류를 직접 보는 검사라 끌리지만 AAP 지침은 첫 열성 요로감염 뒤 일상적으로 하지 않고, 초음파 이상·재발 때로 미룬다. 「재발 때까지 영상 없음」(E)은 정상 산전 초음파·빠른 회복에 끌리지만, 지침은 첫 열성 요로감염 영아 모두에게 신장·방광 초음파를 권하고 산전 초음파가 그것을 대신하지 못한다.",
+   "steps": 3,
+   "chain": [
+    "고열 + 도뇨 소변 농뇨·아질산염 양성 + 대장균 >100,000 CFU/mL → 2~24개월 영아의 첫 열성 요로감염",
+    "36시간 안에 해열·잘 먹음 → 치료 반응 양호, 급성기 CT 불필요",
+    "첫 열성 요로감염 → 모두 신장·방광 초음파(산전 초음파로 대신 못 함), 배뇨 방광요도조영술은 초음파 이상·재발 때"
+   ],
+   "key": [
+    {
+     "item": "Urine culture (catheter, 3 days ago)",
+     "why": "도뇨 검체 대장균 >100,000 CFU/mL — 요로감염 확진",
+     "also": []
+    },
+    {
+     "item": "Three days ago, she was evaluated in the emergency department for a temperature of 39.6 °C (103.3 °F)",
+     "why": "열성 요로감염 — 영상 권고의 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "there is no sacral dimple or tuft of hair over the lower back",
+     "why": "척수 이상에 의한 신경인성 방광 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "This is her first illness with fever other than colds",
+     "why": "첫 열성 요로감염 — 배뇨 방광요도조영술(A)을 일상적으로 하지 않는 조건",
+     "also": []
+    },
+    {
+     "item": "Her fever resolved within 36 hours",
+     "why": "빠른 치료 반응 — 급성기 CT(D) 불필요",
+     "also": []
+    },
+    {
+     "item": "a prenatal ultrasonography at 20 weeks' gestation showed normal kidneys",
+     "why": "정상 산전 초음파는 생후 신장·방광 초음파를 대신하지 못한다 — E 의 함정",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "She has a soft stool every day",
+     "why": "변비(배뇨·배변 장애) 없음 — 재발 위험 인자가 아님",
+     "also": []
+    }
+   ],
+   "summary": "2~24개월 영아의 첫 열성 요로감염이 치료에 빠르게 반응했다. 지침은 이런 영아 모두에게 신장·방광 초음파를 권하고(산전 초음파로 대신 못 함), 배뇨 방광요도조영술은 초음파 이상이나 열성 요로감염 재발 때로 미룬다.",
+   "switch": {
+    "choice": "A",
+    "condition": "신장·방광 초음파에서 수신증·신장 흉터 등 고도 역류나 폐쇄를 시사하는 소견이 있거나, 열성 요로감염이 재발했다면 배뇨 방광요도조영술이 다음 검사다."
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "objective": "cn.peds.febrile-uti.renal-bladder-ultrasound-first",
+  "distractors": {
+   "A": {
+    "tempting": "영아 요로감염의 가장 중요한 원인은 방광요관 역류이고, 역류를 직접 보는 검사는 배뇨 방광요도조영술이다.",
+    "answer_first": "AAP 지침은 첫 열성 요로감염 뒤 배뇨 방광요도조영술을 일상적으로 하지 않는다(카테터 삽입·방사선 노출에 비해 예방적 항생제 이득이 작다). 먼저 신장·방광 초음파를 하고, 이상이 있거나 재발할 때 한다.",
+    "discriminator": "「This is her first illness with fever other than colds」 — 첫 열성 요로감염.",
+    "when_right": "신장·방광 초음파가 수신증·흉터·고도 역류를 시사하거나, 열성 요로감염이 두 번째일 때.",
+    "split": ""
+   },
+   "E": {
+    "tempting": "산전 초음파에서 신장이 정상이었고 아이가 금방 좋아졌으니 첫 감염에는 영상이 필요 없어 보인다.",
+    "answer_first": "지침은 첫 열성 요로감염을 겪은 2~24개월 영아 모두에게 신장·방광 초음파를 권한다. 임신 중기 산전 초음파는 생후 구조 이상을 충분히 배제하지 못해 이를 대신하지 않는다.",
+    "discriminator": "2~24개월 + 열성 요로감염 — 산전 초음파와 관계없이 신장·방광 초음파 대상.",
+    "when_right": "열이 없는 방광염만 있었던 학령기 소아처럼, 지침이 영상을 권하지 않는 경우.",
+    "split": ""
+   }
+  },
+  "figureSvg": ""
  }
 ];

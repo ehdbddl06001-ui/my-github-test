@@ -5,14 +5,14 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3665,
+  "total": 3661,
   "byType": {
+   "usmle": 198,
    "anatomy": 841,
    "kmle": 1408,
-   "imaging": 339,
    "concept": 101,
-   "usmle": 192,
    "paper": 767,
+   "imaging": 329,
    "ailab": 14,
    "basic": 3
   },
@@ -21,13 +21,13 @@ window.MEDKOS_INDEX = {
    "Cardiology": 254,
    "Nephrology": 202,
    "Infectious Disease": 185,
-   "Pediatrics": 169,
+   "Pediatrics": 170,
    "Obstetrics & Gynecology": 123,
    "Hematology-Oncology": 112,
    "Pathology": 112,
    "Psychiatry": 106,
    "Rheumatology": 106,
-   "Neurology": 104,
+   "Neurology": 105,
    "General Surgery": 96,
    "Endocrinology": 93,
    "Dermatology": 92,
@@ -41,30 +41,30 @@ window.MEDKOS_INDEX = {
    "산부인과": 53,
    "순환기": 30,
    "Physiology": 22,
-   "호흡기": 22,
-   "소화기": 21,
+   "호흡기": 21,
+   "소화기": 20,
    "소아과": 19,
-   "Pharmacology": 16,
-   "감염": 16,
+   "Pharmacology": 17,
+   "Biochemistry": 16,
    "내분비": 16,
-   "신장·비뇨기": 16,
-   "응급·중환자": 16,
    "혈액·종양": 16,
-   "Biochemistry": 15,
-   "병리·조직학": 15,
+   "Microbiology": 15,
+   "감염": 15,
    "신경": 15,
-   "Microbiology": 14,
-   "피부과": 14,
-   "예방의학·역학": 13,
-   "외과": 13,
+   "신장·비뇨기": 15,
+   "응급·중환자": 15,
+   "병리·조직학": 14,
+   "피부과": 13,
+   "Internal Medicine": 12,
+   "예방의학·역학": 12,
+   "외과": 12,
    "Immunology": 11,
-   "Internal Medicine": 11,
    "근골격·류마티스": 9,
    "약리": 9,
    "정신과": 8,
    "안과": 6,
    "영상의학": 6,
-   "이비인후과": 6,
+   "이비인후과": 5,
    "Allergy": 4,
    "Emergency Medicine": 4,
    "Medical AI Lab": 4,
@@ -78,13 +78,145 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2542,
+   "high": 2538,
    "medium": 1073,
    "low": 50
   },
-  "tagCount": 4762
+  "tagCount": 4789
  },
  "docs": [
+  {
+   "id": "usmle-2026-0211",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Follow-Up Three Days After a High Fever With Cloudy Catheter Urine in a 9-Month-Old Girl Who Is Now Afebrile",
+   "tags": [
+    "febrile-uti",
+    "infant",
+    "renal-bladder-ultrasound",
+    "voiding-cystourethrography",
+    "vesicoureteral-reflux",
+    "aap-guideline",
+    "imaging-selection"
+   ],
+   "source": "USMLE-style / MedKOS (Subcommittee on Urinary Tract Infection, Steering Committee on Quality Improvement and Management. Urinary tract infection: clinical practice guideline for the diagnosis and management of the initial UTI in febrile infants and children 2 to 24 months. Pediatrics. 2011;128:595-610; reaffirmed 2016)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0211.md",
+   "snippet": "A 9 month old girl is brought to the physician for a follow up examination. Three days ago, she was evaluated in the emergency department for a temperature of 39.6 °C (103.3 °F) and irritability without cough, rhinorrhea or diarrhea; urinal",
+   "text": "Pediatrics Follow-Up Three Days After a High Fever With Cloudy Catheter Urine in a 9-Month-Old Girl Who Is Now Afebrile febrile-uti infant renal-bladder-ultrasound voiding-cystourethrography vesicoureteral-reflux aap-guideline imaging-selection USMLE-style / MedKOS (Subcommittee on Urinary Tract Infection, Steering Committee on Quality Improvement and Management. Urinary tract infection: clinical practice guideline for the diagnosis and management of the initial UTI in febrile infants and children 2 to 24 months. Pediatrics. 2011;128:595-610; reaffirmed 2016) A 9 month old girl is brought to the physician for a follow up examination. Three days ago, she was evaluated in the emergency department for a temperature of 39.6 °C (103.3 °F) and irritability without cough, rhinorrhea or diarrhea; urinalysis and urine culture of a catheterized specimen were obtained, and oral cefixime was started. Her fever resolved within 36 hours, and she is now feeding well and playing normally. This is her first illness with fever other than colds. She was born at term, and a prenatal ultrasonography at 20 weeks' gestation showed normal kidneys. She has a soft stool every day. Her vital signs are shown. She appears well. The abdomen is soft without a palpable mass. The external genitalia are normal, and there is no sacral dimple or tuft of hair over the lower back. Laboratory results are shown. Which of the following is the most appropriate next step in evaluation? A. Voiding cystourethrography B. Renal and bladder ultrasonography C. Technetium 99m labeled DMSA renal scan D. CT of the abdomen and pelvis with contrast E. No imaging unless a second febrile UTI occurs 고열·보챔 + 도뇨 소변의 농뇨·아질산염 양성과 대장균 100,000 CFU/mL 은 2~24개월 영아의 첫 열성 요로감염이다. 치료에 빠르게 반응했으므로 급성기 영상(CT)은 필요 없다. AAP 지침은 첫 열성 요로감염을 겪은 2~24개월 영아 모두에게 신장·방광 초음파로 구조 이상(수신증·방광 이상)을 찾도록 권하고, 배뇨 방광요도조영술은 첫 감염 뒤 일상적으로 하지 않는다 — 초음파에서 수신증·흉터·고도 역류나 폐쇄성 요로병증을 시사하는 소견이 있거나, 열성 요로감염이 재발할 때 한다. 임신 중기 산전 초음파가 정상이어도 신장·방광 초음파를 대신하지 못한다."
+  },
+  {
+   "id": "usmle-2026-0210",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "A Throbbing One-Sided Headache With Vomiting Like Her Usual Attacks in a 52-Year-Old With a Coronary Stent",
+   "tags": [
+    "migraine",
+    "emergency-department",
+    "metoclopramide",
+    "triptan-contraindication",
+    "coronary-artery-disease",
+    "ergot",
+    "opioid-avoidance"
+   ],
+   "source": "USMLE-style / MedKOS (Orr SL et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache. 2016;56:911-940; Ailani J et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. Headache. 2021;61:1021-1039; Harrison's Principles of Internal Medicine 21e — Migraine)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0210.md",
+   "snippet": "A 52 year old woman comes to the emergency department because of a throbbing left sided headache that began 7 hours ago and built up over about an hour. She has nausea, has vomited three times and finds light and noise unbearable. She has h",
+   "text": "Neurology A Throbbing One-Sided Headache With Vomiting Like Her Usual Attacks in a 52-Year-Old With a Coronary Stent migraine emergency-department metoclopramide triptan-contraindication coronary-artery-disease ergot opioid-avoidance USMLE-style / MedKOS (Orr SL et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache. 2016;56:911-940; Ailani J et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. Headache. 2021;61:1021-1039; Harrison's Principles of Internal Medicine 21e — Migraine) A 52 year old woman comes to the emergency department because of a throbbing left sided headache that began 7 hours ago and built up over about an hour. She has nausea, has vomited three times and finds light and noise unbearable. She has had similar headaches two or three times a year since her 20s; they usually resolve after she sleeps, but this one has not. She took ibuprofen 3 hours ago and vomited shortly afterward. Two years ago, she underwent placement of a drug eluting stent in the left anterior descending artery for exertional angina; she has had no chest pain since. Her medications are aspirin, atorvastatin and metoprolol. Her vital signs are shown. She is lying still in a darkened room with her eyes closed. The neck is supple. Funduscopic examination shows sharp optic disc margins. Cranial nerves, strength, sensation, reflexes and coordination are normal, and her gait is normal. An ECG shows sinus rhythm with no ST segment changes. Laboratory results are shown. Which of the following is the most appropriate pharmacotherapy? A. Subcutaneous sumatriptan B. Intravenous morphine C. Intravenous dihydroergotamine D. Oral butalbital acetaminophen caffeine E. Intravenous metoclopramide 서서히 1시간에 걸쳐 시작해 20대부터 반복되던 발작과 같은 양상의 한쪽 박동성 두통·구역·빛·소리 공포, 경부 강직 없음, 정상 시신경 유두와 신경학적 진찰 — 평소의 편두통 발작이다(갑작스러운 벼락 두통이나 새로운 양상이 아니라 응급 영상이 필요한 이차 두통 가능성이 낮다). 구토로 경구 약이 듣지 않아 주사 치료가 필요한데, 관상동맥 스텐트를 넣은 관상동맥 질환이 있어 혈관을 수축시키는 트립탄(sumatriptan)과 맥각 알칼로이드(dihydroergotamine)는 금기다. 아편유사제와 butalbital 복합제는 효과가 떨어지고 재방문·약물 과용 두통을 늘려 권하지 않는다. 정맥 metoclopramide(도파민 길항제)는 구역과 두통을 함께 줄이는 응급실 1차 약이다."
+  },
+  {
+   "id": "usmle-2026-0209",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Three Weeks of Palpitations and Exertional Dyspnea With a Diastolic Rumble in a 44-Year-Old Woman Who Had Fever and Joint Pains as a Child",
+   "tags": [
+    "atrial-fibrillation",
+    "rheumatic-mitral-stenosis",
+    "anticoagulation",
+    "warfarin",
+    "doac",
+    "cha2ds2-vasc",
+    "valvular-af"
+   ],
+   "source": "USMLE-style / MedKOS (Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149:e1-e156; Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation. 2021;143:e72-e227; Connolly SJ et al. Rivaroxaban in rheumatic heart disease-associated atrial fibrillation (INVICTUS). N Engl J Med. 2022;387:978-988)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0209.md",
+   "snippet": "A 44 year old woman comes to the physician because of palpitations and shortness of breath when climbing stairs for 3 weeks. She emigrated from rural Guatemala 12 years ago. As a child she had several weeks of fever and painful, swollen kne",
+   "text": "Internal Medicine Three Weeks of Palpitations and Exertional Dyspnea With a Diastolic Rumble in a 44-Year-Old Woman Who Had Fever and Joint Pains as a Child atrial-fibrillation rheumatic-mitral-stenosis anticoagulation warfarin doac cha2ds2-vasc valvular-af USMLE-style / MedKOS (Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation. 2024;149:e1-e156; Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation. 2021;143:e72-e227; Connolly SJ et al. Rivaroxaban in rheumatic heart disease-associated atrial fibrillation (INVICTUS). N Engl J Med. 2022;387:978-988) A 44 year old woman comes to the physician because of palpitations and shortness of breath when climbing stairs for 3 weeks. She emigrated from rural Guatemala 12 years ago. As a child she had several weeks of fever and painful, swollen knees and ankles that moved from joint to joint; she was not treated. She has no history of hypertension, diabetes, stroke or heart failure, and she takes no medications. Her vital signs are shown; oxygen saturation is 97% on room air. The first heart sound is loud. At the apex there is an early diastolic opening snap followed by a low pitched diastolic rumble that is heard best in the left lateral decubitus position. The lungs are clear and there is no peripheral edema. An ECG is shown. Transthoracic echocardiography shows thickened mitral leaflets with commissural fusion, a mitral valve area of 1.1 cm², an enlarged left atrium without thrombus and a left ventricular ejection fraction of 60%. Laboratory results are shown. Metoprolol is started and her heart rate decreases to 78/min. Which of the following is the most appropriate long term therapy to prevent thromboembolism in this patient? A. Apixaban, 5 mg twice daily B. Warfarin, target INR 2.0–3.0 C. Aspirin and clopidogrel D. Low dose aspirin E. No antithrombotic therapy 심전도는 P파 없이 불규칙하게 불규칙한 리듬 — 심방세동이다. 어릴 때의 이동성 다발 관절염(급성 류마티스열), 큰 S1·열림음·확장기 우르릉 소리, 판막엽 비후와 교련 융합, 판막 면적 1.1 cm² 는 중등도 이상의 류마티스 승모판 협착이다. 승모판 협착에 동반된 심방세동은 혈전색전 위험이 매우 높아 CHA2DS2 VASc 점수(여성 1점)와 관계없이 항응고가 필요하다. 그리고 중등도 이상 류마티스 승모판 협착에서는 DOAC 의 효과가 입증되지 않았고(INVICTUS 시험에서 rivaroxaban 이 비타민 K 길항제보다 나빴다) 지침은 비타민 K 길항제(warfarin)를 권한다."
+  },
+  {
+   "id": "usmle-2026-0208",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Fever, Shock and Blood-Filled Blisters on One Leg the Day After a Restaurant Meal in a Man With Cirrhosis",
+   "tags": [
+    "vibrio-vulnificus",
+    "raw-oysters",
+    "cirrhosis",
+    "primary-septicemia",
+    "hemorrhagic-bullae",
+    "gram-negative-rod",
+    "necrotizing-soft-tissue-infection"
+   ],
+   "source": "USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e — Infections due to non-cholera Vibrio species: V. vulnificus; CDC. Vibrio species causing vibriosis — clinical information)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0208.md",
+   "snippet": "A 58 year old man is brought to the emergency department because of fever, shaking chills and severe pain and swelling of the left lower leg for 18 hours. He has alcohol related cirrhosis. The evening before his symptoms began, he ate a doz",
+   "text": "Microbiology Fever, Shock and Blood-Filled Blisters on One Leg the Day After a Restaurant Meal in a Man With Cirrhosis vibrio-vulnificus raw-oysters cirrhosis primary-septicemia hemorrhagic-bullae gram-negative-rod necrotizing-soft-tissue-infection USMLE-style / MedKOS (Harrison's Principles of Internal Medicine 21e — Infections due to non-cholera Vibrio species: V. vulnificus; CDC. Vibrio species causing vibriosis — clinical information) A 58 year old man is brought to the emergency department because of fever, shaking chills and severe pain and swelling of the left lower leg for 18 hours. He has alcohol related cirrhosis. The evening before his symptoms began, he ate a dozen raw oysters at a seafood restaurant on the Gulf Coast of Texas. He has had no vomiting or diarrhea. He has not had any skin injury and has not been swimming or wading. His vital signs are shown. He is confused. The sclerae are icteric and there is shifting dullness of the abdomen. The left lower leg is swollen, dusky red and exquisitely tender from the ankle to the knee, with several large bullae filled with dark, blood tinged fluid. There is no crepitus. Laboratory results are shown. A Gram stain of fluid aspirated from one of the bullae shows gram negative rods, and blood cultures are pending. Which of the following is the most likely causative organism? A. Streptococcus pyogenes B. Vibrio parahaemolyticus C. Clostridium perfringens D. Vibrio vulnificus E. Listeria monocytogenes 간경변 환자가 날굴을 먹은 다음 날 장 증상 없이 고열·패혈성 쇼크와 한쪽 다리의 출혈성 수포를 동반한 괴사성 연조직 감염이 생겼고, 수포액 그람 염색은 그람 음성 막대균이다 — Vibrio vulnificus 의 1차 패혈증이다. 간경변·혈색소증 등 철 과부하·간질환 환자는 이 균이 철을 이용해 빠르게 증식하고, 균혈증을 거쳐 피부에 출혈성 수포를 만든다. 같은 바다 비브리오인 V. parahaemolyticus 는 날해산물 뒤 자기 제한성 장염을 일으킨다."
+  },
+  {
+   "id": "usmle-2026-0207",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Vomiting, Jaundice, a Big Liver and Cloudy Lenses in a 6-Day-Old Breastfed Girl With Gram-Negative Sepsis",
+   "tags": [
+    "classic-galactosemia",
+    "galt-deficiency",
+    "galactitol",
+    "aldose-reductase",
+    "cataract",
+    "e-coli-sepsis",
+    "reducing-substances"
+   ],
+   "source": "USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry — Metabolism of monosaccharides: galactose; Nelson Textbook of Pediatrics — Defects in galactose metabolism; Berry GT. Classic galactosemia and clinical variant galactosemia. GeneReviews)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0207.md",
+   "snippet": "A 6 day old girl is brought to the emergency department because of poor feeding, vomiting after most feeds and increasing sleepiness for 2 days. She was born at term after an uncomplicated pregnancy and vaginal delivery and has been exclusi",
+   "text": "Biochemistry Vomiting, Jaundice, a Big Liver and Cloudy Lenses in a 6-Day-Old Breastfed Girl With Gram-Negative Sepsis classic-galactosemia galt-deficiency galactitol aldose-reductase cataract e-coli-sepsis reducing-substances USMLE-style / MedKOS (Lippincott Illustrated Reviews: Biochemistry — Metabolism of monosaccharides: galactose; Nelson Textbook of Pediatrics — Defects in galactose metabolism; Berry GT. Classic galactosemia and clinical variant galactosemia. GeneReviews) A 6 day old girl is brought to the emergency department because of poor feeding, vomiting after most feeds and increasing sleepiness for 2 days. She was born at term after an uncomplicated pregnancy and vaginal delivery and has been exclusively breastfed since birth. Her newborn screening results are not yet available. Her vital signs are shown. She is lethargic and jaundiced. The anterior fontanelle is flat. The liver edge is palpable 4 cm below the right costal margin. Examination of the red reflex shows a central oil droplet opacity in both lenses. Laboratory results are shown. Blood cultures grow Escherichia coli. Which of the following is most directly responsible for the lens findings in this patient? A. Accumulation of galactitol B. Accumulation of galactose 1 phosphate C. Accumulation of sorbitol D. Accumulation of fructose 1 phosphate E. Accumulation of glucose 6 phosphate 모유(유당 = 포도당 + 갈락토스)를 먹기 시작한 지 며칠 만에 구토·처짐·황달·간비대·응고장애·저혈당이 오고, 대장균 패혈증이 겹쳤으며, 소변 포도당 효소 검사는 음성인데 구리 환원 검사는 양성이다(포도당이 아닌 환원당 = 갈락토스) — 고전 갈락토스혈증(GALT 결핍)이다. 갈락토스 1 인산이 쌓여 간·신장·뇌를 손상하지만, 수정체 혼탁은 쌓인 갈락토스가 알도스 환원효소(aldose reductase)에 의해 갈락티톨로 바뀌어 수정체 안에 갇히고 삼투로 물을 끌어들여 생긴다. 그래서 갈락토스 1 인산이 쌓이지 않는 갈락토키나제 결핍에서도 백내장이 생긴다."
+  },
+  {
+   "id": "usmle-2026-0206",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant",
+   "tags": [
+    "serotonin-syndrome",
+    "linezolid",
+    "monoamine-oxidase-inhibition",
+    "ssri",
+    "drug-interaction",
+    "clonus",
+    "mrsa-pneumonia"
+   ],
+   "source": "USMLE-style / MedKOS (Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352:1112-1120; Katzung's Basic & Clinical Pharmacology — Oxazolidinones; FDA Drug Safety Communication 2011: serotonin syndrome with linezolid and serotonergic psychiatric drugs)",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/usmle/usmle-2026-0206.md",
+   "snippet": "A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancom",
+   "text": "Pharmacology Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant serotonin-syndrome linezolid monoamine-oxidase-inhibition ssri drug-interaction clonus mrsa-pneumonia USMLE-style / MedKOS (Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352:1112-1120; Katzung's Basic & Clinical Pharmacology — Oxazolidinones; FDA Drug Safety Communication 2011: serotonin syndrome with linezolid and serotonergic psychiatric drugs) A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancomycin for 3 days; because his serum creatinine rose, the antibiotic was changed 2 days ago, and he has since received a different oral antibiotic. He has taken sertraline 100 mg daily for major depressive disorder for 2 years and takes no other medications. His vital signs are shown. He is restless and diaphoretic, and he is oriented to person only. The pupils are 6 mm and reactive. The mucous membranes are moist and the bowel sounds are hyperactive. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and are 3+ in the upper extremities. There is intermittent slow horizontal eye movement from side to side. Muscle tone is increased in the legs; there is no lead pipe rigidity of the arms. Laboratory results are shown. Which of the following actions of the most recently added drug best explains this patient's current condition? A. Inhibition of hepatic CYP2D6 metabolism of sertraline B. Blockade of central dopamine D2 receptors C. Inhibition of monoamine oxidase D. Blockade of central muscarinic receptors E. Inhibition of mitochondrial protein synthesis SSRI(sertraline)를 오래 먹던 환자가 MRSA 폐렴 치료 중 반코마이신에서 경구 항생제로 바뀐 지 2일 만에 초조·떨림·발한·설사·고열, 그리고 하지에서 더 뚜렷한 반사항진·지속 발목 간대·안구 간대가 생겼다 — 세로토닌 증후군이다. 신장 기능 저하로 반코마이신을 대신할 수 있는 MRSA 폐렴용 경구 항생제는 linezolid 이고, linezolid 는 약한 가역적 비선택 MAO 억제제라 세로토닌 분해를 줄여 SSRI 와 함께 쓰면 시냅스 세로토닌이 쌓인다. CYP 상호작용으로 sertraline 농도를 올리는 기전이 아니다."
+  },
   {
    "id": "anatomy-daily-2026-10-15",
    "type": "anatomy",
@@ -708,180 +840,6 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1409.md",
    "snippet": "72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년",
    "text": "Cardiology Abrupt Fainting without Warning in an Older Man with an Abnormal Baseline ECG syncope ecg bifascicular-block conduction-disease diagnosis KMLE 2026 / Claude 72세 남자가 집 소파에 앉아 텔레비전을 보다가 갑자기 의식을 잃어 왔다. 아내에 따르면 전조 없이 앞으로 쓰러졌고, 얼굴이 창백했으며 30초쯤 뒤 스스로 깨어났다. 깨어난 직후 바로 대화가 되었고 혀를 깨물거나 소변을 지리지 않았다. 쓰러지기 전 가슴 통증·두근거림은 없었고, 식사·배뇨·기침과도 관계가 없었다. 쓰러지며 이마가 찢어졌다. 고혈압으로 암로디핀을 복용하며 이뇨제·베타차단제·항부정맥제는 복용하지 않는다. 지난 반년 동안 비슷하게 갑자기 주저앉은 적이 한 번 있었다. 진찰에서 의식은 명료하고 신경학적 결손은 없으며 심잡음은 들리지 않는다. 응급실에서 찍은 12유도 심전도는 그림과 같고, 활력징후와 검사 소견은 자료와 같다. 실신의 원인으로 가장 가능성이 높은 것은? A. 미주신경성 실신 B. 기립성 저혈압 C. 대동맥판 협착에 의한 실신 D. 단형 심실빈맥 E. 간헐적 고도 방실차단 심전도는 동율동에 넓은 QRS, V1의 rSR′ 모양과 좌축편위로 완전우각차단과 좌전섬유속차단이 함께 있는 이섬유속차단이다. 전조 없이 앉은 자세에서 갑자기 쓰러져 다친 실신은 부정맥성 실신을 시사한다. 기립 혈압·심장초음파가 정상이어서 기립성 저혈압·구조적 심질환(대동맥판 협착, 반흔 관련 심실빈맥)의 가능성은 낮으므로, 남은 전도계로 간헐적으로 생기는 고도 방실차단이 가장 가능성이 높다."
-  },
-  {
-   "id": "imaging-2026-0340",
-   "type": "imaging",
-   "unit": "",
-   "topic": "예방의학·역학",
-   "subtopic": "예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미",
-   "tags": [
-    "opendata",
-    "usmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0340.md",
-   "snippet": "A 45 year old woman asks her physician about a new blood test for a cancer that has a prevalence of 1% among women of her age in the general population. In a validation study, the test had a sensitivity of 90% and a specificity of 95%. She ",
-   "text": "예방의학·역학 예방의학·역학·보건통계 — 유병률이 낮은 집단에서 양성 검사의 의미 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 45 year old woman asks her physician about a new blood test for a cancer that has a prevalence of 1% among women of her age in the general population. In a validation study, the test had a sensitivity of 90% and a specificity of 95%. She has no symptoms and no family history of cancer. Physical examination shows no abnormalities. She undergoes the test, and the result is positive. Which of the following is closest to the probability that she has the cancer? A. 99.9% B. 15% C. 47% D. 90% E. 95%"
-  },
-  {
-   "id": "imaging-2026-0339",
-   "type": "imaging",
-   "unit": "",
-   "topic": "감염",
-   "subtopic": "감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방",
-   "tags": [
-    "opendata",
-    "usmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0339.md",
-   "snippet": "A 26 year old woman at 20 weeks' gestation comes to the physician 1 day after her roommate was hospitalized with meningitis. The roommate's cerebrospinal fluid culture grew gram negative diplococci identified as Neisseria meningitidis. The ",
-   "text": "감염 감염 — 수막알균 수막염 환자와 함께 사는 임신부의 예방 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 26 year old woman at 20 weeks' gestation comes to the physician 1 day after her roommate was hospitalized with meningitis. The roommate's cerebrospinal fluid culture grew gram negative diplococci identified as Neisseria meningitidis. The patient has shared an apartment and meals with her roommate during the past week. She feels well. She has no history of serious illness and takes only a prenatal vitamin. She has no known drug allergies. Temperature is 36.8°C. Physical examination shows no abnormalities; there is no rash or neck stiffness. Which of the following is the most appropriate next step in management? A. Single oral dose of ciprofloxacin B. Oral rifampin twice daily for 2 days C. Meningococcal vaccination without antibiotics D. Observation with return if fever develops E. Single intramuscular dose of ceftriaxone"
-  },
-  {
-   "id": "imaging-2026-0338",
-   "type": "imaging",
-   "unit": "",
-   "topic": "소화기",
-   "subtopic": "소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사",
-   "tags": [
-    "opendata",
-    "usmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0338.md",
-   "snippet": "A 42 year old woman comes to the physician because of difficulty swallowing both solids and liquids for 1 year. She often regurgitates undigested food at night and has lost 5 kg. She has no heartburn, Raynaud phenomenon, or skin tightening.",
-   "text": "소화기 소화기·간담췌 — 고형식과 물을 모두 삼키기 힘든 여성의 식도 내압검사 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 42 year old woman comes to the physician because of difficulty swallowing both solids and liquids for 1 year. She often regurgitates undigested food at night and has lost 5 kg. She has no heartburn, Raynaud phenomenon, or skin tightening. She was born in and has always lived in the United States. Vital signs are within normal limits. Physical examination shows no abnormalities. Upper endoscopy shows retained food in a dilated esophagus and no mass at the gastroesophageal junction. High resolution esophageal manometry shows incomplete relaxation of the lower esophageal sphincter and absent peristalsis in the esophageal body. Which of the following is the most likely underlying cause of this patient's condition? A. Eosinophilic infiltration of the esophageal mucosa B. Destruction of ganglion cells by Trypanosoma cruzi C. Tumor infiltration at the gastroesophageal junction D. Loss of inhibitory neurons in the myenteric plexus E. Smooth muscle atrophy and fibrosis of the distal esophagus"
-  },
-  {
-   "id": "imaging-2026-0337",
-   "type": "imaging",
-   "unit": "",
-   "topic": "이비인후과",
-   "subtopic": "이비인후과 — 항생제에도 심해지는 인두통과 개구장애",
-   "tags": [
-    "opendata",
-    "kmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0337.md",
-   "snippet": "24세 남자가 5일 전부터 목이 아프고 이틀 전부터 침을 삼키기 어려워 왔다. 사흘 전 의원에서 경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다. 체온 38.6 ℃, 맥박 104회/분, 호흡 18회/분, 산소포화도 98 % 이다. 목소리가 입에 무언가를 문 듯 먹먹하고, 입을 2 cm 밖에 벌리지 못한다. 왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다. 흡기 시 협착음은 없고 침을 흘리지 않으며 목을 움직이는 데 ",
-   "text": "이비인후과 이비인후과 — 항생제에도 심해지는 인두통과 개구장애 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 24세 남자가 5일 전부터 목이 아프고 이틀 전부터 침을 삼키기 어려워 왔다. 사흘 전 의원에서 경구 항생제를 처방받아 먹었으나 통증이 더 심해졌다. 체온 38.6 ℃, 맥박 104회/분, 호흡 18회/분, 산소포화도 98 % 이다. 목소리가 입에 무언가를 문 듯 먹먹하고, 입을 2 cm 밖에 벌리지 못한다. 왼쪽 연구개가 부풀어 있고 목젖이 오른쪽으로 밀려 있다. 흡기 시 협착음은 없고 침을 흘리지 않으며 목을 움직이는 데 제한은 없다. 왼쪽 위목 림프절이 커져 있고 누르면 아프다. 가장 적절한 처치는? A. 다른 경구 항생제로 바꾸어 외래 추적 B. 응급 기관절개술 C. 고용량 스테로이드 단독 투여 D. 경부 림프절 절제 생검 E. 바늘흡인 또는 절개배농과 항생제"
-  },
-  {
-   "id": "imaging-2026-0336",
-   "type": "imaging",
-   "unit": "",
-   "topic": "호흡기",
-   "subtopic": "호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료",
-   "tags": [
-    "opendata",
-    "kmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0336.md",
-   "snippet": "45세 남자가 6주 동안 기침과 가래가 계속되고 밤에 땀이 나며 체중이 4 kg 줄어 왔다. 결핵 치료를 받은 적은 없고, HIV 검사는 음성이다. 체온 37.8 ℃, 맥박 88회/분, 호흡 18회/분, 산소포화도 96 % 이다. 오른쪽 위 폐야에서 수포음이 들린다. 흉부 X선에서 오른쪽 위엽에 공동을 동반한 경화가 있다. 가래 항산균 도말은 양성이고, 가래 결핵균 핵산증폭검사에서 결핵균이 검출되었으며 리팜핀 내성 유전자는 검",
-   "text": "호흡기 호흡기 — 리팜핀 내성이 검출되지 않은 공동성 폐결핵의 치료 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 45세 남자가 6주 동안 기침과 가래가 계속되고 밤에 땀이 나며 체중이 4 kg 줄어 왔다. 결핵 치료를 받은 적은 없고, HIV 검사는 음성이다. 체온 37.8 ℃, 맥박 88회/분, 호흡 18회/분, 산소포화도 96 % 이다. 오른쪽 위 폐야에서 수포음이 들린다. 흉부 X선에서 오른쪽 위엽에 공동을 동반한 경화가 있다. 가래 항산균 도말은 양성이고, 가래 결핵균 핵산증폭검사에서 결핵균이 검출되었으며 리팜핀 내성 유전자는 검출되지 않았다. 간기능검사와 시력 검사는 정상이다(보기의 H 는 이소니아지드, R 은 리팜핀, Z 는 피라진아마이드, E 는 에탐부톨). 가장 적절한 치료는? A. HREZ 2개월 후 HR 4개월 B. 이소니아지드 단독 9개월 C. 리팜핀 단독 4개월 D. 베다퀼린 포함 다제내성 요법 E. HRE 9개월(피라진아마이드 제외)"
-  },
-  {
-   "id": "imaging-2026-0335",
-   "type": "imaging",
-   "unit": "",
-   "topic": "피부과",
-   "subtopic": "피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점",
-   "tags": [
-    "opendata",
-    "kmle_style"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0335.md",
-   "snippet": "22세 남자가 3개월 전부터 가슴과 등에 생긴 하얀 반점으로 왔다. 가려움은 거의 없고, 여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다. 다른 병력은 없다. 가슴 위쪽과 등에 경계가 뚜렷한 저색소 반점이 여러 개 합쳐져 있고, 긁으면 고운 비늘이 일어난다. 우드등 검사에서 노란빛을 띤 형광을 보인다. 비늘의 수산화칼륨(KOH) 검사에서 짧은 균사와 둥근 효모가 함께 보인다. 가장 적절한 치료는? A. 경구 아시클로버 복용 ",
-   "text": "피부과 피부 — 여름에 늘어난 가슴·등의 비늘 있는 저색소 반점 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 22세 남자가 3개월 전부터 가슴과 등에 생긴 하얀 반점으로 왔다. 가려움은 거의 없고, 여름에 운동하며 땀을 많이 흘린 뒤 반점이 늘었다. 다른 병력은 없다. 가슴 위쪽과 등에 경계가 뚜렷한 저색소 반점이 여러 개 합쳐져 있고, 긁으면 고운 비늘이 일어난다. 우드등 검사에서 노란빛을 띤 형광을 보인다. 비늘의 수산화칼륨(KOH) 검사에서 짧은 균사와 둥근 효모가 함께 보인다. 가장 적절한 치료는? A. 경구 아시클로버 복용 B. 협대역 자외선B 광선치료 C. 케토코나졸 샴푸 또는 크림 국소 도포 D. 경구 테르비나핀 6주 복용 E. 국소 스테로이드 연고 도포"
-  },
-  {
-   "id": "imaging-2026-0334",
-   "type": "imaging",
-   "unit": "",
-   "topic": "병리·조직학",
-   "subtopic": "병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직",
-   "tags": [
-    "opendata",
-    "usmle_style",
-    "histology_he"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0334.md",
-   "snippet": "A 65 year old woman comes to the physician because of vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She has hypertension and type 2 diabetes mellitus. Her BMI is 33 kg/m2. Pelvic ",
-   "text": "병리·조직학 병리·조직 — 폐경 후 출혈과 난소 고형 종괴가 있는 여성의 자궁내막 조직 opendata usmle_style histology_he 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 65 year old woman comes to the physician because of vaginal bleeding for 3 weeks. Menopause occurred at age 51 years, and she has never taken hormone therapy. She has hypertension and type 2 diabetes mellitus. Her BMI is 33 kg/m2. Pelvic examination shows blood in the vaginal vault and a mobile, nontender right adnexal mass. Transvaginal ultrasonography shows a thickened endometrial stripe and a 9 cm solid right ovarian mass. A photomicrograph of an endometrial biopsy specimen stained with hematoxylin and eosin is shown. Which of the following is the most likely mechanism underlying this endometrial lesion? A. Excess progesterone from a luteinized ovarian tumor B. Ectopic endometrial glands within the myometrium C. Estrogen stimulation unopposed by progesterone D. TP53 mutation arising in atrophic endometrium E. Integration of high risk HPV E6 and E7 genes"
-  },
-  {
-   "id": "imaging-2026-0333",
-   "type": "imaging",
-   "unit": "",
-   "topic": "외과",
-   "subtopic": "외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파",
-   "tags": [
-    "opendata",
-    "kmle_style",
-    "us"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0333.md",
-   "snippet": "65세 여자가 2개월 전 샤워하다 오른쪽 유방에서 만져지는 멍울을 발견하고 왔다. 통증과 유두 분비물은 없다. 52세에 폐경되었고 호르몬 치료를 받은 적은 없다. 어머니가 70세에 유방암 진단을 받았다. 오른쪽 유방 위바깥쪽에 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지며, 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 부위에 경계가 불분명한 종괴가 보였다. 같은 부위의 유방 초음파는 그림과 같다. 다음 ",
-   "text": "외과 외과계 — 폐경 후 여성의 만져지는 유방 종괴와 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 65세 여자가 2개월 전 샤워하다 오른쪽 유방에서 만져지는 멍울을 발견하고 왔다. 통증과 유두 분비물은 없다. 52세에 폐경되었고 호르몬 치료를 받은 적은 없다. 어머니가 70세에 유방암 진단을 받았다. 오른쪽 유방 위바깥쪽에 약 2 cm 의 단단하고 잘 움직이지 않는 종괴가 만져지며, 겨드랑이 림프절은 만져지지 않는다. 유방촬영술에서 같은 부위에 경계가 불분명한 종괴가 보였다. 같은 부위의 유방 초음파는 그림과 같다. 다음 단계로 가장 적절한 것은? A. 타목시펜 복용 후 추적 B. 초음파 유도 중심부 바늘생검 C. 6개월 뒤 추적 초음파 D. 세침흡인으로 내용물 배액 E. 조직 진단 없이 유방전절제술"
-  },
-  {
-   "id": "imaging-2026-0332",
-   "type": "imaging",
-   "unit": "",
-   "topic": "신장·비뇨기",
-   "subtopic": "신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파",
-   "tags": [
-    "opendata",
-    "kmle_style",
-    "us"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0332.md",
-   "snippet": "14세 남자가 1시간 전 축구 경기 중 공에 오른쪽 음낭을 세게 맞은 뒤 심한 통증과 부기로 응급실에 왔다. 구역은 있으나 구토는 없다. 다른 병력은 없다. 혈압 118/72 mmHg, 맥박 96회/분, 체온 36.8 ℃ 이다. 오른쪽 음낭이 붓고 멍이 들었으며 고환을 누르면 매우 아프다. 고환올림근반사는 양쪽 모두 있다. 소변검사는 정상이다. 오른쪽 고환의 회색조·색 도플러 초음파는 그림과 같다. 가장 적절한 처치는? A. ",
-   "text": "신장·비뇨기 신장·비뇨 — 공에 음낭을 맞은 청소년의 고환 초음파 opendata kmle_style us 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 14세 남자가 1시간 전 축구 경기 중 공에 오른쪽 음낭을 세게 맞은 뒤 심한 통증과 부기로 응급실에 왔다. 구역은 있으나 구토는 없다. 다른 병력은 없다. 혈압 118/72 mmHg, 맥박 96회/분, 체온 36.8 ℃ 이다. 오른쪽 음낭이 붓고 멍이 들었으며 고환을 누르면 매우 아프다. 고환올림근반사는 양쪽 모두 있다. 소변검사는 정상이다. 오른쪽 고환의 회색조·색 도플러 초음파는 그림과 같다. 가장 적절한 처치는? A. 도수 정복으로 고환 비틀림 풀기 B. 경구 항생제 투여와 외래 추적 C. 1주 뒤 초음파 재검 D. 응급 음낭 수술 탐색과 백막 봉합 E. 얼음찜질·진통제·음낭 거상 후 외래 추적"
-  },
-  {
-   "id": "imaging-2026-0331",
-   "type": "imaging",
-   "unit": "",
-   "topic": "응급·중환자",
-   "subtopic": "응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT",
-   "tags": [
-    "opendata",
-    "usmle_style",
-    "ct"
-   ],
-   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276",
-   "confidence": "high",
-   "date": "2026-10-14",
-   "path": "content/imaging/2026/imaging-2026-0331.md",
-   "snippet": "A 30 year old man is brought to the emergency department 1 hour after a motorcycle collision in which he was thrown forward and struck his head on the road. He reports severe pain at the back of the upper neck and supports his head with bot",
-   "text": "응급·중환자 응급·중환자·외상 — 오토바이 사고 뒤 위쪽 목 통증과 경추 CT opendata usmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261014T202302Z_일일영상_2026-10-15_10units_10q_be503276 A 30 year old man is brought to the emergency department 1 hour after a motorcycle collision in which he was thrown forward and struck his head on the road. He reports severe pain at the back of the upper neck and supports his head with both hands. Blood pressure is 132/80 mm Hg, and pulse is 94/min. He is alert and oriented. There is midline tenderness over the upper cervical spine. Muscle strength, sensation, and deep tendon reflexes are normal in all four limbs. A midsagittal CT scan of the cervical spine is shown. Disruption of which of the following structures is most likely responsible for these findings? A. Transverse ligament of the atlas B. Alar ligaments C. Tectorial membrane D. Anterior longitudinal ligament E. Ligamentum flavum"
   },
   {
    "id": "cn.rheum.behcet.clinical-diagnosis",
