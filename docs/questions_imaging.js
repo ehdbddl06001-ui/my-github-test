@@ -2,6 +2,1331 @@
 // 원본: content/imaging/**/*.md  →  `python pipelines/export_imaging_web.py`로 재생성
 window.IMAGING_QUESTIONS = [
  {
+  "id": "imaging-2026-0344",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "호흡기",
+  "subject_file": "호흡기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "호흡기 — 덱사메타손 중에도 산소 요구량이 빠르게 느는 바이러스 폐렴",
+  "type": "호흡기 — 덱사메타손 중에도 산소 요구량이 빠르게 느는 바이러스 폐렴",
+  "modality": "DX",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-15",
+  "vignette": "A 40-year-old woman is admitted to the hospital because of fever, cough, and shortness of breath for 7 days. A nasopharyngeal swab is positive for SARS-CoV-2 by RT-PCR. On admission, oxygen saturation is 90% on room air, and treatment with dexamethasone, remdesivir, and 3 L/min of oxygen by nasal cannula is begun. Over the next 24 hours, her oxygen requirement increases rapidly, and she now requires high-flow nasal cannula oxygen at 40 L/min with an FiO2 of 0.6 to keep oxygen saturation at 93%. Temperature is 38.6°C (101.5°F), pulse is 108/min, respirations are 28/min, and blood pressure is 124/76 mm Hg. Crackles are heard at both lung bases. Leukocyte count is 7200/mm3 with lymphocytes 8%. Serum C-reactive protein concentration is 14 mg/dL (N <0.5), and serum procalcitonin concentration is 0.1 ng/mL. Serum ALT activity is 32 U/L. A chest x-ray is shown.",
+  "question": "In addition to continuing dexamethasone, which of the following is the most appropriate next step in pharmacotherapy?",
+  "options": [
+   "Tocilizumab",
+   "High-dose intravenous methylprednisolone",
+   "Ceftriaxone and azithromycin",
+   "COVID-19 convalescent plasma",
+   "Ivermectin"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: The chest x-ray shows low lung volumes with hazy ground-glass and consolidative opacities in both lower lung zones — bilateral viral pneumonia. Despite dexamethasone, her oxygen need has risen rapidly to high-flow oxygen, and CRP is markedly elevated, indicating ongoing systemic inflammation. Adding an IL-6 receptor blocker (tocilizumab) — or a JAK inhibitor (baricitinib) — to dexamethasone reduced mortality in this group (RECOVERY, REMAP-CAP).\n- 원리: <b>Why add an immunomodulator rather than more steroid</b>: in the second week of COVID-19, hypoxemia is driven by host inflammation, and IL-6 is a central mediator — it sustains fever, CRP production, and capillary leak. Dexamethasone at 6 mg broadly suppresses inflammation, but in patients whose oxygen needs keep climbing with high CRP, blocking the IL-6 receptor (tocilizumab) or JAK1/2 signaling downstream of several cytokines (baricitinib) adds a mortality benefit.<br> <b>Why higher steroid doses do not help</b>: trials of high-dose dexamethasone (for example 20 mg) or pulse methylprednisolone did not lower mortality and in some settings increased it, while raising infection and hyperglycemia risk.<br> <b>Safety checks before tocilizumab</b>: no active bacterial or fungal infection (procalcitonin is low), no marked neutropenia, and liver enzymes not markedly elevated. Because IL-6 blockade suppresses CRP and fever, later infections may be harder to recognize.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tocilizumab added to dexamethasone (answer)</th><th>High-dose methylprednisolone (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>IL-6 receptor — a specific inflammatory pathway</td><td>Broad glucocorticoid receptor effect, just more of it</td></tr> <tr><td>Trial evidence</td><td>Lower 28-day mortality in hypoxemic patients with high CRP (RECOVERY, REMAP-CAP)</td><td>No mortality benefit; higher dose did not outperform 6 mg dexamethasone</td></tr> <tr><td>Who benefits</td><td>Rapidly rising oxygen need (high-flow, NIV, early ventilation), CRP ≥7.5 mg/dL</td><td>No group shown to benefit</td></tr> </tbody></table> When oxygen needs rise on standard-dose dexamethasone, the next step is a second immunomodulator, not a bigger steroid dose.\n- 오답 이유:\n  - (B) High-dose methylprednisolone might be considered if the picture were organizing pneumonia or another steroid-responsive process, but in COVID-19 a higher dose did not reduce mortality.\n  - (C) Ceftriaxone and azithromycin would be correct if a lobar consolidation, purulent sputum, or a high procalcitonin suggested bacterial coinfection.\n  - (D) Convalescent plasma with high antibody titer would only be considered very early in immunocompromised patients who cannot make antibodies; it did not help hospitalized patients like her.\n  - (E) Ivermectin would be correct only for a parasitic infection such as strongyloidiasis — for example, as pre-emptive treatment before immunosuppression in someone from an endemic area.\n- 함정: Assuming that worsening on dexamethasone calls for a larger steroid dose — the evidence supports adding an IL-6 or JAK inhibitor instead.\n- 학습목표: 덱사메타손 투여 중에도 산소 요구량이 빠르게 늘고 염증 지표가 높은 SARS-CoV-2 폐렴에 IL-6 수용체 차단제(또는 JAK 억제제)를 더하며, 고용량 스테로이드 증량과 구별한다\n- 근거·출처: RECOVERY Collaborative Group. Tocilizumab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial. Lancet 2021;397:1637-1645 · NIH COVID-19 Treatment Guidelines — therapeutic management of hospitalized adults (final version) · 작성자 판독(2026-10-16): 전후 흉부 X선, 작은 폐용적과 양쪽 하폐야 흐린 간유리·경화 음영, 기흉·다량 흉수 없음\n\n## 출처\n- COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50039416 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The chest x-ray shows low lung volumes with hazy ground-glass and consolidative opacities in both lower lung zones — bilateral viral pneumonia. Despite dexamethasone, her oxygen need has risen rapidly to high-flow oxygen, and CRP is markedly elevated, indicating ongoing systemic inflammation. Adding an IL-6 receptor blocker (tocilizumab) — or a JAK inhibitor (baricitinib) — to dexamethasone reduced mortality in this group (RECOVERY, REMAP-CAP)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why add an immunomodulator rather than more steroid</b>: in the second week of COVID-19, hypoxemia is driven by host inflammation, and IL-6 is a central mediator — it sustains fever, CRP production, and capillary leak. Dexamethasone at 6 mg broadly suppresses inflammation, but in patients whose oxygen needs keep climbing with high CRP, blocking the IL-6 receptor (tocilizumab) or JAK1/2 signaling downstream of several cytokines (baricitinib) adds a mortality benefit.<br> <b>Why higher steroid doses do not help</b>: trials of high-dose dexamethasone (for example 20 mg) or pulse methylprednisolone did not lower mortality and in some settings increased it, while raising infection and hyperglycemia risk.<br> <b>Safety checks before tocilizumab</b>: no active bacterial or fungal infection (procalcitonin is low), no marked neutropenia, and liver enzymes not markedly elevated. Because IL-6 blockade suppresses CRP and fever, later infections may be harder to recognize."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Tocilizumab added to dexamethasone (answer)</th><th>High-dose methylprednisolone (closest distractor)</th></tr></thead><tbody> <tr><td>Target</td><td>IL-6 receptor — a specific inflammatory pathway</td><td>Broad glucocorticoid receptor effect, just more of it</td></tr> <tr><td>Trial evidence</td><td>Lower 28-day mortality in hypoxemic patients with high CRP (RECOVERY, REMAP-CAP)</td><td>No mortality benefit; higher dose did not outperform 6 mg dexamethasone</td></tr> <tr><td>Who benefits</td><td>Rapidly rising oxygen need (high-flow, NIV, early ventilation), CRP ≥7.5 mg/dL</td><td>No group shown to benefit</td></tr> </tbody></table> When oxygen needs rise on standard-dose dexamethasone, the next step is a second immunomodulator, not a bigger steroid dose."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(B) High-dose methylprednisolone might be considered if the picture were organizing pneumonia or another steroid-responsive process, but in COVID-19 a higher dose did not reduce mortality.\n(C) Ceftriaxone and azithromycin would be correct if a lobar consolidation, purulent sputum, or a high procalcitonin suggested bacterial coinfection.\n(D) Convalescent plasma with high antibody titer would only be considered very early in immunocompromised patients who cannot make antibodies; it did not help hospitalized patients like her.\n(E) Ivermectin would be correct only for a parasitic infection such as strongyloidiasis — for example, as pre-emptive treatment before immunosuppression in someone from an endemic area."
+   },
+   {
+    "k": "함정",
+    "v": "Assuming that worsening on dexamethasone calls for a larger steroid dose — the evidence supports adding an IL-6 or JAK inhibitor instead."
+   },
+   {
+    "k": "학습목표",
+    "v": "덱사메타손 투여 중에도 산소 요구량이 빠르게 늘고 염증 지표가 높은 SARS-CoV-2 폐렴에 IL-6 수용체 차단제(또는 JAK 억제제)를 더하며, 고용량 스테로이드 증량과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "RECOVERY Collaborative Group. Tocilizumab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial. Lancet 2021;397:1637-1645 · NIH COVID-19 Treatment Guidelines — therapeutic management of hospitalized adults (final version) · 작성자 판독(2026-10-16): 전후 흉부 X선, 작은 폐용적과 양쪽 하폐야 흐린 간유리·경화 음영, 기흉·다량 흉수 없음 ## 출처 COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50039416 · Creative Commons Attribution 4.0 International · https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "덱사메타손 중에도 산소 요구량이 빠르게 늘고 CRP 가 높은 양측 바이러스 폐렴이므로 IL-6 수용체 차단제인 토실리주맙을 더한다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "스테로이드 증량은 사망률을 낮추지 못했다 — 다른 경로의 면역조절제를 더한다",
+   "steps": 3,
+   "chain": [
+    "영상: 양쪽 하폐야 간유리·경화 음영 + SARS-CoV-2 양성 → 양측 바이러스 폐렴",
+    "덱사메타손 중 24시간 만에 고유량 산소로 악화 + CRP 14 → 진행하는 전신 염증",
+    "감염 징후 없음(낮은 프로칼시토닌) → 덱사메타손에 토실리주맙 추가"
+   ],
+   "key": [
+    {
+     "item": "영상: 양쪽 하폐야의 흐린 간유리·경화 음영과 작은 폐용적",
+     "why": "양측 바이러스 폐렴",
+     "also": []
+    },
+    {
+     "item": "her oxygen requirement increases rapidly",
+     "why": "면역조절제 추가 기준",
+     "also": []
+    },
+    {
+     "item": "Serum C-reactive protein concentration is 14 mg/dL",
+     "why": "전신 염증 — IL-6 차단의 대상",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum procalcitonin concentration is 0.1 ng/mL",
+     "why": "세균 동반 감염 가능성을 낮추고 토실리주맙 투여를 막지 않는다",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "management": [
+    {
+     "item": "Serum ALT activity is 32 U/L",
+     "why": "간효소가 정상 — 토실리주맙 금기가 아니다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "lymphocytes 8%",
+     "why": "중증 COVID-19 의 흔한 소견 — 약 선택을 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "양쪽 하폐야 음영의 SARS-CoV-2 폐렴이 덱사메타손 중에도 하루 만에 고유량 산소로 악화하고 CRP 가 높다. 세균 감염 징후가 없으므로 덱사메타손에 토실리주맙(또는 바리시티닙)을 더한다.",
+   "switch": {
+    "choice": "C",
+    "condition": "한쪽 엽 경화와 화농성 객담에 프로칼시토닌이 높았다면 세균 동반 감염 치료가 먼저다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0344.png",
+   "caption": "Portable anteroposterior chest radiograph, ECG leads as in the original (TCIA, CC BY 4.0; DICOM converted with standard windowing, no cropping)",
+   "alt": "DX 영상"
+  },
+  "attribution": {
+   "dataset": "TCIA COVID-19-AR",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/",
+   "url": "https://nbia.cancerimagingarchive.net/viewer/?series=1.3.6.1.4.1.14519.5.2.1.9999.103.1084848415619294221442950039416",
+   "asset_id": "TCIA-COVID19_AR-04245537923754",
+   "text": "COVID-19-AR, The Cancer Imaging Archive (CC BY 4.0) · series …50039416"
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0004"
+ },
+ {
+  "id": "imaging-2026-0343",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "신경",
+  "subject_file": "신경",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "신경 — 머리 외상 뒤 쉰 목소리와 삼킴 곤란",
+  "type": "신경 — 머리 외상 뒤 쉰 목소리와 삼킴 곤란",
+  "modality": "CT",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-15",
+  "vignette": "24세 여자가 5일 전 자동차 사고로 머리를 부딪친 뒤부터 쉰 목소리와 삼킴 곤란이 점점 심해져 왔다. 사고 직후 잠깐 의식을 잃었다가 회복했고 목 뒤가 계속 아프다. 혈압 118/74 mmHg, 맥박 82회/분, 체온 36.7 ℃ 이다. 의식은 명료하고 동공 크기와 대광반사는 양쪽 같다. 팔다리 근력과 감각은 정상이다. 물을 마시면 사레가 든다. 뇌 CT 검사에서 머리뼈 바닥을 뼈창으로 본 대후두공 높이 축상 영상은 그림과 같다.",
+  "question": "이 환자에서 함께 관찰될 가능성이 가장 높은 소견은?",
+  "options": [
+   "혀를 내밀면 오른쪽으로 치우친다.",
+   "혀를 내밀면 왼쪽으로 치우친다.",
+   "오른쪽 이마 주름을 만들지 못한다.",
+   "오른쪽 눈을 바깥쪽으로 움직이지 못한다.",
+   "오른쪽 얼굴의 통각이 떨어진다."
+  ],
+  "answer": 1,
+  "explanationText": "- 정답 핵심: CT 에서 영상 왼쪽, 즉 환자 오른쪽 후두과가 여러 조각으로 부서져 있고 반대쪽 후두과는 온전하다. 후두과 바닥에는 혀밑신경관(XII)이, 바로 바깥 앞쪽에는 목정맥구멍(IX·X·XI)이 있어 후두과 골절은 아래쪽 뇌신경 마비(콜레-시카르 증후군)를 일으킨다. 쉰 목소리·삼킴 곤란(IX·X)에 더해 오른쪽 혀밑신경이 마비되면 오른쪽 턱끝혀근이 약해져 혀를 내밀 때 오른쪽(병변 쪽)으로 치우친다.\n- 원리: <b>왜 후두과 골절이 아래쪽 뇌신경을 다치게 하는가</b>: 혀밑신경관은 후두과의 바닥을 앞바깥쪽으로 뚫고 지나가고, 목정맥구멍은 후두과 바로 바깥 앞쪽에서 혀인두신경(IX)·미주신경(X)·더부신경(XI)이 나간다. 그래서 후두과가 부서지면 골편·혈종·부종이 이 구멍들을 눌러 IX~XII 가 한쪽에서 함께 마비될 수 있다(콜레-시카르 증후군). 마비는 부종이 차오르며 며칠 뒤에 나타나기도 한다.<br> <b>왜 혀는 병변 쪽으로 치우치는가</b>: 혀를 내미는 근육은 양쪽 턱끝혀근이 혀를 앞으로·반대쪽으로 민다. 한쪽 혀밑신경이 마비되면 건강한 쪽 근육만 혀를 밀어 혀끝이 <b>약한 쪽(병변 쪽)</b>으로 기운다. 말초 XII 손상은 같은 쪽 혀 위축·잔떨림도 동반한다.<br> <b>CT 의 좌우</b>: 축상 CT 는 발쪽에서 올려다본 방향으로 표시해 영상 왼쪽이 환자 오른쪽이다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">오른쪽 혀밑신경 마비(정답)</th><th>혀가 왼쪽으로 치우침(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>병변</td><td>환자 오른쪽(영상 왼쪽) 후두과 골절 → 오른쪽 혀밑신경관</td><td>왼쪽 말초 XII 손상, 또는 오른쪽 대뇌 겉질연수로 병변</td></tr> <tr><td>혀 내밀기</td><td>오른쪽(병변 쪽)으로</td><td>왼쪽으로</td></tr> <tr><td>동반 소견</td><td>오른쪽 혀 위축·잔떨림, IX·X·XI 마비</td><td>상위운동신경원이면 위축 없음, 반대쪽 팔다리 약화 동반</td></tr> </tbody></table> 말초 혀밑신경 손상은 혀가 병변 쪽으로, 겉질 쪽 손상은 반대쪽으로 기운다 — 먼저 CT 에서 어느 쪽이 부서졌는지 읽는다.\n- 오답 이유:\n  - ② 혀가 왼쪽으로 치우치는 것은 골절이 환자 왼쪽 후두과에 있거나 오른쪽 대뇌 겉질연수로 병변일 때 정답이 된다 — 영상 좌우를 뒤집어 읽은 답이다.\n  - ③ 오른쪽 이마 주름 소실은 측두골 골절로 오른쪽 얼굴신경(VII)이 말초에서 손상될 때 정답이 된다.\n  - ④ 오른쪽 눈의 외전 장애는 추체 끝 골절이나 두개내압 상승으로 오른쪽 갓돌림신경(VI)이 늘어나 손상될 때 정답이 된다.\n  - ⑤ 오른쪽 얼굴 통각 저하는 삼차신경(V)이나 연수 외측의 척수로가 손상될 때 정답이 되며, 후두과 골절의 전형적 신경 손상은 아니다.\n- 함정: 축상 CT 의 영상 왼쪽을 환자 왼쪽으로 읽거나, 말초 혀밑신경 마비에서 혀가 건강한 쪽으로 간다고 거꾸로 외우는 것.\n- 학습목표: 대후두공 높이 축상 CT 에서 후두과 골절과 그 쪽을 읽고, 후두과를 지나는 혀밑신경관과 목정맥구멍의 아래쪽 뇌신경(IX~XII) 마비를 연결해 혀의 치우침 방향을 예측한다\n- 근거·출처: Tuli S, Tator CH, Fehlings MG, Mackay M. Occipital condyle fractures. Neurosurgery 1997;41:368-377 · Gray's Anatomy, 42nd ed. — hypoglossal canal and jugular foramen · PMC4403883 Figure 1 — occipital condyle fracture with lower cranial nerve palsy, case report (교사용) · 작성자 판독(2026-10-16): 대후두공 높이 축상 CT 뼈창, 환자 오른쪽(영상 왼쪽) 후두과 분쇄 골절, 반대쪽 온전\n\n## 출처\n- Occipital condyle fracture and lower cranial nerve palsy after blunt head trauma – a literature review and case report. J Trauma Manag Outcomes. 2015 Apr 11;9:2. doi: 10.1186/s13032-015-0024-3 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "CT 에서 영상 왼쪽, 즉 환자 오른쪽 후두과가 여러 조각으로 부서져 있고 반대쪽 후두과는 온전하다. 후두과 바닥에는 혀밑신경관(XII)이, 바로 바깥 앞쪽에는 목정맥구멍(IX·X·XI)이 있어 후두과 골절은 아래쪽 뇌신경 마비(콜레-시카르 증후군)를 일으킨다. 쉰 목소리·삼킴 곤란(IX·X)에 더해 오른쪽 혀밑신경이 마비되면 오른쪽 턱끝혀근이 약해져 혀를 내밀 때 오른쪽(병변 쪽)으로 치우친다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 후두과 골절이 아래쪽 뇌신경을 다치게 하는가</b>: 혀밑신경관은 후두과의 바닥을 앞바깥쪽으로 뚫고 지나가고, 목정맥구멍은 후두과 바로 바깥 앞쪽에서 혀인두신경(IX)·미주신경(X)·더부신경(XI)이 나간다. 그래서 후두과가 부서지면 골편·혈종·부종이 이 구멍들을 눌러 IX~XII 가 한쪽에서 함께 마비될 수 있다(콜레-시카르 증후군). 마비는 부종이 차오르며 며칠 뒤에 나타나기도 한다.<br> <b>왜 혀는 병변 쪽으로 치우치는가</b>: 혀를 내미는 근육은 양쪽 턱끝혀근이 혀를 앞으로·반대쪽으로 민다. 한쪽 혀밑신경이 마비되면 건강한 쪽 근육만 혀를 밀어 혀끝이 <b>약한 쪽(병변 쪽)</b>으로 기운다. 말초 XII 손상은 같은 쪽 혀 위축·잔떨림도 동반한다.<br> <b>CT 의 좌우</b>: 축상 CT 는 발쪽에서 올려다본 방향으로 표시해 영상 왼쪽이 환자 오른쪽이다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">오른쪽 혀밑신경 마비(정답)</th><th>혀가 왼쪽으로 치우침(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>병변</td><td>환자 오른쪽(영상 왼쪽) 후두과 골절 → 오른쪽 혀밑신경관</td><td>왼쪽 말초 XII 손상, 또는 오른쪽 대뇌 겉질연수로 병변</td></tr> <tr><td>혀 내밀기</td><td>오른쪽(병변 쪽)으로</td><td>왼쪽으로</td></tr> <tr><td>동반 소견</td><td>오른쪽 혀 위축·잔떨림, IX·X·XI 마비</td><td>상위운동신경원이면 위축 없음, 반대쪽 팔다리 약화 동반</td></tr> </tbody></table> 말초 혀밑신경 손상은 혀가 병변 쪽으로, 겉질 쪽 손상은 반대쪽으로 기운다 — 먼저 CT 에서 어느 쪽이 부서졌는지 읽는다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "② 혀가 왼쪽으로 치우치는 것은 골절이 환자 왼쪽 후두과에 있거나 오른쪽 대뇌 겉질연수로 병변일 때 정답이 된다 — 영상 좌우를 뒤집어 읽은 답이다.\n③ 오른쪽 이마 주름 소실은 측두골 골절로 오른쪽 얼굴신경(VII)이 말초에서 손상될 때 정답이 된다.\n④ 오른쪽 눈의 외전 장애는 추체 끝 골절이나 두개내압 상승으로 오른쪽 갓돌림신경(VI)이 늘어나 손상될 때 정답이 된다.\n⑤ 오른쪽 얼굴 통각 저하는 삼차신경(V)이나 연수 외측의 척수로가 손상될 때 정답이 되며, 후두과 골절의 전형적 신경 손상은 아니다."
+   },
+   {
+    "k": "함정",
+    "v": "축상 CT 의 영상 왼쪽을 환자 왼쪽으로 읽거나, 말초 혀밑신경 마비에서 혀가 건강한 쪽으로 간다고 거꾸로 외우는 것."
+   },
+   {
+    "k": "학습목표",
+    "v": "대후두공 높이 축상 CT 에서 후두과 골절과 그 쪽을 읽고, 후두과를 지나는 혀밑신경관과 목정맥구멍의 아래쪽 뇌신경(IX~XII) 마비를 연결해 혀의 치우침 방향을 예측한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Tuli S, Tator CH, Fehlings MG, Mackay M. Occipital condyle fractures. Neurosurgery 1997;41:368-377 · Gray's Anatomy, 42nd ed. — hypoglossal canal and jugular foramen · PMC4403883 Figure 1 — occipital condyle fracture with lower cranial nerve palsy, case report (교사용) · 작성자 판독(2026-10-16): 대후두공 높이 축상 CT 뼈창, 환자 오른쪽(영상 왼쪽) 후두과 분쇄 골절, 반대쪽 온전 ## 출처 Occipital condyle fracture and lower cranial nerve palsy after blunt head trauma – a literature review and case report. J Trauma Manag Outcomes. 2015 Apr 11;9:2. doi: 10.1186/s13032-015-0024-3 (CC BY) — Figure 1 · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "환자 오른쪽 후두과 골절로 아래쪽 뇌신경이 마비되었으므로 오른쪽 혀밑신경 마비로 혀가 오른쪽으로 치우친다",
+   "rival": [
+    "B"
+   ],
+   "discriminator": "CT 의 영상 왼쪽이 환자 오른쪽이고, 말초 XII 마비는 혀가 병변 쪽으로 간다",
+   "steps": 3,
+   "chain": [
+    "영상: 영상 왼쪽 후두과 분쇄 골절 → 환자 오른쪽 후두과 골절",
+    "쉰 목소리 + 삼킴 곤란 → 같은 쪽 IX·X 마비 — 후두과 옆 목정맥구멍·혀밑신경관 침범",
+    "오른쪽 XII 말초 마비 → 혀를 내밀면 오른쪽으로 치우침"
+   ],
+   "key": [
+    {
+     "item": "영상: 영상 왼쪽(환자 오른쪽) 후두과가 여러 조각으로 부서짐",
+     "why": "병변의 위치와 쪽",
+     "also": []
+    },
+    {
+     "item": "쉰 목소리와 삼킴 곤란",
+     "why": "IX·X 마비 — 아래쪽 뇌신경 증후군",
+     "also": []
+    },
+    {
+     "item": "물을 마시면 사레가 든다",
+     "why": "인두 마비를 뒷받침",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "동공 크기와 대광반사는 양쪽 같다",
+     "why": "동안신경 압박(천막 탈출) 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "팔다리 근력과 감각은 정상이다",
+     "why": "뇌간·척수 손상 가능성을 낮춘다 — 말초 뇌신경 손상",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "잠깐 의식을 잃었다가 회복했고",
+     "why": "머리 외상의 정도 — 신경 위치를 가르지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "CT 에서 환자 오른쪽 후두과가 부서졌고 쉰 목소리·삼킴 곤란은 같은 쪽 IX·X 마비다. 후두과를 지나는 오른쪽 혀밑신경도 마비되어 혀를 내밀면 병변 쪽인 오른쪽으로 치우친다.",
+   "switch": {
+    "choice": "B",
+    "condition": "CT 에서 부서진 후두과가 환자 왼쪽이었다면 혀는 왼쪽으로 치우친다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0343.png",
+   "caption": "대후두공 높이의 축상 CT 뼈창 — 출판된 증례 그림에서 축상 패널 한 컷만 잘라냄 (PMC Open Access Subset, CC BY — 보정 없음)",
+   "alt": "CT 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4403883/",
+   "asset_id": "PMC-PMC4403883_Figure1_ax",
+   "text": "Occipital condyle fracture and lower cranial nerve palsy after blunt head trauma – a literature review and case report. J Trauma Manag Outcomes. 2015 Apr 11;9:2. doi: 10.1186/s13032-015-0024-3 (CC BY) — Figure 1"
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0003"
+ },
+ {
+  "id": "imaging-2026-0342",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "병리·조직학",
+  "subject_file": "병리·조직학",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "병리·조직 — 임신 중 빠르게 커진 자궁 종괴의 조직",
+  "type": "병리·조직 — 임신 중 빠르게 커진 자궁 종괴의 조직",
+  "modality": "HISTOLOGY",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-15",
+  "vignette": "35세 여자가 임신 중 빠르게 커진 자궁 종괴로 제왕절개 분만 때 종괴절제술을 받았으나, 분만 3개월 뒤 하복부 압박감과 불규칙한 질 출혈로 다시 왔다. 혈압 116/72 mmHg, 맥박 88회/분이다. 하복부에 단단한 종괴가 만져진다. 혈색소 10.2 g/dL, 혈청 β-hCG 는 음성이다. 골반 MRI 에서 자궁 근층에 경계가 불규칙한 9 cm 종괴가 있어 자궁절제술을 하였다. 고배율에서 핵 이형성이 뚜렷하고 유사분열은 고배율 10시야당 18개였다. 자궁 종괴의 헤마톡실린-에오신 염색 조직 소견은 그림과 같다.",
+  "question": "진단은?",
+  "options": [
+   "저등급 자궁내막 간질육종",
+   "태반부위 영양막종양",
+   "평활근육종",
+   "적색변성을 동반한 평활근종",
+   "세포성 평활근종"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 그림의 오른쪽은 서로 엇갈리는 다발로 배열한 세포 밀도 높은 방추형 세포 종양이고, 왼쪽은 종양과 갑자기 경계를 이루는 괴사·출혈 구역이다. 여기에 뚜렷한 핵 이형성과 고배율 10시야당 18개의 유사분열이 더해지면 평활근 종양의 악성 기준(종양세포 괴사·중등도 이상 핵 이형성·유사분열 ≥ 10/10 HPF 중 둘 이상)을 충족해 평활근육종이다.\n- 원리: <b>왜 평활근 종양의 악성은 세 소견으로 가르는가</b>: 자궁 평활근 종양은 모양만으로는 양성·악성이 겹친다. 그래서 스탠퍼드 기준은 ① 종양세포(응고) 괴사 ② 미만성 중등도 이상 핵 이형성 ③ 유사분열 지수 세 가지를 본다. 이 가운데 둘 이상이면 평활근육종이다. 핵 이형성이 뚜렷하면 유사분열이 10/10 HPF 이상만 되어도 악성이다.<br> <b>괴사의 종류가 중요한 이유</b>: 종양세포 괴사는 살아 있는 종양세포에서 괴사 구역으로 갑자기 넘어가고 괴사 구역 안에 이형성 핵의 유령 윤곽이 남는다. 반면 경색형(유리질화) 괴사는 허혈로 생겨 그 사이에 육아조직·유리질화 띠가 끼고 세포 이형성이 없다 — 임신 중 평활근종의 적색변성이 이 경색형이다.<br> <b>임신이 주는 함정</b>: 임신 중에는 평활근종의 유사분열이 늘고 출혈성 경색(적색변성)이 흔해 악성처럼 보일 수 있다. 그러나 이때는 핵 이형성이 없다. 분만 뒤에도 빠르게 다시 자란 것은 이 진단을 뒷받침한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">평활근육종(정답)</th><th>적색변성 평활근종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사</td><td>종양세포 괴사 — 살아 있는 종양과 <b>갑작스러운 경계</b></td><td>출혈성 경색 — 육아조직·유리질화 띠가 사이에 낌</td></tr> <tr><td>핵 이형성</td><td>미만성 중등도 이상</td><td>없거나 경미</td></tr> <tr><td>유사분열</td><td>≥ 10/10 HPF(이형성 동반 시)</td><td>임신 중 다소 늘 수 있으나 이형성은 없음</td></tr> <tr><td>경과</td><td>분만 뒤에도 커지고 재발</td><td>분만 뒤 통증이 가라앉고 크기가 줄어듦</td></tr> </tbody></table> 괴사만으로는 가르지 못한다 — 핵 이형성과 유사분열이 함께 있으면 악성, 이형성이 없으면 경색형 변성으로 본다.\n- 오답 이유:\n  - ① 저등급 자궁내막 간질육종은 방추형 다발 대신 작은 둥근 세포가 소동맥 주위로 소용돌이치며 근층에 혀 모양으로 침윤할 때 정답이 된다.\n  - ② 태반부위 영양막종양은 혈청 β-hCG 가 낮게 양성이고 중간형 영양막세포가 근섬유 사이로 침윤하며 hPL 염색 양성일 때 생각한다.\n  - ④ 적색변성 평활근종은 임신 중 통증·미열과 함께 출혈성 경색이 보이지만 핵 이형성이 없고 유사분열이 적을 때 정답이 된다.\n  - ⑤ 세포성 평활근종은 세포 밀도는 높지만 핵 이형성·종양세포 괴사가 없고 유사분열이 적을 때의 진단이다.\n- 함정: 임신 중 평활근종의 적색변성을 떠올려 괴사만 보고 양성으로 판정하는 것 — 핵 이형성과 높은 유사분열이 함께 있으면 악성 기준을 충족한다.\n- 학습목표: 임신 중 빠르게 커진 자궁 종괴의 조직에서 세포 밀도 높은 방추형 세포 다발과 종양세포 괴사를 읽고, 핵 이형성·유사분열과 함께 평활근육종으로 판정하며 적색변성 평활근종과 구별한다\n- 근거·출처: WHO Classification of Tumours: Female Genital Tumours, 5th ed. — uterine leiomyosarcoma, diagnostic criteria · Bell SW, Kempson RL, Hendrickson MR. Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases. Am J Surg Pathol 1994;18:535-558 · PMC13166545 Figure 7 — uterine leiomyosarcoma in pregnancy, case report (교사용) · 작성자 판독(2026-10-16): H&E 저배율, 엇갈리는 다발의 세포 밀도 높은 방추형 세포 종양과 갑작스러운 경계의 출혈·괴사 구역\n\n## 출처\n- Leiomyosarcoma of uterus in pregnancy: A case report. Medicine (Baltimore). 2026 May 8;105(19):e48608. doi: 10.1097/MD.0000000000048608 (CC BY) — Figure 7. · CC BY · https://creativecommons.org/licenses/",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "그림의 오른쪽은 서로 엇갈리는 다발로 배열한 세포 밀도 높은 방추형 세포 종양이고, 왼쪽은 종양과 갑자기 경계를 이루는 괴사·출혈 구역이다. 여기에 뚜렷한 핵 이형성과 고배율 10시야당 18개의 유사분열이 더해지면 평활근 종양의 악성 기준(종양세포 괴사·중등도 이상 핵 이형성·유사분열 ≥ 10/10 HPF 중 둘 이상)을 충족해 평활근육종이다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 평활근 종양의 악성은 세 소견으로 가르는가</b>: 자궁 평활근 종양은 모양만으로는 양성·악성이 겹친다. 그래서 스탠퍼드 기준은 ① 종양세포(응고) 괴사 ② 미만성 중등도 이상 핵 이형성 ③ 유사분열 지수 세 가지를 본다. 이 가운데 둘 이상이면 평활근육종이다. 핵 이형성이 뚜렷하면 유사분열이 10/10 HPF 이상만 되어도 악성이다.<br> <b>괴사의 종류가 중요한 이유</b>: 종양세포 괴사는 살아 있는 종양세포에서 괴사 구역으로 갑자기 넘어가고 괴사 구역 안에 이형성 핵의 유령 윤곽이 남는다. 반면 경색형(유리질화) 괴사는 허혈로 생겨 그 사이에 육아조직·유리질화 띠가 끼고 세포 이형성이 없다 — 임신 중 평활근종의 적색변성이 이 경색형이다.<br> <b>임신이 주는 함정</b>: 임신 중에는 평활근종의 유사분열이 늘고 출혈성 경색(적색변성)이 흔해 악성처럼 보일 수 있다. 그러나 이때는 핵 이형성이 없다. 분만 뒤에도 빠르게 다시 자란 것은 이 진단을 뒷받침한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">평활근육종(정답)</th><th>적색변성 평활근종(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>괴사</td><td>종양세포 괴사 — 살아 있는 종양과 <b>갑작스러운 경계</b></td><td>출혈성 경색 — 육아조직·유리질화 띠가 사이에 낌</td></tr> <tr><td>핵 이형성</td><td>미만성 중등도 이상</td><td>없거나 경미</td></tr> <tr><td>유사분열</td><td>≥ 10/10 HPF(이형성 동반 시)</td><td>임신 중 다소 늘 수 있으나 이형성은 없음</td></tr> <tr><td>경과</td><td>분만 뒤에도 커지고 재발</td><td>분만 뒤 통증이 가라앉고 크기가 줄어듦</td></tr> </tbody></table> 괴사만으로는 가르지 못한다 — 핵 이형성과 유사분열이 함께 있으면 악성, 이형성이 없으면 경색형 변성으로 본다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 저등급 자궁내막 간질육종은 방추형 다발 대신 작은 둥근 세포가 소동맥 주위로 소용돌이치며 근층에 혀 모양으로 침윤할 때 정답이 된다.\n② 태반부위 영양막종양은 혈청 β-hCG 가 낮게 양성이고 중간형 영양막세포가 근섬유 사이로 침윤하며 hPL 염색 양성일 때 생각한다.\n④ 적색변성 평활근종은 임신 중 통증·미열과 함께 출혈성 경색이 보이지만 핵 이형성이 없고 유사분열이 적을 때 정답이 된다.\n⑤ 세포성 평활근종은 세포 밀도는 높지만 핵 이형성·종양세포 괴사가 없고 유사분열이 적을 때의 진단이다."
+   },
+   {
+    "k": "함정",
+    "v": "임신 중 평활근종의 적색변성을 떠올려 괴사만 보고 양성으로 판정하는 것 — 핵 이형성과 높은 유사분열이 함께 있으면 악성 기준을 충족한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "임신 중 빠르게 커진 자궁 종괴의 조직에서 세포 밀도 높은 방추형 세포 다발과 종양세포 괴사를 읽고, 핵 이형성·유사분열과 함께 평활근육종으로 판정하며 적색변성 평활근종과 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "WHO Classification of Tumours: Female Genital Tumours, 5th ed. — uterine leiomyosarcoma, diagnostic criteria · Bell SW, Kempson RL, Hendrickson MR. Problematic uterine smooth muscle neoplasms: a clinicopathologic study of 213 cases. Am J Surg Pathol 1994;18:535-558 · PMC13166545 Figure 7 — uterine leiomyosarcoma in pregnancy, case report (교사용) · 작성자 판독(2026-10-16): H&E 저배율, 엇갈리는 다발의 세포 밀도 높은 방추형 세포 종양과 갑작스러운 경계의 출혈·괴사 구역 ## 출처 Leiomyosarcoma of uterus in pregnancy: A case report. Medicine (Baltimore). 2026 May 8;105(19):e48608. doi: 10.1097/MD.0000000000048608 (CC BY) — Figure 7. · CC BY · https://creativecommons.org/licenses/"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "진단",
+   "decision": "세포 밀도 높은 방추형 세포 다발과 종양세포 괴사에 뚜렷한 핵 이형성·유사분열 18/10 HPF 가 더해져 평활근육종이다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "핵 이형성과 높은 유사분열 — 적색변성은 경색형 괴사이고 이형성이 없다",
+   "steps": 3,
+   "chain": [
+    "영상: 엇갈리는 다발의 방추형 세포 종양 → 평활근 종양(자궁내막 간질 종양 아님)",
+    "영상: 살아 있는 종양과 갑작스러운 경계의 괴사 + 핵 이형성 + 유사분열 18/10 HPF → 악성 기준 셋 중 셋",
+    "분만 뒤에도 다시 커진 종괴 → 평활근육종"
+   ],
+   "key": [
+    {
+     "item": "영상: 엇갈리는 다발로 배열한 세포 밀도 높은 방추형 세포",
+     "why": "평활근 분화 — 자궁내막 간질 종양과 가른다",
+     "also": []
+    },
+    {
+     "item": "영상: 종양과 갑자기 경계를 이루는 괴사·출혈 구역",
+     "why": "종양세포 괴사 — 악성 기준 하나",
+     "also": []
+    },
+    {
+     "item": "핵 이형성이 뚜렷하고",
+     "why": "악성 기준 하나",
+     "also": []
+    },
+    {
+     "item": "유사분열은 고배율 10시야당 18개",
+     "why": "악성 기준 하나",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "혈청 β-hCG 는 음성",
+     "why": "영양막 종양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "임신 중 빠르게 커진 자궁 종괴",
+     "why": "임신 중에는 평활근종도 빨리 자라 결정적이지 않다 — 적색변성 쪽으로 끌려가기 쉽다",
+     "also": []
+    }
+   ],
+   "summary": "방추형 세포 다발의 평활근 종양에 종양세포 괴사, 뚜렷한 핵 이형성, 유사분열 18/10 HPF 가 함께 있어 평활근육종이다. 임신 중 적색변성은 경색형 괴사이고 핵 이형성이 없다.",
+   "switch": {
+    "choice": "D",
+    "condition": "핵 이형성이 없고 괴사가 유리질화 띠를 낀 경색형이며 분만 뒤 종괴가 줄었다면 적색변성 평활근종이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0342.jpg",
+   "caption": "헤마톡실린-에오신 염색 저배율 현미경 사진, 출판된 증례 그림 한 컷 그대로 (PMC Open Access Subset, CC BY — 크롭·보정 없음)",
+   "alt": "HISTOLOGY 영상"
+  },
+  "attribution": {
+   "dataset": "PMC Open Access (PMC Article Datasets)",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13166545/",
+   "asset_id": "PMC-PMC13166545_Figure7",
+   "text": "Leiomyosarcoma of uterus in pregnancy: A case report. Medicine (Baltimore). 2026 May 8;105(19):e48608. doi: 10.1097/MD.0000000000048608 (CC BY) — Figure 7."
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0002"
+ },
+ {
+  "id": "imaging-2026-0341",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "내분비",
+  "subject_file": "내분비",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "내분비·대사 — 갑상샘 조직의 면역조직화학과 호르몬 조절",
+  "type": "내분비·대사 — 갑상샘 조직의 면역조직화학과 호르몬 조절",
+  "modality": "HISTOLOGY_IHC",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-15",
+  "vignette": "A 61-year-old man undergoes left thyroid lobectomy for a 3-cm thyroid nodule found incidentally on a neck CT performed after a minor car accident. He has no symptoms. Pulse is 72/min, and blood pressure is 128/78 mm Hg. Serum thyroid-stimulating hormone concentration is 1.6 µU/mL (N 0.4-4.0), and serum calcium concentration is 9.4 mg/dL. Pathologic examination shows a follicular adenoma. A section of the uninvolved thyroid tissue is stained by immunohistochemistry with an antibody against thyroid peroxidase and is shown.",
+  "question": "Hormone production by the stained cell population is most directly stimulated by which of the following?",
+  "options": [
+   "Gastrin released from gastric antral G cells",
+   "Thyrotropin-releasing hormone acting directly on the gland",
+   "Adrenocorticotropic hormone from the anterior pituitary",
+   "Thyroid-stimulating hormone from the anterior pituitary",
+   "A rise in serum ionized calcium concentration"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: The brown stain lines every colloid-filled follicle — it is in the single layer of follicular epithelial cells, while the cells in the stroma between follicles are unstained. Thyroid peroxidase sits on the apical (colloid-facing) membrane of these follicular cells, where it oxidizes iodide and iodinates thyroglobulin. Thyroid hormone synthesis and secretion by follicular cells are driven by TSH acting on its Gs-coupled receptor.\n- 원리: <b>Why the stain marks follicular cells</b>: thyroid peroxidase is made only by follicular epithelial cells and is inserted into their apical membrane, facing the colloid. There it oxidizes iodide, attaches iodine to tyrosyl residues of thyroglobulin, and couples iodotyrosines into T4 and T3. That is why the brown signal outlines each follicle as a ring.<br> <b>Why TSH controls every step</b>: TSH binds a Gs-coupled receptor on the basolateral membrane of follicular cells. The cAMP rise increases sodium-iodide symporter expression, thyroglobulin and peroxidase synthesis, endocytosis of colloid, and release of T4/T3. With long-term stimulation the cells become taller and the follicles smaller; with suppression they flatten.<br> <b>The other endocrine cell in the gland</b>: parafollicular C cells lie singly or in small groups between follicles, do not contain thyroid peroxidase, and secrete calcitonin in response to a rise in serum calcium (and to gastrin). They would be unstained here.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Follicular cells (answer)</th><th>Parafollicular C cells (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Single layer lining each colloid-filled follicle</td><td>Between follicles, in the interstitium</td></tr> <tr><td>Thyroid peroxidase</td><td><b>Present</b> — apical membrane</td><td>Absent (they stain for calcitonin)</td></tr> <tr><td>Main stimulus</td><td>TSH (Gs-cAMP)</td><td>Rising serum calcium via the calcium-sensing receptor; gastrin</td></tr> <tr><td>Product</td><td>T4 and T3</td><td>Calcitonin</td></tr> </tbody></table> A stain that outlines the follicles points to follicular cells and TSH; scattered positive cells between follicles would point to C cells and calcium.\n- 오답 이유:\n  - (A) Gastrin also stimulates calcitonin release, so it would fit a question about C cells or medullary thyroid carcinoma (pentagastrin test), not the follicle-lining cells.\n  - (B) TRH acts on pituitary thyrotrophs to release TSH; it would be correct only if the question asked what stimulates thyrotrophs rather than thyroid follicular cells.\n  - (C) ACTH would be correct for a stain of adrenal zona fasciculata cells (for example 11β-hydroxylase), not for thyroid follicular epithelium.\n  - (E) A rise in serum ionized calcium would be correct if the stained cells were the scattered parafollicular C cells between follicles, as with a calcitonin stain.\n- 함정: Choosing the hypothalamic hormone because it sits at the top of the axis — the question asks what most directly stimulates the stained cells.\n- 학습목표: 갑상샘 면역조직화학에서 염색된 세포가 콜로이드를 둘러싼 여포상피임을 읽고, 그 세포의 호르몬 합성이 TSH 로 조절됨을 연결하며 여포 곁 C 세포와 구별한다\n- 근거·출처: Guyton and Hall Textbook of Medical Physiology, 14th ed. Ch. Thyroid metabolic hormones — TSH regulation of follicular cells · Human Protein Atlas — TPO, thyroid gland tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-16): 콜로이드로 찬 여포를 둘러싼 여포상피가 갈색으로 강하게 염색, 여포 사이 간질 세포는 음성\n\n## 출처\n- Human Protein Atlas, TPO / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/7987/21449_B_2_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "The brown stain lines every colloid-filled follicle — it is in the single layer of follicular epithelial cells, while the cells in the stroma between follicles are unstained. Thyroid peroxidase sits on the apical (colloid-facing) membrane of these follicular cells, where it oxidizes iodide and iodinates thyroglobulin. Thyroid hormone synthesis and secretion by follicular cells are driven by TSH acting on its Gs-coupled receptor."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why the stain marks follicular cells</b>: thyroid peroxidase is made only by follicular epithelial cells and is inserted into their apical membrane, facing the colloid. There it oxidizes iodide, attaches iodine to tyrosyl residues of thyroglobulin, and couples iodotyrosines into T4 and T3. That is why the brown signal outlines each follicle as a ring.<br> <b>Why TSH controls every step</b>: TSH binds a Gs-coupled receptor on the basolateral membrane of follicular cells. The cAMP rise increases sodium-iodide symporter expression, thyroglobulin and peroxidase synthesis, endocytosis of colloid, and release of T4/T3. With long-term stimulation the cells become taller and the follicles smaller; with suppression they flatten.<br> <b>The other endocrine cell in the gland</b>: parafollicular C cells lie singly or in small groups between follicles, do not contain thyroid peroxidase, and secrete calcitonin in response to a rise in serum calcium (and to gastrin). They would be unstained here."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Follicular cells (answer)</th><th>Parafollicular C cells (closest distractor)</th></tr></thead><tbody> <tr><td>Position</td><td>Single layer lining each colloid-filled follicle</td><td>Between follicles, in the interstitium</td></tr> <tr><td>Thyroid peroxidase</td><td><b>Present</b> — apical membrane</td><td>Absent (they stain for calcitonin)</td></tr> <tr><td>Main stimulus</td><td>TSH (Gs-cAMP)</td><td>Rising serum calcium via the calcium-sensing receptor; gastrin</td></tr> <tr><td>Product</td><td>T4 and T3</td><td>Calcitonin</td></tr> </tbody></table> A stain that outlines the follicles points to follicular cells and TSH; scattered positive cells between follicles would point to C cells and calcium."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Gastrin also stimulates calcitonin release, so it would fit a question about C cells or medullary thyroid carcinoma (pentagastrin test), not the follicle-lining cells.\n(B) TRH acts on pituitary thyrotrophs to release TSH; it would be correct only if the question asked what stimulates thyrotrophs rather than thyroid follicular cells.\n(C) ACTH would be correct for a stain of adrenal zona fasciculata cells (for example 11β-hydroxylase), not for thyroid follicular epithelium.\n(E) A rise in serum ionized calcium would be correct if the stained cells were the scattered parafollicular C cells between follicles, as with a calcitonin stain."
+   },
+   {
+    "k": "함정",
+    "v": "Choosing the hypothalamic hormone because it sits at the top of the axis — the question asks what most directly stimulates the stained cells."
+   },
+   {
+    "k": "학습목표",
+    "v": "갑상샘 면역조직화학에서 염색된 세포가 콜로이드를 둘러싼 여포상피임을 읽고, 그 세포의 호르몬 합성이 TSH 로 조절됨을 연결하며 여포 곁 C 세포와 구별한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Guyton and Hall Textbook of Medical Physiology, 14th ed. Ch. Thyroid metabolic hormones — TSH regulation of follicular cells · Human Protein Atlas — TPO, thyroid gland tissue (CC BY 4.0) (교사용) · 작성자 판독(2026-10-16): 콜로이드로 찬 여포를 둘러싼 여포상피가 갈색으로 강하게 염색, 여포 사이 간질 세포는 음성 ## 출처 Human Protein Atlas, TPO / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/7987/21449_B_2_5.jpg · Creative Commons Attribution 4.0 International · https://www.proteinatlas.org/about/licence"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "기전",
+   "decision": "염색된 세포는 콜로이드 여포를 둘러싼 여포상피이므로 그 호르몬 합성을 직접 자극하는 것은 뇌하수체 전엽의 TSH 다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "염색이 여포를 고리 모양으로 둘러싼다 — 여포 사이에 흩어진 C 세포라면 칼슘이 자극이다",
+   "steps": 2,
+   "chain": [
+    "영상: 콜로이드 여포를 둘러싼 한 층의 상피가 갈색, 여포 사이 세포는 음성 → 여포상피세포",
+    "여포상피세포의 호르몬 합성·분비 → TSH(Gs-cAMP)가 직접 자극"
+   ],
+   "key": [
+    {
+     "item": "영상: 콜로이드로 찬 여포를 둘러싼 상피 세포가 갈색으로 염색되고 여포 사이 세포는 음성",
+     "why": "염색된 세포군이 여포세포임을 보여 준다",
+     "also": []
+    },
+    {
+     "item": "antibody against thyroid peroxidase",
+     "why": "여포세포 꼭대기막 효소 — 여포세포임을 뒷받침",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "serum calcium concentration is 9.4 mg/dL",
+     "why": "정상 칼슘 — C 세포 쪽 질문으로 끌려가지 않게 한다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "follicular adenoma",
+     "why": "검체를 얻은 이유 — 염색은 병변이 아닌 주변 조직이다",
+     "also": []
+    },
+    {
+     "item": "Serum thyroid-stimulating hormone concentration is 1.6",
+     "why": "정상 갑상샘 기능 — 판단에 영향이 적다",
+     "also": []
+    }
+   ],
+   "summary": "갈색 염색이 콜로이드 여포를 고리처럼 둘러싸므로 염색된 세포는 여포상피세포다. 여포세포의 갑상샘호르몬 합성은 TSH 가 Gs-cAMP 로 직접 자극하며, 칼슘에 반응하는 것은 여포 사이 C 세포다.",
+   "switch": {
+    "choice": "E",
+    "condition": "칼시토닌 염색처럼 여포 사이에 흩어진 세포만 갈색이었다면 혈청 칼슘 상승이 더 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": {
+   "src": "assets/imaging/imaging-2026-0341.jpg",
+   "caption": "Immunohistochemical stain of a tissue microarray core (DAB brown chromogen, hematoxylin counterstain), original magnification (Human Protein Atlas, CC BY 4.0; no cropping or color adjustment)",
+   "alt": "HISTOLOGY_IHC 영상"
+  },
+  "attribution": {
+   "dataset": "Human Protein Atlas (tissue IHC)",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://www.proteinatlas.org/about/licence",
+   "url": "https://www.proteinatlas.org/ENSG00000115705-TPO/tissue/Thyroid+gland",
+   "asset_id": "HPA-TPO_21449_B_2_5",
+   "text": "Human Protein Atlas, TPO / Thyroid gland (CC BY 4.0), https://images.proteinatlas.org/7987/21449_B_2_5.jpg"
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0001"
+ },
+ {
+  "id": "imaging-2026-0350",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "피부과",
+  "subject_file": "피부과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "피부 — 궤양성대장염 환자의 커지는 다리 궤양",
+  "type": "피부 — 궤양성대장염 환자의 커지는 다리 궤양",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-15",
+  "vignette": "A 38-year-old man comes to the physician because of a painful ulcer on his left shin that began 3 weeks ago as a small pustule at the site of a minor scrape and has enlarged rapidly despite 10 days of oral cephalexin. He has ulcerative colitis treated with mesalamine and has had increased stool frequency with blood for the past month. Temperature is 37.4°C (99.3°F), pulse is 86/min, and blood pressure is 122/76 mm Hg. Examination shows a 6-cm ulcer with a purulent base and an undermined, violaceous border. Pedal pulses are normal. Bacterial culture of the ulcer base grows only normal skin flora. A skin biopsy specimen taken from the ulcer edge shows a dense neutrophilic infiltrate without vasculitis or organisms.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Hyperbaric oxygen therapy",
+   "Oral prednisone",
+   "Surgical debridement of the ulcer",
+   "Intravenous vancomycin",
+   "Compression bandaging"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: A rapidly enlarging, painful ulcer with an undermined violaceous border, starting at a minor injury (pathergy), in a patient with active ulcerative colitis, with sterile cultures and a neutrophilic infiltrate without vasculitis or infection, is pyoderma gangrenosum. Treatment is immunosuppression — systemic glucocorticoids (or cyclosporine) for a large or rapidly progressing lesion — with control of the bowel disease.\n- 원리: <b>Why it is a neutrophilic, not infectious, ulcer</b>: pyoderma gangrenosum is a neutrophilic dermatosis — dysregulated innate immunity (IL-1, IL-8, TNF-α, IL-17) draws neutrophils into the dermis, which destroy tissue and form a sterile ulcer. About half of patients have a systemic disease, most often inflammatory bowel disease, rheumatoid arthritis, or a hematologic malignancy, and activity often parallels the bowel disease.<br> <b>Why surgery makes it worse</b>: the hallmark is pathergy — minor trauma, including debridement, needle sticks, or skin grafting, triggers new lesions or enlargement. That is why a lesion that started at a scrape keeps growing, and why aggressive debridement is avoided.<br> <b>How to treat</b>: small lesions may respond to potent topical steroids or tacrolimus, but a large, rapidly enlarging ulcer needs systemic therapy — prednisone 0.5–1 mg/kg/day or cyclosporine — and in IBD-associated disease anti-TNF therapy (infliximab) treats both skin and bowel. Wound care is gentle and moist.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Pyoderma gangrenosum (answer — systemic steroid)</th><th>Infected wound / necrotizing infection (closest distractor — debridement)</th></tr></thead><tbody> <tr><td>Border</td><td>Undermined, violaceous</td><td>Surrounding cellulitis, crepitus or dusky skin</td></tr> <tr><td>Culture</td><td>Only colonizing flora</td><td>Pathogen grows; responds to targeted antibiotics</td></tr> <tr><td>Response to trauma</td><td><b>Pathergy</b> — enlarges after debridement</td><td>Improves after removal of necrotic tissue</td></tr> <tr><td>Association</td><td>IBD, rheumatoid arthritis, myeloid neoplasms</td><td>Diabetes, vascular disease, injection drug use</td></tr> </tbody></table> A sterile, expanding ulcer that worsens with antibiotics in a patient with IBD calls for immunosuppression, not the knife.\n- 오답 이유:\n  - (A) Hyperbaric oxygen is an adjunct for refractory diabetic foot ulcers or radiation injury, not for a neutrophilic dermatosis.\n  - (C) Surgical debridement would be correct for a necrotizing soft-tissue infection with crepitus and systemic toxicity; in pyoderma gangrenosum it provokes pathergy.\n  - (D) Intravenous vancomycin would be correct if cultures grew MRSA with spreading cellulitis and fever, which is not the case here.\n  - (E) Compression bandaging is the treatment of a venous ulcer over the medial malleolus with edema and hemosiderin staining.\n- 함정: Reading the purulent base as infection and escalating antibiotics or debriding — the culture is sterile and debridement worsens pyoderma gangrenosum.\n- 학습목표: 궤양성대장염 환자의 작은 상처에서 시작해 빠르게 커지는 보라색 경계의 통증성 궤양을 괴저농피증으로 진단하고, 수술적 변연절제를 피하며 전신 글루코코르티코이드로 치료한다\n- 근거·출처: Maverakis E, et al. Diagnostic criteria of ulcerative pyoderma gangrenosum: a Delphi consensus of international experts. JAMA Dermatol 2018;154:461-466 · Bolognia JL, et al. Dermatology, 4th ed. Ch. Neutrophilic dermatoses — pyoderma gangrenosum",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "A rapidly enlarging, painful ulcer with an undermined violaceous border, starting at a minor injury (pathergy), in a patient with active ulcerative colitis, with sterile cultures and a neutrophilic infiltrate without vasculitis or infection, is pyoderma gangrenosum. Treatment is immunosuppression — systemic glucocorticoids (or cyclosporine) for a large or rapidly progressing lesion — with control of the bowel disease."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why it is a neutrophilic, not infectious, ulcer</b>: pyoderma gangrenosum is a neutrophilic dermatosis — dysregulated innate immunity (IL-1, IL-8, TNF-α, IL-17) draws neutrophils into the dermis, which destroy tissue and form a sterile ulcer. About half of patients have a systemic disease, most often inflammatory bowel disease, rheumatoid arthritis, or a hematologic malignancy, and activity often parallels the bowel disease.<br> <b>Why surgery makes it worse</b>: the hallmark is pathergy — minor trauma, including debridement, needle sticks, or skin grafting, triggers new lesions or enlargement. That is why a lesion that started at a scrape keeps growing, and why aggressive debridement is avoided.<br> <b>How to treat</b>: small lesions may respond to potent topical steroids or tacrolimus, but a large, rapidly enlarging ulcer needs systemic therapy — prednisone 0.5–1 mg/kg/day or cyclosporine — and in IBD-associated disease anti-TNF therapy (infliximab) treats both skin and bowel. Wound care is gentle and moist."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Pyoderma gangrenosum (answer — systemic steroid)</th><th>Infected wound / necrotizing infection (closest distractor — debridement)</th></tr></thead><tbody> <tr><td>Border</td><td>Undermined, violaceous</td><td>Surrounding cellulitis, crepitus or dusky skin</td></tr> <tr><td>Culture</td><td>Only colonizing flora</td><td>Pathogen grows; responds to targeted antibiotics</td></tr> <tr><td>Response to trauma</td><td><b>Pathergy</b> — enlarges after debridement</td><td>Improves after removal of necrotic tissue</td></tr> <tr><td>Association</td><td>IBD, rheumatoid arthritis, myeloid neoplasms</td><td>Diabetes, vascular disease, injection drug use</td></tr> </tbody></table> A sterile, expanding ulcer that worsens with antibiotics in a patient with IBD calls for immunosuppression, not the knife."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Hyperbaric oxygen is an adjunct for refractory diabetic foot ulcers or radiation injury, not for a neutrophilic dermatosis.\n(C) Surgical debridement would be correct for a necrotizing soft-tissue infection with crepitus and systemic toxicity; in pyoderma gangrenosum it provokes pathergy.\n(D) Intravenous vancomycin would be correct if cultures grew MRSA with spreading cellulitis and fever, which is not the case here.\n(E) Compression bandaging is the treatment of a venous ulcer over the medial malleolus with edema and hemosiderin staining."
+   },
+   {
+    "k": "함정",
+    "v": "Reading the purulent base as infection and escalating antibiotics or debriding — the culture is sterile and debridement worsens pyoderma gangrenosum."
+   },
+   {
+    "k": "학습목표",
+    "v": "궤양성대장염 환자의 작은 상처에서 시작해 빠르게 커지는 보라색 경계의 통증성 궤양을 괴저농피증으로 진단하고, 수술적 변연절제를 피하며 전신 글루코코르티코이드로 치료한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Maverakis E, et al. Diagnostic criteria of ulcerative pyoderma gangrenosum: a Delphi consensus of international experts. JAMA Dermatol 2018;154:461-466 · Bolognia JL, et al. Dermatology, 4th ed. Ch. Neutrophilic dermatoses — pyoderma gangrenosum"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "궤양성대장염 환자의 작은 상처에서 시작해 빠르게 커지는 무균성 보라색 경계 궤양은 괴저농피증이므로 전신 글루코코르티코이드를 준다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "배양이 무균이고 생검에 혈관염·균 없이 호중구만 있다 — 변연절제는 병변을 키운다(pathergy)",
+   "steps": 2,
+   "chain": [
+    "궤양성대장염 + 작은 상처에서 시작한 보라색 함몰 경계 궤양 + 무균 배양·호중구 침윤 → 괴저농피증",
+    "큰·빠르게 커지는 병변 → 전신 글루코코르티코이드(수술 금지)"
+   ],
+   "key": [
+    {
+     "item": "undermined, violaceous border",
+     "why": "괴저농피증의 특징적 경계",
+     "also": []
+    },
+    {
+     "item": "ulcerative colitis",
+     "why": "가장 흔한 동반 질환",
+     "also": []
+    },
+    {
+     "item": "at the site of a minor scrape",
+     "why": "pathergy",
+     "also": []
+    },
+    {
+     "item": "dense neutrophilic infiltrate without vasculitis or organisms",
+     "why": "호중구성 피부병 — 혈관염·감염 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "grows only normal skin flora",
+     "why": "세균 감염 가능성을 낮춘다",
+     "also": []
+    },
+    {
+     "item": "Pedal pulses are normal",
+     "why": "동맥성 궤양 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [],
+   "background": [
+    {
+     "item": "purulent base",
+     "why": "감염처럼 보이게 하는 정보 — 무균성이다",
+     "also": []
+    }
+   ],
+   "summary": "궤양성대장염 환자의 작은 상처에서 시작해 빠르게 커지는 보라색 함몰 경계 궤양이 항생제에 반응하지 않고 배양은 무균, 생검은 호중구 침윤이다. 괴저농피증이므로 변연절제를 피하고 전신 글루코코르티코이드를 준다.",
+   "switch": {
+    "choice": "C",
+    "condition": "궤양 주위에 염발음과 빠르게 퍼지는 홍반, 패혈증 징후가 있고 배양에서 균이 자랐다면 응급 수술적 변연절제가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0010"
+ },
+ {
+  "id": "imaging-2026-0349",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "정신과",
+  "subject_file": "정신과",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "정신 — 이뇨제를 추가한 뒤 생긴 떨림과 혼돈",
+  "type": "정신 — 이뇨제를 추가한 뒤 생긴 떨림과 혼돈",
+  "modality": "",
+  "step": "",
+  "difficulty": 5,
+  "difficultyLabel": "최상",
+  "created": "2026-10-15",
+  "vignette": "52세 여자가 3일 전부터 손 떨림이 심해지고 걸음이 비틀거리며 말이 어눌해져 가족과 함께 응급실에 왔다. 오늘 아침부터 시간과 장소를 헷갈린다. 양극성장애로 10년째 리튬을 먹고 있으며, 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 시작하였다. 혈압 132/82 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 굵은 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2), 나트륨 134 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 1.0) 이다. 심전도는 동서맥이고 QTc 480 ms 이다. 리튬을 중단하였다.",
+  "question": "다음으로 가장 적절한 치료는?",
+  "options": [
+   "생리식염수 정맥 수액만 투여",
+   "활성탄 경구 투여",
+   "폴리에틸렌글리콜 전장 세척",
+   "로라제팜 정맥주사",
+   "혈액투석"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: 티아자이드를 추가한 뒤 리튬 농도가 3.2 mEq/L 로 오르고 굵은 떨림·근간대경련·운동실조에 혼돈이 생긴 만성 리튬 중독이다. 의식 저하가 있고 크레아티닌이 두 배로 올라 리튬을 스스로 내보내지 못하므로 혈액투석을 한다(EXTRIP: 신기능 저하에서 > 4.0 이거나, 농도와 무관하게 의식 저하·경련·생명을 위협하는 부정맥이 있으면 권고).\n- 원리: <b>왜 티아자이드가 리튬을 올리는가</b>: 티아자이드는 원위세관에서 나트륨 재흡수를 막아 체액을 줄이고, 몸은 근위세관에서 나트륨을 더 붙잡는다. 리튬은 나트륨과 같은 길로 근위세관에서 재흡수되므로 함께 붙잡혀 혈중 농도가 25~40 % 오른다. 같은 이유로 NSAID·ACE 억제제·탈수도 리튬 중독을 부른다.<br> <b>왜 만성 중독이 더 위험한가</b>: 만성 중독에서는 리튬이 이미 뇌 조직에 쌓여 있어 혈중 농도가 같아도 급성 과다복용보다 신경 독성이 심하고, 농도가 떨어진 뒤에도 소뇌 후유증(SILENT)이 남을 수 있다.<br> <b>왜 투석인가</b>: 리튬은 작고(분자량 7) 단백질에 붙지 않으며 분포용적이 작아 투석으로 잘 빠진다. 신장이 제 기능을 하면 수액으로 배설을 돕지만, 신기능이 떨어지고 신경학적 중증 소견이 있으면 수액만으로는 너무 느리다. 투석 뒤에는 조직에서 다시 나와 농도가 반동하므로 반복 측정한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈액투석(정답)</th><th>생리식염수 수액만(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>의식 저하·경련·부정맥, 또는 신기능 저하에서 리튬 &gt; 4.0, 또는 &gt; 5.0</td><td>떨림·구역 정도의 경증, 신기능 정상</td></tr> <tr><td>리튬 제거 속도</td><td>신장 청소율의 여러 배</td><td>신장 배설에 의존 — 신기능이 떨어지면 느림</td></tr> <tr><td>이 환자</td><td>혼돈 + 크레아티닌 2.1 → 해당</td><td>해당하지 않음</td></tr> </tbody></table> 리튬 수치만 보지 말고 의식 상태와 신기능을 함께 본다 — 둘 중 하나라도 나쁘면 투석 쪽이다.\n- 오답 이유:\n  - ① 생리식염수 수액만 주는 것은 떨림·구역 정도의 경증 중독이고 신기능이 정상이라 리튬을 스스로 배설할 수 있을 때 정답이 된다.\n  - ② 활성탄은 리튬처럼 작은 이온을 흡착하지 못하므로, 아세트아미노펜처럼 흡착되는 약을 최근 1~2시간 안에 삼켰을 때 정답이 된다.\n  - ③ 폴리에틸렌글리콜 전장 세척은 서방형 리튬을 대량으로 막 삼킨 급성 과다복용에서 장내 약을 씻어 낼 때 고려한다.\n  - ④ 로라제팜은 리튬 중독 중 경련이 일어났을 때 대증 치료로 쓰지만, 리튬을 제거하지 못한다.\n- 함정: 리튬 농도가 4.0 mEq/L 를 넘지 않으니 수액으로 충분하다고 보는 것 — 의식 저하와 신기능 저하가 있으면 농도와 무관하게 투석한다.\n- 학습목표: 티아자이드 추가 뒤 생긴 리튬 중독에서 신경학적 중증 소견과 신기능 저하가 있으면 수액이 아니라 혈액투석을 해야 함을 안다\n- 근거·출처: Decker BS, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Lithium",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "티아자이드를 추가한 뒤 리튬 농도가 3.2 mEq/L 로 오르고 굵은 떨림·근간대경련·운동실조에 혼돈이 생긴 만성 리튬 중독이다. 의식 저하가 있고 크레아티닌이 두 배로 올라 리튬을 스스로 내보내지 못하므로 혈액투석을 한다(EXTRIP: 신기능 저하에서 > 4.0 이거나, 농도와 무관하게 의식 저하·경련·생명을 위협하는 부정맥이 있으면 권고)."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 티아자이드가 리튬을 올리는가</b>: 티아자이드는 원위세관에서 나트륨 재흡수를 막아 체액을 줄이고, 몸은 근위세관에서 나트륨을 더 붙잡는다. 리튬은 나트륨과 같은 길로 근위세관에서 재흡수되므로 함께 붙잡혀 혈중 농도가 25~40 % 오른다. 같은 이유로 NSAID·ACE 억제제·탈수도 리튬 중독을 부른다.<br> <b>왜 만성 중독이 더 위험한가</b>: 만성 중독에서는 리튬이 이미 뇌 조직에 쌓여 있어 혈중 농도가 같아도 급성 과다복용보다 신경 독성이 심하고, 농도가 떨어진 뒤에도 소뇌 후유증(SILENT)이 남을 수 있다.<br> <b>왜 투석인가</b>: 리튬은 작고(분자량 7) 단백질에 붙지 않으며 분포용적이 작아 투석으로 잘 빠진다. 신장이 제 기능을 하면 수액으로 배설을 돕지만, 신기능이 떨어지고 신경학적 중증 소견이 있으면 수액만으로는 너무 느리다. 투석 뒤에는 조직에서 다시 나와 농도가 반동하므로 반복 측정한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">혈액투석(정답)</th><th>생리식염수 수액만(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>의식 저하·경련·부정맥, 또는 신기능 저하에서 리튬 &gt; 4.0, 또는 &gt; 5.0</td><td>떨림·구역 정도의 경증, 신기능 정상</td></tr> <tr><td>리튬 제거 속도</td><td>신장 청소율의 여러 배</td><td>신장 배설에 의존 — 신기능이 떨어지면 느림</td></tr> <tr><td>이 환자</td><td>혼돈 + 크레아티닌 2.1 → 해당</td><td>해당하지 않음</td></tr> </tbody></table> 리튬 수치만 보지 말고 의식 상태와 신기능을 함께 본다 — 둘 중 하나라도 나쁘면 투석 쪽이다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 생리식염수 수액만 주는 것은 떨림·구역 정도의 경증 중독이고 신기능이 정상이라 리튬을 스스로 배설할 수 있을 때 정답이 된다.\n② 활성탄은 리튬처럼 작은 이온을 흡착하지 못하므로, 아세트아미노펜처럼 흡착되는 약을 최근 1~2시간 안에 삼켰을 때 정답이 된다.\n③ 폴리에틸렌글리콜 전장 세척은 서방형 리튬을 대량으로 막 삼킨 급성 과다복용에서 장내 약을 씻어 낼 때 고려한다.\n④ 로라제팜은 리튬 중독 중 경련이 일어났을 때 대증 치료로 쓰지만, 리튬을 제거하지 못한다."
+   },
+   {
+    "k": "함정",
+    "v": "리튬 농도가 4.0 mEq/L 를 넘지 않으니 수액으로 충분하다고 보는 것 — 의식 저하와 신기능 저하가 있으면 농도와 무관하게 투석한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "티아자이드 추가 뒤 생긴 리튬 중독에서 신경학적 중증 소견과 신기능 저하가 있으면 수액이 아니라 혈액투석을 해야 함을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Decker BS, et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875-887 · Goldfrank's Toxicologic Emergencies, 11th ed. Ch. Lithium"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "티아자이드 추가 뒤 생긴 만성 리튬 중독에 혼돈과 크레아티닌 상승이 있으므로 수액이 아니라 혈액투석을 한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "의식 저하와 신기능 저하 — 수액으로 배설을 기다릴 수 없다",
+   "steps": 3,
+   "chain": [
+    "리튬 복용 + 하이드로클로로티아자이드 시작 → 근위세관 리튬 재흡수 증가",
+    "굵은 떨림·근간대경련·운동실조 + 리튬 3.2 → 만성 리튬 중독",
+    "혼돈 + 크레아티닌 2.1 → 혈액투석"
+   ],
+   "key": [
+    {
+     "item": "하이드로클로로티아자이드를 새로 시작하였다",
+     "why": "리튬 중독의 원인",
+     "also": []
+    },
+    {
+     "item": "혈청 리튬 3.2 mEq/L",
+     "why": "중독 확인 — 수치만으로는 투석 기준 미만",
+     "also": []
+    },
+    {
+     "item": "시간과 장소를 헷갈린다",
+     "why": "의식 저하 — 농도와 무관한 투석 기준",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "굵은 떨림과 근간대경련",
+     "why": "신경 독성",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "크레아티닌 2.1 mg/dL",
+     "why": "신기능 저하 — 스스로 배설하지 못한다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "QTc 480 ms",
+     "why": "리튬의 심장 영향 — 생명을 위협하는 부정맥은 아니다",
+     "also": []
+    },
+    {
+     "item": "나트륨 134 mEq/L",
+     "why": "티아자이드에 의한 경한 저나트륨 — 판단을 바꾸지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "리튬 복용 중 티아자이드를 추가한 뒤 리튬이 3.2 로 오르고 굵은 떨림·운동실조·혼돈이 생긴 만성 리튬 중독이다. 의식 저하와 크레아티닌 상승이 있어 수액만으로는 부족하고 혈액투석을 한다.",
+   "switch": {
+    "choice": "A",
+    "condition": "의식이 명료하고 떨림·구역만 있으며 크레아티닌이 정상이었다면 생리식염수 수액과 리튬 중단으로 충분하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0009"
+ },
+ {
+  "id": "imaging-2026-0348",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "혈액·종양",
+  "subject_file": "혈액·종양",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "혈액·종양 — 적혈구 수가 많은 소구성 빈혈",
+  "type": "혈액·종양 — 적혈구 수가 많은 소구성 빈혈",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-15",
+  "vignette": "A 24-year-old woman of Greek descent comes to the physician for a routine examination before planning a pregnancy. She feels well. Menses occur at regular 28-day intervals and last 4 days with moderate flow. She eats a varied diet including meat. Pulse is 74/min, and blood pressure is 112/70 mm Hg. Examination shows no pallor or splenomegaly. Laboratory studies show a hemoglobin concentration of 11.2 g/dL, mean corpuscular volume of 63 µm3, erythrocyte count of 5.9 million/mm3, and red cell distribution width of 13% (N 11.5-14.5). Serum ferritin concentration is 68 ng/mL. A peripheral blood smear shows microcytosis and target cells.",
+  "question": "Which of the following is the most appropriate next step in diagnosis?",
+  "options": [
+   "Bone marrow aspiration with iron stain",
+   "Serum lead concentration",
+   "Fecal occult blood testing",
+   "Hemoglobin electrophoresis",
+   "A 3-month trial of oral ferrous sulfate"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답 핵심: She has a mild microcytic anemia with a very low MCV (63) but a high erythrocyte count (5.9 million), normal RDW, normal ferritin, and target cells — a Mentzer index (MCV/RBC) of about 11, well below 13. This pattern points to thalassemia trait rather than iron deficiency. Hemoglobin electrophoresis showing increased HbA2 (>3.5%) confirms β-thalassemia trait, which matters before pregnancy for partner screening.\n- 원리: <b>Why thalassemia trait makes many small cells</b>: in β-thalassemia trait one β-globin gene is defective, so each red cell has less hemoglobin and is small. Erythropoiesis is otherwise intact, so the marrow makes a normal or increased number of uniformly small cells — a high RBC count with a uniform size distribution (normal RDW).<br> <b>Why iron deficiency looks different</b>: in iron deficiency the marrow cannot make enough cells at all, so the RBC count falls, and new cells become progressively smaller while older cells are normal — the RDW widens. Ferritin is low.<br> <b>Why electrophoresis confirms it</b>: when β chains are scarce, the free α chains pair with δ chains, so HbA2 (α2δ2) rises above 3.5%, often with a modest HbF increase. Iron deficiency can lower HbA2, so iron status should be known before interpreting a borderline result. In α-thalassemia trait the electrophoresis is normal and DNA testing is needed.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">β-thalassemia trait (answer)</th><th>Iron deficiency (closest distractor)</th></tr></thead><tbody> <tr><td>RBC count</td><td><b>High</b> (often &gt;5 million/mm3)</td><td>Low</td></tr> <tr><td>RDW</td><td>Normal — uniformly small cells</td><td>Increased</td></tr> <tr><td>Mentzer index (MCV/RBC)</td><td>&lt;13</td><td>&gt;13</td></tr> <tr><td>Ferritin</td><td>Normal</td><td>Low</td></tr> <tr><td>Confirming test</td><td>Hb electrophoresis: HbA2 &gt;3.5%</td><td>Response to iron; find the cause of loss</td></tr> </tbody></table> A very low MCV with a mild anemia and many cells is thalassemia trait until proven otherwise; iron should not be given empirically.\n- 오답 이유:\n  - (A) Bone marrow iron staining is reserved for unclear cases such as suspected sideroblastic anemia with ring sideroblasts, not when ferritin is clearly normal.\n  - (B) Serum lead would be the answer for a child or worker with exposure, abdominal pain, and basophilic stippling with microcytic anemia.\n  - (C) Fecal occult blood testing would be correct in an older adult or man with iron deficiency to look for gastrointestinal blood loss.\n  - (E) An iron trial would be correct if ferritin were low and the RBC count low with a wide RDW, as in iron deficiency from menstrual loss.\n- 함정: Treating every microcytic anemia as iron deficiency — a normal ferritin and high RBC count rule against it, and needless iron can cause overload.\n- 학습목표: 적혈구 수가 많고 RDW 가 정상인 소구성 빈혈에서 철 결핍보다 베타지중해빈혈 형질을 의심하고 혈색소 전기영동(HbA2)으로 확인한다\n- 근거·출처: Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of hemoglobin — thalassemia syndromes · Mentzer WC. Differentiation of iron deficiency from thalassaemia trait. Lancet 1973;1:882",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "She has a mild microcytic anemia with a very low MCV (63) but a high erythrocyte count (5.9 million), normal RDW, normal ferritin, and target cells — a Mentzer index (MCV/RBC) of about 11, well below 13. This pattern points to thalassemia trait rather than iron deficiency. Hemoglobin electrophoresis showing increased HbA2 (>3.5%) confirms β-thalassemia trait, which matters before pregnancy for partner screening."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why thalassemia trait makes many small cells</b>: in β-thalassemia trait one β-globin gene is defective, so each red cell has less hemoglobin and is small. Erythropoiesis is otherwise intact, so the marrow makes a normal or increased number of uniformly small cells — a high RBC count with a uniform size distribution (normal RDW).<br> <b>Why iron deficiency looks different</b>: in iron deficiency the marrow cannot make enough cells at all, so the RBC count falls, and new cells become progressively smaller while older cells are normal — the RDW widens. Ferritin is low.<br> <b>Why electrophoresis confirms it</b>: when β chains are scarce, the free α chains pair with δ chains, so HbA2 (α2δ2) rises above 3.5%, often with a modest HbF increase. Iron deficiency can lower HbA2, so iron status should be known before interpreting a borderline result. In α-thalassemia trait the electrophoresis is normal and DNA testing is needed."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">β-thalassemia trait (answer)</th><th>Iron deficiency (closest distractor)</th></tr></thead><tbody> <tr><td>RBC count</td><td><b>High</b> (often &gt;5 million/mm3)</td><td>Low</td></tr> <tr><td>RDW</td><td>Normal — uniformly small cells</td><td>Increased</td></tr> <tr><td>Mentzer index (MCV/RBC)</td><td>&lt;13</td><td>&gt;13</td></tr> <tr><td>Ferritin</td><td>Normal</td><td>Low</td></tr> <tr><td>Confirming test</td><td>Hb electrophoresis: HbA2 &gt;3.5%</td><td>Response to iron; find the cause of loss</td></tr> </tbody></table> A very low MCV with a mild anemia and many cells is thalassemia trait until proven otherwise; iron should not be given empirically."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Bone marrow iron staining is reserved for unclear cases such as suspected sideroblastic anemia with ring sideroblasts, not when ferritin is clearly normal.\n(B) Serum lead would be the answer for a child or worker with exposure, abdominal pain, and basophilic stippling with microcytic anemia.\n(C) Fecal occult blood testing would be correct in an older adult or man with iron deficiency to look for gastrointestinal blood loss.\n(E) An iron trial would be correct if ferritin were low and the RBC count low with a wide RDW, as in iron deficiency from menstrual loss."
+   },
+   {
+    "k": "함정",
+    "v": "Treating every microcytic anemia as iron deficiency — a normal ferritin and high RBC count rule against it, and needless iron can cause overload."
+   },
+   {
+    "k": "학습목표",
+    "v": "적혈구 수가 많고 RDW 가 정상인 소구성 빈혈에서 철 결핍보다 베타지중해빈혈 형질을 의심하고 혈색소 전기영동(HbA2)으로 확인한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Harrison's Principles of Internal Medicine, 21st ed. Ch. Disorders of hemoglobin — thalassemia syndromes · Mentzer WC. Differentiation of iron deficiency from thalassaemia trait. Lancet 1973;1:882"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "적혈구 수가 많고 RDW·페리틴이 정상인 소구성 빈혈은 지중해빈혈 형질이 의심되므로 혈색소 전기영동으로 HbA2 를 본다",
+   "rival": [
+    "E"
+   ],
+   "discriminator": "페리틴 정상과 높은 적혈구 수(멘처 지수 < 13) — 철 결핍이 아니다",
+   "steps": 2,
+   "chain": [
+    "MCV 63 + 적혈구 5.9백만 + RDW 정상 + 페리틴 정상 → 지중해빈혈 형질 의심(멘처 지수 ≈ 11)",
+    "확인 → 혈색소 전기영동(HbA2 > 3.5 %)"
+   ],
+   "key": [
+    {
+     "item": "mean corpuscular volume of 63",
+     "why": "빈혈 정도에 비해 매우 작은 적혈구",
+     "also": []
+    },
+    {
+     "item": "erythrocyte count of 5.9 million",
+     "why": "많은 적혈구 — 지중해빈혈 형질",
+     "also": []
+    },
+    {
+     "item": "red cell distribution width of 13%",
+     "why": "고른 크기 — 철 결핍과 반대",
+     "also": []
+    },
+    {
+     "item": "target cells",
+     "why": "지중해빈혈을 뒷받침",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "Serum ferritin concentration is 68 ng/mL",
+     "why": "철 결핍 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "planning a pregnancy",
+     "why": "배우자 선별 검사가 필요한 이유",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "Greek descent",
+     "why": "유병률이 높은 집단 — 단독으로 진단하지 않는다",
+     "also": []
+    }
+   ],
+   "summary": "MCV 63 의 소구성 빈혈인데 적혈구 수가 많고 RDW·페리틴이 정상이며 표적세포가 있다. 철 결핍이 아니라 베타지중해빈혈 형질이 의심되므로 혈색소 전기영동으로 HbA2 상승을 확인한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "페리틴이 8 ng/mL 로 낮고 적혈구 수가 적으며 RDW 가 넓었다면 경구 철 투여가 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0008"
+ },
+ {
+  "id": "imaging-2026-0347",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "소화기",
+  "subject_file": "소화기",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "소화기·간담췌 — 심방세동 환자의 진찰 소견에 비해 심한 복통",
+  "type": "소화기·간담췌 — 심방세동 환자의 진찰 소견에 비해 심한 복통",
+  "modality": "",
+  "step": "",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-15",
+  "vignette": "76세 여자가 2시간 전 갑자기 시작된 심한 배꼽 주위 통증으로 응급실에 왔다. 통증 직후 한 번 설사를 하였다. 심방세동이 있으나 출혈이 걱정되어 3개월 전부터 항응고제를 먹지 않았다. 혈압 148/88 mmHg, 맥박 118회/분(불규칙), 체온 36.9 ℃ 이다. 환자는 몹시 아파하며 몸을 뒤척이지만 배는 부드럽고 깊이 눌러도 압통이 경미하며 반발압통은 없다. 백혈구 15,800/mm³, 젖산 3.4 mmol/L, 혈청 아밀라아제 128 U/L(참고치 < 100), 크레아티닌 0.9 mg/dL 이다. 심전도는 심방세동이며 ST 변화는 없다.",
+  "question": "가장 적절한 검사는?",
+  "options": [
+   "복부 초음파",
+   "상부위장관 내시경",
+   "복부 CT 혈관조영술",
+   "복부 단순 X선 촬영",
+   "대장내시경"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답 핵심: 항응고제를 끊은 심방세동 환자에게 갑자기 시작된 극심한 배꼽 주위 통증이 진찰 소견(부드러운 배, 경미한 압통)에 비해 지나치게 심하고, 통증 직후 설사·백혈구 증가·젖산 상승이 있다 — 상장간막동맥 색전에 의한 급성 장간막 허혈을 의심한다. 진단은 다중검출 CT 혈관조영술이 첫 검사이며, 크레아티닌이 정상이므로 조영제를 미루지 않는다.\n- 원리: <b>왜 「진찰에 비해 심한 통증」인가</b>: 장간막 동맥이 막히면 장 점막부터 허혈이 시작된다. 내장 통증은 심하지만 아직 벽측 복막에 염증이 닿지 않아 압통·반발압통이 적다. 장벽 전층이 괴사해 복막염이 생기면 그때서야 배가 딱딱해지는데, 이미 늦은 단계다.<br> <b>왜 심방세동이 색전을 만드는가</b>: 심방세동에서 좌심방이(心房耳)에 생긴 혈전이 떨어져 나가면, 대동맥에서 예각으로 갈라지는 상장간막동맥으로 잘 들어간다. 색전은 대개 중결장동맥 갈래 아래에 걸려 공장 근위부는 살고 그 아래 소장과 오른쪽 대장이 허혈에 빠진다.<br> <b>왜 CT 혈관조영술인가</b>: 한 번에 혈관 막힘 위치·장벽 조영 저하·장벽 공기·문맥 가스를 보여 주고 다른 급성 복증도 걸러 낸다. 젖산과 백혈구는 늦게 오르고 정상이어도 배제하지 못한다. 진단 뒤에는 헤파린을 시작하고 혈관 재개통·괴사 장 절제를 한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CT 혈관조영술(정답)</th><th>복부 단순 X선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보는 것</td><td>상장간막동맥 막힘 위치, 장벽 조영 저하, 장벽 공기·문맥 가스</td><td>자유 공기, 장 폐쇄의 공기-액체층</td></tr> <tr><td>초기 허혈</td><td>민감도 약 90 % 이상</td><td>대개 정상 — 「정상 X선」이 안심을 주어 진단을 늦춤</td></tr> <tr><td>치료 계획</td><td>재개통 방법·절제 범위를 바로 정함</td><td>정보가 거의 없음</td></tr> </tbody></table> 장간막 허혈이 의심되면 단순 X선으로 시간을 쓰지 않고 곧바로 CT 혈관조영술로 간다.\n- 오답 이유:\n  - ① 복부 초음파는 오른쪽 위 복통·발열로 담낭염이나 담석이 의심될 때 첫 검사가 된다.\n  - ② 상부위장관 내시경은 토혈·흑색변이나 명치 통증으로 소화성 궤양 출혈이 의심될 때 정답이 된다.\n  - ④ 복부 단순 X선은 천공에 의한 자유 공기나 장 폐쇄가 의심될 때 첫 검사가 되지만, 초기 장간막 허혈에서는 대개 정상이다.\n  - ⑤ 대장내시경은 저혈압 뒤 생긴 혈변과 왼쪽 복통으로 비폐색성 허혈성 대장염이 의심되고 복막 징후가 없을 때 선택한다.\n- 함정: 배가 부드럽고 압통이 경미하니 응급이 아니라고 판단하는 것 — 진찰 소견에 비해 심한 통증이 초기 장간막 허혈의 특징이다.\n- 학습목표: 심방세동 환자의 갑작스럽고 진찰 소견에 비해 심한 복통에서 급성 장간막 허혈을 의심하고 CT 혈관조영을 첫 검사로 고른다\n- 근거·출처: Bala M, et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 2022;17:54 · Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed. Ch. Intestinal ischemia",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "항응고제를 끊은 심방세동 환자에게 갑자기 시작된 극심한 배꼽 주위 통증이 진찰 소견(부드러운 배, 경미한 압통)에 비해 지나치게 심하고, 통증 직후 설사·백혈구 증가·젖산 상승이 있다 — 상장간막동맥 색전에 의한 급성 장간막 허혈을 의심한다. 진단은 다중검출 CT 혈관조영술이 첫 검사이며, 크레아티닌이 정상이므로 조영제를 미루지 않는다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 「진찰에 비해 심한 통증」인가</b>: 장간막 동맥이 막히면 장 점막부터 허혈이 시작된다. 내장 통증은 심하지만 아직 벽측 복막에 염증이 닿지 않아 압통·반발압통이 적다. 장벽 전층이 괴사해 복막염이 생기면 그때서야 배가 딱딱해지는데, 이미 늦은 단계다.<br> <b>왜 심방세동이 색전을 만드는가</b>: 심방세동에서 좌심방이(心房耳)에 생긴 혈전이 떨어져 나가면, 대동맥에서 예각으로 갈라지는 상장간막동맥으로 잘 들어간다. 색전은 대개 중결장동맥 갈래 아래에 걸려 공장 근위부는 살고 그 아래 소장과 오른쪽 대장이 허혈에 빠진다.<br> <b>왜 CT 혈관조영술인가</b>: 한 번에 혈관 막힘 위치·장벽 조영 저하·장벽 공기·문맥 가스를 보여 주고 다른 급성 복증도 걸러 낸다. 젖산과 백혈구는 늦게 오르고 정상이어도 배제하지 못한다. 진단 뒤에는 헤파린을 시작하고 혈관 재개통·괴사 장 절제를 한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">CT 혈관조영술(정답)</th><th>복부 단순 X선(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>보는 것</td><td>상장간막동맥 막힘 위치, 장벽 조영 저하, 장벽 공기·문맥 가스</td><td>자유 공기, 장 폐쇄의 공기-액체층</td></tr> <tr><td>초기 허혈</td><td>민감도 약 90 % 이상</td><td>대개 정상 — 「정상 X선」이 안심을 주어 진단을 늦춤</td></tr> <tr><td>치료 계획</td><td>재개통 방법·절제 범위를 바로 정함</td><td>정보가 거의 없음</td></tr> </tbody></table> 장간막 허혈이 의심되면 단순 X선으로 시간을 쓰지 않고 곧바로 CT 혈관조영술로 간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 복부 초음파는 오른쪽 위 복통·발열로 담낭염이나 담석이 의심될 때 첫 검사가 된다.\n② 상부위장관 내시경은 토혈·흑색변이나 명치 통증으로 소화성 궤양 출혈이 의심될 때 정답이 된다.\n④ 복부 단순 X선은 천공에 의한 자유 공기나 장 폐쇄가 의심될 때 첫 검사가 되지만, 초기 장간막 허혈에서는 대개 정상이다.\n⑤ 대장내시경은 저혈압 뒤 생긴 혈변과 왼쪽 복통으로 비폐색성 허혈성 대장염이 의심되고 복막 징후가 없을 때 선택한다."
+   },
+   {
+    "k": "함정",
+    "v": "배가 부드럽고 압통이 경미하니 응급이 아니라고 판단하는 것 — 진찰 소견에 비해 심한 통증이 초기 장간막 허혈의 특징이다."
+   },
+   {
+    "k": "학습목표",
+    "v": "심방세동 환자의 갑작스럽고 진찰 소견에 비해 심한 복통에서 급성 장간막 허혈을 의심하고 CT 혈관조영을 첫 검사로 고른다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Bala M, et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg 2022;17:54 · Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th ed. Ch. Intestinal ischemia"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "검사 선택",
+   "decision": "항응고제를 끊은 심방세동 환자의 진찰에 비해 심한 갑작스러운 복통은 상장간막동맥 색전이 의심되므로 CT 혈관조영술을 한다",
+   "rival": [
+    "D"
+   ],
+   "discriminator": "초기 장간막 허혈에서 단순 X선은 정상이다 — 혈관과 장벽을 보는 검사가 필요하다",
+   "steps": 2,
+   "chain": [
+    "심방세동 + 항응고제 중단 + 갑작스러운 극심한 복통 + 부드러운 배 → 급성 장간막 허혈(색전)",
+    "의심되면 바로 CT 혈관조영술(크레아티닌 정상)"
+   ],
+   "key": [
+    {
+     "item": "갑자기 시작된 심한 배꼽 주위 통증",
+     "why": "색전성 장간막 허혈의 시작 양상",
+     "also": []
+    },
+    {
+     "item": "3개월 전부터 항응고제를 먹지 않았다",
+     "why": "색전원 — 심방세동",
+     "also": []
+    },
+    {
+     "item": "배는 부드럽고 깊이 눌러도 압통이 경미하며",
+     "why": "진찰 소견에 비해 심한 통증",
+     "also": []
+    },
+    {
+     "item": "젖산 3.4 mmol/L",
+     "why": "허혈을 뒷받침 — 정상이어도 배제 못 한다",
+     "also": []
+    }
+   ],
+   "ruleOut": [
+    {
+     "item": "ST 변화는 없다",
+     "why": "하벽 심근경색이 상복부 통증으로 온 가능성을 낮춘다",
+     "also": []
+    }
+   ],
+   "management": [
+    {
+     "item": "크레아티닌 0.9 mg/dL",
+     "why": "조영제를 쓸 수 있다",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "혈청 아밀라아제 128 U/L",
+     "why": "장 허혈에서도 가볍게 오른다 — 췌장염으로 끌려가기 쉽다",
+     "also": []
+    }
+   ],
+   "summary": "항응고제를 끊은 심방세동 환자에게 갑작스럽고 진찰 소견에 비해 극심한 복통, 백혈구·젖산 상승이 있어 상장간막동맥 색전을 의심한다. 단순 X선은 초기에 정상이므로 곧바로 CT 혈관조영술을 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "심부전 환자가 저혈압을 겪은 뒤 왼쪽 복통과 혈변이 생기고 복막 징후가 없다면 허혈성 대장염을 보는 대장내시경이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0007"
+ },
+ {
+  "id": "imaging-2026-0346",
+  "exam": "imaging",
+  "style": "usmle_style",
+  "styleLabel": "USMLE형",
+  "subject": "근골격·류마티스",
+  "subject_file": "근골격·류마티스",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "류마티스·근골격 — 두통·턱 파행과 일과성 시력 저하",
+  "type": "류마티스·근골격 — 두통·턱 파행과 일과성 시력 저하",
+  "modality": "",
+  "step": "Step 2",
+  "difficulty": 4,
+  "difficultyLabel": "상",
+  "created": "2026-10-15",
+  "vignette": "A 72-year-old woman comes to the emergency department because of a new right-sided headache for 3 weeks and two episodes of transient blurred vision in the right eye, each lasting about 5 minutes, during the past day. She has pain in her jaw when chewing that resolves with rest and has had morning stiffness of the shoulders and hips. She has hypertension treated with amlodipine. Temperature is 37.8°C (100°F), pulse is 84/min, and blood pressure is 142/84 mm Hg. The right temporal artery is tender and nodular with a decreased pulse. Visual acuity is 20/25 in both eyes, and funduscopic examination shows no abnormalities. Erythrocyte sedimentation rate is 92 mm/h, and serum C-reactive protein concentration is 6.8 mg/dL (N <0.5). Hemoglobin concentration is 10.9 g/dL, and platelet count is 486,000/mm3.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Perform temporal artery biopsy before starting treatment",
+   "Begin low-dose prednisone, 15 mg daily",
+   "Begin aspirin therapy alone",
+   "Obtain MRI of the brain before starting treatment",
+   "Begin high-dose glucocorticoid therapy immediately"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답 핵심: New headache after age 50, jaw claudication, polymyalgia symptoms, a tender nodular temporal artery, ESR 92 mm/h, anemia, and thrombocytosis indicate giant cell arteritis. Transient monocular blurred vision signals ischemia of the posterior ciliary circulation and threatens permanent blindness. High-dose glucocorticoids (often IV methylprednisolone with visual symptoms) should start immediately; temporal artery biopsy is still done, but within about 2 weeks the result remains diagnostic despite treatment.\n- 원리: <b>Why vision is at risk</b>: giant cell arteritis is a granulomatous vasculitis of large and medium arteries with internal elastic lamina, especially branches of the external carotid and the ophthalmic artery. Inflammation thickens the intima and narrows the lumen. Occlusion of the posterior ciliary arteries causes arteritic anterior ischemic optic neuropathy, and once vision is lost it rarely returns — transient blurring or amaurosis fugax is the warning sign.<br> <b>Why treatment comes before the biopsy</b>: glucocorticoids rapidly suppress the inflammation and prevent new ischemic events, while the granulomatous changes in the artery wall persist for at least 2 weeks after starting treatment, so the biopsy remains informative. Waiting for the biopsy risks blindness in the other or the same eye.<br> <b>Why the dose matters</b>: polymyalgia rheumatica alone responds to 12.5–25 mg of prednisone, but vasculitis of cranial arteries needs 40–60 mg (or 1 mg/kg), and with visual symptoms many give IV methylprednisolone 500–1000 mg daily for 3 days.\n- 비교: <table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Immediate high-dose glucocorticoid (answer)</th><th>Biopsy first, then treat (closest distractor)</th></tr></thead><tbody> <tr><td>Goal</td><td>Prevent permanent vision loss now</td><td>Secure the diagnosis before exposing to steroids</td></tr> <tr><td>Effect on biopsy</td><td>Biopsy still positive if done within about 2 weeks</td><td>—</td></tr> <tr><td>Risk of delay</td><td>None to diagnosis</td><td>Ischemic optic neuropathy while waiting (days)</td></tr> </tbody></table> When giant cell arteritis is suspected — especially with visual symptoms — treat first and biopsy soon after.\n- 오답 이유:\n  - (A) Biopsy before treatment would be reasonable only if suspicion were low and there were no visual or ischemic symptoms, and even then treatment should not be delayed for long.\n  - (B) Prednisone 15 mg daily is the dose for isolated polymyalgia rheumatica without headache, jaw claudication, or visual symptoms.\n  - (C) Aspirin alone would be wrong here; low-dose aspirin may be added for cardiovascular risk, but it does not control the vasculitis.\n  - (D) Brain MRI would be the next step if the transient visual loss were binocular or accompanied by focal neurologic deficits suggesting stroke rather than arteritis.\n- 함정: Delaying steroids to get a 'clean' biopsy — granulomatous inflammation persists for weeks, while vision loss can happen within days.\n- 학습목표: 거대세포동맥염에서 일과성 시력 저하가 있으면 측두동맥 생검을 기다리지 않고 즉시 고용량 글루코코르티코이드를 시작한다\n- 근거·출처: Maz M, et al. 2021 American College of Rheumatology/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol 2021;73:1349-1365 · Harrison's Principles of Internal Medicine, 21st ed. Ch. The vasculitis syndromes — giant cell arteritis",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "New headache after age 50, jaw claudication, polymyalgia symptoms, a tender nodular temporal artery, ESR 92 mm/h, anemia, and thrombocytosis indicate giant cell arteritis. Transient monocular blurred vision signals ischemia of the posterior ciliary circulation and threatens permanent blindness. High-dose glucocorticoids (often IV methylprednisolone with visual symptoms) should start immediately; temporal artery biopsy is still done, but within about 2 weeks the result remains diagnostic despite treatment."
+   },
+   {
+    "k": "원리",
+    "v": "<b>Why vision is at risk</b>: giant cell arteritis is a granulomatous vasculitis of large and medium arteries with internal elastic lamina, especially branches of the external carotid and the ophthalmic artery. Inflammation thickens the intima and narrows the lumen. Occlusion of the posterior ciliary arteries causes arteritic anterior ischemic optic neuropathy, and once vision is lost it rarely returns — transient blurring or amaurosis fugax is the warning sign.<br> <b>Why treatment comes before the biopsy</b>: glucocorticoids rapidly suppress the inflammation and prevent new ischemic events, while the granulomatous changes in the artery wall persist for at least 2 weeks after starting treatment, so the biopsy remains informative. Waiting for the biopsy risks blindness in the other or the same eye.<br> <b>Why the dose matters</b>: polymyalgia rheumatica alone responds to 12.5–25 mg of prednisone, but vasculitis of cranial arteries needs 40–60 mg (or 1 mg/kg), and with visual symptoms many give IV methylprednisolone 500–1000 mg daily for 3 days."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">Feature</th><th style=\"width:39%\">Immediate high-dose glucocorticoid (answer)</th><th>Biopsy first, then treat (closest distractor)</th></tr></thead><tbody> <tr><td>Goal</td><td>Prevent permanent vision loss now</td><td>Secure the diagnosis before exposing to steroids</td></tr> <tr><td>Effect on biopsy</td><td>Biopsy still positive if done within about 2 weeks</td><td>—</td></tr> <tr><td>Risk of delay</td><td>None to diagnosis</td><td>Ischemic optic neuropathy while waiting (days)</td></tr> </tbody></table> When giant cell arteritis is suspected — especially with visual symptoms — treat first and biopsy soon after."
+   },
+   {
+    "k": "오답 이유",
+    "v": "(A) Biopsy before treatment would be reasonable only if suspicion were low and there were no visual or ischemic symptoms, and even then treatment should not be delayed for long.\n(B) Prednisone 15 mg daily is the dose for isolated polymyalgia rheumatica without headache, jaw claudication, or visual symptoms.\n(C) Aspirin alone would be wrong here; low-dose aspirin may be added for cardiovascular risk, but it does not control the vasculitis.\n(D) Brain MRI would be the next step if the transient visual loss were binocular or accompanied by focal neurologic deficits suggesting stroke rather than arteritis."
+   },
+   {
+    "k": "함정",
+    "v": "Delaying steroids to get a 'clean' biopsy — granulomatous inflammation persists for weeks, while vision loss can happen within days."
+   },
+   {
+    "k": "학습목표",
+    "v": "거대세포동맥염에서 일과성 시력 저하가 있으면 측두동맥 생검을 기다리지 않고 즉시 고용량 글루코코르티코이드를 시작한다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Maz M, et al. 2021 American College of Rheumatology/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. Arthritis Rheumatol 2021;73:1349-1365 · Harrison's Principles of Internal Medicine, 21st ed. Ch. The vasculitis syndromes — giant cell arteritis"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "다음 처치",
+   "decision": "일과성 시력 저하가 동반된 거대세포동맥염이므로 생검을 기다리지 않고 고용량 글루코코르티코이드를 즉시 시작한다",
+   "rival": [
+    "A"
+   ],
+   "discriminator": "시력 증상 — 생검 결과는 치료 뒤 2주 안이면 유지되지만 시력 손실은 되돌릴 수 없다",
+   "steps": 2,
+   "chain": [
+    "50세 이후 새 두통 + 턱 파행 + 결절성 측두동맥 + ESR 92 → 거대세포동맥염",
+    "일과성 단안 시력 저하 → 실명 위험, 즉시 고용량 글루코코르티코이드(생검은 뒤에)"
+   ],
+   "key": [
+    {
+     "item": "pain in her jaw when chewing",
+     "why": "턱 파행 — 거대세포동맥염의 특이적 증상",
+     "also": []
+    },
+    {
+     "item": "transient blurred vision in the right eye",
+     "why": "허혈성 시신경병증 경고 — 치료를 서두를 근거",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    },
+    {
+     "item": "The right temporal artery is tender and nodular",
+     "why": "측두동맥 침범",
+     "also": []
+    },
+    {
+     "item": "Erythrocyte sedimentation rate is 92 mm/h",
+     "why": "강한 전신 염증",
+     "also": []
+    }
+   ],
+   "ruleOut": [],
+   "management": [],
+   "background": [
+    {
+     "item": "morning stiffness of the shoulders and hips",
+     "why": "동반 류마티스다발근통 — 저용량 치료 쪽으로 끌려가기 쉽다",
+     "also": []
+    },
+    {
+     "item": "funduscopic examination shows no abnormalities",
+     "why": "아직 시신경 경색이 없다 — 치료 시기를 놓치지 않을 근거",
+     "also": []
+    }
+   ],
+   "summary": "새 두통, 턱 파행, 결절성 측두동맥, ESR 92 로 거대세포동맥염이며 일과성 시력 저하는 실명 경고다. 생검은 치료 뒤에도 2주 안이면 진단적이므로 고용량 글루코코르티코이드를 즉시 시작한다.",
+   "switch": {
+    "choice": "B",
+    "condition": "두통·턱 파행·시력 증상 없이 어깨·엉덩이 통증과 아침 강직만 있었다면 저용량 프레드니손(류마티스다발근통)이 적절하다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0006"
+ },
+ {
+  "id": "imaging-2026-0345",
+  "exam": "imaging",
+  "style": "kmle_style",
+  "styleLabel": "국시형",
+  "subject": "응급·중환자",
+  "subject_file": "응급·중환자",
+  "setSubject": "통합(KMLE·USMLE 과목 배분 — 내분비·병리·신경·호흡기·응급·류마티스·소화기·혈액·정신·피부)",
+  "subtopic": "응급·중환자·외상 — 밀폐된 방에서 의식이 흐려진 채 발견된 환자",
+  "type": "응급·중환자·외상 — 밀폐된 방에서 의식이 흐려진 채 발견된 환자",
+  "modality": "",
+  "step": "",
+  "difficulty": 3,
+  "difficultyLabel": "중",
+  "created": "2026-10-15",
+  "vignette": "45세 남자가 문을 닫은 방에서 숯불을 피워 놓고 잠들었다가 의식이 흐려진 채 가족에게 발견되어 응급실에 왔다. 가족에 따르면 발견 당시 부르면 대답하지 못했다. 혈압 128/80 mmHg, 맥박 112회/분, 호흡 22회/분이다. 맥박산소측정 산소포화도는 99 % 이다. 현재 눈을 뜨지만 지남력이 떨어지고 두통을 호소한다. 심전도는 동빈맥이다. 동맥혈 가스검사에서 카복시헤모글로빈 32 %, 젖산 4.1 mmol/L 이다. 비재호흡마스크로 100 % 산소를 투여하기 시작하였다.",
+  "question": "다음으로 가장 적절한 치료는?",
+  "options": [
+   "아질산아밀 흡입",
+   "고압산소치료",
+   "100 % 산소를 유지하며 증상이 사라질 때까지 관찰",
+   "메틸렌블루 정맥주사",
+   "하이드록소코발라민 정맥주사"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답 핵심: 밀폐된 방의 숯불, 두통·혼돈, 정상으로 보이는 산소포화도와 카복시헤모글로빈 32 % 는 일산화탄소 중독이다. 의식 소실이 있었고 카복시헤모글로빈이 25 % 를 넘으며 신경학적 이상이 남아 있어 100 % 산소에 이어 고압산소치료를 한다 — 지연 신경정신 후유증을 줄이는 근거가 있다.\n- 원리: <b>왜 맥박산소측정이 정상으로 나오는가</b>: 일반 맥박산소측정기는 두 파장만 써서 카복시헤모글로빈을 산소헤모글로빈과 구별하지 못한다. 그래서 조직은 산소가 부족한데도 포화도가 99 % 로 보인다. 진단은 co-oximetry 로 카복시헤모글로빈을 직접 재야 한다.<br> <b>왜 산소 분압을 높이는가</b>: 일산화탄소는 헤모글로빈에 산소보다 약 200~250배 강하게 붙고, 남은 헴의 산소 친화도도 높여 해리곡선을 왼쪽으로 옮긴다. 미토콘드리아 사이토크롬 산화효소도 억제해 젖산이 오른다. 일산화탄소의 반감기는 실내 공기에서 약 5시간, 100 % 산소에서 약 1시간, 2.5~3기압 고압산소에서 약 20분으로 줄어든다.<br> <b>고압산소가 노리는 것</b>: 빠른 제거와 함께 뇌의 지질 과산화·염증을 줄여 수일~수주 뒤 나타나는 기억력 저하·파킨슨증 같은 지연 후유증을 줄인다. 대개 의식 소실, 카복시헤모글로빈 > 25 %(임신부 > 15 %), 신경학적 이상, 심근 허혈, 심한 산증이면 고려한다.\n- 비교: <table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고압산소치료(정답)</th><th>100 % 산소 유지 후 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>의식 소실, 카복시헤모글로빈 &gt; 25 %, 신경 이상, 심근 허혈, 임신</td><td>두통·구역 정도의 경증, 의식 소실 없음</td></tr> <tr><td>일산화탄소 반감기</td><td>약 20분(2.5~3기압)</td><td>약 60~90분</td></tr> <tr><td>지연 신경 후유증</td><td>감소 근거 있음</td><td>예방 효과가 덜함</td></tr> </tbody></table> 100 % 산소는 모든 환자의 첫 처치이고, 위험 표지가 하나라도 있으면 고압산소로 넘어간다.\n- 오답 이유:\n  - ① 아질산아밀은 옛 시안화물 해독 키트의 첫 단계로, 시안화물 중독에서 메트헤모글로빈을 만들려는 것이라 이 환자에게는 산소 운반을 더 떨어뜨린다.\n  - ③ 100 % 산소 유지 후 관찰은 의식 소실이 없고 두통·구역만 있으며 카복시헤모글로빈이 낮은 경증 중독일 때 정답이 된다.\n  - ④ 메틸렌블루는 질산염·다프손 노출 뒤 청색증이 산소에 반응하지 않고 메트헤모글로빈이 높은 메트헤모글로빈혈증일 때 정답이 된다.\n  - ⑤ 하이드록소코발라민은 화재 연기 흡입 뒤 젖산이 매우 높고 저혈압·의식 저하가 있어 시안화물 중독이 의심될 때 정답이 된다.\n- 함정: 산소포화도 99 % 를 보고 저산소증이 없다고 판단하는 것 — 일반 맥박산소측정은 카복시헤모글로빈을 구별하지 못한다.\n- 학습목표: 일산화탄소 중독에서 맥박산소측정의 한계를 알고, 의식 소실·높은 카복시헤모글로빈이 있으면 100 % 산소에 이어 고압산소치료를 하는 기준을 안다\n- 근거·출처: Weaver LK, et al. Hyperbaric oxygen for acute carbon monoxide poisoning. N Engl J Med 2002;347:1057-1067 · Tintinalli's Emergency Medicine, 9th ed. Ch. Carbon monoxide",
+  "explanationItems": [
+   {
+    "k": "정답 핵심",
+    "v": "밀폐된 방의 숯불, 두통·혼돈, 정상으로 보이는 산소포화도와 카복시헤모글로빈 32 % 는 일산화탄소 중독이다. 의식 소실이 있었고 카복시헤모글로빈이 25 % 를 넘으며 신경학적 이상이 남아 있어 100 % 산소에 이어 고압산소치료를 한다 — 지연 신경정신 후유증을 줄이는 근거가 있다."
+   },
+   {
+    "k": "원리",
+    "v": "<b>왜 맥박산소측정이 정상으로 나오는가</b>: 일반 맥박산소측정기는 두 파장만 써서 카복시헤모글로빈을 산소헤모글로빈과 구별하지 못한다. 그래서 조직은 산소가 부족한데도 포화도가 99 % 로 보인다. 진단은 co-oximetry 로 카복시헤모글로빈을 직접 재야 한다.<br> <b>왜 산소 분압을 높이는가</b>: 일산화탄소는 헤모글로빈에 산소보다 약 200~250배 강하게 붙고, 남은 헴의 산소 친화도도 높여 해리곡선을 왼쪽으로 옮긴다. 미토콘드리아 사이토크롬 산화효소도 억제해 젖산이 오른다. 일산화탄소의 반감기는 실내 공기에서 약 5시간, 100 % 산소에서 약 1시간, 2.5~3기압 고압산소에서 약 20분으로 줄어든다.<br> <b>고압산소가 노리는 것</b>: 빠른 제거와 함께 뇌의 지질 과산화·염증을 줄여 수일~수주 뒤 나타나는 기억력 저하·파킨슨증 같은 지연 후유증을 줄인다. 대개 의식 소실, 카복시헤모글로빈 > 25 %(임신부 > 15 %), 신경학적 이상, 심근 허혈, 심한 산증이면 고려한다."
+   },
+   {
+    "k": "비교",
+    "v": "<table><thead><tr><th style=\"width:22%\">구분</th><th style=\"width:39%\">고압산소치료(정답)</th><th>100 % 산소 유지 후 관찰(가장 가까운 오답)</th></tr></thead><tbody> <tr><td>대상</td><td>의식 소실, 카복시헤모글로빈 &gt; 25 %, 신경 이상, 심근 허혈, 임신</td><td>두통·구역 정도의 경증, 의식 소실 없음</td></tr> <tr><td>일산화탄소 반감기</td><td>약 20분(2.5~3기압)</td><td>약 60~90분</td></tr> <tr><td>지연 신경 후유증</td><td>감소 근거 있음</td><td>예방 효과가 덜함</td></tr> </tbody></table> 100 % 산소는 모든 환자의 첫 처치이고, 위험 표지가 하나라도 있으면 고압산소로 넘어간다."
+   },
+   {
+    "k": "오답 이유",
+    "v": "① 아질산아밀은 옛 시안화물 해독 키트의 첫 단계로, 시안화물 중독에서 메트헤모글로빈을 만들려는 것이라 이 환자에게는 산소 운반을 더 떨어뜨린다.\n③ 100 % 산소 유지 후 관찰은 의식 소실이 없고 두통·구역만 있으며 카복시헤모글로빈이 낮은 경증 중독일 때 정답이 된다.\n④ 메틸렌블루는 질산염·다프손 노출 뒤 청색증이 산소에 반응하지 않고 메트헤모글로빈이 높은 메트헤모글로빈혈증일 때 정답이 된다.\n⑤ 하이드록소코발라민은 화재 연기 흡입 뒤 젖산이 매우 높고 저혈압·의식 저하가 있어 시안화물 중독이 의심될 때 정답이 된다."
+   },
+   {
+    "k": "함정",
+    "v": "산소포화도 99 % 를 보고 저산소증이 없다고 판단하는 것 — 일반 맥박산소측정은 카복시헤모글로빈을 구별하지 못한다."
+   },
+   {
+    "k": "학습목표",
+    "v": "일산화탄소 중독에서 맥박산소측정의 한계를 알고, 의식 소실·높은 카복시헤모글로빈이 있으면 100 % 산소에 이어 고압산소치료를 하는 기준을 안다"
+   },
+   {
+    "k": "근거·출처",
+    "v": "Weaver LK, et al. Hyperbaric oxygen for acute carbon monoxide poisoning. N Engl J Med 2002;347:1057-1067 · Tintinalli's Emergency Medicine, 9th ed. Ch. Carbon monoxide"
+   }
+  ],
+  "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "design": {
+   "target": "치료",
+   "decision": "의식 소실이 있었고 카복시헤모글로빈 32 % 에 지남력 장애가 남은 일산화탄소 중독이므로 고압산소치료를 한다",
+   "rival": [
+    "C"
+   ],
+   "discriminator": "의식 소실·카복시헤모글로빈 25 % 초과·신경학적 이상 — 경증이 아니다",
+   "steps": 2,
+   "chain": [
+    "밀폐된 방의 숯불 + 두통·혼돈 + 카복시헤모글로빈 32 % → 일산화탄소 중독",
+    "의식 소실·지남력 장애·카복시헤모글로빈 > 25 % → 고압산소치료"
+   ],
+   "key": [
+    {
+     "item": "문을 닫은 방에서 숯불을 피워 놓고",
+     "why": "일산화탄소 노출원",
+     "also": []
+    },
+    {
+     "item": "카복시헤모글로빈 32 %",
+     "why": "진단과 고압산소 기준(> 25 %)",
+     "also": [
+      "중증도·금기·치료 선택에 영향"
+     ]
+    }
+   ],
+   "ruleOut": [],
+   "management": [
+    {
+     "item": "부르면 대답하지 못했다",
+     "why": "의식 소실 — 고압산소 기준",
+     "also": []
+    },
+    {
+     "item": "지남력이 떨어지고",
+     "why": "남은 신경학적 이상 — 고압산소 기준",
+     "also": []
+    }
+   ],
+   "background": [
+    {
+     "item": "맥박산소측정 산소포화도는 99 %",
+     "why": "일산화탄소 중독에서 거짓 정상 — 판단을 흐리게 하는 정보",
+     "also": []
+    },
+    {
+     "item": "젖산 4.1 mmol/L",
+     "why": "조직 저산소 — 시안화물 중독으로 끌려가기 쉽지만 화재 연기 노출이 아니다",
+     "also": []
+    }
+   ],
+   "summary": "숯불을 피운 밀폐 공간, 두통·혼돈, 카복시헤모글로빈 32 % 로 일산화탄소 중독이다. 의식 소실과 남은 신경학적 이상, 카복시헤모글로빈 > 25 % 가 있어 100 % 산소에 이어 고압산소치료를 한다.",
+   "switch": {
+    "choice": "E",
+    "condition": "밀폐된 건물 화재에서 연기를 마셨고 젖산이 10 mmol/L 이상이며 저혈압이 있었다면 시안화물 해독제 하이드록소코발라민을 함께 준다"
+   }
+  },
+  "reviewStatus": "unreviewed",
+  "figureImg": null,
+  "attribution": {
+   "dataset": "",
+   "license": "",
+   "license_url": "",
+   "url": "",
+   "asset_id": "",
+   "text": ""
+  },
+  "run_id": "20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+  "qid": "Q0005"
+ },
+ {
   "id": "imaging-2026-0334",
   "exam": "imaging",
   "style": "usmle_style",

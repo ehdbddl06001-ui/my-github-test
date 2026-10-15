@@ -5,13 +5,13 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3679,
+  "total": 3689,
   "byType": {
    "anatomy": 842,
    "usmle": 198,
+   "imaging": 349,
    "paper": 774,
    "kmle": 1408,
-   "imaging": 339,
    "concept": 101,
    "ailab": 14,
    "basic": 3
@@ -40,28 +40,28 @@ window.MEDKOS_INDEX = {
    "Laboratory Medicine": 77,
    "산부인과": 53,
    "순환기": 30,
+   "호흡기": 23,
    "Physiology": 22,
-   "호흡기": 22,
-   "소화기": 21,
+   "소화기": 22,
    "소아과": 19,
    "Pharmacology": 17,
+   "내분비": 17,
+   "응급·중환자": 17,
+   "혈액·종양": 17,
    "Biochemistry": 16,
    "감염": 16,
-   "내분비": 16,
+   "병리·조직학": 16,
+   "신경": 16,
    "신장·비뇨기": 16,
-   "응급·중환자": 16,
-   "혈액·종양": 16,
    "Microbiology": 15,
-   "병리·조직학": 15,
-   "신경": 15,
-   "피부과": 14,
+   "피부과": 15,
    "예방의학·역학": 13,
    "외과": 13,
    "Internal Medicine": 12,
    "Immunology": 11,
-   "근골격·류마티스": 9,
+   "근골격·류마티스": 10,
    "약리": 9,
-   "정신과": 8,
+   "정신과": 9,
    "안과": 6,
    "영상의학": 6,
    "이비인후과": 6,
@@ -78,11 +78,11 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2549,
+   "high": 2559,
    "medium": 1080,
    "low": 50
   },
-  "tagCount": 4789
+  "tagCount": 4790
  },
  "docs": [
   {
@@ -230,6 +230,180 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0206.md",
    "snippet": "A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancom",
    "text": "Pharmacology Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant serotonin-syndrome linezolid monoamine-oxidase-inhibition ssri drug-interaction clonus mrsa-pneumonia USMLE-style / MedKOS (Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352:1112-1120; Katzung's Basic & Clinical Pharmacology — Oxazolidinones; FDA Drug Safety Communication 2011: serotonin syndrome with linezolid and serotonergic psychiatric drugs) A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancomycin for 3 days; because his serum creatinine rose, the antibiotic was changed 2 days ago, and he has since received a different oral antibiotic. He has taken sertraline 100 mg daily for major depressive disorder for 2 years and takes no other medications. His vital signs are shown. He is restless and diaphoretic, and he is oriented to person only. The pupils are 6 mm and reactive. The mucous membranes are moist and the bowel sounds are hyperactive. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and are 3+ in the upper extremities. There is intermittent slow horizontal eye movement from side to side. Muscle tone is increased in the legs; there is no lead pipe rigidity of the arms. Laboratory results are shown. Which of the following actions of the most recently added drug best explains this patient's current condition? A. Inhibition of hepatic CYP2D6 metabolism of sertraline B. Blockade of central dopamine D2 receptors C. Inhibition of monoamine oxidase D. Blockade of central muscarinic receptors E. Inhibition of mitochondrial protein synthesis SSRI(sertraline)를 오래 먹던 환자가 MRSA 폐렴 치료 중 반코마이신에서 경구 항생제로 바뀐 지 2일 만에 초조·떨림·발한·설사·고열, 그리고 하지에서 더 뚜렷한 반사항진·지속 발목 간대·안구 간대가 생겼다 — 세로토닌 증후군이다. 신장 기능 저하로 반코마이신을 대신할 수 있는 MRSA 폐렴용 경구 항생제는 linezolid 이고, linezolid 는 약한 가역적 비선택 MAO 억제제라 세로토닌 분해를 줄여 SSRI 와 함께 쓰면 시냅스 세로토닌이 쌓인다. CYP 상호작용으로 sertraline 농도를 올리는 기전이 아니다."
+  },
+  {
+   "id": "imaging-2026-0350",
+   "type": "imaging",
+   "unit": "",
+   "topic": "피부과",
+   "subtopic": "피부 — 궤양성대장염 환자의 커지는 다리 궤양",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0350.md",
+   "snippet": "A 38 year old man comes to the physician because of a painful ulcer on his left shin that began 3 weeks ago as a small pustule at the site of a minor scrape and has enlarged rapidly despite 10 days of oral cephalexin. He has ulcerative coli",
+   "text": "피부과 피부 — 궤양성대장염 환자의 커지는 다리 궤양 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 A 38 year old man comes to the physician because of a painful ulcer on his left shin that began 3 weeks ago as a small pustule at the site of a minor scrape and has enlarged rapidly despite 10 days of oral cephalexin. He has ulcerative colitis treated with mesalamine and has had increased stool frequency with blood for the past month. Temperature is 37.4°C (99.3°F), pulse is 86/min, and blood pressure is 122/76 mm Hg. Examination shows a 6 cm ulcer with a purulent base and an undermined, violaceous border. Pedal pulses are normal. Bacterial culture of the ulcer base grows only normal skin flora. A skin biopsy specimen taken from the ulcer edge shows a dense neutrophilic infiltrate without vasculitis or organisms. Which of the following is the most appropriate next step in management? A. Hyperbaric oxygen therapy B. Oral prednisone C. Surgical debridement of the ulcer D. Intravenous vancomycin E. Compression bandaging"
+  },
+  {
+   "id": "imaging-2026-0349",
+   "type": "imaging",
+   "unit": "",
+   "topic": "정신과",
+   "subtopic": "정신 — 이뇨제를 추가한 뒤 생긴 떨림과 혼돈",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0349.md",
+   "snippet": "52세 여자가 3일 전부터 손 떨림이 심해지고 걸음이 비틀거리며 말이 어눌해져 가족과 함께 응급실에 왔다. 오늘 아침부터 시간과 장소를 헷갈린다. 양극성장애로 10년째 리튬을 먹고 있으며, 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 시작하였다. 혈압 132/82 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 굵은 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2), 나트륨",
+   "text": "정신과 정신 — 이뇨제를 추가한 뒤 생긴 떨림과 혼돈 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 52세 여자가 3일 전부터 손 떨림이 심해지고 걸음이 비틀거리며 말이 어눌해져 가족과 함께 응급실에 왔다. 오늘 아침부터 시간과 장소를 헷갈린다. 양극성장애로 10년째 리튬을 먹고 있으며, 3주 전 고혈압으로 하이드로클로로티아자이드를 새로 시작하였다. 혈압 132/82 mmHg, 맥박 64회/분, 체온 36.8 ℃ 이다. 굵은 떨림과 근간대경련, 운동실조가 있다. 혈청 리튬 3.2 mEq/L(치료 범위 0.6~1.2), 나트륨 134 mEq/L, 크레아티닌 2.1 mg/dL(6개월 전 1.0) 이다. 심전도는 동서맥이고 QTc 480 ms 이다. 리튬을 중단하였다. 다음으로 가장 적절한 치료는? A. 생리식염수 정맥 수액만 투여 B. 활성탄 경구 투여 C. 폴리에틸렌글리콜 전장 세척 D. 로라제팜 정맥주사 E. 혈액투석"
+  },
+  {
+   "id": "imaging-2026-0348",
+   "type": "imaging",
+   "unit": "",
+   "topic": "혈액·종양",
+   "subtopic": "혈액·종양 — 적혈구 수가 많은 소구성 빈혈",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0348.md",
+   "snippet": "A 24 year old woman of Greek descent comes to the physician for a routine examination before planning a pregnancy. She feels well. Menses occur at regular 28 day intervals and last 4 days with moderate flow. She eats a varied diet including",
+   "text": "혈액·종양 혈액·종양 — 적혈구 수가 많은 소구성 빈혈 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 A 24 year old woman of Greek descent comes to the physician for a routine examination before planning a pregnancy. She feels well. Menses occur at regular 28 day intervals and last 4 days with moderate flow. She eats a varied diet including meat. Pulse is 74/min, and blood pressure is 112/70 mm Hg. Examination shows no pallor or splenomegaly. Laboratory studies show a hemoglobin concentration of 11.2 g/dL, mean corpuscular volume of 63 µm3, erythrocyte count of 5.9 million/mm3, and red cell distribution width of 13% (N 11.5 14.5). Serum ferritin concentration is 68 ng/mL. A peripheral blood smear shows microcytosis and target cells. Which of the following is the most appropriate next step in diagnosis? A. Bone marrow aspiration with iron stain B. Serum lead concentration C. Fecal occult blood testing D. Hemoglobin electrophoresis E. A 3 month trial of oral ferrous sulfate"
+  },
+  {
+   "id": "imaging-2026-0347",
+   "type": "imaging",
+   "unit": "",
+   "topic": "소화기",
+   "subtopic": "소화기·간담췌 — 심방세동 환자의 진찰 소견에 비해 심한 복통",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0347.md",
+   "snippet": "76세 여자가 2시간 전 갑자기 시작된 심한 배꼽 주위 통증으로 응급실에 왔다. 통증 직후 한 번 설사를 하였다. 심방세동이 있으나 출혈이 걱정되어 3개월 전부터 항응고제를 먹지 않았다. 혈압 148/88 mmHg, 맥박 118회/분(불규칙), 체온 36.9 ℃ 이다. 환자는 몹시 아파하며 몸을 뒤척이지만 배는 부드럽고 깊이 눌러도 압통이 경미하며 반발압통은 없다. 백혈구 15,800/mm³, 젖산 3.4 mmol/L, 혈청 ",
+   "text": "소화기 소화기·간담췌 — 심방세동 환자의 진찰 소견에 비해 심한 복통 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 76세 여자가 2시간 전 갑자기 시작된 심한 배꼽 주위 통증으로 응급실에 왔다. 통증 직후 한 번 설사를 하였다. 심방세동이 있으나 출혈이 걱정되어 3개월 전부터 항응고제를 먹지 않았다. 혈압 148/88 mmHg, 맥박 118회/분(불규칙), 체온 36.9 ℃ 이다. 환자는 몹시 아파하며 몸을 뒤척이지만 배는 부드럽고 깊이 눌러도 압통이 경미하며 반발압통은 없다. 백혈구 15,800/mm³, 젖산 3.4 mmol/L, 혈청 아밀라아제 128 U/L(참고치 < 100), 크레아티닌 0.9 mg/dL 이다. 심전도는 심방세동이며 ST 변화는 없다. 가장 적절한 검사는? A. 복부 초음파 B. 상부위장관 내시경 C. 복부 CT 혈관조영술 D. 복부 단순 X선 촬영 E. 대장내시경"
+  },
+  {
+   "id": "imaging-2026-0346",
+   "type": "imaging",
+   "unit": "",
+   "topic": "근골격·류마티스",
+   "subtopic": "류마티스·근골격 — 두통·턱 파행과 일과성 시력 저하",
+   "tags": [
+    "opendata",
+    "usmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0346.md",
+   "snippet": "A 72 year old woman comes to the emergency department because of a new right sided headache for 3 weeks and two episodes of transient blurred vision in the right eye, each lasting about 5 minutes, during the past day. She has pain in her ja",
+   "text": "근골격·류마티스 류마티스·근골격 — 두통·턱 파행과 일과성 시력 저하 opendata usmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 A 72 year old woman comes to the emergency department because of a new right sided headache for 3 weeks and two episodes of transient blurred vision in the right eye, each lasting about 5 minutes, during the past day. She has pain in her jaw when chewing that resolves with rest and has had morning stiffness of the shoulders and hips. She has hypertension treated with amlodipine. Temperature is 37.8°C (100°F), pulse is 84/min, and blood pressure is 142/84 mm Hg. The right temporal artery is tender and nodular with a decreased pulse. Visual acuity is 20/25 in both eyes, and funduscopic examination shows no abnormalities. Erythrocyte sedimentation rate is 92 mm/h, and serum C reactive protein concentration is 6.8 mg/dL (N <0.5). Hemoglobin concentration is 10.9 g/dL, and platelet count is 486,000/mm3. Which of the following is the most appropriate next step in management? A. Perform temporal artery biopsy before starting treatment B. Begin low dose prednisone, 15 mg daily C. Begin aspirin therapy alone D. Obtain MRI of the brain before starting treatment E. Begin high dose glucocorticoid therapy immediately"
+  },
+  {
+   "id": "imaging-2026-0345",
+   "type": "imaging",
+   "unit": "",
+   "topic": "응급·중환자",
+   "subtopic": "응급·중환자·외상 — 밀폐된 방에서 의식이 흐려진 채 발견된 환자",
+   "tags": [
+    "opendata",
+    "kmle_style"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0345.md",
+   "snippet": "45세 남자가 문을 닫은 방에서 숯불을 피워 놓고 잠들었다가 의식이 흐려진 채 가족에게 발견되어 응급실에 왔다. 가족에 따르면 발견 당시 부르면 대답하지 못했다. 혈압 128/80 mmHg, 맥박 112회/분, 호흡 22회/분이다. 맥박산소측정 산소포화도는 99 % 이다. 현재 눈을 뜨지만 지남력이 떨어지고 두통을 호소한다. 심전도는 동빈맥이다. 동맥혈 가스검사에서 카복시헤모글로빈 32 %, 젖산 4.1 mmol/L 이다. 비",
+   "text": "응급·중환자 응급·중환자·외상 — 밀폐된 방에서 의식이 흐려진 채 발견된 환자 opendata kmle_style 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 45세 남자가 문을 닫은 방에서 숯불을 피워 놓고 잠들었다가 의식이 흐려진 채 가족에게 발견되어 응급실에 왔다. 가족에 따르면 발견 당시 부르면 대답하지 못했다. 혈압 128/80 mmHg, 맥박 112회/분, 호흡 22회/분이다. 맥박산소측정 산소포화도는 99 % 이다. 현재 눈을 뜨지만 지남력이 떨어지고 두통을 호소한다. 심전도는 동빈맥이다. 동맥혈 가스검사에서 카복시헤모글로빈 32 %, 젖산 4.1 mmol/L 이다. 비재호흡마스크로 100 % 산소를 투여하기 시작하였다. 다음으로 가장 적절한 치료는? A. 아질산아밀 흡입 B. 고압산소치료 C. 100 % 산소를 유지하며 증상이 사라질 때까지 관찰 D. 메틸렌블루 정맥주사 E. 하이드록소코발라민 정맥주사"
+  },
+  {
+   "id": "imaging-2026-0344",
+   "type": "imaging",
+   "unit": "",
+   "topic": "호흡기",
+   "subtopic": "호흡기 — 덱사메타손 중에도 산소 요구량이 빠르게 느는 바이러스 폐렴",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "dx"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0344.md",
+   "snippet": "A 40 year old woman is admitted to the hospital because of fever, cough, and shortness of breath for 7 days. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. On admission, oxygen saturation is 90% on room air, and treatment with ",
+   "text": "호흡기 호흡기 — 덱사메타손 중에도 산소 요구량이 빠르게 느는 바이러스 폐렴 opendata usmle_style dx 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 A 40 year old woman is admitted to the hospital because of fever, cough, and shortness of breath for 7 days. A nasopharyngeal swab is positive for SARS CoV 2 by RT PCR. On admission, oxygen saturation is 90% on room air, and treatment with dexamethasone, remdesivir, and 3 L/min of oxygen by nasal cannula is begun. Over the next 24 hours, her oxygen requirement increases rapidly, and she now requires high flow nasal cannula oxygen at 40 L/min with an FiO2 of 0.6 to keep oxygen saturation at 93%. Temperature is 38.6°C (101.5°F), pulse is 108/min, respirations are 28/min, and blood pressure is 124/76 mm Hg. Crackles are heard at both lung bases. Leukocyte count is 7200/mm3 with lymphocytes 8%. Serum C reactive protein concentration is 14 mg/dL (N <0.5), and serum procalcitonin concentration is 0.1 ng/mL. Serum ALT activity is 32 U/L. A chest x ray is shown. In addition to continuing dexamethasone, which of the following is the most appropriate next step in pharmacotherapy? A. Tocilizumab B. High dose intravenous methylprednisolone C. Ceftriaxone and azithromycin D. COVID 19 convalescent plasma E. Ivermectin"
+  },
+  {
+   "id": "imaging-2026-0343",
+   "type": "imaging",
+   "unit": "",
+   "topic": "신경",
+   "subtopic": "신경 — 머리 외상 뒤 쉰 목소리와 삼킴 곤란",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "ct"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0343.md",
+   "snippet": "24세 여자가 5일 전 자동차 사고로 머리를 부딪친 뒤부터 쉰 목소리와 삼킴 곤란이 점점 심해져 왔다. 사고 직후 잠깐 의식을 잃었다가 회복했고 목 뒤가 계속 아프다. 혈압 118/74 mmHg, 맥박 82회/분, 체온 36.7 ℃ 이다. 의식은 명료하고 동공 크기와 대광반사는 양쪽 같다. 팔다리 근력과 감각은 정상이다. 물을 마시면 사레가 든다. 뇌 CT 검사에서 머리뼈 바닥을 뼈창으로 본 대후두공 높이 축상 영상은 그림과 ",
+   "text": "신경 신경 — 머리 외상 뒤 쉰 목소리와 삼킴 곤란 opendata kmle_style ct 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 24세 여자가 5일 전 자동차 사고로 머리를 부딪친 뒤부터 쉰 목소리와 삼킴 곤란이 점점 심해져 왔다. 사고 직후 잠깐 의식을 잃었다가 회복했고 목 뒤가 계속 아프다. 혈압 118/74 mmHg, 맥박 82회/분, 체온 36.7 ℃ 이다. 의식은 명료하고 동공 크기와 대광반사는 양쪽 같다. 팔다리 근력과 감각은 정상이다. 물을 마시면 사레가 든다. 뇌 CT 검사에서 머리뼈 바닥을 뼈창으로 본 대후두공 높이 축상 영상은 그림과 같다. 이 환자에서 함께 관찰될 가능성이 가장 높은 소견은? A. 혀를 내밀면 오른쪽으로 치우친다. B. 혀를 내밀면 왼쪽으로 치우친다. C. 오른쪽 이마 주름을 만들지 못한다. D. 오른쪽 눈을 바깥쪽으로 움직이지 못한다. E. 오른쪽 얼굴의 통각이 떨어진다."
+  },
+  {
+   "id": "imaging-2026-0342",
+   "type": "imaging",
+   "unit": "",
+   "topic": "병리·조직학",
+   "subtopic": "병리·조직 — 임신 중 빠르게 커진 자궁 종괴의 조직",
+   "tags": [
+    "opendata",
+    "kmle_style",
+    "histology"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0342.md",
+   "snippet": "35세 여자가 임신 중 빠르게 커진 자궁 종괴로 제왕절개 분만 때 종괴절제술을 받았으나, 분만 3개월 뒤 하복부 압박감과 불규칙한 질 출혈로 다시 왔다. 혈압 116/72 mmHg, 맥박 88회/분이다. 하복부에 단단한 종괴가 만져진다. 혈색소 10.2 g/dL, 혈청 β hCG 는 음성이다. 골반 MRI 에서 자궁 근층에 경계가 불규칙한 9 cm 종괴가 있어 자궁절제술을 하였다. 고배율에서 핵 이형성이 뚜렷하고 유사분열은 고",
+   "text": "병리·조직학 병리·조직 — 임신 중 빠르게 커진 자궁 종괴의 조직 opendata kmle_style histology 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 35세 여자가 임신 중 빠르게 커진 자궁 종괴로 제왕절개 분만 때 종괴절제술을 받았으나, 분만 3개월 뒤 하복부 압박감과 불규칙한 질 출혈로 다시 왔다. 혈압 116/72 mmHg, 맥박 88회/분이다. 하복부에 단단한 종괴가 만져진다. 혈색소 10.2 g/dL, 혈청 β hCG 는 음성이다. 골반 MRI 에서 자궁 근층에 경계가 불규칙한 9 cm 종괴가 있어 자궁절제술을 하였다. 고배율에서 핵 이형성이 뚜렷하고 유사분열은 고배율 10시야당 18개였다. 자궁 종괴의 헤마톡실린 에오신 염색 조직 소견은 그림과 같다. 진단은? A. 저등급 자궁내막 간질육종 B. 태반부위 영양막종양 C. 평활근육종 D. 적색변성을 동반한 평활근종 E. 세포성 평활근종"
+  },
+  {
+   "id": "imaging-2026-0341",
+   "type": "imaging",
+   "unit": "",
+   "topic": "내분비",
+   "subtopic": "내분비·대사 — 갑상샘 조직의 면역조직화학과 호르몬 조절",
+   "tags": [
+    "opendata",
+    "usmle_style",
+    "histology_ihc"
+   ],
+   "source": "의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610",
+   "confidence": "high",
+   "date": "2026-10-15",
+   "path": "content/imaging/2026/imaging-2026-0341.md",
+   "snippet": "A 61 year old man undergoes left thyroid lobectomy for a 3 cm thyroid nodule found incidentally on a neck CT performed after a minor car accident. He has no symptoms. Pulse is 72/min, and blood pressure is 128/78 mm Hg. Serum thyroid stimul",
+   "text": "내분비 내분비·대사 — 갑상샘 조직의 면역조직화학과 호르몬 조절 opendata usmle_style histology_ihc 의대_시험지_제작 오픈데이터 영상 세트 / 20261015T202355Z_일일영상_2026-10-16_10units_10q_45bc8610 A 61 year old man undergoes left thyroid lobectomy for a 3 cm thyroid nodule found incidentally on a neck CT performed after a minor car accident. He has no symptoms. Pulse is 72/min, and blood pressure is 128/78 mm Hg. Serum thyroid stimulating hormone concentration is 1.6 µU/mL (N 0.4 4.0), and serum calcium concentration is 9.4 mg/dL. Pathologic examination shows a follicular adenoma. A section of the uninvolved thyroid tissue is stained by immunohistochemistry with an antibody against thyroid peroxidase and is shown. Hormone production by the stained cell population is most directly stimulated by which of the following? A. Gastrin released from gastric antral G cells B. Thyrotropin releasing hormone acting directly on the gland C. Adrenocorticotropic hormone from the anterior pituitary D. Thyroid stimulating hormone from the anterior pituitary E. A rise in serum ionized calcium concentration"
   },
   {
    "id": "anatomy-daily-2026-10-15",
