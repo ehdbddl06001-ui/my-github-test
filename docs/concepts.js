@@ -4431,6 +4431,7 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
+   "kmle-2026-1441",
    "usmle-2026-0046"
   ],
   "hasErrors": false
@@ -17080,7 +17081,8 @@ window.MEDKOS_CONCEPTS = {
    }
   ],
   "questions": [
-   "imaging-2026-0072"
+   "imaging-2026-0072",
+   "kmle-2026-1467"
   ],
   "hasErrors": false
  },
@@ -46931,7 +46933,8 @@ window.MEDKOS_CONCEPTS = {
   ],
   "questions": [
    "imaging-2026-0263",
-   "kmle-2026-1157"
+   "kmle-2026-1157",
+   "kmle-2026-1463"
   ],
   "hasErrors": false
  },
