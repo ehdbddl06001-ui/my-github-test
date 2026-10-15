@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3710,
+  "total": 3711,
   "byType": {
    "kmle": 1440,
+   "anatomy": 842,
    "usmle": 198,
-   "anatomy": 841,
    "paper": 774,
    "imaging": 339,
    "concept": 101,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 841,
+   "Anatomy": 842,
    "Cardiology": 257,
    "Nephrology": 205,
    "Infectious Disease": 188,
@@ -78,7 +78,7 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2580,
+   "high": 2581,
    "medium": 1080,
    "low": 50
   },
@@ -697,6 +697,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-1441.md",
    "snippet": "67세 남자가 며칠 전부터 가슴이 두근거린다며 왔다. 언제 시작했는지는 정확히 모르겠다고 한다. 고혈압과 당뇨병으로 약을 먹고 있다. 어지럼·흉통·숨참은 없고 의식은 명료하다. 폐음은 깨끗하고 다리 부종은 없다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아데노신 급속 정맥 주사 B. 즉시 동기화 전기 심율동전환 C. 정맥 아미오다론으로 약물 율동전환 D. 항응고제 시작과 경구 베타",
    "text": "Cardiology Several Days of Regular Rapid Palpitations of Unknown Onset in a Diabetic Man atrial-flutter rate-control anticoagulation cardioversion-timing ecg KMLE 2026 / Claude 67세 남자가 며칠 전부터 가슴이 두근거린다며 왔다. 언제 시작했는지는 정확히 모르겠다고 한다. 고혈압과 당뇨병으로 약을 먹고 있다. 어지럼·흉통·숨참은 없고 의식은 명료하다. 폐음은 깨끗하고 다리 부종은 없다. 심전도는 그림과 같고, 활력징후와 검사 결과는 자료와 같다. 가장 적절한 처치는? A. 아데노신 급속 정맥 주사 B. 즉시 동기화 전기 심율동전환 C. 정맥 아미오다론으로 약물 율동전환 D. 항응고제 시작과 경구 베타차단제 E. 응급 전극도자 절제술 규칙적인 148회/분과 톱니 모양 조동파는 2:1 전도 심방조동이다. 혈역학적으로 안정되어 있고 시작 시점을 몰라 48시간을 넘었을 수 있으므로, 항응고 없이 율동전환하지 않고 심박수 조절과 항응고를 먼저 한다."
+  },
+  {
+   "id": "anatomy-daily-2026-10-16",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-16",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-16",
+   "path": "content/anatomy/daily/2026-10-16.md",
+   "snippet": "오늘의 학습 (2026 10 16 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 36일 · Tagging 2까지 3일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-16 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 16 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 36일 · Tagging 2까지 3일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0211",
