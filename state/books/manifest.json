@@ -596,11 +596,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "03732c0f83fa97335458",
-   "version": 20,
-   "date": "2026-10-14",
+   "hash": "e371c1b926f9f99721db",
+   "version": 21,
+   "date": "2026-10-15",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 37,
+   "pages": 39,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -642,93 +642,93 @@
     "cn.rheum.scleroderma-renal-crisis.ace-inhibitor": {
      "title": "전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제",
      "page": 13,
-     "concept_hash": "bdf8d84e7df7178b",
-     "concept_version": 1
+     "concept_hash": "53aaba9eb3ce0281",
+     "concept_version": 2
     },
     "cn.rheum.sjogren.sicca-workup": {
      "title": "쇼그렌증후군 — 건조 증상은 항체·생검으로 가린다",
-     "page": 14,
+     "page": 15,
      "concept_hash": "bfcc1d0468d1fa47",
      "concept_version": 1
     },
     "cn.rheum.axial-spa.nsaid-failure-biologic": {
      "title": "축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제",
-     "page": 16,
+     "page": 17,
      "concept_hash": "1924d396b0fdfb26",
      "concept_version": 3
     },
     "cn.rheum.cryoglobulinemic-vasculitis.hcv-daa": {
      "title": "HCV 크리오글로불린혈증 혈관염 — 먼저 바이러스를 없앤다",
-     "page": 18,
+     "page": 19,
      "concept_hash": "0a95671a7fc0c818",
      "concept_version": 3
     },
     "cn.rheum.iga-vasculitis.diagnosis": {
-     "title": "IgA혈관염(헤노흐-쇤라인) — 혈소판이 정상인 만져지는 자반이 관절·배·콩팥과 함께 오면 임상으로 진단한다",
+     "title": "IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단",
      "page": 21,
-     "concept_hash": "6e75ba4f5b92dec3",
-     "concept_version": 2
+     "concept_hash": "b85f82c4ac8f8ba7",
+     "concept_version": 3
     },
     "cn.rheum.giant-cell-arteritis.steroids-before-biopsy": {
-     "title": "거대세포동맥염 — 시력 증상이 있으면 생검을 기다리지 않고 고용량 스테로이드부터, 생검은 그 뒤 2주 안에",
-     "page": 23,
-     "concept_hash": "8ac8b42d909e5ed1",
-     "concept_version": 1
+     "title": "거대세포동맥염 — 의심되면 생검 전에 스테로이드부터",
+     "page": 24,
+     "concept_hash": "36db8f06087016bc",
+     "concept_version": 2
     },
     "cn.rheum.polyarteritis-nodosa.tissue-diagnosis": {
-     "title": "결절다발동맥염 — 진단 혈청검사가 없으니 확진은 침범 조직 생검, 못 하면 도관 혈관조영의 미세동맥류",
-     "page": 25,
-     "concept_hash": "d7b76191c2ec0df1",
-     "concept_version": 1
+     "title": "결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검",
+     "page": 26,
+     "concept_hash": "e71e27053a5552c2",
+     "concept_version": 2
     },
     "cn.rheum.behcet.clinical-diagnosis": {
      "title": "베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단",
-     "page": 27,
+     "page": 28,
      "concept_hash": "30b6e60570924c5a",
      "concept_version": 1
     },
     "cn.rheum.dermatomyositis.malignancy-screening": {
      "title": "성인 피부근염 — 진단 뒤 다음 검사는 암 선별",
-     "page": 28,
+     "page": 29,
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 30,
+     "page": 31,
      "concept_hash": "0ca1331142c86acb",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 31,
+     "page": 32,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 33,
+     "page": 34,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 35,
+     "page": 36,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 36,
+     "page": 38,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "3a6f91f0a490db53862e17a4ac3ce499",
-    "version": 20,
-    "uploaded": "2026-10-14T10:32:03+09:00"
+    "md5": "d83e91a0c4785a8780ec3d1ca2cc26b2",
+    "version": 21,
+    "uploaded": "2026-10-15T09:48:22+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -750,12 +750,14 @@
     "MedKOS_학습서_류마티스내과_v17_2026-10-11.pdf",
     "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf",
     "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf",
-    "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf"
+    "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf",
+    "MedKOS_학습서_류마티스내과_v21_2026-10-15.pdf"
    ],
    "changes": [
-    "내용 갱신: 항인지질항체증후군 — 혈전·임신 이환에 지속 항체 (정리본 v1 → v2)",
-    "내용 갱신: 축성 척추관절염 — NSAID 둘 실패 뒤엔 TNF·IL-17 억제제 (정리본 v2 → v3)",
-    "새 단원: 베체트병 — 재발 구강궤양에 둘을 더해 임상으로 진단"
+    "내용 갱신: 전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제 (정리본 v1 → v2)",
+    "내용 갱신: IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단 (정리본 v2 → v3)",
+    "내용 갱신: 거대세포동맥염 — 의심되면 생검 전에 스테로이드부터 (정리본 v1 → v2)",
+    "내용 갱신: 결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검 (정리본 v1 → v2)"
    ]
   },
   "호흡기내과": {
@@ -1241,13 +1243,13 @@
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "4a980504fdde7cd1bb057f4ce817d282",
+   "md5": "90abffc43dedf10f2519a4e384e89349",
    "version": null,
-   "uploaded": "2026-10-14T10:32:03+09:00"
+   "uploaded": "2026-10-15T09:48:22+09:00"
   }
  },
- "updated": "2026-10-14"
+ "updated": "2026-10-15"
 }
