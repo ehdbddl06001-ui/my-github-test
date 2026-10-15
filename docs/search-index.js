@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-14",
+ "generated": "2026-10-15",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3671,
+  "total": 3678,
   "byType": {
    "usmle": 198,
    "anatomy": 841,
+   "paper": 774,
    "kmle": 1408,
    "imaging": 339,
    "concept": 101,
-   "paper": 767,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 841,
-   "Cardiology": 254,
-   "Nephrology": 202,
-   "Infectious Disease": 185,
-   "Pediatrics": 170,
+   "Cardiology": 255,
+   "Nephrology": 203,
+   "Infectious Disease": 186,
+   "Pediatrics": 171,
    "Obstetrics & Gynecology": 123,
-   "Hematology-Oncology": 112,
-   "Pathology": 112,
+   "Hematology-Oncology": 113,
+   "Pathology": 113,
    "Psychiatry": 106,
    "Rheumatology": 106,
    "Neurology": 105,
@@ -32,8 +32,8 @@ window.MEDKOS_INDEX = {
    "Endocrinology": 93,
    "Dermatology": 92,
    "Orthopedics": 92,
+   "Surgery": 92,
    "Gastroenterology": 91,
-   "Surgery": 91,
    "Ophthalmology": 90,
    "Pulmonology": 90,
    "Hematology": 85,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2548,
-   "medium": 1073,
+   "medium": 1080,
    "low": 50
   },
   "tagCount": 4789
@@ -230,6 +230,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-10-15.md",
    "snippet": "오늘의 학습 (2026 10 15 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 35일 · Tagging 2까지 4일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-10-15 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 15 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 35일 · Tagging 2까지 4일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0774",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Global spine journal",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0774_the_impact_of_hip_osteoarthritis_on_patient_reported_outcome.md",
+   "snippet": "Title The Impact of Hip Osteoarthritis on Patient Reported Outcomes Following Lumbar Fusion Authors Farooqi Ali, Mathew Joshua, Ng Mitchell, Miloh Roy, Berthiaume Emily, Lee Yulia, Baek Gregorio, Green William, et al. Journal / DOI Global s",
+   "text": "Surgery scraped pubmed PubMed / Global spine journal Title The Impact of Hip Osteoarthritis on Patient Reported Outcomes Following Lumbar Fusion Authors Farooqi Ali, Mathew Joshua, Ng Mitchell, Miloh Roy, Berthiaume Emily, Lee Yulia, Baek Gregorio, Green William, et al. Journal / DOI Global spine journal · DOI: 10.1177/21925682261496527 · PMID: 42874073 https://pubmed.ncbi.nlm.nih.gov/42874073/ Abstract Study DesignRetrospective Cohort Study.ObjectivesWith an aging population, the burden of concomitant joint disease continues to rise. The effects of hip OA on lumbar fusion outcomes are underexplored. Therefore, this study aimed to: (1) describe demographic differences between Osteoarthritis (OA) patients and those without OA; (2) assess perioperative differences; and (3) compare patient reported outcome measures (PROMs).MethodsA retrospective review of a single academic tertiary center was performed (2016 2025). Patients undergoing lumbar fusion with isolated hip OA or no diagnosis of OA, and 12 month ODI scores were included. Patients with prior arthroplasty were excluded. Kellgren Lawrence scores were collected through chart review or graded on x ray when missing. Patients were stratified based on the presence of Hip OA. Bivariate comparison was performed as appropriate. Multivariable regressions were performed to identify independent predictors of PROMs.ResultsA total of 271 patients were included (No OA: 229; OA: 42). There were significant differences between groups regarding age (71.8 versus 60.2 years, P<0.001), ethnicity (P=0.025), and smoking status (P<0.001). Most patients with OA had moderate OA based on KL grading, with grade 3 being most common (35.7%). On bivariate analysis, there were no differences in PROMs or improvement at any timepoint except Δ6month VASback (P=0.024). Multivariable regression analysis showed that the presence of hip OA was not an independent predictor of PROMs or improvement from baseline (all P 0.05).ConclusionsThese findings suggest that concomitant hip OA may not independently impact postoperative recovery and should not be considered a contraindication to lumbar fusion. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0773",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of visualized experiments : JoVE",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0773_impact_of_a_dynamic_visualized_pain_assessment_tool_on_pedia.md",
+   "snippet": "Title Impact of a Dynamic Visualized Pain Assessment Tool on Pediatric Pain Management: A Stepped Wedge Cluster Randomized Trial Authors Wang Yue, Wu Qiong, Wang Yusi Journal / DOI Journal of visualized experiments : JoVE · DOI: 10.3791/710",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of visualized experiments : JoVE Title Impact of a Dynamic Visualized Pain Assessment Tool on Pediatric Pain Management: A Stepped Wedge Cluster Randomized Trial Authors Wang Yue, Wu Qiong, Wang Yusi Journal / DOI Journal of visualized experiments : JoVE · DOI: 10.3791/71023 · PMID: 42872766 https://pubmed.ncbi.nlm.nih.gov/42872766/ Abstract Effective pediatric pain management relies on accurate assessment; however, current behavioral scales are limited by observer subjectivity and fail to capture dynamic fluctuations. The primary goal of this protocol is to detail the implementation and evaluation of a dynamic visualized pain assessment tool, providing a standardized methodology to transition nursing practice from experience based estimation to data driven precision. Using a stepped wedge cluster randomized trial design across five clinical wards, the study enrolled 15 infants and analyzed 45 video segments across three clinical contexts: baseline, acute procedural pain, and postoperative recovery. The system captured high definition facial video synchronized with bedside physiological monitoring to generate real time pain trajectory curves and trend based alerts. Generalized linear mixed models showed that the tool reduced nursing response latency from 15.4 to 6.7 min (P < 0.001) and increased assessment consistency (intraclass correlation coefficient [ICC]: 0.71 0.93). Concurrently, pediatric satisfaction scores rose, and parental anxiety levels decreased. These findings suggest that dynamic visualization may improve clinical efficiency and patient outcomes through timely, objective decision support. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0772",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0772_deeplnm_a_multimodal_model_for_predicting_lymph_node_metasta.md",
+   "snippet": "Title DeepLNM: A Multimodal Model for Predicting Lymph Node Metastasis in Colorectal Cancer Authors Zhang Zhengyu, Lu Chengyu, Wang Zhen, Cen Zhijian, Zhou Yangshu, Li Danyi, Xie Qi, Li Bingbing, et al. Journal / DOI Advanced science (Weinh",
+   "text": "Pathology scraped pubmed PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany) Title DeepLNM: A Multimodal Model for Predicting Lymph Node Metastasis in Colorectal Cancer Authors Zhang Zhengyu, Lu Chengyu, Wang Zhen, Cen Zhijian, Zhou Yangshu, Li Danyi, Xie Qi, Li Bingbing, et al. Journal / DOI Advanced science (Weinheim, Baden Wurttemberg, Germany) · DOI: 10.1002/advs.77860 · PMID: 42873913 https://pubmed.ncbi.nlm.nih.gov/42873913/ Abstract Accurate assessment of lymph node metastasis (LNM) is critical for prognostic stratification and treatment selection in colorectal cancer (CRC), yet imaging and routine pathology can yield false negative/false positive results. We propose DeepLNM, a multi center foundation model for LNM prediction in CRC, evaluated with retrospective, external, prospective, and user study evidence. A multimodal dataset was assembled from three hospitals, with matched hematoxylin and eosin (H&E) stained whole slide images (WSI), CT scans, and text. DeepLNM achieved a mean AUC of 0.922 in the internal cohort and AUCs of 0.872 and 0.848 in two external cohorts. In a prospective cohort from a registered clinical trial (NCT07239063), DeepLNM remained robust (AUC = 0.845). In a user study, DeepLNM improved diagnostic accuracy, especially for junior pathologists (95.0% 97.3%), while reducing diagnostic time and increasing confidence. To explore the model's generalizability, it was further validated in a gastric cancer cohort, achieving an AUC of 0.793. Finally, DeepLNM identified histopathological features associated with LNM, addressing the \"black box\" concern of deep learning. Together, these results position DeepLNM as a clinically preliminarily validated multimodal model for predicting LNM status in CRC, potentially facilitating the clinical translation of AI pathology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0771",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annual review of pathology",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0771_time_to_target_sarcomas_lessons_from_the_tumor_immune_microe.md",
+   "snippet": "Title TIME to Target Sarcomas: Lessons from the Tumor Immune Microenvironment Authors Hurley Rachel M, Mohei Hesham, Haldar Malay Journal / DOI Annual review of pathology · DOI: 10.1146/annurev pathmechdis 042624 121246 · PMID: 42874005 htt",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Annual review of pathology Title TIME to Target Sarcomas: Lessons from the Tumor Immune Microenvironment Authors Hurley Rachel M, Mohei Hesham, Haldar Malay Journal / DOI Annual review of pathology · DOI: 10.1146/annurev pathmechdis 042624 121246 · PMID: 42874005 https://pubmed.ncbi.nlm.nih.gov/42874005/ Abstract The tumor immune microenvironment (TIME) has emerged as a crucial regulator of antitumor immune responses with important therapeutic, prognostic, and predictive implications. Despite the success of immunotherapies in select solid tumors, notably melanoma and non small cell lung cancer, their impact in soft tissue sarcomas (STSs) is limited, often attributed to an immune cold TIME passively driven by low neoantigen burden. Herein, we review the current understanding of the STS TIME, its variability across STS subtypes, and its implications for STS immunotherapy. We propose that the prevailing view of STSs as passively immune cold is incomplete and that active tumor driven immune suppression is likely underappreciated. Distinguishing active from passive immune escape and understanding its mechanistic underpinnings will be important to rationally design effective TIME targeted therapies in STSs and to serve as a paradigm for therapeutic interventions in other immune cold tumors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0770",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical investigation",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0770_sglt1_2_inhibitor_sotagliflozin_but_not_sglt2_selective_inhi.md",
+   "snippet": "Title SGLT1/2 inhibitor sotagliflozin, but not SGLT2 selective inhibitor empagliflozin, attenuates platelet activation and thrombosis Authors Stanger Livia, Goerger Krista, Zhang Xu, Yalavarthi Pooja, Rickenberg Andrew, Yamaguchi Adriana, F",
+   "text": "Nephrology scraped pubmed PubMed / The Journal of clinical investigation Title SGLT1/2 inhibitor sotagliflozin, but not SGLT2 selective inhibitor empagliflozin, attenuates platelet activation and thrombosis Authors Stanger Livia, Goerger Krista, Zhang Xu, Yalavarthi Pooja, Rickenberg Andrew, Yamaguchi Adriana, Flores Nascimento Mariane, Kilgore Ashleigh, et al. Journal / DOI The Journal of clinical investigation · DOI: 10.1172/JCI201899 · PMID: 42873976 https://pubmed.ncbi.nlm.nih.gov/42873976/ Abstract As rates of type 2 diabetes mellitus (T2DM) have risen, comorbidities of T2DM and cardiovascular disease (CVD) have similarly increased. The adoption of sodium glucose cotransporter (SGLT) 2 inhibitors as a treatment for T2DM has provided an effective means of decreasing renal glucose reabsorption. In recent clinical trials, sotagliflozin, the first FDA approved inhibitor of both isoforms of SGLT (SGLT1 and SGLT2), demonstrated a reduction in myocardial infarction and stroke in patients with T2DM at high cardiovascular risk. The cardiovascular protective effect of sotagliflozin compared to the SGLT2 selective inhibitor, empagliflozin, was investigated by evaluating effects on platelet activation and thrombus formation. Employing ex vivo models using blood from healthy donors or T2DM patients, and in vivo mouse models, we demonstrate an inhibitory effect on platelet activity and thrombus formation with sotagliflozin, while empagliflozin has minor to no effects. Further, no impact on hemostasis was observed with sotagliflozin. Finally, a platelet specific deletion of SGLT1 via Slc5a1fl/fl Gp1ba Cre⁺ mice resulted in reduced platelet integrin activation and thrombus formation. This study provides insight into a potential explanation for the cardiovascular protection conferred by sotagliflozin observed in patients with T2DM at risk of an ischemic event and reveals an added benefit to SGLT2 selective inhibitors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0769",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science translational medicine",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0769_innovative_roadmaps_for_sustainable_antimicrobial_resistance.md",
+   "snippet": "Title Innovative roadmaps for sustainable antimicrobial resistance interventions Authors Gasperini Gianmarco, Paccani Silvia Rossi, O'Dwyer Karen, Aanensen David M, Armstrong James Darius, Scorza Francesco Berlanda, Bloom David E, Burns Chr",
+   "text": "Infectious Disease scraped pubmed PubMed / Science translational medicine Title Innovative roadmaps for sustainable antimicrobial resistance interventions Authors Gasperini Gianmarco, Paccani Silvia Rossi, O'Dwyer Karen, Aanensen David M, Armstrong James Darius, Scorza Francesco Berlanda, Bloom David E, Burns Christopher J, et al. Journal / DOI Science translational medicine · DOI: 10.1126/scitranslmed.aef8416 · PMID: 42873894 https://pubmed.ncbi.nlm.nih.gov/42873894/ Abstract Integrated strategies to combat antibiotic resistant bacteria and fungi require innovative commercial models, new discovery platforms, standardized genomic surveillance, and streamlined clinical trials. Machine learning and other new technologies will accelerate the development of diagnostics and therapeutics (small molecules, antibodies, and vaccines) to combat antimicrobial resistance. Next generation approaches should align societal impact with investment to ensure rapid global public health gains. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0768",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-10-14",
+   "path": "content/papers/2026/2026-10-14_paper-2026-0768_pulse_pressure_in_heart_failure_easy_to_assess_not_so_easy_t.md",
+   "snippet": "Title Pulse pressure in heart failure easy to assess, not so easy to understand Authors Weber Thomas, Haring Bernhard, Protogerou Athanase Journal / DOI European journal of heart failure · DOI: 10.1093/ejhf/xuag319 · PMID: 42874075 https://",
+   "text": "Cardiology scraped pubmed PubMed / European journal of heart failure Title Pulse pressure in heart failure easy to assess, not so easy to understand Authors Weber Thomas, Haring Bernhard, Protogerou Athanase Journal / DOI European journal of heart failure · DOI: 10.1093/ejhf/xuag319 · PMID: 42874075 https://pubmed.ncbi.nlm.nih.gov/42874075/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-1440",
@@ -15480,8 +15599,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/urology/cn.uro.testis-histology.leydig-lh-target.md",
-   "snippet": "정의 고환은 두 구획으로 이루어진다. 세정관 안 에서는 세르톨리세포가 생식세포를 둘러싸 분열·분화·성숙을 돕고, 세정관 사이 간질 에서는 간질(Leydig)세포가 테스토스테론을 만든다. 두 세포는 뇌하수체의 LH·FSH 통제를 받는다 [[harrison 21: 391장 p.3006]]. 이 정리본의 목표는 조직 사진에서 양성 세포의 위치로 세포를 정하고 , 그 세포가 어느 호르몬의 표적인지 (LH vs FSH), 그리고 그 세",
-   "text": "Urology 정의 고환은 두 구획으로 이루어진다. 세정관 안 에서는 세르톨리세포가 생식세포를 둘러싸 분열·분화·성숙을 돕고, 세정관 사이 간질 에서는 간질(Leydig)세포가 테스토스테론을 만든다. 두 세포는 뇌하수체의 LH·FSH 통제를 받는다 [[harrison 21: 391장 p.3006]]. 이 정리본의 목표는 조직 사진에서 양성 세포의 위치로 세포를 정하고 , 그 세포가 어느 호르몬의 표적인지 (LH vs FSH), 그리고 그 세포가 무엇을 분비하는지 (테스토스테론·INSL3 vs 인히빈 B·AMH)를 가르는 것이다. 병태생리 정상 축. 시상하부 GnRH 는 약 2시간마다 박동으로 나와 뇌하수체 LH·FSH 의 박동을 만든다. LH 는 주로 간질세포에 작용해 테스토스테론 합성을 자극하고, FSH 는 세르톨리세포에 작용해 정자형성과 인히빈 B 생산을 조절하며, 인히빈 B 는 뇌하수체 FSH 를 선택적으로 누른다. 테스토스테론과 에스트라디올은 시상하부·뇌하수체에 음성 되먹임을 건다 [[harrison 21: 391장 p.3007]]. 간질세포 안에서. LH 는 7회 막관통 G 단백 결합 수용체에 붙어 cAMP 경로를 켜고, StAR 단백과 여러 스테로이드 합성 효소를 유도한다. 테스토스테론 합성의 속도제한 단계는 StAR 가 세포 안 콜레스테롤을 미토콘드리아 내막으로 옮기는 과정이고, 미토콘드리아에서 CYP11A1 이 프레그네놀론을 만든 뒤 CYP17A1(17α 수산화효소·17,20 분해효소)을 거친다. LH 수용체 변이는 간질세포 형성저하·무형성을 일으킨다 — 이 축이 간질세포의 발달과 기능에 필수라는 뜻이다 [[harrison 21: 391장 p.3007]]. 두 구획은 이어져 있다. 테스토스테론은 고환 안에서 매우 높은 농도에 이르러 정자형성에 필수이고, FSH 와 테스토스테론이 함께 감수분열과 정자 방출을 진행시킨다 [[harrison 21: 391장 p.3009]]. 그래서 두 축을 따로 외우되, 정자형성은 둘 다 필요하다는 점을 같이 기억한다. 태아기. SRY 가 세르톨리세포 분화를 유도하고, 세르톨리세포는 뮐러관을 퇴행시키는 MIS(=AMH)를 만든다. 태아 간질세포는 테스토스테론으로 볼프관과 외생식기의 남성화를 이끌고, INSL3 로 고환의 복강 내 하강을 돕는다 [[harrison 21: 391장 p.3006]]. 기전에서 소견으로 간질세포 표지(INSL3·스테로이드 합성 효소)로 염색한 사진 : 세정관 안(생식세포·세르톨리세포)은 음성, 관 사이 결합조직의 다각형 세포 무리만 양성이다. INSL3 는 간질세포가 만드는 펩타이드라 이 양상이 나온다 [[harrison 21: 391장 p.3006]] [[?hpa insl3]]. 세르톨리세포를 보는 사진 : 양성 세포가 세정관 기저막 위에 서서 생식세포 사이로 뻗고, 간질은 음성이다. 호르몬 검사 : 간질세포 부전 → 테스토스테론↓·LH↑(일차) [[harrison 21: 391장 p.3010]]. 세정관만 다치면 인히빈 B 가 줄어 FSH 만 선택적으로 오른다 [[harrison 21: 391장 p.3009]]. 양측 고환절제는 일차 고환 부전의 원인이다 — 원래 문항의 환자는 수술 뒤 LH 가 오른다 [[harrison 21: 391장 p.3020]]. 감별 LH vs FSH : 표적 위치(관 사이 vs 관 안)로 가른다 [[harrison 21: 391장 p.3007]]. 표적 vs 분비 : AMH·인히빈 B 는 세르톨리세포의 분비 산물이다 — 「무엇의 표적인가」를 묻는 문항의 답이 될 수 없다. 프롤락틴 : 고프롤락틴혈증은 성선자극호르몬이 낮은 시상하부·뇌하수체 원인이다 [[harrison 21: 391장 p.3012]]. 간질세포를 직접 자극하는 영양호르몬이 아니다. 일차 vs 이차 성선기능저하증 : LH 수치로 가른다(아래 기준·표). 검사 조직 : 세정관 윤곽(기저막)을 먼저 찾고 양성 세포가 관 안인지 관 사이인지 본다. 음성 구획도 소견이다. 혈액 : 테스토스테론이 낮을 때 LH 가 높으면 일차, 낮거나 부적절하게 정상이면 이차 [[harrison 21: 391장 p.3010]]. LH 는 1–3시간마다 박동하므로 한 번 값에 기대지 않는다 [[harrison 21: 391장 p.3010]]. 치료 이 정리본의 범위는 세포–호르몬 연결이지만, 축을 알면 치료 선택이 따라온다. 성인기에 생긴 성선자극호르몬 결핍에서는 hCG 나 재조합 LH 가 LH 수용체를 통해 간질세포를 자극해 FSH 없이도 정자형성을 다시 시작시킬 수 있다 [[harrison 21: 391장 p.3009]]. 원래 문항처럼 전립선암의 안드로겐 차단을 위해 양측 고환절제를 하면 테스토스테론의 주된 공급원(순환 테스토스테론의 95 % 가 고환 유래)이 사라진다 [[harrison 21: 391장 p.3007]]. 재평가 : 치료·수술 뒤에는 테스토스테론과 LH 를 함께 보아 결함 위치를 다시 확인한다. 권고와 예외 「위치 → 세포 → 수용체」 순서로 읽는다: 관 사이 = 간질세포 = LH, 관 안 = 세르톨리세포 = FSH. 「표적」과 「분비」를 섞지 않는다: 세르톨리세포는 FSH 의 표적이면서 인히빈 B·AMH 를 분비한다. LH 로 성선기능저하증의 위치를 가르되, 박동 분비 때문에 반복 측정한다. INSL3 의 조직 분포(간질세포 강양성·세정관 음성)는 Human Protein Atlas 주석을 직접 열지 못해 문항 해설의 인용만 남겼다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 391장 p.3006~3010, p.3012, p.3020) (심화) 왜 두 세포에 두 호르몬인가 LH 와 FSH 는 같은 GnRH 박동에 반응하지만, 고환은 두 결과물 — 전신으로 나가는 테스토스테론과 관 안에서 쓰이는 정자 — 을 따로 조절해야 한다. 간질세포–LH–테스토스테론 고리는 테스토스테론·에스트라디올의 되먹임으로, 세르톨리세포–FSH–인히빈 B 고리는 인히빈 B 의 선택적 FSH 억제로 닫힌다 [[harrison 21: 391장 p.3007]]. 그래서 세정관만 다친 환자는 테스토스테론과 LH 가 정상인데 FSH 만 오르는 「분리된」 양상을 보인다 [[harrison 21: 391장 p.3009]]. 시험은 이 분리를 사진(어느 구획이 양성인가)과 호르몬 수치(어느 되먹임이 끊겼나) 두 방향에서 묻는다."
+   "snippet": "판단 — 위치가 세포를, 세포가 호르몬을 정한다 고환은 두 구획이다. 세정관 안 에서는 세르톨리세포가 생식세포를 둘러싸 분열·분화·성숙을 돕고, 세정관 사이 간질 에서는 간질(Leydig)세포가 테스토스테론을 만든다. 두 세포는 뇌하수체 LH·FSH 의 통제를 받는다 [[harrison 21: 391장 p.3006]]. LH 는 주로 간질세포, FSH 는 세르톨리세포에 작용한다 [[harrison 21: 391장 p.3007]",
+   "text": "Urology 판단 — 위치가 세포를, 세포가 호르몬을 정한다 고환은 두 구획이다. 세정관 안 에서는 세르톨리세포가 생식세포를 둘러싸 분열·분화·성숙을 돕고, 세정관 사이 간질 에서는 간질(Leydig)세포가 테스토스테론을 만든다. 두 세포는 뇌하수체 LH·FSH 의 통제를 받는다 [[harrison 21: 391장 p.3006]]. LH 는 주로 간질세포, FSH 는 세르톨리세포에 작용한다 [[harrison 21: 391장 p.3007]] — 사진 문항은 ① 위치로 세포를 정하고 ② 그 세포의 표적 호르몬을 붙이고 ③ 질문이 표적을 묻는지 분비 산물을 묻는지 확인한다. 「표적」과 「분비」를 섞지 않는다: 세르톨리세포는 FSH 의 표적이면서 인히빈 B·AMH 를 분비한다 [[harrison 21: 391장 p.3006]]. 기전 — GnRH 박동에서 두 세포의 두 고리로 시상하부 GnRH 는 약 2시간마다 박동으로 나와 LH·FSH 의 박동을 만든다. LH 는 간질세포의 테스토스테론 합성을, FSH 는 세르톨리세포의 정자형성 지원과 인히빈 B 생산을 조절하고, 인히빈 B 는 FSH 를 선택적으로 누른다. 테스토스테론·에스트라디올은 시상하부·뇌하수체에 음성 되먹임을 건다 [[harrison 21: 391장 p.3007]]. 간질세포 안 : LH 가 7회 막관통 G 단백 결합 수용체 → cAMP → StAR·스테로이드 합성 효소 유도. 속도제한 단계는 StAR 의 콜레스테롤 미토콘드리아 내막 수송이고, CYP11A1(프레그네놀론) → CYP17A1(17α 수산화효소·17,20 분해효소)을 거친다. LH 수용체 변이는 간질세포 형성저하·무형성을 일으킨다 [[harrison 21: 391장 p.3007]]. 두 구획은 이어져 있다 : 고환 안 고농도 테스토스테론은 정자형성에 필수이고, FSH 와 함께 감수분열과 정자 방출을 진행시킨다 [[harrison 21: 391장 p.3009]]. 태아기 : SRY 가 세르톨리세포 분화를 유도하고, 세르톨리세포는 뮐러관을 퇴행시키는 MIS(=AMH)를 만든다. 태아 간질세포는 테스토스테론으로 볼프관·외생식기를 남성화하고, INSL3 로 고환의 복강 내 하강을 돕는다 [[harrison 21: 391장 p.3006]]. 가르는 소견 — 사진의 위치와 호르몬 양상 간질세포 표지(INSL3·스테로이드 합성 효소)로 염색한 사진 : 세정관 안(생식세포·세르톨리세포)은 음성, 관 사이 결합조직의 다각형 세포 무리만 양성이다. INSL3 는 간질세포가 만드는 펩타이드라 이 양상이 나온다 [[harrison 21: 391장 p.3006]] [[?hpa insl3]]. 「관 안이 비었다」는 음성 소견도 세르톨리세포를 배제하는 근거다. 세르톨리세포를 보는 사진 : 양성 세포가 세정관 기저막 위에 서서 생식세포 사이로 뻗고, 간질은 음성이다. 프롤락틴 : 고프롤락틴혈증은 성선자극호르몬이 낮은 시상하부·뇌하수체 원인이다 [[harrison 21: 391장 p.3012]] — 간질세포를 직접 자극하는 영양호르몬이 아니다. 호르몬 검사 : 테스토스테론이 낮을 때 LH 가 높으면 일차(고환), 낮거나 부적절하게 정상이면 이차 [[harrison 21: 391장 p.3010]]. 세정관만 다치면 인히빈 B 가 줄어 FSH 만 선택적으로 오른다 [[harrison 21: 391장 p.3009]]. 양측 고환절제는 일차 고환 부전의 원인이다 — 원래 문항의 환자는 수술 뒤 LH 가 오른다 [[harrison 21: 391장 p.3020]]. 정상·한 번 값의 한계 : LH 는 1–3시간마다 박동하므로 한 번 값에 기대지 말고 반복 측정한다 [[harrison 21: 391장 p.3010]]. 권고와 예외 「위치 → 세포 → 수용체」 순서로 읽는다: 관 사이 = 간질세포 = LH, 관 안 = 세르톨리세포 = FSH. 축을 알면 치료가 따라온다: 성인기에 생긴 성선자극호르몬 결핍에서는 hCG 나 재조합 LH 가 LH 수용체를 통해 간질세포를 자극해 FSH 없이도 정자형성을 다시 시작시킬 수 있다 [[harrison 21: 391장 p.3009]]. 전립선암의 안드로겐 차단을 위한 양측 고환절제는 테스토스테론의 주된 공급원(순환 테스토스테론의 95 % 가 고환 유래)을 없앤다 [[harrison 21: 391장 p.3007]]. 치료·수술 뒤에는 테스토스테론과 LH 를 함께 보아 결함 위치를 다시 확인한다. INSL3 의 조직 분포(간질세포 강양성·세정관 음성)는 Human Protein Atlas 주석을 직접 열지 못해 문항 해설의 인용만 남겼다(검토 항목). 시험 쟁점 — 충돌·맥락·새 근거 해당 없음(대조: 해리슨 391장 p.3006~3010, p.3012, p.3020) (심화) 왜 두 세포에 두 호르몬인가 LH 와 FSH 는 같은 GnRH 박동에 반응하지만, 고환은 두 결과물 — 전신으로 나가는 테스토스테론과 관 안에서 쓰이는 정자 — 을 따로 조절해야 한다. 간질세포–LH–테스토스테론 고리는 테스토스테론·에스트라디올의 되먹임으로, 세르톨리세포–FSH–인히빈 B 고리는 인히빈 B 의 선택적 FSH 억제로 닫힌다 [[harrison 21: 391장 p.3007]]. 그래서 세정관만 다친 환자는 테스토스테론과 LH 가 정상인데 FSH 만 오르는 「분리된」 양상을 보인다 [[harrison 21: 391장 p.3009]]. 시험은 이 분리를 사진(어느 구획이 양성인가)과 호르몬 수치(어느 되먹임이 끊겼나) 두 방향에서 묻는다."
   },
   {
    "id": "cn.rheum.sle.mild-disease-hydroxychloroquine",
@@ -15494,8 +15613,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-23",
    "path": "content/concepts/rheumatology/cn.rheum.sle.mild-disease-hydroxychloroquine.md",
-   "snippet": "정의 전신홍반루푸스(SLE) 는 자가항체와 면역복합체가 피부·관절·신장·혈구·장막·신경 등 여러 장기에 염증과 손상을 일으키는 만성 자가면역질환이다. 완치는 없고 완전 관해도 드물어, 목표는 가벼운 증상만 남긴 저질병활성 상태(LLDAS)를 가장 적은 약으로 유지하는 것이다 [[harrison 21: 356장 p.2745–2746]]. 분류기준(2019 EULAR/ACR)은 항핵항체 ≥1:80(면역형광)을 입구로, 임상·면역 ",
-   "text": "Rheumatology 정의 전신홍반루푸스(SLE) 는 자가항체와 면역복합체가 피부·관절·신장·혈구·장막·신경 등 여러 장기에 염증과 손상을 일으키는 만성 자가면역질환이다. 완치는 없고 완전 관해도 드물어, 목표는 가벼운 증상만 남긴 저질병활성 상태(LLDAS)를 가장 적은 약으로 유지하는 것이다 [[harrison 21: 356장 p.2745–2746]]. 분류기준(2019 EULAR/ACR)은 항핵항체 ≥1:80(면역형광)을 입구로, 임상·면역 영역의 가중 점수가 10 점 이상이면 SLE 로 분류한다(특이도 97%, 민감도 93%). 연구용 기준이지만 개별 환자에서 SLE 일 확률을 가늠하는 데 쓴다 [[harrison 21: 356장 p.2740]]. 병태생리 정상 면역은 죽은 세포의 핵 물질을 빨리 치워 자가항원이 면역계에 노출되지 않게 하고, 자가반응 B·T 세포를 억제한다. SLE 에서는 이 제거와 조절이 무너져 핵 항원(dsDNA·Sm 등)에 대한 자가항체가 생기고, 항원–항체 면역복합체가 조직에 쌓여 보체를 활성화한다. 보체가 소모되어 혈청 C3·C4 가 떨어지고, 활성화된 보체와 사이토카인(특히 제1형 인터페론)이 염증을 증폭한다. 염증이 반복되면 되돌릴 수 없는 장기 손상이 쌓이고, 치료(특히 스테로이드) 자체도 손상 축적의 원인이 된다 [[harrison 21: 356장 p.2746]]. 기전에서 소견으로 광과민 뺨 발진(나비 발진) : 자외선이 각질세포 사멸을 늘려 핵 항원을 노출시키고 면역복합체 염증이 일어난다. 뺨과 콧등이 가장 흔하고 코입술 주름은 비켜 간다. 발진이 심해지는 것은 전신 재발과 함께 오는 일이 많다 [[harrison 21: 356장 p.2740]]. 관절염 : 윤활막 염증이지만 골미란을 일으키지 않는 것이 보통이다 — 류마티스관절염과 가르는 점이다. 무통성 구강궤양 : 점막 침범. 통증이 없어 환자가 말하지 않으면 놓친다. 항 dsDNA·항 Sm : 두 항체는 SLE 에 특이해 진단 확률을 올린다. 항 dsDNA 는 시간에 따라 변하며, 상승이 특히 C3·C4 하강과 함께 오면 신염·혈관염 재발을 예고할 수 있다. 항 Sm 은 활동성과 상관하지 않는다 [[harrison 21: 356장 p.2740·p.2745]]. 정상 결과의 해석 한계 : 소변검사·크레아티닌 정상은 지금 임상적으로 뚜렷한 신염이 없다는 뜻이지 앞으로도 없다는 뜻이 아니다. 그래서 진단 뒤에도 소변·혈구·크레아티닌을 정기적으로 추적한다 [[harrison 21: 356장 p.2745]]. 감별 — 장기 침범이 있는가 SLE 로 진단되면 두 번째 질문은 「어느 장기가 얼마나 침범됐나」다. 해리슨은 치료 선택의 기준으로 ① 생명을 위협하거나 장기 손상을 일으킬 만한 발현인가(그래야 공격적 치료가 정당화된다) ② 되돌릴 수 있는가 ③ 질병·치료 합병증을 어떻게 막을까 를 든다 [[harrison 21: 356장 p.2746]]. 신장 : 단백뇨·적혈구·원주(활동성 요침사)·크레아티닌 상승 → 신생검으로 ISN/RPS 등급을 정한다. 증식성(III·IV 형)이면 장기 위협 질환이다. 혈액 : 중증 용혈빈혈·혈소판감소증은 고용량 스테로이드 대상, 경한 백혈구 감소는 흔하고 그 자체로 강한 치료를 요구하지 않는다. 장막·신경 : 흉막염·심낭염, 경련·정신증·척수염 등. 이 중 아무것도 없고 피부·관절·점막·피로만 있으면 경증 이다(중증도 비교표). 검사 1. 소변검사(단백·적혈구·원주)와 크레아티닌 — 신염 여부. 단백이 의심되면 정량(24시간 또는 단백/크레아티닌 비). 2. 혈구 계산 — 혈액학 침범. 3. 보체(C3·C4)·항 dsDNA — 활동성과 재발 예고 지표로 추적한다. 치료 강도를 직접 정하지 않는다 [[harrison 21: 356장 p.2745]]. 4. 항인지질항체 — 혈전·임신 합병증 위험 평가. 5. 흉부 X선·심전도 — 장막염. 6. 히드록시클로로퀸 시작 시 안과 검진 — 망막 독성 감시의 기준점(아래 시험 쟁점 Z2). 치료 경증(주요 장기 침범 없음) — 증상 억제가 목표 . 해리슨은 진통제와 항말라리아제를 치료의 중심으로 둔다 [[harrison 21: 356장 p.2746]] (경증 약물표). 히드록시클로로퀸 : 증상을 줄이고, 끊으면 재발이 늘며, 생존을 늘리고 신장을 포함한 조직 손상 축적을 줄인다 [[harrison 21: 356장 p.2746]]. 대부분의 SLE 환자가 유형과 무관하게 받는다 [[harrison 21: 356장 p.2747]]. 200–400 mg/일, 실제 체중 5.0 mg/kg 를 넘지 않는다. QT 연장 약물(예: 아미오다론)과 병용 금기 [[harrison 21: 356장 p.2744]]. 효과는 수 주~수 개월에 걸쳐 나타난다. NSAID : 관절통·관절염에 유용하지만, SLE 환자는 일반인보다 NSAID 에 의한 무균수막염·간효소 상승·고혈압·신기능 저하 위험이 높고 심근경색 위험도 있다. 아세트아미노펜이 대안이다 [[harrison 21: 356장 p.2746]]. 저용량 스테로이드 : 보존 치료로도 삶의 질이 부족할 때 더한다. 유지는 가능한 가장 낮은 용량(이상적으로 ≤7.5 mg/일)으로 [[harrison 21: 356장 p.2746]]. 피부 루푸스 : 자외선 차단제(SPF 15 이상, 30+ 선호)·항말라리아제·국소 스테로이드·타크로리무스. 심하거나 반응이 없으면 전신 스테로이드 ± 미코페놀레이트·아자티오프린·메토트렉세이트·벨리무맙 [[harrison 21: 356장 p.2744·p.2746]]. 지속 활동성 : 표준 치료에도 활동성·피로가 남으면 벨리무맙(항 BAFF)·아니프롤루맙(항 제1형 인터페론 수용체) [[harrison 21: 356장 p.2746]]. 생명·장기 위협 질환 — 유도 치료 . 전신 스테로이드(0.5–1 mg/kg/일 경구 또는 메틸프레드니솔론 500–1000 mg 정맥 3일 뒤 경구)가 주축이고, 증식성 신염에는 사이클로포스파미드 또는 미코페놀레이트를 더한다. 고용량은 4–6주로 짧게 쓰고 빨리 줄인다 — 거의 모든 환자가 스테로이드의 중요한 부작용을 겪기 때문이다 [[harrison 21: 356장 p.2746–2747]]. 메토트렉세이트는 관절염·피부염에 역할이 있을 수 있으나 신염 같은 중증 질환의 약은 아니다 [[harrison 21: 356장 p.2747]]. 권고와 예외 금기가 없으면 히드록시클로로퀸은 경증·중증 모두에서 유지한다 [[harrison 21: 356장 p.2747]]. EULAR 2023 도 모든 환자에게 권고하고 목표 용량을 5 mg/kg/일로 둔다 [[?eular sle 2023]]. 임신: 메토트렉세이트·미코페놀레이트는 피한다. 임신 중 활동성 SLE 는 히드록시클로로퀸과 필요 시 최저 용량 프레드니손/프레드니솔론으로 조절하고, 부족하면 아자티오프린을 더한다 [[harrison 21: 356장 p.2747]]. 가임기 여성에서 2선 약을 고를 때 임신 계획을 먼저 확인한다. 재평가: 경증 환자도 소변·혈구·크레아티닌·보체·항 dsDNA 를 정기 추적한다 — 새 단백뇨·요침사 이상이 생기면 경증 경로에서 벗어나 신생검·유도 치료로 넘어간다 [[harrison 21: 356장 p.2745]]. 심혈관 위험: SLE 는 죽상경화가 흔해 지질 검사와 치료에서 당뇨병처럼 독립 위험 인자로 셈한다 [[harrison 21: 356장 p.2745]]. 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 혈청학적 활동성만으로 스테로이드? — 시험 기준: 장기 침범 없는 새 진단 환자는 항 dsDNA·보체 수치와 무관하게 히드록시클로로퀸으로 시작한다 [[harrison 21: 356장 p.2746]] / 다른 기준: 추적 중인 환자에서 검사 변화(보체 하강·항 DNA 상승)가 그 환자의 재발을 예고해 왔다면 치료 조정이 권할 만하며, 항 DNA 상승 + 보체 하강 환자에서 프레드니손 30 mg/일 2주가 재발을 막았다는 보고가 있다 [[harrison 21: 356장 p.2745]] / 왜 다른가: 앞은 첫 치료, 뒤는 이미 치료 중인 환자의 재발 예방이며 용량도 「고용량 유도」가 아닌 단기 중등 용량이다 / 시험에서는: KMLE · USMLE 모두 새 진단·장기 침범 없음 → 히드록시클로로퀸. Z2 충돌 · 히드록시클로로퀸 안과 검진 시점 — 시험 기준: 시작 때 기저 검사, 위험 인자가 없으면 5년 뒤부터 매년 선별(문항 해설·AAO 2016) [[?aao hcq 2016]] / 다른 기준: 해리슨은 누적 1000 g(약 5년) 뒤 6% 에서 망막 독성이 생기므로 항말라리아제 복용자는 매년 안과 검진을 받으라고 적는다 [[harrison 21: 356장 p.2746]] / 왜 다른가: 해리슨은 요약 서술(매년)이고, 안과 학회 지침은 기저 검사와 저위험군의 선별 시작 시점을 나눈다 / 시험에서는: KMLE · USMLE 모두 「시작 전 기저 안과 검사 + 정기 망막 선별」이 답이 되는 형태로 나온다. Z3 새 근거 · 목표 용량과 스테로이드 유지 상한 — 시험 기준: 히드록시클로로퀸 ≤5 mg/kg/일 실제 체중 [[harrison 21: 356장 p.2744]] / 다른 기준: 해리슨은 활성 SLE 에서 혈중 농도 ≥750 ng/mL 를 권하는 전문가 의견을 소개하고(반응 뒤 감량), 스테로이드 유지 목표를 ≤7.5 mg/일로 둔다 [[harrison 21: 356장 p.2746]]. EULAR 2023 은 유지 ≤5 mg/일 로 더 낮췄다 [[?eular sle 2023]] / 왜 다른가: 판 시점 차이 — 해리슨 21판 이후 EULAR 개정 / 시험에서는: KMLE · USMLE 모두 「가능한 최저 용량 스테로이드」로 묻는 경우가 많고 숫자 자체가 답을 가르는 일은 드물다. (심화) 왜 히드록시클로로퀸이 「모든 환자」의 약인가 히드록시클로로퀸은 약염기라 세포 내 산성 소포(엔도솜·리소좀)에 모여 pH 를 올린다. 그러면 핵산을 인식하는 엔도솜 톨유사수용체(TLR7·TLR9) 신호와 항원 처리가 약해져, SLE 병태의 중심인 제1형 인터페론 생산과 자가항원 제시가 줄어든다. 이 작용은 강한 면역억제가 아니어서 감염 위험을 크게 올리지 않고, 임신 중에도 유지할 수 있다 [[harrison 21: 356장 p.2747]]. 대신 망막 색소상피에 쌓이는 독성이 누적 용량에 비례하므로, 용량 상한(체중당)과 정기 안과 검진이 이 약을 오래 쓰는 조건이다. 기전 서술(TLR·pH)은 해리슨 본문에서 대조하지 않았다."
+   "snippet": "판단 — 왜 히드록시클로로퀸이 먼저인가 해리슨의 치료 선택 기준은 ① 생명을 위협하거나 장기 손상을 일으킬 발현인가(그래야 공격적 치료가 정당화된다) ② 되돌릴 수 있는가 ③ 질병·치료 합병증을 어떻게 막을까, 셋이다 [[harrison 21: 356장 p.2746]]. 주요 장기 침범이 없는 피부·관절·점막·피로 위주 질환은 증상 억제가 목표이고, 진통제·항말라리아제가 중심이다 [[harrison 21: 356장 p.2746",
+   "text": "Rheumatology 판단 — 왜 히드록시클로로퀸이 먼저인가 해리슨의 치료 선택 기준은 ① 생명을 위협하거나 장기 손상을 일으킬 발현인가(그래야 공격적 치료가 정당화된다) ② 되돌릴 수 있는가 ③ 질병·치료 합병증을 어떻게 막을까, 셋이다 [[harrison 21: 356장 p.2746]]. 주요 장기 침범이 없는 피부·관절·점막·피로 위주 질환은 증상 억제가 목표이고, 진통제·항말라리아제가 중심이다 [[harrison 21: 356장 p.2746]]. 히드록시클로로퀸은 증상을 줄이고, 끊으면 재발이 늘며, 생존을 늘리고 신장을 포함한 조직 손상 축적을 줄인다 — 그래서 유형과 무관하게 대부분의 SLE 환자가 받는다 [[harrison 21: 356장 p.2746–2747]]. 고용량 스테로이드는 거의 모든 환자에게 중요한 부작용을 남기고, 치료 자체가 손상 축적의 원인이 된다 — 장기 위협 질환에 남겨 둔다 [[harrison 21: 356장 p.2746–2747]]. 기전 — 면역복합체에서 소견으로 정상 면역은 죽은 세포의 핵 물질을 빨리 치우고 자가반응 B·T 세포를 억제한다. 전신홍반루푸스(systemic lupus erythematosus, SLE)에서는 이 제거와 조절이 무너져 핵 항원(dsDNA·Sm 등)에 대한 자가항체가 생기고, 면역복합체가 조직에 쌓여 보체를 활성화한다 — 보체가 소모되어 C3·C4 가 떨어지고, 보체와 사이토카인(특히 제1형 인터페론)이 염증을 키운다 [[harrison 21: 356장 p.2746]]. 광과민 뺨 발진(나비 발진) : 자외선이 각질세포 사멸을 늘려 핵 항원을 노출시킨다. 뺨·콧등에 흔하고 코입술 주름은 비켜 가며, 심해지면 전신 재발과 함께 오는 일이 많다 [[harrison 21: 356장 p.2740]]. 관절염 은 골미란이 없는 것이 보통이고(류마티스관절염과 가르는 점), 구강궤양 은 무통성이라 묻지 않으면 놓친다. 완치·완전 관해는 드물어 목표는 가장 적은 약으로 저질병활성 상태(LLDAS)를 유지하는 것이다 [[harrison 21: 356장 p.2745–2746]]. 가르는 소견 — 장기 침범이 있는가 진단: 분류기준(2019 EULAR/ACR)은 항핵항체 ≥1:80 을 입구로 임상·면역 영역 점수 10점 이상이면 SLE 로 분류한다(특이도 97 %, 민감도 93 %). 항 dsDNA·항 Sm 은 SLE 에 특이하다 [[harrison 21: 356장 p.2740]]. 장기 확인 검사: 소변검사(단백·적혈구·원주)·크레아티닌(단백이 의심되면 24시간 또는 단백/크레아티닌 비로 정량) · 혈구 계산 · 흉부 X선·심전도(장막염) · 항인지질항체(혈전·임신 합병증 위험). 혈액: 중증 용혈빈혈·혈소판감소증은 고용량 스테로이드 대상이고, 경한 백혈구 감소는 흔하며 그 자체로 강한 치료를 요구하지 않는다. 항 dsDNA·보체는 강도를 정하지 않는다 : 항 dsDNA 는 시간에 따라 변하고, 상승이 C3·C4 하강과 함께 오면 신염·혈관염 재발을 예고할 수 있다. 항 Sm 은 활동성과 상관하지 않는다 [[harrison 21: 356장 p.2740·p.2745]]. 정상 결과의 해석 한계 : 소변검사·크레아티닌 정상은 지금 뚜렷한 신염이 없다는 뜻이지 앞으로도 없다는 뜻이 아니다 — 진단 뒤에도 정기 추적한다 [[harrison 21: 356장 p.2745]]. 선택 — 경증의 기본 약과 감시 히드록시클로로퀸 : 200–400 mg/일, 실제 체중 5.0 mg/kg 를 넘지 않는다. QT 연장 약물(예: 아미오다론)과 병용 금기 [[harrison 21: 356장 p.2744]]. 효과는 수 주~수 개월에 걸쳐 나타난다. NSAID : SLE 환자는 무균수막염·간효소 상승·고혈압·신기능 저하 위험이 일반인보다 높고 심근경색 위험도 있다 — 아세트아미노펜이 대안이다 [[harrison 21: 356장 p.2746]]. 피부 루푸스 : 자외선 차단제(SPF 15 이상, 30+ 선호)·항말라리아제·국소 스테로이드·타크로리무스. 심하거나 반응이 없으면 전신 스테로이드 ± 미코페놀레이트·아자티오프린·메토트렉세이트·벨리무맙 [[harrison 21: 356장 p.2744·p.2746]]. 지속 활동성 : 표준 치료에도 활동성·피로가 남으면 벨리무맙(항 BAFF)·아니프롤루맙(항 제1형 인터페론 수용체) [[harrison 21: 356장 p.2746]]. 장기 위협 질환의 유도 : 전신 스테로이드(0.5–1 mg/kg/일 경구 또는 메틸프레드니솔론 500–1000 mg 정맥 3일 뒤 경구)가 주축이고, 증식성 신염에는 사이클로포스파미드 또는 미코페놀레이트를 더한다. 고용량은 4–6주로 짧게 쓰고 빨리 줄인다. 메토트렉세이트는 관절염·피부염에 역할이 있을 수 있으나 신염 같은 중증 질환의 약은 아니다 [[harrison 21: 356장 p.2746–2747]]. 권고와 예외 금기가 없으면 히드록시클로로퀸은 경증·중증 모두에서 유지한다 [[harrison 21: 356장 p.2747]]. EULAR 2023 도 모든 환자에게 권고하고 목표 용량을 5 mg/kg/일로 둔다 [[?eular sle 2023]]. 임신: 메토트렉세이트·미코페놀레이트는 피한다. 임신 중 활동성 SLE 는 히드록시클로로퀸과 필요 시 최저 용량 프레드니손/프레드니솔론으로 조절하고, 부족하면 아자티오프린을 더한다 [[harrison 21: 356장 p.2747]]. 가임기 여성에서 2선 약을 고를 때 임신 계획을 먼저 확인한다. 재평가: 경증 환자도 소변·혈구·크레아티닌·보체·항 dsDNA 를 정기 추적한다 — 새 단백뇨·요침사 이상이 생기면 신생검·유도 치료로 넘어간다 [[harrison 21: 356장 p.2745]]. 심혈관 위험: SLE 는 죽상경화가 흔해 지질 검사와 치료에서 당뇨병처럼 독립 위험 인자로 셈한다 [[harrison 21: 356장 p.2745]]. 히드록시클로로퀸 시작 때 안과 검진을 기준점으로 둔다(시험 쟁점 Z2). 시험 쟁점 — 충돌·맥락·새 근거 Z1 맥락 · 혈청학적 활동성만으로 스테로이드? — 시험 기준: 장기 침범 없는 새 진단 환자는 항 dsDNA·보체 수치와 무관하게 히드록시클로로퀸으로 시작한다 [[harrison 21: 356장 p.2746]] / 다른 기준: 추적 중인 환자에서 검사 변화(보체 하강·항 DNA 상승)가 그 환자의 재발을 예고해 왔다면 치료 조정이 권할 만하며, 항 DNA 상승 + 보체 하강 환자에서 프레드니손 30 mg/일 2주가 재발을 막았다는 보고가 있다 [[harrison 21: 356장 p.2745]] / 왜 다른가: 앞은 첫 치료, 뒤는 이미 치료 중인 환자의 재발 예방이며 용량도 「고용량 유도」가 아닌 단기 중등 용량이다 / 시험에서는: KMLE · USMLE 모두 새 진단·장기 침범 없음 → 히드록시클로로퀸. Z2 충돌 · 히드록시클로로퀸 안과 검진 시점 — 시험 기준: 시작 때 기저 검사, 위험 인자가 없으면 5년 뒤부터 매년 선별(문항 해설·AAO 2016) [[?aao hcq 2016]] / 다른 기준: 해리슨은 누적 1000 g(약 5년) 뒤 6% 에서 망막 독성이 생기므로 항말라리아제 복용자는 매년 안과 검진을 받으라고 적는다 [[harrison 21: 356장 p.2746]] / 왜 다른가: 해리슨은 요약 서술(매년)이고, 안과 학회 지침은 기저 검사와 저위험군의 선별 시작 시점을 나눈다 / 시험에서는: KMLE · USMLE 모두 「시작 전 기저 안과 검사 + 정기 망막 선별」이 답이 되는 형태로 나온다. Z3 새 근거 · 목표 용량과 스테로이드 유지 상한 — 시험 기준: 히드록시클로로퀸 ≤5 mg/kg/일 실제 체중 [[harrison 21: 356장 p.2744]] / 다른 기준: 해리슨은 활성 SLE 에서 혈중 농도 ≥750 ng/mL 를 권하는 전문가 의견을 소개하고(반응 뒤 감량), 스테로이드 유지 목표를 ≤7.5 mg/일로 둔다 [[harrison 21: 356장 p.2746]]. EULAR 2023 은 유지 ≤5 mg/일 로 더 낮췄다 [[?eular sle 2023]] / 왜 다른가: 판 시점 차이 — 해리슨 21판 이후 EULAR 개정 / 시험에서는: KMLE · USMLE 모두 「가능한 최저 용량 스테로이드」로 묻는 경우가 많고 숫자 자체가 답을 가르는 일은 드물다. (심화) 왜 히드록시클로로퀸이 「모든 환자」의 약인가 히드록시클로로퀸은 약염기라 세포 내 산성 소포(엔도솜·리소좀)에 모여 pH 를 올린다. 그러면 핵산을 인식하는 엔도솜 톨유사수용체(TLR7·TLR9) 신호와 항원 처리가 약해져, SLE 병태의 중심인 제1형 인터페론 생산과 자가항원 제시가 줄어든다. 이 작용은 강한 면역억제가 아니어서 감염 위험을 크게 올리지 않고, 임신 중에도 유지할 수 있다 [[harrison 21: 356장 p.2747]]. 대신 망막 색소상피에 쌓이는 독성이 누적 용량에 비례하므로, 용량 상한(체중당)과 정기 안과 검진이 이 약을 오래 쓰는 조건이다. 기전 서술(TLR·pH)은 해리슨 본문에서 대조하지 않았다."
   },
   {
    "id": "cn.rheum.scleroderma-renal-crisis.ace-inhibitor",
