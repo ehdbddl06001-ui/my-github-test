@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3678,
+  "total": 3679,
   "byType": {
+   "anatomy": 842,
    "usmle": 198,
-   "anatomy": 841,
    "paper": 774,
    "kmle": 1408,
    "imaging": 339,
@@ -17,7 +17,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 841,
+   "Anatomy": 842,
    "Cardiology": 255,
    "Nephrology": 203,
    "Infectious Disease": 186,
@@ -78,13 +78,27 @@ window.MEDKOS_INDEX = {
    "Urology": 1
   },
   "byConfidence": {
-   "high": 2548,
+   "high": 2549,
    "medium": 1080,
    "low": 50
   },
   "tagCount": 4789
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-10-16",
+   "type": "anatomy",
+   "unit": "",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-10-16",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-10-16",
+   "path": "content/anatomy/daily/2026-10-16.md",
+   "snippet": "오늘의 학습 (2026 10 16 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 36일 · Tagging 2까지 3일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-10-16 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 10 16 · t2 mock) 다음 수업/시험: 2026 10 19 Tagging 2 Tagging 1까지 36일 · Tagging 2까지 3일 예상 소요: 약 35분 문항 12개 · 개념 4개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0211",
    "type": "usmle",
