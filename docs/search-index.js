@@ -1,30 +1,30 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-10-15",
+ "generated": "2026-10-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 3722,
+  "total": 3728,
   "byType": {
    "kmle": 1440,
    "concept": 102,
    "anatomy": 842,
    "usmle": 198,
+   "paper": 780,
    "imaging": 349,
-   "paper": 774,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 842,
-   "Cardiology": 257,
-   "Nephrology": 205,
+   "Cardiology": 258,
+   "Nephrology": 206,
    "Infectious Disease": 188,
    "Pediatrics": 173,
    "Obstetrics & Gynecology": 125,
-   "Hematology-Oncology": 113,
-   "Pathology": 113,
+   "Hematology-Oncology": 114,
+   "Pathology": 114,
    "Rheumatology": 109,
    "Psychiatry": 108,
    "Neurology": 107,
@@ -33,11 +33,11 @@ window.MEDKOS_INDEX = {
    "Dermatology": 94,
    "Orthopedics": 94,
    "Gastroenterology": 93,
+   "Surgery": 93,
    "Ophthalmology": 92,
    "Pulmonology": 92,
-   "Surgery": 92,
    "Hematology": 87,
-   "Laboratory Medicine": 77,
+   "Laboratory Medicine": 78,
    "산부인과": 53,
    "순환기": 30,
    "호흡기": 23,
@@ -79,7 +79,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 2591,
-   "medium": 1081,
+   "medium": 1087,
    "low": 50
   },
   "tagCount": 4835
@@ -857,6 +857,108 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0206.md",
    "snippet": "A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancom",
    "text": "Pharmacology Agitation, Sweating and Ankle Clonus on Day 2 of a New Antibiotic in a Man Taking an Antidepressant serotonin-syndrome linezolid monoamine-oxidase-inhibition ssri drug-interaction clonus mrsa-pneumonia USMLE-style / MedKOS (Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med. 2005;352:1112-1120; Katzung's Basic & Clinical Pharmacology — Oxazolidinones; FDA Drug Safety Communication 2011: serotonin syndrome with linezolid and serotonergic psychiatric drugs) A 67 year old man who is hospitalized for methicillin resistant Staphylococcus aureus pneumonia develops agitation, tremor, profuse sweating and three episodes of watery diarrhea over the past 8 hours. He was treated with intravenous vancomycin for 3 days; because his serum creatinine rose, the antibiotic was changed 2 days ago, and he has since received a different oral antibiotic. He has taken sertraline 100 mg daily for major depressive disorder for 2 years and takes no other medications. His vital signs are shown. He is restless and diaphoretic, and he is oriented to person only. The pupils are 6 mm and reactive. The mucous membranes are moist and the bowel sounds are hyperactive. Deep tendon reflexes are 4+ in the lower extremities with sustained ankle clonus and are 3+ in the upper extremities. There is intermittent slow horizontal eye movement from side to side. Muscle tone is increased in the legs; there is no lead pipe rigidity of the arms. Laboratory results are shown. Which of the following actions of the most recently added drug best explains this patient's current condition? A. Inhibition of hepatic CYP2D6 metabolism of sertraline B. Blockade of central dopamine D2 receptors C. Inhibition of monoamine oxidase D. Blockade of central muscarinic receptors E. Inhibition of mitochondrial protein synthesis SSRI(sertraline)를 오래 먹던 환자가 MRSA 폐렴 치료 중 반코마이신에서 경구 항생제로 바뀐 지 2일 만에 초조·떨림·발한·설사·고열, 그리고 하지에서 더 뚜렷한 반사항진·지속 발목 간대·안구 간대가 생겼다 — 세로토닌 증후군이다. 신장 기능 저하로 반코마이신을 대신할 수 있는 MRSA 폐렴용 경구 항생제는 linezolid 이고, linezolid 는 약한 가역적 비선택 MAO 억제제라 세로토닌 분해를 줄여 SSRI 와 함께 쓰면 시냅스 세로토닌이 쌓인다. CYP 상호작용으로 sertraline 농도를 올리는 기전이 아니다."
+  },
+  {
+   "id": "paper-2026-0780",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in the young",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0780_short_and_long_term_outcomes_of_balloon_pulmonary_valvulopla.md",
+   "snippet": "Title Short and long term outcomes of balloon pulmonary valvuloplasty in children ≤24 months with critical and haemodynamically significant pulmonary valve stenosis: a 20 year single centre experience in Medellín, Colombia Authors Davila Ru",
+   "text": "Surgery scraped pubmed PubMed / Cardiology in the young Title Short and long term outcomes of balloon pulmonary valvuloplasty in children ≤24 months with critical and haemodynamically significant pulmonary valve stenosis: a 20 year single centre experience in Medellín, Colombia Authors Davila Ruales Andrea, Gonzalez Butron Sergio, Cañas Eliana, Aristizabal Villa Guillermo, Lince Varela Rafael Journal / DOI Cardiology in the young · DOI: 10.1017/S1047951126124421 · PMID: 42878212 https://pubmed.ncbi.nlm.nih.gov/42878212/ Abstract BACKGROUND: Balloon pulmonary valvuloplasty is the treatment of choice for critical and haemodynamically significant pulmonary stenosis, but long term outcome data in infants, particularly in Latin America, remain limited. We evaluated long term outcomes and factors associated with adverse outcomes in children ≤24 months. METHODS: We retrospectively included consecutive patients ≤24 months who underwent balloon pulmonary valvuloplasty for critical or haemodynamically significant pulmonary stenosis between January 2004 and July 2024. Outcomes included significant restenosis, moderate or greater pulmonary regurgitation, pulmonary valve reintervention, and surgical reintervention. Time to event outcomes and predictors were assessed using Kaplan Meier estimates and Cox regression. RESULTS: A total of 129 patients were included (median age 1.5 months; 37.2% with critical pulmonary stenosis). Procedural success was 94.5%. The median right ventricular to pulmonary artery gradient decreased from 44 to 7 mmHg (p < 0.001). During a median 7 years follow up (interquartile range 3 10), significant restenosis occurred in 25.6%, moderate or greater pulmonary regurgitation in 19.4%, and 17.8% underwent pulmonary valve reintervention. Kaplan Meier analysis demonstrated sustained freedom from adverse outcomes throughout follow up. Univariable Cox regression identified predilation and a higher balloon to annulus ratio as factors associated with an increased hazard of significant restenosis and moderate or greater pulmonary regurgitation, whereas a larger pulmonary annulus Z score was associated with a lower hazard of restenosis. CONCLUSIONS: Ballon pulmonary valvuloplasty is a safe and effective first line therapy in children ≤24 months, providing sustained haemodynamic improvement and durable long term outcomes. Patients requiring predilation, larger balloon to annulus ratios, or having smaller pulmonary annulus Z scores may benefit from closer long term echocardiographic surveillance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0779",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European psychiatry : the journal of the Association of European Psychiatrists",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0779_artificial_intelligence_eeg_biomarkers_for_schizophrenia_dia.md",
+   "snippet": "Title Artificial intelligence EEG biomarkers for schizophrenia diagnosis: Systematic review with PROBAST+AI assessment Authors Łoś Kacper, Waszkiewicz Napoleon Journal / DOI European psychiatry : the journal of the Association of European P",
+   "text": "Laboratory Medicine scraped pubmed PubMed / European psychiatry : the journal of the Association of European Psychiatrists Title Artificial intelligence EEG biomarkers for schizophrenia diagnosis: Systematic review with PROBAST+AI assessment Authors Łoś Kacper, Waszkiewicz Napoleon Journal / DOI European psychiatry : the journal of the Association of European Psychiatrists · DOI: 10.1192/j.eurpsy.2026.12262 · PMID: 42878218 https://pubmed.ncbi.nlm.nih.gov/42878218/ Abstract BACKGROUND: The application of artificial intelligence (AI) to resting state electroencephalography (EEG) data represents a burgeoning frontier in schizophrenia diagnostics. However, the inferential validity of findings is frequently compromised by methodological heterogeneity. This systematic review rigorously evaluates the diagnostic efficacy and methodological robustness of AI generated EEG biomarkers by implementing the Prediction model Risk Of Bias Assessment Tool for Artificial Intelligence (PROBAST+AI). METHODS: Following PRISMA guidelines, a systematic search of PubMed, Scopus, and Web of Science identified 43 primary studies encompassing 3,420 patients with schizophrenia or first episode psychosis and 3,164 healthy controls (total N = 6,584). Methodological quality and validation strategies were assessed using the 34 signaling questions of the PROBAST+AI framework. RESULTS: The aggregate mean diagnostic accuracy across the literature was 93.38%, with deep learning architectures demonstrating superior metrics relative to classical machine learning (96.83% vs. 87.68%). Critically, external validation was restricted to 4.7% of the included studies. A pronounced performance discrepancy was observed between subject wise (88.22%) and segment wise (98.14%) validation protocols, indicating pervasive data leakage. Overall, 76.7% of the analyzed studies were characterized by a high risk of bias, predominantly stemming from suboptimal data partitioning and inadequate independent verification. CONCLUSIONS: Contemporary diagnostic accuracies appear to be artifactually elevated due to structural methodological deficiencies and data leakage. Consequently, current evidence does not support the immediate clinical implementation of AI EEG biomarkers in schizophrenia. To facilitate translational progress, we propose a standardized methodological framework optimizing validation strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0778",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pediatric endocrinology & metabolism : JPEM",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0778_pediatric_prolactinoma_associated_pituitary_apoplexy_present.md",
+   "snippet": "Title Pediatric prolactinoma associated pituitary apoplexy presenting with acute visual loss: a case report, literature review, and management strategy Authors Yilmaz Yunus Emre, Emrahoglu Muhammed Erkan, Erdeve Senay Savas, Bala Keziban As",
+   "text": "Pathology scraped pubmed PubMed / Journal of pediatric endocrinology & metabolism : JPEM Title Pediatric prolactinoma associated pituitary apoplexy presenting with acute visual loss: a case report, literature review, and management strategy Authors Yilmaz Yunus Emre, Emrahoglu Muhammed Erkan, Erdeve Senay Savas, Bala Keziban Asli, Akyuz Tuba Kara, Yilmaz Sükriye, Yetisgin Efe, Kertmen Hüseyin Hayri Journal / DOI Journal of pediatric endocrinology & metabolism : JPEM · DOI: 10.1515/jpem 2026 0379 · PMID: 42878120 https://pubmed.ncbi.nlm.nih.gov/42878120/ Abstract OBJECTIVES: Hemorrhagic pituitary apoplexy (PA) in children is exceedingly rare, with approximately 32 cases reported since 1980. Current guidelines recommend cabergoline as first line therapy; however, acute complete visual loss mandates emergency surgical decompression. No guideline defines the optimal extent of resection, despite gross total resection carrying a 48 54 % risk of panhypopituitarism. CASE PRESENTATION: An 11 year old prepubertal girl presented with a 2 day history of complete right eye visual loss. Serum prolactin was 987 μg/L, and MRI demonstrated a hemorrhagic sellar suprasellar mass compressing the optic chiasm. Emergency endoscopic transsphenoidal surgery was performed with an intentionally limited strategy hematoma evacuation, optic decompression, and partial debulking deliberately avoiding aggressive capsular dissection. Histopathology confirmed prolactinoma. Vision was fully restored immediately after extubation, with near complete visual field recovery on postoperative day 5 (VFI 98 %). Adrenocortical function was preserved. Central hypothyroidism developed, and levothyroxine was initiated. Cabergoline (0.25 mg/week) was started on postoperative day 5, achieving a 93.7 % prolactin reduction by day 20 (987 → 61.9 μg/L). CONCLUSIONS: In pediatric prolactinoma associated PA requiring emergency surgery, a decompression first strategy prioritizing visual rescue and tissue diagnosis over gross total resection may reduce the risk of panhypopituitarism, with residual tumor subsequently managed with cabergoline. The rapid biochemical response documented here supports this approach, though multicenter prospective evaluation is required. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0777",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Oncoimmunology",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0777_biomarkers_of_subclinical_cholestasis_predict_cancer_immunot.md",
+   "snippet": "Title Biomarkers of subclinical cholestasis predict cancer immunotherapy outcomes Authors Mallard de La Varende Anne Laure, Fidelle Marine, Kroemer Guido, Zitvogel Laurence Journal / DOI Oncoimmunology · DOI: 10.1080/2162402X.2026.2748140 ·",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Oncoimmunology Title Biomarkers of subclinical cholestasis predict cancer immunotherapy outcomes Authors Mallard de La Varende Anne Laure, Fidelle Marine, Kroemer Guido, Zitvogel Laurence Journal / DOI Oncoimmunology · DOI: 10.1080/2162402X.2026.2748140 · PMID: 42878219 https://pubmed.ncbi.nlm.nih.gov/42878219/ Abstract In a recent paper published in Cancer Cell, we identified subclinical cholestasis as an accessible imprint of gut dysbiosis predicting resistance to immune checkpoint blockade. Our work connects γ glutamyl transferase, bile acid remodeling, and MAdCAM 1 loss to compromised antitumor immunity, opening avenues for novel biomarker guided microbiota interventions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0776",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Nutricion hospitalaria",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0776_effects_of_a_plant_based_protein_supplement_on_body_composit.md",
+   "snippet": "Title Effects of a plant based protein supplement on body composition and biochemical indicators in hemodialysis patients with malnutrition inflammation complex syndrome (MICS) ‒ A crossover clinical trial Authors Orozco Rivera Luis Enrique",
+   "text": "Nephrology scraped pubmed PubMed / Nutricion hospitalaria Title Effects of a plant based protein supplement on body composition and biochemical indicators in hemodialysis patients with malnutrition inflammation complex syndrome (MICS) ‒ A crossover clinical trial Authors Orozco Rivera Luis Enrique, O Neill Suárez Sandra, Nava Martínez J Alejandro, Vergara Espinosa Adriana, Hernández Ortega Marcela, Vargas Hernández Marco Antonio, Albores Méndez Exsal M, Gutiérrez Salmeán Gabriela Journal / DOI Nutricion hospitalaria · DOI: 10.20960/nh.07028 · PMID: 42878239 https://pubmed.ncbi.nlm.nih.gov/42878239/ Abstract BACKGROUND: malnutrition inflammation complex syndrome (MICS) is a common entity in patients with chronic kidney disease (CKD) who undergo hemodialysis (HD). Oral nutrition supplementation (ONS) is indicated in such conditions. Plant protein has been proven to not only help comply with nutritional requirements but also reduce inflammation, thus MICS' detrimental effects on nutritional status may be mitigated. METHODS: we conducted a crossover trial evaluating the effects of a plant based protein ONS on body composition and biochemical markers in CKD HD patients with MICS. Each patient underwent a 12 week period with and without supplementation. Bioimpedance measurements (muscle and fat mass, water, phase angle) and biochemical indicators (serum proteins, lipid profile, electrolytes, and inflammatory markers) were assessed at baseline, three and six months. RESULTS: nineteen participants completed the trial. Supplementation resulted in attenuatnution of inflammatory markers, concomitant to significant muscle mass gain, correlating with intracellular water and phase angle improvement. Adipose tissue changes were non significant although a decrease in visceral fat mass was observed. Calcium and phosphorus levels improved, as did serum proteins. HDL significantly increased. CONCLUSION: plant based protein ONS improved nutrition status in hemodialysis patients with MICS. Positive results were not found during control (i.e., no supplementation) period. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0775",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Vascular and endovascular surgery",
+   "confidence": "medium",
+   "date": "2026-10-15",
+   "path": "content/papers/2026/2026-10-15_paper-2026-0775_association_of_referring_specialty_with_limb_loss_in_chronic.md",
+   "snippet": "Title Association of Referring Specialty With Limb Loss in Chronic Limb Threatening Ischemia Authors Khan Nabeeha, Pelit William, Kelly Brooke, Blecha Matthew, Soult Michael C Journal / DOI Vascular and endovascular surgery · DOI: 10.1177/1",
+   "text": "Cardiology scraped pubmed PubMed / Vascular and endovascular surgery Title Association of Referring Specialty With Limb Loss in Chronic Limb Threatening Ischemia Authors Khan Nabeeha, Pelit William, Kelly Brooke, Blecha Matthew, Soult Michael C Journal / DOI Vascular and endovascular surgery · DOI: 10.1177/15385744261494483 · PMID: 42878127 https://pubmed.ncbi.nlm.nih.gov/42878127/ Abstract ObjectiveChronic limb threatening ischemia (CLTI) is associated with high morbidity and mortality. While delayed referral is known to worsen outcomes, the impact of referring specialty remains unclear. This study evaluates whether different referral sources to vascular surgery impact mortality and major amputation rates.MethodsA retrospective review was conducted of patients referred to vascular surgery for CLTI at a single institution (2021 2022). The outcomes investigated were mortality, amputation and composite freedom from amputation or mortality (amputation free survival). Univariable analysis was first conducted followed by multivariable Cox regression utilizing variables which had a univariable P value of <0.1 for the outcomes.ResultsAmong 132 patients, 19.7% died and 19.7% underwent major amputation. Mean duration of follow up for included patients was 1471 days (4.03 years). Congestive heart failure (CHF) independently predicted mortality (HR 3.86, P = .0114) on multivariable analysis. Chronic kidney disease (CKD), gangrene, and non healing wounds were associated with amputation on univariable analysis (P < .05). Referral from emergency medicine had multivariable association with higher amputation rates, while podiatry referral demonstrated a protective effect (HR 0.28, P = .0472). Referral from emergency medicine had multivariable association with reduced amputation free survival relative to all other specialties combined (HR 2.953 (1.66 5.26), P < .001) and relative to other specialties individually (P = .0023).ConclusionsOutcomes in CLTI are associated with variations in both comorbidities and referral patterns. Earlier, multidisciplinary referral pathways may improve limb salvage as patients with CLTI referred from emergency have higher amputation rates and reduced amputation free survival. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "imaging-2026-0350",
@@ -21111,8 +21213,8 @@ window.MEDKOS_INDEX = {
    "confidence": "medium",
    "date": "2026-09-18",
    "path": "content/concepts/pediatrics/cn.peds.febrile-seizure.workup.md",
-   "snippet": "정의 열성경련은 생후 6~60개월 소아가 발열 중에 두개내 감염·대사 이상 없이 겪는 발작이다. 단순형 은 15분 미만의 전신발작이 24시간 동안 한 번이고, 하나라도 벗어나면(초점성·15분 이상·24시간 내 재발) 복합형 이다. 단순형이라는 판정은 「검사를 덜 해도 되는 집단」이라는 뜻이라, 조건을 하나씩 확인하는 과정이 곧 검사 결정이다. 병태생리 발달 중인 뇌는 체온 상승에 대한 발작 역치가 낮다. 유전 소인이 있어 가족",
-   "text": "Pediatrics 정의 열성경련은 생후 6~60개월 소아가 발열 중에 두개내 감염·대사 이상 없이 겪는 발작이다. 단순형 은 15분 미만의 전신발작이 24시간 동안 한 번이고, 하나라도 벗어나면(초점성·15분 이상·24시간 내 재발) 복합형 이다. 단순형이라는 판정은 「검사를 덜 해도 되는 집단」이라는 뜻이라, 조건을 하나씩 확인하는 과정이 곧 검사 결정이다. 병태생리 발달 중인 뇌는 체온 상승에 대한 발작 역치가 낮다. 유전 소인이 있어 가족력이 흔하다. 단순형은 뇌 손상을 남기지 않고 지능·행동 발달에 영향이 없으며, 이후 뇌전증 위험은 일반 인구보다 약간 높은 정도다. 기전에서 소견으로 열이 오르는 초기에 짧은 전신발작 → 곧 멈추고 의식이 빠르게 돌아온다. 발작의 원인이 뇌 자체가 아니므로 발작 뒤 신경학적 진찰은 정상이다. 국소 결손이 남거나 의식 회복이 늦으면 원인이 뇌에 있을 가능성(감염·구조 이상)을 먼저 본다. 수막염도 열과 발작을 함께 일으킨다. 그래서 목경직·대천문 팽창·처짐 같은 수막 징후의 유무 가 결정적이다 — 없다는 확인도 판단 근거다. 감별 세균성 수막염·뇌염 : 수막 자극 징후, 의식 회복 지연, 처짐·보챔 지속. 항생제를 먼저 먹었으면 징후가 가려질 수 있다. 복합 열성경련 : 초점성·15분 이상·24시간 내 재발 — 개별 평가. 오한(rigor)·열성 섬망 : 의식이 유지되고 리듬 있는 강직·간대가 아니다. 전해질 이상·저혈당에 의한 발작 : 구토·설사·섭취 부족의 병력, 회복이 더딤. 검사 단순형이면서 수막 징후·국소 이상이 없으면 뇌파·혈액검사·신경영상은 일상적으로 하지 않는다 . 재발이나 뇌전증 예측에 도움이 되지 않는다. 혈액·소변 검사는 발열 원인 을 찾기 위해 필요할 때만 한다(경련 때문이 아니다). 요추천자: 수막염 징후가 있으면 시행. 6~12개월의 접종 미완료·불명, 항생제 선행 투여에서는 선택지. 치료 발작이 멈췄으면 발열 원인 치료, 해열·수분, 보호자 교육(재발 가능성, 발작 시 옆으로 눕히기, 5분 넘으면 119). 예방적 항경련제는 권하지 않는다 . 해열제는 편안함을 위한 것이고 재발을 막지는 못한다. 발작이 5분 넘게 이어지면 경련 지속으로 보고 벤조디아제핀 처치 — 이 정리본의 범위 밖. 권고와 예외 이 정리본의 권고는 단순형 에만 해당한다. 복합형은 영상·뇌파 결정이 달라질 수 있다. 요추천자의 「option」은 가장 약한 권고 강도다. 시험 문항이 「가장 적절한」을 물을 때는 보기 안의 다른 선택지와 비교해 판단한다. 국내 교과서·국시에서도 같은 정의(6개월~5세, 15분, 전신, 24시간 1회)를 쓴다. 국내 지침 원문은 이 정리본에서 대조하지 않았다(검토 항목). (심화) 왜 「정보 없음」을 음성으로 채우면 안 되는가 접종력·항생제 복용이 문항에 없을 때 「없음」으로 채우면 요추천자 판단의 한 갈래를 조용히 지운다. 시험 문항은 대개 그 정보를 주지 않아 단순형 원칙대로 답하게 설계되지만, 실제 진료에서는 확인할 항목 이다. 이 구분이 도식의 「추가 정보 필요」 경로다. 18개월 이상이면 접종 항목은 요추천자 고려 조건 자체에 해당하지 않는다 — 나이 조건을 먼저 본다."
+   "snippet": "판단 — 왜 추가 검사 없이 귀가가 먼저인가 단순형이라는 판정은 「검사를 덜 해도 되는 집단」이라는 뜻이다 — 조건(나이·형태·시간·횟수)을 하나씩 확인하는 과정이 곧 검사 결정이다. 단순형은 뇌 손상을 남기지 않고 지능·행동 발달에 영향이 없다. 뇌파·영상은 재발이나 뇌전증을 예측하지 못한다. 수막염도 열과 발작을 함께 일으키므로 수막 징후의 유무 가 결정적이다 — 없다는 확인도 판단 근거다. 할 일은 발열 원인 평가·해열·",
+   "text": "Pediatrics 판단 — 왜 추가 검사 없이 귀가가 먼저인가 단순형이라는 판정은 「검사를 덜 해도 되는 집단」이라는 뜻이다 — 조건(나이·형태·시간·횟수)을 하나씩 확인하는 과정이 곧 검사 결정이다. 단순형은 뇌 손상을 남기지 않고 지능·행동 발달에 영향이 없다. 뇌파·영상은 재발이나 뇌전증을 예측하지 못한다. 수막염도 열과 발작을 함께 일으키므로 수막 징후의 유무 가 결정적이다 — 없다는 확인도 판단 근거다. 할 일은 발열 원인 평가·해열·수분·보호자 교육이다. 기전 — 열에서 발작으로 발달 중인 뇌는 체온 상승에 대한 발작 역치가 낮다. 유전 소인이 있어 가족력이 흔하다. 열이 오르는 초기에 짧은 전신발작이 오고 곧 멈추며 의식이 빠르게 돌아온다. 원인이 뇌 자체가 아니므로 발작 뒤 신경학적 진찰은 정상이다. 국소 결손이 남거나 의식 회복이 늦으면 원인이 뇌에 있을 가능성(감염·구조 이상)을 먼저 본다. 이후 뇌전증 위험은 일반 인구보다 약간 높은 정도다. 가르는 소견 — 단순형·수막 징후·배경 단순 열성경련(simple febrile seizure): 생후 6~60개월, 두개내 감염·대사 이상 없이 15분 미만의 전신발작이 24시간 동안 한 번. 하나라도 벗어나면(초점성·15분 이상·24시간 내 재발) 복합 열성경련(complex febrile seizure)이다. 목경직·대천문 팽창·처짐 같은 수막 징후가 없다는 확인은 수막염 가능성을 낮추는 의미 있는 음성 소견이다. 항생제를 먼저 먹었으면 징후가 가려질 수 있다. 선택 — 검사와 예방 투여 단순형이면서 수막 징후·국소 이상이 없으면 표대로 대부분의 검사를 일상적으로 하지 않는다. 혈액·소변 검사는 발열 원인 을 찾기 위해서다(경련 때문이 아니다). 보호자 교육: 재발 가능성, 발작 시 옆으로 눕히기, 5분 넘으면 119. 권고와 예외 이 정리본의 권고는 단순형 에만 해당한다. 복합형은 영상·뇌파 결정이 달라질 수 있다. 요추천자의 「option」은 가장 약한 권고 강도다. 시험 문항이 「가장 적절한」을 물을 때는 보기 안의 다른 선택지와 비교해 판단한다. 예방적 항경련제 권고의 세부 문구는 AAP 2008 초록만 확인했다(본문 대조 전). 국내 교과서·국시에서도 같은 정의(6개월~5세, 15분, 전신, 24시간 1회)를 쓴다. 국내 지침 원문은 이 정리본에서 대조하지 않았다(검토 항목). (심화) 왜 「정보 없음」을 음성으로 채우면 안 되는가 접종력·항생제 복용이 문항에 없을 때 「없음」으로 채우면 요추천자 판단의 한 갈래를 조용히 지운다. 시험 문항은 대개 그 정보를 주지 않아 단순형 원칙대로 답하게 설계되지만, 실제 진료에서는 확인할 항목 이다. 이 구분이 도식의 「추가 정보 필요」 경로다. 18개월 이상이면 접종 항목은 요추천자 고려 조건 자체에 해당하지 않는다 — 나이 조건을 먼저 본다."
   },
   {
    "id": "cn.neph.hyperkalemia.first-step",
