@@ -2,6 +2,199 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0786",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Depression and anxiety among older surgical patients with cognitive impairment: a multicenter longitudinal cohort study",
+  "authors": [
+   "Cheuk Eric",
+   "Yan Ellene",
+   "Alhamdah Yasmin",
+   "Saripella Aparna",
+   "Lovblom Leif E",
+   "Wong Jean",
+   "Chung Frances"
+  ],
+  "journal": "Minerva anestesiologica",
+  "doi": "10.23736/S0375-9393.26.19892-7",
+  "pmid": "42886077",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42886077/",
+  "pubdate": "2026-10-16",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Cognitive impairment (CI), depression, and anxiety are underrecognized yet frequently co-existing conditions linked to poor surgical outcomes in older patients. We examined: 1) the prevalence and perioperative trajectory of depression/anxiety in patients with and without CI; 2) preoperative patient-reported outcome measures; and 3) postoperative outcomes associated with depression/anxiety.\n\n**METHODS:** This study included 369 surgical patients (≥65 years) from two academic tertiary care hospitals. CI was assessed with the Ascertain Dementia Eight preoperatively, while depression/anxiety was measured using the Patient Health Questionnaire-4 preoperatively, at 30-, and 90 days postoperatively. The trajectory of depression/anxiety in CI versus no-CI patients was analyzed with linear mixed-effects models.\n\n**RESULTS:** Preoperatively, 28% of patients had depression/anxiety, 13% had CI, and 8% had co-existing depression/anxiety and CI. Those with depression/anxiety were more likely to have co-existing CI than those without depression/anxiety (29% vs. 6%; P<0.001). Patients that screened positive for preoperative CI experienced significantly worse psychological symptoms at all times compared to those without CI. Among those with preoperative CI, mean psychological symptoms remained above screening thresholds for depression/anxiety at all time points and significantly worsened at 90 days post-surgery compared to baseline levels. Patients with depression/anxiety reported significantly worse preoperative health, including greater pain and functional disability, as well as worse quality of life and sleep.\n\n**CONCLUSIONS:** Given greater psychological burden in those with CI, screening for both conditions may enable early identification of patients at higher risk for poor outcomes. This approach may ultimately enhance risk stratification and optimization of perioperative care in older adults.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0785",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Comparative outcomes of central venous access via open jugular and ultrasound-guided subclavian approaches in low-weight pediatric patients: a study with secondary outcomes",
+  "authors": [
+   "Farhadi Ebrahim",
+   "Rezaee Mohsen",
+   "Aslanabadi Saeed",
+   "Badebarin Davoud",
+   "Hamzei Vahid"
+  ],
+  "journal": "BMC surgery",
+  "doi": "10.1186/s12893-026-04061-1",
+  "pmid": "42881459",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42881459/",
+  "pubdate": "2026-07-22",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** The necessity of this study stems from the lack of comparative evidence on the outcomes of central venous catheterization via the open internal jugular and ultrasound-guided subclavian approaches in low-weight pediatric patients. Its innovation lies in the simultaneous evaluation of both primary and secondary outcomes of these two techniques in this vulnerable population.\n\n**METHODS:** This prospective randomized clinical trial at Mardani Azar Children's Hospital (winter 2022-2023) included 92 pediatric patients under five kilograms weight, randomly assigned to either open internal jugular or ultrasound-guided subclavian vein catheterization (46 per group). Procedural success and major complications-such as pneumothorax, arterial cannulation, ectopic catheter placement, infection, and thrombosis-were evaluated intraoperatively and during a two-weeks follow-up using imaging and clinical assessment.\n\n**RESULTS:** The mean catheter placement time was significantly longer in the jugular group than in the subclavian group (41.19 ± 13.8 vs. 33.15 ± 12.12 min; P = 0.04). No cases of pneumothorax, hemothorax, bleeding, arrhythmia, occlusion, infection, or death occurred in either group. Hematoma developed only in the jugular group (6 vs. 0; P = 0.02), and all cases were associated with a procedure duration greater than 35 min (P = 0.041). In the subclavian group, all failures (n = 4) and upper limb edema (n = 3) occurred exclusively in patients under 2.5 kg, with both outcomes significantly linked to lower body weight (P = 0.03 and P = 0.014, respectively). Other complications showed no significant differences between groups.\n\n**CONCLUSION:** Both approaches were generally safe, with no major adverse events observed in either group. Ultrasound-guided subclavian access was associated with a shorter procedure time, whereas hematoma occurred only in the jugular group and catheterization failure and upper-limb edema were seen only in low-weight infants in the subclavian group. However, because access site and technique were evaluated together, their independent effects could not be determined. In addition, the findings in infants weighing < 2.5 kg were based on few events and should be considered hypothesis-generating rather than definitive.\n\n**TRIAL REGISTRATION:** This clinical trial was registered in the Iranian Registry of Clinical Trials (IRCT) with the code IRCT20230901059317N1(Registration date: 2024-02-16).",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0784",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Role of ultrasound biomicroscopy in corneal, conjunctival lesions and related anterior segment comorbidities",
+  "authors": [
+   "Rajagopal Rama",
+   "Balasubramaniyan Madhangi S",
+   "Rajasekar Varalakshmi"
+  ],
+  "journal": "Indian journal of ophthalmology",
+  "doi": "10.4103/IJO.IJO_757_26",
+  "pmid": "42885977",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42885977/",
+  "pubdate": "2026-10-16",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Ultrasound biomicroscopy (UBM) is a high-frequency ultrasound imaging modality that aids in the visualization of anterior segment structures as far back as the ciliary body. It was a popular modality for corneal imaging until the advent of anterior segment optical coherence tomography (AS-OCT) a decade ago. While the higher resolution of AS-OCT has enhanced the diagnostic accuracy of corneal and conjunctival disorders by providing excellent anatomical and structural details, its role is limited in cases of dense, compact, and pigmented lesions, and imaging structures like zonules and ciliary body due to limited penetration. In these eyes, UBM scores over AS-OCT by providing superior structural details. This review explores the role of UBM as a primary investigative modality in corneal, conjunctival, and allied comorbidities and also highlights how it aids preoperative assessment and surgical planning.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0783",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Giant clitoral inclusion cyst without prior genital mutilation: A case report",
+  "authors": [
+   "Tatar Burak",
+   "Yıldıran Gülbin"
+  ],
+  "journal": "Turkish journal of obstetrics and gynecology",
+  "doi": "10.4274/tjod.galenos.2026.58458",
+  "pmid": "42886044",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42886044/",
+  "pubdate": "2026-10-16",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Clitoral epidermoid inclusion cysts are rare benign lesions that may cause physical discomfort, genital disfigurement, and psychosocial distress when they become large. A 47-year-old woman presented with a rapidly enlarging clitoral mass measuring approximately 11 cm. She had no history of female genital mutilation, vulvar trauma, or vulvar surgery. Clinical, hormonal, and imaging findings did not suggest hyperandrogenism, virilization, or malignancy. Complete cyst excision, accompanied by clitoral hood plasty and labioplasty, was performed with careful preservation of the dorsal clitoral neurovascular structures. Histopathology confirmed an epidermoid inclusion cyst. The postoperative course was uneventful.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0782",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Laparoscopic Renal Denervation and Perirenal Adipose Tissue Debulking for Refractory Hypertension in End-Stage Renal Disease",
+  "authors": [
+   "Chu Jiapeng",
+   "Liu Xiaolong",
+   "Kuang Long",
+   "Gu Hongxing",
+   "Xie Wenjun",
+   "Ni Zhihang",
+   "Shao Chunlai"
+  ],
+  "journal": "JACC. Case reports",
+  "doi": "10.1016/j.jaccas.2026.110641",
+  "pmid": "42886134",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42886134/",
+  "pubdate": "2026-10-16",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Both renal sympathetic nerves and perirenal adipose tissue (PRAT) drive hypertension. However, evidence regarding renal denervation (RDN) in end-stage renal disease (ESRD) remains limited.\n\n**FIRST-IN-HUMAN SUMMARY:** A 74-year-old man with diabetic chronic kidney disease stage 5 presented with refractory hypertension despite treatment with 4 antihypertensive agents and intravenous nitroprusside. He underwent bilateral laparoscopic-assisted RDN combined with PRAT debulking without complications. At 5-month follow-up, office and ambulatory blood pressures were substantially reduced, while renal function and medications remained stable.\n\n**DISCUSSION:** Our case provides preliminary evidence supporting the feasibility of a combined laparoscopic RDN and PRAT debulking strategy in a patient with ESRD and refractory hypertension.\n\n**NOVELTY:** To our knowledge, this is the first report of RDN combined with PRAT debulking using the laparoscopic system in ESRD.\n\n**TAKE-HOME MESSAGE:** This combined intervention offers a promising new therapeutic option for refractory hypertension in patients with advanced kidney disease.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0781",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Rivaroxaban Is No Better Than Aspirin After Catheter Ablation for Atrial Fibrillation at Least 1 Year Earlier",
+  "authors": [
+   "Ebell Mark H"
+  ],
+  "journal": "American family physician",
+  "doi": "",
+  "pmid": "42886178",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42886178/",
+  "pubdate": "2026-10",
+  "date": "2026-10-16",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0780",
   "topic": "Surgery",
   "subtopic": "",
