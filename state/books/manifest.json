@@ -92,9 +92,9 @@
    ]
   },
   "피부과": {
-   "hash": "c7e524b780e9765e5085",
-   "version": 12,
-   "date": "2026-10-06",
+   "hash": "51dc42a17495b998df34",
+   "version": 13,
+   "date": "2026-10-16",
    "file": "MedKOS_학습서_피부과.pdf",
    "pages": 14,
    "template_version": 11,
@@ -130,17 +130,17 @@
      "concept_version": 3
     },
     "cn.derm.regressing-pigmented-lesion.biopsy-first": {
-     "title": "퇴행 구조가 주된 색소 병변 — 양성으로 보여도 조직검사가 먼저",
+     "title": "퇴행 구조 색소 병변 — 양성 같아도 조직검사가 먼저",
      "page": 12,
-     "concept_hash": "39bc5744e3b962ff",
-     "concept_version": 2
+     "concept_hash": "f8554779edc646cf",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1br_DBTd3bQT2i9WEQ_5bhd2TZq5HPPgQ",
-    "md5": "6041d02b6242e10bafedb6e91bccebd1",
-    "version": 12,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "730fdd1e4021133c3fa446d2c7aaf01d",
+    "version": 13,
+    "uploaded": "2026-10-16T09:33:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_피부과_v1_2026-09-22.pdf",
@@ -154,14 +154,17 @@
     "MedKOS_학습서_피부과_v9_2026-09-29.pdf",
     "MedKOS_학습서_피부과_v10_2026-09-30.pdf",
     "MedKOS_학습서_피부과_v11_2026-10-05.pdf",
-    "MedKOS_학습서_피부과_v12_2026-10-06.pdf"
+    "MedKOS_학습서_피부과_v12_2026-10-06.pdf",
+    "MedKOS_학습서_피부과_v13_2026-10-16.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 퇴행 구조 색소 병변 — 양성 같아도 조직검사가 먼저 (정리본 v2 → v3)"
+   ]
   },
   "신장내과": {
-   "hash": "acd4c767d43f1d870dbe",
-   "version": 9,
-   "date": "2026-10-06",
+   "hash": "86bbda428faead0e806b",
+   "version": 10,
+   "date": "2026-10-16",
    "file": "MedKOS_학습서_신장내과.pdf",
    "pages": 8,
    "template_version": 11,
@@ -173,10 +176,10 @@
      "concept_version": 2
     },
     "cn.neph.hyperkalemia.first-step": {
-     "title": "고칼륨혈증 — 생리에서 첫 처치·재평가까지",
-     "page": 4,
-     "concept_hash": "0332368347557e12",
-     "concept_version": 3
+     "title": "고칼륨혈증 — 막 안정화·이동·제거는 목적이 다르다",
+     "page": 3,
+     "concept_hash": "e536c16f8e6a0d35",
+     "concept_version": 4
     },
     "cn.neph.poststreptococcal-gn.latency-complement-diagnosis": {
      "title": "연쇄구균감염후사구체신염 — 잠복기와 C3로 가른다",
@@ -187,9 +190,9 @@
    },
    "drive": {
     "id": "1a1VPX8qpDc8QPrQzO853yoZlPwJrfaaf",
-    "md5": "362e41f7a29ac463488952ae9d7add08",
-    "version": 9,
-    "uploaded": "2026-10-06T11:33:41+09:00"
+    "md5": "ea72f6311ee28eed0e3a25b5e46ebc3a",
+    "version": 10,
+    "uploaded": "2026-10-16T09:33:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_신장내과_v1_2026-09-22.pdf",
@@ -200,10 +203,11 @@
     "MedKOS_학습서_신장내과_v6_2026-10-02.pdf",
     "MedKOS_학습서_신장내과_v7_2026-10-03.pdf",
     "MedKOS_학습서_신장내과_v8_2026-10-05.pdf",
-    "MedKOS_학습서_신장내과_v9_2026-10-06.pdf"
+    "MedKOS_학습서_신장내과_v9_2026-10-06.pdf",
+    "MedKOS_학습서_신장내과_v10_2026-10-16.pdf"
    ],
    "changes": [
-    "내용 갱신: SIADH — 경증 만성은 수분제한, 경련엔 고장성식염수 (정리본 v1 → v2)"
+    "내용 갱신: 고칼륨혈증 — 막 안정화·이동·제거는 목적이 다르다 (정리본 v3 → v4)"
    ]
   },
   "소아청소년과": {
@@ -596,11 +600,11 @@
    ]
   },
   "류마티스내과": {
-   "hash": "e371c1b926f9f99721db",
-   "version": 21,
-   "date": "2026-10-15",
+   "hash": "19747304edeec87e87eb",
+   "version": 22,
+   "date": "2026-10-16",
    "file": "MedKOS_학습서_류마티스내과.pdf",
-   "pages": 39,
+   "pages": 41,
    "template_version": 11,
    "units": {
     "cn.rheum.autoimmunity.autoantibody-injury-mechanism": {
@@ -610,10 +614,10 @@
      "concept_version": 1
     },
     "cn.rheum.sle.mild-disease-hydroxychloroquine": {
-     "title": "전신홍반루푸스 — 장기 침범으로 치료 강도를 정하고, 경증은 hydroxychloroquine(히드록시클로로퀸)으로 시작한다",
-     "page": 3,
-     "concept_hash": "294baaf4fea6952b",
-     "concept_version": 1
+     "title": "전신홍반루푸스 — 치료 강도는 장기 침범이 정한다",
+     "page": 4,
+     "concept_hash": "4bdda9c492a1addd",
+     "concept_version": 2
     },
     "cn.rheum.antiphospholipid-syndrome.diagnosis-criteria": {
      "title": "항인지질항체증후군 — 혈전·임신 이환에 지속 항체",
@@ -693,42 +697,48 @@
      "concept_hash": "53f95bec856a6034",
      "concept_version": 1
     },
+    "cn.rheum.relapsing-polychondritis.clinical-diagnosis": {
+     "title": "재발성 다발연골염 — 귓불을 남기는 귀 연골염",
+     "page": 31,
+     "concept_hash": "60735de172c47893",
+     "concept_version": 1
+    },
     "cn.rheum.cppd.crystal-diagnosis": {
      "title": "가성통풍 — 약한 양성 복굴절 마름모 결정",
-     "page": 31,
-     "concept_hash": "0ca1331142c86acb",
+     "page": 32,
+     "concept_hash": "ed897495b227bc60",
      "concept_version": 1
     },
     "cn.pharm.thiopurine-interaction.xanthine-oxidase-inhibition": {
      "title": "티오퓨린 + allopurinol(알로푸리놀) — 막힌 불활성 출구",
-     "page": 32,
+     "page": 34,
      "concept_hash": "4bc59158e2b1f0ae",
      "concept_version": 1
     },
     "cn.rheum.fibromyalgia.exercise-first-treatment": {
      "title": "섬유근육통 — 운동이 먼저, 약은 증상 영역에 맞춘다",
-     "page": 34,
+     "page": 36,
      "concept_hash": "aff66350ed093694",
      "concept_version": 1
     },
     "cn.rheum.hemochromatosis-arthropathy.iron-studies": {
      "title": "혈색소증 관절병증 — 2·3번째 MCP 면 철 검사",
-     "page": 36,
+     "page": 38,
      "concept_hash": "5bc6f8cdb190f91d",
      "concept_version": 1
     },
     "cn.rheum.painful-shoulder.capsulitis-vs-rotator-cuff": {
      "title": "아픈 어깨 — 수동 운동까지 막히면 유착관절낭염",
-     "page": 38,
+     "page": 40,
      "concept_hash": "1a3d6fb8ae2a3664",
      "concept_version": 1
     }
    },
    "drive": {
     "id": "1bMn7YS1TkXeRY1yabdpincLBViYOsmjN",
-    "md5": "d83e91a0c4785a8780ec3d1ca2cc26b2",
-    "version": 21,
-    "uploaded": "2026-10-15T09:48:22+09:00"
+    "md5": "ad586ecabb9e42e58f8b92883eb3cc21",
+    "version": 22,
+    "uploaded": "2026-10-16T09:33:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_류마티스내과_v1_2026-09-23.pdf",
@@ -751,13 +761,13 @@
     "MedKOS_학습서_류마티스내과_v18_2026-10-12.pdf",
     "MedKOS_학습서_류마티스내과_v19_2026-10-13.pdf",
     "MedKOS_학습서_류마티스내과_v20_2026-10-14.pdf",
-    "MedKOS_학습서_류마티스내과_v21_2026-10-15.pdf"
+    "MedKOS_학습서_류마티스내과_v21_2026-10-15.pdf",
+    "MedKOS_학습서_류마티스내과_v22_2026-10-16.pdf"
    ],
    "changes": [
-    "내용 갱신: 전신경화증 신위기 — 레닌 악순환을 끊는 ACE억제제 (정리본 v1 → v2)",
-    "내용 갱신: IgA혈관염 — 혈소판 정상의 만져지는 자반이면 임상 진단 (정리본 v2 → v3)",
-    "내용 갱신: 거대세포동맥염 — 의심되면 생검 전에 스테로이드부터 (정리본 v1 → v2)",
-    "내용 갱신: 결절다발동맥염 — 확진은 증상 있는 침범 조직의 생검 (정리본 v1 → v2)"
+    "내용 갱신: 전신홍반루푸스 — 치료 강도는 장기 침범이 정한다 (정리본 v1 → v2)",
+    "새 단원: 재발성 다발연골염 — 귓불을 남기는 귀 연골염",
+    "내용 수정: 가성통풍 — 약한 양성 복굴절 마름모 결정"
    ]
   },
   "호흡기내과": {
@@ -1212,44 +1222,47 @@
    ]
   },
   "비뇨의학과": {
-   "hash": "9a35f5964f69702e9066",
-   "version": 4,
-   "date": "2026-09-28",
+   "hash": "39ffeaba5307c691f4da",
+   "version": 5,
+   "date": "2026-10-16",
    "file": "MedKOS_학습서_비뇨의학과.pdf",
    "pages": 4,
    "template_version": 11,
    "units": {
     "cn.uro.testis-histology.leydig-lh-target": {
-     "title": "고환 조직에서 세포를 위치로 정하고 호르몬을 붙인다 — 관 사이 간질세포는 LH, 관 안 세르톨리세포는 FSH",
+     "title": "고환 조직 — 관 사이 간질세포는 LH, 관 안 세르톨리는 FSH",
      "page": 2,
-     "concept_hash": "2164ed11e66555b1",
-     "concept_version": 2
+     "concept_hash": "642094aaec4df66e",
+     "concept_version": 3
     }
    },
    "drive": {
     "id": "1RV2zyMBw8OO3rtrSfsIgW0Fm1Whmiu6T",
-    "md5": "b294ff823850777d9c8413a09ef1548f",
-    "version": 4,
-    "uploaded": "2026-09-28T01:51:09+09:00"
+    "md5": "fe7059869a1ac4541def7bfcb2a32f82",
+    "version": 5,
+    "uploaded": "2026-10-16T09:33:29+09:00"
    },
    "archive": [
     "MedKOS_학습서_비뇨의학과_v1_2026-09-25.pdf",
     "MedKOS_학습서_비뇨의학과_v2_2026-09-27.pdf",
     "MedKOS_학습서_비뇨의학과_v3_2026-09-27.pdf",
-    "MedKOS_학습서_비뇨의학과_v4_2026-09-28.pdf"
+    "MedKOS_학습서_비뇨의학과_v4_2026-09-28.pdf",
+    "MedKOS_학습서_비뇨의학과_v5_2026-10-16.pdf"
    ],
-   "changes": []
+   "changes": [
+    "내용 갱신: 고환 조직 — 관 사이 간질세포는 LH, 관 안 세르톨리는 FSH (정리본 v2 → v3)"
+   ]
   }
  },
  "index": {
   "file": "MedKOS_학습서_전체목차.pdf",
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "drive": {
    "id": "1l73cRbmaF3IDNt41pV2RcMVhrly372En",
-   "md5": "90abffc43dedf10f2519a4e384e89349",
+   "md5": "82f879775d05a3bdd57c2a17abf99d81",
    "version": null,
-   "uploaded": "2026-10-15T09:48:22+09:00"
+   "uploaded": "2026-10-16T09:33:29+09:00"
   }
  },
- "updated": "2026-10-15"
+ "updated": "2026-10-16"
 }
